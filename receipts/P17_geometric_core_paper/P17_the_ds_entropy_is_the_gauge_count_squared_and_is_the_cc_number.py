@@ -162,7 +162,7 @@ WRITTEN = [
      r'differ by \$3/8\$ and by nothing else'),
     ("the one-register/cross-register reason for the asymmetry is stated",
      r'count taken \\emph\{across\} the\s*\n?register split'),
-    ("and the do-not-assert is attached",
+    ("and the not claimed is attached",
      r'not claimed is that a de~Sitter entropy is asserted here'),
 ]
 for what, pat in WRITTEN:
@@ -195,7 +195,7 @@ if fail:
 print("ALL CHECKS PASS — S reduces to pi(alpha/l_P)^2 and to 3pi/(Lambda l_P^2); the cosmological-")
 print("constant factor reduces to 8pi/(Lambda l_P^2), so the two are one quantity differing by 3/8;")
 print("at p0's own Lambda l_P^2 the entropy is 3.1e122 against a gauge-count of 1.0e61; and p0 now")
-print("carries the clause, the coincidence and the do-not-assert, against all three anchors it rests on.")
+print("carries the clause, the coincidence and the not claimed, against all three anchors it rests on.")
 print("=" * 78)
 
 # ============================================================================================
@@ -211,7 +211,7 @@ print("=" * 78)
 #   (3) the arithmetic at p0's OWN Lambda l_P^2, bracketed -- so the printed ~3e122 and the printed
 #       ~1e61 are the same input read twice and not two quoted numbers;
 #   (4) nine source checks on what is written, including that the coincidence is stated as identity
-#       rather than as magnitude and that the do-not-assert is attached;
+#       rather than as magnitude and that the not claimed is attached;
 #   (5) and *** three ANCHOR checks ***: the gauge-count sentence the clause squares, p0's own
 #       10^122 sentence the clause coincides with, and the Planck-value-is-a-gauge reading that does
 #       the dissolving.  ** Each is pre-existing; delete any one and the clause is arguing against
@@ -230,5 +230,5 @@ for what, pat in ANCHORS:
 print(f"GATE c54.207 (r2566), `L-532`: S = pi(alpha/l_P)^2 = 3pi/(Lambda l_P^2) = {_S:.2e} at p0's own "
       f"Lambda l_P^2 = {LLP2:.0e}, against a gauge-count {_gauge:.2e}; the cosmological-constant factor "
       f"is 8pi/(Lambda l_P^2), so S/CC = {_ratio} exactly and the two 10^122's are one dimensionless "
-      f"combination; and p0 states the clause with its do-not-assert, against three standing anchors — "
+      f"combination; and p0 states the clause with its not claimed, against three standing anchors — "
       f"pinned against `FOR_54` item 52 (r2536, answered r2564).")

@@ -92,7 +92,7 @@ if __name__ == "__main__":
     print(" - With Doppler already non-differentiating (verify_doppler_lowell.py), two of the three")
     print("   flagged differentiators are closed: the smooth ell<~7 deficit is FIRM, and the octopole")
     print("   over-prediction stands as the falsification edge.  Residual: the full Boltzmann solve")
-    print("   (~10-20% on the transfer), not expected to lift the factor ~4-5 -- held do-not-assert.")
+    print("   (~10-20% on the transfer), not expected to lift the factor ~4-5 -- stated without being claimed.")
     print("="*74)
 
 # =====================================================================

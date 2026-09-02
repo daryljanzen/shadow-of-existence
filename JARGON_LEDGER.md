@@ -1,7 +1,7 @@
 # THE JARGON LEDGER — programme-internal language in the corpus PROSE, for the deferred language pass
 *Opened r1310 (Daryl-directed). A running list, built as the idiom avenue (avenue 9c) runs on each paper,
 of **programme-internal tracking jargon that has leaked into the paper prose** and should later be translated
-to **standard physics vocabulary**. This is the accumulation target for the deferred **do-not-assert LANGUAGE
+to **standard physics vocabulary**. This is the accumulation target for the deferred **not claimed LANGUAGE
 pass** (the arsenal's "clean tracking jargon from prose, ~9 papers"): when we run that pass, we comb the corpus
 for these terms and replace each at the right weight. Built now, executed later.*
 
@@ -16,7 +16,7 @@ for these terms and replace each at the right weight. Built now, executed later.
 ## THE LIST (term · what it means · standard replacement (context-dependent) · sites)
 Format per entry — the replacement is a *menu by context*, chosen at translation time, not a blind 1:1.
 
-- **`do-not-assert` / `held do-not-assert`** — the flagship. Programme status meaning "grounded/built as
+- **`not claimed` / `stated without being claimed`** — the flagship. Programme status meaning "grounded/built as
   structure, but this further step is not claimed." → **standard menu:** *"we conjecture"* / *"conjecturally"*
   (when it is a genuine conjecture) · *"remains to be established empirically"* / *"the world-correspondence is
   left to the data"* (when it is an empirical-correspondence gap) · *"an open question"* (when it is a genuine

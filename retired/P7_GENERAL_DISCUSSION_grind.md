@@ -550,7 +550,7 @@ GR's solution space closing cleanly on one substrate, the puzzles dissolving, th
 the recursion closing on a *self-consistent core*, which is real and the right thing to have shown, and *not yet* the
 core being the world's. Self-consistency is not soundness. The correspondence that would earn it is the *structural*
 test P1 holds open — closed trapped surfaces never forming, horizons metric-singular, collapse never completing —
-and the *empirical* test the cosmology holds open (P13's data). Both are held do-not-assert. **The general discussion
+and the *empirical* test the cosmology holds open (P13's data). Both are stated without being claimed. **The general discussion
 establishes what CR *is* and what it *coheres*; it does not claim the world is so.**
 
 **The verdict, stated for P7.** On the theory-choice axis, CR is a structural augmentation of GR that consolidates

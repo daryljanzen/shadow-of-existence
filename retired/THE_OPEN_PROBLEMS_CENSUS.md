@@ -43,4 +43,4 @@ Treat each as a candidate: suspect, check all 17 + maps, keep only with how-work
 
 ## TRACKER
 - r1240: campaign established; flagship (the wall) fixed in P5 §412 + P2 §449.
-- NEXT: sweep both axes back through P1–P5 first (as with su(3)), then the whole corpus; range §275 the priority Axis-1 target; the world-correspondence do-not-assert is a known genuine wall (empirical), to be confirmed not conflated with the worked opens.
+- NEXT: sweep both axes back through P1–P5 first (as with su(3)), then the whole corpus; range §275 the priority Axis-1 target; the world-correspondence not claimed is a known genuine wall (empirical), to be confirmed not conflated with the worked opens.

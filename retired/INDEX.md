@@ -82,7 +82,7 @@ before it was written.** |
 | `SEAM_FRONTIER_ORIENTATION.md` | r1535 | a lap-2 orientation on the seam frontier (r500). Landed: the seam is built across P8, P9, P16. |
 | `NODE4_TELESCOPE_first-image.md` | r1535 | the first telescope image, tensor/graviton sector (r459). Landed: P11 — ghost-free to all orders, reduced energy positive-definite. |
 | `gate_notes_antimatter_proof.md` | r1536 | the working proof that the conjugate branch is **antimatter**, *"honest work, may land."* **Landed:** `thm:antimatter-progenitor` in P7 ×4, identity fixed at the R=γ⁵ level. |
-| `DESCENT_STATE.md` | r1536 | the descent banked at r781 as a *"candidate result, do-not-assert."* **Landed:** P14's three chiral generations, S₃ family, γ⁵ chirality (built r772–793). |
+| `DESCENT_STATE.md` | r1536 | the descent banked at r781 as a *"candidate result, not claimed."* **Landed:** P14's three chiral generations, S₃ family, γ⁵ chirality (built r772–793). |
 | `CPT_COHERENCE_SWEEP.md` | r1536 | the CPT / charge-conjugation coherence sweep (r1102). **Landed:** P13's `prop:conjugation-closure` ×4 — C = (Q↦−Q)∘(R∘K), the linear and antilinear faces of one Plate. |
 | `THE_P13_POSITIVE_CLOSURE_ARC.md` | r1536 | the plan for P13's positive closure (r1107). **Landed:** P7's `sec:two-sided-closure` ×5, built r1280. |
 | `gate_notes_hedge_scan.md` | r1536 | the dev-mode hedge scan (r991+), combing for fossil hedges. **Ran:** results recorded per card in the ontology map (*"Hedge sweep r994: swept clean"*). |

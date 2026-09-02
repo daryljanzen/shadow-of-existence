@@ -11,7 +11,7 @@ computations) kept, every live tension surfaced. Built by reading all six transc
 source. Add to it as we go; pull from it as needed. It is the grounded state, not a narrative of the thrash.
 
 **Claim-status tags** (used throughout): **[verified]** checked at source/by computation this thread ·
-**[grounded]** established in the corpus, read at weight · **[open]** genuinely not done, do-not-assert ·
+**[grounded]** established in the corpus, read at weight · **[open]** genuinely not done, not claimed ·
 **[retired]** a number/claim that was floated and is now ruled out, kept here only so it is not re-inherited.
 
 ---
@@ -76,7 +76,7 @@ chairs; the hinge is P9.
   one and the same ℤ₂.
 - **P13 — boundary** [grounded]. SM-from-geometry walled three converging ways (su(3)⊄so(5,1)); the
   decoupling onto P1/P7 leads; the compact face is real-by-construction but **not** a co-equal existent.
-  **Gravitational–cosmological unification, not geometric unification of matter** — do-not-assert held both ways.
+  **Gravitational–cosmological unification, not geometric unification of matter** — not claimed held both ways.
 - **When Black Holes Happen (essay)** [grounded]. The payoff in ontological voice: baby universes born at
   black-hole horizons expand at exactly flat ΛCDM **as an algebraic identity, without the radiation-epoch
   slowdown** — making the Hubble tension the *expected* signature of a purely geometric early expansion.
@@ -165,7 +165,7 @@ areal-radius (sinh^{2/3}) coordinate. The "158 vs 301 tension" dissolves as the 
 Also retired: the fitted Δη≈0.0105 ("LSS is the seam") — the observed spacing inverted, not derived;
 √3-as-a-sound-speed (no built mechanism).
 
-**The standing open computation** [open — do-not-assert; do NOT fit to 301]: the **seam-crossing frame map**
+**The standing open computation** [open — not claimed; do NOT fit to 301]: the **seam-crossing frame map**
 (P9 §661/§665, marked beyond-scope). The observable redshift is the sinh^{2/3} reading along the reassigned
 ruling — the around-the-circle one — so recombination's r_rec≈8×10⁻⁴ is itself a phantom coordinate. The map
 needed: place recombination on the **null ruling**, measured from the seam at α/√3, given its observable
@@ -210,7 +210,7 @@ incommensurable areal radii (α vs α/√3), which is the route that fails.**
 
 The items in §1–§3 tagged [grounded]/[verified] are the stable ground — add to them only at source. The
 [open] item in §3 and the tensions in §4 are the live frontier — the next real move is the §661/§665
-seam-crossing map, built from the embedding, magnitude held do-not-assert. The failures cut from this record
+seam-crossing map, built from the embedding, magnitude stated without being claimed. The failures cut from this record
 (the fits, the retractions, the missed compaction signals) were the oscillation between manufactured
 certainty and manufactured defeat; what survived the cut is above. This record is the grounded state to pull
 from and the place to add the next verified finding.

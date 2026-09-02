@@ -23,7 +23,7 @@ conflation rather than papering over it. Consistency confirmed: consolidation §
    - non-compactness-escape closure for the *isometry route* = **proof-level** (rests on su(3)⊄so(5,1), the convergent core);
    - Reading-B closure = **ontological in scope** (SO(6)/SO(5,1) genuinely co-equal real forms of SO(6,ℂ); CR's
      one-Lorentzian-world commitment breaks the symmetry, not group theory);
-   - universal "colour-from-geometry foreclosed" = **do-not-assert** (frontier-2 / colour-by-hand untouched).
+   - universal "colour-from-geometry foreclosed" = **not claimed** (frontier-2 / colour-by-hand untouched).
    The consolidation's guard — "do not let it drift toward 'structurally impossible'" — is what the P11 prose must hold,
    since the isometry piece being proof-level makes over-stating the whole tempting.
 3. **P4's S₃ carries the cascade caveat.** Not free relabellings — dS sweeps the axis, the others pivot off-axis

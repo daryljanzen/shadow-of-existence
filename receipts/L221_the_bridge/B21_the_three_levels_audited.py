@@ -2,9 +2,9 @@
 """B21 -- `PO-2`'s hold has THREE NAMED LEVELS, and this session answered two of them without ever
 checking against the naming: level (2) is passed, and level (3) is narrower than "walled".
 
-** THE HOLD, as `PO-2` states it. **  "Held at ** do-not-assert on three separated levels **."  The
+** THE HOLD, as `PO-2` states it. **  "Held at ** not claimed for three separated levels **."  The
 levels are named in `GEOMETRY_PHYSICS_TAXONOMY`: "** the three levels --- (1) skeleton grounded, (2)
-resemblance do-not-assert, (3) identification walled --- stand exactly as r693 set them **."
+resemblance not claimed, (3) identification walled --- stand exactly as r693 set them **."
 
 ** ⛔ ⓵ AND FOUR REVISIONS THIS SESSION ANSWERED AGAINST THEM WITHOUT NAMING THEM. **  All four notes are
 in the row; *** none is filed against the level it answers, so the row reads as four independent findings
@@ -12,7 +12,7 @@ when it records a level-by-level state change. ***
 
       *** (1) skeleton grounded          r2631: the root triple IS the f=0 locus, roots
                                           {1/sqrt3, 1/sqrt3, -2/sqrt3}, sum zero.  COMPUTED.
-          (2) resemblance do-not-assert  r2629: the resemblance is a CONSTRUCTION -- the three modes
+          (2) resemblance not claimed  r2629: the resemblance is a CONSTRUCTION -- the three modes
                                           are one operator's kernel, the channel count is computed.
                                           r2633: and its REASON -- "the three carry one mass parameter
                                           and are identical in content".
@@ -20,7 +20,7 @@ when it records a level-by-level state change. ***
                                           modes, "the Weyl S_3 IS the relation among the three
                                           hinges". *** 
 
-** ⛭⛭ ⓶ SO LEVEL (2) IS PASSED, AND SAYING SO IS THE POINT. **  *** A "resemblance do-not-assert" is a
+** ⛭⛭ ⓶ SO LEVEL (2) IS PASSED, AND SAYING SO IS THE POINT. **  *** A "resemblance not claimed" is a
 hold against reading a similarity as a fact.  When the similarity becomes a construction -- identical
 content by one $2M$, a bare label, a within-state index, $SU(3)$ generated -- the hold has nothing left to
 guard.  It was calibrated to an object that no longer exists. ***
@@ -64,11 +64,11 @@ def main():
     tax = re.sub(r'\s+', ' ', open(os.path.join(ROOT, 'GEOMETRY_PHYSICS_TAXONOMY.md'),
                                    encoding='utf-8', errors='replace').read())
 
-    check('⓵ the row states the hold: "Held at do-not-assert on three separated levels"',
-          'do-not-assert on three separated levels' in po2)
-    check('and the taxonomy names them: "(1) skeleton grounded, (2) resemblance do-not-assert, '
+    check('⓵ the row states the hold: "Held at not claimed for three separated levels"',
+          'not claimed for three separated levels' in po2)
+    check('and the taxonomy names them: "(1) skeleton grounded, (2) resemblance not claimed, '
           '(3) identification walled"',
-          'skeleton grounded' in tax and 'resemblance do-not-assert' in tax
+          'skeleton grounded' in tax and 'resemblance not claimed' in tax
           and 'identification walled' in tax)
     # ** ⛭ AMENDED c54.230, CROSS-BAND AND ROUTED: this quoted a sentence r2803 CORRECTED, and the
     # ** correction is this receipt's own finding landing. **  `B21`'s ⓵ is that four revisions answered
@@ -99,7 +99,7 @@ def main():
         # REGRESSION GUARD on the FILLING, naming the revision that did it. ***
     check('✔ FILLED r2683 -- the row now names the three levels, and the guard is that it keeps '
           'doing so',
-          '(1) skeleton grounded' in po2 and '(2) resemblance do-not-assert' in po2
+          '(1) skeleton grounded' in po2 and '(2) resemblance not claimed' in po2
           and '(3) identification walled' in po2
           and 'THE STATE NOW' in po2.upper())
 
@@ -109,9 +109,9 @@ def main():
         return 1
     print("  VERDICT: ** level (2) is PASSED and level (3) is narrower than 'walled'. **")
     print('  ⓵ ** The hold has three NAMED levels ** -- (1) skeleton grounded, (2) resemblance')
-    print('     do-not-assert, (3) identification walled -- ** and four revisions this session answered')
+    print('     not claimed, (3) identification walled -- ** and four revisions this session answered')
     print('     against them without naming them. **')
-    print('  ⛭⛭ ⓶ ** LEVEL (2) IS PASSED. **  *** A "resemblance do-not-assert" guards against reading a')
+    print('  ⛭⛭ ⓶ ** LEVEL (2) IS PASSED. **  *** A "resemblance not claimed" guards against reading a')
     print('     similarity as a fact.  When the similarity becomes a CONSTRUCTION -- identical content by')
     print('     one 2M, a bare label, a within-state index, SU(3) generated -- the hold has nothing left')
     print('     to guard.  It was calibrated to an object that no longer exists. ***')

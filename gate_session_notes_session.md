@@ -18,7 +18,7 @@
 
 ## Goal (at source: CORPUS_MAP.md, THE_VISION.md)
 - One unfinished whole on a static/dynamic backbone; horizon = GR's solution space as one Lie algebroid over
-  the de Sitter vacuum (THE_VISION, [reach]). The backbone-gathering serves two forward regions: the
+  the de Sitter vacuum (THE_VISION, conjecture). The backbone-gathering serves two forward regions: the
   **individuation keystone** and the **foundational/lens + paper-zero (shadow-reading) licensing papers**.
 
 ## Open frontier (r269, ontology-foundation operation — PHYSICS PAUSED)
@@ -53,7 +53,7 @@ The "unconsolidated/un-re-verified in archive/" was THE_PLAN:26's r186 starting-
 F1 step-9 + the r272 changelog. Corrected in F1 step-9 (r272 changelog left frozen per convention).
 
 **Corrected charting (no fork — work dictates):** open field-DOF work = the consolidated model's own frontier,
-the **nonlinear Λ>0 evolution / FORCE-vs-ADMIT** (spine §6, §8). Forcing-locus available without do-not-assert
+the **nonlinear Λ>0 evolution / FORCE-vs-ADMIT** (spine §6, §8). Forcing-locus available without not claimed
 Move 13 = (a) nonlinear Λ>0 back-reaction.
 
 **r273 first bite (computed, `scripts/gowdy_ds_lambda_pos_background.py`):** Λ>0 system has an exact isotropic
@@ -69,7 +69,7 @@ FORCES quantum structure or only ADMITS it (as Λ=0 Gowdy/Bessel does). That is 
 background. Exact first integral C0 = R_t - 2R psi_t = const = -(p_gamma+p_psi)/2 (AREA-2WAVE: Λ source cancels).
 Shape s=ψ-½lnR has ds/dτ = -C0/(2V) → shear decays as 1/volume (cosmic no-hair); de Sitter background is an
 ATTRACTOR. => homogeneous nonlinear Λ>0 back-reaction ADMITS (conserved charge + monotone decay, no forcing).
-Sharpens spine §6: forcing pushed to the PROPAGATING (inhomogeneous) sector or the do-not-assert S3/A2 skeleton.
+Sharpens spine §6: forcing pushed to the PROPAGATING (inhomogeneous) sector or the not claimed S3/A2 skeleton.
 Spine §10 added. (Vicious check: a free numerical evolution drifted to ~1e40, caught & discarded; result rests
 on the exact first integral, not numerics.)
 
@@ -82,7 +82,7 @@ graviton on the de Sitter bg → cosmic-time eq  δψ_ττ + 3H δψ_τ + (k²/a
 k²/a², m²=2Λ=6H², principal series). ADMITS unitary Bunch-Davies quantization. So linearized propagating ADMITS
 (§6's "linearized dS graviton admits", now explicit in CR variables). Scope: fixed-bg TT truncation.
 FORCE-vs-ADMIT map now: homogeneous ADMIT (r274), linearized-propagating ADMIT (r275). Sole remaining home of
-FORCE = the FULL NONLINEAR propagating back-reaction (graviton self-interaction, 2nd order) + do-not-assert S3/A2.
+FORCE = the FULL NONLINEAR propagating back-reaction (graviton self-interaction, 2nd order) + not claimed S3/A2.
 Spine §11. **NEXT bite (the crux):** the 2nd-order/nonlinear propagating back-reaction — does it FORCE or ADMIT?
 
 ---
@@ -99,7 +99,7 @@ Spine §11. **NEXT bite (the crux):** the 2nd-order/nonlinear propagating back-r
   check, never softens it. "RESOLVED" on an open problem is the catalogued costliest failure — so r276 lands at
   HONEST SCOPE: classical FORCE-vs-ADMIT = ADMIT *to the extent establishable* (full nonlinear true Hamiltonian
   [deparam.py, re-confirmed at source] + homogeneous ADMIT [r274] + linearized-propagating ADMIT [r275]);
-  forcing isolated to (b) the discrete S3/A2 skeleton, behind do-not-assert Move 13; full non-perturbative
+  forcing isolated to (b) the discrete S3/A2 skeleton, behind not claimed Move 13; full non-perturbative
   quantization NOT constructed. Not a "RESOLVED."
 - State at source: r275 is the last bundled revision; r276 (the synthesis resolution) is mid-flight, NOT baked.
   deparam.py + ham.py re-confirmed the full nonlinear true-Hamiltonian structure this session.
@@ -110,7 +110,7 @@ Spine §11. **NEXT bite (the crux):** the 2nd-order/nonlinear propagating back-r
 is ADMIT to the extent establishable. Pieces: full nonlinear system is a true-Hamiltonian system (deparam/ham,
 re-confirmed at source) + model is exact vacuum-Λ GR → first-class constraints (HDA) → consistent to all orders
 (Bianchi) → no classical obstruction + every tractable sector ADMIT (r274 homogeneous, r275 linearized-prop).
-=> §6 collapses to (b) the discrete S3/A2 skeleton alone, behind do-not-assert Move 13. Also gives F1's last
+=> §6 collapses to (b) the discrete S3/A2 skeleton alone, behind not claimed Move 13. Also gives F1's last
 open piece (infinite-dim field-DOF) its classical verdict: ADMIT. Spine §12 + §6 status. NOT a constructed
 non-perturbative quantization; NOT "nothing can force"; classical side closed, quantum (b) open. Like r268.
 
@@ -136,7 +136,7 @@ correctly located. DO-NOT-ASSERT held.
 Posed CORRECTLY (not the rung-4 strawman su(3) c so(4,1)): the right necessary condition is su(3) c the
 substrate's COMPACT isometry (so(5) on dS_5).
 Folded in: stale-flag fix — spine §6/§12 "(b) root/isotropy data not built" was stale (Moves 6-7-11 built it);
-corrected to "data built; the leap is what's do-not-assert."
+corrected to "data built; the leap is what's not claimed."
 Compaction note: a verbatim "Let's go!!!" repeat fired the duplicate rule mid-bake; flagged, ran flatness
 diagnostic (immediate work-context LIVE — disk matched belief exactly), coda checked = FLATTENED (operating
 from summary gist, whole coda ~106KB not re-read this conversation). unseated: keep rolling on the gist +

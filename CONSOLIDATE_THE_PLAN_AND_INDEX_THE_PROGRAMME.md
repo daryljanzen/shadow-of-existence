@@ -2436,7 +2436,7 @@ document carrying it know.** *All four holds discharged in ARC 8 were ①yes ②
 (102), `THE_PLAN` (82), `CR_COLLAPSE_HELD_PICTURE` (71), this document (69), `CODA_FIELD_NOTE` (55),
 `ONTOLOGY_FOUNDATION_INDEX` (50), `THE_EVOLUTION_MAP` (39), `THE_ARSENAL` (39).
 **⛭ Read that number correctly: the overwhelming majority are LIVE and CORRECT.** The count includes every
-do-not-assert, every ⚠, every "hold until". **It is not a defect count — it is the size of the layer that has no
+not claimed, every ⚠, every "hold until". **It is not a defect count — it is the size of the layer that has no
 hub.** *The register's job is not to remove guards; it is to make it possible to tell, for any one of them,
 whether its condition still holds. At present there is no way to tell except by reading and checking each, which
 is exactly how the six discharged instances below were found: one at a time, by accident, while doing something
@@ -2496,7 +2496,7 @@ it, because the document is doing exactly what it said it would.*** Any document
 - [x] **`CODA_FIELD_NOTE` — not a hold** but the positive discipline: *"the uncertainty is not banished; it is
       worked **until it is known inside out** and recognised as a coherent part of the whole."*
 **⚑ ARC 8 COMPLETE.** Fourteen documents carrying release conditions; **four stale holds discharged** (the QM
-joint's promotion gate, the deuterium do-not-assert, the sound-horizon build, the correspondence-phase
+joint's promotion gate, the deuterium not claimed, the sound-horizon build, the correspondence-phase
 frontier); **two confirmed correctly standing** (both figure documents, tied to A3/family 8, open); the rest
 not holds at all. **Every discharge released something already finished.** `SYNTHESIS_FIGURE_STORYBOARD` (*"a rhyme stays a rhyme for now until THAT
       gets worked out"*), `FIGURE_WORK_LOG` (*"B CANNOT OPEN until it is"*), `MATTER_SECTOR_germ`,
@@ -2565,7 +2565,7 @@ work under another name.)* **This is the fourth undercount-from-a-summary-line i
       from inside. No door the plan lacks.
 - [x] **P3 — 5 sites → 2 live rooms, r1490.** Two discharged **by P3's own sentence** (*"classified in full in
       the companion groupoid paper, **developed there rather than left open**"*), one not a site (a paragraph
-      header), two live do-not-asserts — generation multiplicity → family 6, and the walled SU(3) question,
+      header), two live not claimeds — generation multiplicity → family 6, and the walled SU(3) question,
       which r1428–r1434 sharpened without closing. **No edit owed; P3's scoping is exact.**
 - [x] **ME-PROOFING, r1490.** Every worked row now carries its **verdict in the row** — `✔ LIVE →` with route,
       `✗ NOT A DOOR`/`✗ DISCHARGED` with why, `⊕ ONE ROOM` where sites collapse — because the tables quote
@@ -2577,7 +2577,7 @@ work under another name.)* **This is the fourth undercount-from-a-summary-line i
       register's `What is open` row quoted *"Two directions remain open"* — **gone from the paper, and its sense
       reversed.** A node reading that row would believe the opposite of what the paper says. **The register's
       own named failure mode, caught in the act.** The other nine: P3's gap that P5 closes · what P5 does · a
-      précis duplicate · a **closure** · something **built** · one do-not-assert pointed at P13.
+      précis duplicate · a **closure** · something **built** · one not claimed pointed at P13.
 - [x] **Stale-quote sweep, r1491–92.** The r1491 corpus edits left the register quoting sentences that no
       longer exist — **six rows flagged**, plus one prose quote. And the quote test on P5 found 9 of 10 alive,
       correcting my own "substantially stale" overstatement before it was written down.
@@ -2588,7 +2588,7 @@ work under another name.)* **This is the fourth undercount-from-a-summary-line i
       programme walked into at r1420** — *"that assumption IS the unbuilt part"* — written in the paper before
       the mistake, and unread when it was made.
 - [x] **p0/17 — 12 sites → 4 frontiers + 1 live open, all routed, r1496.** **Seven of the twelve are p0's own
-      weight tags** — bare `[reach]` / `do-not-assert` markers, the paper working rather than gaps. Its
+      weight tags** — bare `conjecture` / `not claimed` markers, the paper working rather than gaps. Its
       §Frontiers enumerates **four**: the free-data-count test → A5.1 · the maximal-symmetry ledger → A5.2 ·
       the discrete-residue matter home → A4/family 6 · the phase structure at the branch point → Cluster J. Plus one
       live open — **the full propagating spinor sector**, the same master-gate door P13 and P14 advertise,
@@ -3802,7 +3802,7 @@ nothing stands between a node and starting it.*
 
 | Phase | Item | State |
 |---|---|---|
-| ~~**1**~~ | ~~**1 · propagation audit**~~ | **✔ COMPLETE r1584.** Ledger's 10 closure markers ✔ · plan's struck items ✔ · map's struck items ✔ **⚠ AND ITS SCOPE FOUND, r1840: it audited STRUCK ITEMS across grains — so it could not catch an item struck in the ledger and described as LIVE IN PROSE elsewhere.** *Phase 8's `Q2` found exactly that: the sheet-to-ruling family, **killed r1280**, still carried as a live do-not-assert in `ONTOLOGY_FOUNDATION_INDEX` (twice), `OPEN_PROBLEMS_MAP` and `THE_PLAN`'s quoted frontiers list — **six years of revisions after the kill reached five other documents.*** ***A closure audit keyed to markers cannot see prose. Phase 9's walk is keyed to the RESULT and does.*** |
+| ~~**1**~~ | ~~**1 · propagation audit**~~ | **✔ COMPLETE r1584.** Ledger's 10 closure markers ✔ · plan's struck items ✔ · map's struck items ✔ **⚠ AND ITS SCOPE FOUND, r1840: it audited STRUCK ITEMS across grains — so it could not catch an item struck in the ledger and described as LIVE IN PROSE elsewhere.** *Phase 8's `Q2` found exactly that: the sheet-to-ruling family, **killed r1280**, still carried as a live not claimed in `ONTOLOGY_FOUNDATION_INDEX` (twice), `OPEN_PROBLEMS_MAP` and `THE_PLAN`'s quoted frontiers list — **six years of revisions after the kill reached five other documents.*** ***A closure audit keyed to markers cannot see prose. Phase 9's walk is keyed to the RESULT and does.*** |
 | ~~1~~ | ~~1a · disambiguate `D1`/`A3`/`A4`~~ | **✔ DONE r1579.** Map codes namespaced `A·n` across 328 occurrences; collisions gone; algebra labels intact. **Code-based propagation is now safe.** |
 | ~~1~~ | ~~1c · the register's discharge verdicts~~ | **✔ DONE r1582.** 57 verdicts, all hold. The five closure-claims verified at source; the phantom sharpened — *the phrase is present and negated, not absent.* |
 | ~~1~~ | ~~1d · the reversal sweep~~ | **✔ DONE r1584.** Two reversals; the family-8 restoration verified clean across all five grains and the crosswalk. **⚑ PHASE 1 COMPLETE.** |
@@ -3821,7 +3821,7 @@ nothing stands between a node and starting it.*
 | ~~NOW~~ | ~~**item 13a · p0's bibkey unification**~~ | **✔ DONE r1566.** 38 keys unified across p0 and P13; one key per paper corpus-wide, verified; both papers recompile clean. **The defect that persisted uncorrected for hundreds of revisions is closed.** |
 | ~~—~~ | ~~**depmatrix alias workaround**~~ | **✔ REMOVED r1567.** Tool clean, one key per paper; the workaround's record lives in the cleanup record, not the tool. **Its removal exposed a stale dependency matrix — 5 of 17 rows — now regenerated in both P7 and the HTML.** |
 | ~~3~~ | ~~D.2b · p0's weight tags~~ | **✔ DONE r1569 — DRAFTING-STAGE ONLY.** Five bare tags expanded to say what is claimed and at what weight. **This does not close the jargon item:** the tags still exist as tags. |
-| **LATER (bar)** | **D.10 · WORK OR CUT every `[reach]`** | **A LATER POLISHING EXERCISE.** The tags stay in place and keep doing their drafting job until the work they organise is done. **Its position is set by that structural fact, not by its non-negotiable status (r1574).** **⚠ RE-COUNTED r1724: 17 `[reach]` (still all p0, was 15) + `do-not-assert` ×43 across 14 files (was ×37/11)** — the tags are working instruments and the corpus keeps adding them, which is correct; **a carried scope always under-states a live job.** **Not "vet" — worked to a result or cut.** A reach with a route and a falsifier *is still unworked*. De-jargoning is what worked-or-cut produces, not a later stage. *(D.11 withdrawn, folded in r1571.)* |
+| **LATER (bar)** | **D.10 · WORK OR CUT every `conjecture`** | **A LATER POLISHING EXERCISE.** The tags stay in place and keep doing their drafting job until the work they organise is done. **Its position is set by that structural fact, not by its non-negotiable status (r1574).** **⚠ RE-COUNTED r1724: 17 `conjecture` (still all p0, was 15) + `not claimed` ×43 across 14 files (was ×37/11)** — the tags are working instruments and the corpus keeps adding them, which is correct; **a carried scope always under-states a live job.** **Not "vet" — worked to a result or cut.** A reach with a route and a falsifier *is still unworked*. De-jargoning is what worked-or-cut produces, not a later stage. *(D.11 withdrawn, folded in r1571.)* |
 | ~~3~~ | ~~item 12 · combinatorics citations~~ | **✔ DONE r1575.** The ledger adjudicates numbers in four papers; only P14 cited it. Placed in p0, P12 and P3 at the exact sentence each ledger finding fixes. All recompile clean. |
 | ~~3~~ | ~~A3.2 · the QM promotion~~ | **✔ CLOSED r1587 — it had already happened.** Both sides are in the corpus (p0's *"share the one Euclidean real form"*, P13's computed co-location with a running receipt). **Nothing was owed; only the sketchpad didn't know.** |
 | ~~3~~ | ~~item 13 · masthead + bibkey~~ | **✔ NODE-SIDE DONE r1590.** 13a bibkey ✔ r1566 · dependency-matrix sweep ✔ r1567 · P11 title ✔ r1297. **Both title flags now closed, stated for reversal.** **P13 r1591** — the flag's suggestion *not* taken: the paper is still a boundary paper, so the title names the **convergence** (*four converging routes*) instead. **P12 r1592** — the flag was right: the title now names **the problem of time's "wrong sign" as the substrate's coset signature**. **Each propagated to ten sibling bibitems; all recompile clean.** |
@@ -3875,7 +3875,7 @@ holding it. Checking ① alone reports work owed that is already done.*
 - **QM S⁵/SO(6)** → in **p0** (*"the quantum of action and the colour symmetry share the one Euclidean real
   form"*) and **P13** (computed, receipt runs).
 - **The deuterium verdict** → **P16 asserts it**: *"deuterium at its observed D/H≃2.5×10⁻⁵."* The only
-  `do-not-assert` remaining in P16 sits on a **different** thing — the derivation-versus-inheritance of the
+  `not claimed` remaining in P16 sits on a **different** thing — the derivation-versus-inheritance of the
   handover datum — and correctly.
 - **The sound horizon** → **P15 carries the resolution**, twice.
 - **The correspondence phase** → **P15 states the crossing**, *"empirically favoured"*, three times.
@@ -3963,13 +3963,13 @@ values are found by *reading a paper for its own sake*, which is why this is a s
 scales with $H_0$**. *Quote a number with its $H_0$ or do not quote it.*
 
 ## SA-7 · THE HELD CONJECTURE — route it, or it goes stale where it sits (opened r1652, Daryl)
-**The issue.** A conjecture held *do-not-assert* is a correct and necessary act — it keeps an unearned claim out
+**The issue.** A conjecture held *not claimed* is a correct and necessary act — it keeps an unearned claim out
 of the corpus while preserving it. **But a held conjecture recorded only in the working note where it arose is
 outside every operative sequence**: nothing re-tests it, nothing notices when the programme moves under it, and
 nothing closes it when it becomes answerable. *It does not decay into a wrong claim; it decays into an
 abandoned one, which is worse, because it looks like live open work forever.*
 **The instance that opened this.** The r1411 reach — *that the 2:1 seam asymmetry is explained by the
-turnaround-before-conjugation ordering* — was correctly held do-not-assert and **recorded only in
+turnaround-before-conjugation ordering* — was correctly stated without being claimed and **recorded only in
 `TURNAROUND_CUBIC_geometry_note`. It appears in no plan item, no ledger family, no map cluster.** It sat there
 **241 revisions**, and it was closable in one line the whole time: the horizon cubic is depressed, so its roots
 sum to zero; two merging at $
@@ -3977,7 +3977,7 @@ ho$ forces the third to $-2
 ho$. **The 2:1 has zero degrees of freedom — there is
 no residual for the ordering to explain.**
 **① Standing:** when a conjecture is held, **route it in the same turn** — to a plan item, a ledger family, or a
-map cluster — with **what would settle it**. *A do-not-assert without a route is an orphan with a tag on it.*
+map cluster — with **what would settle it**. *A not claimed without a route is an orphan with a tag on it.*
 **② Sweep:** working notes carry held reaches from arcs whose plan items closed around them. Each wants the same
 three questions, in this order: **is it still open · is its explanandum still unexplained · what would settle
 it.** *The middle question is the one that closed r1411's: not "can we derive it?" but "is there anything left
@@ -4190,10 +4190,10 @@ neither is closed until the other is.**
   curiosity** · comprehensive added · **the tidying face named** · item 12 done.
 - **r1571** — **CORRECTION (Daryl): PB-2 and PB-3 are ONE blocker**, and my *"a reach with a route and a
   falsifier is a publishable frontier"* escape hatch is **false and struck** — a reach with a falsifier is
-  still unworked. **D.10 restated: every `[reach]` is WORKED TO A RESULT or CUT**; D.11 folded in, since
+  still unworked. **D.10 restated: every `conjecture` is WORKED TO A RESULT or CUT**; D.11 folded in, since
   de-jargoning is what worked-or-cut produces. **⛔ The programme is FULLY BLOCKED on D.10.**
 - **r1570** — the **PUBLICATION BLOCKERS register** opened at the head of `THE_PLAN`. Scope measured: 15
-  `[reach]` (all p0), `do-not-assert` ×37 across 11 files, *"at weight"* ×7.
+  `conjecture` (all p0), `not claimed` ×37 across 11 files, *"at weight"* ×7.
 - **r1569** — the two standing sweeps **entered as plan items D.8 and D.9** so they happen. **D.2b done** —
   five genuinely bare weight tags expanded, four left as legitimate prose usage; **drafting-stage only.**
 - **r1568** — **§14 STANDING ACTIONS opened, the double docket:** SA-1 work-blockers, SA-2 defragmentation.
@@ -4283,14 +4283,14 @@ neither is closed until the other is.**
   sinh²↦−cosh², and **the turnaround IS the half-period**. → `THE_PLAN` **A2.9**, where **three leads** are now
   recorded rather than left in a session: **(1)** *r* closes on **exactly β_dS = 2π/κ at κ=1/α**, so the whole
   bead is one function on the de Sitter thermal circle with the ℤ₃ as its three-fold subdivision — grounded,
-  receipt `storyboard_receipts/bead_thermal_period.py`, **thermal reading held do-not-assert and no recurrence
+  receipt `storyboard_receipts/bead_thermal_period.py`, **thermal reading stated without being claimed and no recurrence
   claim**; **(2)** two deck groups (P5's Galois S₃ vs this ℤ₃) — decidable **without** touching the root-set
   identification; **(3)** the half-period vs P13's R∘K factor of C. **Owed before the leads:** the r1412 spacing
   lock-in, verified unplaced.
 - **r1622** — **A FALSE OBLIGATION STRUCK, across five tracking sites.** `THE_WEAVE`'s harvest grid carried the
   *su(3)-lens bake* as owed work at **p0, P8, P14, P9** (and in its TRIBUTARIES axis and DISCIPLINE line), while
   **only P3's row** carried the caveat that the identification is unearned. The bake rests on the root-set
-  identification `order3_bridge.py` holds do-not-assert, and the r1409 "two legs of one A₂/su(3)" line was
+  identification `order3_bridge.py` holds not claimed, and the r1409 "two legs of one A₂/su(3)" line was
   **struck as over-reach at r1430** — so it was never propagation of an established result. All five sites
   corrected; the note's own frontmatter (which advertised it as owed) and its "owed regardless" line struck.
   *Seven papers of work would have been inherited as owed.* Also: the note's `work/…` paths were **all

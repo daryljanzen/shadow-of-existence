@@ -11,7 +11,7 @@ every citation resolving.**
 > strands are knotted together by the knot that it ties and won't let go of."
 
 P7's frontiers item 2 held the **sheet-to-ruling assignment** as "a genuine open problem, held
-do-not-assert." But P13 (`boundary_paper`) had **already resolved it** — the CPT factorisation
+not claimed." But P13 (`boundary_paper`) had **already resolved it** — the CPT factorisation
 `C=(Q↦−Q)_field ∘ (R∘K)_geometric`, with `R` (mass-reflection, r-axis, linear) and `K` (reality involution
 τ̃↦τ̃̄, τ̃-axis, antilinear) the **two axis-symmetries of the one Plate ℂ_r×ℂ_τ̃** (`prop:conjugation-closure`;
 The Plate caption's own words, *"Daryl's P13/P14 conjecture"*). The rulings and the wings are not two
@@ -28,7 +28,7 @@ framework's. Reciprocal to `JanzenBoundary`/`JanzenMatter`.
 
 **2. Migrated the open off.** DELETED frontiers item 2 (SEVEN→SIX; all its content was recap of §849–871).
 Inherited-data promoted to item 2 — which **auto-corrected** two stale `item~2` radiation-datum refs in item 1.
-Redirected §860/§867/§871 from "held do-not-assert (§frontiers)" to the closure.
+Redirected §860/§867/§871 from "stated without being claimed (§frontiers)" to the closure.
 
 **3. Made the unification explicit — `\subsection{The scope of the unification}` (`sec:unification-scope`),
 the synthesis capstone.** The point the synthesis never stated: three structures standard physics files under

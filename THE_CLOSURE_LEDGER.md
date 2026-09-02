@@ -74,11 +74,11 @@ the closure (false open / false close / flinch-disclaimer / "beyond scope" with 
 the closure-self-check verdict (OPENED / WORKED-SHUT / SURFACED); and the edit or the owed work.*
 
 ### r1280 — P7 sheet-to-ruling assignment (frontiers item 2) — WORKED-SHUT, migrated open→closed
-- **Location:** P7 `sec:frontiers` item 2 (old §1097); body refs §860/§867/§871 ("held do-not-assert (§frontiers)").
+- **Location:** P7 `sec:frontiers` item 2 (old §1097); body refs §860/§867/§871 ("stated without being claimed (§frontiers)").
 - **The closure (stale open):** a genuine open the corpus had ALREADY resolved six ways in P13 (the CPT
   factorisation C=(Q↦-Q)_field∘(R∘K)_geometric; R and K the two axis-symmetries of the one Plate ℂ_r×ℂ_τ̃;
   the Plate caption's own words, "Daryl's P13/P14 conjecture") but which P7's frontiers still advertised as "a
-  genuine open problem, held do-not-assert." The downstream paper untied the knot; the upstream one never
+  genuine open problem, stated without being claimed." The downstream paper untied the knot; the upstream one never
   updated — the exact staleness the open-problems axis exists to catch (each paper's open worked by a later one).
 - **Verdict:** WORKED-SHUT (migrated). Built P7 `sec:two-sided-closure` (the owed resolution, richly, in the
   synthesis where §1061 already set up R): R/K as the linear/antilinear faces of the one Plate, so rulings and

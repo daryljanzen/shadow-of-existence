@@ -16,7 +16,7 @@
 > sheet / B is a space' reading collapse the DOUBLE ruling of the one-sheeted hyperboloid. A and B
 > are two GENUINELY DISTINCT null rulings (orthogonal at the waist, verified); neither is the other
 > under a sign, and neither is the tau~<->conj(tau~) conjugate of the single cosmic-time continuation.
-> DERIVED and kept: photon -> real (Im 0) crossing. OPEN, do-not-assert: the map from the two distinct
+> DERIVED and kept: photon -> real (Im 0) crossing. OPEN, not claimed: the map from the two distinct
 > rulings {A,B} to the two conjugate wings. See gate_notes_bead_audit.md and P7 thm:bead third fact /
 > frontiers item, both de-asserted at r989. Read the reasoning below as an investigation, not a settlement.
 

@@ -2,7 +2,7 @@
 *Spine of the algebroid build; working definition for Plan Moves 5–7 and the algebroid paper (Move 14).
 Move 4 — re-cut r196 after Daryl's correction: **de Sitter and Schwarzschild are ONE slicing**, the
 difference is observer 1's **static(exterior) ↔ dynamic(spacelike)** vantage. Corrects the r195
-r=0/r₀ conflation and the same-slice point. Tags [established]/[reading]/[reach]. Reversal §5.*
+r=0/r₀ conflation and the same-slice point. Tags [established]/[reading]/conjecture. Reversal §5.*
 
 ## 1. Direction and dimension. **[established — P2, P3, P6; substrate dimension dS₅, settled 2026-06-12 (corrected at source from the dS₄/dS₅ conflation)]**
 The substrate is **dS₅** — one 5-dimensional de Sitter manifold, realized as a hyperboloid in the flat
@@ -13,7 +13,7 @@ was an error — it conflated the 4D de Sitter *geometry* swept from a cut, isom
 with the 5D *substrate* that is cut, isometry $\mathfrak{so}(5,1)$.) This is C1 in the corpus,
 "dS₅-in-M⁶," now load-bearing, not deferred.
 
-## 1a. The two construction operations — split on dimension. **[the split and the two distinct involutions settled 2026-06-12 (from the ruling picture, corrected at source); the algebroid-face assignment is [reach]]**
+## 1a. The two construction operations — split on dimension. **[the split and the two distinct involutions settled 2026-06-12 (from the ruling picture, corrected at source); the algebroid-face assignment is conjecture]**
 A dSⁿ is a one-sheet hyperboloid in $M^{n+1}$, *generated* by a double null ruling (a restriction of
 $M^{n+1}$'s null generators to the $n$-surface; those generators literally generate the geometry). Two
 distinct operations generate geometries, and they differ in **what they do to dimension** — this is the
@@ -44,7 +44,7 @@ group as reassignment — "$\mathfrak{so}(5,1)\ltimes\mathcal{C}=$ reassignment 
 *discrete* involution cannot be the *continuous* $\mathfrak{so}(5,1)$, so that is **retracted**. The
 continuous $\mathfrak{so}(5,1)\ltimes\mathcal{C}$ is the **slicing** structure (the substrate isometry
 acting on the cut-space $\mathcal{C}$); reassignment is a distinct **discrete** causal-role involution.
-*Which exact algebroid face each discrete piece occupies is left open — do not lock it.* **[reach]**
+*Which exact algebroid face each discrete piece occupies is left open — do not lock it.* **conjecture**
 
 > **Terminology — SETTLED (Daryl, 2026-06-12).** *Substrate* = **dS₅** (the 5D de Sitter manifold the
 > slicing curves cut to generate the 4D spacetime geometries; in the $M^6$ embedding — 5D-in-6D *for now*,
@@ -63,7 +63,7 @@ acting on the cut-space $\mathcal{C}$); reassignment is a distinct **discrete** 
 > **dS₄** was P7 (*"the underlying de Sitter substrate — a point of the waist 3-sphere of dS₄"*); those
 > three usages → **background geometry** (P7's cosmological background, the thing reassignment holds fixed).
 > P7's dS₄ physics untouched (its slices are $S^3$; dS₅'s are $S^4$). **Still open — the geometric
-> reconciliation, NOT terminology — open *physics*, to be settled by computation (a `[reach]` the gate
+> reconciliation, NOT terminology — open *physics*, to be settled by computation (a `conjecture` the gate
 works and states for reversal, NOT a pending orchestrator call):** how the corpus's "geometries are slicings of the de
 > Sitter manifold / 1D curve on a 2D section swept by SO(3)" framing (P5/P6, written dimension-agnostic via
 > $\mathfrak{so}$) sits against the dS₅-genuine-codim-1-slicing picture. **NOT $r_0$ (corrected by Daryl,
@@ -91,7 +91,7 @@ works and states for reversal, NOT a pending orchestrator call):** how the corpu
 > P7's old *"metric reassignment of the dS₄ substrate"* — one word, *substrate*, doing two jobs — now
 > corrected so the dS₄ is the **background geometry** (of the reassigned SdS) and the substrate is dS₅
 > (`CR_framework.tex`, confirmed clean). That fix is **done**. The **remaining P5/P6 geometric
-> reconciliation above is open *physics*, to be settled by computation** — a `[reach]` the gate works and
+> reconciliation above is open *physics*, to be settled by computation** — a `conjecture` the gate works and
 > states for reversal, **not** an orchestrator call. The single double-used word seeded a standing
 > "Move 4 is unseated domain" dissonance that contaminated the calculation; this note retires that seating.
 

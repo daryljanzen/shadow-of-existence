@@ -207,7 +207,7 @@ print()
 for s in [
  "⇒ ** B·1 AND B·2 GO IN AS ONE ROW: they are the two faces of one frontier (the cosmological face",
  "   and the general dynamical face) and the map already says so. **  *`G·1` is its own row and",
- "   goes in at the weight the map assigns it -- exploratory, do-not-assert, gated on `A·5`'s",
+ "   goes in at the weight the map assigns it -- exploratory, not claimed, gated on `A·5`'s",
  "   continuous side, which is `L-164`.*",
  "",
  "⌗⌗ ** AND THE STANDING ORDER THIS EARNS IS THE ONE THE `A·5` MISS ALREADY SHOULD HAVE: the fold",

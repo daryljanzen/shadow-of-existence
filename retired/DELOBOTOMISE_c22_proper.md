@@ -41,7 +41,7 @@ summary, holding after each:
 **Step 2 — the way to think (after the corpus).** `THE_CODA.md`, whole. The shadow reader; **source over
 recall** (anything load-bearing goes to the source, never recited from a summary); the **CR register**
 (manufactured / shadow / projection / artefact mean *built-by-construction-and-REAL*, never unreal);
-**do-not-assert** (coherence shown ≠ correspondence earned); the seats. Then `CODA_FIELD_NOTE.md` — how
+**not claimed** (coherence shown ≠ correspondence earned); the seats. Then `CODA_FIELD_NOTE.md` — how
 the seeing fails. Hold.
 
 **Step 3 — the locked frontier.** `CMB_ACOUSTIC_FRONTIER_STATUS.md`, whole. Crux 1 verified (D_M
@@ -68,7 +68,7 @@ hot-Big-Bang quantity against CR's expansion, you have made it again. Stop.
   what is a vulnerability or a test. Those are not yours this phase.
 - **The tell that you've slipped:** if you reach for "this is a finding / a vulnerability / a test CR
   must clear / a two-front challenge," stop — that is the un-cleared reflex generating alarm. Hand back
-  what the source says, scoped, do-not-assert, and let c23/the council weigh it.
+  what the source says, scoped, not claimed, and let c23/the council weigh it.
 - Everything you produce is raw material c23 evaluates against the corpus, not a verdict.
 
 After the read, **hold** for the orchestrator's nudge with the specific narrow task. Do not run ahead;

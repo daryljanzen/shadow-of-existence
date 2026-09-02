@@ -25,7 +25,7 @@ Result:
 So genuine matter (the density, the bend) DOES source the mode-level connection -- distinctly,
 through the radial leak -- mirroring K_G's mass/matter split (-m/r^3 angular-like vs +4 pi rho).
 
-Scope [reach]: the component structure (mass->angular, density->radial) is the finding; NO
+Scope conjecture: the component structure (mass->angular, density->radial) is the finding; NO
 closed-form "leak = grad K_G" identity is claimed.
 """
 import sympy as sp

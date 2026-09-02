@@ -96,7 +96,7 @@ plasma ring at c_s" to "does a coherent field instantiate on the bounded throat 
 lambda/mode." Node 2 gave the template (matter = a field on the cut, the Maxwell bend, verified).
 The aperture is in hand (exact, alpha-scaled, node 1's surface); the coherent propagating field
 is what's owed; the telescope is the two together. Build the field and the diffraction figure
-(angular scale lambda/alpha) is the predicted form -- to be computed honestly, do-not-assert.
+(angular scale lambda/alpha) is the predicted form -- to be computed honestly, not claimed.
 
 ## Through-line
 Identify the mirror bundle (1) -> give the geometry charge so the mirror can be antimatter (2)

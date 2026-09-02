@@ -3,7 +3,7 @@
 `anchor_*`/`adm*` scripts; the momentum sector completed and lifted to the general-covariant
 level at Move 5, r208, 2026-06-12). Not one of the 10 papers — a corpus support/spine note, like
 the singularity-taxonomy and Gowdy–dS consolidations. All receipts clean-zero (sympy). Tags:
-[established]/[computed]/[reading]/[reach].*
+[established]/[computed]/[reading]/conjecture.*
 
 ## Why this exists
 The **anchor** of the action Lie algebroid is the map from an infinitesimal cut-deformation to the
@@ -13,7 +13,7 @@ P5 (`slicing_operator.tex`) and `adm2`/`anchor_stress_1`, the momentum sector in
 the stress sector in `anchor_stress_1` — but were **never consolidated into a corpus deliverable**, and
 the momentum sector was never stated at the general-covariant level the energy sector reached, nor tied
 to P6's $J=Ma$. This note gathers the four sectors as one functional of the cut and records the Move-5
-completion. **[the anchor is the [reach] home; its four sectors are [computed], below]**
+completion. **[the anchor is the conjecture home; its four sectors are [computed], below]**
 
 ## The cut, and its four data
 A cut is the 3+1 data the construction reads off the substrate, which are exactly the ADM data
@@ -81,10 +81,10 @@ one functional. Energy and momentum are the constraints; stress is the evolution
 - The **general statement** is the covariant ADM constraints/evolution with the CR bend-reading; the
   **explicit non-spherical matter functionals** (homogeneous, axisymmetric/rotating-type-I) are P6's
   open item 2, **not collected**; the **dS₅-slicing restriction** (which cuts are admissible — the
-  range read as a condition on $\mathcal{C}$) remains. **[reach]**
+  range read as a condition on $\mathcal{C}$) remains. **conjecture**
 - **Next algebroid step (Move 6): bracket closure** — whether the cut-deformation bracket closes and the
   anchor is a Lie-algebra homomorphism. $j_i$ being a *clean functional of the shift* is its input. The
-  bracket can fail to close on the confined cut (the falsifiable check). **[reach]**
+  bracket can fail to close on the confined cut (the falsifiable check). **conjecture**
 
 ## Receipts (`scripts/`, all clean-zero)
 - `adm2.py` — Hamiltonian constraint $=0$ on the vacuum dS leaf, both vantages ($\sigma$ redistributes $2\Lambda$).

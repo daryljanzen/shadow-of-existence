@@ -241,7 +241,7 @@ figure (code + pdf + png): `corpus/_figure_backup_pre_storyboard/`.
   Corpus already holds the careful version. So D-C reframed UPGRADE->SHARPEN: the figure ILLUSTRATES the
   C-blindness (charge=even/in-place rendering, mass=odd/branch rendering of the one r=0 involution); C
   STAYS field-level; P13's boundary stands verbatim; glossary C entry needs no rewrite. Same illustrative
-  touch on P5. The R/C UNIFICATION ("one involution family") demoted to a REACH note (do-not-assert, same
+  touch on P5. The R/C UNIFICATION ("one involution family") demoted to a REACH note (not claimed, same
   weight as the pair-production C-rhyme) -- NOT a P13/P5 edit.
 - Storyboard section 8 D-C rewritten accordingly. No paper touched.
 

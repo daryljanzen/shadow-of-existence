@@ -118,7 +118,7 @@ in, and its own abstract says it is *"opened deliberately so that the propagatio
 those papers can fill it—and reveal the connections it does not yet contain."*
 **Its position in the arc:** it is the **synthesis pole**, not a premise. Its seven-ways unification
 *presupposes* the seven results the arc will establish; read first, it is a map of the destination, and its
-own tagging says so (`[reach]` on the unification; the seven *each established* elsewhere).
+own tagging says so (`conjecture` on the unification; the seven *each established* elsewhere).
 **Ledger effect:** adds **nothing standing** to the running total on a first read — by design. The
 substrate's reality (prop:unique), the universal standard, and the ledger of constants are its own, but
 the *unification* is the thesis the arc earns. See `ONTOLOGY_FOUNDATION_INDEX.md` §1j.
@@ -237,7 +237,7 @@ exterior time; no densities form). P2 leans on P1 explicitly and repeatedly — 
    finite horizon the cycloid shows, with r=0 persisting as the conjugate critical point. **So the
    horizon multiplicity is a reading of the cosmological constant — one horizon for Λ=0, three for Λ>0,
    the two additional roots present precisely because the substrate is de Sitter and not flat.**
-   *(Attached, do-not-assert: read on a fermion sector the three roots of the Λ>0 cubic would be three
+   *(Attached, not claimed: read on a fermion sector the three roots of the Λ>0 cubic would be three
    generations — the multiplicity itself a de Sitter effect: **no Λ, no third.** Conjectured in p0,
    asserted nowhere here.)* [P2 §ring]
 9. **This cycloid IS the equator — the w=0 member of the SdS family.** P2 §442 names it: the present
@@ -327,7 +327,7 @@ constructions below are carried out" — **not offered as one interpretation amo
    (time reflection, **timelike**, horn-flipping) are distinct reflections: P fixes U₀ where T sends it to
    D₀. The two hexads **share the fundamental 3 but complete by distinct reflections** (related by P∘T).
    *Resonance, not identity* — and the SM bearing is "a coincidence of abstract type until a bridge is
-   shown," carried do-not-assert. [P3 §hinge-geometry]
+   shown," carried without being claimed. [P3 §hinge-geometry]
 7. **Rigidity, and the groupoid.** The slicing curve is an **intrinsic curve on the manifold** and r₀ marks
    a point on it; the horizon relation 2M=r₀−r₀³ is read off the intrinsic curve, so **moving the charting
    observer changes the image, not the geometry** (`prop:rigidity`). Descriptions form a **groupoid whose
@@ -525,7 +525,7 @@ configuration."*
     isometry** (acting on a cut spinor as **γ⁵**) → chirality descends **gauged**; the **Weyl S₃ is the
     deck/monodromy symmetry, *no* isometry** → a family symmetry it would grade is **global**. *Gauged
     chirality with global flavour is the Standard Model's own arrangement, following from which factor is an
-    isometry.* Descent onto a propagating spinor sector: **do-not-assert**. [rem "family symmetry is global"]
+    isometry.* Descent onto a propagating spinor sector: **not claimed**. [rem "family symmetry is global"]
 11. **The parity as maximal symmetry's unspent residue**, and the +M/−M charts' apparent non-isometry as
     *"a feature of the representational record, not of the symmetric existent"* — the **"events exist" horn**
     the augmentation closes. [rem:orientation]
@@ -560,7 +560,7 @@ The cosmology is **forced by the group structure, not fitted**. And **do not ove
 the paper marks it as the reading's payoff, not an independent proof.
 
 **Altitude:** established at the stated scope. The perspectival ontology is *"the reading in which the paper
-is written"* — carried forward from P2/P3, **not re-derived**. The D₆ matter reading is do-not-assert.
+is written"* — carried forward from P2/P3, **not re-derived**. The D₆ matter reading is not claimed.
 
 **Paper upgraded (r908):** the abstract and intro carried **none** of ten body results tested. Now added:
 **single-reassignment uniqueness** (with the two-independent-routes convergence), **the eigenspace
@@ -1044,7 +1044,7 @@ sweep across all preambles found **only that one stale site**. P6 10pp, 0 undefi
 7. **D₆ = S₃ × ℤ₂ (family × chirality) = Aut(A₂).** The ℤ₃ cycles the walls; **each of the three reflections swaps the other two and fixes one**; together they generate the **full S₃**.
    - **Global vs gauged is "not a choice made here but the *kind* the discrete structure fixes"** — S₃ is the deck/monodromy symmetry and **no** isometry; the ℤ₂ **is** one (γ⁵). *"So chirality descends **gauged** and flavour **global**, the Standard Model's own arrangement following from **which factor is an isometry**."*
    - **Why they are *generations*:** *"Each plane carries the same three horizon **values**, so the three generations are **identical in content**, distinguished only by their wall; this is why the family symmetry is a symmetry of **identical copies** — the defining property of Standard-Model generations."*
-8. **The degeneracy is FORCED — and no asymmetric handle sits in the mass parameter.** The three shared horizons are roots of **one cubic**, and *"**every root, designated the slicing parameter, returns the *same* 2M = r₀−r₀³**"* — *"one object read three ways on the fully D₆-symmetric horizon locus."* The 2+1 designations (a chosen root against the ellipse pair; two horizons of one sign against one) are **"each a description structure paired with its symmetric twin — so *no asymmetric handle sits in the mass parameter*."** *(The partial-symmetry-flatten guard, written into the physics.)* A flavour **breaking structure** exists (**do-not-assert**); the mass **values** are the ordinary route.
+8. **The degeneracy is FORCED — and no asymmetric handle sits in the mass parameter.** The three shared horizons are roots of **one cubic**, and *"**every root, designated the slicing parameter, returns the *same* 2M = r₀−r₀³**"* — *"one object read three ways on the fully D₆-symmetric horizon locus."* The 2+1 designations (a chosen root against the ellipse pair; two horizons of one sign against one) are **"each a description structure paired with its symmetric twin — so *no asymmetric handle sits in the mass parameter*."** *(The partial-symmetry-flatten guard, written into the physics.)* A flavour **breaking structure** exists (**not claimed**); the mass **values** are the ordinary route.
 9. **THE COSMOGENESIS OF THE GENERATIONS.**
    - **Inheritance:** *"The causal reassignment **fixes the expansion rate and does not touch the leaf-carried content**, so the generation structure — being **leaf-carried** — is inherited across the branch point unchanged."*
    - **Origin:** *"The Nariai crest is the **fixed point of the root-permutation**, where two of the three roots merge; the three generation-loci are **S₃-symmetric there** and split into three undercritical — **so the family structure *originates* at the crest and unfolds as the universe expands**."*
@@ -1212,13 +1212,13 @@ structure it already has, on one datum shared with the CMB, and inherits lithium
 
 **Standing above the line:** nothing — p17 is the terminus. p0 stands *below* the whole tower as p0 and *closes* it as p17; the corpus reduces back to its seven-ways core. This is not a new card but the **in-order re-read** the pass was built to end on: p0's own last abstract line asks for exactly it — the paper "opened deliberately so that the propagation of the core through those papers can fill it—and reveal the connections it does not yet contain."
 
-**The headline finding — restraint on the front matter, the fullest such result in the pass.** p0's own `\S landing` (`sec:landing`) is found **already current to P16**: all sixteen descendant entries worked "round complete, both ways," each with its reciprocal edge named at source (P15 §89/§288 → the rigidity's root; P16 → the lap + the produced abundances; P1 §151; P2 §55; P7 §659/§662/§746/§750; P8 §50; P9 §51; P12 §141; P13 §143; and the rest). **The paper knows its whole descent** — the abstract names the three facts, the seven-ways rigidity, the constants-ledger, the shadow frame, and frames itself as "the space the rest of the corpus lands in," carrying its own `[reach]` altitude guard. **No tex upgrade warranted** — the P15/P8/P9 pattern, a finding not an omission. The paper's §landing *is* p0's own evolution-map, and it was kept current turn by turn as each card was pinned.
+**The headline finding — restraint on the front matter, the fullest such result in the pass.** p0's own `\S landing` (`sec:landing`) is found **already current to P16**: all sixteen descendant entries worked "round complete, both ways," each with its reciprocal edge named at source (P15 §89/§288 → the rigidity's root; P16 → the lap + the produced abundances; P1 §151; P2 §55; P7 §659/§662/§746/§750; P8 §50; P9 §51; P12 §141; P13 §143; and the rest). **The paper knows its whole descent** — the abstract names the three facts, the seven-ways rigidity, the constants-ledger, the shadow frame, and frames itself as "the space the rest of the corpus lands in," carrying its own `conjecture` altitude guard. **No tex upgrade warranted** — the P15/P8/P9 pattern, a finding not an omission. The paper's §landing *is* p0's own evolution-map, and it was kept current turn by turn as each card was pinned.
 
 **What the read *did* earn — the card's both-ways ledger, completed.** The §1j card's "What it gathers" had stood scoped to *Pass 1* (it listed only §1b–§1i). Reading p0 last, with all seventeen cards pinned, closes the ledger: the card now records the nine Pass-2 edges that land here — §1k (P2, the genus), §1l (P8, the operator), §1m (P9, the reach), §1n (P10, the canonical resolution), §1o (P11, the dynamics), §1p (P13, the matter-boundary rung), §1q (P14, the built residue), §1r (P15, the observational rung), §1s (P16, the lap) — each drawn from p0's own `sec:landing` reciprocal, not re-derived. **The both-ways closure is now total: every card points into §1j, and §1j records every card.**
 
 **What it adds to the running total:** nothing *new to the corpus* — and that is the result. p17 is the pass's proof-of-closure: the lens (§1-cards) and the ledger (this map) now agree with the papers' own mastheads, in both directions, across all seventeen. The one edge p0's §landing itself still flags open — *whether the two-way grind will "reveal structure the current corpus does not name"* — is precisely **Pass 3's** charge (the deep learn: undrawn implicit edges under the tightest source gate).
 
-**Guard:** p0's own altitude is the pass's — the seven results are **established**, *their unification is the thesis* (`[reach]`, decidable by a named test); **coherence, not correspondence** (§1g's boundary). Assert neither the geometric 𝔰𝔲(3), nor the hexad identity, nor a geometric CPT, nor the generation descent as the world's verdict. The closure demonstrated here is **self-consistency, not soundness** — the corpus knowing itself is not the corpus being true.
+**Guard:** p0's own altitude is the pass's — the seven results are **established**, *their unification is the thesis* (`conjecture`, decidable by a named test); **coherence, not correspondence** (§1g's boundary). Assert neither the geometric 𝔰𝔲(3), nor the hexad identity, nor a geometric CPT, nor the generation descent as the world's verdict. The closure demonstrated here is **self-consistency, not soundness** — the corpus knowing itself is not the corpus being true.
 
 ---
 
@@ -1246,7 +1246,7 @@ structure it already has, on one datum shared with the CMB, and inherits lithium
 11. **The κ=0 / Nariai seam: P15 / P16 ↔ P3 / P2** — a sharp corpus distinction confirmed. *P2 = the r=0 crossing (non-degenerate), relevant to P16's branch-point crossing (drawn); P3 = the κ=0 degeneracy, relevant to P15's transmission dichotomy (drawn).* **P15→P2 is a DUCK** — P2's seam is non-degenerate, so it underwrites nothing in a degeneracy-based proof; P15 correctly cites P3, not P2.
 12. **The su(3) wall: P13 ↔ P5** — *ALREADY-DRAWN, bidirectional* (P5's a2-distinct guard cites P13's su(3)⊄so(5,1); P13 cites P5 for the D₆ deck realisation).
 
-**The duck catalogue (unforced conjectures, verified held-honestly at every endpoint — no over-claim, no honesty slip):** the world-correspondence of the three-fold (whether the geometric three-fold *is* the physical three generations — do-not-assert at P2/P14/p0); the mass-hierarchy identification; the **hexad identity** (geometric six-fold = flavour triplet — held "resonance, not an identity" at P3/p0/P14, grounded in P≠T on the A₂ hexad); the two-fine-tuning-problems-one-fact reading (conjecture); a geometric CPT (not auto-yielded — the residue is a linear orientation skeleton, charge conjugation antilinear). Every one carries its `[reach]`/do-not-assert tag consistently; **coherence, not correspondence** holds throughout.
+**The duck catalogue (unforced conjectures, verified held-honestly at every endpoint — no over-claim, no honesty slip):** the world-correspondence of the three-fold (whether the geometric three-fold *is* the physical three generations — not claimed at P2/P14/p0); the mass-hierarchy identification; the **hexad identity** (geometric six-fold = flavour triplet — held "resonance, not an identity" at P3/p0/P14, grounded in P≠T on the A₂ hexad); the two-fine-tuning-problems-one-fact reading (conjecture); a geometric CPT (not auto-yielded — the residue is a linear orientation skeleton, charge conjugation antilinear). Every one carries its `conjecture`/not claimed tag consistently; **coherence, not correspondence** holds throughout.
 
 **Flagged, not forced (restraint — no edit made):** one optional co-location — `boundary_paper.tex` §a2 (≈L206) invokes P5's "observer-vantage groupoid" while its `\cite{JanzenGroupoid}` sits ≈50 lines later (L256). The edge *is* drawn; co-locating a second citation is cosmetic polish, not a missing forcing. Left as-is under the draw-only-when-forced gate; recorded here for the record.
 

@@ -38,7 +38,7 @@ co-equal substrate). It rejects both the conventional A-as-unreal and B-as-co-eq
 
 ## §4 co-localisation: clean.
 The three discrete operations are co-localised at r=alpha but explicitly NOT fused ("adjacency is not
-identity"); P10's four-way do-not-assert on fusion is preserved. Consistent with the c17 hand-off flag.
+identity"); P10's four-way not claimed for fusion is preserved. Consistent with the c17 hand-off flag.
 
 ## Procedural check (r312 overriding r311's "orchestrator's call"): grounded at source.
 ONTOLOGY_FOUNDATION_INDEX §1 (read at source): "Daryl does not set the ontology; the physically
@@ -52,7 +52,7 @@ The closure is ONTOLOGICAL: Reading B "as co-equal substrate" is closed WITHIN C
 (P7: the physical world is the one Lorentzian evolving layer that exists). It is NOT an independent
 STRUCTURAL foreclosure — mathematically SO(6) and SO(5,1) ARE co-equal real forms of SO(6,C); the
 privileging of the Lorentzian is CR's physical commitment, not a group-theoretic fact. This is exactly
-what the adjudication claims ("colour-closed rests on P1/P7"), and the universal stays do-not-assert — so
+what the adjudication claims ("colour-closed rests on P1/P7"), and the universal stays unclaimed — so
 the scope is correctly held. The fork was posed as an ontology question (r311); the corpus's ontology is
 the right instrument and it settles it. Anyone rejecting P7's ontology would not see the fork closed — but
 within the programme (the relevant frame) it is. State the closure AS ontological (it already mostly is);
@@ -61,5 +61,5 @@ don't let it drift into a structural-impossibility claim.
 ## Verdict
 HOLDS. Swing 2 confirmed verbatim at P7; swing 1 holds on P7's own signature line (firmer than the cited
 seam case — recommend re-grounding there); swing 3 holds; §4 clean; the procedural correction is §1-grounded.
-r311 §5 is superseded by the adjudication, within the stated ontological scope. The universal do-not-assert
+r311 §5 is superseded by the adjudication, within the stated ontological scope. The universal not claimed
 and frontier-2 (empirical coherence) stand untouched. No flaw found; one strengthening offered; scope marked.

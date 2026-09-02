@@ -68,7 +68,7 @@ The acoustic scale is θ\* = r_s / D_M. Honest state:
   belonging to neither model. It says nothing about whether CR is in tension, and must not be presented
   as a result, a tension, or a strawman-to-debunk. It is simply the wrong calculation.
 - **The correspondence question at the acoustic scale is open because the calculation has not been
-  done** — held do-not-assert for that reason, not because any number leans. The real work is the
+  done** — stated without being claimed for that reason, not because any number leans. The real work is the
   rigorous early-universe 3-sphere sound horizon (P7 §679), whose framing (the seam structure, whether
   a standard plasma era exists at all) is the corpus's to decide from the NBC (P7 §665) and the
   finite-throat geometry, constrained by analysis. Unperformed.

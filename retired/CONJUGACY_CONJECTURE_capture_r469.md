@@ -635,10 +635,10 @@ ambient angle of the branch-switch) and whether it orders sensibly against known
     w=30 to the geometric Nariai root r0 = 1/sqrt3 = alpha/sqrt3, and it makes 2M = r0 - r0^3 collapse to the
     pure triple-angle 2M = (2/3sqrt3) sin 3w (verified exactly: r0 - r0^3 = (2/3sqrt3)(3 sin w - 4 sin^3 w)).
     The factor 2 is 1/sin30. NOT an independent sqrt3 -- the geometric sqrt3 expressed in chart coordinates.
-  - ROLE 3 (CONJECTURE, do-not-assert): the radiation sound speed c_s = c/sqrt3 shares the number; "c_s = c
+  - ROLE 3 (CONJECTURE, not claimed): the radiation sound speed c_s = c/sqrt3 shares the number; "c_s = c
     read through the seam rescaling" has NO mechanism in the built dynamics (tensor graviton ~ a^-2, the bend
     pressureless c_s=0; no oscillating scalar medium -- P11/canonical_time). The thread into the unbuilt
-    scalar sector, NOT a result. Held do-not-assert.
+    scalar sector, NOT a result. Held not claimed.
   WHICH FRAME (the embedding picture): option (ii). The work-surface is the ONE manifold (the reassigned-dS
   background, sharing manifold + foliation with the SdS cosmology). Draw it in the background frame (throat
   at alpha) and carry the cubic-root radii (alpha/sqrt3, etc.) as matter-synchronization readings, each
@@ -680,7 +680,7 @@ ambient angle of the branch-switch) and whether it orders sensibly against known
       Propagates: anywhere the corpus reaches Schwarzschild via alpha->infinity (Lambda->0) is suspect.
 
   Q1  THE FRAME / sqrt3 CLUSTER  *** [RESOLVED r476 -- see the FRAME RESOLUTION block above: one sqrt3,
-      three roles (geometric two-synchronization / projective gnomonic / do-not-assert c_s); embedding in
+      three roles (geometric two-synchronization / projective gnomonic / not claimed c_s); embedding in
       the background frame, matter radii synchronization-tagged. Stated for reversal.] *** which frame is the
       embedding picture in, and are the four sqrt3-ish factors one or several -- figure cross-frame
       areal sqrt3, gnomonic 2/sqrt3, cubic amplitude 2/sqrt3, the alpha/sqrt3 root? Decides whether

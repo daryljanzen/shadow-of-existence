@@ -135,12 +135,12 @@ The dual/conjugate branch IS antimatter, at exactly the weight the fundamental b
 The corpus's error: an ASYMMETRIC bar + conflating "seam-crossing is not a CP event" (true) with "the dual reading isn't antimatter" (does not follow). 
 The C-blindness wall STANDS as stated (geometry doesn't source C) — we keep it, we just stop MISreading it as "therefore not antimatter."
 
-## What would still make me wrong (kept honest): if "matter" on the fundamental branch is itself only named at do-not-assert weight in the corpus (then symmetry gives antimatter do-not-assert too, not asserted). CHECK how firmly the corpus asserts the fundamental branch is "matter"/"three generations" — is THAT asserted or hedged? If asserted, antimatter earns the same. If hedged, both stay hedged together (but then the hedge is symmetric and honest, not the asymmetric one now in place).
+## What would still make me wrong (kept honest): if "matter" on the fundamental branch is itself only named at not claimed weight in the corpus (then symmetry gives antimatter not claimed too, not asserted). CHECK how firmly the corpus asserts the fundamental branch is "matter"/"three generations" — is THAT asserted or hedged? If asserted, antimatter earns the same. If hedged, both stay hedged together (but then the hedge is symmetric and honest, not the asymmetric one now in place).
 
 ---
 ## FINDING F — the naming IS asymmetric (verified by reading both sides at weight)
-MATTER side (matter_sector): asserted at result-weight "three chiral generations / discrete flavour structure / Delivered", with ONE honest qualifier: "forced WITHIN CR" = coherence under the maximal-symmetry principle, world-correspondence do-not-assert. Correct weight.
-ANTIMATTER side: held BELOW that — "resonance not identity / do-not-assert / not auto-yielded" — despite EVERY structural ingredient present and verified (3-bar = R-image = conjugate rep [verified]; R=gamma^5 on the actual wall spinor [prop:wall, exact]; R = 2M->-2M mass reflection [verified W-odd]). The matter_sector paper ITSELF writes "R=gamma^5 (the antifundamental, THE ANTIMATTER REGISTER)" and then refuses the name via "resonance not identity."
+MATTER side (matter_sector): asserted at result-weight "three chiral generations / discrete flavour structure / Delivered", with ONE honest qualifier: "forced WITHIN CR" = coherence under the maximal-symmetry principle, world-correspondence not claimed. Correct weight.
+ANTIMATTER side: held BELOW that — "resonance not identity / not claimed / not auto-yielded" — despite EVERY structural ingredient present and verified (3-bar = R-image = conjugate rep [verified]; R=gamma^5 on the actual wall spinor [prop:wall, exact]; R = 2M->-2M mass reflection [verified W-odd]). The matter_sector paper ITSELF writes "R=gamma^5 (the antifundamental, THE ANTIMATTER REGISTER)" and then refuses the name via "resonance not identity."
 => ASYMMETRIC BAR CONFIRMED at source. The matter and antimatter skeletons are the SAME KIND of object (geometry supplies rep+chirality+mass-sign on both; charge external on both), related by R (3<->3-bar). They must be named at the SAME weight.
 
 ## THE TWO PRECISE ERRORS (named from the actual sentences):
@@ -148,7 +148,7 @@ ANTIMATTER side: held BELOW that — "resonance not identity / do-not-assert / n
 2. Asymmetric C bar (boundary §258): "geometry supplies P,T,gamma^5 but not charge; no geometric CPT" is TRUE (verified: no geometric op = C). But this is EQUALLY true of matter (its charge is external too). "C is external" is symmetric across the two branches and is therefore NO disqualifier for the antimatter name unless it also disqualifies the matter name. Double standard.
 
 ## VERDICT (complete, adversarially tested 3x, verified by computation + rep theory + source):
-**The dual/conjugate branch IS antimatter, earned at exactly the weight the fundamental branch is matter** — i.e. FORCED WITHIN CR (coherence), world-correspondence do-not-assert. Grounds:
+**The dual/conjugate branch IS antimatter, earned at exactly the weight the fundamental branch is matter** — i.e. FORCED WITHIN CR (coherence), world-correspondence not claimed. Grounds:
 - 3-bar = conjugate (antiparticle) rep, produced by R [rep theory, verified].
 - R = gamma^5 on the wall spinor [prop:wall, exact bound state].
 - R = 2M->-2M mass reflection [W-odd, verified].
@@ -163,20 +163,20 @@ KEEP (true, not overturned): (a) C-blindness — geometry does not source C; (b)
 ## EDIT PLAN (for Daryl's go — NOT executed yet):
 1. matter_sector L212: recast "resonance, not an identity" so it says what it PROVES — R≠T ⇒ antimatter is the ordinary route, NOT a cosmogenesis event — and STOP using it to withhold the name. State: the conjugate branch is antimatter (the R-image, 3-bar), forced within CR at the weight matter is; C external on both branches.
 2. boundary §258: keep C-blindness (true) but strike the asymmetric framing; state the geometry supplies the discrete skeleton of BOTH matter and antimatter (orientation+chirality+mass-sign), charge external on both — so "no geometric C" is symmetric, not an antimatter-disqualifier.
-3. The bead §frontiers item + panel D (P7): NOW the antimatter naming can be ASSERTED at within-CR weight (not "do-not-assert, unworked") — the dual branch / -wing / second ruling is antimatter, the R-image. (This also feeds the panel-D honest rebuild: A ruling = matter, B ruling = antimatter, related by R; photon real. That's the earned assignment.)
+3. The bead §frontiers item + panel D (P7): NOW the antimatter naming can be ASSERTED at within-CR weight (not "not claimed, unworked") — the dual branch / -wing / second ruling is antimatter, the R-image. (This also feeds the panel-D honest rebuild: A ruling = matter, B ruling = antimatter, related by R; photon real. That's the earned assignment.)
 4. p0, cosmogenesis: propagate the earned name where the conjugate branch is discussed.
 5. This is a corpus-level result: cut BUNDLE + long changelog entry.
 
 ## STILL OWED before I'd call it DONE (honest): a cold read by a fresh node of this whole argument (the corpus's own discipline for a result this load-bearing), and Daryl's read. I have builder's conviction; that is not certification.
 
 ===================================================================================
-## EXECUTION (r990) — corpus-wide antimatter fix. Weight to hold: dual = antimatter, FORCED WITHIN CR, at exactly the weight the fundamental branch is matter; world-correspondence do-not-assert on BOTH (symmetric). Keep C-blindness (true, symmetric). Keep R≠T (true) but recast: it means antimatter is the ORDINARY route (not a cosmogenesis event), NOT a naming-blocker. Naming: NAME antimatter where the corpus names matter; geometry names (conjugate dual, antifundamental, R-image, 3-bar) become the IDENTIFICATION of antimatter, not a replacement for the word.
+## EXECUTION (r990) — corpus-wide antimatter fix. Weight to hold: dual = antimatter, FORCED WITHIN CR, at exactly the weight the fundamental branch is matter; world-correspondence not claimed for BOTH (symmetric). Keep C-blindness (true, symmetric). Keep R≠T (true) but recast: it means antimatter is the ORDINARY route (not a cosmogenesis event), NOT a naming-blocker. Naming: NAME antimatter where the corpus names matter; geometry names (conjugate dual, antifundamental, R-image, 3-bar) become the IDENTIFICATION of antimatter, not a replacement for the word.
 ## Framing (Daryl): hedges are accidents of development; corpus proved its point recently; this is refinement.
 ### Inventory of loci (fill from grep, then edit each):
 
 ### REFINED per-locus plan (after reading P3 at source):
 P3 L451: TRUE (two hexads, R≠T, skew-hexagon lower triangle = T-image not 3̄). KEEP intact. R carries 3->3-bar is stated correctly here.
-P3 L462: FOSSIL hedge — "coincidence of abstract type UNTIL A BRIDGE IS SHOWN... do-not-assert." The bridge (propagating fermion sector realizing 3+3-bar) IS NOW BUILT (matter_sector). FIX: note the bridge is built; the 3-bar is realized on the matter field, so within CR the antifundamental is antimatter (world-correspondence still open, as for matter).
+P3 L462: FOSSIL hedge — "coincidence of abstract type UNTIL A BRIDGE IS SHOWN... not claimed." The bridge (propagating fermion sector realizing 3+3-bar) IS NOW BUILT (matter_sector). FIX: note the bridge is built; the 3-bar is realized on the matter field, so within CR the antifundamental is antimatter (world-correspondence still open, as for matter).
 matter_sector L212: the main fix — recast the "R=gamma^5 (the antimatter register)... resonance not an identity" so R≠T means antimatter is the ORDINARY route (not cosmogenesis), and NAME the dual branch antimatter at within-CR weight (the R-image = 3-bar = the wall-mode's antiparticle).
 matter_sector L169: chi_- "rejected" — leave the local normalizability statement, but it's fine (it's the growing solution at one wall, not the antimatter branch). No change needed unless it reads as denying antimatter — check.
 boundary §258: KEEP C-blindness (true). STRIKE the asymmetric bar: state geometry supplies the discrete skeleton of BOTH matter and antimatter (rep+chirality+mass-sign), charge external on both; "no geometric C" symmetric, not an antimatter-disqualifier. The dual is antimatter at the weight matter is matter.
@@ -190,4 +190,4 @@ CR_cosmology L352, janzen_circle L467: check register.
 ### THE STANDING TRUE GUARDS (keep, do not overclaim against):
 - C-blindness: geometry doesn't source C. TRUE. Symmetric across branches.
 - R≠T: TRUE. Means antimatter is the ordinary route, not a cosmogenesis event.
-- world-correspondence do-not-assert: SAME for matter and antimatter.
+- world-correspondence not claimed: SAME for matter and antimatter.

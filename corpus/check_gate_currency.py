@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """check_gate_currency.py -- A ROW'S GATE-HOLDING DOCUMENT MUST NOT LAG THE ROW.
 
-** WHY.  r2803. **  *** `PO-2` was held at do-not-assert on three levels.  Its row RECORDED four
+** WHY.  r2803. **  *** `PO-2` was stated without being claimed on three levels.  Its row RECORDED four
 findings (r2629--r2633) that moved two of them and argued from them at length.
 `GEOMETRY_PHYSICS_TAXONOMY.md` --- ** the document that HOLDS the three levels ** --- still read "the
 three levels ... stand exactly as r693 set them", in two places, and had never heard of any of it. ***

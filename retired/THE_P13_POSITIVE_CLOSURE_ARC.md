@@ -58,7 +58,7 @@
 > **1/3–2/3 → quark charges: ⛔ DEAD** — *"I wrote the killing condition myself… A3 says the charge sign closes from the field. **So the geometry is blind to it by result, not by ignorance.**"* · **hexagon → A₂/su(3): UNTOUCHED** (always the Weyl shadow) · **1+2 → uud/generations: UNTOUCHED** (a real-`r` artifact) · **★ the conjecture: PROMOTED and NARROWED — B3's content:** not *"the vertex is pair production"* but ***"the geometry carries the vertex's KINEMATIC face (FS/CPT) and not its CHARGE face"*** — **which is exactly the operator/species bound `prop:closure` holds, reached independently from the figure side** · **the broken duality: UNTOUCHED — "and still the only thing that's ours."**
 >
 > **STILL GATED, and correctly:** **A3** (does `C = R ∘ (τ̃↔τ̄̃)`?) and **B3**. r1088 held the
-> factorization at `[reach — do-not-assert]` independently, and routed it to **`THE_PLAN`'s A7 — the
+> factorization at `[reach — not claimed]` independently, and routed it to **`THE_PLAN`'s A7 — the
 > full analytic object (`ℂ_r × ℂ_τ̃`)**, which is what this arc calls "A3". ⚠ **Naming collision:
 > this document's "A3" is the plan's A7; the plan's `A3` is the quantum completion.**
 ### Opened r1072. **Extended to the full multistage plan at r1088 (Arthur), carrying the arc from r1072 forward through the r1087 state and the post-r1087 realization, and adding PHASE 0, the anti-reversal floor.** The arc from "a dumping ground for negative boundary results" to the paper P13 was always meant to be: the synthesis of those negatives into a **shape**, and the positive result that shape encloses — **a drawn connection between CPT and cosmology** — and, in the end, the whole synthetic ontology built into every paper on its own terms.
@@ -202,7 +202,7 @@ convention — it falls out of the parities.**
     - **DO-NOT-ASSERT (→ Phase E / P14):** that `R∘K` acts on P14's **actual fermion zero-modes** as `C`'s
       kinematic conjugation; the identification of a wing with a **specific charged particle**; a full
       **geometric CPT** (the charge still closes from the field). **The conjecture's kinematic skeleton is
-      now grounded; its charged-particle reading stays do-not-assert.** **B may open, bounded by this scope.**
+      now grounded; its charged-particle reading stays unclaimed.** **B may open, bounded by this scope.**
 - **A3b · [6*] — AND THE HARD CONSTRAINT ON HOW A3 MAY BE WORKED (r1075).** The factorization question
   and *"does `species = sign(r)` survive the FS reading?"* are **the same question**, and **neither face
   can answer it**: `sign(r)` exists **only** on the real-`r` slice; the FS pairing lives in complex `τ̃`;
@@ -235,7 +235,7 @@ the `τ̃↔τ̄̃` lap-conjugation — so the cosmogenesis carries `C`'s kinema
 framework figure). The **abstract** gained the positive-closure sentence, and **§`sec:meaning`**'s residue
 clause was enlarged (**B1**) and its conclusion reframed from "the bounded negative is itself a result"
 to the shape it encloses. Scope held sharp: fermion-sector realisation, wing↔charged-particle
-identification, and geometric CPT all **do-not-assert** (→ Phase E/P14); `species=sign(r)` explicitly
+identification, and geometric CPT all **not claimed** (→ Phase E/P14); `species=sign(r)` explicitly
 **not** vindicated (maps stated on the full object, not the slice). **Next: (C ∥ D).**
 - **B1 · The perimeter redrawn** at the earned radius: **L1 + L2 | L3**. The residue clause replaced.
 - **B2 · The synthesis section** — the negatives pulled into a **shape**: what the wall excludes
@@ -320,7 +320,7 @@ full — **the maze, walkable, positives and negatives.**
   three levels ARE the slicing operator's four data / the 3+1 split read ontologically); the `C` entry
   **de-compressed** to the three-level anatomy + the rigged-test warning (r1088) and **updated to A3's
   resolution** (r1091 — `C = (Q↦−Q)_field ∘ (R∘K)_geometric`, [6] resolved to kinematic-shadow, the CPT↔
-  cosmology connection, the do-not-asserts); the maze walkable in the glossary + storyboard `D-Canat`.
+  cosmology connection, the not claimeds); the maze walkable in the glossary + storyboard `D-Canat`.
   Remaining for D is a final coherence pass of the cards against the resolved state — folded into PHASE E.
 
 ## PHASE E — the fulsome enrichment
@@ -348,7 +348,7 @@ honestly**.
   CORPUS_MAP r1096; restraint *was* the work). The ontology-map cards brought current (glossary §C·factorization
   and §1·LEVELS already resolved r1088–r1091; [closure] flags added to §1f/§1h/§1m/§1o/§1s at r1095–r1096). All 17
   papers compile clean (verified full-corpus, 0 undefined each). **The arc is closed: Phases 0→E all ✅.** What
-  remains open remains open *by design* — the standing do-not-asserts (the full field-theoretic `C`, the
+  remains open remains open *by design* — the standing not claimeds (the full field-theoretic `C`, the
   wing↔specific-charged-particle identification, a full geometric CPT; bounded at A3's scope), the matter content
   (external by construction), and the corpus's honest frontiers (the high-ℓ CMB transfer, P1's no-horizons, the
   baryogenesis-analogue) — none of them danglers of this arc, all of them flagged at coherence. **P13 still owes

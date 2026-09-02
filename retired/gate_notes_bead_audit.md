@@ -28,7 +28,7 @@
 ### r977-r984 — (changelog NOT saved — reconstruct) bead-frames fig; three-frame fig:bead_frames; r980 two frontier Qs
 ### r985 — antimatter front plan; WP-A (figure walk-back, P7 caption edits, bibkey hygiene)
 ### r986 — WP-B order-three (does not close); lem:twoturnings added to P7; C3 "1+2 sheets" [SUSPECT]; WP-E [later reopened]
-### r987 — self-corrections: double-speed removed; antimatter reopened do-not-assert
+### r987 — self-corrections: double-speed removed; antimatter reopened not claimed
 ### r988 — ? (verify what if anything)
 
 ## SPECIAL FLAG (Daryl): the "2+1 thing" possibly introduced an error in P5 via a short lemma. Check P5 for any node-added lemma.
@@ -97,7 +97,7 @@ The error is NOT in lem:twoturnings and NOT in P5. It is in thm:bead's THIRD str
 **Correct honest state:** three DISTINCT congruences (A ruling, B ruling, photon=at-rest); photon→real crossing is derived; but the assignment of the two RULINGS to the two conjugate wings is OPEN — the map from {A,B} (distinct substrate rulings) to the sheets of r(τ̃) is not established. Do-not-assert, both ways.
 
 ### FIX SCOPE (minimal, honest — for Daryl's go before editing)
-- P7 L763 third fact: retract the "A,B take the wings" bijection; state photon→real (derived), and that the two wings are the conjugate pair of ONE continuation, with the assignment of the two distinct rulings to sheets OPEN/do-not-assert.
+- P7 L763 third fact: retract the "A,B take the wings" bijection; state photon→real (derived), and that the two wings are the conjugate pair of ONE continuation, with the assignment of the two distinct rulings to sheets OPEN/not claimed.
 - Panel-D caption L529: already hedged ("genuine open question") but still colours/says A/B on the wings — align to "conjugate pair of one continuation; ruling↔sheet assignment open."
 - §frontiers L961: same de-assertion.
 - sheet_assignment.py: annotate step [3] as asserted-not-derived; keep steps [1],[2] (sound).
@@ -119,4 +119,4 @@ NOTHING ELSE in the corpus needs touching (theorem, lemma, first/second facts, P
 
 ## OPEN, handed forward (the real next work, in order):
 1. The sheet↔ruling assignment — derive how {A ruling, B ruling, photon} map onto the sheets of r(τ̃), or show no canonical map exists. THE panel-D honest-version work.
-2. The antimatter naming — do-not-assert, unworked both sides.
+2. The antimatter naming — not claimed, unworked both sides.

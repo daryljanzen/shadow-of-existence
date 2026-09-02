@@ -36,7 +36,7 @@ RESULT [E, flat-limit-verified, L_max-converged] at chi=D_C/r0~2.75:
   of the discrete closed-S^3 source.  Deficit LOCATION (ell~8) is geometric (set by k_2*D_C),
   robust to the weight; exact SHAPE/amplitude depends on the weight convention.
 
-CAVEATS (do-not-assert as the final CR word):
+CAVEATS (not claimed as the final CR word):
   (a) leading-order ORDINARY SW only -- no ISW / no full radiative transfer;
   (b) the discrete scale-invariant measure w_L convention should be cross-checked against a
       first-principles closed-S^3 primordial normalisation;

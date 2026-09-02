@@ -18,7 +18,7 @@ leak enters solely through h^rr=f in xi^rho, whose M-variation d_M f = -2/rho is
 the structure-function connection (steps 1-3). So the [m,m]->m leak IS that
 connection, realized at the mode level.
 
-Scope [reach]: vacuum M-modulus only; the MATTER bend (m'!=0) is a distinct rung.
+Scope conjecture: vacuum M-modulus only; the MATTER bend (m'!=0) is a distinct rung.
 No closed-form "leak = grad K_G" identity is claimed -- only that the leak is
 driven by d_M f and vanishes at the symmetric stratum.
 """

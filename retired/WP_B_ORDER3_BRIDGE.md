@@ -23,7 +23,7 @@
 > E=0, the same statement as the horizon cubic's double root. So the affine obstruction is the crossing seen
 > from its two ends, **not evidence the two three-folds are unrelated**.
 >
-> **Unchanged and still do-not-assert:** the identification of the two root sets (the A₂ resemblance).
+> **Unchanged and still not claimed:** the identification of the two root sets (the A₂ resemblance).
 > **Withdrawn:** the "Frontiers wording" by-product below, which proposed *closing* a P7 frontiers item on
 > the strength of the over-broad reading. It was never applied to P7, and it must not be.
 > Receipt: `turnaround_excursion_work/two_realisations.py`. Landed: `CR_framework.tex`, `rem:tworealisations`.
@@ -33,7 +33,7 @@
 Receipt: `computations/order3_bridge.py` (stages 1–4, all pass/print as described).
 Status of the result: **held as established** for the negative/structural claims below
 (each is a clean computation or standard algebra); the antimatter-naming and sheet-assignment
-consequences remain do-not-assert.
+consequences remain unclaimed.
 
 ## The question
 Is the groupoid's order-three (sky-angle ℤ/3, `w → w + 2π/3`, on the roots of the horizon cubic
@@ -71,8 +71,8 @@ companion groupoid analysis carries." This tests whether that is a theorem or a 
 `S₃` has a **unique** order-three subgroup (the alternating `A₃`). So each cubic's Galois ℤ/3 is
 "the" ℤ/3 abstractly — as is every ℤ/3; this is content-free. A *nontrivial* identification would
 have to identify the two `S₃`'s (the two root sets), which is exactly the **A₂ / "triality"
-resemblance the corpus already logs do-not-assert** (`OPEN_PROBLEMS_MAP.md` J7). Invoking it to
-bridge stacks one do-not-assert on another.
+resemblance the corpus already logs not claimed** (`OPEN_PROBLEMS_MAP.md` J7). Invoking it to
+bridge stacks one not claimed for another.
 
 ## Even if granted, the bridge does not close the sheet-assignment
 A groupoid↔bead ℤ/3 iso would label the bead's sheets by **horizon-root index**, not by
@@ -95,7 +95,7 @@ because the family crosses its discriminant, `Δ = 4α⁴(α²(1−E²)³−27M�
 the ends; at Nariai that crossing lands exactly at E=0, the same statement as the horizon cubic's double
 root. The affine obstruction is that crossing seen from its two ends.
 
-**Open (do-not-assert), unchanged:** whether the A₂ structure at the E=0 end survives the crossing to E=1 —
+**Open (not claimed), unchanged:** whether the A₂ structure at the E=0 end survives the crossing to E=1 —
 i.e. whether the two root sets are identified nontrivially. The family makes the question exact; nothing
 here answers it. Receipts: `receipts/P07_CR_framework/order3_bridge.py` (stage 5), and
 `turnaround_excursion_work/two_realisations.py`.

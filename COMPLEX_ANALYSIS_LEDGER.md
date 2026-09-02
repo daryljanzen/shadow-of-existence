@@ -19,7 +19,7 @@ current: r3528
 >
 > ⚠ *§4d's queue text called that question "unasked" while §4a had answered it twice, and a register row
 > (`PO-20`) was opened off the stale text at r3096 and **struck at r3097** on reading §4a. The residue is
-> `§4a ⓷`, held there at reach and do-not-assert: whether $\sinh$'s order-1 exponential type has analytic
+> `§4a ⓷`, held there at reach and not claimed: whether $\sinh$'s order-1 exponential type has analytic
 > content for the rate is a suggestion without a receipt.*
 
 
@@ -259,7 +259,7 @@ screen that does not finds two and would have had an editor changing a comment.*
 >
 > ⚠ ***This entry went on reading "unasked" after §4a had answered it twice, three screens away, and a
 > register row was opened off it at r3096 before being struck at r3097 on reading §4a.*** *The residue is
-> `§4a ⓷`, held there at reach and do-not-assert.*
+> `§4a ⓷`, held there at reach and not claimed.*
 >
 > ⌗ **AND IT SHARPENS `L-203`:** *R-M's Ⓒ is a **re-entry on a handoff, not a first bake** — this field has been
 > baked once and closed. Ⓒ is `Q4`'s equianharmonic result arriving at a field whose ledger already exists, so
@@ -560,7 +560,7 @@ loudly, which is what a receipt that can fail is for.*
   infinity is the total branch point of the three-sheeted cover and the cylinder's end.** *It was never missing;
   it was never joined to the question.*
 
-  **⓷ [reach — do-not-assert] THE ORDER IS DETERMINATE AND MIGHT SAY SOMETHING.** *$\sinh$ is entire of **order 1,
+  **⓷ [reach — not claimed] THE ORDER IS DETERMINATE AND MIGHT SAY SOMETHING.** *$\sinh$ is entire of **order 1,
   exponential type** — the minimum order for a non-polynomial entire function with a period — and Hadamard's
   factorisation determines an order-1 entire function from its zero set up to $e^{az+b}$.* ⌗ ***Whether "the rate
   is fixed by $\Lambda$ alone up to a gauge" is the analytic content of that*** *is a suggestion and not a result:

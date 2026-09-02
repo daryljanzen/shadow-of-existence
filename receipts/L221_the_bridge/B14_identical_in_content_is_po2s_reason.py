@@ -36,9 +36,9 @@ combinatorics is real.  Assembled from this section alone:
   * the group relating them is ** a within-state index **, not a family symmetry;
   * and the wall monodromies with the hinge $3$-cycle ** generate $SU(3)$ ** (r2626).
   ⇒⇒ *** Every structural feature of a colour label is present and each is stated for another purpose.
-      What remains is the physical identification, which is where the do-not-assert belongs. ***
+      What remains is the physical identification, which is where the not claimed belongs. ***
 
-WHAT IS NOT CLAIMED.  ** Not that the roots ARE colour ** -- that is the do-not-assert and `F5` reserves
+WHAT IS NOT CLAIMED.  ** Not that the roots ARE colour ** -- that is the not claimed and `F5` reserves
 it.  ** Not that generations follow ** -- P14 explicitly withdraws the generation-wall identification, and
 *** that withdrawal is quoted here because it is the paper correcting itself, not this line correcting the
 paper. ***  ** Not that the deck $\\mathbb{Z}_3$ is examined ** -- it is named as where generations live

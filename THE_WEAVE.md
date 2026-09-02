@@ -302,7 +302,7 @@ not one object; it is two files that happen to share a directory.***
 > **⚠ AND ITS TWO EXCLUSIONS ARE NAMED RATHER THAN PATCHED INTO ITS REGEX**, *because loosening the
 > pattern would blind it to real cases: **"the gate is open and has been walked"** uses *open* to mean
 > **available**; **"reduces the count of what this sector leaves undelivered"** uses the trigger word as
-> **the subject being reduced**.*
+> **the subject being reduced**.* *(rewritten out of the paper at `r3797`; kept here as the example that shaped the rule.)*
 
 
 > ## ⛭⛭⛭ A SEVENTH MECHANISM r2582 — THE TENSE TEST, and it scoped a campaign from 114 to 13
@@ -1197,16 +1197,16 @@ and is carried there. `THE_WEAVE` is grain 4: the per-paper harvest grid.*
 ## DISCIPLINE
 One advance per bundle; source-grounded; conjecture tagged boldly, proof honestly; the knot-resolution
 propagated (a strike requires full propagation, per the map's standing bar); the FLRW-equivalence conjecture
-held do-not-assert until worked paper-by-paper. **⚠ THE su(3)-LENS BAKE IS NOT IN THAT CATEGORY (corrected
+stated without being claimed until worked paper-by-paper. **⚠ THE su(3)-LENS BAKE IS NOT IN THAT CATEGORY (corrected
 r1622).** It was tracked across p0/P3/P8/P14/P9 as owed propagation, but `TURNAROUND_CUBIC_geometry_note`
 §r1428–r1429 found it **rests on an identification of the two cubics' ROOT SETS that `order3_bridge.py` holds
-do-not-assert**, and the r1409 "real and complex legs of one A₂/su(3) three-fold" line was **STRUCK as
+not claimed**, and the r1409 "real and complex legs of one A₂/su(3) three-fold" line was **STRUCK as
 over-reach at r1430**. So it is not a propagation of an established result and **the propagation is not owed**.
 **⛭ BUT THE QUESTION IS NOT CLOSED — corrected r1664.** *"There is nothing to bake" over-read the strike into a
 verdict on the resemblance.* P5's `rem:a2-distinct` **explicitly leaves open** whether the geometric $A_2$ and
 su(3)'s coincide structurally — ***"not a realised colour isometry" is NOT "a meaningless coincidence"*** — and
 r695 corrected that remark to exactly its theorem's scope for this reason. **So: the continuous-isometry
-realisation is walled; the shared Cartan–Weyl skeleton is real and do-not-assert; whether the coincidence is
+realisation is walled; the shared Cartan–Weyl skeleton is real and not claimed; whether the coincidence is
 MEANINGFUL is an open drill-site, and striking the propagation must not be read as settling it.**
 **The item is to STRIKE the propagation or re-scope it to what IS grounded** (the energy-family relation, already landed in
 P7 `rem:tworealisations`; and the temporal three-ness, landed in P3 `sec:temporal-threeness` r1621). *Only P3's

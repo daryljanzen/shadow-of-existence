@@ -50,13 +50,13 @@ REG = os.path.join(ROOT, 'ENTRY_POINT_REGISTER.md')
 # Swept: seven sites, none using any of the sixteen.  Two sub-kinds, and they are different things:
 #   * an ANSWER the paper gives without stating it is a question  (P16's eta)
 #   * a BOUNDARY the paper draws by saying what it does NOT assert (P13 x3, p0)
-# ** The first is a gap already closed that nobody can find; the second is the do-not-assert
+# ** The first is a gap already closed that nobody can find; the second is the not claimed
 # discipline, which is where PO-3-class questions live. **
 UNSTATED = ['answers in effect but does not state', 'does not state', 'never stated',
             'is not stated', 'raises a question', 'nowhere asserted', 'asserted nowhere',
             'we do not decide', 'is not asked', 'unasked', 'has never been asked']
 
-KEYWORDS = ['awaits', 'beyond the present scope', 'do not claim', 'do-not-assert', 'genuinely open',
+KEYWORDS = ['awaits', 'beyond the present scope', 'do not claim', 'not claimed', 'genuinely open',
             'left open', 'left to the', 'not built here', 'not derived', 'not settled',
             'not yet attempted', 'open problem', 'remains open', 'stay open', 'stays open',
             'unbuilt']
@@ -177,7 +177,7 @@ def main():
             print(f'    {n_:<26} [{p_}]')
         print('     ** An answer the paper gives without stating it is a question is a gap already')
         print('        closed that nobody can find; a boundary drawn by saying what is NOT asserted')
-        print('        is the do-not-assert discipline, and both belong in this register. **')
+        print('        is the not claimed discipline, and both belong in this register. **')
         print()
     if '--check' in sys.argv and gone:
         t = open(REG, encoding='utf-8', errors='replace').read()

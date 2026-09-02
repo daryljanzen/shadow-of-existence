@@ -1,7 +1,7 @@
 # c17 node — consolidation handoff for the four-node assimilation (for c21)
 The fork NOTES carry the GRIND (fork_1-4) and receipts; this doc adds the RECEPTION step that
 preceded it (it was conversational, not in the bundle) so the c17 contribution is complete for
-assimilation. Register throughout: stated for reversal; do-not-assert held both ways; one node of
+assimilation. Register throughout: stated for reversal; not claimed held both ways; one node of
 four. Backing detail + receipts: NOTES_c17fork.md, scripts/, CHANGELOG_c17fork.md.
 
 ## 1. Reception of the three thesis cold reads (the interference step)
@@ -52,7 +52,7 @@ weight, not more.
 P10 lists THREE DISTINCT discrete involutions -- root-permutation S3 (the fork's), null<->timelike
 reassignment, Riemannian<->Lorentzian signature-flip -- "different involutions, not one," with the
 explicit "we make no claim that these unify into a single discrete action." Whether they assemble
-into one discrete structure is the natural next reach, and it is BOTH P10's do-not-assert AND the
+into one discrete structure is the natural next reach, and it is BOTH P10's not claimed AND the
 face-19 flavor-match spot (fusing distinct involutions by shared signature-flip flavor = the C7
 trap). c17, the synthesis node, did NOT force it -- it is exactly what the cold/different nodes are
 required to audit. Other live reaches (none source-preferred): the P4 groupoid form; the

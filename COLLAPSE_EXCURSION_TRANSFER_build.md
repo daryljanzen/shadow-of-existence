@@ -282,7 +282,7 @@ k=0.05→0.74/0.43/0.21; k=0.10→0.30/0.11/0.10; k=0.20→0.05/0.045/0.037.
 **Diagnostic — the driving-decay is ell-DEPENDENT relative to the seam:** HIGH-ℓ (k≳0.1) decayed BY the
 seam → driving complete pre-seam → collapse-side → time-reversal-matched to ΛCDM; LOW-ℓ (k~0.02) still
 large at the branch point → driving continues POST-seam on the radiation-free leg.
-**Two consequences, both do-not-assert:**
+**Two consequences, both not claimed:**
 1. **Corrects r1418:** that diagnostic used E1 (radiation-free) for the horizon (per prop:subhorizon),
    forcing a uniform far-pre-branch-point crossing; on the physical radiation-era rate the crossing is ℓ-dependent,
    as CAMB's potential confirms directly. The "uniform straddle" was wrong.
@@ -305,12 +305,12 @@ match ΛCDM?** And the careful reasoning tilts toward YES → a likely real high
 - **The escape is narrow and argues against:** avoiding a tension needs CR's high-ℓ peaks HIGHER than ΛCDM's
   (to offset the damping), i.e. collapse-phase driving EXCEEDING ΛCDM's — but time-reversal says it EQUALS,
   and the corpus's stated reshaping (removing the radiation boost) makes peaks LOWER, worsening the deficit.
-**Honest verdict (do-not-assert):** the corpus's "neither tension nor wash" is fair agnosticism, but the
+**Honest verdict (not claimed):** the corpus's "neither tension nor wash" is fair agnosticism, but the
 careful direction — CAMB potential + the corpus's own time-reversal claim — points toward a LIKELY REAL
 high-ℓ deficit / tension for CR, exposable by damping-tail data. The one thing that overturns it: CR's actual
 collapse-phase driving exceeding ΛCDM's (the remaining computation; time-reversal argues against it).
 **This is a place careful work suggests the corpus is more exposed at high-ℓ than its framing conveys —
-flagged for the open-problems map (family 5) and P15 §coherence/§scope, do-not-assert.**
+flagged for the open-problems map (family 5) and P15 §coherence/§scope, not claimed.**
 
 ## ▶ DECISIVE (r1421) — high-ℓ driving is PRE-seam/matched → real deficit; the corpus ℓ-split is INVERTED
 `transfer_build_work/driving_epoch_test.py`, CAMB. Pinned the radiation-driving decay epoch per mode:
@@ -326,7 +326,7 @@ k=0.20(ℓ~2810) 16810, 98% · k=0.30(ℓ~4220) 25469, 98%.
   low-ℓ-matches / high-ℓ-open split is **inverted**. This also questions the low-ℓ "match through 3rd peak":
   if ℓ~700's driving is mostly post-seam on L1, that match needed the L1 driving COMPUTED, not assumed from
   the equality.
-**VERDICT (well-supported, no longer merely do-not-assert on the sign):** CR likely has a REAL high-ℓ deficit;
+**VERDICT (well-supported, no longer merely not claimed for the sign):** CR likely has a REAL high-ℓ deficit;
 the corpus's "neither tension nor wash" is undermined by its own driving-equality mechanism; and the ℓ-location
 of the CR-specific physics is inverted from the corpus account. **Residual caveats (magnitude, not sign):** the
 leading-order |Ψ̃(ω=1)| characterization and the exact-time-reverse premise are the corpus's own; the deficit

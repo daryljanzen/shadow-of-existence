@@ -68,7 +68,7 @@ dissonance is just noise:
 - **The modelling frame is locked:** r_s is built in the **noumenal cosh throat background** (X=α
   minimum, beginning the finite seam), **then projected** — exactly your turn-87 frame.
 
-**Your task — the one live computation you parked at turn 87 (this is Gate-2 fuel; do-not-assert the
+**Your task — the one live computation you parked at turn 87 (this is Gate-2 fuel; not claimed the
 outcome until it's built and run).** Build / explore the sound horizon r_s on the real throat
 3-sphere, then project it to the angle, with D_A held flat-ΛCDM. This is **open theory to explore
 under the lens, not a number to dash at** — dashing at it is exactly what produced the +74% chimera.

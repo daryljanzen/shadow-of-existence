@@ -31,7 +31,7 @@ print("  the observer-attributed matter density  2M/a^3  -- present ONLY in the 
 print("  flat-LambdaCDM projection, ABSENT from the ontological pure-Lambda background the tower lives on.")
 
 print("""
-VERDICT (bite 2) -- ADMIT, not FORCE; bounded; do-not-assert on unexamined routes.
+VERDICT (bite 2) -- ADMIT, not FORCE; bounded; not claimed for unexamined routes.
 - The physical period (graviton action, the oint p dq the quantization conditions) is monodromy-INVARIANT:
   a function of the symmetric scale alpha and the index n, with ZERO dependence on the individual,
   monodromic horizon root. The S_3 cover's monodromy therefore obstructs nothing on the physical phase
@@ -43,5 +43,5 @@ VERDICT (bite 2) -- ADMIT, not FORCE; bounded; do-not-assert on unexamined route
   the discrete skeleton does NOT force it.
 - Bounded: this closes the discrete-skeleton/cover-monodromy FORCE route. Do-not-assert on any unexamined
   route (e.g. the background-sector half-line self-adjoint extension -- a separate, choice-flavored question,
-  itself ADMIT-leaning). The universal 'nothing forces quantum structure' stays do-not-assert both ways.
+  itself ADMIT-leaning). The universal 'nothing forces quantum structure' stays unclaimed both ways.
 """)

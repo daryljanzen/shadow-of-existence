@@ -1,7 +1,7 @@
 """
 A2.3-damping (tractability sweep item 2): quantify the CR-specific damping-tail signature.
 
-CLAIM under test (P15 abstract, held do-not-assert): because CR's *observable* expansion rate is
+CLAIM under test (P15 abstract, stated without being claimed): because CR's *observable* expansion rate is
 geometric stacking (H = H0 sqrt(Omega_m (1+z)^3 + Omega_Lambda), no (1+z)^4 term), the recombination-era
 Hubble rate is LOWER than LCDM's (which carries Omega_r (1+z)^4, ~ order-unity of matter at z~1090).
 A lower H lengthens BOTH the comoving sound horizon r_s = int c_s/H dz AND the Silk diffusion scale
@@ -98,7 +98,7 @@ print("VALIDATION (LCDM leg vs CAMB):")
 print(f"   r_s = {rs_L:.2f} Mpc  vs CAMB r* = {d['rstar']:.2f} Mpc  ({100*(rs_L-d['rstar'])/d['rstar']:+.1f}%)")
 print(f"   theta_D/theta_* pipeline calibrates to CAMB {d['thetad']/d['thetastar']:.5f} (C={Ccal:.3f})")
 print("="*74)
-print("""READING (do-not-assert on the VERDICT; the quantification is what is tractable):
+print("""READING (not claimed for the VERDICT; the quantification is what is tractable):
  * The geometric stacking rate lowers H through recombination (no (1+z)^4 term), lengthening the
    photon diffusion length by ~+9% -- the CR-specific damping-tail signature P15 named ~8%,
    now COMPUTED at the recombination epoch where the physics is unambiguous (the integrand

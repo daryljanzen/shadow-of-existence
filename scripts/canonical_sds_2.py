@@ -1,7 +1,7 @@
 # RETRACTED (r147). This script solved R(T)=alpha*cosh(T/alpha), which is PURE de Sitter
 # (M=0) -- the fundamental REPRESENTATION/substrate, NOT the ontological layer S_t. The layer
 # is the closed NARIAI member (M != 0), whose matter is the bend (vision §5: "the closed-S^3
-# Nariai model is the right one"). It also re-posed a "dust-free deparametrization [reach]",
+# Nariai model is the right one"). It also re-posed a "dust-free deparametrization conjecture",
 # re-importing the standard-QG demand for an internal clock that the selection dissolves
 # (there is no knot; the deparametrization is standard, the move is the selection). Kept for
 # audit only; do NOT build on. See notebook v2 §3 (r147 rework).
@@ -71,7 +71,7 @@ print("""    H_perp(R,P) ~ 0  IS the Friedmann constraint [1].  Two readings of 
 """)
 
 print("="*78)
-print("WHAT IS ACTUALLY OPEN (the genuine [reach], stated precisely — not manufactured):")
+print("WHAT IS ACTUALLY OPEN (the genuine conjecture, stated precisely — not manufactured):")
 print("="*78)
 print("""
  (a) Dust-free realization on the ONTOLOGICAL object. ADM-7 made the deparametrization
@@ -97,6 +97,6 @@ print("""
 
  Status: the dissolution is the corpus's RESOLUTION (ontological, line 171; ADM-7 the
  dust-clock proof-of-concept). The dust-free canonical realization on the closed
- ontological object is [reach] -- ready-in-principle, not done. No finished H_phys is
+ ontological object is conjecture -- ready-in-principle, not done. No finished H_phys is
  claimed here; (a) is the next computation.
 """)

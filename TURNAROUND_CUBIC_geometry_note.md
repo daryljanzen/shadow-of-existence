@@ -81,10 +81,10 @@ the positive temporal-face geometry is the gap.
 ## ⚠ r1428–r1429 — THE SYNTHESIS LINE OVER-REACHED; AND THE REAL RELATION IS THE ENERGY FAMILY
 **Kept, not deleted (negatives are the map).** The r1409 line below — "THE TWO CUBICS ARE THE REAL AND
 COMPLEX LEGS OF ONE A₂/su(3) THREE-FOLD" — asserts an identification of the two ROOT SETS, which is what
-`receipts/P07_CR_framework/order3_bridge.py` holds do-not-assert. **But that receipt's negative is narrower
+`receipts/P07_CR_framework/order3_bridge.py` holds not claimed. **But that receipt's negative is narrower
 than its docstring reads, and r1428's first response over-corrected by deferring to the docstring instead of
 tracing the reasoning.** Read at source, stage 4d tests **affine maps $r\mapsto ar+b$ at fixed cubic**, and
-4e's do-not-assert object is specifically *an identification of the two root sets*. That test is structurally
+4e's not claimed object is specifically *an identification of the two root sets*. That test is structurally
 **blind to a relation that deforms one cubic into the other** — which is exactly what exists.
 
 **THE RELATION (r1429, grounded, and the corpus already half-owns it).** Radial geodesics obey
@@ -100,7 +100,7 @@ colinear-real); **at Nariai the crossing arrives exactly at E=0, which is the sa
 cubic's double root there.** So lem:twoturnings' affine obstruction is the crossing seen from its two ends.
 Landed in P7 `rem:tworealisations` (r1429); receipt `two_realisations.py` (ten assert blocks).
 
-**STILL do-not-assert:** the identification of the two root sets / the A₂ resemblance. The family makes the
+**STILL not claimed:** the identification of the two root sets / the A₂ resemblance. The family makes the
 question exact instead of vague — *does the A₂ structure the E=0 end carries survive the crossing to E=1?* —
 but does not answer it. **Consequence for the plan:** the tracked corpus-wide "su(3)-lens bake" across
 P2/P3/p0/P8/P13/P6/P9 still rests on the unearned identification and is NOT a propagation of an established
@@ -112,7 +112,7 @@ Grounded this rev (`turnaround_excursion_work/turnaround_geom.py`, `turnaround_s
   term −α²r. So r³=−2Mα² is the pure cube-root (equilateral, ℤ/3) core; the −α²r term bends the
   equilateral triple into the colinear-real horizons.
 - **Both cubics are zero-sum triples** (no r² term). ⚠ **THE NEXT CLAIM IS THE r1409 OVER-REACH, CORRECTED
-  r1428–r1430 — it asserts an identification of the two ROOT SETS, which is do-not-assert. It is kept only
+  r1428–r1430 — it asserts an identification of the two ROOT SETS, which is not claimed. It is kept only
   as the record of the wrong turn; the grounded replacement is the energy family above.** ~~The two cubics
   are the real and complex legs of one A₂/su(3) three-fold:~~ the turnaround = **equilateral su(3)
   fundamental/antifundamental weight triangle** (the ±M triangles are one triangle rotated 60° under
@@ -129,7 +129,7 @@ Grounded this rev (`turnaround_excursion_work/turnaround_geom.py`, `turnaround_s
   the deepest compression on the collapse leg IS the amplitude of the outward sinh^{2/3} expansion; the
   SdS/E=1 generalization of the cycloid's max radius a_m=2M. One scale, both ends of the bead.
 
-## Remaining reach (do-not-assert)
+## Remaining reach (not claimed)
 - **Hinge-triangle map — RESOLVED NEGATIVE (r1409):** the turnaround's equilateral triangle is NOT the
   substrate hinge triangle (an earlier flavor-match). The hinge triangle rides the *horizon* (real) leg
   (the hinges designate the horizon roots), and lem:twoturnings forbids a canonical map between the legs.
@@ -191,7 +191,7 @@ worked through. Daryl's probable locations to update (tracked, not yet touched):
 backward-radial conjugate branch), **P3** (fig:ellipse + the turnaround/horizon cubics — the su(3) legs;
 ~~verify `figs/fig6_tilted_ellipse.pdf` = 2012 Fig 4.3 plots the turnaround curve~~ **✔ VERIFIED r1439 (recorded here r1622): fig6 already plots $r=(-2M)^{1/3}$, so no figure is owed;** the deeper su(3) lens is **NOT owed** (r1622: this read "what's owed regardless," which contradicted this note's own r1429 finding one screen above)), **p0** (the substrate/A₂ ontology), **P8** (slicing operator / the bend), **P13**
 (cosmology / the amplitude scale), **P6** (theory-choice, if the lens bears), **P9** (range / the wall &
-the A₂). Held do-not-assert until worked paper-by-paper; this note is the source of the lens.
+the A₂). Held not claimed until worked paper-by-paper; this note is the source of the lens.
 
 ## r1410 — FIG F, THE TWO CRITICAL POINTS, AND THE FULL CxC PLATE (Daryl-directed)
 The turnaround must be read on the WHOLE ℂ_r×ℂ_τ̃ Plate (the lift included), not the real slice alone —
@@ -257,14 +257,14 @@ Daryl's realisation, checked at source + `turnaround_excursion_work/bead_profile
   is a mass effect, and it is what makes a massive cosmogenesis more than empty de Sitter … our expanding
   branch begins not at the turnaround but at an instant after the conjugation"* — so the "grep empty" and
   "bake candidate" above are the record of the gap, not a live one.
-~~**REACH (do-not-assert):** that the 2:1 seam asymmetry (back −2ρ = 2× front +ρ) is *explained by* the
+~~**REACH (not claimed):** that the 2:1 seam asymmetry (back −2ρ = 2× front +ρ) is *explained by* the
 turnaround-before-conjugation ordering.~~ **✔ CLOSED r1652 — not by derivation but because the explanandum has
 no residual.** The horizon cubic is **depressed** (no $r^2$ term), so its three roots sum to zero; at Nariai two
 merge at $\rho$; therefore the third is $-2\rho$ **necessarily, with zero degrees of freedom**. Neither premise
 mentions the turnaround, the conjugation, or their ordering. **The 2:1 is a theorem of the cubic's shape.** Two
 further independent accounts now exist and neither invokes the ordering either: the plan's R4 finds it *forced
 by tangency*, and r1636 gives its phase form, $w_{\text{back}}=2w_{\text{front}}=\operatorname{arccosh}2$.
-*Held do-not-assert from r1411 to r1652 — 241 revisions — and closable in one line the whole time.* The 2:1 is the Nariai double-root / 120°–240° structure; it shares
+*Held not claimed from r1411 to r1652 — 241 revisions — and closable in one line the whole time.* The 2:1 is the Nariai double-root / 120°–240° structure; it shares
 the bead's ρ/∛2 algebra with the turnaround, and the kinematic asymmetry is real, but no derivation of the
 ratio FROM the ordering is in hand. Flagged, not asserted.
 

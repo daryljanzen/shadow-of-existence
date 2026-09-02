@@ -23,8 +23,8 @@ the PRIMARY source (not the index c19 flagged it had used):
 
 ## 2. The consolidated §5 — HOLDS. Colour-closure decoupled onto P1/P7 (c20), robust whatever the SO(6)
 face's status; Reading-B-as-co-equal closed on the signature line + existence-criterion; SO(6) face
-real-by-construction but not a co-equal existent; closure ontological not structural; universal do-not-assert;
-§4 co-localisation clean (P10 fusion do-not-assert intact). Swing 2 (cosmogenesis signature-preserving, real
+real-by-construction but not a co-equal existent; closure ontological not structural; universal not claimed;
+§4 co-localisation clean (P10 fusion not claimed intact). Swing 2 (cosmogenesis signature-preserving, real
 horn, no Wick) re-confirmed at P7 l.434/l.618. Four independent cold passes now, each catching the prior's
 residual — the engine working, not an echo. The r315 bound (strong-evidence-not-proof; consolidated verdict
 itself stated for reversal) is the right register and is preserved.
@@ -51,7 +51,7 @@ precisions, or the P11 abstract will contradict P11 §4 at the precious tier:
      su(3) lives (localisation), independent of whether the gated AH index ever bites.
  (b) The plan says the surviving open frontier is "empirical coherence ALONE." P11 l.107's "no fermion sector
      built / index gated" is a SEPARATE surviving caveat. Keep BOTH: the surviving items are empirical coherence
-     AND the (unbuilt) fermion-sector construction, universal do-not-assert. Not "empirical coherence alone."
+     AND the (unbuilt) fermion-sector construction, universal not claimed. Not "empirical coherence alone."
 With (a)+(b) the P11 edit is internally consistent (abstract ↔ §4) and stays at earned scope. The hardening
 "precarious → closed for the geometric-isometry route" is then warranted and clean.
 
@@ -63,6 +63,6 @@ is open anyway, worth a one-word softening ("three converging obstructions"). No
 ## Verdict
 HOLDS — cleared for baking, P4→P3→P11→foundation, with watch-item §4 applied to the P11 edit and the P4
 discipline note kept. The existence-ontology floor is verified at source and sound; the scope guardrails
-(ontological not structural; universal do-not-assert; gem-A₂ ≠ colour-A₂; strong-evidence-not-proof weight)
+(ontological not structural; universal not claimed; gem-A₂ ≠ colour-A₂; strong-evidence-not-proof weight)
 are all in the plan. Each baked edit still rides its own cold read (the plan's edit→cold-read discipline).
 No flaw blocks baking; one internal-consistency precision for P11; stated for reversal.

@@ -24,7 +24,7 @@ WHAT THIS RECEIPT ESTABLISHES
       colinear roots with NO internal two-fold of this kind. The temporal three-ness
       factors through a half-period that exchanges the branches; the spatial one does not.
 
-HELD, do-not-assert: nothing here identifies the two cubics' ROOT SETS, which
+HELD, not claimed: nothing here identifies the two cubics' ROOT SETS, which
 order3_bridge.py holds open, and nothing here bears on the su(3) weight-triangle reading
 struck as over-reach at r1430. This is the deck action of one cubic, not a bridge.
 """
@@ -102,6 +102,6 @@ print("     SPATIAL three-ness does not. The two order-threes differ in their IN
 print("     which is a sharper separation than the affine inequivalence of lem:twoturnings.")
 
 print(); print("="*76)
-print("VERIFIED (1)-(4). HELD do-not-assert: no identification of the two cubics' root sets")
+print("VERIFIED (1)-(4). HELD not claimed: no identification of the two cubics' root sets")
 print("(order3_bridge.py holds that open), and no su(3) weight-triangle reading (struck r1430).")
 print("This is the deck action of ONE cubic and the interior structure of ONE three-ness.")

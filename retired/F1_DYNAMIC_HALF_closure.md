@@ -34,7 +34,7 @@ grounded and already integrated into P9** (`dynamics_paper.tex` l.143): Friedric
 nonlinear stability of de Sitter = CR's perturbative graviton regime, settling in-regime all-orders ADMIT
 directly), Andréasson–Ringström 2016 (all-data T³-Gowdy Λ>0 cosmic no-hair, Vlasov — corroboration),
 Beyer 2009 (Nariai non-generic — the boundary CR already owns via P5). **The classical FORCE-vs-ADMIT closes
-ADMIT for generic data, Nariai the non-generic boundary.** The earlier "do-not-assert both ways" framing was
+ADMIT for generic data, Nariai the non-generic boundary.** The earlier "not claimed both ways" framing was
 **superseded** by this grounding (dynamics_frontier_gowdy-dS_canonical.md §after-13).
 
 ## Net — the dynamic half is closed at honest weight
@@ -51,7 +51,7 @@ This is a rigor caveat, honestly held in P9, not an open computation.
 
 ## What IS genuinely open is NOT the dynamic half
 The remaining open frontier is the **quantum forcing** — does the nonlinear Λ>0 back-reaction *force* quantum
-structure via the S₃/A₂ discrete skeleton (Move 13), or only *admit* it? That is **do-not-assert**, the priority
+structure via the S₃/A₂ discrete skeleton (Move 13), or only *admit* it? That is **not claimed**, the priority
 reach, and it is the **lock/QG frontier** (the one the lock seeds), not the dynamic half. **Not touched here, and
 not to be force-closed.**
 

@@ -73,11 +73,11 @@ the reduction is sound; the trap is only re-entered if one "simplifies" to the o
 **P16-B [FRONTIER] — the full multi-abundance likelihood** (one handover fits D, He-4, and the
 metallicity floor together). The sharp refutation edge, a data confrontation. *Collapse-trap:* none of
 the shadow kind; the trap here is treating a not-yet-run likelihood as if run (the r932 coherence≠
-completeness lesson). Publish-open; confirm P16 §verdict marks it do-not-assert (it does).
+completeness lesson). Publish-open; confirm P16 §verdict marks it not claimed (it does).
 
 **P16-C [FRONTIER] — the derivation (vs inheritance) of η and the progenitor spectrum** (the
 baryogenesis-analogue). Matter-sector depth. Like η in ΛCDM, may remain a measured boundary datum at no
-cost. Publish-open; P16 §verdict marks it do-not-assert (it does).
+cost. Publish-open; P16 §verdict marks it not claimed (it does).
 
 **P16-D [DEFUSED] — the exact regulated peak temperature** ("how deep the compression runs through the
 branch point"). P16 §peak argues it downstream-irrelevant (total dissociation erases the peak's memory;
@@ -129,8 +129,8 @@ Receipt: `computations/peak_heights/damping_ratio_clean.py`.
   longer (H_free ~15% below H_incl at z_rec). r_s matched in both, so **θ_D/θ_* : ΛCDM 0.0457 → CR
   0.0492 = +7.9%** (100θ_D ~0.161 → ~0.174). Projection-independent.
 - **Disposition:** a genuine, modest, testable CR-specific signature — *exactly* the object P15
-  §coherence already flags do-not-assert ("the Silk scale need not coincide with ΛCDM's … the one
-  genuinely CR-specific piece … held do-not-assert"). The computation **confirms and sizes** the
+  §coherence already flags not claimed ("the Silk scale need not coincide with ΛCDM's … the one
+  genuinely CR-specific piece … stated without being claimed"). The computation **confirms and sizes** the
   paper's existing honest flag; **no paper revision is forced** — the number is a receipt. Whether
   +7.9% is inside Planck's high-ℓ tolerance is the full-likelihood question → P15-4 frontier.
   > **⊙ UPDATED (r965→r966).** The reabsorption bound (`damping_reabsorption.py`) does add something:
@@ -180,7 +180,7 @@ depth deferred. Publish-open.
 
 ## Order of work
 1. **P15-1 damping tail / spectrum transfer** — ✅ DONE (r945). Gated against CAMB; θ_D/θ_* = +7.9% on
-   the radiation-free diffusion, a genuine CR-specific signature, do-not-assert, consistent with the
+   the radiation-free diffusion, a genuine CR-specific signature, not claimed, consistent with the
    paper as written (§coherence already flags it). Heights = ΛCDM (r939). Acoustic scale + Hubble
    resolution confirmed clean.
 2. **P16-A D/Li network** — bounded; get/build a validated network, confirm the anchors. NEXT.

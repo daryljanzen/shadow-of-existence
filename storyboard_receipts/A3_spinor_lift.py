@@ -47,11 +47,11 @@ WHY R o K is ONLY the shadow -- the POSITIVE mechanism (the chat node's gift bac
     conjugation -- which is exactly why the geometric factor can carry C's kinematic content
     yet never the charge sign, and exactly why the fork's "C is fully geometric" is wrong.
 
-FURTHER BOUND (species half, do-not-assert):
+FURTHER BOUND (species half, not claimed):
     (gamma^5 S) psi* = -psi^c is a Clifford identity -- no charge appears in a Clifford
     algebra at all, so it is the OPERATOR half of the FS reading.  Whether the two wings are
     a PARTICLE/ANTIPARTICLE pair (the species half) is a real-slice question no operator
-    identity reaches; that identification stays do-not-assert (-> P14, held to this bound).
+    identity reaches; that identification stays unclaimed (-> P14, held to this bound).
 """
 import numpy as np
 
@@ -160,7 +160,7 @@ print("         (gamma^5 . g0g1g3 = -i gamma^2 = -(C gamma^{0T}); (gamma^5 S)psi
 print("         NOT the C-matrix proper (i g2 g0) -- convention guard above. Mode exchange = FS.")
 print("         BOUND:  C = (Q->-Q)_field  o  (R o K)_geometric  -- the geometry carries the")
 print("         kinematic shadow (operator half); the charge sign, and the species half of the")
-print("         FS reading, close from the field / stay do-not-assert.")
+print("         FS reading, close from the field / stay unclaimed.")
 
 # r2376+c54.158 -- rule 7: every PASS/FAIL above is computed and only PRINTED.  Pin `allok`, and
 # pin the three things the spinor lift is cited for, separately, because each could be lost inside

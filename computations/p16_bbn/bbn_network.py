@@ -10,7 +10,7 @@ local thermal history IS a standard big-bang nucleosynthesis:
   * sec:trev   -- a freeze-out lives ONLY on the cooling (expanding) leg; the turnaround makes it;
   * sec:network-- therefore the cooling leg reproduces the standard pattern at the inherited eta.
 So D1 = run a genuine nuclear network on the standard cooling history and read off
-(Y_p, D/H, 3He/H, 7Li/H). This retires P16's do-not-assert on the stated anchors.
+(Y_p, D/H, 3He/H, 7Li/H). This retires P16's not claimed for the stated anchors.
 
 RATES. Strong/EM/nuclear-weak reactions: JINA REACLIB (via pynucastro) -- the published,
 peer-reviewed compilation, forward AND detailed-balance reverse rates. The thermal n<->p weak

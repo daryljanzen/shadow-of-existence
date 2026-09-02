@@ -46,7 +46,7 @@ sources: [chat]
 | ***DISCOVERABLE-PROOF*** | ***1*** | ***a formal statement absent, whose absence holds the claim open*** |
 
 ⇒⇒ ***So of 111 places the corpus says something is not settled: **70 are correctly stated and owe nothing** (scope,
-do-not-assert, method-prose, self-answered, standard-physics), **22 are gaps already on the register**, and
+not claimed, method-prose, self-answered, standard-physics), **22 are gaps already on the register**, and
 **19 are the real work** — six unbuilt constructions, five weight-marked claims, three downstream, one precision
 item, one discoverable proof.***
 
@@ -167,7 +167,7 @@ framework claims to have removed.***
 
 # II · CR's OWN CONJECTURES — **four, and each names its open step**
 
-**⓵ THE GENERATION CONJECTURE** *(p0, marked **do-not-assert**).* ⛔ ***AND READING PAST THE SENTENCE
+**⓵ THE GENERATION CONJECTURE** *(p0, marked **not claimed**).* ⛔ ***AND READING PAST THE SENTENCE
 CORRECTS THIS ENTRY, r2592.*** *p0 names "the one open step---the conjecture proper---is the **descent**:
 whether three **vantages** of the one substrate are the three physical **generations** a single observer
 sees."* ⇒ ***And the next sentence says: "That construction is built~`\cite{JanzenMatter}`."***

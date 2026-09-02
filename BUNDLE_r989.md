@@ -18,6 +18,6 @@ step [3] withdrawn (steps [1][2] kept); figure legend + docstring corrected and 
 Working records (ANTIMATTER_FRONT_PLAN, WP_C3) flagged with the r989 correction.
 
 ## Held open (the real next work): (1) the sheet↔ruling assignment — the honest panel-D question;
-(2) the antimatter naming — do-not-assert, unworked both sides.
+(2) the antimatter naming — not claimed, unworked both sides.
 
 Bundle excludes only regenerable compiled PDFs and build cruft.

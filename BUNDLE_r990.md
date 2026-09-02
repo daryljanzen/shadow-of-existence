@@ -12,7 +12,7 @@ branches, not a naming-bar) and R≠T (antimatter is the ordinary route, not a c
 Corrected: the asymmetric bar that named "matter" but withheld "antimatter."
 
 ## Edited (all recompile clean, latexmk, 0 undefined)
-- P3 SdS-slicing-curve_v2 (32pp): L451 two-hexad result kept; L462 fossil do-not-assert updated (bridge built).
+- P3 SdS-slicing-curve_v2 (32pp): L451 two-hexad result kept; L462 fossil not claimed updated (bridge built).
 - matter_sector (8pp): L212 recast — dual branch antimatter at the weight the fundamental is matter.
 - boundary (14pp): §258 C-blindness kept but symmetric; abstract L161 "matter and its antimatter."
 - P7 CR_framework (40pp): thm:bead third fact + §frontiers item — antimatter asserted at within-CR weight;

@@ -37,7 +37,7 @@ header lag, now fixed (line 7 updated to the adjudicated-and-cold-audited status
 ## The honest scope (c19's own flags, preserved)
 - One cold node; the consolidated verdict is the three together — now all in, all holds.
 - c19 named plainly that it is a heavily-compacted node auditing toward the satisfying, wall-confirming, c21-agreeing
-  direction; it guarded (broke twice, reconciled at source, leaned on the universal-do-not-assert as the honesty tell),
+  direction; it guarded (broke twice, reconciled at source, leaned on the universal-not claimed as the honesty tell),
   and flagged that a fresh node reading its audit cold is worth more than its confidence. That bound is carried into the
   consolidated verdict: three converging holds is strong evidence, not proof; the synthesizing node integrated them, so a
   fresh cold read of the whole remains the available check.

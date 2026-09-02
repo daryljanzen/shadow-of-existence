@@ -71,7 +71,7 @@ from what it merely DISCUSSES, so it answers confidently about both — fatal fo
 
 **What to do:** *write `COMPANION_SPEC.md`. **The corpus already solved the hard half and the SPEC's job is to
 say so**: `PROTECTED_OPEN` marks what may not be closed, `THE_BASE_RATE` scores claims, `receipts/INDEX.md`
-pins every assertion to a runnable check, and the do-not-assert census marks resemblances. ⇒ **A companion
+pins every assertion to a runnable check, and the not claimed census marks resemblances. ⇒ **A companion
 built on this corpus can distinguish established from discussed because the corpus already declares the
 difference** — which is exactly what `L-237` found the gates rest on.*
 **What a result looks like:** *a repo document naming what the companion must refuse to assert, and what it
@@ -103,7 +103,7 @@ is**.*
 
 | row | last worked | what its own row says to do next |
 |---|---|---|
-| **`L-202`** | r2457 | **narrowed twice, still open and still do-not-assert both ways** · the live question is now: **does a MASSIVE trajectory carry a phase?** — the null o |
+| **`L-202`** | r2457 | **narrowed twice, still open and still not claimed both ways** · the live question is now: **does a MASSIVE trajectory carry a phase?** — the null o |
 | **`L-175`** | r2474 | **the whole row now turns on one question r2474 states**: ***can a second slicing be non-arbitrary — its selection FORCED by the first rather than cho |
 | **`L-165`** | r2475 | ⓵ **the UV clause now has a DEGREE (quartic) and a shape (IR free, UV generic)** — what remains is **defining** the sum, not diagnosing it · ⓶ the clo |
 | ~~**`L-221`**~~ ⛭ **⟨STRUCK r2947 with `PO-5`: both halves of the row's object delivered — triality computed on `prop:wall`'s own solution, and the closure rule agreeing 11 of 11 with the observed hadron spectrum. The target's every route is closed. `kills/PO-5.md`.⟩** | r2526 | **the question is INVERTED r2526**: not "is there an $R$-odd operator?" but ***what BRIDGE from grading to field exists that is not "be a kernel"?***  |

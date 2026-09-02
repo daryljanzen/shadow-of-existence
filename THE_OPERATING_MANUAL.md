@@ -130,7 +130,7 @@ asymmetry is not an oversight with no consequence — *it has a direction*.
 
 $$\textbf{Every mechanical instrument this corpus built polices OVER-CLAIMING. Nothing policed a closure.}$$
 
-*The receipt gate, the do-not-assert census, the striking bar, the ORIGIN guard, the column lint — **all of them
+*The receipt gate, the not claimed census, the striking bar, the ORIGIN guard, the column lint — **all of them
 stop a node from saying too much.** And the named disciplines lean the same way: `anti-flinch`,
 `negatives-are-the-map`, `verdict-bar-symmetric`, the `kill-list` were **all forged against a node that softens
 or over-claims**, so **every one of them pushes toward the negative.*** ***A node running low on context keeps
@@ -260,7 +260,7 @@ forward-reference weaving · **receipt verification: trace AND run**.
 real thing to fix."* Underclaim → an accomplishment hiding in plain sight. Overclaim → a **misunderstood
 foundation** (find the boundary) or a **gap left open** (complete it).
 
-**The ground tools, carried every turn, every paper:** the closure self-check · anti-flinch · the do-not-assert
+**The ground tools, carried every turn, every paper:** the closure self-check · anti-flinch · the not claimed
 census · the completion-shield (**which cuts both ways — false frontiers as readily as false incompleteness**)
 · **the stale-link prior**.
 
@@ -375,7 +375,7 @@ referenced, never copied:**
   strongest, which is exactly when to dig: the fold raises the bar for digging, it does not lower it.*
 - **⛭ AND THE ABSTRACT ROUTES; IT DOES NOT BOUND (r906).** *An abstract routes you to the sections carrying the
   **proof**, not the ones carrying the **connections**.* **Read the discussion, limitations and conclusion
-  especially** — that is where a paper states its scope concessions, its forward hand-offs, its do-not-assert
+  especially** — that is where a paper states its scope concessions, its forward hand-offs, its not claimed
   conjectures, and where its object sits in a wider family. *Routing from the abstract and stopping is a skim
   with better manners.* **If you have not read a paper's concessions, you have not read the paper.**
 - **No retirement from headings — a document is retired only after it is read.** *c49 retired

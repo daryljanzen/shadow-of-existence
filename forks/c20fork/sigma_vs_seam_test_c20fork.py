@@ -81,5 +81,5 @@ print("   c19's 'mislocation' is not an error (sky-angle w and (r,r0) roots are 
 print(" - The seam reaches only SO(5); su(3) needs SO(6).  Colour stays closed -- and now")
 print("   on the ORIGINAL grounds (the imaginary continuation), with rank + AH untouched.")
 print(" => P11 sec.3's sigma-lift leg is SOUND as written; it does not need reopening on")
-print("    the 'false dichotomy' grounds c17 proposed.  do-not-assert the universal (face 18).")
+print("    the 'false dichotomy' grounds c17 proposed.  not claimed the universal (face 18).")
 print("="*80)

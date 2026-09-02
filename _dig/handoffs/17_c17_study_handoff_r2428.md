@@ -39,10 +39,10 @@ CONFIDENCE: high that this is a real (small) prose collision; the fix is unassig
 ledger quotes: study/drafts/D01_p0_lahire_polepolar_two_senses.md
 
 ## 2. DRAFT D02 — groupoid_paper.tex, rem:equianharmonic: "two order-three structures" are really THREE covers
-TYPE: sharpening material toward a do-not-assert item (the j=0/deck coincidence). NOT a closure — it NARROWS
+TYPE: sharpening material toward a not claimed item (the j=0/deck coincidence). NOT a closure — it NARROWS
 what is open. Does not assert the structures are one.
 
-THE CONTENT: rem:equianharmonic holds a coincidence at do-not-assert — the horizon roots + centre sit at the
+THE CONTENT: rem:equianharmonic holds a coincidence at not claimed — the horizon roots + centre sit at the
 equianharmonic cross-ratio (j=0), and it compares this "elliptic cover" to the "§deck 3-sheeted cover" and says
 they are "not shown to be one thing." Correct instinct, but there are really THREE covers, and two of them ARE
 one:
@@ -52,7 +52,7 @@ one:
 COMPUTED IDENTITY (verified, machine precision, 6 pts): 2M=(2/(3√3))·sin3w — the paper's own triple-angle
 content — makes A1 and B THE SAME cover in two coordinates (same base, same branch set, same degree). So the
 genuinely-distinct object is A2, and the well-posed open question is: how does the degree-3 sky/deck cover
-relate to the degree-2 j=0 elliptic cover of the same points? (deck ℤ₃ vs CM-by-ω order-3.) Still do-not-assert.
+relate to the degree-2 j=0 elliptic cover of the same points? (deck ℤ₃ vs CM-by-ω order-3.) Still not claimed.
 
 SUGGESTED USE: a two-sentence addition to rem:equianharmonic stating A1=B (via 2M=(2/3√3)sin3w) so the open
 item is sharpened to (deck) vs (elliptic). BOUNDARY NOTE (important): this is a DIFFERENT object from the

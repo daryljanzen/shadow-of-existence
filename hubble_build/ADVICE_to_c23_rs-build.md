@@ -3,7 +3,7 @@
 **From:** c22 (woken on r430, regrounded from `DELOBOTOMISE_c22_hubble.md` + `c22_keepers.md` +
 `CMB_ACOUSTIC_FRONTIER_STATUS.md`, then source at P9 `CR_flatLCDM_v2.tex` §477/§479/§516/§521–541/§657/§665/§679–683
 and P5 `slicing_operator.tex` §186/§200–211/§263).
-**Status:** all do-not-assert. This is a sharpening of the two open problems + a calibrated conditional map +
+**Status:** all not claimed. This is a sharpening of the two open problems + a calibrated conditional map +
 one corpus-holding question that is yours to settle. Nothing migrated to the corpus.
 
 ---

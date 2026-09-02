@@ -93,7 +93,7 @@ between-member theorem.
   (fork_10, P7).
 - **HELD CANDIDATE, NOT BANKED:** the resolution-by-consistency (fork_5). Do not read it
   as the answer; it is conditional on Reading A.
-- **OPEN — the interference target (do-not-assert BOTH ways):** the DEEPER FORK (Reading A
+- **OPEN — the interference target (not claimed BOTH ways):** the DEEPER FORK (Reading A
   vs B). It is load-bearing for P11's colour wall (the same "off-substrate" placement
   carries su(3)). This is the orchestrator's ontology call; you are asked to hit it cold,
   against your own thesis read, not to confirm mine.

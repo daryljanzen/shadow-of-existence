@@ -100,8 +100,8 @@ def main():
 
     # and the row's constraint, unbroken
     arc = open(os.path.join(ROOT, 'THE_LIVE_ARC.md'), encoding='utf-8', errors='replace').read()
-    check('L-202 is held do-not-assert BOTH WAYS, and this receipt decides neither',
-          'do-not-assert BOTH WAYS' in arc)
+    check('L-202 is stated without being claimed BOTH WAYS, and this receipt decides neither',
+          'not claimed BOTH WAYS' in arc)
     check("Z1's location -- 'does the off-real contour carry anything a trajectory can be said to "
           "HAVE?' -- is what this narrows, not what it answers",
           'off-real' in arc)

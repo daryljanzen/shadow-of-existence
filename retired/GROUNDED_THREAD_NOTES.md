@@ -96,7 +96,7 @@ the NBC is METRIC there. alpha and alpha/sqrt3 are the SAME seam read in two fra
   pressureless dust (c_s=0). So c_s = c/sqrt3 is a conjecture WITHOUT a mechanism, not a derivation in reach;
   deriving it = BUILDING the scalar/pressure sector, which is genuinely unbuilt (sec687 piece i). Confirmed
   from both sides: sec687's statement AND P11's tensor-only dynamics. CR makes NO committed peak-scale
-  prediction; do-not-assert; route A is the hybrid. The medium is the real frontier, a large undone piece.
+  prediction; not claimed; route A is the hybrid. The medium is the real frontier, a large undone piece.
 
 ================================================================================
 ## 3. THE FOUR NODES (true state -- COURSE_antimatter_telescope.md + the trail)
@@ -119,7 +119,7 @@ the NBC is METRIC there. alpha and alpha/sqrt3 are the SAME seam read in two fra
   operator. Chirality wall P13 sec97-145: a geometric-isometry fermion sector is forced vector-like.) In the
   through-line node 3 sits BETWEEN node 2 (charge in the geometry) and node 4 (point the fields through the
   seam). "Nodes 2 and 4 do not wait on it" = node 4's PHOTON/TENSOR optics don't wait; but the SCALAR /
-  matter-coupling part (the first-peak OFFSET) is plausibly where node 3 enters node 4 (do-not-assert).
+  matter-coupling part (the first-peak OFFSET) is plausibly where node 3 enters node 4 (not claimed).
 
 - NODE 4 -- the big bang as a telescope. Aperture = the seam ring (radius alpha, light frame); the field
   through it = optics; CMB peaks = the diffraction figure keyed to alpha. TWO IMAGES:
@@ -186,7 +186,7 @@ record/source. Symptoms, all actually committed:
 - Re-litigating settled ontology (Psi-metric, the seam radii). FIX: sec0/sec1; do not re-open.
 - Re-importing chimeras through compaction summaries (91, 172). FIX: sec5; ground-at-source ejects them.
 - Manufacturing clean stories under pressure (quarter-wave, node-1 offset) -> caught. FIX: when the
-  computation says no, report no; do-not-assert; never dash a number.
+  computation says no, report no; not claimed; never dash a number.
 - Offloading to Daryl what the corpus settles squarely (sec683/sec265/sec687). FIX: read the section, do
   not ask.
 - Dropping threads (node 3) when recapping from the head. FIX: work from THIS file + the COURSE doc.
@@ -241,7 +241,7 @@ c->c_s) until the ring spacing resolves. Crux still open: the wavelength of the 
 - OFFSET (peak structure beyond spacing): lives in the scalar sector / node 3 (matter coupling). Do-not-
   assert; needs the scalar tower (problem #1).
 - TENSOR first image (node 4): COMPUTED r466 on built pieces (P10 sec:lock tower + sec172 projection + the
-  Hartle-Hawking horizon state). RESULT, grounded, do-not-assert the precise projection:
+  Hartle-Hawking horizon state). RESULT, grounded, not claimed the precise projection:
   * SHAPE: discrete tower mu_n^2=n(n+2)-2 starting at n=2 -> a HARD low-ell FLOOR at ell_min ~ 7 (no tensor
     power below), discrete modes spaced Delta-ell ~ chi = D_M/alpha ~ 2.6, merging to a near-scale-invariant
     continuum by ell ~ tens. This is the closed-topology signature, scale set by the aperture alpha.

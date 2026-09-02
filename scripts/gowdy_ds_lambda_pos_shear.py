@@ -36,7 +36,7 @@ print("    cosmic no-hair. The isotropic de Sitter background is an ATTRACTOR.")
 print("  => the homogeneous nonlinear Lambda>0 back-reaction ADMITS clean classical dynamics")
 print("     (a conserved charge + a monotone decay law); nothing forces structure here.")
 print("     Forcing, if real, is pushed to the PROPAGATING (inhomogeneous) sector or the")
-print("     discrete S3/A2 skeleton (Move 13, do-not-assert) -- per spine s6.")
+print("     discrete S3/A2 skeleton (Move 13, not claimed) -- per spine s6.")
 
 # sanity: verify the canonical-momentum identity C0 = -(p_gamma+p_psi)/2 symbolically
 pg = -2*sp.diff(R,t); pp = 4*R*sp.diff(psi,t)

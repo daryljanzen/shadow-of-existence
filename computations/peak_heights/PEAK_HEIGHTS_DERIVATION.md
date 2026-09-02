@@ -33,7 +33,7 @@ physics reduces exactly to ΛCDM's post-seam evolution of a mode whose complex d
 
 ## The CR-specific piece, SIZED and GATED (r945): θ_D/θ_* is +7.9% vs ΛCDM
 This is the "diffusion computation on the CR rate (in progress)" that P15 §coherence flags and holds
-do-not-assert. It is now done, on a computation that **passes the CAMB validation gate** and — the
+not claimed. It is now done, on a computation that **passes the CAMB validation gate** and — the
 crucial thing — is done *the way the paper defines the scales*, not the r939–40 way that was the
 named artifact. Receipt: `damping_ratio_clean.py`.
 
@@ -74,12 +74,12 @@ observable difference is the ~9% longer r_D:
 > ~+7.9% larger** (100θ_D: ΛCDM/observed ~0.161 → CR ~0.174). Projection-independent (both ÷ the same
 > D_M), so it is a clean prediction, not a distance artifact.
 
-**Disposition — a genuine, modest, testable CR-specific signature; do-not-assert (neither win nor
+**Disposition — a genuine, modest, testable CR-specific signature; not claimed (neither win nor
 fatal).** This is *not* the shadow collapse: r_s is the CR onset-truncated value matched to the
 observed peak spacing (not the radiation-governed r_s swapped onto the wrong rate), and only the
 diffusion — genuine local dynamics on the actual radiation-free leaf at recombination — sees the rate.
 That is exactly the object P15 §coherence already names ("the Silk scale need not coincide with
-ΛCDM's — the one genuinely CR-specific piece of the height pattern … held do-not-assert"). The
+ΛCDM's — the one genuinely CR-specific piece of the height pattern … stated without being claimed"). The
 computation **confirms and sizes** the paper's existing honest flag; it does not change the paper's
 disposition. Whether +7.9% is inside Planck's high-ℓ tolerance is a full-likelihood question
 (P15-4 frontier) — reported straight, asserted as neither confirmation nor refutation.
@@ -95,8 +95,8 @@ one. Kill the hybrid; do it right; a modest real deviation remains.
 - **Derived (rigorous, on verified links):** CR low-peak heights = ΛCDM's = 2.210/0.453/0.443
   (reduction, r939 — stands). The acoustic scale + Hubble resolution: met at directly-measured H_0,
   θ_* H_0-independent at fixed Ω_m (gated, r945).
-- **CR-specific prediction (sized, do-not-assert):** the Silk-damping tail is +7.9% in θ_D/θ_* on
-  CR's radiation-free rate. Consistent with P15 §coherence's existing do-not-assert flag; sizes it.
+- **CR-specific prediction (sized, not claimed):** the Silk-damping tail is +7.9% in θ_D/θ_* on
+  CR's radiation-free rate. Consistent with P15 §coherence's existing not claimed flag; sizes it.
   The paper text stands as written — no revision forced, the number is a receipt.
 - **Still frontier:** the full high-ℓ likelihood that would turn +7.9% into a confirmation or a
   refutation (P15-4).

@@ -68,7 +68,7 @@ boundary=9, cosmogenesis=9, geometric_core=4, matter=4, slicing=3, groupoid=1, o
 ## Open items after r969
 
 None that are contained/mechanical. What remains is **genuine frontier**, all publish-open by design and
-do-not-assert-flagged: the high-ℓ acoustic transfer (gated on the perturbation sector), the SM gauge/mass
+not claimed-flagged: the high-ℓ acoustic transfer (gated on the perturbation sector), the SM gauge/mass
 content (external), the beyond-the-wall radiative sector, the quantum completion, and P6's base-rate
 programme. These are research directions, not debts. The corpus is coherent, cohesive, empirically anchored,
 and fully cited up to its frontier.

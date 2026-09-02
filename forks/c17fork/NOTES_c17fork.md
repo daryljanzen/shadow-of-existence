@@ -6,7 +6,7 @@ horizon triplet; formalize it with the consolidated machinery (P5/P6 slicing, P1
 as-cosmology, P9 dynamics, P10 algebroid).
 
 Discipline: source first (thesis at resources/PhD_thesis/), compute don't assert, hold the
-verdict-bar both ways, mark grounded vs [reach]. Stated for reversal throughout.
+verdict-bar both ways, mark grounded vs conjecture. Stated for reversal throughout.
 
 ## Source groundings (thesis, verified at source)
 - Metric (Eq. SdS_statical_pure, chap4): ds^2 = -(r/N)dr^2 + (N/r)dt^2 + r^2 dOmega^2,
@@ -104,7 +104,7 @@ THE CLAIM (theorem, second course, stated for reversal):
   the slicing CUTS themselves (P5/P6), i.e. is S3 a symmetry of the cut-structure, not just the
   horizon labels? That is what would make "A2/S3 = symmetry of the solution space" a theorem about
   the slicing operator rather than about the cubic.
-- (C) tie-back to the sigma/pivot structure [hold do-not-assert, possible flavor-match]: the
+- (C) tie-back to the sigma/pivot structure [hold not claimed, possible flavor-match]: the
   over-critical COMPLEXIFICATION of two horizons (the complex pair) lives in the imaginary direction
   — is it the SAME x0->ix0 Wick/pivot complexification that the inter-face seam realizes? If so the
   signature seam (fork-1/c19) and the Nariai Weyl-wall (here) are two views of one A2 structure.
@@ -165,7 +165,7 @@ REGISTER (face 19, self as synthesis node): the grounded facts (involution, trip
 P3 grounds part of the bite-(C) flag: "Overcritical SdS is the SAME continuation [the equatorial
 seam theta->pi/2+i psi, sin theta->cosh psi, signature flip] applied to the horizon angle past the
 Nariai crest." So the over-critical complexification (fork_2's complex pair) IS the seam/pivot
-continuation -- GROUNDED at P3. What stays do-not-assert (the actual flavor-match): identifying
+continuation -- GROUNDED at P3. What stays unclaimed (the actual flavor-match): identifying
 that continuation with the sigma-lift's x0->ix0 Wick-to-su(3); the seam reaches the Riemannian
 SPHERICAL (SO(5)) piece, and the SO(5)/SO(6) gap stands, so colour does not reopen. Banked:
 over-critical complexification = seam/pivot continuation. Do-not-assert (both ways): = Wick-to-su(3).
@@ -201,7 +201,7 @@ GROUNDED (at P10, consistent with fork_1-3):
 ## GENUINE POINT OF UNCERTAINTY (the grind's honest stopping point)
 
 bite (D) closes cleanly, and beyond it the path genuinely forks -- the source does not determine
-a single next step, and the most natural reach is a do-not-assert boundary I must not force solo.
+a single next step, and the most natural reach is a not claimed boundary I must not force solo.
 
 P10 sec:discrete lists THREE DISTINCT discrete involutions, "different involutions, not one,"
 each anchored at a stratum:
@@ -214,7 +214,7 @@ and states plainly: "We make no claim that these unify into a single discrete ac
 The fork has now touched all three. The natural next reach is: do (1),(2),(3) assemble into one
 discrete structure -- the full discrete symmetry of the cut-structure / solution space? This is a
 GENUINE uncertainty about what to try next, for three reasons that compound:
- a. SOURCE: P10 explicitly holds it do-not-assert. The corpus has not determined it; it is open.
+ a. SOURCE: P10 explicitly holds it not claimed. The corpus has not determined it; it is open.
  b. FACE 19: forcing a unification = fusing distinct involutions by their shared signature-flip
     flavor = the EXACT C7 trap c19 fell into and c17 caught. I am the synthesis node, structurally
     blind to my own flavor-matches; this fusion is precisely what the different node must audit.
@@ -229,4 +229,4 @@ different nodes before more is built on the synthesis. The grind has reached the
 and the algebroid placement (bite D); the next move is genuinely undetermined here.
 
 STOPPING. fork_1-4 banked at their grounded weight; the unification + the other reaches held
-do-not-assert; handed to the orchestrator and the cold reads. One node of four.
+not claimed; handed to the orchestrator and the cold reads. One node of four.

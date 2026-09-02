@@ -4,7 +4,7 @@
 > are two GENUINELY DISTINCT null rulings (orthogonal at the waist, verified); neither is the other
 > under a sign, and neither is the tau~<->conj(tau~) conjugate of the single cosmic-time continuation.
 > DERIVED and kept: photon -> real (Im 0) crossing.
-> **⚑ AND THE ONE OPEN ITEM THIS HEADER NAMED IS DEAD (corrected r1542).** It read *"OPEN, do-not-assert: the
+> **⚑ AND THE ONE OPEN ITEM THIS HEADER NAMED IS DEAD (corrected r1542).** It read *"OPEN, not claimed: the
 > map from the two distinct rulings {A,B} to the two conjugate wings."* **That item was KILLED at r1280** —
 > `THE_OPEN_PROBLEMS_LEDGER` family 2, *resolved dead, migrated open→closed* — when P13's CPT factorisation
 > `C = (Q↦−Q)_field ∘ (R∘K)_geometric` showed the rulings and the wings are **not two candidates for a
@@ -55,7 +55,7 @@ Not "antimatter" — until C is supplied at field level.
   which gives r → −r by oddness. Both maps are real and true, but they are **different
   operations**, and one symbol now denotes both — a latent inconsistency now sitting in the
   P7 caption (C) I edited this session.
-- **The figure pre-commits to do-not-assert content.** Its colour code + panel D already assert
+- **The figure pre-commits to not claimed content.** Its colour code + panel D already assert
   the sheet assignment (photon = real cusp, A = +πα/3, B = −πα/3) and the "antimatter" label —
   exactly what `OPEN_PROBLEMS_MAP.md:410` holds open. The picture has outrun the proofs.
 
@@ -105,7 +105,7 @@ Reconciling this is WP-A and comes first.
   (`THE_PLAN.md` Lane 3 A4; `PROGRAMME_UNFINISHEDNESS_CATALOGUE.md §A4`). **Larger — likely out
   of bounds for this push.** *(Home: matter_sector_paper P15/16, 8p, most room.)*
 
-**Bucket N — named-only, keep do-not-assert**
+**Bucket N — named-only, keep not claimed**
 - B "is antimatter" (needs C5). Matter/antimatter selection (external, R-symmetric,
   `PHASE3_baryogenesis_analogue.md:11`). Baryogenesis analogue.
 
@@ -173,21 +173,21 @@ WP-A first: it is honesty debt sitting in a paper right now.
   sheet-to-bundle assignment is a genuine open question (§frontiers)", matching thm:bead.
 - P7 §frontiers: added the missing item "The bead's sheet structure and the reassigned-congruence
   rate" — fixes the dangling thm:bead→§frontiers pointer; folds in both open questions
-  (sheet-assignment; double-speed rate) at do-not-assert.
+  (sheet-assignment; double-speed rate) at not claimed.
 - Bibkey hygiene: `JanzenFramework`→`JanzenCRframework` in the 2 outlier papers
   (geometric_core, matter_sector); now 16/16 consistent. All three papers recompile clean.
 
 ### WP-B — WORKED (r986). **⚠ SCOPE-CORRECTED r1430: what does not close is an identification by an AFFINE
 change of variable at fixed cubic. The two cubics are the E=1 and E=0 ends of one turning-point family
 r³+(E²−1)α²r+2Mα², separated by a discriminant crossing; the affine test is blind to that deformation.
-Only the A₂ identification of root sets remains do-not-assert.** Full write-up: `retired/WP_B_ORDER3_BRIDGE.md`
+Only the A₂ identification of root sets remains unclaimed.** Full write-up: `retired/WP_B_ORDER3_BRIDGE.md`
 (carries the correction); receipts `computations/order3_bridge.py` (scope warning prepended) and
 `turnaround_excursion_work/two_realisations.py`.
 The two order-three structures are the Galois/cube-root ℤ/3's of two **different, affinely
 inequivalent** cubics — horizon `f=0` (`r³−r+2M`, three colinear real roots) vs comoving `1−f=0`
 (`r³+2M`, an equilateral triangle) — over different bases, branched at different loci (Nariai vs
 seam), degenerating oppositely at Nariai. "Same order-three" holds only trivially (S₃ has a unique
-ℤ/3); identifying the two ROOT SETS is the do-not-assert A₂ resemblance, and even granted it would
+ℤ/3); identifying the two ROOT SETS is the not claimed A₂ resemblance, and even granted it would
 not force the congruence sheet-assignment. **The obstruction is to an AFFINE identification at fixed
 cubic.** The two cubics are nonetheless the `E=1` and `E=0` ends of one turning-point family
 `r³+(E²−1)α²r+2Mα²` (the separating term being `E²−1 = −k`), separated by a discriminant crossing —
@@ -237,16 +237,16 @@ the other side). Landed in P7 (frontiers item + thm:bead Third-fact), receipt `s
    "twice the null rate" is a misdescription, not an open question. **Removed** from thm:bead
    Third-fact and the frontiers item.
 2. **The antimatter naming is NOT settled — I took the corpus as gospel.** WP-E "closed" it by
-   deferring to the matter sector's `R=γ⁵` "antimatter register" — but that is held do-not-assert in
+   deferring to the matter sector's `R=γ⁵` "antimatter register" — but that is stated without being claimed in
    the corpus itself ("a resonance, not an identity"), so it settles nothing (faces r693 grounding
    in the assertion, r694 treating it as unoverturnable). **Reopened** as the genuine drill-site:
    geometrically B is the mass-reflected (r→−r) dual — the honest *description*, "conjugate dual" —
-   but whether that is *antimatter* is not worked out on either side, held do-not-assert.
+   but whether that is *antimatter* is not worked out on either side, stated without being claimed.
 
 ### FRONT STATUS (corrected r987).
 A (honesty) ✓ · B (order-three: a resemblance, not a theorem) ✓ · C3 (sheet assignment = causal
 characters on the foliation; photon real, both null bundles on the wings) ✓. The **antimatter
-naming is the one genuine open drill-site** — do-not-assert, none of it worked out on either side.
+naming is the one genuine open drill-site** — not claimed, none of it worked out on either side.
 The "rate" item was spurious and is gone. P7 compiles clean at 39pp.
 
 ### Superseded plan note (kept for record): WP-B — the order-three bridge (the first real theorem)

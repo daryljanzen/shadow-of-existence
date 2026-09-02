@@ -45,7 +45,7 @@ reassignment. One-liners for P1–P8 captured at source-quality from the map (cr
 - **C-2: P8 lock status lag in the body.**
   Top sweep (r246–r251): lock (Move 12) ASSEMBLED + WRITTEN INTO P8 §lock, reach "returned YES,"
   residuals = background-sector self-adjointness + super-quadratic couplings.
-  But the papers-section P8 (canonical_time) entry still reads "candidate lock … held [reach] … its
+  But the papers-section P8 (canonical_time) entry still reads "candidate lock … held conjecture … its
   closed-form proof … is the frontier's first open problem." Changelog moved; body didn't follow.
   Also the range/P6 entry's "standing frontier is now the lock (Move 12)" is now stale (lock assembled).
   Candidate fix: sync P8 body entry + frontier lines to the assembled-lock status. Verify in canonical_time.tex.
@@ -123,7 +123,7 @@ JanzenRange, JanzenCRcosmology, JanzenCanonicalTime, JanzenFramework), NOT by fi
   "12 documents: 9 research + 1 essay + 2 first-draft", framework counted IN spine as #9, dynamics/algebroid
   as 11/12 with NO #10, tagged "first-draft, held at weight." Recount is SAFE (cross-refs are cite-keyed).
 - **C-2 [confirmed] P8 lock-status lag in map body.** §lock IS written into canonical_time.tex. Map body P8
-  entry still "candidate lock … held [reach] … frontier's first open problem"; range/P6 entry "standing
+  entry still "candidate lock … held conjecture … frontier's first open problem"; range/P6 entry "standing
   frontier is now the lock" also stale. Top revision block (r246–r251) is right; body lags. Sync needed.
 - **C-3 [hygiene] map revision-block bloat** (r251→r186 inline wall). Trim/archive per map-audit cycle. Daryl's scope.
 - **C-4 [housekeeping] bib-key reconciliation for the dynamics/algebroid integration.** dynamics/algebroid

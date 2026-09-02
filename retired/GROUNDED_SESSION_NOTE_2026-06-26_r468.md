@@ -21,7 +21,7 @@ Verified by sympy this session:
 - So the vacuum kernel stays Kerr–NUT–(A)dS and charge enters on the matter side exactly as acceleration does.
 P6 compiles clean at 10 pages. **Wants Daryl's prose pass + a final changelog confirm.**
 
-## 2. The phantom diagnosis — the durable physics finding (do-not-assert numbers)
+## 2. The phantom diagnosis — the durable physics finding (not claimed numbers)
 
 The CMB optical/telescope reframe (Daryl's): the "acoustic" peaks are the **diffraction figure of the
 finite throat aperture**, the field is light (the §436 photon congruence), no medium, no plasma.
@@ -43,7 +43,7 @@ $\int_0^{r_{\rm rec}} dr/\sqrt{r^4+2Mr}$ runs the areal-radius (sinh$^{2/3}$) re
 retires as a phantom reading, like the $\ell_1\approx91$ chimera before it.** The "tension" (158 vs ~301)
 **dissolves** — it was the artifact of integrating to $r=0$.
 
-**Forced direction (do-not-assert the number):** excising the $r=0$-to-horizon phantom tail shortens the
+**Forced direction (not claimed the number):** excising the $r=0$-to-horizon phantom tail shortens the
 physical ruler; a shorter ruler raises $\ell_A$ **off 158 toward the observed ~301**. The direction is
 forced by the geometry; the magnitude is not derived.
 
@@ -58,7 +58,7 @@ given its observable redshift — i.e. relate the affine $\lambda$ along the str
 ($R=\sqrt{\lambda^2+1}$) to the sinh$^{2/3}$ redshift, with the $r=0$-to-horizon interval excised. That
 returns the physical ruler length, hence $\ell_A$. Build it **from the embedding**, not from matching the
 two incommensurable areal radii ($\alpha$ vs $\alpha/\sqrt3$), which is the route that fails. Held
-do-not-assert; **do not fit to 301.**
+not claimed; **do not fit to 301.**
 
 The scaffold is in place (embedding parametrization, the two congruences, the seam located, the phantom
 isolated). The closing relation $\lambda \leftrightarrow$ (observable redshift) is the unbuilt step.

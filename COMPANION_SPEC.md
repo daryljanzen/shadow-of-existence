@@ -105,7 +105,7 @@ has now carried real weight twice.*
 |---|---|---|---|
 | **ESTABLISHED** | a receipt asserts it and **could have come out false** | `receipts/INDEX.md` — **346 registered**, each pinned to a paper and section | **cite the receipt by name** |
 | **OPEN** | the construction cannot yet do it, and the corpus says so by name | `PROTECTED_OPEN.md` — **8 items** | **cite the item, and say it is open** |
-| **DO-NOT-ASSERT** | held below assertion, with a reason | the do-not-assert census; `THE_LIVE_ARC.md`'s live rows — **53 of 234** | **say so, and say why** |
+| **DO-NOT-ASSERT** | held below assertion, with a reason | the not claimed census; `THE_LIVE_ARC.md`'s live rows — **53 of 234** | **say so, and say why** |
 
 ⛔ ***A claim in none of these states is one the companion does not make.*** *Not hedged, not softened — **not
 made**. "I don't have that as an established result" is a complete answer and the correct one.*

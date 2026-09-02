@@ -105,4 +105,4 @@ print("     somewhere else is not conjugating Q here. THE METRIC'S Q^2-BLINDNESS
 print("     TELL -- an internal C would be invisible to the metric AND to relocation;")
 print("     what R gives you is a different POINT, not a different CHARGE.")
 print("     I did not take that step (rem:C-linear-face routes the factorisation to A7,")
-print("     do-not-assert) -- but my wording leaves the door open, and that is enough.")
+print("     not claimed) -- but my wording leaves the door open, and that is enough.")

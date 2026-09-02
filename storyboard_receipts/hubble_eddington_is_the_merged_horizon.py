@@ -97,7 +97,7 @@ print("  CONSEQUENCE: r_star lies on a horizon for exactly one member of the fam
 print("             double-root member, and there it IS the merged horizon; plus the front")
 print("             seam identification, which holds for every M.")
 print()
-print("HELD, do-not-assert: no claim that this explains WHY the cosmology selects Nariai --")
+print("HELD, not claimed: no claim that this explains WHY the cosmology selects Nariai --")
 print("  the selection is P7's trichotomy and stands on its own. This says that the member")
 print("  so selected is the one whose structure-formation boundary is its own merged horizon.")
 print("="*78)

@@ -4,7 +4,7 @@
 
 # W2 — the empirical-coherence frontier: first sub-move worked (c21, r334; reasoning corrected r335)
 
-**Status:** the gate's source-grounded carry, stated for reversal. A frontier-resolving negative goes to the relay / a different-node cold read (σ-lift r295, Nariai r321 precedent). Universal **do-not-assert** (face 18). The reasoning was corrected r335 after the gate caught its own over-reach (§"What the question is not"); the **conclusion is unchanged**.
+**Status:** the gate's source-grounded carry, stated for reversal. A frontier-resolving negative goes to the relay / a different-node cold read (σ-lift r295, Nariai r321 precedent). Universal **not claimed** (face 18). The reasoning was corrected r335 after the gate caught its own over-reach (§"What the question is not"); the **conclusion is unchanged**.
 
 ## The wall removed
 gate_session_notes l.61 carried "dS₆/empirical-coherence **method-blocked … no way in yet**." Self-authored, and contradicting the corpus's own framing: Vision Entry 13 frontier 2 and **P11 §open** (`boundary_paper.tex`, verified at source) both pose this as the *live, well-posed* frontier with a defined first sub-move. The method was never missing. Wall eradicated r334.
@@ -31,4 +31,4 @@ The load-bearing reason is the W1 method applied straight: **every examined SM f
 **No examined empirical SM feature forces the compact face physical:** each is accountable as shadow-QFT on the real substrate, so none is the unaccountable-otherwise observable W1's method requires. → Points to **gravity-minimal $\dS_5$ as the whole matter story too** (the falsifiable outcome Vision Entry 13 named).
 
 ## Weight (face 18)
-A **bounded** first-sub-move negative — "no forcing feature found among the examined." It is **not** the universal "nothing could ever force the compact face physical" (P11 explicitly declines the universal). Genuinely open, and not walls: the universal (do-not-assert); CR's **unbuilt fermion sector** (a major construction, prior to and independent of the index question); and any **non-isometry** empirical-coherence motivation. The first sub-move, as posed, returns the negative; these remain the real matter-side work.
+A **bounded** first-sub-move negative — "no forcing feature found among the examined." It is **not** the universal "nothing could ever force the compact face physical" (P11 explicitly declines the universal). Genuinely open, and not walls: the universal (not claimed); CR's **unbuilt fermion sector** (a major construction, prior to and independent of the index question); and any **non-isometry** empirical-coherence motivation. The first sub-move, as posed, returns the negative; these remain the real matter-side work.

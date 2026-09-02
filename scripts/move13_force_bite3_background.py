@@ -38,6 +38,6 @@ print("""
 - Same root as the whole programme: the geometry is complete on its own, so it ADMITS quantum structure
   (uniquely on the propagating tower, as a U(2)-choice on the background) but FORCES none.
 - Bound held: this closes the background-sector route too. The universal 'nothing forces quantum structure'
-  stays do-not-assert (an unexamined CR-native route could still exist); but both concrete candidate
+  stays unclaimed (an unexamined CR-native route could still exist); but both concrete candidate
   routes -- discrete skeleton (r326) and background sector (here) -- return ADMIT, one root.
 """)

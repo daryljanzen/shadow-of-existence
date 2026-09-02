@@ -101,8 +101,8 @@ def main():
           'records "OPEN, NARROWED c54.84"',
           'NARROWED c54.84' in row('PO-2', raw))
     check('and it carries the same shape: the roots are the corpus\'s own construction and the row is '
-          'held "at do-not-assert on three separated levels" -- the IDENTIFICATION, not the object',
-          'do-not-assert on three separated levels' in row('PO-2', raw))
+          'held "at not claimed for three separated levels" -- the IDENTIFICATION, not the object',
+          'not claimed for three separated levels' in row('PO-2', raw))
 
     # ⓷ PO-7 is the exception and is a different kind
     # ⛔⛭ AMENDED r3105 (`L-249`): the sentence did not go away -- **it MOVED ROWS**.  r2832b removed

@@ -11,14 +11,14 @@
 > entry-point register (r1498) and `ANTIMATTER_FRONT_PLAN` (r1542). **One closure, five documents.**
 
 
-# WP-E — the antimatter naming: OPEN, do-not-assert (corrected r987)
+# WP-E — the antimatter naming: OPEN, not claimed (corrected r987)
 
 > **Correction (r987).** The original close below ("the matter sector answers NO") was the
 > gospel error — grounding in the corpus's *assertion* (faces r693/r694). The matter sector attaches
 > the "antimatter register" to `R=γ⁵` but holds it "a resonance, not an identity" — i.e. it is **not
 > worked out**, so it settles nothing. The honest state: geometrically B is the mass-reflected
 > (r→−r) dual (the *description*, "conjugate dual"); whether that — or `R=γ⁵`, or any of it — is
-> **antimatter** is undischarged on either side, held **do-not-assert**, a genuine drill-site. The
+> **antimatter** is undischarged on either side, held **not claimed**, a genuine drill-site. The
 > "rate" frontier was separately spurious (my inflation of an unmotivated musing; the reassignment
 > is a causal-character swap, a null congruence is null) and is removed from P7. The reasoning below
 > is kept as the record of what the corpus *does* establish (the R/P/T register distinctions), read
@@ -82,5 +82,5 @@ paper warns against.
 
 ## What is left open (and it is *only* this)
 The **reassigned-congruence rate** — whether the at-rest→null photon congruence runs at a definite
-multiple of the null rate. Unmotivated, asserted nowhere, held do-not-assert. That is the single
+multiple of the null rate. Unmotivated, asserted nowhere, stated without being claimed. That is the single
 surviving dangler of the whole front.

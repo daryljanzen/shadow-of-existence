@@ -21,7 +21,7 @@ variation is the algebroid connection. The intrinsic curvature is the single car
 bend, static and dynamical alike -- Entry-5's single-carrier picture realized at the
 intrinsic-curvature/Hamiltonian level.
 
-Honest scope [reach]:
+Honest scope conjecture:
   - This is a CARRIER-level link (both faces ride on the intrinsic curvature), NOT a proof
     that the algebroid connection literally equals the graviton dynamics as one equation.
   - The FULL reduced Gowdy H is NOT literally sqrt(h)(2 Lambda - ^3R): the area/clock-sector

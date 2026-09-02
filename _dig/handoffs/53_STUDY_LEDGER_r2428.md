@@ -578,13 +578,13 @@ cannot tell that three rows stopped being standalone sweeps and acquired a diffe
 ⚠⚠ **AND ROW 4 CARRIES A DIAGNOSIS MADE AT r1724 AND NEVER ACTED ON.** `THE_PLAN` l.3468: *"the
 gathering did not reach its ledger … `JARGON_LEDGER.md` is 3.8 KB, three entries … the pass ran on
 all seventeen by r1406 … **the cheap discriminator, and it is one command: the live counts.
-`do-not-assert` now stands at 43 across 14 files** against the ledger's single row for it."*
+`not claimed` now stands at 43 across 14 files** against the ledger's single row for it."*
 **I ran it:**
 
 | | at r1724 | **at HEAD** |
 |---|---|---|
 | `JARGON_LEDGER.md` | 3.8 KB | **3.8 KB — unchanged** |
-| `do-not-assert` in `corpus/*.tex` | 43 / 14 files | **45 / 14 files** |
+| `not claimed` in `corpus/*.tex` | 43 / 14 files | **45 / 14 files** |
 
 ⇒ ***Seven hundred revisions on, the ledger is the same size and the gap has widened by two.*** ⌗ *The
 corpus's own law turned on itself:* **"check the fix, not just the diagnosis"** *— and what makes it

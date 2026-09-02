@@ -6,7 +6,7 @@
 # c21, stated for reversal. Scoped at source this revision (r316). The determination is the gate's call; the
 # canonical-paper edits are the precious-object work, made source-grounded and then cold-read (edit→cold-read).
 
-## STATUS (r320): BAKED. **(1)** classification → P4 (r317); **(2)** P3 re-pointed (r317, incl. l.423 now citing P4); **(3)** P11 strengthened (r319); **(4)** foundation — **PENDING** (sequenced after P11's fresh cold read). Two points in the P11 map below were **corrected at the bake by the c17/c19 cold reads**, and the corrected forms are what went in: (i) the non-compactness escape is closed on the **localisation** argument (su(3) is no isometry of the non-compact substrate, su(3)⊄so(5,1)) — explicitly **not** "where AH bites" (§P11 below; AH stays *gated* on an unbuilt fermion sector); (ii) the surviving open items are empirical coherence **and** the unbuilt fermion sector — **not** "empirical coherence alone" (§P11 below). The existence-ontology was deepened (r318, Daryl): the cosmic time the existence-criterion turns on is **empirically determined** (P8 App. A / BST §4.3.2 / Fortress), firming the floor — bounds unchanged (ontological not structural; universal do-not-assert). The P4 A₂≠su(3) discipline note (§P4 below, "Discipline note") was missed at r317 and **added at r318**. The map below is the pre-bake plan, kept as the record; where it and these corrections differ, these govern.
+## STATUS (r320): BAKED. **(1)** classification → P4 (r317); **(2)** P3 re-pointed (r317, incl. l.423 now citing P4); **(3)** P11 strengthened (r319); **(4)** foundation — **PENDING** (sequenced after P11's fresh cold read). Two points in the P11 map below were **corrected at the bake by the c17/c19 cold reads**, and the corrected forms are what went in: (i) the non-compactness escape is closed on the **localisation** argument (su(3) is no isometry of the non-compact substrate, su(3)⊄so(5,1)) — explicitly **not** "where AH bites" (§P11 below; AH stays *gated* on an unbuilt fermion sector); (ii) the surviving open items are empirical coherence **and** the unbuilt fermion sector — **not** "empirical coherence alone" (§P11 below). The existence-ontology was deepened (r318, Daryl): the cosmic time the existence-criterion turns on is **empirically determined** (P8 App. A / BST §4.3.2 / Fortress), firming the floor — bounds unchanged (ontological not structural; universal not claimed). The P4 A₂≠su(3) discipline note (§P4 below, "Discipline note") was missed at r317 and **added at r318**. The map below is the pre-bake plan, kept as the record; where it and these corrections differ, these govern.
 
 ## THE DETERMINATION (the new-paper question, resolved at source)
 **The results distill throughout the corpus. No new paper is warranted. KICKOFF_GATE survives.**
@@ -49,7 +49,7 @@ companion groupoid paper — *after* P4 carries the classification, not before (
   is not a symmetry of the non-compact physical substrate (it's on the compact Euclidean face where AH bites), so
   there is no su(3)-charged matter to relocate onto the non-compactness via isometry. Update: the isometry route's
   non-compactness escape closed; the surviving open frontier is empirical coherence alone. *(Carries the
-  adjudication's strong-evidence-not-proof weight — bank at that weight, universal do-not-assert, cold-read.)*
+  adjudication's strong-evidence-not-proof weight — bank at that weight, universal not claimed, cold-read.)*
 - **The ontological framing:** the SO(6) face is real-by-construction but not a co-equal *existent* (the existence-
   criterion: existence requires a span of time, "things do not exist atemporally"; S⁵ is atemporal); the closure is
   **ontological in scope, not structural** (SO(6)/SO(5,1) are mathematically co-equal real forms; CR's commitment
@@ -60,7 +60,7 @@ companion groupoid paper — *after* P4 carries the classification, not before (
 ### Foundation (`ONTOLOGY_FOUNDATION_INDEX.md`, `THE_LENS.md`): the adjudication as worked instance
 The SO(6)-face adjudication is the foundation's principle in action (the gate reads/holds ontology from the load-
 bearing pieces). Record it as the worked instance: Reading-B-as-co-equal closed within CR's ontology, on the
-signature line (P7 l.618) + the existence-criterion (5D-Trope), ontological scope, universal do-not-assert.
+signature line (P7 l.618) + the existence-criterion (5D-Trope), ontological scope, universal not claimed.
 
 ### P7 — already carries it
 The cosmogenesis grounding (l.434/618, signature-preserving reassignment on the real horn) is already in P7,

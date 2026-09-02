@@ -3,7 +3,7 @@ P16_two_mass_blindnesses.py -- the corpus's TWO mass-independence results at the
 seam (the perspectival Kretschmann scalar at fixed proper interval; the infall energy per
 nucleon at the horizon) share their STRUCTURE and not their derivation. Both are readings
 referred to a marker the collapse itself defines, both lose the blindness at fixed areal
-radius. Held do-not-assert: neither implies the other. [P16 cosmogenesis_paper sec:peak]
+radius. Held not claimed: neither implies the other. [P16 cosmogenesis_paper sec:peak]
 STATUS: OK   ORIGIN: storyboard_receipts/two_mass_blindnesses.py, built r1616.
 """
 import sympy as sp
@@ -55,7 +55,7 @@ print("    (A) is the amplitude exponent  : r ~ M^(1/3) and 6 x (1/3) = 2.")
 print("    (B) is the horizon's definition: R_s = 2GM/c^2 makes GM/(R_s c^2) = 1/2 an identity.")
 print("  So: two independent derivations of one structural pattern, not one derivation twice.")
 print()
-print("  WHAT THIS DOES NOT SHOW (held, do-not-assert): that either result implies the other,")
+print("  WHAT THIS DOES NOT SHOW (held, not claimed): that either result implies the other,")
 print("  or that the pattern extends to any third quantity. Two instances are two instances.")
 print()
 print("VERIFIED: the shared structure is the scaling behaviour and its failure at fixed r;")

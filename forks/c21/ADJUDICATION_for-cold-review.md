@@ -21,7 +21,7 @@ cold rather than re-derive the whole chain.
   (P7 l.434 cosmic null bundle on the real hyperboloid; l.618 manifold fixed, only causal roles swapped). The
   matter rides out on the horn. su(3) is across the seam. So colour-closed rests on P1/P7, not P11 alone.
 - **Consequence:** Entry-12 frontier-1 (the geometric-isometry non-compactness escape) closes; frontier-2
-  (empirical coherence) is the surviving matter-side question; the universal stays do-not-assert.
+  (empirical coherence) is the surviving matter-side question; the universal stays unclaimed.
 
 ## THE ONE STEP TO AUDIT (the whole result rests here)
 **Is the signature-changing global Wick face correctly read as the real-by-construction conjugation of the

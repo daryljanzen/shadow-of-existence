@@ -33,7 +33,7 @@ RESULT [E, continuum-validated] at chi=D_C/r0~2.75, ell(ell+1)C_ell normalised t
    BELOW LCDM at ell=2-4 -- a genuine low-multipole deficit, in the direction of the observed anomaly.
    The make-or-break ISW test is PASSED: the deficit is robust.
 
-Remaining (do-not-assert the final corpus claim): the discrete measure w_L convention (affects the
+Remaining (not claimed the final corpus claim): the discrete measure w_L convention (affects the
 exact depth, not the survival); confirm the scalar dynamics/g(z) against P12; fresh-node P12 cold read.
 """
 import numpy as np

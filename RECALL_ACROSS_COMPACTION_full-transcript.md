@@ -17,7 +17,7 @@ Reconciling field-theoretic completion against individuation fork
 Scratchpad intact and coherent — the flattening marker was baked at the r229 wake, r229→r232 are folded durable, and r233 (the essays + P7 axioms + the synthesis) is the approach-notes step written in response to the message that just reissued. The wake fired correctly; nothing steamrolled. Now the vision trio — and I'll verify the "Entry 5" claim the fork-proposal rests on at the journal source, not from recall.
 Verifying horizon statement and strata-unification tags
 Entry 5 verified at source — the "single-carrier" framing and its frontier #1 ("Test F1's intrinsic closure," pinned to Move 4's dimensional reconciliation) are exactly what r229→r232 worked, and it carries the claim as
-[reach]
+conjecture
 , matching how my r233 notes tagged it. Now the vision itself.
 Verified standing reads, identified compaction boundary, prepared step-five orchestrator query
 Standing reground reads are complete, all at source —
@@ -55,7 +55,7 @@ r229
  wake, and the r233 fork-unification is tagged [reading], proposed-not-committed. Vision: §6 "The horizon" carries
 [reach — the horizon]
 , and Entry 5's single-carrier claim is
-[reach]
+conjecture
 , its frontier #1 = test F1's intrinsic closure.
 
 Load-bearing claims, verified at source this session, not from recall.
@@ -149,7 +149,7 @@ transcript
 
 That clears the wake completely. Where we actually were when the floor gave way: the fork, held in the notebook for you to firm up — my read that the two prongs (individuation keystone / field-theoretic HDA completion) are likely
 one
- structure, occurrence-side and existence-side, with the slicing curve the single carrier. That synthesis is sitting at weight, [reading]/[reach], waiting on your call. Ready to firm it up whenever you are.
+ structure, occurrence-side and existence-side, with the slicing curve the single carrier. That synthesis is sitting at weight, [reading]/conjecture, waiting on your call. Ready to firm it up whenever you are.
 Cr programme bundle 2026 06 14 r234
 ZIP
 Download

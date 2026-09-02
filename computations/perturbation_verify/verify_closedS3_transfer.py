@@ -37,7 +37,7 @@ r0      = 5064.0
 D_C     = 13927.0
 chi_lss = D_C / r0
 print("="*70)
-print("Closed-S^3 hyperspherical SW transfer -- FIRST PASS  [R, do-not-assert]")
+print("Closed-S^3 hyperspherical SW transfer -- FIRST PASS  [R, not claimed]")
 print("="*70)
 print(f"  r0 (present S^3 areal radius)   = {r0:.0f} Mpc")
 print(f"  D_C (comoving dist to LSS)      = {D_C:.0f} Mpc")
@@ -165,7 +165,7 @@ print(f"     mode feeds ell<=L (exact cutoff, CHECK B), so the lowest physical m
 print(f"     L=2 feeds the QUADRUPOLE, not ell~8.  The flat-sky placeholder eq:lowell")
 print(f"     (ell_2~7.8) is qualitatively wrong at low ell and is replaced by this.")
 print(f"     At the quadrupole, two independent methods agree: Phi^25_2(chi_lss)=6.490e-2.")
-print(f"   * NOT YET SOUND (do-not-assert): the low-ell C_ell SHAPE.  No single")
+print(f"   * NOT YET SOUND (not claimed): the low-ell C_ell SHAPE.  No single")
 print(f"     hyperspherical-Bessel method is trustworthy across all (beta,ell) at")
 print(f"     chi_lss={chi_lss:.2f} (near antipode pi={np.pi:.2f}): the recursion is few-%% off vs")
 print(f"     ODE+Gegenbauer at low ell, the Gegenbauer precision-loses at high beta,")
@@ -177,6 +177,6 @@ print(f"     tau~=tau+chi transfer (closed-S^3 source on the FLAT distance proje
 print(f"     prop:flat) that P12 sec:scope names as the actual unbuilt element.")
 print(f"   * NEXT: an accurate uniform hyperspherical-Bessel routine (log-space, or a")
 print(f"     published closed-universe C_ell benchmark), THEN the non-synchronous transfer.")
-print("\n[STATUS] do-not-assert; [R] first pass; method-accuracy + non-synchronous gaps")
+print("\n[STATUS] not claimed; [R] first pass; method-accuracy + non-synchronous gaps")
 print("         both open; cold read owed (coherence != correspondence).")
 print("="*70)

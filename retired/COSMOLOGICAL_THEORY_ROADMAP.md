@@ -245,7 +245,7 @@ content the set rate carries, not a term that alters it).
   dichotomy (`prop:transmission`/`prop:transmit`), the amplitude floor (`prop:amplitude`),
   the throat geometry (`prop:throat`), the flat slice (`prop:flat`), `prop:subhorizon`. **Do not
   reopen.**
-- *Argued [reach]:* the null-seam coherence mechanism (§coherence — characteristic data ⇒ one
+- *Argued conjecture:* the null-seam coherence mechanism (§coherence — characteristic data ⇒ one
   phase per mode; sufficiency unproven); the low-ℓ floor's scale (`eq:lowell`, leading-order).
 - *Open (named):* coherence sufficiency through the full transfer; **the exact large-angle shape
   via the non-synchronous photon transfer of the closed-dS mode functions — "the principal

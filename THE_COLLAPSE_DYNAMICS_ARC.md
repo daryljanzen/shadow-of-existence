@@ -51,7 +51,7 @@ The Phase-2 thermal history → light-element nucleosynthesis on the contracting
 
 ## PHASE 5 — SYNTHESIS + BAKE
 - **5.1** Consolidate: the exact heights (Phase 3) + the deuterium verdict (Phase 4) into one held picture — the correspondence arc's heights closed, confirmed or falsified.
-- **5.2** Bake into **P13** (`CR_cosmology`) at earned weight: the peak heights confronted (the exact result, do-not-assert where data-gated), the deuterium test stated. Only what's established; conditional pieces stay conditional; the honest verdict preserved whichever way it fell.
+- **5.2** Bake into **P13** (`CR_cosmology`) at earned weight: the peak heights confronted (the exact result, not claimed where data-gated), the deuterium test stated. Only what's established; conditional pieces stay conditional; the honest verdict preserved whichever way it fell.
 - **5.3** Currency: `THE_THIRD_ARC`, `CORPUS_MAP` CURRENT STATE, the spine — the correspondence arc's heights moved from "collapse-phase driving (qualitative)" to "exact result + deuterium verdict."
 **GATE:** the bake reflects exactly what Phases 3–4 established; nothing steered, the refutation edge honoured.
 
@@ -62,4 +62,4 @@ The Phase-2 thermal history → light-element nucleosynthesis on the contracting
 - Fragile-ODE / overflow traps (the heights arc's failures) — mitigated by read-first, ΛCDM-validation, and robust-method-over-ODE.
 
 ## The one-line course
-Read the collapse structure whole (Phase 1) → build the concrete contracting background + thermal history (Phase 2) → ordinary-GR perturbation evolution → the exact heights (Phase 3) → contracting-phase BBN → the deuterium verdict (Phase 4) → synthesize and bake at earned weight (Phase 5). Read-first, ΛCDM-validated, do-not-assert, stated for reversal, the refutation edge honoured.
+Read the collapse structure whole (Phase 1) → build the concrete contracting background + thermal history (Phase 2) → ordinary-GR perturbation evolution → the exact heights (Phase 3) → contracting-phase BBN → the deuterium verdict (Phase 4) → synthesize and bake at earned weight (Phase 5). Read-first, ΛCDM-validated, not claimed, stated for reversal, the refutation edge honoured.

@@ -18,7 +18,7 @@ R : r -> -r (equivalently 2M -> -2M) is the A_2 diagram automorphism on BOTH rea
 turnaround triangle it carries the +M triangle onto the -M one, a 60-degree rotation of the same figure.
 
 SCOPE (groupoid paper, rem:a2-distinct, as it now stands): what is walled is the realised colour
-ISOMETRY on the Lorentzian substrate (su(3) not contained in so(5,1)); what is do-not-assert is the
+ISOMETRY on the Lorentzian substrate (su(3) not contained in so(5,1)); what is not claimed is the
 world-correspondence. Nothing here names colour, and nothing here is a claim about it. This receipt
 concerns two realisations of the abstract root system inside the geometry.
 """

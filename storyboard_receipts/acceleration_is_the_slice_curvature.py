@@ -63,7 +63,7 @@ print("    NOTE the two are distinct and in this order: the acceleration TURNOVE
 print("    precedes matter-Lambda EQUALITY (rho_m = rho_L). The seam is the first, not the second.")
 
 print()
-print("BOUND, do-not-assert:")
+print("BOUND, not claimed:")
 print("  * (1) holds on EVERY member of the energy family -- E cancels from the acceleration.")
 print("  * (3) is the Nariai member's own onset condition; the onset statement is flat matter+Lambda,")
 print("    which CR's radiation-free rate reproduces.")

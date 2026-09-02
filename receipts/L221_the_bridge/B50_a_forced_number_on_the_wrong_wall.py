@@ -27,7 +27,7 @@ content as counts ($3$ winding, $6$ roots, $3$ generations) and derived or measu
 $9/10$, $1.0824$).  ** $1/\\sqrt3$ is a FIXED IRRATIONAL forced by the geometry ** -- the shape a
 coupling constant has, and the first of its kind in the ledger. ***
   ⌗ ** And `PO-2`'s level (2) passing is what makes it usable: ** *** a resemblance cannot supply a
-    coupling; a CONSTRUCTION can be asked to.  Before r2803 the number was held at do-not-assert. ***
+    coupling; a CONSTRUCTION can be asked to.  Before r2803 the number was stated without being claimed. ***
 
 ** ⛔ ⓷ AND IT IS ON THE WRONG WALL. **  *** `PO-5` needs a number ** AND ** something for it to be the
 coefficient OF.  P14: "the bundle above is flat, so the construction supplies colour's exact selection

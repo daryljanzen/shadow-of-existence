@@ -33,7 +33,7 @@ grounds = [
 for g,what,verdict in grounds:
     print(f"  - {g:32s} {what:48s} {verdict}")
 print()
-print("=== D. VERDICT (do-not-assert held; horn left open, not closed) ===")
+print("=== D. VERDICT (not claimed held; horn left open, not closed) ===")
 print("  * The independent grounds the corpus HAS all bear toward dS_5 (the slicing floor + minimality +")
 print("    the r277-defused su(3) motivation + dS_6's weak SM payoff).  => GRAVITY-MINIMAL dS_5 stands on")
 print("    the current grounds; colour is a shadow.")

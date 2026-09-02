@@ -1,5 +1,5 @@
 # r_s build — structure established from source (P9 CR_flatLCDM_v2.tex), do-not-commit
-# c22, post-r430 reground. All do-not-assert; this is problem-posing, not a result.
+# c22, post-r430 reground. All not claimed; this is problem-posing, not a result.
 
 ## Source-confirmed frame (not summary)
 - §683: the two open problems stated verbatim by the corpus (medium/c_s ; beginning/limits).
@@ -18,7 +18,7 @@
   The balloon = the high-z tail that the radiation era would have suppressed. (Diagnostic of the WRONG
   calc, NOT a CR result.)
 
-## The DIRECTION TARGET (sharp, new this turn; do-not-assert whether the build hits it)
+## The DIRECTION TARGET (sharp, new this turn; not claimed whether the build hits it)
 - theta_* = r_s/D_M is DATA (peaks at l≈220; 100theta*=1.041, 0.03%). Fixed.
 - D_M = (c/H0)*∫dz/E(z); shape flat-LCDM. So D_M ∝ 1/H0.
 - l.681 claim: CR's single H0 = the DIRECTLY measured (late-time) value ≈73; the CMB's 67 is the artifact

@@ -114,7 +114,7 @@ lived in that field. **Fixed: the rebuild now preserves both verdict and reasoni
 recording them.*
 *· ⚠ ***one false positive, excluded by NAMING the sense rather than loosening the pattern***: `boundary_paper`'s
 **"the gate is open and has been walked"** uses *open* to mean **available**, not unresolved. *Loosening `OPENWORD`
-to dodge it would blind the check to real cases.*
+to dodge it would blind the check to real cases.* *(rewritten out of the paper at `r3797`; kept here as the example that shaped the rule.)*
 
 **⓷ GIVE THE TWO GENUINELY UNBUILT THINGS REGISTER ROWS.** *The **propagating spinor sector** (p0 and
 `boundary_paper`, one object) and the **bespoke transfer** (`CR_cosmology`). ***Neither is on

@@ -145,7 +145,7 @@ Holding at resume per WAKE_PROTOCOL until told to go.
 - THE_VISION §4: appended the dimensional consequence of the A₂ resonance — orienting dS₅ in M⁶ is the
   first symmetry break (M⁶→so(5,1)); su(3)⊄SO(5), su(3)⊂SO(6) ⇒ colour-as-geometric-isometry forces
   dS₆/M⁷ (seven). "SM gauge = residual substrate isometry" (KK-shaped, door past Coleman–Mandula).
-  Tagged [reach]; group theory = fact; two open joints (Weyl-shadow→continuous su(3); whether substrate
+  Tagged conjecture; group theory = fact; two open joints (Weyl-shadow→continuous su(3); whether substrate
   rises to dS₆); bound = one factor (colour), chirality owed. Also fixed §4 continuous face so(4,1)→so(5,1).
 - THE_PLAN: Move 4 now carries an open SECOND AXIS — gravity-minimal (dS₅) vs gauge-capable (dS₆/M⁷),
   decided by Move 13. Move 13 sharpened to that decision. Duplicate Move-4 header collapsed.
@@ -168,7 +168,7 @@ source read before this point are re-checked at the source, never trusted from f
 ## r200 — duplicate-message wake trigger baked + P7 dissonance located/guarded + bundle-wide dS₄ sweep
 - **Bake verified whole at source** (Daryl's check request): VISION §4 dimensional-consequence paragraph
   reads correct (cascade, SU(3)⊄SO(5)/⊂SO(6), gauge=residual isometry, two joints, chirality bound,
-  keeper conditional, all [reach]); PLAN Move 4 second axis + Move 13 decision correct; duplicate Move-4
+  keeper conditional, all conjecture); PLAN Move 4 second axis + Move 13 decision correct; duplicate Move-4
   header collapsed. No mid-bake corruption.
 - **DUPLICATE-MESSAGE WAKE TRIGGER (standing agreement, Daryl):** a verbatim duplicate of a message Daryl
   just sent = intentional wake signal, equivalent to the key phrase. He will NEVER re-send the identical
@@ -207,7 +207,7 @@ SETTLED THIS CONVERSATION (primary source — Daryl, from the picture):
   BACKGROUND GEOMETRY (the thing-that-is-reassigned), NOT "the substrate." This is the disambiguation.
 
 CORRECTED REACH (Daryl's "reassignment is discrete" kills my earlier horn):
-- My prior [reach] "so(5,1)⋉𝒞 = reassignment⋉slicing" (structure group = reassignment) is WRONG: a
+- My prior conjecture "so(5,1)⋉𝒞 = reassignment⋉slicing" (structure group = reassignment) is WRONG: a
   discrete involution cannot be the continuous so(5,1). Corrected reading:
   - CONTINUOUS face so(5,1)⋉𝒞 = SLICING (so(5,1) = substrate isometry acting on the cut-space 𝒞;
     moving in 𝒞 = a different slice). The flow/body.
@@ -222,7 +222,7 @@ OPEN JOINT (the gate before P7 is rewritten — CHECKABLE, work at source, not D
   Reassignment by itself is ONE reflection (a 2-swap = ℤ₂ inside D₃), NOT the full S₃ (3 objects).
 - Downstream: dynamic sector = slicing (builds+stacks the spatial leaves = foliation/clock/time)
   + reassignment (picks WHICH direction is time = the static-collapse↔dynamic-expansion flip, P5).
-  Strong [reach] that this pair IS the heart of the dynamic sector / problem-of-time resolution.
+  Strong conjecture that this pair IS the heart of the dynamic sector / problem-of-time resolution.
 
 PROPAGATION MAP (deliberate sequence, NOT rushed — P7 is a STABLE paper):
   1. scratchpad ✓ (this block)
@@ -257,7 +257,7 @@ PROPAGATION MAP (deliberate sequence, NOT rushed — P7 is a STABLE paper):
   dS₅ slicing-manifold differently? DO NOT settle from grep; DO NOT touch P7 dS₄ physics (its slices are S³).
 - **Per Daryl's process:** edits made, bundle produced, NO heavy checks this turn (checks burn compute →
   compaction; revisions cheap). NEXT step = write point 5 (dynamic sector = slicing-foliation + reassignment-
-  time-direction, his strong [reach]). FINAL step = run consistency checks + the P7/P5 re-term sweep (once
+  time-direction, his strong conjecture). FINAL step = run consistency checks + the P7/P5 re-term sweep (once
   scope answered) + second bundle.
 
 ## r202 — point 5 (dynamic sector) written + terminology SETTLED & recorded
@@ -306,7 +306,7 @@ PROPAGATION MAP (deliberate sequence, NOT rushed — P7 is a STABLE paper):
   everywhere else; the earlier "mechanical corpus-wide sweep / P5 needs fixing" framing was wrong.
 - **STILL OPEN — the geometric reconciliation (unseated, NOT terminology):** how P5/P6's "geometries
   are slicings of the de Sitter manifold / 1D curve on a 2D section swept by SO(3)" framing (written
-  dimension-agnostic via \so) sits against the dS₅ genuine-codim-1-slicing picture. My [reach]: the M⁶/5th
+  dimension-agnostic via \so) sits against the dS₅ genuine-codim-1-slicing picture. My conjecture: the M⁶/5th
   direction = the family/offset (r₀) direction (different r₀ = different position along the 5th dim =
   different geometry), so substrate=dS₅ is the family-carrier all along and P5/P6 "substrate" is correct.
   Pinning substrate=dS₅ explicitly in the P5/P6 *bodies* waits on this reconciliation. The terminology
@@ -315,7 +315,7 @@ PROPAGATION MAP (deliberate sequence, NOT rushed — P7 is a STABLE paper):
   The real plan (Move 5) still waits.
 
 ## r205 — r₀ corrected (Daryl): reticle orientation, NOT the 5th dimension
-- My [reach] "5th dim = the family/offset r₀ direction" RETRACTED.
+- My conjecture "5th dim = the family/offset r₀ direction" RETRACTED.
 - r₀ = observer-2's RETICLE ORIENTATION — how the slicing curve is aimed into the hole. Centre-aim →
   Schwarzschild; edge-aim → Nariai; between → intermediate SdS. r₀=0 = hole centred. The SdS family is a
   sweep of re-aimings of observer 2 (an orientation DOF), NOT a translation along a 5th dimension.
@@ -469,7 +469,7 @@ PROPAGATION MAP (deliberate sequence, NOT rushed — P7 is a STABLE paper):
   corpus's range/Petrov sector). The WALL (isotropy→0, Move 7) = the BOUNDARY of the action algebroid;
   past it the infinite-dim free DOF (gravitons) take over. NOT a claim the whole HDA is a finite action
   algebroid (false on dimension).
-- VERDICT: the vision's central [reach] (the algebroid is the home) is CONFIRMED on the symmetry-reducible
+- VERDICT: the vision's central conjecture (the algebroid is the home) is CONFIRMED on the symmetry-reducible
   sector, as structure (the substrate's symmetric-space geometry), not coincidence. A positive watershed.
 - NEXT (deliberate, after Daryl's read of the scope framing): consolidate into the corpus (a bracket-
   closure note / extend anchor_consolidation) + record plan/map/vision; firm the [reading] parts (the
@@ -527,7 +527,7 @@ PROPAGATION MAP (deliberate sequence, NOT rushed — P7 is a STABLE paper):
   Phase 2 complete; immediate-next = Phase 3); CORPUS_MAP (both S2 bullets: all four built-object pieces
   done); THE_VISION §7 frontier 4 (stratification + coincidence done on the sector).
 - PHASE 2 COMPLETE: the algebroid so(5,1)⋉𝒞 is a BUILT OBJECT on the symmetry-reducible sector (Moves
-  4–7). Central [reach] confirmed there. Tagged extensions: field-theoretic homomorphism; per-stratum
+  4–7). Central conjecture confirmed there. Tagged extensions: field-theoretic homomorphism; per-stratum
   subalgebra identification.
 - NEXT: Phase 3 (dynamics + clock across the strata) — Move 8 (dynamics paper "why the cut bends"),
   Move 9 (the wall's metric-singular species via pass-through — deepest open, can break cosmogenesis-as-
@@ -748,7 +748,7 @@ the step-6 hunt on the algebroid paper before recording/bundling it (r216).
      The STALE voice was THE_VISION §7 standing-check intro ("conjectured home, not a built object,
      construction undone" — pre-Moves-4-7, contradicting its own frontier items + the ratified map).
      WARRANTED MOLD COMMITTED: §7 intro updated → "built object on the symmetry-reducible sector (Moves
-     4-7); the grand all-of-GR home + the field-theoretic homomorphism + per-stratum ID stay [reach]."
+     4-7); the grand all-of-GR home + the field-theoretic homomorphism + per-stratum ID stay conjecture."
      Stated for reversal.
 - RECORDED: THE_PLAN Move 14 (first draft written + verified); CORPUS_MAP S2 bullet (paper drafted);
   THE_VISION §7 intro (molded). Bundle r216.
@@ -900,14 +900,14 @@ are re-checked at the source, never trusted from flattened recall.** From here: 
     WHOLE stated as one (backbone + the algebroid home + the dynamics frontier + the one-move frame =
     regions, not add-ons), and where-next.
   · THE_VISION.md NEW §2a "The one move, and the foundational unification it is" — the one move + its rungs
-    (taxonomy / horizon / cosmic time / ontology + the **hole argument** as the diffeomorphism rung [reach]),
+    (taxonomy / horizon / cosmic time / ontology + the **hole argument** as the diffeomorphism rung conjecture),
     the lens (S4), forced clocks (S3), paper-zero (S5) — grounded faithfully in the map's recorded S1–S5,
     tags intact. Fixes the lopsidedness.
   · CORPUS_MAP.md — header r219→r220 (arc closed, consolidation, foundational unification woven into vision);
     Count re-framed as ONE integrated 12-document corpus (maturity, not belonging: the 2 papers = structural
     regions, drafted + C12-verified + referee-ready; the foundational unification = conceptual frame woven).
 - HOLE-ARGUMENT framing: used the map's RECORDED S1 statement verbatim-faithful (Daryl's primary-source
-  ontology; [reach] tag intact) — the conservative option offered; he greenlit "work with this." Stated for
+  ontology; conjecture tag intact) — the conservative option offered; he greenlit "work with this." Stated for
   his reversal/refinement of the framing.
 - Bundle r220. NEXT: Phase B (F1 first), Daryl to direct; the full end-to-end cold read is the referee pass (his to orchestrate).
 
@@ -1164,7 +1164,7 @@ is the test; re-open anything load-bearing.
   one open item, flagged Daryl's-call — NOT an F1 blocker, NOT folded into F1.
 - WEIGHT NOW: F1's structure-function IDENTIFICATION (h^{ab} = the reduced (1,4) coset metric across C) is
   CLOSED — [computed] signature decomposition (f1_coset_reduction.py) + [grounded in the construction] via
-  Move 4's operations split and P5/P6's induced-slice. STILL [reach]: the per-stratum subalgebra ID, and the
+  Move 4's operations split and P5/P6's induced-slice. STILL conjecture: the per-stratum subalgebra ID, and the
   grand past-the-wall extension (GR's ENTIRE solution space). F1-the-identification done; F1-the-grand-homomorphism not.
 
 ## r224 — CORRECTION: the r223 "F1 CLOSED" was an OVER-CLAIM (Daryl caught it: "did you defer an objective computation on 'Daryl says so'?"). Re-weighted to honest status.
@@ -1178,7 +1178,7 @@ is the test; re-open anything load-bearing.
   gives the cut's gamma; Move 7 the broken isotropy; f1_strata_homomorphism.py ALREADY found the
   symmetric-space GRADING fails off {O,Nariai} — exactly why the identification can't rest on the grading and
   needs the explicit induced-metric comparison. This is the "field-theoretic homomorphism" the corpus lists
-  [reach]. I folded it under "F1 closed."
+  conjecture. I folded it under "F1 closed."
 - THE CONFLATION (the mechanism): I bundled that OBJECTIVE computation (mine) with the genuinely-OPEN item
   (the substrate's 5th-dimension geometric identity, Move 4's flagged Daryl's-call). They are distinct. The
   generic-cut computation does NOT depend on the 5th-dim identity at the level P5/P6 grounds the reading — so

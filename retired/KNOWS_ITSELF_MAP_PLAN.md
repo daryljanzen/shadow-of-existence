@@ -48,7 +48,7 @@ until there was a full map of swans to compare it against.
 - **The tightest source gate of the three.** "Profound hidden connection" is exactly what a node most
   wants to find, and a full map is a rich field to pattern-match false edges onto. So a candidate implicit
   connection is a **flag to dig both endpoints at source and test whether the geometry forces the edge** —
-  held do-not-assert, drawn only when forced, never because it is beautiful. Most candidates are ducks;
+  stated without being claimed, drawn only when forced, never because it is beautiful. Most candidates are ducks;
   saying so is the pass working, not failing. The swans must be real swans.
 
 ## Proposed cherry-pick order (Pass 1) — for the orchestrator to confirm/shape

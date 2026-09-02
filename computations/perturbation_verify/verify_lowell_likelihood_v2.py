@@ -37,7 +37,7 @@ print(f"  central total (2<=l<=10):  Delta(-2lnL) = {tot:+.1f}  (compare old-dep
 tl,_=dchi2(obs_lowoct); th,_=dchi2(obs_highoct)
 print(f"  octopole estimator range:  low(WMAP) {tl:+.1f}   high(Efst) {th:+.1f}")
 print("""
-READING (do-not-assert beyond the numbers; cosmic-variance-limited <3sigma):
+READING (not claimed beyond the numbers; cosmic-variance-limited <3sigma):
  * The quadrupole no longer helps CR: depth 0.47 vs observed 0.20 means CR OVER-predicts the
    quadrupole power (predicts a milder dip than observed) -- the old "striking match" (0.2 vs 0.2)
    was an artifact of the SW-analytic 0.22.

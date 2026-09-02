@@ -98,7 +98,7 @@ a radius.** *P3's own worked case, gauge $\alpha=1$: "the curve rises from $r=0$
 *• **The dS₅ substrate correction (r1842–r1846)** — p0 ×3, P3, P7's seed sentence, P8's masthead. ***This
 predates the bad interpretations in kind: it restored a fix Daryl had already made and the corpus had
 regressed.*** **Likely KEEP; verify against the five-rung ladder.**
-• **The sheet-to-ruling do-not-assert removals (r1840)** — three documents. **Verify P7's `§frontiers` really
+• **The sheet-to-ruling not claimed removals (r1840)** — three documents. **Verify P7's `§frontiers` really
 closed it.**
 • **`scripts/check_bibliography.sh` and the 12 references added (r1862)** — *the six undefined internal
 citations and the `JanzenCosmology` typo are **mechanical hygiene, independent of the physics**. Likely KEEP.
@@ -117,7 +117,7 @@ instrument-error scraps (word-bounding, base points, destructive edits) stand re
 |---|---|---|
 | **The dS₅ substrate correction** (r1842–r1846) — p0, P3, P7 | ***KEEP*** | *Checked against §0's five-rung ladder. **p0**: "a real four-dimensional manifold" → the five-dimensional $\mathrm{dS}_5=SO(5,1)/SO(4,1)$ **of which $\mathrm{dS}_4$ is the background** ✔ · **P3**: scopes the maximal-symmetry result to the four-dimensional case and names the substrate proper, adding **"this paper works the equatorial section throughout, where the distinction does not bear on the construction"** ✔ · **P7**: the same scoping ✔. **And P3's "the fifth embedding coordinate" → "the ambient timelike coordinate" is the right fix — "fifth" is ambiguous once $\mathrm{dS}_5$ is in play*** |
 | **P8's masthead block** (added r1841, pulled r1846) | ***CORRECTLY PULLED*** | *It was my own addition. **And P8 needs no marker: it names its object "pure de~Sitter", which IS rung ②.*** ⛔ **But §0 claimed "Both now say so where they stand," which overstated — corrected at the authority r1879** |
-| **The sheet-to-ruling removals** (r1840) | ***KEEP*** | *Verified: P7 at source reads **"is closed in the synthesis… the rulings are borne on $R$'s real axis and the wings on $K$'s… not two candidates for a single assignment but the linear and antilinear faces of the one analytic object,"** and `§frontiers` carries the phrase **zero** times. The do-not-assert was stale in three documents* |
+| **The sheet-to-ruling removals** (r1840) | ***KEEP*** | *Verified: P7 at source reads **"is closed in the synthesis… the rulings are borne on $R$'s real axis and the wings on $K$'s… not two candidates for a single assignment but the linear and antilinear faces of the one analytic object,"** and `§frontiers` carries the phrase **zero** times. The not claimed was stale in three documents* |
 | **`check_bibliography.sh`** + 12 references (r1862) | ***KEEP*** | *Mechanical hygiene, independent of the physics. **All nine classical references still cite live claims** — and the six undefined internal citations and the `JanzenCosmology` typo were real defects the bakes did not create* |
 | **The census pass** (r1865) | ***KEEP, RE-RUN*** | ***Five of six enrichments survive unchanged, and the audit added a sixth (`Q6r`→F). No enrichment was lost*** — **the claims that dissolved something were not the claims that failed** |
 | **The P6 `R2` pass** (r1866) | ***KEEP, RE-RUN — and the yield DROPPED*** | *`X3`'s move is withdrawn with the claim; `X4`'s too, since P2 already licensed the crossing. ***That leaves `Q3` alone: one promotion in nineteen.*** **The audit lowered the `R2` yield and raised the census yield, which is the honest direction** |

@@ -25,7 +25,7 @@ staleness here is semantic and hides in passages that never say "charge" or "A/B
 - This point says **nothing** about how symmetries act on the rulings. Symmetries act as they always did
   (e.g. R swaps the two rulings — P12, geometrically fine); that is a separate, settled matter and NOT
   what the A/B removal is about. The sheet-to-ruling map (which ruling rides which conjugate wing) stays
-  the genuine open problem, do-not-assert. **Staleness = any passage that pins a fixed species onto a
+  the genuine open problem, not claimed. **Staleness = any passage that pins a fixed species onto a
   ruling, nothing more.**
 
 ### Δ2 · Charge conjugation as a geometric symmetry (the C-conjugation core)
@@ -42,7 +42,7 @@ staleness here is semantic and hides in passages that never say "charge" or "A/B
   only the charge **sign** is field-level: `C = (Q↦−Q)_field ∘ (R∘K)_geometric`. **Do not run any sweep
   against the dead premise** — a control doc built on a rotten because returns a false "all clean" (the
   wrong-gradient failure, one layer down). The operator half is grounded (`A3_spinor_lift.py`,
-  `γ⁵S=−(Cγ⁰ᵀ)` implements `ψ↦ψᶜ`); the species half stays do-not-assert.
+  `γ⁵S=−(Cγ⁰ᵀ)` implements `ψ↦ψᶜ`); the species half stays unclaimed.
 
 ### Δ3 · C is NOT the outer ℤ₂ of D₆  (settles the §3-vs-§258 knot)
 - **NOW TRUE:** the outer ℤ₂ of Aut(A₂)=D₆ is **R** (moves the horizon roots; carries 3↔3̄, chirality,
@@ -160,7 +160,7 @@ papers were clean, the index lagged them. Fixed (backup `ONTOLOGY_FOUNDATION_IND
 
 ### LOW/MED papers — reader-agent sweep (r1063), all CLEAN
 - **P1 BH_causality** — CLEAN. (No charge/C/CPT/A-B content. "species/genus" = singularity taxonomy, not matter/antimatter — correctly not flagged.)
-- **P2 janzen_circle** — CLEAN. ("ruling" used geometrically; "conjugate" = analytic conjugacy; r<0 arm deferred to slicing; generation triple flagged do-not-assert.)
+- **P2 janzen_circle** — CLEAN. ("ruling" used geometrically; "conjugate" = analytic conjugacy; r<0 arm deferred to slicing; generation triple flagged not claimed.)
 - **P4 modern_parallax** — CLEAN. (No exposure.)
 - **P6 shadow_of_existence** — CLEAN. R-even/R-odd shadow partition + footnote `R=γ⁵ = A₂ diagram automorphism ∈ O(5,1)∖SO₀` already the NEW picture; reserves P for areal parity. Consistent, endorsed.
 - **P10 canonical_time** — CLEAN. (Bead/complex-time continuation is cosmic-time, NOT tied to charge conjugation → not the retired τ̃↔τ̄̃ reach.)
@@ -173,12 +173,12 @@ papers were clean, the index lagged them. Fixed (backup `ONTOLOGY_FOUNDATION_IND
 - **P14 matter_sector** — CLEAN. §cosmogenesis carries the reconciled picture verbatim: `R=γ⁵` mass-reflection carrying `3↔3̄`; "the charge structure that closes C is field-level on both sides equally, not a substrate datum"; `R≠T`, `R≠P` (correct r968 footnote); "no matter/antimatter asymmetry is a cosmogenesis event." No A/B-as-species. (Was reconciled in the r990 antimatter pass.) **FIXED r1064:** added the one-clause pointer — "charge entering only as the R-even Q², charge conjugation present as a symmetry and no substrate isometry, the outer ℤ₂ being R not C" (`rem:C-not-R`). Recompiles clean.
 - **P12 algebroid** — CLEAN on staleness. `R` = orientation/mass-reflection = A₂ diagram automorphism = O(5,1)\SO₀ = γ⁵; "mass … its one R-odd datum"; `Aut(A₂)=S₃×ℤ₂=D₆`, ℤ₂ central; no charge-conjugation content. "two null rulings/two families" = comoving & synchronous congruences (geometric), not species.
   - *(Retracted, r1063: I earlier mis-framed "R swaps the rulings" as a flag against the storyboard. That was my confusion. **Δ1 is only "A and B are not species"** — it says nothing about symmetry actions on the rulings. P12 pins no fixed species onto any ruling, so it is clean. R swapping the rulings is geometrically fine and irrelevant to Δ1. `ruling_swaps.py` confirms the geometry but answered the wrong question.)*
-- **P8 slicing_operator** — CLEAN. A/B usage is the canonical-correct one (eq:embed `X(τ)=e^{τ/α}A+e^{−τ/α}B`, the two null asymptotes of ONE strung worldline: future generator A, past generator B / second ruling = synchronous space) — exactly Δ1's endorsed form, likely the corpus SOURCE of it. Charge as matter-as-bend (§bend, the RN-dS `q²/r²` bend → EM stress-energy), R-odd mass (§dictionary), the A/B→ellipse-foci bridge held do-not-assert. No charge-conjugation content. P8 names A/B = the two null rulings (comoving & synchronous), pins no species onto either — Δ1-clean.
+- **P8 slicing_operator** — CLEAN. A/B usage is the canonical-correct one (eq:embed `X(τ)=e^{τ/α}A+e^{−τ/α}B`, the two null asymptotes of ONE strung worldline: future generator A, past generator B / second ruling = synchronous space) — exactly Δ1's endorsed form, likely the corpus SOURCE of it. Charge as matter-as-bend (§bend, the RN-dS `q²/r²` bend → EM stress-energy), R-odd mass (§dictionary), the A/B→ellipse-foci bridge stated without being claimed. No charge-conjugation content. P8 names A/B = the two null rulings (comoving & synchronous), pins no species onto either — Δ1-clean.
 - **P16 cosmogenesis** — CLEAN. Pure BBN/cosmogenesis (rates, seam-crossing, light elements). No charge/C/CPT; no A/B-species. "collapse of matter in a previous universe" is frame-relative and consistent with P7/P14's relational antimatter (progenitor = antimatter to us, matter to itself); inherits η, claims no seam baryogenesis (matches P7). 
 
 ### SWEEP RESULT (r1063)
 **All 11 swept papers CLEAN on Δ1–Δ6; all 4 HIGH re-read by me at weight, all clean.** The corpus was already reconciled by the earlier r968 symbol-canon (R/P/T) and r990 antimatter-naming passes; the recent C-conjugation work touched only the charge-discussing papers (P13/P3/P5/P9/p0 — done), and P14's charge statement is consistent. The A/B-as-species error is **not present in any paper** (it lived only in old figure captions / the storyboard note). No *staleness* edits required in the paper bodies by the sweep — but the "minor/optional" tidy-ups are **all done r1064, not deferred** (see PART 5): P11 comment "P"→"R"; P14 pointer added; the ontology index fully updated; the `R=PT` audit flag resolved; storyboard cleanups. The A/B-as-species error was **not present in any paper body** (it lived only in old figure captions / the ontology-index glossary, both now fixed).
-- **P16 cosmogenesis** — CLEAN. Thermodynamics/BBN paper (two-rate structure, adiabatic compression, D/He-4/Li-7 abundances). No charge-conjugation/C/CPT/A-B-species content. Matter/antimatter appears only as "the baryogenesis-analogue of the handover," held explicitly do-not-assert (η derivation, ordinary route); "previous universe's collapsed matter" is the thermal/inheritance reading. Consistent.
+- **P16 cosmogenesis** — CLEAN. Thermodynamics/BBN paper (two-rate structure, adiabatic compression, D/He-4/Li-7 abundances). No charge-conjugation/C/CPT/A-B-species content. Matter/antimatter appears only as "the baryogenesis-analogue of the handover," held explicitly not claimed (η derivation, ordinary route); "previous universe's collapsed matter" is the thermal/inheritance reading. Consistent.
 
 ---
 

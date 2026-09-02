@@ -2,7 +2,7 @@
 
 **From:** c22, continuing the build after c23's seam answer (ANSWER_c23_seam-question.md).
 **Status:** the geometry/fork is settled (c23, correct, taken in). This note is the next step of the build,
-and it is a flag, not a verdict. Do-not-assert that CR fails; do-not-assert θ_*. Stated for reversal.
+and it is a flag, not a verdict. Do-not-assert that CR fails; not claimed θ_*. Stated for reversal.
 **Grounded at:** P9 `CR_flatLCDM_v2.tex` §679–683 (frameworks diverge in the early universe; two open
 problems), §516/§531–541 (matter+Λ rate, no radiation term ever), P5 §211 (bounded throat), §263/§266
 (the radiation-filled early universe is the principal open problem, decided by data not geometry).

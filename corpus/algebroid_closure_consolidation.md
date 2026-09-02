@@ -4,7 +4,7 @@
 stratification that completes the "built object" criteria. Receipts: `scripts/adm_so51_1.py` (closure),
 `scripts/adm_strata_1.py` (stratification), `scripts/adm3.py` (discrete). Not one of the 10 papers — a
 corpus support/spine note, like the anchor and Gowdy–dS consolidations. All receipts clean-zero (sympy).
-Tags: [established]/[computed]/[reading]/[reach].*
+Tags: [established]/[computed]/[reading]/conjecture.*
 
 ## The claim
 $\mathfrak{so}(5,1)\ltimes\mathcal{C}$ is the home of GR's constraint algebra: the substrate isometry
@@ -140,7 +140,7 @@ discriminant zero); established: the reassignment at the NBC horizon (P7/Move 9)
 asserted: any unification into one discrete action; any continuous $\mathfrak{su}(3)$ — the $A_2$ root
 structure is the skeleton, the leap to $\mathfrak{su}(3)$ stays Move 13.]**
 
-## 8. Move 13, first bite — is the $A_2$ resonance the $\mathfrak{su}(3)$ fingerprint? Necessary-not-sufficient; do-not-assert held  **[computed group-theory floor + the established skeleton → the correctly-posed verdict]**
+## 8. Move 13, first bite — is the $A_2$ resonance the $\mathfrak{su}(3)$ fingerprint? Necessary-not-sufficient; not claimed held  **[computed group-theory floor + the established skeleton → the correctly-posed verdict]**
 *(c17, r277, 2026-06-16. `scripts/move13_su3_fingerprint_test.py`. The prerequisite root/isotropy data is built
 (Moves 6–7–11); this poses Move 13's test **correctly** — the manufactured-wall caution is live: the retracted
 rung-4 test checked $\mathfrak{su}(3)\subset\mathfrak{so}(4,1)$, the wrong group, a strawman. The right
@@ -158,7 +158,7 @@ necessary condition is $\mathfrak{su}(3)\subset$ the substrate's **compact** iso
   The established substrate is $\mathrm{dS}_5=SO(5,1)/SO(4,1)$, compact isometry $SO(5)$ — and a compact
   $\mathfrak{su}(3)$ can only embed in a maximal compact subalgebra. So **$\mathfrak{su}(3)\not\subset\mathfrak{so}(5,1)$:
   no continuous $\mathfrak{su}(3)$ geometric isometry exists on $\mathrm{dS}_5$.**
-- **Verdict (necessary-not-sufficient; do-not-assert held).** On the established $\mathrm{dS}_5$ substrate the
+- **Verdict (necessary-not-sufficient; not claimed held).** On the established $\mathrm{dS}_5$ substrate the
   $A_2$ resonance is the **discrete $\mathrm{Weyl}(A_2)=S_3$ shadow only** — **gravity-minimal**, colour a shadow.
   A continuous (gauge-capable) $\mathfrak{su}(3)$ requires the substrate to rise to $\mathrm{dS}_6/M^7$
   ($SO(6)\supset SU(3)$); the resonance supplies the skeleton but does **not force** that rise. So the
@@ -167,7 +167,7 @@ necessary condition is $\mathfrak{su}(3)\subset$ the substrate's **compact** iso
   it is also **not refuted** (the skeleton is real, and dS₆ would realize it) — it is *correctly located*: the
   resonance is necessary, not sufficient, and silent on the dimension. **[computed: the floor + the skeleton;
   reading: the correctly-posed verdict. The continuous-$\mathfrak{su}(3)$ leap and the dS₆ rise remain
-  do-not-assert.]**
+  not claimed.]**
 
 ## 9. Scope
 - **Computed:** the symmetric-space split and closure at the symmetric cut; the bracket-pattern/grading

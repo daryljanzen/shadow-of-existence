@@ -9,7 +9,7 @@
 # below is real because each node corrected its OWN overreach and the survivors agree at source; the
 # one genuine disagreement (c19 fork_5's coupling) is RESOLVED with source, not smoothed; and the one
 # genuine fork was adjudicated through the ontology foundation (§5) and then cold-audited by all three
-# other nodes (c17, c19, c20) — it HOLDS, within the stated ontological scope, universal do-not-assert.
+# other nodes (c17, c19, c20) — it HOLDS, within the stated ontological scope, universal not claimed.
 
 ## 0. What the interference engine actually did
 Four independent nodes ran the same prompt (go to the thesis; does it bear on the colour/σ frontier).
@@ -85,7 +85,7 @@ The conflations, named and dissolved:
 - **The cubic monodromy (c19 fork_4):** the between-member structure of σ/P/ξ is the monodromy of the
   horizon cubic; ξ-monodromy = σ; a 3-sheeted S₃-cover branched at the two Nariai points. [computed]
 
-## 4. THE THREE DISCRETE OPERATIONS DO NOT FUSE — BUT THEY ARE CO-LOCALISED (all four hold; P10's do-not-assert, sharpened)
+## 4. THE THREE DISCRETE OPERATIONS DO NOT FUSE — BUT THEY ARE CO-LOCALISED (all four hold; P10's not claimed, sharpened)
 Root-permutation S₃, the null↔timelike cosmogenesis reassignment, and the Riemannian↔Lorentzian
 signature-flip are "different involutions, not one" (P10). The distinctness is in the **type**, not the
 locus: the horizon's null degeneration (P1 — the spacelike radial direction degenerating onto the null
@@ -97,7 +97,7 @@ root-monodromy object — c19 fork_4 walls it; c17 §5 names fusing them the fac
 circle / throat (X=α)**. Everything interesting crowds the hole; CR's power is that collapse and
 cosmology are one geometry there. But co-localisation is not identity: adjacency at the throat does not
 fuse operations the geometry keeps distinct by type. The A₂/S₃ structure is bounded to σ/P/ξ; the full
-discrete structure does not assemble into one object. [do-not-assert on fusion, four-way; co-localisation
+discrete structure does not assemble into one object. [not claimed for fusion, four-way; co-localisation
 established]
 
 ## 5. THE FORK — ADJUDICATED THROUGH THE ONTOLOGY FOUNDATION (closed, not deferred)
@@ -125,7 +125,7 @@ minus sign); the global Wick *changes* it.
   *whatever the SO(6) face's ontological status*, because it depends only on the matter being Lorentzian and
   su(3) being across the seam. Colour-closed for the physical matter sector, now on **P1/P7, not P11 alone**.
   Frontier-1 (the geometric-isometry non-compactness escape) closes with it. The *universal* stays
-  do-not-assert; frontier-2 (empirical coherence) untouched. **Airtight version (c17):** the Wick is an
+  not claimed; frontier-2 (empirical coherence) untouched. **Airtight version (c17):** the Wick is an
   *imaginary* continuation, not a physical trajectory — real matter worldlines cannot follow it — so matter
   cannot ride around the hole onto the SO(6) face by any physical path. The route that would reopen colour is
   closed, not merely walled.
@@ -145,7 +145,7 @@ minus sign); the global Wick *changes* it.
   unreal"); that much is just the mathematics and is affirmable. What is closed (within CR's ontology) is its
   status as a *co-equal substrate*. So the disentangling: real-by-construction = yes (the math); co-equal
   substrate = no (P7's ontology). The murky "does the register *extend* to a signature-change face" framing that
-  r313 held do-not-assert dissolves — the face's reality is the math, and its non-co-equality is the corpus's
+  r313 stated without being claimed dissolves — the face's reality is the math, and its non-co-equality is the corpus's
   signature line; neither needs the register-extension step.
 - **HONEST SCOPE (c17 — the bound, not a flaw):** this closure is **ontological**, not an independent
   *structural* foreclosure. Mathematically SO(6) and SO(5,1) genuinely **are** co-equal real forms of SO(6,ℂ);
@@ -158,8 +158,8 @@ minus sign); the global Wick *changes* it.
 seam grounding) and their fixes combine into a result stronger and more honest than r312's: colour-closure is
 **decoupled** onto P1/P7 (c20), robust whatever the face's status; Reading-B-as-co-equal is **closed** on the
 corpus's own signature line (c17, P7 l.618) + the one-world ontology, firmer than the seam *and* firmer than
-r313's do-not-assert; the SO(6) face is real-by-construction-but-not-co-equal; and the closure is explicitly
-**ontological in scope**, not structural (c17). The universal stays do-not-assert; frontier-2 untouched. The
+r313's not claimed; the SO(6) face is real-by-construction-but-not-co-equal; and the closure is explicitly
+**ontological in scope**, not structural (c17). The universal stays unclaimed; frontier-2 untouched. The
 engine's validation in one line: the synthesizing node committed the §2 conflation in §5, two different nodes
 caught it independently, and the corrected result is better than the node that made the call could reach alone.
 
@@ -190,11 +190,11 @@ caught it independently, and the corrected result is better than the node that m
   distinct in type — exactly §4.
 
 **THE CONSOLIDATED VERDICT (all three cold nodes in):** the adjudication **HOLDS**, within the stated
-ontological scope, universal do-not-assert. Three independent cold audits (c17, c19, c20), each of which tried to
+ontological scope, universal not claimed. Three independent cold audits (c17, c19, c20), each of which tried to
 break it and reconciled at source: Check 2 confirmed verbatim (signature-preserving cosmogenesis, no Wick);
 the operation-3/4 over-reach caught by two and corrected (decoupled onto P1/P7, regrounded on P7 l.618); the
 maximal-symmetry route closed at the existence-ontology (5D-Trope, source-verified); the dagger "no wall"
-objection reconciled. The honesty tells the nodes themselves named: the universal is held do-not-assert (a
+objection reconciled. The honesty tells the nodes themselves named: the universal is stated without being claimed (a
 manufactured rescue would over-claim it), and every break-attempt reconciled *at source*, not by hand. **The
 bound, stated plainly:** three converging "holds" is strong evidence, not proof — and c21 is the synthesizing
 node integrating them, so even this consolidated verdict is stated for reversal and a fresh cold read of the

@@ -125,7 +125,7 @@ card (the figure ledger has both).
 new citation (p0 and P13 rows already synced; Q1/Q2 will add more). Runs after U1, 7·B, and the propagation.
 
 **Q7 — QM frontier flags (optional, low priority).** Two *located* open questions from the sketchpad could
-earn a "what stays open" flag in P13 `§open` at do-not-assert weight: **Sketch 5** (the empty Wick+discrete
+earn a "what stays open" flag in P13 `§open` at not claimed weight: **Sketch 5** (the empty Wick+discrete
 cell — where a genuine surprise could live) and **Sketch 4** (the QN origin-map — the sort of quantum
 numbers to faces). **Sketch 6** (measurement / Born rule as the Wick→Lorentzian projection) stays **out** —
 too speculative to flag even as open.
@@ -142,7 +142,7 @@ publish-blocker). These are gathered and sequenced in **§8**.
 
 - The **firm** QM material is integrated — Sketch 1 core, the positive face, S⁴-vs-S⁵, Sketch 7 straddle —
   into P13 + p0. Not stranded on the sketchpad.
-- The **speculative** sketches are correctly held do-not-assert and are *not* owed integration: Sketch 2
+- The **speculative** sketches are correctly stated without being claimed and are *not* owed integration: Sketch 2
   (thermal = vacuum-selector, a correction toward *less*), Sketch 3-loose (uncertainty-as-finiteness),
   Sketch 6 (Born rule). Kept, not dropped.
 - **No new paper** is needed; P13 grows, three-pillar home decided.

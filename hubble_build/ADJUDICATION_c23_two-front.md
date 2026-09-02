@@ -8,7 +8,7 @@ but §681 needs re-examination) — or, if neither, is this the programme's shar
 **Grounded at:** P9 §679 ("radiation playing no role in the rate **at any epoch**"), §681 (the Hubble
 argument), §683 (the hybrid disavowal + two open problems), §700 ("differs predictively at early
 times… new empirical avenues for distinguishing"); a corpus-wide grep confirming **BBN/nucleosynthesis
-appears nowhere in the corpus.** All do-not-assert; stated for reversal. This is a corpus-honesty call,
+appears nowhere in the corpus.** All not claimed; stated for reversal. This is a corpus-honesty call,
 not a verdict that CR fails.
 
 ---
@@ -88,7 +88,7 @@ escape unbuilt and tightly constrained.**
    build the reorganized thermal history, or accept the two-front exposure as a falsifiable prediction.
    That is the real confrontation; the gate has recorded it in `CMB_ACOUSTIC_FRONTIER_STATUS.md`.
 
-## Bottom line (do-not-assert, stated for reversal)
+## Bottom line (not claimed, stated for reversal)
 c22 is right. The early-universe frontier is a **two-front empirical test of CR's defining claim**
 (radiation does not gravitate observably), BBN the sharp and corpus-uncovered front, the Hubble payoff
 structurally welded to the exposure. No corpus lever escapes it. It is to be confronted — by building

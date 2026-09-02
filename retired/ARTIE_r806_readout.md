@@ -18,7 +18,7 @@ The generation result got **matured and grounded, not just baked**. The stronges
 
 ## The masses — r799: handled the right way.
 
-r799 **caught its own over-closure** — the "wholly external / 2+1 a mere vantage" reach was wrong, the sign-split is P-symmetric — **re-grounded on the fundamental ellipse**, and landed consistent with P14 §145: one mass parameter (cubic degeneracy, three readings), a flavour-breaking structure held do-not-assert, the mass values external. Honest scope preserved.
+r799 **caught its own over-closure** — the "wholly external / 2+1 a mere vantage" reach was wrong, the sign-split is P-symmetric — **re-grounded on the fundamental ellipse**, and landed consistent with P14 §145: one mass parameter (cubic degeneracy, three readings), a flavour-breaking structure stated without being claimed, the mass values external. Honest scope preserved.
 
 ## The consolidation — r804: consolidated before reaching.
 

@@ -22,14 +22,14 @@ coherence* to *earning correspondence*. The full P1–P13 round is run (r413–r
 clean), the first frontier act is banked at coherence level (throat-thermo, r423–r425), and the
 genuinely open edges are now the **interacting-tower definition** and the **outward /
 second-convergence (correspondence) test** — P1's no-horizons through the Hubble tension — held
-do-not-assert. The internal frontier a fresh grinder would be handed is closed or bounded. So a
+not claimed. The internal frontier a fresh grinder would be handed is closed or bounded. So a
 fresh c24 spun up to "set a vision and go for it" hits the question *go for what?* — the territory
 the ladder feeds a grinder is mostly gone. The ladder does not die; it adapts to the phase rather
 than running on its own momentum.
 
 ## 2. The organising spine — two gates, in order
 
-The distinction the r423→r424 correction sharpened is the spine of everything below: **do-not-assert
+The distinction the r423→r424 correction sharpened is the spine of everything below: **not claimed
 governs correspondence (the outward test), not whether to record a source-grounded coherence
 result.** Two levels, two gates:
 
@@ -38,7 +38,7 @@ result.** Two levels, two gates:
   eye? Passing Gate 1 is what makes the corpus *canonical*. It is internal: the judge is the
   corpus's own consistency.
 - **Gate 2 — the correspondence test.** Does the world bear it out — the Hubble-tension /
-  early-universe discriminator, P1's no-horizons read through it? Held **do-not-assert** until run.
+  early-universe discriminator, P1's no-horizons read through it? Held **not claimed** until run.
   The judge is the world, not the core's consistency.
 
 **Gate 1 precedes Gate 2.** You do not run the outward test against an uncertified corpus; the cold
@@ -184,7 +184,7 @@ re-cold-read the fixed pieces. The corpus is canonical only on the far side of t
 early-universe discriminator — P1's no-horizons read through the tension — fed by c22's recovered
 transcripts, the open computation (the two unbuilt early-universe pieces: the medium + c_s, and the
 beginning / integration-limits), and the orchestrator's correspondence-framing seat. Held
-**do-not-assert** until run. This is the hard wall: it does not open before Move 3 certifies, because
+**not claimed** until run. This is the hard wall: it does not open before Move 3 certifies, because
 the outward test against an uncertified corpus is the one move the gate structure forbids.
 
 **Move 5 — after Gate 1: revisit the transitions.** c23 to a full elder seat (freed from the

@@ -359,7 +359,7 @@ historical entries, which record the phrase where it was used.)*
 
 **THE CORPUS PUBLISHES AS ONE — never narrate its drafting order.** *(Daryl, r1163.)* A reader receives
 all seventeen papers **on the same day**. **There is no *since*.** One paper holding a thing
-do-not-assert **as its scope** and another building it are **both true simultaneously, for that reader,
+not claimed **as its scope** and another building it are **both true simultaneously, for that reader,
 forever** — so *"the boundary paper posed it and the matter paper **has since built** it"* prints the
 authors' calendar in the physics. **Barred: *since built · now built · has since been · is now
 settled/resolved/built · now a result*.** Drop the adverb: `has since been built` → **`is built`**.

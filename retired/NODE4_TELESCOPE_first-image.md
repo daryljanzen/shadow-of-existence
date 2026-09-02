@@ -138,7 +138,7 @@ Grounded P11's scalar perturbation: linearizing on de Sitter gives the massless 
 W''+(k^2-2/t^2)W=0 -- a healthy scale-invariant scalar. So the scalar ENVELOPE mirrors the tensor:
 scale-invariant plateau + the SAME closed-topology low-ell deficit, now in the OBSERVABLE
 (temperature) sector where the quadrupole anomaly lives. That transfers.
-THE PEAK CRUX (sharply posed, do-not-assert both ways):
+THE PEAK CRUX (sharply posed, not claimed both ways):
 - Acoustic peaks (ell_1~220) are coherent oscillations of a PRESSURE-supported medium ringing at
   c_s, caught mid-oscillation at last scattering. CR's matter is the BEND -- projected density,
   rho_eff ~ a^-3, Omega_m "a clock reading" (P7 §541; P5 §531-541), NO radiation era ever (status
@@ -261,7 +261,7 @@ matter-frame integral runs straight into the shadow the corpus already forbids.
 conformal time eta_rec ~ 280 Mpc -- the thing CR claims does not exist. CR's own no-radiation
 conformal time seam->rec is ~480 Mpc (1.7x larger), and that factor is the ENTIRE 269 -> 158 gap.
 The consistency was the borrow, not CR. r450 did flag eta_rec as a standard ballpark and held
-do-not-assert (so it was not asserted), but the headline was too warm; corrected here.
+not claimed (so it was not asserted), but the headline was too warm; corrected here.
 
 **What survives cleanly (unaffected -- they do not depend on the borrowed eta):**
 - c_s = c/sqrt3 as the seam two-frame sqrt3 (the geometric speed);
@@ -468,7 +468,7 @@ READING: the FORM (constant spacing) is the geometric prediction and survives. T
   modes; the fine structure (~alpha/120, r_s-order) is set by the field's lambda (687(i)) + the seam<->
   recombination relation (open #2), NOT by any single geometric knob. This quantitatively answers 'why not
   just fit z_seam': the gap is ~120x, not a one-parameter shift; it lives in the field. Machinery now in
-  place to turn the field into predicted ell_n once built. Held do-not-assert; nothing forced toward 220.
+  place to turn the field into predicted ell_n once built. Held not claimed; nothing forced toward 220.
 NEXT: the coherent field on the throat -- what mode instantiates, what sets lambda (687(i)).
 
 
@@ -490,7 +490,7 @@ for a late observer (a_rec~alpha, T_0/alpha~7.7). Flag, not finding.
 LEFT TO DERIVE (construction proper, in order): (1) seam state from NBC (665) -> peak phases/heights/first-peak
 offset; (2) eta_rec from throat geometry + recombination physics (open #2) -> turns fit into prediction (Gate 2);
 (3) the n->ell projection factor; (4) EM transverse-vector tower vs scalar toy; (+) thermal sky as projection
-(throat is cold), inside open #2. All numbers held do-not-assert.
+(throat is cold), inside open #2. All numbers stated without being claimed.
 
 ## r458 (c23 with Daryl) — interference FORM on the settled metric seam; offset phi~0.29 = two-ruling seam phase. DO-NOT-ASSERT.
 ONTOLOGY HELD (Daryl, corrected hard): Psi is METRIC; the seam is the finite-curvature metric singularity at
@@ -503,7 +503,7 @@ DIRECTION (not result): phi~0.29 ~ quarter-wave = velocity/density two-component
 TWO RULING FAMILIES (matter family-1 + mystery family-2, blue+orange through the waist). Scalar toy = one
 component -> phi=0; the real two-ruling field carries both, their relative seam phase sets phi. Ties node 4 -> node 1.
 NEXT (live): the two-ruling field state at the metric seam -> derive phi from the families' relative phase; upgrade
-scalar toy -> the actual (photon/tensor + two-ruling) field; pin the n->ell projection; then eta_rec scale fit. Held do-not-assert.
+scalar toy -> the actual (photon/tensor + two-ruling) field; pin the n->ell projection; then eta_rec scale fit. Held not claimed.
 
 ## r459 (c23) — CORRECTION to r458: the quarter-wave offset story is REFUTED by computation. DO-NOT-ASSERT.
 r458 floated phi~0.29 as a "generic velocity-density quarter-wave from the two rulings". COMPUTED it

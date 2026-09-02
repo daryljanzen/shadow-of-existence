@@ -2,8 +2,8 @@
 """check_declared_parts.py -- A ROW THAT DECLARES ITS PARTS MUST REPORT THEIR STATE.
 
 ** WHY.  Found twice in two revisions, on adjacent rows. **
-  * ** `PO-2` (r2683) ** -- "held at do-not-assert on ** three separated levels **", the levels named in
-    `GEOMETRY_PHYSICS_TAXONOMY` as "(1) skeleton grounded, (2) resemblance do-not-assert, (3)
+  * ** `PO-2` (r2683) ** -- "stated without being claimed on ** three separated levels **", the levels named in
+    `GEOMETRY_PHYSICS_TAXONOMY` as "(1) skeleton grounded, (2) resemblance not claimed, (3)
     identification walled".  *** Four revisions of one session answered against them and NOT ONE was
     filed against a level. ***  Level (2) turned out PASSED.
   * ** `PO-6` (r2684) ** -- "this item's ** two halves ** are two halves rather than one entangled

@@ -9,7 +9,7 @@ keep the programme blocking it." ***
 ** ⛔⛭⛭ ⓵ THE GATE WAS A SENTENCE, AND IT WAS STALE IN TWO PLACES. **  `GEOMETRY_PHYSICS_TAXONOMY.md`
 -- the document that HOLDS the three levels -- read:
 
-      *** "the three levels --- (1) skeleton grounded, (2) resemblance do-not-assert,
+      *** "the three levels --- (1) skeleton grounded, (2) resemblance not claimed,
           (3) identification walled --- stand exactly as r693 set them"
       and, separately, "AND THE SECOND HALF IS UNTOUCHED --- the three levels stand
           exactly as r693 separated them" ***
@@ -21,7 +21,7 @@ keep the programme blocking it." ***
 ** ⓶ THE STATE, VERIFIED AND WRITTEN INTO THE TAXONOMY. **
   * ** (1) SKELETON -- grounded and computed: ** *** the root triple IS the $f=0$ locus,
     $\\{1/\\sqrt3,1/\\sqrt3,-2/\\sqrt3\\}$, sum zero (r2631). ***
-  * ✔ ** (2) RESEMBLANCE do-not-assert -- PASSED: ** *** r2629 turned the resemblance into a
+  * ✔ ** (2) RESEMBLANCE not claimed -- PASSED: ** *** r2629 turned the resemblance into a
     CONSTRUCTION, r2633 gave the reason.  ** A resemblance-hold guards against reading a similarity as
     a fact; when the similarity becomes a construction it has nothing left to guard. ** ***
   * ⚠ ** (3) IDENTIFICATION -- still walled, narrower than the word: ** *** P14 EXHIBITS the map, roots
@@ -82,7 +82,7 @@ def main():
           'stand exactly as r693' not in tax)
     check('and it now carries the four findings it had never heard of (r2629, r2631, r2632, r2633)',
           all(k in tax for k in ('r2629', 'r2631', 'r2632', 'r2633')))
-    check('with level (2) recorded as PASSED: "a \\"resemblance do-not-assert\\" guards against reading '
+    check('with level (2) recorded as PASSED: "a \\"resemblance not claimed\\" guards against reading '
           'a similarity as a fact, and when the similarity becomes a construction the hold has '
           'nothing left to guard"',
           'nothing left to guard' in tax)

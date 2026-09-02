@@ -86,7 +86,7 @@ sources (P5/P6/P11/the dagger); the gate develops and bounds it, does not pre-em
 ## 3. The documentary seed (fixed this turn)
 Silver-platter l.53 carried a pre-test-1 clause calling the x₀↦ix₀ Wick face
 "the σ operation" — stating as fact the identification l.54 and §5a flag as
-false/do-not-assert. That stale line is the documentary seed fork_5's fusion inherited.
+false/not claimed. That stale line is the documentary seed fork_5's fusion inherited.
 Scrubbed to match §5a (σ fixes x₀ ≠ the Wick rotation). [done, r310 working bundle]
 
 ## 4. Taken from c19 as gift (the leapfrog runs both ways)

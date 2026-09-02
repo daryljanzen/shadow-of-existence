@@ -7,13 +7,13 @@ WP-B / C3 -- the sheet-assignment by ruling-continuation  (investigation, honest
     of the SINGLE matter (A) cosmic-time continuation. Relabelling A's own -pi/3 conjugate wing
     as "B" collapses the DOUBLE ruling of the one-sheeted hyperboloid (A and B are two genuinely
     distinct null-line families, orthogonal at the waist -- verified) into one bundle-under-a-sign.
-    The map from the two distinct rulings {A,B} to the two conjugate sheets is OPEN, do-not-assert.
+    The map from the two distinct rulings {A,B} to the two conjugate sheets is OPEN, not claimed.
     Only the photon->real-crossing assignment (step [1]) is derived. See P7 thm:bead third fact
     and the frontiers item, both de-asserted at r989. ***
 
 The three cube-root sheets of r(tau~) past the seam sit at Im tau~ in {0, +pi alpha/3, -pi alpha/3}
 (alpha=1: {0, +pi/3, -pi/3}).  The open question: which physical congruence rides which sheet?
-DERIVED: photon = real crossing (Im 0). OPEN (do-not-assert): the {A,B} ruling <-> +-pi/3 wing map.
+DERIVED: photon = real crossing (Im 0). OPEN (not claimed): the {A,B} ruling <-> +-pi/3 wing map.
 
 We test this from the *verified ODEs*, not by assertion:
   - photon  : null geodesic  dchi/dtau~ = 1/(1 + r'(tau~))   (integrated in real tau~)
@@ -69,11 +69,11 @@ print("    - PHOTON (at-rest reassigned to null) -> the real crossing (Im 0). [p
 print("    - the two null bundles A, B ride the S^3 layers through the seam and take the two")
 print("      conjugate wings +-pi/3; the matter (A) collapse leg reaches +pi/3 (thm:bead).")
 print("    So the three sheets carry {photon (real), A (+pi/3), B (-pi/3)} -- the figure's reading.")
-print("    NAMING (do-not-assert): geometrically the conjugate (r<0) branch is the areal reflection")
+print("    NAMING (not claimed): geometrically the conjugate (r<0) branch is the areal reflection")
 print("    r->-r of the expansion leg -- the mass-reflected dual. Whether it is 'antimatter' is NOT")
 print("    worked out: the fermion sector attaches the 'antimatter register' to R=gamma^5 (mass")
 print("    reflection r0->-r0) but holds even that 'a resonance, not an identity'. So the antimatter")
-print("    naming is a drill-site, held do-not-assert; 'conjugate dual' is the honest description.")
+print("    naming is a drill-site, stated without being claimed; 'conjugate dual' is the honest description.")
 
 print("\n"+"="*78)
 print("VERDICT:")

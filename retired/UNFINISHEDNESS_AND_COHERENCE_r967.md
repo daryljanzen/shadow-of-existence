@@ -20,7 +20,7 @@ The pass confirms the corpus is at the "only genuine problems remain" bar. The o
   left open (assessed r966; a pilot would recreate the survivorship bias it exists to defeat).
 - **P7:** the seven-item §Frontiers list — matter seam-crossing dynamics, inherited-datum derivation,
   interior remainder, the scalar-perturbation transfer, the SM fermion/gauge sector, quantum completion.
-  All genuine frontier, all do-not-assert-flagged. **Plus the "CANON NOTE / ASK the author" directive
+  All genuine frontier, all not claimed-flagged. **Plus the "CANON NOTE / ASK the author" directive
   (preamble L90–106): a standing authorial decision on the representational-vs-ontological framing —
   yours, not a chore.**
 - **P8/P9/P10/P11/P12:** the "emergence of the bend" (why the cut bends dynamically), the beyond-the-wall
@@ -50,7 +50,7 @@ items (P6 lemma, P13 prop:forced, P9 in-class surjectivity) are all honestly lab
 - **[FIX] P16 η mismatch.** Fig:abundances caption (L524) uses η₁₀=6.14; §verdict (L569) uses
   η₁₀=6.13±0.04. Align to one central value (6.13, the Ω_b h²=0.02237 reading).
 - **[FIX] matter_sector(P14) header stale on the zero-mode continuation.** Header CANON-NOTE (L98–99, L110)
-  still lists the continuation as OPEN / do-not-assert; body L208 (r966) says it is carried out with
+  still lists the continuation as OPEN / not claimed; body L208 (r966) says it is carried out with
   receipt. Sync the header.
 - **[FIX] P5(groupoid) L102, L166 — sentence-start capitalization** ("...generators. **the** Rigidity...").
 - **[FIX] p0 unification-rung count 5 vs 6.** Abstract (L118–129) + intro (L183–190) list FIVE rungs,

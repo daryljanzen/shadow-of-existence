@@ -6,7 +6,7 @@ its half-period images; the turnaround IS the half-period point (sinh^2 = -1, r^
 velocity zero); and the temporal Z/3 factors through a branch-exchanging half-period internal to
 its own generator, while the spatial S_3's exchange is R, acting BETWEEN the two Nariai members
 rather than inside one member's root set (refined r1665). [P3 SdS-slicing sec:temporal-threeness]
-HELD do-not-assert: no identification of the two root sets; no weight-triangle reading.
+HELD not claimed: no identification of the two root sets; no weight-triangle reading.
 STATUS: OK   ORIGIN: storyboard_receipts/turnaround_temporal_threeness.py, built r1621.
 """
 import sympy as sp
@@ -83,6 +83,6 @@ print("     SPATIAL three-ness does not. The two order-threes differ in their IN
 print("     which is a sharper separation than the affine inequivalence of lem:twoturnings.")
 
 print(); print("="*76)
-print("VERIFIED (1)-(4). HELD do-not-assert: no identification of the two cubics' root sets")
+print("VERIFIED (1)-(4). HELD not claimed: no identification of the two cubics' root sets")
 print("(order3_bridge.py holds that open), and no su(3) weight-triangle reading (struck r1430).")
 print("This is the deck action of ONE cubic and the interior structure of ONE three-ness.")

@@ -109,7 +109,7 @@ print("""VERDICT (the sign, computed at semi-analytic level under the corpus's O
   The damping tail's exponential sensitivity to r_D is what converts the 'modest 8%' into a
   large high-l effect.
 
-  So the sign is no longer symmetric do-not-assert. The burden has shifted decisively: CR
+  So the sign is no longer symmetric not claimed. The burden has shifted decisively: CR
   SURVIVES ONLY IF its high-l acoustic PEAKS are substantially BOOSTED above LCDM's -- enough
   to compensate the extra damping -- which requires the collapse-phase driving to DEPART from
   the LCDM/time-reversal-equality (A) at high l (short wavelengths), precisely where it was

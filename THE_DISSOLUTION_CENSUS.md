@@ -92,7 +92,7 @@ vantage). Build the homes now (structure); the deferred generative dissolutions 
 - **Overlap is the design, not a bug.** The horizon problem lives in A, B, and F; the two-real-forms in C and F; the constants in E and B — each collector holds it from its own synthesis's vantage.
 - **Resolves the r1279 open** ("⟐ placement of the cosmology list") → **B, home P15** (overlapping A and E).
 - **Build order (this arc):** C seeded (r1313); D seeded (r1317); B found already homed-mature in P15 §discussion (r1318 — verified at source, no build, would have duplicated §339); A/E/F already built (populate in the generative pass). Smaller local syntheses found and listed as we sweep. **All six clusters now have homes.**
-- **Candidate additions for the generative pass:** into D (and P13's C-list, overlapping) the matter-sector problems at do-not-assert weight (three generations → the three hinges; SU(3)/colour origin; family×chirality=D₆), plus any further divides the polish surfaces.
+- **Candidate additions for the generative pass:** into D (and P13's C-list, overlapping) the matter-sector problems at not claimed weight (three generations → the three hinges; SU(3)/colour origin; family×chirality=D₆), plus any further divides the polish surfaces.
 
 ## ⌖ THE RE-RUN — all seventeen compared against the test the census only acquired at r1715 (r1717, Daryl-directed)
 *Daryl: "are we sure we should accept work partly done by another node at another time? Shouldn't we run all the

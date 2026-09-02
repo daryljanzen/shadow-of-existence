@@ -5992,7 +5992,7 @@ offset--mass oddness is doing the work here as well as in the chirality parity i
 
 ## ★★★★★★ EJ · AND IT NARROWS A NAMED FRONTIER — the baryogenesis-analogue — r2259
 **⌗ DARYL ASKED WHETHER r2258 TOUCHED A FRONTIER ITEM. IT DOES, AND IT IS NAMED IN TWO PLACES.** *P16's open
-edge: *"the eager target, **held here do-not-assert**, is the derivation---as against the inheritance---of that
+edge: *"the eager target, **held here not claimed**, is the derivation---as against the inheritance---of that
 datum and of the progenitor spectrum: ***the baryogenesis-analogue of the handover***, which would turn the
 one-parameter accommodation into a parameter-free prediction."* And `THE_OPEN_PROBLEMS_LEDGER` family (3)
 carries it as OPEN.*

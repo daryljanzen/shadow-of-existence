@@ -109,7 +109,7 @@ items with a different owner.*
 > three entries, newest content r1310** — while the per-paper idiom pass this item says fed it **ran
 > on all seventeen papers by r1406**, ninety-six revisions later. **Either the pass found nothing
 > further, or its findings never reached the ledger** … ⌗ The cheap discriminator, and it is one
-> command: the live counts. ***`do-not-assert` now stands at 43 across 14 files** against the
+> command: the live counts. ***`not claimed` now stands at 43 across 14 files** against the
 > ledger's single row for it — **a ledger with one row for a term with 43 sites is an index entry,
 > not a gathering**.*"
 
@@ -118,7 +118,7 @@ items with a different owner.*
 | | at r1724 | **at r2428 (HEAD)** |
 |---|---|---|
 | `JARGON_LEDGER.md` | 3.8 KB | **3.8 KB** — *unchanged* |
-| `do-not-assert` sites in `corpus/*.tex` | 43 across 14 files | **45 across 14 files** |
+| `not claimed` sites in `corpus/*.tex` | 43 across 14 files | **45 across 14 files** |
 
 ⇒ ***The diagnosis is precise, the discriminator is one command, and roughly seven hundred revisions
 later the ledger is byte-for-byte the same size and the gap has widened by two.***

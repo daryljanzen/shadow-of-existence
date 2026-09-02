@@ -196,7 +196,7 @@ projective quotient, because* **"projective means antipodes are identified, $X\s
 them, and the reason is physical** … the oriented future horizon distinguishes them."* ***An antipodal
 $\mathbb{Z}_2$ that CR refuses to quotient by, justified by orientation — and the offset parity is an
 orientation $\mathbb{Z}_2$ that exists only in even $D$. Whether they are the same $\mathbb{Z}_2$ read at two
-levels is unasked.*** **Recorded as a question, do-not-assert.**
+levels is unasked.*** **Recorded as a question, not claimed.**
 
 ### ④ `CONFORMAL_GEOMETRY_LEDGER` — C4 owns the discharge, and does not know it
 
@@ -254,14 +254,14 @@ actually asks.*** *Not "why three" and "why a parity" separately, but why **both
 number-match ('three = three') is numerology. A **structural mechanism** that forces the number *and* a
 symmetry/relation/further consequence has teeth."** *The mechanism forces the number ($D-1$), forces the
 symmetry (the parity, at even $D$), and carries a further consequence (the conjunction at one dimension).*
-⇒ **the three-root/$D_6$ row's ground moves from an alignment held at do-not-assert to a mechanism with a
+⇒ **the three-root/$D_6$ row's ground moves from an alignment stated without being claimed to a mechanism with a
 stated reason.**
 
 **⛔ AND THE SECOND HALF OF THE OBSESSION IS UNTOUCHED.** *"…and does that reason bridge to $\su(3)$?"*
 **It does not, and this result does not help it.** *What the dimension excursion did to the colour question is
 recorded in `STATE_matter_sector`: the obstruction **moved** — from "$\su(3)$ cannot act internally at all"
 (true at $\dS_5$) to "**what reduces the normal structure group $\so(6)\to\su(3)$?**" — and the three levels
-the taxonomy separates (**skeleton grounded · resemblance do-not-assert · identification walled**) are
+the taxonomy separates (**skeleton grounded · resemblance not claimed · identification walled**) are
 **unchanged**.* ***Nothing here licenses the hat.***
 
 ---

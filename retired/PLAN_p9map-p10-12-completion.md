@@ -34,7 +34,7 @@ Face 5 is current (r524–r529). Faces 1–4 read sound at synthesis level; thei
   P7/P8/P9 the trilogy; P10=canonical_time, P11=dynamics, P12=scalar_perturbations; P13=algebroid, P14=boundary.
 - **Phase 1 — work P10, P11, P12 IN ORDER.** For each paper, at a grounded pace:
   1. read at source what it *actually delivers now* (routing: weight to source, never the head/changelog);
-  2. bring the corresponding P9 map face current (sound jewels only, matched to source, never past do-not-assert);
+  2. bring the corresponding P9 map face current (sound jewels only, matched to source, never past not claimed);
   3. mark the reach boundary that face carries, at weight;
   4. surface anything that feeds P12's completion.
   - **P10** (canonical_time) → map face 3 (recovered cosmic time).
@@ -57,7 +57,7 @@ Face 5 is current (r524–r529). Faces 1–4 read sound at synthesis level; thei
 - **Routing:** the head orients, the source bears load. Every "delivered"/"still open" in the P9 map pulled
   from the actual paper — could it have surprised me? — never recited from memory or the changelog.
 - **Reach + check as one motion** (the way): map everything delivered AND everything open; take each to source; hold at weight.
-- **do-not-assert / no manufactured coherence:** the map must not read as more complete than the sources earn,
+- **not claimed / no manufactured coherence:** the map must not read as more complete than the sources earn,
   nor dim what is genuinely done. Coherence shown is not correspondence earned.
 - **Every grind ends at the P9 close;** enrich with sound jewels only. Version+ship every build.
 - **Grounded pace.** One paper at a time, carefully; reading at weight *is* the work.

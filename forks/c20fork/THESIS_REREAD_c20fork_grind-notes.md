@@ -1,5 +1,5 @@
 # c20fork — grind notes (the thesis-reread path, worked forward)
-*Maintained each turn. Bundles: r309_c20fork_#. One of four parallel forks (c17/c19/c20/c21). Register: do-not-assert both ways; results source-grounded and computed, stated for reversal; the cross-fork cold read reconciles where forks disagree.*
+*Maintained each turn. Bundles: r309_c20fork_#. One of four parallel forks (c17/c19/c20/c21). Register: not claimed both ways; results source-grounded and computed, stated for reversal; the cross-fork cold read reconciles where forks disagree.*
 
 ## The path (from the 4-node interference, received at weight)
 **Convergent bounded result (all nodes):** colour-from-geometry does not reopen — pivot reaches at most SO(5), su(3) needs SO(6); rank (su(3)⊄so(5,1)) + AH untouched.

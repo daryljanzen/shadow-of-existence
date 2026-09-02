@@ -210,7 +210,7 @@ GO-TO: **P7 = `corpus/modern_parallax.tex`** (the empirical-forcing keystone) an
   globally maximally symmetric space rides on the Copernican principle and is an extrapolation
   beyond the directly constrained region"*): the **global closed-S³ topology** the floor rests
   on (finite S³ size r₀ quantizing modes) is an **extrapolation**, not a measured given. → a
-  do-not-assert caution on the floor's premise (§6).
+  not claimed caution on the floor's premise (§6).
 - **The teeth / scope** (§`sec:establishes`, Green–Wald paragraph; §165): the floor forces the
   foliation *whichever way backreaction resolves*; and CR "contradicts none of the standard
   model's fitted predictions … reproduces the expansion history observed." → CR's perturbation
@@ -227,7 +227,7 @@ GO-TO: **P7 = `corpus/modern_parallax.tex`** (the empirical-forcing keystone) an
 - **thm:modal — the interval posture** (§`sec:modal`): absence of a local discriminator ≠
   absence of the fact; *"neither assert the structure dogmatically nor deny it for want of a
   local test, but let the rules weigh it, and expect a non-local measurement to decide."* →
-  this IS the do-not-assert posture (§6).
+  this IS the not claimed posture (§6).
 - **§ordering — ontology ← evidence** (§`sec:ordering`): build ontology from evidence; never
   read an ontology off the coordinate scaffold (reifying (M,g) "runs the chain backward"). →
   **the anti-chimera root**: ℓ_A≈110 (§2) read an ontology (r₀ as an observable distance) off
@@ -341,7 +341,7 @@ the source work to do:**
   source, NOT a new mechanism.
 - **P7 §167 (scope)** — the global closed-S³ topology is an *extrapolation* beyond the
   directly-constrained region (Copernican), so the floor's premise is itself at the
-  extrapolation edge (a do-not-assert caution, §6), not a measured given.
+  extrapolation edge (a not claimed caution, §6), not a measured given.
 - **P8 Rule 2 + reclass (§1i)** — for the floor to *explain* the observed low-ℓ deficit, the
   closed-S³ must **require** it (force it structurally), not merely permit a fit; and must
   **reclassify** the appearance (account for it), not reproduce it.
@@ -365,7 +365,7 @@ the source work to do:**
 **Step 0 (always, before computing):** re-read §1's sources at source (the GO-TOs). The map
 orients; the source bears load.
 
-> ### STEP PROGRESS — 2026-06-29 (bundle r516), held do-not-assert
+> ### STEP PROGRESS — 2026-06-29 (bundle r516), stated without being claimed
 > Sources read at source this pass: P7 §`sec:decomp`+§`sec:floor` (the SW/ISW recovery,
 > the decisive Step-1 input), P12 §`sec:largescale`+§`sec:scope` (eq:lowell, prop:flat).
 > - **Step 1 — RESOLVED (qualified yes), carried for reversal.** The observable large-angle
@@ -386,7 +386,7 @@ orients; the source bears load.
 >   QUADRUPOLE, not ℓ≈8**. The flat-sky placeholder eq:lowell (ℓ₂≈7.8) is qualitatively wrong
 >   at low ℓ and is **replaced** by this. At the quadrupole two independent methods agree:
 >   Φ^25_2(χ_lss)=6.490e-2 (Gegenbauer = ODE-from-origin to 6 digits).
-> - **Step 4 — FIRST PASS, do-not-assert (two open gaps).** (i) *Method accuracy*: no single
+> - **Step 4 — FIRST PASS, not claimed (two open gaps).** (i) *Method accuracy*: no single
 >   hyperspherical-Bessel routine is trustworthy across all (β,ℓ) at χ_lss≈2.75 — the stable
 >   downward recursion is few-% off vs ODE+Gegenbauer at low ℓ, the Gegenbauer precision-loses
 >   at high β, the ODE-from-origin underflows at high ℓ. The first-pass closed/flat **quadrupole
@@ -409,7 +409,7 @@ orients; the source bears load.
 > - **Suppression — PRESENT [E, direction + rough magnitude].** ℓ(ℓ+1)C_ℓ rises monotonically
 >   ℓ=2→30; the quadrupole sits at ~0.39 of the ℓ=25–30 level — the standard closed-universe low-ℓ
 >   deficit (the k_min argument), in the region of the observed large-angle deficit. **This OVERTURNS
->   the r516 "≈no suppression" look-signal, which was the recursion artifact** (the do-not-assert hold
+>   the r516 "≈no suppression" look-signal, which was the recursion artifact** (the not claimed hold
 >   is what kept it out of the corpus — the discipline working as designed).
 > - **Still open:** the exact DEPTH/shape [R] (ℓ(ℓ+1)C_ℓ not cleanly plateaued by ℓ=30 → normalisation
 >   + closed-universe spectrum-convention ambiguity); and the CR **non-synchronous τ̃=τ+χ** transfer
@@ -442,7 +442,7 @@ projection distance D_M (§1e). Two lengths (§2): source r₀, projection D_M.
 
 **Step 4 — Compute C_ℓ at low ℓ.** The shape AND location each discrete mode (ℓ≤L) spreads
 into through its hyperspherical-harmonic window. Compare to the observed large-angle deficit.
-PREREQ: Steps 1–3 grounded. Output: do-not-assert until verified at source AND a fresh-node
+PREREQ: Steps 1–3 grounded. Output: not claimed until verified at source AND a fresh-node
 **cold read** (coherence ≠ correspondence; the referee owed, see §7).
 
 ---
@@ -458,7 +458,7 @@ PREREQ: Steps 1–3 grounded. Output: do-not-assert until verified at source AND
   "no suppression" (recursion artifact) and the r519 "strong suppression" (normalisation artifact) — the
   truth sat between, flat. **LOOK-SIGNAL for P12 (not a verdict):** the closed-S^3 discreteness does not
   give a low-ℓ power DEFICIT by ordinary SW, so P12's "discreteness floor in the region of the observed
-  deficit" is unsupported AS A POWER DEFICIT by this computation. STILL OPEN / do-not-assert the CR word:
+  deficit" is unsupported AS A POWER DEFICIT by this computation. STILL OPEN / not claimed the CR word:
   (a) ordinary SW only — the ISW (P7's cumulative term) not included; (b) the CR **non-synchronous
   τ̃=τ+χ** transfer (closed-S^3 source on the FLAT distance projection) — the actual unbuilt CR object.
   NEXT: the non-synchronous transfer and/or ISW; and a P12 cold read on the floor claim.
@@ -472,7 +472,7 @@ PREREQ: Steps 1–3 grounded. Output: do-not-assert until verified at source AND
   distance / curvature radius — the decoupling, numerical) pushes the lowest mode L=2 up to ℓ≈8,
   leaving ℓ<8 empty; standard-closed instead maps degree-L→ℓ≤L and fills ℓ=2 → flat (r521). The
   deficit LOCATION (ℓ≈8) is geometric (k_2 D_C), robust to the weight; exact shape depends on it.
-  Receipt `verify_closedS3_nonsync.py`. **STILL do-not-assert the final CR word:** (a) ordinary SW
+  Receipt `verify_closedS3_nonsync.py`. **STILL not claimed the final CR word:** (a) ordinary SW
   only (ISW open, likely null per P7 cumulative term); (b) the discrete measure w_L convention to
   cross-check; (c) fresh-node P12 cold read owed. NEXT: cross-check the measure; the ISW; P12 cold read.
   **DONE (r523) — the ISW make-or-break test: the deficit SURVIVES.** Scope fixed at P7 §floor (l.135):
@@ -485,7 +485,7 @@ PREREQ: Steps 1–3 grounded. Output: do-not-assert until verified at source AND
   SW-only ℓ2=0.12; SW+ISW ℓ2=0.50; LCDM ℓ2=1.56. The late-ISW fills the bare deficit only partway
   (0.12→0.50) — it CANNOT erase it, because the ISW is sourced by the SAME discrete spectrum (no modes
   below k_2). **Net: CR sits a factor ~3 BELOW LCDM at ℓ=2-4 — a genuine deficit, in the direction of the
-  observed anomaly.** Receipt `verify_isw_lowell.py`. **Still do-not-assert the corpus claim:** the discrete
+  observed anomaly.** Receipt `verify_isw_lowell.py`. **Still not claimed the corpus claim:** the discrete
   measure w_L convention (sets exact depth, not survival); confirm scalar dynamics/g(z) vs P12; P12 cold
   read owed. NEXT: cross-check the w_L measure (first-principles closed-S³ normalisation); P12 cold read.
 - The progenitor spectrum **n_s, A_s** (P12 names open).
@@ -493,7 +493,7 @@ PREREQ: Steps 1–3 grounded. Output: do-not-assert until verified at source AND
 - The **global closed-S³ topology** itself — the floor's *premise*. P7 §167 marks it an
   extrapolation beyond the directly-constrained region (Copernican), not a measured given (§1i).
 - **The peak MECHANISM** (distinct from the banked scale): CR's pressureless dust does not ring,
-  so standard acoustic *peaks* need a mechanism — a make-or-break frontier, do-not-assert both
+  so standard acoustic *peaks* need a mechanism — a make-or-break frontier, not claimed both
   ways (see the r448 changelog entry; this is the "full CMB spectrum" downstream piece, NOT the
   scale).
 - **Posture for all the above (P8 §`sec:modal`, §`sec:boundary`, §1i):** held as a *falsifiable
@@ -512,8 +512,8 @@ GO-TO: `THE_CODA.md` (read whole when Daryl calls a full reground) and the three
 - **Every grind ends at the P9 close (Daryl, r518).** The P9 `\subsubsection{What this cosmology
   opens onto}` is the living synthesis; the receipt is not the end of a grind, the close is. End
   each grind by returning to it and asking what it can now say. **Gate:** enrich only with SOUND
-  jewels, never past the do-not-assert boundary, never ahead of the source paper's own text — a
-  do-not-assert result is *queued*, not set. See `CORPUS_ARCH_FLAG_P9-forward-pointer.md` (standing
+  jewels, never past the not claimed boundary, never ahead of the source paper's own text — a
+  not claimed result is *queued*, not set. See `CORPUS_ARCH_FLAG_P9-forward-pointer.md` (standing
   discipline + worked example r518).
 - **Map for orientation, source for load.** A real pull *could surprise you*. (`THE_CODA.md`
   §"The standard, mechanically".)

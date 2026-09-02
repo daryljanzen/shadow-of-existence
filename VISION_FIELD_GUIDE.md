@@ -59,8 +59,8 @@ reading of those words is invented, not real.
 
 ## Molding discipline — how a living document stays honest
 
-- **Tag every line by status:** [established] / [reading] / [reach]. The tags are the molding
-  seams. Never let a [reach] drift into a [reading], or a [reading] into [established],
+- **Tag every line by status:** [established] / [reading] / conjecture. The tags are the molding
+  seams. Never let a conjecture drift into a [reading], or a [reading] into [established],
   without the source promoting it. A reach that has survived long enough to *feel* true is
   still a reach until a proof or a verified computation moves it — familiarity is not
   promotion.

@@ -208,7 +208,7 @@ divisions.
 
 ## THE RUN LOG (chronological — what was run when, so the order is legible)
 - **r1208–1210** — P1 dissolution census + dissolutions pulled from the origin paper (GR + C-D).
-- **r1226–1230** — do-not-assert census / completion-shield disciplines forged (Level-3).
+- **r1226–1230** — not claimed census / completion-shield disciplines forged (Level-3).
 - **r1228–1229** — su(3) connection-upgrade (topological→analytic, S⁵) — the SM/gauge sub-axis's tool, P1–P7.
 - **r1240–1244** — open-problems axis: false-opens struck, the seven `sec:frontiers` families fixed (C-O, P1–P7).
 - **r1259–1264** — local-cosmic boundary (P3/P8/P6) — GR generative fallout.

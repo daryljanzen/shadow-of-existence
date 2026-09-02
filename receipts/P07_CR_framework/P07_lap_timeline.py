@@ -6,7 +6,7 @@ advances Re(tau) by EXACTLY ZERO, so the collapse-to-expansion handoff takes no 
 all; (c) the intervals in Gyr at the corpus's own constants, with the 1/H0 scaling exposed --
 which surfaced that the 4.30e52 kg Nariai mass quoted in THE_PLAN carries the Planck H0, not the
 directly measured one CR fits at (3.94e52 kg there). [P7 thm:bead / A2.11]
-HELD do-not-assert: which landmark begins the OBSERVABLE cosmology is not settled here (P7
+HELD not claimed: which landmark begins the OBSERVABLE cosmology is not settled here (P7
 separates the geometric r=0 closure from the physical seeding at the seam); the imaginary
 interval is a contour length, not a duration, and says nothing about recurrence.
 STATUS: OK   ORIGIN: storyboard_receipts/lap_timeline.py, built r1631.

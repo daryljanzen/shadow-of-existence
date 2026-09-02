@@ -5,7 +5,7 @@
 is established for the substrate and the seam as a geometric object; the hypothesised phase structure at
 the seam relative to trajectories is the interpretive layer the conjugacy programme opens, its geometric
 base real and its trajectory/phase reading open.  ** Decide whether it is real structure or
-interpretation. ** [reach -- held do-not-assert, both ways.]"
+interpretation. ** [reach -- stated without being claimed, both ways.]"
 
 ** THE REGISTER'S CONSTRAINT IS OBEYED HERE: this receipt NARROWS and does not close, in either
 direction.  L-202 is PROTECTED-adjacent -- "it may narrow and it may not be closed in either direction
@@ -113,8 +113,8 @@ def main():
 
     # the register's constraint
     arc = open(os.path.join(ROOT, 'THE_LIVE_ARC.md'), encoding='utf-8', errors='replace').read()
-    check('L-202 is held do-not-assert BOTH WAYS, and this receipt decides neither',
-          'do-not-assert BOTH WAYS' in arc or 'do-not-assert both ways' in arc.lower())
+    check('L-202 is stated without being claimed BOTH WAYS, and this receipt decides neither',
+          'not claimed BOTH WAYS' in arc or 'not claimed both ways' in arc.lower())
 
     print()
     if FAILED:

@@ -2,7 +2,7 @@
 Additive only. The r309 base (corpus/, CORPUS_MAP, standing docs) is UNTOUCHED so the relay base
 stays clean while four nodes fork in parallel. All fork work lives under c17fork/.
 Working the A2/S3-as-solution-space-theorem reach (c19's, source-grounded in the three-node read).
-Register: stated for reversal; do-not-assert held both ways; grounded vs [reach] vs my-synthesis
+Register: stated for reversal; not claimed held both ways; grounded vs conjecture vs my-synthesis
 marked in NOTES. One node of four -- everything holds for the cold reads.
 
 - r309_c17fork_1: the SdS solution space carries an EXACT A2 root-system structure.
@@ -33,6 +33,6 @@ marked in NOTES. One node of four -- everything holds for the cold reads.
   point (Nariai) = a symmetric stratum where the algebroid connection vanishes -- discrete and
   continuous faces meet at Nariai. Discriminant matches fork_2 exactly. GENUINE UNCERTAINTY reached:
   whether P10's three distinct discrete involutions (root-perm / reassignment / signature-flip)
-  unify is P10's explicit do-not-assert AND the face-19 flavor-match spot -- handed to the cold
+  unify is P10's explicit not claimed AND the face-19 flavor-match spot -- handed to the cold
   reads + orchestrator, not forced. Receipt: scripts/a2_algebroid_reading.py.
 - (handoff) CONSOLIDATION_c17_for-c21.md added to fork_4: the reception step (3-node synthesis, pivot-vs-sigma adjudication resolving c20's C7-vs-5a, c17's owned sigma-lift-overreach correction) that was conversational and missing from the grind notes -- so the c17 contribution is complete for the four-node assimilation. Grind state unchanged (bite D last).

@@ -25,7 +25,7 @@ NO significant low-ell suppression.  The method is alive (not trivially flat): c
 IMPLICATION (LOOK-SIGNAL for the P12 cold read, NOT a verdict): the closed-S^3 *discreteness*
 (discrete mode spectrum, lowest physical mode L=2) does NOT, by ordinary SW at chi_lss~2.75, produce
 a low-ell power DEFICIT.  So P12's "low-multipole discreteness floor in the region of the observed
-deficit" is not supported AS A POWER DEFICIT by this computation.  CAVEATS (do-not-assert the CR word):
+deficit" is not supported AS A POWER DEFICIT by this computation.  CAVEATS (not claimed the CR word):
  (a) ordinary SW only -- the ISW is not included;
  (b) STANDARD-closed transfer, NOT the CR non-synchronous tau~=tau+chi transfer (closed-S^3 source on
      the FLAT distance projection, prop:flat) -- the actual unbuilt CR object (P12 sec:scope).
@@ -68,7 +68,7 @@ print("""
  as beta_max grows) -> NO significant low-ell suppression.  Overturns r516 (recursion artifact,
  "no suppression" for the wrong reason) and r519 (normalisation artifact, "strong suppression").
  LOOK-SIGNAL for P12: the discreteness does not give a low-ell power deficit by ordinary SW.
- CAVEATS (do-not-assert CR word): ordinary SW only (no ISW); standard-closed, not the CR
+ CAVEATS (not claimed CR word): ordinary SW only (no ISW); standard-closed, not the CR
  non-synchronous tau~=tau+chi transfer.  P12 cold read owed.
 """)
 print("="*64)

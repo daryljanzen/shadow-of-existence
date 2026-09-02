@@ -66,7 +66,7 @@ print("      two readings at different levels -- the same distinction P7 draws b
 print("      geometric closure and the physical seeding.")
 
 print()
-print("BOUND, do-not-assert:")
+print("BOUND, not claimed:")
 print("  * NOTHING here says the degeneracy CAUSES the turnover or vice versa. They are")
 print("    co-located because the member is Nariai, and that is the whole of the claim.")
 print("  * The 7.06 Gyr figure is the comoving crossing of the radius, at H0=73; it is not")

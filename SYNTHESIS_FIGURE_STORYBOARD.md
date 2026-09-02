@@ -265,7 +265,7 @@ precisely:
 - **C / CP / CPT — the live question, now with geometric input, not caged.** The `r=0` flip
   conjugates charge *and* flips handedness (matter-right ↔ antimatter-left). How that factors
   — pure `C`, or `CP`, or the full `γ⁵` structure — is the fermion-sector CPT question the
-  corpus rightly holds do-not-assert. What is new is that the geometry now hands it concrete
+  corpus rightly holds not claimed. What is new is that the geometry now hands it concrete
   data (the handedness is right = matter / left = antimatter, conjugated at `r=0`), so it is
   to be *worked on the merits*, not pre-labelled a neutral "`R`" to keep it apart from `C`.
 
@@ -752,7 +752,7 @@ a description, and a status.
   2. **Reframe the one §258 clause** "*charge-conjugation blind… so charge is a bend*" → "*`Q↦−Q` leaves it invariant: `C` present as this even-face degeneracy; the charge-**sign**, the odd datum the metric does not carry, is what is therefore field-level.*" Emphasis shift (blind→symmetric); downstream conclusion identical.
   3. **A bridge clause** tying §252 (`R`-odd mass) to §258 (`Q²`-even charge) as the odd/even parity-faces of the substrate's one discrete residue (the `ℤ₂×ℤ₂`/`D₆` §258 already carries) — not two unrelated facts.
   - **KEEP VERBATIM (do not overturn):** `C` antilinear / no substrate isometry; `PT` geometric, `C` field-level; no auto-`CPT`; skeleton-not-charge; the symmetric both-branches scope; the `r<0` progenitor reading. The proposition *derives from* these.
-  - **EXCLUDED — do-not-assert, NOT baked:** the `τ̃↔τ̄̃` "antiholomorphic reality involution gives `C` a geometric home" reach (the r1053 `charge_geometry.py` claim still in §8 WORKED form). It imported pair-production colouring / category error / R-P collision; the finding here needs **no** complex-time claim, resting solely on elementary parity of `f(r)`. Stays a do-not-assert reach in §8.
+  - **EXCLUDED — not claimed, NOT baked:** the `τ̃↔τ̄̃` "antiholomorphic reality involution gives `C` a geometric home" reach (the r1053 `charge_geometry.py` claim still in §8 WORKED form). It imported pair-production colouring / category error / R-P collision; the finding here needs **no** complex-time claim, resting solely on elementary parity of `f(r)`. Stays a not claimed reach in §8.
   - **★ VERIFICATION GATE (hard, before any character changes in P13):** one genuine cold-read receipt pinning the reflection labels — **`R=γ⁵`** (cut-normal, offset `r₀↦−r₀`) *grades* chirality and is §252's "`2M` `R`-odd" (mass **parameter**); **`P=γ¹γ²γ³`** (areal, signed-radius `r↦−r`) *flips* chirality and is the reflection under which the metric **term** `2M/r` is odd, `Q²/r²` even. The proposition must state each datum's parity on the **correct** reflection and must **not** silently assert `R=P`; the honest claim is "same discrete residue / one involution **family**, opposite parity-faces" (matches §258's `ℤ₂×ℤ₂`), reconciling §258's two usages of "`R`" (the `γ⁵` grading vs. the signed-radius matter/antimatter continuation). No refuter agents — a real receipt.
   - **Downstream · ★ DONE r1058** (both papers compile clean): (i) **P9 `range_paper.tex` `rem:charge`** — "charge-conjugation blind" → "carries charge conjugation as a *symmetry* rather than a blindness … the even-face degeneracy the companion reads as a boundary, paired there with the `R`-odd mass~`\cite{JanzenBoundary}`"; (ii) **`geometric_core_paper.tex` l654** — "the substrate charge-conjugation-blind" → "the substrate carrying it as a symmetry and not a datum — the metric even in the charge, its sign the bend of the cut". Backups `*.pre_P13CP`.
     - **Left untouched (already consistent):** the **P7 `CR_framework`** antimatter-branch passages (l763/766/774/977) already say "the charge field-level on both branches" and cite `JanzenBoundary`; no "blind-as-absence" framing to reconcile, so the proposition does not clash. Not edited (also keeps clear of the live P7-caption queue).
@@ -772,7 +772,7 @@ a description, and a status.
   - **(A)** old single-bundle → both-bundles three-thirds (blue right / red left / purple hinge). **(C)** rebuilt with the theorem's own continuations + circles/square landmarks, axis `Re τ̃`. **(E)** dropped "the lap flattened" (collides with C's flatten); appended slicing-roots-circles vs comoving-turnaround-square. **(F)** old both-wings → rebuilt unfurled cosmological bundle (the 2:1 Nariai spacing = A's 120/240 split); cites `cosmo_bundle.py`. **(D)** NO CHANGE (verified against `synthesis_figure.py`: worldlines coloured by species, synchronous space the conjugate dual opposite-sense — deliberate, kept).
   - **Body three-readings (l.757):** F description updated (old "signed areal radius vs τ̃" → "single privileged worldline strung out … lap drawn out along the imaginary axis").
   - **Compile fix:** the lengthened six-panel caption overflowed the caption package's single-line-check (`! Dimension too large`); added `singlelinecheck=false` to the existing `\captionsetup` (affects only short-caption centring — none here).
-  - **Consistency:** P7 body already reconciled with the A/B-removal (A/B = the two ruling *families*, sheet-to-ruling map held do-not-assert §frontiers) and with the charge-parity work (R=γ⁵, charge field-level on both branches, "not a geometric charge conjugation, antilinear, closes from the matter field" — consistent with P13 `rem:C-not-R`, P3 `sec:charge`). No body changes needed there.
+  - **Consistency:** P7 body already reconciled with the A/B-removal (A/B = the two ruling *families*, sheet-to-ruling map stated without being claimed §frontiers) and with the charge-parity work (R=γ⁵, charge field-level on both branches, "not a geometric charge conjugation, antilinear, closes from the matter field" — consistent with P13 `rem:C-not-R`, P3 `sec:charge`). No body changes needed there.
 
 *(New edits appended as we hold the storyboard against each artifact below.)*
 
@@ -867,7 +867,7 @@ No paper text is changed from here.
     `C`/`CP`/`CPT` to be factored against it. Same additive touch on P5. The `C`-glossary entry: keep
     the charge sentence, add the `τ̃↔τ̄̃`-is-geometric sentence. *(My r1052 "demote to rhyme" and my
     r1053 "leave it a live question" are both superseded: it is worked. The pair-production `C-rhyme`
-    and the `R/C`-`Aut(A₂)` unification remain separate do-not-assert reaches. Stated for reversal.)*
+    and the `R/C`-`Aut(A₂)` unification remain separate not claimed reaches. Stated for reversal.)*
   - **★★ RESOLVED r1060 — the `C`-vs-outer-`ℤ₂` knot is SETTLED (receipt `conjugation_parity.py` CHECK 6), baked as P13 `rem:C-not-R`.** The question "is charge conjugation the central/outer `ℤ₂` of `D₆` (the §3 instinct), or is only the even-face degeneracy geometric (P13 §258)?" has a definite answer, computed not narrated:
     - The **outer `ℤ₂` of `Aut(A₂)=D₆` is `R`** (the mass-reflection `2M↦−2M`), which **moves the horizon roots** (roots `↦ −`roots) and carries matter↔antimatter at the orientation level (rep `3↔3̄`, chirality `γ⁵`, mass-sign). It is real and linear.
     - **`Q↦−Q` fixes every horizon root** (`Q` absent from the mass cubic `r³−r+2M`; enters the charged quartic only as `Q²`), so it is **not** in `D₆`. It is an **independent `ℤ₂`** the charged cut adjoins: `D₆ → D₆×ℤ₂`, the even-face metric degeneracy of the `R`-even charge term — the geometric **shadow** of `C`.
@@ -1104,7 +1104,7 @@ No paper text is changed from here.
     `species = sign(r)` (never used — the maps are stated on the full object, not the slice) and does NOT
     make the pair/vertex a species claim. **What it *does* settle:** the **kinematic (FS/CPT) skeleton** of
     the conjecture is geometric and grounded — the wings ARE the `τ̃↔τ̄̃` conjugate pair, the neutral stem
-    IS the fixed axis. **What stays a rhyme (do-not-assert, → Phase E/P14):** that this geometric `R∘K` is
+    IS the fixed axis. **What stays a rhyme (not claimed, → Phase E/P14):** that this geometric `R∘K` is
     the field-theoretic `C` acting on P14's fermion zero-modes; the identification of a wing with a
     **specific charged particle**; charged pair-production as such. The charge is the one field-level
     factor, exactly as the enlarged residue now states.
@@ -1362,7 +1362,7 @@ and unfurled; the old F (one-blue-two-red, hand-drawn black photon, both wings) 
 
 > ⟶ CUT (the whole old (F) sentence, incl. *"which of the two substrate rulings $A$, $B$ each carries
 > is a genuine open question"* — the question itself is **kept**, but it now lives only in the body at
-> l.763, which already holds it do-not-assert; see the coherence note below).
+> l.763, which already holds it not claimed; see the coherence note below).
 >
 > ⟶ **NEW:** \textbf{(F)}~The cosmological bundle, strung out and unfurled: the single privileged
 > worldline of \textbf{(A)} and \textbf{(B)}---the antimatter black hole collapsing (red, $r<0$)
@@ -1392,7 +1392,7 @@ and unfurled; the old F (one-blue-two-red, hand-drawn black photon, both wings) 
    figure-dependent), **and** F's caption gains one clause noting the drawn branch is one of a
    conjugate pair, so the reader is not misled into thinking the drawn wing is the only one. Costs a
    clause, buys the honesty.
-2. **l.763's do-not-assert survives and is now the storyboard's `U-bundlemap`** (§9): "which physical
+2. **l.763's not claimed survives and is now the storyboard's `U-bundlemap`** (§9): "which physical
    congruence, if either, each wing carries---the map from the two distinct substrate rulings $A$, $B$
    to the two conjugate sheets---is *not* established here." This is a **convergence**: the corpus
    already holds open exactly what the storyboard reopened. Keep it; do not let the caption rewrite

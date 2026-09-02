@@ -47,6 +47,6 @@ This *is* the compounding: P7 is not the end of a chain receiving one accumulate
 - **P4↔P5: swap correct, already landed (r620).**
 - **No further reordering forced among P1–P6** by the DAG. The branching (two streams from P1) is a *structural reading* to carry in the map, not a reorder — a line cannot express it, but the numbering P1–P6 is dependency-consistent as a linearisation of the branch.
 - **Still open (the larger arc, held):** the P12→P14 internals; the border/capstone's placement is now settled (**p0/16** since r796, when the matter sector earned p15) — a separate extraction; this map covers P1–P7 only.
-- **The gravitational-entropy point** (`OPEN_PROBLEMS_MAP` r618) sites naturally in the **empirical stream at P4** (modern_parallax, the physics-first foundation): the observed arrow toward collapsed states is of a piece with the redshift-isotropy forcing — both are what the *observed world* forces. Candidate home confirmed as P4 or an adjacent frontier; do-not-assert depth until worked.
+- **The gravitational-entropy point** (`OPEN_PROBLEMS_MAP` r618) sites naturally in the **empirical stream at P4** (modern_parallax, the physics-first foundation): the observed arrow toward collapsed states is of a piece with the redshift-isotropy forcing — both are what the *observed world* forces. Candidate home confirmed as P4 or an adjacent frontier; not claimed depth until worked.
 
 *Extracted r623 at source; stated for reversal.*

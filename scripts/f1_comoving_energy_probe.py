@@ -52,5 +52,5 @@ print("""
     instability channel is nonlinear MODE-MODE resonant transfer outpacing the de Sitter
     DETUNING (every mode's frequency redshifts monotonically, detuning resonances). That
     is a frontier question of mathematical GR (future stability of de Sitter), NOT closed
-    by any simple exact energy here -- stays do-not-assert, both ways. [bite = outcome b]
+    by any simple exact energy here -- stays unclaimed, both ways. [bite = outcome b]
 """)

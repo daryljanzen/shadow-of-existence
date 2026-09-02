@@ -10,7 +10,7 @@
 - **The operative conclusion is sound and genuinely stronger.** Moving colour-closure off P11's group-theory
   wall onto P1/P7 (matter rides the real Lorentzian horn; su(3) across the signature seam; not a symmetry of
   the world the matter lives on) is a real advance, and it holds independent of any ontological verdict on the
-  Euclidean face. Frontier-1 closure follows; the universal stays do-not-assert.
+  Euclidean face. Frontier-1 closure follows; the universal stays unclaimed.
 
 ## What c20 caught (the over-reach — a real catch, integrated)
 §5 grounded the SO(6) face's "real-by-construction" status on "the forced conjugation around the hole." But the
@@ -22,7 +22,7 @@ conflation §2 was written to dissolve**, committed in §5 by the synthesizing n
 
 c20's resolution (two clean options): (a) ground the SO(6)-face reality on the *general* CR register (every
 construction real-by-construction) and drop the wrong-operation phrasing; or (b) leave the global-Wick SO(6)
-face's ontological status do-not-assert, since it is not load-bearing — colour-closure rests on the
+face's ontological status not claimed, since it is not load-bearing — colour-closure rests on the
 Lorentzian-matter argument, not on the SO(6) face's reality. Either way the wall holds.
 
 ## How it was integrated (r313)
@@ -32,7 +32,7 @@ Option (b), sharpened. The correction does not weaken the result — it **streng
 - **Strong Reading B** (co-equal substrate / complexified-object-as-substrate) stays **closed**, but on P7's
   one-world ontology — not on any conjugation mechanism.
 - **The fine SO(6)-face ontological status** (does the general register extend to a signature-change face) is
-  the genuinely-open audit point (c21's own flagged step 1), left **do-not-assert** — not over-closed.
+  the genuinely-open audit point (c21's own flagged step 1), left **not claimed** — not over-closed.
 §5 rewritten accordingly; the "conjugation around the hole" mechanism dropped from the SO(6) grounding (it
 names operation 3). The engine worked exactly as designed: the synthesizing node committed the §2 conflation in
 §5, and the node that established the op-3/4 distinction caught it.

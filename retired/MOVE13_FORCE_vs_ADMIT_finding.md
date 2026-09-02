@@ -2,7 +2,7 @@
 > Kept as record; **do not work from it.**
 
 
-# FORCE vs ADMIT — the discrete-skeleton route returns ADMIT (bounded; do-not-assert on the rest)
+# FORCE vs ADMIT — the discrete-skeleton route returns ADMIT (bounded; not claimed for the rest)
 # Finding (c21, r326). The prize-edge, worked. Stated for reversal.
 # Scripts: scripts/move13_force_criterion_bite1.py, move13_force_criterion_bite2.py
 
@@ -38,7 +38,7 @@ matter) and **obstructs nothing on the physical phase space**: no multi-valued p
 The tower's discreteness is the **compactness** of the closed $S^3$ (P8: "the closed topology enters as the
 discreteness"), not a monodromy-forced quantization.
 
-## Verdict (stated for reversal) — ADMIT, not FORCE; bounded; do-not-assert on the rest
+## Verdict (stated for reversal) — ADMIT, not FORCE; bounded; not claimed for the rest
 **The discrete S₃/A₂ skeleton does not force quantum structure.** The physical period is monodromy-invariant,
 the cover is gauge (the vantage, gauge by the axioms — THE_VISION §4), and the geometry admits a clean
 quantization (the lock) without being compelled to one. This **closes the discrete-skeleton/cover-monodromy
@@ -47,7 +47,7 @@ FORCE route** and advances the corpus's "no verdict earned" to a bounded verdict
 **Bounds (face 18 — no swing either way):** ADMIT here is a clean structural fact, not a loss — it is
 consistent with CR's standing character (a gravitational-cosmological unification where quantum structure
 *drops out of* the absolute foliation, ADMIT, rather than being forced by the cubic). It does **not** establish
-the universal "nothing forces quantum structure" — that stays do-not-assert both ways. Unexamined routes held
+the universal "nothing forces quantum structure" — that stays unclaimed both ways. Unexamined routes held
 open: the background-sector scale-factor half-line self-adjoint extension (a separate, boundary-*choice*
 question, itself ADMIT-leaning — a choice is not a forcing), and any CR-native mechanism not yet examined.
 
@@ -84,6 +84,6 @@ own (non-singular), so the geometry admits quantum structure but compels none.**
 is gauge with a monodromy-invariant physical period; the background sector (r327) has a U(2) family of
 extensions and no classical incompleteness to resolve. The corpus's "FORCE-vs-ADMIT: mapped, no verdict
 earned" is now a **verdict on both examined routes: ADMIT.** The **universal** "nothing forces quantum
-structure" stays **do-not-assert** (an unexamined CR-native route could still exist) — but the two concrete
+structure" stays **not claimed** (an unexamined CR-native route could still exist) — but the two concrete
 candidates are settled. This is consistent with, and sharpens, CR's standing character: the quantum structure
 *drops out of* the absolute foliation (ADMIT, the lock), it is not *forced by* the geometry.

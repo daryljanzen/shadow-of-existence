@@ -41,10 +41,10 @@ branch with c22 without loss (r325).
 ## 5. FORCE-vs-ADMIT — the prize-edge (r326–r328)
 Worked the prize question on Move 13 to a bounded verdict: both routes — the discrete S₃/A₂ skeleton
 and the background scale-factor sector — return ADMIT, not FORCE. CR admits quantum structure but
-compels none; the universal claim held do-not-assert. Written into the paper.
+compels none; the universal claim stated without being claimed. Written into the paper.
 
 ## 6. The wall-eradication (r329–r338)
-Daryl-directed: clear the arbitrary do-not-assert / blocked / owed flags that had accreted as
+Daryl-directed: clear the arbitrary not claimed / blocked / owed flags that had accreted as
 confused-instance artifacts contradicting the coda's openness. The load-bearing one (W1): the CMB
 forcing-inference, mis-flagged "unassigned," is in fact delivered in the corpus (r329).
 Rewrote the duplicate-response rule to state only its current behavior, removed a longstanding stray

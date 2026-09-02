@@ -700,11 +700,11 @@ uncertainties through the network's own sensitivity coefficients."*
 **`PROTECTED_OPEN`'s diagnosis is structural and it explains my whole day better than I did.**
 
 > *"**Every mechanical instrument this corpus has ever built polices OVER-CLAIMING.** The receipt gate, the
-> do-not-assert census, the striking bar, the ORIGIN drift guard, the bibliography check, the column lint —
+> not claimed census, the striking bar, the ORIGIN drift guard, the bibliography check, the column lint —
 > **all of them stop a node from saying too much.**"*
 > $$\textbf{NOTHING polices a NEGATIVE verdict on an open question.}$$
 > *"And the guard set is not merely silent there — **it LEANS.** `anti-flinch`, `negatives-are-the-map`,
-> `do-not-assert`, the `kill-list`, `verdict-bar-symmetric` — every one was forged against a node that
+> `not claimed`, the `kill-list`, `verdict-bar-symmetric` — every one was forged against a node that
 > softens, hedges or over-claims, **so every one of them pushes toward the negative.** A node running low on
 > context keeps the heuristics and loses the nuance, and what survives is a set of rules **all pointing the
 > same way**: toward closure. **That is the mechanism, and it is why this keeps happening on long sessions

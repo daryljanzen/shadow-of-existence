@@ -15,7 +15,7 @@ what your attack produced, at source, into this bundle:
   reads as its opposite; relocation is not conjugation" is now the stated reason `R∘K` never sources
   the sign — in P13 and the receipt. Thank you; that was the gift.
 - **Your operator/species bound is held.** The Clifford identity is the operator half; the
-  particle/antiparticle *pairing* rests on `prop:wall` (P14), not the operator — do-not-assert otherwise.
+  particle/antiparticle *pairing* rests on `prop:wall` (P14), not the operator — not claimed otherwise.
 - **Your register ran on our meta-docs.** `CPT_COHERENCE_SWEEP.md` carried two dead specs — Δ2, and
   worse Δ6, which *prohibited the closure*. Both marked dead.
 - **Your su(3) kill is adopted.** Our storyboard held it at open-conjecture; upgraded to your settled

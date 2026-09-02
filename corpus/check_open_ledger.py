@@ -39,7 +39,7 @@ LEDGER = os.path.join(HERE, 'open_ledger.txt')
 PAT = re.compile(
     r"(we claim no|is not claimed here|not claimed:|we do not claim|traced rather than computed"
     r"|recalled rather than derived|remains open|stays open|what remains open|at that weight"
-    r"|we state it at|as the hypothesis it is|do-not-assert"
+    r"|we state it at|as the hypothesis it is|not claimed"
     r"|is not settled|not yet|undelivered|unbuilt|is open\b)", re.I)
 
 

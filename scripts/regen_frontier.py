@@ -29,7 +29,7 @@ EST = {
     # unregistered.  Estimates are stated as unknown (0) rather than guessed: none of these
     # four has had a step scoped, and a fabricated estimate is worse than none. **
     'PO-17': ('the phase structure at the seam — real structure, or interpretation', 1, 1, 0, None,
-        'NARROWED BY RECEIPT: Z1 rules out both the matter/antimatter labelling and the continuous-parameter readings; Z2 settles the OBJECT level (K is real structure of the plate, the photon congruence its fixed set). The live question is strictly: DOES A MASSIVE TRAJECTORY CARRY A PHASE. Held do-not-assert both ways'),
+        'NARROWED BY RECEIPT: Z1 rules out both the matter/antimatter labelling and the continuous-parameter readings; Z2 settles the OBJECT level (K is real structure of the plate, the photon congruence its fixed set). The live question is strictly: DOES A MASSIVE TRAJECTORY CARRY A PHASE. Held not claimed both ways'),
     'PO-18': ('the maximal-symmetry ledger — ENUMERATE what the substrate forces', 1, 1, 0, None,
         'THE LEDGER IS RUN: CONSTANT_LEDGER_receipt.md reads Lambda as the sole scale, c and G as unit gauges, hbar locked by the horizons thermal state — the gravitational-quantum sector spends ZERO free dimensionless constants; U3 answers the second half. What is open: it is NOT BANKED into a paper, and the matter sectors count waits on the matter build'),
     'PO-19': ('the cube-root-two ratio between the two turnings', 1, 1, 0, None,
@@ -80,7 +80,7 @@ LASTFIND = ("r3103: **PO-21 answered — the geometry lifts the obstruction but 
 # are declared unmeasured rather than dressed as measured. ***
 KIND = {'PO-13': 'READ', 'PO-14': 'BUILD', 'PO-15': 'READ', 'PO-16': 'READ',
         # ** brought in r3095 from p0's frontiers and the field ledgers, which carried them
-        # unregistered.  PO-17 is a DECISION held do-not-assert both ways; PO-18 an
+        # unregistered.  PO-17 is a DECISION stated without being claimed both ways; PO-18 an
         # ENUMERATION; PO-19 and PO-20 are unattempted questions, so READ is the wrong kind
         # for them and WORK is used. **
         'PO-17': 'READ', 'PO-18': 'READ', 'PO-19': 'WORK', 'PO-20': 'WORK'}

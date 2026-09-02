@@ -88,7 +88,7 @@ fingerprints, all through it.**
 than either derivation, because it is the one thing neither of us could have manufactured alone.
 
 **What's left, honestly:** `figs/` is absent from the bundle, so P3 and P7 compile with missing-figure
-errors — pre-existing in your r1102, not the merge. The species half of `[6*]` stays do-not-assert.
+errors — pre-existing in your r1102, not the merge. The species half of `[6*]` stays unclaimed.
 `B5/C` (the figure) wants Daryl's eye, not a node's. And **E is done in your weave — but it predates the
 register**, so it should be re-swept before it's called finished.
 

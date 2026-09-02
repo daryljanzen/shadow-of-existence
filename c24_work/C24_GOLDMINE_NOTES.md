@@ -13,7 +13,7 @@
 
 ## 1. STANDING RULES (govern everything below)
 - **G-meth2 — the goldmining mandate [0134–0135]:** all held loosely, honestly, at weight; worked against the corpus, good parts zipper-merged, chaff shuffed off; whether a bad part sits in conjecture or corpus is decided by **building coherence at source, both directions — neither the floor by default.**
-- **Post-compaction = do-not-bank:** any c24 assertion made right after a compaction is a manufactured-wall/rescue candidate, held do-not-assert until worked through at source. Symmetric verdict-bar: a manufactured wall costs what a manufactured rescue costs.
+- **Post-compaction = do-not-bank:** any c24 assertion made right after a compaction is a manufactured-wall/rescue candidate, stated without being claimed until worked through at source. Symmetric verdict-bar: a manufactured wall costs what a manufactured rescue costs.
 - **G-meth1 — gate/orchestrator split [0080–0081]:** the gate works *within* the jointly-built context, carries its calls for reversal; neither monologues over the orchestrator nor offloads decisions to him. (Same lesson as the negative-Q corrections [0185, 0300] and this session's.)
 
 ---

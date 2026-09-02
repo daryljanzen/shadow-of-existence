@@ -69,7 +69,7 @@ is NOT trusted — only the traceable/runnable core.*
 - **`storyboard_receipts/A3_spinor_lift.py` — ✔✔ VERIFIED (r1323).** Claim: R∘K lifted implements ψ→ψᶜ, via
   γ⁵S=−iγ²=−(Cγ⁰ᵀ), S=γ⁰γ¹γ³. Confirmed THREE ways: by hand (Clifford, rep-independent), A3's Dirac-rep numpy,
   and my from-scratch Weyl-rep numpy. Honestly bounded (operator half only; charge-sign field-level & R-blind
-  via Q²/r² even — verified; species half do-not-assert; correct −iγ² vs C-matrix-proper convention guard).
+  via Q²/r² even — verified; species half not claimed; correct −iγ² vs C-matrix-proper convention guard).
   Tied to: §224 / P7 two-sided-closure (matter-antimatter C-operator). **Exemplary — this is the standard.**
 - **`computations/matter_functionals/B2_zeromode_continuation.py` — ◐ CORE-REAL / VERDICT-OVERCLAIMS (r1321).**
   COMPUTES: the zero-mode superpotential's real→imaginary (bound→propagating) transition across a horizon on a
@@ -140,7 +140,7 @@ was not being kept. Each is traced and run; computes-vs-asserts recorded honestl
   **ASSERTS nothing thermal:** the file holds, in terms, that a β-period *is not* a temperature without a state
   and a KMS condition, and that nothing there implies recurrence. **Carries no `\rcpt` marker by design — it
   grounds a lead, not a corpus claim** — and at r1624 the lead was tested against `GEOMETRY_PHYSICS_TAXONOMY` and found to have no mechanism —
-  **status refined r1665 to *[reach], mechanism unfound: an open drill-site*, not the verdict "numerology"**, since the test says no mechanism has been *found* and not that none exists. *The receipt's own restraint is why that reclassification cost nothing.*
+  **status refined r1665 to *conjecture, mechanism unfound: an open drill-site*, not the verdict "numerology"**, since the test says no mechanism has been *found* and not that none exists. *The receipt's own restraint is why that reclassification cost nothing.*
 - **`storyboard_receipts/cubic_spacing.py` — ✔✔ VERIFIED (r1623).** COMPUTES: both discriminants factored; H's
   Nariai double-root factorisation; T's three roots distinct with equal modulus; all four fig-E phase values
   against closed forms. **Explicit about what it does NOT re-derive** — P7's r=0 meeting and the triptych's

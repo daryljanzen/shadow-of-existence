@@ -4,11 +4,11 @@
 
 # THE BAKEATHON PLAN — the dependency-ordered spine (c31, Daryl-directed)
 
-### The master sequence for baking the 3.1 resolution + the p15 synthesis + reciprocal propagation. Threads the existing lists (`THE_ARC_PLAN`, `OPEN_PROBLEMS_MAP` runway, the flagged-leads list). **Every step binds to the strike-bar** (baked = body + intro + abstract + framework synthesis + meta) **and to r694 weight** (grounded floor asserted, the SM identification the obsession, do-not-assert). Stated for reversal.
+### The master sequence for baking the 3.1 resolution + the p15 synthesis + reciprocal propagation. Threads the existing lists (`THE_ARC_PLAN`, `OPEN_PROBLEMS_MAP` runway, the flagged-leads list). **Every step binds to the strike-bar** (baked = body + intro + abstract + framework synthesis + meta) **and to r694 weight** (grounded floor asserted, the SM identification the obsession, not claimed). Stated for reversal.
 
 ## The target — the p15 thesis (the conjecture at earned weight)
 
-**The Standard Model is not haphazard: it is describable as a *maximally-symmetric symmetry-breaking* (D₆=Aut(A₂), the skew-hexagon/3⊕3̄) of a *maximally-symmetric substrate* (dS₅, SO(5,1)), carried within a *maximally-symmetric evolving 3-space* (the cosh-S³ closed cosmology, SO(4)).** Three registers of maximal symmetry, one principle. **Grounded floor (assert):** dS₅ maximal symmetry (P7 germ); the cosh-S³ (P13); the D₆/A₂ breaking (P3 tour, P12); the forced-to-three count (the triple-angle at the gnomonic scale); gauged-chirality-with-global-flavour = the SM's own arrangement following from which factor is an isometry (P12 §131). **The obsession (do-not-assert, r694):** that this A₂ *is* the SM's; that the descent yields three physical generations; that the taxonomy meets su(3) for a reason. p15 poses this as a conjecture it has earned the right to pose.
+**The Standard Model is not haphazard: it is describable as a *maximally-symmetric symmetry-breaking* (D₆=Aut(A₂), the skew-hexagon/3⊕3̄) of a *maximally-symmetric substrate* (dS₅, SO(5,1)), carried within a *maximally-symmetric evolving 3-space* (the cosh-S³ closed cosmology, SO(4)).** Three registers of maximal symmetry, one principle. **Grounded floor (assert):** dS₅ maximal symmetry (P7 germ); the cosh-S³ (P13); the D₆/A₂ breaking (P3 tour, P12); the forced-to-three count (the triple-angle at the gnomonic scale); gauged-chirality-with-global-flavour = the SM's own arrangement following from which factor is an isometry (P12 §131). **The obsession (not claimed, r694):** that this A₂ *is* the SM's; that the descent yields three physical generations; that the taxonomy meets su(3) for a reason. p15 poses this as a conjecture it has earned the right to pose.
 
 ## The shape — one loop, baked in dependency order
 
@@ -21,7 +21,7 @@
 Bake the full 3.1 resolution into P3: **lead with the hinge-and-door ontology** (the real hinge at 2α; the swing as the one dial; swing≠sweep); the **360° tour** (the 12-fold skeleton; the A₂ hexad as the skew hexagon; the pinned hinges at 2α/±√3α; the D₆ tiling with 0–90 the physical cell); **then derive** w, u, 3w as the door's shadows. Fold in the two figures with captions. Homes: P3 body + abstract + intro; figures. Source: `THE_ANGULAR_TOUR_3.1.md`, `P3_SWING_ONTOLOGY_hinge-and-door.md` (§§1–11). **First, because P3 is the geometric source everything downstream cites.**
 
 ## PHASE 2 — the P14 ↔ p0/15 axis  [the crux, where the thesis lives]
-The heart of the [reach]. **P14** (matter boundary): sharpen the A₂-hexad/generation/chirality material to point up to p15. **p0/15** becomes the **synthesis pole** — gather every version of the symmetry-and-symmetry-breaking story (P12 rep-theory proof, P5 deck, P3 discrete geometry, the generation conjecture, the maximal-symmetry root) and **state the p15 thesis at earned weight**, with P14→p15 and p15→each. This is where "everything bears on P14, which comes back to p15 for the final lap from the germ." Homes: P14 (§residue/§open/§meaning + abstract), p0/15 (the synthesis, its abstract). r694 weight throughout.
+The heart of the conjecture. **P14** (matter boundary): sharpen the A₂-hexad/generation/chirality material to point up to p15. **p0/15** becomes the **synthesis pole** — gather every version of the symmetry-and-symmetry-breaking story (P12 rep-theory proof, P5 deck, P3 discrete geometry, the generation conjecture, the maximal-symmetry root) and **state the p15 thesis at earned weight**, with P14→p15 and p15→each. This is where "everything bears on P14, which comes back to p15 for the final lap from the germ." Homes: P14 (§residue/§open/§meaning + abstract), p0/15 (the synthesis, its abstract). r694 weight throughout.
 
 ## PHASE 3 — reciprocal propagation, greatest-impact-first
 Once P3 (source) + p0/15 (synthesis) hold it, give every corner the **two-way** cross-ref (home→p15, p15→home):
@@ -49,7 +49,7 @@ Weave the remaining Stage-3 items into the propagation (not a separate pass):
 
 ## Guardrails (bind every phase)
 - **Strike-bar:** a result is struck only when fully propagated (body + intro + abstract + framework synthesis + meta).
-- **r694 weight:** grounded floor asserted; the SM identification the obsession, do-not-assert; corpus claims overturnable, drill hardest at disagreement.
+- **r694 weight:** grounded floor asserted; the SM identification the obsession, not claimed; corpus claims overturnable, drill hardest at disagreement.
 - **Reciprocal, not jammed:** two-way cross-refs where it genuinely bears; decline at source where it doesn't.
 - **Dependency order:** P3 (source) before its citations; p0/15 synthesis gathers, never precedes, its parts.
 

@@ -37,7 +37,7 @@ bounded, not a sitting computation. Stated for reversal.
   The non-compactness escape is closed for the isometry route. What stays genuinely open (P14
   §open): (1) building *any* fermion sector (a major construction, by a non-isometry route);
   (2) whether the empirical Standard Model motivates doing so on the compact face (= G1,
-  exploratory, do-not-assert). "That is where the live work, if any, lies."
+  exploratory, not claimed). "That is where the live work, if any, lies."
 
 ## The finding
 The matter **dynamics** (A1/A2/A4) is advanced but **not resolved** — the confined case built
@@ -47,7 +47,7 @@ and geometrically walled. This confirms P14's stated conclusion from the inside:
 gravitational–cosmological unification, not a geometric unification of matter.** Cluster A's
 the dynamics facets are advanced (none resolved — the general dynamics (A1) and the wall working-out (A2) stay open),
 the content walled. A5 is a bounded research programme, not a computation to seat here; its
-remainder is exploratory (G1, do-not-assert).
+remainder is exploratory (G1, not claimed).
 
 ## Sequencing forward (gate call, stated for reversal)
 With Cluster A's buildable dynamics advanced (none resolved) and the empirical cluster paused (r552,

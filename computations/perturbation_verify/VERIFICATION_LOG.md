@@ -51,7 +51,7 @@ SCALE: banked in P9 (sec687-691), built upon, not re-opened.
   is qualitatively wrong at low ℓ and is replaced by this.
 - **Quadrupole value [E]:** Φ^25_2(χ_lss=2.75) = 6.490e-2 by TWO independent methods (Gegenbauer = ODE-from-
   origin, 6 digits). The stable downward recursion is 0.4% low here.
-- **Low-ℓ C_ℓ shape [R, do-not-assert]:** no single hyperspherical-Bessel method is trustworthy across all
+- **Low-ℓ C_ℓ shape [R, not claimed]:** no single hyperspherical-Bessel method is trustworthy across all
   (β,ℓ) at χ_lss≈2.75 (near antipode): recursion few-% off at low ℓ; Gegenbauer precision-loses at high β;
   ODE-from-origin underflows at high ℓ. First-pass closed/flat quadrupole ratio ≈0.99 sits WITHIN the method
   error → the suppression question (k_min argument expects a deficit) is UNRESOLVED, not "no suppression".
@@ -69,9 +69,9 @@ SCALE: banked in P9 (sec687-691), built upon, not re-opened.
 - **[E] SUPPRESSION PRESENT (direction + rough magnitude):** ℓ(ℓ+1)C_ℓ rises monotonically ℓ=2→30,
   quadrupole at ~0.39 of the ℓ=25–30 level, β_max-converged (300/600/900 stable). The standard
   closed-universe low-ℓ suppression (k_min argument), in the region of the observed deficit.
-  **Overturns the r516 "≈no suppression" look-signal — that was the recursion artifact** (the do-not-assert
+  **Overturns the r516 "≈no suppression" look-signal — that was the recursion artifact** (the not claimed
   hold is exactly what kept it out of the corpus).
-- **[R] DEPTH/SHAPE do-not-assert:** ℓ(ℓ+1)C_ℓ has not cleanly plateaued by ℓ=30 → depth is
+- **[R] DEPTH/SHAPE not claimed:** ℓ(ℓ+1)C_ℓ has not cleanly plateaued by ℓ=30 → depth is
   normalisation-dependent; the closed-universe scale-invariant weight (w=1/β vs curvature-corrected HZ)
   and near-antipode geometry need care before a pinned shape.
 - **OPEN OBJECT:** standard closed transfer, NOT the CR non-synchronous τ̃=τ+χ transfer — a stepping
@@ -89,7 +89,7 @@ A flat-limit machinery check (the discipline applied late) overturns the r519 "s
   radial functions (correct AS FUNCTIONS — exact mpmath, the recursion-vs-exact finding STANDS) carry a
   β-dependent normalisation that is WRONG for the C_ℓ sum. Summing (1/β)Φ² mis-weights the spectrum.
 - **Status:** the r519 "[E] suppression present, quadrupole ~0.39 of plateau" is **DOWNGRADED to
-  do-not-assert** — the C_ℓ shape (incl. the suppression direction) is not trustworthy until the C_ℓ
+  not claimed** — the C_ℓ shape (incl. the suppression direction) is not trustworthy until the C_ℓ
   assembly reduces correctly to flat in the flat limit. What STANDS: (1) the method-accuracy finding —
   the downward recursion was wrong up to 28%, mpmath Gegenbauer is exact for the radial functions;
   (2) the exact cutoff ℓ≤L (degree-L feeds the quadrupole as lowest mode).
@@ -131,7 +131,7 @@ Resolves the apparent r521 "no suppression" as a wrong-object artifact. The deco
   leaving ℓ<8 empty. Standard-closed (r521) instead maps degree-L→ℓ≤L and fills ℓ=2 → flat. The whole
   difference is flat-vs-curved PROJECTION.
 - **Deficit LOCATION (ℓ≈8) is geometric** (set by k_2·D_C), robust to the weight; exact shape depends on it.
-- **CAVEATS (do-not-assert the final CR word):** (a) leading-order ordinary SW only (no ISW); (b) the discrete
+- **CAVEATS (not claimed the final CR word):** (a) leading-order ordinary SW only (no ISW); (b) the discrete
   measure w_L convention to be cross-checked vs a first-principles closed-S³ primordial normalisation;
   (c) fresh-node P12 cold read owed before corpus enrichment.
 
@@ -154,7 +154,7 @@ background; scalar dynamics taken standard — confirm vs P12); large-scale T(k)
   because the ISW is sourced by the same discrete spectrum (no modes below k_2). Net: CR sits a factor ~3
   BELOW LCDM at ℓ=2-4 — a genuine low-multipole deficit, in the direction of the observed anomaly. The one
   effect that could have killed the deficit does not. **Make-or-break ISW test PASSED.**
-- **Remaining (do-not-assert the corpus claim):** the discrete measure w_L convention (sets exact depth, not
+- **Remaining (not claimed the corpus claim):** the discrete measure w_L convention (sets exact depth, not
   survival); confirm scalar dynamics/g(z) vs P12; fresh-node P12 cold read.
 
 ---
@@ -179,7 +179,7 @@ it runs -- progress is never withheld from the programme.
   over-prediction rather than relieving it.
 - **STATUS:** with Doppler already non-differentiating (verify_doppler_lowell.py), TWO of the three
   confront_lowell_data.py differentiator candidates are closed. The smooth ell<~7 deficit is FIRM and
-  the octopole is the falsification edge. RESIDUAL (do-not-assert): candidate (iii), the full Boltzmann
+  the octopole is the falsification edge. RESIDUAL (not claimed): candidate (iii), the full Boltzmann
   solve / exact non-synchronous transfer, ~10-20% on the transfer, not expected to lift the factor ~4-5.
 - **OBJECT/CAVEATS:** flat-j_ell projection of the discrete closed-S^3 source (the CR object, prop:flat);
   bare ordinary SW for the measure test (the ISW/radiative depth is in verify_lowell_full_radiative.py
@@ -254,7 +254,7 @@ common), so CAMB's exact Δ_ℓ(k) (`get_cmb_transfer_data`) IS CR's transfer; o
 - **WHY the old estimate was too deep:** it assumed CR loses the late-ISW boost ("no low-k modes"). Wrong
   — the late ISW at ℓ=2 is sourced at k~few×10⁻³ (late times/small distances), ABOVE the floor k_2=5.6e-4,
   so CR RETAINS it. The exact transfer carries the ISW; the SW-analytic approximation dropped it.
-- **CONSEQUENCE (do-not-assert; revises the corpus, held for Daryl):** CR predicts a SMOOTH modest low-ℓ
+- **CONSEQUENCE (not claimed; revises the corpus, held for Daryl):** CR predicts a SMOOTH modest low-ℓ
   deficit (~0.4–0.5 at ℓ=2–3), not a sharp quadrupole dip. The earlier "striking quadrupole match" (0.22
   vs observed ~0.2) does NOT survive — CR sits ABOVE the observed quadrupole; and the octopole
   over-suppression SOFTENS (0.41 vs old 0.20). Net: a mild, cosmic-variance-consistent deficit, neither a

@@ -92,7 +92,7 @@ print(f"""
    problem of time IS the base-dependence of the substrate's symmetric-space metric.
 
  SO: the algebroid so(5,1)⋉C is a BUILT OBJECT on the symmetry-reducible sector -- the vision's
-   central [reach] holds there, and it is not a coincidence of pattern but the symmetric-space
+   central conjecture holds there, and it is not a coincidence of pattern but the symmetric-space
    structure of the substrate.
 
  HONEST SCOPE (what this does NOT show): so(5,1) is finite (15-dim); the full HDA is

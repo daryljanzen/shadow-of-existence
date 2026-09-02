@@ -8,7 +8,7 @@ The lineage is self-correcting (c20 + c17 independently caught the op-3/4 confla
 maximal-symmetry route + existence-ontology grounding; c21 closed that at the 5D-Trope source). Found no
 over-reach in the result itself — every humble qualifier (colour closed for the physical-matter sector on
 P1/P7; Reading-B-co-equal closed within CR's ontology; SO(6) face real-by-construction not a co-equal existent;
-ontological not structural; universal do-not-assert) is consistently present. A manufactured rescue would have
+ontological not structural; universal not claimed) is consistently present. A manufactured rescue would have
 dropped them (closed the universal, claimed structural foreclosure, spawned a paper); the plan does the opposite.
 That consistency is the tell it is honest.
 
@@ -27,14 +27,14 @@ That consistency is the tell it is honest.
 1. **P11 abstract — the non-compactness-escape closure must wear its ontological scope on its face.** Closed for
    the geometric-isometry route, within CR's one-world ontology (SO(6)/SO(5,1) are co-equal real forms of SO(6,ℂ);
    only the one-world commitment breaks the symmetry). If "non-compactness escape closed" appears without "for the
-   geometric-isometry route, within CR's one-world ontology, universal do-not-assert" in the same breath, it reads
+   geometric-isometry route, within CR's one-world ontology, universal not claimed" in the same breath, it reads
    as structural foreclosure. The qualifier belongs in the sentence, not a footnote.
-2. **"the surviving open frontier is empirical coherence alone" must not eclipse the universal-do-not-assert.**
+2. **"the surviving open frontier is empirical coherence alone" must not eclipse the universal-not claimed.**
    Empirical coherence is the matter-side work frontier; the universal ("colour-from-geometry foreclosed
    absolutely") is separately un-asserted. "Alone" is fine for the work-frontier, not for the universal.
 3. **P4 — the cubic monodromy distills as the cover/deck relation (ξ-monodromy = σ on the 3-sheeted cover), NOT
    as operation-fusion.** The P4 edit must not let "ξ-monodromy = σ" drift into "ξ and σ are one operation"
-   (fork_4 do-not-assert on operation-unification). And keep the discipline note: the SdS solution-space A₂ ≠
+   (fork_4 not claimed for operation-unification). And keep the discipline note: the SdS solution-space A₂ ≠
    su(3)'s Cartan–Weyl A₂. [c21 verified r318: P4 states the *cubic* monodromy = σ (ξ kept distinct); the A₂≠su(3)
    discipline note was added (rem:a2-distinct).]
 

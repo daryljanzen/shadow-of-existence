@@ -94,5 +94,5 @@ print(" root A2 / su(3)'s Cartan-Weyl is A2), but sigma is real-form bookkeeping
 print(" real-substrate horizon roots in the description groupoid; it is NOT the Wick")
 print(" bridge and does NOT carry the discrete A2 skeleton to the Wick-face su(3).")
 print(" => closes colour-from-geometry-via-the-sigma-lift AS STRUCTURE; core + A2 gem intact.")
-print(" => the UNIVERSAL 'colour-from-geometry foreclosed' stays do-not-assert (face 18).")
+print(" => the UNIVERSAL 'colour-from-geometry foreclosed' stays unclaimed (face 18).")
 print("="*78)

@@ -56,7 +56,7 @@ have killed** (below).
 - **P13 `rem:C-linear-face`** *(new)*: **species and charge are one binary**; neutrality is the weld's
   degenerate case, *not an exception*. `R` and `C` agree on every label they both carry; differ **only in
   character**. `rem:C-not-R` survives **by linearity** while concealing that **`R` is `C`'s linear face**.
-  **What is corrected is a reason, not a result.** Factorisation → A7, do-not-assert.
+  **What is corrected is a reason, not a result.** Factorisation → A7, not claimed.
 - **Restraint:** **P5 and P9 needed nothing** — both already scoped to *"the term"* / *"the metric"* and
   both already locate the sign in the potential. The plan named four targets; the source said two.
 

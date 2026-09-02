@@ -14,7 +14,7 @@
 CR's dS₅ substrate generates the **gravitational** solution space by symmetry-breaking cuts (the positive programme). The Standard Model — colour SU(3), the full gauge group, and chiral matter — does **not** arise as a continuous substrate isometry: a boundary established three independent ways (rank/cut, involution, index), grounded in the established geometric-unification no-go literature, with one **precarious escape** (dS non-compactness) and one **genuinely open frontier** (empirical coherence) honestly named. The result sharpens CR's actual claim: **gravitational-cosmological unification, not geometric unification of matter.**
 
 ## Register (non-negotiable, baked into the paper)
-**do-not-assert on the universal, both ways.** NOT "SM-from-geometry foreclosed" (the wall is bounded to the *geometric-isometry* route; the non-compactness escape and the empirical-coherence ground stay open). NOT "CR forces/produces the SM" (every geometric route examined is walled). A precise boundary map — neither a foreclosure nor a positive claim.
+**not claimed for the universal, both ways.** NOT "SM-from-geometry foreclosed" (the wall is bounded to the *geometric-isometry* route; the non-compactness escape and the empirical-coherence ground stay open). NOT "CR forces/produces the SM" (every geometric route examined is walled). A precise boundary map — neither a foreclosure nor a positive claim.
 
 ## Section skeleton (claim → source to verify at draft)
 - **§1 The question.** Can colour/the SM arise from the dS₅ substrate's isometry the way the gravitational solutions arise from its cuts? [SILVER_PLATTER §1; positive programme: JanzenOperator, JanzenRange]
@@ -29,7 +29,7 @@ CR's dS₅ substrate generates the **gravitational** solution space by symmetry-
   - Escapes are **non-geometric** (larger-than-isometry G, fluxes, SUSY/Calabi–Yau heterotic) — each abandons the geometric premise. [Witten 1981]
   - The one precarious escape: dS **non-compactness** — but a compact slice (S⁵-type) carrying the SU(3)-acted modes bites regardless; non-compact extensions (Hochs–Mathai) need proper/cocompact action, unworked; clean-or-sick is CR-native-open. [r305; Hochs–Mathai]
   - Gating fact: CR has **no fermion sector built** (matter is the classical slicing-curve bend ρ=m′/4πr², not a spinor field) — no Dirac index to evaluate yet; chirality gated on a major unbuilt construction (Move B′/C′). [r304/r305]
-- **§5 What stays open (the do-not-assert boundary).** The empirical-coherence ground (the SM as a century-constrained shadow — whether it motivates taking the compact/Wick face as physical and building a fermion sector there) is the genuine open frontier (r279), not foreclosed; the non-compactness escape precarious, unworked. [SILVER_PLATTER §4]
+- **§5 What stays open (the not claimed boundary).** The empirical-coherence ground (the SM as a century-constrained shadow — whether it motivates taking the compact/Wick face as physical and building a fermion sector there) is the genuine open frontier (r279), not foreclosed; the non-compactness escape precarious, unworked. [SILVER_PLATTER §4]
 - **§6 What it means for the programme.** Sharpens CR's claim (gravitational-cosmological unification, not geometric unification of matter); the boundary is a contribution — it maps the wall precisely, grounds it in the established no-go literature where the corpus didn't reach, and spares the programme and others a walled road.
 
 ## References (the literature the corpus doesn't yet carry)

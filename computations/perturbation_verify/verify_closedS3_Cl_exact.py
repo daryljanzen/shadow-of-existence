@@ -20,7 +20,7 @@ A degree-L mode (beta=L+1) feeds multipoles ell<=L; L>=2 physical.
 """
 import mpmath as mp, numpy as np
 mp.mp.dps = 90
-print("!!! CORRECTION (r520): the 'suppression present' reading below is WALKED BACK / do-not-assert.")
+print("!!! CORRECTION (r520): the 'suppression present' reading below is WALKED BACK / not claimed.")
 print("!!! The C_ell ASSEMBLY normalisation is wrong (closure sum-rule != 1; fails flat-limit reduction).")
 print("!!! What stands: the radial functions are exact (mpmath), and the recursion was wrong up to 28%.")
 print("!!! See VERIFICATION_LOG.md (r520) and CORPUS_MAP r520. Open: correct closed SW C_ell formula.\n")
@@ -73,11 +73,11 @@ print("""
    ~0.4 of the ell=25-30 level, beta_max-converged.  This is the standard closed-universe
    low-ell suppression (the k_min argument), in the region of the observed large-angle
    deficit.  It OVERTURNS the r516 "no suppression" look-signal, which was the recursion error.
- * DEPTH/SHAPE [R, do-not-assert]: ell(ell+1)C_ell has not cleanly plateaued by ell=30, so
+ * DEPTH/SHAPE [R, not claimed]: ell(ell+1)C_ell has not cleanly plateaued by ell=30, so
    the exact suppression DEPTH is normalisation-dependent; the scale-invariant weight in a
    closed universe (w=1/beta vs the curvature-corrected HZ) and the near-antipode geometry
    need care before a pinned shape.
- * OPEN OBJECT [do-not-assert]: this is the STANDARD closed transfer, NOT the CR
+ * OPEN OBJECT [not claimed]: this is the STANDARD closed transfer, NOT the CR
    non-synchronous tau~=tau+chi transfer (closed-S^3 source on the FLAT distance projection,
    prop:flat) -- a stepping stone confirming the mechanism, not the CR prediction.
 [STATUS] method gap closed; suppression sound (direction); shape + non-synchronous transfer

@@ -39,7 +39,7 @@ The introduction/map for the book on cosmiCave. Unlike the papers, this page is 
 
 The corpus is a **dipole**, not a line. The dependency matrix (below) shows it as data: of the fifteen documents, exactly two — **P7 (the framework)** and **p0 (the geometric core)** — are bidirectionally coupled to the *entire* corpus (full row *and* full column). Everything feeds P7 and P7 feeds everything; p0 is built from every paper and points back to every paper. The other fourteen cluster and gap; these two touch all.
 
-This is (held at **[reach]**, the centre-vs-edge musing) likely *why* the corpus shape resisted pinning for so long: a one-hub corpus is a tree with a root that sits on a line; a **two-hub** corpus has no linear slot — it has a *between*, the fourteen papers the field stretched between the two synthesis poles. p0 "wouldn't take a number" and kept wanting to be "the border" for exactly this reason. The intro is where that dipole belongs — as the frame, not a spine slot.
+This is (held at **conjecture**, the centre-vs-edge musing) likely *why* the corpus shape resisted pinning for so long: a one-hub corpus is a tree with a root that sits on a line; a **two-hub** corpus has no linear slot — it has a *between*, the fourteen papers the field stretched between the two synthesis poles. p0 "wouldn't take a number" and kept wanting to be "the border" for exactly this reason. The intro is where that dipole belongs — as the frame, not a spine slot.
 
 ## The matrix as the reader's entry-point map (Daryl, r646)
 
@@ -49,7 +49,7 @@ The dependency matrix is not only the corpus's self-portrait — it is a **reade
 - **The synthetic path — for the curious.** The reader who wants the *whole* enters at the two synthesis poles of the dipole: **p0/15** (`geometric_core`, the geometric-ontological core — the one intrinsically-real maximally-symmetric object everything is a reading of) and **P7** (`CR_framework`, the framework, where the fourteen converge). These are the two full-row/full-column nodes: enter either and the whole corpus is one step away.
 - **The load-bearing waypoint — under both paths.** **P3** (`SdS-slicing-curve`, the constructive home) is the matrix's most-drawn-on hub (the largest column sum): whichever door a reader takes, the road runs through P3, where the substrate's geometry is actually built. A sizeable, load-bearing entry in its own right.
 
-So the intro hands each reader their door straight off the matrix — sceptic → P1/P4, curious → p0/P7, everyone through P3 — with the interactive `assets/dependency_matrix.html` the showpiece that makes the two paths and the hub visible at a glance. This **actively uses the matrix** as the reader's orientation, not as decoration. *(Grounded in the matrix data: P1↔P4 the ◇ pair; p0/P7 the dipole poles, full row and column each; P3 the top column-sum hub. Held at the intro's framing [reach]. Subsumes and sharpens the "two forcings" candidate below.)*
+So the intro hands each reader their door straight off the matrix — sceptic → P1/P4, curious → p0/P7, everyone through P3 — with the interactive `assets/dependency_matrix.html` the showpiece that makes the two paths and the hub visible at a glance. This **actively uses the matrix** as the reader's orientation, not as decoration. *(Grounded in the matrix data: P1↔P4 the ◇ pair; p0/P7 the dipole poles, full row and column each; P3 the top column-sum hub. Held at the intro's framing conjecture. Subsumes and sharpens the "two forcings" candidate below.)*
 
 ## Assets collected so far
 
@@ -60,7 +60,7 @@ So the intro hands each reader their door straight off the matrix — sceptic �
 - A one-screen **map of the fourteen papers + p0** (the spine, the two poles, the field between) — the reader's first orientation.
 - The **P6 through-line** — the book *is* "The Shadow of Existence"; P6 (shadow) carries the title and the epistemic altitude (coherence-not-correspondence, self-consistency≠soundness). The intro should state the discipline the whole book is held at.
 - The **two forcings** framing (P1 structural + P4 empirical, the co-equal roots — the ◇ pair) as the entry into *why* the augmentation is forced.
-- The **maximal-symmetry unification** (p0 §unification, "worn six ways") as the spine of the argument, at [reach].
+- The **maximal-symmetry unification** (p0 §unification, "worn six ways") as the spine of the argument, at conjecture.
 - Provenance: seventeen years, the 2012 thesis, the resources folder — the immense interdependency the matrix finally makes legible.
 
 *(Kept deliberately sparse; this fills as the end-of-pass self-knowing pass and the centre-vs-edge musing are worked.)*

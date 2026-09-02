@@ -6,7 +6,7 @@ which absorbs the mass from the potential and leaves f = 1 - 3r^2/alpha^2, the p
 scale alpha/sqrt3 -- so f(r_star) = 0 iff 27M^2 = alpha^2, the discriminant condition. Sign exhibited
 both ways. Third face (from c49 r1426): r_star = A*2^(-1/3) is also the bead's unique inflection,
 where dr/ds = 1 exactly, for every M. [P3 sec:curvature]
-HELD do-not-assert: nothing here bears on WHY the reassignment selects Nariai (P7's trichotomy).
+HELD not claimed: nothing here bears on WHY the reassignment selects Nariai (P7's trichotomy).
 STATUS: OK   ORIGIN: storyboard_receipts/hubble_eddington_is_the_merged_horizon.py, built r1629.
 """
 import sympy as sp
@@ -79,7 +79,7 @@ print("  CONSEQUENCE: r_star lies on a horizon for exactly one member of the fam
 print("             double-root member, and there it IS the merged horizon; plus the front")
 print("             seam identification, which holds for every M.")
 print()
-print("HELD, do-not-assert: no claim that this explains WHY the cosmology selects Nariai --")
+print("HELD, not claimed: no claim that this explains WHY the cosmology selects Nariai --")
 print("  the selection is P7's trichotomy and stands on its own. This says that the member")
 print("  so selected is the one whose structure-formation boundary is its own merged horizon.")
 print("="*78)

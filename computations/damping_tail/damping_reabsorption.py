@@ -1,7 +1,7 @@
 """
 A2.3-VERDICT :: is the CR +8.9% damping-tail shift reabsorbable, or a genuine tension?
 
-The falsification edge P15 holds do-not-assert. The observable is theta_D/theta_* = r_D/r_s
+The falsification edge P15 holds not claimed. The observable is theta_D/theta_* = r_D/r_s
 (D_A cancels), which Planck measures precisely. CR's geometric stacking rate makes r_D run ~8.9%
 longer at fixed thermodynamics, so at the standard baryon/matter densities CR predicts
 theta_D/theta_* about 8.9% high. The ONLY question that matters (anti-panic: audit before
@@ -146,7 +146,7 @@ print("""ANTI-PANIC AUDIT (before calling this a refutation -- the r959 face):
       match claim (P15: 'Argued', digit-level confirmation OPEN) is where the real test lives.
       This is the honest locus: the damping tail is one facet of a full-transfer question the
       corpus already lists as its open frontier.
- CONCLUSION (do-not-assert on the sign of the final verdict, asserted on the magnitude):
+ CONCLUSION (not claimed for the sign of the final verdict, asserted on the magnitude):
   the +8.9% is NOT reabsorbable by omega_b/omega_m within BBN+height priors, so IF CR's spectrum
   is otherwise LCDM's, the damping tail is a genuine multi-sigma tension -- a real, live
   falsification exposure, exactly as the corpus flagged. It is NOT dissolved and NOT confirmed:

@@ -125,8 +125,8 @@ now say that it could not before** — checking the close for opportunities to e
 newly fleshed-out jewels the grind produced. The receipt is not the end of a grind; the close is.
 
 **The gate (where this discipline earns its keep):** enrich only with the SOUND jewels, and never
-past the do-not-assert boundary or ahead of the source paper's own text.
-- A result HELD do-not-assert (an unverified C_ℓ shape, a look-signal) is not yet a jewel to set —
+past the not claimed boundary or ahead of the source paper's own text.
+- A result HELD not claimed (an unverified C_ℓ shape, a look-signal) is not yet a jewel to set —
   it is queued until verified at source AND cold-read.
 - The enrichment must stay consistent with the source paper (P10–12): match its specificity, do
   not exceed it. Slipping a half-sound refinement into the close ahead of P12's text manufactures
@@ -138,9 +138,9 @@ past the do-not-assert boundary or ahead of the source paper's own text.
   j_ℓ(k_L D_C), placing the lowest mode near ℓ≈8 — a low-multipole DEFICIT, not a quadrupole-reaching
   floor. The transfer was built and validated (r522–r523: flat-limit-verified, the ISW make-or-break
   passed, measure = the dk/k discrete image), so at r524 the now-SOUND jewel was SET into the P9 close
-  AND developed in P12 (P9 synthesis-level, P12 the transfer), the do-not-assert hold lifted by
+  AND developed in P12 (P9 synthesis-level, P12 the transfer), the not claimed hold lifted by
   verification and the wrong hyperspherical clause removed from both. **The lesson for the gate:
-  do-not-assert is a SOUNDNESS FILTER, not a halt — once verified at source, the jewel is SET (matching
+  not claimed is a SOUNDNESS FILTER, not a halt — once verified at source, the jewel is SET (matching
   the source paper), not withheld. Withholding a verified result is itself a failure of the discipline.**
 
 Tracked also in REACH_PLAN §7 (the grind discipline).

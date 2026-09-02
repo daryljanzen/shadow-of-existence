@@ -21,7 +21,7 @@ against the WALL MODES -- which stays open." ***
     transposition of roots is a hop to a neighbouring hinge".
 
 ** ⓶ AND THE SENTENCE IS WRITTEN TO FORESTALL EXACTLY THE ERROR `PO-2` WAS HOLDING AGAINST. **  `PO-2` was
-held at do-not-assert because the three-fold structures might be a ** resemblance **.  *** P14's clause
+stated without being claimed because the three-fold structures might be a ** resemblance **.  *** P14's clause
 "that $S_3$ is not a second group resembling the substrate's own" is a denial of that resemblance reading
 -- and it denies it by exhibiting the map, not by asserting the identity. ***
 
@@ -35,11 +35,11 @@ neither as such" -- and the vertex was already tied to the wall modes in the pap
 ** ⇒⇒ WHAT REMAINS ON `PO-2`, honestly. **  *** The identification of the root triple with the wall modes
 is stated and its map is exhibited.  What the row also asks -- the baryon comparison -- was turned into a
 construction at r2629.  So both halves of the row's target are now delivered, and what is left is the
-do-not-assert on whether the DELIVERED structure is the physical one. ***  ** That is a different
+not claimed for whether the DELIVERED structure is the physical one. ***  ** That is a different
 question from the one the row was opened for, and `F5` reserves the closure. **
 
 WHAT IS NOT CLAIMED.  ** Not that `PO-2` closes ** -- `F5` reserves it, and the physical identification
-stays do-not-assert.  ** Not that the causal-character triple joins this chain ** -- r2631 showed it is
+stays unclaimed.  ** Not that the causal-character triple joins this chain ** -- r2631 showed it is
 typed differently and that stands.  ** Not that the mass VALUES follow ** -- P13 marks that separately.
 
 Written r2632.  Stated for reversal.
@@ -108,14 +108,14 @@ def main():
     print('     ** and the S₃ is the SAME S₃ ** -- "not a second group resembling the substrate\'s own …')
     print('       a transposition of roots is a hop to a neighbouring hinge".')
     print('  ⓶ ** And the sentence forestalls exactly the error PO-2 was holding against: ** the row was')
-    print('     at do-not-assert because the structures might be a ** resemblance **, and P14 denies that')
+    print('     at not claimed because the structures might be a ** resemblance **, and P14 denies that')
     print('     reading ** by exhibiting the map, not by asserting the identity. **')
     print('  ⛭ ⓷ ** Why r2631 missed it: ** it was computing P4\'s pairing, and the sentence settling')
     print("     PO-2's sits in a different section reached by a different question.  ** r2630 had said")
     print('     the root triple "appears in neither register as such" -- and it was already tied to the')
     print('     wall modes in the paper that builds them. **')
     print('  ⇒⇒ ** So both halves of PO-2\'s target are now delivered ** (the baryon comparison became a')
-    print('     construction at r2629), ** and what is left is the do-not-assert on whether the delivered')
+    print('     construction at r2629), ** and what is left is the not claimed for whether the delivered')
     print('     structure is the PHYSICAL one ** -- a different question from the one the row was opened')
     print('     for.')
     print()

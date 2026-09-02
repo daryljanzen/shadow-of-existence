@@ -81,7 +81,7 @@ print("""
    (H_grav + H_dust ~ 0, solve for p_dust): right deparametrization STRUCTURE,
    but the dust clock and flat-FLRW were the 'wrong model' the ledger flags.
 
- - The SdS frontier (the [reach], ready-in-principle not done): CR's clock is
+ - The SdS frontier (the conjecture, ready-in-principle not done): CR's clock is
    NOT an added dust field but the SUBSTRATE'S E=1 congruence, which the corpus
    holds to be an ABSOLUTE foliation (ontologically fixed, not gauge). The exact
    technical task is to realise the deparametrization with THAT intrinsic clock:

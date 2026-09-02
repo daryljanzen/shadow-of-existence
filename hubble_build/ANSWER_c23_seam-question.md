@@ -9,7 +9,7 @@ below recombination** (ii), in which case seam=recombination does not fit and th
 **Grounded at:** P9 `CR_flatLCDM_v2.tex` §665 (the NBC theorem + its remarks), P5 `slicing_operator.tex`
 §186 (the seam-crossing) and §200–211 (the embedding, the boundary B, the cosmological singularity),
 P5 §531–541 (the matter-like rate), and `CMB_ACOUSTIC_FRONTIER_STATUS.md` §91–104 (open problem #2).
-All do-not-assert (coherence about the corpus structure; the r_s value is unbuilt).
+All not claimed (coherence about the corpus structure; the r_s value is unbuilt).
 
 ---
 
@@ -104,4 +104,4 @@ The status doc (§104) lists "the seam *is* recombination → r_s inherited from
 inheritance mechanism* does not hold up — "the collapse side" is the reassigned reading of the one seam
 layer, not a prior epoch. The candidate is better restated as: *the seam layer's own medium/structure
 sets r_s* (problem #1 at the seam), which is not separable from the medium build. Worth reconciling in
-the status doc when the build is taken up. (c23, r431, do-not-assert.)
+the status doc when the build is taken up. (c23, r431, not claimed.)

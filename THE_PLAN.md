@@ -751,7 +751,7 @@ the work for its own reasons the whole time.*
 | | Item | State |
 |---|---|---|
 | 1 | **Work-blockers anywhere in the corpus** | **LIVE.** Phrase class closed (45 removed); five forms under SA-1, sweep at `D.8` |
-| 2 | **`[reach]` and the operating-jargon layer** — every reach worked to a result or cut, markers gone with them | **LIVE.** `D.10`. ⏳ *A later polishing exercise: the tags stay while they still do their drafting job* |
+| 2 | **`conjecture` and the operating-jargon layer** — every reach worked to a result or cut, markers gone with them | **LIVE.** `D.10`. ⏳ *A later polishing exercise: the tags stay while they still do their drafting job* |
 
 **Current count: 2 live, 0 struck. Non-zero — no flag raised, and the operative question is not yet due.**
 
@@ -827,7 +827,7 @@ closed. Five remain. Both halves of that sentence are true and the second does n
 ---
 
 ## ✔ CLOSED r1652 — the r1411 held reach: is the 2:1 seam asymmetry *explained by* the turnaround ordering?
-**Held do-not-assert from r1411, recorded only in `TURNAROUND_CUBIC_geometry_note`, routed into no plan item,
+**Held not claimed from r1411, recorded only in `TURNAROUND_CUBIC_geometry_note`, routed into no plan item,
 ledger family or map cluster for 241 revisions.** *Entered here now because it should always have been here —
 see `CONSOLIDATE` **SA-7**, which this instance opened.*
 **Closed, and not by derivation: the explanandum has no residual.** The horizon cubic is **depressed** — no
@@ -884,7 +884,7 @@ together, from one term.* **One term, two consequences — which is exactly what
 teeth rather than numerology.**
 **③ ⚠ r1703's FRAMING WAS TOO TIGHT AND r1704's "FINDING" WAS A STALE CARD — both corrected r1705.**
 *The generations are **forced within CR**: P14 derives them ($\dim\ker_+=3$, $\dim\ker_-=0$, a $\gamma^5$-graded
-index; a one-hinge truncation excluded as carrying an unfixed modulus). **What is do-not-assert is the
+index; a one-hinge truncation excluded as carrying an unfixed modulus). **What is not claimed is the
 world-correspondence**, and whether the **masses** realise the three-fold splitting.*
 **And roots-versus-pivots is not open.** *`ONTOLOGY_FOUNDATION_INDEX` §6 carries it worked: the throat is the
 hinge triangle's **incircle and nine-point circle** ($2\alpha$ an output), **the three sides are the Nariai
@@ -1218,9 +1218,9 @@ $\sigma$**, adjoining $P$ gives $\mathrm{Aut}(A_2)=D_6$, and P13 §sec:sigma pro
 Wick rotation**. ② **the standard deviation** *(inherited, ×16)*. ③ **a tensor index** *(inherited, ×5)*. **Same
 structure as $\gamma$: ① takes one definition, ② and ③ are borrowed and their overload is deliberate** — and
 **the bare standalone $\sigma$ is always the involution.***
-*⌗ **The passengers.** `D.8` — **P13's do-not-assert register is the corpus's strictest and it is stated as a
+*⌗ **The passengers.** `D.8` — **P13's not claimed register is the corpus's strictest and it is stated as a
 non-negotiable, both ways**: *"NOT 'colour-from-geometry foreclosed'; NOT 'CR produces the SM'."* **P14's own
-do-not-assert list names the flavour-breaking identification first.** *Neither is a work-blocker: both are
+not claimed list names the flavour-breaking identification first.** *Neither is a work-blocker: both are
 scope-holds with the reason attached.* · `D.9`/`D.13` — **P14 cites P13 for the wall and P13 cites P14 for what
 survives it; the pair is bound in both directions.** · `D.14` — P13's open is the **universal foreclosure**
 (`A4.1`, bounded by the rank count at r1773); P14's is the **gauge representations and mass spectrum**
@@ -1437,7 +1437,7 @@ it for the list. **They are not redundant. They work at different grains, and ev
 
 | | Document | Grain | What it holds | Answers |
 |---|---|---|---|---|
-| **0** | `ENTRY_POINT_REGISTER.md` | **finest — 124 sites** | Every gap the corpus advertises **in its own words**, per site, across 16 of the 17 papers — *do-not-assert · remains open · unbuilt · not established · beyond the present scope*. **⚠ STATE CORRECTED r1754 — this cell read "PASS 1: gathered, signs not yet written" while the register's own
+| **0** | `ENTRY_POINT_REGISTER.md` | **finest — 124 sites** | Every gap the corpus advertises **in its own words**, per site, across 16 of the 17 papers — *not claimed · remains open · unbuilt · not established · beyond the present scope*. **⚠ STATE CORRECTED r1754 — this cell read "PASS 1: gathered, signs not yet written" while the register's own
 body says otherwise.** *The gather is complete (all 16 gap-advertising papers) **and the signs are 16 of 16,
 complete — ARC 6 closed them at r1487–r1498 and the register verified it at r1697.** The register itself records
 that its old line *"was true when written and stopped being true at r1224, and nothing updated it"* — **and this
@@ -1448,7 +1448,7 @@ a 438-site gather.* | *Which paper says, in its own sentence, that something is 
 | **2** | `THE_OPEN_PROBLEMS_LEDGER.md` | **coarsest — 8 families, 7 live ✔ verified r1755** *(all eight numbered at source; family 2 the one KILLED)* | The distilled canonical list: what is **genuinely** open, after the false opens are killed and the real ones consolidated into families. | *What is actually unsolved?* |
 | **3** | **this file** | **route** | The same work re-sorted by **gating** — what blocks what, what is buildable now, what waits on the world — plus the destination and the publication bar. | *What can we do next, and what has to happen first?* |
 | **4** | `THE_WEAVE.md` | **per-paper — 19 grid rows, current to r1664 (verified r1755)** | The harvest grid: which fronts advance in which paper on a given pass. It **weaves the other four together** — one deep-read harvesting the knot, the censuses and the figures at once. | *When I open a paper, what am I doing to it?* |
-| **5** | `THE_ARSENAL.md` | **tools** | The list of lists — and **the eleven avenues are real and enumerated, verified r1754**: *① Q-mine (the standing-to-comment sweep) · ② own the accomplishments · ③ press the gap · ④ own what the object IS · ⑤ positive-face framing · ⑥ the symmetry check · ⑦ ★ the bespoke check · ⑧ the dissolution census · ⑨ the standing per-paper checklist · ⑩ forward-reference weaving · ⑪ ★ receipt verification (added r1327)*. Plus **the fifth axis** (reach + eradication) and **LEVEL 3's five ground tools** — *closure self-check · anti-flinch · do-not-assert census · completion-shield · stale-link prior* — which are **the second per-turn layer, cross-pointed to the per-turn list at r1749**. | *How do I do it?* |
+| **5** | `THE_ARSENAL.md` | **tools** | The list of lists — and **the eleven avenues are real and enumerated, verified r1754**: *① Q-mine (the standing-to-comment sweep) · ② own the accomplishments · ③ press the gap · ④ own what the object IS · ⑤ positive-face framing · ⑥ the symmetry check · ⑦ ★ the bespoke check · ⑧ the dissolution census · ⑨ the standing per-paper checklist · ⑩ forward-reference weaving · ⑪ ★ receipt verification (added r1327)*. Plus **the fifth axis** (reach + eradication) and **LEVEL 3's five ground tools** — *closure self-check · anti-flinch · not claimed census · completion-shield · stale-link prior* — which are **the second per-turn layer, cross-pointed to the per-turn list at r1749**. | *How do I do it?* |
 
 ## How they connect
 - **0 → 1.** The register is the **paper-side index**: which door, in which paper, in whose words, opens onto which routed item. Its three standing warnings govern the whole chain: **the unit is the room, not the keyword** (the gather overcounts ~5×); **the rooms form a tree, not a list** (P13's room *is* the plan's A4 master gate); and **every entry carries its discharge condition** — *"a stale card misinforms a node; a stale **owed** dispatches one."*
@@ -1493,9 +1493,9 @@ three route to **Lane 4** and **Cluster J**:
   the seam. The everywhere-real claim is established for the substrate and the seam as a geometric object; the
   hypothesised phase structure at the branch point relative to trajectories is the interpretive layer the conjugacy
   programme opens, its geometric base real and its trajectory/phase reading open. Decide whether it is real
-  structure or interpretation. [reach — held do-not-assert, BOTH ways.]"***
+  structure or interpretation. [reach — stated without being claimed, BOTH ways.]"***
   ***So the routing was true at the cluster level and empty at the item level: Cluster J is where it goes, and
-  nothing in the plan said what "it" is.*** **Now it does — and the do-not-assert-both-ways register travels with
+  nothing in the plan said what "it" is.*** **Now it does — and the not claimed-both-ways register travels with
   it, which is the part that would have been lost.**
 **So the ledger's seven families are the open *physics*; Lane 4 holds the *decidable edges of the vision*; and
 Cluster J is exploratory. Every advertised door lands somewhere, and the somewhere is named.**
@@ -1622,7 +1622,7 @@ not the other is running half.*
   defeat: **finding a defect, then deferring to the corpus's own statement about itself instead of fixing it** —
   inheriting a hedge, a stale masthead, a self-description as though it were authoritative. **The tell is that
   the correction gets handed back to Daryl as a "judgment call" instead of made.***
-- **The do-not-assert census** — `THE_ARSENAL` §★ (Daryl, r1226).
+- **The not claimed census** — `THE_ARSENAL` §★ (Daryl, r1226).
 - **The completion-shield** — `THE_ARSENAL` §★ (Daryl, r1230). *Every claim of incompleteness must carry, right
   there, the logical reason it is genuinely incomplete: a named wall, a named missing construction, or an honest
   empirical gap. **An assertion of incompleteness with no reason attached is the flinch turned self-sabotaging.***
@@ -2359,7 +2359,7 @@ it nowhere before it is allowed to stand as open:
    structural-law, first concrete model built (cosmogenesis); the full worldline-and-field dynamics is the
    frontier [dynamics].
 2. ~~**The bead's sheet-to-ruling assignment**~~ — **⌫ DISSOLVED, corrected r1840 (Phase 8, probe `Q2`).**
-   *This list carried it as "a geometric question, do-not-assert"; **the family was KILLED at r1280 and P7's own
+   *This list carried it as "a geometric question, not claimed"; **the family was KILLED at r1280 and P7's own
    `§frontiers` now has ZERO mentions of it** — so the list is quoting a paper that no longer says this.*
    ***P7 §two-sided-closure: "they are not two candidates for a single assignment but the linear and antilinear
    faces of the one analytic plate"*** — the rulings borne on `R`'s real $r$-axis, the wings on `K`'s
@@ -2375,7 +2375,7 @@ it nowhere before it is allowed to stand as open:
    *(The REDUCIBLE sector is fully classified and reached — range paper.)*
 5. **The scalar-perturbation sector to a verdict** — the high-ℓ seam-to-recombination transfer (peak heights,
    ~8% damping signature) + full-spectrum likelihood vs ΛCDM. *(Large-angle shape computed.)*
-6. **A propagating fermion field sector** — the framework's largest unbuilt undertaking, do-not-assert. *(The
+6. **A propagating fermion field sector** — the framework's largest unbuilt undertaking, not claimed. *(The
    DISCRETE flavour structure is built and forced within CR — P14.)*
 7. ~~**The quantum completion (interacting theory)**~~ — **CHECKED r1243: NOT a CR open (stale), MIGRATED
    OFF.** canonical-time §250 closes the quantization ambiguity at *every order of the coupling* by the de
@@ -2446,7 +2446,7 @@ themselves worked they migrate off this list (e.g. the reducible-sector classifi
 
 **The bar (Daryl, r931): "only genuine problems remain."** The first edition ships — and the corpus becomes something to push people to, and the distributable LLM-programme becomes real — when the corpus is fully internally coherent and *every dangling thing is either resolved by a good honest effort or is a genuine open research problem, honestly and visibly marked open* (the "go figure out what the Higgs is" category). No accidental danglers.
 
-This line **cuts across the six lanes**, and the audit that populates it is `FIRST_EDITION_AUDIT.md` (six-reader source pass, r931). The headline: **the corpus is close, and the line is a bounded cleanup, not a research effort** — the content-level opens are almost uniformly well-marked do-not-assert; no secretly-unproven claim was found.
+This line **cuts across the six lanes**, and the audit that populates it is `FIRST_EDITION_AUDIT.md` (six-reader source pass, r931). The headline: **the corpus is close, and the line is a bounded cleanup, not a research effort** — the content-level opens are almost uniformly well-marked not claimed; no secretly-unproven claim was found.
 
 **⟂ PUNCH-LIST CURRENCY (r966): items 1–3 are DONE (r933/r934, per `FIRST_EDITION_AUDIT`); 4–6 remain.** ~~1. Four hard fixes — P3's six figures (now `corpus/figs/fig2…fig7.pdf`); P5 `JanzenAlgebroid` bibitem; P7 fermion contradiction; P16 stale meta-correction.~~ **DONE.** ~~2. Two matter-sector-staleness reconciliations — P12 `JanzenMatter` cite (verified present); P13 spinor wording.~~ **DONE.** ~~3. Bibliography pass (house-style "companion paper (P#)", orphan bibitems, receipt-pointers, p0 anchors).~~ **DONE (C1–C6, r933/r934).** The two genuine items that remain are 4 (references-completeness) and 5 (frontier-vs-chore, the author's intent call — this is exactly the r966 judgment-call pass now underway); 6 is optional mechanical. The historical list is retained struck for the record.
 
@@ -2471,7 +2471,7 @@ combinatorics ledger at the very least done right.**")* **Lane 8 — the combina
    direction. **Without that rule first, the audit rigs its own question** (`THE_CODA` §"The source
    answers back") **and repeats r1131 with a bigger hammer.** Build the discriminator; then audit. **DONE r1157: the discriminator was built first (L8.0, r1145), then L8.1/L8.2/L8.3 run — LANE COMPLETE.** [→ Lane 8, below, for L8.1/L8.2/L8.3 and the guard.]
 
-**The honestly-marked open frontier (published as the *strength*, not the debt):** the matter *content* (Higgs, what-an-electron-is, colour, masses), the quantum completion (A3), the interior remainder (A6.2), the unification verdict (Lane 4), the deep reaches — all held do-not-assert, and **the final narrative/structural placement of the matter material** (where the matter sector ultimately sits relative to P15/P16 — part of the more-story-to-tell). The Lane-2 falsifiable predictions publish *as* the edition's decisive edges.
+**The honestly-marked open frontier (published as the *strength*, not the debt):** the matter *content* (Higgs, what-an-electron-is, colour, masses), the quantum completion (A3), the interior remainder (A6.2), the unification verdict (Lane 4), the deep reaches — all stated without being claimed, and **the final narrative/structural placement of the matter material** (where the matter sector ultimately sits relative to P15/P16 — part of the more-story-to-tell). The Lane-2 falsifiable predictions publish *as* the edition's decisive edges.
 
 **The edition-1 ambition (settled r931):** publish the forced matter *skeleton* — three chiral generations forced within CR (P14) — with the *content* marked as the open frontier; **do not gate on deriving the Higgs.** That's edition 2's headline, flagged in edition 1 as exactly where it goes next. **Convergence:** this line *is* the distributable-programme milestone — a claim-audited, referenced, internally-consistent bundle is precisely what people can feed to NotebookLM or run an LLM-programme on.
 
@@ -2486,7 +2486,7 @@ combinatorics ledger at the very least done right.**")* **Lane 8 — the combina
 
 > **✔✔✔ DATA-CONFRONTATION DONE (r956) — "produces" earned against the data, jointly.** The two now-tractable above-line items opened by D1 have been built. **Sensitivity table** (`make_sensitivity.py`): the reaction-rate leverage on each abundance, validated against Cyburt-Fields-Olive to ~0.02 (D/H driven by d(d,n)³He −0.56, d(d,p)t −0.47, d(p,γ)³He −0.33; ⁷Li by ³He(α,γ)⁷Be +0.97, ⁷Be(n,p)⁷Li −0.75). **Theory-error budget** (propagated through those α's): D/H 1.1%, ³He 2.5%, ⁷Li 6.6%, Y_p 0.6%. **Likelihood at the Planck η** (η₁₀=6.13±0.04, from Ω_b h²=0.02237): **D/H +1.1σ and Y_p +0.5σ concordant** with the measured primordial values (Cooke 2018 DLAs; Aver 2021), **⁷Li ~5–7σ high** — the standard lithium problem, shared. The *same* single η that Planck reads from the CMB peak heights produces D and He-4 in sub-σ agreement with the independently-measured abundances → the Schramm concordance (`fig_schramm.pdf`): D and He-4 cross their observed bands at the CMB-fixed η, ⁷Li misses. **This does not upgrade the title's wording — "produces" is exactly right — but earns it with data rather than by standard-BBN analogy**, and does so from a hot phase the corpus *requires* (R2), not one posited. Baked into P16 §verdict (+ `fig_schramm`) + abstract. **PRECISION UPGRADE ALSO CLOSED (r957):** rebuilding on **StarLib** (Sallaska et al. 2013, an independent evaluated light-nuclide library, shipped in `pynucastro`) lands D/H=**2.505e-5** (canonical 2.51e-5, 0.2%) and ⁷Li/H=**5.13e-10** (canonical 5.0e-10) — sub-percent, confirming the 2% REACLIB offset was exactly the rate-compilation spread (as the theory-error budget predicted), not a modelling ambiguity. With StarLib the Planck-η concordance tightens to **D/H −0.5σ**, Y_p +0.5σ, ⁷Li ~8σ (full standard lithium problem). Two independent libraries bracket it; the evaluated one is on the canonical values. P16 numbers updated to StarLib (12pp). **Remaining above the line: only the derivation-vs-inheritance of η/ρ_r/ρ_m/progenitor-spectrum — genuine frontier, needs the matter sector, NOT tractable now.** Receipts: `computations/p16_bbn/{make_sensitivity,theory_error_and_likelihood,make_schramm_figure}.py` (+ `bbn_network.py` `library=` switch).
 
-> **✔✔ D1 DISCHARGED (r955) — THE LINE IS CROSSED.** The one below-line debt, the Big Bang computation, has been run. A genuine multi-nuclide network (JINA REACLIB rates via `pynucastro`, forward + detailed-balance reverse, + the corpus's validated thermal weak n↔p) integrated on the standard-rate cooling leg returns, at the CMB-inherited η₁₀=6.14, **Y_p=0.243, D/H=2.57e-5, ³He/H=1.04e-5, ⁷Li/H=4.46e-10** — reproducing standard BBN to a few % (Y_p 1.5%, D/H 2%, ³He 0.4%, ⁷Li at the shared ~3× over-prediction), with the correct η-dependence (d ln(D/H)/d ln η = −1.60) and the ⁷Li valley recovered, baryon number conserved. The pattern comes out **jointly from the single inherited η**, so one handover *requires* D, He-4, ³He and the metallicity floor together — "produces" earned at R2. The metallicity floor follows from total dissociation at the M-independent peak (verified). Receipts: `computations/p16_bbn/{bbn_network,validate_bbn,cooling_leg_reduction,make_abundance_figure}.py`, `fig_abundances.pdf`. Baked into P16 (§network eq + do-not-assert retired + §verdict debt paid + abstract markers + Fig.~\ref{fig:abundances}) and P15 §tensions. **What remains is above the line: the last-percent precision (specially-evaluated vs REACLIB rates) and the likelihood against the measured abundances — a data-confrontation frontier, not a debt.**
+> **✔✔ D1 DISCHARGED (r955) — THE LINE IS CROSSED.** The one below-line debt, the Big Bang computation, has been run. A genuine multi-nuclide network (JINA REACLIB rates via `pynucastro`, forward + detailed-balance reverse, + the corpus's validated thermal weak n↔p) integrated on the standard-rate cooling leg returns, at the CMB-inherited η₁₀=6.14, **Y_p=0.243, D/H=2.57e-5, ³He/H=1.04e-5, ⁷Li/H=4.46e-10** — reproducing standard BBN to a few % (Y_p 1.5%, D/H 2%, ³He 0.4%, ⁷Li at the shared ~3× over-prediction), with the correct η-dependence (d ln(D/H)/d ln η = −1.60) and the ⁷Li valley recovered, baryon number conserved. The pattern comes out **jointly from the single inherited η**, so one handover *requires* D, He-4, ³He and the metallicity floor together — "produces" earned at R2. The metallicity floor follows from total dissociation at the M-independent peak (verified). Receipts: `computations/p16_bbn/{bbn_network,validate_bbn,cooling_leg_reduction,make_abundance_figure}.py`, `fig_abundances.pdf`. Baked into P16 (§network eq + not claimed retired + §verdict debt paid + abstract markers + Fig.~\ref{fig:abundances}) and P15 §tensions. **What remains is above the line: the last-percent precision (specially-evaluated vs REACLIB rates) and the likelihood against the measured abundances — a data-confrontation frontier, not a debt.**
 
 *The r931 first-edition bar ("only genuine problems remain") is here given its precise, epistemologically-grounded form, and its answer computed. The line is drawn by **P16's title** — "the Big Bang as a synthesis of CR's* deductively forced *consequences, and the primordial light-element abundances* it produces*" — held to the **criterion of necessity (P6 §1g, R2 / least-arbitrariness): a structure earns a claim by* requiring *the phenomenon, not by* permitting *a value that fits it.** The line is crossed when that title is earned at that bar with **nothing across the corpus owed to it.** This is the SMART goal: one measurable target, an evolving placed inventory. (The title is read as an aspirational name we commit to — P16 §verdict, r950 — not a claim already cashed.)*
 
@@ -2518,7 +2518,7 @@ combinatorics ledger at the very least done right.**")* **Lane 8 — the combina
 
 
 
-Parallel to drawing the line, and the epistemic-cohesion companion to the layered-seam sweep (r946–r949): sweep the corpus **holding P6**, so each paper's *forced / required / do-not-assert* claims are explicitly grounded at the P6-defined altitude (R2 necessity; least-arbitrariness; **coherence ≠ correspondence**; the modal fallacy). *Not a title-debt* (the title is physics, not epistemology-cohesion) — a corpus-quality goal, above the line. *Inventory to build (next pass):* paper-by-paper, is the P6 grounding explicit at weight or only implicit? The cards' altitudes are the digest; the tex is the target. Already doing it: P7 §750 (the altitude discipline), p0's `[reach]` tagging, P9/P8 "grounded, not entailed," P16 §verdict (r950, R2 explicit). The sweep grounds it where implicit and cross-wires every paper's epistemology to P6 (§1g) — so that just as every paper now tells the layered-seam story, every paper visibly holds itself at the P6 altitude.
+Parallel to drawing the line, and the epistemic-cohesion companion to the layered-seam sweep (r946–r949): sweep the corpus **holding P6**, so each paper's *forced / required / not claimed* claims are explicitly grounded at the P6-defined altitude (R2 necessity; least-arbitrariness; **coherence ≠ correspondence**; the modal fallacy). *Not a title-debt* (the title is physics, not epistemology-cohesion) — a corpus-quality goal, above the line. *Inventory to build (next pass):* paper-by-paper, is the P6 grounding explicit at weight or only implicit? The cards' altitudes are the digest; the tex is the target. Already doing it: P7 §750 (the altitude discipline), p0's `conjecture` tagging, P9/P8 "grounded, not entailed," P16 §verdict (r950, R2 explicit). The sweep grounds it where implicit and cross-wires every paper's epistemology to P6 (§1g) — so that just as every paper now tells the layered-seam story, every paper visibly holds itself at the P6 altitude.
 
 **The SMART shape.** *Specific:* one below-line debt (D1). *Measurable:* the network runs and fits D/He-4/Li/floor jointly, or honestly refutes. *Achievable:* buildable now, no new paper. *Relevant:* it is exactly what earns P16's title, which draws the corpus-wide line. *Time-evolving:* the inventory is living — items move as we build and understand (a fold-on frontier could become a debt if found load-bearing; the matter-content determination is held open). **First edition = this line crossed:** P16's title earned, the decisive claims published as the honest data-axis edges, the matter content the marked-open frontier. The lanes below are the full work-map; this section is the *line through them*.
 
@@ -2610,12 +2610,12 @@ The thin high-value edge — contained work inside established machinery, action
    de Sitter horizon's $\kappa=1/\alpha$, and the turnaround cubic's $\mathbb{Z}_3$ is that circle's three-fold
    subdivision. **Stated prominently as the striking conjecture it is** — the corpus's own guard against burying
    a reach (`CODA_FIELD_NOTE`, July 3: *"don't bury things which by rights should stand as centerpieces"*).
-   **⚠ AND THE PROOF-STATUS, HONESTLY: [reach]** — it does **not** pass the programme's own
+   **⚠ AND THE PROOF-STATUS, HONESTLY: conjecture** — it does **not** pass the programme's own
    numerology-vs-teeth test, because no mechanism forcing the coincidence has been found. **⛭ REFINED r1665:
    "NUMEROLOGY" was the wrong word for that status.** Per `CODA_FIELD_NOTE` r697, *a find held at full weight as
    a hypothesis is not closed by any fact short of one that **fully explains it away***, and per r694 a gap in
    the reasoning is **the measure of the unfound, not proof of absence**. **The test says no mechanism has been
-   found; it does not say none exists.** So the honest status is **[reach], mechanism unfound — an open
+   found; it does not say none exists.** So the honest status is **conjecture, mechanism unfound — an open
    drill-site**, not a verdict. *What would settle it is unchanged: a state on the bead satisfying KMS at that
    period, or the thermal boundary condition derived from the bead rather than coinciding with it.*
    `GEOMETRY_PHYSICS_TAXONOMY` — which `INDEX.md` names as *the test to apply to A2.9*, and which I had not
@@ -2845,7 +2845,7 @@ The thin high-value edge — contained work inside established machinery, action
 8. ~~**A2.8 · The bead's sheet-to-ruling assignment**~~ — **⛔ STALE, STRUCK r1442. This item was KILLED at
    r1280** (`THE_OPEN_PROBLEMS_LEDGER` family 2: *resolved dead, migrated open→closed*) and removed from P7
    §frontiers, but survived here for ~160 revisions as a live Lane-1 item. Kept struck as record. *(Original
-   text follows.)* **A2.8 · The bead's sheet-to-ruling assignment** — the substrate is doubly ruled (two distinct null rulings A, B, orthogonal at the waist); the cosmogenetic bead has two conjugate wings at ±πα/3 (the τ̃↦conj(τ̃) pair of the single cosmic-time continuation). *Derived and kept:* the photon rides the real (Im 0) crossing. *Open, held do-not-assert:* the map from the two distinct rulings {A,B} to the two conjugate wings. An earlier reading placing A,B on the ±π/3 wings was **withdrawn as unsound (r989)** — it conflated the double ruling with the conjugate pair; unattempted since. A well-posed geometric computation inside established machinery (Lane 1), gated on nothing. Home: `WP_C3_SHEET_ASSIGNMENT.md` (+ its r989 audit correction), P7 §frontiers item 2, `gate_notes_bead_audit.md`. *(Orphan caught + placed in the r998 hedge sweep — held do-not-assert in P7 and worked in WP_C3, but untracked in the plan.)*
+   text follows.)* **A2.8 · The bead's sheet-to-ruling assignment** — the substrate is doubly ruled (two distinct null rulings A, B, orthogonal at the waist); the cosmogenetic bead has two conjugate wings at ±πα/3 (the τ̃↦conj(τ̃) pair of the single cosmic-time continuation). *Derived and kept:* the photon rides the real (Im 0) crossing. *Open, stated without being claimed:* the map from the two distinct rulings {A,B} to the two conjugate wings. An earlier reading placing A,B on the ±π/3 wings was **withdrawn as unsound (r989)** — it conflated the double ruling with the conjugate pair; unattempted since. A well-posed geometric computation inside established machinery (Lane 1), gated on nothing. Home: `WP_C3_SHEET_ASSIGNMENT.md` (+ its r989 audit correction), P7 §frontiers item 2, `gate_notes_bead_audit.md`. *(Orphan caught + placed in the r998 hedge sweep — stated without being claimed in P7 and worked in WP_C3, but untracked in the plan.)*
 
 
 
@@ -2955,7 +2955,7 @@ The thin high-value edge — contained work inside established machinery, action
     duration attached to each.
     **⚠ AND IT SURFACED A DEFECT IN THIS FILE, which is what a numbers pass is for.** Every figure scales as
     $1/H_0$, because $\Lambda$ is inferred as $3H_0^2\Omega_\Lambda/c^2$ — see the three corrected sites above.
-    **⚠ HELD, do-not-assert:** *which* landmark begins the **observable** cosmology is not settled here. P7
+    **⚠ HELD, not claimed:** *which* landmark begins the **observable** cosmology is not settled here. P7
     separates the geometric closure through $r=0$ from the physical **seeding** of the layers at the
     finite-curvature seam, and states that no finite-cosmic-time layer carries back to $r=0$. The receipt
     computes intervals along the law and does **not** adjudicate that — **so the 7.06 Gyr figure is the phase
@@ -3083,7 +3083,7 @@ Ordered by the dependency graph (below). The matter sector's *content* is the hi
   deliver is already counted.*** **"Held open" reads as undetermined; the correct reading is *bounded, with the
   bound and its cost both stated*.** *That is a stronger position than the item claims, and a node planning from
   the item would not know the weak sector is excluded by a rank argument before any construction is attempted.*
-  **⌗ AND THE REGISTER THE ITEM MUST NOT LOSE, which P13 marks non-negotiable:** *"**do-not-assert on the
+  **⌗ AND THE REGISTER THE ITEM MUST NOT LOSE, which P13 marks non-negotiable:** *"**not claimed for the
   universal, BOTH ways. The wall is bounded to the geometric-ISOMETRY route. NOT 'colour-from-geometry
   foreclosed'; NOT 'CR produces the SM'.**" With C7 naming exactly where $\mathfrak{su}(3)$ does live: **"only on
   the compact face"** — in $\mathfrak{so}(6)$, reached **either** as the isometry of the Wick-rotated $S^5$
@@ -3131,11 +3131,11 @@ Ordered by the dependency graph (below). The matter sector's *content* is the hi
   splitting is electroweak physics, external to the geometry**" · "the mass **values** are the ordinary
   electroweak route."*
   **④ AND THE JOIN BETWEEN ② AND ③ IS EXPLICITLY DO-NOT-ASSERT.** *"**whether that geometric structure is the
-  physical hierarchy is not claimed — outside the present scope**", and P14's own do-not-assert list names it
+  physical hierarchy is not claimed — outside the present scope**", and P14's own not claimed list names it
   first: **"the flavour-breaking structure's identification with the physical hierarchy; the mass values."***
   ***So the item's "geometric or external?" has an answer and it is not a choice: the degeneracy is geometric and
   forced · a breaking structure is geometric and present · the mass values are external · and the identification
-  of the one with the other is the live question, held do-not-assert by the paper that owns it.***
+  of the one with the other is the live question, stated without being claimed by the paper that owns it.***
   **⌗ AND P13 NAMES THE SAME IDENTIFICATION FROM THE OTHER SIDE (added r1777):** *whether **a fermion mass, being the $R$-odd departure the same substrate structure governs, inherits that cubic's three-fold form** — ***"the one place the geometry might reach into the mass CONTENT after all."*** **So the live identification has two independent statements, in P14 and P13, and the plan carried neither.**
   **⌗ What A4.3 should therefore ask is narrower than what it asks:** *not "geometric or external" but **"is the
   slicing's one-root-against-the-pair the physical hierarchy?"** — a single identification, with both of its
@@ -3161,7 +3161,7 @@ Ordered by the dependency graph (below). The matter sector's *content* is the hi
   the criterion reads the natural single-hinge index — one — not three."***
   ***So A4.4's answer: the link is forced, the two legs are one, and the whole rests on a criterion whose own
   vindication is `A5.5`.*** **That is the join between Lane 3 and Lane 4 and neither item names it: A4.4's
-  forcing and A5.5's base-rate programme are the same load-bearing point seen from two lanes.**, **A4.5/A4.6** the discrete-residue matter home and the orbifold geometric-chirality route (held do-not-assert). **⚠ A4.5's FIRST HALF IS ANSWERED — corrected r1771.** *"The discrete-residue matter home" is **p0 §Frontiers item 3**, and p0 **struck it at r1609**: *"ANSWERED; struck r1609, kept as the record… **It has since been answered in the first sense**: a Dirac field on the slicing structure **binds exactly one chiral zero-mode at each of the substrate's three throat walls**, the count forced within CR and the family symmetry the Weyl $S_3$ itself."* **So a fermion sector does live on the discrete residue** — that was the question, and P14 settled it. **What stays open is A4.6, the orbifold geometric-chirality ROUTE**, which is a different question: not *whether* the residue houses matter but *by what construction*.
+  forcing and A5.5's base-rate programme are the same load-bearing point seen from two lanes.**, **A4.5/A4.6** the discrete-residue matter home and the orbifold geometric-chirality route (stated without being claimed). **⚠ A4.5's FIRST HALF IS ANSWERED — corrected r1771.** *"The discrete-residue matter home" is **p0 §Frontiers item 3**, and p0 **struck it at r1609**: *"ANSWERED; struck r1609, kept as the record… **It has since been answered in the first sense**: a Dirac field on the slicing structure **binds exactly one chiral zero-mode at each of the substrate's three throat walls**, the count forced within CR and the family symmetry the Weyl $S_3$ itself."* **So a fermion sector does live on the discrete residue** — that was the question, and P14 settled it. **What stays open is A4.6, the orbifold geometric-chirality ROUTE**, which is a different question: not *whether* the residue houses matter but *by what construction*.
   **⚑ AND P13 STATES A4.6's EXACT STATUS — "GATED, NOT CLOSED" — with the gate named and the reason it OPENED (r1777).**
   *P13's own words: **"THE ORBIFOLD ROUTE IS *GATED*, NOT CLOSED"** — and it says why it reads **more openly** than
   a first pass had it: **"because the parity acts as $\gamma^5$ — a chirality projector — a discrete projection by
@@ -3203,7 +3203,7 @@ Ordered by the dependency graph (below). The matter sector's *content* is the hi
   **⌗ And its companion, which P13 names in the same breath and the plan does not carry:** *"what remains a named,
   unbuilt lead is **the MASS structure — whether a fermion mass, being the $R$-odd departure the same substrate
   structure governs, inherits that cubic's three-fold form** — **the one place the geometry might reach into the
-  mass CONTENT after all; do-not-assert on the demonstration."* ***That is A4.3's live identification, stated from
+  mass CONTENT after all; not claimed for the demonstration."* ***That is A4.3's live identification, stated from
   P13's side*** — so A4.3 and A4.6 are two readings of one gate, and both wait on the same construction.*
   **⚠ AND THE DIRECT ROUTE'S FAILURE IS SHARPER THAN "walled", worth keeping because it is the reason the orbifold
   route exists at all:** *"the Standard Model's chirality **IS** the differential gauge assignment (left and right
@@ -3322,7 +3322,7 @@ wrong item.** Phase 1a fixed this **between grains**; **it was never checked wit
 **Fixed by renaming the LIVE one to `A3.2′`**, since the three inbound pointers all target the closed one and
 renaming that would break them. *The struck item keeps its code and its history.*
 
-- **A3 · The quantum completion** ⟐ *material:* `THE_QUANTUM_JOINT.md` (the sketchpad, with its exit rule); receipts `P13_qm_S4_vs_S5` and `P17_qm_S4_vs_S5`; map card **§1n**, *"the corpus's one quantum result."* ⟐ — the lock's far side, downstream of everything: **A3.1** the interacting graviton tower as a defined theory (Γ̂ spectrum bounded-below? UV of the tower sums), **A3.2′** *(renamed from `A3.2` at r1771 — see the collision note below)* the non-perturbative Λ>0 quantization + closed-form nonlinear solution, **A3.3** whether the geometry forces quantum structure (do-not-assert, any forcing isolated to the discrete skeleton).
+- **A3 · The quantum completion** ⟐ *material:* `THE_QUANTUM_JOINT.md` (the sketchpad, with its exit rule); receipts `P13_qm_S4_vs_S5` and `P17_qm_S4_vs_S5`; map card **§1n**, *"the corpus's one quantum result."* ⟐ — the lock's far side, downstream of everything: **A3.1** the interacting graviton tower as a defined theory (Γ̂ spectrum bounded-below? UV of the tower sums), **A3.2′** *(renamed from `A3.2` at r1771 — see the collision note below)* the non-perturbative Λ>0 quantization + closed-form nonlinear solution, **A3.3** whether the geometry forces quantum structure (not claimed, any forcing isolated to the discrete skeleton).
   **⚑ A3.3 IS ANSWERED IN P11's ABSTRACT — and the answer is NO, stated as a decision rather than a hedge (r1782).**
   ***"Since the system is first-class general relativity, consistent to all orders, the continuous dynamics ADMITS
   rather than FORCES a quantum structure."*** *With the reason it is a verdict and not a shrug: **"the distinction
@@ -3621,21 +3621,21 @@ Real cohesion work. *(r1448: the heading read "low-priority hygiene" and the lin
   dissolved it.)*
 - **D.2 · Cross-paper terminology** *(⟐ r1472: its running collection is `JARGON_LEDGER.md`, opened for the
   deferred idiom work; the per-paper idiom pass was folded into the arsenal's avenue 9 and run on all
-  seventeen by r1406. What remains is the reconciliation itself, not the gathering.)* **⚠ AND THE GATHERING DID NOT REACH ITS LEDGER — found r1724.** *`JARGON_LEDGER.md` is **3.8 KB, three entries, newest content r1310** — while the per-paper idiom pass this item says fed it **ran on all seventeen papers by r1406**, ninety-six revisions later. **Either the pass found nothing further, or its findings never reached the ledger** — and the ledger's own flagship entry calls its term "pervasive — P3, P13, P14 especially; **scan corpus-wide at pass time**", which reads like a gather deferred rather than a gather completed.* **So D.2's premise is wrong in the direction that matters: the gathering is NOT done, and "what remains is the reconciliation" understates the job.** *⌗ The cheap discriminator, and it is one command: the live counts. **`do-not-assert` now stands at 43 across 14 files** against the ledger's single row for it — **a ledger with one row for a term with 43 sites is an index entry, not a gathering.***
+  seventeen by r1406. What remains is the reconciliation itself, not the gathering.)* **⚠ AND THE GATHERING DID NOT REACH ITS LEDGER — found r1724.** *`JARGON_LEDGER.md` is **3.8 KB, three entries, newest content r1310** — while the per-paper idiom pass this item says fed it **ran on all seventeen papers by r1406**, ninety-six revisions later. **Either the pass found nothing further, or its findings never reached the ledger** — and the ledger's own flagship entry calls its term "pervasive — P3, P13, P14 especially; **scan corpus-wide at pass time**", which reads like a gather deferred rather than a gather completed.* **So D.2's premise is wrong in the direction that matters: the gathering is NOT done, and "what remains is the reconciliation" understates the job.** *⌗ The cheap discriminator, and it is one command: the live counts. **`not claimed` now stands at 43 across 14 files** against the ledger's single row for it — **a ledger with one row for a term with 43 sites is an index entry, not a gathering.***
   **⟐ ~~D.2b · CLEAR THE WEIGHT TAGS~~ — ✔ DONE r1569.** Daryl: *"These cannot ship… each must become what it
   means, in the paper's own voice: what is claimed, at what weight, and what would settle it."*
   **Worked at source in p0. The count was not twelve bare tags — it was five, and the distinction matters:**
   - **FIVE were genuinely bare and are now expanded**, each saying what is claimed and at what weight:
     `[established]` on the maximal-symmetry proposition → *"proved here from the maximal-symmetry requirement
     together with the signature and causal-structure conditions; nothing is assumed of the embedding"* ·
-    `[reach]` on the free-data-count test → *"stated as a target, not a result — the falsifier above is what
-    would decide it"* · `[reach --- do-not-assert]` on the discrete-residue matter home → *"the discrete
+    `conjecture` on the free-data-count test → *"stated as a target, not a result — the falsifier above is what
+    would decide it"* · `[reach --- not claimed]` on the discrete-residue matter home → *"the discrete
     residue is established; that a fermion sector lives on it is neither shown nor excluded here, and the
     corpus asserts it nowhere"* — **⚠ this quoted tag was STRUCK at r1609**: it was a false-open (P14 built
     that sector, and p0 cites P14 throughout for it); p0's frontier 3 now reads ANSWERED, with the residual
     routed to open families 6 and 7. The example above is kept as the record of the tag's wording · plus the compact-Wick face and the substrate-altitude reading.
-  - **FOUR are legitimate and were left alone** — they use `[reach]` as **vocabulary inside explaining prose**
-    (*"the [reach] tags throughout are P6's discipline made explicit"*; *"the unification here is [reach] at
+  - **FOUR are legitimate and were left alone** — they use `conjecture` as **vocabulary inside explaining prose**
+    (*"the conjecture tags throughout are P6's discipline made explicit"*; *"the unification here is conjecture at
     exactly that weight — coherence, not correspondence"*). **A tag inside a sentence that explains it is not a
     bare tag.**
   - **The rest are header comments** describing the convention.
@@ -3718,17 +3718,17 @@ Real cohesion work. *(r1448: the heading read "low-priority hygiene" and the lin
   programme · *material:* `THE_GEOMETRY_AND_THE_PHYSICS.md`, `FIGURE_THEOREM_LEDGER.md` · *feeds:* the driver's
   central conjecture — **this is one of the unification claims the whole programme narrows the gap on.**
 
-- **D.10 · WORK OR CUT EVERY `[reach]` — PB-2's clearance condition (entered r1570, CORRECTED r1571).**
-  **Not "vet".** ***Every `[reach]` in the corpus is either worked to a result or cut.*** A reach with a stated
+- **D.10 · WORK OR CUT EVERY `conjecture` — PB-2's clearance condition (entered r1570, CORRECTED r1571).**
+  **Not "vet".** ***Every `conjecture` in the corpus is either worked to a result or cut.*** A reach with a stated
   route and a falsifier **is still unworked** — a falsifier describes it, it does not settle it. **Nothing is
   retained as a tagged suspicion, however well-tagged.**
-  **Scope — ⚠ RE-COUNTED r1724, and it has GROWN since r1570:** **17** `[reach]` (still all p0, was 15) · `do-not-assert` **×43 across 14 files** (was ×37 across 11) · *"at weight"* ×7 (unchanged). *A clearance condition whose scope is quoted from 154 revisions ago will under-state the job; **the tags are working instruments and the corpus has been adding them**, which is correct behaviour and exactly why the count must be taken at run time rather than carried.*
+  **Scope — ⚠ RE-COUNTED r1724, and it has GROWN since r1570:** **17** `conjecture` (still all p0, was 15) · `not claimed` **×43 across 14 files** (was ×37 across 11) · *"at weight"* ×7 (unchanged). *A clearance condition whose scope is quoted from 154 revisions ago will under-state the job; **the tags are working instruments and the corpus has been adding them**, which is correct behaviour and exactly why the count must be taken at run time rather than carried.*
   **And the de-jargoning is not a separate step — it is what *worked or cut* produces:** a worked reach is
   stated as a result in ordinary scientific prose and the tag is gone; a cut reach is gone. *(`D.11` withdrawn
   and folded in here r1571.)*
   ⟐ *test:* `GEOMETRY_PHYSICS_TAXONOMY`'s numerology-vs-teeth discriminator — **which is the working test, not
   a vetting test: teeth means a mechanism that forces the result, and that is what "worked" requires** ·
-  *material:* `JARGON_LEDGER.md` · *feeds:* p0 above all, and every file carrying `do-not-assert`.
+  *material:* `JARGON_LEDGER.md` · *feeds:* p0 above all, and every file carrying `not claimed`.
   **⛔ TIMING: this is a LATER polishing exercise (Daryl, r1573).** The tags stay in place and keep doing their
   drafting job until the work they organise is finished. **It blocks publication; it does not block the work
   before publication** — and everything before it in the docket blocks publication too.
@@ -4003,7 +4003,7 @@ this session's did.*
 | **⌫ A2 ✔ RUN r1810 — NO DISAGREEMENT, two silences, and no eighth instrument built.** | **For each crosswalk row, does the lane item it names state the same gate?** ***Result: eight rows, seven with a named item, and not one contradiction.*** **✔ AGREE in their own words:** `A2.2` *gated on A4* · `A6.2` *gated on family 1* (the seed, and r1780's fix holding) · `A4` *the master gate* · `A2.4` — its Lane 1 line reads **item 3 of the buildable-now runway**, so *buildable now* is its position, not just the crosswalk's claim · `A3` — *"the lock's far side, **downstream of everything**"*, which is the crosswalk's *not CR-specific* in the item's own idiom. **⌗ TWO SILENCES, not disagreements:** `A2.3` says ***"highest-impact buildable item"*** — buildable in substance, and the crosswalk's *buildable now* is fair · `A1.3` says **nothing about buildability at all**; the crosswalk asserts it and the item neither confirms nor denies. *That is the r1780 shape at its mildest: **the crosswalk knows something the item does not say** — and here it is right.* | 8 rows | r1780, run r1810 | *r1780 found the crosswalk right and the prose wrong on `A6.2`* | 8 rows | r1780 |
 | **⌫ A3 ✔ RUN r1811 — six items name a test, TWO have had it run, and the four unrun are not equal.** | **Which items name a test, and which have had it run?** ***The six:*** *`A5.4` **✔ RUN r1765 — TEETH**, ten grounds, zero ungrounded · `A2.10` **✔ RUN**, with the item itself distinguishing *working test* from *vetting test* · **`A5.3` ⚠ NOT RUN** — its test is *"is the recurring move a mechanism or a coincidence?"*, **and r1764 found its STAGE-0 gate discharged and the item SHRUNK**, so the test is now runnable and cheap · **`A6.5` ⚠ NOT RUN — and it does not need to be**: r1769 found it **answered in P7 almost verbatim**, so *the item's test was superseded by the paper before anyone ran it* · **`A5.6` ⚠ NOT RUN — correctly**, it was placed at r1806 and its test is the work · **item 8, the first physics domain bake ⚠ NOT RUN** — a phase-plan item, not a lane item, and **its test clause is the only one that belongs to a piece of WORK rather than a CLAIM.*** ***So the answer is not "four unrun": it is one runnable-and-cheap (`A5.3`), one superseded (`A6.5`), one correctly-pending (`A5.6`), one that is a work item (8).*** | 6 items | r1765, run r1811 || one pass | r1765 |
 | **⌫ A4 ✔ RUN r1812 — TWO LIVE DEFECTS, and one of them was the SAME BANNER in THREE documents.** | **Read the first screen of each live document.** ***⚠ MY SCOPE WAS WRONG BY 8×: the row said "~15" and root holds 117 `.md` files.*** *Bounded honestly to **the twenty a node actually meets** — the seven top-level, the six whole-corpus instruments, the three remaining grains, the capstone pair, `THE_ARSENAL` and the manual — and read.* ***FINDING ①:*** **`THE_PLAN`'s own first line read *"This file is now the stalest thing in the programme"* — for 103 revisions after the audit it opened began fixing that.** *The most-read text in the file, and it is now the most recently audited document in the programme.* ***FINDING ②, and it is the seed class paying out:*** **r1449's *"sits in the bin… place nothing new here"* banner was corrected in `THE_PLAN` at r1745 — and NOBODY CHECKED WHETHER IT SAT ELSEWHERE. It sat in three more: `THE_ARSENAL` (first screen), `THE_OPEN_PROBLEMS_LEDGER` (first screen), `THE_WEAVE` (at 29%).** *All three corrected, each with what is true now — and each original kept as the record.* **⌗ The other sixteen first screens are clean.** | **20 documents** (not 15) | r1784, run r1812 || ~15 docs | r1784 |
-| **⌫ A5 ✔ RUN r1813 — items 1 and 2 propagate correctly; ITEM 4 was routed at the CLUSTER level and empty at the ITEM level.** | **p0 §Frontiers' other three checked against every plan item leaning on them.** ***Item 1 ✔*** — `A5.1` carries its falsifier verbatim (*"a hidden geometric freedom in the cosmology, or a genuinely free constant where the reading says it should lock"*) and its `[Reach: stated as a target, not a result]` tag. ***Item 2 ✔*** — `A5.2` carries *c–Λ and Nariai the two known instances* **and** the second half nobody usually repeats, *"look for any constant maximal symmetry does not reach."* ***⚠ ITEM 4 — the phase structure at the branch point — had NO statement anywhere in the file.*** *Zero hits on "phase structure", "everywhere-real", or its own words; the crosswalk note claimed **"the other three route to Lane 4 and Cluster J"** and **Cluster J's line named only the cluster.*** **So the routing was true at the cluster level and empty at the item level — stated now, with its **do-not-assert-BOTH-WAYS** register, which is the part that would have been lost.** | 3 items | r1771, run r1813 || 3 items | r1771 |
+| **⌫ A5 ✔ RUN r1813 — items 1 and 2 propagate correctly; ITEM 4 was routed at the CLUSTER level and empty at the ITEM level.** | **p0 §Frontiers' other three checked against every plan item leaning on them.** ***Item 1 ✔*** — `A5.1` carries its falsifier verbatim (*"a hidden geometric freedom in the cosmology, or a genuinely free constant where the reading says it should lock"*) and its `[Reach: stated as a target, not a result]` tag. ***Item 2 ✔*** — `A5.2` carries *c–Λ and Nariai the two known instances* **and** the second half nobody usually repeats, *"look for any constant maximal symmetry does not reach."* ***⚠ ITEM 4 — the phase structure at the branch point — had NO statement anywhere in the file.*** *Zero hits on "phase structure", "everywhere-real", or its own words; the crosswalk note claimed **"the other three route to Lane 4 and Cluster J"** and **Cluster J's line named only the cluster.*** **So the routing was true at the cluster level and empty at the item level — stated now, with its **not claimed-BOTH-WAYS** register, which is the part that would have been lost.** | 3 items | r1771, run r1813 || 3 items | r1771 |
 | **⌫ A6 ✔ RUN r1814 — twelve results checked, ALL TWELVE carried by their owning item. The seed was the only failure and r1773 fixed it.** | **For each result this session leaned on, does the item that owns it carry it?** ***✔ all twelve:*** *P13's rank count (`A4.1` — **the seed, absent until r1773**) · `prop:forced` (`A4.4`) · `prin:reclass` (`A5.3`) · `lem:vindication` (`A5.5`) · $\Lambda G^2M^2/c^4=1/9$ (`A5.4`) · ⊢58's one privileged circle (`F.3b`) · the chirality criterion and *matter and radiation are the bend* (`F.5`) · P7's **isotropises / scale-free / transition law** (`A2.2`) · the two real forms (`A3`/P10) · **the offset is the mass** (`A5.6`, carried as P8's RN–dS *"not an independent posit fed into the geometry; it is the curvature of the cut"*) · signs **16 of 16** (grain 0). ⚠ *And the run needed **two** instruments: a bounded-body extractor that returned **0 chars for all seven** — a uniform failure, which is the tell — and then a proximity window of **1400 chars that was too short for `A2.2`**, whose scale-free clause sits at ~1900. **Both caught by reading.*** | 12 results | r1773, run r1814 || one pass | r1773 |
 | **⌫ A7 ✔ RUN r1815 — NEITHER LANE HAS CHANGED KIND, and each is now a different KIND OF MIXED than Lane 7 was.** | **Is Lane 5 still a cohesion lane? Is Lane 1 still a runway?** ***LANE 1 — still a runway, and the heading is exactly right.*** *Its `⟐` clause reads *"research we can start, no gate"*, and after ARC 11 **four items are closed** (A2.9, A2.11, E.1-a, A4.9) with **four open and every one genuinely startable**: `A2.3` the peak-heights transfer — *"a computation, not a missing idea"* · `A2.4` the branch-point crossing dynamics, **which r1780 found is what `A6.2` in Lane 3 waits on** · `A4.7` the zero-mode continuation · item 6's five surviving computations. ***So the lane has SHRUNK by half and not changed kind — and one of its open items gates a Lane 3 item, which makes the runway load-bearing rather than merely available.*** ⚠ *With the numbering defect left as found: **items go 1, 3, 5, 6, 7, 7, 9, 10 — two items both numbered 7** — deliberately not renumbered, since **renumbering breaks every external reference to "Lane 1 item 7"**, and r1772 already showed a list-position pointer rotting.* ***LANE 5 — still cohesion, and it holds TWO KINDS that its heading names only one of.*** *Eleven `D.n` cohesion items ✔ — all audited r1719–r1724 — **and seven `H.n` items that are not cohesion at all: H.0 the introduction (✔ written r1593), H.1 *The Shadow of Existence* the whole-picture book, H.2 publication, H.3 the essays, H.4 face-science as a publishable paper, H.5 centre-vs-edge, H.6 the P14 spin-off.*** **Those are DELIVERABLES — the book and the publication programme — living in a lane headed *Cohesion & scholarship*.** *r1477 put H.0 there calling it "Lane 6" (r1745), and the H-series has sat under Lane 5 ever since.* **Not corrected: the pairing is 338 revisions old and the fix is a lane split, which is a structural change Daryl should call.** *Recorded as `Q5` in section C.* | 2 lanes | r1763, run r1815 || 2 lanes | r1763 |
 | **⌫ A8 ✔ ANSWERED r1822 — by `B4`, which ran first.** | **Route (b)'s input-type check.** ***No: a "bend" in P11's sense is a metric perturbation on a leaf, and `B4` swept every `.tex` plus the ledger and storyboard and found the branches given a metric perturbation NOWHERE.*** *So the input-type mismatch r1760 suspected is confirmed exhaustively rather than argued.* **Route (b) needs an object to be a bend OF, and the branches are not one.** | ✔ resolved by `B4` |
@@ -4327,7 +4327,7 @@ every entry meets it, rather than left inside one retired lane item.*
   lattice **by exactly the $\sqrt[3]{2}$ that is the other cubic's signature, so it cannot be read as a fourth
   root of this one.*
 - *(F.4's original text, kept as the record)* **F.4 · Named, unrun** (ledger Part X): **U1** the 12×2 closure under the coupling (a *rotational orbit* vs a *ruling incidence* — different questions; c40 was about to draw it); **U2** `A = ∛2·ρ` as a metric bridge between the two turnings — *`lem:twoturnings` denies a canonical identification of the two ℤ₃ **symmetries**; it says nothing against a **ratio between two radii*** — and r1109 found it is **the vertical gap between the turnaround curve and the ellipse at the Nariai ordinate, drawable since 2012**.
-- **F.5 · ≈ R5 · THE WAVES — do-not-assert, and a live conduit, not a marked exit.**
+- **F.5 · ≈ R5 · THE WAVES — not claimed, and a live conduit, not a marked exit.**
   **⌖ ALL THREE ROUTES NOW ASSESSED (r1760–r1762), and the item is in a different state than "three routes in,
   all walkable."** *(c) **is not walkable**: the chirality criterion's input is a wave with two polarization
   components and the branches carry one, which is its own **achiral** case — it would return "not chiral" **by
@@ -4404,7 +4404,7 @@ every entry meets it, rather than left inside one retired lane item.*
 
 ### The holding pen — ideas kept where they live *(r1448: the heading's "not worked" REMOVED; Daryl's instruction below is that they can STAY WHERE THEY ARE, which is not the same as not being work)*
 
-Teeth-less ideas kept in place per Daryl (*"stuff that still sits as a maybe idea that doesn't really have teeth yet in the corpus can continue to be where it is"*): the **conjugacy / quantum-germ cluster** (C.1–C.11, in `OPEN_PROBLEMS_MAP` Cluster J + `CONJUGACY_CONJECTURE_capture_r469` — wave/particle as two clocks, horizons as vertices, amplitude=conjugacy-volume, mass=tilt, the geometric-Higgs, exit-branch branching ratios, c_s=c/√3); the **geometry↔physics taxonomy** (`GEOMETRY_PHYSICS_TAXONOMY`, a living do-not-assert catalogue); and the minor exploratories **A2.5** (exact peak temperature), **B.5** (third complex z-axis), **B.7** (Nariai/chart-tangent √3), **E.3** (information-paradox connection), **B.8** (draw the bent (non-vacuum) and Nariai cuts' explicit higher-dimensional embedding in coordinates — P8 §open's first "smaller remainder," *largely dissolved* by the framework paper since the fundamental metric is the 5D closed-dS sphere and SdS is a derivative metric on the same manifold; what remains is only to draw the bent transit in coordinates rather than read it along the worldline; placed r999), and **B.9** (the internal hexad resonance: whether the six pivot-hinge figure is the *same* six-fold as the six-Nariai root hexad, or a resonance of shared type — held do-not-assert in P3/P5/P12 §discrete; a narrow pure-geometry identity question, distinct from A4.2's higher-level A₂/su(3) abstract-type coincidence and from A4.1's colour wall; placed r1003). Not retired — they wait for teeth.
+Teeth-less ideas kept in place per Daryl (*"stuff that still sits as a maybe idea that doesn't really have teeth yet in the corpus can continue to be where it is"*): the **conjugacy / quantum-germ cluster** (C.1–C.11, in `OPEN_PROBLEMS_MAP` Cluster J + `CONJUGACY_CONJECTURE_capture_r469` — wave/particle as two clocks, horizons as vertices, amplitude=conjugacy-volume, mass=tilt, the geometric-Higgs, exit-branch branching ratios, c_s=c/√3); the **geometry↔physics taxonomy** (`GEOMETRY_PHYSICS_TAXONOMY`, a living not claimed catalogue); and the minor exploratories **A2.5** (exact peak temperature), **B.5** (third complex z-axis), **B.7** (Nariai/chart-tangent √3), **E.3** (information-paradox connection), **B.8** (draw the bent (non-vacuum) and Nariai cuts' explicit higher-dimensional embedding in coordinates — P8 §open's first "smaller remainder," *largely dissolved* by the framework paper since the fundamental metric is the 5D closed-dS sphere and SdS is a derivative metric on the same manifold; what remains is only to draw the bent transit in coordinates rather than read it along the worldline; placed r999), and **B.9** (the internal hexad resonance: whether the six pivot-hinge figure is the *same* six-fold as the six-Nariai root hexad, or a resonance of shared type — stated without being claimed in P3/P5/P12 §discrete; a narrow pure-geometry identity question, distinct from A4.2's higher-level A₂/su(3) abstract-type coincidence and from A4.1's colour wall; placed r1003). Not retired — they wait for teeth.
 
 ---
 
@@ -4524,7 +4524,7 @@ PUBLICATION IS NOT A DRIVER FOR ANY OF THE WORK WE DO."***
 1. **Work-blockers anywhere in the corpus.** *(r1564; stated in full at the head of this file, because that one
    is a statement about **how to work**, which is different from this list.)* Phrase class closed; five forms
    run as SA-1 with the sweep at **D.8**.
-2. **`[reach]` and the operating-jargon layer** — every reach **worked to a result or cut**, and the markers
+2. **`conjecture` and the operating-jargon layer** — every reach **worked to a result or cut**, and the markers
    gone with them. **D.10.** ⏳ **A LATER polishing exercise**: the tags stay in place and keep doing their
    drafting job until the work they organise is finished. **Its position in the docket is set by that, not by
    its non-negotiable status.**
@@ -4538,7 +4538,7 @@ PUBLICATION IS NOT A DRIVER FOR ANY OF THE WORK WE DO."***
 proposed-not-started.** ***So the programme's FIRST non-negotiable — the one the hard publication block is built
 on — is discharged by a sweep that has no date.*** **That is not a defect in this list; it is the list correctly
 reporting a real state**, and it is the sharpest argument the audit produced for scheduling layer ②.*
-*② **`[reach]` and the operating-jargon layer.** *Scope re-counted at r1724: **15→17 documents, ×37/11 → ×43/14**.*
+*② **`conjecture` and the operating-jargon layer.** *Scope re-counted at r1724: **15→17 documents, ×37/11 → ×43/14**.*
 **Its ⏳ marker is the right disposition and its reasoning is worth keeping visible: the tags stay while they still
 do their drafting job**, and *"its position in the docket is set by that, not by its non-negotiable status."**
 **⛭ AND THE HEADING'S OWN WARNING IS THE ONE THIS SESSION MOST NEEDED, so it is worth restating rather than

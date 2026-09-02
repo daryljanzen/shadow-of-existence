@@ -12,11 +12,11 @@ a baryon's three quarks in a colour singlet. **Held on three named levels.***
 - **① SKELETON — GROUNDED AND COMPUTED.** *The root triple IS the $f=0$ locus, $\{1/\sqrt3, 1/\sqrt3,
   -2/\sqrt3\}$, sum zero — **arithmetic, from a depressed cubic**, so the roots sum to zero for every
   $M$ and $\alpha$. The content is the $1{:}1{:}{-}2$ pattern.*
-- **② RESEMBLANCE do-not-assert — PASSED.** *r2629 turned the resemblance into a **construction**;
+- **② RESEMBLANCE not claimed — PASSED.** *r2629 turned the resemblance into a **construction**;
   r2633 gave the reason: **"every root, designated the slicing parameter, returns the same
   $2M=r_0-r_0^3$, so the three carry one mass parameter and are IDENTICAL IN CONTENT, distinguished
   only by which root each takes as its hole"** — the colour-singlet condition's geometric origin. **A
-  do-not-assert calibrated to an object that no longer exists.***
+  not claimed calibrated to an object that no longer exists.***
 - **③ IDENTIFICATION — ANSWERED r2864, IN THE ONLY FORM SCIENCE ADMITS.**
 
 ## ② INVERSION — ✔ ANSWERED, and this is the whole of the closure

@@ -85,7 +85,7 @@ r_sw = n_sw[3]/n_sw[2]; r_swdop=n_swdop[3]/n_swdop[2]
 print(f"\n  ell=3/ell=2 depth ratio (normalisation-independent):  SW only = {r_sw:.3f}   SW+Doppler = {r_swdop:.3f}")
 print(f"  (>1 means the octopole is LESS suppressed than the quadrupole -- Doppler separating them)")
 print("""
-  HONEST READING (do-not-assert; this is a pressure-test, not a pinned result):
+  HONEST READING (not claimed; this is a pressure-test, not a pinned result):
    * The SW-only octopole over-suppression (ell=3 as suppressed as ell=2, both ~0.2 of LCDM) is the
      robust, flat-limit-verified result the papers state as the live falsification risk.
    * BUT the omitted Doppler term is NOT cleanly negligible at these multipoles (C_dop/C_sw ~ 0.2-0.66
@@ -94,7 +94,7 @@ print("""
      sub-dominant at low ell" lore does not transfer to the discrete-source tails.
    * Included even roughly, Doppler LIFTS ell=3 relative to ell=2 (ratio %.2f -> %.2f), i.e. it moves
      the octopole toward the observed pattern (quadrupole low, octopole more normal).
-   * CAVEATS making this a do-not-assert, not a verdict: (i) the velocity-potential normalisation
+   * CAVEATS making this a not claimed, not a verdict: (i) the velocity-potential normalisation
      alpha_L=(2/3)k/aH is order-of-magnitude, not a solved transfer; (ii) Doppler was added to CR but
      the LCDM baseline here is SW-only, so the absolute depths are not a consistent comparison (the
      ell=3/ell=2 ratio is the clean, normalisation-free quantity).

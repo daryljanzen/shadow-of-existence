@@ -81,7 +81,7 @@ each owning paper comes up.
 - `photon_cross_test.py` — ✔✔ (signed r real/odd through seam; photon crosses bounded; strengthened). Cited (inline→\rcpt).
 - `bead_conjugate.py` — ✔✔ (conjugate legs/Schwarz, e^{2pi i/3} period, pi/3 turnaround). Cited.
 - `bead_contour.py` — ✔✔ (bounded tau~-contour: real/imag/locked-pi3; A-independent; control vs 2pi). Cited.
-- `order3_bridge.py` — ✔✔ (scope corrected r1430: groupoid Z/3 vs bead Z/3 are different cubics and NO AFFINE map identifies their root sets; stage 5 exhibits the E-family that does join them, with a control. Identification of root sets remains do-not-assert). Cited.
+- `order3_bridge.py` — ✔✔ (scope corrected r1430: groupoid Z/3 vs bead Z/3 are different cubics and NO AFFINE map identifies their root sets; stage 5 exhibits the E-family that does join them, with a control. Identification of root sets remains unclaimed). Cited.
 - `F_flat.py` — ✔✔ (exact arc length, perpendicular legs, monotonic, tangents). Cited.
 - **All 5 P7 physics receipts ✔✔; depmatrix = meta (runs).** **P7 COMPLETE — no missing receipts (full coverage audit done r1358: non-bead theorems all analytic, HEB references P3).**
 ### P8 — slicing_operator

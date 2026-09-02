@@ -7,12 +7,12 @@
 ## The task (Daryl, r990-close)
 The corpus proved its point recently (empirically favoured: BAO/H0 χ²/dof≈1 vs ΛCDM ~14 at local H0=73; BBN D+He-4 within 1σ at one inherited η; octopole a wash; analytic cosmogenesis; extraordinarily parsimonious). Many hedges across the corpus are FOSSILS of the dev period, written while other things were still uncertain. Comb slowly; for each hedge hold the claim up honestly and decide:
   (A) FOSSIL — later work discharged it; the thing IS proven/built → clean up, assert at earned weight.
-  (B) UNDER-BALANCED — genuine open frontier, but the flat do-not-assert UNDERSELLS what's earned → rebalance to state what IS earned AND what is NOT implied (two-sided; mislead neither way).
+  (B) UNDER-BALANCED — genuine open frontier, but the flat not claimed UNDERSELLS what's earned → rebalance to state what IS earned AND what is NOT implied (two-sided; mislead neither way).
   (C) CORRECT AS-IS — honest open question / world-correspondence / P1-still-ahead → keep (maybe lightly confirm balance).
   (D) MIS-CITED GUARD — a TRUE narrow result (e.g. C-blindness, R≠T) being MISused downstream as a broad blocker → sever the misuse, keep the true result (this is the antimatter/bead pattern).
 
 ## The standing guard (do NOT over-correct)
-Coherence ≠ correspondence. The two closings must never blur (coda). Clean up fossils; NEVER promote coherence to correspondence. P1 no-horizons is the decisive test still ahead; matter CONTENT external; world-correspondence of the full cosmology the data's to judge. Those stay — but stated as BALANCED (what's earned + what's open), not flat do-not-asserts that undersell.
+Coherence ≠ correspondence. The two closings must never blur (coda). Clean up fossils; NEVER promote coherence to correspondence. P1 no-horizons is the decisive test still ahead; matter CONTENT external; world-correspondence of the full cosmology the data's to judge. Those stay — but stated as BALANCED (what's earned + what's open), not flat not claimeds that undersell.
 Discipline: dig at source (not grep-and-rule); grep only to LOCATE. Decide from the source; carry the warranted fix; state for reversal. Where it's genuinely Daryl's call (what he holds proven vs not), flag — don't menu.
 
 ## INVENTORY (locate, then classify by reading)
@@ -25,19 +25,19 @@ Discipline: dig at source (not grep-and-rule); grep only to LOCATE. Decide from 
 - geometric_core L826 "the conjecture proper is the descent: whether a propagating spinor sector..." — immediately followed L829 by "now built". Stale wrapper on a built result.
 - geometric_core L708/L792-796 the "generation conjecture" stated as conjecture — L829 says built. (Check: is the CONJECTURE the count=3, or the descent mechanism? The count-3 forced-within-CR is a result; the world-correspondence is open. Need to read which half each locus hedges.)
 - boundary L256 fermion sector "since built" — already handled in antimatter pass; confirm consistent.
-Same shape as the antimatter/bead fossils: a thing got BUILT but its old conjecture/do-not-assert wrapper never updated.
+Same shape as the antimatter/bead fossils: a thing got BUILT but its old conjecture/not claimed wrapper never updated.
 
 **CORRECT BALANCED HEDGES (category C) — KEEP:**
-- geometric_core L789 "do-not-assert, both ways; the ordinary route" — already two-sided. KEEP.
+- geometric_core L789 "not claimed, both ways; the ordinary route" — already two-sided. KEEP.
 - L938/L961 "coherence, not correspondence, decidable by the test of [P1]" — the standing guard. KEEP (this is the line that must never blur).
-- L1162 "[reach — held do-not-assert, both ways]" — balanced. KEEP.
+- L1162 "[reach — stated without being claimed, both ways]" — balanced. KEEP.
 - boundary L170 "a negative result is as easy to overstate as a positive one" + L250 "two things stay genuinely open" (unbuilt fermion sector; SM-coherence as independent ground) — HONEST scope-marking of a real wall. KEEP. boundary is mostly category C — it is ABOUT a genuine wall.
 
 ### METHOD (confirmed): the discriminator is WHAT each hedge hedges:
 - hedges the WORLD-CORRESPONDENCE / P1-decidable / matter CONTENT / SM-as-independent-ground → KEEP (category C, the honest frontier).
 - hedges a thing later WORK BUILT/PROVED (the descent, the generation count forced-within-CR, the antimatter naming, the bead closure) → FOSSIL, clean to earned weight (category A).
 - a TRUE narrow result used to BLOCK a find downstream (R≠T, C-blindness, "resonance") → sever misuse, keep result (category D).
-- flat do-not-assert that undersells an earned within-CR result → rebalance two-sided (category B).
+- flat not claimed that undersells an earned within-CR result → rebalance two-sided (category B).
 
 ### SCOPE NOTE: ~180 marker hits / 15 papers, but a large fraction are category C (correct) or duplicate hits. The genuine edit targets cluster in: geometric_core (generation/descent fossils), matter_sector, boundary (mostly done), P7, algebroid, groupoid, and the "conjecture" wrappers on now-built results. This is multi-chunk work; bundle per coherent chunk.
 
@@ -47,8 +47,8 @@ Same shape as the antimatter/bead fossils: a thing got BUILT but its old conject
 
 **(§1g is the ADJUDICATOR of the whole audit — the meta-card.)** "Forced within CR" = R2 / least-arbitrariness = COHERENCE at rule-favoured altitude, awaiting the world's non-local discriminator, NEVER correspondence. AND the modal-fallacy guard (thm:modal): "the absence of a local test is not the absence of the fact, and **declining to assert is not licence to deny**." 
 => This is the exact discriminator for the audit:
-   - A hedge that holds a within-CR result at do-not-assert *for world-correspondence* = TRUE boundary (§1g altitude). KEEP (balanced).
-   - A hedge that holds a within-CR result at do-not-assert *when the corpus has already FORCED it within CR* = FALSE boundary (fossil / the "declining to assert becomes a denial" error). CLEAN to earned within-CR weight.
+   - A hedge that holds a within-CR result at not claimed *for world-correspondence* = TRUE boundary (§1g altitude). KEEP (balanced).
+   - A hedge that holds a within-CR result at not claimed *when the corpus has already FORCED it within CR* = FALSE boundary (fossil / the "declining to assert becomes a denial" error). CLEAN to earned within-CR weight.
    The test for each hedge: is it hedging CORRESPONDENCE (keep) or is it hedging a WITHIN-CR forcing the corpus already established (clean)?
 
 **(A place the LIVING MAP itself needs updating — flagged for improvement.)** §1i's [†ONT-DISC] guard and §1i link 2 still carry the pre-bead fracture phrasing: "they share the sin→cosh mechanism but do not coincide as maps — **different turning points, different destinations**." That is the r913 language P7 thm:bead (r973/r974) SUPERSEDED (the map's own §1e link, the CLOSED BEAD card at L525, says so explicitly: "supersedes the earlier 'three distinct crossings with different destinations' framing"). So §1i is internally inconsistent with §1e on the bead. FIX (map improvement): reconcile §1i's σ/P/ξ guard with thm:bead — the three are distinct OPERATIONS with distinct loci (σ no seam, P the r=0 back-seam, ξ the X=α throat seam), but they are turning points OF ONE CLOSED BEAD, not "different destinations." Distinct-as-maps ≠ unrelated-destinations.
@@ -62,10 +62,10 @@ Bundle per coherent chunk.
 
 ## WHOLE MAP HELD (§1a–§1s read). Two more governing findings:
 
-**(1) The map ALREADY carries per-card altitude tags = the true-boundary register.** Each card marks whether its content is "forced within CR / established / built" (a WITHIN-CR result → a hedge holding it at do-not-assert is a FOSSIL) vs "coherence not correspondence / [reach] / do-not-assert on the world" (the TRUE correspondence-boundary → keep, ensure balanced). The discriminator for the whole audit:
+**(1) The map ALREADY carries per-card altitude tags = the true-boundary register.** Each card marks whether its content is "forced within CR / established / built" (a WITHIN-CR result → a hedge holding it at not claimed is a FOSSIL) vs "coherence not correspondence / conjecture / not claimed for the world" (the TRUE correspondence-boundary → keep, ensure balanced). The discriminator for the whole audit:
   - hedge sits on a card's "forced/established/built" content → FALSE boundary → clean to earned within-CR weight.
-  - hedge sits on a card's "coherence-not-correspondence / world-correspondence / [reach]" altitude → TRUE boundary → keep, ensure two-sided.
-  §1g is the adjudicator; §1r ("coherence shown is not correspondence earned"), §1j (six established, unification is [reach]) are the model balanced hedges.
+  - hedge sits on a card's "coherence-not-correspondence / world-correspondence / conjecture" altitude → TRUE boundary → keep, ensure two-sided.
+  §1g is the adjudicator; §1r ("coherence shown is not correspondence earned"), §1j (six established, unification is conjecture) are the model balanced hedges.
 
 **(2) The map is AHEAD of the corpus in places — it already flags fossils the papers haven't been updated for.** High-confidence, map-confirmed cleanup targets:
   - §1f: "Upgrade warranted: claim the lap in P3's abstract at the weight the corpus uses it." (P3's abstract never mentions the lap/conjugate branch though §sec:lap proves it and the whole corpus leans on it.) → P3 abstract fossil.
@@ -136,11 +136,11 @@ P4 was the paper where over-reach was most POSSIBLE (strongest empirical-forcing
 ### VERDICT: 3 real paper fossils FIXED (matter-frontier, pre-P14) + bibitem + 2 map-card resyncs; 2 true-boundaries KEPT. First substantive-fossil paper.
 The insidious-honest-hedge case, resolved with fine discernment:
 - **FOSSILS FIXED** (descent now BUILT in P14/JanzenMatter — §1q: generation count, chirality γ⁵, family symmetry S₃ are DELIVERED/forced-within-CR, "realised as a bound state, not posited"). P5 was written pre-P14, cited only the boundary paper (which framed it conjectural), and did NOT cite JanzenMatter at all (grep empty — confirms pre-P14 vintage):
-  - L470 (proof): "conjectural matter reading... developed do-not-assert in the boundary paper" → "a matter reading... framed do-not-assert in the boundary paper and since built as a fermion sector, forced within CR, in [JanzenMatter]: generation count, chirality γ⁵, family symmetry S₃ the discrete flavour structure the geometry forces, gauge content and mass spectrum the ordinary route, world-correspondence not asserted."
-  - L450 (kind distinction): "descent onto a propagating spinor sector is held do-not-assert" → "...is built as a fermion sector, forced within CR, in [JanzenMatter], with the world-correspondence held do-not-assert." (kind distinction itself kept — true)
-  - L466 (orientation parity): "held do-not-assert, the structurally indicated home of a matter sector" → "...the structurally indicated home of a matter sector... since built as a fermion sector, forced within CR, in [JanzenMatter] with the world-correspondence held do-not-assert." (geometric "residue/opening" description kept — true)
+  - L470 (proof): "conjectural matter reading... developed not claimed in the boundary paper" → "a matter reading... framed not claimed in the boundary paper and since built as a fermion sector, forced within CR, in [JanzenMatter]: generation count, chirality γ⁵, family symmetry S₃ the discrete flavour structure the geometry forces, gauge content and mass spectrum the ordinary route, world-correspondence not asserted."
+  - L450 (kind distinction): "descent onto a propagating spinor sector is stated without being claimed" → "...is built as a fermion sector, forced within CR, in [JanzenMatter], with the world-correspondence stated without being claimed." (kind distinction itself kept — true)
+  - L466 (orientation parity): "stated without being claimed, the structurally indicated home of a matter sector" → "...the structurally indicated home of a matter sector... since built as a fermion sector, forced within CR, in [JanzenMatter] with the world-correspondence stated without being claimed." (geometric "residue/opening" description kept — true)
   - Added JanzenMatter (P14) bibitem to P5's inline bib (3 undefined cites caught on compile — the P3 lesson again). P5 recompiles clean, 0 undef, 22pp.
-  - Map resync: §1i link 8 + final joint carried the same stale "do-not-assert/conjectural" — updated to "built in P14, world-correspondence do-not-assert."
+  - Map resync: §1i link 8 + final joint carried the same stale "not claimed/conjectural" — updated to "built in P14, world-correspondence not claimed."
 - **KEPT (true boundaries, held up hard):**
   - L482 (a2-distinct COLOUR coincidence): "whether the geometric A₂ and su(3)'s coincide structurally or by accident this remark leaves open." TRUE — the matter sector settled FLAVOUR (3 generations), NOT colour; su(3)⊄so(5,1) walls colour geometrically, so the colour-coincidence question genuinely stays open. Well-guarded against over-correction ("to conflate 'not a realised colour isometry' with 'a meaningless coincidence' would claim more than the argument supports"). KEEP.
   - L466 "apparent non-isometry of ±M charts is a feature of the representational record" — the "events exist" horn closure, stated correctly (not a hedge). KEEP.
@@ -182,12 +182,12 @@ Recursive audit (using P6's own §boundary discipline to audit P6):
 ### VERDICT: 1 fossil fixed + 1 orphan placed + a SELF-CORRECTION of my own P5 over-clean. §frontiers well-maintained.
 P7 §frontiers = 7 enumerated open items, each carried to a definite edge. Orphan-hunt on all 7:
 - item1 seam-crossing dynamics → A2.4 ✓; item3 η/baryogenesis → A2.2 ✓; item4 irreducible remainder → A6.2 ✓; item5 damping/peak-heights → A2.3/A1.3 ✓; item6 fermion descent → A4 ✓; item7 quantum completion → A3 ✓.
-- **item2 SHEET-TO-RULING assignment → ORPHAN, PLACED as A2.8 (Lane 1).** The map from the two distinct null rulings {A,B} to the two conjugate bead wings — derived: photon→real crossing; OPEN do-not-assert: the {A,B}→wings map. Earlier "A,B on ±π/3 wings" reading WITHDRAWN unsound r989 (conflated double-ruling with conjugate pair). Worked in WP_C3_SHEET_ASSIGNMENT.md + held do-not-assert in P7, but NOT in the plan. Added A2.8. (antimatter-naming in same item = correctly SETTLED, reflects antimatter pass — not a fossil.)
+- **item2 SHEET-TO-RULING assignment → ORPHAN, PLACED as A2.8 (Lane 1).** The map from the two distinct null rulings {A,B} to the two conjugate bead wings — derived: photon→real crossing; OPEN not claimed: the {A,B}→wings map. Earlier "A,B on ±π/3 wings" reading WITHDRAWN unsound r989 (conflated double-ruling with conjugate pair). Worked in WP_C3_SHEET_ASSIGNMENT.md + stated without being claimed in P7, but NOT in the plan. Added A2.8. (antimatter-naming in same item = correctly SETTLED, reflects antimatter pass — not a fossil.)
 - **FOSSIL FIXED:** L260 "develop in a forthcoming companion treatment" — that companion is P10 (canonical_time), built. Updated to "the companion canonical-time treatment [JanzenCanonicalTime]."
 
 ### ⚠ SELF-CORRECTION — my P5 (r996) edit was an OVER-CLEAN; P7 caught it:
-P7 item6 distinguishes TWO descents precisely: (a) the discrete skeleton / BOUND-MODE zero-modes — BUILT in P14 ("realised as a bound state, not posited"; §1q: "NOT a propagating spacetime field... on the leaf it is a bound state"); (b) the descent onto a full PROPAGATING spinor field sector — NOT built, "held do-not-assert, the frontier's live direction." My r996 P5 L450 edit said "the descent onto a propagating spinor sector is built as a fermion sector, forced within CR" — WRONG (claimed the propagating sector built; it isn't). Manufactured a false resolution = the exact failure the sweep prevents. CORRECTED:
-  - P5 L450 → "the discrete skeleton this grades (count, γ⁵, S₃) is since built as bound-state zero-modes of the existent leaf, forced within CR, in [JanzenMatter], while the descent onto a full propagating spinor field sector remains open, held do-not-assert."
+P7 item6 distinguishes TWO descents precisely: (a) the discrete skeleton / BOUND-MODE zero-modes — BUILT in P14 ("realised as a bound state, not posited"; §1q: "NOT a propagating spacetime field... on the leaf it is a bound state"); (b) the descent onto a full PROPAGATING spinor field sector — NOT built, "stated without being claimed, the frontier's live direction." My r996 P5 L450 edit said "the descent onto a propagating spinor sector is built as a fermion sector, forced within CR" — WRONG (claimed the propagating sector built; it isn't). Manufactured a false resolution = the exact failure the sweep prevents. CORRECTED:
+  - P5 L450 → "the discrete skeleton this grades (count, γ⁵, S₃) is since built as bound-state zero-modes of the existent leaf, forced within CR, in [JanzenMatter], while the descent onto a full propagating spinor field sector remains open, stated without being claimed."
   - P5 L466 → tightened "built as a fermion sector" to "occupied by the discrete skeleton — three chiral generations built as bound-state zero-modes... (the full propagating sector remaining open)."
   - P5 L470 → re-checked, was FINE ("the discrete flavour structure the geometry forces" — correctly scoped). No change.
   - Map §1i link 8 + final joint → corrected the same over-clean (both said "propagating spinor sector built"; now "discrete skeleton/bound-modes built, propagating sector open").
@@ -236,10 +236,10 @@ P9's §open self-audits: "One item is stated as open — the wall — below; a s
 ### VERDICT: EMPTY of paper fossils (holds its heavy caveat-load precisely); 1 narrow orphan placed (B.9, holding pen). Paper UNTOUCHED.
 The §1h-guard-flagged spots, each checked at source — all correct:
 - **su(3)/dimensional-rise caveat** (§discrete L240) = held EXACTLY per guard: "We assert neither the continuous su(3) nor the dimensional rise... a structure a framework merely PERMITS, as against one it REQUIRES, is on the programme's criterion of necessity no explanation but a description... the resonance is necessary, not sufficient, and silent on the dimension." R2/least-arbitrariness applied precisely. Leaves the a2/dimension question open (→ A4.2 tracked). No over-claim.
-- **Matter reading** (§discrete) — "conjectural matter reading... developed do-not-assert in boundary paper, and since built as a within-CR result — three chiral generations forced — in [JanzenMatter]." CORRECTLY scoped: the built thing is the discrete COUNT (P14 built), NOT the propagating sector. Matches my corrected P5 (no over-clean realized). Good.
+- **Matter reading** (§discrete) — "conjectural matter reading... developed not claimed in boundary paper, and since built as a within-CR result — three chiral generations forced — in [JanzenMatter]." CORRECTLY scoped: the built thing is the discrete COUNT (P14 built), NOT the propagating sector. Matches my corrected P5 (no over-clean realized). Good.
 - **Smeared closure** (§scope) — the §1h guard's key flag ("SMEARED CLOSURE IS A COROLLARY, NOT AN OPEN ITEM; do not report as open bracket-closure"). P12 presents it EXACTLY as "a corollary... not a residual bracket-closure here." Guard satisfied. No fossil.
 - **"Rungs are one fact"** (§scope close) — "a reading advanced there [p0], at that reading's weight; here the algebroid rung stands on its own." Correct altitude (coherence, held at p0's weight). Not an over-claim.
-- **Orphan check:** free-transverse-past-wall → A6.1/dynamics (tracked); the "rungs one fact" = a reading not an open item; **the internal hexad resonance (six-hinge = six-Nariai six-fold?) → ORPHAN.** Narrow pure-geometry identity Q, do-not-assert in P3/P5/P12, DISTINCT from A4.2 (A₂/su(3) abstract-type) and A4.1 (colour wall) and the σ-lift (SILVER_PLATTER-decided). Placed in holding pen as B.9 (teeth-less, narrow).
+- **Orphan check:** free-transverse-past-wall → A6.1/dynamics (tracked); the "rungs one fact" = a reading not an open item; **the internal hexad resonance (six-hinge = six-Nariai six-fold?) → ORPHAN.** Narrow pure-geometry identity Q, not claimed in P3/P5/P12, DISTINCT from A4.2 (A₂/su(3) abstract-type) and A4.1 (colour wall) and the σ-lift (SILVER_PLATTER-decided). Placed in holding pen as B.9 (teeth-less, narrow).
 - No fossil/forward-promise. Compile clean (9pp, 0 undef). UNTOUCHED.
 ### Tally: P3,P1,P2,P4,P5(+self-corr),P6(+A5.5),P7(fossil+A2.8+self-corr),P8(+B.8),P9(+A6.3-plan-fossil),P10(empty),P11(empty),P12(+B.9). The heaviest-guard keystone came back paper-clean — the caveats are all correctly held. Matter-frontier density (P13/P14/p0) is next; watch there.
 
@@ -293,7 +293,7 @@ The §1h-guard-flagged spots, each checked at source — all correct:
   - L690 (free-data passage): "The descent onto a PROPAGATING spinor sector [JanzenMatter]" → "The descent onto a spinor sector [JanzenMatter]."
   - Root cause confirmed: P14 (source) builds BOUND leaf-modes ("the norm in which the mode is normalizable is the one CR's ontology selects"; "realised as a bound state"; "wall-modes of the existent leaf"); the Dirac-norm propagating mode does NOT normalize. p0's own abstract-block (L669/L671) already said it correctly ("the descent onto a propagating spinor sector ASSERTED NOWHERE... the chiral content... NOT built here") — so §shadows drifted against p0's OWN abstract. Same class as P5(mine)/P13.
 - **Ontology-language held CORRECTLY (NOT a hedge — did not manufacture a false flaw):** "shadow/projection/manufactured/real by construction" all = built-by-construction-AND-real. L760-767 "the geometry a given observer charts is a projection of one intrinsically [real substrate]... real by construction... a true shadow"; "real everywhere, reached through imaginary instruments that land on real points." This is the load-bearing ontology stated correctly. NO fossil, nothing to clean. (Per standing instruction: reading "shadow" conventionally would manufacture a false flaw — did not.)
-- **Frontiers orphan-hunt (all tracked):** (1) free-data-count → A5.1; (2) constant ledger → A5.2; (3) discrete-residue matter home → A4.5/A4.6; (4) phase-at-seam/conjugacy programme → C.1–C.11 (holding pen, "do-not-assert both ways", teeth-less). No orphan.
+- **Frontiers orphan-hunt (all tracked):** (1) free-data-count → A5.1; (2) constant ledger → A5.2; (3) discrete-residue matter home → A4.5/A4.6; (4) phase-at-seam/conjugacy programme → C.1–C.11 (holding pen, "not claimed both ways", teeth-less). No orphan.
 - Map §1j ALREADY correct (no propagating-drift; "real by construction" held right) — map led the paper again.
 - p0 recompiles clean (20pp, 0 undef).
 
@@ -302,7 +302,7 @@ The §1h-guard-flagged spots, each checked at source — all correct:
 # ============================================================
 # THE WHOLE-SWEEP RECKONING (17/17 papers, r992–r1008)
 # ============================================================
-## What the sweep was: comb every hedge/do-not-assert/open-item in all 17 papers against the ontology map's established boundaries; classify each (A) FOSSIL discharged→clean, (B) UNDER-BALANCED→rebalance, (C) TRUE boundary→keep, (D) MIS-CITED GUARD→sever. Twin mandate: NO ORPHANED open items (hunt each to the plan) AND NO plan fossils (no closed item lingering as open). Standing guard throughout: never promote coherence→correspondence.
+## What the sweep was: comb every hedge/not claimed/open-item in all 17 papers against the ontology map's established boundaries; classify each (A) FOSSIL discharged→clean, (B) UNDER-BALANCED→rebalance, (C) TRUE boundary→keep, (D) MIS-CITED GUARD→sever. Twin mandate: NO ORPHANED open items (hunt each to the plan) AND NO plan fossils (no closed item lingering as open). Standing guard throughout: never promote coherence→correspondence.
 
 ## THE VERDICT: the corpus is exemplary and self-disciplined. The spine (P1–P12: geometric/causal/empirical-forcing/epistemic/canonical/dynamical/structural) is the SOURCE of the two-sided discipline the sweep enforces — most papers' own §open sections already do the sweep's job. Genuine finds concentrated at the EDGES, exactly as Daryl framed ("core sound; refinement at edges"):
 
@@ -315,7 +315,7 @@ The §1h-guard-flagged spots, each checked at source — all correct:
 
 ### WHAT HELD (the restraint results — "restraint IS a result"):
 - **P1** (taproot): empty, exemplary — qualifiers ARE the correspondence-boundary stated right.
-- **P2**: strongest two-sided exemplar (falsifies at full weight while fencing do-not-assert 5×, volunteers Sbierski against itself).
+- **P2**: strongest two-sided exemplar (falsifies at full weight while fencing not claimed 5×, volunteers Sbierski against itself).
 - **P6 §boundary**: "self-consistency is not soundness" — the corpus's #1 true-boundary, untouched.
 - **P10 §relation**: model evenhandedness (Page-Wootters/Rovelli/Barbour fair, disagreement at empirically-decidable premise).
 - **P11**: most scrupulous scope discipline ("three things explicitly NOT claimed"); no-hair held at convergence-not-single-theorem.

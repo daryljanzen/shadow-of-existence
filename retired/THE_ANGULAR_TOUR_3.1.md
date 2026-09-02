@@ -4,7 +4,7 @@
 
 # The angular tour (Stage 3.1) — the grounded structural chart of the 360° swing
 
-### Built at c31 (Daryl-directed), on the **now-sound dial** (the r₀-as-dial, √3-observer, and Nariai-tangent errors struck; the hinges pinned §10). This is the **receipt** the major P3 revision propagates from — the whole tour placed by computation, not asserted. Grounded vs [reach] tagged. Stated for reversal.
+### Built at c31 (Daryl-directed), on the **now-sound dial** (the r₀-as-dial, √3-observer, and Nariai-tangent errors struck; the hinges pinned §10). This is the **receipt** the major P3 revision propagates from — the whole tour placed by computation, not asserted. Grounded vs conjecture tagged. Stated for reversal.
 
 ## The dial
 
@@ -72,7 +72,7 @@ So the swing's full symmetry is the hexagon; **0–90 is the natural physical ce
 
 `figures/CR_keplerian_hinge_structure.svg` — the Keplerian receipt: the **hole is the incircle** (radius α) of the **equilateral of three hinges** (circumradius 2α, polar 0/120/240), the three sides the **Nariai double null rulings** tangent at their midpoints (polar 60/180/300), and the dual rulings crossing above/below at **$X_0=\pm\sqrt3\,\alpha$** on the hyperboloid. Six hinge vertices (three up, three down); one swings the door. [computed c31, §10.]
 
-## The taxonomy hook (§11 — the reach the tour is *for*, do-not-assert)
+## The taxonomy hook (§11 — the reach the tour is *for*, not claimed)
 
 The tour lays the discrete-symmetry skeleton bare on sound geometry: the **A₂ hexad (3⊕3̄), the interlocked threes, the parity**, all carried by the substrate that evolves as the cosh-expanding $S^3$. The **drill (r694, no lean):** whether this $A_2$/Nariai structure meets the SM's threes — the three-quark $\varepsilon_{ijk}$ colour skeleton of a baryon, the $3/\bar3$ as baryon/antibaryon — **for a reason or by coincidence of abstract type**. Grounded: the $A_2$ skeleton and the $3/\bar3$. Walled (theorem): colour as a continuous substrate isometry ($su(3)\not\subset so(5,1)$). **Open — the obsession:** the meaningfulness; P5 §424 rem:a2-distinct's "meaningless" verdict flagged as overreach (§11). Taxonomise, do not assert; drill both roads to $A_2$ for the bridge or its absence.
 
@@ -83,12 +83,12 @@ Daryl's reading, confirmed at source: each hinge connects, **via null ruling, to
 $$U_0 \to D_{120} \to U_{240} \to D_0 \to U_{120} \to D_{240} \to U_0,$$
 each edge tangent to the throat at its midpoint (the Nariai dual-ruling touch). **This skew hexagon is **resonant with** the A₂ hexad (not asserted as identity, r762) realized in the substrate:** the **up-horn triangle is the 3**, the **down-horn triangle the 3̄**, exchanged by the time reflection $X_0\mapsto-X_0$ (which swaps the two rulings; the diagram-automorphism parity $P$ is the *distinct* offset reflection $r_0\mapsto-r_0$) ($2M\mapsto-2M$), the reflection through the equator. So the abstract $3/\bar3$ of §11 is a *physical* figure: two triangles on the two horns, laced by the null generators through the hole. [computed c31; figure `figures/CR_skew_hexagon_A2.png`.]
 
-**The Kepler resonance (aesthetic, not a physics claim).** Nested perfect geometry at the heart of the substrate — the hyperboloid, the equatorial circle (the hole), the two triangles laced into a skew hexagon by the null rulings — is *Mysterium Cosmographicum's* intuition (1596) standing up ~430 years on: not planetary spheres, but the substrate's own nested geometric order carrying the discrete symmetry. Held as motivation/beauty; the physics reach (does this $A_2$ meet the SM) stays the r694 obsession, do-not-assert.
+**The Kepler resonance (aesthetic, not a physics claim).** Nested perfect geometry at the heart of the substrate — the hyperboloid, the equatorial circle (the hole), the two triangles laced into a skew hexagon by the null rulings — is *Mysterium Cosmographicum's* intuition (1596) standing up ~430 years on: not planetary spheres, but the substrate's own nested geometric order carrying the discrete symmetry. Held as motivation/beauty; the physics reach (does this $A_2$ meet the SM) stays the r694 obsession, not claimed.
 
 ## What's grounded vs reach
 
 - **Grounded/computed (this chart):** the dial, the 12-fold skeleton, the regimes, the A₂ hexad + $3/\bar3$ parity, the interlocked threes, the pseudo-sphere/−Nariai coincidence, the real-swing/imaginary-shadow overcritical, the FLRW back-arc homes, the pinned hinges (§10).
-- **[reach]/do-not-assert:** the taxonomy reading (A₂/Nariai ↔ SM threes); the dominant-family singling (§10); the antimatter-as-ruling-orientation guide (§8).
+- **conjecture/not claimed:** the taxonomy reading (A₂/Nariai ↔ SM threes); the dominant-family singling (§10); the antimatter-as-ruling-orientation guide (§8).
 
 ## Status / next
 

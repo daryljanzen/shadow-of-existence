@@ -24,7 +24,7 @@ The three adaptations `THE_METHOD §6` flagged all bite here:
 Every catalogued item held against two authorities — the **corpus** (`.tex` at source) and **its map** (`CORPUS_MAP` current state + the §1-cards + `THE_EVOLUTION_MAP`). Three piles:
 
 - **KEEP** — a genuine, still-open thread that coheres with the current corpus and represents real undone work or a real standing hold. *Bias: liberal.* When in doubt, keep.
-- **MAYBE** — coheres but is speculative (off-runway), or its status is genuinely ambiguous, or it's a "held [reach]/eyes-not-hands" item. Kept, but flagged as not-yet-actionable; parked in a clearly-labeled holding pen so it isn't mistaken for live work.
+- **MAYBE** — coheres but is speculative (off-runway), or its status is genuinely ambiguous, or it's a "held conjecture/eyes-not-hands" item. Kept, but flagged as not-yet-actionable; parked in a clearly-labeled holding pen so it isn't mistaken for live work.
 - **DISCARD (retire)** — demonstrably superseded, already resolved, or incoherent against the current corpus. *Bias: confident, but never deleted* — moved to a **retired scrap heap** (`RETIRED_PLANNING_THREADS.md`) with a one-line reason and its source, so the record survives and any retirement is reversible. Retiring ≠ erasing.
 
 **The gate for DISCARD is source-verified, not status-read-trusted.** The catalogue's STATUS-READ is provisional. An item is only retired when I've confirmed at source (in the corpus/map) that it's genuinely resolved or superseded. This is the "dig, don't grep / restraint" discipline: a report is not a check.

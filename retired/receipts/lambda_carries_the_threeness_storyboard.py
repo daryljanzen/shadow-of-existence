@@ -66,7 +66,7 @@ print("    'No Lambda, no third' is not a counterfactual. It is the observation 
 print("    belongs to the substrate and not to the matter.")
 
 print()
-print("BOUND, do-not-assert:")
+print("BOUND, not claimed:")
 print("  * No limit is taken and none is needed; the r1706 phrasing 'one term carries four things'")
 print("    is superseded -- it framed the substrate as a deletable term.")
 print("  * The GENERATIONS reading is P14's, from the three hinges. Untouched here.")

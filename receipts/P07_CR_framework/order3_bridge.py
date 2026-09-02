@@ -35,14 +35,14 @@ THE SCOPE OF THAT NEGATIVE, STATED EXACTLY (stage 5, and the reason this file wa
   and at the Nariai mass that crossing arrives exactly at E = 0, which is the same statement as the
   horizon cubic's double root there. The affine obstruction is that crossing seen from its two ends.
 
-WHAT REMAINS OPEN (do-not-assert, unchanged): whether the A_2 structure the E=0 end carries survives
+WHAT REMAINS OPEN (not claimed, unchanged): whether the A_2 structure the E=0 end carries survives
   the crossing to the E=1 end -- i.e. whether the two root sets are identified in any nontrivial
   sense. The family makes that question exact; it does not answer it. Nothing here bears on the
   separate, walled question of a realised colour isometry (su(3) not in so(5,1)).
 
 [P7 CR_framework -- lem:twoturnings and rem:tworealisations]
 STATUS: verified. The affine obstruction is exact; the energy family and its discriminant crossing
-  are exact; the identification of root sets is do-not-assert and is NOT decided by this file.
+  are exact; the identification of root sets is not claimed and is NOT decided by this file.
 HISTORY: r986 as an investigation whose docstring and VERDICT stated the negative far more broadly
   than the computation supports ("THE BRIDGE DOES NOT CLOSE", "verified NEGATIVE structural result").
   That phrasing cost real work: at r1428 a node read the header, took it as a general negative, and
@@ -201,7 +201,7 @@ print("\n[4e] the only sense in which they are trivially 'the same order-three':
 print("    S_3 contains a UNIQUE order-3 subgroup (the alternating A_3). So each cubic's Galois")
 print("    Z/3 is 'the' Z/3 abstractly -- as is every Z/3. Identifying the TWO S_3's (hence the two")
 print("    Z/3's) requires identifying the two ROOT SETS, which is the A_2 resemblance the corpus")
-print("    holds do-not-assert. Stage 4d rules out doing so by an affine map at fixed cubic; it does")
+print("    holds not claimed. Stage 4d rules out doing so by an affine map at fixed cubic; it does")
 print("    NOT rule out a relation that deforms one cubic into the other. Stage 5 exhibits one.")
 
 print("\n[4f] does an order-three bridge -- even if granted -- close the SHEET-ASSIGNMENT question?")
@@ -221,7 +221,7 @@ print("  NOT ESTABLISHED, and not decidable by the above: that the two cubics ar
 print("  affine test acts at FIXED cubic and is blind to a deformation between them; stage 5 exhibits")
 print("  the deformation -- they are the E=1 and E=0 ends of one energy family of turning points,")
 print("  separated by a discriminant crossing that lands exactly at E=0 for the Nariai mass.")
-print("  OPEN (do-not-assert): whether the A_2 structure at the E=0 end survives that crossing, i.e.")
+print("  OPEN (not claimed): whether the A_2 structure at the E=0 end survives that crossing, i.e.")
 print("  whether the two root sets are identified in any nontrivial sense. Not answered here.")
 print("="*78)
 

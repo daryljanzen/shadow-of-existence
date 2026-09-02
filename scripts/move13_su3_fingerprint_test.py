@@ -30,7 +30,7 @@ print("  Substrate dS_5 = SO(5,1)/SO(4,1); maximal compact (geometric/rotation) 
 print("  Test: su(3) c so(5)?  ->  NO (step 2: SU(3) needs >=6 real dims).")
 print("  => on dS_5 the continuous su(3) is NOT realizable as a geometric isometry.\n")
 
-print("=== 4. VERDICT (necessary-not-sufficient; do-not-assert held) ===")
+print("=== 4. VERDICT (necessary-not-sufficient; not claimed held) ===")
 print("  * The A_2 resonance IS the su(3) Cartan+Weyl skeleton (necessary piece) -- real, geometrically")
 print("    grounded (the cubic's roots-sum-to-0 + S_3). NECESSARY condition: PRESENT.")
 print("  * But on the established dS_5 substrate the SUFFICIENT step fails: su(3) NOT c so(5), so no")

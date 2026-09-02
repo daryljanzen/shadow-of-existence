@@ -15,7 +15,7 @@ WHAT THIS ESTABLISHES
   (C) that the lift -- the collapse-to-expansion handoff -- advances Re(tau) by EXACTLY ZERO.
       The handoff takes no cosmic time at all; it is a stretch of the contour, not of time.
 
-HELD, do-not-assert (and written into the placement too):
+HELD, not claimed (and written into the placement too):
   * WHICH landmark is 'the beginning of the observable cosmology' is NOT settled here. P7
     distinguishes the geometric closure through r=0 from the physical seeding of the layers at
     the finite-curvature seam, and says no finite-cosmic-time layer carries back to r=0. This

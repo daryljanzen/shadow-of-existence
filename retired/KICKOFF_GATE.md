@@ -303,7 +303,7 @@ The five steps, in order — each its own turn, ending in a hold:
      range, the cosmic clock, why the cut bends.
    - **Pass 4 — P12–P16 + p0/17, the keystone, the matter sector, the applications, the cosmogenesis, and the wrapper:** `algebroid_paper` (P12, the keystone
      that closes the core theory) → `boundary_paper` (P13, the Standard-Model geometric
-     boundary / no-go — colour-from-isometry walled three ways, do-not-assert register) →
+     boundary / no-go — colour-from-isometry walled three ways, not claimed register) →
      `matter_sector_paper` (P14, the fermion sector — the complement of P13: what the boundary's discrete
      residue delivers, three chiral generations + global S₃ + γ⁵ chirality, forced within CR, gauge/masses external) →
      `CR_cosmology` (P15, **the cosmology** — radiation-free flat-ΛCDM from causal reassignment, the scalar/CMB sector;
@@ -328,7 +328,7 @@ The five steps, in order — each its own turn, ending in a hold:
    we are), `THE_PLAN.md` (the route), `THE_VISION.md` (where we are going), `THE_SYNTHESIS.md` (what
    makes the three cohere), with `PUZZLE_the-idea_transcript.md` as the idea behind them — and, as the
    live frontier's own handoff, `SILVER_PLATTER_colour-frontier-arc.md`: the distilled colour-frontier
-   arc (the breadcrumb trail, the seven geometric constraints, the do-not-assert boundary) and the
+   arc (the breadcrumb trail, the seven geometric constraints, the not claimed boundary) and the
    sharply-posed first move it hands you — **test 1, the σ-lift**, three outcomes pre-named, with the
    standing warning that "σ is the bridge" is the *hinge*, not a constraint. Read it here, but do not
    take its open hinge as given; the casebook's face 19 (the synthesis step as where the guard drops)

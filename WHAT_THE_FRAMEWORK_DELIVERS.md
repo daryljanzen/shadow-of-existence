@@ -762,8 +762,8 @@ a measurement, and four of the six most recent bakes bounced.***
 ***A balance document that counts only what is delivered is the same failure as one that counts only what
 is open.*** *Measured in the bodies:*
 
-> ⛔⛭⛭ ***AND THE FIRST THING TO SAY ABOUT THIS TABLE IS THAT IT IS NOT A BACKLOG.*** *`do-not-assert`,
-> `not claimed` and `[reach]` are **DISCIPLINE, not debt** — verified by reading them: they decline the
+> ⛔⛭⛭ ***AND THE FIRST THING TO SAY ABOUT THIS TABLE IS THAT IT IS NOT A BACKLOG.*** *`not claimed`,
+> `not claimed` and `conjecture` are **DISCIPLINE, not debt** — verified by reading them: they decline the
 > **world-correspondence**, the **mass hierarchy's values**, the **propagating spinor sector**, the
 > content-level reading of a parity. **Those declines are correct as they stand and most of them SHOULD
 > remain declined**; "closing" one means doing the physics, not the paperwork. ⇒ **The ~64 items in the
@@ -771,9 +771,9 @@ is open.*** *Measured in the bodies:*
 
 | | count |
 |---|---|
-| **`do-not-assert`** markers | **38** |
+| **`not claimed`** markers | **38** |
 | explicit **"not claimed"** statements | **20** |
-| **`[reach]`** markers — held, not asserted | **6** |
+| **`conjecture`** markers — held, not asserted | **6** |
 | named **debts / owed** items | **38** |
 | named **open problems / edges / frontiers** | **32** |
 
@@ -1011,7 +1011,7 @@ answer is known.***
 
 ⌗ *That is the ratio. It is recorded here so it does not have to be recalled under pressure.*
 
-⛭ ***AND THE HONEST OTHER HALF, recorded with equal weight: six named-unrun quantities, 38 do-not-assert
+⛭ ***AND THE HONEST OTHER HALF, recorded with equal weight: six named-unrun quantities, 38 not claimed
 markers, 38 debts, two load-bearing buildable debts named by `P15` itself, lithium still over-predicted at
 $6$–$8\sigma$ as it is for everyone, the low-$\ell$ sector a wash, and $S=A/4$ adopted rather than
 derived.*** *None of that is hidden in the corpus and none of it is hidden here. **A count that flatters

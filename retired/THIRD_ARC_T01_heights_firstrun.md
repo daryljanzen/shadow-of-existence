@@ -27,7 +27,7 @@ Absolute first-peak/plateau came out ~40–60× vs observed ~5–6× (≈10× hi
 2. **The pattern brackets the data (normalization-robust).** The P1/P2 peak asymmetry — baryon loading pushes up, driving pulls down — brackets the observed ~2.0–2.3 between the no-driving extreme (too asymmetric) and the full-driving extreme (too symmetric). The observed value sits *inside* CR's driving bracket: suggestive that CR's intermediate driving can land the peaks. Suggestive only.
 
 ## What T0.1 actually is (scoped precisely now)
-The **calibrated CR seam-to-recombination transfer**: CR's radiation-free background, the potential evolution Ψ(η) with radiation present-but-not-in-the-rate (which fixes the driving), the effective temperature + Doppler + ISW, proper primordial normalization, the flat projection. A careful computation (a small dedicated transfer, not CAMB, not a 50-line sketch), tractable, the real remaining work of Tier 0. **The refutation edge:** if CR's specific driving lands the peak pattern outside the data. **The first indication:** it may not (the pattern brackets the data). Held do-not-assert until the calibrated transfer is run.
+The **calibrated CR seam-to-recombination transfer**: CR's radiation-free background, the potential evolution Ψ(η) with radiation present-but-not-in-the-rate (which fixes the driving), the effective temperature + Doppler + ISW, proper primordial normalization, the flat projection. A careful computation (a small dedicated transfer, not CAMB, not a 50-line sketch), tractable, the real remaining work of Tier 0. **The refutation edge:** if CR's specific driving lands the peak pattern outside the data. **The first indication:** it may not (the pattern brackets the data). Held not claimed until the calibrated transfer is run.
 
 ## Gate call: BANK (first run + scoping). No paper change.
 The sketch is banked as an exploration script (clearly marked LEADINGORDER), not a receipt of an established result; P13's open flag stands. The calibrated transfer is the next real work.
@@ -41,7 +41,7 @@ The sketch is banked as an exploration script (clearly marked LEADINGORDER), not
 - **Discipline held:** the check failed, so the CR numbers (which I did compute) are built on an invalid model and are **discarded, not reported**. This is the steady-hands guard working — validate on the known case, and when it fails, do not manufacture a prediction on the unknown one.
 
 ## Conclusion, twice-confirmed: T0.1 needs proper transfer machinery.
-r818 (overshot ~10×) and r820 (fails ΛCDM validation) together establish that the CR peak-height transfer is **a real computation, not a session sketch** — exactly why P13 wrote "we do not claim here." The genuine T0.1 work is a small but *correct* transfer (proper effective-temperature evolution, the driving from CR's actual Ψ(η), the real projection, honest normalization), validated against ΛCDM before CR is read off it. That is a genuine build — the honest next step, not a look. The one physical result that survives from the runs (robust, r818): CR's *density* equality z_eq≈3400 is standard, so CR's driving is a specific intermediate value, computable — the input the real transfer needs. Held do-not-assert on the heights until a *validated* transfer is run.
+r818 (overshot ~10×) and r820 (fails ΛCDM validation) together establish that the CR peak-height transfer is **a real computation, not a session sketch** — exactly why P13 wrote "we do not claim here." The genuine T0.1 work is a small but *correct* transfer (proper effective-temperature evolution, the driving from CR's actual Ψ(η), the real projection, honest normalization), validated against ΛCDM before CR is read off it. That is a genuine build — the honest next step, not a look. The one physical result that survives from the runs (robust, r818): CR's *density* equality z_eq≈3400 is standard, so CR's driving is a specific intermediate value, computable — the input the real transfer needs. Held not claimed for the heights until a *validated* transfer is run.
 
 ## Gate call: BANK. No paper change; no CR heights claim. The failed ΛCDM check is the receipt that the semi-analytic route is insufficient.
 
@@ -58,7 +58,7 @@ Two things, in order, both real focused work — not a session quick-solve:
 1. **Read CR's perturbation/background structure at source** — P13 §properframe/§flatlcdm/§tensions and the framework paper — until the radiation-free-rate perturbation dynamics are actually understood (not assumed). This is the prerequisite; the r821 failures trace to skipping it.
 2. **A validated numerical transfer** — a proper toy Boltzmann (stable, tested, ΛCDM-validated) or CAMB/CLASS with CR's modification correctly implemented — then read the CR heights off it.
 
-The heights stay **do-not-assert**. The robust input survives (z_eq≈3400 standard → CR's driving a specific intermediate value). Four honest attempts have precisely scoped the work and confirmed the validation discipline holds; the transfer is a genuine build for a focused effort, and the steady move is to stop here rather than manufacture a fifth.
+The heights stay **not claimed**. The robust input survives (z_eq≈3400 standard → CR's driving a specific intermediate value). Four honest attempts have precisely scoped the work and confirmed the validation discipline holds; the transfer is a genuine build for a focused effort, and the steady move is to stop here rather than manufacture a fifth.
 
 ## Gate call: BANK. No result, no paper change. The honest computational limit, reached with the guard intact.
 
@@ -77,7 +77,7 @@ The effective-temperature asymmetry is set by **a = Â/Ψ** (acoustic amplitude 
 - **Plausibility (genuine, not a save):** a hot handover with radiation comparable to matter is the kind of initial state that *could* imprint a large acoustic amplitude — not obviously doomed.
 - **Gated, precisely:** whether the handover delivers a≈3 is the **seam-handover thermodynamics**, deferred to the matter sector (`JanzenOperator,JanzenRange`) — the same handover that owns the deuterium yield. The verdict lives there, not in a knob.
 
-### Gate call: BANK. A real leading-order result; heights stay do-not-assert pending the handover amplitude.
+### Gate call: BANK. A real leading-order result; heights stay unclaimed pending the handover amplitude.
 No paper change — P13's "we do not claim here" stands until the handover thermodynamics delivers (or fails to deliver) a≈3. But the open piece is now sharp: **not "compute the transfer" but "does the hot seam handover supply the driven-equivalent acoustic amplitude?"** — a specific question with a refutation number, handed to the matter-sector handover physics. That is the correspondence arc's heights question, found the right way.
 
 ---
@@ -87,22 +87,22 @@ The r823 result left a sharp requirement: the hot seam handover must supply a≈
 - **ΛCDM:** a≈3 comes from radiation driving — the potential *decays* through the radiation-dominated *expansion*, resonantly pumping the acoustic modes.
 - **CR:** no radiation-dominated expansion. But the seam (ρ_r/ρ_m≈2, radiation comparable) is immediately preceded by the progenitor **collapse** — a *contracting* phase. A radiation-comparable *contracting* phase drives the acoustic modes too: the potential *grows* in contraction (sign flipped from the decay), the resonant pumping the same in magnitude. **Collapse-phase driving is CR's natural analogue of radiation driving, positioned exactly in the hot handover that sets a.**
 - **Consequence:** the r823 refutation-edge becomes a well-posed computation. CR is not stuck at adiabatic a≈1.1; it has a specific mechanism to reach a≈3, and "does it reach a≈3" = the acoustic amplification through the radiation-comparable contraction to the seam. This is the matter sector's open dynamical frontier (`slicing_operator`/`range_paper` name the dynamical/inhomogeneous/radiative matter open), the same handover that owns the deuterium yield.
-- **Discipline:** the collapse-phase drive is a genuine mechanism (a contracting radiation-comparable phase pumps modes — standard bouncing/contracting-cosmology physics), not a manufactured save; but the *quantitative* a≈3 is unproven, the open computation. Held do-not-assert; the mechanism turns a potential refutation into a specific buildable question.
+- **Discipline:** the collapse-phase drive is a genuine mechanism (a contracting radiation-comparable phase pumps modes — standard bouncing/contracting-cosmology physics), not a manufactured save; but the *quantitative* a≈3 is unproven, the open computation. Held not claimed; the mechanism turns a potential refutation into a specific buildable question.
 - **Sequence (Daryl, r824):** bank [done] → read the collapse/branch-point crossing dynamics at source → potentially update/bake → form a plan → work the plan.
 
 ## Read + update + plan (r824, following the sequence)
 **Read (slicing_operator §open):** the cosmogenesis branch-point crossing is *established well posed* (finite-curvature Nariai seam, characteristic, no curvature obstruction; foliation-preserving reassignment fixes the Λ-set rate; leaf-carried density crosses as inherited content) — but the **detailed worldline/field dynamics of the crossing is the open depth**. Key enabler: "the general inhomogeneous evolution is *ordinary dynamical evolution of the leaf*" — Einstein's dynamics unchanged. So the collapse-phase perturbation evolution is **ordinary GR perturbation theory on the contracting background**, not a new law.
 
-**Update (mechanism sharpened, banked, do-not-assert):** the progenitor collapse read inward is dust collapse that *heats* going back, so it carries a genuine **radiation-dominated contracting phase** — the time-mirror of ΛCDM's radiation era. In it the potential grows and resonantly drives the acoustic modes (time-symmetric with the expanding decay-driving). Combined with the corpus's **faithful transmission** across the degenerate seam (κ=0), the collapse-amplified amplitude transmits to our universe. So the sharpened mechanism: **collapse-phase radiation driving, time-symmetric with ΛCDM's, transmitted faithfully** — a grounded reason a≈3 is plausible, not a guess.
+**Update (mechanism sharpened, banked, not claimed):** the progenitor collapse read inward is dust collapse that *heats* going back, so it carries a genuine **radiation-dominated contracting phase** — the time-mirror of ΛCDM's radiation era. In it the potential grows and resonantly drives the acoustic modes (time-symmetric with the expanding decay-driving). Combined with the corpus's **faithful transmission** across the degenerate seam (κ=0), the collapse-amplified amplitude transmits to our universe. So the sharpened mechanism: **collapse-phase radiation driving, time-symmetric with ΛCDM's, transmitted faithfully** — a grounded reason a≈3 is plausible, not a guess.
 
-**Assess bake:** no paper change — the papers hold the detailed crossing dynamics open correctly; the amplitude stays do-not-assert. Banked here at working level.
+**Assess bake:** no paper change — the papers hold the detailed crossing dynamics open correctly; the amplitude stays unclaimed. Banked here at working level.
 
 **Plan (the handover-amplitude computation):**
 1. *Background:* the CR contracting phase — dust that heats inward, radiation-dominated deep in the collapse, ρ_r/ρ_m≈2 at the branch point (z_onset≈6850). Use the analytic CR scale factor read inward.
 2. *Perturbations:* the photon–baryon acoustic oscillator + potential (ordinary GR on the contracting background), from radiation-dominated contraction to the seam.
 3. *Amplification:* compute a = Â/Ψ delivered at the branch point; the target is whether the collapse radiation-driving lifts adiabatic a≈1.1 to the required a≈3.
 4. *Validation (the anchor):* the SAME machinery run on an *expanding* radiation era must reproduce ΛCDM's driving (a≈1.1→3). If it reproduces the known expanding case, the contracting case is trustworthy — the time-symmetry made a calibration.
-5. *Method discipline (the battles):* robust/analytic where possible (avoid the ODE overflow); validate before trusting; hold do-not-assert; report failure honestly.
+5. *Method discipline (the battles):* robust/analytic where possible (avoid the ODE overflow); validate before trusting; hold not claimed; report failure honestly.
 
 ## Work the plan (r824) — the result: the r823 tension DISSOLVES.
 Ran the driving as a robust linear oscillator Θ₀ₓₓ+Θ₀=−Ψ(x) (`computations/perturbation_verify/cr_collapse_driving.py`):
@@ -112,7 +112,7 @@ Ran the driving as a robust linear oscillator Θ₀ₓₓ+Θ₀=−Ψ(x) (`compu
 
 ### Honest scope
 - Robust: the driving mechanism (validated) and the time-symmetry (sound) — so IF CR's collapse contains the radiation-driving trajectory, CR matches ΛCDM. That IF is grounded (collapse heats inward; well-posed crossing; faithful transmission), not assumed.
-- Open depth (do-not-assert on the exact peaks): the *detailed* collapse-phase trajectory — whether it completes the full driving quantitatively — is the matter sector's open worldline dynamics (`slicing_operator §open`). The *qualitative resolution* (CR driven, ~ΛCDM, tension gone) is grounded; the third-digit match awaits the detailed collapse computation.
+- Open depth (not claimed for the exact peaks): the *detailed* collapse-phase trajectory — whether it completes the full driving quantitatively — is the matter sector's open worldline dynamics (`slicing_operator §open`). The *qualitative resolution* (CR driven, ~ΛCDM, tension gone) is grounded; the third-digit match awaits the detailed collapse computation.
 
 ### Gate call: BANK. A major working result — the peak-heights refutation-edge dissolves.
 No paper bake: P13's "we do not claim here" stands until the detailed collapse dynamics delivers the exact peaks, and the resolution rests on the matter sector's open worldline dynamics. But the heights are no longer a live refutation risk: the mechanism that supplies the amplitude is validated and time-symmetric with ΛCDM's, grounded in the collapse structure the corpus establishes. The correspondence arc's one open computation is answered qualitatively — CR's peaks match ΛCDM's — with the quantitative completion a matter-sector build.
