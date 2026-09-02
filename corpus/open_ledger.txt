@@ -138,5 +138,6 @@ fadc1e0d62 | CR_framework | DO-NOT-ASSERT | \emph{That the two are one structure
 
 7732ae80f2 | range_paper | REGISTERED | The vantage changes this range does \emph{not} classify are the irreducible ones: the interior c ## PO-25
 b4e31e9745 | groupoid_paper | REGISTERED | The irreducible interior reassignments (Kerr-inner, Reissner--Nordstr\ ## PO-25
-57a75485fd | SdS-slicing-curve_v2 | REGISTERED | \paragraph{Open.} One thing is open, and it is a question about \emph{reach} rather than about ownership. ## PO-25
-61b7711cef | SdS-slicing-curve_v2 | REGISTERED | What is open is whether the slicing curve reaches them---whether the cosmic foliation admits a slicing-curve description across an inner horizon. ## PO-25
+72e08625ce | SdS-slicing-curve_v2 | REGISTERED | \paragraph{Open.} One thing is open, and sec:lap states its obstruction exactly: with Q nonzero f -> +inf at the origin. ## PO-25
+8182c34d9b | SdS-slicing-curve_v2 | REGISTERED | What is open is whether a charged collapse reaches that stationary structure at all. ## PO-25: hands off to PO-13aab6a5fe8b | SdS-slicing-curve_v2 | REGISTERED | That question is the framework paper's, whose bead this loop is, and it is not settled here. ## PO-25, and it hands off to PO-13
+aab6a5fe8b | SdS-slicing-curve_v2 | REGISTERED | That question is the framework paper's, whose bead this loop is, and it is not settled here. ## PO-25, and it hands off to PO-13

@@ -21,16 +21,17 @@ OUT = os.path.join(ROOT, 'THE_FRONTIER.md')
 EST = {
     'PO-13': ('the misplaced phase — WHY the propagated comb runs short', 1, 1, 3, None,
         'r3092: the phase reset is justified by an UNBOUNDED tortoise phase that r2154 (1) showed is FINITE (0.2247 alpha). Wired PHZ; the comb moves hard. A carrier, not yet a fit'),
-    'PO-25': ('the irreducible interiors -- DOES THE SLICING CURVE REACH THEM', 1, 1, 4, None,
-        'r3825: PO-8 closed whether these are a FRONTIER of this construction and answered no -- in P07s words '
-        'ordinary interior analysis rather than a frontier. That closure was then misread, in the prose of three '
-        'papers, as putting them OUTSIDE THE FRAMEWORK. They are not outside it: the augmentation changes none of '
-        'general relativitys equations and fixes which of its foliations is physical, so those interiors carry a '
-        'physical foliation as every other region does. What is open is REACH: whether the slicing curve, built '
-        'from dr/dl = sqrt|f| on the exterior and through the horizons, continues across an INNER horizon -- a '
-        'second root of f -- or meets an obstruction of a new kind. The charged closed loop through r=0 in P03 is '
-        'the concrete case, obstructed by the inner horizon the charge raises, with P09 reaching the charged '
-        'EXTERIOR as a cut of the substrate while the interior is unreached.'),
+    'PO-25': ('the charged bead -- DOES A CHARGED COLLAPSE FORM THE CAUCHY HORIZON', 1, 1, 4, None,
+        'r3827: P03 states the obstruction exactly -- with Q nonzero, Q^2/r^2 dominates as r -> 0 so f -> +inf '
+        'rather than -inf, an inner Cauchy turning point appears, and r=0 becomes a TIMELIKE RN singularity '
+        'rather than the branch point through which the signed radius passes to the conjugate branch. So the '
+        'cosmogenetic loop has no branch point to close through when the collapsing matter carries charge. And '
+        'the limit is SINGULAR: r_inner = M - sqrt(M^2 - Q^2) -> Q^2/2M shrinks to zero as Q^2, but at ANY Q>0 '
+        'the origin is timelike and only at Q=0 exactly is it a branch point -- the bead closes on a set of '
+        'measure zero in Q. P03s charged case is the ETERNAL RN-de Sitter geometry, stationary; PO-13s object is '
+        'the DYNAMICAL collapse. The question is whether a charged collapse forms the eternal inner horizon at '
+        'all, real collapses being widely held not to, in which case the branch point survives dynamically and '
+        'the charged case rejoins the bead. HANDS OFF TO PO-13 IN THAT LIMIT.'),
     'PO-24': ('the bespoke transfer -- REACH THE ACOUSTIC PEAKS', 1, 1, 6, None,
         'r3815: PO-12 was struck at r2702 as discharged, and the strike discharged the COMPONENTS -- driving in '
         'closed form, source removal, the branch-point join, the super-horizon transfer, the onset shown spent. '
