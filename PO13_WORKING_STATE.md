@@ -9,8 +9,29 @@ status: WORKING DOCUMENT — deliberately not a paper
 # aborted the step before anything after it ran) made it visible to `check_currency` for
 # the first time. ** Declaring ignorance is not declaring currency, and only the owning
 # line can do the second. **
-current: r3841
+current: r3853
 ---
+
+# ⌗ r3853 — **A SPECULATION OF DARYL'S, AND THE ONE PIECE OF IT THAT IS ARITHMETIC**
+
+***Recorded as speculation. Nothing rests on it and no receipt tests it.***
+
+⇒ *That a **charge residual may be an inherited datum of the same class as $A_s$ and $n_s$**, and that
+this may be why this item has been hard to land. And, at the same weight: that **the branch point may be
+where $e$ is set**.*
+
+⛭ ***What is checkable was checked.*** *`P03` has mass $R$-odd and charge $R$-even, so at the branch point
+the odd term flips onto the conjugate branch while $Q^{2}/r^{2}$ **rides through unchanged** --- and that
+term only dominates below $r_{\rm inner}=Q^{2}/2M$, which is where any obstruction can live.*
+
+| reading of "a charge residual" | $Q$ | $r_{\rm inner}$ on the progenitor |
+|---|---|---|
+| **intensive** — a datum, order $e$ | $1\,e$ | $2.8\times10^{-99}$ m ⟶ ***$10^{-64}$ Planck lengths*** |
+| **extensive** — per-baryon asymmetry $\times\,10^{80}$ | $10^{59}\,e$ | $2.8\times10^{19}$ m |
+
+⇒ ***The two differ by 118 orders of magnitude, and which applies IS the question of whether a residual is
+a datum or a sum.*** *On the datum reading the obstruction is an epsilon, as Daryl expected, and
+`r3829`'s worry is conditional rather than standing.*
 
 # ⛭⛭⛭ r3841 — **THE FLAT COMB IS EXPLAINED IN `P07`, AND HAS BEEN ALL ALONG**
 
