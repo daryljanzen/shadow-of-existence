@@ -72,6 +72,39 @@ vocabulary what English has words for. All are done, and the sweep went wider th
 
 ---
 
+# ⌗ B2 · THE THREE BUILDS, MEASURED AT SOURCE — *r3801, before any of them is worked*
+
+***The question was whether these are genuinely unbuilt or whether a node left built work uncited. Checked
+one at a time against the papers. The answer separates into two kinds and one of the three is small.***
+
+| # | the build | measured state |
+|---|---|---|
+| **1** | **the descent onto a PROPAGATING spinor sector** (`P07`) | ⟐ **genuinely unbuilt, and precisely delimited.** *`P14` builds bound modes of the existent leaf, explicitly not the propagating theory. And the propagating GRAVITATIONAL mode is built — `P14`: "the unpolarised member, which carries the second propagating mode and with it handedness, **is built in the companion development**" (`P11`), with an explicit inhomogeneous propagating member carrying handedness as the definite-signed winding of its turning polarisation plane. ⇒ **"What is not built is the Dirac sector on it."** So the owed work is a Dirac field on a member that already exists* |
+| **2** | **the interacting tower as a DEFINED theory** — the UV definition of the mode sums (`P07`) | ⟐ **genuinely unbuilt, and it is a frontier of physics rather than of this corpus.** *`P07`: "this is the same wall any interacting quantum field theory meets", and the paper explicitly refuses the easy inference — **"the shared character of the wall does not settle it"** — carrying it as its own frontier item. ⌗ What is NOT owed and is often confused with it: the quantization AMBIGUITY, which is closed parameter-free* |
+| **3** | **the straddle as a computed fact** — whether the spectrum occupies both sides of $\tfrac34$ (`P10`) | ⛭ **CLOSABLE, and nearly immediate from the paper's own displayed form** |
+
+### ⛭ ON THE THIRD, WHICH IS THE ONE THAT WAS NOT REALLY A BUILD
+
+*`P10` displays the operator itself: $\hat\Gamma=\gamma+c\sum_n\hat\pi_n^2$, with $\gamma\le\tfrac14$ and
+$c>0$ — the paper states both, and states that the floor at $\gamma$ survives beyond leading order because
+the full inverse-square coefficient is positive on non-degenerate metrics.*
+
+⇒ *Each $\hat\pi_n^2$ is self-adjoint on $L^2(\mathbb{R})$ with spectrum $[0,\infty)$, so
+$\operatorname{spec}\hat\Gamma=[\gamma,\infty)$.* ***And $\gamma\le\tfrac14<\tfrac34$ puts the floor
+strictly below the threshold while unboundedness puts spectrum strictly above it, so both sides are
+occupied for every admissible $\gamma$.*** *The only way to fail is $\gamma>\tfrac34$, which the paper's
+own bound excludes.*
+
+⌗ ***So this one wants a receipt, not a construction*** — *and the paper already records what does NOT turn
+on it: "how the straddle falls does not bear on the closure below, which is supplied fibre by fibre and so
+cannot be broken by the size of the sub-threshold set."*
+
+⇒ ***SCOPE: of the three, one is a receipt, one is a Dirac field on an already-built member, and one is a
+standing frontier of quantum field theory that this corpus names rather than claims. No node left built
+work uncited here.***
+
+---
+
 # ⛭ C · EVERY REMAINING QUALIFICATION IN THE PAPERS
 
 ***106 rows. Every one, with no verdict column — the verdict is what gets decided by working
