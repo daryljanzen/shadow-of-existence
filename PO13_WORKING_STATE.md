@@ -1153,11 +1153,18 @@ exclude at $3.0\pm0.3$.** Recorded as measured and rejected.*
 Those agree to $0.04\%$.*** *So `LATARG` is doing exactly the work of setting the sound horizon to the value
 the sky wants, and the question is what physically sets it there.*
 
-⚠ ***AND A HOPE OF MINE THAT FAILED, RECORDED BECAUSE IT WOULD OTHERWISE BE RE-TRIED.*** *I expected the
-onset to coincide with the stated condition $\rho_r/\rho_m=2$. **It does not.** At CR's own parameters
-($\Omega_m=0.3066$, $H_0=73$) equality is at $z_{\rm eq}=3936$, so that condition sits at $z=7871$ against
-the fitted onset's $6761$ — **$16.4\%$ apart, not the sub-per-cent I asserted before computing it.** The
-instrument's comment quotes $z_{\rm eq}\simeq3402$, which is *Planck's* $\Omega_m h^2$ and not CR's.
+⌗ ***ON $\rho_r/\rho_m$ AT THE ONSET — corrected r3793: `P15` ALREADY STATES THIS, and states it more
+precisely than my note did.*** *I recorded it as a failed expectation of mine, that the onset would sit at
+$\rho_r/\rho_m=2$ and does not. **The paper says the same thing and says what follows from it**: at the
+fitted $\Omega_m$ with $H_0\simeq68$ the condition holds and $1+z_{\rm eq}=3399$ is exactly half the onset,
+while ***"read at the directly measured $H_0$ instead, the same $z_{\rm onset}$ gives
+$\rho_r/\rho_m=1.71$, so the datum is an order-unity band and not a determined number."*** *Both numbers
+reproduce here exactly — $1.718$ at $H_0=73$ and $1.979$ at $H_0=68$.*
+
+⇒ ***So this is not a discrepancy to chase. It is a stated property of the datum***, and `P07` says where a
+derivation would have to come from instead: *"the filter argument binds the primordial amplitude and tilt
+— $A_s$ and $n_s$ are of the frozen class — and **does not bind the composition**: $\rho_r/\rho_m$ is a
+background ratio, not a mode … **a derivation of the composition must be sought on other grounds.**"*
 
 ---
 
