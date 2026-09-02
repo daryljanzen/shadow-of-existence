@@ -135,3 +135,8 @@ fadc1e0d62 | CR_framework | DO-NOT-ASSERT | \emph{That the two are one structure
 
 27255439dd | CR_framework | NAMED-UNBUILT | A propagating fermion sector is now built on the framework's own chiral member~\cite{JanzenDynam
 45d67de07f | boundary_paper | SCOPE-BY-DESIGN | So the index question stays open, and on a sharper thing than it was: not on there being no ferm
+
+7732ae80f2 | range_paper | REGISTERED | The vantage changes this range does \emph{not} classify are the irreducible ones: the interior c ## PO-25
+b4e31e9745 | groupoid_paper | REGISTERED | The irreducible interior reassignments (Kerr-inner, Reissner--Nordstr\ ## PO-25
+57a75485fd | SdS-slicing-curve_v2 | REGISTERED | \paragraph{Open.} One thing is open, and it is a question about \emph{reach} rather than about ownership. ## PO-25
+61b7711cef | SdS-slicing-curve_v2 | REGISTERED | What is open is whether the slicing curve reaches them---whether the cosmic foliation admits a slicing-curve description across an inner horizon. ## PO-25

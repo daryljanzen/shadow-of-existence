@@ -21,6 +21,16 @@ OUT = os.path.join(ROOT, 'THE_FRONTIER.md')
 EST = {
     'PO-13': ('the misplaced phase — WHY the propagated comb runs short', 1, 1, 3, None,
         'r3092: the phase reset is justified by an UNBOUNDED tortoise phase that r2154 (1) showed is FINITE (0.2247 alpha). Wired PHZ; the comb moves hard. A carrier, not yet a fit'),
+    'PO-25': ('the irreducible interiors -- DOES THE SLICING CURVE REACH THEM', 1, 1, 4, None,
+        'r3825: PO-8 closed whether these are a FRONTIER of this construction and answered no -- in P07s words '
+        'ordinary interior analysis rather than a frontier. That closure was then misread, in the prose of three '
+        'papers, as putting them OUTSIDE THE FRAMEWORK. They are not outside it: the augmentation changes none of '
+        'general relativitys equations and fixes which of its foliations is physical, so those interiors carry a '
+        'physical foliation as every other region does. What is open is REACH: whether the slicing curve, built '
+        'from dr/dl = sqrt|f| on the exterior and through the horizons, continues across an INNER horizon -- a '
+        'second root of f -- or meets an obstruction of a new kind. The charged closed loop through r=0 in P03 is '
+        'the concrete case, obstructed by the inner horizon the charge raises, with P09 reaching the charged '
+        'EXTERIOR as a cut of the substrate while the interior is unreached.'),
     'PO-24': ('the bespoke transfer -- REACH THE ACOUSTIC PEAKS', 1, 1, 6, None,
         'r3815: PO-12 was struck at r2702 as discharged, and the strike discharged the COMPONENTS -- driving in '
         'closed form, source removal, the branch-point join, the super-horizon transfer, the onset shown spent. '
@@ -109,12 +119,12 @@ KIND = {'PO-13': 'READ', 'PO-14': 'BUILD', 'PO-15': 'READ', 'PO-16': 'READ',
 
 # ** PO-23 added r3809: the ultraviolet definition of the mode sums, the one part of P07's
 # three-part 'definition of the interacting tower' that is neither settled nor attempted. **
-ORDER = ['PO-13', 'PO-24', 'PO-23', 'PO-15', 'PO-14', 'PO-17', 'PO-18', 'PO-19', 'PO-20']
+ORDER = ['PO-13', 'PO-24', 'PO-25', 'PO-23', 'PO-15', 'PO-14', 'PO-17', 'PO-18', 'PO-19', 'PO-20']
 GROUP = {'PO-13': 'D', 'PO-14': 'A', 'PO-15': 'C', 'PO-16': 'D',
          # ** r3095: the four brought in from p0's frontiers and the field ledgers.  PO-17 and
          # PO-19 are substrate geometry; PO-18 is the constant ledger; PO-20 is analysis. **
          'PO-17': 'E', 'PO-18': 'E', 'PO-19': 'E', 'PO-20': 'E',
-         'PO-23': 'C', 'PO-24': 'D'}
+         'PO-23': 'C', 'PO-24': 'D', 'PO-25': 'E'}
 GNAME = {'A': 'the matter sector', 'B': 'the matter sector', 'C': 'the quantum sector',
          'D': 'the cosmology', 'E': 'the substrate geometry'}
 
