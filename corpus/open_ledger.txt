@@ -135,4 +135,3 @@ fadc1e0d62 | CR_framework | DO-NOT-ASSERT | \emph{That the two are one structure
 
 27255439dd | CR_framework | NAMED-UNBUILT | A propagating fermion sector is now built on the framework's own chiral member~\cite{JanzenDynam
 45d67de07f | boundary_paper | SCOPE-BY-DESIGN | So the index question stays open, and on a sharper thing than it was: not on there being no ferm
-74cb453001 | SdS-slicing-curve_v2 | REGISTERED | \paragraph{Open.} One thing remains open. ## the charged interior loop through r=0, obstructed by the inner horizon the charge raises -- family 4, the irreducible interior reassignments, and the framework paper records it as its own open frontier
