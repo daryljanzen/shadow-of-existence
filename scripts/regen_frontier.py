@@ -31,7 +31,12 @@ EST = {
         'measure zero in Q. P03s charged case is the ETERNAL RN-de Sitter geometry, stationary; PO-13s object is '
         'the DYNAMICAL collapse. The question is whether a charged collapse forms the eternal inner horizon at '
         'all, real collapses being widely held not to, in which case the branch point survives dynamically and '
-        'the charged case rejoins the bead. HANDS OFF TO PO-13 IN THAT LIMIT.'),
+        'the charged case rejoins the bead. HANDS OFF TO PO-13 IN THAT LIMIT. And the arbitrariness objection '
+        '-- that a loop closing only at Q=0 exactly is a flatness problem in other clothes -- is answered '
+        'structurally rather than numerically: the sub-Planckian answer is FALSE at cosmological scale, since on '
+        '1e80 baryons even the lab bound 1e-21 on |q_p+q_e|/e gives 1e59 net charges and an inner horizon near '
+        '1e19 m. The progenitor is ORDINARY MATTER and ordinary matter is neutral because it is made of atoms, so '
+        'Q=0 is inherited from the content rather than imposed on the geometry.'),
     'PO-24': ('the bespoke transfer -- REACH THE ACOUSTIC PEAKS', 1, 1, 6, None,
         'r3815: PO-12 was struck at r2702 as discharged, and the strike discharged the COMPONENTS -- driving in '
         'closed form, source removal, the branch-point join, the super-horizon transfer, the onset shown spent. '
