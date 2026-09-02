@@ -107,10 +107,7 @@ for 54). ***Never edit a row in another node's band; route instead.***
 
 | file | node | since | what |
 |---|---|---|---|
-| `receipts/P11_dynamics_paper/C50_the_dirac_sector_propagates_and_its_chirality_is_the_twists_sign.py` | 60 | r3802 | NEW — the Dirac sector on P11's unpolarised member |
-| `corpus/dynamics_paper.tex` | 60 | r3802 | one clause in `sec:unpolarized` landing the result |
-| `CARTAN_HOLONOMY_LEDGER.md` | 60 | r3802 | `C50`; and `P11`'s reach row said the connection was implicit only |
-| `receipts/INDEX.md` | 60 | r3802 | registering `C50` |
+| *(none — 60's r3802 rows released with the work)* | — | — | — |
 
 > ⌗ ⛭⛭⛭ **60's r3618: ALL SIX FIELD BAKES CLOSED, 102 PAPER-READS, NOTHING HELD.**
 > *Integrable systems, index theory, information theory, number theory, numerical analysis and

@@ -53,6 +53,7 @@ landing.*
 | **`C9` the moduli question — order 81, finite, vanishing $H^1$, zero-dimensional moduli, subregular (dim 4) not regular (dim 6)** | *"`P14` has it, and better"* | **BOUNCE CONFIRMED.** *P14 carries every element including the $3\times4-2\times8$ arithmetic's conclusion and the "dimension is a bonus and not the argument" discount* |
 | **`C10` the corpus computes TWO holonomies — the residue pairing's $S_4$ of order 24 (P5, P7) and the wall monodromies' $3^4$ of order 81 (P14) — different groups, different bases, sharing only a factor of three** | — | ***LANDED r3591*** — *placed in `ONTOLOGY_FOUNDATION_INDEX` §THE CROSS-PAPER JOINS as “TWO HOLONOMIES, NOT ONE”. **A claim about how corpus pieces relate is owned by the map, not by a paper** — the precedent is `K4`, landed there at `r1895`.* |
 | **⌗ `CH1` finite holonomy forces $F=0$ — so the flat bundle is a THEOREM, not a stipulation** | *60's r3535 lists this as homeless* | ***the missing LINK, and P12 now supplies the apparatus.*** *P14 derives finiteness (**"necessarily so, since the holonomy is branching and a branch structure has finitely many sheets"**) and argues you cannot **leave** the flat locus — but not that you are forced **into** it. **Ambrose–Singer at order 81 closes that**, and P12 already cites the theorem.* ⇒ **P14's `sec:` is the home; one clause** |
+| **⛭⛭ `C50` the twist IS a spin-connection component, and the fermion's chirality is its sign** | *one clause · `P11` `sec:unpolarized`* | ***LANDED r3802.*** *Not a pointer and not a re-reading: the connection this ledger recorded as **implicit only** is written out, and it turns out to carry `P11`'s own conserved charge as its $(23)$ block. The Dirac operator on that member reduces to four terms with the twist on $\gamma^5$ alone; the sector **propagates** (characteristics exactly the light cone) and the two chiralities take **opposite** momentum shifts $\mp b$, $b=c\,e^{-2\psi}/4$.* ⇒ **the orientation parity is a symmetry only as the joint $c\mapsto-c$ with $\gamma^5\mapsto-\gamma^5$** |
 | **⍀ `p0` CHECKED-NEGATIVE, and its `flat` is a different flatness** | — | **HELD, and worth keeping visible.** *`flat locus` runs through seven papers meaning **a slice's intrinsic curvature vanishing at a locus**; `CH1`'s flatness is **a connection's curvature vanishing identically**. Two different flatnesses, and only the second is a connection* |
 
 ### ⌗ WHAT THIS GATHER FOUND
@@ -235,6 +236,7 @@ the group, but in the substrate, whose Weyl group matches it at rank three and n
 | `C8` | is the substrate's Weyl group forced to be the same group? | ⚑ **NO, AND THAT IS WHERE THE WEIGHT BELONGS** — *the cubic forces 24; the coincidence with $W(\so(6,\mathbb C))$ is not forced* |
 | `C9` | does the flat bundle's moduli space admit deformations? | ⟐ **BOUNCE** r3446, receipted — *`P14` has it, and better* |
 | `C10` | how many holonomies does the corpus actually compute? | ⛔ **TWO, AND THIS LEDGER COMPUTES ONE** — r3446, receipted |
+| `C50` | `P11`'s row says its Levi-Civita connection is **implicit only** — write it down, and ask what a SPINOR sees on that member | ⊢ **WORKED r3802, receipted** — ⛭⛭ *the connection's $(23)$ block **IS** `P11`'s conserved twist, $\omega_{t\,23}=-\tfrac12 c\,e^{-2\psi}$, and it reaches the Dirac operator **only on $\gamma^5$*** |
 
 ---
 
@@ -340,7 +342,7 @@ asserts pass**; verified on the U(1) contrapositive, the `P08` Z₃ branch monod
 | `P08` | **WORKED** | $\mathbb Z_3$ branch-point monodromy; cover monodromy $S_3$/$\mathbb Z/3$ (`P08_the_branch_point_monodromy_is_Z3`, `order3_bridge`) |
 | `P09` | **WORKED** | second fundamental form fixes isotropy; extrinsic curvature $K_{ij}=\tfrac13\theta g_{ij}+\sigma_{ij}$, York split, momentum constraint owns 3 of 5 (`I6…`, `I7…`) |
 | `P10` | **CHECKED-NEGATIVE** | shift/lapse/ADM prose only; no connection, no $K_{ij}$ computation |
-| `P11` | **WORKED** *(adjacent)* | Gowdy wave-map $\mathbb H^2$ target, Gaussian curvature $-1$, polarised cut = geodesic; Levi-Civita connection implicit only (`P11_unpolarized_gowdy_cut`) |
+| `P11` | **WORKED** | Gowdy wave-map $\mathbb H^2$ target, Gaussian curvature $-1$, polarised cut = geodesic (`P11_unpolarized_gowdy_cut`) — ⛭ **and the connection is no longer implicit: written out at r3802, its $(23)$ block is the conserved twist $\omega_{t\,23}=-\tfrac12 c\,e^{-2\psi}$, reaching the Dirac operator only on $\gamma^5$** (`P11_dynamics_paper/C50_the_dirac_sector_propagates_and_its_chirality_is_the_twists_sign`) |
 | `P12` | **WORKED** | the **Atiyah sequence** $0\to\mathfrak h\to\mathfrak{so}(5,1)\times\mathcal C\to T\mathcal C\to0$; connection = its splitting; problem of time = **no flat connection**; **Ambrose–Singer**; $V_4$ holonomy $\to W(A_3)$ (`GROUP_full_order48`, `K8_orbit_type_filtration`) |
 | `P13` | **WORKED** | normal-bundle structure group $\mathfrak{so}(6)\to\mathfrak u(3)\to\mathfrak{su}(3)$; holonomy about Nariai closes the Weyl group; Maxwell field strength $F_{tr}=-Q/r^2$ (`P13_A3_factorization`, `P13_kretschmann_bead`) |
 | `P14` | **WORKED** | wall monodromies = **holonomy of a flat bundle** ($F\equiv0$, holonomy the complete invariant), finite order 81, real-form holonomy $\mathfrak{so}(3)$ (`P14_the_flat_bundle_cannot_carry_a_force`, `V4_chirality_parity`) — **flatness now a THEOREM, `CH1`** |
@@ -378,3 +380,71 @@ epistemic content was worked by the harmonic bake as `H25` (its criterion is a *
 criterion) and that is where it belongs.*
 
 ⇒ **This field now stands at 17/17 — every paper WORKED or CHECKED-NEGATIVE by name.**
+---
+
+## ⛭⛭⛭ `C50` — **THE CONNECTION THIS LEDGER RECORDED AS "IMPLICIT ONLY", WRITTEN OUT — AND IT WAS CARRYING `P11`'s CONSERVED CHARGE ALL ALONG** — *r3802*
+
+> *`P11`'s reach row read **"Levi-Civita connection implicit only"**. It was the one row in the
+> seventeen where this field's own object — a connection — was present in a paper and had never been
+> computed. So it was computed, and the reason to do it was not bookkeeping: `P07` carries an open
+> item, **"the descent onto a propagating spinor sector"**, whose owed remainder `r3801` had just
+> measured down to one thing — ***"what is not built is the Dirac sector on it"*** — where "it" is
+> exactly `P11`'s unpolarised member.* ⇒ ***One computation answers both.***
+
+### ⌗ WHAT THE CONNECTION TURNED OUT TO BE
+
+On the orthonormal coframe $e^0=e^{A}dt$, $e^1=e^{A}dz$, $e^2=e^{\psi}(dx+\omega\,dy)$,
+$e^3=R\,e^{-\psi}dy$ (with $A=\gamma-\psi$) of `P11` `eq:unpolarized`, the spin connection's
+transverse-rotation block is **not merely related to** the twist — ***it is the twist***:
+
+$$\omega_{t\,23}=-\tfrac12\,c\,e^{-2\psi},\qquad \omega_{z\,23}=-\tfrac12\,c_z\,e^{-2\psi},\qquad c=R\,e^{2P}Q_t .$$
+
+*Both asserted as exact symbolic zeros, with the control that the same identity written with $1/3$
+in place of $1/2$ is **false**.* ⛭ ***`P11` derived $c$ as a first integral of a wave map into
+$\mathbb H^2$ — a statement about the TARGET's isometry group. It is simultaneously a component of
+the frame connection on the DOMAIN, which is the object a spinor is transported by.*** *Nothing in
+either derivation predicts the other; they meet.*
+
+### ⛭⛭ AND WHAT A SPINOR SEES
+
+Separated on the two Killing directions and rescaled by $\Omega=e^{-A/2}R^{-1/2}$ — **which is
+exactly the leaf's own volume element, $\Omega^2=1/\sqrt h$** — every background-derivative term
+cancels and the massless Dirac operator is four terms:
+
+$$\gamma^0\partial_t+\gamma^1\partial_z+i\,m_x\gamma^2+i\,m_y\gamma^3+i\,b_z\,\gamma^5\gamma^1+i\,b_t\,\gamma^5\gamma^0=0$$
+
+with $(b_t,b_z)=(c_z,c)\,e^{-2\psi}/4$. ***The twist reaches the Dirac operator on $\gamma^5$ and
+nowhere else*** — an axial vector, and the Hodge dual of the twist 1-form.
+
+- ⛭ **IT PROPAGATES.** *The principal part carries neither the twist nor the transverse momenta, so
+  the characteristic matrix $\gamma^0\gamma^1$ is Hermitian with eigenvalues **exactly** $\pm1$: the
+  characteristics are the light cone on the inhomogeneous member as much as the homogeneous one, and
+  nothing is trapped.* **Measured packet speed $1.000000$**, against $0.926655$ when a transverse
+  momentum is switched on — *so the measurement can come out otherwise, which is what makes the
+  first number a measurement.*
+- ⛭ **THE TWO NORMS AGREE HERE.** *`P14` established that the choice of norm is load-bearing and not
+  a convention. On this member the factor that flattens the reduced operator **is** the leaf's volume
+  element, so the conserved spacetime Dirac norm and the leaf's proper-measure norm are the **same
+  integral**. `P14`'s disagreement lives at its horizons; this member has none in the $(t,z)$ sector.*
+- ⛭⛭⛭ **THE CHIRALITY IS THE TWIST'S SIGN.** *At vanishing Killing momenta the operator splits on
+  $\gamma^5$ into $E_R=\pm(k-b)$ and $E_L=\pm(k+b)$ — **opposite** momentum shifts.* ⇒ ***The
+  orientation parity is a symmetry only as the JOINT operation $c\mapsto-c$ with
+  $\gamma^5\mapsto-\gamma^5$; neither half alone is.*** *Evolved on a genuine vacuum-$\Lambda$
+  member the two chiralities accumulate a relative phase $2\!\int\!b\,dt$ — measured $0.326988$
+  against a predicted $0.326988$, identically zero at $c=0$, reversing with the sign of $c$.*
+
+### ⌗ THE BOUNDARY, MEASURED RATHER THAN ASSUMED
+
+***The locking is exact in the Killing zero mode and breaks when a transverse momentum is on***: at
+$k_x=0.9$ the relative phase is $0.370120$ against $0.326988$. *That is the expected physics —
+$m_x,m_y$ are mass terms on the reduction and a mass breaks chirality — and it is reported because
+the alternative is a reader discovering it. The torus always carries $k_x=k_y=0$, so the locked
+sector always exists.*
+
+⚠ ***NOT CLAIMED:*** *any Standard-Model identification, any generation count, the compact-face gauge
+sector, or the interacting tower. And no new $\gamma^5$ identification — `P11`'s is used, not
+re-derived. What is new is that the two handednesses are **one field's dispersion relation** rather
+than two sectors agreeing.*
+
+⇒ ***`P11`'s reach row moves from `WORKED (adjacent)` to `WORKED`, and the adjacency was the whole
+point: a connection recorded as implicit is a connection nobody has looked at.***

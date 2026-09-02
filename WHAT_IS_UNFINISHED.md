@@ -79,9 +79,46 @@ one at a time against the papers. The answer separates into two kinds and one of
 
 | # | the build | measured state |
 |---|---|---|
-| **1** | **the descent onto a PROPAGATING spinor sector** (`P07`) | ⟐ **genuinely unbuilt, and precisely delimited.** *`P14` builds bound modes of the existent leaf, explicitly not the propagating theory. And the propagating GRAVITATIONAL mode is built — `P14`: "the unpolarised member, which carries the second propagating mode and with it handedness, **is built in the companion development**" (`P11`), with an explicit inhomogeneous propagating member carrying handedness as the definite-signed winding of its turning polarisation plane. ⇒ **"What is not built is the Dirac sector on it."** So the owed work is a Dirac field on a member that already exists* |
+| **1** | **the descent onto a PROPAGATING spinor sector** (`P07`) | ⛭⛭ **BUILT r3802 — see the note below.** *The r3801 measurement, kept for the record:* ⟐ **genuinely unbuilt, and precisely delimited.** *`P14` builds bound modes of the existent leaf, explicitly not the propagating theory. And the propagating GRAVITATIONAL mode is built — `P14`: "the unpolarised member, which carries the second propagating mode and with it handedness, **is built in the companion development**" (`P11`), with an explicit inhomogeneous propagating member carrying handedness as the definite-signed winding of its turning polarisation plane. ⇒ **"What is not built is the Dirac sector on it."** So the owed work is a Dirac field on a member that already exists* |
 | **2** | **the interacting tower as a DEFINED theory** — the UV definition of the mode sums (`P07`) | ⟐ **genuinely unbuilt, and it is a frontier of physics rather than of this corpus.** *`P07`: "this is the same wall any interacting quantum field theory meets", and the paper explicitly refuses the easy inference — **"the shared character of the wall does not settle it"** — carrying it as its own frontier item. ⌗ What is NOT owed and is often confused with it: the quantization AMBIGUITY, which is closed parameter-free* |
 | **3** | **the straddle as a computed fact** — whether the spectrum occupies both sides of $\tfrac34$ (`P10`) | ⛭ **CLOSABLE, and nearly immediate from the paper's own displayed form** |
+
+### ⛭⛭⛭ ON THE FIRST, WHICH IS NOW BUILT — *r3802*
+
+***The Dirac sector on `P11`'s unpolarised Gowdy--de Sitter member exists, and the question the item
+asks has an answer: IT PROPAGATES.***
+`\rcpt{C50_the_dirac_sector_propagates_and_its_chirality_is_the_twists_sign}`, one clause in `P11`
+`sec:unpolarized`, `C50` in `CARTAN_HOLONOMY_LEDGER`.
+
+- **It propagates.** *The principal part of the separated operator carries neither the twist nor the
+  transverse momenta, so the characteristic matrix $\gamma^0\gamma^1$ has eigenvalues **exactly**
+  $\pm1$: the characteristics are the light cone and nothing is trapped — measured packet speed
+  $1.000000$, against $0.926655$ once a transverse momentum is on.* **Against `P14`'s wall modes,
+  which BIND because a superpotential changes sign; there is no wall in $z$.**
+- **The norm question `P14` made load-bearing is settled here, and the two agree** — *the factor
+  that flattens the reduced operator is the leaf's own volume element ($\Omega^2=1/\sqrt h$), so the
+  conserved spacetime Dirac norm and the leaf's proper measure are the same integral. `P14`'s
+  disagreement is at horizons this member does not have.*
+- ⛭⛭ **And the payoff nobody asked for: the twist IS a spin-connection component**,
+  $\omega_{t\,23}=-\tfrac12 c\,e^{-2\psi}$, reaching the Dirac operator on $\gamma^5$ alone. *The two
+  chiralities take **opposite** momentum shifts $\mp b$, $b=c\,e^{-2\psi}/4$, so the orientation
+  parity is a symmetry only as the joint $c\mapsto-c$ with $\gamma^5\mapsto-\gamma^5$.* ⇒ ***The
+  graviton's handedness and the fermion's are ONE DATUM on this background*** — which `P11`
+  `sec:chirality` argued from two sectors returning the same parity, and which is here a single
+  field's dispersion relation.
+
+⚠ ***WHAT IS STILL OWED, AND IT IS NOT NOTHING.*** *Family **6** above — the propagating fermion
+sector **with the compact-face gauge sector and the mass hierarchy** — is broader than the item this
+closes, and those two halves stay open. This is a massless test field on one member: no
+back-reaction, no quantisation, no Standard-Model identification.*
+
+⛔ ***AND ONE STALE SENTENCE THIS CREATES, NAMED RATHER THAN LEFT TO BE FOUND.*** *`CR_framework`
+(`P07`) still reads **"Its one remaining structural step is the descent onto a propagating spinor
+sector"** — row 13 of section C below. On the r3801 measurement that step is now taken. **`P07` is
+not this line's to edit under the build request, so it is recorded here instead of silently left
+true-looking**: one sentence, in `P07`, owed.
+
+---
 
 ### ⛭ ON THE THIRD, WHICH IS THE ONE THAT WAS NOT REALLY A BUILD
 
