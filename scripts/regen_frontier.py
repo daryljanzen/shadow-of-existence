@@ -21,6 +21,18 @@ OUT = os.path.join(ROOT, 'THE_FRONTIER.md')
 EST = {
     'PO-13': ('the misplaced phase — WHY the propagated comb runs short', 1, 1, 3, None,
         'r3092: the phase reset is justified by an UNBOUNDED tortoise phase that r2154 (1) showed is FINITE (0.2247 alpha). Wired PHZ; the comb moves hard. A carrier, not yet a fit'),
+    'PO-23': ('the ultraviolet definition of the mode sums — ATTEMPT IT', 1, 1, 4, None,
+        'r3809: NEVER ATTEMPTED, which is the whole of its state. P07 names three parts to "the definition of the '
+        'interacting tower" and TWO ARE SETTLED: the spectrum of Gamma-hat is computable branch by branch, and it is '
+        'bounded below because the full inverse-square coefficient is positive wherever the metric is non-degenerate. '
+        'The third is the UV definition of the sums. The problem space is narrower than the general one by four '
+        'separately-closed items: the self-adjoint boundary CONDITION is closed parameter-free and holds for either '
+        'ordering; the ORDERING is external, an epistemic gap of one physical datum rather than a residual freedom of '
+        'the quantization; the classical nonlinear Lambda>0 regime is settled, background an attractor and the '
+        'propagating sector ghost-free to all orders; and the 3/4 threshold has two derivations sharing no step '
+        '(r3807), so it is fixed by the operator own singularity structure and is not a quantisation artefact. '
+        'And the background is a FIXED maximally symmetric geometry with a SINGLE scale, not a general curved one. '
+        'P07 refuses the easy exit: "the shared character of the wall does not settle it."'),
     'PO-15': ('the ordering — EXHAUST the selection candidates', 1, 1, 3, None,
         'r3015: THE STEP IS AN EXHAUSTION. The thermal state is eliminated (it selects the Friedrichs extension, which is defined FROM the form an ordering produces). Enumerate what else could select one — the substrates symmetry, the seams characteristic structure, the deparametrization — and either find one or state the choice is external WITH the enumeration as evidence'),
     'PO-14': ('the unbuilt chiral member — THE BUILD', 1, 1, 5, None,
@@ -85,11 +97,14 @@ KIND = {'PO-13': 'READ', 'PO-14': 'BUILD', 'PO-15': 'READ', 'PO-16': 'READ',
         # for them and WORK is used. **
         'PO-17': 'READ', 'PO-18': 'READ', 'PO-19': 'WORK', 'PO-20': 'WORK'}
 
-ORDER = ['PO-13', 'PO-15', 'PO-14', 'PO-17', 'PO-18', 'PO-19', 'PO-20']
+# ** PO-23 added r3809: the ultraviolet definition of the mode sums, the one part of P07's
+# three-part 'definition of the interacting tower' that is neither settled nor attempted. **
+ORDER = ['PO-13', 'PO-23', 'PO-15', 'PO-14', 'PO-17', 'PO-18', 'PO-19', 'PO-20']
 GROUP = {'PO-13': 'D', 'PO-14': 'A', 'PO-15': 'C', 'PO-16': 'D',
          # ** r3095: the four brought in from p0's frontiers and the field ledgers.  PO-17 and
          # PO-19 are substrate geometry; PO-18 is the constant ledger; PO-20 is analysis. **
-         'PO-17': 'E', 'PO-18': 'E', 'PO-19': 'E', 'PO-20': 'E'}
+         'PO-17': 'E', 'PO-18': 'E', 'PO-19': 'E', 'PO-20': 'E',
+         'PO-23': 'C'}
 GNAME = {'A': 'the matter sector', 'B': 'the matter sector', 'C': 'the quantum sector',
          'D': 'the cosmology', 'E': 'the substrate geometry'}
 
