@@ -160,6 +160,46 @@ work uncited here.***
 
 ---
 
+# ⌗ C0 · THE SET SIZED — *r3813, all 99 rows read rather than sampled*
+
+***Sized by what each row ASKS FOR, not by its verdict label. The labels were assigned when the rows
+were written and several are now stale; the text is what governs.***
+
+| what the row is | count | what it needs |
+|---|---|---|
+| **the paper declining a claim outside its scope** | ~52 | ⛭ *nothing. This is a paper saying what it does not cover, which is what papers do* |
+| **naming a debt** | **35** | *read one by one — see below* |
+| **register or method prose** | 8 | *candidates for cutting; the corpus narrating its own machinery* |
+| **already closed, row stale** | 6 | ⇒ *the live work* |
+
+### ⌗ THE 35 DEBT ROWS, READ
+
+⛭ ***About eight are `P14` REDUCING its own debt with results, and they are the good case***: *"the
+undelivered content is two items and not three"; "the hypercharges are not a third undelivered item",
+following from the per-wall anomaly conditions once the multiplets are given; "not that the coupling is
+unbuilt but that a coupling is not the kind of thing a holonomy supplies". **A paper narrowing what it
+owes, by proving things. Nothing to do.***
+
+⌗ ***Three are the corpus's genuine open problems, correctly stated, and each now has a register row***:
+*`P07`'s "what the driving does on this rate — the potential's own evolution, derived rather than read off
+its fingerprint" is **`PO-13`**; `P07`'s ultraviolet definition of the mode sums is **`PO-23`**; and
+`P15`'s bespoke transfer — **"a computation this sequence owes and has not yet run"**, which needs first
+specifying how the fluctuations gravitate on the geometrically fixed background, a piece standard Boltzmann
+codes cannot supply because they tie radiation's gravity to its presence — is one of the two load-bearing
+builds `P15` names itself.*
+
+⚠ ***One reading worth recording, because it is nearly a false positive.*** *`P15` `sec:envelope` DOES
+derive the potential in closed form — so `P07`'s "derived rather than read off its fingerprint" looks
+stale. **It is not**: the envelope derivation is on the COLLAPSE leg, and `P07`'s sentence is about the
+driving on the EXPANDING side, which `r3683`–`r3725` measured as exactly what is unsettled. **Same words,
+different leg.***
+
+⇒ ***SO THE STALENESS IS CONCENTRATED, NOT SPREAD.*** *It sat almost entirely in the propagating-spinor
+cluster — **five sites across four papers, including `P07`'s ABSTRACT** — all cleared at `r3805` and
+`r3811`. The rest of the debt rows say true things.*
+
+---
+
 # ⛭ C · EVERY REMAINING QUALIFICATION IN THE PAPERS
 
 ***106 rows. Every one, with no verdict column — the verdict is what gets decided by working
