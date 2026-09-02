@@ -78,7 +78,6 @@ f1d136b8cf | CR_cosmology | SCOPE-BY-DESIGN | None of these unsettles the result
 ae81e04952 | CR_framework | SCOPE-BY-DESIGN | What content survives for a perpetually collapsing ultra-compact body---as with the local particle production of the preceding subsections---is not settled by the horizon-thermodyn
 82f30321f0 | CR_framework | SCOPE-BY-DESIGN | First, the constructions carry their own scope: the slicing operator, the range, the deparametrization, and the algebroid closure are established on the symmetry-reducible sector--
 38db123e1e | SdS-slicing-curve_v2 | SCOPE-BY-DESIGN | \emph{What is not claimed: nothing here bears on \emph{why} the cosmological reassignment selects the degenerate member---that selection is the framework paper's trichotomy and sta
-5f6278aceb | SdS-slicing-curve_v2 | SCOPE-BY-DESIGN | \paragraph{Open.} The account is, at its stated scope, complete; what remains open is named below and lies outside that scope by design.
 be23f347a9 | algebroid_paper | SCOPE-BY-DESIGN | \section{Scope and what is open}\label{sec:scope} The verification above is, throughout, on the \emph{symmetry-reducible sector}.   ## P12's scope section; its three items are Computed / the handoff / the sector itself -- all scope-delimitation. The r2580 test case that gave the tense discriminator
 81776c88ae | boundary_paper | SCOPE-BY-DESIGN | \section{What stays open}\label{sec:open} Two things sit deliberately outside the boundary of Proposition~\ref{prop:boundary}, and naming them is part of stating the result honestl
 8af49f3d48 | boundary_paper | SCOPE-BY-DESIGN | Second, coherence with the empirical Standard Model as an \emph{independent} ground: the Standard Model is itself a century-constrained body of fact, and whether that fact---read a   ## 'read as an external constraint rather than derived from the bare geometry' -- names a ground the paper deliberately does not stand on
@@ -135,3 +134,5 @@ fadc1e0d62 | CR_framework | DO-NOT-ASSERT | \emph{That the two are one structure
 1e2552ace7 | SdS-slicing-curve_v2 | DO-NOT-ASSERT | That this is the right shape for such a distinction is noted and not claimed; testing it is not this paper|s work.
 
 27255439dd | CR_framework | NAMED-UNBUILT | A propagating fermion sector is now built on the framework's own chiral member~\cite{JanzenDynam
+45d67de07f | boundary_paper | SCOPE-BY-DESIGN | So the index question stays open, and on a sharper thing than it was: not on there being no ferm
+f7e99fdfd4 | SdS-slicing-curve_v2 | SCOPE-BY-DESIGN | What lies outside it is settled in this paper or in its companions, as recorded below; what remains open is the charged interior loop, named at the end.
