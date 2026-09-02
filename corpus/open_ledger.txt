@@ -27,8 +27,6 @@
 #
 # Built r2593.
 
-bdc046ff9e | boundary_paper | DO-NOT-ASSERT | The orbifold-type route, by contrast, reads \emph{more openly} than a first pass had it: because the parity acts as $\gamma^5$---a chirality projector---a discrete projection by it   ## the orbifold-type route 'reads more openly than a first pass had it' -- a lead held open on a stated structural reason, not a gap
-a32dd58253 | geometric_core_paper | DO-NOT-ASSERT | How the phase structure at the seam reads against trajectories is not settled here, and we do not claim it: the geometry is established and that reading remains open.
 3f17585fc1 | CR_framework | METHOD-PROSE | What the framework does not yet build is set out as its open problems at the close (\S\ref{sec:frontiers}): foremost the Standard-Model matter sector, whose \emph{discrete flavour    ## a pointer to sec:frontiers, not a claim
 3760ef27fb | CR_framework | METHOD-PROSE | The reach established in this paper and its companions is gravitational and cosmological---the symmetry-reducible vacuum sector of general relativity read as causal reassignments o   ## 'the framework's present boundaries ... are set out as the open problems' -- a pointer, not a claim
 690ac2c899 | SdS-slicing-curve_v2 | METHOD-PROSE | \section{What is established, and what is open} \paragraph{Established.} The slicing curve $r(l)$, $dr/dl=\sqrt{|f|}$, with $f=1-2M/r-r^{2}/\alpha^{2}$, is a single construction at   ## a section heading plus its 'Established' roll-call; not a claim
