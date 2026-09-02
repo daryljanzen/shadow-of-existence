@@ -37,6 +37,29 @@ not by being reclassified.***
 
 ---
 
+# ⛭ A2 · THE PROSE PASS — **CLOSED r3797**
+
+***Sixteen items on this list were jargon rather than physics: a sentence each, saying in invented
+vocabulary what English has words for. All are done, and the sweep went wider than the list.***
+
+| | |
+|---|---|
+| `boundary_paper` | ⛭ **17** — including *"the gate is open and has been walked"* → *"the construction is available and has been carried out"* |
+| `CR_framework` | ⛭ 7 |
+| `geometric_core_paper` | ⛭ 14 — plus two `\textbf{[...]}` status stamps that wrap across lines and so escaped the `r3787` sweep |
+| `matter_sector_paper` | ⛭ 5 |
+| `SdS-slicing-curve_v2` | ⛭ 4 |
+| `groupoid_paper`, `janzen_circle_v3`, `cosmogenesis_paper`, `algebroid_paper` | ⛭ 4 |
+| **`receipts/INDEX.md`** | ⛭ **16** — *the generated appendices inherit their text from here, so seven `appendix_receipts_*.tex` carried the jargon into the papers from the receipt registry* |
+
+⇒ ***Corpus-wide the count went 36 → 0 in the paper bodies. The six left are inside `%` comments.***
+
+⌗ ***Two words were carrying real content and are now stated rather than nicknamed.*** *"Walled" names a
+**proved exclusion** — $\mathfrak{su}(3)\not\subset\mathfrak{so}(5,1)$ — and now says "excluded".
+"Do-not-assert" marks a structural fact **recorded without being claimed as physical**, and now says so.*
+
+---
+
 # ⛭ B · THE THREE NAMED-UNBUILT — *`corpus/open_ledger.txt`'s own hardest verdict: "a real construction, named and not built"*
 
 ***Four rows carry this verdict, not three.***

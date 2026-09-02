@@ -242,7 +242,7 @@
 \item[\label{rcpt:P14_the_flat_bundle_cannot_carry_a_force}\texttt{P14\_the\_flat\_bundle\_cannot\_carry\_a\_force}]\hfill\textsf{[OK]}\\
 \textit{sec:chirality} \ (**THE FLAT BUNDLE CANNOT CARRY A FORCE, AND THE OBSTRUCTION IS AN INVARIANT RATHER THAN A GAP.** P14 asserts *'the bundle above is flat, so the construction supplies colour's exact selection rules and no force'*; this shows it. **(i) THE HOLONOMY GROUP IS FINITE, of order 81** -- the three wall monodromies diag(w,1,1) and partners, together with the hinge three-cycle -- and necessarily so, since the holonomy is BRANCHING and a branch structure has finitely many sheets; a finite group in characteristic zero has vanishing H\textasciicircum{}1 with any coefficients, computed here at 0. **(ii) THE MODULI OF FLAT CONNECTIONS WITH THE WALL CLASSES FIXED IS ZERO-DIMENSIONAL** -- a wall branches ONE vantage and leaves the other two alone, so its monodromy has a repeated eigenvalue and its conjugacy class is SUBREGULAR, of dimension 4 rather than the regular 6; three regular classes on a three-punctured base would give 3x6 - 2x8 = 2, a two-parameter family, and the DISJOINTNESS OF THE VANTAGES' SUPPORTS is exactly what removes it. **(iii) AND THE DIMENSION WAS NEVER THE QUESTION: the moduli space of FLAT connections consists of FLAT connections, so a deformation within it changes WHICH flat bundle one has and not whether there is a field strength.** Curvature means leaving the flat locus, and no holonomy datum can, because holonomy is the complete invariant a flat connection has. **The same verdict the WINDING received one level up (`P14\_quantisation\_not\_strength`) and for the same reason: a topological datum quantises and does not measure.**). 
 \emph{Computes:} the four stated properties of the wall monodromies reproduced from the branch structure and asserted; the group order asserted 81 on EXACT monomial arithmetic; the moduli dimension asserted 0; the subregular class dimension asserted 4
- \emph{Bound:} **bound: this settles the HOLONOMY route only. The isometry route is walled separately (su(3) not in so(5,1), four ways). A mechanism that is NEITHER holonomy nor isometry is not excluded here -- and none has been named. The forty-one-decade scale statement in the companion computation is an argument from the substrate's single invariant, not a theorem**
+ \emph{Bound:} **bound: this settles the HOLONOMY route only. The isometry route is excluded separately (su(3) not in so(5,1), four ways). A mechanism that is NEITHER holonomy nor isometry is not excluded here -- and none has been named. The forty-one-decade scale statement in the companion computation is an argument from the substrate's single invariant, not a theorem**
 \ \emph{Run:} \texttt{python3 receipts/P14\_matter\_sector\_paper/P14\_the\_flat\_bundle\_cannot\_carry\_a\_force.py}
 \item[\label{rcpt:U2_the_matter_sector_spends_none}\texttt{U2\_the\_matter\_sector\_spends\_none}]\hfill\textsf{[OK]}\\
 \textit{sec:correspondence} \ (the built matter sector spends zero free dimensionless constants). 
@@ -342,17 +342,17 @@
 \item[\label{rcpt:B10_po2_resemblance_is_now_a_construction}\texttt{B10\_po2\_resemblance\_is\_now\_a\_construction}]\hfill\textsf{[OK]}\\
 \textit{sec:whichthree} \ (PO-2s resemblance is now a construction: the same epsilon the row used to REMOVE a leg is the one P14 uses to BUILD the baryon --- three modes one kernel, channel counts computed not matched). 
 \emph{Computes:} asserts the rows own epsilon clause and resemblance wording, P14s second-quantisation sentence and channel counts, P13s A\_2 identity, and the flat-holonomy limit (8 checks)
- \emph{Bound:} NOT-A-PAPER-CLAIM --- narrows the last never-worked row; the identification stays do-not-assert
+ \emph{Bound:} NOT-A-PAPER-CLAIM --- narrows the last never-worked row; the identification stays unclaimed
 \ \emph{Run:} \texttt{python3 receipts/L221\_the\_bridge/B10\_po2\_resemblance\_is\_now\_a\_construction.py}
 \item[\label{rcpt:B13_po2_identification_is_stated}\texttt{B13\_po2\_identification\_is\_stated}]\hfill\textsf{[OK]}\\
 \textit{sec:whichthree} \ (PO-2s identification IS stated: each hinge designates one of the three roots of the horizon cubic, one wall per hinge, one mode per wall --- and the Weyl S\_3 IS the relation among the hinges, not a second group resembling it). 
 \emph{Computes:} asserts each link of the chain verbatim --- roots to hinges, hinges to walls, walls to modes, and the same-S\_3 clause --- and that the row never carries it (7 checks)
- \emph{Bound:} NOT-A-PAPER-CLAIM --- corrects r2631s closing line; the physical identification stays do-not-assert
+ \emph{Bound:} NOT-A-PAPER-CLAIM --- corrects r2631s closing line; the physical identification stays unclaimed
 \ \emph{Run:} \texttt{python3 receipts/L221\_the\_bridge/B13\_po2\_identification\_is\_stated.py}
 \item[\label{rcpt:B14_identical_in_content_is_po2s_reason}\texttt{B14\_identical\_in\_content\_is\_po2s\_reason}]\hfill\textsf{[OK]}\\
 \textit{sec:whichthree} \ (PO-2s REASON: every root returns the same 2M, so the three are identical in content and distinguished only by which root each takes as its hole --- and the hinge S\_3 is a within-state index, not a family symmetry). 
 \emph{Computes:} asserts the identical-in-content sentence, the within-state clause, the generation-wall withdrawal and the count-and-chirality clause verbatim, and that no register carries any of them (9 checks)
- \emph{Bound:} NOT-A-PAPER-CLAIM --- supplies a rows reason; the physical identification stays do-not-assert
+ \emph{Bound:} NOT-A-PAPER-CLAIM --- supplies a rows reason; the physical identification stays unclaimed
 \ \emph{Run:} \texttt{python3 receipts/L221\_the\_bridge/B14\_identical\_in\_content\_is\_po2s\_reason.py}
 \item[\label{rcpt:B15_po3_both_clauses_answered}\texttt{B15\_po3\_both\_clauses\_answered}]\hfill\textsf{[OK]}\\
 \textit{sec:whichthree} \ (PO-3 is answered in BOTH clauses --- the WHY by the mass functions parity in the signed offset, and the BRIDGE by the wall monodromies generating SU(3) --- and both were already in its own row). 
@@ -380,7 +380,7 @@
  \emph{Bound:} NOT-A-PAPER-CLAIM --- characterises a gap; whether P14s T realises the Weyl element is not read here
 \ \emph{Run:} \texttt{python3 receipts/L221\_the\_bridge/B19\_the\_swap\_is\_the\_weyl\_z2\_not\_the\_centre.py}
 \item[\label{rcpt:B20_centre_and_weyl_are_opposite_ends}\texttt{B20\_centre\_and\_weyl\_are\_opposite\_ends}]\hfill\textsf{[OK]}\\
-\textit{sec:whichthree} \ (THE TWO GAUGE DEBTS SIT AT OPPOSITE ENDS OF THE SUBGROUP LATTICE: colour arrives at the CENTRE (adjoint-trivial, a label) and isospin at the WEYL element (adjoint-non-trivial, a reflection) --- so PO-5 is walled and PO-4 is one factor short). 
+\textit{sec:whichthree} \ (THE TWO GAUGE DEBTS SIT AT OPPOSITE ENDS OF THE SUBGROUP LATTICE: colour arrives at the CENTRE (adjoint-trivial, a label) and isospin at the WEYL element (adjoint-non-trivial, a reflection) --- so PO-5 is excluded and PO-4 is one factor short). 
 \emph{Computes:} asserts P14s unbanked three-routes statement verbatim, verifies the SU(3) centre is central against non-commuting generators and adjoint-trivial, and the SU(2) Weyl element is not (7 checks)
  \emph{Bound:} NOT-A-PAPER-CLAIM --- connects two rows; the three colour routes are P14s and are used, not re-proved
 \ \emph{Run:} \texttt{python3 receipts/L221\_the\_bridge/B20\_centre\_and\_weyl\_are\_opposite\_ends.py}
@@ -412,7 +412,7 @@
 \item[\label{rcpt:B28_a_cardinality_gap}\texttt{B28\_a\_cardinality\_gap}]\hfill\textsf{[OK]}\\
 \textit{sec:whichthree} \ (PO-4s gap is a CARDINALITY gap: the reflection generates a group of order 4 while the maximal torus is a continuum, so no product of reflections reaches it --- and PO-5s wall does NOT transfer, since it turns on connection data). 
 \emph{Computes:} computes the reflections group order and the tori distinctness, checks exponential-map and one-parameter-subgroup at zero while root-system/Weyl/Lie-algebra are present, and pins PO-5s wall clause (8 checks)
- \emph{Bound:} NOT-A-PAPER-CLAIM --- the cardinality argument fells one route, not every route; PO-4 is NOT walled
+ \emph{Bound:} NOT-A-PAPER-CLAIM --- the cardinality argument fells one route, not every route; PO-4 is NOT excluded
 \ \emph{Run:} \texttt{python3 receipts/L221\_the\_bridge/B28\_a\_cardinality\_gap.py}
 \item[\label{rcpt:B29_the_two_walls_are_one}\texttt{B29\_the\_two\_walls\_are\_one}]\hfill\textsf{[OK]}\\
 \textit{sec:whichthree} \ (PO-5 IS NOT UNBOUNDED: the two walls are ONE wall --- a coupling is the coefficient of an F\textasciicircum{}2 term, so where F=0 the dimensional argument is moot --- and the question restates as WHERE CAN A GAUGE CONNECTION HERE FAIL TO BE FLAT). 
