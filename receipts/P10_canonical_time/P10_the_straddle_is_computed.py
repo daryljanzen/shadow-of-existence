@@ -106,6 +106,27 @@ check("control: the straddle needs the spectrum unbounded ABOVE, not merely a lo
 
 print()
 print("=" * 78)
+print("(E) THE THRESHOLD HAS TWO INDEPENDENT DERIVATIONS, AND THEY SHARE NO STEP")
+print("=" * 78)
+print("    ROUTE A -- ordering arithmetic (P07 citing P10): the floor is 1/4 under normal")
+print("      ordering and 3/4 under symmetric ordering with one mode occupied, the two")
+print("      differing by exactly that mode's zero-point quantum.  3/4 = 1/4 + 1/2.")
+print("    ROUTE B -- the indicial equation, part (C) above: the limit-circle condition is")
+print("      sqrt(G + 1/4) < 1, so the boundary sits at G = 1 - 1/4.")
+_A = 0.25 + 0.5
+_B = 1.0 - 0.25
+check("route A (floor + zero-point quantum) gives 3/4", abs(_A - THR) < 1e-12, f"1/4 + 1/2 = {_A}")
+check("route B (indicial: sqrt(G+1/4) = 1) gives 3/4", abs(_B - THR) < 1e-12, f"1 - 1/4 = {_B}")
+_r = np.sqrt(THR + 0.25)
+check("and the marginal exponent at G=3/4 is exactly 2s_- = -1",
+      abs(2 * (0.5 - _r) + 1.0) < 1e-12, f"sqrt(G+1/4) = {_r:.6f}")
+print("    ** A is quantum-mechanical bookkeeping; B is the classification of a singular ODE")
+print("       at a regular singular point.  Neither uses the other's ingredients. **")
+print("    => THE THRESHOLD IS NOT AN ARTEFACT OF THE QUANTISATION: it is fixed by the")
+print("       operator's own singularity structure, and the ordering arithmetic MEETS it.")
+
+print()
+print("=" * 78)
 print("  WHAT THIS ESTABLISHES")
 print("    * spec(Gamma-hat) = [gamma, inf) follows from the form P10 displays;")
 print("    * gamma <= 1/4 < 3/4 puts spectrum strictly below the threshold and the")

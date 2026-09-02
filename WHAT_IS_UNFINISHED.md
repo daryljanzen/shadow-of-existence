@@ -80,7 +80,25 @@ one at a time against the papers. The answer separates into two kinds and one of
 | # | the build | measured state |
 |---|---|---|
 | ~~1~~ | ~~the descent onto a PROPAGATING spinor sector~~ | ⛭⛭ **BUILT r3802 by 60.** *It PROPAGATES: the characteristic cone is the light cone independently of the twist and of the transverse momenta, so nothing binds. And the payoff the item did not ask for — `P11`'s conserved twist IS a component of the spin connection the fermion is transported by, entering the Dirac operator on $\gamma^5$ alone, so the graviton's handedness and the fermion's are ONE DATUM on that background.* |
-| **2** | **the interacting tower as a DEFINED theory** — the UV definition of the mode sums (`P07`) | ⟐ **genuinely unbuilt, and it is a frontier of physics rather than of this corpus.** *`P07`: "this is the same wall any interacting quantum field theory meets", and the paper explicitly refuses the easy inference — **"the shared character of the wall does not settle it"** — carrying it as its own frontier item. ⌗ What is NOT owed and is often confused with it: the quantization AMBIGUITY, which is closed parameter-free* |
+| **2** | **the interacting tower as a DEFINED theory** (`P07`) | ⟐ **ONE of three parts is open, and the register's phrasing hid that.** *`P07` names three: the SPECTRUM of $\hat\Gamma$, whether it is BOUNDED BELOW, and the ULTRAVIOLET definition of the mode sums. ⛭ **Two of the three are settled** — bounded below because the full inverse-square coefficient is positive on non-degenerate metrics, and the spectrum computable branch by branch. **Only the UV definition of the mode sums is open**, and `P07` refuses the easy exit for it: "this is the same wall any interacting quantum field theory meets", and **"the shared character of the wall does not settle it"* |
+
+### ⌗ WHAT IS *NOT* OWED HERE, AND IS ROUTINELY CONFUSED WITH IT — *sharpened r3807*
+
+| | |
+|---|---|
+| the **self-adjoint boundary CONDITION** | ⛭ **closed, parameter-free**, by the horizon's own Gibbons--Hawking state — *and it holds for **either** operator ordering* |
+| the **ORDERING** | ⌗ *not fixed by that closure, and `P10` exhausts the candidate selectors — the thermal state and the seam act downstream of it; the substrate isometry, positivity, the single-scale ledger and covariance respect both; the deparametrization makes normal ordering available but not mandatory.* ⇒ ***So it is genuinely external: "an epistemic gap of a single physical datum rather than a residual freedom of the quantization", a localized instance of the cosmological-constant problem*** |
+| the **classical nonlinear $\Lambda>0$ regime** | ⛭ **settled** — the de~Sitter background is an attractor and the propagating sector is ghost-free to all orders |
+| the **imaginary-parameter segment** | ⌗ *not a Wick rotation, and the corpus keeps the registers apart: the continuations it uses are **real analytic continuations on a spacetime Lorentzian throughout**, while the Gibbons--Hawking state **is** a Euclidean continuation and is marked distinct in kind. **Dividing the segment's action by the $\hbar$ fixed thermally would join two continuations the construction keeps apart*** |
+
+⛭⛭ ***AND THE THRESHOLD ITSELF IS NOT A QUANTISATION ARTEFACT — landed in `P07` at `r3807`.*** *The
+$\tfrac34$ has **two derivations sharing no step**: `P07`'s ordering arithmetic gives
+$\tfrac14+\tfrac12$, a floor plus one mode's zero-point quantum; and the indicial equation gives
+$1-\tfrac14$, the limit-circle condition $\sqrt{\Gamma+\tfrac14}<1$ failing where $2s_-=-1$ turns the
+lower branch marginally non-integrable. **One is quantum bookkeeping, the other the classification of a
+singular ODE at a regular singular point.*** ⇒ ***The ordering gap is a physical datum landing on a
+boundary the operator already had — not a freedom of the quantisation placing one.***
+
 | ~~3~~ | ~~the straddle as a computed fact~~ | ⛭⛭ **CLOSED r3803.** *Computed, receipted at `P10_the_straddle_is_computed`, and the paper now states the result in place. It was a receipt, not a construction* |
 
 ### ⛭⛭⛭ ON THE FIRST, WHICH IS NOW BUILT — *r3802*
