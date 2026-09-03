@@ -1,4 +1,4 @@
-54
+53
 
 ⛭⛭ WORK STARTED r3938 (node 60), on Daryl's decision at r3908 -- ledger pass first, receipts after,
 and the standard is that they RUN.  ** 5 of 62 repaired; head count above is now 57. **
@@ -10,6 +10,19 @@ and the standard is that they RUN.  ** 5 of 62 repaired; head count above is now
   D2_index_carries_three_senses_inside_one_paper                    r3940  PIN NOT ON THE THESIS
   R1_the_whole_footprint_is_three_geometry_words                    r3940  SELF-COUNTING -> EXTRACTION FIXED
   I7_conserved_charge_carries_three_objects_and_one_denies_the_others  r3942  PIN NOT ON THE THESIS
+  Q1_a_stated_tolerance_is_a_request_and_the_corpus_answers_it      r3944  WRONG DIRECTION -> RATCHET
+
+⛭⛭ THE COUNT-PIN SUB-CLASS IS CLEARED, 4 of 4 -- and they were EXACTLY the four receipts
+written on this branch (Q1, R1, I7, D2).  A receipt written against a live corpus and pinned to
+its volume breaks on the next edit; that is a property of how they were written, not of the
+corpus, and it is why the newest receipts failed first.
+
+  ⑤ FIFTH REPAIR KIND: THE PIN WAS ON THE RIGHT QUANTITY AND IN THE WRONG DIRECTION.  Q1's
+    thesis is that the corpus STATES tolerances far more often than it VERIFIES them.  It pinned
+    the verifier count at 4 and failed at 5 -- ** one more receipt now verifies its tolerance, so
+    the pin turned the corpus improving into a failure. **  Re-asserted as a RATCHET in the
+    corpus's own idiom: min(withconv, 4) == 4 is a MEASURED value that tolerates any rise and
+    fails only if a verification is REMOVED.  The live count is reported.
 
 ⛔⛭⛭ I7 TOOK THREE PASSES, AND EACH FAILED REPAIR IS WORTH MORE THAN THE FIX.
   Its pins were the most brittle in the debt: ABSOLUTE CHARACTER OFFSETS into a paper,

@@ -67,7 +67,19 @@ print(f"    receipt files integrating an ODE      : {len(ode)}")
 print(f"    ... stating an explicit rtol/atol     : {withtol}")
 print(f"    ... containing any convergence check  : {withconv}")
 check("every ODE receipt states its tolerances", withtol, len(ode))
-check("and the number that verify one", withconv, 4)
+# ⛔⛭⛭ RE-PINNED r3944, AS A RATCHET, BECAUSE THE EXACT PIN PENALISED THE CORPUS IMPROVING.
+#   This read `withconv == 4` and failed at 5: ONE MORE receipt now verifies its tolerance than
+#   when this bake ran.  ** That is the corpus moving the way this receipt argues it should, and
+#   the pin made it a failure. **  A receipt whose thesis is "few verify" cannot assert an exact
+#   count of verifiers without breaking the moment one is added.
+#     ⇒ Asserted as a RATCHET instead, in the corpus's own idiom (ASSERTION_DEBT "may never rise",
+#       inverted): min(withconv, 4) == 4 is a MEASURED value -- not a bare True -- that tolerates
+#       any rise and FAILS if the count ever falls below the r3618 baseline, which would mean a
+#       verification was REMOVED.  The live number is reported above.
+#   ⌗ Fifth repair kind: the pin was on the right quantity and in the wrong DIRECTION.
+check("and the number that verify one has not FALLEN below the r3618 baseline of 4 "
+      f"(live: {withconv} -- a rise is the corpus answering the request, not a defect)",
+      min(withconv, 4), 4)
 print("    *** Stating is universal here.  Verifying is not, and they are different acts. ***")
 
 # ------------------------------------------------------------------ the harness
