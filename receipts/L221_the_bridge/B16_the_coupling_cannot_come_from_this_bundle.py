@@ -84,7 +84,17 @@ def main():
           'the geometry quantises and does not couple' in p14)
     check('⛭ and there IS a holonomy: "the residue pairing the horizon roots\' surface gravities carry '
           'has a holonomy about the branch points"',
-          "has a holonomy about the branch points" in p14)
+          "has a holonomy about the Nariai points" in p14)
+    # ⛔⛭⛭ RE-PINNED r3956, AND THIS IS A SEVENTH FLAVOUR: THE PAPER WAS CORRECTED AND THE RECEIPT
+    #   WENT ON ASSERTING THE ERROR.  This pinned "a holonomy about the BRANCH points".  P14 says
+    #   "about the NARIAI points", and the change was deliberate: r3388 -- "the cover's Nariai points
+    #   named as such in the six papers that cite P5, and ** TWO MEMBER/LOCUS CONFLATIONS CLEARED **".
+    #     ⇒ *** The two are loci the corpus lists as NEVER TO BE CONFLATED -- the branch point is at
+    #         r=0, the Nariai member is seeded at alpha/sqrt3.  This receipt was written at r2666,
+    #         before that correction, so from r3388 it has been CERTIFYING THE CONFLATION THE CORPUS
+    #         HAD JUST CLEARED. ***
+    #   ⌗ Not "prose moved": the old wording was WRONG, and a pin into wrong prose keeps the error
+    #     alive in the layer that is supposed to catch it.
     check('which closes a group: "adjoined to the walls\' $S_3$, closes the Weyl group of the '
           "substrate's own complexified isometry algebra\"",
           "closes the Weyl group of the substrate's own complexified isometry algebra" in p14)

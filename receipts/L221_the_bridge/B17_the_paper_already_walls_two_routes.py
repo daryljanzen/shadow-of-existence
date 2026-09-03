@@ -109,7 +109,21 @@ def main():
           'supplies' in p14)
     check('⇒⇒ ⓸ with the residue named exactly: "the isometry route is walled separately, and the honest '
           'statement is that no third mechanism has been named"',
-          'the isometry route is walled separately' in p14
+          # ⛔⛭⛭ RE-PINNED r3956: this asserted `the isometry route is WALLED separately`, and the
+          #   paper says `EXCLUDED separately`.  ** `walled` is retired jargon **: r3799 removed it
+          #   from the corpus's prose -- 2,281 instances -- with `excluded` among the replacements.
+          #   The papers were swept and this pin was not, so the receipt has been asserting a word
+          #   the corpus deliberately does not use.
+          #     ⇒ *** MEASURED r3956: `walled` runs ZERO times in corpus/*.tex and FIFTY-ONE times
+          #         across EIGHTEEN receipt files.  The sweep reached the papers and left the
+          #         reproducibility layer behind -- the exact inverse of r3841, which swept receipts/
+          #         and left the papers on a different successor.  Two sweeps, opposite coverage
+          #         gaps, and the pins sit in the gap both times. ***
+          #   Only the PIN is changed here.  The receipt's own prose and filename still carry the
+          #   word; renaming the file would break its registry entry, and rewriting 51 instances is
+          #   a sweep of its own, recorded in receipts/PIN_DEBT.txt rather than smuggled into a
+          #   pin repair.
+          'the isometry route is excluded separately' in p14
           and 'no third mechanism has been named' in p14)
 
     print()

@@ -99,9 +99,21 @@ def main():
     check('with generations relocated: "the generations\' own threeness being the turnaround\'s deck '
           '$\\mathbb{Z}_3$"',
           "the generations' own threeness being the turnaround's deck" in p14)
-    check('and the correction stated: "The identification of a generation with a wall is accordingly '
-          'withdrawn here"',
-          'The identification of a generation with a wall is accordingly withdrawn here' in p14)
+    # ⛔⛭⛭ RE-PINNED r3956, AND THE PAPER WAS RIGHT TO DELETE WHAT THIS PINNED.  The old pin was
+    #   "The identification of a generation with a wall is accordingly WITHDRAWN HERE" -- a sentence
+    #   ABOUT THE PAPER'S OWN REVISION HISTORY.  P14 has removed it, which is the corpus's own
+    #   one-state rule working: a paper states what IS, not what it used to say.
+    #     ⇒ *** The CLAIM survives, stated positively and more usefully: the hinge $S_3$ "is a
+    #         WITHIN-STATE index and NOT a family symmetry, the generations' own threeness being the
+    #         turnaround's deck $\mathbb{Z}_3$, WITH THE WALL STRUCTURE FIXING THE NUMBER AT EITHER
+    #         SEAT".  That IS the withdrawal -- generations are not identified with walls, and the
+    #         walls fix the count -- without narrating that it once was. ***
+    #   ⌗ So this is not prose drifting: it is a paper correctly deleting self-narration, and a
+    #     receipt pinned to the narration rather than to the position.  ** Pin what a paper CLAIMS,
+    #     never what it says about its own past. **
+    check('and the correction is carried POSITIVELY, which is what the withdrawal amounts to: '
+          '"with the wall structure fixing the \\emph{number} at either seat"',
+          'with the wall structure fixing the \\emph{number} at either seat' in p14)
     check('with what the walls DO deliver: "a count and a chirality rather than a seat"',
           'a count and a chirality rather than a seat' in p14)
 

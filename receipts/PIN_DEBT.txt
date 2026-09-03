@@ -1,4 +1,4 @@
-44
+41
 
 ⛭⛭ WORK STARTED r3938 (node 60), on Daryl's decision at r3908 -- ledger pass first, receipts after,
 and the standard is that they RUN.  ** 5 of 62 repaired; head count above is now 57. **
@@ -21,6 +21,34 @@ and the standard is that they RUN.  ** 5 of 62 repaired; head count above is now
   C29_nothing_to_calculate_across_the_join                          r3952  PROSE MOVED (both halves)
   B7_two_unbuilt_sectors_not_one                                    r3954  THESIS HALF-KILLED
   B66_po5s_route_is_gated_on_po11                                   r3954  BROKEN BY MY OWN r3904
+  B14_identical_in_content_is_po2s_reason                           r3956  PINNED SELF-NARRATION
+  B16_the_coupling_cannot_come_from_this_bundle                     r3956  PAPER CORRECTED, PIN KEPT THE ERROR
+  B17_the_paper_already_walls_two_routes                            r3956  RETIRED WORD IN THE PIN
+
+⛭ L221_the_bridge CLEARED, 5 of 5.  Three more flavours, and none is `prose drifted`:
+
+  ⑦ THE PAPER WAS CORRECTED AND THE PIN KEPT THE ERROR.  B16 asserted `a holonomy about the BRANCH
+    points`; P14 says `about the NARIAI points`, changed at r3388 -- "the cover's Nariai points
+    named as such in the six papers that cite P5, and ** TWO MEMBER/LOCUS CONFLATIONS CLEARED **".
+    The two are loci the corpus lists as NEVER TO BE CONFLATED (branch point at r=0; Nariai seeded
+    at alpha/sqrt3).  The receipt was written r2666, so ** from r3388 it certified the conflation
+    the corpus had just cleared **.  A pin into wrong prose keeps the error alive in the layer
+    meant to catch it.
+
+  ⑧ THE PIN CARRIED A RETIRED WORD.  B17 asserted `the isometry route is WALLED separately`; the
+    paper says `EXCLUDED separately`.  `walled` is one of the words r3799 removed from the corpus
+    -- and MEASURED r3956: it runs ZERO times in corpus/*.tex and ** 51 times across 18 receipt
+    files **.  ⇒ *** r3799 swept the papers and left the reproducibility layer; r3841 swept
+    receipts/ and left the papers on a different successor.  Two sweeps, OPPOSITE coverage gaps,
+    and the pins sit in the gap both times. ***  Only the pin is changed; the 51 instances are a
+    sweep of their own and are recorded here rather than smuggled into a repair.
+
+  ⑨ THE RECEIPT PINNED THE PAPER'S SELF-NARRATION.  B14 asserted "The identification of a
+    generation with a wall is accordingly WITHDRAWN HERE" -- a sentence about the paper's own
+    revision history.  P14 deleted it, correctly, under the corpus's one-state rule.  The CLAIM
+    survives stated positively -- the hinge S_3 is a within-state index and not a family symmetry,
+    the generations' threeness is the turnaround's deck, "with the wall structure fixing the
+    NUMBER at either seat".  ⇒ ** Pin what a paper CLAIMS, never what it says about its own past. **
 
 ⛔⛭⛭ TWO RECEIPTS BROKEN BY A CORRECT PAPER REPAIR -- MINE.  At r3904 I removed from
 groupoid_paper the claim that the propagating spinor sector is "the programme's LARGEST UNBUILT
