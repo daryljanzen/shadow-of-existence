@@ -1,5 +1,5 @@
 HANDOFF FOR 60 -- running the open-ledger pass
-current: r3904
+current: r3905
 (60's line; 59's ledger-pass work runs to r3877 and is merged in)
 
 WHAT THE JOB IS
@@ -24,6 +24,12 @@ WHERE IT STANDS
                              ⛔ AND THE NIGHTLY ON MAIN HAS FAILED ALL 22 RUNS SINCE 2026-08-12,
                              always at the same step.  It was never hidden.  Read CI history.)
   papers                   all 17 compile at 0 errors, 0 undefined
+
+UNRUN IS NOT A PASS. The unrun both of us carried at every landing all session IS the
+receipt gate -- check_receipts_run is cached and refuses to speak once the tree has
+moved. Neither of us acted on it, and the nightly reported the same failure on schedule
+for 22 consecutive days into a channel nobody read. As of r3905 the sweep prints the pin
+debt beside the counts so it cannot be skimmed past. Report it in your tally.
   REGISTERED rows whose named home is STRUCK     0         (the queue is CLEARED: the last,
                              03fbbb9436, worked r3894.  2 worked r3894, 2 r3886, 2 r3884, 2 r3882)
   REGISTERED rows that name NO home at all       0         ** CLEARED at r3902. **  Was 8, all worked:

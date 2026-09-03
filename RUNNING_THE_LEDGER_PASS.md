@@ -73,7 +73,9 @@ in two places, and only one was refreshed."*
 - ⓷ **the sweep green** — `NODE=<n> bash scripts/sweep_gates.sh`
 - ⓸ **the open ledger settled** — rewrites change hashes; retire dead rows, verdict new ones
 - ⓹ **a commit whose message states what was found, including what was found to be wrong in my own earlier work**
-- ⓺ **the tally**: ledger rows · items worked · open problems · **known debts** · gates
+- ⓺ **the tally**: ledger rows · items worked · open problems · **buildable debts** · gates · ***and the PIN DEBT — receipts that fail where they are registered***
+
+⛔ ***UNRUN IS NOT A PASS, AND LABELLING A GATE UNRUN IS NOT RUNNING IT.*** *`check_receipts_run` is cached: it refuses to speak once the tree has moved, and the sweep maps that to `UNRUN(stale-cache)`. **Both nodes carried "1 unrun" at every landing for an entire session and neither acted on it** — while the nightly reported the same failure on schedule for **22 consecutive days** into a channel nobody read. `fast` passed and `compile` passed, so "all 17 compile" was true and was never the half in doubt.* ⇒ ***A red signal nobody opens is not a gate, it is a log line — and a number that has to be looked up is a number that does not get looked at.*** *`r3905` prints the pin debt in the sweep's own summary, beside the counts, so it cannot be skimmed past.*
 
 ---
 
