@@ -21,6 +21,21 @@
 #   OPEN-DOWNSTREAM  RETIRED r2639 -- the name inverted the papers relation. See SCOPE-BY-DESIGN..
 #   UNVERDICTED      not yet read.  ** The only bucket that means work. **
 #
+# ⛔⛭⛭ ** THE FIRST VERDICT LISTED ABOVE IS A MACHINE KEY, AND r3799's PROSE SWEEP CORRECTLY LEFT IT
+# ALONE.  WRITTEN DOWN HERE AT r3876 (node 60) BECAUSE NOTHING SAID SO. **
+#   *r3799 retired that word from the corpus's PROSE -- 2,281 instances, "held <it>" becoming "stated
+#   without being claimed" -- and did it thoroughly.  ** But the UPPERCASE form is a different object:
+#   this file's verdict token, on 21 rows, plus a marker in receipts, scripts and computations. **
+#   ⇒ *** IT IS LOAD-BEARING AND CANNOT SIMPLY BE RENAMED: ***
+#     `receipts/L218_reader_package/C2_the_rule_is_enforceable_and_enforceable_means_severe.py`
+#     ASSERTS the literal string is present in `THE_LIVE_ARC.md`, so renaming the token FAILS a
+#     receipt that tests the corpus's own three-bucket rule.  *Verified by running it at r3876.*
+#   ⌗ ** So a node told "that word is retired" who then finishes the sweep here BREAKS A GATE, and a
+#   node who obeys it literally cannot verdict a row into this class at all. **  Both halves are true
+#   at once: the prose is retired, the key is kept.  ⌗ *The receipt's own COUNT has already migrated --
+#   it matches `not claimed|do not claim|declines to claim` -- so only the label and that one
+#   presence-assertion still carry the old spelling.*
+#
 # ** MAINTAINED BY `corpus/check_open_ledger.py`, which fails when a NEW qualification appears in
 # a paper and is not in this file. **  ⇒ *** So the ledger cannot silently go stale: the corpus
 # tells it when something changed. ***
