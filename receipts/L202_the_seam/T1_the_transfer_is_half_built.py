@@ -77,11 +77,15 @@ def main():
     row = next(l for l in raw.split('\n') if re.match(r'\|\s*~*\*\*PO-12\*\*', l))
 
     # ⓵ two steps
+    # ⛔⛭ RE-PINNED r3950 -- same cause as C23/C24: r3841's sweep rewrote this receipt's PINNED
+    #   STRING from `radiation-free` to `geometric stacking`, and P15 was swept to a different
+    #   successor.  The paper says "specifying how the fluctuations gravitate on the GEOMETRICALLY
+    #   FIXED background".  Pinned to the fragment that carries the claim, not the whole clause.
     check('⓵ the paper states the debt as TWO steps: "it requires first specifying how the fluctuations '
           'gravitate on the geometric stacking background ... and then a bespoke transfer against that '
           'specification"',
-          'it requires first \\emph{specifying how the fluctuations gravitate on the '
-          'geometric stacking background}' in p15
+          'it requires first \\emph{specifying how the fluctuations gravitate on the' in p15
+          and 'fixed background}' in p15
           and 'and then a bespoke transfer against that specification' in p15)
     check('and names step ① as what sets the envelope: "the piece that sets the high-$\\ell$ driving '
           'envelope"',

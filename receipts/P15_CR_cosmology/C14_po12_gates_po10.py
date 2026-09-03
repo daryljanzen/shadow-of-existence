@@ -80,12 +80,16 @@ def main():
           'full-spectrum likelihood' in po10)
 
     # ⓶ the transfer is not built
+    # ⛔⛭ RE-PINNED r3950 -- same cause as C23/C24: r3841's sweep rewrote this receipt's PINNED
+    #   STRING from `radiation-free` to `geometric stacking`, and P15 was swept to a different
+    #   successor.  The paper says "specifying how the fluctuations gravitate on the GEOMETRICALLY
+    #   FIXED background".  Pinned to the fragment that carries the claim, not the whole clause.
     check('⛔ ⓶ and P15 says the transfer is not built: "This is a genuine build, not a plug-in: it '
           'requires first \\emph{specifying how the fluctuations gravitate on the geometric stacking '
           'background}"',
           'This is a genuine build, not a plug-in' in p15
-          and 'it requires first \\emph{specifying how the fluctuations gravitate on the '
-              'geometric stacking background}' in p15)
+          and 'it requires first \\emph{specifying how the fluctuations gravitate on the' in p15
+          and 'fixed background}' in p15)
     check('"and then a bespoke transfer against that specification"',
           'and then a bespoke transfer against that specification' in p15)
 

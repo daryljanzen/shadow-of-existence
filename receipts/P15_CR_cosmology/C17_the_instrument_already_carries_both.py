@@ -101,9 +101,13 @@ def main():
     check('⛭⛭ ⓷ and the paper calls it flat-projection: "The full flat-projection transfer confirms the '
           'estimate and sharpens it into a prediction"',
           'The full flat-projection transfer confirms the estimate' in p15)
+    # ⛔⛭ RE-PINNED r3950 -- same cause as C23/C24: r3841's sweep rewrote this receipt's PINNED
+    #   STRING from `radiation-free` to `geometric stacking`, and P15 was swept to a different
+    #   successor.  The paper says "specifying how the fluctuations gravitate on the GEOMETRICALLY
+    #   FIXED background".  Pinned to the fragment that carries the claim, not the whole clause.
     check("while the debt names the other background: \"specifying how the fluctuations gravitate on the "
           'geometric stacking background\"',
-          'specifying how the fluctuations gravitate on the geometric stacking background' in p15)
+          'how the fluctuations gravitate on the' in p15 and 'fixed background' in p15)
     check('and the corpus states what would differ: "the whole difference is carried by $H(a)$"',
           'the whole difference is carried by $H(a)$' in p15)
 

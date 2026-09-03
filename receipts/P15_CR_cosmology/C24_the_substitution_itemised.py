@@ -100,9 +100,19 @@ def main():
     p15 = re.sub(r'\s+', ' ', body(os.path.join(ROOT, 'corpus', 'CR_cosmology.tex')))
 
     # ⓵ the rate difference reconstructed
+    # ⛔⛭⛭ RE-PINNED r3950.  This pin read `the geometric stacking rate near recombination is`.
+    #   ** THE PAPER NEVER SAID THAT. **  r3841 swept receipts/ replacing the retired phrase
+    #   `radiation-free` with `geometric stacking` -- 114 instances across 37 files -- while the
+    #   PAPERS had been swept to different successors: P15 says `the GEOMETRIC rate`, and the
+    #   live sentence is "The geometric rate is ${\sim}13\%$ below the radiation-included one at
+    #   recombination".  ⇒ *** A TERMINOLOGY SWEEP THAT REWRITES A RECEIPT'S PINNED STRING
+    #       SILENTLY INVALIDATES THE PIN: the assertion exists to match the paper, and the sweep
+    #       changed one side only. ***  Sixth repair kind.
+    #   Re-pinned to the LOAD-BEARING FRAGMENT rather than the whole sentence, so an ordinary
+    #   rephrase does not break it again: the rate word, the number, and the comparison.
     check('⓵ P15 states the rate difference: "the geometric stacking rate near recombination is $13\\%$ '
           'below the radiation-included one there"',
-          'the geometric stacking rate near recombination is' in p15 and '13\\%$ below' in p15)
+          'geometric rate is' in p15 and '13\\%$ below the radiation-included one' in p15)
     h = 1 / np.sqrt(1 + 0.3)
     check(f'and at $\\rho_r/\\rho_m=0.3$ it reconstructs: $1/\\sqrt{{1.3}}={h:.4f}$, i.e. '
           f'{100*(1-h):.1f}% below',

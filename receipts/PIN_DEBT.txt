@@ -1,4 +1,4 @@
-54
+49
 
 ⛭⛭ WORK STARTED r3938 (node 60), on Daryl's decision at r3908 -- ledger pass first, receipts after,
 and the standard is that they RUN.  ** 5 of 62 repaired; head count above is now 57. **
@@ -11,6 +11,30 @@ and the standard is that they RUN.  ** 5 of 62 repaired; head count above is now
   R1_the_whole_footprint_is_three_geometry_words                    r3940  SELF-COUNTING -> EXTRACTION FIXED
   I7_conserved_charge_carries_three_objects_and_one_denies_the_others  r3942  PIN NOT ON THE THESIS
   Q1_a_stated_tolerance_is_a_request_and_the_corpus_answers_it      r3944  WRONG DIRECTION -> RATCHET
+  C14_po12_gates_po10                                               r3950  SWEEP REWROTE THE PIN
+  C17_the_instrument_already_carries_both                           r3950  SWEEP REWROTE THE PIN
+  C23_the_gap_estimated                                             r3950  SWEEP REWROTE THE PIN
+  C24_the_substitution_itemised                                     r3950  SWEEP REWROTE THE PIN
+  T1_the_transfer_is_half_built                                     r3950  SWEEP REWROTE THE PIN
+
+⛔⛭⛭ ⑥ SIXTH REPAIR KIND, AND IT IS THE LARGEST SINGLE CAUSE FOUND SO FAR: A TERMINOLOGY SWEEP
+REWROTE THE RECEIPTS' PINNED STRINGS.  r3841 (item 9, the other line) swept receipts/ replacing
+the retired phrase `radiation-free` with `geometric stacking` -- ** 114 instances across 37 files
+** -- while the PAPERS had been swept to DIFFERENT successors.  P15 says `the GEOMETRIC rate` and
+`the GEOMETRICALLY FIXED background`; the receipts were left asserting `geometric stacking`, which
+P15 never said.  (The phrase IS live -- twice, in P12 and P16 -- which is why it looked right.)
+  ⇒ *** AN ASSERTION STRING EXISTS TO MATCH THE PAPER.  A SWEEP THAT REWRITES ONE SIDE SILENTLY
+      INVALIDATES THE PIN, AND A SWEEP THAT REWRITES BOTH SIDES DIFFERENTLY INVALIDATES IT WHILE
+      LOOKING LIKE IT MAINTAINED IT. ***
+  ⌗ Eight of the 54 real failures carry the phrase; five are repaired here and three remain.
+  ⌗ RE-PINNED TO THE LOAD-BEARING FRAGMENT, not to today's full sentence: the rate word, the
+    number, and the comparison.  Re-pinning a long verbatim quote only rebuilds the fragility --
+    it would break at the next rephrase, which is how these got here.
+  ⛔ AND MY FIRST FIX ON TWO OF THEM WAS WRONG AND THE RECEIPTS CAUGHT IT: deleting
+    `geometric stacking ` from a split string literal left `on the ' 'fixed background}`, which
+    concatenates to `on the fixed background}` -- and the paper says `on the GEOMETRICALLY fixed
+    background}`.  Both still failed, and were split into two fragments instead.  A repair is a
+    change to a test; run it.
 
 ⛭⛭ THE COUNT-PIN SUB-CLASS IS CLEARED, 4 of 4 -- and they were EXACTLY the four receipts
 written on this branch (Q1, R1, I7, D2).  A receipt written against a live corpus and pinned to
