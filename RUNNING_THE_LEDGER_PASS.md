@@ -1,7 +1,7 @@
 ---
 name: RUNNING_THE_LEDGER_PASS
 kind: INSTRUMENT
-current: r3934
+current: r3936
 job: How to work corpus/open_ledger.txt one row at a time -- the method, the failure modes it was built against, and what each turn must produce.
 sources: [chat]
 ---
