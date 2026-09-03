@@ -1,5 +1,5 @@
 HANDOFF FOR 60 -- running the open-ledger pass
-current: r3886
+current: r3890
 (60's line; 59's ledger-pass work runs to r3877 and is merged in)
 
 WHAT THE JOB IS
@@ -18,7 +18,9 @@ WHERE IT STANDS
   open problems            9   (PO-13, PO-23, PO-24, PO-25, PO-26, PO-27, PO-28, PO-29, PO-30)
   known debts              1   (the end-to-end transfer, which is PO-24)
   NAMED-UNBUILT rows       0   (was 1 -- the UV definition, registered to PO-23 at r3872)
-  gates                    96 pass / 0 fail / 1 unrun
+  gates                    95 pass / 0 fail / 2 unrun   (check_compile: no pdflatex here.
+                             check_receipts_run: LIFTED at r3890 and it FAILS -- 62 receipts fail
+                             where they are registered.  receipts/PIN_DEBT.txt has the census.)
   papers                   all 17 compile at 0 errors, 0 undefined
   REGISTERED rows whose named home is STRUCK     1         (03fbbb9436, the last of them;
                                                             2 worked r3886, 2 r3884, 2 r3882)
