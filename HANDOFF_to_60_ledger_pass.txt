@@ -14,7 +14,7 @@ Read RUNNING_THE_LEDGER_PASS.md first. It is the instrument, and it is short.
 WHERE IT STANDS
 
   ledger rows              97   (923446d6f3 added r3904 by my own paper edit)
-  rows READ-MARKED this pass  50 of 96   (46 unmarked; MEASURED r3930, not derived)
+  rows READ-MARKED this pass  66 of 96   (30 unmarked; MEASURED r3932, not derived)
   ⛔ THE OLD LINE HERE READ "rows worked individually 72" AND I WAS FEEDING IT WRONG.
      That counter came from 59 and counts rows worked by EITHER line across the WHOLE pass,
      including before read-marks existed (rule 2c).  I had been ADDING my per-item mark counts
