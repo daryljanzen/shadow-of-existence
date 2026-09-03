@@ -57,8 +57,23 @@ DR = 0.0 if NODRIVE else 1.0                  # the driving switch, multiplying 
 # fluid, and removing it would change the background rather than the driving.
 DRC = float(os.environ.get('DRC', DR))
 DRE = float(os.environ.get('DRE', DR))
-NK = int(os.environ.get('NK', '260'))
 LMAXL = float(os.environ.get('LMAXL', '1300'))
+# ** KFAC: how far past the highest REPORTED multipole the k-integral runs.  r3870. **  See the long
+# note at the k-grid in main(): at KFAC=1 -- which is what building the k-grid from LMAXL amounts to
+# -- the C_l integral is not converged, and the control reports P1/P2 = 2.721 where the converged
+# value is 2.393 on that path and 2.197 on the polarisation path.
+KFAC = float(os.environ.get('KFAC', '2.0'))
+# ⛭ ** AND THE TWO GUARDS PULL AGAINST EACH OTHER, WHICH IS WHY THE MODE COUNT IS NOW DERIVED. **
+# Reaching further in k at a FIXED mode count coarsens dk, so satisfying the truncation guard breaks
+# the sampling guard.  alias_gate wants >= 4 points per Bessel period 2 pi / D_M over a range
+# KFAC * LMAXL / D_M, which is NK >= 2 KFAC LMAXL / (3 pi).  ** That is the real cost of a converged
+# answer and the instrument now pays it by default rather than reporting an unconverged one. **
+# (Empirically the ratio converges well before 4 points per period -- 2.197 is stable from NK=280 to
+# NK=560 at KFAC=2 -- so this default is comfortable rather than marginal.  The guard is kept at 4
+# because it is the criterion that caught a real aliasing failure at NK=90, and loosening a guard on
+# the strength of one arm's convergence is how the defect above got in.)
+_NK_NEED = int(np.ceil(2.0 * KFAC * LMAXL / (3.0 * np.pi)))
+NK = int(os.environ.get('NK', str(max(260, _NK_NEED))))
 RTOL = float(os.environ.get('RTOL', '1e-7'))
 # ** LN EXPOSED, r3745. **  *The free-streaming neutrino hierarchy is truncated at l_max = LN-2,
 # and a mode is resolved only while k*eta stays below that.  At recombination on the control arm
@@ -798,6 +813,17 @@ def alias_gate(kk):
     comb stays correct to a per cent while the PROJECTED spectrum combs at a spacing set by the
     sampling.*  Returns True if the sampling is adequate.
     """
+    # ** HALF TWO, ADDED r3870: the integral must also REACH far enough, not only be sampled
+    #    finely enough.  Under-sampling and truncation are different failures on the same axis and
+    #    this gate covered one of them for eleven revisions. **  Fail-closed; KFAC is the knob.
+    k_top = float(np.max(kk)) * D_M
+    print(f"  projection reach: k_max = {k_top:.0f}/D_M against a reported l_max = {LMAXL:.0f} "
+          f"-> ratio {k_top/LMAXL:.2f}")
+    if k_top / LMAXL < 1.9:
+        print("  ⛔ k-TRUNCATED — the C_l integral is not converged at this k_max.  Raise KFAC.")
+        print("     r3870: at ratio 1.0 the control reports P1/P2 = 2.721 and at 2.7 it reports")
+        print("     2.393, on one path with everything else held fixed.")
+        return False
     dk_need = 2.0 * np.pi / D_M
     dk_have = float(np.median(np.diff(kk)))
     print(f"  projection sampling: dk = {dk_have:.3e}, Bessel period 2pi/D = {dk_need:.3e}, "
@@ -1030,12 +1056,31 @@ def main():
     # to an integral -- so its coarseness is not aliasing.  But that is a claim, and running the
     # same arm both ways is what turns it into a measurement: if the peak position is the same,
     # discreteness is not what sets it, and the driving is.
+    # ⛔⛭⛭ ** THE k-INTEGRAL MUST RUN PAST THE HIGHEST REPORTED MULTIPOLE, AND UNTIL r3870 IT DID
+    #    NOT (60).  **  The k-grid was built from LMAXL -- the grid of multipoles to PRINT -- so
+    #    choosing which multipoles to report silently chose where to stop integrating
+    #    C_l = INT P(k) Delta_l(k)^2 dk.  ** That integral is NOT converged at k_max = l_max/D_M. **
+    #    Measured on the control with the reported ell grid held fixed at 900 and only k_max moved:
+    #
+    #        k_max          P1/P2    P1/P3
+    #        900/D_M        2.721    4.497     <- what five documents recorded as the control
+    #       1300/D_M        2.446    2.974
+    #       1800/D_M        2.399    2.791
+    #       2400/D_M        2.393    2.768     <- converged
+    #
+    #    ⇒ ** The 22.7% and 97.5% "height defect" this instrument was charged with was, in its
+    #    larger half, this truncation. **  With the polarisation path as well the control lands at
+    #    P1/P2 = 2.197 against CAMB's 2.200 (`C51`).
+    #  ⌗ ** AND THE REASON IT SURVIVED IS THAT alias_gate COVERS THE OTHER AXIS. **  A guard against
+    #    under-SAMPLING k reads as a guard on k, and the truncation of k was invisible exactly
+    #    because that guard was there and passing.
+    KMAXL = KFAC * LMAXL                              # k_max = KFAC * LMAXL / D_M
     if ARM == 'cr' and os.environ.get('KCONT', '0') != '1':
-        Ls = np.arange(2, int((LMAXL + 400) / stretch) + 2)
+        Ls = np.arange(2, int((KMAXL + 400) / stretch) + 2)
         lL = np.sqrt(Ls * (Ls + 2)) * stretch
     else:
-        lL = np.linspace(12.0, LMAXL, NK * 3)
-    lL = lL[lL <= LMAXL]
+        lL = np.linspace(12.0, KMAXL, NK * 3)
+    lL = lL[lL <= KMAXL]
     if len(lL) > NK * 3:
         lL = lL[:: max(1, len(lL) // (NK * 3))]
     kk = lL / D_M

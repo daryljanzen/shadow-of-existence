@@ -830,18 +830,43 @@ control — validated against CAMB for its transfer —*
 | | $P_1/P_2$ | $P_1/P_3$ |
 |---|---|---|
 | the sky | 2.217 | 2.277 |
-| **ΛCDM control** | 2.721 — ⛔ **+22.7%** | 4.496 — ⛔ **+97.5%** |
-| **CR, derived datum** | 1.935 — **−12.7%** | 2.578 — **+13.2%** |
+| ~~ΛCDM control~~ | ~~2.721 — +22.7%~~ | ~~4.496 — +97.5%~~ |
+| **ΛCDM control, CONVERGED — r3870** | ⛭ **2.197 — −0.9%** | **2.192 — −3.7%** |
+| CR, derived datum | 1.935 | 2.578 — ⚠ *k-truncated, NOT re-measured* |
 
-⇒ ***A DEFECT THAT SHOWS ON ΛCDM, WHERE THE ANSWER IS KNOWN, IS NOT A CR DEFECT.*** *And **CR beats the
-control on both ratios** — 12.7 and 13.2 against 22.7 and 97.5.*
+> ⛭⛭⛭ ***THE CONTROL'S DEFECT WAS THE INSTRUMENT'S CONFIGURATION, NOT ITS HEIGHT MACHINERY — `r3870`,
+> which is `PO-24`'s first step and comes out the other way.***
+>
+> *The block below says these figures "want re-running, not re-quoting". They have been re-run, and
+> **two faults were compounding, neither of them a defect in the physics**:*
+> · ⛔ ***the $k$-integral was truncated where it is not converged.*** *The instrument built its
+>   $k$-grid from `LMAXL` — the grid of multipoles to **print** — so choosing what to report chose
+>   where to stop integrating $C_\ell=\int P(k)\Delta_\ell(k)^2\,dk$. Holding the reported $\ell$
+>   grid fixed and moving **only** $k_{\max}$: $2.721\to2.446\to2.399\to2.393$.*
+> · ⛭ ***and `los_spectrum` omits the polarisation source*** *that `_project` carries — so the
+>   comparison to CAMB was not like for like.*
+>
+> ⇒ ***With both fixed the control lands at $P_1/P_2=2.197$ against CAMB's $2.200$ — $0.14\%$ — and
+> peaks $220/540/812$ against the sky's $220.6/538.1/809.8$, converged in $k_{\max}$ and stable to
+> four decimals over a two-fold change in mode count***`\rcpt{C59_the_control_reproduces_camb_and_the_height_defect_was_k_truncation}`***.*** *The instrument is an arbiter and the fork
+> is settled `REPAIR`.*
+>
+> ⚠ ***WHAT THIS DOES NOT DO: the CR row is truncated by the same mechanism and has NOT been
+> re-measured.*** *So "CR beats the control on both ratios" — asserted here, and true of the numbers
+> then in hand — is **withdrawn pending that measurement**, not reversed. And r3512's `HIER`
+> composition defect must be settled first: it is a no-op on the control and live on CR.*
 
 > ⛔⛭ **AND THE CONTROL'S FIGURES ABOVE ARE OPTIMISTIC — `r3745`, after this section was written.**
 > *`LN`, the free-streaming hierarchy depth, was a hardcoded `12` with no override, truncating at
 > $\ell_{\max}=10$. On the control at recombination $P_1$ sits at $k\eta=4.5$ and is resolved, $P_2$ at
 > $10.9$ is not, and $P_3$ at $16.4$ is **well above the truncation**.* ⇒ ***Resolved at `LN=25` the
 > control gives $P_1/P_3=8.009$, not $4.496$: the truncation was UNDER-DAMPING the high-$\ell$ modes and
-> MASKING the deficit, which is a factor $3.5$ rather than $2.0$.*** *Every height number in this section
+> MASKING the deficit, which is a factor $3.5$ rather than $2.0$.***
+>
+> ⛔ ***AND THAT `LN` SCAN DOES NOT REPRODUCE — `r3870`.*** *`LN` is genuinely plumbed — the state
+> vector is $7+(LN-1)+1$ wide and the hierarchy loop runs to $LN-2$, both checked — but `LN`$\,=12$
+> and `LN`$\,=25$ give **identical ratios to $10^{-3}$** at every sampling tried. **What that scan
+> was varying did not reach the number it was read on.*** *Every height number in this section
 > was taken at `LN=12`. **The conclusion is unchanged and strengthened** — it is the CONTROL that grows
 > worse — but the high-$\ell$ output is not converged in hierarchy depth and the figures want re-running,
 > not re-quoting.*

@@ -142,6 +142,7 @@ looked like the answer.*
 | `LN` | $\ell_1$ | $\ell_3$ | $P_1/P_2$ | $P_1/P_3$ | |
 |---|---|---|---|---|---|
 | 12 (default) | 220 | 804 | 2.721 | 4.496 | *P2, P3 under-resolved* |
+| ⛔ **r3870** | | | **does not reproduce** | **does not reproduce** | ***`LN`$\,=12$ and $25$ agree to $10^{-3}$*** |
 | **25** | 220 | 772 | 2.901 | ⛔ **8.009** | *resolved past $P_3$* |
 | **THE SKY** | 220.6 | 809.8 | **2.217** | **2.277** | |
 
@@ -164,6 +165,7 @@ override, so nobody had checked.***
 |---|---|---|---|
 | 0.0 — driving off | 204 | 4.216 | 11.625 |
 | ⛭ **1.0 — the default** | **220** | 2.721 | ⛭ **4.496** |
+| ⚠ *every row above* | | *k-truncated* | *k-truncated — r3870* |
 | 1.5 | 228 | 2.567 | 7.495 |
 | **THE SKY** | **220.6** | **2.217** | **2.277** |
 
@@ -228,7 +230,8 @@ whose answer is known.***
 
 | arm | $\ell_1$ | $\ell_2$ | $\ell_3$ | $P_1/P_2$ | err | $P_1/P_3$ | err |
 |---|---|---|---|---|---|---|---|
-| **$\Lambda$CDM control**, validated | **220** | 524 | 804 | 2.721 | $22.7\%$ | 4.496 | ⛔ **$97.5\%$** |
+| ~~$\Lambda$CDM control, validated~~ | 220 | 524 | 804 | ~~2.721~~ | ~~$22.7\%$~~ | ~~4.496~~ | ~~$97.5\%$~~ |
+| ⛭⛭ **$\Lambda$CDM control, CONVERGED — `r3870`** | **220** | **540** | **812** | **2.197** | ⛭ **$0.9\%$** | **2.192** | ⛭ **$3.7\%$** |
 | CR, `CRAMP=flat` (coded) | 204 | 508 | 804 | 2.238 | $0.9\%$ | 3.901 | $71.3\%$ |
 | ⛭ CR, `CRAMP=entry` (derived) | 204 | 508 | 804 | **1.935** | $12.7\%$ | **2.578** | $13.2\%$ |
 | **THE SKY** | 220.6 | 538.1 | 809.8 | **2.217** | | **2.277** | |
@@ -236,6 +239,19 @@ whose answer is known.***
 ⇒ ***The control gets the POSITIONS right — $\ell_1=220$ against $220.6$ — and the HEIGHTS wrong by
 $23\%$ and $97.5\%$.*** *On $\Lambda$CDM, where the answer is known and the arm is validated against CAMB
 for its transfer.* ⛔ ***A defect that shows there is not a CR defect.***
+
+> ⛭⛭⛭ ***AND THE CONTROL'S HEIGHTS WERE NOT WRONG — `r3870`, running `PO-24`'s first step.***
+> *Two instrument-configuration faults were compounding, and the larger one nobody had looked for.*
+> · ⛔ ***The $k$-integral was truncated where it is not converged.*** *The $k$-grid was built from
+>   `LMAXL`, the grid of multipoles to **print**, so choosing what to report chose where to stop
+>   integrating. Reported $\ell$ grid held fixed, $k_{\max}$ alone moved:
+>   $2.721\to2.446\to2.399\to2.393$.*
+> · ⛭ ***`los_spectrum` omits the polarisation source*** *`_project` carries.*
+> ⇒ ***Both fixed: $P_1/P_2=2.197$ against CAMB's $2.200$, peaks $220/540/812$ against
+> $220.6/538.1/809.8$*** `\rcpt{C59_the_control_reproduces_camb_and_the_height_defect_was_k_truncation}`***.***
+>
+> ⚠ ***The CR rows are truncated by the same mechanism and are NOT re-measured, so the comparison
+> below is withdrawn pending that run rather than reversed.***
 
 ⛭ ***AND CR WITH THE DERIVED DATUM BEATS THE CONTROL ON BOTH RATIOS*** — *$12.7\%$ and $13.2\%$ against
 $22.7\%$ and $97.5\%$. **The datum work of `r3735` was real; the residual it was measured against is the

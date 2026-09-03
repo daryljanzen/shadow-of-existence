@@ -61,8 +61,13 @@ EST = {
         '(0.843 at l_D to 0.459 at 2 l_D) and states that BETWEEN them, the acoustic peaks, the chain does not '
         'reach, Phi decaying by order two with k-dependence k^2/3H. AND THE TWO INSTRUMENTS MUST NOT BE CONFUSED: '
         'PO-10s strike got LCDM P1/P2 = 2.200 and CR 2.185 THROUGH CAMB with a suppression factor on the CR arm, '
-        'a legitimate comparison and not a bespoke transfer; ACOUSTIC_two_arm, which IS the attempt at one, gets '
-        'LCDM 2.721 and P1/P3 4.496 rising to 8.009 with the neutrino hierarchy resolved (r3745).'),
+        'a legitimate comparison and not a bespoke transfer. AND THE SECOND INSTRUMENT WORKS, r3870 (60): the '
+        'control run PO-24 asked for FIRST comes out the other way. The recorded LCDM 2.721 / 4.496 were TWO '
+        'instrument-configuration faults compounding, not a height-machinery defect -- the k-integral was '
+        'truncated at k_max = l_max/D_M where it is not converged (2.721 -> 2.393 on one path when k_max is '
+        'raised), and los_spectrum omits the polarisation source that _project carries. With both fixed the '
+        'control lands at P1/P2 = 2.197 against CAMBs 2.200 -- 0.14% -- with every peak within 9 of the skys. '
+        'The fork is settled REPAIR: the two-arm architecture carries the transfer (C59).'),
     'PO-23': ('the ultraviolet definition of the mode sums — ATTEMPT IT', 1, 1, 4, None,
         'r3809: NEVER ATTEMPTED, which is the whole of its state. P07 names three parts to "the definition of the '
         'interacting tower" and TWO ARE SETTLED: the spectrum of Gamma-hat is computable branch by branch, and it is '
