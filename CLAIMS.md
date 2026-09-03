@@ -107,6 +107,10 @@ for 54). ***Never edit a row in another node's band; route instead.***
 
 | file | node | since | what |
 |---|---|---|---|
+| `receipts/P15_CR_cosmology/C51_the_control_reproduces_camb_and_the_height_defect_was_k_truncation.py` | 60 | r3870 | NEW — PO-24 step 1, the control run |
+| `computations/beyond_the_wall/ACOUSTIC_two_arm.py` | 60 | r3870 | the alias gate does not gate k_max; adding that half |
+| `receipts/INDEX.md` | 60 | r3870 | registering `C51` |
+| `THE_REGISTER.md` · `THE_FRONTIER.md` · `PO13_WORKING_STATE.md` · `WHAT_THE_FRAMEWORK_DELIVERS.md` · `scripts/regen_frontier.py` | 60 | r3870 | the 2.721/4.496 numbers are k-truncation artefacts |
 | *(none — 60's r3802 rows released with the work)* | — | — | — |
 
 > ⌗ ⛭⛭⛭ **60's r3618: ALL SIX FIELD BAKES CLOSED, 102 PAPER-READS, NOTHING HELD.**
