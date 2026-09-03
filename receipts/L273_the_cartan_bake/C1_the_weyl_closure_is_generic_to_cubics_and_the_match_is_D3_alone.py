@@ -199,8 +199,13 @@ _AT_THROW_CACHE = {}
 
 
 def _at_throw_wordcount(term):
+    #: ⌗ `reach_baseline` is imported inside `main()` in this file, not at module scope, so it is
+    #:   imported here rather than assumed global.  *I assumed it was a module-level name because
+    #:   the sibling station receipts bind it that way, and the assumption cost a five-minute run.*
     import re as _re
     import subprocess as _sp
+    sys.path.insert(0, os.path.join(ROOT, 'corpus'))
+    import reach_baseline as RB
     if not _AT_THROW_CACHE:
         for _tex, _key in RB.TEX2P.items():
             _raw = _sp.run(['git', 'show', f'b55c782f:corpus/{_tex}'], cwd=ROOT,
