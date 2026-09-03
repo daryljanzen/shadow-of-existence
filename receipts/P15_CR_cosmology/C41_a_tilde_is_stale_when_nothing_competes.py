@@ -121,9 +121,17 @@ def main():
     check(f'⛔ ⓶ $\\sim8\\%$ was tilde-marked in P15 {_n_before} times at {_BEFORE_R2755} -- which is '
           f'what this receipt asserted, and asserted was RIGHT while the number was contested',
           _n_before == 9)
-    check(f'⛭ and r2755 resolved the contest and took every hedge off: {_n_now} remain, replaced by '
-          f'the bare 8.2% ({p15.count("8.2")} occurrences) -- *** the rule held; the STATE moved ***',
-          _n_now == 0 and p15.count('8.2') >= 9)
+    # ** ⛭ RE-PINNED r3988: THE NINE BELONGS TO THE HEDGES REMOVED, NOT TO THE REPLACEMENTS. **
+    # ** ⓶ above pins nine tilde-marked sites at the before-commit and it passes.  This check then
+    # ** required NINE bare `8.2` in return -- assuming a one-for-one substitution.  ** The edit
+    # ** consolidated: the figure appears FIVE times now, and has for hundreds of revisions. **
+    # **   ⇒ *A replacement count is not a removal count, and asserting them equal turns prose being
+    # **     tightened into a receipt failure.*  What is load-bearing is that the hedge is GONE and
+    # **     the computed figure is CARRIED, so that is what is asserted; both numbers are reported.
+    check(f'⛭ and r2755 resolved the contest and took every hedge off: {_n_now} tilde-marked site(s) '
+          f'remain of the {_n_before} there were, and the bare figure is carried at '
+          f'{p15.count("8.2")} site(s) -- *** the rule held; the STATE moved ***',
+          _n_now == 0 and p15.count('8.2') >= 1)
     c8 = rcpt('C8_diffusion_length.py')
     # ** C8 prints the figure from an f-string, so the number is COMPUTED and not literal --
     # which is stronger: it cannot go stale against its own derivation. **

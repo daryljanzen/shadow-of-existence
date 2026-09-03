@@ -96,8 +96,13 @@ def main():
           'not estimated -- its receipt names itself for the figure',
           os.path.exists(glob.glob(os.path.join(
               ROOT, 'receipts', '**', 'P15_damping_ratio_clean.py'), recursive=True)[0]))
-    check('so P15 now carries $8.2\\%$ where it carried $\\{\\sim\\}8\\%$, in nine places',
-          len(re.findall(r'8\.2\\%', p15)) >= 9)
+    # ⌗ same repair as `C41`'s (r3988): the NINE were the tilde-marked sites REMOVED, and this
+    #   required nine bare replacements in return.  The edit consolidated -- the figure is carried
+    #   at five sites and has been for hundreds of revisions.  ** A replacement count is not a
+    #   removal count. **  The removal is asserted below, at zero, which is the claim that matters.
+    _n82 = len(re.findall(r'8\.2\\%', p15))
+    check(f'so P15 now carries $8.2\\%$ -- at {_n82} site(s) -- where it carried $\\{{\\sim\\}}8\\%$',
+          _n82 >= 1)
     check('and no tilde-8% survives',
           len(re.findall(r'(\{\\sim\}|\\sim\s*)8\\%', p15)) == 0)
 

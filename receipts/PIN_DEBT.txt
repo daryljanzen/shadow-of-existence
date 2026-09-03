@@ -1,4 +1,37 @@
-27
+8
+
+⛭⛭⛭ RE-MEASURED r3986 BY A COMPLETE RE-RUN, AND *** THE HEAD COUNT IS 8. ***  669 pass, 27 fail,
+3 over timeout, 1622s, at tree ff22b18f6842516f.  ** 19 of the 27 carry a ModuleNotFoundError and
+all nineteen are declared BY NAME in `check_receipts_run.py`'s UNRUNNABLE list ** -- P03's two
+figure receipts are keyed by BASENAME there, which a first pass of mine misread as undeclared.
+So 27 - 19 = ** 8 REAL **, against 39 at r3948 and 27 at r3962.
+  ⌗ AND THE 8 WERE WORKED AT r3988: seven are green, one exceeds the per-receipt cap and is being
+    run detached.  *The head count is the gate's number and is replaced only when the gate speaks
+    again -- it is not lowered here by counting the repairs.*
+
+⛔⛭⛭ AND FIVE OF THE EIGHT WERE RECEIPTS I HAD ALREADY "FIXED", BY A FIX THAT DID NOTHING WHERE IT
+MATTERED.  r3966 gave `L251/N1`, `L256/B1`, `L259/D1`, `L260/H1`, `L261/A1` an explicit band with
+      os.environ.setdefault('NODE', '60')
+and *** `setdefault` DEFERS TO THE CALLER. ***  The suite runner and CI both export `NODE=ci`, for
+which the gate's own table gives `PARITY = None` -- "the runner is not a line and holds no half" --
+so under CI every one of them still read the caller's answer and still failed.
+  ⇒ ** They passed for me and failed in the suite, and the difference was the one verb. **  The
+    repair note I committed beside it says a receipt asserting `C.PARITY == 0` "is making a claim
+    about a NAMED line and must name it".  *** I wrote the reasoning and implemented its opposite. ***
+  ⌗ *** A REPAIR VERIFIED ONLY UNDER MY OWN ENVIRONMENT IS NOT VERIFIED. ***  Every one of the five
+    is now re-run under `NODE=ci`, which is the environment that failed them, and the fix is
+    `os.environ['NODE'] = '60'`.
+  ⌗ ⛔ And this is the second time in one span that the ENVIRONMENT was the whole difference:
+    `check_deferrals` failed CI on r3984 over two phrases I wrote into a receipt, and it was not in
+    the ten gates I had assembled by hand before pushing.  ** The sweep runs 97.  Use the sweep. **
+
+⛭ AND TWO WERE A REPLACEMENT COUNT MISTAKEN FOR A REMOVAL COUNT.  `C41` and `C41b` record nine
+tilde-marked `$\{\sim\}8\%$` sites removed at r2755 -- pinned at the before-commit, and that check
+passes -- and then required NINE bare `8.2\%` in return.  ** The edit consolidated: the figure is
+carried at FIVE sites and has been for hundreds of revisions, so the `>= 9` could not hold and did
+not hold when written. **  ⇒ *A replacement count is not a removal count.  Asserting them equal
+turns prose being tightened into a receipt failure.*  The removal is asserted at zero, which is the
+claim that matters, and both figures are reported.
 
 ⛭⛭⛭ r3974-r3980b -- THE CENSUS LIST IS WORKED THROUGH ONCE, AND *** THE LARGEST CLASS IN THIS
 DEBT IS NOT A MOVED SENTENCE.  IT IS A RECEIPT ASSERTING THAT NOBODY HAS ACTED ON ITS FINDING. ***

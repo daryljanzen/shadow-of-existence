@@ -83,7 +83,13 @@ sys.path.insert(0, os.path.join(ROOT, 'corpus'))
 # ** a plain shell, `ci` under `sweep_gates.sh`.  ** A receipt asserting anything about a band is
 # ** making a claim about a NAMED line and must name it. **  Four receipts shared this defect and all
 # ** four were on the failure list; they are fixed together because it is one fault, not four.
-os.environ.setdefault('NODE', '60')
+# ⛔ *** SET, NOT `setdefault` (r3988). ***  `setdefault` defers to the caller, and the suite runner
+# and CI both export `NODE=ci` -- for which the gate's own table gives `PARITY = None`, "the runner
+# is not a line and holds no half".  ** So under CI this receipt still read the caller's answer and
+# still failed, which is the exact defect the note above says it is fixing. **  A receipt asserting
+# `C.PARITY == 0` is making a claim about node 60's band; it must NAME that line unconditionally.
+#   ⌗ *I wrote the reasoning and then implemented the opposite of it.  The verb was the whole fix.*
+os.environ['NODE'] = '60'
 import check_revision_collisions as C                                     # noqa: E402
 
 FAILED = []
