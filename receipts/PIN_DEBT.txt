@@ -1,4 +1,4 @@
-57
+55
 
 ⛭⛭ WORK STARTED r3938 (node 60), on Daryl's decision at r3908 -- ledger pass first, receipts after,
 and the standard is that they RUN.  ** 5 of 62 repaired; head count above is now 57. **
@@ -7,6 +7,27 @@ and the standard is that they RUN.  ** 5 of 62 repaired; head count above is now
   D2_the_UV_degree_is_quartic_and_the_IR_is_free                    r3938  PROSE MOVED  -> RE-PINNED
   S11_the_ordering_question_dissolves                               r3938  PROSE MOVED  -> RE-PINNED
   S12_the_boundaries_coincide                                       r3938  PROSE MOVED  -> RE-PINNED
+  D2_index_carries_three_senses_inside_one_paper                    r3940  PIN NOT ON THE THESIS
+  R1_the_whole_footprint_is_three_geometry_words                    r3940  SELF-COUNTING -> EXTRACTION FIXED
+
+** AND TWO MORE REPAIR KINDS, so there are FOUR and not two. **
+  ③ THE PIN WAS NEVER ON THE THESIS.  D2 asserted `index` occurs x128 corpus-wide and P14 carries
+    55.  It failed at 132 and 56 because prose ELSEWHERE moved.  An exact corpus-wide word count
+    certifies nothing the receipt argues and breaks on every unrelated edit, so re-numbering it to
+    132 would only RESET A TIMER and send the next node to investigate a non-defect.  The counts
+    are now REPORTED and re-measured each run; what is ASSERTED is what volume cannot move --
+    P14 is the heaviest carrier, it carries all three senses at three distinct sites, and the
+    control word `obstruction` does NOT split.
+  ④ THE RECEIPT WAS COUNTING ITS OWN LANDINGS.  R1 asserts the probability field's core terms are
+    ABSENT.  It failed at `probability` x3 -- and all three are markers THIS BAKE WROTE:
+    `\ldg{probability}` x2 in P04 and one `\textsf{probability}` in P07's table of field names.
+    The corpus still never writes the word in its own voice; it now CITES THE LEDGER BY NAME,
+    which is the bake succeeding rather than the absence ending.  ⇒ Fixed in the EXTRACTION
+    (marker arguments stripped), not in the pin -- otherwise every future bake landing would
+    falsify the bake that landed it.
+  ⌗ D2's own r3610 comment had already named this hazard for `index`: "a receipt that counts the
+    corpus counts its own landings once they are corpus prose".  ** Named once, met twice, and the
+    second time it was a FALSE POSITIVE rather than an honest drift. **
 
 ** AND THE TWO KINDS ARE BOTH REAL, WHICH IS WHY THE RULE AGAINST MECHANICAL RE-PINNING HOLDS. **
   ⇒ FOUR of the five were ONE prose change breaking FOUR receipts: `the standard problem of the

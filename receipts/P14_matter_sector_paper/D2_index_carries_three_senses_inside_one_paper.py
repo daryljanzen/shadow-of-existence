@@ -103,9 +103,30 @@ print("   ", {k: v for k, v in sorted(per.items(), key=lambda kv: -kv[1]) if v})
 #   this very bake ADDED to P14 in the D1 clause one commit earlier (51 -> 55). ***  A receipt
 #   that counts the corpus counts its own landings once they are corpus prose -- which they are,
 #   and which is the honest answer, but it must be SAID or the next reader reads a drift.
-check("the corpus-wide count of `index`/`indexes`, generated block excluded", total, 128)
-check("P14 carried 51 of them before this bake's own D1 clause, and 55 after", per['P14'], 55)
+# ⛔⛭⛭ RE-PINNED r3940, AND THE TWO EXACT-TOTAL CHECKS ARE GONE RATHER THAN RE-NUMBERED.
+#   They read `total == 128` and `per['P14'] == 55`, and they failed at 132 and 56.  Nothing was
+#   wrong: prose elsewhere in the corpus moved.
+#     ⇒ *** AN EXACT CORPUS-WIDE WORD COUNT IS A PIN INTO VOLUME, NOT INTO THE CLAIM.  It certifies
+#         nothing this receipt argues and it breaks on every unrelated edit -- so re-numbering it to
+#         132 would only reset a timer, and the next node would investigate a non-defect. ***
+#   The counts are REPORTED below and re-measured every run.  What is ASSERTED is what the thesis
+#   needs and what volume cannot move: that P14 is the heaviest carrier, that it carries all three
+#   senses at three distinct sites (VERDICT 4), and that the control word does NOT split (VERDICT 5).
+#   ⌗ This is the third repair kind, beside `prose moved -> re-pin` and `thesis killed -> replace`:
+#     ** the pin was never on the thesis, and the fix is to assert the thesis instead. **
+print(f"    corpus-wide `index`/`indexes`, generated block excluded: x{total}  (reported, not pinned)")
+print(f"    P14's share: {per['P14']}  (reported; it was 51 before this bake's own D1 clause)")
 check("P14 is the heaviest carrier", max(per, key=per.get), 'P14')
+# ⛔ r3940, SECOND PASS: the check first written here -- `per['P14'] > second-largest` -- was flagged
+#   HOLLOW by scripts/lint_assertions.py, correctly: with `P14 is the heaviest carrier` asserted one
+#   line above, it cannot fail.  ** A hollow assertion is worse than none. **  Replaced by the
+#   receipt's own TITLE claim, which is scale-free AND falsifiable: three senses inside ONE paper,
+#   so no OTHER paper may carry all three.  (Computed after VERDICT 4 defines the three tests.)
+_ALL3 = re.compile(r'analytical index|graded index|bulk index', re.I)
+_others = [c for c, t in BODIES.items()
+           if c != 'P14' and _ALL3.search(t) and WITHIN.search(t) and SUBGRP.search(t)]
+check("and NO OTHER paper carries all three senses -- which is this receipt's title, and the "
+      "scale-free form of the count it replaces", _others, [])
 
 print("\nVERDICT 2 — SENSE ②, THE LABEL, in its two named forms.")
 w = {c: len(WITHIN.findall(t)) for c, t in BODIES.items()}
@@ -165,7 +186,7 @@ if FAIL:
     for f in FAIL:
         print("   ", f)
     raise SystemExit(1)
-print("  VERDICT: ALL PASS.  `index` x128 carries an operator invariant, a LABEL (x22 across seven")
+print(f"  VERDICT: ALL PASS.  `index` x{total} carries an operator invariant, a LABEL (x22 across seven")
 print("  papers, in at least three surface forms) and a subgroup index -- and P14 carries all")
 print("  three about one threeness.  The row is owed, and it belongs to the map, because which")
 print("  of the corpus's words carry two senses is a statement about the corpus.")

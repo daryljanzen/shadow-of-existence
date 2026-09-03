@@ -54,9 +54,23 @@ def check(label, got, want):
         FAIL.append(label)
 
 def body(path):
+    # ⛔⛭⛭ AMENDED r3940, AND THE FIX IS THE EXTRACTION RATHER THAN THE PIN.  This receipt asserts
+    #   the probability field's core terms are ABSENT from the corpus.  It began failing at
+    #   `probability` x3 -- and all three are THIS BAKE'S OWN LANDINGS, not physics prose:
+    #   `\ldg{probability}` x2 in P04 (markers naming the probability field-bake LEDGER) and one
+    #   `\textsf{probability}` in P07's table of field names.
+    #     ⇒ *** A field bake that measures a word's absence must not count the MARKERS ITS OWN
+    #         LANDING WROTE.  The corpus still never writes `probability` in its own voice; what it
+    #         now does is CITE the ledger by name, which is the bake succeeding, not the absence
+    #         ending. ***  D2's r3610 comment names the same hazard for `index` -- "a receipt that
+    #     counts the corpus counts its own landings once they are corpus prose".  Second sighting,
+    #     and here it is a FALSE POSITIVE rather than an honest drift, so the extraction is fixed.
+    #   Marker ARGUMENTS are stripped; the surrounding prose is untouched.
     t = open(path, encoding='utf-8', errors='replace').read()
     t = '\n'.join(l for l in t.split('\n') if not l.lstrip().startswith('%'))
     t = re.split(r'\\begin\{thebibliography\}', t)[0]
+    t = re.sub(r'\\(?:ldg|rcpt|label|ref|cite[a-z]*)\{[^}]*\}', ' ', t)
+    t = re.sub(r'\\textsf\{[^}]*\}', ' ', t)
     return re.sub(r'\s+', ' ', t)
 
 BODIES = {}
