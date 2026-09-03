@@ -54,6 +54,7 @@ usually makes a claim safe, and it is exactly why nothing caught it.
 Written r3140, `L-260`.  Stated for reversal.
 """
 import os
+import re
 import shutil
 import subprocess
 import sys
@@ -229,25 +230,58 @@ def main():
     print('  ' + '=' * 74)
     print('  PART 5 -- ⌗ EIGHT REPORTED, NONE MEASURABLE HERE, AND THE SPLIT IS PRINTED')
     print('  ' + '=' * 74)
-    check(f'⓹ the eight are held in TESTIMONY, separate from BASELINE: {sorted(C.TESTIMONY)}',
-          C.TESTIMONY == {'r3125', 'r3126', 'r3128', 'r3130', 'r3132', 'r3134', 'r3136', 'r3138'}
-          and not (C.TESTIMONY & C.BASELINE))
+    # ** ⛭⛭⛭ THE MERGE HAPPENED, AND THIS PART WAS WRITTEN TO BE READ AT EXACTLY THIS MOMENT. **
+    # ** ⓹ᵈ below states the disposition test in its own words: *"the merge will either produce
+    # ** eight divergent pairs or falsify the report."*  ** It produced the pairs. **  Measured on
+    # ** the merged tree (r3968): every entry the other line reported is confirmable here, and every
+    # ** one is carried by two commits rather than one -- the divergence, not the falsification.
+    # **   ⇒ ** So these checks are not re-pinned to new numbers; they are turned to face the
+    # **     ANSWER. **  The pre-merge form asserted `not (TESTIMONY & here)` -- that none was
+    # **     measurable yet -- which was a fact about a tree holding one side, and it was true when
+    # **     written.  *Asserting it now would require the merge never to arrive.*
+    # ** ⌗ AND THE COUNT IS REPORTED, NOT PINNED: the set was eight when this was written and the
+    # **   other line has gone on reporting.  What is asserted is the DISPOSITION of whatever it
+    # **   holds, which is the claim that survives the list growing.
     here = C.collisions()
-    check(f'⓹ᵇ ⌗ and NONE of them is measurable in this tree -- it holds one side of each pair, so '
-          f'{len(C.TESTIMONY & set(here))} of {len(C.TESTIMONY)} can be confirmed here.  *That is '
-          'the fact ⓹ exists to keep from going quiet.*',
-          not (C.TESTIMONY & set(here)))
+    _confirmed = C.TESTIMONY & set(here)
+    _unconfirmed = C.TESTIMONY - set(here)
+    check(f'⓹ the testimony is held as TESTIMONY with its source named, {len(C.TESTIMONY)} entries, '
+          f'each a named revision id -- reported by the other line, not measured here',
+          C.TESTIMONY
+          and all(re.fullmatch(r'r\d+', x) for x in C.TESTIMONY)
+          and C.TESTIMONY_SOURCE)
+    check(f'⓹ᵇ ⛭⛭ AND THE MERGE HAS SETTLED IT: {len(_confirmed)} of {len(C.TESTIMONY)} are '
+          f'confirmable as real collisions in this tree, {len(_unconfirmed)} unconfirmed -- so the '
+          f'gate\'s own rule, that an entry still unconfirmed AFTER the merge must be struck, has '
+          f'nothing to strike.  *The report was true.*',
+          not _unconfirmed and _confirmed == C.TESTIMONY)
+    # ⌗ and the overlap with BASELINE is REPORTED rather than forbidden.  The pre-merge form
+    #   asserted the two sets were disjoint; 21 of the 32 now sit in both, which is what
+    #   CONFIRMATION looks like -- an entry reported by the other line and since measured here gets
+    #   a baseline row while staying on the record of who reported it.  ** It does no damage: the
+    #   gate suppresses on `BASELINE | TESTIMONY`, a union, so an entry in both is suppressed once. **
+    #   *Recorded, not repaired: whether a confirmed entry should MOVE rather than be duplicated is
+    #   the other line's instrument to decide, and this file has no business editing its sets.*
+    check(f'⓹ᵇ¹ ⌗ {len(C.TESTIMONY & C.BASELINE)} of them now carry a BASELINE row as well, which '
+          f'is confirmation leaving its trace -- and it is harmless because the gate suppresses on '
+          f'the UNION of the two sets, so a duplicated entry is suppressed once and not twice',
+          'BASELINE | TESTIMONY' in open(
+              os.path.join(ROOT, 'corpus', 'check_revision_collisions.py'),
+              encoding='utf-8', errors='replace').read())
     check('⓹ᶜ and the gate prints the confirmed/reported split on every run, with its source, and '
           'says that an entry still unconfirmed AFTER the merge must be struck',
           'def report_testimony' in now and 'on testimony' in now
           and 'must be struck rather than left' in now)
     subjects = git('log', '--format=%s', '--all').split('\n')
     mine = {r for r in C.TESTIMONY if sum(1 for x in subjects if x.startswith(r + ' ')) == 1}
-    check(f'⓹ᵈ ⌗ and every one of the eight is one of THIS line\'s own revision numbers, each '
-          f'carried by exactly one commit here: {len(mine)} of {len(C.TESTIMONY)}.  *That is what '
-          'makes the report checkable at all -- the other line is naming numbers this tree owns, so '
-          'the merge will either produce eight divergent pairs or falsify the report.*',
-          mine == C.TESTIMONY)
+    _pairs = {r for r in C.TESTIMONY
+              if sum(1 for x in subjects if x.startswith(r + ' ')) >= 2}
+    check(f'⓹ᵈ ⛭⛭ AND IT PRODUCED THE PAIRS RATHER THAN FALSIFYING THE REPORT: {len(_pairs)} of '
+          f'{len(C.TESTIMONY)} reported ids are carried by TWO OR MORE commits in this tree, and '
+          f'{len(mine)} by exactly one.  *The pre-merge form asserted the second figure was all of '
+          'them -- one side each, the other line naming numbers this tree owned -- and said in its '
+          'own words that the merge would either produce divergent pairs or falsify the report.*',
+          _pairs == C.TESTIMONY and not mine)
 
     print()
     if FAILED:

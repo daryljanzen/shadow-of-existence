@@ -1,5 +1,48 @@
 27
 
+⛭⛭⛭ r3968 -- THREE MORE, AND ONE OF THEM WAS BROKEN BY MY OWN REPAIR THREE COMMITS EARLIER.
+  L261/A1   ⑦ THE GATE WAS CORRECTED AND THE PIN KEPT THE WITHDRAWN REASSURANCE
+  L259/D1   ⛔ THE SEED STOPPED CONSTRUCTING ITS DEFECT -- and the guard caught it
+  L260/H1   ⛭⛭ THE MERGE ARRIVED AND ANSWERED THE QUESTION THE CHECK WAS ASKING
+
+  ⛔⛭⛭ `L259/D1` SEEDS `L256/B1` BY SPLICING ITS SOURCE, AND `r3966` REPAIRED `B1` IN A WAY THAT
+    RENAMED A VARIABLE IN THE SPLICED LINE (`fresh` -> `in_window`).  The literal `.replace()`
+    no-opped, the seeded copy came out byte-identical to the original, and the mutation test would
+    have measured nothing.
+    ⌷ ** IT DID NOT PASS SILENTLY. **  `seeded != now` fired and the receipt went red -- which is
+      `L253/S1`'s rule doing its job: *a seed that stops constructing its defect ACCUSES the gate it
+      defends.*  The accusation was legible only because the guard exists.
+    ⇒ *** A SEED THAT SPLICES SOURCE TEXT IS COUPLED TO THAT SOURCE, AND THE COUPLING IS INVISIBLE
+        FROM THE FILE BEING EDITED. ***  I broke it from `B1` without any signal from `B1`.  The
+        anchor is now DERIVED -- find the line carrying the rate comparison, append to it -- so it
+        survives a rename, a reflow, or a re-pin of the sort that broke it.
+    ⌗ *Third dependency edge in two revisions: `L556/R1` fed two receipts, and `B1` feeds `D1`.
+      ** The failures are a graph and repairing a node can break its neighbours. ***
+
+  ⛭⛭ `L260/H1`'S PART 5 WAS WRITTEN TO BE READ AT EXACTLY THIS MOMENT, and its own label says so:
+    *"the merge will either produce eight divergent pairs or falsify the report."*  ** The merge has
+    happened and it produced the pairs. **  Measured on the merged tree:
+        32 of 32 reported ids CONFIRMABLE as real collisions here     (0 unconfirmed)
+        32 of 32 carried by TWO OR MORE commits                       (0 by exactly one)
+    So the gate's own rule -- an entry still unconfirmed AFTER the merge must be struck -- has
+    nothing to strike, and the other line's report was true.
+    ⇒ ** These checks were not re-pinned to new numbers; they were turned to face the ANSWER. **
+      The pre-merge form asserted that NONE was measurable here, which was a fact about a tree
+      holding one side of each pair.  *Asserting it now would require the merge never to arrive.*
+    ⌗ AND ONE THING THE CHECK DID NOT ANTICIPATE, REPORTED RATHER THAN REPAIRED: 21 of the 32 now
+      carry a `BASELINE` row as well, so the disjointness the old form asserted is gone.  ** That is
+      what confirmation looks like ** -- an entry reported by the other line and since measured here
+      gets a baseline row while staying on the record of who reported it -- and it does no damage,
+      because the gate suppresses on `BASELINE | TESTIMONY`, a union.  *Whether a confirmed entry
+      should MOVE rather than be duplicated is the other line's instrument to decide, and this file
+      has no business editing its sets.*
+
+  ⌗ `L261/A1` pinned the gate's phrase *"the prevention is real"*.  r3640 struck it -- the gate had
+    printed it THROUGH TEN OUT-OF-BAND COMMITS from the other line (`r3622..r3638`, ten consecutive
+    ids in this line's half) while reassuring the reader the partition was whole.  ** A1's whole
+    thesis is that a check must assert BEHAVIOUR and not a form of words a gate could carry while
+    doing nothing -- and the phrase it pinned turned out to be exactly such a form of words. **
+
 ⛭⛭⛭ RE-MEASURED r3962 BY A COMPLETE RE-RUN, and *** THE HEAD COUNT ABOVE IS 27 AND IT IS THE
 GATE'S NUMBER. ***  649 pass, 46 fail, 4 over timeout, 1863s, at tree fa560eaf30b5f5c4.
   ⌗ ** All 46 were classified rather than assumed: 19 carry a ModuleNotFoundError and ALL NINETEEN

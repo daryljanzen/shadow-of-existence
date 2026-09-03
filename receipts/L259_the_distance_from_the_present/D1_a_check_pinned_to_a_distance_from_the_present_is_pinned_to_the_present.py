@@ -135,10 +135,28 @@ def main():
     r = subprocess.run([sys.executable, B1], cwd=os.path.dirname(B1), capture_output=True,
                        text=True, errors='replace', timeout=900)
     check(f'⓷ᶜ and `B1` exits {r.returncode}', r.returncode == 0)
-    # ** the seed: put the moving measurement back and it must fail again **
+    # ** ⛔⛭⛭ THE SEED STOPPED CONSTRUCTING ITS DEFECT, AND THE GUARD IS WHAT CAUGHT IT (r3968). **
+    # ** It was a literal `.replace()` of `B1`'s whole assertion line, verbatim down to the variable
+    # ** name -- and r3966 repaired `B1` in a way that renamed one variable in that very line
+    # ** (`fresh` -> `in_window`, bounding it to the fixed window).  *** The replace no-opped, the
+    # ** seeded copy was byte-identical to the original, and the test would have measured nothing. ***
+    # **   ⌷ ** It did not pass silently: `seeded != now` fired and the receipt went red. **  That is
+    # **     `L253/S1`'s rule doing exactly its job -- *a seed that stops constructing its defect
+    # **     ACCUSES the gate it defends* -- and the accusation was legible because the guard exists.
+    # **   ⇒ *** A SEED THAT SPLICES SOURCE TEXT IS COUPLED TO THAT SOURCE, and the coupling is
+    # **       invisible from the file being edited. ***  So the anchor is now DERIVED rather than
+    # **       quoted: find the line carrying the rate comparison and append the moving term to it.
+    # **       That survives a rename, a reflow, or a re-pin of the sort that broke it -- and if the
+    # **       comparison itself is ever removed, the guard below still fires rather than passing.
+    _anchor = [l for l in now.split('\n') if 'old_n / 330' in l and l.rstrip().endswith(')')]
+    check(f'⓸ᵃ the rate comparison is locatable in `B1` by what it MEASURES rather than by its '
+          f'wording -- {len(_anchor)} line(s) match, and the seed is built from that line rather '
+          f'than from a quotation of it',
+          len(_anchor) == 1)
+    _line = _anchor[0]
     seeded = now.replace(
-        'nums[0] >= 3099 and nums[-1] <= 3112 and len(fresh) / win > old_n / 330)',
-        "nums[0] >= 3099 and nums[-1] <= 3112 and len(fresh) / win > old_n / 330 and "
+        _line,
+        _line.rstrip()[:-1] + " and "
         "int(git('log', '-1', '--format=%s', 'HEAD').strip().split()[0][1:]) - 3112 <= 20)")
     check('⓸ SEEDED: the moving comparison is reconstructible and it CHANGES the file, so the seed '
           'is real', seeded != now)
