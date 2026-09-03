@@ -251,6 +251,57 @@ for got, want in zip(pks, SKY_L):
     assert abs(got - want) < 9.0, (pks, SKY_L)
 print(f"  the positions stay right: every peak within 9 of the sky's.")
 
+# =====================================================================================
+# (A6b) ** ADDED r3906, AND THE ASSERTION I FIRST WROTE HERE FAILED. **  59 suspended every CR
+#       height figure on this line's finding and then wrote: "the positions are not affected by the
+#       same mechanism on your control evidence, but that should be CONFIRMED rather than assumed,
+#       and it should not be assumed."  It was assumed -- by me: the 2x2 above PRINTS the positions
+#       at every k_max and (A6) only ever checked the CONVERGED cell against the sky.
+#   ⛔ MEASURED, THE ASSUMPTION IS FALSE.  I wrote `assert _dpos_max < 12.0` expecting a height-only
+#      defect.  It failed at 16.0, on BOTH paths:
+#          los_spectrum  [220, 524, 796] -> [220, 532, 812]
+#          _project      [220, 532, 796] -> [220, 540, 812]
+#      The first peak does not move.  The second moves 8, the THIRD MOVES 16 -- about 2% -- while
+#      P1/P2 moves ~14% and P1/P3 ~63% over the same 2.7x change in k_max.
+#   ⇒ *** SO TRUNCATION IS NOT A HEIGHT-ONLY DEFECT.  It damages heights FAR more than positions,
+#       and the ordering is real and worth having, but "positions are unaffected" is WRONG and a
+#       position quoted off a truncated run carries a shift of this order, growing with ell. ***
+#   ⌗ The assertion below now states the MEASURED fact and would fail if either half moved: if
+#     positions stopped moving, or if they moved as much as the heights.
+#   ⌗ SCOPE, and it is the point of stating it: this is the CONTROL arm.  The CR arm runs the HIER
+#     path where PART 0 shows r3512's composition defect is LIVE, so this licenses no CR position
+#     either way.  What it does is remove the assumption -- the CR positions 204/508/804 were
+#     produced at the truncated k_max and cannot be carried over unexamined.
+print()
+print(BAR); print("PART 2b — IS THE TRUNCATION A HEIGHT DEFECT ONLY?  NO, AND THAT IS THE RESULT"); print(BAR)
+_dpos_max, _dh_min = 0.0, 1e9
+for _h in (False, True):
+    _p900 = res[(_h, 900)][0]
+    _p2400 = res[(_h, 2400)][0]
+    _d = [abs(a - b) for a, b in zip(_p900, _p2400)]
+    _dpos_max = max(_dpos_max, max(_d))
+    _dh = abs(res[(_h, 900)][1] - res[(_h, 2400)][1]) / res[(_h, 2400)][1]
+    _dh_min = min(_dh_min, _dh)
+    print(f"    {'_project' if _h else 'los_spectrum':>14}  positions "
+          f"{[int(v) for v in _p900]} -> {[int(v) for v in _p2400]}   "
+          f"max shift {max(_d):.0f} ell ({max(_d)/_p2400[-1]:.1%})      P1/P2 moves {_dh:+.1%}")
+# THE POSITIONS DO MOVE.  Asserted as measured, in BOTH directions, so the receipt fails if the
+# claim inverts either way.
+assert _dpos_max > 8.0, ("positions did NOT move -- the finding has changed", _dpos_max)
+assert _dpos_max < 24.0, ("positions moved MORE than measured", _dpos_max)
+# and the ordering -- heights damaged far more than positions -- is the part that survives.
+_rel_pos = _dpos_max / float(_prj2400[0][-1])
+assert _rel_pos < _dh_min / 4.0, ("heights no longer dominate", _rel_pos, _dh_min)
+print(f"  ⛔ ** THE POSITIONS MOVE: up to {_dpos_max:.0f} in ell ({_rel_pos:.1%}) across a 2.7x "
+      f"change in k_max. **")
+print(f"     The first peak is unmoved; the second moves 8; the third moves 16 and grows with ell.")
+print(f"  ** So truncation is NOT a height-only defect.  Heights move {_dh_min:.0%}+ and positions "
+      f"{_rel_pos:.1%} -- ")
+print("     an ordering worth having, and NOT the 'positions are unaffected' this line assumed.")
+print("  ⇒ ** A position quoted off a truncated run carries a shift of this order.  This is the")
+print("     CONTROL arm; the CR arm runs HIER where PART 0 shows r3512's defect is LIVE, so the CR")
+print("     positions 204/508/804 cannot be carried over unexamined either. **")
+
 # (A7) CONVERGENCE IN MODE COUNT, at the converged k_max -- a two-fold range in NK.
 print()
 print(f"    {'NK':>6} {'P1/P2':>9} {'P1/P3':>9}")
