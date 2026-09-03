@@ -75,6 +75,16 @@ def fibres(n, k):
     return len({(k * j) % n for j in range(n)})
 
 
+
+def _flat_at(rev):
+    """`matter_sector_paper.tex` at a revision, flattened the way `p14` is."""
+    import re as _re
+    import subprocess as _sp
+    return _re.sub(r'\s+', ' ', _sp.run(
+        ['git', 'show', f'{rev}:corpus/matter_sector_paper.tex'],
+        cwd=ROOT, capture_output=True, text=True, errors='replace').stdout)
+
+
 def main():
     print()
     print('  R1 -- a clause that outruns its own premise, and the counterexample is in the paper')
@@ -112,9 +122,15 @@ def main():
     print('  ' + '=' * 74)
     print('  PART 3 -- ⛔ THE FINAL CLAUSE DROPS THE PREMISE')
     print('  ==========================================================================')
-    check('⓷ the clause as written is unqualified: "no character count on a finite group can '
-          'produce three"',
-          'no character count on a finite group can produce three' in p14)
+    # ** ⛭⛭⛭ RE-PINNED r3978, AND THE DEFECT THIS FILE FOUND HAS BEEN REPAIRED IN THE PAPER. **
+    # ** P14 read "no character count on a finite group can produce three" -- unqualified, and false
+    # ** as stated, since a $\mathbb{Z}_3$ character has three fibres.  *** r3315 ("the two landings
+    # ** 54 routed: P14's dropped premise") carried the premise back into the clause. ***
+    # **   ⇒ ** So the defective wording is pinned WHERE IT STOOD and the repair asserted here. **
+    _p14_then = _flat_at('2ed352c1~1')
+    check('⓷ the clause as written was unqualified at 2ed352c1~1: "no character count on a finite '
+          'group can produce three" -- false as stated, which is this file\'s finding',
+          'no character count on a finite group can produce three' in _p14_then)
     print('      G      k   fibres of χ_k')
     for n in (2, 3, 4, 6):
         for k in range(n):
@@ -151,10 +167,31 @@ def main():
     unqualified_false = any(fibres(n, k) == 3 for n in (3, 6) for k in range(n))
     text_lacks_qualifier = ('no character count on a finite group can produce three' in p14
                             and 'valued character' not in p14)
-    check('⓹ the repair carries the premise into the clause — "no count by a {±1}-valued character '
-          'can produce three": that form is TRUE, the unqualified form is FALSE, and the text '
-          'carries the unqualified one',
-          qualified_true and unqualified_false and text_lacks_qualifier)
+    # ** ⛭⛭ AND THE PAPER'S REPAIR SAYS MORE THAN THE ONE THIS FILE PROPOSED. **  It suggested "no
+    # ** count by a {±1}-valued character can produce three".  P14 now reads *"A grading by a
+    # ** one-dimensional character is a function to $\{\pm1\}$ and its blocks are its fibres, so it
+    # ** has at most two, and no \emph{two-valued} character count can produce three"*, and then
+    # ** names the premise outright: *"The restriction is the premise and not a general fact: a
+    # ** $\mathbb{Z}_3$ character takes three values, and this paper uses one---the centre"*.
+    # **   ⇒ ** The arithmetic this file computed is unchanged and still asserted; what moved is that
+    # **     the paper now carries the qualifier AND says why it is a premise. **  *A receipt that
+    # **     proposes a repair and pins the unrepaired text fails when the repair lands -- and the
+    # **     landing is what it was for.*
+    check('⓹ the repair carried the premise into the clause: the qualified form is TRUE (a two-'
+          'valued character has at most two fibres) and the unqualified form is FALSE (a '
+          '$\\mathbb{Z}_3$ character has three), and P14 now carries the QUALIFIED one -- "no '
+          '\\emph{two-valued} character count can produce three"',
+          qualified_true and unqualified_false
+          # ⌗ `p14` is the DE-MACROED view (`BODIES_TEX`), where `\emph{}` is stripped -- so the
+          #   pin is the de-macroed form.  *Pinning the raw `\emph{two-valued}` here would match
+          #   nowhere and read as the repair not having landed.*
+          and 'no two-valued character count can produce three' in p14
+          and 'no character count on a finite group can produce three' not in p14)
+    check('⓹ᵃ ⛭ and it names the restriction as a premise rather than leaving it implicit: "The '
+          'restriction is the premise and not a general fact: a $\\mathbb{Z}_3$ character takes '
+          'three values, and this paper uses one---the centre"',
+          'The restriction is the premise and not a general fact' in p14
+          and '$Z_3$ character takes three values' in p14)
     check('⓹ᵇ ⛭ and the class is the corpus\'s own: OWED 621 recorded a gloss drifting from the '
           'computation beneath it — "a receipt\'s prose is not its result" — at receipt grain; '
           'this is the same shape at PAPER grain',

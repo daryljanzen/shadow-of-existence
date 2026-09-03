@@ -77,6 +77,52 @@ def check(label, cond):
         FAILED.append(label)
 
 
+
+#: ** ⛭ THE CLAIMED SET AT THIS FILE'S OWN THROW (r3978). **  `US.claimed()` is derived straight
+#: ** from `field_survey.FIELDS`, which GROWS as fields are thrown -- so read live it says whether
+#: ** the surface is claimed TODAY, and this file's finding is that it was unclaimed WHEN NAMED.
+#: ** ⛔ AND LOADING THE OLD `unclaimed_surface.py` IS NOT ENOUGH, which is the trap here: that
+#: ** module imports `field_survey` LIVE, so the historical code answers with today's field list and
+#: ** reports the surface as claimed at its own throw.  *** The DATA has to be historical, not just
+#: ** the code. ***  So the field list is read at the throw and `claimed()`'s own rule applied to it.
+_THROW = '313f80f3'          # r3172 -- this file's own commit
+_CLAIMED_THEN = set()
+
+
+def _fields():
+    import sys as _sys
+    _sys.path.insert(0, os.path.join(ROOT, 'corpus'))
+    import field_survey as _FS
+    return _FS.FIELDS
+
+
+def _fields_at_throw():
+    import subprocess as _sp
+    import types as _types
+    src = _sp.run(['git', 'show', f'{_THROW}:corpus/field_survey.py'], cwd=ROOT,
+                  capture_output=True, text=True, errors='replace').stdout
+    mod = _types.ModuleType('_fs_then')
+    mod.__dict__['__file__'] = os.path.join(ROOT, 'corpus', 'field_survey.py')
+    cwd = os.getcwd()
+    os.chdir(os.path.join(ROOT, 'corpus'))
+    try:
+        exec(compile(src, 'field_survey@throw', 'exec'), mod.__dict__)
+    finally:
+        os.chdir(cwd)
+    assert mod.FIELDS, 'the field list must be readable at the throw, or nothing here compares'
+    return mod.FIELDS
+
+
+def _claimed_at_throw():
+    """`US.claimed()`'s own rule, applied to the field list AS IT STOOD at the throw."""
+    if not _CLAIMED_THEN:
+        for _name, _ledger, _terms in _fields_at_throw():
+            for _t in _terms:
+                _CLAIMED_THEN.update(w.lower() for w in US.WORD.findall(_t))
+        assert _CLAIMED_THEN, 'the claimed set must be non-empty, or the comparison is vacuous'
+    return _CLAIMED_THEN
+
+
 def main():
     print()
     print('  U1 -- a survey that needs the list cannot find what is missing from the list')
@@ -164,7 +210,23 @@ def main():
     check(f'⓹ `involution` ×{inv} is larger than `holonomy` ×{hol} and `monodromy` ×{mon}, each of '
           'which earned a whole bake',
           inv > hol and inv > mon)
-    check('⓹ᵇ and no thrown field vocabulary claims it', 'involution' not in US.claimed())
+    # ** ⛭⛭⛭ RE-PINNED r3978, AND *** THE UNCLAIMED SURFACE HAS BEEN CLAIMED. ***  This file is
+    # ** named for a surface no thrown field's vocabulary reached -- `involution`, larger than
+    # ** `holonomy` and `monodromy`, each of which had earned a whole bake.  ** Six revisions later
+    # ** r3178 threw the field: `field_survey.py` now carries `involution / real forms`, scoring
+    # ** ×531, the largest of the twenty-four. **
+    # **   ⇒ ** The file's finding was ACTED ON, and asserting the surface is still unclaimed asserts
+    # **     that it was not. **  The absence is pinned at the throw and the claim asserted now, so
+    # **     the receipt records what it caused instead of failing because of it.
+    _CLAIMED_AT = 'a5380606'        # r3178 -- the revision that threw the field
+    check(f'⓹ᵇ no thrown field vocabulary claimed it at {_THROW}, this file\'s own commit -- which '
+          f'is the surface it was written to name',
+          'involution' not in _claimed_at_throw())
+    check(f'⛭⛭ AND IT IS CLAIMED NOW ({_CLAIMED_AT}, six revisions later): `involution / real '
+          f'forms` is a thrown field with a ledger, and `involution` is one of the '
+          f'{len(US.claimed())} terms the survey\'s vocabularies reach',
+          'involution' in US.claimed()
+          and any(n == 'involution / real forms' and l for n, l, _ in _fields()))
     p03 = sum(RB.word_counts('involution', tex=True).get(p, 0) for p in ('P03',))
     p05 = sum(RB.word_counts('involution', tex=True).get(p, 0) for p in ('P05',))
     check(f'⓹ᶜ it is concentrated where the discrete structure lives: P03 ×{p03}, P05 ×{p05}',
