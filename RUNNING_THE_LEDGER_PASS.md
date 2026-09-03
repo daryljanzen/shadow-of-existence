@@ -1,7 +1,7 @@
 ---
 name: RUNNING_THE_LEDGER_PASS
 kind: INSTRUMENT
-current: r3876
+current: r3878
 job: How to work corpus/open_ledger.txt one row at a time -- the method, the failure modes it was built against, and what each turn must produce.
 sources: [chat]
 ---
@@ -95,6 +95,8 @@ in two places, and only one was refreshed."*
 | **two instruments reporting the same number and meaning different items** | *the tally's `known debts = 1` is derived from `P15`'s list of four buildable debts and is `PO-24`; the ledger's `NAMED-UNBUILT = 1` was a different population and was `PO-23`. **Neither measurement was wrong and they were never the same count** --- but a reader checking one against the other finds the numbers agreeing and the objects not, which is harder to catch than a disagreement. ⇒ **When two counts are reported side by side, say what each is counted OVER*** |
 | **a fix that stops one paper short** | *`r3871` repointed the `canonical_time` row off `PO-6`'s superseded warrant and left the `CR_framework` row, its sibling, still saying "the strike and this sentence agree". **The corpus-wide sweep rule (③) applies to LEDGER ROWS and not only to paper prose*** |
 | **a retired word that is also a machine key** | *`r3799` retired one word from the corpus's PROSE, 2,281 instances, and did it thoroughly. Its UPPERCASE form is `open_ledger.txt`'s **verdict token** on 21 rows, and a receipt ASSERTS the literal string is present in `THE_LIVE_ARC.md`. ⇒ **A node told "that word is retired" who finishes the sweep here breaks a gate; a node who obeys it literally cannot verdict a row into that class.** Both halves are true at once, and nothing said so until `r3876`. **When a sweep retires a word, say whether it retires the KEY as well as the PROSE*** |
+| **a `REGISTERED` row pointing at a STRUCK home** | *the verdict asserts "a real gap, already carried by a `PROTECTED_OPEN` item or a register row". **Measured at `r3878`: twelve `REGISTERED` rows name `PO-4`, `PO-5`, `PO-6` or `PO-11`, and all four are struck** --- present in `PROTECTED_OPEN` only as `~~struck~~`, absent from `THE_REGISTER` and the generator. ⇒ **The verdict then asserts a home that is a record of closure.** Two worked at `r3878`; ten remain, and they are named here so the queue is findable rather than swept* |
+| **one name over four different objects** | *"the propagating spinor sector" names at least FOUR things: `PO-11`'s omega!=0 continuum on the STATIC slicing structure (built `r2856`); `P07`'s descent, built on `P11`'s unpolarised GOWDY member (`r3802`); the COMPACT-FACE sector (`PO-26`, unbuilt); and `P14`'s BOUND leaf zero-modes, the contrast object. **`r3801` had to do real work to establish "genuinely unbuilt" precisely because the name was doing duty for all four.** Before closing or opening on a named sector, say which BACKGROUND it lives on* |
 | **opening a PO row on an unchecked premise** | *opened `PO-26` for a construction the corpus had already built, because I took a struck row's summary as the object instead of reading the paper it cites. **A new row needs its premise verified in the paper, exactly as a closure does*** |
 
 ---

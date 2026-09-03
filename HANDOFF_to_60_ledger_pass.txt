@@ -1,5 +1,5 @@
 HANDOFF FOR 60 -- running the open-ledger pass
-current: r3876
+current: r3878
 (60's line; 59's ledger-pass work runs to r3877 and is merged in)
 
 WHAT THE JOB IS
@@ -14,12 +14,21 @@ Read RUNNING_THE_LEDGER_PASS.md first. It is the instrument, and it is short.
 WHERE IT STANDS
 
   ledger rows              96
-  rows worked individually 23
+  rows worked individually 25
   open problems            8   (PO-13, PO-23, PO-24, PO-25, PO-26, PO-27, PO-28, PO-29)
   known debts              1   (the end-to-end transfer, which is PO-24)
   NAMED-UNBUILT rows       0   (was 1 -- the UV definition, registered to PO-23 at r3872)
   gates                    96 pass / 0 fail / 1 unrun
   papers                   all 17 compile at 0 errors, 0 undefined
+  REGISTERED rows whose named home is STRUCK    10 of 12   (2 worked at r3878)
+
+  ** THAT LAST LINE IS A MEASURED QUEUE, NOT AN ESTIMATE. **  Twelve REGISTERED rows name PO-4,
+  PO-5, PO-6 or PO-11 as the home carrying their gap, and all four are struck -- present in
+  PROTECTED_OPEN only as struck-through, absent from THE_REGISTER and from the generator.  The
+  verdict then asserts a home that is a record of CLOSURE.  Each needs its kill file read before
+  a verdict moves: a struck home can still be the right pointer when the strike is correct, and
+  PO-6's warrant was found SUPERSEDED at r3871 while PO-11's is sound.  Named here so the queue
+  is findable rather than swept.
 
 ** THE LAST TWO COUNTS ABOVE ARE DIFFERENT MEASUREMENTS OVER DIFFERENT POPULATIONS. **  Before
 r3872 both read 1 and they meant different items: the DEBT count comes from P15's own list of four
