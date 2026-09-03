@@ -121,6 +121,15 @@ THE METHOD, IN ONE LINE EACH
      When a register and a paper disagree, the paper governs, but read both.
      Read the row's own NOTE too. Rows carry the history of their disputes, and
      one of them caught an error of mine three revisions old.
+  2b. A SECTION HEADING IS A CLAIM. Headings, titles, abstracts and introductions must
+     say what their contents say. A heading that does not match its body is STALE, and
+     staleness is excised on identification. Do not classify a heading row as "not a
+     claim" and move on -- that identifies a false statement and declines to fix it,
+     which is deferral wearing another hat. Two were found and fixed at r3963:
+     CR_framework's remark "The one open frontier", whose body says the remainder is
+     ordinary interior analysis RATHER THAN a frontier; and dynamics_paper's "Scope and
+     what remains open", where none of the three items is open in that paper.
+
   3. When a claim changes, sweep the phrase corpus-wide IN THE SAME TURN.
   4. Use word-boundary and wrapped-form searches. Exact-string matching failed five
      times in one session because LaTeX wraps across lines.

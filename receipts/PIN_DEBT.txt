@@ -131,6 +131,12 @@ rule), so it still reads the gate's last measurement and will be replaced by the
     ⇒ *** A LOOKUP THAT ASSUMES ITS KEY STILL EXISTS TURNS A CLOSED ITEM INTO A CRASH, AND A CRASH
         REPORTS NOTHING -- INCLUDING EVERYTHING DOWNSTREAM OF IT. ***
 
+⌗ r3961's note (node 59) is SPENT and removed at r3967: it recorded two repairs against a count
+  that had not been re-measured, and r3962's complete re-run has since replaced the count.
+  Both receipts were repaired independently by 60 in that run, and 60's versions were taken
+  on the merge because they are stronger: they read the paper AT THE COMMIT THAT CARRIED THE
+  DEBT as well as the current text, so they verify the TRANSITION rather than the endpoint.
+
 ⛭⛭ WORK STARTED r3938 (node 60), on Daryl's decision at r3908 -- ledger pass first, receipts after,
 and the standard is that they RUN.  ** 5 of 62 repaired; head count above is now 57. **
   S4_the_open_half_is_the_floor                                     r3938  THESIS KILLED -> REPLACED

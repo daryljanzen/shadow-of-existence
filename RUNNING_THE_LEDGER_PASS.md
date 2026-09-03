@@ -48,6 +48,17 @@ been invisible from the row alone.*
 If it cites a receipt, **run the receipt**. Registers and papers disagree, and when they do the **paper
 governs** — but only after both have been read.*
 
+**②ᶜ A SECTION HEADING IS A CLAIM AND IS SUBJECT TO THE STALENESS CHARGE.** *Headings, titles,
+abstracts and introductions must say what their contents say. **A heading that does not match its body is
+STALE, and staleness is excised on identification --- not recorded, not classified "not a claim", not
+deferred.*** *Disposing of a heading row as prose is the deferral face in another venue: it identifies a
+false statement in the corpus and then declines to fix it.* ⌗ *Two were found this way and both are fixed
+at `r3963`: `CR_framework`'s remark titled **"The one open frontier"**, whose body says the remainder "is
+ordinary interior analysis rather than a frontier of this construction" --- the title asserting exactly
+what the body denies; and `dynamics_paper`'s **"Scope and what remains open"**, whose three items are one
+registered elsewhere, one outside the construction by proof, and one done in the companion, so nothing in
+it is open.*
+
 **③ WHEN A CLAIM CHANGES, SWEEP THE PHRASE CORPUS-WIDE IN THE SAME TURN.* *A claim fixed in one paper is
 usually false in four more. One propagating-spinor claim was found in **seven** places across five
 revisions because each pass fixed only what it was looking at.*
