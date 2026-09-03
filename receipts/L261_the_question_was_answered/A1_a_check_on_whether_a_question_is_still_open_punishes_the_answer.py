@@ -148,11 +148,29 @@ def main():
         held = buf2.getvalue()
     finally:
         C.OTHER_HALF = keep
+    # ** ⛭⛭⛭ RE-PINNED r3966, AND THE PHRASE IT PINNED WAS WITHDRAWN ON THIS FILE'S OWN ARGUMENT. **
+    # ** The held branch used to print *"the prevention is real"*.  r3640 struck that: the gate had
+    # ** printed it *** THROUGH TEN OUT-OF-BAND COMMITS FROM THE OTHER LINE *** -- `r3622..r3638`,
+    # ** ten consecutive ids in this line's half, written by the other, while the gate reassured the
+    # ** reader the partition was whole.  It now says what is TRUE instead: ** "the other half is
+    # ** DECLARED held.  That is a claim by the other line, not a measurement made here, and it has
+    # ** been wrong." **
+    #   ⇒ *** THIS FILE'S WHOLE THESIS IS THAT A CHECK MUST ASSERT BEHAVIOUR AND NOT A FORM OF WORDS
+    #       A GATE COULD CARRY WHILE DOING NOTHING -- and "the prevention is real" turned out to be
+    #       exactly such a form of words.  The pin outlived the sentence by holding the reassurance
+    #       the gate had already learned not to make. ***
+    #   ⌗ The seeded discrimination is kept and is SHARPER for it: the two branches must differ, the
+    #     unheld one must refuse the word `prevention`, and the held one must claim DECLARATION
+    #     rather than measurement.  A gate that went back to reassuring would fail this.
     check('⓸ SEEDED: with the answer removed the gate says "PROPOSAL, NOT A PREVENTION"; with it '
-          'restored it says the prevention is real -- so the replacement checks BEHAVIOUR and not a '
-          'form of words a gate could carry while doing nothing',
-          'PROPOSAL, NOT A PREVENTION' in unheld and 'prevention is real' not in unheld
-          and 'prevention is real' in held and 'PROPOSAL, NOT A PREVENTION' not in held)
+          'restored it says the half is DECLARED held and that the declaration "has been wrong" -- '
+          'so the replacement checks BEHAVIOUR, and neither branch offers a reassurance the gate '
+          'has not measured (r3640 withdrew "the prevention is real" for being exactly that)',
+          'PROPOSAL, NOT A PREVENTION' in unheld
+          and 'the other half is DECLARED held' in held
+          and 'not a measurement made here, and it has been wrong' in held
+          and 'PROPOSAL, NOT A PREVENTION' not in held
+          and 'prevention is real' not in held and 'prevention is real' not in unheld)
     check('⓸ᵇ and the answer is RESTORED -- verified, not trusted to the `finally`',
           C.OTHER_HALF == keep and C.OTHER_HALF is not None)
     check('⓹ ⌗ and the pinned historical fact is untouched: `N1` still records that it ROUTED the '
