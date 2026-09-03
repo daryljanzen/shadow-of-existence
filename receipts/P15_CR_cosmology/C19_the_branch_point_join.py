@@ -5,7 +5,10 @@ $\\Lambda$CDM's is spread over equality.
 
 ** WHAT WAS OWED. **  r2660 reduced `PO-12` to "run the existing hierarchy across a TWO-LEG background
 joined at the branch point", and marked ** the join untouched **.  P15 states the debt in its own voice:
-"** a computed transfer function across the branch point is not yet in hand **."
+"the super-horizon transfer across the branch point is
+itself computed ... while carrying that join and the acoustic evolution through to recombination
+as ONE CALCULATION is not yet run." (r3859; the earlier wording said no computed transfer existed
+at all, and C21 made that false.)
 
 ** ⓵ AND THE MATCHING CONDITION IS ALREADY STATED. **  P15: "the branch point's null geometry decomposes
 the primordial scalar spectrum into a substrate-determined structure and a progenitor-supplied content,
@@ -82,9 +85,15 @@ def main():
     p15 = re.sub(r'\s+', ' ', body(os.path.join(ROOT, 'corpus', 'CR_cosmology.tex')))
 
     # ⓵ the debt, and the matching condition
-    check('⓵ P15 states the debt: "a computed transfer function across the branch point is not yet in '
-          'hand"',
-          'a computed transfer function across the branch point is not yet in hand' in p15)
+    # ** RE-PINNED r3961.  ** The old pin read P15 saying "a computed transfer function across the
+    # branch point is not yet in hand".  That sentence was CORRECTED at r3859 because it had become
+    # false: C21 computes the super-horizon transfer across the branch point.  The pin is superseded
+    # BY A RESULT, not stale, and the paper now draws the sharper line this receipt is actually about.
+    check('⓵ P15: the super-horizon transfer across the branch point IS computed',
+          'the super-horizon transfer across the branch point is itself' in p15
+          and 'computed' in p15)
+    check('  and what is NOT run is the single end-to-end calculation',
+          'the acoustic evolution through to recombination as one calculation is not yet run' in p15)
     check('and the matching condition: "the branch point transmits that content rather than imprinting '
           'one of its own"',
           'the branch point transmits that content rather than imprinting one of its own' in p15)

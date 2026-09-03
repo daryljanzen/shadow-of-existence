@@ -97,9 +97,15 @@ def main():
           and sp.limit(r**2/al**2, r, 0, '+') == 0)
 
     # ⓸ the corrected distinction
-    check('⓷ and the seam/branch-point distinction is one the paper had to correct: "a distinction six '
-          'sentences of this paper previously ran together, corrected at r2501+c54.197"',
-          'previously ran together, corrected at' in p15)
+    # ** RE-PINNED r3961.  ** The old pin required P15 to CONTAIN the words "previously ran together,
+    # corrected at r2501+c54.197" -- i.e. it enforced revision-history narration inside a paper, which
+    # the corpus's one-state rule forbids and which was therefore removed.  A gate must not require a
+    # defect.  Re-pinned to the DISTINCTION ITSELF, which is what this receipt is about and which the
+    # paper now states in its own voice, twice.
+    check('⓷ the seam/branch-point distinction is stated: the branch point is NOT a seam',
+          'not} a seam' in p15)
+    check('  and the seams are named as the two unit-speed loci of the lap',
+          'the seams are the two unit-speed loci of the lap' in p15)
 
     print()
     if FAILED:

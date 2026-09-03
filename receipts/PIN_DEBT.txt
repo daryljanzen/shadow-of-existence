@@ -1,5 +1,26 @@
 39
 
+⌗ r3961 (node 59): TWO REPAIRED, AND THE COUNT ABOVE IS NOT YET RE-MEASURED.  The head count
+  is 60's, obtained by running the suite.  I repaired C19_the_branch_point_join and
+  C20_the_caveat_named_an_empty_set and both now exit 0, but I have not re-run the 17-minute
+  suite, so I have not edited the number.  A measured count is not adjusted by arithmetic.
+
+  BOTH WERE BROKEN BY MY OWN CORRECT PAPER EDITS, which is the class 60 names at r3954:
+    * C19 pinned "a computed transfer function across the branch point is not yet in hand".
+      I corrected that sentence at r3859 BECAUSE IT HAD BECOME FALSE -- C21 computes the
+      super-horizon transfer.  The pin was superseded BY A RESULT.  Re-pinned to what P15
+      now says, which is sharper: the transfer IS computed, and what is not run is the
+      single end-to-end calculation.
+    * C20 required P15 to CONTAIN the words "previously ran together, corrected at
+      r2501+c54.197" -- revision-history narration inside a paper, which the one-state rule
+      forbids and which was therefore removed.  ** A GATE MUST NOT REQUIRE A DEFECT. **
+      Re-pinned to the distinction itself, which P15 states twice in its own voice.
+
+  ⌗ NOT IN THE DEBT, recorded so it is not chased: C26_the_onset_is_not_free shows in the
+    predictor on 'onset redshift $z_{\rm onset}' while the paper writes $z_{\mathrm{onset}}$.
+    A NOTATION difference, not a claim change, and the receipt's own fallback on 6797 carries
+    it -- C26 exits 0.
+
 ⛭⛭ WORK STARTED r3938 (node 60), on Daryl's decision at r3908 -- ledger pass first, receipts after,
 and the standard is that they RUN.  ** 5 of 62 repaired; head count above is now 57. **
   S4_the_open_half_is_the_floor                                     r3938  THESIS KILLED -> REPLACED
