@@ -214,6 +214,23 @@ no environment can run is to make one that can, not to declare it away.
    string'.  The ten undeclared are listed at the foot of this file and belong on that list.
    *** SO THE NUMBER AT THE HEAD OF THIS FILE IS 62 AND THE GATE SAYS 72. ***
 
+⛭⛭⛭ A PREDICTOR EXISTS NOW: `scripts/find_broken_pins.py` (written r3960).  It names, in under a
+second, WHICH STRING in a receipt no longer matches any paper -- which is the whole diagnosis for
+the largest class here.  Current reading: ** 30 literals in 20 files, out of 451 pins into paper
+text across 163 receipts. **  Run it before running the suite; the suite takes 17 minutes and says
+only THAT a receipt failed.
+  ⛔ AND ITS FIRST VERSION WAS AN ORDER OF MAGNITUDE WRONG, which is why the tool documents the
+    restriction rather than just applying it.  Testing EVERY `'...' in var` against the corpus
+    reported 304 broken pins in 143 files -- against 39 receipts that actually fail.  Most such
+    tests are against register rows, PROTECTED_OPEN.md, ledger notes or a receipt's own source,
+    and those literals are not meant to be in a paper.  ** The number was only visibly wrong
+    because a known count existed to check it against. **  ⇒ A scan whose result cannot be
+    cross-checked against something already measured should not be trusted, and this one prints
+    both numbers so the check stays available.
+  ⌗ It is a PREDICTOR, not a verdict.  Two repairs in this file were pins that MATCHED and were
+    still wrong -- B14 pinned the paper's self-narration, B16 pinned a locus the corpus had
+    corrected -- and neither would appear in this scan.
+
 ** THIS FILE RECORDS A MEASUREMENT.  IT DECLARES NO RATCHET. **  ASSERTION_DEBT.txt may only
 be rewritten downward because a gate enforces that; nothing here does, and inventing the
 constraint without the enforcement would be the third layer of the defect described below.
