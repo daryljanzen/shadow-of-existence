@@ -19,7 +19,18 @@ not."*
     because its two arms had silently become ONE: it read arm B off the figure caption, into which
     r3213 had put arm A's converged quartet, so the ratio ran 1.000 at every multipole.*
   ⇒ *** TWO ARMS AGREEING EXACTLY IS NOT AGREEMENT.  Both quartets are now read from the single
-      sentence that states them side by side, with the paper's own attribution. ***  (r3980)
+      sentence that states them side by side. ***  (r3980)
+  ⛔⛭⛭ ** AND P15 CONTRADICTS ITSELF ON WHICH ARM IS WHICH -- ROUTED, NOT ACTED ON. **  The figure
+    caption says the $0.473$ quartet is "the photon hierarchy built for this programme" and the
+    $0.49$ quartet the standard code; `sec:largescale` says the hierarchy is "THE SECOND ARM",
+    returning $0.49$ "against THE FIRST'S $0.473$".  *** The two passages are exactly swapped. ***
+    ** The receipts settle it against the caption: ** the $0.473$ table comes from
+    `P15_verify_lowell_boltzmann.py`, whose source is "read through CAMB's exact $\\Delta_\\ell(k)$"
+    and which "reproduces CAMB's own $C_\\ell$ to FOUR FIGURES", while
+    `P15_the_second_arm_actually_run.py` DRIVES the hierarchy and returns $0.494/0.243/0.184/0.61$.
+    ⇒ *Recorded here with its evidence.  The paper is not edited from this file: the other line's
+      CR arm is suspended and in flight, and one clause in P15's low-multipole block is theirs to
+      correct or Daryl's to route.*
 
 WHAT PROMPTED IT.  The paper carried two incompatible figures for this depth: the body, abstract,
 results list, scope section and summary said $\\approx0.47/0.41$ at $\\ell=2,3$ "recovering by
@@ -87,9 +98,23 @@ BOL = open(os.path.join(HERE, 'P15_verify_lowell_boltzmann.py'), encoding='utf-8
 # **     quoted a second depth quartet and a uniform 10--25% spread; neither is reproduced by either
 # **     arm and both are withdrawn."*  ** The assertion only escaped certifying a withdrawn figure
 # **     because its arms had collapsed and it crashed instead. **
-# **   ⌗ AND THE ARM LABELS WERE INVERTED: the caption attributes its quartet to "the photon
-# **     hierarchy built for this programme", while the STANDARD CODE returns 0.49/0.24/0.18/0.61.
-# **     The file called the first arm the standard code and the second the hierarchy.
+# **   ⛔⛭⛭ AND A LIVE CONTRADICTION IN P15 WAS FOUND WHILE REPAIRING THIS, ROUTED NOT ACTED ON:
+# **     *** THE PAPER ATTRIBUTES THE TWO ARMS ONE WAY IN THE CAPTION AND THE OTHER WAY IN
+# **     sec:largescale. ***
+# **       caption      "Those figures [0.473 ...] are the photon hierarchy built for this
+# **                     programme ... a standard Boltzmann code's own $\Delta_\ell(k)$ gives
+# **                     0.49, 0.24, 0.18, 0.61"
+# **       largescale   "Driving the photon hierarchy ... THE SECOND ARM returns 0.49, 0.24, 0.18
+# **                     and 0.61 against THE FIRST'S 0.473 ..."
+# **     ** The receipts settle it against the caption. **  `P15_verify_lowell_boltzmann.py`, the
+# **     source of the 0.473 table, says its source is "read through CAMB's exact $\Delta_\ell(k)$"
+# **     and "reproduces CAMB's own $C_\ell$ to FOUR FIGURES"; `P15_the_second_arm_actually_run.py`
+# **     DRIVES the hierarchy and returns 0.494/0.243/0.184/0.61.
+# **       ⇒ *** SO 0.473 IS CAMB AND 0.49 IS THE HIERARCHY, AND THE CAPTION HAS THEM SWAPPED. ***
+# **     ⌗ *This file's original labels were right and are kept.  The paper is NOT edited here: it
+# **       is one clause in P15's low-multipole block, the other line's CR arm is suspended and in
+# **       flight, and a labelling correction there is theirs to make or Daryl's to route.  Recorded
+# **       with its evidence rather than either acted on or dropped.*
 # ** ⇒ *** BOTH QUARTETS ARE NOW READ FROM THE ONE SENTENCE THAT STATES THEM SIDE BY SIDE, WITH THE
 # **     PAPER'S OWN ATTRIBUTION, so they cannot silently become the same number again. ***  What is
 # **     asserted is what the paper holds: the same minimum, the same recovery, and depths that
@@ -113,7 +138,7 @@ HIER = dict(zip((2, 3, 4, 5), _second))
 print("=" * 78)
 print("1 — THE TWO ARMS, AND THEY AGREE ON THE SHAPE")
 print("=" * 78)
-print(f"  {'ell':>5} {'programme photon hierarchy':>33} {'standard code Delta_l(k)':>26} {'ratio':>7}")
+print(f"  {'ell':>5} {'CAMB Delta_l(k) x discrete k_L':>33} {'programme photon hierarchy':>26} {'ratio':>7}")
 for l in (2, 3, 4, 5, 6, 7):
     a, b = CAMB.get(l), HIER.get(l)
     print(f"  {l:>5} {('-' if a is None else f'{a:.3f}'):>33} "
