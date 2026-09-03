@@ -84,6 +84,16 @@ corpus, and it is why the newest receipts failed first.
 
 THE PIN DEBT -- receipts that FAIL WHERE THEY ARE REGISTERED on the current tree.
 
+⛭⛭ r3946: THE ENVIRONMENT SPLIT IS CORRECTED AND ONE OF ITS ROWS WAS A REAL FINDING.  The gate's
+declared UNRUNNABLE list named NINE and the run has NINETEEN module failures, so TEN environment
+failures were counted as REAL by the instrument that exists to separate them.  All ten are now
+declared BY NAME.  ⛔ And two of them -- P03_the_U3_figure and P03_the_turnaround_figure -- need
+matplotlib, which was in NO environment: not this container, and NOT the `heavy` job's pip line,
+which installed camb and pynucastro and stopped.  ** Two registered receipts were unrunnable
+EVERYWHERE and had never once been run since they were written. **  matplotlib was added to
+.github/workflows/gates.yml at r3946 so the nightly can now run them -- the remedy for a receipt
+no environment can run is to make one that can, not to declare it away.
+
 ** MEASURED r3890 (node 60), by a COMPLETE run of all 699 registered receipts against tree
    dc705eed5db78dbe: 614 pass, 81 fail, 4 over timeout, 958s. **
    Nineteen of the 81 are ENVIRONMENT -- a missing camb or pynucastro and nothing else.  The gate

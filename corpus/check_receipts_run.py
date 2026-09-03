@@ -68,6 +68,28 @@ UNRUNNABLE = {
     'P15_verify_lowell_boltzmann.py': 'camb',
     'P16_theory_error_and_likelihood.py': 'pynucastro',
     'P16_validate_bbn.py': 'pynucastro',
+    # ⛭⛭ TEN ADDED r3946.  The list above named NINE and the run has NINETEEN module failures, so
+    #   ten environment failures were being counted as REAL by the instrument that exists to
+    #   separate them -- it reported 72 real failures where 62 were real.  Each below was checked
+    #   by NAME against the run's own traceback, per this list's rule: "declared here by name,
+    #   never inferred from an error string."
+    'C43_the_gap_is_numerical_not_xe.py': 'camb',
+    'C45_xe_does_not_cancel_from_a_ratio_of_integrals.py': 'camb',
+    'C47_the_neutrinos_were_missing.py': 'camb',
+    'P15_the_control_entered_the_regime_and_the_arm_did_not_move.py': 'camb',
+    'P15_the_floor_is_a_distance_between_models_not_a_number_from_the_data.py': 'camb',
+    'P16_the_adiabatic_premise_is_demanded_by_the_data_and_inherited_by_the_construction.py': 'camb',
+    'S1_the_adiabatic_premise_is_what_the_data_demands.py': 'camb',
+    'S1_the_cosmology_sector_rests_on_neff_and_never_names_it.py': 'camb',
+    # ⛔ AND THESE TWO ARE A DIFFERENT CASE, WHICH IS WHY THEY ARE COMMENTED SEPARATELY.  They need
+    #   matplotlib -- and matplotlib was in NO environment: not this container, and NOT the `heavy`
+    #   job's pip line, which installed camb and pynucastro and stopped there.  ** So two registered
+    #   receipts were unrunnable EVERYWHERE and had never once been run since they were written. **
+    #   The remedy is not to declare them away: matplotlib was added to .github/workflows/gates.yml
+    #   at r3946, so the nightly can now run them.  They stay listed because THIS container still
+    #   lacks it, which is what this list is for.
+    'P03_the_U3_figure.py': 'matplotlib',
+    'P03_the_turnaround_figure.py': 'matplotlib',
 }
 
 LAUNCH = ("cd <tree> && (setsid nohup python3 scripts/run_all_receipts.py --jobs 4 --timeout 300 "
