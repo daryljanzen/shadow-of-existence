@@ -1,7 +1,7 @@
 ---
 name: what-the-framework-delivers
 kind: REFERENCE
-current: r3979
+current: r3993
 job: The inventory of what Cosmological Relativity delivers, assembled by reading the corpus rather than by counting its typography, so that the one open residual can be weighed against it at their true relative sizes — and so that what the residual actually MEANS is on the record beside how big it is. Read WHEN JUDGING THE PROGRAMME AS A WHOLE — for publication decisions, for a reader's first orientation, or when the open problem has begun to feel larger than it is.
 sources: [chat]
 ---
@@ -84,11 +84,7 @@ computed papers and lead rail two. **Neither rail is the corpus.***
 
 ## ⌗ AND THE EVIDENCE RAIL HAS BEEN AUDITED, WHICH THE r3560 DOCUMENT DOES NOT MENTION
 
-- **627 of the registered receipts pass** on a full run from each receipt's own directory *(734 s,
-  r3726)*. *Of the 65 that do not: **19** are `ModuleNotFoundError` for `camb`, `pynucastro` and
-  `matplotlib`, absent in that container and not code defects; **5** are receipts that shell out to a gate
-  which refuses without a declared `NODE`; **1** was a repo-relative path since fixed; the remainder are
-  audit receipts asserting a tree state that has moved.* ⛔ ***None is a physics defect.***
+- **649 of the 699 registered receipts pass** on a complete run from each receipt's own directory *(1863 s, `r3966`; 46 fail, 4 over the 300 s cap)*. ⛭ ***All 46 were classified rather than assumed***: *19 carry a `ModuleNotFoundError` and **all nineteen are declared by name** in `check_receipts_run.py`'s `UNRUNNABLE` list — checked against the list, not inferred from an error string — leaving **27 real**.* ⛭⛭ ***And the 27 have since been worked to 8 and all eight repaired*** *(`r3968`–`r3992`), from **62 at the point the debt was first measured**. `receipts/PIN_DEBT.txt` carries the head count and **it is not lowered by arithmetic between runs**: the number changes when a full run speaks.* ⛔ ***And the honest form of the old claim: they were not "no physics defects" — they were UNMEASURED.*** *The gate that would have reported them is cached and had been reading a `RUN_RESULT.txt` that was **header-only**, a prior run interrupted mid-write and committed truncated with no verdict line in it at all; the sweep showed it as `1 unrun` and both nodes carried that in a tally for a whole session without opening it. **The nightly reported the same failure on schedule for 22 consecutive runs.***
 - **Of 245 receipts that pass and carry a tolerance comparison, 243 (99.2%) have at least one comparison
   that GATES the verdict** — kick it and the receipt fails *(`Q50`, r3714, over 269 files and 1116
   comparison sites)*. *The two that do not are a display filter and a documented skip.*
