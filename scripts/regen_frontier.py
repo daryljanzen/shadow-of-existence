@@ -21,15 +21,22 @@ OUT = os.path.join(ROOT, 'THE_FRONTIER.md')
 EST = {
     'PO-13': ('the misplaced phase — WHY the propagated comb runs short', 1, 1, 3, None,
         'r3092: the phase reset is justified by an UNBOUNDED tortoise phase that r2154 (1) showed is FINITE (0.2247 alpha). Wired PHZ; the comb moves hard. A carrier, not yet a fit'),
-    'PO-26': ('the discrete component -- CAN A FERMION SECTOR BE BUILT ON IT', 1, 1, 5, None,
-        'r3861: P13 proves the geometric-isometry route to the gauge group excluded (su(3) not in so(5,1)) and a '
-        'compact-face isometry-realised fermion sector vector-like by the Atiyah-Hirzebruch index obstruction. But '
-        'that obstruction is a theorem about CONNECTED groups, and geometric chirality here is carried by the '
-        'discrete orientation parity O(5,1) minus SO_0(5,1) -- the one component it cannot reach. On that '
-        'component the parity acts as gamma^5 itself: it GRADES the chirality eigenspaces rather than exchanging '
-        'them, so the grading is supplied geometrically and only the sector is not built. P13: it is unattempted '
-        'here and asserted nowhere. TRIP-WIRE: any result promoting the gauge group from the ordinary route to '
-        'FORCED re-opens a conflict with the Higgs sector, whose representation would be forced with it.'),
+    'PO-26': ('the compact-face fermion sector -- CAN IT BE BUILT', 1, 1, 6, None,
+        'r3867: opened r3861 on a WRONG PREMISE -- I framed it as whether a sector can be built on the discrete '
+        'component, and P14 has built one there. P13 sec:open: two things stay genuinely open and they are '
+        'distinct; FIRST, the compact-face fermion sector. P14s sector lives on the DISCRETE component and '
+        'supplies NO equivariant index, its count being a wall-localised leaf index well defined precisely where '
+        'the bulk index is not. The sector the obstruction acts on is the other one, gauge-acted and '
+        'isometry-realised on the compact face, and it remains unbuilt -- the major undertaking any geometric '
+        'gauge-matter route would first have to complete. TRIP-WIRE: forcing the gauge group forces the Higgs '
+        'representation with it.'),
+    'PO-27': ('empirical coherence as an INDEPENDENT ground -- the motivation, not the construction', 1, 1, 4, None,
+        'r3867: P13 sec:open names this the SECOND of two genuinely open and distinct things -- whether the '
+        'Standard Models century-constrained empirical standing, read as an EXTERNAL constraint rather than '
+        'derived from the bare geometry, motivates taking the compact Wick face as physical and building a '
+        'fermion sector there. P13 forbids merging it with PO-26: these are not the same frontier, and a coherent '
+        'matter route would have to supply BOTH the construction and its motivation. That is where the live work, '
+        'if any, lies. Its instrument is P06s epistemology rather than the geometry.'),
     'PO-25': ('the charged bead -- DOES A CHARGED COLLAPSE FORM THE CAUCHY HORIZON', 1, 1, 4, None,
         'r3827: P03 states the obstruction exactly -- with Q nonzero, Q^2/r^2 dominates as r -> 0 so f -> +inf '
         'rather than -inf, an inner Cauchy turning point appears, and r=0 becomes a TIMELIKE RN singularity '
@@ -134,12 +141,12 @@ KIND = {'PO-13': 'READ', 'PO-14': 'BUILD', 'PO-15': 'READ', 'PO-16': 'READ',
 
 # ** PO-23 added r3809: the ultraviolet definition of the mode sums, the one part of P07's
 # three-part 'definition of the interacting tower' that is neither settled nor attempted. **
-ORDER = ['PO-13', 'PO-24', 'PO-25', 'PO-26', 'PO-23', 'PO-15', 'PO-14', 'PO-17', 'PO-18', 'PO-19', 'PO-20']
+ORDER = ['PO-13', 'PO-24', 'PO-25', 'PO-26', 'PO-27', 'PO-23', 'PO-15', 'PO-14', 'PO-17', 'PO-18', 'PO-19', 'PO-20']
 GROUP = {'PO-13': 'D', 'PO-14': 'A', 'PO-15': 'C', 'PO-16': 'D',
          # ** r3095: the four brought in from p0's frontiers and the field ledgers.  PO-17 and
          # PO-19 are substrate geometry; PO-18 is the constant ledger; PO-20 is analysis. **
          'PO-17': 'E', 'PO-18': 'E', 'PO-19': 'E', 'PO-20': 'E',
-         'PO-23': 'C', 'PO-24': 'D', 'PO-25': 'E', 'PO-26': 'A'}
+         'PO-23': 'C', 'PO-24': 'D', 'PO-25': 'E', 'PO-26': 'A', 'PO-27': 'A'}
 GNAME = {'A': 'the matter sector', 'B': 'the matter sector', 'C': 'the quantum sector',
          'D': 'the cosmology', 'E': 'the substrate geometry'}
 

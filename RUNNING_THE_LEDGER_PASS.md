@@ -40,6 +40,8 @@ it cannot be found again.*
 session came from reading the paragraph, the section, or the companion the row cites — and would have
 been invisible from the row alone.*
 
+**②ᵇ A ROW'S OWN NOTE IS EVIDENCE, AND SOMETIMES THE BEST EVIDENCE.** *Ledger rows carry the history of their own disputes --- "RESTORED r2621, r2618's dedupe was WRONG" is a previous node's finding, and it caught an error of mine three revisions old. **Read the note, not just the quotation.***
+
 **② FOLLOW EVERY POINTER TO ITS SOURCE.** *If the row cites `PO-n`, read `PO-n` **and** its `kills/PO-n.md`.
 If it cites a receipt, **run the receipt**. Registers and papers disagree, and when they do the **paper
 governs** — but only after both have been read.*
@@ -85,6 +87,7 @@ in two places, and only one was refreshed."*
 | **calling a handover a debt** | *wrote "its largest unbuilt undertaking" into an abstract for an item the same paper classifies as a **boundary*** |
 | **my own edits going stale within two revisions** | *fixed a claim, then left the same claim standing elsewhere in the same paper* |
 | **stopping at the first plausible answer** | *nearly claimed an obstruction sub-Planckian by computing the wrong object* |
+| **opening a PO row on an unchecked premise** | *opened `PO-26` for a construction the corpus had already built, because I took a struck row's summary as the object instead of reading the paper it cites. **A new row needs its premise verified in the paper, exactly as a closure does*** |
 
 ---
 

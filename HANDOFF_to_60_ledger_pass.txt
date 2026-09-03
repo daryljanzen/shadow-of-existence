@@ -39,6 +39,8 @@ THE METHOD, IN ONE LINE EACH
   1. Read the whole passage, never the row. The row is a pointer.
   2. Follow every pointer to source -- read the kill file, RUN the receipt.
      When a register and a paper disagree, the paper governs, but read both.
+     Read the row's own NOTE too. Rows carry the history of their disputes, and
+     one of them caught an error of mine three revisions old.
   3. When a claim changes, sweep the phrase corpus-wide IN THE SAME TURN.
   4. Use word-boundary and wrapped-form searches. Exact-string matching failed five
      times in one session because LaTeX wraps across lines.
@@ -58,7 +60,9 @@ WHAT KEEPS GOING WRONG
   settled it -- a comment misleads a node exactly as much as live prose, because a
   node arrives by grep. Renaming a mess instead of clearing it. Calling a handover a
   debt. Leaving your own fix stale two revisions later. Stopping at the first
-  plausible answer instead of computing the right object.
+  plausible answer instead of computing the right object. Opening a PO row on a
+  premise I had not checked against the paper -- a new row needs its premise
+  verified exactly as a closure does.
 
   All six of those are mine, from today. They are in the instrument document so they
   do not get repeated.
