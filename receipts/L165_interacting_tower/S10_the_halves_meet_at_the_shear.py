@@ -62,11 +62,23 @@ def check(label, cond):
         FAILED.append(label)
 
 
+#: ** ⛭⛭ MARKERS ARE APPARATUS, NOT PROSE, AND A PIN INTO PROSE MUST NOT SEE THEM (r3962). **
+#: ** This file failed because r3558's marker pass inserted `\ldg{variational}` INTO THE MIDDLE of a
+#: ** sentence it quotes: "the transverse-traceless\ldg{variational} graviton modes form a discrete
+#: ** tower ...".  *** The paper's words did not change.  A bake landing split the quotation. ***
+#: **   ⇒ ** That is the fourth repair kind seen from the other side: `R1` was a receipt COUNTING
+#: **     its own bake's landings, and this is a receipt QUOTING across one. **  A bake that lands
+#: **     markers correctly should never be able to falsify a receipt about the sentence it marks,
+#: **     so the markers are stripped here rather than the quotation being cut into fragments --
+#: **     fragments would only move the fragility to wherever the NEXT marker lands.
+MARKER = re.compile(r'\\(?:ldg|rcpt)\{[A-Za-z0-9_]+\}')
+
+
 def body(f):
     b = '\n'.join(l for l in open(f, encoding='utf-8', errors='replace').read().split('\n')
                   if not l.lstrip().startswith('%'))
     j = b.find('\\begin{thebibliography}')
-    return b[:j] if j > 0 else b
+    return MARKER.sub('', b[:j] if j > 0 else b)
 
 
 def main():

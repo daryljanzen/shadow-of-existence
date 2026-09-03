@@ -91,9 +91,20 @@ def main():
     p15 = re.sub(r'\s+', ' ', body(os.path.join(ROOT, 'corpus', 'CR_cosmology.tex')))
 
     # ⓵ the onset is fixed, twice
-    check('⛭⛭ ⓵ P15 gives it: "at the onset redshift $z_{\\rm onset}\\simeq6797$"',
-          'onset redshift $z_{\\rm onset}' in p15 or 'z_{\\rm onset}\\simeq 6797' in p15
-          or '6797' in p15)
+    # ** ⛭ RE-PINNED r3962, AND THE FALLBACK WAS DOING ALL THE WORK. **  This check read
+    # **     `'onset redshift $z_{\rm onset}' in p15  or  'z_{\rm onset}\simeq 6797' in p15
+    # **      or '6797' in p15`
+    # ** and a notation sweep carried P15 from `\rm` to `\mathrm` (and from `\simeq` to `\approx`), so
+    # ** *** both named pins were dead and the check reduced to whether four digits appear anywhere in
+    # ** the paper. ***  A bare number matches a table cell, a caption, an unrelated figure -- it does
+    # ** not check that P15 GIVES THE ONSET REDSHIFT, which is the whole question of this file.
+    #   ⇒ ** A trailing weak `or` arm does not make a check robust; it retires it. **  Same shape as
+    #     `L550/M1`'s unreachable pin, found in the same sweep and by the same reading: *when a pin
+    #     stops matching, look at what is holding the check up before believing it still passes.*
+    check('⛭⛭ ⓵ P15 gives it: "the onset redshift $z_{\\mathrm{onset}}$", at a stated value',
+          'onset redshift $z_{\\mathrm{onset}}$' in p15
+          and 'z_{\\mathrm{onset}}\\approx6797' in p15
+          and 'z_{\\mathrm{onset}}=6797' in p15)
     check('and how it is fixed: "It is fitted to the acoustic angle at the directly measured $H_{0}$"',
           'fitted to the acoustic angle at the \\emph{directly} measured $H_0$' in p15)
     check('and that it is not a knob: "the same $z_{\\rm onset}$ meets the scale at every $H_{0}$ across '

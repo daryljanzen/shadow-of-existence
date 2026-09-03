@@ -1,25 +1,141 @@
-39
+27
 
-⌗ r3961 (node 59): TWO REPAIRED, AND THE COUNT ABOVE IS NOT YET RE-MEASURED.  The head count
-  is 60's, obtained by running the suite.  I repaired C19_the_branch_point_join and
-  C20_the_caveat_named_an_empty_set and both now exit 0, but I have not re-run the 17-minute
-  suite, so I have not edited the number.  A measured count is not adjusted by arithmetic.
+⛭⛭⛭ RE-MEASURED r3962 BY A COMPLETE RE-RUN, and *** THE HEAD COUNT ABOVE IS 27 AND IT IS THE
+GATE'S NUMBER. ***  649 pass, 46 fail, 4 over timeout, 1863s, at tree fa560eaf30b5f5c4.
+  ⌗ ** All 46 were classified rather than assumed: 19 carry a ModuleNotFoundError and ALL NINETEEN
+    are declared by name in `check_receipts_run.py`'s UNRUNNABLE list -- checked, not inferred from
+    an error string.  So 46 - 19 = 27 REAL. **  Against r3948's 39, twelve fewer.
+  ⌗ AND THE RUN PREDATES `r3964`'S SIX REPAIRS, so the live figure is lower than 27 and this file
+    does not say by how much.  *** The number is replaced when the gate speaks, never adjusted by
+    arithmetic between runs *** -- r3930's rule, which this file exists to keep.
+  ⌗ The timeouts are still four and still counted separately from failures.  The five-over-300s
+    question is unchanged and still Daryl's: the slowest that PASSES takes 171s here (was 277s), so
+    the cap is not the binding constraint it looked like, and raising it remains his call.
 
-  BOTH WERE BROKEN BY MY OWN CORRECT PAPER EDITS, which is the class 60 names at r3954:
-    * C19 pinned "a computed transfer function across the branch point is not yet in hand".
-      I corrected that sentence at r3859 BECAUSE IT HAD BECOME FALSE -- C21 computes the
-      super-horizon transfer.  The pin was superseded BY A RESULT.  Re-pinned to what P15
-      now says, which is sharper: the transfer IS computed, and what is not run is the
-      single end-to-end calculation.
-    * C20 required P15 to CONTAIN the words "previously ran together, corrected at
-      r2501+c54.197" -- revision-history narration inside a paper, which the one-state rule
-      forbids and which was therefore removed.  ** A GATE MUST NOT REQUIRE A DEFECT. **
-      Re-pinned to the distinction itself, which P15 states twice in its own voice.
+⛭⛭⛭ r3964 -- SIX MORE, AND *** THE DEBT HAS DEPENDENCY EDGES: ONE FIXTURE REPAIR CLEARED THREE
+RECEIPTS. ***  It is not 39 independent problems and should not be worked as though it were.
+  L556/R1                       ⛔ THE FIXTURE WAS INCOMPLETE AND THE TEST ACCUSED THE GATE
+  L253/S1, L255/E1              cleared BY L556/R1, with no edit of their own
+  L203/M3                       ② THE ABSENCE ENDED BECAUSE THE RECEIPT ASKED FOR IT
+  L165/S10                      ⑪ A BAKE MARKER LANDED INSIDE A PINNED SENTENCE
+  L174/I3                       ⑦ PAPER CORRECTED, PIN KEPT THE ERROR (mode -> polarisation)
 
-  ⌗ NOT IN THE DEBT, recorded so it is not chased: C26_the_onset_is_not_free shows in the
-    predictor on 'onset redshift $z_{\rm onset}' while the paper writes $z_{\mathrm{onset}}$.
-    A NOTATION difference, not a claim change, and the receipt's own fallback on 6797 carries
-    it -- C26 exits 0.
+  ⛔⛭⛭ L556/R1 -- A MUTATION TEST WHOSE CLEAN BASELINE WAS ALREADY RED, AND IT REPORTED THAT AS A
+    GATE DEFECT.  It copies `corpus/` to a temp tree, symlinks three directories in, seeds a
+    truncated appendix and asks whether `check_appendix_current` notices.  ** But the gate has TWO
+    rails, and the ledger rail's registry rows name files at the REPOSITORY ROOT: 32 `*_LEDGER.md`
+    that the fixture never linked. **  So the gate could not resolve a single ledger row and exited
+    1 on the CLEAN tree, giving `clean == seeded == 1`.
+    ⇒ *** A MUTATION TEST WITH A RED BASELINE IS NOT A WEAK TEST, IT IS AN INVERTED ONE: it says
+        the gate is broken when the FIXTURE is. ***  Measured after the repair:
+        ** clean 0, SEEDED 1, restored 0 ** -- the test discriminates for the first time.
+    ⌗ And this is `L558/D1`'s shape arriving from the other side.  There the SEED stopped
+      constructing its defect; here the BASELINE stopped being clean.  The file already carried the
+      rule for one half -- *VERIFY THE SEED TOOK, do not trust the write* -- and the other half was
+      missing: ** the baseline is now asserted before the seed goes in. **  It ran for the whole of
+      its life without checking that the tree it was measuring against was green.
+    ⌗ AND THE PAYOFF IS THE POINT: `L253/S1` and `L255/E1` both shell out to this receipt and both
+      failed BECAUSE it failed.  ** Three receipts, one repair, two of them needing no edit. **
+      ⇒ *Read the failures together and look for the roots first.*
+
+  ⑪ ELEVENTH REPAIR KIND: A BAKE MARKER LANDED INSIDE A PINNED SENTENCE.  `L165/S10` quotes P10's
+    "the transverse-traceless graviton modes form a discrete tower ...".  r3558's marker pass
+    inserted `\ldg{variational}` INTO THE MIDDLE of it.  ** The paper's words did not change; a
+    correct bake landing split the quotation. **  ⇒ This is `④`'s class from the other side: `R1`
+    was a receipt COUNTING its own bake's landings, and this is one QUOTING ACROSS one.  Fixed by
+    stripping `\ldg{}`/`\rcpt{}` in the reader -- ** markers are apparatus, not prose ** -- rather
+    than cutting the quote into fragments, which would only move the fragility to the next marker.
+
+  ⌗ `L203/M3` is `C19`'s class a second time in one span: it asserted P12 carried ZERO "Atiyah
+    sequence" -- its whole finding being that the paper had the algebroid, the anchor and the
+    connection and never named the object relating them.  r3251 wrote it in, its subject reading
+    "the theatre results carried INTO the papers, which is what a bake is for", and P12 now even
+    records the receipt's own argument: *"naming it costs nothing and buys the literature"*.
+    ⇒ ** A ZERO-COUNT ASSERTION IS A CLAIM THAT NOBODY HAS ACTED ON THE FINDING YET. **  Three
+      separate conjuncts in that file rested on `n_seq == 0`, and none of its actual arguments did.
+
+  ⌗ AND `L251/N1` NEEDED A REPAIR BEFORE IT COULD EVEN BE READ: it imports
+    `check_revision_collisions`, which reads `NODE` AT IMPORT TIME and refuses to default (r3679's
+    rule, written after an unset NODE certified the even half on odd-banded trees and passed 21
+    collisions).  ** Unset in a plain shell, `ci` under `sweep_gates.sh` -- the receipt's verdict
+    changed with the caller. **  A file asserting `C.PARITY == 0` is making a claim about a NAMED
+    line's band and must name it; `NODE` is set to `60` in the file now.  ⇒ *A check whose result
+    depends on the caller's environment is not a check of the corpus, it is a check of the caller.*
+    Its six real failures are then visible for the first time and are NOT yet repaired.
+
+⛭⛭⛭ r3962 -- EIGHT MORE, ALL RUN TO GREEN, AND THE HEAD COUNT ABOVE IS STALE BY THEM.  A full
+re-run is in flight; ** the number at the head of this file is not adjusted by arithmetic ** (r3930's
+rule), so it still reads the gate's last measurement and will be replaced by the gate's next one.
+  L200/U1, L200/U3, L560/P1     ⑩ THE PIN TOOK ON THE SENTENCE'S POSITION
+  L203/M1, L203/M4              ⑦ PAPER CORRECTED, PIN KEPT THE ERROR (deck -> monodromy)
+  L550/M1                       ⑧ RETIRED WORD IN THE PIN (`walled`) + AN UNREACHABLE `or` ARM
+  P15/C19                       ② DEBT DISCHARGED BY THIS RECEIPT'S OWN RESULT
+  P15/C20                       ⑨ PINNED THE PAPER'S SELF-NARRATION
+  P15/C26                       (was PASSING, on a hollow fallback -- see below)
+  L257/V1                       FOUR PINS, ONE CAUSE: THE CORPUS ACTED ON ITS FINDING
+
+  ⑩ TENTH REPAIR KIND: THE PIN TOOK ON THE SENTENCE'S POSITION AS A HIDDEN SECOND ASSERTION.
+    Three receipts pinned P10's successor sentence as `the item has two sides ...`, lowercase,
+    because c54.179 wrote it UNDER a status stamp -- `\textbf{[Reach: the item has two sides ...}`.
+    r3787 removed the stamps from the papers, and the fragment became the sentence's first word:
+    `The item has two sides ...`.  ** The CLAIM never moved.  The pins died of a correction to the
+    WRAPPER around it -- one character, three receipts. **  ⇒ Pin the case-free interior and assert
+    the sentence-initial capital SEPARATELY, so the unstamping is recorded rather than survived.
+    ⌗ *And the receipt ABOUT pins into moving prose was one of the three.*
+
+  ⛔⛭⛭ AND TWO CHECKS WERE HOLLOW IN A WAY `lint_assertions.py` CANNOT SEE, BECAUSE THE DEFECT IS
+    IN THE BOOLEAN AND NOT IN THE ASSERTION.
+      L550/M1  read `numeric and 'Lambda \ell_P^2...' in p0  or  numeric`.  `and` binds tighter
+               than `or`, so it evaluated as `(numeric and pin) or numeric` *** == numeric. ***
+               The pin was UNREACHABLE.  The check announced that it verified the paper's own
+               figure and verified only arithmetic the file supplied itself.  ⌗ The pin was ALSO
+               wrong (`Lambda \ell_P^2` with a space, against the paper's `\Lambda\ell_P^2`)
+               -- *which is why it was written behind an `or` and never noticed.*
+      P15/C26  read `pinA or pinB or '6797' in p15`.  A notation sweep carried P15 from `\rm` to
+               `\mathrm` and `\simeq` to `\approx`, killing both named pins, so the check reduced
+               to whether four digits appear ANYWHERE in the paper.  ** It was PASSING, and it is
+               not in any failure list in this file, and it was checking nothing. **
+    ⇒ *** A TRAILING WEAK `or` ARM DOES NOT MAKE A CHECK ROBUST; IT RETIRES IT.  A fallback added
+        to make a check pass is how a hollow check gets built, and the hollowness is invisible to
+        a lint that reads assertions rather than evaluating them. ***
+    ⌗ AND THE CLASS WAS BOUNDED RATHER THAN LEFT AS AN ANECDOTE: receipts/ was swept for `or`-arms
+      shorter than 25 characters (four, all specific, none weak) and for the `A and B or A` shape
+      (one, benign: `int(n_since or 0)`).  ** Two instances, both repaired, and the population is
+      not larger. **  The other five `or` pairs the predictor still flags are NOTATION-TOLERANT
+      alternatives with two specific arms (`\emph{within-state}` vs plain, `$A_{2}$` vs `$A_2$`)
+      and are correct as they stand.
+
+  ⛭ L257/V1 IS THE CLEAREST CASE IN THIS FILE OF A RECEIPT DYING OF ITS OWN SUCCESS, and it took
+    four pins down at once.  Every one broke because the corpus ACTED on what V1 found:
+      · two of the five opens it recorded were CLOSED -- r3803 ("the straddle is a computed fact")
+        and r3811 ("five stale sentences closed, including one in P07's ABSTRACT") -- so the gate's
+        scan no longer raises them and there is no row left to carry a verdict
+      · a third was RECLASSIFIED NAMED-UNBUILT -> REGISTERED at r3872 (node 60, the ledger pass)
+      · PO-6's clause ③, whose double duty is V1's whole thesis, was SUPERSEDED at r3809 and the
+        item rehomed to PO-23; the register now demotes "MET, NOT OWED" to the past tense
+      · and the ledger entry's reconciliation was rewritten at r3872 against the live row
+    ⛔ ONE OF THE FOUR DID NOT FAIL, IT CRASHED.  `next(v[2] for i, v in led.items() if ...)` with
+      no default raised StopIteration when the closed row left the ledger, ** so PART 5 never ran
+      at all and the file exited on a traceback instead of a verdict. **  Repairing it revealed two
+      further defects that had been hidden behind the crash for as long as it stood:
+        ⓹ᵇ  asserted `warns >= 1` -- ** it required the ledger's WARN backlog to STILL EXIST. **
+             Six entries named sentences no longer in any paper; the gate now reports ZERO.  *A
+             check that requires a debt to persist fails when the debt is paid, which is the
+             direction nobody writes a test for.*  Now asserted at the measured zero.
+        ⓹ᶜ  compared `git diff BEFORE..HEAD` for touched .tex files.  It meant "this revision
+             touched no paper" -- a claim about r3130's own diff -- and written against `HEAD` it
+             *** silently became a claim about every revision that would ever follow. ***  ⇒ ** A
+             check pinned to HEAD is pinned to the present, and the present moves. **  That is the
+             class `L259_the_distance_from_the_present/D1` is named for, in its purest form.  The
+             range is now the revision's own, end to end, and cannot drift again.
+    ⇒ *** A LOOKUP THAT ASSUMES ITS KEY STILL EXISTS TURNS A CLOSED ITEM INTO A CRASH, AND A CRASH
+        REPORTS NOTHING -- INCLUDING EVERYTHING DOWNSTREAM OF IT. ***
+
+⌗ r3961's note (node 59) is SPENT and removed at r3967: it recorded two repairs against a count
+  that had not been re-measured, and r3962's complete re-run has since replaced the count.
+  Both receipts were repaired independently by 60 in that run, and 60's versions were taken
+  on the merge because they are stronger: they read the paper AT THE COMMIT THAT CARRIED THE
+  DEBT as well as the current text, so they verify the TRANSITION rather than the endpoint.
 
 ⛭⛭ WORK STARTED r3938 (node 60), on Daryl's decision at r3908 -- ledger pass first, receipts after,
 and the standard is that they RUN.  ** 5 of 62 repaired; head count above is now 57. **
@@ -237,9 +353,32 @@ no environment can run is to make one that can, not to declare it away.
 
 ⛭⛭⛭ A PREDICTOR EXISTS NOW: `scripts/find_broken_pins.py` (written r3960).  It names, in under a
 second, WHICH STRING in a receipt no longer matches any paper -- which is the whole diagnosis for
-the largest class here.  Current reading: ** 30 literals in 20 files, out of 451 pins into paper
-text across 163 receipts. **  Run it before running the suite; the suite takes 17 minutes and says
-only THAT a receipt failed.
+the largest class here.  Run it before running the suite; the suite takes 17 minutes and says only
+THAT a receipt failed.  ** Reading at r3962: 5 literals in 5 files, out of 433 pins into paper text
+across 159 receipts, plus 20 pins into a paper AT AN OLD COMMIT which are excluded by design. **
+
+⛭⛭ AND ITS FIRST READING OF 30 WAS RESOLVED BY RUNNING ALL 14 FLAGGED FILES, WHICH IS THE ONLY WAY
+TO KNOW.  The scan is a predictor and this is its measured precision, stated so the next node can
+weigh a hit rather than trust it:
+     6  REAL, and repaired at r3962  (L203/M1, L203/M4, L257/V1, L550/M1, P15/C19, P15/C20)
+     1  PASSING BUT HOLLOW           (P15/C26 -- the flagged pin was dead behind a weak `or`)
+     5  NOTATION-TOLERANT `or` ARMS  (L221 x5 -- both arms specific, correct as they stand)
+    18  HISTORICAL ENDS              (a paper read AT A COMMIT; supposed to match nothing now)
+  ⇒ ** So the tool grew TWO restrictions and one exclusion at r3962, each found by reading what its
+    hits had in common rather than by guessing: **
+      · a variable holding a paper at an old commit is not the live paper.  That is c54.226's own
+        rule -- both ends of a quotation pinned -- and the scan was reporting the far end as debt.
+        The shapes in use are all three of `git show SHA:`, `_at(rev, ...)` and `at(CLAIM_SHA, ...)`,
+        and a first version matched only the middle one.
+      · COMMENT LINES ARE NOT CODE.  A repair that QUOTES the pin it replaced -- "this check read
+        `'...' in p15 or ...`" -- puts the dead literal back in the file AS DOCUMENTATION, and the
+        scan read the documentation as the debt.  ** A note explaining a broken pin is the opposite
+        of a broken pin, and a scan that cannot tell them apart punishes writing the note. **
+  ⛔ AND A COUNTER THAT DID NOT RECONCILE CAUGHT A THIRD BUG IN ONE EDIT: the exclusion tally ran
+    AFTER the bail-out for files with no live paper variable, so four such receipts were dropped
+    from the debt without being counted as excluded -- 15 removed against 14 reported.  *** A
+    derived counter that does not reconcile with the drop it explains is wrong, and this one was.
+    The two numbers are printed side by side precisely so that check stays available. ***
   ⛔ AND ITS FIRST VERSION WAS AN ORDER OF MAGNITUDE WRONG, which is why the tool documents the
     restriction rather than just applying it.  Testing EVERY `'...' in var` against the corpus
     reported 304 broken pins in 143 files -- against 39 receipts that actually fail.  Most such

@@ -60,6 +60,7 @@ not made here. **  Not that the colour bundle's flatness is in question: it is r
 Written r2493.  Stated for reversal.
 """
 import os, re
+import subprocess as _sp
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 ROOT = os.path.abspath(os.path.join(HERE, '..', '..'))
@@ -99,14 +100,41 @@ def main():
     n_seq = len(re.findall('Atiyah sequence', p12, re.I))
     check(f'it carries {n_alg} "Lie algebroid", {n_anc} "anchor", {n_con} "connection"',
           n_alg >= 4 and n_anc >= 8 and n_con >= 2)
-    check(f'⛭ and ZERO "Atiyah sequence" (found {n_seq})', n_seq == 0)
+    # ** ⛭⛭⛭ RE-PINNED r3962, AND THE ABSENCE ENDED BECAUSE THIS RECEIPT ASKED FOR IT. **  Written
+    # ** r2493 (`ed5422d8`), this file's finding was that P12 had the algebroid, the anchor and the
+    # ** connection and NEVER NAMED THE OBJECT THAT RELATES THEM.  *** r3251 wrote it in, and its
+    # ** subject says what it was doing: "the theatre results carried INTO the papers, which is what
+    # ** a bake is for." ***  P12 now names it twice and draws the consequence -- "the constraint
+    # ** algebra of general relativity is the Atiyah algebroid of the substrate's own principal
+    # ** bundle" -- and even records the receipt's own argument for it, that "naming it costs nothing
+    # ** and buys the literature".
+    #   ⇒ ** A ZERO-COUNT ASSERTION IS A CLAIM THAT NOBODY HAS ACTED ON THE FINDING YET.  It cannot
+    #     survive the finding succeeding, and re-pinning it to a new number would only reset that
+    #     timer. **  Both ends are pinned instead: absent at this file's own build, present now.
+    _at_build = re.sub(r'\s+', ' ', _sp.run(
+        ['git', 'show', 'ed5422d8:corpus/algebroid_paper.tex'],
+        cwd=ROOT, capture_output=True, text=True, errors='replace').stdout)
+    check('⛭ P12 carried ZERO "Atiyah sequence" at ed5422d8, this file\'s own build (r2493) -- which '
+          'is the gap it was written to name',
+          len(re.findall('Atiyah sequence', _at_build, re.I)) == 0)
+    check(f'⛭⛭ AND THE GAP IS CLOSED: P12 names it {n_seq} time(s) now, written in at r3251 -- "the '
+          f'theatre results carried INTO the papers, which is what a bake is for"',
+          n_seq >= 1
+          and 'Atiyah sequence of the principal bundle $SO(5,1)\\to\\dS_5$' in p12
+          and 'naming it costs nothing and buys the literature' in p12)
+    check('⇒ and the consequence this file argued for is drawn in the paper\'s own voice: "the '
+          'constraint algebra of general relativity is the Atiyah algebroid of the substrate\'s own '
+          'principal bundle"',
+          'constraint algebra of general relativity is the Atiyah algebroid of the substrate' in p12)
     check('⚠ and its "Cartan" uses are the Cartan--Weyl SKELETON, not Cartan GEOMETRY',
           'Cartan--Weyl skeleton' in p12)
 
     # ⓶ the sequence relates exactly those three
+    # ⌗ the structural claim never depended on the sequence being ABSENT -- it is about what the
+    #   sequence RELATES -- so only the stale conjunct goes; the three-object count stays.
     check('⇒ the Atiyah sequence 0 -> ad(P) -> TP/G -> TM -> 0 has a Lie algebroid as its middle '
           'term, the anchor as its surjection, and a CONNECTION as a splitting -- so it relates '
-          'exactly the three objects P12 has', n_seq == 0 and n_alg >= 4 and n_anc >= 8)
+          'exactly the three objects P12 has', n_alg >= 4 and n_anc >= 8 and n_con >= 2)
 
     # ⓷ composition with r2468
     # ** the register writes it in CAPS with markdown bold: "**AND A COVERING MAP CARRIES A
@@ -123,9 +151,15 @@ def main():
           'order-six-adjacent objects' in arc)
     check('Ⓗ (r2492) needs a named group for an equivariant index, so Ⓒ is its prerequisite',
           'PREREQUISITE' in arc or 'prerequisite' in arc)
+    # ⌗ third and last stale `n_seq == 0` conjunct (r3962).  The knot is that ad(P) is built from
+    #   the group, so "which group" and "what connection" are one question -- a statement about the
+    #   sequence's STRUCTURE, true whether or not the paper had yet named it.  ** The absence was
+    #   never a premise of this argument; it was the reason for making it. **  Now that P12 names
+    #   the sequence, the knot is checkable IN THE PAPER rather than only in the register.
     check('⇒⇒ AND Ⓖ SUPPLIES THE SEQUENCE IN WHICH "WHICH GROUP" AND "WHAT CONNECTION" ARE THE SAME '
           'QUESTION, because ad(P) is built from the group -- so all three are ONE KNOT',
-          'order-six-adjacent objects' in arc and n_seq == 0)
+          'order-six-adjacent objects' in arc and n_seq >= 1
+          and 'Atiyah sequence of $SO(5,1)\\to\\dS_5$' in p12)
 
     print()
     if FAILED:

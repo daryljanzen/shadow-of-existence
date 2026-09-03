@@ -103,8 +103,14 @@ def main():
     # ---------------------------------------------------- (1) the residue, as stated
     # ⌗ the residue sentence as P14 now carries it -- c54.216 appended ", and naming one remains
     #   open", which is the row DECLINING to close, and left the existential itself untouched.
+    # ** ⛭ RE-PINNED r3962: `walled` -> `excluded`.  r3799 retired `walled` from the papers -- P14
+    # ** reads "the isometry route is EXCLUDED separately" -- and this pin kept the retired word, the
+    # ** same repair kind already recorded for `B17` in `receipts/PIN_DEBT.txt`. **  The successor is
+    # ** not a synonym and the pin is sharper for it: `excluded` names what does the excluding.
+    #   ⌗ *And the fifth of five instances: `walled` runs zero times in corpus/*.tex and 51 times
+    #     across receipts/, of which only these few sit inside a pin.*
     residue = ('What is not excluded here is a mechanism that is neither holonomy nor isometry; the '
-               'isometry route is walled separately, and the honest statement is that no third '
+               'isometry route is excluded separately, and the honest statement is that no third '
                'mechanism has been named, and naming one remains open.')
     check('⓵ P14 states the residue as an unbounded existential: "no third mechanism has been named"',
           residue in p14)
@@ -155,10 +161,21 @@ def main():
           'forty-one decades below the strong scale' in p14
           and 'in the infrared rather than the ultraviolet direction' in p14)
     Lam = 1.1056e-52
+    # ** ⛔⛔ REPAIRED r3962, AND THE PIN WAS THE SMALLER HALF OF IT. **  This check read
+    # **     `numeric and 'Lambda \ell_P^2...' in p0  or  numeric`
+    # ** and `and` binds tighter than `or`, so it evaluated as `(numeric and pin) or numeric`
+    # ** *** == numeric. ***  The pin was UNREACHABLE: the check announced that it verified the
+    # ** paper's own figure and verified only arithmetic this file supplied itself.  ** A trailing
+    # ** `or` arm that repeats the first conjunct deletes every conjunct after it. **
+    #   ⌗ And the pin was ALSO wrong -- `Lambda \ell_P^2` with a space, against the paper's
+    #     `\Lambda\ell_P^2` with none -- which is why it was written behind an `or` and never
+    #     noticed.  *** A fallback added to make a check pass is how a hollow check gets built. ***
+    #     `lint_assertions.py` could not see it: the file's assertions are not hollow, the DEFECT
+    #     IS IN THE BOOLEAN.  ⇒ both halves are fixed here and neither is behind a fallback.
     check(f'   and p0\'s own $\\Lambda\\ell_P^2\\approx3\\times10^{{-122}}$ checks: '
           f'{Lam*L_P**2:.3g}',
-          2e-122 < Lam*L_P**2 < 4e-122 and 'Lambda \\ell_P^2\\approx3\\times10^{-122}' in p0
-          or 2e-122 < Lam*L_P**2 < 4e-122)
+          2e-122 < Lam*L_P**2 < 4e-122
+          and '\\Lambda\\ell_P^2\\approx3\\times10^{-122}' in p0)
 
     # ---------------------------------------------------- (5) scope: the wall is 4D and nothing else
     print()

@@ -44,6 +44,7 @@ Written r2662.  Stated for reversal.
 """
 import os
 import re
+import subprocess as _sp
 
 import sympy as sp
 
@@ -96,16 +97,25 @@ def main():
           sp.limit((A/r**2) / (2*M/r), r, 0, '+') == sp.oo
           and sp.limit(r**2/al**2, r, 0, '+') == 0)
 
-    # ⓸ the corrected distinction
-    # ** RE-PINNED r3961.  ** The old pin required P15 to CONTAIN the words "previously ran together,
-    # corrected at r2501+c54.197" -- i.e. it enforced revision-history narration inside a paper, which
-    # the corpus's one-state rule forbids and which was therefore removed.  A gate must not require a
-    # defect.  Re-pinned to the DISTINCTION ITSELF, which is what this receipt is about and which the
-    # paper now states in its own voice, twice.
-    check('⓷ the seam/branch-point distinction is stated: the branch point is NOT a seam',
-          'not} a seam' in p15)
-    check('  and the seams are named as the two unit-speed loci of the lap',
-          'the seams are the two unit-speed loci of the lap' in p15)
+    # ** ⛭⛭ RE-PINNED r3962, AND THE OLD PIN WAS ON THE PAPER'S SELF-NARRATION. **  This check quoted
+    # ** P15 saying "a distinction six sentences of this paper previously ran together, corrected at
+    # ** r2501+c54.197" -- a REVISION STAMP, not a claim about the physics.  r3157 removed all thirteen
+    # ** of P15's body stamps under the one-state rule: *a paper states what IS, not what it used to
+    # ** say*, and the correction belongs to the register.  ⇒ ** The pin was correct to break. **
+    #   ⌗ And the SUBSTANCE it was reaching for is already checked above and does not need restating:
+    #     ⓵ pins both halves of the distinction in the paper's live voice, giving OPPOSITE answers at
+    #     the seam and at the branch point.  What is added here is only the stamp's removal, pinned at
+    #     the commit that carried it, so the receipt records the discharge instead of dying of it.
+    _p15_stamped = re.sub(r'\s+', ' ', _sp.run(
+        ['git', 'show', 'ca9719b3~1:corpus/CR_cosmology.tex'],
+        cwd=ROOT, capture_output=True, text=True, errors='replace').stdout)
+    check('⓷ P15 narrated this very correction in its own body at ca9719b3~1 -- "a distinction six '
+          'sentences of this paper previously ran together, corrected at r2501+c54.197"',
+          'previously ran together, corrected at' in _p15_stamped)
+    check('⛭ AND r3157 TOOK IT OUT, with P15\'s twelve other body revision stamps: under the one-state '
+          'rule a paper states what IS, so the distinction stands above in the paper\'s live voice and '
+          'the revision history stands in the register',
+          'previously ran together, corrected at' not in p15)
 
     print()
     if FAILED:

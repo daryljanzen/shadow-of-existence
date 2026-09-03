@@ -103,10 +103,24 @@ def main():
     # ⓷ what the corpus already holds
     # ** P5's own words are tighter than the paraphrase: "this deck group is equally the Galois
     # group of the horizon cubic, ONE $S_3$ WORN AS MONODROMY" -- and that phrasing is the finding. **
-    check('P5: "this deck group is equally the Galois group of the horizon cubic, one $S_3$ worn '
-          'as monodromy"',
-          'this deck group is equally the Galois group of the horizon cubic' in p5
+    # ** ⛭⛭ RE-PINNED r3962, AND THE OLD PIN CARRIED THE DEFECT THIS FILE IS ABOUT. **  It quoted P5
+    # ** as "this DECK group is equally the Galois group of the horizon cubic".  r3528 corrected that
+    # ** to "this MONODROMY group" -- "P5's deck/monodromy defect fixed at eighteen sites" -- and the
+    # ** same paragraph now states "deck group TRIVIAL".  *** So the pin asserted, of a group the paper
+    # ** calls trivial, a property the paper gives to a different group. ***
+    #   ⇒ ** The correction swept the papers and did not reach receipts/, which is the gap two earlier
+    #     sweeps also left (r3799 swept the papers, r3841 swept receipts/, and the pins sit between). **
+    #     r3528's own subject says the shape of it: *"the earlier repair reached the proposition and
+    #     not the paper."*  This is the next ring out -- it reached the paper and not the receipts.
+    check('P5: "this monodromy group is equally the Galois group of the horizon cubic, one $S_3$ '
+          'worn as monodromy, Weyl, and Galois symmetry alike"',
+          'this monodromy group is equally the Galois group of the horizon cubic' in p5
           and 'one $S_{3}$ worn as monod' in p5)
+    check('⛭ and the paper calls the DECK group TRIVIAL, so the word the old pin used named the one '
+          'group that does NOT carry the property -- which is this file\'s own thesis, met in its '
+          'own pin',
+          'deck group trivial' in p5
+          and 'this deck group is equally the Galois group' not in p5)
     check('and the monodromy group of a branched cover is the Galois group acting on its sheets',
           'monodromy group of a branched cover is the Galois group' in p5)
     check('⇒ "the one group governing the family is worn THREE ways: deck/monodromy, the Weyl group '

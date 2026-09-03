@@ -46,7 +46,19 @@ now records its own discharge.  ** Not that r2581 lost content ** -- that is the
 measurement is all this file supplies.  ** Not that the run is at zero because the corpus is right **:
 it is at zero because five stale pins were repaired, which is a smaller claim.
 
-Written c54.226 (`L-560`).  Stated for reversal.
+** ⛭⛭ AND IT HAPPENED TO THIS FILE AGAIN, BY A DIFFERENT MECHANISM (r3962). **  The c54.226 re-pin
+above quoted p0's successor sentence as "the item has two sides ...", lowercase, because c54.179 wrote
+it UNDER a status stamp: `\\textbf{[Reach: the item has two sides ...}`.  r3787 then took the stamps out
+of the papers, and the fragment became the sentence's first word: `The item has two sides ...`.  ** The
+CLAIM did not move at all.  The pin died of a correction to the WRAPPER around it. **
+  ⇒ ** That is a tenth repair kind and it is not the nine: not moved prose, not a killed thesis, not a
+    terminology sweep.  A pin that includes a leading article takes on the sentence's POSITION as a
+    hidden second assertion. **  The repair is to pin the case-free interior --
+    `item has two sides and they now stand differently` -- and assert the sentence-initial capital
+    SEPARATELY, so the unstamping is recorded rather than merely survived.  `L200/U1` and `L200/U3`
+    carry that second check; all three receipts broke on one character.
+
+Written c54.226 (`L-560`), re-pinned r3962.  Stated for reversal.
 """
 import os
 import re
@@ -123,7 +135,7 @@ def main():
     check('⇒ U1/U3: p0 read "Reach: stated as a target, not a result" at aa2b6ee and reads "the item '
           'has two sides and they now stand differently" now -- the fork\'s c54.179 split it',
           'Reach: stated as a target, not a result' in p0_then
-          and 'the item has two sides and they now stand differently' in live
+          and 'item has two sides and they now stand differently' in live
           and 'Reach: stated as a target, not a result' not in live)
     p7_then = flat(git('show', 'e8e58cf:corpus/CR_framework.tex'))
     seg_then = p7_then[p7_then.find('\\section{Frontiers and open problems}'):]
