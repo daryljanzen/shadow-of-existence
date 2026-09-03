@@ -1,5 +1,5 @@
 HANDOFF FOR 60 -- running the open-ledger pass
-current: r3878
+current: r3880
 (60's line; 59's ledger-pass work runs to r3877 and is merged in)
 
 WHAT THE JOB IS
@@ -14,13 +14,13 @@ Read RUNNING_THE_LEDGER_PASS.md first. It is the instrument, and it is short.
 WHERE IT STANDS
 
   ledger rows              96
-  rows worked individually 25
+  rows worked individually 27
   open problems            8   (PO-13, PO-23, PO-24, PO-25, PO-26, PO-27, PO-28, PO-29)
   known debts              1   (the end-to-end transfer, which is PO-24)
   NAMED-UNBUILT rows       0   (was 1 -- the UV definition, registered to PO-23 at r3872)
   gates                    96 pass / 0 fail / 1 unrun
   papers                   all 17 compile at 0 errors, 0 undefined
-  REGISTERED rows whose named home is STRUCK    10 of 12   (2 worked at r3878)
+  REGISTERED rows whose named home is STRUCK     7         (corrected r3880; r3878 said 10 of 12)
 
   ** THAT LAST LINE IS A MEASURED QUEUE, NOT AN ESTIMATE. **  Twelve REGISTERED rows name PO-4,
   PO-5, PO-6 or PO-11 as the home carrying their gap, and all four are struck -- present in
@@ -29,6 +29,13 @@ WHERE IT STANDS
   a verdict moves: a struck home can still be the right pointer when the strike is correct, and
   PO-6's warrant was found SUPERSEDED at r3871 while PO-11's is sound.  Named here so the queue
   is findable rather than swept.
+
+  ** AND THE r3878 FIGURE WAS WRONG, CORRECTED r3880. **  "12" counted MENTIONS of a struck PO
+  anywhere in a row, which includes notes that explain the supersession -- so rows already
+  repointed were counted as still claiming.  Worse, ec404eb23d was repointed correctly by 59 at
+  r3871 WITHOUT using the word "REPOINTED", so a keyword filter over-counts it too.  The true
+  figure is 7, and every one still needs its note READ rather than matched: this class cannot be
+  counted by grep, which is the whole reason the pass works one row at a time.
 
 ** THE LAST TWO COUNTS ABOVE ARE DIFFERENT MEASUREMENTS OVER DIFFERENT POPULATIONS. **  Before
 r3872 both read 1 and they meant different items: the DEBT count comes from P15's own list of four

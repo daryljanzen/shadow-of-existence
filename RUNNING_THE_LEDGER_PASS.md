@@ -1,7 +1,7 @@
 ---
 name: RUNNING_THE_LEDGER_PASS
 kind: INSTRUMENT
-current: r3878
+current: r3880
 job: How to work corpus/open_ledger.txt one row at a time -- the method, the failure modes it was built against, and what each turn must produce.
 sources: [chat]
 ---
@@ -97,6 +97,8 @@ in two places, and only one was refreshed."*
 | **a retired word that is also a machine key** | *`r3799` retired one word from the corpus's PROSE, 2,281 instances, and did it thoroughly. Its UPPERCASE form is `open_ledger.txt`'s **verdict token** on 21 rows, and a receipt ASSERTS the literal string is present in `THE_LIVE_ARC.md`. ⇒ **A node told "that word is retired" who finishes the sweep here breaks a gate; a node who obeys it literally cannot verdict a row into that class.** Both halves are true at once, and nothing said so until `r3876`. **When a sweep retires a word, say whether it retires the KEY as well as the PROSE*** |
 | **a `REGISTERED` row pointing at a STRUCK home** | *the verdict asserts "a real gap, already carried by a `PROTECTED_OPEN` item or a register row". **Measured at `r3878`: twelve `REGISTERED` rows name `PO-4`, `PO-5`, `PO-6` or `PO-11`, and all four are struck** --- present in `PROTECTED_OPEN` only as `~~struck~~`, absent from `THE_REGISTER` and the generator. ⇒ **The verdict then asserts a home that is a record of closure.** Two worked at `r3878`; ten remain, and they are named here so the queue is findable rather than swept* |
 | **one name over four different objects** | *"the propagating spinor sector" names at least FOUR things: `PO-11`'s omega!=0 continuum on the STATIC slicing structure (built `r2856`); `P07`'s descent, built on `P11`'s unpolarised GOWDY member (`r3802`); the COMPACT-FACE sector (`PO-26`, unbuilt); and `P14`'s BOUND leaf zero-modes, the contrast object. **`r3801` had to do real work to establish "genuinely unbuilt" precisely because the name was doing duty for all four.** Before closing or opening on a named sector, say which BACKGROUND it lives on* |
+| **an unanchored id match, on a row my own note had made ambiguous** | *`r3878` appended a note to the wrong row: `s.index('9e9c09dbb6')` found that id inside `114e4d9ede`'s note -- **a mention my own `r3872` edit had put there** -- before reaching the row itself. ⇒ **Rule ④ is about ledger ids too, not only LaTeX wrapping: match a row at line-start.** And a note that cites another row by id makes that id ambiguous for every later edit* |
+| **counting a class by grep instead of reading it** | *`r3878` reported "12 rows name a struck home", counting MENTIONS -- including notes explaining the supersession, so already-repointed rows counted as claiming. And one row was repointed correctly without using the keyword a filter looks for. **True figure 7.** ⇒ *This class cannot be counted by grep, which is the whole reason the pass works one row at a time -- and I produced the summary count the instrument's first failure mode warns against** |
 | **opening a PO row on an unchecked premise** | *opened `PO-26` for a construction the corpus had already built, because I took a struck row's summary as the object instead of reading the paper it cites. **A new row needs its premise verified in the paper, exactly as a closure does*** |
 
 ---
