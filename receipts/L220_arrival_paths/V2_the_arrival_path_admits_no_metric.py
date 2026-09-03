@@ -59,6 +59,7 @@ finite route list can settle the rest. **
 Written r2453.  Stated for reversal.
 """
 import os, re, glob
+import subprocess as _sp
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 ROOT = os.path.abspath(os.path.join(HERE, '..', '..'))
@@ -125,10 +126,39 @@ def main():
               encoding='utf-8', errors='replace').read()
     p15 = open(os.path.join(ROOT, 'corpus', 'CR_cosmology.tex'),
                encoding='utf-8', errors='replace').read()
-    check('prop:unique supplies its path by a bracketed status tag, "[Established: proved here '
-          'from the maximal-symmetry requirement ...]"',
-          'Established: proved here from the maximal-symmetry requirement' in
-          re.sub(r'\s+', ' ', p0))
+    # ** ⛭⛭⛭ RE-PINNED r3970, AND THE *ROUTE* IS NOW EXTINCT RATHER THAN THE CLAIM BEING WRONG. **
+    # ** This check asserted that `prop:unique` supplies its arrival path *by a bracketed status
+    # ** tag* -- `[Established: proved here from the maximal-symmetry requirement ...]` -- which was
+    # ** true when read, and was one of the two routes this file found by READING what the sweep
+    # ** flagged.  ** r3787 removed the status stamps from the papers: ZERO bracketed `[Established:`
+    # ** tags remain in any paper, measured below. **  The proposition still supplies its path; it
+    # ** now does so in the paper's own voice -- *"This is proved here from the maximal-symmetry
+    # ** requirement together with the signature and causal-structure conditions"*.
+    # **   ⇒ ** The pin was on the MECHANISM and the mechanism was retired, so both ends are pinned:
+    # **     the tag at the commit that carried it, and the surviving clause here. **  *A route that
+    # **     an instrument did not know can also stop existing, and the receipt that found it is the
+    # **     natural place for that to be recorded rather than quietly lost.*
+    _p0_flat = re.sub(r'\s+', ' ', p0)
+    _p0_stamped = re.sub(r'\s+', ' ', _sp.run(
+        ['git', 'show', '87b8f3c2~1:corpus/geometric_core_paper.tex'],
+        cwd=ROOT, capture_output=True, text=True, errors='replace').stdout)
+    check('prop:unique supplied its path by a bracketed status tag at 87b8f3c2~1, "[Established: '
+          'proved here from the maximal-symmetry requirement ...]" -- the route this file found by '
+          'READING what the sweep flagged',
+          '[Established: proved here from the maximal-symmetry requirement' in _p0_stamped)
+    _papers = [_f for _f in glob.glob(os.path.join(ROOT, 'corpus', '*.tex'))
+               if not os.path.basename(_f).startswith('appendix_receipts')]
+    _tags = len(re.findall(r'\[Established:', ' '.join(
+        re.sub(r'\s+', ' ', open(_f, encoding='utf-8', errors='replace').read())
+        for _f in _papers)))
+    check(f'⛭ AND r3787 RETIRED THAT ROUTE CORPUS-WIDE: {_tags} bracketed status tag(s) remain in '
+          f'any paper -- so the route is extinct, not merely moved',
+          _tags == 0)
+    check('⇒ and the path is still supplied, now in the paper\'s own voice: "This is proved here '
+          'from the maximal-symmetry requirement together with the signature and causal-structure '
+          'conditions; nothing is assumed of the embedding"',
+          'This is proved here from the maximal-symmetry requirement together with the signature '
+          'and causal-structure conditions; nothing is assumed of the embedding' in _p0_flat)
     check('prop:amplitude supplies its path by a following "\\noindent\\emph{Argument.}" paragraph',
           re.search(r'label\{prop:amplitude\}.{0,1200}?\\noindent\\emph\{Argument', 
                     re.sub(r'\s+', ' ', p15), re.S) is not None)

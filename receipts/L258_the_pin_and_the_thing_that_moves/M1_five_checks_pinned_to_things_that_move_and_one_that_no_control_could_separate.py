@@ -70,6 +70,9 @@ HERE = os.path.dirname(os.path.abspath(__file__))
 ROOT = os.path.abspath(os.path.join(HERE, '..', '..'))
 FAILED = []
 BEFORE = 'ae749cb6'          # r3130 -- the tree this revision repairs
+AFTER = 'cddfe757'           # r3132 -- this revision's own commit.  ** Every range below ends HERE
+#: ** and not at `HEAD`: a claim about what THIS revision did is a claim about one diff, and a range
+#: ** ending at the present quietly becomes a claim about every revision that will ever follow. **
 
 SEVEN = {
     'B53': 'receipts/L221_the_bridge/B53_gating_l829_and_l830.py',
@@ -128,10 +131,30 @@ def main():
           f'{"completed" if m else "INCOMPLETE -- nothing asserted from it"}')
     if m:
         print(f'      {m.group(1)} pass, {m.group(2)} fail: {[os.path.basename(f)[:26] for f in failed_then]}')
-        check(f'⓵ the last completed run\'s failure set is contained in the seven named here: '
-              f'{len(failed_then)} failure(s), {len(set(failed_then) - set(SEVEN.values()))} of them '
-              'outside the list',
-              set(failed_then) <= set(SEVEN.values()))
+        # ** ⛔⛭⛭ AND THE DIGEST HAS TO BE CHECKED, NOT ONLY THE COMPLETENESS (repaired r3970). **
+        # ** The comment above says `RUN_RESULT.txt` is a CACHE WITH AN EXPIRY and reads it live for
+        # ** exactly that reason -- then asserted the subset claim from ANY completed run.  ** A
+        # ** completed run of a DIFFERENT tree is exactly as irrelevant as an incomplete one, and the
+        # ** file now holds one: a later run whose failure set is a later corpus's. **  *The expiry
+        # ** the comment names was checked for `INCOMPLETE` and not for `STALE`.*
+        # **   ⇒ ** The subset claim belongs to the run of the tree this revision repairs, so the
+        # **     digest is compared; anything else is REPORTED and nothing is asserted from it --
+        # **     the same disposition the incomplete branch already takes, for the same reason. **
+        _digest_then = git('show', f'{AFTER}:receipts/RUN_RESULT.txt')
+        _dg_then = re.search(r'TREE-DIGEST:\s*([0-9a-f]+)', _digest_then)
+        if dg and _dg_then and dg.group(1) == _dg_then.group(1):
+            check(f'⓵ the run on file is this revision\'s own ({dg.group(1)}) and its failure set is '
+                  f'contained in the seven named here: {len(failed_then)} failure(s), '
+                  f'{len(set(failed_then) - set(SEVEN.values()))} outside the list',
+                  set(failed_then) <= set(SEVEN.values()))
+        else:
+            print(f'    ⓵ the run on file is a LATER tree ({dg.group(1) if dg else "none"}, this '
+                  f'revision ran {_dg_then.group(1) if _dg_then else "none"}) -- reported, and '
+                  'nothing asserted from it.  The seven are NAMED in `SEVEN` and verified below.')
+            check(f'⓵ᵃ ⌗ and the run this revision DID make is still readable at {AFTER}, where its '
+                  f'failure set was contained in the seven',
+                  set(re.findall(r'\[FAIL\] (receipts/\S+\.py)', _digest_then))
+                  <= set(SEVEN.values()))
     else:
         # ⚠ ** A REPORT, NOT A CHECK. **  *The first form here was `check(..., True)` -- a hollow
         #   assertion, and `scripts/lint_assertions.py` named it on the next run.  A branch with
@@ -139,9 +162,15 @@ def main():
         print('    ⓵ nothing is asserted from the run on file -- the seven are NAMED in `SEVEN` and')
         print('      each is verified directly below.')
     # ** the durable half: each of the seven was CHANGED by this revision and is green now. **
+    # ** ⛭⛭ AND `changed` COMPARED THE PARENT AGAINST THE *** WORKING TREE ***, not against this
+    # ** revision's own commit (repaired r3970).  So it asked "has this file changed since r3130?"
+    # ** -- true of every later edit forever -- where the claim is "did THIS REVISION change it?".
+    # ** `P1` was untouched at r3132 and has been edited since (r3962, re-pinned), which flipped the
+    # ** check while the finding it defends did not move at all.
+    # **   ⇒ ** Same class as `L259/D1`'s and `L257/V1`'s: a range ending at the present is pinned to
+    # **     the present.  It is now `BEFORE..AFTER`, this revision's own diff, end to end. **
     changed = [k for k, v in SEVEN.items()
-               if git('show', f'{BEFORE}:{v}') != open(os.path.join(ROOT, v),
-                                                       encoding='utf-8').read()]
+               if git('show', f'{BEFORE}:{v}') != git('show', f'{AFTER}:{v}')]
     check(f'⓵ᵇ and {len(changed)} of the {len(SEVEN)} were changed by this revision: {sorted(changed)}'
           f'{" -- P1 was not, and did not need to be: it failed only because W1 did" if "P1" not in changed else ""}',
           len(changed) >= 6 and 'P1' not in changed)
@@ -223,7 +252,9 @@ def main():
     for k, v in SEVEN.items():
         rc = run(v)
         check(f'⓸ {k} exits {rc}', rc == 0)
-    touched = [f for f in git('diff', '--name-only', BEFORE, 'HEAD').split()
+    # ⌗ same repair (r3970): `BEFORE..HEAD` made "no paper is edited by this revision" a claim about
+    #   every revision that would ever follow.  `BEFORE..AFTER` is this revision's own diff.
+    touched = [f for f in git('diff', '--name-only', BEFORE, AFTER).split()
                if f.endswith('.tex') and not f.startswith('corpus/appendix_receipts')]
     check(f'⓹ ⌗ and NO paper is edited by this revision: {touched or "none"} -- every repair is a '
           'receipt following its paper, which is the direction that keeps the papers the other '

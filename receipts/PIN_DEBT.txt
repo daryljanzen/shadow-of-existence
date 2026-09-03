@@ -1,5 +1,56 @@
 27
 
+⛭⛭⛭ r3970 -- THREE MORE, AND *** THE `HEAD`-ENDED RANGE IS A CLASS, NOT AN INCIDENT: FOUR SITES
+IN THREE RECEIPTS SO FAR, EACH IN A DIFFERENT DISGUISE. ***
+  L175/V1   ② A ZERO-COUNT ENDED -- and the footprint that replaced it is a DECLINATION
+  L220/V2   ⑫ THE PIN WAS ON A ROUTE, AND THE ROUTE WAS RETIRED CORPUS-WIDE
+  L258/M1   ⛔ TWO `BEFORE..HEAD` RANGES AND A CACHE READ WITHOUT ITS DIGEST
+
+  ⛔⛭⛭ THE `BEFORE..HEAD` CLASS, COLLECTED.  A check that says *"this revision touched no paper"*
+    or *"this revision changed six of the seven"* is a claim about ONE DIFF.  Written as
+    `git diff BEFORE HEAD` it silently becomes a claim about *** every revision that will ever
+    follow ***, and it goes red the first time anyone edits the file for an unrelated reason.
+      `L257/V1` ⓹ᶜ   -- "no .tex file is touched by this revision"          (r3962)
+      `L258/M1` ⓵ᵇ   -- "6 of the 7 were changed by this revision"          (r3970)
+      `L258/M1` ⓹    -- "NO paper is edited by this revision"               (r3970)
+      `L256/B1`      -- the original instance, already repaired at r3136 and repaired AGAIN at
+                        r3966 because the remedy reached the rate and not the measurement
+    ⇒ ** Each is now pinned `BEFORE..AFTER`, the revision's own commit, end to end. **  *A range
+      that ends at the present is pinned to the present -- `L259/D1`'s title, and the corpus has
+      now met it at four sites in three files.*
+    ⌗ AND ONE OF THEM WAS BROKEN BY ME: `M1` asserted `P1` was NOT changed by r3132, computed
+      against the working tree, and my own r3962 re-pin of `L560/P1` flipped it.  ** Fourth
+      dependency edge, and the second one I created myself. **
+
+  ⛔ AND `M1` READ A CACHE WITHOUT CHECKING ITS EXPIRY, in the file that explains the expiry.  Its
+    own comment says `receipts/RUN_RESULT.txt` is *"a CACHE with an expiry -- `check_receipts_run`
+    fails it stale when the tree digest moves"*, and it guarded for INCOMPLETE and not for STALE.
+    ** A completed run of a DIFFERENT tree is exactly as irrelevant as an incomplete one **, and the
+    file now holds one -- 73 failures from a later corpus, asserted against a seven-item list from
+    r3132.  ⇒ The digest is compared now; a foreign run is REPORTED and nothing asserted from it,
+    and the run this revision actually made is still read at its own commit.
+
+  ⑫ TWELFTH REPAIR KIND: THE PIN WAS ON A *ROUTE*, AND THE ROUTE WAS RETIRED CORPUS-WIDE.
+    `L220/V2`'s finding is that a sweep for propositions with no arrival path missed routes it did
+    not know -- and two were found by READING what it flagged.  One of those routes was a bracketed
+    status tag, `[Established: proved here from the maximal-symmetry requirement ...]`.  ** r3787
+    removed the status stamps: ZERO bracketed tags remain in any paper, measured. **  The
+    proposition still supplies its path, now in the paper's own voice.
+    ⇒ *A route an instrument did not know can also STOP EXISTING, and the receipt that found it is
+      where that belongs -- recorded, with both ends pinned, rather than quietly lost.*
+    ⌗ Same commit as the ⑩ cluster.  r3787 has now broken four receipts in this debt, every one of
+      them correctly: it was removing the papers' self-narration under the one-state rule.
+
+  ⌗ `L175/V1` is `L203/M3`'s class a third time.  It asserted five variational terms at ZERO, its
+    thesis being that the corpus performs the work and names the field nowhere.  r3583b ("the two
+    variational bounds landed") put `Lagrangian` and `action principle` into P9 ONCE EACH -- in one
+    sentence, which names the route only to DECLINE it: *"an action principle returns an equality,
+    and an equality has no direction.  A Lagrangian derivation of the same law would leave the
+    reading exactly where it is."*
+    ⇒ ** THE THESIS IS SHARPENED, NOT REFUTED, AND A ZERO WOULD HAVE BEEN THE WEAKER FINDING. **
+      Three of the five stay asserted at zero; the two that moved are ratcheted, and the declining
+      sentence is pinned -- so a Lagrangian derivation actually being PERFORMED would fail here.
+
 ⛭⛭⛭ r3968 -- THREE MORE, AND ONE OF THEM WAS BROKEN BY MY OWN REPAIR THREE COMMITS EARLIER.
   L261/A1   ⑦ THE GATE WAS CORRECTED AND THE PIN KEPT THE WITHDRAWN REASSURANCE
   L259/D1   ⛔ THE SEED STOPPED CONSTRUCTING ITS DEFECT -- and the guard caught it

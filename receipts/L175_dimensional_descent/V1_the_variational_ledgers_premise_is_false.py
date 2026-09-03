@@ -91,11 +91,34 @@ def main():
     check("and Daryl's r1891 adjudication is recorded: the route is available and unthrown",
           'available and unthrown' in led)
 
-    # ⓵ the counts that made it look empty
-    for k in ('Lagrangian', 'action principle', 'Euler--Lagrange', 'stationary action',
-              'least action'):
+    # ** ⛭⛭⛭ RE-PINNED r3970, AND THE FOOTPRINT IS NO LONGER ZERO -- IT IS ONE SENTENCE, AND THE
+    # ** SENTENCE IS A DECLINATION. **  This block asserted five variational terms at ZERO.  r3583b
+    # ** ("the two variational bounds landed") put `Lagrangian` and `action principle` into P9
+    # ** \emph{once each}, in one sentence, and that sentence names the route only to say it changes
+    # ** nothing: *"an action principle returns an equality, and an equality has no direction.  A
+    # ** Lagrangian derivation of the same law would leave the reading exactly where it is, so the
+    # ** leftward reading is orthogonal to the variational."*
+    # **   ⇒ *** THE THESIS IS SHARPENED RATHER THAN REFUTED. ***  The corpus still performs the
+    # **     variational work everywhere and argues in the field's own vocabulary nowhere -- and the
+    # **     one place it does name the field, it names it TO DECLINE IT.  ** A zero would have been
+    # **     a weaker finding than this. **
+    # **   ⌗ Three of the five remain at zero and stay asserted at zero.  The two that moved are
+    # **     RATCHETED -- the footprint may not grow past what r3583b landed -- and the declining
+    # **     sentence is pinned, so a Lagrangian derivation actually being PERFORMED would fail here.
+    for k in ('Euler--Lagrange', 'stationary action', 'least action'):
         n = len(re.findall(re.escape(k), allp, re.I))
         check(f'⛔ "{k}" appears ZERO times', n == 0)
+    _foot = {k: len(re.findall(re.escape(k), allp, re.I))
+             for k in ('Lagrangian', 'action principle')}
+    check(f'⛭ and the whole footprint of the other two is {_foot} -- one occurrence each, landed at '
+          f'r3583b, against a Hamiltonian apparatus in the hundreds',
+          all(v <= 1 for v in _foot.values()))
+    check('⛭⛭ AND BOTH SIT IN ONE SENTENCE THAT DECLINES THE ROUTE: "an action principle returns an '
+          '\\emph{equality}, and an equality has no direction.  A Lagrangian derivation of the same '
+          'law would leave the reading exactly where it is"',
+          'an action principle returns an \\emph{equality}, and an equality has no direction' in allp
+          and 'A Lagrangian derivation of the same law would leave the reading exactly where it is'
+          in allp)
 
     # ⓶ but the action is there
     n_eh = len(re.findall('Einstein--Hilbert', allp))
@@ -118,9 +141,11 @@ def main():
     check(f'and the Hamiltonian apparatus is large: constraint {ham["constraint"]}, lapse '
           f'{ham["lapse"]}, Hamiltonian {ham["Hamiltonian"]}',
           all(v > 40 for v in ham.values()))
-    check('⇒⇒ SO IT IS NOT AN ABSENCE -- the corpus performs variational work and names the field '
-          'nowhere, which is the arrival-path shape at its largest scale',
-          n_eh >= 4 and len(re.findall('Lagrangian', allp, re.I)) == 0)
+    check('⇒⇒ SO IT IS NOT AN ABSENCE -- the corpus performs variational work everywhere and argues '
+          'in the field\'s own vocabulary nowhere, naming it once and only to DECLINE it, which is '
+          'the arrival-path shape at its largest scale',
+          n_eh >= 4 and len(re.findall('Lagrangian', allp, re.I)) <= 1
+          and 'orthogonal to the variational' in allp)
 
     print()
     if FAILED:
