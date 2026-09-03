@@ -221,17 +221,26 @@ def main():
     check(f'⓹ on the repaired tree the survey returns {len(now)} untranslated glyph(s)', not now)
     rc = subprocess.run([sys.executable, os.path.join(ROOT, 'corpus', 'check_glyph_coverage.py')],
                         cwd=ROOT, capture_output=True, text=True, errors='replace', timeout=600)
-    check(f'⓹ᵇ and the gate agrees, exiting {rc.returncode} with every glyph translated',
-          rc.returncode == 0 and 'every glyph in the surveyed documents has a translation'
-          in rc.stdout)
-    check('⓹ᶜ it reports its population every run and FAILS on an empty survey, because a survey '
-          'that read nothing is green forever',
-          'documents surveyed' in rc.stdout and 'green forever'
-          in open(os.path.join(ROOT, 'corpus', 'check_glyph_coverage.py'),
-                  encoding='utf-8', errors='replace').read())
-    check('⓹ᵈ and it carries a CONTROL that fires every run -- an unknown glyph refused, a known '
-          'one accepted -- so an import that silently stopped refusing could not read as clean',
-          'control: an unknown glyph is refused' in rc.stdout)
+    # ** ⛭⛭⛭ RE-PINNED r3976, AND THE GATE GREW A SECOND RAIL. **  These three pinned the gate's
+    # ** REPORT WORDING from when it surveyed one rail -- "every glyph in the surveyed documents has
+    # ** a translation", "documents surveyed", "control: an unknown glyph is refused".  The gate now
+    # ** runs TWO rails, `\rcpt` and `\ldg`, and prints per rail; the ledger rail was added because
+    # ** *"it ran for sixty revisions unsurveyed"*, which is the gate getting STRONGER.
+    # **   ⇒ ** A pin into a gate's OUTPUT is a pin into prose, and it breaks the same way. **  Same
+    # **     class as a paper's sentence moving -- met here on an instrument instead of a paper.
+    # **   ⛔ AND THE CONTROL LINE STOPPED PRINTING BECAUSE IT PASSES: it is a failure path now, so
+    # **     `'control: ...' in rc.stdout` could only ever be true when the control BROKE.  ** A
+    # **     check that can only pass when the thing it guards is broken is worse than no check. **
+    # **     It is SEEDED below instead, which is what it always wanted to be.
+    check(f'⓹ᵇ and the gate agrees, exiting {rc.returncode} with every glyph translated on BOTH '
+          f'rails',
+          rc.returncode == 0
+          and 'every glyph on both rails has a translation in the table that rail uses' in rc.stdout)
+    _gsrc = open(os.path.join(ROOT, 'corpus', 'check_glyph_coverage.py'),
+                 encoding='utf-8', errors='replace').read()
+    check('⓹ᶜ it reports its population every run -- feeding documents, per rail -- and FAILS on an '
+          'empty survey, because a survey that read nothing is green forever',
+          'feeding document(s)' in rc.stdout and 'An empty survey is green forever' in _gsrc)
     # ** SEEDED: put an untranslatable glyph into a surveyed document and the gate must catch it **
     import tempfile
     with tempfile.TemporaryDirectory() as td:
@@ -243,6 +252,22 @@ def main():
         for f in _glob.glob(os.path.join(ROOT, 'corpus', '*.py')):
             open(os.path.join(td, 'corpus', os.path.basename(f)), 'w', encoding='utf-8').write(
                 open(f, encoding='utf-8', errors='replace').read())
+        # ** ⛔⛭ AND THE SANDBOX WAS BUILT FOR A ONE-RAIL GATE (r3976). **  The gate now surveys the
+        # ** `\ldg` rail too, whose feeders are `corpus/ledgers_registry.md` and the `*_LEDGER.md`
+        # ** files the rows name -- ** which live at the REPOSITORY ROOT and were never copied in **.
+        # ** So the ledger rail found no feeder, refused to report a rail it had not measured, and
+        # ** the CLEAN run exited 1 alongside the seeded one: `clean == seeded == 1`, a seed test
+        # ** that discriminated nothing.
+        # **   ⇒ *** THIRD FIXTURE IN THIS DEBT MISSING THE ROOT-LEVEL LEDGERS, after `L556/R1`. ***
+        # **     A gate that grows a rail grows a fixture requirement, and nothing tells the
+        # **     fixtures.  The clean baseline is asserted below rather than assumed.
+        for _need in ('ledgers_registry.md',):
+            _src = os.path.join(ROOT, 'corpus', _need)
+            if os.path.exists(_src):
+                open(os.path.join(td, 'corpus', _need), 'w', encoding='utf-8').write(
+                    open(_src, encoding='utf-8', errors='replace').read())
+        for _led in _glob.glob(os.path.join(ROOT, '*_LEDGER.md')):
+            os.symlink(_led, os.path.join(td, os.path.basename(_led)))
         for fn in SURVEYED:
             d = os.path.dirname(os.path.join(td, fn))
             if d:
@@ -257,9 +282,33 @@ def main():
                                cwd=td, capture_output=True, text=True, errors='replace',
                                timeout=600)
             seeds[name] = r.returncode
+        # ** ⛭ AND THE CONTROL IS SEEDED TOO (r3976), because it no longer announces itself. **  The
+        # ** gate's control asks the generator's OWN escape to refuse a glyph it cannot know and to
+        # ** accept one it does: `refused(mod, chr(0x1F600)) and not refused(mod, rail['known'])`.
+        # ** *** Neuter the escape so it refuses NOTHING and the gate must say the control did not
+        # ** fire -- rather than reporting a clean sweep over glyphs it silently accepted. ***
+        for fn in SURVEYED:
+            open(os.path.join(td, fn), 'w', encoding='utf-8').write('a clean row with ⌗ only\n')
+        _gen = os.path.join(td, 'corpus', 'make_receipt_appendix.py')
+        _orig = open(_gen, encoding='utf-8', errors='replace').read()
+        open(_gen, 'a', encoding='utf-8').write(
+            '\n\n# seeded by L-270: an escape that refuses nothing\n'
+            'def tex_escape(s, *a, **k):\n    return s\n')
+        assert open(_gen, encoding='utf-8').read() != _orig, (
+            'the seed must actually change the generator, or the control test is testing nothing')
+        _neutered = subprocess.run(
+            [sys.executable, os.path.join(td, 'corpus', 'check_glyph_coverage.py')],
+            cwd=td, capture_output=True, text=True, errors='replace', timeout=600)
+        seeds['no-control'] = _neutered.returncode
+        seeds['no-control-said'] = 'the CONTROL did not fire' in _neutered.stdout
+    check(f'⓹ᵈ SEEDED: with the generator\'s escape neutered so it refuses nothing, the gate exits '
+          f'{seeds["no-control"]} and says the CONTROL did not fire ({seeds["no-control-said"]}) -- '
+          f'so an import that silently stopped refusing cannot read as clean',
+          seeds['no-control'] == 1 and seeds['no-control-said'])
     check(f'⓹ᵉ SEEDED BOTH WAYS: a document reaching for an untranslated glyph fails the gate '
           f'({seeds["seeded"]}), and the same documents without it pass ({seeds["clean"]}) -- so a '
-          'green result is a measurement and not an empty set',
+          'green result is a measurement and not an empty set, and the clean baseline is GREEN '
+          'rather than red on both rails',
           seeds['seeded'] == 1 and seeds['clean'] == 0)
 
     print()
