@@ -167,6 +167,16 @@ def solve(om, lam, sgn, XR, tail=0.0):
     return A, B, s
 
 
+
+def _flat_at(rev):
+    """`geometric_core_paper.tex` at a revision, flattened the way `flat()` flattens it."""
+    import re as _re
+    import subprocess as _sp
+    return _re.sub(r'\s+', ' ', _sp.run(
+        ['git', 'show', f'{rev}:corpus/geometric_core_paper.tex'],
+        cwd=ROOT, capture_output=True, text=True, errors='replace').stdout)
+
+
 def main():
     print()
     print("  C1 -- PO-11: is the tortoise divergence the obstruction, or the normalisation?")
@@ -193,10 +203,37 @@ def main():
           'Dirac norm the same static mode is not"',
           'whereas in the conserved spacetime Dirac norm the same static mode is not' in p0
           and 'where the propagating Dirac-norm mode does not' not in p0)
-    check('   and the sentence it sits in is untouched: p0 still says the full propagating sector '
-          'stays open',
-          'the full \\emph{propagating} spinor field sector (the built modes being leaf-bound, not '
-          'the propagating theory)' in p0)
+    # ** ⛭⛭⛭ RE-PINNED r3972, AND THE SECTOR HAS SINCE BEEN BUILT. **  This guard existed to show
+    # ** the c54.214 disambiguation was LOCAL -- that fixing the parenthesis left the surrounding
+    # ** claim alone -- and it did that by asserting the surrounding claim's CURRENT text: "the full
+    # ** \emph{propagating} spinor field sector (the built modes being leaf-bound, not the
+    # ** propagating theory)".  *** r3811 ("five stale sentences closed") replaced it: p0 now says
+    # ** "the propagating spinor field sector is now built as well~\cite{JanzenDynamics}, the
+    # ** leaf-bound modes and the propagating field being two sectors rather than one owed". ***
+    # **   ⇒ ** THE LOCALITY CLAIM IS ABOUT ONE COMMIT, SO IT IS CHECKED AT THAT COMMIT: ** the
+    # **     disambiguation changed the parenthesis and nothing else in the sentence.  That is
+    # **     durable, and it is what the guard was actually for.
+    # **   ⌗ AND THE LATER CHANGE RUNS *WITH* THIS FILE'S FINDING, NOT AGAINST IT.  `C1` argued the
+    # **     tortoise divergence is the NORMALISATION of the object and not an obstruction to it; the
+    # **     corpus has since built the object and says the two sectors are two rather than one owed.
+    # **     *A guard that pins a neighbouring sentence's present tense turns the neighbour's
+    # **     progress into this file's failure.*
+    _DISAMB = 'c6facd47'        # c54.214 -- the disambiguation this section is about
+    _before = _flat_at(f'{_DISAMB}~1')
+    _after = _flat_at(_DISAMB)
+    _SENT = 'the full \\emph{propagating} spinor field sector (the built modes being leaf-bound, not '\
+            'the propagating theory)'
+    check('   and the disambiguation was LOCAL, checked at its own commit: the surrounding sentence '
+          'stood unchanged across c54.214 -- only the parenthesis moved',
+          _SENT in _before and _SENT in _after)
+    check('   ⛭ and p0 has since gone further, at r3811: "the propagating spinor field sector is now '
+          'built as well~\\cite{JanzenDynamics}, the leaf-bound modes and the propagating field '
+          'being two sectors rather than one owed" -- which is this file\'s own reading arriving in '
+          'the paper, the divergence having been the normalisation and not the obstruction',
+          'the propagating spinor field sector is now built as well' in p0
+          and 'the leaf-bound modes and the propagating field being two sectors rather than one '
+              'owed' in p0
+          and _SENT not in p0)
 
     # AND THE RESULT IS BANKED IN P14, not only in this file -- an unbanked result is lost
     # (corpus/check_receipts.py: "a result that lands in no paper is not banked").  These bind the

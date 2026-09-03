@@ -160,12 +160,25 @@ def main():
     #    named is now CLOSED: P14 carries the branch-point verdict since r3205, so `limit-circle` is
     #    no longer P10's alone.  The check asserts the JOIN rather than the absence -- which is the
     #    honest form, since what the bake FOUND is what made the routing worth reporting. **
-    check('⓷ `essentially self-adjoint` is still P10\'s alone, while `limit-circle` has since been '
-          'joined to P14 at the UPHELD limit-point verdict -- the gap this bake named, now closed (B67)',
-          # ** r3339: the verdict is UPHELD (B67) and the routing gap is closed -- P14 carries
-          #    limit-POINT at the branch point.  Assert the join at the right verdict. **
+    # ** ⛔⛭⛭ AND THIS CHECK WAS CHASED FORWARD TWICE BEFORE THE CORPUS WENT BACK (r3972). **  It
+    # ** was amended at r3319 ("the gap it named is now CLOSED: P14 carries the branch-point verdict
+    # ** since r3205") and again at r3339 (assert the join at limit-POINT rather than limit-circle),
+    # ** and *** r3341 then reverted the P14 edit entirely ***: "the error traces back to r3140, and
+    # ** P14's original passage is restored verbatim."  The r3339 text was a paraphrase that had
+    # ** replaced a correct passage removed at r3140 as an artefact; r3341 restored the original and
+    # ** says it is the better text -- closed form, leaf measure, threshold, and which branch fails.
+    # **   ⇒ ** SO THE GAP THIS BAKE NAMED IS REAL AGAIN, AND THE CHECK IS RETURNED TO WHAT THE BAKE
+    # **     FOUND rather than amended a third time. **  *Two amendments chased a change that did not
+    # **     survive; a check written to follow a change must be checked against whether it held.*
+    # ** ⌗ Third receipt in this debt resting on that one P14 fact -- with `L264/K1` and `L263/S1`,
+    # **   and S1 had it right the whole time, its ⓷ᵉ recording the withdrawal in terms.
+    check(f'⓷ `essentially self-adjoint` is P10\'s alone, and so is the self-adjointness apparatus '
+          f'at the branch point: limit-point {sorted(where["limit-point"])}, limit-circle '
+          f'{sorted(where["limit-circle"])} -- the routing gap this bake named, REAL again after '
+          f'r3341 restored P14\'s original passage verbatim',
           list(where['essentially self-adjoint']) == ['P10']
-          and 'P10' in where['limit-point'] and 'P14' in where['limit-point'])
+          and 'P10' in where['limit-point'] and 'P14' not in where['limit-point']
+          and 'P14' not in where['limit-circle'])
     check(f'⓷ᵇ ⛔ while `branch point` appears {sum(where["branch point"].values())} times across '
           f'{len(where["branch point"])} papers -- and no paper carries a self-adjointness verdict '
           'at it',
