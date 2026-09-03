@@ -30,6 +30,16 @@ EST = {
         'isometry-realised on the compact face, and it remains unbuilt -- the major undertaking any geometric '
         'gauge-matter route would first have to complete. TRIP-WIRE: forcing the gauge group forces the Higgs '
         'representation with it.'),
+    'PO-28': ('the adiabatic residual at the largest scales -- EVALUATE IT AT LOW n', 1, 1, 2, None,
+        'r3873: P10s kernel frequency is not constant along the imaginary-time segment, so the projection across '
+        'the beginning is adiabatic rather than exact and the residual at the largest scales is one face of that. '
+        'Characterised rather than flagged: the adiabaticity parameter runs as 1.72/mu_n at s=0.05 falling to '
+        '0.16/mu_n by s=0.9, so it is controlled at high n and WORST AT THE TOWERS FLOOR, which is where the '
+        'largest scales live. And it DIVERGES as s^(-1/3) at the branch point while the suppression exponent '
+        'CONVERGES as S^(1/3) -- different powers, so P10s finiteness comes from the action integral and not from '
+        'slow variation; the correction is semiclassical and P15 names it correctly as WKB. The exact-to-naive '
+        'exponent ratio is already measured at 2.32, so the machinery exists. What is owed is the residual at low '
+        'n carried through to whatever it touches -- and if it touches nothing observable, that closes it.'),
     'PO-27': ('empirical coherence as an INDEPENDENT ground -- the motivation, not the construction', 1, 1, 4, None,
         'r3867: P13 sec:open names this the SECOND of two genuinely open and distinct things -- whether the '
         'Standard Models century-constrained empirical standing, read as an EXTERNAL constraint rather than '
@@ -141,12 +151,12 @@ KIND = {'PO-13': 'READ', 'PO-14': 'BUILD', 'PO-15': 'READ', 'PO-16': 'READ',
 
 # ** PO-23 added r3809: the ultraviolet definition of the mode sums, the one part of P07's
 # three-part 'definition of the interacting tower' that is neither settled nor attempted. **
-ORDER = ['PO-13', 'PO-24', 'PO-25', 'PO-26', 'PO-27', 'PO-23', 'PO-15', 'PO-14', 'PO-17', 'PO-18', 'PO-19', 'PO-20']
+ORDER = ['PO-13', 'PO-24', 'PO-25', 'PO-26', 'PO-27', 'PO-28', 'PO-23', 'PO-15', 'PO-14', 'PO-17', 'PO-18', 'PO-19', 'PO-20']
 GROUP = {'PO-13': 'D', 'PO-14': 'A', 'PO-15': 'C', 'PO-16': 'D',
          # ** r3095: the four brought in from p0's frontiers and the field ledgers.  PO-17 and
          # PO-19 are substrate geometry; PO-18 is the constant ledger; PO-20 is analysis. **
          'PO-17': 'E', 'PO-18': 'E', 'PO-19': 'E', 'PO-20': 'E',
-         'PO-23': 'C', 'PO-24': 'D', 'PO-25': 'E', 'PO-26': 'A', 'PO-27': 'A'}
+         'PO-23': 'C', 'PO-24': 'D', 'PO-25': 'E', 'PO-26': 'A', 'PO-27': 'A', 'PO-28': 'C'}
 GNAME = {'A': 'the matter sector', 'B': 'the matter sector', 'C': 'the quantum sector',
          'D': 'the cosmology', 'E': 'the substrate geometry'}
 
