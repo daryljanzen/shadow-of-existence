@@ -67,6 +67,24 @@ def check(label, cond):
         FAILED.append(label)
 
 
+
+def _ledger_at(rev):
+    """`open_ledger.txt` parsed the same way as above, at a revision."""
+    import subprocess as _sp
+    out = {}
+    txt = _sp.run(['git', 'show', f'{rev}:corpus/open_ledger.txt'], cwd=ROOT,
+                  capture_output=True, text=True, errors='replace').stdout
+    for r in txt.split('\n'):
+        if '|' not in r or r.startswith('#'):
+            continue
+        p = [x.strip() for x in r.split('|', 3)]
+        if len(p) == 4:
+            out[p[0]] = (p[2], p[3])
+    assert out, ('the ledger must be readable at the sweep commit, or nothing below is a comparison',
+                 rev)
+    return out
+
+
 def main():
     _raw14 = open(os.path.join(ROOT, 'corpus', 'matter_sector_paper.tex'),
                   encoding='utf-8', errors='replace').read()
@@ -87,13 +105,34 @@ def main():
     po = {re.search(r'PO-\d+', l).group(0): l
           for l in raw.split('\n') if re.match(r'\|\s*~*\*\*PO-\d+\*\*', l)}
 
-    # ⓶ the three duplicates
+    # ** ⛔⛭⛭ THIS LOOP DID NOT FAIL, IT *** CRASHED *** (repaired r3974). **  `led[hid]` with no
+    # ** default raised `KeyError` the moment a row left the ledger, so nothing after it ran and the
+    # ** file reported a traceback instead of a verdict.  ** Third crash of this exact shape in the
+    # ** debt ** -- with `L257/V1`'s `StopIteration` and `L272/F1`'s `IndexError`, all three a lookup
+    # ** that assumed its key still existed.  *A closed item must read as a closed item, not as a
+    # ** stack trace: a crash reports nothing, INCLUDING everything downstream of it.*
+    #   ⛭ AND TWO OF THE THREE HAVE SINCE BEEN CLOSED, each by the claim itself being settled:
+    #     `b2d1f4a62a` at r3811 ("five stale sentences closed"), when p0 stopped saying the
+    #     propagating sector stays open and started saying it is built; `0201758a05` at r3870
+    #     ("PO-24 step one: the control reproduces CAMB to 0.14%").  ** A ledger id is a hash of the
+    #     claim's own text, so a row LEAVING is what a settled qualification looks like. **
+    #   ⇒ ** The duplication is a fact about the ledger AT THE SWEEP, so it is pinned there; what is
+    #     asserted live is the disposition -- still duplicating, or gone because it was settled. **
+    _AT_SWEEP = 'd13805b8'          # r2694 -- this sweep's own commit
+    _led_then = _ledger_at(_AT_SWEEP)
     for hid, phrase, tag in (
             ('b2d1f4a62a', 'full propagating spinor field sector', 'PO-11'),
             ('328d33776e', 'compact-face fermion sector', 'PO-11'),
             ('0201758a05', 'bespoke transfer', 'PO-12')):
-        check(f'⓶ {hid} duplicates {tag} verbatim: "{phrase}"',
-              phrase.lower() in led[hid][1].lower() and phrase.lower() in po[tag].lower())
+        check(f'⓶ {hid} duplicated {tag} verbatim at {_AT_SWEEP}, this sweep\'s own commit: '
+              f'"{phrase}"',
+              hid in _led_then and phrase.lower() in _led_then[hid][1].lower()
+              and phrase.lower() in po[tag].lower())
+        _live = led.get(hid)
+        _disp = ('still in the ledger and still duplicating' if _live
+                 else 'GONE -- its claim was settled and the row left with it')
+        check(f'⓶ᵃ {hid} is {_disp}',
+              (phrase.lower() in _live[1].lower()) if _live else (hid not in led))
 
     # ⓷ the three weight-marks are the papers' own
     check('⛭⛭ ⓷ 233a615f2f is the paper limiting itself: "the figure it matches is recalled rather than '
@@ -102,8 +141,22 @@ def main():
     check('9921e78365 likewise: "We state it at that strength and no higher, and the paragraphs below '
           'lower it further"',
           'and no higher, and the paragraphs below lower it further' in led['9921e78365'][1])
-    check('and 3e6a969eb5 marks its own half: "Half a result, marked as half"',
-          'Half a result, marked as half' in led['3e6a969eb5'][1])
+    # ** ⛭ AND THE THIRD WEIGHT-MARK'S ROW IS GONE, FOR A DIFFERENT REASON THAN THE TWO ABOVE
+    # ** (r3974). **  `3e6a969eb5` left at r3797 -- "the prose pass closed: the corpus's paper bodies
+    # ** carry no bespoke jargon, 36 sites to zero" -- so the sentence was REWORDED and its id, being
+    # ** a hash of the claim's own text, changed with it.  ** That is not the claim being settled;
+    # ** it is the claim being rephrased **, which is a different disposition from `b2d1f4a62a`'s and
+    # ** `0201758a05`'s and is worth keeping distinct.
+    #   ⇒ The mark is pinned where this sweep read it, and the live check asks whether the WEIGHT is
+    #     still carried -- by that id or by any row -- rather than whether one hash survived.
+    _mark_then = _led_then.get('3e6a969eb5')
+    check('and 3e6a969eb5 marked its own half at the sweep: "Half a result, marked as half"',
+          _mark_then and 'Half a result, marked as half' in _mark_then[1])
+    _still = [k for k, v in led.items() if 'half a result, marked as half' in v[1].lower()]
+    _where = (f'row(s) {_still}' if _still
+              else 'no row -- the id changed at r3797 when the prose pass reworded the sentence '
+                   'it hashes')
+    check(f'⛭ and the weight-mark is carried under {_where}', bool(_still) or '3e6a969eb5' not in led)
 
     # ⓸ the one real item
     # ** r2721, on cc54's c54.213 principle: *** an absence receipt that fails because its

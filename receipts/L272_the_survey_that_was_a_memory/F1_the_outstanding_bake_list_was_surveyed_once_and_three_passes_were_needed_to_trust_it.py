@@ -82,6 +82,44 @@ def loose_total(terms):
                for t in terms)
 
 
+
+#: ** ⛭ THE SURVEY'S POPULATION AT THIS FILE'S OWN THROW (r3974). **  `FS.FIELDS` is a LIVE list and
+#: ** it grows as fields are baked: 21 entries at r3162 with 13 of them candidates, 24 now with none.
+#: ** A control set read live is not the set the instrument was validated on, and a candidate set
+#: ** read live is empty once the work is done.  *Both are read at the throw; the COUNTS stay live,
+#: ** so the claims below remain claims about the instrument rather than a frozen table.*
+_THROW = '7e6447a4'          # r3162 -- this survey's own commit
+_FIELDS_THEN = []
+
+
+def _fields_at_throw():
+    if not _FIELDS_THEN:
+        import subprocess as _sp
+        import types as _types
+        src = _sp.run(['git', 'show', f'{_THROW}:corpus/field_survey.py'], cwd=ROOT,
+                      capture_output=True, text=True, errors='replace').stdout
+        mod = _types.ModuleType('_fs_then')
+        #: the survey resolves ROOT from its own `__file__`, so the module gets one
+        mod.__dict__['__file__'] = os.path.join(ROOT, 'corpus', 'field_survey.py')
+        cwd = os.getcwd()
+        os.chdir(os.path.join(ROOT, 'corpus'))
+        try:
+            exec(compile(src, 'field_survey@throw', 'exec'), mod.__dict__)
+        finally:
+            os.chdir(cwd)
+        _FIELDS_THEN.extend(mod.FIELDS)
+        assert _FIELDS_THEN, 'the survey must be readable at its own throw, or nothing here compares'
+    return _FIELDS_THEN
+
+
+def _controls_at_throw():
+    return {n for n, l, _ in _fields_at_throw() if l}
+
+
+def _candidates_at_throw():
+    return {n for n, l, _ in _fields_at_throw() if not l}
+
+
 def main():
     print()
     print('  F1 -- the outstanding-bake list was a memory, and three passes were needed')
@@ -97,9 +135,32 @@ def main():
         _, tot = FS.field_total(terms)
         found[n] = tot
         print(f'      {n:44s} ×{tot:<6d} {ledger}')
-    check(f'⓵ all {len(controls)} thrown fields are re-found at ×{FS.NOTABLE}+ by their own '
-          'vocabularies, so a clean sheet among the candidates would not be blindness',
-          all(v >= FS.NOTABLE for v in found.values()))
+    # ** ⛭⛭⛭ RE-PINNED r3974, AND *** THE OUTSTANDING-BAKE LIST HAS BEEN COMPLETED. ***  At r3162
+    # ** (`7e6447a4`) this survey held 8 controls and 13 CANDIDATES.  ** Every one of the thirteen
+    # ** has since been baked: `FS.FIELDS` now carries 24 entries and NOT ONE is a candidate. **  So
+    # ** `cands` is empty, the ranking passes below had nothing to rank, and the file crashed on
+    # ** `loose[0]` rather than reporting -- the same lookup-assumes-its-key shape as `L257/V1` and
+    # ** `P12/A4`, met a third time.
+    # **   ⇒ ** THE CONTROL CLAIM AND THE POPULATION CLAIM ARE DIFFERENT CLAIMS AND ARE NOW
+    # **     SEPARATE. **  What guards against blindness is that the instrument still re-finds the
+    # **     fields it was VALIDATED on -- r3162's eight, which all still clear ×40.  What has
+    # **     changed is the population: nine of the fields baked since score below ×40, and that is
+    # **     a FINDING about those fields rather than a fault in the instrument.  *`probability /
+    # **     stochastic processes` scores 7, and its bake's own result was that the corpus's whole
+    # **     probability footprint is three geometry words.*
+    _ctrl_then = _controls_at_throw()
+    _val = {n: v for n, v in found.items() if n in _ctrl_then}
+    _low = sorted((v, n) for n, v in found.items() if v < FS.NOTABLE)
+    check(f'⓵ the instrument still re-finds every field it was VALIDATED on -- r3162\'s '
+          f'{len(_ctrl_then)} controls, all at ×{FS.NOTABLE}+ -- so a clean sheet is not blindness: '
+          f'{ {n: v for n, v in sorted(_val.items())} }',
+          len(_val) == len(_ctrl_then) and all(v >= FS.NOTABLE for v in _val.values()))
+    check(f'⓵ᵃ ⛭⛭ AND THE LIST THIS FILE SURVEYED IS COMPLETE: all {len(controls)} fields now carry '
+          f'a ledger and {len(cands)} remain as candidates.  {len(_low)} of them score below '
+          f'×{FS.NOTABLE} -- {_low} -- which is a finding about those fields, not a fault in the '
+          f'instrument that found them',
+          not cands and len(controls) == len(FS.FIELDS)
+          and all(n in {c for c, _, _ in controls} for n in _ctrl_then))
     check('⓵ᵇ and every ledger a control names is ON DISK, checked rather than trusted',
           all(os.path.exists(os.path.join(ROOT, l)) for _, l, _ in controls))
     check('⓵ᶜ the survey exits 0 only when both hold: a missing ledger or an unfindable control '
@@ -111,6 +172,15 @@ def main():
     print('  ' + '=' * 74)
     print('  PART 2 -- ⛔ PASS ONE: SUBSTRING TO WORD REORDERED THE TOP OF THE LIST')
     print('  ==========================================================================')
+    # ⌗ the ranking passes are about the CANDIDATE SET, and there is no longer one -- every field
+    #   has been baked.  ** So they run over the candidates as they stood at this file's own throw,
+    #   which is the population the three passes were about **, measured with today's instrument on
+    #   today's papers so the orderings are a live claim about the SURVEY and not a frozen table.
+    _cands_then = _candidates_at_throw()
+    cands = [(n, l, t) for n, l, t in FS.FIELDS if n in _cands_then]
+    check(f'⓶ᵃ the {len(_cands_then)} candidates this file ranked are all still known to the '
+          f'instrument, so the passes below rank the same population they were written about',
+          len(cands) == len(_cands_then))
     loose = sorted(((n, loose_total(t)) for n, _, t in cands), key=lambda r: -r[1])
     tight = sorted(((n, FS.field_total(t)[1]) for n, _, t in cands), key=lambda r: -r[1])
     print(f'      loose #1: {loose[0][0]} ×{loose[0][1]}      word-bounded #1: '
