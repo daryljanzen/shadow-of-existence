@@ -1,4 +1,4 @@
-46
+44
 
 ⛭⛭ WORK STARTED r3938 (node 60), on Daryl's decision at r3908 -- ledger pass first, receipts after,
 and the standard is that they RUN.  ** 5 of 62 repaired; head count above is now 57. **
@@ -19,6 +19,23 @@ and the standard is that they RUN.  ** 5 of 62 repaired; head count above is now
   C15_the_cancellation_does_not_reach_the_ratio                     r3952  SWEEP REWROTE THE PIN
   C18_bespoke_means_two_legs                                        r3952  SWEEP REWROTE THE PIN
   C29_nothing_to_calculate_across_the_join                          r3952  PROSE MOVED (both halves)
+  B7_two_unbuilt_sectors_not_one                                    r3954  THESIS HALF-KILLED
+  B66_po5s_route_is_gated_on_po11                                   r3954  BROKEN BY MY OWN r3904
+
+⛔⛭⛭ TWO RECEIPTS BROKEN BY A CORRECT PAPER REPAIR -- MINE.  At r3904 I removed from
+groupoid_paper the claim that the propagating spinor sector is "the programme's LARGEST UNBUILT
+undertaking" and "remains genuinely open", because it was FALSE: the paper asserted openness
+while CITING P07, and P07 says "A propagating fermion sector IS NOW BUILT".  Two receipts pinned
+the incorrect claim -- B66 on the literal phrase `largest unbuilt`, B7 on geometric_core_paper
+calling both sectors unbuilt.
+  ⇒ *** A CORRECT PAPER REPAIR BREAKING A RECEIPT IS THIS DEBT IN MINIATURE, AND IT IS NOT A
+      REASON TO UNDO EITHER.  The paper is right now and the pin follows it. ***
+  ⌗ B7's TITLE is half false: `two_unbuilt_sectors_not_one`.  The two sectors ARE two -- the paper
+    says so verbatim, "the leaf-bound modes and the propagating field being TWO SECTORS RATHER
+    THAN ONE" -- and that was the receipt's real contribution.  Only `unbuilt` died.  ** Half a
+    thesis dying is the common case, and the half that lives is usually the one worth keeping. **
+  ⌗ And `geometric_core_paper` is the FOURTH paper to carry the correction, after P07 L267, P5
+    L648 and boundary_paper.  A receipt asserting the old state was the last place it survived.
 
 ⛭ THE `geometric stacking` CLUSTER IS CLEARED, 8 of 8.  One sweep, one diagnosis, eight receipts.
   ⌗ C18's is the one to look at if the sweep's damage is ever doubted: the paper's sentence is a

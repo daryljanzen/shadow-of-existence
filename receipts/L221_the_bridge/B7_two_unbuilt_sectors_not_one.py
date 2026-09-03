@@ -84,20 +84,41 @@ def main():
           'act on"',
           'supplies no equivariant index for the obstruction to act on' in bp)
 
-    # p0's is a different object
-    check("⓶ and p0's object is the PROPAGATING theory: \"the full \\emph{propagating} spinor field "
-          'sector (the built modes being leaf-bound, not the propagating theory)"',
-          'the full \\emph{propagating} spinor field sector' in p0
-          and 'the built modes being leaf-bound, not the propagating theory' in p0)
+    # ⛔⛭⛭ RE-PINNED r3954, AND HALF THIS RECEIPT'S TITLE IS NOW FALSE.  Both checks below pinned
+    #   `geometric_core_paper` calling the propagating sector UNBUILT.  ** It is built. **  r3802
+    #   built the Dirac sector on P11's unpolarised Gowdy member (`C50`, run and passing), and the
+    #   paper now says so in its own voice, twice:
+    #     "the descent onto a PROPAGATING spinor sector IS NOW BUILT AS WELL, a Dirac field on the
+    #      unpolarised radiating member propagating on the light cone and carrying the twist"
+    #     "the propagating spinor field sector IS NOW BUILT AS WELL, the leaf-bound modes and the
+    #      propagating field being TWO SECTORS RATHER THAN ONE"
+    #   ⇒ *** KIND ②, and only HALF the thesis died.  "Two sectors, not one" is this receipt's real
+    #       contribution and the paper states it verbatim.  "Both UNBUILT" is what the corpus has
+    #       since overtaken -- so the pin is replaced by what the build established, never re-pinned
+    #       to a new way of saying unbuilt. ***
+    #   ⌗ This is the fourth paper to carry the correction: P07 L267, P5 L648 (repaired r3904),
+    #     `boundary_paper` (item 41), and here.  A receipt asserting the old state was the last
+    #     place it survived.
+    check("⓶ and the two sectors are DISTINCT, which is this receipt's title and the paper's own "
+          'words: "the leaf-bound modes and the propagating field being two sectors rather than one"',
+          'two sectors rather than one' in p0)
+    check('⛭ and the propagating one is NO LONGER UNBUILT -- the corpus overtook this receipt: '
+          '"the propagating spinor field sector is now built as well"',
+          'propagating spinor field sector is now built as well' in p0
+          and 'unpolarised radiating member' in p0)
 
     # different reasons
     check('⓷ and they are unbuilt for DIFFERENT reasons -- the compact-face route is walled by '
           'localisation and by $\\mathfrak{su}(3)$ being no isometry: "being no isometry of the '
           'non-compact substrate to begin with"',
           'being no isometry of the non-compact substrate to begin with' in bp)
-    check('while the propagating sector is unbuilt because the delivered modes are BOUND -- p0: "the '
-          'built modes being leaf-bound"',
-          'the built modes being leaf-bound' in p0)
+    # ⛔ AND THIS ONE TOO: it asserted the propagating sector is unbuilt "because the delivered modes
+    #   are BOUND".  The distinction it rests on -- bound modes are not the propagating field --
+    #   SURVIVES and is exactly why the two are two sectors; what has changed is that the second one
+    #   now exists.  Re-pinned to the distinction, which is the part that was ever load-bearing.
+    check('while the two remain distinct for the reason this receipt gave -- the leaf-bound modes are '
+          'not the propagating field, which is why they were never one sector',
+          'leaf-bound modes and the propagating field' in p0)
 
     # the ledger records it again
     led = open(os.path.join(ROOT, 'corpus', 'open_ledger.txt'), encoding='utf-8').read()

@@ -83,12 +83,25 @@ def main():
           'and a gauge field must **',
           'disjoint support' in p14)
 
-    check('⛭⛭⛭ ⓶ and the propagating sector is the corpus\'s own largest unbuilt piece: the skeleton '
-          '"is built as bound-state zero-modes of the existent leaf ... while the descent onto a full '
-          'propagating spinor field sector --- the programme\'s largest unbuilt undertaking --- remains '
-          'genuinely open"',
+    # ⛔⛭⛭ RE-PINNED r3954, AND THE BREAKAGE IS MINE.  This asserted `"largest unbuilt" in grp` --
+    #   the phrase "the programme's largest unbuilt undertaking", which I REMOVED from
+    #   groupoid_paper at r3904 because it was FALSE: the paper claimed the propagating sector
+    #   "remains genuinely open" while CITING `JanzenCRframework`, and P07 says "A propagating
+    #   fermion sector IS NOW BUILT".  A claim of openness resting on a citation that says built.
+    #     ⇒ *** So a correct paper repair broke a receipt that pinned the incorrect claim.  That is
+    #         this debt in miniature and it is not a reason to undo either: the paper is right now,
+    #         and the pin follows it. ***
+    #   ⌗ "largest unbuilt undertaking" is also the exact phrase the ledger pass carries as a
+    #     failure mode -- "calling a handover a debt" -- so the receipt was pinning a known defect.
+    #   The skeleton half is untouched and still asserted; the "unbuilt" half is replaced by what
+    #   the paper now states, which keeps this check discriminating rather than merely present.
+    check('⛭⛭⛭ ⓶ the skeleton is the BOUND sector, and the descent is now BUILT -- groupoid_paper, '
+          'as repaired at r3904: "the descent onto a full propagating spinor field sector is now '
+          'built ... the sector that stays unbuilt is the other one, gauge-acted and '
+          'isometry-realised on the compact face"',
           'bound-state zero-modes of the existent leaf' in grp
-          and "largest unbuilt" in grp)
+          and 'spinor field sector is now built' in grp
+          and 'stays unbuilt is the other one' in grp)
 
     # ⓷ the chain terminates
     raw = open(os.path.join(ROOT, 'PROTECTED_OPEN.md'), encoding='utf-8', errors='replace').read()
