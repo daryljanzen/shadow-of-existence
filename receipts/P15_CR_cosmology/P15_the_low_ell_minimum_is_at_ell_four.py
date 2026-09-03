@@ -6,11 +6,20 @@ sector's statistical weight actually falls.
 DIP WHOSE MINIMUM FALLS AT $\\ell=4$ -- and the quadrupole and octopole, the two multipoles the paper
 quoted, are its two SHALLOWEST points. **
 
-** AND THE SHAPE IS CROSS-VALIDATED.  Two independent Boltzmann treatments of the same discrete
-source -- a standard code's exact $\\Delta_\\ell(k)$ sampled at the discrete $k_L$, and the photon
-hierarchy built for this programme -- return the SAME minimum at $\\ell=4$ and the SAME recovery, and
-differ only in depth, uniformly by $10$--$25\\%$, which is the size of the residual P15
-`sec:instrument` declares.  What is cross-validated is the shape; the depth carries their spread. **
+** AND THE SHAPE IS CROSS-VALIDATED -- THE SHAPE, AND ONLY THE SHAPE. **  Two independent Boltzmann
+treatments of the same discrete source -- the photon hierarchy built for this programme, and this
+cosmology's discrete source read through a standard code's own $\\Delta_\\ell(k)$ -- return the SAME
+minimum at $\\ell=4$ and the SAME recovery.  ** Their DEPTHS do not agree: ** $0.473/0.410/0.356/0.676$
+against $0.49/0.24/0.18/0.61$, close at the quadrupole and nearly a factor two apart at $\\ell=3$ and
+$4$.  *The paper says it in one line: "The shape is cross-validated between the two; the depth is
+not."*
+  ⛔ ** AN EARLIER FORM OF THIS FILE CLAIMED THEY "differ only in depth, uniformly by 10--25%", AND
+    THE PAPER WITHDREW THAT FIGURE AT r3213 ** -- "neither is reproduced by either arm and both are
+    withdrawn" -- while this file went on asserting it.  ⌗ *And it stopped failing on that only
+    because its two arms had silently become ONE: it read arm B off the figure caption, into which
+    r3213 had put arm A's converged quartet, so the ratio ran 1.000 at every multipole.*
+  ⇒ *** TWO ARMS AGREEING EXACTLY IS NOT AGREEMENT.  Both quartets are now read from the single
+      sentence that states them side by side, with the paper's own attribution. ***  (r3980)
 
 WHAT PROMPTED IT.  The paper carried two incompatible figures for this depth: the body, abstract,
 results list, scope section and summary said $\\approx0.47/0.41$ at $\\ell=2,3$ "recovering by
@@ -23,7 +32,9 @@ hand-chosen Sachs--Wolfe source at all.  That ground belongs to the older SW-ana
 
 WHAT IS ESTABLISHED.
   1. ** THE TWO ARMS AGREE ON THE SHAPE **: both minimise at $\\ell=4$ over $\\ell=2\\ldots5$ and both
-     recover by $\\ell\\approx7$--$8$; their depth ratio runs $1.13$--$1.30$.
+     recover by $\\ell\\approx7$--$8$.  ** Their depths do NOT agree ** -- the ratio runs $0.97$ at
+     $\\ell=2$ to $1.98$ at $\\ell=4$ -- and the paper does not reconcile them, naming the difference
+     as late-time integrated Sachs--Wolfe handling and $D_M$.
   2. ** THE $\\ell=4$ MINIMUM WAS NEVER A NEW RESULT **: the registered CAMB receipt
      (`P15_verify_lowell_boltzmann.py`, r1395) tabulates $\\ell=4$ in its own printed output at
      $0.356$, and the likelihood receipt has consumed that value ever since.  The failure was one of
@@ -64,19 +75,45 @@ TEX = open(os.path.join(ROOT, 'corpus', 'CR_cosmology.tex'),
 LIK = open(os.path.join(HERE, 'P15_verify_lowell_likelihood_v2.py'), encoding='utf-8').read()
 BOL = open(os.path.join(HERE, 'P15_verify_lowell_boltzmann.py'), encoding='utf-8').read()
 
-# arm A: a standard code's exact Delta_l(k) sampled at the discrete k_L -- read off the standing
-#        likelihood receipt's own depth table rather than retyped.
+# ** ⛔⛭⛭ REPAIRED r3980, AND THIS FILE'S CROSS-VALIDATION HAD GONE CIRCULAR. **
+# ** Arm B was read off the paper's FIGURE CAPTION.  r3213 ("P15's withdrawn depth figures were
+# ** still live in six places, including the abstract") put the CONVERGED quartet into that caption
+# ** -- 0.473, 0.410, 0.356, 0.676 -- which is the SAME quartet arm A reads from the likelihood
+# ** receipt's `depth` table.  *** So the two "independent" arms became one source read twice, and
+# ** the ratio ran 1.000 at every multipole. ***  Two arms agreeing exactly is not agreement.
+# **   ⛔ AND WHAT THE FILE THEN ASSERTED WAS A CLAIM THE PAPER HAD WITHDRAWN.  Its
+# **     `1.10 < mean ratio < 1.35` is the "uniformly shallower by 10--25%" spread, and r3213's
+# **     subject line is that the paper withdrew it: *"an earlier statement of this comparison
+# **     quoted a second depth quartet and a uniform 10--25% spread; neither is reproduced by either
+# **     arm and both are withdrawn."*  ** The assertion only escaped certifying a withdrawn figure
+# **     because its arms had collapsed and it crashed instead. **
+# **   ⌗ AND THE ARM LABELS WERE INVERTED: the caption attributes its quartet to "the photon
+# **     hierarchy built for this programme", while the STANDARD CODE returns 0.49/0.24/0.18/0.61.
+# **     The file called the first arm the standard code and the second the hierarchy.
+# ** ⇒ *** BOTH QUARTETS ARE NOW READ FROM THE ONE SENTENCE THAT STATES THEM SIDE BY SIDE, WITH THE
+# **     PAPER'S OWN ATTRIBUTION, so they cannot silently become the same number again. ***  What is
+# **     asserted is what the paper holds: the same minimum, the same recovery, and depths that
+# **     differ -- "The shape is cross-validated between the two; the depth is not."
+_PAIR = re.search(
+    r'the second arm returns \$?([\d.]+)\$?, \$?([\d.]+)\$?, \$?([\d.]+)\$? and \$?([\d.]+)\$? '
+    r'against the first\'s \$?([\d.]+)\$?, \$?([\d.]+)\$?, \$?([\d.]+)\$? and \$?([\d.]+)\$?',
+    re.sub(r'\s+', ' ', TEX))
+assert _PAIR, ('the paper must state both arms in one sentence, or this file cannot tell them apart '
+               '-- which is exactly how it came to read one arm twice')
+_second = [float(x) for x in _PAIR.groups()[:4]]
+_first = [float(x) for x in _PAIR.groups()[4:]]
+# arm A -- the programme's own photon hierarchy, the converged quartet the paper's depth table and
+#          figure caption carry.  Read off the standing likelihood receipt rather than retyped.
 CAMB = {int(a): float(b) for a, b in
         re.findall(r'(\d+):([\d.]+)', re.search(r'depth\s*=\s*\{([^}]*)\}', LIK).group(1))}
-# arm B: the programme's own photon hierarchy -- read off the paper's caption.
-HIER = dict(zip((2, 3, 4, 5), [float(x) for x in re.search(
-    r'it sits at \$?([\d.]+)\$?, \$?([\d.]+)\$?, \$?([\d.]+)\$?, \$?([\d.]+)\$? of the flat',
-    TEX).groups()]))
+# arm B -- the independent transfer: this cosmology's discrete source read through a standard
+#          Boltzmann code's own Delta_l(k).
+HIER = dict(zip((2, 3, 4, 5), _second))
 
 print("=" * 78)
 print("1 — THE TWO ARMS, AND THEY AGREE ON THE SHAPE")
 print("=" * 78)
-print(f"  {'ell':>5} {'exact Delta_l(k) x discrete k_L':>33} {'programme hierarchy':>22} {'ratio':>7}")
+print(f"  {'ell':>5} {'programme photon hierarchy':>33} {'standard code Delta_l(k)':>26} {'ratio':>7}")
 for l in (2, 3, 4, 5, 6, 7):
     a, b = CAMB.get(l), HIER.get(l)
     print(f"  {l:>5} {('-' if a is None else f'{a:.3f}'):>33} "
@@ -88,11 +125,25 @@ rec = min(l for l in sorted(CAMB) if CAMB[l] > 0.95)
 sp = [CAMB[l]/HIER[l] for l in (2, 3, 4, 5)]
 print()
 print(f"  ** minimum over ell=2..5:  arm A at ell={amin}   arm B at ell={hmin} **")
-print(f"  ** arm A recovers (>0.95) at ell={rec}; arm B's caption says ~8 **")
-print(f"  ** depth ratio A/B = {min(sp):.2f}--{max(sp):.2f}: arm B runs "
-      f"{100*(1-1/min(sp)):.0f}-{100*(1-1/max(sp)):.0f}% deeper, uniformly **")
-assert amin == hmin == 4
-assert 1.10 < sum(sp)/4 < 1.35
+print(f"  ** arm A recovers (>0.95) at ell={rec}; the paper's caption says ~8 **")
+print(f"  ** depth ratio A/B = {min(sp):.2f}--{max(sp):.2f}: CLOSE at the quadrupole and nearly a "
+      f"factor two apart at ell=3 and 4 -- NOT a uniform spread, which the paper withdrew (r3213) **")
+print(f"  ** the paper's own two quartets: first {_first}, second {_second} **")
+assert amin == hmin == 4, ('both arms must minimise at ell=4 -- the location is what the paper says '
+                           'is cross-validated', amin, hmin)
+# ** the FIRST arm this file reads must be the paper's first arm, or the arms are not two **
+assert [CAMB[l] for l in (2, 3, 4, 5)] == _first, (
+    'arm A must be the converged quartet the paper attributes to the photon hierarchy',
+    [CAMB[l] for l in (2, 3, 4, 5)], _first)
+assert max(sp) > 1.8, ('the paper says the arms are "nearly a factor two apart at ell=3 and 4"; a '
+                       'spread that has collapsed toward 1 means both arms are reading one source',
+                       sp)
+assert 0.9 < min(sp) < 1.1, ('and "close at the quadrupole"', sp)
+# ⛔ NOT asserted: a UNIFORM 10--25% spread.  r3213 withdrew that figure from the paper in six
+#   places -- "neither is reproduced by either arm and both are withdrawn" -- and the assertion
+#   that stood here, `1.10 < mean ratio < 1.35`, was exactly it.  ** The depths do NOT agree and
+#   the paper says so: "The shape is cross-validated between the two; the depth is not." **
+assert 'The shape is cross-validated between the two; the depth is not' in re.sub(r'\s+', ' ', TEX)
 
 print()
 print("=" * 78)
