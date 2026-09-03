@@ -1,4 +1,4 @@
-49
+46
 
 ⛭⛭ WORK STARTED r3938 (node 60), on Daryl's decision at r3908 -- ledger pass first, receipts after,
 and the standard is that they RUN.  ** 5 of 62 repaired; head count above is now 57. **
@@ -16,6 +16,23 @@ and the standard is that they RUN.  ** 5 of 62 repaired; head count above is now
   C23_the_gap_estimated                                             r3950  SWEEP REWROTE THE PIN
   C24_the_substitution_itemised                                     r3950  SWEEP REWROTE THE PIN
   T1_the_transfer_is_half_built                                     r3950  SWEEP REWROTE THE PIN
+  C15_the_cancellation_does_not_reach_the_ratio                     r3952  SWEEP REWROTE THE PIN
+  C18_bespoke_means_two_legs                                        r3952  SWEEP REWROTE THE PIN
+  C29_nothing_to_calculate_across_the_join                          r3952  PROSE MOVED (both halves)
+
+⛭ THE `geometric stacking` CLUSTER IS CLEARED, 8 of 8.  One sweep, one diagnosis, eight receipts.
+  ⌗ C18's is the one to look at if the sweep's damage is ever doubted: the paper's sentence is a
+    PARALLEL CONSTRUCTION -- "one may not take the rate GEOMETRIC for the peak spacing and
+    RADIATION-INCLUDED for the diffusion" -- and the sweep inserted a second word into one arm of
+    it, in the receipt only.  The pin then asserted a sentence with a broken parallel that no
+    paper had ever contained.
+  ⛔ AND C29 CARRIED A SECOND TRAP.  Its check had THREE conjuncts; after re-pinning two, it still
+    failed on a third -- "so whatever sets it must act on modes already inside the sound horizon
+    when the plasma begins", which now runs ZERO times.  ** Deleting that conjunct would have made
+    the receipt pass by asking LESS. **  The claim SURVIVES, rewritten and sharper: "What does not
+    cross is the oscillatory content itself ... a mode that was sub-horizon earlier carries an
+    oscillation, and THE KERNEL ANNIHILATES IT."  ⇒ *** A conjunct whose phrase is gone is not a
+    conjunct to delete.  Look for the claim first. ***
 
 ⛔⛭⛭ ⑥ SIXTH REPAIR KIND, AND IT IS THE LARGEST SINGLE CAUSE FOUND SO FAR: A TERMINOLOGY SWEEP
 REWROTE THE RECEIPTS' PINNED STRINGS.  r3841 (item 9, the other line) swept receipts/ replacing

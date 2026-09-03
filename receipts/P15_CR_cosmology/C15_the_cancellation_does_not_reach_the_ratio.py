@@ -81,9 +81,11 @@ def main():
           'history cancel identically and the whole difference is carried by $H(a)$"',
           'the Thomson physics and the ionisation history cancel identically' in p15
           and 'carried by $H(a)$' in p15)
+    # ⛔⛭ RE-PINNED r3952 -- r3841's sweep, same cause as r3950's five.  The paper says "on the inherited datum the GEOMETRIC rate gives a diffusion
+    #   length $10.8\\%$" -- the term only; the number and the comparison were already right.
     check('and it is between two RATES: "on the inherited datum the geometric stacking rate gives a '
           'diffusion length $10.8\\%$ longer"',
-          'the geometric stacking rate gives a diffusion length' in p15 and '10.8' in p15)
+          'the geometric rate gives a diffusion length' in p15 and '10.8' in p15)
     check('with the sound horizon computed the same way: "$r_{s}=146.4$~Mpc against $145.4$ on the '
           'radiation-included"',
           '146.4' in p15 and '145.4' in p15)

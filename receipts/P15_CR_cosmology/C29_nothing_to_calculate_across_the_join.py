@@ -97,11 +97,26 @@ def main():
           'crossed before the plasma began' in p15)
 
     # ⓷ the residue is PO-7's
+    # ⛔⛭ RE-PINNED r3952 -- r3841's sweep, same cause as r3950's five.  ⛭ AND THIS ONE IS KIND ①, NOT ⑥: the SENTENCE was rewritten, not just the term.
+    #   "nothing before the onset can imprint an acoustic phase" is now "** nothing is imprinted
+    #   there, and the reason is STRUCTURAL RATHER THAN QUANTITATIVE **" -- the same claim, stated
+    #   more strongly, so the pin moves to the new sentence's load-bearing fragment.
     check('⓷ and P15 states the residue: "on this rate nothing before the onset can imprint an acoustic '
           'phase, so whatever sets it must act on modes already inside the sound horizon when the plasma '
           'begins"',
-          'nothing before the onset can imprint an acoustic phase' in p15
-          and 'already inside the sound horizon when the plasma begins' in p15)
+          'nothing is imprinted there' in p15
+          and 'structural rather than quantitative' in p15
+          and 'What does not cross is the oscillatory content itself' in p15
+          and 'the kernel annihilates it' in p15)
+    # ⌗ THE SECOND HALF NEEDED ITS OWN SEARCH.  The old tail -- "so whatever sets it must act on
+    #   modes already inside the sound horizon when the plasma begins" -- runs ZERO times now, and
+    #   dropping the conjunct would have quietly narrowed the check.  The claim SURVIVES, rewritten
+    #   and sharper: "** What does not cross is the oscillatory content itself, and that is the
+    #   collapse leg's acoustic phase: a mode that was sub-horizon earlier carries an oscillation,
+    #   and THE KERNEL ANNIHILATES IT **."  Same physics -- the sub-horizon oscillation is what
+    #   fails to cross -- stated as a mechanism rather than as a requirement on whatever sets it.
+    #   ⇒ *** A conjunct whose phrase is gone is not a conjunct to delete.  Look for the claim
+    #       first: deleting it would have made the receipt pass by asking less. ***
 
     print()
     if FAILED:

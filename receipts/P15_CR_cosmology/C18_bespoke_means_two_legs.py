@@ -96,9 +96,12 @@ def main():
           and 'the L1 foliation radiation is excluded from' in p15)
 
     # ⓷ the consistency rule
+    # ⛔⛭ RE-PINNED r3952 -- r3841's sweep, same cause as r3950's five.  The paper says "one may not take the rate GEOMETRIC for the peak spacing and
+    #   radiation-included for the diffusion" -- a parallel construction (rate geometric vs
+    #   radiation-included), and the sweep broke it by inserting a second word into one arm.
     check('⛭ ⓷ and the paper states the rule the transfer must obey: "one may not take the rate '
           'geometric stacking for the peak spacing and radiation-included for the diffusion"',
-          'one may not take the rate geometric stacking for the peak spacing and radiation-included for the '
+          'one may not take the rate geometric for the peak spacing and radiation-included for the '
           'diffusion' in p15)
     check('calling it forced: "This is forced: it is the same L1 rate that dissolves the Hubble tension"',
           'This is forced: it is the same L1 rate that dissolves the Hubble tension' in p15)
