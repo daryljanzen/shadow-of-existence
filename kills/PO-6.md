@@ -27,6 +27,8 @@ while THE FULL ONE IS POSITIVE WHEREVER THE METRIC IS NON-DEGENERATE"**, so $\ha
 
 ## ③ THE UV DEFINITION — ✔ MET, NOT OWED
 
+⛔ ***SUPERSEDED r3871 --- this warrant no longer stands as quoted.*** *`P10` was reworded at `r3871` because this phrase was being read as "someone else's problem", which is the inference `P07` explicitly refuses: "the shared character of the wall does not settle it." `P10`'s own body always refused it too --- "that is a characterisation, and it can be replaced by a measurement and a structural remark" --- and then delivers both. **The live row is `PO-23`.***
+
 *P10 names it **"the standard problem of the interacting theory rather than a residual freedom in the
 quantization"**. **Generic to every interacting QFT** — and CR's specific part is **bounded**: the
 counterterm basis is **one-dimensional by conformal flatness**, which **no scale factor can break and
