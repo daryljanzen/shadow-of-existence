@@ -60,9 +60,28 @@ vocabulary what English has words for. All are done, and the sweep went wider th
 
 ---
 
-# ⛭ B · THE THREE NAMED-UNBUILT — *`corpus/open_ledger.txt`'s own hardest verdict: "a real construction, named and not built"*
+# ⛭⛭⛭ B · `NAMED-UNBUILT` IS NOW **ZERO** — *`corpus/open_ledger.txt`'s own hardest verdict, "a real construction, named and not built", carries nothing*
 
-***Four rows carry this verdict, not three.***
+***The section below listed four rows. All four are resolved, and the way each was resolved is different:***
+
+| the construction | how it ended |
+|---|---|
+| the descent onto a **propagating spinor sector** | ⛭ **BUILT `r3802`** — the Dirac sector on `P11`'s unpolarised member; it propagates |
+| the **straddle** as a computed fact | ⛭ **BUILT `r3803`** — it was a receipt rather than a construction |
+| a fourth row | ⌗ retired at `r3863` (item 16), a boundary called a debt on both sides of a join |
+| the **ultraviolet definition of the mode sums** | ⛭ **REGISTERED `r3872`** — it is `PO-23`, live with its generator entries. *Not built and not closed: **given a home**, which is what this verdict's absence means* |
+
+⇒ ***So every construction the papers name as unbuilt now either EXISTS or has a register row.*** *That is the whole of what this verdict was for.*
+
+> ⚠ ***AND A HAZARD WORTH NAMING, BECAUSE TWO INSTRUMENTS BOTH READ `1` AND MEANT DIFFERENT THINGS.***
+> *The tally's **known debts = 1** is derived from `P15`'s own list of four buildable debts (`r3865`), and it is
+> **`PO-24`**, the end-to-end transfer. This ledger's **`NAMED-UNBUILT` = 1** was a different measurement over a
+> different population, and it was **`PO-23`**, the ultraviolet definition. **Neither was wrong; they were never
+> the same count**, and a reader checking one against the other would have found the numbers agreeing and the
+> objects not. With this row registered the collision is gone: the ledger reports **zero unregistered debts** and
+> the tally reports **one registered debt**.*
+
+⌗ *The original four rows, for the trail:*
 
 | paper | the construction named and not built |
 |---|---|

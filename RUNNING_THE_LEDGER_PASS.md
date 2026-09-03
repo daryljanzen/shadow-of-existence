@@ -1,7 +1,7 @@
 ---
 name: RUNNING_THE_LEDGER_PASS
 kind: INSTRUMENT
-current: r3865
+current: r3872
 job: How to work corpus/open_ledger.txt one row at a time -- the method, the failure modes it was built against, and what each turn must produce.
 sources: [chat]
 ---
@@ -39,6 +39,8 @@ it cannot be found again.*
 **① READ THE WHOLE PASSAGE, NEVER THE ROW.** *The row is a pointer. Nearly every real finding this
 session came from reading the paragraph, the section, or the companion the row cites — and would have
 been invisible from the row alone.*
+
+**②ᶜ MARK THE ROW `[read rNNNN]` WHEN YOU HAVE READ IT.** *A row worked and found to need no change otherwise leaves **no trace at all**: worked rows are usually retired when the paper sentence they key on is rewritten, so retirement is the record --- but a row that survives its own reading is indistinguishable from one nobody opened. At `r3872` three of ninety-six rows carried the marker against twenty items worked.*
 
 **②ᵇ A ROW'S OWN NOTE IS EVIDENCE, AND SOMETIMES THE BEST EVIDENCE.** *Ledger rows carry the history of their own disputes --- "RESTORED r2621, r2618's dedupe was WRONG" is a previous node's finding, and it caught an error of mine three revisions old. **Read the note, not just the quotation.***
 
@@ -90,6 +92,8 @@ in two places, and only one was refreshed."*
 | **breaking my own rules in the replacement text** | *wrote "what this paragraph once carried as open" while closing an item --- revision-history narration, the one-state rule, in the very sentence fixing a one-state violation. **The replacement is subject to every rule the original was*** |
 | **accepting a paper's claim about its own evidence** | *`P12` said a computation "bears on" an attribution; checked, it predicts the same thing under both readings and discriminates nothing. **A paper's characterisation of its own evidence is a claim, and gets checked like any other*** |
 | **reading a fix as a bug** | *nearly sent a builder after the Doppler term because a comment WARNED about it; the warning recorded a correction already made. **A comment naming a hazard is as often a fix as a defect --- check the code, not the comment*** |
+| **two instruments reporting the same number and meaning different items** | *the tally's `known debts = 1` is derived from `P15`'s list of four buildable debts and is `PO-24`; the ledger's `NAMED-UNBUILT = 1` was a different population and was `PO-23`. **Neither measurement was wrong and they were never the same count** --- but a reader checking one against the other finds the numbers agreeing and the objects not, which is harder to catch than a disagreement. ⇒ **When two counts are reported side by side, say what each is counted OVER*** |
+| **a fix that stops one paper short** | *`r3871` repointed the `canonical_time` row off `PO-6`'s superseded warrant and left the `CR_framework` row, its sibling, still saying "the strike and this sentence agree". **The corpus-wide sweep rule (③) applies to LEDGER ROWS and not only to paper prose*** |
 | **opening a PO row on an unchecked premise** | *opened `PO-26` for a construction the corpus had already built, because I took a struck row's summary as the object instead of reading the paper it cites. **A new row needs its premise verified in the paper, exactly as a closure does*** |
 
 ---

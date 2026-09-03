@@ -107,7 +107,7 @@ for 54). ***Never edit a row in another node's band; route instead.***
 
 | file | node | since | what |
 |---|---|---|---|
-| *(none — 60's r3870 rows released with the work)* | — | — | — |
+| *(none — 60's r3872 rows released with the work)* | — | — | — |
 | *(none — 60's r3802 rows released with the work)* | — | — | — |
 
 > ⌗ ⛭⛭⛭ **60's r3618: ALL SIX FIELD BAKES CLOSED, 102 PAPER-READS, NOTHING HELD.**

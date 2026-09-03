@@ -1,5 +1,6 @@
 HANDOFF FOR 60 -- running the open-ledger pass
-current: r3877
+current: r3872
+(60's line; 59's ledger-pass work runs to r3877 and is merged in)
 
 WHAT THE JOB IS
 
@@ -12,12 +13,20 @@ Read RUNNING_THE_LEDGER_PASS.md first. It is the instrument, and it is short.
 
 WHERE IT STANDS
 
-  ledger rows              95
-  rows worked individually 20
+  ledger rows              96
+  rows worked individually 21
   open problems            8   (PO-13, PO-23, PO-24, PO-25, PO-26, PO-27, PO-28, PO-29)
   known debts              1   (the end-to-end transfer, which is PO-24)
+  NAMED-UNBUILT rows       0   (was 1 -- the UV definition, registered to PO-23 at r3872)
   gates                    96 pass / 0 fail / 1 unrun
   papers                   all 17 compile at 0 errors, 0 undefined
+
+** THE LAST TWO COUNTS ABOVE ARE DIFFERENT MEASUREMENTS OVER DIFFERENT POPULATIONS. **  Before
+r3872 both read 1 and they meant different items: the DEBT count comes from P15's own list of four
+buildable debts and is PO-24, while the NAMED-UNBUILT count came from the ledger and was PO-23.
+Neither was wrong and they were never the same count -- but a reader checking one against the other
+would have found the numbers agreeing and the objects not, which is harder to catch than a plain
+disagreement.  ** Say what a count is counted OVER whenever two are reported side by side. **
 
 THE COUNT OF OPEN PROBLEMS IS RISING, AND THAT IS THE INSTRUMENT WORKING
 
