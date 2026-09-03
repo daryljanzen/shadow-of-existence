@@ -2,6 +2,34 @@
 name: PO13_WORKING_STATE
 description: THE ACOUSTIC-PHASE OFFSET — the worked state of PO-13, held OUTSIDE the corpus. Not a paper, not a register row, not a route into either. Read before touching P15's acoustic sections.
 status: WORKING DOCUMENT — deliberately not a paper
+# ⛔⛭ r3899 — **EVERY CR NUMBER IN THIS FILE IS SUSPENDED: `r3870` FOUND THE k-INTEGRAL TRUNCATED**
+
+***60's `PO-24` step one established that the instrument's $k$-integral was cut off where it is not
+converged, and that this — not the projector alone — was the larger half of the height defect.***
+
+| $k_{\max}$ ($\ell$-equivalent) | 900 | 1300 | 1800 | 2400 |
+|---|---|---|---|---|
+| $P_1/P_2$ | **2.721** | 2.446 | 2.399 | **2.393** |
+| $P_1/P_3$ | **4.497** | 2.974 | 2.791 | **2.768** |
+
+⇒ ***Repaired, the control reproduces CAMB: peaks $220/540/812$ against the sky's $220.6/538.1/809.8$,
+and $P_1/P_2=2.1969$ against CAMB's $2.200$ — $0.14\%$.***
+
+⛔ ***AND `r3870` IS EXPLICIT THAT IT CORRECTED THE CONTROL ARM ONLY***: *"no CR number is produced or
+corrected. **The CR arm is truncated by the same mechanism.**"*
+
+⇒ ***So every CR height figure below — $1.935$, $2.578$, and the $12.7\%$ / $13.2\%$ that go with them —
+was produced at the truncated $k_{\max}$ and is SUSPENDED pending a re-run at `KFAC` converged.*** *The
+positions ($204/508/804$) are not affected by the same mechanism on the control's evidence, but that
+should be confirmed rather than assumed.*
+
+⚠ ***And one claim of mine falls with them.*** *I wrote at `r3869`, into `PO-24`'s register row and the
+`PO-24` handoff, that **"CR with the derived datum beats the control on both ratios, $12.7\%$ and
+$13.2\%$ against $22.7\%$ and $97.5\%$."* **That comparison was against a control number now known to be
+a truncation artefact.** *It compared a truncated CR run to a truncated control run and read the
+difference as physics. Withdrawn until both arms are converged.*
+
+
 # ⛭ r3548 (node 60): DECLARED-UNKNOWN, which is the true statement from this line — nobody
 # here has brought this document current and its position is not known. Written because
 # classifying it (it had gone unclassified since it was added, failing
