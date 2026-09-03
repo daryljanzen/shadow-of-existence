@@ -1,0 +1,79 @@
+HANDOFF FOR 60 -- running the open-ledger pass
+current: r3865
+
+WHAT THE JOB IS
+
+corpus/open_ledger.txt holds every epistemic qualification in the seventeen papers,
+keyed by a hash of the sentence, each with a verdict. The job is to work it ONE ROW
+AT A TIME until every row has been read individually and the corpus says only true
+things about its own state.
+
+Read RUNNING_THE_LEDGER_PASS.md first. It is the instrument, and it is short.
+
+WHERE IT STANDS
+
+  ledger rows              95
+  rows worked individually 16
+  open problems            5   (PO-13, PO-23, PO-24, PO-25, PO-26)
+  known debts              1   (the end-to-end transfer, which is PO-24)
+  gates                    96 pass / 0 fail / 1 unrun
+  papers                   all 17 compile at 0 errors, 0 undefined
+
+Three of those five open problems did not exist this morning. They were not created;
+each was carried in the prose of a paper with no register row, which is why nobody
+could work them and why every node could say "one thing left, PO-13".
+
+THE RULE THAT MATTERS MOST
+
+Everything that reads as unfinished ends the turn in exactly one of three states:
+closable now, so close it; not closable in a turn, so it gets a PO row; or generic
+scientific practice, so REMOVE it. There is no fourth state. Nothing may be swept
+into obscurity, softened, or retitled -- an item that cannot be found again is worse
+than one left open.
+
+And a PO row means all three of: the row in THE_REGISTER.md, and ORDER, GROUP and
+EST entries in scripts/regen_frontier.py. The generator throws if any is missing.
+
+THE METHOD, IN ONE LINE EACH
+
+  1. Read the whole passage, never the row. The row is a pointer.
+  2. Follow every pointer to source -- read the kill file, RUN the receipt.
+     When a register and a paper disagree, the paper governs, but read both.
+  3. When a claim changes, sweep the phrase corpus-wide IN THE SAME TURN.
+  4. Use word-boundary and wrapped-form searches. Exact-string matching failed five
+     times in one session because LaTeX wraps across lines.
+  5. Finish the three dependency grains: the P07 table row, the figure edge label,
+     and the HTML companion via scripts/gen_matrix_html_tbody.py run from corpus/.
+
+WHAT EACH TURN MUST PRODUCE
+
+  the item worked to one of the three classes; all 17 papers compiling; the sweep
+  green; the open ledger settled (rewrites change hashes, so retire dead rows and
+  verdict new ones); a commit saying what was found INCLUDING what was found wrong in
+  your own earlier work; and the tally above, updated.
+
+WHAT KEEPS GOING WRONG
+
+  Triaging instead of working. Reporting "the rest are only comments" as if that
+  settled it -- a comment misleads a node exactly as much as live prose, because a
+  node arrives by grep. Renaming a mess instead of clearing it. Calling a handover a
+  debt. Leaving your own fix stale two revisions later. Stopping at the first
+  plausible answer instead of computing the right object.
+
+  All six of those are mine, from today. They are in the instrument document so they
+  do not get repeated.
+
+WHAT NOT TO USE
+
+  The words "do-not-assert", "[reach]", "walled", "gated", "eager target", "the gate
+  is open", "held at weight", "the two-way grind", "the deferred depth". All were
+  removed from the whole repository -- 2,281 instances -- and the replacements are
+  plain English: "not claimed", "conjecture", "excluded", "awaits", "not yet built".
+
+WHAT COMES AFTER, so it is not lost
+
+  1. this pass -- every row worked, a true PO list delivered
+  2. the synthesis pass -- WHAT_THE_FRAMEWORK_DELIVERS.md, which wants its own
+     instrument, to be built then and not now
+  3. the PO items themselves, worked against a corpus these two passes have made
+     coherent

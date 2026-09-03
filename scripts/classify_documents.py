@@ -85,6 +85,8 @@ STATE = {
     'OPEN_PROBLEMS_MAP.md':                           'the work-clusters and the runway',
     'THE_OPEN_PROBLEMS_LEDGER.md':                    'the seven families and their clue-maps',
     'WHAT_IS_UNFINISHED.md':                          'the one list -- every unfinished item, unfiltered',
+    'RUNNING_THE_LEDGER_PASS.md':                     'the instrument: how to work the open ledger row by row',
+    'HANDOFF_to_60_ledger_pass.txt':                  'the plain-text handoff for 60 to run the ledger pass',
     'THE_BURN_DOWN.md':                               "the register's accounting",
     'THE_WEAVE.md':                                   'the per-paper orchestration grid',
     'ENTRY_POINT_REGISTER.md':                        'what the corpus advertises',
