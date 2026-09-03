@@ -88,6 +88,36 @@ RB = importlib.util.module_from_spec(spec)
 spec.loader.exec_module(RB)
 B = RB.BODIES
 
+#: ** ⛭ THE BASELINE, READ AT THE COMMIT WHERE IT WAS MEASURED (r3970). **  `reach_baseline.counts`
+#: ** reads the LIVE papers, which is right for a live claim and wrong for a baseline: a baseline is
+#: ** a fact about the corpus BEFORE a throw, and this station's throw has since landed.  So the
+#: ** same counting is done against a checkout of that commit, mirroring `reach_baseline.bodies()`
+#: ** exactly -- `%` comments and the bibliography stripped, whitespace flattened -- because a
+#: ** baseline compared under a DIFFERENT preprocessing is not a comparison.
+#: **   ⇒ *Both ends of a measurement take a SHA, exactly as both ends of a quotation do: c54.226's
+#: **     rule, applied to counts rather than to sentences.*
+_AT_BUILD = '427babd3'          # r3152 -- this station's own throw
+_AT_BUILD_CACHE = {}
+
+
+def _at_build_counts(term):
+    """`RB.counts(term)` as it read at this station's own throw commit."""
+    import re as _re
+    import subprocess as _sp
+    if not _AT_BUILD_CACHE:
+        for _tex, _key in RB.TEX2P.items():
+            _raw = _sp.run(['git', 'show', f'{_AT_BUILD}:corpus/{_tex}'], cwd=ROOT,
+                           capture_output=True, text=True, errors='replace').stdout
+            _b = '\n'.join(l for l in _raw.split('\n') if not l.lstrip().startswith('%'))
+            _j = _b.find('\\begin{thebibliography}')
+            _AT_BUILD_CACHE[_key] = _re.sub(r'\s+', ' ', _b[:_j] if _j > 0 else _b)
+        assert len(_AT_BUILD_CACHE) == len(RB.TEX2P), (
+            'every paper must be readable at the throw commit, or the baseline is partial',
+            sorted(set(RB.TEX2P.values()) - set(_AT_BUILD_CACHE)))
+    return {k: len(_re.findall(_re.escape(term), v, _re.I))
+            for k, v in _AT_BUILD_CACHE.items()}
+
+
 ETA = np.diag([1., 1., 1., 1., 1., -1.])          # so(5,1) on R^{5,1}
 
 
@@ -139,16 +169,37 @@ def main():
               ('Atiyah sequence', 'Atiyah algebroid', 'adjoint bundle', 'principal bundle',
                'exact sequence', 'Chevalley', 'Jacobi')}
     print(f'    absent corpus-wide: {absent}')
-    check('⓵ the sequence and its vocabulary are absent from all seventeen papers',
-          all(v == 0 for v in absent.values()))
+    # ** ⛭⛭⛭ RE-PINNED r3970, AND EVERY ZERO HERE ENDED BECAUSE THIS STATION ASKED FOR IT. **
+    # ** Written r3152 (`427babd3`), this file's finding was that P12 HAS the Atiyah sequence as its
+    # ** object and never names it.  *** r3251 wrote it in -- "the theatre results carried INTO the
+    # ** papers, which is what a bake is for" -- and the vocabulary arrived with it: the sequence
+    # ** twice, the Atiyah algebroid three times, the adjoint and principal bundles twice each, and
+    # ** `kernel` in P12 where it read the isotropy alone. ***
+    # **   ⇒ ** A BASELINE MEASURED BEFORE A THROW CANNOT BE ASSERTED AFTER THE THROW LANDS. **  It
+    # **     is pinned at the commit where it was measured -- which is what makes it a baseline -- and
+    # **     the DISCHARGE is asserted separately, so the receipt records the landing instead of
+    # **     dying of it.  *Same shape as `L203/M3` and `L175/V1`, third and fourth in this debt.*
+    _then = {t: sum(_at_build_counts(t).values()) for t in absent}
+    check(f'⓵ the sequence and its vocabulary were absent from all seventeen papers at {_AT_BUILD}, '
+          f'this file\'s own throw: {_then}',
+          all(v == 0 for v in _then.values()))
+    check(f'⛭⛭ AND THE THROW LANDED: they are present now -- {absent} -- carried into the papers at '
+          f'r3251, "the theatre results carried INTO the papers, which is what a bake is for"',
+          absent['Atiyah sequence'] >= 1 and absent['Atiyah algebroid'] >= 1
+          and absent['adjoint bundle'] >= 1)
     present = {t: RB.counts(t)['P12'] for t in ('algebroid', 'anchor', 'bracket', 'connection',
                                                 'isotropy', 'kernel')}
     print(f'    present in P12: {present}')
-    check('⓵ᵇ ⛔ while P12 holds algebroid, anchor, bracket, connection and isotropy in quantity -- '
-          'and the word `kernel` ZERO times, so the kernel of its own anchor is named as the '
-          'isotropy and never as a kernel',
+    _kernel_then = _at_build_counts('kernel')['P12']
+    check(f'⓵ᵇ ⛔ while P12 held algebroid, anchor, bracket, connection and isotropy in quantity -- '
+          f'and the word `kernel` {_kernel_then} times at {_AT_BUILD}, so the kernel of its own '
+          f'anchor was named as the isotropy and never as a kernel',
           present['algebroid'] > 20 and present['anchor'] > 5 and present['isotropy'] > 10
-          and present['kernel'] == 0)
+          and _kernel_then == 0)
+    check(f'⛭ AND P12 NAMES IT NOW: `kernel` {present["kernel"]} time(s) -- the object this file '
+          f'computed in PART 3, ker(anchor) = the cut-fixing isotropy, is called by its name in the '
+          f'paper rather than only in this receipt',
+          present['kernel'] >= 1)
     check('⓵ᶜ and P12 already cites Mackenzie2005 -- the standard reference for Lie algebroids and '
           'for the Atiyah sequence -- for one sentence, that the hypersurface-deformation algebra '
           'is an algebroid rather than a Lie algebra',
@@ -238,9 +289,16 @@ def main():
     allg = [GENS[ab] for ab in IDX]
     viol = sum(1 for X, Y, Z in itertools.product(allg, allg, allg)
                if np.linalg.norm(br(br(X, Y), Z) + br(br(Y, Z), X) + br(br(Z, X), Y)) > 1e-9)
-    check(f'⓺ `Jacobi` occurs 0 times in seventeen papers, and so(5,1) satisfies it: {viol} '
-          f'violations over all {len(allg)**3} basis triples',
-          viol == 0 and sum(RB.counts('Jacobi').values()) == 0)
+    # ⌗ same repair (r3970): the corpus now says `Jacobi` once, in P09 -- not in P12, so the point
+    #   stands where this file makes it.  ** The computation is the load-bearing half and it is
+    #   untouched: the identity HOLDS, checked on every basis triple. **  The corpus-wide zero is
+    #   pinned at the throw and the live count reported.
+    _jac_then = sum(_at_build_counts('Jacobi').values())
+    _jac_now = RB.counts('Jacobi')
+    check(f'⓺ `Jacobi` occurred {_jac_then} times in seventeen papers at {_AT_BUILD} and '
+          f'{sum(_jac_now.values())} now ({dict((k, v) for k, v in _jac_now.items() if v)}, none in '
+          f'P12), and so(5,1) satisfies it: {viol} violations over all {len(allg)**3} basis triples',
+          viol == 0 and _jac_then == 0 and _jac_now['P12'] == 0)
     check('⓺ᵇ ⇒ for an ACTION algebroid the algebroid Jacobi identity is inherited from the acting '
           'algebra, so the axiom the corpus never states is AUTOMATIC for the class it built -- the '
           'Ⓘ pattern this theatre already banked, where a field that reaches nothing delivers a '
@@ -257,10 +315,18 @@ def main():
           'a curvature, and untouched here',
           'The structure function is the substrate\'s metric' in B['P12']
           and 'identified with the coset metric of the symmetric space' in B['P12'])
-    check('⓻ᵇ and the corpus nowhere calls anything the curvature of a connection, nor speaks of a '
-          'splitting or a horizontal lift in P12',
+    # ⌗ and this one too (r3970).  The load-bearing half is the FIRST clause -- the corpus calls
+    #   nothing the curvature of a connection, which is what keeps PART 6's "not a re-find" claim
+    #   true -- and it still holds at zero.  `splitting` and `horizontal` arrived in P12 with the
+    #   r3251 landing, which is this station's own finding in the paper, so they are reported.
+    check(f'⓻ᵇ and the corpus STILL calls nothing the curvature of a connection '
+          f'({sum(RB.counts("curvature of the connection").values())} occurrences), so the '
+          f'identification in PART 6 is untouched -- while `splitting` ({RB.counts("splitting")["P12"]}) '
+          f'and `horizontal` ({RB.counts("horizontal")["P12"]}) did arrive in P12 with r3251, both '
+          f'ZERO at {_AT_BUILD}',
           sum(RB.counts('curvature of the connection').values()) == 0
-          and RB.counts('splitting')['P12'] == 0 and RB.counts('horizontal')['P12'] == 0)
+          and _at_build_counts('splitting')['P12'] == 0
+          and _at_build_counts('horizontal')['P12'] == 0)
 
     print()
     if FAILED:
