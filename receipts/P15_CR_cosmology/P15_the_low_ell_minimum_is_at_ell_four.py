@@ -28,9 +28,11 @@ not."*
     `P15_verify_lowell_boltzmann.py`, whose source is "read through CAMB's exact $\\Delta_\\ell(k)$"
     and which "reproduces CAMB's own $C_\\ell$ to FOUR FIGURES", while
     `P15_the_second_arm_actually_run.py` DRIVES the hierarchy and returns $0.494/0.243/0.184/0.61$.
-    ⇒ *Recorded here with its evidence.  The paper is not edited from this file: the other line's
-      CR arm is suspended and in flight, and one clause in P15's low-multipole block is theirs to
-      correct or Daryl's to route.*
+    ⇒ *Recorded here with its evidence, and the paper is not edited from this file: a receipt
+      states what it measured, and a one-clause attribution fix in P15's low-multipole block is a
+      paper edit made by whoever holds that block.  The measurement above stands either way --
+      both quartets are read from the sentence that states them side by side, so this file is
+      correct under either attribution.*
 
 WHAT PROMPTED IT.  The paper carried two incompatible figures for this depth: the body, abstract,
 results list, scope section and summary said $\\approx0.47/0.41$ at $\\ell=2,3$ "recovering by
@@ -111,10 +113,12 @@ BOL = open(os.path.join(HERE, 'P15_verify_lowell_boltzmann.py'), encoding='utf-8
 # **     and "reproduces CAMB's own $C_\ell$ to FOUR FIGURES"; `P15_the_second_arm_actually_run.py`
 # **     DRIVES the hierarchy and returns 0.494/0.243/0.184/0.61.
 # **       ⇒ *** SO 0.473 IS CAMB AND 0.49 IS THE HIERARCHY, AND THE CAPTION HAS THEM SWAPPED. ***
-# **     ⌗ *This file's original labels were right and are kept.  The paper is NOT edited here: it
-# **       is one clause in P15's low-multipole block, the other line's CR arm is suspended and in
-# **       flight, and a labelling correction there is theirs to make or Daryl's to route.  Recorded
-# **       with its evidence rather than either acted on or dropped.*
+# **     ⌗ *This file's original labels were right and are kept, on the receipts' evidence rather
+# **       than the caption's word.  The paper is NOT edited from here -- a receipt states what it
+# **       measured -- and the finding is recorded with its evidence rather than dropped.  ** The
+# **       measurement is robust to the attribution either way: ** both quartets are read from the
+# **       single sentence that states them side by side, so which label sits on which column does
+# **       not touch what is asserted.*
 # ** ⇒ *** BOTH QUARTETS ARE NOW READ FROM THE ONE SENTENCE THAT STATES THEM SIDE BY SIDE, WITH THE
 # **     PAPER'S OWN ATTRIBUTION, so they cannot silently become the same number again. ***  What is
 # **     asserted is what the paper holds: the same minimum, the same recovery, and depths that
