@@ -90,13 +90,44 @@ def main():
     was = git('show', f'{BEFORE}:corpus/open_ledger.txt')
     check(f'⓵ at {BEFORE} none of the five was in the ledger: '
           f'{[k for k in FIVE if k not in was]}', all(k not in was for k in FIVE))
+    # ** ⛭⛭⛭ RE-PINNED r3962, AND ALL FOUR OF THIS FILE'S REMAINING FAILURES ARE ONE DIAGNOSIS:
+    # ** *** THE CORPUS ACTED ON WHAT THIS RECEIPT FOUND. ***  Two of the five opens were CLOSED --
+    # ** `f36eef9790` at r3803 ("the straddle is a computed fact: build 3 of 3 closed") and
+    # ** `dc0202b02d` at r3811 ("five stale sentences closed, including one in P07's ABSTRACT") --
+    # ** so the gate's scan no longer raises them and there is no row to carry a verdict.  A third,
+    # ** `114e4d9ede`, was RECLASSIFIED NAMED-UNBUILT -> REGISTERED at r3872 on the ledger's own
+    # ** criterion, its home being `PO-23`.
+    #   ⇒ ** A claim leaving the scan because the paper settled it is a STRONGER outcome than the
+    #     verdict this file pinned, and pinning the verdict made the stronger outcome read as a
+    #     failure. **  What is asserted now is the invariant: *each of the five has a recorded
+    #     reading*, which is a live verdict OR a closure -- and WHICH, measured, for each.
+    #   ⌗ This is the same class as `C19` and `L560/P1`, met a third time in one pass (r3962): a
+    #     receipt that argues for a change and pins the unchanged state fails when it succeeds.
     cur = ol.scan()
-    check('⓵ᵇ and all five are qualifications the papers actually hold, by the gate\'s own scan',
-          all(any(i.startswith(k) for i in cur) for k in FIVE))
     led = ol.read_ledger()
     got = {k: next((v[1] for i, v in led.items() if i.startswith(k)), None) for k in FIVE}
-    check(f'⓵ᶜ and each now carries the verdict recorded here: {got}',
-          all(got[k] == FIVE[k][1] for k in FIVE))
+    scanned = {k: any(i.startswith(k) for i in cur) for k in FIVE}
+    closed = sorted(k for k in FIVE if not scanned[k])
+    check(f'⓵ᵇ each of the five is EITHER still a qualification the papers hold, by the gate\'s own '
+          f'scan, OR closed since -- and none is half in: {scanned}',
+          all(scanned[k] == (got[k] is not None) for k in FIVE))
+    # ⌗ the VALUES are not this file's thesis and pinning all three is what broke the old check --
+    #   a verdict is a reviewed judgement and may be revised, as `114e4d9ede`'s was at r3872.  What
+    #   is asserted is that each has one and none is UNVERDICTED; and then, separately and by name,
+    #   the ONE row this file's argument turns on.
+    check(f'⓵ᶜ the three the papers still hold each carry a recorded verdict and none is blank: '
+          f'{ {k: got[k] for k in FIVE if scanned[k]} }',
+          all(got[k] and got[k] != 'UNVERDICTED' for k in FIVE if scanned[k]))
+    check('⓵ᶜᐟ ⛭ and the row this file is ABOUT -- P07\'s "only the ultraviolet definition of the '
+          'mode sums remains open here" -- reads REGISTERED, reclassified from NAMED-UNBUILT at '
+          'r3872 because it has a home, and the home is PO-23',
+          got['114e4d9ede'] == 'REGISTERED'
+          and 'PO-23' in next(v[2] for i, v in led.items() if i.startswith('114e4d9ede')))
+    check(f'⛭ and the other {len(closed)} were CLOSED rather than left unread -- {closed} -- so the '
+          f'scan no longer raises them at all: r3803 computed the straddle and r3811 closed five '
+          f'stale sentences, both AFTER this file named them',
+          closed == ['dc0202b02d', 'f36eef9790']
+          and all(got[k] is None for k in closed))
     unv = [k for k, v in led.items() if v[1] == 'UNVERDICTED']
     check(f'⓵ᵈ and nothing is left UNVERDICTED: {len(unv)}', unv == [])
 
@@ -114,9 +145,21 @@ def main():
           'the shared character of the wall does not settle it' in p7
           and 'a genuine open frontier of the programme' in p7)
     po6 = [l for l in prot.split('\n') if re.match(r'\|\s*~*\*\*PO-6\*\*', l)]
-    check('⓶ᵇ ⛔ and PO-6 is STRUCK with clause ③ reading "THE UV DEFINITION: **MET, NOT OWED**"',
+    # ** ⛭⛭⛭ AND HERE IS THE FINDING BEING ACTED ON, IN THE REGISTER ITSELF (re-pinned r3962). **
+    # ** This file's whole argument is that clause ③ read "THE UV DEFINITION: MET, NOT OWED" while
+    # ** P07 carried the item as a live frontier -- a label doing double duty.  *** r3809 SUPERSEDED
+    # ** the clause and opened `PO-23`, and the register now demotes the old reading to past tense:
+    # ** "⛔ THIS CLAUSE IS SUPERSEDED -- see PO-23, opened r3809.  *It read MET, NOT OWED*". ***
+    #   ⇒ ** Both ends are pinned: the strike stands, and the clause that made it ambiguous no longer
+    #     does.  Re-pinning only the old wording would have asserted the defect as though it were
+    #     still live -- which is the mirror of the mistake this file was written to catch. **
+    check('⓶ᵇ ⛔ PO-6 is STRUCK, and clause ③ is now marked SUPERSEDED with the item rehomed to '
+          'PO-23 (r3809) -- the "MET, NOT OWED" reading this file flagged is stated in the PAST '
+          'tense, as a reading the row once carried',
           len(po6) == 1 and po6[0].lstrip('| ').startswith('~~')
-          and 'THE UV DEFINITION: **MET, NOT OWED**' in po6[0])
+          and 'THIS CLAUSE IS SUPERSEDED' in po6[0] and 'PO-23, opened r3809' in po6[0]
+          and '*It read MET, NOT OWED*' in po6[0]
+          and 'THE UV DEFINITION: **MET, NOT OWED**' not in po6[0])
     # ** the ORDER matters: the strike is the later statement, so it is not superseded prose **
     sent = git('log', '-S', 'the shared character of the wall does not settle it', '--format=%h',
                '--', 'corpus/CR_framework.tex').split()
@@ -139,14 +182,31 @@ def main():
           and 'A generic problem on unusually good terms' in kill)
     p10 = open(os.path.join(ROOT, 'corpus', 'canonical_time.tex'),
                encoding='utf-8', errors='replace').read()
-    check('⓷ᵇ and P10 says the same thing in the same words -- "the standard problem of the '
-          'interacting theory rather than a residual freedom in the quantization" -- so the two '
-          'papers agree and it is the ROW\'s one-word label that reads otherwise',
-          'the standard problem of the interacting theory rather than a residual freedom' in p10)
+    # ** ⛭ RE-PINNED r3962 (moved prose).  P10 said "the standard problem of the interacting theory
+    # ** rather than a residual freedom in the quantization"; it now makes the SAME distinction in
+    # ** other words, and the distinction is the whole of what this check is for. **
+    check('⓷ᵇ and P10 draws the same distinction in its own voice -- what remains open is "the '
+          'ultraviolet definition of the tower sums---a different thing from a residual freedom in '
+          'the quantization at the boundary, and not settled by being shared with every interacting '
+          'field theory" -- so the two papers agree and it is the ROW\'s one-word label that reads '
+          'otherwise',
+          'ultraviolet definition of the tower sums---a different thing from a residual freedom in '
+          'the quantization at the boundary' in re.sub(r'\s+', ' ', p10)
+          and 'shared with every interacting field theory' in re.sub(r'\s+', ' ', p10))
     entry = next(v[2] for i, v in led.items() if i.startswith('114e4d9ede'))
+    # ** ⛭ RE-PINNED r3962, AND THE OLD NOTE WAS RETIRED FOR BEING STALE -- BY NAME, IN THIS ROW. **
+    # ** The entry used to reconcile via PO-6's clause ③ warrant ("MET, NOT OWED" / "CR ADDS NO
+    # ** BURDEN OF ITS OWN").  r3871 marked that warrant SUPERSEDED and r3872 rewrote the note, which
+    # ** says so in terms: *"the strike and this sentence agree", but `kills/PO-6.md` marks that
+    # ** warrant SUPERSEDED r3871 ... the live row is PO-23*.
+    #   ⇒ ** The reconciliation is still written into the ledger, which is what this check is for --
+    #     it is written against the LIVE row instead of the retired warrant. **  Pinning the old
+    #     warrant's words would have re-certified the very reconciliation the corpus withdrew.
     check('⓷ᶜ and the reconciliation is written into the ledger entry rather than left to be '
-          'rediscovered -- which is the whole point of the ledger',
-          'MET, NOT OWED' in entry and 'CR ADDS NO BURDEN OF ITS OWN' in entry)
+          'rediscovered -- now against the LIVE row PO-23, the entry recording that PO-6\'s clause '
+          '③ warrant was superseded at r3871 and naming what replaced it',
+          'PO-23' in entry and 'SUPERSEDED r3871' in entry
+          and 'the live row is PO-23' in entry)
     check('⓷ᵈ ⌗ and nothing is unstruck: PO-6 stays struck, because the reconciliation is that the '
           'strike is RIGHT',
           po6[0].lstrip('| ').startswith('~~'))
@@ -156,13 +216,37 @@ def main():
     print('  ' + '=' * 74)
     print('  PART 4 -- ⌗ AN OWED ITEM THAT IS NOT LOAD-BEARING IS A DIFFERENT DEBT')
     print('  ' + '=' * 74)
-    check('⓸ P10 names the straddle-as-a-computed-fact as open AND says in the same sentence what '
-          'does not turn on it -- "supplied fibre by fibre and so cannot be broken by the size of '
-          'the sub-threshold set"',
-          'not the floor but the straddle itself as a computed fact' in p10
-          and 'supplied fibre by fibre' in p10)
-    e = next(v[2] for i, v in led.items() if i.startswith('f36eef9790'))
-    check('⓸ᵇ and the entry records BOTH halves', 'not load-bearing' in e and 'fibre by fibre' in e)
+    # ** ⛭⛭⛭ AND THIS ONE IS NOT A RE-PIN, BECAUSE THE ITEM IS NO LONGER OWED (r3962). **  This check
+    # ** read that P10 "names the straddle-as-a-computed-fact as OPEN".  *** P10 now COMPUTES it: ***
+    # ** "The straddle itself is now a computed fact\rcpt{P10_the_straddle_is_computed}: the spectrum
+    # ** does occupy both sides of $\tfrac34$" -- $\operatorname{spec}\hat\Gamma=[\gamma,\infty)$ with
+    # ** $\gamma\le\tfrac14<\tfrac34$ below and unboundedness above.
+    #   ⇒ ** Re-pinning would have preserved a sentence that says the opposite of the paper. **  The
+    #     debt-shaped half is REPLACED by the discharge; the load-bearing half -- that the closure does
+    #     not turn on it -- is unchanged and still pinned, and it is the half PART 4 is actually about.
+    #     *An owed item that is not load-bearing is a different debt; an item that has been PAID and is
+    #     not load-bearing is not a debt at all, and the section keeps its point either way.*
+    _p10 = re.sub(r'\s+', ' ', p10)
+    check('⓸ P10 has since SETTLED the straddle -- "The straddle itself is now a computed fact" -- so '
+          'the item PART 4 carried as owed-but-not-load-bearing is now paid',
+          'The straddle itself is now a computed fact' in _p10
+          and 'not the floor but the straddle itself as a computed fact' not in _p10)
+    check('⓸ᵃ ⌗ and the half this section turns on is untouched: the closure "is supplied fibre by '
+          'fibre and so cannot be broken by the size of the sub-threshold set" -- which is why the '
+          'reading held while the item was open and holds now that it is closed',
+          'supplied fibre by fibre and so cannot be broken by the size of the sub-threshold set'
+          in _p10)
+    # ** ⛔ AND THIS ONE DID NOT FAIL, IT CRASHED (repaired r3962). **  `next(...)` with no default
+    # ** raised `StopIteration` when the `f36eef9790` row left the ledger at r3803 -- so PART 5 never
+    # ** ran and the file exited on a traceback instead of a verdict.  *** A lookup that assumes its
+    # ** key still exists turns a closed item into a crash, and a crash reports nothing. ***  The
+    # ** entry is gone because the OPEN is gone: the straddle is computed, ⓸ above measures it in
+    # ** P10's own words, and there is no ledger row left to record two halves of a live debt.
+    e = next((v[2] for i, v in led.items() if i.startswith('f36eef9790')), None)
+    check('⓸ᵇ and the ledger no longer carries a row for it AT ALL -- r3803 closed the item, so the '
+          'entry that recorded "not load-bearing" and "fibre by fibre" was retired with the open it '
+          'described, which is the ledger working rather than the record being lost',
+          e is None and not any(i.startswith('f36eef9790') for i in cur))
     e14 = next(v[2] for i, v in led.items() if i.startswith('988eda39e1'))
     check('⓸ᶜ ⚠ and the P14 entry says in itself that it is a LEDGER verdict on another line\'s '
           'paper, resting on this line\'s own PO-14 work, so it can be overturned in one step',
@@ -176,14 +260,31 @@ def main():
     r = subprocess.run([sys.executable, os.path.join(ROOT, 'corpus', 'check_open_ledger.py')],
                        capture_output=True, text=True, errors='replace', timeout=600)
     check(f'⓹ check_open_ledger exits {r.returncode}', r.returncode == 0)
+    # ** ⛭ RE-PINNED r3962: THE WARN BACKLOG WAS PAID. **  This read `warns >= 1` and said so in
+    # ** terms -- "reported, not repaired ... not this revision's business".  Six entries named
+    # ** sentences no longer in any paper; the gate now reports ZERO.  *** A check that requires a
+    # ** backlog to still exist fails when the backlog is cleared, which is the direction nobody
+    # ** writes a test for. ***  Asserted as a RATCHET in the corpus's own idiom: the count may fall
+    # ** to zero and stay there, and it fails if the backlog GROWS past what this file recorded.
     warns = r.stdout.count('[WARN]')
-    check(f'⓹ᵇ ⌗ and {warns} WARN(s) remain -- ledger entries naming sentences no longer in any '
-          'paper.  *Reported, not repaired: `--rebuild` re-derives them and that is not this '
-          'revision\'s business.*  A gate that passed silently over these would be worse.',
-          warns >= 1 and 'run --rebuild to re-derive' in r.stdout)
-    check('⓹ᶜ and no .tex file is touched by this revision -- the reading is written in the '
-          'ledger, not in the papers',
-          not [f for f in git('diff', '--name-only', BEFORE, 'HEAD').split()
+    #   ⌗ and the bound is the MEASURED value, not a slack one.  `min(warns, 6) == warns` would pass
+    #     at anything up to six and so would notice nothing; ZERO is what the gate reports, so zero
+    #     is what is asserted, and a single WARN returning is a finding worth stopping for.
+    check(f'⓹ᵇ ⌗ {warns} WARN(s) remain -- entries naming sentences no longer in any paper.  This '
+          f'file recorded SIX and routed them rather than rebuilding; the backlog is now PAID, and '
+          f'a WARN reappearing means a paper moved out from under a ledger row again',
+          warns == 0)
+    # ** ⛔ AND THIS ONE COMPARED AGAINST `HEAD`, WHICH IS NOT WHAT IT MEANT (repaired r3962). **
+    # ** "no .tex file is touched by THIS REVISION" is a claim about r3130's own diff.  Written as
+    # ** `BEFORE..HEAD` it silently became a claim about *** every revision that would ever follow
+    # ** ***, and the corpus has edited .tex files on hundreds of them since -- correctly.
+    #   ⇒ ** A check pinned to `HEAD` is pinned to the present, and the present moves. **  That is
+    #     the class `L259_the_distance_from_the_present/D1` is named for, met here in its purest
+    #     form.  The range is now the revision's OWN, end to end, and it cannot drift again.
+    AFTER = 'ae749cb6'          # r3130 -- this revision's own commit
+    check(f'⓹ᶜ and no .tex file was touched by THIS revision ({BEFORE}..{AFTER}) -- the reading was '
+          f'written in the ledger, not in the papers',
+          not [f for f in git('diff', '--name-only', BEFORE, AFTER).split()
                if f.endswith('.tex') and not f.startswith('corpus/appendix_receipts')])
 
     print()

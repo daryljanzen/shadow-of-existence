@@ -108,9 +108,14 @@ def main():
     # the texts, at source
     p5 = re.sub(r'\s+', ' ', open(os.path.join(ROOT, 'corpus', 'groupoid_paper.tex'),
                                   encoding='utf-8', errors='replace').read())
-    check('P5 says "this deck group is equally the Galois group of the horizon cubic, one $S_3$ worn '
-          'as monodromy" -- correct for the CLOSURE and for the monodromy',
-          'this deck group is equally the Galois group of the horizon cubic' in p5)
+    # ** ⛭⛭ RE-PINNED r3962: the pin read "this DECK group is equally the Galois group of the horizon
+    # ** cubic", and r3528 corrected P5 at eighteen sites to "this MONODROMY group" -- the paper calls
+    # ** the deck group TRIVIAL.  A file whose subject is FOUR OBJECTS SHARING ONE WORD was pinned to
+    # ** the sentence in which two of them had been conflated. **
+    check('P5 says "this monodromy group is equally the Galois group of the horizon cubic, one $S_3$ '
+          'worn as monodromy" -- correct for the CLOSURE and for the monodromy',
+          'this monodromy group is equally the Galois group of the horizon cubic' in p5
+          and 'deck group trivial' in p5)
     check('and rem:equianharmonic\'s Z_3 is the deck of the CUBE-ROOT cover -- correct for that cover',
           'equianharmonic' in p5)
 

@@ -129,9 +129,18 @@ def main():
     _p0_then = _at(BEFORE_C54_179, 'corpus/geometric_core_paper.tex')
     check(f'p0 sec:frontiers read "stated as a target, not a result" at {BEFORE_C54_179}',
           'stated as a target, not a result' in _p0_then)
-    check('⛭ AND c54.179 REPLACED IT: "the item has two sides and they now stand differently, so it '
+    # ** ⛭⛭ RE-PINNED r3962: c54.179's replacement went in UNDER a "[Reach: ...]" status stamp, and
+    # ** r3787 removed the stamps -- capitalising the leading word and breaking a pin that quoted the
+    # ** stamped form.  The fragment below is the case-free part of the same sentence. **
+    check('⛭ AND c54.179 REPLACED IT: "item has two sides and they now stand differently, so it '
           'is split rather than carried whole" -- the constant side a result, the datum side open',
-          'the item has two sides and they now stand differently' in p0)
+          'item has two sides and they now stand differently, so it is split rather than carried '
+          'whole' in p0)
+    _p0_at_179 = _at('2af0b0b', 'corpus/geometric_core_paper.tex')
+    check('⇒ and r3787 unstamped it: the paper asserts it directly now rather than under "[Reach: ]"',
+          'The item has two sides' in p0
+          and 'Reach: the item has two sides' in _p0_at_179
+          and 'Reach: the item has two sides' not in p0)
     check('L-201\'s sharp target -- "any constant maximal symmetry does not reach" -- has no room:'
           ' the quotient is 1-dimensional and IS the scale',
           (dim_o51 + 1) - dim_o51 == 1)

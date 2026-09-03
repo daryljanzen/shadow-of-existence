@@ -93,10 +93,22 @@ def main():
     p0_then = _at(BEFORE_C54_179, 'corpus/geometric_core_paper.tex')
     check(f'p0 stated the free-data-count test as a TARGET, not a result, at {BEFORE_C54_179}',
           'Reach: stated as a target, not a result' in p0_then)
-    check('⛭ AND IT NO LONGER DOES: c54.179 split it -- "the item has two sides and they now stand '
+    # ** ⛭⛭ RE-PINNED r3962.  c54.179 wrote this sentence UNDER the status stamp -- "\\textbf{[Reach:
+    # ** the item has two sides ..." -- and r3787 removed the stamps from the papers, which
+    # ** capitalised the now-leading word.  The pin quoted the stamped lowercase and died of a
+    # ** correction to the STAMP, not to the claim.  ⇒ pin the load-bearing fragment, which is
+    # ** case-free, and assert the sentence-initial capital SEPARATELY so the stamp's removal is
+    # ** recorded rather than merely survived. **
+    check('⛭ AND IT NO LONGER DOES: c54.179 split it -- "item has two sides and they now stand '
           'differently", the CONSTANT side carried as a result and the DATUM side still open',
-          'the item has two sides and they now stand differently' in p0
+          'item has two sides and they now stand differently' in p0
           and 'Reach: stated as a target, not a result' not in p0)
+    p0_at_179 = _at('2af0b0b', 'corpus/geometric_core_paper.tex')
+    check('⇒ and r3787 then took the "[Reach: ...]" status stamp off it, so the fragment now opens '
+          'the sentence in the paper\'s own voice: "The item has two sides"',
+          'The item has two sides and they now stand differently' in p0
+          and 'Reach: the item has two sides' in p0_at_179
+          and 'Reach: the item has two sides' not in p0)
     check('and its falsifier is named and sharp',
           'a hidden geometric freedom in the cosmology, or a genuinely free constant where the '
           'reading says it should lock' in p0)
