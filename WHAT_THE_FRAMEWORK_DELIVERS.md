@@ -1,7 +1,7 @@
 ---
 name: what-the-framework-delivers
 kind: REFERENCE
-current: r3740
+current: r3979
 job: The inventory of what Cosmological Relativity delivers, assembled by reading the corpus rather than by counting its typography, so that the one open residual can be weighed against it at their true relative sizes — and so that what the residual actually MEANS is on the record beside how big it is. Read WHEN JUDGING THE PROGRAMME AS A WHOLE — for publication decisions, for a reader's first orientation, or when the open problem has begun to feel larger than it is.
 sources: [chat]
 ---
@@ -809,144 +809,48 @@ than a coherent proposition. A **genuinely external unknown** may stay open at n
 
 ---
 
-# ⛔ §6 · THE ONE OPEN RESIDUAL — *at its true size, and what it actually means*
+# ⛔ §6 · WHAT IS NOT DELIVERED — *the register, at its true size*
 
-> ⛔ ***THE r3560 TEXT OF THIS SECTION IS SUPERSEDED AND ITS NUMBERS ARE WRONG NOW.*** *It reported
-> "position +7%, $P_1/P_2$ +65%, positional parity 4×". **Three revisions between r3735 and r3739 changed
-> the picture fundamentally**, and the old figures are kept nowhere but here, as the record of what moved.*
+> ⛔ ***THIS SECTION HAS BEEN WRONG TWICE AND BOTH VERSIONS ARE RECORDED SO THE SHAPE IS VISIBLE.***
+> *The `r3560` text reported "position $+7\%$, $P_1/P_2$ $+65\%$, positional parity $4\times$" — figures
+> three revisions overturned. The `r3781` text then said **`1 OPEN · 1 STEP LEFT`**, which was true of
+> the generated frontier and false of the corpus: **nine more open problems were carried in the prose of
+> papers with no register row.*** ⇒ ***A count of open problems is only as good as the register it reads,
+> and the register was incomplete.***
 
-**`THE_FRONTIER`, generated from `THE_REGISTER`, reads `1 OPEN · 1 STEP LEFT`.** *That one row is `PO-13`
-— **"the misplaced phase — WHY the propagated comb runs short"**, kind READ.* ⌗ *The other `PO-` numbers
-in the open-problems ledger are struck or retired; the seven "live families" there are a **different
-seven** from the register's rows and the coincidence is misleading. The register is the source.*
+## ⛭ TEN OPEN PROBLEMS — *`THE_FRONTIER`, generated from `THE_REGISTER`, `r3977`*
 
-## ⌗ AND IT IS TWO RESIDUALS, NOT ONE — *which r3560 could not have known and which changes everything*
+*Seven of the ten were opened between `r3809` and `r3969`. **None was created**: each was already stated
+in a paper's own voice with nothing carrying it, which is why nobody could work them.*
 
-### ⛭⛭ THE HEIGHTS — **not a CR defect, established by running the control**
-
-*The height machinery is **shared by both arms**, so r3739 ran the arm whose answer is known. The ΛCDM
-control — validated against CAMB for its transfer —*
-
-| | $P_1/P_2$ | $P_1/P_3$ |
+| | | |
 |---|---|---|
-| the sky | 2.217 | 2.277 |
-| ~~ΛCDM control~~ | ~~2.721 — +22.7%~~ | ~~4.496 — +97.5%~~ |
-| **ΛCDM control, CONVERGED — r3870** | ⛭ **2.197 — −0.9%** | **2.192 — −3.7%** |
-| CR, derived datum | 1.935 | 2.578 — ⚠ *k-truncated, NOT re-measured* |
+| **`PO-13`** | the driving on the geometric rate | *DIAGNOSIS answered — none of the three layers; what remains is one calculation* |
+| **`PO-23`** | the ultraviolet definition of the mode sums | *never attempted; the infrared is regulated for free* |
+| **`PO-24`** | the bespoke transfer | ⛔ ***the one buildable DEBT*** |
+| **`PO-25`** | the charged bead | *no branch point to close through under $Q\neq0$* |
+| **`PO-26`** | the compact-face fermion sector | *the major undertaking any geometric gauge-matter route needs first* |
+| **`PO-27`** | empirical coherence as an independent ground | *the motivation, distinct from the construction* |
+| **`PO-28`** | the adiabatic residual at the largest scales | *characterised, not merely flagged* |
+| **`PO-29`** | the $-M/r^{3}$ attribution | *possibly interpretive by nature, which would close it* |
+| **`PO-30`** | the curve's own dynamics | *the operator is kinematic: it gives the bend, not why a cut bends* |
+| **`PO-31`** | the progenitor spectrum — $\eta$ and the onset | *`P15`'s "genuine frontier"* |
 
-> ⛭⛭⛭ ***THE CONTROL'S DEFECT WAS THE INSTRUMENT'S CONFIGURATION, NOT ITS HEIGHT MACHINERY — `r3870`,
-> which is `PO-24`'s first step and comes out the other way.***
->
-> *The block below says these figures "want re-running, not re-quoting". They have been re-run, and
-> **two faults were compounding, neither of them a defect in the physics**:*
-> · ⛔ ***the $k$-integral was truncated where it is not converged.*** *The instrument built its
->   $k$-grid from `LMAXL` — the grid of multipoles to **print** — so choosing what to report chose
->   where to stop integrating $C_\ell=\int P(k)\Delta_\ell(k)^2\,dk$. Holding the reported $\ell$
->   grid fixed and moving **only** $k_{\max}$: $2.721\to2.446\to2.399\to2.393$.*
-> · ⛭ ***and `los_spectrum` omits the polarisation source*** *that `_project` carries — so the
->   comparison to CAMB was not like for like.*
->
-> ⇒ ***With both fixed the control lands at $P_1/P_2=2.197$ against CAMB's $2.200$ — $0.14\%$ — and
-> peaks $220/540/812$ against the sky's $220.6/538.1/809.8$, converged in $k_{\max}$ and stable to
-> four decimals over a two-fold change in mode count***`\rcpt{C59_the_control_reproduces_camb_and_the_height_defect_was_k_truncation}`***.*** *The instrument is an arbiter and the fork
-> is settled `REPAIR`.*
->
-> ⚠ ***WHAT THIS DOES NOT DO: the CR row is truncated by the same mechanism and has NOT been
-> re-measured.*** *So "CR beats the control on both ratios" — asserted here, and true of the numbers
-> then in hand — is **withdrawn pending that measurement**, not reversed. And r3512's `HIER`
-> composition defect must be settled first: it is a no-op on the control and live on CR.*
+⌗ ***And the families check out***: *every live family of `THE_OPEN_PROBLEMS_LEDGER` has a row, and the
+three rows finer than the family grain are named as such. The test is at the head of `THE_REGISTER`.*
 
-> ⛔⛭ **AND THE CONTROL'S FIGURES ABOVE ARE OPTIMISTIC — `r3745`, after this section was written.**
-> *`LN`, the free-streaming hierarchy depth, was a hardcoded `12` with no override, truncating at
-> $\ell_{\max}=10$. On the control at recombination $P_1$ sits at $k\eta=4.5$ and is resolved, $P_2$ at
-> $10.9$ is not, and $P_3$ at $16.4$ is **well above the truncation**.* ⇒ ***Resolved at `LN=25` the
-> control gives $P_1/P_3=8.009$, not $4.496$: the truncation was UNDER-DAMPING the high-$\ell$ modes and
-> MASKING the deficit, which is a factor $3.5$ rather than $2.0$.***
->
-> ⛔ ***AND THAT `LN` SCAN DOES NOT REPRODUCE — `r3870`.*** *`LN` is genuinely plumbed — the state
-> vector is $7+(LN-1)+1$ wide and the hierarchy loop runs to $LN-2$, both checked — but `LN`$\,=12$
-> and `LN`$\,=25$ give **identical ratios to $10^{-3}$** at every sampling tried. **What that scan
-> was varying did not reach the number it was read on.*** *Every height number in this section
-> was taken at `LN=12`. **The conclusion is unchanged and strengthened** — it is the CONTROL that grows
-> worse — but the high-$\ell$ output is not converged in hierarchy depth and the figures want re-running,
-> not re-quoting.*
->
-> ⌗ *Seven candidates have now been eliminated on the control: $C_\ell$ vs $D_\ell$, the tilt, diffusion
-> damping (**44% remains with it entirely removed**), lensing (**would make it worse**), `DRC` (**already
-> at its optimum**), `DRE` (**load-bearing — zeroing it destroys the comb**), and `LN`. **The positions
-> stay right throughout**, so whatever is missing suppresses $P_3$ without moving the comb.*
+## ⛔ AND THE HEIGHT FIGURES THAT STOOD HERE ARE SUSPENDED
 
-⌗ *The path there is itself the argument. r3735 replaced a coded flag with a **derived** datum — $T$
-evaluated at the phase each mode has actually accrued since **its own** leaf-horizon entry, each mode's
-entry solved from the file's own grid rather than chosen. The combined error went **72.3% → 25.9%**, and
-the error **changed character**: the flat reading had one ratio near-perfect and the other 71% off; the
-derived datum has both near ±13%.* ⌗ *r3737 then corrected r3735's own report — the two errors have
-**opposite signs**, so the odd/even signature is **reduced and not gone** — and killed the obvious
-candidate for the missing $\Psi$: `GSRC`'s premise is false under `LEAFPERT`, where it would apply the
-same correction twice.*
+*This section carried a table putting CR's peak ratios against a $\Lambda$CDM control. **Both arms were
+computed with the $k$-integral truncated where it is not converged** (`r3870`). Repaired, the control
+reproduces CAMB — $P_1/P_2=2.1969$ against $2.200$, $0.14\%$ — but **no CR number has been re-run**, so
+every CR height figure is withdrawn pending a converged pass. `PO13_WORKING_STATE` opens with the
+suspension.*
 
-### ⟐ THE POSITIONS — **the live step, and it is CR's own**
+⇒ ***What survives of the height finding is its shape and not its numbers***: *the defect was **shared by
+both arms** and was therefore never a CR defect — which was the point that section was making, and it
+still stands.*
 
-*Peaks, CR **204 / 508 / 804** against the sky's **220.6 / 538.1 / 809.8**: the third lands, the first two
-run short by **−7.5%** and **−5.6%**. The control gives 220 / 524 / 804.* ⇒ ***This is the residual, it is
-CR's, and it is one READ step in the register.*** ⌗ *The datum work fixed the heights and **did not move
-the comb** — the two residuals are independent, and saying so is what r3735 established.*
-
-## ⌗ AND WHERE THE EVIDENCE PUTS IT
-
-⛔ ***EVERY SINGLE THING THAT MOVED A NUMBER IN THE `PO-13` ARC TURNED OUT TO BE AN INSTRUMENT FACT***,
-*not a framework one:* `SRCSTACK`, `DIFFLEAF`, `PHASEONLY` and `HIER` each **built and unrun**; the
-hierarchy silently ignoring the newest flags; `GSRC` a documented flag nobody had pulled, and then a
-**false premise** under the current default; the diffusion integral on the wrong clock; the control
-failing past $q\ge4$ and then failing the heights outright; an under-sampling guard that had been fired
-past on every run in the thread; and errors of reasoning by the framework node itself, **every one caught
-by running something**.
-
-⇒ ***THE INSTRUMENT HAS NEVER BEEN SHOWN COMPLETE. THE FRAMEWORK HAS NEVER BEEN SHOWN WRONG.***
-
-## ⛭⛭⛭ WHAT THE RESIDUAL ACTUALLY MEANS — *the dependency question, asked and answered*
-
-***How much of the corpus falls if the comb never comes right?*** *Traced through what each result rests
-on:*
-
-| | does it depend on the acoustic comb's positions? |
-|---|---|
-| the **14 theorems** | ⛭ **No — none.** *All are structural: causal, geometric, group-theoretic or index statements. Not one takes a CMB multipole as input* |
-| **light elements** ($Y_p$, $D/H$, ${}^3$He, $\eta_{10}$) | ⛭ **No.** *Computed on the **cooling leg** in `P16`, on the thermal history — a different calculation from the acoustic transfer, sharing no instrument* |
-| **BAO** ($\chi^2/\mathrm{dof}\simeq1$ at any $H_0$) | ⛭ **No.** *A distance–redshift comparison; the comb does not enter* |
-| **the background** ($\Lambda$, $x_0$) | ⛭ **No.** *$x_0$ is measured from $D_M/D_H$, **calibration-free**, and the ruler cancels in it* |
-| **the acoustic SCALE** $\theta_*$ | ⛭ **No.** *The one fitted parameter lands $100\theta_*=1.04109$ and is $H_0$-independent* |
-| the **peak SPACING** and the comb's **existence** | ⛭ **No — reproduced** |
-| **damping physics**, the ~8% signature | ⛭ **No** *(its own open question is the observable, not the comb)* |
-| the **structural recoveries** — GR's family, Carter, SM groups, three generations, the quantum closure | ⛭ **No.** *All upstream of any cosmological datum* |
-| ⟐ **the high-$\ell$ peak POSITIONS in CR's own arm** | ⛔ **Yes. This, and this alone.** |
-
-⛭⛭ ***AND ONE LINK RUNS THE OTHER WAY, WHICH IS EVIDENCE FOR THE INSTRUMENT READING RATHER THAN AGAINST
-IT.*** *`P16` states the two inherited data and what each controls: **$\eta$ fixes the abundances AND the
-CMB peak HEIGHTS**; **$\rho_r/\rho_m$ fixes the peak SPACING** and the acoustic scale. So the heights and
-the abundances are driven by the **same datum**.*
-⇒ ***The abundances come out right — $D/H$ and $Y_p$ within $1\sigma$ at $\eta_{10}=6.14$ against Planck's
-$6.13\pm0.04$. If the height residual were a DATUM error, the abundances computed from that same $\eta$
-would be wrong too, and they are not.*** *So the datum driving the heights is **independently confirmed by
-a calculation that shares no instrument with the transfer** — which is what r3739 then established from
-the other side, by showing the height machinery fails worse on ΛCDM, where the answer is known.*
-⌗ *And the live residual is not on that link at all: $\eta$ drives the **heights**, while the open step is
-the **positions**.*
-
-⇒ ***THE RESIDUAL IS ONE STEP INSIDE ONE INSTRUMENT INSIDE ONE SECTOR, AND NOTHING ELSE IN THE CORPUS
-TAKES ITS OUTPUT AS INPUT.*** *If it closed tomorrow, one row leaves the register and `P15` gains a
-confrontable high-$\ell$ prediction. If it never closes, `P15` carries a named, gradable open edge of
-exactly the kind its own §scope says a paper is entitled to carry — **and every row above stands
-unchanged.***
-
-⛔ ***WHAT WOULD ACTUALLY THREATEN THE FRAMEWORK, SAID PLAINLY SO IT IS NOT CONFUSED WITH THIS.*** *A
-failure in the **vacuum kernel** (the solution family would not be GR's), in the **null-boundary
-correspondence** (collapse would not become cosmology), in the **redshift-isotropy floor** (the forced
-foliation would lose its empirical ground), or a light-element computation that missed. ⇒ **`PO-13` is
-none of these.** It is a phase in a transfer, in the one sector whose instrument the corpus built itself
-and has never claimed was finished.*
-
----
 
 # ⛭⛭⛭ §6b · FRAMEWORK OR INSTRUMENT — *what disqualification would actually cost*
 
