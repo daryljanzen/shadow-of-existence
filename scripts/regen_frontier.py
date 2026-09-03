@@ -44,6 +44,17 @@ EST = {
         '11b0140039 POINTED AT PO-6 SINCE r2581, and PO-6s object is the interacting quantum tower: a classical '
         'dynamics gap routed to a quantum item, which is why nobody could work it. THE ESTIMATE IS A FLOOR, scored '
         'as a build because nothing smaller has been identified, not because a route is known.'),
+    'PO-31': ('the progenitor spectrum -- DERIVE eta AND THE ONSET', 1, 1, 6, None,
+        'r3969: family 3 of THE_OPEN_PROBLEMS_LEDGER, and P15 calls it THE GENUINE FRONTIER as against its '
+        'buildable debts. PO-16 is struck and its own text names this as what stays open beyond the strike, so the '
+        'object was correctly identified and unregistered since r3012. The strike is sound and is why this is a '
+        'frontier rather than a gap: the infall thermalizes four orders above the deuterium bottleneck so the '
+        'progenitors composition is ERASED and the abundances are synthesized in the window, while BARYON NUMBER '
+        'survives because no dissociation destroys it. So eta is inherited because a conservation law protects it '
+        'and the abundances are predicted because none protects them. AND THAT CONSTRAINS THE DERIVATION IN KIND: '
+        'it must reach a CONSERVED CHARGE of the progenitor, not a thermal history. P16 has already excluded one '
+        'mechanism -- the Euclidean action is odd under the standing conjugation so the two branches carry equal '
+        'and opposite action, the balance exact rather than approximate.'),
     'PO-29': ('the -M/r^3 attribution -- FORCED PIVOT OR MASS', 1, 1, 2, None,
         'r3875: P12 attributes the second-order parting term to the forced off-axis pivot rather than to the mass, '
         'and is explicit that this is the perspectival readings interpretive payoff and NOT a claim proven '
@@ -179,12 +190,12 @@ KIND = {'PO-13': 'READ', 'PO-14': 'BUILD', 'PO-15': 'READ', 'PO-16': 'READ',
 
 # ** PO-23 added r3809: the ultraviolet definition of the mode sums, the one part of P07's
 # three-part 'definition of the interacting tower' that is neither settled nor attempted. **
-ORDER = ['PO-13', 'PO-24', 'PO-30', 'PO-25', 'PO-26', 'PO-27', 'PO-28', 'PO-29', 'PO-23', 'PO-15', 'PO-14', 'PO-17', 'PO-18', 'PO-19', 'PO-20']
+ORDER = ['PO-13', 'PO-24', 'PO-30', 'PO-25', 'PO-26', 'PO-27', 'PO-28', 'PO-29', 'PO-31', 'PO-23', 'PO-15', 'PO-14', 'PO-17', 'PO-18', 'PO-19', 'PO-20']
 GROUP = {'PO-13': 'D', 'PO-14': 'A', 'PO-15': 'C', 'PO-16': 'D',
          # ** r3095: the four brought in from p0's frontiers and the field ledgers.  PO-17 and
          # PO-19 are substrate geometry; PO-18 is the constant ledger; PO-20 is analysis. **
          'PO-17': 'E', 'PO-18': 'E', 'PO-19': 'E', 'PO-20': 'E',
-         'PO-23': 'C', 'PO-24': 'D', 'PO-25': 'E', 'PO-26': 'A', 'PO-27': 'A', 'PO-28': 'C', 'PO-29': 'E', 'PO-30': 'A'}
+         'PO-23': 'C', 'PO-24': 'D', 'PO-25': 'E', 'PO-26': 'A', 'PO-27': 'A', 'PO-28': 'C', 'PO-29': 'E', 'PO-31': 'D', 'PO-30': 'A'}
 GNAME = {'A': 'the matter sector', 'B': 'the matter sector', 'C': 'the quantum sector',
          'D': 'the cosmology', 'E': 'the substrate geometry'}
 
