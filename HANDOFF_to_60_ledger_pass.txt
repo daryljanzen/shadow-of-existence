@@ -1,5 +1,5 @@
 HANDOFF FOR 60 -- running the open-ledger pass
-current: r3905
+current: r3908
 (60's line; 59's ledger-pass work runs to r3877 and is merged in)
 
 WHAT THE JOB IS
@@ -14,7 +14,7 @@ Read RUNNING_THE_LEDGER_PASS.md first. It is the instrument, and it is short.
 WHERE IT STANDS
 
   ledger rows              97   (923446d6f3 added r3904 by my own paper edit)
-  rows worked individually 45
+  rows worked individually 46
   open problems            9   (PO-13, PO-23, PO-24, PO-25, PO-26, PO-27, PO-28, PO-29, PO-30)
   known debts              1   (the end-to-end transfer, which is PO-24)
   NAMED-UNBUILT rows       0   (was 1 -- the UV definition, registered to PO-23 at r3872)
@@ -166,7 +166,30 @@ WHAT NOT TO USE
 WHAT COMES AFTER, so it is not lost
 
   1. this pass -- every row worked, a true PO list delivered
-  2. the synthesis pass -- WHAT_THE_FRAMEWORK_DELIVERS.md, which wants its own
+  2. ** THE PIN DEBT: the 62 receipts that FAIL WHERE THEY ARE REGISTERED, worked until
+     they RUN. **  receipts/PIN_DEBT.txt is the census; the nightly `heavy` job on main
+     has failed all 22 of its runs, which is how long this has been reported and unread.
+  3. the synthesis pass -- WHAT_THE_FRAMEWORK_DELIVERS.md, which wants its own
      instrument, to be built then and not now
-  3. the PO items themselves, worked against a corpus these two passes have made
+  4. the PO items themselves, worked against a corpus these two passes have made
      coherent
+
+  ⛭⛭ DARYL DECIDED BOTH OPEN QUESTIONS (r3908), and they are recorded here rather than
+  left in a chat log:
+
+    (a) THE RATCHET: ** WAIT. **  PIN_DEBT.txt gets no downward-only ratchet now.  Deal
+        with the receipts after all the work is done.  ⇒ *So the file stays a MEASUREMENT
+        and the constraint is not invented ahead of the enforcement -- which is what it
+        already says, and now says on his instruction rather than on my judgement.*
+
+    (b) THE ORDER: ** LEDGER PASS FIRST, RECEIPTS AFTER. **  Verbatim: "Keep going an
+        item at a time and when you are done please do add to your queue to work those
+        receipts that fail and ensure they run."
+        ⇒ *So item 2 above is now a QUEUED COMMITMENT and not a suggestion, and "ensure
+        they run" is the standard -- not "explain why they fail".*
+
+  ⛔ AND THE RULE FOR WORKING THEM, CARRIED FORWARD SO IT IS NOT LOST EITHER: do NOT
+  re-pin the 62 mechanically.  A pin whose PROSE moved should be re-pinned to the new
+  sentence; a pin whose THESIS the rewrite killed must not be, and re-pinning it would
+  manufacture a receipt that certifies nothing.  Each needs its paragraph read -- the
+  same rule this pass runs on.
