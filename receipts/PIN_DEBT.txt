@@ -1,4 +1,4 @@
-53
+54
 
 ⛭⛭ WORK STARTED r3938 (node 60), on Daryl's decision at r3908 -- ledger pass first, receipts after,
 and the standard is that they RUN.  ** 5 of 62 repaired; head count above is now 57. **
@@ -83,6 +83,16 @@ corpus, and it is why the newest receipts failed first.
     too (P10_the_straddle_is_computed, P10_the_straddle_does_not_need_a_floor -- both pass).
 
 THE PIN DEBT -- receipts that FAIL WHERE THEY ARE REGISTERED on the current tree.
+
+⛭⛭ RE-MEASURED r3948 BY A COMPLETE RE-RUN, and the head count above is the GATE'S number rather
+than my arithmetic.  621 pass, 73 fail, 5 over timeout, 1046s -- of which ** 19 ENVIRONMENT ** (the
+corrected list: camb, matplotlib, pynucastro) and ** 54 REAL **.
+  ⌗ Against r3890's baseline of 62 real: nine repaired, and 54 remain rather than 53.  The
+    difference is not a repair that failed -- all nine were run to green -- it is that ONE MORE
+    receipt now exceeds the 300s per-receipt timeout (5, was 4), and the gate counts a timeout
+    separately from a failure.  ** So my running subtraction was one ahead of the instrument, and
+    the instrument is what this file now records. **  r3930's rule, applied to this file: report
+    measured numbers, never a derived counter.
 
 ⛭⛭ r3946: THE ENVIRONMENT SPLIT IS CORRECTED AND ONE OF ITS ROWS WAS A REAL FINDING.  The gate's
 declared UNRUNNABLE list named NINE and the run has NINETEEN module failures, so TEN environment

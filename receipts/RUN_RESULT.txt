@@ -1,24 +1,14 @@
 
   RUN-ALL-RECEIPTS -- 699 registered receipt(s), 4 at a time, 300s each, each from ITS OWN DIRECTORY
-  TREE-DIGEST: dc705eed5db78dbe
+  TREE-DIGEST: 35bae297e2ecd27a
 
-    [FAIL] receipts/L165_defining_the_sum/S4_the_open_half_is_the_floor.py  (0s)
-               OK    so the boundedness question is about COMPLETION, not sign -- and P10 states the leading-order spectrum as "bounded below by $\gamma$ and unbounded above" /     OK    ⌗ and the commutation is structural, not perturbative: "As $\hat\Gamma$ commutes with the radial part, $-\partial_x^2+\hat\G
-    [FAIL] receipts/L165_interacting_tower/D1_the_boundary_is_per_fibre_and_the_UV_is_over_fibres.py  (0s)
-               OK    ⛭ ⇒ THE CLAUSE THAT WAS ANSWERED IS THE ONE THE CONSTRUCTION DOES NOT NEED /     OK    and the two that remain are named in the row: the UV definition of the tower sums, and the closed-form nonlinear Lambda>0 solution /   1 check(s) FAILED
-    [FAIL] receipts/L165_interacting_tower/D2_the_UV_degree_is_quartic_and_the_IR_is_free.py  (1s)
-               OK    while the UV degree is the generic one -- so the compactness buys the IR and not the UV /     FAIL  P10 asserted the remaining difficulty is "the standard problem of the interacting theory" -- now measured rather than characterised /   1 check(s) FAILED
-    [FAIL] receipts/L165_interacting_tower/S10_the_halves_meet_at_the_shear.py  (1s)
+    [FAIL] receipts/L165_interacting_tower/S10_the_halves_meet_at_the_shear.py  (0s)
                FAIL  ⛭⛭ ⓶ and P10 names the tower: "the transverse-traceless graviton modes form a discrete tower that deparametrizes to a unitary evolution in cosmic time" /     OK    and again as the propagating sector: "the transverse-traceless graviton tower, advanced unitarily in cosmic time" /   1 check(
-    [FAIL] receipts/L165_interacting_tower/S11_the_ordering_question_dissolves.py  (0s)
-               OK    ⓸ and the COUPLED case is answered in the same sentence: with the tower coupled "the same thermal regularity supplies the condition fibre by fibre" /     FAIL  so that "what remains open is not the boundary condition but the definition of the interacting tower---the standard problem of the
-    [FAIL] receipts/L165_interacting_tower/S12_the_boundaries_coincide.py  (1s)
-               OK    ⛭⛭ ⓶ and P10 names the propagating sector "the transverse-traceless graviton tower" -- so the tower IS shear, and an FRW layer is shear-free by construction /     FAIL  ⛭⛭⛭ ⓷ while P10 also names it as what remains open: "the definition of the interacting tower---the standard problem of th
     [FAIL] receipts/L174_general_matter_dynamics/I3_the_identification_is_general_and_the_shear_count_is_the_gap.py  (1s)
                OK    ⇒ so with ONE shear function there is one trade against R3; with FIVE there is a five-dimensional space of configurations at fixed rho and theta /     OK    ⇒⇒ AND NOTHING IN THE IDENTITY SAYS WHICH OF THEM A BEND CAN BE -- that selection is the interior of the stratum, and it is DARK /   
     [FAIL] receipts/L175_dimensional_descent/V1_the_variational_ledgers_premise_is_false.py  (0s)
                OK    and the Hamiltonian apparatus is large: constraint 181, lapse 649, Hamiltonian 104 /     FAIL  ⇒⇒ SO IT IS NOT AN ABSENCE -- the corpus performs variational work and names the field nowhere, which is the arrival-path shape at its largest scale /   3 check(s) FAILED
-    [FAIL] receipts/L200_free_data_count/U1_the_count_as_the_corpus_now_states_it.py  (5s)
+    [FAIL] receipts/L200_free_data_count/U1_the_count_as_the_corpus_now_states_it.py  (0s)
                OK    the retired ledger closed the gravitational-quantum sector at ZERO free constants /     OK    and recorded the matter-side count as OPEN -- which is what has since moved /   1 check(s) FAILED
     [FAIL] receipts/L200_free_data_count/U3_the_residue_is_one_and_it_is_already_counted.py  (0s)
                FAIL  ⛭ AND c54.179 REPLACED IT: "the item has two sides and they now stand differently, so it is split rather than carried whole" -- the constant side a result, the datum side open /     OK    L-201's sharp target -- "any constant maximal symmetry does not reach" -- has no room: the quotient is
@@ -42,27 +32,29 @@
                OK    and returns to the identity at winding 3, so it generates a $\mathbb{Z}_3$ /     OK    while its curvature vanishes identically: $F_{r\varphi} = \partial_r A_\varphi - \partial_\varphi A_r = 0$, and $A\wedge A=0$ (a 1-form wedged with itself) /   1 check(s) FAILED
     [FAIL] receipts/L221_the_bridge/B17_the_paper_already_walls_two_routes.py  (0s)
                OK    ⓷ and the verdict is sharper than "open": "the position is not that the coupling is unbuilt but that a coupling is not the kind of thing a holonomy supplies" /     FAIL  ⇒⇒ ⓸ with the residue named exactly: "the isometry route is walled separately, and the honest statement is that no third
+    [FAIL] receipts/L221_the_bridge/B66_po5s_route_is_gated_on_po11.py  (0s)
+               OK    ⇒ ** and the register did not record the PO-5 → PO-11 link before this receipt ** -- at 465ebef05a^ the PO-5 row read as gated on nothing /     OK    ⇒ ⛭ AND IT DOES NOW, which is this receipt landing rather than this receipt breaking: PO-5 is gated on ['PO-11'] in the live register /   1 
     [FAIL] receipts/L221_the_bridge/B7_two_unbuilt_sectors_not_one.py  (0s)
                FAIL  while the propagating sector is unbuilt because the delivered modes are BOUND -- p0: "the built modes being leaf-bound" /     OK    ⌗ and the ledger now carries it as NAMED-UNBUILT again, with the correction recorded /   2 check(s) FAILED
-    [FAIL] receipts/L251_the_numbering_collides/N1_two_lines_numbering_from_one_counter_and_a_paper_narrating_its_own_history.py  (24s)
+    [FAIL] receipts/L251_the_numbering_collides/N1_two_lines_numbering_from_one_counter_and_a_paper_narrating_its_own_history.py  (35s)
                - ⓹ the band is PARITY and this line takes the even half -- the cheapest band that keeps the chronological reading a range-band would destroy /     - ⓹ᵇ and it is PREVENTION: it reads this line's own unmerged commits, which are the only ones whose numbers can still be changed -- no upstream out 
-    [FAIL] receipts/L253_the_seed_that_stopped_seeding/S1_a_seed_that_stops_constructing_its_defect_accuses_the_gate_it_defends.py  (45s)
+    [FAIL] receipts/L253_the_seed_that_stopped_seeding/S1_a_seed_that_stops_constructing_its_defect_accuses_the_gate_it_defends.py  (52s)
                OK    ⓻ᵇ and the head is corrected in place and says why, rather than being quietly restated /   1 check(s) FAILED /     -    ⓹ᶜ R1_the_registry_was_checked_from_citations_inward_so exits 1
-    [FAIL] receipts/L255_the_exemption_was_a_claim/E1_an_exemption_is_a_claim_and_all_three_were_false.py  (69s)
+    [FAIL] receipts/L255_the_exemption_was_a_claim/E1_an_exemption_is_a_claim_and_all_three_were_false.py  (95s)
                OK    ⓺ᵈ and the gate is green: exits 0 /   1 check(s) FAILED /     - ⛔ ⓷ *** AND ALL THREE NOW EXIT 0 AFTER r3125 PINNED BOTH ENDS: {'R1_a_protected_row_was_corrupt_for': 0, 'M1_the_merge_of_my_own_revision_du': 0, 'R1_
-    [FAIL] receipts/L256_the_band_taken/B1_a_finding_that_routes_its_own_remedy_and_then_recurs_is_not_waiting.py  (9s)
+    [FAIL] receipts/L256_the_band_taken/B1_a_finding_that_routes_its_own_remedy_and_then_recurs_is_not_waiting.py  (14s)
                - ⓸ᵇ and this tree is in band: no upstream violation(s) /     - ⓸ᵈ and the parity is RESTORED -- verified, not trusted to the `finally` /     - ⓹ the one grandfathered id is NAMED, not dated: a cutoff silently absorbs everything behind it.  ['r3125', 'r3535', 'r3537']
-    [FAIL] receipts/L257_the_label_did_double_duty/V1_a_strike_that_reads_as_done_and_a_paper_that_says_otherwise.py  (1s)
+    [FAIL] receipts/L257_the_label_did_double_duty/V1_a_strike_that_reads_as_done_and_a_paper_that_says_otherwise.py  (2s)
                e = next(v[2] for i, v in led.items() if i.startswith('f36eef9790')) /         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ / StopIteration
-    [FAIL] receipts/L258_the_pin_and_the_thing_that_moves/M1_five_checks_pinned_to_things_that_move_and_one_that_no_control_could_separate.py  (4s)
-             2 check(s) FAILED /     - ⓸ P1 exits 1 /     - ⓹ ⌗ and NO paper is edited by this revision: ['corpus/BH_causality_v2.tex', 'corpus/CR_cosmology.tex', 'corpus/CR_framework.tex', 'corpus/SdS-slicing-
-    [FAIL] receipts/L259_the_distance_from_the_present/D1_a_check_pinned_to_a_distance_from_the_present_is_pinned_to_the_present.py  (23s)
+    [FAIL] receipts/L258_the_pin_and_the_thing_that_moves/M1_five_checks_pinned_to_things_that_move_and_one_that_no_control_could_separate.py  (6s)
+               - ⓸ B66 exits 1 /     - ⓸ P1 exits 1 /     - ⓹ ⌗ and NO paper is edited by this revision: ['corpus/BH_causality_v2.tex', 'corpus/CR_cosmology.tex', 'corpus/CR_framework.tex', 'corpus/SdS-slicing-
+    [FAIL] receipts/L259_the_distance_from_the_present/D1_a_check_pinned_to_a_distance_from_the_present_is_pinned_to_the_present.py  (37s)
                OK    ⓸ᵇ and with it back the receipt exits 1 -- so the repair is what makes it green, not the tree happening to sit at a convenient revision /   1 check(s) FAILED /     - ⓷ᶜ and `B1` exits 1
     [FAIL] receipts/L260_half_a_partition/H1_half_a_partition_removes_nothing_and_the_gate_said_otherwise_while_eight_landed.py  (1s)
                assert v is not None, 'the sandbox has no upstream ref -- nothing was measured' /            ^^^^^^^^^^^^^ / AssertionError: the sandbox has no upstream ref -- nothing was measured
-    [FAIL] receipts/L261_the_question_was_answered/A1_a_check_on_whether_a_question_is_still_open_punishes_the_answer.py  (9s)
+    [FAIL] receipts/L261_the_question_was_answered/A1_a_check_on_whether_a_question_is_still_open_punishes_the_answer.py  (15s)
              2 check(s) FAILED /     - ⓷ᵇ and both exit 0 /     - ⓸ SEEDED: with the answer removed the gate says "PROPOSAL, NOT A PREVENTION"; with it restored it says the prevention is real -- so the replacement ch
-    [FAIL] receipts/L262_half_a_family/F1_a_table_that_covers_half_a_family_fails_on_the_rest_of_it_later.py  (146s)
+    [FAIL] receipts/L262_half_a_family/F1_a_table_that_covers_half_a_family_fails_on_the_rest_of_it_later.py  (192s)
                - ⓹ S1_a_seed_that_stops_constructing_its_defect_a exits 1 /     - ⓹ E1_an_exemption_is_a_claim_and_all_three_were_ exits 1 /     - ⓹ R1_the_registry_was_checked_from_citations_inw exits 1
     [FAIL] receipts/L263_the_station_audit/S1_three_of_eight_stations_are_already_held_and_one_was_noticed_and_not_propagated.py  (1s)
                OK    ⓸ᵈ and `permutation representation` ×1 reads as an opening and is P14 citing the discrete-flavour literature, not an index statement /   1 check(s) FAILED /     - ⓷ᵇ ⛔ Ⓗ is genuinely owed and its baseline is SHARPER than the theatre states: the corpus asserts a graded index and cites Atiya
@@ -76,9 +68,9 @@
                OK    ⓸ᵈ ⌗ and nothing about the FINDING moved: the checks that establish the three held stations read the PAPERS, which this revision does not touch /   1 check(s) FAILED /     - ⓸ᶜ and L-263/S1 exits 1
     [FAIL] receipts/L270_the_table_that_carried_its_next_failure/V1_a_translation_table_validated_only_against_what_it_was_asked_to_render.py  (1s)
                - ⓹ᶜ it reports its population every run and FAILS on an empty survey, because a survey that read nothing is green forever /     - ⓹ᵈ and it carries a CONTROL that fires every run -- an unknown glyph refused, a known one accepted -- so an import that silently stopped refusing coul /     - ⓹ᵉ SEE
-    [FAIL] receipts/L272_the_survey_that_was_a_memory/F1_the_outstanding_bake_list_was_surveyed_once_and_three_passes_were_needed_to_trust_it.py  (22s)
+    [FAIL] receipts/L272_the_survey_that_was_a_memory/F1_the_outstanding_bake_list_was_surveyed_once_and_three_passes_were_needed_to_trust_it.py  (28s)
                print(f'      loose #1: {loose[0][0]} ×{loose[0][1]}      word-bounded #1: ' /                              ~~~~~^^^ / IndexError: list index out of range
-    [FAIL] receipts/L275_the_functional_analysis_bake/U1_the_field_bounces_and_the_corpus_asks_its_self_adjointness_question_at_one_boundary_only.py  (2s)
+    [FAIL] receipts/L275_the_functional_analysis_bake/U1_the_field_bounces_and_the_corpus_asks_its_self_adjointness_question_at_one_boundary_only.py  (3s)
                OK    ⓹ᵇ ⛭ so the shared 3/4 is a coincidence, and recording that now costs nothing where later it would cost a retraction -- which is L-264's own lesson, applied before rather than after /   1 check(s) FAILED /     - ⓷ `essentially self-adjoint` is still P10's alone, while `limit-circle` has si
     [FAIL] receipts/L276_the_representation_theory_probe/R1_a_clause_that_outruns_its_own_premise_and_the_counterexample_is_the_papers_own_grading.py  (0s)
              2 check(s) FAILED /     - ⓷ the clause as written is unqualified: "no character count on a finite group can produce three" /     - ⓹ the repair carries the premise into the clause — "no count by a {±1}-valued character can produce three": that form is TRUE, the unqualified form is FALSE, an
@@ -88,28 +80,20 @@
                OK    ⛭ SCOPE CONTROL: the exponential belongs to the SIMPLE root -- as M -> Nariai (0.1924501) both surface gravities go to zero: 0.12000->(1.56031,0.67895), 0.19000->(0.17049,0.15067), 0.19240->(0.02302,0.02262), 0.19245->(0.00097,0.00097) /     OK       ⇒ nothing here is claimed at a double r
     [FAIL] receipts/L550_third_mechanism/M1_the_third_mechanism_is_bounded_and_the_bound_is_two_sentences_earlier.py  (0s)
                i_dim, i_res = p14.index(dim), p14.index(residue) /                                    ^^^^^^^^^^^^^^^^^^ / ValueError: substring not found
-    [FAIL] receipts/L556_registry_from_rows/R1_the_registry_was_checked_from_citations_inward_so_twenty_rows_were_read_by_nothing.py  (22s)
+    [FAIL] receipts/L556_registry_from_rows/R1_the_registry_was_checked_from_citations_inward_so_twenty_rows_were_read_by_nothing.py  (20s)
                OK    ⛔ A SEED LEFT IN A LIVE RECEIPT SINCE r2682+c54.212 -- MY OWN HAND -- landed at 962a9390 and has failed P16's monodromy receipt for ~90 commits, absorbed into the failure list and triaged by nobody as a SEED /     OK    ⇒ REMOVED, and restored to the r2682^ text: c54.213's rule was "VERIFY
     [FAIL] receipts/L560_pins_into_moving_prose/P1_the_last_five_failures_were_pins_into_prose_that_later_correct_work_moved.py  (1s)
                OK    ⚠ at 50f0d3f (c54.226) this file did NOT read whether the CONTENT survives under other words: W1 stated the count and said so in terms, routed rather than interpreted /     OK    ⛭ AND c54.228 (`L-561`) ANSWERED IT -- against this fork: the probe compared STRINGS where the question was abo
     [FAIL] receipts/L803_station9_neff/S1_the_cosmology_sector_rests_on_neff_and_never_names_it.py  (0s)
              File "/home/user/shadow-of-existence/receipts/L803_station9_neff/S1_the_cosmology_sector_rests_on_neff_and_never_names_it.py", line 121, in camb_derived /     import camb / ModuleNotFoundError: No module named 'camb'
-    [FAIL] receipts/L804_isocurvature_bound/S1_the_adiabatic_premise_is_what_the_data_demands.py  (1s)
+    [FAIL] receipts/L804_isocurvature_bound/S1_the_adiabatic_premise_is_what_the_data_demands.py  (2s)
              File "/home/user/shadow-of-existence/receipts/L804_isocurvature_bound/S1_the_adiabatic_premise_is_what_the_data_demands.py", line 81, in tt_spectrum /     import camb / ModuleNotFoundError: No module named 'camb'
-    [FAIL] receipts/L_numerics/Q1_a_stated_tolerance_is_a_request_and_the_corpus_answers_it.py  (71s)
-           ============================================================================== /   VERDICT: 1 CHECK(S) FAILED /     and the number that verify one
-    [FAIL] receipts/L_probability/R1_the_whole_footprint_is_three_geometry_words.py  (1s)
-           ============================================================================== /   VERDICT: 1 CHECK(S) FAILED /     every one of the field's core terms is absent
     [FAIL] receipts/P03_SdS_slicing/P03_the_U3_figure.py  (0s)
              File "/home/user/shadow-of-existence/receipts/P03_SdS_slicing/P03_the_U3_figure.py", line 49, in <module> /     import matplotlib / ModuleNotFoundError: No module named 'matplotlib'
     [FAIL] receipts/P03_SdS_slicing/P03_the_turnaround_figure.py  (1s)
              File "/home/user/shadow-of-existence/receipts/P03_SdS_slicing/P03_the_turnaround_figure.py", line 48, in <module> /     import matplotlib / ModuleNotFoundError: No module named 'matplotlib'
-    [FAIL] receipts/P07_CR_framework/I7_conserved_charge_carries_three_objects_and_one_denies_the_others.py  (0s)
-               sense C -- a conserved quantum number /     the two offsets, pinned /     so the separation is 173414 characters -- a reader meets them separately
     [FAIL] receipts/P12_algebroid/A4_the_ledger_seven_swept.py  (0s)
                phrase.lower() in led[hid][1].lower() and phrase.lower() in po[tag].lower()) /                       ~~~^^^^^ / KeyError: 'b2d1f4a62a'
-    [FAIL] receipts/P14_matter_sector_paper/D2_index_carries_three_senses_inside_one_paper.py  (0s)
-             VERDICT: 2 CHECK(S) FAILED /     the corpus-wide count of `index`/`indexes`, generated block excluded /     P14 carried 51 of them before this bake's own D1 clause, and 55 after
     [FAIL] receipts/P15_CR_cosmology/BUILD_camb_store.py  (0s)
              File "/home/user/shadow-of-existence/receipts/P15_CR_cosmology/BUILD_camb_store.py", line 27, in <module> /     import camb / ModuleNotFoundError: No module named 'camb'
     [FAIL] receipts/P15_CR_cosmology/C14_po12_gates_po10.py  (0s)
@@ -158,7 +142,7 @@
                assert 1.10 < sum(sp)/4 < 1.35 /            ^^^^^^^^^^^^^^^^^^^^^^^ / AssertionError
     [FAIL] receipts/P15_CR_cosmology/P15_verify_lowell_boltzmann.py  (0s)
              File "/home/user/shadow-of-existence/receipts/P15_CR_cosmology/P15_verify_lowell_boltzmann.py", line 15, in <module> /     import numpy as np, camb / ModuleNotFoundError: No module named 'camb'
-    [FAIL] receipts/P16_cosmogenesis_paper/P16_the_adiabatic_premise_is_demanded_by_the_data_and_inherited_by_the_construction.py  (1s)
+    [FAIL] receipts/P16_cosmogenesis_paper/P16_the_adiabatic_premise_is_demanded_by_the_data_and_inherited_by_the_construction.py  (2s)
                import camb                                                                # noqa: E402 /     ^^^^^^^^^^^ / ModuleNotFoundError: No module named 'camb'
     [FAIL] receipts/P16_cosmogenesis_paper/P16_theory_error_and_likelihood.py  (1s)
              File "/home/user/shadow-of-existence/receipts/P16_cosmogenesis_paper/bbn_network.py", line 48, in <module> /     import pynucastro as pyna / ModuleNotFoundError: No module named 'pynucastro'
@@ -166,10 +150,11 @@
              File "/home/user/shadow-of-existence/receipts/P16_cosmogenesis_paper/bbn_network.py", line 48, in <module> /     import pynucastro as pyna / ModuleNotFoundError: No module named 'pynucastro'
     [slow] receipts/L273_the_cartan_bake/C1_the_weyl_closure_is_generic_to_cubics_and_the_match_is_D3_alone.py  -- exceeded 300s
     [slow] receipts/L274_the_harmonic_bake/H1_the_low_multipole_deficit_is_two_effects_and_the_ladder_imprint_dies_where_the_transfer_is_narrow.py  -- exceeded 300s
+    [slow] receipts/L_numerics/Q1_a_stated_tolerance_is_a_request_and_the_corpus_answers_it.py  -- exceeded 300s
     [slow] receipts/P15_CR_cosmology/C59_the_control_reproduces_camb_and_the_height_defect_was_k_truncation.py  -- exceeded 300s
     [slow] receipts/P15_CR_cosmology/P15_the_driving_is_bought_by_decay_during_oscillation.py  -- exceeded 300s
 
-  614 pass, 81 fail, 4 over timeout, in 958s wall
-  slowest that passed: I50_the_carter_constant_is_the_substrates_symmetry_and_kerrs_is_not.py 238s, A1_a_rule_made_of_spellings_misses_the_next_spelling.py 133s, Q1_the_degeneracy_is_conformal_flatness_not_maximal_symmetry_so_no_scale_factor_can_break_it.py 102s, R50_the_long_wavelength_bullet_reverses_for_the_observable_and_the_corner_is_three_parts_per_million.py 97s, P15_the_second_arm_actually_run.py 92s
+  621 pass, 73 fail, 5 over timeout, in 1046s wall
+  slowest that passed: I50_the_carter_constant_is_the_substrates_symmetry_and_kerrs_is_not.py 277s, A1_a_rule_made_of_spellings_misses_the_next_spelling.py 134s, Q1_the_degeneracy_is_conformal_flatness_not_maximal_symmetry_so_no_scale_factor_can_break_it.py 123s, P15_the_collapse_leg_is_scale_invariant.py 101s, R50_the_long_wavelength_bullet_reverses_for_the_observable_and_the_corner_is_three_parts_per_million.py 94s
 
   ⛔ A REGISTERED RECEIPT THAT DOES NOT RUN WHERE IT IS REGISTERED IS NOT A RECEIPT.
