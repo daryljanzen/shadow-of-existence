@@ -1,0 +1,113 @@
+BUILD REQUEST FOR 60 -- PO-24, the bespoke transfer
+current: r3869
+
+READ FIRST: RUNNING_THE_LEDGER_PASS.md, and PO-24's row in THE_REGISTER.md.
+
+WHAT IS OWED
+
+P15 names it in its own voice: "not a missing idea but a computation this sequence
+owes and has not yet run, and the paper's own open edge rather than another's." It is
+the end-to-end branch-point-to-recombination transfer that would carry the
+single-phase datum all the way through and confirm the height pattern digit by digit.
+
+Its own receipt names the gap. C22, titled THE END-TO-END NUMBER, reaches both ends --
+low-ell (a 7.5% power deficit from the absent early ISW) and high-ell (0.843 at l_D
+falling to 0.459 at 2 l_D) -- and states that BETWEEN them, at the acoustic peaks, the
+chain does not reach, because Phi decays by order two there and the decay is
+k-dependent through k^2/3H.
+
+DO NOT START WITH THE BUILD. START WITH THE CONTROL.
+
+The instrument is computations/beyond_the_wall/ACOUSTIC_two_arm.py, 1195 lines. It
+carries a proper line-of-sight Boltzmann integral:
+
+  Delta_l(k) = INT S(k,eta) j_l(k(eta_0 - eta)) d(eta)
+  S = g (Theta_0 + Psi) + e^-tau (Phi' + Psi') + (1/k^2) d/d(eta) [g theta_b]
+
+Run on the LambdaCDM arm, whose answer is known and whose transfer is validated
+against CAMB, it gets the POSITIONS right and the HEIGHTS wrong:
+
+  arm                      l1    l2    l3    P1/P2   err      P1/P3   err
+  LambdaCDM control        220   524   804   2.721   22.7%    4.496   97.5%
+  CR, CRAMP=entry          204   508   804   1.935   12.7%    2.578   13.2%
+  THE SKY                  220.6 538.1 809.8 2.217            2.277
+
+So the defect is isolated to the height machinery, it is SHARED by both arms, and it
+is not a CR defect. CR with the derived datum actually beats the control on both
+ratios. An instrument that cannot reproduce a spectrum whose answer is known cannot be
+trusted about one that is not.
+
+FIRST STEP: make the LambdaCDM control reproduce CAMB's heights. It is bounded, it is
+checkable, and there is a right answer to check against -- CAMB gives P1/P2 = 2.200
+against the sky's 2.2564 +- 0.0772.
+
+WHAT I CHECKED IN THE FILE, INCLUDING A LEAD OF MINE THAT IS ALREADY CLOSED
+
+  1. I was going to send you after the Doppler term. DO NOT GO. The instrument's
+     comment reads "THE DOPPLER TERM CARRIES 1/k^2 AND NOT 1/k, and the difference is
+     a derivation rather than a tuning", and the term IS implemented at 1/k^2. That
+     comment records a fix already made, not a live bug. I nearly handed you a closed
+     lead by reading the warning as a defect.
+
+  2. There are TWO projection paths in the file, and they are not the same physics.
+     los_spectrum carries S = g(Theta_0+Psi) + e^-tau(Phi'+Psi') + (1/k^2) d[g theta_b].
+     _project carries the POLARISATION source terms as well:
+       S = g(Theta_0 + Psi + Pi/4) + e^-tau(Phi'+Psi') + (1/k^2) d[g theta_b]
+           + (3/4k^2) d^2[g Pi],   Pi = (F_2 + G_0 + G_2)/4
+     and its own comment says "the last two terms are what an exp(-k^2/k_D^2) envelope
+     cannot supply at any coefficient". FIRST THING TO ESTABLISH: which path produced
+     the 2.721 control number. If it was los_spectrum, the missing polarisation source
+     is a candidate for the height failure on its own, and the comparison to CAMB was
+     not like for like. I did not determine this and you should not assume it.
+
+  3. A sampling guard was being run past. The control refuses to report below
+     NK ~ 210 -- "UNDER-SAMPLED; the projected peaks would be aliasing, and the source
+     comb would stay correct while they did it" -- and every CR run before r3745 used
+     NK=90. Confirm every number you quote is above the guard.
+
+A FORK -- SETTLE IT EARLY RATHER THAN LATE
+
+Repair ACOUSTIC_two_arm, or write the transfer fresh against the specification.
+Repair is right if the height failure is a term-level or wrong-projector bug, which
+lead 2 makes the live candidate.
+Fresh is right if the two-arm architecture cannot carry it. Nobody has determined
+which, and the control run settles it. Say which you chose and why.
+
+THEN THE BUILD ITSELF
+
+It requires first SPECIFYING HOW THE FLUCTUATIONS GRAVITATE on the geometrically fixed
+background -- the piece that sets the high-ell driving envelope. Standard Boltzmann
+codes cannot supply this: they tie radiation's gravity to its presence and so cannot
+represent the content-not-rate split the layered rate rests on. That specification is
+the actual content of the build and it does not exist yet.
+
+The pieces you are joining DO exist and are receipted:
+  - collapse leg, closed form: Psi = 3 Psi_i (sin x - x cos x)/x^3, x = k eta/sqrt3,
+    even in x; Theta-hat = Theta_0 + Psi removes the source exactly
+  - expanding leg: Phi = C_1 + C_2/eta^5, growing mode constant (C11_early_isw)
+  - the join: Phi -> Phi_i at the branch point for every k, giving
+    Phi_exp = (9/10) Phi_i scale-invariantly (C21_the_superhorizon_transfer_closes)
+
+DO NOT CONFUSE THE TWO INSTRUMENTS
+
+PO-10's strike put LambdaCDM at P1/P2 = 2.200 and CR at 2.185, both inside 0.9 sigma.
+Those were produced THROUGH CAMB with a suppression factor applied to the CR arm.
+That is a legitimate comparison and it is NOT a bespoke transfer. The first instrument
+works and does not answer the question; the second asks the question and its height
+machinery does not yet work. Conflating them is what hid this item for revisions.
+
+A CORPUS REPAIR THAT COMES WITH IT
+
+Two papers disagree about whether the transfer has been run. P07 frontier:scalar says
+"the seam-to-recombination transfer has now been run", citing P15, and quotes the CAMB
+number. P15 sec:coherence, the paper cited, says it "has not yet run". Both are true
+of different objects. Whatever you find, make the two sentences say WHICH transfer
+they mean.
+
+WHAT TO PRODUCE
+
+A receipt with controls that can fail, registered in receipts/INDEX.md; the clause in
+the paper with its \rcpt marker; the appendices regenerated; the three dependency
+grains harmonised if citations changed. And whatever the control run shows, report it
+even if it is that the instrument needs replacing -- a negative that is measured is
+the result here, not a failure to deliver one.

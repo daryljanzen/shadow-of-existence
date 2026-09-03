@@ -87,6 +87,7 @@ STATE = {
     'WHAT_IS_UNFINISHED.md':                          'the one list -- every unfinished item, unfiltered',
     'RUNNING_THE_LEDGER_PASS.md':                     'the instrument: how to work the open ledger row by row',
     'HANDOFF_to_60_ledger_pass.txt':                  'the plain-text handoff for 60 to run the ledger pass',
+    'HANDOFF_to_60_PO24_transfer.txt':                'the plain-text build request for PO-24, the bespoke transfer',
     'THE_BURN_DOWN.md':                               "the register's accounting",
     'THE_WEAVE.md':                                   'the per-paper orchestration grid',
     'ENTRY_POINT_REGISTER.md':                        'what the corpus advertises',

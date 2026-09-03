@@ -87,6 +87,7 @@ in two places, and only one was refreshed."*
 | **calling a handover a debt** | *wrote "its largest unbuilt undertaking" into an abstract for an item the same paper classifies as a **boundary*** |
 | **my own edits going stale within two revisions** | *fixed a claim, then left the same claim standing elsewhere in the same paper* |
 | **stopping at the first plausible answer** | *nearly claimed an obstruction sub-Planckian by computing the wrong object* |
+| **reading a fix as a bug** | *nearly sent a builder after the Doppler term because a comment WARNED about it; the warning recorded a correction already made. **A comment naming a hazard is as often a fix as a defect --- check the code, not the comment*** |
 | **opening a PO row on an unchecked premise** | *opened `PO-26` for a construction the corpus had already built, because I took a struck row's summary as the object instead of reading the paper it cites. **A new row needs its premise verified in the paper, exactly as a closure does*** |
 
 ---
