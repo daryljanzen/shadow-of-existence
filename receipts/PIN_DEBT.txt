@@ -1,5 +1,70 @@
 27
 
+⛭⛭⛭ r3974-r3980b -- THE CENSUS LIST IS WORKED THROUGH ONCE, AND *** THE LARGEST CLASS IN THIS
+DEBT IS NOT A MOVED SENTENCE.  IT IS A RECEIPT ASSERTING THAT NOBODY HAS ACTED ON ITS FINDING. ***
+  L275/U1  the P14 join, chased forward TWICE before r3341 went back
+  L548/C1  a guard pinning its NEIGHBOUR's present tense
+  P12/A4   a ledger lookup that crashed; two rows closed, one rephrased
+  L272/F1  the outstanding-bake list COMPLETED -- 13 candidates, 0 left
+  L270/V1  a gate grew a rail; three checks pinned the report it used to print
+  L277/U1  *** the unclaimed surface has been CLAIMED ***
+  L276/R1  the dropped premise, repaired in the paper at r3315
+  P15/low-ell  ⛔ a cross-validation gone CIRCULAR, asserting a WITHDRAWN figure
+
+  ⛔⛭⛭ THE SHAPE, STATED ONCE FOR THE WHOLE DEBT.  A receipt that asserts an ABSENCE, a BASELINE,
+    a ZERO COUNT, a "still open", a "not yet answered" or a "nobody claims this" *** is asserting
+    that its own finding has not been acted on. ***  It is the most common thing these files do and
+    it is the thing that breaks:
+      · `L203/M3`  ZERO "Atiyah sequence"           -> written in at r3251
+      · `L265/A1`  four zero-assertions              -> all four at r3251
+      · `L264/K1`  `Fredholm` at zero                -> r3722
+      · `L263/S1`  a station owed                    -> paid
+      · `L175/V1`  five variational terms at zero    -> r3583b, two of them
+      · `L277/U1`  an unclaimed surface              -> claimed six revisions later
+      · `L272/F1`  a list of outstanding candidates  -> every one baked
+      · `P15/C19`  a debt "not yet in hand"          -> discharged by the receipt's own 9/10
+      · `L257/V1`  five unverdicted qualifications   -> two closed, one reclassified
+    ⇒ ** PIN THE BASELINE AT THE COMMIT WHERE IT WAS MEASURED AND ASSERT THE DISCHARGE BESIDE IT. **
+      Both ends, which is c54.226's rule for quotations applied to COUNTS and to ABSENCES.
+    ⌗ *And the historical side must use the SAME preprocessing as the live side -- comments and
+      bibliography stripped, whitespace flattened, de-macroed where the live view is.  A baseline
+      compared under a different preprocessing is not a comparison.*
+    ⛔ ⌗ AND THE DATA MUST BE HISTORICAL, NOT JUST THE CODE.  `L277/U1`'s old `unclaimed_surface.py`
+      imports `field_survey` LIVE, so running the historical module answered with today's field list
+      and reported the surface as claimed at its own throw.  ** Loading an old module is not reading
+      an old state. **
+
+  ⛔⛭⛭ AND FOUR RECEIPTS DID NOT FAIL, THEY *** CRASHED ***.  `StopIteration`, `KeyError`,
+    `IndexError`, `IndexError` -- every one a lookup that assumed its key still existed once a row,
+    an id or a candidate list was gone.  *** A CRASH REPORTS NOTHING, INCLUDING EVERYTHING
+    DOWNSTREAM OF IT. ***  Repairing `L257/V1`'s revealed a whole PART that had never run, carrying
+    two further defects: a check requiring the ledger's WARN backlog to still EXIST, and a
+    `BEFORE..HEAD` range.  ⇒ ** A closed item must read as a closed item, not as a stack trace. **
+
+  ⛔ AND `P15_the_low_ell_minimum_is_at_ell_four` IS THE ONE TO READ IF ONLY ONE IS READ.  It
+    cross-validates a two-arm depth comparison.  Arm A reads a receipt's table; arm B read the
+    paper's FIGURE CAPTION -- into which r3213 had put arm A's own converged quartet.  ** The two
+    "independent" arms became ONE SOURCE READ TWICE and the ratio ran 1.000 at every multipole. **
+    *** Two arms agreeing exactly is not agreement. ***
+    ⛔ And what it asserted was a figure the paper had WITHDRAWN: `1.10 < mean ratio < 1.35` is the
+      "uniformly shallower by 10--25%" spread, and r3213 struck it in six places -- "neither is
+      reproduced by either arm and both are withdrawn."  ** It escaped certifying a withdrawn figure
+      only because its arms had collapsed and it crashed instead. **
+    ⌗ Its arm LABELS were inverted too.  Both quartets are now read from the one sentence that
+      states them side by side with the paper's attribution, so they cannot re-merge silently:
+      0.97 at the quadrupole to 1.98 at $\ell=4$, "close at the quadrupole and nearly a factor two
+      apart at $\ell=3$ and $4$", which is the paper's own wording.
+
+  ⌗ FIXTURES, THIRD AND FOURTH TIME: `L270/V1`'s sandbox was built for a ONE-RAIL gate and the
+    ledger rail's feeders live at the repository root, so the CLEAN baseline exited 1 beside the
+    seeded one -- `clean == seeded == 1`, discriminating nothing, exactly `L556/R1`'s fault again.
+    ** A gate that grows a rail grows a fixture requirement, and nothing tells the fixtures. **
+  ⌗ AND ONE OF ITS CHECKS COULD ONLY PASS WHEN ITS SUBJECT WAS BROKEN: the gate's control line
+    stopped printing because it PASSES -- it is a failure path -- so `'control: ...' in stdout` was
+    true only when the control had failed.  ** A check that can only pass when the thing it guards
+    is broken is worse than no check. **  It is SEEDED now: the generator's escape is neutered so it
+    refuses nothing, and the gate must say "the CONTROL did not fire".
+
 ⛭⛭⛭ r3972 -- *** THE R-M STATION CLUSTER, FIVE RECEIPTS, ONE DIAGNOSIS, AND IT IS THE LARGEST
 SINGLE CAUSE IN THIS DEBT AFTER THE SWEEP: A STATION'S BASELINE READ FROM THE LIVE PAPERS. ***
   L265/A1  Ⓖ  four zero-assertions, all ended by r3251
