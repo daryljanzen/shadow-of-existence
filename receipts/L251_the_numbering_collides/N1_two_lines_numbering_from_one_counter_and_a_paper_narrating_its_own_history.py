@@ -54,6 +54,18 @@ import sys
 HERE = os.path.dirname(os.path.abspath(__file__))
 ROOT = os.path.abspath(os.path.join(HERE, '..', '..'))
 sys.path.insert(0, os.path.join(ROOT, 'corpus'))
+# ** ⛭⛭ NODE IS SET HERE, BEFORE THE IMPORT, AND THAT IS NOT A CONVENIENCE (r3962). **  The gate
+# ** reads `NODE` AT IMPORT TIME and *refuses to default* when it is unset -- r3679's rule, written
+# ** after an unset NODE silently certified the EVEN half on odd-banded trees and passed 21
+# ** collisions.  ** The refusal is right.  What was wrong is this file inheriting the answer from
+# ** whoever happened to run it: ** unset in a plain shell, `ci` under `sweep_gates.sh`, and the
+# ** receipt's verdict changed with the caller.
+#   ⇒ *** A RECEIPT THAT ASSERTS `C.PARITY == 0` IS MAKING A CLAIM ABOUT A NAMED LINE'S BAND, so it
+#       must NAME the line rather than read it out of the environment. ***  `60` is this line, it is
+#       on the even half by declaration, and the assertion below now says so out loud instead of
+#       depending on it.  *A check whose result depends on the caller's environment is not a check
+#       of the corpus; it is a check of the caller.*
+os.environ.setdefault('NODE', '60')
 import check_paper_tense as T                                     # noqa: E402
 import check_revision_collisions as C                             # noqa: E402
 from quotepin import pinned                                       # noqa: E402

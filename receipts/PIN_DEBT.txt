@@ -1,5 +1,56 @@
 39
 
+⛭⛭⛭ r3964 -- SIX MORE, AND *** THE DEBT HAS DEPENDENCY EDGES: ONE FIXTURE REPAIR CLEARED THREE
+RECEIPTS. ***  It is not 39 independent problems and should not be worked as though it were.
+  L556/R1                       ⛔ THE FIXTURE WAS INCOMPLETE AND THE TEST ACCUSED THE GATE
+  L253/S1, L255/E1              cleared BY L556/R1, with no edit of their own
+  L203/M3                       ② THE ABSENCE ENDED BECAUSE THE RECEIPT ASKED FOR IT
+  L165/S10                      ⑪ A BAKE MARKER LANDED INSIDE A PINNED SENTENCE
+  L174/I3                       ⑦ PAPER CORRECTED, PIN KEPT THE ERROR (mode -> polarisation)
+
+  ⛔⛭⛭ L556/R1 -- A MUTATION TEST WHOSE CLEAN BASELINE WAS ALREADY RED, AND IT REPORTED THAT AS A
+    GATE DEFECT.  It copies `corpus/` to a temp tree, symlinks three directories in, seeds a
+    truncated appendix and asks whether `check_appendix_current` notices.  ** But the gate has TWO
+    rails, and the ledger rail's registry rows name files at the REPOSITORY ROOT: 32 `*_LEDGER.md`
+    that the fixture never linked. **  So the gate could not resolve a single ledger row and exited
+    1 on the CLEAN tree, giving `clean == seeded == 1`.
+    ⇒ *** A MUTATION TEST WITH A RED BASELINE IS NOT A WEAK TEST, IT IS AN INVERTED ONE: it says
+        the gate is broken when the FIXTURE is. ***  Measured after the repair:
+        ** clean 0, SEEDED 1, restored 0 ** -- the test discriminates for the first time.
+    ⌗ And this is `L558/D1`'s shape arriving from the other side.  There the SEED stopped
+      constructing its defect; here the BASELINE stopped being clean.  The file already carried the
+      rule for one half -- *VERIFY THE SEED TOOK, do not trust the write* -- and the other half was
+      missing: ** the baseline is now asserted before the seed goes in. **  It ran for the whole of
+      its life without checking that the tree it was measuring against was green.
+    ⌗ AND THE PAYOFF IS THE POINT: `L253/S1` and `L255/E1` both shell out to this receipt and both
+      failed BECAUSE it failed.  ** Three receipts, one repair, two of them needing no edit. **
+      ⇒ *Read the failures together and look for the roots first.*
+
+  ⑪ ELEVENTH REPAIR KIND: A BAKE MARKER LANDED INSIDE A PINNED SENTENCE.  `L165/S10` quotes P10's
+    "the transverse-traceless graviton modes form a discrete tower ...".  r3558's marker pass
+    inserted `\ldg{variational}` INTO THE MIDDLE of it.  ** The paper's words did not change; a
+    correct bake landing split the quotation. **  ⇒ This is `④`'s class from the other side: `R1`
+    was a receipt COUNTING its own bake's landings, and this is one QUOTING ACROSS one.  Fixed by
+    stripping `\ldg{}`/`\rcpt{}` in the reader -- ** markers are apparatus, not prose ** -- rather
+    than cutting the quote into fragments, which would only move the fragility to the next marker.
+
+  ⌗ `L203/M3` is `C19`'s class a second time in one span: it asserted P12 carried ZERO "Atiyah
+    sequence" -- its whole finding being that the paper had the algebroid, the anchor and the
+    connection and never named the object relating them.  r3251 wrote it in, its subject reading
+    "the theatre results carried INTO the papers, which is what a bake is for", and P12 now even
+    records the receipt's own argument: *"naming it costs nothing and buys the literature"*.
+    ⇒ ** A ZERO-COUNT ASSERTION IS A CLAIM THAT NOBODY HAS ACTED ON THE FINDING YET. **  Three
+      separate conjuncts in that file rested on `n_seq == 0`, and none of its actual arguments did.
+
+  ⌗ AND `L251/N1` NEEDED A REPAIR BEFORE IT COULD EVEN BE READ: it imports
+    `check_revision_collisions`, which reads `NODE` AT IMPORT TIME and refuses to default (r3679's
+    rule, written after an unset NODE certified the even half on odd-banded trees and passed 21
+    collisions).  ** Unset in a plain shell, `ci` under `sweep_gates.sh` -- the receipt's verdict
+    changed with the caller. **  A file asserting `C.PARITY == 0` is making a claim about a NAMED
+    line's band and must name it; `NODE` is set to `60` in the file now.  ⇒ *A check whose result
+    depends on the caller's environment is not a check of the corpus, it is a check of the caller.*
+    Its six real failures are then visible for the first time and are NOT yet repaired.
+
 ⛭⛭⛭ r3962 -- EIGHT MORE, ALL RUN TO GREEN, AND THE HEAD COUNT ABOVE IS STALE BY THEM.  A full
 re-run is in flight; ** the number at the head of this file is not adjusted by arithmetic ** (r3930's
 rule), so it still reads the gate's last measurement and will be replaced by the gate's next one.

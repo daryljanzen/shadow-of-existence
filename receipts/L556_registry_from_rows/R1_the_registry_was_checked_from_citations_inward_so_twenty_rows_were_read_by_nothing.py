@@ -96,6 +96,7 @@ guess**. c54.220's rule, r2776.)*
 # ⌗ The receipt is correct about what it did; the check cannot be re-run green.
 import ast
 import fnmatch
+import glob
 import os
 import re
 import shutil
@@ -301,6 +302,20 @@ def main():
             src = os.path.join(ROOT, link)
             if os.path.exists(src):
                 os.symlink(src, os.path.join(tmp, link))
+        # ** ⛔⛭⛭ THE FIXTURE WAS INCOMPLETE AND THE MUTATION TEST WAS ACCUSING THE GATE (r3962). **
+        # ** The gate has TWO rails -- receipts (`\rcpt`) and ledgers (`\ldg`) -- and the ledger
+        # ** registry's rows name files at the REPOSITORY ROOT, not under `corpus/`.  Three
+        # ** directories were symlinked in and the 32 root-level `*_LEDGER.md` were not, so the gate
+        # ** could not resolve a single ledger row and exited 1 *** ON THE CLEAN TREE ***.
+        # **   ⇒ *** WITH clean == seeded == 1, THE TEST DISCRIMINATED NOTHING AND REPORTED IT AS A
+        # **     GATE FAILURE. ***  A mutation test whose clean baseline is already red is not a
+        # **     weak test, it is an inverted one: it says the gate is broken when the FIXTURE is.
+        # ** ⌗ And this is the same shape the seed-verification comment below was written for --
+        # **   `L558`'s `D1` accused the gate it defended -- arriving from the other side: there the
+        # **   SEED stopped constructing its defect, here the BASELINE stopped being clean.  The
+        # **   remedy is the same in both: *** assert the fixture's premise instead of assuming it. ***
+        for _led in sorted(glob.glob(os.path.join(ROOT, '*_LEDGER.md'))):
+            os.symlink(_led, os.path.join(tmp, os.path.basename(_led)))
         gate = os.path.join(tmp, 'corpus', 'check_appendix_current.py')
 
         def run_gate():
@@ -308,6 +323,11 @@ def main():
                                   capture_output=True, text=True, errors='replace').returncode
 
         clean = run_gate()
+        # ** ⛭ AND THE BASELINE IS ASSERTED BEFORE THE SEED GOES IN, not read off afterwards: a
+        # ** mutation test is only evidence if the clean tree is GREEN, and this one ran for the
+        # ** length of its life without checking that. **
+        assert clean == 0, ('the isolated tree must be clean before seeding, or the test compares '
+                            'two failures and calls the difference a gate defect', clean)
         target = os.path.join(tmp, 'corpus', 'appendix_receipts_P10.tex')
         keep = open(target, 'rb').read()
         open(target, 'wb').write(keep[:200])          # the seed: a truncated appendix
