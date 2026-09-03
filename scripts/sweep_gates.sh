@@ -70,6 +70,26 @@ echo "  HERE:  PASS=$P  FAIL=$F  UNRUN=$U"
 for n in $FAILED; do echo "      [FAIL]  $n"; done
 for n in $NOTRUN; do echo "      [UNRUN] $n"; done
 
+# ** THE STANDING DEBT, SAID OUT LOUD WHERE THE TALLY IS ACTUALLY READ.  ** r3905.
+#   The receipt gate is CACHED: it refuses to speak once the tree has moved, and the
+#   sweep maps that to UNRUN(stale-cache).  Both nodes carried "1 unrun" at every
+#   landing for a whole session and neither acted on it, while the nightly reported
+#   the same failure on schedule for 22 consecutive days into a channel nobody read.
+#   *** A number that has to be looked up is a number that does not get looked at. ***
+#   So the measured debt is printed HERE, beside the counts, every time.
+if [ -f receipts/PIN_DEBT.txt ]; then
+  PIN=$(head -1 receipts/PIN_DEBT.txt 2>/dev/null | tr -dc '0-9')
+  if [ -n "$PIN" ] && [ "$PIN" != "0" ]; then
+    echo "      [DEBT]  $PIN receipt(s) FAIL where they are registered  (receipts/PIN_DEBT.txt)"
+    echo "              UNRUN IS NOT A PASS.  This number is not covered by PASS above."
+  fi
+fi
+if [ -f receipts/ASSERTION_DEBT.txt ]; then
+  ASRT=$(head -1 receipts/ASSERTION_DEBT.txt 2>/dev/null | tr -dc '0-9')
+  [ -n "$ASRT" ] && [ "$ASRT" != "0" ] && \
+    echo "      [DEBT]  $ASRT receipt(s) carry no assertion  (receipts/ASSERTION_DEBT.txt, ratcheted)"
+fi
+
 if [ "${1:-}" = "--baseline" ] && [ -n "${2:-}" ]; then
   ref="$2"; tmp=$(mktemp -d)
   git clone -q . "$tmp/base" 2>/dev/null && (cd "$tmp/base" && git checkout -q "$ref" 2>/dev/null)
