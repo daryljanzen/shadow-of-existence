@@ -87,8 +87,25 @@ in two places, and only one was refreshed."*
 | **calling a handover a debt** | *wrote "its largest unbuilt undertaking" into an abstract for an item the same paper classifies as a **boundary*** |
 | **my own edits going stale within two revisions** | *fixed a claim, then left the same claim standing elsewhere in the same paper* |
 | **stopping at the first plausible answer** | *nearly claimed an obstruction sub-Planckian by computing the wrong object* |
+| **breaking my own rules in the replacement text** | *wrote "what this paragraph once carried as open" while closing an item --- revision-history narration, the one-state rule, in the very sentence fixing a one-state violation. **The replacement is subject to every rule the original was*** |
+| **accepting a paper's claim about its own evidence** | *`P12` said a computation "bears on" an attribution; checked, it predicts the same thing under both readings and discriminates nothing. **A paper's characterisation of its own evidence is a claim, and gets checked like any other*** |
 | **reading a fix as a bug** | *nearly sent a builder after the Doppler term because a comment WARNED about it; the warning recorded a correction already made. **A comment naming a hazard is as often a fix as a defect --- check the code, not the comment*** |
 | **opening a PO row on an unchecked premise** | *opened `PO-26` for a construction the corpus had already built, because I took a struck row's summary as the object instead of reading the paper it cites. **A new row needs its premise verified in the paper, exactly as a closure does*** |
+
+---
+
+# ⛭ THE PASS OPENS MORE PROBLEMS THAN IT CLOSES, AND THAT IS IT WORKING
+
+***Items 17, 19 and 20 each ended by opening a `PO` row. The frontier went from `1 OPEN` to `8 OPEN`
+across twenty items. **None of those problems was created** --- each was already carried in the prose of a
+paper with no register row, which is exactly why nobody could work them.***
+
+⇒ ***A rising count is the instrument finding what was hidden.*** *It falls later, when the rows are
+worked. Do not read it as failure and do not slow down to keep it flat --- that is the triage this pass
+exists to defeat.*
+
+⌗ ***What must stay near zero is the DEBT count***: *a buildable thing the corpus owes and has not
+registered. That is currently **1**, and it is `PO-24`.*
 
 ---
 
