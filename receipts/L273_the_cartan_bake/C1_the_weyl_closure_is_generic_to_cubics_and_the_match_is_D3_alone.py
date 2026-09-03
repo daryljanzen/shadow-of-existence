@@ -191,6 +191,31 @@ def analyse(cf, a, qcoef, base=0.55j, rad=0.03):
     return gens, G, roots_img, kernel, prof
 
 
+
+#: ** ⛭ THE BAKE'S BASELINE AT ITS OWN THROW (r3988), counted the way `TOTW` counts -- word-bounded,
+#: ** raw and de-macroed, the larger taken -- because a baseline compared under a different
+#: ** preprocessing is not a comparison.
+_AT_THROW_CACHE = {}
+
+
+def _at_throw_wordcount(term):
+    import re as _re
+    import subprocess as _sp
+    if not _AT_THROW_CACHE:
+        for _tex, _key in RB.TEX2P.items():
+            _raw = _sp.run(['git', 'show', f'b55c782f:corpus/{_tex}'], cwd=ROOT,
+                           capture_output=True, text=True, errors='replace').stdout
+            _b = '\n'.join(l for l in _raw.split('\n') if not l.lstrip().startswith('%'))
+            _j = _b.find('\\begin{thebibliography}')
+            _body = _re.sub(r'\s+', ' ', _b[:_j] if _j > 0 else _b)
+            _AT_THROW_CACHE[_key] = (_body, RB.demacro(_body))
+        assert len(_AT_THROW_CACHE) == len(RB.TEX2P), (
+            'every paper must be readable at the throw, or the baseline is partial')
+    pat = _re.compile(r'\b' + _re.escape(term) + r'\b', _re.I)
+    return max(sum(len(pat.findall(v[0])) for v in _AT_THROW_CACHE.values()),
+               sum(len(pat.findall(v[1])) for v in _AT_THROW_CACHE.values()))
+
+
 def main():
     print()
     print('  C1 -- the Weyl closure is generic to cubics, and the match is D_3 alone')
@@ -313,8 +338,28 @@ def main():
         return max(sum(RB.word_counts(term).values()),
                    sum(RB.word_counts(term, tex=True).values()))
     TOT = {t: max(raw, dem) for t, raw, _, dem in rows}
-    check('⓺ every term of the bundle apparatus is ×0 across the seventeen paper bodies, '
-          'de-macroed AND word-bounded', all(TOTW(t) == 0 for t in absent))
+    # ** ⛭⛭ RE-PINNED r3988, AND ONE TERM OF THE EIGHT HAS SINCE ARRIVED. **  This bake's finding is
+    # ** that the corpus COMPUTES the holonomy invariant and carries none of the bundle apparatus
+    # ** that names it.  `principal bundle` is in P12 now (×2), landed with the Atiyah-sequence work
+    # ** at r3251 -- "the theatre results carried INTO the papers, which is what a bake is for" --
+    # ** which is the neighbouring station Ⓖ being answered, not this bake being wrong.
+    # **   ⇒ ** The baseline is pinned at this bake's own throw, where all eight were zero, and the
+    # **     seven that are STILL zero are asserted live. **  *An absence measured before a throw is
+    # **     a baseline; asserted after the throws land, it says nobody acted on any of them.*
+    # **   ⌗ The finding is unchanged and ⓺ᵇ below carries it: `holonomy` and `monodromy` are
+    # **     substantial while the apparatus is not, and one term arriving does not make an
+    # **     apparatus -- which is why the count for it is REPORTED rather than merely tolerated.
+    _AT_THROW = 'b55c782f'          # r3164 -- this bake's own throw
+    _then = {t: _at_throw_wordcount(t) for t in absent}
+    check(f'⓺ every term of the bundle apparatus was ×0 across the seventeen paper bodies at '
+          f'{_AT_THROW}, de-macroed AND word-bounded: {_then}',
+          all(v == 0 for v in _then.values()))
+    _now = {t: TOTW(t) for t in absent if TOTW(t)}
+    check(f'⓺ᵃ¹ ⛭ and {len(absent) - len(_now)} of the {len(absent)} are still ×0; what has arrived '
+          f'is {_now} -- `principal bundle` with the Atiyah-sequence landing at r3251, which is '
+          f'station Ⓖ being answered next door and not an apparatus appearing',
+          len(_now) <= 1 and set(_now) <= {'principal bundle'}
+          and all(TOTW(t) == 0 for t in absent if t != 'principal bundle'))
     check('⓺ᵃ ⚠ AND ONE OF THEM WAS A FALSE HOLE THE OTHER WAY: the substring count returned '
           '`G-structure` ×1, matching inside `breaking-structure` in a sentence about symmetry '
           'breaking -- the third substring artefact in this session, so the word-bounded report '
