@@ -30,6 +30,20 @@ EST = {
         'isometry-realised on the compact face, and it remains unbuilt -- the major undertaking any geometric '
         'gauge-matter route would first have to complete. TRIP-WIRE: forcing the gauge group forces the Higgs '
         'representation with it.'),
+    'PO-30': ('the curves own dynamics -- A GENERATIVE LAW FOR THE MATTER CONTENT', 1, 1, 6, None,
+        'r3882: P08 sec:open states it and no register row carried it. The bend-density identity is EXACT but it '
+        'states WHAT the bend is, not WHY a cut bends as it does: the slicing operator is KINEMATIC, generating the '
+        'stress-energy from the curve and not the curves own dynamics. P08 narrows it sharply and the narrowing is '
+        'the papers own -- the confined case IS exhibited; the boundary at which free radiation begins IS the range '
+        'papers wall, and beyond it the framework leaves GR UNCHANGED so the general inhomogeneous evolution is '
+        'ordinary leaf evolution with its canonical form in P10; and the branch-point crossing IS well posed, with '
+        'the worldline taken up in P16. What is left after all of that is one thing: the matter contents own '
+        'generative law where the construction does not supply one, a dynamics for the curve itself as against the '
+        'ordinary leaf evolution that carries it -- which P08 calls the distinction between a complete dynamical '
+        'theory and a kinematical one, and the deepest question this construction opens onto. ITS LEDGER ROW '
+        '11b0140039 POINTED AT PO-6 SINCE r2581, and PO-6s object is the interacting quantum tower: a classical '
+        'dynamics gap routed to a quantum item, which is why nobody could work it. THE ESTIMATE IS A FLOOR, scored '
+        'as a build because nothing smaller has been identified, not because a route is known.'),
     'PO-29': ('the -M/r^3 attribution -- FORCED PIVOT OR MASS', 1, 1, 2, None,
         'r3875: P12 attributes the second-order parting term to the forced off-axis pivot rather than to the mass, '
         'and is explicit that this is the perspectival readings interpretive payoff and NOT a claim proven '
@@ -165,12 +179,12 @@ KIND = {'PO-13': 'READ', 'PO-14': 'BUILD', 'PO-15': 'READ', 'PO-16': 'READ',
 
 # ** PO-23 added r3809: the ultraviolet definition of the mode sums, the one part of P07's
 # three-part 'definition of the interacting tower' that is neither settled nor attempted. **
-ORDER = ['PO-13', 'PO-24', 'PO-25', 'PO-26', 'PO-27', 'PO-28', 'PO-29', 'PO-23', 'PO-15', 'PO-14', 'PO-17', 'PO-18', 'PO-19', 'PO-20']
+ORDER = ['PO-13', 'PO-24', 'PO-30', 'PO-25', 'PO-26', 'PO-27', 'PO-28', 'PO-29', 'PO-23', 'PO-15', 'PO-14', 'PO-17', 'PO-18', 'PO-19', 'PO-20']
 GROUP = {'PO-13': 'D', 'PO-14': 'A', 'PO-15': 'C', 'PO-16': 'D',
          # ** r3095: the four brought in from p0's frontiers and the field ledgers.  PO-17 and
          # PO-19 are substrate geometry; PO-18 is the constant ledger; PO-20 is analysis. **
          'PO-17': 'E', 'PO-18': 'E', 'PO-19': 'E', 'PO-20': 'E',
-         'PO-23': 'C', 'PO-24': 'D', 'PO-25': 'E', 'PO-26': 'A', 'PO-27': 'A', 'PO-28': 'C', 'PO-29': 'E'}
+         'PO-23': 'C', 'PO-24': 'D', 'PO-25': 'E', 'PO-26': 'A', 'PO-27': 'A', 'PO-28': 'C', 'PO-29': 'E', 'PO-30': 'A'}
 GNAME = {'A': 'the matter sector', 'B': 'the matter sector', 'C': 'the quantum sector',
          'D': 'the cosmology', 'E': 'the substrate geometry'}
 
