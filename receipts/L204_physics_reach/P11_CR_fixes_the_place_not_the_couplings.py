@@ -92,9 +92,16 @@ def main():
     check(f'⛭ the gauge wall is stated {n_wall} times: $\\su(3)\\not\\subset\\so(5,1)$', n_wall >= 3)
     check('with its consequence: "the Standard Model gauge group is not a continuous substrate '
           'isometry"', 'not a continuous substrate isometry' in allp)
+    # ⛔⛭ RE-PINNED r3958.  This pinned `walled and electroweak`.  `walled` is retired jargon --
+    #   r3799 removed it from the corpus, and geometric_core_paper now reads "those are EXCLUDED
+    #   FROM THE ISOMETRY, and electroweak".  ⇒ Same cause as B17 (r3956): the sweep reached the
+    #   papers and left the reproducibility layer, so the pin asserted a word the corpus no longer
+    #   uses.  Note the replacement is not a synonym -- `excluded from the isometry` NAMES WHAT
+    #   EXCLUDES IT, which the retired word never did, so the pin is now sharper than before.
     check('and P0 states the non-claim: "a geometric origin for the gauge content or the masses … '
           'walled and electroweak"',
-          'geometric origin for the gauge content' in allp and 'walled and electroweak' in allp)
+          'geometric origin for the gauge content' in allp
+          and 'excluded from the isometry, and electroweak' in allp)
     check('⇒ SO THE CONSTRUCTION ASSIGNS THE nu_R A PLACE IN A GRADING AND NO INTERACTIONS, and says '
           'explicitly that it cannot supply them',
           n_wall >= 3 and 'geometric origin for the gauge content' in allp)

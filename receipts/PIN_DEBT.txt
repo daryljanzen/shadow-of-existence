@@ -1,4 +1,4 @@
-41
+39
 
 ⛭⛭ WORK STARTED r3938 (node 60), on Daryl's decision at r3908 -- ledger pass first, receipts after,
 and the standard is that they RUN.  ** 5 of 62 repaired; head count above is now 57. **
@@ -24,6 +24,22 @@ and the standard is that they RUN.  ** 5 of 62 repaired; head count above is now
   B14_identical_in_content_is_po2s_reason                           r3956  PINNED SELF-NARRATION
   B16_the_coupling_cannot_come_from_this_bundle                     r3956  PAPER CORRECTED, PIN KEPT THE ERROR
   B17_the_paper_already_walls_two_routes                            r3956  RETIRED WORD IN THE PIN
+  P11_CR_fixes_the_place_not_the_couplings                          r3958  RETIRED WORD IN THE PIN
+  P3_the_higgs_is_declined_in_print_and_never_named                 r3958  RETIRED WORD IN THE PIN (x2)
+
+⛭⛭ AND THESE TWO WERE FOUND BY SCANNING RATHER THAN BY WAITING FOR THEM.  After B17 (r3956)
+showed a retired word sitting inside a PIN, receipts/ was scanned for string literals that are
+membership-tested against a paper AND contain a retired word.  ** Four files; two were these,
+already failing; one was a file already repaired; one was a FALSE POSITIVE. **
+  ⇒ *** The scan predicts which receipts will fail for this reason instead of discovering them one
+      at a time, and it bounds the class: `walled` runs 51 times across 18 receipt files, but only
+      FOUR of those instances sit in a pin.  ** The other 47 are prose and comments and are
+      harmless. **  A word count would have reported 51 problems; the scan reports 4. ***
+  ⛔ AND THE FALSE POSITIVE IS THE POINT OF SAYING SO: `B21_the_three_levels_audited` matched and
+    PASSES -- its `walled` instances are prose, and my pin-detecting regex over-matched.  ** A
+    filter's HITS need reading too, not only its misses (r3932's rule, the other half). **
+  ⌗ The replacement is not a synonym and the pins are sharper for it: `walled` became `EXCLUDED
+    FROM THE ISOMETRY`, which names what does the excluding -- something the retired word never did.
 
 ⛭ L221_the_bridge CLEARED, 5 of 5.  Three more flavours, and none is `prose drifted`:
 

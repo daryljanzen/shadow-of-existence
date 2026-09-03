@@ -125,9 +125,15 @@ def main():
     check('⛭ P6 (boundary) states it: "the value stays the ordinary route, the electroweak breaking '
           'that supplies the fermion mass"',
           'the value stays the ordinary route' in p6)
+    # ⛔⛭ RE-PINNED r3958.  This pinned `walled and electroweak`.  `walled` is retired jargon --
+    #   r3799 removed it from the corpus, and geometric_core_paper now reads "those are EXCLUDED
+    #   FROM THE ISOMETRY, and electroweak".  ⇒ Same cause as B17 (r3956): the sweep reached the
+    #   papers and left the reproducibility layer, so the pin asserted a word the corpus no longer
+    #   uses.  Note the replacement is not a synonym -- `excluded from the isometry` NAMES WHAT
+    #   EXCLUDES IT, which the retired word never did, so the pin is now sharper than before.
     check('and P0 (geometric core) states it: a geometric origin for the gauge content or the masses '
           'is NOT claimed -- "those are walled and electroweak"',
-          'walled and electroweak' in p0)
+          'excluded from the isometry, and electroweak' in p0)
     # ------------------------------------------------------------------ c54.213, `L-546`
     # ⛭⛭ ** BOTH OF THIS RECEIPT'S FINDINGS WERE ACTED ON, AND THE RISK IN THAT IS THE OPPOSITE ONE. **
     # It found (a) the Higgs declined in print and never NAMED, and (b) Unruh never mentioned at all.
@@ -137,7 +143,9 @@ def main():
     #       an overclaim is worse than the absence, so the decline is asserted alongside the name. ***
     check('⇒ SO THE CORPUS DECLINES THE MAGNITUDES DELIBERATELY AND SAYS SO IN PRINT -- and c54.203 '
           'supplied the missing word, so it now names the mechanism it declines',
-          'the value stays the ordinary route' in p6 and 'walled and electroweak' in p0
+          # ⛭ r3958: second instance of the same retired pin in this file -- see the note above.
+          'the value stays the ordinary route' in p6
+          and 'excluded from the isometry, and electroweak' in p0
           and zero['Higgs'] > 0)
     check('⛔ AND THE DECLINE SURVIVED THE NAMING, which is the thing worth guarding: p0 still refuses '
           'the vacuum expectation value, the electroweak scale and the mass values',
