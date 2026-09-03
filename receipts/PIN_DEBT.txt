@@ -1,4 +1,4 @@
-55
+54
 
 ⛭⛭ WORK STARTED r3938 (node 60), on Daryl's decision at r3908 -- ledger pass first, receipts after,
 and the standard is that they RUN.  ** 5 of 62 repaired; head count above is now 57. **
@@ -9,6 +9,29 @@ and the standard is that they RUN.  ** 5 of 62 repaired; head count above is now
   S12_the_boundaries_coincide                                       r3938  PROSE MOVED  -> RE-PINNED
   D2_index_carries_three_senses_inside_one_paper                    r3940  PIN NOT ON THE THESIS
   R1_the_whole_footprint_is_three_geometry_words                    r3940  SELF-COUNTING -> EXTRACTION FIXED
+  I7_conserved_charge_carries_three_objects_and_one_denies_the_others  r3942  PIN NOT ON THE THESIS
+
+⛔⛭⛭ I7 TOOK THREE PASSES, AND EACH FAILED REPAIR IS WORTH MORE THAN THE FIX.
+  Its pins were the most brittle in the debt: ABSOLUTE CHARACTER OFFSETS into a paper,
+  [134508, 307922], which any edit anywhere earlier shifts -- they failed at [135659, 310745],
+  the same two sites moved by prose in front of them.  Plus two corpus counts.
+    PASS 1  I replaced a count check with "every sense-A site is a negation".  HOLLOW: sense is
+            ASSIGNED 'A' precisely when the negation marker matches, so it cannot fail.
+    PASS 2  I tried a discrimination -- "A's sites are all negations while B's and C's are not"
+            -- and it FAILED at [True, True], because the fourth element of `sites` is the
+            600-character CONTEXT, always truthy, not a negation flag.  ** Hollow AND false, and
+            written while repairing a hollow one. **
+    PASS 3  The answer was to ADD NOTHING.  Every NEG-to-sense check here is definitional by
+            construction, and the receipt ALREADY carries the only test that validates its
+            classifier -- VERDICT 5's control, `first integral` must come back SINGLE-sensed.
+  ⛔ AND THE SPAN CHECK NEEDED A THIRD PASS OF ITS OWN: `_frac > 1/3, True` was still hollow, and
+    THIS RECEIPT'S OWN COMMENT forty lines above says why -- "ASSERT THE MEASURED VALUE, NOT
+    `> 0 == True`.  A bare True on the right-hand side is the hollow shape."  I wrote the shape
+    the file warns against, in the file that warns against it.  Now: which THIRD of P07 each site
+    falls in, asserted as [1, 2] -- a measured value, robust to ordinary edits, and it fails if
+    the two ever converge, which is the claim.
+  ⇒ *** A REPAIR IS A CHANGE TO A TEST, AND UNTESTED REPAIRS ARE THE THING THIS DEBT IS MADE OF.
+      Run the receipt AND the lint after every pass. ***
 
 ** AND TWO MORE REPAIR KINDS, so there are FOUR and not two. **
   ③ THE PIN WAS NEVER ON THE THESIS.  D2 asserted `index` occurs x128 corpus-wide and P14 carries
