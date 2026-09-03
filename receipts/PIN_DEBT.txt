@@ -16,25 +16,43 @@ constraint without the enforcement would be the third layer of the defect descri
 Whether this debt gets a ratchet is a decision for the corpus's owner, not for the node that
 measured it.
 
-⛔⛭⛭ HOW IT STAYED INVISIBLE, WHICH OUTRANKS THE 62.
+⛔⛭⛭ IT WAS NEVER INVISIBLE.  IT HAS BEEN RED EVERY NIGHT SINCE THE NIGHTLY EXISTED.
 
-  `check_receipts_run` is a CACHED-RESULT gate.  It compares a digest of everything a receipt
-  can read (corpus/*.tex, receipts/**/*.py, computations/**/*.py) and REFUSES TO SPEAK when
-  the tree has moved -- correctly, because a stale verdict is a verdict about another tree.
-  `scripts/sweep_gates.sh` maps that non-zero exit to UNRUN(stale-cache).
+  ** CHECKED AT r3892 AGAINST THE ACTUAL RUN HISTORY, WHICH IS WHERE THIS SHOULD HAVE STARTED. **
+  `.github/workflows/gates.yml` carries a job named, in plain words,
 
-  ⇒ So every tally this session read "95 pass / 0 fail / 2 unrun ... neither is a pass".  The
-    label was CORRECT and was carried by both nodes at every landing, and the gate still
-    FUNCTIONED as a pass, because nobody spent the sixteen minutes.
-    *** UNRUN IS NOT A PASS, AND LABELLING A GATE UNRUN IS NOT RUNNING IT. ***
+      heavy -- every receipt run where it is registered
 
-  ⛔ And the cache it was declining to trust was a HEADER-ONLY FILE: a prior run interrupted
-    mid-write and committed truncated, with no verdict line in it at all.  Had the digest
-    matched, the gate would have reached "the runner result file has no verdict line -- it may
-    have been truncated" and failed there.  Two independent reasons the number was never seen.
+  It installs camb and pynucastro (so no environment excuse applies to it), runs all 699
+  receipts, then runs `check_receipts_run`.  It fires nightly at 03:00 on main.
 
-  The gate's own source already says which direction this fails in, written at r2656:
+    *** ALL 22 SCHEDULED RUNS HAVE FAILED.  EVERY ONE, FROM 2026-08-12 TO 2026-09-02. ***
+    *** THE NIGHTLY HAS NEVER ONCE BEEN GREEN. ***
+
+  Always the same step: `heavy` step 6, `check_receipts_run`, failing after the suite runs
+  clean.  `fast` passes.  `compile` passes -- so "all 17 compile" is true, and was never the
+  half in doubt.  ⇒ The debt was reported, on schedule, into a channel nobody read for
+  twenty-two consecutive days.  *** A red nightly that nobody opens is not a gate, it is a
+  log line. ***
+
+  ⌗ AND THE LOCAL STALENESS WAS THE SECOND LAYER, NOT THE FIRST.  `check_receipts_run` is a
+  CACHED-RESULT gate: it compares a tree digest and refuses to speak once the tree has moved,
+  and `scripts/sweep_gates.sh` maps that to UNRUN(stale-cache).  So every tally this session
+  read "2 unrun ... neither is a pass" -- the correct label, carried by both nodes at every
+  landing, and never acted on.  UNRUN IS NOT A PASS, AND LABELLING A GATE UNRUN IS NOT RUNNING
+  IT.  But that only explains why the CONTAINER could not see it.  It does not explain the
+  twenty-two nights, and nothing in this corpus's own doctrine excuses them.
+
+  ⛔ Third layer: the cache the local gate declined to trust was a HEADER-ONLY file -- a prior
+  run committed truncated, with no verdict line in it.  Had the digest matched, the gate would
+  have reached "the runner result file has no verdict line -- it may have been truncated".
+
+  The gate's own source, written at r2656, names the direction all three layers fail in:
     "The gate was green because it was OLD, which is the direction that looks like success."
+
+  ⌗ AND ONE MORE THING THE RUN HISTORY SETTLES FOR FREE: the nightly runs on MAIN.  Its
+  failures are therefore independent confirmation of the 38 inherited failures below -- that
+  count was measured in a worktree at the branch point, and main's own CI agrees.
 
 ** THE MECHANISM: PINS INTO PROSE THAT LATER CORRECT WORK MOVED. **
   Most of these receipts assert a literal sentence or a literal count in a paper.  When the

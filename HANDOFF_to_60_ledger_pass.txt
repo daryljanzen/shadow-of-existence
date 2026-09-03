@@ -1,5 +1,5 @@
 HANDOFF FOR 60 -- running the open-ledger pass
-current: r3890
+current: r3892
 (60's line; 59's ledger-pass work runs to r3877 and is merged in)
 
 WHAT THE JOB IS
@@ -20,7 +20,9 @@ WHERE IT STANDS
   NAMED-UNBUILT rows       0   (was 1 -- the UV definition, registered to PO-23 at r3872)
   gates                    95 pass / 0 fail / 2 unrun   (check_compile: no pdflatex here.
                              check_receipts_run: LIFTED at r3890 and it FAILS -- 62 receipts fail
-                             where they are registered.  receipts/PIN_DEBT.txt has the census.)
+                             where they are registered.  receipts/PIN_DEBT.txt has the census.
+                             ⛔ AND THE NIGHTLY ON MAIN HAS FAILED ALL 22 RUNS SINCE 2026-08-12,
+                             always at the same step.  It was never hidden.  Read CI history.)
   papers                   all 17 compile at 0 errors, 0 undefined
   REGISTERED rows whose named home is STRUCK     1         (03fbbb9436, the last of them;
                                                             2 worked r3886, 2 r3884, 2 r3882)
