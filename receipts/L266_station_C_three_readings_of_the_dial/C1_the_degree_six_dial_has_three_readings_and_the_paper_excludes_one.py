@@ -76,6 +76,33 @@ spec = importlib.util.spec_from_file_location('_rb', os.path.join(ROOT, 'corpus'
                                                                   'reach_baseline.py'))
 RB = importlib.util.module_from_spec(spec)
 spec.loader.exec_module(RB)
+
+#: ** ⛭ THE BASELINE AT THIS STATION'S OWN CLOSE (r3972), in BOTH views -- raw and de-macroed --
+#: ** because the artefact question is precisely a comparison between the two.  Mirrors
+#: ** `reach_baseline.bodies()` and `demacro()` rather than re-deriving them, so the historical
+#: ** counts are produced by the same preprocessing as the live ones.
+_AT_BUILD = '65de83f1'          # r3154 -- this station's own close
+_AT_BUILD_CACHE = {}
+
+
+def _at_build_counts(term, tex=False):
+    """`RB.counts(term, tex=tex)` as it read at this station's own close."""
+    import re as _re
+    import subprocess as _sp
+    if not _AT_BUILD_CACHE:
+        for _tex, _key in RB.TEX2P.items():
+            _raw = _sp.run(['git', 'show', f'{_AT_BUILD}:corpus/{_tex}'], cwd=ROOT,
+                           capture_output=True, text=True, errors='replace').stdout
+            _b = '\n'.join(l for l in _raw.split('\n') if not l.lstrip().startswith('%'))
+            _j = _b.find('\\begin{thebibliography}')
+            _body = _re.sub(r'\s+', ' ', _b[:_j] if _j > 0 else _b)
+            _AT_BUILD_CACHE[_key] = (_body, RB.demacro(_body))
+        assert len(_AT_BUILD_CACHE) == len(RB.TEX2P), (
+            'every paper must be readable at the throw commit, or the baseline is partial',
+            sorted(set(RB.TEX2P.values()) - set(_AT_BUILD_CACHE)))
+    return {k: len(_re.findall(_re.escape(term), v[1 if tex else 0], _re.I))
+            for k, v in _AT_BUILD_CACHE.items()}
+
 B, BT = RB.BODIES, RB.BODIES_TEX
 
 E = (tuple(range(3)), 0)
@@ -231,9 +258,26 @@ def main():
                 for t in ('Fredholm', 'Jacobi', 'Atiyah sequence', 'adjoint bundle',
                           'exact sequence', 'Chevalley', 'principal bundle')}
     print(f'    stations Ⓖ/Ⓗ baselines, (raw, de-macroed): {survived}')
-    check('⛭ ⓹ᵈ AND STATIONS Ⓖ AND Ⓗ SURVIVE IT: every zero they rested on is still zero in the '
-          'de-macroed text, so neither finding was an artefact of a macro',
-          all(r == 0 and d == 0 for r, d in survived.values()))
+    # ** ⛭⛭⛭ RE-PINNED r3972.  THE QUESTION THIS ASKS IS *"WAS THE ZERO AN ARTEFACT?"*, AND THAT IS
+    # ** NOT THE SAME QUESTION AS *"IS IT STILL ZERO?"* **  The hardening exists because a survey
+    # ** for `Aut(A_2)` returned ZERO while the object appears ten times -- the corpus writes it
+    # ** `\mathrm{Aut}(A_2)` and the macro's closing brace splits the term.  *** So the artefact
+    # ** SIGNATURE is `raw == 0 while de-macroed > 0`, and that is what re-verifies a station. ***
+    # ** Asserting the zeros persist instead makes the check fail the moment a station is ANSWERED,
+    # ** which is what happened: Ⓖ's vocabulary landed at r3251 and Ⓗ's `Fredholm` at r3722.
+    # **   ⇒ ** Both are asserted now: the signature is absent today for every term, at any count;
+    # **     and the zeros themselves are pinned where they were measured, at this station's own
+    # **     throw, which is where a baseline belongs. **
+    _sig = {t: (r, d) for t, (r, d) in survived.items() if r == 0 and d > 0}
+    check(f'⛭ ⓹ᵈ AND STATIONS Ⓖ AND Ⓗ SURVIVE IT: no term they rested on shows the artefact '
+          f'signature -- a raw zero over a de-macroed non-zero -- in the live text, so neither '
+          f'finding was a macro splitting a term: {len(_sig)} such term(s), {survived}',
+          not _sig)
+    _then = {t: (sum(_at_build_counts(t).values()), sum(_at_build_counts(t, tex=True).values()))
+             for t in survived}
+    check(f'⛭ ⓹ᵈ¹ and their baselines were REAL zeros when measured, raw AND de-macroed, at '
+          f'{_AT_BUILD} -- this station\'s own close: {_then}',
+          all(r == 0 and d == 0 for r, d in _then.values()))
 
     print()
     if FAILED:

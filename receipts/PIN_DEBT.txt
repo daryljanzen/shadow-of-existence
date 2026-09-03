@@ -1,5 +1,49 @@
 27
 
+⛭⛭⛭ r3972 -- *** THE R-M STATION CLUSTER, FIVE RECEIPTS, ONE DIAGNOSIS, AND IT IS THE LARGEST
+SINGLE CAUSE IN THIS DEBT AFTER THE SWEEP: A STATION'S BASELINE READ FROM THE LIVE PAPERS. ***
+  L265/A1  Ⓖ  four zero-assertions, all ended by r3251
+  L264/K1  Ⓗ  `Fredholm` at zero, ended by r3722 -- plus an amendment that outlived its premise
+  L266/C1  Ⓒ  the artefact re-verification, asking the wrong question of the live text
+  L263/S1     the audit itself, reporting a station owed that has been paid
+  L268/O1     cleared BY S1, with no edit of its own
+
+  ⛔⛭⛭ THE DIAGNOSIS.  A station THROWS a baseline -- *"index theory begins with is your operator
+    Fredholm, and the corpus asks it nowhere"*, *"P12 has the Atiyah sequence as its object and
+    never names it"* -- and the baseline is a fact about the corpus ** BEFORE THE THROW **.  Every
+    one of these files measured it with `reach_baseline.counts`, which reads the LIVE papers.
+    ⇒ *** SO EACH ASSERTED, FOREVER, THAT NOBODY HAD ACTED ON ITS OWN FINDING. ***  r3251 carried
+      the theatre results into the papers ("which is what a bake is for") and r3722 closed index
+      theory's half of the shortfall -- and every station that had asked for it went red.
+    ⌗ ** A STATION EXISTS TO BE ANSWERED.  Asserting that nobody has answered it yet is asserting
+      that the station FAILED. **  The baselines are now read at each file's OWN THROW COMMIT, and
+      the discharge asserted beside them -- both ends, c54.226's rule applied to COUNTS.
+    ⌗ And the historical counter MIRRORS `reach_baseline.bodies()` rather than re-deriving it --
+      `%` comments and bibliography stripped, whitespace flattened, `demacro` where the live one
+      de-macroes.  *A baseline compared under a different preprocessing is not a comparison*, and
+      each helper asserts it read every paper rather than trusting its loop.
+
+  ⛔ AND `L266/C1` WAS ASKING THE WRONG QUESTION OF THE RIGHT DATA.  Its ⓹ᵈ re-verifies Ⓖ and Ⓗ
+    against the de-macroing hardening -- which exists because a survey for `Aut(A_2)` returned ZERO
+    while the object appears ten times, the corpus writing it `\mathrm{Aut}(A_2)` so the macro's
+    brace splits the term.  ** The artefact SIGNATURE is `raw == 0 while de-macroed > 0`. **  The
+    check asserted instead that the zeros PERSIST, which is a different claim and fails the moment
+    a station is answered.  ⇒ Both are asserted now: the signature is absent today at any count,
+    and the zeros are pinned where they were measured.
+
+  ⛔⛭⛭ AND `L264/K1` CARRIED AN AMENDMENT THAT OUTLIVED ITS PREMISE BY TWO REVISIONS.  Its ⓶ᵇ was
+    amended at r3339 to assert a JOIN -- *"P14 carries `limit-point` at the branch point since
+    r3339"* -- and *** r3341 reverted that very edit ***: "the error traces back to r3140, and P14's
+    original passage is restored verbatim".  The r3339 text was a paraphrase that had replaced a
+    correct passage removed at r3140 as an artefact; r3341 put the original back and says plainly
+    that the restoration is the better text -- it carries the closed form, the leaf measure, the
+    normalizability threshold and which branch fails, where the paraphrase carried none of them.
+    ⇒ ** So the routing gap the check originally recorded is REAL again, and the check is RETURNED
+      to its original sense rather than chased forward. **
+    ⌗ *An amendment written to follow a change must be checked against whether the change survived.*
+      ** And `L263/S1` had it right the whole time ** -- its ⓷ᵉ records the withdrawal in terms --
+      which is what reading the cluster together buys: the audit corroborated the station.
+
 ⛭⛭⛭ r3970 -- THREE MORE, AND *** THE `HEAD`-ENDED RANGE IS A CLASS, NOT AN INCIDENT: FOUR SITES
 IN THREE RECEIPTS SO FAR, EACH IN A DIFFERENT DISGUISE. ***
   L175/V1   ② A ZERO-COUNT ENDED -- and the footprint that replaced it is a DECLINATION
