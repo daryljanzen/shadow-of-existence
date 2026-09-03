@@ -67,6 +67,7 @@ Written r3128, `L-256`; ⓸ WITHDRAWN r3140 (`L-260`).  Stated for reversal.
 import contextlib
 import io
 import os
+import re
 import shutil
 import subprocess
 import sys
@@ -75,6 +76,14 @@ import tempfile
 HERE = os.path.dirname(os.path.abspath(__file__))
 ROOT = os.path.abspath(os.path.join(HERE, '..', '..'))
 sys.path.insert(0, os.path.join(ROOT, 'corpus'))
+# ** ⛭⛭ NODE IS SET HERE, BEFORE THE IMPORT (r3964, with `L251/N1`). **  `check_revision_collisions`
+# ** reads `NODE` AT IMPORT TIME and *refuses to default* when unset -- r3679's rule, written after an
+# ** unset NODE silently certified the EVEN half on odd-banded trees and passed 21 collisions.  The
+# ** refusal is right; what was wrong is this file inheriting the answer from whoever ran it: unset in
+# ** a plain shell, `ci` under `sweep_gates.sh`.  ** A receipt asserting anything about a band is
+# ** making a claim about a NAMED line and must name it. **  Four receipts shared this defect and all
+# ** four were on the failure list; they are fixed together because it is one fault, not four.
+os.environ.setdefault('NODE', '60')
 import check_revision_collisions as C                                     # noqa: E402
 
 FAILED = []
@@ -129,8 +138,27 @@ def main():
     then, now = at_sha(AT), C.collisions()
     fresh = sorted(set(now) - set(then))
     print(f'    at {AT} (r3112): {len(then)} collisions.  now: {len(now)}.  new: {fresh}')
-    check(f'⓶ three collisions arrived after r3112 routed the remedy: {fresh}',
-          fresh == ['r3103', 'r3104', 'r3112'])
+    # ** ⛔⛭⛭ AND IT IS THE SAME CLASS A THIRD TIME, IN THE FILE THAT NAMES IT TWICE (r3964). **
+    # ** r3136 already repaired one check here for being pinned to a distance from the present, and
+    # ** wrote the remedy directly below: *"the rate is a property of the WINDOW the collisions fall
+    # ** in, not of how long ago the window was ... r3099-r3112, which is fixed forever."*  ** That
+    # ** remedy was applied to the RATE and not to `fresh` itself. **  `set(now) - set(then)` has no
+    # ** upper bound in time, so every collision the corpus has made since r3112 accumulates into a
+    # ** list asserted to equal exactly three -- and it now holds 49.
+    # **   ⇒ *** THE FINDING IS ABOUT A FIXED WINDOW AND THE MEASUREMENT MUST BE TOO. ***  Bounded
+    # **     to r3099-r3112 it is stable forever; the later collisions are REPORTED, and they make
+    # **     this file's thesis stronger rather than false -- *a finding that routes its own remedy
+    # **     and then recurs is not waiting for a decision.*  It went on recurring.
+    WINDOW = (3099, 3112)
+    in_window = sorted(r for r in fresh if WINDOW[0] <= int(r[1:]) <= WINDOW[1])
+    after = sorted(set(fresh) - set(in_window), key=lambda r: int(r[1:]))
+    check(f'⓶ three collisions arrived in the sixteen revisions after r3112 routed the remedy: '
+          f'{in_window}',
+          in_window == ['r3103', 'r3104', 'r3112'])
+    check(f'⛭ ⌗ and {len(after)} more have arrived since, outside that window -- reported, not '
+          f'pinned: the recurrence this file names did not stop when it was named, which is the '
+          f'thesis rather than a defect in it.  Last: {after[-3:] if after else "none"}',
+          len(after) >= 0 and set(after).isdisjoint(in_window))
     check('⛔ ⓶ᵇ *** and one of them is r3112 -- the revision that reported the class and routed '
           'its remedy chose a number the other line also chose ***',
           'r3112' in fresh and len(now[('r3112')]) == 2)
@@ -142,17 +170,18 @@ def main():
     #       `L-258`'s class again, in the receipt that registered the band against exactly that. ***
     #   ⇒ ** The rate is a property of the WINDOW the collisions fall in, not of how long ago the
     #     window was.  All three fall in r3099-r3112, which is fixed forever. **
-    nums = sorted(int(r[1:]) for r in fresh)
+    nums = sorted(int(r[1:]) for r in in_window)
     win = nums[-1] - 3099 + 1
     old_n = len(then) - len([r for r in then if int(r[1:]) >= 3099])
     check(f'⓶ᶜ and the window they fall in is FIXED: r{nums[0]}-r{nums[-1]}, inside r3099-r3112, '
-          f'{len(fresh)} collisions across {win} revisions -- {len(fresh)/win*100:.0f} per hundred '
+          f'{len(in_window)} collisions across {win} revisions -- '
+          f'{len(in_window)/win*100:.0f} per hundred '
           f'against {old_n} across the ~330 before r3099, which is {old_n/330*100:.1f} per '
-          f'hundred -- {(len(fresh)/win)/(old_n/330):.1f} times the rate',
+          f'hundred -- {(len(in_window)/win)/(old_n/330):.1f} times the rate',
           # ⌗ the assertion is DIRECTIONAL and unfitted: the recent rate is HIGHER, which is the
           #   whole claim.  *A multiple would be a threshold, and the first attempt at one -- `> 10x`
           #   against a measured 8.75x -- is how a threshold fitted to a memory fails.*
-          nums[0] >= 3099 and nums[-1] <= 3112 and len(fresh) / win > old_n / 330)
+          nums[0] >= 3099 and nums[-1] <= 3112 and len(in_window) / win > old_n / 330)
     check('⓶ᵈ ⌗ and the measurement no longer moves with HEAD: the first form of this check '
           'compared HEAD\'s revision number to r3112 and went red four revisions later, while the '
           'finding it defends did not change -- `L-258`\'s class, in the receipt that took the band '
@@ -202,9 +231,15 @@ def main():
           f'band and the check exits {rc} naming them -- so a green result is a measurement and '
           'not an empty set', rc == 1 and len(seeded) >= 1 and '[FAIL]' in buf.getvalue())
     check('⓸ᵈ and the parity is RESTORED -- verified, not trusted to the `finally`', C.PARITY == 0)
-    check('⓹ the one grandfathered id is NAMED, not dated: a cutoff silently absorbs everything '
-          f'behind it.  {sorted(C.BAND_GRANDFATHERED)}',
-          C.BAND_GRANDFATHERED == {'r3125'} and 'NAMED, not dated' in src)
+    # ⌗ and the same repair as `L251/N1`'s ⓹ᵈ (r3964): the claim is that exceptions are NAMED
+    #   rather than expressed as a cutoff, and it was tested as `== {'r3125'}`.  Two more have been
+    #   granted since, each named -- the mechanism behaving as this check argues it should.
+    #   ** An exception list that may never grow is not a named-exception list, it is a frozen one. **
+    check('⓹ every grandfathered id is NAMED, not dated: a cutoff silently absorbs everything '
+          f'behind it, a name absorbs exactly itself.  {sorted(C.BAND_GRANDFATHERED)}',
+          C.BAND_GRANDFATHERED
+          and all(re.fullmatch(r'r\d+', x) for x in C.BAND_GRANDFATHERED)
+          and 'r3125' in C.BAND_GRANDFATHERED and 'NAMED, not dated' in src)
 
     # ============================================================ (5) the half that is a request
     print()

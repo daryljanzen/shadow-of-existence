@@ -48,7 +48,9 @@ Run:  python3 receipts/L251_the_numbering_collides/N1_...py
 Written r3112 (`L-251`); PART 2 re-pinned and the band taken r3128 (`L-256`).  Stated for reversal.
 """
 import os
+import re
 import subprocess
+import subprocess as _sp
 import sys
 
 HERE = os.path.dirname(os.path.abspath(__file__))
@@ -88,13 +90,45 @@ declared = [s for s in found if s[2]]
 undeclared = [s for s in found if not s[2]]
 for n, p, d, _ in found:
     print(f'    {"DECLARED  " if d else "undeclared"}  {n:<26} [{p}]')
-check('⓵ six history phrases stand in paper bodies', len(found) == 6)
-check('⓵ᵇ ⛭ and exactly one DECLARES its tense with a revision id beside it -- so the discriminator '
-      'separates a deliberate then/now from an undeclared drift', len(declared) == 1)
-check('⓵ᶜ the declared one is p0\'s, which names r1609 in the sentence itself',
-      declared and declared[0][0] == 'geometric_core_paper.tex' and 'r1609' in declared[0][3])
-check('⓵ᵈ and the other five are the drift, across three papers', len(undeclared) == 5
-      and len({s[0] for s in undeclared}) == 3)
+# ** ⛭⛭⛭ RE-PINNED r3962/r3964, AND THE DEBT THIS PART MEASURED HAS BEEN PAID DOWN. **  At r3112
+# ** this file found SIX history phrases in paper bodies -- one declaring its tense with a revision
+# ** id beside it (p0's, naming r1609) and five drifting.  *** The corpus has since removed the
+# ** declared one and two of the five: three remain, all in P15, all undeclared. ***  r3157 took out
+# ** P15's thirteen body revision stamps and r3787 the status stamps, both under the one-state rule
+# ** this file argues for -- *a paper carries ONE STATE; what changed and when is the registers' job*.
+# **   ⇒ ** A COUNT PINNED AT SIX ASSERTS THAT NOBODY HAS CLEANED UP YET, and it fails when they do.
+# **     Re-pinning it at three would only reset that timer, which is `③`'s rule in receipts/PIN_DEBT.
+# **     ** Asserted as a RATCHET in the corpus's own idiom (`Q1`, r3944): the count may FALL freely
+# **     and fails only if narration RETURNS to the papers.  The live figure is reported, not pinned.
+_HISTORICAL_SITES = 6           # measured at 5af2a1da (r3112), this file's own build
+check(f'⓵ history phrases in paper bodies: {len(found)} now, against the {_HISTORICAL_SITES} this '
+      f'file measured at its own build -- the count may fall and must not rise',
+      min(len(found), _HISTORICAL_SITES) == len(found))
+check(f'⓵ᵇ ⛭ and {len(declared)} of them DECLARE the tense with a revision id beside it.  The '
+      f'discriminator is the point of this part and it is kept: a deliberate then/now names its '
+      f'revision, a drift does not -- and with the declared site now removed, EVERY remaining '
+      f'phrase is drift',
+      len(declared) == 0 and len(undeclared) == len(found))
+# ⌗ AND THE DISCRIMINATOR IS NOW UNEXERCISED BY LIVE DATA, which is worth saying rather than
+#   quietly dropping the check: with zero declared sites in the corpus, nothing in the papers
+#   proves the `REV`-near-the-phrase test can still return True.  ** So it is exercised against the
+#   commit that had one. **  *A classifier with no positive instance left is a classifier nobody is
+#   testing, and it will be wrong in silence the day one returns.*
+_p0_then = _sp.run(['git', 'show', '5af2a1da:corpus/geometric_core_paper.tex'],
+                   cwd=ROOT, capture_output=True, text=True, errors='replace').stdout
+check('⓵ᶜ the declared example was p0\'s, naming r1609 in the sentence itself -- present at '
+      '5af2a1da and gone now, so the corpus took the one-state rule to its own declared case too',
+      'r1609' in _p0_then
+      and not [d for d in declared if d[0] == 'geometric_core_paper.tex'])
+# ⌗ ratcheted with ⓵ above (r3964): five across three papers at r3112, and the drift may only
+#   fall.  The paper SPREAD is the part worth keeping sharp -- narration in one paper is a local
+#   habit, narration across three is a corpus-wide one -- so it is reported and ratcheted too.
+_HISTORICAL_DRIFT, _HISTORICAL_PAPERS = 5, 3
+_papers = {s[0] for s in undeclared}
+check(f'⓵ᵈ the drift is {len(undeclared)} phrase(s) across {len(_papers)} paper(s) -- '
+      f'{sorted(_papers)} -- against {_HISTORICAL_DRIFT} across {_HISTORICAL_PAPERS} at r3112, and '
+      f'neither may rise',
+      len(undeclared) <= _HISTORICAL_DRIFT and len(_papers) <= _HISTORICAL_PAPERS)
 # ** the phrase the observer line repaired must be GONE, or this sweep is measuring a stale tree **
 cosmo = open(os.path.join(ROOT, 'corpus', 'CR_cosmology.tex'), encoding='utf-8',
              errors='replace').read()
@@ -217,10 +251,23 @@ check('⓸ᵇ check_revision_collisions FIRES on a collision outside its baselin
       _fires_on_new())
 check('⓸ᶜ ⌗ and it is green as the tree stands, with those three now baselined BY NAME',
       C.main() == 0)
-check('⓸ᵈ and both gates name their known sites rather than counting them -- a count can be '
-      f'satisfied by fixing one and adding another.  {len(T.BASELINE)} tense sites, '
-      f'{len(C.BASELINE)} collisions, {len(C.BAND_GRANDFATHERED)} band exception',
-      len(T.BASELINE) == 5 and len(C.BASELINE) == 15 and len(C.BAND_GRANDFATHERED) == 1)
+# ** ⛔⛭⛭ AND THIS CHECK COMMITTED THE ERROR ITS OWN LABEL WARNS AGAINST (repaired r3964). **
+# ** The claim is that both gates *** NAME *** their known sites rather than COUNTING them --
+# ** "a count can be satisfied by fixing one and adding another" -- and the condition tested
+# ** `len(...) == 5 and len(...) == 15 and len(...) == 1`.  *** It pinned three counts. ***  The
+# ** collision baseline has since grown 15 -> 50 as the corpus went on numbering, which is the
+# ** baseline WORKING, and the check read it as a failure.
+# **   ⇒ ** What is load-bearing is the FORM: every entry is a NAME. **  That property is what makes
+# **     the baseline immune to fix-one-add-another, it holds at any size, and it is what the label
+# **     always claimed.  The sizes are REPORTED.  *This is `I7`'s lesson at a third site: the file
+# **     that states the rule is the file most likely to break it.*
+_named = all(isinstance(x, tuple) and len(x) == 2 and x[0].endswith('.tex') for x in T.BASELINE)
+_ids = all(re.fullmatch(r'r\d+|c54\.\d+', x) for x in C.BASELINE | C.BAND_GRANDFATHERED)
+check('⓸ᵈ and both gates NAME their known sites rather than counting them -- a count can be '
+      f'satisfied by fixing one and adding another.  {len(T.BASELINE)} tense sites, each a '
+      f'(paper, phrase) pair; {len(C.BASELINE)} collisions and {len(C.BAND_GRANDFATHERED)} band '
+      f'exception(s), each a revision id',
+      _named and _ids and T.BASELINE and C.BASELINE and C.BAND_GRANDFATHERED)
 
 print()
 print('=' * 78)
@@ -256,9 +303,17 @@ check('⓹ᶜ ⌗ and the gate cannot describe itself as prevention on a half it
       and 'if OTHER_HALF is None:' in _gate_src)
 check('⓹ᶜ¹ ⛭ and the other half IS held now, carried as a fact in the other line\'s own words '
       'rather than presumed', C.OTHER_HALF is not None and 'PARITY = 1' in C.OTHER_HALF)
-check('⓹ᵈ and the one grandfathered id is named, not dated -- a cutoff silently absorbs everything '
-      f'behind it: {sorted(C.BAND_GRANDFATHERED)}',
-      C.BAND_GRANDFATHERED == {'r3125'})
+# ⌗ same repair (r3964): the claim is that the exceptions are NAMED rather than expressed as a
+#   cutoff, and it was tested as `== {'r3125'}`.  Two more have been granted since, each named --
+#   which is the mechanism behaving exactly as this check argues it should.  ** An exception list
+#   that may never grow is not a named-exception list, it is a frozen one. **  What cannot happen
+#   is a DATE or a range appearing in it, and that is what is asserted.
+check('⓹ᵈ and every grandfathered entry is a NAMED revision id, not a date or a range -- a cutoff '
+      f'silently absorbs everything behind it, a name absorbs exactly itself: '
+      f'{sorted(C.BAND_GRANDFATHERED)}',
+      C.BAND_GRANDFATHERED
+      and all(re.fullmatch(r'r\d+', x) for x in C.BAND_GRANDFATHERED)
+      and 'r3125' in C.BAND_GRANDFATHERED)
 
 print()
 print('=' * 78)

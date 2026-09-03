@@ -1,4 +1,16 @@
-39
+27
+
+⛭⛭⛭ RE-MEASURED r3962 BY A COMPLETE RE-RUN, and *** THE HEAD COUNT ABOVE IS 27 AND IT IS THE
+GATE'S NUMBER. ***  649 pass, 46 fail, 4 over timeout, 1863s, at tree fa560eaf30b5f5c4.
+  ⌗ ** All 46 were classified rather than assumed: 19 carry a ModuleNotFoundError and ALL NINETEEN
+    are declared by name in `check_receipts_run.py`'s UNRUNNABLE list -- checked, not inferred from
+    an error string.  So 46 - 19 = 27 REAL. **  Against r3948's 39, twelve fewer.
+  ⌗ AND THE RUN PREDATES `r3964`'S SIX REPAIRS, so the live figure is lower than 27 and this file
+    does not say by how much.  *** The number is replaced when the gate speaks, never adjusted by
+    arithmetic between runs *** -- r3930's rule, which this file exists to keep.
+  ⌗ The timeouts are still four and still counted separately from failures.  The five-over-300s
+    question is unchanged and still Daryl's: the slowest that PASSES takes 171s here (was 277s), so
+    the cap is not the binding constraint it looked like, and raising it remains his call.
 
 ⛭⛭⛭ r3964 -- SIX MORE, AND *** THE DEBT HAS DEPENDENCY EDGES: ONE FIXTURE REPAIR CLEARED THREE
 RECEIPTS. ***  It is not 39 independent problems and should not be worked as though it were.

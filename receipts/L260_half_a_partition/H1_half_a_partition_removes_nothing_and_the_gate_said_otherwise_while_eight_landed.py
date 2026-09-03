@@ -62,6 +62,14 @@ import tempfile
 HERE = os.path.dirname(os.path.abspath(__file__))
 ROOT = os.path.abspath(os.path.join(HERE, '..', '..'))
 sys.path.insert(0, os.path.join(ROOT, 'corpus'))
+# ** ⛭⛭ NODE IS SET HERE, BEFORE THE IMPORT (r3964, with `L251/N1`). **  `check_revision_collisions`
+# ** reads `NODE` AT IMPORT TIME and *refuses to default* when unset -- r3679's rule, written after an
+# ** unset NODE silently certified the EVEN half on odd-banded trees and passed 21 collisions.  The
+# ** refusal is right; what was wrong is this file inheriting the answer from whoever ran it: unset in
+# ** a plain shell, `ci` under `sweep_gates.sh`.  ** A receipt asserting anything about a band is
+# ** making a claim about a NAMED line and must name it. **  Four receipts shared this defect and all
+# ** four were on the failure list; they are fixed together because it is one fault, not four.
+os.environ.setdefault('NODE', '60')
 import check_revision_collisions as C                                     # noqa: E402
 
 FAILED = []
