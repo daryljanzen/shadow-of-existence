@@ -81,13 +81,31 @@ def main():
     check('and does not ASSUME the floor, while now deriving it: "is not assumed here ... '
           'though it does in fact follow"',
           'is not assumed here' in p10 and 'though it does in fact follow' in p10)
-    check('and what the paragraph leaves open is the STRADDLE, not the floor -- 3/4 deciding whether a '
-          'boundary condition must be chosen, -1/4 whether a regular branch exists to choose',
-          'not the floor but the straddle itself' in p10
-          and 'has no object' in p10)
-    check('with a receipt cited for it: P10_the_straddle_does_not_need_a_floor',
+    # ⛔⛭⛭ RE-PINNED r3938, AND NOT BY MOVING THE PIN.  The check that stood here asserted that
+    #    "what the paragraph leaves open is the STRADDLE", pinned on 'not the floor but the straddle
+    #    itself'.  That phrase is gone from P10 -- and the CLAIM is gone with it, not merely reworded:
+    #    r3803 CLOSED the straddle, and P10 now reads "the straddle itself is now a COMPUTED FACT
+    #    \rcpt{P10_the_straddle_is_computed}: the spectrum does occupy both sides of 3/4".
+    #      ⇒ *** So the old check could not be re-pinned to new wording without CERTIFYING SOMETHING
+    #          FALSE.  A pin whose PROSE moved is re-pinned; a pin whose THESIS the rewrite killed is
+    #          REPLACED by what the rewrite established.  This is the second kind. ***
+    #    What the receipt is FOR survives untouched and is now stronger: the decomposition never
+    #    rested on the floor, and P10 now says the closure does not rest on the straddle either.
+    check('and the straddle is no longer open but COMPUTED: "the straddle itself is now a computed '
+          'fact", the spectrum occupying both sides of 3/4',
+          'straddle itself is now a computed fact' in p10
+          and 'does occupy both sides' in p10)
+    check('and the receipt\'s own thesis is what P10 now states outright -- the closure does not rest '
+          'on where the straddle falls, "supplied fibre by fibre and so cannot be broken by the size '
+          'of the sub-threshold set"',
+          'does not bear on the closure below' in p10
+          and 'fibre by fibre' in p10)
+    check('with both receipts cited for it present: P10_the_straddle_does_not_need_a_floor and '
+          'P10_the_straddle_is_computed (both RUN at r3938, both pass)',
           os.path.exists(os.path.join(ROOT, 'receipts', 'P10_canonical_time',
-                                      'P10_the_straddle_does_not_need_a_floor.py')))
+                                      'P10_the_straddle_does_not_need_a_floor.py'))
+          and os.path.exists(os.path.join(ROOT, 'receipts', 'P10_canonical_time',
+                                          'P10_the_straddle_is_computed.py')))
 
     # ⓶ the row asks for exactly that
     check('⓶ and the PO-6 row asks for exactly that: "whether it is bounded below"',

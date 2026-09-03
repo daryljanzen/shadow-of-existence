@@ -115,9 +115,17 @@ def main():
           abs(tot[1000]/(1000**4/4) - 1) < 0.01 and '$n\\ge 2$' in p10)
 
     # and what P10 asserted
+    # ⛭ RE-PINNED r3938.  `the standard problem of the interacting theory` was REMOVED from P10 at
+    #   r3871 -- deliberately, because that phrase's shared-character reading is what got PO-6
+    #   WRONGLY STRUCK.  The distinction it carried SURVIVES and is stated more strongly:
+    #   "That is a DIFFERENT THING FROM A RESIDUAL FREEDOM IN THE QUANTIZATION, and its shared
+    #   character with every interacting field theory DOES NOT SETTLE IT: the divergence is
+    #   MEASURED here rather than characterised---quartic, at a leading constant fixed by the
+    #   propagating-component count rather than assumed."
+    #   ⇒ Prose moved, thesis intact and stronger, so the pin moves with it.
     check('P10 asserted the remaining difficulty is "the standard problem of the interacting theory" '
           '-- now measured rather than characterised',
-          'the standard problem of the interacting theory' in p10)
+          'the divergence is measured here rather than characterised' in p10)
 
     print()
     if FAILED:

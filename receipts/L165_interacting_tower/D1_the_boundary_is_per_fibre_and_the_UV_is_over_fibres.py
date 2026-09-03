@@ -102,9 +102,18 @@ def main():
           and 'limit-circle where $\\hat\\Gamma<\\tfrac34$' in p10)
     check('and thermal regularity supplies the condition FIBRE BY FIBRE',
           'supplies the condition fibre by fibre' in p10)
+    # ⛭ RE-PINNED r3938.  `the standard problem of the interacting theory` was REMOVED from P10 at
+    #   r3871 -- deliberately, because that phrase's shared-character reading is what got PO-6
+    #   WRONGLY STRUCK.  The distinction it carried SURVIVES and is stated more strongly:
+    #   "That is a DIFFERENT THING FROM A RESIDUAL FREEDOM IN THE QUANTIZATION, and its shared
+    #   character with every interacting field theory DOES NOT SETTLE IT: the divergence is
+    #   MEASURED here rather than characterised---quartic, at a leading constant fixed by the
+    #   propagating-component count rather than assumed."
+    #   ⇒ Prose moved, thesis intact and stronger, so the pin moves with it.
     check('so that what remains open is "the standard problem of the interacting theory rather than '
           'a residual freedom in the quantization"',
-          'the standard problem of the interacting theory rather than a residual freedom' in p10)
+          'a different thing from a residual freedom in the quantization' in p10
+          and 'does not settle it' in p10)
 
     # the per-fibre fact: applicability does not vary
     sub = [-5, -0.25, 0, 0.25, 0.7499]

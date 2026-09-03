@@ -95,11 +95,19 @@ def main():
     check('⓸ and the COUPLED case is answered in the same sentence: with the tower coupled "the same '
           'thermal regularity supplies the condition fibre by fibre"',
           'thermal regularity supplies the condition fibre by fibre' in p10)
+    # ⛭ RE-PINNED r3938.  `the standard problem of the interacting theory` was REMOVED from P10 at
+    #   r3871 -- deliberately, because that phrase's shared-character reading is what got PO-6
+    #   WRONGLY STRUCK.  The distinction it carried SURVIVES and is stated more strongly:
+    #   "That is a DIFFERENT THING FROM A RESIDUAL FREEDOM IN THE QUANTIZATION, and its shared
+    #   character with every interacting field theory DOES NOT SETTLE IT: the divergence is
+    #   MEASURED here rather than characterised---quartic, at a leading constant fixed by the
+    #   propagating-component count rather than assumed."
+    #   ⇒ Prose moved, thesis intact and stronger, so the pin moves with it.
     check('so that "what remains open is not the boundary condition but the definition of the '
           'interacting tower---the standard problem of the interacting theory rather than a residual '
           'freedom in the quantization"',
           'what remains open is not the boundary' in p10
-          and 'the standard problem of the interacting theory' in p10)
+          and 'a different thing from a residual freedom in the quantization' in p10)
 
     print()
     if FAILED:

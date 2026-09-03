@@ -1,4 +1,29 @@
-62
+57
+
+⛭⛭ WORK STARTED r3938 (node 60), on Daryl's decision at r3908 -- ledger pass first, receipts after,
+and the standard is that they RUN.  ** 5 of 62 repaired; head count above is now 57. **
+  S4_the_open_half_is_the_floor                                     r3938  THESIS KILLED -> REPLACED
+  D1_the_boundary_is_per_fibre_and_the_UV_is_over_fibres            r3938  PROSE MOVED  -> RE-PINNED
+  D2_the_UV_degree_is_quartic_and_the_IR_is_free                    r3938  PROSE MOVED  -> RE-PINNED
+  S11_the_ordering_question_dissolves                               r3938  PROSE MOVED  -> RE-PINNED
+  S12_the_boundaries_coincide                                       r3938  PROSE MOVED  -> RE-PINNED
+
+** AND THE TWO KINDS ARE BOTH REAL, WHICH IS WHY THE RULE AGAINST MECHANICAL RE-PINNING HOLDS. **
+  ⇒ FOUR of the five were ONE prose change breaking FOUR receipts: `the standard problem of the
+    interacting theory` was removed from P10 at r3871 DELIBERATELY, because that phrase's
+    shared-character reading is what got PO-6 wrongly struck.  The distinction survives and is
+    stated more strongly -- "a different thing from a residual freedom in the quantization ... the
+    divergence is MEASURED here rather than characterised" -- so the pins move with it.
+    ⌗ *Four receipts, one diagnosis.  Read the failures TOGETHER before repairing any: the debt is
+    not 62 independent problems.*
+  ⛔ THE FIFTH COULD NOT BE RE-PINNED.  S4 asserted "what the paragraph leaves open is the
+    STRADDLE".  r3803 CLOSED the straddle: P10 now reads "the straddle itself is now a COMPUTED
+    FACT ... the spectrum does occupy both sides of 3/4".  Re-pinning that check to new wording
+    would have CERTIFIED SOMETHING FALSE.  It was REPLACED by what the rewrite established, and the
+    receipt's own thesis -- the decomposition never rested on the floor -- is now stronger, because
+    P10 states the closure does not rest on the straddle either, "supplied fibre by fibre".
+  ⌗ Every repaired receipt was RUN to green before committing, and the receipts each cites were run
+    too (P10_the_straddle_is_computed, P10_the_straddle_does_not_need_a_floor -- both pass).
 
 THE PIN DEBT -- receipts that FAIL WHERE THEY ARE REGISTERED on the current tree.
 
