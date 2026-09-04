@@ -209,6 +209,21 @@ def main():
             if _base == 0 and len(real) == 0:
                 print('    ⛭⛭ the pin debt is ZERO and the ratchet BINDS: any new failure now fails this gate.')
 
+    # ** r3999: A RECEIPT THAT NEVER FINISHES IS NOT A PASS, AND NOTHING WAS READING THE
+    #   SLOW LINES.  ** The runner names them -- `[slow] <path> -- exceeded Ns` -- but this
+    #   gate read only pass/fail, so "5 over timeout" appeared as a bare count with no names
+    #   and a receipt could time out on every run forever without surfacing anywhere a reader
+    #   looks.  60 found C59_the_control... returning rc=124 at a 1200s cap having reached only
+    #   PART 3 of 8: not a cap problem, A RECEIPT NOBODY HAS WATCHED COMPLETE -- while it is
+    #   registered PASS and carries PO-24's step-one result.  ** Registered and runs are not
+    #   the same claim. **
+    slowlines = re.findall(r'\[slow\] (\S+)\s*--\s*([^\n]*)', res)
+    if slowlines:
+        print(f'    ⛔ {len(slowlines)} receipt(s) NEVER FINISHED -- registered, never watched to completion:')
+        for pth, why in slowlines:
+            print(f'         {pth}   ({why.strip()})')
+        print('       A verdict in receipts/INDEX.md for one of these is a claim no run has confirmed.')
+
     if real:
         print(f'  ⛔ {len(real)} REAL failure(s):')
         for f in real:
