@@ -697,6 +697,9 @@ faces; **it does not cite it for the count**, which is the gap.
 # P6 · `corpus/shadow_of_existence.tex`
 ### *The shadow of existence: scientific theory-choice as an empirically grounded discipline, calibrated on the record*
 
+> **▣ THE READ IS COMPLETE** *(first pass r4043, completed r4065 after the stocktake found the back half of
+> least-arbitrariness, the modal-fallacy section and the constructive ordering unopened).*
+
 > **▣ P6'S ROW IS THE FIRST THAT PERMITS REACHING BOTH WAYS**, so the test changes: not "did it borrow" but
 > **does each forward draw serve the same epistemic end as the developed material?** On the read it does. The
 > defect found was the reverse of the usual one — P6 *understated* its own case by describing the corpus as
@@ -725,6 +728,31 @@ faces; **it does not cite it for the count**, which is the gap.
 ④ ANCHOR — ledger `integrable_systems`; the identification cites [[p12-algebroid]] and [[p17-geometric-core]].
 ⑤ JOINS — [[p17-geometric-core]] · [[p12-algebroid]] · [[p7-cr-framework]].
 ⑥ NOT OP FOR — **⛔ THE REGISTER'S BOUNDARY IS DRAWN WITH IT, AND THE GUARD SEPARATES THREE SENSES OF "MODULUS" THAT THE CORPUS OTHERWISE RUNS TOGETHER.** ① *An unforced parameter indexing candidate worlds* — unpinned, so the candidate answers "what is the world?" with a family. **This alone is what the criterion excludes.** ② *A coordinate on a space of inequivalent solutions* — as the mass is for the space of cuts, transverse to the orbits. **The criterion does not exclude this and nothing here counts against it**: a space of physically distinct solutions is not a family of rival worlds, and a theory is not made arbitrary because its solutions differ. ③ A choice that leaves the symmetry **maximal** — since a modulus fixes how a symmetry is *broken*, an unforced choice leaving it unbroken **lies outside the register entirely**, the dimension of a maximally symmetric substrate being the programme's first such case; *where form is silent, content may still decide.* **A criterion claimed to apply everywhere is as suspect as one applying only where it was formulated.**
+
+
+### the-boundary-is-a-populated-class-with-an-edge
+① CLAIM — The register's boundary is not one exception but **a class with three members and two near-misses**, and the near-misses are what give it an edge. **Members** (discrete, leaving the symmetry maximal, fixing no breaking, hence beyond the criterion's reach): the **dimension**; the **number of layers** in the ontology — *the programme's founding move rather than a detail of it*; and **which real form** of the complexified structure is taken as existent. **Not members**: the **signature**, which is not an unforced choice at all, being intrinsic to positive curvature; and the **orientation**, which is not a choice because the configuration's symmetry group is transitive on the objects that would distinguish one.
+② REGISTER — **RECEIPT-ANCHORED SURVEY**, run against the definition of a modulus.
+③ HOME — P6 §4.1.
+④ ANCHOR — `P06_the_boundary_is_a_class`.
+⑤ JOINS — [[p17-geometric-core]] · [[p13-boundary]] · [[p14-matter-sector]] · [[p7-cr-framework]].
+⑥ NOT OP FOR — **⛔ The members are not settled the same way, and that difference is the more interesting half.** The dimension is settled by *content*. The layering is settled by the existence criterion itself — *it is the leaf that carries the clock* — so the criterion is silent on the **number** while deciding which layer is existent, **a subtler position than silence.** **And the real form is recorded as having WEAKENED**: the colour structure that had been the reason to take the compact face seriously turns out not to be an isometry of either real form, being carried instead by the branch structure of the signed radius — *so one motivation is removed and the choice stands more exposed than it did.* P6 files that as it falls, which is what a subsection announcing a boundary should be willing to do.
+
+### where-form-is-silent-content-may-still-decide
+① CLAIM — **A choice the criterion cannot reach need not be free.** The dimension is settled, within the framework, by *content*: the matter sector's two deliverables do it. The fold its generation count reads is $D-1$ and exists at all only where a single slicing scale removes the residual harmonics — **four and five spacetime dimensions and no other** — while the mass-parity grading chirality exists only in **even** dimension. **Four is therefore the only dimension carrying both a generation count and a handedness.**
+② REGISTER — **DERIVED**, from two companion results whose intersection is the answer.
+③ HOME — P6 §4.1.
+④ ANCHOR — none; cites [[p3-sds-slicing]] and [[p14-matter-sector]].
+⑤ JOINS — [[p3-sds-slicing]] (the $D=4$/$D=5$ dimension result) · [[p14-matter-sector]] (the parity that breaks the tie) · [[p17-geometric-core]].
+⑥ NOT OP FOR — **⛔ Three miscountings P6 forecloses in its own voice, and all three are ways a synthesis could inflate the record.** ① *Not a sixth instance of the criterion* — the instances are five applications, this is a boundary, and counting a case where the criterion was **silent** as one where it **worked** is the survivorship error run in a new direction. ② *Not an instance of the engine's pattern* — that pattern is a selection made on least-arbitrariness **before** its discriminator arrived; here the discriminator was already in hand and the selection is made **by** it, so *the vindication lemma's exposure is exactly what it was.* ③ *Not a weakening of Rule 2*, which was exercised on live material in the same enquiry and discriminated correctly without being told which way to go: asked whether a higher-dimensional substrate could supply colour as an isometry, it found the structure group **permits** one — $\mathfrak{so}(6)$ reducible to $\mathfrak{su}(3)$ only given a complex structure and a volume form **nothing in the construction supplies** — and Rule 2 condemns that as no explanation but a description. *One enquiry, one requirement and one permission, told apart by the criterion rather than by preference.*
+
+### the-constructive-ordering
+① CLAIM — The imperative fixes a **direction of construction**, and inverting it is the standing error of which naïve realism is the local symptom. The valid order: **ontology ← evidence; kinematics ← ontology; coordinates ← kinematics.** The reification error runs the chain backward — taking the coordinate system as given and reading an ontology off it, treating the map as the territory and an apparent symmetry of the description as a fact about the world. **Applied to a mature mathematical theory the demand is sharper than it first appears**, because there the appearances include not only what is seen but *the formal structures one has derived*: the rule becomes **resist reifying the coordinate system, and ask what world must exist for the appearances and for the formal structures alike to make sense.**
+② REGISTER — **STATED**, as the imperative's constructive form.
+③ HOME — P6 §6.
+④ ANCHOR — none.
+⑤ JOINS — [[p7-cr-framework]] (the four-manifold as coordinate scaffold) · [[p4-modern-parallax]] · [[p10-canonical-time]].
+⑥ NOT OP FOR — *This is the ordering the whole corpus claims to follow, so it is also the standard the corpus is checkable against.* **A result reached by reading an ontology off a formalism has run the chain backward** — which is the charge P6 levels at the standard reading, and the one the corpus must not itself incur.
 
 ### the-modal-fallacy
 ① CLAIM — The imperative's characteristic dual: **the absence of a local discriminator is not the absence of the fact.** Reading local undetectability as non-existence is a modal error, and it is the error the century-old reading of synchrony's relativity committed.
@@ -894,7 +922,7 @@ faces; **it does not cite it for the count**, which is the gap.
 | **P1** | 12,085 | read sequentially from the masthead to the bibliography, no section skipped | **complete** |
 | **P4** | 5,906 | completed r4059 — the two floor subsections and the whole history section had been skipped | **complete** |
 | **P2** | 13,604 | most sections opened, but read through display filters that demonstrably dropped lines | **not attestable — re-read owed** |
-| **P6** | 13,134 | imperative, rules, least-arbitrariness and its boundary, engine, reflexive, boundary, placement; **the modal-fallacy and constructive-ordering sections and the back half of least-arbitrariness were not read** | **incomplete** |
+| **P6** | 13,134 | completed r4065 — the back half of least-arbitrariness, the modal-fallacy section and the constructive ordering had not been opened | **complete** |
 | **P5** | 16,558 | completed r4063 — rigidity, the seam section, the diagnostic, the cosmological-completion section, the algebroid subsection and the closing had not been opened | **complete** |
 | **P3** | 28,931 | completed r4061 — the horizon-locus, two-readings, charge, temporal-three-ness, rigidity-groupoid, coupled-operations and closing sections had never been opened | **complete** |
 | **P7** | 43,900 | every section, r4049–r4057 | **complete** |
