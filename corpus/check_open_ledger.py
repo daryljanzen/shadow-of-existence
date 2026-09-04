@@ -159,8 +159,40 @@ def main():
             c = re.sub(r'\s+', ' ', re.sub(r'\\rcpt\{[^}]*\}', '', claim)).strip()[:180]
             note = ('   ' + why[k]) if why.get(k) else ''
             lines.append(f'{k} | {paper} | {v} | {c}{note}')
+        # ⛔⛭⛭ r4022 (node 60): ** THE COMMENT SIX LINES ABOVE WAS NOT TRUE, AND THE CASE IT
+        #   FAILED IN IS THE ONLY CASE `--rebuild` EXISTS FOR. **  `keep` and `why` are keyed by
+        #   the SENTENCE HASH.  A reworded sentence gets a NEW hash, so its verdict and its `##`
+        #   note were not carried -- they were dropped, the row came back UNVERDICTED, and the
+        #   run printed "rebuilt: N entries, M new" and returned 0.
+        #     ⇒ *Measured, not argued: 61's r4019/r4021 reworded two qualifications in P1 and P2.
+        #       A bare rebuild turned `fbc49a1707 | SELF-ANSWERED` into `518af53f10 | UNVERDICTED`
+        #       and took its note -- the r2631 discharge and the r3920 confirmation -- to zero
+        #       occurrences in the file.*
+        #   ⌗ ** A rewording is not a retraction. **  The paper still says the thing; it says it in
+        #     fewer words.  Dropping the verdict makes the corpus re-read a question it already
+        #     answered, which is the exact cost this ledger was built to stop paying.
+        # ** NOTHING IS AUTO-CARRIED.  ** A verdict re-homed by machine onto prose that may have
+        # changed MEANING would bless a claim nobody read -- so the orphans are PRESERVED AS
+        # COMMENTS and named on stdout, for a reader to re-home deliberately.  The looking still
+        # has to be written down; this only stops the looking already done from being deleted.
+        orphans = [k for k in led if k not in cur and led[k][1] != 'UNVERDICTED']
+        if orphans:
+            lines.append('')
+            lines.append('# ── ORPHANED BY A REWORDING (r4022) ' + '─' * 44)
+            lines.append('# These rows carried a VERDICT and their sentence is no longer in any paper')
+            lines.append('# at this hash -- usually because it was REWORDED, not withdrawn.  Re-home')
+            lines.append('# each onto its new id after checking the new wording says the same thing,')
+            lines.append('# or delete it if the paper really did drop the claim.')
+            for k in sorted(orphans, key=lambda k: (led[k][0], k)):
+                lines.append('# ' + f'{k} | {led[k][0]} | {led[k][1]} | {led[k][2]}')
         open(LEDGER, 'w', encoding='utf-8').write('\n'.join(lines) + '\n')
         print(f'  rebuilt: {len(cur)} entries, {sum(1 for k in cur if k not in keep)} new')
+        if orphans:
+            print(f'  ⛔ {len(orphans)} VERDICTED row(s) orphaned -- preserved as comments at the'
+                  ' foot of the ledger, NOT dropped:')
+            for k in sorted(orphans, key=lambda k: (led[k][0], k)):
+                print(f'       {k} ({led[k][0]}, {led[k][1]})')
+            print('     Re-home each onto its new id once you have read the new wording.')
         return 0
 
     print(f'  papers hold {len(cur)} distinct qualification(s); ledger holds {len(led)}.')
