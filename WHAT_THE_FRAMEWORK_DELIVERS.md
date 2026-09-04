@@ -1,7 +1,7 @@
 ---
 name: what-the-framework-delivers
 kind: REFERENCE
-current: r4001
+current: r4003
 job: The inventory of what Cosmological Relativity delivers, assembled by reading the corpus rather than by counting its typography, so that the one open residual can be weighed against it at their true relative sizes — and so that what the residual actually MEANS is on the record beside how big it is. Read WHEN JUDGING THE PROGRAMME AS A WHOLE — for publication decisions, for a reader's first orientation, or when the open problem has begun to feel larger than it is.
 sources: [chat]
 ---
@@ -679,6 +679,37 @@ hundred-odd dissolutions" invites reading 182 word-hits as 182 findings.*
   height**.*
 
 ---
+
+- ⛭⛭⛭ **THE CENTRAL THEOREM — `P07` `sec:central`, THREE RESULTS LANDED TOGETHER, and absent from this
+  document until `r4003`.** *The paper's own spine, stated in summation of everything the pieces compose,
+  on six fixed foundational data (`F1`–`F6`) drawn from the companion papers.*
+
+  | | |
+  |---|---|
+  | **①** | *the augmentation is the **necessary and sufficient** completion under which general relativity describes a world that **exists and evolves at all** — **a required augmentation, not an optional interpretation, with its necessary half MEASURED*** |
+  | **②** | *on that augmentation **gravitational collapse cannot terminate but must continue as a cosmology** — the collapse horizon and the cosmological seam **one ontological layer*** |
+  | **③** | *and it holds for collapse of **any symmetry** — non-spherical collapse **dissolved rather than deferred*** |
+
+  - ⛭⛭ ***NECESSARY, and the argument names what the alternative smuggles***: *a description lacking the
+    ontological lapse **collapses existence into occurrence** — it grants the four-manifold the existence
+    that belongs to the evolving layer, which on analysis ***smuggles a fifth, meta-temporal dimension
+    general relativity does not contain***, and is incoherent as a basic description. **Its canonical
+    symptom is the frozen problem of time.***
+  - ⛭⛭ ***SUFFICIENT, by closing the only two escapes***: *fixing the one physical foliation and reading
+    it ontologically — the lapse the existent's rate of advance, the shift the relativity of synchrony —
+    closes the **"events exist"** horn as that category error, and the **"no objective present"** horn as
+    a modal fallacy, *the latter falsified outright by the measured redshift isotropy*. ***"No alternative
+    survives."***
+  - ⛭⛭⛭ ***AND THE NECESSITY IS MEASURED, NOT MERELY ARGUED — which is the sharpest line in the
+    paper***: *the physical foliation the lapse requires is **not posited but read directly off the
+    redshift isotropy**, so the augmented sub-region of general relativity and the empirically forced
+    foliation are **one and the same circle**.* ⇒ ***"The augmentation is thus the structure the world is
+    found to REALIZE, not merely one it may coherently take."***
+  - ⌗ *The theorem rests on six declared data rather than on a chain of prose: the horizon's causal
+    structure from **Lorentzian causal structure alone, making no use of spherical symmetry**; the
+    singularity taxonomy; the slicing curve with Nariai as the **fixed point of the root-exchange
+    involution, the unique tilt whose fundamental worldline meets no horizon**; the reassignment groupoid;
+    the forced foliation; and the canonical problem of time.*
 
 - ⛭⛭⛭ **THE GENERAL-RELATIVITY/QUANTUM DIVIDE AND THE GRAVITY/GAUGE DIVIDE ARE ONE FACT — `P13`
   `sec:synthesis`, and the whole of it was missing from this document until `r4001`.** *The claim is not
