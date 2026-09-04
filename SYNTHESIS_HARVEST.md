@@ -804,6 +804,41 @@ faces; **it does not cite it for the count**, which is the gap.
 ⑤ JOINS — [[p15-cr-cosmology]] (**owns the calculation**) · [[p16-cosmogenesis]].
 ⑥ NOT OP FOR — **⛔ THIS IS THE SINGLE MOST IMPORTANT ENTRY IN THE P7 BLOCK FOR THE SYNTHESIS, AND IT IS THE ONE MOST EASILY LOST.** A results paper that lists what the corpus delivers and omits this has misrepresented the corpus, because the corpus itself does not omit it. **What remains is a diagnosis rather than a calculation**: whether the misplaced phase is a defect of the seam treatment, of the transfer, or of the geometry the transfer runs on is the open question — *and the paper notes it is a sharper question than the item it replaces.* **The related frontier note is equally load-bearing**: the uniform comb follows from an ordering that is **not adjustable** — the acoustic modes re-enter above the onset, so none crosses while there is a plasma to be driven, and the nucleosynthesis plasma is the progenitor's, complete before the branch point.
 
+
+---
+
+# ⛭ READ-COVERAGE STOCKTAKE · P1–P7
+### *Measured, not recalled — because "read and harvested" is a claim, and it was got wrong once*
+
+> **⌗ WHY THIS EXISTS.** *r4047 claimed P7 was read when about 15% of it had been. That was caught by Daryl
+> asking a direct question, not by any instrument. So the same question is asked of every earlier paper, and
+> answered by what can actually be attested rather than by impression. **A partial harvest looks exactly like a
+> complete one**, which is why this has to be written down.*
+
+| paper | body words | coverage | verdict |
+|---|---|---|---|
+| **P1** | 12,085 | read sequentially from the masthead to the bibliography, no section skipped | **complete** |
+| **P4** | 5,906 | completed r4059 — the two floor subsections and the whole history section had been skipped | **complete** |
+| **P2** | 13,604 | most sections opened, but read through display filters that demonstrably dropped lines | **not attestable — re-read owed** |
+| **P6** | 13,134 | imperative, rules, least-arbitrariness and its boundary, engine, reflexive, boundary, placement; **the modal-fallacy and constructive-ordering sections and the back half of least-arbitrariness were not read** | **incomplete** |
+| **P5** | 16,558 | category, generators, relations, completeness, single-reassignment, attribution; **rigidity, the seam section, the monodromy section and the closing were sampled at best** | **incomplete** |
+| **P3** | 28,931 | abstract, introduction, substrate, cubic, projection, dimension, hinge geometry, curvature, sweep, lap, closing; **roughly half the body unopened, including most of the tour and the rigidity groupoid sections** | **most incomplete** |
+| **P7** | 43,900 | every section, r4049–r4057 | **complete** |
+
+**⌗ WHAT A PARTIAL READ DEMONSTRABLY MISSES — the two failure modes now have names, from cases.**
+*① **Results living only in the front matter.** Found in P3 (seven), P5 (one), P7 (three). A probe by technical
+marker finds these; a probe by sentence window does not, since it flags paraphrase as absence.*
+*② **Formulas that read as scrupulousness.** "Coherence and not correspondence", "self-consistency is not
+soundness" — three printed occurrences across three papers, and **I read past the P6 one on a first pass**. It
+was caught only by meeting the same formula again in P7 and then grepping. **So this class is not caught by
+reading carefully; it is caught by recognising a repeat.** A first pass over a single paper is the wrong
+instrument for it, and a corpus-wide grep is the right one.*
+
+**⌗ AND A THIRD CLASS NO INSTRUMENT SEES AT ALL: LaTeX comments.** *arXiv distributes `.tex` source. One
+working comment in P7 was found by reading and neutralised (r4051); a grep for the specific words found nothing
+else, but that is a weak check — a stale instruction, a private judgement of a named person, or an unresolved
+note to self carries the same risk and matches no keyword. **A comment sweep is owed and is its own pass.***
+
 ---
 
 ## THE FRONTIER GATHER
