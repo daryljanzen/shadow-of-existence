@@ -380,7 +380,7 @@ reference says where the answer is and does not borrow it. Collapsing the two lo
 ① CLAIM — **The number three in the hinge figure is reached twice, by arguments that share no premise.**
 **Route A (P3, algebraic).** The horizon cubic has three roots; a vantage is fixed by which root it reads as its own black-hole horizon; the roots are on the same footing, so the vantages are, and there are exactly as many — three, at $120^\circ$, with the root-permutation group relating them.
 **Route B (p0/17, dimensional).** Written at general dimension the hinge figure is a regular $(D-1)$-gon with the throat as its incircle. **At $D=4$ that is a triangle.** p0 then separates which of the hinge relations are dimensional accidents and which are not: the tangent length equalling the hinge's height survives at every $D$ (both are $\sqrt{R^2-\alpha^2}$), as does midpoint tangency (a property of any regular polygon's incircle); what does **not** survive is the placement $R=2\alpha$, the $60^\circ$ subtense, and the throat's identification with the nine-point circle.
-② REGISTER — **Route A: established in P3** (§8.1, as of r4029). **Route B: established in p0/17.** **⛔ The two have never been stated together, and the joint claim — that three is forced twice over on the geometry alone — appears nowhere.**
+② REGISTER — **Route A: established in P3** (§8.1, as of r4029). **Route B: established in p0/17 — and, on the read, P3 already contains the $(D-1)$-gon generalisation too**, using it in its dimension section as a *check* on the $D=4$/$D=5$ result ("the hinge placement generalises to a regular $(D-1)$-gon with the throat as incircle, whose vertex distance returns the forced $2\alpha$ at $D=4$"). **⛔ So the gap is narrower and more specific than "the corpus lacks Route B": P3 has the generalisation in hand and never reads it back as an independent derivation of the count.** The joint claim — that three is forced twice over, algebraically and dimensionally — appears nowhere.
 ③ HOME — P3 §8.1–§8.2; p0/17's general-dimension treatment of the hinge figure.
 ④ ANCHOR — `alpha_alone`, `euclid7_nine_point`, `P03_the_sixth_equivalence` (Route A's figure); p0's own for Route B.
 ⑤ JOINS — [[p3-sds-slicing]] · [[p17-geometric-core]] · [[p14-matter-sector]].
@@ -392,6 +392,81 @@ from the dimension and separates which of its relations are special to $D=4$~\ci
 **⛔ Phrased as a second route and not as support** — Route A must stand alone, exactly as the derivation
 now written does. P3 already cites the geometric-core paper in the $2\alpha$ paragraph for the circle's other
 faces; **it does not cite it for the count**, which is the gap.
+
+
+---
+
+# P3 · `corpus/SdS-slicing-curve_v2.tex`
+### *The de Sitter substrate and its slicing curve: horizons as turning points, de Sitter and Schwarzschild as two readings*
+
+> **▣ P3'S FLOOR AND ITS LICENCE.** *P3 may use P1 and P2 and works in the perspectival reading P2 set out. It
+> is the geometric machinery paper and is licensed to **overdevelop** — but every piece must be motivated by a
+> question visible inside P3. As of r4029--r4033 it meets that test at the place it previously failed: **the
+> number of hinges is now derived from the horizon cubic before any matter is mentioned.***
+
+### the-slicing-curve-and-its-turning-points
+① CLAIM — One radial curve $r(l)$ with $\dd r/\dd l=\sqrt{|f|}$, $f=1-2M/r-r^2/\alpha^2$. $\dd r/\dd l$ vanishes exactly where $f=0$: **the horizons are the turning points of the slicing curve** — non-degenerate at simple roots ($\dd^2r/\dd l^2=\pm\tfrac12 f'\neq0$), degenerate at the double root. Clearing the denominator gives the horizon cubic $r^3-r+2M=0$ in the gauge $\alpha=1$, whose three regimes are read off the single discriminant $4-3r_0^2$.
+② REGISTER — **DEFINITION AND PROPOSITION**, proved.
+③ HOME — P3 §2–§4, `def:slicing`, `prop:turning`.
+④ ANCHOR — the section's own; the trichotomy is also read from the 2012 dissertation's discriminant.
+⑤ JOINS — [[p2-janzen-circle]] · [[p8-slicing-operator]] (promotes the curve from classifier to generator) · [[p9-range-paper]] · [[p7-cr-framework]].
+⑥ NOT OP FOR — **Proper distance $l$ is derived, not the spine.** At the degenerate member the merging horizons stand infinitely far apart in $l$ (the integral diverges logarithmically) while the Gaussian curvature there is finite and the geometry regular — *a coordinate running to infinity where the invariant curvature is finite is reporting on the slicing, not on the manifold.* The spine is the signed $r$; the clock is the swing angle.
+
+### alpha-is-the-invariant-and-is-never-sent-to-a-limit
+① CLAIM — $2M=\alpha\bigl((r_0/\alpha)-(r_0/\alpha)^3\bigr)$ is **linear in $\alpha$ with a dimensionless slicing profile as its coefficient**, so $M$ cannot be held fixed while $\alpha$ varies without turning the slicing. Hence $\alpha\to\infty$ at fixed $M$ drives the profile to zero, which is a choice of reticle offset and not a limit of the geometry. **Schwarzschild is this substrate read at a small sky angle, not a limit of it.** The throat radius is the invariant — fixed under the reading-swap, across all slicings, and under the projection; $M$ is its slicing- and projection-dependent factor, bounded by $\alpha$. *Mass is a turning point, not a coefficient.*
+② REGISTER — **PROVED**, and the prohibition is stated as a *consequence* of the mass section rather than as a stipulation.
+③ JOINS — [[p17-geometric-core]] (one scale, constants as gauges) · [[p7-cr-framework]] · [[p15-cr-cosmology]].
+④ ANCHOR — none.
+③ HOME — P3 §1 and §10.4 (`sec:mass`).
+⑥ NOT OP FOR — **⛔ This is the guard that stops the whole construction being read as "SdS with $\Lambda$ small".** Any synthesis sentence taking a $\Lambda\to0$ or $\alpha\to\infty$ limit of this construction dismantles the throat it lives on.
+
+### the-root-exchange-is-a-symmetry-of-the-line-element
+① CLAIM — The cubic factors cleanly when the slicing parameter is one of its own roots, $(r-r_0)(r^2+rr_0+r_0^2-1)=0$ with $2M=r_0-r_0^3$. The map carrying one root to another, $\sigma(r_0)=\tfrac12(-r_0+\sqrt{4-3r_0^2})$, is an **involution** with fixed point at $r_0=1/\sqrt3$ (the degenerate member). Because $f$ depends on $r_0$ only through $2M$, and both roots return the same $2M$, **the exchange leaves the metric function strictly unchanged**: it is a genuine symmetry of the line element, not a coincidence at one parameter value.
+② REGISTER — **PROPOSITIONS**, proved. The involution's closed form is read from the 2012 dissertation's expression for the two further horizons, here read as a *map*.
+③ HOME — P3 §5.1–§5.3.
+④ ANCHOR — `P03_the_two_splits`.
+⑤ JOINS — [[p5-groupoid]] (the complete within-geometry morphism group) · [[p12-algebroid]] · [[p7-cr-framework]].
+⑥ NOT OP FOR — **⛔ A second partition of the same triple runs alongside the designation split and the two are neither independent nor identical**, which P3 states rather than leaving side by side. They coincide exactly when $|r_0|>1$; the discriminating quantity is the offset, not the mass; and **at the degenerate member the designation split loses its content while the sign split stays sharp.** *Two structures that fail in different places are not two readings of one structure.*
+
+### the-projection-fixes-the-parameter-and-forces-the-triple-angle
+① CLAIM — The slicing parameter is fixed by the geometry of observation: the hole's image lies on the observer's celestial sphere, and a planar chart forces the **gnomonic** projection (orthographic excluded). The offset is then $r_0=\tfrac{2}{\sqrt3}\sin w$ with $w$ a genuine geometric angle, and the horizon relation is the **pure triple angle** $2M=\tfrac{2}{3\sqrt3}\sin 3w$, the slicing scale $2/\sqrt3$ forced as the unique value removing the residual harmonic. The throat carries a second genuine angle $u$ with $\sin u=\tfrac{2}{\sqrt3}\sin w$, and the chart involution and the cubic involution are **one involution in two coordinates**, conjugate by an explicit closed-form map.
+② REGISTER — **PROPOSITIONS**, proved.
+③ HOME — P3 §6.1–§6.3.
+④ ANCHOR — the section's own.
+⑤ JOINS — [[p5-groupoid]] (the sky angle as the cubic's Galois closure) · [[p17-geometric-core]].
+⑥ NOT OP FOR — **Three parameters, each blind to something, and P3 declares all three at the outset rather than letting them blur.** $u$ is tied to one circle and cannot see which member is in play; $w$ collapses the three-fold structure into $\sin 3w$ and **folds the involution from view as a mere reflection**; $r_0$ is one number per seam and cannot see where on the lap one stands. *The full symmetry is reached only by carrying them coupled* — which is why the paper is written object-first, the swinging door being the thing and the three angles its projections.
+
+### the-dimension-result
+① CLAIM — The collapse to a pure multiple angle is available at $D=4$ and, up to a parity, at $D=5$, **and in no other dimension**: from six dimensions upward the harmonics standing below the top one number two or more while the construction has a single scale to spend. Two independent checks: the hinge placement generalises to a regular $(D-1)$-gon with the throat as incircle, whose vertex distance $\alpha/\cos(\pi/(D-1))$ returns the forced $2\alpha$ at $D=4$; and in both surviving dimensions the tangent from a hinge lands on the Nariai radius computed independently from the double root. **And the one input the extension formerly assumed is now obtained**: the $D$-dimensional $f$ was taken as the standard Tangherlini–de Sitter form, and the slicing operator's vacuum condition — the kernel of the matter functional on a cut — generalises without adjustment, $T^t{}_t=0$ giving a first-order linear equation whose *entire* solution space is that family with $M$ the single constant of integration.
+② REGISTER — **RECEIPT-ANCHORED**, several.
+③ HOME — P3 §6.2 (the dimension remark).
+④ ANCHOR — `P03_dimension_collapse`, `P03_operator_at_general_D`, `P03_reach_probe_deepening`, `P03_step3_sweep`, `P03_step3_refused`.
+⑤ JOINS — [[p8-slicing-operator]] · [[p14-matter-sector]] (which of $D=4$ and $D=5$ survives is settled there, on the parity of $2M$ in the signed offset) · [[p17-geometric-core]].
+⑥ NOT OP FOR — **⛔ The separation of what is dimension-independent from what is decoration is the reusable part, and it cuts against the construction's prettiest facts.** Of the five equivalent hinge statements, the two that are the *substrate's* — tangent length equalling the hinge's height, and midpoint tangency — hold at every $D$; the three that are the *equilateral triangle's* do not, the nine-point identification failing because Euler's theorem is about triangles. *The load-bearing identity is on the dimension-independent side; what is dimension-specific is the decoration.* **Two inputs still remain**, stated at source: that the construction gauge's lock $g_{tt}g_{rr}=-1$ is enforced at general $D$, and that the transverse space is the round $S^{D-2}$.
+
+### the-forced-pivot-and-what-it-produces
+① CLAIM — The de Sitter and Schwarzschild descriptions are not two labellings of one swept geometry but **two sweeps of one curve**, differing in whether the sweep can be taken about the manifold's own symmetry axis. The de Sitter vantage sweeps the complete arc about that axis and breaks no symmetry. The Schwarzschild vantage, viewing the hole from outside in the timelike orientation, **cannot use that axis and is forced to pivot on a selected off-axis point** — the critical point the chart labels $r=0$. **This forced pivot is the geometric origin of the horizon-versus-singularity asymmetry P2 found algebraically.** There is not a second symmetry break here but one, cascading: the manifold's single broken symmetry is the hole, and an observer who takes the hole as reference is forced into everything that follows.
+② REGISTER — **ARGUED**, and P3's own answer to the question P2 left open.
+③ HOME — P3 §10.3 (`sec:sweep`).
+④ ANCHOR — none.
+⑤ JOINS — [[p2-janzen-circle]] (**this closes P2's stated-open question**) · [[p8-slicing-operator]] · [[p6-shadow-of-existence]] · the $r=0$ cross-paper join above.
+⑥ NOT OP FOR — **⛔ P3 is careful about exactly what survives the sweep and this is easy to overstate.** The two critical points are *topologically* identical on the substrate — two matching turning points of one intrinsic curve — and **emphatically not metrically identical**, because the metric fixes curvature through its second derivatives and on the swept geometry that curvature is lopsided. *The identity is topological and lives on the substrate; it does not survive onto the geometry.* **And read the other way the same fact says how the construction PRODUCES a curvature singularity** — by the sweep about the areal origin and at no other locus, which is why none of them is fundamental.
+
+### the-rigidity-and-the-two-distinct-operations
+① CLAIM — The slicing curve is an **intrinsic curve on the de Sitter manifold**: the slicing parameter marks a point on it and the horizon relation $2M=r_0-r_0^3$ is read off the manifold curve, not off any chart. Moving the charting observer changes only the image of the curve on that observer's celestial sphere — the geometry is rigid — so admissible charting vantages form a groupoid of descriptions whose single invariant is the geometry, $M$ included. **This must be held apart from the de Sitter/Schwarzschild correspondence, which is a different operation**: not re-charting a fixed swept geometry, but one curve swept from two vantages.
+② REGISTER — **PROPOSITION** (`prop:rigidity`), proved; the within-geometry morphisms are shown **forced discrete** by the rigidity, with the involution and the sky-angle periodicity as forced generators.
+③ HOME — P3 §11.
+④ ANCHOR — none.
+⑤ JOINS — [[p5-groupoid]] (**owns the completeness question**) · [[p12-algebroid]].
+⑥ NOT OP FOR — **Whether those generators generate the discrete structure in full is NOT settled here** and is carried in the companion; P3 states the generators as forced and stops. *The two operations are the thing most likely to be run together in a synthesis, and P3 separates them explicitly.*
+
+### the-seam-and-the-closed-lap
+① CLAIM — The equatorial seam joins a Riemannian spherical piece to a Lorentzian de Sitter piece by $\theta\mapsto\pi/2+i\psi$, $\sin\theta\mapsto\cosh\psi$; **the signature flip is automatic**, since $\dd\theta=i\dd\psi$ squares the continuation factor to $-1$ — and the signature that flips is that of the two-dimensional slicing surface, **not of the spacetime, which is Lorentzian throughout**. Overcritical SdS is the same continuation applied past the degenerate crest. Because the areal radius is signed, the slicing **closes**: inward to the seam, around the throat through $r=0$, and out onto the conjugate branch, closing on the backward-radial root.
+② REGISTER — **PROPOSITION** (`prop:flip`), proved.
+③ HOME — P3 §9.
+④ ANCHOR — none.
+⑤ JOINS — [[p7-cr-framework]] · [[p13-boundary]] · [[p16-cosmogenesis]].
+⑥ NOT OP FOR — **The imaginary variables are instruments over an everywhere-real geometry**, and P3 guards this locally at the seam while naming the substrate-level statement as the geometric-core paper's. **The $\mathrm{dS}_5$/$\mathrm{dS}_4$ distinction is handled the same way** — P3 works the equatorial section throughout, where the distinction does not bear on the construction, and says so rather than eliding it.
 
 ---
 
