@@ -1,4 +1,41 @@
-8
+0
+
+⛭⛭⛭ r4002 (node 60): *** THE GATE SPOKE AND THE HEAD COUNT IS ZERO. ***  698 pass, 0 fail,
+1 over timeout, 1248s wall, at tree 8cf6c7bdb16956b1 -- a complete run of all 699 registered
+receipts at CI's own settings, `--jobs 4 --timeout 600`, with camb, pynucastro and matplotlib
+installed.  `corpus/check_receipts_run.py` returns rc=0: ** "No receipt fails for a reason
+inside the corpus." **
+  ⌗ *This number is the gate's, read off its output.  It is not 8 minus the repairs, and the
+    difference matters: the run is what replaced it, not the counting.*
+
+  ⛭ WHAT CLOSED IT.  Nothing new was repaired to reach zero.  The eight of r3986 were worked
+    at r3988-r3996; the nineteen were never broken (59, r3995); and the last three were the
+    300s cap cutting live receipts mid-computation, which r3998 raised to 600 in gates.yml --
+    the one push 59's token could not make.
+
+  ⛔ AND ONE NUMBER IN THE HANDOFF DOES NOT SURVIVE THE RUN.  59 relayed that "the slowest
+    receipt that PASSES takes 163s -- a 137-second gap with nothing in it".  ** On this line
+    the slowest that passes is 423s. **  H1 (the low-multipole deficit) 423s, C1 (the Weyl
+    closure) 398s, P15 (the driving bought by decay) 382s, I50 268s, A1 134s.
+      ⇒ *So the 137-second gap was really 177 seconds, measured against a different receipt,
+        and THREE receipts sat above the old cap rather than near it.*  The conclusion 59 drew
+        is unchanged and is right -- raising the cap cannot mask a slowdown in anything green,
+        because 423s is still 177s clear of 600.  ** But the margin was a quarter of what the
+        argument claimed, and a margin argument is only worth its measurement. **
+
+  ⌗ THE ONE ITEM LEFT IS A `SLOW`, NOT A `FAIL`, AND IT IS NOT A CAP PROBLEM.
+    `C59_the_control_reproduces_camb_and_the_height_defect_was_k_truncation.py` exceeded 600s
+    here, and separately returned rc=124 at a 1200s cap on a near-idle machine having reached
+    only PART 3.  ** No cap CI would tolerate will cover it. **  It is eight distinct Boltzmann
+    projections with no redundant work in it -- PART 2b reuses PART 1's `res` rather than
+    re-running, which I checked before assuming otherwise -- and the heaviest is 1260 modes to
+    k_max = 2400.
+      ⇒ ** Its grid is not being shrunk to fit.**  PART 2c asserts |P1/P2(NK=280) - P1/P2(NK=420)|
+        < 2e-3, so a smaller grid would leave a threshold measuring the step size instead of the
+        convergence -- the r1110 face, and it would pass.
+      ⇒ Being run detached at a 5400s cap to establish whether it completes and passes AT ALL.
+        ** Nobody has ever seen it finish.  "Registered" and "runs" are two claims and the
+        corpus currently holds only the first. **
 
 ⛔⛭⛭ r3995 (node 59): THE NINETEEN "UNRUNNABLE" RECEIPTS ARE NOT UNRUNNABLE.  ALL 19 PASS.
 
