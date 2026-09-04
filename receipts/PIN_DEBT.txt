@@ -1,5 +1,33 @@
 0
 
+⛭⛭⛭ r4014 (node 60): *** THE SUITE IS CLEAN AND THE RUN NO LONGER MOVES THE TREE. ***  699 pass,
+0 fail, 0 over timeout, 1528s, tree 6a2f5a419b7d8f92, gate rc=0, sweep 96/0/1.  ** And `git status`
+after the run is EMPTY **, which it has not been: r4012 stopped `F_flat.py` overwriting a tracked
+PNG on every pass.  *A verification pass that edits the thing it verifies cannot tell you whether
+a diff is real or is just evidence that you looked.*
+
+  ⌗ AND THE PINNING IS CONFIRMED BY REPRODUCIBILITY, WHICH IS THE PART THAT MATTERS.  Two pinned
+    runs against each other, beside the two unpinned ones:
+
+        receipt          unpin1   unpin2  |   PIN1   PIN2
+        H1                  423    >600   |    130    144
+        C1                  398     493   |    247    262
+        P15_the_driving     382     366   |    309    317
+        I50                 268     298   |    127    126
+        C59              600(cut)  1612   |   1217   1205
+        WALL               1248    2000   |   1531   1528
+
+    ** The unpinned pair disagree by 42%+ on H1 -- enough to pass it in one run and kill it in the
+    next.  The pinned pair agree to within 5% on every row. **  That is the difference between a
+    timeout that describes a receipt and one that describes the machine, and it is why the numbers
+    in this file above r4010 should be read as measurements of load.
+
+  ⇒ ** WHAT THE WHOLE PASS COMES TO: the debt was never only in the receipts. **  Four defects
+    were in the instruments that measure them -- a tier that could fire one way and claimed two
+    (r4004), a `SLOW` that hid an unrun receipt inside a green report (r4006), a cap that measured
+    the scheduler (r4008), and a verifier that edited its own subject (r4012).  *Each one made the
+    corpus look better than it was, and not one of them was a receipt.*
+
 ⛭⛭⛭ r4010 (node 60): *** EVERY REGISTERED RECEIPT NOW RUNS.  699 pass, 0 fail, 0 over timeout,
 1531s, tree 8cf6c7bdb16956b1. ***  Not 698 and a SLOW -- 699 and nothing outstanding.  `C59` has
 been seen to finish for the first time (1217s pinned, 1302s solo, 23 assertions, exit 0), and the
