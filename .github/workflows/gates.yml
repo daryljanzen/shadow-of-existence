@@ -11,6 +11,11 @@ on:
   pull_request:
   schedule:
     - cron: '0 3 * * *'      # nightly: the compile and heavy tiers
+  # ⛭ r4004: `workflow_dispatch` WAS NAMED IN THE HEAVY TIER'S OWN `if:` AND WAS NOT A TRIGGER
+  #   HERE, so that arm of the condition could never be true and the receipts tier had exactly
+  #   one way to fire: the 03:00 cron.  A job that declares two routes and has one is a job
+  #   whose second route nobody can find is missing -- it reads as available and is not.
+  workflow_dispatch:
 
 jobs:
   fast:
