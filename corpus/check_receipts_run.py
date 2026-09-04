@@ -167,8 +167,19 @@ def main():
         return 1
     npass, nfail, nslow = int(m.group(1)), int(m.group(2)), int(m.group(3))
     failed = re.findall(r'\[FAIL\] receipts/\S+/(\S+\.py)', res)
-    env = [f for f in failed if f in UNRUNNABLE]
-    real = [f for f in failed if f not in UNRUNNABLE]
+    # ** r3995: THE EXEMPTION IS CONDITIONAL ON THE MODULE BEING ABSENT, not on the name. **
+    #   It was unconditional, so a receipt on this list was filed ENVIRONMENT wherever it
+    #   failed -- INCLUDING IN CI, WHICH INSTALLS camb AND pynucastro (gates.yml:117).  A real
+    #   failure in any of those 19 was invisible in the one place they actually run.
+    #   And the list's premise was false here too: `pip install camb --break-system-packages`
+    #   succeeds, and P15_camb_reference.py then runs and returns P1/P2 = 2.211 against the
+    #   paper's 2.2.  ** They were not unrunnable.  They were unrun. **
+    import importlib.util as _ilu
+    def _absent(mod):
+        try: return _ilu.find_spec(mod) is None
+        except Exception: return True
+    env  = [f for f in failed if f in UNRUNNABLE and _absent(UNRUNNABLE[f])]
+    real = [f for f in failed if f not in env]
     print(f'  Last run: {npass} pass, {nfail} fail, {nslow} over timeout, {m.group(4)}s.')
     if env:
         libs = sorted({UNRUNNABLE[f] for f in env})

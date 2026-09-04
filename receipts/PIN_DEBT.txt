@@ -1,5 +1,27 @@
 8
 
+⛔⛭⛭ r3995 (node 59): THE NINETEEN "UNRUNNABLE" RECEIPTS ARE NOT UNRUNNABLE.  ALL 19 PASS.
+
+  Daryl asked why, having located the failures, we were declining to fix them.  The answer for
+  the 19 environment failures is that there was no reason.  `pip install camb pynucastro
+  --break-system-packages` succeeds in this container in one command, and with the modules
+  present ALL NINETEEN RECEIPTS RUN AND PASS -- measured here, one at a time, not inferred.
+  P15_camb_reference.py returns P1/P2 = 2.211 against the paper's stated 2.2.
+
+  ** They were never unrunnable.  They were UNRUN. **  The list's own comment read "the receipts
+  this container cannot run", which encoded a fact about an unconfigured environment and then
+  became the standing reason not to configure it.
+
+  AND THE EXEMPTION WAS WORSE THAN REDUNDANT.  check_receipts_run filed a failure as ENVIRONMENT
+  on the strength of the FILE NAME alone, with no test that the module was actually absent -- so
+  in CI, WHICH INSTALLS camb AND pynucastro (gates.yml line 117), a genuine failure in any of
+  these 19 was reported as an environment artefact and vanished.  The nineteen receipts that DO
+  run in CI were the nineteen whose failures CI could not see.
+
+  Fixed at r3995: the exemption now tests `importlib.util.find_spec(mod) is None` and applies
+  only where the module is genuinely absent.  The list stays -- it is still true of a bare
+  container -- but it can no longer hide a failure in an environment that has the module.
+
 ⛭⛭⛭ RE-MEASURED r3986 BY A COMPLETE RE-RUN, AND *** THE HEAD COUNT IS 8. ***  669 pass, 27 fail,
 3 over timeout, 1622s, at tree ff22b18f6842516f.  ** 19 of the 27 carry a ModuleNotFoundError and
 all nineteen are declared BY NAME in `check_receipts_run.py`'s UNRUNNABLE list ** -- P03's two
