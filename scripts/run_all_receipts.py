@@ -151,6 +151,30 @@ def registered():
     return out, unresolved
 
 
+# ---------------------------------------------------------------- r4008
+# ** ONE THREAD PER RECEIPT, BECAUSE A WALL-CLOCK CAP ON AN OVERSUBSCRIBED MACHINE MEASURES THE
+#    SCHEDULER AND NOT THE RECEIPT. **
+# `subprocess.run` inherited this process's environment, so every child was free to open as many
+# BLAS/OpenMP threads as there are cores WHILE `--jobs N` was already running N of them.  The
+# machine was oversubscribed by construction and each receipt's measured time was a fact about
+# what happened to be running beside it.
+#   ⛔ *** MEASURED, AND IT IS NOT A SMALL EFFECT. ***  The same tree, the same cap, two runs
+#       differing only in whether C59 was allowed to finish:
+#           C1  398s -> 493s   (+24%)
+#           H1  423s -> OVER 600s, filed SLOW   (+42% at least)
+#       ** H1 passed in one run and was killed in the next without one line of it changing. **
+#       C59 is multithreaded -- 25:36 of CPU in 18:43 of wall on the solo probe -- so allowing it
+#       to run pushed two neighbours over a cap that is supposed to describe them.
+#   ⇒ ** A budget applied to a quantity that depends on what else is running is not a budget. **
+#     Pinning to one thread each makes `--jobs N` mean N cores, and makes a receipt's time a
+#     property of the receipt.  *This is the contaminated-measurement failure the corpus already
+#     names, living inside the instrument that does the measuring.*
+_ONE_THREAD = {
+    'OMP_NUM_THREADS': '1', 'OPENBLAS_NUM_THREADS': '1', 'MKL_NUM_THREADS': '1',
+    'NUMEXPR_NUM_THREADS': '1', 'VECLIB_MAXIMUM_THREADS': '1',
+}
+
+
 def budget(path, default):
     """The per-file timeout: the declared one if this receipt has it, else the global cap."""
     return LONG.get(os.path.basename(path), default)
@@ -161,7 +185,8 @@ def run_one(path, timeout):
     t0 = time.time()
     try:
         r = subprocess.run([sys.executable, b], cwd=d, capture_output=True,
-                           text=True, errors='replace', timeout=timeout)
+                           text=True, errors='replace', timeout=timeout,
+                           env=dict(os.environ, **_ONE_THREAD))
         dt = time.time() - t0
         if r.returncode == 0:
             return ('PASS', path, dt, '')
