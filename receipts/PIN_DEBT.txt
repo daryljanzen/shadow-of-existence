@@ -1,5 +1,42 @@
 0
 
+⛭⛭⛭ r4010 (node 60): *** EVERY REGISTERED RECEIPT NOW RUNS.  699 pass, 0 fail, 0 over timeout,
+1531s, tree 8cf6c7bdb16956b1. ***  Not 698 and a SLOW -- 699 and nothing outstanding.  `C59` has
+been seen to finish for the first time (1217s pinned, 1302s solo, 23 assertions, exit 0), and the
+gate returns rc=0.  Sweep NODE=60: 96 PASS / 0 FAIL / 1 UNRUN (check_compile, no pdflatex here).
+
+  ⛔⛔ AND THE MEASUREMENT THAT PRODUCED THE LAST THREE ENTRIES WAS CONTAMINATED, INCLUDING THE
+  NUMBER I USED TO CORRECT 59.  `run_all_receipts` passed its own environment to every child, so
+  each receipt opened as many BLAS/OpenMP threads as the box has cores WHILE `--jobs 4` was
+  running four of them.  Every per-receipt time on record was a fact about what ran beside it.
+  Pinned to one thread each (r4008), the same receipts on the same tree:
+
+        receipt              unpinned #1   unpinned #2   PINNED
+        H1                        423s        >600s        130s
+        C1                        398s         493s        247s
+        P15_the_driving           382s         366s        309s
+        I50                       268s         298s        127s
+        C59                    600s(cut)      1612s       1217s
+        WALL                     1248s        2000s       1531s
+
+  ⇒ ** H1 IS 130s AND WAS REPORTED AT 423s AND THEN KILLED AT 600s.  A FACTOR OF 3.3, ENTIRELY
+    THE INSTRUMENT. **  Pinning made the whole suite faster, C59 included -- oversubscription was
+    costing more than the parallelism bought.
+
+  ⛔ SO r3998's "THREE RECEIPTS WERE BEING FAILED BY THE CAP ALONE" DOES NOT SURVIVE.  At the old
+  300s cap with honest threading, H1 (130s) and C1 (247s) sit comfortably under it.  ** Two of
+  the three were failed by oversubscription, not by the cap. **  The cap raise is still right --
+  P15_the_driving is 309s and C59 needs its own budget -- but it was carrying a diagnosis that
+  was two-thirds instrument artefact, and the artefact was in the thing doing the measuring.
+
+  ⌗ AND MY CORRECTION OF 59 AT r4002 WAS ITSELF MADE ON A CONTAMINATED NUMBER.  I told 59 their
+    "slowest receipt that PASSES takes 163s" was wrong and that the true figure was 423s.  ** The
+    honest figure, one thread per receipt, is 309s for the slowest that passes outside the
+    declared-long C59. **  Neither of us had a clean number; I corrected a low one with a high
+    one and called the correction a measurement.  *The rule I wrote that turn -- "a margin
+    argument is worth exactly its measurement" -- applied to my own margin argument and I did not
+    apply it.*
+
 ⛭⛭⛭ r4002 (node 60): *** THE GATE SPOKE AND THE HEAD COUNT IS ZERO. ***  698 pass, 0 fail,
 1 over timeout, 1248s wall, at tree 8cf6c7bdb16956b1 -- a complete run of all 699 registered
 receipts at CI's own settings, `--jobs 4 --timeout 600`, with camb, pynucastro and matplotlib

@@ -1,11 +1,11 @@
 
   RUN-ALL-RECEIPTS -- 699 registered receipt(s), 4 at a time, 600s each, each from ITS OWN DIRECTORY
+  DECLARED LONG: C59_the_control_reproduces_camb_and_the_height_defect_was_k_truncation.py runs on 1800s, not 600s -- named, with its measured cost in the source
   TREE-DIGEST: 8cf6c7bdb16956b1
 
-    [slow] receipts/P15_CR_cosmology/C59_the_control_reproduces_camb_and_the_height_defect_was_k_truncation.py  -- exceeded 600s
 
-  698 pass, 0 fail, 1 over timeout, in 1248s wall
-  slowest that passed: H1_the_low_multipole_deficit_is_two_effects_and_the_ladder_imprint_dies_where_the_transfer_is_narrow.py 423s, C1_the_weyl_closure_is_generic_to_cubics_and_the_match_is_D3_alone.py 398s, P15_the_driving_is_bought_by_decay_during_oscillation.py 382s, I50_the_carter_constant_is_the_substrates_symmetry_and_kerrs_is_not.py 268s, A1_a_rule_made_of_spellings_misses_the_next_spelling.py 134s
+  699 pass, 0 fail, 0 over timeout, in 1531s wall
+  slowest that passed: C59_the_control_reproduces_camb_and_the_height_defect_was_k_truncation.py 1217s, P15_the_driving_is_bought_by_decay_during_oscillation.py 309s, C1_the_weyl_closure_is_generic_to_cubics_and_the_match_is_D3_alone.py 247s, H1_the_low_multipole_deficit_is_two_effects_and_the_ladder_imprint_dies_where_the_transfer_is_narrow.py 130s, I50_the_carter_constant_is_the_substrates_symmetry_and_kerrs_is_not.py 127s
 
   Every registered receipt runs, in place, and exits 0 -- so every assertion in the
   reproducibility layer was actually evaluated.
