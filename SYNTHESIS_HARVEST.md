@@ -684,6 +684,90 @@ faces; **it does not cite it for the count**, which is the gap.
 ⑤ JOINS — [[p2-janzen-circle]] · [[p4-modern-parallax]] · [[p5-groupoid]].
 ⑥ NOT OP FOR — **⛔ AN INSTANCE DERIVED BY APPLYING THE METHOD WOULD CERTIFY NOTHING.** *This is the load-bearing constraint on the synthesis: any section presenting P6 as licensing the corpus's readings destroys the evidential value of every instance at once, and it does so silently, since the resulting text reads perfectly well.*
 
+
+---
+
+# P7 · `corpus/CR_framework.tex`
+### *Collapsed matter must become a universe: the necessary and sufficient augmentation, proven for collapse of any symmetry*
+
+> **▣ P7 IS THE MIDPOINT SYNTHESIS WITH A SIGNIFICANT BENT.** *It synthesises P1--P6, develops its own axioms,
+> worked constructions and central theorem, then takes the rest-of-corpus fallout. **Because it develops real
+> results it cannot be purely holistic** — which is exactly why the outside results paper this arc builds is a
+> distinct object. P7 synthesises from the inside while building; ours synthesises the whole from outside once
+> built.*
+
+### the-axioms-and-what-cosmic-time-is-not
+① CLAIM — A one-parameter family of smooth Riemannian three-manifolds $\{\mathcal S_t\}$, the **ontological spatial layers**, ordered by a global parameter $t$, **cosmic time**. That parameter is *not* defined operationally, *not* identified with any coordinate time on $M$, and *not* assumed orthogonal to the spatial geometry. A spacetime $(M,g)$ is the layers' representation under a causal assignment; distinct Lorentzian metrics on one manifold are projections of one layer; and admissible causal reassignment **preserves the cosmic foliation**, leaving the field equations, the metric and the causal structure unchanged.
+② REGISTER — **AXIOMS**, introduced as hypotheses with their justification declared twofold and both halves named: *structural*, via the SdS construction and the Null–Boundary Correspondence, and *empirical*, via P4.
+③ HOME — P7 §2.
+④ ANCHOR — none.
+⑤ JOINS — [[p4-modern-parallax]] (**the augmentation P4's theorem establishes as necessary and sufficient**) · [[p10-canonical-time]] · [[p8-slicing-operator]].
+⑥ NOT OP FOR — **The augmentation adds no equation and changes none.** *It fixes which of the formally available foliations is physical and reads that one as the existent — nothing more.*
+
+### the-six-foundational-data
+① CLAIM — P7 fixes what it builds on explicitly, as six established results with their sources: **(F1)** the horizon's causal structure, from Lorentzian causal structure alone and making **no use of spherical symmetry**; **(F2)** the singularity taxonomy, horizon and $r=0$ two species of one genus; **(F3)** the slicing curve, with the degenerate configuration the fixed point of the root-exchange involution; **(F4)** the reassignment groupoid, each morphism altering the causal reading of one fixed geometry rather than the geometry; **(F5)** the forced foliation, measured; **(F6)** the existent, with both competing readings closed — "no objective present" as a modal fallacy falsified by (F5), "the block is the existent" as a category error whose canonical symptom is the frozen problem of time.
+② REGISTER — **DECLARED DEPENDENCIES**, each cited to its own paper.
+③ HOME — P7 §7.
+④ ANCHOR — none.
+⑤ JOINS — [[p1-bh-causality]] · [[p2-janzen-circle]] · [[p3-sds-slicing]] · [[p5-groupoid]] · [[p4-modern-parallax]] · [[p6-shadow-of-existence]] · [[p10-canonical-time]].
+⑥ NOT OP FOR — **⛔ This list is the corpus's own statement of what P7's theorem rests on, and it is the single most useful object in the paper for the synthesis** — it says which results are load-bearing and which are context. *Note that (F1) is flagged at source as symmetry-free; that is what the any-symmetry claim later turns on.*
+
+### the-causal-reassignment-and-the-forced-member
+① CLAIM — On the forced foliation, the limiting null direction the event horizon selects is reassigned as the fundamental **timelike** congruence. The Einstein equations then return the Schwarzschild–de Sitter metric, and the **tangency trichotomy** — transverse, tangent, or no horizon — forces the degenerate member, at which $\Lambda G^2M^2/c^4=1/9$ holds **as an equality rather than as a saturated bound**. The comoving law is $r=(2M\alpha^2)^{1/3}\sinh^{2/3}(3\tilde\tau/2\alpha)$: the exact flat-$\Lambda$CDM expansion history with its rate fixed by $\Lambda$ alone.
+② REGISTER — **DERIVED**, the member forced by the trichotomy rather than chosen.
+③ HOME — P7 §5.
+④ ANCHOR — the section's own.
+⑤ JOINS — [[p5-groupoid]] (**which forces the same member from the group structure, independently**) · [[p3-sds-slicing]] · [[p15-cr-cosmology]].
+⑥ NOT OP FOR — Synchrony is a **representational** assumption, not an ontological one: the model is non-synchronous while its observational expansion history coincides exactly with flat $\Lambda$CDM.
+
+### the-null-boundary-correspondence
+① CLAIM — **THEOREM.** A collapse horizon $\mathcal H^+$ and a de Sitter cosmological horizon represent **one ontological layer under distinct causal assignments**, and the map between them is **causal and structural rather than metric** — it carries no metric multipoles.
+② REGISTER — **THEOREM**, proved.
+③ HOME — P7 §6.
+④ ANCHOR — the section's own.
+⑤ JOINS — [[p1-bh-causality]] · [[p13-boundary]] · [[p15-cr-cosmology]].
+⑥ NOT OP FOR — **⛔ That the map is not metric is precisely what makes the symmetry claim work**, and it is the hinge a synthesis is likeliest to drop. Because the correspondence carries no multipoles, **non-spherical collapse is dissolved rather than deferred** — the argument does not depend on the symmetry of the collapse. *An entry that presents the correspondence as a metric identification has inverted its content and lost the any-symmetry result with it.* **And the generic map's horizon areas and surface gravities differ**; the coincidence is at the forced member.
+
+### the-central-theorem
+① CLAIM — Three results landed together. **(1)** The CR augmentation is the **necessary and sufficient** completion under which general relativity describes a world that exists and evolves — required, not optional, with its necessary half **measured**. **(2)** On that augmentation, gravitational collapse cannot terminate but must continue as a cosmology: **collapsed matter becomes a universe**, the collapse horizon and the cosmological seam one ontological layer. **(3)** This holds for collapse of **any** symmetry.
+② REGISTER — **THEOREM**, `thm:augmentation-p7` and `thm:bead`, from (F1)–(F6).
+③ HOME — P7 §7.
+④ ANCHOR — the section's own.
+⑤ JOINS — [[p4-modern-parallax]] · [[p1-bh-causality]] · [[p16-cosmogenesis]].
+⑥ NOT OP FOR — The scope is marked at source: **the necessity is a structural result with its necessary half measured**, while *whether the observed cosmos realizes this cosmology in detail* stays open to the world and is held to two named tests — the structural one that closed trapped surfaces do not form, and the empirical one against the microwave background.
+
+### the-lift-and-the-explanation-of-the-initial-rate
+① CLAIM — Along the segment of the closed contour on which $\operatorname{Re}\tilde\tau$ does not advance, the areal radius is carried continuously from the comoving turnaround to the branch point. Because cosmic time **is** $\operatorname{Re}\tilde\tau$, **that entire process occupies no cosmic time at all** — a forced phase shift of finite extent. The universe therefore *arrives* at $r=0$ carrying exactly the initial data the Friedmann equations require of it. **This answers, rather than restates, the objection Eddington pressed against the Einstein–de Sitter model in 1933**, retired unanswered rather than met: the initial expansion rate is explained rather than postulated. *The big bang is not a point but a bounded interval, and the interval is a physical process that can be drawn.*
+② REGISTER — **THEOREM plus its worked reading**; the segment is a solution of a variational principle, an instanton in the inverted potential.
+③ HOME — P7 §7 (`thm:bead`) and §8.
+④ ANCHOR — the sections' own; ledger `combinatorics`.
+⑤ JOINS — [[p10-canonical-time]] (**whose regular Euclidean state, fixed on independent grounds, is the state the kernel here selects**) · [[p16-cosmogenesis]] · [[p2-janzen-circle]].
+⑥ NOT OP FOR — **The explanation is of this framework's characteristic kind and P7 says so**: the divergent rate and the deceleration are **effective** — perspectival consequences of parametric motion rather than dynamical causes. *Nothing acts at the beginning; the shape of the history is a property of a fixed curve.*
+
+### the-fold-and-what-is-dimension-independent-in-it
+① CLAIM — At the merger the horizon polynomial has a double root with non-vanishing second derivative while the mass enters additively at first order — **a fold**, in the standard classification of one-parameter collisions — so the two horizons separate as the **square root** of the distance from the critical mass, and $\kappa$ vanishes at that same rate. **The exponent is fixed by the collision type, not by this family**, and the check is the one that could have refuted it: at general dimension the degenerate member persists with the polynomial's second derivative equal to $-2(D-1)$, never vanishing, which is the fold condition. So the square root is **dimension-independent**; what is particular to four dimensions is only the value $-6$.
+② REGISTER — **RECEIPT-ANCHORED**, with a refutation-capable check run.
+③ HOME — P7 §6 (relocated there r4045; it had lived only in the abstract).
+④ ANCHOR — `D4_fold_scaling`; ledger `catastrophe_singularity`.
+⑤ JOINS — [[p3-sds-slicing]] · [[p15-cr-cosmology]] (the transmission reading: *how near* the forced member a configuration must sit for its surface gravity to carry no appreciable scale has a definite answer, and it is a square root).
+⑥ NOT OP FOR — **⛔ Terminology guard, stated at source:** *fold* is bifurcation-theoretic here and is **not** to be read against the bifurcation **sphere** of a Killing horizon, **which the degenerate member does not possess.**
+
+### the-dissolution-family
+① CLAIM — Turned on the theory's standing problems, the same augmentation dissolves a family together: the non-localizability of gravitational-wave energy, closed timelike curves, cosmic censorship, the information paradox, the laws of black-hole mechanics, and the hole argument — **not one at a time by separate devices but as consequences of a single distinction**.
+② REGISTER — **SYNTHESIS**, the paper's own first synthesis.
+③ HOME — P7 §9.
+④ ANCHOR — none.
+⑤ JOINS — [[p1-bh-causality]] (which reaches three of them on causal structure alone) · [[p6-shadow-of-existence]] (R4, against patchwork).
+⑥ NOT OP FOR — **⛔ P6 amends this account of itself, and the amendment must travel with the claim**: the dissolutions are **not one move recurring but two** — *reclassification*, which exhibits a projection, and *least-arbitrariness*, which denies a quantity a referent — with **distinct failure conditions and no implication between them**. *A synthesis presenting the family as one mechanism has adopted the account P6 corrected.*
+
+### the-frontiers-section-and-its-own-distinction
+① CLAIM — P7 distinguishes two kinds of entry in its own open list, and the distinction is reusable. **Work** is something unworked that a definite computation would close, and it *shrinks as it is done*. A **boundary** is a result rather than a gap — a statement of where this construction hands over and to which sector — and it *does not shrink, because there is nothing in it left to do*.
+② REGISTER — **METHODOLOGICAL**, stated in P7's own voice.
+③ HOME — P7 §10.
+④ ANCHOR — none.
+⑤ JOINS — the frontier gather below; every paper's open list.
+⑥ NOT OP FOR — **⛔ This is directly load-bearing for Phase 3, and it cuts both ways.** *A list that ends with only boundaries and standing conditions has not failed to empty; it has finished* — and saying which entries are which is what lets that be told from a list quietly going stale. **But the distinction is also the easiest way to retire an item by reclassification rather than by work**, which the arc forbids. *Phase 3 uses it to describe items, never to remove them.*
+
 ---
 
 ## THE FRONTIER GATHER
