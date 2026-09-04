@@ -399,6 +399,10 @@ faces; **it does not cite it for the count**, which is the gap.
 # P3 · `corpus/SdS-slicing-curve_v2.tex`
 ### *The de Sitter substrate and its slicing curve: horizons as turning points, de Sitter and Schwarzschild as two readings*
 
+> **▣ THE READ IS COMPLETE** *(first pass r4029--r4035, completed r4061 after the coverage stocktake found
+> roughly half the body unopened). The four entries at the end of this block are results the first pass had no
+> sight of.*
+
 > **▣ P3'S FLOOR AND ITS LICENCE.** *P3 may use P1 and P2 and works in the perspectival reading P2 set out. It
 > is the geometric machinery paper and is licensed to **overdevelop** — but every piece must be motivated by a
 > question visible inside P3. As of r4029--r4033 it meets that test at the place it previously failed: **the
@@ -411,6 +415,39 @@ faces; **it does not cite it for the count**, which is the gap.
 ④ ANCHOR — the section's own; the trichotomy is also read from the 2012 dissertation's discriminant.
 ⑤ JOINS — [[p2-janzen-circle]] · [[p8-slicing-operator]] (promotes the curve from classifier to generator) · [[p9-range-paper]] · [[p7-cr-framework]].
 ⑥ NOT OP FOR — **Proper distance $l$ is derived, not the spine.** At the degenerate member the merging horizons stand infinitely far apart in $l$ (the integral diverges logarithmically) while the Gaussian curvature there is finite and the geometry regular — *a coordinate running to infinity where the invariant curvature is finite is reporting on the slicing, not on the manifold.* The spine is the signed $r$; the clock is the swing angle.
+
+
+### the-horizon-locus-is-a-line-and-a-tilted-ellipse
+① CLAIM — Taken over all slicing parameters at once, the horizon locus in the $(r_0,r)$-plane is $g(r)=g(r_0)$ with $g(t)=t^3-t$, and it **factors into a straight line and a conic**: $(r-r_0)(r^2+rr_0+r_0^2-1)=0$. The line $r=r_0$ is the trivial root — the slicing parameter is always itself a horizon — and the conic is an **ellipse tilted at $45^\circ$**, its major axis along the anti-diagonal $r=-r_0$ (semi-axes $\sqrt2$ and $\sqrt{2/3}$, from the quadratic form's eigenvalues $1/2$ and $3/2$). **Corollary**: the line and the conic meet **exactly at the two Nariai configurations**, $r_0=\pm1/\sqrt3$, which are the endpoints of the ellipse's minor axis.
+② REGISTER — **PROPOSITION AND COROLLARY**, proved and receipt-anchored. The conic is not new — it is the 2012 dissertation's fundamental ellipse, obtained there from the scale-invariant line element; **what is added is the reading**: that the locus factors as a line and a conic, that the tilt is $45^\circ$, and that the components meet at Nariai.
+③ HOME — P3 §4.4 (`sec:ellipse`), `prop:locus`, `cor:nariai-locus`.
+④ ANCHOR — `P03_cubic_factor_ellipse_locus`, `Q5_nariai_on_the_locus`; ledger `algebraic_geometry`.
+⑤ JOINS — [[p5-groupoid]] (σ as the diagonal reflection of this ellipse, $R$ as the anti-diagonal one) · [[p12-algebroid]].
+⑥ NOT OP FOR — **The corollary adds no new value; it locates one already fixed three ways**, and P3 says so: Nariai is *algebraically* the double root and σ's fixed point, *incidence-geometrically* the singular point of the reducible cubic where line meets conic, and *metrically* the end of the minor axis. **And the anti-diagonal is the geometrically meaningful axis**: the negative root that appears whenever the other two are positive is **not a bookkeeping artefact and not unphysical** — it is the horizon reached in the backward radial direction.
+
+### the-two-routes-the-construction-does-not-take
+① CLAIM — At $w=0$ the cut is one curve — the equator taken diametrically, which is P2's Schwarzschild curve — carrying **two readings** exchanged by the backward-radial vantage-swap. That is the de Sitter↔Schwarzschild correspondence, **exact, at fixed $\alpha$, and neither a limit nor a mass relabelled to zero.** P3 states plainly the two routes it does *not* take, because each reaches the same throat in a way that breaks the construction. **① Schwarzschild is not the $\alpha\to\infty$ limit**: $\alpha$ is the fixed invariant the whole construction lives inside, and sending it to infinity dismantles the throat, the circle and the family in one stroke. **② $r_0=0$ is not a "massless Schwarzschild"** — a contradiction in terms, since Schwarzschild is the geometry with a mass and the cosmological term off, and $M=0$ with the term on is de Sitter by definition.
+② REGISTER — **STATED AS TWO EXCLUSIONS**, each with its reason.
+③ HOME — P3 §5.4 (`sec:two-readings`).
+④ ANCHOR — none.
+⑤ JOINS — [[p2-janzen-circle]] · [[p5-groupoid]] · [[p17-geometric-core]].
+⑥ NOT OP FOR — **⛔ These are the two misreadings most available to a reader and they are both natural**, which is why the paper names them rather than relying on the guard elsewhere. *Any synthesis sentence taking a limit of this construction has taken route ①.*
+
+### charge-is-R-even-and-mass-is-R-odd
+① CLAIM — Reading the eigenspace split on the charged cut settles, **at the geometric level**, where charge sits in the construction's one discrete symmetry: mass is $R$-**odd**, charge is $R$-**even**. Charge conjugation is the **field-level** closure, adjoining an independent $\mathbb Z_2$ to $\mathrm{Aut}(A_2)=D_6$.
+② REGISTER — **RECEIPT-ANCHORED**, and scoped to the geometric level at source.
+③ HOME — P3 §5.5 (`sec:charge`).
+④ ANCHOR — `P03_charge_parity`.
+⑤ JOINS — [[p13-boundary]] (**where charge conjugation's factorisation into a geometric kinematic face and a field-level charge sign is developed**) · [[p14-matter-sector]] · [[p5-groupoid]].
+⑥ NOT OP FOR — **The geometric level is not the field level, and the paper keeps them apart** — the parity assignment is geometric; the conjugation that closes it is not, and adjoins a *separate* $\mathbb Z_2$ rather than living inside $D_6$.
+
+### the-temporal-three-ness-and-why-everything-closes-in-elementary-terms
+① CLAIM — The turnaround's three-ness **is the deck action of cosmic time's own imaginary period**: $\tilde\tau\mapsto\tilde\tau+2\pi i\alpha/3$ leaves $r^3$ invariant and permutes the cube-root sheets cyclically, so the turnaround cubic's $\mathbb Z_3$ and that period are one object. **And this answers a question the construction raises everywhere — why everything here closes in elementary terms.** The period is a *single* one ($\sinh^2$ has the one period $i\pi$, no real period, none with both parts nonzero), so the quotient is a cylinder and the law is a rational function of $e^{3\tilde\tau/2\alpha}$. *A singly periodic meromorphic function is elementary; a doubly periodic one is elliptic, and no elementary closed form exists for the second.* The same holds on the horizon side, where $\sin3w$ carries the single real period $2\pi/3$. **Each of the two three-nesses is one singly periodic elementary function composed with a three-fold** — and that, not any convenience of presentation, is why $\sinh^{2/3}$, $\sin3w$ and $\sigma$ all admit closed forms.
+② REGISTER — **RECEIPT-ANCHORED**, twice.
+③ HOME — P3 §6.2 (`sec:temporal-threeness`).
+④ ANCHOR — `P03_turnaround_temporal_threeness`, `X2r_single_periodicity`.
+⑤ JOINS — [[p7-cr-framework]] (**the half-period $i\pi\alpha/3$ is what places the collapse wings, and the interval it fixes is the lift**) · [[p5-groupoid]] · [[p16-cosmogenesis]].
+⑥ NOT OP FOR — **⛔ The two three-nesses are affinely inequivalent and P3 does not identify them** — it says what the temporal one positively *is*, which the separating statement alone does not. **And the asymmetry between them runs deeper than the inequivalence**: the temporal $\mathbb Z_3$ **factors through a half-period that exchanges the branches**, matter leg to conjugate leg; the spatial $S_3$ carries no exchange inside itself, since $f=0$ is a condition on $r$ alone and carries no shift of $\tilde\tau$. *The asymmetry is one of where the exchange sits, not of whether one exists* — the spatial side has its branch exchange in $R$, which maps one Nariai triple to its conjugate twin: an exchange **between** the two Nariai members rather than inside one member's $S_3$.
 
 ### alpha-is-the-invariant-and-is-never-sent-to-a-limit
 ① CLAIM — $2M=\alpha\bigl((r_0/\alpha)-(r_0/\alpha)^3\bigr)$ is **linear in $\alpha$ with a dimensionless slicing profile as its coefficient**, so $M$ cannot be held fixed while $\alpha$ varies without turning the slicing. Hence $\alpha\to\infty$ at fixed $M$ drives the profile to zero, which is a choice of reticle offset and not a limit of the geometry. **Schwarzschild is this substrate read at a small sky angle, not a limit of it.** The throat radius is the invariant — fixed under the reading-swap, across all slicings, and under the projection; $M$ is its slicing- and projection-dependent factor, bounded by $\alpha$. *Mass is a turning point, not a coefficient.*
@@ -822,7 +859,7 @@ faces; **it does not cite it for the count**, which is the gap.
 | **P2** | 13,604 | most sections opened, but read through display filters that demonstrably dropped lines | **not attestable — re-read owed** |
 | **P6** | 13,134 | imperative, rules, least-arbitrariness and its boundary, engine, reflexive, boundary, placement; **the modal-fallacy and constructive-ordering sections and the back half of least-arbitrariness were not read** | **incomplete** |
 | **P5** | 16,558 | category, generators, relations, completeness, single-reassignment, attribution; **rigidity, the seam section, the monodromy section and the closing were sampled at best** | **incomplete** |
-| **P3** | 28,931 | abstract, introduction, substrate, cubic, projection, dimension, hinge geometry, curvature, sweep, lap, closing; **roughly half the body unopened, including most of the tour and the rigidity groupoid sections** | **most incomplete** |
+| **P3** | 28,931 | completed r4061 — the horizon-locus, two-readings, charge, temporal-three-ness, rigidity-groupoid, coupled-operations and closing sections had never been opened | **complete** |
 | **P7** | 43,900 | every section, r4049–r4057 | **complete** |
 
 **⌗ WHAT A PARTIAL READ DEMONSTRABLY MISSES — the two failure modes now have names, from cases.**
