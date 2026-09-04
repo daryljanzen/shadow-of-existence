@@ -617,6 +617,73 @@ faces; **it does not cite it for the count**, which is the gap.
 ⑤ JOINS — [[p13-boundary]] · [[p14-matter-sector]] · [[p17-geometric-core]].
 ⑥ NOT OP FOR — **This is a guard, not a claim, and it is the right shape for one.** What the argument establishes is the distinct *realisation* and the absence of a continuous-isometry colour — **not** that the shared abstract root system is without significance. *A synthesis that reads this remark as either asserting or denying a colour identification has read it wrongly in both directions.*
 
+
+---
+
+# P6 · `corpus/shadow_of_existence.tex`
+### *The shadow of existence: scientific theory-choice as an empirically grounded discipline, calibrated on the record*
+
+> **▣ P6'S ROW IS THE FIRST THAT PERMITS REACHING BOTH WAYS**, so the test changes: not "did it borrow" but
+> **does each forward draw serve the same epistemic end as the developed material?** On the read it does. The
+> defect found was the reverse of the usual one — P6 *understated* its own case by describing the corpus as
+> leaning on it.
+
+### the-imperative-and-the-reclassification-constraint
+① CLAIM — Write $\Phi=\pi(W)$: appearances are the image of a world under a perspectival projection, and the observer holds $\Phi$, never $W$. The appearances divide into **literal** components, on which $\pi$ acts trivially, and **perspectival** ones that are artefacts of $\pi$. **Both classes are non-empty, and this is an observed fact rather than a postulate** — the Sun's annual path along the ecliptic is a perspectival illusion of the Earth's motion, the Moon's monthly circuit a literal orbit. Because both occur, no blanket reading is admissible: reading every appearance literally is the error a method must first forbid. The **imperative**: infer $W$ such that $\Phi=\pi(W)$. The **constraint**: an admissible $W$ must *explain* the perspectival appearances — exhibit the projection under which they arise — not discard them or merely reproduce them.
+② REGISTER — **STATED AND ARGUED**, with the non-emptiness grounded in cases rather than assumed.
+③ HOME — P6 §2.
+④ ANCHOR — none.
+⑤ JOINS — [[p2-janzen-circle]] · [[p4-modern-parallax]] · [[p5-groupoid]] (the $R$-even/$R$-odd split is this constraint in closed form).
+⑥ NOT OP FOR — **⛔ Perspectival does NOT mean false, and P6 uses P1 to show it.** The metric's verdict that two null-separated horizon events share one place and one instant is a genuine fact about the measure — the separation truly collapses — *yet perspectival still*, a fact about the ruler and not about the identity of the events, which stay distinct on the point set. **The perspectival class is the class of appearances that image $\pi$ rather than $W$; some are entirely real as facts about $\pi$.** *This is the single most useful correction in the paper for the synthesis, because it is what stops "perspectival" being read as "unreal" anywhere in the corpus.*
+
+### formal-likeness-does-not-sort-the-two-classes
+① CLAIM — A genuine metric collapse — a place its chart draws as an extended line — sits beside the Mercator map's rendering of the North Pole as its top edge, an identical-looking line that is a pure coordinate artefact concealing an ordinary point. **The appearances coincide in form.** Only exhibiting the projection each arises under sorts one from the other.
+② REGISTER — **ARGUED**, from P2's worked case.
+③ HOME — P6 §2.
+④ ANCHOR — none.
+⑤ JOINS — [[p2-janzen-circle]] · [[p1-bh-causality]].
+⑥ NOT OP FOR — **This is exactly why the reclassification constraint demands the projection be shown and not merely the appearance saved.** *A synthesis that argues from resemblance — "this looks like a chart artefact, so it is one" — has made the error this section exists to forbid.*
+
+### least-arbitrariness
+① CLAIM — A candidate world may carry an **unforced modulus**: a parameter fixing how a symmetry is broken that neither appearances nor principle pin. Such a structure is **not a single world but a family**, and inadmissible on that ground; the equant is its historical type. A structure carrying no such modulus *requires its configuration as a consequence of its own form*. **The maximally symmetric structure is the unique one of that kind** — every less symmetric structure requires a choice of how to break the symmetry, and that choice is a modulus. This is Rule 2 read in the ontological register.
+② REGISTER — **CRITERION**, with an exact group-theoretic counterpart: what leaves nothing to choose is a group acting **transitively**, a modulus being a coordinate transverse to the orbits, so one exists precisely when the action is not transitive — and read on geodesics the same transitivity says the flow is **maximally superintegrable**. *Least-arbitrariness and superintegrability are one property read epistemically and dynamically.*
+③ HOME — P6 §4.
+④ ANCHOR — ledger `integrable_systems`; the identification cites [[p12-algebroid]] and [[p17-geometric-core]].
+⑤ JOINS — [[p17-geometric-core]] · [[p12-algebroid]] · [[p7-cr-framework]].
+⑥ NOT OP FOR — **⛔ THE REGISTER'S BOUNDARY IS DRAWN WITH IT, AND THE GUARD SEPARATES THREE SENSES OF "MODULUS" THAT THE CORPUS OTHERWISE RUNS TOGETHER.** ① *An unforced parameter indexing candidate worlds* — unpinned, so the candidate answers "what is the world?" with a family. **This alone is what the criterion excludes.** ② *A coordinate on a space of inequivalent solutions* — as the mass is for the space of cuts, transverse to the orbits. **The criterion does not exclude this and nothing here counts against it**: a space of physically distinct solutions is not a family of rival worlds, and a theory is not made arbitrary because its solutions differ. ③ A choice that leaves the symmetry **maximal** — since a modulus fixes how a symmetry is *broken*, an unforced choice leaving it unbroken **lies outside the register entirely**, the dimension of a maximally symmetric substrate being the programme's first such case; *where form is silent, content may still decide.* **A criterion claimed to apply everywhere is as suspect as one applying only where it was formulated.**
+
+### the-modal-fallacy
+① CLAIM — The imperative's characteristic dual: **the absence of a local discriminator is not the absence of the fact.** Reading local undetectability as non-existence is a modal error, and it is the error the century-old reading of synchrony's relativity committed.
+② REGISTER — **STATED**, and the corpus's instance of it is *falsified by measurement* rather than argued against.
+③ HOME — P6 §5.
+④ ANCHOR — none.
+⑤ JOINS — [[p4-modern-parallax]] (**where the fallacy is falsified outright**) · [[p1-bh-causality]].
+⑥ NOT OP FOR — Naming a fallacy does not establish the fact whose undetectability is at issue; it removes an argument against it. *The fact itself, in the corpus's case, is supplied by a measurement.*
+
+### the-engine-and-why-the-record-must-be-shadow-read-first
+① CLAIM — The rules' reliability is a matter of fact and the fact is recorded; the data are episodes of theory-choice and the engine is historiography. **But the received record is itself shadow-distorted** — mythologised into independent geniuses and clean confrontations with crucial experiments — so **de-mythologising is not a preface to the evidence but the validation of it**. Two corrections carry it: Copernicus had read Archimedes' *Sand-Reckoner* before circulating his system, the *Commentariolus*' fourth postulate reproducing Archimedes' recast of Aristarchus's proportion — a relation Copernicus had no internal use for, never employed, and dropped from *De revolutionibus*. And **the parallax objection is anachronistic**: while the stars were held to lie on a single spherical boundary, a relative parallax was not a measurement that could fail — it was inconceivable; neither the *Almagest* nor *De revolutionibus* argues from parallax at all, but from symmetry. The objection was first pressed by Tycho, after Digges gave the cosmos depth, and rested on stellar "disc" sizes now known to be seeing artefacts.
+② REGISTER — **HISTORICAL**, from primary sources.
+③ HOME — P6 §7.
+④ ANCHOR — none.
+⑤ JOINS — [[p4-modern-parallax]] (which reaches its own historical instance independently).
+⑥ NOT OP FOR — **A history effacing the first correction reads the episode as evidence that great theories spring *ex nihilo*; one effacing the second reads it as evidence that a correct theory was rightly held back by a sound empirical objection. Both lessons are false.** *The de-mythologising is what determines whether the data say what they are taken to say.*
+
+### the-vindication-lemma-stated-falsifiably
+① CLAIM — Stated as an object of research rather than an article of faith: **across a properly sampled reference class of theory-choice episodes — successes and failures alike — structures favoured by the rules ahead of a decisive non-local measurement are subsequently confirmed at a rate above the base rate at which merely permitted structures are confirmed.** The sampling that would test it is the discipline's first programme: assemble the class, classify each episode by whether its eventual victor was *required* or merely *permitted*, and measure the differential.
+② REGISTER — **⛔ FALSIFIABLE CLAIM, NOT YET TESTED. The outcome is explicitly not presumed.**
+③ HOME — P6 §9.
+④ ANCHOR — none.
+⑤ JOINS — every paper the corpus offers as an instance.
+⑥ NOT OP FOR — **⛔ The sampling requirement includes failures AND the episodes in which the criterion was applied in print and disregarded**, on the stated reasoning that *a reliability estimate built from one's own successes is survivorship and not measurement*. **And the reflexive closure is explicitly not soundness**: a method can be coherently, reflexively wrong. **The scope is disciplined at source** — the subject is the epistemology of scientific theory-choice, ampliative inference under underdetermination, and *not* epistemology entire.
+
+### the-relation-to-the-corpus-runs-the-other-way
+① CLAIM — **The corpus's papers do not lean on this discipline.** Each reaches its instance on its own ground and says so — P2 its perspectival reading on the analytic structure of $r(z)$, P4 both of its moves as ordinary scientific inference, P5 its selection from the group structure. **That independence is what makes them data.** Each is a structure the rules favoured ahead of its decisive measurement, reached *without* the rules, so the record of what those measurements returned is evidence **about** the rules rather than an application of them.
+② REGISTER — **STRUCTURAL RELATION**, corrected at r4043 to match what the papers now say.
+③ HOME — P6 abstract, §1, §10.
+④ ANCHOR — none.
+⑤ JOINS — [[p2-janzen-circle]] · [[p4-modern-parallax]] · [[p5-groupoid]].
+⑥ NOT OP FOR — **⛔ AN INSTANCE DERIVED BY APPLYING THE METHOD WOULD CERTIFY NOTHING.** *This is the load-bearing constraint on the synthesis: any section presenting P6 as licensing the corpus's readings destroys the evidential value of every instance at once, and it does so silently, since the resulting text reads perfectly well.*
+
 ---
 
 ## THE FRONTIER GATHER
