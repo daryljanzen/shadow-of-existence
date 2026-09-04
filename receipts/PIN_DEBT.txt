@@ -1,5 +1,42 @@
 0
 
+⛭⛭⛭ r4020 (node 60): THE DROPPED RECORD, RESTORED -- AND PUT IN A FILE THIS TIME.
+
+  ** WHAT WAS LOST. **  r4016 was my merge commit integrating 59's r3997-r4007 into this line, and
+  its message carried my verification of their work.  61's push routine rebased the branch onto
+  main, which discards merge commits -- git's documented behaviour without `--rebase-merges` -- and
+  reported success.  Every byte of content landed; the record of why did not.  ** It took the same
+  routine that dropped 61's own r4013. **  They caught theirs and restored it at r4015; r4016 was
+  the one still missing, and it is the only revision of mine absent from main (r3998, r4000, r4002,
+  r4004, r4006, r4008, r4010, r4012, r4014 and r4018 are all there, checked one by one).
+    ⇒ *61's r4015 states the reason this matters better than I can: this corpus's changelog IS the
+      commit log -- CORPUS_MAP's narrative stops around r3099 and everything since is read as prose
+      out of `git log`.  A silently dropped message is a silently dropped changelog entry.*
+  ⌗ SO IT GOES IN A FILE.  A commit message is the one place a record can be destroyed by a routine
+    that reports success.  This entry survives any rebase because it is content.
+
+  ** THE VERIFICATION, RE-DERIVED AT SOURCE RATHER THAN RECOPIED. **  59's r4001-r4007 read as
+  "written into the delivered side" for P13, P07 and p0, which sounds exactly like papers moving.
+  Every one of them landed in `WHAT_THE_FRAMEWORK_DELIVERS.md`, `THE_FRONTIER.md`,
+  `THE_REGISTER.md`, `RUNNING_THE_LEDGER_PASS.md` and `HANDOFF_to_60_ledger_pass.txt`, plus the two
+  instruments.  ** Zero `corpus/*.tex`.  Zero `receipts/**/*.py`.  Zero `computations/**/*.py`. **
+  So the tree digest could not have moved, and the run at 6a2f5a419b7d8f92 stayed current across
+  the merge.  *Had I assumed either way from the commit subjects I would have been wrong.*
+
+  ⛭ AND IT IS NOW A STRONGER FACT THAN THE ONE THAT WAS DROPPED.  The digest is STILL
+    6a2f5a419b7d8f92 on main at r4017 -- through 59's r3997-r4007 AND 61's r4009-r4017 -- and
+    `check_receipts_run` returns rc=0 against it.  ** The 699 pass / 0 fail / 0 over timeout verdict
+    is still the live one, two nodes and twenty revisions after it was measured. **
+
+  ⌗ WHICH IS THE CASE FOR THE DIGEST OVER ANY PROXY, AND IT IS COUNTABLE.  Across the whole span
+    from the branch point to main's head -- three nodes, five documents, two handoffs, two
+    instruments, dozens of commits -- ** exactly TWO commits touched a file the digest covers: **
+    r3996 (the L256 band seed) and r4012 (F_flat.py).  Both mine, both real.
+      ⇒ *A commit count or a date would have cried stale on every one of the others.  The digest
+        hashes what a receipt can READ, so it went stale exactly when a source check could have,
+        and at no other time -- which is what r2656 built it to do, now measured over a span with
+        three lines writing into it.*
+
 ⛭⛭⛭ r4014 (node 60): *** THE SUITE IS CLEAN AND THE RUN NO LONGER MOVES THE TREE. ***  699 pass,
 0 fail, 0 over timeout, 1528s, tree 6a2f5a419b7d8f92, gate rc=0, sweep 96/0/1.  ** And `git status`
 after the run is EMPTY **, which it has not been: r4012 stopped `F_flat.py` overwriting a tracked
