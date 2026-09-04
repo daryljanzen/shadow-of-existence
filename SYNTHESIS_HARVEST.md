@@ -237,6 +237,10 @@ Nothing is entered from memory: an entry is written with the source open.)*
 # P2 · `corpus/janzen_circle_v3.tex`
 ### *One circle, two poles: the Schwarzschild horizon and $r=0$ as critical points of a single curve*
 
+> **▣ THE READ IS COMPLETE AND ATTESTABLE** *(first pass r4021--r4025 through display filters that dropped
+> lines; re-read r4067 without filters). The two entries at the end of this block are results the filtered pass
+> had not registered.*
+
 > **▣ P2'S FLOOR.** *P2 may use P1's metric singularity and defines its own singularity taxonomy on its own
 > geometry. **Its falsification rests on the analytic structure of $r(z)$ alone** and on nothing later. Its ring
 > is its own subject, claimed at the end. Entries below are P2's; where one names a companion result, it names
@@ -313,6 +317,23 @@ Nothing is entered from memory: an entry is written with the source open.)*
 ④ ANCHOR — `P02_ring_lambda_limit`, `P02_the_approach_is_mass_free`, `P02_the_third_axis_is_two_poles`, `P02_bead_K_mass_free`.
 ⑤ JOINS — [[p3-sds-slicing]] (the horizon cubic and its involution) · [[p5-groupoid]] · [[p7-cr-framework]] (the closed excursion) · [[p13-boundary]] · [[p14-matter-sector]].
 ⑥ NOT OP FOR — **⛔ The two triples are NOT claimed to be one structure**: no derivation producing $\{0,1,2\}$ from a single condition has been exhibited, and P2 says that until one is, the coincidence of the two counts is a coincidence of counts. **And the cycloid establishes only that the extra roots are the ones $\Lambda$ supplies** — everything read off them is the companions'.
+
+
+### why-the-chart-draws-a-place-as-a-line
+① CLAIM — Metric singularities are persistently misread because of **how charts render them**. A chart such as Eddington–Finkelstein parametrises approaches to the singularity by a coordinate well defined in a neighbourhood but degenerating at the singularity itself, so **the single metric place is drawn spread out as an extended line** — the vertical line at $r=2M$. **This is the same projective mechanism by which Mercator draws the North Pole**, and the visual appearance is identical: a place drawn as a line. **But the reason for the appearance is the opposite.** At the pole the chart *manufactures an extension that is not there*, and a chart centred on the pole collapses the line back to the point it always was. At $r=2M$ the chart *spreads out a metric collapse that is*: reading the line back does not yield an ordinary point a better chart would reveal, because **no chart removes it — the collapse is in the metric, not in the projection.**
+② REGISTER — **ARGUED**, and it is the diagnostic P6 later generalises.
+③ HOME — P2 §7.2.
+④ ANCHOR — none.
+⑤ JOINS — [[p6-shadow-of-existence]] (**"formal likeness does not sort the two classes" is this case stated as a rule** — P6 reaches it from here) · [[p1-bh-causality]] · [[p3-sds-slicing]].
+⑥ NOT OP FOR — **⛔ The identical appearance is the whole point and the whole danger.** Two loci drawn the same way by the same mechanism, one a coordinate artefact and one a real collapse — *so no argument from how a singularity is drawn can sort them, in either direction.* The same holds at $r=0$ with the collapse in a different sector.
+
+### construction-not-error
+① CLAIM — **It would misread the analysis to conclude that the swept Schwarzschild geometry is a mistake.** Sweeping the radial curve to recover a spatial geometry is the legitimate and indeed the natural way to chart the geometry from a given vantage, and the result **agrees with the standard geometry on every observable in $r\ge2M$**. What is identified is not an illegitimate operation but a **misreading of its product**: treating features the construction manufactures — the asymmetric labelling, and with it the curvature singularity at $r=0$ — as features of the geometry rather than of the chart. *The construction is faithful as a description from its vantage; the error is ontological.*
+② REGISTER — **SCOPE STATEMENT**, in P2's own voice.
+③ HOME — P2 §7.3.
+④ ANCHOR — none.
+⑤ JOINS — [[p3-sds-slicing]] (the forced pivot) · [[p6-shadow-of-existence]] (perspectival ≠ false) · the $r=0$ cross-paper join above.
+⑥ NOT OP FOR — **⛔ THIS IS THE ENTRY THAT KEEPS THE WHOLE PERSPECTIVAL READING FROM SOUNDING LIKE A DISMISSAL**, and it belongs in the synthesis wherever the reading is introduced. *Nothing standard is being called wrong.* **And P2 goes further, in a direction a partisan paper would not**: the asymmetry is *"where the construction becomes most interesting rather than least"* — that two analytically identical metric singularities are charted into a sharply asymmetric pair is **not a defect to be discarded but a structural fact to be understood**, the symmetry-reduction implicit in sweeping an asymmetric radial profile about one of its endpoints doing work the symmetric underlying structure alone does not display. **Whether that work is purely an artefact of the vantage, or whether the vantage-dependence itself encodes something physical, is raised here and explicitly not resolved.**
 
 ### the-classical-seed-oppenheimer-snyder
 ① CLAIM — $r(z)=M(1+\cos z)$ is, term for term, the scale factor of a closed dust Friedmann–Lemaître cosmology, $a(\eta)=\tfrac{a_m}{2}(1+\cos\eta)$, with cosmic time $t(\eta)=\tfrac{a_m}{2}(\eta+\sin\eta)$ matching $\tau(z)$ under $M\leftrightarrow a_m/2$. **Black-hole collapse and a closed cosmos are one curve, not analogues** — the Oppenheimer–Snyder identity, read at the level of the vacuum areal radius rather than a matched dust ball. And the curve only ever decelerates: the radial acceleration is $-M/r^2$, Newtonian free fall, negative at every radius, so the cycloid has **no turning point of its rate**.
@@ -921,7 +942,7 @@ faces; **it does not cite it for the count**, which is the gap.
 |---|---|---|---|
 | **P1** | 12,085 | read sequentially from the masthead to the bibliography, no section skipped | **complete** |
 | **P4** | 5,906 | completed r4059 — the two floor subsections and the whole history section had been skipped | **complete** |
-| **P2** | 13,604 | most sections opened, but read through display filters that demonstrably dropped lines | **not attestable — re-read owed** |
+| **P2** | 13,604 | re-read r4067 without filters, every section | **complete** |
 | **P6** | 13,134 | completed r4065 — the back half of least-arbitrariness, the modal-fallacy section and the constructive ordering had not been opened | **complete** |
 | **P5** | 16,558 | completed r4063 — rigidity, the seam section, the diagnostic, the cosmological-completion section, the algebroid subsection and the closing had not been opened | **complete** |
 | **P3** | 28,931 | completed r4061 — the horizon-locus, two-readings, charge, temporal-three-ness, rigidity-groupoid, coupled-operations and closing sections had never been opened | **complete** |
