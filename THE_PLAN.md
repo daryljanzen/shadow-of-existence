@@ -33,6 +33,7 @@ promoting a `NOT CLAIMED` reading into a hard fact.*
 | | phase | what it is |
 |---|---|---|
 | **0** | **the instrument** | *`SYNTHESIS_HARVEST.md` built; this arc landed. **DONE r4009*** |
+| **0b** | **the reach pass** | *run on each paper as it is opened, **before** the Phase 1 read: check the paper against its place in the sequential design below, and correct what has drifted. See the reach table. **This is a per-paper step, not a one-off phase*** |
 | **1** | **the papers, read whole** | *eighteen documents in the order the arguments build — **P1→P16, then p0/17 last**, the geometric core being the corpus's wrapper and read as such. **One full turn minimum each, more where the paper needs it.** Per paper: a staleness sweep of the whole document first, then the word-for-word read, harvesting as it goes; mechanical fixes cleared on sight, substantive problems held for a pass **after** the read-through* |
 | **2** | **the ledgers and instruments** | *the physical values ledger · the dissolution census · the geometry and combinatorics ledgers · the 23 field ledgers (where the cross-field joins actually live) · the receipt index and its audit state · `THE_REGISTER` and `THE_FRONTIER` · the open-problems and closure ledgers · `THE_EVOLUTION_MAP` · the entry-point register · the changelog for its logged not-founds. **Same six fields, same standard** — these carry results the papers cite and do not restate* |
 | **3** | **the frontier, complete and unfiltered** | *every open item from every source, deduplicated **by room, not by keyword**. What it is · what it bears on · **what it does not bear on** · what would discharge it. **No triage and no verdicts that excuse an item from the list.** Each worked fresh before listing, because the base rate says most open-claims here are stale links; and the verdict bar is symmetric — striking one costs exactly what keeping one costs* |
@@ -41,7 +42,89 @@ promoting a `NOT CLAIMED` reading into a hard fact.*
 | **6** | **verification** | *`check_bibliography.sh` · the not claimed census · declared counts against enumerated items · the receipt gate on every quoted number · the rigged-discriminator check on every "the corpus settles X" · and the **word-for-word read of the finished paper on its own**, which is what the instruments cannot do* |
 | **7** | **propagation** | *`WHAT_THE_FRAMEWORK_DELIVERS` registered or retired, **with every reference to it updated in the same pass**. **A node does not alter the README's framing or spin-up order** — that rule stands and is not restated as a decision owed; the question does not arise until the paper exists* |
 
+### Phase 0b · the reach pass — the corpus's sequential design, and what each paper may reach for
+
+**⌗ WHY THIS EXISTS.** *Two papers were opened and both had drifted the same way: vocabulary and claims from
+far downstream sitting in the abstract and introduction, where a reader meets them before anything defines
+them. **A paper thick with undefined terms of art reads as a system that needs its own dictionary to work**,
+which is exactly the handle a hostile reader wants and makes the whole corpus look tautological. The corpus has
+watched this happen before, when downstream content went into the README and fresh readers took the spin-up for
+manipulation. So the correction is not a one-time cleanup: it runs on every paper as it is opened.*
+
+**⌗ THE RULE, AS A DEPENDENCY RULE AND NOT A SENIORITY ONE.** *A paper may use what an earlier paper in the
+reading order defined, and may name what it supplies to later ones. That makes every violation checkable: for
+any term, find the paper that defines it, and flag every use before that point. It also means the ladder is not
+"later papers get more latitude" — by P7 the vocabulary simply exists.*
+
+**⌗ AND EVERY FOUNDATIONAL PAPER STILL CLAIMS ITS OWN SIGNIFICANCE.** *Standing alone is not standing small. A
+paper motivates its reason to exist beyond its isolated technical purpose — in its own terms, on what it forces
+about the world. What it must not do is borrow that significance from what it enables downstream.*
+
+| paper | what it may reach for |
+|---|---|
+| **P1** | *Stands alone on standard general relativity. No corpus vocabulary at all. Claims its own significance, and at the very end may name what it supplies later — **as a supply, not as support**.* |
+| **P2** | *Bridges P1 to P3. May use P1's metric singularity and defines its own singularity taxonomy. Its ring is its own subject and it claims the ring at the end.* |
+| **P3** | *Forward-reaching by necessity: it develops the geometric machinery used throughout, so it does not have P1's or P2's luxury of independence. It must **overdevelop** its pieces to be what later papers need — three hinges motivated and justified so as to serve both the horizon triple and the generations. **The discipline that keeps that honest**: every piece built beyond P3's own need is motivated by a question visible inside P3, with the downstream use named as a use and never as the reason.* |
+| **P4** | *Stands alone, like P1, and reaches for nothing. Its result is confrontational and must land on its own evidence, acceptable to a reader who has conceded nothing earlier. **Its non-dependence on P1 is load-bearing**: neither leans on the other, which is what makes their convergence evidence rather than construction.* |
+| **P5** | *Leans on the P1--P3 arc and on P4. The algebraic counterpart to P3: the other "function" development paper, same overdevelopment licence and same discipline.* |
+| **P6** | *Both. Foundational epistemology drawing on historiography and on P1--P5 as developed — standing alone in the corpus's first third as an epistemic engine — **and** synthesising forward material, where that material serves the same epistemic end as the already-developed pieces.* |
+| **P7** | *The same shape from the physics side. Synthesises P1--P6, develops its own axioms, worked examples and central theorem, then synthesises the rest-of-corpus fallout without flinching. **A midpoint synthesis with a significant bent** — which is why it cannot also be p0/17's kind of paper, and why the outside results paper this arc builds is a distinct object rather than a duplicate.* |
+| **P8--P12** | *Semi-independent, sequential in logical development. **P8 and P9 are a joined pair.*** |
+| **P13--P14** | *A theoretical/empirical pair. **P13 carries its own synthesis**, because its developmental chain reaches back through P3, P5 and P7--P12.* |
+| **P15--P16** | *The second theoretical/empirical pair. **No synthesis of its own is owed** — P7 already covers it.* |
+| **p0/17** | *The geometric core exposed and synthesised.* |
+
+**⛔ THE TWO PLACES THIS IS AT RISK, flagged rather than assumed away.**
+
+*① **P3 and P5's overdevelopment licence is the same licence that produces the tautology smell.** Machinery
+built for a downstream need, and justified by that need, reads as assumed rather than derived — the reader
+cannot tell a derivation from a fitting. The test at each such piece: **would a reader who stops at this paper
+see why it was built?** If the only answer is "because a later paper needs it", the motivation is missing and
+the piece is doing the corpus harm regardless of its correctness.*
+
+*② **P4's claim to significance is where forward reach will leak in**, because significance is the one thing a
+standalone paper is still permitted to assert. It must be asserted on what P4 forces about cosmology, never on
+what it enables later — and P4 in particular must remain austere, since a reader who feels softened up for it
+has been given a reason to discount it.*
+
+**⌗ HOW THE PASS IS RUN — decided, not left to the moment.** *The reach pass **cannot be completed on the
+abstract alone**: on both papers run so far, the drift was as heavy in the body as in the front matter. But
+running it as a separate whole-document pass would mean reading the paper twice, and the reach judgement in the
+body needs the same reading the Phase 1 read needs. So it runs in **two stages**:*
+
+*① **Before the read** — the front matter (abstract, introduction, roadmap) plus a **mechanical vocabulary
+sweep of the whole document**: for each term, the paper that defines it, and every use before that point. The
+sweep is cheap, it is not a read, and it is what makes stage ① safe — it says where in the body the leaks are,
+so the front matter is not corrected blind.*
+
+*② **In tandem with the Phase 1 read** — the rest, because reach defects in the body are found by reading and
+there is no cheaper way to find them. This is what happened on P2 and it worked.*
+
+*⛔ **And the front matter is corrected first for a reason**: it is the paper's self-presentation, so fixing it
+before the body is read means the body is read against a frame that is already right.*
+
+**⌗ WHAT THE PASS DOES.** *Read the paper against its row. Where it has drifted, correct the paper. Where the
+row turns out not to fit what the paper actually does, **correct the row** — the design is to be tested against
+the material, and the material at each paper is the better evidence. Either way the correction is made when the
+paper is opened, before the Phase 1 read, so the read is of the paper as it should stand.*
+
 ### Standing through the whole arc
+
+- **A TURN BOUNDARY IS NEVER A REASON TO CLOSE WORK.** *"More than the current turn" is available at every
+  phase and every paper, and nudges are cheap. A job is sized by what it needs, never by what fits — so **never
+  compress a task to land inside one turn, and never call something finished in order to end one.** When a pass
+  turns out to be bigger than expected, the correct move is to say what is done, name precisely what is owed and
+  where it goes, and carry on next turn. The pacing rule and the no-mess-left-behind rule are the same rule read
+  from two ends: work is not abandoned at a turn boundary, and it is not rushed to avoid one.*
+
+- **⛔ "READ AND HARVESTED" IS A CLAIM THAT MUST BE EARNED BY A FULL READ, END TO END.** *Phase 0b does not
+  replace Phase 1 and cannot stand in for it. The reach pass reads the front matter and sweeps the whole
+  document mechanically; **a mechanical sweep is not a read**, and neither is opening the sections a probe
+  pointed at. **A paper is read when every section has been read straight through**, and only then may the
+  harvest be called that paper's. Sampling produces entries that are accurate about what was opened and silent
+  about everything else — and the silence is invisible, because a partial harvest looks exactly like a complete
+  one. **Where a read is partial, say which sections were read and which were not**, in the commit and in the
+  reply, and treat the paper as unfinished. This was got wrong on P7 at r4047 and corrected at r4049.*
 
 - **Long or expensive runs go to the parallel Code node, never to this thread.**
 - **Anything found broken mid-read that will not settle in the turn is collected and surfaced before moving
