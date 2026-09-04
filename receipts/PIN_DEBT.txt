@@ -1,5 +1,38 @@
 0
 
+⛭⛭⛭ r4026 (node 60): 61's REWORDINGS BROKE TWO RECEIPTS, THE DIGEST CAUGHT IT, AND CI COULD NOT HAVE.
+699 pass, 0 fail, 0 over timeout, 1411s, tree 6430adffda02484e, gate rc=0, sweep 96/0/1, tree clean
+after the run.
+
+  ** THIS IS THE DIGEST EARNING ITS KEEP, ON EVIDENCE RATHER THAN ARGUMENT. **  r4020 recorded that
+  across three nodes and dozens of commits exactly TWO touched a digest-covered file, both mine, and
+  argued that a commit count or a date would have cried stale on all the others.  ** 61's r4019/r4021
+  are the third and fourth, and they are the first NOT mine. **  The digest went stale, the suite was
+  re-run because of it, and the run found two broken receipts.
+    ⇒ *** AND NOTHING ELSE WOULD HAVE FOUND THEM. ***  The `heavy` tier runs nightly ON MAIN, so a
+      branch that rewords a paper and a receipt that quotes it do not meet until after the merge.
+      The `fast` tier was GREEN on both commits the whole time.
+
+  ⌗ NEITHER IS A FINDING THAT FELL.  Both are pins that moved, and both were pinned to decoration:
+    · `L147/B10` required `equal-radii $\mathrm{dS}_{2}\times S^{2}$ throat`.  ** r4019 removed
+      exactly two words from that sentence -- `equal-radii` and `throat` -- because they are the
+      COMPANIONS' names for the object, and that pass exists to take borrowed vocabulary out of P1. **
+      *So the receipt was pinned to the one thing the pass was for.*  P1 still says the geometry is
+      $\mathrm{dS}_{2}\times S^{2}$ and still says it carries a scale of its own; c54.202's footing
+      is untouched.  Re-pinned to the geometry and the consequence.
+    · `L204/P9` required "it stands as the programme's named frontier" and "full worldline-and-field
+      development".  The first has left the corpus but for P5, plural and about something else; the
+      second MOVED TO P7.  ** Third move for this pin: r3096, r3107, r4019. **  Re-pinned to the
+      CITATION KEY `JanzenDynamics` -- *a citation is the actual link, and cannot be reworded without
+      changing what the paper does, where the sentence around it has now been rewritten three times
+      by three correct edits.*
+
+  ⛔ AND BOTH CHECKS COULD BE SATISFIED BY THE WRONG PAPER.  Each is a claim ABOUT P1 tested against
+  every paper concatenated.  ** B10's second clause would have gone on passing on P7's copy of
+  "worldline-and-field" after it left P1 entirely. **  Both now read `BH_causality_v2` on its own.
+    ⌗ *A check that can be satisfied by a paper it is not about is not testing what its label says --
+      and it fails silently in the safe direction, which is why it survived this long.*
+
 ⛭⛭⛭ r4020 (node 60): THE DROPPED RECORD, RESTORED -- AND PUT IN A FILE THIS TIME.
 
   ** WHAT WAS LOST. **  r4016 was my merge commit integrating 59's r3997-r4007 into this line, and
