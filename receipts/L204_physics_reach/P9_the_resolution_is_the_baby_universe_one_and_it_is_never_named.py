@@ -85,6 +85,16 @@ def main():
     rp = re.sub(r'\s+', ' ', open(os.path.join(ROOT, 'THE_PHYSICS_REACH.md'),
                                   encoding='utf-8', errors='replace').read())
 
+    # ** r4022: P1 ON ITS OWN.  ** The check below is a claim about P1 and was tested against
+    # `allp` -- every paper concatenated -- so it would have passed on another paper's copy of
+    # the phrase.  It nearly did: "full worldline-and-field development" left P1 at 61's r4019
+    # and now lives in P7, which `allp` cannot tell apart.  *A claim about one paper is tested
+    # against that paper.*
+    p1 = re.sub(r'\s+', ' ', '\n'.join(
+        l for l in open(os.path.join(ROOT, 'corpus', 'BH_causality_v2.tex'),
+                        encoding='utf-8', errors='replace').read().split('\n')
+        if not l.lstrip().startswith('%')))
+
     check('R-P names ⑩ as quantum information -- the information paradox, unitarity',
           'quantum information' in rp and 'information paradox' in rp)
 
@@ -165,10 +175,21 @@ def main():
           'because the spacetime it requires is never physically instantiated"',
           'it does not arise, because the spacetime it requires is never physically instantiated'
           in allp.replace('\\emph{resolved}', 'resolved'))
-    check('and P1 still names the crossing as the programme\'s frontier, its development owed to the '
-          'companion dynamics',
-          "it stands as the programme's named frontier" in allp
-          and 'full worldline-and-field development' in allp)
+    # ** RE-PINNED r4022, AND THIS IS THE PIN'S THIRD MOVE (r3096, r3107, now 61's r4019). **
+    #   Both pinned phrases are gone from P1: "it stands as the programme's named frontier" is
+    #   out of the corpus except in P5, plural and about something else, and "full
+    #   worldline-and-field development" moved to P7.  ** The CLAIM is untouched ** -- P1 still
+    #   says the crossing is not settled there and still routes its development to the companion
+    #   dynamics -- so this is a pin that moved, not a finding that fell.
+    #   ⇒ *** PINNED TO THE ROUTING RATHER THAN THE PHRASING. ***  A citation key is the actual
+    #       link; the sentence around it is decoration that three separate correct edits have now
+    #       rewritten.  `JanzenDynamics` in P1 IS "its development owed to the companion
+    #       dynamics", and it cannot be reworded without changing what the paper does.
+    check('and P1 still names the crossing as not settled there and routes its development to the '
+          'companion dynamics by citation',
+          'crossing such a boundary' in p1
+          and 'is not settled here' in p1
+          and 'JanzenDynamics' in p1)
 
     print()
     if FAILED:
