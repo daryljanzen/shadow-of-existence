@@ -231,6 +231,105 @@ Nothing is entered from memory: an entry is written with the source open.)*
 ⑤ JOINS — [[p4-modern-parallax]] · [[p6-shadow-of-existence]] (draws on P1's instance without circularity) · [[p7-cr-framework]].
 ⑥ NOT OP FOR — **The forbidden thing is leaning for support, not reference.** Forward citations that disclaim reliance while naming what P1 supplies are permitted and used. **⛔ For the synthesis this is a constraint on presentation, not only on logic**: any section that presents P1 and P4 as a joint argument, or lets one carry weight for the other, destroys exactly the independence that makes their agreement evidential.
 
+
+---
+
+# P2 · `corpus/janzen_circle_v3.tex`
+### *One circle, two poles: the Schwarzschild horizon and $r=0$ as critical points of a single curve*
+
+> **▣ P2'S FLOOR.** *P2 may use P1's metric singularity and defines its own singularity taxonomy on its own
+> geometry. **Its falsification rests on the analytic structure of $r(z)$ alone** and on nothing later. Its ring
+> is its own subject, claimed at the end. Entries below are P2's; where one names a companion result, it names
+> it as the companion's.*
+
+### the-cycloid-and-its-two-critical-points
+① CLAIM — The Schwarzschild interior in Lemaître–Tolman cycloid coordinates has areal radius $r(z)=M(1+\cos z)$, $z\in[0,\pi]$, with $r=2M$ at $z=0$ and $r=0$ at $z=\pi$, proper time $\tau(z)=M(z+\sin z)$ and horizon-to-centre proper time $M\pi$. Extended to $z\in\mathbb R$, $r(z)$ is $C^\infty$ and both endpoints are **non-degenerate critical points of identical analytic character**: $\dd r/\dd z=0$ at both, $\dd^2r/\dd z^2=\mp M$.
+② REGISTER — **PROPOSITION**, proved, receipt-anchored.
+③ HOME — P2 §2–§3, `prop:cycloid`, `prop:critical`.
+④ ANCHOR — `P02_cycloid_and_critical_points`, `P02_interior_metric`.
+⑤ JOINS — [[p1-bh-causality]] (supplies the metric singularity the two points are instances of) · [[p3-sds-slicing]] · [[p7-cr-framework]] · [[p17-geometric-core]].
+⑥ NOT OP FOR — **The cycloid form is specific to vacuum Schwarzschild.** Charge, rotation and $\Lambda$ are not reached by generalising the cycloid, and P2 says so; the companions reach them by a different construction.
+
+### the-identity-is-forced-by-a-circle-not-a-coincidence
+① CLAIM — The identical character of the two critical points is not an accident of $M(1+\cos z)$. Since $r-M=M\cos z$ obeys $r''=-(r-M)$, the arc is the projection of uniform motion on the circle $(r-M)^2+s^2=M^2$, and the two critical points are its two $r$-poles. **Three independent readings of the same fact**: the circle is homogeneous, so has no distinguished point; it is the phase-space orbit of a harmonic oscillator at conserved energy $M^2/2$, so the critical points are the orbit's two turning points, exchanged by the time reversal $z\mapsto-z$; and it is a Thales circle on $[0,2M]$, so they are the two ends of a diameter, which has no preferred end.
+② REGISTER — **PROVED**, with ledger support.
+③ HOME — P2 §1 and §3.
+④ ANCHOR — ledgers `integrable_systems`, `figure_theorem`.
+⑤ JOINS — [[p3-sds-slicing]] · [[p5-groupoid]] (the discrete symmetry that exchanges the two ends).
+⑥ NOT OP FOR — Homogeneity is of the *level set of a conserved quantity*, not of the spacetime. **The sole asymmetry between the poles is which value the chart's origin assigns each** — the geometry supplies none.
+
+### one-curve-six-patches-and-two-beyond-kruskal
+① CLAIM — Continuing $z$ into the complex plane at each critical point gives a single analytic curve, hyperbola–circle–hyperbola. At $z=0$, $z\mapsto\pm i\rho$ gives $r=M(1+\cosh\rho)\in(2M,\infty)$: **two** isometric asymptotically flat exteriors meeting at the bifurcation 2-sphere. At $z=\pi$, $z\mapsto\pi\pm i\rho'$ gives $r=M(1-\cosh\rho')\in(-\infty,0)$: **two** regions on $r<0$, both horizonless ($f=\coth^2(\rho'/2)>1$, no zero on $r<0$) and asymptotically flat as $r\to-\infty$. With the time-parity choice the curve carries six patches; the four at $r\ge0$ **are** the maximal Kruskal–Szekeres extension, and the two at $r<0$ are what Kruskal never reaches, having stopped at the $r=0$ turn.
+② REGISTER — **PROPOSITIONS**, proved by explicit substitution; the metrics are checked against the standard Schwarzschild form in each region.
+③ HOME — P2 §4–§5, `prop:region_I_metric`, `prop:back_seam_metric`, `prop:four_regions`.
+④ ANCHOR — `P02_analytic_continuations`.
+⑤ JOINS — [[p3-sds-slicing]] (identity of the $r<0$ arm) · [[p7-cr-framework]] · [[p13-boundary]].
+⑥ NOT OP FOR — **The fragmentation into "regions" is a chart artefact, not a structural fact** — the $(r,t)$ coordinates degenerate at the two critical points and cut the single curve at exactly the turns. **And the continuation is of the curve.** P2 does not claim it is an extension of the Schwarzschild Lorentzian manifold; that distinction is what keeps the Sbierski concession honest.
+
+### kretschmann-divergence-is-a-chain-rule-artefact
+① CLAIM — $K(z)=48M^2/r(z)^6=48/[M^4(1+\cos z)^6]$ has a **twelfth-order pole** at $z=\pi$ and is finite ($3/4M^4$) at $z=0$. The pole order is the product of the critical point's multiplicity (2) and the power of $r$ in the denominator (6). **Corollary**: had the chart labelled the horizon critical point $r=0$ instead of $r=2M$, $K$ would diverge *there* and the standard classification would call the horizon a true curvature singularity. The divergence tracks the chart's labelling.
+② REGISTER — **PROPOSITION AND COROLLARY**, proved.
+③ HOME — P2 §6, `prop:Kretschmann`, `cor:Kretschmann_at_z0`.
+④ ANCHOR — `P02_kretschmann_chain_rule`.
+⑤ JOINS — [[p3-sds-slicing]] (what produces the asymmetric labelling) · [[p6-shadow-of-existence]] (a worked reclassification) · [[p17-geometric-core]].
+⑥ NOT OP FOR — **⛔ P2 does not claim the divergence is unreal, and this is the single most misquotable result in the paper.** It is the curvature scalar of the Schwarzschild perspectival metric — the metric as a tensor field over the parameter $r$ — **real as that metric's, and marking a genuine curvature singularity**. What it is *not* is an invariant of the smooth manifold on which $z$ is natural. Any synthesis sentence of the form "the singularity is a chart artefact" overstates P2 and hands a hostile reader the paper.
+
+### the-two-species-genus
+① CLAIM — Both critical points are metric singularities of one genus — each a place at which the metric assigns no separation, drawn by the $r$-chart as an extended locus. The horizon is the **finite-curvature** species (P1's result, on independent grounds): the point worldlines pass *through*. $r=0$ is the **infinite-curvature** species: the point worldlines *end* at, where the construction is legitimately singular. **The difference sorts exactly by derivative order.** At zeroth order both collapse the ruler; at first order nothing distinguishes them (the lowest scalar invariant is second order, the connection is gauge, and the $r$-chart degenerates at both symmetrically); the first invariant that separates them is the curvature itself, second order. So the distinction is *sourced* at zeroth order in the single value the chart assigns each pole and *lands* at second order.
+② REGISTER — **DEFINITION AND ARGUMENT**, P2's own, built on P1's finite-curvature case.
+③ HOME — P2 §7.
+④ ANCHOR — none.
+⑤ JOINS — [[p1-bh-causality]] (the finite-curvature species) · [[p3-sds-slicing]] · [[p7-cr-framework]].
+⑥ NOT OP FOR — **⛔ The paper heads off its own tempting overstatement: the two are NOT identical as metrics.** A metric fixes curvature through its second derivatives and the curvature differs. And a reader testing the identity against the full interior metric finds the two behaving oppositely — $g_{tt}\to0$ at the horizon with the 2-sphere finite, against the 2-sphere collapsing at $r=0$ with $g_{tt}\to\infty$. P2 argues that opposition **is** the finite-versus-infinite distinction displaying itself, every one of those behaviours being a function of the single areal value the chart assigns; it is the signature of the identity, not a second distinction beside it.
+
+### the-sweep-does-not-repair-either-point
+① CLAIM — Recovering the full spatial geometry by sweeping the radial curve through the 2-sphere multiplies the points but does not make either critical point ordinary. At the horizon the swept sphere is ordinary (radius $2M$, area $16\pi M^2$) and events at different angles are genuinely spacelike-separated, while the collapse **along the generator** survives untouched — zero separation carried around an orthogonal symmetry is still zero. At $r=0$ the swept sphere itself degenerates, the collapse living in the angular sector instead. In both, the sweep adds no separation where the metric assigns none.
+② REGISTER — **ARGUED**, and P2 marks it as where the standard picture quietly goes wrong.
+③ HOME — P2 §7.1.
+④ ANCHOR — none.
+⑤ JOINS — [[p1-bh-causality]] (the angular sector is not what the metric singularity is) · [[p3-sds-slicing]].
+⑥ NOT OP FOR — Consequently the horizon does not become a sphere of normal radius enclosing a normal interior, and **$r=0$ does not become a normal centre at which space tears**.
+
+### the-falsification-of-the-inextendibility-inference
+① CLAIM — The standard classification infers from the curvature divergence at $r=0$ that no continuation through it exists. **The continuation $z\mapsto\pi+i\rho'$ is a counterexample, and one counterexample refutes a universal.** It is the same analytic operation the standard treatment already accepts at $z=0$ as removing the horizon. So $r=0$ is a critical point the construction passes through, not a boundary at which it stops, and the divergence-to-terminus inference fails — **independently of any ontological reading**.
+② REGISTER — **ESTABLISHED OUTRIGHT**, and P2 is explicit that this is what it establishes and the ontology is not.
+③ HOME — P2 §8 and §8.5 (conclusion); the separation is made in §8.3.
+④ ANCHOR — none.
+⑤ JOINS — [[p1-bh-causality]] (the other end of the same asymmetry) · [[p3-sds-slicing]] · [[p7-cr-framework]].
+⑥ NOT OP FOR — **⛔ Three limits, all stated at source, and the synthesis needs all three.** ① It refutes the *inference*, not the singularity: the worldline still ends at $r=0$ and the curvature still diverges. ② **Sbierski's $C^0$-inextendibility stands untouched** — proved by causal-geometric arguments that never invoke the curvature divergence, and a continuation of the *curve* is not a $C^0$ extension of the Lorentzian manifold. P2 concedes this precisely and asks nothing of it. ③ It does not establish that the $z$-manifold is more fundamental than the $r$-chart; that remains a choice of reading.
+
+### what-is-established-versus-what-remains-a-choice
+① CLAIM — P2 separates the two explicitly, on the ground that running them together is what makes the result look weaker than it is. **Established**: the extendibility of the curve and the failure of the divergence-to-terminus inference. **A choice**: whether the residual divergence is a feature of the geometry or of the perspectival chart. The two readings agree on every observable in $r\ge2M$ and agree that the curve continues; they differ only on which of the $z$-curve and the $r$-chart is fundamental. What breaks the symmetry is supplied elsewhere — and P2 states the ground plainly: the perspectival reading **explains why** the chart labels two analytically identical points asymmetrically, where the standard reading must posit that asymmetry as brute fact.
+② REGISTER — **ESTABLISHED / CHOICE**, separated by the paper itself.
+③ HOME — P2 §8.3.
+④ ANCHOR — none.
+⑤ JOINS — [[p6-shadow-of-existence]] (**the reclassification constraint: an admissible reading must explain the appearance, not merely reproduce it**) · [[p3-sds-slicing]].
+⑥ NOT OP FOR — **⛔ AND P2 REACHES THIS INSTANCE WITHOUT LEANING ON P6, WHICH IS THE POINT AND NOT A GAP.** An instance derived without the method that would later license it is a worked case on which that method's claim to track the world can rest **without circularity** — the same non-leaning relation P1 holds to P4. *For the synthesis: presenting P6 as licensing P2's move destroys exactly this.* **And the surviving objection is stated rather than dodged**: $K$ is coordinate-independent and its divergence resists relabelling — as the curvature of the perspectival metric. Whether that metric is fundamental is the very point at issue.
+
+### the-ring-and-what-it-carries
+① CLAIM — P2's own claim, made at the end. The single horizon exhibited here is the $\Lambda\to0$ degeneration of a root **triple**: for $\Lambda>0$, $f=1-2M/r-r^2/\alpha^2$ carries a horizon cubic whose cosmological root and backward-radial partner run to infinity as $\alpha\to\infty$, leaving one finite horizon with $r=0$ persisting throughout. **Horizon multiplicity is a reading of the cosmological constant.** Beside the root triple sits a second, independent triple in the structure function's *values*: on the forced member $(\dd r/\dd\tilde\tau)^2=1-f$, and the excursion's three critical loci sit at $f=0$ (seam, speed $\pm1$), $f=1$ (turnaround, speed $0$) and $f=2$ (interior Euclidean null, speed $\pm i$) — so $1-f\in\{+1,0,-1\}$ and **the three critical loci are the three causal characters**. The root triple grades position on the ring; these values grade causal character along it.
+② REGISTER — **RECEIPT-ANCHORED for the $\Lambda\to0$ limit**; the readings built on the roots are named as the companions'.
+③ HOME — P2 §8.4 (`sec:ring`).
+④ ANCHOR — `P02_ring_lambda_limit`, `P02_the_approach_is_mass_free`, `P02_the_third_axis_is_two_poles`, `P02_bead_K_mass_free`.
+⑤ JOINS — [[p3-sds-slicing]] (the horizon cubic and its involution) · [[p5-groupoid]] · [[p7-cr-framework]] (the closed excursion) · [[p13-boundary]] · [[p14-matter-sector]].
+⑥ NOT OP FOR — **⛔ The two triples are NOT claimed to be one structure**: no derivation producing $\{0,1,2\}$ from a single condition has been exhibited, and P2 says that until one is, the coincidence of the two counts is a coincidence of counts. **And the cycloid establishes only that the extra roots are the ones $\Lambda$ supplies** — everything read off them is the companions'.
+
+### the-classical-seed-oppenheimer-snyder
+① CLAIM — $r(z)=M(1+\cos z)$ is, term for term, the scale factor of a closed dust Friedmann–Lemaître cosmology, $a(\eta)=\tfrac{a_m}{2}(1+\cos\eta)$, with cosmic time $t(\eta)=\tfrac{a_m}{2}(\eta+\sin\eta)$ matching $\tau(z)$ under $M\leftrightarrow a_m/2$. **Black-hole collapse and a closed cosmos are one curve, not analogues** — the Oppenheimer–Snyder identity, read at the level of the vacuum areal radius rather than a matched dust ball. And the curve only ever decelerates: the radial acceleration is $-M/r^2$, Newtonian free fall, negative at every radius, so the cycloid has **no turning point of its rate**.
+② REGISTER — **CLASSICAL**, cited to Oppenheimer–Snyder; requires nothing of the corpus.
+③ HOME — P2 abstract, §1, and the §2 remark.
+④ ANCHOR — none.
+⑤ JOINS — [[p7-cr-framework]] · [[p15-cr-cosmology]] · [[p16-cosmogenesis]].
+⑥ NOT OP FOR — **The identity here is at $\Lambda=0$ and closed.** The turn belongs to a positive cosmological constant, not to the collapse: it appears only when the circle is carried to $\Lambda>0$. *This is the entry that lets the synthesis say where the collapse–cosmology identity starts without importing anything — it is visible in bare Schwarzschild.*
+
+### p2-open-items
+① CLAIM — Stated open at source: the complex parameter admits a **third axis**, $z\in\mathbb C$ generically, whose status P2 raises and does not settle; the cycloid form does not generalise to charge, rotation or $\Lambda$; and the ontological framing is offered as an alternative rather than as a derivation forcing it.
+② REGISTER — **OPEN, stated at source.**
+③ HOME — P2 §8.6 (limitations).
+④ ANCHOR — `P02_the_third_axis_is_two_poles`.
+⑤ JOINS — [[p3-sds-slicing]] · [[p9-range-paper]].
+⑥ NOT OP FOR — The ontological limitation attaches **to the ontological claim only** and not to the falsification, which is established outright and independent of which manifold is taken as fundamental.
+
 ---
 
 ## THE FRONTIER GATHER
