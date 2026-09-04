@@ -117,6 +117,15 @@ paper is opened, before the Phase 1 read, so the read is of the paper as it shou
   where it goes, and carry on next turn. The pacing rule and the no-mess-left-behind rule are the same rule read
   from two ends: work is not abandoned at a turn boundary, and it is not rushed to avoid one.*
 
+- **⛔ "READ AND HARVESTED" IS A CLAIM THAT MUST BE EARNED BY A FULL READ, END TO END.** *Phase 0b does not
+  replace Phase 1 and cannot stand in for it. The reach pass reads the front matter and sweeps the whole
+  document mechanically; **a mechanical sweep is not a read**, and neither is opening the sections a probe
+  pointed at. **A paper is read when every section has been read straight through**, and only then may the
+  harvest be called that paper's. Sampling produces entries that are accurate about what was opened and silent
+  about everything else — and the silence is invisible, because a partial harvest looks exactly like a complete
+  one. **Where a read is partial, say which sections were read and which were not**, in the commit and in the
+  reply, and treat the paper as unfinished. This was got wrong on P7 at r4047 and corrected at r4049.*
+
 - **Long or expensive runs go to the parallel Code node, never to this thread.**
 - **Anything found broken mid-read that will not settle in the turn is collected and surfaced before moving
   on** — not routed to a ledger and left, which is the same abandonment in a tidier place.

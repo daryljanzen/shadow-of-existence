@@ -690,6 +690,14 @@ faces; **it does not cite it for the count**, which is the gap.
 # P7 · `corpus/CR_framework.tex`
 ### *Collapsed matter must become a universe: the necessary and sufficient augmentation, proven for collapse of any symmetry*
 
+> **⛔ THIS HARVEST IS PARTIAL AND IS NOT YET P7'S.** *The entries below were written from the sections
+> actually opened at r4045--r4047: the abstract, the axioms, the causal-reassignment opening, the (F1)--(F6)
+> list and the central-theorem statement, the lift opening, the frontiers opening, and two passages of the
+> synthesis. **Unread at that point**: the introduction, the consistency section, the whole applications
+> section, the body of the Null--Boundary section, the remainder of the lift and of the central theorem, and
+> most of both syntheses including the general-reach subsection. Each entry is accurate about its own source;
+> **none of them speaks for the sections not opened.** The read is being completed from r4049.*
+
 > **▣ P7 IS THE MIDPOINT SYNTHESIS WITH A SIGNIFICANT BENT.** *It synthesises P1--P6, develops its own axioms,
 > worked constructions and central theorem, then takes the rest-of-corpus fallout. **Because it develops real
 > results it cannot be purely holistic** — which is exactly why the outside results paper this arc builds is a
