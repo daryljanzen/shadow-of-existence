@@ -276,6 +276,14 @@ The orders of $\sigma$ and $\tau$ are Propositions~\ref{prop:sigma} and~\ref{pro
 Every within-single-geometry morphism lies in $\langle\sigma,\tau\rangle$. The within-single-geometry morphism group is therefore exactly $D_{3}\cong S_{3}$.
 \end{proposition}
 
+\begin{proof}
+By Definition~\ref{def:morphism} a within-single-geometry morphism $g$ acts on the sky angle as a transformation $T:w\mapsto w'$ satisfying $\sin 3T(w)=\sin 3w$ for every $w$. Since $\sin a=\sin b$ holds for all the relevant values exactly when $a\equiv b$ or $a\equiv \pi-b \pmod{2\pi}$, the condition $\sin 3T(w)=\sin 3w$ admits at each $w$ either branch $3T\equiv 3w$ or $3T\equiv\pi-3w \pmod{2\pi}$. Continuity alone does not select between them---the two branches meet at $w=\pi/6 \pmod{\pi/3}$, and a continuous map could switch branches there. What excludes a switch is invertibility: every morphism of $\mathcal{G}$ is a bijection (Proposition~\ref{prop:groupoid}), and a branch-switch at a crossing folds the domain (the two branches have slopes $+1$ and $-1$, so the switched map is non-injective). A continuous \emph{bijection} satisfying the condition therefore stays on one branch uniformly:
+\[
+3T(w)\equiv 3w \pmod{2\pi}\qquad\text{or}\qquad 3T(w)\equiv \pi-3w \pmod{2\pi}.
+\]
+The first branch gives the three rotations $T(w)=w+2\pi k/3$ ($k=0,1,2$), which are the powers of $\tau:w\mapsto w+2\pi/3$; the second gives the three reflections $T(w)=\pi/3-w+2\pi k/3$, which are $\sigma:w\mapsto\pi/3-w$ and its $\tau$-translates. These six maps are exactly $\langle\sigma,\tau\rangle=D_{3}$. Hence every within-single-geometry morphism lies in $\langle\sigma,\tau\rangle$; since $\sigma$ and $\tau$ are themselves such morphisms, the group is exactly $D_{3}\cong S_{3}$. This closes the generation question that the slicing paper~\cite{JanzenSlicing} left open: the discrete generators identified there are not merely forced and present but complete.
+\end{proof}
+
 \begin{remark}[The group has a projective invariant, and it is the equianharmonic cross-ratio]\label{rem:equianharmonic}
 The Weyl $S_{3}$ permutes the three horizon roots, and on the observer's sky angle those roots
 are the three preimages of $3w$ under the sine---$w$, $w+120^{\circ}$, $w+240^{\circ}$, the
@@ -299,23 +307,6 @@ order-three structures amounts to is therefore left as noted rather than asserte
 is equianharmonic, the monodromy contains an order-three cyclic subgroup, and the two are not here shown to be one
 thing.
 \end{remark}
-
-\begin{remark}
-The weight is worth marking. Three points $120^{\circ}$ apart, taken with their centre, are
-equianharmonic automatically; the content is not the value but that the vantages \emph{are} so
-spaced, which is forced elsewhere and used here. The remark therefore names a consequence of a
-forced fact rather than adding one---but the name is not idle, since it is what identifies the
-group's invariant as a projective one and ties the monodromy's order-three cyclic subgroup to the classical
-$j=0$ case.
-\end{remark}
-
-\begin{proof}
-By Definition~\ref{def:morphism} a within-single-geometry morphism $g$ acts on the sky angle as a transformation $T:w\mapsto w'$ satisfying $\sin 3T(w)=\sin 3w$ for every $w$. Since $\sin a=\sin b$ holds for all the relevant values exactly when $a\equiv b$ or $a\equiv \pi-b \pmod{2\pi}$, the condition $\sin 3T(w)=\sin 3w$ admits at each $w$ either branch $3T\equiv 3w$ or $3T\equiv\pi-3w \pmod{2\pi}$. Continuity alone does not select between them---the two branches meet at $w=\pi/6 \pmod{\pi/3}$, and a continuous map could switch branches there. What excludes a switch is invertibility: every morphism of $\mathcal{G}$ is a bijection (Proposition~\ref{prop:groupoid}), and a branch-switch at a crossing folds the domain (the two branches have slopes $+1$ and $-1$, so the switched map is non-injective). A continuous \emph{bijection} satisfying the condition therefore stays on one branch uniformly:
-\[
-3T(w)\equiv 3w \pmod{2\pi}\qquad\text{or}\qquad 3T(w)\equiv \pi-3w \pmod{2\pi}.
-\]
-The first branch gives the three rotations $T(w)=w+2\pi k/3$ ($k=0,1,2$), which are the powers of $\tau:w\mapsto w+2\pi/3$; the second gives the three reflections $T(w)=\pi/3-w+2\pi k/3$, which are $\sigma:w\mapsto\pi/3-w$ and its $\tau$-translates. These six maps are exactly $\langle\sigma,\tau\rangle=D_{3}$. Hence every within-single-geometry morphism lies in $\langle\sigma,\tau\rangle$; since $\sigma$ and $\tau$ are themselves such morphisms, the group is exactly $D_{3}\cong S_{3}$. This closes the generation question that the slicing paper~\cite{JanzenSlicing} left open: the discrete generators identified there are not merely forced and present but complete.
-\end{proof}
 
 By Proposition~\ref{prop:completeness} the within-single-geometry morphisms of $\mathcal{G}$ are exactly the dihedral group $D_{3}$. The six elements are the identity, the two non-trivial powers of $\tau$, the involution $\sigma$, and the two products $\sigma\tau$ and $\sigma\tau^{2}$. They act on the sky-angle circle by permuting six labelled positions, corresponding to the six distinct sky-angle labels a single intrinsic curve can carry under the admissible vantage-changes within one geometry.
 
@@ -363,9 +354,9 @@ Whether $\alpha$, established here as the invariant of the construction, is also
 
 \section{Single-reassignment uniqueness}\label{sec:single-reassignment}
 
-The cosmological completion paper~\cite{JanzenCRframework} established that the cosmology of the framework is the Nariai configuration of the SdS family, with the relation $\Lambda G^{2}M^{2}/c^{4}=1/9$ holding as an equality (not as an inequality saturating some bound). The selection of the Nariai configuration is forced by a structural requirement: the cosmological case is the unique non-pivoting member of the SdS family, the one whose comoving fundamental congruence runs along a null generator of the de Sitter embedding without pivoting into a horizon. Only the self-dual null direction at which the two positive horizons of the horizon cubic merge gives a comoving curve with no pivot, and only the Nariai configuration is fixed at that direction.
+Consider a reassignment that promotes a null direction to the fundamental timelike congruence---the move a cosmological reading of the family requires. \emph{The group structure decides where it is available, and the answer is a single member.} Acting on the slicing family $\mathcal{V}_{\alpha}$, the involution $\sigma$ ($w\mapsto\pi/3-w$) preserves each member's mass $2M$ and so acts within each member. At a generic member it exchanges the member's two vantages: the vantages come in $\sigma$-pairs, and a reassignment made at one is undone at its partner, so the two-cycle structure forbids it. At the single fixed point $w=\pi/6$ there is no partner to undo it---the member's one vantage is its own---and the reassignment is available there and nowhere else.
 
-The present section reads this selection through the groupoid structure. Acting on the slicing family $\mathcal{V}_{\alpha}$, the involution $\sigma$ ($w\mapsto\pi/3-w$) preserves each member's mass $2M$ and so acts within each member; its one fixed point, $w=\pi/6$, lands in the Nariai member. The cosmological case is therefore the unique member at which $\sigma$ acts as the identity: in every other member $\sigma$ exchanges the member's two vantages, but the Nariai member's single vantage is its own partner.
+That fixed point is the Nariai member, and the requirement has a geometric reading: it is the unique member whose comoving fundamental congruence runs along a null generator of the de~Sitter embedding \emph{without pivoting} into a horizon, since only the direction at which the two positive horizons merge gives a comoving curve with no pivot. \emph{So the selection is a structural fact about the groupoid rather than a fact about dynamics or fine-tuning.} A companion paper reaches the same configuration on independent grounds and carries the relation $\Lambda G^{2}M^{2}/c^{4}=1/9$ as an equality~\cite{JanzenCRframework}; nothing in the argument below draws on that.
 
 \subsection{Nariai as the fixed point of the involution}\label{sec:nariai-fixed}
 
