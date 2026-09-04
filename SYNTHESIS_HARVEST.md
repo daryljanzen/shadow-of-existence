@@ -60,7 +60,176 @@ than reconstructed after it.*
 *(Entries land here as the read proceeds, grouped by source document in the read order of the arc.
 Nothing is entered from memory: an entry is written with the source open.)*
 
-*(empty — the read has not begun)*
+---
+
+# P1 · `corpus/BH_causality_v2.tex`
+### *The event horizon is a metric singularity: a missing definition in general relativity, and the black-hole problems it dissolves*
+
+> **▣ THE PAPER'S OWN FLOOR, which governs how every entry below is to be read.** *P1 stands on standard
+> Lorentzian and causal structure alone — no substrate, no foliation, no augmentation, no reassignment. Its
+> citations to the rest of the corpus are forward pointers and never dependencies. **So no entry here may be
+> strengthened by anything downstream**: when a later paper extends one of these results, that extension is
+> the later paper's claim and not P1's.*
+
+### metric-singularity-theorem
+① CLAIM — Two events null-separated ($\Delta s^2=0$) and spatially coincident ($\Delta x=0$ in the sense that they and every point of the joining null geodesic share one value of an invariantly-defined spatial coordinate) have vanishing temporal separation, $\Delta\tau=0$. They are *metrically coincident* while remaining topologically distinct and causally ordered. Two of the three separations vanishing forces the third.
+② REGISTER — **THEOREM**, proved. The paper states the proof is trivial once both hypotheses are in view and that the triviality is the content: it isolates the extra condition turning an ordinary null relation into a metrically singular one.
+③ HOME — P1 §1, `thm:metric-singularity`.
+④ ANCHOR — `P01_metric_singularity_algebra` (carries the invariant-separation half in §3).
+⑤ JOINS — [[p2-janzen-circle]] (classifies this as the finite-curvature species of one genus) · [[p3-sds-slicing]] (the metric singularity as geometric cause of the horizon/centre asymmetry) · [[p7-cr-framework]] (Null-Boundary Correspondence; the bead) · [[p17-geometric-core]] (the substrate's everywhere-real null boundary rests on this) · [[p10-canonical-time]] (finite curvature is what makes the regular Euclidean state available).
+⑥ NOT OP FOR — **Does not apply to an ordinary null hypersurface.** A past light cone satisfies (a) and fails (b): it carries real spatial depth and nonzero temporal separations. The paper states this against the generic case explicitly and repeatedly. **Does not merge the events**: metric coincidence is a fact about the measure, not about the point set, and the affine parameter still distinguishes them. **Says nothing about events on different generators** — those fail hypothesis (a) and are not events the theorem relates.
+
+### threefold-structure
+① CLAIM — A metric singularity carries four properties: topological distinctness, strict null causal order $p\prec_\partial q$, geometric coincidence (null separation), and — under the additional spatial coincidence — metrical coincidence. An ordinary null hypersurface has the first three and not the fourth.
+② REGISTER — **COROLLARY**, proved. `cor:threefold`.
+③ HOME — P1 §2.
+④ ANCHOR — none.
+⑤ JOINS — [[p2-janzen-circle]] (the genus and its second species).
+⑥ NOT OP FOR — Without spatial coincidence the temporal separation assigned by a smooth temporal function has **no invariant meaning at all** and may be altered arbitrarily by smooth local deformations. So (iv) is not a strengthening of (iii); it is what makes any temporal statement invariant in the first place.
+
+### horizon-is-a-metric-singularity
+① CLAIM — Every horizon-crossing event occurs at the same areal radius $r_h=2GM/c^2$; the areal radius is an invariant (defined by the area $4\pi r^2$ of the symmetry spheres, chart-independent); so hypothesis (b) holds along each generator and $\mathcal H^+$ is a metric singularity.
+② REGISTER — **PROVED**, by application of the theorem. Two routes given and stated to agree: the geometric one above and the algebraic forcing below.
+③ HOME — P1 §3.
+④ ANCHOR — `P01_metric_singularity_algebra`.
+⑤ JOINS — [[p3-sds-slicing]] · [[p7-cr-framework]] · [[p15-cr-cosmology]] · [[p17-geometric-core]].
+⑥ NOT OP FOR — **The angular direction.** Two events on different generators are spacelike-separated across the horizon 2-sphere; the paper states this is neither a residual uncollapsed extent nor a weaker sector but simply not what the metric singularity is. The collapse is total *along every generator*, and that is the whole of the structure.
+
+### algebraic-forcing-in-every-chart
+① CLAIM — In any coordinates with $r$ the areal radius, along a generator $dr=d\theta=d\phi=0$, so $ds^2=g_{tt}dt^2$; the generator is null and $dt\neq0$, forcing $g_{tt}=0$. No metric component is specified anywhere in the argument, so the conclusion is forced **in every chart** rather than checked chart by chart. Invariantly the vanishing quantity is $|\zeta|^2=g(\zeta,\zeta)$, the squared norm of the timelike Killing vector — a scalar, of which "$g_{tt}=0$ in this chart" is the reading. Independently $|\nabla r|^2=g^{rr}$ vanishes at $r_h$, so the exterior's spacelike radial direction degenerates onto the null generator.
+② REGISTER — **PROVED**, and run explicitly in Painlevé–Gullstrand, the chart used to argue nothing singular happens at the horizon: the finite $\Delta T$ there is the nonzero increment the null condition requires the coefficient to annihilate, not a counterexample.
+③ HOME — P1 §3.
+④ ANCHOR — `P01_metric_singularity_algebra`.
+⑤ JOINS — [[p3-sds-slicing]] · [[p8-slicing-operator]] (the lapse's ontological reading).
+⑥ NOT OP FOR — **Does not deny the finite coordinate increment.** A horizon-penetrating chart genuinely assigns two generator events distinct finite times; the argument is that the metric multiplies that increment by zero. The paper notes the sharper a slicing insists on finite time-extent, the more directly it exhibits $g_{TT}\to0$. **And it is not the infinite-redshift or Killing-horizon statement**: those are properties holding *at* the surface and are compatible with reading the horizon as an extended null hypersurface persisting in time; the metric singularity is the relation *between* distinct events on one generator.
+
+### killing-horizon-extension
+① CLAIM — The forcing is not special to Schwarzschild: it holds at any Killing horizon. Generators are orbits of the horizon-generating field $\chi$ ($\chi=\partial_t$ for Schwarzschild, $\chi=\partial_t+\Omega_H\partial_\phi$ for Kerr), null there. In coordinates adapted to $\chi$ the interval along a generator is $ds^2=|\chi|^2d\tau^2$ and $|\chi|^2=0$ is forced as before; lying on one orbit of the invariantly-defined $\chi$ **is** the spatial coincidence (b) requires. The Kerr event horizon is a metric singularity by the same argument.
+② REGISTER — **PROVED**.
+③ HOME — P1 §4, opening.
+④ ANCHOR — none.
+⑤ JOINS — [[p9-range-paper]] (Kerr–NUT–(A)dS as the separable kernel) · [[p7-cr-framework]] (non-spherical collapse dissolved rather than deferred).
+⑥ NOT OP FOR — **The static lone-survivor reduction fails for Kerr**, and the paper says why: the generator twists in the static azimuth and $g_{tt}$ there is nonzero, its vanishing locus being the ergosphere, which lies outside the horizon except at the poles. The structure carries over; that particular reduction does not. **And the radial collapse/merger construction of §4 is carried out in Schwarzschild only**, by declared restriction.
+
+### horizon-as-fixed-point-and-surface-gravity
+① CLAIM — In ingoing EF coordinates outgoing null rays obey $\dd r/\dd v=f(r)/2$, whose equilibria are exactly the zeros of $f$: a generator sits at $r_h$ because $r_h$ is a fixed point of that flow. The eigenvalue is the surface gravity, $\dd r/\dd v\simeq\kappa(r-r_h)$ with $\kappa=f'(r_h)/2$, so neighbouring rays separate as $e^{\kappa v}$ and the fixed point is hyperbolic exactly when $\kappa\neq0$. Between consecutive simple zeros $f$ does not change sign, so $f'$ alternates: the Schwarzschild–de Sitter black-hole and cosmological horizons are necessarily a repeller and an attractor with fixed-point indices summing to zero. **The alternation is forced by the intermediate value theorem, not by the metric.** The Nariai member is where the hypothesis fails — the roots merge, both eigenvalues vanish, and the degenerate fixed point carries the index the pair had between them.
+② REGISTER — **PROVED / RECEIPT-ANCHORED.** The paper's own framing: the horizon's invariant spatial constancy and its surface gravity are one statement about one fixed point, read at zeroth and first order.
+③ HOME — P1 §3.
+④ ANCHOR — `I53_the_two_horizons_are_a_repeller_attractor_pair_and_the_alternation_is_forced`; ledgers `index_theory`, `integrable_systems`.
+⑤ JOINS — [[p3-sds-slicing]] (the horizon cubic and its root-exchange involution) · [[p5-groupoid]] (Nariai as the unique fixed point of $\sigma$) · [[p7-cr-framework]] (the tangency trichotomy forcing the Nariai condition) · [[p15-cr-cosmology]].
+⑥ NOT OP FOR — The alternation is **generic to any function with simple zeros** and therefore says nothing metric-specific; the paper is explicit that this is not a result about the Schwarzschild–de Sitter metric. Its force is the *degenerate* case, where the hypothesis fails.
+
+### exterior-slicings-never-reach-the-horizon
+① CLAIM — For any asymptotically flat, globally hyperbolic spacetime with $\mathcal H^+=\partial J^-(\mathscr I^+)$, any future-complete exterior worldline $O$ and any smooth Cauchy temporal function adapted to it: the past-light-cone cross-sections rise toward future infinity along $\mathcal H^+$, the level sets accumulate on it and become asymptotically tangent to its generators in direction, and **each finite slice lies entirely in the exterior**, meeting $\mathcal H^+$ only in the limit. The event horizon does not occur on any finite exterior time-slice; it occurs only as the null future boundary approached in the infinite-time limit.
+② REGISTER — **PROPOSITION**, proved. `prop:causal-alignment`. The paper states it uses only global hyperbolicity, the defining property of the horizon, and the future-completeness of $O$ — **independent of the metric-singularity identification**.
+③ HOME — P1 §5.
+④ ANCHOR — none.
+⑤ JOINS — [[p4-modern-parallax]] (the existence/occurrence distinction at the root of the cosmological ontology, reached empirically there and causally here) · [[p7-cr-framework]] (`prop:lapse-shift`; the augmentation) · [[p15-cr-cosmology]].
+⑥ NOT OP FOR — **Concerns exterior-adapted slicings only** and, in the paper's own words, does not address the global structure of the spacetime beyond that domain. **And it is not an observational-limitation claim**: the slices extend well beyond the observer's past light cone and include everything taken as "out there now", and none of them intersects the horizon at finite $\Theta$.
+
+### lapse-collapse-is-a-metric-step-not-a-causal-one
+① CLAIM — In Schwarzschild the degeneration is explicit and its *magnitude* is fixed, which the causal proposition leaves open: $g^{ab}\nabla_a\Theta\nabla_b\Theta\to-\infty$ and the lapse $N\to0$. The sign is settled not by the tilt but by the adaptation condition $\Theta(O(\tau))=\tau+\text{const}$ — a fixed $\Theta$-increment realised over a vanishing lapse. Stationary check: $g^{tt}=-1/(1-r_h/r)\to-\infty$, $N=\sqrt{1-r_h/r}\to0$.
+② REGISTER — **LEMMA**, proved. `lem:alignment`.
+③ HOME — P1 §5.
+④ ANCHOR — none.
+⑤ JOINS — [[p8-slicing-operator]] (lapse as the existent's rate of advance) · [[p10-canonical-time]].
+⑥ NOT OP FOR — **⛔ The paper flags its own scope here and the flag is load-bearing.** The accumulation, the directional alignment and the finite-time conclusion use causal structure alone; **the magnitude half rests on a metric fact** — the vanishing of the redshift factor $-g_{tt}\to0$. It is general to a Killing or causal horizon and not special to Schwarzschild, but it is a metric input. The paper records this as *the second such metric step, not the only one*, correcting a stronger reading that would make the metric-singularity identification the sole metric ingredient.
+
+### no-completed-horizon-is-realised
+① CLAIM — The event horizon is a *global* structure, its location defined only with respect to the entire future development. A present astrophysical black hole continues to merge and accrete; at each interaction the exterior to the future of the outgoing null hypersurface must be replaced by the solution carrying the new mass, energy and angular momentum, and the pre-interaction exterior cannot be extended across it without describing a counterfactual. Because general relativity is local, every outgoing generator of the realised exterior traces back to the pre-horizon worldtube, never to a completed horizon or interior. A horizon defined prior to an interaction is the horizon of an auxiliary solution assuming no further interaction. **Two independent routes agree**: the exterior foliations of §5, and this one read along the source's own generators.
+② REGISTER — **ARGUED FROM STANDARD CAUSAL STRUCTURE**, no modification of GR. This is the premise the three dissolutions rest on.
+③ HOME — P1 §6 opening (`sec:problems`).
+④ ANCHOR — none.
+⑤ JOINS — [[p7-cr-framework]] (the first synthesis: the same distinction dissolving a wider family at one stroke) · [[p6-shadow-of-existence]] (dissolution by identity, not patchwork — rule R4).
+⑥ NOT OP FOR — Scoped to **black holes causally accessible to the external universe**, in a universe of ongoing collapse and accretion. It is not a claim that no horizon can be completed in any spacetime — the eternal Schwarzschild horizon is completed, and is treated as thermal below.
+
+### dissolution-penrose-and-censorship
+① CLAIM — Penrose's theorem is a correct mathematical result whose hypothesis is a *realised* closed trapped surface interior to the event horizon. No completed horizon, hence no trapped surface it would enclose, is physically realised. Singularities are not *avoided* by new physics — they are rendered physically irrelevant by causal structure alone, the curvature singularity remaining a feature of a global extension the realised worldtube never instantiates. Cosmic censorship is correspondingly unnecessary: where no singularity is realised, none needs censoring.
+② REGISTER — **DISSOLUTION**, on causal grounds alone. Explicitly not a correction of Penrose's mathematics.
+③ HOME — P1 §6, *Trapped surfaces and the singularity theorems*.
+④ ANCHOR — none.
+⑤ JOINS — [[p2-janzen-circle]] (the infinite-curvature species) · [[p7-cr-framework]] (the dissolution census).
+⑥ NOT OP FOR — Does not touch the theorem's validity, only its physical preconditions in the astrophysical domain.
+
+### dissolution-hawking-radiation
+① CLAIM — The Bogoliubov construction requires three things: a globally defined horizon, a completed causal structure joining $\mathscr I^-$ to $\mathscr I^+$ across it, and permanent loss of causal contact rendering the two vacua inequivalent. **The third has an exact criterion**: two Fock representations are unitarily equivalent precisely when $\beta$ is Hilbert–Schmidt (Shale), and a thermal $\beta$ fails at the infrared end, its $1/\omega$ tail making $\lVert\beta\rVert_{\rm HS}^2$ logarithmically divergent. The criterion supplies the conclusion rather than qualifying it — and is equally what makes the absence of a realised background decisive: *a criterion on $\beta$ has nothing to be applied to when there is no $\beta$ to compute.* None of the three is realised for a present astrophysical black hole.
+② REGISTER — **DISSOLUTION**, on causal grounds; the unitary-equivalence criterion is a cited classical result (Shale 1962).
+③ HOME — P1 §6, *Hawking radiation*.
+④ ANCHOR — ledger `functional_analysis`.
+⑤ JOINS — [[p10-canonical-time]] (the Hartle–Hawking state at the substrate's cosmological horizon) · [[p15-cr-cosmology]].
+⑥ NOT OP FOR — **⛔ The scope statement is narrower than "black holes do not radiate" and the paper says the distinction is essential.** What is absent is *horizon-induced* radiation. Local particle production not requiring a horizon — strong-field vacuum polarisation and the like — is untouched and not excluded; a perpetually collapsing ultra-compact body need not be quiescent.
+
+### the-criterion-is-completion-not-perspective
+① CLAIM — An argument of the form "the horizon is perspectival, therefore no thermal flux" is refuted before it starts, and is **not** the argument P1 makes. The Rindler horizon is observer-dependent *and complete* — the boost field is an exact Killing field of the whole spacetime — and the Unruh spectrum is thermal. Across the four horizons the programme names, the sorting is clean on one criterion only: Rindler (complete, observer-dependent) thermal; the substrate's cosmological horizon (complete, observer-dependent) thermal, carrying the Euclidean state; eternal Schwarzschild (complete, observer-independent) thermal; the collapse horizon of a present astrophysical black hole (never completed) the one case with no realised background. **Observer-dependence sorts the first two wrongly; completion sorts all four.**
+② REGISTER — **RECEIPT-ANCHORED** sorting argument. The paper presents it as what fixes which criterion is doing the work.
+③ HOME — P1 §6, *Hawking radiation*.
+④ ANCHOR — `P1_the_unruh_case_is_what_makes_the_criterion_completion_and_not_perspective`.
+⑤ JOINS — [[p10-canonical-time]] (the Hartle–Hawking state at $\kappa=1/\alpha$) · [[p6-shadow-of-existence]] (perspectival readings and what they do and do not license).
+⑥ NOT OP FOR — **This is a self-imposed constraint on the programme's own rhetoric, and it is the most reusable thing in the paper.** It rules out an argument the framework might otherwise be tempted into everywhere: perspectivalness alone never licenses denying a physical effect. **Does not claim a derivation of the Unruh effect from the substrate**, and does not claim any new temperature value.
+
+### nariai-kappa-zero-and-the-missing-exponential
+① CLAIM — The member a collapse reaches on this construction is the Nariai one, at which $f$ has a double root and $\kappa$ vanishes. So the thermal flux is absent twice over, for independent reasons: because no completed horizon is realised (this paper's argument, independent of which member is reached), and — granting completion for the sake of the objection — because $\kappa=0$ at the member completed. **The sharper statement is about mechanism, not value**: near a simple root $f\sim2\kappa\delta$ makes $r_*=\int\dd r/f$ logarithmic and the approach $\delta\sim e^{2\kappa r_*}$, and it is that exponential relation between affine and Killing parameters that carries positive frequencies into a Planck spectrum. At a double root $f\sim c\delta^2$ gives $r_*\sim-1/c\delta$, a power law: **the construction has no first step to take.** The right statement is that the *mechanism is absent*, not that the temperature is zero.
+② REGISTER — **RECEIPT-ANCHORED**, and the paper explicitly declines the stronger "temperature is zero" claim.
+③ HOME — P1 §6, *Hawking radiation*.
+④ ANCHOR — `P1_thermality_is_the_exponential_and_a_double_root_has_no_exponential`.
+⑤ JOINS — [[p15-cr-cosmology]] (**the same $p=1$ vs $p=2$ split determines what crosses the branch point**: a non-degenerate horizon's exponential approach imprints a scale, the degenerate member's power law imprints none — one fact serving two purposes) · [[p7-cr-framework]] (the ringdown carrying no scale at that configuration).
+⑥ NOT OP FOR — **The second argument is not offered as a replacement for the first.** A degenerate horizon is exactly where reading a temperature off $\kappa/2\pi$ is least safe — the near-horizon geometry is the equal-radii $\mathrm{dS}_2\times S^2$ throat, which carries a scale of its own — and **the two readings are not reconciled in this paper**. What is claimed is the coincidence and not a value. **And it does not say the configuration is athermal in every sense**: a scale-free power-law approach can still act on a spectrum, which is a different question from whether a Planck spectrum arises.
+
+### de-sitter-accelerated-temperature
+① CLAIM — On the substrate the accelerated temperature is $T(a)=\frac{1}{2\pi}\sqrt{H^2+a^2}$, reducing to $a/2\pi$ at large $a$ and to the Gibbons–Hawking $H/2\pi$ at rest. With $H=1/\alpha$ and $\alpha=\sqrt{3/\Lambda}$ the substrate's only dimensionful constant, the rest term is exactly the $\kappa=1/\alpha$ of the Euclidean state, and $T(a)=\frac{1}{2\pi}\sqrt{\alpha^{-2}+a^2}$ **carries no adjustable parameter**: the observer supplies $a$, the substrate supplies the rest. The structural difference from the flat statement is that the rest term does not vanish — an unaccelerated observer on this substrate is already in a thermal state, and acceleration adds to a bath rather than creating one.
+② REGISTER — **CITED CLASSICAL RESULT** (Narnhofer–Peter–Thirring 1996; Deser–Levin 1997) read on the substrate's own constant. Parameter-freeness is a consequence of there being a single constant, stated as such and not as an additional assumption.
+③ HOME — P1 §6, eq. `eq:unruh-ds`.
+④ ANCHOR — none.
+⑤ JOINS — [[p10-canonical-time]] (the horizon's thermal state closing the quantization ambiguity without a free parameter) · [[p17-geometric-core]] (one scale, constants as gauges).
+⑥ NOT OP FOR — Not a derivation of the Unruh effect from the substrate, and not a new temperature value — both explicitly disclaimed.
+
+### finite-curvature-makes-the-euclidean-state-available
+① CLAIM — A regular Euclidean state exists at a horizon only if the Euclidean continuation is smooth there — no conical defect, curvature finite. That is precisely what this paper's distinction supplies: the horizon is a *metric* singularity, spatial measure collapsing while curvature stays finite, and **not** a curvature singularity at which no smooth Euclidean section would exist and no regular state could be selected. So the definition supplied here is what makes the companion's state available, and through it makes the imaginary-time segment of the cosmogenetic contour a well-posed object rather than a formal manoeuvre.
+② REGISTER — **STATED as positive downstream work of the result**, and the paper flags it as not obvious from either side.
+③ HOME — P1 §6, *Hawking radiation*.
+④ ANCHOR — none.
+⑤ JOINS — [[p10-canonical-time]] (Friedrichs extension closed by the horizon's own thermal state) · [[p7-cr-framework]] (`thm:bead`; the bounded contour $|{\rm Im}\,\tilde\tau|\le\pi\alpha/3$).
+⑥ NOT OP FOR — **⛔ The paper corrects the obvious version of its own general point, and the correction is the useful part.** Finite curvature is *sufficient* for a continuation to cross a boundary but **not necessary**, and the construction crosses two boundaries of opposite type: at the horizon curvature is finite while the tortoise measure $r_*=\int\dd r/f$ diverges; at the branch point $f\to-2M/r$ diverges so **$r_*$ converges** while the areal curvature does not. Each is crossable for opposite reasons. *What the two share is not a property but a negation: neither failure is a failure of both.* **The curvature criterion and the affine-measure criterion are independent** — stated against the habit of reading "singularity" as a single verdict.
+
+### transplanckian-finite-at-each-time-not-bounded
+① CLAIM — The trans-Planckian objection targets the Bogoliubov construction, which P1 does not perform, so it does not transfer as stated. But the reading here has a version needing no mode-tracing: a static observer at $r$ measures $\omega_{\rm loc}=\omega_\infty/\sqrt f$, and near a simple root the blueshift goes as $\delta^{-1/2}$, diverging only as the surface is reached — which §5 says is never reached at finite exterior time. **The available claim is "finite at each finite exterior time", NOT "bounded."** For radial infall $\delta\propto e^{-2\kappa t}$ so $\omega_{\rm loc}/\omega_\infty\propto e^{\kappa t}$: the supremum over exterior time is infinite. Taking $\omega_\infty\sim\kappa$, the exterior time at which the local frequency first reaches the Planck value is $\kappa^{-1}\ln(\kappa^{-1}/t_P)$ — about $2\times10^{-3}$ s at a solar mass, $2\times10^{-2}$ s at ten, and of order months for the heaviest resolved supermassive hole. *The logarithm suppresses nothing.*
+② REGISTER — **RECEIPT-ANCHORED COMPUTATION**, with the weaker claim named and the stronger one refused.
+③ HOME — P1 §6, *Hawking radiation*.
+④ ANCHOR — `P1_the_transplanckian_claim_is_finite_at_each_finite_time_and_it_is_not_bounded`.
+⑤ JOINS — [[p15-cr-cosmology]] · [[p11-dynamics]] (where the crossing question has its home).
+⑥ NOT OP FOR — **⛔ This is the paper's own strongest self-limitation and it should survive into the synthesis intact.** The finiteness is *not* a suppression of ultraviolet physics but a statement about which limit is taken, and the regime is entered on a timescale short by every astrophysical measure. The claim that the conclusion needs no ultraviolet completion of gravity is a claim about **what the argument requires**, not that the late-time collapsing surface is free of ultraviolet physics — *"It is not, and this paper does not say it is."* Whether that regime is benign is not settled here and is not claimed. **And the exponential is the same $\kappa$ twice**: once as the mechanism of thermality, once as what carries the collapsing surface into the ultraviolet.
+
+### dissolution-information-paradox
+① CLAIM — The paradox arises only if a completed horizon forms and subsequently evaporates. Both premises fail together: no completed horizon forms, and with no horizon-induced radiation there is no evaporation to carry the loss. The realised spacetime remains globally connected — a global Cauchy surface, no hidden interior sector to trace over, unitary evolution unobstructed. The paradox is not *resolved* by a mechanism recovering information; **it does not arise**, because the spacetime it requires is never instantiated.
+② REGISTER — **DISSOLUTION**, on causal grounds alone.
+③ HOME — P1 §6, *The information paradox*.
+④ ANCHOR — none.
+⑤ JOINS — [[p7-cr-framework]] (the first synthesis' dissolution family) · [[p6-shadow-of-existence]] (R4, against patchwork).
+⑥ NOT OP FOR — Approaches modifying the near-horizon state while retaining the completed-horizon background address a configuration the realised universe does not contain; P1 removes the premise rather than adjusting the response. It offers **no** information-recovery mechanism, because on its reading none is needed.
+
+### black-hole-mechanics-status
+① CLAIM — The zeroth/first laws and the area theorem are correct results whose object is a *realised* event horizon carrying a definite area and surface gravity. That object is never instantiated on a finite exterior slice, so no finite slice carries the area whose monotonicity the theorem asserts. The laws characterise the auxiliary completed geometry. The Bekenstein–Hawking entropy, **in the reading on which it is the entropy *of* that horizon**, shares their status.
+② REGISTER — **DISSOLUTION by the same premise**, with a scope qualifier attached to the entropy claim at source.
+③ HOME — P1 §6, *The laws of black-hole mechanics*.
+④ ANCHOR — none.
+⑤ JOINS — [[p7-cr-framework]] (the standing-problems family) · [[p10-canonical-time]].
+⑥ NOT OP FOR — **⛔ An explicit open, stated at source and not to be smoothed over.** *"What content survives for a perpetually collapsing ultra-compact body — as with the local particle-production processes — is not settled by this argument."* The entropy claim is scoped to one reading of Bekenstein–Hawking and does not touch other readings.
+
+### finite-curvature-species-of-one-genus
+① CLAIM — The metric singularity is the **finite-curvature** species of a single genus; the genus admits a second, **infinite-curvature** species — the locus standardly called the curvature singularity at $r=0$, where the *areal* curvature diverges. That divergence is real on the areal reading and is **not a barrier**: $r=0$ is a branch point at which collapse continues as an expanding cosmology, the substrate $C^\infty$ across it. On the substrate neither locus carries a curvature scale, and the two are told apart by their **measures** instead — the horizon's divergent, the branch point's convergent.
+② REGISTER — **SCOPE STATEMENT**; the genus and its second species are developed in the companion, not established here.
+③ HOME — P1 §2, "A word on scope".
+④ ANCHOR — none.
+⑤ JOINS — [[p2-janzen-circle]] (**owner of the genus**) · [[p7-cr-framework]] · [[p15-cr-cosmology]].
+⑥ NOT OP FOR — P1 establishes the finite-curvature species and the horizon as its exemplar, and nothing more of the genus. **⛔ Terminology note for the synthesis: within P1 "seam" denotes the horizon / metric-singularity locus, never $r=0$** — which the paper consistently calls the branch point. This is correct and matches the programme's ruling; it is recorded because the two words are easy to swap when results are lifted out of the paper.
+
+### p1-p4-deliberate-non-dependence
+① CLAIM — P1 supplies the **structural** half of the augmentation's necessity and P4 the **empirical** half, and neither leans on the other: P1 reaches its distinction from standard general relativity alone, P4's result stands on causal structure alone and needs none of the cosmological evidence. **Because neither leans on the other, their convergence is evidence rather than construction** — a dependency between them would make the necessity circular. P1 also supplies its own epistemic floor (only the fixed causal past yields certain information — the M31 V1 example), which is a bespoke instance of the imperative P6 later states in general, reached here on causal structure alone.
+② REGISTER — **STRUCTURAL RELATION**, declared in the paper's masthead and honoured in its text; the adjacent-and-negative citations are reciprocal (P1 §scope names P4 precisely to disclaim reliance; P4 returns it in kind).
+③ HOME — P1 masthead and §1 footnote; §6 opening.
+④ ANCHOR — none.
+⑤ JOINS — [[p4-modern-parallax]] · [[p6-shadow-of-existence]] (draws on P1's instance without circularity) · [[p7-cr-framework]].
+⑥ NOT OP FOR — **The forbidden thing is leaning for support, not reference.** Forward citations that disclaim reliance while naming what P1 supplies are permitted and used. **⛔ For the synthesis this is a constraint on presentation, not only on logic**: any section that presents P1 and P4 as a joint argument, or lets one carry weight for the other, destroys exactly the independence that makes their agreement evidential.
 
 ---
 
