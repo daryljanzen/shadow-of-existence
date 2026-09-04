@@ -586,6 +586,10 @@ faces; **it does not cite it for the count**, which is the gap.
 # P5 · `corpus/groupoid_paper.tex`
 ### *The description groupoid: relations, completeness, and the discrete symmetry of the solution space*
 
+> **▣ THE READ IS COMPLETE** *(first pass r4039--r4041, completed r4063 after the stocktake found the
+> rigidity, seam, diagnostic, cosmological-completion, algebroid and closing sections unopened). The three
+> entries at the end of this block are results the first pass had no sight of.*
+
 > **▣ P5'S FLOOR AND ITS LICENCE.** *P5 leans on the P1--P3 arc and on P4, and is the algebraic counterpart to
 > P3 — same overdevelopment licence, same discipline. Its own test: **is each piece motivated by a question
 > visible inside P5?** On the read it is, once two orderings were fixed (r4041).*
@@ -621,6 +625,39 @@ faces; **it does not cite it for the count**, which is the gap.
 ④ ANCHOR — none.
 ⑤ JOINS — [[p4-modern-parallax]] (**converges with the empirical forcing of a cosmic time — two routes sharing no premise**) · [[p7-cr-framework]] (reaches the same configuration on independent grounds) · [[p3-sds-slicing]].
 ⑥ NOT OP FOR — **⛔ Until r4041 the section opened by citing the companion's result and then supplying the group reason for it**, which reads as rationalising rather than deriving. Reordered so the group argument comes first and the companion is named after, with the explicit note that nothing here draws on it. *That ordering is what makes the convergence with P4 evidential rather than circular.* **And the fixed point's coincidence with the turning radius is recorded without a derivation claim**: on the forced member it sits at $r=\alpha/\sqrt3=(M\alpha^2)^{1/3}$, where the areal acceleration changes sign and the slicing surface is flat — *the vantage at which the reassignment is uniquely available is the radius at which the member's own expansion history turns*, exact, and neither fact derived from the other.
+
+
+### dimensional-collapse-and-what-alpha-is
+① CLAIM — The algebraic content of the slicing paper's rigidity. The slicing space $\mathcal V_\alpha$ is a **continuous** manifold parametrised by $r_0\in(-2/\sqrt3,2/\sqrt3)$, but **its image under "slicing ↦ underlying manifold" is a single point**: the de Sitter manifold of throat radius $\alpha$. So a continuous parameter space collapses onto one geometric invariant, with the discrete morphisms permuting the labels of a single member and the continuous variation of $r_0$ producing no variation in the manifold. **Within the groupoid, $\alpha$ is the unique chart-invariant quantity available** — so any candidate for a *fully* invariant gravitational mass must be built from $\alpha$ and not from the slicing-dependent $M$.
+② REGISTER — **PROPOSITION** (`prop:dim-collapse`), with the relation and the degeneracy credited to the 2012 dissertation, which already records that the three roots form one triplet.
+③ HOME — P5 §4 (`sec:rigidity`), §4.1–§4.3.
+④ ANCHOR — none.
+⑤ JOINS — [[p3-sds-slicing]] · [[p17-geometric-core]] · [[p12-algebroid]].
+⑥ NOT OP FOR — **⛔ The mass question is sharpened here and settled elsewhere, and the answer is negative**: the standard quasi-local and asymptotic definitions (Misner–Sharp $M+r^3/2\alpha^2$, Komar $M-r^3/\alpha^2$, ADM, Bondi) all return the slicing-dependent $M$. *$\alpha$ is the invariant curvature **radius**, a length, not a mass* — which P3 records as confirming rather than weakening the reading, the conventional mass being the projection.
+
+### the-seam-is-a-partial-involution-and-why-partial
+① CLAIM — The seam continuation $\xi$ is a vantage-change of a kind **distinct from** the within-single-geometry morphisms, and P5 gives the reason it is called *partial*: **it does not act within a single sky-angle fundamental domain.** $\sigma$ and $\tau$ permute the six labelled positions on the sky-angle circle *within* a regime; $\xi$ acts on the analytic continuation into the complex parameter plane, moving **between the two real slices** of one analytic object, where the spherical and de Sitter regimes sit. **The overcritical continuation is a further partial involution** of the same kind, relating an under-critical vantage to an overcritical one at the same $\alpha$ past the Nariai crest.
+② REGISTER — **ESTABLISHED**, with the two structures named complementary rather than nested.
+③ HOME — P5 §7 (`sec:seam`), §7.1–§7.3.
+④ ANCHOR — none.
+⑤ JOINS — [[p3-sds-slicing]] · [[p13-boundary]] · [[p17-geometric-core]].
+⑥ NOT OP FOR — **⛔ Three kinds of move, and the paper keeps all three apart**: $\sigma,\tau$ act *within* a regime; $\xi$ moves between Riemannian and Lorentzian pieces of one curve; the overcritical involution moves between under- and over-critical regimes of the cubic. **And a fourth is explicitly not addressed** — vantages between distinct $\alpha$, which are left to the open section and resolved there as the continuous homothety.
+
+### the-sweep-diagnostic-and-its-honest-limits
+① CLAIM — The sweep result supplies a **diagnostic for the programme**, stated as a procedure: identify the sweep used to produce the chart; identify the point about which it is pivoted; check whether that point is the manifold's own axis of symmetry or a selected point off it. **Schwarzschild is the canonical case and its horizon–singularity asymmetry the canonical sweep artefact.**
+② REGISTER — **DIAGNOSTIC**, stated as the perspectival reading's interpretive payoff and *explicitly not as a further proposition of the construction*.
+③ HOME — P5 §8.4 (`sec:diagnostic`), and `rem:wider`.
+④ ANCHOR — `P03_acceleration_is_slice_curvature`.
+⑤ JOINS — [[p2-janzen-circle]] · [[p3-sds-slicing]] · [[p9-range-paper]] · the $r=0$ cross-paper join above.
+⑥ NOT OP FOR — **⛔ P5 says plainly "other applications of the diagnostic await development"** — the reach beyond Schwarzschild is asserted for the *reducible* sector on the range paper's authority, and the **irreducible interior reassignments are outside the sector the diagnostic is stated on**. *What is open there is named precisely and is a real physical question*: whether a charged **collapse** forms the inner horizon at all — the eternal solution carries one, but if a dynamical collapse does not, the branch point survives and the case rejoins the uncharged construction.
+
+### the-two-groupoids-are-not-the-same-object
+① CLAIM — The algebroid the companion constructs is an **action** algebroid, $\mathfrak{so}(5,1)\ltimes\mathcal C$, and an action algebroid is always integrable, its integrating object the action groupoid $\mathrm{SO}(5,1)\ltimes\mathcal C\rightrightarrows\mathcal C$ — **objects cuts, arrows the isometries carrying one cut to another**. *That is not the groupoid $\mathcal G$ of this paper, whose objects are vantages on one geometry.* And the Nariai point of the branched cover coincides with the stratum at which the algebroid connection vanishes and the substrate's isotropy enhances — a structural meeting of the discrete and continuous faces of one solution space.
+② REGISTER — **NAMED AND SEPARATED**, in the vocabulary of the field the objects belong to.
+③ HOME — P5 §9.5 (`sec:nariai-algebroid`).
+④ ANCHOR — none; cites Mackenzie for the integrability of action algebroids.
+⑤ JOINS — [[p12-algebroid]] · [[p3-sds-slicing]].
+⑥ NOT OP FOR — **⛔ This is the confusion most available to a synthesis and P5 forestalls it explicitly.** Two groupoids appear in the corpus with different objects — *vantages on one geometry* against *cuts of the substrate* — and they are separated by dimension exactly as the companion separates their operations. **Conflating them merges a description structure with a solution space.**
 
 ### the-discrete-symmetry-of-the-solution-space
 ① CLAIM — The same-$\alpha$ between-member morphisms are the **monodromy** of the horizon cubic's three-sheeted cover branched at the two Nariai points, with monodromy group $S_3$ and **trivial deck group** (a degree-three cover is normal only if its monodromy has order three; $S_3$ has order six — the group that *is* a deck group is the same $S_3$ on the degree-six Galois closure). That monodromy group is equally the **Galois group** of the cubic over $\mathbb C(2M)$ — **one $S_3$ worn as monodromy, Weyl, and Galois symmetry alike**. Adjoining the mass-reflection $2M\mapsto-2M$ gives $\mathrm{Aut}(A_2)=S_3\times\mathbb Z_2\cong D_6$; the action between distinct $\alpha$ is the continuous homothety, under which the discrete structure is invariant.
@@ -858,7 +895,7 @@ faces; **it does not cite it for the count**, which is the gap.
 | **P4** | 5,906 | completed r4059 — the two floor subsections and the whole history section had been skipped | **complete** |
 | **P2** | 13,604 | most sections opened, but read through display filters that demonstrably dropped lines | **not attestable — re-read owed** |
 | **P6** | 13,134 | imperative, rules, least-arbitrariness and its boundary, engine, reflexive, boundary, placement; **the modal-fallacy and constructive-ordering sections and the back half of least-arbitrariness were not read** | **incomplete** |
-| **P5** | 16,558 | category, generators, relations, completeness, single-reassignment, attribution; **rigidity, the seam section, the monodromy section and the closing were sampled at best** | **incomplete** |
+| **P5** | 16,558 | completed r4063 — rigidity, the seam section, the diagnostic, the cosmological-completion section, the algebroid subsection and the closing had not been opened | **complete** |
 | **P3** | 28,931 | completed r4061 — the horizon-locus, two-readings, charge, temporal-three-ness, rigidity-groupoid, coupled-operations and closing sections had never been opened | **complete** |
 | **P7** | 43,900 | every section, r4049–r4057 | **complete** |
 
