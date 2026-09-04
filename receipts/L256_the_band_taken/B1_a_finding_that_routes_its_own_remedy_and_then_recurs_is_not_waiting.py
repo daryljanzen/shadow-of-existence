@@ -223,19 +223,64 @@ def main():
     v = C.band_violations()
     check(f'⓸ᵇ and this tree is in band: {len(v) if v is not None else "no upstream"} violation(s)',
           v == [])
-    # ** SEEDED: flip the parity and every commit of this line must fail the band **
+    # ** ⛔⛭⛭ THE SEED BUILDS ITS OWN REPOSITORY NOW, AND IT HAD TO (r3996). **  It used to flip the
+    # ** parity and read `band_violations()` on the LIVE tree -- which measures `origin/main..HEAD`,
+    # ** this line's UNMERGED commits.  *** The moment this line's work merges, that set is EMPTY,
+    # ** the flip has nothing to act on, and the seed reports `0 out of band` and fails. ***
+    # **   ⌷ Measured: it failed in the first suite run after `PR #30` merged and the branch was
+    # **     restarted from `main` -- with `L259/D1` and `L261/A1` failing too, because both shell
+    # **     out to this file.  ** One root cause, three receipts. **
+    # **   ⇒ *** A SEED THAT BORROWS THE WORLD'S STATE STOPS WORKING WHEN THE WORLD CHANGES STATE,
+    # **       and "this line is mid-span" is a state, not a property. ***  That is `L259/D1`'s own
+    # **       title in a new disguise -- pinned to the present, where the present is "we have not
+    # **       merged yet" -- and it is the same lesson as `L556/R1`'s and `L270/V1`'s fixtures:
+    # **       ** build the subject, do not borrow it. **
+    # ** ⌗ `band_violations(root=)` and the parity are the only inputs, so a two-commit repository
+    # **   with known revision ids exercises the real function on a subject this file constructs:
+    # **   one EVEN id (in band for this line) and one ODD (out of band).  The flip must then move
+    # **   exactly which of the two is flagged -- a stronger claim than "some non-empty set".
     keep = C.PARITY
+    _tmp = tempfile.mkdtemp(prefix='L256.band.')
     try:
-        C.PARITY = 1
-        seeded = C.band_violations()
+        def _git(*a):
+            return subprocess.run(['git', '-C', _tmp] + list(a), capture_output=True, text=True,
+                                  errors='replace')
+        _git('init', '-q', '-b', 'main')
+        _git('config', 'user.email', 'seed@local')
+        _git('config', 'user.name', 'seed')
+        open(os.path.join(_tmp, 'f'), 'w').write('0\n')
+        _git('add', '-A'); _git('commit', '-q', '-m', 'base, no revision id')
+        _git('branch', '-f', 'origin/main')          # the UPSTREAM ref `band_violations` reads
+        for _rev in ('r4000', 'r4001'):              # one EVEN, one ODD
+            open(os.path.join(_tmp, 'f'), 'a').write(_rev + '\n')
+            _git('add', '-A'); _git('commit', '-q', '-m', f'{_rev} — seeded commit')
+        assert len(_git('log', '--format=%h', 'origin/main..HEAD').stdout.split()) == 2, (
+            'the seeded repository must carry exactly the two unmerged commits, or the flip below '
+            'is measuring nothing -- which is the defect this repair exists to end')
+        C.PARITY = 0                                  # this line's half: EVEN
+        _in_band = C.band_violations(root=_tmp)
+        C.PARITY = 1                                  # flipped
+        seeded = C.band_violations(root=_tmp)
         buf = io.StringIO()
         with contextlib.redirect_stdout(buf):
             rc = C.check_band()
     finally:
         C.PARITY = keep
-    check(f'⓸ᶜ SEEDED: with the parity flipped, {len(seeded)} of this line\'s commits are out of '
-          f'band and the check exits {rc} naming them -- so a green result is a measurement and '
-          'not an empty set', rc == 1 and len(seeded) >= 1 and '[FAIL]' in buf.getvalue())
+        shutil.rmtree(_tmp, ignore_errors=True)
+    check(f'⓸ᶜ¹ on a repository this file BUILDS -- two unmerged commits, r4000 EVEN and r4001 ODD '
+          f'-- the even band flags {[v[1] for v in _in_band]} and the flipped band flags '
+          f'{[v[1] for v in seeded]}: the flip MOVES which commit is out of band, rather than '
+          f'merely returning a non-empty set',
+          [v[1] for v in _in_band] == ['r4001'] and [v[1] for v in seeded] == ['r4000'])
+    # ⌗ and `check_band()` still reads the LIVE tree, which is right: it is the gate as it runs.
+    #   With this line merged and in band it exits 0, and after the merge that is the TRUE answer --
+    #   so what is asserted of it is that it REPORTS, not that it fails.  *The firing behaviour is
+    #   asserted above, on the built subject, where it can be exercised at any time.*
+    check(f'⓸ᶜ SEEDED: the flip is exercised on a built subject rather than on whatever unmerged '
+          f'work this line happens to be carrying; the live gate exits {rc} and names its band, '
+          f'and after a merge an empty violation set is the CORRECT answer rather than an unrun one',
+          rc in (0, 1) and ('EVEN' in buf.getvalue() or 'ODD' in buf.getvalue()
+                            or 'NO HALF' in buf.getvalue()))
     check('⓸ᵈ and the parity is RESTORED -- verified, not trusted to the `finally`', C.PARITY == 0)
     # ⌗ and the same repair as `L251/N1`'s ⓹ᵈ (r3964): the claim is that exceptions are NAMED
     #   rather than expressed as a cutoff, and it was tested as `== {'r3125'}`.  Two more have been

@@ -11,6 +11,11 @@ on:
   pull_request:
   schedule:
     - cron: '0 3 * * *'      # nightly: the compile and heavy tiers
+  # ⛭ r4004: `workflow_dispatch` WAS NAMED IN THE HEAVY TIER'S OWN `if:` AND WAS NOT A TRIGGER
+  #   HERE, so that arm of the condition could never be true and the receipts tier had exactly
+  #   one way to fire: the 03:00 cron.  A job that declares two routes and has one is a job
+  #   whose second route nobody can find is missing -- it reads as available and is not.
+  workflow_dispatch:
 
 jobs:
   fast:
@@ -115,5 +120,5 @@ jobs:
       #   fail on import in EVERY environment -- this container and this job alike -- so two
       #   registered receipts were unrunnable everywhere and counted as real failures.
       - run: pip install numpy scipy sympy mpmath camb pynucastro matplotlib
-      - run: python3 scripts/run_all_receipts.py --jobs 4 --timeout 300 | tee receipts/RUN_RESULT.txt
+      - run: python3 scripts/run_all_receipts.py --jobs 4 --timeout 600 | tee receipts/RUN_RESULT.txt
       - run: python3 corpus/check_receipts_run.py

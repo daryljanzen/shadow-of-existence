@@ -93,6 +93,25 @@ SLOW = (
     'P16_the_scalar_monodromy_is_four_pi_over_rho',
 )
 
+# ---------------------------------------------------------------- r4006
+# ** A DECLARED PER-RECEIPT BUDGET, BECAUSE ONE RECEIPT IS LONGER THAN ANY CAP THE SUITE CAN CARRY. **
+# `C59` is a convergence study: eight distinct Boltzmann projections, the heaviest 1260 modes to
+# k_max = 2400 through the hierarchy path, and no redundant work in it (PART 2b reuses PART 1's
+# results rather than re-running -- checked, not assumed).  ** Measured end to end on an idle
+# machine: 1302s, all 23 assertions evaluated, exit 0. **  It had never once been seen to finish:
+# the 300s cap filed it as a failure, the 600s cap as SLOW, and a detached 1200s attempt died 102
+# seconds short of the verdict.
+#   ⇒ *** AND `SLOW` IS NOT A PASS.  *** A receipt killed at the cap has evaluated nothing, so a
+#       green run that reports it as `over timeout` is making no claim about it at all -- which is
+#       precisely the hole this runner was built to close ("a registered receipt that does not run
+#       where it is registered is not a receipt").  The cap was hiding one inside its own report.
+# ⌗ *Declared here BY NAME with its measured cost beside it, never inferred from a file being slow.*
+#   The global cap stays where it is; this buys the one receipt that needs it the room to finish,
+#   and the number is the measurement plus headroom rather than a round figure chosen to feel safe.
+LONG = {
+    'C59_the_control_reproduces_camb_and_the_height_defect_was_k_truncation.py': 1800,  # measured 1302s
+}
+
 
 def registered():
     """the receipts INDEX.md registers, in file order -- AND what it names but cannot resolve
@@ -132,12 +151,42 @@ def registered():
     return out, unresolved
 
 
+# ---------------------------------------------------------------- r4008
+# ** ONE THREAD PER RECEIPT, BECAUSE A WALL-CLOCK CAP ON AN OVERSUBSCRIBED MACHINE MEASURES THE
+#    SCHEDULER AND NOT THE RECEIPT. **
+# `subprocess.run` inherited this process's environment, so every child was free to open as many
+# BLAS/OpenMP threads as there are cores WHILE `--jobs N` was already running N of them.  The
+# machine was oversubscribed by construction and each receipt's measured time was a fact about
+# what happened to be running beside it.
+#   ⛔ *** MEASURED, AND IT IS NOT A SMALL EFFECT. ***  The same tree, the same cap, two runs
+#       differing only in whether C59 was allowed to finish:
+#           C1  398s -> 493s   (+24%)
+#           H1  423s -> OVER 600s, filed SLOW   (+42% at least)
+#       ** H1 passed in one run and was killed in the next without one line of it changing. **
+#       C59 is multithreaded -- 25:36 of CPU in 18:43 of wall on the solo probe -- so allowing it
+#       to run pushed two neighbours over a cap that is supposed to describe them.
+#   ⇒ ** A budget applied to a quantity that depends on what else is running is not a budget. **
+#     Pinning to one thread each makes `--jobs N` mean N cores, and makes a receipt's time a
+#     property of the receipt.  *This is the contaminated-measurement failure the corpus already
+#     names, living inside the instrument that does the measuring.*
+_ONE_THREAD = {
+    'OMP_NUM_THREADS': '1', 'OPENBLAS_NUM_THREADS': '1', 'MKL_NUM_THREADS': '1',
+    'NUMEXPR_NUM_THREADS': '1', 'VECLIB_MAXIMUM_THREADS': '1',
+}
+
+
+def budget(path, default):
+    """The per-file timeout: the declared one if this receipt has it, else the global cap."""
+    return LONG.get(os.path.basename(path), default)
+
+
 def run_one(path, timeout):
     d, b = os.path.dirname(path), os.path.basename(path)
     t0 = time.time()
     try:
         r = subprocess.run([sys.executable, b], cwd=d, capture_output=True,
-                           text=True, errors='replace', timeout=timeout)
+                           text=True, errors='replace', timeout=timeout,
+                           env=dict(os.environ, **_ONE_THREAD))
         dt = time.time() - t0
         if r.returncode == 0:
             return ('PASS', path, dt, '')
@@ -187,6 +236,10 @@ def main():
     print()
     print(f"  RUN-ALL-RECEIPTS -- {len(files)} registered receipt(s), {a.jobs} at a time, "
           f"{a.timeout}s each, each from ITS OWN DIRECTORY")
+    for _b, _t in sorted(LONG.items()):
+        if any(os.path.basename(f) == _b for f in files):
+            print(f"  DECLARED LONG: {_b} runs on {_t}s, not {a.timeout}s -- named, with its "
+                  f"measured cost in the source")
     # r2656+c54.208: the result of this run is CACHED and read by check_receipts_run.  A cache with
     # no expiry is a green verdict about a tree that no longer exists -- the file on disk at r2419
     # was still being read as current at r2656, 294 commits later, and reported "no receipt fails
@@ -195,7 +248,7 @@ def main():
     print()
     t0 = time.time()
     with ThreadPoolExecutor(max_workers=a.jobs) as ex:
-        res = list(ex.map(lambda f: run_one(f, a.timeout), files))
+        res = list(ex.map(lambda f: run_one(f, budget(f, a.timeout)), files))
     ok = [r for r in res if r[0] == 'PASS']
     slow = [r for r in res if r[0] == 'SLOW']
     bad = [r for r in res if r[0] == 'FAIL']

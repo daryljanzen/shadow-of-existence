@@ -92,7 +92,7 @@ UNRUNNABLE = {
     'P03_the_turnaround_figure.py': 'matplotlib',
 }
 
-LAUNCH = ("cd <tree> && (setsid nohup python3 scripts/run_all_receipts.py --jobs 4 --timeout 300 "
+LAUNCH = ("cd <tree> && (setsid nohup python3 scripts/run_all_receipts.py --jobs 4 --timeout 600 "
           "> receipts/RUN_RESULT.txt 2>&1 < /dev/null &)")
 
 
@@ -234,8 +234,25 @@ def main():
         rc = 1
     else:
         print('  No receipt fails for a reason inside the corpus.')
+    # ** r4018: THE TWO HALVES OF THIS GATE DISAGREED ABOUT WHAT A `SLOW` IS. **  59's r3999
+    #   prints "⛔ N receipt(s) NEVER FINISHED -- registered, never watched to completion" and
+    #   this line, fifteen lines below it, said "raise it rather than reading it as a fail".
+    #   ** Both landed correct and composed into a gate that flagged an unrun receipt and then
+    #   told you not to worry about it -- and passed. **  Neither line's author could see it:
+    #   the naming and the advice were written on different branches.
+    #   ⇒ *** SO IT FAILS NOW.  A receipt killed at the cap evaluated NOTHING; a green run that
+    #       reports it as a budget note is the cached-verdict shape one level in. ***  "UNRUN is
+    #       not a pass" is the corpus's own rule and this was the last place still exempt.
+    # ⌗ AND "RAISE THE CAP" WAS THE WRONG REMEDY ANYWAY (60, r4006).  C59 needed 1205s and no
+    #   global cap CI can carry covers that; raising one to fit the slowest receipt un-caps
+    #   every other.  The remedy is a DECLARED budget for the named receipt -- `LONG` in
+    #   scripts/run_all_receipts.py, its measured cost beside it -- or a repair.
     if nslow:
-        print(f'  {nslow} exceeded the per-receipt timeout -- raise it rather than reading it as a fail.')
+        print(f'  ⛔ {nslow} receipt(s) exceeded the per-receipt timeout and are UNRUN.')
+        print('     Declare a budget for the named receipt in `LONG` (scripts/run_all_receipts.py)')
+        print('     with its MEASURED cost beside it, or repair it.  Do not raise the global cap')
+        print('     to fit the slowest receipt -- that un-caps every other one.')
+        rc = 1
     print()
     return rc
 

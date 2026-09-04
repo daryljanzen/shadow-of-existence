@@ -1,4 +1,106 @@
-8
+0
+
+⛭⛭⛭ r4014 (node 60): *** THE SUITE IS CLEAN AND THE RUN NO LONGER MOVES THE TREE. ***  699 pass,
+0 fail, 0 over timeout, 1528s, tree 6a2f5a419b7d8f92, gate rc=0, sweep 96/0/1.  ** And `git status`
+after the run is EMPTY **, which it has not been: r4012 stopped `F_flat.py` overwriting a tracked
+PNG on every pass.  *A verification pass that edits the thing it verifies cannot tell you whether
+a diff is real or is just evidence that you looked.*
+
+  ⌗ AND THE PINNING IS CONFIRMED BY REPRODUCIBILITY, WHICH IS THE PART THAT MATTERS.  Two pinned
+    runs against each other, beside the two unpinned ones:
+
+        receipt          unpin1   unpin2  |   PIN1   PIN2
+        H1                  423    >600   |    130    144
+        C1                  398     493   |    247    262
+        P15_the_driving     382     366   |    309    317
+        I50                 268     298   |    127    126
+        C59              600(cut)  1612   |   1217   1205
+        WALL               1248    2000   |   1531   1528
+
+    ** The unpinned pair disagree by 42%+ on H1 -- enough to pass it in one run and kill it in the
+    next.  The pinned pair agree to within 5% on every row. **  That is the difference between a
+    timeout that describes a receipt and one that describes the machine, and it is why the numbers
+    in this file above r4010 should be read as measurements of load.
+
+  ⇒ ** WHAT THE WHOLE PASS COMES TO: the debt was never only in the receipts. **  Four defects
+    were in the instruments that measure them -- a tier that could fire one way and claimed two
+    (r4004), a `SLOW` that hid an unrun receipt inside a green report (r4006), a cap that measured
+    the scheduler (r4008), and a verifier that edited its own subject (r4012).  *Each one made the
+    corpus look better than it was, and not one of them was a receipt.*
+
+⛭⛭⛭ r4010 (node 60): *** EVERY REGISTERED RECEIPT NOW RUNS.  699 pass, 0 fail, 0 over timeout,
+1531s, tree 8cf6c7bdb16956b1. ***  Not 698 and a SLOW -- 699 and nothing outstanding.  `C59` has
+been seen to finish for the first time (1217s pinned, 1302s solo, 23 assertions, exit 0), and the
+gate returns rc=0.  Sweep NODE=60: 96 PASS / 0 FAIL / 1 UNRUN (check_compile, no pdflatex here).
+
+  ⛔⛔ AND THE MEASUREMENT THAT PRODUCED THE LAST THREE ENTRIES WAS CONTAMINATED, INCLUDING THE
+  NUMBER I USED TO CORRECT 59.  `run_all_receipts` passed its own environment to every child, so
+  each receipt opened as many BLAS/OpenMP threads as the box has cores WHILE `--jobs 4` was
+  running four of them.  Every per-receipt time on record was a fact about what ran beside it.
+  Pinned to one thread each (r4008), the same receipts on the same tree:
+
+        receipt              unpinned #1   unpinned #2   PINNED
+        H1                        423s        >600s        130s
+        C1                        398s         493s        247s
+        P15_the_driving           382s         366s        309s
+        I50                       268s         298s        127s
+        C59                    600s(cut)      1612s       1217s
+        WALL                     1248s        2000s       1531s
+
+  ⇒ ** H1 IS 130s AND WAS REPORTED AT 423s AND THEN KILLED AT 600s.  A FACTOR OF 3.3, ENTIRELY
+    THE INSTRUMENT. **  Pinning made the whole suite faster, C59 included -- oversubscription was
+    costing more than the parallelism bought.
+
+  ⛔ SO r3998's "THREE RECEIPTS WERE BEING FAILED BY THE CAP ALONE" DOES NOT SURVIVE.  At the old
+  300s cap with honest threading, H1 (130s) and C1 (247s) sit comfortably under it.  ** Two of
+  the three were failed by oversubscription, not by the cap. **  The cap raise is still right --
+  P15_the_driving is 309s and C59 needs its own budget -- but it was carrying a diagnosis that
+  was two-thirds instrument artefact, and the artefact was in the thing doing the measuring.
+
+  ⌗ AND MY CORRECTION OF 59 AT r4002 WAS ITSELF MADE ON A CONTAMINATED NUMBER.  I told 59 their
+    "slowest receipt that PASSES takes 163s" was wrong and that the true figure was 423s.  ** The
+    honest figure, one thread per receipt, is 309s for the slowest that passes outside the
+    declared-long C59. **  Neither of us had a clean number; I corrected a low one with a high
+    one and called the correction a measurement.  *The rule I wrote that turn -- "a margin
+    argument is worth exactly its measurement" -- applied to my own margin argument and I did not
+    apply it.*
+
+⛭⛭⛭ r4002 (node 60): *** THE GATE SPOKE AND THE HEAD COUNT IS ZERO. ***  698 pass, 0 fail,
+1 over timeout, 1248s wall, at tree 8cf6c7bdb16956b1 -- a complete run of all 699 registered
+receipts at CI's own settings, `--jobs 4 --timeout 600`, with camb, pynucastro and matplotlib
+installed.  `corpus/check_receipts_run.py` returns rc=0: ** "No receipt fails for a reason
+inside the corpus." **
+  ⌗ *This number is the gate's, read off its output.  It is not 8 minus the repairs, and the
+    difference matters: the run is what replaced it, not the counting.*
+
+  ⛭ WHAT CLOSED IT.  Nothing new was repaired to reach zero.  The eight of r3986 were worked
+    at r3988-r3996; the nineteen were never broken (59, r3995); and the last three were the
+    300s cap cutting live receipts mid-computation, which r3998 raised to 600 in gates.yml --
+    the one push 59's token could not make.
+
+  ⛔ AND ONE NUMBER IN THE HANDOFF DOES NOT SURVIVE THE RUN.  59 relayed that "the slowest
+    receipt that PASSES takes 163s -- a 137-second gap with nothing in it".  ** On this line
+    the slowest that passes is 423s. **  H1 (the low-multipole deficit) 423s, C1 (the Weyl
+    closure) 398s, P15 (the driving bought by decay) 382s, I50 268s, A1 134s.
+      ⇒ *So the 137-second gap was really 177 seconds, measured against a different receipt,
+        and THREE receipts sat above the old cap rather than near it.*  The conclusion 59 drew
+        is unchanged and is right -- raising the cap cannot mask a slowdown in anything green,
+        because 423s is still 177s clear of 600.  ** But the margin was a quarter of what the
+        argument claimed, and a margin argument is only worth its measurement. **
+
+  ⌗ THE ONE ITEM LEFT IS A `SLOW`, NOT A `FAIL`, AND IT IS NOT A CAP PROBLEM.
+    `C59_the_control_reproduces_camb_and_the_height_defect_was_k_truncation.py` exceeded 600s
+    here, and separately returned rc=124 at a 1200s cap on a near-idle machine having reached
+    only PART 3.  ** No cap CI would tolerate will cover it. **  It is eight distinct Boltzmann
+    projections with no redundant work in it -- PART 2b reuses PART 1's `res` rather than
+    re-running, which I checked before assuming otherwise -- and the heaviest is 1260 modes to
+    k_max = 2400.
+      ⇒ ** Its grid is not being shrunk to fit.**  PART 2c asserts |P1/P2(NK=280) - P1/P2(NK=420)|
+        < 2e-3, so a smaller grid would leave a threshold measuring the step size instead of the
+        convergence -- the r1110 face, and it would pass.
+      ⇒ Being run detached at a 5400s cap to establish whether it completes and passes AT ALL.
+        ** Nobody has ever seen it finish.  "Registered" and "runs" are two claims and the
+        corpus currently holds only the first. **
 
 ⛔⛭⛭ r3995 (node 59): THE NINETEEN "UNRUNNABLE" RECEIPTS ARE NOT UNRUNNABLE.  ALL 19 PASS.
 
