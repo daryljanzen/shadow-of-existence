@@ -1,7 +1,7 @@
 ---
 name: what-the-framework-delivers
 kind: REFERENCE
-current: r4003
+current: r4005
 job: The inventory of what Cosmological Relativity delivers, assembled by reading the corpus rather than by counting its typography, so that the one open residual can be weighed against it at their true relative sizes — and so that what the residual actually MEANS is on the record beside how big it is. Read WHEN JUDGING THE PROGRAMME AS A WHOLE — for publication decisions, for a reader's first orientation, or when the open problem has begun to feel larger than it is.
 sources: [chat]
 ---
@@ -679,6 +679,49 @@ hundred-odd dissolutions" invites reading 182 word-hits as 182 findings.*
   height**.*
 
 ---
+
+- ⛭⛭⛭ **MAXIMAL SYMMETRY, WORN SEVEN WAYS — `p0` `sec:unification`, absent from this document until
+  `r4005`.** *`SO(5,1)` **complete and exhausted** is the single root of seven results the corpus
+  establishes **separately**. The seven are each established; ***reading them as one fact is that paper's
+  thesis***, held as a conjecture and decidable by the test in its frontiers section.*
+
+  ⌗ ***And the list has a geometric substrate of its own***: *the four-geometries it ranges over are the
+  **polar slices of the substrate's own points** — one background for each point and none privileged — so
+  ***"the many ways the substrate is read are indexed by the substrate
+  itself"***\rcpt{Q6r_polar_is_the_background}.*
+
+  | | |
+  |---|---|
+  | **①** | ***necessity and sufficiency of the augmentation*** — *and maximal symmetry is what makes the substrate the **least-arbitrary** vacuum such a description can be cut from: a symmetry-breaking modulus is exactly the adjustable parameter that criterion rejects, so **the substrate's selection is an instance of the discipline's own load-bearing rule rather than an added axiom*** |
+  | **②** | ***the constraint algebra IS the symmetric-space grading*** — *two normal deformations bracketing into a tangential one being **exactly two coset directions bracketing into the isotropy, term for term**, and the "wrong-sign" structure function **is** the substrate's own Lorentzian coset metric* |
+  | **③** | ***one scale; the constants are gauges*** |
+  | **④** | ***the cosmology is parameter-free*** |
+  | **⑤** | ***the continuous matter symmetry is excluded*** — $\mathfrak{su}(3)\not\subset\mathfrak{so}(5,1)$ |
+  | **⑥** | ***one circle: the equator is what the construction is built on*** |
+  | **⑦** | ***the universality of physics*** |
+
+  - ⛭⛭⛭ ***THE SIXTH IS THE ONE THAT COLLAPSES THE MOST INTO ONE OBJECT.*** *The substrate has **exactly
+    one waist**, and its radius **IS** the curvature, $\alpha=\sqrt{3/\Lambda}$. **The power of a point
+    with respect to that circle is the square of its height**, so the tangent from any point is null and
+    ***the rulings ARE those tangents*** — **the double ruling and the classical power law are the same
+    statement**, set by $\alpha$ and nothing else. That circle is the hinge triangle's **incircle and its
+    nine-point circle besides**, so the hinges stand at $2\alpha$ as an ***output of the hole rather than
+    a stipulation***, the three sides are the Nariai double null rulings tangent at their midpoints, and
+    **the triple-angle identity returns the Nariai configuration of its own accord**. And the signed areal
+    radius passes through zero at a point **on** that circle, so the three hinges' walls lie on it as a
+    $\mathbb{Z}_3$-orbit ***whose three-foldness is the hole's own*** — and the fermion sector's three
+    chiral generations **are those three walls**.*
+  - ⛭⛭ ***THE SEVENTH IS A DERIVATION OF SOMETHING USUALLY POSTULATED***: *one maximally symmetric
+    substrate is **one standard the same at every point**, and that a material structure is the same
+    structure everywhere **is that constancy of the standard**. ⇒ ***"Universality is not a postulate over
+    the geometry but the maximal symmetry read as the invariance of the measure."***
+  - ⌗ ***AND THE PAPER DRAWS A CONSEQUENCE WHILE REFUSING TO COUNT IT AS AN EIGHTH FACE***, *which is the
+    scope discipline working: the residue's mass-parity and the triple angle that fixes the generation
+    index are both statements about **the cut**, and in general dimension they cease to hold. The
+    $D$-dimensional metric function is **not assumed but obtained** — the slicing operator's vacuum
+    condition returns the Tangherlini--de~Sitter family as its **entire** solution space — and with it
+    $2M=r_0^{D-3}-r_0^{D-1}$, **the horizon relation collapsing to a single multiple angle only at
+    $D=4$**.*
 
 - ⛭⛭⛭ **THE CENTRAL THEOREM — `P07` `sec:central`, THREE RESULTS LANDED TOGETHER, and absent from this
   document until `r4003`.** *The paper's own spine, stated in summation of everything the pieces compose,
