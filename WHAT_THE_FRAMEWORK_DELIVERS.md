@@ -1,7 +1,7 @@
 ---
 name: what-the-framework-delivers
 kind: REFERENCE
-current: r4005
+current: r4007
 job: The inventory of what Cosmological Relativity delivers, assembled by reading the corpus rather than by counting its typography, so that the one open residual can be weighed against it at their true relative sizes — and so that what the residual actually MEANS is on the record beside how big it is. Read WHEN JUDGING THE PROGRAMME AS A WHOLE — for publication decisions, for a reader's first orientation, or when the open problem has begun to feel larger than it is.
 sources: [chat]
 ---
@@ -680,6 +680,32 @@ hundred-odd dissolutions" invites reading 182 word-hits as 182 findings.*
 
 ---
 
+- ⛭⛭⛭ **THE COSMIC ACCELERATION IS THE EXISTENT SLICE GOING FLAT — and that makes $x_0$ a MEASUREMENT,
+  not a fitted parameter. `P15`, and the chain is three steps.** *Written in at `r4007`; the document
+  carried the identity only as an aside about the Hubble--Eddington radius.*
+
+  $$\frac{\dd^{2}r}{\dd\tilde\tau^{2}}=-\frac{f'}{2}=r\,K_G$$
+
+  ⇒ ***the comoving acceleration IS the existent slice's own Gaussian curvature.*** *So the expansion
+  **decelerates while the slice is negatively curved, turns over exactly where it is FLAT, and accelerates
+  thereafter — with nothing added to make it do so.** The flat locus is the **front seam**,
+  $r_N=\alpha/\sqrt3$.*
+
+  - ⛭⛭ ***AND THE FRONT SEAM AND THE NARIAI CREST ARE THE SAME LOCUS***, *both $1/\sqrt3$ in units of
+    $\alpha$ — so the construction supplies **one scale and one dimensionless position**, and
+    $x_0=1+z_{\rm acc}$ is where our particular cut sits against that single locus.*
+  - ⛭⛭⛭ ***SO $z_{\rm acc}$ IS A MEASUREMENT AND NOT A DESCRIPTION***: $x_0=1.6648\pm0.0467$ *from DESI
+    DR2's $D_M/D_H$, **the one BAO observable in which the ruler cancels** — no distance ladder, no
+    microwave background, no density — against $(2\Omega_\Lambda/\Omega_m)^{1/3}$ on Planck's parameters,
+    $1.6422$. ***Agreement at $0.7\sigma$ with no fit performed.****
+  - ⌗ *And on the comoving worldline the crossing is at **$7.06$ Gyr**, at $\dd r/\dd\tilde\tau=1$
+    exactly, in finite proper time.*
+  - ⛭ ***`P16` says why the two readings of that one radius coincide at all***, *and refuses to let them
+    be one event: the $\kappa=0$ degeneracy is what makes the **reassignment** possible, while the
+    crossing is an **event on our own worldline**. ⇒ **"The co-location holds because the member is Nariai
+    and for no other reason."*** *And Nariai is a condition on $M$ relative to $\alpha$, $2M=2\alpha/3\sqrt3$
+    — so the scale and the position are **tied by the forced member**, not independently chosen.*
+
 - ⛭⛭⛭ **MAXIMAL SYMMETRY, WORN SEVEN WAYS — `p0` `sec:unification`, absent from this document until
   `r4005`.** *`SO(5,1)` **complete and exhausted** is the single root of seven results the corpus
   establishes **separately**. The seven are each established; ***reading them as one fact is that paper's
@@ -946,6 +972,42 @@ in a paper's own voice with nothing carrying it, which is why nobody could work 
 
 ⌗ ***And the families check out***: *every live family of `THE_OPEN_PROBLEMS_LEDGER` has a row, and the
 three rows finer than the family grain are named as such. The test is at the head of `THE_REGISTER`.*
+
+## ⌗ AND THE TEN HAVE A SHAPE — *recorded as Daryl's reading, `r4007`, and held as speculation*
+
+⛔ ***This is not a result and is not counted as one.*** *It is recorded because it is what makes the list
+read as a structure rather than a heap, and because the corpus can test parts of it.*
+
+***By the no-hair theorems a collapsed object retains exactly $M$, $Q$, $J$. If the progenitor's inherited
+data are its conserved charges, the corpus's undetermined quantities should map onto those three, with
+$\eta$ a fourth of a different kind.***
+
+| charge | where it sits | state |
+|---|---|---|
+| **$M$** | *the cut's **offset** — `P07` reads $G$ as exactly that, the mass **being** the section's displacement from the central geodesic, so $M$ is **geometric data of the cut and not a coupling**. Measured as $x_0$* | ⛭ *measured, `0.7σ`* |
+| **$Q$** | *charge* | **`PO-25`** |
+| **$J$** | *angular momentum — a candidate for **the onset**, the half of `PO-31` whose origin is least clear* | **`PO-31`** |
+| **$\eta$** | *baryon-to-photon, **protected by a conservation law** rather than by geometry* | **`PO-31`** |
+
+⛭ ***And the reasoning is the corpus's own, not an analogy imported to fit***: *`PO-31` already rests on
+the argument that **what survives the thermalization is what a conservation law protects** — that is why
+$\eta$ is inherited while the abundances are predicted. Extending the same argument from baryon number to
+the geometric charges is what this reading does.*
+
+⚠ ***AND IT PUT TWO CORPUS STATEMENTS SIDE BY SIDE THAT HAD NEVER BEEN TOGETHER***, *which is a definite
+first computation for `PO-31`: `P15` has the throat's de~Sitter no-hair **damping the anisotropic part to
+the isotropic monopole** — on the **approach**, not at the crossing, since "damping is a process and
+requires elapsed time, and the crossing has none". **But $J$ is a conserved charge**, and the anisotropic
+*signature* going to zero is not the *charge* going to zero. ⇒ ***Does the collapse leg's damping remove
+$J$, or only its signature?***
+
+⛔ ***One route is CLOSED by computation and recorded so it is not re-tried***: *the mass hierarchy does not
+come from the moduli. If three generations sat at three different members, then for small $r_0$ the map
+$2M/\alpha=r_0-r_0^{3}$ is **linear**, so the $M$ ratio simply **is** the mass ratio — restating the
+problem rather than reducing it. And `r3791` says why no root structure can carry it: the three roots
+**sum to zero**, which is what makes them a Cartan element, and across **every** zero-sum cubic the top two
+magnitudes never separate by more than a factor of two. ⇒ ***The same property that gives the generation
+count is the property that forbids the ratios.***
 
 ## ⛔ AND THE HEIGHT FIGURES THAT STOOD HERE ARE SUSPENDED
 
