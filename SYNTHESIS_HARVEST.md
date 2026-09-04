@@ -371,6 +371,28 @@ stated. They pull in opposite directions at exactly one place — the forward re
 where the question is settled **without** converting P2's independent instance into a lean. Both survive if the
 reference says where the answer is and does not borrow it. Collapsing the two loses one of them.*
 
+
+---
+
+# ⚯ CROSS-PAPER JOIN · two independent routes to three hinges
+### *P3 owes a forward reference that strengthens its own case, and the corpus has never put the two routes side by side*
+
+① CLAIM — **The number three in the hinge figure is reached twice, by arguments that share no premise.**
+**Route A (P3, algebraic).** The horizon cubic has three roots; a vantage is fixed by which root it reads as its own black-hole horizon; the roots are on the same footing, so the vantages are, and there are exactly as many — three, at $120^\circ$, with the root-permutation group relating them.
+**Route B (p0/17, dimensional).** Written at general dimension the hinge figure is a regular $(D-1)$-gon with the throat as its incircle. **At $D=4$ that is a triangle.** p0 then separates which of the hinge relations are dimensional accidents and which are not: the tangent length equalling the hinge's height survives at every $D$ (both are $\sqrt{R^2-\alpha^2}$), as does midpoint tangency (a property of any regular polygon's incircle); what does **not** survive is the placement $R=2\alpha$, the $60^\circ$ subtense, and the throat's identification with the nine-point circle.
+② REGISTER — **Route A: established in P3** (§8.1, as of r4029). **Route B: established in p0/17.** **⛔ The two have never been stated together, and the joint claim — that three is forced twice over on the geometry alone — appears nowhere.**
+③ HOME — P3 §8.1–§8.2; p0/17's general-dimension treatment of the hinge figure.
+④ ANCHOR — `alpha_alone`, `euclid7_nine_point`, `P03_the_sixth_equivalence` (Route A's figure); p0's own for Route B.
+⑤ JOINS — [[p3-sds-slicing]] · [[p17-geometric-core]] · [[p14-matter-sector]].
+⑥ NOT OP FOR — **⛔ Neither route is evidence for the physical generation count, and the whole value of the pair is that they run the other way.** Both are prior to any empirical three: they fix a number on the geometry, and whether the observed generations are that number is a separate question owned by the matter sector. *The join's use is exactly this: it lets P3 say the three is necessary on geometric grounds **before** the empirical count is in view, so the agreement is a fit rather than a fitting.* An entry that presents the routes as confirming the generations inverts it.
+
+### what-is-owed-to-P3
+*A forward reference at §8.1, where the count is now derived: naming that a companion reaches the same figure
+from the dimension and separates which of its relations are special to $D=4$~\cite{JanzenGeometricCore}.*
+**⛔ Phrased as a second route and not as support** — Route A must stand alone, exactly as the derivation
+now written does. P3 already cites the geometric-core paper in the $2\alpha$ paragraph for the circle's other
+faces; **it does not cite it for the count**, which is the gap.
+
 ---
 
 ## THE FRONTIER GATHER

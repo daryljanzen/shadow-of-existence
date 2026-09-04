@@ -87,6 +87,22 @@ standalone paper is still permitted to assert. It must be asserted on what P4 fo
 what it enables later — and P4 in particular must remain austere, since a reader who feels softened up for it
 has been given a reason to discount it.*
 
+**⌗ HOW THE PASS IS RUN — decided, not left to the moment.** *The reach pass **cannot be completed on the
+abstract alone**: on both papers run so far, the drift was as heavy in the body as in the front matter. But
+running it as a separate whole-document pass would mean reading the paper twice, and the reach judgement in the
+body needs the same reading the Phase 1 read needs. So it runs in **two stages**:*
+
+*① **Before the read** — the front matter (abstract, introduction, roadmap) plus a **mechanical vocabulary
+sweep of the whole document**: for each term, the paper that defines it, and every use before that point. The
+sweep is cheap, it is not a read, and it is what makes stage ① safe — it says where in the body the leaks are,
+so the front matter is not corrected blind.*
+
+*② **In tandem with the Phase 1 read** — the rest, because reach defects in the body are found by reading and
+there is no cheaper way to find them. This is what happened on P2 and it worked.*
+
+*⛔ **And the front matter is corrected first for a reason**: it is the paper's self-presentation, so fixing it
+before the body is read means the body is read against a frame that is already right.*
+
 **⌗ WHAT THE PASS DOES.** *Read the paper against its row. Where it has drifted, correct the paper. Where the
 row turns out not to fit what the paper actually does, **correct the row** — the design is to be tested against
 the material, and the material at each paper is the better evidence. Either way the correction is made when the
