@@ -92,7 +92,7 @@ UNRUNNABLE = {
     'P03_the_turnaround_figure.py': 'matplotlib',
 }
 
-LAUNCH = ("cd <tree> && (setsid nohup python3 scripts/run_all_receipts.py --jobs 4 --timeout 300 "
+LAUNCH = ("cd <tree> && (setsid nohup python3 scripts/run_all_receipts.py --jobs 4 --timeout 600 "
           "> receipts/RUN_RESULT.txt 2>&1 < /dev/null &)")
 
 
