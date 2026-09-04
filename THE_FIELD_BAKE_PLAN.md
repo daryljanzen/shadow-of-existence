@@ -16,6 +16,42 @@ sources: [chat]
 
 ---
 
+## ⛔ A FIELD THE SURVEY NEVER ASKED ABOUT — *graph theory, `r4009`*
+
+***Twenty-one fields sit in `corpus/field_survey.py`'s table. Graph theory is not one of them, and the
+omission is structured rather than accidental***: *`probability / stochastic processes` **is** in the
+table and **was baked** — so the field percolation lives inside was surveyed, while the graph-theoretic
+question was never put.*
+
+⇒ ***Measured, not asserted***: `PROBABILITY_LEDGER.md` *is 347 lines and contains **zero** instances of
+percolation, phase transition, critical probability, lattice or transitivity. Its two matches on "graph"
+are both the word **historiographic**.* **So the field was thrown and this was not in it.**
+
+### ⌗ WHAT THE CORPUS HAS THAT A GRAPH BAKE WOULD ACT ON
+
+- ⛭ ***An actual graph, and a strong result about it***: *the **groupoid of observer descriptions** —
+  vertices the vantages, edges the reassignment morphisms — proved **RIGID** in `P12`: forced discrete
+  generators, **no continuous moduli**, $D_3\cong S_3$, three geometries under twelve designations.*
+- ⛔ ***And the reason the 2026 supercritical-sharpness theorem does NOT reach it***: *that groupoid is
+  **finite**; the theorem is about **infinite** transitive graphs, and no percolation process runs on it.
+  **The object exists and the theorem does not reach it** — which is a probe's answer, not a reason to
+  skip the field.*
+- ⌗ *`p0`'s **seventh face** is transitivity stated as physics: "one maximally symmetric substrate is one
+  standard the same at every point … universality is not a postulate over the geometry but the maximal
+  symmetry read as the invariance of the measure." **A vertex-transitive graph is the discrete form of
+  exactly that statement.***
+- ⛭⛭ ***And one structural parallel worth a probe of its own***: *sharpness was proved on lattices in the
+  1980s by a method that **could not be adapted**, because it used the lattice. The 2026 proof works
+  because it **never uses the lattice, only transitivity**. `P07`'s central theorem ③ has the same shape —
+  the collapse result holds **for any symmetry**, the horizon's causal structure following "from
+  Lorentzian causal structure alone, making no use of spherical symmetry". ⇒ ***Both are: the
+  special-case proof leaned on structure the result never needed.***
+
+⚠ ***THE BAR IS THE SAME AS EVERY OTHER FIELD*** — *ten or more numbered probes, each a question the field
+asks that the corpus does not; the field registered in the survey table so it stops being invisible. **A
+field is not baked because a ledger exists for it**, and it is not skipped because one theorem in it
+misses.*
+
 ## ⌗ THE STANDARD, MEASURED FROM THE CORPUS'S OWN BAKES
 
 *Not asserted — counted across the thirteen field ledgers on disk.*
