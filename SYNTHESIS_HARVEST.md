@@ -690,13 +690,9 @@ faces; **it does not cite it for the count**, which is the gap.
 # P7 · `corpus/CR_framework.tex`
 ### *Collapsed matter must become a universe: the necessary and sufficient augmentation, proven for collapse of any symmetry*
 
-> **⛔ THIS HARVEST IS PARTIAL AND IS NOT YET P7'S.** *The entries below were written from the sections
-> actually opened at r4045--r4047: the abstract, the axioms, the causal-reassignment opening, the (F1)--(F6)
-> list and the central-theorem statement, the lift opening, the frontiers opening, and two passages of the
-> synthesis. **Unread at that point**: the introduction, the consistency section, the whole applications
-> section, the body of the Null--Boundary section, the remainder of the lift and of the central theorem, and
-> most of both syntheses including the general-reach subsection. Each entry is accurate about its own source;
-> **none of them speaks for the sections not opened.** The read is being completed from r4049.*
+> **▣ THE READ IS NOW COMPLETE** *(r4049--r4057, after the partial claim at r4047 was corrected). Every
+> section has been read straight through. The entries below were revised against the whole paper, and the four
+> added at the end are results the partial read had missed entirely.*
 
 > **▣ P7 IS THE MIDPOINT SYNTHESIS WITH A SIGNIFICANT BENT.** *It synthesises P1--P6, develops its own axioms,
 > worked constructions and central theorem, then takes the rest-of-corpus fallout. **Because it develops real
@@ -734,7 +730,7 @@ faces; **it does not cite it for the count**, which is the gap.
 ③ HOME — P7 §6.
 ④ ANCHOR — the section's own.
 ⑤ JOINS — [[p1-bh-causality]] · [[p13-boundary]] · [[p15-cr-cosmology]].
-⑥ NOT OP FOR — **⛔ That the map is not metric is precisely what makes the symmetry claim work**, and it is the hinge a synthesis is likeliest to drop. Because the correspondence carries no multipoles, **non-spherical collapse is dissolved rather than deferred** — the argument does not depend on the symmetry of the collapse. *An entry that presents the correspondence as a metric identification has inverted its content and lost the any-symmetry result with it.* **And the generic map's horizon areas and surface gravities differ**; the coincidence is at the forced member.
+⑥ NOT OP FOR — **⛔ That the map is not metric is precisely what makes the symmetry claim work**, and it is the hinge a synthesis is likeliest to drop. Because the correspondence carries no multipoles, **non-spherical collapse is dissolved rather than deferred**. *An entry that presents the correspondence as a metric identification has inverted its content and lost the any-symmetry result with it.* **⛔ AND THE PROOF BOUNDS ITS OWN MAP, which the shorthand loses**: $\mathcal N$ is *fixed to a single causal type* — an oriented future-horizon-of-an-observer identification, far from one isomorphism among the many any two $S^2\times\mathbb R$ null boundaries would admit — **rather than uniquely determined.** It carries no metric data (the areas $16\pi G^2M^2/c^4$ and $4\pi\alpha^2$ and the two surface gravities are unequal in general), and the collapse horizon supplies **no canonical labelling 2-sphere**, so a reframing of that $S^2$ remains free. **And the bijection is sharper than a seeding**: $p\mapsto\mathcal H_c^+(p)$ is injective because the *oriented* future sheet distinguishes $p$ from its antipode where the unoriented bifurcate horizon does not, and onto by the ruling structure — so *the family of horizons **is** the congruence*, no single 2-sphere of generators extended to fill the $S^3$. One-per-point holds **by construction** and not because the rulings are straight; through each point of $\mathrm{dS}_4$ runs an $S^2$ of null directions.
 
 ### the-central-theorem
 ① CLAIM — Three results landed together. **(1)** The CR augmentation is the **necessary and sufficient** completion under which general relativity describes a world that exists and evolves — required, not optional, with its necessary half **measured**. **(2)** On that augmentation, gravitational collapse cannot terminate but must continue as a cosmology: **collapsed matter becomes a universe**, the collapse horizon and the cosmological seam one ontological layer. **(3)** This holds for collapse of **any** symmetry.
@@ -775,6 +771,38 @@ faces; **it does not cite it for the count**, which is the gap.
 ④ ANCHOR — none.
 ⑤ JOINS — the frontier gather below; every paper's open list.
 ⑥ NOT OP FOR — **⛔ This is directly load-bearing for Phase 3, and it cuts both ways.** *A list that ends with only boundaries and standing conditions has not failed to empty; it has finished* — and saying which entries are which is what lets that be told from a list quietly going stale. **But the distinction is also the easiest way to retire an item by reclassification rather than by work**, which the arc forbids. *Phase 3 uses it to describe items, never to remove them.*
+
+### the-graded-dissolution-cluster
+① CLAIM — **P7's applications synthesis grades the cluster rather than presenting it as uniform, and says why the grading matters: it is a difference in what an objector must dispute.** *Tier one*, carrying the layered reading's full weight: the horizon–singularity family, the problem of time, the hole argument, the closed timelike curves. *Tier two*, following from the single scale alone: the fine-tuning pair and the local–cosmic boundary. *Tier three*, standing on the bare analytic structure and **untouched by any verdict about what exists**: the continuation through the curvature singularity, the identical analytic type of the two critical points, the Kretschmann divergence as a pole of *finite* order (twelfth in the cycloid parameter, raised from six by the chain rule — *a pole being continuable where an essential singularity would not be*), and the overcritical regime reached by the same continuation that joins the seam.
+② REGISTER — **SYNTHESIS with an explicit grading.**
+③ HOME — P7 §4.11 (`sec:applications-synthesis`).
+④ ANCHOR — none.
+⑤ JOINS — [[p1-bh-causality]] · [[p2-janzen-circle]] · [[p3-sds-slicing]] · [[p6-shadow-of-existence]].
+⑥ NOT OP FOR — **⛔ This is the shape our own synthesis needs, and flattening it is the failure mode.** A reader who rejects the layered ontology still owes an answer to tier three; presenting the cluster as one uniform move hands them the whole set to reject at once.
+
+### the-lift-carries-a-sharp-separation
+① CLAIM — Because no cosmic time elapses on the lift, **any quantity whose value depends on elapsed cosmic time is necessarily continuous across it, having no time in which to change**, while quantities depending on path length or on $\operatorname{Im}\tilde\tau$ may differ across it. The kernel carrying a state across is not the unitary $e^{-i\hat H\Delta\tau}$ but the Euclidean $K=e^{-\hat H|\Delta\eta|}$ — consistent with the evolution operator being the identity, since no cosmic time elapses. **That kernel acts on *oscillatory* content only**, a frozen zero-frequency mode being a fixed point of it; and at the crossing no mode is oscillating, since on the contracting leg $aH$ grows without bound so every mode exits the comoving horizon and freezes first. *So what the segment removes is the sub-horizon oscillation — the acoustic phase — and not the frozen amplitude that crosses.*
+② REGISTER — **DERIVED**, with the classical selection rule recovered term for term.
+③ HOME — P7 §8.
+④ ANCHOR — `P16_every_mode_is_frozen_at_the_crossing`.
+⑤ JOINS — [[p10-canonical-time]] (**the state the kernel selects is the one that companion fixed on independent grounds — one requirement met twice**) · [[p15-cr-cosmology]] · [[p16-cosmogenesis]].
+⑥ NOT OP FOR — **No information is destroyed on the realised spacetime; a basis is selected on it.** *Lossless for content and fatal for bodies* — the paper's own phrasing, and the two halves must travel together.
+
+### the-general-reach-and-its-three-axes
+① CLAIM — The same construction reaches the whole **symmetry-reducible vacuum sector** of general relativity: a geometry is a cut of the substrate precisely when its isometry group contains a sweep-subgroup of the substrate's. The apparent multiplicity of the catalogue decomposes on **three orthogonal axes**: *vantage* — a finite groupoid of causal readings of one fixed cut; *geometric* — the moduli of genuinely distinct vacuum cuts, with mass, rotation and NUT charge transverse to the orbits; and *matter* — charge and acceleration entering as **bends off the kernel** rather than as cuts. So the reducible catalogue is **one substrate read through a finite vantage groupoid, over a moduli family of vacuum cuts, with matter the bend**. Algebraic type is no constraint (types O, D, I all filled).
+② REGISTER — **SYNTHESIS of companion results**, each cited.
+③ HOME — P7 §9 (`sec:general-reach`).
+④ ANCHOR — none.
+⑤ JOINS — [[p8-slicing-operator]] · [[p9-range-paper]] · [[p12-algebroid]] · [[p5-groupoid]].
+⑥ NOT OP FOR — **⛔ Two limits stated at source.** The classification leaves open the **irreducible interior remainder** — the Kerr-inner and Reissner–Nordström-interior reassignments, which tie to the matter side. **And the branch point and the Nariai member are not the same locus**: the branch point is at $r=0$, the Nariai member is seeded at $\alpha/\sqrt3$, and the paper lists these as quantities never to be conflated.
+
+### the-scalar-sector-is-a-disagreement-and-the-paper-says-so
+① CLAIM — **⛔ P7's own frontier list states an outright disagreement with data, in numbers.** The full-spectrum likelihood comparison against flat $\Lambda$CDM returns $\chi^2=397.13$ for this construction against $206.44$ for the standard model over the 215 binned $TT$ multipoles, at **equal fitted-parameter count** and against a control reproducing the sky at $0.983$ per degree of freedom; and the asymptotic acoustic phase intercept sits $0.615\,\ell_A$ from the sky's, **some seventy standard deviations** at the peak-position accuracy the data supports. What *does* come out right: the acoustic scale, the peak spacing, the damping physics, and the odd/even height pattern ($P_1/P_2=2.185$ against $2.2564\pm0.0772$ measured). **The diagnosis: the construction reproduces the acoustic scale, the peak spacing, the damping physics and the height pattern, and misplaces the phase.**
+② REGISTER — **≈ COMPUTED, AND A DISAGREEMENT.** *Both items run; the result is a disagreement rather than a closure, and the paper says exactly that.*
+③ HOME — P7 §10, frontier item 1.
+④ ANCHOR — the companion cosmology's.
+⑤ JOINS — [[p15-cr-cosmology]] (**owns the calculation**) · [[p16-cosmogenesis]].
+⑥ NOT OP FOR — **⛔ THIS IS THE SINGLE MOST IMPORTANT ENTRY IN THE P7 BLOCK FOR THE SYNTHESIS, AND IT IS THE ONE MOST EASILY LOST.** A results paper that lists what the corpus delivers and omits this has misrepresented the corpus, because the corpus itself does not omit it. **What remains is a diagnosis rather than a calculation**: whether the misplaced phase is a defect of the seam treatment, of the transfer, or of the geometry the transfer runs on is the open question — *and the paper notes it is a sharper question than the item it replaces.* **The related frontier note is equally load-bearing**: the uniform comb follows from an ordering that is **not adjustable** — the acoustic modes re-enter above the onset, so none crosses while there is a plasma to be driven, and the nucleosynthesis plasma is the progenitor's, complete before the branch point.
 
 ---
 
