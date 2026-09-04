@@ -1,7 +1,7 @@
 ---
 name: what-the-framework-delivers
 kind: REFERENCE
-current: r3993
+current: r4001
 job: The inventory of what Cosmological Relativity delivers, assembled by reading the corpus rather than by counting its typography, so that the one open residual can be weighed against it at their true relative sizes — and so that what the residual actually MEANS is on the record beside how big it is. Read WHEN JUDGING THE PROGRAMME AS A WHOLE — for publication decisions, for a reader's first orientation, or when the open problem has begun to feel larger than it is.
 sources: [chat]
 ---
@@ -680,6 +680,45 @@ hundred-odd dissolutions" invites reading 182 word-hits as 182 findings.*
 
 ---
 
+- ⛭⛭⛭ **THE GENERAL-RELATIVITY/QUANTUM DIVIDE AND THE GRAVITY/GAUGE DIVIDE ARE ONE FACT — `P13`
+  `sec:synthesis`, and the whole of it was missing from this document until `r4001`.** *The claim is not
+  that the substrate yields the Standard Model — **the wall stands**, $\mathfrak{su}(3)$ no Lorentzian
+  isometry — but that ***the divide the last century drew BETWEEN the gravitational and the quantum, and
+  between gravity and the gauge forces, is one substrate read on its two real forms.****
+
+  | real form | what it carries |
+  |---|---|
+  | **Lorentzian $\SO(5,1)$** — *the existent temporal world* | *general relativity, **and general relativity's QUANTUM FRAMEWORK**: the Dirac constraint algebra **is** the symmetric-space coset structure, its structure function the coset metric and the "wrong sign" obstructing a global time **the coset's own indefinite signature**; deparametrized on the forced foliation to a true Hamiltonian; the discrete graviton tower; the matter, and the flavour the residue grades* |
+  | **Euclidean $\SO(6)$** — *the atemporal structure that world carries* | *colour **and** the quantum of action, **together on one sphere*** |
+
+  - ⛭⛭ ***WHY COLOUR NEEDS THE WHOLE SPHERE, AND IT IS A REPRESENTATION-THEORETIC FACT***: *the smallest
+    faithful real representation of $\mathfrak{su}(3)$ is **six**-dimensional — the
+    $\mathbf{3}\oplus\bar{\mathbf{3}}$, realified — so $\mathfrak{su}(3)\subset\mathfrak{so}(6)$ but
+    $\not\subset\mathfrak{so}(5)$, **and the Lorentzian compact sector supplies only five.** Colour is
+    therefore reached by the **global Wick alone**, $S^5=\SO(6)/\SO(5)$ — not the seam continuation's
+    $S^4$.*
+  - ⛭⛭⛭ ***AND $\hbar$ LANDS ON THE SAME FACE, NOT BY ANALOGY BUT BY IDENTITY***: *the horizon's
+    Gibbons--Hawking state is a Euclidean continuation of period $\beta=2\pi\alpha$, and **the thermal
+    regularity's sphere IS the global-Wick $S^5$** — its period independent of dimension, the round sphere
+    its Euclidean section — so it **cannot be stranded on a smaller carrier than the one
+    $\mathfrak{su}(3)$ already requires whole**. ⇒ ***"The quantum of action and the colour symmetry share
+    the one Euclidean real form the way $c,\Lambda,G$ share the Lorentzian one"***\rcpt{P13_qm_S4_vs_S5}.*
+  - ⛭⛭ ***SO "THE QUANTUM" IS LOCATED, AND IT IS NOT A THIRD THING.*** *The framework's **structure** —
+    constraint algebra, unitarity, the tower's discreteness, the problem of time and its cure — is
+    **Lorentzian**, the temporal form's own. Only the framework's **SCALE**, $\hbar$, is set on the
+    Euclidean face, by the thermal state that closes the free sector's lone quantization ambiguity
+    **without a free parameter**. ⇒ ***"The quantum enters not as a fifth force awaiting geometrization
+    but as the thermal gauge of the compact real form, its framework already carried by the Lorentzian
+    one."*** *The continuous dynamics is first-class general relativity, **admitting rather than forcing**
+    a quantum structure, any forcing isolated to the discrete root structure.*
+  - ⇒ ⛭⛭⛭ ***THE SYNTHESIS, IN THE PAPER'S OWN WORDS***: *the substrate wears two real forms of the one
+    complex $\SO(6,\mathbb{C})$, **each carrying one side of the divides the corpus keeps apart**; they
+    meet at the horizon where $\beta=2\pi\alpha$, **the join already present in the complexification the
+    substrate was reached through**. ***"Not two unifications owed but one fact: one substrate, one
+    complex group, read on its two real slices."*** ⛔ *And the wall is not breached by it — the reading
+    **places** $\mathfrak{su}(3)$ exactly where the exclusion says it cannot be.*
+
+
 # ⛭⛭ §5 · THE CROSS-FIELD JOINS — *23 fields against 17 papers*
 
 *Twenty-three mathematical field ledgers, **104 `\ldg{}` markers** landed in the bodies. The bakes put
@@ -800,8 +839,7 @@ is open.*** *Measured in the bodies:*
 *"A structure is credited for **requiring** a phenomenon, not for **permitting** a value that fits it." A
 gap that is **buildable** is a **debt owed** — to be built before the claim it bears on is a proof rather
 than a coherent proposition. A **genuinely external unknown** may stay open at no cost, **exactly as flat
-ΛCDM's $\eta$ does.*** ⇒ *The end-to-end transfer and the full-spectrum likelihood are the load-bearing
-**debts**; the progenitor spectrum is the genuine **frontier**.*
+ΛCDM's $\eta$ does.*** ⇒ *The end-to-end transfer is the load-bearing **debt** and is now `PO-24`; the progenitor spectrum is the genuine **frontier** and is now `PO-31`.* ⛭ ***And the full-spectrum likelihood has since been RUN*** — *$\chi^2=397.13$ against flat $\Lambda$CDM's $206.44$ over 215 binned TT multipoles at equal parameter count, which `P07` reports; so of the two named debts one is discharged and one remains.* ⛔ ***`PO-24`'s own step-one numbers are held pending a completed run***: *its verifying receipt is registered with a passing verdict and has never been watched to completion — `rc=124` at a 1200 s cap, reaching PART 3 of 8. **Registered and runs are not the same claim.***
 
 ---
 
