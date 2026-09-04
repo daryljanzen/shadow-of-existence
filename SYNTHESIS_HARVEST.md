@@ -330,6 +330,47 @@ Nothing is entered from memory: an entry is written with the source open.)*
 ⑤ JOINS — [[p3-sds-slicing]] · [[p9-range-paper]].
 ⑥ NOT OP FOR — The ontological limitation attaches **to the ontological claim only** and not to the falsification, which is established outright and independent of which manifold is taken as fundamental.
 
+
+---
+
+# ⚯ CROSS-PAPER JOIN · what $r=0$ finally is
+### *A conclusion the corpus reaches in pieces and never assembles — and the forward references owed so that P2's care does not read as a retreat*
+
+> **▣ WHY THIS BLOCK EXISTS.** *P2 declines to say the curvature divergence at $r=0$ is unreal, and that
+> restraint is correct: at P2's floor the question is genuinely undecided. **But the corpus does not leave it
+> undecided.** The verdict is assembled across four later papers and stated in full by none of them. Read
+> linearly, P2's care therefore looks like a concession the programme never takes back — a hostile reader is
+> handed "even they admit the singularity is real" with nothing downstream visibly recovering it. The join is
+> real and the papers already contain every link; what is missing is the statement.*
+
+### the-chain, link by link, each verified at its own source
+- **P2** — $r=0$ is a non-degenerate critical point of $r(z)$, of identical analytic character to the horizon. The Kretschmann divergence is the curvature scalar of **the Schwarzschild perspectival metric**, real as that metric's. Whether that metric is fundamental is *stated as a choice the construction does not make*.
+- **P3** — the choice is made on the geometry. The de Sitter description sweeps the complete arc about the manifold's own symmetry axis; the Schwarzschild description, viewing the hole from outside in the timelike orientation, **cannot use that axis and is forced to pivot on a selected off-axis point** — the critical point the chart labels $r=0$. The slicing closes *through* it, "a branch point and not a barrier, the substrate being smooth across the locus the chart labels $r=0$, the divergence of the curvature reading there a perspectival artefact of the areal coordinate."
+- **P4 and P6** — supply the two things that make "perspectival" a verdict rather than a preference: an existing evolving world for the descriptions to be perspectives *of*, forced empirically; and the constraint that an admissible underlying object must **explain** the appearance rather than merely reproduce it.
+- **P7** — perspectival geometries as readings of one substrate, from first principles, with the closure through $r=0$ established as a theorem.
+- **P8** — the sharpest single statement in the chain, and it is about the cosmological face: *"$r=0$ is not a point matter emerges from; it is a horizon the slicing is anchored to."* The $t=-\infty$/$r=0$ singularity is the artefact of the comoving reading laid over a throat that is the substrate's own constant $\alpha$ — the radius-face of a doubled category error whose time-face is taking the chart's $-\infty$ for the physical age.
+
+### the-terminal-claim, as the corpus's pieces actually support it
+① CLAIM — The locus the Schwarzschild chart labels $r=0$ is **not a place in the world**. It is the conjugate critical point of a perspectival chart, reached by analytic continuation past the metric singularity, and the geometry is smooth across it. **The curvature divergence is real as the perspectival metric's and is not a curvature of the substrate**, which carries none there. So P2's undecided question is decided — against the divergence being fundamental — and decided on the geometry rather than by preference.
+② REGISTER — **⛔ NOT STATED AS SUCH ANYWHERE.** Every link is established at its own source; the assembled claim appears in no paper. This is a join the synthesis makes, and then delivers back.
+③ HOME — distributed: P2 §6/§8.3, P3, P7, P8.
+④ ANCHOR — the links' own; the assembled claim has none, because it has never been stated.
+⑤ JOINS — [[p2-janzen-circle]] · [[p3-sds-slicing]] · [[p4-modern-parallax]] · [[p6-shadow-of-existence]] · [[p7-cr-framework]] · [[p8-slicing-operator]].
+⑥ NOT OP FOR — **The verdict is about the divergence's status, not about the worldline.** The infalling worldline still ends at that critical point in finite proper time, and **Sbierski's $C^0$-inextendibility of the maximal analytic Schwarzschild spacetime still stands** — it is a theorem about that object, and the substrate is a different object. Neither is touched by deciding the divergence perspectival.
+
+### what-is-owed-back-to-the-papers
+*Forward references, at the point each paper's own restraint is stated, saying where the question is settled and by what. **Not the conclusion imported** — the paper must still not claim it.*
+- **P2** — where §8.3 says the construction does not choose between the readings, name that the companion supplies the geometric cause and finds the divergence perspectival, the locus being an ordinary point of the geometry it slices. **⛔ Phrased as "settled there, not here"**, never as support P2 draws on: P2's independence is what the next item protects.
+- **P3** — its statement is already the pivotal one and is made in passing, inside a longer sentence. It carries the corpus's answer to P2's open question and deserves to be visible as that.
+- **P7 / P8** — P8's formulation is the sharpest in the corpus and is scoped to the cosmological face. Whether the same sentence covers the collapse face is the thing to check when those papers are opened.
+
+**⛔ AND THIS IS NOT THE P6 NON-CIRCULARITY POINT, though it touches it.** *That point: P2 reaches its
+perspectival instance without leaning on P6, and that independence is what lets P6's method rest on it without
+circularity. **This point**: P2's specific open question about $r=0$ is closed later, and the closure is never
+stated. They pull in opposite directions at exactly one place — the forward reference owed to P2 must point at
+where the question is settled **without** converting P2's independent instance into a lean. Both survive if the
+reference says where the answer is and does not borrow it. Collapsing the two loses one of them.*
+
 ---
 
 ## THE FRONTIER GATHER
