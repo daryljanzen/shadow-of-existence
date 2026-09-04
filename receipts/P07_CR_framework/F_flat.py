@@ -55,13 +55,32 @@ ok&=check("turnaround r=-A=-cbrt2 alpha/sqrt3", abs(float(r_of_s(0.0)) - (-2**(1
 s_seam = P + (2/3)*np.arcsinh(((1/np.sqrt(3))/A)**1.5)     # front seam on expansion leg
 ok&=check("front seam reached at r=+alpha/sqrt3 on the expansion leg", abs(float(r_of_s(s_seam)) - 1/np.sqrt(3))<1e-6)
 # (bonus) draw the figure
+import os
 try:
     import matplotlib; matplotlib.use('Agg'); import matplotlib.pyplot as plt
     fig,ax=plt.subplots(figsize=(6.0,6.0))
     for seg,col in [((-2.0,0),'#c0392b'),((0,P),'#c0392b'),((P,2.6),'#2471a3')]:
         xx=np.linspace(*seg,600); ax.plot(xx,r_of_s(xx),color=col,lw=3)
     ax.set_xlabel('$s/\\alpha$'); ax.set_ylabel('$r/\\alpha$'); ax.axhline(0,color='0.85',lw=0.8)
-    plt.tight_layout(); plt.savefig('F_flat.png',dpi=120,bbox_inches='tight'); print("  (figure F_flat.png written)")
+    plt.tight_layout()
+    # ** r4012: RENDER ALWAYS, OVERWRITE ONLY DELIBERATELY. **  This was `savefig('F_flat.png')`
+    # unconditionally, and `F_flat.png` is TRACKED -- the one tracked image any receipt writes
+    # (checked: three receipts call savefig, this is the only one whose target is in the index).
+    #   ⛔ *So running the suite DIRTIED THE WORKING TREE*, by a few hundred bytes of matplotlib
+    #     version drift with no change to the figure.  ** A verification pass that mutates the
+    #     thing it is verifying leaves you unable to tell a real diff from having looked. **  It
+    #     also means the committed artefact silently becomes whichever renderer ran last.
+    # ⌗ The draw still happens EVERY run, to a temporary file, so a break in the figure code
+    #   still fails this receipt -- what is conditional is the OVERWRITE, never the exercise.
+    import tempfile, shutil
+    _fd, _tmp = tempfile.mkstemp(suffix='.png', prefix='F_flat.'); os.close(_fd)
+    plt.savefig(_tmp, dpi=120, bbox_inches='tight')
+    if not os.path.exists('F_flat.png') or os.environ.get('REGEN_FIGURES') == '1':
+        shutil.move(_tmp, 'F_flat.png'); print("  (figure F_flat.png written)")
+    else:
+        os.unlink(_tmp)
+        print("  (figure rendered and checked; F_flat.png left as committed -- "
+              "REGEN_FIGURES=1 to refresh it)")
 except Exception as e:
     print("  (figure skipped:", e, ")")
 print("="*72)
