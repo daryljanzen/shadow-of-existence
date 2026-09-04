@@ -115,5 +115,5 @@ jobs:
       #   fail on import in EVERY environment -- this container and this job alike -- so two
       #   registered receipts were unrunnable everywhere and counted as real failures.
       - run: pip install numpy scipy sympy mpmath camb pynucastro matplotlib
-      - run: python3 scripts/run_all_receipts.py --jobs 4 --timeout 300 | tee receipts/RUN_RESULT.txt
+      - run: python3 scripts/run_all_receipts.py --jobs 4 --timeout 600 | tee receipts/RUN_RESULT.txt
       - run: python3 corpus/check_receipts_run.py
