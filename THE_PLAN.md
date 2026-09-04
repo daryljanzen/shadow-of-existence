@@ -94,6 +94,13 @@ paper is opened, before the Phase 1 read, so the read is of the paper as it shou
 
 ### Standing through the whole arc
 
+- **A TURN BOUNDARY IS NEVER A REASON TO CLOSE WORK.** *"More than the current turn" is available at every
+  phase and every paper, and nudges are cheap. A job is sized by what it needs, never by what fits — so **never
+  compress a task to land inside one turn, and never call something finished in order to end one.** When a pass
+  turns out to be bigger than expected, the correct move is to say what is done, name precisely what is owed and
+  where it goes, and carry on next turn. The pacing rule and the no-mess-left-behind rule are the same rule read
+  from two ends: work is not abandoned at a turn boundary, and it is not rushed to avoid one.*
+
 - **Long or expensive runs go to the parallel Code node, never to this thread.**
 - **Anything found broken mid-read that will not settle in the turn is collected and surfaced before moving
   on** — not routed to a ledger and left, which is the same abandonment in a tidier place.
