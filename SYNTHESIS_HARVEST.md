@@ -468,6 +468,81 @@ faces; **it does not cite it for the count**, which is the gap.
 ⑤ JOINS — [[p7-cr-framework]] · [[p13-boundary]] · [[p16-cosmogenesis]].
 ⑥ NOT OP FOR — **The imaginary variables are instruments over an everywhere-real geometry**, and P3 guards this locally at the seam while naming the substrate-level statement as the geometric-core paper's. **The $\mathrm{dS}_5$/$\mathrm{dS}_4$ distinction is handled the same way** — P3 works the equatorial section throughout, where the distinction does not bear on the construction, and says so rather than eliding it.
 
+
+---
+
+# P4 · `corpus/modern_parallax.tex`
+### *The modern parallax: the isotropy of the cosmological redshift as a measurement of uniform expansion*
+
+> **▣ P4'S FLOOR, AND WHY IT IS THE STRICTEST IN THE CORPUS.** *P4 stands alone and reaches for nothing. Its
+> result is the confrontational one and must land on evidence a reader who has conceded nothing earlier can
+> accept. **Its non-dependence on P1 is load-bearing**: neither leans on the other, which is what makes their
+> convergence evidence rather than construction — and a synthesis that presents them jointly destroys that.*
+
+### the-redshift-is-a-path-integral-not-a-source-property
+① CLAIM — $1+z=a_{\rm obs}/a_{\rm em}$, so $\ln(1+z)=\int H\,\dd t$ along the ray: **the cosmological redshift is the accumulated expansion in that direction**. The observed temperature $T_{\rm obs}(\hat n)=T_{\rm em}(\hat n)/(1+z(\hat n))$ therefore separates *exactly* into a **source** term fixed at last scattering and a **cumulative** term set by the directional variation of the integrated expansion. The two are independent — the value of one constrains the other not at all — so observed isotropy requires **both** to be small.
+② REGISTER — **EXACT**, an identity. The conserved-charge reading is given: in conformal form $\partial_\eta$ is a *conformal* Killing vector whose charge is conserved only on the null cone, where it is $a\omega$; its constancy **is** $1+z=a_{\rm obs}/a_{\rm em}$.
+③ HOME — P4 §2.
+④ ANCHOR — ledger `integrable_systems`.
+⑤ JOINS — [[p15-cr-cosmology]] · [[p7-cr-framework]].
+⑥ NOT OP FOR — **The restriction to the null cone is not incidental; it is why the argument works.** For a massive carrier $p\cdot p=-m^2$, the charge is not conserved and no line-of-sight integral exists — *so this is a statement about light and could not have been obtained from any other messenger.*
+
+### the-isotropy-measures-expansion-not-homogeneity
+① CLAIM — Grant the common reading its strongest form: let last scattering be **perfectly** homogeneous. Then $\delta T_{\rm obs}/T_{\rm obs}=-\delta\!\int H\,\dd t$ with nothing left over, and **the entire observed isotropy is the statement that the integrated expansion was the same in every direction.** Homogeneity at the source does not *supply* the isotropy; granted perfectly, it removes one term and leaves the isotropy as a direct measurement of uniform expansion. **The widespread supposition that the monopole's isotropy is delivered by homogeneity at decoupling is a category error** — it credits the source for a fact about the observed radiation residing entirely in the intervening expansion.
+② REGISTER — **PROVED**, by granting the opposing premise in full.
+③ HOME — P4 §2.
+④ ANCHOR — none.
+⑤ JOINS — [[p6-shadow-of-existence]] · [[p15-cr-cosmology]].
+⑥ NOT OP FOR — *This is a claim about the monopole's isotropy, not about the anisotropies.* The next entry is what keeps it distinct from Sachs–Wolfe.
+
+### the-effect-is-distinct-from-sachs-wolfe
+① CLAIM — **The crux, and P4 marks it as such.** When lumpiness clusters upon a *single* background, a photon's gravitational redshift descending into a potential well is undone climbing out, so the contributions **telescope** along the path and leave no $\sqrt N$ accumulation. A genuine *differential expansion* accumulates because **there is nothing to cancel against**. So the observed isotropy selects the telescoping picture over the accumulating one; the effect is not a re-derivation of the Sachs–Wolfe anisotropies.
+② REGISTER — **ARGUED**, and named by the paper as the point on which the result turns.
+③ HOME — P4 §3.
+④ ANCHOR — none.
+⑤ JOINS — [[p15-cr-cosmology]].
+⑥ NOT OP FOR — **⛔ If this distinction fails, the floor is a re-derivation of a known effect and the paper's claim collapses.** Any synthesis use of the floor must carry it.
+
+### the-floor
+① CLAIM — Under the hypothesis that the large-scale expansion rate tracks the matter lumpiness region by region, with no single global scale factor, the accumulated redshift would scatter by $\sim10^{-3}$ across the sky, against an observed $\lesssim3\times10^{-6}$ — **an exclusion by three orders of magnitude**. **Every choice in the estimate biases it downward, so the number is a floor**, not an estimate: correlated cells raise it (for $N$ cells of mean pairwise correlation $\bar\rho$ the variance of the mean is $(\sigma^2/N)(1+(N-1)\bar\rho)$, exceeding the independent value for every $\bar\rho>0$ — *a theorem, not a caution*), and modes longer than the path are not averaged down at all.
+② REGISTER — **≈ COMPUTED**, receipt-anchored, with the downward-bias argument itemised.
+③ HOME — P4 §3.
+④ ANCHOR — `R2_the_papers_correlation_figures...`, `R50_the_long_wavelength_bullet...`; ledger `probability`.
+⑤ JOINS — [[p15-cr-cosmology]] · [[p16-cosmogenesis]].
+⑥ NOT OP FOR — **⛔ P4 draws the boundary on its own strongest bullet rather than banking it.** The long-wavelength argument adds to the scatter only for $k\gtrsim1/L$: a mode much longer than the observable region takes one value over the whole of it, lands on every direction alike, and **is removed with the monopole**. The paper then shows the boundary costs nothing here — on a CDM spectrum the fraction of path-mean variance below $k=1/L$ is $3\times10^{-6}$ — but the qualification is stated before the reassurance, which is the right order and should survive into any use of the number.
+
+### the-disjunction-is-exhausted
+① CLAIM — Two escapes, closed separately. The **statistical** one is closed by the floor. The **structured** one — a finely tuned, spherically symmetric inhomogeneity centred on the observer, which would give isotropic redshift with no global uniform expansion and is untouched by a $\sqrt N$ argument — is closed by the Copernican principle *together with* the independently measured isotropy of the **expansion history** (BAO and Type Ia supernovae reconstructing the expansion along many directions and agreeing across the sky). With both excluded, the observed isotropy forces uniform cosmic expansion.
+② REGISTER — **ARGUED**, with the second escape closed on independent data rather than on principle alone.
+③ HOME — P4 §4.
+④ ANCHOR — none.
+⑤ JOINS — [[p15-cr-cosmology]].
+⑥ NOT OP FOR — The centred escape is **not** closed by the floor and P4 says so; a synthesis that cites only the three-orders-of-magnitude number has closed one escape of two.
+
+### what-a-single-datum-establishes
+① CLAIM — The rejected region is **not a parameter corner but the entire class of histories lacking a single global scale factor on a single global time**. To reject that class is to select a global, time-ordered expansion — the cosmic foliation made dynamical. And **the foliation is logically prior to everything the standard model otherwise assumes**: "space" is one of its slices, "expansion" an ordered family of them, "isotropy" and "homogeneity" properties of a slice — none statable until the foliation is in hand. So one datum establishes, from the bottom up, the cosmic time, the uniformity of its advance, and the maximal symmetry of its slices.
+② REGISTER — **ESTABLISHED**, with the last clause explicitly scoped.
+③ HOME — P4 §4.
+④ ANCHOR — none.
+⑤ JOINS — [[p7-cr-framework]] · [[p10-canonical-time]] · [[p6-shadow-of-existence]].
+⑥ NOT OP FOR — **⛔ The scope split is stated at source and must travel with the claim.** The *temporal* claim — uniform expansion throughout cosmic history — is clean, being the integral from decoupling to the present along observed rays. **The extension to a globally maximally symmetric space rides on the Copernican principle and is an extrapolation beyond the directly constrained region.** And what is excluded is an inhomogeneous expansion **rate**; *the matter lumpiness is untouched*, so uniform expansion and lumpy matter are consistent.
+
+### the-augmentation-theorem
+① CLAIM — Augmenting general relativity by fixing a physical foliation and reading it ontologically — the lapse the objective rate at which the existing world advances, the shift the relativity of synchrony — is **both necessary and sufficient** for a coherent formal description of an existing, evolving world. *Necessary*: a description lacking the lapse part collapses existence into occurrence. *Sufficient*: the two parts close the only coherent escapes — the "events exist" horn as a category error, the "no objective present" horn as a modal fallacy, **the latter then falsified outright by the measured isotropy**. The augmentation alters none of general relativity's equations.
+② REGISTER — **THEOREM**, with its necessary half **measured** rather than posited — which is what turns it from a coherent option into a forced one.
+③ HOME — P4 §4, `thm:augmentation`.
+④ ANCHOR — none.
+⑤ JOINS — [[p7-cr-framework]] (**this is the augmentation P7's axioms formalise**) · [[p10-canonical-time]] · [[p1-bh-causality]] (the structural half, non-dependent).
+⑥ NOT OP FOR — **⛔ The theorem does not fix which geometry realizes the augmented structure**, and P4 states this: it fixes that the structure is necessary and sufficient, and the measurement fixes that its necessary half obtains. *Which four-geometry carries it, and how matter sits on it, are not settled here.* **And both of the theorem's moves are made on P4's own ground** — the category-error diagnosis is a correction of what the formalism asserts, the require-over-permit preference is ordinary inference to the best explanation — with the general question of when such inferences are reliable named as a companion's and **explicitly not drawn on**. That independence is what lets the companion rest on this instance without circularity.
+
+### the-history-the-measurement-closes
+① CLAIM — The structure this datum forces was posited by Einstein in February 1917, **explicitly "against the spirit of relativity"**, and on the empirical ground that stellar proper motions are small compared with $c$; countered a month later by de Sitter, who placed the choice among candidate universes outside physical argument and pressed as his sharpest objection that in Einstein's solution "time has a separate position"; and defended in 1920 by Eddington on geometric grounds, in the declared absence of any experimental knowledge on cosmical scales. **Einstein then went nearly silent on cosmology for the rest of his life** and never addressed how the cosmic time his own assumption distinguished stands to the relativity of simultaneity. *The assumption was correct, and the objection was correct as a description of the structure though not as a reason to reject it.*
+② REGISTER — **HISTORICAL**, from the primary sources.
+③ HOME — P4 §5.
+④ ANCHOR — none.
+⑤ JOINS — [[p6-shadow-of-existence]] (**an episode of theory-choice read against the myth — but P4 reaches it independently**).
+⑥ NOT OP FOR — This is history, not evidence for the physical claim: the floor stands or falls on the data alone. *Its use is to show that the structure now measured was available, argued, and abandoned for reasons that were never empirical.*
+
 ---
 
 ## THE FRONTIER GATHER
