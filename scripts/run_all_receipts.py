@@ -23,7 +23,7 @@ point -- a receipt that only runs from somewhere else is not runnable where it i
 
 Usage:
     python3 scripts/run_all_receipts.py                 # all registered receipts
-    python3 scripts/run_all_receipts.py --timeout 600   # per-file seconds (default 300)
+    python3 scripts/run_all_receipts.py --timeout 900   # per-file seconds (default 600)
     python3 scripts/run_all_receipts.py --jobs 8        # parallelism (default: cpu_count-2)
     python3 scripts/run_all_receipts.py --only P15      # substring filter on the path
     python3 scripts/run_all_receipts.py --quick         # skip the files named SLOW below
@@ -168,7 +168,12 @@ def tree_digest():
 
 def main():
     ap = argparse.ArgumentParser()
-    ap.add_argument('--timeout', type=int, default=300)
+    # ** r3997: default raised 300 -> 600.  A cap that kills a receipt and files it as a
+    #   FAILURE is manufacturing failures, and three receipts were being failed by the cap
+    #   alone.  The slowest receipt that PASSES takes 163s, so there is a 137s gap with
+    #   nothing in it: raising the cap cannot mask a slowdown in anything currently green,
+    #   because nothing green is near it.  ** Measure, then decide -- not defer. **
+    ap.add_argument('--timeout', type=int, default=600)
     ap.add_argument('--jobs', type=int, default=max(1, (os.cpu_count() or 4) - 2))
     ap.add_argument('--only', default='')
     ap.add_argument('--quick', action='store_true')

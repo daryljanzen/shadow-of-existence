@@ -157,7 +157,12 @@ WHAT KEEPS GOING WRONG
   violation. And accepting a paper's own claim about what its evidence shows: P12 said
   a computation "bears on" an attribution, and checked, it discriminates nothing.
 
-  All six of those are mine, from today. They are in the instrument document so they
+  Deferring a decision that is yours to make, and worse, deferring it without saying what
+  it is. The timeout cap and the debt ratchet were both parked as "Daryl's" for turns on
+  end. Both were programming decisions. A thing you can measure and decide is not a thing
+  to hand up; and if you do hand something up, the first sentence says what it is.
+
+  All of those are mine, from today. They are in the instrument document so they
   do not get repeated.
 
 WHAT NOT TO USE

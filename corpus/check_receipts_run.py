@@ -186,6 +186,29 @@ def main():
         print(f'  Of the failures, {len(env)} are ENVIRONMENT -- they import {", ".join(libs)}, which')
         print('     this container does not carry, and they pass where the fork runs them.')
         print('     ** Declared here by name, never inferred from an error string. **')
+    # ** r3997: THE RATCHET.  ** The corpus builds these as a matter of course -- the
+    #   assertion debt has one and it is line-agnostic, firing on any rise -- and this debt
+    #   has been measured at every step from 62 down.  A measured debt with no fence can
+    #   grow back silently, which is the same shape as the cached gate nobody opened.
+    #   TRIGGER, per Daryl: it BINDS at zero.  Until then it reports the direction of travel
+    #   and refuses only a RISE, so it cannot block work while the number is being worked down.
+    _pin = os.path.join(ROOT, 'receipts', 'PIN_DEBT.txt')
+    if os.path.exists(_pin):
+        try:
+            _base = int(re.match(r'\s*(\d+)', open(_pin, encoding='utf-8').read()).group(1))
+        except Exception:
+            _base = None
+        if _base is not None:
+            if len(real) > _base:
+                print(f'    [FAIL] the pin debt ROSE from {_base} to {len(real)}.  The baseline may')
+                print('           only be rewritten DOWNWARD -- repair the receipt, do not edit the number.')
+                return 1
+            if len(real) < _base:
+                print(f'    ⛭ the pin debt FELL from {_base} to {len(real)} -- rewrite the head of')
+                print('      receipts/PIN_DEBT.txt to the new number.  It is the gate speaking, not arithmetic.')
+            if _base == 0 and len(real) == 0:
+                print('    ⛭⛭ the pin debt is ZERO and the ratchet BINDS: any new failure now fails this gate.')
+
     if real:
         print(f'  ⛔ {len(real)} REAL failure(s):')
         for f in real:
