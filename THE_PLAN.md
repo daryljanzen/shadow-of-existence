@@ -5,6 +5,51 @@ current: r3164
 job: The programme's work, route and destination — the lanes, the per-turn operating layer, the four-step state advance
 ---
 
+## ★★★ ARC 18 · THE SYNTHESIS PAPER — the corpus read whole, and written as one results paper (opened r4009, Daryl)
+
+**⌗ WHAT IT IS.** *A results paper that synthesises everything the corpus delivers and connects it to the whole
+of its live edge — concise, comprehensive, cited to the papers and the ledgers, weighing the remaining frontier
+against the corpus that delivers everything else. **It supersedes `WHAT_THE_FRAMEWORK_DELIVERS` in the
+spin-up**, and it is written to be the one document that says, as well as anything can, what is learned by
+digging through all seventeen papers, their appendices, the supplementary resources and the ledgers.*
+
+**⛔ IT IS A FRESH BUILD, NOT AN EDIT OF `WHAT_THE_FRAMEWORK_DELIVERS`.** *That document is organised around
+weighing **one residual** — it exists so `PO-13` cannot fill the field of view. A results paper has a different
+job and a different spine, and editing the first into the second inherits its organising principle. **It becomes
+one input among many.***
+
+**⌗ WHY NOW, AND WHAT IT FEEDS.** *Building the synthesis is what opened nine problems that had been swept under
+rugs. With it in hand the frontier items are worked **from a place of deep and thorough understanding** rather
+than from a keyword's distance — and because every harvested claim carries its propagation set, a resolution
+updates the synthesis **and the documents it synthesises, all at once**.*
+
+**⌗ THE INSTRUMENT.** *`SYNTHESIS_HARVEST.md`, forward and quarantined, six fields per entry: **claim as stated
+at source · register tag taken from the source · home · anchor · joins (the propagation set) · not-operative-for
+(the negatives)**. The last two are what make the arc work; the register field is what stops a distillation
+promoting a `NOT CLAIMED` reading into a hard fact.*
+
+### The phases
+
+| | phase | what it is |
+|---|---|---|
+| **0** | **the instrument** | *`SYNTHESIS_HARVEST.md` built; this arc landed. **DONE r4009*** |
+| **1** | **the papers, read whole** | *eighteen documents in the order the arguments build — **P1→P16, then p0/17 last**, the geometric core being the corpus's wrapper and read as such. **One full turn minimum each, more where the paper needs it.** Per paper: a staleness sweep of the whole document first, then the word-for-word read, harvesting as it goes; mechanical fixes cleared on sight, substantive problems held for a pass **after** the read-through* |
+| **2** | **the ledgers and instruments** | *the physical values ledger · the dissolution census · the geometry and combinatorics ledgers · the 23 field ledgers (where the cross-field joins actually live) · the receipt index and its audit state · `THE_REGISTER` and `THE_FRONTIER` · the open-problems and closure ledgers · `THE_EVOLUTION_MAP` · the entry-point register · the changelog for its logged not-founds. **Same six fields, same standard** — these carry results the papers cite and do not restate* |
+| **3** | **the frontier, complete and unfiltered** | *every open item from every source, deduplicated **by room, not by keyword**. What it is · what it bears on · **what it does not bear on** · what would discharge it. **No triage and no verdicts that excuse an item from the list.** Each worked fresh before listing, because the base rate says most open-claims here are stale links; and the verdict bar is symmetric — striking one costs exactly what keeping one costs* |
+| **4** | **the spine** | *the paper's structure, **tested against what the harvest returned rather than imposed on it**. The working proposal: what the object is (one substrate, one scale) → what is derived from it → what is computed and confronted, registers intact → what is dissolved → what it declines to claim, and why the declines are discipline → the frontier at its true relative size → what would displace it* |
+| **5** | **the write** | *section by section, **only from harvested entries with their citations**. Every "is" audited against the source's own tag. Plain English, publishable prose, **one state** — no "was open, later resolved" anywhere; the fact-of-resolution goes to the consolidation record* |
+| **6** | **verification** | *`check_bibliography.sh` · the not claimed census · declared counts against enumerated items · the receipt gate on every quoted number · the rigged-discriminator check on every "the corpus settles X" · and the **word-for-word read of the finished paper on its own**, which is what the instruments cannot do* |
+| **7** | **propagation** | *`WHAT_THE_FRAMEWORK_DELIVERS` registered or retired, **with every reference to it updated in the same pass**. **A node does not alter the README's framing or spin-up order** — that rule stands and is not restated as a decision owed; the question does not arise until the paper exists* |
+
+### Standing through the whole arc
+
+- **Long or expensive runs go to the parallel Code node, never to this thread.**
+- **Anything found broken mid-read that will not settle in the turn is collected and surfaced before moving
+  on** — not routed to a ledger and left, which is the same abandonment in a tidier place.
+- **The harvest is forward.** *A disagreement between it and a paper is the work product. Never made compliant.*
+- **Nothing is entered from memory.** *An entry is written with the source open; prior reading earns the index,
+  never the extract.*
+
 ## ⛭⛭ PROPAGATED r3164 — THE REACH THEATRES ARE COMPLETE, AND THE FIELD-BAKE PROGRAMME IS LIVE AGAIN
 
 **⌗ WHY THIS ENTRY EXISTS: `check_grains` named this document twenty revisions behind the register.**
