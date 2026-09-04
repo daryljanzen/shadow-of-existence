@@ -215,7 +215,7 @@ import os as _os
 #:   `None`, which means "the runner cannot tell which line it is checking" and is a different
 #:   statement from either half.*
 _PARITY_BY_NODE = {'54': 0, '60': 0,          # EVEN half
-                   '57': 1, '59': 1,          # ODD half
+                   '57': 1, '59': 1, '61': 1, # ODD half -- 61 takes over 59's half, r4011
                    'cc54': 0,                 # compute node, works under 54's band
                    'ci': None}                # the runner is not a line and holds no half
 _NODE = _os.environ.get('NODE')
@@ -251,7 +251,7 @@ OTHER_HALF = ("node 57, r3138 reply: \"The band is accepted.  This tree now runs
               "your gate is answered rather than presumed.\"  ** AND node 59, r3563, CLAIMS.md: **\n"
               "\"59 takes ODD, 60 takes EVEN, from r3563 forward.  59 accepts the odd half because "
               "60's band was declared first and because 60 is the line that has been recording the "
-              "collisions.\"  Both halves are now held by a named line, so the partition is whole.")
+              "collisions.\"  ** AND node 61, r4011: ** \"61 takes over 59's ODD half from r4011 forward, 60 continuing on EVEN and holding r4020 next.  The partition is unchanged; only the name on the odd half is.\"  Both halves are held by a named line, so the partition is whole.")
 #: ** NAMED, not dated. **  *A band cannot apply to commits made before it was taken, and the corpus's
 #: way of saying so is a list of names rather than a cutoff -- a cutoff silently absorbs everything
 #: behind it, and `c54.212` found that hole in a different gate.*
