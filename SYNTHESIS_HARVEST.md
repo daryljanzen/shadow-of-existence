@@ -2196,6 +2196,64 @@ note to self carries the same risk and matches no keyword. **A comment sweep is 
 ⑤ JOINS — `THE_REGISTER` · Phase 3's remaining sources.
 ⑥ NOT OP FOR — **⛔ THIS IS WHAT THE PHASE IS FOR AND IT SHOULD NOT READ AS A SETBACK.** *A gather that only ever shortened a list would be a triage wearing a survey's clothes.* **The three rows are not new work the corpus acquired; they are work it already had and could not see** — and the difference between those two is the whole value of drawing the joins. ⇒ *The negatives were the source that found them, which is the argument for the ⑥ field: **a claim's statement of what it does not reach is where the corpus records its own openings most precisely**, and it is the field a distillation drops first.*
 
+
+---
+
+# ═══ PHASE 4 · THE SPINE ═══
+### *The structure **tested against what the harvest returned**, not imposed on it.*
+
+## ⌗ WHAT THE HARVEST ACTUALLY RETURNED, MEASURED FIRST
+
+**224 entries.** *187 from the seventeen papers, 24 from the ledgers and instruments, 13 from the frontier
+gather.* **The register vocabulary, counted rather than characterised**: `PROPOSITION` ×27, `RECEIPT-ANCHORED`
+×18, `DERIVED` ×10, `THEOREM` ×6, `PROVED` ×6, `COMPUTED` ×7 — *roughly seventy-four entries carrying a hard
+tag* — against `ARGUED` ×9, `ESTABLISHED` ×9, `SYNTHESIS` ×3, `DISSOLUTION` ×3, `SCOPE STATEMENT` ×2,
+`REFERENCE` ×3, `OPEN` ×4. **The weight sits at P13 (22), P1 (20), P2 (15), P7 (13), P3 and P5 (12 each).**
+
+## ⌗ THE PROPOSAL, AND THE TWO PLACES IT STRAINED
+
+> *The working proposal was: **what the object is** → **what is derived from it** → **what is computed and
+> confronted, registers intact** → **what is dissolved** → **what it declines to claim, and why the declines
+> are discipline** → **the frontier at its true relative size** → **what would displace it.** Tested against
+> the entries, five slots hold and two strain — and both strains are findings about the corpus rather than
+> about the proposal.*
+
+### strain-one-the-dissolutions-slot-would-bury-the-corpus's-deepest-distinction
+① CLAIM — **⛔ Filing P1 under "what is dissolved" inverts what P1 mostly is.** Counted: of its twenty entries, **three are dissolutions** — censorship, Hawking, the information paradox — and **seventeen are the distinctions the dissolutions rest on**: that the event horizon is a *metric* singularity and not a curvature one; that **observer-dependence is not the criterion**, the Rindler case refuting "perspectival ⟹ no flux" before it starts; that **finite curvature is sufficient but not necessary** to cross a boundary; that a lapse collapse is a *metric* step and not a causal one. *Those are not applications of the framework — they are the distinction the framework is built on, and every dissolution downstream is a consequence of them.*
+② REGISTER — **⛔ A STRUCTURAL FINDING ABOUT THE SPINE, measured (3 against 17) rather than judged.**
+③ HOME — the P1 and P2 blocks.
+④ ANCHOR — the entry count.
+⑤ JOINS — [[p1-bh-causality]] · [[p2-janzen-circle]] · [[p10-canonical-time]] · [[p7-cr-framework]].
+⑥ NOT OP FOR — ⇒ ***THE FIX IS TO SPLIT SLOT ONE, NOT TO MOVE P1.*** *"What the object is" becomes **the object and the distinctions it forces** — the substrate and its one scale, **and** the metric/curvature separation that says what a boundary of it is.* **A reader who does not have that separation cannot read a single dissolution correctly**, and a spine that introduces it only when a dissolution needs it has made the corpus's foundation look like a lemma.
+
+### strain-two-the-declines-slot-is-narrower-than-the-discipline-it-names
+① CLAIM — **⛔ "Why the declines are discipline" names a subset of what the harvest carries.** The disciplines the corpus actually runs are broader than its declines and are *load-bearing for reading the positives*: **matched-procedure differencing** — *a residual is credited against CR only once the control, run through the same machinery, has been shown not to produce it*; **the graded dissolution cluster** — *what an objector must dispute differs by tier, so flattening it hands a reader the whole set to reject at once*; **the register's strike rule** — *a row goes when its object is answered **and receipted***; **the one-state rule**; and **the analytical/topological index division**, where the corpus names only the half it computes.
+② REGISTER — **⛔ A SECOND STRUCTURAL FINDING**, drawn from the instrument blocks and the papers' own method statements.
+③ HOME — the L-blocks; [[p15-cr-cosmology]] · [[p7-cr-framework]] · [[p14-matter-sector]].
+④ ANCHOR — each discipline's own source.
+⑤ JOINS — every entry whose ⑥ field states a bound.
+⑥ NOT OP FOR — ⇒ ***THE FIX IS THAT THE DISCIPLINES ARE NOT A SECTION.*** *They cannot be gathered into one place without becoming a preface about method, which is the shape the corpus's own epistemology paper warns against — **the discipline is P6 rather than a preface**.* **They belong at the results they govern**, stated where the result is stated. *What the spine owes is that each is carried at its result and none is dropped in distillation — and the ⑥ field is the record of where each one lives.*
+
+## ⛭ THE SPINE, AS THE TEST LEAVES IT
+
+| § | what it carries | drawn from |
+|---|---|---|
+| **1** | **The object, and the distinctions it forces** — one substrate, one scale, its intrinsic Lorentzian signature; *and* the metric-versus-curvature separation that says what a boundary of it is | p0/17 · P1 · P2 · P7's axioms |
+| **2** | **What is derived from it** — the slicing operator and its vacuum kernel, matter as the bend, the range and its wall, the constraint algebra as the coset grading, the discrete residue | P3 · P5 · P8 · P9 · P12 |
+| **3** | **What is computed and confronted, registers intact** — the geometric rate and the distance ladder, the abundances, the low-multipole floor, the acoustic comparison **including its open deficit** | P4 · P15 · P16 |
+| **4** | **What is dissolved** — the graded cluster, tier by tier, with what an objector must dispute at each | P1's three · P7's synthesis · P10 |
+| **5** | **What it declines to claim** — colour as a geometric isometry, the gauge content, the mass spectrum, a geometric CPT; each with the register that scopes it | P13 · P14 · P6 |
+| **6** | **The frontier at its true relative size** — **thirteen rows against roughly seventy-four hard-tagged results**, each with what would discharge it | Phase 3 |
+| **7** | **What would displace it** — the falsifiers the corpus states against itself | P7's F-list · P4's floor · P14's mismatch |
+
+### the-frontier's-true-relative-size-is-a-number-and-it-should-be-printed
+① CLAIM — **The spine's sixth section asks for the frontier "at its true relative size", and the harvest makes that a measurement rather than a tone.** *Thirteen open rows against roughly seventy-four entries carrying a hard register tag* — and the thirteen are **not** a residue of failed attempts: three were opened this phase because the corpus stated them and no instrument carried them, and seven of the register's ten held unaltered when worked fresh against the papers.
+② REGISTER — **COUNT**, from the Phase 3 gather and the register-tag census.
+③ HOME — §6 of the spine.
+④ ANCHOR — `THE_FRONTIER`, 13 open · 14 steps.
+⑤ JOINS — Phase 3 · `THE_REGISTER`.
+⑥ NOT OP FOR — **⛔ AND THE RATIO IS NOT THE ARGUMENT.** *A frontier is not made small by counting it against a large numerator*, and the section's job is to state each item with what would discharge it — **which is what makes the list usable rather than reassuring.** *The number belongs there because the alternative is an adjective, and an adjective about one's own frontier is the thing a reader is right to distrust.*
+
 ---
 
 ## THE FRONTIER GATHER
