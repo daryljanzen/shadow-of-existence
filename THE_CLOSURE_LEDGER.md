@@ -5,7 +5,7 @@ current: r2160
 job: Where the closure self-check is DEFINED, with its four verdicts: OPENED · WORKED-SHUT · SURFACED · CODA-FIX.
 sources: [cowork]
 ---
-> ⌗ **COMPANION — [`WHAT_THE_FRAMEWORK_DELIVERS.md`](WHAT_THE_FRAMEWORK_DELIVERS.md)**, *the inventory of
+> ⌗ **COMPANION — [`corpus/CR_synthesis.tex`](corpus/CR_synthesis.tex)**, *the synthesis paper and the inventory of
 > delivered results, rebuilt at r3740 by READING the corpus rather than counting its typography: **two
 > rails** (196 formal environments, and the 633-receipt evidence rail whose rank order inverts the first),
 > the fourteen theorems by name, the empirical correspondences in the corpus's own registers, what the

@@ -1,10 +1,24 @@
 ---
 name: what-the-framework-delivers
-kind: REFERENCE
-current: r4007
+kind: RETIRED
+current: r4219 (retired)
 job: The inventory of what Cosmological Relativity delivers, assembled by reading the corpus rather than by counting its typography, so that the one open residual can be weighed against it at their true relative sizes — and so that what the residual actually MEANS is on the record beside how big it is. Read WHEN JUDGING THE PROGRAMME AS A WHOLE — for publication decisions, for a reader's first orientation, or when the open problem has begun to feel larger than it is.
 sources: [chat]
 ---
+
+> **⛔⛭ RETIRED r4219 — SUPERSEDED BY `corpus/CR_synthesis.tex`.** *Do not cite this document and do not
+> update it.* ***The retirement was gated on coverage rather than decided***: every block of this file was
+> checked against the synthesis paper block by block, and the last six — the cross-field joins — were written
+> into the paper at `r4217` before the retirement was made. **Twenty of twenty homed.**
+>
+> ⌗ *What the paper carries that this file did not*: the empirical forcing ahead of the object, the pairs the
+> forcings prise apart, and the graded dissolution cluster in the tiers its own authoritative home uses.
+> ⌗ *What this file carried that the paper now does*: the two rails and their counts, the correspondences,
+> the structural results, the declines, the register at its size, the framework-or-instrument argument with
+> its parameter correction, the unpaid column, and the joins.
+>
+> ⛭ *Its own strongest section — that a framework is displaced rather than refuted by a residual, and that
+> such a framework is expensive rather than impossible to disqualify — is the paper's closing section.*
 
 > **▣ REFERENCE — the ledger of what is delivered.** *Built at r3560 from greps in a turn or two; **rebuilt
 > at r3740 by reading the papers, the ledgers and the proofs.** Every count below is re-measured, every

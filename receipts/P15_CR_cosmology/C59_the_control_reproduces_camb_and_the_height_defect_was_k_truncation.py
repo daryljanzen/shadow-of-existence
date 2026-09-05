@@ -54,7 +54,7 @@ and what was wrong was which path was called and where the k-integral stopped.  
 have discarded a working instrument on the strength of an artefact. **
 
 ** WHAT THIS MOVES, AND IT IS NOT ONLY THIS ITEM. **  `2.721` / `4.496` are quoted as measured control
-values in `THE_REGISTER`, `THE_FRONTIER`, `PO13_WORKING_STATE`, `WHAT_THE_FRAMEWORK_DELIVERS` and
+values in `THE_REGISTER`, `THE_FRONTIER`, `PO13_WORKING_STATE`, `WHAT_THE_FRAMEWORK_DELIVERS` (retired r4219; see `corpus/CR_synthesis.tex`) and
 `scripts/regen_frontier.py`.  All five are $k$-truncated.  ⌗ *And the `LN` scan those documents rest
 on --- "resolving the hierarchy makes $P_3$ WEAKER, the true deficit is a factor $3.5$" --- does not
 reproduce: `LN` $=12$ and `LN` $=25$ give IDENTICAL ratios at every sampling tried here.  That scan is

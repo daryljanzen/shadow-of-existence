@@ -248,7 +248,11 @@ if __name__=='__main__':
                'P16':'cosmogenesis_paper','p0':'geometric_core_paper',
                # r2376+c54.41: P17 was absent from this map, so the geometric-core paper's
                # appendix could borrow nothing and any cross-paper \rcpt{} in it rendered dead.
-               'P17':'geometric_core_paper'}.get(scope)
+               'P17':'geometric_core_paper',
+               # r4219: the synthesis paper, registered as P18.  It cites the corpus's papers
+               # rather than receipts directly, so it borrows nothing here -- the entry exists so
+               # that a cross-paper \rcpt{} in it would resolve rather than render dead.
+               'P18':'CR_synthesis','SYN':'CR_synthesis'}.get(scope)
         cited=set()
         if src and os.path.exists(src+'.tex'):
             body='\n'.join(l for l in open(src+'.tex',encoding='utf-8',errors='replace')

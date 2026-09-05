@@ -179,5 +179,5 @@ registered. That is currently **1**, and it is `PO-24`.*
 # ⌗ WHERE THIS SITS IN THE SEQUENCE
 
 **① this pass** — *every ledger row worked, a true PO list delivered* ⟵ **here**
-**②** *the synthesis pass — `WHAT_THE_FRAMEWORK_DELIVERS.md`, which will want its own instrument*
+**②** *the synthesis pass — `corpus/CR_synthesis.tex`, which supersedes the retired `WHAT_THE_FRAMEWORK_DELIVERS.md`*
 **③** *the PO items themselves, worked against a corpus this pass has made coherent*

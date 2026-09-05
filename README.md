@@ -216,24 +216,28 @@ reading the disposition early would let it bend how the evidence is received —
    never before it).
    *Taking the why-layer in early bends how the evidence is received, which is why the engine, the
    portrait and the wisdom ledger sit here as capstones read last, and not at setup.*
-8c. **What the corpus delivers, counted** — `WHAT_THE_FRAMEWORK_DELIVERS.md`. *The inventory of the
-   programme's results — **read from the papers, not recalled and not grepped**: **two rails**, the 196
-   formal environments and the 633-receipt evidence rail **whose rank order inverts the first**, so the
-   computed sectors (`P15`, `P16`, `P10`, `P14`) are not reported as empty by a count of `\begin{theorem}`;
-   the fourteen theorems by name; the empirical correspondences **in the corpus's own registers**
-   (`⊢ EXACT` · `≈ COMPUTED` · `≈ measured` · `? NAMED-UNRUN`) with the conventions that must travel with
-   them; the dissolutions; the structural recoveries; the cross-field joins; **what the corpus DECLINES to
-   claim**; and the one open residual **at its true relative size and with a dependency analysis of what it
-   does and does not bear on**.*
+8c. **What the corpus delivers, and where its edge is** — `corpus/CR_synthesis.tex` (**P18**). *The
+   synthesis paper: what the programme establishes, **at the weight each result is established at**,
+   together with what it declines to claim and where its open edge lies. Nothing in it is new — every claim
+   is drawn from one of the seventeen papers or from the ledgers they cite, **stated at the register its
+   source gives it**, a proposition as a proposition, a reading as a reading, a conjecture as a conjecture.
+   What is new is the assembly: the evidence that forces the object before the object; the pairs the
+   forcings **prise apart**; what is derived, computed and confronted with its registers intact; the
+   dissolutions **graded by what an objector must dispute**; the convergence of seven separate readings on
+   one radius; what the construction **declines**, with the argument that each decline cannot be paid on
+   this structure; the joins the papers state separately; the frontier **complete and unfiltered** with what
+   would discharge each item; and what would displace the framework.*
    *It sits **here**, after the bodies and the coda and before the map, for the same reason the coda does:
    read earlier it would bend how the evidence lands, and a node that knows the score in advance reads the
    papers looking for confirmation. Read here it is a **consolidation of what you have just read**.*
    ⌗ ***And it is the document to return to when an open problem begins to loom larger than the programme.***
    *That failure has happened — a node treated `PO-13`'s residual as a defect in the framework while every
-   item that moved a number turned out to be an instrument fact. **§6 holds that correction, and §6b holds
-   the scoping it needs**: a framework is not disqualified by an unclosed residual but displaced by a
-   better or equivalent account of what it explains — so the question is programme-against-programme, and
-   §6b prices it, **with what is genuinely unpaid carried on the same page at equal weight.***
+   item that moved a number turned out to be an instrument fact. **Its closing section holds the scoping
+   that prevents it**: a framework is not disqualified by an unclosed residual but displaced by a better or
+   equivalent account of what it explains — so the question is programme-against-programme, and the section
+   prices it, **with what is genuinely unpaid carried at equal weight on the same page.***
+   ⌗ *`WHAT_THE_FRAMEWORK_DELIVERS.md` is **retired** to `retired/` and superseded here; the retirement was
+   gated on a block-by-block coverage check of that document against this paper.*
 9. **The ontology map** — `ONTOLOGY_FOUNDATION_INDEX.md`, whole. *You read its §0 at setup; this is the rest —
    the cards that set the ontology, and the guards that hold it.*
 10. **The plan** — `THE_PLAN.md`, and **its per-turn list is the operating layer** — **whose first item fires on
