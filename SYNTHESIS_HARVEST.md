@@ -2361,6 +2361,22 @@ horizon on a finite layer, which is a result and belongs with the dissolutions.
 references to it get updated in the same pass, and **a struck row whose paper still lists it is worse than an
 open row**, because the list reads as current.
 
+### all-three-rows-the-phase-3-gather-opened-have-now-closed
+① CLAIM — **⛔ A FINDING ABOUT MY OWN HARVEST METHOD, and it is worth recording because the method is still in
+the corpus.** *Phase 3 opened three rows from the sixth field of the harvest entries --- "what it does not
+bear on". **All three are now closed**: PO-32 struck `r4227` as over-opened, PO-34 struck `r4239` on material
+the corpus already held unjoined, PO-33 struck `r4241` as discharged in its own paper's same paragraph.*
+② REGISTER — **MEASURED**, `r4241`.
+⑥ NOT OP FOR — ⇒ ***The common fault is reading a clause as an opening when its paragraph closes it.***
+*`P07` said the horizon-thermodynamic apparatus does not settle what survives --- and named the central
+theorem in the next breath. `P11` said its exact results do not reach the propagating residual --- and
+grounded it externally in the following sentences. **In both, the sentence that reads as an admission is the
+setup for the answer.*** ⌗ *`PO-34` is the different case and the honest one: a genuine gap, answerable only
+by joining `P08`'s requirement to `P01`'s result, which no paper had done.*
+⌗ ***What this does NOT license is treating "the corpus probably answers it" as a closing move.*** *Each of
+the three was closed by reading to the end of the passage and, where needed, computing --- and one of the
+three was real. **The lesson is about where to read, not about what to expect.***
+
 ### the-scoping-as-it-now-stands
 ① CLAIM — **Of the sixteen: four are owed builds or runs** --- the adiabatic residual, the two-arm transfer,
 the sixteenth Weyl fermion's argument, and the second-ruling reading on the collapse face. **Two are probably
