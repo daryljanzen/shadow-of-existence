@@ -29,6 +29,7 @@ CANDIDATE and is never returned as a verdict. **
 Written r3108 (`L-250`).  Stated for reversal.
 """
 import os
+import os
 import re
 import subprocess
 
@@ -93,6 +94,17 @@ def pinned(quote, text, path, at=None, root=None, hint=True):
     if sha is None:
         # ** NEVER THERE is a different finding from GONE, and conflating them would send a reader
         # ** hunting a removal that never happened. **
+        # ⛔⛭ ** AND THERE IS A THIRD CASE THIS CONFLATED WITH THE FIRST -- r4127: NOT REACHABLE. **
+        # *`git log -S` searches the history the clone HAS.  On a shallow clone it returns nothing
+        # for a removal that certainly happened, and this message then reported "may never have
+        # been in this file" -- a confident claim about the corpus drawn from a property of the
+        # checkout.*  ** A tool that cannot tell "absent" from "beyond my horizon" states the
+        # stronger of the two, and a reader acts on it. **
+        if os.path.exists(os.path.join(root or ROOT, '.git', 'shallow')):
+            return False, (f'⛔ NOT FOUND in {path}, and `git log -S` finds no commit that removed '
+                           f'it -- **but THIS CLONE IS SHALLOW, so a removal outside the fetched '
+                           f'window is invisible here and this is not evidence the text was never '
+                           f'present.*  Re-run against a full clone before concluding anything.*')
         return False, (f'⛔ NOT FOUND in {path}, and `git log -S` finds NO commit that ever '
                        f'removed it -- so this text may never have been in this file.  '
                        f'*Check the quotation itself before checking the paper.*')

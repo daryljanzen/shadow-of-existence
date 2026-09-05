@@ -2,7 +2,7 @@
 name: PO13_RUN_SPEC_FOR_CC54
 description: PO-13's run specification for a node with compute — the one computation P15's acoustic section now names as open, with the flags, the convergence ladder, and what each run decides. Held outside the corpus beside PO13_WORKING_STATE.
 status: WORKING DOCUMENT — deliberately not a paper
-current: r4113
+current: r4129
 ---
 
 # PO-13 RUN SPEC — the CR arm at converged $k$ on the leaf congruence
@@ -44,9 +44,11 @@ that size is a systematic, not a rounding.*
 ### RUN 1 — the convergence ladder, both arms
 
 ```
-for K in 1.5 2.0 3.0; do
+for K in 2.0 2.5 3.0; do
   for A in lcdm cr; do
-    KFAC=$K ARM=$A python3 computations/beyond_the_wall/ACOUSTIC_two_arm.py
+    for P in "" "HIER=1"; do
+      env $P KFAC=$K ARM=$A python3 computations/beyond_the_wall/ACOUSTIC_two_arm.py
+    done
   done
 done
 ```
@@ -54,10 +56,27 @@ done
 *`NK` is **derived** from `KFAC` and must not be pinned — the two guards pull against each other, and
 reaching further in $k$ at fixed mode count coarsens $\dd k$ and breaks the sampling guard.*
 
-⇒ **Decides:** whether the CR arm is converged, and at what cutoff. **The control is the calibrator**:
-it must return $P_1/P_2 \approx 2.197$ and peaks near $220/540/812$ at the converged rung. *If the CR
-arm's reported quantities still move between $2.0$ and $3.0$ by more than the control's own movement,
-**it is not converged and nothing below is measured** — report that and stop.*
+⇒ **Decides:** whether the CR arm is converged, and at what cutoff.
+
+⛔ ***THE CALIBRATOR IS PATH-SPECIFIC AND THE FIRST VERSION OF THIS SPEC GOT IT WRONG.*** *It named
+$P_1/P_2\approx2.197$ against a bare command, and $2.197$ is the **polarisation/hierarchy** path;
+the bare command runs the fluid path and returns $2.393$. **A calibrator quoted against a command
+that does not produce it is worse than none — it invites a reader to conclude the run is broken.**
+Corrected here from 60's measurement, and the ladder now climbs **both paths** for the same reason.*
+
+| path | expected at the converged rung |
+|---|---|
+| fluid (bare command) | $P_1/P_2 = 2.393$, $P_1/P_3 = 2.766$, peaks $[220, 532, 812, 1124]$ |
+| polarisation (`HIER=1`) | $P_1/P_2 \approx 2.197$ against a standard code's $2.200$ |
+
+⛭ ***And the bar the CR arm must beat is measured, not assumed***: on the control, $\mathrm{KFAC}$
+$2.0\to3.0$ moves $P_1/P_2$ by $2.393\to2.392$ and $P_1/P_3$ by $2.766\to2.765$, peaks unchanged —
+**the control's own movement is $0.04\%$.** *If the CR arm's reported quantities still move across
+the ladder by more than that, **it is not converged and nothing below is measured** — report that
+and stop.*
+
+⌗ *$\mathrm{KFAC}=1.5$ is **refused outright by the instrument's own truncation guard** on both
+arms, so the ladder starts at $2.0$. A rung the instrument declines is not a rung.*
 
 ### RUN 2 — the datum freedoms as a range, at the converged `KFAC`
 

@@ -74,6 +74,7 @@ Written r3112 (`L-251`); the band taken r3128 (`L-256`).  Stated for reversal.
 """
 import os
 import re
+import os
 import subprocess
 import sys
 
@@ -195,7 +196,32 @@ BASELINE = {'r3622',
             #       59's r3563 reply took the odd half, so it is the LAST of the pre-band window
             #       rather than the first failure of the band. ***  A collision at an even number
             #       after r3563 would be a real failure and this list would not excuse it.
-            'r3562'}
+            'r3562',
+            #: ⛔⛭ ** r4009 AND r4083, ADDED r4121 BY 61, AND BOTH ARE RECORDED RATHER THAN
+            #: REPAIRED. **  *60 wrote that "the only repair is renumbering a commit on your line's
+            #: history" and declined to quarantine either on 61's behalf, which was right: it is not
+            #: 60's line and not 60's call.  ** The call, made here: renumbering is not available for
+            #: either of these, and this list is the mechanism this gate already provides for exactly
+            #: that case. **  `band_violations` states the principle a few lines down -- it measures
+            #: UNMERGED commits because "they are the only ones whose numbers can still be changed."
+            #: Both r4009 commits and all three r4083 commits are ancestors of main's head, so
+            #: changing a number means rewriting shared history the other line has already built on;
+            #: 60's branch is 29 behind main, and a force-push would invalidate its merge base to
+            #: repair a duplicated integer.  ** That trade is the wrong way round, and every earlier
+            #: trunk-resident collision in this list was settled the same way. **
+            #: ⌗ *r4009 is TWO COMMITS OF THE ODD LINE ACROSS AN INSTANCE CHANGE*: `d13f7295` (the
+            #: synthesis arc opened) at 03:46 and `084722dc` (graph theory was never asked about) at
+            #: 16:10, neither an ancestor of the other.  ** So the band did not fail here -- both are
+            #: correctly odd.  What failed is that the odd half changed hands mid-day and the
+            #: incoming instance read the front of its own branch rather than of the trunk. **  *A
+            #: band partitions between LINES and says nothing about a handover WITHIN one, which is a
+            #: gap in the partition rather than a lapse by either commit.*
+            #: ⛔ *r4083 is a DIFFERENT FAULT AND IS NOT 61's*: `bd1469b3` is 61's, odd and correctly
+            #: banded; `75606f45` and `c73435ca` are 60's merge commits, and an EVEN line took an ODD
+            #: id twice.  ** It is baselined here because the collision is in this tree and cannot be
+            #: measured away, and it is named as 60's so the entry does not read as an admission.
+            #: Reported to 60 rather than repaired, since renumbering there is 60's call on 60's line. **
+            'r4009', 'r4083'}
 
 #: *** THE BAND. ***  A partition, and each tree holds ONE half.  ** r3203: the parity is READ FROM
 #: THE TREE rather than hardcoded, because this file now runs on both trees and a hardcoded half
@@ -298,6 +324,20 @@ def _anc(a, b, root=None):
                           cwd=root or ROOT, capture_output=True).returncode == 0
 
 
+def horizon(root=None):
+    """what this clone can see, and whether that is all of it
+
+    ** A DETECTION GATE THAT CANNOT SAY HOW FAR IT LOOKED HAS NOT MADE A MEASUREMENT. **  *Returns
+    (is_shallow, reachable_from_head, reachable_from_all_refs) in revision-numbered commits.*
+    """
+    shallow = os.path.exists(os.path.join(root or ROOT, '.git', 'shallow'))
+    def _n(args):
+        r = subprocess.run(['git', 'log'] + args + ['--format=%s'], cwd=root or ROOT,
+                           capture_output=True, text=True)
+        return sum(1 for ln in r.stdout.split('\n') if BARE.match(ln.strip()))
+    return shallow, _n([]), _n(['--all'])
+
+
 def collisions(root=None):
     """revision ids claimed on DIVERGENT branches -- which is what a collision IS
 
@@ -311,6 +351,18 @@ def collisions(root=None):
       ⌗ *Measured: 6 spans, 12 collisions.  The subject rule returned 17 and could not tell them
       apart; ancestry is the distinction and it needs no reading.*
     """
+    # ⛔⛭ ** THIS WALK IS FROM HEAD, SO ITS COVERAGE IS THE CLONE'S DEPTH -- r4127. **
+    # *Measured on a shallow working clone: `git log` from HEAD reached 82 revision-numbered
+    # commits and `--all` reached 1059; ids carrying more than one commit, 3 against 47.*
+    # ** So this gate was reporting green over 8 per cent of the corpus's revision history and
+    # saying nothing about the depth it had. **  A green from a shallow clone is not a weaker
+    # claim than a green from a full one; it is a claim about a different and much smaller thing.
+    #   ⌗ *This also corrects `r4121`, which explained three vanished collisions as pairs that had
+    #     "become ancestor-related and now read as spans."  They had not: THEY ARE NOT REACHABLE
+    #     FROM HEAD IN THIS CLONE AT ALL.  The mechanism was the horizon, not merging.*
+    #   ⇒ *** `--all` is not the repair either: it walks refs this line does not own, and a
+    #       collision on someone's unmerged branch is not this trunk's to report.  What is owed is
+    #       that the gate STATE ITS HORIZON, which `report_horizon` below does. ***
     out = subprocess.run(['git', 'log', '--format=%h%x09%s'], cwd=root or ROOT,
                          capture_output=True, text=True).stdout
     by_rev = {}
@@ -680,6 +732,15 @@ def main():
 
     if not new:
         print('    no NEW revision-number collision.')
+        # ** AND THE GREEN PATH SAYS HOW FAR IT LOOKED, which is the half that matters -- a green
+        # from a shallow clone is the one most likely to be read as coverage it does not have. **
+        _sh, _head, _all = horizon()
+        if _sh or _all > _head * 2:
+            print()
+            print(f'    ⛔ HORIZON: {_head} revision-numbered commits reachable from HEAD against '
+                  f'{_all} across all refs.')
+            print('       ' + ('THE CLONE IS SHALLOW.  ' if _sh else '')
+                  + 'This green covers the reachable window, not the whole history.')
         print()
         return band_rc
     for rev in sorted(new):
@@ -687,6 +748,14 @@ def main():
         for sha, w in new[rev]:
             print(f'           {sha}  {w[:74]}')
     print()
+    _sh, _head, _all = horizon()
+    if _sh or _all > _head * 2:
+        print()
+        print(f'    ⛔ HORIZON: this clone reaches {_head} revision-numbered commits from HEAD; all')
+        print(f'       refs reach {_all}.' + ('  THE CLONE IS SHALLOW.' if _sh else ''))
+        print('       ** So this verdict covers the reachable window and not the corpus\'s whole')
+        print('       revision history. A green here is a claim about that window. **')
+        print()
     print('    ⛭ ** Two lines numbering from one counter choose the same number, which is the')
     print('       `L-174` collision at c54.166 one level up -- and that was solved with BANDS. **')
     print('    ⌷ *r3640: the other line HAS adopted the odd half -- and adoption was not enough,')

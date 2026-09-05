@@ -73,13 +73,13 @@ def main():
     print("  B36 -- how much of PO-11's matching is already supplied?")
     print()
     circle = re.sub(r'\s+', ' ', body(os.path.join(ROOT, 'corpus', 'janzen_circle_v3.tex')))
-    # ⛭⛭ r4070: THE SLICING PAPER, READ SEPARATELY -- because the check below says "the SLICING
-    #   paper carries the continuation" and tested `circle`, which is P2, the CIRCLE paper.
-    #   ** The label and the predicate named different papers, and the check passed anyway while
-    #   P2 happened to quote P3's phrase. **  61's reach pass moved "a branch point and not a
-    #   barrier" out of P2 and into the papers that own it, which is what exposed the mismatch.
-    #   ⇒ *A check whose label and predicate disagree is not testing what it says; it passed for
-    #     six hundred revisions on a coincidence of quotation.*
+    # ⛔⛭ ** THE LABEL AND THE PREDICATE NAMED DIFFERENT PAPERS, AND IT PASSED ANYWAY -- r4125. **
+    # *Check ⓵ says "the SLICING paper carries the continuation" and tested `circle`, which is P2.
+    # It held on the coincidence that P2 QUOTED P3's phrase; when that phrase moved, the check went
+    # red and the label was the thing that had been right all along.*  ** A check whose label and
+    # predicate disagree is not verifying the sentence it prints, and it says nothing about the
+    # paper it names -- so its passing was never evidence for the claim above it. **
+    #   ⌗ *Found by 60 at r4074, surfaced by 61's reach passes moving the phrase.*
     slicing = re.sub(r'\s+', ' ', body(os.path.join(ROOT, 'corpus', 'SdS-slicing-curve_v2.tex')))
     p14 = re.sub(r'\s+', ' ', body(os.path.join(ROOT, 'corpus', 'matter_sector_paper.tex')))
 

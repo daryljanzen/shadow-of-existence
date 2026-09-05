@@ -141,6 +141,24 @@ cosmo = open(os.path.join(ROOT, 'corpus', 'CR_cosmology.tex'), encoding='utf-8',
 check('⓵ᵉ and r3111\'s own repair has landed -- "That refit has since been performed" is gone',
       'That refit has since been performed' not in cosmo)
 
+#: ⛔⛭ ** THE SEED WENT STALE AND THE CHECK FAILED SILENTLY FOR IT -- repaired r4121. **
+#: *This seeded on `r3103`, `r3104`, `r3112`, and `C.collisions()` no longer returns any of them:
+#: a collision is two commits NEITHER of which is an ancestor of the other, and after enough
+#: merging those pairs became ancestor-related and read as SPANS.*  ** So the defect the check
+#: showed the gate was no longer in the tree to be shown, and `named` had been False on every run
+#: since -- a demonstration that had lapsed rather than a gate that had broken. **
+#:   ⌗ *It was also MASKED while it lapsed*: with live collisions unbaselined the gate exited 1
+#:     anyway, so `rc == 1` held and only `named` failed, which reads at a glance like the gate
+#:     firing correctly.  ** 60 diagnosed this receipt as blocked by `r4009` and expected it to go
+#:     green when that resolved; it did not, and this is why. **
+#:   ⇒ *** The seed is now DERIVED from what the tree actually carries, so it cannot go stale
+#:       again: whatever `collisions()` returns is what gets removed and must be named back. ***
+#:     *If the tree ever carries no collision at all the seed is empty, `all(...)` is vacuously
+#:     true, and the check would assert nothing -- so that case is refused explicitly rather than
+#:     passing quietly, which is the failure mode this repair exists to end.*
+_SEED = sorted(C.collisions())
+
+
 def _fires_on_new():
     """** SEEDED: take the three post-r3112 collisions OUT of the baseline; the gate must name them
     and exit 1. **  *A detection gate is only shown to work by being shown a defect it has not been
@@ -150,7 +168,7 @@ def _fires_on_new():
     import io
     keep = set(C.BASELINE)
     try:
-        C.BASELINE.difference_update({'r3103', 'r3104', 'r3112'})
+        C.BASELINE.difference_update(_SEED)
         buf = io.StringIO()
         with contextlib.redirect_stdout(buf):
             rc = C.main()
@@ -158,9 +176,9 @@ def _fires_on_new():
     finally:
         C.BASELINE.clear()
         C.BASELINE.update(keep)
-    named = all(f'[FAIL] {r}' in out for r in ('r3103', 'r3104', 'r3112'))
+    named = all(f'[FAIL] {r}' in out for r in _SEED)
     # ** and the restore is VERIFIED, not trusted to the `finally` -- c54.213 **
-    return rc == 1 and named and C.BASELINE == keep
+    return bool(_SEED) and rc == 1 and named and C.BASELINE == keep
 
 
 print()
@@ -204,7 +222,23 @@ check(f'⓶ᵇ ⛔ and four of the twelve fell in the last thirteen revisions --
 check(f'⛔ ⓶ᶜ *** AND THE PRESENT, IN THE ONLY DIRECTION THAT IS NEWS: the count has NOT fallen. '
       f'{len(bad)} now against {len(at_bad)} then -- {len(bad) - len(at_bad)} more arrived in the '
       f'revisions since, which is the acceleration this finding reported CONTINUING, and it is why '
-      f'r3128 stops routing the band and takes it. ***', len(bad) >= len(at_bad))
+      f'r3128 stops routing the band and takes it. ***',
+      len(bad) >= len(at_bad) or C.horizon()[0])
+# ⛔⛭ ** THE `or horizon()[0]` IS NOT A RELAXATION, AND IT IS WORTH SAYING WHY -- r4127. **
+# *This clone is SHALLOW: 86 revision-numbered commits reachable from HEAD against 1139 across all
+# refs.  `bad` is computed by walking from HEAD, so on a shallow clone it counts collisions in a
+# window and not in the history -- and the r3112 figure it is compared against was measured in a
+# worktree checked out AT that SHA, where the window contained them.*
+#   ** So the comparison is between two different-sized windows and the fall from 12 to 2 measures
+#   the horizon, not the band. **  *A count that falls when the clone gets shallower is not
+# evidence that collisions stopped; asserting on its direction here would have read a truncated
+# fetch as a corpus improvement.*
+#   ⌗ *This also corrects `r4121`, which explained the vanished seeds as pairs that had become
+#     ancestor-related and now read as SPANS.  They had not: they are not reachable from HEAD in
+#     this clone at all.  The mechanism was the horizon in both places.*
+#   ⇒ *** On a full clone the assertion stands unchanged and means what it always meant.  On a
+#       shallow one it is not answerable, and the gate now SAYS SO on both its paths rather than
+#       letting a windowed green read as coverage. ***
 # ** the discriminator, and the CONTROL that shows it is doing work **
 # a subject-text rule (this gate's first version) cannot tell a span from a collision
 out = subprocess.run(['git', 'log', '--format=%h%x09%s'], cwd=ROOT,
@@ -221,7 +255,11 @@ subject_rule = {r for r, e in by.items() if len({w for _, w in e}) > 1}
 print(f'    a SUBJECT-TEXT rule would flag {len(subject_rule)}; ancestry flags {len(bad)}')
 check('⓶ᶜ ⛭ the subject rule over-flags -- this corpus works one revision across many commits '
       '(r2674 spans 28), and a chain is a SPAN, not a collision',
-      len(subject_rule) > len(bad) and 'r2674' in subject_rule)
+      len(subject_rule) > len(bad)
+      and ('r2674' in subject_rule or C.horizon()[0]))
+# ⌗ *`r2674` names the 28-commit span this control is built on, and it is not reachable from HEAD
+#   on a shallow clone -- the same horizon again.  The FORM of the control is what carries: the
+#   subject rule must over-flag relative to ancestry, and that is asserted at any depth.*
 check('⓶ᵈ and ancestry is the distinction: a span is pairwise ancestor-related, a collision is two '
       'commits neither of which reaches the other', set(bad) < subject_rule)
 
@@ -236,7 +274,11 @@ for sha, w in bad.get('r3108', []):
 _, why = pinned('That refit has since been performed', cosmo, 'corpus/CR_cosmology.tex', hint=False)
 print(f'    quotepin on the observer line\'s own find returns:')
 print(f'      {why[:150]}')
-check('⓷ quotepin names the revision for r3111\'s own find', 'r3108' in why)
+# ⌗ *On a shallow clone `git log -S` cannot reach the removing commit, so quotepin reports the
+#   horizon instead of a revision -- and that report is now the correct answer rather than a wrong
+#   one (r4127).  The assertion is that quotepin says WHICH of the two it is.*
+check('⓷ quotepin names the revision for r3111\'s own find, or says its horizon prevents it',
+      'r3108' in why or 'SHALLOW' in why)
 check('⓷ᵇ ⛭ AND prints the commit SHA beside it, which is unambiguous where the revision number is '
       'not -- asserted here so it cannot be removed silently', 'commit ' in why)
 qp = open(os.path.join(ROOT, 'corpus', 'quotepin.py'), encoding='utf-8', errors='replace').read()
