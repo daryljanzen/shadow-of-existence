@@ -3,7 +3,7 @@ kind: REFERENCE
 name: the-dissolution-census
 job: Which standard problem does this dissolve, at what weight, and at what ontological cost? Read BEFORE CLAIMING A DISSOLUTION.
 class: whole-corpus-instrument
-current: r4141
+current: r4197
 ---
 
 > **⛔⛭ r4141 — ONE ROW STRUCK BY MEASUREMENT, AND THE REST CHECKED RATHER THAN ASSUMED.** *The
@@ -54,6 +54,31 @@ unified per-paper pass (P1 → standing order). **The P6 payoff:** the serial di
 Shadow-Reading move recurring, and the recurrence across independent problems is the evidence the
 substrate-reading is right.*
 
+## ⛔⛭ r4197 — A DISSOLUTION THE CORPUS DELIVERS AND THIS CENSUS DID NOT CARRY
+
+> ***The expansion problem — Eddington's and Hoyle's — was in no cluster list here, in no harvest entry, in
+> no register row, and named in no paper.*** *And the corpus answers it.* `P15` `sec:discussion` shows that on
+> the energy family $\dd^{2}r/\dd\tilde\tau^{2}=-f'/2=rK_{G}$: **the comoving acceleration is the existent
+> slice's own Gaussian curvature**, so the expansion decelerates while the slice is negatively curved, turns
+> over exactly where it is flat, and accelerates thereafter — ***with nothing added to make it do so***. And
+> the turnover is a measurement: $z_{\mathrm{acc}}=x_{0}-1=0.6648\pm0.0467$ against $0.632$ on Planck's
+> parameters, at $0.7\sigma$, with no fit performed.
+>
+> ⛔ ***The corpus has the answer and never names the question***, so nothing tracks the delivery. **That is
+> the inverse of the failure the entry-point register exists for** — not a paper advertising a gap another
+> paper has walked through, but a paper walking through a gap no instrument advertises. *A synthesis built
+> from the instruments alone would have omitted it, and did*, until it was caught by reading the pre-corpus
+> papers where the problem is named as the programme's first.
+>
+> ⌗ ***And the same accounting answers the bound-structure question with it.*** *The turnover sits at the
+> Hubble–Eddington radius — the boundary within which local structure stays bound against the cosmic flow —
+> and the turnover scale and the binding scale stand in the fixed ratio $2^{1/3}$ for every mass.* **What
+> expands, what does not, and why anything expands at all are one question with one answer.**
+>
+> ⇒ *Added to cluster B. The lesson for this instrument is stated rather than left implicit:* **a census keyed
+> to the problems the corpus solved late will not carry the problems it was founded on**, and the founding
+> problems are named in the pre-corpus papers rather than in the corpus.
+
 ## ★★ HOME FOUND (r1279, Daryl) — the census IS P7's first synthesis
 This census is no longer a standalone external catalogue. Its natural home is the corpus itself, as
 **P7's FIRST major synthesis** — the problems-and-dissolutions synthesis closing the applications section
@@ -95,7 +120,7 @@ vantage). Build the homes now (structure); the deferred generative dissolutions 
 | Cluster | Central home (collector) | Status | Overlaps |
 |---|---|---|---|
 | **A. GR's classical pathologies** (GW-energy, CTCs/chronology, censorship, Hawking, information, BH-mechanics, hole argument, problem of time, local–cosmic boundary) | **P7** `sec:applications-synthesis` | **BUILT** — the flagship; census tracks it (P1–P2 + local-cosmic done) | — |
-| **B. Cosmological puzzles** (horizon, flatness, Big-Bang singularity, Hubble tension, coincidence) | **P15** `sec:discussion` (+ `sec:predictions`) | **HOMED — mature (verified at source r1318)**: §339 draws the reckoning (ΛCDM assembles dark-energy + inflation-for-{causal-contact,flatness,coherence,scale-invariance} + tension-physics; CR reads each off Λ), §337 dissolves the coincidence, §347 the honest standing — theory-choice-favoured + the Hubble tension a *discriminating* datum. Not a separate P7-list; no redundant gathering built | A (horizon/flatness), E (constants) |
+| **B. Cosmological puzzles** (⛭ **the expansion problem** — *added r4197*; horizon, flatness, Big-Bang singularity, Hubble tension, coincidence) | **P15** `sec:discussion` (+ `sec:predictions`) | **HOMED — mature (verified at source r1318)**: §339 draws the reckoning (ΛCDM assembles dark-energy + inflation-for-{causal-contact,flatness,coherence,scale-invariance} + tension-physics; CR reads each off Λ), §337 dissolves the coincidence, §347 the honest standing — theory-choice-favoured + the Hubble tension a *discriminating* datum. Not a separate P7-list; no redundant gathering built | A (horizon/flatness), E (constants) |
 | **C. Unification divides** (gravity/gauge, GR/quantum) | **P13** `sec:synthesis` → `\paragraph{What the synthesis dissolves}` | **SEEDED r1313** (pieces established, world-correspondence held open, weighed by the discipline's coherence) | F |
 | **D. Matter-sector / SM structure** (three generations, colour origin, family×chirality=D₆, mass hierarchy, matter/antimatter, CPT) | **P14** (matter-sector synthesis) | **SEEDED r1317** (`\paragraph{What the matter sector dissolves}` in `sec:scope`: generation-replication → three hinges; family symmetry = the Weyl group; gauged-chirality-vs-global-flavour = on-vs-tangent; matter/antimatter = R=γ⁵ — held at *forced-within-CR* coherence, content external, the lowest altitude in the corpus) | C, F |
 | **E. Constants / fine-tuning** (Λ-problem, coincidence, the c/Λ/G/ℏ tuning — the one scale dissolves them) | **p0** `sec:ledger` (§912) | **BUILT** (populate) | B |
