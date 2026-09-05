@@ -89,13 +89,6 @@ EST = {
         'entirely from the amplitudes r(M), a property of the trajectory swept and COMMON TO BOTH READINGS. What '
         'is owed is a discriminating quantity, or a demonstration that none exists, in which case the attribution '
         'is interpretive by nature and the corpus should say so rather than leave it reading as a question of fact.'),
-    'PO-27': ('empirical coherence as an INDEPENDENT ground -- the motivation, not the construction', 1, 1, 4, None,
-        'r3867: P13 sec:open names this the SECOND of two genuinely open and distinct things -- whether the '
-        'Standard Models century-constrained empirical standing, read as an EXTERNAL constraint rather than '
-        'derived from the bare geometry, motivates taking the compact Wick face as physical and building a '
-        'fermion sector there. P13 forbids merging it with PO-26: these are not the same frontier, and a coherent '
-        'matter route would have to supply BOTH the construction and its motivation. That is where the live work, '
-        'if any, lies. Its instrument is P06s epistemology rather than the geometry.'),
     'PO-25': ('the charged bead -- DOES A CHARGED COLLAPSE FORM THE CAUCHY HORIZON', 1, 1, 4, None,
         'r3827: P03 states the obstruction exactly -- with Q nonzero, Q^2/r^2 dominates as r -> 0 so f -> +inf '
         'rather than -inf, an inner Cauchy turning point appears, and r=0 becomes a TIMELIKE RN singularity '
@@ -206,7 +199,7 @@ KIND = {'PO-13': 'BUILD', 'PO-35': 'READ', 'PO-36': 'READ', 'PO-33': 'BUILD',   
 
 # ** PO-23 added r3809: the ultraviolet definition of the mode sums, the one part of P07's
 # three-part 'definition of the interacting tower' that is neither settled nor attempted. **
-ORDER = ['PO-13', 'PO-24', 'PO-35', 'PO-36', 'PO-30', 'PO-25', 'PO-26', 'PO-27', 'PO-29', 'PO-31', 'PO-23', 'PO-15', 'PO-14', 'PO-17', 'PO-18', 'PO-19', 'PO-20']
+ORDER = ['PO-13', 'PO-24', 'PO-35', 'PO-36', 'PO-30', 'PO-25', 'PO-26', 'PO-29', 'PO-31', 'PO-23', 'PO-15', 'PO-14', 'PO-17', 'PO-18', 'PO-19', 'PO-20']
 GROUP = {'PO-13': 'D', 'PO-14': 'A', 'PO-15': 'C', 'PO-16': 'D',
          # ** r3095: the four brought in from p0's frontiers and the field ledgers.  PO-17 and
          # PO-19 are substrate geometry; PO-18 is the constant ledger; PO-20 is analysis. **
