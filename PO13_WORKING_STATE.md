@@ -37,8 +37,111 @@ difference as physics. Withdrawn until both arms are converged.*
 # aborted the step before anything after it ran) made it visible to `check_currency` for
 # the first time. ** Declaring ignorance is not declaring currency, and only the owning
 # line can do the second. **
-current: r4136
+current: r4138
 ---
+
+
+# ⛭⛭⛭ r4138 — **RUN 2: THE DATUM'S SPAN CONTAINS THE SKY ON ALL FOUR STATISTICS, AND NO SINGLE
+READING REPRODUCES MORE THAN TWO OF THEM — POSITION AND ALTERNATION ARE ANTI-CORRELATED**
+
+***Twenty readings of the seam datum's two freedoms at the converged rung `KFAC=2.0`, on the leaf
+congruence, default projection path: `CRPHI` over $[0,\pi)$ in eight steps plus `entry` and
+`entryleaf`, each with `CRAMP` $\in$ \{`flat`, `entry`\}. Spectra saved so the FOURTH peak can be
+measured, because the instrument prints only $P_1/P_2$ and $P_1/P_3$ and the spec's admissibility
+criterion is about the fourth.***
+
+⚠ ***THE CRITERION WAS FIXED BEFORE THE NUMBERS, AS THE SPEC REQUIRES, AND IT REJECTS THREE.***
+*"A reading enters the spacing statistic only if it returns four peaks with the fourth at least a
+twentieth of the first."* — `phi2.7489_ampentry` returns **fewer than four peaks**; `phientryleaf`
+returns $P_4/P_1 = 0.039$ and $0.049$, **below $1/20$ on both amplitude readings**. ⇒ **`entryleaf`
+is excluded entirely by a criterion written before it was run.** *Seventeen admissible.*
+
+## ⛭ THE FOUR STATISTICS, ACROSS THE SEVENTEEN
+
+| statistic | span across the datum | sky | verdict |
+|---|---|---|---|
+| first peak $\ell_1$ | $148 \to 228$, **$1.541\times$** | 220.6 | **INSIDE** |
+| spacing (fit to four peaks) | $276.0 \to 330.4$, $1.197\times$ | 294.6 | **INSIDE** |
+| acoustic phase intercept $b/a$ | $-0.4044 \to -0.2161$ | $-0.2253$ | **INSIDE**, at the very edge |
+| alternation $\mathrm{gap}_{23}/\mathrm{gap}_{12}$ | $0.475 \to 1.088$ | 0.856 | **INSIDE** |
+
+⇒ ***`P15` `sec:coherence`'s CONCLUSION SURVIVES AND ITS NUMBER DOES NOT.*** *The paper says "across
+the eighteen readings of the two freedoms together the first peak spans a factor of $2.26$", and its
+own text gives that measurement's configuration away by naming "the peak near $172$" — the
+stacking-clock family.* **At converged $k$ on the leaf congruence the span is $1.541\times$, and the
+sky is still inside it, so "the first peak's position is not a statement of this construction" holds
+with a different figure behind it.** *Across the fifteen NUMERIC-phase readings alone it is
+$204 \to 228$, only $1.118\times$: most of the span is carried by the derived `entry` reading at 148.*
+
+## ⛔⛭⛭ AND THE THING RUN 2 RETURNS THAT NOBODY ASKED FOR: THE TWO CANNOT BE HAD TOGETHER
+
+***A span that contains the sky on each statistic SEPARATELY is a much weaker statement than a reading
+that reproduces the sky. There is no such reading, and the reason is structural.***
+
+| $\ell_1$ | alternation $\mathrm{gap}_{23}/\mathrm{gap}_{12}$ across the readings at that position |
+|---|---|
+| 148 | 0.475, 0.526 |
+| 204 | 0.923, 0.946, 0.950, 1.000, 1.000, 1.000 |
+| 212 | 0.971, 0.971, 1.057 |
+| **220** | **1.000, 1.029, 1.057, 1.088** |
+| **228** | **1.027, 1.051** |
+| — sky — | 220.6 at **0.856** |
+
+**Spearman $\rho = +0.782$, $p = 2.1\times10^{-4}$ over the seventeen.** *As the datum carries the
+first peak UP toward the sky's position, the second gap goes from CONTRACTING to EXPANDING — away from
+the sky's.* ⇒ ***Of the six readings that put the first peak within one grid step of $220.6$, NOT ONE
+contracts. Every one expands.*** *And of the seven that do contract, every one sits at $\ell_1 \le 212$.*
+
+*** => POSITION AND ALTERNATION ARE ANTI-CORRELATED ACROSS THE SEAM DATUM. THE DATUM CAN BUY EITHER
+AND NOT BOTH. ***
+
+⌗ ***This SHARPENS `P07` `sec:frontiers` rather than refuting it.*** *That section says the sky's
+spacings alternate "and this comb does not: its first two gaps are equal to the resolution at which
+they are read".* **At converged $k$ on the leaf that is exactly right where the position is right —
+and wrong in general, because seven of the seventeen readings do alternate.** ⇒ *The uniform comb is
+not a property of the construction; it is a property of the readings that land the first peak. The
+statement that survives is the stronger one: **no reading buys the position without losing the
+alternation.*** ⛔ *And `C61` has already removed the mechanism that section offers for it — on the
+leaf rate the first peak's mode IS driven — so the correlation is measured and unexplained.*
+
+⚠ ***ONE RESOLUTION CAVEAT, AND IT IS BEING MEASURED RATHER THAN ARGUED.*** *These gaps are read on an
+$\ell$ grid with `LSTEP` $=8$, so a gap difference of $8$ is ONE BIN and cannot be told from zero. The
+sky's contraction is $45.8$ in $\ell$, about six bins, so the FAILURE to contract at $\ell_1\simeq220$
+is resolvable; the small contractions at $\ell_1=204\!-\!212$ (one to three bins) are not.* **RUN 4 is
+re-running four readings at `LSTEP` $=2$ — the control, the coded default, the derived datum, and the
+reading that lands the first peak on the sky — to settle it at a quarter of the bin.**
+
+## ⌗ THE READINGS IN FULL
+
+| reading | peaks | $\ell_1/\ell_A$ | $P_1/P_2$ | $P_1/P_3$ | $P_4/P_1$ | gap ratio | |
+|---|---|---|---|---|---|---|---|
+| `phi0.0` `flat` *(coded default)* | 204/516/828/1188 | 0.6764 | 1.975 | 2.206 | 0.235 | 1.000 | |
+| `phi0.0` `entry` | 204/524/828/1180 | 0.6764 | 1.621 | 1.424 | 0.417 | 0.950 | |
+| `phi0.3927` `flat` | 204/508/812/1172 | 0.6764 | 1.619 | 1.618 | 0.337 | 1.000 | |
+| `phi0.3927` `entry` | 204/516/804/1148 | 0.6764 | 1.386 | 1.093 | 0.593 | 0.923 | |
+| `phi0.7854` `flat` | 204/500/796/1156 | 0.6764 | 1.237 | 1.123 | 0.509 | 1.000 | |
+| `phi0.7854` `entry` | 204/500/780/1124 | 0.6764 | 1.110 | 0.800 | 0.880 | 0.946 | |
+| `phi1.1781` `flat` | 212/492/788/1148 | 0.7029 | 0.923 | 0.784 | 0.761 | 1.057 | |
+| `phi1.1781` `entry` | 212/492/764/1100 | 0.7029 | 0.884 | 0.603 | 1.262 | 0.971 | |
+| `phi1.5708` `flat` | 220/492/788/1140 | 0.7294 | 0.772 | 0.647 | 0.952 | 1.088 | |
+| `phi1.5708` `entry` | 212/484/748/1076 | 0.7029 | 0.824 | 0.566 | 1.461 | 0.971 | |
+| `phi1.9635` `flat` | 220/500/796/1148 | 0.7294 | 0.897 | 0.823 | 0.746 | 1.057 | |
+| `phi1.9635` `entry` | 220/484/748/1052 | 0.7294 | 1.213 | 1.002 | 0.913 | 1.000 | |
+| `phi2.3562` `flat` | 228/524/828/1180 | 0.7560 | 1.427 | 1.760 | 0.310 | 1.027 | |
+| `phi2.3562` `entry` | 220/492/772/1052 | 0.7294 | 2.908 | 7.532 | 0.128 | 1.029 | |
+| `phi2.7489` `flat` | 228/540/868/1220 | 0.7560 | 1.952 | 3.387 | 0.127 | 1.051 | |
+| `phi2.7489` `entry` | 228/532/876 | 0.7560 | | | | | ⛔ **REJECTED**, fewer than four peaks |
+| `phientry` `flat` | 148/604/844/1108 | 0.4907 | 1.155 | 1.406 | 0.159 | 0.526 | |
+| `phientry` `entry` | 148/620/844/1076 | 0.4907 | 0.846 | 0.929 | 0.296 | 0.475 | |
+| `phientryleaf` `flat` | 196/484/764/1268 | 0.6499 | 4.310 | 7.374 | **0.049** | 0.972 | ⛔ **REJECTED**, $P_4/P_1 < 1/20$ |
+| `phientryleaf` `entry` | 196/476/724/1004 | 0.6499 | 4.121 | 5.929 | **0.039** | 0.886 | ⛔ **REJECTED**, $P_4/P_1 < 1/20$ |
+| — **sky** — | 220.6/538.1/809.8 | **0.7312** | **2.217** | **2.277** | | **0.856** | |
+
+⌗ *The retired `CRAMP=entry` row this file suspended — $204/508/804$, $P_1/P_2 = 1.935$,
+$P_1/P_3 = 2.578$ — is now comparable like for like: at converged $k$ the same reading gives
+$204/524/828$, $\mathbf{1.621}$, $\mathbf{1.424}$.* **The position's first peak reproduces; the second
+and third do not; and both height ratios fall well below the retired figures.**
+
 
 
 # ⛭⛭⛭ r4136 — **THE POLARISATION LEG: THE CONTROL MEETS THE SPEC'S CALIBRATOR AND THE CR ARM'S
