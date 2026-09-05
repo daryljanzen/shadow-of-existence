@@ -2358,6 +2358,60 @@ ultra-compact body.
 distinction this pass exists to draw. **An item assessed at weight and an item summarised from its own
 register row are not the same evidence**, and a frontier offered publicly should say which is which.
 
+
+### PO-23-is-real-work-that-gates-nothing
+① CLAIM — **REAL WORK, and the most narrowed version of its problem anyone has --- but P7 settles its
+standing in one line, and that is the part that matters for a published frontier.** Of the three parts named
+to the interacting tower's definition, two are settled: the operator is bounded below, and its spectrum is
+computable branch by branch, \emph{with the self-adjointness threshold fixed by the operator's own
+singularity structure and reached by two derivations sharing no step, the second not a quantum one at all.}
+Only the ultraviolet definition of the mode sums remains. **And there has been no attempt.**
+② REGISTER — **ASSESSED AT SOURCE**, `r4225`.
+③ HOME — P7 `sec:frontiers` item 3; P10 `sec:lock`.
+⑥ NOT OP FOR — ⌗ ***The standing, in P7's words***: *"This is the same wall any interacting quantum field
+theory meets, and the results established here --- the classical dynamics, the deparametrized unitary
+evolution, and the parameter-free closure of the quantization ambiguity --- **stand independent of its
+resolution.** But the shared character of the wall does not settle it."* ⇒ **So the item is real and it gates
+nothing**, which is exactly what a reader weighing the corpus needs to know about it. ⛔ ***And the cheap
+close is forbidden and has already been tried***: an earlier row was struck on the inference that the
+definition is "met, not owed --- generic to every interacting QFT", *and P7 explicitly refuses that
+inference.* ⌗ *The problem space is nonetheless narrower than the general one by four separately closed
+items, and **the infrared is regulated for free** --- compactness makes the sum discrete from $n=2$ with no
+zero mode and no soft region, so the divergence is purely ultraviolet. **The item's own second branch is much
+cheaper than its first**: a demonstration that the obstruction is the general one and not this
+construction's.*
+
+### PO-32-was-over-opened-by-me-and-the-source-says-so
+① CLAIM — **⛔ PROBABLY NOT A FRONTIER ITEM, and the error is mine.** I opened this row at `r4169` on the
+clause *"what content survives for a perpetually collapsing ultra-compact body \ldots is not settled by the
+horizon-thermodynamic reading of this subsection."* **Read to the end of its own sentence, that is a scope
+statement about an apparatus and not an open physics question**: *"what the collapse does produce is the
+subject of the central theorem below --- it continues as an expanding cosmology --- whose observational
+consequences the cosmology papers work out; **the point is only that the horizon-thermodynamic apparatus,
+area law and entropy alike, has on a finite layer no realised horizon to be defined on**, exactly as its
+temperature has none."*
+② REGISTER — **⛔ ASSESSED AT SOURCE `r4225`; the row stands until the check below is done**, because an item
+does not leave a list on a reading, only on the work.
+③ HOME — P7's black-hole-mechanics subsection.
+⑥ NOT OP FOR — ⇒ **THE CLOSING CHECK IS CHEAP**: whether the central theorem's answer --- the collapse
+continues as an expanding cosmology --- covers what the row asks, in which case the row closes as
+already-answered rather than as worked. *One or two turns.* ⛔ ***And the lesson is the pass's own***: I
+opened a frontier row from a clause rather than a sentence, which is the same failure as reading a register
+row instead of its source --- committed by me, in this session, on the very list this pass exists to make
+trustworthy. **A frontier offered publicly with an over-opened item in it is not more honest for being
+longer.**
+
+### the-frontier-is-now-wholly-assessed
+① CLAIM — **All sixteen have been read at source.** *Four owed builds or runs; two probably closable by
+corpus-internal reasoning; **six real work**, of which one gates nothing and one is well posed enough for an
+outside reader to take up cold; two observational or external; and **one probably over-opened**, pending its
+check.*
+② REGISTER — **⛔ A WORKING ORDER**, not a change of status for any item.
+⑥ NOT OP FOR — ⌗ ***What the pass changed is the evidence behind the list rather than the list itself.***
+Two items moved toward closable, one moved toward real work, one was found over-opened, and PO-23's standing
+--- \emph{real, and gating nothing} --- turned out to be the single most useful thing on it for a reader
+deciding what the corpus is worth. **Nothing was struck.**
+
 ---
 
 ## THE FRONTIER GATHER
