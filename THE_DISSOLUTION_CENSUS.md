@@ -3,7 +3,7 @@ kind: REFERENCE
 name: the-dissolution-census
 job: Which standard problem does this dissolve, at what weight, and at what ontological cost? Read BEFORE CLAIMING A DISSOLUTION.
 class: whole-corpus-instrument
-current: r4197
+current: r4199
 ---
 
 > **⛔⛭ r4141 — ONE ROW STRUCK BY MEASUREMENT, AND THE REST CHECKED RATHER THAN ASSUMED.** *The
@@ -70,10 +70,21 @@ substrate-reading is right.*
 > from the instruments alone would have omitted it, and did*, until it was caught by reading the pre-corpus
 > papers where the problem is named as the programme's first.
 >
-> ⌗ ***And the same accounting answers the bound-structure question with it.*** *The turnover sits at the
-> Hubble–Eddington radius — the boundary within which local structure stays bound against the cosmic flow —
-> and the turnover scale and the binding scale stand in the fixed ratio $2^{1/3}$ for every mass.* **What
-> expands, what does not, and why anything expands at all are one question with one answer.**
+> ⌗ ***And the same accounting answers the bound-structure question at EVERY SCALE, not only for the universe
+> as a whole.*** *For the marginal congruence $\dd^{2}r/\dd\tilde\tau^{2}=-f'/2$, and $f'$ vanishes exactly at
+> $r^{3}=M\alpha^{2}$ — **generally in the mass and not only on the forced member**. That radius is the
+> Hubble–Eddington radius itself: for every mass, the boundary within which local structure stays bound
+> against the cosmic flow.* **So the acceleration turn and the binding boundary are one radius, not two in a
+> fixed ratio** — *the $2^{1/3}$ relates $r_{\mathrm{HE}}$ to the matter–$\Lambda$ equality radius, a
+> different locus.* ⛔ *An earlier draft of the paper had that wrong and it is corrected at `r4199`.*
+>
+> ⌗ ***And the corpus counts the convergence rather than the locus.*** *Two independent quantities change sign
+> there — the slice's intrinsic curvature and the acceleration of the areal radius — the second dynamical
+> where the first is geometric, with nothing relating them beyond their both being read off the same curve.*
+> **Seven distinct readings of that radius stand across the corpus and no single paper lists them all**; each
+> was recorded where it arose, and the convergence is visible only from outside any one of them. *`P6`
+> `sec:place` is where they are gathered.* ⇒ **What expands, what does not at any scale, and why anything
+> expands at all are one question with one answer.**
 >
 > ⇒ *Added to cluster B. The lesson for this instrument is stated rather than left implicit:* **a census keyed
 > to the problems the corpus solved late will not carry the problems it was founded on**, and the founding
