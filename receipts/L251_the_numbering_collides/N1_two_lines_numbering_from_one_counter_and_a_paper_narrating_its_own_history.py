@@ -141,6 +141,24 @@ cosmo = open(os.path.join(ROOT, 'corpus', 'CR_cosmology.tex'), encoding='utf-8',
 check('⓵ᵉ and r3111\'s own repair has landed -- "That refit has since been performed" is gone',
       'That refit has since been performed' not in cosmo)
 
+#: ⛔⛭ ** THE SEED WENT STALE AND THE CHECK FAILED SILENTLY FOR IT -- repaired r4121. **
+#: *This seeded on `r3103`, `r3104`, `r3112`, and `C.collisions()` no longer returns any of them:
+#: a collision is two commits NEITHER of which is an ancestor of the other, and after enough
+#: merging those pairs became ancestor-related and read as SPANS.*  ** So the defect the check
+#: showed the gate was no longer in the tree to be shown, and `named` had been False on every run
+#: since -- a demonstration that had lapsed rather than a gate that had broken. **
+#:   ⌗ *It was also MASKED while it lapsed*: with live collisions unbaselined the gate exited 1
+#:     anyway, so `rc == 1` held and only `named` failed, which reads at a glance like the gate
+#:     firing correctly.  ** 60 diagnosed this receipt as blocked by `r4009` and expected it to go
+#:     green when that resolved; it did not, and this is why. **
+#:   ⇒ *** The seed is now DERIVED from what the tree actually carries, so it cannot go stale
+#:       again: whatever `collisions()` returns is what gets removed and must be named back. ***
+#:     *If the tree ever carries no collision at all the seed is empty, `all(...)` is vacuously
+#:     true, and the check would assert nothing -- so that case is refused explicitly rather than
+#:     passing quietly, which is the failure mode this repair exists to end.*
+_SEED = sorted(C.collisions())
+
+
 def _fires_on_new():
     """** SEEDED: take the three post-r3112 collisions OUT of the baseline; the gate must name them
     and exit 1. **  *A detection gate is only shown to work by being shown a defect it has not been
@@ -150,7 +168,7 @@ def _fires_on_new():
     import io
     keep = set(C.BASELINE)
     try:
-        C.BASELINE.difference_update({'r3103', 'r3104', 'r3112'})
+        C.BASELINE.difference_update(_SEED)
         buf = io.StringIO()
         with contextlib.redirect_stdout(buf):
             rc = C.main()
@@ -158,9 +176,9 @@ def _fires_on_new():
     finally:
         C.BASELINE.clear()
         C.BASELINE.update(keep)
-    named = all(f'[FAIL] {r}' in out for r in ('r3103', 'r3104', 'r3112'))
+    named = all(f'[FAIL] {r}' in out for r in _SEED)
     # ** and the restore is VERIFIED, not trusted to the `finally` -- c54.213 **
-    return rc == 1 and named and C.BASELINE == keep
+    return bool(_SEED) and rc == 1 and named and C.BASELINE == keep
 
 
 print()
