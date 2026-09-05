@@ -1165,6 +1165,63 @@ note to self carries the same risk and matches no keyword. **A comment sweep is 
 ⑤ JOINS — [[p6-shadow-of-existence]] (the four rules, each favouring this reading) · [[p7-cr-framework]] (the dissolution family) · [[p4-modern-parallax]].
 ⑥ NOT OP FOR — **The canonical face and the geometric face are two descriptions of one evolving three-dimensional world** — the true Hamiltonian advances the layer; the operator and range papers read the geometry of that advance, matter as the bend and radiation as the TT shear, up to the wall. *The loop closes with the geometric side rather than standing apart from it.*
 
+
+---
+
+# P11 · `corpus/dynamics_paper.tex`
+### *Why the cut bends: the dynamics of the de Sitter cut, the confined graviton, and the wall*
+
+> **▣ THE READ IS COMPLETE** *(r4081). Abstract cut 1444 → 459 words; two results and two receipts relocated
+> into the body first, and one orphaned citation restored.*
+
+### the-symmetric-sector's-dynamics-in-closed-form
+① CLAIM — On any comoving worldline of a symmetric cut, **at any energy**, $\dd^2r/\dd\tilde\tau^2=-f'/2=rK_G$ with $K_G$ the slicing surface's Gaussian curvature. **So the rate at which the symmetric cut's bend changes in time *is* the bend itself**, up to the areal factor: the cut straightens, is momentarily flat, and bends the other way as the geometry passes its one sign change. *That is the whole of the symmetric sector's dynamics.*
+② REGISTER — **RECEIPT-ANCHORED**, and general in the energy.
+③ HOME — P11 §1 (relocated there r4081; it had lived only in the abstract).
+④ ANCHOR — `P03_acceleration_is_slice_curvature`.
+⑤ JOINS — [[p3-sds-slicing]] (**the same $f'$ zero the curvature crossover reads — one zero seen twice**) · [[p8-slicing-operator]] · [[p5-groupoid]].
+⑥ NOT OP FOR — *This is why the inhomogeneous case needs a paper*: the symmetric sector's answer is a closed form, and everything P11 builds is the first case in which the bend is **not** symmetric.
+
+### the-two-polarizations-are-a-wave-map-into-the-hyperbolic-plane
+① CLAIM — In the variables $P=2\psi-\ln R$, $Q=\omega$, the torus block's equations are **identically** the harmonic-map system for a map from the $(t,z)$ plane, with density $R$, into the target $\dd P^2+e^{2P}\dd Q^2$ — a metric of Gaussian curvature $-1$, **the hyperbolic plane**. *So the two polarizations are not two decoupled fields but one point moving on a negatively curved surface*, the polarized case being the geodesic $Q=\text{const}$ and the turning of the polarization plane being motion off it.
+② REGISTER — **DERIVED, identically**, receipt-anchored.
+③ HOME — P11 §2.1 (`sec:unpolarized`).
+④ ANCHOR — `P11_unpolarized_gowdy_cut`.
+⑤ JOINS — [[p9-range-paper]] · [[p10-canonical-time]] (the graviton tower) · [[p14-matter-sector]].
+⑥ NOT OP FOR — **⛔ And $\Lambda$ is ABSENT from that sector entirely**: both wave-map equations hold with no cosmological term, which enters only the area and conformal equations. *In the wave-map variable the graviton propagates freely and $\Lambda$ drives only the area* — and this **explains** the source term that appears in the polarized wave equation, which is the area equation in changed variables. *It is the second polarization that forces the variable in which this is visible.*
+
+### the-handedness-is-a-conserved-charge-and-its-parity-is-disconnected
+① CLAIM — The helicity-flipping parity $x\mapsto-x$ is exactly $Q\mapsto-Q$ with $P$ fixed — an isometry of the target whose differential has determinant $-1$: **it reverses orientation, so it lies in the component of $\mathrm{Isom}(\mathbb H^2)$ the identity component does not reach. No connected target isometry identifies the two handednesses.** On the homogeneous reduction the twist $c=Re^{2P}Q_t$ is conserved, and the parity acts as $c\mapsto-c$. **So on the reachable sector the graviton's handedness is the sign of a conserved charge**, with $c=0$ the polarized achiral cut.
+② REGISTER — **DERIVED**, with $c\neq0$ solutions exhibited and the first integral reproduced along them.
+③ HOME — P11 §2.1 and §6.
+④ ANCHOR — `P11_unpolarized_gowdy_cut`, `P11_wall_ppwave`, `P09_the_wall_is_not_the_loss_of_symmetry`.
+⑤ JOINS — [[p5-groupoid]] (**the same orientation $\mathbb Z_2$: the $A_2$ diagram automorphism, the vantage-swap**) · [[p13-boundary]] · [[p14-matter-sector]].
+⑥ NOT OP FOR — **⛔ The homogeneous reduction is not the member the criterion is about**, and P11 says so: restoring $z$-dependence gives an **unconstrained** wave map — the two remaining Einstein equations fix the conformal factor by a quadrature whose integrability holds identically on shell, so every Cauchy datum integrates to a genuine vacuum member and *the wave carries no hidden constraint*. An explicit inhomogeneous single-helicity travelling datum is evolved to the roundoff floor with fourth-order convergence, and on it the polarization plane genuinely turns.
+
+### chirality-is-reached-inside-the-range-not-past-it
+① CLAIM — **The first chiral geometry is inside the construction's own reach.** The unpolarized turning wave carries the *same two spacelike Killing vectors* as the polarized one — the range paper's ground for placing this class in the reachable sector — and the transverse reflection is an isometry of the Gowdy form **precisely when the wave is polarized**. So the criterion bites **from the loss of the swept $\mathrm{SO}(3)$ onward**: the polarized edge is achiral, the unpolarized turning wave is the first chiral case, and the wall is where chirality is **generic rather than where it begins**.
+② REGISTER — **ESTABLISHED**, receipt-anchored.
+③ HOME — P11 §6 (`sec:chirality`).
+④ ANCHOR — `P09_the_wall_is_not_the_loss_of_symmetry`.
+⑤ JOINS — [[p9-range-paper]] · [[p13-boundary]] · [[p14-matter-sector]].
+⑥ NOT OP FOR — **⛔ And the agreement with the matter sector's index obstruction is closer than a shared conclusion — the two are ONE MECHANISM read in two sectors.** The obstruction bites because a positive-dimensional **connected** group contains a circle whose action forces the equivariant index to vanish; the criterion here is achiral exactly while the swept $\mathrm{SO}(3)$ supplies a continuous rotation completing the reflection and identifying the two helicities. *The gravitational sector is chiral precisely through the component that obstruction cannot touch.*
+
+### the-wall-is-a-regular-radiative-boundary-and-not-a-metric-singularity
+① CLAIM — Two questions are settled at the wall. **The dynamics continues across it.** And **the wall is *not* a metric singularity** in the precise sense of the causality paper — no measure collapses there — so it is a regular radiative boundary rather than a place at which a clock could be re-founded by the Null-Boundary Correspondence.
+② REGISTER — **SETTLED**, both, against the definition rather than by analogy. *A Killing horizon is named as the worked sufficient case, not the definition.*
+③ HOME — P11 §5 (`sec:wall`).
+④ ANCHOR — `P11_wall_ppwave`.
+⑤ JOINS — [[p1-bh-causality]] (**the definition tested against**) · [[p9-range-paper]] (**which needs the wall regular for its own "walked past, not a gap" claim**) · [[p7-cr-framework]].
+⑥ NOT OP FOR — *This is a **negative** result about the corpus's own most-used structure, and it is the right kind to have*: the metric singularity is not everywhere, and P11 checks rather than assumes.
+
+### the-nonlinear-regime-admits-rather-than-forces
+① CLAIM — Under isotropy the homogeneous field equations reduce consistently to one constraint and one dynamical law, solved to give exact de Sitter with $H^2=\Lambda/3$. **The internal area-clock that organizes the $\Lambda=0$ Gowdy system is inconsistent here**, and the substrate's de Sitter cosmic time replaces it — *established positively and not merely by the failure of the alternative.* The de Sitter background is an attractor, every tractable sector admits, and the first-class system is consistent to all orders, so **the continuous dynamics admits rather than forces a quantum structure**.
+② REGISTER — **RESOLVED ON THE CLASSICAL SIDE**, with the verdict named as admissibility.
+③ HOME — P11 §3.
+④ ANCHOR — the section's own.
+⑤ JOINS — [[p10-canonical-time]] · [[p7-cr-framework]].
+⑥ NOT OP FOR — **⛔ Explicitly not claimed, at source**: no closed-form nonlinear solution, and **no full non-perturbative quantization** — neither is built, and the latter is not needed for the admissibility verdict. *The non-perturbative quantization is the definition of the interacting tower, carried as an open problem of the programme.*
+
 ---
 
 ## THE FRONTIER GATHER
