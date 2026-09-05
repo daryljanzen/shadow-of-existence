@@ -950,7 +950,7 @@ faces; **it does not cite it for the count**, which is the gap.
 | **P10** | — | ~16% of body; four sections never opened | **⛔ NOT READ — r4079 claimed otherwise** |
 | **P11** | — | ~35% of body | **⛔ NOT READ — r4081 claimed otherwise** |
 | **P12** | — | ~27% of body; `The anchor` never opened | **⛔ NOT READ — r4083 claimed otherwise** |
-| **P13** | — | ~38% of body; two of three closed routes never opened | **⛔ NOT READ — r4085 claimed otherwise** |
+| **P13** | — | r4091: all 14 sections, spans reconciled | **complete — verified** |
 
 **⌗ WHAT A PARTIAL READ DEMONSTRABLY MISSES — the two failure modes now have names, from cases.**
 *① **Results living only in the front matter.** Found in P3 (seven), P5 (one), P7 (three). A probe by technical
@@ -1316,10 +1316,9 @@ note to self carries the same risk and matches no keyword. **A comment sweep is 
 # P13 · `corpus/boundary_paper.tex`
 ### *The boundary: colour is not a substrate isometry, and what the two real forms do carry*
 
-> **⛔ THE READ IS NOT COMPLETE, AND r4085 SAID IT WAS.** *Measured at r4087: about 140 of 351 body lines, 38%.
-> Never opened: the 143-line `What stays open`, the 45-line `What it means for the programme`, and **two of the
-> three closed routes** — `The cascade rank-map` and `The $A_2/S_3$ skeleton`. **The entry below asserting
-> "three converging routes" rests on the abstract, not on reading them, and is unverified.***
+> **▣ THE READ IS COMPLETE, AND THE CLAIM IS VERIFIED.** *r4085 claimed it falsely at 38%; corrected r4087,
+> finished r4091. **Verification**: every section span 208–519 reconciled against the ranges opened, no gap.
+> The four entries at the end of this block are from the sections the false claim had skipped.*
 
 > **▣ P13 is the theoretical half of the first application pair, and carries
 > its own synthesis because its chain reaches back through P3, P5 and P7--P12. **Its abstract needed no cut**
@@ -1372,6 +1371,38 @@ note to self carries the same risk and matches no keyword. **A comment sweep is 
 ④ ANCHOR — none; the pieces' own.
 ⑤ JOINS — [[p12-algebroid]] · [[p10-canonical-time]] · [[p17-geometric-core]] · [[p14-matter-sector]].
 ⑥ NOT OP FOR — **⛔ The dimension count is the load-bearing detail and it is exact**: five dimensions do not suffice for colour, which is *why* the seam continuation's $S^4$ cannot be the home and the global Wick's $S^5$ can. **And the two forms are not co-equal worlds** — P13 fixes an asymmetry between them, and the synthesis must carry that rather than presenting a symmetric pair.
+
+### the-three-routes-close-for-one-reason-and-the-third-names-the-opening
+① CLAIM — **Now verified by reading all three.** *σ-lift*: the real involution is not the Wick rotation. *Cascade rank-map*: grant the raise to $\mathrm{dS}_6$ and colour is **dropped the instant one descends to the real substrate** — and a rank count bounds what the raise could ever buy, the Standard Model having rank four against $\mathrm{SO}(6)$'s three, so **the weak $\mathrm{SU}(2)$ does not fit** and the raise buys at most $\mathrm{SU}(3)\times\mathrm U(1)$. *$A_2/S_3$ skeleton*: genuine $A_2$ geometry, geometrically forced and checked against generic cubic numerology — **but discrete**, the Weyl group permuting descriptions of one rigid geometry, not $\mathfrak{su}(3)$ acting on field content.
+② REGISTER — **THREE ROUTES, each closed on its own ground**; the rank count receipt-anchored.
+③ HOME — P13 §3.1–§3.3.
+④ ANCHOR — `P13_sigma_lift`, `P13_cascade_rank`.
+⑤ JOINS — [[p12-algebroid]] · [[p5-groupoid]] · [[p14-matter-sector]].
+⑥ NOT OP FOR — **⛔ The third route names the opening the other two do not.** The skeleton's full automorphism is a **direct product**, and *this route closes on the $S_3$ alone* — the other factor is the orientation parity the index obstruction cannot reach. **The route that closes and the opening that survives are the two factors of one group.** And *why* they differ in kind is read off the figure rather than off a rank or an index: the two structures are the throat circle's two relations — **the three roots the points *on* it, the two null rulings the lines *tangent* to it.** A ruling is a line *of* the substrate, so the factor acting on the pair is an isometry; a root labels a different *cut*, so the $S_3$ moves through the solution space and not the manifold.
+
+### the-C3-constraint-is-conditional-on-five-dimensions-and-says-so
+① CLAIM — Where $\mathfrak{su}(3)$ *can* act geometrically it acts **spatially, not internally**: it acts transitively on $S^5$, admits no equivariant map to the cosmological $S^3$, so the cut breaks it. **But the constraint is stated on the five-dimensional substrate and is conditional on it** — and the conditionality is structural: a totally geodesic four-geometry in $\mathrm{dS}_D$ has stabiliser $\mathrm{SO}(4,1)\times\mathrm{SO}(D-4)$, and **at $D=5$ the second factor is trivial**, so any $\mathfrak{su}(3)$ would have to act on the cut itself. **From $D\ge10$ the normal factor contains $\mathfrak{su}(3)$ and acts trivially on the cut** while rotating the normal index of the second fundamental form — an internal action by construction.
+② REGISTER — **STATED WITH ITS OWN SCOPE CORRECTED**, and nothing asserted about such a substrate.
+③ HOME — P13 §2, (C3).
+④ ANCHOR — none.
+⑤ JOINS — [[p12-algebroid]] (**$D\ge5$ is a floor with no upper bound established anywhere**) · [[p17-geometric-core]].
+⑥ NOT OP FOR — **The obstruction does not disappear at higher dimension; it changes shape.** The normal bundle's structure group is $\mathfrak{so}(6)$, and the reduction to $\mathfrak{su}(3)$ requires an orthogonal complex structure and a preferred complex volume form **that nothing established supplies** — *so colour would be **permitted** rather than **required**, which is precisely the case the criterion of necessity condemns.*
+
+### the-mass-cubic-supplies-the-count-and-not-the-hierarchy
+① CLAIM — **A lead that was named, worked, and returned negative.** Whether a fermion mass, being the $R$-odd departure the same structure governs, inherits the cubic's three-fold form — *the one place the geometry might reach into the mass content.* **It does not.** The three roots sum to zero, and that same vanishing trace holds the two larger roots within a few per cent of each other across the whole undercritical range, so **the triple takes the shape $(\epsilon,1,1)$ and never a separated $(1,a,b)$.** Tuning $2M/\alpha$ so the first ratio reproduces $m_\mu/m_e$ exactly forces the second to $207.8$ where observation requires $3477$ — **short by a factor of seventeen.** And the bound is not particular to this cubic: across *every* zero-sum cubic $x^3-x-q$ with three real roots the largest and middle magnitudes never separate by more than a factor of two.
+② REGISTER — **⛔ NEGATIVE, receipt-anchored, and the failure is one of SHAPE rather than of any fitted value.**
+③ HOME — P13 §5.
+④ ANCHOR — `P13_mass_cubic_carries_no_hierarchy`.
+⑤ JOINS — [[p14-matter-sector]] (which builds the count) · [[p3-sds-slicing]] · [[p17-geometric-core]].
+⑥ NOT OP FOR — **The cubic supplies the generation COUNT and not the mass hierarchy.** *And the count is forced rather than fitted*: the offset-mass relation is the pure triple angle, driven to that single-harmonic form by the unique slicing scale the gnomonic image fixes, so the three roots are the three preimages of $3w$ under the sine. **⛔ A synthesis reporting the generation structure without this negative reports a lead as though it had gone the other way.**
+
+### the-residue-is-the-cosmogenesis's-own-symmetry
+① CLAIM — **The closure's second proposition, and it is stronger than the factorisation.** The discrete residue is *not* an inert remainder the substrate happens to carry alongside its cosmology: **it is the cosmogenetic bead's own symmetry.** One reflection $r\mapsto-r$ simultaneously carries the fundamental to the antifundamental, reverses the mass, swaps the two null rulings, and **fixes exactly the locus $r=0$, which is the bead's branch point**, exchanging the two signed-radius regions the bead's halves occupy. *One $\mathbb Z_2$, four faces* — and the content is the first with the last: **the conjugation's fixed point is the cosmogenesis's branch point.**
+② REGISTER — **PROPOSITION**, proved, receipt-anchored — with **one face marked generic and explicitly not leaned on**: *every* orientation-reversing isometry swaps the rulings, so that face distinguishes nothing.
+③ HOME — P13 §6, `prop:residue-is-the-bead`.
+④ ANCHOR — `P13_closure_i_check`, `P13_closure_iv_check`, `P13_ruling_swaps`.
+⑤ JOINS — [[p7-cr-framework]] (**the antimatter-progenitor theorem is this boundary's first consequence rather than an independent result**) · [[p12-algebroid]] · [[p14-matter-sector]].
+⑥ NOT OP FOR — **⛔ The proposition claims a CO-LOCATION and pointedly NOT that $R$ carries one leg of the bead onto the other.** *A map is not a path.* The two legs are **not** mirror images — read in cosmic time the collapse leg goes as $\cosh^{2/3}$ and the expansion as $\sinh^{2/3}$, structurally distinct curves. **And that asymmetry is the content rather than a blemish on it**: were the legs mirrors, the bead would be invariant under the very reflection whose regions label its species, and *there would be no asymmetry for the cosmogenesis to carry.* **One step is peculiar to $A_2$ and the paper says so**: negating the roots conjugates the representation because $-1\notin W(A_2)$, so negation is outer — *in every other rank-two system it is inner and would conjugate nothing.*
 
 ---
 
