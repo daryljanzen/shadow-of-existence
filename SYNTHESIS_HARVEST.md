@@ -948,7 +948,7 @@ faces; **it does not cite it for the count**, which is the gap.
 | **P3** | 28,931 | completed r4061 — the horizon-locus, two-readings, charge, temporal-three-ness, rigidity-groupoid, coupled-operations and closing sections had never been opened | **complete** |
 | **P7** | 43,900 | every section, r4049–r4057 | **complete** |
 | **P10** | — | ~16% of body; four sections never opened | **⛔ NOT READ — r4079 claimed otherwise** |
-| **P11** | — | ~35% of body | **⛔ NOT READ — r4081 claimed otherwise** |
+| **P11** | — | r4095: all 9 sections, spans reconciled | **complete — verified** |
 | **P12** | — | r4093: all 8 sections, spans reconciled | **complete — verified** |
 | **P13** | — | r4091: all 14 sections, spans reconciled | **complete — verified** |
 
@@ -1189,7 +1189,9 @@ note to self carries the same risk and matches no keyword. **A comment sweep is 
 # P11 · `corpus/dynamics_paper.tex`
 ### *Why the cut bends: the dynamics of the de Sitter cut, the confined graviton, and the wall*
 
-> **⛔ THE READ IS NOT COMPLETE, AND r4081 SAID IT WAS.** *Measured at r4087: about 80 of 226 body lines, 35%.*
+> **▣ THE READ IS COMPLETE, AND THE CLAIM IS VERIFIED.** *r4081 claimed it falsely at 35%; corrected r4087,
+> finished r4095. **Verification**: all nine section spans 171–348 reconciled against the ranges opened, no gap.
+> The three entries at the end are from what the false claim had skipped.*
 
 > **▣ Abstract cut 1444 → 459 words; two results and two receipts relocated
 > into the body first, and one orphaned citation restored.*
@@ -1428,6 +1430,30 @@ note to self carries the same risk and matches no keyword. **A comment sweep is 
 ④ ANCHOR — `GROUP_full_order48`, `EMBEDDING_is_Td_equals_WA3`; Ambrose–Singer.
 ⑤ JOINS — [[p5-groupoid]] · [[p3-sds-slicing]] · [[p13-boundary]] (**which records this as "the discrete structure the geometry supplies is larger than this paper's companions had recorded"**) · [[p17-geometric-core]].
 ⑥ NOT OP FOR — **⛔ The enlargement is a RECOGNITION of what the construction already contains, not an addition to it** — reached by transporting a form the substrate itself supplies. **And the scope is marked at source: this concerns the discrete structure ALONE.** *It says nothing about a continuous $\mathfrak{su}(3)$ — a finite group, however enlarged, is not a Lie algebra*, and the boundary paper's obstruction continues to address that.
+
+### the-admissibility-verdict-rests-on-named-exact-structures-and-one-isolated-residual
+① CLAIM — The classical question is settled by structures, not by a survey. The system is **first-class**, so it evolves consistently to all orders by the contracted Bianchi identity. **Two exact structures sharpen that beyond the Bianchi count**: the homogeneous shear charge extends to the *full propagating* system — $\mathrm{AREA}-2\,\mathrm{WAVE}$ is identically a continuity equation with the $\Lambda$ source cancelling, so the charge is conserved in the inhomogeneous model and not only the homogeneous sector — and the graviton's reduced energy $2R(\psi_t^2+\psi_z^2)\ge0$ is **positive-definite, so the propagating sector is ghost-free to all orders**. Those close the ghost and zero-mode runaways exactly.
+② REGISTER — **PROPOSITION** (`prop:admit`), with the verdict recorded at the scope it is earned.
+③ HOME — P11 §3.
+④ ANCHOR — `P11_deSitter_attractor`, `P11_mukhanov`, `F50_the_a_minus_two_belongs_to_W_and_Q_is_bounded_by_going_constant`.
+⑤ JOINS — [[p10-canonical-time]] · [[p7-cr-framework]] · [[p9-range-paper]].
+⑥ NOT OP FOR — **⛔ ONE STRUCTURE IS NOT CLOSED BY THEM, AND P11 NAMES IT AND SAYS WHY THE OBVIOUS INSTRUMENT FAILS.** A propagating nonlinear parametric resonance: *the natural monotone instrument fails for a precise reason* — the **total** field energy grows as $2\Lambda a^4$, carrying the background's own expanding energy, **so no total energy is monotone.** The right object is the gauge-invariant *perturbation* energy, decaying as $a^{-2}$ with the monotone (never periodic) coefficient — excluding single-mode resonance at linear order and **isolating the residual to nonlinear mode–mode transfer against the de Sitter detuning.** *A failure of an instrument, correctly diagnosed, rather than an open frontier misreported as a closure.*
+
+### the-effective-mass-is-exactly-zero-and-the-apparent-shift-was-an-artefact
+① CLAIM — Linearizing on the de Sitter background in the fixed-background truncation gives an effective mass $m^2=2\Lambda=6H^2$ — a massive scalar admitting clean Bunch–Davies quantization. **But restoring the constraint back-reaction the truncation drops** and reducing to the gauge-invariant combination yields, in conformal time, the **massless minimally-coupled Mukhanov equation with no $a^2m^2$ term.** *So the physical effective mass is exactly zero* — the apparent shift $6H^2\to4H^2$ is a gauge/truncation artefact, the $\propto a$ solution being pure residual gauge — **and the gauge-invariant perturbation is bounded**, its two super-horizon branches going as $a^{-3}$ and as a constant, so *the $a^{-2}$ decay belongs to the rescaled variable in which the equation is written and not to the perturbation itself.*
+② REGISTER — **COMPUTED at the gauge-invariant level**, receipt-anchored twice, and the paper says the admissibility is established by computation *rather than merely asserted robust to an ambiguous shift*.
+③ HOME — P11 §3.
+④ ANCHOR — `P11_mukhanov`, `F50_the_a_minus_two_belongs_to_W_and_Q_is_bounded_by_going_constant`; ledger `functional_analysis`.
+⑤ JOINS — [[p10-canonical-time]] · [[p15-cr-cosmology]].
+⑥ NOT OP FOR — *This is a case of the corpus catching its own truncation artefact and saying so* — the entry to quote when the synthesis needs an instance of the programme correcting itself at the level of a computation rather than a framing.
+
+### the-stability-residual-is-a-settled-theorem-and-the-convergence-is-stated-as-a-convergence
+① CLAIM — The isolated residual — whether the propagating nonlinear evolution no-hairs rather than resonating into runaway — **is exactly the future stability of de Sitter, and at the level of the physics it is a settled theorem rather than an open frontier.** Friedrich proved nonlinear stability of de Sitter in vacuum with $\Lambda>0$; **his method is also why no exact energy in this model closes the question** — the conformal field equations trade the global-in-time problem for a local one at $\mathcal J^+$, so *energy is the wrong instrument, and the failure of any monotone energy above is the expected shape of that fact rather than a sign of openness.* Friedrich is small-data, exactly the perturbative regime of the propagating graviton; Andréasson–Ringström extend to **all** data in the $T^3$-Gowdy class with $\Lambda>0$; and the one non-generic exception, the Nariai branch, is **precisely the locus the range construction already isolates as the no-pivot seam.**
+② REGISTER — **EXTERNALLY GROUNDED**, and stated *as a convergence across results — vacuum small-data, all-data Gowdy with matter, vacuum Nariai-genericity — rather than a single theorem covering the exact vacuum polarized Gowdy–$\Lambda$ case.*
+③ HOME — P11 §3.
+④ ANCHOR — none; Friedrich, Andréasson–Ringström, Beyer.
+⑤ JOINS — [[p9-range-paper]] (**the Nariai exception is the seam that paper isolates independently**) · [[p7-cr-framework]].
+⑥ NOT OP FOR — **⛔ The Andréasson–Ringström extension is with Vlasov matter — a CORROBORATION rather than a vacuum theorem, and P11 marks it as such.** *And the in-model computations are named as the right in-model rigor the theorems **ground rather than replace**.* **⛔ ONE MORE, WHICH IS A NAMING HAZARD THE PAPER FIXES EXPLICITLY: the corpus carries TWO WALLS and they are different objects.** This paper's is the *wall of inhomogeneity*; the matter paper's *throat* wall is the $r=0$ point on the throat circle at which a Dirac zero-mode binds. **Both were labelled the same in their own sources until this one was renamed, and a cross-paper reference to "the wall" must say which.**
 
 ---
 
