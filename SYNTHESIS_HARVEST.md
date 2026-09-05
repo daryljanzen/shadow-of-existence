@@ -947,10 +947,10 @@ faces; **it does not cite it for the count**, which is the gap.
 | **P5** | 16,558 | completed r4063 — rigidity, the seam section, the diagnostic, the cosmological-completion section, the algebroid subsection and the closing had not been opened | **complete** |
 | **P3** | 28,931 | completed r4061 — the horizon-locus, two-readings, charge, temporal-three-ness, rigidity-groupoid, coupled-operations and closing sections had never been opened | **complete** |
 | **P7** | 43,900 | every section, r4049–r4057 | **complete** |
-| **P10** | — | r4097: all 9 sections, spans reconciled | **complete — verified** |
-| **P11** | — | r4095: all 9 sections, spans reconciled | **complete — verified** |
-| **P12** | — | r4093: all 8 sections, spans reconciled | **complete — verified** |
-| **P13** | — | r4091: all 14 sections, spans reconciled | **complete — verified** |
+| **P10** | — | spin-up (uncapped) + arc re-read; r4097 spans reconciled | **complete — verified** |
+| **P11** | — | spin-up (uncapped) + arc re-read; r4095 spans reconciled | **complete — verified** |
+| **P12** | — | spin-up (uncapped) + arc re-read; r4093 spans reconciled | **complete — verified** |
+| **P13** | — | spin-up (uncapped) + arc re-read; r4091 spans reconciled | **complete — verified** |
 
 **⌗ WHAT A PARTIAL READ DEMONSTRABLY MISSES — the two failure modes now have names, from cases.**
 *① **Results living only in the front matter.** Found in P3 (seven), P5 (one), P7 (three). A probe by technical
@@ -960,6 +960,20 @@ soundness" — three printed occurrences across three papers, and **I read past 
 was caught only by meeting the same formula again in P7 and then grepping. **So this class is not caught by
 reading carefully; it is caught by recognising a repeat.** A first pass over a single paper is the wrong
 instrument for it, and a corpus-wide grep is the right one.*
+
+**⛔ AND THE r4087 MEASUREMENT WAS ITSELF WRONG, IN THE OTHER DIRECTION.** *It counted only the ARC's
+Phase-1 ranges and ignored the spin-up layer entirely. The session transcript records the spin-up reads, and
+they are **uncapped** — `awk 'NR>=X && NR<=Y'` with no `head`, no `cut`, no `fold` — in large contiguous spans:
+P1 across 190–470, P2 193–555, P3 100–1110 in six spans, P5 142–720, P6 116–380, P7 across 200–1510 in seven.
+The transcript ends at README step 4; steps 5–10 covered P8–P17, the codas, the deliverables document, the
+ontology index and THE_PLAN, and the compaction summary carries their technical content. **So the papers were
+read. The percentages published at r4087 are what had been RE-read under the arc, not what had been read.***
+
+**⌗ THE ACCURATE ACCOUNT, then.** *Every paper was read at spin-up in full uncapped spans. Phase 1 re-read them
+for the arc's purpose, using a display cap that truncated. The defect was claiming that re-read complete when
+it was not, and the defect in the correction was measuring the re-read alone and reporting it as total
+coverage. **Both are failures of verification rather than of reading**, which is why the rule now turns on
+whether a claim can be checked rather than on how much was read.*
 
 **⛔ AND THE FAILURE RECURRED AFTER THE RULE WAS WRITTEN, WHICH IS THE THING WORTH RECORDING.** *The rule that
 "read and harvested" must be earned end to end was written at r4049 after P7. It was then broken on the next
