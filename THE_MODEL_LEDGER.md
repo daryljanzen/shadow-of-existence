@@ -1,10 +1,22 @@
 ---
 kind: STATE
+# ⛔⛭ r4165 — THE FIVE OPEN ROWS ARE BOUND TO A PREMISE THE CORPUS HAS CORRECTED, and the binding
+# is sound while the thing bound has moved.  RADSCAN.py's header takes its initial data from
+# "the modes are already sub-horizon there (prop:subhorizon)" -- and prop:subhorizon was restated
+# at r4133, that census having been taken on the STACKING rate where the rate rule assigns the
+# perturbations to the LEAF.  On the leaf every multipole below l=237.7 is SUPER-horizon at the
+# onset.  RADSCAN carries no leaf-rate concept at all (x0, against x18 in ACOUSTIC_two_arm.py).
+# ** So TOT, MAT, GRAV, PHZ and LA are owed a RE-BASE rather than an answer, and TOT may be
+# answered by the correction itself: its row names radiation in the Omega denominator as THE
+# DEFECT, disagreeing with the rate, which is the leaf/stacking distinction the corpus has since
+# drawn.  Whether re-basing discharges these or re-opens them is what the re-base decides. **
+# check_model_ledger passes and cannot see this: it checks that every switch has a theory
+# statement, not that the statement is the corpus's current one.
 job: every switch in the acoustic scan against the theory that determines it
 name: the-model-ledger
 description: Binds every adjustable term in RADSCAN.py to the theory statement that determines it, and records what the theory says versus what the run does. Read this BEFORE changing any switch; it is the thing that stops the modelling becoming a fishing expedition.
 sources: [observer]
-current: r3045
+current: r4165
 ---
 
 > **⌗ LIVE, and it belongs to register row `PO-13`.** *It binds every adjustable term in the acoustic

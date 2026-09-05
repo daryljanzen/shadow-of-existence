@@ -2128,6 +2128,36 @@ note to self carries the same risk and matches no keyword. **A comment sweep is 
 ⑤ JOINS — [[p10-canonical-time]] (PO-23, PO-28) · [[p3-sds-slicing]] (PO-25) · [[p13-boundary]] (PO-26, PO-27) · [[p12-algebroid]] (PO-29) · [[p8-slicing-operator]] (PO-30).
 ⑥ NOT OP FOR — **⛔ AND CARRYING THEM UNALTERED IS ITSELF THE MEASUREMENT, NOT A DEFAULT.** *The phase's base rate says most open-claims in a corpus this age are stale links; seven of ten holding is the finding that the register is in better condition than that rate predicts* — and it is reportable only because each was worked rather than assumed. **PO-23 has two of its three parts settled in P7 and says so in its own row**, which is the correct form: *the row stays because its object is unanswered, and the parts that were answered are named inside it rather than shrinking it.*
 
+
+## ⌗ THE LEDGER ROWS AT OPEN — twenty-two rows, twelve rooms
+
+> *Deduplicated by room: the figure-theorem ledger's six rows are **four** rooms (`R3` and `R5` each appear
+> twice), and the integrable-systems ledger's two are **one**. Each room worked before listing.*
+
+### the-model-ledger's-five-rows-are-open-against-a-superseded-premise
+① CLAIM — **⛔ `THE_MODEL_LEDGER`'s five open rows — `TOT`, `MAT`, `GRAV`, `PHZ`, `LA` — bind switches in `RADSCAN.py` to the theory statements that determine them, and that instrument's stated premise has since been corrected.** Its header reads: *"the modes are already sub-horizon there (`prop:subhorizon`), so the super-horizon adiabatic initial conditions used for $\Lambda$CDM do **not** apply"* — and `prop:subhorizon` was restated at `r4133`, because that census was taken on the **stacking** rate while the rate rule assigns the perturbations to the **leaf**. *On the leaf every multipole below $\ell=237.7$ is **super**-horizon when the plasma starts.* **And `RADSCAN` has no leaf-rate concept at all** — zero occurrences, against eighteen in the live two-arm instrument.
+② REGISTER — **⛔ OPEN, AND OWED A RE-BASE RATHER THAN AN ANSWER.**
+③ HOME — `THE_MODEL_LEDGER.md`; `storyboard_receipts/RADSCAN.py`.
+④ ANCHOR — the ledger's gate, which passes: *ten switches, every one bound to a theory statement.*
+⑤ JOINS — [[p15-cr-cosmology]] · `PO13_WORKING_STATE.md`.
+⑥ NOT OP FOR — **⛔ THE BINDING IS SOUND AND THE THING BOUND HAS MOVED, WHICH IS A DIFFERENT DEFECT FROM EITHER BEING WRONG.** *The gate can check that every switch has a theory statement; it cannot check that the statement is the corpus's current one.* **`TOT` is named in its own row as "THE DEFECT" — radiation in the $\Omega$ denominator disagreeing with the rate — and that is exactly the leaf/stacking distinction the corpus has since drawn**, so the row may be answered by the correction rather than by new work. *Not asserted: whether re-basing discharges these or re-opens them is what the re-base would decide.* ⇒ **WHAT WOULD DISCHARGE THEM:** the five switches re-read against the leaf-rate instrument.
+
+### the-two-already-worked-and-the-two-that-are-doubles
+① CLAIM — **`F20` is DISCHARGED** (P1 states Shale's criterion with the infrared tail, in its own voice) and **`H23` STANDS** (`obstruction` live in eleven papers, none at this claim; the range-paper hit is a fluid-bend statement, a different claim in the same words). **And two ledgers double-count**: the figure-theorem ledger lists `R3` and `R5` twice each — six rows, **four rooms** — and the integrable-systems ledger lists Hamilton–Jacobi twice, **one room**.
+② REGISTER — **ONE DISCHARGED, ONE STANDING, THREE ROWS THAT ARE DUPLICATES OF OTHER ROWS.**
+③ HOME — `FUNCTIONAL_ANALYSIS`, `HARMONIC_ANALYSIS`, `FIGURE_THEOREM`, `INTEGRABLE_SYSTEMS` ledgers.
+④ ANCHOR — each row's own.
+⑤ JOINS — [[p1-bh-causality]] · [[p9-range-paper]].
+⑥ NOT OP FOR — *The doubles are **not** removed from their ledgers*: **a row is not struck for being listed twice**, and the deduplication is a property of **this gather**, not a correction to the source. ⇒ *Counting rooms rather than rows is what keeps the list honest in both directions — twenty-two rows would overstate the work and one merged entry would hide it.*
+
+### the-remaining-seven-rooms-carried-with-what-each-would-take
+① CLAIM — **`C4`** *(Cartan holonomy)*: the order-24 closure is **generic to depressed cubics** — five families all give 24 — *so "substrate-derived" is sound about the derivation and misplaces the surprise.* **`R1`** *(figure theorem)*: hexagon → $A_2$/su(3), **re-scored** — the wall stands, and what the object reaches is p0's gauged/global reading. **`R3`** *(which $2+1$)*: wider than when written, *a kill written and retracted in the same session.* **`R5`/⊢64–⊢70** *(the waves)*: three routes assessed, the gap precise. **`U3`**: the full 3D, 24 hinges both sides — **figure work, staged.** **The involution question**: whether $\xi$ commutes with $\sigma$, and what the two generate together. **The variational question**: whether an action exists whose variation returns the operator's four data. **And two numerical rows**, one carrying its own named check.
+② REGISTER — **OPEN, seven rooms, each carried with its own next step already in its row.**
+③ HOME — the named ledgers.
+④ ANCHOR — each room's own.
+⑤ JOINS — [[p12-algebroid]] · [[p3-sds-slicing]] · [[p11-dynamics]] · [[p8-slicing-operator]] · [[p5-groupoid]].
+⑥ NOT OP FOR — **⛔ `C4` IS THE ONE TO READ CAREFULLY, BECAUSE IT LOOKS LIKE A DEMOTION AND IS NOT.** *That the closure is generic to depressed cubics does not make the corpus's group less derived — the derivation is the substrate's — it relocates **the surprise**, which was in the number rather than in the route.* **A synthesis reporting "the order-24 closure is generic" as though it weakened the result would be inverting the row's own verdict.** *And the variational question is the one whose answer would change the most*: an action returning the operator's four data would make the operator a variational principle rather than a construction, which is a different kind of object.
+
 ---
 
 ## THE FRONTIER GATHER
