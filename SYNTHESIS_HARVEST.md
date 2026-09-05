@@ -1100,6 +1100,71 @@ note to self carries the same risk and matches no keyword. **A comment sweep is 
 ⑤ JOINS — [[p11-dynamics]] (**owns the confined wave**) · [[p14-matter-sector]] (**the chirality reading**) · [[p13-boundary]].
 ⑥ NOT OP FOR — **The wall is the seam at which generation-by-symmetry hands off to evolution-by-dynamics, and P9 insists it is not a defect to be engineered around.** *And the chirality criterion bites from the loss of the swept rotation onward rather than only at the wall* — which is a wider claim than the wall statement alone and should not be collapsed into it.
 
+
+---
+
+# P10 · `corpus/canonical_time.tex`
+### *The canonical problem of time as a category error: an empirically forced cosmic time, deparametrization, and the graviton sector*
+
+> **▣ THE READ IS COMPLETE** *(r4079). P10's abstract needed no cut — 661 words, nothing living only there,
+> the first paper of the ten for which that was true — and the vocabulary sweep was clean.*
+
+### the-selection-is-the-whole-of-the-move
+① CLAIM — **The paper isolates what it does and does not add, and the isolation is the crux.** The ADM machinery propagates canonical data along whatever foliation it is given; it is indifferent to which, and *in this exact sense the bare formalism contains no resolution of the problem of time and no obstruction to one.* If nothing distinguishes a foliation, the constraint is all there is and the state is frozen. If a foliation is distinguished, the constraint deparametrizes and a true Hamiltonian appears. **The canonical formalism is the same in both cases.** So: *"There is no separate canonical-machinery result to be proved here; the deparametrization is standard once a clock is in hand. The move is the selection. Everything else is reading the textbook on it."*
+② REGISTER — **METHODOLOGICAL, stated at source in the paper's own voice**, and it is a claim about the paper's *own* contribution rather than about the physics.
+③ HOME — P10 §4 (`sec:selection`).
+④ ANCHOR — none.
+⑤ JOINS — [[p4-modern-parallax]] (which supplies the selection empirically) · [[p1-bh-causality]] · [[p5-groupoid]] · [[p7-cr-framework]].
+⑥ NOT OP FOR — **⛔ This is the most honest self-accounting in the corpus and the synthesis must not upgrade it.** *What is claimed is that CR's cosmic time is the physically correct clock, on ontological and empirical grounds rather than formal ones* — not that a new canonical technique has been found. **An entry presenting the deparametrization itself as the result overstates the paper against its own statement.**
+
+### the-selection-comes-from-outside-and-is-independently-singled-out
+① CLAIM — CR supplies the distinguished foliation **from outside the bare formalism**: real, forced empirically by the CMB and conceptually by the occurrence/existence distinction. **And it is the foliation the rest of the programme independently singles out** — the metric-singularity structure of the horizon determines a unique limiting causal orientation in collapse, *generically non-orthogonal to any spacelike slice*, and that is the orientation reassigned as cosmic time.
+② REGISTER — **ARGUED**, with the convergence named as independent.
+③ HOME — P10 §4.
+④ ANCHOR — none.
+⑤ JOINS — [[p1-bh-causality]] · [[p4-modern-parallax]] · [[p5-groupoid]] · [[p7-cr-framework]].
+⑥ NOT OP FOR — *The representational freedom among Lorentzian metrics on the fixed manifold **is** a genuine gauge symmetry* — P10 concedes this rather than denying it, and locates the cosmic foliation as the thing that is not gauge, not as a denial that gauge freedom exists.
+
+### the-asymptotic-mass-question-is-misplaced-rather-than-unanswerable
+① CLAIM — The ADM mass is defined relative to an asymptotic time translation and exists only where the geometry supplies one — which asymptotically-de Sitter spacetimes do not, there being no global timelike Killing vector, so **no conserved charge is well defined there at all**. *On the reading taken here that absence is not a deficiency of the geometry but a misplacement of the question*: the time this construction runs on is not recovered from an asymptotic symmetry but **selected and measured**, so a quantity whose definition waits on an asymptotic Killing vector is waiting on the wrong thing.
+② REGISTER — **A READING**, and marked as the same move as the paper's own.
+③ HOME — P10 §4.
+④ ANCHOR — none.
+⑤ JOINS — [[p3-sds-slicing]] (**where the standard definitions are evaluated and all return the slicing-dependent $M$**) · [[p5-groupoid]] (**$\alpha$ the invariant curvature radius, a length not a mass**).
+⑥ NOT OP FOR — This does not supply a mass charge; *it says why the absence of one is not a defect.* **The three entries — P3's evaluation, P5's uniqueness argument, and this reading — are one answer distributed across three papers.**
+
+### the-friedrichs-extension-is-closed-by-the-horizon's-own-state
+① CLAIM — The quantization carries a **deficiency-index $(1,1)$ ambiguity** — a one-parameter family of candidate quantizations — and it is closed **without stipulation**: the boundary at $a=0$ is the de Sitter horizon, its surface gravity is $\kappa=1/\alpha$, and the regular Euclidean state at that $\kappa$ leaves nothing to choose. **That is the same condition the cosmogenesis kernel enforces** — regularity in the Euclidean continuation. *The extension-fixing and the lift's kernel are one requirement met twice, once at the horizon and once across the beginning.*
+② REGISTER — **DERIVED**, with the closure explicitly not a stipulation.
+③ HOME — P10 §6.
+④ ANCHOR — the section's own.
+⑤ JOINS — [[p1-bh-causality]] · [[p7-cr-framework]] · [[p16-cosmogenesis]].
+⑥ NOT OP FOR — **⛔ AND THE CLOSURE IS AVAILABLE ONLY BECAUSE OF P1, WHICH IS THE SHARPEST JOIN IN THIS PAPER.** A regular Euclidean state exists at a horizon only if the continuation is smooth there — no conical defect, curvature finite. The horizon at $a=0$ is a **metric** singularity, spatial measure collapsing while curvature stays finite, **and not a curvature singularity**; had it been the latter there would be no smooth Euclidean section, no regular state to select, and the extension would remain unfixed. *So the distinction that dissolves the information paradox is the same distinction that makes this quantization unique.*
+
+### the-beginning-is-a-boundary-of-zero-duration-within-the-evolution
+① CLAIM — Cosmogenesis occupies **no cosmic time at all**, so the evolution operator across it is $U(\Delta\tau=0)=\mathbb 1$: *the true Hamiltonian has no interval in which to act there.* The geometry nonetheless changes across the segment — the areal radius climbs from the turnaround to zero, the expansion rate is carried from zero to divergent — so **the change is not generated by the Hamiltonian but is the segment's own analytic content**, the contour read at another point of itself. *The beginning is therefore not a first instant of the evolution but a boundary of zero duration within it — and that is why nothing can be lost across it: no evolution acts, so none can be non-unitary.*
+② REGISTER — **CLASSICAL STATEMENT plus its immediate consequence**, with the limit marked at source.
+③ HOME — P10 §5.
+④ ANCHOR — the section's own.
+⑤ JOINS — [[p7-cr-framework]] (the lift) · [[p16-cosmogenesis]].
+⑥ NOT OP FOR — **⛔ The limit is stated plainly: what is NOT established here is a quantization of the Euclidean segment itself.** The state on either side is related by the identity in cosmic time; whether the imaginary-time segment admits its own quantum treatment is a separate question. **And one thing is open at its stated size**: the kernel's frequency is not constant along the segment, so *the projection is adiabatic rather than exact*, and the residual at the largest scales is one face of that.
+
+### the-graviton-lift-is-the-substantive-canonical-content
+① CLAIM — The minisuperspace illustration truncates the layer to its scale factor and **carries no propagating degree of freedom**, so it cannot exhibit what the true Hamiltonian generates beyond the background expansion. The full layer does: the **transverse-traceless shear of its spatial geometry, the graviton**. On the closed synchronous slicing $a(T)=\alpha\cosh(T/\alpha)$, the TT perturbation decomposes into $S^3$ tensor harmonics with $\mu_n^2=n(n+2)-2$, $n\ge2$, and the second-order action deparametrizes on the absolute foliation exactly as the background does.
+② REGISTER — **CARRIED OUT**, not asserted; and named by the paper as *the* substantive canonical content.
+③ HOME — P10 §7 (`sec:lock`).
+④ ANCHOR — the section's own.
+⑤ JOINS — [[p11-dynamics]] · [[p9-range-paper]] (the TT shear is the same object the wall is stated on) · [[p7-cr-framework]].
+⑥ NOT OP FOR — **⛔ Where it stops is named**: the free tower evolves on $a(T)$ as a **fixed classical background**; the coupled sector — once the scale factor is itself quantized and back-reacts — is a different regime. *P10 raises the natural worry against its own counterterm argument (that a counterterm basis is a statement about a class of fixed backgrounds, so quantizing the scale factor leaves no fixed background to state it on) and answers it rather than leaving it.*
+
+### dissolution-not-solution
+① CLAIM — **Stated negatively, which is the right way round.** *"We have added nothing to the formalism. We have not introduced a new time variable, nor a matter field whose role is to be a clock, nor a modification of the constraint algebra. We have identified, on external grounds, which foliation is physically real, and read the existing constraint on it."* **The problem of time was never a problem internal to the formalism**; it was the formalism faithfully reporting the consequences of an ontological premise — the block — that is both a category error and empirically false. *A solution would add structure to make a defective formalism work; a dissolution removes a mistaken premise and finds the formalism was working all along.*
+② REGISTER — **VERDICT**, with the distinction argued rather than asserted.
+③ HOME — P10 §8.
+④ ANCHOR — none.
+⑤ JOINS — [[p6-shadow-of-existence]] (the four rules, each favouring this reading) · [[p7-cr-framework]] (the dissolution family) · [[p4-modern-parallax]].
+⑥ NOT OP FOR — **The canonical face and the geometric face are two descriptions of one evolving three-dimensional world** — the true Hamiltonian advances the layer; the operator and range papers read the geometry of that advance, matter as the bend and radiation as the TT shear, up to the wall. *The loop closes with the geometric side rather than standing apart from it.*
+
 ---
 
 ## THE FRONTIER GATHER
