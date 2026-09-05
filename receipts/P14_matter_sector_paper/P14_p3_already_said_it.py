@@ -163,29 +163,94 @@ _p3 = os.path.join(os.path.dirname(os.path.abspath(__file__)),
                    "..", "..", "corpus", "SdS-slicing-curve_v2.tex")
 _tex = open(_p3, encoding="utf-8", errors="replace").read()
 
-_ABSTRACT = ("the matter construction, which must place its slicing planes at loci "
-             "rather than merely chart the family, places one on \\emph{each} of the three "
-             "hinges---three throat walls at distinct points of the throat circle, a one-hinge "
-             "truncation being excluded as carrying an unfixed arbitrary modulus")
-_OVERVIEW = ("the matter sector puts a plane on each, giving three throat walls at distinct "
-             "points of the throat circle with disjoint support, a one-hinge truncation being "
-             "excluded as carrying an unfixed arbitrary modulus")
-_DOORS = "The distinction is between one door swung through a family and three doors standing at once."
-assert _ABSTRACT in _tex, "P3's abstract must contain the passage quoted in PART 2"
-assert _OVERVIEW in _tex, "P3 sec:overview must contain the passage quoted in PART 2"
-assert _DOORS in _tex, "P3 must contain 'one door swung through a family and three doors standing at once'"
-# "stated twice": the one-hinge-truncation clause appears in exactly two places
-assert _tex.count("a one-hinge truncation being excluded as carrying an unfixed arbitrary modulus") == 2, \
-    "the premise is stated TWICE in P3 -- abstract and overview"
-# and the ONE FURTHER WORD is the overview's alone -- that asymmetry is the receipt's point
-assert _tex.count("with disjoint support") == 1, \
-    "'with disjoint support' is the overview's one further word, and occurs once"
-assert _tex.index(_ABSTRACT) < _tex.index(_OVERVIEW), \
-    "the abstract statement must precede the overview statement"
-# stated 'at the outset' and IN GENERAL: no mass parameter anywhere in either sentence
-assert "at the outset" in _tex, "P3 marks the vacuum/matter distinction 'at the outset'"
-assert "$M$" not in _ABSTRACT and "$M$" not in _OVERVIEW and "2M" not in _OVERVIEW, \
-    "both statements are general -- no mass dependence, which is the whole cost recorded in PART 4"
-# and the abstract's own vacuum half, which is why the one-radius reading was correct there
-assert "for the vacuum geometry they are equivalent vantages" in _tex, \
-    "P3's abstract states the VACUUM half: the three hinges are equivalent vantages"
+# ⛔⛭⛭ r4070 (node 60): ** THE QUOTATION THIS RECEIPT PINS WAS DELETED FROM P3, AND THE
+#   RECEIPT WAS RIGHT TO GO RED.  **  61's r4029/r4035 cut P3's abstract and "brought the
+#   introduction and closing inside its own vocabulary".  Checked at source, every trace of the
+#   premise is GONE from P3 -- not relocated into the body:
+#       "with disjoint support"                 P3: 0   (was the ONE FURTHER WORD the argument turns on)
+#       "a one-hinge truncation being excluded" P3: 0
+#       "one-hinge" / "truncation"              P3: 0 / 0
+#       "three throat walls" / "three planes"   P3: 0 / 0
+#   *and r4035's diff on P3 is 4 insertions against 5 deletions -- an edit, not a move.*
+#
+# ⇒ ** THE CORPUS HAS NOT LOST THE PREMISE.  P14 CARRIES IT, four times, in its own voice. **
+#   *What is lost is the INDEPENDENT SUPPORT, which is this receipt's entire thesis: "the two
+#   readings are therefore not an inconsistency in the corpus but two constructions, which THAT
+#   PAPER distinguishes at the outset."*  ⇒ *** P3 no longer distinguishes them at the outset, so
+#   P14's premise now rests on P14 alone. ***
+#
+# ⌗ ** THE PINS ARE NOT RE-ANCHORED TO TEXT THAT WAS DELETED ON PURPOSE, AND THE FINDING IS NOT
+#   ERASED BY MAKING THIS RECEIPT GREEN. **  It now asserts WHAT IS TRUE -- P14 carries it, P3 does
+#   not -- so the receipt runs; and it REGISTERS the loss below so the signal survives the repair.
+#   *A receipt repaired into silence is worse than a receipt that fails.*
+import os
+_p3 = os.path.join(os.path.dirname(os.path.abspath(__file__)),
+                   "..", "..", "corpus", "SdS-slicing-curve_v2.tex")
+_p14 = os.path.join(os.path.dirname(os.path.abspath(__file__)),
+                    "..", "..", "corpus", "matter_sector_paper.tex")
+_tex = open(_p3, encoding="utf-8", errors="replace").read()
+_m14 = open(_p14, encoding="utf-8", errors="replace").read()
+
+# ⓵ WHAT IS STILL TRUE: P14 states the premise itself, and the load-bearing clause is there.
+assert _m14.count("disjoint support") >= 1, \
+    "P14 must still carry 'disjoint support' -- if this fires the premise is lost from the corpus"
+assert "unfixed arbitrary modulus" in _m14, \
+    "P14 must still carry the one-hinge exclusion in its own voice"
+
+# ⓶ WHAT WAS LOST, asserted as a FACT so the loss is checkable and cannot be quietly reversed
+#    without this receipt noticing in the other direction.
+assert "disjoint support" not in _tex, \
+    ("P3 has regained 'disjoint support'.  That is GOOD NEWS and this receipt must be rewritten "
+     "to its original form: the cross-paper support is back.")
+assert "one-hinge" not in _tex, \
+    "P3 has regained the one-hinge clause -- rewrite this receipt to its original form"
+
+# ⓷ WHAT SURVIVES, AND THE FORM IT SURVIVES IN -- which is the precise finding.
+#   ** P3 did not simply delete the reading.  It CONDITIONALISED it. **  The sentence now reads:
+#       "A construction that must \emph{place} its slicing planes at loci, rather than chart a
+#        family with one of them, WOULD read the three hinges differently---the distinction is
+#        between one door swung through a family and three doors standing at once."
+#   ⇒ *So P3 keeps the DISTINCTION and drops the ASSERTION.  It no longer says that the matter
+#     construction places one plane on each hinge with disjoint support; it says what such a
+#     construction WOULD look like.*  ⌗ *That is r4035's stated purpose -- "brought inside its own
+#     vocabulary" -- carried out correctly: a slicing paper should not speak for the matter
+#     paper's construction.*  ** The cost is that P14's premise lost its independent statement,
+#     and THAT is what this receipt now records rather than certifies. **
+_DOORS = "the distinction is between one door swung through a family and three doors standing at once"
+assert _DOORS in _tex, \
+    "P3 must still contain the doors distinction -- if this goes too, P3 retains nothing of the reading"
+_CONDITIONAL = "would read the three hinges differently"
+assert _CONDITIONAL in _tex, \
+    ("P3's surviving statement must be the CONDITIONAL one.  If this fires, P3 has either "
+     "re-asserted the reading or dropped it entirely -- both change this receipt's verdict.")
+# ⓸ THE VACUUM HALF SURVIVES, AND IT WAS SHARPENED RATHER THAN CUT.
+#   *Old wording: "for the vacuum geometry they are equivalent vantages" -- gone.
+#    Current:     "for the \\emph{vacuum} construction OF THIS PAPER they are equivalent
+#                  vantages---the root-exchange $\\sigma$ is the hop from one to the next, and one
+#                  swing charts the whole family".*
+#   ⇒ ** The added words "of this paper" are the same move as ⓷: P3 scoping its claim to itself. **
+#     *So the vacuum half is intact and BETTER bounded, while the matter half is no longer P3's to
+#     state.  Both halves changed in the same direction, which is what makes r4035 a coherent pass
+#     rather than an accident.*
+_VACUUM = "construction of this paper they are equivalent vantages"
+assert _VACUUM in _tex, \
+    "P3 must still state the VACUUM half -- the three hinges as equivalent vantages"
+assert "the root-exchange $\\sigma$ is the hop from one to the next" in _tex, \
+    "P3's vacuum half must still carry the root-exchange as the hop between vantages"
+
+# ⓹ AND THE SURVIVING STATEMENTS ARE STILL GENERAL -- no mass parameter in either, which was the
+#    whole cost recorded in PART 4 and is unchanged by the rewording.
+_span_start = _tex.index(_CONDITIONAL)
+_span = _tex[max(0, _span_start - 400):_span_start + 400]
+assert "$M$" not in _span and "2M" not in _span, \
+    "P3's surviving statement of the reading must remain mass-free"
+
+# ⛔ ⓺ THE PHRASE THE RECEIPT'S PROSE QUOTES -- "at the outset" -- IS GONE FROM P3.
+#    *PART 2 above says the two readings are "not an inconsistency in the corpus but two
+#    constructions, which that paper distinguishes AT THE OUTSET".  P3 no longer uses that phrase,
+#    and no longer distinguishes them at the outset: the matter reading now appears only as a
+#    conditional aside.*  ⇒ ** Asserted as an absence so the receipt's own prose cannot drift back
+#    into claiming a marker the paper does not carry. **
+assert "at the outset" not in _tex, \
+    ("P3 has regained 'at the outset'.  If so the distinction may be marked again -- re-read the "
+     "paper and restore this receipt's original thesis rather than leaving this inverted check.")
