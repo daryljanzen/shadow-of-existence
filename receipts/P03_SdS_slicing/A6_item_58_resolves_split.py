@@ -81,14 +81,27 @@ def main():
     allp = re.sub(r'\s+', ' ', ' '.join(papers.values()))
 
     # ⓵ the sixth equivalence IS banked
+    # ⛭ r4070: 61's P3 pass reworded both clauses; neither claim changed.
+    #   *"A sixth is available and differs from those five in kind rather than in content"
+    #    -> "Item~(vi) differs from the other five in \\emph{kind} rather than in content".
+    #    "the same placement read in the substrate's own causal language" -> "the sixth READS
+    #    the same placement in the substrate's own causal language".*  Re-pinned to the
+    #   surviving forms; the receipt's thesis -- that P3 already carries the sixth -- stands.
     check('⛔ ⓵ P3 already carries the sixth equivalence: "A sixth is available and differs from those '
           'five in kind rather than in content"',
-          'A sixth is available and differs from those five in kind rather than in content' in allp)
+          'differs from the other five in \\emph{kind} rather than in content' in allp)
     check('with the substrate-language clause the receipt claimed as new: "the same placement read in '
           "the substrate's own causal language rather than in the plane's\"",
-          "read in the substrate's own causal language rather than in the plane's" in allp)
-    check('and its receipt cited twice',
-          len(re.findall('P03_the_sixth_equivalence', allp)) == 2)
+          "the same placement in the substrate's own causal language" in allp)
+    # ⛭ r4070: THE CITATION COUNT WENT 2 -> 1 WHEN 61's PASS CONSOLIDATED THE PASSAGE.
+    #   *P3 used to carry `\\rcpt{P03_the_sixth_equivalence}` twice; it now carries it once, on the
+    #   item that DEFINES the sixth equivalence (the $s^{2}$ item, P3 line ~616).*  ⇒ *That is the
+    #   citation's right home, and one citation on the defining item is not a weaker claim than two
+    #   spread across a passage that has since been merged.*
+    #   ⌗ *Per c54.226 a count is a claim about a FILE AT A COMMIT: measured 1 at tree
+    #   b702f932219f8f56, after 61's r4009-r4065.  Asserted so a further change fires here.*
+    check('and its receipt cited once, on the item that defines the sixth equivalence',
+          len(re.findall('P03_the_sixth_equivalence', allp)) == 1)
 
     # ⓶ but the word never appears
     check('⛭⛭ ⓶ while "excentre" appears ZERO times -- P3 states it as "a $120^{\\circ}$-separated '

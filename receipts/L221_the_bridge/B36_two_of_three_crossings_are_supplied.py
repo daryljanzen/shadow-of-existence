@@ -73,12 +73,21 @@ def main():
     print("  B36 -- how much of PO-11's matching is already supplied?")
     print()
     circle = re.sub(r'\s+', ' ', body(os.path.join(ROOT, 'corpus', 'janzen_circle_v3.tex')))
+    # ⛭⛭ r4070: THE SLICING PAPER, READ SEPARATELY -- because the check below says "the SLICING
+    #   paper carries the continuation" and tested `circle`, which is P2, the CIRCLE paper.
+    #   ** The label and the predicate named different papers, and the check passed anyway while
+    #   P2 happened to quote P3's phrase. **  61's reach pass moved "a branch point and not a
+    #   barrier" out of P2 and into the papers that own it, which is what exposed the mismatch.
+    #   ⇒ *A check whose label and predicate disagree is not testing what it says; it passed for
+    #     six hundred revisions on a coincidence of quotation.*
+    slicing = re.sub(r'\s+', ' ', body(os.path.join(ROOT, 'corpus', 'SdS-slicing-curve_v2.tex')))
     p14 = re.sub(r'\s+', ' ', body(os.path.join(ROOT, 'corpus', 'matter_sector_paper.tex')))
 
     # ⓵ the metric
     check('⛭⛭ ⓵ the METRIC crosses: the slicing paper carries the continuation "$C^{\\infty}$ across '
           'the locus the chart labels $r=0$ ... a branch point and not a barrier"',
-          'a branch point and not a barrier' in circle)
+          'a branch point and not a barrier' in slicing
+          and 'across the locus the chart labels' in slicing)
     check('and the framework paper "establishes that closure as a theorem"',
           'establishes that closure as a theorem' in circle)
 

@@ -87,11 +87,23 @@ def main():
           sp.limit(k**2/(3*Hc), eta, sp.pi) == -sp.oo)
 
     # ⓶ the corpus's crossing
-    check('⛭⛭ ⓶ P7 states the crossing: "the conformal time is purely imaginary"',
-          'the conformal time is purely imaginary' in p7)
+    # ⛭ r4070: P7 NOW STATES IT IN SYMBOLS, WHICH IS THE SAME CLAIM MORE PRECISELY MADE.
+    #   *Was: "the conformal time is purely imaginary".  Now: "$\\dd\\eta=\\dd\\tilde\\tau/a$ is
+    #   \\emph{purely imaginary}: the lift is the Euclidean segment of the bead".*  ⇒ *`dη` IS the
+    #   conformal-time element, so the prose was replaced by its own definition -- a rewording that
+    #   strengthens the statement.  Pinned to the symbolic form and its gloss.*
+    check('⛭⛭ ⓶ P7 states the crossing: $\\dd\\eta=\\dd\\tilde\\tau/a$ is "purely imaginary", '
+          'the lift being the Euclidean segment',
+          'is \\emph{purely imaginary}' in p7
+          and 'the lift is the Euclidean segment of the bead' in p7)
     check('along a segment running from the turnaround: "while the areal radius climbs from the '
           'comoving turnaround to the branch point"',
-          'while the areal radius climbs from the comoving turnaround to the branch point' in p7)
+          # ⛭ r4070: P7 inserted the turnaround's explicit VALUE inside the span this pin
+          #   crossed -- "from the comoving turnaround $|r|=(2M\\alpha^{2})^{1/3}$ to the branch
+          #   point".  *The claim is unchanged and better stated; the pin spanned a gap the paper
+          #   then filled.*  Pinned to the two ends separately.
+          'while the areal radius climbs from the comoving turnaround' in p7
+          and 'to the branch point' in p7)
     check('with the rate continuous across it: "carried continuously from zero at the turnaround"',
           'carried continuously from \\emph{zero} at the turnaround' in p7)
 

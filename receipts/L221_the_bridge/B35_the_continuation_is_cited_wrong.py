@@ -95,8 +95,17 @@ def main():
     check('⛭⛭⛭ ⓷ and the circle paper states it: the slicing paper "carries the continuation ... the '
           'one smooth manifold, $C^{\\infty}$ across the locus the chart labels $r=0$, where the '
           'signed areal radius passes through zero ... a branch point and not a barrier"',
+          # ⛭ r4070: EACH HALF PINNED TO THE PAPER THAT CARRIES IT.  61's reach pass moved
+          #   "a branch point and not a barrier" out of P2; it now lives in P3, P14 and P15 --
+          #   the papers that own the characterisation -- while P2 keeps the half that is P2's
+          #   to state: the substrate "is $C^{\infty}$ across the locus the chart labels $r=0$",
+          #   attributed in the same sentence to \cite{JanzenSlicing}.
+          #   ⇒ *The receipt's claim is that the CORPUS states the continuation and attributes it
+          #     to the slicing paper.  That is still true; what changed is which paper holds
+          #     which clause, and pinning both halves to P2 asserted more than the claim needs.*
           'across the locus the chart labels' in P['janzen_circle_v3']
-          and 'a branch point and not a barrier' in P['janzen_circle_v3'])
+          and 'JanzenSlicing' in P['janzen_circle_v3']
+          and 'a branch point and not a barrier' in P['SdS-slicing-curve_v2'])
     check('which is the WALL\'s locus: P14 puts the wall where $W$ is "odd in the signed radius" and '
           '"changes sign at $r=0$"',
           'odd in the signed radius' in P['matter_sector_paper'])

@@ -114,8 +114,12 @@ def main():
     # ** the sentence in which two of them had been conflated. **
     check('P5 says "this monodromy group is equally the Galois group of the horizon cubic, one $S_3$ '
           'worn as monodromy" -- correct for the CLOSURE and for the monodromy',
-          'this monodromy group is equally the Galois group of the horizon cubic' in p5
-          and 'deck group trivial' in p5)
+  # ⛭ r4070: 61's P5 pass reworded this sentence -- "this monodromy group is equally the
+          #   Galois group of the horizon cubic" -> "which is equally the Galois group of THAT
+          #   cubic", and "deck group trivial" -> "trivial deck group".  *Content identical;
+          #   the pins spanned the words that changed.*  Re-pinned to the invariant clauses.
+          'which is equally the Galois group of that cubic' in p5
+          and 'trivial deck group' in p5)
     check('and rem:equianharmonic\'s Z_3 is the deck of the CUBE-ROOT cover -- correct for that cover',
           'equianharmonic' in p5)
 
