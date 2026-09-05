@@ -147,6 +147,38 @@ def main():
 
     if '--rebuild' in sys.argv:
         import subprocess  # noqa
+        # ⛔⛭ ** REFUSAL ADDED r4123 (node 61), AFTER THIS REBUILD DESTROYED A VERDICTED ROW. **
+        # *At `606ce176` a `--rebuild` dropped row `518af53f10` -- 2181 characters carrying r2631's
+        # negative discharge and r3920's confirmation, verdict SELF-ANSWERED. It came back as 147
+        # characters with no note, and the next reader met a bare sentence and re-verdicted it
+        # SCOPE-BY-DESIGN. Receipt `L221/B11` depended on that note and went red silently.*
+        #   ⌗ *The mechanism is the loop below: it iterates over what `scan()` finds in the PAPERS,
+        #     so a verdicted row the scan no longer matches is not carried and not named -- it is
+        #     simply absent from the rewrite. `keep` and `why` preserve the verdict and the note for
+        #     rows that are still found, and have nothing to say about one that is not.*
+        # ⇒ *** 60 built the repair at its own r4022: orphaned verdicted rows preserved as comments
+        #     and named on stdout, nothing auto-carried. THAT GUARD IS NOT ON THIS TRUNK -- it is on
+        #     an unmerged branch -- so until it arrives this rebuild REFUSES rather than runs. ***
+        #   ** A silent drop of a REGISTERED verdict deletes known debt from the list of what is
+        #   owed, which is worse than a rebuild that does not happen. **  *The refusal is deliberately
+        #   not a re-implementation: writing a second guard here would collide with the merge that
+        #   brings the first, and the fix for that is to merge, not to duplicate.*
+        _orphans = sorted(k for k in led if k not in cur and led[k][1] != 'UNVERDICTED')
+        if _orphans and not any('orphan' in ln for ln in open(__file__, encoding='utf-8')
+                                if 'def ' in ln):
+            print()
+            print('  check_open_ledger --rebuild: REFUSED.')
+            print()
+            print(f'  {len(_orphans)} verdicted row(s) would be dropped without being named:')
+            for k in _orphans:
+                print(f'      {k}  {led[k][1]}')
+            print()
+            print('  This rebuild has no orphan guard on this trunk.  60 built one at its r4022,')
+            print('  on branch claude/shadow-of-existence-setup-6awafl -- merge it and re-run.')
+            print('  A silent drop already cost row 518af53f10 its reasoning and flipped its')
+            print('  verdict (restored r4123); the refusal is here so that cannot recur unnoticed.')
+            print()
+            return 1
         # ** preserve BOTH the verdict and the reasoning: the `##` note is why the verdict was
         # given, and rebuilding the claim text from the paper must not drop it. **
         keep = {k: v[1] for k, v in led.items()}
