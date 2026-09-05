@@ -1222,6 +1222,129 @@ note to self carries the same risk and matches no keyword. **A comment sweep is 
 ⑤ JOINS — [[p10-canonical-time]] · [[p7-cr-framework]].
 ⑥ NOT OP FOR — **⛔ Explicitly not claimed, at source**: no closed-form nonlinear solution, and **no full non-perturbative quantization** — neither is built, and the latter is not needed for the admissibility verdict. *The non-perturbative quantization is the definition of the interacting tower, carried as an open problem of the programme.*
 
+
+---
+
+# P12 · `corpus/algebroid_paper.tex`
+### *The constraint algebra as the substrate's Atiyah algebroid: base, anchor, and the structure function*
+
+> **▣ THE READ IS COMPLETE** *(r4083). Abstract cut 1450 → 460 words; the Atiyah passage and its receipt
+> relocated first, and one orphaned citation restored.*
+
+### the-claim-is-a-recognition-not-an-addition
+① CLAIM — The hypersurface-deformation algebra carries **structure functions** — the normal–normal bracket's coefficient is the inverse spatial metric, a field rather than a constant — so it is a Lie **algebroid**, and *that* is the standardly recognised obstruction at the heart of the problem of time. An action Lie algebroid is a Lie algebra acting on a base, with an anchor and structure functions varying over it. **General relativity's constraint algebra has the structure functions but has never been given the base they vary over, nor a section selecting a definite flow.** P12 supplies both: base the space of cuts, algebra $\mathfrak{so}(5,1)$, anchor the slicing operator's cut-to-stress-energy map, section the cosmic clock. *The claim is a recognition, not an addition.*
+② REGISTER — **STATED as a recognition**, in the paper's own voice.
+③ HOME — P12 §1.
+④ ANCHOR — none.
+⑤ JOINS — [[p8-slicing-operator]] (the anchor) · [[p10-canonical-time]] (the section) · [[p9-range-paper]] (the base's strata) · [[p5-groupoid]].
+⑥ NOT OP FOR — **⛔ Two groupoids appear in this corpus and they are different objects** — P5 separates them explicitly. *Here the objects are **cuts** and the arrows are isometries carrying one cut to another; P5's objects are **vantages on one geometry**.* Conflating them merges a solution space with a description structure. **And the four-dimensionality of the leaf is doing work rather than merely being the case**: the same algebra closes for the Lovelock theories, which coincide with general relativity only in four dimensions.
+
+### the-bracket-closes-and-the-puzzling-shape-is-a-coset
+① CLAIM — At the symmetric cut $\mathfrak{so}(5,1)=\mathfrak h\oplus\mathfrak m$ with $\mathfrak h=\mathfrak{so}(4,1)$, and all three inclusions hold, $\mathfrak m$ not being a subalgebra. **Under $\mathfrak m\leftrightarrow\mathcal H_\perp$, $\mathfrak h\leftrightarrow\mathcal H_a$ these are the hypersurface-deformation brackets term for term.** *So the algebraic shape that makes the Dirac algebra puzzling — two normal deformations bracketing into a tangential one — is exactly the shape of a symmetric-space coset: two coset directions bracketing into the isotropy. **They are the same grading.***
+② REGISTER — **PROPOSITION**, verified on explicit matrices.
+③ HOME — P12 §4.
+④ ANCHOR — `P12_bracket_closure`.
+⑤ JOINS — [[p10-canonical-time]] · [[p7-cr-framework]] · [[p17-geometric-core]].
+⑥ NOT OP FOR — **And the grading IS the lapse–shift split**: the normal generator is smeared by the lapse — the existent's own foliation stacking rate — and the tangential by the shift, the synchronization convention. *So the cosmological reading in which the observable expansion rides the foliation rate while a chosen synchronization projects it to distance and redshift **is not a separate posit**; it is this grading read on the preferred foliation.*
+
+### the-atiyah-sequence-and-what-a-connection-is
+① CLAIM — **Naming the grading costs nothing and buys the literature.** For a homogeneous space the action algebroid of $G$ on $G/H$ **is** the Atiyah algebroid of $G\to G/H$, so with $\mathrm{dS}_5=SO(5,1)/SO(4,1)$ the sequence $0\to\mathfrak h\to\mathfrak{so}(5,1)\times\mathcal C\to T\mathcal C\to0$ is **exact**, with $\mathfrak h$ the anchor's kernel (the adjoint bundle, ten-dimensional) and $\mathfrak m$ its image (the five dimensions of the base), closing at $10+5=15=\dim\mathfrak{so}(5,1)$. **And a splitting of that sequence is what a connection is** — so the section supplied to select a definite flow is a connection in the standard sense rather than an object peculiar to this construction.
+② REGISTER — **RECEIPT-ANCHORED**, exactness verified at every term on explicit matrices.
+③ HOME — P12 §4 (relocated there r4083; it had lived only in the abstract).
+④ ANCHOR — `I55_the_atiyah_sequence_is_exact_and_a_characteristic_class_is_not_available`; ledger `index_theory`.
+⑤ JOINS — [[p10-canonical-time]] · [[p17-geometric-core]] · [[p5-groupoid]] (the action groupoid integrating it).
+⑥ NOT OP FOR — *The receipt's own name carries the negative half*: **a characteristic class is not available.** An entry citing the exactness without it takes only the affirmative half of a result whose key says both.
+
+### the-structure-function-is-the-coset-metric-and-the-signature-is-the-content
+① CLAIM — The coefficient $h^{ab}$ — the structure *function* that makes the algebra an algebroid and is the canonical root of the problem of time — is, **on the symmetry-reducible reduction**, identified with the coset metric of the symmetric space.
+② REGISTER — **IDENTIFIED**, receipt-anchored, and **the paper immediately says it is not a naive tensor equality**: $h^{ab}$ is the Riemannian inverse spatial 3-metric while the coset metric is the Lorentzian 5-dimensional form of signature $(1,4)$. *The identification is of the **reduced** structure function on the symmetric-cut pattern with that coset form.*
+③ HOME — P12 §4.
+④ ANCHOR — `P12_coset_metric`.
+⑤ JOINS — [[p10-canonical-time]] · [[p9-range-paper]].
+⑥ NOT OP FOR — **⛔ What makes it more than dimensional bookkeeping is the signature**: the indefinite Lorentzian sign is *supplied by the substrate's own geometry* rather than inserted. *A synthesis stating "the structure function is the coset metric" flat, without the reduction and the signature, has asserted the naive equality the paper explicitly disclaims.*
+
+### the-stratification-read-as-first-integrals
+① CLAIM — As the cut moves off the symmetric vacuum the isotropy drops, and its strata are the range paper's Petrov classes — Type O (isotropy dimension ten), Type D (SdS four, Kerr–de Sitter two), Type I (Bianchi three, Zipoy–Voorhees two), and the wall (isotropy zero). **Read as a count of first integrals, the stratification says where the construction's hidden symmetry is needed and where it is not**: a Killing vector contributes one linear integral and the Casimir a quadratic one, against the four in involution a four-dimensional geodesic flow requires.
+② REGISTER — **ESTABLISHED**, dimensions computed.
+③ HOME — P12 §5.
+④ ANCHOR — the section's own.
+⑤ JOINS — [[p9-range-paper]] (**the same strata; P9's isotropy tabulation cites this paper**) · [[p11-dynamics]] · [[p6-shadow-of-existence]] (transitivity ↔ modulus).
+⑥ NOT OP FOR — **The symmetric-space relation survives at Type O and Nariai ONLY**; at every other stratum there is structure-function variation — *the algebroid connection*. And the $\mathfrak{so}(5,1)$-action on the base is **non-transitive**, the mass being a transverse modulus — which is P6's second sense of "modulus", the one its criterion does **not** exclude.
+
+### both-factors-of-Aut(A2)-are-realized-geometrically
+① CLAIM — The $S_3$ permutes the three horizon roots, which — the cubic having no quadratic term — are three zero-sum weights $120^\circ$ apart on the throat-image circle. The $\mathbb Z_2$ is the **central inversion**, and it has a clean geometric form: $\mathrm{dS}_5$ is **doubly ruled** by null generators — the comoving and synchronous congruences — and the inversion **exchanges the two families**, an orientation-reversing isometry swapping the rulings where an orientation-preserving one fixes each. Explicitly $R=\mathrm{diag}(1,1,-1,1,1,1)$, determinant $-1$ globally and on the ruled three-block, sending $r_0\mapsto-r_0$ hence $2M\mapsto-2M$. The two factors act on **independent structures** — three roots and two rulings — and the inversion is central, *which is why $\mathrm{Aut}(A_2)$ is a direct product*.
+② REGISTER — **VERIFIED DIRECTLY**, and it supplies the geometric reason for what P5 obtained algebraically.
+③ HOME — P12 §8.
+④ ANCHOR — the section's own.
+⑤ JOINS — [[p5-groupoid]] (**which gets $D_6$ algebraically; this says why it is a direct product**) · [[p11-dynamics]] · [[p13-boundary]] · [[p14-matter-sector]].
+⑥ NOT OP FOR — **⛔ The convergence to record: the double-ruling swap, the orientation parity $\mathrm O(5,1)/\mathrm{SO}_0$, the $A_2$ diagram automorphism, and the graviton chirality are ONE AND THE SAME $\mathbb Z_2$.** *Four descriptions arrived at in four papers, identified here.*
+
+### the-dimension-is-a-floor-and-no-upper-bound-exists-anywhere
+① CLAIM — Stated plainly and against the programme's own convenience. The construction generates *many distinct* four-geometries from *one* substrate, and slicing a four-dimensional de Sitter space only re-coordinatizes it — **which excludes $\mathrm{dS}_4$ and yields $D\ge5$, a lower bound and not an equality. NO UPPER BOUND IS ESTABLISHED ANYWHERE IN THIS FRAMEWORK.** The ontological commitments fix only the existent — a one-parameter family of *three*-dimensional layers, the sole dimensional statement in any axiom — and require of the representation only that it admit them as spacelike hypersurfaces, so $\dim M\ge4$ with the projection explicitly non-unique; the empirical forcing is of the foliation, likewise a floor. **$\mathrm{dS}_5$ is the *minimal* substrate sufficient for the sector built here — a modelling economy, not a derived maximum.**
+② REGISTER — **⛔ EXPLICIT NEGATIVE, receipt-anchored.**
+③ HOME — P12 §2.
+④ ANCHOR — `P12_polar_dimension`.
+⑤ JOINS — [[p6-shadow-of-existence]] (**the dimension is P6's boundary case, settled by content rather than form**) · [[p17-geometric-core]] · [[p7-cr-framework]].
+⑥ NOT OP FOR — **And the polar structure does not close the gap either**: the polar of a spacelike substrate point is $\mathrm{dS}_{D-1}$ in *every* dimension, *which relates the rungs without capping them*. **⛔ ANY SYNTHESIS SENTENCE TREATING FIVE DIMENSIONS AS DERIVED CONTRADICTS THIS PAPER DIRECTLY.**
+
+
+---
+
+# P13 · `corpus/boundary_paper.tex`
+### *The boundary: colour is not a substrate isometry, and what the two real forms do carry*
+
+> **▣ THE READ IS COMPLETE** *(r4085). P13 is the theoretical half of the first application pair, and carries
+> its own synthesis because its chain reaches back through P3, P5 and P7--P12. **Its abstract needed no cut**
+> — 1102 words with nothing living only there — the second paper of the thirteen for which that was true.*
+
+### the-register-is-fixed-before-the-result
+① CLAIM — **P13 states what it is not claiming before it claims anything**, on the ground that *a negative result is as easy to overstate as a positive one.* **Established**: colour does not arise as a continuous internal gauge symmetry of this geometry through any examined geometric-isometry route. **Not established, and not claimed anywhere**: the universal statement that no construction whatever could yield the Standard Model from this geometry. **And not the subject at all**: colour by the ordinary route, an $\mathrm{SU}(3)$ matter bundle placed on the spacetime by hand, *which is in no jeopardy.* The subject is the specific hope of reading colour off the geometry as one reads gravity.
+② REGISTER — **SCOPE, fixed at the outset in the paper's own voice.**
+③ HOME — P13 §1.
+④ ANCHOR — none.
+⑤ JOINS — [[p5-groupoid]] (whose $A_2$-is-not-colour remark is the same guard from the other side) · [[p14-matter-sector]] · [[p6-shadow-of-existence]].
+⑥ NOT OP FOR — **⛔ THIS IS THE ENTRY THE SYNTHESIS MOST NEEDS AND MOST EASILY LOSES.** *A results paper reporting "the corpus shows colour is not geometric" without the register has made the universal claim P13 explicitly refuses.* The result is about **one route**, and the ordinary route is untouched.
+
+### the-sigma-lift-fails-because-the-two-operations-differ-on-every-axis
+① CLAIM — The tempting bridge is that the real involution $\sigma$ **is** the Wick rotation, so the real $A_2$ skeleton would be the shadow of the Wick-face $\mathfrak{su}(3)$ and colour would lift continuously. **Computed in the embedding coordinates rather than judged by family resemblance, the bridge fails.** The Wick rotation complexifies the global *timelike* coordinate, sends the Lorentzian metric to the Euclidean, is *imaginary*, and **changes the geometry**. $\sigma$ is a *real* Weyl reflection of the spatial sky/root plane; it fixes $x_0$, **preserves both signatures** — so it is not a signature change at all — and **fixes the manifold**, permuting charts of one rigid geometry.
+② REGISTER — **COMPUTED**, receipt-anchored.
+③ HOME — P13 §2.1.
+④ ANCHOR — `P13_sigma_lift`.
+⑤ JOINS — [[p3-sds-slicing]] · [[p5-groupoid]] · [[p12-algebroid]].
+⑥ NOT OP FOR — **⛔ THREE OPERATIONS ARE CO-LOCALISED AT THE EQUATORIAL SEAM AND ONLY ONE LANDS WHERE COLOUR LIVES.** The real Weyl reflection $\sigma$ (fixes $x_0$, the signature, the geometry); the **seam continuation** $\theta\mapsto\pi/2+i\psi$, which flips the signature of a *single slicing curve* and reaches the equatorial $S^4$ with isometry $\mathrm{SO}(5)$; and the **global Wick** $x_0\mapsto ix_0$, reaching $S^5$ with $\mathrm{SO}(6)\supset\mathfrak{su}(3)$. *Reading $\sigma$ as the bridge conflates the first with the third; reading the seam continuation as it conflates two **imaginary** operations with different targets.* **The $S^4$ is not the $S^5$, and five dimensions are not enough.**
+
+### the-index-obstruction-and-the-escape-it-closes
+① CLAIM — A fourth face to the same wall, with forty years behind it: even granting the gauge structure its home on the compact face, **the chiral matter charged under it cannot be obtained from the geometry there.** On a compact connected even-dimensional spin manifold carrying a non-trivial smooth action of a **compact connected** Lie group by isometries, the equivariant Dirac index vanishes; for a non-abelian compact group it is killed a second way, by positive scalar curvature and Lichnerowicz. **The load-bearing hypotheses are compactness and a continuous isometry — not a product or Kaluza–Klein structure**, so *reading the absence of a product as a reprieve removes a premise the theorem never used.*
+② REGISTER — **CITED CLASSICAL THEOREM**, applied with its hypotheses checked.
+③ HOME — P13 §3.
+④ ANCHOR — none; Atiyah–Hirzebruch, Atiyah–Singer, Lawson–Yau, Lichnerowicz.
+⑤ JOINS — [[p11-dynamics]] (**one mechanism read in two sectors — the gravitational sector is chiral precisely through the disconnected component the obstruction cannot touch**) · [[p14-matter-sector]].
+⑥ NOT OP FOR — **⛔ The non-compactness escape is closed, and the argument is subtler than "the index bites".** The escape presupposes a continuous $\mathfrak{su}(3)$ acting by isometry on the non-compact substrate whose non-compactness might shelter a chiral sector. But **$\mathfrak{su}(3)$ is not an isometry of the real substrate at all**, so it acts only on the compact face, *which is compact.* **Where $\mathfrak{su}(3)$ acts as an isometry the manifold is compact, and where the manifold is non-compact there is no such action to protect** — a localisation argument independent of whether the index ever bites.
+
+### colour-closure-rests-on-the-causal-structure-not-on-the-compact-face's-status
+① CLAIM — **The most secure layer, and P13 says so.** That $\mathfrak{su}(3)$ is not a symmetry of the world the matter inhabits **does not depend on any claim about the compact face**; it follows from the causal structure. The cosmogenesis is a **signature-preserving** reassignment on the real Lorentzian substrate — a null congruence promoted to the fundamental timelike one, manifold and signature held fixed — and the matter rides that real Lorentzian horn. Colour lives on the compact face reached only by the global Wick.
+② REGISTER — **ESTABLISHED on the causal structure**, and explicitly independent of the face's ontological status.
+③ HOME — P13 §4.1.
+④ ANCHOR — none.
+⑤ JOINS — [[p1-bh-causality]] · [[p7-cr-framework]] · [[p12-algebroid]].
+⑥ NOT OP FOR — *The layering is the point*: the closure survives whatever verdict is reached about what the compact face **is**, so a synthesis may carry it without carrying the face's status.
+
+### charge-conjugation-factorises
+① CLAIM — **The boundary is a shape, and a shape has an inside.** The negatives are the perimeter; what they enclose is a positive result the negatives alone could not reach. The reflections the substrate **does** carry, composed with the antilinear complex-analytic face, are exactly charge conjugation's **kinematic** content — and their composite is the cosmogenesis itself. **The statement is made on the full analytic object and not on any real slice**, which is the level at which alone it can be made: $r\mapsto-r$ and $\tilde\tau\mapsto\bar{\tilde\tau}$ are stated together on $\mathbb C_r\times\mathbb C_{\tilde\tau}$, and the neutral/charged and particle/antiparticle distinctions are properties of that object, *not of a chart drawn through its real part.*
+② REGISTER — **PROPOSITION**, with the factorisation into a geometric kinematic face and a field-level charge sign.
+③ HOME — P13 §6, `prop:conjugation-closure`.
+④ ANCHOR — the section's own.
+⑤ JOINS — [[p3-sds-slicing]] (**mass $R$-odd, charge $R$-even, settled at the geometric level; the field-level closure adjoins an independent $\mathbb Z_2$**) · [[p5-groupoid]] · [[p7-cr-framework]].
+⑥ NOT OP FOR — **The geometric face is not the whole of $C$** — the charge sign closes from the field, not from the geometry, and *the factorisation is the result rather than an identification of the two.*
+
+### the-two-real-forms-carry-the-divide
+① CLAIM — **P13's own synthesis, and it is the positive statement the wall makes room for.** It is *not* that the substrate yields the Standard Model — the wall stands — but that **the divide the last century drew between the gravitational and the quantum, and between gravity and the gauge forces, is one substrate read on its two real forms.** *The Lorentzian form carries the framework*: the Dirac constraint algebra is the symmetric-space coset structure of $SO(5,1)/SO(4,1)$, its structure function the coset metric and the "wrong sign" obstructing a global time the coset's own indefinite signature; read on the forced foliation the constraint deparametrizes to a true Hamiltonian. *The Euclidean form carries the gauge and the quantum scale*: colour requires the **full** $\mathrm{SO}(6)$, since the smallest faithful real representation of $\mathfrak{su}(3)$ is six-dimensional — so $\mathfrak{su}(3)\subset\mathfrak{so}(6)$ but **not** $\subset\mathfrak{so}(5)$ — and the quantum of action enters through the horizon's thermal state at period $\beta=2\pi\alpha$, *on the same face.*
+② REGISTER — **SYNTHESIS**, stated at the weight its pieces carry.
+③ HOME — P13 §8.
+④ ANCHOR — none; the pieces' own.
+⑤ JOINS — [[p12-algebroid]] · [[p10-canonical-time]] · [[p17-geometric-core]] · [[p14-matter-sector]].
+⑥ NOT OP FOR — **⛔ The dimension count is the load-bearing detail and it is exact**: five dimensions do not suffice for colour, which is *why* the seam continuation's $S^4$ cannot be the home and the global Wick's $S^5$ can. **And the two forms are not co-equal worlds** — P13 fixes an asymmetry between them, and the synthesis must carry that rather than presenting a symmetric pair.
+
 ---
 
 ## THE FRONTIER GATHER
