@@ -2023,6 +2023,26 @@ note to self carries the same risk and matches no keyword. **A comment sweep is 
 ⑤ JOINS — [[p7-cr-framework]] · [[p15-cr-cosmology]].
 ⑥ NOT OP FOR — **⛔ THE GATE REFUSES TO SAY WHICH SIDE IS RIGHT, AND THAT REFUSAL IS THE INSTRUMENT'S BEST FEATURE.** *It reports that the rails diverge and tells the reader to diff against the papers first, recording that at `r3536` all 27 differing lines had the **generated** side correct and the index stale.* **Here the case is the opposite** — the papers dropped citations and the index followed them — *and the only way to know which is to look.* **A gate that ran its own fix automatically would have been right once and wrong once.**
 
+
+# L11 · `ENTRY_POINT_REGISTER.md` and the logged not-founds
+### *Every gap the corpus advertises, with its door — and the searcher-side record*
+
+### the-register-scopes-itself-honestly-and-its-count-is-exact
+① CLAIM — **The instrument exists for a failure the programme keeps having**: *a paper advertising an opening that another paper has already walked through.* **Read before believing a gap.** It declares **142 rows**, of which 24 are unmarked, only seven of those are sites at all, five of the seven are section headings — *correctly unmarked, since a heading is not a claim* — and the seventh already carried its own verdict: *"a phantom, and I built it from the advertisement."*
+② REGISTER — **REFERENCE**, and its declared count is **exact**: 159 pipe lines, 17 header and separator, **142 data rows**.
+③ HOME — `ENTRY_POINT_REGISTER.md`.
+④ ANCHOR — its own recount.
+⑤ JOINS — `THE_FRONTIER` · `THE_REGISTER` · every paper's stated openings.
+⑥ NOT OP FOR — **⌗ AND IT SCOPES ITSELF RATHER THAN OVERCLAIMING**, which is why this pass had nothing to correct in it: *"the corpus has moved since, so the catalogue is a snapshot rather than a live scan — for what is open, read `THE_FRONTIER`."* **A snapshot that says it is a snapshot and names the live source is not stale; it is correctly scoped**, and it is the one instrument this phase found needing only its currency re-declared.
+
+### a-not-found-is-a-fact-about-the-search-and-has-a-form
+① CLAIM — **The corpus logs empty searches rather than suppressing or overstating them**, in a three-part form: **NOT FOUND** *(the thing)* · **SEARCHED** *(the documents actually opened)* · **NOT YET CHECKED** *(what remains)*. *Its home was settled by checking rather than by design* — the entry-point register catalogues advertised gaps, the weave is a harvest grid, the open-problems map clusters problems, and **none holds a searcher-side record, because a not-found is a fact about the search and not about the corpus.** The changelog already did, and had for six hundred revisions.
+② REGISTER — **PRACTICE**, with five logged instances closed and three open, each resumable cold because each carries its own two lists.
+③ HOME — `CORPUS_MAP.md`.
+④ ANCHOR — the instances themselves.
+⑤ JOINS — every survey the corpus runs.
+⑥ NOT OP FOR — **⛔ Two were advanced at `r4155` rather than left, both against documents this arc had just read.** *The P14 comb: `THE_RECEIPT_AUDIT` does **not** discharge it, and its two `comb` hits are **`combinatorics`** — a word collision of exactly the kind an earlier not-found had already recorded finding.* *A6.4's gate: the gate phrases return **zero** in `algebroid_paper` read in full, so it is not stated there.* **Neither is closed — each still names remaining documents — and moving an item from NOT-YET-CHECKED to SEARCHED is the whole of what was earned.** *The form is what makes that possible: a search that reports what it did not open can be resumed by someone who opens it.*
+
 ---
 
 ## THE FRONTIER GATHER

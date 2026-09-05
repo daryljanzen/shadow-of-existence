@@ -4,7 +4,7 @@ job: every advertised gap in the corpus, with the door that answers it
 name: entry-point-register
 job: What does the corpus advertise as open, in its own words? Read BEFORE BELIEVING A GAP.
 class: whole-corpus-instrument
-current: r2546+c54.204
+current: r4155
 ---
 
 > **▣ REFERENCE — every gap the corpus ADVERTISES, with its door.** *Read before believing a gap. This
