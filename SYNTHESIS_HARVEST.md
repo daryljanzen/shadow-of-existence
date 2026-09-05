@@ -1983,6 +1983,26 @@ note to self carries the same risk and matches no keyword. **A comment sweep is 
 ⑤ JOINS — `THE_REGISTER` · Phase 3.
 ⑥ NOT OP FOR — **⛔ THE FIRST FIX INFERRED THE OPENING FROM THE EARLIEST REVISION THE ROW NAMED, AND THAT IS A GUESS THAT FAILS WHERE IT MATTERS.** *`PO-25`'s earliest named revision is a **closure it cites** — "Kerr half closed `r2378`" — not its opening, so the inference filed a live post-baseline row as pre-baseline.* **Replaced with a report**: an unstamped live row is named as unstamped and not dated. ***A wrong date is less honest than a named gap, because it looks like knowledge.***
 
+
+# L9 · THE TWENTY-TWO FIELD LEDGERS
+### *The field bakes — what bit, what bounced, and the boundary*
+
+### the-ledger-pass-was-done-properly-and-the-measurement-says-so
+① CLAIM — **All twenty-two carry a landing table**, each built by testing its registers against the corpus rather than against the ledger's own claims — the same instrument the figure-theorem and combinatorics ledgers use, applied across the field. Their currency declarations sit in one tight band, `r3526`–`r3724`: **one pass, run to completion.** Across them the dispositions are heavily weighted to **BOUNCE** — the fields whose own objects the corpus does not have — which is what an honestly run bake looks like.
+② REGISTER — **SURVEY**, measured across all 22 rather than sampled.
+③ HOME — the 22 `*_LEDGER.md` field bakes.
+④ ANCHOR — each ledger's own table.
+⑤ JOINS — every paper carrying an `\ldg{}` marker.
+⑥ NOT OP FOR — *The bounces are not failures and the ledgers do not present them as such*: **a field bake that returns a boundary is a result about where the corpus's objects sit**, and the corpus cites 23 fields precisely because the rest were tried and reported.
+
+### two-substance-owed-results-landed
+① CLAIM — **⛔ SUBSTANCE OWED is the disposition that matters most to a synthesis** — established and verified in a ledger and **absent from every paper** — and two were landed at `r4151`. **`CX1`**: the Hubble tension is a statement about the **rank of a curvature**, not about a value — $\Lambda$CDM's $\chi^2(H_0)$ is *strictly convex* with a unique argmin excluding the measured value, and the geometric rate's is **flat**, a degenerate Hessian whose argmin is a **line** containing it. *P15 carried the picture in a **figure caption** — `parabola` appearing once corpus-wide and `convex`, `convexity` and `Hessian` not at all — and its body never said the two objectives differ in the rank of their curvature.* **`KT1`**: no cusp is reachable for any mass, since a triple root of $r^3-r+2M$ would force the fixed linear coefficient to vanish, so **the turning points are simple or double and never worse** — which makes the fold classification a statement about the whole family rather than about one member.
+② REGISTER — **LANDED at `r4151`**, each into the paper the ledger names.
+③ HOME — `CONVEXITY_OPTIMISATION_LEDGER.md` `CX1`; `CATASTROPHE_SINGULARITY_LEDGER.md` `KT1`.
+④ ANCHOR — the ledgers' own.
+⑤ JOINS — [[p15-cr-cosmology]] · [[p3-sds-slicing]] · [[p2-janzen-circle]].
+⑥ NOT OP FOR — **⛔ AND `CX1` IS THE ONLY BITE ITS FIELD RETURNED**, which is why the ledger was cited by no paper before this: *a bake whose single result never reached a paper reads, from outside, exactly like a bake that returned nothing.* **`KT1`'s value is that it converts a local observation into a completeness claim** — *"nothing in seventeen papers says the fold is the end of it"* — and the ledger checked that in the corpus's own terms rather than its own, finding `triple root`, `catastrophe`, `swallowtail` and `structural stability` all at zero.
+
 ---
 
 ## THE FRONTIER GATHER
