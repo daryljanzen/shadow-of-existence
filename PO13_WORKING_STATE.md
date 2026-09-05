@@ -37,8 +37,44 @@ difference as physics. Withdrawn until both arms are converged.*
 # aborted the step before anything after it ran) made it visible to `check_currency` for
 # the first time. ** Declaring ignorance is not declaring currency, and only the owning
 # line can do the second. **
-current: r3853
+current: r4107
 ---
+
+# ⛔⛭ r4107 — **AND P15 §`sec:refit-bound` IS STILL REPORTING THE SUSPENDED NUMBERS AS ITS LIVE STATE**
+
+***The suspension above is honoured in this document and nowhere else.*** *P15's acoustic section — 539
+lines, a third of the paper — reports the CR arm's figures as the construction's current position. Three
+things are wrong with it and they compound:*
+
+⛔ ***The numbers predate the rate correction.*** *Every P15 acoustic receipt is built at `r2376`–`r2512`.
+`LEAFPERT` became the default at `r3409`, moving the perturbations onto the leaf congruence — which is what
+the framework assigns them, and which **carries the radiation term**. So the section's figures were computed
+on the assignment the framework does not make.*
+
+⛔ ***The paper says this itself and then ignores it.*** *At `sec:refit-bound` it records that $0.570$ was
+computed on the stacking rate, that the framework assigns the perturbations to the leaf, and that **on the
+leaf the first peak's position is no longer in deficit** — spacing $312$ against the sky's $317.5$, and
+$P_1/P_2$ moving to $2.01$ against $2.22$. **It then carries $0.5703$ as the live figure in six further
+places**, including "the first peak still sits where §`sec:refit-bound` measures it, $23\%$ low."*
+
+⛔ ***And the one post-correction figure has no receipt.*** *The leaf-rate numbers are cited to
+`D1_the_diagnosis_is_the_driving_and_the_driving_is_the_rate`, which does not contain them — that receipt
+carries the spacing, phase and coupling attribution, not a leaf-rate run.*
+
+⇒ ***The consequence for the diagnosis is the part that matters.*** *PO-13's answer as the paper states it is
+that the standard driving shift is universal because every mode crosses during radiation domination, and that
+a geometrically fixed rate has no such crossing — so the two coupling channels that cancel in $\Lambda$CDM
+instead add. **On the leaf rate radiation gravitates**, so that argument's premise is the pre-`r3409`
+configuration. The single post-correction data point runs the other way. **Whether the diagnosis survives the
+correction is not known and is not currently in hand.***
+
+⇒ ***So P15's acoustic section is a narration of an arc whose numbers this document has suspended, and the
+restructure it needs is not a de-narration but a re-statement to what is actually known.*** *What is known and
+survives: the acoustic scale is an accommodation and it is spent; the first peak's position is fixed by the
+initial datum, whose two freedoms move it by a factor of $2.26$, so it is not a statement of the construction;
+the instrument, its guard and its control exist, and the control reproduces CAMB once the $k$-integral is
+converged. **What is owed is the CR arm at converged $k$ on the leaf rate** — a long run, and the Code node's.*
+
 
 # ⌗ r3853 — **A SPECULATION OF DARYL'S, AND THE ONE PIECE OF IT THAT IS ARITHMETIC**
 

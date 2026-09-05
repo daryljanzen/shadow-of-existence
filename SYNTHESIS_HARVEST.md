@@ -237,6 +237,10 @@ Nothing is entered from memory: an entry is written with the source open.)*
 # P2 · `corpus/janzen_circle_v3.tex`
 ### *One circle, two poles: the Schwarzschild horizon and $r=0$ as critical points of a single curve*
 
+> **▣ THE READ IS COMPLETE AND ATTESTABLE** *(first pass r4021--r4025 through display filters that dropped
+> lines; re-read r4067 without filters). The two entries at the end of this block are results the filtered pass
+> had not registered.*
+
 > **▣ P2'S FLOOR.** *P2 may use P1's metric singularity and defines its own singularity taxonomy on its own
 > geometry. **Its falsification rests on the analytic structure of $r(z)$ alone** and on nothing later. Its ring
 > is its own subject, claimed at the end. Entries below are P2's; where one names a companion result, it names
@@ -313,6 +317,23 @@ Nothing is entered from memory: an entry is written with the source open.)*
 ④ ANCHOR — `P02_ring_lambda_limit`, `P02_the_approach_is_mass_free`, `P02_the_third_axis_is_two_poles`, `P02_bead_K_mass_free`.
 ⑤ JOINS — [[p3-sds-slicing]] (the horizon cubic and its involution) · [[p5-groupoid]] · [[p7-cr-framework]] (the closed excursion) · [[p13-boundary]] · [[p14-matter-sector]].
 ⑥ NOT OP FOR — **⛔ The two triples are NOT claimed to be one structure**: no derivation producing $\{0,1,2\}$ from a single condition has been exhibited, and P2 says that until one is, the coincidence of the two counts is a coincidence of counts. **And the cycloid establishes only that the extra roots are the ones $\Lambda$ supplies** — everything read off them is the companions'.
+
+
+### why-the-chart-draws-a-place-as-a-line
+① CLAIM — Metric singularities are persistently misread because of **how charts render them**. A chart such as Eddington–Finkelstein parametrises approaches to the singularity by a coordinate well defined in a neighbourhood but degenerating at the singularity itself, so **the single metric place is drawn spread out as an extended line** — the vertical line at $r=2M$. **This is the same projective mechanism by which Mercator draws the North Pole**, and the visual appearance is identical: a place drawn as a line. **But the reason for the appearance is the opposite.** At the pole the chart *manufactures an extension that is not there*, and a chart centred on the pole collapses the line back to the point it always was. At $r=2M$ the chart *spreads out a metric collapse that is*: reading the line back does not yield an ordinary point a better chart would reveal, because **no chart removes it — the collapse is in the metric, not in the projection.**
+② REGISTER — **ARGUED**, and it is the diagnostic P6 later generalises.
+③ HOME — P2 §7.2.
+④ ANCHOR — none.
+⑤ JOINS — [[p6-shadow-of-existence]] (**"formal likeness does not sort the two classes" is this case stated as a rule** — P6 reaches it from here) · [[p1-bh-causality]] · [[p3-sds-slicing]].
+⑥ NOT OP FOR — **⛔ The identical appearance is the whole point and the whole danger.** Two loci drawn the same way by the same mechanism, one a coordinate artefact and one a real collapse — *so no argument from how a singularity is drawn can sort them, in either direction.* The same holds at $r=0$ with the collapse in a different sector.
+
+### construction-not-error
+① CLAIM — **It would misread the analysis to conclude that the swept Schwarzschild geometry is a mistake.** Sweeping the radial curve to recover a spatial geometry is the legitimate and indeed the natural way to chart the geometry from a given vantage, and the result **agrees with the standard geometry on every observable in $r\ge2M$**. What is identified is not an illegitimate operation but a **misreading of its product**: treating features the construction manufactures — the asymmetric labelling, and with it the curvature singularity at $r=0$ — as features of the geometry rather than of the chart. *The construction is faithful as a description from its vantage; the error is ontological.*
+② REGISTER — **SCOPE STATEMENT**, in P2's own voice.
+③ HOME — P2 §7.3.
+④ ANCHOR — none.
+⑤ JOINS — [[p3-sds-slicing]] (the forced pivot) · [[p6-shadow-of-existence]] (perspectival ≠ false) · the $r=0$ cross-paper join above.
+⑥ NOT OP FOR — **⛔ THIS IS THE ENTRY THAT KEEPS THE WHOLE PERSPECTIVAL READING FROM SOUNDING LIKE A DISMISSAL**, and it belongs in the synthesis wherever the reading is introduced. *Nothing standard is being called wrong.* **And P2 goes further, in a direction a partisan paper would not**: the asymmetry is *"where the construction becomes most interesting rather than least"* — that two analytically identical metric singularities are charted into a sharply asymmetric pair is **not a defect to be discarded but a structural fact to be understood**, the symmetry-reduction implicit in sweeping an asymmetric radial profile about one of its endpoints doing work the symmetric underlying structure alone does not display. **Whether that work is purely an artefact of the vantage, or whether the vantage-dependence itself encodes something physical, is raised here and explicitly not resolved.**
 
 ### the-classical-seed-oppenheimer-snyder
 ① CLAIM — $r(z)=M(1+\cos z)$ is, term for term, the scale factor of a closed dust Friedmann–Lemaître cosmology, $a(\eta)=\tfrac{a_m}{2}(1+\cos\eta)$, with cosmic time $t(\eta)=\tfrac{a_m}{2}(\eta+\sin\eta)$ matching $\tau(z)$ under $M\leftrightarrow a_m/2$. **Black-hole collapse and a closed cosmos are one curve, not analogues** — the Oppenheimer–Snyder identity, read at the level of the vacuum areal radius rather than a matched dust ball. And the curve only ever decelerates: the radial acceleration is $-M/r^2$, Newtonian free fall, negative at every radius, so the cycloid has **no turning point of its rate**.
@@ -921,11 +942,15 @@ faces; **it does not cite it for the count**, which is the gap.
 |---|---|---|---|
 | **P1** | 12,085 | read sequentially from the masthead to the bibliography, no section skipped | **complete** |
 | **P4** | 5,906 | completed r4059 — the two floor subsections and the whole history section had been skipped | **complete** |
-| **P2** | 13,604 | most sections opened, but read through display filters that demonstrably dropped lines | **not attestable — re-read owed** |
+| **P2** | 13,604 | re-read r4067 without filters, every section | **complete** |
 | **P6** | 13,134 | completed r4065 — the back half of least-arbitrariness, the modal-fallacy section and the constructive ordering had not been opened | **complete** |
 | **P5** | 16,558 | completed r4063 — rigidity, the seam section, the diagnostic, the cosmological-completion section, the algebroid subsection and the closing had not been opened | **complete** |
 | **P3** | 28,931 | completed r4061 — the horizon-locus, two-readings, charge, temporal-three-ness, rigidity-groupoid, coupled-operations and closing sections had never been opened | **complete** |
 | **P7** | 43,900 | every section, r4049–r4057 | **complete** |
+| **P10** | — | spin-up (uncapped) + arc re-read; r4097 spans reconciled | **complete — verified** |
+| **P11** | — | spin-up (uncapped) + arc re-read; r4095 spans reconciled | **complete — verified** |
+| **P12** | — | spin-up (uncapped) + arc re-read; r4093 spans reconciled | **complete — verified** |
+| **P13** | — | spin-up (uncapped) + arc re-read; r4091 spans reconciled | **complete — verified** |
 
 **⌗ WHAT A PARTIAL READ DEMONSTRABLY MISSES — the two failure modes now have names, from cases.**
 *① **Results living only in the front matter.** Found in P3 (seven), P5 (one), P7 (three). A probe by technical
@@ -936,10 +961,839 @@ was caught only by meeting the same formula again in P7 and then grepping. **So 
 reading carefully; it is caught by recognising a repeat.** A first pass over a single paper is the wrong
 instrument for it, and a corpus-wide grep is the right one.*
 
+**⛔ AND THE r4087 MEASUREMENT WAS ITSELF WRONG, IN THE OTHER DIRECTION.** *It counted only the ARC's
+Phase-1 ranges and ignored the spin-up layer entirely. The session transcript records the spin-up reads, and
+they are **uncapped** — `awk 'NR>=X && NR<=Y'` with no `head`, no `cut`, no `fold` — in large contiguous spans:
+P1 across 190–470, P2 193–555, P3 100–1110 in six spans, P5 142–720, P6 116–380, P7 across 200–1510 in seven.
+The transcript ends at README step 4; steps 5–10 covered P8–P17, the codas, the deliverables document, the
+ontology index and THE_PLAN, and the compaction summary carries their technical content. **So the papers were
+read. The percentages published at r4087 are what had been RE-read under the arc, not what had been read.***
+
+**⌗ THE ACCURATE ACCOUNT, then.** *Every paper was read at spin-up in full uncapped spans. Phase 1 re-read them
+for the arc's purpose, using a display cap that truncated. The defect was claiming that re-read complete when
+it was not, and the defect in the correction was measuring the re-read alone and reporting it as total
+coverage. **Both are failures of verification rather than of reading**, which is why the rule now turns on
+whether a claim can be checked rather than on how much was read.*
+
+**⛔ AND THE FAILURE RECURRED AFTER THE RULE WAS WRITTEN, WHICH IS THE THING WORTH RECORDING.** *The rule that
+"read and harvested" must be earned end to end was written at r4049 after P7. It was then broken on the next
+four papers in a row, each time in a commit message asserting the opposite. **The mechanism was a display cap,
+not a judgement**: reads were issued as `awk 'NR>=X && NR<=Y' | grep -v '^%' | cut -c1-820 | head -12`, and the
+`head -12` truncated every range to twelve lines regardless of its length — so a 58-line section returned twelve
+lines and the transcript looked like a completed read. **A rule does not survive a method that quietly defeats
+it.** The method is changed: no `head` on a section read, no width cap, and long sections read in explicit
+consecutive chunks, so that what was seen is bounded by what was asked for.*
+
 **⌗ AND A THIRD CLASS NO INSTRUMENT SEES AT ALL: LaTeX comments.** *arXiv distributes `.tex` source. One
 working comment in P7 was found by reading and neutralised (r4051); a grep for the specific words found nothing
 else, but that is a weak check — a stale instruction, a private judgement of a named person, or an unresolved
 note to self carries the same risk and matches no keyword. **A comment sweep is owed and is its own pass.***
+
+
+---
+
+# P8 · `corpus/slicing_operator.tex`
+### *Covariance of geometries over the de Sitter substrate: the slicing operator, the vacuum kernel, and matter as the bend*
+
+> **▣ THE READ IS COMPLETE** *(front matter r4073, body r4075). P8's row is semi-independent and sequential,
+> joined to P9. It may use P1--P7.*
+
+### the-covariance-is-one-level-above-general-relativity's
+① CLAIM — General relativity holds **a single geometry** invariant under change of chart; this construction holds **the de Sitter substrate** invariant under change of *geometry*, with the slicing curve as the gauge object. *"Many line elements, one geometry" becomes "many geometries, one substrate."*
+② REGISTER — **A READING, and P8 labels it as one.** *"We will state which parts of this are theorems and which is the reading the theorems ground."* The theorems — vacuum kernel, bend-density identity, lapse split, cosmological geodesic, second-ruling embedding — are computed and verified; **the covariance reading is adopted on their strength and explicitly does not follow from them as a corollary follows from a theorem.**
+③ HOME — P8 §1.
+④ ANCHOR — none.
+⑤ JOINS — [[p12-algebroid]] (where the reading is formalised) · [[p17-geometric-core]] · [[p9-range-paper]].
+⑥ NOT OP FOR — **⛔ The separation of theorem from reading is stated at the outset and is the model for how the synthesis should carry this material.** *The results ground the structural reading; they do not entail it, and P8 says "we do not claim more."*
+
+### the-vacuum-kernel
+① CLAIM — In the construction gauge, $T_{\mu\nu}=0$ **is** the first-order linear ODE $rf'+f-1+\Lambda r^2=0$, whose **entire** solution space is $f=1-2M/r-\Lambda r^2/3$ — the whole SdS family with $M$ the single constant of integration. *The vacuum sector is exactly the kernel of the matter functional, derived rather than matched: **straight cuts are vacuum**.* With the bend section showing every density is realised by some cut, the functional is onto as well, so the two together give **a kernel of dimension one over a vanishing cokernel — a Fredholm index of 1**, generated by that constant.
+② REGISTER — **THEOREM**, proved by substitution with the angular component discharged via Bianchi.
+③ HOME — P8 §3, `thm:kernel`.
+④ ANCHOR — the section's own.
+⑤ JOINS — [[p9-range-paper]] · [[p3-sds-slicing]] (which uses this at general $D$) · [[p7-cr-framework]].
+⑥ NOT OP FOR — **The index reading is not a relabelling and P8 says why**: an index is stable under deformation, so it says the one free constant survives *every* perturbation of the operator that keeps it Fredholm — which is more than this particular equation having a one-parameter solution set.
+
+### the-question-this-answers-was-asked-in-2012
+① CLAIM — The essay that first developed this cosmology named the objection it could not meet: *"if the geometry is not determined by the world-matter, then by what?"* — and answered, *"a detailed answer to this question has not been worked out."* **The vacuum-kernel theorem is that answer.** The geometry is not chosen and not read off the matter: $T_{\mu\nu}=0$ in this gauge *is* a first-order linear equation whose entire solution space is the one-parameter family, so the substrate determines the vacuum sector and the matter is read off as the bend of a cut of it.
+② REGISTER — **PROVENANCE**, cited to the 2012 essay.
+③ HOME — P8 §3, `rem:byWhat`.
+④ ANCHOR — none.
+⑤ JOINS — [[p4-modern-parallax]] (Einstein 1917 runs content → scale; this runs the other way) · [[p17-geometric-core]].
+⑥ NOT OP FOR — *This is the corpus closing a gap it had itself flagged thirteen years earlier, in the flagging author's own words — which is a stronger form of the claim than asserting the result cold, and the synthesis should carry it that way.*
+
+### matter-is-the-bend-and-the-reading-is-not-spherical
+① CLAIM — Writing any curve as a departure from the vacuum profile, $f=1-2m(r)/r-\Lambda r^2/3$, gives $8\pi T^t{}_t=-2m'(r)/r^2$: the energy density $\rho=m'(r)/4\pi r^2$ **is the radial growth-rate of enclosed mass**, the bend of the curve off the constant-$M$ profile. Checked on a non-vacuum member: Reissner–Nordström–de Sitter is the bend $2m(r)=2M-q^2/r$, returning the electromagnetic stress-energy off its $q^2/r^2$ term. **And the reading is not an artefact of the symmetry**: for a general leaf the density is the leaf's intrinsic-curvature departure from the substrate, $16\pi\rho={}^3R+K^2-K_{ij}K^{ij}-2\Lambda$ — **which is the Hamiltonian constraint**, the spherical identity being its symmetric case.
+② REGISTER — **PROPOSITION**, proved, with the general-leaf statement identified as a known constraint rather than a new one.
+③ HOME — P8 §4.
+④ ANCHOR — the section's own.
+⑤ JOINS — [[p9-range-paper]] · [[p11-dynamics]] · [[p7-cr-framework]].
+⑥ NOT OP FOR — **⛔ The identity states WHAT the bend is, not WHY a leaf bends as it does.** *That is the dynamics, and P8 names it as treated elsewhere and open here.*
+
+### the-lapse-split-separates-the-operator's-data
+① CLAIM — With the temporal datum $A$ freed from the spatial profile, $G^t{}_t$ involves the spatial profile **alone**, while the difference $G^r{}_r-G^t{}_t=(f/r)\dd_r\ln(A/f)$ carries the radial pressure — so the lapse enters *only* through that logarithm, and setting $A=f$ annihilates it, returning $p_r=-\rho$. **The operator therefore separates into independent data**: the **leaf** carries the three-geometry and, through its bend, the density (planar → vacuum, bent → density); the **stacking** carries the radial pressure (locked → the rigid vacuum equation of state, unlocked → general $p_r$); the **vantage** carries the signature.
+② REGISTER — **PROPOSITION**, proved by direct computation.
+③ HOME — P8 §5.
+④ ANCHOR — the section's own.
+⑤ JOINS — [[p9-range-paper]] (**where the shift is added as the fourth datum, rotation being neither leaf nor lapse**) · [[p7-cr-framework]] · [[p10-canonical-time]].
+⑥ NOT OP FOR — **The single locked curve reaches only the $p_r=-\rho$ sector.** *The lapse split is what shows the lock is a restriction rather than a feature of the construction.*
+
+### the-three-constant-curvature-leaves-and-the-flat-one-as-output
+① CLAIM — The maximally symmetric spatial sections of the substrate are of exactly three kinds, sorted by the character of the held direction: a timelike direction held fixed gives the round $S^3$ — the **closed** leaf; the null cone $r=\alpha$ gives the horosphere — the **flat** leaf; the third is the **open**, negative-curvature leaf. With it the cosmological sector closes over the full FLRW family of spatial curvatures, dust carried in each case as the bend, the Friedmann equation appearing with its curvature term **being the leaf's own intrinsic curvature** ${}^3R=6k/a^2$.
+② REGISTER — **PROPOSITION**, proved from the embedding.
+③ HOME — P8 §9, `prop:trichotomy`; and §8 for the second-ruling identification.
+④ ANCHOR — the sections' own.
+⑤ JOINS — [[p7-cr-framework]] · [[p15-cr-cosmology]] · [[p3-sds-slicing]].
+⑥ NOT OP FOR — **⛔ The flat leaf is the construction's OUTPUT rather than its input, and the two selections a reader would expect to be independent are not.** $E=1$ is fixed by the field, at the radius where the potential vanishes; $E=1$ **is** the flat leaf $k=0$; and the companion's identification of the degenerate member as the unique non-pivoting cosmological cut fixes the mass. *So the curvature and the mass are each fixed, not chosen.* **And the two turning cubics the framework keeps apart are the $k=1$ and $k=0$ ends of one family** separated by the curvature term — the depressed form being the **versal unfolding of the $A_2$ singularity**, so the family is the complete one rather than a convenient parametrisation.
+
+### the-synchronous-space-is-the-second-ruling
+① CLAIM — The flat synchronous space **is the second null ruling** of the hyperboloid — the horospheres normal to the common past asymptote — so the lapse–shift, the synchronous slicing and the second ruling are **one object**. The $t=-\infty$, $r=0$ singularity of the comoving reading is therefore the artefact of that reading laid over a throat which is the substrate's own scale $\alpha$: *the radius-face of a category error whose time-face is taking the chart's $-\infty$ for the physical age.*
+② REGISTER — **ESTABLISHED**.
+③ HOME — P8 §8.
+④ ANCHOR — the section's own.
+⑤ JOINS — [[p2-janzen-circle]] · [[p3-sds-slicing]] · the $r=0$ cross-paper join above (**this is the sharpest single statement in that chain**).
+⑥ NOT OP FOR — **⛔ Scoped to the COSMOLOGICAL face.** *Whether the same sentence covers the collapse face is not settled here — which is the check the $r=0$ join flagged, and it remains open after the read.*
+
+### p8-scope-and-opens
+① CLAIM — Stated at source: everything proven is **static and spherically symmetric, or its spherical-cosmological reassignment**, and *within that sector the operator is complete* — the cut generates the geometry, the bend the density, the lapse the pressure, the vantage the signature, the substrate invariant under all of it. Two questions are placed and not answered here: **the range** over the rest of general relativity (settled in P9), and **the emergence of the bend** — why a given leaf bends as it does.
+② REGISTER — **SCOPE, stated plainly**, with the range named as answered elsewhere and the emergence as open.
+③ HOME — P8 §10.
+④ ANCHOR — none.
+⑤ JOINS — [[p9-range-paper]] · [[p11-dynamics]].
+⑥ NOT OP FOR — *A completeness claim confined to a named sector is the honest form, and it is the form the synthesis should reproduce: **complete within the sector, silent outside it**.*
+
+
+---
+
+# P9 · `corpus/range_paper.tex`
+### *The range of the de Sitter slicing operator: rotation, algebraic type, and the wall of inhomogeneity*
+
+> **▣ THE READ IS COMPLETE** *(front matter r4071--r4073, body r4077). P9 is P8's joined partner: P8 asks what
+> the operator IS, P9 asks how far it reaches.*
+
+### the-bound-and-that-it-is-attained
+① CLAIM — A swept geometry inherits the sweep's symmetry, and the sweep is by isometries of the substrate, so **every reachable geometry carries an isometry group containing a sweep-subgroup of $\mathfrak{so}(5,1)$** — the range is bounded above by the symmetry-reducible sector. The body then fills that bound class by class. **The argument's shape is named at source**: bounding a reachable class above by a necessary condition and showing the bound attained is how one computes the image of a construction up to isomorphism, and the necessary condition here is the same sentence the geometric core uses to say what a cut *is*.
+② REGISTER — **THEOREM** (`thm:bound`) for the bound; **THEOREM** (`thm:range`) for the range.
+③ HOME — P9 §2 and §8.
+④ ANCHOR — `K7_range_is_essential_image`.
+⑤ JOINS — [[p8-slicing-operator]] · [[p17-geometric-core]] · [[p12-algebroid]] · [[p7-cr-framework]].
+⑥ NOT OP FOR — **The bound is an INCLUSION**, and it is an equality only at the strata where an isotropy is tabulated. *The restriction is structural, not a limit of the survey*: a cut's isotropy preserves the second fundamental form as well as the induced metric, so the two coincide only where the symmetry is large enough to fix the embedding too. **The low-symmetry classes — Type I, Kerr–de Sitter, the wall — are exactly where they need not coincide.**
+
+### in-class-surjectivity-and-what-the-content-actually-is
+① CLAIM — Within a reachable class the operator's four data — **leaf, lapse, shift, vantage** — supply exactly the functions the general invariant metric admits, so the cut spans the class.
+② REGISTER — **PROPOSITION**, established case by case.
+③ HOME — P9 §3.
+④ ANCHOR — none.
+⑤ JOINS — [[p8-slicing-operator]] (the spherical case).
+⑥ NOT OP FOR — **⛔ P9 says plainly that the surjectivity is NOT the content.** *"Once the cut carries the class's function count, the cut ansatz is the general invariant metric, and spanning is near-tautological."* **The content is the identification of the vacuum members as the substrate's family — the kernel — and of matter as the bend.** *A synthesis that reports "the operator is surjective on the sector" as the result has reported the near-tautological half.*
+
+### rotation-is-the-shift
+① CLAIM — Every symmetric cut is block-diagonal, because a symmetric sweep makes the orbits orthogonal to the cut — so it cannot carry the cross term $g_{t\phi}$ in which frame-dragging lives. **Rotation is therefore neither the leaf nor the lapse but the shift**, the off-diagonal datum the spherical and homogeneous cuts set to zero. And **angular momentum needs both the offset and the twist**: $J=Ma$, *the offset alone is Schwarzschild–de Sitter, the twist alone is de Sitter.* The mass-free rotation-only limit is not merely vacuum but **maximally symmetric** — its Riemann tensor is the constant-curvature form — so the twist alone is a rotating, oblate slicing of the substrate itself and **not a new geometry**.
+② REGISTER — **PROPOSITION**, proved.
+③ HOME — P9 §5.
+④ ANCHOR — the section's own.
+⑤ JOINS — [[p8-slicing-operator]] (which has three data; the shift is the fourth) · [[p7-cr-framework]] · [[p11-dynamics]].
+⑥ NOT OP FOR — *Naming which datum is which fixes the cosmological reading with no room for a wrong turn* — the leaf's bend is the matter, the lapse is the stacking rate the observable expansion rides.
+
+### the-separable-type-D-vacuum-kernel
+① CLAIM — The separable (Carter) cut is vacuum-$\Lambda$ **if and only if** its structure functions are **quartics**, with the leading coefficient $-\Lambda/3=-1/\alpha^2$ of both **pinned by the substrate**. The four free coefficients are the mass, the rotation, the NUT charge and a coordinate normalization — so the rotating vacuum kernel is the complete *separable* Type-D vacuum-$\Lambda$ family, Kerr–NUT–(A)dS, with SdS one member and Kerr–de Sitter the addition of the twist.
+② REGISTER — **THEOREM**, iff, receipt-anchored.
+③ HOME — P9 §6, `thm:pd`.
+④ ANCHOR — `P09_typeD_quartics`.
+⑤ JOINS — [[p8-slicing-operator]] · [[p12-algebroid]] · [[p13-boundary]].
+⑥ NOT OP FOR — **Acceleration — the remaining Plebański–Demiański parameter — does not appear and is NOT a vacuum parameter.** *And this is the separable corner only; the next entry is why that is not the whole reach.*
+
+### algebraic-type-is-no-constraint
+① CLAIM — The Type-D kernel **might** suggest the operator reaches only the algebraically special corner. **It does not.** Speciality is detected by the Weyl invariants ($I^3-27J^2$ vanishing, equivalently two coincident eigenvalues of the self-dual Weyl operator), and the separation is verified directly: SdS, Kerr–de Sitter and the axisymmetric Bianchi members are Type D, while **the generic members are Type I** — three distinct eigenvalues, the speciality ratio varying over the manifold. Two independent witnesses: the generic vacuum-$\Lambda$ Bianchi-I cosmology at three Killing vectors, and the **Zipoy–Voorhees $\gamma$-metric** — static axisymmetric vacuum, **non-separable** — at two, Type I for $\gamma\neq1$ and Type D exactly at $\gamma=1$.
+② REGISTER — **PROPOSITION**, receipt-anchored, verified from the Weyl eigenvalues.
+③ HOME — P9 §7.
+④ ANCHOR — `P09_bianchiI_typeI`.
+⑤ JOINS — [[p12-algebroid]] · [[p7-cr-framework]] (the general-reach axes).
+⑥ NOT OP FOR — **⛔ The radiative types are absent, and that absence is not a gap but the wall's positive identity** — see below. *"Petrov O, D and I are filled" is the exact claim; N and III are not, and the synthesis must not round it to "all types".*
+
+### the-wall-and-why-the-obvious-statement-of-it-is-wrong
+① CLAIM — **THEOREM**: the range is the symmetry-reducible sector. The kernel's size is set by how much symmetry the class spends — a finite parameter family where the class reduces to ODEs (one for SdS, four for Type D, the finite KS family), a functional family where it remains a PDE problem. **The wall is the loss of isometry**, and it has a *positive* identity: **the onset of free gravitational radiation**, the graviton's two propagating polarizations, read on the matter side as dynamical inhomogeneous sources. *The reachable sector is the constrained, non-radiative skeleton of general relativity.*
+② REGISTER — **THEOREM AND COROLLARY**.
+③ HOME — P9 §8, `thm:range`, `cor:wall`, `cor:radiation`.
+④ ANCHOR — the section's own.
+⑤ JOINS — [[p11-dynamics]] (**which walks past the wall and shows it regular**) · [[p14-matter-sector]] · [[p7-cr-framework]].
+⑥ NOT OP FOR — **⛔ THE CONVERSE FAILS, AND P9'S OWN EXEMPLAR IS THE WITNESS AGAINST IT.** The type-N plane wave beyond the wall carries a **five**-dimensional isometry algebra — *more continuous symmetry than Schwarzschild's four* — and is vacuum, **with no matter at all to be inhomogeneous.** So the complement of the range is **neither the asymmetric geometries nor the inhomogeneous-matter ones**. *Any synthesis sentence of the form "the wall is inhomogeneity" or "the wall is loss of symmetry" is refuted by the paper's own example, and the correct statement is the radiative one.*
+
+### the-wall-is-a-seam-not-a-defect
+① CLAIM — Two results fix the boundary's character. **First**, the last reachable object before it is constructed exactly: a **confined gravitational wave** — a linearly polarized Gowdy–de Sitter cut with two Killing vectors — on which the transverse-traceless mode evolves by a wave equation while one isometry still pins it. **Second**, the wall acquires a sharp characterization: *a sweep generates a deformation of fixed orientation*, so a confined wave is self-consistent only while it propagates transverse to that orientation, and **the loss of the last confining isometry is exactly the point at which the wave's polarization must reorient**. Read on that orientation, the same boundary is **where chirality becomes generic**: where the sweep carries a rotation it completes the reflection exchanging the two handednesses into an orientation-preserving rotation and so **identifies** them — a mirror rather than a chirality; once the swept rotation is lost, no isometry remains to undo the reflection.
+② REGISTER — **ESTABLISHED**, with the confined wave constructed in the companion.
+③ HOME — P9 §9.
+④ ANCHOR — the section's own.
+⑤ JOINS — [[p11-dynamics]] (**owns the confined wave**) · [[p14-matter-sector]] (**the chirality reading**) · [[p13-boundary]].
+⑥ NOT OP FOR — **The wall is the seam at which generation-by-symmetry hands off to evolution-by-dynamics, and P9 insists it is not a defect to be engineered around.** *And the chirality criterion bites from the loss of the swept rotation onward rather than only at the wall* — which is a wider claim than the wall statement alone and should not be collapsed into it.
+
+
+---
+
+# P10 · `corpus/canonical_time.tex`
+### *The canonical problem of time as a category error: an empirically forced cosmic time, deparametrization, and the graviton sector*
+
+> **▣ THE READ IS COMPLETE, AND THE CLAIM IS VERIFIED.** *r4079 claimed it falsely at 16%; corrected r4087,
+> finished r4097. **Verification**: all nine section spans 143–562 reconciled against the ranges opened, no gap.
+> The four entries at the end are from what the false claim had skipped.*
+
+> **▣ P10's abstract needed no cut — 661 words, nothing living only there,
+> the first paper of the ten for which that was true — and the vocabulary sweep was clean.*
+
+### the-selection-is-the-whole-of-the-move
+① CLAIM — **The paper isolates what it does and does not add, and the isolation is the crux.** The ADM machinery propagates canonical data along whatever foliation it is given; it is indifferent to which, and *in this exact sense the bare formalism contains no resolution of the problem of time and no obstruction to one.* If nothing distinguishes a foliation, the constraint is all there is and the state is frozen. If a foliation is distinguished, the constraint deparametrizes and a true Hamiltonian appears. **The canonical formalism is the same in both cases.** So: *"There is no separate canonical-machinery result to be proved here; the deparametrization is standard once a clock is in hand. The move is the selection. Everything else is reading the textbook on it."*
+② REGISTER — **METHODOLOGICAL, stated at source in the paper's own voice**, and it is a claim about the paper's *own* contribution rather than about the physics.
+③ HOME — P10 §4 (`sec:selection`).
+④ ANCHOR — none.
+⑤ JOINS — [[p4-modern-parallax]] (which supplies the selection empirically) · [[p1-bh-causality]] · [[p5-groupoid]] · [[p7-cr-framework]].
+⑥ NOT OP FOR — **⛔ This is the most honest self-accounting in the corpus and the synthesis must not upgrade it.** *What is claimed is that CR's cosmic time is the physically correct clock, on ontological and empirical grounds rather than formal ones* — not that a new canonical technique has been found. **An entry presenting the deparametrization itself as the result overstates the paper against its own statement.**
+
+### the-selection-comes-from-outside-and-is-independently-singled-out
+① CLAIM — CR supplies the distinguished foliation **from outside the bare formalism**: real, forced empirically by the CMB and conceptually by the occurrence/existence distinction. **And it is the foliation the rest of the programme independently singles out** — the metric-singularity structure of the horizon determines a unique limiting causal orientation in collapse, *generically non-orthogonal to any spacelike slice*, and that is the orientation reassigned as cosmic time.
+② REGISTER — **ARGUED**, with the convergence named as independent.
+③ HOME — P10 §4.
+④ ANCHOR — none.
+⑤ JOINS — [[p1-bh-causality]] · [[p4-modern-parallax]] · [[p5-groupoid]] · [[p7-cr-framework]].
+⑥ NOT OP FOR — *The representational freedom among Lorentzian metrics on the fixed manifold **is** a genuine gauge symmetry* — P10 concedes this rather than denying it, and locates the cosmic foliation as the thing that is not gauge, not as a denial that gauge freedom exists.
+
+### the-asymptotic-mass-question-is-misplaced-rather-than-unanswerable
+① CLAIM — The ADM mass is defined relative to an asymptotic time translation and exists only where the geometry supplies one — which asymptotically-de Sitter spacetimes do not, there being no global timelike Killing vector, so **no conserved charge is well defined there at all**. *On the reading taken here that absence is not a deficiency of the geometry but a misplacement of the question*: the time this construction runs on is not recovered from an asymptotic symmetry but **selected and measured**, so a quantity whose definition waits on an asymptotic Killing vector is waiting on the wrong thing.
+② REGISTER — **A READING**, and marked as the same move as the paper's own.
+③ HOME — P10 §4.
+④ ANCHOR — none.
+⑤ JOINS — [[p3-sds-slicing]] (**where the standard definitions are evaluated and all return the slicing-dependent $M$**) · [[p5-groupoid]] (**$\alpha$ the invariant curvature radius, a length not a mass**).
+⑥ NOT OP FOR — This does not supply a mass charge; *it says why the absence of one is not a defect.* **The three entries — P3's evaluation, P5's uniqueness argument, and this reading — are one answer distributed across three papers.**
+
+### the-friedrichs-extension-is-closed-by-the-horizon's-own-state
+① CLAIM — The quantization carries a **deficiency-index $(1,1)$ ambiguity** — a one-parameter family of candidate quantizations — and it is closed **without stipulation**: the boundary at $a=0$ is the de Sitter horizon, its surface gravity is $\kappa=1/\alpha$, and the regular Euclidean state at that $\kappa$ leaves nothing to choose. **That is the same condition the cosmogenesis kernel enforces** — regularity in the Euclidean continuation. *The extension-fixing and the lift's kernel are one requirement met twice, once at the horizon and once across the beginning.*
+② REGISTER — **DERIVED**, with the closure explicitly not a stipulation.
+③ HOME — P10 §6.
+④ ANCHOR — the section's own.
+⑤ JOINS — [[p1-bh-causality]] · [[p7-cr-framework]] · [[p16-cosmogenesis]].
+⑥ NOT OP FOR — **⛔ AND THE CLOSURE IS AVAILABLE ONLY BECAUSE OF P1, WHICH IS THE SHARPEST JOIN IN THIS PAPER.** A regular Euclidean state exists at a horizon only if the continuation is smooth there — no conical defect, curvature finite. The horizon at $a=0$ is a **metric** singularity, spatial measure collapsing while curvature stays finite, **and not a curvature singularity**; had it been the latter there would be no smooth Euclidean section, no regular state to select, and the extension would remain unfixed. *So the distinction that dissolves the information paradox is the same distinction that makes this quantization unique.*
+
+### the-beginning-is-a-boundary-of-zero-duration-within-the-evolution
+① CLAIM — Cosmogenesis occupies **no cosmic time at all**, so the evolution operator across it is $U(\Delta\tau=0)=\mathbb 1$: *the true Hamiltonian has no interval in which to act there.* The geometry nonetheless changes across the segment — the areal radius climbs from the turnaround to zero, the expansion rate is carried from zero to divergent — so **the change is not generated by the Hamiltonian but is the segment's own analytic content**, the contour read at another point of itself. *The beginning is therefore not a first instant of the evolution but a boundary of zero duration within it — and that is why nothing can be lost across it: no evolution acts, so none can be non-unitary.*
+② REGISTER — **CLASSICAL STATEMENT plus its immediate consequence**, with the limit marked at source.
+③ HOME — P10 §5.
+④ ANCHOR — the section's own.
+⑤ JOINS — [[p7-cr-framework]] (the lift) · [[p16-cosmogenesis]].
+⑥ NOT OP FOR — **⛔ The limit is stated plainly: what is NOT established here is a quantization of the Euclidean segment itself.** The state on either side is related by the identity in cosmic time; whether the imaginary-time segment admits its own quantum treatment is a separate question. **And one thing is open at its stated size**: the kernel's frequency is not constant along the segment, so *the projection is adiabatic rather than exact*, and the residual at the largest scales is one face of that.
+
+### the-graviton-lift-is-the-substantive-canonical-content
+① CLAIM — The minisuperspace illustration truncates the layer to its scale factor and **carries no propagating degree of freedom**, so it cannot exhibit what the true Hamiltonian generates beyond the background expansion. The full layer does: the **transverse-traceless shear of its spatial geometry, the graviton**. On the closed synchronous slicing $a(T)=\alpha\cosh(T/\alpha)$, the TT perturbation decomposes into $S^3$ tensor harmonics with $\mu_n^2=n(n+2)-2$, $n\ge2$, and the second-order action deparametrizes on the absolute foliation exactly as the background does.
+② REGISTER — **CARRIED OUT**, not asserted; and named by the paper as *the* substantive canonical content.
+③ HOME — P10 §7 (`sec:lock`).
+④ ANCHOR — the section's own.
+⑤ JOINS — [[p11-dynamics]] · [[p9-range-paper]] (the TT shear is the same object the wall is stated on) · [[p7-cr-framework]].
+⑥ NOT OP FOR — **⛔ Where it stops is named**: the free tower evolves on $a(T)$ as a **fixed classical background**; the coupled sector — once the scale factor is itself quantized and back-reacts — is a different regime. *P10 raises the natural worry against its own counterterm argument (that a counterterm basis is a statement about a class of fixed backgrounds, so quantizing the scale factor leaves no fixed background to state it on) and answers it rather than leaving it.*
+
+### dissolution-not-solution
+① CLAIM — **Stated negatively, which is the right way round.** *"We have added nothing to the formalism. We have not introduced a new time variable, nor a matter field whose role is to be a clock, nor a modification of the constraint algebra. We have identified, on external grounds, which foliation is physically real, and read the existing constraint on it."* **The problem of time was never a problem internal to the formalism**; it was the formalism faithfully reporting the consequences of an ontological premise — the block — that is both a category error and empirically false. *A solution would add structure to make a defective formalism work; a dissolution removes a mistaken premise and finds the formalism was working all along.*
+② REGISTER — **VERDICT**, with the distinction argued rather than asserted.
+③ HOME — P10 §8.
+④ ANCHOR — none.
+⑤ JOINS — [[p6-shadow-of-existence]] (the four rules, each favouring this reading) · [[p7-cr-framework]] (the dissolution family) · [[p4-modern-parallax]].
+⑥ NOT OP FOR — **The canonical face and the geometric face are two descriptions of one evolving three-dimensional world** — the true Hamiltonian advances the layer; the operator and range papers read the geometry of that advance, matter as the bend and radiation as the TT shear, up to the wall. *The loop closes with the geometric side rather than standing apart from it.*
+
+
+---
+
+# P11 · `corpus/dynamics_paper.tex`
+### *Why the cut bends: the dynamics of the de Sitter cut, the confined graviton, and the wall*
+
+> **▣ THE READ IS COMPLETE, AND THE CLAIM IS VERIFIED.** *r4081 claimed it falsely at 35%; corrected r4087,
+> finished r4095. **Verification**: all nine section spans 171–348 reconciled against the ranges opened, no gap.
+> The three entries at the end are from what the false claim had skipped.*
+
+> **▣ Abstract cut 1444 → 459 words; two results and two receipts relocated
+> into the body first, and one orphaned citation restored.*
+
+### the-symmetric-sector's-dynamics-in-closed-form
+① CLAIM — On any comoving worldline of a symmetric cut, **at any energy**, $\dd^2r/\dd\tilde\tau^2=-f'/2=rK_G$ with $K_G$ the slicing surface's Gaussian curvature. **So the rate at which the symmetric cut's bend changes in time *is* the bend itself**, up to the areal factor: the cut straightens, is momentarily flat, and bends the other way as the geometry passes its one sign change. *That is the whole of the symmetric sector's dynamics.*
+② REGISTER — **RECEIPT-ANCHORED**, and general in the energy.
+③ HOME — P11 §1 (relocated there r4081; it had lived only in the abstract).
+④ ANCHOR — `P03_acceleration_is_slice_curvature`.
+⑤ JOINS — [[p3-sds-slicing]] (**the same $f'$ zero the curvature crossover reads — one zero seen twice**) · [[p8-slicing-operator]] · [[p5-groupoid]].
+⑥ NOT OP FOR — *This is why the inhomogeneous case needs a paper*: the symmetric sector's answer is a closed form, and everything P11 builds is the first case in which the bend is **not** symmetric.
+
+### the-two-polarizations-are-a-wave-map-into-the-hyperbolic-plane
+① CLAIM — In the variables $P=2\psi-\ln R$, $Q=\omega$, the torus block's equations are **identically** the harmonic-map system for a map from the $(t,z)$ plane, with density $R$, into the target $\dd P^2+e^{2P}\dd Q^2$ — a metric of Gaussian curvature $-1$, **the hyperbolic plane**. *So the two polarizations are not two decoupled fields but one point moving on a negatively curved surface*, the polarized case being the geodesic $Q=\text{const}$ and the turning of the polarization plane being motion off it.
+② REGISTER — **DERIVED, identically**, receipt-anchored.
+③ HOME — P11 §2.1 (`sec:unpolarized`).
+④ ANCHOR — `P11_unpolarized_gowdy_cut`.
+⑤ JOINS — [[p9-range-paper]] · [[p10-canonical-time]] (the graviton tower) · [[p14-matter-sector]].
+⑥ NOT OP FOR — **⛔ And $\Lambda$ is ABSENT from that sector entirely**: both wave-map equations hold with no cosmological term, which enters only the area and conformal equations. *In the wave-map variable the graviton propagates freely and $\Lambda$ drives only the area* — and this **explains** the source term that appears in the polarized wave equation, which is the area equation in changed variables. *It is the second polarization that forces the variable in which this is visible.*
+
+### the-handedness-is-a-conserved-charge-and-its-parity-is-disconnected
+① CLAIM — The helicity-flipping parity $x\mapsto-x$ is exactly $Q\mapsto-Q$ with $P$ fixed — an isometry of the target whose differential has determinant $-1$: **it reverses orientation, so it lies in the component of $\mathrm{Isom}(\mathbb H^2)$ the identity component does not reach. No connected target isometry identifies the two handednesses.** On the homogeneous reduction the twist $c=Re^{2P}Q_t$ is conserved, and the parity acts as $c\mapsto-c$. **So on the reachable sector the graviton's handedness is the sign of a conserved charge**, with $c=0$ the polarized achiral cut.
+② REGISTER — **DERIVED**, with $c\neq0$ solutions exhibited and the first integral reproduced along them.
+③ HOME — P11 §2.1 and §6.
+④ ANCHOR — `P11_unpolarized_gowdy_cut`, `P11_wall_ppwave`, `P09_the_wall_is_not_the_loss_of_symmetry`.
+⑤ JOINS — [[p5-groupoid]] (**the same orientation $\mathbb Z_2$: the $A_2$ diagram automorphism, the vantage-swap**) · [[p13-boundary]] · [[p14-matter-sector]].
+⑥ NOT OP FOR — **⛔ The homogeneous reduction is not the member the criterion is about**, and P11 says so: restoring $z$-dependence gives an **unconstrained** wave map — the two remaining Einstein equations fix the conformal factor by a quadrature whose integrability holds identically on shell, so every Cauchy datum integrates to a genuine vacuum member and *the wave carries no hidden constraint*. An explicit inhomogeneous single-helicity travelling datum is evolved to the roundoff floor with fourth-order convergence, and on it the polarization plane genuinely turns.
+
+### chirality-is-reached-inside-the-range-not-past-it
+① CLAIM — **The first chiral geometry is inside the construction's own reach.** The unpolarized turning wave carries the *same two spacelike Killing vectors* as the polarized one — the range paper's ground for placing this class in the reachable sector — and the transverse reflection is an isometry of the Gowdy form **precisely when the wave is polarized**. So the criterion bites **from the loss of the swept $\mathrm{SO}(3)$ onward**: the polarized edge is achiral, the unpolarized turning wave is the first chiral case, and the wall is where chirality is **generic rather than where it begins**.
+② REGISTER — **ESTABLISHED**, receipt-anchored.
+③ HOME — P11 §6 (`sec:chirality`).
+④ ANCHOR — `P09_the_wall_is_not_the_loss_of_symmetry`.
+⑤ JOINS — [[p9-range-paper]] · [[p13-boundary]] · [[p14-matter-sector]].
+⑥ NOT OP FOR — **⛔ And the agreement with the matter sector's index obstruction is closer than a shared conclusion — the two are ONE MECHANISM read in two sectors.** The obstruction bites because a positive-dimensional **connected** group contains a circle whose action forces the equivariant index to vanish; the criterion here is achiral exactly while the swept $\mathrm{SO}(3)$ supplies a continuous rotation completing the reflection and identifying the two helicities. *The gravitational sector is chiral precisely through the component that obstruction cannot touch.*
+
+### the-wall-is-a-regular-radiative-boundary-and-not-a-metric-singularity
+① CLAIM — Two questions are settled at the wall. **The dynamics continues across it.** And **the wall is *not* a metric singularity** in the precise sense of the causality paper — no measure collapses there — so it is a regular radiative boundary rather than a place at which a clock could be re-founded by the Null-Boundary Correspondence.
+② REGISTER — **SETTLED**, both, against the definition rather than by analogy. *A Killing horizon is named as the worked sufficient case, not the definition.*
+③ HOME — P11 §5 (`sec:wall`).
+④ ANCHOR — `P11_wall_ppwave`.
+⑤ JOINS — [[p1-bh-causality]] (**the definition tested against**) · [[p9-range-paper]] (**which needs the wall regular for its own "walked past, not a gap" claim**) · [[p7-cr-framework]].
+⑥ NOT OP FOR — *This is a **negative** result about the corpus's own most-used structure, and it is the right kind to have*: the metric singularity is not everywhere, and P11 checks rather than assumes.
+
+### the-nonlinear-regime-admits-rather-than-forces
+① CLAIM — Under isotropy the homogeneous field equations reduce consistently to one constraint and one dynamical law, solved to give exact de Sitter with $H^2=\Lambda/3$. **The internal area-clock that organizes the $\Lambda=0$ Gowdy system is inconsistent here**, and the substrate's de Sitter cosmic time replaces it — *established positively and not merely by the failure of the alternative.* The de Sitter background is an attractor, every tractable sector admits, and the first-class system is consistent to all orders, so **the continuous dynamics admits rather than forces a quantum structure**.
+② REGISTER — **RESOLVED ON THE CLASSICAL SIDE**, with the verdict named as admissibility.
+③ HOME — P11 §3.
+④ ANCHOR — the section's own.
+⑤ JOINS — [[p10-canonical-time]] · [[p7-cr-framework]].
+⑥ NOT OP FOR — **⛔ Explicitly not claimed, at source**: no closed-form nonlinear solution, and **no full non-perturbative quantization** — neither is built, and the latter is not needed for the admissibility verdict. *The non-perturbative quantization is the definition of the interacting tower, carried as an open problem of the programme.*
+
+
+---
+
+# P12 · `corpus/algebroid_paper.tex`
+### *The constraint algebra as the substrate's Atiyah algebroid: base, anchor, and the structure function*
+
+> **▣ THE READ IS COMPLETE, AND THE CLAIM IS VERIFIED.** *r4083 claimed it falsely at 27%; corrected r4087,
+> finished r4093. **Verification**: all eight section spans 191–395 reconciled against the ranges opened, no
+> gap. The three entries at the end are from sections the false claim had skipped.*
+
+> **▣ Abstract cut 1450 → 460 words; the Atiyah passage and its receipt
+> relocated first, and one orphaned citation restored.*
+
+### the-claim-is-a-recognition-not-an-addition
+① CLAIM — The hypersurface-deformation algebra carries **structure functions** — the normal–normal bracket's coefficient is the inverse spatial metric, a field rather than a constant — so it is a Lie **algebroid**, and *that* is the standardly recognised obstruction at the heart of the problem of time. An action Lie algebroid is a Lie algebra acting on a base, with an anchor and structure functions varying over it. **General relativity's constraint algebra has the structure functions but has never been given the base they vary over, nor a section selecting a definite flow.** P12 supplies both: base the space of cuts, algebra $\mathfrak{so}(5,1)$, anchor the slicing operator's cut-to-stress-energy map, section the cosmic clock. *The claim is a recognition, not an addition.*
+② REGISTER — **STATED as a recognition**, in the paper's own voice.
+③ HOME — P12 §1.
+④ ANCHOR — none.
+⑤ JOINS — [[p8-slicing-operator]] (the anchor) · [[p10-canonical-time]] (the section) · [[p9-range-paper]] (the base's strata) · [[p5-groupoid]].
+⑥ NOT OP FOR — **⛔ Two groupoids appear in this corpus and they are different objects** — P5 separates them explicitly. *Here the objects are **cuts** and the arrows are isometries carrying one cut to another; P5's objects are **vantages on one geometry**.* Conflating them merges a solution space with a description structure. **And the four-dimensionality of the leaf is doing work rather than merely being the case**: the same algebra closes for the Lovelock theories, which coincide with general relativity only in four dimensions.
+
+### the-bracket-closes-and-the-puzzling-shape-is-a-coset
+① CLAIM — At the symmetric cut $\mathfrak{so}(5,1)=\mathfrak h\oplus\mathfrak m$ with $\mathfrak h=\mathfrak{so}(4,1)$, and all three inclusions hold, $\mathfrak m$ not being a subalgebra. **Under $\mathfrak m\leftrightarrow\mathcal H_\perp$, $\mathfrak h\leftrightarrow\mathcal H_a$ these are the hypersurface-deformation brackets term for term.** *So the algebraic shape that makes the Dirac algebra puzzling — two normal deformations bracketing into a tangential one — is exactly the shape of a symmetric-space coset: two coset directions bracketing into the isotropy. **They are the same grading.***
+② REGISTER — **PROPOSITION**, verified on explicit matrices.
+③ HOME — P12 §4.
+④ ANCHOR — `P12_bracket_closure`.
+⑤ JOINS — [[p10-canonical-time]] · [[p7-cr-framework]] · [[p17-geometric-core]].
+⑥ NOT OP FOR — **And the grading IS the lapse–shift split**: the normal generator is smeared by the lapse — the existent's own foliation stacking rate — and the tangential by the shift, the synchronization convention. *So the cosmological reading in which the observable expansion rides the foliation rate while a chosen synchronization projects it to distance and redshift **is not a separate posit**; it is this grading read on the preferred foliation.*
+
+### the-atiyah-sequence-and-what-a-connection-is
+① CLAIM — **Naming the grading costs nothing and buys the literature.** For a homogeneous space the action algebroid of $G$ on $G/H$ **is** the Atiyah algebroid of $G\to G/H$, so with $\mathrm{dS}_5=SO(5,1)/SO(4,1)$ the sequence $0\to\mathfrak h\to\mathfrak{so}(5,1)\times\mathcal C\to T\mathcal C\to0$ is **exact**, with $\mathfrak h$ the anchor's kernel (the adjoint bundle, ten-dimensional) and $\mathfrak m$ its image (the five dimensions of the base), closing at $10+5=15=\dim\mathfrak{so}(5,1)$. **And a splitting of that sequence is what a connection is** — so the section supplied to select a definite flow is a connection in the standard sense rather than an object peculiar to this construction.
+② REGISTER — **RECEIPT-ANCHORED**, exactness verified at every term on explicit matrices.
+③ HOME — P12 §4 (relocated there r4083; it had lived only in the abstract).
+④ ANCHOR — `I55_the_atiyah_sequence_is_exact_and_a_characteristic_class_is_not_available`; ledger `index_theory`.
+⑤ JOINS — [[p10-canonical-time]] · [[p17-geometric-core]] · [[p5-groupoid]] (the action groupoid integrating it).
+⑥ NOT OP FOR — *The receipt's own name carries the negative half*: **a characteristic class is not available.** An entry citing the exactness without it takes only the affirmative half of a result whose key says both.
+
+### the-structure-function-is-the-coset-metric-and-the-signature-is-the-content
+① CLAIM — The coefficient $h^{ab}$ — the structure *function* that makes the algebra an algebroid and is the canonical root of the problem of time — is, **on the symmetry-reducible reduction**, identified with the coset metric of the symmetric space.
+② REGISTER — **IDENTIFIED**, receipt-anchored, and **the paper immediately says it is not a naive tensor equality**: $h^{ab}$ is the Riemannian inverse spatial 3-metric while the coset metric is the Lorentzian 5-dimensional form of signature $(1,4)$. *The identification is of the **reduced** structure function on the symmetric-cut pattern with that coset form.*
+③ HOME — P12 §4.
+④ ANCHOR — `P12_coset_metric`.
+⑤ JOINS — [[p10-canonical-time]] · [[p9-range-paper]].
+⑥ NOT OP FOR — **⛔ What makes it more than dimensional bookkeeping is the signature**: the indefinite Lorentzian sign is *supplied by the substrate's own geometry* rather than inserted. *A synthesis stating "the structure function is the coset metric" flat, without the reduction and the signature, has asserted the naive equality the paper explicitly disclaims.*
+
+### the-stratification-read-as-first-integrals
+① CLAIM — As the cut moves off the symmetric vacuum the isotropy drops, and its strata are the range paper's Petrov classes — Type O (isotropy dimension ten), Type D (SdS four, Kerr–de Sitter two), Type I (Bianchi three, Zipoy–Voorhees two), and the wall (isotropy zero). **Read as a count of first integrals, the stratification says where the construction's hidden symmetry is needed and where it is not**: a Killing vector contributes one linear integral and the Casimir a quadratic one, against the four in involution a four-dimensional geodesic flow requires.
+② REGISTER — **ESTABLISHED**, dimensions computed.
+③ HOME — P12 §5.
+④ ANCHOR — the section's own.
+⑤ JOINS — [[p9-range-paper]] (**the same strata; P9's isotropy tabulation cites this paper**) · [[p11-dynamics]] · [[p6-shadow-of-existence]] (transitivity ↔ modulus).
+⑥ NOT OP FOR — **The symmetric-space relation survives at Type O and Nariai ONLY**; at every other stratum there is structure-function variation — *the algebroid connection*. And the $\mathfrak{so}(5,1)$-action on the base is **non-transitive**, the mass being a transverse modulus — which is P6's second sense of "modulus", the one its criterion does **not** exclude.
+
+### both-factors-of-Aut(A2)-are-realized-geometrically
+① CLAIM — The $S_3$ permutes the three horizon roots, which — the cubic having no quadratic term — are three zero-sum weights $120^\circ$ apart on the throat-image circle. The $\mathbb Z_2$ is the **central inversion**, and it has a clean geometric form: $\mathrm{dS}_5$ is **doubly ruled** by null generators — the comoving and synchronous congruences — and the inversion **exchanges the two families**, an orientation-reversing isometry swapping the rulings where an orientation-preserving one fixes each. Explicitly $R=\mathrm{diag}(1,1,-1,1,1,1)$, determinant $-1$ globally and on the ruled three-block, sending $r_0\mapsto-r_0$ hence $2M\mapsto-2M$. The two factors act on **independent structures** — three roots and two rulings — and the inversion is central, *which is why $\mathrm{Aut}(A_2)$ is a direct product*.
+② REGISTER — **VERIFIED DIRECTLY**, and it supplies the geometric reason for what P5 obtained algebraically.
+③ HOME — P12 §8.
+④ ANCHOR — the section's own.
+⑤ JOINS — [[p5-groupoid]] (**which gets $D_6$ algebraically; this says why it is a direct product**) · [[p11-dynamics]] · [[p13-boundary]] · [[p14-matter-sector]].
+⑥ NOT OP FOR — **⛔ The convergence to record: the double-ruling swap, the orientation parity $\mathrm O(5,1)/\mathrm{SO}_0$, the $A_2$ diagram automorphism, and the graviton chirality are ONE AND THE SAME $\mathbb Z_2$.** *Four descriptions arrived at in four papers, identified here.*
+
+### the-dimension-is-a-floor-and-no-upper-bound-exists-anywhere
+① CLAIM — Stated plainly and against the programme's own convenience. The construction generates *many distinct* four-geometries from *one* substrate, and slicing a four-dimensional de Sitter space only re-coordinatizes it — **which excludes $\mathrm{dS}_4$ and yields $D\ge5$, a lower bound and not an equality. NO UPPER BOUND IS ESTABLISHED ANYWHERE IN THIS FRAMEWORK.** The ontological commitments fix only the existent — a one-parameter family of *three*-dimensional layers, the sole dimensional statement in any axiom — and require of the representation only that it admit them as spacelike hypersurfaces, so $\dim M\ge4$ with the projection explicitly non-unique; the empirical forcing is of the foliation, likewise a floor. **$\mathrm{dS}_5$ is the *minimal* substrate sufficient for the sector built here — a modelling economy, not a derived maximum.**
+② REGISTER — **⛔ EXPLICIT NEGATIVE, receipt-anchored.**
+③ HOME — P12 §2.
+④ ANCHOR — `P12_polar_dimension`.
+⑤ JOINS — [[p6-shadow-of-existence]] (**the dimension is P6's boundary case, settled by content rather than form**) · [[p17-geometric-core]] · [[p7-cr-framework]].
+⑥ NOT OP FOR — **And the polar structure does not close the gap either**: the polar of a spacelike substrate point is $\mathrm{dS}_{D-1}$ in *every* dimension, *which relates the rungs without capping them*. **⛔ ANY SYNTHESIS SENTENCE TREATING FIVE DIMENSIONS AS DERIVED CONTRADICTS THIS PAPER DIRECTLY.**
+
+
+---
+
+# P13 · `corpus/boundary_paper.tex`
+### *The boundary: colour is not a substrate isometry, and what the two real forms do carry*
+
+> **▣ THE READ IS COMPLETE, AND THE CLAIM IS VERIFIED.** *r4085 claimed it falsely at 38%; corrected r4087,
+> finished r4091. **Verification**: every section span 208–519 reconciled against the ranges opened, no gap.
+> The four entries at the end of this block are from the sections the false claim had skipped.*
+
+> **▣ P13 is the theoretical half of the first application pair, and carries
+> its own synthesis because its chain reaches back through P3, P5 and P7--P12. **Its abstract needed no cut**
+> — 1102 words with nothing living only there — the second paper of the thirteen for which that was true.*
+
+### the-register-is-fixed-before-the-result
+① CLAIM — **P13 states what it is not claiming before it claims anything**, on the ground that *a negative result is as easy to overstate as a positive one.* **Established**: colour does not arise as a continuous internal gauge symmetry of this geometry through any examined geometric-isometry route. **Not established, and not claimed anywhere**: the universal statement that no construction whatever could yield the Standard Model from this geometry. **And not the subject at all**: colour by the ordinary route, an $\mathrm{SU}(3)$ matter bundle placed on the spacetime by hand, *which is in no jeopardy.* The subject is the specific hope of reading colour off the geometry as one reads gravity.
+② REGISTER — **SCOPE, fixed at the outset in the paper's own voice.**
+③ HOME — P13 §1.
+④ ANCHOR — none.
+⑤ JOINS — [[p5-groupoid]] (whose $A_2$-is-not-colour remark is the same guard from the other side) · [[p14-matter-sector]] · [[p6-shadow-of-existence]].
+⑥ NOT OP FOR — **⛔ THIS IS THE ENTRY THE SYNTHESIS MOST NEEDS AND MOST EASILY LOSES.** *A results paper reporting "the corpus shows colour is not geometric" without the register has made the universal claim P13 explicitly refuses.* The result is about **one route**, and the ordinary route is untouched.
+
+### the-sigma-lift-fails-because-the-two-operations-differ-on-every-axis
+① CLAIM — The tempting bridge is that the real involution $\sigma$ **is** the Wick rotation, so the real $A_2$ skeleton would be the shadow of the Wick-face $\mathfrak{su}(3)$ and colour would lift continuously. **Computed in the embedding coordinates rather than judged by family resemblance, the bridge fails.** The Wick rotation complexifies the global *timelike* coordinate, sends the Lorentzian metric to the Euclidean, is *imaginary*, and **changes the geometry**. $\sigma$ is a *real* Weyl reflection of the spatial sky/root plane; it fixes $x_0$, **preserves both signatures** — so it is not a signature change at all — and **fixes the manifold**, permuting charts of one rigid geometry.
+② REGISTER — **COMPUTED**, receipt-anchored.
+③ HOME — P13 §2.1.
+④ ANCHOR — `P13_sigma_lift`.
+⑤ JOINS — [[p3-sds-slicing]] · [[p5-groupoid]] · [[p12-algebroid]].
+⑥ NOT OP FOR — **⛔ THREE OPERATIONS ARE CO-LOCALISED AT THE EQUATORIAL SEAM AND ONLY ONE LANDS WHERE COLOUR LIVES.** The real Weyl reflection $\sigma$ (fixes $x_0$, the signature, the geometry); the **seam continuation** $\theta\mapsto\pi/2+i\psi$, which flips the signature of a *single slicing curve* and reaches the equatorial $S^4$ with isometry $\mathrm{SO}(5)$; and the **global Wick** $x_0\mapsto ix_0$, reaching $S^5$ with $\mathrm{SO}(6)\supset\mathfrak{su}(3)$. *Reading $\sigma$ as the bridge conflates the first with the third; reading the seam continuation as it conflates two **imaginary** operations with different targets.* **The $S^4$ is not the $S^5$, and five dimensions are not enough.**
+
+### the-index-obstruction-and-the-escape-it-closes
+① CLAIM — A fourth face to the same wall, with forty years behind it: even granting the gauge structure its home on the compact face, **the chiral matter charged under it cannot be obtained from the geometry there.** On a compact connected even-dimensional spin manifold carrying a non-trivial smooth action of a **compact connected** Lie group by isometries, the equivariant Dirac index vanishes; for a non-abelian compact group it is killed a second way, by positive scalar curvature and Lichnerowicz. **The load-bearing hypotheses are compactness and a continuous isometry — not a product or Kaluza–Klein structure**, so *reading the absence of a product as a reprieve removes a premise the theorem never used.*
+② REGISTER — **CITED CLASSICAL THEOREM**, applied with its hypotheses checked.
+③ HOME — P13 §3.
+④ ANCHOR — none; Atiyah–Hirzebruch, Atiyah–Singer, Lawson–Yau, Lichnerowicz.
+⑤ JOINS — [[p11-dynamics]] (**one mechanism read in two sectors — the gravitational sector is chiral precisely through the disconnected component the obstruction cannot touch**) · [[p14-matter-sector]].
+⑥ NOT OP FOR — **⛔ The non-compactness escape is closed, and the argument is subtler than "the index bites".** The escape presupposes a continuous $\mathfrak{su}(3)$ acting by isometry on the non-compact substrate whose non-compactness might shelter a chiral sector. But **$\mathfrak{su}(3)$ is not an isometry of the real substrate at all**, so it acts only on the compact face, *which is compact.* **Where $\mathfrak{su}(3)$ acts as an isometry the manifold is compact, and where the manifold is non-compact there is no such action to protect** — a localisation argument independent of whether the index ever bites.
+
+### colour-closure-rests-on-the-causal-structure-not-on-the-compact-face's-status
+① CLAIM — **The most secure layer, and P13 says so.** That $\mathfrak{su}(3)$ is not a symmetry of the world the matter inhabits **does not depend on any claim about the compact face**; it follows from the causal structure. The cosmogenesis is a **signature-preserving** reassignment on the real Lorentzian substrate — a null congruence promoted to the fundamental timelike one, manifold and signature held fixed — and the matter rides that real Lorentzian horn. Colour lives on the compact face reached only by the global Wick.
+② REGISTER — **ESTABLISHED on the causal structure**, and explicitly independent of the face's ontological status.
+③ HOME — P13 §4.1.
+④ ANCHOR — none.
+⑤ JOINS — [[p1-bh-causality]] · [[p7-cr-framework]] · [[p12-algebroid]].
+⑥ NOT OP FOR — *The layering is the point*: the closure survives whatever verdict is reached about what the compact face **is**, so a synthesis may carry it without carrying the face's status.
+
+### charge-conjugation-factorises
+① CLAIM — **The boundary is a shape, and a shape has an inside.** The negatives are the perimeter; what they enclose is a positive result the negatives alone could not reach. The reflections the substrate **does** carry, composed with the antilinear complex-analytic face, are exactly charge conjugation's **kinematic** content — and their composite is the cosmogenesis itself. **The statement is made on the full analytic object and not on any real slice**, which is the level at which alone it can be made: $r\mapsto-r$ and $\tilde\tau\mapsto\bar{\tilde\tau}$ are stated together on $\mathbb C_r\times\mathbb C_{\tilde\tau}$, and the neutral/charged and particle/antiparticle distinctions are properties of that object, *not of a chart drawn through its real part.*
+② REGISTER — **PROPOSITION**, with the factorisation into a geometric kinematic face and a field-level charge sign.
+③ HOME — P13 §6, `prop:conjugation-closure`.
+④ ANCHOR — the section's own.
+⑤ JOINS — [[p3-sds-slicing]] (**mass $R$-odd, charge $R$-even, settled at the geometric level; the field-level closure adjoins an independent $\mathbb Z_2$**) · [[p5-groupoid]] · [[p7-cr-framework]].
+⑥ NOT OP FOR — **The geometric face is not the whole of $C$** — the charge sign closes from the field, not from the geometry, and *the factorisation is the result rather than an identification of the two.*
+
+### the-two-real-forms-carry-the-divide
+① CLAIM — **P13's own synthesis, and it is the positive statement the wall makes room for.** It is *not* that the substrate yields the Standard Model — the wall stands — but that **the divide the last century drew between the gravitational and the quantum, and between gravity and the gauge forces, is one substrate read on its two real forms.** *The Lorentzian form carries the framework*: the Dirac constraint algebra is the symmetric-space coset structure of $SO(5,1)/SO(4,1)$, its structure function the coset metric and the "wrong sign" obstructing a global time the coset's own indefinite signature; read on the forced foliation the constraint deparametrizes to a true Hamiltonian. *The Euclidean form carries the gauge and the quantum scale*: colour requires the **full** $\mathrm{SO}(6)$, since the smallest faithful real representation of $\mathfrak{su}(3)$ is six-dimensional — so $\mathfrak{su}(3)\subset\mathfrak{so}(6)$ but **not** $\subset\mathfrak{so}(5)$ — and the quantum of action enters through the horizon's thermal state at period $\beta=2\pi\alpha$, *on the same face.*
+② REGISTER — **SYNTHESIS**, stated at the weight its pieces carry.
+③ HOME — P13 §8.
+④ ANCHOR — none; the pieces' own.
+⑤ JOINS — [[p12-algebroid]] · [[p10-canonical-time]] · [[p17-geometric-core]] · [[p14-matter-sector]].
+⑥ NOT OP FOR — **⛔ The dimension count is the load-bearing detail and it is exact**: five dimensions do not suffice for colour, which is *why* the seam continuation's $S^4$ cannot be the home and the global Wick's $S^5$ can. **And the two forms are not co-equal worlds** — P13 fixes an asymmetry between them, and the synthesis must carry that rather than presenting a symmetric pair.
+
+### the-three-routes-close-for-one-reason-and-the-third-names-the-opening
+① CLAIM — **Now verified by reading all three.** *σ-lift*: the real involution is not the Wick rotation. *Cascade rank-map*: grant the raise to $\mathrm{dS}_6$ and colour is **dropped the instant one descends to the real substrate** — and a rank count bounds what the raise could ever buy, the Standard Model having rank four against $\mathrm{SO}(6)$'s three, so **the weak $\mathrm{SU}(2)$ does not fit** and the raise buys at most $\mathrm{SU}(3)\times\mathrm U(1)$. *$A_2/S_3$ skeleton*: genuine $A_2$ geometry, geometrically forced and checked against generic cubic numerology — **but discrete**, the Weyl group permuting descriptions of one rigid geometry, not $\mathfrak{su}(3)$ acting on field content.
+② REGISTER — **THREE ROUTES, each closed on its own ground**; the rank count receipt-anchored.
+③ HOME — P13 §3.1–§3.3.
+④ ANCHOR — `P13_sigma_lift`, `P13_cascade_rank`.
+⑤ JOINS — [[p12-algebroid]] · [[p5-groupoid]] · [[p14-matter-sector]].
+⑥ NOT OP FOR — **⛔ The third route names the opening the other two do not.** The skeleton's full automorphism is a **direct product**, and *this route closes on the $S_3$ alone* — the other factor is the orientation parity the index obstruction cannot reach. **The route that closes and the opening that survives are the two factors of one group.** And *why* they differ in kind is read off the figure rather than off a rank or an index: the two structures are the throat circle's two relations — **the three roots the points *on* it, the two null rulings the lines *tangent* to it.** A ruling is a line *of* the substrate, so the factor acting on the pair is an isometry; a root labels a different *cut*, so the $S_3$ moves through the solution space and not the manifold.
+
+### the-C3-constraint-is-conditional-on-five-dimensions-and-says-so
+① CLAIM — Where $\mathfrak{su}(3)$ *can* act geometrically it acts **spatially, not internally**: it acts transitively on $S^5$, admits no equivariant map to the cosmological $S^3$, so the cut breaks it. **But the constraint is stated on the five-dimensional substrate and is conditional on it** — and the conditionality is structural: a totally geodesic four-geometry in $\mathrm{dS}_D$ has stabiliser $\mathrm{SO}(4,1)\times\mathrm{SO}(D-4)$, and **at $D=5$ the second factor is trivial**, so any $\mathfrak{su}(3)$ would have to act on the cut itself. **From $D\ge10$ the normal factor contains $\mathfrak{su}(3)$ and acts trivially on the cut** while rotating the normal index of the second fundamental form — an internal action by construction.
+② REGISTER — **STATED WITH ITS OWN SCOPE CORRECTED**, and nothing asserted about such a substrate.
+③ HOME — P13 §2, (C3).
+④ ANCHOR — none.
+⑤ JOINS — [[p12-algebroid]] (**$D\ge5$ is a floor with no upper bound established anywhere**) · [[p17-geometric-core]].
+⑥ NOT OP FOR — **The obstruction does not disappear at higher dimension; it changes shape.** The normal bundle's structure group is $\mathfrak{so}(6)$, and the reduction to $\mathfrak{su}(3)$ requires an orthogonal complex structure and a preferred complex volume form **that nothing established supplies** — *so colour would be **permitted** rather than **required**, which is precisely the case the criterion of necessity condemns.*
+
+### the-mass-cubic-supplies-the-count-and-not-the-hierarchy
+① CLAIM — **A lead that was named, worked, and returned negative.** Whether a fermion mass, being the $R$-odd departure the same structure governs, inherits the cubic's three-fold form — *the one place the geometry might reach into the mass content.* **It does not.** The three roots sum to zero, and that same vanishing trace holds the two larger roots within a few per cent of each other across the whole undercritical range, so **the triple takes the shape $(\epsilon,1,1)$ and never a separated $(1,a,b)$.** Tuning $2M/\alpha$ so the first ratio reproduces $m_\mu/m_e$ exactly forces the second to $207.8$ where observation requires $3477$ — **short by a factor of seventeen.** And the bound is not particular to this cubic: across *every* zero-sum cubic $x^3-x-q$ with three real roots the largest and middle magnitudes never separate by more than a factor of two.
+② REGISTER — **⛔ NEGATIVE, receipt-anchored, and the failure is one of SHAPE rather than of any fitted value.**
+③ HOME — P13 §5.
+④ ANCHOR — `P13_mass_cubic_carries_no_hierarchy`.
+⑤ JOINS — [[p14-matter-sector]] (which builds the count) · [[p3-sds-slicing]] · [[p17-geometric-core]].
+⑥ NOT OP FOR — **The cubic supplies the generation COUNT and not the mass hierarchy.** *And the count is forced rather than fitted*: the offset-mass relation is the pure triple angle, driven to that single-harmonic form by the unique slicing scale the gnomonic image fixes, so the three roots are the three preimages of $3w$ under the sine. **⛔ A synthesis reporting the generation structure without this negative reports a lead as though it had gone the other way.**
+
+### the-residue-is-the-cosmogenesis's-own-symmetry
+① CLAIM — **The closure's second proposition, and it is stronger than the factorisation.** The discrete residue is *not* an inert remainder the substrate happens to carry alongside its cosmology: **it is the cosmogenetic bead's own symmetry.** One reflection $r\mapsto-r$ simultaneously carries the fundamental to the antifundamental, reverses the mass, swaps the two null rulings, and **fixes exactly the locus $r=0$, which is the bead's branch point**, exchanging the two signed-radius regions the bead's halves occupy. *One $\mathbb Z_2$, four faces* — and the content is the first with the last: **the conjugation's fixed point is the cosmogenesis's branch point.**
+② REGISTER — **PROPOSITION**, proved, receipt-anchored — with **one face marked generic and explicitly not leaned on**: *every* orientation-reversing isometry swaps the rulings, so that face distinguishes nothing.
+③ HOME — P13 §6, `prop:residue-is-the-bead`.
+④ ANCHOR — `P13_closure_i_check`, `P13_closure_iv_check`, `P13_ruling_swaps`.
+⑤ JOINS — [[p7-cr-framework]] (**the antimatter-progenitor theorem is this boundary's first consequence rather than an independent result**) · [[p12-algebroid]] · [[p14-matter-sector]].
+⑥ NOT OP FOR — **⛔ The proposition claims a CO-LOCATION and pointedly NOT that $R$ carries one leg of the bead onto the other.** *A map is not a path.* The two legs are **not** mirror images — read in cosmic time the collapse leg goes as $\cosh^{2/3}$ and the expansion as $\sinh^{2/3}$, structurally distinct curves. **And that asymmetry is the content rather than a blemish on it**: were the legs mirrors, the bead would be invariant under the very reflection whose regions label its species, and *there would be no asymmetry for the cosmogenesis to carry.* **One step is peculiar to $A_2$ and the paper says so**: negating the roots conjugates the representation because $-1\notin W(A_2)$, so negation is outer — *in every other rank-two system it is inner and would conjugate nothing.*
+
+### rule-2-does-not-forbid-a-second-step-it-empties-it
+① CLAIM — **The absence of an upper bound on the dimension has a positive reason, and the reason is stronger than the absence.** Suppose the descent to the cut ran in more than one step. Each intermediate rung is itself a substrate for the steps below, so the least-arbitrariness criterion applies to it in its own right: **a rung that were *not* maximally symmetric would carry a choice of how to break its symmetry** — a modulus in the excluding sense. So every rung above the last must be maximally symmetric, and on this substrate a section carries mass exactly when it is not a plane section — **so every step above the last is a plane section.** A plane section of a $\mathrm{dS}_D$ of radius $\alpha$ returns $\mathrm{dS}_{D-1}$ of radius $\sqrt{\alpha^2-c^2}$ for every admissible normal, *the normal being gauge because the isometry group is transitive on unit spacelike normals.* **So a step above the last changes the scale and nothing else**: the entire tower enters the four-geometry through the single combination that is its $\alpha$.
+② REGISTER — **RECEIPT-ANCHORED**, and the conclusion is named as *neither of the two the question anticipated*: the criterion does not forbid a second step and does not force one — **it empties it.**
+③ HOME — P12 §2.
+④ ANCHOR — `E50_a_second_step_is_emptied_by_rule_two_and_not_forbidden_by_it`, `P12_polar_dimension`.
+⑤ JOINS — [[p6-shadow-of-existence]] (**the criterion's boundary: it selects the manifold at fixed dimension and is silent on the dimension itself**) · [[p17-geometric-core]] · [[p13-boundary]].
+⑥ NOT OP FOR — **⛔ So the dimension is unbounded above *because nothing below can see the difference*** — which turns the missing ceiling from a gap in the argument into **a property of the descent**, and makes the discipline of arguing from the cut to the dynamics and never from the cut to the substrate a *consequence rather than a rule of conduct*. **And one thing IS settled, and it is a different object: the *cut's* dimension** — four, being the only one carrying both a generation count and a handedness. *That settles the geometry the operator delivers, not the substrate it is delivered from.*
+
+### the-anchor-is-the-slicing-operator-made-infinitesimal
+① CLAIM — The anchor maps an infinitesimal cut-deformation to the stress-energy it produces, and **its four sectors are the ADM data of the cut read as functions of the cut**: *energy* the leaf's intrinsic-curvature departure from the round substrate leaf (the Hamiltonian constraint); *momentum* the **bend in the shift**, a clean functional of the shift alone on a fixed leaf-and-lapse background, giving the spherical frame-drag; *stress* the lapse split fixing the equation of state; *signature* the causal orientation, the discrete datum.
+② REGISTER — **ESTABLISHED**, receipt-anchored, on the spherical class.
+③ HOME — P12 §3 (**the section the false claim had never opened at all**).
+④ ANCHOR — `E1_static_gauge`.
+⑤ JOINS — [[p8-slicing-operator]] · [[p9-range-paper]] (**which supplies the fourth datum, the shift**) · [[p10-canonical-time]].
+⑥ NOT OP FOR — **P12 forestalls the obvious objection to reading the anchor as intrinsic**: the constraint carries the extrinsic curvature too, but *on the static spherically symmetric cuts this sector is built from, the extrinsic curvature vanishes identically* — **so the $K$-terms are absent by the gauge rather than dropped by hand.** *The four close as one functional on the spherical class only; the general-cut functionals are open scope.*
+
+### the-discrete-group-is-the-substrate's-own-Weyl-group
+① CLAIM — **The corpus had been using a sub-root-system of one the substrate already carries.** The residue pairing on functions over the root triple — diagonal, entries $1/f'(r_i)$, signature $(2,1)$ — has a non-trivial **holonomy** about the Nariai points, the Klein four-group of even sign changes, whose origin is the per-root resolution of $\sqrt\Delta$. Adjoining it to the monodromy closes a group of order twenty-four; adjoining the orientation parity as well, order forty-eight. **And neither is an abstract coincidence of order**: computing the element profile, *the six order-four elements are all **improper**, none a proper rotation* — the signature of the full tetrahedral group and not of the chiral octahedral one. **So the group is $W(A_3)$ in its Weyl embedding, not merely a group isomorphic to $S_4$.** And $A_3$ is not new: $\mathfrak{so}(5,1)$ is a real form of $\mathfrak{so}(6,\mathbb C)$, whose root system is $D_3\cong A_3$, with $A_2$ sitting inside by deleting one node.
+② REGISTER — **RECEIPT-ANCHORED**, twice, with the embedding verified by element profile rather than by order.
+③ HOME — P12 §8 (**never opened under the false claim**).
+④ ANCHOR — `GROUP_full_order48`, `EMBEDDING_is_Td_equals_WA3`; Ambrose–Singer.
+⑤ JOINS — [[p5-groupoid]] · [[p3-sds-slicing]] · [[p13-boundary]] (**which records this as "the discrete structure the geometry supplies is larger than this paper's companions had recorded"**) · [[p17-geometric-core]].
+⑥ NOT OP FOR — **⛔ The enlargement is a RECOGNITION of what the construction already contains, not an addition to it** — reached by transporting a form the substrate itself supplies. **And the scope is marked at source: this concerns the discrete structure ALONE.** *It says nothing about a continuous $\mathfrak{su}(3)$ — a finite group, however enlarged, is not a Lie algebra*, and the boundary paper's obstruction continues to address that.
+
+### the-admissibility-verdict-rests-on-named-exact-structures-and-one-isolated-residual
+① CLAIM — The classical question is settled by structures, not by a survey. The system is **first-class**, so it evolves consistently to all orders by the contracted Bianchi identity. **Two exact structures sharpen that beyond the Bianchi count**: the homogeneous shear charge extends to the *full propagating* system — $\mathrm{AREA}-2\,\mathrm{WAVE}$ is identically a continuity equation with the $\Lambda$ source cancelling, so the charge is conserved in the inhomogeneous model and not only the homogeneous sector — and the graviton's reduced energy $2R(\psi_t^2+\psi_z^2)\ge0$ is **positive-definite, so the propagating sector is ghost-free to all orders**. Those close the ghost and zero-mode runaways exactly.
+② REGISTER — **PROPOSITION** (`prop:admit`), with the verdict recorded at the scope it is earned.
+③ HOME — P11 §3.
+④ ANCHOR — `P11_deSitter_attractor`, `P11_mukhanov`, `F50_the_a_minus_two_belongs_to_W_and_Q_is_bounded_by_going_constant`.
+⑤ JOINS — [[p10-canonical-time]] · [[p7-cr-framework]] · [[p9-range-paper]].
+⑥ NOT OP FOR — **⛔ ONE STRUCTURE IS NOT CLOSED BY THEM, AND P11 NAMES IT AND SAYS WHY THE OBVIOUS INSTRUMENT FAILS.** A propagating nonlinear parametric resonance: *the natural monotone instrument fails for a precise reason* — the **total** field energy grows as $2\Lambda a^4$, carrying the background's own expanding energy, **so no total energy is monotone.** The right object is the gauge-invariant *perturbation* energy, decaying as $a^{-2}$ with the monotone (never periodic) coefficient — excluding single-mode resonance at linear order and **isolating the residual to nonlinear mode–mode transfer against the de Sitter detuning.** *A failure of an instrument, correctly diagnosed, rather than an open frontier misreported as a closure.*
+
+### the-effective-mass-is-exactly-zero-and-the-apparent-shift-was-an-artefact
+① CLAIM — Linearizing on the de Sitter background in the fixed-background truncation gives an effective mass $m^2=2\Lambda=6H^2$ — a massive scalar admitting clean Bunch–Davies quantization. **But restoring the constraint back-reaction the truncation drops** and reducing to the gauge-invariant combination yields, in conformal time, the **massless minimally-coupled Mukhanov equation with no $a^2m^2$ term.** *So the physical effective mass is exactly zero* — the apparent shift $6H^2\to4H^2$ is a gauge/truncation artefact, the $\propto a$ solution being pure residual gauge — **and the gauge-invariant perturbation is bounded**, its two super-horizon branches going as $a^{-3}$ and as a constant, so *the $a^{-2}$ decay belongs to the rescaled variable in which the equation is written and not to the perturbation itself.*
+② REGISTER — **COMPUTED at the gauge-invariant level**, receipt-anchored twice, and the paper says the admissibility is established by computation *rather than merely asserted robust to an ambiguous shift*.
+③ HOME — P11 §3.
+④ ANCHOR — `P11_mukhanov`, `F50_the_a_minus_two_belongs_to_W_and_Q_is_bounded_by_going_constant`; ledger `functional_analysis`.
+⑤ JOINS — [[p10-canonical-time]] · [[p15-cr-cosmology]].
+⑥ NOT OP FOR — *This is a case of the corpus catching its own truncation artefact and saying so* — the entry to quote when the synthesis needs an instance of the programme correcting itself at the level of a computation rather than a framing.
+
+### the-stability-residual-is-a-settled-theorem-and-the-convergence-is-stated-as-a-convergence
+① CLAIM — The isolated residual — whether the propagating nonlinear evolution no-hairs rather than resonating into runaway — **is exactly the future stability of de Sitter, and at the level of the physics it is a settled theorem rather than an open frontier.** Friedrich proved nonlinear stability of de Sitter in vacuum with $\Lambda>0$; **his method is also why no exact energy in this model closes the question** — the conformal field equations trade the global-in-time problem for a local one at $\mathcal J^+$, so *energy is the wrong instrument, and the failure of any monotone energy above is the expected shape of that fact rather than a sign of openness.* Friedrich is small-data, exactly the perturbative regime of the propagating graviton; Andréasson–Ringström extend to **all** data in the $T^3$-Gowdy class with $\Lambda>0$; and the one non-generic exception, the Nariai branch, is **precisely the locus the range construction already isolates as the no-pivot seam.**
+② REGISTER — **EXTERNALLY GROUNDED**, and stated *as a convergence across results — vacuum small-data, all-data Gowdy with matter, vacuum Nariai-genericity — rather than a single theorem covering the exact vacuum polarized Gowdy–$\Lambda$ case.*
+③ HOME — P11 §3.
+④ ANCHOR — none; Friedrich, Andréasson–Ringström, Beyer.
+⑤ JOINS — [[p9-range-paper]] (**the Nariai exception is the seam that paper isolates independently**) · [[p7-cr-framework]].
+⑥ NOT OP FOR — **⛔ The Andréasson–Ringström extension is with Vlasov matter — a CORROBORATION rather than a vacuum theorem, and P11 marks it as such.** *And the in-model computations are named as the right in-model rigor the theorems **ground rather than replace**.* **⛔ ONE MORE, WHICH IS A NAMING HAZARD THE PAPER FIXES EXPLICITLY: the corpus carries TWO WALLS and they are different objects.** This paper's is the *wall of inhomogeneity*; the matter paper's *throat* wall is the $r=0$ point on the throat circle at which a Dirac zero-mode binds. **Both were labelled the same in their own sources until this one was renamed, and a cross-paper reference to "the wall" must say which.**
+
+### the-euclidean-kernel-and-a-check-the-construction-did-not-have-to-pass
+① CLAIM — On the lift the parameter runs imaginary, so the kernel carrying the state across is **not** the unitary operator but a **Euclidean** one — real, contracting, not unitary — *consistent with $U(\Delta\tau=0)=\mathbb 1$ rather than in tension with it, since no cosmic time elapses and the kernel is not an evolution in cosmic time.* **And two things follow, the first a check the construction did not have to pass**: a mode of frequency $\omega$ is damped by $e^{-\omega|\Delta\eta|}$, while the framework's *independent classical* reading of the same segment damps a mode by $e^{-kc_s|\Delta\eta|}$ — **with $\omega=kc_s$ these are the same expression, term for term.** *The classical selection rule — frozen content crosses, oscillating content does not — **is** the Euclidean kernel, read classically.*
+② REGISTER — **DERIVED**, with the agreement noted as a check rather than a construction.
+③ HOME — P10 §5 (**never opened under the false claim**).
+④ ANCHOR — the section's own.
+⑤ JOINS — [[p7-cr-framework]] · [[p16-cosmogenesis]] · [[p15-cr-cosmology]].
+⑥ NOT OP FOR — **⛔ The projection is not exact, and where it fails is a SCALE rather than a caveat.** Modes below $k\sim2\times10^{-4}\,\mathrm{Mpc}^{-1}$ are not strongly suppressed and cross with residual excitation — *a wavenumber subtending $\ell\approx3$*, which is where the framework's independent transmission calculation places the filter's boundary. **The two routes agree on the scale as well as on the factor.**
+
+### the-conformal-factor-objection-does-not-reach-this-construction
+① CLAIM — **The obvious objection is that a Euclidean kernel needs a Hamiltonian bounded below and Euclidean gravity notoriously lacks one.** P10 raises it against itself and answers structurally rather than fortunately: the conformal-factor problem arises when the path integral ranges over the conformal factor, **and here it does not.** The substrate's scale is fixed — *required, as the unique maximally symmetric structure carrying no unforced modulus* — so **there is no conformal mode to integrate over**; and the propagating degree of freedom is the **transverse-traceless** shear, precisely the sector the conformal mode is absent from, mode by mode a harmonic oscillator bounded below. *And the areal radius along the lift is confined between the turnaround and the branch point with substrate curvature finite throughout: **there is no runaway direction for the kernel to diverge along.***
+② REGISTER — **ARGUED**, and the same removal is later identified as doing double duty: *the deparametrization that yields a true Hamiltonian is the same move that yields a bounded-below one, both being the removal of the conformal direction.*
+③ HOME — P10 §5.
+④ ANCHOR — `D50_the_floor_does_survive_and_the_paper_said_so_232_revisions_earlier`.
+⑤ JOINS — [[p11-dynamics]] · [[p12-algebroid]] · [[p6-shadow-of-existence]].
+⑥ NOT OP FOR — **⛔ A REGISTER GUARD THE VOCABULARY INVITES BREAKING, stated at source.** The segment's *parametrisation* runs imaginary, and the kernel and action are those of that parametrisation — **they are not the Euclidean objects of a Wick-rotated spacetime.** The construction's continuations are *real analytic continuations on a spacetime Lorentzian throughout*; the horizon's Gibbons–Hawking state, by contrast, **is** a Euclidean continuation and is distinct in kind. **So dividing the segment's action by the $\hbar$ fixed at the thermal period would be joining two continuations the construction keeps apart.** *The comparison with the no-boundary sign is a comparison of signs and magnitudes, not an identification of frameworks.*
+
+### the-lift-is-an-instanton-with-finite-action-of-the-no-boundary-sign
+① CLAIM — The segment is **not a formal device but a solution of a variational principle**: continuing the marginal congruence's Lagrangian gives motion in the **inverted** potential — the standard signature of a Euclidean solution — and the lift's closed form satisfies both the equation of motion and the first integral to the precision of the check. *An instanton connecting the Lorentzian turning point to the branch point.* **Its action converges**, the integrand growing as $s^{-2/3}$ and being integrable, so **the segment carries a finite weight rather than a divergent one** — what a saddle-point treatment of the beginning would require. In the gravitational measure the value is negative, **which is the Hartle–Hawking sign**: the no-boundary de Sitter action is likewise negative, the present value the same sign and order, *smaller by a factor of order two, which is what a segment of the contour rather than a full hemisphere should give.*
+② REGISTER — **RECEIPT-ANCHORED**, twice, with the two normalisations reconciled rather than flagged — *the instanton is one trajectory read in two measures, and only its action value differs.*
+③ HOME — P10 §5.
+④ ANCHOR — `LIFT_instanton_action`, `LIFT_gravitational_action`.
+⑤ JOINS — [[p7-cr-framework]] · [[p16-cosmogenesis]] · [[p2-janzen-circle]].
+⑥ NOT OP FOR — *The sign traces to the segment lying on the $r<0$ branch* — **so the beginning's weight is of the no-boundary type, obtained from a contour the construction already possessed rather than from a boundary condition imposed on the path integral.**
+
+### semiclassical-is-not-adiabatic-and-the-paper-separates-them
+① CLAIM — **Two questions are in play and only one is what "adiabatic" names.** An adiabatic expansion is controlled by $|\dd\omega/\dd s|/\omega^2$, and along this segment that quantity **diverges** at the branch point — *so the adiabatic invariant is not conserved through it.* **The suppression is nonetheless finite, and for a different reason**: the exponent $\int\omega_n\dd s$ converges because $\omega\propto s^{-2/3}$ is integrable, *which is a statement about the action integral and not about slow variation.* **So the correction is semiclassical rather than adiabatic** — and the correction is **not small and runs the conservative way**, the exact exponent larger than the constant-frequency estimate by a factor $2.32$, so the suppression is *stronger* than the naive reading suggests.
+② REGISTER — **COMPUTED**, receipt-anchored, with the companion named as having the object correctly labelled.
+③ HOME — P10 §5.
+④ ANCHOR — `LIFT_adiabatic_correction`; ledger `integrable_systems`.
+⑤ JOINS — [[p15-cr-cosmology]] (**which names the same object as a WKB form with adiabaticity parameter of order unity**) · [[p7-cr-framework]].
+⑥ NOT OP FOR — **The projection is adiabatic for all but the lowest few harmonics and degrades to order unity only at $n=2$ and $n=3$** — *and that the approximation should fail exactly where the tower is coarsest is expected rather than surprising, there being no modes below $n=2$ on $S^3$.* **⛔ P10 records, without claiming it, that the harmonic indices at which the treatment loses control are the lowest ones** — meeting the companion's lowest physical mode at the same place.
+
+### the-counterterm-basis-is-one-dimensional-and-the-reason-is-not-the-one-first-given
+① CLAIM — **P10 checks its own argument and finds the first reason wrong.** The collapse of the three quadratic curvature invariants was attributed to *maximal symmetry*; in fact in four dimensions their deficit is exactly the Weyl-squared invariant, **every Friedmann geometry is conformally flat for *every* scale factor**, and on such a geometry the Gauss–Bonnet combination is an exact total derivative. *So no scale factor breaks the degeneracy, because no scale factor can make an FRW geometry anything but conformally flat* — **and because that is an identity holding pointwise rather than an evaluation on a chosen class, it survives superposition and descends to the quantized sector as an operator relation.** *The coupled sector never required a class of fixed backgrounds, because the statement was never made by evaluating on one.*
+② REGISTER — **RECEIPT-ANCHORED**, and *what maximal symmetry did buy is named as a weaker and different thing that does **not** survive*: terms of different dimension are proportional only on a constant-curvature background and part company as soon as the scale factor is not the de Sitter one.
+③ HOME — P10 §7 (`sec:lock`).
+④ ANCHOR — `Q1_the_degeneracy_is_conformal_flatness_not_maximal_symmetry_so_no_scale_factor_can_break_it`, `S50_the_counterterm_basis_is_one_dimensional_because_the_background_family_is`, `S1_the_shear_needs_exactly_one_new_counterterm_and_my_own_count_was_one_too_many`, `D1_the_degeneracy_carrying_the_quartic_was_never_derived_and_its_constant_is_the_component_count`.
+⑤ JOINS — [[p17-geometric-core]] · [[p11-dynamics]] · [[p12-algebroid]].
+⑥ NOT OP FOR — **⛔ Where the degeneracy genuinely ends is the SHEAR, and the calculation is run**: the deficit *is* $C^2$, an anisotropic shear gives $C^2=4\sigma^2+O(\sigma^4)$, and the propagating content of this tower **is** the transverse-traceless shear. The answer is *smaller than the question sounds* — for a TT perturbation the first variation of the Ricci scalar vanishes identically, so **the shear costs exactly one new counterterm, the Weyl-squared one.** *And one caveat belongs in the statement rather than after it*: the parity-odd Pontryagin density is non-zero at second order for a **circularly** polarised mode and reverses with handedness — **a linearly polarised mode returns zero, so the zero is a property of the mode chosen and not of the geometry**, and the corpus carries a chirality.
+
+### the-ordering-question-is-the-cosmological-constant-problem-in-local-dress
+① CLAIM — The ordering ambiguity is **inert in the bulk** — normal and symmetric ordering differ by a c-number zero-point, a global phase under the deparametrized evolution — and becomes physical **only in the boundary coefficient.** And the two orderings **answer the paper's own question oppositely**: under normal ordering the origin stays limit-circle and the boundary freedom survives; under symmetric ordering it becomes limit-point from the first occupied mode upward. *The decomposition is untouched by the choice, but the physical content is not* — **and asking which ordering is asking whether the graviton tower's zero-point energy gravitates at the horizon: the cosmological-constant problem in local dress, reached from inside the boundary coefficient rather than imported.**
+② REGISTER — **⛔ AN EXHAUSTION RATHER THAN AN OMISSION, and P10 argues that rather than asserting it**: any selector would have to act at the boundary, and *each candidate the construction offers fails to* — the horizon's thermal state acts **downstream**, closing the extension given the operator; the substrate isometry, positivity, the single-scale ledger and covariance each respect **both** orderings; and the deparametrization, by solving the constraint rather than imposing it, **removes the anomaly-freedom lever a Wheeler–DeWitt quantization would have used.**
+③ HOME — P10 §7.
+④ ANCHOR — `P10_ordering_selection_is_external`, `P10_the_straddle_is_computed`, `P10_gamma_hat_is_bounded_below`, `D1_the_boundary_is_per_fibre_and_the_UV_is_over_fibres`.
+⑤ JOINS — [[p17-geometric-core]] · [[p12-algebroid]] · [[p13-boundary]].
+⑥ NOT OP FOR — **⛔ AND THE CLASSIFICATION IS THE POINT: what is left is a single physical datum, localized as one computable quantity — an EPISTEMIC gap of the kind the construction admits, not an ONTOLOGICAL family of the kind it excludes.** *The distinction is drawn explicitly at source*: a parameter indexing distinct worlds is a family and inadmissible; one recording an unknown datum of one world is a gap and not a family at all. **The threshold's own value is explained rather than chosen** — it sits at the free boundary coefficient plus exactly one zero-point quantum of an occupied mode.
+
+
+---
+
+# P14 · `corpus/matter_sector_paper.tex`
+### *The matter sector: three chiral generations, the family symmetry, and the discrete content of colour*
+
+> **▣ THE READ IS COMPLETE, AND THE CLAIM IS VERIFIED.** *r4101. All ten section spans 239–999 reconciled
+> against the ranges opened, zero gap. P14 is the empirical half of the first application pair; its abstract
+> needed no cut.*
+
+### the-register-is-fixed-before-the-result-and-the-not-delivered-list-is-longer
+① CLAIM — **Delivered**: the generation **count** (three), the **chirality** of each ($\gamma^5$), the $S_3$ relating the three walls — *a **within-state** index rather than a family symmetry, the generations' own threeness being the turnaround's deck $\mathbb Z_3$* — and, reached after them, **the discrete content of colour**: the three wall monodromies with the hinge 3-cycle generate $SU(3)$, and second quantisation on the wall kernel returns **baryon 1, diquark 0, meson 1**. **Not delivered**: the **coupling** — *the bundle is flat, so the construction supplies colour's exact selection rules and no force; it quantises and does not couple*. Weak isospin as a **gauging**. Hypercharge's normalisation. And the mass spectrum.
+② REGISTER — **FORCED WITHIN CR**, and the paper defines that phrase rather than leaning on it: *it follows from the maximal-symmetry principle that defines the programme, and is **not a theorem a framework lacking that principle must accept**.*
+③ HOME — P14 §1, §7.
+④ ANCHOR — `P14_the_count_specified`, `P14_quark_lepton_frontier`.
+⑤ JOINS — [[p13-boundary]] (the wall this sector sits inside) · [[p3-sds-slicing]] · [[p17-geometric-core]].
+⑥ NOT OP FOR — **⛔ The honest edge is stated in the paper's own voice: *a framework declining the criterion reads the natural single-hinge index — **one**, not three*.** And the mutual citation with P6 is addressed rather than left: *the epistemic paper **establishes** Rule 2 from the historiographic record independently, and cites the three-plane selection only as a worked instance — the dependence is one-way and not circular.*
+
+### the-count-is-an-index-and-the-leaf-norm-is-what-makes-it-one
+① CLAIM — Each wall binds **exactly one** normalizable chiral zero-mode; the three are at distinct walls, hence independent. **And the norm is load-bearing.** The fermion is a mode of the **existent leaf**, so its norm is the induced proper measure $\dd\ell=\dd r/\sqrt{|f|}$ — in which the horizons lie at **finite** proper distance and $r=0$ is an integrable square-root singularity, so the mode is bound. In the conserved **spacetime** Dirac norm the same static mode is **not** normalizable. **In that leaf measure the closed slicing has finite total length, so the leaf is compact and the Dirac operator carries a finite analytical index — exactly where the bulk index on the non-compact spacetime is obstructed.** *And the leaf is **closed** as well as compact: no boundary, so no Atiyah–Patodi–Singer correction and no $\eta$-invariant — the index is the interior one entire.*
+② REGISTER — **PROPOSITION plus index**, receipt-anchored, $\dim\ker_+=3$, $\dim\ker_-=0$.
+③ HOME — P14 §2, §4.
+④ ANCHOR — `P14_leaf_compactness`, `P14_dual_norm`, `P14_mode_monodromy_at_the_wall`, `P14_even_crossing_index`.
+⑤ JOINS — [[p13-boundary]] (**the non-compactness escape is not in tension: a wall-localized index is indifferent to the bulk**) · [[p7-cr-framework]] · [[p10-canonical-time]].
+⑥ NOT OP FOR — **⛔ The paper separates the computed half from the traced half and says which is which.** *The **analytical** index is $\dim\ker_+-\dim\ker_-$ by definition, so the count is computed and needs no theorem; what the index theorem supplies is its equality with a topological integral, and what that buys is the deformation invariance — **traced, not computed**.* *So the citation is honest rather than load-bearing for the count, and the corpus's naming follows the division: **analytical index** appears and **topological index** never does.* **And a numerical coincidence is disowned before anyone builds on it**: the $\tfrac34$ threshold here and the essential-self-adjointness threshold at $a=0$ are *different measures, different gaps, the same number by arithmetic and not by structure.*
+
+### the-three-plane-construction-is-forced-and-the-centre-is-empty-for-a-reason
+① CLAIM — A one-plane construction must select **which** hinge — *a free modulus, unfixed by the geometry, an arbitrary choice among three equivalent options*. The $\mathbb Z_3$-symmetric three-plane construction is **the unique configuration carrying no such modulus**. **And the empty centre is a consequence rather than an observation about the figure**: a wall is a locus across which a superpotential changes sign, hence codimension one; the three linear forms have rank two so their common zero is a **point**, codimension two, *with no side to cross to.* Taking the three forms' **mutual angles** — a different question from where they vanish — they are of equal length, $120^\circ$ apart, sum to zero, mutual cosine $-\tfrac12$: **the weight system of the fundamental of $\mathfrak{su}(3)$, and in rank two nothing else has that shape.** *So the transverse plane is the weight plane, reached from the metric geometry with no representation theory in the derivation* — and **the fundamental has no zero weight, so the emptiness is an absence of a weight, not a vacancy waiting to be filled.**
+② REGISTER — **PROPOSITION**, receipt-anchored.
+③ HOME — P14 §4, `prop:forced`.
+④ ANCHOR — `P14_the_centre_is_the_weight_origin`.
+⑤ JOINS — [[p3-sds-slicing]] (**which now derives the three from the horizon cubic before any matter is mentioned**) · [[p6-shadow-of-existence]] (Rule 2 in the ontological register) · [[p17-geometric-core]].
+⑥ NOT OP FOR — *The two legs of "forced within CR" collapse to one*: given the three-hinge leaf, the walls are **distinct** loci with **disjoint support**, so the modes span a three-dimensional space — *three physical states in any basis, not one state redescribed.*
+
+### the-generations-are-not-the-walls
+① CLAIM — **The paper corrects its own seating, and the correction is substantive.** The substrate's null structure admits a **bound triple** — a hinge puncture with the two its null generators reach — and the causal classification of the six hinge-ends forces such a triple to take **one puncture per hinge**. *If the hinges were the generations, a bound triple would be one constituent from each generation, which is not what a bound triple of like constituents is.* **So the hinge three is the index distinguishing constituents *within* a bound state, not the index distinguishing copies of the whole state** — and the generations are seated instead on the **turnaround's deck $\mathbb Z_3$**, which fixes the horizon cover's base and **does not permute its fibre**.
+② REGISTER — **ESTABLISHED**, receipt-anchored, with the stronger separation obtained: *the two threes are not related by **any** covering-space construction, rather than merely by no affine one.*
+③ HOME — P14 §8.1 (`sec:whichthree`).
+④ ANCHOR — `P03_hexagon_null_triple`, `P03_the_weld_and_the_two_folds`, `P14_the_two_threes_are_not_related_as_covers`, `P14_the_family_symmetry_is_cyclic`.
+⑤ JOINS — [[p7-cr-framework]] (`lem:twoturnings`) · [[p3-sds-slicing]] · [[p12-algebroid]].
+⑥ NOT OP FOR — **⛔ What the seating fixes is WHICH three; the count is unchanged and so is the dimension argument** — both threes are $D-1$, *because clearing denominators $f=0$ is a polynomial of degree $D-1$ and the two are the two things one does with that single polynomial.* **And the family symmetry proper is CYCLIC**: the turnaround's transpositions are supplied by $T$, the horn swap, which belongs to another sector — *reading it as a family $S_3$ would be counting isospin as flavour.*
+
+### colour's-discrete-content-and-why-there-is-no-force
+① CLAIM — **The bundle question is settled by moving it.** Every candidate substrate bundle falls: $\mathfrak{su}(3)$ needs a **complex** rank-three module, and a **real** bundle's complexification carries a parallel conjugation whose holonomy lands in the real form. *So the question was never which real bundle but **where the complex structure is** — and it is at the branch point.* Taking the wall's definition literally, **there are three branch loci, one per vantage**; the three wall monodromies with the hinge three-cycle generate **$SU(3)$ itself**. A full lap is the **centre**. And second quantisation returns **baryon 1, diquark 0, meson 1** — *with the diquark a prediction rather than a fit, nothing having asked that $\Lambda^2$ carry no invariant.*
+② REGISTER — **RECEIPT-ANCHORED throughout**, with antisymmetry supplied **not by a gauge datum** but by the three modes being the kernel of **one** Dirac operator — *hence identical particles, so a three-fermion state lives in $\Lambda^3$ and the surplus invariants **do not exist***.
+③ HOME — P14 §2 (`sec:chirality`).
+④ ANCHOR — `P14_the_bundle_is_the_branching`, `P14_the_wall_is_a_wall_of_a_hinge`, `P14_statistics_not_gauge`, `P14_the_flat_bundle_cannot_carry_a_force`, `B24_the_triality_test_run`.
+⑤ JOINS — [[p13-boundary]] (**this is the residue built out, inside the wall not against it**) · [[p3-sds-slicing]] (the winding and the thirds) · [[p12-algebroid]].
+⑥ NOT OP FOR — **⛔ THE FLATNESS IS A COMPLETE OBSTRUCTION, NOT A STAGE NOT YET REACHED, and P14 shows it rather than asserting it.** The holonomy group is **finite**, order 81 — *necessarily, since a branch structure has finitely many sheets* — and by Ambrose–Singer a zero-dimensional holonomy forces $F=0$ identically. *A deformation within the moduli space of flat connections changes which flat bundle one has, not whether there is a field strength; **leaving it requires a variational principle**, and a four-dimensional Yang–Mills term needs a **dimensionless** coupling a single length cannot build.* **So the position is not that the coupling is unbuilt but that a coupling is not the kind of thing a holonomy supplies.** *And the argument is bounded honestly: a mechanism that is neither holonomy nor isometry is **not** excluded — none has been named, and naming one remains open. What can be said before it is named constrains the **target**: a fixed pure number rather than a free parameter, hence falsifiable against one quantity.* **And the counting distinguishes this from a general ban on geometry producing fields** — the Einstein–Hilbert coupling is dimensionful in every dimension, *so gravity is precisely the case the argument does not touch.*
+
+### the-mismatch-recorded-rather-than-smoothed
+① CLAIM — **P14 states where it fails against the Standard Model.** Asked of the sector's occupation, the colourless characters are all four of $(T,R)$, so each $R$-eigenspace carries one $T$-even and one $T$-odd state. **Set beside the Standard Model the two occupations differ on exactly one pair**: the left-handed doublet gives $\{+1,-1\}$, *which this sector matches*, while the right-handed singlets give $\{+1,+1\}$ where this sector gives $\{+1,-1\}$. **So the construction reproduces the left-handed side's shape and fails on the right-handed side, by drawing a distinction there the Standard Model does not draw.**
+② REGISTER — **⛔ A MISMATCH, recorded as one.** *"We record that as a mismatch rather than smoothing it: nothing this sector delivers rests on the clause, and the falsifiable direction runs the honest way — a right-handed weak structure distinguishing $\nu_R$ from $e_R$ by an isospin-like $\mathbb Z_2$ would make the geometry right and this comparison wrong."*
+③ HOME — P14 §8.1.
+④ ANCHOR — `P14_the_species_bit_is_not_chiral`, `P14_a_labelling_not_a_gauging`.
+⑤ JOINS — [[p13-boundary]] · [[p11-dynamics]].
+⑥ NOT OP FOR — **⛔ And nothing here obtains $SU(2)_L$**: *"$T$ is a discrete horn swap, and no continuous group is derived anywhere in this construction."* **The two bits reproduce the lepton content's *names* and not its gauging.**
+
+### the-ceiling-is-uniform-and-three-routes-off-it-all-land-on-it
+① CLAIM — **What the discrete opening supplies is *characters*, and a character is one-dimensional: it labels and it does not multiplet.** A finite group is abelian exactly when every irreducible representation is one-dimensional, so the deck $\mathbb Z_3$ **offers no multiplet into which three generations could be placed**. *So the ceiling is uniform: exact selection rules, exact counts and exact gradings, and **no representation content in which a mixing angle, a coupling strength or a mass could live** — which is the same fact that makes what **is** delivered exact.* **And three independent routes off the grading all terminate on it**: a $\mathbb Z_2$-graded complex (*on a two-term grading, cohomology is not an alternative to the kernel; it **is** the kernel*); a representation-theoretic branching (*$R$ **grades** rather than exchanges, and a $\mathbb Z_2$ that fixes rather than pairs contributes a character and no dimension*); and a spectral projection (*the angular spectrum is uniformly spaced so no gap is distinguished, and the one canonical rung has multiplicity 2*). **The three fail in three different ways and arrive at one number.**
+② REGISTER — **RECEIPT-ANCHORED**, with the bound explicitly not claimed universal: *"no claim is made about a fourth route, and none is made that the bridge does not exist."*
+③ HOME — P14 §9 (`sec:scope`).
+④ ANCHOR — `P14_characters_label_they_do_not_multiplet`, `P14_the_three_bridges_off_the_grading_all_land_on_the_same_ceiling`.
+⑤ JOINS — [[p13-boundary]] · [[p12-algebroid]] · [[p17-geometric-core]].
+⑥ NOT OP FOR — **⛔ And P14 places itself against the discrete-flavour literature rather than letting a reader mis-place it.** That literature's criterion is that more than one generation needs a **non-abelian** symmetry carrying two- and three-dimensional irreducibles. *This sector's threeness is not a horizontal symmetry of that kind at all: it is the **deck group of a covering**, saying the three generations are one object read three ways rather than three components of a multiplet, and **it is not broken and predicts no mixing**.* **The exchange is stated as running both ways**: *this construction cannot claim the explanatory work those models do, and their standing difficulties are correspondingly not its own — it is tested by the count, the chirality and the sixteen-fermion requirement.*
+
+
+---
+
+# P15 · `corpus/CR_cosmology.tex`
+### *The cosmology and its scalar perturbation sector: the geometric rate, the dissolved tensions, and the acoustic disagreement*
+
+> **▣ THE READ IS COMPLETE, AND THE CLAIM IS VERIFIED.** *r4105. All 25 section spans 132–1542 reconciled
+> against the ranges opened, zero gap. 1,411 body lines — the largest paper in the corpus.*
+
+### the-rate-is-the-load-bearing-claim-and-everything-else-is-its-consequence
+① CLAIM — The rate's two parameters are the substrate curvature radius and the **offset of the cut**, and **neither is a content of the universe**. The offset is measured **directly and calibration-free** — without a distance ladder, without the microwave background, and without any density. *The familiar cosmological form is a **coincidence of form**: written in the fitted pair the same rate reads as the Friedmann one, with the density parameters following identically — **a translation between parameter sets, and not a decomposition into components.*** **The two readings agree on the function and share nothing beneath it.**
+② REGISTER — **DERIVED**, receipt-anchored; and the load-bearing falsifiable claim is named as the prior one — *that radiation carries no term in the expansion rate* — of which the dissolved Hubble tension and the one-parameter acoustic calibration are **consequences**.
+③ HOME — P15 §2.3–§2.4.
+④ ANCHOR — `P15_expansion_law`, `P15_desi_dr2_confrontation`, `P15_hubble_expansion_confrontation_v2`.
+⑤ JOINS — [[p4-modern-parallax]] (**the empirical forcing**) · [[p8-slicing-operator]] (the rate as the stacking of the foliation) · [[p7-cr-framework]].
+⑥ NOT OP FOR — **⛔ THE DESI RESULT IS STATED AGAINST ITS OWN INTEREST AND MUST BE CARRIED THAT WAY.** *"Granted the same one free parameter, $\Lambda$CDM fits these data **marginally better** than this cosmology does" (0.92 against 1.00).* **The result is therefore not that the geometric rate fits better; it is that it fits without choosing an $H_0$, and the radiation-pinned one must choose.** *And $\Omega_m$ is not a CMB-calibrated input: Planck's own value degrades the fit.*
+
+### the-three-levels-and-why-a-mis-assignment-is-fatal
+① CLAIM — Every rate-bearing quantity is located on one of three levels. **(L1)** the foliation stacking rate, read *leftward* — *the cut is primary and the density is the name of its bend, not its cause* — **empirically forced** rather than modelled. **(L2)** the leaf-level local dynamics, the ordinary Friedmann readout with radiation gravitating normally, *the same single geodesic read **inward** as dust collapse that L1 reads outward as cosmology.* **(L3)** the projection the observer reads. **And there is no L1/L2 boundary in time**: the distinction is kinematic and holds at every epoch, the decomposition exact, *the two rates differing by the radiation term alone.*
+② REGISTER — **STRUCTURAL**, with the decision rule stated as structural rather than a choice.
+③ HOME — P15 §2.4.
+④ ANCHOR — the section's own.
+⑤ JOINS — [[p8-slicing-operator]] · [[p16-cosmogenesis]] · [[p10-canonical-time]].
+⑥ NOT OP FOR — **⛔ Each mis-assignment is quantitatively fatal and P15 gives both numbers**: the geometric L1 rate carried into the nuclear window is **~300× too slow**, and the radiation-sourced L2 rate carried past the branch point **re-manufactures the very tension this section dissolves.** *The assignment looked temporal only because the radiation term is negligible below $z\sim10$.*
+
+### the-inherited-datum-is-one-datum-and-the-naturalness-argument-is-withdrawn
+① CLAIM — $\rho_r/\rho_m\approx2$ at onset is **not a second inherited number** standing beside the onset redshift but **the onset itself, read in units of a density the construction does not determine** — both divide by the same quantity. *So what the handover supplies is one composition datum and what the cosmology fits is one parameter.*
+② REGISTER — **RECEIPT-ANCHORED**, and *the factor of two is exact at one $h$ and is to be quoted as an order-unity band, not as a determined number.*
+③ HOME — P15 §2.4.
+④ ANCHOR — `P15_the_ratio_is_the_onset_in_imported_units`, `P15_the_two_data_are_one`.
+⑤ JOINS — [[p16-cosmogenesis]] · [[p7-cr-framework]].
+⑥ NOT OP FOR — **⛔ P15 WITHDRAWS ITS OWN NATURALNESS ARGUMENT IN PLACE, and the withdrawal is the entry.** Complete collapse liberating binding energy of order the rest mass *looks* like it makes an order-unity handover natural — but the handover sits **four orders above the deuterium bottleneck**, so a handover carrying radiation merely of order the matter density would have $\eta\simeq0.5$ and **leave neither light elements nor acoustic peaks.** *"So the naturalness question runs the other way."* **And the inheritance is given a structural reason**: the infall thermalizes above the bottleneck so the progenitor's composition is **erased** and the abundances are *synthesized* rather than inherited — *what survives is baryon number, which no dissociation destroys.* **So $\eta$ is inherited because a conservation law protects it, and the abundances are predicted because none protects them** — *and a derivation of $\eta$ must reach a conserved charge of the progenitor, a constraint in kind and not merely in difficulty.*
+
+### the-acoustic-disagreement-and-where-it-does-not-live
+① CLAIM — **The paper states the disagreement in its own introduction and calls it one.** The asymptotic phase intercept sits $0.615$ from the sky's in the same units, *some seventy standard deviations at the peak-position accuracy the data supports*, and the sky's side is **measured here rather than quoted** — the Planck peaks located by parabolic fit, reproducing the standard values to better than one per cent **without having been fitted to them**. **And the disagreement is then localised by elimination**: not the spacing, whose asymptotic value is $0.975$ of the acoustic scale against the control's $1.002$; not the phase, since *the reading whose phase comes closest is still **sixty times** the control in $\chi^2$ per degree of freedom*; not the heights, which a free choice moves.
+② REGISTER — **MEASURED**, with the licensing move named: **matched-procedure differencing** — *the control passed through the identical extraction, so whatever bias the procedure carries appears in both arms and cancels.* **The discipline is stated as governing every control in the sector**: *a residual is credited against CR only once the control, run through the same machinery, has been shown not to produce it.*
+③ HOME — P15 §1, §5.9 (`sec:refit-bound`).
+④ ANCHOR — `P15_the_sky_phase_fit_and_its_uncertainty`, `P15_the_spacing_is_right_and_the_acoustic_phase_is_wrong`, `P15_the_phase_is_the_driving_and_the_undriven_arms_agree`.
+⑤ JOINS — [[p7-cr-framework]] (**whose frontier list carries the same disagreement in numbers**) · [[p16-cosmogenesis]].
+⑥ NOT OP FOR — **⛔ AND THE ATTRIBUTION IS COMPLETE AND COSTS THE PROGRAMME SOMETHING.** With every coupling to the potential removed, *the two arms' acoustic phases agree to $0.013$ of the acoustic scale and both spacings are it to a part in a thousand* — **two constructions with different rates, sound horizons, starting redshifts and initial data give the same series once nothing drives it.** Switching the driving on supplies the discrepancy, **98% of it**. *And the reason is the rate itself*: the standard driving shift is universal **because** every mode crosses during radiation domination, and a geometrically fixed rate has no such crossing — so the control's flat driving is **a cancellation between two flat channels**, and here the cancellation is gone and the two add. **⛔ "The acoustic-phase offset and the resolution of the Hubble tension are therefore one fact, and this construction cannot keep the second while disowning the first."**
+
+### the-coherence-is-the-null-boundary's-and-the-heights-are-time-reversal's
+① CLAIM — The initial-value problem on a null surface is **characteristic, not Cauchy**: one free function per mode plus regularity, rather than a field and an independent momentum. *A single datum per mode is a single phase per mode; there is **no second, independently specifiable quantity** to randomize the relative phase.* **So coherence is not imposed — it is what regular characteristic data on a null surface is.** And the **heights** are carried by a structural argument: the driven acoustic amplitude is the resonant Fourier magnitude of the potential's evolution, **exactly invariant under time reversal** — and this cosmology's driving lives on the *contracting* side, whose potential evolution is the Friedmann time-reverse of an expanding radiation era, *so its driving magnitude equals the standard one exactly.*
+② REGISTER — **ARGUED for the coherence; THEOREM-BACKED for the heights**, with the driving validated as a linear oscillator against the known radiation-era boost, and $P_1/P_2=2.185$ against $2.200$ for the control and $2.2564\pm0.0772$ measured on the sky the same way.
+③ HOME — P15 §4, §4.1.
+④ ANCHOR — `P15_verify_coherence_comb`, `P15_time_reversal_driving`, `C5b_baryon_term`, `P15_camb_reference`.
+⑤ JOINS — [[p7-cr-framework]] · [[p11-dynamics]] (**the same time-symmetry, one symmetry two consequences**) · [[p16-cosmogenesis]].
+⑥ NOT OP FOR — **⛔ AND P15 MARKS ITS OWN RECEIPT'S SCOPE AGAINST ITSELF.** The coherence receipt writes the mode function with the **standard** sound horizon as a literal *rather than any value this construction derives*, and **propagates no mode** — *so the spacing it returns is "the arithmetic of an assumed expression on an imported ruler rather than an output."* **What the peak spacing lacks is not agreement but a derivation, asserted here and computed nowhere in this paper.**
+
+### the-losses-recorded-as-losses
+① CLAIM — **Three places where the paper takes something away from itself.** *The scale-free interval*: before the onset the perturbation problem is scale-free and a scale-free problem imprints nothing, so **"this closes a candidate mechanism rather than supplying one"** and the first peak's position is left open — *"that is a loss of a claimed prediction and not a gain, and it is recorded as one."* *The shear coefficient*: the fit prefers a value the derivation refuses, and **"we take the derivation and pay the $\chi^2$, because a coefficient chosen because it fits is a fitted parameter whatever it is called."* *The reference choice*: the ordering between two measures of the floor reverses, so **"a reference chosen to flatter the instrument is available and we name it rather than use it."**
+② REGISTER — **⛔ NEGATIVES, each kept rather than tidied.**
+③ HOME — P15 §3, §5.8, §5.9.
+④ ANCHOR — `P15_the_shear_coefficient_derived_not_remembered`, `P15_the_floor_is_a_distance_between_models_not_a_number_from_the_data`.
+⑤ JOINS — [[p6-shadow-of-existence]] · [[p7-cr-framework]].
+⑥ NOT OP FOR — **⛔ And a stronger reading is declined at its own error bar**: the second- and third-peak damping multipliers split by $1.03$ standard deviations, *"and the split does not support it at its own error bar. We do not draw it."* **This entry is the corpus's clearest instance of the register the synthesis must reproduce.**
+
+### the-low-multipole-floor-is-parameter-free-and-non-discriminating
+① CLAIM — Because the distance slicing is **exactly flat** while the cosmological layers are a closed $S^3$, the photons are projected through the **flat** geometry while only the **source** modes carry the closed quantization — *not the hyperspherical transfer of a literal closed universe, which would deliver the lowest mode to the quadrupole and no deficit.* The result is a **parameter-free** deficit below $\ell\approx8$, bottoming **at $\ell=4$ and not at the quadrupole**.
+② REGISTER — **PROPOSITION plus Boltzmann transfer**; *established for the existence, location and minimum; **open** for the depth, two transfers differing by up to a factor of two.*
+③ HOME — P15 §8, `prop:flat`.
+④ ANCHOR — `P15_verify_geometry`, `P15_verify_lowell_boltzmann`, `P15_verify_lowell_exact_measure`.
+⑤ JOINS — [[p8-slicing-operator]] (**the second ruling**) · [[p10-canonical-time]] · [[p7-cr-framework]].
+⑥ NOT OP FOR — **⛔ Confronted with data it is NON-DISCRIMINATING and the paper says so**: it starves $\ell=2$ and $\ell=3$ **together**, *matching neither the sharp observed quadrupole-only dip nor the near-$\Lambda$CDM octopole*, and sits inside the lowest multipoles' cosmic variance. **"The low-multipole prediction of this section therefore stands as stated, and so does the discrepancy it faces."** *And a competing explanation is excluded by the residual's own behaviour rather than by argument*: the ratio **decreases** monotonically with $\ell$, where an adiabatic error would run the other way.
+
+### the-geometry-transmits-no-parameters
+① CLAIM — **A count settles the kind of the openness.** The progenitor family is parametrised by the mass alone — *the curvature radius is the one invariant and the marginal energy a choice of geodesic* — so the geometry is one-dimensional; **and the Kretschmann along the bead is mass-free in the faller's own proper time, so that one parameter does not survive the approach either.** *A quantity identical for every member carries no information about which member it was*, so **the collapse geometry transmits not one parameter but none.** Against that stand at least four independent inherited numbers. **So "inherited from the progenitor collapse" cannot mean inherited from the collapse *geometry*** — what is inherited comes from the progenitor's **matter content**, and none of that is carried by the mass.
+② REGISTER — **RECEIPT-ANCHORED**, and the conclusion reframes the frontier: *"not a derivation awaiting a cleverer argument but a **modelling task awaiting a progenitor interior**."*
+③ HOME — P15 §9.
+④ ANCHOR — `P15_the_geometry_transmits_no_parameters`, `P15_hbar_survives_in_As_and_cancels_in_ns`.
+⑤ JOINS — [[p16-cosmogenesis]] · [[p7-cr-framework]] · [[p12-algebroid]].
+⑥ NOT OP FOR — **And the two inherited numbers are separated by where $\hbar$ sits**: it is an overall multiplicative factor, *so it survives in the amplitude and **cancels in every logarithmic derivative*** — **the amplitude is permanently inherited, the tilt need not be.** *Read backwards this is useful rather than limiting: the observed amplitude **measures** the progenitor's mass, to be checked against the independent requirement that it lie below the recollapse threshold.*
+
+
+---
+
+# P16 · `corpus/cosmogenesis_paper.tex`
+### *Cosmogenesis: the Big Bang as a forced synthesis, and the light elements as a fossil of the previous collapse*
+
+> **▣ THE READ IS COMPLETE, AND THE CLAIM IS VERIFIED.** *r4115. All ten section spans 195–836 reconciled
+> against the ranges opened, zero gap (the four residual lines are appendix includes). Abstract 930 words,
+> needing no cut; one abstract-only fact relocated.*
+
+### the-big-bang-is-a-conjunction-and-the-register-is-recognition
+① CLAIM — The Big Bang is **not an initial condition to be supplied but the conjunction of consequences the corpus already establishes** — an eight-link chain, each link a theorem or a measurement in its home paper. *The register is recognition, not proposal*: the field equations are Einstein's, the nuclear reactions the ordinary ones, and **only the reading is CR's.** And the standard inference from the $r=0$ divergence to an inextendible boundary is refuted **by counterexample**: the very continuation universally accepted as removing the coordinate horizon carries the curve through. *"One posits nothing. One traces the curve, and the expanding universe is what lies past the throat."*
+② REGISTER — **SYNTHESIS**, each arrow cited to its home.
+③ HOME — P16 §1–§2.
+④ ANCHOR — none; the links' own.
+⑤ JOINS — [[p1-bh-causality]] · [[p2-janzen-circle]] · [[p3-sds-slicing]] · [[p4-modern-parallax]] · [[p7-cr-framework]] · [[p8-slicing-operator]] · [[p10-canonical-time]] · [[p14-matter-sector]].
+⑥ NOT OP FOR — **⛔ AND THE CHAIN'S CONCLUSION WAS THE 2012 DISSERTATION'S OWN CONJECTURE, STATED THERE WITH THE REASON IT COULD BE NO MORE THAN ONE.** *That work closed: "without the clarity that would be afforded by an analytical solution, it seems best to simply end this discussion with a conjecture: that the product of this collapse is a 3-sphere in de~Sitter space."* **The analytical solution whose absence was the stated obstacle is the slicing curve**, and the conjecture is discharged as the framework's Theorem B. *A programme closing its own thirteen-year-old conjecture, in the conjecturing author's words — the same shape as P8's vacuum kernel answering the 2012 "then by what?".*
+
+### the-window-rate-is-the-standard-rate-and-the-determinant-is-the-crossing
+① CLAIM — Along the marginally bound collapse worldline the Friedmann readout gives $|\mathcal H|=\sqrt{8\pi G\rho_r/3}$ to nucleosynthesis accuracy. **A contracting layer at density $\rho$ has the same $|\mathcal H|$ as an expanding layer at the same $\rho$**; the two differ only in the sign. *So the rate a nuclear reaction competes against is **identical** to standard BBN at every temperature in the window* — **and the determinant of the outcome is therefore not the rate but the crossing structure**: on which leg the matter passes the window, and whether a cooling pass exists at all.
+② REGISTER — **DERIVED**, from the operator's Friedmann readout.
+③ HOME — P16 §4.
+④ ANCHOR — the section's own.
+⑤ JOINS — [[p8-slicing-operator]] · [[p15-cr-cosmology]].
+⑥ NOT OP FOR — **And freeze-out is time-reversal violating, which is what makes the turnaround load-bearing.** *On a cooling history the rate falls through the Hubble rate and a relic freezes; on a heating history equilibrium is maintained and no relic is left* — confirmed on a Boltzmann toy run both ways. **So the infall cannot fix an abundance and only a subsequent cooling pass can: the turnaround is not incidental to the abundances, it is the event that makes them.**
+
+### the-peak-is-mass-independent-and-the-floor-is-argued-not-computed
+① CLAIM — The peak temperature is set by an **$M$-independent** scale, the infall energy: at the horizon $GM/R_sc^2=\tfrac12$ identically, so the kinetic energy delivered is of order the rest mass per nucleon, **and its thermalization is not a further assumption but what the convergence is** — worldlines arriving metrically coincident cannot remain cold coherent dust. That puts $T_{\rm pk}\simeq174$ MeV, the QCD scale to the estimate's accuracy, some three and a half orders above the deuterium bottleneck, **for every progenitor**. *And the horizon-crossing density is a **floor** rather than the peak, since the worldline continues past the horizon in finite proper time* — reading it as the peak is a reductio, since for the most massive progenitors it falls below the present cosmic density and would place the hot dense era in our future.
+② REGISTER — **⛔ ARGUED RATHER THAN COMPUTED, and P16 says so.** *The exact regulated peak is open — and downstream-irrelevant, since once dissociation is total the memory of the peak is erased.*
+③ HOME — P16 §7.
+④ ANCHOR — `P16_peak_temperature`, `P16_recollapse_is_the_nariai_threshold`, `P16_two_mass_blindnesses`.
+⑤ JOINS — [[p1-bh-causality]] (**the progenitors are the merger trees' end-state**) · [[p2-janzen-circle]] · [[p13-boundary]].
+⑥ NOT OP FOR — **⛔ The mass-blindness is placed at weight rather than leaned on.** *The corpus carries three, and P16 sorts them by mechanism: the curvature one and the turnaround-offset one share their mechanism (the mass enters as a pure amplitude and never in the argument, so anything read in the phase is blind), the horizon identity is independent of both, **and the floor here rests on the kind that does not depend on the amplitude at all.*** **And what is asserted nowhere is stated as such**: *that either result implies the other, or that the pattern extends to a third.* **A separate convergence is recorded and it is clean**: the recollapse threshold — whether the ball turns around at all — is **identically the Nariai mass parameter**, obtained elsewhere in the paper from the horizon cubic's double root, *with no step in common*.
+
+### the-erasure-channel-and-why-eta-crosses-when-the-composition-does-not
+① CLAIM — **The peak is an erasure, and what an erasure returns is exactly what a conservation law protects.** Total dissociation destroys nuclear binding, so the progenitor's *composition* is erased and the abundances are made afresh in the window; it cannot destroy baryon number, and $\eta$ is a ratio of baryon number to photon number. *So $\eta$ crosses because it is protected, and the abundances do not because they are not.* Checked as a channel: several very different input compositions through one thermal lap return a single final ratio — **zero bits of the available information about the input** — while the baryon number, carried as a state variable rather than asserted conserved, exits unchanged; **and the same machinery run with a *sub-binding* peak transmits the composition instead**, so the erasure belongs to the totality of the dissociation and not to the model.
+② REGISTER — **RECEIPT-ANCHORED**, with the reading marked as adding nothing to the physics: *"the conservation law is the argument, and naming it a channel only says why the two fates are the only two available."*
+③ HOME — P16 §7.
+④ ANCHOR — `N7_the_peak_is_an_erasure_channel_and_its_output_is_the_conserved_charge`; ledger `information_theory`.
+⑤ JOINS — [[p15-cr-cosmology]] (**the same division, stated there as the structural reason for the inheritance**) · [[p14-matter-sector]].
+⑥ NOT OP FOR — **⛔ This draws the line between what the sector inherits and what it predicts, and the line is not arbitrary**: a quantity carried by a conservation law is a datum of the handover; a quantity fixed by nuclear binding is a consequence of the cooling leg. *Which is why the abundances can be a prediction while $\eta$ remains an inheritance — **not two attitudes to the same kind of thing, but two kinds of thing**.* **And the frontier is sharpened rather than merely named**: a derivation of $\eta$ must reach a conserved charge of the progenitor, *and cannot be obtained from anything the peak erases.*
+
+### the-progenitor-interior-is-solved-and-the-recursion-does-not-run-on-modes
+① CLAIM — The closed dust-plus-radiation ball is solved exactly, and **its parity splits by species with no cross terms** — forced, not fortunate: in conformal time it obeys a driven harmonic oscillator, *the equation is linear so even and odd modes cannot mix*, the dust amplitude fixing the even and the radiation the odd. **So an interior carrying any radiation at all is radiation-dominated in its last moments**, which moves the indicial exponents to $(0,1)$ and forces a logarithm — *the jump being discrete, so the pure-dust background is a measure-zero exception rather than the leading term of a series in the radiation content.* The scalar off-diagonal is $-4\pi i/\rho$, **twice the tensor's**, *a property of the perturbation variable rather than of the background.*
+② REGISTER — **RECEIPT-ANCHORED**, several, with the tensor value exact for any content and the scalar specific to this interior.
+③ HOME — P16 §8.
+④ ANCHOR — `P16_radiation_is_the_odd_part`, `P16_the_mixing_is_two_pi_over_rho`, `P16_the_scalar_monodromy_is_four_pi_over_rho`, `P16_every_mode_is_frozen_at_the_crossing`.
+⑤ JOINS — [[p10-canonical-time]] (**the same closed-form connection coefficient, recovered there as the tensor value of one object**) · [[p15-cr-cosmology]] · [[p2-janzen-circle]].
+⑥ NOT OP FOR — **⛔ THE RECURSION IS A GENEALOGY OF UNIVERSES AND NOT A RECURSION ON MODES, and the argument is stronger than "unestablished".** There is **no object** for a patch-to-ambient harmonic map to be about: the correspondence is null boundary to null boundary *with no spacelike slice entering the map*, and the collapse interior is Kantowski–Sachs on $\mathbb R\times S^2$, **carrying no closed-$S^3$ harmonic basis to be identified with anything.** *And every mode arrives frozen, so a constant carries an amplitude and no phase and there is no mode label left for a previous monodromy to act on.* **⛔ AND THIS COSTS THE PROGRAMME A CLAIMED PREDICTION, RECORDED AS A LOSS**: the framework had advertised that the crossing "can inherit perturbations from a cold species and from no other" — *a filter acting on oscillatory content has nothing to select from when nothing arrives oscillating.* **"That is a loss of a claimed prediction and not a gain."**
+
+### the-abundances-are-produced-and-the-shared-miss-is-the-discriminating-one
+① CLAIM — The cooling leg **is** a standard big-bang nucleosynthesis — cooling through the window at the standard rate from a fully dissociated start — and a genuine multi-nuclide network integrated explicitly on that history returns $Y_p=0.247$ (obs $0.245$), $D/H=2.51\times10^{-5}$ (obs $2.53\times10^{-5}$), ${}^3$He at $1.05\times10^{-5}$, and ${}^7$Li at the standard several-fold over-prediction — **jointly from the single inherited $\eta$**, at the baryon density Planck reads from the peak heights, deuterium at $-0.5\sigma$ and helium-4 at $+0.5\sigma$. *And deuterium is un-tuned in a sense worth stating: the freeze-out temperature the observed $D/H$ demands **is** the standard bottleneck, and that is exactly the temperature at which the standard rate delivers a freeze-out — **target and mechanism coincide without adjustment.***
+② REGISTER — **COMPUTED**, receipt-anchored, with the library spread quoted (StarLib against REACLIB) as comparable to the propagated rate error rather than a modelling ambiguity, and the displayed column identified.
+③ HOME — P16 §9–§10.
+④ ANCHOR — `P16_validate_bbn`, `P16_theory_error_and_likelihood`, `P16_Yp_freezeout`.
+⑤ JOINS — [[p15-cr-cosmology]] · [[p14-matter-sector]] · [[p6-shadow-of-existence]].
+⑥ NOT OP FOR — **⛔ THE ENTRY THE SYNTHESIS SHOULD CARRY IS THE LITHIUM ONE, AND IT RUNS THE UNINTUITIVE WAY.** Deuterium and helium-4 at their observed values are reached by *any* network running standard rates at the Planck $\eta$, **so agreement there discriminates weakly**; a lithium over-prediction *of the standard size* is reached only by a network that **is** the standard one. Since what is argued is an **identity**, *a network reproducing $D$ and $Y_p$ while missing the standard lithium excess would be evidence **against** it.* **So the shared miss is the outcome that discriminates, and it tells in the identity's favour — it is the one result that cannot have been selected for, since no case is assembled out of a failure.** *And the lithium problem is explicitly not one this paper claims to solve.*
+
+### the-crossing-makes-no-asymmetry-and-that-narrows-the-target
+① CLAIM — **Checked in the action rather than argued from structure.** The imaginary segment's Euclidean integrand is **odd** under the standing conjugation — which acts on the offset *and* the mass together — so the two branches carry equal and opposite action, $\mp0.1443\,\alpha^2/G$ on the forced member, **summing to zero identically.** *Neither branch is weighted above the other by the crossing.* And the oddness **fails if the mass is not conjugated with the offset**, which is a way of seeing that the offset–mass relation's oddness is doing the work here as well as in the chirality parity it fixes elsewhere.
+② REGISTER — **RECEIPT-ANCHORED**, exact rather than approximate.
+③ HOME — P16 §3, §10.
+④ ANCHOR — `CROSSING_no_made_asymmetry`.
+⑤ JOINS — [[p13-boundary]] (**this $r=0$ crossing is the seat of charge conjugation's kinematic face**) · [[p14-matter-sector]] · [[p7-cr-framework]].
+⑥ NOT OP FOR — **⛔ THIS IS A NARROWING OF THE TARGET AND NOT A STEP TOWARD IT, and P16 says exactly that** — *"it removes the most natural place one would look first."* **And the two things a derivation might be asked for are separated**: the *magnitude* of $\eta$ is a conserved charge of the progenitor, inherited; its *sign* **is not a quantity to be derived at all** — it is which region the reading is taken in, and by the substrate's discrete CPT structure *the progenitor's own observers make the conjugate statement of us.*
+
+
+---
+
+# p0/17 · `corpus/geometric_core_paper.tex`
+### *The geometric core: the substrate as a real object, the universal standard, and maximal symmetry worn seven ways*
+
+> **▣ THE READ IS COMPLETE, AND THE CLAIM IS VERIFIED.** *r4119. All nineteen section spans 293–1839
+> reconciled against the ranges opened, zero gap. 1,523 body lines. Abstract 1800 words; the Cayley–Klein
+> identification and the polarity consequence relocated out of it at r4117, and a broken sentence repaired.*
+
+### the-three-faces-and-that-identifying-them-is-the-hypothesis
+① CLAIM — Three faces that the paper argues are one: **real by construction** (the substrate is a real manifold whose Lorentzian signature is intrinsic to its positive curvature, the imaginary variables bookkeeping over an everywhere-real geometry); **the universal standard** (its curvature radius and locked null cone are the intrinsic length and causal structure against which every material structure is what it is); and **maximal symmetry worn several ways** (the rigidity, the constant-locking, the augmentation, the universality, and the matter wall are one root at different rungs). *They are the same fact because the object real by construction **is** the object maximal symmetry forces **is** the object serving as the standard.*
+② REGISTER — **⛔ EACH FACE SEPARATELY ESTABLISHED; THE IDENTIFICATION IS THE PAPER'S CENTRAL HYPOTHESIS, and it says so.** *"The three faces are separately established below; identifying them as one fact is this paper's central hypothesis,"* decidable by a stated test.
+③ HOME — p0/17 §1.
+④ ANCHOR — the faces' own.
+⑤ JOINS — every paper in the corpus; the landing section maps them one by one.
+⑥ NOT OP FOR — **⛔ THIS IS THE REGISTER THE SYNTHESIS MUST NOT INFLATE.** *A results paper reporting "the corpus establishes that reality, standard-hood and maximal symmetry are one fact" has promoted a stated hypothesis to a result.* **And the paper's own reason for existing is scoped the same way**: the result that fixes it *predates the programme* — it is proved in the 2012 dissertation — and what has never been made in one place is the **general** statement.
+
+### the-unique-intrinsically-lorentzian-manifold
+① CLAIM — Solving the embedding for the fifth coordinate gives an intrinsic four-dimensional line element in which **the manifold is coordinatised by four real coordinates, real regardless of the sign of the curvature** — *so the imaginary fifth coordinate is a property of one embedding **picture**, not of the surface.* Reading the metric's eigenvalues off that real line element, three are positive always and the fourth's sign is fixed by real data alone: **de Sitter is the only real maximally symmetric manifold carrying an intrinsic Lorentzian signature.**
+② REGISTER — **PROPOSITION**, proved from maximal symmetry plus the signature and causal-structure conditions, *with nothing assumed of the embedding*.
+③ HOME — p0/17 §2, `prop:unique`.
+④ ANCHOR — the dissertation's.
+⑤ JOINS — [[p13-boundary]] · [[p12-algebroid]] · [[p7-cr-framework]] · [[p16-cosmogenesis]].
+⑥ NOT OP FOR — **⛔ The two ways the signature can turn are of different kinds and the paper separates them.** At fixed positive curvature the crossing occurs where the fourth eigenvalue passes through a **pole** — magnitude diverging, sign flipping, the numerator constant throughout. *So **the metric does not degenerate at the crossing***: a signature change through zero would send the determinant to zero and leave no metric there, **and that is not what happens.** The one place it does vanish is the null cone — *not a crossing within a member of the family but the family's own singular leaf.*
+
+### the-standard-is-one-and-eddington-is-corrected-in-three-directions
+① CLAIM — The vacuum equation furnishes, in that unique solution, **the complete universal standard**: the intrinsic length, the intrinsic null structure, and — *correcting Eddington* — an intrinsic temporal extent as real as the spatial one. **That a specified material structure is the same structure everywhere is the statement that there is one standard everywhere, which is the statement that the substrate is maximally symmetric.** *Right and now unified*: Eddington's length standard and light-cone standard are **one** standard, the waist and asymptote of a single equilateral surface. *Foggy and now overturned*: he read the symmetry as a property of the operation of measurement — **he had the dependence backwards, universality of measurement being the consequence of a real symmetric substrate rather than the source of an apparent one.** *Wrong and now corrected*: he held there is no radius of curvature in a timelike direction, which is exactly the imaginary-time misreading the paper dissolves.
+② REGISTER — **ARGUED**, with each correction tied to an established result.
+③ HOME — p0/17 §3.1–§3.3.
+④ ANCHOR — none.
+⑤ JOINS — [[p4-modern-parallax]] (**the intrinsic temporal standard is what P4 later measures directly**) · [[p3-sds-slicing]] · [[p7-cr-framework]].
+⑥ NOT OP FOR — **And the standard is legible in the expansion's own dynamics**: the areal acceleration is the substrate's term minus the material structure's, *so the turn from deceleration to acceleration is where the second falls to the first* — **set the cosmological constant to zero and the first term is gone, the acceleration is monotone, and there is no turn.** *The sign change is the standard's own signature in the dynamics, which is Eddington's point read where he did not read it.*
+
+### the-power-of-a-point-is-the-height-and-the-bound-is-what-makes-it-honest
+① CLAIM — The power of a point with respect to the throat **is the square of its height in the embedding**, since that identity *is* the hyperboloid's equation. So the tangent from any point of the substrate to the throat is a **null line**, and **Euclid's tangent–secant relation and the null condition are the same equation, the only difference being the minus sign in the metric.** The rulings *are* those tangents, so "doubly ruled by straight null lines" and "every tangent to the throat is null" are one statement.
+② REGISTER — **PROPOSITION**, proved and verified numerically.
+③ HOME — p0/17 §6.1, `prop:tangentnull`, `rem:onecircle`.
+④ ANCHOR — `P17_power_of_a_point`, `P17_power_is_null`, `O2_sightline_null_on_lift`, `Q1_quadric_polarity`, `C3_inversion_extends`, `D3_segre_no_pencil`; ledger `figure_theorem`.
+⑤ JOINS — [[p3-sds-slicing]] · [[p14-matter-sector]] · [[p12-algebroid]].
+⑥ NOT OP FOR — **⛔ THE BOUND IS THE ENTRY, NOT THE IDENTITY, AND THE PAPER PUTS IT FIRST.** *The identity is a fact about **one** circle — the substrate's waist — because it is the hyperboloid's equation and the hyperboloid has one waist.* **A theorem whose quantity is built from the power with respect to the throat carries the signature for free; one whose quantity is a chord, a bilinear relation, or a power with respect to another circle returns Euclid unchanged.** *And the bound was **found**, not posited*: the classical catalogue was run one theorem at a time and the boundary is where the run stopped paying. **⛔ AND THE PAPER REFUSES THE EVIDENTIAL READING IN ITS OWN VOICE**: *"A reading that returned new physics from a two-thousand-year-old theorem about circles would be an object of suspicion."* The classical geometry is **not evidence for the physics and is not offered as any** — it is a second way of seeing an object the construction arrived at first, *and the agreement of the two readings is the only thing either can honestly be cited for.*
+
+### the-constants-are-gauges-and-the-residue-is-one
+① CLAIM — The substrate carries a **single dimensionful scale**; the constants physics is written through are **unit gauges**, each a nameable geometric feature — the null-ruling slope, the waist, the cut's **offset** (the mass *is* the offset), and the horizon's thermal period. **So the gravitational–cosmological–quantum sector spends no free dimensionless constant.** *And the count that decides the reading has been run*: maximal symmetry leaves a **one-dimensional quotient which is the scale**, so no constant it fails to reach remains. **What the count leaves is not a constant but an initial condition.**
+② REGISTER — **RECEIPT-ANCHORED**, with a structural reason beneath the count: *neither real form supplies a second invariant and a dimensionless magnitude needs two.*
+③ HOME — p0/17 §7 (third way), §7.1.
+④ ANCHOR — `U3_the_residue_is_one_and_it_is_already_counted`, `P17_no_second_scale_on_either_face`, `P17_the_ds_entropy_is_the_gauge_count_squared_and_is_the_cc_number`, `N1_the_entropy_and_the_fine_tuning_factor_are_one_number`.
+⑤ JOINS — [[p10-canonical-time]] (**the lone extension freedom the horizon's thermal state spends**) · [[p15-cr-cosmology]] · [[p13-boundary]].
+⑥ NOT OP FOR — **⛔ THE ENTROPY AND THE FINE-TUNING FACTOR ARE ONE NUMBER, not two of the same size** — both are the same combination read with a different coefficient, differing by $3/8$ and nothing else. *So the reader arriving with the de Sitter entropy and the reader arriving with the cosmological-constant problem are holding one quantity.* **And the paper marks what it does not claim**: *whether the standard entropy expression carries to a cosmological horizon on this reading is not settled here* — **and were it to fail, "that would be a result and not a gap," a one-scale ledger forbidding a thermodynamic relation rather than accommodating one.**
+
+### the-cut-is-group-theoretic-and-the-closure-defect-is-the-mass
+① CLAIM — **What "cut" names is fixed by computation rather than left to be inferred, and the two available readings part company one rung down.** The first descent is **linear**: a hyperplane section of the substrate returns a de Sitter four-space for *every* admissible plane — a quadric cut by a linear space being a quadric. But since the Schwarzschild–de Sitter Kretschmann scalar is constant only at zero mass, **a plane section of the substrate is Schwarzschild–de Sitter exactly when the mass vanishes.** Below that rung the relation is neither a section nor an isometric embedding: the substrate condition and the induced metric give two determinations of one radial function and they disagree. **And the closure defect factors with an overall factor of the mass** — *the amount by which a cut fails to close as a hypersurface **is** the mass it carries.*
+② REGISTER — **COMPUTED**, receipt-anchored, and consistent with the classical embedding class.
+③ HOME — p0/17 §8.
+④ ANCHOR — `P17_the_cut_is_planar_only_at_M_zero`, `P17_the_alpha_family_is_a_foliation`.
+⑤ JOINS — [[p9-range-paper]] (**the group-theoretic definition the usage is fixed to**) · [[p8-slicing-operator]] · [[p12-algebroid]].
+⑥ NOT OP FOR — *So "matter is the bend of the cut" is **an identity rather than a reading** at this rung* — **and the isometric-embedding reading coincides with the group-theoretic one at zero mass and nowhere else, with nothing in the programme resting on the stronger one.** **⛔ A related expectation fails structurally and the paper says which half fails**: the confocal-quadrics orthogonality theorem looks applicable and is **vacuous here** — *the hypothesis fails, not the conclusion*, since the confocal equation is linear in the equilateral case so exactly one member passes through any point. **And that same fact fixes where the harmonic analysis can live**: there are no ellipsoidal harmonics on the substrate, *so the corpus's leafwise analysis is forced rather than chosen.*
+
+### the-two-threes-the-two-walls-and-the-dimension-that-is-not-an-eighth-face
+① CLAIM — **The discrete residue factorises because "on" and "tangent" are independent relations to one circle**: the Weyl $S_3$ acts on the three roots — the special points **on** the waist — and the inversion on the two rulings, the lines **tangent** to it. *And the factors differ in kind for the same reason*: a ruling is a line **of** the substrate, so exchanging them is a motion of it — an isometry, acting on the cut spinor as $\gamma^5$, **so chirality descends gauged**; a root labels a different **cut**, so permuting them moves through the solution space and is no motion of the substrate — **so a family symmetry is global.** *The Standard Model's arrangement of a gauged chirality against a global flavour is, in this reading, the difference between being **on** the one circle and being **tangent** to it.*
+② REGISTER — **CONSOLIDATION** of established results, with the two threes distinguished as the matter paper distinguishes them.
+③ HOME — p0/17 §7 (fourth and sixth ways), §8.
+④ ANCHOR — `P0_the_order_parameter_is_the_offset_and_it_is_bounded_by_the_nariai_member`.
+⑤ JOINS — [[p14-matter-sector]] (**the within-state $S_3$ against the generations' deck $\mathbb Z_3$**) · [[p12-algebroid]] · [[p5-groupoid]] · [[p13-boundary]].
+⑥ NOT OP FOR — **⛔ THE DIMENSION RESULT IS EXPLICITLY NOT AN EIGHTH FACE, AND THE REASON IS THE ONE THE SYNTHESIS MOST NEEDS.** *"The reason this is not a face of maximal symmetry is that it does not come from maximal symmetry."* **The substrate is maximally symmetric and moduli-free in every dimension, so the criterion of necessity has nothing to grip on the dimension itself**; what selects is the **matter sector's own content**. *The two statements are compatible only because they are about different objects: **the cut's dimension is settled, the substrate's remains bounded below and not above.*** **"Reading this as a ceiling on the substrate would re-make exactly the error the distinction is drawn to prevent."** And the order-parameter reading is bounded the same way: *what the Higgs mechanism breaks is read as this parity, and **what is claimed is a mechanism and not a magnitude*** — with the order parameter **bounded**, saturating at the Nariai member, *where a quartic potential is unbounded in its field.*
+
+### a-frontier-closed-by-impossibility
+① CLAIM — **The free-data test is split because its two sides now stand differently, and one closes.** *The constant side is a result*: the sector spends no free dimensionless constant, for a structural reason — **neither real form supplies a second invariant and a dimensionless magnitude needs two** — and *the falsifier's second clause was **met rather than asserted***, a place where a genuinely free constant could have lived having been checked and locked. *The datum side is a different kind of quantity and it closes by impossibility*: **radiation dilutes as one power of the scale factor faster than matter, so the ratio changes along the leg — and a quantity that changes along the leg has no single value for a handover to transmit.** Nor does the crossing supply one: *a factor multiplying both components alike leaves the ratio unchanged, and only a species-resolved factor could rescale it — which is exactly the rule withdrawn when the crossing was shown lossless for every species.*
+② REGISTER — **⛔ A FRONTIER CLOSED BY IMPOSSIBILITY, recorded as a finding**: *"what stands here is not a derivation owed but the statement that there is none to give."*
+③ HOME — p0/17 §10, item 1.
+④ ANCHOR — `X1_the_ratio_is_a_clock_reading_not_a_carried_datum`, `P17_the_frontier_item_is_a_result_and_the_cosmogenesis_paper_reaches_it_the_other_way`, `P03_operator_at_general_D`.
+⑤ JOINS — [[p16-cosmogenesis]] (**which reaches the same line from the other side on a different ground: what a handover carries is what a conservation law protects**) · [[p15-cr-cosmology]] · [[p7-cr-framework]].
+⑥ NOT OP FOR — **Two independent reasons, agreeing**: *the ratio is not carried because it is not constant along either leg, and it is not carried because the crossing destroys what would have fixed it.* **⛔ And this is the entry that shows the corpus retiring one of its own open problems by proving it unaskable rather than by answering it** — the shape the synthesis should carry, since a list of frontiers whose entries quietly empty is worse than none.
 
 ---
 

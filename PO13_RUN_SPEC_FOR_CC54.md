@@ -1,118 +1,118 @@
 ---
 name: PO13_RUN_SPEC_FOR_CC54
-description: PO-13's run specification for a node with compute — what to run, with which flags, and what each run decides. Held outside the corpus beside PO13_WORKING_STATE.
+description: PO-13's run specification for a node with compute — the one computation P15's acoustic section now names as open, with the flags, the convergence ladder, and what each run decides. Held outside the corpus beside PO13_WORKING_STATE.
 status: WORKING DOCUMENT — deliberately not a paper
-# ⛭ r3548 (node 60): DECLARED-UNKNOWN, which is the true statement from this line — nobody
-# here has brought this document current and its position is not known. Written because
-# classifying it (it had gone unclassified since it was added, failing
-# `classify_documents --check` on every push — and under the fast job's `set -e` that
-# aborted the step before anything after it ran) made it visible to `check_currency` for
-# the first time. ** Declaring ignorance is not declaring currency, and only the owning
-# line can do the second. **
-current: none
+current: r4113
 ---
 
-# PO-13 RUN SPEC — for a node with compute
+# PO-13 RUN SPEC — the CR arm at converged $k$ on the leaf congruence
 
-Everything here is blocked in the chat environment by memory and turn limits, not by
-uncertainty about what to run. The instrument is `computations/beyond_the_wall/ACOUSTIC_two_arm.py`.
-Two env-gated flags exist, both DEFAULT OFF; with both unset the file is byte-identical in
-behaviour to its pre-r3408 form.
+***This supersedes the pre-`r3409` version of this file wholesale.*** *That version described
+`LEAFPERT` as a default-off flag and said the instrument was byte-identical to its pre-`r3408` form
+with the flags unset. **`LEAFPERT` has been the default since `r3409`** and the earlier text would
+send a node to run the wrong configuration.*
 
-## WHY THERE IS A NEW FLAG
+## ⛭ WHAT THIS RUN IS FOR
 
-The framework assigns the perturbations to the LEAF, in two places, verbatim:
+*`P15 sec:refit-bound` was restated at `r4111` to report only what is in hand. It now names **one
+computation** as the open item, and this is it. Until it is run, the peak spacing, the acoustic phase
+and the peak heights are quantities the corpus does not report.*
 
-- P15 `sec:properframe`: "a process running in the content --- rs, r_D, recombination,
-  THE PERTURBATIONS --- takes the leaf's."
-- P7's rate-rule remark: the same sentence, same assignment.
+**The instrument:** `computations/beyond_the_wall/ACOUSTIC_two_arm.py`.
+**Both arms run on one set of equations**, so nothing measured between them is a difference of
+machinery.
 
-The instrument carried ONE rate (`Hphys`, "the ONLY place the two arms' rates differ"), and in
-the CR arm that is the STACKING rate. So the perturbation sector ran on L1 where the framework
-says L2. The discrepancy is |Jac - 1| = 0.128 at recombination, rising to 0.998 at a = 1e-9 ---
-largest exactly where the driving is set.
+## ⛔ WHY THE EXISTING NUMBERS DO NOT ANSWER IT
 
-`LEAFPERT=1` puts the perturbation equations on the leaf rate by an exact chain rule,
+*Two independent defects, and most of the retired figures carry both.*
 
-    dY/deta_stack = (H_stack / H_leaf) * F(Y, Hcal_leaf)
+**① The rate.** *The perturbations ran on the stacking rate until `r3409`. The rate rule assigns them
+to the leaf — "a process running in the content — $\rs$, $r_D$, recombination, **the
+perturbations** — takes the leaf's" — and **the leaf rate carries the radiation term.** Every P15
+acoustic receipt is built at `r2376`–`r2512`, all below `r3409`.*
 
-so every spline and grid is untouched and `rs`, `D_M` and the projection keep the stacking rate
-(L1 --- which is what `sec:tensions` assigns them, and what the Tier-4 receipt
-`P15_hubble_expansion_confrontation_v2.py` already does).
+**② The $k$-integral.** *`r3870` found it truncated at the highest multipole **reported**, where
+$\int P(k)\Delta_\ell(k)^2\,\dd k$ is not converged. **It was repaired on the control arm only**, and
+`r3870` says so explicitly: "no CR number is produced or corrected. The CR arm is truncated by the
+same mechanism." The control's height ratio moves $2.721 \to 2.393$ across the cutoff; a defect of
+that size is a systematic, not a rounding.*
 
-`GSRC=1` is the OTHER repair --- rescaling the Poisson source by rho_tot(full)/rho_tot(free).
-It is retained for the record and IS NOT THE ONE THE FRAMEWORK SELECTS. Do not run it as a
-candidate; run it only if someone asks what option (a) does.
+## ⛭ THE RUNS
 
-## THE SELF-CHECK THAT IS ALREADY EXACT
+*Ordered. Each is a gate on the next — **do not proceed past a failing convergence check**.*
 
-In the `lcdm` arm, `Hphys` takes its `RAD_IN_RATE=True` branch, which is character-for-character
-the same expression as `Hleaf`. So `Jac == 1` and `Hl_of == Hc_of` identically, and LEAFPERT is
-provably a no-op there. RUN 1 below confirms it numerically; the proof does not depend on it.
+### RUN 1 — the convergence ladder, both arms
 
-## RUNS, IN ORDER, WITH WHAT EACH DECIDES
+```
+for K in 1.5 2.0 3.0; do
+  for A in lcdm cr; do
+    KFAC=$K ARM=$A python3 computations/beyond_the_wall/ACOUSTIC_two_arm.py
+  done
+done
+```
 
-**RUN 1 --- the control, with the flag on. THE GATE ON EVERYTHING BELOW.**
+*`NK` is **derived** from `KFAC` and must not be pinned — the two guards pull against each other, and
+reaching further in $k$ at fixed mode count coarsens $\dd k$ and breaks the sampling guard.*
 
-    ARM=lcdm NK=900 LEAFPERT=1 python3 ACOUSTIC_two_arm.py
+⇒ **Decides:** whether the CR arm is converged, and at what cutoff. **The control is the calibrator**:
+it must return $P_1/P_2 \approx 2.197$ and peaks near $220/540/812$ at the converged rung. *If the CR
+arm's reported quantities still move between $2.0$ and $3.0$ by more than the control's own movement,
+**it is not converged and nothing below is measured** — report that and stop.*
 
-MUST return the control's validated first peak at l = 220 against the sky's 220.6, identical to
-the flag-off control. It did not fit in memory in chat (2700 modes). **If this does not
-reproduce the control, stop --- the implementation is wrong and nothing below means anything.**
+### RUN 2 — the datum freedoms as a range, at the converged `KFAC`
 
-**RUN 2 --- the measurement, and its continuum check.**
+*The seam datum has **two** freedoms and the honest output is a **range**, not a value.*
 
-    ARM=cr LEAFPERT=1 python3 ACOUSTIC_two_arm.py
-    ARM=cr LEAFPERT=1 NK=400 KCONT=1 python3 ACOUSTIC_two_arm.py
+| freedom | flag | readings |
+|---|---|---|
+| the common seam phase | `CRPHI` | a numeric grid over $[0,\pi)$, plus `entry` and `entryleaf` |
+| what "flat in $k$" is read **at** | `CRAMP` | `flat`, `entry` |
 
-The ladder run returned, in chat: peaks 204, 516, 828, 1164; l_1/l_A = 0.6764; P1/P2 = 2.013;
-P1/P3 = 2.373. Sky: 220.6, 538.1, 809.8; 0.7312; 2.217; 2.277. The KCONT run is NOT confirmation
-of the physics --- it tests only whether the discrete ladder set the answer. For the baseline the
-two agreed to the digit; that has not been shown for this configuration.
+```
+KFAC=<converged> ARM=cr CRPHI=<phi> CRAMP=<amp> python3 .../ACOUSTIC_two_arm.py
+```
 
-**RUN 3 --- OWED (624)'S PRECONDITION. DO THIS BEFORE READING ANY l_1 ABOVE.**
+⇒ **Decides:** the range of the first peak's position, the peak spacing, the acoustic phase intercept
+and $P_1/P_2$ across the datum. **Report every reading, and the span.** *P15 already states the first
+peak spans a factor of $2.26$ across the pre-repair readings; whether that survives convergence on the
+leaf is exactly what this measures.*
 
-    ARM=cr LEAFPERT=1 SAVE=/tmp/lp.npz python3 ACOUSTIC_two_arm.py
+⚠ ***The admissibility criterion is fixed here, before the numbers:*** *a reading enters the spacing
+statistic only if it returns four peaks with the fourth at least a twentieth of the first. An interval
+read off three features one of which is absent is not a spacing.*
 
-then count EVERY local maximum below l = 500, at filter orders 1 through 4:
+### RUN 3 — the likelihood, both arms, identical settings
 
-    from scipy.signal import argrelextrema as ar
-    d = np.load('/tmp/lp.npz'); ls, Dl = d['ls'], d['Dl']
-    for o in (1,2,3,4):
-        print(o, [int(ls[q]) for q in ar(Dl, np.greater, order=o)[0] if ls[q] < 500])
+*Only if RUN 1 converged.* Score both arms on the same Planck binned $TT$ bins, at the converged
+`KFAC`, with the control's own $\chi^2$ reported beside every CR figure.
 
-r3325 found that undriven, DRC alone and DRE=0.42 each give ONE feature below l = 500 while both
-couplings together give TWO. Baseline and GSRC both give two. **If LEAFPERT gives two, then 204
-is not necessarily the first peak and comparing it to 220.6 is a category error --- the same
-error made twice in chat.** If it gives ONE, that is itself a major result and should be reported
-as such rather than folded into a peak-position claim.
+⇒ **Decides:** whether there is an acoustic disagreement at all once the arm is converged on the rate
+the framework assigns it — and, if so, its size against the control's floor.
 
-**RUN 4 --- the DRE scan, abandoned in chat for want of compute.**
+⚠ ***Measure the floor as a model-to-model distance, not as a difference of two numbers each taken
+against the sky.*** *The latter mixes how far the models are apart with where each sits relative to
+one noise realisation, and it moved across three defensible reference $\Lambda$CDMs by an amount
+comparable to the quantity being reported.*
 
-    for D in 0.42 0.50 0.60 0.70 0.80 0.90 1.00; do
-      ARM=cr DRC=1 DRE=$D SAVE=/tmp/dre_$D.npz python3 ACOUSTIC_two_arm.py
-    done
+## ⛔ WHAT NOT TO DO
 
-Count features below l = 500 for each, as in RUN 3, with LEAFPERT OFF (this scans the baseline's
-structure). r3325 brackets the transition between DRE = 0.42 (one feature) and DRE = 1 (two).
-**If a single feature BIFURCATES at a threshold, the second is interference between the two
-driving couplings and is not a peak. If two are present throughout and one merely emerges from
-under the other, both are real and 624's question changes shape.** Either outcome settles it.
+- ***Do not set `STACKPERT=1`*** except to reproduce a retired figure for comparison. It recovers the
+  pre-`r3409` behaviour, which is the configuration the framework does not assign.
+- ***Do not pin `NK`.*** It is derived from `KFAC` for a reason recorded at the k-grid.
+- ***Do not report a single first-peak position.*** It is a statement about a seam datum the
+  construction does not fix. A range is the result; a value is a category error.
+- ***Do not fit the shear coefficient.*** It is settled by derivation at $16/15$, and a coefficient
+  chosen because it fits is a fitted parameter whatever it is called.
+- ***Do not write any of this into a paper as narration.*** The corpus states one position. Findings
+  land in `PO13_WORKING_STATE.md`; `P15 sec:refit-bound` is rewritten to the new state only once the
+  runs are done, and it is rewritten rather than amended.
 
-Then repeat the scan with `LEAFPERT=1` --- if the leaf rate removes the bifurcation, that is the
-cleanest possible statement of what was wrong.
+## ⛭ WHAT COMES BACK
 
-## WHAT TO WRITE DOWN, AND WHERE
-
-`PO13_WORKING_STATE.md`, under OWED (624) as its stated precondition. Report RUN 1 first and
-plainly; if it fails, report only that. Do not report an improved `l_1` before RUN 3 has settled
-which feature is the first peak.
-
-## WHAT IS ALREADY SETTLED AND NEED NOT BE RE-DERIVED
-
-Tiers 1--4 of the bottom-up audit are pushed (r3406, r3407) and clean: the field equations give
-the kernel, the kernel's E=1 geodesic gives the rate, alpha comes from stellar ages and x_0 from
-a pure late-time shape ratio in which the dimensionful prefactor cancels. `Omega_m` appears
-nowhere in that chain. The leaf receipts already name their level and their rate. The Tier-4
-projection receipt integrates `rs` UP TO `z_onset` on the stacking rate --- both of which I got
-wrong in chat before the audit, and both of which the corpus had right.
+*A single report into `PO13_WORKING_STATE.md` carrying: the convergence ladder for both arms; the
+datum-freedom table with its span; the likelihood figures with the control beside them; and an
+explicit statement of which of the retired figures the converged run reproduces and which it does
+not. **If the diagnosis in the retired text — that the driving supplies the disagreement because a
+geometrically fixed rate has no radiation-domination crossing — does not survive the leaf rate, that
+is the most important thing the run can return**, since the leaf rate carries the radiation term and
+the premise may not hold.*
