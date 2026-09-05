@@ -156,12 +156,26 @@ check('⓵ᵉ and r3111\'s own repair has landed -- "That refit has since been p
 #:     *If the tree ever carries no collision at all the seed is empty, `all(...)` is vacuously
 #:     true, and the check would assert nothing -- so that case is refused explicitly rather than
 #:     passing quietly, which is the failure mode this repair exists to end.*
-_SEED = sorted(C.collisions())
+#: ⛔⛭ ** AND THE DERIVED SEED WAS STILL WRONG, IN THE DIRECTION A SHALLOW CLONE CANNOT SEE --
+#: ** repaired r4132 on a FULL clone. **
+#: *`main()` suppresses a collision that is in `BASELINE` ** or in `TESTIMONY` ** -- the other
+#: line's reported collisions, held in a separate register on purpose.  The seed removed ids from
+#: `BASELINE` only, so every seeded id that also sits in `TESTIMONY` stayed suppressed and could
+#: never be named back.*  ** Measured here: `collisions()` returns 63, of which 32 are `TESTIMONY`,
+#: so the gate named 31 of the 63 seeded ids and `named` was False. **
+#:   ⌗ *It passed on the clone it was written on because that clone was SHALLOW and reached no
+#:     `TESTIMONY` collision at all, making the intersection empty.*  ⇒ *** So this is the same
+#:     horizon defect as r4127's four, arriving in the OPPOSITE direction: those checks FAILED
+#:     because the history was short, and this one PASSED because it was.  A sweep for the class
+#:     has to look for both, and only the second kind is invisible from a shallow clone. ***
+#:   ⇒ ** The seed is what the gate would actually have to report: the collisions it does not
+#:     already know about by either register. **
+_SEED = sorted(set(C.collisions()) - C.TESTIMONY)
 
 
 def _fires_on_new():
-    """** SEEDED: take the three post-r3112 collisions OUT of the baseline; the gate must name them
-    and exit 1. **  *A detection gate is only shown to work by being shown a defect it has not been
+    """** SEEDED: take every collision the gate does not otherwise know about OUT of the baseline;
+    the gate must name them all and exit 1. **  *A detection gate is only shown to work by being shown a defect it has not been
     told about -- "the gate is green" shows nothing at all.*
     """
     import contextlib
@@ -294,8 +308,11 @@ check('⓸ check_paper_tense is green on the repaired tree', T.main() == 0)
 # ** one thing a detection gate is built NOT to promise. **  *This went red when three new
 # collisions arrived -- that is the gate WORKING.  What a receipt can assert is that the gate FIRES
 # on a collision outside its baseline, and that its baseline names rather than counts.*
-check('⓸ᵇ check_revision_collisions FIRES on a collision outside its baseline: with the three that '
-      'arrived after r3112 removed from BASELINE, it reports them by name and exits 1',
+# ** the count is REPORTED and not pinned -- r3964's lesson at this check: a pinned defect count
+#    punishes the finding it defends, and this seed grows whenever the corpus goes on numbering. **
+check(f'⓸ᵇ check_revision_collisions FIRES on a collision outside the registers it already knows: '
+      f'with all {len(_SEED)} collision(s) it does not carry in BASELINE or TESTIMONY removed from '
+      f'BASELINE, it reports every one of them BY NAME and exits 1',
       _fires_on_new())
 check('⓸ᶜ ⌗ and it is green as the tree stands, with those three now baselined BY NAME',
       C.main() == 0)

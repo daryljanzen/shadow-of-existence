@@ -37,8 +37,443 @@ difference as physics. Withdrawn until both arms are converged.*
 # aborted the step before anything after it ran) made it visible to `check_currency` for
 # the first time. ** Declaring ignorance is not declaring currency, and only the owning
 # line can do the second. **
-current: r4107
+current: r4138
 ---
+
+
+# ⛭⛭⛭ r4138 — **RUN 2: THE DATUM'S SPAN CONTAINS THE SKY ON ALL FOUR STATISTICS, AND NO SINGLE
+READING REPRODUCES MORE THAN TWO OF THEM — POSITION AND ALTERNATION ARE ANTI-CORRELATED**
+
+***Twenty readings of the seam datum's two freedoms at the converged rung `KFAC=2.0`, on the leaf
+congruence, default projection path: `CRPHI` over $[0,\pi)$ in eight steps plus `entry` and
+`entryleaf`, each with `CRAMP` $\in$ \{`flat`, `entry`\}. Spectra saved so the FOURTH peak can be
+measured, because the instrument prints only $P_1/P_2$ and $P_1/P_3$ and the spec's admissibility
+criterion is about the fourth.***
+
+⚠ ***THE CRITERION WAS FIXED BEFORE THE NUMBERS, AS THE SPEC REQUIRES, AND IT REJECTS THREE.***
+*"A reading enters the spacing statistic only if it returns four peaks with the fourth at least a
+twentieth of the first."* — `phi2.7489_ampentry` returns **fewer than four peaks**; `phientryleaf`
+returns $P_4/P_1 = 0.039$ and $0.049$, **below $1/20$ on both amplitude readings**. ⇒ **`entryleaf`
+is excluded entirely by a criterion written before it was run.** *Seventeen admissible.*
+
+## ⛭ THE FOUR STATISTICS, ACROSS THE SEVENTEEN
+
+| statistic | span across the datum | sky | verdict |
+|---|---|---|---|
+| first peak $\ell_1$ | $148 \to 228$, **$1.541\times$** | 220.6 | **INSIDE** |
+| spacing (fit to four peaks) | $276.0 \to 330.4$, $1.197\times$ | 294.6 | **INSIDE** |
+| acoustic phase intercept $b/a$ | $-0.4044 \to -0.2161$ | $-0.2253$ | **INSIDE**, at the very edge |
+| alternation $\mathrm{gap}_{23}/\mathrm{gap}_{12}$ | $0.475 \to 1.088$ | 0.856 | **INSIDE** |
+
+⇒ ***`P15` `sec:coherence`'s CONCLUSION SURVIVES AND ITS NUMBER DOES NOT.*** *The paper says "across
+the eighteen readings of the two freedoms together the first peak spans a factor of $2.26$", and its
+own text gives that measurement's configuration away by naming "the peak near $172$" — the
+stacking-clock family.* **At converged $k$ on the leaf congruence the span is $1.541\times$, and the
+sky is still inside it, so "the first peak's position is not a statement of this construction" holds
+with a different figure behind it.** *Across the fifteen NUMERIC-phase readings alone it is
+$204 \to 228$, only $1.118\times$: most of the span is carried by the derived `entry` reading at 148.*
+
+## ⛔⛭⛭ AND THE THING RUN 2 RETURNS THAT NOBODY ASKED FOR: THE TWO CANNOT BE HAD TOGETHER
+
+***A span that contains the sky on each statistic SEPARATELY is a much weaker statement than a reading
+that reproduces the sky. There is no such reading, and the reason is structural.***
+
+| $\ell_1$ | alternation $\mathrm{gap}_{23}/\mathrm{gap}_{12}$ across the readings at that position |
+|---|---|
+| 148 | 0.475, 0.526 |
+| 204 | 0.923, 0.946, 0.950, 1.000, 1.000, 1.000 |
+| 212 | 0.971, 0.971, 1.057 |
+| **220** | **1.000, 1.029, 1.057, 1.088** |
+| **228** | **1.027, 1.051** |
+| — sky — | 220.6 at **0.856** |
+
+**Spearman $\rho = +0.782$, $p = 2.1\times10^{-4}$ over the seventeen.** *As the datum carries the
+first peak UP toward the sky's position, the second gap goes from CONTRACTING to EXPANDING — away from
+the sky's.* ⇒ ***Of the six readings that put the first peak within one grid step of $220.6$, NOT ONE
+contracts. Every one expands.*** *And of the seven that do contract, every one sits at $\ell_1 \le 212$.*
+
+*** => POSITION AND ALTERNATION ARE ANTI-CORRELATED ACROSS THE SEAM DATUM. THE DATUM CAN BUY EITHER
+AND NOT BOTH. ***
+
+⌗ ***This SHARPENS `P07` `sec:frontiers` rather than refuting it.*** *That section says the sky's
+spacings alternate "and this comb does not: its first two gaps are equal to the resolution at which
+they are read".* **At converged $k$ on the leaf that is exactly right where the position is right —
+and wrong in general, because seven of the seventeen readings do alternate.** ⇒ *The uniform comb is
+not a property of the construction; it is a property of the readings that land the first peak. The
+statement that survives is the stronger one: **no reading buys the position without losing the
+alternation.*** ⛔ *And `C61` has already removed the mechanism that section offers for it — on the
+leaf rate the first peak's mode IS driven — so the correlation is measured and unexplained.*
+
+⚠ ***ONE RESOLUTION CAVEAT, AND IT IS BEING MEASURED RATHER THAN ARGUED.*** *These gaps are read on an
+$\ell$ grid with `LSTEP` $=8$, so a gap difference of $8$ is ONE BIN and cannot be told from zero. The
+sky's contraction is $45.8$ in $\ell$, about six bins, so the FAILURE to contract at $\ell_1\simeq220$
+is resolvable; the small contractions at $\ell_1=204\!-\!212$ (one to three bins) are not.* **RUN 4 is
+re-running four readings at `LSTEP` $=2$ — the control, the coded default, the derived datum, and the
+reading that lands the first peak on the sky — to settle it at a quarter of the bin.**
+
+## ⌗ THE READINGS IN FULL
+
+| reading | peaks | $\ell_1/\ell_A$ | $P_1/P_2$ | $P_1/P_3$ | $P_4/P_1$ | gap ratio | |
+|---|---|---|---|---|---|---|---|
+| `phi0.0` `flat` *(coded default)* | 204/516/828/1188 | 0.6764 | 1.975 | 2.206 | 0.235 | 1.000 | |
+| `phi0.0` `entry` | 204/524/828/1180 | 0.6764 | 1.621 | 1.424 | 0.417 | 0.950 | |
+| `phi0.3927` `flat` | 204/508/812/1172 | 0.6764 | 1.619 | 1.618 | 0.337 | 1.000 | |
+| `phi0.3927` `entry` | 204/516/804/1148 | 0.6764 | 1.386 | 1.093 | 0.593 | 0.923 | |
+| `phi0.7854` `flat` | 204/500/796/1156 | 0.6764 | 1.237 | 1.123 | 0.509 | 1.000 | |
+| `phi0.7854` `entry` | 204/500/780/1124 | 0.6764 | 1.110 | 0.800 | 0.880 | 0.946 | |
+| `phi1.1781` `flat` | 212/492/788/1148 | 0.7029 | 0.923 | 0.784 | 0.761 | 1.057 | |
+| `phi1.1781` `entry` | 212/492/764/1100 | 0.7029 | 0.884 | 0.603 | 1.262 | 0.971 | |
+| `phi1.5708` `flat` | 220/492/788/1140 | 0.7294 | 0.772 | 0.647 | 0.952 | 1.088 | |
+| `phi1.5708` `entry` | 212/484/748/1076 | 0.7029 | 0.824 | 0.566 | 1.461 | 0.971 | |
+| `phi1.9635` `flat` | 220/500/796/1148 | 0.7294 | 0.897 | 0.823 | 0.746 | 1.057 | |
+| `phi1.9635` `entry` | 220/484/748/1052 | 0.7294 | 1.213 | 1.002 | 0.913 | 1.000 | |
+| `phi2.3562` `flat` | 228/524/828/1180 | 0.7560 | 1.427 | 1.760 | 0.310 | 1.027 | |
+| `phi2.3562` `entry` | 220/492/772/1052 | 0.7294 | 2.908 | 7.532 | 0.128 | 1.029 | |
+| `phi2.7489` `flat` | 228/540/868/1220 | 0.7560 | 1.952 | 3.387 | 0.127 | 1.051 | |
+| `phi2.7489` `entry` | 228/532/876 | 0.7560 | | | | | ⛔ **REJECTED**, fewer than four peaks |
+| `phientry` `flat` | 148/604/844/1108 | 0.4907 | 1.155 | 1.406 | 0.159 | 0.526 | |
+| `phientry` `entry` | 148/620/844/1076 | 0.4907 | 0.846 | 0.929 | 0.296 | 0.475 | |
+| `phientryleaf` `flat` | 196/484/764/1268 | 0.6499 | 4.310 | 7.374 | **0.049** | 0.972 | ⛔ **REJECTED**, $P_4/P_1 < 1/20$ |
+| `phientryleaf` `entry` | 196/476/724/1004 | 0.6499 | 4.121 | 5.929 | **0.039** | 0.886 | ⛔ **REJECTED**, $P_4/P_1 < 1/20$ |
+| — **sky** — | 220.6/538.1/809.8 | **0.7312** | **2.217** | **2.277** | | **0.856** | |
+
+⌗ *The retired `CRAMP=entry` row this file suspended — $204/508/804$, $P_1/P_2 = 1.935$,
+$P_1/P_3 = 2.578$ — is now comparable like for like: at converged $k$ the same reading gives
+$204/524/828$, $\mathbf{1.621}$, $\mathbf{1.424}$.* **The position's first peak reproduces; the second
+and third do not; and both height ratios fall well below the retired figures.**
+
+
+
+# ⛭⛭⛭ r4136 — **THE POLARISATION LEG: THE CONTROL MEETS THE SPEC'S CALIBRATOR AND THE CR ARM'S
+NUMBER IS IN HAND. THE HEIGHT DEFICIT IS REAL AND IT IS LARGER THAN THE RETIRED FIGURES.**
+
+***This is the number `PO-13` has owed since `r3899`: the CR arm at converged $k$, on the leaf
+congruence the framework assigns the perturbations, on the projection path where the control
+reproduces CAMB. All four runs converged; `KFAC` $2.0$ and $3.0$ agree to every printed digit.***
+
+## ⛭ THE FOUR CORNERS, ONE INSTRUMENT, ONE SET OF EQUATIONS
+
+| arm | path | peaks | $\ell_1/\ell_A$ | vs sky | $P_1/P_2$ | vs sky | $P_1/P_3$ | vs sky |
+|---|---|---|---|---|---|---|---|---|
+| control | `los_spectrum` | 220 / 532 / 812 / 1124 | 0.7300 | $-0.2\%$ | 2.393 | $+7.9\%$ | 2.766 | $+21.5\%$ |
+| **control** | **`_project` (`HIER=1`)** | **220 / 540 / 812 / 1132** | **0.7300** | $\mathbf{-0.2\%}$ | **2.196** | $\mathbf{-0.9\%}$ | **2.191** | $\mathbf{-3.8\%}$ |
+| CR | `los_spectrum` | 204 / 516 / 828 / 1188 | 0.6764 | $-7.5\%$ | 1.975 | $-10.9\%$ | 2.206 | $-3.1\%$ |
+| ⛔ **CR** | **`_project` (`HIER=1`)** | **204 / 524 / 828 / 1196** | **0.6764** | $\mathbf{-7.5\%}$ | **1.759** | $\mathbf{-20.7\%}$ | **1.612** | $\mathbf{-29.2\%}$ |
+| — sky — | | 220.6 / 538.1 / 809.8 | 0.7312 | | 2.217 $\pm3.4\%$ | | 2.277 $\pm3.2\%$ | |
+
+⛭ ***THE SPEC'S CALIBRATOR IS MET.*** *`PO13_RUN_SPEC_FOR_CC54` requires "the control must return
+$P_1/P_2 \approx 2.197$ and peaks near $220/540/812$".* **On the polarisation path the control returns
+$P_1/P_2 = 2.196$ and peaks $220/540/812$** *— $0.18\%$ from CAMB's $2.200$ and $0.9\%$ from the sky,
+inside the sky's own $1\sigma$. `C59` measured $2.1969$ at `LMAXL=900`, `NK=280`; this is
+`LMAXL=1300` with `NK` derived from `KFAC`, and the two agree to the printed digit.* ⇒ ***The
+instrument is calibrated in the configuration the CR number is taken in, which is the whole point of
+running both arms.***
+
+⛭ ***AND EVERY CORNER IS CONVERGED.*** *Between `KFAC` $2.0$ and $3.0$: the CR polarisation arm is
+identical to every digit ($204/524/828/1196$, $0.6764$, $1.759$, $1.612$); the control moves
+$0.00\%$ on $P_1/P_2$ and $0.046\%$ on $P_1/P_3$ with peaks unchanged.*
+
+## ⛔⛭ THE RESULT, AND IT IS NOT THE ONE THE RETIRED TEXT REPORTS
+
+*** On the configuration in which the control reproduces CAMB to $0.18\%$, the CR arm is $20.7\%$ and
+$29.2\%$ low on the height ratios and $7.5\%$ low on the first peak's position. ***
+
+⇒ ***THE HEIGHT DEFICIT IS REAL, IT IS NOT THE $k$-TRUNCATION, AND IT IS NOT THE PROJECTION PATH.***
+*Those were `r3870`'s two instrument faults and both are removed here.* ⛔ **It is also considerably
+LARGER than the $12.7\%$ / $13.2\%$ this file suspended at `r3899`** — *and larger than the fluid
+path's $10.9\%$ / $3.1\%$. The suspension was right and the direction of the correction is against the
+construction, not for it.*
+
+⌗ ***THE POLARISATION SOURCE ACTS THE SAME WAY ON BOTH ARMS, AND THAT IS WHY THE COMPARISON FLIPS.***
+
+| adding $g\Pi/4 + (3/4k^2)\dd^2_\eta[g\Pi]$ | $P_1/P_2$ | $P_1/P_3$ |
+|---|---|---|
+| control | $2.393 \to 2.196$ | $2.766 \to 2.191$ |
+| | $-8.2\%$ | $-20.8\%$ |
+| CR | $1.975 \to 1.759$ | $2.206 \to 1.612$ |
+| | $-10.9\%$ | $-26.9\%$ |
+
+⇒ *** It pulls both arms DOWN by comparable amounts. It lands the control ON the sky because the
+control was ABOVE it, and it carries the CR arm further BELOW because the CR arm was already there. ***
+*Nothing about the operation differs between the arms — which is what a shared instrument is for, and
+what makes the residual attributable to the source rather than to the machinery.*
+
+⌗ ***r3512's PREDICTION IS CONFIRMED AND DOES NOT DISCRIMINATE.*** *It predicted that a correctly
+composed $\Pi$ "should arrive weighted to high $k$ and act as a shape: $P_1/P_3$ and $P_1/P_4$ should
+fall further than $P_1/P_2$".* **They do — $-26.9\%$ against $-10.9\%$ on CR.** *But they do on the
+CONTROL too, $-20.8\%$ against $-8.2\%$, where $\mathrm{Jac}\equiv1$ makes composition unable to be at
+issue at all.* ⇒ ***So the prediction is a property of the polarisation source and not a test of the
+composition*** *— which is consistent with `C60`, where the composition defect it was a test for turns
+out not to exist.* ⛭ *And r3512's FAILURE test is not triggered: it said "if the position climbs
+instead, the hierarchy is on the wrong clock and step 3 was skipped". The position does not climb. It
+does not move at all — $0.6764$ on both paths, both rungs.*
+
+⌗ ***ONE READING DECLINED FOR BEING AT THE GRID'S RESOLUTION.*** *The polarisation source moves the
+SECOND and FOURTH peaks by $+8$ on both arms ($516\to524$, $1188\to1196$; $532\to540$, $1124\to1132$)
+and the first and third not at all. **`LSTEP` is $8$, so $+8$ is exactly one grid point** — the
+reported $\ell$ grid runs $100,108,116,\dots$ — so this is a one-bin shift read on a one-bin grid and
+it is recorded rather than interpreted. A finer `LSTEP` would be needed to say whether the even peaks
+really move and the odd ones really do not.*
+
+## ⌗ WHAT THIS LEAVES
+
+- **The deficit is now a single object with one number**: on the calibrated configuration, $-7.5\%$ in
+  position and $-20.7\%$ / $-29.2\%$ in the two height ratios. ⛔ *It is not explained here.*
+- ***And the account of WHY that the retired text gives is refuted separately*** *(r4124, `C61`): on
+  the leaf rate the first peak's mode IS driven, so "the comb is undriven" cannot be the reason.*
+  ⇒ ***So `PO-13` now has a measured deficit and NO mechanism for it, which is a worse position than
+  the file recorded and an honest one.***
+- **RUN 2** measures how much of the position is the seam datum's two freedoms rather than the
+  construction — running now, twenty readings.
+- **The driving subtraction** (`NODRIVE=1`, both arms) measures the driving's size directly, which is
+  the next thing `C61`'s scope note names.
+
+
+
+# ⛭⛭⛭ r4124 — **RUN 1: BOTH ARMS ARE CONVERGED IN $k$, AND THE DIAGNOSIS'S PREMISE IS FALSE ON THE
+RATE THE FRAMEWORK ASSIGNS THE PERTURBATIONS**
+
+***`PO13_RUN_SPEC_FOR_CC54`'s RUN 1, run as specified: `KFAC` $\in\{1.5,2.0,3.0\}$, both arms, `NK`
+derived and not pinned, `STACKPERT` unset. The default (`los_spectrum`) path is complete; the
+polarisation path, the `KCONT` check and the driving subtraction are in flight and are marked below.***
+
+## ⛭ THE LADDER — default path, `LMAXL=1300`, `NK` derived
+
+| `KFAC` | arm | modes | reach $k_{\max}D_M/\ell_{\max}$ | peaks | $\ell_1/\ell_A$ | $P_1/P_2$ | $P_1/P_3$ |
+|---|---|---|---|---|---|---|---|
+| 1.5 | lcdm | — | 1.50 | ⛔ **REFUSED** — k-TRUNCATED | | | |
+| 1.5 | cr | — | 1.50 | ⛔ **REFUSED** — k-TRUNCATED | | | |
+| **2.0** | lcdm | 1656 | 2.00 | 220 / 532 / 812 / 1124 | 0.7300 | **2.393** | **2.766** |
+| **2.0** | cr | 943 | 2.00 | 204 / 516 / 828 / 1188 | **0.6764** | **1.975** | **2.206** |
+| **3.0** | lcdm | 2484 | 3.00 | 220 / 532 / 812 / 1124 | 0.7300 | **2.392** | **2.765** |
+| **3.0** | cr | 1416 | 3.00 | 204 / 516 / 828 / 1188 | **0.6764** | **1.975** | **2.205** |
+| — sky — | | | | 220.6 / 538.1 / 809.8 | 0.7312 | 2.217 | 2.277 |
+
+⌗ ***`KFAC=1.5` is not a missing row — it is the instrument refusing.*** *Its own guard fires at
+reach $<1.9$: "⛔ k-TRUNCATED — the $C_\ell$ integral is not converged at this $k_{\max}$." **Data, not
+an error**, and it is the r3870 guard doing exactly what it was added for.*
+
+⛭ ***THE GATE THE SPEC SET, APPLIED.*** *"If the CR arm's reported quantities still move between $2.0$
+and $3.0$ by more than the control's own movement, it is not converged and nothing below is measured."*
+
+| | $\ell_1/\ell_A$ | $P_1/P_2$ | $P_1/P_3$ | peaks 1–4 |
+|---|---|---|---|---|
+| **control's own movement, 2.0 → 3.0** | $0.00\%$ | $0.042\%$ | $0.036\%$ | identical |
+| **CR's movement, 2.0 → 3.0** | $0.00\%$ | $0.00\%$ | $0.045\%$ | identical |
+
+⇒ ***BOTH ARMS ARE CONVERGED, and the CR arm moves by no more than the control does.*** *`KFAC=2.0` is
+the converged rung and RUNs 2 and 3 are unblocked. The control validates independently at that rung:
+$P_1/P_2 = 2.393$, $P_1/P_3=2.766$, peaks $220/532/812$ — `C59`'s separately measured
+`los_spectrum` $k_{\max}=2400$ row is $2.3931$, $2.7676$, $220/532/812$.*
+
+## ⛭ WHICH RETIRED FIGURES THE CONVERGED RUN REPRODUCES, AND WHICH IT DOES NOT
+
+***The spec asks for this explicitly, so it is stated as a table and not as a summary.***
+
+| retired figure, where it sits | converged run | verdict |
+|---|---|---|
+| control $2.3931$ / $2.7676$, peaks $220/532/812$ — `C59`'s `los_spectrum` $k_{\max}=2400$ row | $2.393$ / $2.766$, $220/532/812$ | ⛭ **REPRODUCED** |
+| CR $\ell_1/\ell_A=\mathbf{0.6764}$ — the r3739 two-arm position pin, `NK=620`, leaf clock | $\mathbf{0.6764}$ | ⛭ **REPRODUCED to four digits** |
+| CR peaks $204/516/828$ — same pin | $204/516/828$ | ⛭ **REPRODUCED exactly** |
+| control $\ell_1/\ell_A=0.7300$, peaks $220/532/812$ — same pin | $0.7300$, $220/532/812$ | ⛭ **REPRODUCED** |
+| CR $P_1/P_2=2.013$ — same pin, at the instrument's default $k_{\max}$ | **1.975** | ⛔ **NOT reproduced** — $1.9\%$ low |
+| control $P_1/P_2=2.447$ — same pin, same default $k_{\max}$ | **2.393** | ⛔ **NOT reproduced** — $2.2\%$ low |
+| CR fourth peak $1164$; control fourth peak $1116$ — same pin | **1188**; **1124** | ⛔ **NOT reproduced** |
+| CR $204/508/804$, $P_1/P_2=1.935$, $P_1/P_3=2.578$ — the `CRAMP=entry` derived-datum row, `NK=220` | not comparable at this rung | ⚠ **DIFFERENT DATUM** — RUN 2 measures it |
+| CR $204/508/804$, $2.238$ / $3.901$ — the `CRAMP=flat` coded row, `NK=220` | $204/516/828$, $1.975$ / $2.206$ | ⛔ **NOT reproduced** |
+
+⇒ ***THE PATTERN IS CLEAN AND IT IS THE ONE r3899 SAID SHOULD BE CONFIRMED RATHER THAN ASSUMED.***
+*r3899 wrote: "the positions are not affected by the same mechanism **on the control's evidence**, but
+that should be confirmed rather than assumed."* **Confirmed on the CR arm's own evidence: the
+$k$-truncation moves HEIGHTS and does not move the first three peak POSITIONS, on both arms.** *What it
+does move is the FOURTH peak, on both arms — which is the peak nearest the truncation, and is the reason
+the admissibility criterion RUN 2 fixes before its numbers is a criterion about the fourth peak.*
+
+⌗ *The $508/804$ positions are **not** a truncation artefact and not a rate artefact: the r3739 pin at
+`NK=620` on the same rate and the same default $k_{\max}$ already gives $516/828$. They come from runs
+at `NK=220`, and this file already records at r3745 that "every CR run in this thread used `NK=90`" and
+that the guard fires on $D_M$. **The remaining difference is mode count, in a quantity the sampling
+guard is there to protect.***
+
+## ⛔⛭⛭ AND THE ANSWER TO THE QUESTION THE SPEC CALLS THE MOST IMPORTANT ONE
+
+***"If the diagnosis in the retired text — that the driving supplies the disagreement because a
+geometrically fixed rate has no radiation-domination crossing — does not survive the leaf rate, that is
+the most important thing the run can return."***
+
+**It does not survive.**
+`\rcpt{C61_the_undriven_premise_is_false_on_the_rate_the_framework_assigns_the_perturbations}`
+
+*`P07` `sec:frontiers` states the premise, in the paragraph that opens "with the perturbations computed
+on the leaf congruence the framework assigns them to":*
+
+> *"the standard shift that carries it is universal only where every mode crosses the horizon while
+> there is a plasma to be driven, and **on this rate the acoustic modes re-enter above the onset, so
+> none of them does**."*
+
+*and this file gives the same premise as the structural reason the arm cannot reach the sky: "modes
+sub-horizon at the late onset $z_{\rm onset}\approx6797$, **never cross while there is a plasma** → the
+undriven phase".*
+
+⛭ ***THE CENSUS, ON BOTH RATES, FROM THE INSTRUMENT'S OWN BACKGROUND SPLINES.***
+
+| | **leaf rate** (what `LEAFPERT` assigns the perturbations) | **stacking rate** (L1) |
+|---|---|---|
+| radiation in the rate | **YES** | no |
+| equality | $z_{\rm eq}=\mathbf{3936}$, $\eta_{\rm eq}=236.4$ | ⛔ **NONE — there is no equality** |
+| $aH/c$ at the onset | $0.01828$/Mpc | $0.01109$/Mpc |
+| band entering AFTER the onset | $\ell < \mathbf{237.7}$ | $\ell < 144.2$ |
+| of those, entering in radiation | $\mathbf{155.6 < \ell < 237.7}$ | ⛔ empty, necessarily |
+| the reported first peak $\ell_1=204$ | $k/aH = \mathbf{0.858}$ — **SUPER-horizon at the onset**, enters at $z=\mathbf{5590}$ | $k/aH = 1.415$ — sub-horizon, already inside |
+
+⇒ ***The onset ($z=6761$) PRECEDES the leaf's equality ($z=3936$), the first peak's mode is still
+outside the horizon when the plasma starts, and it enters while radiation dominates.*** **It crosses
+while there is a plasma to be driven, and so does every mode in $155.6<\ell<237.7$.**
+
+⛭ ***AND THE OTHER RATE GIVES THE OPPOSITE ANSWER, WHICH IS THE POINT.*** *On the stacking rate the
+sentence is not merely true but necessary: that background carries no radiation term, so it has no
+equality and no mode can cross during radiation domination at any onset. **The diagnosis was stated on
+the rate that carries the ruler and tested against a spectrum computed on the rate that carries the
+content.***
+
+⌗ ***AND THE REFUTATION WAS ALREADY IN THE RECORD AS A CAVEAT.*** *`r3733` measured that on the leaf the
+$\ell=220$ mode sits at $k/k_{\rm hor}=0.92$ — outside the horizon at the onset. This run gets $0.926$.*
+**That number is the premise's refutation and it was filed as a qualifier.**
+
+⚠ ***WHAT THIS DOES NOT ESTABLISH, AND IT IS THE NEXT MEASUREMENT.*** *How large the driving those modes
+receive actually is. **A premise refuted is not a mechanism measured.** The instrument's `NODRIVE=1`
+guard runs the same equations with the driving removed, and the difference between the two runs is the
+only honest answer; it is queued and is reported below when it lands.* ⛔ ***And the position deficit is
+untouched by any of this: the converged arm reports $\ell_1/\ell_A=0.6764$ against the sky's $0.7312$
+whichever way the premise falls.*** *What changes is the account of WHY, not the number.*
+
+## ⛭ THE LADDER WAIVER, CHECKED — r4134, and it re-establishes `K1` at the assigned configuration
+
+***The CR arm's projection samples at $2.3$ points per Bessel period against the guard's bar of $4.0$.
+The guard does not fail it; it waives itself, and says why in the same breath:* "CR's ladder is DISCRETE
+and physical, so this is not aliasing — but it is only not aliasing if the answer does not depend on it.
+Run `KCONT=1` to check."** So the waiver is a conditional, and the conditional is measurable.**
+
+| CR arm, converged | sampling | peaks | $\ell_1/\ell_A$ | $P_1/P_2$ | $P_1/P_3$ |
+|---|---|---|---|---|---|
+| `KFAC=2.0` discrete ladder | 2.3 / period | 204 / 516 / 828 / 1188 | 0.6764 | 1.975 | 2.206 |
+| `KFAC=2.0` **`KCONT=1`** continuum | **4.0 / period** | 204 / 516 / 828 / 1188 | 0.6764 | 1.975 | 2.206 |
+| `KFAC=3.0` discrete ladder | 2.3 / period | 204 / 516 / 828 / 1188 | 0.6764 | 1.975 | 2.205 |
+| `KFAC=3.0` **`KCONT=1`** continuum | **4.0 / period** | 204 / 516 / 828 / 1188 | 0.6764 | 1.975 | 2.205 |
+
+⇒ ***Identical to every printed digit, at both rungs.*** **The answer does not depend on the ladder
+sampling, so the waiver holds — and it now holds by measurement at the configuration the framework
+assigns, above the guard's own bar on the continuum side.**
+
+⌗ ***AND THIS RE-ESTABLISHES A RECEIPT THAT HAD GONE ORPHANED.*** *`K1_the_ladder_waiver_is_checked_against_the_continuum` (`L-280`) ran exactly this
+check and reached exactly this conclusion. **But it reads two BANKED spectra**, `c54.178_cr.npz` and
+`c54.186_cr_KCONT.npz`, and those sit at a different perturbation configuration: their background is
+identical to today's CR arm — $\ell_A = 301.6$, $D_M = 13004.6$, $r_s = 135.46$, the same numbers to the
+digit — but their first peak is at $\mathbf{171.2}$ where this run gives $\mathbf{204}$.* ⇒ ***That
+places them in the stacking-clock family and not the leaf:*** *r3739 measured the same background at
+$172$ under `STACKPERT=1` and $204$ under `LEAFPERT`, and $204$ is what the live run returns.*
+
+⇒ ** So `K1`'s VERDICT survives the rate correction and convergence in $k$, and `K1`'s NUMBERS do not. **
+*The receipt currently carries zero `\rcpt{}` markers in any paper and is one of the five entries a full
+appendix regeneration drops. **Its result is live and its data are not**, which makes it a candidate for
+the `sec:refit-bound` rewrite: the finding can be re-banked against this run instead of retired with the
+spectra it was measured on.*
+
+## ⌗ STILL IN FLIGHT, AND NOT REPORTED UNTIL THEY LAND
+
+- ⛭ **`KCONT=1` on the CR arm — DONE, at both rungs, and it is exact.** *See below.*
+- **The polarisation (`HIER=1`) path, both arms, `KFAC` $2.0$ and $3.0$.** *Required because the spec's
+  own calibrator, $P_1/P_2\approx2.197$, is that path's figure and not the default path's $2.393$ — see
+  the r4122 section. **Opened by `C60`.***
+- **`NODRIVE=1`, both arms, at the converged rung.** *The driving's size by the instrument's own
+  subtraction.*
+- **RUN 2**, the datum freedoms as a range: `CRPHI` over $[0,\pi)$ plus `entry` and `entryleaf`,
+  `CRAMP` $\in$ {`flat`, `entry`}, twenty runs, spectra saved so the **fourth** peak's height can be
+  measured against the admissibility criterion the spec fixes before the numbers.
+- **RUN 3**, the likelihood, both arms, floor as a model-to-model distance.
+
+
+
+# ⛭⛭⛭ r4122 — **THE DEFECT THAT GATED THE CR ARM IS NOT THERE, AND WAS NOT THERE WHEN IT WAS WRITTEN**
+
+***`C59` closed `PO-24`'s control step and deferred the CR arm in one sentence: the clock operations are
+no-ops on the control, "so r3512's `HIER` composition defect cannot touch this result — and stays LIVE
+for the CR arm, **which is the first thing the next step must settle**." `THE_REGISTER`'s `PO-24` row,
+`receipts/INDEX.md` and both receipt appendices carry that deferral. It is settled here, and it comes
+out the other way.***
+
+`\rcpt{C60_the_hier_composition_defect_names_two_flags_its_own_tree_never_had}` — three source facts
+and one run.
+
+⛔ ***THE REMEDY NAMES TWO FLAGS THAT ARE NOT IN THE TREE r3512 WAS WRITTEN AGAINST.*** *r3512's gate 3
+is "give the hierarchy's gravitational source the stacking clock and its diffusion the leaf", i.e. teach
+`HIER=1` about **`SRCSTACK`** and **`DIFFLEAF`** — and it says "without this, step 4 is void", step 4
+being the CR run.* **Both occur ZERO times in `ACOUSTIC_two_arm.py` at `95559d53`, the commit r3512 IS.**
+*Its forty-two `os.environ.get` flags are enumerated in the receipt and neither is among them.*
+
+⌗ ***They were real, on a line that is not this one.*** *`6beeca84` carries `SRCSTACK` ×13 and
+`DIFFLEAF` ×3, and `cb5ec460` — "full consistent `HIER` composition" — is r3512's gate 3 actually
+**performed**, there. **`6beeca84` is not an ancestor of `95559d53`.*** *Two nodes held the same
+instrument on two lines within four hours of each other; the flag inventory was compiled across both and
+the defect was checked against one.*
+
+⛔ ***AND THE ASYMMETRY IT COUNTED IS `sound_phase`, WHICH IS ON NEITHER SPECTRUM PATH.*** *"`evolve_hier`
+and `_project` reference the clock operations **once**… the main path references **two**." The second
+site on "the main path" is `sound_phase` — the leaf-clock phase accumulator — which is **called once in
+the whole file, from inside `qscan()`**, the `QSCAN=1` diagnostic that computes no spectrum.*
+
+| path | ODE right-hand sides carrying the clock | projection |
+|---|---|---|
+| `LOS` (default) | `evolve` — **1** | `los_spectrum` — **0** |
+| `HIER` (polarisation) | `evolve` + `evolve_hier` — **1 + 1** | `_project` — **0** |
+
+⇒ ***One and one.*** *Each segment of a two-segment integration applies the chain rule once, which is what
+a change of independent variable requires; and neither projection applies it, which is also right — the
+projection is the comoving ruler's, on the stacking clock, exactly as `sound_phase`'s own docstring says
+when it warns against unifying the two horizons.* **This is true at HEAD and at `95559d53` alike**, so it
+is not something a later repair fixed.
+
+⛭ ***THE TWO RIGHT-HAND SIDES ARE THE SAME BYTES WHERE THE CLOCK ENTERS.*** *Not a count. Lines 576 and
+959 are character-identical —* `return out.ravel() * (float(Jac_of(e)) if LEAFPERT else 1.0)` *— as are
+the rate selections at 536 and 916, and every clock-or-source operation in `evolve` (`Jac_of`, `Hl_of`,
+`Hc_of`, `Phi2_of`, `Gf_of`, the four density-fraction splines) is also in `evolve_hier`.* **And there is
+no split assignment anywhere in the file for the hierarchy to be inconsistent with.**
+
+⛭ ***AND IT MOVES.*** *Asserted by running it: on `ARM=cr`, where $\mathrm{Jac}$ runs $0.646 \to 0.959$
+across $\eta = 200\!-\!800$, toggling `LEAFPERT` changes the state `evolve_hier` returns by $2.0$
+relative. **The hierarchy is not ignoring the clock operation.*** *On the control the same toggle is
+inert by construction rather than by measurement, since $\mathrm{Jac}\equiv1$ makes both branches of the
+conditional the same number — which is why the control could never have caught a composition fault
+either way. **That part of r3512 stands and is the reason this had to be checked at source.***
+
+⇒ ***SO THE CR ARM IS NOT GATED ON A COMPOSITION FIX, AND THE POLARISATION PATH IS OPEN TO IT.*** *What
+gates the CR arm is convergence in $k$, which is RUN 1 and is a different question. r3512's gate order 1,
+2 and 4 — validate $\Pi$ on the control, the `PISRC` subtraction, the CR run — are untouched by this and
+remain to be done.*
+
+⚠ ***AND THIS MATTERS FOR THE SPEC, NOT ONLY FOR THE LEDGER.*** *`PO13_RUN_SPEC_FOR_CC54` sets the
+calibrator as "the control must return $P_1/P_2 \approx 2.197$ and peaks near $220/540/812$", under a
+command with no `HIER=1` in it.* **$2.197$ is the polarisation path's figure** *— the instrument says so
+at its own line 64, "the converged value is 2.393 on that path and 2.197 on the polarisation path", and
+`C59`'s 2×2 puts `los_spectrum` at converged $k_{\max}$ at $2.393$ and `_project` at $2.197$.* ⇒ ***So
+RUN 1 as written could not reach its own calibrator, and the deferral this section discharges is why it
+was written that way.*** *The ladder is therefore climbed on both paths.*
+
+⌗ ***One thing found by needing it, reported and not repaired:*** *forty-one registered receipts call
+`git show` on a named commit, and the `receipts` job in `.github/workflows/gates.yml` — the one that runs
+every receipt — checks out **shallow**, while the fast `gates` job asks for `fetch-depth: 0`. `C60` exits
+1 rather than passing when the commit it reads is absent, so it fails honestly there rather than
+asserting over an empty string; the other forty-one have not been checked for that guard.* **Not repaired
+from inside `C60`, which is one of the affected files: the verifier would be editing its own subject.**
+
+⌗ *The receipt's appendix entries were **spliced** using the generator's own emit path rather than
+produced by a full regeneration. `python3 corpus/make_all_appendices.py` on this tree gains `C60` and
+**drops five** live entries from `appendix_receipts_P15.tex` — `BRANCHPT_transmission_character`,
+`D1_the_diagnosis_is_the_driving_and_the_driving_is_the_rate`, `H1_the_low_multipole_deficit…`,
+`K1_the_ladder_waiver_is_checked_against_the_continuum` and `P03_acceleration_is_slice_curvature`, three
+of which `P15` still cites. That is a live generator-scoping defect, reported on PR #32 and not mine to
+fix; regenerating to register one receipt would have broken three citations to fix a fourth.*
+
 
 # ⛔⛭ r4107 — **AND P15 §`sec:refit-bound` IS STILL REPORTING THE SUSPENDED NUMBERS AS ITS LIVE STATE**
 
