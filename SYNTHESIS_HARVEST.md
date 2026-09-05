@@ -1655,6 +1655,72 @@ note to self carries the same risk and matches no keyword. **A comment sweep is 
 ⑤ JOINS — [[p16-cosmogenesis]] · [[p7-cr-framework]] · [[p12-algebroid]].
 ⑥ NOT OP FOR — **And the two inherited numbers are separated by where $\hbar$ sits**: it is an overall multiplicative factor, *so it survives in the amplitude and **cancels in every logarithmic derivative*** — **the amplitude is permanently inherited, the tilt need not be.** *Read backwards this is useful rather than limiting: the observed amplitude **measures** the progenitor's mass, to be checked against the independent requirement that it lie below the recollapse threshold.*
 
+
+---
+
+# P16 · `corpus/cosmogenesis_paper.tex`
+### *Cosmogenesis: the Big Bang as a forced synthesis, and the light elements as a fossil of the previous collapse*
+
+> **▣ THE READ IS COMPLETE, AND THE CLAIM IS VERIFIED.** *r4115. All ten section spans 195–836 reconciled
+> against the ranges opened, zero gap (the four residual lines are appendix includes). Abstract 930 words,
+> needing no cut; one abstract-only fact relocated.*
+
+### the-big-bang-is-a-conjunction-and-the-register-is-recognition
+① CLAIM — The Big Bang is **not an initial condition to be supplied but the conjunction of consequences the corpus already establishes** — an eight-link chain, each link a theorem or a measurement in its home paper. *The register is recognition, not proposal*: the field equations are Einstein's, the nuclear reactions the ordinary ones, and **only the reading is CR's.** And the standard inference from the $r=0$ divergence to an inextendible boundary is refuted **by counterexample**: the very continuation universally accepted as removing the coordinate horizon carries the curve through. *"One posits nothing. One traces the curve, and the expanding universe is what lies past the throat."*
+② REGISTER — **SYNTHESIS**, each arrow cited to its home.
+③ HOME — P16 §1–§2.
+④ ANCHOR — none; the links' own.
+⑤ JOINS — [[p1-bh-causality]] · [[p2-janzen-circle]] · [[p3-sds-slicing]] · [[p4-modern-parallax]] · [[p7-cr-framework]] · [[p8-slicing-operator]] · [[p10-canonical-time]] · [[p14-matter-sector]].
+⑥ NOT OP FOR — **⛔ AND THE CHAIN'S CONCLUSION WAS THE 2012 DISSERTATION'S OWN CONJECTURE, STATED THERE WITH THE REASON IT COULD BE NO MORE THAN ONE.** *That work closed: "without the clarity that would be afforded by an analytical solution, it seems best to simply end this discussion with a conjecture: that the product of this collapse is a 3-sphere in de~Sitter space."* **The analytical solution whose absence was the stated obstacle is the slicing curve**, and the conjecture is discharged as the framework's Theorem B. *A programme closing its own thirteen-year-old conjecture, in the conjecturing author's words — the same shape as P8's vacuum kernel answering the 2012 "then by what?".*
+
+### the-window-rate-is-the-standard-rate-and-the-determinant-is-the-crossing
+① CLAIM — Along the marginally bound collapse worldline the Friedmann readout gives $|\mathcal H|=\sqrt{8\pi G\rho_r/3}$ to nucleosynthesis accuracy. **A contracting layer at density $\rho$ has the same $|\mathcal H|$ as an expanding layer at the same $\rho$**; the two differ only in the sign. *So the rate a nuclear reaction competes against is **identical** to standard BBN at every temperature in the window* — **and the determinant of the outcome is therefore not the rate but the crossing structure**: on which leg the matter passes the window, and whether a cooling pass exists at all.
+② REGISTER — **DERIVED**, from the operator's Friedmann readout.
+③ HOME — P16 §4.
+④ ANCHOR — the section's own.
+⑤ JOINS — [[p8-slicing-operator]] · [[p15-cr-cosmology]].
+⑥ NOT OP FOR — **And freeze-out is time-reversal violating, which is what makes the turnaround load-bearing.** *On a cooling history the rate falls through the Hubble rate and a relic freezes; on a heating history equilibrium is maintained and no relic is left* — confirmed on a Boltzmann toy run both ways. **So the infall cannot fix an abundance and only a subsequent cooling pass can: the turnaround is not incidental to the abundances, it is the event that makes them.**
+
+### the-peak-is-mass-independent-and-the-floor-is-argued-not-computed
+① CLAIM — The peak temperature is set by an **$M$-independent** scale, the infall energy: at the horizon $GM/R_sc^2=\tfrac12$ identically, so the kinetic energy delivered is of order the rest mass per nucleon, **and its thermalization is not a further assumption but what the convergence is** — worldlines arriving metrically coincident cannot remain cold coherent dust. That puts $T_{\rm pk}\simeq174$ MeV, the QCD scale to the estimate's accuracy, some three and a half orders above the deuterium bottleneck, **for every progenitor**. *And the horizon-crossing density is a **floor** rather than the peak, since the worldline continues past the horizon in finite proper time* — reading it as the peak is a reductio, since for the most massive progenitors it falls below the present cosmic density and would place the hot dense era in our future.
+② REGISTER — **⛔ ARGUED RATHER THAN COMPUTED, and P16 says so.** *The exact regulated peak is open — and downstream-irrelevant, since once dissociation is total the memory of the peak is erased.*
+③ HOME — P16 §7.
+④ ANCHOR — `P16_peak_temperature`, `P16_recollapse_is_the_nariai_threshold`, `P16_two_mass_blindnesses`.
+⑤ JOINS — [[p1-bh-causality]] (**the progenitors are the merger trees' end-state**) · [[p2-janzen-circle]] · [[p13-boundary]].
+⑥ NOT OP FOR — **⛔ The mass-blindness is placed at weight rather than leaned on.** *The corpus carries three, and P16 sorts them by mechanism: the curvature one and the turnaround-offset one share their mechanism (the mass enters as a pure amplitude and never in the argument, so anything read in the phase is blind), the horizon identity is independent of both, **and the floor here rests on the kind that does not depend on the amplitude at all.*** **And what is asserted nowhere is stated as such**: *that either result implies the other, or that the pattern extends to a third.* **A separate convergence is recorded and it is clean**: the recollapse threshold — whether the ball turns around at all — is **identically the Nariai mass parameter**, obtained elsewhere in the paper from the horizon cubic's double root, *with no step in common*.
+
+### the-erasure-channel-and-why-eta-crosses-when-the-composition-does-not
+① CLAIM — **The peak is an erasure, and what an erasure returns is exactly what a conservation law protects.** Total dissociation destroys nuclear binding, so the progenitor's *composition* is erased and the abundances are made afresh in the window; it cannot destroy baryon number, and $\eta$ is a ratio of baryon number to photon number. *So $\eta$ crosses because it is protected, and the abundances do not because they are not.* Checked as a channel: several very different input compositions through one thermal lap return a single final ratio — **zero bits of the available information about the input** — while the baryon number, carried as a state variable rather than asserted conserved, exits unchanged; **and the same machinery run with a *sub-binding* peak transmits the composition instead**, so the erasure belongs to the totality of the dissociation and not to the model.
+② REGISTER — **RECEIPT-ANCHORED**, with the reading marked as adding nothing to the physics: *"the conservation law is the argument, and naming it a channel only says why the two fates are the only two available."*
+③ HOME — P16 §7.
+④ ANCHOR — `N7_the_peak_is_an_erasure_channel_and_its_output_is_the_conserved_charge`; ledger `information_theory`.
+⑤ JOINS — [[p15-cr-cosmology]] (**the same division, stated there as the structural reason for the inheritance**) · [[p14-matter-sector]].
+⑥ NOT OP FOR — **⛔ This draws the line between what the sector inherits and what it predicts, and the line is not arbitrary**: a quantity carried by a conservation law is a datum of the handover; a quantity fixed by nuclear binding is a consequence of the cooling leg. *Which is why the abundances can be a prediction while $\eta$ remains an inheritance — **not two attitudes to the same kind of thing, but two kinds of thing**.* **And the frontier is sharpened rather than merely named**: a derivation of $\eta$ must reach a conserved charge of the progenitor, *and cannot be obtained from anything the peak erases.*
+
+### the-progenitor-interior-is-solved-and-the-recursion-does-not-run-on-modes
+① CLAIM — The closed dust-plus-radiation ball is solved exactly, and **its parity splits by species with no cross terms** — forced, not fortunate: in conformal time it obeys a driven harmonic oscillator, *the equation is linear so even and odd modes cannot mix*, the dust amplitude fixing the even and the radiation the odd. **So an interior carrying any radiation at all is radiation-dominated in its last moments**, which moves the indicial exponents to $(0,1)$ and forces a logarithm — *the jump being discrete, so the pure-dust background is a measure-zero exception rather than the leading term of a series in the radiation content.* The scalar off-diagonal is $-4\pi i/\rho$, **twice the tensor's**, *a property of the perturbation variable rather than of the background.*
+② REGISTER — **RECEIPT-ANCHORED**, several, with the tensor value exact for any content and the scalar specific to this interior.
+③ HOME — P16 §8.
+④ ANCHOR — `P16_radiation_is_the_odd_part`, `P16_the_mixing_is_two_pi_over_rho`, `P16_the_scalar_monodromy_is_four_pi_over_rho`, `P16_every_mode_is_frozen_at_the_crossing`.
+⑤ JOINS — [[p10-canonical-time]] (**the same closed-form connection coefficient, recovered there as the tensor value of one object**) · [[p15-cr-cosmology]] · [[p2-janzen-circle]].
+⑥ NOT OP FOR — **⛔ THE RECURSION IS A GENEALOGY OF UNIVERSES AND NOT A RECURSION ON MODES, and the argument is stronger than "unestablished".** There is **no object** for a patch-to-ambient harmonic map to be about: the correspondence is null boundary to null boundary *with no spacelike slice entering the map*, and the collapse interior is Kantowski–Sachs on $\mathbb R\times S^2$, **carrying no closed-$S^3$ harmonic basis to be identified with anything.** *And every mode arrives frozen, so a constant carries an amplitude and no phase and there is no mode label left for a previous monodromy to act on.* **⛔ AND THIS COSTS THE PROGRAMME A CLAIMED PREDICTION, RECORDED AS A LOSS**: the framework had advertised that the crossing "can inherit perturbations from a cold species and from no other" — *a filter acting on oscillatory content has nothing to select from when nothing arrives oscillating.* **"That is a loss of a claimed prediction and not a gain."**
+
+### the-abundances-are-produced-and-the-shared-miss-is-the-discriminating-one
+① CLAIM — The cooling leg **is** a standard big-bang nucleosynthesis — cooling through the window at the standard rate from a fully dissociated start — and a genuine multi-nuclide network integrated explicitly on that history returns $Y_p=0.247$ (obs $0.245$), $D/H=2.51\times10^{-5}$ (obs $2.53\times10^{-5}$), ${}^3$He at $1.05\times10^{-5}$, and ${}^7$Li at the standard several-fold over-prediction — **jointly from the single inherited $\eta$**, at the baryon density Planck reads from the peak heights, deuterium at $-0.5\sigma$ and helium-4 at $+0.5\sigma$. *And deuterium is un-tuned in a sense worth stating: the freeze-out temperature the observed $D/H$ demands **is** the standard bottleneck, and that is exactly the temperature at which the standard rate delivers a freeze-out — **target and mechanism coincide without adjustment.***
+② REGISTER — **COMPUTED**, receipt-anchored, with the library spread quoted (StarLib against REACLIB) as comparable to the propagated rate error rather than a modelling ambiguity, and the displayed column identified.
+③ HOME — P16 §9–§10.
+④ ANCHOR — `P16_validate_bbn`, `P16_theory_error_and_likelihood`, `P16_Yp_freezeout`.
+⑤ JOINS — [[p15-cr-cosmology]] · [[p14-matter-sector]] · [[p6-shadow-of-existence]].
+⑥ NOT OP FOR — **⛔ THE ENTRY THE SYNTHESIS SHOULD CARRY IS THE LITHIUM ONE, AND IT RUNS THE UNINTUITIVE WAY.** Deuterium and helium-4 at their observed values are reached by *any* network running standard rates at the Planck $\eta$, **so agreement there discriminates weakly**; a lithium over-prediction *of the standard size* is reached only by a network that **is** the standard one. Since what is argued is an **identity**, *a network reproducing $D$ and $Y_p$ while missing the standard lithium excess would be evidence **against** it.* **So the shared miss is the outcome that discriminates, and it tells in the identity's favour — it is the one result that cannot have been selected for, since no case is assembled out of a failure.** *And the lithium problem is explicitly not one this paper claims to solve.*
+
+### the-crossing-makes-no-asymmetry-and-that-narrows-the-target
+① CLAIM — **Checked in the action rather than argued from structure.** The imaginary segment's Euclidean integrand is **odd** under the standing conjugation — which acts on the offset *and* the mass together — so the two branches carry equal and opposite action, $\mp0.1443\,\alpha^2/G$ on the forced member, **summing to zero identically.** *Neither branch is weighted above the other by the crossing.* And the oddness **fails if the mass is not conjugated with the offset**, which is a way of seeing that the offset–mass relation's oddness is doing the work here as well as in the chirality parity it fixes elsewhere.
+② REGISTER — **RECEIPT-ANCHORED**, exact rather than approximate.
+③ HOME — P16 §3, §10.
+④ ANCHOR — `CROSSING_no_made_asymmetry`.
+⑤ JOINS — [[p13-boundary]] (**this $r=0$ crossing is the seat of charge conjugation's kinematic face**) · [[p14-matter-sector]] · [[p7-cr-framework]].
+⑥ NOT OP FOR — **⛔ THIS IS A NARROWING OF THE TARGET AND NOT A STEP TOWARD IT, and P16 says exactly that** — *"it removes the most natural place one would look first."* **And the two things a derivation might be asked for are separated**: the *magnitude* of $\eta$ is a conserved charge of the progenitor, inherited; its *sign* **is not a quantity to be derived at all** — it is which region the reading is taken in, and by the substrate's discrete CPT structure *the progenitor's own observers make the conjugate statement of us.*
+
 ---
 
 ## THE FRONTIER GATHER
