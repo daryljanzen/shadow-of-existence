@@ -2238,7 +2238,7 @@ tag* — against `ARGUED` ×9, `ESTABLISHED` ×9, `SYNTHESIS` ×3, `DISSOLUTION`
 
 | § | what it carries | drawn from |
 |---|---|---|
-| **1** | **The object, and the distinctions it forces** — one substrate, one scale, its intrinsic Lorentzian signature; *and* the metric-versus-curvature separation that says what a boundary of it is | p0/17 · P1 · P2 · P7's axioms |
+| **1** | **What forces the object, what it is, and the distinctions it forces** — the measured floor and the exhausted disjunction; the augmentation they force; what maximal symmetry then **selects**, its one scale and intrinsic Lorentzian signature; *and* the metric-versus-curvature separation that says what a boundary of it is | P4 · P1 · p0/17 · P2 · P7's axioms |
 | **2** | **What is derived from it** — the slicing operator and its vacuum kernel, matter as the bend, the range and its wall, the constraint algebra as the coset grading, the discrete residue | P3 · P5 · P8 · P9 · P12 |
 | **3** | **What is computed and confronted, registers intact** — the geometric rate and the distance ladder, the abundances, the low-multipole floor, the acoustic comparison **including its open deficit** | P4 · P15 · P16 |
 | **4** | **What is dissolved** — the graded cluster, tier by tier, with what an objector must dispute at each | P1's three · P7's synthesis · P10 |
@@ -2253,6 +2253,15 @@ tag* — against `ARGUED` ×9, `ESTABLISHED` ×9, `SYNTHESIS` ×3, `DISSOLUTION`
 ④ ANCHOR — `THE_FRONTIER`, 13 open · 14 steps.
 ⑤ JOINS — Phase 3 · `THE_REGISTER`.
 ⑥ NOT OP FOR — **⛔ AND THE RATIO IS NOT THE ARGUMENT.** *A frontier is not made small by counting it against a large numerator*, and the section's job is to state each item with what would discharge it — **which is what makes the list usable rather than reassuring.** *The number belongs there because the alternative is an adjective, and an adjective about one's own frontier is the thing a reader is right to distrust.*
+
+
+### the-spine's-first-slot-carried-only-the-outbound-forcing
+① CLAIM — **⛔ Slot 1 read "the object, and the distinctions it forces", and the forcing runs both ways.** *The corpus rests the augmentation on **two independent forcings, structural and empirical, neither resting on the other***: P1's, from general relativity alone, and P4's, measured. **A slot that carries only what the object forces, and not what forces the object, presents the substrate as a premise** — which is the one reading `prop:unique` exists to refuse, since its whole content is that de Sitter is **selected** rather than posited.
+② REGISTER — **⛔ SPINE AMENDED at `r4185`**, slot 1 now carrying the inbound forcing as well.
+③ HOME — the spine table, §1.
+④ ANCHOR — P4's floor and exhausted disjunction; P1's structural forcing; `prop:unique`.
+⑤ JOINS — [[p4-modern-parallax]] · [[p1-bh-causality]] · [[p17-geometric-core]].
+⑥ NOT OP FOR — *The correction came from reading the two pre-corpus papers*: **both open with the empirical problem and argue toward the substrate**, and neither begins where the draft §1 began. ⛔ **That is lineage doing what lineage is for** — it cannot supply a claim, and it can show that an ordering was the author's and was abandoned without being replaced. ⌗ *The alternative placement — the empirical forcing in §3 with the confrontations — is rejected on the ground that **a reader who meets the substrate before the measurement has already been asked to grant the thing in question**.*
 
 ---
 
