@@ -2098,6 +2098,36 @@ note to self carries the same risk and matches no keyword. **A comment sweep is 
 ⑤ JOINS — [[p9-range-paper]] · [[p8-slicing-operator]].
 ⑥ NOT OP FOR — **⛔ THIS IS THE ITEM THAT DEMONSTRATES THE PHASE'S OWN RULE.** *A phrase search returns a hit in the range paper — "the failure of $U$ to be harmonic is a **fluid bend**, its source the trace of the spatial stress" — and **that is a different claim in the same words.*** The corpus says what the failure *is* as a matter of source; `H23` says what it *does* as a matter of integrability. **Deduplicating by keyword would have struck a live item on a phrase match; deduplicating by ROOM keeps it, and the room is the question being answered rather than the words answering it.**
 
+
+## ⌗ THE REGISTER'S TEN LIVE ROWS, WORKED FRESH
+
+> *Each checked against the papers as they now stand before being carried. Where a row's fate has changed,
+> the change is stated; where it has not, the row is carried unaltered. **No row leaves by reclassification.***
+
+### PO-31-is-three-rooms-in-one-row-and-they-have-three-different-fates
+① CLAIM — The row reads *"the derivation of $\eta$ and of the onset — the progenitor spectrum"*, and **the corpus now answers its three parts differently.** *The **onset ratio** is closed by impossibility*: radiation dilutes one power faster than matter, so $\rho_r/\rho_m$ changes along the leg and **a quantity that changes along the leg has no single value for a handover to transmit**; and only a species-resolved factor could rescale it, which is the rule withdrawn when the crossing was shown lossless for every species. p0 states the consequence in terms — *"what stands here is not a derivation owed but the statement that there is none to give."* *The **$\eta$** half is **not** closed*: it is inherited because a conservation law protects it, and **a derivation must reach a conserved charge of the progenitor — a constraint in kind rather than in difficulty.** *The **progenitor spectrum** is neither: P15 calls it a **modelling task awaiting a progenitor interior**, since the collapse geometry transmits not one parameter but none.
+② REGISTER — **⛔ ONE ROW, THREE ROOMS**: closed-by-impossibility · constrained-in-kind · modelling task.
+③ HOME — `THE_REGISTER` PO-31; [[p17-geometric-core]] §10 · [[p16-cosmogenesis]] · [[p15-cr-cosmology]].
+④ ANCHOR — `X1_the_ratio_is_a_clock_reading_not_a_carried_datum`; the cosmogenesis paper's conservation argument.
+⑤ JOINS — [[p15-cr-cosmology]] · [[p16-cosmogenesis]] · [[p17-geometric-core]].
+⑥ NOT OP FOR — **⛔ WHAT THIS DOES *NOT* BEAR ON, AND THE DISTINCTION IS THE ROW'S WHOLE PROBLEM.** *The impossibility is about the **onset ratio** and reaches neither of the other two.* **It does not close $\eta$**, whose derivation is constrained to a route rather than excluded; **and it does not touch the progenitor spectrum**, which is open work of an ordinary kind. *A reader taking "closed by impossibility" as the row's verdict would retire two live items on the strength of a third.* ⇒ **WHAT WOULD DISCHARGE EACH:** the onset ratio — *nothing; it is discharged*. $\eta$ — a conserved charge of the progenitor exhibited. The spectrum — a progenitor interior modelled.
+
+### PO-13-PO-24-and-the-two-that-are-one-room
+① CLAIM — **PO-13** (the driving on the geometric rate) and **PO-24** (the bespoke transfer, and the acoustic peaks the chain does not reach) are **one room read from two sides**: the transfer *is* the instrument that measures the driving, and the driving *is* what the transfer's residual is about. *Both are now live against measurement rather than argument*: converged on the calibrated polarisation path, $\ell_1/\ell_A=0.6764$ against the sky's $0.7312$, with $P_1/P_2=1.759$ and $P_1/P_3=1.612$, and **the deficit is neither the wavenumber truncation nor the projection path**, both instrument faults being removed there.
+② REGISTER — **OPEN, both, and carried separately because the register carries them separately** — *not merged, since merging two rows is a reclassification and the discipline forbids it.*
+③ HOME — `THE_REGISTER` PO-13, PO-24; `PO13_WORKING_STATE.md`.
+④ ANCHOR — the converged polarisation leg.
+⑤ JOINS — [[p15-cr-cosmology]] · [[p7-cr-framework]] · [[p16-cosmogenesis]].
+⑥ NOT OP FOR — **⛔ WHAT THEY DO NOT BEAR ON**: *the acoustic **scale** and the Hubble tension, which are settled elsewhere on the rate and are not what either row is about* — the scale is a one-parameter accommodation and it is spent, and confusing the deficit with it re-opens a resolved item. **And PO-13's own recorded diagnosis is refuted** (`r4145`), so the row's object stands and its answer does not. ⇒ **WHAT WOULD DISCHARGE THEM:** the two-arm transfer run to convergence on the arm whose answer is not independently known, and a mechanism for the residual it returns.
+
+### the-seven-carried-unaltered-and-why-that-is-a-result
+① CLAIM — **PO-23** (the ultraviolet definition of the mode sums), **PO-25** (the charged bead does not close, and the limit is singular), **PO-26** (the compact-face fermion sector), **PO-27** (empirical coherence as an independent ground), **PO-28** (the adiabatic residual at the largest scales), **PO-29** (the attribution of $-M/r^3$), **PO-30** (the curve's own dynamics — a generative law for the matter content). *Each checked against the papers as they now stand and **carried unaltered**.*
+② REGISTER — **OPEN, seven, unchanged.**
+③ HOME — `THE_REGISTER`.
+④ ANCHOR — each row's own.
+⑤ JOINS — [[p10-canonical-time]] (PO-23, PO-28) · [[p3-sds-slicing]] (PO-25) · [[p13-boundary]] (PO-26, PO-27) · [[p12-algebroid]] (PO-29) · [[p8-slicing-operator]] (PO-30).
+⑥ NOT OP FOR — **⛔ AND CARRYING THEM UNALTERED IS ITSELF THE MEASUREMENT, NOT A DEFAULT.** *The phase's base rate says most open-claims in a corpus this age are stale links; seven of ten holding is the finding that the register is in better condition than that rate predicts* — and it is reportable only because each was worked rather than assumed. **PO-23 has two of its three parts settled in P7 and says so in its own row**, which is the correct form: *the row stays because its object is unanswered, and the parts that were answered are named inside it rather than shrinking it.*
+
 ---
 
 ## THE FRONTIER GATHER
