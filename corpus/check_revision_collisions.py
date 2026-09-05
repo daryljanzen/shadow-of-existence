@@ -74,6 +74,7 @@ Written r3112 (`L-251`); the band taken r3128 (`L-256`).  Stated for reversal.
 """
 import os
 import re
+import os
 import subprocess
 import sys
 
@@ -323,6 +324,20 @@ def _anc(a, b, root=None):
                           cwd=root or ROOT, capture_output=True).returncode == 0
 
 
+def horizon(root=None):
+    """what this clone can see, and whether that is all of it
+
+    ** A DETECTION GATE THAT CANNOT SAY HOW FAR IT LOOKED HAS NOT MADE A MEASUREMENT. **  *Returns
+    (is_shallow, reachable_from_head, reachable_from_all_refs) in revision-numbered commits.*
+    """
+    shallow = os.path.exists(os.path.join(root or ROOT, '.git', 'shallow'))
+    def _n(args):
+        r = subprocess.run(['git', 'log'] + args + ['--format=%s'], cwd=root or ROOT,
+                           capture_output=True, text=True)
+        return sum(1 for ln in r.stdout.split('\n') if BARE.match(ln.strip()))
+    return shallow, _n([]), _n(['--all'])
+
+
 def collisions(root=None):
     """revision ids claimed on DIVERGENT branches -- which is what a collision IS
 
@@ -336,6 +351,18 @@ def collisions(root=None):
       ⌗ *Measured: 6 spans, 12 collisions.  The subject rule returned 17 and could not tell them
       apart; ancestry is the distinction and it needs no reading.*
     """
+    # ⛔⛭ ** THIS WALK IS FROM HEAD, SO ITS COVERAGE IS THE CLONE'S DEPTH -- r4127. **
+    # *Measured on a shallow working clone: `git log` from HEAD reached 82 revision-numbered
+    # commits and `--all` reached 1059; ids carrying more than one commit, 3 against 47.*
+    # ** So this gate was reporting green over 8 per cent of the corpus's revision history and
+    # saying nothing about the depth it had. **  A green from a shallow clone is not a weaker
+    # claim than a green from a full one; it is a claim about a different and much smaller thing.
+    #   ⌗ *This also corrects `r4121`, which explained three vanished collisions as pairs that had
+    #     "become ancestor-related and now read as spans."  They had not: THEY ARE NOT REACHABLE
+    #     FROM HEAD IN THIS CLONE AT ALL.  The mechanism was the horizon, not merging.*
+    #   ⇒ *** `--all` is not the repair either: it walks refs this line does not own, and a
+    #       collision on someone's unmerged branch is not this trunk's to report.  What is owed is
+    #       that the gate STATE ITS HORIZON, which `report_horizon` below does. ***
     out = subprocess.run(['git', 'log', '--format=%h%x09%s'], cwd=root or ROOT,
                          capture_output=True, text=True).stdout
     by_rev = {}
@@ -705,6 +732,15 @@ def main():
 
     if not new:
         print('    no NEW revision-number collision.')
+        # ** AND THE GREEN PATH SAYS HOW FAR IT LOOKED, which is the half that matters -- a green
+        # from a shallow clone is the one most likely to be read as coverage it does not have. **
+        _sh, _head, _all = horizon()
+        if _sh or _all > _head * 2:
+            print()
+            print(f'    ⛔ HORIZON: {_head} revision-numbered commits reachable from HEAD against '
+                  f'{_all} across all refs.')
+            print('       ' + ('THE CLONE IS SHALLOW.  ' if _sh else '')
+                  + 'This green covers the reachable window, not the whole history.')
         print()
         return band_rc
     for rev in sorted(new):
@@ -712,6 +748,14 @@ def main():
         for sha, w in new[rev]:
             print(f'           {sha}  {w[:74]}')
     print()
+    _sh, _head, _all = horizon()
+    if _sh or _all > _head * 2:
+        print()
+        print(f'    ⛔ HORIZON: this clone reaches {_head} revision-numbered commits from HEAD; all')
+        print(f'       refs reach {_all}.' + ('  THE CLONE IS SHALLOW.' if _sh else ''))
+        print('       ** So this verdict covers the reachable window and not the corpus\'s whole')
+        print('       revision history. A green here is a claim about that window. **')
+        print()
     print('    ⛭ ** Two lines numbering from one counter choose the same number, which is the')
     print('       `L-174` collision at c54.166 one level up -- and that was solved with BANDS. **')
     print('    ⌷ *r3640: the other line HAS adopted the odd half -- and adoption was not enough,')
