@@ -1907,6 +1907,34 @@ note to self carries the same risk and matches no keyword. **A comment sweep is 
 ⑤ JOINS — [[p5-groupoid]] · [[p13-boundary]] · [[p14-matter-sector]].
 ⑥ NOT OP FOR — **⛔ A ledger that marks its own rows as not-for-a-paper is doing the synthesis's work in advance, and the marking must survive into the synthesis.** *A proved negative that guards against a false unification is worth more to a results paper than a positive of the same size, and it is the kind of row a distillation drops first.*
 
+
+# L6 · `THE_REGISTER.md` and `THE_FRONTIER.md`
+### *The open questions, and the generated view of them in dependency order*
+
+### the-register's-rule-is-the-one-the-synthesis-inherits
+① CLAIM — **A row is struck when its OBJECT is answered and the answer is *receipted*** — *not when it is convenient, and never on a reclassification.* The frontier is a **generated view** of it, one source, in dependency order, with steps-left, steps-last-revision, and turns-per-step carried separately so that an estimate cannot be mistaken for a count. **And the register carries the lesson that cost it**: for eighty revisions the answer to *"has this been done?"* was usually **yes**, and the register did not know it — *look before opening a row.*
+② REGISTER — **INSTRUMENT**, with the strike rule and the generated-view separation both stated at source.
+③ HOME — `THE_REGISTER.md`, `THE_FRONTIER.md`.
+④ ANCHOR — `scripts/regen_frontier.py`.
+⑤ JOINS — every open item; Phase 3 builds on this pair.
+⑥ NOT OP FOR — **⛔ This is the instrument the completeness rule governs**: a list of what is unfinished must be complete and unfiltered, and *items leave it only when the work is done, never by reclassification.* **The strike rule is that requirement written into the file.**
+
+### a-refutation-was-in-the-row-filed-as-its-confirmation
+① CLAIM — **⛔ PO-13's row recorded its diagnosis as ANSWERED — "none of the three layers" — and that diagnosis is refuted.** It rested on the census that on this rate the acoustic modes re-enter above the onset so **none crosses while there is a plasma to be driven**; *that census was taken on the **stacking** rate, and the rate rule assigns the perturbations to the **leaf***, which carries a radiation term. On the leaf the band $155.6<\ell<237.7$ — containing the converged first peak at $\ell=204$ — enters **while radiation dominates**, so those modes are driven.
+② REGISTER — **⛔ CORRECTED at `r4145`; the item stays OPEN and its object is unchanged.**
+③ HOME — `THE_REGISTER.md`, PO-13.
+④ ANCHOR — 60's C61 census; the converged polarisation leg.
+⑤ JOINS — [[p15-cr-cosmology]] · [[p7-cr-framework]] · `PO13_WORKING_STATE.md`.
+⑥ NOT OP FOR — **⛔ AND THE REFUTATION WAS ALREADY IN THE ROW, FILED AS CONFIRMATION.** It cited a leaf measurement putting $\ell=220$ **outside** the horizon at the onset and called that *"the same fact."* **It is the opposite fact** — outside at onset means the mode crosses *later*, while there is a plasma. *A measurement that contradicted the diagnosis was read as agreeing with it and stood.* **⛔ THE LESSON IS THE ROW'S OWN AND GENERALISES: a qualifier filed under a claim is not thereby consistent with it, and the register's strike rule cannot catch a row whose evidence was misread rather than missing.**
+
+### what-the-item-now-is-and-why-the-count-went-up
+① CLAIM — **PO-13 is a measured deficit with no mechanism.** Converged on the calibrated polarisation path, on the leaf congruence: $\ell_1/\ell_A=0.6764$ against the sky's $0.7312$ — $7.5\%$ — with $P_1/P_2=1.759$ and $P_1/P_3=1.612$ against the sky's $2.217$ and $2.277$, at two wavenumber cutoffs agreeing to every digit. **And it is neither of the two instrument faults**: the $k$-truncation and the projection path are both removed there.
+② REGISTER — **MEASURED**, with the mechanism explicitly absent.
+③ HOME — `THE_REGISTER.md` PO-13; `THE_FRONTIER.md` family D.
+④ ANCHOR — 60's r4136 polarisation leg.
+⑤ JOINS — [[p15-cr-cosmology]] · [[p16-cosmogenesis]] · [[p7-cr-framework]].
+⑥ NOT OP FOR — **⛔ The frontier's count moved the RIGHT way and that is the point of keeping it generated.** PO-13 was scoped at **1 step, kind READ, 3 turns** — an estimate made when the diagnosis looked answered. It is now **2 steps, kind BUILD**, because *the driving subtraction measures the size and a mechanism for the deficit is a second result, not the same one*. **The frontier reads 11 steps against 10, marked $\uparrow1$** — *a list of what is unfinished getting longer when a claim is withdrawn is the instrument working, and a list that only ever shrinks is the one to distrust.*
+
 ---
 
 ## THE FRONTIER GATHER

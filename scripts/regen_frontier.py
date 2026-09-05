@@ -19,8 +19,17 @@ OUT = os.path.join(ROOT, 'THE_FRONTIER.md')
 
 # ** id: (short name, steps-left, steps-last-revision, turns-per-step, gate, runway note) **
 EST = {
-    'PO-13': ('the misplaced phase — WHY the propagated comb runs short', 1, 1, 3, None,
-        'r3092: the phase reset is justified by an UNBOUNDED tortoise phase that r2154 (1) showed is FINITE (0.2247 alpha). Wired PHZ; the comb moves hard. A carrier, not yet a fit'),
+    'PO-13': ('a measured deficit with NO MECHANISM -- what the driving does on the leaf rate', 2, 1, 6, None,
+        'r4145: the diagnosis this item recorded as ANSWERED is refuted. It was taken on the STACKING rate; the '
+        'rate rule assigns the perturbations to the LEAF, which carries a radiation term, and on the leaf the band '
+        '155.6 < l < 237.7 -- containing the converged first peak at l=204 -- enters while radiation dominates, so '
+        'those modes ARE driven. The refutation was already in the row, filed as confirmation: it cited a leaf '
+        'measurement putting l=220 OUTSIDE the horizon at onset and called that the same fact, when it is the '
+        'opposite one. What stands: converged on the calibrated polarisation path, l_1/l_A = 0.6764 against the '
+        "sky's 0.7312 (7.5%), P1/P2 = 1.759 and P1/P3 = 1.612 against 2.217 and 2.277, at two cutoffs agreeing to "
+        'every digit -- and neither the k-truncation nor the projection path, both instrument faults removed there. '
+        'STEPS RAISED 1 -> 2: the driving subtraction measures the size, and a mechanism for the deficit is a '
+        'second result, not the same one'),
     'PO-26': ('the compact-face fermion sector -- CAN IT BE BUILT', 1, 1, 6, None,
         'r3867: opened r3861 on a WRONG PREMISE -- I framed it as whether a sector can be built on the discrete '
         'component, and P14 has built one there. P13 sec:open: two things stay genuinely open and they are '
@@ -181,7 +190,8 @@ LASTFIND = ("r3103: **PO-21 answered — the geometry lifts the obstruction but 
 # ⚠ *** A BUILD step has NO completed instance to calibrate against -- PO-11's continuum,
 # PO-6's UV definition, PO-1a's derivation.  Those are marked BUILD and their estimates
 # are declared unmeasured rather than dressed as measured. ***
-KIND = {'PO-13': 'READ', 'PO-14': 'BUILD', 'PO-15': 'READ', 'PO-16': 'READ',
+KIND = {'PO-13': 'BUILD',   # r4145: was READ, scoped when the diagnosis looked answered; it is not
+         'PO-14': 'BUILD', 'PO-15': 'READ', 'PO-16': 'READ',
         # ** brought in r3095 from p0's frontiers and the field ledgers, which carried them
         # unregistered.  PO-17 is a DECISION stated without being claimed both ways; PO-18 an
         # ENUMERATION; PO-19 and PO-20 are unattempted questions, so READ is the wrong kind
