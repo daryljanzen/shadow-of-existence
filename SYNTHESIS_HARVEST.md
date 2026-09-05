@@ -2177,6 +2177,25 @@ note to self carries the same risk and matches no keyword. **A comment sweep is 
 ⑤ JOINS — every paper.
 ⑥ NOT OP FOR — **⛔ WHAT THIS DOES NOT SHOW.** *It does not show the papers state every opening they have* — an opening a paper does not know it has is invisible to a survey of what papers say, and only reading against the corpus finds those. **The three found this phase all came that way**: the model ledger's superseded premise, PO-31's three fates, and the figure-theorem ledger's own false banner. *So the eleven sections are a cross-check that passed, and the items this phase is actually turning up are coming from the instruments rather than from the papers.* ⇒ **WHAT WOULD DISCHARGE THE REMAINING DOUBT:** nothing a survey can do; it is discharged by the per-paper reads, which Phase 1 completed.
 
+
+## ⌗ THE HARVEST'S OWN NEGATIVES — the source that found what nothing tracked
+
+### three-openings-the-corpus-states-and-no-instrument-carried
+① CLAIM — **⛔ Of 213 negatives, 25 name something open; twenty-two map onto a register row or ledger room, and three mapped onto nothing.** *Each verified at source, then opened as a register row at `r4169`.* **`PO-32`** — *what survives for a perpetually collapsing ultra-compact body*: P7 says in its own voice that this *"is not settled by the horizon-thermodynamic reading of this subsection"*, and that such a body **need not be quiescent**. **`PO-33`** — *the propagating nonlinear parametric resonance*: P11 closes the ghost and zero-mode runaways **exactly** and names this as the one structure they do not close, **with the reason the obvious instrument fails** — no total energy is monotone, since it carries the background's own expanding energy, so the residual isolates to nonlinear mode–mode transfer against the de Sitter detuning. **`PO-34`** — *does the second-ruling reading cover the collapse face*: P8's identification of the flat synchronous space with the second null ruling is **the sharpest single statement in the corpus's $r=0$ chain**, and it is scoped to the **cosmological** face.
+② REGISTER — **⛔ THREE ROWS OPENED, each with what would discharge it stated.**
+③ HOME — `THE_REGISTER` PO-32/33/34; `THE_FRONTIER`, regenerated.
+④ ANCHOR — the papers' own sentences.
+⑤ JOINS — [[p7-cr-framework]] · [[p11-dynamics]] · [[p8-slicing-operator]] · the $r=0$ cross-paper join.
+⑥ NOT OP FOR — **⛔ EACH IS FENCED AGAINST THE ROOM IT WOULD BE CONFUSED WITH, because each was nearly lost to exactly that.** *`PO-32` is **not** the Hawking dissolution* — that is about horizon-induced radiation and is settled; this is about what a body without a settled horizon carries. *`PO-33` is **not** the Frobenius resonance* of `C9` and the integrable-systems ledger — those are indicial exponents, **a different object in the same word**, and a keyword sweep returns five ledger hits that are all the wrong one. *`PO-34` bears on the $r=0$ chain, whose other links are complete*, which is why a scoped statement inside it reads as a finished chain.
+
+### the-frontier-got-longer-and-that-is-the-phase-working
+① CLAIM — **The frontier moves from 10 open and 10 steps to 13 open and 14 steps**, each new row marked as risen, and the generator extended to carry them rather than the numbers edited.
+② REGISTER — **COUNT, generated from the register.**
+③ HOME — `THE_FRONTIER.md`; `scripts/regen_frontier.py`.
+④ ANCHOR — the generator.
+⑤ JOINS — `THE_REGISTER` · Phase 3's remaining sources.
+⑥ NOT OP FOR — **⛔ THIS IS WHAT THE PHASE IS FOR AND IT SHOULD NOT READ AS A SETBACK.** *A gather that only ever shortened a list would be a triage wearing a survey's clothes.* **The three rows are not new work the corpus acquired; they are work it already had and could not see** — and the difference between those two is the whole value of drawing the joins. ⇒ *The negatives were the source that found them, which is the argument for the ⑥ field: **a claim's statement of what it does not reach is where the corpus records its own openings most precisely**, and it is the field a distillation drops first.*
+
 ---
 
 ## THE FRONTIER GATHER
