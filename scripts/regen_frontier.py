@@ -30,6 +30,21 @@ EST = {
         'every digit -- and neither the k-truncation nor the projection path, both instrument faults removed there. '
         'STEPS RAISED 1 -> 2: the driving subtraction measures the size, and a mechanism for the deficit is a '
         'second result, not the same one'),
+    'PO-36': ('does the turnaround radius track the dynamical mass or the baryonic one', 1, 0, 4, None,
+        'r4203: the maximum turnaround radius is derived in the standard framework and proposed there as a '
+        'local test of Lambda, with the same M^(1/3) scaling this construction gives, so the two are '
+        'DEGENERATE on the radius. The circularity is in how the test has been run: the N-body calibrations '
+        'are dark-matter-only and the observational masses are dynamical, so which mass sets it is assumed '
+        'rather than measured. Discharged by measured R_ta against independently measured BARYONIC mass. '
+        'Held at weight: a baryonic-set radius is smaller, which is the OPPOSITE direction from the '
+        'dark-matter evidence, so this is a discriminating measurement and not a dark-matter explanation'),
+    'PO-37': ('the sixteenth Weyl fermion: an argument the corpus criterion supports and does not make', 1, 0, 2, None,
+        'r4203: P14 states fifteen Weyl fermions per generation, "or sixteen with a right-handed neutrino", '
+        'noted as an option and nowhere argued for. Least-arbitrariness reads on it: fifteen requires '
+        'omitting one state, sixteen is the complete spinor and leaves nothing to choose. SCOPE: P14 '
+        'declines the gauge representation content, delivering the generation COUNT as an index and the '
+        'discrete skeleton, so the construction does not DERIVE sixteen and this must not be reported as a '
+        'derivation'),
     'PO-35': ('why the growth exponent 3/2 has its root at the concordance matter density', 1, 1, 3, None,
         'r4183: PUBLISHED as an RNAAS note in resources -- J(Om) crosses unity once, at Om* = 0.315162, with '
         'percent-level departures at 1 sigma, so omitting the factor biases growth-based inference toward Om*. '
@@ -211,7 +226,7 @@ LASTFIND = ("r3103: **PO-21 answered — the geometry lifts the obstruction but 
 # ⚠ *** A BUILD step has NO completed instance to calibrate against -- PO-11's continuum,
 # PO-6's UV definition, PO-1a's derivation.  Those are marked BUILD and their estimates
 # are declared unmeasured rather than dressed as measured. ***
-KIND = {'PO-13': 'BUILD', 'PO-32': 'READ', 'PO-35': 'READ', 'PO-33': 'BUILD', 'PO-34': 'READ',   # r4145: was READ, scoped when the diagnosis looked answered; it is not
+KIND = {'PO-13': 'BUILD', 'PO-32': 'READ', 'PO-35': 'READ', 'PO-36': 'READ', 'PO-37': 'READ', 'PO-33': 'BUILD', 'PO-34': 'READ',   # r4145: was READ, scoped when the diagnosis looked answered; it is not
          'PO-14': 'BUILD', 'PO-15': 'READ', 'PO-16': 'READ',
         # ** brought in r3095 from p0's frontiers and the field ledgers, which carried them
         # unregistered.  PO-17 is a DECISION stated without being claimed both ways; PO-18 an
@@ -221,12 +236,12 @@ KIND = {'PO-13': 'BUILD', 'PO-32': 'READ', 'PO-35': 'READ', 'PO-33': 'BUILD', 'P
 
 # ** PO-23 added r3809: the ultraviolet definition of the mode sums, the one part of P07's
 # three-part 'definition of the interacting tower' that is neither settled nor attempted. **
-ORDER = ['PO-13', 'PO-24', 'PO-34', 'PO-35', 'PO-32', 'PO-33', 'PO-30', 'PO-25', 'PO-26', 'PO-27', 'PO-28', 'PO-29', 'PO-31', 'PO-23', 'PO-15', 'PO-14', 'PO-17', 'PO-18', 'PO-19', 'PO-20']
+ORDER = ['PO-13', 'PO-24', 'PO-34', 'PO-35', 'PO-36', 'PO-37', 'PO-32', 'PO-33', 'PO-30', 'PO-25', 'PO-26', 'PO-27', 'PO-28', 'PO-29', 'PO-31', 'PO-23', 'PO-15', 'PO-14', 'PO-17', 'PO-18', 'PO-19', 'PO-20']
 GROUP = {'PO-13': 'D', 'PO-14': 'A', 'PO-15': 'C', 'PO-16': 'D',
          # ** r3095: the four brought in from p0's frontiers and the field ledgers.  PO-17 and
          # PO-19 are substrate geometry; PO-18 is the constant ledger; PO-20 is analysis. **
          'PO-17': 'E', 'PO-18': 'E', 'PO-19': 'E', 'PO-20': 'E',
-         'PO-23': 'C', 'PO-24': 'D', 'PO-25': 'E', 'PO-26': 'A', 'PO-27': 'A', 'PO-28': 'C', 'PO-29': 'E', 'PO-31': 'D', 'PO-30': 'A', 'PO-35': 'D', 'PO-32': 'E', 'PO-33': 'C', 'PO-34': 'E'}
+         'PO-23': 'C', 'PO-24': 'D', 'PO-25': 'E', 'PO-26': 'A', 'PO-27': 'A', 'PO-28': 'C', 'PO-29': 'E', 'PO-31': 'D', 'PO-30': 'A', 'PO-36': 'D', 'PO-37': 'A', 'PO-35': 'D', 'PO-32': 'E', 'PO-33': 'C', 'PO-34': 'E'}
 GNAME = {'A': 'the matter sector', 'B': 'the matter sector', 'C': 'the quantum sector',
          'D': 'the cosmology', 'E': 'the substrate geometry'}
 
