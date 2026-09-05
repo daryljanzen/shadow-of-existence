@@ -37,7 +37,7 @@ difference as physics. Withdrawn until both arms are converged.*
 # aborted the step before anything after it ran) made it visible to `check_currency` for
 # the first time. ** Declaring ignorance is not declaring currency, and only the owning
 # line can do the second. **
-current: r4124
+current: r4134
 ---
 
 
@@ -158,12 +158,41 @@ only honest answer; it is queued and is reported below when it lands.* ⛔ ***An
 untouched by any of this: the converged arm reports $\ell_1/\ell_A=0.6764$ against the sky's $0.7312$
 whichever way the premise falls.*** *What changes is the account of WHY, not the number.*
 
+## ⛭ THE LADDER WAIVER, CHECKED — r4134, and it re-establishes `K1` at the assigned configuration
+
+***The CR arm's projection samples at $2.3$ points per Bessel period against the guard's bar of $4.0$.
+The guard does not fail it; it waives itself, and says why in the same breath:* "CR's ladder is DISCRETE
+and physical, so this is not aliasing — but it is only not aliasing if the answer does not depend on it.
+Run `KCONT=1` to check."** So the waiver is a conditional, and the conditional is measurable.**
+
+| CR arm, converged | sampling | peaks | $\ell_1/\ell_A$ | $P_1/P_2$ | $P_1/P_3$ |
+|---|---|---|---|---|---|
+| `KFAC=2.0` discrete ladder | 2.3 / period | 204 / 516 / 828 / 1188 | 0.6764 | 1.975 | 2.206 |
+| `KFAC=2.0` **`KCONT=1`** continuum | **4.0 / period** | 204 / 516 / 828 / 1188 | 0.6764 | 1.975 | 2.206 |
+| `KFAC=3.0` discrete ladder | 2.3 / period | 204 / 516 / 828 / 1188 | 0.6764 | 1.975 | 2.205 |
+| `KFAC=3.0` **`KCONT=1`** continuum | **4.0 / period** | 204 / 516 / 828 / 1188 | 0.6764 | 1.975 | 2.205 |
+
+⇒ ***Identical to every printed digit, at both rungs.*** **The answer does not depend on the ladder
+sampling, so the waiver holds — and it now holds by measurement at the configuration the framework
+assigns, above the guard's own bar on the continuum side.**
+
+⌗ ***AND THIS RE-ESTABLISHES A RECEIPT THAT HAD GONE ORPHANED.*** *`K1_the_ladder_waiver_is_checked_against_the_continuum` (`L-280`) ran exactly this
+check and reached exactly this conclusion. **But it reads two BANKED spectra**, `c54.178_cr.npz` and
+`c54.186_cr_KCONT.npz`, and those sit at a different perturbation configuration: their background is
+identical to today's CR arm — $\ell_A = 301.6$, $D_M = 13004.6$, $r_s = 135.46$, the same numbers to the
+digit — but their first peak is at $\mathbf{171.2}$ where this run gives $\mathbf{204}$.* ⇒ ***That
+places them in the stacking-clock family and not the leaf:*** *r3739 measured the same background at
+$172$ under `STACKPERT=1` and $204$ under `LEAFPERT`, and $204$ is what the live run returns.*
+
+⇒ ** So `K1`'s VERDICT survives the rate correction and convergence in $k$, and `K1`'s NUMBERS do not. **
+*The receipt currently carries zero `\rcpt{}` markers in any paper and is one of the five entries a full
+appendix regeneration drops. **Its result is live and its data are not**, which makes it a candidate for
+the `sec:refit-bound` rewrite: the finding can be re-banked against this run instead of retired with the
+spectra it was measured on.*
+
 ## ⌗ STILL IN FLIGHT, AND NOT REPORTED UNTIL THEY LAND
 
-- **`KCONT=1` on the CR arm.** *The CR ladder samples at $2.3$ points per Bessel period, below the
-  guard's $4.0$ bar, and passes only on the claim that its ladder is physical rather than a sampling of
-  an integral — the instrument says so itself and says "it is only not aliasing if the answer does not
-  depend on it. Run `KCONT=1` to check."* **Running, at `KFAC` $2.0$ and $3.0$.**
+- ⛭ **`KCONT=1` on the CR arm — DONE, at both rungs, and it is exact.** *See below.*
 - **The polarisation (`HIER=1`) path, both arms, `KFAC` $2.0$ and $3.0$.** *Required because the spec's
   own calibrator, $P_1/P_2\approx2.197$, is that path's figure and not the default path's $2.393$ — see
   the r4122 section. **Opened by `C60`.***
