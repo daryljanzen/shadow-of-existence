@@ -30,12 +30,14 @@ EST = {
         'every digit -- and neither the k-truncation nor the projection path, both instrument faults removed there. '
         'STEPS RAISED 1 -> 2: the driving subtraction measures the size, and a mechanism for the deficit is a '
         'second result, not the same one'),
-    'PO-35': ('the growth-factor normalisation equals one at the best-fit matter density', 1, 0, 2, None,
-        'r4181: opened from the pre-corpus first draft and confirmed by computation -- I = 1.00040 at '
-        'Om = 0.315 and 0.99966 at Planck 0.3153, crossing unity essentially exactly at the best-fit value '
-        'and moving fast away from it. The NUMBER is confirmed; the source paper\'s pipeline-bias inference '
-        'is NOT asserted. Three readings stay open: coincidence, pipeline artefact, or a structural property '
-        'of the growth factor at the matter-Lambda crossover'),
+    'PO-35': ('why the growth exponent 3/2 has its root at the concordance matter density', 1, 1, 3, None,
+        'r4183: PUBLISHED as an RNAAS note in resources -- J(Om) crosses unity once, at Om* = 0.315162, with '
+        'percent-level departures at 1 sigma, so omitting the factor biases growth-based inference toward Om*. '
+        'THE CLASS measured r4183: other exponents each have a unique root and they run smoothly '
+        '(p=1.25 -> 0.486, 1.5 -> 0.3152, 1.75 -> 0.232, 2 -> 0.183), so nothing distinguishes the VALUE -- '
+        'what is distinguished is that the exponent the growth factor REQUIRES lands at the concordance value. '
+        'And it sits at the LambdaCDM value, not this corpus: J = 0.99966 at Planck 0.3153 against 1.02142 at '
+        'the DESI-fit 0.3066, which is evidence against reading it as a feature of this construction'),
     'PO-32': ('what survives for a perpetually collapsing ultra-compact body', 1, 0, 4, None,
         'r4169: opened by the Phase-3 gather -- P07 states it in its own voice and no instrument carried it. '
         'The horizon-thermodynamic reading is scoped and the scope names a live question; such a body need '

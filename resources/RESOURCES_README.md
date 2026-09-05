@@ -26,6 +26,15 @@ of relativity and of gravitational collapse, to a de~Sitter substrate whose prop
 *identical* to the flat-$\Lambda$CDM scale factor. Its section on noumena against phenomena is the ancestor
 of the shadow-reading; its `iz`/`zare` copulas are its own and did not survive.
 
+**`CR_RNAAS_growth-normalization.tex`** — *"A Curious Normalization of the $\Lambda$CDM Linear Growth
+Factor."* **Published, RNAAS**, with its figure beside it. The normalisation integral of the flat-$\Lambda$CDM
+linear growth factor crosses unity **once**, at $\Omega_m^{\star}=0.315162$ — the concordance matter
+density — with percent-level departures already at $1\sigma$, so an implementation that drops the factor
+biases growth-based inference toward that value. *The note names no affected analysis and says the
+coincidence proves nothing by itself.* It is carried in the register as `PO-35`, where the **class** of such
+integrals is measured: other exponents each have a unique root and the roots run smoothly, so what is
+distinguished is not the value but that the exponent the growth factor **requires** lands there.
+
 **`CR_firstdraft.tex`** — *"Cosmological Relativity: Resolving the Isotropy and Cosmic Time Problems in
 Precision Cosmology."* Submitted to **Physical Review D** and **rejected**. It carries the redshift-isotropy
 calculation that became P4 and argues toward the axioms; it is closest to a P4/P6/P7 mixture.
