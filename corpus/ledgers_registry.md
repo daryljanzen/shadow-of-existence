@@ -42,6 +42,7 @@ generator lost rows silently before it was hardened.*
 | `spectral_theory` | `SPECTRAL_THEORY_LEDGER.md` | field bake | The spectral-theory field bake — what bit, what bounced, and the boundary. Tier B's largest never-thrown field (×189 on the reach measure), verified as NOT covered by the harmonic ledger, which mentions spectral, self-adjoint and deficiency zero times |
 | `statistics_inference` | `STATISTICS_INFERENCE_LEDGER.md` | field bake | The statistics/inference field-bake ledger — what bit, what bounced, and why. The last unbaked field in `THE_MATHEMATICS_REACH`'s candidate set, and the one `A5.5` needs. `OWED` 622 |
 | `variational` | `VARIATIONAL_LEDGER.md` | field bake | variational / action against CR — the field the corpus uses and never names |
+| `graph_theory` | `GRAPH_THEORY_LEDGER.md` | field bake | The graph-theory / percolation field-bake ledger — one genuine contact, and where the 2026 sharpness theorem's hypotheses part from the corpus |
 | `figure_theorem` | `FIGURE_THEOREM_LEDGER.md` | theorem bake | The figure–theorem ledger: which classical theorem each figure carries, and its receipts |
 | `information_theory` | `INFORMATION_THEORY_LEDGER.md` | field bake | The information-theory field-bake ledger --- what bit, what bounced, and where the boundary is |
 | `number_theory` | `NUMBER_THEORY_LEDGER.md` | field bake | The number-theory field-bake ledger --- what bit, what bounced, and where the boundary is |
