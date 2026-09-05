@@ -1035,6 +1035,71 @@ note to self carries the same risk and matches no keyword. **A comment sweep is 
 ⑤ JOINS — [[p9-range-paper]] · [[p11-dynamics]].
 ⑥ NOT OP FOR — *A completeness claim confined to a named sector is the honest form, and it is the form the synthesis should reproduce: **complete within the sector, silent outside it**.*
 
+
+---
+
+# P9 · `corpus/range_paper.tex`
+### *The range of the de Sitter slicing operator: rotation, algebraic type, and the wall of inhomogeneity*
+
+> **▣ THE READ IS COMPLETE** *(front matter r4071--r4073, body r4077). P9 is P8's joined partner: P8 asks what
+> the operator IS, P9 asks how far it reaches.*
+
+### the-bound-and-that-it-is-attained
+① CLAIM — A swept geometry inherits the sweep's symmetry, and the sweep is by isometries of the substrate, so **every reachable geometry carries an isometry group containing a sweep-subgroup of $\mathfrak{so}(5,1)$** — the range is bounded above by the symmetry-reducible sector. The body then fills that bound class by class. **The argument's shape is named at source**: bounding a reachable class above by a necessary condition and showing the bound attained is how one computes the image of a construction up to isomorphism, and the necessary condition here is the same sentence the geometric core uses to say what a cut *is*.
+② REGISTER — **THEOREM** (`thm:bound`) for the bound; **THEOREM** (`thm:range`) for the range.
+③ HOME — P9 §2 and §8.
+④ ANCHOR — `K7_range_is_essential_image`.
+⑤ JOINS — [[p8-slicing-operator]] · [[p17-geometric-core]] · [[p12-algebroid]] · [[p7-cr-framework]].
+⑥ NOT OP FOR — **The bound is an INCLUSION**, and it is an equality only at the strata where an isotropy is tabulated. *The restriction is structural, not a limit of the survey*: a cut's isotropy preserves the second fundamental form as well as the induced metric, so the two coincide only where the symmetry is large enough to fix the embedding too. **The low-symmetry classes — Type I, Kerr–de Sitter, the wall — are exactly where they need not coincide.**
+
+### in-class-surjectivity-and-what-the-content-actually-is
+① CLAIM — Within a reachable class the operator's four data — **leaf, lapse, shift, vantage** — supply exactly the functions the general invariant metric admits, so the cut spans the class.
+② REGISTER — **PROPOSITION**, established case by case.
+③ HOME — P9 §3.
+④ ANCHOR — none.
+⑤ JOINS — [[p8-slicing-operator]] (the spherical case).
+⑥ NOT OP FOR — **⛔ P9 says plainly that the surjectivity is NOT the content.** *"Once the cut carries the class's function count, the cut ansatz is the general invariant metric, and spanning is near-tautological."* **The content is the identification of the vacuum members as the substrate's family — the kernel — and of matter as the bend.** *A synthesis that reports "the operator is surjective on the sector" as the result has reported the near-tautological half.*
+
+### rotation-is-the-shift
+① CLAIM — Every symmetric cut is block-diagonal, because a symmetric sweep makes the orbits orthogonal to the cut — so it cannot carry the cross term $g_{t\phi}$ in which frame-dragging lives. **Rotation is therefore neither the leaf nor the lapse but the shift**, the off-diagonal datum the spherical and homogeneous cuts set to zero. And **angular momentum needs both the offset and the twist**: $J=Ma$, *the offset alone is Schwarzschild–de Sitter, the twist alone is de Sitter.* The mass-free rotation-only limit is not merely vacuum but **maximally symmetric** — its Riemann tensor is the constant-curvature form — so the twist alone is a rotating, oblate slicing of the substrate itself and **not a new geometry**.
+② REGISTER — **PROPOSITION**, proved.
+③ HOME — P9 §5.
+④ ANCHOR — the section's own.
+⑤ JOINS — [[p8-slicing-operator]] (which has three data; the shift is the fourth) · [[p7-cr-framework]] · [[p11-dynamics]].
+⑥ NOT OP FOR — *Naming which datum is which fixes the cosmological reading with no room for a wrong turn* — the leaf's bend is the matter, the lapse is the stacking rate the observable expansion rides.
+
+### the-separable-type-D-vacuum-kernel
+① CLAIM — The separable (Carter) cut is vacuum-$\Lambda$ **if and only if** its structure functions are **quartics**, with the leading coefficient $-\Lambda/3=-1/\alpha^2$ of both **pinned by the substrate**. The four free coefficients are the mass, the rotation, the NUT charge and a coordinate normalization — so the rotating vacuum kernel is the complete *separable* Type-D vacuum-$\Lambda$ family, Kerr–NUT–(A)dS, with SdS one member and Kerr–de Sitter the addition of the twist.
+② REGISTER — **THEOREM**, iff, receipt-anchored.
+③ HOME — P9 §6, `thm:pd`.
+④ ANCHOR — `P09_typeD_quartics`.
+⑤ JOINS — [[p8-slicing-operator]] · [[p12-algebroid]] · [[p13-boundary]].
+⑥ NOT OP FOR — **Acceleration — the remaining Plebański–Demiański parameter — does not appear and is NOT a vacuum parameter.** *And this is the separable corner only; the next entry is why that is not the whole reach.*
+
+### algebraic-type-is-no-constraint
+① CLAIM — The Type-D kernel **might** suggest the operator reaches only the algebraically special corner. **It does not.** Speciality is detected by the Weyl invariants ($I^3-27J^2$ vanishing, equivalently two coincident eigenvalues of the self-dual Weyl operator), and the separation is verified directly: SdS, Kerr–de Sitter and the axisymmetric Bianchi members are Type D, while **the generic members are Type I** — three distinct eigenvalues, the speciality ratio varying over the manifold. Two independent witnesses: the generic vacuum-$\Lambda$ Bianchi-I cosmology at three Killing vectors, and the **Zipoy–Voorhees $\gamma$-metric** — static axisymmetric vacuum, **non-separable** — at two, Type I for $\gamma\neq1$ and Type D exactly at $\gamma=1$.
+② REGISTER — **PROPOSITION**, receipt-anchored, verified from the Weyl eigenvalues.
+③ HOME — P9 §7.
+④ ANCHOR — `P09_bianchiI_typeI`.
+⑤ JOINS — [[p12-algebroid]] · [[p7-cr-framework]] (the general-reach axes).
+⑥ NOT OP FOR — **⛔ The radiative types are absent, and that absence is not a gap but the wall's positive identity** — see below. *"Petrov O, D and I are filled" is the exact claim; N and III are not, and the synthesis must not round it to "all types".*
+
+### the-wall-and-why-the-obvious-statement-of-it-is-wrong
+① CLAIM — **THEOREM**: the range is the symmetry-reducible sector. The kernel's size is set by how much symmetry the class spends — a finite parameter family where the class reduces to ODEs (one for SdS, four for Type D, the finite KS family), a functional family where it remains a PDE problem. **The wall is the loss of isometry**, and it has a *positive* identity: **the onset of free gravitational radiation**, the graviton's two propagating polarizations, read on the matter side as dynamical inhomogeneous sources. *The reachable sector is the constrained, non-radiative skeleton of general relativity.*
+② REGISTER — **THEOREM AND COROLLARY**.
+③ HOME — P9 §8, `thm:range`, `cor:wall`, `cor:radiation`.
+④ ANCHOR — the section's own.
+⑤ JOINS — [[p11-dynamics]] (**which walks past the wall and shows it regular**) · [[p14-matter-sector]] · [[p7-cr-framework]].
+⑥ NOT OP FOR — **⛔ THE CONVERSE FAILS, AND P9'S OWN EXEMPLAR IS THE WITNESS AGAINST IT.** The type-N plane wave beyond the wall carries a **five**-dimensional isometry algebra — *more continuous symmetry than Schwarzschild's four* — and is vacuum, **with no matter at all to be inhomogeneous.** So the complement of the range is **neither the asymmetric geometries nor the inhomogeneous-matter ones**. *Any synthesis sentence of the form "the wall is inhomogeneity" or "the wall is loss of symmetry" is refuted by the paper's own example, and the correct statement is the radiative one.*
+
+### the-wall-is-a-seam-not-a-defect
+① CLAIM — Two results fix the boundary's character. **First**, the last reachable object before it is constructed exactly: a **confined gravitational wave** — a linearly polarized Gowdy–de Sitter cut with two Killing vectors — on which the transverse-traceless mode evolves by a wave equation while one isometry still pins it. **Second**, the wall acquires a sharp characterization: *a sweep generates a deformation of fixed orientation*, so a confined wave is self-consistent only while it propagates transverse to that orientation, and **the loss of the last confining isometry is exactly the point at which the wave's polarization must reorient**. Read on that orientation, the same boundary is **where chirality becomes generic**: where the sweep carries a rotation it completes the reflection exchanging the two handednesses into an orientation-preserving rotation and so **identifies** them — a mirror rather than a chirality; once the swept rotation is lost, no isometry remains to undo the reflection.
+② REGISTER — **ESTABLISHED**, with the confined wave constructed in the companion.
+③ HOME — P9 §9.
+④ ANCHOR — the section's own.
+⑤ JOINS — [[p11-dynamics]] (**owns the confined wave**) · [[p14-matter-sector]] (**the chirality reading**) · [[p13-boundary]].
+⑥ NOT OP FOR — **The wall is the seam at which generation-by-symmetry hands off to evolution-by-dynamics, and P9 insists it is not a defect to be engineered around.** *And the chirality criterion bites from the loss of the swept rotation onward rather than only at the wall* — which is a wider claim than the wall statement alone and should not be collapsed into it.
+
 ---
 
 ## THE FRONTIER GATHER
