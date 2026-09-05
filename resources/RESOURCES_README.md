@@ -13,6 +13,30 @@
 
 # resources/ — the primary sources
 
+## ⌗ THE TWO PRE-CORPUS PAPERS, AND WHAT BECAME OF THEM
+
+*Both predate the corpus and neither is cited by it as authority. They are read for **lineage** — which
+concepts survived, in what form, and at what weight — and the weight is always the corpus's, never theirs.*
+
+**`ERC_existence-relativity-cosmology.tex`** — *"Existence, relativity, and cosmology: reconciling
+foundational tensions in physics."* Submitted to **Reviews of Modern Physics**, which **considered it and
+declined to review it as beyond scope**. It is the first spark and **where the layered geometry hypothesis
+was born**: it argues from a formal concept of physical existence, through a cosmological reinterpretation
+of relativity and of gravitational collapse, to a de~Sitter substrate whose proper-frame areal radius is
+*identical* to the flat-$\Lambda$CDM scale factor. Its section on noumena against phenomena is the ancestor
+of the shadow-reading; its `iz`/`zare` copulas are its own and did not survive.
+
+**`CR_firstdraft.tex`** — *"Cosmological Relativity: Resolving the Isotropy and Cosmic Time Problems in
+Precision Cosmology."* Submitted to **Physical Review D** and **rejected**. It carries the redshift-isotropy
+calculation that became P4 and argues toward the axioms; it is closest to a P4/P6/P7 mixture.
+
+⛔ ***Neither is a source the synthesis writes from.*** *The write is bound to `SYNTHESIS_HARVEST.md`, whose
+entries carry the register tag their source gives them. A concept that survived is in a paper now, at that
+paper's weight; a concept that did not is lineage. Where these documents state something the corpus does not
+carry, that is a finding for the frontier gather and not a licence to write it in.*
+
+
+
 *Linked from `THE_CODA.md` and `ONTOLOGY_FOUNDATION_INDEX.md`. Created r1517, because both linked to it and it
 did not exist.*
 
