@@ -1,5 +1,30 @@
 0
 
+⛔⛭⛭ r4074 (node 60): THE DEBT ROSE TO 2 AND THE HEAD STAYS 0, BECAUSE THE RULE SAYS SO.
+699 pass, 2 fail, 0 over timeout, 1407s, tree cad3dee2d350659e.  The ratchet fires exactly as
+built: ** "the pin debt ROSE from 0 to 2.  The baseline may only be rewritten DOWNWARD -- repair
+the receipt, do not edit the number." **  *So the number is not edited.  The head above is the
+gate's last ZERO and it stays there until the debt is back at zero.*
+
+  ⌗ THIRTEEN BROKE AND ELEVEN ARE REPAIRED (r4070, r4072).  All thirteen were main's -- 61's reach
+    passes across P2-P7 rewrote the prose these receipts pin to, and 10 of 10 tested failed
+    identically at main's head 3676228c.  The eleven came out in three classes: one RETIRED BY
+    CORRECT WORK, six REWORDED with the claim untouched, three COUNTS re-measured with their
+    provenance, one RESTORED from a destroyed ledger row, and one dependent that fixed itself.
+
+  ⛔ THE TWO THAT REMAIN ARE ONE ROOT CAUSE AND IT IS NOT REPAIRABLE FROM THIS LINE.
+    `L251/N1` asserts `check_revision_collisions.main() == 0`.  That gate is red because ** r4009 is
+    claimed by two commits -- 084722dc and d13f7295, both on main, both in the ODD half. **
+    `L261/A1` asserts N1 exits 0, so it is blocked transitively.
+      ⇒ ** The only repair is renumbering a commit on another line's history. **  *I will not do
+        that, and I will not quarantine either check to get green -- a receipt edited into silence
+        is the defect this ledger exists to count.*
+      ⌗ *Both receipts are CORRECTLY RED: they are true reports of a real, unfixed collision, and
+        both go green by themselves the moment r4009 is resolved.  ** The debt returns to zero
+        without anyone touching a receipt. ***
+    ⇒ *** THIS IS THE ONE THING BLOCKING A CLEAN SUITE, A GREEN CI CHECK, AND THIS BRANCH'S RATCHET.
+        It is 61's to resolve and it is the highest-value item on that line's plate. ***
+
 ⛭⛭⛭ r4026 (node 60): 61's REWORDINGS BROKE TWO RECEIPTS, THE DIGEST CAUGHT IT, AND CI COULD NOT HAVE.
 699 pass, 0 fail, 0 over timeout, 1411s, tree 6430adffda02484e, gate rc=0, sweep 96/0/1, tree clean
 after the run.
