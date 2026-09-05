@@ -3,8 +3,22 @@ kind: REFERENCE
 name: the-dissolution-census
 job: Which standard problem does this dissolve, at what weight, and at what ontological cost? Read BEFORE CLAIMING A DISSOLUTION.
 class: whole-corpus-instrument
-current: r2279
+current: r4141
 ---
+
+> **⛔⛭ r4141 — ONE ROW STRUCK BY MEASUREMENT, AND THE REST CHECKED RATHER THAN ASSUMED.** *The
+> Phase 7 first-acoustic-peak row recorded a **correspondence success** — the peak landing where measured
+> for a reason internal to the construction. Converged on the calibrated polarisation path, on the leaf
+> congruence, the arm returns $\ell_1=204$ against the sky's $220.6$, a $7.5\%$ deficit at two cutoffs
+> agreeing to every digit; and the mechanism the row cited is separately refuted, the first peak's mode
+> being driven on the leaf rate. **Struck, not softened.** The two neighbouring Phase 7 rows were checked
+> against the paper and stand: the $H_0$-independence of the acoustic angle and the derived damping ratio
+> are both still carried by P15.*
+>
+> ⌗ ***And the completeness question was asked of it and it answers well.*** *Its cluster table is graded on
+> ontology cost in three tiers, it records baking that grading into `P7 sec:applications-synthesis` at
+> `r1718`, and the grading is what P7 carries today — so the instrument and its authoritative home agree on
+> the structure that matters most. **The defect was one figure, not the frame.***
 
 > **▣ REFERENCE — the tracking ledger for P7's first synthesis.** *Its home was found at r1279: P7
 > `sec:applications-synthesis` is the **authoritative** statement and this document is its tracking
@@ -231,7 +245,7 @@ synthesis's dissolutions list.***
 
 | **Phase 7 · the $H_0$-independence of the acoustic angle** | **B** cosmological puzzles | **P15 `sec:refit-bound`** | ***THE HUBBLE DISSOLUTION'S MECHANISM, DERIVED — a sharpening of the r1928 row, not a new instance.*** *Before: "the acoustic scale is met at the directly measured $H_0$ by a single inherited datum" — **an accommodation asserted**. **After: $\ell_*=\pi D_M/r_s$ is structurally $H_0$-INDEPENDENT here, both lengths scaling as $1/H_0$ — so the observable cannot constrain $H_0$ at all, and in ΛCDM it can only because there is no free early datum.*** **The dissolution is not that one parameter happens to absorb the tension; it is that the observable is blind to the quantity in dispute** |
 
-| **Phase 7 · the first acoustic peak at $\ell_1\simeq220$** | **B** cosmological puzzles | **P15 `sec:refit-bound`** | ***A CORRESPONDENCE SUCCESS, recorded as such.*** *The $\ell_1$-vs-$\ell_*$ offset is largely the driving phase shift, **and it transfers because `C1`'s closed form does**; the early ISW, which this construction lacks, is a nearly flat factor and moves the maximum by 1–2.* **So the first peak lands where measured for a reason internal to the construction rather than by accommodation** |
+| **Phase 7 · the first acoustic peak** | **B** cosmological puzzles | **P15 `sec:refit-bound`** | ***⛔ STRUCK r4141 — THIS ROW RECORDED A CORRESPONDENCE SUCCESS AND THE MEASUREMENT RETURNS THE OPPOSITE.*** *It read "the first peak lands where measured for a reason internal to the construction rather than by accommodation", at $\ell_1\simeq220$. **Converged on the calibrated polarisation path, on the leaf congruence, this construction's arm returns $\ell_1=204$ and $\ell_1/\ell_A=0.6764$ against the sky's $0.7312$ — a $7.5\%$ deficit**, at two wavenumber cutoffs agreeing to every digit. The row's stated mechanism is separately refuted: it rests on the driving-phase transfer, and on the leaf rate the first peak's mode **is** driven, so the account it gives cannot be the reason either way.* ⇒ ***A census whose job is to be read BEFORE a dissolution is claimed may not carry a correspondence the corpus's own instrument has measured against. The row is struck rather than softened, and what stands in its place is a measured deficit with no mechanism.*** |
 
 **⛭ THE PASS RE-RUN AT r1963 after the Peebles integration and the withdrawals.** *Two entries, both in cluster
 B, both sharpenings of the Hubble row rather than new dissolutions. **And `A.27`'s peak-height claim is NOT

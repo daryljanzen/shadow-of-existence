@@ -1848,6 +1848,26 @@ note to self carries the same risk and matches no keyword. **A comment sweep is 
 ⑤ JOINS — [[p7-cr-framework]].
 ⑥ NOT OP FOR — **And the P7 parallel is declined**: percolation replaces its scaffold with a quantity the conclusion names, where P7 deletes a hypothesis and the conclusion is unchanged. *A shared shape, not a shared mechanism* — the distinction the bake was thrown to test, answered in the negative.
 
+
+# L3 · `THE_DISSOLUTION_CENSUS.md`
+### *Which standard problem does this dissolve, at what weight, and at what ontological cost*
+
+### the-census-is-a-tracking-ledger-and-its-home-is-the-paper
+① CLAIM — **The census is not the authority and says so**: `P7 sec:applications-synthesis` is the authoritative statement and this document is its **tracking ledger**. Six clusters, each with a named collecting home — GR's classical pathologies at P7, the cosmological puzzles at P15, the unification divides at P13, the matter-sector structure at P14, the constants and fine-tuning at p0's ledger, and the unification closure at p0's seven ways. **And it is graded on ontology cost in three tiers rather than listed flat**, the grading recorded as baked into P7 at `r1718` — *which is the grading P7 carries today, so the instrument and its authoritative home agree on the structure that matters most.*
+② REGISTER — **REFERENCE**, with the per-paper sweep at 17/17 and the general principle attached: *a dissolutions list belongs at every synthesis.*
+③ HOME — `THE_DISSOLUTION_CENSUS.md`.
+④ ANCHOR — the census's own per-paper sweep.
+⑤ JOINS — [[p7-cr-framework]] (**the authoritative home**) · [[p13-boundary]] · [[p15-cr-cosmology]] · [[p17-geometric-core]] · [[p6-shadow-of-existence]].
+⑥ NOT OP FOR — **⛔ The grading is what stops the cluster being reported as one uniform move**, and the entry to carry it with is P7's own: *what an objector must dispute differs by tier*, so flattening the list hands a reader the whole set to reject at once.
+
+### a-census-may-not-carry-a-correspondence-its-own-instrument-has-measured-against
+① CLAIM — **⛔ One row recorded a correspondence success that the converged measurement returns the opposite of.** The Phase 7 first-acoustic-peak row read *"the first peak lands where measured for a reason internal to the construction rather than by accommodation"*, at $\ell_1\simeq220$. On the calibrated polarisation path at converged wavenumber on the leaf congruence, the arm returns **$\ell_1=204$, $\ell_1/\ell_A=0.6764$ against the sky's $0.7312$ — a $7.5\%$ deficit**, at two cutoffs agreeing to every digit. *And the row's stated mechanism is separately refuted*: it rests on the driving-phase transfer, and on the leaf rate the first peak's mode **is** driven.
+② REGISTER — **⛔ STRUCK at `r4141`, not softened.**
+③ HOME — `THE_DISSOLUTION_CENSUS.md`, the Phase 7 rows.
+④ ANCHOR — 60's converged polarisation leg; `PO13_WORKING_STATE.md`.
+⑤ JOINS — [[p15-cr-cosmology]] · [[p7-cr-framework]].
+⑥ NOT OP FOR — **⛔ The file's job is what makes this matter: *read before claiming a dissolution*.** A reader consulting it to check a claim would have been handed the claim's opposite as a success. *The two neighbouring Phase 7 rows were checked against the paper rather than assumed and **stand*** — the $H_0$-independence of the acoustic angle and the derived damping ratio are both still carried by P15. **The defect was one figure, not the frame.**
+
 ---
 
 ## THE FRONTIER GATHER
