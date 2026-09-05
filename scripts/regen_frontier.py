@@ -30,12 +30,12 @@ EST = {
         'every digit -- and neither the k-truncation nor the projection path, both instrument faults removed there. '
         'STEPS RAISED 1 -> 2: the driving subtraction measures the size, and a mechanism for the deficit is a '
         'second result, not the same one'),
-    'PO-36': ('does the turnaround radius track the dynamical mass or the baryonic one', 1, 0, 4, None,
-        'r4203: the maximum turnaround radius is derived in the standard framework and proposed there as a '
+    'PO-36': ('does the Hubble-Eddington radius track the dynamical mass or the baryonic one', 1, 0, 4, None,
+        'r4207 NAME GUARD: the standard literature calls this radius a maximum TURNAROUND radius; in this corpus TURNAROUND is the comoving turnaround, where the worldline turns at r = -(2M alpha^2)^(1/3) on the conjugate leg -- a different locus, and their word is used only in reporting their result. The radius is derived in the standard framework and proposed there as a '
         'local test of Lambda, with the same M^(1/3) scaling this construction gives, so the two are '
         'DEGENERATE on the radius. The circularity is in how the test has been run: the N-body calibrations '
         'are dark-matter-only and the observational masses are dynamical, so which mass sets it is assumed '
-        'rather than measured. Discharged by measured R_ta against independently measured BARYONIC mass. '
+        'rather than measured. Discharged by the radius measured against independently measured BARYONIC mass. '
         'Held at weight: a baryonic-set radius is smaller, which is the OPPOSITE direction from the '
         'dark-matter evidence, so this is a discriminating measurement and not a dark-matter explanation'),
     'PO-37': ('the sixteenth Weyl fermion: an argument the corpus criterion supports and does not make', 1, 0, 2, None,
