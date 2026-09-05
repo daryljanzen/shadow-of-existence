@@ -947,7 +947,7 @@ faces; **it does not cite it for the count**, which is the gap.
 | **P5** | 16,558 | completed r4063 — rigidity, the seam section, the diagnostic, the cosmological-completion section, the algebroid subsection and the closing had not been opened | **complete** |
 | **P3** | 28,931 | completed r4061 — the horizon-locus, two-readings, charge, temporal-three-ness, rigidity-groupoid, coupled-operations and closing sections had never been opened | **complete** |
 | **P7** | 43,900 | every section, r4049–r4057 | **complete** |
-| **P10** | — | ~16% of body; four sections never opened | **⛔ NOT READ — r4079 claimed otherwise** |
+| **P10** | — | r4097: all 9 sections, spans reconciled | **complete — verified** |
 | **P11** | — | r4095: all 9 sections, spans reconciled | **complete — verified** |
 | **P12** | — | r4093: all 8 sections, spans reconciled | **complete — verified** |
 | **P13** | — | r4091: all 14 sections, spans reconciled | **complete — verified** |
@@ -1119,10 +1119,9 @@ note to self carries the same risk and matches no keyword. **A comment sweep is 
 # P10 · `corpus/canonical_time.tex`
 ### *The canonical problem of time as a category error: an empirically forced cosmic time, deparametrization, and the graviton sector*
 
-> **⛔ THE READ IS NOT COMPLETE, AND r4079 SAID IT WAS.** *Measured at r4087: about 90 of 565 body lines were
-> opened, 16%. Never opened: `The necessity`, `The canonical formalism read two ways`, `Relation to existing
-> approaches`, and the 149-line Conclusion; of the 207-line deparametrization section, about 24 lines. The
-> entries below are accurate about what was opened and silent about the rest.*
+> **▣ THE READ IS COMPLETE, AND THE CLAIM IS VERIFIED.** *r4079 claimed it falsely at 16%; corrected r4087,
+> finished r4097. **Verification**: all nine section spans 143–562 reconciled against the ranges opened, no gap.
+> The four entries at the end are from what the false claim had skipped.*
 
 > **▣ P10's abstract needed no cut — 661 words, nothing living only there,
 > the first paper of the ten for which that was true — and the vocabulary sweep was clean.*
@@ -1454,6 +1453,54 @@ note to self carries the same risk and matches no keyword. **A comment sweep is 
 ④ ANCHOR — none; Friedrich, Andréasson–Ringström, Beyer.
 ⑤ JOINS — [[p9-range-paper]] (**the Nariai exception is the seam that paper isolates independently**) · [[p7-cr-framework]].
 ⑥ NOT OP FOR — **⛔ The Andréasson–Ringström extension is with Vlasov matter — a CORROBORATION rather than a vacuum theorem, and P11 marks it as such.** *And the in-model computations are named as the right in-model rigor the theorems **ground rather than replace**.* **⛔ ONE MORE, WHICH IS A NAMING HAZARD THE PAPER FIXES EXPLICITLY: the corpus carries TWO WALLS and they are different objects.** This paper's is the *wall of inhomogeneity*; the matter paper's *throat* wall is the $r=0$ point on the throat circle at which a Dirac zero-mode binds. **Both were labelled the same in their own sources until this one was renamed, and a cross-paper reference to "the wall" must say which.**
+
+### the-euclidean-kernel-and-a-check-the-construction-did-not-have-to-pass
+① CLAIM — On the lift the parameter runs imaginary, so the kernel carrying the state across is **not** the unitary operator but a **Euclidean** one — real, contracting, not unitary — *consistent with $U(\Delta\tau=0)=\mathbb 1$ rather than in tension with it, since no cosmic time elapses and the kernel is not an evolution in cosmic time.* **And two things follow, the first a check the construction did not have to pass**: a mode of frequency $\omega$ is damped by $e^{-\omega|\Delta\eta|}$, while the framework's *independent classical* reading of the same segment damps a mode by $e^{-kc_s|\Delta\eta|}$ — **with $\omega=kc_s$ these are the same expression, term for term.** *The classical selection rule — frozen content crosses, oscillating content does not — **is** the Euclidean kernel, read classically.*
+② REGISTER — **DERIVED**, with the agreement noted as a check rather than a construction.
+③ HOME — P10 §5 (**never opened under the false claim**).
+④ ANCHOR — the section's own.
+⑤ JOINS — [[p7-cr-framework]] · [[p16-cosmogenesis]] · [[p15-cr-cosmology]].
+⑥ NOT OP FOR — **⛔ The projection is not exact, and where it fails is a SCALE rather than a caveat.** Modes below $k\sim2\times10^{-4}\,\mathrm{Mpc}^{-1}$ are not strongly suppressed and cross with residual excitation — *a wavenumber subtending $\ell\approx3$*, which is where the framework's independent transmission calculation places the filter's boundary. **The two routes agree on the scale as well as on the factor.**
+
+### the-conformal-factor-objection-does-not-reach-this-construction
+① CLAIM — **The obvious objection is that a Euclidean kernel needs a Hamiltonian bounded below and Euclidean gravity notoriously lacks one.** P10 raises it against itself and answers structurally rather than fortunately: the conformal-factor problem arises when the path integral ranges over the conformal factor, **and here it does not.** The substrate's scale is fixed — *required, as the unique maximally symmetric structure carrying no unforced modulus* — so **there is no conformal mode to integrate over**; and the propagating degree of freedom is the **transverse-traceless** shear, precisely the sector the conformal mode is absent from, mode by mode a harmonic oscillator bounded below. *And the areal radius along the lift is confined between the turnaround and the branch point with substrate curvature finite throughout: **there is no runaway direction for the kernel to diverge along.***
+② REGISTER — **ARGUED**, and the same removal is later identified as doing double duty: *the deparametrization that yields a true Hamiltonian is the same move that yields a bounded-below one, both being the removal of the conformal direction.*
+③ HOME — P10 §5.
+④ ANCHOR — `D50_the_floor_does_survive_and_the_paper_said_so_232_revisions_earlier`.
+⑤ JOINS — [[p11-dynamics]] · [[p12-algebroid]] · [[p6-shadow-of-existence]].
+⑥ NOT OP FOR — **⛔ A REGISTER GUARD THE VOCABULARY INVITES BREAKING, stated at source.** The segment's *parametrisation* runs imaginary, and the kernel and action are those of that parametrisation — **they are not the Euclidean objects of a Wick-rotated spacetime.** The construction's continuations are *real analytic continuations on a spacetime Lorentzian throughout*; the horizon's Gibbons–Hawking state, by contrast, **is** a Euclidean continuation and is distinct in kind. **So dividing the segment's action by the $\hbar$ fixed at the thermal period would be joining two continuations the construction keeps apart.** *The comparison with the no-boundary sign is a comparison of signs and magnitudes, not an identification of frameworks.*
+
+### the-lift-is-an-instanton-with-finite-action-of-the-no-boundary-sign
+① CLAIM — The segment is **not a formal device but a solution of a variational principle**: continuing the marginal congruence's Lagrangian gives motion in the **inverted** potential — the standard signature of a Euclidean solution — and the lift's closed form satisfies both the equation of motion and the first integral to the precision of the check. *An instanton connecting the Lorentzian turning point to the branch point.* **Its action converges**, the integrand growing as $s^{-2/3}$ and being integrable, so **the segment carries a finite weight rather than a divergent one** — what a saddle-point treatment of the beginning would require. In the gravitational measure the value is negative, **which is the Hartle–Hawking sign**: the no-boundary de Sitter action is likewise negative, the present value the same sign and order, *smaller by a factor of order two, which is what a segment of the contour rather than a full hemisphere should give.*
+② REGISTER — **RECEIPT-ANCHORED**, twice, with the two normalisations reconciled rather than flagged — *the instanton is one trajectory read in two measures, and only its action value differs.*
+③ HOME — P10 §5.
+④ ANCHOR — `LIFT_instanton_action`, `LIFT_gravitational_action`.
+⑤ JOINS — [[p7-cr-framework]] · [[p16-cosmogenesis]] · [[p2-janzen-circle]].
+⑥ NOT OP FOR — *The sign traces to the segment lying on the $r<0$ branch* — **so the beginning's weight is of the no-boundary type, obtained from a contour the construction already possessed rather than from a boundary condition imposed on the path integral.**
+
+### semiclassical-is-not-adiabatic-and-the-paper-separates-them
+① CLAIM — **Two questions are in play and only one is what "adiabatic" names.** An adiabatic expansion is controlled by $|\dd\omega/\dd s|/\omega^2$, and along this segment that quantity **diverges** at the branch point — *so the adiabatic invariant is not conserved through it.* **The suppression is nonetheless finite, and for a different reason**: the exponent $\int\omega_n\dd s$ converges because $\omega\propto s^{-2/3}$ is integrable, *which is a statement about the action integral and not about slow variation.* **So the correction is semiclassical rather than adiabatic** — and the correction is **not small and runs the conservative way**, the exact exponent larger than the constant-frequency estimate by a factor $2.32$, so the suppression is *stronger* than the naive reading suggests.
+② REGISTER — **COMPUTED**, receipt-anchored, with the companion named as having the object correctly labelled.
+③ HOME — P10 §5.
+④ ANCHOR — `LIFT_adiabatic_correction`; ledger `integrable_systems`.
+⑤ JOINS — [[p15-cr-cosmology]] (**which names the same object as a WKB form with adiabaticity parameter of order unity**) · [[p7-cr-framework]].
+⑥ NOT OP FOR — **The projection is adiabatic for all but the lowest few harmonics and degrades to order unity only at $n=2$ and $n=3$** — *and that the approximation should fail exactly where the tower is coarsest is expected rather than surprising, there being no modes below $n=2$ on $S^3$.* **⛔ P10 records, without claiming it, that the harmonic indices at which the treatment loses control are the lowest ones** — meeting the companion's lowest physical mode at the same place.
+
+### the-counterterm-basis-is-one-dimensional-and-the-reason-is-not-the-one-first-given
+① CLAIM — **P10 checks its own argument and finds the first reason wrong.** The collapse of the three quadratic curvature invariants was attributed to *maximal symmetry*; in fact in four dimensions their deficit is exactly the Weyl-squared invariant, **every Friedmann geometry is conformally flat for *every* scale factor**, and on such a geometry the Gauss–Bonnet combination is an exact total derivative. *So no scale factor breaks the degeneracy, because no scale factor can make an FRW geometry anything but conformally flat* — **and because that is an identity holding pointwise rather than an evaluation on a chosen class, it survives superposition and descends to the quantized sector as an operator relation.** *The coupled sector never required a class of fixed backgrounds, because the statement was never made by evaluating on one.*
+② REGISTER — **RECEIPT-ANCHORED**, and *what maximal symmetry did buy is named as a weaker and different thing that does **not** survive*: terms of different dimension are proportional only on a constant-curvature background and part company as soon as the scale factor is not the de Sitter one.
+③ HOME — P10 §7 (`sec:lock`).
+④ ANCHOR — `Q1_the_degeneracy_is_conformal_flatness_not_maximal_symmetry_so_no_scale_factor_can_break_it`, `S50_the_counterterm_basis_is_one_dimensional_because_the_background_family_is`, `S1_the_shear_needs_exactly_one_new_counterterm_and_my_own_count_was_one_too_many`, `D1_the_degeneracy_carrying_the_quartic_was_never_derived_and_its_constant_is_the_component_count`.
+⑤ JOINS — [[p17-geometric-core]] · [[p11-dynamics]] · [[p12-algebroid]].
+⑥ NOT OP FOR — **⛔ Where the degeneracy genuinely ends is the SHEAR, and the calculation is run**: the deficit *is* $C^2$, an anisotropic shear gives $C^2=4\sigma^2+O(\sigma^4)$, and the propagating content of this tower **is** the transverse-traceless shear. The answer is *smaller than the question sounds* — for a TT perturbation the first variation of the Ricci scalar vanishes identically, so **the shear costs exactly one new counterterm, the Weyl-squared one.** *And one caveat belongs in the statement rather than after it*: the parity-odd Pontryagin density is non-zero at second order for a **circularly** polarised mode and reverses with handedness — **a linearly polarised mode returns zero, so the zero is a property of the mode chosen and not of the geometry**, and the corpus carries a chirality.
+
+### the-ordering-question-is-the-cosmological-constant-problem-in-local-dress
+① CLAIM — The ordering ambiguity is **inert in the bulk** — normal and symmetric ordering differ by a c-number zero-point, a global phase under the deparametrized evolution — and becomes physical **only in the boundary coefficient.** And the two orderings **answer the paper's own question oppositely**: under normal ordering the origin stays limit-circle and the boundary freedom survives; under symmetric ordering it becomes limit-point from the first occupied mode upward. *The decomposition is untouched by the choice, but the physical content is not* — **and asking which ordering is asking whether the graviton tower's zero-point energy gravitates at the horizon: the cosmological-constant problem in local dress, reached from inside the boundary coefficient rather than imported.**
+② REGISTER — **⛔ AN EXHAUSTION RATHER THAN AN OMISSION, and P10 argues that rather than asserting it**: any selector would have to act at the boundary, and *each candidate the construction offers fails to* — the horizon's thermal state acts **downstream**, closing the extension given the operator; the substrate isometry, positivity, the single-scale ledger and covariance each respect **both** orderings; and the deparametrization, by solving the constraint rather than imposing it, **removes the anomaly-freedom lever a Wheeler–DeWitt quantization would have used.**
+③ HOME — P10 §7.
+④ ANCHOR — `P10_ordering_selection_is_external`, `P10_the_straddle_is_computed`, `P10_gamma_hat_is_bounded_below`, `D1_the_boundary_is_per_fibre_and_the_UV_is_over_fibres`.
+⑤ JOINS — [[p17-geometric-core]] · [[p12-algebroid]] · [[p13-boundary]].
+⑥ NOT OP FOR — **⛔ AND THE CLASSIFICATION IS THE POINT: what is left is a single physical datum, localized as one computable quantity — an EPISTEMIC gap of the kind the construction admits, not an ONTOLOGICAL family of the kind it excludes.** *The distinction is drawn explicitly at source*: a parameter indexing distinct worlds is a family and inadmissible; one recording an unknown datum of one world is a gap and not a family at all. **The threshold's own value is explained rather than chosen** — it sits at the free boundary coefficient plus exactly one zero-point quantum of an occupied mode.
 
 ---
 
