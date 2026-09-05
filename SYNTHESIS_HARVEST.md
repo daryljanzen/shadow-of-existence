@@ -2043,6 +2043,61 @@ note to self carries the same risk and matches no keyword. **A comment sweep is 
 ⑤ JOINS — every survey the corpus runs.
 ⑥ NOT OP FOR — **⛔ Two were advanced at `r4155` rather than left, both against documents this arc had just read.** *The P14 comb: `THE_RECEIPT_AUDIT` does **not** discharge it, and its two `comb` hits are **`combinatorics`** — a word collision of exactly the kind an earlier not-found had already recorded finding.* *A6.4's gate: the gate phrases return **zero** in `algebroid_paper` read in full, so it is not stated there.* **Neither is closed — each still names remaining documents — and moving an item from NOT-YET-CHECKED to SEARCHED is the whole of what was earned.** *The form is what makes that possible: a search that reports what it did not open can be resumed by someone who opens it.*
 
+
+---
+
+# ═══ PHASE 3 · THE FRONTIER, COMPLETE AND UNFILTERED ═══
+### *Every open item from every source, deduplicated **by room, not by keyword**.*
+### *What it is · what it bears on · **what it does not bear on** · what would discharge it.*
+
+> **⛔ THE TWO DISCIPLINES THIS PHASE IS RUN UNDER, and they are the whole of why it is slow.**
+>
+> **① NO TRIAGE, AND NO VERDICT THAT EXCUSES AN ITEM FROM THE LIST.** *An item leaves only when the work
+> is done, never by reclassification. A filtered subset — "only three of these are really owed" — is what
+> stops a list being worked, because it hands back a judgement in place of the thing itself.*
+>
+> **② EACH ITEM IS WORKED FRESH BEFORE IT IS LISTED, and the verdict bar is SYMMETRIC.** *The base rate
+> says most open-claims in a corpus this age are **stale links** — the substance landed and the record
+> did not move. So an item is checked against the papers as they now stand before it is carried. **And
+> striking one costs exactly what keeping one costs**: a strike is a claim about the corpus and needs the
+> same evidence as a listing.*
+
+## ⌗ THE SOURCES, ENUMERATED BEFORE ANY WERE READ
+
+| source | count |
+|---|---|
+| `THE_REGISTER` live rows | **10** — PO-13, 23, 24, 25, 26, 27, 28, 29, 30, 31 |
+| ledger rows at OPEN or SUBSTANCE OWED | **22** across 12 ledgers, after two were moved (below) |
+| the papers' own frontier, scope and open sections | **17 papers**, `sec:frontiers` / `sec:scope` / `sec:open` |
+| logged not-founds still open | **3**, each carrying its own SEARCHED and NOT-YET-CHECKED |
+| harvest entries carrying a negative that names something open | drawn from **202** ⑥ fields |
+
+## ⌗ WHAT THE FIRST PASS ALREADY FOUND — three items, three different fates
+
+### two-dispositions-that-did-not-move-when-the-work-landed
+① CLAIM — **⛔ `CX1` and `KT1` were landed into P15 and P3 at `r4151`, and both ledgers still read SUBSTANCE OWED.** *The substance moved and the record did not* — which is the same defect as retiring a thing and leaving the references to it stale, met from the other side.
+② REGISTER — **⛔ CORRECTED at `r4157`**, both dispositions moved to LANDED with the paper and section named, and what they were kept in parentheses.
+③ HOME — `CONVEXITY_OPTIMISATION_LEDGER.md`, `CATASTROPHE_SINGULARITY_LEDGER.md`.
+④ ANCHOR — the landings at `r4151`.
+⑤ JOINS — [[p15-cr-cosmology]] · [[p3-sds-slicing]].
+⑥ NOT OP FOR — *And the defect was **mine, two revisions old** — which is the base rate the phase's own spec predicts, arriving immediately and from the most recent work rather than from the oldest.*
+
+### F20-is-discharged-and-the-ledger-had-not-noticed
+① CLAIM — The functional-analysis ledger carries **`F20`** at SUBSTANCE OWED: *P1's denied inequivalence has an exact criterion — Shale's — and the thermal case fails it at the **infrared** end, a $1/\omega$ logarithmic tail.* **Worked fresh: P1 states it, cites `Shale1962`, and gives the infrared tail in the paper's own voice.** *The substance is in the corpus and the ledger's disposition is a stale link.*
+② REGISTER — **DISCHARGED**, verified at source rather than by the ledger's own record.
+③ HOME — `FUNCTIONAL_ANALYSIS_LEDGER.md` `F20`; the substance in [[p1-bh-causality]].
+④ ANCHOR — P1's `Shale1962` citation.
+⑤ JOINS — [[p1-bh-causality]] · [[p10-canonical-time]].
+⑥ NOT OP FOR — *This is what the base rate looks like when it holds*: **the item was real when written and the corpus answered it without the ledger being told.**
+
+### H23-stands-and-the-keyword-would-have-struck-it
+① CLAIM — **⛔ The harmonic-analysis ledger's `H23` is genuinely owed**: *"the failure of $U$ to be harmonic" is **the obstruction to integrating $\gamma$**, not a quantity alongside it* — and the ledger's own check is exact, *`obstruction` live in eleven papers, **none at this claim**.*
+② REGISTER — **⛔ OPEN, and confirmed open by working it rather than by leaving it.**
+③ HOME — `HARMONIC_ANALYSIS_LEDGER.md` `H23`.
+④ ANCHOR — the ledger's own eleven-paper check.
+⑤ JOINS — [[p9-range-paper]] · [[p8-slicing-operator]].
+⑥ NOT OP FOR — **⛔ THIS IS THE ITEM THAT DEMONSTRATES THE PHASE'S OWN RULE.** *A phrase search returns a hit in the range paper — "the failure of $U$ to be harmonic is a **fluid bend**, its source the trace of the spatial stress" — and **that is a different claim in the same words.*** The corpus says what the failure *is* as a matter of source; `H23` says what it *does* as a matter of integrability. **Deduplicating by keyword would have struck a live item on a phrase match; deduplicating by ROOM keeps it, and the room is the question being answered rather than the words answering it.**
+
 ---
 
 ## THE FRONTIER GATHER
