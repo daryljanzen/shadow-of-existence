@@ -1582,6 +1582,79 @@ note to self carries the same risk and matches no keyword. **A comment sweep is 
 ⑤ JOINS — [[p13-boundary]] · [[p12-algebroid]] · [[p17-geometric-core]].
 ⑥ NOT OP FOR — **⛔ And P14 places itself against the discrete-flavour literature rather than letting a reader mis-place it.** That literature's criterion is that more than one generation needs a **non-abelian** symmetry carrying two- and three-dimensional irreducibles. *This sector's threeness is not a horizontal symmetry of that kind at all: it is the **deck group of a covering**, saying the three generations are one object read three ways rather than three components of a multiplet, and **it is not broken and predicts no mixing**.* **The exchange is stated as running both ways**: *this construction cannot claim the explanatory work those models do, and their standing difficulties are correspondingly not its own — it is tested by the count, the chirality and the sixteen-fermion requirement.*
 
+
+---
+
+# P15 · `corpus/CR_cosmology.tex`
+### *The cosmology and its scalar perturbation sector: the geometric rate, the dissolved tensions, and the acoustic disagreement*
+
+> **▣ THE READ IS COMPLETE, AND THE CLAIM IS VERIFIED.** *r4105. All 25 section spans 132–1542 reconciled
+> against the ranges opened, zero gap. 1,411 body lines — the largest paper in the corpus.*
+
+### the-rate-is-the-load-bearing-claim-and-everything-else-is-its-consequence
+① CLAIM — The rate's two parameters are the substrate curvature radius and the **offset of the cut**, and **neither is a content of the universe**. The offset is measured **directly and calibration-free** — without a distance ladder, without the microwave background, and without any density. *The familiar cosmological form is a **coincidence of form**: written in the fitted pair the same rate reads as the Friedmann one, with the density parameters following identically — **a translation between parameter sets, and not a decomposition into components.*** **The two readings agree on the function and share nothing beneath it.**
+② REGISTER — **DERIVED**, receipt-anchored; and the load-bearing falsifiable claim is named as the prior one — *that radiation carries no term in the expansion rate* — of which the dissolved Hubble tension and the one-parameter acoustic calibration are **consequences**.
+③ HOME — P15 §2.3–§2.4.
+④ ANCHOR — `P15_expansion_law`, `P15_desi_dr2_confrontation`, `P15_hubble_expansion_confrontation_v2`.
+⑤ JOINS — [[p4-modern-parallax]] (**the empirical forcing**) · [[p8-slicing-operator]] (the rate as the stacking of the foliation) · [[p7-cr-framework]].
+⑥ NOT OP FOR — **⛔ THE DESI RESULT IS STATED AGAINST ITS OWN INTEREST AND MUST BE CARRIED THAT WAY.** *"Granted the same one free parameter, $\Lambda$CDM fits these data **marginally better** than this cosmology does" (0.92 against 1.00).* **The result is therefore not that the geometric rate fits better; it is that it fits without choosing an $H_0$, and the radiation-pinned one must choose.** *And $\Omega_m$ is not a CMB-calibrated input: Planck's own value degrades the fit.*
+
+### the-three-levels-and-why-a-mis-assignment-is-fatal
+① CLAIM — Every rate-bearing quantity is located on one of three levels. **(L1)** the foliation stacking rate, read *leftward* — *the cut is primary and the density is the name of its bend, not its cause* — **empirically forced** rather than modelled. **(L2)** the leaf-level local dynamics, the ordinary Friedmann readout with radiation gravitating normally, *the same single geodesic read **inward** as dust collapse that L1 reads outward as cosmology.* **(L3)** the projection the observer reads. **And there is no L1/L2 boundary in time**: the distinction is kinematic and holds at every epoch, the decomposition exact, *the two rates differing by the radiation term alone.*
+② REGISTER — **STRUCTURAL**, with the decision rule stated as structural rather than a choice.
+③ HOME — P15 §2.4.
+④ ANCHOR — the section's own.
+⑤ JOINS — [[p8-slicing-operator]] · [[p16-cosmogenesis]] · [[p10-canonical-time]].
+⑥ NOT OP FOR — **⛔ Each mis-assignment is quantitatively fatal and P15 gives both numbers**: the geometric L1 rate carried into the nuclear window is **~300× too slow**, and the radiation-sourced L2 rate carried past the branch point **re-manufactures the very tension this section dissolves.** *The assignment looked temporal only because the radiation term is negligible below $z\sim10$.*
+
+### the-inherited-datum-is-one-datum-and-the-naturalness-argument-is-withdrawn
+① CLAIM — $\rho_r/\rho_m\approx2$ at onset is **not a second inherited number** standing beside the onset redshift but **the onset itself, read in units of a density the construction does not determine** — both divide by the same quantity. *So what the handover supplies is one composition datum and what the cosmology fits is one parameter.*
+② REGISTER — **RECEIPT-ANCHORED**, and *the factor of two is exact at one $h$ and is to be quoted as an order-unity band, not as a determined number.*
+③ HOME — P15 §2.4.
+④ ANCHOR — `P15_the_ratio_is_the_onset_in_imported_units`, `P15_the_two_data_are_one`.
+⑤ JOINS — [[p16-cosmogenesis]] · [[p7-cr-framework]].
+⑥ NOT OP FOR — **⛔ P15 WITHDRAWS ITS OWN NATURALNESS ARGUMENT IN PLACE, and the withdrawal is the entry.** Complete collapse liberating binding energy of order the rest mass *looks* like it makes an order-unity handover natural — but the handover sits **four orders above the deuterium bottleneck**, so a handover carrying radiation merely of order the matter density would have $\eta\simeq0.5$ and **leave neither light elements nor acoustic peaks.** *"So the naturalness question runs the other way."* **And the inheritance is given a structural reason**: the infall thermalizes above the bottleneck so the progenitor's composition is **erased** and the abundances are *synthesized* rather than inherited — *what survives is baryon number, which no dissociation destroys.* **So $\eta$ is inherited because a conservation law protects it, and the abundances are predicted because none protects them** — *and a derivation of $\eta$ must reach a conserved charge of the progenitor, a constraint in kind and not merely in difficulty.*
+
+### the-acoustic-disagreement-and-where-it-does-not-live
+① CLAIM — **The paper states the disagreement in its own introduction and calls it one.** The asymptotic phase intercept sits $0.615$ from the sky's in the same units, *some seventy standard deviations at the peak-position accuracy the data supports*, and the sky's side is **measured here rather than quoted** — the Planck peaks located by parabolic fit, reproducing the standard values to better than one per cent **without having been fitted to them**. **And the disagreement is then localised by elimination**: not the spacing, whose asymptotic value is $0.975$ of the acoustic scale against the control's $1.002$; not the phase, since *the reading whose phase comes closest is still **sixty times** the control in $\chi^2$ per degree of freedom*; not the heights, which a free choice moves.
+② REGISTER — **MEASURED**, with the licensing move named: **matched-procedure differencing** — *the control passed through the identical extraction, so whatever bias the procedure carries appears in both arms and cancels.* **The discipline is stated as governing every control in the sector**: *a residual is credited against CR only once the control, run through the same machinery, has been shown not to produce it.*
+③ HOME — P15 §1, §5.9 (`sec:refit-bound`).
+④ ANCHOR — `P15_the_sky_phase_fit_and_its_uncertainty`, `P15_the_spacing_is_right_and_the_acoustic_phase_is_wrong`, `P15_the_phase_is_the_driving_and_the_undriven_arms_agree`.
+⑤ JOINS — [[p7-cr-framework]] (**whose frontier list carries the same disagreement in numbers**) · [[p16-cosmogenesis]].
+⑥ NOT OP FOR — **⛔ AND THE ATTRIBUTION IS COMPLETE AND COSTS THE PROGRAMME SOMETHING.** With every coupling to the potential removed, *the two arms' acoustic phases agree to $0.013$ of the acoustic scale and both spacings are it to a part in a thousand* — **two constructions with different rates, sound horizons, starting redshifts and initial data give the same series once nothing drives it.** Switching the driving on supplies the discrepancy, **98% of it**. *And the reason is the rate itself*: the standard driving shift is universal **because** every mode crosses during radiation domination, and a geometrically fixed rate has no such crossing — so the control's flat driving is **a cancellation between two flat channels**, and here the cancellation is gone and the two add. **⛔ "The acoustic-phase offset and the resolution of the Hubble tension are therefore one fact, and this construction cannot keep the second while disowning the first."**
+
+### the-coherence-is-the-null-boundary's-and-the-heights-are-time-reversal's
+① CLAIM — The initial-value problem on a null surface is **characteristic, not Cauchy**: one free function per mode plus regularity, rather than a field and an independent momentum. *A single datum per mode is a single phase per mode; there is **no second, independently specifiable quantity** to randomize the relative phase.* **So coherence is not imposed — it is what regular characteristic data on a null surface is.** And the **heights** are carried by a structural argument: the driven acoustic amplitude is the resonant Fourier magnitude of the potential's evolution, **exactly invariant under time reversal** — and this cosmology's driving lives on the *contracting* side, whose potential evolution is the Friedmann time-reverse of an expanding radiation era, *so its driving magnitude equals the standard one exactly.*
+② REGISTER — **ARGUED for the coherence; THEOREM-BACKED for the heights**, with the driving validated as a linear oscillator against the known radiation-era boost, and $P_1/P_2=2.185$ against $2.200$ for the control and $2.2564\pm0.0772$ measured on the sky the same way.
+③ HOME — P15 §4, §4.1.
+④ ANCHOR — `P15_verify_coherence_comb`, `P15_time_reversal_driving`, `C5b_baryon_term`, `P15_camb_reference`.
+⑤ JOINS — [[p7-cr-framework]] · [[p11-dynamics]] (**the same time-symmetry, one symmetry two consequences**) · [[p16-cosmogenesis]].
+⑥ NOT OP FOR — **⛔ AND P15 MARKS ITS OWN RECEIPT'S SCOPE AGAINST ITSELF.** The coherence receipt writes the mode function with the **standard** sound horizon as a literal *rather than any value this construction derives*, and **propagates no mode** — *so the spacing it returns is "the arithmetic of an assumed expression on an imported ruler rather than an output."* **What the peak spacing lacks is not agreement but a derivation, asserted here and computed nowhere in this paper.**
+
+### the-losses-recorded-as-losses
+① CLAIM — **Three places where the paper takes something away from itself.** *The scale-free interval*: before the onset the perturbation problem is scale-free and a scale-free problem imprints nothing, so **"this closes a candidate mechanism rather than supplying one"** and the first peak's position is left open — *"that is a loss of a claimed prediction and not a gain, and it is recorded as one."* *The shear coefficient*: the fit prefers a value the derivation refuses, and **"we take the derivation and pay the $\chi^2$, because a coefficient chosen because it fits is a fitted parameter whatever it is called."* *The reference choice*: the ordering between two measures of the floor reverses, so **"a reference chosen to flatter the instrument is available and we name it rather than use it."**
+② REGISTER — **⛔ NEGATIVES, each kept rather than tidied.**
+③ HOME — P15 §3, §5.8, §5.9.
+④ ANCHOR — `P15_the_shear_coefficient_derived_not_remembered`, `P15_the_floor_is_a_distance_between_models_not_a_number_from_the_data`.
+⑤ JOINS — [[p6-shadow-of-existence]] · [[p7-cr-framework]].
+⑥ NOT OP FOR — **⛔ And a stronger reading is declined at its own error bar**: the second- and third-peak damping multipliers split by $1.03$ standard deviations, *"and the split does not support it at its own error bar. We do not draw it."* **This entry is the corpus's clearest instance of the register the synthesis must reproduce.**
+
+### the-low-multipole-floor-is-parameter-free-and-non-discriminating
+① CLAIM — Because the distance slicing is **exactly flat** while the cosmological layers are a closed $S^3$, the photons are projected through the **flat** geometry while only the **source** modes carry the closed quantization — *not the hyperspherical transfer of a literal closed universe, which would deliver the lowest mode to the quadrupole and no deficit.* The result is a **parameter-free** deficit below $\ell\approx8$, bottoming **at $\ell=4$ and not at the quadrupole**.
+② REGISTER — **PROPOSITION plus Boltzmann transfer**; *established for the existence, location and minimum; **open** for the depth, two transfers differing by up to a factor of two.*
+③ HOME — P15 §8, `prop:flat`.
+④ ANCHOR — `P15_verify_geometry`, `P15_verify_lowell_boltzmann`, `P15_verify_lowell_exact_measure`.
+⑤ JOINS — [[p8-slicing-operator]] (**the second ruling**) · [[p10-canonical-time]] · [[p7-cr-framework]].
+⑥ NOT OP FOR — **⛔ Confronted with data it is NON-DISCRIMINATING and the paper says so**: it starves $\ell=2$ and $\ell=3$ **together**, *matching neither the sharp observed quadrupole-only dip nor the near-$\Lambda$CDM octopole*, and sits inside the lowest multipoles' cosmic variance. **"The low-multipole prediction of this section therefore stands as stated, and so does the discrepancy it faces."** *And a competing explanation is excluded by the residual's own behaviour rather than by argument*: the ratio **decreases** monotonically with $\ell$, where an adiabatic error would run the other way.
+
+### the-geometry-transmits-no-parameters
+① CLAIM — **A count settles the kind of the openness.** The progenitor family is parametrised by the mass alone — *the curvature radius is the one invariant and the marginal energy a choice of geodesic* — so the geometry is one-dimensional; **and the Kretschmann along the bead is mass-free in the faller's own proper time, so that one parameter does not survive the approach either.** *A quantity identical for every member carries no information about which member it was*, so **the collapse geometry transmits not one parameter but none.** Against that stand at least four independent inherited numbers. **So "inherited from the progenitor collapse" cannot mean inherited from the collapse *geometry*** — what is inherited comes from the progenitor's **matter content**, and none of that is carried by the mass.
+② REGISTER — **RECEIPT-ANCHORED**, and the conclusion reframes the frontier: *"not a derivation awaiting a cleverer argument but a **modelling task awaiting a progenitor interior**."*
+③ HOME — P15 §9.
+④ ANCHOR — `P15_the_geometry_transmits_no_parameters`, `P15_hbar_survives_in_As_and_cancels_in_ns`.
+⑤ JOINS — [[p16-cosmogenesis]] · [[p7-cr-framework]] · [[p12-algebroid]].
+⑥ NOT OP FOR — **And the two inherited numbers are separated by where $\hbar$ sits**: it is an overall multiplicative factor, *so it survives in the amplitude and **cancels in every logarithmic derivative*** — **the amplitude is permanently inherited, the tilt need not be.** *Read backwards this is useful rather than limiting: the observed amplitude **measures** the progenitor's mass, to be checked against the independent requirement that it lie below the recollapse threshold.*
+
 ---
 
 ## THE FRONTIER GATHER
