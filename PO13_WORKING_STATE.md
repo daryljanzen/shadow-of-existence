@@ -37,8 +37,54 @@ difference as physics. Withdrawn until both arms are converged.*
 # aborted the step before anything after it ran) made it visible to `check_currency` for
 # the first time. ** Declaring ignorance is not declaring currency, and only the owning
 # line can do the second. **
-current: r4138
+current: r4164
 ---
+
+
+# ⛭⛭⛭ r4164 — **THE DRIVING SUBTRACTION, BOTH ARMS: THE ARM IS DRIVEN 2.4 TIMES AS HARD AS THE
+CONTROL, AND IT OVERSHOOTS RATHER THAN FALLING SHORT**
+
+***The retired diagnosis said this arm has NO driving — "the acoustic modes re-enter above the onset,
+so none of them" is driven. It has more driving than the control.***
+
+| fluid path, `KFAC=2.0` | driving OFF | driving ON | shift in $\ell_1/\ell_A$ | in multipoles |
+|---|---|---|---|---|
+| control | 276, $\ell_1/\ell_A = 0.9158$ | 220, **0.7300** | $-0.1858$ | $-56$ |
+| **this arm** | 340, $\ell_1/\ell_A = 1.1273$ | 204, **0.6764** | $\mathbf{-0.4509}$ | $\mathbf{-136}$ |
+| — sky — | | 0.7312 | | |
+
+⇒ ***THE ARM'S DRIVING SHIFT IS $2.43\times$ THE CONTROL'S***, *by the same factor in $\ell_1/\ell_A$
+and in multipoles.* ⛔ **So the retired account is refuted in the direction opposite to the one it
+claimed: not an absent driving, but a driving more than twice the control's.**
+
+⛭ ***AND THE SEPARATION IS ALREADY THERE BEFORE THE DRIVING ACTS.*** *Undriven, this arm's first peak
+sits at $1.1273$ against the control's $0.9158$ — $23.1\%$ higher, a gap of $+0.2115$. The driving then
+carries it to $-0.0536$ BELOW the control's driven position.* ⇒ ***The arm overshoots.*** *It crosses
+from above the control's undriven position to below its driven one, and past the sky: the control lands
+$0.0012$ from $0.7312$ and this arm $0.0548$ below it.* **The $7.5\%$ position deficit is an
+OVERCORRECTION, not a shortfall — which is the opposite sign of cause from the retired text's.**
+
+⌗ ***AND THE DRIVING MOVES THE TWO ARMS' FIRST HEIGHT RATIO IN OPPOSITE DIRECTIONS.***
+
+| | $P_1/P_2$ | | $P_1/P_3$ | |
+|---|---|---|---|---|
+| control | $1.901 \to 2.393$ | $\mathbf{+25.9\%}$ | $3.219 \to 2.766$ | $-14.1\%$ |
+| this arm | $2.468 \to 1.759^{*}$ | | $5.839 \to 2.206$ | $-62.2\%$ |
+| this arm (fluid) | $2.468 \to 1.975$ | $\mathbf{-20.0\%}$ | $5.839 \to 2.206$ | $-62.2\%$ |
+
+*(\* the polarisation-path figure, listed for orientation only; the subtraction itself is fluid-path and
+the row below it is the like-for-like one.)* ⇒ ***The driving RAISES the control's first-to-second ratio
+by $25.9\%$ and LOWERS this arm's by $20.0\%$.*** *A second, independent way the two arms' driving is not
+the same operation — and it is not the polarisation source, which pulls both arms the same way.*
+
+⚠ ***STATED AS A FLUID-PATH MEASUREMENT, AND BEING REPEATED ON THE OTHER PATH.*** *All four runs above
+are `los_spectrum` at `KFAC=2.0`, so the two arms are compared on ONE path and the comparison is
+internally sound. But it is not the path `sec:refit-bound` reports its figures on, and quoting across
+the two is the defect corrected at r4162.* **The polarisation-path subtraction is queued; until it
+returns, the $2.43\times$ is a fluid-path number and is written that way in the paper.**
+
+⇒ **`P15 sec:refit-bound` carries the two-sentence reading 61 held for me, with the path named.**
+
 
 
 # ⛭⛭⛭ r4138 — **RUN 2: THE DATUM'S SPAN CONTAINS THE SKY ON ALL FOUR STATISTICS, AND NO SINGLE
