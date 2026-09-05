@@ -1868,6 +1868,45 @@ note to self carries the same risk and matches no keyword. **A comment sweep is 
 ⑤ JOINS — [[p15-cr-cosmology]] · [[p7-cr-framework]].
 ⑥ NOT OP FOR — **⛔ The file's job is what makes this matter: *read before claiming a dissolution*.** A reader consulting it to check a claim would have been handed the claim's opposite as a success. *The two neighbouring Phase 7 rows were checked against the paper rather than assumed and **stand*** — the $H_0$-independence of the acoustic angle and the derived damping ratio are both still carried by P15. **The defect was one figure, not the frame.**
 
+
+# L4 · `FIGURE_THEOREM_LEDGER.md`
+### *Which classical theorem each figure carries, and its receipts*
+
+### the-ledger-tests-itself-against-the-papers-and-found-its-own-banner-false
+① CLAIM — **Its landing table is built by testing each register against the seventeen paper bodies as they stand, *not* against the file's own claims about where things went** — four dispositions: **LANDED**, **POINTER OWED** (the substance is in a paper and only the marker is missing), **SUBSTANCE OWED** (established and verified here, absent from every paper), **BOUNCED/OPEN** (recorded, not to be cited). *And the first thing that test found was that the file's own banner — "banked, not baked; nothing here has gone into a paper" — **is false and by a large margin***: p0's power-of-a-point section carries the Euclid protocol's whole paying half in the paper's own voice, with its own bibliography.
+② REGISTER — **SELF-TESTED**, 27 rows, checked at `r3524`.
+③ HOME — `FIGURE_THEOREM_LEDGER.md`, the landing table.
+④ ANCHOR — the registers' own receipts.
+⑤ JOINS — [[p17-geometric-core]] · [[p3-sds-slicing]] · [[p2-janzen-circle]] · [[p5-groupoid]] · [[p14-matter-sector]].
+⑥ NOT OP FOR — **⛔ A forward document contradicting itself is a finding, and the ledger says so rather than quietly amending the banner.** *The distinction between POINTER OWED and SUBSTANCE OWED is the one that matters for a synthesis*: the first is a corpus that has the result and cannot point at it; the second is a result the corpus does not have.
+
+### the-pointer-debt-was-real-and-three-sites-carried-a-claim-with-nothing-to-point-at
+① CLAIM — Four registers stood at **POINTER OWED**, and checked against the corpus at `r4141` three sites still carried the claim with no marker to the ledger that proved it: p0's *"the nine-point circle of the hinge triangle **is** the throat"* at its Euclid-protocol close, p0's *"that circle is the incircle of the hinge triangle and its nine-point circle besides"* in the one-circle way, and P3's own nine-point item — which carried a **receipt** but no ledger pointer.
+② REGISTER — **CLOSED at `r4143`**, the markers placed where the claims are made.
+③ HOME — `FIGURE_THEOREM_LEDGER.md` rows ⊢9/⊢10/⊢38, ⊢40–⊢43, ⊢44/⊢58, ⊢45.
+④ ANCHOR — `euclid7_nine_point` and the protocol's receipts.
+⑤ JOINS — [[p17-geometric-core]] · [[p3-sds-slicing]].
+⑥ NOT OP FOR — *This is the same class as the graph-theory finding at `r4137` and the third instance this phase*: **the corpus holds the result, states it in printed text, and has no way to point at the check.** A synthesis citing such a claim would be citing a paper that cites nothing.
+
+# L5 · `COMBINATORICS_LEDGER.md`
+### *Lane 8 — what bit, what did not, and why*
+
+### the-lane-is-landed-and-its-headline-is-the-figure-ledger's-opposite
+① CLAIM — **"This lane's physics is landed, and landed well."** The sorting and the marriage — *two relations to one circle, **on it** and **tangent to it**, the product direct because the relations are independent* — are P14's two-factors section, written for them; the seventh face is p0's "one circle"; **$D_6=S_3\times\mathbb Z_2$ with its gauged-chirality/global-flavour arrangement runs through eight papers**; the cube root of two is banked in P7 with its receipt; and both late additions landed — the null condition met **exactly three times**, and the third energy $E^2=2$, both in P7's lift section.
+② REGISTER — **LANDED**, 14 rows, checked at `r3525`.
+③ HOME — `COMBINATORICS_LEDGER.md`, the landing table.
+④ ANCHOR — the registers' own.
+⑤ JOINS — [[p14-matter-sector]] · [[p17-geometric-core]] · [[p7-cr-framework]] · [[p12-algebroid]] · [[p5-groupoid]].
+⑥ NOT OP FOR — ***The debt here is pointers, not substance — and the ledger names that as the contrast that makes the figure-theorem ledger's owed registers legible as a debt rather than as the normal state.*** *Two of its six pointer-owed rows were still open and are closed at `r4143`*: p0's marker at the on-versus-tangent factorisation, and **P5's `rem:a2-distinct` guard**, which had no pointer at all.
+
+### the-guard-is-a-row-in-its-own-right-and-runs-in-both-directions
+① CLAIM — **⛔ The ledger carries a GUARD as a table row**: naming the combinatorics must not undo P5's remark **in either direction** — *"not a realised colour isometry" is not "not an $A_2$", and "an $A_2$" is not "a colour isometry".* And three of its rows are marked **META — NOT FOR A PAPER**, including a proved negative (*the 120 — no, proved twice over*) whose stated job is to **stop a false unification**.
+② REGISTER — **GUARD and META rows, explicitly not for citation.**
+③ HOME — `COMBINATORICS_LEDGER.md`.
+④ ANCHOR — the rows' own.
+⑤ JOINS — [[p5-groupoid]] · [[p13-boundary]] · [[p14-matter-sector]].
+⑥ NOT OP FOR — **⛔ A ledger that marks its own rows as not-for-a-paper is doing the synthesis's work in advance, and the marking must survive into the synthesis.** *A proved negative that guards against a false unification is worth more to a results paper than a positive of the same size, and it is the kind of row a distillation drops first.*
+
 ---
 
 ## THE FRONTIER GATHER
