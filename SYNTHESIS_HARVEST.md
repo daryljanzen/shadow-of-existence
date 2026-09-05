@@ -2343,6 +2343,24 @@ and its motivation**."* ⇒ *It is a theory-choice question of exactly the kind 
 science of*, **and it is the one item in this sector whose instrument is that paper rather than the
 geometry.** *Which also means it is the one an outside reader is least likely to recognise as work at all.*
 
+### the-two-closures-and-what-they-propagated-to
+① CLAIM — **⛭ PO-28 and PO-32 are CLOSED, and the propagation is the part that nearly went missing.** *PO-32
+struck `r4227` on its check; PO-28 worked and struck `r4231` on its own stated condition.* ⛔ ***And in both
+cases I struck the row, landed the result, and moved on without updating the documents that carry the item.***
+*The synthesis paper still declared sixteen open items against a table of sixteen rows, one of which was
+PO-32's, struck four revisions earlier.*
+② REGISTER — **⛭ PROPAGATED `r4233`.**
+⑥ NOT OP FOR — ⇒ *Updated in the same pass, as the rule requires:* **the paper's counts (sixteen to
+fourteen, seventeen rows to fifteen), the table rows for both struck items, and the prose in three places.**
+⌗ ***And each closure was landed where it BEARS rather than only removed***: PO-28's bound now sits in the
+paper's low-multipole subsection, because the depth of that deficit is the thing a reader would wonder
+whether the adiabatic residual bleeds into --- *it does not, and the paper now says why*; and PO-32's prose
+becomes a statement of **why it is not on the list**, the horizon-thermodynamic apparatus having no realised
+horizon on a finite layer, which is a result and belongs with the dissolutions.
+⌗ ***The lesson is the corpus's own and I had been enforcing it all session***: when a thing is retired the
+references to it get updated in the same pass, and **a struck row whose paper still lists it is worse than an
+open row**, because the list reads as current.
+
 ### the-scoping-as-it-now-stands
 ① CLAIM — **Of the sixteen: four are owed builds or runs** --- the adiabatic residual, the two-arm transfer,
 the sixteenth Weyl fermion's argument, and the second-ruling reading on the collapse face. **Two are probably
