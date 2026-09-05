@@ -2263,6 +2263,101 @@ tag* — against `ARGUED` ×9, `ESTABLISHED` ×9, `SYNTHESIS` ×3, `DISSOLUTION`
 ⑤ JOINS — [[p4-modern-parallax]] · [[p1-bh-causality]] · [[p17-geometric-core]].
 ⑥ NOT OP FOR — *The correction came from reading the two pre-corpus papers*: **both open with the empirical problem and argue toward the substrate**, and neither begins where the draft §1 began. ⛔ **That is lineage doing what lineage is for** — it cannot supply a claim, and it can show that an ordering was the author's and was abandoned without being replaced. ⌗ *The alternative placement — the empirical forcing in §3 with the confrontations — is rejected on the ground that **a reader who meets the substrate before the measurement has already been asked to grant the thing in question**.*
 
+
+## ⌗ THE FIVE READ AT WEIGHT — *which items are owed builds and which are real work*
+
+> **⛔ THIS IS A WORKING ORDER, NOT A RECLASSIFICATION.** *Nothing leaves the frontier on it. An item called
+> "probably closable" that turns out not to be stays exactly where it is, and the assessment is recorded so a
+> later reader can see it was made rather than assumed.*
+
+### PO-28-is-a-run-with-a-closing-condition-stated-either-way
+① CLAIM — **OWED BUILD, and the cheapest item on the list.** The adiabaticity parameter is characterised
+rather than flagged: it runs as $1.72/\mu_n$ early and $0.16/\mu_n$ late, \emph{controlled at high mode
+number and worst at the tower's floor, which is exactly where the largest scales live}; and it **diverges**
+as $s^{-1/3}$ at the branch point while the suppression exponent **converges** as $S^{1/3}$, so the
+finiteness comes from the action integral rather than from slow variation. *The machinery exists --- the
+exact-to-naive exponent ratio is measured at $2.32$.*
+② REGISTER — **ASSESSED AT SOURCE**, `r4223`.
+③ HOME — P10 `sec:dissolution`.
+⑥ NOT OP FOR — ⇒ ***And the item closes either way, which is what makes it cheap***: what is owed is the
+residual evaluated on the low-$n$ modes and carried through to whatever it touches --- *"and if it touches
+nothing observable, that is the result and closes the item."* **A run, and the right kind of run to hand to a
+computation node.**
+
+### PO-25-is-better-understood-than-its-row-suggests
+① CLAIM — **PROBABLY CLOSABLE FROM THE CORPUS, and the closing move is a separation rather than a
+construction.** The obstruction is stated exactly and the limit is singular: with $Q\neq0$ the charge term
+dominates as $r\to0$, so $f\to+\infty$, an inner turning point appears, and the origin is a timelike
+Reissner--Nordstr\"om singularity rather than a branch point --- \emph{at any $Q>0$, while only at $Q=0$
+exactly is it a branch point.} **So the charged closed loop has no branch point to close through.**
+② REGISTER — **ASSESSED AT SOURCE**, `r4223`.
+③ HOME — P3 `sec:lap` and its scope paragraph.
+⑥ NOT OP FOR — ⇒ ***Two things the reading separates, and the row runs them together.*** *The charged
+**interior** lies outside the symmetry-reducible sector the range theorem classifies* --- so it is not a gap
+in the instrument but a region outside its domain, established. **And the cosmogenesis theorem's own
+hypotheses do not mention charge**: it runs through the horizon's limiting null direction and the
+foliation-preserving reassignment, not through $r=0$. *So what charge obstructs is the **bead's closure**,
+and what it leaves untouched is the theorem that collapse continues as a cosmology.* ⇒ **The closing move is
+to state precisely which of the two the corpus needs, and what it costs if the loop genuinely fails for
+charge.** *Corpus-internal reasoning; the answer may well be that the loop fails and the cost is nameable.*
+
+### PO-29-is-a-fork-and-one-branch-is-real-work
+① CLAIM — **REAL WORK, unless a discriminant is cheap.** The paper is explicit about its own scope:
+attributing the parting term to the forced off-axis pivot rather than to the mass is *"the perspectival
+reading's interpretive payoff, not a claim proven independently of it."* **And the computation usually
+brought to bear does not discriminate**: along the cosmological branch the invariant carries no memory of the
+mass, and along the interior cycloid its $M$-dependence follows entirely from the trajectory's amplitude,
+\emph{which is common to both readings and so predicts the same thing either way}.
+② REGISTER — **ASSESSED AT SOURCE**, `r4223`.
+③ HOME — P12; the register's own step.
+⑥ NOT OP FOR — ⇒ *The step is a genuine either/or*: **find a quantity whose value differs between the two
+attributions, or establish that none can.** ⛔ *The second branch is not cheap and must not be taken cheaply*:
+one negative result is not an impossibility proof, and declaring the attribution interpretive without one
+would be reclassification wearing a verdict's clothes. **So this is real work in either direction**, and the
+reason to say so is that its row reads, at a glance, like a wording decision.
+
+### PO-26-is-real-work-and-the-corpus-says-so-in-its-own-words
+① CLAIM — **REAL WORK, unambiguously.** The spinor sector that exists lives on the substrate's **discrete**
+component and supplies **no equivariant index** --- its count is a wall-localised leaf index, well defined
+precisely where the bulk index is not. *The sector the obstruction would act on is the other one:
+gauge-acted and isometry-realised, on the compact face* --- and P13 calls it, in terms, **"a major
+construction never attempted."**
+② REGISTER — **ASSESSED AT SOURCE**, `r4223`.
+③ HOME — P13 `sec:open`.
+⑥ NOT OP FOR — ⌗ ***But it is well posed, which is the best state an unbuilt thing can be in.*** *The
+undelivered content is bounded from two directions at once: a proved structural result fixing where an
+admissible mechanism may live, and measured composition ratios fixing what it must produce.* **Neither is a
+construction and the paper offers none** --- what they jointly supply is a well-posed problem. *That is the
+item a reader with the right training could take up without first having to work out what the question is.*
+
+### PO-27-is-an-argument-and-its-instrument-is-the-epistemic-paper
+① CLAIM — **REAL WORK, of a different kind from the rest: an argument rather than a build.** Whether the
+Standard Model's empirical standing --- \emph{read as an external constraint rather than derived from the
+bare geometry} --- motivates taking the compact face as physical and building a fermion sector there **is not
+settled by anything the boundary paper establishes.**
+② REGISTER — **ASSESSED AT SOURCE**, `r4223`.
+③ HOME — P13 `sec:open`.
+⑥ NOT OP FOR — **⛔ AND THE PAPER FORBIDS MERGING IT WITH PO-26**: *"these are not the same frontier, and
+neither is 'empirical coherence alone': a coherent matter route would have to supply **both the construction
+and its motivation**."* ⇒ *It is a theory-choice question of exactly the kind the epistemic companion makes a
+science of*, **and it is the one item in this sector whose instrument is that paper rather than the
+geometry.** *Which also means it is the one an outside reader is least likely to recognise as work at all.*
+
+### the-scoping-as-it-now-stands
+① CLAIM — **Of the sixteen: four are owed builds or runs** --- the adiabatic residual, the two-arm transfer,
+the sixteenth Weyl fermion's argument, and the second-ruling reading on the collapse face. **Two are probably
+closable by corpus-internal reasoning** --- the charged bead's separation, and the parametric resonance if
+its specified transfer is tractable. **Six are real work** --- the generative law, the derivation of the
+inherited datum, the progenitor spectrum, the acoustic deficit's mechanism, the compact-face fermion sector,
+and the empirical-coherence argument. **Two are observational or external** --- which mass the
+Hubble--Eddington radius tracks, and the growth-factor normalisation. **And two remain unread at this
+weight**: the ultraviolet definition of the mode sums, and what survives for a perpetually collapsing
+ultra-compact body.
+② REGISTER — **⛔ A WORKING ORDER**, and not a change of status for any item.
+⑥ NOT OP FOR — ⌗ *The two unread are named as unread rather than assigned on a row-reading*, which is the
+distinction this pass exists to draw. **An item assessed at weight and an item summarised from its own
+register row are not the same evidence**, and a frontier offered publicly should say which is which.
+
 ---
 
 ## THE FRONTIER GATHER
