@@ -117,7 +117,24 @@ paper is opened, before the Phase 1 read, so the read is of the paper as it shou
   where it goes, and carry on next turn. The pacing rule and the no-mess-left-behind rule are the same rule read
   from two ends: work is not abandoned at a turn boundary, and it is not rushed to avoid one.*
 
-- **⛔ "READ AND HARVESTED" IS A CLAIM THAT MUST BE EARNED BY A FULL READ, END TO END.** *Phase 0b does not
+- **⛔ "READ AND HARVESTED" MAY NOT BE CLAIMED UNLESS THE CLAIM CAN BE VERIFIED TRUE — AND THE VERIFICATION IS
+  A MEASUREMENT, NOT AN IMPRESSION.** *Before claiming a paper read, list its sections with their line spans,
+  and account for **every** span against the ranges actually opened. If the account cannot be produced, the
+  claim is not available — say what was read and what was not, and treat the paper as unfinished. **An
+  unverifiable claim is not a weaker claim; it is one that must not be made.** This is the rule that was
+  already written at r4049 as "must be earned by a full read" and then broken on four consecutive papers, each
+  time in a commit asserting the opposite (r4079, r4081, r4083, r4085; corrected r4087). It was broken because
+  "earned" is a standard I could satisfy by feeling I had done it, while **"verified" is a standard only a
+  measurement satisfies.** The measurement is cheap: sections and spans on one side, ranges opened on the
+  other, and the two reconciled before the word "read" is written anywhere.*
+
+- **⛔ AND THE READING METHOD MUST NOT BE ABLE TO DEFEAT THE RULE.** *No `head` on a section read, no width
+  cap, and long sections read in explicit consecutive chunks. The four false claims were produced by
+  `head -12` truncating every range to twelve lines regardless of its length — so a 58-line section returned
+  twelve and the transcript looked like a completed read. **A rule survives only if the method cannot quietly
+  satisfy it while doing something else.***
+
+- **⛔ THE ORIGINAL RULE, KEPT BECAUSE IT IS STILL THE FLOOR:** *Phase 0b does not
   replace Phase 1 and cannot stand in for it. The reach pass reads the front matter and sweeps the whole
   document mechanically; **a mechanical sweep is not a read**, and neither is opening the sections a probe
   pointed at. **A paper is read when every section has been read straight through**, and only then may the
