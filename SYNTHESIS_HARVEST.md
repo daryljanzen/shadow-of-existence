@@ -2158,6 +2158,25 @@ note to self carries the same risk and matches no keyword. **A comment sweep is 
 ⑤ JOINS — [[p12-algebroid]] · [[p3-sds-slicing]] · [[p11-dynamics]] · [[p8-slicing-operator]] · [[p5-groupoid]].
 ⑥ NOT OP FOR — **⛔ `C4` IS THE ONE TO READ CAREFULLY, BECAUSE IT LOOKS LIKE A DEMOTION AND IS NOT.** *That the closure is generic to depressed cubics does not make the corpus's group less derived — the derivation is the substrate's — it relocates **the surprise**, which was in the number rather than in the route.* **A synthesis reporting "the order-24 closure is generic" as though it weakened the result would be inverting the row's own verdict.** *And the variational question is the one whose answer would change the most*: an action returning the operator's four data would make the operator a variational principle rather than a construction, which is a different kind of object.
 
+
+## ⌗ THE PAPERS' OWN OPEN SECTIONS — eleven named sections, and what they add
+
+### the-papers-dispose-of-their-own-remainders-in-place
+① CLAIM — **Eleven of the seventeen papers carry a named scope, open or frontier section**; six do not (P1, P2, P4, P5, P6, P10), stating their limits inline instead. *Checked against the register's ten rows, the papers' **principal** openings are each tracked*: P8's curve-dynamics is PO-30, P13's two genuinely-open items are PO-26 and PO-27, P15's transfer is PO-24, P7's three numbered frontier items carry their register aliases in the source. **And the smaller items the sections raise are disposed of at the site rather than left as untracked openings.**
+② REGISTER — **SURVEY**, eleven sections against ten register rows and twelve ledger rooms.
+③ HOME — the eleven `sec:scope` / `sec:open` / `sec:frontiers` sections.
+④ ANCHOR — each section's own dispositions.
+⑤ JOINS — `THE_REGISTER` · `ENTRY_POINT_REGISTER` · [[p7-cr-framework]].
+⑥ NOT OP FOR — **⛔ AND THE DISPOSAL IS EXPLICIT, WHICH IS WHAT MAKES THE SURVEY POSSIBLE RATHER THAN A JUDGEMENT CALL.** *P8's scope section names three smaller remainders and **sorts them in its own voice**: "the first is not owed, the second is settled below, and the third is an empirical discriminant rather than a construction."* **A paper that grades its own remainders is doing the entry-point register's job at the site**, and it is why this source added fewer items than its size suggested. *P12 does the same in its heading — "the handoff, **not an open closure on this sector**" — marking a boundary rather than advertising a gap.*
+
+### what-this-source-adds-is-a-cross-check-rather-than-items
+① CLAIM — **The papers' open sections and the register agree**, and that agreement is the result rather than a formality. *The failure this cross-check exists for is the one the entry-point register names: **a paper advertising an opening another paper has already walked through**, or an opening no instrument tracks.* **Neither is present in the eleven sections.**
+② REGISTER — **CROSS-CHECK PASSED**, and reported as a check rather than as coverage.
+③ HOME — the eleven sections; `ENTRY_POINT_REGISTER.md`.
+④ ANCHOR — the register's ten rows; the papers' own sections.
+⑤ JOINS — every paper.
+⑥ NOT OP FOR — **⛔ WHAT THIS DOES NOT SHOW.** *It does not show the papers state every opening they have* — an opening a paper does not know it has is invisible to a survey of what papers say, and only reading against the corpus finds those. **The three found this phase all came that way**: the model ledger's superseded premise, PO-31's three fates, and the figure-theorem ledger's own false banner. *So the eleven sections are a cross-check that passed, and the items this phase is actually turning up are coming from the instruments rather than from the papers.* ⇒ **WHAT WOULD DISCHARGE THE REMAINING DOUBT:** nothing a survey can do; it is discharged by the per-paper reads, which Phase 1 completed.
+
 ---
 
 ## THE FRONTIER GATHER
