@@ -37,8 +37,143 @@ difference as physics. Withdrawn until both arms are converged.*
 # aborted the step before anything after it ran) made it visible to `check_currency` for
 # the first time. ** Declaring ignorance is not declaring currency, and only the owning
 # line can do the second. **
-current: r4122
+current: r4124
 ---
+
+
+# ⛭⛭⛭ r4124 — **RUN 1: BOTH ARMS ARE CONVERGED IN $k$, AND THE DIAGNOSIS'S PREMISE IS FALSE ON THE
+RATE THE FRAMEWORK ASSIGNS THE PERTURBATIONS**
+
+***`PO13_RUN_SPEC_FOR_CC54`'s RUN 1, run as specified: `KFAC` $\in\{1.5,2.0,3.0\}$, both arms, `NK`
+derived and not pinned, `STACKPERT` unset. The default (`los_spectrum`) path is complete; the
+polarisation path, the `KCONT` check and the driving subtraction are in flight and are marked below.***
+
+## ⛭ THE LADDER — default path, `LMAXL=1300`, `NK` derived
+
+| `KFAC` | arm | modes | reach $k_{\max}D_M/\ell_{\max}$ | peaks | $\ell_1/\ell_A$ | $P_1/P_2$ | $P_1/P_3$ |
+|---|---|---|---|---|---|---|---|
+| 1.5 | lcdm | — | 1.50 | ⛔ **REFUSED** — k-TRUNCATED | | | |
+| 1.5 | cr | — | 1.50 | ⛔ **REFUSED** — k-TRUNCATED | | | |
+| **2.0** | lcdm | 1656 | 2.00 | 220 / 532 / 812 / 1124 | 0.7300 | **2.393** | **2.766** |
+| **2.0** | cr | 943 | 2.00 | 204 / 516 / 828 / 1188 | **0.6764** | **1.975** | **2.206** |
+| **3.0** | lcdm | 2484 | 3.00 | 220 / 532 / 812 / 1124 | 0.7300 | **2.392** | **2.765** |
+| **3.0** | cr | 1416 | 3.00 | 204 / 516 / 828 / 1188 | **0.6764** | **1.975** | **2.205** |
+| — sky — | | | | 220.6 / 538.1 / 809.8 | 0.7312 | 2.217 | 2.277 |
+
+⌗ ***`KFAC=1.5` is not a missing row — it is the instrument refusing.*** *Its own guard fires at
+reach $<1.9$: "⛔ k-TRUNCATED — the $C_\ell$ integral is not converged at this $k_{\max}$." **Data, not
+an error**, and it is the r3870 guard doing exactly what it was added for.*
+
+⛭ ***THE GATE THE SPEC SET, APPLIED.*** *"If the CR arm's reported quantities still move between $2.0$
+and $3.0$ by more than the control's own movement, it is not converged and nothing below is measured."*
+
+| | $\ell_1/\ell_A$ | $P_1/P_2$ | $P_1/P_3$ | peaks 1–4 |
+|---|---|---|---|---|
+| **control's own movement, 2.0 → 3.0** | $0.00\%$ | $0.042\%$ | $0.036\%$ | identical |
+| **CR's movement, 2.0 → 3.0** | $0.00\%$ | $0.00\%$ | $0.045\%$ | identical |
+
+⇒ ***BOTH ARMS ARE CONVERGED, and the CR arm moves by no more than the control does.*** *`KFAC=2.0` is
+the converged rung and RUNs 2 and 3 are unblocked. The control validates independently at that rung:
+$P_1/P_2 = 2.393$, $P_1/P_3=2.766$, peaks $220/532/812$ — `C59`'s separately measured
+`los_spectrum` $k_{\max}=2400$ row is $2.3931$, $2.7676$, $220/532/812$.*
+
+## ⛭ WHICH RETIRED FIGURES THE CONVERGED RUN REPRODUCES, AND WHICH IT DOES NOT
+
+***The spec asks for this explicitly, so it is stated as a table and not as a summary.***
+
+| retired figure, where it sits | converged run | verdict |
+|---|---|---|
+| control $2.3931$ / $2.7676$, peaks $220/532/812$ — `C59`'s `los_spectrum` $k_{\max}=2400$ row | $2.393$ / $2.766$, $220/532/812$ | ⛭ **REPRODUCED** |
+| CR $\ell_1/\ell_A=\mathbf{0.6764}$ — the r3739 two-arm position pin, `NK=620`, leaf clock | $\mathbf{0.6764}$ | ⛭ **REPRODUCED to four digits** |
+| CR peaks $204/516/828$ — same pin | $204/516/828$ | ⛭ **REPRODUCED exactly** |
+| control $\ell_1/\ell_A=0.7300$, peaks $220/532/812$ — same pin | $0.7300$, $220/532/812$ | ⛭ **REPRODUCED** |
+| CR $P_1/P_2=2.013$ — same pin, at the instrument's default $k_{\max}$ | **1.975** | ⛔ **NOT reproduced** — $1.9\%$ low |
+| control $P_1/P_2=2.447$ — same pin, same default $k_{\max}$ | **2.393** | ⛔ **NOT reproduced** — $2.2\%$ low |
+| CR fourth peak $1164$; control fourth peak $1116$ — same pin | **1188**; **1124** | ⛔ **NOT reproduced** |
+| CR $204/508/804$, $P_1/P_2=1.935$, $P_1/P_3=2.578$ — the `CRAMP=entry` derived-datum row, `NK=220` | not comparable at this rung | ⚠ **DIFFERENT DATUM** — RUN 2 measures it |
+| CR $204/508/804$, $2.238$ / $3.901$ — the `CRAMP=flat` coded row, `NK=220` | $204/516/828$, $1.975$ / $2.206$ | ⛔ **NOT reproduced** |
+
+⇒ ***THE PATTERN IS CLEAN AND IT IS THE ONE r3899 SAID SHOULD BE CONFIRMED RATHER THAN ASSUMED.***
+*r3899 wrote: "the positions are not affected by the same mechanism **on the control's evidence**, but
+that should be confirmed rather than assumed."* **Confirmed on the CR arm's own evidence: the
+$k$-truncation moves HEIGHTS and does not move the first three peak POSITIONS, on both arms.** *What it
+does move is the FOURTH peak, on both arms — which is the peak nearest the truncation, and is the reason
+the admissibility criterion RUN 2 fixes before its numbers is a criterion about the fourth peak.*
+
+⌗ *The $508/804$ positions are **not** a truncation artefact and not a rate artefact: the r3739 pin at
+`NK=620` on the same rate and the same default $k_{\max}$ already gives $516/828$. They come from runs
+at `NK=220`, and this file already records at r3745 that "every CR run in this thread used `NK=90`" and
+that the guard fires on $D_M$. **The remaining difference is mode count, in a quantity the sampling
+guard is there to protect.***
+
+## ⛔⛭⛭ AND THE ANSWER TO THE QUESTION THE SPEC CALLS THE MOST IMPORTANT ONE
+
+***"If the diagnosis in the retired text — that the driving supplies the disagreement because a
+geometrically fixed rate has no radiation-domination crossing — does not survive the leaf rate, that is
+the most important thing the run can return."***
+
+**It does not survive.**
+`\rcpt{C61_the_undriven_premise_is_false_on_the_rate_the_framework_assigns_the_perturbations}`
+
+*`P07` `sec:frontiers` states the premise, in the paragraph that opens "with the perturbations computed
+on the leaf congruence the framework assigns them to":*
+
+> *"the standard shift that carries it is universal only where every mode crosses the horizon while
+> there is a plasma to be driven, and **on this rate the acoustic modes re-enter above the onset, so
+> none of them does**."*
+
+*and this file gives the same premise as the structural reason the arm cannot reach the sky: "modes
+sub-horizon at the late onset $z_{\rm onset}\approx6797$, **never cross while there is a plasma** → the
+undriven phase".*
+
+⛭ ***THE CENSUS, ON BOTH RATES, FROM THE INSTRUMENT'S OWN BACKGROUND SPLINES.***
+
+| | **leaf rate** (what `LEAFPERT` assigns the perturbations) | **stacking rate** (L1) |
+|---|---|---|
+| radiation in the rate | **YES** | no |
+| equality | $z_{\rm eq}=\mathbf{3936}$, $\eta_{\rm eq}=236.4$ | ⛔ **NONE — there is no equality** |
+| $aH/c$ at the onset | $0.01828$/Mpc | $0.01109$/Mpc |
+| band entering AFTER the onset | $\ell < \mathbf{237.7}$ | $\ell < 144.2$ |
+| of those, entering in radiation | $\mathbf{155.6 < \ell < 237.7}$ | ⛔ empty, necessarily |
+| the reported first peak $\ell_1=204$ | $k/aH = \mathbf{0.858}$ — **SUPER-horizon at the onset**, enters at $z=\mathbf{5590}$ | $k/aH = 1.415$ — sub-horizon, already inside |
+
+⇒ ***The onset ($z=6761$) PRECEDES the leaf's equality ($z=3936$), the first peak's mode is still
+outside the horizon when the plasma starts, and it enters while radiation dominates.*** **It crosses
+while there is a plasma to be driven, and so does every mode in $155.6<\ell<237.7$.**
+
+⛭ ***AND THE OTHER RATE GIVES THE OPPOSITE ANSWER, WHICH IS THE POINT.*** *On the stacking rate the
+sentence is not merely true but necessary: that background carries no radiation term, so it has no
+equality and no mode can cross during radiation domination at any onset. **The diagnosis was stated on
+the rate that carries the ruler and tested against a spectrum computed on the rate that carries the
+content.***
+
+⌗ ***AND THE REFUTATION WAS ALREADY IN THE RECORD AS A CAVEAT.*** *`r3733` measured that on the leaf the
+$\ell=220$ mode sits at $k/k_{\rm hor}=0.92$ — outside the horizon at the onset. This run gets $0.926$.*
+**That number is the premise's refutation and it was filed as a qualifier.**
+
+⚠ ***WHAT THIS DOES NOT ESTABLISH, AND IT IS THE NEXT MEASUREMENT.*** *How large the driving those modes
+receive actually is. **A premise refuted is not a mechanism measured.** The instrument's `NODRIVE=1`
+guard runs the same equations with the driving removed, and the difference between the two runs is the
+only honest answer; it is queued and is reported below when it lands.* ⛔ ***And the position deficit is
+untouched by any of this: the converged arm reports $\ell_1/\ell_A=0.6764$ against the sky's $0.7312$
+whichever way the premise falls.*** *What changes is the account of WHY, not the number.*
+
+## ⌗ STILL IN FLIGHT, AND NOT REPORTED UNTIL THEY LAND
+
+- **`KCONT=1` on the CR arm.** *The CR ladder samples at $2.3$ points per Bessel period, below the
+  guard's $4.0$ bar, and passes only on the claim that its ladder is physical rather than a sampling of
+  an integral — the instrument says so itself and says "it is only not aliasing if the answer does not
+  depend on it. Run `KCONT=1` to check."* **Running, at `KFAC` $2.0$ and $3.0$.**
+- **The polarisation (`HIER=1`) path, both arms, `KFAC` $2.0$ and $3.0$.** *Required because the spec's
+  own calibrator, $P_1/P_2\approx2.197$, is that path's figure and not the default path's $2.393$ — see
+  the r4122 section. **Opened by `C60`.***
+- **`NODRIVE=1`, both arms, at the converged rung.** *The driving's size by the instrument's own
+  subtraction.*
+- **RUN 2**, the datum freedoms as a range: `CRPHI` over $[0,\pi)$ plus `entry` and `entryleaf`,
+  `CRAMP` $\in$ {`flat`, `entry`}, twenty runs, spectra saved so the **fourth** peak's height can be
+  measured against the admissibility criterion the spec fixes before the numbers.
+- **RUN 3**, the likelihood, both arms, floor as a model-to-model distance.
+
 
 
 # ⛭⛭⛭ r4122 — **THE DEFECT THAT GATED THE CR ARM IS NOT THERE, AND WAS NOT THERE WHEN IT WAS WRITTEN**
