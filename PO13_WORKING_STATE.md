@@ -37,8 +37,90 @@ difference as physics. Withdrawn until both arms are converged.*
 # aborted the step before anything after it ran) made it visible to `check_currency` for
 # the first time. ** Declaring ignorance is not declaring currency, and only the owning
 # line can do the second. **
-current: r4107
+current: r4122
 ---
+
+
+# ⛭⛭⛭ r4122 — **THE DEFECT THAT GATED THE CR ARM IS NOT THERE, AND WAS NOT THERE WHEN IT WAS WRITTEN**
+
+***`C59` closed `PO-24`'s control step and deferred the CR arm in one sentence: the clock operations are
+no-ops on the control, "so r3512's `HIER` composition defect cannot touch this result — and stays LIVE
+for the CR arm, **which is the first thing the next step must settle**." `THE_REGISTER`'s `PO-24` row,
+`receipts/INDEX.md` and both receipt appendices carry that deferral. It is settled here, and it comes
+out the other way.***
+
+`\rcpt{C60_the_hier_composition_defect_names_two_flags_its_own_tree_never_had}` — three source facts
+and one run.
+
+⛔ ***THE REMEDY NAMES TWO FLAGS THAT ARE NOT IN THE TREE r3512 WAS WRITTEN AGAINST.*** *r3512's gate 3
+is "give the hierarchy's gravitational source the stacking clock and its diffusion the leaf", i.e. teach
+`HIER=1` about **`SRCSTACK`** and **`DIFFLEAF`** — and it says "without this, step 4 is void", step 4
+being the CR run.* **Both occur ZERO times in `ACOUSTIC_two_arm.py` at `95559d53`, the commit r3512 IS.**
+*Its forty-two `os.environ.get` flags are enumerated in the receipt and neither is among them.*
+
+⌗ ***They were real, on a line that is not this one.*** *`6beeca84` carries `SRCSTACK` ×13 and
+`DIFFLEAF` ×3, and `cb5ec460` — "full consistent `HIER` composition" — is r3512's gate 3 actually
+**performed**, there. **`6beeca84` is not an ancestor of `95559d53`.*** *Two nodes held the same
+instrument on two lines within four hours of each other; the flag inventory was compiled across both and
+the defect was checked against one.*
+
+⛔ ***AND THE ASYMMETRY IT COUNTED IS `sound_phase`, WHICH IS ON NEITHER SPECTRUM PATH.*** *"`evolve_hier`
+and `_project` reference the clock operations **once**… the main path references **two**." The second
+site on "the main path" is `sound_phase` — the leaf-clock phase accumulator — which is **called once in
+the whole file, from inside `qscan()`**, the `QSCAN=1` diagnostic that computes no spectrum.*
+
+| path | ODE right-hand sides carrying the clock | projection |
+|---|---|---|
+| `LOS` (default) | `evolve` — **1** | `los_spectrum` — **0** |
+| `HIER` (polarisation) | `evolve` + `evolve_hier` — **1 + 1** | `_project` — **0** |
+
+⇒ ***One and one.*** *Each segment of a two-segment integration applies the chain rule once, which is what
+a change of independent variable requires; and neither projection applies it, which is also right — the
+projection is the comoving ruler's, on the stacking clock, exactly as `sound_phase`'s own docstring says
+when it warns against unifying the two horizons.* **This is true at HEAD and at `95559d53` alike**, so it
+is not something a later repair fixed.
+
+⛭ ***THE TWO RIGHT-HAND SIDES ARE THE SAME BYTES WHERE THE CLOCK ENTERS.*** *Not a count. Lines 576 and
+959 are character-identical —* `return out.ravel() * (float(Jac_of(e)) if LEAFPERT else 1.0)` *— as are
+the rate selections at 536 and 916, and every clock-or-source operation in `evolve` (`Jac_of`, `Hl_of`,
+`Hc_of`, `Phi2_of`, `Gf_of`, the four density-fraction splines) is also in `evolve_hier`.* **And there is
+no split assignment anywhere in the file for the hierarchy to be inconsistent with.**
+
+⛭ ***AND IT MOVES.*** *Asserted by running it: on `ARM=cr`, where $\mathrm{Jac}$ runs $0.646 \to 0.959$
+across $\eta = 200\!-\!800$, toggling `LEAFPERT` changes the state `evolve_hier` returns by $2.0$
+relative. **The hierarchy is not ignoring the clock operation.*** *On the control the same toggle is
+inert by construction rather than by measurement, since $\mathrm{Jac}\equiv1$ makes both branches of the
+conditional the same number — which is why the control could never have caught a composition fault
+either way. **That part of r3512 stands and is the reason this had to be checked at source.***
+
+⇒ ***SO THE CR ARM IS NOT GATED ON A COMPOSITION FIX, AND THE POLARISATION PATH IS OPEN TO IT.*** *What
+gates the CR arm is convergence in $k$, which is RUN 1 and is a different question. r3512's gate order 1,
+2 and 4 — validate $\Pi$ on the control, the `PISRC` subtraction, the CR run — are untouched by this and
+remain to be done.*
+
+⚠ ***AND THIS MATTERS FOR THE SPEC, NOT ONLY FOR THE LEDGER.*** *`PO13_RUN_SPEC_FOR_CC54` sets the
+calibrator as "the control must return $P_1/P_2 \approx 2.197$ and peaks near $220/540/812$", under a
+command with no `HIER=1` in it.* **$2.197$ is the polarisation path's figure** *— the instrument says so
+at its own line 64, "the converged value is 2.393 on that path and 2.197 on the polarisation path", and
+`C59`'s 2×2 puts `los_spectrum` at converged $k_{\max}$ at $2.393$ and `_project` at $2.197$.* ⇒ ***So
+RUN 1 as written could not reach its own calibrator, and the deferral this section discharges is why it
+was written that way.*** *The ladder is therefore climbed on both paths.*
+
+⌗ ***One thing found by needing it, reported and not repaired:*** *forty-one registered receipts call
+`git show` on a named commit, and the `receipts` job in `.github/workflows/gates.yml` — the one that runs
+every receipt — checks out **shallow**, while the fast `gates` job asks for `fetch-depth: 0`. `C60` exits
+1 rather than passing when the commit it reads is absent, so it fails honestly there rather than
+asserting over an empty string; the other forty-one have not been checked for that guard.* **Not repaired
+from inside `C60`, which is one of the affected files: the verifier would be editing its own subject.**
+
+⌗ *The receipt's appendix entries were **spliced** using the generator's own emit path rather than
+produced by a full regeneration. `python3 corpus/make_all_appendices.py` on this tree gains `C60` and
+**drops five** live entries from `appendix_receipts_P15.tex` — `BRANCHPT_transmission_character`,
+`D1_the_diagnosis_is_the_driving_and_the_driving_is_the_rate`, `H1_the_low_multipole_deficit…`,
+`K1_the_ladder_waiver_is_checked_against_the_continuum` and `P03_acceleration_is_slice_curvature`, three
+of which `P15` still cites. That is a live generator-scoping defect, reported on PR #32 and not mine to
+fix; regenerating to register one receipt would have broken three citations to fix a fourth.*
+
 
 # ⛔⛭ r4107 — **AND P15 §`sec:refit-bound` IS STILL REPORTING THE SUSPENDED NUMBERS AS ITS LIVE STATE**
 
