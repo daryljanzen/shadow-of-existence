@@ -949,7 +949,7 @@ faces; **it does not cite it for the count**, which is the gap.
 | **P7** | 43,900 | every section, r4049–r4057 | **complete** |
 | **P10** | — | ~16% of body; four sections never opened | **⛔ NOT READ — r4079 claimed otherwise** |
 | **P11** | — | ~35% of body | **⛔ NOT READ — r4081 claimed otherwise** |
-| **P12** | — | ~27% of body; `The anchor` never opened | **⛔ NOT READ — r4083 claimed otherwise** |
+| **P12** | — | r4093: all 8 sections, spans reconciled | **complete — verified** |
 | **P13** | — | r4091: all 14 sections, spans reconciled | **complete — verified** |
 
 **⌗ WHAT A PARTIAL READ DEMONSTRABLY MISSES — the two failure modes now have names, from cases.**
@@ -1248,8 +1248,9 @@ note to self carries the same risk and matches no keyword. **A comment sweep is 
 # P12 · `corpus/algebroid_paper.tex`
 ### *The constraint algebra as the substrate's Atiyah algebroid: base, anchor, and the structure function*
 
-> **⛔ THE READ IS NOT COMPLETE, AND r4083 SAID IT WAS.** *Measured at r4087: about 65 of 243 body lines, 27%.
-> `The anchor` was never opened.*
+> **▣ THE READ IS COMPLETE, AND THE CLAIM IS VERIFIED.** *r4083 claimed it falsely at 27%; corrected r4087,
+> finished r4093. **Verification**: all eight section spans 191–395 reconciled against the ranges opened, no
+> gap. The three entries at the end are from sections the false claim had skipped.*
 
 > **▣ Abstract cut 1450 → 460 words; the Atiyah passage and its receipt
 > relocated first, and one orphaned citation restored.*
@@ -1403,6 +1404,30 @@ note to self carries the same risk and matches no keyword. **A comment sweep is 
 ④ ANCHOR — `P13_closure_i_check`, `P13_closure_iv_check`, `P13_ruling_swaps`.
 ⑤ JOINS — [[p7-cr-framework]] (**the antimatter-progenitor theorem is this boundary's first consequence rather than an independent result**) · [[p12-algebroid]] · [[p14-matter-sector]].
 ⑥ NOT OP FOR — **⛔ The proposition claims a CO-LOCATION and pointedly NOT that $R$ carries one leg of the bead onto the other.** *A map is not a path.* The two legs are **not** mirror images — read in cosmic time the collapse leg goes as $\cosh^{2/3}$ and the expansion as $\sinh^{2/3}$, structurally distinct curves. **And that asymmetry is the content rather than a blemish on it**: were the legs mirrors, the bead would be invariant under the very reflection whose regions label its species, and *there would be no asymmetry for the cosmogenesis to carry.* **One step is peculiar to $A_2$ and the paper says so**: negating the roots conjugates the representation because $-1\notin W(A_2)$, so negation is outer — *in every other rank-two system it is inner and would conjugate nothing.*
+
+### rule-2-does-not-forbid-a-second-step-it-empties-it
+① CLAIM — **The absence of an upper bound on the dimension has a positive reason, and the reason is stronger than the absence.** Suppose the descent to the cut ran in more than one step. Each intermediate rung is itself a substrate for the steps below, so the least-arbitrariness criterion applies to it in its own right: **a rung that were *not* maximally symmetric would carry a choice of how to break its symmetry** — a modulus in the excluding sense. So every rung above the last must be maximally symmetric, and on this substrate a section carries mass exactly when it is not a plane section — **so every step above the last is a plane section.** A plane section of a $\mathrm{dS}_D$ of radius $\alpha$ returns $\mathrm{dS}_{D-1}$ of radius $\sqrt{\alpha^2-c^2}$ for every admissible normal, *the normal being gauge because the isometry group is transitive on unit spacelike normals.* **So a step above the last changes the scale and nothing else**: the entire tower enters the four-geometry through the single combination that is its $\alpha$.
+② REGISTER — **RECEIPT-ANCHORED**, and the conclusion is named as *neither of the two the question anticipated*: the criterion does not forbid a second step and does not force one — **it empties it.**
+③ HOME — P12 §2.
+④ ANCHOR — `E50_a_second_step_is_emptied_by_rule_two_and_not_forbidden_by_it`, `P12_polar_dimension`.
+⑤ JOINS — [[p6-shadow-of-existence]] (**the criterion's boundary: it selects the manifold at fixed dimension and is silent on the dimension itself**) · [[p17-geometric-core]] · [[p13-boundary]].
+⑥ NOT OP FOR — **⛔ So the dimension is unbounded above *because nothing below can see the difference*** — which turns the missing ceiling from a gap in the argument into **a property of the descent**, and makes the discipline of arguing from the cut to the dynamics and never from the cut to the substrate a *consequence rather than a rule of conduct*. **And one thing IS settled, and it is a different object: the *cut's* dimension** — four, being the only one carrying both a generation count and a handedness. *That settles the geometry the operator delivers, not the substrate it is delivered from.*
+
+### the-anchor-is-the-slicing-operator-made-infinitesimal
+① CLAIM — The anchor maps an infinitesimal cut-deformation to the stress-energy it produces, and **its four sectors are the ADM data of the cut read as functions of the cut**: *energy* the leaf's intrinsic-curvature departure from the round substrate leaf (the Hamiltonian constraint); *momentum* the **bend in the shift**, a clean functional of the shift alone on a fixed leaf-and-lapse background, giving the spherical frame-drag; *stress* the lapse split fixing the equation of state; *signature* the causal orientation, the discrete datum.
+② REGISTER — **ESTABLISHED**, receipt-anchored, on the spherical class.
+③ HOME — P12 §3 (**the section the false claim had never opened at all**).
+④ ANCHOR — `E1_static_gauge`.
+⑤ JOINS — [[p8-slicing-operator]] · [[p9-range-paper]] (**which supplies the fourth datum, the shift**) · [[p10-canonical-time]].
+⑥ NOT OP FOR — **P12 forestalls the obvious objection to reading the anchor as intrinsic**: the constraint carries the extrinsic curvature too, but *on the static spherically symmetric cuts this sector is built from, the extrinsic curvature vanishes identically* — **so the $K$-terms are absent by the gauge rather than dropped by hand.** *The four close as one functional on the spherical class only; the general-cut functionals are open scope.*
+
+### the-discrete-group-is-the-substrate's-own-Weyl-group
+① CLAIM — **The corpus had been using a sub-root-system of one the substrate already carries.** The residue pairing on functions over the root triple — diagonal, entries $1/f'(r_i)$, signature $(2,1)$ — has a non-trivial **holonomy** about the Nariai points, the Klein four-group of even sign changes, whose origin is the per-root resolution of $\sqrt\Delta$. Adjoining it to the monodromy closes a group of order twenty-four; adjoining the orientation parity as well, order forty-eight. **And neither is an abstract coincidence of order**: computing the element profile, *the six order-four elements are all **improper**, none a proper rotation* — the signature of the full tetrahedral group and not of the chiral octahedral one. **So the group is $W(A_3)$ in its Weyl embedding, not merely a group isomorphic to $S_4$.** And $A_3$ is not new: $\mathfrak{so}(5,1)$ is a real form of $\mathfrak{so}(6,\mathbb C)$, whose root system is $D_3\cong A_3$, with $A_2$ sitting inside by deleting one node.
+② REGISTER — **RECEIPT-ANCHORED**, twice, with the embedding verified by element profile rather than by order.
+③ HOME — P12 §8 (**never opened under the false claim**).
+④ ANCHOR — `GROUP_full_order48`, `EMBEDDING_is_Td_equals_WA3`; Ambrose–Singer.
+⑤ JOINS — [[p5-groupoid]] · [[p3-sds-slicing]] · [[p13-boundary]] (**which records this as "the discrete structure the geometry supplies is larger than this paper's companions had recorded"**) · [[p17-geometric-core]].
+⑥ NOT OP FOR — **⛔ The enlargement is a RECOGNITION of what the construction already contains, not an addition to it** — reached by transporting a form the substrate itself supplies. **And the scope is marked at source: this concerns the discrete structure ALONE.** *It says nothing about a continuous $\mathfrak{su}(3)$ — a finite group, however enlarged, is not a Lie algebra*, and the boundary paper's obstruction continues to address that.
 
 ---
 
