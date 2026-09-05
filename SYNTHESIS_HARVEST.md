@@ -947,6 +947,10 @@ faces; **it does not cite it for the count**, which is the gap.
 | **P5** | 16,558 | completed r4063 — rigidity, the seam section, the diagnostic, the cosmological-completion section, the algebroid subsection and the closing had not been opened | **complete** |
 | **P3** | 28,931 | completed r4061 — the horizon-locus, two-readings, charge, temporal-three-ness, rigidity-groupoid, coupled-operations and closing sections had never been opened | **complete** |
 | **P7** | 43,900 | every section, r4049–r4057 | **complete** |
+| **P10** | — | ~16% of body; four sections never opened | **⛔ NOT READ — r4079 claimed otherwise** |
+| **P11** | — | ~35% of body | **⛔ NOT READ — r4081 claimed otherwise** |
+| **P12** | — | ~27% of body; `The anchor` never opened | **⛔ NOT READ — r4083 claimed otherwise** |
+| **P13** | — | ~38% of body; two of three closed routes never opened | **⛔ NOT READ — r4085 claimed otherwise** |
 
 **⌗ WHAT A PARTIAL READ DEMONSTRABLY MISSES — the two failure modes now have names, from cases.**
 *① **Results living only in the front matter.** Found in P3 (seven), P5 (one), P7 (three). A probe by technical
@@ -956,6 +960,15 @@ soundness" — three printed occurrences across three papers, and **I read past 
 was caught only by meeting the same formula again in P7 and then grepping. **So this class is not caught by
 reading carefully; it is caught by recognising a repeat.** A first pass over a single paper is the wrong
 instrument for it, and a corpus-wide grep is the right one.*
+
+**⛔ AND THE FAILURE RECURRED AFTER THE RULE WAS WRITTEN, WHICH IS THE THING WORTH RECORDING.** *The rule that
+"read and harvested" must be earned end to end was written at r4049 after P7. It was then broken on the next
+four papers in a row, each time in a commit message asserting the opposite. **The mechanism was a display cap,
+not a judgement**: reads were issued as `awk 'NR>=X && NR<=Y' | grep -v '^%' | cut -c1-820 | head -12`, and the
+`head -12` truncated every range to twelve lines regardless of its length — so a 58-line section returned twelve
+lines and the transcript looked like a completed read. **A rule does not survive a method that quietly defeats
+it.** The method is changed: no `head` on a section read, no width cap, and long sections read in explicit
+consecutive chunks, so that what was seen is bounded by what was asked for.*
 
 **⌗ AND A THIRD CLASS NO INSTRUMENT SEES AT ALL: LaTeX comments.** *arXiv distributes `.tex` source. One
 working comment in P7 was found by reading and neutralised (r4051); a grep for the specific words found nothing
@@ -1106,7 +1119,12 @@ note to self carries the same risk and matches no keyword. **A comment sweep is 
 # P10 · `corpus/canonical_time.tex`
 ### *The canonical problem of time as a category error: an empirically forced cosmic time, deparametrization, and the graviton sector*
 
-> **▣ THE READ IS COMPLETE** *(r4079). P10's abstract needed no cut — 661 words, nothing living only there,
+> **⛔ THE READ IS NOT COMPLETE, AND r4079 SAID IT WAS.** *Measured at r4087: about 90 of 565 body lines were
+> opened, 16%. Never opened: `The necessity`, `The canonical formalism read two ways`, `Relation to existing
+> approaches`, and the 149-line Conclusion; of the 207-line deparametrization section, about 24 lines. The
+> entries below are accurate about what was opened and silent about the rest.*
+
+> **▣ P10's abstract needed no cut — 661 words, nothing living only there,
 > the first paper of the ten for which that was true — and the vocabulary sweep was clean.*
 
 ### the-selection-is-the-whole-of-the-move
@@ -1171,7 +1189,9 @@ note to self carries the same risk and matches no keyword. **A comment sweep is 
 # P11 · `corpus/dynamics_paper.tex`
 ### *Why the cut bends: the dynamics of the de Sitter cut, the confined graviton, and the wall*
 
-> **▣ THE READ IS COMPLETE** *(r4081). Abstract cut 1444 → 459 words; two results and two receipts relocated
+> **⛔ THE READ IS NOT COMPLETE, AND r4081 SAID IT WAS.** *Measured at r4087: about 80 of 226 body lines, 35%.*
+
+> **▣ Abstract cut 1444 → 459 words; two results and two receipts relocated
 > into the body first, and one orphaned citation restored.*
 
 ### the-symmetric-sector's-dynamics-in-closed-form
@@ -1228,7 +1248,10 @@ note to self carries the same risk and matches no keyword. **A comment sweep is 
 # P12 · `corpus/algebroid_paper.tex`
 ### *The constraint algebra as the substrate's Atiyah algebroid: base, anchor, and the structure function*
 
-> **▣ THE READ IS COMPLETE** *(r4083). Abstract cut 1450 → 460 words; the Atiyah passage and its receipt
+> **⛔ THE READ IS NOT COMPLETE, AND r4083 SAID IT WAS.** *Measured at r4087: about 65 of 243 body lines, 27%.
+> `The anchor` was never opened.*
+
+> **▣ Abstract cut 1450 → 460 words; the Atiyah passage and its receipt
 > relocated first, and one orphaned citation restored.*
 
 ### the-claim-is-a-recognition-not-an-addition
@@ -1293,7 +1316,12 @@ note to self carries the same risk and matches no keyword. **A comment sweep is 
 # P13 · `corpus/boundary_paper.tex`
 ### *The boundary: colour is not a substrate isometry, and what the two real forms do carry*
 
-> **▣ THE READ IS COMPLETE** *(r4085). P13 is the theoretical half of the first application pair, and carries
+> **⛔ THE READ IS NOT COMPLETE, AND r4085 SAID IT WAS.** *Measured at r4087: about 140 of 351 body lines, 38%.
+> Never opened: the 143-line `What stays open`, the 45-line `What it means for the programme`, and **two of the
+> three closed routes** — `The cascade rank-map` and `The $A_2/S_3$ skeleton`. **The entry below asserting
+> "three converging routes" rests on the abstract, not on reading them, and is unverified.***
+
+> **▣ P13 is the theoretical half of the first application pair, and carries
 > its own synthesis because its chain reaches back through P3, P5 and P7--P12. **Its abstract needed no cut**
 > — 1102 words with nothing living only there — the second paper of the thirteen for which that was true.*
 
