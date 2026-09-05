@@ -1963,6 +1963,26 @@ note to self carries the same risk and matches no keyword. **A comment sweep is 
 ⑤ JOINS — `THE_PLAN` (the one-state rule, corpus-wide).
 ⑥ NOT OP FOR — **⛔ And a declared count disagreed with its own enumeration**: the header read *"the ten edges dug"* over **twelve** listed. *A count that does not match the list beneath it is the failure the corpus checks for elsewhere with a gate, met here by reading.* **⛔ AND THE FORMULA THE CORPUS ERADICATED FROM ITS PAPERS WAS STILL LIVE IN TWO INSTRUMENTS** — *"coherence, not correspondence"* in the map's altitude line, and both halves of it in `INTRODUCTION.md`'s register paragraph, *"self-consistency is not soundness"* included. **Both restated to the scope actually meant**: the structures are *forced within CR*, and a framework declining that principle is not obliged to accept them — which is a statement about this corpus, where the formula was a defect asserted of any physics paper at all.
 
+
+# L8 · `THE_OPEN_PROBLEMS_LEDGER.md`
+### *The complete unfiltered list of what is unfinished — and the instrument that keeps it current*
+
+### the-design-is-right-and-the-generator-did-not-match-its-own-register
+① CLAIM — **The ledger's design answers staleness properly**: *the body stops at a declared baseline, and the head is **regenerated** rather than written* — because a document like this "will go stale every ~20 revisions forever, because of what it is." The generator names both id-spaces as sources and states the reason in its own comment: *a currency block that reads only one of them cannot report the other's movement.*
+② REGISTER — **INSTRUMENT**, body frozen at baseline `r2417`, head machine-generated, prose half hand-written and marked as a judgement.
+③ HOME — `THE_OPEN_PROBLEMS_LEDGER.md`; `scripts/regen_grain_currency.py`.
+④ ANCHOR — the generator.
+⑤ JOINS — `THE_REGISTER` · `THE_FRONTIER` · Phase 3.
+⑥ NOT OP FOR — **⛔ IT READ THE REGISTER AND MATCHED NONE OF ITS ROWS.** *The row pattern required the id to be its own first cell (`| **PO-13** |`); the register's **live** rows put the id and its text in one cell, and its **struck** rows wrap the id twice.* **So the generator ran, found zero `PO` rows, and emitted a head enumerating only `L-` ids — silently, and looking like a complete answer.** *Repaired `r4149`: struck rows go 141 → 166, opened 115 → 137, and eleven `PO` ids appear that never had.*
+
+### a-live-row-with-no-stamp-was-invisible-and-the-fix-was-not-to-guess
+① CLAIM — **⛔ A second filter sat behind the first.** Four live rows — `PO-13`, `PO-23`, `PO-25`, `PO-26`, and two `L-` rows — carry **no `OPENED r####` stamp of any spelling**, so they classified as neither opened nor struck and appeared in no list. *A row that exists and is reported nowhere is exactly what a complete-and-unfiltered list exists to prevent, and it is worse than a missing row because the instrument still reports a total.*
+② REGISTER — **⛔ REPAIRED `r4149`, and the first repair was withdrawn.**
+③ HOME — `scripts/regen_grain_currency.py`.
+④ ANCHOR — the generator's own stderr report.
+⑤ JOINS — `THE_REGISTER` · Phase 3.
+⑥ NOT OP FOR — **⛔ THE FIRST FIX INFERRED THE OPENING FROM THE EARLIEST REVISION THE ROW NAMED, AND THAT IS A GUESS THAT FAILS WHERE IT MATTERS.** *`PO-25`'s earliest named revision is a **closure it cites** — "Kerr half closed `r2378`" — not its opening, so the inference filed a live post-baseline row as pre-baseline.* **Replaced with a report**: an unstamped live row is named as unstamped and not dated. ***A wrong date is less honest than a named gap, because it looks like knowledge.***
+
 ---
 
 ## THE FRONTIER GATHER

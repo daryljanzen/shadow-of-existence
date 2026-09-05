@@ -74,20 +74,48 @@ PROSE_BEGIN = '<!-- GRAIN-CURRENCY:PROSE -->'
 def rows():
     """(id, struck, [revisions mentioned]) for every register row"""
     out = []
+    unstamped = []
     lines = []
     for reg in REGISTERS:
         if os.path.exists(reg):
             lines += open(reg, encoding='utf-8', errors='replace').read().split('\n')
     for line in lines:
-        m = re.match(r'^\|\s*(?:\*\*|~~)((?:L|PO)-\d+)(?:\*\*|~~)\s*\|', line)
+        # ⛔⛭ ** THE PATTERN DID NOT MATCH THE REGISTER'S OWN ROWS -- repaired r4149. **
+        # *It required the id to be its own first cell (`| **PO-13** |`).  `THE_REGISTER`'s LIVE rows
+        # put the id and its text in the SAME cell (`| **PO-13** **THE DRIVING...**`), and its STRUCK
+        # rows wrap the id twice (`| ~~**PO-14**~~ |`).  Neither form matched, so this script read the
+        # register, found no PO rows at all, and emitted a currency head enumerating only `L-` ids --
+        # **silently, and looking like a complete answer.**  `THE_OPEN_PROBLEMS_LEDGER` is the document
+        # Phase 3's complete-and-unfiltered list is drawn from, and it carried none of `PO-21`..`PO-31`.*
+        #   ⇒ *The id is now taken from the first cell however it is decorated, and the trailing `\|` is
+        #     dropped because a one-cell row is a legitimate row shape here.*
+        m = re.match(r'^\|\s*(?:~~|\*\*)+((?:L|PO)-\d+)(?:~~|\*\*)+', line)
         if not m:
             continue
         struck = line.lstrip().startswith('| ~~')
         opened = [int(r) for r in re.findall(r'\b(?:REGISTERED|FOLDED|OPENED)\s+r(\d{4})', line)]
         if not opened and not struck:
             opened = [int(r) for r in re.findall(r'\bopened\s+r(\d{4})', line)]
+        # ⛔⛭ ** AND A LIVE ROW WITH NO OPENED-STAMP WAS INVISIBLE -- repaired r4149. **
+        # *`PO-13`, `PO-23`, `PO-25` and `PO-26` are live rows carrying no `OPENED r####` of any
+        # spelling, so they classified as neither opened nor struck and appeared in no currency
+        # list.  ** A row that exists and is reported nowhere is exactly the failure a
+        # complete-and-unfiltered list exists to prevent, and it is worse than a missing row
+        # because the instrument still reports a total. **
+        #   ⛔ *A first attempt INFERRED the opening from the earliest revision the row names, and that
+        #     is a guess that goes wrong exactly where it matters: `PO-25`'s earliest named revision is
+        #     a CLOSURE it cites (`Kerr half closed r2378`), not its opening, so the inference filed a
+        #     live post-baseline row as pre-baseline.*
+        #   ⇒ *** An unstamped live row is REPORTED AS UNSTAMPED, not dated by inference.  The
+        #       instrument's job is to make every row visible, and a wrong date is less honest than a
+        #       named gap -- it looks like knowledge. ***
+        if not opened and not struck:
+            unstamped.append(m.group(1))
         killed = [int(r) for r in re.findall(r'\bSTRUCK\s+r(\d{4})', line)]
         out.append((m.group(1), struck, opened, killed))
+    if unstamped:
+        sys.stderr.write('  unstamped live rows (reported, not dated): '
+                         + ' '.join(sorted(set(unstamped))) + '\n')
     return out
 
 
