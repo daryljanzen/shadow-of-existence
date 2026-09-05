@@ -330,9 +330,10 @@ an accident of arrangement, and the matrix is how you find your own way in.
 
 ## 3 · The scope — what is claimed, and at what weight
 
-**The register.** Most of what the corpus establishes is **coherence, not correspondence**: the structures are
-forced *within* CR, and self-consistency is not soundness. That distinction is load-bearing throughout, and the
-discipline it rests on is P6 rather than a preface.
+**The register.** Most of what the corpus establishes is **forced within CR** — the structures follow from
+the maximal-symmetry principle that defines the programme, and a framework declining that principle is not
+obliged to accept them. That scope is what each result is stated at, and the discipline it rests on is P6
+rather than a preface.
 
 **What is settled.** The forcing arguments; the substrate's geometry and its slicing structure; the operator's
 range; the constraint algebra's identification; three chiral generations on the discrete residue; the expansion

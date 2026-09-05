@@ -1935,6 +1935,34 @@ note to self carries the same risk and matches no keyword. **A comment sweep is 
 ⑤ JOINS — [[p15-cr-cosmology]] · [[p16-cosmogenesis]] · [[p7-cr-framework]].
 ⑥ NOT OP FOR — **⛔ The frontier's count moved the RIGHT way and that is the point of keeping it generated.** PO-13 was scoped at **1 step, kind READ, 3 turns** — an estimate made when the diagnosis looked answered. It is now **2 steps, kind BUILD**, because *the driving subtraction measures the size and a mechanism for the deficit is a second result, not the same one*. **The frontier reads 11 steps against 10, marked $\uparrow1$** — *a list of what is unfinished getting longer when a claim is withdrawn is the instrument working, and a list that only ever shrinks is the one to distrust.*
 
+
+# L7 · `THE_EVOLUTION_MAP.md`
+### *Working in paper N, what may I stand on and what may I not yet assume*
+
+### the-twelve-paper-to-paper-edges-and-the-duck-catalogue
+① CLAIM — **The map carries the corpus's cross-paper join catalogue, and it is the thing a synthesis most needs from it.** The seventeen forcings held against each other, the $P_i\leftrightarrow P_j$ edges hunted at both endpoints and at source — **twelve of them, and every candidate resolves to ALREADY-DRAWN or DUCK, with no forced-undrawn edge.** *And the ducks are catalogued as ducks*: unforced conjectures verified held honestly at every endpoint, the world-correspondence of the three-fold among them.
+② REGISTER — **CATALOGUE**, each edge dug at both endpoints rather than inferred from one.
+③ HOME — `THE_EVOLUTION_MAP.md`, the edge section.
+④ ANCHOR — the edges' own endpoints.
+⑤ JOINS — every paper; this is the join map the harvest's ⑤ field parallels.
+⑥ NOT OP FOR — **The DUCK dispositions are the load-bearing half.** *P15's no-B-modes against P11's graviton, P10's graviton tower against P15's background scale factor, P8's density planes against P14's physical walls — each is a pair a synthesis would be tempted to join, and each is separated at source for a stated reason.* **A distillation that draws those edges would be manufacturing a unification the corpus declined.**
+
+### an-instrument-that-says-read-before-standing-on-a-result-was-warning-off-a-result-the-paper-had-established
+① CLAIM — **⛔ The map's own job is to say what may be stood on, and one entry warned against something P10 now establishes.** It carried the counterterm degeneracy as *"a statement about a class of **fixed** backgrounds — do not stand on it in the coupled sector."* **P10's own text says the opposite**: the deficit of the three quadratic invariants is exactly the Weyl-squared invariant, *every* Friedmann geometry is conformally flat for *every* scale factor, and because that is **an identity holding pointwise rather than an evaluation on a chosen class, it survives superposition and descends to the quantized sector as an operator relation** — *"the coupled sector never required a class of fixed backgrounds, because the statement was never made by evaluating on one."*
+② REGISTER — **⛔ CORRECTED at `r4147`; now marked standable in the coupled sector**, with what maximal symmetry *did* buy named as the weaker thing that does not survive.
+③ HOME — `THE_EVOLUTION_MAP.md`, the standable/withdrawn section.
+④ ANCHOR — P10's own argument.
+⑤ JOINS — [[p10-canonical-time]] · [[p17-geometric-core]] · [[p11-dynamics]].
+⑥ NOT OP FOR — *The failure direction is the unusual one and worth naming*: **an instrument being too conservative is still an instrument giving the wrong answer.** A node reading it would have declined a result the corpus holds — the mirror of the census carrying a claim the corpus had measured against, and the same defect at the opposite sign.
+
+### the-map-is-not-a-narration-map-and-was-narrating
+① CLAIM — The map is a whole-corpus instrument and must stand in final form: **no pass reporting, no build metrics, no revision-history narration** — that belongs in the consolidation plan. It carried a *"PASS 2 COMPLETE"* stamp, a *"PASS 3 — THE DEEP LEARN"* heading with *"zero corpus edits"*, a *"what it adds to the running total"* line, and *"what Pass 3 confirms."* **The content underneath was the edge catalogue and is kept entire**; only the framing is restated to say what the section *is*.
+② REGISTER — **⛔ FORM CORRECTED at `r4147`, content untouched.**
+③ HOME — `THE_EVOLUTION_MAP.md`, the tail.
+④ ANCHOR — none.
+⑤ JOINS — `THE_PLAN` (the one-state rule, corpus-wide).
+⑥ NOT OP FOR — **⛔ And a declared count disagreed with its own enumeration**: the header read *"the ten edges dug"* over **twelve** listed. *A count that does not match the list beneath it is the failure the corpus checks for elsewhere with a gate, met here by reading.* **⛔ AND THE FORMULA THE CORPUS ERADICATED FROM ITS PAPERS WAS STILL LIVE IN TWO INSTRUMENTS** — *"coherence, not correspondence"* in the map's altitude line, and both halves of it in `INTRODUCTION.md`'s register paragraph, *"self-consistency is not soundness"* included. **Both restated to the scope actually meant**: the structures are *forced within CR*, and a framework declining that principle is not obliged to accept them — which is a statement about this corpus, where the formula was a defect asserted of any physics paper at all.
+
 ---
 
 ## THE FRONTIER GATHER
