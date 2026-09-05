@@ -3,7 +3,7 @@ kind: REFERENCE
 name: physical-values-ledger
 job: What does the corpus compute, under which conventions? Read WHEN QUOTING A VALUE.
 class: whole-corpus-instrument
-current: r2671+c54.210
+current: r4139
 ---
 
 > **▣ REFERENCE — §1w, the physical values, and part of the corpus.**
@@ -40,6 +40,37 @@ horizon on this reading**. Quote the number with that attached or not at all.*
 a pure power of $1/\alpha^{2}$, so on the admitted background family the counterterm basis is one-dimensional.*
 
 ---
+
+## ⛔⛭ THE WHOLE ACOUSTIC BLOCK PREDATES TWO CORRECTIONS — r4139, and this banner is the first thing to read
+
+> ***This file's own job is to be read before a value is quoted, so the state of its acoustic figures belongs
+> at the top of it rather than inside them.*** **Every acoustic number below was produced before both of the
+> corrections that bear on all of them**, and the annotation beneath — which withdrew four quantities and let
+> one survive — was written against neither.
+>
+> ⛔ ***The rate.*** *`LEAFPERT` became the default at `r3409`, moving the perturbations onto the leaf
+> congruence, which is what the rate rule assigns them and which **carries a radiation term**. Every figure
+> below was computed on the stacking rate.*
+>
+> ⛔ ***The wavenumber integral.*** *`r3870` found it truncated where it is not converged and repaired it on
+> the **control arm only**, saying so explicitly. `r3899` suspended every CR figure that rested on it.*
+>
+> ⇒ ***So the four withdrawals below are correct and their grounds are superseded, and the ONE SENTENCE THEY
+> LET SURVIVE — that the acoustic spacing is reproduced and is the one thing that does not move — is itself
+> among the quantities the converged transfer is run to measure.*** *It is not asserted here.*
+>
+> ⌗ ***What IS measured, on the calibrated polarisation path at converged wavenumber on the leaf***: the
+> control returns $P_1/P_2 = 2.196$ at peaks $220/540/812$, against a standard code's $2.200$ — so the
+> instrument is calibrated in the configuration the CR number is taken in. On that path this construction's
+> arm returns peaks $204/524/828/1196$, $\ell_1/\ell_A = 0.6764$, $P_1/P_2 = 1.759$, $P_1/P_3 = 1.612$, with
+> $\mathrm{KFAC}$ $2.0$ and $3.0$ agreeing to every digit. **The height deficit is therefore real and is
+> neither the truncation nor the projection path**, both of `r3870`'s instrument faults being removed there.
+> *No mechanism for it is in hand, and the account the superseded text gives is separately refuted: on the
+> leaf rate the first peak's mode IS driven, so "the comb is undriven" cannot be the reason.*
+>
+> ⌗ *The `2.26×` first-peak span named below is one of the suspended figures — measured pre-`r3409` on the
+> stacking clock, its own text giving it away by naming "the peak near 172". It was removed from P15 and P7
+> at `r4135` and is left here only as the withdrawn quantity it was.*
 
 ## ⚠⚠ THE ACOUSTIC FIGURES BELOW ARE SUPERSEDED — annotated r2517, not erased
 >

@@ -1795,6 +1795,59 @@ note to self carries the same risk and matches no keyword. **A comment sweep is 
 ⑤ JOINS — [[p16-cosmogenesis]] (**which reaches the same line from the other side on a different ground: what a handover carries is what a conservation law protects**) · [[p15-cr-cosmology]] · [[p7-cr-framework]].
 ⑥ NOT OP FOR — **Two independent reasons, agreeing**: *the ratio is not carried because it is not constant along either leg, and it is not carried because the crossing destroys what would have fixed it.* **⛔ And this is the entry that shows the corpus retiring one of its own open problems by proving it unaskable rather than by answering it** — the shape the synthesis should carry, since a list of frontiers whose entries quietly empty is worse than none.
 
+
+---
+
+# ═══ PHASE 2 · THE LEDGERS AND INSTRUMENTS ═══
+### *Same six fields, same standard. These carry results the papers **cite and do not restate**.*
+
+> **⌗ THE SURFACE, MEASURED BEFORE IT WAS READ** *(r4137). 36 ledger files, 24,338 lines, plus the census
+> (747), the evolution map (1,253), the open-problems ledger (1,845), the register (88) and the frontier
+> (63) — some 26,500 lines against Phase 1's ~10,000 of paper body. **The reconciliation is clean in one
+> direction**: all 23 field keys the papers cite with `\ldg{}` have a ledger behind them, no dangling marker
+> anywhere. **Two field ledgers are cited by no paper**: convexity/optimisation, whose own forward records a
+> bounce, and graph theory — see below.*
+
+---
+
+# L1 · `PHYSICAL_VALUES_LEDGER.md`
+### *What the corpus computes, under which conventions — the file to read before quoting a value*
+
+### the-background-is-two-numbers-and-one-of-them-is-measured-calibration-free
+① CLAIM — **The whole background is two parameters and the ledger derives everything else from them.** The rate is $H^2(r)=2M/r^3+\Lambda/3$ — *two terms and no third, because the vacuum kernel's entire solution space is the SdS family, so **there is no slot for content in the rate***. The reassignment's forcing to Nariai then **removes the mass**: $\Lambda M^2=\tfrac19$ gives $M=1/3\sqrt\Lambda$ and $r_N=1/\sqrt\Lambda$, *both fixed by $\Lambda$ alone*, where a general SdS carries the two independently. In the natural variable $x=r/r_N$ the background is $H^2(x)=(\Lambda/3)(1+2/x^3)$: **$\Lambda$ the scale and dimensionful, $x_0$ the epoch and dimensionless, with the *shape* of $H(z)$ depending on $x_0$ alone.**
+② REGISTER — **DERIVED**, with $x_0=1.6648\pm0.0467$ **measured calibration-free** from the DESI DR2 distance ratio — *nothing borrowed*, no distance ladder and no microwave background.
+③ HOME — `PHYSICAL_VALUES_LEDGER.md` §0, §0.1.
+④ ANCHOR — the ledger's own.
+⑤ JOINS — [[p8-slicing-operator]] (**the kernel theorem is why there is no third term**) · [[p15-cr-cosmology]] · [[p17-geometric-core]] (the one-scale ledger).
+⑥ NOT OP FOR — *This is the quantitative face of the corpus's one-scale claim, and it is the reason the cosmology has nothing to tune*: $\Lambda$ is an overall factor and $x_0$ is measured, so **neither is available as a knob.**
+
+### the-values-ledger-carried-a-superseded-block-and-its-own-job-is-to-be-read-first
+① CLAIM — **⛔ The file's stated job is to be read before a value is quoted, and its entire acoustic block predates both corrections that bear on it.** Every acoustic figure in it was computed before `r3409` moved the perturbations onto the leaf congruence — the rate the rule assigns them, and the one carrying a radiation term — and before `r3870` found the wavenumber integral truncated and repaired it **on the control arm only**, `r3899` suspending every CR figure resting on it. *The block's own annotation withdrew four quantities and let one survive; it was written against neither correction.*
+② REGISTER — **⛔ A CURRENCY DEFECT IN AN INSTRUMENT, corrected r4139**, not a claim about the physics.
+③ HOME — `PHYSICAL_VALUES_LEDGER.md`, the banner.
+④ ANCHOR — none; the corrections' own.
+⑤ JOINS — [[p15-cr-cosmology]] · [[p7-cr-framework]] · `PO13_WORKING_STATE.md`.
+⑥ NOT OP FOR — **⛔ AND THE ONE SENTENCE THE OLD ANNOTATION LET SURVIVE IS ITSELF NOW IN QUESTION** — that the acoustic spacing is reproduced and *is the one thing that does not move*. It is among the quantities the converged transfer is run to measure and is **not asserted**. *What is measured, on the calibrated polarisation path at converged wavenumber on the leaf*: the control returns $P_1/P_2=2.196$ at $220/540/812$ against a standard code's $2.200$, **so the instrument is calibrated in the configuration the CR number is taken in**; on that path this construction returns $204/524/828/1196$, $\ell_1/\ell_A=0.6764$, $P_1/P_2=1.759$, $P_1/P_3=1.612$, at two cutoffs agreeing to every digit. **So the height deficit is real and is neither the truncation nor the projection**, both instrument faults being removed there — *and no mechanism for it is in hand.*
+
+# L2 · `GRAPH_THEORY_LEDGER.md`
+### *The graph-theory / percolation field bake — one genuine contact*
+
+### the-one-place-the-corpus-argues-graph-theoretically-it-argues-correctly
+① CLAIM — P3's causal trichotomy on the six hinge-ends **is a complete edge-3-colouring of $K_6$**: timelike-if-same-hinge is a perfect matching, spacelike-if-same-horn is two triangles, and the null relation is the hexagon P3 already names. Deleting the matching leaves the octahedron $K_{2,2,2}$, whose antipodal pairs are the three hinges. **And the load-bearing check is that the null relation is *one hexagon and not two triangles*** — verified by **walking** it rather than asserting it: from any end the walk returns to its start after exactly six steps, visiting six distinct vertices.
+② REGISTER — **RECOMPUTED from P3's own formula; the naming is what is new, not the physics.**
+③ HOME — `GRAPH_THEORY_LEDGER.md` G1; cited from P3 at `r4137`.
+④ ANCHOR — `receipts/L831_graph_theory/G1`.
+⑤ JOINS — [[p3-sds-slicing]] · [[p14-matter-sector]] · [[p12-algebroid]].
+⑥ NOT OP FOR — **⛔ THE CORPUS COULD NOT HAVE CITED THIS, AND THAT IS THE FINDING.** P3 makes the hexagon claim in printed text and carried no marker to the ledger that checked it; adding one made the appendix generator **refuse**, because the field was registered in the survey and **not in the index the appendix reads**. *The marker would have resolved to nothing — a dangling link in the built PDF, silent in the source, which is what that generator exists to prevent.* **A field bake nobody can cite is a result the corpus has not taken up.**
+
+### the-2026-theorem-misses-and-the-hypothesis-that-binds-is-not-transitivity
+① CLAIM — **⛔ A negative, and the description the corpus was working from was wrong.** The 2026 sharpness result's conclusion is governed by the **isoperimetric function**, not merely by transitivity — the lattice is replaced by $\Phi$. The corpus's graphs **pass** the transitivity hypothesis and **fail** infiniteness; and structurally, since $\Phi(|V|)=0$ on a finite graph, *the conclusion is **empty** there rather than unavailable.*
+② REGISTER — **READ AT SOURCE**, correcting the second-hand description both lines held.
+③ HOME — `GRAPH_THEORY_LEDGER.md` G3, G4.
+④ ANCHOR — `receipts/L831_graph_theory/G4`.
+⑤ JOINS — [[p7-cr-framework]].
+⑥ NOT OP FOR — **And the P7 parallel is declined**: percolation replaces its scaffold with a quantity the conclusion names, where P7 deletes a hypothesis and the conclusion is unchanged. *A shared shape, not a shared mechanism* — the distinction the bake was thrown to test, answered in the negative.
+
 ---
 
 ## THE FRONTIER GATHER
