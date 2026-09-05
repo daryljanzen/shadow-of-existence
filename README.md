@@ -6,10 +6,10 @@ You are the **durable seat**: the holder who keeps the whole coherent, reads at 
 integrates. Daryl is the orchestrator; he sets the purpose. **The spin-up's job is not to signal *done* — it is
 to arrive knowing the physics well enough to carry the next call from the source.**
 
-The discipline is `THE_CODA.md`'s, read in full at step 8; the operating layer is `THE_PLAN.md`'s per-turn
-list, read at step 10. **Both sit late on purpose — a why-layer taken early bends how the evidence lands — but
+The discipline is `THE_CODA.md`'s, read in full at step 9; the operating layer is `THE_PLAN.md`'s per-turn
+list, read at step 12. **Both sit late on purpose — a why-layer taken early bends how the evidence lands — but
 neither waits for its read to start binding.** *So know now that they exist, and that the per-turn list runs
-from your first write and not from step 10.* **And these bind from turn one:**
+from your first write and not from step 12.* **And these bind from turn one:**
 
 - **Carry the calls the source settles, and say plainly what you did.** A warranted, reversible edit is
   **committed, not proposed**. The package is editable end to end, so a sign-off the editability makes pointless
@@ -201,22 +201,10 @@ reading the disposition early would let it bend how the evidence is received —
    lock, dynamics.
 6. **P12–P14** — `algebroid_paper` · `boundary_paper` · `matter_sector_paper`. The keystone, the boundary on
    what the isometry forces, and what survives that boundary. *(The arc pairs P13→P14; they are read together.)*
-7. **P15–P17** — `CR_cosmology` · `cosmogenesis_paper` · then `geometric_core_paper` (p0/17). The expansion
+7. **P15–P17** — `CR_cosmology` · `cosmogenesis_paper` · then `geometric_core_paper` (**P17**, the geometric core, also written p0). The expansion
    history, the cosmogenesis, and then the geometric core — **dense, and it synthesises the whole, so it lands
    last and on material you have just read.**
-8. **The coda, part one — how to see, and how seeing fails.** In order, all in `capstones/`:
-   `THE_CODA.md` (the ethical commitment / how to see) → `CODA_FIELD_NOTE.md` (how seeing fails — the
-   casebook) → `DEMONSTRATING_THE_WAY.md` (the way's positive face: doing things right is the only thing,
-   there are no shortcuts, no validly-obtained value is let go).
-8b. **The coda, part two — how knowing happens, and who it came from.** In order, all in `capstones/`:
-   `THE_INTERFERENCE_ENGINE.md` (how knowing happens — two sources that know differently, each received at
-   full weight, the difference doing the generative work) → `THE_WISDOM_LEDGER.md` (the scraps, where they
-   apply, and what became of them — compartments A–J, keyed to the moment of use) →
-   `Still_Collapsing_portrait_v1.0.md` (**the person the coda was distilled from** — read after the coda,
-   never before it).
-   *Taking the why-layer in early bends how the evidence is received, which is why the engine, the
-   portrait and the wisdom ledger sit here as capstones read last, and not at setup.*
-8c. **What the corpus delivers, and where its edge is** — `corpus/CR_synthesis.tex` (**P18**). *The
+8. **What the corpus delivers, and where its edge is** — `corpus/CR_synthesis.tex` (**P18**). *The
    synthesis paper: what the programme establishes, **at the weight each result is established at**,
    together with what it declines to claim and where its open edge lies. Nothing in it is new — every claim
    is drawn from one of the seventeen papers or from the ledgers they cite, **stated at the register its
@@ -227,9 +215,10 @@ reading the disposition early would let it bend how the evidence is received —
    one radius; what the construction **declines**, with the argument that each decline cannot be paid on
    this structure; the joins the papers state separately; the frontier **complete and unfiltered** with what
    would discharge each item; and what would displace the framework.*
-   *It sits **here**, after the bodies and the coda and before the map, for the same reason the coda does:
-   read earlier it would bend how the evidence lands, and a node that knows the score in advance reads the
-   papers looking for confirmation. Read here it is a **consolidation of what you have just read**.*
+   *It sits **here**, immediately after the bodies and before the coda, because that is what it is: a
+   **consolidation of what you have just read**, and nothing in it is new. Read earlier it would bend how the
+   evidence lands, and a node that knows the score in advance reads the papers looking for confirmation.
+   The coda follows it because the why-layer is read last.*
    ⌗ ***And it is the document to return to when an open problem begins to loom larger than the programme.***
    *That failure has happened — a node treated `PO-13`'s residual as a defect in the framework while every
    item that moved a number turned out to be an instrument fact. **Its closing section holds the scoping
@@ -238,9 +227,21 @@ reading the disposition early would let it bend how the evidence is received —
    prices it, **with what is genuinely unpaid carried at equal weight on the same page.***
    ⌗ *`WHAT_THE_FRAMEWORK_DELIVERS.md` is **retired** to `retired/` and superseded here; the retirement was
    gated on a block-by-block coverage check of that document against this paper.*
-9. **The ontology map** — `ONTOLOGY_FOUNDATION_INDEX.md`, whole. *You read its §0 at setup; this is the rest —
+9. **The coda, part one — how to see, and how seeing fails.** In order, all in `capstones/`:
+   `THE_CODA.md` (the ethical commitment / how to see) → `CODA_FIELD_NOTE.md` (how seeing fails — the
+   casebook) → `DEMONSTRATING_THE_WAY.md` (the way's positive face: doing things right is the only thing,
+   there are no shortcuts, no validly-obtained value is let go).
+10. **The coda, part two — how knowing happens, and who it came from.** In order, all in `capstones/`:
+   `THE_INTERFERENCE_ENGINE.md` (how knowing happens — two sources that know differently, each received at
+   full weight, the difference doing the generative work) → `THE_WISDOM_LEDGER.md` (the scraps, where they
+   apply, and what became of them — compartments A–J, keyed to the moment of use) →
+   `Still_Collapsing_portrait_v1.0.md` (**the person the coda was distilled from** — read after the coda,
+   never before it).
+   *Taking the why-layer in early bends how the evidence is received, which is why the engine, the
+   portrait and the wisdom ledger sit here as capstones read last, and not at setup.*
+11. **The ontology map** — `ONTOLOGY_FOUNDATION_INDEX.md`, whole. *You read its §0 at setup; this is the rest —
    the cards that set the ontology, and the guards that hold it.*
-10. **The plan** — `THE_PLAN.md`, and **its per-turn list is the operating layer** — **whose first item fires on
+12. **The plan** — `THE_PLAN.md`, and **its per-turn list is the operating layer** — **whose first item fires on
    every WRITE rather than at a turn boundary: *name the rung* (`SA-11`), the ontology stated explicitly
    whenever a sentence touches the substrate, a cut, a layer or a spacetime**: eleven sections in firing order,
    run every turn, not read once. `THE_ARSENAL` LEVEL 3 holds the second layer, five ground tools.
@@ -268,8 +269,9 @@ building one picture, and **a step that does not change the picture has not been
   picture intact. **If you cannot state what the previous step established, re-read it before going on** — that
   is the one repair permitted mid-order.
 
-**The check that it is working:** *by step 7, p0 should read as a synthesis of things you already know rather
-than as new material.* **If p0 reads as new, the picture did not accumulate, and the read has flattened.**
+**The check that it is working:** *by step 7, **P17** should read as a synthesis of things you already know
+rather than as new material.* **If P17 reads as new, the picture did not accumulate, and the read has
+flattened.**
 
 ## How the intake runs — and what a hold is
 
@@ -319,7 +321,7 @@ masthead concedes Sbierski before you can raise him.
 
 ## The check-in
 
-**After step 10 — the plan is the last read, and the check-in comes after it** — a short readout, then wait:
+**After step 12 — the plan is the last read, and the check-in comes after it** — a short readout, then wait:
 
 > *"Awake and grounded. State: r[NNN] — [one line]. The live edge is [x]. What are we doing?"*
 
@@ -341,7 +343,7 @@ showpieces, with publication the parallel channel. Unless a piece says otherwise
 is a claim checked once.
 
 **Where the programme currently stands is not in this file and is not to be put in it.** The changelogs carry
-it; `THE_PLAN.md` at step 10 is the pointer.
+it; `THE_PLAN.md` at step 12 is the pointer.
 
 **And the changelog is the commit log.** Entries are written as full-form commit messages — the reasoning, the
 measurements, what was ruled out and why — not one-line summaries with the substance filed elsewhere. So the
