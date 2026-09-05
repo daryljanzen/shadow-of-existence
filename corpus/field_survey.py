@@ -122,6 +122,18 @@ FIELDS = [
     ('functional analysis / operator theory', 'FUNCTIONAL_ANALYSIS_LEDGER.md',
      ['Hilbert space', 'Banach', 'bounded operator', 'unbounded', 'domain', 'closure',
       'dense', 'norm', 'inner product', 'unitary']),
+    # ⛭ r4068 (node 60): GRAPH THEORY, thrown at r4009 and baked at r4068.
+    #   ** The omission this row closes was STRUCTURED, not accidental: `probability /
+    #   stochastic processes` is in this table and WAS baked, so the field percolation lives
+    #   inside was surveyed while the graph-theoretic question was never put. **
+    #   ⌗ *The terms are chosen to be the ones that CANNOT be inflated by this corpus's ordinary
+    #   physics senses.  `graph`, `edge`, `node`, `tree`, `path` and `critical` are deliberately
+    #   ABSENT from the list: the R0 baseline measured `edge` x143 with 51 inside longer words
+    #   (mostly `wedge`) and `critical` x236 with 154 inside longer words, and a survey term that
+    #   reports a field the corpus does not have is worse than no term.*
+    ('graph theory / percolation', 'GRAPH_THEORY_LEDGER.md',
+     ['percolation', 'vertex-transitive', 'isoperimetric', 'adjacency', 'bipartite',
+      'chromatic', 'spanning tree', 'automorphism group', 'clique']),
 ]
 
 #: ⛔⛭ ** AND A WORD-BOUNDED COUNT IS STILL NOT AN OPENING: FOUR OF THE TOP SEVEN WERE HOMONYMS. **

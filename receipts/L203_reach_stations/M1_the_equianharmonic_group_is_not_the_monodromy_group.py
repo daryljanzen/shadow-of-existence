@@ -114,12 +114,16 @@ def main():
     #     not the paper."*  This is the next ring out -- it reached the paper and not the receipts.
     check('P5: "this monodromy group is equally the Galois group of the horizon cubic, one $S_3$ '
           'worn as monodromy, Weyl, and Galois symmetry alike"',
-          'this monodromy group is equally the Galois group of the horizon cubic' in p5
+  # ⛭ r4070: 61's P5 pass reworded this sentence -- "this monodromy group is equally the
+          #   Galois group of the horizon cubic" -> "which is equally the Galois group of THAT
+          #   cubic", and "deck group trivial" -> "trivial deck group".  *Content identical;
+          #   the pins spanned the words that changed.*  Re-pinned to the invariant clauses.
+          'which is equally the Galois group of that cubic' in p5
           and 'one $S_{3}$ worn as monod' in p5)
     check('⛭ and the paper calls the DECK group TRIVIAL, so the word the old pin used named the one '
           'group that does NOT carry the property -- which is this file\'s own thesis, met in its '
           'own pin',
-          'deck group trivial' in p5
+          'trivial deck group' in p5
           and 'this deck group is equally the Galois group' not in p5)
     check('and the monodromy group of a branched cover is the Galois group acting on its sheets',
           'monodromy group of a branched cover is the Galois group' in p5)

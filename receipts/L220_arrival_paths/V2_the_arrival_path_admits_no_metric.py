@@ -110,8 +110,17 @@ def main():
     check(f'routes 2+3 alone flag 20 (found {len(n23)})', len(n23) == 20)
 
     _, n123 = sweep({'proof', 'inbody', 'decl'})
-    check(f'adding route 1 -- the proof environment -- cuts it to 7 (found {len(n123)})',
-          len(n123) == 7)
+    # ⛭ r4070: THE COUNT MOVED 7 -> 6 UNDER 61's REACH PASSES, AND THE THESIS DID NOT.
+    #   *The narrowing is the finding -- 85 labelled results, 20 flagged by routes 2+3, a handful
+    #   left after route 1, four after reading two of them.  ** The intermediate count is DATA, not
+    #   the claim: ** one of the seven acquired a proof environment when its paper was rewritten, so
+    #   route 1 now catches it and the residue is six.*
+    #   ⌗ *Per c54.226 a count is a claim about a FILE AT A COMMIT.  Measured 6 at tree
+    #   b702f932219f8f56 (this branch, after 61's r4009-r4065); it was 7 before those passes.
+    #   The check asserts the CURRENT number and the narrowing that carries the argument, so a
+    #   further move fires here rather than passing silently.*
+    check(f'adding route 1 -- the proof environment -- cuts it to 6 (found {len(n123)})',
+          len(n123) == 6)
 
     _, n4 = sweep({'proof', 'inbody', 'decl', 'tag', 'argument'})
     check(f'and routes 4 and 5, found by READING two of the seven, cut it further '

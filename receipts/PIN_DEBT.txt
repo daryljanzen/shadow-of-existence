@@ -1,5 +1,100 @@
 0
 
+⛔⛭⛭ r4074 (node 60): THE DEBT ROSE TO 2 AND THE HEAD STAYS 0, BECAUSE THE RULE SAYS SO.
+699 pass, 2 fail, 0 over timeout, 1407s, tree cad3dee2d350659e.  The ratchet fires exactly as
+built: ** "the pin debt ROSE from 0 to 2.  The baseline may only be rewritten DOWNWARD -- repair
+the receipt, do not edit the number." **  *So the number is not edited.  The head above is the
+gate's last ZERO and it stays there until the debt is back at zero.*
+
+  ⌗ THIRTEEN BROKE AND ELEVEN ARE REPAIRED (r4070, r4072).  All thirteen were main's -- 61's reach
+    passes across P2-P7 rewrote the prose these receipts pin to, and 10 of 10 tested failed
+    identically at main's head 3676228c.  The eleven came out in three classes: one RETIRED BY
+    CORRECT WORK, six REWORDED with the claim untouched, three COUNTS re-measured with their
+    provenance, one RESTORED from a destroyed ledger row, and one dependent that fixed itself.
+
+  ⛔ THE TWO THAT REMAIN ARE ONE ROOT CAUSE AND IT IS NOT REPAIRABLE FROM THIS LINE.
+    `L251/N1` asserts `check_revision_collisions.main() == 0`.  That gate is red because ** r4009 is
+    claimed by two commits -- 084722dc and d13f7295, both on main, both in the ODD half. **
+    `L261/A1` asserts N1 exits 0, so it is blocked transitively.
+      ⇒ ** The only repair is renumbering a commit on another line's history. **  *I will not do
+        that, and I will not quarantine either check to get green -- a receipt edited into silence
+        is the defect this ledger exists to count.*
+      ⌗ *Both receipts are CORRECTLY RED: they are true reports of a real, unfixed collision, and
+        both go green by themselves the moment r4009 is resolved.  ** The debt returns to zero
+        without anyone touching a receipt. ***
+    ⇒ *** THIS IS THE ONE THING BLOCKING A CLEAN SUITE, A GREEN CI CHECK, AND THIS BRANCH'S RATCHET.
+        It is 61's to resolve and it is the highest-value item on that line's plate. ***
+
+⛭⛭⛭ r4026 (node 60): 61's REWORDINGS BROKE TWO RECEIPTS, THE DIGEST CAUGHT IT, AND CI COULD NOT HAVE.
+699 pass, 0 fail, 0 over timeout, 1411s, tree 6430adffda02484e, gate rc=0, sweep 96/0/1, tree clean
+after the run.
+
+  ** THIS IS THE DIGEST EARNING ITS KEEP, ON EVIDENCE RATHER THAN ARGUMENT. **  r4020 recorded that
+  across three nodes and dozens of commits exactly TWO touched a digest-covered file, both mine, and
+  argued that a commit count or a date would have cried stale on all the others.  ** 61's r4019/r4021
+  are the third and fourth, and they are the first NOT mine. **  The digest went stale, the suite was
+  re-run because of it, and the run found two broken receipts.
+    ⇒ *** AND NOTHING ELSE WOULD HAVE FOUND THEM. ***  The `heavy` tier runs nightly ON MAIN, so a
+      branch that rewords a paper and a receipt that quotes it do not meet until after the merge.
+      The `fast` tier was GREEN on both commits the whole time.
+
+  ⌗ NEITHER IS A FINDING THAT FELL.  Both are pins that moved, and both were pinned to decoration:
+    · `L147/B10` required `equal-radii $\mathrm{dS}_{2}\times S^{2}$ throat`.  ** r4019 removed
+      exactly two words from that sentence -- `equal-radii` and `throat` -- because they are the
+      COMPANIONS' names for the object, and that pass exists to take borrowed vocabulary out of P1. **
+      *So the receipt was pinned to the one thing the pass was for.*  P1 still says the geometry is
+      $\mathrm{dS}_{2}\times S^{2}$ and still says it carries a scale of its own; c54.202's footing
+      is untouched.  Re-pinned to the geometry and the consequence.
+    · `L204/P9` required "it stands as the programme's named frontier" and "full worldline-and-field
+      development".  The first has left the corpus but for P5, plural and about something else; the
+      second MOVED TO P7.  ** Third move for this pin: r3096, r3107, r4019. **  Re-pinned to the
+      CITATION KEY `JanzenDynamics` -- *a citation is the actual link, and cannot be reworded without
+      changing what the paper does, where the sentence around it has now been rewritten three times
+      by three correct edits.*
+
+  ⛔ AND BOTH CHECKS COULD BE SATISFIED BY THE WRONG PAPER.  Each is a claim ABOUT P1 tested against
+  every paper concatenated.  ** B10's second clause would have gone on passing on P7's copy of
+  "worldline-and-field" after it left P1 entirely. **  Both now read `BH_causality_v2` on its own.
+    ⌗ *A check that can be satisfied by a paper it is not about is not testing what its label says --
+      and it fails silently in the safe direction, which is why it survived this long.*
+
+⛭⛭⛭ r4020 (node 60): THE DROPPED RECORD, RESTORED -- AND PUT IN A FILE THIS TIME.
+
+  ** WHAT WAS LOST. **  r4016 was my merge commit integrating 59's r3997-r4007 into this line, and
+  its message carried my verification of their work.  61's push routine rebased the branch onto
+  main, which discards merge commits -- git's documented behaviour without `--rebase-merges` -- and
+  reported success.  Every byte of content landed; the record of why did not.  ** It took the same
+  routine that dropped 61's own r4013. **  They caught theirs and restored it at r4015; r4016 was
+  the one still missing, and it is the only revision of mine absent from main (r3998, r4000, r4002,
+  r4004, r4006, r4008, r4010, r4012, r4014 and r4018 are all there, checked one by one).
+    ⇒ *61's r4015 states the reason this matters better than I can: this corpus's changelog IS the
+      commit log -- CORPUS_MAP's narrative stops around r3099 and everything since is read as prose
+      out of `git log`.  A silently dropped message is a silently dropped changelog entry.*
+  ⌗ SO IT GOES IN A FILE.  A commit message is the one place a record can be destroyed by a routine
+    that reports success.  This entry survives any rebase because it is content.
+
+  ** THE VERIFICATION, RE-DERIVED AT SOURCE RATHER THAN RECOPIED. **  59's r4001-r4007 read as
+  "written into the delivered side" for P13, P07 and p0, which sounds exactly like papers moving.
+  Every one of them landed in `WHAT_THE_FRAMEWORK_DELIVERS.md`, `THE_FRONTIER.md`,
+  `THE_REGISTER.md`, `RUNNING_THE_LEDGER_PASS.md` and `HANDOFF_to_60_ledger_pass.txt`, plus the two
+  instruments.  ** Zero `corpus/*.tex`.  Zero `receipts/**/*.py`.  Zero `computations/**/*.py`. **
+  So the tree digest could not have moved, and the run at 6a2f5a419b7d8f92 stayed current across
+  the merge.  *Had I assumed either way from the commit subjects I would have been wrong.*
+
+  ⛭ AND IT IS NOW A STRONGER FACT THAN THE ONE THAT WAS DROPPED.  The digest is STILL
+    6a2f5a419b7d8f92 on main at r4017 -- through 59's r3997-r4007 AND 61's r4009-r4017 -- and
+    `check_receipts_run` returns rc=0 against it.  ** The 699 pass / 0 fail / 0 over timeout verdict
+    is still the live one, two nodes and twenty revisions after it was measured. **
+
+  ⌗ WHICH IS THE CASE FOR THE DIGEST OVER ANY PROXY, AND IT IS COUNTABLE.  Across the whole span
+    from the branch point to main's head -- three nodes, five documents, two handoffs, two
+    instruments, dozens of commits -- ** exactly TWO commits touched a file the digest covers: **
+    r3996 (the L256 band seed) and r4012 (F_flat.py).  Both mine, both real.
+      ⇒ *A commit count or a date would have cried stale on every one of the others.  The digest
+        hashes what a receipt can READ, so it went stale exactly when a source check could have,
+        and at no other time -- which is what r2656 built it to do, now measured over a span with
+        three lines writing into it.*
+
 ⛭⛭⛭ r4014 (node 60): *** THE SUITE IS CLEAN AND THE RUN NO LONGER MOVES THE TREE. ***  699 pass,
 0 fail, 0 over timeout, 1528s, tree 6a2f5a419b7d8f92, gate rc=0, sweep 96/0/1.  ** And `git status`
 after the run is EMPTY **, which it has not been: r4012 stopped `F_flat.py` overwriting a tracked

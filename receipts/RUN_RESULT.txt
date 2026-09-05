@@ -1,11 +1,14 @@
 
-  RUN-ALL-RECEIPTS -- 699 registered receipt(s), 4 at a time, 600s each, each from ITS OWN DIRECTORY
+  RUN-ALL-RECEIPTS -- 701 registered receipt(s), 4 at a time, 600s each, each from ITS OWN DIRECTORY
   DECLARED LONG: C59_the_control_reproduces_camb_and_the_height_defect_was_k_truncation.py runs on 1800s, not 600s -- named, with its measured cost in the source
-  TREE-DIGEST: 6a2f5a419b7d8f92
+  TREE-DIGEST: cad3dee2d350659e
 
+    [FAIL] receipts/L251_the_numbering_collides/N1_two_lines_numbering_from_one_counter_and_a_paper_narrating_its_own_history.py  (17s)
+           ============================================================================== /   1 check(s) FAILED /     - ⓸ᶜ ⌗ and it is green as the tree stands, with those three now baselined BY NAME
+    [FAIL] receipts/L261_the_question_was_answered/A1_a_check_on_whether_a_question_is_still_open_punishes_the_answer.py  (24s)
+               OK    ⓹ ⌗ and the pinned historical fact is untouched: `N1` still records that it ROUTED the band and that the routing was withdrawn, which is a claim about commits and not about the present /   1 check(s) FAILED /     - ⓷ᵇ and both exit 0
 
-  699 pass, 0 fail, 0 over timeout, in 1528s wall
-  slowest that passed: C59_the_control_reproduces_camb_and_the_height_defect_was_k_truncation.py 1205s, P15_the_driving_is_bought_by_decay_during_oscillation.py 317s, C1_the_weyl_closure_is_generic_to_cubics_and_the_match_is_D3_alone.py 262s, H1_the_low_multipole_deficit_is_two_effects_and_the_ladder_imprint_dies_where_the_transfer_is_narrow.py 144s, I50_the_carter_constant_is_the_substrates_symmetry_and_kerrs_is_not.py 126s
+  699 pass, 2 fail, 0 over timeout, in 1407s wall
+  slowest that passed: C59_the_control_reproduces_camb_and_the_height_defect_was_k_truncation.py 1160s, P15_the_driving_is_bought_by_decay_during_oscillation.py 213s, C1_the_weyl_closure_is_generic_to_cubics_and_the_match_is_D3_alone.py 152s, H1_the_low_multipole_deficit_is_two_effects_and_the_ladder_imprint_dies_where_the_transfer_is_narrow.py 116s, I50_the_carter_constant_is_the_substrates_symmetry_and_kerrs_is_not.py 111s
 
-  Every registered receipt runs, in place, and exits 0 -- so every assertion in the
-  reproducibility layer was actually evaluated.
+  ⛔ A REGISTERED RECEIPT THAT DOES NOT RUN WHERE IT IS REGISTERED IS NOT A RECEIPT.

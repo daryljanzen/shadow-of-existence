@@ -83,6 +83,14 @@ def main():
         l for l in open(f, encoding='utf-8', errors='replace').read().split('\n')
         if not l.lstrip().startswith('%'))) for f in papers)
 
+    # ** r4022: P1 ON ITS OWN.  ** The footing below is c54.202's paragraph IN P1, and it was
+    # tested against every paper concatenated -- so a companion's copy of the words would have
+    # satisfied a claim about P1.  *A claim about one paper is tested against that paper.*
+    p1 = re.sub(r'\s+', ' ', '\n'.join(
+        l for l in open(os.path.join(ROOT, 'corpus', 'BH_causality_v2.tex'),
+                        encoding='utf-8', errors='replace').read().split('\n')
+        if not l.lstrip().startswith('%')))
+
     d, k, c = sp.symbols('delta kappa c', positive=True)
 
     # ⓵ the simple root gives a logarithm -> exponential approach
@@ -122,10 +130,21 @@ def main():
           and "degenerate Nariai member's power-law, scale-free approach" in allp)
 
     # ⓸ the three footings
-    check("⌗ c54.202's footing: the near-horizon geometry is the equal-radii dS_2 x S^2 throat, which "
-          'carries a scale of its own',
-          'equal-radii $\\mathrm{dS}_{2}\\times S^{2}$ throat' in allp
-          and 'carries a scale of its own' in allp)
+    # ** RE-PINNED r4022, AND THE PIN WAS ANCHORED ON THE ONE THING 61's r4019 EXISTED TO REMOVE. **
+    #   That pass is titled "P1's borrowed vocabulary removed: the paper is readable again by a
+    #   physicist who has read nothing else", and what it took out of this sentence is exactly
+    #   two words -- `equal-radii` and `throat` -- which are the companions' names for the object.
+    #   P1 now reads "the near-horizon geometry of the degenerate member is
+    #   $\mathrm{dS}_{2}\times S^{2}$, which carries a scale of its own".
+    #     ⇒ ** The footing is untouched: same geometry, same scale-of-its-own, same role in the
+    #       argument.  Only the borrowed words went. **  *A receipt pinned to borrowed vocabulary
+    #       is a receipt that fails the moment the corpus does the tidying it means to do -- the
+    #       pin-into-prose class, with the prose's own removal as the trigger.*
+    #   ⌗ Pinned now to the GEOMETRY and the CONSEQUENCE, which are what c54.202's footing needs.
+    check("⌗ c54.202's footing: the near-horizon geometry of the degenerate member is dS_2 x S^2, "
+          'which carries a scale of its own',
+          '$\\mathrm{dS}_{2}\\times S^{2}$' in p1
+          and 'carries a scale of its own' in p1)
     check('and it says the two readings are not reconciled there, and claims the coincidence rather '
           'than a value',
           'What is claimed is the coincidence and not a value' in allp

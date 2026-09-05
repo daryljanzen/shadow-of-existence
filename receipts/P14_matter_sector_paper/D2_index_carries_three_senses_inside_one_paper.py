@@ -134,7 +134,14 @@ w = {c: n for c, n in w.items() if n}
 print(f"    'within-state index':  {w}")
 check("the within-state label runs in SIX papers, not the one the raw search found",
       sorted(w), ['P03', 'P07', 'P12', 'P14', 'P16', 'p0'])
-check("x15 in all", sum(w.values()), 15)
+# ⛭ r4070: THE SURFACE-FORM COUNT MOVED 15 -> 14 UNDER 61's PASSES.  *The receipt's finding is
+#   that `index` carries THREE SENSES inside one paper and that sense ② is a LABEL with several
+#   surface forms -- the finding is the multiplicity, not the total.  One form went when the
+#   paper was rewritten; the three senses and the label-multiplicity are untouched.*
+#   ⌗ *Per c54.226 a count is a claim about a FILE AT A COMMIT: 14 measured at tree
+#   b702f932219f8f56, after 61's r4009-r4065; it was 15 before them.  Asserted, not relaxed,
+#   so a further move fires here rather than passing silently.*
+check("x14 in all", sum(w.values()), 14)
 check("P14 carries seven of them", w.get('P14'), 7)
 HARM = re.compile(r'harmonic\s+index', re.I)
 h = {c: len(HARM.findall(t)) for c, t in BODIES.items()}
