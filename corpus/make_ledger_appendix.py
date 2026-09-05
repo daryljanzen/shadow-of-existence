@@ -39,6 +39,10 @@ PAPER_FILES = {
     'P13': 'boundary_paper.tex', 'P14': 'matter_sector_paper.tex',
     'P15': 'CR_cosmology.tex', 'P16': 'cosmogenesis_paper.tex',
     'P17': 'geometric_core_paper.tex', 'p0': 'geometric_core_paper.tex',
+    # ** the synthesis paper, ARC 18 -- it cites the ledgers the corpus cites and needs its own
+    #    Appendix L for the same reason every other paper does: a marker that resolves to nothing
+    #    is a dangling link in the built PDF and silent in the source. **
+    'SYN': 'CR_synthesis.tex', 'P18': 'CR_synthesis.tex',
 }
 
 LDG = re.compile(r'\\ldg\{([^}]*)\}')

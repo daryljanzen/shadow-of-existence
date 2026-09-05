@@ -1,0 +1,187 @@
+% ============================================================================
+%  THE SYNTHESIS PAPER — ARC 18.  Written from SYNTHESIS_HARVEST.md and from
+%  nothing else: every claim below traces to a harvested entry with its home,
+%  its anchor, and the register tag its source gave it.
+%
+%  THREE RULES THIS FILE IS WRITTEN UNDER, and they are the arc's own:
+%    * ONE STATE.  No "was open, later resolved" anywhere.  The fact of a
+%      resolution belongs in the consolidation record, not in a results paper.
+%    * EVERY "IS" AUDITED.  A claim is stated at the weight its source states
+%      it: a proposition as a proposition, a reading as a reading, a
+%      conjecture as a conjecture.  The harvest's register field is the
+%      authority for that, not this paper's convenience.
+%    * THE NEGATIVES TRAVEL.  Where a harvested entry carries a bound in its
+%      "not operative for" field, the bound is stated beside the claim.  A
+%      distillation that drops those has not shortened the corpus; it has
+%      misreported it.
+% ============================================================================
+\documentclass[11pt,a4paper]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath, amssymb, amsthm}
+\usepackage{mathtools}
+\usepackage{graphicx}
+\usepackage[dvipsnames]{xcolor}
+\usepackage{hyperref}
+\usepackage{caption}
+\usepackage{receipts}
+\usepackage{ledgers}
+
+\newcommand{\dd}{\mathrm{d}}
+\newcommand{\dS}{\mathrm{dS}}
+\newcommand{\so}{\mathfrak{so}}
+\newcommand{\rs}{r_{s}}
+
+\theoremstyle{plain}
+\newtheorem{proposition}{Proposition}
+\newtheorem{theorem}[proposition]{Theorem}
+\theoremstyle{definition}
+\newtheorem{remark}[proposition]{Remark}
+
+\title{Cosmological Relativity: what the construction delivers,\\
+what it declines, and where its edge is}
+\author{D.~Janzen}
+\date{}
+
+\begin{document}
+\maketitle
+
+\begin{abstract}
+This paper states, in one place, what the Cosmological Relativity corpus establishes, at the weight each
+result is established at, together with what the construction declines to claim and where its open edge
+lies. Nothing here is new: every claim is drawn from one of seventeen papers or from the ledgers those
+papers cite, and is stated at the register its source gives it---a proposition as a proposition, a reading
+as a reading, a conjecture as a conjecture. What is new is the assembly, and the two things an assembly can
+supply that a set of papers cannot: the joins, where a result in one paper is load-bearing for a result in
+another, and the relative size of the frontier against the body of work that surrounds it.
+\end{abstract}
+
+\section{The object, and the distinctions it forces}\label{sec:object}
+
+Cosmological Relativity is a construction on one geometric object, and almost everything below is that
+object read from somewhere. The object is a de~Sitter substrate; the reading is a \emph{cut} of it; and the
+exact solutions of general relativity that the corpus reaches are cuts, not separate geometries. Before any
+of that can be stated precisely, two things have to be fixed: what kind of object the substrate is, and
+what a \emph{boundary} of such an object is. The second is not a preliminary. It is the distinction the
+whole construction rests on, and a reader who does not have it will misread every result that follows.
+
+\subsection{The substrate is a real manifold, and its signature is intrinsic}
+
+The maximally symmetric solutions of $R_{\mu\nu}=\Lambda g_{\mu\nu}$ form a one-parameter family with
+curvature radius $\alpha=\sqrt{3/|\Lambda|}$. They are usually met as hypersurfaces in a flat
+five-dimensional space, which is a convenient picture and not the manifold: solving that embedding for the
+fifth coordinate and substituting back returns an intrinsic four-dimensional line element in which the
+manifold is coordinatised by four \emph{real} coordinates, real regardless of the sign of the curvature. The
+imaginary fifth coordinate is a property of one embedding picture, not of the surface.
+
+Reading the metric's eigenvalues off that real line element gives the result the programme's ontology stands
+on. Three eigenvalues are positive always, and the fourth's sign is fixed by real data alone.
+
+\begin{proposition}[The unique intrinsically Lorentzian maximally symmetric manifold]\label{prop:unique}
+De~Sitter space is the only real maximally symmetric manifold carrying an intrinsic Lorentzian signature.
+It has a real coordinate basis, satisfies the maximal-symmetry requirement, and is the only such manifold
+with the requisite causal structure~\cite{JanzenGeometricCore,JanzenThesis}.
+\end{proposition}
+
+Two ways the signature can turn are worth separating, because they are of different kinds. At fixed positive
+curvature the crossing occurs where the fourth eigenvalue passes through a \emph{pole}: its magnitude
+diverges and its sign flips, the numerator being constant throughout. \emph{So the metric does not degenerate
+at the crossing}---a signature change through zero would send the determinant to zero and leave no metric
+there, and that is not what happens. The one place the eigenvalue vanishes is the null cone: not a crossing
+within a member of the family, but the family's own singular leaf~\cite{JanzenGeometricCore}.
+
+That the substrate is reached through imaginary instruments is therefore a fact about the instruments. The
+embedding coordinate, the equatorial seam's continuation, and the reassignment at the cosmogenesis are each
+places the construction uses an imaginary variable and lands on a real manifold; the geometry is
+intrinsically real at every point they land on~\cite{JanzenGeometricCore}. In one case the instrument is not
+optional and the case is the construction's own central algebraic object: over the field of the mass
+parameter the horizon cubic is irreducible, and below the Nariai mass its discriminant is positive, so its
+three roots are real and distinct. That is exactly the hypothesis pair of \emph{casus irreducibilis}, whose
+conclusion is that no root lies in any real radical extension---\emph{the three real horizon radii admit no
+expression in real radicals as functions of the mass}, and every radical route to them passes through
+$\mathbb{C}$~\cite{JanzenGeometricCore}. The imaginary is the only available road, and the roots it lands on
+are real.
+
+\subsection{One scale, and what that means}
+
+The substrate carries a single dimensionful scale. Read projectively it is a Cayley--Klein
+geometry\ldg{quadric_geometry} whose \emph{absolute} is the null cone, and its geodesic separation is the
+Cayley--Klein log-cross-ratio taken against that absolute, with the Cayley--Klein constant equal to
+$\alpha$~\cite{JanzenGeometricCore}. So $\alpha$ is not a length inserted into a metric but the constant of a
+projective geometry whose absolute is the light cone---which is the signature proposition above, read
+projectively rather than metrically.
+
+The constants through which physics is written on it are unit gauges, each a nameable feature of the
+substrate: $c$ is the null-ruling slope of the equilateral hyperboloid, $\Lambda$ the waist, and $G$ enters
+only as the offset-length $GM/c^{2}$, the mass being the offset of the cut from the central
+geodesic~\cite{JanzenGeometricCore,JanzenOperator,JanzenSlicing}. On this accounting the
+gravitational--cosmological--quantum sector spends no free dimensionless constant, and the reason is
+structural rather than counted: neither real form supplies a second invariant, and a dimensionless magnitude
+needs two~\cite{JanzenGeometricCore}.
+
+\emph{What the count leaves is not a constant but an initial condition}, and the corpus carries it as
+measured content rather than as a derived quantity---as flat $\Lambda$CDM carries the baryon-to-photon ratio
+from a baryogenesis it does not model~\cite{JanzenCRcosmology}.
+
+\subsection{What a boundary of the substrate is}
+
+Here the corpus draws the distinction that everything downstream depends on, and it is a distinction between
+two kinds of singular locus rather than between a real one and an artefact.
+
+A \emph{metric} singularity is a locus at which a spatial extent contracts to zero while the curvature stays
+finite. A curvature singularity is a locus at which an invariant of the curvature diverges. The event
+horizon of a collapsing body is the first kind: a null hypersurface along whose generators the spatial extent
+also contracts to zero, occurring only as the null future boundary approached at infinite exterior
+time~\cite{JanzenBHcausality}. Three consequences of that follow immediately, and each is a distinction a
+reader needs before meeting any application.
+
+\emph{Observer-dependence is not the criterion.} It is tempting to sort these loci by whether they are seen
+by every observer, and the sorting fails at once: the Rindler horizon is perspectival and carries a flux, so
+``perspectival, therefore no flux'' is refuted before it starts. What sorts the four horizons the corpus
+treats is \emph{completion}---whether the boundary is reached on any finite layer---and completion sorts all
+four~\cite{JanzenBHcausality}.
+
+\emph{Finite curvature is sufficient but not necessary} for a boundary to be crossed. The corpus's own
+continuation runs through a locus at which the areal chart's invariants diverge, and it runs through it
+because the substrate is smooth there, not because the chart is~\cite{JanzenCircle,JanzenSlicing}.
+
+\emph{And formal likeness does not sort the two classes.} A chart such as Eddington--Finkelstein parametrises
+approaches to a singular locus by a coordinate that degenerates there, so a single metric place is drawn
+spread out as an extended line. Mercator draws the North Pole by the same projective mechanism, and the
+visual appearance is identical: a place drawn as a line. \emph{But the reason for the appearance is the
+opposite.} At the pole the chart manufactures an extension that is not there, and a chart centred on the pole
+collapses the line back to the point it always was. At the horizon the chart spreads out a metric collapse
+that \emph{is} there: reading the line back yields no ordinary point a better chart would reveal, because no
+chart removes it---\emph{the collapse is in the metric, not in the projection}~\cite{JanzenCircle}. So no
+argument from how a singular locus is drawn can sort the two, in either direction.
+
+\subsection{What follows for the reading, and what does not}
+
+Two guards belong here rather than later, because both are misread in the same direction.
+
+\emph{Perspectival does not mean unreal.} Where the corpus calls a feature perspectival it means built by a
+construction and really seen from the vantage that builds it---the curvature divergence of a perspectival
+metric is real as that metric's, and reading it as an artefact in the pejorative sense is the misreading the
+epistemology is written to defeat~\cite{JanzenShadowExistence,JanzenCircle}.
+
+\emph{And identifying a feature as perspectival is not a dismissal of the construction that carries it.}
+Sweeping a radial curve to recover a spatial geometry is the legitimate and indeed the natural way to chart a
+geometry from a given vantage, and the result agrees with the standard geometry on every observable outside
+the horizon. What is identified is not an illegitimate operation but a misreading of its product: treating
+features the construction manufactures---the asymmetric labelling, and with it the curvature singularity at
+$r=0$---as features of the geometry rather than of the chart. \emph{The construction is faithful as a
+description from its vantage; the error is ontological}~\cite{JanzenCircle}.
+
+\begin{thebibliography}{99}
+\bibitem{JanzenThesis} D.~Janzen, \emph{A Solution to the Cosmological Problem of Relativity Theory} (PhD dissertation, University of Saskatchewan, 2012), ch.~3.
+\bibitem{JanzenBHcausality} D.~Janzen, \emph{The causal structure of gravitational collapse: the event horizon as a metric singularity}.
+\bibitem{JanzenCircle} D.~Janzen, \emph{The Schwarzschild circle: one cycloid, two metric singularities}.
+\bibitem{JanzenSlicing} D.~Janzen, \emph{The Schwarzschild--de~Sitter slicing curve}.
+\bibitem{JanzenShadowExistence} D.~Janzen, \emph{The shadow of existence: inferring the world that casts the appearances}.
+\bibitem{JanzenOperator} D.~Janzen, \emph{The slicing operator: straight cuts are vacuum, matter is the bend of the cut}.
+\bibitem{JanzenCRcosmology} D.~Janzen, \emph{The cosmology of Cosmological Relativity and its scalar perturbation sector}.
+\bibitem{JanzenGeometricCore} D.~Janzen, \emph{The geometric core: the substrate as a real object, and maximal symmetry worn seven ways}.
+\end{thebibliography}
+
+\input{appendix_ledgers_SYN}
+
+\end{document}
