@@ -1,7 +1,7 @@
 ---
 name: the-receipt-audit
 kind: REFERENCE
-current: r1631
+current: r4153
 job: The receipt audit — what each receipt COMPUTES against what it ASSERTS in verdict-prose (the ◐ category).
 sources: [cowork]
 ---
@@ -10,11 +10,21 @@ sources: [cowork]
 > **actually computes**, not to what its verdict claims. Its four-way taxonomy, defined r1324, is the
 > vocabulary the corpus uses for this, and `corpus/check_receipt_asserts.py` was built from it.*
 >
-> **⌗ THE PROBLEM IT WAS OPENED FOR IS NOW CLOSED.** *It recorded that the corpus had grown to ninety-five
-> cited receipts **with no path on which they could fail**, and named the dominant failure as "a receipt
-> that cannot fail". **The gate now enforces it: all 598 receipts carry a failure path, none carries only
-> a verdict token.** The taxonomy remains what the gate cannot certify — `✔✔ VERIFIED` still takes a
-> reading, not a run.*
+> **⌗ THE PROBLEM IT WAS OPENED FOR IS CLOSED, AND THE GATE IS WHERE THAT LIVES.** *It recorded that the
+> corpus had grown to ninety-five cited receipts **with no path on which they could fail**, and named the
+> dominant failure as "a receipt that cannot fail". **`corpus/check_receipt_asserts.py` now enforces it, and
+> it is the count to read rather than any figure written here**: at `r4153` it reports **691 receipts, 691
+> carrying a failure path, none carrying only a verdict token and none carrying neither.** ⛔ *This banner
+> previously named **598**, a number 93 behind the instrument that enforces it — **in the one document whose
+> subject is what receipts actually do.** A count written into prose beside a gate that computes it will
+> always drift; the gate is cited here instead, so the figure cannot go stale again.* The taxonomy remains
+> what the gate cannot certify — `✔✔ VERIFIED` still takes a reading, not a run.*
+>
+> ⌗ ***AND WHAT THIS FILE COVERS IS NOT WHAT THE GATE COVERS, which is worth stating rather than leaving to
+> be inferred from its length.*** *The gate reads every receipt in the tree; **this document names 21**, from
+> the sector-by-sector passes that built the taxonomy. It is the vocabulary's home and a worked sample, not a
+> census — and its own instruction is `SYSTEMIC`, to accrue as a byproduct. **Read it for the four-way
+> taxonomy; read the gate for coverage.***
 
 
 
@@ -71,13 +81,13 @@ is NOT trusted — only the traceable/runnable core.*
   and my from-scratch Weyl-rep numpy. Honestly bounded (operator half only; charge-sign field-level & R-blind
   via Q²/r² even — verified; species half not claimed; correct −iγ² vs C-matrix-proper convention guard).
   Tied to: §224 / P7 two-sided-closure (matter-antimatter C-operator). **Exemplary — this is the standard.**
-- **`computations/matter_functionals/B2_zeromode_continuation.py` — ◐ CORE-REAL / VERDICT-OVERCLAIMS (r1321).**
+- **`computations/matter_functionals/P14_B2_zeromode_continuation.py` — ◐ CORE-REAL / VERDICT-OVERCLAIMS (r1321).**
   COMPUTES: the zero-mode superpotential's real→imaginary (bound→propagating) transition across a horizon on a
   concrete undercritical SdS (r_b=0.257, r_c=0.846; ∫W dℓ = 0.95 real / i·0.64 imaginary) — run, real. ASSERTS
   (verdict-prose): the a^{-3/2} form (now DERIVED r1332 from the FLRW spin connection — ψ=a^{-3/2}χ cancels the
   (3/2)(ȧ/a) friction, the 3/2 spin-½ conformal weight), γ⁵-preservation (covered by L4), three-families (L6).
   Tied to: P14 §222 continuation / family 6.
-- **`computations/matter_functionals/B3_spinor_vielbein.py` — ◐ CORE-REAL / VERDICT-OVERCLAIMS (r1322).**
+- **`computations/matter_functionals/P14_B3_spinor_vielbein.py` — ◐ CORE-REAL / VERDICT-OVERCLAIMS (r1322).**
   The superpotential FORM W=λ√f/r is correct — verified by TRACING B3's hand-derivation of ω²₁=(√f/r)e² (I
   redid it: de²=(√f/r)e¹∧e², Cartan → ω²₁=(√f/r)e²). But B3's own code does NOT compute it: its Cartan `d()`
   is defined-but-unused, and its "W matches" check is a TAUTOLOGY (W:=λ·(√f/r) checked against λ√f/r). No

@@ -2003,6 +2003,26 @@ note to self carries the same risk and matches no keyword. **A comment sweep is 
 ⑤ JOINS — [[p15-cr-cosmology]] · [[p3-sds-slicing]] · [[p2-janzen-circle]].
 ⑥ NOT OP FOR — **⛔ AND `CX1` IS THE ONLY BITE ITS FIELD RETURNED**, which is why the ledger was cited by no paper before this: *a bake whose single result never reached a paper reads, from outside, exactly like a bake that returned nothing.* **`KT1`'s value is that it converts a local observation into a completeness claim** — *"nothing in seventeen papers says the fold is the end of it"* — and the ledger checked that in the corpus's own terms rather than its own, finding `triple root`, `catastrophe`, `swallowtail` and `structural stability` all at zero.
 
+
+# L10 · `THE_RECEIPT_AUDIT.md` and the receipt index
+### *What each receipt COMPUTES against what it ASSERTS, and the appendices the papers print*
+
+### the-audit-closed-its-own-problem-and-the-gate-is-where-that-now-lives
+① CLAIM — The audit was opened because the corpus had grown to ninety-five cited receipts **with no path on which they could fail**, and it named the dominant failure exactly: *"a receipt that cannot fail."* **That problem is closed, and closed in a gate rather than in prose** — `check_receipt_asserts.py` reports **691 receipts, 691 carrying a failure path, none carrying only a verdict token and none carrying neither.** *What the gate cannot certify is the taxonomy itself: `✔✔ VERIFIED` still takes a reading, not a run* — which is what the document remains for.
+② REGISTER — **REFERENCE**, four-way taxonomy defined at `r1324`, with `check_receipt_asserts.py` built from it.
+③ HOME — `THE_RECEIPT_AUDIT.md`.
+④ ANCHOR — the gate.
+⑤ JOINS — every receipted claim in the corpus.
+⑥ NOT OP FOR — **⛔ AND ITS BANNER CARRIED A COUNT 93 BEHIND THE INSTRUMENT THAT ENFORCES IT** — *"all 598 receipts"* against the gate's 691, **in the one document whose subject is what receipts actually do.** *A count written into prose beside a gate that computes it will always drift*; the banner now cites the gate instead, so the figure cannot go stale again. **And its scope is now stated rather than inferred from its length**: the gate reads every receipt in the tree, this document names **21**, from the sector passes that built the taxonomy — *the vocabulary's home and a worked sample, not a census.* Two of those names were stale rather than dangling, both renamed under a paper prefix, and now resolve.
+
+### an-appendix-short-of-its-index-does-not-look-wrong-it-looks-like-a-shorter-appendix
+① CLAIM — The receipt appendices are **generated from `receipts/INDEX.md`**, and a gate compares each against what its index would write now — *because "a generated file that is not regenerated is a hand-maintained one that nobody is maintaining."* **P7's and P15's were stale by four and eight lines**, and the rows that went are exactly the receipts this arc's own corrections dropped: the ladder waiver, and **`D1_the_diagnosis_is_the_driving_and_the_driving_is_the_rate` — the refuted diagnosis's own receipt.**
+② REGISTER — **REGENERATED at `r4153`**, after reading the diff.
+③ HOME — `corpus/appendix_receipts_*.tex`; `check_appendix_current.py`.
+④ ANCHOR — `receipts/INDEX.md`, 693 rows.
+⑤ JOINS — [[p7-cr-framework]] · [[p15-cr-cosmology]].
+⑥ NOT OP FOR — **⛔ THE GATE REFUSES TO SAY WHICH SIDE IS RIGHT, AND THAT REFUSAL IS THE INSTRUMENT'S BEST FEATURE.** *It reports that the rails diverge and tells the reader to diff against the papers first, recording that at `r3536` all 27 differing lines had the **generated** side correct and the index stale.* **Here the case is the opposite** — the papers dropped citations and the index followed them — *and the only way to know which is to look.* **A gate that ran its own fix automatically would have been right once and wrong once.**
+
 ---
 
 ## THE FRONTIER GATHER
