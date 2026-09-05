@@ -37,8 +37,94 @@ difference as physics. Withdrawn until both arms are converged.*
 # aborted the step before anything after it ran) made it visible to `check_currency` for
 # the first time. ** Declaring ignorance is not declaring currency, and only the owning
 # line can do the second. **
-current: r4134
+current: r4136
 ---
+
+
+# ⛭⛭⛭ r4136 — **THE POLARISATION LEG: THE CONTROL MEETS THE SPEC'S CALIBRATOR AND THE CR ARM'S
+NUMBER IS IN HAND. THE HEIGHT DEFICIT IS REAL AND IT IS LARGER THAN THE RETIRED FIGURES.**
+
+***This is the number `PO-13` has owed since `r3899`: the CR arm at converged $k$, on the leaf
+congruence the framework assigns the perturbations, on the projection path where the control
+reproduces CAMB. All four runs converged; `KFAC` $2.0$ and $3.0$ agree to every printed digit.***
+
+## ⛭ THE FOUR CORNERS, ONE INSTRUMENT, ONE SET OF EQUATIONS
+
+| arm | path | peaks | $\ell_1/\ell_A$ | vs sky | $P_1/P_2$ | vs sky | $P_1/P_3$ | vs sky |
+|---|---|---|---|---|---|---|---|---|
+| control | `los_spectrum` | 220 / 532 / 812 / 1124 | 0.7300 | $-0.2\%$ | 2.393 | $+7.9\%$ | 2.766 | $+21.5\%$ |
+| **control** | **`_project` (`HIER=1`)** | **220 / 540 / 812 / 1132** | **0.7300** | $\mathbf{-0.2\%}$ | **2.196** | $\mathbf{-0.9\%}$ | **2.191** | $\mathbf{-3.8\%}$ |
+| CR | `los_spectrum` | 204 / 516 / 828 / 1188 | 0.6764 | $-7.5\%$ | 1.975 | $-10.9\%$ | 2.206 | $-3.1\%$ |
+| ⛔ **CR** | **`_project` (`HIER=1`)** | **204 / 524 / 828 / 1196** | **0.6764** | $\mathbf{-7.5\%}$ | **1.759** | $\mathbf{-20.7\%}$ | **1.612** | $\mathbf{-29.2\%}$ |
+| — sky — | | 220.6 / 538.1 / 809.8 | 0.7312 | | 2.217 $\pm3.4\%$ | | 2.277 $\pm3.2\%$ | |
+
+⛭ ***THE SPEC'S CALIBRATOR IS MET.*** *`PO13_RUN_SPEC_FOR_CC54` requires "the control must return
+$P_1/P_2 \approx 2.197$ and peaks near $220/540/812$".* **On the polarisation path the control returns
+$P_1/P_2 = 2.196$ and peaks $220/540/812$** *— $0.18\%$ from CAMB's $2.200$ and $0.9\%$ from the sky,
+inside the sky's own $1\sigma$. `C59` measured $2.1969$ at `LMAXL=900`, `NK=280`; this is
+`LMAXL=1300` with `NK` derived from `KFAC`, and the two agree to the printed digit.* ⇒ ***The
+instrument is calibrated in the configuration the CR number is taken in, which is the whole point of
+running both arms.***
+
+⛭ ***AND EVERY CORNER IS CONVERGED.*** *Between `KFAC` $2.0$ and $3.0$: the CR polarisation arm is
+identical to every digit ($204/524/828/1196$, $0.6764$, $1.759$, $1.612$); the control moves
+$0.00\%$ on $P_1/P_2$ and $0.046\%$ on $P_1/P_3$ with peaks unchanged.*
+
+## ⛔⛭ THE RESULT, AND IT IS NOT THE ONE THE RETIRED TEXT REPORTS
+
+*** On the configuration in which the control reproduces CAMB to $0.18\%$, the CR arm is $20.7\%$ and
+$29.2\%$ low on the height ratios and $7.5\%$ low on the first peak's position. ***
+
+⇒ ***THE HEIGHT DEFICIT IS REAL, IT IS NOT THE $k$-TRUNCATION, AND IT IS NOT THE PROJECTION PATH.***
+*Those were `r3870`'s two instrument faults and both are removed here.* ⛔ **It is also considerably
+LARGER than the $12.7\%$ / $13.2\%$ this file suspended at `r3899`** — *and larger than the fluid
+path's $10.9\%$ / $3.1\%$. The suspension was right and the direction of the correction is against the
+construction, not for it.*
+
+⌗ ***THE POLARISATION SOURCE ACTS THE SAME WAY ON BOTH ARMS, AND THAT IS WHY THE COMPARISON FLIPS.***
+
+| adding $g\Pi/4 + (3/4k^2)\dd^2_\eta[g\Pi]$ | $P_1/P_2$ | $P_1/P_3$ |
+|---|---|---|
+| control | $2.393 \to 2.196$ | $2.766 \to 2.191$ |
+| | $-8.2\%$ | $-20.8\%$ |
+| CR | $1.975 \to 1.759$ | $2.206 \to 1.612$ |
+| | $-10.9\%$ | $-26.9\%$ |
+
+⇒ *** It pulls both arms DOWN by comparable amounts. It lands the control ON the sky because the
+control was ABOVE it, and it carries the CR arm further BELOW because the CR arm was already there. ***
+*Nothing about the operation differs between the arms — which is what a shared instrument is for, and
+what makes the residual attributable to the source rather than to the machinery.*
+
+⌗ ***r3512's PREDICTION IS CONFIRMED AND DOES NOT DISCRIMINATE.*** *It predicted that a correctly
+composed $\Pi$ "should arrive weighted to high $k$ and act as a shape: $P_1/P_3$ and $P_1/P_4$ should
+fall further than $P_1/P_2$".* **They do — $-26.9\%$ against $-10.9\%$ on CR.** *But they do on the
+CONTROL too, $-20.8\%$ against $-8.2\%$, where $\mathrm{Jac}\equiv1$ makes composition unable to be at
+issue at all.* ⇒ ***So the prediction is a property of the polarisation source and not a test of the
+composition*** *— which is consistent with `C60`, where the composition defect it was a test for turns
+out not to exist.* ⛭ *And r3512's FAILURE test is not triggered: it said "if the position climbs
+instead, the hierarchy is on the wrong clock and step 3 was skipped". The position does not climb. It
+does not move at all — $0.6764$ on both paths, both rungs.*
+
+⌗ ***ONE READING DECLINED FOR BEING AT THE GRID'S RESOLUTION.*** *The polarisation source moves the
+SECOND and FOURTH peaks by $+8$ on both arms ($516\to524$, $1188\to1196$; $532\to540$, $1124\to1132$)
+and the first and third not at all. **`LSTEP` is $8$, so $+8$ is exactly one grid point** — the
+reported $\ell$ grid runs $100,108,116,\dots$ — so this is a one-bin shift read on a one-bin grid and
+it is recorded rather than interpreted. A finer `LSTEP` would be needed to say whether the even peaks
+really move and the odd ones really do not.*
+
+## ⌗ WHAT THIS LEAVES
+
+- **The deficit is now a single object with one number**: on the calibrated configuration, $-7.5\%$ in
+  position and $-20.7\%$ / $-29.2\%$ in the two height ratios. ⛔ *It is not explained here.*
+- ***And the account of WHY that the retired text gives is refuted separately*** *(r4124, `C61`): on
+  the leaf rate the first peak's mode IS driven, so "the comb is undriven" cannot be the reason.*
+  ⇒ ***So `PO-13` now has a measured deficit and NO mechanism for it, which is a worse position than
+  the file recorded and an honest one.***
+- **RUN 2** measures how much of the position is the seam datum's two freedoms rather than the
+  construction — running now, twenty readings.
+- **The driving subtraction** (`NODRIVE=1`, both arms) measures the driving's size directly, which is
+  the next thing `C61`'s scope note names.
+
 
 
 # ⛭⛭⛭ r4124 — **RUN 1: BOTH ARMS ARE CONVERGED IN $k$, AND THE DIAGNOSIS'S PREMISE IS FALSE ON THE
