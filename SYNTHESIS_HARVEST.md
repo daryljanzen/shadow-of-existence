@@ -1592,7 +1592,7 @@ note to self carries the same risk and matches no keyword. **A comment sweep is 
 > against the ranges opened, zero gap. 1,411 body lines — the largest paper in the corpus.*
 
 ### the-rate-is-the-load-bearing-claim-and-everything-else-is-its-consequence
-① CLAIM — The rate's two parameters are the substrate curvature radius and the **offset of the cut**, and **neither is a content of the universe**. The offset is measured **directly and calibration-free** — without a distance ladder, without the microwave background, and without any density. *The familiar cosmological form is a **coincidence of form**: written in the fitted pair the same rate reads as the Friedmann one, with the density parameters following identically — **a translation between parameter sets, and not a decomposition into components.*** **The two readings agree on the function and share nothing beneath it.**
+① CLAIM — ⛭ **CORRECTED `r4251`: the rate has ONE parameter and ONE epoch.** *The vacuum family carries two --- the substrate scale and the offset --- but the cosmology sits on the Nariai member, where **the mass is no longer free**, so both factors of the expansion law are set by $\Lambda$ and the scale factor is one function of it.* **$x_0$ is not the offset**: it is $r(\tilde\tau_0)/r_N$, the expansion read in the geometry's own fixed unit --- *a clock reading*. **Neither the parameter nor the epoch is a content of the universe**, which is a stronger statement than the two-parameter one it replaces. The offset is measured **directly and calibration-free** — without a distance ladder, without the microwave background, and without any density. *The familiar cosmological form is a **coincidence of form**: written in the fitted pair the same rate reads as the Friedmann one, with the density parameters following identically — **a translation between parameter sets, and not a decomposition into components.*** **The two readings agree on the function and share nothing beneath it.**
 ② REGISTER — **DERIVED**, receipt-anchored; and the load-bearing falsifiable claim is named as the prior one — *that radiation carries no term in the expansion rate* — of which the dissolved Hubble tension and the one-parameter acoustic calibration are **consequences**.
 ③ HOME — P15 §2.3–§2.4.
 ④ ANCHOR — `P15_expansion_law`, `P15_desi_dr2_confrontation`, `P15_hubble_expansion_confrontation_v2`.
@@ -2360,6 +2360,22 @@ horizon on a finite layer, which is a result and belongs with the dissolutions.
 ⌗ ***The lesson is the corpus's own and I had been enforcing it all session***: when a thing is retired the
 references to it get updated in the same pass, and **a struck row whose paper still lists it is worse than an
 open row**, because the list reads as current.
+
+### all-three-rows-the-phase-3-gather-opened-have-now-closed
+① CLAIM — **⛔ A FINDING ABOUT MY OWN HARVEST METHOD, and it is worth recording because the method is still in
+the corpus.** *Phase 3 opened three rows from the sixth field of the harvest entries --- "what it does not
+bear on". **All three are now closed**: PO-32 struck `r4227` as over-opened, PO-34 struck `r4239` on material
+the corpus already held unjoined, PO-33 struck `r4241` as discharged in its own paper's same paragraph.*
+② REGISTER — **MEASURED**, `r4241`.
+⑥ NOT OP FOR — ⇒ ***The common fault is reading a clause as an opening when its paragraph closes it.***
+*`P07` said the horizon-thermodynamic apparatus does not settle what survives --- and named the central
+theorem in the next breath. `P11` said its exact results do not reach the propagating residual --- and
+grounded it externally in the following sentences. **In both, the sentence that reads as an admission is the
+setup for the answer.*** ⌗ *`PO-34` is the different case and the honest one: a genuine gap, answerable only
+by joining `P08`'s requirement to `P01`'s result, which no paper had done.*
+⌗ ***What this does NOT license is treating "the corpus probably answers it" as a closing move.*** *Each of
+the three was closed by reading to the end of the passage and, where needed, computing --- and one of the
+three was real. **The lesson is about where to read, not about what to expect.***
 
 ### the-scoping-as-it-now-stands
 ① CLAIM — **Of the sixteen: four are owed builds or runs** --- the adiabatic residual, the two-arm transfer,

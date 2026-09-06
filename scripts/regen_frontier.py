@@ -38,30 +38,6 @@ EST = {
         'rather than measured. Discharged by the radius measured against independently measured BARYONIC mass. '
         'Held at weight: a baryonic-set radius is smaller, which is the OPPOSITE direction from the '
         'dark-matter evidence, so this is a discriminating measurement and not a dark-matter explanation'),
-    'PO-37': ('the sixteenth Weyl fermion: an argument the corpus criterion supports and does not make', 1, 0, 2, None,
-        'r4203: P14 states fifteen Weyl fermions per generation, "or sixteen with a right-handed neutrino", '
-        'noted as an option and nowhere argued for. Least-arbitrariness reads on it: fifteen requires '
-        'omitting one state, sixteen is the complete spinor and leaves nothing to choose. SCOPE: P14 '
-        'declines the gauge representation content, delivering the generation COUNT as an index and the '
-        'discrete skeleton, so the construction does not DERIVE sixteen and this must not be reported as a '
-        'derivation'),
-    'PO-35': ('why the growth exponent 3/2 has its root at the concordance matter density', 1, 1, 3, None,
-        'r4183: PUBLISHED as an RNAAS note in resources -- J(Om) crosses unity once, at Om* = 0.315162, with '
-        'percent-level departures at 1 sigma, so omitting the factor biases growth-based inference toward Om*. '
-        'THE CLASS measured r4183: other exponents each have a unique root and they run smoothly '
-        '(p=1.25 -> 0.486, 1.5 -> 0.3152, 1.75 -> 0.232, 2 -> 0.183), so nothing distinguishes the VALUE -- '
-        'what is distinguished is that the exponent the growth factor REQUIRES lands at the concordance value. '
-        'And it sits at the LambdaCDM value, not this corpus: J = 0.99966 at Planck 0.3153 against 1.02142 at '
-        'the DESI-fit 0.3066, which is evidence against reading it as a feature of this construction'),
-    'PO-33': ('the propagating nonlinear parametric resonance', 1, 0, 6, None,
-        'r4169: opened by the Phase-3 gather. P11 closes the ghost and zero-mode runaways exactly and names '
-        'this as the one structure they do not close, with the reason the obvious instrument fails: no total '
-        'energy is monotone, so the residual isolates to nonlinear mode-mode transfer against the de Sitter '
-        'detuning'),
-    'PO-34': ('does the second-ruling reading cover the collapse face', 1, 0, 3, None,
-        'r4169: opened by the Phase-3 gather, flagged twice in Phase 1 before it had a row. P08 identifies '
-        'the flat synchronous space with the second null ruling -- the sharpest statement in the r=0 chain -- '
-        'and scopes it to the COSMOLOGICAL face'),
     'PO-26': ('the compact-face fermion sector -- CAN IT BE BUILT', 1, 1, 6, None,
         'r3867: opened r3861 on a WRONG PREMISE -- I framed it as whether a sector can be built on the discrete '
         'component, and P14 has built one there. P13 sec:open: two things stay genuinely open and they are '
@@ -105,13 +81,6 @@ EST = {
         'entirely from the amplitudes r(M), a property of the trajectory swept and COMMON TO BOTH READINGS. What '
         'is owed is a discriminating quantity, or a demonstration that none exists, in which case the attribution '
         'is interpretive by nature and the corpus should say so rather than leave it reading as a question of fact.'),
-    'PO-27': ('empirical coherence as an INDEPENDENT ground -- the motivation, not the construction', 1, 1, 4, None,
-        'r3867: P13 sec:open names this the SECOND of two genuinely open and distinct things -- whether the '
-        'Standard Models century-constrained empirical standing, read as an EXTERNAL constraint rather than '
-        'derived from the bare geometry, motivates taking the compact Wick face as physical and building a '
-        'fermion sector there. P13 forbids merging it with PO-26: these are not the same frontier, and a coherent '
-        'matter route would have to supply BOTH the construction and its motivation. That is where the live work, '
-        'if any, lies. Its instrument is P06s epistemology rather than the geometry.'),
     'PO-25': ('the charged bead -- DOES A CHARGED COLLAPSE FORM THE CAUCHY HORIZON', 1, 1, 4, None,
         'r3827: P03 states the obstruction exactly -- with Q nonzero, Q^2/r^2 dominates as r -> 0 so f -> +inf '
         'rather than -inf, an inner Cauchy turning point appears, and r=0 becomes a TIMELIKE RN singularity '
@@ -212,7 +181,7 @@ LASTFIND = ("r3103: **PO-21 answered — the geometry lifts the obstruction but 
 # ⚠ *** A BUILD step has NO completed instance to calibrate against -- PO-11's continuum,
 # PO-6's UV definition, PO-1a's derivation.  Those are marked BUILD and their estimates
 # are declared unmeasured rather than dressed as measured. ***
-KIND = {'PO-13': 'BUILD', 'PO-35': 'READ', 'PO-36': 'READ', 'PO-37': 'READ', 'PO-33': 'BUILD', 'PO-34': 'READ',   # r4145: was READ, scoped when the diagnosis looked answered; it is not
+KIND = {'PO-13': 'BUILD', 'PO-36': 'READ', 'PO-33': 'BUILD',   # r4145: was READ, scoped when the diagnosis looked answered; it is not
          'PO-14': 'BUILD', 'PO-15': 'READ', 'PO-16': 'READ',
         # ** brought in r3095 from p0's frontiers and the field ledgers, which carried them
         # unregistered.  PO-17 is a DECISION stated without being claimed both ways; PO-18 an
@@ -222,12 +191,12 @@ KIND = {'PO-13': 'BUILD', 'PO-35': 'READ', 'PO-36': 'READ', 'PO-37': 'READ', 'PO
 
 # ** PO-23 added r3809: the ultraviolet definition of the mode sums, the one part of P07's
 # three-part 'definition of the interacting tower' that is neither settled nor attempted. **
-ORDER = ['PO-13', 'PO-24', 'PO-34', 'PO-35', 'PO-36', 'PO-37', 'PO-33', 'PO-30', 'PO-25', 'PO-26', 'PO-27', 'PO-29', 'PO-31', 'PO-23', 'PO-15', 'PO-14', 'PO-17', 'PO-18', 'PO-19', 'PO-20']
+ORDER = ['PO-13', 'PO-24', 'PO-36', 'PO-30', 'PO-25', 'PO-26', 'PO-29', 'PO-31', 'PO-23', 'PO-15', 'PO-14', 'PO-17', 'PO-18', 'PO-19', 'PO-20']
 GROUP = {'PO-13': 'D', 'PO-14': 'A', 'PO-15': 'C', 'PO-16': 'D',
          # ** r3095: the four brought in from p0's frontiers and the field ledgers.  PO-17 and
          # PO-19 are substrate geometry; PO-18 is the constant ledger; PO-20 is analysis. **
          'PO-17': 'E', 'PO-18': 'E', 'PO-19': 'E', 'PO-20': 'E',
-         'PO-23': 'C', 'PO-24': 'D', 'PO-25': 'E', 'PO-26': 'A', 'PO-27': 'A', 'PO-29': 'E', 'PO-31': 'D', 'PO-30': 'A', 'PO-36': 'D', 'PO-37': 'A', 'PO-35': 'D', 'PO-33': 'C', 'PO-34': 'E'}
+         'PO-23': 'C', 'PO-24': 'D', 'PO-25': 'E', 'PO-26': 'A', 'PO-27': 'A', 'PO-29': 'E', 'PO-31': 'D', 'PO-30': 'A', 'PO-36': 'D', 'PO-34': 'E'}
 GNAME = {'A': 'the matter sector', 'B': 'the matter sector', 'C': 'the quantum sector',
          'D': 'the cosmology', 'E': 'the substrate geometry'}
 

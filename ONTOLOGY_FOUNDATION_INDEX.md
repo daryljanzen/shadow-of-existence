@@ -61,9 +61,11 @@ current: c54.19
 > | **the seam** | $r=-2\alpha/\sqrt3$ **and** $r=+\alpha/\sqrt3$ | ***ONE point of the substrate***: $\varphi=-240^\circ\equiv+120^\circ$ in $\varphi=2\pi r/\sqrt3\alpha$. The bead meets it going in ("back") and again one full lap later ("front"). The Nariai double root; $z\approx0.66$ on the far pass. |
 >
 > ### ★ THE RATE IS NAMED BY WHAT FIXES IT (r3401–r3404) — native parameters, and the translation
-> *The cosmological rate is set by the substrate's geometry and by nothing else.* Its two parameters are
-> **α = √(3/Λ)**, the substrate curvature radius — *an invariant length, not a mass* — and **x₀**, the offset of
-> the cut. Neither is a content of the universe.
+> *The cosmological rate is set by the substrate's geometry and by nothing else.* ⛭ **It has ONE parameter and ONE epoch** (`r4251`): **α = √(3/Λ)**, the substrate curvature radius — *an
+> invariant length, not a mass*. **At Nariai the mass is no longer free**, so both factors of the expansion
+> law are set by Λ and the scale factor is one function of it. **x₀ is not a second parameter**: it is
+> $r(\tilde\tau_0)/r_N$, the expansion read in the geometry's own fixed unit — *a clock reading*. Neither the
+> parameter nor the epoch is a content of the universe.
 >
 > $$c^2H^2(z)=\frac{c^2}{\alpha^2}\Big(1+\frac{2(1+z)^3}{x_0^{3}}\Big)$$
 >

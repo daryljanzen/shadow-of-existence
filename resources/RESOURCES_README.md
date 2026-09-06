@@ -54,6 +54,34 @@ reads, cites and in places verifies against. `KICKOFF_ARTHUR` described it as *"
 Space-Time — deep primary sources, for reworking foundations"*, and marked it **on-demand reference, not a
 spin-up read**.
 
+
+> ⛭ **SETTLED `r4247` --- the coincidence is the standard model's, and the crossover reading is excluded.**
+> *`PO-35` asked whether $J(\Omega_m^\star)=1$ is a coincidence, an artefact of some analysis, or a property of
+> the growth factor at the matter--$\Lambda$ crossover.* ⛔ ***The artefact reading was never available***:
+> $J$ is a forced, dimensionless function of $\Omega_m$ alone, its integrand's form fixed by the growth
+> equation, and the published root reproduces to six figures. ⛔ ***And the crossover reading is excluded by
+> the decisive test***: *embed the integral in its natural families --- the exponent $p$, the dark-energy
+> equation of state $w$, the curvature --- and the root $\Omega^\star$ is **smooth, monotone and
+> feature-free** through $p=3/2$, through $w=-1$ and through flatness, **with the physical point not
+> stationary in any of them**. A property OF the crossover would leave a mark there. There is none.*
+> ⇒ ***What remains is a coincidence, and in the construction's OWN parameter it is a coincidence about the
+> EPOCH.*** *The rate's parameters are $\alpha$ and the offset $x_0$, and on the corpus's own dictionary
+> $x_0=(2\Omega_\Lambda/\Omega_m)^{1/3}$ the integral rewrites as
+> $J(x_0)=(2+x_0^{3})^{3/2}\int_1^\infty u\,\dd u/(2u^{3}+x_0^{3})^{3/2}$.* ⛭ ***$J$ is dimensionless, so it
+> cannot see $\alpha$ at all***: *on the forced member $\alpha$ fixes every length and the only remaining
+> freedom is where "now" sits on the curve. **So $J=1$ selects an epoch and nothing else --- a "why now"
+> statement, not a "why this density" one.*** ⇒ **Root $x_0^\star=1.6319$ against the corpus's measured
+> $x_0=1.6648\pm0.0467$: $0.70\sigma$, and the root lies INSIDE the measured epoch.**
+> ⛔ ***AND THAT CORRECTS WHAT r4247 CONCLUDED.*** *It quoted $J$ at a point estimate in $\Omega_m$ and called
+> the offset a $2.1\%$ miss. **That was wrong**: $J$ moves $1\%$ per $\Delta\Omega_m=0.004$ while the
+> measurement carries $\pm0.0467$ in $x_0$ --- a band whose half-width exceeds the offset. **Comparing a steep
+> function's value at a central value, without carrying the measurement's own width, manufactures a
+> disagreement.** What is established is that no mechanism has been identified, **not** that the agreement
+> belongs elsewhere.*
+> ⌗ *Receipt `P15_the_growth_normalisation_root_has_no_feature_at_the_physical_point`. The note's own
+> practical point --- that omitting the factor biases growth-based inference toward $\Omega_m^\star$ --- is
+> untouched and was never what the row asked.*
+
 ## Present
 | | |
 |---|---|
