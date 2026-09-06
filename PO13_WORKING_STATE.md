@@ -37,8 +37,89 @@ difference as physics. Withdrawn until both arms are converged.*
 # aborted the step before anything after it ran) made it visible to `check_currency` for
 # the first time. ** Declaring ignorance is not declaring currency, and only the owning
 # line can do the second. **
-current: r4164
+current: r4236
 ---
+
+
+# ⛭⛭⛭ r4236 — **RUN 3, THE LIKELIHOOD: THE TWO MODELS ARE ELEVEN SIGMA PER BIN APART. AND RUN 4
+CORRECTS A POSITION FIGURE THAT IS LIVE IN TWO PAPERS.**
+
+## ⛔ RUN 3 — the likelihood, both arms, identical settings, on `plik_lite` TT
+
+*Polarisation path, `KFAC=2.0`, `LSTEP=2`, both arms scored on the SAME bins by the same code.*
+
+| | $\chi^2$ | bins | $\chi^2$/bin | fitted amplitude | $\ell$ range |
+|---|---|---|---|---|---|
+| control | **279.4** | 133 | **2.10** | 11108 | 100–1296 |
+| this arm | **15752.0** | 133 | **118.44** | 14229 | 100–1296 |
+| cut at $0.8\,\ell_{\max}$: control | 175.7 | 104 | 1.69 | 11142 | 100–1035 |
+| cut at $0.8\,\ell_{\max}$: this arm | 8533.0 | 104 | 82.05 | 14459 | 100–1035 |
+
+⇒ ***THE FLOOR, MEASURED AS THE SPEC REQUIRES — a distance between the two MODELS and not a
+difference of two numbers each taken against the sky:***
+
+$$\chi^2_{\rm sep} = (A_a m_a - A_c m_c)^{\mathsf T} F (A_a m_a - A_c m_c) = \mathbf{16260.5}
+\ \text{over 133 bins} = \mathbf{122.3\ per\ bin} = \mathbf{11.06\sigma\ per\ bin}.$$
+
+**The arms are not close.** *`P15_the_floor_is_a_distance_between_models_not_a_number_from_the_data`
+measured the control's own separation from a reference $\Lambda$CDM at $0.11$ $\chi^2$ per bin; this is
+$122$.* ⇒ ***Three orders of magnitude above the level at which this statistic cannot arbitrate.***
+
+⚠ ***AND THE CONTROL IS NOT AT THE NOISE FLOOR IN THIS CONFIGURATION, WHICH MUST BE SAID.*** *Its
+$\chi^2$/bin is $2.10$, not $1$: `LMAXL` $=1300$ cuts the damping tail and the spectrum is unlensed,
+where `c54.186` reached $\chi^2/{\rm dof} = 1.18$ on 185 bins with a lensed spectrum to $\ell=1996$.*
+**So the ABSOLUTE $\chi^2$ values are configuration-limited.** *What is not configuration-limited is the
+RATIO: the separation between the arms is $58\times$ the control's own distance from the data on the
+same bins, and $F_2$ and $\chi^2_{\rm sep}$ agree to within $5\%$ ($15473$ against $16261$), so the
+verdict does not turn on which measure is used.* ⇒ **The disagreement is not marginal and is not a
+truncation artefact — it is large at both cutoffs.**
+
+## ⛔⛭ RUN 4 — the alternation resolves in favour of the reading, and a position figure does not
+
+**The statistic works.** *On the arm whose answer is known the second gap CONTRACTS, as the sky's does.*
+
+| `LSTEP=2`, fluid path | peaks | $\ell_1$ | gaps | ${\rm gap}_{23}/{\rm gap}_{12}$ |
+|---|---|---|---|---|
+| **control** | 220/530/812/1122 | 220 | 310/282/310 | **0.9097** |
+| CR `phi0 flat` *(default)* | 206/518/828/1188 | 206 | 312/310/360 | 0.9936 |
+| CR `phi0 entry` | 208/524/826/1178 | 208 | 316/302/352 | 0.9557 |
+| CR `phi196 entry` | 218/482/744/1054 | 218 | 264/262/310 | 0.9924 |
+| — sky — | 220.6/538.1/809.8 | 220.6 | 317.5/271.7 | **0.8557** |
+
+⇒ ***So the caveat r4138 raised is discharged in the reading's favour: the uniform comb is REAL at four
+times the resolution, not an artefact of the grid.*** *And the r4138 anti-correlation survives it — the
+reading that lands the first peak nearest the sky (`phi196 entry`, $\ell_1=218$) is the one with
+essentially NO contraction, $0.9924$.*
+
+⛔ ***BUT THE ARM'S FIRST PEAK MOVES AND THE CONTROL'S DOES NOT.*** *`LSTEP` $8\to2$: the control holds
+at $220$ on both paths; this arm goes $204 \to 206$.* **So it is not a common grid effect that cancels
+in the comparison — it is specific to the arm.** *Confirmed on the polarisation path, which is where the
+papers report:*
+
+| polarisation path, `LSTEP=2` | peaks | $\ell_1/\ell_A$ | $P_1/P_2$ | $P_1/P_3$ |
+|---|---|---|---|---|
+| control | **220 / 536 / 814 / 1128** | 0.7300 | 2.195 | 2.191 |
+| this arm | **206 / 528 / 832 / 1196** | **0.6830** | 1.759 | 1.612 |
+| control, driving OFF | 276 / 564 / 860 / 1164 | 0.9158 | 1.716 | 2.679 |
+| this arm, driving OFF | 340 / 716 / 1108 | 1.1273 | 2.042 | 4.170 |
+
+⇒ ***WHAT CHANGES IN THE PAPERS:*** *$\ell_1/\ell_A = 0.6764 \to \mathbf{0.6830}$ and the position
+deficit $7.5\% \to \mathbf{6.6\%}$; the arm's peaks $204/524/828/1196 \to \mathbf{206/528/832/1196}$;
+the control's $220/540/812 \to \mathbf{220/536/814}$ with $P_1/P_2 = 2.196 \to 2.195$ ($0.23\%$ from a
+standard code's $2.200$).*
+
+⛭ ***AND WHAT DOES NOT CHANGE IS THE READING.*** *The driving subtraction on the polarisation path gives
+the control $-0.1858$ and this arm $-0.4443$ in $\ell_1/\ell_A$ — **$2.39\times$**, against the fluid
+path's $2.43\times$, and $134$ multipoles against the control's $56$. **The arm is driven $2.4$ times as
+hard as the control and overshoots**, on both paths and at both grids.* **Every height ratio is
+unchanged to the printed digit.**
+
+⏸ ***THE PAPER CORRECTION IS HELD FOR ONE MORE RUN, DELIBERATELY.*** *`LSTEP` $8\to2$ moved this
+quantity. Correcting a figure BECAUSE of grid dependence and not measuring the next step down would
+repeat the pattern the correction is for.* **`LSTEP=1` on the arm is running; if $206$ holds, the
+position is converged in the reported grid and the papers are corrected once with a measured number
+rather than twice with a provisional one.**
+
 
 
 # ⛭⛭⛭ r4164 — **THE DRIVING SUBTRACTION, BOTH ARMS: THE ARM IS DRIVEN 2.4 TIMES AS HARD AS THE
