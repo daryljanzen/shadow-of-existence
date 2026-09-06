@@ -64,9 +64,20 @@ spin-up read**.
 > equation of state $w$, the curvature --- and the root $\Omega^\star$ is **smooth, monotone and
 > feature-free** through $p=3/2$, through $w=-1$ and through flatness, **with the physical point not
 > stationary in any of them**. A property OF the crossover would leave a mark there. There is none.*
-> ⇒ ***What remains is a coincidence***, *and the discriminating measurement says whose*: $J=0.99966$ at
-> Planck's $0.3153$, agreement to $0.03\%$, but $J=1.02142$ at this corpus's own DESI DR2 fit of $0.3066$, a
-> $2.1\%$ miss. **It tracks the standard density and not the geometric rate's.**
+> ⇒ ***What remains is a coincidence, and in the construction's OWN parameter it is a coincidence about the
+> EPOCH.*** *The rate's parameters are $\alpha$ and the offset $x_0$, and on the corpus's own dictionary
+> $x_0=(2\Omega_\Lambda/\Omega_m)^{1/3}$ the integral rewrites as
+> $J(x_0)=(2+x_0^{3})^{3/2}\int_1^\infty u\,\dd u/(2u^{3}+x_0^{3})^{3/2}$.* ⛭ ***$J$ is dimensionless, so it
+> cannot see $\alpha$ at all***: *on the forced member $\alpha$ fixes every length and the only remaining
+> freedom is where "now" sits on the curve. **So $J=1$ selects an epoch and nothing else --- a "why now"
+> statement, not a "why this density" one.*** ⇒ **Root $x_0^\star=1.6319$ against the corpus's measured
+> $x_0=1.6648\pm0.0467$: $0.70\sigma$, and the root lies INSIDE the measured epoch.**
+> ⛔ ***AND THAT CORRECTS WHAT r4247 CONCLUDED.*** *It quoted $J$ at a point estimate in $\Omega_m$ and called
+> the offset a $2.1\%$ miss. **That was wrong**: $J$ moves $1\%$ per $\Delta\Omega_m=0.004$ while the
+> measurement carries $\pm0.0467$ in $x_0$ --- a band whose half-width exceeds the offset. **Comparing a steep
+> function's value at a central value, without carrying the measurement's own width, manufactures a
+> disagreement.** What is established is that no mechanism has been identified, **not** that the agreement
+> belongs elsewhere.*
 > ⌗ *Receipt `P15_the_growth_normalisation_root_has_no_feature_at_the_physical_point`. The note's own
 > practical point --- that omitting the factor biases growth-based inference toward $\Omega_m^\star$ --- is
 > untouched and was never what the row asked.*

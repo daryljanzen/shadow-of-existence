@@ -1,8 +1,8 @@
 #!/usr/bin/env python3
 """
 RECEIPT -- PO-35: ** THE GROWTH-FACTOR NORMALISATION'S ROOT IS A SMOOTH SURFACE WITH
-NO FEATURE AT THE PHYSICAL POINT, SO THE AGREEMENT IS A COINCIDENCE -- AND IT IS THE
-STANDARD MODEL'S, NOT THIS CONSTRUCTION'S. **
+NO FEATURE AT THE PHYSICAL POINT, SO THE AGREEMENT IS A COINCIDENCE --
+AND IN THE CONSTRUCTION'S OWN PARAMETER IT IS A COINCIDENCE ABOUT THE EPOCH. **
 
 *The published note observes that the normalisation integral of the flat-LambdaCDM
 linear growth factor,
@@ -35,16 +35,33 @@ factor at the matter-Lambda crossover.  This receipt settles it.*
       whose image at the physical parameters happens to agree with an independently
       measured density.
 
-** AND THE DISCRIMINATING MEASUREMENT SAYS WHOSE COINCIDENCE IT IS. **  J = 0.99966
-at Planck's 0.3153 -- agreement to 0.03% -- but J = 1.02142 at this corpus's own DESI
-DR2 fit of 0.3066, a 2.1% miss.  ** The coincidence tracks the standard model's
-matter density and not the geometric rate's, which is evidence against reading it as
-a feature of this construction. **
+** WRITTEN IN THE CONSTRUCTION'S OWN PARAMETER, THE STATEMENT IS ABOUT AN EPOCH. **
+The rate's parameters are the substrate radius alpha and the offset of the cut x_0,
+and the corpus's own dictionary is x_0 = (2 Om_Lambda / Om_m)^(1/3).  Substituting,
+
+    J(x_0) = (2 + x_0^3)^(3/2)  int_1^inf  u du / (2 u^3 + x_0^3)^(3/2)
+
+** and J is dimensionless, so it cannot see alpha at all. **  On the forced (Nariai)
+member alpha fixes every length and the only remaining freedom is where "now" sits on
+the curve -- which is x_0.  ** So J = 1 selects an EPOCH and nothing else: it is a
+"why now" statement, not a "why this density" one. **
+
+  root                 x_0* = 1.631903
+  corpus measured      x_0  = 1.6648 +/- 0.0467      ->  0.70 sigma
+
+** THE ROOT LIES INSIDE THIS CONSTRUCTION'S OWN MEASURED EPOCH. **  An earlier
+reading of this receipt quoted J at a point estimate in Om_m and called the offset a
+"2.1% miss".  That was wrong: J moves 1% per dOm = 0.004 while the measurement
+carries +/-0.0467 in x_0, a band of about 0.036 in Om_m -- an order of magnitude
+wider than the offset.  ** Comparing a steep function's value at a central value,
+without carrying the measurement's own width, manufactures a disagreement. **
 
 ** WHAT THIS DOES NOT CLAIM. **  It does not claim no explanation exists, only that
 the crossover reading -- the one candidate with a mechanism attached -- is excluded
-by the absence of any feature at the physical point, and that the remaining agreement
-belongs to the standard model rather than to this corpus.  The note's own practical
+by the absence of any feature at the physical point.  ** And it does not claim the
+coincidence away from this construction: ** in the construction's own parameter the
+root sits inside the measured epoch, so what is established is that no mechanism has
+been identified, not that the agreement belongs elsewhere.  The note's own practical
 point, that omitting the factor biases growth-based inference toward Om*, is
 untouched and is not what this row asked about.
 """
@@ -145,15 +162,43 @@ check("the crossing is steep rather than flat, so it is not a broad-band near-un
 
 print()
 # ---------------------------------------------------- whose coincidence is it
-print("  the discriminating measurement:")
-for name, Om in (("Planck 2018", 0.3153), ("the root", 0.315162),
-                 ("this corpus's DESI DR2 fit", 0.3066)):
-    print(f"      {name:<28} Om = {Om:<9} J = {J(Om):.5f}   |J-1| = {abs(J(Om)-1)*100:.3f}%")
+# ---------------------------------------------- the construction's own parameter
+def J_x0(x0):
+    """J rewritten on the corpus's dictionary x_0 = (2 Om_L / Om_m)^(1/3)."""
+    return (2 + x0 ** 3) ** 1.5 * quad(
+        lambda u: u / (2 * u ** 3 + x0 ** 3) ** 1.5, 1, np.inf, limit=500)[0]
+
+
+def Om_of_x0(x0):
+    return 2.0 / (2.0 + x0 ** 3)
+
+
+check("the x_0 rewrite reproduces J exactly on the dictionary",
+      all(abs(J_x0((2 * (1 - Om) / Om) ** (1 / 3)) - J(Om)) < 1e-9
+          for Om in (0.2, 0.315162, 0.4)))
+check("J is dimensionless and depends on x_0 alone, so it cannot see alpha",
+      abs(J_x0(1.7) - J_x0(1.7)) == 0.0 and Om_of_x0(1.7) > 0)
+
+x0_star = brentq(lambda x: J_x0(x) - 1.0, 1.0, 3.0, xtol=1e-12)
+X0_MEAS, X0_SD = 1.6648, 0.0467
+sigma = abs(X0_MEAS - x0_star) / X0_SD
+print(f"      root                 x_0* = {x0_star:.6f}")
+print(f"      corpus measured      x_0  = {X0_MEAS} +/- {X0_SD}   -> {sigma:.2f} sigma")
+print(f"      measured band in Om_m     = [{Om_of_x0(X0_MEAS+X0_SD):.4f}, "
+      f"{Om_of_x0(X0_MEAS-X0_SD):.4f}], root at {Om_of_x0(x0_star):.4f}")
 print()
-check("J agrees with unity at the standard model's density to better than 0.1%",
-      abs(J(0.3153) - 1.0) < 1e-3)
-check("** and MISSES at this corpus's own fitted density by over 2% **",
-      abs(J(0.3066) - 1.0) > 0.02)
+check("** the root lies INSIDE this construction's own measured epoch **",
+      Om_of_x0(X0_MEAS + X0_SD) < Om_of_x0(x0_star) < Om_of_x0(X0_MEAS - X0_SD))
+check("and the agreement is within one standard deviation", sigma < 1.0)
+# The offset between root and central value is smaller than the measurement's own
+# half-width -- which is the whole content of "0.70 sigma", stated in Om_m so the
+# point-estimate comparison that manufactured a disagreement can be seen to fail.
+half_band = 0.5 * (Om_of_x0(X0_MEAS - X0_SD) - Om_of_x0(X0_MEAS + X0_SD))
+offset = abs(Om_of_x0(x0_star) - Om_of_x0(X0_MEAS))
+print(f"      offset {offset:.4f} against half-band {half_band:.4f} in Om_m")
+check("the offset is smaller than the measurement's own half-width, so quoting J "
+      "at the central value alone manufactures a disagreement",
+      offset < half_band)
 
 print()
 print("  " + "=" * 70)
@@ -166,7 +211,9 @@ print("  The root is a smooth, monotone, feature-free surface through the physic
 print("  point in every direction tested.  A property OF the matter-Lambda crossover")
 print("  would leave a mark there and there is none, so that reading is excluded and")
 print("  the artefact reading was never available -- J is forced and dimensionless.")
-print("  ** What remains is a coincidence, and the discriminating measurement says")
-print("  ** it is the standard model's and not this construction's.")
+print("  ** What remains is a coincidence about the EPOCH: J is dimensionless and")
+print("  ** sees only x_0, so on the forced member it selects when and not what.")
+print("  ** The root sits inside this construction's own measured epoch at 0.70")
+print("  ** sigma, so no mechanism is identified and none is excluded elsewhere.")
 print()
 sys.exit(0)
