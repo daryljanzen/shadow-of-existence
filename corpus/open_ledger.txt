@@ -177,6 +177,20 @@ acac81b1d1 | CR_framework | REGISTERED | The full-spectrum likelihood comparison
 # or delete it if the paper really did drop the claim.
 # ⛭ r4168: the TWO blocks two merges had left here are consolidated into this one.
 #   Two headers over two sets of rows read as two mechanisms; there is one.
+# ⛭ r4263: 04f0db9a53 is RETIRED rather than re-homed, and this note is why.  It was the r4259
+#   row on P18's frontier statement of the rejection.  That statement is not gone -- it MOVED, to
+#   the confrontation in sec:acoustic where the numbers now live, and the frontier points back to
+#   it rather than restating them.  Its verdict is carried forward on the two rows that replace it
+#   (45f7e8d0eb at the confrontation, a32cdf3fb7 on the frontier list), both REGISTERED at PO-24.
+#   ** The home is PO-24 and not PO-13: PO-13 was the acoustic COMPUTATION, which is run. **
+# ⛭ r4263: 716b1aa2d0 is RETIRED rather than re-homed, and this note is why.  Its verdict read
+#   "carried by PO-35, and the corpus's own measurement says it tracks the standard value rather
+#   than this construction's".  PO-35 is CLOSED and that verdict is WITHDRAWN: the normalisation
+#   is DERIVED, from a growth equation that loses its parameters on this construction's rate, with
+#   the balance pivoting on the deceleration-to-acceleration turnover.  The paper's sentence was
+#   rewritten to the worked claim, so there is no qualification left to carry a verdict -- what the
+#   passage now states as its own bound (the root derived is the STANDARD normalisation's, the
+#   perturbations being assigned to the leaf) is stated in the paper rather than owed.
 # ⛭ r4168: 0b2ff5944b is RETIRED rather than re-homed, and this note is why.  Its claim
 #   was "Until it is run the acoustic comparison is open, and the peak spacing, the acoustic
 #   phase and the peak heights are quantities this construction does not here report."  The
@@ -198,8 +212,8 @@ acac81b1d1 | CR_framework | REGISTERED | The full-spectrum likelihood comparison
 # d69ba0f0a5 | CR_cosmology | SCOPE-BY-DESIGN | \emph{Carried to four phases at the depth the fit requires, the asymptotic phase spans $0.891$ in $\phi/\pi$, and the control's $0.263$ lies inside that span.} \emph{But a span of  ## ⛭ WORKED r3934 (node 60), item 48 -- ** the `SCOPE-BY-DESIGN` class read whole, 28 unmarked rows across 13 papers, twelve of them carrying no note. **  *This row's declination, in the paper's own words: `PAT` matched `not yet` and the sentence runs "\emphCarried to four phases at the depth the fit requires, the asymptotic phase spans $0.891$ in $\phi/\".*  ⇒ ** THE CLASS FINDING: the corpus declines in NINE distinct forms across these 28 ** -- *`we claim no X`, `we do not claim`, `we state it at that strength and no higher`, `we record what that agreement is and is not`, `recalled rather than derived`, `is not settled by`, `what is not claimed:`, `what stays open` (naming a home), and two SECTION HEADINGS (`\section{Scope and what is open}`, `\section{What stays open}`).*  ⌗ *So the heading shape now appears in a THIRD class, after `METHOD-PROSE` (item 44) and `DO-NOT-ASSERT` (item 47).*  ⛔ ** AND I BUILT A NARROW FILTER AGAIN, ONE ITEM AFTER WRITING THE RULE AGAINST IT. **  *At `r3932` I recorded "before trusting a filter's MISSES, read three of them", then swept this class with a pattern that returned EIGHTEEN of 28 as having no declination -- including "We claim no novelty in the mechanism" and "We claim no construction here".  ** The rule was one commit old and I did not apply it to the next sweep I wrote. **  Read rather than reported, and the true figure is ZERO: every one of the 28 declines explicitly.*  [read r3934]
 2f8cd5e32c | CR_synthesis | METHOD-PROSE | the synthesis stating its own inclusion rule -- impossibilities belong with the dissolutions and declines are not frontier items. A rule about the list, not a claim about the world
 59cf35b525 | CR_synthesis | DO-NOT-ASSERT | the colour flatness stated as a COMPLETE obstruction rather than an unreached stage -- the paper asserting a bound, not withholding one. Nothing owed; the corpus shows it rather than conceding it
-6036db8690 | CR_synthesis | REGISTERED | the acoustic deficit named as the paper's largest open item -- carried by PO-13, measured and without a mechanism
-716b1aa2d0 | CR_synthesis | REGISTERED | the growth-factor normalisation at the concordance density -- carried by PO-35, and the corpus's own measurement says it tracks the standard value rather than this construction's
+45f7e8d0eb | CR_synthesis | REGISTERED | the question left standing at the acoustic confrontation -- carried by PO-24. The likelihood is run and it rejects this arm's spectrum on TT shape; what is open is narrower than a mechanism, namely whether the deficit producing the rejection is physical or instrumental, with the wavenumber truncation and the projection path both removed and the positions grid-converged
+a32cdf3fb7 | CR_synthesis | REGISTERED | the same question carried on the frontier list, pointing back to the confrontation rather than restating its numbers -- carried by PO-24
 8a74147cb0 | CR_synthesis | REGISTERED | the ultraviolet definition of the mode sums -- carried by PO-23, with P07's standing beside it: the same wall any interacting QFT meets, the established results standing independent of its resolution
 906d49267a | CR_synthesis | METHOD-PROSE | 'stated here at that weight and at no other' -- the paper marking a reading as a reading. Prose about how a claim is carried, not a claim
 b3e1f476d9 | CR_synthesis | SCOPE-BY-DESIGN | whether the rate-to-scale reversal extends -- P04 declines it explicitly and hands it to the companion. Outside the measurement's scope by design
@@ -207,4 +221,3 @@ df46c00cf8 | CR_synthesis | REGISTERED | the low-multipole depth open at up to a
 febccfcbbb | CR_synthesis | DO-NOT-ASSERT | the closure named as the THESIS rather than a further theorem -- a conjecture labelled one, decidable by a named test. The corpus's most exposed over-claim, held down deliberately
 f576f26eb9 | CR_synthesis | REGISTERED | whether a dynamical charged collapse forms the Cauchy horizon -- carried by PO-25, and a question about general relativity's own interior rather than this construction's; the cosmogenesis is untouched either way, its hypotheses naming no charge
 95b7866b6e | CR_synthesis | REGISTERED | whether a fermion sector can be built on the compact face -- carried by PO-26, well posed and bounded from two directions, with its motivation settled at r4245 and no ontological claim riding on the outcome
-04f0db9a53 | CR_synthesis | REGISTERED | the acoustic spectrum is REJECTED on TT shape rather than carrying an open residual -- carried by PO-13, and what is open is whether the deficit producing it is physical or instrumental, the two named instrument faults being removed and the positions grid-converged
