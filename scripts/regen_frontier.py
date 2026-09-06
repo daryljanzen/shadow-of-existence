@@ -97,6 +97,21 @@ EST = {
         '1e80 baryons even the lab bound 1e-21 on |q_p+q_e|/e gives 1e59 net charges and an inner horizon near '
         '1e19 m. The progenitor is ORDINARY MATTER and ordinary matter is neutral because it is made of atoms, so '
         'Q=0 is inherited from the content rather than imposed on the geometry.'),
+    'PO-24': ('the bespoke transfer -- REACH THE ACOUSTIC PEAKS', 1, 1, 6, None,
+        'r3815: PO-12 was struck at r2702 as discharged, and the strike discharged the COMPONENTS -- driving in '
+        'closed form, source removal, the branch-point join, the super-horizon transfer, the onset shown spent. '
+        'P15 asks for what they do not add up to: the end-to-end transfer that confirms the height pattern digit '
+        'by digit. C22 names the gap itself -- it reaches low-ell (7.5% deficit, absent early ISW) and high-ell '
+        '(0.843 at l_D to 0.459 at 2 l_D) and states that BETWEEN them, the acoustic peaks, the chain does not '
+        'reach, Phi decaying by order two with k-dependence k^2/3H. AND THE TWO INSTRUMENTS MUST NOT BE CONFUSED: '
+        'PO-10s strike got LCDM P1/P2 = 2.200 and CR 2.185 THROUGH CAMB with a suppression factor on the CR arm, '
+        'a legitimate comparison and not a bespoke transfer. AND THE SECOND INSTRUMENT WORKS, r3870 (60): the '
+        'control run PO-24 asked for FIRST comes out the other way. The recorded LCDM 2.721 / 4.496 were TWO '
+        'instrument-configuration faults compounding, not a height-machinery defect -- the k-integral was '
+        'truncated at k_max = l_max/D_M where it is not converged (2.721 -> 2.393 on one path when k_max is '
+        'raised), and los_spectrum omits the polarisation source that _project carries. With both fixed the '
+        'control lands at P1/P2 = 2.197 against CAMBs 2.200 -- 0.14% -- with every peak within 9 of the skys. '
+        'The fork is settled REPAIR: the two-arm architecture carries the transfer (C59).'),
     'PO-23': ('the ultraviolet definition of the mode sums — ATTEMPT IT', 1, 1, 4, None,
         'r3809: NEVER ATTEMPTED, which is the whole of its state. P07 names three parts to "the definition of the '
         'interacting tower" and TWO ARE SETTLED: the spectrum of Gamma-hat is computable branch by branch, and it is '
@@ -176,12 +191,12 @@ KIND = {'PO-13': 'BUILD', 'PO-36': 'READ', 'PO-33': 'BUILD',   # r4145: was READ
 
 # ** PO-23 added r3809: the ultraviolet definition of the mode sums, the one part of P07's
 # three-part 'definition of the interacting tower' that is neither settled nor attempted. **
-ORDER = ['PO-13', 'PO-36', 'PO-30', 'PO-25', 'PO-26', 'PO-29', 'PO-31', 'PO-23', 'PO-15', 'PO-14', 'PO-17', 'PO-18', 'PO-19', 'PO-20']
+ORDER = ['PO-13', 'PO-24', 'PO-36', 'PO-30', 'PO-25', 'PO-26', 'PO-29', 'PO-31', 'PO-23', 'PO-15', 'PO-14', 'PO-17', 'PO-18', 'PO-19', 'PO-20']
 GROUP = {'PO-13': 'D', 'PO-14': 'A', 'PO-15': 'C', 'PO-16': 'D',
          # ** r3095: the four brought in from p0's frontiers and the field ledgers.  PO-17 and
          # PO-19 are substrate geometry; PO-18 is the constant ledger; PO-20 is analysis. **
          'PO-17': 'E', 'PO-18': 'E', 'PO-19': 'E', 'PO-20': 'E',
-         'PO-23': 'C', 'PO-25': 'E', 'PO-26': 'A', 'PO-27': 'A', 'PO-29': 'E', 'PO-31': 'D', 'PO-30': 'A', 'PO-36': 'D', 'PO-34': 'E'}
+         'PO-23': 'C', 'PO-24': 'D', 'PO-25': 'E', 'PO-26': 'A', 'PO-27': 'A', 'PO-29': 'E', 'PO-31': 'D', 'PO-30': 'A', 'PO-36': 'D', 'PO-34': 'E'}
 GNAME = {'A': 'the matter sector', 'B': 'the matter sector', 'C': 'the quantum sector',
          'D': 'the cosmology', 'E': 'the substrate geometry'}
 
