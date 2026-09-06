@@ -9,6 +9,14 @@ of that reading laid over a smooth null generator.  That statement is scoped to 
 COSMOLOGICAL face.  This receipt establishes that it does not extend to the collapse
 face, and that the reason is structural rather than a gap.*
 
+COMPUTES: scope.
+  * `alpha = 1` sets the unit of length, so eta(X,B) and every radius below are dimensionless.
+  * `tau` is a SWEEP over the slice family, not a pinned epoch: the horosphere property is checked
+    along it rather than at one value.
+  * The discriminant and its vanishing are DERIVED from the horizon cubic; no root is assigned.
+  * The collapse face enters only through its limiting causal direction, taken from P01 as a
+    structural fact, so no mass or metric parameter is pinned for it.
+
 ** THE CONSTRUCTION'S OWN REQUIREMENT IS ORTHOGONALITY. **  P08 builds the
 synchronous slices as the level sets of eta(X,B) for the past null generator B, and
 computes eta(X,B) = (1/2) alpha^2 exp(tau/alpha) -- independent of the transverse

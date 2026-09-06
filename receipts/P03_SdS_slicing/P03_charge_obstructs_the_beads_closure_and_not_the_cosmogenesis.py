@@ -10,6 +10,15 @@ becomes a timelike Reissner-Nordstrom singularity rather than the branch point
 through which the signed radius passes onto the conjugate branch.  So the charged
 closed loop has no branch point to close through.*
 
+COMPUTES: scope.
+  * `alpha = 1` sets the unit of length; every radius is quoted in units of alpha and each
+    comparison below is dimensionless.
+  * `Q` is a SWEEP variable, not a pinned value: the obstruction is exhibited across Q != 0 and
+    the Q -> 0 limit is taken to show the uncharged bead recovering its branch point.
+  * The masses at which roots collide are DERIVED from the horizon relation, not assigned.
+  * No cosmological quantity enters; the cosmogenesis theorem's hypotheses are checked for the
+    presence of charge rather than evaluated at one.
+
 ** THE QUESTION THIS RECEIPT ANSWERS IS WHAT THAT COSTS, and the answer is that two
 different claims were being carried as one. **
 

@@ -17,6 +17,16 @@ AND x_0 IS THE EXPANSION READ IN UNITS OF THE GEOMETRY'S OWN FIXED OFFSET. **
 geometric parameter left for x_0 to be.  This receipt establishes that (ii) and (iii)
 are right and that (i) misnames x_0. **
 
+COMPUTES: scope.
+  * `alpha = 1` throughout -- the substrate curvature radius sets the unit of length, so every
+    radius below is quoted in units of alpha and the results are dimensionless.
+  * The Nariai mass is not an input: it is obtained as the double root of the horizon cubic,
+    2M = r_0 - r_0^3, so `M` and `r_0 = alpha/sqrt3` are DERIVED here rather than pinned.
+  * `x_0` is the quantity under test.  It is computed from the geometry, never assigned, and the
+    claim is precisely that it carries no freedom once alpha is fixed.
+  * No cosmological parameter (H_0, Omega_m, z) enters the derivation; the epoch appears only as
+    the clock reading the result identifies it to be.
+
 ** THE OFFSET IS FIXED, BY TWO INDEPENDENT ROUTES. **
   P03: the offset r_0 is a root of the horizon cubic, 2M = r_0 - r_0^3 (alpha = 1).
        At the Nariai mass the cubic has a DOUBLE root, which fixes r_0 = alpha/sqrt3.
