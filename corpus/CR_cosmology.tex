@@ -1094,7 +1094,39 @@ $0.7\sigma$, and with no fit performed here.  \emph{What makes the equation wort
 not contain}: $z_{\mathrm{acc}}$ is a redshift, measured calibration-free, so it is untouched by the
 distance-ladder tension, and it fixes $x_{0}$ without $H_{0}$, without a ladder and without the microwave
 background.  The single dimensionful scale is where any disagreement must then live, and the age follows
-from the same parameter in closed form, $t_{0}=(2r_{N}/\sqrt3\,c)\operatorname{asinh}(x_{0}^{3/2}/\sqrt2)$. The late-time acceleration is thus read off the same structure that fixes the local boundary of a bound system. \emph{This cosmology adds no such part.} Causal contact, isotropy, flatness, phase coherence, and scale-free transmission are read off structure the construction already contains---the isotropizing throat (\S\ref{sec:throat}), the null boundary on which coherence \emph{is} the characteristic-data condition (\S\ref{sec:coherence}), the exactly Euclidean constant-time slice (\S\ref{sec:largescale}), the degenerate horizon that transmits rather than imprints (\S\ref{sec:transmission})---each fixed by $\Lambda$ alone, with no parameter free to produce it. This is the distinction between a structure that \emph{requires} a phenomenon and one that merely \emph{permits} it through adjustable apparatus~\cite{JanzenShadowExistence,JanzenModernParallax}, and it is the criterion by which competing frameworks are rightly weighed ahead of the measurement that will decide between them.
+from the same parameter in closed form, $t_{0}=(2r_{N}/\sqrt3\,c)\operatorname{asinh}(x_{0}^{3/2}/\sqrt2)$. The late-time acceleration is thus read off the same structure that fixes the local boundary of a bound system.
+
+\emph{And the growth sector, written on this rate, loses its parameters entirely --- which turns a known
+numerical curiosity into a statement about the epoch.} Substituting $H=(c/\alpha)\coth u$ and the Friedmann
+readout's $4\pi G\rho=\tfrac32(c/\alpha)^{2}\operatorname{csch}^{2}u$ into the growth equation and changing to
+$u$, every factor of $(c/\alpha)^{2}$ divides out:
+\begin{equation}\label{eq:growth-native}
+3D''+4\coth(u)\,D'-2\operatorname{csch}^{2}(u)\,D=0 .
+\end{equation}
+\emph{The scale does not merely fail to appear---it cancels}, because at Nariai the source is fixed by
+$\Lambda$ and the time variable carries $\alpha$ too. \emph{The decaying mode is the rate itself},
+$D_{-}=\coth u=H\alpha/c$, and reduction of order gives
+$D_{+}=\coth u\int_{0}^{u}\sinh^{2/3}v\,\operatorname{sech}^{2}v\,\dd v$. \emph{And the matter fraction is a
+clock reading}: $\cosh^{2}u=1/\Omega_m$ exactly, so $\Omega_m=\operatorname{sech}^{2}u$.
+
+\emph{On these variables the normalisation of the standard growth factor} ---
+$J(\Omega_m)=\int_{0}^{\infty}(1+z)\,\dd z/[\Omega_m(1+z)^{3}+1-\Omega_m]^{3/2}$, \emph{known to cross unity
+once near the concordance density}~\cite{JanzenGrowthNorm} --- \emph{becomes
+$J=\tfrac23\cosh^{2}u_{0}\,(D_{+}/a)|_{0}$, whose matter-domination limit
+$D_{+}/a\to\tfrac35$ returns the analytic endpoint $J\to\tfrac25$.} Differentiating the condition $J=1$ gives
+an exact identity between the two sides' derivatives, $\propto\tfrac92\Omega_m-2$, and integrating it from the
+common origin leaves
+\begin{equation}\label{eq:moment-balance}
+\int_{0}^{u_{0}} a(v)\,\Omega_m(v)\bigl[\Omega_m(v)-\tfrac23\bigr]\,\dd v \;=\; 0 ,
+\end{equation}
+\emph{the growth-weighted history of $\Omega_m$ balanced about $\tfrac23$}\rcpt{P15_the_growth_root_is_a_moment_balance_pivoting_on_the_nariai_radius}.
+
+\emph{And the pivot is not a number but a locus.} $\Omega_m=\tfrac23$ is $\rho_m/\rho_\Lambda=2$ exactly ---
+the deceleration-to-acceleration turnover --- at which the areal radius is $\alpha/\sqrt3=r_{N}$: \emph{the
+Nariai radius, the front seam, the merged double root}. \eqref{eq:moment-balance} is solved at
+$\Omega_m=0.31516$. \emph{So the density at which that normalisation equals unity is fixed by a
+parameter-free equation whose only landmark is the radius this cosmology's member is defined by}, and what
+remains contingent is that the present epoch lies near it. \emph{This cosmology adds no such part.} Causal contact, isotropy, flatness, phase coherence, and scale-free transmission are read off structure the construction already contains---the isotropizing throat (\S\ref{sec:throat}), the null boundary on which coherence \emph{is} the characteristic-data condition (\S\ref{sec:coherence}), the exactly Euclidean constant-time slice (\S\ref{sec:largescale}), the degenerate horizon that transmits rather than imprints (\S\ref{sec:transmission})---each fixed by $\Lambda$ alone, with no parameter free to produce it. This is the distinction between a structure that \emph{requires} a phenomenon and one that merely \emph{permits} it through adjustable apparatus~\cite{JanzenShadowExistence,JanzenModernParallax}, and it is the criterion by which competing frameworks are rightly weighed ahead of the measurement that will decide between them.
 
 The transmission dichotomy (\S\ref{sec:transmission}) is where that distinction is sharpest, because there the two frameworks make opposite structural commitments about one object. A non-degenerate horizon's exponential approach imprints a scale-invariant spectrum---the very mechanism by which inflation produces near-scale-invariance---while the degenerate Nariai seam carries no scale and transmits the progenitor spectrum unaltered. Inflation accommodates the observed tilt because a freely specified potential can be tuned to it; reading that fit as a confirmation mistakes a model with enough adjustable structure to match for one that required what was found (\S\ref{sec:predictions}). This cosmology cannot tune: the degeneracy \emph{requires} that the branch point not imprint a scale, so the framework has no inflationary scale-invariant attractor, no consistency relation, and no substrate-sourced primordial $B$-modes. The amplitude and tilt it does not derive it inherits, exactly as flat $\Lambda$CDM inherits the baryon-to-photon ratio from a baryogenesis it does not model; on that single datum, of the same kind and count the standard model already carries, the two stand level. A framework is credited for requiring the structure it explains, not faulted for measuring the boundary data it does not---and the asymmetry falls on everything else.
 
@@ -1123,6 +1155,8 @@ a length. \emph{The branch point is crossed by continuation, not traversed by a 
 \ldgappendix{appendix_ledgers_P15}
 
 \begin{thebibliography}{9}
+\bibitem{JanzenGrowthNorm} D.~Janzen, \emph{A curious normalization of the $\Lambda$CDM linear growth factor}, Res.\ Notes AAS (2025).
+
 \bibitem{JanzenFQXi2012} D.~Janzen, \emph{A Critical Look at the Standard Cosmological Picture}, FQXi essay contest (2012); \texttt{arXiv:1301.5980}.
 
 \bibitem{JanzenAlgebroid} D.~Janzen,
