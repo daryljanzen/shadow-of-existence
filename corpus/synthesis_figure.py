@@ -24,42 +24,79 @@ al=1.0; M2=2/(3*np.sqrt(3)); A=(M2*al**2)**(1/3); zmax=2
 LET=22; TIT=17; AX=16; TK=13; AN=14
 
 # ============ (B) the de Sitter substrate hyperboloid ============
+# Rebuilt r4267, analytically.  Surface -X0^2+X1^2+X2^2 = al^2, waist X0=0 = THE RING.
+# Rulings are STRAIGHT ambient lines tangent to the ring at t=0:
+#     L_{A,B}(t) = (al cos@ -/+ t sin@ , al sin@ +/- t cos@ , t)
+# HINGES run parallel to the axis at rho=2al and meet the surface where
+#     4al^2 - X0^2 = al^2  =>  X0 = +/- sqrt3 al   -- the six PUNCTURES.
+# LAP LOCI derived on the Nariai member from f(r)=1-2M/r-r^2/al^2, M=al/(3sqrt3):
+#     f=0 seam r=al/sqrt3 ; f=1 turnaround r^3=-2M al^2 ; f=2 Euclidean null
+#     r^3+al^2 r+2M al^2=0 ; branch point r=0.  Azimuth by phi = 2 pi r /(sqrt3 al),
+#     i.e. the panel's own 207.8461 deg per unit r, anchored at the branch point.
 axA=fig.add_subplot(gs[0,1],projection='3d')
-# Nariai slicing bead = fundamental cosmological worldline on dS4: blue ruling in -> 120deg arc -> r=0 -> red 240deg arc -> red ruling out.
-# spun 20x = the representative bundle; opposite-sense conjugate bead drawn as rulings only. matter=BLUE, antimatter=RED.
-_r2=np.sqrt(2); _S=np.array([0,-1.0,0]); _sp=np.linspace(0,1.6,2); _zcm=1.15
-_din=np.array([-1,0,1.0])/_r2; _dout=np.array([1,0,-1.0])/_r2
-_dou=np.array([1,0,1.0])/_r2;  _dod=np.array([-1,0,-1.0])/_r2
-_phb=np.deg2rad(np.linspace(270,390,120)); _barc=np.array([np.cos(_phb),np.sin(_phb),0*_phb])
-_phr=np.deg2rad(np.linspace(390,630,220)); _rarc=np.array([np.cos(_phr),np.sin(_phr),0*_phr])
-def _ln(d): return _S[:,None]+np.outer(d,_sp)
-def _rz(P,psi):
-    c,sn=np.cos(psi),np.sin(psi); x,y,z=P; return np.array([x*c-y*sn,x*sn+y*c,z])
-def _pl(P,psi,col,lw,al): Q=_rz(P,psi); axA.plot(Q[0],Q[1],Q[2],color=col,lw=lw,alpha=al)
-_zzp=np.linspace(-_zcm,_zcm,40); _RRp=np.sqrt(1+_zzp**2)
-for _phi in np.linspace(0,2*np.pi,16)[:-1]: axA.plot(_RRp*np.cos(_phi),_RRp*np.sin(_phi),_zzp,color=BLACK,lw=0.9,alpha=0.55)
-for _zcv in np.linspace(-_zcm,_zcm,9):
-    _Rc=np.sqrt(1+_zcv**2); _ph=np.linspace(0,2*np.pi,120); axA.plot(_Rc*np.cos(_ph),_Rc*np.sin(_ph),_zcv+0*_ph,color=GREY,lw=1.0,alpha=0.5)
-for _k in range(20):
-    _psi=2*np.pi*_k/20
-    _pl(_ln(_din),_psi,BLUE,1.0,0.6); _pl(_barc,_psi,BLUE,1.0,0.6)
-    _pl(_rarc,_psi,RED,1.0,0.6);      _pl(_ln(_dout),_psi,RED,1.0,0.6)
-    _pl(_ln(_dou),_psi,RED,1.0,0.6);  _pl(_ln(_dod),_psi,BLUE,1.0,0.6)
-_pl(_ln(_din),0,BLUE,3.0,1.0); _pl(_barc,0,BLUE,3.0,1.0); _pl(_rarc,0,RED,3.0,1.0); _pl(_ln(_dout),0,RED,3.0,1.0)
-# --- the lap's loci on the bold bead: ALL BLACK, turnaround a SQUARE (matches the triptych) (r2099) ---
-_LOCI=[(270.0,'seam','o'),(390.0,r'$r=0$','o'),(461.53,'unit speed','D'),(541.19,'turnaround','s')]
-# 461.53 = 390 + 71.53: the LIFT's interior crossing of dr/ds=1 (r=-0.344142), found r2118.
-# All four loci sit on ONE linear map, 207.8461 deg per unit r: turnaround 151.19, r=0 240, front seam 120.
-for _ang,_lab,_mk in _LOCI:
-    _a=np.deg2rad(_ang)
-    axA.scatter([np.cos(_a)],[np.sin(_a)],[0],color=BLACK,s=46,marker=_mk,depthshade=False,
-                edgecolors='w',linewidths=.8,zorder=14)
-    axA.text(1.45*np.cos(_a),1.45*np.sin(_a),0.10,_lab,fontsize=AN-1.5,color=BLACK,ha='center',zorder=15)
+_MN=al/(3*np.sqrt(3)); _f=lambda r: 1-2*_MN/r-r**2/al**2
+_rs=al/np.sqrt(3); _rt=-(2*_MN*al**2)**(1/3)
+_rt3=np.roots([1,0,al**2,2*_MN*al**2]); _re=float([x.real for x in _rt3 if abs(x.imag)<1e-12][0])
+assert abs(_f(_rs))<1e-12 and abs(_f(_rt)-1)<1e-12 and abs(_f(_re)-2)<1e-12
+_lap=lambda r: (np.rad2deg(2*np.pi*r/(np.sqrt(3)*al))+240.0)%360.0   # 0 at the BACK seam
+_S3=np.sqrt(3)*al; _ZC=1.95; _N=24
+_HL=np.deg2rad(-90.0)                       # the bold bead's tangency, toward the reader
+
+def _rul(th,t,sense):
+    sg=1.0 if sense=='A' else -1.0
+    return (al*np.cos(th)-sg*t*np.sin(th), al*np.sin(th)+sg*t*np.cos(th), t)
+
+_zz=np.linspace(-_ZC,_ZC,40); _RR=np.sqrt(al**2+_zz**2)
+for _phi in np.linspace(0,2*np.pi,16)[:-1]:
+    axA.plot(_RR*np.cos(_phi),_RR*np.sin(_phi),_zz,color=BLACK,lw=0.7,alpha=0.30)
+for _zcv in np.linspace(-_ZC,_ZC,9):
+    _Rc=np.sqrt(al**2+_zcv**2); _ph=np.linspace(0,2*np.pi,120)
+    axA.plot(_Rc*np.cos(_ph),_Rc*np.sin(_ph),_zcv+0*_ph,color=GREY,lw=0.9,alpha=0.42)
+
+_tlo=np.linspace(-_ZC,0,60); _thi=np.linspace(0,_ZC,60)
+for _k in range(_N):
+    _th=2*np.pi*_k/_N
+    for _sn,_c0,_c1 in (('A',RED,BLUE),('B',BLUE,RED)):
+        for _tt,_cc in ((_tlo,_c0),(_thi,_c1)):
+            _x,_y,_z=_rul(_th,_tt,_sn); axA.plot(_x,_y,_z,color=_cc,lw=0.75,alpha=0.55)
+
+_ph=np.linspace(0,2*np.pi,400)
+axA.plot(al*np.cos(_ph),al*np.sin(_ph),0*_ph,color=BLACK,lw=1.4,alpha=0.75)
+_lp=np.linspace(0,2*np.pi,300)
+for _i in range(len(_lp)-1):
+    _a=_HL+_lp[_i:_i+2]
+    axA.plot(al*np.cos(_a),al*np.sin(_a),[0,0],
+             color=RED if _lp[_i]<4*np.pi/3 else BLUE,lw=4.2,solid_capstyle='round')
+for _tt,_cc in ((_tlo,RED),(_thi,BLUE)):
+    _x,_y,_z=_rul(_HL,_tt,'A'); axA.plot(_x,_y,_z,color=_cc,lw=3.0)
+
+_LOCI=[(0.0,'seam','o',_rs),(_lap(_rt),'turnaround','s',_rt),
+       (_lap(_re),'unit speed','D',_re),(240.0,r'$r=0$','o',0.0)]
+for _ang,_lab,_mk,_rv in _LOCI:
+    _a=_HL+np.deg2rad(_ang)
+    axA.scatter([al*np.cos(_a)],[al*np.sin(_a)],[0],color=BLACK,s=46,marker=_mk,
+                depthshade=False,edgecolors='w',linewidths=.8,zorder=14)
+    axA.text(1.80*al*np.cos(_a),1.80*al*np.sin(_a),0.16,_lab,fontsize=AN-3.5,
+             color=BLACK,ha='center',zorder=15)
+
+for _n in range(3):
+    _pp=_HL+np.deg2rad(60+120*_n)
+    _zh=np.linspace(-_S3,_S3,30)
+    axA.plot(np.full_like(_zh,2*al*np.cos(_pp)),np.full_like(_zh,2*al*np.sin(_pp)),_zh,
+             color=PURPLE,lw=1.5,ls=(0,(5,3)),alpha=0.9)
+    for _sg in (+1,-1):
+        axA.scatter([2*al*np.cos(_pp)],[2*al*np.sin(_pp)],[_sg*_S3],color=PURPLE,s=52,
+                    marker='s',depthshade=False,edgecolors='k',linewidths=.8,zorder=16)
+        axA.text(2.30*al*np.cos(_pp),2.30*al*np.sin(_pp),_sg*_S3*1.06,
+                 rf'$p_{{{_n+1}}}^{{{"+" if _sg>0 else "-"}}}$',fontsize=AN-3.5,
+                 color=PURPLE,ha='center',zorder=17)
+
 axA.plot([],[],color=BLUE,lw=3,label='matter'); axA.plot([],[],color=RED,lw=3,label='antimatter')
-axA.plot([],[],color=BLACK,lw=1.2,label='photons'); axA.plot([],[],color=GREY,lw=1.2,label='$S^3$')
-axA.view_init(elev=18,azim=-90); axA.set_box_aspect((1,1,0.9),zoom=1.2); axA.set_axis_off()
+axA.plot([],[],color=BLACK,lw=1.2,label='the ring'); axA.plot([],[],color=PURPLE,lw=1.5,ls=(0,(5,3)),label='hinges')
+axA.view_init(elev=17,azim=-68); axA.set_box_aspect((1,1,1.02),zoom=1.30); axA.set_axis_off()
 axA.text2D(0.0,1.03,r'(B) the $dS_4$ background',transform=axA.transAxes,fontsize=TIT,va='bottom',fontweight='bold')
-axA.legend(loc='upper left',fontsize=AN-1,frameon=True)
+axA.legend(loc='lower left',fontsize=AN-4,frameon=True,framealpha=.88,
+           handlelength=1.7,borderpad=.35,labelspacing=.28,bbox_to_anchor=(-0.04,0.02))
 
 # ============ (D) the observer (tau,chi) chart ============
 axB=fig.add_subplot(gs[1,1]); X0,X1=-1.15,1.15
