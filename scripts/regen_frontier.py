@@ -38,14 +38,6 @@ EST = {
         'rather than measured. Discharged by the radius measured against independently measured BARYONIC mass. '
         'Held at weight: a baryonic-set radius is smaller, which is the OPPOSITE direction from the '
         'dark-matter evidence, so this is a discriminating measurement and not a dark-matter explanation'),
-    'PO-35': ('why the growth exponent 3/2 has its root at the concordance matter density', 1, 1, 3, None,
-        'r4183: PUBLISHED as an RNAAS note in resources -- J(Om) crosses unity once, at Om* = 0.315162, with '
-        'percent-level departures at 1 sigma, so omitting the factor biases growth-based inference toward Om*. '
-        'THE CLASS measured r4183: other exponents each have a unique root and they run smoothly '
-        '(p=1.25 -> 0.486, 1.5 -> 0.3152, 1.75 -> 0.232, 2 -> 0.183), so nothing distinguishes the VALUE -- '
-        'what is distinguished is that the exponent the growth factor REQUIRES lands at the concordance value. '
-        'And it sits at the LambdaCDM value, not this corpus: J = 0.99966 at Planck 0.3153 against 1.02142 at '
-        'the DESI-fit 0.3066, which is evidence against reading it as a feature of this construction'),
     'PO-26': ('the compact-face fermion sector -- CAN IT BE BUILT', 1, 1, 6, None,
         'r3867: opened r3861 on a WRONG PREMISE -- I framed it as whether a sector can be built on the discrete '
         'component, and P14 has built one there. P13 sec:open: two things stay genuinely open and they are '
@@ -189,7 +181,7 @@ LASTFIND = ("r3103: **PO-21 answered — the geometry lifts the obstruction but 
 # ⚠ *** A BUILD step has NO completed instance to calibrate against -- PO-11's continuum,
 # PO-6's UV definition, PO-1a's derivation.  Those are marked BUILD and their estimates
 # are declared unmeasured rather than dressed as measured. ***
-KIND = {'PO-13': 'BUILD', 'PO-35': 'READ', 'PO-36': 'READ', 'PO-33': 'BUILD',   # r4145: was READ, scoped when the diagnosis looked answered; it is not
+KIND = {'PO-13': 'BUILD', 'PO-36': 'READ', 'PO-33': 'BUILD',   # r4145: was READ, scoped when the diagnosis looked answered; it is not
          'PO-14': 'BUILD', 'PO-15': 'READ', 'PO-16': 'READ',
         # ** brought in r3095 from p0's frontiers and the field ledgers, which carried them
         # unregistered.  PO-17 is a DECISION stated without being claimed both ways; PO-18 an
@@ -199,12 +191,12 @@ KIND = {'PO-13': 'BUILD', 'PO-35': 'READ', 'PO-36': 'READ', 'PO-33': 'BUILD',   
 
 # ** PO-23 added r3809: the ultraviolet definition of the mode sums, the one part of P07's
 # three-part 'definition of the interacting tower' that is neither settled nor attempted. **
-ORDER = ['PO-13', 'PO-24', 'PO-35', 'PO-36', 'PO-30', 'PO-25', 'PO-26', 'PO-29', 'PO-31', 'PO-23', 'PO-15', 'PO-14', 'PO-17', 'PO-18', 'PO-19', 'PO-20']
+ORDER = ['PO-13', 'PO-24', 'PO-36', 'PO-30', 'PO-25', 'PO-26', 'PO-29', 'PO-31', 'PO-23', 'PO-15', 'PO-14', 'PO-17', 'PO-18', 'PO-19', 'PO-20']
 GROUP = {'PO-13': 'D', 'PO-14': 'A', 'PO-15': 'C', 'PO-16': 'D',
          # ** r3095: the four brought in from p0's frontiers and the field ledgers.  PO-17 and
          # PO-19 are substrate geometry; PO-18 is the constant ledger; PO-20 is analysis. **
          'PO-17': 'E', 'PO-18': 'E', 'PO-19': 'E', 'PO-20': 'E',
-         'PO-23': 'C', 'PO-24': 'D', 'PO-25': 'E', 'PO-26': 'A', 'PO-27': 'A', 'PO-29': 'E', 'PO-31': 'D', 'PO-30': 'A', 'PO-36': 'D', 'PO-35': 'D', 'PO-34': 'E'}
+         'PO-23': 'C', 'PO-24': 'D', 'PO-25': 'E', 'PO-26': 'A', 'PO-27': 'A', 'PO-29': 'E', 'PO-31': 'D', 'PO-30': 'A', 'PO-36': 'D', 'PO-34': 'E'}
 GNAME = {'A': 'the matter sector', 'B': 'the matter sector', 'C': 'the quantum sector',
          'D': 'the cosmology', 'E': 'the substrate geometry'}
 

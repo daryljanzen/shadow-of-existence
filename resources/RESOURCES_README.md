@@ -54,6 +54,23 @@ reads, cites and in places verifies against. `KICKOFF_ARTHUR` described it as *"
 Space-Time — deep primary sources, for reworking foundations"*, and marked it **on-demand reference, not a
 spin-up read**.
 
+
+> ⛭ **SETTLED `r4247` --- the coincidence is the standard model's, and the crossover reading is excluded.**
+> *`PO-35` asked whether $J(\Omega_m^\star)=1$ is a coincidence, an artefact of some analysis, or a property of
+> the growth factor at the matter--$\Lambda$ crossover.* ⛔ ***The artefact reading was never available***:
+> $J$ is a forced, dimensionless function of $\Omega_m$ alone, its integrand's form fixed by the growth
+> equation, and the published root reproduces to six figures. ⛔ ***And the crossover reading is excluded by
+> the decisive test***: *embed the integral in its natural families --- the exponent $p$, the dark-energy
+> equation of state $w$, the curvature --- and the root $\Omega^\star$ is **smooth, monotone and
+> feature-free** through $p=3/2$, through $w=-1$ and through flatness, **with the physical point not
+> stationary in any of them**. A property OF the crossover would leave a mark there. There is none.*
+> ⇒ ***What remains is a coincidence***, *and the discriminating measurement says whose*: $J=0.99966$ at
+> Planck's $0.3153$, agreement to $0.03\%$, but $J=1.02142$ at this corpus's own DESI DR2 fit of $0.3066$, a
+> $2.1\%$ miss. **It tracks the standard density and not the geometric rate's.**
+> ⌗ *Receipt `P15_the_growth_normalisation_root_has_no_feature_at_the_physical_point`. The note's own
+> practical point --- that omitting the factor biases growth-based inference toward $\Omega_m^\star$ --- is
+> untouched and was never what the row asked.*
+
 ## Present
 | | |
 |---|---|
