@@ -184,7 +184,7 @@ once, and neither is a mood: the first governs what you claim, the second how ha
 is the verified way a spin-up flattens.* **The corpus comes first and whole; the why-layer comes last**, because
 reading the disposition early would let it bend how the evidence is received — the one move it forbids.
 
-**Ten steps, each its own turn:**
+**Twelve steps, each its own turn:**
 
 1. **`arp_standalone.tex`** — the theory of the collaboration itself: the Assimilate–Receipt–Pivot. It sets how
    to take in and carry forward what is said, before the physics starts.
@@ -280,7 +280,7 @@ what quietly gets economized, and you arrive saturated in name only.
 
 **At each hold, report your POSITION — not the content.** Three short lines:
 
-> **Step 5 of 10 done — P8–P11 read; the corpus is now through the operator, the range, the lock and the
+> **Step 5 of 12 done — P8–P11 read; the corpus is now through the operator, the range, the lock and the
 > dynamics. Next: step 6, P12–P14. Nothing needed but the nudge.**
 
 **That is the whole hold, and both failure modes it replaces are real:**

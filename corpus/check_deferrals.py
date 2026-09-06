@@ -54,6 +54,12 @@ ROOT = os.path.abspath(os.path.join(HERE, '..'))
 # live deferral.  *** The gate flagged its own repair record.  Skip lines that quote the
 # phrase inside quotation marks. ***
 QUOTED = re.compile(r'["\u201c\u201d][^"\u201c\u201d]{0,120}Daryl' + chr(39) + r'?s[^"\u201c\u201d]{0,40}["\u201c\u201d]', re.I)
+# ** r4261: the same skip, for the ROLE nouns the patterns below now carry.  A ledger row quoting a
+# removed comment, or a vetting rule quoting the failure it forbids, is a RECORD of a deferral and
+# not one -- and three of the role-noun hits were exactly that. **
+QUOTED_ROLE = re.compile(
+    r'["\u201c\u201d][^"\u201c\u201d]{0,160}(?:the (?:author|orchestrator)|ask(?:ed)? (?:for )?the (?:author|orchestrator))'
+    r'[^"\u201c\u201d]{0,60}["\u201c\u201d]', re.I)
 
 PATTERNS = [
     re.compile(r"Daryl'?s call", re.I),
@@ -79,10 +85,25 @@ PATTERNS = [
     re.compile(r"left to Daryl", re.I),
     re.compile(r"Daryl'?s to (?:set|say|decide|make|take|seat|time)", re.I),
     re.compile(r"(?:not|never) (?:mine|ours|the gate'?s) to (?:decide|call|seat|time|set)", re.I),
+    # ** r4261: the gate named the PERSON and missed the ROLE.  P12's sec:weyl-a3 carried a live
+    # deferral for ~1700 revisions -- "the finder asked for the author on it and so do I" -- and
+    # every pattern above needs the literal token "Daryl".  A node that writes "the author" or
+    # "the orchestrator" instead of the name defers just as durably and passes the gate.
+    # ** THE NARROWING IS DELIBERATE AND WAS MEASURED. **  A broad role-noun pattern returns 41
+    # hits, and most are the RULE rather than a violation -- "state it plainly for the author to
+    # reverse", "never offload them to the orchestrator".  A pattern that cannot tell the rule
+    # from the breach of it is not a measurement.  So: only the forms that ASSIGN A DECISION, and
+    # "to reverse" is excluded by construction, being the reversal convention and not a deferral.
+    re.compile(r"\bthe (?:author|orchestrator)'?s call\b", re.I),
+    re.compile(r"\bthe (?:author|orchestrator)'?s to\s+\w+", re.I),
+    re.compile(r"\bask(?:ed|ing|s)?\s+(?:for\s+)?the (?:author|orchestrator)\b", re.I),
+    re.compile(r"\b(?:left|leave[sd]?|defer(?:red|ring|s)?)\s+to the (?:author|orchestrator)\b", re.I),
+    re.compile(r"\bawait(?:s|ing)?\s+the (?:author|orchestrator)\b", re.I),
+    re.compile(r"\bfor the (?:author|orchestrator) to\s+(?!reverse\b)\w+", re.I),
 ]
 
 # ** archived record -- rewriting it to look better is a different failure. **
-ARCHIVE = ('retired/', '_dig/', 'c24_work/', 'storyboard_receipts/', '.git/')
+ARCHIVE = ('retired/', '_dig/', 'c24_work/', 'storyboard_receipts/', 'forks/c19fork/', '.git/')
 
 # ** the two named exemptions.  FILE-SCOPED AND EXACT. **
 EXEMPT = {
@@ -91,6 +112,11 @@ EXEMPT = {
     'corpus/check_deferrals.py':    'this gate',
     'ONTOLOGY_FOUNDATION_INDEX.md': 'exists BECAUSE of the r269 correction; every hit quotes the phrase '
                                     'in order to REJECT it',
+    # ** r4261: the two credo documents STATE this rule -- "never offload them to the orchestrator",
+    # "carry the calls the source settles" -- so a role-noun pattern reads the rule as its own breach.
+    # Same precedent as THE_PLAN's r1885 section: the record of the failure is not the failure. **
+    'capstones/THE_CODA.md':        'the seats section, which is where this rule is stated',
+    'capstones/CODA_FIELD_NOTE.md': 'the dated casebook of this failure, including its fifth face',
 }
 
 # ** DATED LOGS -- records of what past revisions did.  Rewriting a log to look better is falsifying
@@ -103,6 +129,7 @@ LOGS = (
     'CONSOLIDATE_THE_PLAN_AND_INDEX_THE_PROGRAMME.md',
     'RECALL_ACROSS_COMPACTION_full-transcript.md',
     'CREDO_birth_transcript.md',
+    'DEMONSTRATING_THE_WAY_full-transcript.md',
     'C40_HARVEST_r1064-r1087.md',
     'CR_intake_notebook.md',
     'FIGURE_WORK_LOG.md',
@@ -147,7 +174,7 @@ def main():
                 # and removed, or a note explaining what a mangled sentence originally said.
                 # *** The gate was flagging its own repair record. ***
                 ctx = t[max(0, m.start()-140):m.end()+40]
-                if QUOTED.search(ctx):
+                if QUOTED.search(ctx) or QUOTED_ROLE.search(ctx):
                     continue
                 line = t[:m.start()].count('\n') + 1
                 hits.append((line, m.group(0)))

@@ -19,8 +19,8 @@ damage the working corpus to buy nothing.
 
 So this gate REPORTS.  It is a submission checklist, run when a paper is about to
 go out, and its output is the list of comment lines that would become public.
-Whether any given line should go is the author's call, made once, with the list in
-hand -- not a standing edit to the source.
+Whether any given line goes is decided at submission, once, with the list in hand --
+not by a standing edit to the source.
 
 EXIT STATUS.  Always 0 for the apparatus classes: they are expected and are not
 defects.  Non-zero ONLY for the epithet class, which is never appropriate in a

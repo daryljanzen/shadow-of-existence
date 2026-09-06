@@ -29,8 +29,8 @@ marked LIVE through both. **
 structures are timelike rather than spacelike and nothing here bears on them.  ** The row narrows from
 three cases to two; it does not close. **
 
-WHAT IS NOT CLAIMED.  Not that P1/P2 SAY this -- they ask the question as open, and whether to say it is
-the author's call, routed rather than edited.  ** Not that the removal argument's full content transfers
+WHAT IS NOT CLAIMED.  Not that P1/P2 SAY this -- they ask the question as open, and whether the
+papers should say it is a question about their own claims, routed rather than edited here.  ** Not that the removal argument's full content transfers
 **: what is shown is that the FUNCTION and the CRITICAL-POINT CHARACTER are the same, which is what the
 argument turns on, and not that every step of P1's causality reading carries over unexamined.
 

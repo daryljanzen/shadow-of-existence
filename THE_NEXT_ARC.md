@@ -26,7 +26,7 @@ Held to the two-closings line throughout: whatever the substrate supplies here i
 ### Tier 0 — mature the built layer (the foundation, done first)
 A big reach was just built fast. Per the r803 posture, polish before descending.
 - **T0.1 — the wall-mode index, rigorized.** Phase 0 found the zero-mode count is a *leaf-norm* statement. Make it a rigorous index: the three-generation count as a well-defined analytical/topological index of the Dirac operator on the **closed slicing** in the proper spatial measure. Closes the one genuine remaining analytical gap (`DESCENT_STATE` addendum 1). *Can return: the index is subtler than three (a real check on the count).*
-- **T0.2 — the descent's cold read.** The whole matter sector owes an independent fresh-node reading. **Seat-gated — the orchestrator's call, parked far downstream, not settled by the material or time.** Charted here only as an owed step.
+- **T0.2 — the descent's cold read.** The whole matter sector owes an independent fresh-node reading. **Seat-gated, and the gate is a CONDITION rather than a schedule: a cold read needs an uncontaminated reader and a frozen object, so it is convened when those hold and not before.** Charted here only as an owed step.
 - *(The r797 dependency-matrix update is **not** a Tier 0 item — moved to Tier 2, T2.3, r809. The matrix is a map of finished territory; redrawing it while Tier 1 is still drawing new connections means redrawing it again. It waits until the analysis is essentially complete, so it is drawn once against settled structure. The r797 lag and the right-timing are distinct — the earlier "now cued" collapsed them.)*
 
 ### Tier 1 — the reach (the cosmogenesis of matter)

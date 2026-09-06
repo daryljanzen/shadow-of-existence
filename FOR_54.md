@@ -358,8 +358,10 @@ not in the geometric residue at all, and the corpus calls it a **one-parameter a
 ⇒ ***Suggested: the item splits. The CONSTANT-side ledger is a result and can cite `sec:ledger`; the DATUM side
 stays a target and points at the $\rho_r/\rho_m$ derivation.***
 ⌗ *Receipts: `U1_the_count_as_the_corpus_now_states_it`, `U2_the_matter_sector_spends_none`,
-`U3_the_residue_is_one_and_it_is_already_counted` (38 checks between them).* **Changing a paper's verdict on its
-own frontier is the author's call, which is why this is routed and not landed.**
+`U3_the_residue_is_one_and_it_is_already_counted` (38 checks between them).* **⌈ AND THE SPLIT IS ALREADY LANDED, so the routing is discharged rather than owed:** p0/17
+`sec:frontiers` item 1 carries it in the paper's own words — *"The item has two sides and they now stand
+differently, so it is split rather than carried whole"* — the CONSTANT side stated as a result, the DATUM
+side as a target.
 
 ---
 
@@ -579,7 +581,9 @@ and the honest statement is that they cannot on this route.***
 
 ## ✔✔ APPLIED — 22 · P12's §weyl-a3 RENDERS AFTER THE BIBLIOGRAPHY — applied c54.203
 
-*Moved to the end of the body — **the smallest edit that fixes the rendering without choosing which body section it should follow**. ⚠ ***That second half is authorial and is NOT decided***: a comment at the move site says so and names the two candidate homes. The finder asked for the author on placement and so do I; it is one more cut and paste from where it now sits.*
+*Moved to the end of the body at c54.203 — the smallest edit that fixed the rendering — and **the placement
+itself is now settled at r4261**: the section is discrete-skeleton content, so it sits after `sec:discrete`,
+and `sec:scope` closes the body as a scope section must. The move-site comment is removed with it.*
 
 ---
 ## ✔✔✔ ANSWERED AND APPLIED — 23 · "DECK GROUP $S_3$" ON A THREE-SHEETED COVER IS IMPOSSIBLE — added r2440
