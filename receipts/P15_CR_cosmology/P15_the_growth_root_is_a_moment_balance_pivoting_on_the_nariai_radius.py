@@ -50,9 +50,28 @@ rho_m / rho_Lambda = 2 exactly, the deceleration-to-acceleration turnover, at wh
 the areal radius is alpha/sqrt3 = r_N: the Nariai radius, the front seam, the merged
 double root. **
 
-** WHAT IS ESTABLISHED. **  Om* is determined by a parameter-free equation whose only
-structural landmark is r_N.  ** What remains contingent is that we observe near that
-epoch -- a why-now, not a why-this-density, and the density was never free. **
+** WHAT IS ESTABLISHED. **  Om* is determined by an equation with nothing free in it.
+** What remains contingent is that we observe near that epoch -- a why-now, not a
+why-this-density, and the density was never free. **
+
+** TWO SCOPE STATEMENTS, AND BOTH NARROW THE CLAIM.  Each is checked below rather
+than merely stated. **
+
+  (a) ** THE TURNOVER IS NOT THIS CONSTRUCTION'S PROPERTY. **  Om_m = 2/3 is
+      rho_m/rho_Lambda = 2 in ANY flat matter-and-Lambda rate; LambdaCDM has the same
+      turnover and no Nariai radius anywhere.  What is this construction's is the
+      IDENTIFICATION of that turnover with a geometric locus -- the areal radius there
+      being alpha/sqrt3 = r_N.  ** So the balance pivots on the turnover, and the
+      geometry is what makes the turnover a place. **  The receipt checks the pivot in
+      both readings so the split is visible.
+
+  (b) ** THE RATE USED IS THE STACKING ONE. **  The published normalisation is a
+      matter-and-Lambda integral, and the stacking rate written in the fitted pair IS
+      that rate -- which is why the derivation reproduces it.  But the corpus's own
+      rate rule assigns perturbations to the LEAF, and on the leaf rate the same
+      integral returns 0.99934 rather than unity, moving the root slightly.  ** So what
+      is derived is the root of the STANDARD normalisation, not this construction's own
+      growth root. **
 
 ** WHAT IS NOT CLAIMED. **  That the balance has a closed-form solution; it is solved
 numerically here.  And no claim is made that the standard model's growth factor is
@@ -208,6 +227,34 @@ check("** and the areal radius there is the Nariai radius, alpha/sqrt3 **",
       abs(r_piv - R_N) < 1e-12)
 
 print()
+print("  " + "-" * 68)
+print("  scope (a): the turnover is framework-neutral, the IDENTIFICATION is not")
+# In any flat matter+Lambda rate, q = 0 where rho_m = 2 rho_Lambda, i.e. Om_m = 2/3.
+# That statement needs no substrate and no Nariai radius.
+check("Om_m = 2/3 is the turnover in ANY flat matter-and-Lambda rate, "
+      "with no geometry invoked",
+      abs((2 / 3) / (1 - 2 / 3) - 2.0) < 1e-12)
+check("so the pivot itself is framework-neutral; what is this construction's is "
+      "that the turnover sits at alpha/sqrt3",
+      abs(r_piv - R_N) < 1e-12)
+
+print()
+print("  scope (b): the rate used is the STACKING rate, not the leaf rate")
+OM_R = 8.5e-5
+J_stack = quad(lambda z: (1 + z) / (Om_root * (1 + z) ** 3
+                                    + (1 - Om_root)) ** 1.5, 0, np.inf, limit=600)[0]
+J_leaf = quad(lambda z: (1 + z) / (Om_root * (1 + z) ** 3 + (1 - Om_root)
+                                   + OM_R * (1 + z) ** 4) ** 1.5,
+              0, np.inf, limit=600)[0]
+print(f"      J on the stacking rate (the published object) = {J_stack:.8f}")
+print(f"      J on the leaf rate (radiation gravitating)     = {J_leaf:.8f}")
+print(f"      shift = {(J_leaf - J_stack) / J_stack * 100:+.4f}%")
+check("the stacking rate reproduces the published normalisation at the root",
+      abs(J_stack - 1.0) < 1e-5)
+check("** the leaf rate does NOT, so the derived root is the STANDARD one **",
+      abs(J_leaf - 1.0) > 1e-4)
+
+print()
 print("  " + "=" * 68)
 if FAILED:
     print(f"  {len(FAILED)} check(s) FAILED")
@@ -218,7 +265,8 @@ print("  The growth equation has no parameters: alpha cancels because the source
 print("  fixed by the Nariai-constrained geometry.  Om_m is sech^2 of the clock.  And")
 print("  J = 1 is the growth-weighted history of Om_m balanced about 2/3 -- which is")
 print("  rho_m/rho_Lambda = 2, the turnover, at the areal radius alpha/sqrt3 = r_N.")
-print("  ** So Om* is determined by a parameter-free equation pivoting on the one")
-print("  ** epoch the geometry marks.  What stays contingent is that we look near it.")
+print("  ** So Om* is determined by a parameter-free equation.  The pivot is the")
+print("  ** turnover -- framework-neutral -- and the geometry is what makes that")
+print("  ** turnover a place.  What stays contingent is that we look near it.")
 print()
 sys.exit(0)
