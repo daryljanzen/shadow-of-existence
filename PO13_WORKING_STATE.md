@@ -37,8 +37,48 @@ difference as physics. Withdrawn until both arms are converged.*
 # aborted the step before anything after it ran) made it visible to `check_currency` for
 # the first time. ** Declaring ignorance is not declaring currency, and only the owning
 # line can do the second. **
-current: r4236
+current: r4400
 ---
+
+
+# ⛭⛭⛭ r4400 — **THE ~20% SPACING DEFICIT DOES NOT SURVIVE. IT IS NOT A DEFICIT AT ALL.**
+
+***Found while working `check_receipts`' nine orphaned `P15` receipts, which is not where I expected
+a physics result.*** *Three of the nine rest on a "$\sim20$–$21\%$ spacing deficit", and one states
+it sharply enough to be tested at source:* `P15_the_first_peak_is_the_seam_datum_and_the_spacing_is_not`
+*claims* **"the peak spacing at $0.79\pm0.04$ of $\ell_A$ under every phase and NEVER $1.0$."**
+
+**Measured across RUN 2's seventeen admissible readings, converged in $k$, on the leaf congruence:**
+
+| spacing / $\ell_A$ | min | max | mean | readings at or above $1.0$ |
+|---|---|---|---|---|
+| converged, leaf | **0.915** | **1.095** | **1.018** | **12 of 17** |
+| the retired claim | 0.75 | 0.83 | 0.79 | none, "never $1.0$" |
+
+⇒ ***THERE IS NO SPACING DEFICIT.*** *At the coded default the spacing sits $8.2\%$ **above** $\ell_A$,
+not $21\%$ below, and the mean across the datum is $1.018$ — the spacing straddles $\ell_A$ rather than
+falling short of it.*
+
+⛔ ***SO THE ROBUST DISAGREEMENT THAT ARC IDENTIFIED IS GONE, AND WHAT REPLACES IT IS THE ONE r4136
+FOUND.*** *That arc's reading was: the first peak's position is a seam-datum statement, and what is
+robust underneath it is a $\sim21\%$ spacing deficit.* **Converged and on the assigned rate, the
+spacing is not in deficit and the heights are — $-20.7\%$ and $-29.2\%$ against the sky where the
+control sits at $-0.9\%$ and $-3.8\%$.** ⇒ *The disagreement did not disappear; it moved from the
+spacing to the heights, which is why `sec:refit-bound` reports what it now reports.*
+
+⌗ ***AND THIS IS WHY SIX OF THE NINE ORPHANS CANNOT SIMPLY BE RE-CITED.*** *Discharging
+`check_receipts` by adding `\rcpt{}` markers would put the $0.5703$ first peak, the $21\%$ spacing
+deficit and the $0.62\pi$ phase offset back into a section rewritten specifically to stop reporting
+them.* **The gate's only discharge is a citation, so the six are a de-registration decision and not a
+citation one — and that is a call on `P15`'s own registration, not this node's to make alone.**
+
+⌗ *The other three are not superseded and are separable:*
+`P15_the_derived_diffusion_damping` *(the damping derived per arm, which `PO-24` still rests on)*,
+`P15_the_driving_shift_by_subtraction` *(the undriven-reference method r4164's subtraction uses, and
+its $k$-dependence)*, and `P15_the_control_entered_the_regime_and_the_arm_did_not_move` *(the
+$\chi^2/\mathrm{dof}=1.18$ on 185 lensed bins, which is the better-converged likelihood RUN 3's 133
+unlensed bins should be set BESIDE rather than replace).*
+
 
 
 # ⛭⛭⛭ r4236 — **RUN 3, THE LIKELIHOOD: THE TWO MODELS ARE ELEVEN SIGMA PER BIN APART. AND RUN 4
