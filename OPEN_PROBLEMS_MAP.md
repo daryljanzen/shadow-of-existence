@@ -20,14 +20,20 @@ what tells a reader whether an item wants labour, an idea, or the world — and 
 stands in the way is that nobody has done it. On the programme's own criterion a debt must be paid before the
 claim it bears on is a proof rather than a coherent proposition.*
 
-- **`PO-24` — the bespoke transfer, and reaching the acoustic peaks.** The instrument is built, guarded,
-  controlled against a known answer and converged on both arms. What is owed is *the specification of how the
-  fluctuations gravitate on the geometrically fixed background* — which standard codes cannot supply, tying
-  radiation's gravity to its presence and so unable to represent the content-versus-rate split — and this arm
-  run against it.
+- **`PO-24` — the diffusion signature's effect on the observed high-$\ell$ power.** The instrument is built,
+  controlled and run, and the heights are confirmed digit by digit; *what they return is a rejection on TT
+  shape, which is a result and not a reason to hold the row open*. What remains is the third leg the row
+  always carried and nobody touched: the enlarged damping scale is settled as construction-specific and
+  non-reabsorbable, and **what it does to the observed high-$\ell$ power is not**, turning on a parameter
+  refit and the early integrated Sachs–Wolfe term.
 - **`PO-13` — what the driving does on the leaf rate.** The measured deficit whose mechanism is missing.
 - **`PO-23` — the ultraviolet definition of the mode sums.** Two of the three parts of the interacting
   tower's definition are settled; the third *has never been attempted*, and that is the whole of its state.
+- **`PO-38` — the growth root on the leaf rate.** The moment balance is solved on the *stacking* rate, giving
+  $u_0=1.180309$ against a measured $1.2052$. But the construction's own three-level rule assigns
+  perturbations to the *leaf* rate, where the integral returns $0.99934$ — so **the derived root is the
+  standard normalisation's, not this construction's, and nobody has computed the latter**. Re-solving is a
+  parameter-free computation with three outcomes, each of them a result.
 
 **⌗ The adjacency here is the tightest in the set.** `PO-24` and `PO-13` are **one object seen from two
 sides** — the transfer that would reach the peaks, and what the driving does on the rate it would run on.
@@ -112,9 +118,9 @@ them apart will mis-price the whole set.**
 
 ## WHAT IS *NOT* ON THIS MAP, AND WHY
 
-**Nothing was removed from the frontier to make this shape.** All ten rows appear above.
+**Nothing was removed from the frontier to make this shape.** All eleven rows appear above.
 
-**And nothing here is paring.** The set reached ten by items being resolved, not reclassified: sixteen rows
+**And nothing here is paring.** The set reached eleven by items being resolved, not reclassified: sixteen rows
 are struck, and of the seven struck since `P18` was registered, six were sound closes with receipts that run
 and could have returned otherwise. The seventh was struck on a substituted object and is restored. *A list
 that only ever shortens is no more trustworthy than one that only ever grows.*
