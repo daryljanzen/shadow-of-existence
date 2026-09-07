@@ -114,6 +114,7 @@ STATE = {
     'HORIZON_TRANSIT_WORKING_STATE.md':                'where the horizon-to-branch-point transit stands -- worked state, held outside the corpus',
     'PO13_WORKING_STATE.md':                           "PO-13's worked state, held outside the corpus",
     'PO13_RUN_SPEC_FOR_CC54.md':                       'what PO-13 needs run, specified for a node with compute',
+    'PO38_WORKING_NOTE.md':                            "PO-38's computation as run -- worked state, held outside the corpus",
     'THE_RECEIPT_AUDIT.md':                           'the receipt audit',
     'THE_FERMION_SECTOR_GEOMETRY.md':                 'the fermion sector read in the geometry',
 }
