@@ -61,7 +61,8 @@ EST = {
         'the gap since r4215 as the horizon-entropy convention ADOPTED RATHER THAN DERIVED, twelve revisions before '
         'the strike, so the paper and the register disagreed. DISCHARGED BY: an account of what the area law and '
         'the entropy are OF where no finite layer carries a completed horizon, or a demonstration that the '
-        'apparatus has no referent here and the convention is dispensable. Either is a result.',
+        'apparatus has no referent there and the convention is dispensable. Either is a result. '
+        'r4361 NARROWS THE OBJECT: p0 computes the Bekenstein-Hawking value on the de Sitter horizon -- the one the substrate REALISES, whose thermal state fixes the quantum of action -- as pi(alpha/l_P)^2 ~ 3e122, the gauge count squared and nothing further. So the apparatus has a referent on the horizon that exists, and what is open is the COLLAPSE horizon no finite layer completes, which is the case P07s sentence is about.',
         ),
     'PO-30': ('the curves own dynamics -- A GENERATIVE LAW FOR THE MATTER CONTENT', 1, 1, 6, None,
         'r3882: P08 sec:open states it and no register row carried it. The bend-density identity is EXACT but it '
