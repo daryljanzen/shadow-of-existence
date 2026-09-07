@@ -17,9 +17,9 @@ sources: [chat]
 |---|---|
 | **SOURCE** | 1 |
 | **VIEW** | 3 |
-| **STATE** | 17 |
-| **METHOD** | 36 |
-| **REFERENCE** | 25 |
+| **STATE** | 20 |
+| **METHOD** | 38 |
+| **REFERENCE** | 26 |
 | **FORWARD** | 15 |
 | **RECORD** | 94 |
 
@@ -49,12 +49,15 @@ sources: [chat]
 | `CONSOLIDATE_THE_PLAN_AND_INDEX_THE_PROGRAMME.md` | STATE | Consolidate the plan and index the programme — the arcs (§2), the sequence (§13), the standing actions (§14), and §16 THE DEVELOPMENT RECORD, which is where RG-1 moves a paper's past state. | — | c54.207 | 26 |
 | `CORPUS_REVISION_OWED.md` | STATE | (declared in frontmatter) | — | — | never |
 | `FIGURE_SWEEP.md` | STATE | The figure programme's state — every figure against what it must carry. | — | c54.201 | 32 |
+| `HANDOFF_to_60_PO24_transfer.txt` | STATE | the plain-text build request for PO-24, the bespoke transfer | — | — | never |
+| `HANDOFF_to_60_ledger_pass.txt` | STATE | the plain-text handoff for 60 to run the ledger pass | — | — | never |
 | `HORIZON_TRANSIT_WORKING_STATE.md` | STATE | where the horizon-to-branch-point transit stands -- worked state, held outside the corpus | — | — | never |
 | `OWED.md` | STATE | (declared in frontmatter) | — | c54.232 | 1 |
 | `P3_SWING_ONTOLOGY_hinge-and-door.md` | STATE | The usable ontological skeleton for the SECOND major P3 upgrade — lead with the physical object (one hinge, one door, one swing) and DERIVE w, u, 3w as the shadows it throws. Registered as L-206; the upgrade has not landed. | — | — | never |
 | `PHASE7_BUILD_LEDGER.md` | STATE | the collapse-excursion build ledger — the plan, whose execution lives elsewhere | — | c54.153 | 80 |
 | `PO13_RUN_SPEC_FOR_CC54.md` | STATE | what PO-13 needs run, specified for a node with compute | — | — | never |
-| `PO13_WORKING_STATE.md` | STATE | PO-13's worked state, held outside the corpus | — | — | never |
+| `PO13_WORKING_STATE.md` | STATE | PO-13's worked state, held outside the corpus | — | c54.186 | 47 |
+| `PO38_WORKING_NOTE.md` | STATE | PO-38's computation as run -- worked state, held outside the corpus | — | — | never |
 | `STATE_programme.md` | STATE | where the programme stands | — | c54.211 | 22 |
 | `THE_FERMION_SECTOR_GEOMETRY.md` | STATE | the fermion sector read in the geometry | — | c54.211 | 22 |
 | `THE_MODEL_LEDGER.md` | STATE | every switch in the acoustic scan against the theory that determines it | — | — | never |
@@ -77,6 +80,8 @@ sources: [chat]
 | `OVERNIGHT_FIELD_BAKE_WORK_ORDER.md` | METHOD | The self-driving procedure for running the eleven remaining field bakes to completion at the depth the three completed ones set. Written for a node to execute without further instruction. | — | — |  |
 | `README.md` | METHOD | rules / guards / canon | — | — |  |
 | `SETUP_THE_REPO.md` | METHOD | THE STANDING INSTRUCTIONS for creating the GitHub repository and giving this line access to it. Gated on Daryl being at a computer, or on the decision to publish. ASK FOR THIS BY NAME — "dig up the repo instructions". | c54.163 | c54.163 |  |
+| `SIX_FIELDS_WORK_ORDER.md` | METHOD | The revised field-bake procedure for the six fields below the ×40 floor, written after running one by hand for four turns. Supersedes the r3522 order. | — | — |  |
+| `SIX_FIELDS_WORK_ORDER_v2.md` | METHOD | The field-bake procedure, rewritten after running integrable systems end to end at 17/17. Supersedes SIX_FIELDS_WORK_ORDER.md, which was written before the method was known. | — | — |  |
 | `SOURCE_VETTING.md` | METHOD | rules / guards / canon | — | — |  |
 | `THE_ARSENAL.md` | METHOD | (declared in frontmatter) | — | c54.191 |  |
 | `THE_BAKE.md` | METHOD | the revision strategy — substance into the owning paper first, the frontier item last | — | — |  |
@@ -103,7 +108,7 @@ sources: [chat]
 | `CONFORMAL_GEOMETRY_LEDGER.md` | REFERENCE | conformal / Möbius geometry against the substrate — the field that refused, and why | — | c54.211 |  |
 | `CR_AND_THE_HIGGS.md` | REFERENCE | R-P station 6h (L-217) — how CR and the Higgs sector relate, in coherence and in correspondence. THE FALSIFICATION CONDITIONS ARE STATED FIRST, BEFORE THE CLAIM. Read before asserting complementarity. | — | c54.205 |  |
 | `CR_COLLAPSE_HELD_PICTURE.md` | REFERENCE | BUILD MATERIAL for THE_PLAN item 2 / PHASE 7 — the contracting-phase picture held whole: the L2 leg the acoustic driving lives on. Read WITH COLLAPSE_EXCURSION_TRANSFER_build.md (the attack manual) before starting that build. | — | c54.114 |  |
-| `ENTRY_POINT_REGISTER.md` | REFERENCE | every advertised gap in the corpus, with the door that answers it | — | c54.204 |  |
+| `ENTRY_POINT_REGISTER.md` | REFERENCE | every advertised gap in the corpus, with the door that answers it | — | c54.185 |  |
 | `OPTICS_LENSING_LEDGER.md` | REFERENCE | observational optics and lensing against CR — confirmations, and the dimension clause they forced | — | c54.195 |  |
 | `PHYSICAL_VALUES_LEDGER.md` | REFERENCE | What does the corpus compute, under which conventions? Read WHEN QUOTING A VALUE. | — | c54.210 |  |
 | `QUADRIC_GEOMETRY_LEDGER.md` | REFERENCE | projective geometry of quadrics against the CR substrate — the CK metric identification, and the ladder gap it exposes | — | c54.215 |  |
@@ -123,19 +128,20 @@ sources: [chat]
 | `THE_WEAVE.md` | REFERENCE | How the parts are one object — the per-paper orchestration grid and the record of what joins to what | — | c54.232 |  |
 | `TURNAROUND_CUBIC_geometry_note.md` | REFERENCE | The comoving-turnaround cubic pinned — the COMPLEX/kinematic leg of the substrate's A₂ three-fold (the horizon cubic being the real/causal leg), the E=1 collapse kinematics, and its place on the ℂ_r×ℂ_τ̃ Plate. Read before the acoustic-transfer build. Carried PROTECTED_OPEN PO-3's drill-site; PO-3 struck r2832, residue to PO-5. Its live cross-reference PO-19 is also struck (r3097, derived). | — | — |  |
 | `VARIATIONAL_LEDGER.md` | REFERENCE | variational / action against CR — the field the corpus uses and never names | — | — |  |
-| `ALGEBRAIC_GEOMETRY_LEDGER.md` | FORWARD | The algebraic-geometry field-bake ledger — what bit, what bounced, and the boundary. One of the three fields listed but never thrown (the r3505 overnight order: algebraic geometry ×57, discriminant ×28 / genus ×21). `OWED` 622. | — | — |  |
+| `WHAT_IS_UNFINISHED.md` | REFERENCE | The one list -- every unfinished item in the corpus, from every register, with nothing filtered out and no verdict attached. | — | — |  |
+| `ALGEBRAIC_GEOMETRY_LEDGER.md` | FORWARD | The algebraic-geometry field-bake ledger — what bit, what bounced, and the boundary. One of the three fields listed but never thrown (the overnight order: algebraic geometry ×57, discriminant ×28 / genus ×21). `OWED` 622. | — | — |  |
 | `C40_EXTRACTION_r1107.md` | FORWARD | (declared in frontmatter) | — | — |  |
 | `C40_HARVEST_r1064-r1087.md` | FORWARD | (declared in frontmatter) | — | — |  |
 | `CARTAN_HOLONOMY_LEDGER.md` | FORWARD | The Cartan / connections-and-holonomy field-bake ledger — what bit, what bounced, and the boundary. First of the four fields `L-272`'s re-survey left outstanding. `OWED` 622. | — | — |  |
-| `CATASTROPHE_SINGULARITY_LEDGER.md` | FORWARD | The catastrophe / singularity-theory field-bake ledger — what bit, what bounced, and the boundary. One of the three fields listed but never thrown (the r3505 overnight order named it explicitly: catastrophe ×54). `OWED` 622. | — | — |  |
+| `CATASTROPHE_SINGULARITY_LEDGER.md` | FORWARD | The catastrophe / singularity-theory field-bake ledger — what bit, what bounced, and the boundary. One of the three fields listed but never thrown (the overnight order named it explicitly: catastrophe ×54). `OWED` 622. | — | — |  |
 | `COMBINATORICS_LEDGER.md` | FORWARD | The combinatorics field-bake ledger — what bit, what did not, and why. Lane 8. | — | c54.185 |  |
-| `CONVEXITY_OPTIMISATION_LEDGER.md` | FORWARD | The convexity / optimisation field-bake ledger — what bit, what bounced, and the boundary. One of the three fields listed but never thrown (the r3505 overnight order: convexity ×143, constraint ×141). `OWED` 622. | — | — |  |
+| `CONVEXITY_OPTIMISATION_LEDGER.md` | FORWARD | The convexity / optimisation field-bake ledger — what bit, what bounced, and the boundary. One of the three fields listed but never thrown (the overnight order: convexity ×143, constraint ×141). `OWED` 622. | — | — |  |
 | `FIGURE_THEOREM_LEDGER.md` | FORWARD | The figure–theorem ledger: which classical theorem each figure carries, and its receipts. | — | c54.19 |  |
 | `FUNCTIONAL_ANALYSIS_LEDGER.md` | FORWARD | The functional-analysis / unitarity field-bake ledger — the field that bounced, and the one routing fact it returned. Third of the four fields `L-272`'s re-survey left outstanding. `OWED` 622. | — | — |  |
 | `HARMONIC_ANALYSIS_LEDGER.md` | FORWARD | The harmonic-analysis field-bake ledger — what bit, what bounced, and the boundary. Second of the four fields `L-272`'s re-survey left outstanding. `OWED` 622. | — | — |  |
 | `INVOLUTION_REAL_FORMS_LEDGER.md` | FORWARD | The involution / real-forms field-bake ledger — what bit, what bounced, and the boundary. The field `L-277`'s unclaimed-surface probe named, and the first bake not drawn from a pre-existing list. `OWED` 622. | — | — |  |
-| `REPRESENTATION_THEORY_LEDGER.md` | FORWARD | The representation-theory field bake — what bit, what bounced, and the boundary. The largest unbaked vocabulary in the corpus (×241 tight), thrown r3437 after the Phase 4 survey named it the standing first pick on measured usage. | — | — |  |
-| `SPECTRAL_THEORY_LEDGER.md` | FORWARD | The spectral-theory field bake — what bit, what bounced, and the boundary. Tier B's largest never-thrown field (×189 on the r3453 measure), verified at r3438 as NOT covered by the harmonic ledger, which mentions spectral, self-adjoint and deficiency zero times. | — | — |  |
+| `REPRESENTATION_THEORY_LEDGER.md` | FORWARD | The representation-theory field bake — what bit, what bounced, and the boundary. The largest unbaked vocabulary in the corpus (×241 tight), thrown after the Phase 4 survey named it the standing first pick on measured usage. | — | — |  |
+| `SPECTRAL_THEORY_LEDGER.md` | FORWARD | The spectral-theory field bake — what bit, what bounced, and the boundary. Tier B's largest never-thrown field (×189 on the reach measure), verified as NOT covered by the harmonic ledger, which mentions spectral, self-adjoint and deficiency zero times. | — | — |  |
 | `STATISTICS_INFERENCE_LEDGER.md` | FORWARD | The statistics/inference field-bake ledger — what bit, what bounced, and why. The last unbaked field in `THE_MATHEMATICS_REACH`'s candidate set, and the one `A5.5` needs. `OWED` 622. | — | — |  |
 | `SYNTHESIS_FIGURE_STORYBOARD.md` | FORWARD | The STANDING WORKING DOCUMENT driving the fig:dS_SdS figure-work phase (P7). AHEAD OF THE CORPUS BY CONSTRUCTION — do NOT date it against the corpus and do NOT make it compliant; a disagreement with a paper is the work product. | — | — |  |
 | `A4_matter_seam_crossing_build.md` | RETIRED | the fork's retired working note, carried at top level and in retired/ both; this line neither owns nor maintains it | — | — |  |
@@ -209,7 +215,6 @@ sources: [chat]
 | `LATENT_HISTORY.txt` | RECORD | frozen record | — | c54.229 |  |
 | `MATTER_SECTOR_germ.md` | RETIRED | the fork's retired working note, carried at top level and in retired/ both; this line neither owns nor maintains it | — | — |  |
 | `NEXT.md` | RECORD | THE WORK ORDER — what to do next, in order, with enough detail to start cold. Read after THE_HUB on arrival. Delete a block when it lands. | — | c54.187 |  |
-| `OPEN_PROBLEMS_MAP.md` | RECORD | the L-space board — the work-clusters and runway of the register that closed at r3001 | — | c54.232 |  |
 | `PHASE1_seam_crossing_build.md` | RETIRED | the fork's retired working note, carried at top level and in retired/ both; this line neither owns nor maintains it | — | — |  |
 | `PHASE3_baryogenesis_analogue.md` | RETIRED | the fork's retired working note, carried at top level and in retired/ both; this line neither owns nor maintains it | — | — |  |
 | `PHASE8_DIFF_AUDIT.md` | RETIRED | the fork's retired working note, carried at top level and in retired/ both; this line neither owns nor maintains it | — | — |  |
@@ -231,6 +236,7 @@ sources: [chat]
 | `THE_BURN_DOWN.md` | RECORD | a view of the register that closed at r3001; the live view is THE_FRONTIER.md | c54.230 | c54.230 |  |
 | `THE_COLLAPSE_DYNAMICS_ARC.md` | RETIRED | the fork's retired working note, carried at top level and in retired/ both; this line neither owns nor maintains it | — | — |  |
 | `THE_CONSOLIDATION_LEDGER.md` | RECORD | frozen record | — | — |  |
+| `THE_LEDGER_CITATION_CONSOLIDATION.md` | RECORD | frozen record | — | — |  |
 | `THE_LIVE_ARC.md` | RECORD | (declared in frontmatter) | — | c54.232 |  |
 | `THE_NEXT_ARC.md` | RETIRED | the fork's retired working note, carried at top level and in retired/ both; this line neither owns nor maintains it | — | — |  |
 | `THE_THIRD_ARC.md` | RETIRED | the fork's retired working note, carried at top level and in retired/ both; this line neither owns nor maintains it | — | — |  |
@@ -265,6 +271,16 @@ sources: [chat]
 | `THE_REMAINING_WORK.md` | PLAN | (declared in frontmatter) | — | c54.206 |  |
 | `THE_RESIDUAL.md` | PLAN | (declared in frontmatter) | — | c54.207 |  |
 | `THE_STATE.md` | PLAN | (declared in frontmatter) | — | c54.207 |  |
+| `GRAPH_THEORY_LEDGER.md` | FIELD-BAKE | The graph-theory / percolation field bake — what bit, what bounced, and where the boundary is. Thrown at r4009 after the survey was found to carry 21 fields with graph theory not among them, while `probability / stochastic processes` was in the table and had been baked. | — | — |  |
+| `INDEX_THEORY_LEDGER.md` | FIELD-BAKE | The differential-topology and index-theory field-bake ledger — what bit, what bounced, and where the boundary is. | — | — |  |
+| `INFORMATION_THEORY_LEDGER.md` | FIELD-BAKE | The information-theory field-bake ledger — what bit, what bounced, and where the boundary is. It bounced, and the bounce is the result. | — | — |  |
+| `INTEGRABLE_SYSTEMS_LEDGER.md` | FIELD-BAKE | The integrable-systems field-bake ledger — what bit, what bounced, and where the boundary is. | — | c54.24 |  |
+| `NUMBER_THEORY_LEDGER.md` | FIELD-BAKE | The number-theory field-bake ledger — what bit, what bounced, and where the boundary is. | — | — |  |
+| `NUMERICAL_ANALYSIS_LEDGER.md` | FIELD-BAKE | The numerical-analysis field-bake ledger — what bit, what bounced, and where the boundary is. The one field whose target was the receipts rather than the prose. | — | — |  |
+| `OPEN_PROBLEMS_MAP.md` | MAP | the coherent view of the open set — what stands in the way of each step, and which items are adjacent | — | — |  |
+| `PROBABILITY_LEDGER.md` | FIELD-BAKE | The probability and stochastic-processes field-bake ledger — the sixth and last. It bounced completely, and the bounce is measured rather than asserted. | — | — |  |
+| `RUNNING_THE_LEDGER_PASS.md` | INSTRUMENT | How to work corpus/open_ledger.txt one row at a time -- the method, the failure modes it was built against, and what each turn must produce. | — | — |  |
+| `SYNTHESIS_HARVEST.md` | WORKING | The harvest the synthesis paper is written from — every substantive result of the corpus, at its own register, with its home, its anchor, its joins, and what it is NOT operative for. Read WHILE BUILDING OR UPDATING THE SYNTHESIS, and when working a frontier item that needs to know everything the corpus already holds about it. | — | — |  |
 
 > **⚠ THE LAG COLUMN IS A LOOK-SIGNAL, NOT A VERDICT.** *It reads the newest fork revision the file mentions, which any mention satisfies — a document can be made to look current by writing ABOUT the fork. **`declared current` is the honest column**, set only by the pass that actually brings a file current. And a forward document is ahead of the corpus by construction: "stale" is a word for the corpus, never for the instrument examining it.*
 
