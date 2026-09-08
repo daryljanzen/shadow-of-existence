@@ -27,6 +27,23 @@ Usage:
     python3 scripts/run_all_receipts.py --jobs 8        # parallelism (default: cpu_count-2)
     python3 scripts/run_all_receipts.py --only P15      # substring filter on the path
     python3 scripts/run_all_receipts.py --quick         # skip the files named SLOW below
+    python3 scripts/run_all_receipts.py --resume CACHE --wall 500   # resumable, bounded invocation
+
+** ⛔⛭ RESUMABILITY, r4512, AND IT IS NOT A CONVENIENCE. **  This gate's own `--how` text says to
+launch the runner DETACHED and poll.  *On the container this line runs in, a detached process --
+`nohup`, and `setsid nohup ... < /dev/null` exactly as that text prescribes -- IS REAPED AT THE END
+OF THE TURN THAT STARTED IT.*  Three launches were killed between 15 and 20 minutes in, each
+leaving the five-line header and no verdict, and the header-only `RUN_RESULT.txt` sitting in the
+tree is the residue of an earlier one.  ** So the documented way to run this gate does not run it
+here, and the failure presents as a file that looks like a run. **
+  ⇒ *** The fix is not a longer wait: it is for the work to SURVIVE being interrupted. ***  With
+      `--resume`, each receipt's result is written to the cache the moment it finishes, so an
+      invocation killed at any point loses only what was in flight.  `--wall` stops cleanly at a
+      budget instead of being killed at one.  Successive foreground invocations converge, and the
+      final one prints the whole result.
+  ⌗ ** The cache is keyed by TREE-DIGEST and discarded whole when it changes **, so a result can
+    never be reused across a tree it was not measured on -- which is the same rule the cached
+    `RUN_RESULT.txt` lives under, one level in.
 
 ** THIS GATE IS NOT IN THE STANDING TEN. **  It costs wall clock the others do not, so it is run
 at a juncture -- before a bundle, after a sweep -- rather than every revision.  Saying so here
@@ -66,7 +83,9 @@ sys.path[:] = [p for p in sys.path if os.path.abspath(p or '.') != _HERE]
 import argparse
 import glob
 import hashlib
+import json
 import re
+import threading
 import subprocess
 import time
 from concurrent.futures import ThreadPoolExecutor
@@ -198,6 +217,55 @@ def run_one(path, timeout):
         return ('FAIL', path, time.time() - t0, f'{type(e).__name__}: {e}'[:300])
 
 
+class Cache:
+    """per-receipt results at ONE tree digest, written as each receipt finishes
+
+    *A cache that survives a kill is the whole point, so it is rewritten on every completion
+    rather than at the end -- 712 short rows, and the cost is invisible beside a receipt run.*
+    """
+
+    def __init__(self, paths, digest):
+        names = [p for p in (paths or '').split(',') if p]
+        self.path = names[0] if names else ''
+        self.digest, self.lock = digest, threading.Lock()
+        self.results, self.invocations, self.wall = {}, 0, 0.0
+        self.reused = 0
+        for i, path in enumerate(names):
+            if not os.path.exists(path):
+                continue
+            try:
+                d = json.load(open(path, encoding='utf-8'))
+            except (ValueError, OSError):
+                d = {}
+            if d.get('digest') == digest:
+                self.results.update(d.get('results', {}))
+                self.invocations += int(d.get('invocations', 0))
+                self.wall += float(d.get('wall', 0.0))
+            elif d:
+                print(f"  ⌗ resume cache {path} discarded: it was taken against tree "
+                      f"{d.get('digest')!r}, not {digest} -- a result measured on another tree "
+                      f"is not a result about this one")
+        self.reused = len(self.results)
+
+    def get(self, rel):
+        r = self.results.get(rel)
+        return (r[0], os.path.join(ROOT, rel), float(r[1]), r[2]) if r else None
+
+    def put(self, st, path, dt, msg):
+        if not self.path:
+            return
+        with self.lock:
+            self.results[os.path.relpath(path, ROOT)] = [st, dt, msg]
+            self._write()
+
+    def _write(self):
+        tmp = self.path + '.tmp'
+        with open(tmp, 'w', encoding='utf-8') as fh:
+            json.dump({'digest': self.digest, 'invocations': self.invocations,
+                       'wall': self.wall, 'results': self.results}, fh)
+        os.replace(tmp, self.path)
+
+
 def tree_digest():
     """A digest of everything a receipt can check: the papers it quotes and the receipts themselves.
 
@@ -226,11 +294,22 @@ def main():
     ap.add_argument('--jobs', type=int, default=max(1, (os.cpu_count() or 4) - 2))
     ap.add_argument('--only', default='')
     ap.add_argument('--quick', action='store_true')
+    # ⌗ *`--resume a.json,b.json` reads every cache named and WRITES ONLY THE FIRST.*  The one
+    #   receipt declared LONG (C59, measured 1302s) is longer than any foreground tool call this
+    #   line can make, so it runs in its own invocation against its own cache while the rest run in
+    #   bounded ones -- and the final invocation reads both.  ** A union of per-receipt results
+    #   taken at the SAME digest is one run's worth of evidence; taken at different digests it is
+    #   nothing, which is why the digest gates every cache separately. **
+    ap.add_argument('--resume', default='', help='JSON cache(s), comma-separated; the first is written')
+    ap.add_argument('--skip', default='', help='substring filter: EXCLUDE paths containing it')
+    ap.add_argument('--wall', type=int, default=0, help='stop cleanly after N seconds')
     a = ap.parse_args()
 
     files, unresolved = registered()
     if a.only:
         files = [f for f in files if a.only in f]
+    if a.skip:
+        files = [f for f in files if a.skip not in f]
     if a.quick:
         files = [f for f in files if not any(s in f for s in SLOW)]
     print()
@@ -244,11 +323,60 @@ def main():
     # no expiry is a green verdict about a tree that no longer exists -- the file on disk at r2419
     # was still being read as current at r2656, 294 commits later, and reported "no receipt fails
     # for a reason inside the corpus" while 24 did.  So the run stamps WHAT IT RAN AGAINST.
-    print(f"  TREE-DIGEST: {tree_digest()}")
+    _digest = tree_digest()
+    print(f"  TREE-DIGEST: {_digest}")
     print()
     t0 = time.time()
-    with ThreadPoolExecutor(max_workers=a.jobs) as ex:
-        res = list(ex.map(lambda f: run_one(f, budget(f, a.timeout)), files))
+    cache = Cache(a.resume, _digest)
+    cache.invocations += 1
+    todo = [f for f in files if cache.get(os.path.relpath(f, ROOT)) is None]
+    if a.resume:
+        print(f"  RESUME: {len(files) - len(todo)} result(s) reused from {a.resume}, "
+              f"{len(todo)} left to run"
+              + (f", stopping cleanly at {a.wall}s" if a.wall else ""))
+        print()
+    incomplete = []
+    if a.wall:
+        # ** A BUDGET THAT STOPS THE RUNNER IS NOT THE SAME AS ONE THAT KILLS IT. **  Futures not
+        # yet started are cancelled and the invocation reports what it did NOT reach by name, so
+        # "incomplete" is a stated outcome rather than a truncated file.
+        from concurrent.futures import as_completed
+        ex = ThreadPoolExecutor(max_workers=a.jobs)
+        fut = {ex.submit(run_one, f, budget(f, a.timeout)): f for f in todo}
+        deadline = t0 + a.wall
+        try:
+            for f_ in as_completed(list(fut), timeout=max(1.0, deadline - time.time())):
+                cache.put(*f_.result())
+        except Exception:                                      # noqa: BLE001  (TimeoutError)
+            pass
+        for f_, src in fut.items():
+            if f_.done() and not f_.cancelled():
+                try:
+                    cache.put(*f_.result())
+                except Exception:                              # noqa: BLE001
+                    pass
+            else:
+                f_.cancel()
+                incomplete.append(src)
+        ex.shutdown(wait=False, cancel_futures=True)
+    else:
+        with ThreadPoolExecutor(max_workers=a.jobs) as ex:
+            for r in ex.map(lambda f: run_one(f, budget(f, a.timeout)), todo):
+                cache.put(*r)
+    cache.wall += time.time() - t0
+    if a.resume:
+        cache._write()
+    res = [cache.get(os.path.relpath(f, ROOT)) for f in files]
+    res = [r for r in res if r is not None]
+    if incomplete:
+        print(f"  ⛔ INCOMPLETE: this invocation stopped at its {a.wall}s budget with "
+              f"{len(incomplete)} receipt(s) not reached.  ** Run it again with the same "
+              f"--resume cache; nothing already measured is re-run. **")
+        for f_ in sorted(incomplete)[:8]:
+            print(f"      not reached: {os.path.relpath(f_, ROOT)}")
+        if len(incomplete) > 8:
+            print(f"      ... and {len(incomplete) - 8} more")
+        print()
     ok = [r for r in res if r[0] == 'PASS']
     slow = [r for r in res if r[0] == 'SLOW']
     bad = [r for r in res if r[0] == 'FAIL']
@@ -258,8 +386,16 @@ def main():
     for st, p, dt, msg in sorted(slow, key=lambda r: r[1]):
         print(f"    [slow] {os.path.relpath(p, ROOT)}  -- {msg}")
     print()
+    _wall = cache.wall if a.resume else time.time() - t0
     print(f"  {len(ok)} pass, {len(bad)} fail, {len(slow)} over timeout, "
-          f"in {time.time()-t0:.0f}s wall")
+          f"in {_wall:.0f}s wall")
+    if a.resume:
+        # *The verdict line above must not be read as one elapsed clock when it is not one.*
+        print(f"  ⌗ ASSEMBLED ACROSS {cache.invocations} INVOCATION(S) AT THIS DIGEST: "
+              f"{cache.reused} result(s) reused, {len(res) - cache.reused} measured here.  Every "
+              f"receipt ran exactly once against tree {_digest}, and the cache is discarded whole "
+              f"the moment that digest changes.  The wall figure is the SUM of the invocations, "
+              f"not a single elapsed clock.")
     if ok:
         worst = sorted(ok, key=lambda r: -r[2])[:5]
         print("  slowest that passed: "
@@ -276,6 +412,11 @@ def main():
         print("    ⇒ Searched `receipts/<path>` AND `<path>` from the repository root, globbed.")
         print("      ** A row is a claim that a computation exists.  An unresolvable row is a false")
         print("      one, and it is printed into the reproducibility appendix as `[OK]`. **")
+    if incomplete:
+        print()
+        print("  ⛔ THIS RUN IS NOT A VERDICT: receipts were not reached.  Re-invoke with the same")
+        print("     --resume cache until it reports none.")
+        return 2
     if bad or (unresolved and not a.only):
         print()
         print("  ⛔ A REGISTERED RECEIPT THAT DOES NOT RUN WHERE IT IS REGISTERED IS NOT A RECEIPT.")
