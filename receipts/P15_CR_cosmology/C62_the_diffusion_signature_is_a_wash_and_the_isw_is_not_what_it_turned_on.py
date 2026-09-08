@@ -51,9 +51,15 @@ repaired, its imprint on this arm's spectrum, as a mean fractional change:
 ⇒ *The leaf assignment multiplies the ISW's low-$\ell$ imprint by ${\sim}2.5$, confirming the
 judgement by measurement.*  ⛔ ** And at high $\ell$ it is a $1.4\%$ effect. **  *The term the row
 names as one of two things the answer turns on barely reaches the multipoles the question is about.*
-⌗ *`STACKPERT` moves the whole perturbation sector and not radiation alone, so the factor isolates
-the ASSIGNMENT rather than radiation-in-the-ISW specifically; and the stacking arm's $22.6\%$ is not
-zero because the LATE ISW from $\Lambda$ survives regardless.*
+⛔ ** AND TWO THINGS I FIRST WROTE ABOUT THIS ARE WRONG, CORRECTED HERE. **  *(i) I said the term
+EXISTS because of the leaf assignment.  It does not: `_rt`, which sets the radiation FRACTIONS in the
+perturbation source, is built from the stack "both arms" by the instrument's own comment, so radiation
+is in the source under EITHER assignment and `STACKPERT` changes only which $H$ the equations use.
+The leaf assignment makes the term $1.52\times$ larger, not present.  (ii) I said the stacking arm's
+$22.6\%$ was late ISW from $\Lambda$ surviving.  It is not: `ETA_END` is $20\,a_{\rm rec}$, so the
+line-of-sight integration STOPS AT $z\simeq54$ and the late-ISW era is outside the calculation
+entirely.*  ⇒ ** So everything measured here is EARLY ISW, on both rate assignments, which makes the
+comparison cleaner than I claimed and not dirtier. **
 
 ** (3) THE SIGNATURE THROUGH A REFIT -- THE ROW'S ACTUAL QUESTION. **  Same arm, same geometry, same
 acoustic angle, ISW on in both, and ONLY $1/k_D^2$ scaled by $1.156766 = (7.6398/7.1033)^2$, so
@@ -188,7 +194,7 @@ for lo, hi in ((100, 300), (300, 700), (700, 1300)):
     lf, st = band(l_on, on, off, lo, hi), band(l_os, ons, offs, lo, hi)
     res[(lo, hi)] = (lf, st)
     print(f"      {f'{lo}-{hi}':>12}{lf:>11.1f}%{st:>11.1f}%")
-check("** the leaf assignment multiplies the ISW's low-ell imprint — the term EXISTS because of it **",
+check("** the leaf assignment MULTIPLIES the ISW's low-ell imprint (it does not create it) **",
       res[(100, 300)][0] > 2 * res[(100, 300)][1])
 
 # ** A FRACTION IS NOT A SIGNIFICANCE, and this row's order says so explicitly. **  The same
