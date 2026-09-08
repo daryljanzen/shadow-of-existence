@@ -198,7 +198,23 @@ def main():
     #   the claim BETWEEN THEM, and each is exact.  ⓶: every claim's regex is present in the body.
     #   ⓸: not one of the quoted sentences appears verbatim.  Present as a claim and absent as a
     #   string IS "reworded, not removed" -- stated, not scored. **
-    verbatim_pre = [q for q, _ in PAIRS if q in BODY]
+    # ⛔⛭ AMENDED r4510: ** THE STRING COUNTS ARE A CLAIM ABOUT WHERE A PARAGRAPH WENT, SO THEY ARE
+    #    MEASURED OVER THE PAPERS THAT COULD HAVE RECEIVED IT. **  *`r4187` wrote `CR_synthesis.tex`,
+    #    which uses "the deepest question the construction opens onto" in a sentence of its own; the
+    #    count over ALL papers went 0 -> 1 and four checks here failed -- on a corpus that grew, in a
+    #    file that did not exist when the passage was removed.*  ⇒ §⑤·9's rule, on the other axis:
+    #    an audit must normalise the SOURCE the way the extraction did.  The extraction was a
+    #    rehoming among the papers standing at `r2581`, so that is the body the arithmetic is over,
+    #    and the later papers are named rather than silently swept in.
+    _RECEIVING = [f for f in papers
+                  if git('show', f'{R2581}:corpus/{os.path.basename(f)}').strip() != '']
+    _LATER = sorted(os.path.basename(f) for f in papers if f not in _RECEIVING)
+    RECV = re.sub(r'\s+', ' ', ''.join(strip_comments(f) for f in _RECEIVING))
+    check(f'⓷ᵃ the receiving body is the {len(_RECEIVING)} papers that EXISTED at {R2581} '
+          f'({len(RECV):,} characters read), with {len(_LATER)} written since excluded by name: '
+          f'{", ".join(_LATER[:3])}{" ..." if len(_LATER) > 3 else ""}',
+          len(_RECEIVING) >= 15 and len(RECV) > 500000 and 'CR_synthesis.tex' in _LATER)
+    verbatim_pre = [q for q, _ in PAIRS if q in RECV]
     claims_live = [q for q, rx in PAIRS if re.search(rx, BODY)]
     check(f'⓷ "REWORDED, NOT REMOVED" is carried by ⓶ and ⓸ TOGETHER and needs no similarity score: '
           f'{len(claims_live)} of {len(PAIRS)} claims are present as CLAIMS and '
@@ -214,11 +230,11 @@ def main():
 
     check('⛔ AND THE MARGIN IS ONE WORD: P8 now reads "the deepest question THIS construction opens '
           'onto"; the receipt quotes "...THE construction..."',
-          'deepest question this construction opens onto' in BODY
-          and 'deepest question the construction opens onto' not in BODY)
+          'deepest question this construction opens onto' in RECV
+          and 'deepest question the construction opens onto' not in RECV)
 
     # ⓸ the old probe, and why it returned zero
-    verbatim = [q for q, _ in PAIRS if q in BODY]
+    verbatim = [q for q, _ in PAIRS if q in RECV]
     check(f'⓸ the c54.226 probe\'s arithmetic was CORRECT: {len(verbatim)} of {len(PAIRS)} sentences '
           f'appear verbatim.  ** The object was wrong, not the count. **',
           len(verbatim) == 0)

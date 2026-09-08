@@ -17,6 +17,14 @@ a truncated clone:
      on a truncated clone than on a whole one.  *A green from a shallow clone is not a weaker claim
      than a green from a full one; it is a claim about a different and much smaller thing.*
 
+  D  BASELINES READ AT A PINNED COMMIT AND USED AS A BOUND.  *`git show <SHA>:path` on a clone that
+     cannot reach `<SHA>` returns THE EMPTY STRING, and a baseline of zero is a bound nothing can
+     fail.*  ** This pass was written because reading Pass B's four found one ** -- `P1`, whose
+     `n_now >= n_before` is the REPAIR (r3108) for a baseline that had gone degenerate against a
+     moving HEAD.  *The fix for one horizon defect introduced another.*  It is reported at two
+     scopes, because they are different facts: the ASSERTION is vacuous, and the FILE may still
+     fail loudly somewhere else -- which is protection, but protection that names the wrong cause.
+
   C  NEGATIVE ASSERTIONS OVER HISTORY.  A check that asserts something is ABSENT from history
      passes MORE easily the less history there is.  ** This is the direction that is invisible from
      a short clone ** -- N1's TESTIMONY seed (r4132) passed on a shallow clone precisely because the
@@ -24,6 +32,7 @@ a truncated clone:
 
 Run:  python3 scripts/sweep_history_assertions.py
 """
+import ast
 import os
 import re
 import subprocess
@@ -60,6 +69,105 @@ def files():
     return sorted(out)
 
 
+# ======================================================================================
+# ** PASS D -- and it took THREE writings of a filter to get here. **
+#   The first Pass D joined continuation lines by counting brackets, and `len(re.findall(r'\bcheck\(',
+#   src))` has an unbalanced `\(` INSIDE A STRING, so the counter never closed and swallowed the rest
+#   of the function.  *`P1`, the very file that motivated the pass, was invisible to it.*  ⇒ The
+#   structure is read with `ast`, which is the only thing that knows a paren in a string is not a
+#   paren.  ** That is three filters in this one sweep that failed the way the sweep is looking for. **
+# ======================================================================================
+def _names(node):
+    return {x.id for x in ast.walk(node) if isinstance(x, ast.Name)}
+
+
+def _pinned_and_derived(tree, src):
+    """names holding a read AT A NAMED REVISION, and everything computed from them"""
+    seg = lambda n: (ast.get_source_segment(src, n) or '')
+    assigns = [n for n in ast.walk(tree) if isinstance(n, ast.Assign)]
+    d = set()
+    for n in assigns:
+        t = seg(n.value)
+        if re.search(r"['\"]show['\"]", t) and ':' in t:
+            for tg in n.targets:
+                d |= _names(tg)
+    for _ in range(4):                       # transitive closure, cheap and bounded
+        for n in assigns:
+            if _names(n.value) & d:
+                for tg in n.targets:
+                    d |= _names(tg)
+    return d
+
+
+def _loud(expr, d, want=None):
+    """does this expression contain a term that FAILS when the pinned read came back empty?
+
+    ** `want` narrows it to a term over THOSE names. **  *A file that fails loudly somewhere is
+    protected; a baseline whose OWN name is pinned by a positive control is GUARDED, and the
+    difference is whether the failure says "the horizon" or says something else.*
+    """
+    d = d & want if want is not None else d
+    if not d:
+        return False
+    for c in ast.walk(expr):
+        if not isinstance(c, ast.Compare) or not c.ops:
+            continue
+        op, L, R = c.ops[0], c.left, c.comparators[0]
+        if isinstance(op, ast.In) and _names(R) & d:
+            return True                      # a needle sought IN the read -- empty fails
+        if isinstance(op, ast.Eq) and (_names(L) | _names(R)) & d:
+            other = R if _names(L) & d else L
+            if not (isinstance(other, ast.Constant) and other.value in (0, '', None)):
+                return True                  # pinned to an exact non-empty value
+        if isinstance(op, (ast.Gt, ast.GtE)) and _names(L) & d and not _names(R) & d:
+            return True                      # the read itself must be big enough
+        if isinstance(op, (ast.Lt, ast.LtE)) and _names(R) & d and not _names(L) & d:
+            return True
+    return False
+
+
+def _conds(tree):
+    for n in ast.walk(tree):
+        if isinstance(n, ast.Call) and isinstance(n.func, ast.Name) and n.func.id == 'check' \
+                and len(n.args) >= 2:
+            yield n.args[-1]
+        elif isinstance(n, ast.Assert):
+            yield n.test
+
+
+def pass_d(src):
+    """-> list of (vacuous-bound source, file-fails-loudly-elsewhere)"""
+    try:
+        tree = ast.parse(src)
+    except SyntaxError:
+        return []
+    seg = lambda n: (ast.get_source_segment(src, n) or '')
+    d = _pinned_and_derived(tree, src)
+    if not d:
+        return []
+    conds = list(_conds(tree))
+    elsewhere = any(_loud(c, d) for c in conds)
+    out = []
+    for cond in conds:
+        if _loud(cond, d):
+            continue
+        for c in ast.walk(cond):
+            if not isinstance(c, ast.Compare) or not c.ops:
+                continue
+            op, L, R = c.ops[0], c.left, c.comparators[0]
+            vac = ((isinstance(op, (ast.GtE, ast.Gt)) and _names(R) & d)
+                   or (isinstance(op, (ast.LtE, ast.Lt)) and _names(L) & d))
+            if vac:
+                side = R if isinstance(op, (ast.GtE, ast.Gt)) else L
+                own = _names(side) & d
+                on_baseline = any(o is not cond and _loud(o, d, want=own) for o in conds)
+                out.append((' '.join(seg(c).split())[:88],
+                            'own baseline' if on_baseline else
+                            ('elsewhere' if elsewhere else None)))
+                break
+    return out
+
+
 def main():
     sh, head, allr = horizon()
     print()
@@ -74,7 +182,7 @@ def main():
     print()
 
     fs = files()
-    A, B, C = [], [], []
+    A, B, C, D = [], [], [], []
     for p in fs:
         src = open(p, encoding='utf-8', errors='replace').read()
         rel = os.path.relpath(p, ROOT)
@@ -143,6 +251,8 @@ def main():
                 C.append((rel, ('VACUOUS-SHAPE' if shape else 'keyword') +
                           ('' if has_guard else ', UNGUARDED'), st[:88]))
                 break
+        for _vac, _loudly in pass_d(src):
+            D.append((rel, _vac, _loudly))
 
     _unguarded = [a for a in A if 'guarded' not in a[2]]
     print(f"  PASS A — commits named and not reachable:  {len(A)}"
@@ -158,11 +268,24 @@ def main():
     for rel, kind, ln in C[:20]:
         print(f"      [{kind}] {rel}")
         print(f"          {ln}")
+    _dl = [d for d in D if d[2] is None]
+    _dw = [d for d in D if d[2] == 'elsewhere']
+    print(f"\n  PASS D — baselines read at a pinned commit and used as a BOUND:  {len(D)}"
+          f"   ({len(_dl)} with nothing loud anywhere, {len(_dw)} loud only about something else)")
+    _WHY = {'own baseline': 'guarded ON ITS OWN BASELINE',
+            'elsewhere': 'file fails loudly, about SOMETHING ELSE',
+            None: 'NOTHING LOUD IN FILE'}
+    for rel, vac, loudly in D[:20]:
+        print(f"      [{_WHY[loudly]}] {rel}")
+        print(f"          {vac}")
     print()
     print("  " + "=" * 74)
-    print(f"  A={len(A)}  B={len(B)}  C={len(C)}   over {len(fs)} receipt file(s)")
-    print("  ⌗ A is a defect wherever it is non-zero.  B and C are EXPOSURE, not defect: each")
+    print(f"  A={len(A)}  B={len(B)}  C={len(C)}  D={len(D)}   over {len(fs)} receipt file(s)")
+    print("  ⌗ A is a defect wherever it is non-zero.  B, C and D are EXPOSURE, not defect: each")
     print("    needs reading to say whether the answer would change on a whole history.")
+    print("  ⌗ A PASS-D HIT IS AN ASSERTION-LEVEL FACT.  'file fails loudly elsewhere' means the")
+    print("    receipt does not go green on a short clone -- but it fails at a check about something")
+    print("    else, so the failure names the wrong cause.  That is protection, not a guard.")
     print("  " + "=" * 74)
     return 1 if _unguarded else 0
 

@@ -123,10 +123,25 @@ def main():
           'evolves consistently to all orders by the contracted Bianchi identity' in p11
           and 'no classical dynamical obstruction at any order' in p11)
 
-    check('P12: the Dirac algebra "is not a Lie algebra", closing with the inverse spatial metric, '
-          '"a structure \\emph{function} rather than a constant"',
+    # ⛔⛭ AMENDED r4510: ** THE PIN BROKE AGAIN, ON THE SAME CLASS THIS FILE ALREADY FIXED ONCE. **
+    #   `r4083` rewrote the sentence: "a structure \\emph{function} rather than a constant" became
+    #   "a field rather than a constant", and the structure-function phrase moved to the paragraph
+    #   naming $h^{ab}$.  *The FINDING is untouched -- P12 still says the algebra is not a Lie
+    #   algebra and still names the inverse spatial metric as the coefficient -- and a receipt that
+    #   argues about a sentence must survive the sentence being rewritten.*
+    #   ⇒ c54.220's rule, which the comment at the head of this block already states: the historical
+    #     wording is read AT THE COMMIT WHERE IT STOOD, and the current text is asserted separately.
+    _P12_WAS = 'bd1469b3'                      # r4083, which rewrote it; read at its parent
+    _p12_then = _at(_P12_WAS + '^', 'corpus/algebroid_paper.tex')
+    check(f'P12 AT {_P12_WAS}^ said the coefficient is "a structure \\emph{{function}} rather than a '
+          f'constant" -- the wording this receipt was written against, read where it stood',
+          'a structure \\emph{function} rather than a constant' in _p12_then)
+    check('P12 NOW: the Dirac algebra "is not a Lie algebra", closing with the inverse spatial '
+          'metric, "a field rather than a constant" -- and $h^{ab}$ named as "the structure '
+          '\\emph{function} that makes the algebra an algebroid".  *Same content, rewritten*',
           'is not a Lie algebra' in p12
-          and 'a structure \\emph{function} rather than a constant' in p12)
+          and 'the inverse spatial metric, a field rather than a constant' in p12
+          and 'the structure \\emph{function} that makes the algebra an algebroid' in p12)
     check('and P12 cites Teitelboim1973 for the brackets', 'Teitelboim1973' in p12)
 
     # ** THE PAPERS, NOT THE GENERATED APPENDICES.  The first version counted every .tex, and the

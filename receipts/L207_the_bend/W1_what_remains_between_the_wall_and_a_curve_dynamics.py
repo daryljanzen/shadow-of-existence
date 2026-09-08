@@ -119,6 +119,7 @@ def main():
         _strip(f) for f in sorted(_glob.glob(os.path.join(ROOT, 'corpus', '*.tex')))
         if not os.path.basename(f).startswith('appendix_receipts')))
 
+    _C54_228 = 'ed68babf'        # where the exact-sentence count of zero was taken
     p8_then = _at(BEFORE_R2581, 'corpus/slicing_operator.tex')
     check(f'WHAT the bend is holds for a GENERAL spatial leaf, not only the spherical case -- P8 said '
           f'so at {BEFORE_R2581} in the wording this receipt quoted',
@@ -236,10 +237,31 @@ def main():
           f'in the papers\' BODY text after r2581 -- the rehoming moved and reworded them, and lost none',
           len(_alive) == len(_CLAIMS))
     _verbatim = [q for q in _quotes if q in _BODY]
+    # ⛔⛭ AMENDED r4510.  ** THIS RECEIPT'S OWN LESSON, A SECOND LEVEL UP -- AND FROM THE OTHER SIDE. **
+    #   c54.228 asserted the exact-sentence count is ZERO.  *It was zero on the day, and `r4187` wrote
+    #   the synthesis, which re-uses "the deepest question the construction opens onto" verbatim in
+    #   `CR_synthesis.tex`.*  So the count is 1, and the receipt failed -- ** on a corpus that GREW,
+    #   in the direction it argues for. **  A count fitted to a day is pinned to that day (c54.226's
+    #   rule): the historical number is read AT THE COMMIT WHERE IT WAS TAKEN, and the live claim is
+    #   the one the argument actually needs -- that the exact-string probe UNDER-COUNTS the claim
+    #   probe, which is true at any count below six and is what "cannot see a rehoming succeed" means.
+    _body_then = re.sub(r'\s+', ' ', ''.join(
+        _at(_C54_228, os.path.relpath(f, ROOT)) for f in sorted(
+            _glob.glob(os.path.join(ROOT, 'corpus', '*.tex')))
+        if not os.path.basename(f).startswith('appendix_receipts')))
+    _verb_then = [q for q in _quotes if q in _body_then]
+    check(f'⇒ᵃ AT {_C54_228} (c54.228, where this arithmetic was taken) the corpus was READ '
+          f'({len(_body_then):,} characters) and {len(_verb_then)} of {len(_quotes)} survived as '
+          f'exact sentences -- the zero, pinned where it was true',
+          len(_body_then) > 100000 and len(_verb_then) == 0)
     check(f'⇒ AND THE ARITHMETIC OF THE OLD PROBE, KEPT SO THE ERROR IS LEGIBLE: {len(_verbatim)} of '
-          f'{len(_quotes)} of the same claims survive as EXACT SENTENCES.  ** An exact-string probe '
-          f'cannot see a rehoming succeed, and c54.226 read that zero as a loss. **',
-          len(_verbatim) == 0 and len(_alive) == len(_CLAIMS))
+          f'{len(_quotes)} of the same claims survive as EXACT SENTENCES NOW, against '
+          f'{len(_alive)} of {len(_CLAIMS)} on the claim probe.  ** An exact-string probe cannot see '
+          f'a rehoming succeed, and c54.226 read that gap as a loss. **'
+          + (f'  *The one exact survivor is `{_verbatim[0][:44]}`, which `r4187` wrote into '
+             f'CR_synthesis.tex -- a NEW use of the wording, not the old sentence surviving.*'
+             if _verbatim else ''),
+          len(_verbatim) < len(_alive) and len(_alive) == len(_CLAIMS))
 
     print()
     if FAILED:

@@ -169,6 +169,14 @@ def main():
         wa = set(re.findall(r'\S+', a[k][0][2]))
         wb = set(re.findall(r'\S+', b[k][0][2]))
         lost[k] = [t for t in (wb - wa) if bare(t) and bare(t) not in E]
+    # ⛔⛭ AMENDED r4510, by the horizon sweep's Pass D: *both sides here are read at named commits,
+    #    and a bound on what is LEFT OVER is satisfied by reading nothing at all.*  The two rows
+    #    must be non-empty for the difference to mean anything -- asserted first, so an unreadable
+    #    parent fails HERE and says so, instead of being reported as a lossless drop.
+    check(f'⓸ᵃ both parents\' rows were actually READ -- {min(len(a[k][0][2]) for k in IDS)} and '
+          f'{min(len(b[k][0][2]) for k in IDS)} characters at the shortest, so the token difference '
+          f'below is a comparison and not an empty read',
+          all(a[k][0][2].strip() and b[k][0][2].strip() for k in IDS))
     check(f'⓸ the fork side\'s unique tokens are its own c54.221 REPAIR NOTE, and every substantive '
           f'one survives in the arc, `FOR_56`, `L-551`/`L-555` or the c54.221 commit message: '
           f'{ {k: len(v) for k, v in lost.items()} } left unaccounted',
