@@ -124,6 +124,18 @@ def git(*a):
 
 # ** the history this receipt reads must BE there.  A shallow clone would make every assertion in
 #    PART 1 vacuously about an empty string, which is the hollow-assertion failure the fork names. **
+# ⛭ ** AND THE SECOND COMMIT NEEDS THE SAME GUARD, WHICH IT DID NOT HAVE -- r4506. **  The
+#    horizon sweep found it: `6beeca84` is NOT an ancestor of HEAD (that non-ancestry is the whole
+#    finding), so it survives only while the clone keeps refs beyond main.  *Without this the
+#    receipt still FAILS rather than passing hollow -- the direction is right -- but it fails as a
+#    mysterious count mismatch instead of naming its cause.*  ** A guard that names the reason is
+#    the difference between a defect a reader can act on and one they have to excavate. **
+_rc, _ = git('cat-file', '-e', OTHER + '^{commit}')
+if _rc != 0:
+    print(f"\n  ⛔ commit {OTHER} is not in this clone.  It is deliberately NOT an ancestor of")
+    print("     HEAD -- that is what PART 1 asserts -- so a clone holding only main's history")
+    print("     cannot see it, and this receipt cannot be run there.  NOT a pass.")
+    sys.exit(1)
 _rc, _ = git('cat-file', '-e', R3512 + '^{commit}')
 if _rc != 0:
     print(f"\n  ⛔ commit {R3512} is not in this clone -- the history PART 1 reads is absent.")
