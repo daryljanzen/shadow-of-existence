@@ -77,9 +77,13 @@ names.  ** The figures are in the run below. **
   level -- adequate for a degeneracy test and not quoted as a measured $n_s$.*
 
 ⌗ ** THE CONFIGURATION IS NAMED, AND IT IS NOT THE ONE PO-13 USED. **  `LMAXL=2200` puts the damping
-tail INSIDE the reported range; a high-$\ell$ question read on `LMAXL=1300` scores the ceiling.  And
-$0.8\,\ell_{\max} = 1760$ selects ** exactly the 185 bins ** of the configuration `P15` names as the
-better-converged one -- asserted below rather than assumed.
+tail INSIDE the reported range; a high-$\ell$ question read on `LMAXL=1300` scores the ceiling.  And $0.8\,\ell_{\max} = 1760$ is
+** the same $\ell$ CEILING as the 185-bin configuration `P15` names as better-converged, but not the
+same BIN SET **: `plik_lite` starts at $\ell=30$ and this instrument reports from $\ell=100$
+(`ls = arange(100, LMAXL, LSTEP)`), so $171$ of those $185$ bins are covered.  ⌗ *I first wrote that
+the cut selects "exactly the 185 bins"; $185$ is the count over the full range and $171$ is what a
+spectrum starting at $100$ can score.  A coincidence of ceilings read as an identity of bin sets --
+checked before the run rather than after, which is the only reason it is a footnote.*
 
 ** WHAT IS NOT CLAIMED. **  Nothing is tuned: $r_D$'s ratio is measured from the two arms and imposed,
 not fitted.  ** The differential is taken on the line-of-sight path because it is the ONLY path
@@ -263,15 +267,17 @@ keep0 = np.isfinite(mb) & np.isfinite(md)
 
 print(f"      {'configuration':<34}{'bins':>6}{'chi2/bin, A only':>18}{'+ tilt':>10}{'absorbed':>11}")
 out = {}
-for cut, lab in ((0.8 * 2200, 'P15 185-bin (cut at 0.8*lmax=1760)'), (None, 'every covered bin')):
+for cut, lab in ((0.8 * 2200, "P15's ceiling (0.8*lmax=1760)"), (None, 'every covered bin')):
     keep = keep0 & ((CS.BIN_HI <= cut) if cut else np.ones_like(keep0))
     n, c1, c2, dn_ = refit(mb, md, keep)
     out[lab] = (n, c1, c2, dn_)
     print(f"      {lab:<34}{n:>6}{c1/n:>18.3f}{c2/n:>10.3f}{100*(1-c2/c1):>10.1f}%")
 
-n185, c1_185, c2_185, dn = out['P15 185-bin (cut at 0.8*lmax=1760)']
-check("the 0.8*lmax cut selects EXACTLY the 185 bins P15 names as the better-converged set",
-      n185 == 185)
+n185, c1_185, c2_185, dn = out["P15's ceiling (0.8*lmax=1760)"]
+check("the 0.8*lmax cut is P15's 185-bin CEILING; 171 of those bins are covered from l=100",
+      n185 == 171)
+print("      ⌗ not 185: plik_lite starts at l=30 and the instrument reports from l=100, so the")
+print("        14 bins below 100 come back NaN.  Same ceiling, not the same bin set.")
 print(f"\n      the tilt the refit wants: dn_s = {dn:+.5f} at pivot l = {L_PIV:.0f}")
 
 # ** THE CONTROL THAT FIRES: inject a KNOWN tilt and require the fitter to absorb ALL of it. **
