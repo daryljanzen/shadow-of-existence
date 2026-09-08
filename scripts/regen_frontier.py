@@ -75,15 +75,6 @@ EST = {
         'it must reach a CONSERVED CHARGE of the progenitor, not a thermal history. P16 has already excluded one '
         'mechanism -- the Euclidean action is odd under the standing conjugation so the two branches carry equal '
         'and opposite action, the balance exact rather than approximate.'),
-    'PO-29': ('the -M/r^3 attribution -- FORCED PIVOT OR MASS', 1, 1, 2, None,
-        'r3875: P12 attributes the second-order parting term to the forced off-axis pivot rather than to the mass, '
-        'and is explicit that this is the perspectival readings interpretive payoff and NOT a claim proven '
-        'independently of it. The computation usually brought to bear does not discriminate: along the '
-        'cosmological branch the invariant carries no memory of the mass, the M^2 dividing out exactly so that K '
-        'depends on tau alone, while along the interior cycloid it goes as M^-4 -- but that M-dependence follows '
-        'entirely from the amplitudes r(M), a property of the trajectory swept and COMMON TO BOTH READINGS. What '
-        'is owed is a discriminating quantity, or a demonstration that none exists, in which case the attribution '
-        'is interpretive by nature and the corpus should say so rather than leave it reading as a question of fact.'),
     'PO-25': ('the charged bead -- DOES A CHARGED COLLAPSE FORM THE CAUCHY HORIZON', 1, 1, 4, None,
         'r3827: P03 states the obstruction exactly -- with Q nonzero, Q^2/r^2 dominates as r -> 0 so f -> +inf '
         'rather than -inf, an inner Cauchy turning point appears, and r=0 becomes a TIMELIKE RN singularity '
@@ -182,7 +173,7 @@ KIND = {'PO-13': 'BUILD', 'PO-36': 'READ', 'PO-33': 'BUILD',   # r4145: was READ
 
 # ** PO-23 added r3809: the ultraviolet definition of the mode sums, the one part of P07's
 # three-part 'definition of the interacting tower' that is neither settled nor attempted. **
-ORDER = ['PO-13', 'PO-24', 'PO-40', 'PO-36', 'PO-30', 'PO-25', 'PO-26', 'PO-29', 'PO-31', 'PO-23', 'PO-15', 'PO-14', 'PO-17', 'PO-18', 'PO-19', 'PO-20']
+ORDER = ['PO-13', 'PO-24', 'PO-40', 'PO-36', 'PO-30', 'PO-25', 'PO-26', 'PO-31', 'PO-23', 'PO-15', 'PO-14', 'PO-17', 'PO-18', 'PO-19', 'PO-20']
 GROUP = {'PO-13': 'D', 'PO-14': 'A', 'PO-15': 'C', 'PO-16': 'D',
          # ** r3095: the four brought in from p0's frontiers and the field ledgers.  PO-17 and
          # PO-19 are substrate geometry; PO-18 is the constant ledger; PO-20 is analysis. **
