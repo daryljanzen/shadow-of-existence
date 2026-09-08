@@ -5,9 +5,9 @@ sources: [observer]
 current: r4255
 ---
 
-# ▣ THE REGISTER — three open questions, opened r3009
+# ▣ THE REGISTER — the corpus's open questions, opened r3009
 
-***`PROTECTED_OPEN` closed at r3001 with fourteen rows struck. `PO-13`, `PO-14` and `PO-15` are what the corpus itself now names as outstanding, in its own words, after the bake; `PO-16` sits below them struck, its object answered.***
+***`PROTECTED_OPEN` closed at r3001 with fifteen rows struck.*** **The live set is not fixed here and is not to be read from this line: `THE_FRONTIER` is generated from the rows below and is the authority on which are open.** *A masthead that names its own live rows goes stale the first time one is struck — this one named `PO-13`, `PO-14` and `PO-15` and two of those three were struck in this same file.*
 
 **⚙ THE RULES, CARRIED FORWARD UNCHANGED:** *a row is struck when **its OBJECT is answered and the answer is receipted** — not when it is convenient, and never on a person-gate. **Read the row's own history, then the closures, then the receipts** (§⑤·8). **Calibrate a detector against known instances before believing a zero** (§⑤·6). **A closure's consequence does not have to name a row to reach it** (§⑤·7). **An audit must normalise the source the way the extraction did** (§⑤·9).*
 
@@ -31,11 +31,12 @@ correctly and a family still have no row**, which is exactly what happened.*
 | 4 · irreducible interior reassignments | **`PO-25`** — *charged half; Kerr half closed `r2378`* |
 | 5 · scalar-perturbation sector | **`PO-13`** + **`PO-24`** |
 | 6 · propagating fermion sector | **`PO-26`** |
-| 7 · world-correspondence | **`PO-27`** |
+| 7 · world-correspondence | **`PO-26`** *(`PO-27` struck `r4245`; its open half folded here)* |
 | 8 · interacting quantum tower | **`PO-23`** |
 
-⌗ ***Three rows are finer than the family grain and belong to no family***: *`PO-28` (the adiabatic
-residual), `PO-29` (the $-M/r^{3}$ attribution), `PO-30`'s generative-law half. That is not a defect — it
+⌗ ***Three live rows are finer than the family grain and belong to no family***: *`PO-29` (the $-M/r^{3}$
+attribution), `PO-32` (horizon thermodynamics with no realised horizon, reopened `r4317`), `PO-36` (which mass
+the Hubble--Eddington radius tracks), together with `PO-30`'s generative-law half. That is not a defect — it
 is the register resolving what the families bundle.*
 
 ⇒ ***So the test to run before calling this complete is not "is every row homed" but "does every family
