@@ -100,21 +100,9 @@ EST = {
         '1e80 baryons even the lab bound 1e-21 on |q_p+q_e|/e gives 1e59 net charges and an inner horizon near '
         '1e19 m. The progenitor is ORDINARY MATTER and ordinary matter is neutral because it is made of atoms, so '
         'Q=0 is inherited from the content rather than imposed on the geometry.'),
-    'PO-24': ('the bespoke transfer -- REACH THE ACOUSTIC PEAKS', 1, 1, 6, None,
-        'r3815: PO-12 was struck at r2702 as discharged, and the strike discharged the COMPONENTS -- driving in '
-        'closed form, source removal, the branch-point join, the super-horizon transfer, the onset shown spent. '
-        'P15 asks for what they do not add up to: the end-to-end transfer that confirms the height pattern digit '
-        'by digit. C22 names the gap itself -- it reaches low-ell (7.5% deficit, absent early ISW) and high-ell '
-        '(0.843 at l_D to 0.459 at 2 l_D) and states that BETWEEN them, the acoustic peaks, the chain does not '
-        'reach, Phi decaying by order two with k-dependence k^2/3H. AND THE TWO INSTRUMENTS MUST NOT BE CONFUSED: '
-        'PO-10s strike got LCDM P1/P2 = 2.200 and CR 2.185 THROUGH CAMB with a suppression factor on the CR arm, '
-        'a legitimate comparison and not a bespoke transfer. AND THE SECOND INSTRUMENT WORKS, r3870 (60): the '
-        'control run PO-24 asked for FIRST comes out the other way. The recorded LCDM 2.721 / 4.496 were TWO '
-        'instrument-configuration faults compounding, not a height-machinery defect -- the k-integral was '
-        'truncated at k_max = l_max/D_M where it is not converged (2.721 -> 2.393 on one path when k_max is '
-        'raised), and los_spectrum omits the polarisation source that _project carries. With both fixed the '
-        'control lands at P1/P2 = 2.197 against CAMBs 2.200 -- 0.14% -- with every peak within 9 of the skys. '
-        'The fork is settled REPAIR: the two-arm architecture carries the transfer (C59).'),
+    'PO-24': ('whether the tilt displacement is a tension', 1, 1, 5, None,
+        'r4505 NARROWED -- the computation is done and the verdict is neither of the two expected. A refit of amplitude and tilt absorbs the signature almost entirely in SHAPE, 0.26 per bin over the 185-bin ceiling and less the higher one looks, because over a restricted high-ell range a Gaussian in ell is well approximated by a power law. THE ABSORPTION COSTS a tilt shift of -0.0304 against sigma = 0.00323 from the same covariance that scores the fit, so the signature does not vanish -- it relocates into an inferred parameter. THE EARLY-ISW LEG IS ANSWERED AND SMALL: 0.77 sigma per bin over 700-1296 against 3.49 over 100-1296, so the term the row named as one of two things the answer turns on does not reach the multipoles in question. BOUNDS THAT TRAVEL WITH IT: the shape residual IS an upper bound; the tilt displacement is NOT, since more parameters would share it; and the magnitude is not robust to a factor of three between the data-shape and in-source routes, stated at the weaker bound with closing the factor named as work not done. DISCHARGED BY: whether a displacement of that size in the inferred tilt is a tension, which is a joint fit and is the whole of what remains.',
+        ),
     'PO-23': ('the ultraviolet definition of the mode sums — ATTEMPT IT', 1, 1, 4, None,
         'r3809: NEVER ATTEMPTED, which is the whole of its state. P07 names three parts to "the definition of the '
         'interacting tower" and TWO ARE SETTLED: the spectrum of Gamma-hat is computable branch by branch, and it is '
