@@ -700,6 +700,18 @@ def qscan():
     return 0
 
 
+# ⛔⛭ ** `NOISW` NAMED A TERM IT COULD NOT REACH — repaired r4492 (60), working PO-24. **
+# *It was read at ONE site, in the analytic block of `main()`, and NOT in `los_spectrum`,
+# `_project` or `hier_run` — the three paths that produce every reported spectrum.*  ** So
+# `NOISW=1` was a silent no-op on the default path and on the polarisation path, and anyone
+# isolating the ISW by toggling it would have measured zero and concluded the term does not
+# matter. **  `PO-24` asks a question that "turns on the early ISW term", and the only switch
+# for that term did not reach the instrument it would be measured with.
+#   ⌗ *Same family as r3512's `HIER` flag complaint, and this time the miss is real: a flag is
+#     a claim that a term can be removed, and a flag that reaches one path of three is not.*
+_ISW = 0.0 if os.environ.get('NOISW', '0') == '1' else 1.0
+
+
 def los_spectrum(kk, ee, Y, L_A, D_M, R_S):
     """** Delta_l(k) = INT S(k,eta) j_l(k(eta_0 - eta)) d(eta), with
 
@@ -739,7 +751,7 @@ def los_spectrum(kk, ee, Y, L_A, D_M, R_S):
         # the baryon velocity diffuse; Psi and the ISW do not.
         Dmp = np.exp(-dampx * (kk[None, :] ** 2) * kD2inv_of(ee)[:, None])
         return (g_ * (Y[:, :, 2] / 4 * Dmp + Ps)
-                + et * (np.gradient(Ph, ee, axis=0) + np.gradient(Ps, ee, axis=0))
+                + _ISW * et * (np.gradient(Ph, ee, axis=0) + np.gradient(Ps, ee, axis=0))
                 + np.gradient(g_ * Y[:, :, 3] * Dmp, ee, axis=0) / kk[None, :] ** 2)
 
     def spectra(dampx_list):
@@ -1034,7 +1046,7 @@ def _project(kb, ee, Y, ls, x0, e_sw):
     # dynamically, so the difference between the two runs IS the returned half and nothing else.
     _PI = float(os.environ.get('PISRC', '1'))
     S = (g_ * (Th0 + Ps + _PI * Pi / 4)
-         + et * (np.gradient(Ph, ee, axis=0) + np.gradient(Ps, ee, axis=0))
+         + _ISW * et * (np.gradient(Ph, ee, axis=0) + np.gradient(Ps, ee, axis=0))
          + np.gradient(g_ * tb, ee, axis=0) / kb[None, :] ** 2
          + _PI * 0.75 * np.gradient(np.gradient(g_ * Pi, ee, axis=0), ee, axis=0)
          / kb[None, :] ** 2)
