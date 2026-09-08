@@ -56,17 +56,18 @@ claim it bears on is a proof rather than a coherent proposition.*
 - **`PO-26` — the compact-face fermion sector.** A spinor sector *is* built on the discrete component and
   delivers the count, the chirality and the family symmetry. What is open is the sector on the compact face —
   the one the index obstruction would act on — and it is unbuilt.
-- **`PO-32` — horizon thermodynamics where no horizon is realised.** What are the area law and the entropy
-  *of*, on a construction where no finite layer carries a completed horizon? Either an account of that, or a
-  demonstration that the apparatus has no referent here and the convention is dispensable rather than
-  adopted. `P18` has carried it in its unpaid column since `r4215`.
-- **`PO-31` — the progenitor spectrum: derive the composition datum and the onset.** `P15` calls this *the
+- **`PO-31` — the progenitor spectrum.** `P15` calls this *the
   genuine frontier* as against its buildable debts, and the reason is structural: the peak is an erasure
   channel, so the progenitor's composition is destroyed and cannot be read backward from ours.
+- **`PO-40` — does the genealogy have a head?** The residue of `PO-31a`'s closure and not a restatement of it:
+  the inherited datum needs no derivation because nothing in the lap acts on it, and what that leaves is
+  whether the chain of universes terminates. *If it does, that first universe's datum has no antecedent and is
+  owed; if it does not, there is no datum to owe.* **Substrate-level rather than cosmology-sector** — a
+  question about what the construction is, not about what this universe measures.
 
 **⌗ These four are not adjacent to each other and must not be grouped as one gap.** They share only the shape
-of the obstruction. `PO-30` wants a dynamics; `PO-26` wants a construction; `PO-32` wants an account or a
-dissolution; `PO-31` wants a route past an erasure.
+of the obstruction. `PO-30` wants a dynamics; `PO-26` wants a construction; `PO-31` wants a route past an
+erasure; `PO-40` wants a decision about whether a regress terminates.
 
 **⌗ Two have their difficulty stated as a result rather than as a lack.** `PO-31`'s erasure is *proved*,
 which is what makes it a frontier and not a gap. `PO-26`'s wall is a mechanism, not a failure to build.
@@ -78,11 +79,6 @@ which is what makes it a frontier and not a gap. `PO-26`'s wall is a mechanism, 
 *The step is taken and arrives at a fork the construction cannot see across. Both readings are consistent
 with everything established; what would settle it is something that tells them apart.*
 
-- **`PO-29` — is the second-order parting term the forced pivot's or the mass's?** The paper is explicit that
-  the attribution is the perspectival reading's interpretive payoff and not proved independently of it. **And
-  the computation usually brought to bear does not discriminate**: the mass-dependence follows entirely from
-  the trajectory's own amplitude, common to both readings, so it predicts the same thing either way. *What is
-  wanted is a quantity whose value differs between the two.*
 - **`PO-25` — does a charged collapse form the inner horizon at all?** With charge the bead has no branch
   point to close through, and the limit is singular: the closure holds on a set of measure zero. But the
   obstruction is computed on the *eternal* geometry, and real collapses are widely held not to form a stable
@@ -106,7 +102,7 @@ them apart will mis-price the whole set.**
   interacting theory, met here in the substrate's tower rather than manufactured by it. `PO-25` turns on the
   stability of inner horizons, an open question in general relativity that this construction inherits rather
   than creates.
-- **This construction's own.** `PO-30`, `PO-26`, `PO-32` and `PO-31` are questions it raises because of what
+- **This construction's own.** `PO-30`, `PO-26`, `PO-31` and `PO-40` are questions it raises because of what
   it is, and no other framework owes them.
 - **Neither, exactly.** `PO-36` is a question about the world that the standard framing made invisible to
   itself; this construction's contribution is to have asked it.
