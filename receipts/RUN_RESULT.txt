@@ -1,5 +1,15 @@
 
-  RUN-ALL-RECEIPTS -- 711 registered receipt(s), 4 at a time, 600s each, each from ITS OWN DIRECTORY
+  RUN-ALL-RECEIPTS -- 712 registered receipt(s), 3 at a time, 600s each, each from ITS OWN DIRECTORY
   DECLARED LONG: C59_the_control_reproduces_camb_and_the_height_defect_was_k_truncation.py runs on 1800s, not 600s -- named, with its measured cost in the source
-  TREE-DIGEST: 3de9da843f532177
+  TREE-DIGEST: a108f8e111596841
 
+  RESUME: 712 result(s) reused from /tmp/claude-0/-home-user-shadow-of-existence/3f654921-f94d-5e03-8dca-e6e4ffe98045/scratchpad/final_main.json,/tmp/claude-0/-home-user-shadow-of-existence/3f654921-f94d-5e03-8dca-e6e4ffe98045/scratchpad/final_c59.json, 0 left to run
+
+    [FAIL] receipts/L257_the_label_did_double_duty/V1_a_strike_that_reads_as_done_and_a_paper_that_says_otherwise.py  (2s)
+               OK    ⓹ᶜ and no .tex file was touched by THIS revision (74555e6d..ae749cb6) -- the reading was written in the ledger, not in the papers /   1 check(s) FAILED /     - ⓹ᵇ ⌗ 3 WARN(s) remain -- entries naming sentences no longer in any paper.  This file recorded SIX and routed them rather than rebu
+
+  711 pass, 1 fail, 0 over timeout, in 1612s wall
+  ⌗ ASSEMBLED ACROSS 4 INVOCATION(S) AT THIS DIGEST: 712 result(s) reused, 0 measured here.  Every receipt ran exactly once against tree a108f8e111596841, and the cache is discarded whole the moment that digest changes.  The wall figure is the SUM of the invocations, not a single elapsed clock.
+  slowest that passed: C59_the_control_reproduces_camb_and_the_height_defect_was_k_truncation.py 927s, P15_the_driving_is_bought_by_decay_during_oscillation.py 162s, C1_the_weyl_closure_is_generic_to_cubics_and_the_match_is_D3_alone.py 109s, H1_the_low_multipole_deficit_is_two_effects_and_the_ladder_imprint_dies_where_the_transfer_is_narrow.py 97s, F1_a_table_that_covers_half_a_family_fails_on_the_rest_of_it_later.py 88s
+
+  ⛔ A REGISTERED RECEIPT THAT DOES NOT RUN WHERE IT IS REGISTERED IS NOT A RECEIPT.
