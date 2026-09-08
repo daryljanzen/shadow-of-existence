@@ -69,6 +69,8 @@ result, and its value is that the halves behave differently.
 Written r3166, `L-274`.  Stated for reversal.
 """
 import os
+import re
+import subprocess
 import sys
 
 import numpy as np
@@ -228,10 +230,20 @@ def main():
     print('  ' + '=' * 74)
     print('  PART 5 -- ⛭⛭⛭ AND A SELF-WAIVED GATE BECOMES A BOUND')
     print('  ==========================================================================')
-    check('⓸ P15 records the waiver in its own voice: the ladder "samples the projection below the '
-          'rate the instrument\'s own aliasing gate demands, and that gate waives itself on the '
-          'claim that the ladder is physical"',
-          'waives itself on the claim that the ladder is physical' in p15)
+    # ⛔⛭ AMENDED r4530: r4111 restated P15's acoustic section (539 lines to 73) and the waiver
+    #    sentence went with it -- "aliasing gate", "waive" and "discrete wavenumber ladder" are all
+    #    ZERO in P15 now.  ** This part is a claim about a waiver the paper RECORDED, so it is read
+    #    at the tree that recorded it (`48e55a6b^`), with the read controlled. **  *The bound this
+    #    receipt measures is unaffected: it is a statement about where a ladder's imprint dies, and
+    #    it is computed here rather than quoted.*
+    _P15_THEN = re.sub(r'\s+', ' ', subprocess.run(
+        ['git', 'show', '48e55a6b^:corpus/CR_cosmology.tex'],
+        cwd=ROOT, capture_output=True, text=True, errors='replace').stdout)
+    check('⓸ P15 RECORDED the waiver in its own voice at 48e55a6b^ (before r4111): the ladder '
+          '"samples the projection below the rate the instrument\'s own aliasing gate demands, and '
+          'that gate waives itself on the claim that the ladder is physical"',
+          len(_P15_THEN) > 100000
+          and 'waives itself on the claim that the ladder is physical' in _P15_THEN)
     print('      sigma (transfer width in ln k) | first l with |discreteness| < 1e-3')
     dies = {}
     for sigma in (0.0, 0.10, 0.25, 0.50):
