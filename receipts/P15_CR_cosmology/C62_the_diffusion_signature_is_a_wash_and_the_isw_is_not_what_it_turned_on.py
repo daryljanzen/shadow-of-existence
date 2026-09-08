@@ -62,6 +62,14 @@ damping and nothing else and pays the Bessel projection once for the scan.  Scor
 with an amplitude free, then with an amplitude AND a tilt free -- the degeneracy the frontier text
 names.  ** The figures are in the run below. **
 
+  ⌗ ** AND FREEING ONLY THE NAMED DEGENERACY MAKES THE RESIDUAL AN UPPER BOUND, WHICH IS THE RIGHT
+  DIRECTION FOR THIS ROW. **  *A real refit would also move $\Omega_b h^2$, which changes the damping
+  itself, and the acoustic angle's compensations.  Every extra freedom can only absorb MORE.*  ⇒ *So
+  whatever survives the amplitude-and-tilt fit is the MOST that can survive any refit, and a wash
+  here is a wash a fortiori.*  ⌗ *The tilt is applied as $(\ell/\ell_{\rm piv})^{\dd n}$, which is the
+  standard mapping of a primordial $(k/k_*)^{\dd n}$ onto $C_\ell$ and is approximate at the percent
+  level -- adequate for a degeneracy test and not quoted as a measured $n_s$.*
+
 ⌗ ** THE CONFIGURATION IS NAMED, AND IT IS NOT THE ONE PO-13 USED. **  `LMAXL=2200` puts the damping
 tail INSIDE the reported range; a high-$\ell$ question read on `LMAXL=1300` scores the ceiling.  And
 $0.8\,\ell_{\max} = 1760$ selects ** exactly the 185 bins ** of the configuration `P15` names as the
@@ -132,6 +140,33 @@ print("      ⌗ before r4492 NOISW was read at one site, in main()'s analytic b
 print("        reporting paths carried the ISW unconditionally — so the switch measured nothing.")
 
 # =====================================================================================
+print(); print(BAR); print("PART 1b — THE SIGNATURE'S SIZE, MEASURED FROM THE INSTRUMENT"); print(BAR)
+# ** The row carries "~9%".  A number in a docstring that no check reads is the defect this
+#    corpus keeps finding, so it is measured here from the instrument itself. **
+import contextlib                                                          # noqa: E402
+import importlib.util                                                      # noqa: E402
+import io                                                                  # noqa: E402
+
+_rD = {}
+for _arm in ('lcdm', 'cr'):
+    os.environ.update({'ARM': _arm, 'NOPROJ': '1', 'LMAXL': '300', 'NK': '260'})
+    _sp = importlib.util.spec_from_file_location(f'AT_{_arm}', _INSTR)
+    _m = importlib.util.module_from_spec(_sp)
+    with contextlib.redirect_stdout(io.StringIO()):
+        _sp.loader.exec_module(_m)
+    _rD[_arm] = (float(_m._rD), float((_m.eta_0 - _m.ETA_LS) / _m._rD))
+    print(f"      {_arm:>5}:  r_D = {_rD[_arm][0]:.4f} Mpc   l_D = {_rD[_arm][1]:.1f}")
+_ratio = _rD['cr'][0] / _rD['lcdm'][0]
+print(f"      ratio r_D(cr)/r_D(lcdm) = {_ratio:.5f}   ->  {100*(_ratio-1):+.2f}%")
+print(f"      l_D falls {_rD['lcdm'][1]:.0f} -> {_rD['cr'][1]:.0f}, {100*(_rD['cr'][1]/_rD['lcdm'][1]-1):+.1f}%")
+check("the enlarged diffusion scale is +7.5%, not the ~9% the row carries",
+      0.070 < _ratio - 1 < 0.080)
+check("and DAMPX = 1.156766 is that ratio squared, so the scan imposes exactly it",
+      abs(_ratio ** 2 - 1.156766) < 5e-4)
+print("      ⌗ l_D's larger fall combines r_D with the arm's own eta_0 - eta_LS, which is why the")
+print("        isolation below holds the geometry fixed and moves only 1/k_D^2.")
+
+# =====================================================================================
 print(); print(BAR); print("PART 2 — THE EARLY ISW: LARGE AT LOW ell, SMALL WHERE THIS ROW LIVES")
 print(BAR)
 l_on, on, m_on = load('r4494_cr_leaf_ISWon')
@@ -155,45 +190,95 @@ for lo, hi in ((100, 300), (300, 700), (700, 1300)):
     print(f"      {f'{lo}-{hi}':>12}{lf:>11.1f}%{st:>11.1f}%")
 check("** the leaf assignment multiplies the ISW's low-ell imprint — the term EXISTS because of it **",
       res[(100, 300)][0] > 2 * res[(100, 300)][1])
-check("** and at high ell the ISW is a ~1% effect: not what a high-ell question turns on **",
-      res[(700, 1300)][0] < 3.0)
+
+# ** A FRACTION IS NOT A SIGNIFICANCE, and this row's order says so explicitly. **  The same
+# comparison scored against plik_lite's covariance, with the tilt free, so the number is in the
+# units the verdict is given in.
+_A = CS.chi2_of(l_on, on)[2]
+_mb, _md = _A * CS.bin_spectrum(l_on, on), _A * CS.bin_spectrum(l_on, off)
+_fin = np.isfinite(_mb) & np.isfinite(_md)
+_lc = 0.5 * (CS.BIN_LO + CS.BIN_HI)
+
+
+def _refit(b_, d_, keep, lpiv=1000.0):
+    n_ = int(keep.sum())
+    F_ = scipy.linalg.cho_solve(
+        scipy.linalg.cho_factor(CS.COV_TT[np.ix_(keep, keep)]), np.identity(n_))
+    F_ = 0.5 * (F_ + F_.T)
+    b, d = b_[keep], d_[keep]
+    A_ = float((d @ F_ @ b) / (b @ F_ @ b))
+    c1_ = float((d - A_ * b) @ F_ @ (d - A_ * b))
+    X_ = np.vstack([b, b * np.log(_lc[keep] / lpiv)]).T
+    r_ = d - X_ @ np.linalg.solve(X_.T @ F_ @ X_, X_.T @ F_ @ d)
+    return n_, c1_, float(r_ @ F_ @ r_)
+
+
+print()
+_sig = {}
+for lo, hi, lab in ((100, 1296, 'all, 100-1296'), (700, 1296, 'high, 700-1296')):
+    k = _fin & (CS.BIN_LO >= lo) & (CS.BIN_HI <= hi)
+    n_, c1_, c2_ = _refit(_mb, _md, k)
+    _sig[lab] = math.sqrt(c2_ / n_)
+    print(f"      ISW significance, {lab:<16} {n_:>4} bins   {c2_/n_:8.3f} chi2/bin after a tilt "
+          f"refit   {math.sqrt(c2_/n_):5.2f} sigma/bin")
+check("** the ISW is a 3+ sigma/bin effect overall — large, and NOT absorbed by a tilt **",
+      _sig['all, 100-1296'] > 3.0)
+check("** but under 1 sigma/bin at high ell: NOT what this row's question turns on **",
+      _sig['high, 700-1296'] < 1.0)
 
 # =====================================================================================
 print(); print(BAR); print("PART 3 — THE DIFFUSION SCALE THROUGH A REFIT"); print(BAR)
+lc = 0.5 * (CS.BIN_LO + CS.BIN_HI)
+L_PIV = 1000.0
 lb, Db, mb_meta = load('r4494_lcdm_DAMPX1.000')
 ld, Dd, _ = load('r4494_lcdm_DAMPX1.157')
 check("both spectra are the SAME arm at LMAXL=2200, differing only in DAMPX",
       int(mb_meta['LMAXL']) == 2200 and np.allclose(lb, ld))
 
 A_DATA = CS.chi2_of(lb, Db)[2]        # put both on the DATA's scale; the model norm is arbitrary
+
+
+def refit(mb_, md_, keep):
+    """amplitude-only chi2, then amplitude+tilt chi2, and the tilt the fit wants"""
+    n_ = int(keep.sum())
+    cov = CS.COV_TT[np.ix_(keep, keep)]
+    F_ = scipy.linalg.cho_solve(scipy.linalg.cho_factor(cov), np.identity(n_))
+    F_ = 0.5 * (F_ + F_.T)
+    b_, d_ = mb_[keep], md_[keep]
+    A_ = float((d_ @ F_ @ b_) / (b_ @ F_ @ b_))
+    c1_ = float((d_ - A_ * b_) @ F_ @ (d_ - A_ * b_))
+    X_ = np.vstack([b_, b_ * np.log(lc[keep] / L_PIV)]).T
+    co = np.linalg.solve(X_.T @ F_ @ X_, X_.T @ F_ @ d_)
+    r_ = d_ - X_ @ co
+    return n_, c1_, float(r_ @ F_ @ r_), co[1] / co[0]
+
 mb, md = A_DATA * CS.bin_spectrum(lb, Db), A_DATA * CS.bin_spectrum(ld, Dd)
 keep0 = np.isfinite(mb) & np.isfinite(md)
-lc = 0.5 * (CS.BIN_LO + CS.BIN_HI)
-L_PIV = 1000.0
 
 print(f"      {'configuration':<34}{'bins':>6}{'chi2/bin, A only':>18}{'+ tilt':>10}{'absorbed':>11}")
 out = {}
 for cut, lab in ((0.8 * 2200, 'P15 185-bin (cut at 0.8*lmax=1760)'), (None, 'every covered bin')):
     keep = keep0 & ((CS.BIN_HI <= cut) if cut else np.ones_like(keep0))
-    n = int(keep.sum())
-    cov = CS.COV_TT[np.ix_(keep, keep)]
-    F = scipy.linalg.cho_solve(scipy.linalg.cho_factor(cov), np.identity(n))
-    F = 0.5 * (F + F.T)
-    b, d = mb[keep], md[keep]
-    A = float((d @ F @ b) / (b @ F @ b))
-    r1 = d - A * b
-    c1 = float(r1 @ F @ r1)
-    X = np.vstack([b, b * np.log(lc[keep] / L_PIV)]).T
-    coef = np.linalg.solve(X.T @ F @ X, X.T @ F @ d)
-    r2 = d - X @ coef
-    c2 = float(r2 @ F @ r2)
-    out[lab] = (n, c1, c2, coef[1] / coef[0])
+    n, c1, c2, dn_ = refit(mb, md, keep)
+    out[lab] = (n, c1, c2, dn_)
     print(f"      {lab:<34}{n:>6}{c1/n:>18.3f}{c2/n:>10.3f}{100*(1-c2/c1):>10.1f}%")
 
 n185, c1_185, c2_185, dn = out['P15 185-bin (cut at 0.8*lmax=1760)']
 check("the 0.8*lmax cut selects EXACTLY the 185 bins P15 names as the better-converged set",
       n185 == 185)
 print(f"\n      the tilt the refit wants: dn_s = {dn:+.5f} at pivot l = {L_PIV:.0f}")
+
+# ** THE CONTROL THAT FIRES: inject a KNOWN tilt and require the fitter to absorb ALL of it. **
+# *A fitter that reports absorption has to be shown it is not manufacturing it.*
+print()
+_k = keep0 & (CS.BIN_HI <= 0.8 * 2200)
+for dn_true in (0.02, 0.05):
+    _md = A_DATA * CS.bin_spectrum(lb, Db * (np.maximum(lb, 2) / L_PIV) ** dn_true)
+    _n, _c1, _c2, _dn = refit(mb, _md, _k & np.isfinite(_md))
+    print(f"      CONTROL: injected dn_s = {dn_true:+.3f} -> recovered {_dn:+.5f}, "
+          f"residual {_c2/_n:.5f}/bin, absorbed {100*(1-_c2/_c1):.3f}%")
+    check(f"the fitter recovers an injected tilt of {dn_true:+.3f} and drives the residual to zero",
+          abs(_dn - dn_true) < 0.03 * abs(dn_true) + 1e-3 and _c2 / _c1 < 1e-3)
 print(f"      residual after the refit: {math.sqrt(c2_185/n185):.3f} sigma per bin over {n185} bins")
 
 # =====================================================================================
