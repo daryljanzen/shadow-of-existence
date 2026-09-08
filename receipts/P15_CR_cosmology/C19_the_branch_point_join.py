@@ -53,6 +53,7 @@ that stands.
 Written r2661.  Stated for reversal.
 """
 import os
+import subprocess
 import re
 import subprocess as _sp
 
@@ -118,17 +119,44 @@ def main():
           rad == sp.Rational(3, 2) and mat == sp.Rational(5, 3))
     check(f'⇒ so Phi_expansion / Phi_collapse = {join} EXACTLY', join == sp.Rational(9, 10))
 
+    p15_flat = re.sub(r'\s+', ' ', p15)
+
     # ⓷ CR applies it once
     check('⛭⛭⛭ ⓷ and the expansion leg is "matter-dominated to nine orders, the substrate term being '
           'utterly negligible there"',
           'matter-dominated to nine orders' in p15)
-    check('while LCDM spreads it: "this cosmology has no early integrated Sachs--Wolfe term where flat '
-          '$\\Lambda$CDM has one"',
-          'has no early integrated Sachs--Wolfe term where flat' in p15)
-    check('"in the latter the potential is still some four per cent above its asymptote at '
-          'recombination, and that residual decay is what the line-of-sight integral picks up"',
-          'four per cent above its asymptote at recombination' in p15
-          and 'that residual decay is what the line-of-sight integral picks up' in p15)
+    # ⛔⛭⛭ AMENDED r4518, AND THIS IS A RETRACTION, NOT A RE-PIN.  ** The two sentences quoted here
+    #    were P15's, and P15 has WITHDRAWN THEM. **  `PO-24` (r4502, narrowed at r4505) measured the
+    #    early integrated Sachs--Wolfe term on both rates instead of inferring it, and the paper now
+    #    reads: *"The early integrated Sachs--Wolfe contribution is present here, and the step that
+    #    once denied it is worth setting out because the denial was an inference and not a
+    #    measurement."*  The measured figures are $0.348$ on the leaf congruence and $0.229$ on the
+    #    stacking rate, in units of the Sachs--Wolfe amplitude -- ** non-zero on both. **
+    #    ⇒ *** SO ⓷'s CONTRAST DOES NOT STAND AS IT WAS WRITTEN, AND IT IS NOT REPAIRED BY FINDING
+    #        A NEW STRING TO PIN. ***  The historical claim is read where it stood; what P15 says
+    #        NOW is asserted separately and in the direction that corrects this receipt.
+    #    ⌗ *This receipt inherited the paper's inference and carried it as a finding.  That is the
+    #      cost of quoting a claim rather than checking it, and it is recorded here rather than
+    #      edited out.*
+    _P15_THEN = subprocess.run(['git', 'show', '09d594f5^:corpus/CR_cosmology.tex'],
+                               cwd=ROOT, capture_output=True, text=True, errors='replace').stdout
+    _then = re.sub(r'\s+', ' ', _P15_THEN)
+    check('⓷ᵃ P15 DID say it, and it is read where it stood (09d594f5^, before r4497): "this cosmology '
+          'has no early integrated Sachs--Wolfe term where flat $\\Lambda$CDM has one --- in the latter '
+          'the potential is still some four per cent above its asymptote at recombination, and that '
+          'residual decay is what the line-of-sight integral picks up"',
+          len(_then) > 100000
+          and 'has no early integrated Sachs--Wolfe term where flat' in _then
+          and 'four per cent above its asymptote at recombination' in _then
+          and 'that residual decay is what the line-of-sight integral picks up' in _then)
+    check('⛔ ⓷ᵇ AND P15 HAS WITHDRAWN IT: "The early integrated Sachs--Wolfe contribution is present '
+          'here, and the step that once denied it is worth setting out because the denial was an '
+          'inference and not a measurement" -- measured at $0.348$ on the leaf congruence and $0.229$ '
+          'on the stacking rate, non-zero on both.  ** So the ⓷ contrast below is the paper\'s old '
+          'inference and this receipt carried it; the 9/10 join in ⓵ and ⓶ is untouched by it. **',
+          'The early integrated Sachs--Wolfe contribution is present here' in p15_flat
+          and 'the denial was an inference and not a measurement' in p15_flat
+          and 'Non-zero on both' in p15_flat)
 
     print()
     if FAILED:
@@ -141,7 +169,14 @@ def main():
     print('     So the join is a CHANGE OF VARIABLE, not a new dynamics. **')
     print('  ⛭⛭ ⓶ ** And the value follows in closed form: ** R/Phi = 3/2 (radiation), 5/3 (matter)')
     print('     ⇒ ** Phi_exp / Phi_coll = 9/10, exactly. **')
-    print('  ⛭⛭⛭ ⓷ ** And CR applies it ONCE where LCDM spreads it over equality: **')
+    print('  ⛔ ⓷ ** WITHDRAWN BY THE PAPER (r4502/r4505, PO-24): ** P15 no longer says this')
+    print('     cosmology has no early ISW term.  Measured rather than inferred, it is ** 0.348 on')
+    print('     the leaf congruence and 0.229 on the stacking rate ** -- non-zero on both, the leaf')
+    print('     assignment making it half again larger rather than creating it.  ** The contrast')
+    print('     below is the inference this receipt inherited from the paper and is kept only as')
+    print('     the record of it. **  ⓵ and ⓶ -- the conservation statement and the 9/10 closed')
+    print('     form -- do not depend on it.')
+    print('  ⌗ ⓷ as written, superseded: ** And CR applies it ONCE where LCDM spreads it over equality: **')
     print('     ** LCDM ** -- the potential decays through equality and is ** still ~4% above asymptote at')
     print('     recombination **, and that residual decay ** sources an early ISW term **;')
     print('     ** CR ** -- the content changes AT the branch point and the expansion leg is')

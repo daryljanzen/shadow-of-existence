@@ -49,6 +49,7 @@ of two is derived here ** -- it is the paper's, with its own receipt.
 Written r2664.  Stated for reversal.
 """
 import os
+import subprocess
 import re
 
 import numpy as np
@@ -95,12 +96,34 @@ def main():
           'makes it \\emph{larger}' in p15)
 
     # ⓶ the low-ell number
-    check('⛭⛭ ⓶ and LCDM\'s residual is the paper\'s: "still some four per cent above its asymptote at '
-          'recombination"',
-          'four per cent above its asymptote at recombination' in p15)
+    # ⛔⛭⛭ AMENDED r4518: ** THE PREMISE UNDER THIS NUMBER WAS WITHDRAWN BY THE PAPER. **  The
+    #    sentence quoted here is P15's, and the contrast it served -- $\Lambda$CDM's $\Phi$ four per
+    #    cent above asymptote against CR's AT its asymptote -- was retracted by `PO-24` (r4502,
+    #    narrowed r4505): *"The early integrated Sachs--Wolfe contribution is present here, and the
+    #    step that once denied it is worth setting out because the denial was an inference and not
+    #    a measurement"*, measured at $0.348$ on the leaf congruence and $0.229$ on the stacking
+    #    rate, non-zero on BOTH.  ⇒ *** So the $7.5\%$ low-$\ell$ deficit is an arithmetic
+    #    consequence of a premise the paper no longer holds.  The arithmetic is kept -- it is
+    #    correct arithmetic and it is what this receipt computed -- and it is LABELLED as resting on
+    #    the withdrawn contrast rather than presented as a live prediction. ***
+    _P15_THEN = re.sub(r'\s+', ' ', subprocess.run(
+        ['git', 'show', '09d594f5^:corpus/CR_cosmology.tex'],
+        cwd=ROOT, capture_output=True, text=True, errors='replace').stdout)
+    _p15f = re.sub(r'\s+', ' ', p15)
+    check('⛭⛭ ⓶ᵃ and LCDM\'s residual WAS the paper\'s, read where it stood (09d594f5^): "still some '
+          'four per cent above its asymptote at recombination"',
+          len(_P15_THEN) > 100000
+          and 'four per cent above its asymptote at recombination' in _P15_THEN)
+    check('⛔ ⓶ᵇ AND THE CR HALF OF THAT CONTRAST IS WITHDRAWN: P15 now measures the early ISW at '
+          '$0.348$ on the leaf congruence and $0.229$ on the stacking rate, "non-zero on both", so '
+          'CR\'s $\\Phi$ is NOT at its asymptote.  ** The deficit below follows from the old premise '
+          'and is kept as arithmetic, not as a live prediction. **',
+          'The early integrated Sachs--Wolfe contribution is present here' in _p15f
+          and 'Non-zero on both' in _p15f)
     ratio = (1.0 / 1.04) ** 2
-    check(f'⇒ so the plateau power ratio is (1/1.04)^2 = {ratio:.3f} -- a {100*(1-ratio):.1f}% low-ell '
-          'deficit',
+    check(f'⇒ so the plateau power ratio ON THE WITHDRAWN PREMISE is (1/1.04)^2 = {ratio:.3f} -- a '
+          f'{100*(1-ratio):.1f}% low-ell deficit.  *Correct arithmetic from a contrast the paper no '
+          f'longer draws.*',
           abs(ratio - 0.925) < 0.002)
 
     # ⓷ the high-ell numbers
@@ -123,8 +146,12 @@ def main():
     print('     order two across the first few peaks **".')
     print('     ⌗ ** And the decay is not a radiation effect ** -- "zeroing the radiation fractions makes')
     print('       it LARGER", the rate being k²/(3H).')
-    print('  ⛭⛭ ⓶ ** LOW-ELL: ** LCDM sits 4% above asymptote at recombination; CR sits AT it.')
-    print(f'     ⇒ ** power ratio (1/1.04)² = {ratio:.3f}, a {100*(1-ratio):.1f}% DEFICIT. **')
+    print('  ⛔ ⓶ ** LOW-ELL, ON A PREMISE THE PAPER HAS WITHDRAWN: ** the contrast was LCDM 4% above')
+    print('     asymptote against CR AT it.  ** PO-24 (r4502/r4505) MEASURED the early ISW instead of')
+    print('     inferring it: 0.348 on the leaf congruence, 0.229 on the stacking rate, non-zero on')
+    print('     BOTH ** -- so CR is not at its asymptote and the contrast is gone.')
+    print(f'     ⇒ the arithmetic that followed, kept as arithmetic and not as a prediction:')
+    print(f'       power ratio (1/1.04)² = {ratio:.3f}, a {100*(1-ratio):.1f}% deficit ON THAT PREMISE.')
     print('  ⓷ ** HIGH-ELL, the paper\'s own ratio: ** 0.958 at 0.5 l_D, ** 0.843 at l_D **, 0.681 at')
     print('     1.5 l_D, ** 0.459 at 2 l_D. **')
     print('  ⇒⇒ ⓸ ** AND THE GAP IS NAMED: ** between them -- ** the acoustic peaks ** -- the chain does')

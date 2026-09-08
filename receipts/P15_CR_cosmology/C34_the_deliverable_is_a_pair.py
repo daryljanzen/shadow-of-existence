@@ -48,6 +48,7 @@ to the control, and the receipt they carry is P15's.
 Written r2711.  Stated for reversal.
 """
 import os
+import subprocess
 import re
 
 import numpy as np
@@ -85,16 +86,37 @@ def main():
           'The first acoustic peak, and the propagated comb' in po7)
 
     # ⓶ the dependency, in P15's numbers
-    check('⛭⛭ ⓶ and the phase freedom is a lever on it: "the seam datum\'s own phase freedom is a real '
-          'lever on it and spans a third of it"',
-          "the seam datum's own phase freedom is a real lever on it and spans a third of it" in p15)
-    check('with both values stated: "at the opposite phase the gap to the control closes from $0.615$ '
-          'to $0.408$, thirty-four per cent, and no further"',
-          'thirty-four per cent, and no further' in p15
-          and '0.615' in p15 and '0.408' in p15)
-    check('and neither closes it: "the datum\'s phase moves the acoustic phase ... and cannot close the '
-          'discrepancy"',
-          'cannot close the discrepancy' in p15)
+    # ⛔⛭⛭ AMENDED r4518.  ** r4111 restated P15's acoustic section, 539 lines to 73, and this
+    #    receipt's three quotations went with it. **  The old form gave the lever as a single pair of
+    #    numbers -- the gap closing from $0.615$ to $0.408$ at the opposite phase, "thirty-four per
+    #    cent, and no further".  *** The paper does not report less now, it reports more: *** the
+    #    datum's TWO freedoms are enumerated, and the first peak is measured across all seventeen
+    #    readings a four-peak criterion admits -- spanning $148$ to $228$, a factor of $1.541$ -- with
+    #    the sky's $220.6$ inside the span and "there is no such reading" that reproduces the sky.
+    #    ⇒ The historical numbers are read at `48e55a6b^`, where they stood; what the paper says NOW
+    #      carries the same claim this receipt needs -- the datum's freedoms move the result and do
+    #      not close it -- and is asserted on its own terms rather than re-pinned to a phrase P15 has
+    #      replaced with a stronger measurement.
+    _P15_THEN = re.sub(r'\s+', ' ', subprocess.run(
+        ['git', 'show', '48e55a6b^:corpus/CR_cosmology.tex'],
+        cwd=ROOT, capture_output=True, text=True, errors='replace').stdout)
+    check('⛭⛭ ⓶ᵃ the phase freedom WAS given as a lever with a pair of numbers, read where it stood '
+          '(48e55a6b^, before r4111): "the seam datum\'s own phase freedom is a real lever on it and '
+          'spans a third of it", the gap closing "from $0.615$ to $0.408$, thirty-four per cent, and '
+          'no further", and "cannot close the discrepancy"',
+          len(_P15_THEN) > 100000
+          and "own phase freedom is a real lever on it and spans a third of it" in _P15_THEN
+          and 'thirty-four per cent, and no further' in _P15_THEN
+          and 'cannot close the discrepancy' in _P15_THEN)
+    check('⛭⛭ ⓶ᵇ and P15 states it MORE strongly now, which is why the pins broke: "The seam datum '
+          'carries two freedoms, and how far the first peak moves with them is measured" -- across '
+          'the seventeen admitted readings the first peak spans $148$ to $228$, a factor of $1.541$, '
+          'the sky\'s $220.6$ inside it, and "there is no such reading" reproducing the sky.  ** So a '
+          '$\\chi^2$ scored while PO-7 is open still carries a two-valued input, and the freedoms '
+          'still do not close the gap. **',
+          'The seam datum carries two freedoms' in p15
+          and 'how far the first peak moves with them is measured' in p15
+          and 'there is no such reading' in p15)
 
     # ⓷ discrete, so k is unchanged
     dB2 = (6 - 2)*np.log(N)
@@ -111,7 +133,8 @@ def main():
     print('  ⓵ ** The acoustic sector IS open — it is PO-7 ** ("the first acoustic peak, and the')
     print('     propagated comb"), and r2709-r2710 were setting PO-10 up as though its input were')
     print('     settled.')
-    print('  ⛭⛭ ⓶ ** The dependency, in P15\'s own numbers: ** the seam phase "is a real lever ... at the')
+    print('  ⛭⛭ ⓶ ** The dependency, in P15\'s numbers AS THEY STOOD (48e55a6b^, before r4111): **')
+    print('     the seam phase "is a real lever ... at the')
     print('     opposite phase the gap to the control closes from ** 0.615 to 0.408, thirty-four per')
     print('     cent, and no further **" — and "** cannot close the discrepancy **".')
     print('     ⇒ *** So a χ² scored while PO-7 is open carries a TWO-VALUED input. ***')

@@ -77,12 +77,34 @@ def main():
     #    the baryon loading, a CONTENT ratio the rate difference does not enter.  P7 now reports
     #    P1/P2 = 2.185 here against 2.2564 +/- 0.0772 measured -- agreement, i.e. no discriminating
     #    signal, which is exactly what the receipt said would happen. **
-    check('⓵ P7 half ① has been RUN, and reports a disagreement: chi^2 = 397.13 against 206.44 over '
-          'the 215 binned TT multipoles at equal fitted-parameter count',
-          '397.13' in p7 and '206.44' in p7 and 'equal fitted-parameter count' in p7)
-    check('⛭ and half ② has been run too, CONFIRMING this receipt: the odd/even pattern agrees, so it '
-          'carries no CR-versus-LambdaCDM signal -- $P_1/P_2 = 2.185$ against $2.2564 \\pm 0.0772$',
-          'P_1/P_2=2.185' in p7.replace(' ', '') or '2.185' in p7)
+    # ⛔⛭⛭ AMENDED r4518, AND THE TWO HALVES FAILED FOR DIFFERENT REASONS.
+    #    ⓵ IS A MOVE, NOT A LOSS: r4111 restated P15's acoustic section (539 lines to 73) and
+    #      carried the same correction into P7's frontier item, so the refit figures now live in
+    #      P15 and P7 no longer repeats them.  *A receipt that pins a number to a FILE is asserting
+    #      where the corpus keeps it; the claim is that the corpus states it.*  Asserted against
+    #      P15, with the move named.
+    #    ⛔ ⓵ᵇ IS A RETRACTION, AND IT GOES AGAINST THIS RECEIPT.  The note above records "P7 now
+    #      reports P1/P2 = 2.185 here against 2.2564 +/- 0.0772 measured -- agreement, i.e. no
+    #      discriminating signal, which is exactly what the receipt said would happen."  ** 2.185 is
+    #      gone from the corpus, and P15 now says what this construction returns for that quantity
+    #      "waits on the transfer of \S\ref{sec:refit-bound}, since a peak height is exactly what an
+    #      unconverged transfer gets wrong". **  ⇒ *** So half ② has NOT been run on this arm, and
+    #      the confirmation this receipt claimed is withdrawn.  The PREDICTION stands unchanged --
+    #      the odd/even pattern is fixed by the baryon loading, a content ratio the rate difference
+    #      does not enter -- and it is now what it always was: a prediction, waiting on the
+    #      transfer, not a confirmed agreement. ***
+    check('⓵ half ① has been RUN and reports a disagreement -- $\\chi^2=397.13$ against $206.44$ over '
+          'the 215 binned TT multipoles at equal fitted-parameter count.  *The figures live in P15 '
+          'now: r4111 restated the acoustic section and P7 carries the frontier item, not the '
+          'numbers.*',
+          '397.13' in p15 and '206.44' in p15 and 'equal fitted-parameter count' in p15)
+    check('⛔ ⓵ᵇ AND HALF ② HAS NOT BEEN RUN ON THIS ARM, so the confirmation claimed here is '
+          'WITHDRAWN: the sky\'s $P_1/P_2=2.2564\\pm0.0772$ and flat $\\Lambda$CDM\'s $2.200$ are '
+          'stated, and "what this construction returns for the same quantity waits on the transfer '
+          'of sec:refit-bound, since a peak height is exactly what an unconverged transfer gets '
+          'wrong".  ** The PREDICTION below is untouched; only the claim that it had been confirmed '
+          'is. **',
+          '2.2564' in p15 and 'waits on the transfer' in p15 and '2.185' not in p15 + p7)
 
     # ⓶ P15 gives the values
     check('⛭⛭ ⓶ and P15 gives where and at what value: "the odd/even asymmetry is imprinted afterwards, '
