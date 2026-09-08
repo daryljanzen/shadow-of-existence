@@ -7,7 +7,7 @@ every time anyone asked what was left.  ⇒ *** A grep is not a list of what is 
 places to look, and the looking has to be written down or it does not count. ***
 
 ** WHAT THE LEDGER HOLDS. **  `corpus/open_ledger.txt` -- one line per DISTINCT epistemic qualification in
-the paper bodies, with a VERDICT.  ** 123 raw hits deduplicate to 113 sentences **, and reading them shows
+the paper bodies, with a VERDICT.  ** the live counts are reported on each run and are not declared here **, and reading them shows
 most are not gaps: deliberate `DO-NOT-ASSERT` holdings, `SCOPE-BY-DESIGN` statements, descriptions of
 `STANDARD-PHYSICS`'s open problems, or claims that are `SELF-ANSWERED` two sentences later.
 
