@@ -149,8 +149,16 @@ h = {c: n for c, n in h.items() if n}
 print(f"    'harmonic index':      {h}")
 check("and a SECOND label form the first pass missed entirely, in four papers",
       sorted(h), ['P07', 'P10', 'P15', 'P16'])
-check("x7 in all, so the LABEL sense runs x22 across seven papers",
-      sum(h.values()), 7)
+# ⛭ AMENDED r4536, AND THE MOVER IS LOCATED RATHER THAN THE COUNT LOOSENED.  7 -> 8: the four
+#   papers are the SAME four, and P10 went 2 -> 3 at `r4231` -- "PO-28 worked and closed on its own
+#   stated condition: the adiabatic residue" -- which added a harmonic-index use to `canonical_time`.
+#   *A count is a claim about a FILE AT A COMMIT; the label sense grew by one because a paper worked
+#   an item, which is the direction this receipt's thesis predicts.*
+check("x8 in all now (x7 when this was written), so the LABEL sense runs x22 across seven papers "
+      "-- the growth is P10's, 2 -> 3, added by r4231's PO-28 close",
+      sum(h.values()), 8)
+check("and it is P10 that moved, the other three standing where they were",
+      [h.get('P07'), h.get('P10'), h.get('P15'), h.get('P16')], [1, 3, 1, 3])
 print("    *** Sense ② is a LABEL, and it has at least three surface forms -- a within-state")
 print("        index, a harmonic index, a sheet index.  None of them is an operator invariant. ***")
 

@@ -139,7 +139,25 @@ check("all three senses are present, which is the thesis", sorted(k for k, v in 
 print("\nVERDICT 2 — SENSE A IS FIVE PAPERS MAKING ONE NEGATIVE CLAIM, and that is the point.")
 apapers = sorted({c for c, _, s, _ in sites if s == 'A'})
 print(f"    sense A appears in: {apapers}")
-check("five distinct papers carry sense A", len(apapers), 5)
+# ⛔⛭⛭ AMENDED r4536, AND THE PAPER THAT LEFT IS NAMED RATHER THAN ABSORBED.  At this receipt's own
+#    commit (`cd901791`, r3608) sense A appeared in P02, P03, P08, P10 AND P12.  ** P12 no longer
+#    carries it: r4083's end-to-end harvest removed the passage whose sentence classified it --
+#    "\emph{Read that way the asymptotic mass problem loses its subject.} A conserved charge in an
+#    asymptotically-de~Sitter spacetime is widely held not to be well defined" -- and no rewording
+#    of it survives: `loses its subject`, `asymptotic mass problem`, `not be well defined` and
+#    `asymptotically-de~Sitter` are ALL ZERO in P12 now, and so is `conserved charge` itself. **
+#    ⇒ *The thesis is that sense A is several papers making ONE negative claim, and four papers
+#      still make it.  The FIVE is a measurement at a commit, so it is read there; the FOUR is the
+#      measurement now; and the difference is stated with its cause instead of being smoothed into
+#      a weaker bound.*  ⌗ r4083 is this line's own revision.
+check("sense A is carried by four papers now -- P02, P03, P08, P10 -- which is several papers "
+      "making ONE negative claim, the thesis of this verdict", len(apapers), 4)
+check("⛔ and the fifth is NAMED with its cause: P12 carried sense A at cd901791 (r3608) and does "
+      "not now -- r4083's harvest removed the passage, and `conserved charge` itself is zero there, "
+      "so nothing was reworded and nothing is being counted in its place",
+      ['P02', 'P03', 'P08', 'P10'], apapers)
+check("and P12 really has dropped the phrase rather than moved it",
+      'conserved charge' in BODIES.get('P12', ''), False)
 print("    *** Each says the object is NOT well defined here.  B and C use the same two words")
 print("        for objects that are.  A reader importing A into B loses P11's result. ***")
 
