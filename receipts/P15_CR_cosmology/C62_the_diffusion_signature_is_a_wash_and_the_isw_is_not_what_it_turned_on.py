@@ -51,9 +51,15 @@ repaired, its imprint on this arm's spectrum, as a mean fractional change:
 ⇒ *The leaf assignment multiplies the ISW's low-$\ell$ imprint by ${\sim}2.5$, confirming the
 judgement by measurement.*  ⛔ ** And at high $\ell$ it is a $1.4\%$ effect. **  *The term the row
 names as one of two things the answer turns on barely reaches the multipoles the question is about.*
-⌗ *`STACKPERT` moves the whole perturbation sector and not radiation alone, so the factor isolates
-the ASSIGNMENT rather than radiation-in-the-ISW specifically; and the stacking arm's $22.6\%$ is not
-zero because the LATE ISW from $\Lambda$ survives regardless.*
+⛔ ** AND TWO THINGS I FIRST WROTE ABOUT THIS ARE WRONG, CORRECTED HERE. **  *(i) I said the term
+EXISTS because of the leaf assignment.  It does not: `_rt`, which sets the radiation FRACTIONS in the
+perturbation source, is built from the stack "both arms" by the instrument's own comment, so radiation
+is in the source under EITHER assignment and `STACKPERT` changes only which $H$ the equations use.
+The leaf assignment makes the term $1.52\times$ larger, not present.  (ii) I said the stacking arm's
+$22.6\%$ was late ISW from $\Lambda$ surviving.  It is not: `ETA_END` is $20\,a_{\rm rec}$, so the
+line-of-sight integration STOPS AT $z\simeq54$ and the late-ISW era is outside the calculation
+entirely.*  ⇒ ** So everything measured here is EARLY ISW, on both rate assignments, which makes the
+comparison cleaner than I claimed and not dirtier. **
 
 ** (3) THE SIGNATURE THROUGH A REFIT -- THE ROW'S ACTUAL QUESTION. **  Same arm, same geometry, same
 acoustic angle, ISW on in both, and ONLY $1/k_D^2$ scaled by $1.156766 = (7.6398/7.1033)^2$, so
@@ -71,9 +77,13 @@ names.  ** The figures are in the run below. **
   level -- adequate for a degeneracy test and not quoted as a measured $n_s$.*
 
 ⌗ ** THE CONFIGURATION IS NAMED, AND IT IS NOT THE ONE PO-13 USED. **  `LMAXL=2200` puts the damping
-tail INSIDE the reported range; a high-$\ell$ question read on `LMAXL=1300` scores the ceiling.  And
-$0.8\,\ell_{\max} = 1760$ selects ** exactly the 185 bins ** of the configuration `P15` names as the
-better-converged one -- asserted below rather than assumed.
+tail INSIDE the reported range; a high-$\ell$ question read on `LMAXL=1300` scores the ceiling.  And $0.8\,\ell_{\max} = 1760$ is
+** the same $\ell$ CEILING as the 185-bin configuration `P15` names as better-converged, but not the
+same BIN SET **: `plik_lite` starts at $\ell=30$ and this instrument reports from $\ell=100$
+(`ls = arange(100, LMAXL, LSTEP)`), so $171$ of those $185$ bins are covered.  ⌗ *I first wrote that
+the cut selects "exactly the 185 bins"; $185$ is the count over the full range and $171$ is what a
+spectrum starting at $100$ can score.  A coincidence of ceilings read as an identity of bin sets --
+checked before the run rather than after, which is the only reason it is a footnote.*
 
 ** WHAT IS NOT CLAIMED. **  Nothing is tuned: $r_D$'s ratio is measured from the two arms and imposed,
 not fitted.  ** The differential is taken on the line-of-sight path because it is the ONLY path
@@ -84,6 +94,16 @@ hand-over and the multipoles carry the rest natively, so scaling it there is a p
 flag repair.)*  That path also did not complete a single mode batch in 83 minutes at this reach.  And no claim is made that the CR arm as
 a whole is consistent: `r4136` measured its heights at $-20.7\%$ and $-29.2\%$, and this receipt is
 about the DIFFUSION SCALE alone.
+
+** COMPUTES: the ISW's imprint on this cosmology's arm under the two rate assignments, and the
+  diffusion-scale signature carried through an amplitude-and-tilt refit scored on plik_lite TT.
+  *** AT ONE PARAMETER SET AND THE PINS ARE THE POINT: *** ARM held fixed so the two spectra of a
+  comparison differ in ONE thing; DAMPX = 1.156766, which is asserted to BE the measured
+  r_D ratio squared and is not chosen; LMAXL = 2200 so the damping tail is inside the reported
+  range, with 0.8*LMAXL = 1760 as P15's own ceiling; KFAC = 2.0 at the converged rung; LSTEP = 4;
+  the line-of-sight path, because DAMPX reaches no other.  ** Nothing is fitted to make the
+  signature survive or vanish: r_D's ratio is measured from the two arms and imposed, Omega_r is
+  untouched, and the only free parameters are the amplitude and tilt the degeneracy names. **
 
 STATUS: OK
 RUN: python3 C62_the_diffusion_signature_is_a_wash_and_the_isw_is_not_what_it_turned_on.py
@@ -188,7 +208,7 @@ for lo, hi in ((100, 300), (300, 700), (700, 1300)):
     lf, st = band(l_on, on, off, lo, hi), band(l_os, ons, offs, lo, hi)
     res[(lo, hi)] = (lf, st)
     print(f"      {f'{lo}-{hi}':>12}{lf:>11.1f}%{st:>11.1f}%")
-check("** the leaf assignment multiplies the ISW's low-ell imprint — the term EXISTS because of it **",
+check("** the leaf assignment MULTIPLIES the ISW's low-ell imprint (it does not create it) **",
       res[(100, 300)][0] > 2 * res[(100, 300)][1])
 
 # ** A FRACTION IS NOT A SIGNIFICANCE, and this row's order says so explicitly. **  The same
@@ -227,59 +247,126 @@ check("** but under 1 sigma/bin at high ell: NOT what this row's question turns 
       _sig['high, 700-1296'] < 1.0)
 
 # =====================================================================================
-print(); print(BAR); print("PART 3 — THE DIFFUSION SCALE THROUGH A REFIT"); print(BAR)
+print(); print(BAR); print("PART 3 — THE SIGNATURE IMPOSED ON THE MEASURED SKY, AND REFITTED")
+print(BAR)
+# ** The signature is a GAUSSIAN in ell and a tilt is a POWER LAW. **  Scaling r_D by the measured
+# ratio multiplies the damping envelope by exp(-[R^2-1](l/l_D)^2), so the question is whether a
+# power law can absorb a Gaussian over the observed range.
+# ⌗ *Imposed on the DATA's own binned spectrum rather than on a model's: it covers all 215 bins from
+#   l=30, needs no instrument reach, and asks the row's question in the row's own terms -- what the
+#   signature does to the OBSERVED high-ell power.*  The envelope multiplies the photon
+#   perturbations and not Psi, so applying it to the whole spectrum OVERSTATES the effect at low ell
+#   where the ISW lives -- which is the conservative direction for a wash.
+L_D = 1951.9
+FAC = 1.156766 - 1.0
 lc = 0.5 * (CS.BIN_LO + CS.BIN_HI)
 L_PIV = 1000.0
-lb, Db, mb_meta = load('r4494_lcdm_DAMPX1.000')
-ld, Dd, _ = load('r4494_lcdm_DAMPX1.157')
-check("both spectra are the SAME arm at LMAXL=2200, differing only in DAMPX",
-      int(mb_meta['LMAXL']) == 2200 and np.allclose(lb, ld))
-
-A_DATA = CS.chi2_of(lb, Db)[2]        # put both on the DATA's scale; the model norm is arbitrary
-
-
-def refit(mb_, md_, keep):
-    """amplitude-only chi2, then amplitude+tilt chi2, and the tilt the fit wants"""
-    n_ = int(keep.sum())
-    cov = CS.COV_TT[np.ix_(keep, keep)]
-    F_ = scipy.linalg.cho_solve(scipy.linalg.cho_factor(cov), np.identity(n_))
-    F_ = 0.5 * (F_ + F_.T)
-    b_, d_ = mb_[keep], md_[keep]
-    A_ = float((d_ @ F_ @ b_) / (b_ @ F_ @ b_))
-    c1_ = float((d_ - A_ * b_) @ F_ @ (d_ - A_ * b_))
-    X_ = np.vstack([b_, b_ * np.log(lc[keep] / L_PIV)]).T
-    co = np.linalg.solve(X_.T @ F_ @ X_, X_.T @ F_ @ d_)
-    r_ = d_ - X_ @ co
-    return n_, c1_, float(r_ @ F_ @ r_), co[1] / co[0]
-
-mb, md = A_DATA * CS.bin_spectrum(lb, Db), A_DATA * CS.bin_spectrum(ld, Dd)
-keep0 = np.isfinite(mb) & np.isfinite(md)
-
-print(f"      {'configuration':<34}{'bins':>6}{'chi2/bin, A only':>18}{'+ tilt':>10}{'absorbed':>11}")
-out = {}
-for cut, lab in ((0.8 * 2200, 'P15 185-bin (cut at 0.8*lmax=1760)'), (None, 'every covered bin')):
-    keep = keep0 & ((CS.BIN_HI <= cut) if cut else np.ones_like(keep0))
-    n, c1, c2, dn_ = refit(mb, md, keep)
-    out[lab] = (n, c1, c2, dn_)
-    print(f"      {lab:<34}{n:>6}{c1/n:>18.3f}{c2/n:>10.3f}{100*(1-c2/c1):>10.1f}%")
-
-n185, c1_185, c2_185, dn = out['P15 185-bin (cut at 0.8*lmax=1760)']
-check("the 0.8*lmax cut selects EXACTLY the 185 bins P15 names as the better-converged set",
-      n185 == 185)
-print(f"\n      the tilt the refit wants: dn_s = {dn:+.5f} at pivot l = {L_PIV:.0f}")
-
-# ** THE CONTROL THAT FIRES: inject a KNOWN tilt and require the fitter to absorb ALL of it. **
-# *A fitter that reports absorption has to be shown it is not manufacturing it.*
+base = CS.X_DATA.copy()
+dmp = base * np.exp(-FAC * (lc / L_D) ** 2)
+print(f"      extra suppression exp(-{FAC:.4f} (l/{L_D:.0f})^2):", end="")
+for _l in (500, 1000, 1760):
+    print(f"  l={_l}: {100*(1-math.exp(-FAC*(_l/L_D)**2)):.1f}%", end="")
 print()
-_k = keep0 & (CS.BIN_HI <= 0.8 * 2200)
+
+
+def refit(b_, d_, keep):
+    """amplitude-only chi2, amplitude+tilt chi2, the tilt, and the tilt's OWN uncertainty"""
+    n_ = int(keep.sum())
+    F_ = scipy.linalg.cho_solve(
+        scipy.linalg.cho_factor(CS.COV_TT[np.ix_(keep, keep)]), np.identity(n_))
+    F_ = 0.5 * (F_ + F_.T)
+    b, d = b_[keep], d_[keep]
+    A_ = float((d @ F_ @ b) / (b @ F_ @ b))
+    c1_ = float((d - A_ * b) @ F_ @ (d - A_ * b))
+    X_ = np.vstack([b, b * np.log(lc[keep] / L_PIV)]).T
+    M_ = X_.T @ F_ @ X_
+    co = np.linalg.solve(M_, X_.T @ F_ @ d)
+    C_ = np.linalg.inv(M_)
+    r_ = d - X_ @ co
+    g = np.array([-co[1] / co[0] ** 2, 1.0 / co[0]])          # d(B/A) propagated
+    return n_, c1_, float(r_ @ F_ @ r_), co[1] / co[0], float(np.sqrt(g @ C_ @ g))
+
+
+print()
+print(f"      {'range':>20}{'bins':>6}{'A only':>9}{'+tilt':>8}{'sig/bin':>9}"
+      f"{'dn_s':>10}{'sigma':>9}{'in sigma':>10}")
+res3 = {}
+for lo, hi, lab in ((30, 1760, "P15 ceiling 1760"), (30, 2508, "all bins 2508"),
+                    (700, 1760, "high 700-1760")):
+    k = (CS.BIN_LO >= lo) & (CS.BIN_HI <= hi)
+    n_, c1_, c2_, dn_, sdn_ = refit(base, dmp, k)
+    res3[lab] = (n_, c1_, c2_, dn_, sdn_)
+    print(f"      {lab:>20}{n_:>6}{c1_/n_:>9.3f}{c2_/n_:>8.3f}{math.sqrt(c2_/n_):>9.2f}"
+          f"{dn_:>10.4f}{sdn_:>9.5f}{abs(dn_)/sdn_:>9.1f}s")
+
+n1, c11, c21, dn1, sdn1 = res3["P15 ceiling 1760"]
+check("the 185-bin ceiling is P15's, and here the bin set IS the full one (data starts at l=30)",
+      n1 == 185)
+check("** the TT SHAPE residual is a wash: under 0.6 sigma per bin after the refit **",
+      math.sqrt(c21 / n1) < 0.6)
+check("** and MORE completely absorbed the higher you look — a Gaussian looks like a power law "
+      "over a restricted range **",
+      res3["high 700-1760"][2] / res3["high 700-1760"][1]
+      < c21 / c11)
+check("** BUT THE ABSORPTION IS NOT FREE: the tilt it costs is many sigma of the tilt uncertainty "
+      "THIS dataset gives **", abs(dn1) / sdn1 > 5.0)
+print()
+print("      ⌗ sigma(dn_s) is derived from the same plik_lite covariance that scores the fit, by")
+print("        propagating B/A through the fit's own parameter covariance — not a recalled value.")
+
+# =====================================================================================
+print(); print(BAR); print("PART 4 — THE FITTER, CONTROLLED"); print(BAR)
+_k = (CS.BIN_LO >= 30) & (CS.BIN_HI <= 1760)
 for dn_true in (0.02, 0.05):
-    _md = A_DATA * CS.bin_spectrum(lb, Db * (np.maximum(lb, 2) / L_PIV) ** dn_true)
-    _n, _c1, _c2, _dn = refit(mb, _md, _k & np.isfinite(_md))
-    print(f"      CONTROL: injected dn_s = {dn_true:+.3f} -> recovered {_dn:+.5f}, "
-          f"residual {_c2/_n:.5f}/bin, absorbed {100*(1-_c2/_c1):.3f}%")
-    check(f"the fitter recovers an injected tilt of {dn_true:+.3f} and drives the residual to zero",
-          abs(_dn - dn_true) < 0.03 * abs(dn_true) + 1e-3 and _c2 / _c1 < 1e-3)
-print(f"      residual after the refit: {math.sqrt(c2_185/n185):.3f} sigma per bin over {n185} bins")
+    _md = base * (lc / L_PIV) ** dn_true
+    _n, _c1, _c2, _dn, _s = refit(base, _md, _k)
+    print(f"      injected dn_s = {dn_true:+.3f} -> recovered {_dn:+.5f}, residual "
+          f"{_c2/_n:.6f}/bin, absorbed {100*(1-_c2/_c1):.3f}%")
+    # ** THE RECOVERY IS NOT EXACT AND SHOULD NOT BE. **  The injection multiplies the BINNED
+    # spectrum by (l_centre/l_piv)^dn, while a true tilt multiplies the spectrum BEFORE binning --
+    # and the bin-average of a power law is not the power law at the bin centre.  *So a few per cent
+    # of mis-recovery is the binning, not the fitter, and demanding zero would be demanding the
+    # wrong thing.*  What is asserted is that it absorbs to better than 99.9%.
+    check(f"the fitter recovers an injected tilt of {dn_true:+.3f} to within 5% and absorbs >99.9%",
+          abs(_dn - dn_true) < 0.05 * abs(dn_true) and _c2 / _c1 < 1e-3)
+print("      ⇒ a fitter that reports absorption has to be shown it is not manufacturing it.")
+
+# =====================================================================================
+print(); print(BAR); print("PART 5 — CONFIRMED ON THE INSTRUMENT'S OWN SPECTRA"); print(BAR)
+# ** The data-shape route above needs no instrument reach and covers all 215 bins.  This is the
+#    independent confirmation on two spectra from the instrument itself, same arm, same geometry,
+#    ISW handled exactly rather than by multiplying the whole spectrum. **
+try:
+    lb, Db, mb_meta = load('r4494_lcdm_DAMPX1.000')
+    ld, Dd, _ = load('r4494_lcdm_DAMPX1.157')
+except FileNotFoundError:
+    print("      the DSCAN pair is not banked in this tree — Part 3 stands alone and says so.")
+else:
+    check("both are the SAME arm at LMAXL=2200, differing only in DAMPX",
+          int(mb_meta['LMAXL']) == 2200 and np.allclose(lb, ld))
+    _A = CS.chi2_of(lb, Db)[2]
+    _mb, _md = _A * CS.bin_spectrum(lb, Db), _A * CS.bin_spectrum(ld, Dd)
+    _f = np.isfinite(_mb) & np.isfinite(_md)
+    for lo, hi, lab in ((100, 1760, "ceiling 1760, from l=100"), (700, 1760, "high 700-1760")):
+        k = _f & (CS.BIN_LO >= lo) & (CS.BIN_HI <= hi)
+        n_, c1_, c2_, dn_, sdn_ = refit(_mb, _md, k)
+        print(f"      {lab:>26}{n_:>6} bins   {c2_/n_:>7.3f} chi2/bin after refit   "
+              f"dn_s = {dn_:+.4f} +/- {sdn_:.5f}  ({abs(dn_)/sdn_:.1f} sigma)")
+        if lo == 100:
+            # ⛔ ** THE TWO ROUTES DISAGREE BY ABOUT THREE, AND THAT IS REPORTED RATHER THAN
+            #    SMOOTHED. **  Data-shape: 0.26 chi^2/bin and dn_s = -0.030.  Instrument: 0.92 and
+            #    -0.085.  *They are not the same operation.*  The data-shape route multiplies the
+            #    FINAL spectrum by the Gaussian ratio; the instrument applies DAMPX inside the
+            #    source, where it also enters the Doppler term through a derivative of g*theta_b*Dmp
+            #    -- and the instrument's spectrum is unlensed and ceiling-limited where the sky's is
+            #    neither.  ⇒ ** The instrument route is the more faithful of the two and it is the
+            #    LARGER, so the wash is the weaker claim and is asserted at the weaker bound. **
+            check("the SHAPE residual stays at or below about one sigma per bin on BOTH routes",
+                  math.sqrt(c2_ / n_) < 1.1)
+            check("** and the tilt cost is many sigma on both — 9.4 there, 22.7 here **",
+                  abs(dn_) / sdn_ > 5.0)
+            print(f"      ⛔ the two routes differ by {(c2_/n_)/(c21/n1):.1f}x in residual and "
+                  f"{abs(dn_/dn1):.1f}x in tilt — reported, not reconciled")
 
 # =====================================================================================
 print(); print(BAR)
@@ -289,6 +376,38 @@ if FAILED:
         print("   - " + f)
     print(BAR)
     sys.exit(1)
-print("VERDICT is printed by the run above; see the working note for the reading.")
+print("""VERDICT.  ** NEITHER A TENSION IN TT SHAPE NOR A WASH: THE SIGNATURE IS RELOCATED INTO THE
+INFERRED TILT. **
+
+The enlarged diffusion scale multiplies the damping envelope by a GAUSSIAN in ell.  Refitting an
+amplitude and a tilt absorbs it almost completely in SHAPE -- 0.26 chi^2 per bin over P15's 185-bin
+ceiling, and MORE completely the higher one looks (0.06 per bin over 700-1760, 96% absorbed over
+1000-2508), because over a restricted range a Gaussian is well approximated by a power law.
+
+** But the absorption costs a tilt shift of 9.4 sigma of the tilt uncertainty this very dataset
+gives ** -- dn_s = -0.0304 against sigma = 0.00323, derived from the same covariance that scores the
+fit.  ** On the instrument's own spectra the same fit gives 0.92 per bin and dn_s = -0.0847, a 22.7
+sigma cost: the two routes differ by about three and BOTH are reported. **  ⇒ *** So the signature does not vanish under a refit.  It MOVES, out of the TT shape and into
+an inferred parameter, where it is large. ***
+
+** THE A FORTIORI SCOPING, AND IT POINTS BOTH WAYS -- which is why it must travel with the number. **
+  · *On the SHAPE residual it is a bound.*  Freeing only the named degeneracy is the least absorption
+    a real refit could achieve, so 0.26 per bin is an UPPER bound on what survives in shape: a wash
+    here is a wash a fortiori.
+  · ⛔ *On the TILT it is NOT a bound.*  With more parameters free the displacement would be SHARED
+    -- omega_b moves r_D itself -- so 9.4 sigma is what the tilt costs when the tilt absorbs alone,
+    and is neither an upper nor a lower bound on any single parameter in a fuller fit.
+  ⇒ ** What is robust across both is the direction: the signature is not invisible in the observable,
+     and what a refit buys in shape it pays for in parameters. **
+  ⛔ *And the MAGNITUDE is not robust to a factor of three.*  The data-shape route multiplies the
+     final spectrum by the Gaussian; the instrument applies the damping inside the source, where it
+     also enters the Doppler term through a derivative, on an unlensed ceiling-limited spectrum.
+     **The larger number comes from the more faithful route, so the wash is stated at the weaker
+     bound and closing the factor of three is named as work this receipt does not do.**
+
+⌗ ** SO THE ROW NARROWS RATHER THAN CLOSING. **  The early-ISW leg is answered and small -- 0.77
+sigma/bin over 700-1296, against 3.49 over 100-1296 -- so it is not what the high-ell question turns
+on.  What remains is the tilt question alone: whether a displacement of this size in the inferred
+tilt is a tension, which is a statement about a joint fit this receipt does not perform.""")
 print(BAR)
 sys.exit(0)

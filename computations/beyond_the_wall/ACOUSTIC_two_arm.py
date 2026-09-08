@@ -335,6 +335,18 @@ _int = (_Rg ** 2 / (1 + _Rg) + _POLC) / (6.0 * (1 + _Rg) * np.maximum(_tp, 1e-30
 # different DAMPX, no coefficient -- 8/9, 16/15 or any other -- can fix the heights, and the residual
 # is the shape of the envelope rather than its scale.  Default 1.0; any run that reports physics
 # must leave it there.
+# ⛔⛭ ** AND DAMPX IS A LINE-OF-SIGHT DIAGNOSTIC ONLY -- recorded r4494 (60), working PO-24. **
+# *`_DAMPX` is used at exactly ONE site, `spectra([_DAMPX])` inside `los_spectrum`.  It does not
+# multiply the module-level `_kD2inv`, and `hier_run`/`_project` reference it zero times, so on the
+# POLARISATION path -- the one the corpus's headline figures are measured on -- setting `DAMPX`
+# does nothing at all.*  ** The comment above states it as a property of the instrument and the
+# r3512 flag inventory lists it unqualified; both are wider than the code. **
+#   ⌗ *And this one is NOT gateable the way `NOISW` was (r4492).*  `_project` damps only up to the
+#     hand-over, `exp(-k^2 kD2inv(min(eta, e_sw)))` -- about 4-5% of 1/k_D^2 -- and the MULTIPOLES
+#     carry the other 95% natively.  ** So scaling the damping there is not an envelope factor but a
+#     change to how the hierarchy diffuses, which is a physics edit and not a flag repair. **
+#   ⇒ *Recorded rather than repaired, and PO-24's differential is taken on the line-of-sight path
+#     for this reason and not merely for cost.*
 _DAMPX = float(os.environ.get('DAMPX', 1.0))
 _kD2inv = np.concatenate([[0.0], np.cumsum(0.5 * (_int[1:] + _int[:-1]) * np.diff(_egrid))])
 kD2inv_of = CubicSpline(_egrid, _kD2inv)
