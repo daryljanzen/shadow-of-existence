@@ -140,8 +140,16 @@ def main():
     #   `percolation`.  ** So globbing all of corpus/*.tex would have this receipt counting its
     #   own registration and reporting the absence it exists to measure as a presence. **
     #   *Caught by check_receipt_tex_scope, which exists because 30 receipts hit this first.*
+    # ⛔⛭ AMENDED r4532, AND IT IS THE SAME DEFECT ONE GENERATION LATER.  The exclusion above names
+    #    ONE generated family, `appendix_receipts*`.  ** A SECOND generated family has since
+    #    appeared -- `appendix_ledgers*` -- and it carries this bake's own ledger text, so
+    #    "percolat*" came back at 2: one in `appendix_ledgers_P3.tex` and one in
+    #    `appendix_ledgers_corpus.tex`, both this receipt's own registration read back to it. **
+    #    ⇒ *The exclusion is by KIND now, not by one filename: anything named `appendix_` is
+    #      GENERATED FROM the corpus and is not a paper body.*  A filter that names one generated
+    #      family measures the corpus until the next generator is written.
     for f in glob.glob(os.path.join(root, 'corpus', '*.tex')):
-        if os.path.basename(f).startswith('appendix_receipts'):
+        if os.path.basename(f).startswith('appendix_'):
             continue
         bodies += '\n'.join(l for l in open(f, encoding='utf-8', errors='replace')
                             .read().split('\n') if not l.lstrip().startswith('%'))
