@@ -47,6 +47,9 @@ EST = {
         'isometry-realised on the compact face, and it remains unbuilt -- the major undertaking any geometric '
         'gauge-matter route would first have to complete. TRIP-WIRE: forcing the gauge group forces the Higgs '
         'representation with it.'),
+    'PO-40': ('does the genealogy have a head', 1, 1, 5, None,
+        'r4493 OPENED as the residue of PO-31a s closure, not a restatement of it. PO-31a asked for a derivation of the inherited datum and is CLOSED by impossibility: nothing in the lap acts on eta, so there is nothing there for a derivation to be about. What that leaves is a different question at a different level -- the corpus establishes a genealogy of universes rather than a recursion on modes, and nowhere addresses whether it terminates. TWO BRANCHES, EACH A RESULT: a head means the first universe s eta is a datum with no antecedent and is owed; no head means there is no datum to owe. A DIRECTION IS ESTABLISHED AND CARRIED AS A CANDIDATE ONLY: the erasure is irreversible so s/n_b is monotone increasing and eta monotone decreasing along the genealogy, but the per-lap increment is uncomputed and the black-hole contribution is what PO-32 is open on, so no lap count follows and none is offered. SUBSTRATE-LEVEL rather than cosmology-sector.',
+        ),
     'PO-32': ('horizon thermodynamics with no realised horizon -- WHAT IS THE AREA LAW OF', 1, 1, 6, None,
         'r4317 REOPENED: the r4227 strike answered a different object and is withdrawn. P07 says what content '
         'survives for a perpetually collapsing body -- AS WITH THE LOCAL PARTICLE PRODUCTION OF THE PRECEDING '
@@ -205,12 +208,12 @@ KIND = {'PO-13': 'BUILD', 'PO-36': 'READ', 'PO-33': 'BUILD',   # r4145: was READ
 
 # ** PO-23 added r3809: the ultraviolet definition of the mode sums, the one part of P07's
 # three-part 'definition of the interacting tower' that is neither settled nor attempted. **
-ORDER = ['PO-13', 'PO-24', 'PO-36', 'PO-30', 'PO-32', 'PO-25', 'PO-26', 'PO-29', 'PO-31', 'PO-23', 'PO-15', 'PO-14', 'PO-17', 'PO-18', 'PO-19', 'PO-20']
+ORDER = ['PO-13', 'PO-24', 'PO-40', 'PO-36', 'PO-30', 'PO-32', 'PO-25', 'PO-26', 'PO-29', 'PO-31', 'PO-23', 'PO-15', 'PO-14', 'PO-17', 'PO-18', 'PO-19', 'PO-20']
 GROUP = {'PO-13': 'D', 'PO-14': 'A', 'PO-15': 'C', 'PO-16': 'D',
          # ** r3095: the four brought in from p0's frontiers and the field ledgers.  PO-17 and
          # PO-19 are substrate geometry; PO-18 is the constant ledger; PO-20 is analysis. **
          'PO-17': 'E', 'PO-18': 'E', 'PO-19': 'E', 'PO-20': 'E',
-         'PO-23': 'C', 'PO-24': 'D', 'PO-25': 'E', 'PO-26': 'A', 'PO-27': 'A', 'PO-29': 'E', 'PO-31': 'D', 'PO-30': 'A', 'PO-32': 'B', 'PO-36': 'D', 'PO-34': 'E'}
+         'PO-23': 'C', 'PO-24': 'D', 'PO-25': 'E', 'PO-26': 'A', 'PO-27': 'A', 'PO-29': 'E', 'PO-31': 'D', 'PO-30': 'A', 'PO-32': 'B', 'PO-40': 'B', 'PO-36': 'D', 'PO-34': 'E'}
 GNAME = {'A': 'the matter sector', 'B': 'the matter sector', 'C': 'the quantum sector',
          'D': 'the cosmology', 'E': 'the substrate geometry'}
 
