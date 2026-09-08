@@ -19,17 +19,9 @@ OUT = os.path.join(ROOT, 'THE_FRONTIER.md')
 
 # ** id: (short name, steps-left, steps-last-revision, turns-per-step, gate, runway note) **
 EST = {
-    'PO-13': ('a measured deficit with NO MECHANISM -- what the driving does on the leaf rate', 2, 1, 6, None,
-        'r4145: the diagnosis this item recorded as ANSWERED is refuted. It was taken on the STACKING rate; the '
-        'rate rule assigns the perturbations to the LEAF, which carries a radiation term, and on the leaf the band '
-        '155.6 < l < 237.7 -- containing the converged first peak at l=204 -- enters while radiation dominates, so '
-        'those modes ARE driven. The refutation was already in the row, filed as confirmation: it cited a leaf '
-        'measurement putting l=220 OUTSIDE the horizon at onset and called that the same fact, when it is the '
-        'opposite one. What stands: converged on the calibrated polarisation path, l_1/l_A = 0.6764 against the '
-        "sky's 0.7312 (7.5%), P1/P2 = 1.759 and P1/P3 = 1.612 against 2.217 and 2.277, at two cutoffs agreeing to "
-        'every digit -- and neither the k-truncation nor the projection path, both instrument faults removed there. '
-        'STEPS RAISED 1 -> 2: the driving subtraction measures the size, and a mechanism for the deficit is a '
-        'second result, not the same one'),
+    'PO-13': ('the rigid phase split that survives removing the driving', 1, 1, 6, None,
+        'r4513 NARROWED -- the mechanism half is answered and what remains is a DIFFERENT OBJECT. The candidate mechanism is the driving the papers own refuted census said the rate does not have: driven on the collapse leg, and driven again on the leaf where the modes are super-horizon at the onset and enter while radiation dominates between z = 6761 and z_eq = 3936. Two doses where the control has one, which is what the factor of 2.4 is a factor of, and it delivers the height pattern in the right direction with the right ordering and explains the overshoot. NOT ASSERTED: whether the two doses are independent or one decay counted twice, decidable by asking which potential the transfer starts the expanding leg with -- sent to the Code node. AND WHAT REMAINS IS NOT THE OLD QUESTION: undriven, this arm sits at 1.1273 of the acoustic scale and the control at 0.9158, on opposite sides of the adiabatic value, a 23 per cent split PRESENT WITH THE DRIVING REMOVED that no account of the driving can produce. DISCHARGED BY: an account of that split, with the over-driving explained on top of it.',
+        ),
     'PO-36': ('does the Hubble-Eddington radius track the dynamical mass or the baryonic one', 1, 0, 4, None,
         'r4207 NAME GUARD: the standard literature calls this radius a maximum TURNAROUND radius; in this corpus TURNAROUND is the comoving turnaround, where the worldline turns at r = -(2M alpha^2)^(1/3) on the conjugate leg -- a different locus, and their word is used only in reporting their result. The radius is derived in the standard framework and proposed there as a '
         'local test of Lambda, with the same M^(1/3) scaling this construction gives, so the two are '
