@@ -93,7 +93,10 @@ MARKS = [
     ('Gaussian curvature $-1$', 'into a target of Gaussian curvature -1'),
     ('determinant $-1$', 'with the exchanging map reversing orientation'),
     ('identity component does not reach', 'so it lies outside the identity component'),
-    (r'c=R\,e^{2P}Q_t', 'and carrying the conserved twist c = R e^{2P} Q_t'),
+    # ⛔⛭ AMENDED r4524: P11 sets the twist as a DISPLAY with spacing macros --
+    #    `c \;=\; R\,e^{2P}\,Q_t \;=\; \text{const}` at `eq:twist` -- and this needle was the
+    #    unspaced inline form.  *Sixth typesetting break of this run; the physics is identical.*
+    (r'e^{2P}\,Q_t', 'and carrying the conserved twist c = R e^{2P} Q_t (eq:twist)'),
     (r'c\mapsto-c', 'on which the parity acts as a sign flip'),
 ]
 for needle, what in MARKS:

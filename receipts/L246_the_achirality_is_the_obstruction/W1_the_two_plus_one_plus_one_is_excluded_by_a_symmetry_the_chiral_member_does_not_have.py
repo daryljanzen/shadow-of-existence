@@ -53,6 +53,7 @@ Written r3099 (`L-246`).  Stated for reversal.
 """
 import itertools
 import os
+import re
 import subprocess
 import sys
 
@@ -363,8 +364,14 @@ p11 = open(os.path.join(ROOT, 'corpus', 'dynamics_paper.tex'),
 check('⓼ P11 carries a built unpolarised section', r'\label{sec:unpolarized}' in p11)
 check('⓼ᵇ in which the exchanging map is shown to REVERSE ORIENTATION, so it lies outside the '
       'identity component', 'determinant $-1$' in p11 and 'identity component does not reach' in p11)
-check('⓼ᶜ and to carry a CONSERVED charge on which it acts as a sign flip',
-      r'c=R\,e^{2P}Q_t' in p11 and r'c\mapsto-c' in p11)
+# ⛔⛭ AMENDED r4524: the twist is a DISPLAY in P11 -- `c \;=\; R\,e^{2P}\,Q_t \;=\; \text{const}`
+#    at `eq:twist` -- and this asked for the unspaced inline form.  The sign-flip half was always
+#    fine.  ⇒ Matched across LaTeX spacing macros, and the label is required too, so the check
+#    still fails if the equation itself goes away.
+check('⓼ᶜ and to carry a CONSERVED charge on which it acts as a sign flip -- P11 eq:twist, '
+      '"$c \\;=\\; R\\,e^{2P}\\,Q_t \\;=\\; \\text{const}$", with the parity acting as $c\\mapsto-c$',
+      re.search(r'e\^\{2P\}\\?,?Q_t', p11) is not None
+      and r'\label{eq:twist}' in p11 and r'c\mapsto-c' in p11)
 print('  ⇒ ⛭ ** That is stronger than "sigma is not a symmetry": sigma CHANGES THE VALUE OF A')
 print('     CONSERVED CHARGE.  A map that does that is not a symmetry of any solution with')
 print('     c != 0, and the two handednesses are different solutions rather than one solution')
