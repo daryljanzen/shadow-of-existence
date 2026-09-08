@@ -114,8 +114,14 @@ def main():
     # ⓷ and the triple is in neither derivation
     check('⓷ and the triple is NOT in P9: "6,7,10" appears zero times there',
           '6,7,10' not in p9)
-    check('P9 names isotropies as GROUPS instead -- SO(4,1) at Type O, SO(2,1)xSO(3) at Nariai',
-          '\\mathrm{SO}(4,1)$ at Type O' in p9)
+    # ⛔⛭ AMENDED r4522: the paper writes "Type~O" with a non-breaking space and this check asked for
+    #    "Type O".  *The third tie-break of this run.*  ⇒ The probe binds the GROUP to the STRATUM
+    #    across whatever space sits between them, and still requires both groups, so it cannot pass
+    #    on a paper that names neither.
+    _ISO = re.compile(r"\\mathrm\{SO\}\(4,1\)\$ at Type[~ ]?O")
+    check('P9 names isotropies as GROUPS instead -- SO(4,1) at Type~O, SO(2,1)xSO(3) at Nariai',
+          _ISO.search(p9) is not None
+          and '\\mathrm{SO}(2,1)\\times\\mathrm{SO}(3)$ at Nariai' in p9)
     check('⇒ so the fact is TRUE and recoverable by inspection, and the citation does not establish it '
           '-- which is why nobody noticed',
           '\\{6,7,10\\}' in p12 and '6,7,10' not in p9)

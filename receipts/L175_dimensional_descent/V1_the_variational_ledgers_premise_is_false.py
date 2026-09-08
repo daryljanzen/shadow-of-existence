@@ -113,12 +113,24 @@ def main():
     check(f'⛭ and the whole footprint of the other two is {_foot} -- one occurrence each, landed at '
           f'r3583b, against a Hamiltonian apparatus in the hundreds',
           all(v <= 1 for v in _foot.values()))
-    check('⛭⛭ AND BOTH SIT IN ONE SENTENCE THAT DECLINES THE ROUTE: "an action principle returns an '
-          '\\emph{equality}, and an equality has no direction.  A Lagrangian derivation of the same '
-          'law would leave the reading exactly where it is"',
-          'an action principle returns an \\emph{equality}, and an equality has no direction' in allp
-          and 'A Lagrangian derivation of the same law would leave the reading exactly where it is'
-          in allp)
+    # ⛔⛭ AMENDED r4522, AND THE RATCHET HELD IN THE DIRECTION IT WAS SET FOR.  ** The footprint of
+    #    both words is ZERO now, not one each: ** P8's declining paragraph was rewritten to "Varying
+    #    an action returns a field \emph{equality}, and an equality has no direction; which side is
+    #    the existent and which the name of the other's bend is not a question the variation asks",
+    #    and the sentence naming a "Lagrangian derivation" was replaced by "\emph{So the two are
+    #    orthogonal, not in competition} --- the same field equations either way".
+    #    ⇒ *The DECLINATION is the finding and it is intact and sharper; the two words were the
+    #      evidence for it, not the thing itself.*  So the check asserts the declination in the
+    #      paper's own current voice, and the ratchet above still forbids the footprint growing.
+    check('⛭⛭ AND THE ROUTE IS STILL DECLINED, IN THE PAPER\'S CURRENT WORDS: "Varying an action '
+          'returns a field \\emph{equality}, and an equality has no direction; which side is the '
+          'existent ... is not a question the variation asks", and "the two are orthogonal, not in '
+          'competition --- the same field equations either way".  *The paragraph is headed "The '
+          'reading has no quarrel with a variational route."*',
+          'Varying an action returns a field \\emph{equality}, and an equality has no direction' in allp
+          and 'is not a question the variation asks' in allp
+          and 'the two are orthogonal, not in competition' in allp
+          and 'The reading has no quarrel with a variational route' in allp)
 
     # ⓶ but the action is there
     n_eh = len(re.findall('Einstein--Hilbert', allp))
@@ -144,8 +156,15 @@ def main():
     check('⇒⇒ SO IT IS NOT AN ABSENCE -- the corpus performs variational work everywhere and argues '
           'in the field\'s own vocabulary nowhere, naming it once and only to DECLINE it, which is '
           'the arrival-path shape at its largest scale',
+          # ⛭ AMENDED r4522 with the declination check above: "orthogonal to the variational" was
+          #   the old phrasing and the paper now says "\emph{So the two are orthogonal, not in
+          #   competition} --- the same field equations either way", under a paragraph headed "The
+          #   reading has no quarrel with a variational route."  *Same declination, and the
+          #   footprint of the field's own vocabulary is now zero rather than one, which is the
+          #   ratchet moving the way it was set to move.*
           n_eh >= 4 and len(re.findall('Lagrangian', allp, re.I)) <= 1
-          and 'orthogonal to the variational' in allp)
+          and 'the two are orthogonal, not in competition' in allp
+          and 'The reading has no quarrel with a variational route' in allp)
 
     print()
     if FAILED:

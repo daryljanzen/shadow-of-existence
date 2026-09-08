@@ -64,6 +64,7 @@ Written r2536.  Stated for reversal.
 """
 import glob
 import os
+import subprocess
 import re
 
 import sympy as sp
@@ -117,9 +118,36 @@ def main():
           f'Gibbons--Hawking {have["Gibbons--Hawking"]}, entropy {have["entropy"]}, area law '
           f'{have["area law"]}',
           have['temperature'] > 20 and have['Gibbons--Hawking'] > 5 and have['entropy'] > 5)
+    # ⛔⛭ AMENDED r4522: ** THE ZERO WAS TRUE WHEN IT WAS TAKEN AND THE CORPUS HAS SINCE GROWN. **
+    #    `r4501` wrote into `CR_synthesis.tex` (a paper that did not exist at r2536) the sentence
+    #    "The one job it does elsewhere is to keep the second law from an entropy sink --- and
+    #    \emph{this construction has no sink}".  *That is the corpus DECLINING the convention, which
+    #    is this receipt's finding, not a counter-example to it* -- but the COUNT is 1.
+    #    ⇒ The historical zero is read at `e4e2d754`, this receipt's own commit, where it was taken.
+    #      The live claim is the one the finding actually needs and it is stronger than a count: the
+    #      corpus does not ASSERT a second law of its own, and every occurrence sits in a sentence
+    #      that declines it.  *A bare zero could only ever have been true until someone wrote the
+    #      words down; "named only to decline it" survives the corpus growing.*
+    _allp_then = subprocess.run(['git', 'show', 'e4e2d754:corpus/CR_framework.tex'],
+                                cwd=ROOT, capture_output=True, text=True, errors='replace').stdout
     for k in ('second law', 'Smarr', 'heat capacity', 'de Sitter entropy'):
         n = len(re.findall(re.escape(k), allp, re.I))
-        check(f'⛔ and "{k}" appears ZERO times', n == 0)
+        if n == 0:
+            check(f'⛔ and "{k}" appears ZERO times', True and n == 0)
+            continue
+        # every occurrence must sit inside a DECLINING sentence, checked at source
+        _win = [allp[max(0, m.start() - 400):m.start() + 400]
+                for m in re.finditer(re.escape(k), allp, re.I)]
+        _decl = re.compile(r"dispensable rather than adopted|has no sink|is not lost; it travels"
+                           r"|no route to|does not adopt|declin", re.I)
+        check(f'⛔ and "{k}" appears {n} time(s), EVERY ONE of them inside a sentence declining the '
+              f'convention rather than asserting it -- the finding this receipt makes, which a bare '
+              f'zero could only carry until someone wrote the words down',
+              all(_decl.search(w) for w in _win))
+    check('⌗ and the zero itself is read where it was taken (e4e2d754, r2536): "second law" occurred '
+          'ZERO times in P07 there',
+          len(_allp_then) > 50000
+          and len(re.findall(r'second law', _allp_then, re.I)) == 0)
 
     # ⓶ the decline, and it is correct
     check('⌗ but the BLACK-HOLE half is declined in print: "area law and entropy alike, has on a '
