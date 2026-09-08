@@ -54,6 +54,7 @@ guess**. c54.220's rule, r2776.)*
 Written r2694.  Stated for reversal.
 """
 import os
+import glob as _glob
 import re
 
 HERE = os.path.dirname(os.path.abspath(__file__))
@@ -135,12 +136,47 @@ def main():
               (phrase.lower() in _live[1].lower()) if _live else (hid not in led))
 
     # ⓷ the three weight-marks are the papers' own
-    check('⛭⛭ ⓷ 233a615f2f is the paper limiting itself: "the figure it matches is recalled rather than '
-          'derived here"',
-          'recalled rather than derived here' in led['233a615f2f'][1])
-    check('9921e78365 likewise: "We state it at that strength and no higher, and the paragraphs below '
-          'lower it further"',
-          'and no higher, and the paragraphs below lower it further' in led['9921e78365'][1])
+    # ⛔⛭ AMENDED r4514, AND THIS ONE *** CRASHED *** AGAIN -- the fourth of this exact shape.  The
+    #    r3974 note below repaired `led[hid]` inside the loop above and left these two lines, which
+    #    are the same subscript on the same dict.  ** `led` holds only LIVE rows; both ids have since
+    #    moved into the file's own `ORPHANED BY A REWORDING (r4022)` block, which is COMMENTED, so
+    #    the parser skips them and `led['233a615f2f']` raised KeyError before the verdict. **
+    #    ⇒ *A crash is worse than a failure: nothing after it ran, so the six checks below this point
+    #      made no claim at all while the file reported a traceback.*  The historical fact is read at
+    #      the sweep commit; the live half asks what became of the mark, and answers it from the
+    #      PAPERS rather than from the ledger's bookkeeping.
+    _ORPH = [l.strip() for l in open(os.path.join(ROOT, 'corpus', 'open_ledger.txt'),
+                                     encoding='utf-8') if l.startswith('# ') and ' | ' in l]
+    _papers = re.sub(r'\s+', ' ', ''.join(
+        open(f, encoding='utf-8', errors='replace').read()
+        for f in sorted(_glob.glob(os.path.join(ROOT, 'corpus', '*.tex')))
+        if not os.path.basename(f).startswith('appendix_')))
+    for _hid, _phrase in (('233a615f2f', 'recalled rather than derived here'),
+                          ('9921e78365', 'and no higher, and the paragraphs below lower it further')):
+        check(f'⛭⛭ ⓷ {_hid} was the paper limiting itself AT {_AT_SWEEP}: "{_phrase[:56]}"',
+              _hid in _led_then and _phrase in _led_then[_hid][1])
+        check(f'⓷ᵃ and it is ORPHANED now -- not deleted, not re-homed: it sits in the ledger\'s own '
+              f'"ORPHANED BY A REWORDING" block, whose rule is to re-home each onto its new id or '
+              f'delete it if the paper really did drop the claim',
+              _hid not in led and any(l.startswith('# ' + _hid) for l in _ORPH))
+    # ** ⛔ AND THE TWO ORPHANS DID NOT FARE THE SAME WAY, WHICH IS THE FINDING RATHER THAN THE
+    #    BOOKKEEPING. **  Asked of the PAPERS, not of the ledger:
+    #      · `233a615f2f`'s limitation SURVIVES, reworded -- P15 reads "We state what that is and
+    #        is not." where it read "We record what that agreement is and is not".
+    #      · `9921e78365`'s does NOT.  "We state it at that strength and no higher, and the
+    #        paragraphs below lower it further" is absent from every paper, and no rewording of it
+    #        was found.  *** So a self-limiting sentence about the first peak left the corpus, and
+    #        the orphan block -- whose whole purpose is to catch exactly this -- has carried it
+    #        unresolved. ***  Stated as what it is; re-homing it is the papers' line to do, and a
+    #        receipt that quietly dropped the assertion would have hidden it.
+    check('⓷ᵇ ⛭ 233a615f2f\'s limitation SURVIVES the rewording: P15 says "We state what that is and '
+          'is not." in place of "We record what that agreement is and is not"',
+          'We state what that is and is not' in _papers)
+    check('⓷ᶜ ⛔ and 9921e78365\'s does NOT: no paper carries "at that strength and no higher" in any '
+          'form.  A self-limiting sentence about the first peak left the corpus and the orphan block '
+          'has not re-homed it -- REPORTED, not repaired here',
+          'at that strength and no higher' not in _papers
+          and 'lower it further' not in _papers)
     # ** ⛭ AND THE THIRD WEIGHT-MARK'S ROW IS GONE, FOR A DIFFERENT REASON THAN THE TWO ABOVE
     # ** (r3974). **  `3e6a969eb5` left at r3797 -- "the prose pass closed: the corpus's paper bodies
     # ** carry no bespoke jargon, 36 sites to zero" -- so the sentence was REWORDED and its id, being

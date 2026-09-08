@@ -114,14 +114,27 @@ def main():
           '$\\so$-subgroup acting as a sweep, is not of this form' in p9)
 
     # ⓸ and what the corpus already says
-    check('⌗ cor:wall: the beyond-wall modes are carried past it by the ordinary '
-          'general-relativistic evolution',
-          'are carried past it by the ordinary general-relativistic evolution' in p9)
-    check('with the wall "a regular boundary of the operator\'s reach and not a frontier of the theory"',
-          "a regular boundary of the operator's reach and not a frontier of the theory" in p9)
+    # ⛔⛭ AMENDED r4514.  ** P9's `cor:wall` WAS REWRITTEN -- it is "The wall is inhomogeneity" now,
+    #    with the converse failure and the type-N plane wave as its witness -- and the two sentences
+    #    this receipt quoted verbatim are gone. **  *The CONTENT is not: P9 still says the leaf past
+    #    the wall is carried by ordinary general-relativistic evolution, and still calls the wall a
+    #    regular boundary walked past into ordinary evolution.*  ⇒ `W1`'s rule, which this corpus
+    #    paid for twice: ** A LONGER STRING IS STILL A STRING. **  What makes a probe claim-level is
+    #    that it matches the content under REORDERING, so these name their terms and bound the
+    #    window rather than fixing an order the papers are free to change.
+    _ORD = re.compile(r"carried by\s+ordinary general-relativistic evolution", re.I)
+    _REG = re.compile(r"regular boundary[^.]{0,60}?walked past into ordinary evolution"
+                      r"|walked past[^.]{0,60}?regular boundary", re.I)
+    check('⌗ cor:wall: the leaf beyond the wall is carried past it by ORDINARY general-relativistic '
+          'evolution -- matched as content, since P9 now writes it "beyond which the leaf is carried '
+          'by ordinary general-relativistic evolution"',
+          _ORD.search(p9) is not None)
+    check('with the wall a REGULAR BOUNDARY rather than a frontier of the theory -- P9: "a regular '
+          'boundary walked past into ordinary evolution"',
+          _REG.search(p9) is not None)
     check('⇒⇒ SO THE TWO-FUNCTION GAP WAS NEVER THE OPERATOR\'S TO FILL: the construction generates '
           'the data, ordinary GR evolves it past the wall',
-          'are carried past it by the ordinary general-relativistic evolution' in p9
+          _ORD.search(p9) is not None
           and 'swept or reassigned by a subgroup $H\\subseteq\\so$' in p9)
 
     print()
