@@ -69,9 +69,13 @@ than merely stated. **
       matter-and-Lambda integral, and the stacking rate written in the fitted pair IS
       that rate -- which is why the derivation reproduces it.  But the corpus's own
       rate rule assigns perturbations to the LEAF, and on the leaf rate the same
-      integral returns 0.99934 rather than unity, moving the root slightly.  ** So what
-      is derived is the root of the STANDARD normalisation, not this construction's own
-      growth root. **
+      integral returns 0.99940 rather than unity.  ** So what is derived is the root of
+      the STANDARD normalisation, not this construction's own growth root. **
+      ** AND WHAT THAT NUMBER IS NOT, established at r4394 and recorded here so it is not
+      re-read as one: it is NOT a measure of how far the root moves. **  Continuing the
+      integral is a closed form failing on a rate it does not solve; solved directly, the
+      leaf root moves the OTHER WAY and by 1.7x less.  See
+      P15_the_growth_root_on_the_leaf_rate_is_not_a_moment_balance_and_the_gap_stands.
 
 ** WHAT IS NOT CLAIMED. **  That the balance has a closed-form solution; it is solved
 numerically here.  And no claim is made that the standard model's growth factor is
@@ -243,7 +247,11 @@ print("  scope (b): the rate used is the STACKING rate, not the leaf rate")
 OM_R = 8.5e-5
 J_stack = quad(lambda z: (1 + z) / (Om_root * (1 + z) ** 3
                                     + (1 - Om_root)) ** 1.5, 0, np.inf, limit=600)[0]
-J_leaf = quad(lambda z: (1 + z) / (Om_root * (1 + z) ** 3 + (1 - Om_root)
+# ** r4401: Om_Lambda was written 1 - Om_root, so the fractions summed to 1 + Om_r and the
+# universe was not flat.  Kept flat the figure is 0.99940 rather than 0.99934, and the slip alone
+# was 9.4% of the shift it is quoted for.  The conclusion is unchanged -- the leaf value is not
+# unity either way -- but a receipt may not be right by an amount it did not intend. **
+J_leaf = quad(lambda z: (1 + z) / (Om_root * (1 + z) ** 3 + (1 - Om_root - OM_R)
                                    + OM_R * (1 + z) ** 4) ** 1.5,
               0, np.inf, limit=600)[0]
 print(f"      J on the stacking rate (the published object) = {J_stack:.8f}")

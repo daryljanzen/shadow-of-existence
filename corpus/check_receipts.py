@@ -142,16 +142,32 @@ _PROCESS = 'NOT-A-PAPER-CLAIM'
 # A landing that is SECTION-SIZED rather than a sentence may be deferred, but only by being
 # REGISTERED as a lead -- the marker must name it, and check_burndown then polices the lead.
 _DEFER = re.compile(r'LANDING REGISTERED AS (L-\d+)')
+# ** r4401: a SECOND escape, and it is not a deferral.  A receipt whose HEADLINE CLAIM a later
+# revision WITHDREW cannot discharge this gate by citation: the only citation available would put
+# back into the paper exactly what the paper's own later revision removed.  That happened at r4397
+# and was reverted at r4399.  Deleting the receipt is equally wrong -- it is the record of how the
+# arc reached its present state, and its scans stand even where its headline does not.
+# ** SUPERSEDED-BY is therefore a THIRD state: registered, kept, and not owing a citation. **
+# The marker names the receipt that superseded it, so the row points forward rather than nowhere,
+# and the gate reports the count so the set cannot quietly grow.
+_SUPER = re.compile(r'SUPERSEDED BY ([A-Za-z0-9_]+)')
 _deferred = {s_: _DEFER.search(_bound.get(s_, '')).group(1) for s_ in index_stems
              if s_ not in cited_keys and _DEFER.search(_bound.get(s_, ''))}
+_superseded = {s_: _SUPER.search(_bound.get(s_, '')).group(1) for s_ in index_stems
+               if s_ not in cited_keys and _SUPER.search(_bound.get(s_, ''))}
 _arc_unc = sorted(s_ for s_ in index_stems
-                  if s_ not in cited_keys and 'c54' in _origin.get(s_, '')
+                  if s_ not in cited_keys and s_ not in _superseded
+                  and 'c54' in _origin.get(s_, '')
                   and _PROCESS not in _bound.get(s_, '') and s_ not in _deferred)
 _old_unc = sorted(s_ for s_ in index_stems
                   if s_ not in cited_keys and 'c54' not in _origin.get(s_, ''))
 print(f"\n  UNCITED-RECEIPT DEBT: {len(_arc_unc)} from the current fork, {len(_old_unc)} older")
 for _s in _arc_unc:
     print(f"    [FAIL] {_s} -- registered this fork and cited by no paper")
+if _superseded:
+    print(f"    ({len(_superseded)} superseded -- headline claim withdrawn by a later revision, so "
+          f"a citation would restore what the paper removed; kept for the record, each naming its "
+          f"successor: {', '.join(sorted(set(_superseded.values())))})")
 if _deferred:
     print(f"    ({len(_deferred)} deferred, each naming the lead that owes the landing: "
           f"{', '.join(sorted(set(_deferred.values())))})")
