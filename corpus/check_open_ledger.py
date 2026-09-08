@@ -179,6 +179,15 @@ def main():
         if orphans:
             lines.append('')
             lines.append('# ── ORPHANED BY A REWORDING (r4022) ' + '─' * 44)
+# ── ⚠ r4517: A REWORDING CAN DROP A LIVE CLAIM OUT OF THIS GATE'S REACH ENTIRELY, and the
+# gate cannot see that it has. c9c2e24729 is the demonstrated instance: the altitude sentence
+# was reworded from "not claimed" to "not a claim that", the claim survives verbatim in P18,
+# and PAT matches the former and not the latter -- so the scanner stopped indexing the sentence
+# and the row orphaned. ** UNVERDICTED reads 0 either way, because an unseen sentence is not an
+# unverdicted one. ** So a green gate here means every sentence THIS PATTERN FINDS has a verdict,
+# not that every qualification in the papers does. Whether PAT should gain the missing form is a
+# judgement about false-positive rate that one case does not settle; the failure mode is recorded
+# so the next reader does not have to rediscover it.
             lines.append('# These rows carried a VERDICT and their sentence is no longer in any paper')
             lines.append('# at this hash -- usually because it was REWORDED, not withdrawn.  Re-home')
             lines.append('# each onto its new id after checking the new wording says the same thing,')
