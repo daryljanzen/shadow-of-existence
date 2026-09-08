@@ -272,13 +272,28 @@ def main():
           '"a closed-form nonlinear solution"',
           'a closed-form nonlinear solution' in p11
           and 'admits rather than forces a quantum structure' in p11)
+    # ⛔⛭ AMENDED r4534.  P11 now writes the identity as "the wave's energy and momentum are carried
+    #    \emph{entirely by the shear of the spatial leaf}", and P9's positive identity for the wall
+    #    is a NAMED COROLLARY now -- "\begin{corollary}[The wall is free gravitational radiation]"
+    #    with "it is the onset of free gravitational radiation".  *Both claims are stated more
+    #    strongly than the strings this checked for.*
+    #    ⌗ AND THE SECOND CHECK HAD A TRAILING WEAK `or` ARM, which is the shape `C26` was repaired
+    #      for at r3962: `'free gravitational radiation begins' in p9 or 'a regular boundary of the
+    #      operator' in p9`.  ** Both arms are false now and the check failed, which is the good
+    #      case -- but an `or` over two spellings of one claim passes on whichever survives and
+    #      reports nothing when the paper changes. **  It matches the content once, instead.
+    _SHEAR = re.compile(r"energy and momentum are[^.]{0,40}?shear of the (?:spatial )?leaf", re.I)
+    _WALLRAD = re.compile(r"onset of free gravitational radiation", re.I)
     check('and the identity r2504/I9 use -- the leaf\'s energy and momentum ARE its shear -- is P11\'s '
-          'own: "whose energy and momentum are the shear of the leaf"',
-          'whose energy and momentum are the shear of the leaf' in p11)
+          'own: "the wave\'s energy and momentum are carried entirely by the shear of the spatial '
+          'leaf"',
+          _SHEAR.search(p11) is not None)
     check('P9 (range_paper) still frames the wall as the reach boundary past which free radiation '
-          'begins -- the stratum this evolves',
-          'free gravitational radiation begins' in p9
-          or 'a regular boundary of the operator' in p9)
+          'begins -- the stratum this evolves -- and does it as a NAMED COROLLARY now, "The wall is '
+          'free gravitational radiation": "the boundary has a positive identity: it is the onset of '
+          'free gravitational radiation"',
+          _WALLRAD.search(p9) is not None
+          and r'\begin{corollary}[The wall is free gravitational radiation]' in p9)
 
     print()
     if FAILED:
