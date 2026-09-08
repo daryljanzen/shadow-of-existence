@@ -95,6 +95,16 @@ flag repair.)*  That path also did not complete a single mode batch in 83 minute
 a whole is consistent: `r4136` measured its heights at $-20.7\%$ and $-29.2\%$, and this receipt is
 about the DIFFUSION SCALE alone.
 
+** COMPUTES: the ISW's imprint on this cosmology's arm under the two rate assignments, and the
+  diffusion-scale signature carried through an amplitude-and-tilt refit scored on plik_lite TT.
+  *** AT ONE PARAMETER SET AND THE PINS ARE THE POINT: *** ARM held fixed so the two spectra of a
+  comparison differ in ONE thing; DAMPX = 1.156766, which is asserted to BE the measured
+  r_D ratio squared and is not chosen; LMAXL = 2200 so the damping tail is inside the reported
+  range, with 0.8*LMAXL = 1760 as P15's own ceiling; KFAC = 2.0 at the converged rung; LSTEP = 4;
+  the line-of-sight path, because DAMPX reaches no other.  ** Nothing is fitted to make the
+  signature survive or vanish: r_D's ratio is measured from the two arms and imposed, Omega_r is
+  untouched, and the only free parameters are the amplitude and tilt the degeneracy names. **
+
 STATUS: OK
 RUN: python3 C62_the_diffusion_signature_is_a_wash_and_the_isw_is_not_what_it_turned_on.py
 RUNTIME: ~40 s (reads banked spectra; the instrument runs that produced them are named)
