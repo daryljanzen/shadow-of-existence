@@ -79,10 +79,17 @@ def main():
                                         if not l.lstrip().startswith('%')))
 
     # P11's claim, at source
-    check('P11: the Gowdy leaf\'s TT mode has "energy and momentum ... the shear of the leaf"',
-          'are the shear of the leaf' in p11)
-    check('and the ADM energy and momentum equations "are exactly the Hamiltonian and momentum '
-          'constraints"', 'are exactly the Hamiltonian and momentum constraints' in p11)
+    # ⛔⛭ AMENDED r4516: P11 was reworded -- "carried \emph{entirely by the shear of the spatial
+    #    leaf}" for "are the shear of the leaf", and "precisely the ADM Hamiltonian and momentum
+    #    constraints" for "exactly the ...".  *Neither claim moved.*  ⇒ matched under reordering.
+    _SHEAR = re.compile(r"energy and momentum are[^.]{0,40}?shear of the (?:spatial )?leaf", re.I)
+    _CONSTR = re.compile(r"(?:precisely|exactly) the ADM Hamiltonian and momentum constraints"
+                         r"|(?:precisely|exactly) the Hamiltonian and momentum constraints", re.I)
+    check('P11: the Gowdy leaf\'s TT mode has "energy and momentum ... carried entirely by the shear '
+          'of the spatial leaf"',
+          _SHEAR.search(p11) is not None)
+    check('and the ADM energy and momentum equations "are precisely the ADM Hamiltonian and momentum '
+          'constraints"', _CONSTR.search(p11) is not None)
     check('and it carries exactly two Killing vectors, at the Type-I edge',
           'exactly two Killing vectors' in p11 and 'the last confined stratum before the wall' in p11)
 
@@ -123,17 +130,37 @@ def main():
     #   ⇒ ** The correction STRENGTHENS this file's argument rather than touching it: ** what the two
     #     Killing vectors buy is a count, and the paper now says in the same breath what is NOT
     #     bought -- the harmonic tower on the leaf is untouched.  That clause is pinned too.
-    check('while a polarized Gowdy leaf has ONE propagating polarisation -- P11\'s "a single '
-          'propagating transverse-traceless \\emph{polarisation}"',
-          'a single propagating transverse-traceless \\emph{polarisation}' in p11
-          and 'a single propagating transverse-traceless mode' not in p11)
+    # ⛔⛭ AMENDED r4516, AND THE DISTINCTION r3539 BOUGHT IS KEPT.  P11 now writes "the single
+    #    transverse-traceless polarization\rcpt{P11_gowdy_dS}---the leaf's shear, the propagating
+    #    graviton", with the British spelling gone and the \emph dropped.  ** The NEGATIVE half is
+    #    what carries r3539's correction and it is asserted unchanged: the paper must NOT say
+    #    "mode", which reads as one of the tower's modes rather than one of the two polarisations. **
+    check('while a polarized Gowdy leaf has ONE propagating polarisation -- P11: "the single '
+          'transverse-traceless polarization ... the leaf\'s shear, the propagating graviton" -- and '
+          'still NOT "mode", which is the conflation r3539 removed',
+          re.search(r"single transverse-traceless polariz", p11) is not None
+          and 'transverse-traceless mode' not in p11)
     # ⌗ and this check no longer repeats the one above it.  Both asserted the SAME literal under
     #   different labels -- two checks, one test -- so the second could never fail where the first
     #   passed.  It now tests what its own label claims: that the paper bounds what the count buys.
     check('⇒ the two Killing vectors buy a COUNT (one function instead of five), not the CONTENT of '
-          'the identification -- P11 says so in the same sentence: "one of general relativity\'s '
-          'two, the harmonic tower on the leaf untouched"',
-          "one of general relativity's two, the harmonic tower on the leaf untouched" in p11
+          'the identification -- P11 says so by working BOTH: "The two polarizations are a wave map '
+          'into the hyperbolic plane", the polarized case a geodesic of the target, and the second '
+          'polarization living in the torus block',
+          # ⛔⛭ AMENDED r4516, AND THIS ONE IS A CHANGE OF SUBSTANCE, NOT OF WORDING.  The clause
+          #    "one of general relativity's two, the harmonic tower on the leaf untouched" is GONE
+          #    from P11 in any form -- `tower` survives there three times and none of them is this
+          #    claim.  ** What replaced it is stronger, not weaker: ** P11 now works BOTH
+          #    polarizations -- "The two polarizations are a wave map into the hyperbolic plane",
+          #    "the polarized case being a geodesic of the target", and it names where the other
+          #    one lives, "the torus block in which the second polarization lives".
+          #    ⇒ *So the bound this check exists for -- that two Killing vectors buy a COUNT and
+          #      not the CONTENT -- is carried by the paper's own two-polarization statement, and
+          #      that is what is asserted.  The old clause is not re-pinned to a phrase it no
+          #      longer has, and it is not quietly dropped either: it is named here as replaced.*
+          'The two polarizations are a wave map into the hyperbolic plane' in p11
+          and 'polarized case being a geodesic' in p11
+          and 'second polarization lives' in p11
           and free >= 5)
 
     # ** the dark region **
