@@ -48,32 +48,6 @@ claim it bears on is a proof rather than a coherent proposition.*
 - **`PO-13` — what the driving does on the leaf rate.** The measured deficit whose mechanism is missing.
 - **`PO-23` — the ultraviolet definition of the mode sums.** Two of the three parts of the interacting
   tower's definition are settled; the third *has never been attempted*, and that is the whole of its state.
-- **`PO-38` — the growth root on the leaf rate. COMPUTED r4394, and the answer is outcome three.** The
-  moment-balance *form* does not survive: applying the growth operator to $D=H$ with radiation present gives
-  $\mathcal{L}[H]=\tfrac{32}{3}\pi G H\rho_r$, so **the decaying mode stops being the rate the instant
-  radiation gravitates**, taking the reduction of order, the $G'/F'$ identity and the balance with it.
-  Solving the growth ODE on the leaf rate instead puts the root at $u_0=1.180039$ against the stacking
-  $1.180309$ — a move of $1.1\%$ of the gap, $0.704\to0.713\sigma$. **The $2\%$ is not an artefact of the
-  rate: the gap stands and wants a mechanism**, and the shift goes *further* from the measurement.
-  ⛔ *And the recorded $0.99934$ points the wrong way* — continuing the closed form onto a rate it does not
-  solve moves the root **toward** the measurement where solving the equation moves it away.
-
-**⌗ The adjacency here is the tightest in the set.** `PO-24` and `PO-13` are **one object seen from two
-sides** — the transfer that would reach the peaks, and what the driving does on the rate it would run on.
-`PO-31` in group II is the third face: the spectrum that transfer would need as input. *A reader who takes
-these as three separate problems over-counts the frontier by two.*
-
-**⌗ And `PO-23` is adjacent to `PO-30` by history rather than by object.** They were once one row — a
-classical dynamics gap routed to a quantum item, *which is why nobody could work it*. Splitting them was the
-work. **Do not re-merge them.**
-
----
-
-## II. THE CONSTRUCTION POSES THE QUESTION AND CANNOT ANSWER IT FROM ITS OWN RESOURCES
-
-*Here the step is taken and there is nothing to stand on. The construction supplies the question and not the
-next thing, so what is wanted is an idea rather than labour.*
-
 - **`PO-30` — a generative law for the matter content.** The bend-density identity is exact, and it states
   *what* the bend is and not *why* a cut bends as it does: the operator is kinematic. `P08` calls this the
   deepest open question the construction raises, and narrows it in its own words — the confined case is
@@ -141,9 +115,9 @@ them apart will mis-price the whole set.**
 
 ## WHAT IS *NOT* ON THIS MAP, AND WHY
 
-**Nothing was removed from the frontier to make this shape.** All eleven rows appear above.
+**Nothing was removed from the frontier to make this shape.** All ten rows appear above.
 
-**And nothing here is paring.** The set reached eleven by items being resolved, not reclassified: sixteen rows
+**And nothing here is paring.** The set reached ten by items being resolved, not reclassified: sixteen rows
 are struck, and of the seven struck since `P18` was registered, six were sound closes with receipts that run
 and could have returned otherwise. The seventh was struck on a substituted object and is restored. *A list
 that only ever shortens is no more trustworthy than one that only ever grows.*

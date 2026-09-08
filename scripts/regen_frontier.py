@@ -47,9 +47,6 @@ EST = {
         'isometry-realised on the compact face, and it remains unbuilt -- the major undertaking any geometric '
         'gauge-matter route would first have to complete. TRIP-WIRE: forcing the gauge group forces the Higgs '
         'representation with it.'),
-    'PO-39': ('the 2% between the derived epoch and the measured one, with the rate excluded', 1, 1, 5, None,
-        'r4401 OPENED, inheriting PO-38 rather than restating it. The growth normalisations root is DERIVED at u_0 = 1.180309372 on the stacking rate, from an equation with nothing free in it. The measured epoch is 1.2052: 2.11 percent away, 0.704 sigma. PO-38 removed the obvious cause -- solved on the LEAF rate, which the three-level rule assigns to perturbations, the root moves 1.1 percent of the gap and IN THE WRONG DIRECTION, to 0.713 sigma. The rate is not the cause. WHY IT IS A ROW: a derived and a measured value of ONE quantity cannot both be treated as forcing, and leaving that unrecorded while the synthesis argues from convergence is the inconsistency rather than the two per cent. DISCHARGED BY: a mechanism for the offset; or a demonstration that at 0.70 sigma there is nothing to explain, which is a result and needs stating rather than assuming; or a third route to the epoch sharing no premise with either, which would convert the pair into evidence.',
-        ),
     'PO-32': ('horizon thermodynamics with no realised horizon -- WHAT IS THE AREA LAW OF', 1, 1, 6, None,
         'r4317 REOPENED: the r4227 strike answered a different object and is withdrawn. P07 says what content '
         'survives for a perpetually collapsing body -- AS WITH THE LOCAL PARTICLE PRODUCTION OF THE PRECEDING '
@@ -208,12 +205,12 @@ KIND = {'PO-13': 'BUILD', 'PO-36': 'READ', 'PO-33': 'BUILD',   # r4145: was READ
 
 # ** PO-23 added r3809: the ultraviolet definition of the mode sums, the one part of P07's
 # three-part 'definition of the interacting tower' that is neither settled nor attempted. **
-ORDER = ['PO-13', 'PO-24', 'PO-39', 'PO-36', 'PO-30', 'PO-32', 'PO-25', 'PO-26', 'PO-29', 'PO-31', 'PO-23', 'PO-15', 'PO-14', 'PO-17', 'PO-18', 'PO-19', 'PO-20']
+ORDER = ['PO-13', 'PO-24', 'PO-36', 'PO-30', 'PO-32', 'PO-25', 'PO-26', 'PO-29', 'PO-31', 'PO-23', 'PO-15', 'PO-14', 'PO-17', 'PO-18', 'PO-19', 'PO-20']
 GROUP = {'PO-13': 'D', 'PO-14': 'A', 'PO-15': 'C', 'PO-16': 'D',
          # ** r3095: the four brought in from p0's frontiers and the field ledgers.  PO-17 and
          # PO-19 are substrate geometry; PO-18 is the constant ledger; PO-20 is analysis. **
          'PO-17': 'E', 'PO-18': 'E', 'PO-19': 'E', 'PO-20': 'E',
-         'PO-23': 'C', 'PO-24': 'D', 'PO-25': 'E', 'PO-26': 'A', 'PO-27': 'A', 'PO-29': 'E', 'PO-31': 'D', 'PO-30': 'A', 'PO-32': 'B', 'PO-39': 'D', 'PO-36': 'D', 'PO-34': 'E'}
+         'PO-23': 'C', 'PO-24': 'D', 'PO-25': 'E', 'PO-26': 'A', 'PO-27': 'A', 'PO-29': 'E', 'PO-31': 'D', 'PO-30': 'A', 'PO-32': 'B', 'PO-36': 'D', 'PO-34': 'E'}
 GNAME = {'A': 'the matter sector', 'B': 'the matter sector', 'C': 'the quantum sector',
          'D': 'the cosmology', 'E': 'the substrate geometry'}
 
