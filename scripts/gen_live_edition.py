@@ -26,6 +26,7 @@ import glob
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 OUT = os.path.join(ROOT, 'BOOK_INTRO_cosmiCave', 'live_edition.html')
 OUT_INTRO = os.path.join(ROOT, 'BOOK_INTRO_cosmiCave', 'introduction.html')
+OUT_FRONT = os.path.join(ROOT, 'BOOK_INTRO_cosmiCave', 'frontier.html')
 CDN = 'https://cdn.jsdelivr.net/gh/daryljanzen/shadow-of-existence@main'
 RAW = 'https://raw.githubusercontent.com/daryljanzen/shadow-of-existence/main'
 
@@ -85,6 +86,38 @@ def title_of(stem):
 
 
 
+# ── LaTeX -> Unicode.  The previous pass STRIPPED unknown macros, which deleted
+#    the symbol rather than the markup: `z \in [0,\pi]` came out as `z [0, ]`.
+#    Anything not mapped here is now kept as a word rather than dropped.
+_SYM = {
+    'Lambda': '\u039b', 'Omega': '\u03a9', 'alpha': '\u03b1', 'beta': '\u03b2',
+    'gamma': '\u03b3', 'delta': '\u03b4', 'epsilon': '\u03b5',
+    'varepsilon': '\u03b5', 'zeta': '\u03b6', 'eta': '\u03b7',
+    'theta': '\u03b8', 'kappa': '\u03ba', 'lambda': '\u03bb', 'mu': '\u03bc',
+    'nu': '\u03bd', 'xi': '\u03be', 'pi': '\u03c0', 'rho': '\u03c1',
+    'sigma': '\u03c3', 'tau': '\u03c4', 'phi': '\u03c6', 'chi': '\u03c7',
+    'psi': '\u03c8', 'omega': '\u03c9', 'Phi': '\u03a6', 'Psi': '\u03a8',
+    'Gamma': '\u0393', 'Delta': '\u0394', 'Sigma': '\u03a3',
+    'times': '\u00d7', 'pm': '\u00b1', 'to': '\u2192', 'mapsto': '\u21a6',
+    'leftrightarrow': '\u2194', 'in': '\u2208', 'infty': '\u221e',
+    'approx': '\u2248', 'simeq': '\u2243', 'sim': '\u223c', 'cong': '\u2245',
+    'geq': '\u2265', 'ge': '\u2265', 'leq': '\u2264', 'le': '\u2264',
+    'lesssim': '\u2272', 'propto': '\u221d', 'partial': '\u2202',
+    'oplus': '\u2295', 'circ': '\u2218', 'subset': '\u2282',
+    'supset': '\u2283', 'setminus': '\u2216', 'int': '\u222b',
+    'hbar': '\u210f', 'ell': '\u2113', 'not': '\u00ac', 'cdot': '\u00b7',
+    'ldots': '\u2026', 'dots': '\u2026', 'lvert': '|', 'rvert': '|',
+    'dd': 'd', 'rs': 'r_s', 'dS': 'dS', 'TD': 'TD', 'fh': 'f_h', 'fm': 'f_m',
+}
+# Macros whose ARGUMENT is the content and whose name is styling only.
+_UNWRAP = ('mathrm', 'mathbb', 'mathbf', 'mathcal', 'mathfrak', 'mathscr',
+           'text', 'textrm', 'operatorname', 'bar', 'tilde', 'hat', 'vec',
+           'boldsymbol', 'mathsf')
+# Function names that should simply print.
+_WORDS = ('sqrt', 'sin', 'cos', 'tan', 'sinh', 'cosh', 'tanh', 'ln', 'log',
+          'exp', 'dim', 'ker', 'det', 'tr', 'su', 'so', 'SU', 'SO', 'S')
+
+
 def detex(t):
     """LaTeX fragment -> readable HTML. Emphasis and bold are kept because the
     corpus uses them to carry weight; everything else is stripped."""
@@ -93,9 +126,21 @@ def detex(t):
     t = re.sub(r'\\(?:emph|textit)\{([^{}]*)\}', r'<em>\1</em>', t)
     t = re.sub(r'\\(?:textbf|strong)\{([^{}]*)\}', r'<strong>\1</strong>', t)
     t = re.sub(r'\$([^$]*)\$', r'<code>\1</code>', t)
-    t = re.sub(r'\\[a-zA-Z]+\*?\s*', ' ', t)
+    # \tfrac{a}{b} -> a/b, then unwrap styling macros, then map symbols.
+    t = re.sub(r'\\[dt]?frac\{([^{}]*)\}\{([^{}]*)\}', r'\1/\2', t)
+    for _ in range(3):
+        t = re.sub(r'\\(?:' + '|'.join(_UNWRAP) + r')\{([^{}]*)\}', r'\1', t)
+    t = re.sub(r'\\([a-zA-Z]+)\s*',
+               lambda m: _SYM.get(m.group(1),
+                                  m.group(1) + ' ' if m.group(1) in _WORDS
+                                  else ' '), t)
     t = t.replace('---', '\u2014').replace('--', '\u2013')
     t = re.sub(r'[{}]', '', t).replace('~', ' ')
+    # TeX quoting: ``x'' -> curly quotes, and \, \; thin spaces already gone.
+    t = re.sub(r'``([^\']*)\'\'', '\u201c\\1\u201d', t)
+    t = t.replace("``", '\u201c').replace("''", '\u201d')
+    t = re.sub(r'\s+([,.;:)\]])', r'\1', t)      # space before punctuation
+    t = re.sub(r'\(\s+', '(', t)
     t = re.sub(r'[ \t]+', ' ', t)
     paras = [x.strip() for x in re.split(r'\n\s*\n', t) if x.strip()]
     return paras
@@ -125,6 +170,29 @@ def abstract_of(stem, max_paras=3, cap=1400):
         truncated = True
     return kept, truncated
 
+
+
+
+def frontier_rows():
+    """THE_FRONTIER.md's open rows -> (id, question, note).  Read at build time
+    from the generated artefact, which regen_frontier.py writes from the register."""
+    fp = os.path.join(ROOT, 'THE_FRONTIER.md')
+    if not os.path.exists(fp):
+        return []
+    rows = []
+    for line in open(fp, encoding='utf-8', errors='replace').read().split('\n'):
+        if not line.startswith('|'):
+            continue
+        c = [x.strip() for x in line.split('|')]
+        if len(c) < 4 or '~~' in c[1]:
+            continue
+        m = re.search(r'PO-\d+', c[1])
+        if not m:
+            continue
+        note = c[9] if len(c) > 10 else ''
+        clean = lambda x: re.sub(r'\*\*|`', '', x).replace('<', '&lt;').strip()
+        rows.append((m.group(0), clean(c[2]), clean(note)))
+    return rows
 
 
 def md_to_html(md, matrix_slot=True, stop_at_h2=None):
@@ -321,7 +389,7 @@ this page.</p>
       and at what weight each claim is held</span></span></summary>
       <div class="intro">{intro_excerpt}
       <p class="more"><a href="introduction.html" target="_blank"
-         rel="noopener">Read the whole introduction \u2192</a></p></div>
+         rel="noopener">Read more →</a></p></div>
     </details><a href="introduction.html" target="_blank" rel="noopener">READ</a></li>
 {paper_list}
 </ul>
@@ -350,8 +418,8 @@ repository</a>. Papers via jsDelivr; the frontier read live at page load.
     }} catch (e) {{ /* try the next source */ }}
   }}
   if (text === null) {{
-    el.innerHTML = '<p class="more"><a href="{RAW}/THE_FRONTIER.md" '
-      + 'target="_blank" rel="noopener">Read the frontier \u2192</a></p>';
+    el.innerHTML = '<p class="more"><a href="frontier.html" '
+      + 'target="_blank" rel="noopener">Read more \u2192</a></p>';
     return;
   }}
   // Rows are markdown table lines: | **PO-n** | what | ... | discharge |
@@ -369,8 +437,8 @@ repository</a>. Papers via jsDelivr; the frontier read live at page load.
     rows.push({{id: id, what: c[2] || '', disc: c[9] || ''}});
   }}
   if (!rows.length) {{
-    el.innerHTML = '<p class="more"><a href="{RAW}/THE_FRONTIER.md" '
-      + 'target="_blank" rel="noopener">Read the frontier \u2192</a></p>';
+    el.innerHTML = '<p class="more"><a href="frontier.html" '
+      + 'target="_blank" rel="noopener">Read more \u2192</a></p>';
     return;
   }}
   const clean = s => s.replace(/\\*\\*/g, '').replace(/`/g, '')
@@ -385,6 +453,8 @@ repository</a>. Papers via jsDelivr; the frontier read live at page load.
             (d && d.length > 3 ? '<span class="disc">' + d.slice(0, 400) +
              '</span>' : '') + '</div>';
   }}
+  html += '<p class="more"><a href="frontier.html" target="_blank" ' +
+          'rel="noopener">Read more \u2192</a></p>';
   el.innerHTML = html;
 }})();
 
@@ -413,6 +483,32 @@ repository</a>. Papers via jsDelivr; the frontier read live at page load.
         '</script>\n</body>\n</html>\n')
     with open(OUT_INTRO, 'w', encoding='utf-8') as fh:
         fh.write(intro_page)
+
+    # The frontier gets a page too, for the same reason: a reader following
+    # "Read more" should land on a page of the book, never on a markdown file.
+    fr = frontier_rows()
+    body = ''.join(
+        f'<div class="row"><span class="id">{i}</span>'
+        f'<span class="what">{q}</span>'
+        + (f'<span class="disc">{n}</span>' if n else '') + '</div>'
+        for i, q, n in fr)
+    front_page = (
+        '<!DOCTYPE html>\n<html lang="en">\n<head>\n<meta charset="utf-8">\n'
+        '<meta name="viewport" content="width=device-width, initial-scale=1">\n'
+        '<title>The open edge \u2014 The Shadow of Existence</title>\n'
+        '<style>' + css + '</style>\n</head>\n<body>\n<div class="wrap">\n'
+        '<p class="note"><a href="live_edition.html">\u2190 The Shadow of '
+        'Existence</a></p>\n<h1>The open edge</h1>\n'
+        '<p class="lede">The programme\u2019s own open questions, each with what '
+        'would discharge it. Generated from its register, not written for this '
+        'page \u2014 ' + str(len(fr)) + ' stand open.</p>\n'
+        + body +
+        '\n<footer>Generated from the repository\u2019s register of open '
+        'problems. <a href="https://github.com/daryljanzen/shadow-of-existence">'
+        'Source.</a></footer>\n</div>\n</body>\n</html>\n')
+    with open(OUT_FRONT, 'w', encoding='utf-8') as fh:
+        fh.write(front_page)
+    print(f'  frontier.html written: {len(fr)} open rows, {len(front_page)} bytes.')
     print(f'  introduction.html written: {len(intro_page)} bytes, '
           f'matrix fetched into its figure.')
     print(f'  live_edition.html written: {len(papers)} papers listed, '
