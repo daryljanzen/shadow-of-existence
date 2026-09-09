@@ -146,6 +146,45 @@ sources: [cowork, chat]
 
 
 
+### Revision r6445 — 2026-09-09 (node 64). **Node 60's `r6436` verified number by number, and the one bound it lacked added: the result is a strong CONDITIONAL, not the coupled answer.**
+
+**⛭ VERIFIED BEFORE ACCEPTED, and every number holds.** *All five rows of its table recomputed from
+scratch: free $39/4$; rescale $(39/4)\sqrt{1+\epsilon}$; mass shift $-(\delta-3)(\delta+13)/4$ with roots
+$\{3,-13\}$; $1/m^{2}$ tail $\epsilon+39/4$; linear-in-$m$
+$-(\epsilon^{2}+12)(5\epsilon^{2}-52)/64$ --- **and the two algebraic forms it gives for the last are
+equal**. The $\delta=3$ claim holds exactly: $d(m)\mu(m)=2m^{3}-8m$, a polynomial, ***so the $1/m$ term
+does not cancel --- it does not exist***. Both named numerical traps avoided as claimed.*
+
+**⌗ AND THE STRONG RESULT IS REAL.** *$L=(39/4)\sqrt{1+\epsilon}$ vanishes only where every frequency in
+the tower vanishes with it, so **no rescaling discharges the log** --- generalising `r6411` from the scale
+factor to any multiplicative renormalisation of the frequencies.*
+
+**⛔ THE BOUND IT LACKED, ADDED TO BOTH THE RECEIPT AND THE ROW'S HEADLINE.** *Its docstring states the
+conditional correctly --- "GIVEN that coupling deforms the spectrum" --- but ***the premise is never itself
+bounded, and the row read "THE COUPLED ATTEMPT ... RETURNS $39/4$ UNCHANGED IN KIND"***, which outruns it.
+**An interacting theory's divergence need not be a zero-point sum over a deformed free spectrum**:
+interactions generate structures a spectral shift cannot represent, and the argument from
+$\hat\Gamma$'s instantaneous expectation is a plausibility about the **leading** back-reaction. ⇒ ***What
+is established is a strong conditional --- within the class of spectral deformations --- and not the
+coupled answer. Outside that class `PO-23` stays open.***
+
+⌗ **AND A GATE HELD ON ITS FIRST OUTSIDE TEST.** *`r6439`'s `check_receipt_home` was written two revisions
+before 60's work arrived, and **60 placed its receipt in `P10_canonical_time`, the declared home**. *That
+is the first evidence the declaration does the job it was built for: stopping the next node guessing.**
+
+⌗ **AND ONE PROPAGATION GAP OF 60's, CAUGHT BY THE APPENDIX GATE.** *It registered the receipt's row in
+`INDEX.md` and **did not regenerate the appendices**, so `appendix_receipts_P10.tex` was five lines short
+and ***its own receipt was invisible in `P10`'s appendix***. Regenerated; the diff verified to be its row
+before running the fix, per that gate's own warning. **`P10` now compiles at 31pp with the receipt
+resolving.**
+
+⚠ **AND A MERGE THIS LINE STARTED AND CORRECTLY ABANDONED.** *`r6436` reported itself pushed and it was ---
+**to `claude/shadow-of-existence-setup-6awafl`**, not `main`. I cherry-picked it, resolved a register
+conflict by keeping **both** sides, and regenerated the three generated artefacts rather than merging them
+by hand. ***While that was in flight the same work landed on `main` as a different commit***, making the
+cherry-pick a duplicate. **Abandoned, reset to the current `main`, and only the verification and the bound
+applied on top** --- which is what was actually owed.*
+
 ### Revision r6443 — 2026-09-09 (node 64). **CLEANUP 3 — THE ROOMS: which of the nine rows discharge together, landed in the register beside the completeness test.**
 
 **⌗ NO NEW DOCUMENT.** *The register already carries a cross-cutting view of the live rows --- the

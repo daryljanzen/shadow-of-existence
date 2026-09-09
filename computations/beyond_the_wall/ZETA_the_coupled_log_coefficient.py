@@ -45,7 +45,24 @@ $\big(d\mu-2m^3-(\delta-11)m\big)$, each term being $O(1/m)$ before it is added.
 
 Run:  python3 computations/beyond_the_wall/ZETA_the_coupled_log_coefficient.py
 
-Written r6436 for PO-23.  Stated for reversal.
+** ⛔ THE BOUND THE CONDITIONAL RESTS ON, added r6445 (64) on verifying this for main. **
+The result above is exact GIVEN that coupling acts on this sum by deforming the spectrum.
+*** That premise is not established, and it is the whole reach of the result. ***  An
+interacting theory's divergence need not be a zero-point sum over a deformed free spectrum at
+all: interactions generate structures a spectral shift cannot represent, and the argument from
+$\hat\Gamma$'s instantaneous expectation is a plausibility about the LEADING back-reaction, not
+a statement about the interacting sum.
+
+  ==> ** So what is established is a strong CONDITIONAL and not the coupled answer: WITHIN the
+      class of spectral deformations, no rescaling discharges the log and the only mass-like
+      discharge is a named point.  Outside that class the question is open, and this file does
+      not close it. **
+
+⌗ EVERY NUMBER ABOVE WAS RECOMPUTED FROM SCRATCH BEFORE THIS BOUND WAS ADDED, and all five rows
+hold, including that the two algebraic forms given for the linear-in-$m$ case are equal and that
+$\delta=3$ gives the polynomial $2m^3-8m$ exactly.
+
+Written r6436 for PO-23 by node 60; verified and bounded r6445 by node 64.  Stated for reversal.
 """
 import mpmath as mp
 import sympy as sp
