@@ -146,6 +146,46 @@ sources: [cowork, chat]
 
 
 
+### Revision r6431 — 2026-09-09 (node 64). **PROPAGATION COMPLETE, paper 6 of 6 — `P18`: the frontier list rewritten against the corpus that now exists, and the count corrected from ten to nine.**
+
+**⌗ THE SYNTHESIS WAS LAST, DELIBERATELY, so it would synthesise a settled corpus rather than a moving
+one** *--- and it was stale in almost every row, which is what a synthesis written before its sources move
+always becomes. **The struck row left the list**: `PO-44`'s helicity-blind question was answered at `r4553`
+and the table still carried it, so the section headed "the ten" listed ten where nine are open. **Corrected
+in the heading and in the cross-reference that quotes it.***
+
+**⛭ AND SEVEN OF THE REMAINING NINE ROWS MOVED**, *each to what would actually discharge it now:*
+*· the generative law --- **the curve's dynamics given content is supplied**, and what is owed is a law for
+the content, the equation of state being an input general relativity also takes;*
+*· the compact-face sector --- **first, what such a construction would be**, and on the reading available
+it is not vector-like but **empty**;*
+*· the mode sums --- **the coupled computation and only that**, the scale factor factoring out of the free
+sum identically;*
+*· the Weyl-squared coefficient --- **stated at $\tfrac{1}{60}$**, reversible on the physical-mode scoping;*
+*· the charged collapse --- **what stands in the horizon's place**, the eternal horizon not being formed;*
+*· the Hubble--Eddington radius --- **discriminating the dark fraction rather than the framework**;*
+*· the progenitor spectrum --- **reaching the head of a bounded genealogy**, stationarity excluded.*
+
+**⌗ AND THE UNPAID COLUMN, which is where a synthesis most easily overstates or understates.** *It called
+the damping signature "largely degenerate with the spectral tilt" --- **true, and now precise**: the
+degeneracy is *window-local*, the signature being a Gaussian and a tilt a power law, so a joint fit meets a
+**shape residual and not a shifted tilt**. ⌗ *The abstract needed no edit; it carries no frontier count, and
+its one apparent "ten" is inside "shortened".*
+
+---
+
+**⛭⛭⛭ PROPAGATION COMPLETE: six papers, six revisions, `r6419`--`r6431`.** *`P10`, `P08`, `P13`, `P15`,
+`P03`, `P18`. **All six compile, zero undefined; seven gates green; bibliography clean.** What the pass
+found beyond its own edits: a measurement banked in a register and never in its paper (`PO-23`); a
+correction that reached a body and neither its own upstream sentence nor its masthead (`P13`); a synthesis
+quoting a sentence its source no longer contained, and then a second one this pass created (`P18`); and a
+withdrawal that was not finished until its phrase entered the registry, where it fired immediately on a
+ledger quoting it bare.*
+
+⌗ ***The recurring shape is one shape***: *a result lands where it was produced and does not reach what
+summarises it. Abstracts, frontier lists and synthesis sections are where a reader goes first and where a
+working node edits last.*
+
 ### Revision r6429 — 2026-09-09 (node 64). **PROPAGATION, paper 5 of 6 — `P03`: the charged collapse settled where the paper said it was not, and a robustness clause distinguished from the question it appeared to answer.**
 
 **⌗ `sec:charge` ENDED "it is not settled here". IT IS SETTLED.** *The obstruction the paper states is
