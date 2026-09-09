@@ -396,9 +396,8 @@ this page.</p>
       the eighteen chapters and how they depend on one another, where to come in,
       and at what weight each claim is held</span></span></summary>
       <div class="intro">{intro_excerpt}
-      <p class="more"><a href="{PAGES}/introduction.html" target="_blank"
-         rel="noopener">Read more →</a></p></div>
-    </details><a href="{PAGES}/introduction.html" target="_blank" rel="noopener">READ</a></li>
+      <p class="more"><a href="{PAGES}/introduction.html">Read more →</a></p></div>
+    </details><a href="{PAGES}/introduction.html">READ</a></li>
 {paper_list}
 </ul>
 
@@ -427,8 +426,8 @@ const PAGES_URL = '{PAGES}';
     }} catch (e) {{ /* try the next source */ }}
   }}
   if (text === null) {{
-    el.innerHTML = '<p class="more"><a href="' + PAGES_URL + '/frontier.html" '
-      + 'target="_blank" rel="noopener">Read more \u2192</a></p>';
+    el.innerHTML = '<p class="more"><a href="' + PAGES_URL + '/frontier.html">'
+      + 'Read more \u2192</a></p>';
     return;
   }}
   // Rows are markdown table lines: | **PO-n** | what | ... | discharge |
@@ -446,8 +445,8 @@ const PAGES_URL = '{PAGES}';
     rows.push({{id: id, what: c[2] || '', disc: c[9] || ''}});
   }}
   if (!rows.length) {{
-    el.innerHTML = '<p class="more"><a href="' + PAGES_URL + '/frontier.html" '
-      + 'target="_blank" rel="noopener">Read more \u2192</a></p>';
+    el.innerHTML = '<p class="more"><a href="' + PAGES_URL + '/frontier.html">'
+      + 'Read more \u2192</a></p>';
     return;
   }}
   const clean = s => s.replace(/\\*\\*/g, '').replace(/`/g, '')
@@ -462,8 +461,8 @@ const PAGES_URL = '{PAGES}';
             (d && d.length > 3 ? '<span class="disc">' + d.slice(0, 400) +
              '</span>' : '') + '</div>';
   }}
-  html += '<p class="more"><a href="' + PAGES_URL + '/frontier.html" target="_blank" ' +
-          'rel="noopener">Read more \u2192</a></p>';
+  html += '<p class="more"><a href="' + PAGES_URL + '/frontier.html">' +
+          'Read more \u2192</a></p>';
   el.innerHTML = html;
 }})();
 
