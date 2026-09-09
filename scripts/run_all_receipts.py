@@ -88,6 +88,7 @@ import re
 import threading
 import subprocess
 import time
+import uuid
 from concurrent.futures import ThreadPoolExecutor
 
 HERE = os.path.dirname(os.path.abspath(__file__))
@@ -228,7 +229,17 @@ class Cache:
         names = [p for p in (paths or '').split(',') if p]
         self.path = names[0] if names else ''
         self.digest, self.lock = digest, threading.Lock()
-        self.results, self.invocations, self.wall = {}, 0, 0.0
+        # ⛔⚭ r4554 (node 60): ** THE WALL FIGURE GREW WHEN NOTHING RAN, AND IT WAS MINE. **
+        #   `invocations` and `wall` were SCALARS summed across every resume file -- and the
+        #   assembled total is written back into the FIRST file, so the next assembly read that
+        #   total and added the second file's share to it AGAIN.
+        #     ⇒ *Measured: two invocations that actually ran anything, 780s + 1208s = 1988s.  After
+        #       three no-op re-assemblies `RUN_RESULT.txt` read ** 5 INVOCATION(S), 3196s ** -- a
+        #       number that grew with how many times the command was typed.*
+        #   ⌗ ** A figure in this file is a claim about a RUN, and this one had become a claim about
+        #     my shell history. **  Totals are now a MAP of invocation id -> (wall, measured), so
+        #     merging is a union and re-reading is idempotent by construction rather than by care.
+        self.results, self.invs, self.legacy = {}, {}, []
         self.reused = 0
         for i, path in enumerate(names):
             if not os.path.exists(path):
@@ -239,8 +250,16 @@ class Cache:
                 d = {}
             if d.get('digest') == digest:
                 self.results.update(d.get('results', {}))
-                self.invocations += int(d.get('invocations', 0))
-                self.wall += float(d.get('wall', 0.0))
+                self.invs.update({k: list(v) for k, v in (d.get('invs') or {}).items()})
+                if 'invs' not in d and (d.get('invocations') or d.get('wall')):
+                    # ⛔ A PRE-r4554 CACHE'S TOTALS ARE THE DEFECT ITSELF and are NOT folded in.
+                    #   Its per-receipt results are measurements and are kept; its `wall` and
+                    #   `invocations` are whatever the double-counting had reached by the last
+                    #   time it was written, so carrying them forward would launder the very
+                    #   number this revision found wrong.  ⇒ *The results survive; the totals are
+                    #   dropped and SAID to be dropped, because a total that silently omits real
+                    #   minutes is the same kind of lie as one that invents them.*
+                    self.legacy.append((path, d.get('invocations'), d.get('wall')))
             elif d:
                 print(f"  ⌗ resume cache {path} discarded: it was taken against tree "
                       f"{d.get('digest')!r}, not {digest} -- a result measured on another tree "
@@ -261,8 +280,8 @@ class Cache:
     def _write(self):
         tmp = self.path + '.tmp'
         with open(tmp, 'w', encoding='utf-8') as fh:
-            json.dump({'digest': self.digest, 'invocations': self.invocations,
-                       'wall': self.wall, 'results': self.results}, fh)
+            json.dump({'digest': self.digest, 'invs': self.invs,
+                       'results': self.results}, fh)
         os.replace(tmp, self.path)
 
 
@@ -328,7 +347,7 @@ def main():
     print()
     t0 = time.time()
     cache = Cache(a.resume, _digest)
-    cache.invocations += 1
+    _inv = uuid.uuid4().hex[:12]          # this invocation's own id (r4554)
     todo = [f for f in files if cache.get(os.path.relpath(f, ROOT)) is None]
     if a.resume:
         print(f"  RESUME: {len(files) - len(todo)} result(s) reused from {a.resume}, "
@@ -363,7 +382,10 @@ def main():
         with ThreadPoolExecutor(max_workers=a.jobs) as ex:
             for r in ex.map(lambda f: run_one(f, budget(f, a.timeout)), todo):
                 cache.put(*r)
-    cache.wall += time.time() - t0
+    # ⛭ r4554: record THIS invocation under its own id, with how many receipts it actually
+    #   measured.  A re-assembly that measures nothing still costs a second or two and is recorded
+    #   as such -- what it can no longer do is inherit another invocation's minutes.
+    cache.invs[_inv] = [time.time() - t0, len(todo) - len(incomplete)]
     if a.resume:
         cache._write()
     res = [cache.get(os.path.relpath(f, ROOT)) for f in files]
@@ -386,16 +408,24 @@ def main():
     for st, p, dt, msg in sorted(slow, key=lambda r: r[1]):
         print(f"    [slow] {os.path.relpath(p, ROOT)}  -- {msg}")
     print()
-    _wall = cache.wall if a.resume else time.time() - t0
+    _wall = sum(v[0] for v in cache.invs.values()) if a.resume else time.time() - t0
+    _measured = [k for k, v in cache.invs.items() if v[1]]
     print(f"  {len(ok)} pass, {len(bad)} fail, {len(slow)} over timeout, "
           f"in {_wall:.0f}s wall")
     if a.resume:
         # *The verdict line above must not be read as one elapsed clock when it is not one.*
-        print(f"  ⌗ ASSEMBLED ACROSS {cache.invocations} INVOCATION(S) AT THIS DIGEST: "
-              f"{cache.reused} result(s) reused, {len(res) - cache.reused} measured here.  Every "
-              f"receipt ran exactly once against tree {_digest}, and the cache is discarded whole "
-              f"the moment that digest changes.  The wall figure is the SUM of the invocations, "
-              f"not a single elapsed clock.")
+        print(f"  ⌗ ASSEMBLED ACROSS {len(cache.invs)} INVOCATION(S) AT THIS DIGEST, "
+              f"{len(_measured)} OF WHICH MEASURED ANYTHING: {cache.reused} result(s) reused, "
+              f"{len(res) - cache.reused} measured here.  Every receipt ran exactly once against "
+              f"tree {_digest}, and the cache is discarded whole the moment that digest changes.  "
+              f"The wall figure is the SUM of the invocations, not a single elapsed clock -- and "
+              f"it is a UNION over invocation ids, so re-assembling adds only the seconds that "
+              f"re-assembly itself costs (r4554: it used to add another invocation's minutes).")
+        for _p, _i, _w in cache.legacy:
+            print(f"  ⛔ {_p} is a PRE-r4554 cache: its {_i} invocation(s)/{float(_w or 0):.0f}s "
+                  f"were written by the double-counting this revision fixed, so its RESULTS are "
+                  f"used and its TOTALS are discarded.  ** The wall figure above therefore OMITS "
+                  f"that time and is a LOWER BOUND -- re-run from a fresh cache for a true one. **")
     if ok:
         worst = sorted(ok, key=lambda r: -r[2])[:5]
         print("  slowest that passed: "
