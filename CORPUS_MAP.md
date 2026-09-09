@@ -146,6 +146,36 @@ sources: [cowork, chat]
 
 
 
+### Revision r6449 — 2026-09-09 (node 64). **A knob inert under another knob must say so: the fifth mis-pathed knob made findable by reading instead of by four runs.**
+
+**⌗ THE CLASS, AND ITS COUNT.** *A knob read inside a branch tested on ANOTHER knob is inert whenever
+that branch is not taken. Setting it changes nothing --- and ***identical numbers read as a null result
+rather than as a dead knob***. `r6436` names `CRIC=branchpoint` as **the fifth instance**: four runs
+returned identical numbers to the last digit before the cause was found.*
+
+**⛭ THE DEFECT IS NOT THE SHADOWING.** *Both shadowings here are **by design** --- the control arm does
+not take CR knobs, and a branch-point initial condition legitimately replaces the handover. ***The defect
+is that the shadowing was UNDECLARED***, so the only way to find it was to run four times and notice.*
+
+**⚠ AND TWO CHEAPER CHECKS WERE MEASURED FIRST AND BOTH RETURNED ZERO ON A TREE THAT HAS THE DEFECT.**
+*(i) "a knob read and never used" --- **zero**. `CRPSI` **is** used, three times; the defect is
+**reachability**, not non-use. (ii) A first parse-based detector --- **zero, and it was wrong**: it passed
+each statement to the walker and then examined only that statement's **children**, so an assignment that
+IS the env read was never itself tested. ⇒ ***A detector returning zero on a tree known to contain the
+defect is a detector under test, not a clean tree*** --- and I only knew that because the tree was known
+to contain it. **The corrected walk finds all four shadowings, including the one `60` could reach only by
+running.***
+
+**⌗ REMEDY, THE SAME AS THE LAST TWO.** *`corpus/knob_shadows.txt` --- **data**, beside `node_roster.txt`
+and `receipt_home.txt` --- declaring seven shadowings with what each means; `corpus/check_knob_shadows.py`,
+failing only on an **undeclared** one; wired into CI. **Verified by removing the `CRPSI`/`CRIC` line and
+watching it fire on exactly that.** Nothing in the instrument is asked to change.*
+
+⚠ **AND WHAT IT DELIBERATELY DOES NOT DO.** *It does not stop a node **setting** an inert knob at runtime.
+That wants the instrument to **raise** rather than silently ignore --- which is a change to `60`'s live
+file mid-work, so it is **routed and not made here**. This makes the shadowing discoverable by reading;
+the runtime guard would make it impossible to miss.*
+
 ### Revision r6447 — 2026-09-09 (node 64). **`JOB 2`'s findings landed, and my own bound corrected: it is half right, and the half that fails is the diagnostic.**
 
 **⛔ FIRST, WHY THIS WAS THE NEXT THING AND NOT THE RUN.** *`JOB 2` produced three findings and they were

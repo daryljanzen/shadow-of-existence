@@ -1,0 +1,30 @@
+# DECLARED KNOB SHADOWINGS  --  data, not code.  Read by check_knob_shadows.py.
+#
+# ** A knob read inside a branch tested on ANOTHER knob is INERT whenever that branch is
+#    not taken.  Setting it then changes nothing, and identical numbers read as a NULL
+#    RESULT rather than as a dead knob. **
+#
+# ⛔ THAT HAS NOW HAPPENED FIVE TIMES.  Node 60's r6436 run reports `CRIC=branchpoint`
+#   as "the fifth mis-pathed knob": it takes a branch that sets its own super-horizon
+#   data and never reaches the handover block, so `CRPSI` is inert under it, and four
+#   runs returned identical numbers before the cause was found.
+#
+# ⇒ THE DEFECT IS NOT THE SHADOWING.  Both shadowings below are BY DESIGN -- the control
+#   arm does not take CR knobs, and a branch-point initial condition legitimately
+#   replaces the handover.  ** The defect is that the shadowing was UNDECLARED, so the
+#   only way to discover it was to run four times and notice the numbers were identical. **
+#
+# ⌗ SAME REMEDY AS `node_roster.txt` AND `receipt_home.txt`: declare it, and gate the
+#   UNDECLARED case.  A new shadowing is then a one-line edit here, in the same commit
+#   as the code that creates it -- and a node reading this file before a scan knows which
+#   settings will make its knob do nothing.
+#
+# format:  file  knob  shadowed_by  what it means
+#
+ACOUSTIC_two_arm.py  ZSTART  ARM   inert on the control arm; the control's start is its own
+ACOUSTIC_two_arm.py  CRPHI   ARM   CR-only: the control arm carries no seam phase
+ACOUSTIC_two_arm.py  CRPHI   CRIC  inert under CRIC=branchpoint, which sets its own super-horizon data
+ACOUSTIC_two_arm.py  CRAMP   ARM   CR-only: the control arm has no handover amplitude
+ACOUSTIC_two_arm.py  CRAMP   CRIC  inert under CRIC=branchpoint -- the handover block is never reached
+ACOUSTIC_two_arm.py  CRPSI   ARM   CR-only: the control arm has no handover potential
+ACOUSTIC_two_arm.py  CRPSI   CRIC  inert under CRIC=branchpoint -- THE FIFTH MIS-PATHED KNOB, r6436
