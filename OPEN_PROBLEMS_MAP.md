@@ -46,6 +46,11 @@ claim it bears on is a proof rather than a coherent proposition.*
   non-reabsorbable, and **what it does to the observed high-$\ell$ power is not**, turning on a parameter
   refit and the early integrated Sachs–Wolfe term.
 - **`PO-13` — what the driving does on the leaf rate.** The measured deficit whose mechanism is missing.
+- **`PO-43` — the Weyl-squared coefficient at second order in the shear.** `P10` names the entry rather than
+  leaving it open: the shear costs *exactly one* new counterterm and it is the Weyl-squared one, so the ledger
+  acquires it and the question is at what coefficient. **`PO-23`'s computation did not cost it** — the
+  background is conformally flat, so that invariant vanishes identically there and a background computation
+  cannot see it. *A finite computation with an instrument the paper itself names, and an unknown answer.*
 - **`PO-23` — the ultraviolet definition of the mode sums.** Two of the three parts of the interacting
   tower's definition are settled; the third *has never been attempted*, and that is the whole of its state.
 - **`PO-30` — a generative law for the matter content.** The bend-density identity is exact, and it states
