@@ -4,107 +4,107 @@
 \small\noindent Each computation marked \rcptmarker\ in the text is verified by a runnable receipt in the \texttt{receipts/} directory that ships with this work; status \textsf{OK} = verified (traced, run, output matches the claim). This appendix is generated from the receipt index, not maintained by hand.\par\medskip
 \begingroup\renewcommand{\arraystretch}{1.25}
 \begin{description}
-\item[\label{rcpt:P09_ppwave_typeN}\texttt{P09\_ppwave\_typeN}]\hfill\textsf{[OK]}\\
+\item[\label{rcpt:P09_ppwave_typeN}\textbf{P9R1}\quad\texttt{P09\_ppwave\_typeN}]\hfill\textsf{[OK]}\\
 \textit{prop:radiative} \ (pp-wave ds\textasciicircum{}2=H du\textasciicircum{}2-2dudv+dx\textasciicircum{}2+dy\textasciicircum{}2 is vacuum iff H harmonic; Weyl!=0 but all scalar invariants vanish = Petrov TYPE N (radiative, I=J=0); NOT a symmetric cut (the range's boundary)). 
 \emph{Computes:} Ricci derived (R\_uu=-(1/2)(H\_xx+H\_yy)); R\_uxux!=0; Kretschmann=0 (VSI); Type N off computed Weil+Kret (not O, not D)
  \emph{Bound:} radiative types absent from the range
 \ \emph{Run:} \texttt{python3 receipts/P09\_range\_paper/P09\_ppwave\_typeN.py}
-\item[\label{rcpt:P09_bianchiI_typeI}\texttt{P09\_bianchiI\_typeI}]\hfill\textsf{[OK]}\\
+\item[\label{rcpt:P09_bianchiI_typeI}\textbf{P9R2}\quad\texttt{P09\_bianchiI\_typeI}]\hfill\textsf{[OK]}\\
 \textit{prop:typeI} \ (generic vacuum-Lambda Bianchi-I (a\_i=sinh(3t)\textasciicircum{}\{1/3\}tanh(3t/2)\textasciicircum{}\{C\_i/3\}, distinct C\_i) is Petrov TYPE I: electric Weyl has 3 distinct eigenvalues (I\textasciicircum{}3!=27J\textasciicircum{}2)). 
 \emph{Computes:} numeric GR pipeline; R\textasciicircum{}mu\_nu=3 delta (vacuum-Lambda); electric Weyl traceless, 3 distinct eigenvalues; speciality varies with t; control axisymmetric (2,-1,-1)=Type D
  \emph{Bound:} algebraic type no constraint on the range
 \ \emph{Run:} \texttt{python3 receipts/P09\_range\_paper/P09\_bianchiI\_typeI.py}
-\item[\label{rcpt:P09_kerr_deSitter}\texttt{P09\_kerr\_deSitter}]\hfill\textsf{[OK]}\\
+\item[\label{rcpt:P09_kerr_deSitter}\textbf{P9R3}\quad\texttt{P09\_kerr\_deSitter}]\hfill\textsf{[OK]}\\
 \textit{prop:kerr} \ (Kerr-de Sitter is vacuum-Lambda (R\textasciicircum{}mu\_nu=Lambda delta, Lambda=3/a\textasciicircum{}2) on the substrate; Delta\_r=r\textasciicircum{}2 f\_SdS+a\textasciicircum{}2 f\_dS; a->0 -> SdS; M->0 -> maximally symmetric (Weyl-flat)). 
 \emph{Computes:} numeric Ricci=Lambda delta at 3 (r,theta) (resid 3.5e-6); Delta\_r decomposition symbolic; M->0 Weyl->0 vs M!=0 Weyl!=0
  \emph{Bound:} J=Ma/Xi\textasciicircum{}2 (Komar) stated not computed here
 \ \emph{Run:} \texttt{python3 receipts/P09\_range\_paper/P09\_kerr\_deSitter.py}
-\item[\label{rcpt:P09_typeD_quartics}\texttt{P09\_typeD\_quartics}]\hfill\textsf{[OK]}\\
+\item[\label{rcpt:P09_typeD_quartics}\textbf{P9R4}\quad\texttt{P09\_typeD\_quartics}]\hfill\textsf{[OK]}\\
 \textit{thm:pd} \ (separable Carter cut is vacuum-Lambda IFF structure functions are the quartics (Dr=-L/3 r\textasciicircum{}4+c2 r\textasciicircum{}2+c1 r+c0, Dp=-L/3 p\textasciicircum{}4-c2 p\textasciicircum{}2+d1 p+c0): leading -L/3, shared c0, opposite c2 = Type-D Kerr-NUT-(A)dS). 
 \emph{Computes:} numeric R\textasciicircum{}mu\_nu=Lambda delta for the quartics; 3 only-if controls (extra r\textasciicircum{}3, mismatched c0, flipped c2) each break vacuum
  \emph{Bound:} the iff, both directions
 \ \emph{Run:} \texttt{python3 receipts/P09\_range\_paper/P09\_typeD\_quartics.py}
-\item[\label{rcpt:P09_carter_killing}\texttt{P09\_carter\_killing}]\hfill\textsf{[OK]}\\
+\item[\label{rcpt:P09_carter_killing}\textbf{P9R5}\quad\texttt{P09\_carter\_killing}]\hfill\textsf{[OK]}\\
 \textit{cor:carter} \ (the vacuum separation Dr''+Dp''=-4L(r\textasciicircum{}2+p\textasciicircum{}2) splits of its own accord; the separation constant c2 (opposite in Dr,Dp) is the Carter constant = a genuine irreducible Killing tensor K=p\textasciicircum{}2 g\textasciicircum{}(r)-r\textasciicircum{}2 g\textasciicircum{}(p) with grad\_(a K\_bc)=0). 
 \emph{Computes:} symbolic separation + constant; numeric Killing eqn (\textasciitilde{}1e-8); K irreducible; wrong-sign control fails
  \emph{Bound:} the substrate's hidden symmetry, forced by vacuum
 \ \emph{Run:} \texttt{python3 receipts/P09\_range\_paper/P09\_carter\_killing.py}
-\item[\label{rcpt:P09_ks_vacuum}\texttt{P09\_ks\_vacuum}]\hfill\textsf{[OK]}\\
+\item[\label{rcpt:P09_ks_vacuum}\textbf{P9R6}\quad\texttt{P09\_ks\_vacuum}]\hfill\textsf{[OK]}\\
 \textit{prop:ksvac} \ (**!! MARKED c54.161: the printed chain rule for Y'/Y is the self-comparison simplify(YpY - sqrtnf/r)==0**, and YpY was assigned that same expression one line earlier, so the first conjunct tests the interpreter; only the second has content. KS vacuum kernel = SdS interior: Y=r, X=sqrt(-f), (dr/dtau)\textasciicircum{}2=-f substituted into the Kantowski-Sachs stress-energy gives rho=p\_chi=p\_perp=0). 
 \emph{Computes:} symbolic: the 3 stress-energy components vanish for the SdS interior; control X=const breaks it
  \emph{Bound:} SdS is the vacuum member of the homogeneous class
 \ \emph{Run:} \texttt{python3 receipts/P09\_range\_paper/P09\_ks\_vacuum.py}
-\item[\label{rcpt:K7_range_is_essential_image}\texttt{K7\_range\_is\_essential\_image}]\hfill\textsf{[OK]}\\
+\item[\label{rcpt:K7_range_is_essential_image}\textbf{P9R7}\quad\texttt{K7\_range\_is\_essential\_image}]\hfill\textsf{[OK]}\\
 \textit{---} \ (K7 --- IS P9's RANGE THE ORBIT SPACE OF K1's ACTION GROUPOID? CONFIRMATION 2 --- P9 read at source FIRST, and it turns out to be speaking the language already: NECESSARY (prop:bound): 'a geometry swept by H <= SO(4,1) INHERITS H, so every reachable geometry's isometry group CONTAINS A SWEEP-SUBGROUP of the substrate's.' SUFFICIENT (prop:surj): 'the operator's four data supply exactly the functions the general H-invariant...). 
 \emph{Computes:} runs clean; registered from its own docstring and a live run
  \emph{Bound:} description is the receipt's own wording, condensed; not independently re-derived here
 \ \emph{Run:} \texttt{python3 receipts/P09\_range\_paper/K7\_range\_is\_essential\_image.py}
-\item[\label{rcpt:V1_carter_chain}\texttt{V1\_carter\_chain}]\hfill\textsf{[OK]}\\
+\item[\label{rcpt:V1_carter_chain}\textbf{P9R8}\quad\texttt{V1\_carter\_chain}]\hfill\textsf{[OK]}\\
 \textit{rem:carter-chain} \ (V1 --- IS THE CARTER-CONSTANT CLAIM A NOETHER, KILLING-TENSOR, OR SEPARABILITY STATEMENT? CONFIRMATION 2 --- P9 read whole, and the ledger's premise ('the corpus's wording does not distinguish them') is WRONG. P9 distinguishes them explicitly and cites the right sources. What it has:). 
 \emph{Computes:} runs clean; registered from its own docstring and a live run
  \emph{Bound:} description is the receipt's own wording, condensed; not independently re-derived here
 \ \emph{Run:} \texttt{python3 receipts/P09\_range\_paper/V1\_carter\_chain.py}
-\item[\label{rcpt:C1_the_two_covers_branch_where_the_corpus_pries}\texttt{C1\_the\_two\_covers\_branch\_where\_the\_corpus\_pries}]\hfill\textsf{[OK]}\\
+\item[\label{rcpt:C1_the_two_covers_branch_where_the_corpus_pries}\textbf{}\quad\texttt{C1\_the\_two\_covers\_branch\_where\_the\_corpus\_pries}]\hfill\textsf{[OK]}\\
 \textit{sec:homog} \ (the two three-fold covers branch at the two loci the corpus pries apart). 
 \emph{Computes:} disc(r\textasciicircum{}3-r+2M)=-4(27M\textasciicircum{}2-1); double root at alpha/sqrt3; deck fixed point at r=0; branch sets disjoint (12)
  \emph{Bound:} NOT-A-PAPER-CLAIM --- discharges L-203 station C probe C1
 \ \emph{Run:} \texttt{python3 receipts/RM\_C\_complex\_analysis/C1\_the\_two\_covers\_branch\_where\_the\_corpus\_pries.py}
-\item[\label{rcpt:G1_the_arrival_path_metric}\texttt{G1\_the\_arrival\_path\_metric}]\hfill\textsf{[(partial)]}\\
+\item[\label{rcpt:G1_the_arrival_path_metric}\textbf{}\quad\texttt{G1\_the\_arrival\_path\_metric}]\hfill\textsf{[(partial)]}\\
 \textit{cor:carter} \ (character distance from a claim to its supporting links (SUPERSEDED)). 
 \emph{Computes:} measures distance, which G2 showed is the wrong quantity; kept stating its own supersession
  \emph{Bound:} NOT-A-PAPER-CLAIM --- discharges L-220; SUPERSEDED IN PART by G2
 \ \emph{Run:} \texttt{python3 receipts/RP\_34\_gr/G1\_the\_arrival\_path\_metric.py}
-\item[\label{rcpt:G2_the_blind_run}\texttt{G2\_the\_blind\_run}]\hfill\textsf{[OK]}\\
+\item[\label{rcpt:G2_the_blind_run}\textbf{}\quad\texttt{G2\_the\_blind\_run}]\hfill\textsf{[OK]}\\
 \textit{sec:pd} \ (run blind, the distance metric is wrong about five of six proofless results). 
 \emph{Computes:} enumerates all 16 labelled results in P8/P9; seven justify in-body; cor:carter already repaired (8)
  \emph{Bound:} NOT-A-PAPER-CLAIM --- discharges L-220 correction
 \ \emph{Run:} \texttt{python3 receipts/RP\_34\_gr/G2\_the\_blind\_run.py}
-\item[\label{rcpt:G3_the_axis_names_two_orderings}\texttt{G3\_the\_axis\_names\_two\_orderings}]\hfill\textsf{[OK]}\\
+\item[\label{rcpt:G3_the_axis_names_two_orderings}\textbf{}\quad\texttt{G3\_the\_axis\_names\_two\_orderings}]\hfill\textsf{[OK]}\\
 \textit{sec:range} \ (the structural axis is the horizon/symmetry one, defined three times in the same paper). 
 \emph{Computes:} asserts the three defining passages; I\textasciicircum{}3-27J\textasciicircum{}2=0 identically for SdS; Nariai at Lambda M\textasciicircum{}2=1/9 (13)
  \emph{Bound:} NOT-A-PAPER-CLAIM --- discharges L-204 probe G3
 \ \emph{Run:} \texttt{python3 receipts/RP\_34\_gr/G3\_the\_axis\_names\_two\_orderings.py}
-\item[\label{rcpt:I1_the_general_case_is_stated_and_exhibited_in_one_class}\texttt{I1\_the\_general\_case\_is\_stated\_and\_exhibited\_in\_one\_class}]\hfill\textsf{[OK]}\\
+\item[\label{rcpt:I1_the_general_case_is_stated_and_exhibited_in_one_class}\textbf{}\quad\texttt{I1\_the\_general\_case\_is\_stated\_and\_exhibited\_in\_one\_class}]\hfill\textsf{[OK]}\\
 \textit{cor:wall} \ (L-174s ungated half narrowed: P9 STATES the general case is ordinary GR at the wall and L-207 EXHIBITS it in one class, so what is unbuilt is the exhibition beyond spherical symmetry). 
 \emph{Computes:} asserts P9s handoff passage at source, the rows own downgrade of what is owed, and that nothing here builds it (13 checks)
  \emph{Bound:} NOT-A-PAPER-CLAIM --- narrows the longest-unworked row; not discharged
 \ \emph{Run:} \texttt{python3 receipts/L174\_general\_matter\_dynamics/I1\_the\_general\_case\_is\_stated\_and\_exhibited\_in\_one\_class.py}
-\item[\label{rcpt:I4_the_shear_selection_exists_and_is_vacuum_bound}\texttt{I4\_the\_shear\_selection\_exists\_and\_is\_vacuum\_bound}]\hfill\textsf{[OK]}\\
+\item[\label{rcpt:I4_the_shear_selection_exists_and_is_vacuum_bound}\textbf{}\quad\texttt{I4\_the\_shear\_selection\_exists\_and\_is\_vacuum\_bound}]\hfill\textsf{[OK]}\\
 \textit{sec:petrov} \ (the corpus DOES select among shears --- the shift-shear link via Goldberg-Sachs --- and the selection is a VACUUM theorem, so it cannot reach the stratum where matter is dynamical). 
 \emph{Computes:} asserts the shift-shear passage, both statements of the vacuum hypothesis, and the walls matter clause, against r2504s own too-strong wording (14 checks)
  \emph{Bound:} NOT-A-PAPER-CLAIM --- corrects and sharpens this lines own dark-region statement
 \ \emph{Run:} \texttt{python3 receipts/L174\_general\_matter\_dynamics/I4\_the\_shear\_selection\_exists\_and\_is\_vacuum\_bound.py}
-\item[\label{rcpt:I5_two_not_five_and_the_constraint_was_in_my_own_receipt}\texttt{I5\_two\_not\_five\_and\_the\_constraint\_was\_in\_my\_own\_receipt}]\hfill\textsf{[OK]}\\
+\item[\label{rcpt:I5_two_not_five_and_the_constraint_was_in_my_own_receipt}\textbf{}\quad\texttt{I5\_two\_not\_five\_and\_the\_constraint\_was\_in\_my\_own\_receipt}]\hfill\textsf{[OK]}\\
 \textit{cor:radiation} \ (the unworked stratum has TWO free shear components not five --- the momentum constraint fixes three under the York split --- and P9 already names the two as the gravitons polarizations). 
 \emph{Computes:} counts the York split, asserts cor:radiations naming sentence at source, and asserts that I3 printed the selecting constraint before denying it (11 checks)
  \emph{Bound:} NOT-A-PAPER-CLAIM --- verifies c54.198 and withdraws this lines own count
 \ \emph{Run:} \texttt{python3 receipts/L174\_general\_matter\_dynamics/I5\_two\_not\_five\_and\_the\_constraint\_was\_in\_my\_own\_receipt.py}
-\item[\label{rcpt:I7_the_free_shear_is_two_not_five_and_the_corpus_already_names_the_two}\texttt{I7\_the\_free\_shear\_is\_two\_not\_five\_and\_the\_corpus\_already\_names\_the\_two}]\hfill\textsf{[OK]}\\
+\item[\label{rcpt:I7_the_free_shear_is_two_not_five_and_the_corpus_already_names_the_two}\textbf{}\quad\texttt{I7\_the\_free\_shear\_is\_two\_not\_five\_and\_the\_corpus\_already\_names\_the\_two}]\hfill\textsf{[OK]}\\
 \textit{sec:reach, cor:wall} \ (**`L-174`'s UNWORKED STRATUM HAS TWO FREE SHEAR COMPONENTS, NOT FIVE --- THE MOMENTUM CONSTRAINT OWNS THREE, AND P9 ALREADY NAMES THE REMAINING TWO AS THE GRAVITON'S POLARIZATIONS.** Lead `L-510`; VEINS `L-165`, `L-175`. **PART 1** r2504's ADM identity re-derived on a **general** 3-metric and general symmetric K --- \$K\textasciicircum{}2-K\_\{ij\}K\textasciicircum{}\{ij\}=\textbackslash\{\}tfrac23\textbackslash\{\}theta\textasciicircum{}2-\textbackslash\{\}sigma\textasciicircum{}2\$ identically, so "the energy and momentum are the shear" uses no symmetry and that purchase stands untouched. **PART 2 THE YORK SPLIT:** \$\textbackslash\{\}sigma\_\{ij\}=\textbackslash\{\}sigma\textasciicircum{}\{TT\}\_\{ij\}+(LW)\_\{ij\}\$ is orthogonal and unique; \$D\textasciicircum{}j\textbackslash\{\}sigma\textasciicircum{}\{TT\}\_\{ij\}\textbackslash\{\}equiv0\$, so the trace-free momentum constraint is an elliptic equation for \$W\$ **alone**. Verified at five wavevectors: longitudinal rank **3**, TT dimension **2**, blocks orthogonal, \$3+2=5\$. \ensuremath{\Rightarrow} ***`I3`'s "five-dimensional space ... nothing selecting among them" counts the space BEFORE the constraint `I3` itself writes down four lines earlier.*** **PART 3** P9's own words matched in `range\_paper.tex` --- "the graviton's **two** propagating polarizations are exactly the transverse degrees of freedom a sweep cannot carry", the wall as their **onset**. **PART 4 THE GOWDY CONTROL:** at a pinned propagation direction the TT space is exactly plus/cross, so a **polarized** leaf is **1 of 2**, not 1 of 5. \ensuremath{\Rightarrow} **The dark interior is therefore not WHICH of five but HOW THE TRANSVERSE 2-PLANE TURNS over the leaf --- P9's own sentence.**). 
 \emph{Computes:} the ADM identity asserted on a general metric --- **if it failed the correction would be to `I3`'s premise, not its count**; the York split asserted (rank 3, TT 2, orthogonal, spanning 5) at **five** wavevectors, one being a coincidence; **P9's wording asserted present in the .tex --- without which this file would be importing standard GR into a corpus claim, the one thing it must not do**; and the plus/cross pair asserted at a pinned direction, which is what makes "1 of 2" concrete and keeps \$\textbackslash\{\}sigma\textasciicircum{}\{TT\}=0\$ from being misread as the wall
  \emph{Bound:} **scope: a NARROWING and not a closure (`THE\_METHOD` \S{}IV). No beyond-wall solution is exhibited and none is claimed; `I3`'s own disclaimer is carried forward unchanged. The correction is to a count, not to r2504's reframing, which stands.  And one over-reading is blocked by its own control: \$\textbackslash\{\}sigma\textasciicircum{}\{TT\}=0\$ is NOT the wall --- an unpolarized Gowdy leaf has two Killing vectors and both TT components.**
 \ \emph{Run:} \texttt{python3 receipts/L174\_general\_matter\_dynamics/I7\_the\_free\_shear\_is\_two\_not\_five\_and\_the\_corpus\_already\_names\_the\_two.py}
-\item[\label{rcpt:I6_two_objects_one_word_the_optical_shear_is_not_the_ADM_shear}\texttt{I6\_two\_objects\_one\_word\_the\_optical\_shear\_is\_not\_the\_ADM\_shear}]\hfill\textsf{[OK]}\\
+\item[\label{rcpt:I6_two_objects_one_word_the_optical_shear_is_not_the_ADM_shear}\textbf{}\quad\texttt{I6\_two\_objects\_one\_word\_the\_optical\_shear\_is\_not\_the\_ADM\_shear}]\hfill\textsf{[OK]}\\
 \textit{sec:petrov} \ (**r2505's SHEAR-SELECTION PRINCIPLE IS TRUE AND IT CONSTRAINS A DIFFERENT TENSOR --- TWO OBJECTS, ONE WORD.** Lead `L-511`; VEINS `L-165`, `L-175`. **PART 1** `I3`'s \$\textbackslash\{\}sigma\_\{ij\}\$ is the trace-free **extrinsic curvature** of a spatial leaf --- five real components, belonging to a **foliation**; Goldberg--Sachs governs the **Newman--Penrose optical shear** of a null geodesic congruence --- one complex scalar, two real, and an **invariant**. **PART 2 ONE SPACETIME SETTLES IT:** Schwarzschild is Type D, so its repeated PNDs are shear-free in every slicing; static slices give \$\textbackslash\{\}sigma\_\{ij\}=0\$ and **Painlevé--Gullstrand slices give \$\textbackslash\{\}sigma\_\{ij\}\textbackslash\{\}sigma\textasciicircum{}\{ij\}=3M/r\textasciicircum{}\{3\}\$**. \ensuremath{\Rightarrow} ***Same geometry, same type, same optical shear --- the ADM shear is foliation-dependent, so no theorem about the geometry can fix it.*** **PART 3 AND THE SYNTHESIS:** the entire PG shear is exactly a York longitudinal piece, \$W\_r=-\textbackslash\{\}sqrt\{2M\}/(2\textbackslash\{\}sqrt r)\$, so **\$\textbackslash\{\}sigma\textasciicircum{}\{TT\}=0\$ in both** --- the three components the momentum constraint owns carry the foliation and the two it leaves carry the geometry. **PART 4** four source checks against `I3`, `I4` and P9. \ensuremath{\Rightarrow} **Both findings stand; what does not stand is reading either as an answer to the other.**). 
 \emph{Computes:} the two counts (5 against 2) asserted, since the whole distinction is that these are different objects; **the PG shear scalar asserted NONZERO and pinned at \$3M/r\textasciicircum{}\{3\}\$ --- this is the demonstration, one spacetime and two answers**; the residual \$\textbackslash\{\}sigma-(LW)\$ asserted zero across all nine components, which is the synthesis half and without which this only separates the findings; the York split re-checked standalone; and **four source checks --- if P9's principle were not stated over a null congruence, or `I3`'s \$\textbackslash\{\}sigma\$ not the extrinsic curvature's trace-free part, the whole reading would be mine rather than the corpus's**
  \emph{Bound:} **scope: NOT claimed that r2505 erred --- its vacuum-hypothesis finding is correct, is the valuable half, and is untouched. Not claimed the two shears are unrelated: a leaf-adapted congruence's optical shear contains a projection of \$\textbackslash\{\}sigma\_\{ij\}\$ plus derivative terms.  This is the corpus's named failure class for the third time this month --- branch-point/seam (c54.197), r2494's four objects, now two shears. A vein's DARK half is where a local negative gets globalised; it is equally where a global theorem gets localised onto whatever wears the same name.**
 \ \emph{Run:} \texttt{python3 receipts/L174\_general\_matter\_dynamics/I6\_two\_objects\_one\_word\_the\_optical\_shear\_is\_not\_the\_ADM\_shear.py}
-\item[\label{rcpt:I8_no_sweep_reaches_the_stratum_and_the_theorem_says_so}\texttt{I8\_no\_sweep\_reaches\_the\_stratum\_and\_the\_theorem\_says\_so}]\hfill\textsf{[OK]}\\
+\item[\label{rcpt:I8_no_sweep_reaches_the_stratum_and_the_theorem_says_so}\textbf{}\quad\texttt{I8\_no\_sweep\_reaches\_the\_stratum\_and\_the\_theorem\_says\_so}]\hfill\textsf{[OK]}\\
 \textit{thm:bound} \ (NO sweep-subgroup reaches the unworked stratum --- the theorem quantifies over every subgroup H, and composing sweeps moves further INSIDE the reducible sector, not toward the wall). 
 \emph{Computes:} asserts thm:bounds quantifier and one-line proof at source, cor:radiations exclusion, P3s three hinges, and cor:walls handoff (13 checks)
  \emph{Bound:} NOT-A-PAPER-CLAIM --- restates what L-174 (1) actually owes
 \ \emph{Run:} \texttt{python3 receipts/L174\_general\_matter\_dynamics/I8\_no\_sweep\_reaches\_the\_stratum\_and\_the\_theorem\_says\_so.py}
-\item[\label{rcpt:I9_the_stratum_evolves_by_ordinary_GR_at_linear_order}\texttt{I9\_the\_stratum\_evolves\_by\_ordinary\_GR\_at\_linear\_order}]\hfill\textsf{[OK]}\\
+\item[\label{rcpt:I9_the_stratum_evolves_by_ordinary_GR_at_linear_order}\textbf{}\quad\texttt{I9\_the\_stratum\_evolves\_by\_ordinary\_GR\_at\_linear\_order}]\hfill\textsf{[OK]}\\
 \textit{cor:wall} \ (the exhibition at linear order: data with sigma\textasciicircum{}TT nonzero evolves by ordinary GR on the de Sitter leaf in closed form, with the momentum constraint CONSERVED and the count of two arriving from the evolution). 
 \emph{Computes:} solves the conformal-time mode equation exactly, asserts both polarisation tensors trace-free transverse and constant, and asserts cor:walls handoff at source (11 checks)
  \emph{Bound:} NOT-A-PAPER-CLAIM --- closes L-174 (1) at linear order; nonlinear remains
 \ \emph{Run:} \texttt{python3 receipts/L174\_general\_matter\_dynamics/I9\_the\_stratum\_evolves\_by\_ordinary\_GR\_at\_linear\_order.py}
-\item[\label{rcpt:P1_the_petrov_interval_is_complete_because_the_substrate_is_doubly_ruled}\texttt{P1\_the\_petrov\_interval\_is\_complete\_because\_the\_substrate\_is\_doubly\_ruled}]\hfill\textsf{[OK]}\\
+\item[\label{rcpt:P1_the_petrov_interval_is_complete_because_the_substrate_is_doubly_ruled}\textbf{}\quad\texttt{P1\_the\_petrov\_interval\_is\_complete\_because\_the\_substrate\_is\_doubly\_ruled}]\hfill\textsf{[OK]}\\
 \textit{sec:petrov} \ (the ranges every-algebraic-type claim is CORRECT and the reason is that the substrate is DOUBLY RULED --- a cut inherits both rulings (Type D) or neither (Type I), never exactly one, and II/III are the exactly-one cases). 
 \emph{Computes:} asserts P9s claim and its named range, that Type II/III appear zero times, P0s doubly-ruled statement, and that doubly-ruled appears zero times in P9 (18 checks)
  \emph{Bound:} NOT-A-PAPER-CLAIM --- supplies a missing completeness argument, routed
 \ \emph{Run:} \texttt{python3 receipts/L204\_physics\_reach/P1\_the\_petrov\_interval\_is\_complete\_because\_the\_substrate\_is\_doubly\_ruled.py}
-\item[\label{rcpt:P09_the_wall_is_not_the_loss_of_symmetry}\texttt{P09\_the\_wall\_is\_not\_the\_loss\_of\_symmetry}]\hfill\textsf{[OK]}\\
+\item[\label{rcpt:P09_the_wall_is_not_the_loss_of_symmetry}\textbf{P9R9}\quad\texttt{P09\_the\_wall\_is\_not\_the\_loss\_of\_symmetry}]\hfill\textsf{[OK]}\\
 \textit{cor:wall / cor:radiation / thm:range \ensuremath{\cdot} sec:chirality} \ (**THE RANGE'S BOUNDARY IS NOT THE LOSS OF CONTINUOUS SYMMETRY, AND THE PAPER'S OWN BEYOND-THE-WALL EXEMPLAR IS THE WITNESS.** ** THE TYPE-N PLANE WAVE HAS FIVE KILLING VECTORS AND IS VACUUM ** -- more continuous symmetry than Schwarzschild's four, and no matter at all -- so BOTH readings cor:wall gives of the boundary are falsified by the geometry cor:radiation sends beyond it. DERIVED HERE: (1) for ds\textasciicircum{}2 = 2 du dv + H du\textasciicircum{}2 + dx\textasciicircum{}2 + dy\textasciicircum{}2 the ansatz xi\_f = f\textasciicircum{}a(u) d\_a - (fdot.x) d\_v is Killing **iff fdd = A f, A = [[h+,hx],[hx,-h+]]**, every other component of Lie\_xi g vanishing identically -- a 4-dim solution space plus d\_v = FIVE, checked on a TURNING (chiral) profile with Ricci = 0; (2) **[xi\_f, xi\_g] = W(f,g) d\_v with dW/du = 0 on shell -> the algebra is the 5-dim HEISENBERG algebra**, derived algebra the 1-dim centre; (3) **the orbits are 3-dim and NULL** (no Killing vector has a d\_u component; g(d\_v,d\_v) = 0); (4) **so(5,1)'s unipotent radical is ABELIAN** (K\_i = M\_0i + M\_5i commute pairwise, K\textasciicircum{}3 = 0), so no Heisenberg algebra of unipotent isometries embeds -- the wave's FULL algebra is not a sweep; (5) **but its abelian R\textasciicircum{}3 subalgebras DO embed**, so the plane wave SATISFIES thm:bound/thm:range's stated condition while cor:radiation places it beyond the wall -- **read literally the two are inconsistent**; (6) **the repair is thm:bound's OWN second clause**: the boundary is the loss of a symmetry whose ORBITS CAN CARRY A LEAF, the two criteria coinciding across every class the paper fills and coming apart exactly on the null orbits; (7) **and the chirality consequence runs in the construction's favour**: on the Gowdy form d\_x, d\_y are Killing and spacelike and the reflection x -> -x is an isometry iff g\_xy = 0, i.e. iff POLARIZED -- so the unpolarized turning wave is chiral and lies IN the reachable sector by P9's own ground. **Gravitational chirality is achieved INSIDE the range.** [borrowed from P9 / P11]). 
 \emph{Computes:} the Killing condition derived symbolically and reduced to the oscillator system; Ricci asserted zero on the turning profile; the Wronskian asserted constant on shell; the orbit asserted null; so(5,1) asserted 15-dimensional with the four K\_i asserted pairwise-commuting and nilpotent; and the Gowdy reflection condition asserted equivalent to Q = 0
  \emph{Bound:} ** THIS CHANGES A CHARACTERISATION, NOT A RESULT. ** No reachable class, filling, or vacuum kernel moves; the Z\_2 identification (graviton helicity and fermion gamma\textasciicircum{}5 as one orientation parity) is P11's and is untouched. **And the first chiral member of the range is NAMED, not built** -- the cut constructed exactly is the polarized, achiral one

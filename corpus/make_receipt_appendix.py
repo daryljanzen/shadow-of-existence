@@ -212,6 +212,35 @@ def one_state(s):
     return s[:i].rstrip().rstrip(';,.') if i > 0 else s
 
 
+
+NUMBERS = {}
+
+
+def number_map(rows):
+    """stem -> 'P3R7'.  A receipt is numbered BY ITS HOME PAPER, in INDEX order,
+    so a receipt borrowed into another paper's appendix keeps one number
+    everywhere.  Numbering by position in the appendix it appears in would give
+    the same receipt a different number in each paper that cites it.
+
+    ** The number is a RENDERING, not a key. **  Nothing stores it: `\rcpt{}`
+    still takes the stem and links to `rcpt:<stem>`, so inserting a receipt
+    renumbers its paper's display and breaks no reference anywhere."""
+    # ** The home is the receipt's DIRECTORY, not the index's `paper` field. **
+    # The pilot on P3 found that field is not a key: it holds compound values
+    # ('P3 / P5 / P8 / P9'), sixty-six em-dashes, the deprecated `p0`, and in one
+    # row a register id.  Numbering by it produced 'P3 / P5 / P8 / P9R1'.  The
+    # directory is a filesystem fact and the prefix gate already enforces it.
+    seen, out = {}, {}
+    for r in rows:
+        m = re.match(r'P(\d+)_', (r.get('path') or ''))
+        if not m or r['stem'] in out:
+            continue
+        home = 'P%d' % int(m.group(1))          # P03_... and P3 are one paper
+        seen[home] = seen.get(home, 0) + 1
+        out[r['stem']] = '%sR%d' % (home, seen[home])
+    return out
+
+
 def emit(rows, scope, out):
     title = "Appendix R\\quad Computational Receipts" if scope=='corpus' else "Appendix R\\quad Computational Receipts"
     L=[]
@@ -224,7 +253,9 @@ def emit(rows, scope, out):
     for r in rows:
         stem_tex = tex_escape(r['stem'])
         st = 'OK' if '✔' in r['status'] else tex_escape(r['status'])
-        L.append("\\item[\\label{rcpt:%s}\\texttt{%s}]\\hfill\\textsf{[%s]}\\\\" % (r['stem'], stem_tex, st))
+        rn = NUMBERS.get(r['stem'], '')
+        L.append("\\item[\\label{rcpt:%s}\\textbf{%s}\\quad\\texttt{%s}]"
+                 "\\hfill\\textsf{[%s]}\\\\" % (r['stem'], rn, stem_tex, st))
         L.append("\\textit{%s} \\ (%s). %s" % (tex_escape(r['label']), tex_escape(one_state(r['claim'])), ''))
         L.append("\\emph{Computes:} %s" % tex_escape(one_state(r['computes'])))
         if r['bound']:
@@ -237,6 +268,10 @@ if __name__=='__main__':
     scope, out = sys.argv[1], sys.argv[2]
     idx = os.path.join(os.path.dirname(__file__),'..','receipts','INDEX.md')
     rows = parse_index(idx)
+    # Built from the WHOLE index before any scope filter, so a borrowed row
+    # resolves to its home paper's number rather than to nothing.
+    NUMBERS.clear()
+    NUMBERS.update(number_map(rows))
     if scope!='corpus':
         own = [r for r in rows if r['paper']==scope]
         # cross-paper markers: include rows this paper's own source actually cites
