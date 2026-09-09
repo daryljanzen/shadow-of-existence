@@ -39,9 +39,6 @@ EST = {
         'isometry-realised on the compact face, and it remains unbuilt -- the major undertaking any geometric '
         'gauge-matter route would first have to complete. TRIP-WIRE: forcing the gauge group forces the Higgs '
         'representation with it.'),
-    'PO-41': ('what is at the head of the genealogy', 1, 1, 5, None,
-        'r4517 OPENED as PO-40s residue, and it is a question about the bead rather than about entropy. WHAT IS FIXED: the genealogy TERMINATES -- entropy per baryon rises by a lap-independent 6.4 k_B at every peak and is bounded below, so the chain is at most about 1.8e9 laps and there IS a first universe, whose inherited datum has no antecedent and is owed. THE QUESTION: a universe whose r=0 is not a parents branch point is a bead whose collapse leg has no ambient, and whether the bead construction admits one is a question about thm:bead and the seam. BOTH ANSWERS BITE: if it admits such a bead the head is exhibited; if it does not, the genealogy must terminate and cannot terminate, and something in the picture has to give -- a larger result than either branch of PO-40. DISCHARGED BY: a demonstration either way, worked on the bead theorem rather than argued from the entropy monotone, which is spent.',
-        ),
     'PO-30': ('the curves own dynamics -- A GENERATIVE LAW FOR THE MATTER CONTENT', 1, 1, 6, None,
         'r3882: P08 sec:open states it and no register row carried it. The bend-density identity is EXACT but it '
         'states WHAT the bend is, not WHY a cut bends as it does: the slicing operator is KINEMATIC, generating the '
@@ -86,18 +83,9 @@ EST = {
     'PO-24': ('whether the tilt displacement is a tension', 1, 1, 5, None,
         'r4505 NARROWED -- the computation is done and the verdict is neither of the two expected. A refit of amplitude and tilt absorbs the signature almost entirely in SHAPE, 0.26 per bin over the 185-bin ceiling and less the higher one looks, because over a restricted high-ell range a Gaussian in ell is well approximated by a power law. THE ABSORPTION COSTS a tilt shift of -0.0304 against sigma = 0.00323 from the same covariance that scores the fit, so the signature does not vanish -- it relocates into an inferred parameter. THE EARLY-ISW LEG IS ANSWERED AND SMALL: 0.77 sigma per bin over 700-1296 against 3.49 over 100-1296, so the term the row named as one of two things the answer turns on does not reach the multipoles in question. BOUNDS THAT TRAVEL WITH IT: the shape residual IS an upper bound; the tilt displacement is NOT, since more parameters would share it; and the magnitude is not robust to a factor of three between the data-shape and in-source routes, stated at the weaker bound with closing the factor named as work not done. DISCHARGED BY: whether a displacement of that size in the inferred tilt is a tension, which is a joint fit and is the whole of what remains.',
         ),
-    'PO-23': ('the ultraviolet definition of the mode sums — ATTEMPT IT', 1, 1, 4, None,
-        'r3809: NEVER ATTEMPTED, which is the whole of its state. P07 names three parts to "the definition of the '
-        'interacting tower" and TWO ARE SETTLED: the spectrum of Gamma-hat is computable branch by branch, and it is '
-        'bounded below because the full inverse-square coefficient is positive wherever the metric is non-degenerate. '
-        'The third is the UV definition of the sums. The problem space is narrower than the general one by four '
-        'separately-closed items: the self-adjoint boundary CONDITION is closed parameter-free and holds for either '
-        'ordering; the ORDERING is external, an epistemic gap of one physical datum rather than a residual freedom of '
-        'the quantization; the classical nonlinear Lambda>0 regime is settled, background an attractor and the '
-        'propagating sector ghost-free to all orders; and the 3/4 threshold has two derivations sharing no step '
-        '(r3807), so it is fixed by the operator own singularity structure and is not a quantisation artefact. '
-        'And the background is a FIXED maximally symmetric geometry with a SINGLE scale, not a general curved one. '
-        'P07 refuses the easy exit: "the shared character of the wall does not settle it."'),
+    'PO-23': ('the spectral zeta of the deparametrized tower, and whether zeta(0) vanishes', 1, 1, 5, None,
+        'r4525 OBJECT RESTATED. The general wall does not reach: P10 fixes the deparametrized content as a tower of time-dependent oscillators, one per tensor harmonic, on a compact section -- a countable degree-of-freedom system and NOT a field theory on a background. The obstruction usually invoked for a graviton sector is the non-renormalizability of perturbative quantum gravity, which is about counterterms for a field theory, and the constraint here is already solved. So the row is not the QFT-existence question it read as. WHAT IT IS: whether a divergent sum over a known discrete spectrum admits a definition, which on a compact section is the spectral zeta function -- carrying exactly ONE ambiguity whose coefficient is zeta(0). Vanishing means no free constant; non-vanishing means exactly one. THE WHOLE RESIDUAL ULTRAVIOLET FREEDOM IS ONE NUMBER, and the no-free-constants claim is therefore a PREDICTION that it vanishes. DISCHARGED BY: that computation -- with two real complications, that the oscillators are time-dependent so the regularization must commute with the evolution, and that they are coupled so the free sum is not the answer.',
+        ),
     'PO-15': ('the ordering — EXHAUST the selection candidates', 1, 1, 3, None,
         'r3015: THE STEP IS AN EXHAUSTION. The thermal state is eliminated (it selects the Friedrichs extension, which is defined FROM the form an ordering produces). Enumerate what else could select one — the substrates symmetry, the seams characteristic structure, the deparametrization — and either find one or state the choice is external WITH the enumeration as evidence'),
     'PO-14': ('the unbuilt chiral member — THE BUILD', 1, 1, 5, None,
@@ -165,12 +153,12 @@ KIND = {'PO-13': 'BUILD', 'PO-36': 'READ', 'PO-33': 'BUILD',   # r4145: was READ
 
 # ** PO-23 added r3809: the ultraviolet definition of the mode sums, the one part of P07's
 # three-part 'definition of the interacting tower' that is neither settled nor attempted. **
-ORDER = ['PO-13', 'PO-24', 'PO-41', 'PO-36', 'PO-30', 'PO-25', 'PO-26', 'PO-31', 'PO-23', 'PO-15', 'PO-14', 'PO-17', 'PO-18', 'PO-19', 'PO-20']
+ORDER = ['PO-13', 'PO-24', 'PO-36', 'PO-30', 'PO-25', 'PO-26', 'PO-31', 'PO-23', 'PO-15', 'PO-14', 'PO-17', 'PO-18', 'PO-19', 'PO-20']
 GROUP = {'PO-13': 'D', 'PO-14': 'A', 'PO-15': 'C', 'PO-16': 'D',
          # ** r3095: the four brought in from p0's frontiers and the field ledgers.  PO-17 and
          # PO-19 are substrate geometry; PO-18 is the constant ledger; PO-20 is analysis. **
          'PO-17': 'E', 'PO-18': 'E', 'PO-19': 'E', 'PO-20': 'E',
-         'PO-23': 'C', 'PO-24': 'D', 'PO-25': 'E', 'PO-26': 'A', 'PO-27': 'A', 'PO-29': 'E', 'PO-31': 'D', 'PO-30': 'A', 'PO-41': 'B', 'PO-36': 'D', 'PO-34': 'E'}
+         'PO-23': 'C', 'PO-24': 'D', 'PO-25': 'E', 'PO-26': 'A', 'PO-27': 'A', 'PO-29': 'E', 'PO-31': 'D', 'PO-30': 'A', 'PO-36': 'D', 'PO-34': 'E'}
 GNAME = {'A': 'the matter sector', 'B': 'the matter sector', 'C': 'the quantum sector',
          'D': 'the cosmology', 'E': 'the substrate geometry'}
 
