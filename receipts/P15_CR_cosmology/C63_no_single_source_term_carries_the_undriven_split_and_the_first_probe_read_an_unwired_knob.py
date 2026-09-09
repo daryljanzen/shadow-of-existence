@@ -7,9 +7,26 @@ posed --- Psi term, integrated term, or Doppler term --- has the answer NONE OF 
 sets the undriven peak position is common to all three sources.*
 
 ** WHAT WAS ASKED.  ** Undriven, this arm's first peak sits at $1.1273$ of the acoustic scale and the
-control's at $0.9158$ --- opposite sides of the adiabatic $k r_s = \pi$, with both arms carrying the
-same acoustic scale to a part in four hundred and `qscan` returning $Q=1$ on both.  ** The oscillator
-is therefore excluded and the split is in the PROJECTION **, which is where this receipt looks.
+control's at $0.9158$ --- opposite sides of the adiabatic $k r_s = \pi$, with `qscan` returning $Q=1$
+on both.  ** The oscillator is therefore excluded and the split is in the PROJECTION **, which is
+where this receipt looks.
+
+** ⛭ AND "THE SAME ACOUSTIC SCALE ON BOTH ARMS" NEEDED PINNING, BECAUSE THE TWO READINGS DIFFER BY
+6.3% AND BY 0.07% (r4562).  ** The row carries this premise, and the phrase is ambiguous exactly
+where it matters:
+
+                          CR arm      control     ratio
+      r_s   (sound horizon)   135.46 Mpc  144.53 Mpc   0.9372   ** 6.3% APART **
+      D_M                     13005 Mpc   13865 Mpc    0.9380     6.2% apart
+      l_A = pi D_M / r_s       301.6       301.4       1.0007     1 part in 1500
+
+*** => TRUE of the ANGULAR scale $\ell_A$, FALSE of the PHYSICAL sound horizon $r_s$. ***  *The
+$\ell_A$ match is a CONSPIRACY and not a shared scale: $r_s$ and $D_M$ each differ by about 6.3% and
+the RATIO survives.*  ⌗ The angular reading is the operative one here --- every peak position in this
+receipt is measured in units of each arm's OWN $\ell_A$ --- so the measurements are unaffected; what
+was wrong was leaving a reader to pick a reading where the two differ by a factor of ninety.
+  ⌗ *Written into this receipt at r4558 in the ambiguous form and pinned at r4562, by this line, on
+    its own text.*
 
 ** THE MEASUREMENT.  ** `ACOUSTIC_two_arm.py`, `NODRIVE=1`, one source term removed at a time.
 
@@ -21,6 +38,18 @@ is therefore excluded and the split is in the PROJECTION **, which is where this
 
 *** => THE SPLIT NEVER COLLAPSES.  Removing any one term leaves 23-29%, and removing the INTEGRATED
 term WIDENS it. ***
+
+** ⛭ AND THE DIFFUSION DAMPING IS EXCLUDED TOO (r4562).  ** `DAMPX=0` removes the damping envelope
+from the source entirely --- `Dmp = exp(0) = 1` --- on both arms at once, which is the natural next
+suspect once the source terms are out, since the two arms carry different diffusion histories
+($r_D = 7.64$ Mpc against $7.10$ Mpc at their visibility peaks).
+
+      damping OFF  DAMPX=0    1.1539    0.9157    1.2601     26.0%
+
+*The split does not merely survive the damping's removal, it WIDENS.*  ⇒ ** So it is carried neither
+by any one source term nor by the diffusion envelope. **  ⌗ `DAMPX` is a line-of-sight diagnostic
+only, declared as such at r4494 --- which is the right knob here precisely because these numbers are
+measured on the line-of-sight path.
 
 ⌗ ** AND THE "OPPOSITE SIDES OF $k r_s = \pi$" FRAMING IS A PROPERTY OF THE BASELINE, NOT OF THE
 SPLIT. **  With the monopole removed BOTH arms sit above $\pi$ --- $1.4721$ and $1.1547$ --- and the
@@ -59,8 +88,14 @@ peaks is unchanged **: 340, 316, 332, 444.
     is untouched here.
   · ** Only SINGLE removals were run. **  That no one term carries the split does not exclude a
     cancellation between two of them, which is a different measurement and is not made here.
-  · ** The next discriminator is named and NOT run: ** the projection kernel rather than the source
-    --- the visibility function and the damping scale, which differ between the arms.
+  · ** The damping half of the projection kernel IS now run and excluded (r4562); the VISIBILITY half
+    is not. **  The arms' visibility peaks sit at $\eta = 449.59$ and $280.75$ with FWHM $40.4$ and
+    $37.8$ Mpc --- a 60% difference in epoch against a 7% difference in width --- and that asymmetry
+    is the named, unrun candidate.
+  · ** The integration start is NOT a free knob and is not varied here. **  The arms start at
+    $z=6761$ and $z=3\times10^{7}$, but $r_s$ integrates FROM the start, so moving `ZSTART` moves the
+    acoustic scale itself: a trial run took $\ell_A$ from $301.6$ to $172.8$.  *Changing it would
+    change two things at once, which is the error this receipt's own first probe was built to avoid.*
 
 ** COMPUTES: the undriven first-peak position $\ell_1/\ell_A$ on both arms, under each single
 removal of a line-of-sight source term.  *** At the instrument's own default cosmology --- $H_0=73.0$,
@@ -77,7 +112,8 @@ of looking at my own directory would have shown.
 
 This receipt runs at `LMAXL=520`, where all eight first peaks reproduce the full-resolution values
 EXACTLY (340/316/332/444 and 276/244/268/348 at `LMAXL=1300`); the reduction is a cost measure and
-is verified, not assumed.  Written r4558.  Stated for reversal.
+is verified, not assumed.  Written r4558; the acoustic-scale premise pinned and the damping
+excluded at r4562.  Stated for reversal.
 """
 import os
 import re
@@ -185,6 +221,46 @@ def main():
           f'the split is still {rc_no/rl_no - 1:.1%}',
           rc_no > 1 and rl_no > 1 and rc_no / rl_no - 1 > 0.22)
 
+    # ============================================================ (3) the damping is excluded too
+    print()
+    print('  ' + '=' * 74)
+    print('  PART 3 -- ⛭ AND IT IS NOT THE DIFFUSION DAMPING EITHER')
+    print('  ' + '=' * 74)
+    nd = {}
+    geo = {}
+    for arm in ('cr', 'lcdm'):
+        l1, out = run(arm, (('DAMPX', '0'),))
+        nd[arm] = l1
+        g = re.search(r'D_M = (\d+) Mpc\s+r_s = ([\d.]+) Mpc\s+l_A = pi D/r_s = ([\d.]+)', out)
+        geo[arm] = tuple(float(x) for x in g.groups()) if g else None
+        print(f'    {arm:<4} DAMPX=0  l_1 = {l1}   (damped: {got[(arm, ())]})')
+    rc_nd, rl_nd = nd['cr'] / L_A['cr'], nd['lcdm'] / L_A['lcdm']
+    check(f'⓷ with the diffusion damping removed ENTIRELY on both arms the split does not collapse '
+          f'-- it WIDENS to {rc_nd/rl_nd - 1:.1%} ({rc_nd:.4f} vs {rl_nd:.4f}) -- so it is carried '
+          f'neither by any one source term nor by the damping envelope',
+          rc_nd / rl_nd - 1 > 0.22)
+
+    # ============================================================ (4) which "acoustic scale"
+    print()
+    print('  ' + '=' * 74)
+    print('  PART 4 -- ⌗ WHICH "ACOUSTIC SCALE" THE ROW\'S PREMISE MEANS')
+    print('  ' + '=' * 74)
+    (dc, rc_s, lac), (dl, rl_s, lal) = geo['cr'], geo['lcdm']
+    print(f"    {'':<22} {'CR':>12} {'control':>12} {'ratio':>9}")
+    print(f"    {'r_s (sound horizon)':<22} {rc_s:>12.2f} {rl_s:>12.2f} {rc_s/rl_s:>9.4f}")
+    print(f"    {'D_M':<22} {dc:>12.0f} {dl:>12.0f} {dc/dl:>9.4f}")
+    print(f"    {'l_A = pi D_M / r_s':<22} {lac:>12.1f} {lal:>12.1f} {lac/lal:>9.4f}")
+    check(f'⓸ the ANGULAR scale matches to a part in {1/abs(lac/lal - 1):.0f} -- better than the '
+          f'"part in four hundred" the premise claims', abs(lac / lal - 1) < 1 / 400)
+    check(f'⓸ᵇ ⛭ but the PHYSICAL sound horizon does NOT: r_s differs by '
+          f'{abs(rc_s/rl_s - 1):.1%}, ninety times the angular mismatch, so "the same acoustic '
+          f'scale on both arms" is TRUE of l_A and FALSE of r_s and must say which',
+          abs(rc_s / rl_s - 1) > 0.05)
+    check(f'⓸ᶜ and the l_A match is a CONSPIRACY rather than a shared scale: D_M differs by '
+          f'{abs(dc/dl - 1):.1%} too, within {abs(abs(dc/dl - 1) - abs(rc_s/rl_s - 1)):.2%} of r_s\'s '
+          f'own difference, so the RATIO survives while neither part does',
+          abs(abs(dc / dl - 1) - abs(rc_s / rl_s - 1)) < 0.01)
+
     print()
     print('  ' + '=' * 74)
     if FAILED:
@@ -192,9 +268,14 @@ def main():
         for f in FAILED:
             print(f'      {f[:110]}')
         return 1
-    print('  ⛭ NO SINGLE SOURCE TERM CARRIES THE SPLIT.  The answer to "Psi, integrated, or')
-    print('    Doppler" is NONE OF THE THREE, and the next discriminator is the projection')
-    print('    kernel -- the visibility function and the damping scale -- not the source.')
+    print('  ⛭ NO SINGLE SOURCE TERM CARRIES THE SPLIT, AND NEITHER DOES THE DAMPING.  The')
+    print('    answer to "Psi, integrated, or Doppler" is NONE OF THE THREE, and DAMPX=0 widens')
+    print('    the split rather than closing it.  ** What is left of the projection kernel is the')
+    print('    VISIBILITY: the arms last-scatter at eta = 449.6 and 280.8, a 60% difference in')
+    print('    epoch against a 7% difference in width. **  That is the named, unrun candidate.')
+    print('  ⌗ And the premise is pinned: "the same acoustic scale" is TRUE of l_A (1 part in')
+    print('    1507) and FALSE of r_s (6.3% apart) -- a conspiracy of two ~6% differences, not')
+    print('    a shared scale.')
     print('  ' + '=' * 74)
     print()
     return 0
