@@ -53,8 +53,10 @@ THE DERIVATION.
   12 N_1).  At N_0 = 2 that is 2/120 = 1/60.  ** Two routes sharing only the physics
   and not the algebra. **
 
-BOUNDS, and they are the reason this is offered as a discharge to be accepted or
-rejected rather than banked.
+BOUNDS.  ** The result is STATED, and it is reversible on the second of them: if the
+physical-mode count is the wrong object, the coefficient goes with it. **  A result
+held back for acceptance is not a weaker claim than a stated one -- it is a deferral,
+and this file carried one until r6417.
 
   (1) ** Gilkey's a_2 is IMPORTED. **  The tensor identity that extracts C^2 from it
       is verified here; the formula itself is not derived here and owes its citation
