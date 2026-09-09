@@ -198,9 +198,9 @@ structure. **A one-hinge truncation is excluded not as disfavoured but as carryi
 
 **⑦ `p0` — the one scale, and the Standard Model's own shape read off a circle.**
 *This is the paper to sit with.* Maximal symmetry worn seven ways, and two of them are the reason to make the
-trip. **The gravitational–cosmological–quantum sector spends no free dimensionless constant:** $c$ is the
+trip. **The gravitational–cosmological–quantum sector's *geometric* constants spend no free dimensionless constant:** $c$ is the
 null-ruling slope, $G$ appears only as $GM/c^2$ with the mass fixed to Nariai by $\Lambda$ —
-**$\Lambda G^2M^2/c^4=1/9$** — and $\hbar$ enters only at the branch point, scaled by $\Lambda$ alone.
+**$\Lambda G^2M^2/c^4=1/9$** — and $\hbar$ enters only at the branch point, scaled by $\Lambda$ alone. *(The graviton tower's mode sums do spend one, computed at `PO-23`: a regularisation rather than a gauge, and the audit above does not reach it.)*
 **And the waist:** the power of a point with respect to it **is the square of the point's height**, so
 *Euclid III.36 and the null condition are the same equation, the minus sign in the metric doing all the work* —
 which makes the double ruling and the classical power law **one statement, set by $\alpha$ and nothing else**.

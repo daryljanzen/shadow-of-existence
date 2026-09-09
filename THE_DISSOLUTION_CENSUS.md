@@ -325,7 +325,7 @@ likely owed in this process as well."** **It is, and the contrast is exact.***
 | **yield on Phase 8** | **five enrichments** | ***ONE promotion out of six results*** |
 
 **⌗ THE R2 PASS, RUN ON ALL SIX PHASE-8 RESULTS — and the asymmetry is the finding:**
-*• ***`Q3` — YES, and it is the only one.*** *"One scale, no free dimensionless constants" was held by an
+*• ***`Q3` — YES, and it is the only one.*** *"One scale, no free dimensionless constants" — of the GEOMETRIC ledger; the graviton tower's mode sums spend one, computed at `PO-23` — was held by an
 **adversarial hunt returning an audited exhaustive zero** — a claim standing on a **searched absence**. The
 projective reading replaces it: a Cayley–Klein geometry **carries its scale as its only free constant, by
 construction.*** ***A searched absence becomes a structural requirement, which is exactly the movement `R2`
