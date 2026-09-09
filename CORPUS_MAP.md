@@ -146,6 +146,39 @@ sources: [cowork, chat]
 
 
 
+### Revision r6415 — 2026-09-09 (node 64). **`PO-43`'s coefficient attempted: the tower's Weyl-squared coefficient is exactly twice a real scalar's, $1/60$ in units of $1/(4\pi)^{2}$.**
+
+**⛭ THE LOAD-BEARING STEP IS THE CORPUS'S OWN, NOT AN IMPORT.** *`P10` describes each mode as "a
+harmonic oscillator with **time-dependent mass $a^{3}$ and frequency $\mu_n/a$**". A minimally coupled
+massless scalar on FRW reduces to $\tfrac12\int a^{3}[\dot\varphi^{2}-(k^{2}/a^{2})\varphi^{2}]$ ---
+mass $a^{3}$, frequency $k/a$. ***Those match term for term.*** So the tower is two minimally coupled
+massless scalar degrees of freedom carrying the TT tensor spectrum, which is also the classic
+Grishchuk statement about gravitational waves on FRW.*
+
+**⛭⛭ AND THE COEFFICIENT IS A PROPERTY OF THE FIELD CONTENT, NOT THE BACKGROUND.** *That is why it can
+be fixed without redoing the spectrum on a sheared background: **what needed second order was the
+invariant, and r6413 supplied it.** The two revisions are one calculation --- what it multiplies, then
+what multiplies it.*
+
+**⌗ THE RESULT.** *For one real scalar the entire $C^{2}$ content of Gilkey's $a_2$ sits in
+$2\,\mathrm{Riem}^{2}-2\,\mathrm{Ric}^{2}$ --- ***independent of the coupling $\xi$***, which is why
+the answer needs none --- and that decomposes as $3C^{2}-E_{4}$, **verified algebraically on 200 random
+Riemann tensors to $2\times10^{-15}$** with the Weyl trace checked to vanish. So $c_{\rm
+scalar}=3/360=1/120$ and $c_{\rm tower}=1/60=1/(960\pi^{2})$. Cross-checked from the standard anomaly
+$c=(N_0+6N_{1/2}+12N_1)/120$ at $N_0=2$ --- **two routes sharing the physics and none of the algebra.***
+
+⚠ **THREE BOUNDS, AND THE SECOND IS WHERE THIS IS ATTACKABLE.** *(1) **Gilkey's $a_2$ is imported**,
+cited not derived; the identity that extracts $C^{2}$ from it is verified here. (2) ***This is the
+physical-mode count.*** A covariant spin-2 computation gauge-fixes and carries ghosts and returns a
+different number for a different object; `P10` **solves** the constraints rather than gauge-fixing
+them, so the physical-mode count is the right one for the object it defines --- ***an argument from
+what the construction does, and not a theorem***. (3) The normalisation by which $a_2$ enters
+$\Gamma_{\rm div}$ is convention-dependent; **the convention-free content is the ratio: exactly two.**
+
+⌗ *Offered as a discharge **to be accepted or rejected**, not banked. The row asked for a number and
+there is now a number with its derivation, its cross-check, and the one place it can be argued with
+named in the same breath.*
+
 ### Revision r6413 — 2026-09-09 (node 64). **`PO-43`: the invariant the coefficient multiplies is computed, and it is not the shape `P10` states.**
 
 **⌗ THE DISCHARGE NAMES A COEFFICIENT, so the invariant it multiplies is the first thing to fix.**
