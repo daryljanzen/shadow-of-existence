@@ -146,6 +146,42 @@ sources: [cowork, chat]
 
 
 
+### Revision r6435 — 2026-09-09 (node 64). **The counterterm room surveyed: `PO-43`'s two replacement questions are one answered and one not independent, and the room's remaining openings drop from three to two.**
+
+**⌗ `r4545` SAID "TWO INDEPENDENT QUESTIONS REPLACE IT". NEITHER SURVIVES AS STATED.**
+
+**⛭ ⓵ THE CONNECTED-ISOMETRY QUESTION IS ANSWERED --- AND BY A ROW STRUCK TWO REVISIONS AFTER `r4545`
+NAMED IT.** *`PO-44`'s own strike note reads that the tower "IS chirally capable, its two helicities being
+inequivalent representations of the connected isometry group exchanged only on the disconnected
+component". **`PO-43` still carried the question because `PO-44` came later.*** ⌗ *The mechanism is
+exhibited rather than taken: $S^{3}=\mathrm{SU}(2)$, connected isometry
+$(\mathrm{SU}(2)_{L}\times\mathrm{SU}(2)_{R})/\mathbb{Z}_{2}$, transverse-traceless rank two carrying
+$|j_{L}-j_{R}|=2$, so each level is $(j,j+2)\oplus(j+2,j)$ with $2j+1=n-1$ --- **whose dimensions sum to
+exactly $2(n-1)(n+3)$, `P10`'s own Peter--Weyl degeneracy, at every level checked**. The families are
+distinct irreducibles and the exchange is the **factor swap**, orientation-reversing. ⇒ ***So the parity-odd
+closure is the STATE's and not the geometry's***, which is what `PO-44` says and is not achirality.*
+
+**⛭⛭ ⓶ THE TOPOLOGICAL-TERMS QUESTION IS NOT INDEPENDENT.** *A topological term **contributes no field
+equation** --- `P10`'s own words of the Gauss--Bonnet combination --- so a coefficient multiplying one is
+not read off any dynamics, and its only remaining home is the **horizon entropy**. There the corpus has no
+position: `PO-32` closes the collapse face by absence of a bearer and states that `p0` "computes the number
+conditionally and declines", so **"the corpus is uncommitted on both faces"**. And `p0`'s `sec:ledger` says
+nothing of the class --- *topological*, *Gauss*, *Euler*, *field equation*: **zero occurrences**.*
+⇒ ***So it is the de~Sitter horizon-entropy question reached from the other side, and closes only when that
+one does.***
+
+**⛭⛭⛭ WHAT THAT DOES TO THE ROOM.** *With `PO-23` and `PO-43` both carrying values, **the counterterm
+room's remaining openings are two rather than three: the coupled mode-sum computation, and whether the
+de~Sitter horizon entropy has a referent** --- and the second was not previously counted as belonging to
+this room at all.*
+
+⌗ **PROPAGATED IN THE SAME TURN, which is the point.** *`P10` `sec:lock` now carries both statements beside
+the entry they bear on. ⚠ *And landing it exposed a rail nobody had run: adding receipts generates
+appendices, and `appendix_receipts_P15.tex` was **stale by five lines** from this session's earlier
+additions --- `check_appendix_current` caught it, the diff was checked against the gate's own warning that
+regenerating is not automatically right, and it was only my own new rows.* All six papers compile at zero
+undefined; both appendix rails match what their indices generate.*
+
 ### Revision r6433 — 2026-09-09 (node 64). **`PO-13`: the potential's half of the one-locus statement answered from the row's own named lead; a handoff written for a fresh head recovered from a branch; and a revision this line lost and got back.**
 
 **⌗ THE ROW NAMED ITS OWN LEAD AND NOBODY HAD FOLLOWED IT.** *`PO-13` asks for "a statement of what the
