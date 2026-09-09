@@ -150,7 +150,8 @@ def main():
     _papers = re.sub(r'\s+', ' ', ''.join(
         open(f, encoding='utf-8', errors='replace').read()
         for f in sorted(_glob.glob(os.path.join(ROOT, 'corpus', '*.tex')))
-        if not os.path.basename(f).startswith('appendix_')))
+        if not os.path.basename(f).startswith('appendix_receipts')
+        and not os.path.basename(f).startswith('appendix_')))
     for _hid, _phrase in (('233a615f2f', 'recalled rather than derived here'),
                           ('9921e78365', 'and no higher, and the paragraphs below lower it further')):
         check(f'⛭⛭ ⓷ {_hid} was the paper limiting itself AT {_AT_SWEEP}: "{_phrase[:56]}"',
