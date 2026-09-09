@@ -135,7 +135,7 @@ We exhibit the structure first in flat Friedmann--Lema\^itre minisuperspace, whe
 
 In that sector the quantization moreover closes \emph{without a free parameter}. The scale-factor Hamiltonian carries deficiency indices $(1,1)$ independently of operator ordering---the inverse-square coefficient at the origin attaining $\gamma=\tfrac14$ across the natural ordering family, strictly below the essential-self-adjointness threshold $\tfrac34$---so a single boundary condition at $a=0$ remains; and that point is not a generic half-line endpoint but the de~Sitter cosmological horizon, whose Hartle--Hawking thermal state, at the surface gravity $\kappa=1/\alpha$ the substrate itself fixes, selects the Friedrichs extension. The deficiency freedom is thereby not merely parametrized but closed, and closed without a free parameter: $\hbar$ enters the gravitational sector at the seam, scaled by $\Lambda$ alone. 
 
-With the tower coupled, the boundary coefficient is promoted to an operator straddling the threshold and the same thermal regularity supplies the condition fibre by fibre, so that what remains open is not the boundary condition but the \emph{definition of the interacting tower}. \emph{That is a different thing from a residual freedom in the quantization, and its shared character with every interacting field theory does not settle it}: the divergence is measured here rather than characterised---quartic, at a leading constant fixed by the propagating-component count rather than assumed---and it is carried as this programme's own open frontier. 
+With the tower coupled, the boundary coefficient is promoted to an operator straddling the threshold and the same thermal regularity supplies the condition fibre by fibre, so that what remains open is not the boundary condition but the \emph{definition of the interacting tower}. \emph{That is a different thing from a residual freedom in the quantization, and its shared character with every interacting field theory does not settle it}: the divergence is measured here rather than characterised---quartic at a leading constant fixed by the propagating-component count rather than assumed; logarithmic at a coefficient the tower's own spectrum settles exactly; and, where the shear breaks the degeneracy among the quadratic invariants, one further counterterm whose Weyl-squared coefficient is twice a real scalar's---and it is carried as this programme's own open frontier. 
 
 The problem of time is thereby \emph{dissolved} as a category error, not solved by an addition to the formalism, in exactly the way the same ontological correction dissolves the inference that gravitational collapse completes in finite cosmic time~\cite{JanzenBHcausality}.
 \end{abstract}
@@ -478,6 +478,17 @@ dimensionful constant, absorbed into the one observed curvature with no bare-$\L
 split~\cite{JanzenGeometricCore}; and since $\ell_P$ is a gauge-combination rather than a second
 physical length, the cutoff is not smuggling a scale in either.
 
+\emph{The subleading term is measured on the same spectrum rather than estimated.} Written in the
+labels $m=n+1$ that carry $\mu^{2}=m^{2}-3$ and $d=2(m^{2}-4)$, the spectral zeta at the origin is
+$\zeta(0)=10$ \emph{exactly}---the binomial expansion terminating there, so the value is an identity
+and not an asymptotic estimate---and the zero-point sum's logarithmic coefficient is $\tfrac{39}{4}$,
+the $1/m$ term of $d\,\mu=2m^{3}-11m+\tfrac{39}{4}m^{-1}+\dots$, which a hard cutoff carrying no zeta
+function reproduces. \emph{And the scale factor does not enter it}: the free tower's frequencies are
+$\mu_{n}/a$, so $a$ factors out of the sum identically and the coefficient's independence of the
+expansion is exact rather than adiabatic---\emph{which is also why the coupled sector, and not a
+time-dependent free one, is where what remains
+lives}\rcpt{P10_the_scale_factor_factors_out_of_the_free_tower}.
+
 \emph{The structural remark is about the terms after it, and it is sharper than the leading case
 because their counterterms are not cosmological-constant terms.} Only the \emph{quadratic and
 logarithmic successors} carry the mass, which is to say only they renormalise masses and couplings; in
@@ -530,9 +541,12 @@ does not survive}: on a constant-curvature background terms of \emph{different} 
 \sqrt g$, $\int\!\sqrt g\,R$, $\int\!\sqrt g\,R^{2}$---are proportional as well, and they part
 company as soon as $a$ is not the de~Sitter $\cosh$, as the geometric layer's running Ricci scalar
 shows directly. \emph{So the place the degeneracy genuinely ends is not the scale factor but the shear.}
-The deficit \emph{is} $C^{2}$; an anisotropic shear of amplitude $\sigma$ over an isotropic expansion
-gives $C^{2}=4\sigma^{2}+O(\sigma^{4})$; and the propagating content of this tower is the
-transverse-traceless shear. \emph{So what remains is the tower's own shear, which is a calculation and
+The deficit \emph{is} $C^{2}$; for an anisotropic shear over an isotropic expansion the invariant is
+$C^{2}=2\sum_{i}(\dot\sigma_{i}+H\sigma_{i})^{2}$ at second order in the
+amplitude\rcpt{P10_the_weyl_invariant_at_second_order_carries_two_more_derivatives}---so it carries two
+derivatives more than the shear itself, and for a mode of frequency $\omega$ it grows as
+$\omega^{2}\sigma^{2}$, which is what makes it ultraviolet-sensitive at all; and the propagating
+content of this tower is the transverse-traceless shear. \emph{So what remains is the tower's own shear, which is a calculation and
 not a question about meaning}---entering at second order in the mode amplitude, with the sub-leading
 heat-kernel coefficients as its instrument. \emph{That calculation is run, and its answer is smaller
 than the question sounds}: for a transverse-traceless perturbation the first variation of the Ricci
@@ -544,7 +558,22 @@ structure.
 With the Gauss--Bonnet combination contributing no field equation, the three quadratic
 invariants leave $\int\!\sqrt g\,R^{2}$ and $\int\!\sqrt g\,C^{2}$, of which only the second is
 new: \emph{the shear therefore costs exactly one new counterterm, and it is the Weyl-squared
-one}\rcpt{S1_the_shear_needs_exactly_one_new_counterterm_and_my_own_count_was_one_too_many}. \emph{One
+one}\rcpt{S1_the_shear_needs_exactly_one_new_counterterm_and_my_own_count_was_one_too_many}.
+
+\emph{And its coefficient follows from what the tower is, without a second-order spectrum.} Each mode
+is a harmonic oscillator of mass $a^{3}$ and frequency $\mu_{n}/a$, which is term for term the
+reduction of a minimally coupled massless scalar on this background, so the tower is \emph{two} such
+degrees of freedom carrying the transverse-traceless spectrum. The $C^{2}$ coefficient is a property of
+the field content rather than of the background, which is why it is fixed without one: for a single real
+scalar the entire $C^{2}$ content of the second heat-kernel coefficient~\cite{Gilkey1975} sits in
+$2\,\mathrm{Riem}^{2}-2\,\mathrm{Ric}^{2}$---independently of the curvature coupling, which is why the
+answer needs none---and that combination is $3C^{2}-E_{4}$, giving $1/120$ in units of $(4\pi)^{-2}$ and
+therefore $\tfrac{1}{60}$ for the
+tower\rcpt{P10_the_weyl_squared_coefficient_is_twice_a_scalar}: \emph{exactly twice a real scalar's}.
+\emph{The count is of physical modes, and that is the reading on which the number stands}: the
+constraints here are solved rather than gauge-fixed, so no ghost sector enters and no covariant spin-2
+tabulation applies. The overall normalisation by which the coefficient enters a divergence is
+convention-dependent; the ratio is not. \emph{One
 caveat belongs in the statement rather than after it}: the dimension-four scalars also include the
 parity-odd Pontryagin density, which is not a curvature-squared invariant of the kind counted above
 and is a total derivative, but which is non-zero at second order for a \emph{circularly} polarised
@@ -602,6 +631,11 @@ D.~Janzen,
 \bibitem{JanzenAlgebroid}
 D.~Janzen,
 \emph{General relativity's constraint algebra as the symmetric-space structure of a de Sitter substrate}, companion paper (P12).
+
+\bibitem{Gilkey1975}
+P.~B.~Gilkey,
+\emph{The spectral geometry of a Riemannian manifold},
+J.~Diff.~Geom.~\textbf{10} (1975) 601--618.
 
 \bibitem{JanzenGeometricCore}
 D.~Janzen,
