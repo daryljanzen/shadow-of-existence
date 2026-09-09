@@ -4,66 +4,66 @@
 \small\noindent Each computation marked \rcptmarker\ in the text is verified by a runnable receipt in the \texttt{receipts/} directory that ships with this work; status \textsf{OK} = verified (traced, run, output matches the claim). This appendix is generated from the receipt index, not maintained by hand.\par\medskip
 \begingroup\renewcommand{\arraystretch}{1.25}
 \begin{description}
-\item[\label{rcpt:P13_A3_factorization}\textbf{P13R1}\quad\texttt{P13\_A3\_factorization}]\hfill\textsf{[OK]}\\
+\item[\rcptlabel{P13_A3_factorization}{P13R1}\textbf{P13R1}\quad\texttt{P13\_A3\_factorization}]\hfill\textsf{[OK]}\\
 \textit{prop:conjugation-closure} \ (charge conjugation factorises on the bead: C=(Q->-Q)\_field o (R o K)\_geometric; R o K is antilinear geometric involution reproducing C's kinematic (CPT/FS) content but BLIND to sign(Q) (Q enters as Q\textasciicircum{}2)). 
 \emph{Computes:} numeric on random complex points: R,K,C on bead; \textbar{}mass\textbar{}/species/FS-wings; load-bearing NEGATIVE R o K blind to Q sign
  \emph{Bound:} scope + not claimed stated
 \ \emph{Run:} \texttt{python3 receipts/P13\_boundary\_paper/P13\_A3\_factorization.py}
-\item[\label{rcpt:P13_the_compact_face_is_odd_dimensional}\textbf{P13R2}\quad\texttt{P13\_the\_compact\_face\_is\_odd\_dimensional}]\hfill\textsf{[OK]}\\
+\item[\rcptlabel{P13_the_compact_face_is_odd_dimensional}{P13R2}\textbf{P13R2}\quad\texttt{P13\_the\_compact\_face\_is\_odd\_dimensional}]\hfill\textsf{[OK]}\\
 \textit{sec:wall} \ (the compact face is S\textasciicircum{}5 and ODD-dimensional, so the Atiyah-Hirzebruch equivariant index is vacuous there (the index it kills is Z2-graded); the conclusion holds instead by Lichnerowicz, which is dimension-independent and gives EMPTY rather than vector-like -- no zero modes at all on the round face). 
 \emph{Computes:} symbolic; S\textasciicircum{}4 run as CONTROL (even-dimensional, must satisfy the same spectral identities or the normalisation is wrong); Friedrich bound saturation is the calibration
  \emph{Bound:} the TWISTED case is not settled: a homogeneous bundle's curvature can be negative and whether it reaches -R/4 is open
 \ \emph{Run:} \texttt{python3 receipts/P13\_boundary\_paper/P13\_the\_compact\_face\_is\_odd\_dimensional.py}
-\item[\label{rcpt:P13_the_one_scale_forbids_the_isometry_route}\textbf{P13R3}\quad\texttt{P13\_the\_one\_scale\_forbids\_the\_isometry\_route}]\hfill\textsf{[OK]}\\
+\item[\rcptlabel{P13_the_one_scale_forbids_the_isometry_route}{P13R3}\textbf{P13R3}\quad\texttt{P13\_the\_one\_scale\_forbids\_the\_isometry\_route}]\hfill\textsf{[OK]}\\
 \textit{sec:wall} \ (the face carries ONE scale, alpha = sqrt(3/Lambda), so any mass read off its geometry is a multiple of hbar c/alpha \textasciitilde{} 1.3e-33 eV -- which makes P14's external mass spectrum a REQUIREMENT of the one-scale ledger rather than a concession). 
 \emph{Computes:} symbolic + physical units; carries its own WITHDRAWAL of a Kaluza-Klein reading the corpus forbids
  \emph{Bound:} bounded to the isometry-realised route; does not touch colour placed by hand, the flux routes, or the universal claim
 \ \emph{Run:} \texttt{python3 receipts/P13\_boundary\_paper/P13\_the\_one\_scale\_forbids\_the\_isometry\_route.py}
-\item[\label{rcpt:P13_conjugation_parity}\textbf{P13R4}\quad\texttt{P13\_conjugation\_parity}]\hfill\textsf{[OK]}\\
+\item[\rcptlabel{P13_conjugation_parity}{P13R4}\textbf{P13R4}\quad\texttt{P13\_conjugation\_parity}]\hfill\textsf{[OK]}\\
 \textit{prop:conjugation-parity} \ (mass-reflection R=gamma\textasciicircum{}5 (grades chirality); mass term ODD, charge EVEN under r->-r; P=g1g2g3 flips chirality; R!=P (same residue, opposite parity-faces)). 
 \emph{Computes:} cold read: parity of f(r) terms; Clifford R=g5 commutes / P anticommutes with g5; guards R!=P
 \ \emph{Run:} \texttt{python3 receipts/P13\_boundary\_paper/P13\_conjugation\_parity.py}
-\item[\label{rcpt:P13_ruling_swaps}\textbf{P13R5}\quad\texttt{P13\_ruling\_swaps}]\hfill\textsf{[OK]}\\
+\item[\rcptlabel{P13_ruling_swaps}{P13R5}\textbf{P13R5}\quad\texttt{P13\_ruling\_swaps}]\hfill\textsf{[OK]}\\
 \textit{prop:closure(iii)} \ (R swaps the substrate's two null rulings -- generic (every orientation-reversing isometry does)). 
 \emph{Computes:} ruling swap under R; generic face
 \ \emph{Run:} \texttt{python3 receipts/P13\_boundary\_paper/P13\_ruling\_swaps.py}
-\item[\label{rcpt:P13_closure_i_check}\textbf{P13R6}\quad\texttt{P13\_closure\_i\_check}]\hfill\textsf{[OK]}\\
+\item[\rcptlabel{P13_closure_i_check}{P13R6}\textbf{P13R6}\quad\texttt{P13\_closure\_i\_check}]\hfill\textsf{[OK]}\\
 \textit{prop:closure(i)} \ (R carries 3->3bar (matter/antimatter): (a) R negates roots => (b) A2 diagram automorphism => (c) 3<->3bar; A2-specific (warrant -1 not in W(A2))). 
 \emph{Computes:} 3-link chain confirmed; flags the owed A2-specificity clause
  \emph{Bound:} corpus owed one clause
 \ \emph{Run:} \texttt{python3 receipts/P13\_boundary\_paper/P13\_closure\_i\_check.py}
-\item[\label{rcpt:P13_closure_iv_check}\textbf{P13R7}\quad\texttt{P13\_closure\_iv\_check}]\hfill\textsf{[OK]}\\
+\item[\rcptlabel{P13_closure_iv_check}{P13R7}\textbf{P13R7}\quad\texttt{P13\_closure\_iv\_check}]\hfill\textsf{[OK]}\\
 \textit{prop:closure(iv)} \ (R:r->-r involution, fixed set \{r=0\} = the bead's branch point; two halves in R-conjugate regions; cosh/sinh asymmetry = the symmetry-breaking). 
 \emph{Computes:} fixed point r=0 computed; corrects map-vs-path; asymmetry is content
 \ \emph{Run:} \texttt{python3 receipts/P13\_boundary\_paper/P13\_closure\_iv\_check.py}
-\item[\label{rcpt:P13_A3_spinor_lift}\textbf{P13R8}\quad\texttt{P13\_A3\_spinor\_lift}]\hfill\textsf{[OK]}\\
+\item[\rcptlabel{P13_A3_spinor_lift}{P13R8}\textbf{P13R8}\quad\texttt{P13\_A3\_spinor\_lift}]\hfill\textsf{[OK]}\\
 \textit{prop:conjugation-parity (spinor)} \ (R o K lifted to the cut spinor IS charge conjugation: gamma\textasciicircum{}5 S psi*=-psi\textasciicircum{}c on 200 spinors; C=i g2 g0 the C-matrix proper; guard -i g2 is NOT C). 
 \emph{Computes:} Clifford: g5 involution, reality-lift S unique, g5 S=-(C g0T), particle<->anti, Q\textasciicircum{}2 R-even; load-bearing C-matrix guard
 \ \emph{Run:} \texttt{python3 receipts/P13\_boundary\_paper/P13\_A3\_spinor\_lift.py}
-\item[\label{rcpt:P13_mass_cubic_carries_no_hierarchy}\textbf{P13R9}\quad\texttt{P13\_mass\_cubic\_carries\_no\_hierarchy}]\hfill\textsf{[ALL PASS]}\\
+\item[\rcptlabel{P13_mass_cubic_carries_no_hierarchy}{P13R9}\textbf{P13R9}\quad\texttt{P13\_mass\_cubic\_carries\_no\_hierarchy}]\hfill\textsf{[ALL PASS]}\\
 \textit{the mass-structure lead} \ (the offset cubic's three-fold form does NOT carry the mass hierarchy: zero-sum forces the two larger roots within a few per cent, shape (eps,1,1); tuning to m\_mu/m\_e forces m\_tau/m\_e=207.8 against 3477). 
 \emph{Computes:} r3791
  \emph{Bound:} 59
 \ \emph{Run:} \texttt{python3 receipts/P13\_boundary\_paper/P13\_mass\_cubic\_carries\_no\_hierarchy.py}
-\item[\label{rcpt:P13_kretschmann_bead}\textbf{P13R10}\quad\texttt{P13\_kretschmann\_bead}]\hfill\textsf{[OK]}\\
+\item[\rcptlabel{P13_kretschmann_bead}{P13R10}\textbf{P13R10}\quad\texttt{P13\_kretschmann\_bead}]\hfill\textsf{[OK]}\\
 \textit{(bead Kretschmann)} \ (Kretschmann along the bead: mass CANCELS -- K=(12/alpha\textasciicircum{}4)(sinh\textasciicircum{}\{-4\}(3tau\textasciitilde{}/2alpha)+2), M-independent). 
 \emph{Computes:} SdS K, bead r\textasciicircum{}3=2M a\textasciicircum{}2 sinh\textasciicircum{}2 w => r\textasciicircum{}6 kills M; numeric across 3 M values same K
 \ \emph{Run:} \texttt{python3 receipts/P13\_boundary\_paper/P13\_kretschmann\_bead.py}
-\item[\label{rcpt:P13_qm_S4_vs_S5}\textbf{P13R11}\quad\texttt{P13\_qm\_S4\_vs\_S5}]\hfill\textsf{[OK]}\\
+\item[\rcptlabel{P13_qm_S4_vs_S5}{P13R11}\textbf{P13R11}\quad\texttt{P13\_qm\_S4\_vs\_S5}]\hfill\textsf{[OK]}\\
 \textit{sec:synthesis} \ (Euclidean form carries gauge + hbar: su(3) subset so(6)/S\textasciicircum{}5 (faithful on R\textasciicircum{}6, not so(5)/S\textasciicircum{}4); GH beta=2pi alpha; S\textasciicircum{}4 subset S\textasciicircum{}5 equator => gauge and hbar SAME real form). 
 \emph{Computes:} su(3) antisymmetry+faithfulness; dS\_n GH temp; S\textasciicircum{}4/S\textasciicircum{}5 nesting; verdict full-S\textasciicircum{}5 vs S\textasciicircum{}4-equator residue
 \ \emph{Run:} \texttt{python3 receipts/P13\_boundary\_paper/P13\_qm\_S4\_vs\_S5.py}
-\item[\label{rcpt:P13_cascade_rank}\textbf{P13R12}\quad\texttt{P13\_cascade\_rank}]\hfill\textsf{[OK]}\\
+\item[\rcptlabel{P13_cascade_rank}{P13R12}\textbf{P13R12}\quad\texttt{P13\_cascade\_rank}]\hfill\textsf{[OK]}\\
 \textit{sec:cascade} \ (cascade rank-map: rank(SM)=4 > rank SO(6)=3, so the full SM gauge group cannot embed even in the dS\_6 raise -- gauge structure dropped at the real cut). 
 \emph{Computes:} so(6) Cartan (M12,M34,M56 commute, rank 3); su(3) rank 2; 4>3; SU(3)-fits control
  \emph{Bound:} supports prop:boundary
 \ \emph{Run:} \texttt{python3 receipts/P13\_boundary\_paper/P13\_cascade\_rank.py}
-\item[\label{rcpt:P13_sigma_lift}\textbf{P13R13}\quad\texttt{P13\_sigma\_lift}]\hfill\textsf{[OK]}\\
+\item[\rcptlabel{P13_sigma_lift}{P13R13}\textbf{P13R13}\quad\texttt{P13\_sigma\_lift}]\hfill\textsf{[OK]}\\
 \textit{sec:sigma} \ (a real involution is not the Wick rotation: sigma (real Weyl(A2) reflection) preserves eta\_L (in O(5,1)), the Wick x0->ix0 sends eta\_L->eta\_E; boost M05 -> rotation under Wick (so(6) created) but stays boost under sigma; su(3) faithful on R\textasciicircum{}6 (not so(5)) -- colour-from-geometry via sigma-lift does NOT hold). 
 \emph{Computes:} Wick eta\_L->eta\_E; sigma preserves both signatures; boost->rotation vs boost->boost; su(3) faithful on R\textasciicircum{}6
  \emph{Bound:} bounded NEGATIVE, not claimed stated
 \ \emph{Run:} \texttt{python3 receipts/P13\_boundary\_paper/P13\_sigma\_lift.py}
-\item[\label{rcpt:L212_the_factorisation_singles_out_nothing}\textbf{P13R14}\quad\texttt{L212\_the\_factorisation\_singles\_out\_nothing}]\hfill\textsf{[OK]}\\
+\item[\rcptlabel{L212_the_factorisation_singles_out_nothing}{P13R14}\textbf{P13R14}\quad\texttt{L212\_the\_factorisation\_singles\_out\_nothing}]\hfill\textsf{[OK]}\\
 \textit{sec:open} \ (the horizon cubic factorisation singles out no root). 
 \emph{Computes:} every root satisfies 2M=r-r\textasciicircum{}3, so any root serves as r0; four values of 2M, all three roots each (14)
  \emph{Bound:} NOT-A-PAPER-CLAIM --- discharges L-212 move 1

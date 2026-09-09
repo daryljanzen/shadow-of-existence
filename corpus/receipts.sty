@@ -5,9 +5,23 @@
 %% The appendix itself is GENERATED from receipts/INDEX.md by make_receipt_appendix.py -- never hand-kept.
 \ProvidesPackage{receipts}[2026/07/21 v1 Computational receipt citations]
 \newcommand{\rcptmarker}{\textsuperscript{\normalfont\scriptsize\textsf{R}}}
-\newcommand{\rcpt}[1]{\rcptmarker}                 % base: plain unobtrusive marker
+%% ** THE MARKER PRINTS THE RECEIPT'S NUMBER, and the number comes from the
+%%    APPENDIX rather than from a counter here. **  A receipt is numbered by its
+%%    HOME paper, so a receipt borrowed into another paper's appendix keeps its
+%%    own number -- which a counter incremented at the marker could not do, since
+%%    it would number by order of appearance in whichever paper is citing it.
+%%
+%% `\rcptlabel{key}{P3R7}` is written by the appendix generator.  It sets the
+%% label's printed form to the number, so `\ref{rcpt:key}` yields `P3R7` on the
+%% second pass.  `@` is a letter here and is not in a generated .tex, which is
+%% why this helper exists rather than the generator writing \@currentlabel.
+\newcommand{\rcptlabel}[2]{\def\@currentlabel{#2}\label{rcpt:#1}}
+\newcommand{\rcptnum}[1]{\ref{rcpt:#1}}
+\newcommand{\rcpt}[1]{\textsuperscript{\normalfont\scriptsize\textsf{\rcptnum{#1}}}}
 \AtBeginDocument{%
   \@ifpackageloaded{hyperref}{%
-    \renewcommand{\rcpt}[1]{\texorpdfstring{\hyperref[rcpt:#1]{\rcptmarker}}{}}%
+    \renewcommand{\rcptnum}[1]{\ref*{rcpt:#1}}%
+    \renewcommand{\rcpt}[1]{\texorpdfstring{\hyperref[rcpt:#1]{%
+      \textsuperscript{\normalfont\scriptsize\textsf{\rcptnum{#1}}}}}{}}%
   }{}%
 }

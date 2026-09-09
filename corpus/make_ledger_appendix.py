@@ -192,10 +192,12 @@ def emit(rows, scope, out):
     for r in rows:
         # The fixed number leads the entry, so a reader meeting `L7` in the body
         # finds `L7` here rather than having to match a filename.
-        L.append(r'\item[\label{ldg:%s}\textbf{%s}\quad\texttt{%s}]'
+        num = r.get('num', '')
+        lab = (r'\ldglabel{%s}{%s}' % (r['key'], num) if num
+               else r'\label{ldg:%s}' % r['key'])
+        L.append(r'\item[%s\textbf{%s}\quad\texttt{%s}]'
                  r'\hfill\textsf{[%s]}\\'
-                 % (r['key'], r.get('num', ''), tex_escape(r['file']),
-                    tex_escape(r['kind'])))
+                 % (lab, num, tex_escape(r['file']), tex_escape(r['kind'])))
         L.append(r'%s' % tex_escape(r['what']))
     L += [r'\end{description}', r'\endgroup']
     open(out, 'w', encoding='utf-8').write('\n'.join(L) + '\n')

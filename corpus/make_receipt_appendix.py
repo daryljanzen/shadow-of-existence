@@ -254,8 +254,12 @@ def emit(rows, scope, out):
         stem_tex = tex_escape(r['stem'])
         st = 'OK' if '✔' in r['status'] else tex_escape(r['status'])
         rn = NUMBERS.get(r['stem'], '')
-        L.append("\\item[\\label{rcpt:%s}\\textbf{%s}\\quad\\texttt{%s}]"
-                 "\\hfill\\textsf{[%s]}\\\\" % (r['stem'], rn, stem_tex, st))
+        # \rcptlabel sets the label's printed form to the number, so the body's
+        # \rcpt{stem} renders that same number rather than a bare marker.
+        lab = ("\\rcptlabel{%s}{%s}" % (r['stem'], rn) if rn
+               else "\\label{rcpt:%s}" % r['stem'])
+        L.append("\\item[%s\\textbf{%s}\\quad\\texttt{%s}]"
+                 "\\hfill\\textsf{[%s]}\\\\" % (lab, rn, stem_tex, st))
         L.append("\\textit{%s} \\ (%s). %s" % (tex_escape(r['label']), tex_escape(one_state(r['claim'])), ''))
         L.append("\\emph{Computes:} %s" % tex_escape(one_state(r['computes'])))
         if r['bound']:

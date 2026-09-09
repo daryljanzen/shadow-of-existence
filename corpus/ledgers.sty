@@ -19,13 +19,22 @@
 \DeclareOption{hide}{\ldg@hidetrue}
 \ProcessOptions\relax
 \newcommand{\ldgmarker}{\textsuperscript{\normalfont\scriptsize\textsf{L}}}
-\newcommand{\ldg}[1]{\ldgmarker}                  % base: plain unobtrusive marker
+%% ** THE MARKER PRINTS THE LEDGER'S NUMBER. **  Unlike a receipt, a ledger's
+%%    number is CORPUS-WIDE and fixed in `ledgers_registry.md`, so `L7` is the
+%%    same ledger in every paper.  `\ldglabel{key}{L7}` is written by the
+%%    appendix generator and sets the label's printed form, so `\ref{ldg:key}`
+%%    yields `L7` on the second pass.
+\newcommand{\ldglabel}[2]{\def\@currentlabel{#2}\label{ldg:#1}}
+\newcommand{\ldgnum}[1]{\ref{ldg:#1}}
+\newcommand{\ldg}[1]{\textsuperscript{\normalfont\scriptsize\textsf{\ldgnum{#1}}}}
 \AtBeginDocument{%
   \ifldg@hide
     \renewcommand{\ldg}[1]{}%
   \else
     \@ifpackageloaded{hyperref}{%
-      \renewcommand{\ldg}[1]{\texorpdfstring{\hyperref[ldg:#1]{\ldgmarker}}{}}%
+      \renewcommand{\ldgnum}[1]{\ref*{ldg:#1}}%
+      \renewcommand{\ldg}[1]{\texorpdfstring{\hyperref[ldg:#1]{%
+        \textsuperscript{\normalfont\scriptsize\textsf{\ldgnum{#1}}}}}{}}%
     }{}%
   \fi
 }

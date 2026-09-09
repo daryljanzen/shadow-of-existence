@@ -4,12 +4,12 @@
 \small\noindent Each computation marked \rcptmarker\ in the text is verified by a runnable receipt in the \texttt{receipts/} directory that ships with this work; status \textsf{OK} = verified (traced, run, output matches the claim). This appendix is generated from the receipt index, not maintained by hand.\par\medskip
 \begingroup\renewcommand{\arraystretch}{1.25}
 \begin{description}
-\item[\label{rcpt:negation_outer_A2}\textbf{P5R1}\quad\texttt{negation\_outer\_A2}]\hfill\textsf{[OK]}\\
+\item[\rcptlabel{negation_outer_A2}{P5R1}\textbf{P5R1}\quad\texttt{negation\_outer\_A2}]\hfill\textsf{[OK]}\\
 \textit{rem:orientation} \ (R negates the roots (r->-r) conjugates the rep 3<->3bar ONLY because -1 not in W(A2); -1 in W for A1xA1/B2/G2 (inner)). 
 \emph{Computes:} Weyl groups built from simple reflections; -1 membership across 4 rank-2 systems (others = controls)
  \emph{Bound:} shares the -1 not-in-W(A2) core with P14 two\_factors\_direct (distinct claim, kept self-contained)
 \ \emph{Run:} \texttt{python3 receipts/P05\_groupoid/negation\_outer\_A2.py}
-\item[\label{rcpt:P05_deck_group_S3}\textbf{P5R2}\quad\texttt{P05\_deck\_group\_S3}]\hfill\textsf{[OK]}\\
+\item[\rcptlabel{P05_deck_group_S3}{P5R2}\textbf{P5R2}\quad\texttt{P05\_deck\_group\_S3}]\hfill\textsf{[OK]}\\
 \textit{sec:deck/sec:classification} \ (deck group of the 3-sheeted cover = S3 (Nariai monodromies = transpositions, generate S3 = Galois group); with orientation Z2 = D6). 
 \emph{Computes:} analytic continuation of cubic roots around each Nariai branch (loop from common base) = distinct transpositions -> S3; discriminant not a square -> Galois S3; S3xZ2=D6 order 12; control: generic loop trivial
  \emph{Bound:} ---
@@ -19,61 +19,61 @@
 \emph{Computes:} sweeps 8 step counts against 6 radii at both branch points: ONE transposition at each, (1 2) and (0 1), differing, generating a group of order 6; then the two controls -- a loop of radius 0.8 encloses both branch points (separation 0.7698) and returns the 3-cycle, exactly the product of the two, and a 2-step loop at large radius returns the IDENTITY, which would make the deck structure vacuous. Neither raises an error
  \emph{Bound:} SUPPORTS P05 -- prop:monodromy stands and now stands on a sweep. NOT CLAIMED: anything about the Galois group over a field (that is T1's and T50's); and X5\_monodromy\_group is not faulted, it established the permutations and that is what it was written to do
 \ \emph{Run:} \texttt{python3 receipts/L\_numerics/Q51\_the\_monodromy\_continuation\_is\_stable\_and\_it\_has\_two\_preconditions\_neither\_stated.py}
-\item[\label{rcpt:P05_dihedral_generators}\textbf{P5R3}\quad\texttt{P05\_dihedral\_generators}]\hfill\textsf{[OK]}\\
+\item[\rcptlabel{P05_dihedral_generators}{P5R3}\textbf{P5R3}\quad\texttt{P05\_dihedral\_generators}]\hfill\textsf{[OK]}\\
 \textit{prop:relations/completeness} \ (within-single-geometry morphism group = dihedral sigma,tau on the sky-angle circle: sigma\textasciicircum{}2=tau\textasciicircum{}3=(sigma tau)\textasciicircum{}2=id, <sigma,tau> order 6 = D3\textasciitilde{}S3, all 6 preserve sin 3w). 
 \emph{Computes:} builds generators, checks relations + order 6 + sin3w-invariance
 \ \emph{Run:} \texttt{python3 receipts/P05\_groupoid/P05\_dihedral\_generators.py}
-\item[\label{rcpt:C1_conformal_vs_isometric}\textbf{P5R4}\quad\texttt{C1\_conformal\_vs\_isometric}]\hfill\textsf{[OK]}\\
+\item[\rcptlabel{C1_conformal_vs_isometric}{P5R4}\textbf{P5R4}\quad\texttt{C1\_conformal\_vs\_isometric}]\hfill\textsf{[OK]}\\
 \textit{sec:alpha-action} \ (C1 --- is the substrate's CONFORMAL group its ISOMETRY group? Substrate dS\_5 = \{eta(X,X)=alpha\textasciicircum{}2\} in M\textasciicircum{}6; absolute = \{eta(X,X)=0\}, the null cone.). 
 \emph{Computes:} runs clean; registered from its own docstring and a live run
  \emph{Bound:} description is the receipt's own wording, condensed; not independently re-derived here
 \ \emph{Run:} \texttt{python3 receipts/P05\_groupoid/C1\_conformal\_vs\_isometric.py}
-\item[\label{rcpt:COVER_dial_loop_is_sigma_squared}\textbf{P5R5}\quad\texttt{COVER\_dial\_loop\_is\_sigma\_squared}]\hfill\textsf{[OK]}\\
+\item[\rcptlabel{COVER_dial_loop_is_sigma_squared}{P5R5}\textbf{P5R5}\quad\texttt{COVER\_dial\_loop\_is\_sigma\_squared}]\hfill\textsf{[OK]}\\
 \textit{rem:perroot} \ (How does a loop in the DIAL project to the MASS plane? 2M = (2/3sqrt3) a sin 3w. Near a Nariai point sin3w = +-1 the map is critical, so the projection winds twice.). 
 \emph{Computes:} runs clean; registered from its own docstring and a live run
  \emph{Bound:} description is the receipt's own wording, condensed; not independently re-derived here
 \ \emph{Run:} \texttt{python3 receipts/P05\_groupoid/COVER\_dial\_loop\_is\_sigma\_squared.py}
-\item[\label{rcpt:HOLONOMY_complex_loop}\textbf{P5R6}\quad\texttt{HOLONOMY\_complex\_loop}]\hfill\textsf{[OK]}\\
+\item[\rcptlabel{HOLONOMY_complex_loop}{P5R6}\textbf{P5R6}\quad\texttt{HOLONOMY\_complex\_loop}]\hfill\textsf{[OK]}\\
 \textit{rem:perroot} \ (Transport the RESIDUE FORM around a Nariai point in the COMPLEX w-plane. The roots return (splitting field, no monodromy) -- but the FORM's transport can accumulate. A = -(1/2) G\textasciicircum{}\{-1\} dG with G\_ii = 1/f'(r\_i); f' has a simple zero at the double root -> simple pole in A.). 
 \emph{Computes:} runs clean; registered from its own docstring and a live run
  \emph{Bound:} description is the receipt's own wording, condensed; not independently re-derived here
 \ \emph{Run:} \texttt{python3 receipts/P05\_groupoid/HOLONOMY\_complex\_loop.py}
-\item[\label{rcpt:K1_action_groupoid}\textbf{P5R7}\quad\texttt{K1\_action\_groupoid}]\hfill\textsf{[OK]}\\
+\item[\rcptlabel{K1_action_groupoid}{P5R7}\textbf{P5R7}\quad\texttt{K1\_action\_groupoid}]\hfill\textsf{[OK]}\\
 \textit{sec:nariai-algebroid} \ (K1 --- WHAT GROUPOID DOES P12's ALGEBROID INTEGRATE TO? CONFIRMATION 4, from P12 at source: base = the SPACE OF CUTS C of dS\_5 = SO(5,1)/SO(4,1) section = the cosmic clock (P10) structure function = the inverse spatial metric and the object P12 names in its own notation: 'what the continuous so(5,1) \textbar{}x C realizes' connection = the leak of [m,m] into m, 'vanishing exactly at the two symmetric strata' P5's groupoid, by c...). 
 \emph{Computes:} runs clean; registered from its own docstring and a live run
  \emph{Bound:} description is the receipt's own wording, condensed; not independently re-derived here
 \ \emph{Run:} \texttt{python3 receipts/P05\_groupoid/K1\_action\_groupoid.py}
-\item[\label{rcpt:K45_span_and_nariai}\textbf{P5R9}\quad\texttt{K45\_span\_and\_nariai}]\hfill\textsf{[OK]}\\
+\item[\rcptlabel{K45_span_and_nariai}{P5R9}\textbf{P5R9}\quad\texttt{K45\_span\_and\_nariai}]\hfill\textsf{[OK]}\\
 \textit{sec:nariai-algebroid} \ (K4 --- THE THREE LEVELS AS A DIAGRAM. K5 --- IS THE NARIAI COINCIDENCE FORCED? CONFIRMATION 1/3 from section 1-LEVELS, at source: L1 the foliation stacking rate (the existent's own geometric expansion) \ensuremath{\cdot} L2 the leaf's self-gravitating dynamics \ensuremath{\cdot} L3 the E=1 projection (the shadow).). 
 \emph{Computes:} runs clean; registered from its own docstring and a live run
  \emph{Bound:} description is the receipt's own wording, condensed; not independently re-derived here
 \ \emph{Run:} \texttt{python3 receipts/P05\_groupoid/K45\_span\_and\_nariai.py}
-\item[\label{rcpt:Q4_equianharmonic_vantages}\textbf{P5R10}\quad\texttt{Q4\_equianharmonic\_vantages}]\hfill\textsf{[OK]}\\
+\item[\rcptlabel{Q4_equianharmonic_vantages}{P5R10}\textbf{P5R10}\quad\texttt{Q4\_equianharmonic\_vantages}]\hfill\textsf{[OK]}\\
 \textit{rem:equianharmonic} \ (Q4 --- is there a cross-ratio on the horizon roots invariant under the groupoid? Roots of r\textasciicircum{}3 - r + 2M with 2M = r0 - r0\textasciicircum{}3: they are r0, and (-r0 +- sqrt(4-3r0\textasciicircum{}2))/2.). 
 \emph{Computes:} runs clean; registered from its own docstring and a live run
  \emph{Bound:} description is the receipt's own wording, condensed; not independently re-derived here
 \ \emph{Run:} \texttt{python3 receipts/P05\_groupoid/Q4\_equianharmonic\_vantages.py}
-\item[\label{rcpt:V5_homothety_charge}\textbf{P5R11}\quad\texttt{V5\_homothety\_charge}]\hfill\textsf{[OK]}\\
+\item[\rcptlabel{V5_homothety_charge}{P5R11}\textbf{P5R11}\quad\texttt{V5\_homothety\_charge}]\hfill\textsf{[OK]}\\
 \textit{sec:alpha-action} \ (V5 --- THE DILATION AS A SYMMETRY WITH NO CONSERVED CHARGE. CONFIRMATION 4 --- the object: C1 established that the group preserving the substrate's ABSOLUTE is O(5,1) x R+, one generator larger than the isometry group O(5,1), and that the extra generator is the DILATION carrying alpha -> lambda.alpha. A dilation is a HOMOTHETY: L\_xi g = 2c g with c constant.). 
 \emph{Computes:} runs clean; registered from its own docstring and a live run
  \emph{Bound:} description is the receipt's own wording, condensed; not independently re-derived here
 \ \emph{Run:} \texttt{python3 receipts/P05\_groupoid/V5\_homothety\_charge.py}
-\item[\label{rcpt:I5_the_homothety_charge_is_a_first_integral_of_the_restricted_system}\textbf{P5R12}\quad\texttt{I5\_the\_homothety\_charge\_is\_a\_first\_integral\_of\_the\_restricted\_system}]\hfill\textsf{[OK]}\\
+\item[\rcptlabel{I5_the_homothety_charge_is_a_first_integral_of_the_restricted_system}{P5R12}\textbf{P5R12}\quad\texttt{I5\_the\_homothety\_charge\_is\_a\_first\_integral\_of\_the\_restricted\_system}]\hfill\textsf{[OK]}\\
 \textit{sec:alpha-action} \ (I5 --- THE HOMOTHETY CHARGE IS A FIRST INTEGRAL OF THE RESTRICTED SYSTEM, NOT A WEAKER KIND OF ONE. Integrable-systems field bake, probe I5. P05 states correctly that the dilation's charge is conserved on the null cone and nowhere else, then glosses that a symmetry which is not one of the action carries no Noether charge; both are true and sit in tension on their face. The field that owns the object reconciles them: p.p is itself conserved, so the null cone is an INVARIANT SUBMANIFOLD of the geodesic flow and the charge is a genuine first integral of the flow restricted to it. In Dirac's language the bracket is weakly zero and not strongly zero. Five verdicts: the cone is invariant; the rate is c(p.p), zero on null and exactly -c m\textasciicircum{}2 on timelike; the bracket \{xi.p, p.p\} = 2 p.p is nonzero off the cone; integrated, the null charge is constant to 1e-14 while the timelike one drifts exactly linearly at slope -m\textasciicircum{}2; and a rank test shows the charge is independent of the ambient translations, so on the cone it ADDS an integral. Control: a genuine Killing field's bracket is IDENTICALLY zero, so the two cases separate.). 
 \emph{Computes:} runs clean; five verdicts plus a Killing control that separates weakly-zero from identically-zero
  \emph{Bound:} derived here, not condensed from a prior receipt; index placement (covariant p\_a against contravariant xi\textasciicircum{}a) is what a first draft got wrong and the control is what caught it
 \ \emph{Run:} \texttt{python3 receipts/P05\_groupoid/I5\_the\_homothety\_charge\_is\_a\_first\_integral\_of\_the\_restricted\_system.py}
-\item[\label{rcpt:T1_the_galois_inference_needs_irreducibility_and_it_holds}\textbf{P5R13}\quad\texttt{T1\_the\_galois\_inference\_needs\_irreducibility\_and\_it\_holds}]\hfill\textsf{[OK]}\\
+\item[\rcptlabel{T1_the_galois_inference_needs_irreducibility_and_it_holds}{P5R13}\textbf{P5R13}\quad\texttt{T1\_the\_galois\_inference\_needs\_irreducibility\_and\_it\_holds}]\hfill\textsf{[OK]}\\
 \textit{rem:galois} \ (T1 --- THE GALOIS INFERENCE NEEDS IRREDUCIBILITY AND IT HOLDS. Number-theory field bake, probe T1. P05's rem:galois infers that the horizon cubic's Galois group is the full S\_3 from the discriminant 4-27(2M)\textasciicircum{}2 not being a square in C(2M). The conclusion is TRUE and the inference as written is NOT VALID: the criterion is for an IRREDUCIBLE cubic, and a reducible one can have a non-square discriminant with a group of order two. Five verdicts: the discriminant is computed not quoted; it is shown non-square by a multiplicity argument (two distinct simple roots); the cubic is irreducible over C(2M) because it is degree one in 2M, so Gauss's lemma forbids a factorisation; THE CONTROL exhibits r\textasciicircum{}3-r\textasciicircum{}2+r-1 with disc -16, not a square, whose splitting field is Q(i) and whose Galois group therefore has order 2 rather than 6; and the A\_3 direction is exercised on r\textasciicircum{}3-3r+1 with disc 81. Three earlier bakes --- algebraic geometry, combinatorics, complex analysis --- all USE the S\_3 result and none audits the theorem's hypotheses.). 
 \emph{Computes:} runs clean; five verdicts, the fourth of which is the discriminating control
  \emph{Bound:} derived here; a FENCE --- the corpus's conclusion stands and the step to it needed one clause
 \ \emph{Run:} \texttt{python3 receipts/P05\_groupoid/T1\_the\_galois\_inference\_needs\_irreducibility\_and\_it\_holds.py}
-\item[\label{rcpt:X1rr_sky_angle_is_the_galois_closure}\textbf{P5R14}\quad\texttt{X1rr\_sky\_angle\_is\_the\_galois\_closure}]\hfill\textsf{[OK]}\\
+\item[\rcptlabel{X1rr_sky_angle_is_the_galois_closure}{P5R14}\textbf{P5R14}\quad\texttt{X1rr\_sky\_angle\_is\_the\_galois\_closure}]\hfill\textsf{[OK]}\\
 \textit{rem:galois-closure} \ (X1rr --- the cover tower, CORRECTED AGAIN (r1881). The r1874 correction had two errors of its own: (A) it called the dial's deck group D\_6. The deck group must PRESERVE 2M, and P3's D\_6 generators (w -> w+60deg, w -> -w) NEGATE it. D\_6 is the dial's full symmetry INCLUDING the mass flip. (B) it called w -> w+pi the covering involution. A covering involution must FIX the point below; w -> w+pi negates both 2M and r\_0.). 
 \emph{Computes:} runs clean; registered from its own docstring and a live run
  \emph{Bound:} description is the receipt's own wording, condensed; not independently re-derived here
 \ \emph{Run:} \texttt{python3 receipts/P05\_groupoid/X1rr\_sky\_angle\_is\_the\_galois\_closure.py}
-\item[\label{rcpt:X5_monodromy_group}\textbf{P5R15}\quad\texttt{X5\_monodromy\_group}]\hfill\textsf{[OK]}\\
+\item[\rcptlabel{X5_monodromy_group}{P5R15}\textbf{P5R15}\quad\texttt{X5\_monodromy\_group}]\hfill\textsf{[OK]}\\
 \textit{rem:monodromy-group} \ (X5 --- the monodromy GROUP of the corpus's cover, not just the map. Cubic r\textasciicircum{}3 - r + m = 0 over the m-plane. Corpus (P5): 'the MONODROMY group of the three-sheeted cover is S\_3, generated by the monodromies about the NARIAI POINTS' --- its deck group being trivial. Two transpositions generate S\_3 only if they DIFFER.). 
 \emph{Computes:} runs clean; registered from its own docstring and a live run
  \emph{Bound:} description is the receipt's own wording, condensed; not independently re-derived here
@@ -93,17 +93,17 @@
 \emph{Computes:} asserts the cubics irreducibility and discriminant, applies the divides-the-degree rule to each of four covers, and ties the answer to what H and G were waiting on (15 checks)
  \emph{Bound:} NOT-A-PAPER-CLAIM --- answers routed item 23; the wording is unseated
 \ \emph{Run:} \texttt{python3 receipts/L203\_reach\_stations/M4\_four\_objects\_one\_word.py}
-\item[\label{rcpt:P03_acceleration_is_slice_curvature}\textbf{P3R12}\quad\texttt{P03\_acceleration\_is\_slice\_curvature}]\hfill\textsf{[OK]}\\
+\item[\rcptlabel{P03_acceleration_is_slice_curvature}{P3R12}\textbf{P3R12}\quad\texttt{P03\_acceleration\_is\_slice\_curvature}]\hfill\textsf{[OK]}\\
 \textit{sec:curvature \ensuremath{\cdot} rem:twocritical \ensuremath{\cdot} the bend} \ (on ANY member of the energy family (E cancels: (dr/dtau)\textasciicircum{}2 = E\textasciicircum{}2 - f, and E is a constant of the motion) d\textasciicircum{}2r/dtau\textasciicircum{}2 = -f'/2 = r*K\_G identically, so THE SIGN OF THE SLICE'S GAUSSIAN CURVATURE IS THE SIGN OF THE COMOVING ACCELERATION -- and the flat locus is the deceleration-to-acceleration turnover, which on Nariai is the seam and in standard terms is rho\_m = 2 rho\_Lambda (csch\textasciicircum{}2 w = 2 <=> sinh w = 1/sqrt2, the seam's phase). A recent cosmological epoch: 7.06 Gyr at H0=73, 7.65 at 67.4, preceding matter-Lambda equality [borrowed from P3 \ensuremath{\cdot} P7 \ensuremath{\cdot} P8]). 
 \emph{Computes:} the identity asserted; the K\_G zero solved and matched to (M alpha\textasciicircum{}2)\textasciicircum{}(1/3); csch\textasciicircum{}2 w = 2 <=> sinh w = 1/sqrt2 proved by algebra after simplify() failed on the closed forms; epochs at both H0
  \emph{Bound:} bound: identities on the Nariai E=1 worldline; no causal claim between seam and turnover -- they are one locus; dating inherits H0
 \ \emph{Run:} \texttt{python3 receipts/P03\_SdS\_slicing/P03\_acceleration\_is\_slice\_curvature.py}
-\item[\label{rcpt:C5_sct_already_linear}\textbf{P3R24}\quad\texttt{C5\_sct\_already\_linear}]\hfill\textsf{[OK]}\\
+\item[\rcptlabel{C5_sct_already_linear}{P3R24}\textbf{P3R24}\quad\texttt{C5\_sct\_already\_linear}]\hfill\textsf{[OK]}\\
 \textit{rem:reality-lines} \ (TWO CLOSURES. (A) X3r's open question: sin is real on the real axis AND on every line Re z = pi/2 + k.pi. The crossings are at z = pi/2 + k.pi. Are the odd ones the corpus's BACK seam as the even ones are its FRONT? (B) The conformal queue's last entry: 'C1 computed the LINEAR conformal maps only; the SPECIAL CONFORMAL TRANSFORMATIONS are untested -- the one place the conformal field could still bite.' [borrowed from P3 (+P5)]). 
 \emph{Computes:} runs clean; registered from its own docstring and a live run
  \emph{Bound:} description is the receipt's own wording, condensed; not independently re-derived here
 \ \emph{Run:} \texttt{python3 receipts/P03\_SdS\_slicing/C5\_sct\_already\_linear.py}
-\item[\label{rcpt:K23_functor_and_quotient}\textbf{P5R8}\quad\texttt{K23\_functor\_and\_quotient}]\hfill\textsf{[OK]}\\
+\item[\rcptlabel{K23_functor_and_quotient}{P5R8}\textbf{P5R8}\quad\texttt{K23\_functor\_and\_quotient}]\hfill\textsf{[OK]}\\
 \textit{rem:universal} \ (K2 + K3 --- IS Psi A FUNCTOR, AND IS 'THE SINGLE INVARIANT IS THE GEOMETRY' A UNIVERSAL PROPERTY? CONFIRMATION 4 --- the objects: SOURCE: K1's action groupoid SO(5,1) \textbar{}x C ==> C . Objects = cuts. Arrows c -> g.c . Psi (P8): 'carries a cut of the substrate to a geometry'. TARGET: geometries, with isometries between them. [borrowed from P5 (+P8)]). 
 \emph{Computes:} runs clean; registered from its own docstring and a live run
  \emph{Bound:} description is the receipt's own wording, condensed; not independently re-derived here
