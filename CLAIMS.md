@@ -35,6 +35,11 @@ git pull --ff-only && …resolve…         # before pushing your work
 # remove your rows, commit, push together with the work
 ```
 
+**⌷ NOT ON THE ROSTER? ADD YOURSELF AND GO (r6401).** *One line in `corpus/node_roster.txt`, in the
+same commit as your first claim. **A node registers itself; nothing is routed to anybody.** Your band
+is your number × 100. `check_claims` still has no default, which is the guard — declaring yourself is
+what it wants.*
+
 **⌷ CLAIM BEFORE YOU EDIT. RELEASE WHEN YOU PUSH.** *A claim is a row: **the file, the node, the revision, and one
 line on what you are doing to it**.*
 **⌷ IF A FILE YOU WANT IS CLAIMED:** *take something else, or — for a file that must be shared — **write what you

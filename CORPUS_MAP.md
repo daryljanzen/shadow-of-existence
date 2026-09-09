@@ -146,6 +146,50 @@ sources: [cowork, chat]
 
 
 
+### Revision r6401 — 2026-09-09 (node 64, opened). **THE ROSTER BECOMES DATA AND A NODE REGISTERS ITSELF: `check_claims`' allowlist removed as friction, its no-default guard kept intact.**
+
+**⌗ WHAT HAPPENED, and it is worth the entry because the gate stopped real work on arrival.** *A new
+line with a token could not run `check_claims` at all: `NODE` had to be one of a tuple hard-coded in
+the gate, and the gate says in its own voice that it **cannot guess, and defaulting to any of them
+makes a forgetful node impersonate that one**. Both halves of that sentence are true and they are
+about **different things**, which is what nobody had separated.*
+
+**⚑ THE GUARD IS THE NO-DEFAULT, AND IT IS UNTOUCHED.** *`os.environ.get('NODE','56')` once meant a
+forgetful node **inherited 56's claims** — "the one default a collision gate cannot have is one of the
+colliding parties." **A node that fails to declare itself still fails.** That is the whole protection
+and it is exactly as it was.*
+
+**⛔ THE ALLOWLIST WAS NEVER PART OF IT.** *A node writing `NODE=64` impersonates nobody. What the
+closed tuple added was a **second party's permission to exist**: 57 was added at `r3147`, and 59 and 60
+at `r3573` — **"at 60's routing"** — meaning each had been working while unable to run the gate, and
+each cleared only when someone else edited the code. ***A rule that blocks work and can only be
+cleared by another party is a rule whose enforcement has outlived its reason***, which is a shape this
+corpus has found in itself repeatedly.*
+
+**⛭ THE REVISION.** *The roster is now `corpus/node_roster.txt` — **data, not code** — read by
+`check_claims` and `check_id_bands` alike. **The standing order, Daryl's: if you have a token, add your
+number and go**, one line, in the same commit as your first claim, nothing routed to anybody. Landed at
+the top of `THE_HUB` and at the point of use in `CLAIMS.md`, and the gate's own failure message now
+says it, so the instruction is where the failure is.*
+
+**⛭⛭ AND THE BANDS ARE DERIVED RATHER THAN RESERVED: node $N$ allocates `L-N00..L-N99`.** *Collision-free
+by construction — **two nodes cannot have the same number, so they cannot take the same band** — and
+derivable offline with nothing to negotiate. ***That is what the `L-174` collision and the
+`c54.182/c54.184` duplicate each cost***: in both cases the band existed only AFTER the collision,
+because absent a shared convention both lines take the next integer. The low bands are historical, kept
+verbatim, and new nodes never land there.*
+
+⚠ **AND THE PATCH CAUGHT ITSELF DOING THE VERY THING, WHICH IS RECORDED RATHER THAN TIDIED.** *A first
+draft selected a tree's band by matching the **derived** band names only, so `NODE=54` silently fell
+through to **the observer line's band** — the impersonation this apparatus exists to prevent, arriving
+through the gate meant to prevent it. Found by testing every node rather than the new one, replaced with
+a direct roster lookup that covers the historical bands too, and verified: unset → 56's band unchanged,
+54 → 500–799, 56 → 221–499, 57 → 800–899, 60 → 6000–6099, 64 → 6400–6499.*
+
+⌗ *Node 64 opened here. Verified: registered node runs; **unregistered node still fails, but
+self-clearingly**, its message naming the one line that clears it; and a node with `NODE` unset still
+fails outright.*
+
 ### Revision r3099 — 2026-08-16 (main line). **`PO-14` WORKED: THE SHORTFALL IS A THEOREM, AND THE BUILD THE ROW ASKS FOR WAS DONE AT r2419.**
 
 **⛔⛭⛭ ① THE ROW ASKED FOR SOMETHING ALREADY STANDING (`L-247`).** *`PO-14` reads "THE UNBUILT CHIRAL MEMBER … **Build it** ⇒ extend P11's polarised Gowdy–de Sitter leaf to the unpolarised case", priced at 5 turns and flagged — the only flagged item of the three.* ⇒ ***P11 `sec:unpolarized` does exactly that: the second polarisation restored, the two identified as a wave map into a target of curvature $-1$, the exchanging map shown to have differential of determinant $-1$ so it lies outside the identity component, and a conserved twist $c=Re^{2P}Q_t$ with $c\mapsto-c$.*** ⚠ **And P14's "named in the companion development and not built" is not stale but FALSE-WHEN-WRITTEN:** *`sec:unpolarized` entered at `c01f56c5` (r2419), the sentence at `d929d6bf` (r3006b) — **587 revisions and 825 commits later**, the build commit verified an ancestor of the claim commit with `git merge-base`.* ⌗ ***The register's own warning, three lines above the row: "Look before declaring a build."***

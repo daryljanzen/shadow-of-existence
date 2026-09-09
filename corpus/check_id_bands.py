@@ -57,8 +57,51 @@ BANDS = [
 # the reservation is made now, while it costs nothing. **  *The name 57 is unseated, offered because
 # "new 54" and "54" are the same string to every tool that reads this file.*
 
-# Which band this tree writes in.  A node changes this line and nothing else.
-THIS_LINE = (221, 499)
+# ** r6401: THE BANDS AND THIS LINE BOTH COME FROM THE ROSTER NOW. **
+#
+# A node's band is its own number x100 -- node N allocates L-N00..L-N99.  Collision-free by
+# construction, derivable offline by anyone, and there is no reservation to negotiate: the
+# whole L-174 collision, and the c54.182/c54.184 duplicate, happened because a band existed
+# only AFTER the collision and both lines took the next integer.  ** A derived band cannot be
+# taken twice, because two nodes cannot have the same number. **
+#
+# The low bands above are HISTORICAL and stay exactly as they are -- they predate the rule and
+# their rows are not anyone's to renumber.  New nodes never land there.
+ROSTER = os.path.join(os.path.dirname(os.path.abspath(__file__)), 'node_roster.txt')
+
+
+def _roster():
+    """node -> (lo, hi), read from the roster.  Data, not code."""
+    out = {}
+    if not os.path.exists(ROSTER):
+        return out
+    for ln in open(ROSTER, encoding='utf-8'):
+        ln = ln.strip()
+        if not ln or ln.startswith('#'):
+            continue
+        f = ln.split(None, 3)
+        if len(f) >= 3:
+            out[f[0]] = (int(f[1]), int(f[2]))
+    return out
+
+
+_R = _roster()
+
+# Derived bands join the historical table.  A band already listed above is NOT re-added: the
+# low bands predate the rule, their rows are not anyone's to renumber, and a duplicate entry
+# would double every count printed against them.
+_have = {(lo, hi) for lo, hi, _ in BANDS}
+BANDS = BANDS + sorted(
+    (lo, hi, 'node %s -- band = node number x100 (r6401)' % n)
+    for n, (lo, hi) in _R.items() if (lo, hi) not in _have)
+
+# Which band this tree writes in.  ** A node sets NODE and changes nothing else. **
+# ** The fallback is 56's, which is what this file carried before r6401 -- so a tree with no
+# NODE behaves exactly as it did.  A node that sets NODE gets its own band by lookup, and the
+# lookup covers the HISTORICAL bands too: an earlier draft matched on the derived names only
+# and silently handed 54 the observer line's band, which is the impersonation this whole
+# apparatus exists to prevent, arriving through the gate meant to prevent it. **
+THIS_LINE = _R.get(os.environ.get('NODE', '').strip(), (221, 499))
 
 
 def band_of(n):
