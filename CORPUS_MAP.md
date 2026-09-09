@@ -146,6 +146,45 @@ sources: [cowork, chat]
 
 
 
+### Revision r6409 — 2026-09-09 (node 64). **`PO-24`: the remaining question is not well posed as asked, and the reason is exact — the tilt is the wrong absorber.**
+
+**⌗ THE ROW ASKS whether a displacement of that size in the inferred tilt is a tension.** *That
+presumes the displacement is **a number**. ***It is a local slope of a curve, and the curve's slope
+varies by a factor of seven thousand over the data the fit is scored on.****
+
+**⛭ THE SIGNATURE IS A GAUSSIAN IN $\ell$ AND A TILT IS A POWER LAW**, *so the tilt it locally mimics
+is exactly $\mathrm{d}\ln(\text{ratio})/\mathrm{d}\ln\ell=-2(r^{2}-1)(\ell/\ell_D)^{2}$ --- **not a
+constant**. Across plik_lite's own $\ell=30$–$2508$ it runs $-0.0002$ to $-1.31$: a factor of $6989$,
+**exactly $(\ell_{\max}/\ell_{\min})^{2}$**.* ⇒ ***A single tilt is a one-parameter fit to a function
+whose logarithmic slope varies by $7000\times$ over the fitted data. Absorption is therefore
+necessarily window-local*** --- *and the reported $\Delta n_s=-0.0304$ equals the true slope at
+$\ell=381$ **and nowhere else**, with the window used being the one where the mimicked tilt is
+smallest.*
+
+**⇒ SO A JOINT FIT DOES NOT MEET A SHIFTED TILT. It meets a Gaussian-shaped residual, and no tilt
+removes a Gaussian.** *What it will weigh is that residual, which r4505 already bounds from above at
+$0.26\sigma$ per bin --- **and that bound, not the displacement, is the thing with a verdict
+attached.***
+
+**⛭ AND A DISPLACEMENT IN $n_s$ IS NOT BY ITSELF A TENSION, because $n_s$ is not predicted here.**
+*`P15`: $A_s$ and $n_s$ are "inherited as boundary data exactly as flat $\Lambda$CDM inherits the
+baryon-to-photon ratio". **A different value of an inherited input is a different input, not a
+conflict.** What could be a conflict is a constraint on $n_s$ that does not run through the damping
+tail --- the low-to-mid-$\ell$ shape, TE/EE, lensing. ***That is what "a joint fit" means, and the
+row's discharge condition now carries its reason.***
+
+⌗ **NOT A FINDING, AND RECORDED BECAUSE IT NEARLY WAS.** *I had "the fitted range stops short of where
+the signature lives" written and quantified before checking. **It is already worked**: `C51`
+establishes the thirty dropped bins are $\ell=1759$–$2508$ and ARE the damping tail, and it is
+**discharged at r2780** --- the `LMAXL=2512` extension run, the bins recovered, the verdict moving in
+the disfavouring direction. ***Reading one more receipt in the same directory is what stopped it being
+reported as new***, and it is the join-not-gap prior paying in the direction that costs a node
+nothing to ignore.*
+
+⌗ *Third re-scoping in three rows. `PO-30` a join, `PO-36` a measurement of something other than its
+placement implied, `PO-24` a question not well posed as asked. **None of the three is a closure and
+none is new physics** --- each is two corpus pieces set side by side.*
+
 ### Revision r6407 — 2026-09-09 (node 64). **`PO-36` WORKED: the discrimination quantified, and the row re-scoped — what it measures is the dark fraction, not the framework.**
 
 **⌗ HOW BIG IT IS.** *The two mass choices differ by $f_b^{-1/3}=1.85$ in the radius --- **10.5 Mpc
