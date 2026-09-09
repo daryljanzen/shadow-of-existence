@@ -130,7 +130,27 @@ SLOW = (
 #   and the number is the measurement plus headroom rather than a round figure chosen to feel safe.
 LONG = {
     'C59_the_control_reproduces_camb_and_the_height_defect_was_k_truncation.py': 1800,  # measured 1302s
+    # ⛭ ADDED r4564 (60).  `C63` drives the two-arm instrument as a SUBPROCESS ten times -- eight for
+    # the source-term matrix (both arms x baseline/NOISW/DPSRC/SWSRC) and two for the damping
+    # exclusion -- and every one of the ten is load-bearing: the claim is that NO single term carries
+    # the split, which cannot be made from a subset.  ** Measured, all three on this machine: 313s at
+    # eight runs (r4558), 383s at ten standalone (r4562), and 525s at ten under `--jobs 4`. **
+    #   ⇒ *Declared because the cost is REAL and its spread under contention is 1.7x, not because the
+    #     file was seen to be slow once.  At 525s against a 600s cap it had 14% of margin, and a
+    #     receipt that close to the wall reports `SLOW` sooner or later -- and `SLOW` is not a pass.*
+    #   ⌗ ** The number is the worst MEASURED figure plus headroom **, on the same rule as C59's:
+    #     525s measured -> 900s declared, not a round figure chosen to feel safe.
+    'C63_no_single_source_term_carries_the_undriven_split_and_the_first_probe_read_an_unwired_knob.py': 900,  # measured 525s under --jobs 4
 }
+# ⌗ ** AND ONE OBSERVATION RECORDED RATHER THAN EXPLAINED, r4564. **  In the run that first showed
+# `C63` at 525s, `Q1_a_stated_tolerance_is_a_request_and_the_corpus_answers_it.py` hit the 600s cap --
+# after five consecutive suite runs at 45-47s, and it runs standalone in 35s.  It did NOT recur on the
+# next full chunk (50s, PASS).  *No mechanism was established: CPU threading is ruled out (both files
+# measure user/real ~1.1, so neither is meaningfully parallel) and so is memory (16 GB total, 14 GB
+# free, no swap).*  ⇒ ** Written down because a one-off 13x overrun with no cause found is worth the
+# next reader's suspicion, and because the honest record of a thing that happened once is "once", not
+# "flake" and not silence. **  If it returns, the first suspect is this entry's own subject: `C63`
+# holds a `--jobs` slot for ~9 minutes of continuous subprocess work.
 
 
 def registered():
