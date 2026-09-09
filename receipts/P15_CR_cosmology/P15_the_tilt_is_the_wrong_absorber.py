@@ -8,6 +8,12 @@ joint fit, which is the whole of what remains", after r4505 found that a refit o
 amplitude and tilt absorbs the diffusion-scale signature almost entirely in shape at
 the cost of Delta n_s = -0.0304 against sigma = 0.00323.
 
+** COMPUTES: the local slope of the absorbed-shape curve across the multipole range the fit
+is scored on, at the configuration r4505 measured -- the 185-bin ceiling, amplitude and tilt
+free and nothing else, no parameter fitted to make the displacement large or small.  Scope:
+it shows the question as posed is not well formed; it does NOT perform the joint fit, which
+remains what would settle a tension. **
+
 ** THE QUESTION AS POSED PRESUMES THE DISPLACEMENT IS A NUMBER.  IT IS A LOCAL SLOPE
    OF A CURVE, AND THE CURVE'S SLOPE VARIES BY A FACTOR OF SEVEN THOUSAND OVER THE
    DATA THE FIT IS SCORED ON. **

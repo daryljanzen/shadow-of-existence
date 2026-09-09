@@ -8,6 +8,12 @@ not move the leading coefficient, but that the regularisation commutes with the
 evolution is not established and the couplings are not in it", discharged by "the
 coupled and non-adiabatic computation".
 
+** COMPUTES: on the corpus's own tower spectrum -- eigenvalues n(n+2)-2 with degeneracy
+2(n-1)(n+3) for n >= 2, taken from P10 rather than from a textbook -- the spectral zeta at
+zero and the residue, as exact identities rather than numerical estimates, and the scale
+factor's place in them.  Nothing is fitted.  Scope: the FREE tower; the couplings are not
+in it, and whether the regularisation commutes with the evolution is not established here. **
+
 THE CONTRIBUTION IS THE LAST SECTION.  The first two are confirmations, made exact.
 
 (A) CONFIRMED EXACTLY -- zeta(0) = 10.  On the tower's spectrum, mapped to the
