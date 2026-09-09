@@ -46,6 +46,12 @@ claim it bears on is a proof rather than a coherent proposition.*
   non-reabsorbable, and **what it does to the observed high-$\ell$ power is not**, turning on a parameter
   refit and the early integrated Sachs–Wolfe term.
 - **`PO-13` — what the driving does on the leaf rate.** The measured deficit whose mechanism is missing.
+- **`PO-44` — is the tower's boundary condition helicity-blind?** One check, and it closes or opens the
+  parity-odd question outright. **The tower is chirally capable** — its two helicities are inequivalent
+  representations of the connected isometry group, exchanged only on the component no connected action reaches
+  — so whether a parity-odd term is generated turns on *the state* rather than on the geometry. *If the
+  regularity condition does not distinguish the two towers they are populated alike and the content cancels;
+  that is a closure by the state and not achirality.*
 - **`PO-43` — the Weyl-squared coefficient at second order in the shear.** `P10` names the entry rather than
   leaving it open: the shear costs *exactly one* new counterterm and it is the Weyl-squared one, so the ledger
   acquires it and the question is at what coefficient. **`PO-23`'s computation did not cost it** — the
