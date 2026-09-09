@@ -146,6 +146,124 @@ sources: [cowork, chat]
 
 
 
+### Revision r6435 — 2026-09-09 (node 64). **The counterterm room surveyed: `PO-43`'s two replacement questions are one answered and one not independent, and the room's remaining openings drop from three to two.**
+
+**⌗ `r4545` SAID "TWO INDEPENDENT QUESTIONS REPLACE IT". NEITHER SURVIVES AS STATED.**
+
+**⛭ ⓵ THE CONNECTED-ISOMETRY QUESTION IS ANSWERED --- AND BY A ROW STRUCK TWO REVISIONS AFTER `r4545`
+NAMED IT.** *`PO-44`'s own strike note reads that the tower "IS chirally capable, its two helicities being
+inequivalent representations of the connected isometry group exchanged only on the disconnected
+component". **`PO-43` still carried the question because `PO-44` came later.*** ⌗ *The mechanism is
+exhibited rather than taken: $S^{3}=\mathrm{SU}(2)$, connected isometry
+$(\mathrm{SU}(2)_{L}\times\mathrm{SU}(2)_{R})/\mathbb{Z}_{2}$, transverse-traceless rank two carrying
+$|j_{L}-j_{R}|=2$, so each level is $(j,j+2)\oplus(j+2,j)$ with $2j+1=n-1$ --- **whose dimensions sum to
+exactly $2(n-1)(n+3)$, `P10`'s own Peter--Weyl degeneracy, at every level checked**. The families are
+distinct irreducibles and the exchange is the **factor swap**, orientation-reversing. ⇒ ***So the parity-odd
+closure is the STATE's and not the geometry's***, which is what `PO-44` says and is not achirality.*
+
+**⛭⛭ ⓶ THE TOPOLOGICAL-TERMS QUESTION IS NOT INDEPENDENT.** *A topological term **contributes no field
+equation** --- `P10`'s own words of the Gauss--Bonnet combination --- so a coefficient multiplying one is
+not read off any dynamics, and its only remaining home is the **horizon entropy**. There the corpus has no
+position: `PO-32` closes the collapse face by absence of a bearer and states that `p0` "computes the number
+conditionally and declines", so **"the corpus is uncommitted on both faces"**. And `p0`'s `sec:ledger` says
+nothing of the class --- *topological*, *Gauss*, *Euler*, *field equation*: **zero occurrences**.*
+⇒ ***So it is the de~Sitter horizon-entropy question reached from the other side, and closes only when that
+one does.***
+
+**⛭⛭⛭ WHAT THAT DOES TO THE ROOM.** *With `PO-23` and `PO-43` both carrying values, **the counterterm
+room's remaining openings are two rather than three: the coupled mode-sum computation, and whether the
+de~Sitter horizon entropy has a referent** --- and the second was not previously counted as belonging to
+this room at all.*
+
+⌗ **PROPAGATED IN THE SAME TURN, which is the point.** *`P10` `sec:lock` now carries both statements beside
+the entry they bear on. ⚠ *And landing it exposed a rail nobody had run: adding receipts generates
+appendices, and `appendix_receipts_P15.tex` was **stale by five lines** from this session's earlier
+additions --- `check_appendix_current` caught it, the diff was checked against the gate's own warning that
+regenerating is not automatically right, and it was only my own new rows.* All six papers compile at zero
+undefined; both appendix rails match what their indices generate.*
+
+### Revision r6433 — 2026-09-09 (node 64). **`PO-13`: the potential's half of the one-locus statement answered from the row's own named lead; a handoff written for a fresh head recovered from a branch; and a revision this line lost and got back.**
+
+**⌗ THE ROW NAMED ITS OWN LEAD AND NOBODY HAD FOLLOWED IT.** *`PO-13` asks for "a statement of what the
+photon perturbation and the potential both are AT ONE LOCUS" and adds that **"`C19`'s relation between the
+two potentials is the closest the corpus has and nothing in the instrument uses it"**. The join is
+conservation of $\mathcal{R}$, hence a change of variable, and at constant $w$ with
+$\mathcal{R}/\Phi=(5+3w)/(3+3w)$ it is $(3/2)/(5/3)=\tfrac{9}{10}$ **exactly**, with $\Phi$ constant on
+the matter-dominated expanding leg.*
+
+**⛭ AND `P15` ALREADY STATES AND RECEIPTS IT**, *which makes the defect definite rather than proposed:
+"$\Phi\to\Phi_i$ for every $k$, with the expanding leg inheriting $\tfrac{9}{10}\Phi_i$ scale-invariantly"
+(`C21`). ***So the instrument's "$\Psi=-1$, its primordial value" is $\Phi_i$ where the paper's own computed
+transfer says $\tfrac{9}{10}\Phi_i$*** --- and with $\Theta$ by the closed-form transfer at the branch point
+and $\Psi$ at $\tfrac{9}{10}$ there, both sit at one locus: **a fourth coding, distinct from the three
+measured** ($2.43$, $5.14$, a dead comb).*
+
+⚠ **AND ITS SIZE IS $10/9$, NOT $2.4$. THIS IS NOT THE CURE.** *The omission is $11\%$ and
+**scale-invariant**, so it moves an amplitude and cannot move a ratio --- $P_1/P_2$ and $\ell_1/\ell_A$ are
+untouched. **A definite, receipted, presently-correctable defect in the handover coding, and nothing
+larger.***
+
+**⛭⛭ AND A DOCUMENT WRITTEN FOR EXACTLY THIS SITUATION WAS INVISIBLE.** *`PO13_HANDOFF.md`, written at
+`r3558` "for a fresh head", sat on a branch `FOR_56` names six times and that is 58 commits ahead of
+`main`. **Brought across for its §2 --- eight levers eliminated by measurement and recorded nowhere
+else.*** ⛔ *But **its core question has moved**: `r4145` reassigned the perturbations to the leaf, so §3's
+split-rate experiment is not the open fork it was, and `r4549` showed the distance cancels identically, so
+the ratio was never a projection quantity. **Carried with a currency header saying which sections to trust
+and which are record** --- merging it silently would have misdirected the reader it was written for. ⌗ *Two
+of its clauses parked CI decisions on the owner; a live document may not carry a deferral and those are a
+node's calls, so one is answered by `r6401`'s roster and the other is called in place. The alteration is
+recorded in the header.*
+
+⛔ **AND THE LOSS THIS LINE CAUSED AND RECOVERED, because it defeated the very check added to prevent it.**
+*`r6431` was committed, then a chained `git rebase` conflicted **with its output redirected**, leaving HEAD
+detached at the upstream commit. The push then pushed that --- a no-op --- and the SHA check reported
+`remote` and `mine` **matching, because both were the other line's commit**. ***A verification that compares
+two copies of the wrong thing passes.*** The next turn's `reset --hard` then dropped the work from the
+branch. **Recovered whole from the reflog and cherry-picked back**; `P18`'s nine-row frontier list, its
+masthead clause and the `r6431` entry are all present. ⇒ ***The rule that follows: verify by the commit's
+own SUBJECT on the remote, never by a SHA that both sides could share for the wrong reason --- and never
+redirect the output of a rebase.***
+
+### Revision r6431 — 2026-09-09 (node 64). **PROPAGATION COMPLETE, paper 6 of 6 — `P18`: the frontier list rewritten against the corpus that now exists, and the count corrected from ten to nine.**
+
+**⌗ THE SYNTHESIS WAS LAST, DELIBERATELY, so it would synthesise a settled corpus rather than a moving
+one** *--- and it was stale in almost every row, which is what a synthesis written before its sources move
+always becomes. **The struck row left the list**: `PO-44`'s helicity-blind question was answered at `r4553`
+and the table still carried it, so the section headed "the ten" listed ten where nine are open. **Corrected
+in the heading and in the cross-reference that quotes it.***
+
+**⛭ AND SEVEN OF THE REMAINING NINE ROWS MOVED**, *each to what would actually discharge it now:*
+*· the generative law --- **the curve's dynamics given content is supplied**, and what is owed is a law for
+the content, the equation of state being an input general relativity also takes;*
+*· the compact-face sector --- **first, what such a construction would be**, and on the reading available
+it is not vector-like but **empty**;*
+*· the mode sums --- **the coupled computation and only that**, the scale factor factoring out of the free
+sum identically;*
+*· the Weyl-squared coefficient --- **stated at $\tfrac{1}{60}$**, reversible on the physical-mode scoping;*
+*· the charged collapse --- **what stands in the horizon's place**, the eternal horizon not being formed;*
+*· the Hubble--Eddington radius --- **discriminating the dark fraction rather than the framework**;*
+*· the progenitor spectrum --- **reaching the head of a bounded genealogy**, stationarity excluded.*
+
+**⌗ AND THE UNPAID COLUMN, which is where a synthesis most easily overstates or understates.** *It called
+the damping signature "largely degenerate with the spectral tilt" --- **true, and now precise**: the
+degeneracy is *window-local*, the signature being a Gaussian and a tilt a power law, so a joint fit meets a
+**shape residual and not a shifted tilt**. ⌗ *The abstract needed no edit; it carries no frontier count, and
+its one apparent "ten" is inside "shortened".*
+
+---
+
+**⛭⛭⛭ PROPAGATION COMPLETE: six papers, six revisions, `r6419`--`r6431`.** *`P10`, `P08`, `P13`, `P15`,
+`P03`, `P18`. **All six compile, zero undefined; seven gates green; bibliography clean.** What the pass
+found beyond its own edits: a measurement banked in a register and never in its paper (`PO-23`); a
+correction that reached a body and neither its own upstream sentence nor its masthead (`P13`); a synthesis
+quoting a sentence its source no longer contained, and then a second one this pass created (`P18`); and a
+withdrawal that was not finished until its phrase entered the registry, where it fired immediately on a
+ledger quoting it bare.*
+
+⌗ ***The recurring shape is one shape***: *a result lands where it was produced and does not reach what
+summarises it. Abstracts, frontier lists and synthesis sections are where a reader goes first and where a
+working node edits last.*
+
 ### Revision r6429 — 2026-09-09 (node 64). **PROPAGATION, paper 5 of 6 — `P03`: the charged collapse settled where the paper said it was not, and a robustness clause distinguished from the question it appeared to answer.**
 
 **⌗ `sec:charge` ENDED "it is not settled here". IT IS SETTLED.** *The obstruction the paper states is
