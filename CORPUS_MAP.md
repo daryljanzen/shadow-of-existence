@@ -146,6 +146,42 @@ sources: [cowork, chat]
 
 
 
+### Revision r6429 — 2026-09-09 (node 64). **PROPAGATION, paper 5 of 6 — `P03`: the charged collapse settled where the paper said it was not, and a robustness clause distinguished from the question it appeared to answer.**
+
+**⌗ `sec:charge` ENDED "it is not settled here". IT IS SETTLED.** *The obstruction the paper states is
+exact and stands --- with $Q\neq0$ the origin is timelike and the loop has no branch point to close
+through --- **but that is the ETERNAL Reissner--Nordstr\"om--de~Sitter geometry, and a collapse is
+dynamical.** The inner horizon's fate is the competition between the blueshift $e^{\kappa_{-}v}$ and the
+exterior decay, and it survives only when their ratio exceeds $\tfrac12$.*
+
+**⛭ AND $\Lambda>0$ IS WHY THE QUESTION NEEDED A NUMBER RATHER THAN THE USUAL INTUITION.** *With a
+cosmological horizon the exterior decay is **exponential** rather than power-law, so the ratio is finite
+and **near extremality the horizon does survive**. On a progenitor of the framework paper's mass it does
+not, by a wide margin and in ***both*** readings of a residual charge --- $\simeq10^{-251}$ for a charge
+of order $e$, $\simeq10^{-15}$ for a per-baryon asymmetry at the laboratory bound --- computed with a
+deliberately generous ceiling on the decay rate so the figure **bounds the horizon's chances from
+above**. ⇒ ***The eternal inner horizon is not formed, and the obstruction is a property of a stationary
+solution the dynamical problem does not reach.*** ⌗ *And the two readings agreeing matters on its own:
+**this step does not depend on the extensive-versus-intensive fork** the datum question carries.*
+
+**⛔ AND WHAT IT DOES NOT DELIVER IS IN THE SAME BREATH, not after it.** *A Cauchy horizon failing to form
+means the maximal development is **inextendible** there; ***it does not by itself return a spacelike
+$r=0$*** for the signed radius to pass through. **So the charged case is not thereby rejoined to the
+uncharged loop** --- what stands in the horizon's place is the dynamical interior's question.*
+
+**⌗ AND IN `sec:curvature`, A CLAUSE THAT READS AS FORECLOSING A QUESTION IT DOES NOT ANSWER.** *The paper
+quotes Pavlidou--Tomaras for a test "robust to cosmic epoch, dark-matter details, and baryonic effects".
+***That robustness is profile-independence GIVEN $M$*** --- the radius depends on the enclosed total, not
+its distribution --- **and a reader meeting it will not then ask which $M$**. The two candidates are not
+close: a baryonic-set radius is smaller by $f_b^{1/3}$, worth $1.85$ in the radius and $6.4$ in an
+inferred $\Lambda$. ⇒ ***And the construction predicts neither***: $m(r)$ is the bend, so whatever
+gravitates is in it, exactly as in general relativity. **What such a measurement discriminates is the dark
+fraction, not the framework** --- it bears on this paper only through the input to the one-scale reading.*
+
+⌗ *Symbol collision avoided in the drafting: $\alpha$ is reserved corpus-wide for the throat radius and
+could not double as the spectral gap, so the ratio is written without a second symbol. `P03` 68pp, zero
+undefined; abstract carries none of the affected material, so no masthead edit is owed; gates green.*
+
 ### Revision r6427 — 2026-09-09 (node 64). **PROPAGATION, paper 4 of 6 — `P15`: the absorption bound made exact, the fixed-point route closed in the frontier item that owns it, and the masthead moved from "open" to "located".**
 
 **⌗ THE ABSORPTION PASSAGE WAS ALREADY CAREFUL AND IS NOW EXACT.** *`P15` said a tilt approximates the
