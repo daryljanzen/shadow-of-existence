@@ -1,0 +1,40 @@
+# THE RECEIPT HOMES  --  data, not code.  Read by check_receipt_home.py.
+#
+# ** ONE PAPER, ONE HOME.  Declared, so a node adding a receipt does not have to guess. **
+#
+# Several papers acquired a second receipt directory, and a few a third, and nothing said
+# which was the home.  ** A node adding a receipt then guesses, and guesses wrong: node 64
+# did it twice in one session (r6403 put a P8 receipt in a NEW `P8_slicing_operator`
+# beside the existing `P08_slicing_operator`; r6437 created a stray `P17_geometric_core`
+# beside `P17_geometric_core_paper`).  Neither was visible to `check_receipts`, because a
+# row that names a real path resolves. **
+#
+# ⇒ THE FIX IS THE ONE `check_receipt_prefixes` ALREADY CHOSE FOR THE FILENAME NAMESPACE:
+#   ** declare the home, GRANDFATHER what is already placed, and stop the next stray. **
+#   Its own words: "the bands apply going forward and existing allocations are
+#   grandfathered.  Nothing in the tree needs to move for this gate to be green; what it
+#   stops is the NEXT collision."  ** Moving hundreds of files would be churn this corpus
+#   has already declined for the same class of defect. **
+#
+# format:  paper  home_directory  [legacy directories, grandfathered, no new files]
+#
+# ⌗ p0 and P17 are ONE paper: `p0` is the deprecated tag, kept in receipts and ledgers and
+#   not used going forward, so the home is the P17 one.
+#
+P1     P01_BH_causality           P01_metric_singularity
+P2     P02_janzen_circle
+P3     P03_SdS_slicing            P03_slicing_curve
+P4     P04_modern_parallax
+P5     P05_groupoid
+P6     P06_shadow                 P06_shadow_of_existence
+P7     P07_CR_framework
+P8     P08_slicing_operator
+P9     P09_range_paper
+P10    P10_canonical_time
+P11    P11_dynamics_paper
+P12    P12_algebroid_paper        P12_algebroid
+P13    P13_boundary_paper         P13_boundary
+P14    P14_matter_sector_paper
+P15    P15_CR_cosmology
+P16    P16_cosmogenesis_paper     P16_cosmogenesis
+P17    P17_geometric_core_paper   p0_geometric_core

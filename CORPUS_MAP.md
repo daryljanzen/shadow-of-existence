@@ -146,6 +146,37 @@ sources: [cowork, chat]
 
 
 
+### Revision r6439 — 2026-09-09 (node 64). **CLEANUP 1 — one paper, one receipt home: declared, grandfathered, gated. Nothing moved.**
+
+**⌗ THE DEFECT, MEASURED.** *Six papers carry a second receipt directory and one carried a third
+(`P1`, `P3`, `P6`, `P12`, `P13`, `P16`, and `P17`/`p0`), and **nothing declared which was the home**.
+⇒ ***So a node adding a receipt guesses --- and this line guessed wrong twice in one session***: `r6403`
+put a `P8` receipt in a new `P8_slicing_operator` beside the existing `P08_slicing_operator`, and `r6437`
+created a stray `P17_geometric_core` beside `P17_geometric_core_paper`.*
+
+**⛔ AND IT WAS INVISIBLE TO EVERY INSTRUMENT THE CORPUS HAD.** *`check_receipts` asks whether a row
+**resolves**, and ***a stray resolves perfectly***. The question nobody was asking is **placement**.*
+
+**⛭ THE REMEDY IS THE ONE THE CORPUS ALREADY CHOSE FOR THIS SHAPE, AND NOT A MASS MOVE.**
+*`check_receipt_prefixes` met the identical problem in the filename namespace and settled it in its own
+words: **"the bands apply going forward and existing allocations are grandfathered. Nothing in the tree
+needs to move for this gate to be green; what it stops is the NEXT collision."** ⇒ ***Relocating hundreds
+of files would break every path in `INDEX.md`, every appendix generated from it, and every path quoted in a
+receipt's own prose --- to fix a defect whose entire cost is that the next node guesses.*** **Declaring the
+home removes that cost outright.***
+
+**⌗ WHAT LANDED.** *`corpus/receipt_home.txt` --- **data, beside `node_roster.txt`** --- declaring one home
+per paper with seventeen papers and seven legacy directories grandfathered; `corpus/check_receipt_home.py`,
+which fails on a **new** stray and asks nothing existing to move; the gate wired into the CI list; and the
+rule at the top of `THE_HUB` where a node adding a receipt will meet it. ⌗ *`p0` and `P17` fold as one
+paper, the deprecated tag keeping its receipts and the home being the `P17` one.*
+
+⌗ **AND ONE THING THE SURVEY DID NOT FIND, checked rather than reported.** *Several homes show more files
+than index rows, which would have been unregistered receipts. **Zero receipt `.py` files lack a row** ---
+the gap is `CLAIMS.md` and similar sitting in those directories. Not a defect.*
+
+⌗ *Gate verified against a seeded stray, and clean on the tree. Eight gates green.*
+
 ### Revision r6437 — 2026-09-09 (node 64). **The entropy question is not costless, and `p0` recorded it as being: the no-free-constants claim has a stake in which branch holds.**
 
 **⌗ `p0` DECLINES, AND SAYS THE DECLINATION COSTS NOTHING.** *"Whether $S=A/4$ carries to a cosmological

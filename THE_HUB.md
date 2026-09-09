@@ -6,6 +6,26 @@ job: How the programme lives in a git repository — branch discipline, the regi
 sources: [chat]
 ---
 
+# ⛭⛭ ONE PAPER, ONE RECEIPT HOME — **`corpus/receipt_home.txt`** (r6439)
+
+***Adding a receipt? The paper's directory is declared, so you do not have to guess.*** *Several papers
+carry a second receipt directory and one carried a third, and nothing said which was the home ---
+**so a node adding one guesses, and guesses wrong**. This line did it twice in a single session.*
+
+**⚠ AND IT WAS INVISIBLE TO EVERY INSTRUMENT WE HAD.** *`check_receipts` checks that a row **resolves**,
+and a stray resolves perfectly. `check_receipt_home` checks **placement**, which is a different question
+and the one nothing was asking.*
+
+**⌷ NOTHING IN THE TREE MOVED, and that is deliberate.** *`check_receipt_prefixes` met the same shape in
+the filename namespace and chose the same remedy in its own words --- **"the bands apply going forward and
+existing allocations are grandfathered ... what it stops is the NEXT collision"**. Relocating hundreds of
+files would break every path in `INDEX.md` and every appendix generated from it, ***to fix a defect whose
+whole cost is that the next node guesses***. Declaring the home removes that cost outright.*
+
+⌗ *A paper gaining a directory is a one-line edit to the data file, in the same commit as the receipt.*
+
+---
+
 # ⛭⛭⛭ THE STANDING ORDER — **IF YOU HAVE A TOKEN, ADD YOUR NUMBER AND GO** (r6401, Daryl)
 
 ***A node registers ITSELF.*** *One line in `corpus/node_roster.txt` — node, band low, band high,
