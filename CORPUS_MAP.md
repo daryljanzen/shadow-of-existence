@@ -146,6 +146,48 @@ sources: [cowork, chat]
 
 
 
+### Revision r6433 — 2026-09-09 (node 64). **`PO-13`: the potential's half of the one-locus statement answered from the row's own named lead; a handoff written for a fresh head recovered from a branch; and a revision this line lost and got back.**
+
+**⌗ THE ROW NAMED ITS OWN LEAD AND NOBODY HAD FOLLOWED IT.** *`PO-13` asks for "a statement of what the
+photon perturbation and the potential both are AT ONE LOCUS" and adds that **"`C19`'s relation between the
+two potentials is the closest the corpus has and nothing in the instrument uses it"**. The join is
+conservation of $\mathcal{R}$, hence a change of variable, and at constant $w$ with
+$\mathcal{R}/\Phi=(5+3w)/(3+3w)$ it is $(3/2)/(5/3)=\tfrac{9}{10}$ **exactly**, with $\Phi$ constant on
+the matter-dominated expanding leg.*
+
+**⛭ AND `P15` ALREADY STATES AND RECEIPTS IT**, *which makes the defect definite rather than proposed:
+"$\Phi\to\Phi_i$ for every $k$, with the expanding leg inheriting $\tfrac{9}{10}\Phi_i$ scale-invariantly"
+(`C21`). ***So the instrument's "$\Psi=-1$, its primordial value" is $\Phi_i$ where the paper's own computed
+transfer says $\tfrac{9}{10}\Phi_i$*** --- and with $\Theta$ by the closed-form transfer at the branch point
+and $\Psi$ at $\tfrac{9}{10}$ there, both sit at one locus: **a fourth coding, distinct from the three
+measured** ($2.43$, $5.14$, a dead comb).*
+
+⚠ **AND ITS SIZE IS $10/9$, NOT $2.4$. THIS IS NOT THE CURE.** *The omission is $11\%$ and
+**scale-invariant**, so it moves an amplitude and cannot move a ratio --- $P_1/P_2$ and $\ell_1/\ell_A$ are
+untouched. **A definite, receipted, presently-correctable defect in the handover coding, and nothing
+larger.***
+
+**⛭⛭ AND A DOCUMENT WRITTEN FOR EXACTLY THIS SITUATION WAS INVISIBLE.** *`PO13_HANDOFF.md`, written at
+`r3558` "for a fresh head", sat on a branch `FOR_56` names six times and that is 58 commits ahead of
+`main`. **Brought across for its §2 --- eight levers eliminated by measurement and recorded nowhere
+else.*** ⛔ *But **its core question has moved**: `r4145` reassigned the perturbations to the leaf, so §3's
+split-rate experiment is not the open fork it was, and `r4549` showed the distance cancels identically, so
+the ratio was never a projection quantity. **Carried with a currency header saying which sections to trust
+and which are record** --- merging it silently would have misdirected the reader it was written for. ⌗ *Two
+of its clauses parked CI decisions on the owner; a live document may not carry a deferral and those are a
+node's calls, so one is answered by `r6401`'s roster and the other is called in place. The alteration is
+recorded in the header.*
+
+⛔ **AND THE LOSS THIS LINE CAUSED AND RECOVERED, because it defeated the very check added to prevent it.**
+*`r6431` was committed, then a chained `git rebase` conflicted **with its output redirected**, leaving HEAD
+detached at the upstream commit. The push then pushed that --- a no-op --- and the SHA check reported
+`remote` and `mine` **matching, because both were the other line's commit**. ***A verification that compares
+two copies of the wrong thing passes.*** The next turn's `reset --hard` then dropped the work from the
+branch. **Recovered whole from the reflog and cherry-picked back**; `P18`'s nine-row frontier list, its
+masthead clause and the `r6431` entry are all present. ⇒ ***The rule that follows: verify by the commit's
+own SUBJECT on the remote, never by a SHA that both sides could share for the wrong reason --- and never
+redirect the output of a rebase.***
+
 ### Revision r6431 — 2026-09-09 (node 64). **PROPAGATION COMPLETE, paper 6 of 6 — `P18`: the frontier list rewritten against the corpus that now exists, and the count corrected from ten to nine.**
 
 **⌗ THE SYNTHESIS WAS LAST, DELIBERATELY, so it would synthesise a settled corpus rather than a moving
