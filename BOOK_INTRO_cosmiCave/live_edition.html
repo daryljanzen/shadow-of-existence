@@ -83,8 +83,14 @@ this page.</p>
       <span class="ti"><b>Introduction</b><span class="sub">what the programme is,
       the eighteen chapters and how they depend on one another, where to come in,
       and at what weight each claim is held</span></span></summary>
-      <div class="intro"><p class="status">Fetching the introduction…</p></div>
-    </details><span class="nolink"></span></li>
+      <div class="intro"><h3>1 · What this is</h3>
+<p>General relativity does not single out a physical foliation. Nothing in the theory says which slicing of spacetime is <em>the</em> present, and the standard reading takes that as a statement about the world: no objective present, no fact about simultaneity, only the block.</p>
+<p><strong>Cosmological Relativity begins from the observation that this is a statement about general relativity, not about the world</strong> — and that the world, in one specific circumstance, does single one out. Under gravitational collapse the horizon's own geometry fixes a limiting causal direction, and it is generically non-orthogonal to any spacelike slice. That direction is not a convention. It is forced, and it is what gets reassigned as cosmic time.</p>
+<p>Followed through, the picture inverts. Our universe is read as <strong>the interior of a gravitational collapse</strong> — not an explosion from a point but the far side of one, on the conjugate branch: an antimatter progenitor, decelerating to a turnaround, sweeping through the coordinate origin where the species reverses, re-expanding. What we call the beginning is that passage. The origin is not where matter came from; it is a horizon the slicing is anchored to, and the reading that made it a source was inherited from a choice of slicing rather than found in the geometry.</p>
+<p>The progenitor is not a free parameter. The collapse selects the one configuration whose limiting direction grazes its own horizon, and that fixes its mass by the cosmological constant alone — <strong>M = c²/3√Λ G</strong>, about 4×10⁵² kg. Everything on the geometry scales from that single length.</p>
+      <p class="more"><a href="introduction.html" target="_blank"
+         rel="noopener">Read the whole introduction \u2192</a></p></div>
+    </details><a href="introduction.html" target="_blank" rel="noopener">READ</a></li>
     <li><details><summary><span class="pn">P1</span><span class="ti"><b>The event horizon is a metric singularity</b><span class="sub">a missing definition in general relativity, and the black-hole problems it dissolves</span></span></summary><div class="abs"><p>We identify a geometric structure we argue standard general relativity has lacked among its
 standard definitions: the <em>metric singularity</em>—a null hypersurface along whose
 generators the spatial extent has, in addition, contracted to zero, so that events on a
@@ -219,8 +225,8 @@ repository</a>. Papers via jsDelivr; the frontier read live at page load.
     } catch (e) { /* try the next source */ }
   }
   if (text === null) {
-    el.innerHTML = '<p class="status">The frontier could not be reached just ' +
-      'now. It lives at <a href="https://raw.githubusercontent.com/daryljanzen/shadow-of-existence/main/THE_FRONTIER.md">THE_FRONTIER.md</a>.</p>';
+    el.innerHTML = '<p class="more"><a href="https://raw.githubusercontent.com/daryljanzen/shadow-of-existence/main/THE_FRONTIER.md" '
+      + 'target="_blank" rel="noopener">Read the frontier \u2192</a></p>';
     return;
   }
   // Rows are markdown table lines: | **PO-n** | what | ... | discharge |
@@ -238,9 +244,8 @@ repository</a>. Papers via jsDelivr; the frontier read live at page load.
     rows.push({id: id, what: c[2] || '', disc: c[9] || ''});
   }
   if (!rows.length) {
-    el.innerHTML = '<p class="status">Fetched the frontier but read no open ' +
-      'rows from it — the format may have moved. ' +
-      '<a href="https://raw.githubusercontent.com/daryljanzen/shadow-of-existence/main/THE_FRONTIER.md">Read it directly.</a></p>';
+    el.innerHTML = '<p class="more"><a href="https://raw.githubusercontent.com/daryljanzen/shadow-of-existence/main/THE_FRONTIER.md" '
+      + 'target="_blank" rel="noopener">Read the frontier \u2192</a></p>';
     return;
   }
   const clean = s => s.replace(/\\*\\*/g, '').replace(/`/g, '')
@@ -256,57 +261,6 @@ repository</a>. Papers via jsDelivr; the frontier read live at page load.
              '</span>' : '') + '</div>';
   }
   el.innerHTML = html;
-})();
-
-// The introduction and the matrix are fetched for the same reason the frontier
-// is: a copy pasted into this page is a second home, and second homes go stale.
-(async function () {
-  const box = document.querySelector('#introbox .intro');
-  try {
-    const r = await fetch('https://cdn.jsdelivr.net/gh/daryljanzen/shadow-of-existence@main/INTRODUCTION.md', {cache: 'no-cache'});
-    if (!r.ok) throw 0;
-    const md = await r.text();
-    const esc = t => t.replace(/&/g, '&amp;').replace(/</g, '&lt;');
-    const inline = t => esc(t)
-      .replace(/\*\*(.+?)\*\*/g, '<strong>$1</strong>')
-      .replace(/\*(.+?)\*/g, '<em>$1</em>')
-      .replace(/`(.+?)`/g, '<code>$1</code>');
-    let html = '', para = [], inFig = false;
-    const flush = () => { if (para.length) {
-      html += '<p>' + inline(para.join(' ')) + '</p>'; para = []; } };
-    for (const line of md.split('\n')) {
-      // The introduction carries its own <figure> for the matrix.  Replace that
-      // block with a slot and drop the live table into it, so the matrix sits
-      // where the text already explains it rather than beside the text.
-      if (/^<figure>/.test(line.trim())) {
-        flush(); inFig = true;
-        html += '<figure class="matrix"><div id="matrixslot">' +
-                '<p class="status">Fetching the matrix\u2026</p></div>';
-        continue;
-      }
-      if (inFig) {
-        const cap = line.match(/<figcaption>([\s\S]*)/);
-        if (cap) html += '<figcaption>' + cap[1].replace(/<\/figcaption>.*/, '') +
-                         '</figcaption>';
-        if (/<\/figure>/.test(line)) { html += '</figure>'; inFig = false; }
-        continue;
-      }
-      if (/^#{1,3} /.test(line)) {
-        flush();
-        html += '<h3>' + inline(line.replace(/^#+ /, '')) + '</h3>';
-      } else if (!line.trim()) { flush(); }
-      else { para.push(line.trim()); }
-      if (html.length > 40000) break;
-    }
-    flush();
-    html += '<p class="more">The introduction as the repository currently ' +
-            'holds it \u2014 it changes when the work does.</p>';
-    box.innerHTML = html;
-    placeMatrix();
-  } catch (e) {
-    box.innerHTML = '<p class="status">The introduction could not be reached ' +
-      'just now. <a href="https://raw.githubusercontent.com/daryljanzen/shadow-of-existence/main/INTRODUCTION.md">Its source is here.</a></p>';
-  }
 })();
 
 // The matrix belongs INSIDE the introduction, at the figure the introduction

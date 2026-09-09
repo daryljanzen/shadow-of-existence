@@ -25,6 +25,7 @@ import glob
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 OUT = os.path.join(ROOT, 'BOOK_INTRO_cosmiCave', 'live_edition.html')
+OUT_INTRO = os.path.join(ROOT, 'BOOK_INTRO_cosmiCave', 'introduction.html')
 CDN = 'https://cdn.jsdelivr.net/gh/daryljanzen/shadow-of-existence@main'
 RAW = 'https://raw.githubusercontent.com/daryljanzen/shadow-of-existence/main'
 
@@ -42,6 +43,30 @@ ORDER = [
     ('P16', 'cosmogenesis_paper'), ('P17', 'geometric_core_paper'),
     ('P18', 'CR_synthesis'),
 ]
+
+
+MATRIX_JS = '''// The matrix belongs INSIDE the introduction, at the figure the introduction
+// already carries for it -- not as a sibling accordion.  It is fetched for the
+// same reason everything else here is.
+async function placeMatrix() {
+  const slot = document.getElementById('matrixslot');
+  if (!slot) return;
+  try {
+    const r = await fetch(
+      '%%CDN%%/BOOK_INTRO_cosmiCave/assets/dependency_matrix.html',
+      {cache: 'no-cache'});
+    if (!r.ok) throw 0;
+    const doc = new DOMParser().parseFromString(await r.text(), 'text/html');
+    const tbl = doc.querySelector('table');
+    if (!tbl) throw 0;
+    slot.innerHTML = '';
+    slot.appendChild(tbl);
+  } catch (e) {
+    slot.innerHTML = '<p class="status">The matrix is at ' +
+      '<a href="%%RAW%%/BOOK_INTRO_cosmiCave/assets/dependency_matrix.html">' +
+      'dependency_matrix.html</a>.</p>';
+  }
+}'''.replace('%%CDN%%', CDN).replace('%%RAW%%', RAW)
 
 
 def title_of(stem):
@@ -101,6 +126,63 @@ def abstract_of(stem, max_paras=3, cap=1400):
     return kept, truncated
 
 
+
+def md_to_html(md, matrix_slot=True, stop_at_h2=None):
+    """INTRODUCTION.md -> HTML. The introduction is mostly headings, paragraphs
+    and one raw <figure> for the matrix; nothing else is used, checked at build."""
+    out, para, in_fig, seen_h2 = [], [], False, 0
+
+    def inline(t):
+        t = t.replace('&', '&amp;').replace('<', '&lt;')
+        t = re.sub(r'\*\*(.+?)\*\*', r'<strong>\1</strong>', t)
+        t = re.sub(r'\*(.+?)\*', r'<em>\1</em>', t)
+        return re.sub(r'`(.+?)`', r'<code>\1</code>', t)
+
+    def flush():
+        if para:
+            out.append('<p>' + inline(' '.join(para)) + '</p>')
+            para.clear()
+
+    for line in md.split('\n'):
+        st = line.strip()
+        if st.startswith('<figure>'):
+            flush()
+            in_fig = True
+            if matrix_slot:
+                out.append('<figure class="matrix"><div id="matrixslot">'
+                           '<p class="status">Loading the matrix\u2026</p></div>')
+            continue
+        if in_fig:
+            cap = re.search(r'<figcaption>([\s\S]*)', line)
+            if cap and matrix_slot:
+                out.append('<figcaption>' +
+                           re.sub(r'</figcaption>.*', '', cap.group(1)) +
+                           '</figcaption>')
+            if '</figure>' in line:
+                if matrix_slot:
+                    out.append('</figure>')
+                in_fig = False
+            continue
+        m = re.match(r'^(#{1,4}) (.*)$', st)
+        if m:
+            flush()
+            lvl = len(m.group(1))
+            if lvl == 2:
+                seen_h2 += 1
+                if stop_at_h2 and seen_h2 > stop_at_h2:
+                    break
+            if lvl == 1:
+                continue                       # the page supplies its own title
+            out.append(f'<h{min(lvl + 1, 4)}>' + inline(m.group(2)) +
+                       f'</h{min(lvl + 1, 4)}>')
+        elif not st:
+            flush()
+        else:
+            para.append(st)
+    flush()
+    return '\n'.join(out)
+
+
 def main():
     papers = []
     for num, stem in ORDER:
@@ -114,6 +196,19 @@ def main():
             papers.append((num, t, None, stem))
             continue
         papers.append((num, t, f'{CDN}/{pdf}', stem))
+
+    # The introduction becomes a page of its own, generated from the same source
+    # by the same run -- a build artefact like the PDFs, not a hand copy, so it
+    # cannot drift from INTRODUCTION.md.  The index shows its opening section and
+    # sends a reader to the page for the rest.
+    src = os.path.join(ROOT, 'INTRODUCTION.md')
+    intro_full = intro_excerpt = ''
+    if os.path.exists(src):
+        md = open(src, encoding='utf-8', errors='replace').read()
+        intro_full = md_to_html(md)
+        intro_excerpt = md_to_html(md, matrix_slot=False, stop_at_h2=1)
+    print(f'  introduction: {len(md) if intro_full else 0} source chars -> '
+          f'{len(intro_full)} full, {len(intro_excerpt)} excerpt')
 
     rows, n_abs = [], 0
     for num, t, url, stem in papers:
@@ -224,8 +319,10 @@ this page.</p>
       <span class="ti"><b>Introduction</b><span class="sub">what the programme is,
       the eighteen chapters and how they depend on one another, where to come in,
       and at what weight each claim is held</span></span></summary>
-      <div class="intro"><p class="status">Fetching the introduction…</p></div>
-    </details><span class="nolink"></span></li>
+      <div class="intro">{intro_excerpt}
+      <p class="more"><a href="introduction.html" target="_blank"
+         rel="noopener">Read the whole introduction \u2192</a></p></div>
+    </details><a href="introduction.html" target="_blank" rel="noopener">READ</a></li>
 {paper_list}
 </ul>
 
@@ -253,8 +350,8 @@ repository</a>. Papers via jsDelivr; the frontier read live at page load.
     }} catch (e) {{ /* try the next source */ }}
   }}
   if (text === null) {{
-    el.innerHTML = '<p class="status">The frontier could not be reached just ' +
-      'now. It lives at <a href="{RAW}/THE_FRONTIER.md">THE_FRONTIER.md</a>.</p>';
+    el.innerHTML = '<p class="more"><a href="{RAW}/THE_FRONTIER.md" '
+      + 'target="_blank" rel="noopener">Read the frontier \u2192</a></p>';
     return;
   }}
   // Rows are markdown table lines: | **PO-n** | what | ... | discharge |
@@ -272,9 +369,8 @@ repository</a>. Papers via jsDelivr; the frontier read live at page load.
     rows.push({{id: id, what: c[2] || '', disc: c[9] || ''}});
   }}
   if (!rows.length) {{
-    el.innerHTML = '<p class="status">Fetched the frontier but read no open ' +
-      'rows from it — the format may have moved. ' +
-      '<a href="{RAW}/THE_FRONTIER.md">Read it directly.</a></p>';
+    el.innerHTML = '<p class="more"><a href="{RAW}/THE_FRONTIER.md" '
+      + 'target="_blank" rel="noopener">Read the frontier \u2192</a></p>';
     return;
   }}
   const clean = s => s.replace(/\\*\\*/g, '').replace(/`/g, '')
@@ -292,85 +388,33 @@ repository</a>. Papers via jsDelivr; the frontier read live at page load.
   el.innerHTML = html;
 }})();
 
-// The introduction and the matrix are fetched for the same reason the frontier
-// is: a copy pasted into this page is a second home, and second homes go stale.
-(async function () {{
-  const box = document.querySelector('#introbox .intro');
-  try {{
-    const r = await fetch('{CDN}/INTRODUCTION.md', {{cache: 'no-cache'}});
-    if (!r.ok) throw 0;
-    const md = await r.text();
-    const esc = t => t.replace(/&/g, '&amp;').replace(/</g, '&lt;');
-    const inline = t => esc(t)
-      .replace(/\*\*(.+?)\*\*/g, '<strong>$1</strong>')
-      .replace(/\*(.+?)\*/g, '<em>$1</em>')
-      .replace(/`(.+?)`/g, '<code>$1</code>');
-    let html = '', para = [], inFig = false;
-    const flush = () => {{ if (para.length) {{
-      html += '<p>' + inline(para.join(' ')) + '</p>'; para = []; }} }};
-    for (const line of md.split('\n')) {{
-      // The introduction carries its own <figure> for the matrix.  Replace that
-      // block with a slot and drop the live table into it, so the matrix sits
-      // where the text already explains it rather than beside the text.
-      if (/^<figure>/.test(line.trim())) {{
-        flush(); inFig = true;
-        html += '<figure class="matrix"><div id="matrixslot">' +
-                '<p class="status">Fetching the matrix\u2026</p></div>';
-        continue;
-      }}
-      if (inFig) {{
-        const cap = line.match(/<figcaption>([\s\S]*)/);
-        if (cap) html += '<figcaption>' + cap[1].replace(/<\/figcaption>.*/, '') +
-                         '</figcaption>';
-        if (/<\/figure>/.test(line)) {{ html += '</figure>'; inFig = false; }}
-        continue;
-      }}
-      if (/^#{{1,3}} /.test(line)) {{
-        flush();
-        html += '<h3>' + inline(line.replace(/^#+ /, '')) + '</h3>';
-      }} else if (!line.trim()) {{ flush(); }}
-      else {{ para.push(line.trim()); }}
-      if (html.length > 40000) break;
-    }}
-    flush();
-    html += '<p class="more">The introduction as the repository currently ' +
-            'holds it \u2014 it changes when the work does.</p>';
-    box.innerHTML = html;
-    placeMatrix();
-  }} catch (e) {{
-    box.innerHTML = '<p class="status">The introduction could not be reached ' +
-      'just now. <a href="{RAW}/INTRODUCTION.md">Its source is here.</a></p>';
-  }}
-}})();
-
-// The matrix belongs INSIDE the introduction, at the figure the introduction
-// already carries for it -- not as a sibling accordion.  It is fetched for the
-// same reason everything else here is.
-async function placeMatrix() {{
-  const slot = document.getElementById('matrixslot');
-  if (!slot) return;
-  try {{
-    const r = await fetch(
-      '{CDN}/BOOK_INTRO_cosmiCave/assets/dependency_matrix.html',
-      {{cache: 'no-cache'}});
-    if (!r.ok) throw 0;
-    const doc = new DOMParser().parseFromString(await r.text(), 'text/html');
-    const tbl = doc.querySelector('table');
-    if (!tbl) throw 0;
-    slot.innerHTML = '';
-    slot.appendChild(tbl);
-  }} catch (e) {{
-    slot.innerHTML = '<p class="status">The matrix is at ' +
-      '<a href="{RAW}/BOOK_INTRO_cosmiCave/assets/dependency_matrix.html">' +
-      'dependency_matrix.html</a>.</p>';
-  }}
-}}
+{MATRIX_JS}
 </script>
 </body>
 </html>
 """
     with open(OUT, 'w', encoding='utf-8') as fh:
         fh.write(html)
+
+    # The introduction's own page: same stylesheet, so it reads as another page
+    # of the book rather than a loose file.
+    css = re.search(r'<style>(.*?)</style>', html, re.S).group(1)
+    intro_page = (
+        '<!DOCTYPE html>\n<html lang="en">\n<head>\n<meta charset="utf-8">\n'
+        '<meta name="viewport" content="width=device-width, initial-scale=1">\n'
+        '<title>Introduction \u2014 The Shadow of Existence</title>\n'
+        '<style>' + css + '</style>\n</head>\n<body>\n<div class="wrap">\n'
+        '<p class="note"><a href="live_edition.html">\u2190 The Shadow of '
+        'Existence</a></p>\n<h1>Introduction</h1>\n'
+        '<div class="intro">\n' + intro_full + '\n</div>\n'
+        '<footer>Generated from the repository\u2019s own introduction. '
+        '<a href="https://github.com/daryljanzen/shadow-of-existence">Source.</a>'
+        '</footer>\n</div>\n<script>\n' + MATRIX_JS + '\nplaceMatrix();\n'
+        '</script>\n</body>\n</html>\n')
+    with open(OUT_INTRO, 'w', encoding='utf-8') as fh:
+        fh.write(intro_page)
+    print(f'  introduction.html written: {len(intro_page)} bytes, '
+          f'matrix fetched into its figure.')
     print(f'  live_edition.html written: {len(papers)} papers listed, '
           f'{n_abs} with abstracts, frontier fetched at read time '
           f'(not embedded).')
