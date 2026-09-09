@@ -175,9 +175,11 @@ them, so the physical-mode count is the right one for the object it defines --- 
 what the construction does, and not a theorem***. (3) The normalisation by which $a_2$ enters
 $\Gamma_{\rm div}$ is convention-dependent; **the convention-free content is the ratio: exactly two.**
 
-⌗ *Offered as a discharge **to be accepted or rejected**, not banked. The row asked for a number and
-there is now a number with its derivation, its cross-check, and the one place it can be argued with
-named in the same breath.*
+⌗ ***The row asked for a number and the number is stated, with its derivation, its cross-check, and the
+one place it can be argued with named in the same breath.*** *Stated, and reversible on the second bound:
+if the physical-mode count is the wrong object the coefficient goes with it. **A result held back for
+someone to accept is not a weaker claim; it is a deferral, and this line wrote one at r6415 and
+corrected it here.***
 
 ### Revision r6413 — 2026-09-09 (node 64). **`PO-43`: the invariant the coefficient multiplies is computed, and it is not the shape `P10` states.**
 
@@ -190,7 +192,7 @@ the right dimension.*
 **⛭ DIMENSIONS SETTLE HALF OF IT ON THEIR OWN.** *A shear is $1/\text{time}$, so $\sigma^{2}$ is
 $1/L^{2}$ while $C^{2}$ is $1/L^{4}$. Read instead with $\sigma$ a dimensionless amplitude, the
 computed coefficient is not $4$ and the structure is not $\sigma^{2}$. **Either way the stated form
-does not survive the computation, and the clause wants checking at source.***
+does not survive the computation, and `P10`'s clause is corrected at source in this same revision.***
 
 **⛭⛭ AND THAT IS THE WHOLE DIFFERENCE FOR A TOWER.** *For a mode of frequency $\omega$ the shear
 oscillates, so $\dot\sigma\sim\omega\sigma$ and $C^{2}\sim\omega^{2}\sigma^{2}$. ***The counterterm

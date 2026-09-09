@@ -62,6 +62,29 @@ QUOTED_ROLE = re.compile(
     r'[^"\u201c\u201d]{0,60}["\u201c\u201d]', re.I)
 
 PATTERNS = [
+    # ** r6417: THE PERSON-FREE DEFERRAL.  Every pattern below this block names a
+    # party -- Daryl, the author, the orchestrator, the owner -- so a deferral that
+    # names NOBODY walked straight through.  ** This line wrote one at r6415 --
+    # "offered as a discharge to be accepted or rejected, not banked" -- and the
+    # gate reported the tree clean. **  A result withheld for an unnamed somebody to
+    # accept is the same act as one assigned to a named somebody: it parks a decision
+    # in a document, and it is quoted back later as authority.  ** Assigning it to
+    # nobody is not milder; it is the same deferral with the addressee deleted, and
+    # it is harder to find. **  The corpus's own rule is that a result is STATED and
+    # is there for reversal.
+    re.compile(r"\bto be (?:accepted|adopted|approved|ratified) or (?:rejected|refused|declined)\b", re.I),
+    re.compile(r"\boffered\b[^.\n]{0,60}\bto be (?:accepted|adopted|approved|taken up)\b", re.I),
+    re.compile(r"\bfor (?:someone|somebody|another node|a node|the reader) to (?:accept|approve|adjudicate|decide|ratify)\b", re.I),
+    re.compile(r"\b(?:stated|recorded|offered|held)\s+for\s+(?:acceptance|approval|ratification)\b", re.I),
+    # ** AND TWO PATTERNS WERE WITHDRAWN ON THEIR FIRST RUN, WHICH IS THE POINT OF
+    # RUNNING IT. **  "await(s|ing) a decision/adjudication" and "wants a decision"
+    # fired on three live sites and ALL THREE WERE FALSE: a map DESCRIBING what an
+    # open problem needs, an arsenal note REPORTING a checker's misreading, and a
+    # wisdom-ledger line whose sentence is the NEGATION -- "the item was not awaiting
+    # a decision".  ** A false alarm in a register costs more than the error, because
+    # the next reader inherits a debt that does not exist ** (`L-228`).  The patterns
+    # kept are the ones a document can only produce ABOUT ITS OWN CONTENT.
+
     re.compile(r"Daryl'?s call", re.I),
     # ** NOT a bare possessive.  "Daryl's words", "Daryl's correction", "Daryl's lead" are the RECORD
     # of him -- catching those would push toward deleting his own contributions from the corpus, which
@@ -123,6 +146,13 @@ EXEMPT = {
 # the record, which is a different failure from the one this gate exists to catch.  Named and exact,
 # like the exemptions: nothing is excluded by pattern. **
 LOGS = (
+    # ** r6417: the two gate_session_notes joined by NAME, not by pattern. **  The
+    # ontology index calls them frozen records -- 'left as they are; they record what
+    # happened, including the now-corrected framing' -- and their hits are exactly the
+    # historical 'stated for ratification' framing this gate exists to have corrected.
+    # Rewriting them would falsify the record of the correction.
+    'gate_session_notes.md',
+    'gate_session_notes_c10.md',
     'FORK_c54.md',
     'CORPUS_MAP.md',
     'PHASE7_BUILD_LEDGER.md',
