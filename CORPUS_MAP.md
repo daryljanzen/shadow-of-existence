@@ -146,6 +146,41 @@ sources: [cowork, chat]
 
 
 
+### Revision r6447 — 2026-09-09 (node 64). **`JOB 2`'s findings landed, and my own bound corrected: it is half right, and the half that fails is the diagnostic.**
+
+**⛔ FIRST, WHY THIS WAS THE NEXT THING AND NOT THE RUN.** *`JOB 2` produced three findings and they were
+in a chat report and **nowhere in the corpus** --- `CRIC=branchpoint`, `CRTH0`, the $\mathrm{d}g_0$
+argument, the measured numbers: **zero occurrences in the register and in `P15`**. ***A finding in a report
+is not in the corpus***, which is the failure this session has been correcting all day.*
+
+**⛭ MY r6433 BOUND IS HALF RIGHT, AND I VERIFIED THE CORRECTION BEFORE ACCEPTING IT.** *I wrote that the
+$10/9$ omission is scale-invariant and so "moves an amplitude and cannot move a ratio". **Run with the knob
+live: $\ell_1/\ell_A$ unchanged at $0.6764$ exactly as stated --- and $P_1/P_2$ moved $1.975\to1.996$,
+$P_1/P_3$ $2.206\to2.262$, which the bound says it cannot.***
+
+⇒ ***The scale-invariance is a property of $\Phi$, and it does not survive the instrument's coding.*** *The
+driving enters as $\mathrm{d}g_0=4(\Theta-\Psi)$ --- a **difference** --- with $\Theta$ set from the
+closed-form transfer **independently of** $\Psi$. So a $10\%$ change in $\Psi$ is an **affine shift**,
+$2.064\to1.664$, $19\%$; **and an affine shift moves ratios.** Arithmetic checked here before it was
+accepted.*
+
+**⛭⛭ AND THE HALF THAT FAILS IS EXACTLY `PO-13`'s OWN DEFECT, WITH A NUMBER ON IT.** *Where the two halves
+sit at one locus the bound holds --- $\ell_1/\ell_A$, whose distance cancels identically. Where they are
+carried from independent prescriptions it fails --- $P_1/P_2$. ***So the failure is not a counterexample to
+the join: it is the measurement of "both halves at one locus" not being satisfied.*** ⌗ *And still not the
+cure: $1.996$ against the sky's $2.217$.*
+
+⚠ **AND A KNOB WAS DEAD UNDER THE OBVIOUS SETTING.** *`CRIC=branchpoint` takes a branch that sets its own
+super-horizon data and **never reaches the handover block**, so `CRPSI` is inert under it --- **caught by
+the identical-numbers signature rather than reported as a null.** ⌗ A second is latent: the velocity
+initial condition hardcodes $-\Psi$ at its default and is multiplied by $\sin(\text{CRPHI})=0$ at the
+default phase --- ***inert now, biting the moment anyone sets a non-zero phase***. ⌗ *`60`'s own first
+reading that this had corrupted the earlier $5.14\times$ measurement was **withdrawn by `60` on checking**,
+and correctly --- recorded because the withdrawal is the good part.*
+
+⌗ *Landed in the `PO-13` row and in the receipt that stated the bound. Still owed on `JOB 2`, and it is a
+run: the last convention stripped, both arms free or both pinned.*
+
 ### Revision r6445 — 2026-09-09 (node 64). **Node 60's `r6436` verified number by number, and the one bound it lacked added: the result is a strong CONDITIONAL, not the coupled answer.**
 
 **⛭ VERIFIED BEFORE ACCEPTED, and every number holds.** *All five rows of its table recomputed from

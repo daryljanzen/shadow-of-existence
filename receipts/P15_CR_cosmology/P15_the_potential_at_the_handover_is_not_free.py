@@ -52,6 +52,20 @@ scale-invariantly" (`C21`).  ** So the instrument's "Psi = -1, its primordial va
 is Phi_i where the paper's own computed transfer says (9/10) Phi_i. **  The
 instrument omits a factor the corpus has computed and banked.
 
+** ⛔ AND THE BOUND IS HALF RIGHT, WHICH TURNS OUT TO BE THE DIAGNOSTIC -- measured
+   r6436 by node 60, recorded here r6447. **  Run with the knob live, l_1/l_A is UNCHANGED at
+0.6764 exactly as stated -- and P1/P2 moved 1.975 -> 1.996, which the bound says it cannot.
+** The scale-invariance is a property of Phi and does not survive the instrument's coding: **
+the driving enters as dg0 = 4(Theta - Psi), a DIFFERENCE, with Theta set from the closed-form
+transfer INDEPENDENTLY of Psi.  So a 10% change in Psi is an AFFINE SHIFT of dg0, not a
+rescaling -- 2.064 -> 1.664, 19% -- and an affine shift moves ratios.
+
+  ==> ** So the half that fails is exactly the defect this receipt is about. **  Where the two
+      halves sit at one locus the bound holds (l_1/l_A, whose distance cancels identically);
+      where they are carried from independent prescriptions it fails (P1/P2).  *** The failure
+      is not a counterexample to the join -- it is the measurement of "both halves at one
+      locus" NOT being satisfied. ***
+
 ** ⚠ AND THE SIZE OF THAT IS 10/9, NOT 2.4, SO IT IS NOT THE CURE. **  The omission
 is 11 per cent and, being SCALE-INVARIANT, it moves an overall amplitude and cannot
 move a ratio: P1/P2 and l_1/l_A are untouched by it.  ** This does not explain the
