@@ -146,6 +146,45 @@ sources: [cowork, chat]
 
 
 
+### Revision r6443 — 2026-09-09 (node 64). **CLEANUP 3 — THE ROOMS: which of the nine rows discharge together, landed in the register beside the completeness test.**
+
+**⌗ NO NEW DOCUMENT.** *The register already carries a cross-cutting view of the live rows --- the
+completeness test, asking whether every family has a row. **This asks a different question of the same
+nine: which rows discharge TOGETHER** --- so it sits beside it, in the one source, rather than in a file of
+its own.*
+
+**⛭ FIVE GROUPINGS, AND ONE OF THEM IS NOT A ROOM.**
+*· ***① the counterterm ledger*** (`PO-23`, `PO-43`) --- **two openings**: the coupled computation, and
+whether the de~Sitter horizon entropy has a referent. **The closest to closing.**
+*· ***② the matter content*** (`PO-30`, `PO-26`) --- **one**: what a compact-face construction would be.
+***One boundary approached from two sides***; neither row moves alone.
+*· ***③ the head*** (`PO-31`, with struck `PO-40`/`PO-41`) --- **one**: what the head IS. $\eta$, $A_s$ and
+$n_s$ all terminate there: **one question asked of three quantities.**
+*· ***④ the acoustic front and the interior*** (`PO-13`, `PO-24`, `PO-25`) --- **three**, and two of them
+are runs rather than readings, which is why this room moves slowest from a chat.
+*· ***⑤ `PO-36` is not a room.*** It shares a wall with nothing: `r6407` showed both frameworks take the
+same $m(r)$, so it **discriminates the dark fraction and not this construction**, and discharges by an
+observation rather than by corpus work.
+
+**⛭⛭ AND THE FINDING THE GROUPING MAKES VISIBLE:** *room ① is bounded in part by `PO-32`, **which is
+struck**. A topological term contributes no field equation, so its coefficient's only home is the horizon
+entropy --- ***so a room of the quantum sector shares a wall with horizon thermodynamics, and nothing in
+the corpus carried that before `r6437`.*** ⌗ And that wall is not merely open: the no-free-constants claim
+has a stake in which branch holds, so it is a **prediction** rather than an opening.*
+
+⚠ **AND THE MAP IS MARKED AS A JUDGEMENT, WITH ITS OWN FAILURE ON THE RECORD.** *An earlier sketch of this
+was made from memory two turns before, and **three of its rows moved within those two turns**. The entry
+says so, and says to read it against the rows rather than instead of them.*
+
+⌗ **AND TWO INSTRUMENT ERRORS OF MINE WHILE BUILDING IT, both caught before they reached the text.** *I
+first read each row's discharge sentence with a fixed character window over `THE_REGISTER`, and the window
+**overshot into neighbouring rows** --- `PO-30` came back carrying `PO-22`'s text. ***A map built on that
+would have been confidently wrong in a way nothing downstream would catch.*** Rebuilt from
+`THE_FRONTIER`'s generated per-row view, which is bounded correctly. **The register's rows are single lines
+of tens of thousands of characters; they cannot be read by windowing.***
+
+⌗ *Nine gates green; the frontier view regenerated.*
+
 ### Revision r6441 — 2026-09-09 (node 64). **CLEANUP 2 — node 58's branch assessed: one document crosses, nothing else does, and the reason is not its age.**
 
 **⌗ FIRST, THE PICTURE WAS WRONG AND IS CORRECTED.** *This was not a forgotten branch. **`FOR_56` records

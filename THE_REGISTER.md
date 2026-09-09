@@ -16,6 +16,53 @@ current: r4255
 | # | the open question | its object | home | state |
 |---|---|---|---|---|
 
+## ⛭⛭ THE ROOMS — *which rows share a wall, and where each room is open (`r6443`)*
+
+***The completeness test below asks whether every family has a row. This asks a different question of the
+same nine: which rows discharge TOGETHER.*** *A row is a hole in a wall; a room closes when its walls meet.
+**Grouped by shared discharge, not by sector** --- the sector headings in `THE_FRONTIER` are the generated
+cut and are not this one.*
+
+| room | rows | where it is open |
+|---|---|---|
+| **① the counterterm ledger** | `PO-23`, `PO-43` | **two**: the coupled mode-sum computation, and whether the de~Sitter horizon entropy has a referent |
+| **② the matter content** | `PO-30`, `PO-26` | **one**: what a compact-face construction *would be*, with no product structure to reduce over |
+| **③ the head** | `PO-31` *(with struck `PO-40`, `PO-41`)* | **one**: what the head IS --- the matter on its collapse leg |
+| **④ the acoustic front and the interior** | `PO-13`, `PO-24`, `PO-25` | **three**: the last convention stripped; the joint fit; what stands in the Cauchy horizon's place |
+| **⑤ --- ** | `PO-36` | **one**, and *it does not discriminate this framework* --- see below |
+
+**⛭ ① IS THE CLOSEST TO CLOSING, AND ONE OF ITS WALLS WAS FOUND ONLY AT `r6437`.** *Both rows now carry
+values --- the log on the degenerate combination, the Weyl-squared coefficient off it. `PO-43`'s two
+replacement questions resolved to one answered and one **not independent**: a topological term contributes
+no field equation, so its coefficient's only home is the horizon entropy. ⇒ ***That wall is shared with
+`PO-32`, which is STRUCK*** --- so a room of the quantum sector is bounded in part by horizon
+thermodynamics, and **nothing in the corpus carried that before `r6437`.** ⌗ *And the entropy side is no
+longer merely open: the no-free-constants claim has a stake in the branch, so it is a **prediction**
+rather than an opening.*
+
+**⌗ ② IS ONE BOUNDARY APPROACHED FROM TWO SIDES.** *`P08` now hands the content's generative law to the
+matter sector; `PO-26` asks whether a sector can be built there. **The prior clause joins them**: answer
+what such a construction would be and both rows move at once. Neither moves alone.*
+
+**⌗ ③ IS MOSTLY CLOSED ALREADY, and by rows that are struck.** *$\eta$, $A_s$ and $n_s$ all terminate at
+the head --- `PO-41` for the first, `r6427` for the others once the stationary-recursion route was
+excluded. ***One question asked of three quantities***, and the corpus already names what is owed there:
+the matter on the head's collapse leg.*
+
+**⌗ ④ HAS THE MOST OPENINGS AND ONE INSTRUMENT.** *`PO-24`'s residual is weighed on `PO-13`'s two-arm
+machinery; `PO-25` hands *what stands in the horizon's place* to `PO-13`'s dynamical interior. **Two of the
+three openings are runs rather than readings**, which is why this room moves slowest from a chat.*
+
+**⛔ AND ⑤ IS NOT A ROOM.** *`PO-36` shares a wall with nothing. `r6407` established that both frameworks
+take the same $m(r)$ --- whatever gravitates is the bend --- so the measurement **discriminates the dark
+fraction and not this construction**, and it discharges by an observation nobody has made rather than by
+corpus work. ⌗ ***It is carried here because it is honestly open, not because it bounds anything***, and a
+later pass may find it belongs off this board.*
+
+⚠ **THIS IS A JUDGEMENT, RECORDED SO ITS CHANGE IS VISIBLE, and it is not generated.** *An earlier sketch
+of it was made from memory and was wrong within two turns of being said --- three of its rows moved. **Read
+it against the rows, not instead of them.***
+
 ## ⛭ THE COMPLETENESS TEST — *`r3969`, and it found a gap, so it is worth keeping*
 
 ***The ledger and this register are two different populations, and neither is a superset of the other.***
