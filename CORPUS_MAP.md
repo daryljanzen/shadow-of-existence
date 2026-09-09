@@ -146,6 +146,40 @@ sources: [cowork, chat]
 
 
 
+### Revision r6425 — 2026-09-09 (node 64). **PROPAGATION, paper 3 of 6 — `P13`: the sentence the earlier correction left behind, the masthead it never reached, and the withdrawal registered.**
+
+**⌗ `P13`'s BODY WAS ALREADY MOSTLY CURRENT** *--- the `r4555` landing carried the dimension audit and the
+Lichnerowicz result into `sec:wall`, receipt and all. **What it left behind is the class this corpus keeps
+finding**: the general statement three paragraphs upstream still read "the load-bearing hypotheses are
+compactness and a continuous isometry", ***which is exactly what the correction downstream contradicts***.
+Rewritten to what is true of each route separately: **the index route needs compactness, a continuous
+isometry and even dimension; the Lichnerowicz route needs only the first two; neither needs a product.***
+
+**⛔ AND THE MASTHEAD HAD REACHED NEITHER.** *The abstract still said the obstruction renders the sector
+**vector-like**, and still carried the two-hypothesis sentence verbatim. ***That is `P13`'s own `c54.86`
+lesson happening to `P13`***: "a result lands in the section that produced it and does not reach the places
+that summarise --- abstracts, frontier lists, synthesis sections --- exactly where a reader goes FIRST and a
+working node edits LAST." **The abstract now carries `empty`, not vector-like, and the hypotheses split by
+route.***
+
+**⛭ TWO FINDINGS ADDED TO `sec:open`.** *The **prior clause**: what such a construction *would be* is
+specified nowhere, the usual specification being a reduction over an internal space, which is unavailable
+here --- so "can it be built" waits on "what would it be", and the empty-spectrum result answers only the
+reading the vector-like expectation itself assumed. And the **one-scale consequence**, placed here because
+it is the geometry that forces it: every invariant on the face is a pure power of $1/\alpha^{2}$, so any
+mass read off it is a multiple of $\hbar c/\alpha\sim10^{-33}$ eV --- ***`P14`'s external mass spectrum is
+not a boundary conceded there but one required here.***
+
+**⛭⛭ AND THE WITHDRAWAL IS REGISTERED, which is what makes it finished.** *`check_withdrawn`'s standing
+order is that a withdrawal is not complete until its phrase is in the registry. Entry added with its three
+real pre-`r6425` forms as known-positives, taken from the text itself. **It fired on its first run**:
+`SPECTRAL_THEORY_LEDGER` quoted "the index makes the spectrum vector-like" bare. Marked --- and the mark
+sharpens that ledger's own question rather than dissolving it: **an APS boundary correction corrects an
+index, and on this face there is no graded index to correct**, so the question moves to whichever
+even-dimensional object a sector would live on, which is `PO-26`'s prior clause.*
+
+⌗ *`P13` 34pp, zero undefined. All seven gates green; bibliography clean.*
+
 ### Revision r6423 — 2026-09-09 (node 64). **PROPAGATION, paper 2 of 6 — `P08` `sec:open` rewritten to the worked claim, and the quotation my own edit staled fixed in the same pass.**
 
 **⌗ THE ONE-STATE RULE FORBIDS THE MINIMAL EDIT.** *The paragraph is not amended with a "was open, now
