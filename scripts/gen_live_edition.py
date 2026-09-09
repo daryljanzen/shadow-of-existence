@@ -55,6 +55,48 @@ def title_of(stem):
     return re.sub(r'\s+', ' ', t).strip()
 
 
+
+def detex(t):
+    """LaTeX fragment -> readable HTML. Emphasis and bold are kept because the
+    corpus uses them to carry weight; everything else is stripped."""
+    t = re.sub(r'(?m)^\s*%.*$', '', t)
+    t = re.sub(r'\\(?:label|rcpt|ldg|cite|citep|footnote)\{[^}]*\}', '', t)
+    t = re.sub(r'\\(?:emph|textit)\{([^{}]*)\}', r'<em>\1</em>', t)
+    t = re.sub(r'\\(?:textbf|strong)\{([^{}]*)\}', r'<strong>\1</strong>', t)
+    t = re.sub(r'\$([^$]*)\$', r'<code>\1</code>', t)
+    t = re.sub(r'\\[a-zA-Z]+\*?\s*', ' ', t)
+    t = t.replace('---', '\u2014').replace('--', '\u2013')
+    t = re.sub(r'[{}]', '', t).replace('~', ' ')
+    t = re.sub(r'[ \t]+', ' ', t)
+    paras = [x.strip() for x in re.split(r'\n\s*\n', t) if x.strip()]
+    return paras
+
+
+def abstract_of(stem, max_paras=3, cap=1400):
+    """The abstract's opening, not the whole thing: several run past ten
+    thousand characters, which is a paper rather than a preview."""
+    fp = os.path.join(ROOT, 'corpus', stem + '.tex')
+    if not os.path.exists(fp):
+        return None, False
+    s = open(fp, encoding='utf-8', errors='replace').read()
+    m = re.search(r'\\begin\{abstract\}(.+?)\\end\{abstract\}', s, re.S)
+    if not m:
+        return None, False
+    paras = detex(m.group(1))
+    if not paras:
+        return None, False
+    kept, total, truncated = [], 0, False
+    for para in paras:
+        if kept and (len(kept) >= max_paras or total + len(para) > cap):
+            truncated = True
+            break
+        kept.append(para)
+        total += len(para)
+    if len(kept) < len(paras):
+        truncated = True
+    return kept, truncated
+
+
 def main():
     papers = []
     for num, stem in ORDER:
@@ -65,21 +107,35 @@ def main():
         pdf = f'corpus/{stem}.pdf'
         if not os.path.exists(os.path.join(ROOT, pdf)):
             print(f'  [WARN] no PDF for {stem}, listed without a link')
-            papers.append((num, t, None))
+            papers.append((num, t, None, stem))
             continue
-        papers.append((num, t, f'{CDN}/{pdf}'))
+        papers.append((num, t, f'{CDN}/{pdf}', stem))
 
-    rows = []
-    for num, t, url in papers:
+    rows, n_abs = [], 0
+    for num, t, url, stem in papers:
         head, _, tail = t.partition(':')
         sub = f'<span class="sub">{tail.strip()}</span>' if tail.strip() else ''
         link = f'<a href="{url}">PDF</a>' if url else '<span class="nolink">—</span>'
-        rows.append(
-            f'    <li><span class="pn">{num}</span>'
-            f'<span class="ti"><b>{head.strip()}</b>{sub}</span>{link}</li>')
+        paras, cut = abstract_of(stem)
+        if paras:
+            n_abs += 1
+            body = ''.join(f'<p>{x}</p>' for x in paras)
+            if cut:
+                body += ('<p class="more">The abstract continues in the paper '
+                         f'itself. <a href="{url}">Open the PDF.</a></p>'
+                         if url else '<p class="more">The abstract continues in '
+                                     'the paper itself.</p>')
+            rows.append(
+                f'    <li><details><summary><span class="pn">{num}</span>'
+                f'<span class="ti"><b>{head.strip()}</b>{sub}</span></summary>'
+                f'<div class="abs">{body}</div></details>{link}</li>')
+        else:
+            rows.append(
+                f'    <li><span class="pn">{num}</span>'
+                f'<span class="ti"><b>{head.strip()}</b>{sub}</span>{link}</li>')
     paper_list = '\n'.join(rows)
 
-    html = f"""<!DOCTYPE html>
+    html = rf"""<!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="utf-8">
@@ -106,6 +162,22 @@ def main():
                  font-size:.82rem; letter-spacing:.06em; }}
   ul.papers a:hover {{ text-decoration:underline; }}
   .nolink {{ color:var(--line); }}
+  details {{ border-bottom:1px solid var(--line); }}
+  summary {{ cursor:pointer; padding:.55rem 0; display:flex; gap:.7rem;
+             align-items:baseline; list-style:none; }}
+  summary::-webkit-details-marker {{ display:none }}
+  summary::before {{ content:'\203A'; color:var(--faint); flex:0 0 .6rem;
+                     transition:transform .15s; }}
+  details[open] > summary::before {{ transform:rotate(90deg); }}
+  summary .sub {{ display:block; color:var(--faint); font-size:.88rem; }}
+  .abs, .intro, .matrix {{ padding:.2rem 0 1.1rem 1.3rem; font-size:.95rem; }}
+  .abs p, .intro p {{ margin:0 0 .7rem; }}
+  .abs .more {{ color:var(--faint); font-size:.88rem; }}
+  .intro h2, .intro h3 {{ font-size:1rem; margin:1.2rem 0 .3rem; }}
+  .matrix table {{ border-collapse:collapse; font-size:.72rem; }}
+  .matrix td, .matrix th {{ border:1px solid var(--line); padding:.15rem .3rem;
+                            text-align:center; }}
+  .matrix {{ overflow-x:auto; }}
   #frontier {{ margin-top:1rem; }}
   .row {{ padding:.7rem 0 .8rem; border-bottom:1px solid var(--line); }}
   .row .id {{ color:var(--pole); font-weight:600; font-size:.85rem;
@@ -128,7 +200,21 @@ date.</p>
 <p class="note">For a citable, frozen version, use a tagged release rather than
 this page.</p>
 
+<h2>Start here</h2>
+<details id="introbox">
+  <summary><b>The introduction</b><span class="sub">what this is, the corpus, and
+  where to come in</span></summary>
+  <div class="intro"><p class="status">Fetching the introduction…</p></div>
+</details>
+
+<details id="matrixbox">
+  <summary><b>The dependency matrix</b><span class="sub">what each paper rests on,
+  and what it feeds</span></summary>
+  <div class="matrix"><p class="status">Fetching the matrix…</p></div>
+</details>
+
 <h2>The papers</h2>
+<p class="note">Click a title for its abstract; the link opens the paper.</p>
 <ul class="papers">
 {paper_list}
 </ul>
@@ -195,6 +281,64 @@ repository</a>. Papers via jsDelivr; the frontier read live at page load.
   }}
   el.innerHTML = html;
 }})();
+
+// The introduction and the matrix are fetched for the same reason the frontier
+// is: a copy pasted into this page is a second home, and second homes go stale.
+(async function () {{
+  const box = document.querySelector('#introbox .intro');
+  try {{
+    const r = await fetch('{CDN}/INTRODUCTION.md', {{cache: 'no-cache'}});
+    if (!r.ok) throw 0;
+    const md = await r.text();
+    const esc = t => t.replace(/&/g, '&amp;').replace(/</g, '&lt;');
+    const inline = t => esc(t)
+      .replace(/\*\*(.+?)\*\*/g, '<strong>$1</strong>')
+      .replace(/\*(.+?)\*/g, '<em>$1</em>')
+      .replace(/`(.+?)`/g, '<code>$1</code>');
+    let html = '', para = [];
+    const flush = () => {{ if (para.length) {{
+      html += '<p>' + inline(para.join(' ')) + '</p>'; para = []; }} }};
+    for (const line of md.split('\n')) {{
+      if (/^#{{1,3}} /.test(line)) {{
+        flush();
+        html += '<h3>' + inline(line.replace(/^#+ /, '')) + '</h3>';
+      }} else if (!line.trim()) {{ flush(); }}
+      else {{ para.push(line.trim()); }}
+      if (html.length > 24000) break;
+    }}
+    flush();
+    html += '<p class="more">This is the introduction as the repository ' +
+            'currently holds it. <a href="{RAW}/INTRODUCTION.md">Read the ' +
+            'source.</a></p>';
+    box.innerHTML = html;
+  }} catch (e) {{
+    box.innerHTML = '<p class="status">The introduction lives at ' +
+      '<a href="{RAW}/INTRODUCTION.md">INTRODUCTION.md</a>.</p>';
+  }}
+}})();
+
+(async function () {{
+  const box = document.querySelector('#matrixbox .matrix');
+  try {{
+    const r = await fetch(
+      '{CDN}/BOOK_INTRO_cosmiCave/assets/dependency_matrix.html',
+      {{cache: 'no-cache'}});
+    if (!r.ok) throw 0;
+    const doc = new DOMParser().parseFromString(await r.text(), 'text/html');
+    const tbl = doc.querySelector('table');
+    if (!tbl) throw 0;
+    box.innerHTML = '';
+    box.appendChild(tbl);
+    const p = document.createElement('p');
+    p.className = 'more';
+    p.innerHTML = 'A row is what a paper rests on; a column is what it feeds.';
+    box.appendChild(p);
+  }} catch (e) {{
+    box.innerHTML = '<p class="status">The matrix is at ' +
+      '<a href="{RAW}/BOOK_INTRO_cosmiCave/assets/dependency_matrix.html">' +
+      'dependency_matrix.html</a>.</p>';
+  }}
+}})();
 </script>
 </body>
 </html>
@@ -202,7 +346,8 @@ repository</a>. Papers via jsDelivr; the frontier read live at page load.
     with open(OUT, 'w', encoding='utf-8') as fh:
         fh.write(html)
     print(f'  live_edition.html written: {len(papers)} papers listed, '
-          f'frontier fetched at read time (not embedded).')
+          f'{n_abs} with abstracts, frontier fetched at read time '
+          f'(not embedded).')
 
 
 if __name__ == '__main__':

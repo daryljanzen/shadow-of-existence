@@ -23,7 +23,7 @@ The progenitor is not a free parameter. The collapse selects the one configurati
 grazes its own horizon, and that fixes its mass by the cosmological constant alone — **M = c²/3√Λ G**, about
 4×10⁵² kg. Everything on the geometry scales from that single length.
 
-## 2 · The corpus — seventeen papers
+## 2 · The corpus — eighteen papers
 
 *The reading order is in `README.md`, which follows the corpus's own causal spine rather than the numbering.*
 
@@ -35,7 +35,7 @@ foliation empirically. The two are a complementary pair: one *proves* it, the ot
 
 **⛔ THE DIMENSIONS, because the corpus is subtle here and a reader who guesses gets it wrong.** ***The SUBSTRATE is dS₅ = SO(5,1)/SO(4,1)*** — a hyperboloid in flat ambient M⁶, **the thing that is *sliced*.** ***The BACKGROUND is dS₄*** — the maximally symmetric four-geometry the substrate's leaves carry, **itself a cut, the thing that is *reassigned*.** Below those sit **the exact solutions** (Schwarzschild, Nariai, the Friedmann geometries), and below those **the layer 𝒮ₜ — the three-dimensional existent**, with the four-manifold M its *representation* and not an existent. *The fifth dimension is forced: **slicing a four-dimensional de Sitter space only re-coordinatizes it**, so a dS₄ substrate would generate nothing.* **"The substrate is four-dimensional" is a retracted error.**
 geometry. **P3** gives the substrate and its slicing curve, horizons as turning points. **P5** gives the
-description groupoid: generators, relations, and Schwarzschild as one member. **p0** is the geometric core —
+description groupoid: generators, relations, and Schwarzschild as one member. **P17** is the geometric core —
 the maximally symmetric substrate, reached through the imaginary and real by construction.
 
 **The framework.** **P7** — *collapsed matter must become a universe*: the necessary and sufficient
@@ -56,6 +56,14 @@ Big Bang as a synthesis of the framework's deductively forced consequences.
 **P6** stands apart and holds the rest: *the shadow of existence* — scientific theory-choice as an empirically
 grounded discipline. It supplies the epistemic altitude the whole corpus is held at.
 
+**And P18 closes the set by doing what none of the others can.** *What the construction delivers, what it
+declines, and where its edge is* — the synthesis, written last and from the outside. It collects what the
+corpus derives, separates that from what it dissolves and what it declines to claim, and carries the frontier:
+the open questions stated with what would discharge each. **It is the paper to read if you want to know what
+this is worth rather than how it works**, and it is the only one whose subject is the corpus itself.
+
+*The geometric core is **P17** throughout. An older tag, `p0`, appears in retired notes and is deprecated.*
+
 **Two documents are corpus in ledger form rather than paper form:** the geometry ledger (58 proved statements
 across 25 receipts) and the combinatorics ledger (the corpus's numbers are two families, the boundary between
 them the Standard Model's arrangement).
@@ -75,15 +83,15 @@ them the Standard Model's arrangement).
 `scripts/depmatrix.py`; the same data is P7's `tab:dependency-matrix`.)*
 
 **Read down the columns and one thing stands out: exactly two papers are coupled to the whole corpus** — a
-full row *and* a full column each. **P7, the framework**, and **p0, the geometric core.** *(Verified from the
+full row *and* a full column each. **P7, the framework**, and **P17, the geometric core.** *(Verified from the
 source `.tex` rather than the rendered table: each cites all sixteen others and is cited by all sixteen. P3,
 the waypoint, is cited by fifteen and has the largest column sum, **147** — recomputed r1612 at 146 and again r1632 after P3 gained a citation; the figure had read 134, stale since the r1600–r1608 placements added citations without re-running `scripts/depmatrix.py`.)* Everything feeds P7
-and P7 feeds everything; p0 is built from every paper and points back to every paper. The other fifteen cluster
+and P7 feeds everything; P17 is built from every paper and points back to every paper. The other fifteen cluster
 and gap; these two touch all.
 
 **That is why the corpus resisted being put in an order for so long, and why it has no first page.** A one-hub
 corpus is a tree with a root, and a root sits at the front. **A two-hub corpus has no linear slot — it has a
-*between*:** fifteen papers stretched between two synthesis poles. p0 kept wanting to be "the border" for
+*between*:** fifteen papers stretched between two synthesis poles. P17 kept wanting to be "the border" for
 exactly this reason.
 
 ### Where to come in
@@ -124,7 +132,7 @@ of time as a category error, with an empirically forced cosmic time.
 converging routes** to one wall, with three operations co-located at the branch point pried apart. P14 gives three
 chiral generations on the discrete residue.
 
-**If you want the *whole*: either pole — p0 or P7.** From either, the rest is one step away. **These two are
+**If you want the *whole*: either pole — P17 or P7.** From either, the rest is one step away. **These two are
 what make the corpus a dipole**, and each is a full row *and* column of the matrix.
 
 *(A different order exists and serves a different purpose: `README.md` steps 3–6 read the corpus along its
@@ -196,7 +204,7 @@ curve with $\dim\ker_+=3$, $\dim\ker_-=0$ — **three chiral generations, forced
 than posited**, protected as a $\gamma^5$-graded index under any deformation preserving the three-wall
 structure. **A one-hinge truncation is excluded not as disfavoured but as carrying an unfixed modulus.** **⌗ AND THE SAME CONSTRUCTION, READ IN A GENERAL DIMENSION, SPEAKS ABOUT THE DIMENSION (r2376+c54.10).** *The fold the count reads is $D-1$; the horizon relation collapses to a single multiple-angle only at $D=4$ and $D=5$; and the mass-parity that grades chirality exists only at even $D$.* ⇒ ***four dimensions is the only one carrying both a generation count and a chirality, so three generations and four-dimensional spacetime are one fact in CR read at two ends.*** *At the sector's own altitude — forced within CR, not a proof about the world — and it settles the dimension of the **cut**, never the substrate's, which stays bounded below only.*
 
-**⑦ `p0` — the one scale, and the Standard Model's own shape read off a circle.**
+**⑦ `P17` — the one scale, and the Standard Model's own shape read off a circle.**
 *This is the paper to sit with.* Maximal symmetry worn seven ways, and two of them are the reason to make the
 trip. **The gravitational–cosmological–quantum sector's *geometric* constants spend no free dimensionless constant:** $c$ is the
 null-ruling slope, $G$ appears only as $GM/c^2$ with the mass fixed to Nariai by $\Lambda$ —
@@ -211,7 +219,7 @@ descends gauged**. A root labels a different cut, so permuting them is no motion
 ***The Standard Model's arrangement of a gauged chirality against a global flavour, read as on versus tangent.***
 
 **⑧ `P3`, with `P5` and `P2` beside it — the geometry all of that was read off, and its group.**
-**`P5` is the algebraic half and it is the one to put beside p0**, because it does in group terms what §⑦ did in
+**`P5` is the algebraic half and it is the one to put beside P17**, because it does in group terms what §⑦ did in
 figure terms: the **description groupoid** — generators, relations, and Schwarzschild as *one member* — with the
 partition that matters, ***the invariant de Sitter geometry is the group's $R$-even part and the Schwarzschild
 mass its $R$-odd perspectival artefact.*** **That is the shadow-reading in closed form: not a description of a
@@ -256,7 +264,7 @@ is worth drawing because the objects it visits are the same objects — met as m
 physics, and in almost the reverse order. **It can be read in parallel, by someone whose interest is the
 structure rather than the world**, and it opens somewhere the other cannot: with a theorem from Euclid.*
 
-**Ⓐ Classical plane geometry, and a two-thousand-year-old theorem doing modern work.** *`p0` §sec:power.*
+**Ⓐ Classical plane geometry, and a two-thousand-year-old theorem doing modern work.** *`P17` §sec:power.*
 The **power of a point** with respect to a circle — Euclid III.36, Steiner's invariant, $|X|^2-\alpha^2$ — and
 the hyperboloid's own equation says that quantity **is the square of the point's height**. So the tangent from
 any point runs exactly as far across as the point stands high, and $\mathrm{d}s^2=0$: ***the tangent–secant
@@ -294,7 +302,7 @@ $S_3$; the deformation exchanges the manner in which it is carried — from mono
 the figure.*** *And `lem:twoturnings` forbids the shortcut: no affine change of variable identifies the two
 threefold symmetries.*
 
-**Ⓔ Root systems, and a factorisation with a geometric reason.** *`p0` §sec:unification.*
+**Ⓔ Root systems, and a factorisation with a geometric reason.** *`P17` §sec:unification.*
 $\mathrm{Aut}(A_2)=S_3\times\mathbb Z_2$, and **the factorisation is not formal — its factors act on the two
 things a figure can be to a circle.** The three roots are the special points **ON** the waist; the two rulings
 are the lines **TANGENT** to it; *on* and *tangent* are independent, so the residue factorises. **And the two
@@ -302,7 +310,7 @@ kinds differ for the same reason: a ruling is a line of the substrate, so exchan
 an isometry; a root labels a different cut, so permuting them is no motion at all.** *Six Nariai geometries
 form the $A_2$ hexad; the three hinges join into one skew hexagon — **resonance with the hexad, not identity.***
 
-**Ⓕ Symmetric spaces, and two real forms of one complex group.** *`p0`, `P13`.*
+**Ⓕ Symmetric spaces, and two real forms of one complex group.** *`P17`, `P13`.*
 $\mathrm{dS}_5=SO(5,1)/SO(4,1)$, and the global Wick $x_0\mapsto ix_0$ carries it to the **compact
 $S^5=SO(6)/SO(5)$** — **the two real forms of one $SO(6,\mathbb C)$, meeting at the horizon where
 $\beta=2\pi\alpha$.** *The Lorentzian form carries the real-geometric gauges, the compact form the thermal
@@ -320,7 +328,7 @@ under any deformation preserving the three-wall structure**. *The count is topol
 the substrate's own three-foldness, and a one-hinge truncation is excluded because it carries an unfixed
 modulus.*
 
-**⌗ The two arcs meet at `p0` and `P12` and run in opposite directions** — the physicist enters at the algebroid
+**⌗ The two arcs meet at `P17` and `P12` and run in opposite directions** — the physicist enters at the algebroid
 and arrives at Euclid; the mathematician enters at Euclid and arrives at the algebroid. **Neither is the reading
 order** *(that is `README` steps 3–6, the causal spine)*, and neither is the doors. **Three orderings, three
 purposes: what is FORCED, what INTERESTS, and what is STRUCTURALLY DEEP.**
