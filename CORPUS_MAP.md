@@ -146,6 +146,40 @@ sources: [cowork, chat]
 
 
 
+### Revision r6423 — 2026-09-09 (node 64). **PROPAGATION, paper 2 of 6 — `P08` `sec:open` rewritten to the worked claim, and the quotation my own edit staled fixed in the same pass.**
+
+**⌗ THE ONE-STATE RULE FORBIDS THE MINIMAL EDIT.** *The paragraph is not amended with a "was open, now
+resolved"; it is **rewritten to what is now known**. `sec:open` states the closure: the contracted
+Bianchi identity is **entailed by the cut's own geometry** rather than imposed --- it is what fixes the
+angular component from the radial pair --- so the two free functions carry exactly two independent
+stress components, and an equation of state shuts the system into ordinary differential equations on
+the cut. **The spherical case is displayed: $m'=4\pi r^{2}\rho$ with the lapse equation, the
+Tolman--Oppenheimer--Volkoff system in the operator's own variables**, and the homogeneous class's
+single ODE is cited to `P09`.*
+
+**⛭ AND WHAT IS NOT SUPPLIED IS SAID WITHOUT THE SELF-CRITICISM IT USED TO CARRY.** *The equation of
+state is the input, ***and general relativity does not supply it either*** --- so the kinematic reading
+is not a property that distinguishes this construction. **What differs is that the content is read
+leftward off the cut rather than fed into it**, and where a generative law for the content itself would
+come from is named: the matter sector's boundary, `P13` and `P14`.*
+
+**⛔ AND THE EDIT STALED A QUOTATION IN `P18`, WHICH IS FIXED IN THIS SAME REVISION.** *`CR_synthesis`
+carried "**the source names it as the deepest question the construction opens onto**" and, later, that
+so naming it "**overstates it**". ***Both were true of the old `P08` and neither is true of the new
+one*** --- a paper quoting a sentence its source no longer contains is exactly what `ARC 16` found
+seven times. **Rewritten to one state**: two things stand under one description and stand differently,
+one of them supplied; and being kinematic in that sense is not a distinguishing property, full stop,
+with no correction narrated. ⌗ *The direction is worth noting --- **`P18` was current and `P08` was the
+stale one**, because the routed finding landed in the synthesis first.*
+
+⌗ **AND `P08`'s STEERING COMMENT WAS BROUGHT CURRENT TOO.** *Its header block described `sec:open` as
+carrying the bend as an open discovery, and even recorded that the over-strong phrasing had propagated
+into a map and a register row. **A comment that misdescribes the section beneath it steers the next
+editor wrong**, so it now states the closure.*
+
+⌗ *`JanzenBoundary` added to `P08`'s bibliography --- my citation, my omission, caught by the compile.
+Both papers compile clean: `P08` 22pp, `P18` 50pp, zero undefined; bibliography clean; no deferrals.*
+
 ### Revision r6419 — 2026-09-09 (node 64). **PROPAGATION, paper 1 of 6 — `P10` brought current, and a propagation debt predating this run found by the masthead check.**
 
 **⛔ THE STANDING RULE IS A FULL TURN PER PAPER AND NO EDIT WITHOUT READING WHERE IT LANDS**, *so six
