@@ -59,12 +59,11 @@ claim it bears on is a proof rather than a coherent proposition.*
 - **`PO-31` — the progenitor spectrum.** `P15` calls this *the
   genuine frontier* as against its buildable debts, and the reason is structural: the peak is an erasure
   channel, so the progenitor's composition is destroyed and cannot be read backward from ours.
-- **`PO-41` — what is at the head of the genealogy?** The chain *terminates*: entropy per baryon rises by a
-  lap-independent increment at every peak and is bounded below, so there are at most $\approx1.8\times10^{9}$
-  laps and a first universe exists whose inherited datum has no antecedent. What is open is **what that head
-  is** — a universe whose $r=0$ is not a parent's branch point is a bead whose collapse leg has no ambient, and
-  whether the construction admits one is a question about the bead theorem. *Both answers bite: one exhibits
-  the head, the other makes the genealogy have to terminate and be unable to.*
+- **`PO-42` — what the peak physics is where the photon-to-baryon ratio is of order one.** The head is
+  admissible and the chain is finite, and both rest on the peak's entropy increment. But the corpus's own peak
+  argument *asserts that it does not hold* in that regime — no bottleneck to heat above, not the network it
+  runs. **The head's own peak sits there too**, so the head's value and the lap count are one question. *Not
+  metaphysical: a nucleosynthesis and hadronisation question, answerable by ordinary means.*
 
 **⌗ These four are not adjacent to each other and must not be grouped as one gap.** They share only the shape
 of the obstruction. `PO-30` wants a dynamics; `PO-26` wants a construction; `PO-31` wants a route past an

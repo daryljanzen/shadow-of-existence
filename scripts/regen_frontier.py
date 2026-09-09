@@ -39,8 +39,8 @@ EST = {
         'isometry-realised on the compact face, and it remains unbuilt -- the major undertaking any geometric '
         'gauge-matter route would first have to complete. TRIP-WIRE: forcing the gauge group forces the Higgs '
         'representation with it.'),
-    'PO-41': ('what is at the head of the genealogy', 1, 1, 5, None,
-        'r4517 OPENED as PO-40s residue, and it is a question about the bead rather than about entropy. WHAT IS FIXED: the genealogy TERMINATES -- entropy per baryon rises by a lap-independent 6.4 k_B at every peak and is bounded below, so the chain is at most about 1.8e9 laps and there IS a first universe, whose inherited datum has no antecedent and is owed. THE QUESTION: a universe whose r=0 is not a parents branch point is a bead whose collapse leg has no ambient, and whether the bead construction admits one is a question about thm:bead and the seam. BOTH ANSWERS BITE: if it admits such a bead the head is exhibited; if it does not, the genealogy must terminate and cannot terminate, and something in the picture has to give -- a larger result than either branch of PO-40. DISCHARGED BY: a demonstration either way, worked on the bead theorem rather than argued from the entropy monotone, which is spent.',
+    'PO-42': ('the peak physics of the early laps, where eta is of order one', 1, 1, 5, None,
+        'r4521 OPENED as PO-41s residue and it is the ONLY thing standing between the chains two ends. WHY IT IS FORCED: PO-40 terminates the genealogy partly BECAUSE the peak mechanisms own preconditions fail at eta about one -- no deuterium bottleneck to heat above, and not the network the cosmogenesis paper runs. So the corpus asserts that its own peak argument does not hold in that regime and has not said what does. ONE QUESTION ASKED TWICE: the heads own peak sits at eta of order ten by the no-inheritance argument, so the early-lap regime is where the heads physics lives -- the heads value and the lap count are the same question. NOT METAPHYSICAL: a well-posed nucleosynthesis and hadronisation question at eta about one. DISCHARGED BY: an account of the peaks thermodynamics there, enough to say whether the increment stays bounded below -- which is what the finiteness rests on -- and whether anything fixes a count rather than a bound.',
         ),
     'PO-30': ('the curves own dynamics -- A GENERATIVE LAW FOR THE MATTER CONTENT', 1, 1, 6, None,
         'r3882: P08 sec:open states it and no register row carried it. The bend-density identity is EXACT but it '
@@ -165,12 +165,12 @@ KIND = {'PO-13': 'BUILD', 'PO-36': 'READ', 'PO-33': 'BUILD',   # r4145: was READ
 
 # ** PO-23 added r3809: the ultraviolet definition of the mode sums, the one part of P07's
 # three-part 'definition of the interacting tower' that is neither settled nor attempted. **
-ORDER = ['PO-13', 'PO-24', 'PO-41', 'PO-36', 'PO-30', 'PO-25', 'PO-26', 'PO-31', 'PO-23', 'PO-15', 'PO-14', 'PO-17', 'PO-18', 'PO-19', 'PO-20']
+ORDER = ['PO-13', 'PO-24', 'PO-42', 'PO-36', 'PO-30', 'PO-25', 'PO-26', 'PO-31', 'PO-23', 'PO-15', 'PO-14', 'PO-17', 'PO-18', 'PO-19', 'PO-20']
 GROUP = {'PO-13': 'D', 'PO-14': 'A', 'PO-15': 'C', 'PO-16': 'D',
          # ** r3095: the four brought in from p0's frontiers and the field ledgers.  PO-17 and
          # PO-19 are substrate geometry; PO-18 is the constant ledger; PO-20 is analysis. **
          'PO-17': 'E', 'PO-18': 'E', 'PO-19': 'E', 'PO-20': 'E',
-         'PO-23': 'C', 'PO-24': 'D', 'PO-25': 'E', 'PO-26': 'A', 'PO-27': 'A', 'PO-29': 'E', 'PO-31': 'D', 'PO-30': 'A', 'PO-41': 'B', 'PO-36': 'D', 'PO-34': 'E'}
+         'PO-23': 'C', 'PO-24': 'D', 'PO-25': 'E', 'PO-26': 'A', 'PO-27': 'A', 'PO-29': 'E', 'PO-31': 'D', 'PO-30': 'A', 'PO-42': 'B', 'PO-36': 'D', 'PO-34': 'E'}
 GNAME = {'A': 'the matter sector', 'B': 'the matter sector', 'C': 'the quantum sector',
          'D': 'the cosmology', 'E': 'the substrate geometry'}
 
