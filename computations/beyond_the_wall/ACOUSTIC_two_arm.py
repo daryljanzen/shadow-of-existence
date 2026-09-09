@@ -723,6 +723,23 @@ def qscan():
 #     a claim that a term can be removed, and a flag that reaches one path of three is not.*
 _ISW = 0.0 if os.environ.get('NOISW', '0') == '1' else 1.0
 
+# ⛭⛭ ** AND THE OTHER TWO TERMS HAD NO SWITCH AT ALL — added r4558 (60), working PO-13. **
+# `NOISW` could isolate the integrated term and nothing could isolate the other two, so the
+# question "which of the three source terms carries an effect" was askable for one of them.
+#   ⇒ *Found by walking into r4492's own trap.  A first attempt at this measurement put these
+#     two multipliers on the `_project` path at the foot of `main()` -- which the reported
+#     spectrum does not take -- and the matrix came back saying that deleting the MONOPOLE
+#     changed the spectrum not at all, on both arms, to the last digit.*  ** That is not a null,
+#     it is an unwired knob, and it is the identical shape r4492 repaired here.  A knob that
+#     reports NO CHANGE is indistinguishable from a knob that is not connected until it has been
+#     shown it can change something. **
+#   ⌗ So these are placed beside `_ISW`, read by `los_spectrum`'s `source()` -- the path that
+#     produces the reported numbers -- and each is CALIBRATED in `V2` before any null is read
+#     off it: `SWSRC=0` moves the CR arm's first peak from 1.1273 to 1.4721 of the acoustic
+#     scale, so the switch demonstrably reaches the term it names.
+_SWSRC = float(os.environ.get('SWSRC', '1'))   # g (Theta_0 + Psi), the monopole
+_DPSRC = float(os.environ.get('DPSRC', '1'))   # (1/k^2) d/deta [g theta_b], the Doppler dipole
+
 
 def los_spectrum(kk, ee, Y, L_A, D_M, R_S):
     """** Delta_l(k) = INT S(k,eta) j_l(k(eta_0 - eta)) d(eta), with
@@ -762,9 +779,9 @@ def los_spectrum(kk, ee, Y, L_A, D_M, R_S):
         # ** the damping multiplies the PHOTON perturbations and not the potentials. **  Theta_0 and
         # the baryon velocity diffuse; Psi and the ISW do not.
         Dmp = np.exp(-dampx * (kk[None, :] ** 2) * kD2inv_of(ee)[:, None])
-        return (g_ * (Y[:, :, 2] / 4 * Dmp + Ps)
+        return (_SWSRC * g_ * (Y[:, :, 2] / 4 * Dmp + Ps)
                 + _ISW * et * (np.gradient(Ph, ee, axis=0) + np.gradient(Ps, ee, axis=0))
-                + np.gradient(g_ * Y[:, :, 3] * Dmp, ee, axis=0) / kk[None, :] ** 2)
+                + _DPSRC * np.gradient(g_ * Y[:, :, 3] * Dmp, ee, axis=0) / kk[None, :] ** 2)
 
     def spectra(dampx_list):
         """** THE BESSEL PROJECTION IS PAID ONCE FOR THE WHOLE SCAN, NOT ONCE PER POINT. **
