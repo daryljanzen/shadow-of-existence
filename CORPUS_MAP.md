@@ -146,6 +146,45 @@ sources: [cowork, chat]
 
 
 
+### Revision r6427 — 2026-09-09 (node 64). **PROPAGATION, paper 4 of 6 — `P15`: the absorption bound made exact, the fixed-point route closed in the frontier item that owns it, and the masthead moved from "open" to "located".**
+
+**⌗ THE ABSORPTION PASSAGE WAS ALREADY CAREFUL AND IS NOW EXACT.** *`P15` said a tilt approximates the
+Gaussian "over a restricted high-$\ell$ range", which is right; **how restricted can be stated exactly.**
+The signature's own logarithmic slope is $-2(r^{2}-1)(\ell/\ell_{D})^{2}$ --- ***not a constant, growing as
+$\ell^{2}$*** --- running $-0.0002$ to $-1.31$ across the likelihood's own $\ell=30$--$2508$, a factor of
+seven thousand, **exactly $(\ell_{\max}/\ell_{\min})^{2}$**. So a single tilt is a one-parameter fit to a
+function whose slope varies by that factor over the data scoring it, and **the quoted $-0.0304$ is the true
+slope at $\ell=381$ and at no other multipole.***
+
+**⛭ AND THE CONSEQUENCE IS WHAT THE ROW ASKED FOR.** *A joint fit does not encounter a shifted tilt but a
+residual whose **shape** is a Gaussian in $\ell$, and no tilt removes a Gaussian --- so what it weighs is
+the shape residual, already bounded from above. **And a displacement in $n_s$ is not by itself a tension**,
+the tilt being inherited boundary data rather than predicted: a different value of an inherited input is a
+different input. What could be a tension is a constraint on $n_s$ that does not run through the damping
+tail, which is what "a joint fit" means.*
+
+**⛭⛭ AND ONE ROUTE TO THE PROGENITOR-SPECTRUM FRONTIER IS CLOSED, in the enumerated item that owns it.**
+*The construction is recursive, so a **stationary** recursion would make $A_s$ a fixed point and determine
+it --- ***the only route the corpus has ever named for deriving it rather than inheriting it***. But
+entropy per baryon rises strictly at every crossing, bounded below by Landauer independently of the network
+and of $\eta$: **a map that strictly increases a coordinate has no fixed point**, and independently the
+chain is finite, so there is no asymptotic limit to be the limit of. ⇒ ***The derivation must reach the head
+of a bounded genealogy rather than a stationary state*** --- the same terminus the inherited composition
+reaches, so the two are one question asked of two quantities. **The target narrows; the ambition does not.***
+
+**⌗ THE MASTHEAD MOVED FROM "OPEN" TO "LOCATED".** *It read that the high-$\ell$ consequence is "genuinely
+open, neither a demonstrated tension nor a wash" --- **still true, so not stale, but a shrug where there is
+now a structure**. It now says why: a Gaussian against a power law, absorbed only window-locally, with a
+shape residual rather than a shifted tilt at the end of it.*
+
+⚠ **AND THE FRONTIER EDIT FAILED SILENTLY ON ITS FIRST ATTEMPT** *--- the anchor missed on line breaks, the
+assertion raised, and the chained compile ran anyway and reported the same page count. ***Third instance
+today of a failed step followed by a chained command reporting success***, after the `r6419` changelog and
+the `r6423` push. **Commands after a Python step are no longer chained**, and the edit was confirmed by the
+page count moving 94 → 95 rather than by an exit line.*
+
+⌗ *`P15` 95pp, zero undefined. Gates green; bibliography clean.*
+
 ### Revision r6425 — 2026-09-09 (node 64). **PROPAGATION, paper 3 of 6 — `P13`: the sentence the earlier correction left behind, the masthead it never reached, and the withdrawal registered.**
 
 **⌗ `P13`'s BODY WAS ALREADY MOSTLY CURRENT** *--- the `r4555` landing carried the dimension audit and the
