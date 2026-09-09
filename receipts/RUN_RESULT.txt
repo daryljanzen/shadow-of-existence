@@ -1,14 +1,15 @@
 
   RUN-ALL-RECEIPTS -- 713 registered receipt(s), 4 at a time, 600s each, each from ITS OWN DIRECTORY
   DECLARED LONG: C59_the_control_reproduces_camb_and_the_height_defect_was_k_truncation.py runs on 1800s, not 600s -- named, with its measured cost in the source
-  TREE-DIGEST: 81a4f2e888f9ba3a
+  DECLARED LONG: C63_no_single_source_term_carries_the_undriven_split_and_the_first_probe_read_an_unwired_knob.py runs on 900s, not 600s -- named, with its measured cost in the source
+  TREE-DIGEST: c3d368201a503e82
 
-  RESUME: 713 result(s) reused from /tmp/claude-0/-home-user-shadow-of-existence/3f654921-f94d-5e03-8dca-e6e4ffe98045/scratchpad/n_main.json,/tmp/claude-0/-home-user-shadow-of-existence/3f654921-f94d-5e03-8dca-e6e4ffe98045/scratchpad/n_c59.json, 0 left to run
+  RESUME: 713 result(s) reused from /tmp/claude-0/-home-user-shadow-of-existence/3f654921-f94d-5e03-8dca-e6e4ffe98045/scratchpad/q_main.json,/tmp/claude-0/-home-user-shadow-of-existence/3f654921-f94d-5e03-8dca-e6e4ffe98045/scratchpad/q_c59.json, 0 left to run
 
 
-  713 pass, 0 fail, 0 over timeout, in 2078s wall
-  ⌗ ASSEMBLED ACROSS 3 INVOCATION(S) AT THIS DIGEST, 2 OF WHICH MEASURED ANYTHING: 713 result(s) reused, 0 measured here.  Every receipt ran exactly once against tree 81a4f2e888f9ba3a, and the cache is discarded whole the moment that digest changes.  The wall figure is the SUM of the invocations, not a single elapsed clock -- and it is a UNION over invocation ids, so re-assembling adds only the seconds that re-assembly itself costs (r4554: it used to add another invocation's minutes).
-  slowest that passed: C59_the_control_reproduces_camb_and_the_height_defect_was_k_truncation.py 1202s, C63_no_single_source_term_carries_the_undriven_split_and_the_first_probe_read_an_unwired_knob.py 313s, P15_the_driving_is_bought_by_decay_during_oscillation.py 306s, C1_the_weyl_closure_is_generic_to_cubics_and_the_match_is_D3_alone.py 250s, H1_the_low_multipole_deficit_is_two_effects_and_the_ladder_imprint_dies_where_the_transfer_is_narrow.py 147s
+  713 pass, 0 fail, 0 over timeout, in 2065s wall
+  ⌗ ASSEMBLED ACROSS 3 INVOCATION(S) AT THIS DIGEST, 2 OF WHICH MEASURED ANYTHING: 713 result(s) reused, 0 measured here.  Every receipt ran exactly once against tree c3d368201a503e82, and the cache is discarded whole the moment that digest changes.  The wall figure is the SUM of the invocations, not a single elapsed clock -- and it is a UNION over invocation ids, so re-assembling adds only the seconds that re-assembly itself costs (r4554: it used to add another invocation's minutes).
+  slowest that passed: C59_the_control_reproduces_camb_and_the_height_defect_was_k_truncation.py 1161s, C63_no_single_source_term_carries_the_undriven_split_and_the_first_probe_read_an_unwired_knob.py 525s, P15_the_driving_is_bought_by_decay_during_oscillation.py 271s, C1_the_weyl_closure_is_generic_to_cubics_and_the_match_is_D3_alone.py 197s, H1_the_low_multipole_deficit_is_two_effects_and_the_ladder_imprint_dies_where_the_transfer_is_narrow.py 177s
 
   Every registered receipt runs, in place, and exits 0 -- so every assertion in the
   reproducibility layer was actually evaluated.
