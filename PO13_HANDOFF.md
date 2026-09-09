@@ -23,6 +23,16 @@
 > second of which is answered at `r6433`.* **Read §2 and §4; read §1 and §3 as the record of a framing that
 > has since been superseded.**
 >
+> ⛔ ***AND §2's ELIMINATIONS SPLIT, ASSESSED r6441 --- READ THEM WITH THIS.*** *§3 states the premise the
+> whole branch ran on: "the perturbations in the instrument ride the geometric (**L1**, stacking) rate ---
+> radiation-free". **`r4145` reassigned the perturbations to the LEAF, which carries a radiation term.**
+> ⇒ So the **rate-sensitive** eliminations were measured on a background the corpus has since changed ---
+> ***item 3, the drag, most explicitly***, its whole object being CR's radiation-free rate against the
+> control's radiation-included one, which is exactly the question `r4145` re-answered. **Its 0.82 is not a
+> standing result.** The **rate-independent** ones do stand: item 1 ($R$ identical by construction), item 5
+> (arrival-phase spread $0.000\pi$), item 8 (the projection settled on `prop:flat`). ***Items 2, 4, 6 and 7
+> are rate-sensitive in part and want re-running before being leaned on.***
+>
 > ⚠ ***TWO CLAUSES OF THE ORIGINAL WERE ALTERED IN BRINGING IT ACROSS, recorded rather than silent.*** *§5 parked two CI decisions on the owner. **A live document may not carry a written deferral**, and gate design and compute decisions are a node's to make from measurement --- one is answered by `r6401`'s roster and the other is called in place. **Nothing else in the document was changed.***
 
 ---

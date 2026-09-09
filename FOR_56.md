@@ -19,6 +19,49 @@ sources: [chat]
 > them — which is what `kind:` is for, and it was not read.***
 
 
+## ⛔⛭⛭ THE `claude/cosmological-relativity-c54-sn2msi` BRANCH — ASSESSED AND DISPOSITIONED, r6441
+
+***It was merged three times --- `r2516`, `r2529`, `r2537` --- and then advanced 58 commits that were
+never absorbed. Those 58 are assessed here so nobody assesses them again.*** **The verdict is that ONE
+document crosses and nothing else does, and the reasons are specific rather than a shrug at its age.**
+
+**⌗ ALREADY ACROSS.** *`PO13_HANDOFF.md`, taken at `r6433` with a currency header --- its §2 records
+eight levers eliminated by measurement and exists nowhere else.*
+
+**⛔ THE INSTRUMENT DOES NOT CROSS.** *`ACOUSTIC_two_arm.py` has diverged **two ways** from the merge
+base: **main $+214/-34$, the branch $+239/-18$**. ***Main's is the version every result from `r4489` to
+`r4549` rests on.*** The branch adds fourteen knobs main lacks, but see below what most of them are.
+**A merge here risks regressing the instrument the current findings are built on, to gain machinery that
+is largely dead.***
+
+**⛔ TWELVE OF THE 58 COMMITS ARE A LINE THE BRANCH ITSELF RETRACTED.** *`HYPER`, `LMIN`, the
+near-antipode $\chi$, the hyperspherical Bessel kernel, `po13_chi_antipode.py`,
+`po13_hyperbessel_validate.py` --- and `r3557(branch)` retracts `r3553`--`r3556` in its own words,
+"projection settled by `prop:flat`, not a lever". ⇒ ***And main killed it independently and harder at
+`r4549`: $\ell_1/\ell_A=k_1r_s/\pi$, the distance cancels identically, so the ratio was never a
+projection quantity at all.*** **Dead twice over. Importing it would import machinery both lines have
+rejected.**
+
+**⚠ AND THE MEASUREMENTS ARE NOT SIMPLY IMPORTABLE, WHICH IS THE FINDING THAT MATTERS.** *The handoff
+states its own premise in §3: "the perturbations in the instrument ride the geometric (**L1**, stacking)
+rate --- radiation-free". ***`r4145` reassigned the perturbations to the LEAF, which carries a radiation
+term.*** So every elimination that is **rate-sensitive** was measured on a background the corpus has
+since changed --- `po13_dragint.py` most explicitly, its whole object being "CR's geometric
+(radiation-free) comoving rate vs the control's radiation-included one", **which is precisely the
+question `r4145` re-answered**. ⇒ ***Its $0.82$ is not a standing result.***
+⌗ *The **rate-independent** eliminations do stand --- $R$ identical by construction, the arrival-phase
+spread of $0.000\pi$, the projection settled on `prop:flat` --- and those are exactly what the handoff's
+§2 preserves in prose, which is why that document was the thing worth taking.*
+
+**⛔ AND THE STATE FILES DO NOT CROSS.** *`THE_REGISTER.md`, `THE_OPEN_PROBLEMS_LEDGER.md` and
+`OPEN_PROBLEMS_MAP.md` are ~1000 revisions stale and would clobber. `PO13_WORKING_STATE.md` is $+2155$
+lines of what the handoff itself calls **"a 2800-line append-only log whose revision numbers collide with
+main's"** --- importing it imports the collisions.*
+
+⇒ ***DISPOSITION: the branch is ASSESSED, not merged, and not owed. It is left where it is as the record
+of the work; the one readable thing on it is across.*** *If `PO-13` is reopened on the leaf assignment,
+the scripts are there to be re-run against main's instrument --- **re-run, not imported**.*
+
 ## ✔✔ ITEM 17 (`L-535`) — DONE r2572–73, before it was read
 
 *54 routed **"a comment/body claim sweep, and a gate if the count is nonzero."***

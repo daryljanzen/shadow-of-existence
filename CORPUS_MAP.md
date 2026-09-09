@@ -146,6 +146,42 @@ sources: [cowork, chat]
 
 
 
+### Revision r6441 — 2026-09-09 (node 64). **CLEANUP 2 — node 58's branch assessed: one document crosses, nothing else does, and the reason is not its age.**
+
+**⌗ FIRST, THE PICTURE WAS WRONG AND IS CORRECTED.** *This was not a forgotten branch. **`FOR_56` records
+it merged three times --- `r2516`, `r2529`, `r2537`** --- and both quoted tips verify as ancestors of
+`main`. ⇒ ***What went unabsorbed is the 58 commits it advanced AFTERWARDS***, which is a different and
+smaller failure than "a branch nobody merged".*
+
+**⛔ THE INSTRUMENT DOES NOT CROSS.** *`ACOUSTIC_two_arm.py` has diverged **two ways** from the merge base
+--- **main $+214/-34$, the branch $+239/-18$** --- and ***main's is the version every result from `r4489`
+to `r4549` rests on***. The branch adds fourteen knobs main lacks. **Merging risks regressing the
+instrument the current findings are built on, to gain machinery that is largely dead.***
+
+**⛔ TWELVE OF THE 58 COMMITS ARE A LINE THE BRANCH ITSELF RETRACTED.** *`HYPER`, `LMIN`, the near-antipode
+$\chi$, the hyperspherical Bessel kernel and two scripts --- and `r3557(branch)` retracts `r3553`--`r3556`
+in its own words, "projection settled by `prop:flat`, not a lever". ⇒ ***And `main` killed the same line
+independently and harder at `r4549`***: the distance cancels identically, so the ratio was never a
+projection quantity. **Dead twice over.***
+
+**⚠ AND THE MEASUREMENTS ARE NOT SIMPLY IMPORTABLE --- THE FINDING THAT MATTERS AND THE REASON READING
+BEAT MERGING.** *The handoff states the premise the whole branch ran on: "the perturbations in the
+instrument ride the geometric (**L1**, stacking) rate --- radiation-free". ***`r4145` reassigned the
+perturbations to the LEAF.*** ⇒ **Every rate-sensitive elimination was measured on a background the corpus
+has since changed** --- `po13_dragint.py` most explicitly, its whole object being CR's radiation-free rate
+against the control's radiation-included one, ***which is exactly the question `r4145` re-answered. Its
+$0.82$ is not a standing result.*** ⌗ *The rate-INDEPENDENT ones stand: $R$ identical by construction, the
+arrival-phase spread of $0.000\pi$, the projection settled on `prop:flat`. **That split is now recorded on
+the handoff itself**, so a reader of §2 meets it there.*
+
+**⛔ AND THE STATE FILES DO NOT CROSS.** *Three registers ~1000 revisions stale, and `PO13_WORKING_STATE.md`
+--- $+2155$ lines of what the handoff calls "an append-only log whose revision numbers collide with
+main's". **Importing it imports the collisions.***
+
+⇒ ***DISPOSITION: assessed, not merged, not owed --- and recorded in `FOR_56` so nobody assesses it
+again.*** *If `PO-13` reopens on the leaf assignment the scripts are there to be **re-run against main's
+instrument, not imported**.*
+
 ### Revision r6439 — 2026-09-09 (node 64). **CLEANUP 1 — one paper, one receipt home: declared, grandfathered, gated. Nothing moved.**
 
 **⌗ THE DEFECT, MEASURED.** *Six papers carry a second receipt directory and one carried a third
