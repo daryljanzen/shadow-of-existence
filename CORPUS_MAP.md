@@ -146,6 +146,149 @@ sources: [cowork, chat]
 
 
 
+### Revision r6429 — 2026-09-09 (node 64). **PROPAGATION, paper 5 of 6 — `P03`: the charged collapse settled where the paper said it was not, and a robustness clause distinguished from the question it appeared to answer.**
+
+**⌗ `sec:charge` ENDED "it is not settled here". IT IS SETTLED.** *The obstruction the paper states is
+exact and stands --- with $Q\neq0$ the origin is timelike and the loop has no branch point to close
+through --- **but that is the ETERNAL Reissner--Nordstr\"om--de~Sitter geometry, and a collapse is
+dynamical.** The inner horizon's fate is the competition between the blueshift $e^{\kappa_{-}v}$ and the
+exterior decay, and it survives only when their ratio exceeds $\tfrac12$.*
+
+**⛭ AND $\Lambda>0$ IS WHY THE QUESTION NEEDED A NUMBER RATHER THAN THE USUAL INTUITION.** *With a
+cosmological horizon the exterior decay is **exponential** rather than power-law, so the ratio is finite
+and **near extremality the horizon does survive**. On a progenitor of the framework paper's mass it does
+not, by a wide margin and in ***both*** readings of a residual charge --- $\simeq10^{-251}$ for a charge
+of order $e$, $\simeq10^{-15}$ for a per-baryon asymmetry at the laboratory bound --- computed with a
+deliberately generous ceiling on the decay rate so the figure **bounds the horizon's chances from
+above**. ⇒ ***The eternal inner horizon is not formed, and the obstruction is a property of a stationary
+solution the dynamical problem does not reach.*** ⌗ *And the two readings agreeing matters on its own:
+**this step does not depend on the extensive-versus-intensive fork** the datum question carries.*
+
+**⛔ AND WHAT IT DOES NOT DELIVER IS IN THE SAME BREATH, not after it.** *A Cauchy horizon failing to form
+means the maximal development is **inextendible** there; ***it does not by itself return a spacelike
+$r=0$*** for the signed radius to pass through. **So the charged case is not thereby rejoined to the
+uncharged loop** --- what stands in the horizon's place is the dynamical interior's question.*
+
+**⌗ AND IN `sec:curvature`, A CLAUSE THAT READS AS FORECLOSING A QUESTION IT DOES NOT ANSWER.** *The paper
+quotes Pavlidou--Tomaras for a test "robust to cosmic epoch, dark-matter details, and baryonic effects".
+***That robustness is profile-independence GIVEN $M$*** --- the radius depends on the enclosed total, not
+its distribution --- **and a reader meeting it will not then ask which $M$**. The two candidates are not
+close: a baryonic-set radius is smaller by $f_b^{1/3}$, worth $1.85$ in the radius and $6.4$ in an
+inferred $\Lambda$. ⇒ ***And the construction predicts neither***: $m(r)$ is the bend, so whatever
+gravitates is in it, exactly as in general relativity. **What such a measurement discriminates is the dark
+fraction, not the framework** --- it bears on this paper only through the input to the one-scale reading.*
+
+⌗ *Symbol collision avoided in the drafting: $\alpha$ is reserved corpus-wide for the throat radius and
+could not double as the spectral gap, so the ratio is written without a second symbol. `P03` 68pp, zero
+undefined; abstract carries none of the affected material, so no masthead edit is owed; gates green.*
+
+### Revision r6427 — 2026-09-09 (node 64). **PROPAGATION, paper 4 of 6 — `P15`: the absorption bound made exact, the fixed-point route closed in the frontier item that owns it, and the masthead moved from "open" to "located".**
+
+**⌗ THE ABSORPTION PASSAGE WAS ALREADY CAREFUL AND IS NOW EXACT.** *`P15` said a tilt approximates the
+Gaussian "over a restricted high-$\ell$ range", which is right; **how restricted can be stated exactly.**
+The signature's own logarithmic slope is $-2(r^{2}-1)(\ell/\ell_{D})^{2}$ --- ***not a constant, growing as
+$\ell^{2}$*** --- running $-0.0002$ to $-1.31$ across the likelihood's own $\ell=30$--$2508$, a factor of
+seven thousand, **exactly $(\ell_{\max}/\ell_{\min})^{2}$**. So a single tilt is a one-parameter fit to a
+function whose slope varies by that factor over the data scoring it, and **the quoted $-0.0304$ is the true
+slope at $\ell=381$ and at no other multipole.***
+
+**⛭ AND THE CONSEQUENCE IS WHAT THE ROW ASKED FOR.** *A joint fit does not encounter a shifted tilt but a
+residual whose **shape** is a Gaussian in $\ell$, and no tilt removes a Gaussian --- so what it weighs is
+the shape residual, already bounded from above. **And a displacement in $n_s$ is not by itself a tension**,
+the tilt being inherited boundary data rather than predicted: a different value of an inherited input is a
+different input. What could be a tension is a constraint on $n_s$ that does not run through the damping
+tail, which is what "a joint fit" means.*
+
+**⛭⛭ AND ONE ROUTE TO THE PROGENITOR-SPECTRUM FRONTIER IS CLOSED, in the enumerated item that owns it.**
+*The construction is recursive, so a **stationary** recursion would make $A_s$ a fixed point and determine
+it --- ***the only route the corpus has ever named for deriving it rather than inheriting it***. But
+entropy per baryon rises strictly at every crossing, bounded below by Landauer independently of the network
+and of $\eta$: **a map that strictly increases a coordinate has no fixed point**, and independently the
+chain is finite, so there is no asymptotic limit to be the limit of. ⇒ ***The derivation must reach the head
+of a bounded genealogy rather than a stationary state*** --- the same terminus the inherited composition
+reaches, so the two are one question asked of two quantities. **The target narrows; the ambition does not.***
+
+**⌗ THE MASTHEAD MOVED FROM "OPEN" TO "LOCATED".** *It read that the high-$\ell$ consequence is "genuinely
+open, neither a demonstrated tension nor a wash" --- **still true, so not stale, but a shrug where there is
+now a structure**. It now says why: a Gaussian against a power law, absorbed only window-locally, with a
+shape residual rather than a shifted tilt at the end of it.*
+
+⚠ **AND THE FRONTIER EDIT FAILED SILENTLY ON ITS FIRST ATTEMPT** *--- the anchor missed on line breaks, the
+assertion raised, and the chained compile ran anyway and reported the same page count. ***Third instance
+today of a failed step followed by a chained command reporting success***, after the `r6419` changelog and
+the `r6423` push. **Commands after a Python step are no longer chained**, and the edit was confirmed by the
+page count moving 94 → 95 rather than by an exit line.*
+
+⌗ *`P15` 95pp, zero undefined. Gates green; bibliography clean.*
+
+### Revision r6425 — 2026-09-09 (node 64). **PROPAGATION, paper 3 of 6 — `P13`: the sentence the earlier correction left behind, the masthead it never reached, and the withdrawal registered.**
+
+**⌗ `P13`'s BODY WAS ALREADY MOSTLY CURRENT** *--- the `r4555` landing carried the dimension audit and the
+Lichnerowicz result into `sec:wall`, receipt and all. **What it left behind is the class this corpus keeps
+finding**: the general statement three paragraphs upstream still read "the load-bearing hypotheses are
+compactness and a continuous isometry", ***which is exactly what the correction downstream contradicts***.
+Rewritten to what is true of each route separately: **the index route needs compactness, a continuous
+isometry and even dimension; the Lichnerowicz route needs only the first two; neither needs a product.***
+
+**⛔ AND THE MASTHEAD HAD REACHED NEITHER.** *The abstract still said the obstruction renders the sector
+**vector-like**, and still carried the two-hypothesis sentence verbatim. ***That is `P13`'s own `c54.86`
+lesson happening to `P13`***: "a result lands in the section that produced it and does not reach the places
+that summarise --- abstracts, frontier lists, synthesis sections --- exactly where a reader goes FIRST and a
+working node edits LAST." **The abstract now carries `empty`, not vector-like, and the hypotheses split by
+route.***
+
+**⛭ TWO FINDINGS ADDED TO `sec:open`.** *The **prior clause**: what such a construction *would be* is
+specified nowhere, the usual specification being a reduction over an internal space, which is unavailable
+here --- so "can it be built" waits on "what would it be", and the empty-spectrum result answers only the
+reading the vector-like expectation itself assumed. And the **one-scale consequence**, placed here because
+it is the geometry that forces it: every invariant on the face is a pure power of $1/\alpha^{2}$, so any
+mass read off it is a multiple of $\hbar c/\alpha\sim10^{-33}$ eV --- ***`P14`'s external mass spectrum is
+not a boundary conceded there but one required here.***
+
+**⛭⛭ AND THE WITHDRAWAL IS REGISTERED, which is what makes it finished.** *`check_withdrawn`'s standing
+order is that a withdrawal is not complete until its phrase is in the registry. Entry added with its three
+real pre-`r6425` forms as known-positives, taken from the text itself. **It fired on its first run**:
+`SPECTRAL_THEORY_LEDGER` quoted "the index makes the spectrum vector-like" bare. Marked --- and the mark
+sharpens that ledger's own question rather than dissolving it: **an APS boundary correction corrects an
+index, and on this face there is no graded index to correct**, so the question moves to whichever
+even-dimensional object a sector would live on, which is `PO-26`'s prior clause.*
+
+⌗ *`P13` 34pp, zero undefined. All seven gates green; bibliography clean.*
+
+### Revision r6423 — 2026-09-09 (node 64). **PROPAGATION, paper 2 of 6 — `P08` `sec:open` rewritten to the worked claim, and the quotation my own edit staled fixed in the same pass.**
+
+**⌗ THE ONE-STATE RULE FORBIDS THE MINIMAL EDIT.** *The paragraph is not amended with a "was open, now
+resolved"; it is **rewritten to what is now known**. `sec:open` states the closure: the contracted
+Bianchi identity is **entailed by the cut's own geometry** rather than imposed --- it is what fixes the
+angular component from the radial pair --- so the two free functions carry exactly two independent
+stress components, and an equation of state shuts the system into ordinary differential equations on
+the cut. **The spherical case is displayed: $m'=4\pi r^{2}\rho$ with the lapse equation, the
+Tolman--Oppenheimer--Volkoff system in the operator's own variables**, and the homogeneous class's
+single ODE is cited to `P09`.*
+
+**⛭ AND WHAT IS NOT SUPPLIED IS SAID WITHOUT THE SELF-CRITICISM IT USED TO CARRY.** *The equation of
+state is the input, ***and general relativity does not supply it either*** --- so the kinematic reading
+is not a property that distinguishes this construction. **What differs is that the content is read
+leftward off the cut rather than fed into it**, and where a generative law for the content itself would
+come from is named: the matter sector's boundary, `P13` and `P14`.*
+
+**⛔ AND THE EDIT STALED A QUOTATION IN `P18`, WHICH IS FIXED IN THIS SAME REVISION.** *`CR_synthesis`
+carried "**the source names it as the deepest question the construction opens onto**" and, later, that
+so naming it "**overstates it**". ***Both were true of the old `P08` and neither is true of the new
+one*** --- a paper quoting a sentence its source no longer contains is exactly what `ARC 16` found
+seven times. **Rewritten to one state**: two things stand under one description and stand differently,
+one of them supplied; and being kinematic in that sense is not a distinguishing property, full stop,
+with no correction narrated. ⌗ *The direction is worth noting --- **`P18` was current and `P08` was the
+stale one**, because the routed finding landed in the synthesis first.*
+
+⌗ **AND `P08`'s STEERING COMMENT WAS BROUGHT CURRENT TOO.** *Its header block described `sec:open` as
+carrying the bend as an open discovery, and even recorded that the over-strong phrasing had propagated
+into a map and a register row. **A comment that misdescribes the section beneath it steers the next
+editor wrong**, so it now states the closure.*
+
+⌗ *`JanzenBoundary` added to `P08`'s bibliography --- my citation, my omission, caught by the compile.
+Both papers compile clean: `P08` 22pp, `P18` 50pp, zero undefined; bibliography clean; no deferrals.*
+
 ### Revision r6419 — 2026-09-09 (node 64). **PROPAGATION, paper 1 of 6 — `P10` brought current, and a propagation debt predating this run found by the masthead check.**
 
 **⛔ THE STANDING RULE IS A FULL TURN PER PAPER AND NO EDIT WITHOUT READING WHERE IT LANDS**, *so six

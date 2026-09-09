@@ -394,7 +394,17 @@ question.***
 
 *`P12`, `P13` and `P11` all carry chirality-eigenvalue and index-obstruction language — objects already
 worked by `S2`, `F15` and `H16`.* ⌗ **But `P13`'s "the index makes the SPECTRUM VECTOR-LIKE" is a
-spectral-*symmetry* statement, and it raises the one question only this field asks:** ***does the index
+spectral-*symmetry* statement, and it raises the one question only this field asks:**
+
+> ⚠ ***QUOTED AS THE LITERATURE'S EVEN-DIMENSIONAL CONCLUSION, NOT AS `P13`'S OWN --- withdrawn r6425.***
+> *On the compact face, which is the **five**-sphere, the equivariant index is $\\mathbb{Z}_2$-graded and
+> the theorem's even-dimension hypothesis fails, so that route is vacuous there. **`P13` now rests the
+> conclusion on positive scalar curvature and Lichnerowicz, which needs no dimension and gives more:
+> no zero modes at all, so the sector is EMPTY rather than vector-like.*** ⇒ ***And that sharpens this
+> field's question rather than dissolving it: an APS boundary correction is a correction to an index,
+> and on this face there is no graded index to correct --- so the question moves to whichever
+> even-dimensional object a sector would actually live on, which is `PO-26`'s prior clause.***
+ ***does the index
 carry an Atiyah–Patodi–Singer boundary correction?***
 
 *For a Dirac operator **with boundary**, $\mathrm{index}=\int\hat A-(\eta+h)/2$ with $\eta$ the spectral

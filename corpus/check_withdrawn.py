@@ -39,6 +39,21 @@ WINDOW = 900          # characters after a hit in which a correction still count
 # --- THE REGISTRY -------------------------------------------------------------------------
 # (label, phrase pattern, marker pattern, when and where it was withdrawn)
 REGISTRY = [
+    # r6425.  THE COMPACT-FACE SECTOR "IS VECTOR-LIKE".  The face is the FIVE-sphere, and
+    # Atiyah--Hirzebruch's equivariant index is Z_2-graded, so its even-dimension hypothesis
+    # fails there and that route is vacuous ON THIS FACE.  ** The conclusion survives by the
+    # paper's OTHER route -- positive scalar curvature and Lichnerowicz, which needs no
+    # dimension -- and gives MORE: the round five-sphere has no Dirac zero modes at all, so the
+    # sector is EMPTY rather than vector-like. **  A paper may still quote "vector-like": it is
+    # what the literature concluded for the even-dimensional case, and Witten's precedent is
+    # untouched.  It may not do so BARE.
+    ("the-compact-face-sector-is-vector-like",
+     r'(?:sector|spectrum)\s+(?:there\s+)?(?:is|being)\s+(?:therefore\s+)?vector-like'
+     r'|render(?:ing|s)? the geometric fermion sector vector-like'
+     r'|makes the spectrum vector-like',
+     r'(?:empty|no zero modes|odd-dimensional|even dimension|five-sphere|Lichnerowicz'
+     r'|vacuous|withdraw|superseded|struck r\d+|the even-dimensional case)',
+     "withdrawn r6425 by P13 sec:wall; the conclusion holds by the Lichnerowicz route and is stronger"),
     ("generations-are-the-hinges",
      r'(three generations one object read three ways'
      r'|the generations are \\emph\{one object read three ways\}'
@@ -182,6 +197,13 @@ HISTORICAL = {
 # a pattern that is broken.  Each entry therefore carries a KNOWN-POSITIVE string, taken verbatim
 # from the text the withdrawal removed, and this gate fails if any pattern stops matching its own.
 POSITIVES = {
+    # the three forms the corpus actually used, taken from the pre-r6425 text of P13
+    # sec:wall and its abstract, so the pattern is proved against what it was written for.
+    "the-compact-face-sector-is-vector-like": [
+        "A geometric, isometry-realized fermion sector there is therefore vector-like",
+        "rendering the geometric fermion sector vector-like",
+        "that index makes the spectrum vector-like",
+    ],
     "generations-are-the-hinges": [
         "the generations are \\emph{one object read three ways}",
         "a generation per hinge",
