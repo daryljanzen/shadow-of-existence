@@ -27,6 +27,9 @@ ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 OUT = os.path.join(ROOT, 'BOOK_INTRO_cosmiCave', 'live_edition.html')
 OUT_INTRO = os.path.join(ROOT, 'BOOK_INTRO_cosmiCave', 'introduction.html')
 OUT_FRONT = os.path.join(ROOT, 'BOOK_INTRO_cosmiCave', 'frontier.html')
+OUT_LEDG = os.path.join(ROOT, 'BOOK_INTRO_cosmiCave', 'ledgers.html')
+OUT_RCPT = os.path.join(ROOT, 'BOOK_INTRO_cosmiCave', 'receipts.html')
+GH = 'https://github.com/daryljanzen/shadow-of-existence/blob/main'
 CDN = 'https://cdn.jsdelivr.net/gh/daryljanzen/shadow-of-existence@main'
 RAW = 'https://raw.githubusercontent.com/daryljanzen/shadow-of-existence/main'
 # Where the generated pages link to each other.  On GitHub Pages they sit beside
@@ -201,6 +204,60 @@ def frontier_rows():
         clean = lambda x: re.sub(r'\*\*|`', '', x).replace('<', '&lt;').strip()
         rows.append((m.group(0), clean(c[2]), clean(note)))
     return rows
+
+
+
+def ledger_rows():
+    """The registry's rows in its own order, which is the numbering order:
+    L1 the corpus's own instrument, L2-L20 mathematics, L21-L25 method."""
+    fp = os.path.join(ROOT, 'corpus', 'ledgers_registry.md')
+    if not os.path.exists(fp):
+        return []
+    out = []
+    for line in open(fp, encoding='utf-8', errors='replace').read().split('\n'):
+        if not line.startswith('| **L'):
+            continue
+        c = [x.strip() for x in line.split('|')]
+        if len(c) < 6:
+            continue
+        out.append(dict(num=c[1].strip('*'), key=c[2].strip('`'),
+                        file=c[3].strip('`'), kind=c[4],
+                        what=re.sub(r'\*\*|`', '', c[5])))
+    return out
+
+
+def receipt_rows():
+    """INDEX.md's rows grouped by the paper directory that owns them, which is
+    the same home the appendix numbering uses -- so PxRn here is PxRn there."""
+    fp = os.path.join(ROOT, 'receipts', 'INDEX.md')
+    if not os.path.exists(fp):
+        return {}, {}
+    by, seen = {}, {}
+    for line in open(fp, encoding='utf-8', errors='replace').read().split('\n'):
+        if not line.startswith('|'):
+            continue
+        cells = [x.strip() for x in line.split('|')]
+        path = claim = ''
+        for x in cells:
+            if re.match(r'`?P\d+_[A-Za-z0-9_]+/', x.strip('`')):
+                path = x.strip('`')
+                break
+        if not path:
+            continue
+        for x in cells:
+            if len(x) > 25 and '/' not in x and not x.startswith('`'):
+                claim = re.sub(r'\*\*|`', '', x)
+                break
+        home = 'P%d' % int(re.match(r'P(\d+)_', path).group(1))
+        stem = path.rsplit('/', 1)[-1]
+        if stem in seen:
+            continue
+        seen[stem] = True
+        by.setdefault(home, []).append(
+            dict(num='%sR%d' % (home, len(by.get(home, [])) + 1),
+                 path=path, stem=stem[:-3] if stem.endswith('.py') else stem,
+                 claim=claim))
+    return by, seen
 
 
 def md_to_html(md, matrix_slot=True, stop_at_h2=None):
@@ -401,6 +458,17 @@ this page.</p>
 {paper_list}
 </ul>
 
+<h2>The apparatus</h2>
+<p class="lede">What the papers rest on, and what can be re-run.</p>
+<ul class="papers">
+    <li><span class="pn">L</span><span class="ti"><b>The ledgers</b><span class="sub">
+      the knowledge ledgers, numbered once for the whole corpus and grouped by
+      what they test</span></span><a href="{PAGES}/ledgers.html">INDEX</a></li>
+    <li><span class="pn">R</span><span class="ti"><b>The receipts</b><span class="sub">
+      every runnable computation the papers cite, by the paper that owns
+      it</span></span><a href="{PAGES}/receipts.html">INDEX</a></li>
+</ul>
+
 <h2>The open edge</h2>
 <p class="lede">This is not a summary written for the page. It is fetched from the
 programme's own frontier, which is generated from its register of open problems,
@@ -517,6 +585,76 @@ const PAGES_URL = '{PAGES}';
     with open(OUT_FRONT, 'w', encoding='utf-8') as fh:
         fh.write(front_page)
     print(f'  frontier.html written: {len(fr)} open rows, {len(front_page)} bytes.')
+
+    def page(title, lede, body_html):
+        return ('<!DOCTYPE html>\n<html lang="en">\n<head>\n<meta charset="utf-8">'
+                '\n<meta name="viewport" content="width=device-width, initial-scale=1">'
+                f'\n<title>{title} \u2014 The Shadow of Existence</title>\n'
+                '<style>' + css + '</style>\n</head>\n<body>\n<div class="wrap">\n'
+                '<p class="note"><a href="' + PAGES.rstrip('/') +
+                '/live_edition.html">\u2190 The Shadow of Existence</a></p>\n'
+                f'<h1>{title}</h1>\n<p class="lede">{lede}</p>\n' + body_html +
+                '\n<footer>Generated from the repository. '
+                '<a href="https://github.com/daryljanzen/shadow-of-existence">'
+                'Source.</a></footer>\n</div>\n</body>\n</html>\n')
+
+    # ── the ledgers, in the three groups the registry's numbering follows ──
+    lr = ledger_rows()
+    GROUPS = [('L1', "The corpus\u2019s own instruments",
+               'A ledger about the others: which classical theorem each figure carries.'),
+              ('math', 'Mathematics',
+               'The field bakes proper \u2014 what bit, what bounced, and what the '
+               'corpus already had under another name.'),
+              ('method', 'Method and evidence',
+               'The fields that test the corpus against measurement and technique '
+               'rather than against a mathematical field.')]
+    def grp(n):
+        i = int(n[1:])
+        return 'L1' if i == 1 else ('math' if i <= 20 else 'method')
+    body = ''
+    for gid, gname, gdesc in GROUPS:
+        rows = [r for r in lr if grp(r['num']) == gid]
+        if not rows:
+            continue
+        body += f'<h2>{gname}</h2>\n<p class="note">{gdesc}</p>\n<ul class="papers">\n'
+        for r in rows:
+            body += ('<li><span class="pn">' + r['num'] + '</span>'
+                     '<span class="ti"><b>' + r['file'].replace('_LEDGER.md', '')
+                     .replace('_', ' ').title() + '</b><span class="sub">'
+                     + r['what'][:190] + '</span></span>'
+                     '<a href="' + GH + '/' + r['file'] + '">OPEN</a></li>\n')
+        body += '</ul>\n'
+    with open(OUT_LEDG, 'w', encoding='utf-8') as fh:
+        fh.write(page('The ledgers',
+                      f'{len(lr)} knowledge ledgers, numbered once for the whole '
+                      'corpus \u2014 so <b>L7</b> is the same ledger in every paper '
+                      'that cites it.', body))
+    print(f'  ledgers.html written: {len(lr)} ledgers in 3 groups.')
+
+    # ── the receipts, by the paper that owns them ──
+    by, _ = receipt_rows()
+    total = sum(len(v) for v in by.values())
+    titles = {num: t for num, t, _u, _s in
+              [(n, tt.partition(':')[0], 0, 0) for n, tt, _x, _y in
+               [(a, b, c, d) for a, b, c, d in papers]]}
+    body = ''
+    for home in sorted(by, key=lambda k: int(k[1:])):
+        rows = by[home]
+        body += (f'<h2>{home} \u2014 {titles.get(home, "")}</h2>\n'
+                 f'<p class="note">{len(rows)} receipts.</p>\n<ul class="papers">\n')
+        for r in rows:
+            body += ('<li><span class="pn">' + r['num'] + '</span>'
+                     '<span class="ti"><b>' + r['stem'].replace('_', ' ') + '</b>'
+                     + ('<span class="sub">' + r['claim'][:180] + '</span>'
+                        if r['claim'] else '') + '</span>'
+                     '<a href="' + GH + '/receipts/' + r['path'] + '">RUN</a></li>\n')
+        body += '</ul>\n'
+    with open(OUT_RCPT, 'w', encoding='utf-8') as fh:
+        fh.write(page('The receipts',
+                      f'{total} runnable receipts, numbered by the paper that owns '
+                      'them \u2014 so <b>P3R7</b> here is <b>P3R7</b> in the paper.',
+                      body))
+    print(f'  receipts.html written: {total} receipts across {len(by)} papers.')
 
     print(f'  introduction.html written: {len(intro_page)} bytes, '
           f'matrix fetched into its figure.')

@@ -24,6 +24,8 @@ on:
       - 'INTRODUCTION.md'
       - 'THE_FRONTIER.md'
       - 'THE_REGISTER.md'
+      - 'corpus/ledgers_registry.md'
+      - 'receipts/INDEX.md'
       - 'corpus/**.tex'
       - 'corpus/**.pdf'
       - 'BOOK_INTRO_cosmiCave/assets/**'
@@ -68,7 +70,8 @@ jobs:
         run: |
           set -e
           cd BOOK_INTRO_cosmiCave
-          for f in live_edition.html introduction.html frontier.html; do
+          for f in live_edition.html introduction.html frontier.html \
+                   ledgers.html receipts.html; do
             test -s "$f" || { echo "::error::$f missing or empty"; exit 1; }
           done
           grep -q 'The Shadow of Existence' live_edition.html \
@@ -85,6 +88,8 @@ jobs:
           cp BOOK_INTRO_cosmiCave/live_edition.html _site/
           cp BOOK_INTRO_cosmiCave/introduction.html _site/
           cp BOOK_INTRO_cosmiCave/frontier.html _site/
+          cp BOOK_INTRO_cosmiCave/ledgers.html _site/
+          cp BOOK_INTRO_cosmiCave/receipts.html _site/
           mkdir -p _site/assets
           cp BOOK_INTRO_cosmiCave/assets/*.html _site/assets/ 2>/dev/null || true
 

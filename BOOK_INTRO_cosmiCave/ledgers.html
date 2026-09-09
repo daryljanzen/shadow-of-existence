@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>The ledgers — The Shadow of Existence</title>
+<style>
+  :root { --ink:#1c2733; --faint:#8b98a6; --line:#e2e8ee; --pole:#b5462a; --bg:#fbfcfd; }
+  * { box-sizing:border-box }
+  body { margin:0; background:var(--bg); color:var(--ink);
+         font:16px/1.6 Georgia,'Iowan Old Style',serif; }
+  .wrap { max-width:52rem; margin:0 auto; padding:3rem 1.25rem 5rem; }
+  h1 { font-size:1.9rem; line-height:1.25; margin:0 0 .4rem; font-weight:600; }
+  h2 { font-size:1.15rem; margin:2.8rem 0 .3rem; font-weight:600;
+        letter-spacing:.01em; }
+  .lede { color:#4a5765; margin:0 0 .2rem; }
+  .note { color:var(--faint); font-size:.86rem; }
+  ul.papers { list-style:none; padding:0; margin:1rem 0 0; }
+  ul.papers li { display:flex; align-items:baseline; gap:.7rem;
+                  border-bottom:1px solid var(--line); }
+  ul.papers li > details { flex:1 1 auto; border-bottom:none; min-width:0; }
+  .pn { flex:0 0 3.2rem; color:var(--pole); font-weight:600; font-size:.82rem;
+         letter-spacing:.04em; }
+  .ti { flex:1 1 auto; }
+  .ti .sub { display:block; color:var(--faint); font-size:.88rem; }
+  ul.papers a { flex:0 0 3rem; text-align:right; color:var(--pole);
+                 text-decoration:none; font-size:.78rem; letter-spacing:.06em;
+                 padding-top:.6rem; }
+  ul.papers > li > .nolink { flex:0 0 3rem; }
+  ul.papers a:hover { text-decoration:underline; }
+  .nolink { color:var(--line); }
+  details { border-bottom:1px solid var(--line); }
+  summary { cursor:pointer; padding:.55rem 0; display:flex; gap:.7rem;
+             align-items:baseline; list-style:none; }
+  summary::-webkit-details-marker { display:none }
+  summary::before { content:'\203A'; color:var(--faint); flex:0 0 .6rem;
+                     transition:transform .15s; }
+  details[open] > summary::before { transform:rotate(90deg); }
+  summary .sub { display:block; color:var(--faint); font-size:.88rem; }
+  .abs { padding:.2rem 0 1.1rem 1.3rem; font-size:.95rem; }
+  .abs p { margin:0 0 .7rem; }
+  .intro { font-size:1rem; padding:.4rem 0 1.6rem 1.3rem; }
+  .intro p { margin:0 0 1rem; }
+  .intro h3 { font-size:1.08rem; margin:2rem 0 .6rem; font-weight:600;
+               color:var(--ink); }
+  .intro figure { margin:1.4rem 0; }
+  .intro figcaption { color:var(--faint); font-size:.86rem; margin-top:.5rem;
+                       line-height:1.5; }
+  .intro .more { color:var(--faint); font-size:.86rem; font-style:italic; }
+  .intro code { font-size:.9em; background:#f1f4f7; padding:.05em .3em;
+                 border-radius:3px; }
+  .abs .more { color:var(--faint); font-size:.88rem; }
+  .intro h2, .intro h3 { font-size:1rem; margin:1.2rem 0 .3rem; }
+  .matrix table { border-collapse:collapse; font-size:.72rem; }
+  .matrix td, .matrix th { border:1px solid var(--line); padding:.15rem .3rem;
+                            text-align:center; }
+  .matrix { overflow-x:auto; }
+  #frontier { margin-top:1rem; }
+  .row { padding:.7rem 0 .8rem; border-bottom:1px solid var(--line); }
+  .row .id { color:var(--pole); font-weight:600; font-size:.85rem;
+              margin-right:.5rem; }
+  .row .what { font-weight:600; }
+  .row .disc { display:block; color:#4a5765; font-size:.92rem; margin-top:.2rem; }
+  .status { color:var(--faint); font-size:.86rem; }
+  footer { margin-top:3.5rem; padding-top:1rem; border-top:1px solid var(--line);
+            color:var(--faint); font-size:.84rem; }
+  a { color:var(--pole); }
+</style>
+</head>
+<body>
+<div class="wrap">
+<p class="note"><a href="./live_edition.html">← The Shadow of Existence</a></p>
+<h1>The ledgers</h1>
+<p class="lede">25 knowledge ledgers, numbered once for the whole corpus — so <b>L7</b> is the same ledger in every paper that cites it.</p>
+<h2>The corpus’s own instruments</h2>
+<p class="note">A ledger about the others: which classical theorem each figure carries.</p>
+<ul class="papers">
+<li><span class="pn">L1</span><span class="ti"><b>Figure Theorem</b><span class="sub">The figure–theorem ledger: which classical theorem each figure carries, and its receipts</span></span><a href="https://github.com/daryljanzen/shadow-of-existence/blob/main/FIGURE_THEOREM_LEDGER.md">OPEN</a></li>
+</ul>
+<h2>Mathematics</h2>
+<p class="note">The field bakes proper — what bit, what bounced, and what the corpus already had under another name.</p>
+<ul class="papers">
+<li><span class="pn">L2</span><span class="ti"><b>Algebraic Geometry</b><span class="sub">The algebraic-geometry field-bake ledger — what bit, what bounced, and the boundary. One of the three fields listed but never thrown (the overnight order: algebraic geometry ×57, discriminan</span></span><a href="https://github.com/daryljanzen/shadow-of-existence/blob/main/ALGEBRAIC_GEOMETRY_LEDGER.md">OPEN</a></li>
+<li><span class="pn">L3</span><span class="ti"><b>Cartan Holonomy</b><span class="sub">The Cartan / connections-and-holonomy field-bake ledger — what bit, what bounced, and the boundary. First of the four fields L-272's re-survey left outstanding. OWED 622</span></span><a href="https://github.com/daryljanzen/shadow-of-existence/blob/main/CARTAN_HOLONOMY_LEDGER.md">OPEN</a></li>
+<li><span class="pn">L4</span><span class="ti"><b>Catastrophe Singularity</b><span class="sub">The catastrophe / singularity-theory field-bake ledger — what bit, what bounced, and the boundary. One of the three fields listed but never thrown (the overnight order named it explicitly: c</span></span><a href="https://github.com/daryljanzen/shadow-of-existence/blob/main/CATASTROPHE_SINGULARITY_LEDGER.md">OPEN</a></li>
+<li><span class="pn">L5</span><span class="ti"><b>Category Theory</b><span class="sub">category theory against CR — the corpus's largest unlisted field</span></span><a href="https://github.com/daryljanzen/shadow-of-existence/blob/main/CATEGORY_THEORY_LEDGER.md">OPEN</a></li>
+<li><span class="pn">L6</span><span class="ti"><b>Combinatorics</b><span class="sub">The combinatorics field-bake ledger — what bit, what did not, and why. Lane 8</span></span><a href="https://github.com/daryljanzen/shadow-of-existence/blob/main/COMBINATORICS_LEDGER.md">OPEN</a></li>
+<li><span class="pn">L7</span><span class="ti"><b>Complex Analysis</b><span class="sub">complex analysis and monodromy against CR — the field that turned practices into theorems</span></span><a href="https://github.com/daryljanzen/shadow-of-existence/blob/main/COMPLEX_ANALYSIS_LEDGER.md">OPEN</a></li>
+<li><span class="pn">L8</span><span class="ti"><b>Conformal Geometry</b><span class="sub">conformal / Möbius geometry against the substrate — the field that refused, and why</span></span><a href="https://github.com/daryljanzen/shadow-of-existence/blob/main/CONFORMAL_GEOMETRY_LEDGER.md">OPEN</a></li>
+<li><span class="pn">L9</span><span class="ti"><b>Convexity Optimisation</b><span class="sub">The convexity / optimisation field-bake ledger — what bit, what bounced, and the boundary. One of the three fields listed but never thrown (the overnight order: convexity ×143, constraint ×1</span></span><a href="https://github.com/daryljanzen/shadow-of-existence/blob/main/CONVEXITY_OPTIMISATION_LEDGER.md">OPEN</a></li>
+<li><span class="pn">L10</span><span class="ti"><b>Functional Analysis</b><span class="sub">The functional-analysis / unitarity field-bake ledger — the field that bounced, and the one routing fact it returned. Third of the four fields L-272's re-survey left outstanding. OWED 622</span></span><a href="https://github.com/daryljanzen/shadow-of-existence/blob/main/FUNCTIONAL_ANALYSIS_LEDGER.md">OPEN</a></li>
+<li><span class="pn">L12</span><span class="ti"><b>Harmonic Analysis</b><span class="sub">The harmonic-analysis field-bake ledger — what bit, what bounced, and the boundary. Second of the four fields L-272's re-survey left outstanding. OWED 622</span></span><a href="https://github.com/daryljanzen/shadow-of-existence/blob/main/HARMONIC_ANALYSIS_LEDGER.md">OPEN</a></li>
+<li><span class="pn">L15</span><span class="ti"><b>Involution Real Forms</b><span class="sub">The involution / real-forms field-bake ledger — what bit, what bounced, and the boundary. The field L-277's unclaimed-surface probe named, and the first bake not drawn from a pre-existing li</span></span><a href="https://github.com/daryljanzen/shadow-of-existence/blob/main/INVOLUTION_REAL_FORMS_LEDGER.md">OPEN</a></li>
+<li><span class="pn">L17</span><span class="ti"><b>Quadric Geometry</b><span class="sub">projective geometry of quadrics against the CR substrate — the CK metric identification, and the ladder gap it exposes</span></span><a href="https://github.com/daryljanzen/shadow-of-existence/blob/main/QUADRIC_GEOMETRY_LEDGER.md">OPEN</a></li>
+<li><span class="pn">L18</span><span class="ti"><b>Representation Theory</b><span class="sub">The representation-theory field bake — what bit, what bounced, and the boundary. The largest unbaked vocabulary in the corpus (×241 tight), thrown after the Phase 4 survey named it the stand</span></span><a href="https://github.com/daryljanzen/shadow-of-existence/blob/main/REPRESENTATION_THEORY_LEDGER.md">OPEN</a></li>
+<li><span class="pn">L19</span><span class="ti"><b>Spectral Theory</b><span class="sub">The spectral-theory field bake — what bit, what bounced, and the boundary. Tier B's largest never-thrown field (×189 on the reach measure), verified as NOT covered by the harmonic ledger, wh</span></span><a href="https://github.com/daryljanzen/shadow-of-existence/blob/main/SPECTRAL_THEORY_LEDGER.md">OPEN</a></li>
+<li><span class="pn">L20</span><span class="ti"><b>Variational</b><span class="sub">variational / action against CR — the field the corpus uses and never names</span></span><a href="https://github.com/daryljanzen/shadow-of-existence/blob/main/VARIATIONAL_LEDGER.md">OPEN</a></li>
+<li><span class="pn">L11</span><span class="ti"><b>Graph Theory</b><span class="sub">The graph-theory / percolation field-bake ledger — one genuine contact, and where the 2026 sharpness theorem's hypotheses part from the corpus</span></span><a href="https://github.com/daryljanzen/shadow-of-existence/blob/main/GRAPH_THEORY_LEDGER.md">OPEN</a></li>
+<li><span class="pn">L16</span><span class="ti"><b>Number Theory</b><span class="sub">The number-theory field-bake ledger --- what bit, what bounced, and where the boundary is</span></span><a href="https://github.com/daryljanzen/shadow-of-existence/blob/main/NUMBER_THEORY_LEDGER.md">OPEN</a></li>
+<li><span class="pn">L13</span><span class="ti"><b>Index Theory</b><span class="sub">The differential-topology and index-theory field-bake ledger --- what bit, what bounced, and where the boundary is</span></span><a href="https://github.com/daryljanzen/shadow-of-existence/blob/main/INDEX_THEORY_LEDGER.md">OPEN</a></li>
+<li><span class="pn">L14</span><span class="ti"><b>Integrable Systems</b><span class="sub">The integrable-systems field-bake ledger --- what bit, what bounced, and where the boundary is</span></span><a href="https://github.com/daryljanzen/shadow-of-existence/blob/main/INTEGRABLE_SYSTEMS_LEDGER.md">OPEN</a></li>
+</ul>
+<h2>Method and evidence</h2>
+<p class="note">The fields that test the corpus against measurement and technique rather than against a mathematical field.</p>
+<ul class="papers">
+<li><span class="pn">L23</span><span class="ti"><b>Optics Lensing</b><span class="sub">observational optics and lensing against CR — confirmations, and the dimension clause they forced</span></span><a href="https://github.com/daryljanzen/shadow-of-existence/blob/main/OPTICS_LENSING_LEDGER.md">OPEN</a></li>
+<li><span class="pn">L25</span><span class="ti"><b>Statistics Inference</b><span class="sub">The statistics/inference field-bake ledger — what bit, what bounced, and why. The last unbaked field in THE_MATHEMATICS_REACH's candidate set, and the one A5.5 needs. OWED 622</span></span><a href="https://github.com/daryljanzen/shadow-of-existence/blob/main/STATISTICS_INFERENCE_LEDGER.md">OPEN</a></li>
+<li><span class="pn">L21</span><span class="ti"><b>Information Theory</b><span class="sub">The information-theory field-bake ledger --- what bit, what bounced, and where the boundary is</span></span><a href="https://github.com/daryljanzen/shadow-of-existence/blob/main/INFORMATION_THEORY_LEDGER.md">OPEN</a></li>
+<li><span class="pn">L22</span><span class="ti"><b>Numerical Analysis</b><span class="sub">The numerical-analysis field-bake ledger --- what bit, what bounced, and where the boundary is</span></span><a href="https://github.com/daryljanzen/shadow-of-existence/blob/main/NUMERICAL_ANALYSIS_LEDGER.md">OPEN</a></li>
+<li><span class="pn">L24</span><span class="ti"><b>Probability</b><span class="sub">The probability and stochastic-processes field-bake ledger --- what bit, what bounced, and where the boundary is</span></span><a href="https://github.com/daryljanzen/shadow-of-existence/blob/main/PROBABILITY_LEDGER.md">OPEN</a></li>
+</ul>
+
+<footer>Generated from the repository. <a href="https://github.com/daryljanzen/shadow-of-existence">Source.</a></footer>
+</div>
+</body>
+</html>
