@@ -1,0 +1,103 @@
+# Publishes the live edition to GitHub Pages, rebuilt from source on every push.
+#
+# ** WHY PAGES AND NOT THE CDN, since the PDFs are served from the CDN and this
+#    could have been.**  jsDelivr caches a branch URL for twelve hours at the
+#    edge and seven days in a browser.  That is right for the papers, which
+#    change rarely and whose content is not a claim about *now*.  It is wrong for
+#    the open edge, whose whole point is that it says what is currently open: a
+#    reader served a half-day-old frontier is reading a claim the register has
+#    already moved past, and would have no way to know.  Pages serves the
+#    repository with no such lag.
+#
+# ** AND THE PAGES ARE REBUILT HERE RATHER THAN READ FROM THE COMMIT. **  The
+#    generator runs against the tree being published, so the index, the
+#    introduction and the frontier cannot be stale relative to the papers and
+#    the register they are generated from -- the same reason the corpus
+#    regenerates its appendices rather than hand-maintaining them.
+name: pages
+
+on:
+  push:
+    branches: [main]
+    # Any of these can change what the pages say.
+    paths:
+      - 'INTRODUCTION.md'
+      - 'THE_FRONTIER.md'
+      - 'THE_REGISTER.md'
+      - 'corpus/**.tex'
+      - 'corpus/**.pdf'
+      - 'BOOK_INTRO_cosmiCave/assets/**'
+      - 'scripts/gen_live_edition.py'
+      - '.github/workflows/pages.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+# One publish at a time; a queued run supersedes a waiting one rather than
+# racing it.  In-progress runs are NOT cancelled: a half-published site is worse
+# than a slightly late one.
+concurrency:
+  group: pages
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Regenerate the frontier from the register
+        # THE_FRONTIER.md is generated from THE_REGISTER.md.  Regenerating here
+        # means a register edit that reached main without its regeneration
+        # cannot publish a stale open edge.
+        run: python3 scripts/regen_frontier.py
+
+      - name: Build the pages
+        run: python3 scripts/gen_live_edition.py
+
+      - name: Check the build produced what it claims
+        # A publish step that cannot fail is a publish step that will one day
+        # ship an empty page.  These are the three assertions worth making.
+        run: |
+          set -e
+          cd BOOK_INTRO_cosmiCave
+          for f in live_edition.html introduction.html frontier.html; do
+            test -s "$f" || { echo "::error::$f missing or empty"; exit 1; }
+          done
+          grep -q 'The Shadow of Existence' live_edition.html \
+            || { echo "::error::index lost its title"; exit 1; }
+          grep -qE 'class="pn">P18<' live_edition.html \
+            || { echo "::error::index is missing chapters"; exit 1; }
+          echo "index $(wc -c < live_edition.html)b, introduction $(wc -c < introduction.html)b, frontier $(wc -c < frontier.html)b"
+
+      - name: Assemble the site
+        # index.html is the live edition, so the site root is the book.
+        run: |
+          mkdir -p _site
+          cp BOOK_INTRO_cosmiCave/live_edition.html _site/index.html
+          cp BOOK_INTRO_cosmiCave/live_edition.html _site/
+          cp BOOK_INTRO_cosmiCave/introduction.html _site/
+          cp BOOK_INTRO_cosmiCave/frontier.html _site/
+          mkdir -p _site/assets
+          cp BOOK_INTRO_cosmiCave/assets/*.html _site/assets/ 2>/dev/null || true
+
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: _site
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - id: deployment
+        uses: actions/deploy-pages@v4

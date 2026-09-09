@@ -88,9 +88,9 @@ this page.</p>
 <p><strong>Cosmological Relativity begins from the observation that this is a statement about general relativity, not about the world</strong> — and that the world, in one specific circumstance, does single one out. Under gravitational collapse the horizon's own geometry fixes a limiting causal direction, and it is generically non-orthogonal to any spacelike slice. That direction is not a convention. It is forced, and it is what gets reassigned as cosmic time.</p>
 <p>Followed through, the picture inverts. Our universe is read as <strong>the interior of a gravitational collapse</strong> — not an explosion from a point but the far side of one, on the conjugate branch: an antimatter progenitor, decelerating to a turnaround, sweeping through the coordinate origin where the species reverses, re-expanding. What we call the beginning is that passage. The origin is not where matter came from; it is a horizon the slicing is anchored to, and the reading that made it a source was inherited from a choice of slicing rather than found in the geometry.</p>
 <p>The progenitor is not a free parameter. The collapse selects the one configuration whose limiting direction grazes its own horizon, and that fixes its mass by the cosmological constant alone — <strong>M = c²/3√Λ G</strong>, about 4×10⁵² kg. Everything on the geometry scales from that single length.</p>
-      <p class="more"><a href="https://cdn.jsdelivr.net/gh/daryljanzen/shadow-of-existence@main/BOOK_INTRO_cosmiCave/introduction.html" target="_blank"
+      <p class="more"><a href="./introduction.html" target="_blank"
          rel="noopener">Read more →</a></p></div>
-    </details><a href="https://cdn.jsdelivr.net/gh/daryljanzen/shadow-of-existence@main/BOOK_INTRO_cosmiCave/introduction.html" target="_blank" rel="noopener">READ</a></li>
+    </details><a href="./introduction.html" target="_blank" rel="noopener">READ</a></li>
     <li><details><summary><span class="pn">P1</span><span class="ti"><b>The event horizon is a metric singularity</b><span class="sub">a missing definition in general relativity, and the black-hole problems it dissolves</span></span></summary><div class="abs"><p>We identify a geometric structure we argue standard general relativity has lacked among its
 standard definitions: the <em>metric singularity</em>—a null hypersurface along whose
 generators the spatial extent has, in addition, contracted to zero, so that events on a
@@ -214,7 +214,7 @@ repository</a>. Papers via jsDelivr; the frontier read live at page load.
 
 </div>
 <script>
-const PAGES_URL = 'https://cdn.jsdelivr.net/gh/daryljanzen/shadow-of-existence@main/BOOK_INTRO_cosmiCave';
+const PAGES_URL = '.';
 (async function () {
   const el = document.getElementById('frontier');
   const urls = ['https://cdn.jsdelivr.net/gh/daryljanzen/shadow-of-existence@main/THE_FRONTIER.md', 'https://raw.githubusercontent.com/daryljanzen/shadow-of-existence/main/THE_FRONTIER.md'];
@@ -273,7 +273,10 @@ async function placeMatrix() {
   const slot = document.getElementById('matrixslot');
   if (!slot) return;
   try {
-    const r = await fetch(
+    // Beside the page on Pages; from the CDN when opened anywhere else.
+    let r = await fetch('assets/dependency_matrix.html', {cache: 'no-cache'})
+              .catch(() => null);
+    if (!r || !r.ok) r = await fetch(
       'https://cdn.jsdelivr.net/gh/daryljanzen/shadow-of-existence@main/BOOK_INTRO_cosmiCave/assets/dependency_matrix.html',
       {cache: 'no-cache'});
     if (!r.ok) throw 0;

@@ -69,7 +69,7 @@
 </head>
 <body>
 <div class="wrap">
-<p class="note"><a href="https://cdn.jsdelivr.net/gh/daryljanzen/shadow-of-existence@main/BOOK_INTRO_cosmiCave/live_edition.html">← The Shadow of Existence</a></p>
+<p class="note"><a href="./live_edition.html">← The Shadow of Existence</a></p>
 <h1>Introduction</h1>
 <div class="intro">
 <h3>1 · What this is</h3>
@@ -150,7 +150,10 @@ async function placeMatrix() {
   const slot = document.getElementById('matrixslot');
   if (!slot) return;
   try {
-    const r = await fetch(
+    // Beside the page on Pages; from the CDN when opened anywhere else.
+    let r = await fetch('assets/dependency_matrix.html', {cache: 'no-cache'})
+              .catch(() => null);
+    if (!r || !r.ok) r = await fetch(
       'https://cdn.jsdelivr.net/gh/daryljanzen/shadow-of-existence@main/BOOK_INTRO_cosmiCave/assets/dependency_matrix.html',
       {cache: 'no-cache'});
     if (!r.ok) throw 0;

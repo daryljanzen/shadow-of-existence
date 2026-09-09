@@ -29,7 +29,11 @@ OUT_INTRO = os.path.join(ROOT, 'BOOK_INTRO_cosmiCave', 'introduction.html')
 OUT_FRONT = os.path.join(ROOT, 'BOOK_INTRO_cosmiCave', 'frontier.html')
 CDN = 'https://cdn.jsdelivr.net/gh/daryljanzen/shadow-of-existence@main'
 RAW = 'https://raw.githubusercontent.com/daryljanzen/shadow-of-existence/main'
-PAGES = CDN + '/BOOK_INTRO_cosmiCave'      # where the generated pages are served
+# Where the generated pages link to each other.  On GitHub Pages they sit beside
+# one another, so a bare filename is correct AND has no cache lag; the CDN base
+# is kept for anyone opening these files outside the site.  PDFs always come
+# from the CDN, which is what a CDN is good at.
+PAGES = os.environ.get('PAGES_BASE', '.')
 
 # P-number -> tex stem, in the corpus's own numbering.  The geometric core is
 # P17 and sits seventeenth; the older `p0` tag put it first and is deprecated.
@@ -54,7 +58,10 @@ async function placeMatrix() {
   const slot = document.getElementById('matrixslot');
   if (!slot) return;
   try {
-    const r = await fetch(
+    // Beside the page on Pages; from the CDN when opened anywhere else.
+    let r = await fetch('assets/dependency_matrix.html', {cache: 'no-cache'})
+              .catch(() => null);
+    if (!r || !r.ok) r = await fetch(
       '%%CDN%%/BOOK_INTRO_cosmiCave/assets/dependency_matrix.html',
       {cache: 'no-cache'});
     if (!r.ok) throw 0;
@@ -476,7 +483,7 @@ const PAGES_URL = '{PAGES}';
         '<meta name="viewport" content="width=device-width, initial-scale=1">\n'
         '<title>Introduction \u2014 The Shadow of Existence</title>\n'
         '<style>' + css + '</style>\n</head>\n<body>\n<div class="wrap">\n'
-        '<p class="note"><a href="' + PAGES + '/live_edition.html">\u2190 The '
+        '<p class="note"><a href="' + PAGES.rstrip('/') + '/live_edition.html">\u2190 The '
         'Shadow of Existence</a></p>\n<h1>Introduction</h1>\n'
         '<div class="intro">\n' + intro_full + '\n</div>\n'
         '<footer>Generated from the repository\u2019s own introduction. '
@@ -499,7 +506,7 @@ const PAGES_URL = '{PAGES}';
         '<meta name="viewport" content="width=device-width, initial-scale=1">\n'
         '<title>The open edge \u2014 The Shadow of Existence</title>\n'
         '<style>' + css + '</style>\n</head>\n<body>\n<div class="wrap">\n'
-        '<p class="note"><a href="' + PAGES + '/live_edition.html">\u2190 The '
+        '<p class="note"><a href="' + PAGES.rstrip('/') + '/live_edition.html">\u2190 The '
         'Shadow of Existence</a></p>\n<h1>The open edge</h1>\n'
         '<p class="lede">The programme\u2019s own open questions, each with what '
         'would discharge it. Generated from its register, not written for this '
