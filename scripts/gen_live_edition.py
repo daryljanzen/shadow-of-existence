@@ -53,7 +53,9 @@ def title_of(stem):
     if not m:
         return None
     t = re.sub(r'\\\\|\s+', ' ', m.group(1))
-    t = re.sub(r'\\[a-zA-Z]+\{?|\}', '', t)
+    t = re.sub(r'\$([^$]*)\$', r'<code>\1</code>', t)   # $r=0$ leaked before
+    t = re.sub(r'\\[a-zA-Z]+\{?', '', t).replace('}', '')
+    t = t.replace('---', '\u2014').replace('--', '\u2013')
     return re.sub(r'\s+', ' ', t).strip()
 
 
@@ -156,12 +158,16 @@ def main():
   .note {{ color:var(--faint); font-size:.86rem; }}
   ul.papers {{ list-style:none; padding:0; margin:1rem 0 0; }}
   ul.papers li {{ display:flex; align-items:baseline; gap:.7rem;
-                  padding:.5rem 0; border-bottom:1px solid var(--line); }}
-  .pn {{ flex:0 0 2.4rem; color:var(--pole); font-weight:600; font-size:.9rem; }}
+                  border-bottom:1px solid var(--line); }}
+  ul.papers li > details {{ flex:1 1 auto; border-bottom:none; min-width:0; }}
+  .pn {{ flex:0 0 3.2rem; color:var(--pole); font-weight:600; font-size:.82rem;
+         letter-spacing:.04em; }}
   .ti {{ flex:1 1 auto; }}
   .ti .sub {{ display:block; color:var(--faint); font-size:.88rem; }}
-  ul.papers a {{ flex:0 0 auto; color:var(--pole); text-decoration:none;
-                 font-size:.82rem; letter-spacing:.06em; }}
+  ul.papers a {{ flex:0 0 3rem; text-align:right; color:var(--pole);
+                 text-decoration:none; font-size:.78rem; letter-spacing:.06em;
+                 padding-top:.6rem; }}
+  ul.papers > li > .nolink {{ flex:0 0 3rem; }}
   ul.papers a:hover {{ text-decoration:underline; }}
   .nolink {{ color:var(--line); }}
   details {{ border-bottom:1px solid var(--line); }}
@@ -174,7 +180,7 @@ def main():
   summary .sub {{ display:block; color:var(--faint); font-size:.88rem; }}
   .abs {{ padding:.2rem 0 1.1rem 1.3rem; font-size:.95rem; }}
   .abs p {{ margin:0 0 .7rem; }}
-  .intro {{ font-size:1rem; }}
+  .intro {{ font-size:1rem; padding:.4rem 0 1.6rem 1.3rem; }}
   .intro p {{ margin:0 0 1rem; }}
   .intro h3 {{ font-size:1.08rem; margin:2rem 0 .6rem; font-weight:600;
                color:var(--ink); }}
@@ -212,16 +218,14 @@ date.</p>
 <p class="note">For a citable, frozen version, use a tagged release rather than
 this page.</p>
 
-<h2>Introduction</h2>
-<p class="lede">What the programme is, the eighteen papers and how they depend on
-one another, where to come in, and at what weight each claim is held.</p>
-<div id="introbox"><div class="intro">
-  <p class="status">Fetching the introduction…</p>
-</div></div>
-
-<h2>The papers</h2>
-<p class="note">Click a title for its abstract; the link opens the paper.</p>
+<p class="note">Click any entry to open it. Chapters link to the paper itself.</p>
 <ul class="papers">
+    <li><details id="introbox"><summary><span class="pn">INTRO</span>
+      <span class="ti"><b>Introduction</b><span class="sub">what the programme is,
+      the eighteen chapters and how they depend on one another, where to come in,
+      and at what weight each claim is held</span></span></summary>
+      <div class="intro"><p class="status">Fetching the introduction…</p></div>
+    </details><span class="nolink"></span></li>
 {paper_list}
 </ul>
 
