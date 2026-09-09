@@ -146,6 +146,43 @@ sources: [cowork, chat]
 
 
 
+### Revision r6403 — 2026-09-09 (node 64). **THREE ROWS NARROWED, ONE RECEIPT DIRECTORY DEFRAGMENTED, AND THE FRONTIER VIEW BROUGHT CURRENT.**
+
+**⌗ THE ROWS.** *`PO-30` --- `P08` `sec:open`'s closing sentence bundles two things: a dynamics for the
+curve GIVEN content, which the corpus **supplies** (the contracted Bianchi identity is entailed by the
+cut's own geometry, and a constitutive relation closes the system into ODEs on the cut --- `P09` gives it
+for the homogeneous and Weyl classes, the spherical class is the TOV system in the operator's own
+variables); and a generative law for the CONTENT, which is `PO-26`. ***And "the slicing operator is
+kinematic" stated as this construction's deepest question is a caveat true of any geometric theory***
+--- general relativity's own contracted Bianchi identity gives conservation and not the equation of
+state. **The difference is not that this construction supplies less but that the content is read
+leftward off the cut**, which is the whole of `prop:bend`.*
+
+**⌗ `PO-26`,** *from a floor with no route to one obstruction, one join and a prior clause. The
+Atiyah--Hirzebruch citation's even-dimensionality hypothesis fails on a five-dimensional face --- the
+r3701 class a third time, conclusion unaffected, citation not load-bearing. The conclusion holds by
+`P13`'s other route and gives **more**: on the round face there are no zero modes at all, so the route
+is **empty rather than vector-like**. The face's one scale makes `P14`'s external mass spectrum a
+**requirement** rather than a concession. **And the row has a question in front of its own**: what the
+construction would be is specified nowhere, and the standard specification is the one `P13` rules out.*
+
+**⌗ `PO-31`,** *by closure-adjacency on `PO-40`. The one route the corpus ever named for **deriving**
+$A_s$ --- a fixed point of a stationary recursion, recorded in `THE_WISDOM_LEDGER` at r1942 and never
+entered into any paper --- is closed by `PO-40`'s monotone, twice over on premises that do not overlap.
+**So the constraint in kind gains a third exclusion: not a thermal history, not merely a conserved
+charge, and not a fixed point either.** And the join: with a finite chain the spectrum terminates at the
+head exactly as $\eta$ does, so this row and `PO-41`'s are one question asked of two quantities.*
+
+**⛭ AND TWO THINGS FOUND WHILE LANDING IT, both the shape the corpus keeps finding.** *`r4555` placed a
+`P8` receipt in a **new** `receipts/P8_slicing_operator/` beside the existing `receipts/P08_slicing_operator/`
+--- one paper, two directories, and `check_receipts` **cannot see it** because the file does exist at the
+path its row names. Merged, the `INDEX` row repointed, no dangling reference left. And `THE_FRONTIER`
+still listed `PO-44` after `r4553` struck it: **the view was one revision behind its own source**.
+Regenerated --- 9 open.*
+
+⌗ *Every finding here came from setting two corpus pieces side by side that nobody had, not from new
+physics. Four receipts, each with a control or a stated falsifier.*
+
 ### Revision r6401 — 2026-09-09 (node 64, opened). **THE ROSTER BECOMES DATA AND A NODE REGISTERS ITSELF: `check_claims`' allowlist removed as friction, its no-default guard kept intact.**
 
 **⌗ WHAT HAPPENED, and it is worth the entry because the gate stopped real work on arrival.** *A new
