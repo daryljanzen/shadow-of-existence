@@ -146,6 +146,76 @@ sources: [cowork, chat]
 
 
 
+### Revision r6411 — 2026-09-09 (node 64). **`PO-23`: the scope clause splits, one route to its discharge is foreclosed as vacuous, and both of its numbers become identities.**
+
+**⛭ THE CONTRIBUTION.** *The row's scope reads "free and static on the instantaneous spectrum ---
+time-dependence does not move the leading coefficient". **That is true for a stronger reason than the
+row gives.** For the free tower $\omega_n=\mu_n/a$, so $\sum d_n\omega_n=(1/a)\sum d_n\mu_n$ ---
+***the scale factor factors out of the whole sum, identically, for every $a$***. It is not that the
+coefficient is insensitive to $a$; **$a$ never entered the dimensionless coefficient at all**.*
+⇒ ***So a non-adiabatic FREE computation cannot move it and would add nothing. The discharge must be
+the COUPLED computation and only that*** --- *coupling being the one thing that stops the factorisation.*
+
+**⌗ AND BOTH NUMBERS ARE NOW IDENTITIES.** *$\zeta(0)=10$ from the terminating expansion, with
+$Z(0)=-5/2$ and $Z(-1)=5/2$; and the log coefficient $39/4$ as the exact $1/m$ term of
+$d(m)\mu(m)=2m^{3}-11m+(39/4)/m+\dots$, with a cancellation-free hard cutoff carrying no zeta
+function returning $9.74998$. **The row reports the agreement as "a part in ten thousand"; it is an
+identity plus a numerical check of it, which is the stronger statement.***
+
+**⌗ AND ON THIS BACKGROUND THE ONE CONSTANT IS NOT OBSERVABLE**, *which joins `P10`'s own stronger
+result rather than competing with it. The counterterm basis is one-dimensional because the admitted
+background family is, and the degeneracy is **conformal flatness** --- no scale factor breaks it. The
+tower's background is exactly de~Sitter with $R=12/\alpha^{2}$ **constant**, so $\int\sqrt g R^{2}$
+and $\int\sqrt g R$ are both $\propto V$: the log's counterterm is degenerate with Einstein--Hilbert
+and the cosmological term there. **`PO-43` names where a genuinely new one first appears.***
+
+⚠ **TWO OF MY OWN INSTRUMENTS FAILED FIRST AND BOTH ARE THE SAME TRAP.** *A least-squares fit on
+$(M^4,M^3,M^2,M,\ln M,1)$ returned a $\ln$ coefficient of **zero** --- $\ln M$ is nearly degenerate
+with a constant against $M^4$ over any usable range. And subtracting the closed-form polynomial from
+the sum returned exact zeros and then $-1024$: $S(M)\sim10^{19}$ while the wanted remainder is
+$\sim10^{2}$. ***Both are cancellation, and in both the fix was to form the small quantity directly
+rather than as a difference of large ones*** --- the same trap as `PO-25`'s inner horizon two revisions
+ago, and the second instance in one session.*
+
+### Revision r6409 — 2026-09-09 (node 64). **`PO-24`: the remaining question is not well posed as asked, and the reason is exact — the tilt is the wrong absorber.**
+
+**⌗ THE ROW ASKS whether a displacement of that size in the inferred tilt is a tension.** *That
+presumes the displacement is **a number**. ***It is a local slope of a curve, and the curve's slope
+varies by a factor of seven thousand over the data the fit is scored on.****
+
+**⛭ THE SIGNATURE IS A GAUSSIAN IN $\ell$ AND A TILT IS A POWER LAW**, *so the tilt it locally mimics
+is exactly $\mathrm{d}\ln(\text{ratio})/\mathrm{d}\ln\ell=-2(r^{2}-1)(\ell/\ell_D)^{2}$ --- **not a
+constant**. Across plik_lite's own $\ell=30$–$2508$ it runs $-0.0002$ to $-1.31$: a factor of $6989$,
+**exactly $(\ell_{\max}/\ell_{\min})^{2}$**.* ⇒ ***A single tilt is a one-parameter fit to a function
+whose logarithmic slope varies by $7000\times$ over the fitted data. Absorption is therefore
+necessarily window-local*** --- *and the reported $\Delta n_s=-0.0304$ equals the true slope at
+$\ell=381$ **and nowhere else**, with the window used being the one where the mimicked tilt is
+smallest.*
+
+**⇒ SO A JOINT FIT DOES NOT MEET A SHIFTED TILT. It meets a Gaussian-shaped residual, and no tilt
+removes a Gaussian.** *What it will weigh is that residual, which r4505 already bounds from above at
+$0.26\sigma$ per bin --- **and that bound, not the displacement, is the thing with a verdict
+attached.***
+
+**⛭ AND A DISPLACEMENT IN $n_s$ IS NOT BY ITSELF A TENSION, because $n_s$ is not predicted here.**
+*`P15`: $A_s$ and $n_s$ are "inherited as boundary data exactly as flat $\Lambda$CDM inherits the
+baryon-to-photon ratio". **A different value of an inherited input is a different input, not a
+conflict.** What could be a conflict is a constraint on $n_s$ that does not run through the damping
+tail --- the low-to-mid-$\ell$ shape, TE/EE, lensing. ***That is what "a joint fit" means, and the
+row's discharge condition now carries its reason.***
+
+⌗ **NOT A FINDING, AND RECORDED BECAUSE IT NEARLY WAS.** *I had "the fitted range stops short of where
+the signature lives" written and quantified before checking. **It is already worked**: `C51`
+establishes the thirty dropped bins are $\ell=1759$–$2508$ and ARE the damping tail, and it is
+**discharged at r2780** --- the `LMAXL=2512` extension run, the bins recovered, the verdict moving in
+the disfavouring direction. ***Reading one more receipt in the same directory is what stopped it being
+reported as new***, and it is the join-not-gap prior paying in the direction that costs a node
+nothing to ignore.*
+
+⌗ *Third re-scoping in three rows. `PO-30` a join, `PO-36` a measurement of something other than its
+placement implied, `PO-24` a question not well posed as asked. **None of the three is a closure and
+none is new physics** --- each is two corpus pieces set side by side.*
+
 ### Revision r6407 — 2026-09-09 (node 64). **`PO-36` WORKED: the discrimination quantified, and the row re-scoped — what it measures is the dark fraction, not the framework.**
 
 **⌗ HOW BIG IT IS.** *The two mass choices differ by $f_b^{-1/3}=1.85$ in the radius --- **10.5 Mpc
