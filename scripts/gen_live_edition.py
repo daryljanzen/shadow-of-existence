@@ -28,9 +28,10 @@ OUT = os.path.join(ROOT, 'BOOK_INTRO_cosmiCave', 'live_edition.html')
 CDN = 'https://cdn.jsdelivr.net/gh/daryljanzen/shadow-of-existence@main'
 RAW = 'https://raw.githubusercontent.com/daryljanzen/shadow-of-existence/main'
 
-# P-number -> tex stem, from P7's dependency matrix ordering.
+# P-number -> tex stem, in the corpus's own numbering.  The geometric core is
+# P17 and sits seventeenth; the older `p0` tag put it first and is deprecated.
 ORDER = [
-    ('p0', 'geometric_core_paper'), ('P1', 'BH_causality_v2'),
+    ('P1', 'BH_causality_v2'),
     ('P2', 'janzen_circle_v3'), ('P3', 'SdS-slicing-curve_v2'),
     ('P4', 'modern_parallax'), ('P5', 'groupoid_paper'),
     ('P6', 'shadow_of_existence'), ('P7', 'CR_framework'),
@@ -38,7 +39,8 @@ ORDER = [
     ('P10', 'canonical_time'), ('P11', 'dynamics_paper'),
     ('P12', 'algebroid_paper'), ('P13', 'boundary_paper'),
     ('P14', 'matter_sector_paper'), ('P15', 'CR_cosmology'),
-    ('P16', 'cosmogenesis_paper'), ('P18', 'CR_synthesis'),
+    ('P16', 'cosmogenesis_paper'), ('P17', 'geometric_core_paper'),
+    ('P18', 'CR_synthesis'),
 ]
 
 
@@ -140,7 +142,7 @@ def main():
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Cosmological Relativity — the live edition</title>
+<title>The Shadow of Existence — the live edition</title>
 <style>
   :root {{ --ink:#1c2733; --faint:#8b98a6; --line:#e2e8ee; --pole:#b5462a; --bg:#fbfcfd; }}
   * {{ box-sizing:border-box }}
@@ -170,8 +172,18 @@ def main():
                      transition:transform .15s; }}
   details[open] > summary::before {{ transform:rotate(90deg); }}
   summary .sub {{ display:block; color:var(--faint); font-size:.88rem; }}
-  .abs, .intro, .matrix {{ padding:.2rem 0 1.1rem 1.3rem; font-size:.95rem; }}
-  .abs p, .intro p {{ margin:0 0 .7rem; }}
+  .abs {{ padding:.2rem 0 1.1rem 1.3rem; font-size:.95rem; }}
+  .abs p {{ margin:0 0 .7rem; }}
+  .intro {{ font-size:1rem; }}
+  .intro p {{ margin:0 0 1rem; }}
+  .intro h3 {{ font-size:1.08rem; margin:2rem 0 .6rem; font-weight:600;
+               color:var(--ink); }}
+  .intro figure {{ margin:1.4rem 0; }}
+  .intro figcaption {{ color:var(--faint); font-size:.86rem; margin-top:.5rem;
+                       line-height:1.5; }}
+  .intro .more {{ color:var(--faint); font-size:.86rem; font-style:italic; }}
+  .intro code {{ font-size:.9em; background:#f1f4f7; padding:.05em .3em;
+                 border-radius:3px; }}
   .abs .more {{ color:var(--faint); font-size:.88rem; }}
   .intro h2, .intro h3 {{ font-size:1rem; margin:1.2rem 0 .3rem; }}
   .matrix table {{ border-collapse:collapse; font-size:.72rem; }}
@@ -193,25 +205,19 @@ def main():
 <body>
 <div class="wrap">
 
-<h1>Cosmological Relativity</h1>
+<h1>The Shadow of Existence</h1>
 <p class="lede">The live edition. Every paper below is served from the repository
 itself, so what you open is what the work currently is — not a copy taken on a
 date.</p>
 <p class="note">For a citable, frozen version, use a tagged release rather than
 this page.</p>
 
-<h2>Start here</h2>
-<details id="introbox">
-  <summary><b>The introduction</b><span class="sub">what this is, the corpus, and
-  where to come in</span></summary>
-  <div class="intro"><p class="status">Fetching the introduction…</p></div>
-</details>
-
-<details id="matrixbox">
-  <summary><b>The dependency matrix</b><span class="sub">what each paper rests on,
-  and what it feeds</span></summary>
-  <div class="matrix"><p class="status">Fetching the matrix…</p></div>
-</details>
+<h2>Introduction</h2>
+<p class="lede">What the programme is, the eighteen papers and how they depend on
+one another, where to come in, and at what weight each claim is held.</p>
+<div id="introbox"><div class="intro">
+  <p class="status">Fetching the introduction…</p>
+</div></div>
 
 <h2>The papers</h2>
 <p class="note">Click a title for its abstract; the link opens the paper.</p>
@@ -295,30 +301,50 @@ repository</a>. Papers via jsDelivr; the frontier read live at page load.
       .replace(/\*\*(.+?)\*\*/g, '<strong>$1</strong>')
       .replace(/\*(.+?)\*/g, '<em>$1</em>')
       .replace(/`(.+?)`/g, '<code>$1</code>');
-    let html = '', para = [];
+    let html = '', para = [], inFig = false;
     const flush = () => {{ if (para.length) {{
       html += '<p>' + inline(para.join(' ')) + '</p>'; para = []; }} }};
     for (const line of md.split('\n')) {{
+      // The introduction carries its own <figure> for the matrix.  Replace that
+      // block with a slot and drop the live table into it, so the matrix sits
+      // where the text already explains it rather than beside the text.
+      if (/^<figure>/.test(line.trim())) {{
+        flush(); inFig = true;
+        html += '<figure class="matrix"><div id="matrixslot">' +
+                '<p class="status">Fetching the matrix\u2026</p></div>';
+        continue;
+      }}
+      if (inFig) {{
+        const cap = line.match(/<figcaption>([\s\S]*)/);
+        if (cap) html += '<figcaption>' + cap[1].replace(/<\/figcaption>.*/, '') +
+                         '</figcaption>';
+        if (/<\/figure>/.test(line)) {{ html += '</figure>'; inFig = false; }}
+        continue;
+      }}
       if (/^#{{1,3}} /.test(line)) {{
         flush();
         html += '<h3>' + inline(line.replace(/^#+ /, '')) + '</h3>';
       }} else if (!line.trim()) {{ flush(); }}
       else {{ para.push(line.trim()); }}
-      if (html.length > 24000) break;
+      if (html.length > 40000) break;
     }}
     flush();
-    html += '<p class="more">This is the introduction as the repository ' +
-            'currently holds it. <a href="{RAW}/INTRODUCTION.md">Read the ' +
-            'source.</a></p>';
+    html += '<p class="more">The introduction as the repository currently ' +
+            'holds it \u2014 it changes when the work does.</p>';
     box.innerHTML = html;
+    placeMatrix();
   }} catch (e) {{
-    box.innerHTML = '<p class="status">The introduction lives at ' +
-      '<a href="{RAW}/INTRODUCTION.md">INTRODUCTION.md</a>.</p>';
+    box.innerHTML = '<p class="status">The introduction could not be reached ' +
+      'just now. <a href="{RAW}/INTRODUCTION.md">Its source is here.</a></p>';
   }}
 }})();
 
-(async function () {{
-  const box = document.querySelector('#matrixbox .matrix');
+// The matrix belongs INSIDE the introduction, at the figure the introduction
+// already carries for it -- not as a sibling accordion.  It is fetched for the
+// same reason everything else here is.
+async function placeMatrix() {{
+  const slot = document.getElementById('matrixslot');
+  if (!slot) return;
   try {{
     const r = await fetch(
       '{CDN}/BOOK_INTRO_cosmiCave/assets/dependency_matrix.html',
@@ -327,18 +353,14 @@ repository</a>. Papers via jsDelivr; the frontier read live at page load.
     const doc = new DOMParser().parseFromString(await r.text(), 'text/html');
     const tbl = doc.querySelector('table');
     if (!tbl) throw 0;
-    box.innerHTML = '';
-    box.appendChild(tbl);
-    const p = document.createElement('p');
-    p.className = 'more';
-    p.innerHTML = 'A row is what a paper rests on; a column is what it feeds.';
-    box.appendChild(p);
+    slot.innerHTML = '';
+    slot.appendChild(tbl);
   }} catch (e) {{
-    box.innerHTML = '<p class="status">The matrix is at ' +
+    slot.innerHTML = '<p class="status">The matrix is at ' +
       '<a href="{RAW}/BOOK_INTRO_cosmiCave/assets/dependency_matrix.html">' +
       'dependency_matrix.html</a>.</p>';
   }}
-}})();
+}}
 </script>
 </body>
 </html>

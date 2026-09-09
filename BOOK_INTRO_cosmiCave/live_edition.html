@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Cosmological Relativity — the live edition</title>
+<title>The Shadow of Existence — the live edition</title>
 <style>
   :root { --ink:#1c2733; --faint:#8b98a6; --line:#e2e8ee; --pole:#b5462a; --bg:#fbfcfd; }
   * { box-sizing:border-box }
@@ -33,8 +33,18 @@
                      transition:transform .15s; }
   details[open] > summary::before { transform:rotate(90deg); }
   summary .sub { display:block; color:var(--faint); font-size:.88rem; }
-  .abs, .intro, .matrix { padding:.2rem 0 1.1rem 1.3rem; font-size:.95rem; }
-  .abs p, .intro p { margin:0 0 .7rem; }
+  .abs { padding:.2rem 0 1.1rem 1.3rem; font-size:.95rem; }
+  .abs p { margin:0 0 .7rem; }
+  .intro { font-size:1rem; }
+  .intro p { margin:0 0 1rem; }
+  .intro h3 { font-size:1.08rem; margin:2rem 0 .6rem; font-weight:600;
+               color:var(--ink); }
+  .intro figure { margin:1.4rem 0; }
+  .intro figcaption { color:var(--faint); font-size:.86rem; margin-top:.5rem;
+                       line-height:1.5; }
+  .intro .more { color:var(--faint); font-size:.86rem; font-style:italic; }
+  .intro code { font-size:.9em; background:#f1f4f7; padding:.05em .3em;
+                 border-radius:3px; }
   .abs .more { color:var(--faint); font-size:.88rem; }
   .intro h2, .intro h3 { font-size:1rem; margin:1.2rem 0 .3rem; }
   .matrix table { border-collapse:collapse; font-size:.72rem; }
@@ -56,71 +66,23 @@
 <body>
 <div class="wrap">
 
-<h1>Cosmological Relativity</h1>
+<h1>The Shadow of Existence</h1>
 <p class="lede">The live edition. Every paper below is served from the repository
 itself, so what you open is what the work currently is — not a copy taken on a
 date.</p>
 <p class="note">For a citable, frozen version, use a tagged release rather than
 this page.</p>
 
-<h2>Start here</h2>
-<details id="introbox">
-  <summary><b>The introduction</b><span class="sub">what this is, the corpus, and
-  where to come in</span></summary>
-  <div class="intro"><p class="status">Fetching the introduction…</p></div>
-</details>
-
-<details id="matrixbox">
-  <summary><b>The dependency matrix</b><span class="sub">what each paper rests on,
-  and what it feeds</span></summary>
-  <div class="matrix"><p class="status">Fetching the matrix…</p></div>
-</details>
+<h2>Introduction</h2>
+<p class="lede">What the programme is, the eighteen papers and how they depend on
+one another, where to come in, and at what weight each claim is held.</p>
+<div id="introbox"><div class="intro">
+  <p class="status">Fetching the introduction…</p>
+</div></div>
 
 <h2>The papers</h2>
 <p class="note">Click a title for its abstract; the link opens the paper.</p>
 <ul class="papers">
-    <li><details><summary><span class="pn">p0</span><span class="ti"><b>Reached through the imaginary, real by construction</b><span class="sub">the maximally symmetric substrate as the geometric--ontological core of Cosmological Relativity</span></span></summary><div class="abs"><p>The papers of this programme construct, read, and apply a single object:
-the maximally symmetric de Sitter substrate. This paper is about the
-object itself. We make explicit three facts the corpus has carried
-implicitly and never stated in one place. First, the substrate is
-<em>everywhere intrinsically real by construction</em>: it is a real
-manifold with a real coordinate basis—the five-dimensional
-<code> dS_5=SO(5,1)/SO(4,1)</code> of the ladder below, of which the
-four-dimensional <code> dS_4</code> is the <em>background</em> its leaves
-carry—whose
-Lorentzian signature is an intrinsic property of its positive curvature,
-not a signature imposed on it from outside; the imaginary variables the
-construction uses to <em>reach</em> it—the fifth embedding coordinate, the
-conjugacy circle, the equatorial seam's analytic continuation—are
-instruments of visualisation and continuation over a geometry that is real
-at every point they land on. Second, that substrate is the <em>universal
-standard of physics</em>: its curvature radius <code> = 3/ </code> and its
-locked null cone are the intrinsic length and causal structure against which
-every material structure is what it is—Eddington's reason the cosmological
-constant cannot vanish, here corrected (its timelike half as real as its
-spatial one) and grounded (a real intrinsic ground state, not a property of
-the operation of measurement); and, read at the last-scattering surface, this
-same standard dissolves the horizon problem—the microwave background's
-uniformity is the substrate's maximal symmetry, not the residue of an early
-causal contact. Third, the <em>maximal symmetry</em> of that
-substrate is a single fact from which the corpus's separately-established
-results descend as one: the parameter-free rigidity of the cosmology, the
-fundamental constants standing as unit gauges over the substrate's single
-scale—a singleness with a consequence the ledger should state, since neither real form supplies a second invariant and a dimensionless magnitude needs two: the global Wick rotation carries the defining quadric to <code>S^5</code> of the <em>same</em> radius, acting on the coordinate and leaving the right-hand side untouched, and every curvature invariant on either face is a pure power of <code>1/ ^2</code>. <em>So the construction cannot force a coupling, and its silence about magnitudes is a property of a one-constant theory rather than a gap awaiting work</em>—the common root of three verdicts reached separately, that the winding quantises without measuring, the flat bundle selects without coupling, and the branch point filters without supplying—, the necessity and
-sufficiency of the augmentation of general relativity, the universality of
-physics, and the wall against a continuous geometric matter symmetry are the
-same property seen at several rungs. Read at that constant rung, the single
-scale renders the traditional Planck values gauge-combinations rather than
-physical scales, and dissolves the cosmological-constant and coincidence
-problems by that one fact—no Planck scale for <code> </code> to be small against,
-and no bare-<code> </code>-versus-vacuum-energy split for the fine cancellation to
-act on—with <code> </code>'s value the ledger's one input scale, not predicted. We collect the source—a real
-coordinate basis in which the would-be timelike embedding coordinate is not a
-coordinate of the manifold at all, and a curvature radius that is the
-manifold's one scale—and we show that the straight null rulings of the
-surface, the light cone locked to the equilateral profile that maximal
-symmetry forces, are the visible peak of exactly this intrinsically real
-geometry.</p><p class="more">The abstract continues in the paper itself. <a href="https://cdn.jsdelivr.net/gh/daryljanzen/shadow-of-existence@main/corpus/geometric_core_paper.pdf">Open the PDF.</a></p></div></details><a href="https://cdn.jsdelivr.net/gh/daryljanzen/shadow-of-existence@main/corpus/geometric_core_paper.pdf">PDF</a></li>
     <li><details><summary><span class="pn">P1</span><span class="ti"><b>The event horizon is a metric singularity</b><span class="sub">a missing definition in general relativity, and the black-hole problems it dissolves</span></span></summary><div class="abs"><p>We identify a geometric structure we argue standard general relativity has lacked among its
 standard definitions: the <em>metric singularity</em>—a null hypersurface along whose
 generators the spatial extent has, in addition, contracted to zero, so that events on a
@@ -176,6 +138,48 @@ proved elsewhere in the corpus, the Big Bang their conjunction rather than a sep
 posit. Second, it carries that synthesis to a quantitative, falsifiable edge: the
 primordial abundances of the light elements, read as a <em>fossil</em> of the previous
 universe's collapse.</p><p class="more">The abstract continues in the paper itself. <a href="https://cdn.jsdelivr.net/gh/daryljanzen/shadow-of-existence@main/corpus/cosmogenesis_paper.pdf">Open the PDF.</a></p></div></details><a href="https://cdn.jsdelivr.net/gh/daryljanzen/shadow-of-existence@main/corpus/cosmogenesis_paper.pdf">PDF</a></li>
+    <li><details><summary><span class="pn">P17</span><span class="ti"><b>Reached through the imaginary, real by construction</b><span class="sub">the maximally symmetric substrate as the geometric--ontological core of Cosmological Relativity</span></span></summary><div class="abs"><p>The papers of this programme construct, read, and apply a single object:
+the maximally symmetric de Sitter substrate. This paper is about the
+object itself. We make explicit three facts the corpus has carried
+implicitly and never stated in one place. First, the substrate is
+<em>everywhere intrinsically real by construction</em>: it is a real
+manifold with a real coordinate basis—the five-dimensional
+<code> dS_5=SO(5,1)/SO(4,1)</code> of the ladder below, of which the
+four-dimensional <code> dS_4</code> is the <em>background</em> its leaves
+carry—whose
+Lorentzian signature is an intrinsic property of its positive curvature,
+not a signature imposed on it from outside; the imaginary variables the
+construction uses to <em>reach</em> it—the fifth embedding coordinate, the
+conjugacy circle, the equatorial seam's analytic continuation—are
+instruments of visualisation and continuation over a geometry that is real
+at every point they land on. Second, that substrate is the <em>universal
+standard of physics</em>: its curvature radius <code> = 3/ </code> and its
+locked null cone are the intrinsic length and causal structure against which
+every material structure is what it is—Eddington's reason the cosmological
+constant cannot vanish, here corrected (its timelike half as real as its
+spatial one) and grounded (a real intrinsic ground state, not a property of
+the operation of measurement); and, read at the last-scattering surface, this
+same standard dissolves the horizon problem—the microwave background's
+uniformity is the substrate's maximal symmetry, not the residue of an early
+causal contact. Third, the <em>maximal symmetry</em> of that
+substrate is a single fact from which the corpus's separately-established
+results descend as one: the parameter-free rigidity of the cosmology, the
+fundamental constants standing as unit gauges over the substrate's single
+scale—a singleness with a consequence the ledger should state, since neither real form supplies a second invariant and a dimensionless magnitude needs two: the global Wick rotation carries the defining quadric to <code>S^5</code> of the <em>same</em> radius, acting on the coordinate and leaving the right-hand side untouched, and every curvature invariant on either face is a pure power of <code>1/ ^2</code>. <em>So the construction cannot force a coupling, and its silence about magnitudes is a property of a one-constant theory rather than a gap awaiting work</em>—the common root of three verdicts reached separately, that the winding quantises without measuring, the flat bundle selects without coupling, and the branch point filters without supplying—, the necessity and
+sufficiency of the augmentation of general relativity, the universality of
+physics, and the wall against a continuous geometric matter symmetry are the
+same property seen at several rungs. Read at that constant rung, the single
+scale renders the traditional Planck values gauge-combinations rather than
+physical scales, and dissolves the cosmological-constant and coincidence
+problems by that one fact—no Planck scale for <code> </code> to be small against,
+and no bare-<code> </code>-versus-vacuum-energy split for the fine cancellation to
+act on—with <code> </code>'s value the ledger's one input scale, not predicted. We collect the source—a real
+coordinate basis in which the would-be timelike embedding coordinate is not a
+coordinate of the manifold at all, and a curvature radius that is the
+manifold's one scale—and we show that the straight null rulings of the
+surface, the light cone locked to the equilateral profile that maximal
+symmetry forces, are the visible peak of exactly this intrinsically real
+geometry.</p><p class="more">The abstract continues in the paper itself. <a href="https://cdn.jsdelivr.net/gh/daryljanzen/shadow-of-existence@main/corpus/geometric_core_paper.pdf">Open the PDF.</a></p></div></details><a href="https://cdn.jsdelivr.net/gh/daryljanzen/shadow-of-existence@main/corpus/geometric_core_paper.pdf">PDF</a></li>
     <li><details><summary><span class="pn">P18</span><span class="ti"><b>Cosmological Relativity</b><span class="sub">what the construction delivers, what it declines, and where its edge is</span></span></summary><div class="abs"><p>This paper states, in one place, what the Cosmological Relativity corpus establishes, at the weight each
 result is established at, together with what the construction declines to claim and where its open edge
 lies. Nothing here is new: every claim is drawn from one of seventeen papers or from the ledgers those
@@ -265,30 +269,50 @@ repository</a>. Papers via jsDelivr; the frontier read live at page load.
       .replace(/\*\*(.+?)\*\*/g, '<strong>$1</strong>')
       .replace(/\*(.+?)\*/g, '<em>$1</em>')
       .replace(/`(.+?)`/g, '<code>$1</code>');
-    let html = '', para = [];
+    let html = '', para = [], inFig = false;
     const flush = () => { if (para.length) {
       html += '<p>' + inline(para.join(' ')) + '</p>'; para = []; } };
     for (const line of md.split('\n')) {
+      // The introduction carries its own <figure> for the matrix.  Replace that
+      // block with a slot and drop the live table into it, so the matrix sits
+      // where the text already explains it rather than beside the text.
+      if (/^<figure>/.test(line.trim())) {
+        flush(); inFig = true;
+        html += '<figure class="matrix"><div id="matrixslot">' +
+                '<p class="status">Fetching the matrix\u2026</p></div>';
+        continue;
+      }
+      if (inFig) {
+        const cap = line.match(/<figcaption>([\s\S]*)/);
+        if (cap) html += '<figcaption>' + cap[1].replace(/<\/figcaption>.*/, '') +
+                         '</figcaption>';
+        if (/<\/figure>/.test(line)) { html += '</figure>'; inFig = false; }
+        continue;
+      }
       if (/^#{1,3} /.test(line)) {
         flush();
         html += '<h3>' + inline(line.replace(/^#+ /, '')) + '</h3>';
       } else if (!line.trim()) { flush(); }
       else { para.push(line.trim()); }
-      if (html.length > 24000) break;
+      if (html.length > 40000) break;
     }
     flush();
-    html += '<p class="more">This is the introduction as the repository ' +
-            'currently holds it. <a href="https://raw.githubusercontent.com/daryljanzen/shadow-of-existence/main/INTRODUCTION.md">Read the ' +
-            'source.</a></p>';
+    html += '<p class="more">The introduction as the repository currently ' +
+            'holds it \u2014 it changes when the work does.</p>';
     box.innerHTML = html;
+    placeMatrix();
   } catch (e) {
-    box.innerHTML = '<p class="status">The introduction lives at ' +
-      '<a href="https://raw.githubusercontent.com/daryljanzen/shadow-of-existence/main/INTRODUCTION.md">INTRODUCTION.md</a>.</p>';
+    box.innerHTML = '<p class="status">The introduction could not be reached ' +
+      'just now. <a href="https://raw.githubusercontent.com/daryljanzen/shadow-of-existence/main/INTRODUCTION.md">Its source is here.</a></p>';
   }
 })();
 
-(async function () {
-  const box = document.querySelector('#matrixbox .matrix');
+// The matrix belongs INSIDE the introduction, at the figure the introduction
+// already carries for it -- not as a sibling accordion.  It is fetched for the
+// same reason everything else here is.
+async function placeMatrix() {
+  const slot = document.getElementById('matrixslot');
+  if (!slot) return;
   try {
     const r = await fetch(
       'https://cdn.jsdelivr.net/gh/daryljanzen/shadow-of-existence@main/BOOK_INTRO_cosmiCave/assets/dependency_matrix.html',
@@ -297,18 +321,14 @@ repository</a>. Papers via jsDelivr; the frontier read live at page load.
     const doc = new DOMParser().parseFromString(await r.text(), 'text/html');
     const tbl = doc.querySelector('table');
     if (!tbl) throw 0;
-    box.innerHTML = '';
-    box.appendChild(tbl);
-    const p = document.createElement('p');
-    p.className = 'more';
-    p.innerHTML = 'A row is what a paper rests on; a column is what it feeds.';
-    box.appendChild(p);
+    slot.innerHTML = '';
+    slot.appendChild(tbl);
   } catch (e) {
-    box.innerHTML = '<p class="status">The matrix is at ' +
+    slot.innerHTML = '<p class="status">The matrix is at ' +
       '<a href="https://raw.githubusercontent.com/daryljanzen/shadow-of-existence/main/BOOK_INTRO_cosmiCave/assets/dependency_matrix.html">' +
       'dependency_matrix.html</a>.</p>';
   }
-})();
+}
 </script>
 </body>
 </html>
