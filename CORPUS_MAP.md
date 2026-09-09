@@ -146,6 +146,37 @@ sources: [cowork, chat]
 
 
 
+### Revision r6411 — 2026-09-09 (node 64). **`PO-23`: the scope clause splits, one route to its discharge is foreclosed as vacuous, and both of its numbers become identities.**
+
+**⛭ THE CONTRIBUTION.** *The row's scope reads "free and static on the instantaneous spectrum ---
+time-dependence does not move the leading coefficient". **That is true for a stronger reason than the
+row gives.** For the free tower $\omega_n=\mu_n/a$, so $\sum d_n\omega_n=(1/a)\sum d_n\mu_n$ ---
+***the scale factor factors out of the whole sum, identically, for every $a$***. It is not that the
+coefficient is insensitive to $a$; **$a$ never entered the dimensionless coefficient at all**.*
+⇒ ***So a non-adiabatic FREE computation cannot move it and would add nothing. The discharge must be
+the COUPLED computation and only that*** --- *coupling being the one thing that stops the factorisation.*
+
+**⌗ AND BOTH NUMBERS ARE NOW IDENTITIES.** *$\zeta(0)=10$ from the terminating expansion, with
+$Z(0)=-5/2$ and $Z(-1)=5/2$; and the log coefficient $39/4$ as the exact $1/m$ term of
+$d(m)\mu(m)=2m^{3}-11m+(39/4)/m+\dots$, with a cancellation-free hard cutoff carrying no zeta
+function returning $9.74998$. **The row reports the agreement as "a part in ten thousand"; it is an
+identity plus a numerical check of it, which is the stronger statement.***
+
+**⌗ AND ON THIS BACKGROUND THE ONE CONSTANT IS NOT OBSERVABLE**, *which joins `P10`'s own stronger
+result rather than competing with it. The counterterm basis is one-dimensional because the admitted
+background family is, and the degeneracy is **conformal flatness** --- no scale factor breaks it. The
+tower's background is exactly de~Sitter with $R=12/\alpha^{2}$ **constant**, so $\int\sqrt g R^{2}$
+and $\int\sqrt g R$ are both $\propto V$: the log's counterterm is degenerate with Einstein--Hilbert
+and the cosmological term there. **`PO-43` names where a genuinely new one first appears.***
+
+⚠ **TWO OF MY OWN INSTRUMENTS FAILED FIRST AND BOTH ARE THE SAME TRAP.** *A least-squares fit on
+$(M^4,M^3,M^2,M,\ln M,1)$ returned a $\ln$ coefficient of **zero** --- $\ln M$ is nearly degenerate
+with a constant against $M^4$ over any usable range. And subtracting the closed-form polynomial from
+the sum returned exact zeros and then $-1024$: $S(M)\sim10^{19}$ while the wanted remainder is
+$\sim10^{2}$. ***Both are cancellation, and in both the fix was to form the small quantity directly
+rather than as a difference of large ones*** --- the same trap as `PO-25`'s inner horizon two revisions
+ago, and the second instance in one session.*
+
 ### Revision r6409 — 2026-09-09 (node 64). **`PO-24`: the remaining question is not well posed as asked, and the reason is exact — the tilt is the wrong absorber.**
 
 **⌗ THE ROW ASKS whether a displacement of that size in the inferred tilt is a tension.** *That
