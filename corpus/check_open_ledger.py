@@ -211,6 +211,15 @@ def main():
         if orphans and not orphans_written:
             lines.append('')
             lines.append('# ── ORPHANED BY A REWORDING (r4022) ' + '─' * 44)
+# ── ⚠ r4529: AND A ROW'S ID IS HOSTAGE TO ITS NEIGHBOUR'S WORDING, not only to its own.
+# The claim is cut at the first period-followed-by-space. ** A sentence ending in a brace --
+# `...open here.}}` -- has no such boundary, so the hashed text runs on into the NEXT
+# sentence. ** 114e4d9ede is the demonstrated instance: r4525 reworded the sentence AFTER it
+# and moved its id with its own words untouched, and 22d4ed33c4 orphaned the same way at
+# r4519.  Both were read at the time as this line having reworded the indexed sentence.  It
+# had not.  ** So `check_open_ledger` is owed after ANY paper edit near a verdicted sentence,
+# not only after editing one -- proximity is enough. **  Found by 60, whose measurement is in
+# the ledger's own retired block.
 # ── ⚠ r4517: A REWORDING CAN DROP A LIVE CLAIM OUT OF THIS GATE'S REACH ENTIRELY, and the
 # gate cannot see that it has. c9c2e24729 is the demonstrated instance: the altitude sentence
 # was reworded from "not claimed" to "not a claim that", the claim survives verbatim in P18,
