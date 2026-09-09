@@ -112,21 +112,70 @@ _SYM = {
     'times': '\u00d7', 'pm': '\u00b1', 'to': '\u2192', 'mapsto': '\u21a6',
     'leftrightarrow': '\u2194', 'in': '\u2208', 'infty': '\u221e',
     'approx': '\u2248', 'simeq': '\u2243', 'sim': '\u223c', 'cong': '\u2245',
+    'neq': '\u2260', 'ne': '\u2260', 'equiv': '\u2261', 'perp': '\u22a5',
+    'langle': '\u27e8', 'rangle': '\u27e9', 'nabla': '\u2207', 'ast': '*',
     'geq': '\u2265', 'ge': '\u2265', 'leq': '\u2264', 'le': '\u2264',
     'lesssim': '\u2272', 'propto': '\u221d', 'partial': '\u2202',
     'oplus': '\u2295', 'circ': '\u2218', 'subset': '\u2282',
     'supset': '\u2283', 'setminus': '\u2216', 'int': '\u222b',
     'hbar': '\u210f', 'ell': '\u2113', 'not': '\u00ac', 'cdot': '\u00b7',
     'ldots': '\u2026', 'dots': '\u2026', 'lvert': '|', 'rvert': '|',
-    'dd': 'd', 'rs': 'r_s', 'dS': 'dS', 'TD': 'TD', 'fh': 'f_h', 'fm': 'f_m',
+    'sqrt': '\u221a', 'dd': 'd', 'rs': 'r_s', 'dS': 'dS', 'TD': 'TD', 'fh': 'f_h', 'fm': 'f_m',
 }
 # Macros whose ARGUMENT is the content and whose name is styling only.
 _UNWRAP = ('mathrm', 'mathbb', 'mathbf', 'mathcal', 'mathfrak', 'mathscr',
            'text', 'textrm', 'operatorname', 'bar', 'tilde', 'hat', 'vec',
            'boldsymbol', 'mathsf')
 # Function names that should simply print.
-_WORDS = ('sqrt', 'sin', 'cos', 'tan', 'sinh', 'cosh', 'tanh', 'ln', 'log',
+_WORDS = ('sin', 'cos', 'tan', 'sinh', 'cosh', 'tanh', 'ln', 'log',
           'exp', 'dim', 'ker', 'det', 'tr', 'su', 'so', 'SU', 'SO', 'S')
+
+
+_SUP = {'0':'\u2070','1':'\u00b9','2':'\u00b2','3':'\u00b3','4':'\u2074','5':'\u2075',
+        '6':'\u2076','7':'\u2077','8':'\u2078','9':'\u2079','+':'\u207a','-':'\u207b',
+        '(':'\u207d',')':'\u207e','n':'\u207f','i':'\u2071'}
+_SUB = {'0':'\u2080','1':'\u2081','2':'\u2082','3':'\u2083','4':'\u2084','5':'\u2085',
+        '6':'\u2086','7':'\u2087','8':'\u2088','9':'\u2089','+':'\u208a','-':'\u208b',
+        '(':'\u208d',')':'\u208e','a':'\u2090','e':'\u2091','h':'\u2095','i':'\u1d62',
+        'k':'\u2096','l':'\u2097','m':'\u2098','n':'\u2099','o':'\u2092','p':'\u209a',
+        'r':'\u1d63','s':'\u209b','t':'\u209c','u':'\u1d64','v':'\u1d65','x':'\u2093'}
+
+
+def _script(t):
+    """x^2 -> x\u00b2 and r_0 -> r\u2080 where a character exists; otherwise the
+    marker is kept, because dropping it changes the mathematics."""
+    def up(m):
+        b = m.group(1) or m.group(2)
+        return ''.join(_SUP.get(c, '') for c in b) if all(c in _SUP for c in b) \
+            else '^' + b
+    def dn(m):
+        b = m.group(1) or m.group(2)
+        return ''.join(_SUB.get(c, '') for c in b) if all(c in _SUB for c in b) \
+            else '_' + b
+    t = re.sub(r'\^\{([^{}]*)\}|\^(\w)', up, t)
+    return re.sub(r'_\{([^{}]*)\}|_(\w)', dn, t)
+
+
+def mathspan(t):
+    """`$...$` -> readable Unicode, using the same table the abstracts use."""
+    t = re.sub(r'\\[dt]?frac\{([^{}]*)\}\{([^{}]*)\}', r'\1/\2', t)
+    for _ in range(3):
+        t = re.sub(r'\\(?:' + '|'.join(_UNWRAP) + r')\{([^{}]*)\}', r'\1', t)
+    # \mathbb Z with no braces: take the next token as the argument, or the
+    # wrapper's trailing space detaches it -- 'Z 2' instead of 'Z2'.
+    # The wrapper name must END here: without the boundary, '\\times\\mathbb Z'
+    # had its '\\mathbb ' eaten and left '\\timesZ', an unknown macro, dropped.
+    # Keep a separator: '\\times\\mathbb Z' -> replacing '\\mathbb Z' with 'Z'
+    # in place gives '\\timesZ', an unknown macro, silently dropped.
+    t = re.sub(r'\\(?:' + '|'.join(_UNWRAP) + r')\b *(\w)', r' \1', t)
+    t = re.sub(r'\\([a-zA-Z]+)\s*',
+               lambda m: _SYM.get(m.group(1),
+                                  m.group(1) + ' ' if m.group(1) in _WORDS else ' '), t)
+    t = re.sub(r'\s+([_^])', r'\1', t)        # 'ker _+' -> 'ker_+'
+    t = _script(t)
+    t = re.sub(r'\s+([,.;:)\]])', r'\1', t)
+    t = re.sub(r'([(,\[])\s+', r'\1', t)     # 'SO(6, C)' -> 'SO(6,C)'
+    return re.sub(r'\s+', ' ', t.replace('{', '').replace('}', '')).strip()
 
 
 def detex(t):
@@ -269,7 +318,11 @@ def md_to_html(md, matrix_slot=True, stop_at_h2=None):
         t = t.replace('&', '&amp;').replace('<', '&lt;')
         t = re.sub(r'\*\*(.+?)\*\*', r'<strong>\1</strong>', t)
         t = re.sub(r'\*(.+?)\*', r'<em>\1</em>', t)
-        return re.sub(r'`(.+?)`', r'<code>\1</code>', t)
+        t = re.sub(r'`(.+?)`', r'<code>\1</code>', t)
+        # $...$ was printing as raw LaTeX in the introduction; render it the way
+        # the abstracts already do rather than leaving markup on the page.
+        return re.sub(r'\$([^$]+)\$',
+                      lambda m: '<span class="m">' + mathspan(m.group(1)) + '</span>', t)
 
     def flush():
         if para:
@@ -416,6 +469,8 @@ def main():
   .intro figcaption {{ color:var(--faint); font-size:.86rem; margin-top:.5rem;
                        line-height:1.5; }}
   .intro .more {{ color:var(--faint); font-size:.86rem; font-style:italic; }}
+  .m {{ font-family:'Iowan Old Style',Georgia,serif; font-style:italic;
+        white-space:nowrap; }}
   .intro code {{ font-size:.9em; background:#f1f4f7; padding:.05em .3em;
                  border-radius:3px; }}
   .abs .more {{ color:var(--faint); font-size:.88rem; }}
