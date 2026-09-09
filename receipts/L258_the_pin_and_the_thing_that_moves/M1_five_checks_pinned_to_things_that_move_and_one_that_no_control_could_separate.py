@@ -151,9 +151,17 @@ def main():
             print(f'    ⓵ the run on file is a LATER tree ({dg.group(1) if dg else "none"}, this '
                   f'revision ran {_dg_then.group(1) if _dg_then else "none"}) -- reported, and '
                   'nothing asserted from it.  The seven are NAMED in `SEVEN` and verified below.')
-            check(f'⓵ᵃ ⌗ and the run this revision DID make is still readable at {AFTER}, where its '
+            # ⛔⛭ AMENDED r4510, by the horizon sweep's Pass D: ** the sentence SAYS "still
+            #    readable" and nothing tested it. **  `git show <SHA>:path` on a clone that cannot
+            #    reach the SHA returns the empty string, the failure set is then empty, and the
+            #    empty set is contained in anything -- so this certified readability from a commit
+            #    it never read.  ⇒ The readability is now part of the condition, via the digest
+            #    line every RUN_RESULT.txt carries.
+            check(f'⓵ᵃ ⌗ and the run this revision DID make is still readable at {AFTER} '
+                  f'(TREE-DIGEST {_dg_then.group(1) if _dg_then else "UNREADABLE"}), where its '
                   f'failure set was contained in the seven',
-                  set(re.findall(r'\[FAIL\] (receipts/\S+\.py)', _digest_then))
+                  _dg_then is not None
+                  and set(re.findall(r'\[FAIL\] (receipts/\S+\.py)', _digest_then))
                   <= set(SEVEN.values()))
     else:
         # ⚠ ** A REPORT, NOT A CHECK. **  *The first form here was `check(..., True)` -- a hollow

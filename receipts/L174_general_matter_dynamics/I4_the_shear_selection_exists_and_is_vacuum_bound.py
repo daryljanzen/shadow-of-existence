@@ -80,26 +80,43 @@ def main():
           'nothing in the identity says which of them a bend can be' in arc)
 
     # the selection principle exists
-    check('⛭ P9 has the shift--shear link, and names it: "The mechanism is the shift--shear link"',
-          'The mechanism is the shift--shear link' in p9)
+    # ⛔⛭ AMENDED r4516.  ** Six quotations here broke and every claim survived. **  P9 now writes
+    #    "The reason the naive expectation fails is the shift--shear link" for "The mechanism is
+    #    ...", puts the Goldberg--Sachs attribution mid-sentence with its citation ("An
+    #    algebraically special vacuum geometry has, by the Goldberg--Sachs theorem~\cite{...}, a
+    #    shear-free null geodesic congruence"), and drops the ties in "Type~D"/"Type~I".
+    #    ⌗ ** One of the six failed on a CAPITAL LETTER: ** the check asked for "an algebraically
+    #      special vacuum" and the sentence now begins with it, so it reads "An".  *A probe that a
+    #      sentence boundary can break is not testing the claim.*
+    #    ⇒ All six name their terms and bound the window rather than fixing an order or a case.
+    _LINK = re.compile(r"shift--shear link", re.I)
+    _GS = re.compile(r"algebraically special vacuum[^.]{0,80}?Goldberg--Sachs[^.]{0,60}?shear-free "
+                     r"null geodesic congruence"
+                     r"|Goldberg--Sachs[^.]{0,60}?algebraically special vacuum[^.]{0,80}?shear-free "
+                     r"null geodesic congruence", re.I)
+    _CLIMB = re.compile(r"climbs past Type[~ ]?D into Type[~ ]?I", re.I)
+    _VAC = re.compile(r"\ban algebraically special vacuum", re.I)
+
+    check('⛭ P9 has the shift--shear link, and names it: "The reason the naive expectation fails is '
+          'the shift--shear link"', _LINK.search(p9) is not None)
     check('by Goldberg--Sachs an algebraically special VACUUM carries a shear-free null geodesic '
           'congruence',
-          'By the Goldberg--Sachs theorem an algebraically special vacuum carries a shear-free null '
-          'geodesic congruence' in p9)
+          _GS.search(p9) is not None)
     check("and the substrate's null rulings are shear-free, so a cut inheriting one is algebraically "
           'special -- the Type-D corner',
           "the substrate's null rulings are shear-free" in p9 and 'this is the Type-D corner' in p9)
     check('⇒ while shear FORBIDS a repeated principal null direction, so the operator climbs past '
           'Type D into Type I',
           'shear forbids a repeated principal null direction' in p9
-          and 'climbs past Type~D into Type~I' in p9)
+          and _CLIMB.search(p9) is not None)
     check("⇒⇒ SO THE SHEAR IS THE ALGEBRAIC TYPE: the substrate supplies a shear-free reference "
           "congruence and a cut's shear is its DEPARTURE from it",
           'shear forbids a repeated principal null direction' in p9)
 
     # ** the hypothesis is the finding **
-    check('⛔ AND THE HYPOTHESIS IS VACUUM, stated at the first use: "an algebraically special vacuum"',
-          'an algebraically special vacuum' in p9)
+    check('⛔ AND THE HYPOTHESIS IS VACUUM, stated at the first use: "An algebraically special '
+          'vacuum geometry has ..." -- matched without case, since it now opens a sentence',
+          _VAC.search(p9) is not None)
     check('and again at the second: "a Type-D vacuum admits a Killing tensor"',
           'a Type-D vacuum admits a Killing tensor' in p9)
     check("and the paper's own title names the object the Kerr--NUT--(A)dS VACUUM KERNEL",
@@ -111,14 +128,14 @@ def main():
           'such a geometry is one whose matter is genuinely inhomogeneous' in p9)
     check('⇒⇒ SO THE ONE SHEAR-SELECTION PRINCIPLE THE CORPUS HAS IS HYPOTHESIS-BOUND TO THE SECTOR '
           'THE WALL EXCLUDES',
-          'an algebraically special vacuum' in p9
+          _VAC.search(p9) is not None
           and 'such a geometry is one whose matter is genuinely inhomogeneous' in p9)
 
     # the corrected statement
     check('⌗ so r2504\'s dark region is SHARPENED, not removed: not "no principle exists" but "the '
           'principle we have has a hypothesis the stratum violates"',
           'nothing in the identity says which of them a bend can be' in arc
-          and 'an algebraically special vacuum' in p9)
+          and _VAC.search(p9) is not None)
     check('⇒ and it names what a beyond-wall result must supply: a shear-selection statement that does '
           'NOT assume vacuum', 'vacuum kernel' in p9)
 

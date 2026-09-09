@@ -223,10 +223,24 @@ def main():
           f'Atiyah sequence anywhere -- and is pinned at {AS_AT}^ (r3251) rather than recalled',
           g['algebroid'] > 100 and g['anchor'] > 20 and g['Chevalley'] == 0
           and bool(p12_was) and 'Atiyah sequence' not in p12_was)
-    check('⓷ᵃ ⛭ AND IT IS NO LONGER THE BASELINE: P12 now names the Atiyah sequence and p0 an exact '
-          'sequence, so Ⓖ has been WORKED since this audit and the station is not owed as it was',
-          g['Atiyah sequence'] > 0 and g['exact sequence'] > 0
-          and RB.counts('Atiyah sequence')['P12'] > 0)
+    # ⛭ AMENDED r4526: ** the station is MORE worked than this check knew how to see. **  r4083's
+    #    harvest replaced the phrase with the thing: P12 DISPLAYS the sequence at `eq:atiyah` and
+    #    states the identification -- "the action algebroid of $G$ on $G/H$ \emph{is} the Atiyah
+    #    algebroid of the principal bundle $G\to G/H$" -- naming the kernel "the adjoint bundle,
+    #    ten-dimensional" and closing at $10+5=15=\dim\so(5,1)$, while p0 still carries "exact
+    #    sequence".  *The phrase now survives only in the generated receipt appendices, which is
+    #    where a phrase-count goes when a paper stops needing the phrase.*
+    #    ⇒ The discharge is asserted as the OBJECT being in the paper, which is what "worked" means.
+    _p12 = RB.body('P12') if hasattr(RB, 'body') else B['P12'] if 'B' in dir() else ''
+    _p12src = open(os.path.join(ROOT, 'corpus', 'algebroid_paper.tex'),
+                   encoding='utf-8', errors='replace').read()
+    check('⓷ᵃ ⛭ AND IT IS NO LONGER THE BASELINE: P12 DISPLAYS the Atiyah sequence at eq:atiyah and '
+          'states the identification in its own voice, and p0 carries an exact sequence -- so Ⓖ has '
+          'been WORKED since this audit and the station is not owed as it was',
+          g['exact sequence'] > 0
+          and r'\label{eq:atiyah}' in _p12src
+          and 'the Atiyah algebroid of the principal bundle' in _p12src
+          and 'the adjoint bundle' in _p12src)
     h = {t: sum(RB.counts(t).values()) for t in
          ('Fredholm', 'limit-point', 'deficiency ind', 'Atiyah--Singer', 'graded index',
           'traced rather than computed')}

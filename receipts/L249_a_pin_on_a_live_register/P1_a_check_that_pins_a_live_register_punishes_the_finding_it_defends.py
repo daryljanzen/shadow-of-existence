@@ -101,6 +101,9 @@ print('     keeps the historical claim and ADDS a live one, so the check count g
 for rel, _ in REPAIRED:
     src = open(os.path.join(ROOT, 'receipts', rel), encoding='utf-8', errors='replace').read()
     n_now = len(re.findall(r'\bcheck\(', src))
+    # ⌗ this `git log` is HEAD-limited and its result is used nowhere; it is left as the record of
+    #   when each file was added.  *The horizon sweep flags it (Pass B) and reading it is how the
+    #   line below was found -- so the inert one led to the live one.*
     add = subprocess.run(['git', 'log', '--diff-filter=A', '--format=%H', '--', 'receipts/' + rel],
                          cwd=ROOT, capture_output=True, text=True).stdout.strip().split('\n')[-1]
     # AMENDED r3108: this compared against HEAD, which MOVES -- once the repairs were committed
@@ -111,6 +114,17 @@ for rel, _ in REPAIRED:
                              capture_output=True, text=True).stdout
     n_before = len(re.findall(r'\bcheck\(', old_src))
     print(f'    {os.path.basename(rel)[:46]:<46} checks {n_before} -> {n_now}')
+    # ⛔⛭ AMENDED r4510, by the horizon sweep's Pass D: ** r3108's repair traded one degenerate
+    #    baseline for another. **  A baseline pinned to a SHA is empty on any clone that cannot
+    #    reach the SHA, and `n_now >= 0` is a bound nothing can fail -- so on a short history this
+    #    check would have certified "did not lose assertions" for nine files it never read.
+    #    *The receipt as a whole did still fail there, but at ⓹ in PART 5, about `check_loci`.*
+    #    ⇒ The baseline carries its own POSITIVE CONTROL, at the point of use: a receipt that was
+    #      repaired had assertions BEFORE the repair, so `n_before > 0` is a fact about the corpus
+    #      and not about the clone, and it fails HERE, naming the horizon.
+    check(f'⓶ᵃ {os.path.basename(rel)[:40]:<40} was READ at {PRE_REPAIR[:12]} -- {n_before} '
+          f'assertion(s) there, so the baseline is a measurement and not an empty read',
+          n_before > 0)
     check(f'⓶ {os.path.basename(rel)[:40]:<40} did not lose assertions', n_now >= n_before)
 
 print()

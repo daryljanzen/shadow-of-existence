@@ -128,6 +128,22 @@ def main():
     check(f'⓷ the merge kept each parent\'s row VERBATIM -- {len(verbatim)} of {len(IDS)} match '
           f'byte-for-byte, so no reading is needed to say which copy came from where',
           len(verbatim) == len(IDS))
+    # ⛔⛭ ** AN EMPTY DIFF IS ALSO WHAT AN ABSENT COMMIT RETURNS -- guarded r4506, found by
+    #    `scripts/sweep_history_assertions.py`. **  *The check below asserts a diff is EMPTY.  On a
+    #    clone that cannot reach `e33c34c` or `SIDE54`, git writes its error to stderr, returns the
+    #    empty string, and the assertion PASSES -- certifying "identical" from two commits it never
+    #    read.*  ** That is the pass-because-absent failure in its purest form, and no word in the
+    #    sentence gives it away. **
+    #   ⇒ *The guard is a POSITIVE CONTROL over the same mechanism, which is `Q1`'s pattern and
+    #     stronger than a clone-depth floor: it tests that the diff machinery SEES these commits,
+    #     rather than testing how deep the clone happens to be.*
+    _both = all(subprocess.run(['git', 'cat-file', '-e', c + '^{commit}'],
+                               cwd=ROOT, capture_output=True).returncode == 0
+                for c in ('e33c34c', SIDE54))
+    _fires = git('diff', '--stat', 'e33c34c', SIDE54).strip() != ''
+    check('⇒ⁿ the two commits are BOTH readable here and the diff machinery is not silent on them '
+          '-- so an empty diff below means identical and not unreachable',
+          _both and _fires)
     check('⇒ and PROTECTED_OPEN.md is IDENTICAL at e33c34c and d98bf61: c54.222 never touched it, so '
           'the fork side contributes nothing written after c54.221',
           git('diff', '--stat', 'e33c34c', SIDE54, '--', 'PROTECTED_OPEN.md').strip() == '')
@@ -153,6 +169,14 @@ def main():
         wa = set(re.findall(r'\S+', a[k][0][2]))
         wb = set(re.findall(r'\S+', b[k][0][2]))
         lost[k] = [t for t in (wb - wa) if bare(t) and bare(t) not in E]
+    # ⛔⛭ AMENDED r4510, by the horizon sweep's Pass D: *both sides here are read at named commits,
+    #    and a bound on what is LEFT OVER is satisfied by reading nothing at all.*  The two rows
+    #    must be non-empty for the difference to mean anything -- asserted first, so an unreadable
+    #    parent fails HERE and says so, instead of being reported as a lossless drop.
+    check(f'⓸ᵃ both parents\' rows were actually READ -- {min(len(a[k][0][2]) for k in IDS)} and '
+          f'{min(len(b[k][0][2]) for k in IDS)} characters at the shortest, so the token difference '
+          f'below is a comparison and not an empty read',
+          all(a[k][0][2].strip() and b[k][0][2].strip() for k in IDS))
     check(f'⓸ the fork side\'s unique tokens are its own c54.221 REPAIR NOTE, and every substantive '
           f'one survives in the arc, `FOR_56`, `L-551`/`L-555` or the c54.221 commit message: '
           f'{ {k: len(v) for k, v in lost.items()} } left unaccounted',

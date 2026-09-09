@@ -106,7 +106,24 @@ def main():
     print()
 
     tot, n23 = sweep({'inbody', 'decl'})
-    check(f'85 labelled results across the seventeen papers (found {tot})', tot == 85)
+    # ⛭ AMENDED r4524, BY THE SAME RULE r4070 APPLIED ONE LINE BELOW: a count is a claim about a
+    #   FILE AT A COMMIT, so the CURRENT number is asserted and a further move fires here rather
+    #   than passing silently.  ** 85 -> 86, and the extra one is located rather than absorbed: **
+    #   `CR_synthesis.tex` -- written at r4187, after this receipt -- carries exactly one labelled
+    #   result, and every other paper's count is unchanged.  *The corpus gained a paper; nothing
+    #   about the arrival-path argument moved.*
+    _by_file = {}
+    for _f in sorted(glob.glob(os.path.join(ROOT, 'corpus', '*.tex'))):
+        _raw = open(_f, encoding='utf-8', errors='replace').read()
+        _b = '\n'.join(l for l in _raw.split('\n') if not l.lstrip().startswith('%'))
+        _n = len(re.findall(r'\\begin\{(theorem|proposition|corollary|lemma)\}'
+                            r'(?:\[[^\]]*\])?\s*\\label\{([^}]+)\}(.*?)\\end\{\1\}', _b, re.S))
+        if _n:
+            _by_file[os.path.basename(_f)] = _n
+    check(f'86 labelled results across the {len(_by_file)} papers that carry one (found {tot}) -- '
+          f'85 when this was written, and the extra is CR_synthesis.tex\'s single result, the paper '
+          f'r4187 added',
+          tot == 86 and _by_file.get('CR_synthesis.tex') == 1)
     check(f'routes 2+3 alone flag 20 (found {len(n23)})', len(n23) == 20)
 
     _, n123 = sweep({'proof', 'inbody', 'decl'})

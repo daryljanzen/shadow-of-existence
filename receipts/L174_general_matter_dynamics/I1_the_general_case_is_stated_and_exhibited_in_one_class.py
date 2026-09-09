@@ -77,10 +77,19 @@ def main():
     arc = re.sub(r'\s+', ' ', open(os.path.join(ROOT, 'THE_LIVE_ARC.md'),
                                    encoding='utf-8', errors='replace').read())
 
+    # ⛔⛭ AMENDED r4516.  ** P9's wall passage was rewritten and two exact strings went with it:
+    #    "beyond IT" is "beyond THE WALL" now, and "It is not a defect" is "The wall is thus named
+    #    and walked past, not a defect and not the construction's open edge". **  *Neither claim
+    #    moved -- the pronoun was resolved and the sentence gained a clause.*  ⇒ `W1`'s rule: a
+    #    longer string is still a string, so these match the content under REORDERING.
+    _HANDOFF = re.compile(r"radiative sector beyond [^.]{0,20}?is reached by ordinary evolution "
+                          r"of the leaf", re.I)
+    _NOTDEF = re.compile(r"walked past,? not a defect|not a defect[^.]{0,60}?open edge", re.I)
+
     # the row and its age
     check('L-174 asks for the classical general matter dynamics, and the SOURCE claim this receipt '
           'rests on is P9\'s rather than the register\'s: the wall hands off to ordinary evolution',
-          'the radiative sector beyond it is reached by ordinary evolution of the leaf' in p9)
+          _HANDOFF.search(p9) is not None)
     check('and it folds the map\'s A-1, carried live and unregistered since r565',
           'unregistered since r565' in arc.lower() or 'UNREGISTERED SINCE r565' in arc)
 
@@ -91,13 +100,13 @@ def main():
     check('⛭ and immediately after: "since the construction leaves the dynamics of general '
           'relativity unchanged, the radiative sector beyond it is reached by ORDINARY EVOLUTION '
           'OF THE LEAF"',
-          'the radiative sector beyond it is reached by ordinary evolution of the leaf' in p9)
+          _HANDOFF.search(p9) is not None)
     check('⇒ "so the wall is the seam at which GENERATION-BY-SYMMETRY hands off to '
           'EVOLUTION-BY-DYNAMICS"',
           'generation-by-symmetry hands off to evolution-by-dynamics' in p9)
     check('⇒⇒ SO THE GENERAL CASE BEYOND THE WALL IS ORDINARY GR BY STATEMENT -- the construction '
           'owes no generative law there because it HANDS OFF',
-          'It is not a defect' in p9)
+          _NOTDEF.search(p9) is not None)
 
     # ⓶ L-207 exhibited it in one class
     check('and L-207 (1) exhibited exactly that at r2450, computed from the metric: LTB with '
@@ -112,7 +121,7 @@ def main():
           'not the discovery of a generative law' in arc)
     check('⇒⇒ SO THE GAP IS THE DISTANCE BETWEEN THEM: P9 STATES the general case; L-207 EXHIBITS '
           'it only in the spherically symmetric class',
-          'the radiative sector beyond it is reached by ordinary evolution of the leaf' in p9
+          _HANDOFF.search(p9) is not None
           and ('one equation per comoving shell' in arc
                or 'ONE equation per comoving shell' in arc))
 
@@ -130,7 +139,7 @@ def main():
     # the general case and L-207 exhibited it in the spherically symmetric class. **
     check('⌗ what THIS receipt established stands: P9 STATES the general case at the wall, and it is '
           'a statement rather than an exhibition',
-          'the radiative sector beyond it is reached by ordinary evolution of the leaf' in p9)
+          _HANDOFF.search(p9) is not None)
 
     print()
     if FAILED:

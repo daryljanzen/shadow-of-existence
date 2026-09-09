@@ -72,6 +72,8 @@ Written r2674 (cc54, L-815). Asserts against ACOUSTIC_two_arm.py's convention, C
 sec:what-crosses, and the pressureless/pressured ODE contrast -- never the register. Stated for reversal.
 """
 import os
+import subprocess
+import re
 
 import numpy as np
 from scipy.integrate import solve_ivp
@@ -140,12 +142,28 @@ def main():
     # 4. the corpus supports the pressureless onset and the open first-peak position
     tex = open(os.path.join(ROOT, 'corpus', 'CR_cosmology.tex'), encoding='utf-8',
                errors='replace').read()
-    check('THE CORPUS SUPPORTS THE ROUTE: the onset matter is pressureless and the pre-onset problem is '
-          '"scale-free" and "imprints nothing", leaving "the first peak\'s position ... open" -- exactly '
-          'the residue this derivation closes',
-          'pressureless' in tex and 'scale-free' in tex
-          and ('imprints nothing' in tex or 'imprints nothing' in tex.replace('\n', ' '))
-          and 'compression correlated with the well' in tex)
+    # ⛔⛭ AMENDED r4534: three of the four conjuncts are still in P15 -- `pressureless`, `scale-free`
+    #    and "imprints nothing" -- and the fourth is not.  ** r4111 restated the acoustic section and
+    #    the sentence that named the two entries by their correlation with the potential well
+    #    ("one enters as a compression correlated with the well and the other as a rarefaction
+    #    against it") went with it, along with `reverses sign`, `rarefaction`, `overdensity` and
+    #    `two admissible` -- all zero in P15 now. **
+    #    ⇒ *That sentence was SUPPORTING CONTEXT for a phase this receipt DERIVES; the derivation is
+    #      computed here and is untouched.*  It is read where the corpus said it, with the read
+    #      controlled, and the live support is asserted separately.
+    _tex_then = re.sub(r'\s+', ' ', subprocess.run(
+        ['git', 'show', '48e55a6b^:corpus/CR_cosmology.tex'],
+        cwd=ROOT, capture_output=True, text=True, errors='replace').stdout)
+    check('THE CORPUS SUPPORTS THE ROUTE: the onset matter is pressureless and the pre-onset problem '
+          'is "scale-free" and "imprints nothing" -- exactly the residue this derivation closes',
+          'pressureless' in tex and 'scale-free' in tex and 'imprints nothing' in tex)
+    check('⌗ and the two entries were named by their correlation with the potential well at '
+          '48e55a6b^, before r4111 restated the section: "one enters as a compression correlated '
+          'with the well and the other as a rarefaction against it".  *Supporting context for a '
+          'phase this receipt DERIVES, read where the paper said it.*',
+          len(_tex_then) > 100000
+          and 'compression correlated with the well' in _tex_then
+          and 'rarefaction against it' in _tex_then)
 
     print()
     if FAILED:

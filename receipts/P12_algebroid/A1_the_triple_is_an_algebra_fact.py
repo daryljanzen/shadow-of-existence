@@ -110,7 +110,11 @@ def main():
     # ⓷ P9's set is different
     check('⓷ P9 tabulates STRATUM isotropies as groups: "$SO(4,1)$ at Type~O, $SO(2,1)\\times SO(3)$ at '
           'Nariai, $\\mathbb{R}_{t}\\times SO(3)$ at the generic Schwarzschild--de~Sitter class"',
-          '$\\mathrm{SO}(4,1)$ at Type O' in p9 and 'at Nariai' in p9
+          # ⛭ AMENDED r4536: the paper writes "Type~O" with a non-breaking space; this asked for
+          #   "Type O".  *Seventh tie-break of this run, and the second on this exact phrase --
+          #   `L-204`'s `C3` broke on it too, in the same sentence of the same paper.*
+          re.search(r"\\mathrm\{SO\}\(4,1\)\$ at Type[~ ]?O", p9) is not None
+          and 'at Nariai' in p9
           and 'at the generic Schwarzschild--de~Sitter class' in p9)
     strata = sorted({dim_so(5), dim_so(3) + dim_so(3), 1 + dim_so(3)})
     check(f'whose dimensions are {strata} -- a DIFFERENT set', strata == [4, 6, 10])

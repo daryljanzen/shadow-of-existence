@@ -80,15 +80,35 @@ def main():
                                    encoding='utf-8', errors='replace').read())
 
     # the companion is real
+    # ⛔⛭ AMENDED r4516.  ** Five verbatim quotations here broke at once, and NONE of the claims did. **
+    #    P9 now writes "the companion dynamics paper walks straight past it: it works the cut's
+    #    dynamics as a true-Hamiltonian flow" for "works out"; P11 writes "carried \emph{entirely by
+    #    the shear of the spatial leaf}" for "are the shear of the leaf", "precisely the ADM
+    #    Hamiltonian and momentum constraints" for "exactly the ...", "a single transverse-traceless
+    #    shear---the propagating graviton" for the polarisation phrase, and the closed form is a
+    #    DISPLAY FRACTION now (`\frac{\mathrm{d}^{2}r}{...}`) where it was inline.
+    #    ⌗ *The last of those is not even a rewording -- it is LaTeX formatting, and a receipt that
+    #      pins a formula by its markup is asserting about the typesetting rather than the physics.*
+    #    ⇒ Every probe below names its terms and bounds the window (`W1`'s rule), so the papers stay
+    #      free to reword and reformat while the claims stay checkable.
+    _CITES = re.compile(r"companion dynamics paper (?:works out|walks straight past|works)", re.I)
+    _SHEAR = re.compile(r"energy and momentum are[^.]{0,40}?shear of the (?:spatial )?leaf", re.I)
+    _CONSTR = re.compile(r"(?:are|is)\s+(?:precisely|exactly)\s+the ADM Hamiltonian and momentum "
+                         r"constraints|(?:precisely|exactly) the Hamiltonian and momentum constraints",
+                         re.I)
+    _GOWDY = re.compile(r"polarized Gowdy--de[~ ]?Sitter model", re.I)
+    _CLOSED = re.compile(r"\\mathrm\{d\}\^\{2\}r\}?\{?\\mathrm\{d\}\\tilde\\tau\^\{2\}\}?"
+                         r"\s*=\s*-\s*\\?f?r?a?c?\{?f'\}?\{?2?\}?")
+
     check('P9 cor:wall cites a companion dynamics paper for the beyond-wall evolution',
-          'the companion dynamics paper works out' in p9)
+          _CITES.search(p9) is not None)
     check('and JanzenDynamics is P11, "Why the cut bends"',
           'Why the cut bends' in pub('BH_causality_v2.tex')
           and os.path.exists(os.path.join(ROOT, 'corpus', 'dynamics_paper.tex')))
 
     # stratum 1: closed form
     check("⛭ the symmetric sector is CLOSED FORM: d^2r/dtau^2 = -f'/2 = r K_G",
-          "\\mathrm{d}^{2}r/\\mathrm{d}\\tilde\\tau^{2}=-f'/2=rK_{G}" in p11)
+          _CLOSED.search(p11) is not None and 'K_{G}' in p11)
     check('and P11 states its content: "the rate at which the symmetric cut\'s bend changes in time '
           'is the bend itself"',
           "the rate at which the symmetric cut's bend changes in time is the bend itself" in p11)
@@ -102,11 +122,10 @@ def main():
     check('⛭ P11 works the FIRST inhomogeneous time-dependent bend explicitly: a polarized '
           'Gowdy--de Sitter model',
           'We work the first inhomogeneous, time-dependent bend explicitly' in p11
-          and 'polarized Gowdy--de Sitter model' in p11)
+          and _GOWDY.search(p11) is not None)
     check('with the TT mode\'s energy and momentum being the shear of the leaf, and the ADM '
           'equations being exactly the constraints',
-          'are the shear of the leaf' in p11
-          and 'are exactly the Hamiltonian and momentum constraints' in p11)
+          _SHEAR.search(p11) is not None and _CONSTR.search(p11) is not None)
     check('⇒ and it locates that stratum: "the Type-I edge of the isotropy stratification---the LAST '
           'CONFINED STRATUM BEFORE THE WALL"',
           'the last confined stratum before the wall' in p11)
@@ -121,15 +140,26 @@ def main():
           'no continuous isometry admits no sweep-subgroup' in p9)
 
     # the wall's character, settled without evolving past it
+    # ⛔⛭ AMENDED r4516: P11's `prop:radiative-wall` was rewritten to argue the two species SEPARATELY
+    #    -- "its metric is non-degenerate\rcpt{P11_wall_ppwave} ... it is not the finite-curvature
+    #    species" and "All its polynomial curvature invariants vanish (it is VSI) ... not the
+    #    divergent-invariant species either" -- so "neither species" is no longer one phrase.
+    #    *The claim is stronger than it was, not weaker: each species is excluded by its own named
+    #    property with a citation.*  ⇒ Matched as the three terms it is made of.
+    _NONDEG = re.compile(r"metric is non-degenerate", re.I)
+    _VSI = re.compile(r"polynomial curvature invariants vanish|curvature invariants\) vanish", re.I)
+    _NEITHER = re.compile(r"not the finite-curvature species[^.]{0,400}?not the (?:divergent-invariant|"
+                          r"infinite-curvature)[^.]{0,30}?species|neither species", re.I | re.S)
     check('⌗ and P11 settles the wall\'s character: a Type-N plane wave with a NON-DEGENERATE metric '
-          'and VANISHING curvature invariants, so it is NEITHER species',
-          'has a non-degenerate metric' in p11 and 'vanishing curvature invariants' in p11
-          and 'neither species' in p11)
+          'and VANISHING polynomial curvature invariants, so it is NEITHER species -- P11 now '
+          'excludes the two species one at a time, each by its own named property',
+          _NONDEG.search(p11) is not None and _VSI.search(p11) is not None
+          and _NEITHER.search(p11) is not None)
 
     # the citation covers the method, not the case
     check('⚠ so P9\'s citation covers the METHOD (ordinary GR evolution, worked on the confined '
           'stratum) rather than the CASE, and does not say which',
-          'the companion dynamics paper works out' in p9
+          _CITES.search(p9) is not None
           and 'the last confined stratum before the wall' in p11)
 
     print()

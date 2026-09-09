@@ -77,6 +77,8 @@ import io
 import contextlib
 import importlib.util
 import os
+import re
+import subprocess
 import sys
 
 import numpy as np
@@ -104,8 +106,25 @@ WS = open(os.path.join(_ROOT, 'PO13_WORKING_STATE.md'), encoding='utf-8').read()
 q07 = ("crosses the horizon while there is a plasma to be driven, and on this rate the acoustic "
        "modes re-enter\nabove the onset, so none of them does.")
 qws = "never cross while there is a plasma"
-check(q07 in P07, "P07 sec:frontiers carries \"...on this rate the acoustic modes re-enter above the "
-                  "onset, so none of them does\"")
+# ⛔⛭ AMENDED r4518, AND THIS RECEIPT BROKE ON ITS OWN SUCCESS -- `L-268`'s class, from the inside.
+#    ** The premise quoted here was DELETED FROM P07 BY r4133, WHICH IS THIS RECEIPT'S OWN CENSUS. **
+#    *A receipt that asserts a live state its own revision changes is false the moment it is
+#    committed; this one asserted a live state its own revision changed EIGHTY revisions later, when
+#    the paper caught up with it.*  ⇒ c54.226's rule: the premise is read AT THE COMMIT WHERE IT
+#    STOOD -- `a3b69075^`, the tree r4133 found it in -- and what P07 says NOW is a separate claim,
+#    in the direction this receipt argued for.
+_P07_THEN = subprocess.run(['git', 'show', 'a3b69075^:corpus/CR_framework.tex'],
+                           cwd=_ROOT, capture_output=True, text=True, errors='replace').stdout
+check(len(_P07_THEN) > 100000 and q07 in _P07_THEN,
+      "P07 sec:frontiers CARRIED the premise at a3b69075^ (before r4133): \"...on this rate the "
+      "acoustic modes re-enter above the onset, so none of them does\" -- read where it stood, on a "
+      "file that was actually read (%d characters)" % len(_P07_THEN))
+check('enters the horizon while radiation dominates' in re.sub(r'\s+', ' ', P07)
+      and 'those modes have a driving history of the kind the standard picture gives them'
+      in re.sub(r'\s+', ' ', P07),
+      "⛭ and P07 carries THE CORRECTED STATEMENT now: the band containing the first peak \"enters "
+      "the horizon while radiation dominates\", so \"those modes have a driving history of the kind "
+      "the standard picture gives them\" -- which is what this receipt established")
 check(qws in WS, f"PO13_WORKING_STATE carries {qws!r}")
 check("the perturbations computed on the leaf\ncongruence the framework assigns them to" in P07,
       "and the SAME paragraph names the leaf congruence as where the framework puts the perturbations")

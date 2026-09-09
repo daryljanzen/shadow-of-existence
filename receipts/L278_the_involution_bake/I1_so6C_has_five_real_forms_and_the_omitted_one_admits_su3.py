@@ -176,8 +176,19 @@ def main():
           # ** r3363: the naming gap this bake FOUND is now CLOSED -- node 57 named the Cartan
           #    involution in P7 and the symmetric-pair/Cartan distinction in P12 at r3331.  The
           #    check asserts the closure; the bake's finding is what caused it. **
-          wc('Cartan involution') > 0 and wc('Cartan decomposition') > 0
-          and wc('unitary trick') == 0 and wc('involution') > 150)
+          # ⛔⛭ AMENDED r4530: `Cartan decomposition` went to ZERO at r4083, when P12 was read end
+          #    to end and harvested.  ** The naming gap is still CLOSED and the check now asks what
+          #    closing it means rather than for one compound: ** P7 names the Cartan involution WITH
+          #    ITS DEFINITION and a receipt cite -- "the fixed-point set of $\so(4,1)$'s Cartan
+          #    involution $\theta(X)=\eta X\eta$, which is what a maximal compact subalgebra is" --
+          #    and the symmetric-pair distinction the closure was about is carried in p0's own
+          #    words, "the coset grading is symmetric precisely when that isotropy makes a symmetric
+          #    pair".  *A naming gap closes when the object is named and defined, not when a
+          #    particular two-word phrase survives a harvest.*
+          wc('Cartan involution') > 0
+          and wc('symmetric pair') > 0
+          and wc('unitary trick') == 0 and wc('involution') > 150
+          and 'Cartan involution $\\theta(X)=\\eta X\\eta$' in RB.BODIES_TEX['P07'])
 
     # ================================================== (2) the five real forms
     print()

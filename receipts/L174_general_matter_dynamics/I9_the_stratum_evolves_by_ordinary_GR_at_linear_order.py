@@ -114,11 +114,19 @@ def main():
           'than from the York counting', len([e_plus, e_cross]) == 2)
     check("and that is cor:radiation's \"the graviton's two propagating polarizations\"",
           "The graviton's two propagating polarizations" in p9)
-    check('⇒⇒ SO THE STRATUM EVOLVES BY ORDINARY GR, exactly as cor:wall says: "carried past it by the '
-          'ordinary general-relativistic evolution"',
-          'are carried past it by the ordinary general-relativistic evolution' in p9)
-    check('with the wall "a regular boundary of the operator\'s reach and not a frontier of the theory"',
-          "a regular boundary of the operator's reach and not a frontier of the theory" in p9)
+    # ⛔⛭ AMENDED r4514, with `I8`: P9's `cor:wall` was rewritten ("The wall is inhomogeneity", with
+    #    the type-N plane wave as the converse's witness) and these two verbatim sentences went with
+    #    it, while the CONTENT stayed.  *`W1`'s rule -- a longer string is still a string -- so the
+    #    probes name their terms and bound the window instead of fixing an order.*
+    _ORD = re.compile(r"carried by\s+ordinary general-relativistic evolution", re.I)
+    _REG = re.compile(r"regular boundary[^.]{0,60}?walked past into ordinary evolution"
+                      r"|walked past[^.]{0,60}?regular boundary", re.I)
+    check('⇒⇒ SO THE STRATUM EVOLVES BY ORDINARY GR, exactly as cor:wall says -- P9 now: "beyond '
+          'which the leaf is carried by ordinary general-relativistic evolution"',
+          _ORD.search(p9) is not None)
+    check('with the wall a REGULAR BOUNDARY rather than a frontier of the theory -- P9: "a regular '
+          'boundary walked past into ordinary evolution"',
+          _REG.search(p9) is not None)
 
     # ⚠ the scope
     check('⚠ AND THIS IS LINEARIZED: the sigma^2 term is SECOND ORDER and does not appear, so the '

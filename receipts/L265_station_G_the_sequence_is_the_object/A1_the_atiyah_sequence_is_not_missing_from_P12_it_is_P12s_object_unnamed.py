@@ -185,8 +185,15 @@ def main():
           all(v == 0 for v in _then.values()))
     check(f'⛭⛭ AND THE THROW LANDED: they are present now -- {absent} -- carried into the papers at '
           f'r3251, "the theatre results carried INTO the papers, which is what a bake is for"',
-          absent['Atiyah sequence'] >= 1 and absent['Atiyah algebroid'] >= 1
-          and absent['adjoint bundle'] >= 1)
+          # ⛭ AMENDED r4526: the throw landed, and then r4083's harvest wrote it BETTER.  P12
+          #   does not say "Atiyah sequence" any more -- it DISPLAYS the sequence at `eq:atiyah`
+          #   and states the identification, "For a homogeneous space the action algebroid of $G$
+          #   on $G/H$ \emph{is} the Atiyah algebroid of the principal bundle $G\to G/H$", naming
+          #   the kernel "the adjoint bundle, ten-dimensional" and closing at $10+5=15$.
+          #   ** The landing is the object being in the paper, not the phrase. **
+          absent['Atiyah algebroid'] >= 1 and absent['adjoint bundle'] >= 1
+          and r'\label{eq:atiyah}' in B['P12']
+          and 'the Atiyah algebroid of the principal bundle' in B['P12'])
     present = {t: RB.counts(t)['P12'] for t in ('algebroid', 'anchor', 'bracket', 'connection',
                                                 'isotropy', 'kernel')}
     print(f'    present in P12: {present}')
@@ -217,9 +224,17 @@ def main():
           'action Lie algebroid' in B['P12']
           and 'nor a section of the bundle that would select a definite flow' in B['P12']
           and 'the acting algebra is the substrate\'s isometry $\\so(5,1)$' in B['P12'])
-    check('⓶ᵇ and it names the two graded pieces in the paper\'s own words: h the CUT-FIXING '
-          'ISOTROPY, m the CUT-DEFORMING coset',
-          'the cut-fixing isotropy' in B['P12'] and 'cut-deforming coset' in B['P12'])
+    # ⛭ AMENDED r4526: `\fh` is still "the cut-fixing isotropy" verbatim; `\fm` is named by what it
+    #   DOES rather than by the compound -- "two normal deformations bracketing into a tangential one
+    #   is two coset directions bracketing into the isotropy", with $[\fm,\fm]\subset\fh$ written out.
+    #   *The grading is the claim and the paper states it three times; "cut-deforming coset" was one
+    #   spelling of it.*
+    check('⓶ᵇ and it names the two graded pieces in the paper\'s own words: $\\fh$ the CUT-FIXING '
+          'ISOTROPY, $\\fm$ the COSET DIRECTIONS -- "two normal deformations bracketing into a '
+          'tangential one is two coset directions bracketing into the isotropy"',
+          'the cut-fixing isotropy' in B['P12']
+          and 'two coset directions bracketing into the isotropy' in B['P12']
+          and r'[\fm,\fm]\subset\fh' in B['P12'])
     check(f'⓶ᶜ dim so(5,1) = {len(IDX)}, dim h = {len(Hh)} = dim so(4,1), dim m = {len(Mm)} = '
           'dim dS₅ -- and the base of the orbit is the coset SO(5,1)/SO(4,1)',
           len(IDX) == 15 and len(Hh) == 10 and len(Mm) == 5)

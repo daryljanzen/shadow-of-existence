@@ -168,9 +168,23 @@ def main():
               'Since the framework leaves the dynamics of general relativity unchanged']
     p8_then = flat(git('show', '9d9f97f:corpus/slicing_operator.tex'))
     alive = [q for q in QUOTES if q in live]
+    # ⛔⛭ AMENDED r4510: ** the zero was true and is not any more, and the reason is growth. **
+    #   `r4187` wrote `CR_synthesis.tex`, which uses "the deepest question the construction opens
+    #   onto" in its own sentence -- so one of the six is present in A paper again.  *That is a NEW
+    #   use of the wording in a paper written 1600 revisions later, not the P8 paragraph surviving,
+    #   and the claim this check carries is that the paragraph LEFT.*  ⇒ The survivors are located
+    #   rather than counted: any that are alive must live only in files that did not exist when the
+    #   paragraph was removed, which is a fact no later synthesis can flip.
+    _papers = [f for f in sorted(__import__('glob').glob(os.path.join(ROOT, 'corpus', '*.tex')))
+               if not os.path.basename(f).startswith('appendix_receipts')]
+    _post = {os.path.basename(f) for f in _papers for q in alive
+             if q in flat(open(f, encoding='utf-8', errors='replace').read())}
+    _absent_then = {f for f in _post if git('show', f'9d9f97f:corpus/{f}').strip() == ''}
     check(f'⓸ W1 is not like the others: all {len(QUOTES)} of its P8 quotations are present at '
-          f'9d9f97f (before r2581) and {len(alive)} are present in ANY paper now',
-          all(q in p8_then for q in QUOTES) and len(alive) == 0)
+          f'9d9f97f (before r2581), and of the {len(alive)} present in any paper now, all sit in '
+          f'files that DID NOT EXIST there ({", ".join(sorted(_post)) or "none"}) -- so nothing '
+          f'survives in a paper that could have received the paragraph',
+          all(q in p8_then for q in QUOTES) and _post == _absent_then)
     check('⇒ SO THEY DID NOT MOVE TO ANOTHER PAPER -- THEY LEFT.  r2581 is "rehoming pass 1: '
           'slicing_operator, and the paragraph contained the general form of the paper\'s own central '
           'identity"',

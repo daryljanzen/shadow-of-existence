@@ -163,8 +163,14 @@ body = re.sub(r'(?m)^%.*$', '', tex)
 REPAIRED = [
     ('subsection heading',
      r'\\subsection\{The acoustic modes are sub-horizon at the onset, and the branch point is the opposite\}'),
+    # ⛔⛭ AMENDED r4520: the proposition was REWRITTEN by the rate-rule work (r4133 and after) --
+    #    it is "Where the acoustic modes stand at the plasma's onset, ON THE RATE THEY RUN ON" now,
+    #    and it answers on both rates, so the closing clause reads "the acoustic modes are inside
+    #    the horizon at the onset" with the factor gone.  ** The LOCUS is what these six sites are
+    #    about, and the locus is still `onset`. **  *"by a factor" was incidental to the repair and
+    #    pinning it made the check fail on a sentence that says exactly what the repair asked for.*
     ('prop:subhorizon body',
-     r'inside the horizon at the onset by a factor'),
+     r'inside the horizon at the onset'),
     ('sec:coherence',
      r'already sub-horizon at the seam \(Prop\.~\\ref\{prop:subhorizon\}\)'),
     ('sec:envelope derivation',
@@ -248,8 +254,25 @@ if 'EXCUSED' not in _r.stdout:
 
 # (b) the motivating defect, seeded into the proposition BODY.  Before this revision's binder
 #     extension the lint could not see this site at all; it must see it now.
-seeded = body.replace('inside the horizon at the onset by a factor',
-                      'inside the horizon at the branch point by a factor')
+# ⛔⛭ AMENDED r4520 with the site pattern above: the seed flips the LOCUS WORD in the proposition
+#    body, which is the defect this part exists to reproduce, and no longer depends on the clause
+#    that carried it in the r2501 wording.
+# ⛔⛭ AND THE FIRST WRITING OF THIS SEED WAS TOO WIDE, WHICH SHOWED UP AS A FALSE VERDICT RATHER
+#    THAN A FAILURE.  A whole-document `replace` flipped BOTH occurrences of the phrase -- the one
+#    inside `prop:subhorizon` and one in ordinary prose 34 kB later -- and the pre-extension scan
+#    then caught the PROSE one, reporting that the recall hole this revision fixes was never real.
+#    *** A seed that plants the defect in two places cannot test whether a scan can see it in the
+#    hard one. ***  ⇒ The seed is SCOPED to the proposition environment, which is the site whose
+#    invisibility is the finding.
+_i = body.find(r'\label{prop:subhorizon}')
+_j = body.find(r'\end{proposition}', _i) if _i >= 0 else -1
+if _i < 0 or _j < 0:
+    fail.append("prop:subhorizon's environment is not locatable -- the seed cannot be scoped to it")
+    seeded = body
+else:
+    _prop = body[_i:_j]
+    seeded = body[:_i] + _prop.replace('inside the horizon at the onset',
+                                       'inside the horizon at the branch point') + body[_j:]
 if seeded == body:
     fail.append("could not seed the motivating defect -- the target sentence moved")
 

@@ -195,7 +195,17 @@ GATE = os.path.join(ROOT, 'corpus', 'check_receipts_run.py')
 src_runner = io.open(RUNNER, encoding='utf-8', errors='replace').read()
 src_gate = io.open(GATE, encoding='utf-8', errors='replace').read()
 WIRED = [
-    ("the runner STAMPS what it ran against", src_runner, r'TREE-DIGEST: \{tree_digest\(\)\}'),
+    # ⛔⛭ AMENDED r4524, AND THE REVISION THAT BROKE IT WAS MINE.  r4512 made the runner resumable
+    #    and hoisted the digest into a variable -- `_digest = tree_digest()` then
+    #    `print(f"  TREE-DIGEST: {_digest}")` -- so a check pinned to the literal expression
+    #    `TREE-DIGEST: {tree_digest()}` failed on a runner that still does exactly what the check is
+    #    about.  *The wiring is the claim; the spelling of the f-string is not.*
+    #    ⇒ The source probe accepts the value through a variable, AND -- better than reading source
+    #      at all -- the wiring is now RUN: a real invocation's stamp is compared against the digest
+    #      computed independently here.  ** An instrument that reads a file has not run it, which is
+    #      the sentence this whole gate exists under. **
+    ("the runner STAMPS what it ran against", src_runner,
+     r'TREE-DIGEST: \{(?:tree_digest\(\)|_?digest)\}'),
     ("the runner computes the digest over what a receipt can READ", src_runner,
      r"for pat in \('corpus/\*\.tex', 'receipts/\*\*/\*\.py'"),
     ("⛭ the gate RECOMPUTES it and compares", src_gate, r"now = tree_digest\(\)"),
@@ -209,6 +219,25 @@ for what, hay, pat in WIRED:
     print(f"  {'OK ' if ok else 'MISSING'}  {what}")
     if not ok:
         fail.append(f"the fix is not wired: {what}")
+
+# ** AND THE WIRING, RUN RATHER THAN READ. **  The runner is invoked with a filter that matches no
+# receipt, so it costs nothing and still prints its header; the digest it stamps must equal the one
+# computed here from the same definition.  *A source probe can only say the line is present.*
+_own = subprocess.run([sys.executable, os.path.join(ROOT, 'scripts', 'run_all_receipts.py'),
+                       '--only', '__g50_matches_no_receipt__'],
+                      cwd=ROOT, capture_output=True, text=True, errors='replace', timeout=300)
+_m = re.search(r'TREE-DIGEST:\s*([0-9a-f]{8,})', _own.stdout)
+_h = hashlib.sha256()
+for _pat in ('corpus/*.tex', 'receipts/**/*.py', 'computations/**/*.py'):
+    for _f in sorted(glob.glob(os.path.join(ROOT, _pat), recursive=True)):
+        _h.update(os.path.relpath(_f, ROOT).encode())
+        _h.update(open(_f, 'rb').read())
+_want = _h.hexdigest()[:16]
+print(f"  {'OK ' if (_m and _m.group(1) == _want) else 'MISSING'}  ⛭ and the stamp is the digest it "
+      f"computed, RUN not read: runner said {_m.group(1) if _m else '(none)'}, recomputed {_want}")
+if not _m or _m.group(1) != _want:
+    fail.append("the runner's stamped digest does not match the digest recomputed from its own "
+                "definition -- the wiring is present in source and wrong in fact")
 
 print()
 print("  ⛔ AND THE SHADOW ITSELF, which is why the runner could not be re-run at all:")

@@ -111,9 +111,26 @@ for c, t in BODIES.items():
         after.setdefault(m.group(1).lower(), []).append(c)
 print(f"    the word that FOLLOWS `Gaussian`, every occurrence: "
       f"{ {k: len(v) for k, v in sorted(after.items())} }")
-check("`Gaussian` is followed by `curvature` and by nothing else", sorted(after), ['curvature'])
+# ⛔⛭ AMENDED r4532, AND THE NEW OCCURRENCE IS NOT A DISTRIBUTION -- WHICH IS THE QUESTION.
+#    `PO-24` (r4502, narrowed r4505) wrote into P15: "Scaling the diffusion length by the
+#    instrument's own measured ratio multiplies the damping by a \emph{Gaussian in $\ell$}, and a
+#    tilt is a power law".  ** That is a Gaussian FUNCTION -- a damping envelope in $\ell$ -- not a
+#    probability distribution over anything. **  *The finding this verdict makes is that the corpus
+#    never uses the word statistically; a list-equality against `['curvature']` was testing a
+#    stronger and different thing, that the word never appears in analysis either.*
+#    ⇒ Every follower is enumerated and each must be a NON-statistical use, named: `curvature` (the
+#      geometry) and `in` (the envelope).  A distribution word appearing after `Gaussian` -- `prior`,
+#      `noise`, `likelihood`, `random`, `distributed`, `errors` -- fails here.
+_STAT_AFTER = {'prior', 'priors', 'noise', 'likelihood', 'random', 'distributed', 'distribution',
+               'errors', 'error', 'process', 'field', 'statistics', 'sample', 'variate'}
+check("`Gaussian` is never statistical: its followers are `curvature` (the geometry) and `in` "
+      "(PO-24's damping envelope, a Gaussian IN $\\ell$), and no distribution word",
+      sorted(set(after) - _STAT_AFTER), sorted(after))
+check("and the geometry is still the dominant use", sorted(after)[:1], ['curvature'])
 tot_g = sum(len(v) for v in after.values())
-print(f"    total: x{tot_g}, all of them Gaussian CURVATURE, K_G = 1/alpha^2 - M/r^3")
+print(f"    total: x{tot_g} -- {len(after.get('curvature', []))} Gaussian CURVATURE "
+      f"(K_G = 1/alpha^2 - M/r^3) and {len(after.get('in', []))} a Gaussian IN $\\ell$, "
+      f"PO-24's damping envelope.  Neither is a distribution.")
 
 # --------------------------------------------------------------- VERDICT 3
 print("\nVERDICT 3 — `covariance`: a matrix, or general covariance?")
@@ -148,7 +165,12 @@ print("  If this screen can only report absences it is not a screen, it is a moo
 lik = wcount('likelihood')
 print(f"    likelihood: {lik}  (total x{sum(lik.values())})")
 # ** FIFTH `expr == True` IN SIX FIELDS.  Pin the measured value. **
-check("the control word is found, and P15 carries twenty-six", lik.get('P15'), 26)
+# ⛭ AMENDED r4532: 26 -> 23 in P15.  r4111 restated the acoustic section (539 lines to 73) and
+#   took three uses of the control word with it.  *The control's job is to prove the screen can
+#   FIND a statistical word, and 23 does that as well as 26 did; the value is re-pinned to the
+#   measurement, in this file's own idiom, so a further move fires here rather than passing.*
+check("the control word is found, and P15 carries twenty-three (26 before r4111's restatement)",
+      lik.get('P15'), 23)
 check("and it is the dominant carrier", max(lik, key=lik.get), 'P15')
 print("    *** The screen finds a statistical word when there is one.  The absences above")
 print("        are absences, not blindness. ***")

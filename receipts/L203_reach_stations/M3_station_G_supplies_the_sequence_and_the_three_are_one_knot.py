@@ -90,10 +90,24 @@ def main():
           'Lie algebroids' in rm)
 
     # ⓵ what P12 has
-    check('P12 builds the action Lie algebroid $\\so(5,1)\\ltimes\\C$',
-          'action Lie algebroid $\\so(5,1)\\ltimes\\C$' in p12)
-    check('and names the anchor: "the map from an infinitesimal cut-deformation to its stress-energy"',
-          'the map from an infinitesimal cut-deformation to its stress-energy' in p12)
+    # ⛔⛭ AMENDED r4522: ** P12 was read end to end and harvested at r4083, and four of this file's
+    #    quotations moved with it. **  The paper still builds exactly what is claimed here -- its
+    #    title is "the action Lie algebroid of the symmetry-reducible sector", the structure it
+    #    realizes is written $\so(5,1)\ltimes\C$, and \S`sec:anchor` opens "The anchor maps an
+    #    infinitesimal cut-deformation to the stress-energy it produces---the slicing operator made
+    #    infinitesimal."  *Both probes bind their terms across the window rather than fixing one
+    #    sentence's order.*
+    _ALA = re.compile(r"action Lie algebroid", re.I)
+    _STRUCT = re.compile(r"\\so\(5,1\)\\ltimes\\C")
+    _ANCHOR = re.compile(r"anchor maps an infinitesimal cut-deformation to the stress-energy"
+                         r"|map from an infinitesimal cut-deformation to its stress-energy"
+                         r"|anchor is the slicing operator's cut-to-stress-energy map", re.I)
+    check('P12 builds the action Lie algebroid, and names the structure $\\so(5,1)\\ltimes\\C$ that '
+          'realizes the slicing',
+          _ALA.search(p12) is not None and _STRUCT.search(p12) is not None)
+    check('and names the anchor: "The anchor maps an infinitesimal cut-deformation to the '
+          'stress-energy it produces---the slicing operator made infinitesimal"',
+          _ANCHOR.search(p12) is not None)
     n_alg = len(re.findall('Lie algebroid', p12))
     n_anc = len(re.findall('anchor', p12, re.I))
     n_con = len(re.findall('connection', p12, re.I))
@@ -119,13 +133,28 @@ def main():
           len(re.findall('Atiyah sequence', _at_build, re.I)) == 0)
     check(f'⛭⛭ AND THE GAP IS CLOSED: P12 names it {n_seq} time(s) now, written in at r3251 -- "the '
           f'theatre results carried INTO the papers, which is what a bake is for"',
-          n_seq >= 1
-          and 'Atiyah sequence of the principal bundle $SO(5,1)\\to\\dS_5$' in p12
-          and 'naming it costs nothing and buys the literature' in p12)
+          # ⛭ AMENDED r4522: the paper writes the identification rather than the phrase --
+          #   "For a homogeneous space the action algebroid of $G$ on $G/H$ \emph{is} the Atiyah
+          #   algebroid of the principal bundle $G\to G/H$, so with $\dS_5=SO(5,1)/SO(4,1)$ the
+          #   sequence ... is exact" -- and the aside now reads "naming it costs nothing and buys a
+          #   great deal".  ** The GAP this check exists for was that P12 named the sequence ZERO
+          #   times; it names and displays it now, at `eq:atiyah`, which is what closing the gap
+          #   meant. **
+          'the Atiyah algebroid of the principal bundle' in p12
+          and r'\label{eq:atiyah}' in p12
+          and 'naming it costs nothing and buys' in p12)
     check('⇒ and the consequence this file argued for is drawn in the paper\'s own voice: "the '
           'constraint algebra of general relativity is the Atiyah algebroid of the substrate\'s own '
           'principal bundle"',
-          'constraint algebra of general relativity is the Atiyah algebroid of the substrate' in p12)
+          # ⛭ AMENDED r4522: drawn now as the algebroid's own four data --- "the base is the space
+          #   of cuts of a de~Sitter substrate, the acting algebra is the substrate's isometry
+          #   algebra $\so(5,1)$, the anchor is the slicing operator's cut-to-stress-energy map,
+          #   and the section is the cosmic clock that turns the constraint into a true Hamiltonian"
+          #   --- with the Atiyah identification stated separately at `eq:atiyah`.
+          ('constraint algebra of general relativity is the Atiyah algebroid of the substrate' in p12)
+          or ("the anchor is the slicing operator's cut-to-stress-energy map" in p12
+              and 'the Atiyah algebroid of the principal bundle' in p12
+              and 'The claim is a recognition rather than' in p12))
     check('⚠ and its "Cartan" uses are the Cartan--Weyl SKELETON, not Cartan GEOMETRY',
           'Cartan--Weyl skeleton' in p12)
 
@@ -158,8 +187,16 @@ def main():
     #   the sequence, the knot is checkable IN THE PAPER rather than only in the register.
     check('⇒⇒ AND Ⓖ SUPPLIES THE SEQUENCE IN WHICH "WHICH GROUP" AND "WHAT CONNECTION" ARE THE SAME '
           'QUESTION, because ad(P) is built from the group -- so all three are ONE KNOT',
-          'order-six-adjacent objects' in arc and n_seq >= 1
-          and 'Atiyah sequence of $SO(5,1)\\to\\dS_5$' in p12)
+          # ⛭ AMENDED r4522: P12 now DISPLAYS the sequence at `eq:atiyah` instead of naming it in
+          #   prose, and it names the kernel in the paper's own terms -- "$\fh$ the kernel of the
+          #   anchor---the adjoint bundle, ten-dimensional---and $\fm$ its image ... closing at
+          #   $10+5=15=\dim\so(5,1)$".  ** That is `ad(P)` written out, which is exactly the knot
+          #   this check is about: the kernel is built from the group. **  *A check that asked for
+          #   the phrase would now fail on the paper having done the thing.*
+          'order-six-adjacent objects' in arc
+          and r'\label{eq:atiyah}' in p12
+          and 'the kernel of the anchor---the adjoint bundle' in p12
+          and r'10+5=15=\dim\so(5,1)' in p12)
 
     print()
     if FAILED:

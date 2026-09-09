@@ -101,10 +101,16 @@ def main():
     #   ⇒ ** A trailing weak `or` arm does not make a check robust; it retires it. **  Same shape as
     #     `L550/M1`'s unreachable pin, found in the same sweep and by the same reading: *when a pin
     #     stops matching, look at what is holding the check up before believing it still passes.*
-    check('⛭⛭ ⓵ P15 gives it: "the onset redshift $z_{\\mathrm{onset}}$", at a stated value',
-          'onset redshift $z_{\\mathrm{onset}}$' in p15
-          and 'z_{\\mathrm{onset}}\\approx6797' in p15
-          and 'z_{\\mathrm{onset}}=6797' in p15)
+    # ⛔⛭ AMENDED r4518: the check required the value in TWO markup forms at once --
+    #    `z_{\mathrm{onset}}\approx6797` AND `z_{\mathrm{onset}}=6797` -- and P15 now states it once,
+    #    with `\approx`.  *The claim is that the paper gives the onset redshift at a stated value;
+    #    requiring it twice, in two relation symbols, tests the typesetting.*  ⇒ The probe binds the
+    #    SYMBOL to the NUMBER through whatever relation sits between them, and still requires the
+    #    number: it cannot pass on a paper that names the symbol and no value.
+    _ONSET = re.compile(r"z_\{\\mathrm\{onset\}\}\s*(?:\\approx|\\simeq|=)\s*6797")
+    check('⛭⛭ ⓵ P15 gives it: "the onset redshift $z_{\\mathrm{onset}}$", at a stated value -- '
+          '"$z_{\\mathrm{onset}}\\approx6797$"',
+          'onset redshift $z_{\\mathrm{onset}}$' in p15 and _ONSET.search(p15) is not None)
     check('and how it is fixed: "It is fitted to the acoustic angle at the directly measured $H_{0}$"',
           'fitted to the acoustic angle at the \\emph{directly} measured $H_0$' in p15)
     check('and that it is not a knob: "the same $z_{\\rm onset}$ meets the scale at every $H_{0}$ across '

@@ -260,6 +260,24 @@ print()
 print("=" * 78)
 print("PART 6 — AND THE PAPER SAID THIS TWO PARAGRAPHS EARLIER.  c54.195 OVERWROTE ITS OWN ANSWER")
 print("=" * 78)
+# ⛔⛭ AMENDED r4520, AND THE FIX IS THE PART'S OWN ARGUMENT APPLIED TO ITSELF.  ** This part is a
+#    claim about WHAT THE PAPER SAID AT c54.195 -- that it overwrote an answer standing two
+#    paragraphs above it -- and it was testing that against the LIVE file. **  r4111 restated the
+#    acoustic section (539 lines to 73) and both sentences went, so the historical argument failed
+#    on a tree it was never about.
+#    ⇒ *c54.226's rule, which this receipt is itself an instance of: a quotation is a claim about a
+#      FILE AT A COMMIT.*  Read at `48e55a6b^`, the last tree that carried them -- and the read is
+#      controlled, so an unreachable commit fails here instead of passing on an empty string.
+import subprocess as _sp                                                      # noqa: E402
+_THEN_REV = '48e55a6b^'          # r4111's parent: the acoustic section as c54.195 left it
+_tex_then = _sp.run(['git', 'show', f'{_THEN_REV}:corpus/CR_cosmology.tex'],
+                    cwd=ROOT, capture_output=True, text=True, errors='replace').stdout
+print(f"  ⌗ PART 6 reads P15 AT {_THEN_REV} ({len(_tex_then):,} characters), because it argues about")
+print("    what the paper said THEN.  r4111 has since restated the section; that is not a defect in")
+print("    the argument and it is not evidence against it.")
+if len(_tex_then) < 100000:
+    fail.append(f"P15 is not readable at {_THEN_REV} -- PART 6's historical claim cannot be checked "
+                f"here, and an empty read must not pass as agreement")
 EARLIER = [
     ("sec:refit-bound already called the datum's phase freedom a lever spanning A THIRD",
      r"phase freedom is a real lever on it and spans a third of it"),
@@ -267,10 +285,10 @@ EARLIER = [
      r"closes from \$0\.615\$ to \$0\.408\$"),
 ]
 for what, pat in EARLIER:
-    ok = re.search(pat, tex, re.I) is not None
+    ok = re.search(pat, re.sub(r'\s+', ' ', _tex_then), re.I) is not None
     print(f"  {'OK ' if ok else 'MISSING'}  {what}")
     if not ok:
-        fail.append(f"P15 does not carry the earlier statement: {what}")
+        fail.append(f"P15 did not carry the earlier statement at {_THEN_REV}: {what}")
 _gap_pi = abs(ppi - pc)
 print()
 print(f"  and that 0.408 is exactly this file's own |phi(pi) - phi(control)| = {_gap_pi:.4f}")

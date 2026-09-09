@@ -2709,3 +2709,94 @@ $\theta_\gamma$ that produced $0.7294$, so it should arrive **weighted to high $
 **shape**: $P_1/P_3$ and $P_1/P_4$ should fall further than $P_1/P_2$, and the position should move
 **back down** from $0.7560$.* ***If the position climbs instead, the hierarchy is on the wrong clock
 and step 3 was skipped.***
+
+
+# ⛭⛭⛭ r4540 — **63's CHECK, ANSWERED: THE EXPANDING LEG STARTS WITH THE PRIMORDIAL POTENTIAL — AND THE HANDOVER'S TWO HALVES ARE READ AT DIFFERENT POINTS OF THE COLLAPSE LEG**
+
+***63 asked which potential the arm's transfer starts the expanding leg with, the transmitted one or
+the primordial one, because the two readings decide whether the over-driving is a prediction or a
+calculation fault. It is the PRIMORDIAL one, and the reason is sharper than either branch.***
+
+## ⓵ WHAT THE INSTRUMENT DOES, read at source and then run
+
+`ACOUSTIC_two_arm.py` does **not integrate the collapse leg**. It integrates the expanding leg only,
+from `ETA_ON`, and the collapse leg enters entirely through the handover datum — three numbers per
+mode: the photon amplitude $\hat\Theta$, the potential $\Phi_0$, and the phase $\phi$.
+
+| the datum's half | what the code sets | is the collapse leg's transfer applied? |
+|---|---|---|
+| photon amplitude | `That = -_T(xe)/2`, $x_e = 1/\sqrt3$ | ⛭ **YES** |
+| potential | `Ph0 = -np.ones(nk)` (`CRPSI=flat`, the default) | ⛔ **NO** |
+
+⛔ ***AND `_T` IS LITERALLY THE SAME FUNCTION IN BOTH PLACES.*** *`sec:envelope` derives the collapse
+leg's potential in closed form — $\Psi''+(4/\eta)\Psi'+(k^2/3)\Psi=0$, regular solution
+$\Psi=\Psi_i\,T(x)$ — and `_T` is that solution, already coded in this file. **The code applies it to
+the amplitude and not to the potential.*** 59 wrote exactly that at `r3729` when it added the
+`CRPSI=envelope` branch: *"The amplitude was given the transfer function and the potential was not."*
+⌗ **That branch had never been run. No receipt, computation or paper mentions `CRPSI`; this is its
+first measurement.**
+
+⇒ ***So 63's second reading is the one the instrument supports: the expanding-leg driving is
+re-applied from an UNDECAYED potential, onto an amplitude that has already been decayed.***
+
+## ⓶ AND THE CONSEQUENCE IS NOT WHAT EITHER BRANCH PREDICTED
+
+*Fluid path, `KFAC=2.0`, the same driving subtraction as `r4164`. The first two rows are `r4164`'s and
+the driving-ON cell of row two was re-run here and reproduces to four decimals.*
+
+| | driving OFF | driving ON | shift in $\ell_1/\ell_A$ | $\times$ control |
+|---|---|---|---|---|
+| control | $0.9158$ | $0.7300$ | $-0.1858$ | $1.00$ |
+| arm, $\Phi$ **primordial** (as coded) | $1.1273$ | $0.6764$ | $-0.4509$ | $2.43$ |
+| arm, $\Phi$ **transmitted** (`CRPSI=envelope`) | $1.4987$ | $\mathbf{0.5438}$ | $\mathbf{-0.9549}$ | $\mathbf{5.14}$ |
+
+⛔ ***Carrying the decay across does not halve the driving. It doubles it again*** — $2.43\times \to
+5.14\times$ — *and the first peak moves from $0.6764$ to $0.5438$, **further** from the sky's $0.7312$,
+not back toward the structural claim.*
+
+## ⓷ ⚠ AND THE CAVEAT THAT STOPS THAT NUMBER TRAVELLING
+
+*What sources the expanding leg is the DIFFERENCE $\hat\Theta-\Phi$, not either half alone, and the
+three codings of it disagree qualitatively rather than in size:*
+
+| $\ell$ | $\Phi$ (envelope) | $\delta_\gamma^{(0)}$, $\Phi$ primordial | $\delta_\gamma^{(0)}$, $\Phi$ transmitted |
+|---|---|---|---|
+| $220$ | $-0.920$ | $+2.066$ | $+1.746$ |
+| $540$ | $-0.584$ | $+2.066$ | $+0.402$ |
+| $810$ | $-0.247$ | $+2.066$ | $\mathbf{-0.945}$ |
+| $1120$ | $+0.017$ | $+2.066$ | $-2.004$ |
+
+⇒ ***The initial photon perturbation CHANGES SIGN across the band under the transmitted reading and is
+constant under the coded one.*** *So the envelope run reshapes the envelope rather than rescaling it,
+and the undriven cell returns $P_1/P_2 = 0.804$ — **the "first peak" lower than the second**, which
+means the peak-finder is not identifying the same feature in the two rows.* ⛔ **The $5.14\times$ is the
+subtraction as defined and is NOT yet a like-for-like comparison of driving. It should not be carried
+into a paper as one.**
+
+⌗ ***AND THE THIRD READING IS DEGENERATE, WHICH IS THE POINT.*** *Making the handover self-consistent
+the other way — `CRAMP=onset CRPSI=envelope`, both halves evaluated at the same $x=k c_s\eta_{\rm ON}$
+— gives $\hat\Theta-\Phi = T(x)/2$, so the source vanishes with the transfer: measured
+$\ell_1/\ell_A=0.5703$ with $P_1/P_2 = \mathbf{427}$. **The comb above the first peak is gone.***
+
+## ⇒ HOW PO-13's MECHANISM READS, ON THIS EVIDENCE
+
+⛔ ***Neither branch of the dichotomy as posed.*** *It is not a clean two-dose prediction, because the
+second dose is applied from a potential the first dose already spent. And it is not simply one decay
+counted twice, because carrying the decay across makes the over-driving **larger**, not smaller.*
+
+⇒ ***WHAT IS ACTUALLY WRONG IS THAT THE HANDOVER DATUM'S TWO HALVES ARE READ AT DIFFERENT POINTS OF
+THE COLLAPSE LEG, and the instrument has never specified both at the same point.*** *All three
+codings of $\hat\Theta-\Phi$ that exist are defensible readings of "one datum per mode" and they give
+$2.43\times$, $5.14\times$ and a dead comb. **The factor of $2.4$ is a property of that choice and not
+yet a property of the construction.***
+
+⚠ **NOT CLAIMED.** *That the two-dose mechanism is wrong — it may well be right, and it is the only
+account so far that gives the direction, the ordering with peak number and the overshoot together.
+What is claimed is that the instrument cannot presently be used to weigh it, because the quantity the
+weighing depends on is unspecified at the handover.*
+
+⌗ **THE RUN THAT WOULD DECIDE IT** is not another spectrum: it is a statement, from `sec:envelope` or
+from the branch-point join `C19` computes ($\Phi_{\rm exp}=\tfrac9{10}\Phi_{\rm coll}$, exactly), of
+what $\hat\Theta$ and $\Phi$ BOTH are at the same locus. *`C19`'s $9/10$ is a relation between the two
+legs' potentials and is the closest thing the corpus has to that statement; nothing in the instrument
+uses it.*

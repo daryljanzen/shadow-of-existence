@@ -108,8 +108,27 @@ def main():
     print('  PART 2 -- ⛔ THE SEVENTY SIGMA, REPRODUCED FROM THE PAPER\'S OWN TWO NUMBERS')
     print('  ==========================================================================')
     p15 = RB.BODIES['P15']
-    check('⓶ P15 states the separation as 0.615 in φ/π at the derived seam datum',
-          '0.615' in p15)
+    # ⛔⛭⛭ AMENDED r4530, AND THIS BLOCK HAS NOW BEEN SUPERSEDED TWICE.  The note below records the
+    #    first: r3169 removed the sigma and this receipt kept asserting it for 278 revisions.  ** The
+    #    second is r4111, which restated P15's acoustic section from 539 lines to 73 -- and every
+    #    figure PART 2 and PART 3 quote went with it: ** `0.615`, `224`, `3.71`, `185 bins`, `0.263`,
+    #    "seventy standard deviations", "should not be read as the disagreement itself", "the phase
+    #    was never carrying it", "is not a $p$-value", "cannot arbitrate here" -- all zero in P15 now.
+    #    ⇒ *** PARTS 2 AND 3 ARE A HISTORY OF WHAT THE PAPER SAID, so they are read AT THE COMMIT
+    #        WHERE IT SAID IT (`48e55a6b^`, r4111's parent), with the read CONTROLLED so an
+    #        unreachable commit fails here instead of passing on an empty string.  What the paper
+    #        says NOW is asserted separately, below. ***
+    import subprocess as _sp                                                  # noqa: E402
+    _THEN_REV = '48e55a6b^'
+    _p15_then = re.sub(r'\s+', ' ', _sp.run(['git', 'show', f'{_THEN_REV}:corpus/CR_cosmology.tex'],
+                                             cwd=ROOT, capture_output=True, text=True,
+                                             errors='replace').stdout)
+    check(f'⓶⁰ P15 is READ at {_THEN_REV} ({len(_p15_then):,} characters) -- the tree r4111 restated, '
+          f'and the one PARTS 2 and 3 are about',
+          len(_p15_then) > 100000)
+    p15_then = _p15_then
+    check(f'⓶ P15 stated the separation as 0.615 in φ/π at the derived seam datum, at {_THEN_REV}',
+          '0.615' in p15_then)
     # ** SUPERSEDED r3447.  This check asserted P15 states sigma(phi/pi) = 0.008 from a
     # one-multipole peak-position assumption, and reproduced 0.615/0.008 = 76.9 sigma.
     # ** P15 REMOVED BOTH AT r3169 ** -- "the central empirical claim was unreceipted, and its
@@ -120,19 +139,20 @@ def main():
     # The check now tracks what the paper SAYS NOW, which is stronger than what it replaced. **
     check('⓶ᵇ ⛭ SUPERSEDED: P15 no longer quotes a sigma at all, and says in its own voice that '
           'the 0.615 "should not be read as the disagreement itself"',
-          '0.008' not in p15 and 'should not be read as the disagreement itself' in p15)
+          '0.008' not in p15_then
+          and 'should not be read as the disagreement itself' in p15_then)
     check('⓶ᶜ and it now rests the case on a chi-squared ratio on a stated number of bins rather '
           'than on a sigma -- 224 against the control\'s 3.71 on 185 bins',
-          '224' in p15 and '3.71' in p15 and '185 bins' in p15)
+          '224' in p15_then and '3.71' in p15_then and '185 bins' in p15_then)
     check('⓶ᵈ ⛭ and it reports the phase SPAN with the control INSIDE it, which is the honest '
           'form of the same comparison: 0.891 in phi/pi, control 0.263',
-          '0.891' in p15 and '0.263' in p15)
+          '0.891' in p15_then and '0.263' in p15_then)
     sep, sig = 0.615, 0.008   # kept only to reproduce the SUPERSEDED figure below
     ratio = sep / sig
     print(f'      {sep} / {sig} = {ratio:.1f} σ  --  the paper says "of order seventy"')
     check(f'⓶ᶜ and the ratio those two numbers give is {ratio:.1f}, which is what the paper calls '
           '"of order seventy" -- so the arithmetic is the paper\'s and it is right',
-          60 <= ratio <= 90 and 'seventy standard deviations' in p15)
+          60 <= ratio <= 90 and 'seventy standard deviations' in p15_then)
     # ** ASSERTED, not narrated: the Gaussian tail at this ratio is a number no error model
     #   supports, and it UNDERFLOWS double precision -- which is the demonstration that what the
     #   figure carries is a ratio and not a probability. **
@@ -151,23 +171,40 @@ def main():
     print('  PART 3 -- ⛭⛭ THE BUDGET IS BEING TAKEN, BY MATCHED-PROCEDURE DIFFERENCING')
     print('  ==========================================================================')
     check('⓷ P15 measures a ΛCDM control BY THE IDENTICAL PROCEDURE rather than quoting standard '
-          'values', 'identical procedure' in p15 and 'control' in p15)
+          'values -- true at r4111\'s parent and true now', 'identical procedure' in p15
+          and 'control' in p15)
+    # ⛭⛭ AND HALF THIS RECEIPT'S TITLE IS NOW OUT OF DATE IN THE GOOD DIRECTION.  It says the budget
+    #    is "absent by name and present as a matched control"; ** r4111's restatement NAMES the move
+    #    in the paper's own voice: ** "\emph{The move has a name and the name is worth stating,
+    #    because it is what licenses the comparison}: this is \emph{matched-procedure differencing}
+    #    ---the control is passed through the identical extraction, so whatever bias the procedure
+    #    itself carries appears in both arms and cancels."  *The METHOD is no longer unnamed.  The
+    #    word `systematics` is still absent, which is the half that stands, and ⓷ᶜ below still
+    #    asserts it.*
+    check('⓷⁺ ⛭ and the METHOD IS NAMED NOW, which is half this receipt\'s finding closing: P15 says '
+          '"this is \\emph{matched-procedure differencing}---the control is passed through the '
+          'identical extraction, so whatever bias the procedure itself carries appears in both arms '
+          'and cancels", and reports the control standing in for the sky "to within seven parts in a '
+          'thousand"',
+          'matched-procedure differencing' in p15
+          and 'appears in both arms and cancels' in p15
+          and 'to within seven parts in a thousand' in p15)
     check('⓷ᵇ and it reports what that control returns against the sky: "the control stands in for '
           'the sky on this quantity to within seven parts in a thousand of the disagreement it is '
           'used to measure"',
-          'seven parts in a thousand of the disagreement it is used to measure' in p15)
+          'seven parts in a thousand of the disagreement it is used to measure' in p15_then)
     check('⓷ᶜ ⛭ THAT IS A SYSTEMATICS CONTROL: any error the procedure makes on the sky it makes '
           'on the control, and differencing removes it -- the standard method, in use, unnamed',
           'systematics' not in p15.lower())
     check('⓷ᵈ and the paper does not overclaim the number either: it says outright "That number '
           'should not be read as the disagreement itself" and then shows the disagreement does '
           'not go with the phase',
-          'should not be read as the disagreement itself' in p15
-          and 'the phase was never carrying it' in p15)
+          'should not be read as the disagreement itself' in p15_then
+          and 'the phase was never carrying it' in p15_then)
     check('⓷ᵉ ⌗ and elsewhere in the same section it refuses a likelihood it judges unable to '
           'arbitrate -- "the ordering is a fact and the ratio is not a $p$-value" -- which is '
           'better discipline than a vocabulary count would suggest',
-          'is not a $p$-value' in p15 and 'cannot arbitrate here' in p15)
+          'is not a $p$-value' in p15_then and 'cannot arbitrate here' in p15_then)
 
     print()
     print('  ' + '=' * 74)
