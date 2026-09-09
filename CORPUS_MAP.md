@@ -146,6 +146,38 @@ sources: [cowork, chat]
 
 
 
+### Revision r6413 — 2026-09-09 (node 64). **`PO-43`: the invariant the coefficient multiplies is computed, and it is not the shape `P10` states.**
+
+**⌗ THE DISCHARGE NAMES A COEFFICIENT, so the invariant it multiplies is the first thing to fix.**
+*`P10` states it in one clause --- "an anisotropic shear of amplitude $\sigma$ over an isotropic
+expansion gives $C^{2}=4\sigma^{2}+O(\sigma^{4})$". **Computed from the metric with nothing assumed,
+it is $C^{2}=2\sum_i(\dot\sigma_i+H\sigma_i)^{2}$ at second order** --- two more derivatives, and
+the right dimension.*
+
+**⛭ DIMENSIONS SETTLE HALF OF IT ON THEIR OWN.** *A shear is $1/\text{time}$, so $\sigma^{2}$ is
+$1/L^{2}$ while $C^{2}$ is $1/L^{4}$. Read instead with $\sigma$ a dimensionless amplitude, the
+computed coefficient is not $4$ and the structure is not $\sigma^{2}$. **Either way the stated form
+does not survive the computation, and the clause wants checking at source.***
+
+**⛭⛭ AND THAT IS THE WHOLE DIFFERENCE FOR A TOWER.** *For a mode of frequency $\omega$ the shear
+oscillates, so $\dot\sigma\sim\omega\sigma$ and $C^{2}\sim\omega^{2}\sigma^{2}$. ***The counterterm
+multiplies a quantity that grows with the mode's frequency --- which is what makes it
+ultraviolet-sensitive at all, and what a $\sigma^{2}$-shaped invariant would not be.*** **A discharge
+computed against $4\sigma^{2}$ would be computing the coefficient of the wrong object.***
+
+⌗ **A CASE THAT SEPARATES THEM CLEANLY**: *a constant comoving shear on a static background gives
+$C^{2}=0$ at this order, where $4\sigma^{2}$ would give $4\sigma^{2}$. **The two forms disagree on
+whether a constant shear curves the Weyl tensor at all**, so this is not a normalisation quibble.*
+
+⌗ *Method: the closed form is **read off one computation and verified against another** --- the ratio
+to the exact $C^{2}$ converging to $1$ linearly in the amplitude, $1.0404 \to 1.0040 \to 1.00040$.
+**NOT ESTABLISHED: the coefficient itself**, which remains the row's object and needs the sub-leading
+heat-kernel coefficients for the tower's own operator. What is fixed is what they multiply.*
+
+⌗ *Sixth row worked in this run, and the first whose finding is a disagreement with a paper's stated
+result rather than a re-scoping of a register row. **Routed rather than edited**: the clause is the
+working fork's text.*
+
 ### Revision r6411 — 2026-09-09 (node 64). **`PO-23`: the scope clause splits, one route to its discharge is foreclosed as vacuous, and both of its numbers become identities.**
 
 **⛭ THE CONTRIBUTION.** *The row's scope reads "free and static on the instantaneous spectrum ---
