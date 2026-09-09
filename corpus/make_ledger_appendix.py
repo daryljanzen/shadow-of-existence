@@ -107,6 +107,12 @@ def parse_index(path):
         cells = [c.strip() for c in s.strip('|').split('|')]
         if len(cells) < 4:
             continue
+        # r4583: the registry gained a leading fixed-number column.  Read by
+        # POSITION FROM THE KEY rather than from the row's start, so a column
+        # added on either side cannot silently shift what is parsed.
+        num = ''
+        if cells and cells[0].startswith('**L'):
+            num = cells.pop(0).strip('*')
         key = cells[0].strip('`')
         if key in seen:
             sys.stderr.write(
@@ -116,7 +122,7 @@ def parse_index(path):
                 % (key, lineno, seen[key]))
             sys.exit(2)
         seen[key] = lineno
-        rows.append({'key': key, 'file': cells[1].strip('`'),
+        rows.append({'key': key, 'num': num, 'file': cells[1].strip('`'),
                      'kind': cells[2], 'what': cells[3], 'line': lineno})
     return rows
 
@@ -184,8 +190,12 @@ def emit(rows, scope, out):
          r'\begingroup\renewcommand{\arraystretch}{1.25}',
          r'\begin{description}']
     for r in rows:
-        L.append(r'\item[\label{ldg:%s}\texttt{%s}]\hfill\textsf{[%s]}\\'
-                 % (r['key'], tex_escape(r['file']), tex_escape(r['kind'])))
+        # The fixed number leads the entry, so a reader meeting `L7` in the body
+        # finds `L7` here rather than having to match a filename.
+        L.append(r'\item[\label{ldg:%s}\textbf{%s}\quad\texttt{%s}]'
+                 r'\hfill\textsf{[%s]}\\'
+                 % (r['key'], r.get('num', ''), tex_escape(r['file']),
+                    tex_escape(r['kind'])))
         L.append(r'%s' % tex_escape(r['what']))
     L += [r'\end{description}', r'\endgroup']
     open(out, 'w', encoding='utf-8').write('\n'.join(L) + '\n')

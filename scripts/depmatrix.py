@@ -101,6 +101,10 @@ def _ledger_keys():
         if not started:
             continue
         cells = [c.strip() for c in t.strip('|').split('|')]
+        # r4583: a leading fixed-number column was added to the registry.  Drop
+        # it before reading the key, so the parse is anchored on the key itself.
+        if cells and cells[0].startswith('**L'):
+            cells = cells[1:]
         if len(cells) >= 4:
             keys.append(cells[0].strip('`'))
     return keys
