@@ -29,6 +29,7 @@ OUT_INTRO = os.path.join(ROOT, 'BOOK_INTRO_cosmiCave', 'introduction.html')
 OUT_FRONT = os.path.join(ROOT, 'BOOK_INTRO_cosmiCave', 'frontier.html')
 CDN = 'https://cdn.jsdelivr.net/gh/daryljanzen/shadow-of-existence@main'
 RAW = 'https://raw.githubusercontent.com/daryljanzen/shadow-of-existence/main'
+PAGES = CDN + '/BOOK_INTRO_cosmiCave'      # where the generated pages are served
 
 # P-number -> tex stem, in the corpus's own numbering.  The geometric core is
 # P17 and sits seventeenth; the older `p0` tag put it first and is deprecated.
@@ -388,9 +389,9 @@ this page.</p>
       the eighteen chapters and how they depend on one another, where to come in,
       and at what weight each claim is held</span></span></summary>
       <div class="intro">{intro_excerpt}
-      <p class="more"><a href="introduction.html" target="_blank"
+      <p class="more"><a href="{PAGES}/introduction.html" target="_blank"
          rel="noopener">Read more →</a></p></div>
-    </details><a href="introduction.html" target="_blank" rel="noopener">READ</a></li>
+    </details><a href="{PAGES}/introduction.html" target="_blank" rel="noopener">READ</a></li>
 {paper_list}
 </ul>
 
@@ -407,6 +408,7 @@ repository</a>. Papers via jsDelivr; the frontier read live at page load.
 
 </div>
 <script>
+const PAGES_URL = '{PAGES}';
 (async function () {{
   const el = document.getElementById('frontier');
   const urls = ['{CDN}/THE_FRONTIER.md', '{RAW}/THE_FRONTIER.md'];
@@ -418,7 +420,7 @@ repository</a>. Papers via jsDelivr; the frontier read live at page load.
     }} catch (e) {{ /* try the next source */ }}
   }}
   if (text === null) {{
-    el.innerHTML = '<p class="more"><a href="frontier.html" '
+    el.innerHTML = '<p class="more"><a href="' + PAGES_URL + '/frontier.html" '
       + 'target="_blank" rel="noopener">Read more \u2192</a></p>';
     return;
   }}
@@ -437,7 +439,7 @@ repository</a>. Papers via jsDelivr; the frontier read live at page load.
     rows.push({{id: id, what: c[2] || '', disc: c[9] || ''}});
   }}
   if (!rows.length) {{
-    el.innerHTML = '<p class="more"><a href="frontier.html" '
+    el.innerHTML = '<p class="more"><a href="' + PAGES_URL + '/frontier.html" '
       + 'target="_blank" rel="noopener">Read more \u2192</a></p>';
     return;
   }}
@@ -453,7 +455,7 @@ repository</a>. Papers via jsDelivr; the frontier read live at page load.
             (d && d.length > 3 ? '<span class="disc">' + d.slice(0, 400) +
              '</span>' : '') + '</div>';
   }}
-  html += '<p class="more"><a href="frontier.html" target="_blank" ' +
+  html += '<p class="more"><a href="' + PAGES_URL + '/frontier.html" target="_blank" ' +
           'rel="noopener">Read more \u2192</a></p>';
   el.innerHTML = html;
 }})();
@@ -474,8 +476,8 @@ repository</a>. Papers via jsDelivr; the frontier read live at page load.
         '<meta name="viewport" content="width=device-width, initial-scale=1">\n'
         '<title>Introduction \u2014 The Shadow of Existence</title>\n'
         '<style>' + css + '</style>\n</head>\n<body>\n<div class="wrap">\n'
-        '<p class="note"><a href="live_edition.html">\u2190 The Shadow of '
-        'Existence</a></p>\n<h1>Introduction</h1>\n'
+        '<p class="note"><a href="' + PAGES + '/live_edition.html">\u2190 The '
+        'Shadow of Existence</a></p>\n<h1>Introduction</h1>\n'
         '<div class="intro">\n' + intro_full + '\n</div>\n'
         '<footer>Generated from the repository\u2019s own introduction. '
         '<a href="https://github.com/daryljanzen/shadow-of-existence">Source.</a>'
@@ -497,8 +499,8 @@ repository</a>. Papers via jsDelivr; the frontier read live at page load.
         '<meta name="viewport" content="width=device-width, initial-scale=1">\n'
         '<title>The open edge \u2014 The Shadow of Existence</title>\n'
         '<style>' + css + '</style>\n</head>\n<body>\n<div class="wrap">\n'
-        '<p class="note"><a href="live_edition.html">\u2190 The Shadow of '
-        'Existence</a></p>\n<h1>The open edge</h1>\n'
+        '<p class="note"><a href="' + PAGES + '/live_edition.html">\u2190 The '
+        'Shadow of Existence</a></p>\n<h1>The open edge</h1>\n'
         '<p class="lede">The programme\u2019s own open questions, each with what '
         'would discharge it. Generated from its register, not written for this '
         'page \u2014 ' + str(len(fr)) + ' stand open.</p>\n'
@@ -509,6 +511,7 @@ repository</a>. Papers via jsDelivr; the frontier read live at page load.
     with open(OUT_FRONT, 'w', encoding='utf-8') as fh:
         fh.write(front_page)
     print(f'  frontier.html written: {len(fr)} open rows, {len(front_page)} bytes.')
+
     print(f'  introduction.html written: {len(intro_page)} bytes, '
           f'matrix fetched into its figure.')
     print(f'  live_edition.html written: {len(papers)} papers listed, '
