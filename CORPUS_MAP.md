@@ -146,6 +146,46 @@ sources: [cowork, chat]
 
 
 
+### Revision r6405 — 2026-09-09 (node 64). **`PO-25`'s STEP RUN: the eternal Cauchy horizon is not formed, in BOTH charge readings, which decouples the row from the datum fork.**
+
+**⌗ THE ROW ASKED FOR A COMPUTATION AND CARRIED AN INTUITION.** *"Real collapses are widely held
+not to [form the inner horizon]" is the $\Lambda=0$ mass-inflation picture, and **the corpus's setting
+is $\Lambda>0$, where it does not transport**: with a cosmological horizon the exterior perturbations
+decay **exponentially** rather than by Price power-law tails, so the Cauchy horizon **can** survive ---
+and near extremality it does. That is why the intuition needed checking rather than quoting.*
+
+**⛭ THE CRITERION IS QUANTITATIVE:** $\beta=\alpha/\kappa_-$ *against $1/2$ --- the blueshift
+$e^{\kappa_-v}$ against the decay $e^{-\alpha v}$. **On the progenitor, with a deliberately generous
+ceiling $\alpha\le1/4M$ so the verdict bounds the horizon's chances from above: intensive
+$\beta=1.6\times10^{-251}$, extensive $\beta=1.6\times10^{-15}$ --- below threshold by 250 and 14
+orders.*** ⇒ ***The eternal inner horizon is not formed either way, so this row's dynamical step does
+not depend on which reading of the charge is right --- the fork `PO-13` carries.***
+
+**⛭ AND THE COMPUTATION IS TIED TO THE ROW'S OWN NUMBERS RATHER THAN FREE-STANDING:** *it reproduces
+the $10^{19}$ m and $10^{-64}\,\ell_P$ the row published at r3827 and r3853. **Control at
+$Q/M=0.9999$ returns $\beta=17.2>1/2$**, so the criterion can say "survives" and is not measuring
+nothing.*
+
+**⛔ WHAT DOES NOT FOLLOW, stated because the row's own sentence invites it.** *Strong cosmic
+censorship HOLDING means the maximal development is **inextendible at the Cauchy horizon**. That says
+the ETERNAL structure `P03` uses is not what a charged collapse produces; ***it does not deliver a
+spacelike $r=0$ for the signed radius to pass through***, so **"the branch point survives dynamically"
+is not established** and the row stays open on it. What IS established is narrower and is the useful
+half: **the obstruction is a property of a stationary solution the dynamical problem does not reach.**
+
+⚠ **A NUMERICAL TRAP WORTH THE LINE.** *At $Q/M\sim10^{-63}$ the textbook root $r_-=M-\sqrt{M^2-Q^2}$
+evaluates to **exactly zero** in double precision and the receipt divided by it. The algebraically
+identical $Q^2/(M+\sqrt{M^2-Q^2})$ does not cancel. **Same class as the growing-mode potential's $0/0$
+at small $y$** --- and the reason the receipt asserts against the row's two published figures rather
+than only against a threshold: **an $r_-$ that silently came out zero would have passed a threshold
+test.***
+
+⌗ **AND A SYSTEMIC FINDING, MEASURED AND NOT ACTED ON HERE.** *`r6403` merged a split receipt directory
+for P8. **The split is not a one-off: `P01`, `P03`, `P06`, `P12`, `P13` and `P16` each have two
+directories**, and `check_receipts` cannot see any of them because every row resolves to a file that
+does exist. `P03` is 52 rows against 2. **Recorded with its count rather than fixed inside a physics
+pass**, since six directories is its own pass and other nodes' paths point into them.*
+
 ### Revision r6403 — 2026-09-09 (node 64). **THREE ROWS NARROWED, ONE RECEIPT DIRECTORY DEFRAGMENTED, AND THE FRONTIER VIEW BROUGHT CURRENT.**
 
 **⌗ THE ROWS.** *`PO-30` --- `P08` `sec:open`'s closing sentence bundles two things: a dynamics for the
