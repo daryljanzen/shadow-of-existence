@@ -2800,3 +2800,80 @@ from the branch-point join `C19` computes ($\Phi_{\rm exp}=\tfrac9{10}\Phi_{\rm 
 what $\hat\Theta$ and $\Phi$ BOTH are at the same locus. *`C19`'s $9/10$ is a relation between the two
 legs' potentials and is the closest thing the corpus has to that statement; nothing in the instrument
 uses it.*
+
+
+# ⛭⛭⛭ r4546 — **THE 23% UNDRIVEN SPLIT IS NOT THE HANDOVER: THE OSCILLATOR IS IDENTICAL ON BOTH ARMS AND EVERY DATUM CHANGE MOVES THE ARM THE WRONG WAY**
+
+***62 asked whether the handover asymmetry that gives three codings of the driving also sets where the
+undriven peak lands — one defect for both halves of the row, or two objects. **It is two objects.***
+
+## ⓵ ⛭⛭ THE OSCILLATOR IS EXCLUDED, MEASURED WITHOUT THE PEAK-FINDER
+
+*`qscan` reports $Q = k\!\int\!c_s\,\mathrm{d}\eta/\pi$ at the first extremum of $\Theta_0$ — the
+turnover in the mode's **own sound phase**, with no projection and no peak identification in it.*
+
+| undriven, 8 modes $k = 0.012$–$0.160$ /Mpc | $Q$ |
+|---|---|
+| control | $0.9989$–$1.0009$ |
+| this arm, coded handover | $0.9989$–$1.0001$ |
+
+⇒ ***Both arms turn over at exactly one half-period, to a part in a thousand.*** **So the $23\%$ split
+is not in the acoustic phase, not in the sound-horizon bookkeeping, and not in the initial data's
+phase.** *This is the instrument's own calibration and it holds on both arms: whatever the split is,
+the undriven oscillator is not it.*
+
+⌗ **AND THE DRIVEN COLUMNS ARE THE ROW'S OTHER HALF, IN PHASE RATHER THAN IN POSITION.**
+
+| driven | $Q$ span | ratio | slope |
+|---|---|---|---|
+| control | $0.7744$–$0.8641$ | $1.12\times$ | $k^{-0.05}$ |
+| this arm, coded handover | $0.1539$–$0.6427$ | $\mathbf{4.18\times}$ | $\mathbf{k^{-0.69}}$ |
+
+*The control's driving is nearly flat in $k$; this arm's runs as $k^{-0.69}$ across a factor of four.
+**That is the deepening-with-peak-number, measured in the mode's own phase rather than read off peak
+positions** — and it is coding-dependent in the way `r4540` established.*
+
+## ⓶ ⛔ AND EVERY CHANGE TO THE HANDOVER MOVES THE ARM AWAY FROM THE CONTROL, NOT TOWARD IT
+
+*Undriven, fluid path, `KFAC=2.0`. **Each row names the coding it is read on**, per 62's caution.*
+
+| undriven cell | $\ell_A$ | $\ell_1/\ell_A$ | |
+|---|---|---|---|
+| control, as coded (`LZSTART=3e7`) | $301.6$ | $\mathbf{0.9158}$ | `r4164` |
+| arm, coded handover (`CRAMP=flat CRPSI=flat CRPHI=0`) | $301.6$ | $\mathbf{1.1273}$ | `r4164` |
+| arm, `CRAMP=onset` (amplitude $k$-dependent) | $301.6$ | $1.2069$ | here |
+| arm, `CRPSI=envelope` (potential transmitted) | $301.6$ | $1.4987$ ⚠ | `r4540` |
+| arm, `CRIC=branchpoint` (the control's datum) | $301.6$ | peaks $[532, 916]$ only ⚠ | here |
+| arm, `CRIC=branchpoint ZSTART=3e7` (datum **and** start) | $172.8$ | $1.5506$ | here |
+
+⇒ ***Three independent ways of changing the handover datum — its amplitude envelope, its potential,
+and replacing it wholesale with the control's — move the arm's undriven position UP or scatter it.
+None moves it toward $0.9158$.*** ⛔ **So the split does not follow the handover. 62's first outcome is
+not supported and the second is: the row has two objects.**
+
+⚠ *The two marked cells are the ones 62 warned about: `CRPSI=envelope` returns $P_1/P_2 = 0.804$ and
+`CRIC=branchpoint` finds only two peaks, so in both the peak-finder is not identifying the same
+feature. **They are reported as scatter and no weight is put on their values** — the argument rests on
+`CRAMP=onset`, which keeps three clean peaks and still moves the wrong way.*
+
+⌗ **THE LAST ROW IS NOT A DEFECT AND IS WORTH SAYING SO.** *With the arm's sound horizon integrated
+from $a\to0$ the way the control's is, $\ell_A$ comes out $172.8$ rather than $301.6$ — a factor of
+$1.75$. **That is correct, not broken: on this construction there is no plasma before the onset, so a
+sound horizon from $a\to0$ is not a quantity the arm has.** It confirms that $R_S$ must be integrated
+from the onset, which is what the instrument does.*
+
+## ⇒ WHERE THE SPLIT ACTUALLY LIVES
+
+*The oscillator is excluded by ⓵ and the datum by ⓶, and $\ell_1/\ell_A$ would be $1$ on both arms if
+the projected peak sat at the source's turnover. It does not: the control lands $8.4\%$ **below** it
+and this arm $12.7\%$ **above**.* ⇒ ***So the split is in the PROJECTION — the map from a mode's
+turnover to a multipole — and specifically in what rides with $\Theta_0$ into the source: the
+$\Psi$ term, the integrated term, and the Doppler term, which the two arms do not carry alike.***
+
+⚠ **NOT CLAIMED**: *which of those three it is. That is one subtraction away — the source has separable
+terms and the instrument already switches them individually (`PISRC`, `NOISW`, `DRC`/`DRE`) — and it is
+the next run rather than a conclusion here.*
+
+⌗ **AND IT IS A THIRD OBJECT, NAMED.** *PO-13 now carries: the mechanism half, whose weighing waits on
+the locus statement (`r4519`); this split, which is in the projection; and the phase offset the
+transfer exposed. **The first two are independent, which is what this revision establishes.***
