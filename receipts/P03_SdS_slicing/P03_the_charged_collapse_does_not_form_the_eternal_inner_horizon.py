@@ -15,6 +15,14 @@ the answer is NOT the textbook Lambda = 0 one: with a cosmological horizon the
 exterior perturbations decay EXPONENTIALLY rather than by Price power-law tails, so
 the Cauchy horizon CAN survive, and near extremality it does.
 
+** COMPUTES: the blueshift-versus-decay ratio beta = alpha / kappa_minus at the inner
+horizon, across the charge range, against a threshold of 1/2 -- with alpha_max = 1/(4 M)
+held as a GENEROUS CEILING on the spectral gap rather than a fitted value, so a beta below
+threshold is an upper bound failing and not a tuned one, and with the near-extremal case
+run as a CONTROL because there the Cauchy horizon is expected to survive.  Nothing here is
+fitted to make the horizon form or not form.  Scope: the eternal Reissner-Nordstroem-de
+Sitter slicing function at Lambda > 0; it does not reach the collapse dynamics itself. **
+
 THE CRITERION.  The horizon's fate is a competition between the blueshift of
 infalling perturbations, going as exp(kappa_- v), and their decay, exp(-alpha v),
 with alpha the spectral gap.  The ratio
