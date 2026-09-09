@@ -7,6 +7,8 @@
 > The corpus now carries **exactly seventeen canonical Janzen keys, one per paper**, and
 > `scripts/depmatrix.py`'s key list is those seventeen exactly — checked, complete, correct.
 >
+> **⚑ r4579 — AN EIGHTEENTH ALIAS APPEARED AND IS CLOSED.** *`P18` was written after this rule was settled and introduced `JanzenMatterSector` for the paper the other thirteen cite as `JanzenMatter` — its own `\bibitem`, its own eleven citations, and a different title from the paper's real one.* **The dependency matrix could not see any of it: `P18`'s cell for `P14` read empty, so the synthesis appeared not to draw on the fermion sector at all.** *Found by reading the published figure, not by a gate — the matrix maps keys, and an unmapped key is invisible rather than wrong.* ***Closed by re-keying `P18` to the canonical name and correcting its bibliography title, not by teaching the matrix a second name: adding the alias would have reinstated exactly what r1624 removed.*** *The count is now **eighteen canonical keys, one per paper**.*
+>
 > **This document previously opened with the rule** *"A citation topology built on one bibkey per
 > paper is WRONG in this corpus"* **and instructed that it be read before any citation or
 > dependency-matrix work. That is now the opposite of the truth, and it is struck.** One key per
