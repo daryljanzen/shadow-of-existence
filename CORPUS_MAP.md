@@ -146,6 +146,39 @@ sources: [cowork, chat]
 
 
 
+### Revision r6407 — 2026-09-09 (node 64). **`PO-36` WORKED: the discrimination quantified, and the row re-scoped — what it measures is the dark fraction, not the framework.**
+
+**⌗ HOW BIG IT IS.** *The two mass choices differ by $f_b^{-1/3}=1.85$ in the radius --- **10.5 Mpc
+against 5.7 on a rich cluster** --- and by $1/f_b=6.37$ in the $\Lambda$ inferred from an OBSERVED
+radius. Neither is subtle, and the ratio is exactly $f_b^{-1/3}$ and mass-independent.*
+
+**⛔ AND IT IS NOT A CR-VERSUS-$\Lambda$CDM DISCRIMINATOR, which its place on the frontier implies.**
+*Here $M$ is the cut's **offset** and matter is the **bend**, $\rho=m'/4\pi r^{2}$ --- so $m(r)$ is
+whatever gravitates, exactly as in general relativity, and ***if dark matter gravitates it is in the
+bend***. Both frameworks take the same $M$. **The row already says the two are degenerate on the
+radius; this says why, and that the degeneracy is not removable by this measurement.***
+
+**⛭ WHAT IT DOES MEASURE, and this is the positive half.** *Run against independently measured
+baryonic mass it **measures $f_b$ at the largest bound radius, by a route that assumes no dynamics**.
+The control confirms the target: at $f_b=1$ the two choices coincide exactly and the test falls
+silent, so the quantity is the dark fraction and not an artefact of the formula.*
+
+**⌗ THE CORPUS'S OWN STAKE IS SMALLER AND REAL: the INPUT to "one constant read at two ranges".**
+*`P15` states that the single $\Lambda$ governs the global expansion and, per structure, the local
+scale at which structure resists it. **The local reading carries an unpinned factor of $6.37$ until
+the mass question is settled** --- which is a modest stake, and a different one from the row's framing.*
+
+⚠ **AND `P03`'s OWN SENTENCE READS AS IF IT FORECLOSED THE QUESTION.** *It quotes Pavlidou--Tomaras
+for a test "robust to cosmic epoch, dark-matter details, and baryonic effects". ***That robustness is
+PROFILE-independence given $M$*** --- the radius depends on the enclosed total and not on how it is
+distributed --- **whereas this row asks WHICH $M$**. Not a conflict, and the paper is not wrong; but a
+reader meeting that clause has been told the thing is robust to baryonic effects and **will not then
+ask the row's question**. The distinction is one clause and the paper does not draw it.
+
+⌗ *Two rows worked today came out as re-scopings rather than closures --- `PO-30` a join, `PO-36` a
+measurement of something other than what its placement implies. **Both stay open on what is genuinely
+theirs**, and in neither case was the finding new physics: it was two corpus pieces set side by side.*
+
 ### Revision r6405 — 2026-09-09 (node 64). **`PO-25`'s STEP RUN: the eternal Cauchy horizon is not formed, in BOTH charge readings, which decouples the row from the datum fork.**
 
 **⌗ THE ROW ASKED FOR A COMPUTATION AND CARRIED AN INTUITION.** *"Real collapses are widely held
