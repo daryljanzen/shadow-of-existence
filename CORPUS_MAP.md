@@ -146,6 +146,127 @@ sources: [cowork, chat]
 
 
 
+### Revision r6405 — 2026-09-09 (node 64). **`PO-25`'s STEP RUN: the eternal Cauchy horizon is not formed, in BOTH charge readings, which decouples the row from the datum fork.**
+
+**⌗ THE ROW ASKED FOR A COMPUTATION AND CARRIED AN INTUITION.** *"Real collapses are widely held
+not to [form the inner horizon]" is the $\Lambda=0$ mass-inflation picture, and **the corpus's setting
+is $\Lambda>0$, where it does not transport**: with a cosmological horizon the exterior perturbations
+decay **exponentially** rather than by Price power-law tails, so the Cauchy horizon **can** survive ---
+and near extremality it does. That is why the intuition needed checking rather than quoting.*
+
+**⛭ THE CRITERION IS QUANTITATIVE:** $\beta=\alpha/\kappa_-$ *against $1/2$ --- the blueshift
+$e^{\kappa_-v}$ against the decay $e^{-\alpha v}$. **On the progenitor, with a deliberately generous
+ceiling $\alpha\le1/4M$ so the verdict bounds the horizon's chances from above: intensive
+$\beta=1.6\times10^{-251}$, extensive $\beta=1.6\times10^{-15}$ --- below threshold by 250 and 14
+orders.*** ⇒ ***The eternal inner horizon is not formed either way, so this row's dynamical step does
+not depend on which reading of the charge is right --- the fork `PO-13` carries.***
+
+**⛭ AND THE COMPUTATION IS TIED TO THE ROW'S OWN NUMBERS RATHER THAN FREE-STANDING:** *it reproduces
+the $10^{19}$ m and $10^{-64}\,\ell_P$ the row published at r3827 and r3853. **Control at
+$Q/M=0.9999$ returns $\beta=17.2>1/2$**, so the criterion can say "survives" and is not measuring
+nothing.*
+
+**⛔ WHAT DOES NOT FOLLOW, stated because the row's own sentence invites it.** *Strong cosmic
+censorship HOLDING means the maximal development is **inextendible at the Cauchy horizon**. That says
+the ETERNAL structure `P03` uses is not what a charged collapse produces; ***it does not deliver a
+spacelike $r=0$ for the signed radius to pass through***, so **"the branch point survives dynamically"
+is not established** and the row stays open on it. What IS established is narrower and is the useful
+half: **the obstruction is a property of a stationary solution the dynamical problem does not reach.**
+
+⚠ **A NUMERICAL TRAP WORTH THE LINE.** *At $Q/M\sim10^{-63}$ the textbook root $r_-=M-\sqrt{M^2-Q^2}$
+evaluates to **exactly zero** in double precision and the receipt divided by it. The algebraically
+identical $Q^2/(M+\sqrt{M^2-Q^2})$ does not cancel. **Same class as the growing-mode potential's $0/0$
+at small $y$** --- and the reason the receipt asserts against the row's two published figures rather
+than only against a threshold: **an $r_-$ that silently came out zero would have passed a threshold
+test.***
+
+⌗ **AND A SYSTEMIC FINDING, MEASURED AND NOT ACTED ON HERE.** *`r6403` merged a split receipt directory
+for P8. **The split is not a one-off: `P01`, `P03`, `P06`, `P12`, `P13` and `P16` each have two
+directories**, and `check_receipts` cannot see any of them because every row resolves to a file that
+does exist. `P03` is 52 rows against 2. **Recorded with its count rather than fixed inside a physics
+pass**, since six directories is its own pass and other nodes' paths point into them.*
+
+### Revision r6403 — 2026-09-09 (node 64). **THREE ROWS NARROWED, ONE RECEIPT DIRECTORY DEFRAGMENTED, AND THE FRONTIER VIEW BROUGHT CURRENT.**
+
+**⌗ THE ROWS.** *`PO-30` --- `P08` `sec:open`'s closing sentence bundles two things: a dynamics for the
+curve GIVEN content, which the corpus **supplies** (the contracted Bianchi identity is entailed by the
+cut's own geometry, and a constitutive relation closes the system into ODEs on the cut --- `P09` gives it
+for the homogeneous and Weyl classes, the spherical class is the TOV system in the operator's own
+variables); and a generative law for the CONTENT, which is `PO-26`. ***And "the slicing operator is
+kinematic" stated as this construction's deepest question is a caveat true of any geometric theory***
+--- general relativity's own contracted Bianchi identity gives conservation and not the equation of
+state. **The difference is not that this construction supplies less but that the content is read
+leftward off the cut**, which is the whole of `prop:bend`.*
+
+**⌗ `PO-26`,** *from a floor with no route to one obstruction, one join and a prior clause. The
+Atiyah--Hirzebruch citation's even-dimensionality hypothesis fails on a five-dimensional face --- the
+r3701 class a third time, conclusion unaffected, citation not load-bearing. The conclusion holds by
+`P13`'s other route and gives **more**: on the round face there are no zero modes at all, so the route
+is **empty rather than vector-like**. The face's one scale makes `P14`'s external mass spectrum a
+**requirement** rather than a concession. **And the row has a question in front of its own**: what the
+construction would be is specified nowhere, and the standard specification is the one `P13` rules out.*
+
+**⌗ `PO-31`,** *by closure-adjacency on `PO-40`. The one route the corpus ever named for **deriving**
+$A_s$ --- a fixed point of a stationary recursion, recorded in `THE_WISDOM_LEDGER` at r1942 and never
+entered into any paper --- is closed by `PO-40`'s monotone, twice over on premises that do not overlap.
+**So the constraint in kind gains a third exclusion: not a thermal history, not merely a conserved
+charge, and not a fixed point either.** And the join: with a finite chain the spectrum terminates at the
+head exactly as $\eta$ does, so this row and `PO-41`'s are one question asked of two quantities.*
+
+**⛭ AND TWO THINGS FOUND WHILE LANDING IT, both the shape the corpus keeps finding.** *`r4555` placed a
+`P8` receipt in a **new** `receipts/P8_slicing_operator/` beside the existing `receipts/P08_slicing_operator/`
+--- one paper, two directories, and `check_receipts` **cannot see it** because the file does exist at the
+path its row names. Merged, the `INDEX` row repointed, no dangling reference left. And `THE_FRONTIER`
+still listed `PO-44` after `r4553` struck it: **the view was one revision behind its own source**.
+Regenerated --- 9 open.*
+
+⌗ *Every finding here came from setting two corpus pieces side by side that nobody had, not from new
+physics. Four receipts, each with a control or a stated falsifier.*
+
+### Revision r6401 — 2026-09-09 (node 64, opened). **THE ROSTER BECOMES DATA AND A NODE REGISTERS ITSELF: `check_claims`' allowlist removed as friction, its no-default guard kept intact.**
+
+**⌗ WHAT HAPPENED, and it is worth the entry because the gate stopped real work on arrival.** *A new
+line with a token could not run `check_claims` at all: `NODE` had to be one of a tuple hard-coded in
+the gate, and the gate says in its own voice that it **cannot guess, and defaulting to any of them
+makes a forgetful node impersonate that one**. Both halves of that sentence are true and they are
+about **different things**, which is what nobody had separated.*
+
+**⚑ THE GUARD IS THE NO-DEFAULT, AND IT IS UNTOUCHED.** *`os.environ.get('NODE','56')` once meant a
+forgetful node **inherited 56's claims** — "the one default a collision gate cannot have is one of the
+colliding parties." **A node that fails to declare itself still fails.** That is the whole protection
+and it is exactly as it was.*
+
+**⛔ THE ALLOWLIST WAS NEVER PART OF IT.** *A node writing `NODE=64` impersonates nobody. What the
+closed tuple added was a **second party's permission to exist**: 57 was added at `r3147`, and 59 and 60
+at `r3573` — **"at 60's routing"** — meaning each had been working while unable to run the gate, and
+each cleared only when someone else edited the code. ***A rule that blocks work and can only be
+cleared by another party is a rule whose enforcement has outlived its reason***, which is a shape this
+corpus has found in itself repeatedly.*
+
+**⛭ THE REVISION.** *The roster is now `corpus/node_roster.txt` — **data, not code** — read by
+`check_claims` and `check_id_bands` alike. **The standing order, Daryl's: if you have a token, add your
+number and go**, one line, in the same commit as your first claim, nothing routed to anybody. Landed at
+the top of `THE_HUB` and at the point of use in `CLAIMS.md`, and the gate's own failure message now
+says it, so the instruction is where the failure is.*
+
+**⛭⛭ AND THE BANDS ARE DERIVED RATHER THAN RESERVED: node $N$ allocates `L-N00..L-N99`.** *Collision-free
+by construction — **two nodes cannot have the same number, so they cannot take the same band** — and
+derivable offline with nothing to negotiate. ***That is what the `L-174` collision and the
+`c54.182/c54.184` duplicate each cost***: in both cases the band existed only AFTER the collision,
+because absent a shared convention both lines take the next integer. The low bands are historical, kept
+verbatim, and new nodes never land there.*
+
+⚠ **AND THE PATCH CAUGHT ITSELF DOING THE VERY THING, WHICH IS RECORDED RATHER THAN TIDIED.** *A first
+draft selected a tree's band by matching the **derived** band names only, so `NODE=54` silently fell
+through to **the observer line's band** — the impersonation this apparatus exists to prevent, arriving
+through the gate meant to prevent it. Found by testing every node rather than the new one, replaced with
+a direct roster lookup that covers the historical bands too, and verified: unset → 56's band unchanged,
+54 → 500–799, 56 → 221–499, 57 → 800–899, 60 → 6000–6099, 64 → 6400–6499.*
+
+⌗ *Node 64 opened here. Verified: registered node runs; **unregistered node still fails, but
+self-clearingly**, its message naming the one line that clears it; and a node with `NODE` unset still
+fails outright.*
+
 ### Revision r3099 — 2026-08-16 (main line). **`PO-14` WORKED: THE SHORTFALL IS A THEOREM, AND THE BUILD THE ROW ASKS FOR WAS DONE AT r2419.**
 
 **⛔⛭⛭ ① THE ROW ASKED FOR SOMETHING ALREADY STANDING (`L-247`).** *`PO-14` reads "THE UNBUILT CHIRAL MEMBER … **Build it** ⇒ extend P11's polarised Gowdy–de Sitter leaf to the unpolarised case", priced at 5 turns and flagged — the only flagged item of the three.* ⇒ ***P11 `sec:unpolarized` does exactly that: the second polarisation restored, the two identified as a wave map into a target of curvature $-1$, the exchanging map shown to have differential of determinant $-1$ so it lies outside the identity component, and a conserved twist $c=Re^{2P}Q_t$ with $c\mapsto-c$.*** ⚠ **And P14's "named in the companion development and not built" is not stale but FALSE-WHEN-WRITTEN:** *`sec:unpolarized` entered at `c01f56c5` (r2419), the sentence at `d929d6bf` (r3006b) — **587 revisions and 825 commits later**, the build commit verified an ancestor of the claim commit with `git merge-base`.* ⌗ ***The register's own warning, three lines above the row: "Look before declaring a build."***

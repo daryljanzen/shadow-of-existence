@@ -6,6 +6,33 @@ job: How the programme lives in a git repository — branch discipline, the regi
 sources: [chat]
 ---
 
+# ⛭⛭⛭ THE STANDING ORDER — **IF YOU HAVE A TOKEN, ADD YOUR NUMBER AND GO** (r6401, Daryl)
+
+***A node registers ITSELF.*** *One line in `corpus/node_roster.txt` — node, band low, band high,
+what you are — **in the same commit as your first claim**. Nobody's permission is required and
+nothing is routed to anybody.*
+
+**⌷ AND YOUR BAND IS YOUR NUMBER × 100.** *Node $N$ allocates `L-N00..L-N99`. **Collision-free by
+construction**, derivable offline by anyone, and there is no reservation to negotiate — which is
+what the `L-174` collision and the `c54.182/c54.184` duplicate both cost, each of them a band that
+existed only AFTER the collision because both lines took the next integer. **Two nodes cannot have
+the same number, so two nodes cannot take the same band.** The low bands are historical and stay
+exactly as they are; new nodes never land there.*
+
+**⚠ WHAT IS KEPT, because the friction was never the guard.** *`check_claims` still has **NO
+DEFAULT**: a forgetful node fails rather than silently becoming 56 and inheriting 56's claims —
+*"the one default a collision gate cannot have is one of the colliding parties."* ***Declaring
+yourself is precisely what that guard wants.*** *A node writing `NODE=64` impersonates nobody.*
+
+**⛔ WHAT IS GONE, and why it had to.** *The roster was a tuple in `check_claims.py`. 57 was added
+at `r3147` and 59 and 60 at `r3573` — **"at 60's routing"**, meaning a node had to ask another node
+for permission to exist **while it could not run the gate at all**. ***A rule that blocks work and
+clears only when a second party acts is a rule whose enforcement has outlived its reason***, and it
+cost this line a turn on arrival before it cost anyone else anything. **The roster is data now, and
+you add yourself to it.**
+
+---
+
 # ⛭⛭ FOUR NODES, FOUR BANDS, AND HOW WORK REACHES THE BOARD — settled r2507
 
 | node | ID band | how its work lands |

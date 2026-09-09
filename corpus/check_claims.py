@@ -42,14 +42,39 @@ SHARED = {
 }
 
 
-NODES = ('54', '56', '57', '59', '60', 'cc54')   # ** r3147: 57 added.  The gate predated this line
-                                    #    and would have made it impersonate another node or fail
-                                    #    forever. **  ** r3573: 59 and 60 added, at 60's routing --
-                                    #    both had been working for a full session while a node
-                                    #    running as itself could not run this gate at all, and it
-                                    #    passed in CI only because the runner sets NODE=ci.  A
-                                    #    roster that omits a working line does not protect it; it
-                                    #    just cannot see it. **
+ROSTER = os.path.join(os.path.dirname(os.path.abspath(__file__)), 'node_roster.txt')
+
+
+def roster():
+    """** r6401: THE ROSTER IS DATA AND A NODE REGISTERS ITSELF. **
+
+    This was a tuple in this file, and 57 was added at r3147 and 59 and 60 at r3573
+    -- "at 60's routing", meaning a node had to ask ANOTHER node for permission to
+    exist while it could not run this gate at all.  ** That blocks work and clears
+    only when a second party acts, which is the shape this corpus keeps finding: a
+    rule whose enforcement outlives its reason. **
+
+    ** WHAT IS KEPT IS THE GUARD, and the allowlist was never it. **  There is still
+    NO DEFAULT (below): a forgetful node fails rather than silently becoming 56 and
+    inheriting 56's claims.  Declaring yourself is exactly what that guard wants --
+    a node writing NODE=64 impersonates nobody.  What is gone is needing someone
+    else to agree that 64 exists.
+
+    ** THE STANDING ORDER: if you have a token, add your number to
+    corpus/node_roster.txt and go. **  One line, your own commit, nothing routed.
+    """
+    if not os.path.exists(ROSTER):
+        return ()
+    out = []
+    for ln in open(ROSTER, encoding='utf-8'):
+        ln = ln.strip()
+        if not ln or ln.startswith('#'):
+            continue
+        out.append(ln.split()[0])
+    return tuple(out)
+
+
+NODES = roster()
 CI = 'ci'   # the runner: no 'me', and rule (3) swept across ALL nodes -- see main()
 
 
@@ -83,13 +108,20 @@ def node():
         sys.stderr.write(
             '  check_claims: NODE is unset.  Set it to one of %s -- this gate cannot\n'
             '  guess, and defaulting to any of them makes a forgetful node impersonate that one.\n'
+            '  Not on the list?  Add one line to corpus/node_roster.txt and go -- a node\n'
+            '  registers ITSELF and nobody has to agree that you exist (r6401).\n'
             '  (CI sets NODE=ci: no working tree of its own, and it sweeps EVERY node\'s claims.)\n'
             % ', '.join(NODES))
         sys.exit(2)
     if v == CI:
         return CI
     if norm(v) not in NODES:
-        sys.stderr.write('  check_claims: NODE=%r is not one of %s\n' % (v, ', '.join(NODES)))
+        sys.stderr.write(
+            '  check_claims: NODE=%r is not registered.  Known: %s\n'
+            '  ** ADD YOURSELF: one line in corpus/node_roster.txt -- node, band_lo,\n'
+            '  band_hi, what you are -- in the same commit as your first claim.  A\n'
+            '  node registers itself; nothing is routed to anybody (r6401). **\n'
+            % (v, ', '.join(NODES)))
         sys.exit(2)
     return norm(v)
 

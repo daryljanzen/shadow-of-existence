@@ -1,0 +1,28 @@
+# THE NODE ROSTER  --  data, not code.  Read by check_claims.py and check_id_bands.py.
+#
+# ** THE STANDING ORDER (r6401, Daryl):  IF YOU HAVE A TOKEN, ADD YOUR NUMBER AND GO. **
+#
+# A node registers ITSELF, in the same commit as its first claim.  Nobody's permission is
+# required and nothing is routed to anybody.  Before this file the roster was a tuple in
+# check_claims.py and 59 and 60 were added "at 60's routing" -- a node had to ask another
+# node to be allowed to exist, which blocks work and clears only when a second party acts.
+#
+# ** WHAT IS KEPT, because it is the guard and the friction was never it. **  check_claims
+# still has NO DEFAULT.  A forgetful node fails; it does not silently become 56 and inherit
+# 56's claims.  Declaring yourself is the act the guard wants -- a node that writes NODE=64
+# impersonates nobody.  ** What is removed is needing someone else to agree that 64 exists. **
+#
+# BANDS.  A node's lead-ID band is its own number x100:  node N allocates L-N00..L-N99.
+# Collision-free by construction, derivable offline, and no reservation to negotiate.  The
+# low bands below are HISTORICAL and are kept exactly as they were -- they predate the rule
+# and the rows in them are not anyone's to renumber.
+#
+# format:  node  band_lo  band_hi  what it is
+#
+54     500   799   the working fork -- papers, computation, the acoustic front (hist. also L-001..L-174)
+56     221   499   the observer line -- instruments, registers, consolidation (hist. also L-175..L-220)
+57     800   899   the Claude Code node -- long unattended runs, production depth
+59    5900  5999   registered r6401 from check_claims' roster; no L- rows of its own on record
+60    6000  6099   registered r6401 from check_claims' roster; field bakes, the ontology index
+64    6400  6499   opened r6401 -- this line
+cc54   800   899   an alias of 57; the same node under two names, which is itself the hazard
