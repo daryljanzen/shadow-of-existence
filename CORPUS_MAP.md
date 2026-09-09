@@ -146,6 +146,51 @@ sources: [cowork, chat]
 
 
 
+### Revision r6437 — 2026-09-09 (node 64). **The entropy question is not costless, and `p0` recorded it as being: the no-free-constants claim has a stake in which branch holds.**
+
+**⌗ `p0` DECLINES, AND SAYS THE DECLINATION COSTS NOTHING.** *"Whether $S=A/4$ carries to a cosmological
+horizon on this reading is a question this paper does not settle ... **were it to fail to carry, that would
+be a result and not a gap**." ***That declination is load-bearing for the counterterm ledger, and was not
+known to be.***
+
+**⛭ WHAT A TOPOLOGICAL TERM ACTUALLY DOES.** *It contributes **no field equation** --- `P10`'s own words of
+Gauss--Bonnet --- so its coefficient is not read off any dynamics. Its one remaining observable is the
+**Wald entropy**, where the contribution is itself topological, going as the Euler characteristic of the
+horizon cross-section and so, for a $2$-sphere, an **area-independent constant shift**. ⌗ *And its finite
+part is not fixed by the field content: the divergence's coefficient is --- the $a$-type partner of the
+$c$-type now carried at $1/60$ --- but renormalising it needs a condition, and **that condition is a free
+dimensionless constant whose only observable is that shift**.*
+
+**⛭⛭ AND THE LEDGER HAS NO ABSORBER FOR IT.** *`p0` absorbs a constant **vacuum energy** into the one
+observed curvature, with no bare-versus-vacuum split --- its own mechanism. ***There is no corresponding
+absorber for a constant entropy shift***: $S=\pi(\alpha/\ell_P)^{2}$ is fixed once $\alpha$ is, $\ell_P$
+being a gauge, and a shift needs a new constant.*
+
+⇒ **SO THE TWO BRANCHES DO NOT COST THE SAME.** *If $S=A/4$ **carries**, the sector acquires **a free
+dimensionless constant it cannot absorb --- the first one**, against a ledger stated to spend none. If it
+**fails**, the coefficient has no home and the failure is the result `p0` already anticipates.*
+
+**⛭⛭⛭ THEREFORE THE NO-FREE-CONSTANTS CLAIM, TAKEN SERIOUSLY, PREDICTS THAT $S=A/4$ DOES NOT CARRY.**
+*Not an argument that it does not --- ***a statement that the programme has a stake in a branch it recorded
+as neutral***. ⌗ And `p0`'s own reason for taking the temperature and never the entropy already anticipates
+it: $T=1/2\pi\alpha$ is **one-register**; $S$ is a count taken **across** the register split; and the
+cross-register quantity is precisely the one that would test the ledger.*
+
+⌗ *Propagated into `p0` `sec:ledger` in the same turn, with Jacobson--Myers cited where the one import
+lands.*
+
+⚠ **AND TWO INSTRUMENT FAILURES OF MINE, both caught by gates.** *(i) A guard read
+`'JacobsonMyers1993' not in s` **after** the same string had inserted the `\cite` into `s`, so the bibitem
+never went in --- the compile caught it. (ii) I regenerated `appendix_receipts_P17.tex` **under the wrong
+scope** (`p0` rather than `P17`), and `check_appendix_current` reported it would write **-65 lines** ---
+***which is exactly the case that gate warns about, "running the fix is not automatically right"***, arriving
+because I ran a fix without reading which scope the gate maps that file to. Regenerated correctly; both
+rails match.*
+
+⌗ *And a third split receipt directory, this one a **triple**: `P17_geometric_core`,
+`P17_geometric_core_paper`, `p0_geometric_core`. The stray single-file one I had just created was folded
+into the canonical sixteen-row directory and removed. The systemic finding from `r6405` stands and grows.*
+
 ### Revision r6435 — 2026-09-09 (node 64). **The counterterm room surveyed: `PO-43`'s two replacement questions are one answered and one not independent, and the room's remaining openings drop from three to two.**
 
 **⌗ `r4545` SAID "TWO INDEPENDENT QUESTIONS REPLACE IT". NEITHER SURVIVES AS STATED.**
