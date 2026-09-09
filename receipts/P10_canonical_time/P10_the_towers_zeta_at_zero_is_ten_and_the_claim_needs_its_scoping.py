@@ -214,16 +214,36 @@ def main():
     print('  PART 6 -- ⛔ WHAT THIS DOES TO THE LEDGER CLAIM')
     print('  ' + '=' * 74)
     syn = paper('CR_synthesis.tex')
-    check('⓺ CR_synthesis sec:ledger makes the prediction in its own words -- the coefficient '
-          'vanishes -- and names the consequence if it does not',
-          'makes a prediction about a computable number' in syn
-          and 'that coefficient vanishes' in syn
+    # ⛭⛭ RE-PINNED r4572, AND THE FAILURE WAS THIS FILE SUCCEEDING.  The two checks here pinned
+    #   `sec:ledger`'s PRE-COMPUTATION wording -- "that coefficient vanishes", "needs the scoping" --
+    #   and `r4537` rewrote exactly those sentences BECAUSE of this receipt: the paper now records
+    #   the computed result in its own voice and carries the scoping rather than being owed it.
+    #     ⇒ *** A receipt that argues for a change and pins the unchanged state fails when it wins.
+    #       ***  Fourth instance in this line's work -- `C19`, `L560/P1`, `L257/V1` at r3962 and
+    #       r4548, and now this one -- and the repair is the same each time: assert the INVARIANT,
+    #       not the stance the paper held before it moved.
+    #   ⌈ ** And the invariant available here is STRONGER than what was pinned. **  The paper now
+    #     quotes the two numbers, so this receipt can check that the PAPER'S QUOTED VALUES EQUAL THE
+    #     ONES IT COMPUTES -- which guards the prose against drifting from the computation in either
+    #     direction, and could not be asserted at all while the paper carried a prediction instead.
+    check('⓺ CR_synthesis sec:ledger no longer predicts, it RECORDS: the number has been computed '
+          'and does not vanish, and the mode sums spend one dimensionless constant',
+          'the number has been computed, and it does not vanish' in syn
           and 'the mode sums spend one dimensionless constant' in syn)
-    check('⓺ᵇ and it names the repair itself: the claim needs the scoping sec:frontier already '
-          'applies locally',
-          'needs the scoping' in syn)
-    check('⓺ᶜ *** THE MEASURED COEFFICIENT IS NON-ZERO, SO THE SCOPING IS OWED. *** The free static '
-          'tower spends one dimensionless constant.',
+    check(f'⓺ᵇ *** and the values the PAPER quotes are the values this receipt COMPUTES: zeta(0) = '
+          f'{z0} and the zero-point sum\'s log-scale coefficient = {res} ***  -- so the prose cannot '
+          f'drift from the computation without failing here',
+          f'the spectral zeta at zero is ${z0}$ exactly' in syn
+          and 'log-scale coefficient is $39/4$' in syn
+          and z0 == 10 and res == sp.Rational(39, 4))
+    check('⓺ᵍ and the scoping the earlier wording said was OWED is now CARRIED -- the ledger\'s '
+          'statement is about the geometric constants and not about the tower\'s regularisation',
+          'the claim carries the scoping' in syn
+          and "not about the tower's regularisation" in syn.replace('\\emph{', ''))
+    check('⓺ᶜ *** AND THE MEASURED COEFFICIENT IS WHAT PUT IT THERE: non-zero, so the free static '
+          'tower spends one dimensionless constant. *** ⌗ This check read "the scoping is OWED" '
+          'until r4572; it says CARRIED now because the paper moved, which is the outcome this '
+          'receipt argued for and not a weakening of it.',
           z0 != 0)
 
     # ============================================================ (6b) what the log costs
@@ -269,10 +289,10 @@ def main():
     print('       curvature-squared coupling is not an entry in this framework\'s ledger".')
     print('    On the free static tower -- physical TT modes only, no ghosts, constraints already')
     print('    solved, which is the most favourable case the construction offers -- the mode sums')
-    print('    spend one dimensionless constant, and sec:ledger\'s claim needs the scoping its own')
-    print('    sentence names.  ⌗ FREE and STATIC: the coupled and non-adiabatic tower is not')
-    print('    computed here and could still return zero; what is excluded is the claim holding')
-    print('    trivially.')
+    print('    spend one dimensionless constant -- and sec:ledger now CARRIES the scoping its own')
+    print('    sentence named, quoting both numbers, which this receipt checks against what it')
+    print('    computes.  ⌗ FREE and STATIC: the coupled and non-adiabatic tower is not computed')
+    print('    here and could still return zero; what is excluded is the claim holding trivially.')
     print('  ' + '=' * 74)
     print()
     return 0
