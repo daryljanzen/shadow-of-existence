@@ -324,6 +324,21 @@
 \emph{Computes:} numeric on random complex points: R,K,C on bead; \textbar{}mass\textbar{}/species/FS-wings; load-bearing NEGATIVE R o K blind to Q sign
  \emph{Bound:} scope + not claimed stated
 \ \emph{Run:} \texttt{python3 receipts/P13\_boundary\_paper/P13\_A3\_factorization.py}
+\item[\label{rcpt:P08_the_closure_is_the_constitutive_relation}\texttt{P08\_the\_closure\_is\_the\_constitutive\_relation}]\hfill\textsf{[OK]}\\
+\textit{sec:open} \ (the spherical class CLOSES: the contracted Bianchi identity is entailed by the cut's own geometry and fixes the angular component from the radial pair, and a constitutive relation closes the system to the TOV pair in the operator's own variables -- so what the construction does not supply is the equation of state, which general relativity does not supply either). 
+\emph{Computes:} symbolic on the general static spherical cut; load-bearing NEGATIVES: a non-zero Bianchi residual breaks the count, a lapse equation not reducing to Schwarzschild breaks the closure
+ \emph{Bound:} the equation of state itself is NOT established and is the input, here and in general relativity alike
+\ \emph{Run:} \texttt{python3 receipts/P8\_slicing\_operator/P08\_the\_closure\_is\_the\_constitutive\_relation.py}
+\item[\label{rcpt:P13_the_compact_face_is_odd_dimensional}\texttt{P13\_the\_compact\_face\_is\_odd\_dimensional}]\hfill\textsf{[OK]}\\
+\textit{sec:wall} \ (the compact face is S\textasciicircum{}5 and ODD-dimensional, so the Atiyah-Hirzebruch equivariant index is vacuous there (the index it kills is Z2-graded); the conclusion holds instead by Lichnerowicz, which is dimension-independent and gives EMPTY rather than vector-like -- no zero modes at all on the round face). 
+\emph{Computes:} symbolic; S\textasciicircum{}4 run as CONTROL (even-dimensional, must satisfy the same spectral identities or the normalisation is wrong); Friedrich bound saturation is the calibration
+ \emph{Bound:} the TWISTED case is not settled: a homogeneous bundle's curvature can be negative and whether it reaches -R/4 is open
+\ \emph{Run:} \texttt{python3 receipts/P13\_boundary\_paper/P13\_the\_compact\_face\_is\_odd\_dimensional.py}
+\item[\label{rcpt:P13_the_one_scale_forbids_the_isometry_route}\texttt{P13\_the\_one\_scale\_forbids\_the\_isometry\_route}]\hfill\textsf{[OK]}\\
+\textit{sec:wall} \ (the face carries ONE scale, alpha = sqrt(3/Lambda), so any mass read off its geometry is a multiple of hbar c/alpha \textasciitilde{} 1.3e-33 eV -- which makes P14's external mass spectrum a REQUIREMENT of the one-scale ledger rather than a concession). 
+\emph{Computes:} symbolic + physical units; carries its own WITHDRAWAL of a Kaluza-Klein reading the corpus forbids
+ \emph{Bound:} bounded to the isometry-realised route; does not touch colour placed by hand, the flux routes, or the universal claim
+\ \emph{Run:} \texttt{python3 receipts/P13\_boundary\_paper/P13\_the\_one\_scale\_forbids\_the\_isometry\_route.py}
 \item[\label{rcpt:P13_conjugation_parity}\texttt{P13\_conjugation\_parity}]\hfill\textsf{[OK]}\\
 \textit{prop:conjugation-parity} \ (mass-reflection R=gamma\textasciicircum{}5 (grades chirality); mass term ODD, charge EVEN under r->-r; P=g1g2g3 flips chirality; R!=P (same residue, opposite parity-faces)). 
 \emph{Computes:} cold read: parity of f(r) terms; Clifford R=g5 commutes / P anticommutes with g5; guards R!=P
