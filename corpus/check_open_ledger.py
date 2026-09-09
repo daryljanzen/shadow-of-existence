@@ -176,7 +176,39 @@ def main():
         # COMMENTS and named on stdout, for a reader to re-home deliberately.  The looking still
         # has to be written down; this only stops the looking already done from being deleted.
         orphans = [k for k in led if k not in cur and led[k][1] != 'UNVERDICTED']
+        # ⛔⚭ r4548 (node 60): ** AND THE CARRY-FORWARD ABOVE DUPLICATED WHAT IT PRESERVED. **
+        #   `lines` starts as EVERY comment line of the old file -- which includes the retired rows,
+        #   the block header and its four-line rubric -- and a fresh block was then APPENDED.  So a
+        #   row that orphans, is re-homed onto the same id, and orphans AGAIN came back TWICE, under
+        #   TWO headers, with the rubric doubled.
+        #     ⇒ *Measured, not argued (r4548): re-live `114e4d9ede` in a scratch copy and rebuild --
+        #       orphan rows 18 -> 19, copies of that id 1 -> 2, block headers 1 -> 2.  The standing
+        #       instance is `d69ba0f0a5`, carried twice byte-for-byte since a past reader tidied the
+        #       second header by hand and left the second row.*
+        #   ⌈ WHICH COPY WINS: the NEW one.  A second orphaning means a reader put the row back live
+        #     and the paper moved again, so the carried line is the OLDER record.  This is not
+        #     auto-carrying a verdict -- it is the same id keeping its own newer note.
+        #   ⌗ ** Nothing is reordered and no carried line is moved. **  Retired rows accumulate
+        #     hand-written notes ABOVE them (see `114e4d9ede`, r4548); rebuilding the block from
+        #     scratch would strand every one of those from the row it explains.
+        orphans_written = False
         if orphans:
+            _row = re.compile(r'#\s*([0-9a-f]{10})\s*\|')
+            _carried = {}
+            for _n, _l in enumerate(lines):
+                _m = _row.match(_l)
+                if _m:
+                    _carried.setdefault(_m.group(1), _n)
+            _fresh = {k: '# ' + f'{k} | {led[k][0]} | {led[k][1]} | {led[k][2]}' for k in orphans}
+            for k in sorted(_fresh):
+                if k in _carried:
+                    lines[_carried[k]] = _fresh.pop(k)   # ** IN PLACE ** -- its note sits above it
+            _at = max(_carried.values(), default=None)
+            if _fresh and _at is not None:
+                lines[_at + 1:_at + 1] = [_fresh[k] for k in
+                                          sorted(_fresh, key=lambda k: (led[k][0], k))]
+            orphans_written = _at is not None
+        if orphans and not orphans_written:
             lines.append('')
             lines.append('# ── ORPHANED BY A REWORDING (r4022) ' + '─' * 44)
 # ── ⚠ r4517: A REWORDING CAN DROP A LIVE CLAIM OUT OF THIS GATE'S REACH ENTIRELY, and the
@@ -205,6 +237,36 @@ def main():
         return 0
 
     print(f'  papers hold {len(cur)} distinct qualification(s); ledger holds {len(led)}.')
+    # ⛭ ADDED r4548 (node 60) -- ⓸ ** NO ID TWICE IN THE RETIRED BLOCK, AND NONE BOTH LIVE AND
+    #   RETIRED. **  `read_ledger` skips comment lines, so *** every gate above this line is blind
+    #   to the retired block entirely *** -- the same hole `check_protected_dupes` was built for at
+    #   c54.224 and stated in its own words: "a per-row check cannot see a whole-file property".
+    #     ⇒ *The standing instance, found r4548: `d69ba0f0a5` sat on TWO retired rows, substance-
+    #       identical (claims equal after `rstrip`, notes byte-equal), left by the pre-r4548
+    #       `--rebuild` re-emitting a re-orphaned id beside its carried copy.  It had been there at
+    #       least twenty revisions with every gate green.*
+    #   ⌈ ** DETECT, DO NOT REPAIR. **  Two copies may disagree, and choosing between them is a
+    #     reading.  `check_protected_dupes` refuses the same guess for the same reason.
+    _rrow = re.compile(r'#\s*([0-9a-f]{10})\s*\|')
+    _ret = {}
+    for _l in open(LEDGER, encoding='utf-8'):
+        _m = _rrow.match(_l)
+        if _m:
+            _ret.setdefault(_m.group(1), []).append(_l.rstrip())
+    _twice = sorted(k for k, v in _ret.items() if len(v) > 1)
+    _both = sorted(k for k in _ret if k in led)
+    print(f'  retired rows: {sum(len(v) for v in _ret.values())} over {len(_ret)} distinct id(s).')
+    if _twice or _both:
+        print()
+        for k in _twice:
+            print(f'    [FAIL] {k} appears on {len(_ret[k])} retired rows -- read them and keep one')
+            print(f'           "{_ret[k][0][2:90]}"')
+        for k in _both:
+            print(f'    [FAIL] {k} is BOTH live and retired -- a row cannot be in two states')
+        print()
+        print('    ⛔ A RETIRED ROW IS A RECORD.  Two copies of one id means two records, and no')
+        print('       gate below reads them: `read_ledger` skips comments.')
+        return 1
     new = sorted(set(cur) - set(led))
     gone = sorted(set(led) - set(cur))
     unv = [k for k, v in led.items() if v[1] == 'UNVERDICTED']

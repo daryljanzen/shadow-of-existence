@@ -105,9 +105,37 @@ def main():
     #     receipt that argues for a change and pins the unchanged state fails when it succeeds.
     cur = ol.scan()
     led = ol.read_ledger()
+    # ⛭ ADDED r4548 -- ONE READER FOR A ROW, LIVE *OR* RETIRED, because three call sites below
+    #   each assumed liveness and one of them said so by CRASHING.  ** Retirement in this ledger
+    #   COMMENTS THE LINE OUT under `ORPHANED BY A REWORDING`; it does not delete it, exactly so
+    #   the verdict and its note survive the rewording. **  ⇒ *A reworded row still has a recorded
+    #   reading, and every claim this file makes is about the reading, not about which block of
+    #   the file the line sits in.*
+    _ORPH = {}
+    for _l in open(os.path.join(ROOT, 'corpus', 'open_ledger.txt'), encoding='utf-8'):
+        _m = re.match(r'#\s*([0-9a-f]{10})\s*\|', _l)
+        if _m and _l.count('|') >= 3:
+            _p = [x.strip() for x in _l.lstrip('# ').split('|', 3)]
+            _ORPH.setdefault(_p[0], (_p[1], _p[2], _p[3]))
+
+    def row(k):
+        """(verdict, note, 'live'|'retired') for a ledger row -- (None, None, None) if absent."""
+        for i, v in led.items():
+            if i.startswith(k):
+                return v[1], v[2], 'live'
+        if k in _ORPH:
+            return _ORPH[k][1], _ORPH[k][2], 'retired'
+        return None, None, None
+
     got = {k: next((v[1] for i, v in led.items() if i.startswith(k)), None) for k in FIVE}
     scanned = {k: any(i.startswith(k) for i in cur) for k in FIVE}
-    closed = sorted(k for k in FIVE if not scanned[k])
+    # ⛭ r4548: `not scanned` used to mean one thing and now means two, and the difference is the
+    #   whole of this revision.  A claim can leave the papers' scan by being ** WITHDRAWN ** (no
+    #   row anywhere) or by being ** REWORDED ** (row retired, verdict intact, object re-raised
+    #   under a new id).  Collapsing them read a rewording as a closure.
+    gone = sorted(k for k in FIVE if not scanned[k])
+    closed = [k for k in gone if row(k)[2] is None]
+    reworded = [k for k in gone if row(k)[2] == 'retired']
     check(f'⓵ᵇ each of the five is EITHER still a qualification the papers hold, by the gate\'s own '
           f'scan, OR closed since -- and none is half in: {scanned}',
           all(scanned[k] == (got[k] is not None) for k in FIVE))
@@ -121,13 +149,31 @@ def main():
     check('⓵ᶜᐟ ⛭ and the row this file is ABOUT -- P07\'s "only the ultraviolet definition of the '
           'mode sums remains open here" -- reads REGISTERED, reclassified from NAMED-UNBUILT at '
           'r3872 because it has a home, and the home is PO-23',
-          got['114e4d9ede'] == 'REGISTERED'
-          and 'PO-23' in next(v[2] for i, v in led.items() if i.startswith('114e4d9ede')))
+          row('114e4d9ede')[0] == 'REGISTERED' and 'PO-23' in (row('114e4d9ede')[1] or ''))
+    # ⛔⛭ r4548 -- AND THE ROW WAS RETIRED AT THIS REVISION, WITH ITS OWN SENTENCE UNTOUCHED.
+    #   `r4525` rewrote the sentence AFTER it.  `check_open_ledger.scan()` cuts a claim at the
+    #   next `'. '` -- a period followed by a SPACE -- and this row's sentence ends
+    #   `...remains open here.}}`, a period followed by BRACES.  So the hashed 120 characters ran
+    #   ON into the next sentence: `'...remains open here.}} This is t'`.  ** Rewording the
+    #   FOLLOWING sentence moved THIS row's id. **
+    #   ⇒ *The object did not go anywhere: it is raised again as `38005b708a`, live and REGISTERED
+    #     at PO-23, and the r4525 note on that row restates it.*  What is checked is the
+    #     conservation -- exactly one of the pair is live, and it is the one the papers raise.
+    _PAIR = ('114e4d9ede', '38005b708a')
+    check('⓵ᶜᐢ ⛭ and the retirement did not lose the object -- exactly one of '
+          f'{_PAIR} is LIVE and it is the one the papers\' own scan raises, and it reads '
+          'REGISTERED naming PO-23: so what happened at r4525 was a REWORDING, not a withdrawal',
+          [k for k in _PAIR if row(k)[2] == 'live'] == [k for k in _PAIR if k in cur]
+          and row('38005b708a')[0] == 'REGISTERED'
+          and 'PO-23' in (row('38005b708a')[1] or ''))
     check(f'⛭ and the other {len(closed)} were CLOSED rather than left unread -- {closed} -- so the '
-          f'scan no longer raises them at all: r3803 computed the straddle and r3811 closed five '
-          f'stale sentences, both AFTER this file named them',
+          f'scan no longer raises them at all AND no row survives them anywhere: r3803 computed '
+          f'the straddle and r3811 closed five stale sentences, both AFTER this file named them; '
+          f'while {reworded} left the scan a THIRD way, by being reworded, its row retired with '
+          f'its verdict and note intact',
           closed == ['dc0202b02d', 'f36eef9790']
-          and all(got[k] is None for k in closed))
+          and all(row(k) == (None, None, None) for k in closed)
+          and reworded == ['114e4d9ede'])
     unv = [k for k, v in led.items() if v[1] == 'UNVERDICTED']
     check(f'⓵ᵈ and nothing is left UNVERDICTED: {len(unv)}', unv == [])
 
@@ -193,7 +239,22 @@ def main():
           'ultraviolet definition of the tower sums---a different thing from a residual freedom in '
           'the quantization at the boundary' in re.sub(r'\s+', ' ', p10)
           and 'shared with every interacting field theory' in re.sub(r'\s+', ' ', p10))
-    entry = next(v[2] for i, v in led.items() if i.startswith('114e4d9ede'))
+    # ⛔⛭ AMENDED r4548, AND IT *** CRASHED *** RATHER THAN FAILING -- the third receipt in this
+    #    line's work with a bare `next(...)`/`led[id]` over the ledger and no default.  ** r4525
+    #    corrected the sentence FOLLOWING this row's claim, which moved the row's hash, so the row
+    #    left the live set and this line raised StopIteration before the verdict. **
+    #    ⇒ *The claim here is that THE RECONCILIATION IS WRITTEN INTO THE LEDGER ENTRY -- not that
+    #      the row is live.*  A retired row keeps its note, by design: retirement comments the line
+    #      out, it does not delete it.  So the entry is looked for in the live rows AND in the
+    #      retired block, and its ABSENCE fails here with a reason instead of a traceback.
+    _ENTRY_ID = '114e4d9ede'
+    entry, _where = (row(_ENTRY_ID)[1] or ''), row(_ENTRY_ID)[2]
+    if _where != 'live':
+        print(f'    ⌗ {_ENTRY_ID} is {_where.upper() if _where else "ABSENT"}, not live -- read '
+              f'from the ledger\'s orphan block, where retirement preserves the row and its note '
+              f'rather than deleting them ({len(entry)} characters)')
+    check(f'⓷ᶜ⁰ the {_ENTRY_ID} entry is READABLE at all, live or retired -- so what follows is a '
+          f'statement about its text and not about an empty string', len(entry) > 200)
     # ** ⛭ RE-PINNED r3962, AND THE OLD NOTE WAS RETIRED FOR BEING STALE -- BY NAME, IN THIS ROW. **
     # ** The entry used to reconcile via PO-6's clause ③ warrant ("MET, NOT OWED" / "CR ADDS NO
     # ** BURDEN OF ITS OWN").  r3871 marked that warrant SUPERSEDED and r3872 rewrote the note, which
