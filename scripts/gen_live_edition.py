@@ -113,6 +113,9 @@ _SYM = {
     'times': '\u00d7', 'pm': '\u00b1', 'to': '\u2192', 'mapsto': '\u21a6',
     'leftrightarrow': '\u2194', 'in': '\u2208', 'infty': '\u221e',
     'approx': '\u2248', 'simeq': '\u2243', 'sim': '\u223c', 'cong': '\u2245',
+    'rightarrow': '\u2192', 'longrightarrow': '\u27f6', 'leftarrow': '\u2190',
+    'Rightarrow': '\u21d2', 'Leftrightarrow': '\u21d4', 'mid': '|',
+    'bigcup': '\u22c3', 'bigcap': '\u22c2', 'cup': '\u222a', 'cap': '\u2229',
     'neq': '\u2260', 'ne': '\u2260', 'equiv': '\u2261', 'perp': '\u22a5',
     'langle': '\u27e8', 'rangle': '\u27e9', 'nabla': '\u2207', 'ast': '*',
     'geq': '\u2265', 'ge': '\u2265', 'leq': '\u2264', 'le': '\u2264',
@@ -152,10 +155,12 @@ def _script(t):
     underscore and caret, which is what the abstracts and the introduction were
     showing.  `<sup>` and `<sub>` render every character, so the coverage
     question does not arise."""
+    # .strip(): the wrapper-unwrap leaves a separator space, and inside a
+    # script that shows as 'H_ leaf' rather than 'H_leaf'.
     t = re.sub(r'\^\{([^{}]*)\}|\^(\S)',
-               lambda m: '<sup>' + (m.group(1) or m.group(2)) + '</sup>', t)
+               lambda m: '<sup>' + (m.group(1) or m.group(2)).strip() + '</sup>', t)
     return re.sub(r'_\{([^{}]*)\}|_(\S)',
-                  lambda m: '<sub>' + (m.group(1) or m.group(2)) + '</sub>', t)
+                  lambda m: '<sub>' + (m.group(1) or m.group(2)).strip() + '</sub>', t)
 
 
 _NEG = {'subset': '\u2284', 'supset': '\u2285', 'in': '\u2209', 'ni': '\u220c',
@@ -198,12 +203,19 @@ def mathspan(t):
     """`$...$` -> readable Unicode, using the same table the abstracts use."""
     # Thin-space and spacing macros are punctuation, not letters, so the
     # macro-name rule never saw them and they reached the page as `\,`.
+    t = t.replace('\\{', '\x01').replace('\\}', '\x02')
+    # Escaped literals: the backslash is markup, the character is the content.
+    for _c in '%$&#_':
+        t = t.replace('\\' + _c, _c)
     t = re.sub(r'\\[,;:!>]|\\ (?=\S)', ' ', t)
     t = re.sub(r'\\(?:qquad|quad|thinspace|;|,)\b', ' ', t)
     t = _prep(t)
     t = re.sub(r'\\[dt]?frac\{([^{}]*)\}\{([^{}]*)\}', r'\1/\2', t)
     for _ in range(3):
-        t = re.sub(r'\\(?:' + '|'.join(_UNWRAP) + r')\{([^{}]*)\}', r'\1', t)
+        # A separator is kept for the same reason the bare form keeps one:
+        # '\\in\\mathbb{R}' unwrapped in place becomes '\\inR', an unknown macro,
+        # and the membership sign is lost with it.
+        t = re.sub(r'\\(?:' + '|'.join(_UNWRAP) + r')\{([^{}]*)\}', r' \1', t)
     # \mathbb Z with no braces: take the next token as the argument, or the
     # wrapper's trailing space detaches it -- 'Z 2' instead of 'Z2'.
     # The wrapper name must END here: without the boundary, '\\times\\mathbb Z'
@@ -221,7 +233,9 @@ def mathspan(t):
     t = _fixspace(t)
     # sinh^{2/3}: the script belongs to the function name, so no space before it
     t = re.sub(r'\s+(<su[pb]>)', r'\1', t)
-    return re.sub(r'\s+', ' ', t.replace('{', '').replace('}', '')).strip()
+    t = t.replace('{', '').replace('}', '')
+    t = t.replace('\x01', '{').replace('\x02', '}')
+    return re.sub(r'\s+', ' ', t).strip()
 
 
 def detex(t):
@@ -237,7 +251,10 @@ def detex(t):
     # \tfrac{a}{b} -> a/b, then unwrap styling macros, then map symbols.
     t = re.sub(r'\\[dt]?frac\{([^{}]*)\}\{([^{}]*)\}', r'\1/\2', t)
     for _ in range(3):
-        t = re.sub(r'\\(?:' + '|'.join(_UNWRAP) + r')\{([^{}]*)\}', r'\1', t)
+        # A separator is kept for the same reason the bare form keeps one:
+        # '\\in\\mathbb{R}' unwrapped in place becomes '\\inR', an unknown macro,
+        # and the membership sign is lost with it.
+        t = re.sub(r'\\(?:' + '|'.join(_UNWRAP) + r')\{([^{}]*)\}', r' \1', t)
     t = re.sub(r'\\([a-zA-Z]+)\s*',
                lambda m: _SYM.get(m.group(1),
                                   m.group(1) + ' ' if m.group(1) in _WORDS

@@ -81,10 +81,15 @@ def inline(t, nums, labels):
     # A display equation can sit INSIDE a theorem or a proof, and those blocks
     # are handed here whole.  Without this, thirteen of P3's twenty-eight
     # equations reached the page as raw \begin{equation}.
+    def _disp(inner):
+        # A multi-line display breaks at \\ ; running the lines together put a
+        # three-part decomposition on one line with no way to see the parts.
+        inner = re.sub(r'\\label\{[^}]*\}', '', inner)
+        parts = [x for x in re.split(r'\\\\\\\\', inner) if x.strip()]
+        return ('<div class="eq">' + '<br>'.join(
+            mathspan(x.replace('&', '')) for x in parts) + '</div>')
     t = re.sub(r'\\begin\{(equation|align|gather)\*?\}(.*?)\\end\{\1\*?\}',
-               lambda m: '<div class="eq">' +
-               mathspan(re.sub(r'\\label\{[^}]*\}', '', m.group(2))) + '</div>',
-               t, flags=re.S)
+               lambda m: _disp(m.group(2)), t, flags=re.S)
     t = re.sub(r'\$\$(.+?)\$\$|\\\[(.+?)\\\]',
                lambda m: '<div class="eq">' +
                mathspan(m.group(1) or m.group(2)) + '</div>', t, flags=re.S)
@@ -255,7 +260,8 @@ def convert(paper):
             kind = m.group(1)
             counts[kind] = counts.get(kind, 0) + 1
             note = (' \u2014 ' + m.group(2)[1:-1]) if m.group(2) else ''
-            blk, i = [], i + 1
+            rest = st[m.end():].strip()
+            blk, i = ([rest] if rest else []), i + 1
             while i < len(lines) and rf'\end{{{kind}}}' not in lines[i]:
                 blk.append(lines[i])
                 i += 1
@@ -271,7 +277,8 @@ def convert(paper):
 
         if st.startswith(r'\begin{proof}'):
             flush(buf)
-            blk, i = [], i + 1
+            rest = st[len(r'\begin{proof}'):].strip()
+            blk, i = ([rest] if rest else []), i + 1
             while i < len(lines) and r'\end{proof}' not in lines[i]:
                 blk.append(lines[i])
                 i += 1
@@ -293,8 +300,10 @@ def convert(paper):
             lb = re.search(r'\\label\{([^}]*)\}', txt)
             aid = f' id="{lb.group(1)}"' if lb else ''
             txt = re.sub(r'\\label\{[^}]*\}', '', txt)
+            parts = [x for x in re.split(r'\\\\\\\\', txt) if x.strip()]
             out.append(f'<div class="eqwrap"{aid}><div class="eq">'
-                       + mathspan(txt) + f'</div><span class="eqno">({eqn})</span></div>')
+                       + '<br>'.join(mathspan(x.replace('&', '')) for x in parts)
+                       + f'</div><span class="eqno">({eqn})</span></div>')
             continue
 
         if st.startswith(r'\begin{figure}'):
