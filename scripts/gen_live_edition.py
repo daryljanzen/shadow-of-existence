@@ -90,7 +90,8 @@ def title_of(stem):
     if not m:
         return None
     t = re.sub(r'\\\\|\s+', ' ', m.group(1))
-    t = re.sub(r'\$([^$]*)\$', r'<code>\1</code>', t)   # $r=0$ leaked before
+    t = re.sub(r'\$([^$]*)\$',
+               lambda m: '<span class="m">' + _script(m.group(1)) + '</span>', t)
     t = re.sub(r'\\[a-zA-Z]+\{?', '', t).replace('}', '')
     t = t.replace('---', '\u2014').replace('--', '\u2013')
     return re.sub(r'\s+', ' ', t).strip()
@@ -142,18 +143,19 @@ _SUB = {'0':'\u2080','1':'\u2081','2':'\u2082','3':'\u2083','4':'\u2084','5':'\u
 
 
 def _script(t):
-    """x^2 -> x\u00b2 and r_0 -> r\u2080 where a character exists; otherwise the
-    marker is kept, because dropping it changes the mathematics."""
-    def up(m):
-        b = m.group(1) or m.group(2)
-        return ''.join(_SUP.get(c, '') for c in b) if all(c in _SUP for c in b) \
-            else '^' + b
-    def dn(m):
-        b = m.group(1) or m.group(2)
-        return ''.join(_SUB.get(c, '') for c in b) if all(c in _SUB for c in b) \
-            else '_' + b
-    t = re.sub(r'\^\{([^{}]*)\}|\^(\w)', up, t)
-    return re.sub(r'_\{([^{}]*)\}|_(\w)', dn, t)
+    """x^2 -> x<sup>2</sup>, r_h -> r<sub>h</sub>.
+
+    ** HTML tags rather than Unicode superscript characters. **  Unicode has
+    superscripts for the digits and a handful of letters and NOTHING for most of
+    the alphabet -- no superscript b, c, d, g, q -- and subscripts are thinner
+    still.  A table-based mapping therefore renders `r_h` and `q^{ab}` as a bare
+    underscore and caret, which is what the abstracts and the introduction were
+    showing.  `<sup>` and `<sub>` render every character, so the coverage
+    question does not arise."""
+    t = re.sub(r'\^\{([^{}]*)\}|\^(\S)',
+               lambda m: '<sup>' + (m.group(1) or m.group(2)) + '</sup>', t)
+    return re.sub(r'_\{([^{}]*)\}|_(\S)',
+                  lambda m: '<sub>' + (m.group(1) or m.group(2)) + '</sub>', t)
 
 
 def mathspan(t):
@@ -185,7 +187,8 @@ def detex(t):
     t = re.sub(r'\\(?:label|rcpt|ldg|cite|citep|footnote)\{[^}]*\}', '', t)
     t = re.sub(r'\\(?:emph|textit)\{([^{}]*)\}', r'<em>\1</em>', t)
     t = re.sub(r'\\(?:textbf|strong)\{([^{}]*)\}', r'<strong>\1</strong>', t)
-    t = re.sub(r'\$([^$]*)\$', r'<code>\1</code>', t)
+    t = re.sub(r'\$([^$]*)\$',
+               lambda m: '<span class="m">' + _script(m.group(1)) + '</span>', t)
     # \tfrac{a}{b} -> a/b, then unwrap styling macros, then map symbols.
     t = re.sub(r'\\[dt]?frac\{([^{}]*)\}\{([^{}]*)\}', r'\1/\2', t)
     for _ in range(3):
