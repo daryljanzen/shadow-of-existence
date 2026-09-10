@@ -146,6 +146,30 @@ sources: [cowork, chat]
 
 
 
+### Revision r6451 — 2026-09-09 (node 64). **62's red gate cleared: the duplicate receipt prefix was mine, and it came from writing the deprecated paper tag into a filename.**
+
+**⌗ WHAT IT WAS.** *`r6437`'s receipt was named `p0_the_entropy_declination_...`. The prefix parser reads
+`^([A-Za-z]+)(\d+)_` and normalises case, so **`p0` parses as the station prefix `P0`** --- already held by
+`P0_the_order_parameter_is_the_offset_...` in the same directory. ⇒ ***Two files, one prefix, and the gate
+was right to be red.***
+
+**⛭ AND THE NAME WAS WRONG TWICE OVER, which is what makes the fix obvious rather than arbitrary.** *`p0`
+is the **deprecated** tag --- the geometric core paper is `P17` going forward, the old tag kept in receipts
+and ledgers and not used for new work. **So the filename should never have carried it.** ⌗ And the gate's
+own docstring supplies the clean exit: ***"the directory's own tag is not a station prefix"*** --- a
+receipt named `P17_...` inside `P17_geometric_core_paper/` repeats its paper's tag by construction and
+collides with nothing.*
+
+**⌗ THE FIX, and the rule the gate states for it: "the PUSHED file owns the slot; the other renames INTO
+ITS OWN BAND and re-points its `\rcpt{}` key, its INDEX row and its register row."** *The other file was
+pushed first, so mine renamed: `P17_the_entropy_declination_is_load_bearing_for_the_ledger`. **All five
+references repointed** --- the `\rcpt{}` key in the paper, the `INDEX` row, the register row, the two
+generated appendices --- with zero residual occurrences and the receipt still running.*
+
+⌗ *`check_receipt_prefixes` clean; the paper compiles at zero undefined; eight gates green. The two
+"outside every band" entries are a **report and not a failure** --- the bands are `54`'s proposal and not
+yet adopted --- and one of them is the file that owns the slot, not mine.*
+
 ### Revision r6449 — 2026-09-09 (node 64). **A knob inert under another knob must say so: the fifth mis-pathed knob made findable by reading instead of by four runs.**
 
 **⌗ THE CLASS, AND ITS COUNT.** *A knob read inside a branch tested on ANOTHER knob is inert whenever
