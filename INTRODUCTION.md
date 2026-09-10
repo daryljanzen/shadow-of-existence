@@ -115,6 +115,13 @@ history from causal reassignment, then cosmogenesis — the Big Bang as a synthe
 the light-element abundances reproduced and the Hubble tension resolved across the low-redshift distance
 ladder.
 
+**If you want to know what it is worth before you spend time on it: P18.** *The synthesis, and it is a door
+rather than a step.* It collects what the construction derives, separates that from what it dissolves and what
+it declines to claim, and carries the frontier — the open questions stated with what would discharge each.
+**It will not teach you the construction**, and read first it will look like a set of verdicts on arguments you
+have not met. But it is the only paper that answers *is this worth my time, and where does it fail*, and a
+reader who wants that answered first is entitled to it.
+
 **If you come from philosophy, epistemology, or the history of science: P6.** It is the door to the foundational
 drivers, and it argues something prior to the physics — that *"the epistemology of scientific theory-choice is a
 discipline of the same kind as the sciences it grounds, with the same object and the same method."* A physical
