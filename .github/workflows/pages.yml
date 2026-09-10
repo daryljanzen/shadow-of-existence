@@ -34,7 +34,7 @@ on:
       - '.github/workflows/pages.yml'
   workflow_dispatch:
 
-# r4619: analytics switched on via the ANALYTICS_ID repository variable.
+# r4623: rebuilt after the measurement id was corrected to the book stream.
 
 permissions:
   contents: read
