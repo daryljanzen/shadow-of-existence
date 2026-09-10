@@ -746,7 +746,7 @@ const PAGES_URL = '{PAGES}';
                      '<span class="ti"><b>' + r['stem'].replace('_', ' ') + '</b>'
                      + ('<span class="sub">' + r['claim'][:180] + '</span>'
                         if r['claim'] else '') + '</span>'
-                     '<a href="' + GH + '/receipts/' + r['path'] + '">RUN</a></li>\n')
+                     '<a href="' + GH + '/receipts/' + r['path'] + '">PY</a></li>\n')
         body += '</ul>\n'
     with open(OUT_RCPT, 'w', encoding='utf-8') as fh:
         fh.write(page('The receipts',
