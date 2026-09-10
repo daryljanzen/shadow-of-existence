@@ -234,6 +234,25 @@ def convert(paper):
     # Section labels sit immediately after the closing brace, and subsections
     # count too: matching only \section left twenty-eight of them uncollected,
     # so every cross-reference to one fell back to a bare section mark.
+    # Three label forms the numbering pass did not know about, all in P7:
+    #   a SECOND \label on the line after a section -- an alias for it;
+    #   \item\label{...} in an enumerate -- numbered by position in the list;
+    #   a \label inside a table.
+    for m in re.finditer(r'\\(?:sub)*section\*?\{(?:[^{}]|\{[^{}]*\})*\}\s*'
+                         r'\\label\{[^}]*\}\s*\n\s*\\label\{([^}]*)\}', body):
+        labels[m.group(1)] = ''
+    for m in re.finditer(r'\\begin\{enumerate\}(.*?)\\end\{enumerate\}',
+                         body, re.S):
+        for k, im in enumerate(re.finditer(r'\\item\s*\\label\{([^}]*)\}',
+                                           m.group(1)), 1):
+            labels[im.group(1)] = str(k)
+    tabn = 0
+    for m in re.finditer(r'\\begin\{table\*?\}(.*?)\\end\{table\*?\}',
+                         body, re.S):
+        tabn += 1
+        lb = re.search(r'\\label\{([^}]*)\}', m.group(1))
+        if lb:
+            labels[lb.group(1)] = str(tabn)
     secn = 0
     for m in re.finditer(r'\\(sub)?(sub)?section\*?\{(?:[^{}]|\{[^{}]*\})*\}\s*'
                          r'\\label\{([^}]*)\}', body):
