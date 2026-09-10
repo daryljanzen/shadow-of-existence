@@ -91,7 +91,7 @@ def title_of(stem):
         return None
     t = re.sub(r'\\\\|\s+', ' ', m.group(1))
     t = re.sub(r'\$([^$]*)\$',
-               lambda m: '<span class="m">' + _script(m.group(1)) + '</span>', t)
+               lambda m: '<span class="m">' + mathspan(m.group(1)) + '</span>', t)
     t = re.sub(r'\\[a-zA-Z]+\{?', '', t).replace('}', '')
     t = t.replace('---', '\u2014').replace('--', '\u2013')
     return re.sub(r'\s+', ' ', t).strip()
@@ -158,8 +158,45 @@ def _script(t):
                   lambda m: '<sub>' + (m.group(1) or m.group(2)) + '</sub>', t)
 
 
+_NEG = {'subset': '\u2284', 'supset': '\u2285', 'in': '\u2209', 'ni': '\u220c',
+        'equiv': '\u2262', 'sim': '\u2241', 'cong': '\u2247', 'leq': '\u2270',
+        'le': '\u2270', 'geq': '\u2271', 'ge': '\u2271', 'perp': '\u22ac'}
+
+
+
+def _mathtail(t):
+    """The last steps every math span needs, wherever it was converted: resolve
+    the function-spacing marker, and keep a script attached to the name it
+    belongs to.  Factored out because detex converts spans in one place and
+    mathspan in another, and only one of them had it."""
+    t = _fixspace(t)
+    return re.sub(r'\s+(<su[pb]>)', r'\1', t)
+
+
+def _prep(t):
+    """Two things the table alone cannot do.
+
+    `\\not\\subset` is ONE character, not a negation sign glued to a relation:
+    it was rendering as the two symbols side by side.
+
+    And a function name needs a space before it when a symbol runs into it --
+    `\\alpha\\sin u` was coming out as `asin u`, which reads as a different
+    function.  A marker is inserted and resolved after substitution, since at
+    substitution time the preceding character is not known."""
+    t = re.sub(r'\\not\\([a-zA-Z]+)',
+               lambda m: _NEG.get(m.group(1), '\u00ac\\' + m.group(1)), t)
+    return re.sub(r'\\(' + '|'.join(_WORDS) + r')\b',
+                  lambda m: '\x00\\' + m.group(1), t)
+
+
+def _fixspace(t):
+    return re.sub(r'\s*\x00\s*',
+                  lambda m: ' ' if m.start() else '', t).strip()
+
+
 def mathspan(t):
     """`$...$` -> readable Unicode, using the same table the abstracts use."""
+    t = _prep(t)
     t = re.sub(r'\\[dt]?frac\{([^{}]*)\}\{([^{}]*)\}', r'\1/\2', t)
     for _ in range(3):
         t = re.sub(r'\\(?:' + '|'.join(_UNWRAP) + r')\{([^{}]*)\}', r'\1', t)
@@ -177,10 +214,14 @@ def mathspan(t):
     t = _script(t)
     t = re.sub(r'\s+([,.;:)\]])', r'\1', t)
     t = re.sub(r'([(,\[])\s+', r'\1', t)     # 'SO(6, C)' -> 'SO(6,C)'
+    t = _fixspace(t)
+    # sinh^{2/3}: the script belongs to the function name, so no space before it
+    t = re.sub(r'\s+(<su[pb]>)', r'\1', t)
     return re.sub(r'\s+', ' ', t.replace('{', '').replace('}', '')).strip()
 
 
 def detex(t):
+    t = _prep(t)
     """LaTeX fragment -> readable HTML. Emphasis and bold are kept because the
     corpus uses them to carry weight; everything else is stripped."""
     t = re.sub(r'(?m)^\s*%.*$', '', t)
@@ -188,7 +229,7 @@ def detex(t):
     t = re.sub(r'\\(?:emph|textit)\{([^{}]*)\}', r'<em>\1</em>', t)
     t = re.sub(r'\\(?:textbf|strong)\{([^{}]*)\}', r'<strong>\1</strong>', t)
     t = re.sub(r'\$([^$]*)\$',
-               lambda m: '<span class="m">' + _script(m.group(1)) + '</span>', t)
+               lambda m: '<span class="m">' + mathspan(m.group(1)) + '</span>', t)
     # \tfrac{a}{b} -> a/b, then unwrap styling macros, then map symbols.
     t = re.sub(r'\\[dt]?frac\{([^{}]*)\}\{([^{}]*)\}', r'\1/\2', t)
     for _ in range(3):
