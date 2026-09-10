@@ -28,4 +28,7 @@ ax.text(to*0.62,Tonset*4,'expansion (cooling);\nBBN complete below onset',fontsi
 ax.set_xlabel('proper time along worldline  (turnaround at 0)'); ax.set_ylabel('local temperature  $T$  [eV]')
 ax.set_ylim(1.0,2e6); ax.set_xlim(-4,14); ax.set_title('Temperature history of the infalling matter',fontsize=10)
 ax.grid(alpha=.2,which='both')
-plt.savefig('fig_history.pdf',bbox_inches='tight'); print("built fig_history.pdf")
+plt.savefig('fig_history.pdf',bbox_inches='tight')
+# r4607: PNG beside the PDF so the HTML chapter can show the
+# figure; the PDF is what the typeset paper uses.
+plt.savefig('fig_history.png', dpi=180); print("built fig_history.pdf")

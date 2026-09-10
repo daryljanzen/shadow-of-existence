@@ -207,7 +207,11 @@ def mathspan(t):
     # Escaped literals: the backslash is markup, the character is the content.
     for _c in '%$&#_':
         t = t.replace('\\' + _c, _c)
-    t = re.sub(r'\\[,;:!>]|\\ (?=\S)', ' ', t)
+    # A line break and an alignment mark inside a math span: the span is one
+    # line here, so they become a space rather than reaching the page as source.
+    t = re.sub(r'\\\\\\\\', ' ', t)
+    t = re.sub(r'(?<!\\)&(?:amp;)?', ' ', t)
+    t = re.sub(r'\\[,;:!>]|\\ ', ' ', t)
     t = re.sub(r'\\(?:qquad|quad|thinspace|;|,)\b', ' ', t)
     t = _prep(t)
     t = re.sub(r'\\[dt]?frac\{([^{}]*)\}\{([^{}]*)\}', r'\1/\2', t)

@@ -126,7 +126,7 @@ def inline(t, nums, labels):
     t = re.sub(r'\\paragraph\*?\{([^{}]*)\}', r'<b class="para">\1</b> ', t)
     t = re.sub(r'\\(?:eqref|ref)\{([^}]*)\}',
                lambda m: '<a class="xr" href="#' + m.group(1) + '">'
-               + labels.get(m.group(1), '\u00a7') + '</a>', t)
+               + labels.get(m.group(1), '?') + '</a>', t)
     t = re.sub(r'\\cite[tp]?\[([^\]]*)\]\{([^}]*)\}',
                lambda m: '<span class="cite">[' + m.group(2) + ', '
                + m.group(1) + ']</span>', t)
@@ -166,6 +166,24 @@ def inline(t, nums, labels):
                lambda m: '<div class="eq">' + mathspan(m.group(1)) + '</div>',
                t, flags=re.S)
     t = re.sub(r'\\(sin|cos|tan|log|ln|exp|sinh|cosh|tanh)\b', r'\1', t)
+    # Accents, escaped literals, the section sign and the forced space --
+    # all of which reached the page as source.
+    for _a, _tbl in ((r'\\\^', {'i': '\u00ee', 'e': '\u00ea', 'a': '\u00e2',
+                                 'o': '\u00f4', 'u': '\u00fb'}),
+                     (r'\\"', {'i': '\u00ef', 'e': '\u00eb', 'a': '\u00e4',
+                                'o': '\u00f6', 'u': '\u00fc'}),
+                     (r"\\'", {'e': '\u00e9', 'a': '\u00e1', 'i': '\u00ed',
+                                'o': '\u00f3', 'u': '\u00fa'}),
+                     (r'\\`', {'e': '\u00e8', 'a': '\u00e0', 'i': '\u00ec',
+                                'o': '\u00f2', 'u': '\u00f9'})):
+        t = re.sub(_a + r'\{?([a-zA-Z])\}?',
+                   lambda m, _t=_tbl: _t.get(m.group(1), m.group(1)), t)
+    t = re.sub(r'\\c\{?c\}?', '\u00e7', t)
+    t = re.sub(r'\\S(?=\s*<a class="xr")', '\u00a7', t)
+    t = t.replace('\\S', '\u00a7').replace('\\P', '\u00b6')
+    for _c in '%$&#_{}':
+        t = t.replace('\\' + _c, _c)
+    t = re.sub(r'\\ ', ' ', t)          # `i.e.\ ` -- the forced space
     t = t.replace('---', '\u2014').replace('--', '\u2013').replace('~', ' ')
     t = t.replace("``", '\u201c').replace("''", '\u201d')
     return re.sub(r'[ \t]+', ' ', t)
@@ -191,7 +209,7 @@ def convert(paper):
                          r')\}(?:\[[^\]]*\])?\s*\\label\{([^}]*)\}', body):
         kind = m.group(1)
         counts[kind] = counts.get(kind, 0) + 1
-        labels[m.group(2)] = f'{kind.capitalize()} {counts[kind]}'
+        labels[m.group(2)] = str(counts[kind])
     # align and gather carry labels too, and can carry SEVERAL -- one per line.
     # Counting only `equation` left forty references across the corpus pointing
     # at a number that was never assigned.
@@ -221,9 +239,9 @@ def convert(paper):
                          r'\\label\{([^}]*)\}', body):
         if not m.group(1):
             secn += 1
-            labels[m.group(3)] = f'\u00a7{secn}'
+            labels[m.group(3)] = str(secn)
         else:
-            labels[m.group(3)] = f'\u00a7{secn}'
+            labels[m.group(3)] = str(secn)
 
     out, eqn, counts, fign_out = [], 0, {}, [0]
 

@@ -81,7 +81,10 @@ txt=(f"final:  $Y_p$={4*Yf[idx['he4']]:.3f}   D/H={Yf[idx['d']]/Yf[idx['p']]:.2e
 ax.text(0.42,0.97,txt,transform=ax.transAxes,fontsize=8,va='top',ha='left',
         bbox=dict(boxstyle='round',fc='white',ec='0.7'))
 plt.tight_layout()
-plt.savefig('fig_abundances.pdf'); plt.savefig('fig_abundances.png',dpi=140)
+plt.savefig('fig_abundances.pdf')
+# r4607: PNG beside the PDF so the HTML chapter can show the
+# figure; the PDF is what the typeset paper uses.
+plt.savefig('fig_abundances.png', dpi=180); plt.savefig('fig_abundances.png',dpi=140)
 print("wrote fig_abundances.pdf / .png")
 print(f"final: Yp={4*Yf[idx['he4']]:.4f} D/H={Yf[idx['d']]/Yf[idx['p']]:.3e} "
       f"3He/H={Yf[idx['he3']]/Yf[idx['p']]:.3e} 7Li/H={(Yf[idx['li7']]+Yf[idx['be7']])/Yf[idx['p']]:.3e}")

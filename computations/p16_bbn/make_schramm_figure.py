@@ -47,5 +47,8 @@ axes[0].set_title('D1: BBN concordance from CR’s forced cooling leg\n'
                   fontsize=9.5)
 axes[-1].set_xlabel('$\\eta_{10}$  (baryon-to-photon ratio $\\times10^{10}$)')
 axes[0].legend(loc='upper right',fontsize=8)
-plt.savefig('fig_schramm.pdf',bbox_inches='tight'); plt.savefig('fig_schramm.png',dpi=140,bbox_inches='tight')
+plt.savefig('fig_schramm.pdf',bbox_inches='tight')
+# r4607: PNG beside the PDF so the HTML chapter can show the
+# figure; the PDF is what the typeset paper uses.
+plt.savefig('fig_schramm.png', dpi=180); plt.savefig('fig_schramm.png',dpi=140,bbox_inches='tight')
 print("wrote fig_schramm.pdf / .png")

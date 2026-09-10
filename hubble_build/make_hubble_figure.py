@@ -67,5 +67,8 @@ axR.legend(loc='upper center',fontsize=8,framealpha=0.9); axR.grid(alpha=0.2)
 fig.suptitle('A1.4: the radiation-free rate resolves the Hubble tension across the BAO distance ladder',
              fontsize=11,y=1.00)
 plt.tight_layout()
-plt.savefig('fig_hubble_bao.pdf',bbox_inches='tight'); plt.savefig('fig_hubble_bao.png',dpi=140,bbox_inches='tight')
+plt.savefig('fig_hubble_bao.pdf',bbox_inches='tight')
+# r4607: PNG beside the PDF so the HTML chapter can show the
+# figure; the PDF is what the typeset paper uses.
+plt.savefig('fig_hubble_bao.png', dpi=180); plt.savefig('fig_hubble_bao.png',dpi=140,bbox_inches='tight')
 print(f"wrote fig_hubble_bao; z_onset={zo:.0f}, rd_cr(73)={rd_cr:.1f}, chi2 CR@73={chi2_cr(73):.2f} LCDM@73={chi2_l(73):.1f} LCDM@67.4={chi2_l(67.4):.2f}")
