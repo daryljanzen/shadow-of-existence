@@ -108,6 +108,12 @@ jobs:
           cp BOOK_INTRO_cosmiCave/ledgers.html _site/
           cp BOOK_INTRO_cosmiCave/receipts.html _site/
           cp BOOK_INTRO_cosmiCave/paper_P*.html _site/
+          # ** The custom domain must be IN THE ARTIFACT. **  We deploy from
+          # Actions rather than from a branch, so a CNAME that exists only in
+          # the repository root or only in Settings is not part of what gets
+          # published -- and a later deploy silently detaches the domain.
+          # Written here, every deploy carries it.
+          echo 'shadow.cosmicave.org' > _site/CNAME
           mkdir -p _site/pdf _site/fig _site/fig/figs _site/fig/figures _site/assets
           cp corpus/*.pdf _site/pdf/ 2>/dev/null || true
           cp corpus/*.png _site/fig/ 2>/dev/null || true
