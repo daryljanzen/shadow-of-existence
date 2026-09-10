@@ -29,6 +29,12 @@ OUT_INTRO = os.path.join(ROOT, 'BOOK_INTRO_cosmiCave', 'introduction.html')
 OUT_FRONT = os.path.join(ROOT, 'BOOK_INTRO_cosmiCave', 'frontier.html')
 OUT_LEDG = os.path.join(ROOT, 'BOOK_INTRO_cosmiCave', 'ledgers.html')
 OUT_RCPT = os.path.join(ROOT, 'BOOK_INTRO_cosmiCave', 'receipts.html')
+OUT_MAP = os.path.join(ROOT, 'BOOK_INTRO_cosmiCave', 'sitemap.xml')
+OUT_ROB = os.path.join(ROOT, 'BOOK_INTRO_cosmiCave', 'robots.txt')
+
+# The public hostname, used only for the sitemap, which must carry absolute URLs
+# by the standard.  Everything else on the site stays relative.
+SITE = os.environ.get('SITE_URL', 'https://shadow.cosmicave.org').rstrip('/')
 GH = 'https://github.com/daryljanzen/shadow-of-existence/blob/main'
 # ** NO THIRD-PARTY CDN. **  The site serves its own PDFs, figures and data from
 # GitHub Pages: one origin, no cache lag, nothing to purge, and -- the reason it
@@ -805,6 +811,32 @@ const PAGES_URL = '{PAGES}';
                       'them \u2014 so <b>P3R7</b> here is <b>P3R7</b> in the paper.',
                       body))
     print(f'  receipts.html written: {total} receipts across {len(by)} papers.')
+
+    # ── sitemap and robots ────────────────────────────────────────────────
+    # Without these, a search engine has to FIND twenty-three pages by
+    # crawling, and with no inbound links it may not find them at all.  Both
+    # are generated from what was actually written, so a page cannot be in the
+    # book and missing from the sitemap.
+    import datetime
+    today = datetime.date.today().isoformat()
+    pages = ['', 'introduction.html', 'frontier.html', 'ledgers.html',
+             'receipts.html']
+    pages += ['paper_%s.html' % num for num, _t, _u, _s in papers]
+    urls = []
+    for rel in pages:
+        # The index is listed once, at the root, rather than twice.
+        loc = SITE + '/' + rel
+        pri = '1.0' if rel == '' else ('0.8' if rel.startswith('paper_')
+                                       else '0.7')
+        urls.append('  <url><loc>%s</loc><lastmod>%s</lastmod>'
+                    '<priority>%s</priority></url>' % (loc, today, pri))
+    with open(OUT_MAP, 'w', encoding='utf-8') as fh:
+        fh.write('<?xml version="1.0" encoding="UTF-8"?>\n'
+                 '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n'
+                 + '\n'.join(urls) + '\n</urlset>\n')
+    with open(OUT_ROB, 'w', encoding='utf-8') as fh:
+        fh.write('User-agent: *\nAllow: /\n\nSitemap: %s/sitemap.xml\n' % SITE)
+    print(f'  sitemap.xml: {len(urls)} urls; robots.txt written.')
 
     print(f'  introduction.html written: {len(intro_page)} bytes, '
           f'matrix fetched into its figure.')

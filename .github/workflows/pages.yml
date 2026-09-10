@@ -110,6 +110,8 @@ jobs:
           cp BOOK_INTRO_cosmiCave/ledgers.html _site/
           cp BOOK_INTRO_cosmiCave/receipts.html _site/
           cp BOOK_INTRO_cosmiCave/paper_P*.html _site/
+          cp BOOK_INTRO_cosmiCave/sitemap.xml _site/ 2>/dev/null || true
+          cp BOOK_INTRO_cosmiCave/robots.txt _site/ 2>/dev/null || true
           # ** The custom domain must be IN THE ARTIFACT. **  We deploy from
           # Actions rather than from a branch, so a CNAME that exists only in
           # the repository root or only in Settings is not part of what gets
