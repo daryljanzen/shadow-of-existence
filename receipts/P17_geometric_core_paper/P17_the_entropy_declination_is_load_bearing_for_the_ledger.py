@@ -1,5 +1,5 @@
 """
-p0_the_entropy_declination_is_load_bearing_for_the_ledger
+P17_the_entropy_declination_is_load_bearing_for_the_ledger
 =========================================================
 
 Object under test -- `p0` `sec:ledger`'s declination: "whether S=A/4 carries to a
