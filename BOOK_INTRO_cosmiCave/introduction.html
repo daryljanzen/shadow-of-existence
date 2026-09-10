@@ -160,7 +160,7 @@ async function placeMatrix() {
     let r = await fetch('assets/dependency_matrix.html', {cache: 'no-cache'})
               .catch(() => null);
     if (!r || !r.ok) r = await fetch(
-      'https://cdn.jsdelivr.net/gh/daryljanzen/shadow-of-existence@main/BOOK_INTRO_cosmiCave/assets/dependency_matrix.html',
+      'https://raw.githubusercontent.com/daryljanzen/shadow-of-existence/main/BOOK_INTRO_cosmiCave/assets/dependency_matrix.html',
       {cache: 'no-cache'});
     if (!r.ok) throw 0;
     const doc = new DOMParser().parseFromString(await r.text(), 'text/html');

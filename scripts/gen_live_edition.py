@@ -30,7 +30,13 @@ OUT_FRONT = os.path.join(ROOT, 'BOOK_INTRO_cosmiCave', 'frontier.html')
 OUT_LEDG = os.path.join(ROOT, 'BOOK_INTRO_cosmiCave', 'ledgers.html')
 OUT_RCPT = os.path.join(ROOT, 'BOOK_INTRO_cosmiCave', 'receipts.html')
 GH = 'https://github.com/daryljanzen/shadow-of-existence/blob/main'
-CDN = 'https://cdn.jsdelivr.net/gh/daryljanzen/shadow-of-existence@main'
+# ** NO THIRD-PARTY CDN. **  The site serves its own PDFs, figures and data from
+# GitHub Pages: one origin, no cache lag, nothing to purge, and -- the reason it
+# matters here -- a same-origin download is COUNTED by analytics where an
+# outbound CDN click is not.  RAW is kept only as a last-resort link target for
+# a reader who has the page open outside the site.
+RAW_GH = 'https://raw.githubusercontent.com/daryljanzen/shadow-of-existence/main'
+CDN = RAW_GH
 RAW = 'https://raw.githubusercontent.com/daryljanzen/shadow-of-existence/main'
 # Where the generated pages link to each other.  On GitHub Pages they sit beside
 # one another, so a bare filename is correct AND has no cache lag; the CDN base
@@ -42,7 +48,7 @@ PAGES = os.environ.get('PAGES_BASE', '.')
 # is what makes a download SAME-ORIGIN -- analytics counts a same-origin file
 # download automatically and an outbound CDN click only as a click, so serving
 # them here is what turns "someone left for a CDN" into "someone downloaded P15".
-PDF_BASE = os.environ.get('PDF_BASE', CDN + '/corpus')
+PDF_BASE = os.environ.get('PDF_BASE', './pdf')
 
 # Analytics tag, supplied at build time.  Empty by default: nothing is hardcoded
 # and a local build carries no tracking at all.
@@ -80,7 +86,7 @@ async function placeMatrix() {
     let r = await fetch('assets/dependency_matrix.html', {cache: 'no-cache'})
               .catch(() => null);
     if (!r || !r.ok) r = await fetch(
-      '%%CDN%%/BOOK_INTRO_cosmiCave/assets/dependency_matrix.html',
+      '%%RAW%%/BOOK_INTRO_cosmiCave/assets/dependency_matrix.html',
       {cache: 'no-cache'});
     if (!r.ok) throw 0;
     const doc = new DOMParser().parseFromString(await r.text(), 'text/html');
@@ -627,7 +633,9 @@ repository</a>. Papers via jsDelivr; the frontier read live at page load.
 const PAGES_URL = '{PAGES}';
 (async function () {{
   const el = document.getElementById('frontier');
-  const urls = ['{CDN}/THE_FRONTIER.md', '{RAW}/THE_FRONTIER.md'];
+  // Site-local first: the deploy rebuilds on every push, so this copy is as
+  // current as the repository and needs no third party to serve it.
+  const urls = ['./THE_FRONTIER.md', '{RAW}/THE_FRONTIER.md'];
   let text = null;
   for (const u of urls) {{
     try {{

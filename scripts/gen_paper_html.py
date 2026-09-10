@@ -23,11 +23,11 @@ import sys
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 OUT_DIR = os.path.join(ROOT, 'BOOK_INTRO_cosmiCave')
-CDN = 'https://cdn.jsdelivr.net/gh/daryljanzen/shadow-of-existence@main'
+CDN = 'https://raw.githubusercontent.com/daryljanzen/shadow-of-existence/main'
 # Same reasoning as the index: a same-origin PDF is a counted download, an
 # outbound CDN link is only a click.
-PDF_BASE = os.environ.get('PDF_BASE', CDN + '/corpus')
-FIG_BASE = os.environ.get('FIG_BASE', CDN + '/corpus')
+PDF_BASE = os.environ.get('PDF_BASE', './pdf')
+FIG_BASE = os.environ.get('FIG_BASE', './fig')
 
 # paper -> (tex stem, receipt appendix, ledger appendix)
 PAPERS = {

@@ -113,7 +113,15 @@ jobs:
           cp corpus/*.png _site/fig/ 2>/dev/null || true
           cp corpus/figs/*.png _site/fig/figs/ 2>/dev/null || true
           cp corpus/figures/*.png _site/fig/figures/ 2>/dev/null || true
+          # Three figures are referenced from outside corpus/, by a relative
+          # path that climbs out of it; mirrored so those links resolve.
+          mkdir -p _site/resources/PhD_thesis
+          cp resources/PhD_thesis/*.png _site/resources/PhD_thesis/ \
+            2>/dev/null || true
           cp BOOK_INTRO_cosmiCave/assets/*.html _site/assets/ 2>/dev/null || true
+          # The index reads the frontier at page load; served from the site so
+          # nothing on the page depends on a third party.
+          cp THE_FRONTIER.md _site/ 2>/dev/null || true
 
       - uses: actions/upload-pages-artifact@v3
         with:
