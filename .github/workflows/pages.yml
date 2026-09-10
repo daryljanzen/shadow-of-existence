@@ -30,6 +30,7 @@ on:
       - 'corpus/**.pdf'
       - 'BOOK_INTRO_cosmiCave/assets/**'
       - 'scripts/gen_live_edition.py'
+      - 'scripts/gen_paper_html.py'
       - '.github/workflows/pages.yml'
   workflow_dispatch:
 
@@ -61,6 +62,12 @@ jobs:
         # cannot publish a stale open edge.
         run: python3 scripts/regen_frontier.py
 
+      - name: Build the chapters
+        run: |
+          for p in P1 P2 P3 P4 P5 P6 P7 P8 P9 P10 P11 P12 P13 P14 P15 P16 P17 P18; do
+            python3 scripts/gen_paper_html.py "$p"
+          done
+
       - name: Build the pages
         run: python3 scripts/gen_live_edition.py
 
@@ -90,6 +97,7 @@ jobs:
           cp BOOK_INTRO_cosmiCave/frontier.html _site/
           cp BOOK_INTRO_cosmiCave/ledgers.html _site/
           cp BOOK_INTRO_cosmiCave/receipts.html _site/
+          cp BOOK_INTRO_cosmiCave/paper_P*.html _site/
           mkdir -p _site/assets
           cp BOOK_INTRO_cosmiCave/assets/*.html _site/assets/ 2>/dev/null || true
 

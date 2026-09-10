@@ -444,16 +444,16 @@ def main():
     for num, t, url, stem in papers:
         head, _, tail = t.partition(':')
         sub = f'<span class="sub">{tail.strip()}</span>' if tail.strip() else ''
-        link = f'<a href="{url}">PDF</a>' if url else '<span class="nolink">—</span>'
+        chap = (PAGES.rstrip('/') + '/paper_' + num + '.html')
+        link = ('<span class="two"><a href="' + chap + '">READ</a>'
+                + (f'<a href="{url}">PDF</a>' if url else '') + '</span>')
         paras, cut = abstract_of(stem)
         if paras:
             n_abs += 1
             body = ''.join(f'<p>{x}</p>' for x in paras)
             if cut:
-                body += ('<p class="more">The abstract continues in the paper '
-                         f'itself. <a href="{url}">Open the PDF.</a></p>'
-                         if url else '<p class="more">The abstract continues in '
-                                     'the paper itself.</p>')
+                body += ('<p class="more"><a href="' + PAGES.rstrip('/')
+                         + '/paper_' + num + '.html">Read more \u2192</a></p>')
             rows.append(
                 f'    <li><details><summary><span class="pn">{num}</span>'
                 f'<span class="ti"><b>{head.strip()}</b>{sub}</span></summary>'
@@ -489,6 +489,9 @@ def main():
          letter-spacing:.04em; }}
   .ti {{ flex:1 1 auto; }}
   .ti .sub {{ display:block; color:var(--faint); font-size:.88rem; }}
+  .two {{ flex:0 0 5.4rem; text-align:right; padding-top:.6rem; }}
+  .two a {{ display:inline-block; margin-left:.5rem; color:var(--pole);
+            text-decoration:none; font-size:.78rem; letter-spacing:.06em; }}
   ul.papers a {{ flex:0 0 3rem; text-align:right; color:var(--pole);
                  text-decoration:none; font-size:.78rem; letter-spacing:.06em;
                  padding-top:.6rem; }}

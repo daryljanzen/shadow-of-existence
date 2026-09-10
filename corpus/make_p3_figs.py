@@ -11,6 +11,15 @@ import numpy as np, matplotlib
 matplotlib.use('Agg')
 import matplotlib.pyplot as plt
 plt.rcParams.update({'font.family':'serif','mathtext.fontset':'cm','font.size':10,'savefig.bbox':'tight'})
+
+
+def _save(stem):
+    """PDF for the typeset paper, PNG for the HTML edition -- written from the
+    same figure in the same run so the two cannot disagree.  r4601: the HTML
+    chapter could not show a PDF figure and was linking six of eleven out."""
+    plt.savefig(f'figs/{stem}.pdf')
+    plt.savefig(f'figs/{stem}.png', dpi=180)
+
 import os; os.makedirs('figs', exist_ok=True)
 al=1.0; r3=np.sqrt(3)
 
@@ -41,7 +50,7 @@ axb.plot(-al,0,'ks',ms=5); axb.text(-al-0.05,0.12,'$r=0$',ha='right',fontsize=8)
 axb.text(xoff,-1.45,'radial slice at offset $r_0$',color='navy',ha='center',fontsize=8)
 axb.set_title('(b) equator-on: the throat circle',fontsize=9)
 axb.set_xlim(-1.6,1.4); axb.set_ylim(-1.7,1.5)
-plt.savefig('figs/fig2_throat_circle.pdf'); plt.close()
+_save('fig2_throat_circle'); plt.close()
 
 # ---------- fig3_cubic_involution : (a) 2M=r0-r0^3, (b) sigma involution ----------
 fig,(a1,a2)=plt.subplots(1,2,figsize=(9,3.8))
@@ -58,7 +67,7 @@ a2.plot(x,sig,color='steelblue',lw=1.8); a2.plot([0,1],[0,1],'k:',lw=.8)
 a2.plot(1/r3,1/r3,'o',color='firebrick',ms=6); a2.text(1/r3+0.02,1/r3-0.08,'fixed $1/\\sqrt{3}$',fontsize=8,color='firebrick')
 a2.plot([0,1],[1,0],'s',color='navy',ms=5); a2.text(0.02,0.94,'$\\sigma(0)=1$',fontsize=8); a2.text(0.7,0.03,'$\\sigma(1)=0$',fontsize=8)
 a2.set_xlabel('$r_0$'); a2.set_ylabel('$\\sigma(r_0)$'); a2.set_title('(b) root-exchange involution $\\sigma$',fontsize=9); a2.grid(alpha=.25)
-plt.savefig('figs/fig3_cubic_involution.pdf'); plt.close()
+_save('fig3_cubic_involution'); plt.close()
 
 # ---------- fig5_triple_angle : (a) 2M=(2/3sqrt3) sin 3w, (b) r0=(2/sqrt3) sin w ----------
 fig,(a1,a2)=plt.subplots(1,2,figsize=(9,3.8))
@@ -71,7 +80,7 @@ a2.plot(w,(2/r3)*np.sin(w),color='steelblue',lw=1.8)
 a2.plot(np.pi/3,1.0,'o',color='navy',ms=5); a2.text(np.pi/3,1.02,'throat-tangent $w=\\pi/3$',ha='right',fontsize=7.5,color='navy')
 a2.set_xlabel('sky angle $w$'); a2.set_ylabel('$r_0$'); a2.set_title('(b) $r_0=\\frac{2}{\\sqrt{3}}\\sin w$',fontsize=9); a2.grid(alpha=.25)
 a2.set_xticks([0,np.pi/6,np.pi/3]); a2.set_xticklabels(['0','$\\pi/6$','$\\pi/3$'])
-plt.savefig('figs/fig5_triple_angle.pdf'); plt.close()
+_save('fig5_triple_angle'); plt.close()
 
 # ---------- fig4_seam : Riemannian r=rho sin th  ->  Lorentzian r=rho cosh psi, C^1 at throat ----
 fig,ax=plt.subplots(figsize=(6.4,4.0)); rho=1.0
@@ -87,7 +96,7 @@ ax.text(np.pi/2, ax.get_ylim()[1]*0.96, r'$\theta\mapsto\pi/2+i\psi$', ha='cente
 ax.set_xlabel(r'continuation parameter ($\theta$, then $\psi$)'); ax.set_ylabel('$r$')
 ax.set_title('The equatorial seam: signature flips $(+,+)\\to(-,+)$', fontsize=9)
 ax.set_xticks([0,np.pi/2]); ax.set_xticklabels(['0','$\\pi/2$']); ax.legend(fontsize=7.5,loc='upper left'); ax.grid(alpha=.25)
-plt.savefig('figs/fig4_seam.pdf'); plt.close()
+_save('fig4_seam'); plt.close()
 
 # ---------- fig7_curvature : K_G = 1/al^2 - M/r^3 , sign change at r* = (M al^2)^{1/3} ----------
 fig,ax=plt.subplots(figsize=(6.4,4.0)); M=0.12
@@ -101,6 +110,6 @@ ax.text(0.4,-2.0,'Schwarzschild-like\n$K_G<0$',fontsize=8,color='indianred')
 ax.text(1.6,0.55,'de Sitter-like\n$K_G>0$',fontsize=8,color='seagreen')
 ax.set_xlabel('$r$'); ax.set_ylabel('$K_G$'); ax.set_ylim(-4,1.2)
 ax.set_title(r'Gaussian curvature $K_G=1/\alpha^2-M/r^3$',fontsize=9); ax.grid(alpha=.25)
-plt.savefig('figs/fig7_curvature.pdf'); plt.close()
+_save('fig7_curvature'); plt.close()
 
 print("built: figs/fig2_throat_circle.pdf fig3_cubic_involution.pdf fig4_seam.pdf fig5_triple_angle.pdf fig7_curvature.pdf")

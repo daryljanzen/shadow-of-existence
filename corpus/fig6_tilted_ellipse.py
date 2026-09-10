@@ -40,5 +40,7 @@ ax.set_xlabel('$r_0$'); ax.set_ylabel('$r$')
 ax.legend(loc='lower left')
 
 fig.savefig('figs/fig6_tilted_ellipse.pdf', bbox_inches='tight')
-fig.savefig('fig6_restored_preview.png', dpi=170, bbox_inches='tight')
+# r4601: written beside the PDF under the name the paper cites, so the
+# HTML edition can show it.  It was landing in the corpus root as a preview.
+fig.savefig('figs/fig6_tilted_ellipse.png', dpi=180, bbox_inches='tight')
 print("done")

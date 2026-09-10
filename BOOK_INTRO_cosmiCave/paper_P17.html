@@ -1,0 +1,1002 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Reached through the imaginary, real by construction — The Shadow of Existence</title>
+<style>
+  :root { --ink:#1c2733; --faint:#8b98a6; --line:#e2e8ee; --pole:#b5462a; --bg:#fbfcfd; }
+  * { box-sizing:border-box }
+  body { margin:0; background:var(--bg); color:var(--ink);
+         font:16px/1.6 Georgia,'Iowan Old Style',serif; }
+  .wrap { max-width:52rem; margin:0 auto; padding:3rem 1.25rem 5rem; }
+  h1 { font-size:1.9rem; line-height:1.25; margin:0 0 .4rem; font-weight:600; }
+  h2 { font-size:1.15rem; margin:2.8rem 0 .3rem; font-weight:600;
+        letter-spacing:.01em; }
+  .lede { color:#4a5765; margin:0 0 .2rem; }
+  .note { color:var(--faint); font-size:.86rem; }
+  ul.papers { list-style:none; padding:0; margin:1rem 0 0; }
+  ul.papers li { display:flex; align-items:baseline; gap:.7rem;
+                  border-bottom:1px solid var(--line); }
+  ul.papers li > details { flex:1 1 auto; border-bottom:none; min-width:0; }
+  .pn { flex:0 0 3.2rem; color:var(--pole); font-weight:600; font-size:.82rem;
+         letter-spacing:.04em; }
+  .ti { flex:1 1 auto; }
+  .ti .sub { display:block; color:var(--faint); font-size:.88rem; }
+  ul.papers a { flex:0 0 3rem; text-align:right; color:var(--pole);
+                 text-decoration:none; font-size:.78rem; letter-spacing:.06em;
+                 padding-top:.6rem; }
+  ul.papers > li > .nolink { flex:0 0 3rem; }
+  ul.papers a:hover { text-decoration:underline; }
+  .nolink { color:var(--line); }
+  details { border-bottom:1px solid var(--line); }
+  summary { cursor:pointer; padding:.55rem 0; display:flex; gap:.7rem;
+             align-items:baseline; list-style:none; }
+  summary::-webkit-details-marker { display:none }
+  summary::before { content:'\203A'; color:var(--faint); flex:0 0 .6rem;
+                     transition:transform .15s; }
+  details[open] > summary::before { transform:rotate(90deg); }
+  summary .sub { display:block; color:var(--faint); font-size:.88rem; }
+  .abs { padding:.2rem 0 1.1rem 1.3rem; font-size:.95rem; }
+  .abs p { margin:0 0 .7rem; }
+  .intro { font-size:1rem; padding:.4rem 0 1.6rem 1.3rem; }
+  .intro p { margin:0 0 1rem; }
+  .intro h3 { font-size:1.08rem; margin:2rem 0 .6rem; font-weight:600;
+               color:var(--ink); }
+  .intro figure { margin:1.4rem 0; }
+  .intro figcaption { color:var(--faint); font-size:.86rem; margin-top:.5rem;
+                       line-height:1.5; }
+  .intro .more { color:var(--faint); font-size:.86rem; font-style:italic; }
+  .m { font-family:'Iowan Old Style',Georgia,serif; font-style:italic;
+        white-space:nowrap; }
+  .intro code { font-size:.9em; background:#f1f4f7; padding:.05em .3em;
+                 border-radius:3px; }
+  .abs .more { color:var(--faint); font-size:.88rem; }
+  .intro h2, .intro h3 { font-size:1rem; margin:1.2rem 0 .3rem; }
+  .matrix table { border-collapse:collapse; font-size:.72rem; }
+  .matrix td, .matrix th { border:1px solid var(--line); padding:.15rem .3rem;
+                            text-align:center; }
+  .matrix { overflow-x:auto; }
+  #frontier { margin-top:1rem; }
+  .row { padding:.7rem 0 .8rem; border-bottom:1px solid var(--line); }
+  .row .id { color:var(--pole); font-weight:600; font-size:.85rem;
+              margin-right:.5rem; }
+  .row .what { font-weight:600; }
+  .row .disc { display:block; color:#4a5765; font-size:.92rem; margin-top:.2rem; }
+  .status { color:var(--faint); font-size:.86rem; }
+  footer { margin-top:3.5rem; padding-top:1rem; border-top:1px solid var(--line);
+            color:var(--faint); font-size:.84rem; }
+  a { color:var(--pole); }
+
+  .paper { max-width:46rem; }
+  .paper p { margin:0 0 1rem; }
+  .paper h2 { font-size:1.25rem; margin:2.4rem 0 .7rem; }
+  .paper h3 { font-size:1.06rem; margin:1.8rem 0 .5rem; }
+  .abstract { background:#f4f7fa; border-left:3px solid var(--line);
+               padding:1rem 1.2rem; margin:1.5rem 0 2rem; font-size:.95rem; }
+  .abstract h2 { font-size:.8rem; letter-spacing:.09em; text-transform:uppercase;
+                  margin:0 0 .6rem; color:var(--faint); }
+  .thm { margin:1.2rem 0; padding:.1rem 0 .1rem 1rem;
+          border-left:2px solid var(--line); }
+  .thmhead { font-weight:600; }
+  .thm.remark { border-left-style:dotted; }
+  .proof { margin:1rem 0 1.4rem; font-size:.96rem; color:#3b4753; }
+  .qed { float:right; color:var(--faint); }
+  .eqwrap { display:flex; align-items:center; gap:1rem; margin:1.1rem 0; }
+  .eq { flex:1 1 auto; text-align:center; font-style:italic; }
+  .eqno { flex:0 0 auto; color:var(--faint); font-size:.85rem; }
+  figure { margin:1.6rem 0; text-align:center; }
+  figure img { max-width:100%; border:1px solid var(--line); }
+  figcaption { color:var(--faint); font-size:.86rem; margin-top:.5rem;
+                text-align:left; line-height:1.5; }
+  .figalt a { font-size:.9rem; }
+  sup.mk { font-size:.62rem; font-family:'Iowan Old Style',Georgia,serif;
+            letter-spacing:.02em; padding-left:.1em; }
+  sup.mk.r { color:var(--pole); }
+  sup.mk.l { color:#4a7a8c; }
+  .cite { color:var(--faint); font-size:.9em; }
+  .xr { text-decoration:none; }
+  .fn { color:var(--faint); font-size:.9em; }
+</style>
+</head>
+<body>
+<div class="wrap paper">
+<p class="note"><a href="./live_edition.html">← The Shadow of Existence</a></p>
+<p class="pn">P17</p>
+<h1>Reached through the imaginary, real by construction</h1>
+<p class="lede">the maximally symmetric substrate as the geometric–ontological core of Cosmological Relativity</p>
+<p class="note"><a href="https://cdn.jsdelivr.net/gh/daryljanzen/shadow-of-existence@main/corpus/geometric_core_paper.pdf">Open the typeset PDF</a></p>
+<p></p>
+<div class="abstract"><h2>Abstract</h2><p>The papers of this programme construct, read, and apply a single object:
+the maximally symmetric de Sitter substrate. This paper is about the
+object itself. We make explicit three facts the corpus has carried
+implicitly and never stated in one place. First, the substrate is
+<em>everywhere intrinsically real by construction</em>: it is a real
+manifold with a real coordinate basis—the five-dimensional
+<span class="m">dS<sub>5</sub>=SO(5,1)/SO(4,1)</span> of the ladder below, of which the
+four-dimensional <span class="m">dS<sub>4</sub></span> is the <em>background</em> its leaves
+carry—whose
+Lorentzian signature is an intrinsic property of its positive curvature,
+not a signature imposed on it from outside; the imaginary variables the
+construction uses to <em>reach</em> it—the fifth embedding coordinate, the
+conjugacy circle, the equatorial seam's analytic continuation—are
+instruments of visualisation and continuation over a geometry that is real
+at every point they land on. Second, that substrate is the <em>universal
+standard of physics</em>: its curvature radius <span class="m">α=√3/Λ</span> and its
+locked null cone are the intrinsic length and causal structure against which
+every material structure is what it is—Eddington's reason the cosmological
+constant cannot vanish, here corrected (its timelike half as real as its
+spatial one) and grounded (a real intrinsic ground state, not a property of
+the operation of measurement); and, read at the last-scattering surface, this
+same standard dissolves the horizon problem—the microwave background's
+uniformity is the substrate's maximal symmetry, not the residue of an early
+causal contact. Third, the <em>maximal symmetry</em> of that
+substrate is a single fact from which the corpus's separately-established
+results descend as one: the parameter-free rigidity of the cosmology, the
+fundamental constants standing as unit gauges over the substrate's single
+scale—a singleness with a consequence the ledger should state, since neither real form supplies a second invariant and a dimensionless magnitude needs two<sup class="mk r" title="P17_no_second_scale_on_either_face">P17R13</sup>: the global Wick rotation carries the defining quadric to <span class="m">S<sup>5</sup></span> of the <em>same</em> radius, acting on the coordinate and leaving the right-hand side untouched, and every curvature invariant on either face is a pure power of <span class="m">1/α<sup>2</sup></span>. <em>So the construction cannot force a coupling, and its silence about magnitudes is a property of a one-constant theory rather than a gap awaiting work</em>—the common root of three verdicts reached separately, that the winding quantises without measuring, the flat bundle selects without coupling, and the branch point filters without supplying—, the necessity and
+sufficiency of the augmentation of general relativity, the universality of
+physics, and the wall against a continuous geometric matter symmetry are the
+same property seen at several rungs. Read at that constant rung, the single
+scale renders the traditional Planck values gauge-combinations rather than
+physical scales, and dissolves the cosmological-constant and coincidence
+problems by that one fact—no Planck scale for <span class="m">Λ</span> to be small against,
+and no bare-<span class="m">Λ</span>-versus-vacuum-energy split for the fine cancellation to
+act on—with <span class="m">Λ</span>'s value the ledger's one input scale, not predicted. We collect the source—a real
+coordinate basis in which the would-be timelike embedding coordinate is not a
+coordinate of the manifold at all, and a curvature radius that is the
+manifold's one scale—and we show that the straight null rulings of the
+surface, the light cone locked to the equilateral profile that maximal
+symmetry forces, are the visible peak of exactly this intrinsically real
+geometry. </p><p>That one scale has a classical name. Read projectively, the
+substrate is a Cayley–Klein<sup class="mk l" title="quadric_geometry">L17</sup> geometry <span class="cite">[Cayley1859, Klein1871]</span> whose <em>absolute</em> is the quadric
+<span class="m">η(X,X)=0</span>—the null cone—and its geodesic separation is exactly the
+Cayley–Klein log-cross-ratio against that absolute, with the Cayley–Klein
+constant equal to <span class="m">α</span>: timelike, <span class="m">τ=(α/2)| |</span>;
+spacelike, the corresponding angle; and the discriminant <span class="m">4α<sup>4</sup>(u<sup>2</sup>-1)</span>
+in <span class="m">u=η(P,Q)/α<sup>2</sup></span> deciding which, according as the joining line meets
+the absolute or misses it<sup class="mk r" title="Q3_cayley_klein">P17R11</sup>. A second projective fact follows at once, and it settles how the ladder's second rung sits in its first. </p><p>Since a point <span class="m"></span> of the substrate has <span class="m">η(P,P)=α<sup>2</sup>&gt;0</span>, its polar hyperplane <span class="m">\X:η(P,X)=0\</span> carries signature <span class="m">(1,4)</span>, so the substrate cut by it is a totally geodesic <span class="m">dS<sub>4</sub></span> of isometry <span class="m">SO(4,1)</span><sup class="mk r" title="Q6r_polar_is_the_background">P17R12</sup>. </p><p>That subgroup is a sweep-subgroup of the substrate's <span class="m">SO(5,1)</span>, which is the criterion by which a four-geometry is a <em>cut</em>; and being the maximally symmetric such cut it is the <span class="m">dS<sub>4</sub></span> background itself. </p><p><em>So polarity is how the background sits in the substrate</em>—the background is the polar slice of a substrate point, one for each point and none privileged, the point a slice is polar to being what selects it. </p><p>The ladder is stated in this paper and the embedding had been stated in none; it is the same pole–polar relation the throat protocol already runs on, read one dimension up. Since the scale is the only
+free constant a Cayley–Klein construction carries—signature, null structure
+and isometry group being fixed by the absolute's projective type—the
+one-scale reading is not merely the outcome of the constants audit but the
+classical statement about a geometry of this kind. </p><p>That null structure has a second face, and it is older than the
+geometry: read on the substrate's overhead projection, the <em>power of a
+point</em> with respect to the throat—Steiner's invariant, <span class="m">|X|<sup>2</sup>-α<sup>2</sup></span>,
+which for an external point is the square of the tangent length (Euclid
+III.36)—is, by the hyperboloid's own equation, the square of that point's
+<em>height</em> in the embedding. The tangent from any point of the substrate to
+the throat therefore runs exactly as far across as the point stands high, and is
+a <em>null line</em>: Euclid's tangent–secant relation and the null condition are
+the same equation, and the only thing that turns one into the other is the minus
+sign in the metric. The rulings <em>are</em> those tangents, so “doubly ruled by
+straight null lines” and “every tangent to the throat is null” are one
+statement, the classical register adding reach—every point of the overhead,
+not only the ones a ruling passes through. The identity is bounded exactly, and
+the bound is a statement about the substrate rather than about geometry: it is a
+fact about <em>one</em> circle, the waist, so a classical theorem whose quantity is
+built from the power with respect to the throat carries the signature for free,
+while one whose quantity is a chord, a bilinear relation among points, or a
+power with respect to any other circle carries no height at all. Two ingredients
+of this are modern and not one: the minus sign, and <em>power itself</em>—Euclid
+proves a relation among segments, and it was Steiner who shifted the focus from
+the chords to the point, the move this programme makes when it reads the cut's
+offset not as a coordinate but as the mass. And the reach of that
+identity is not a mystery to be marvelled at but a consequence of it: the
+classical theory of the circle speaks about causal structure exactly when it
+speaks about the power of a point with respect to this one circle. What the
+reading returns is, in every case, a result the construction already
+established—the horizon, the light cone, the Nariai configuration <span class="cite">[Nariai1951]</span>, the throat's
+radius, the perspectival reading of the mass—reached by a route sharing no
+machinery with the one that established it. And the one-circle bound is not
+finally a limitation but the point: the circle is what the construction is built
+on. </p><p>Its radius <em>is</em> the curvature, <span class="m">α=√3/Λ</span>, the one scale
+the exhausted isometry leaves; the power vanishes on the circle itself; and the
+tangents to it are the rulings, so the double ruling and the classical power law
+are one statement, set by <span class="m">α</span> and by nothing else. That circle is the
+incircle of the hinge triangle and its nine-point circle besides, so the hinges
+stand at <span class="m">2α</span> as an <em>output</em> of the hole rather than a stipulation, the
+three sides are the Nariai double null rulings tangent at their midpoints, and the
+triple-angle identity returns the Nariai configuration of its own accord. The
+signed areal radius passes through zero at a point <em>on</em> it, so the three
+walls whose bound modes are the fermion sector's three chiral generations lie on
+it, their three-foldness the hole's own; and the slicing's lap runs around it, a black hole and a cosmology thereby one object and not two—the
+cosmological gravitational collapse of black holes in prior universes completing
+into the formation of universes like our own through the crossing it carries,
+matter and antimatter the two ends of one conjugation across that crossing. </p><p>The lines, the curvature, the placement, the count and the passage
+are read off the one waist. And the count's own structure is read off it too: the
+discrete residue is the direct product <span class="m">Aut(A<sub>2</sub>)=S<sub>3</sub><sub>2</sub></span>,
+whose factors act on the three roots and the two rulings—which are, on the waist,
+the points <em>on</em> the circle and the lines <em>tangent</em> to it. The residue
+factorises because those two relations are independent; and the factors differ in
+<em>kind</em> for the same reason, a ruling being a line of the substrate and a root
+a label of a different cut—so chirality descends gauged and flavour global. The
+Standard Model's arrangement is, in this reading, the difference between being on
+the one circle and being tangent to it. All of which is why there is one circle to
+build on and not a family of them, and which we state as the seventh face of the
+maximal symmetry this paper's thesis identifies. One consequence of that reading is
+drawn in \S<a class="xr" href="#sec:unification">§5</a> and is deliberately <em>not</em> counted among the
+faces: written in a general dimension, the triple angle collapses to a single
+multiple-angle only in four spacetime dimensions and in five, and the mass-parity that
+grades chirality exists only in even dimension, so four is the only dimension carrying
+both a generation count and a chirality. It is excluded from the list because it does
+not come from maximal symmetry—the substrate is maximally symmetric and moduli-free
+in <em>every</em> dimension—but from the matter sector's own content, and the two are
+statements about different objects.</p><p>It is therefore offered as a second way of seeing the object and not as evidence
+for it; a reading that returned new physics from a theorem about circles would be
+an object of suspicion, and one that returns what was already proved, from
+unrelated directions, is doing what a faithful dictionary does. The frame is a physical theory of beautiful symmetric core
+structures whose broken symmetries are the physics: the maximally symmetric
+substrate <span class="m">dS<sub>5</sub></span>, the background <span class="m">dS<sub>4</sub></span> its leaves carry,
+and the exact solutions as symmetry-breaking cuts read as shadows off a
+wall. </p><p>The paper is written as the space the rest of the corpus lands in: the
+slicing curve, the description groupoid, the constraint algebroid, the
+cosmology, and the matter boundary each descend from this core and return
+their consolidated content to it. </p><p>The core is the seed the corpus grew from and the hub it returns to: the papers
+descend from it and consolidate their content back into it, the connections their
+propagation reveals gathered in as they are worked.</p></div>
+<h2>Introduction: the object, not its uses</h2>
+<p>Across the corpus one geometry does all the work. The event horizon is a metric singularity of it <span class="cite">[JanzenBHcausality]</span>; the Schwarzschild circle and the Schwarzschild–de Sitter slicing curve are curves drawn on it <span class="cite">[JanzenCircle, JanzenSlicing]</span>; the description groupoid charts it from many vantages <span class="cite">[JanzenGroupoid]</span>; the cosmic foliation is measured to be its own congruence <span class="cite">[JanzenModernParallax]</span>; the constraint algebra of general relativity is its symmetric-space grading <span class="cite">[JanzenAlgebroid]</span>; the flat-<span class="m">Λ</span>CDM cosmology is its clock <span class="cite">[JanzenCRcosmology]</span>; the boundary at which local structure yields to the cosmic expansion—the Hubble–Eddington radius <span class="cite">[Eddington1933]</span>—is the flat locus of its slice, one scale reaching both ranges <span class="cite">[JanzenSlicing, JanzenCRcosmology]</span>; and the Standard-Model boundary is the limit of what its symmetry can carry <span class="cite">[JanzenBoundary]</span>. Each paper builds or reads or applies the substrate. None of them is <em>about the substrate itself</em>—about what kind of object it is, and why the two things most easily misread about it are in fact one thing.</p>
+<p>This paper is about the object. Its claim has three faces that turn out to be one:</p>
+<ul><li>Real by construction (\S<a class="xr" href="#sec:real">§1</a>,
+\S<a class="xr" href="#sec:imaginary">§3</a>).} The substrate is a real manifold with a real
+coordinate basis—<span class="m">dS<sub>5</sub></span>, the ladder's top rung, not the
+four-dimensional background <span class="m">dS<sub>4</sub></span> its leaves carry. Its
+Lorentzian signature is intrinsic to its positive curvature. The imaginary variables the construction reaches it
+through are bookkeeping over an everywhere-real geometry, never a rotation
+into a different, unreal space.</li><li>The universal standard of physics (\S<a class="xr" href="#sec:standard">§2</a>).} Its
+curvature radius <span class="m">α=√3/Λ</span> and its locked null cone are the
+intrinsic length and causal structure against which every material
+structure is what it is—the vacuum's “measuring stick throughout space
+and time.” This is Eddington's reason the cosmological constant cannot
+vanish, corrected and grounded: the universality of physics <em>is</em> the
+maximal symmetry, one real standard the same at every point. The standard is
+legible in the expansion's own dynamics as well. On a comoving worldline
+<span class="m">d<sup>2</sup>r/d τ<sup>2</sup>=rK<sub>G</sub></span> with
+<span class="m">K<sub>G</sub>=1/α<sup>2</sup>-M/r<sup>3</sup></span> <span class="cite">[JanzenSlicing]</span>: <em>the substrate's standard and
+the material structure enter the acceleration as its two terms, with
+opposite signs</em>, and the expansion turns from decelerating to accelerating
+exactly where the material structure's contribution falls to the
+substrate's. Set <span class="m">Λ=0</span> and the first term is gone, the acceleration is
+<span class="m">-M/r<sup>2</sup></span> throughout, and there is no turn—so the sign change is the
+standard's own signature in the dynamics, which is Eddington's point read
+where he did not read it. And that causal
+structure is legible in Euclid's own quantity (\S<a class="xr" href="#sec:power">§</a>): the power
+of a point with respect to the throat <em>is</em> the square of its height, so
+the tangent from any point of the substrate to the throat is a null line, and
+the classical theory of the power of a point is—on this one circle—a theory
+of the substrate's causal structure. Which bounds it exactly: the identity is a
+fact about <em>one</em> circle, the waist, and a classical theorem is blind to
+the signature unless its own quantity is built from that power. A second bound is drawn, and it separates this identity from the classical relations that
+accompany it. Written at a general dimension the hinge figure is a regular
+<span class="m">(D-1)</span>-gon with the throat as its incircle, and of the equivalent statements
+that hold at the hinge, two survive and three do not. The tangent length
+equalling the hinge's height survives, because both are <span class="m">√R<sup>2</sup>-α<sup>2</sup></span>
+whatever the vertex distance <span class="m"></span>; so does the sides' touching the throat at
+their midpoints, which is a property of any regular polygon's incircle. What
+does not survive is the placement <span class="m">R=2α</span>, the <span class="m">60<sup>∘</sup></span> subtense, and the
+identification of the throat with the triangle's nine-point circle—the last
+not because a number changes but because Euler's nine-point circle is a theorem
+about triangles and has no analogue at a square. <em>So the identity this
+section rests on is the substrate's, and the classical relations that arrive
+with it at four dimensions are the equilateral triangle's</em> <span class="cite">[JanzenSlicing]</span>.
+They coincide there, which is why they read as one fact.</li><li>Maximally symmetric, and that is one fact worn several ways
+(\S<a class="xr" href="#sec:unification">§5</a>).} The rigidity that lets the cosmology hide
+nowhere against the data, the geometric relations that lock the constants,
+the necessity and sufficiency of the augmentation, the universality of
+physics, and the wall against a continuous geometric matter symmetry are the
+maximal symmetry of the substrate seen at different rungs. The recursion the
+corpus runs on closes on a fixed ontological core, and the core is maximal
+symmetry itself.</li></ul>
+<p></p>
+<p>The picture this opens onto, and the frame the paper is written in, is a physical theory of beautiful symmetric core structures whose broken symmetries are the physics. There is a ladder of symmetry: the maximally symmetric <em>substrate</em> <span class="m">dS<sub>5</sub>=SO(5,1)/SO(4,1)</span>; the maximally symmetric four-dimensional <em>background</em> <span class="m">dS<sub>4</sub></span> its leaves carry; and, below these, the <em>exact solutions</em>—Schwarzschild, Nariai, the Friedmann geometries—each a symmetry-breaking cut of the one substrate, matter the bend no symmetry holds in place. What we observe as gravitation, mass, and cosmic history are the manifestations of those broken symmetries, read as shadows off a wall (\S<a class="xr" href="#sec:shadows">§6</a>)—perspectival descriptions of one intrinsically real, maximally symmetric object. The geometric core is the standard; the physics is what the standard looks like when its symmetry is cut.</p>
+<p>A word on why this is its own paper and not a remark in an existing one. The result that fixes it—the real coordinate basis in which the would-be timelike embedding coordinate is not a coordinate at all—predates the programme; it is proved in the 2012 dissertation whose chapter three this paper takes up at source <span class="cite">[JanzenThesis]</span>. The corpus carries the seam-side instance of it as a <em>guard</em> <span class="cite">[JanzenSlicing, JanzenBoundary]</span>, and rediscovered the null-ruling face of it as a mechanism <span class="cite">[JanzenCRcosmology]</span>. But the general statement—that the whole substrate, seam and cosmogenesis and the phase structure at the seam included, is everywhere intrinsically real, and that this reality is the same fact as its maximal symmetry—has never been made in one place. It is load-bearing enough, and connected to enough, to be the geometric–ontological heart the applications hang from.</p>
+<h2 id="sec:real">The substrate is a real manifold}</h2>
+<h3>The maximally symmetric manifolds, intrinsically</h3>
+<p>The maximally symmetric solutions of <span class="m">R<sub>μν</sub>=Λg<sub>μν</sub></span>—the geometries isotropic about every point—are, up to the sign and magnitude of <span class="m">Λ</span>, a one-parameter family with curvature radius <span class="m">α≡√3/|Λ|</span> <span class="cite">[JanzenThesis, \S sec\_RPT]</span>. They are usually met as hypersurfaces embedded in a flat five-dimensional space,</p>
+<div class="eqwrap" id="eq:sphere1"><div class="eq"><sub>μ=0</sub><sup>4</sup>x<sub>μ</sub><sup>2</sup>=α<sup>2</sup>,ds<sup>2</sup>=<sub>μ=0</sub><sup>4</sup>dx<sub>μ</sub><sup>2</sup>,</div><span class="eqno">(1)</span></div>
+<p>which is a convenient picture but not the manifold. Solving <a class="xr" href="#eq:sphere1">(1)</a> for the fifth coordinate and substituting back gives the <em>intrinsic</em> four-dimensional line element,</p>
+<div class="eqwrap" id="eq:sphere3"><div class="eq">ds<sup>2</sup>=dx<sup>2</sup>+ (x·dx)<sup>2</sup>α<sup>2</sup>-x<sup>2</sup>,x=(x<sub>1</sub>,x<sub>2</sub>,x<sub>3</sub>,x<sub>4</sub>),</div><span class="eqno">(2)</span></div>
+<p>in which <span class="m">x</span> is a real four-vector in the tangent space <span class="cite">[JanzenThesis, Eq. (sphere3)]</span>. Equation <a class="xr" href="#eq:sphere3">(2)</a> with <span class="m">-∞≤α<sup>2</sup>≤∞</span> describes every maximally symmetric four-dimensional geometry; the whole family is one intrinsic object read at different values of the single scale <span class="m">α<sup>2</sup>=3/Λ</span>.</p>
+<h3>The fifth coordinate is not a coordinate of the manifold</h3>
+<p>Here is the fact the paper turns on. For every case other than the de Sitter interior (<span class="m">α<sup>2</sup>&gt;0</span> and <span class="m">α<sup>2</sup>&gt;x<sup>2</sup></span>), the embedding coordinate <span class="m">x<sub>0</sub>=±√α<sup>2</sup>-x<sup>2</sup></span> is purely imaginary, and the embedding is written in an imaginary “Minkowskian” space <span class="m">M<sup>5</sup><sup>3</sup></span> by the replacement <span class="m">x<sub>0</sub>↦ix<sub>0</sub></span>. <em>But <span class="m">x<sub>0</sub></span> is not a coordinate of the four-dimensional manifold.</em> By <a class="xr" href="#eq:sphere3">(2)</a> the manifold is coordinatised by the four real <span class="m">x<sub>i</sub></span>, which are real regardless of the value of <span class="m">α<sup>2</sup></span> <span class="cite">[JanzenThesis, \S following Eq. (sphere3)]</span>. The imaginary fifth coordinate is a property of one <em>embedding picture</em> of the surface, not of the surface. This is established in <span class="cite">[JanzenThesis]</span>, \S sec\_RPT.</p>
+<p>\subsection{The Lorentzian signature is intrinsic to the positive curvature}</p>
+<p>The metric read off <a class="xr" href="#eq:sphere3">(2)</a>,</p>
+<div class="eqwrap" id="eq:eigen"><div class="eq">g<sub>ij</sub>= 1α<sup>2</sup>-x<sup>2</sup> casesα<sup>2</sup>-(x<sup>2</sup>-x<sub>i</sub><sup>2</sup>),& i=j\\ x<sub>i</sub> x<sub>j</sub>,& i≠j cases,λ= α<sup>2</sup>α<sup>2</sup>-x<sup>2</sup>,</div><span class="eqno">(3)</span></div>
+<p>has three positive eigenvalues always, and a fourth eigenvalue <span class="m">λ</span> whose sign is fixed by the real data <span class="m">α<sup>2</sup></span> and <span class="m">x<sup>2</sup></span>: <span class="m">λ&gt;0</span> (Riemannian) when <span class="m">α<sup>2</sup>&lt;0</span>, when <span class="m">Λ=0</span>, or when <span class="m">α<sup>2</sup>&gt;x<sup>2</sup>&gt;0</span>; <span class="m">λ=0</span> (null) when <span class="m">α<sup>2</sup>=0</span>; and <span class="m">λ&lt;0</span> (Lorentzian) exactly when <span class="m">x<sup>2</sup>&gt;α<sup>2</sup>&gt;0</span>. The signature is thus read from the <em>real</em> metric of the <em>real</em> manifold; no imaginary coordinate is doing the work. <em>And the two ways that sign can turn are of different kinds, which is worth separating.</em> At fixed <span class="m">α<sup>2</sup>&gt;0</span> the Riemannian–Lorentzian crossing occurs at <span class="m">x<sup>2</sup>=α<sup>2</sup></span>, where <span class="m">λ</span> passes through a <em>pole</em>: <span class="m">|λ|→∞</span> and the sign flips, the numerator being the constant <span class="m">α<sup>2</sup></span> throughout. <em>So the metric does not degenerate at the crossing</em>—a signature change through <span class="m">λ=0</span> would send <span class="m">det g</span> to zero and leave no metric there, and that is not what happens here. The one place <span class="m">λ</span> does vanish is <span class="m">α<sup>2</sup>=0</span>, the null cone: not a crossing within one member of the family but the family's own singular leaf<sup class="mk l" title="spectral_theory">L19</sup>. This yields the proposition the programme's ontology stands on:</p>
+<div class="thm proposition" id="prop:unique"><span class="thmhead">Proposition 1.</span> manifold; <span class="cite">[JanzenThesis]</span> \S sec\_RPT]
+De Sitter space, <span class="m">x<sup>2</sup>&gt;α<sup>2</sup>&gt;0</span>, is the only real Riemannian
+manifold that is maximally symmetric and carries an intrinsic Lorentzian
+signature. It has a real coordinate basis, satisfies the maximal-symmetry
+requirement, and is the only such manifold with the requisite causal
+structure. This is proved here from the maximal-symmetry requirement together with the signature and causal-structure conditions; nothing is assumed of the embedding.</div>
+<p>The corollary is the one the dissertation flagged as a speculation and then proved: the minimum radius of the surface and its Lorentzian signature are <em>intrinsic properties resulting specifically from the positive curvature</em> <span class="cite">[JanzenThesis, \S near Eq. (max\_symm\_cont)]</span>. The locus <span class="m">r=α</span> where a spherical chart of <a class="xr" href="#eq:sphere3">(2)</a> appears singular is a <em>coordinate</em> singularity: the curvature is finite there, the line-element “pivots ninety degrees” and continues, and what changes is the chart, not the manifold (Fig. <a class="xr" href="#fig:maxsymm">§</a>). De Sitter is the one-sheeted hyperboloid with a minimum radius; the signature and the throat are what its positive curvature <em>is</em>, intrinsically, when read on the real manifold rather than imposed by hand.</p>
+<figure id="fig:maxsymm"><img src="https://cdn.jsdelivr.net/gh/daryljanzen/shadow-of-existence@main/corpus/../resources/PhD_thesis/max_symm_space_graphed.png" alt=""><figcaption>The maximally symmetric surface as one continuous real manifold:
+a spherical (Riemannian) cap joined at the equatorial throat to the
+Lorentzian de Sitter horn. The ninety-degree pivot at <span class="m">r=α</span> is a
+coordinate event on a single real surface, not a boundary of it. (2012
+dissertation, \S sec\_RPT.)}</figcaption></figure>
+<h3>The one scale, read projectively: the Cayley–Klein absolute</h3>
+<p><em>That one scale has a classical name, and giving it settles what kind of object <span class="m">α</span> is.</em> Read projectively, the substrate is a Cayley–Klein<sup class="mk l" title="quadric_geometry">L17</sup> geometry <span class="cite">[Cayley1859, Klein1871]</span> whose <em>absolute</em> is the quadric <span class="m">η(X,X)=0</span>—the null cone—and its geodesic separation is exactly the Cayley–Klein log-cross-ratio taken against that absolute, with the Cayley–Klein constant equal to <span class="m">α</span>: for a timelike pair, <span class="m">τ=(α/2)| |</span>; for a spacelike pair, the corresponding angle; and the discriminant <span class="m">4α<sup>4</sup>(u<sup>2</sup>-1)</span> in <span class="m">u=η(P,Q)/α<sup>2</sup></span> decides which, according as the joining line meets the absolute or misses it<sup class="mk r" title="Q3_cayley_klein">P17R11</sup>. <em>So <span class="m">α</span> is not a length inserted into a metric but the constant of a projective geometry whose absolute is the light cone</em>, which is the same fact the signature proposition above states metrically.</p>
+<p><em>A second projective fact follows at once, and it settles how the background sits in the substrate.</em> Since a point <span class="m"></span> of the substrate has <span class="m">η(P,P)=α<sup>2</sup>&gt;0</span>, its polar hyperplane <span class="m">\X:η(P,X)=0\</span> carries signature <span class="m">(1,4)</span>, so the substrate cut by it is a totally geodesic <span class="m">dS<sub>4</sub></span> of isometry <span class="m">SO(4,1)</span><sup class="mk r" title="Q6r_polar_is_the_background">P17R12</sup>. That subgroup is a sweep-subgroup of the substrate's <span class="m">SO(5,1)</span>, which is the criterion by which a four-geometry is a <em>cut</em> <span class="cite">[JanzenRange]</span>; and being the maximally symmetric such cut it is the <span class="m">dS<sub>4</sub></span> background itself. <em>So polarity is how the background sits in the substrate</em>—the background is the polar slice of a substrate point, one for each point and none privileged, the point a slice is polar to being what selects it. <em>It is the same pole–polar relation the throat protocol already runs on, read one dimension up.</em></p>
+<p>\section{The <span class="m">Λ</span>-completed vacuum as the universal standard of physics}</p>
+<p>The real manifold of \S<a class="xr" href="#sec:real">§1</a> is not an inert stage. Its curvature radius <span class="m">α=√3/Λ</span> is the one length the vacuum carries intrinsically, and it is against that length—and against the null cone locked to it (\S<a class="xr" href="#sec:rulings">§4</a>)—that everything else is measured. This is the physical content of the cosmological constant, and it is why the substrate is the object it is. The argument is Eddington's, sharpened by the century since and by this corpus's results.</p>
+<h3>Eddington's intuition, at weight</h3>
+<p>Eddington read Einstein's law <span class="m">R<sub>μν</sub>=Λg<sub>μν</sub></span> as the statement that the radius of curvature of empty space is a constant length <span class="m">√3/Λ</span> in every direction at every point <span class="cite">[Eddington1923]</span>. He then made the move that matters: length is not absolute, so “constant length” can only mean constant <em>relative to the material standards of measurement</em>. Inverted, the law reads <em>The length of a specified material structure bears a constant ratio to the radius of curvature of the world at the place and in the direction in which it lies.</em> So the electron's radius in any direction is a numerical constant times the radius of curvature of spacetime in that direction, and—his phrase—</p>
+<p>This is the intuition Eddington packed into “to drop the cosmical constant would knock the bottom out of space” <span class="cite">[Eddington1933]</span>—a remark a later generation dismissed <span class="cite">[Chandrasekhar1983]</span>, and which Proposition <a class="xr" href="#prop:unique">Proposition 1</a> vindicates precisely: setting <span class="m">Λ≤0</span> removes the one real maximally symmetric manifold whose Lorentzian signature is intrinsic, and so knocks the relativistic metrical structure out of the vacuum.</p>
+<h3>Where the intuition was right, foggy, and wrong</h3>
+<p>Eddington reached the right object and misread its status, in ways the present construction lets us correct sharply.</p>
+<p><em>Right, and now unified.</em> He had two standards—a length standard (the radius of curvature) and a symmetry standard (the light cone)—and left them side by side. The equilateral-pseudo-sphere result unifies them: for the one-sheeted hyperboloid, maximal symmetry forces the equilateral profile <span class="m">a=b</span>, whose asymptote is locked at the null cone and whose waist is the curvature radius, so <span class="m"></span> (the null-ruling gauge) and <span class="m">Λ</span> (the scale) are the asymptote and waist of a <em>single</em> surface, meeting in the rate <span class="m">H=c√Λ/3</span> (\S<a class="xr" href="#sec:rulings">§4</a>; <span class="cite">[JanzenCRframework]</span>). Eddington's length standard and light-cone standard are one standard, because the substrate that carries them is one maximally symmetric object.</p>
+<p><em>Foggy, and now overturned.</em> Eddington concluded that “the symmetry and homogeneity expressed by Einstein's law is not a property of the external world, but a property of the operation of measurement”—the anisotropy of a skewed world would enter both the measured structure and the measuring rod and cancel. That deflation is the one thing the corpus directly overturns. By \S<a class="xr" href="#sec:real">§1</a> the maximally symmetric substrate is the <em>real intrinsic ground state</em> of the vacuum (<span class="cite">[JanzenThesis]</span>, whose maximal-symmetry result is stated for the four-dimensional background; the void's basic state a real maximally symmetric manifold), not an artefact of comparison. The symmetry is a property of the world; and it is <em>because</em> it is a real property of the world—one standard, the same at every point—that measurement is universal. Eddington had the dependence backwards: universality of measurement is the <em>consequence</em> of a real symmetric substrate, not the <em>source</em> of an apparent one.</p>
+<p><em>Wrong, and now corrected.</em> Eddington held that there is “no radius of curvature in a timelike direction” (he was working in Euclidean coordinates with <span class="m">x<sub>4</sub></span> imaginary time), and drew from it that an electron, having no temporal standard to measure itself against, “just goes on existing indefinitely.” The error is exactly the imaginary-time misreading \S<a class="xr" href="#sec:imaginary">§3</a> dissolves: de Sitter's Lorentzian signature is intrinsic (Prop. <a class="xr" href="#prop:unique">Proposition 1</a>), its time-dimension as real as its space-dimensions, so there <em>is</em> a radius of curvature in the timelike direction. The vacuum is a consistent measuring stick throughout space <em>and</em> time <span class="cite">[JanzenThesis]</span>—and that intrinsic temporal standard is the objective cosmic-time lapse the programme later measures directly from the redshift isotropy <span class="cite">[JanzenModernParallax]</span>. The electron's persistence is not the absence of a temporal standard; the temporal standard is there, and it is the same maximal symmetry.</p>
+<h3>The universality of physics is the maximal symmetry</h3>
+<p>Collecting the corrections gives the physical statement the geometric core carries. The <span class="m">Λ</span>-completed vacuum equation <span class="m">R<sub>μν</sub>=Λg<sub>μν</sub></span> furnishes, in its unique intrinsically Lorentzian maximally symmetric solution, the complete universal standard: the intrinsic length <span class="m">α</span>, the intrinsic null structure <span class="m"></span>, and—</p>
+<h3>The horizon problem, properly stated</h3>
+<p>The same result settles, in the language cosmology already has a name for, a problem usually posed the wrong way round. The horizon problem is standardly stated as: why is the cosmic microwave background uniform to a part in <span class="m">10<sup>5</sup></span> across regions that, on the standard expansion history, were never in causal contact? So posed, it demands a <em>mechanism</em> to communicate a common condition across a horizon, and inflation supplies one. But the deeper form of the question is not about temperature: it is why the electrons and photons at the last-scattering surface are the same electrons and photons, obeying the same physics, as those on Earth—how a causally distant patch <em>knows how to be</em> what our patch is. That is precisely the question the preceding subsection answered for an electron bound for the Coma cluster: a specified material structure is the same structure everywhere because there is one intrinsic standard everywhere, which is the statement that the substrate is maximally symmetric.</p>
+<p>On the geometric core there is nothing to communicate. The universal standard—the curvature length <span class="m">α</span>, the null cone locked to it, the real temporal extent—is an intrinsic property of the one maximally symmetric substrate (Prop. <a class="xr" href="#prop:unique">Proposition 1</a>), present at every point by the symmetry itself, not a condition that had to propagate from region to region and could therefore fall foul of a horizon. The uniformity is not the residue of an early causal contact; it is the maximal symmetry of the substrate, the very fact that makes physics universal. CR thus does not <em>solve</em> the horizon problem by finding a faster channel; it <em>dissolves</em> it, by locating the uniformity in the intrinsic standard rather than in a shared past—there was never a gap to bridge. <em>The uniformity of the microwave background is read here as an instance of the substrate's maximal symmetry</em>, which places it at the same altitude as the universality-of-physics identification above: the intrinsic standard is established (Prop. <a class="xr" href="#prop:unique">Proposition 1</a>), and the identification is the same reading in a second application rather than a further result.</p>
+<h2 id="sec:imaginary">Reached through the imaginary, real everywhere it lands}</h2>
+<p>Proposition <a class="xr" href="#prop:unique">Proposition 1</a> recasts every imaginary variable in the construction as an instrument, not an ontological ingredient. Three instances, each already in the corpus, are the same move:</p>
+<p><b class="para">The embedding coordinate.</b> <span class="m">x<sub>0</sub>↦ix<sub>0</sub></span> makes the surface easy to see as a hyperboloid in <span class="m">M<sup>5</sup></span>; by \S<a class="xr" href="#sec:real">§1</a> it adds nothing to the manifold, which is the real <span class="m">(x)</span> surface either way. The Riemannian and Lorentzian members differ by their <em>extrinsic</em> embedding curvature (Fig. <a class="xr" href="#fig:sphere">§</a>); intrinsically each is a real manifold whose signature <a class="xr" href="#eq:eigen">(3)</a> reads off its own real metric.</p>
+<p><b class="para">The equatorial seam.</b> Where the slicing curve runs tangent to the throat, the Riemannian cap joins the Lorentzian horn by the analytic continuation <span class="m">θ↦π/2+iψ</span>, <span class="m">sin θ↦ cosh ψ</span>; the signature of the <em>two-dimensional slicing surface</em> flips because <span class="m">dθ=i\,dψ</span> squares the continuation factor to <span class="m">-1</span> <span class="cite">[JanzenSlicing, prop. flip]</span>. The guard the slicing paper states, and that this paper generalises, is decisive: <em>the spacetime is Lorentzian throughout</em>; the flip is confined to the <span class="m">2</span>-surface, and the continuation is a real analytic continuation (<span class="m">sin</span> and <span class="m">cosh</span> one function), not a Wick rotation into a Euclidean spacetime. The seam is a real feature of the real manifold, reached through an imaginary angle.</p>
+<p><b class="para">The horizon radii, where the instrument is not optional.</b> The three bullets above are places the corpus <em>chooses</em> an imaginary route and a reader may fairly answer “then do not take it”. There is a fourth instance where that answer is unavailable, and it is the construction's own central algebraic object. Over the field <span class="m">Q(2M)</span> of the mass parameter the horizon cubic <span class="m">r<sup>3</sup>-r+2M</span> is irreducible—by the Gauss's-lemma argument the groupoid paper gives, which is a statement about degree in <span class="m">2M</span> and is indifferent to whether the base is taken real or complex <span class="cite">[JanzenGroupoid, \S galois]</span>—and below the Nariai mass its discriminant <span class="m">4-27(2M)<sup>2</sup></span> is positive, so its three roots are real and distinct. That is exactly the hypothesis pair of <em>casus irreducibilis</em>, whose conclusion is that no root of such a cubic lies in any real radical extension of the base: <em>the three real horizon radii admit no expression in real radicals as functions of the mass</em>, and every radical route to them passes through <span class="m">C</span>. So for this object the imaginary is not an instrument of visualisation but the only available road, and the roots it lands on are real—which is the law of this section, met in the one case where it could not have been arranged.<sup class="mk r" title="T50_the_imaginary_route_to_the_horizon_radii_is_forced_and_two_members_escape_it">R</sup><sup class="mk l" title="number_theory">L16</sup> <em>The regime dependence is the same asymmetry the groupoid paper reads off the monodromy</em>: above the Nariai mass the discriminant is negative, one horizon is real, and its radical expression is real again—so the forcing belongs to the under-critical side, where the family's <span class="m">S<sub>3</sub></span> acts on real labels, and not to the other, where only the transposition does <span class="cite">[JanzenGroupoid, prop. deck]</span>. <em>No selection is claimed from this.</em> The specialised cubic is reducible with real-radical roots at <span class="m">M=0</span> and at the Nariai mass, but also at <span class="m">2M=3/8</span> and at every rational <span class="m">r<sub>0</sub></span> through <span class="m">2M=r<sub>0</sub>-r<sub>0</sub><sup>3</sup></span>; the reducible masses are dense in the parameter and pick out nothing. The forcing is a statement about the family over <span class="m">Q(2M)</span>, where there is no specialisation to escape through.</p>
+<p><b class="para">The cosmogenesis reassignment.</b> The correspondence that makes collapsed matter a universe is a signature-<em>preserving</em> causal reassignment on the real Lorentzian horn; the compact Wick face, where a continuous <span class="m">su(3)</span> would live, is real by construction but is not a co-equal existent (it carries no clock) <span class="cite">[JanzenBoundary, \S decoupling, \S face-status]</span>. The matter rides the real horn; the imaginary face is a face, not a second reality.</p>
+<figure id="fig:sphere"><img src="https://cdn.jsdelivr.net/gh/daryljanzen/shadow-of-existence@main/corpus/../resources/PhD_thesis/Lorentz_sphere.png" alt=""><figcaption>The <span class="m">α<sup>2</sup></span> family as spherical hypersurfaces of the embedding
+space (left) and their differential character (right): de Sitter
+(<span class="m">α<sup>2</sup>&gt;0</span>), anti-de Sitter (<span class="m">α<sup>2</sup>&lt;0</span>), and the null cone
+(<span class="m">α<sup>2</sup>=0</span>). The members differ by extrinsic embedding; each is
+intrinsically a real four-manifold by <a class="xr" href="#eq:sphere3">(2)</a>. (2012
+dissertation.)}</figcaption></figure>
+<div class="thm remark"><span class="thmhead">Remark 1 — the general statement.</span> Each bullet is a place the corpus already refuses the unreal reading. The
+paper's contribution is to state the <em>general</em> law they instance: the
+construction reaches a real manifold through imaginary instruments, and the
+geometry is intrinsically real at every point they land on—substrate,
+seam, cosmogenesis, and the phase structure hypothesised at the seam
+relative to trajectories. This is CR's <em>built-by-construction-and-real</em>
+register; reading the imaginary parametrisation as rendering anything
+<em>unreal</em> is the invented flaw the discipline is built to
+defeat <span class="cite">[JanzenShadowExistence]</span>. The substrate, the seam as a geometric
+object, and the cosmogenesis reassignment are established at the sources
+above, and so is the last of them: the phase structure is real as geometry
+and does not attach to trajectories. The reality is the plate's—<span class="m"></span> and <span class="m"></span>
+are the two axis-symmetries of one analytic object, and their composite
+supplies every kinematic datum of charge conjugation with the self-conjugate
+photon congruence as <span class="m"></span>'s fixed set. The trajectory reading fails for a
+reason of its own: a massive worldline's frequency enters as <span class="m">m<sup>2</sup>a<sup>2</sup></span> and
+the branch point annihilates it while <span class="m">|aH|</span> diverges, so
+<span class="m">ω/|aH|→0</span> independently of <span class="m"></span>—a massive trajectory
+carries no phase because it fails to freeze.</div>
+<h2 id="sec:rulings">The straight null rulings: the light cone is the visible peak}</h2>
+<p>The most visible face of the intrinsically real geometry is its null structure, and it was drawn in the same dissertation chapter. On de Sitter the null condition <span class="m">0=-dx<sub>0</sub><sup>2</sup>+<sub>i</sub> dx<sub>i</sub><sup>2</sup></span> makes the null-lines <em>straight lines</em> on the curved real surface in the flat embedding: a null particle traverses an angle <span class="m">π/2</span> on <span class="m">α&lt;r&lt;∞</span>, and two null-lines separated by <span class="m">π</span> at the throat run parallel through the embedding and never meet <span class="cite">[JanzenThesis, Eqs. following (null\_eom)]</span>. The surface is <em>doubly ruled by straight null lines</em>, and the rulings are the reassigned generators the null-boundary correspondence acts on <span class="cite">[JanzenCRcosmology]</span>.</p>
+<p>This is the geometric substrate of the <span class="m"></span>–<span class="m">Λ</span> result the framework paper now carries <span class="cite">[JanzenCRframework, \S 662-region]</span>: for a one-sheeted hyperboloid, maximal symmetry forces the <em>equilateral</em> member <span class="m">a=b</span>—the profile whose rulings meet perpendicular at the throat and whose asymptote is locked at the null cone—so <span class="m"></span> is the null-ruling gauge, <span class="m">Λ</span> the sole free scale, and the two meet only in the expansion rate <span class="m">H=c√Λ/3</span>, with the curvature–tilt relation <span class="m">tan θ=a√-K</span> specialising to the locked cone. What \S<a class="xr" href="#sec:real">§1</a> adds is the ontological reading of this: the rulings are <em>real straight lines on a real surface</em>; <span class="m"></span> fixes their slope, the throat curvature <span class="m">1/α<sup>2</sup></span> their scale, and both are intrinsic to the one real equilateral pseudo-sphere. <em>Maximal symmetry has a dynamical reading too, and it is the strongest available.</em> A maximally symmetric <span class="m"></span>-manifold carries the largest isometry algebra any <span class="m"></span>-manifold admits, of dimension <span class="m">D(D+1)/2</span>, and each Killing vector contributes one linear first integral of the geodesic flow: <em>fifteen integrals for the substrate's five degrees of freedom, ten for the background's four</em>. Liouville integrability asks for <span class="m"></span> in involution and maximal superintegrability for <span class="m">2D-1</span>; both are met with room to spare, <span class="m">15≥9</span> and <span class="m">10≥7</span>. <em>So the substrate's geodesic flow is not merely integrable but maximally superintegrable</em>—the dynamical face of having no distinguished point or direction, since the isometry group then acts transitively on the unit tangent bundle and all geodesics are one geodesic seen from different vantages. <em>Every cut lowers the count</em>: the isotropy strata of the algebroid paper are that descent, from fifteen here to the wall's zero, where only the norm survives <span class="cite">[JanzenAlgebroid]</span><sup class="mk l" title="integrable_systems">L14</sup>. The <span class="m"></span>–<span class="m">Λ</span> structure of the framework paper is the tip; the intrinsically real ruled geometry is the iceberg beneath it. The rulings are established in <span class="cite">[JanzenThesis]</span>; the equilateral-forcing and <span class="m"></span>–<span class="m">Λ</span> <span class="cite">[JanzenCRframework]</span>; the ontological reading is collected here.</p>
+<h3 id="sec:power">The power of a point is the height: the null structure in Euclid's own quantity}</h3>
+<p>The rulings are the substrate's null structure seen from outside. There is a second face of the same fact, and it is older than the geometry: the null condition on this surface <em>is</em> a classical theorem about circles, and the theorem is about the throat.</p>
+<p>Read the substrate's overhead projection—the equatorial plane, on which the throat is a circle of radius <span class="m">α</span>. For a point <span class="m"></span> of the projection at distance <span class="m">|X|</span> from the axis, the <em>power</em> of <span class="m"></span> with respect to that circle is</p>
+<div class="eqwrap"><div class="eq">pow(P)\;=\;|X|<sup>2</sup>-α<sup>2</sup>,</div><span class="eqno">(4)</span></div>
+<p>the invariant Steiner attached to a point in 1826 <span class="cite">[Steiner1826]</span>: the constant value of <span class="m">PA· PB</span> along every line through <span class="m"></span> meeting the circle at <span class="m">A,B</span>, and, for <span class="m"></span> outside, the square of the tangent length (Euclid III.36 <span class="cite">[Euclid]</span>)<sup class="mk l" title="figure_theorem">L1</sup>. But the hyperboloid <span class="m">-x<sub>0</sub><sup>2</sup>+|X|<sup>2</sup>=α<sup>2</sup></span> says that the same combination is the point's own height,</p>
+<div class="eqwrap"><div class="eq">|X|<sup>2</sup>-α<sup>2</sup>\;=\;x<sub>0</sub><sup>2</sup>.</div><span class="eqno">(5)</span></div>
+<p>So <span class="m">pow(P)=x<sub>0</sub><sup>2</sup></span>: <em>the power of a point with respect to the throat is the square of its height in the embedding.</em> The tangent from <span class="m"></span> has length <span class="m">√pow(P)=|x<sub>0</sub>|</span>; it therefore runs exactly as far across as the point stands high, and in a metric of signature <span class="m">(-,+,…,+)</span> that is <span class="m">ds<sup>2</sup>=-x<sub>0</sub><sup>2</sup>+|x<sub>0</sub>|<sup>2</sup>=0</span>.</p>
+<div class="thm proposition"><span class="thmhead">Proposition 2 — The tangent is a null line.</span> The tangent line from any point of the substrate to the throat is a null line of
+the embedding. Equivalently: Euclid's tangent–secant relation and the null
+condition are the same equation, and the only thing that turns one into the
+other is the minus sign in the metric.</div>
+<div class="proof"><span class="thmhead">Proof.</span> <span class="m">tangent<sup>2</sup>=|X|<sup>2</sup>-α<sup>2</sup></span> is Euclid III.36 read through
+Pythagoras on the radius–tangent right angle; <span class="m">x<sub>0</sub><sup>2</sup>=|X|<sup>2</sup>-α<sup>2</sup></span> is
+<a class="xr" href="#eq:powerisheight">(5)</a>. Hence (spatial run)<span class="m"><sup>2</sup>=</span> (time drop)<span class="m"><sup>2</sup></span> and
+<span class="m">ds<sup>2</sup>=0</span>. (Verified numerically at the hinge and at <span class="m">600</span> random
+heights, <span class="m">|ds<sup>2</sup>|=5.7×10<sup>-14</sup></span>; receipts:
+<code>power\_of\_a\_point.py</code><sup class="mk r" title="P17_power_of_a_point">P17R3</sup>, <code>power\_is\_null.py</code><sup class="mk r" title="P17_power_is_null">P17R4</sup>.) <span class="qed">□</span></div>
+<p>This is the rulings of \S<a class="xr" href="#sec:rulings">§4</a> in a second register, and the two identify: a ruling meets the throat tangentially, so the rulings <em>are</em> the tangents Proposition <a class="xr" href="#prop:tangentnull">Proposition 2</a> describes, and “doubly ruled by straight null lines” and “every tangent to the throat is null” are one statement. What the classical register adds is reach: the proposition is about <em>every</em> point of the overhead, not only the ones a ruling happens to pass through. The sightlines of the projection that <em>touch</em> the throat are light rays; those that <em>cut</em> it are not, and the distinction is Euclid's own—the power theorem is about secants, and the null condition is its degenerate case, where the secant's two points merge. The null character is the embedding's, and it is worth being exact about where it lives: the equatorial plane carries a positive-definite restriction of <span class="m">η</span>, so no displacement <em>within</em> the plane is null. What is null is the corresponding displacement on the substrate, from the vantage lifted to its own height <span class="m">X<sub>0</sub>=√pow</span> to the point of tangency<sup class="mk r" title="O2_sightline_null_on_lift">P17R9</sup>. The planar figure is the shadow of that null line, which is why the power of a point reads the light cone at all. <em>The tangent is exactly where the light cone is.</em></p>
+<div class="thm remark"><span class="thmhead">Remark 2 — One privileged circle.</span> The identity <span class="m">pow=x<sub>0</sub><sup>2</sup></span> is not a fact about powers. It is a fact
+about <em>one</em> circle: the substrate's waist. A power taken with respect to any
+other circle of the projection is a perfectly good Euclidean quantity and is not
+a height, because <a class="xr" href="#eq:powerisheight">(5)</a> is the hyperboloid's equation and the
+hyperboloid has one waist. This bounds sharply what classical circle geometry can
+say here: a theorem whose quantity is built from the power with respect to the
+throat carries the signature for free; a theorem whose quantity is a chord
+(Ptolemy <span class="cite">[CoxeterGreitzer1967]</span>), a bilinear relation among points (La
+Hire's reciprocity <span class="cite">[Coxeter1987b]</span>), or a power with respect to some other
+circle (Casey's bitangents <span class="cite">[Casey1866]</span>) carries no height at all
+and returns Euclid unchanged. 
+
+The boundary is not a defect of the reading. It is
+the statement that the substrate has exactly one waist, met in the classical
+language. <em>For La Hire's reciprocity there is a second and sharper reason.</em> The
+hinge's polar has its foot at <span class="m">α<sup>2</sup>/2α=α/2</span>, <em>inside</em> the throat, where
+<span class="m">x<sub>0</sub><sup>2</sup>=|X|<sup>2</sup>-α<sup>2</sup></span> is negative and the substrate has no point at all. So the horizon-chord is
+real only at its ends—the two tangency points sit on the waist, at <span class="m">x<sub>0</sub>=0</span>, where the light cone
+touches—while its interior runs through the hole. <em>Only the endpoints are points of the
+substrate; the chord joining them is a line in the projection and not in the manifold.</em> La Hire's
+reciprocity is a statement about the whole projective plane, hole included, and its reciprocity runs
+through exactly the part that is not there—which is why most La Hire pairs cannot both be lifted, a
+point on an external vantage's polar lying generally inside the throat<sup class="mk l" title="figure_theorem">L1</sup>. 
+
+The bound is not an artefact of working in the projection either.
+<em>And the classical language reaches one thing further than a power.</em> Euclid's trichotomy for a line against a circle—cuts, touches, misses—is the same trichotomy the slicing paper reads on its fundamental ellipse and the framework paper reads as transverse crossing, tangency at a merged double root, or no real horizon: a vertical line's intersection count with that ellipse partitions the family exactly as <span class="m">ΛG<sup>2</sup>M<sup>2</sup>/c<sup>4</sup></span> against <span class="m">1/9</span> does, same middle member, and the Nariai configurations are that ellipse's vertical-tangent points <span class="cite">[JanzenSlicing, JanzenCRframework]</span>. <em>One trichotomy in three vocabularies</em>, and the causality paper proves the tangency without a metric while the figure exhibits the equivalence with one<sup class="mk l" title="figure_theorem">L1</sup>. <em>What is designation-dependent is which root is called tangent, not whether the family degenerates</em>: the degeneration is the discriminant's vanishing and is a fact about the geometry, while the label the vantage attaches to it moves with the vantage—which is the bound that keeps the identification honest. 
+
+And the polarity has a second thing to say about the figure, which is what a projective reading is for: it dualises it. 
+
+Duality with respect to the throat carries points to lines and reverses incidence, so the pencil of slicing planes through a hinge goes over to the range of points on that hinge's polar. 
+
+That polar is computed in one line—the hinge sits at transverse <span class="m">2α</span>, so its polar is the line at <span class="m">α/2</span>—and it is not a new line in the figure: it is <em>the opposite side of the contact triangle</em>, whose vertices are the three points at which the hinge triangle's sides touch the throat, the midpoints of the companion slicing paper's midpoint-tangency statement <span class="cite">[JanzenSlicing]</span>
+<sup class="mk r" title="D1_hinge_duality">P17R7</sup>. The dual of the hinge triangle is therefore the contact triangle, the dual of the swing is a point sliding along one of its sides, and the throat is self-dual, being the conic of the duality. The self-conjugate case is the throat-tangent door, whose pole is its own point of contact. <em>The corpus had the dual figure drawn from the beginning</em>—the tangency points are the same three the hinge placement already turns on—and read it only as a set of midpoints. The
+polarity of the embedding quadric itself—<span class="m">P↦\X:η(P,X)=α<sup>2</sup>\</span>,
+which depends on the single invariant <span class="m">η(P,P)</span> against <span class="m">α<sup>2</sup></span>—returns
+at each named point exactly what <a class="xr" href="#eq:powerisheight">(5)</a> already gives, since
+that identity is the hyperboloid's equation. One further projective question closes here rather than opening, and the closure is worth stating because it is the one-scale result met from a new side. The classification of a <em>pencil</em> of quadrics by its elementary divisors asks how two quadrics sit relative to one another; applied to this figure it returns nothing, and cannot. Every conic the construction owns is manufactured from the throat—the throat itself at <span class="m">α</span>, the hinge circumcircle at <span class="m">2α</span> which \S<a class="xr" href="#sec:rulings">§4</a> derives as the circle on the throat's own edge through its own centre, the contact triangle's circumcircle which is the throat again, and that triangle's incircle at <span class="m">α/2</span>. Taking the throat with the hinge circumcircle and computing the pencil's degeneracies returns the doubled line at infinity, which is precisely the classical signature of concentricity<sup class="mk r" title="D3_segre_no_pencil">P17R8</sup>: the classification hands back the manufacture. <em>A second quadric in general position would be a second scale, and the construction has one</em>—so the absence of a Segre problem here is the one-scale result read from the pencil side, and not a gap in the reading. The hinges are the case in point:
+each lies <em>on</em> the quadric (<span class="m">-3α<sup>2</sup>+4α<sup>2</sup>=α<sup>2</sup></span>), so its
+polar is the tangent hyperplane there, and the tangent length <span class="m">√3 α</span>
+from the foot of its axis is <a class="xr" href="#eq:powerisheight">(5)</a> evaluated at transverse
+radius <span class="m">2α</span> rather than an independent
+relation.<sup class="mk r" title="Q1_quadric_polarity">P17R10</sup></div>
+<p>Two ingredients of <a class="xr" href="#eq:powerisheight">(5)</a> are modern and it is worth marking both, since the temptation is to count one. The first is the minus sign—the Lorentzian signature, without which the tangent's length and the point's height are two numbers that happen to agree. The second is <em>power itself</em>: Euclid proves a relation among segments; it was Steiner who shifted the focus from the chords to the point and named <span class="m">|d<sup>2</sup>-r<sup>2</sup>|</span> an invariant belonging to it <span class="cite">[Steiner1826]</span>. Equation <a class="xr" href="#eq:powerisheight">(5)</a> needs the invariant, not the relation. That second move is the one this programme makes everywhere: it is the same move as reading the cut's offset <span class="m">r<sub>0</sub></span> not as a coordinate of the construction but as the mass itself <span class="cite">[JanzenSlicing, JanzenOperator]</span>. <a class="xr" href="#eq:power">(4)</a>–<a class="xr" href="#eq:powerisheight">(5)</a> and Proposition <a class="xr" href="#prop:tangentnull">Proposition 2</a> are identities, verified; the one-circle bound of Remark <a class="xr" href="#rem:onecircle">Remark 1</a> is established by the identity's own dependence on the waist; the historiographic reading is collected here. The bound of Remark <a class="xr" href="#rem:onecircle">Remark 1</a> is not a conjecture about what classical geometry might fail to say: it was found by running the classical catalogue against the throat one theorem at a time, and the boundary is where the run stopped paying. The pole–polar relation, the radical axis of the throat and the circle that places the hinge, and inversion in the throat each return the same object—the chord of contact of a point's two null tangents, which is that point's horizon on the throat—by three routes sharing no machinery; Ptolemy, La Hire's reciprocity, and Casey's bitangent identity <span class="cite">[CoxeterGreitzer1967, Coxeter1987b, Casey1866]</span> each hold on the figure and return nothing, for the three reasons the remark names. The catalogue, its receipts, and the failures that drew the boundary are recorded in the programme's figure-theorem ledger (<sup class="mk l" title="figure_theorem">L1</sup>, with <code>storyboard\_receipts/</code>); what is carried here is the identity, its bound, and what the run returned.</p>
+<p>Two things about that boundary are worth stating together, because they are the reason to trust the reading rather than merely to admire it. The first is that it was <em>found</em>, not posited: the classical catalogue was run against the throat one theorem at a time, and the boundary is where the run stopped paying. The second is what the run returned when it did pay. The pole–polar relation gives the chord of contact of a point's two null tangents; the radical axis of the throat and the circle that places the hinge gives the same line without mentioning a tangent; inversion in the throat gives it a third time, as the image of that circle. Three classical constructions sharing no machinery, one line—and the line is the vantage's horizon. None of the three is confined to the equatorial figure. The pole–polar relation is the quadric's own, and returns there what <a class="xr" href="#eq:powerisheight">(5)</a> already gives<sup class="mk r" title="Q1_quadric_polarity">P17R10</sup>; inversion in the throat extends as the algebraic identity <span class="m">η(P,P<sup>*</sup>)=α<sup>2</sup></span> for <span class="m">P<sup>*</sup>=α<sup>2</sup>P/η(P,P)</span>, holding off the equatorial plane and at either signature of <span class="m">η(P,P)</span>, an involution whose fixed set is the whole substrate of which the throat is the equatorial section<sup class="mk r" title="C3_inversion_extends">P17R6</sup>. The bound of Remark <a class="xr" href="#rem:onecircle">Remark 1</a> therefore governs all three routes in the full space exactly as it governs them in the projection. Euclid's tangent–secant theorem, read on the same figure, locates the light cone: along a sightline through the throat the near intersection is timelike-separated from the vantage and the far one spacelike, and the interval vanishes at the geometric mean of the two segments—exactly the quantity III.36 identifies as the tangent length. The triple-angle identity returns the Nariai configuration. The nine-point circle of the hinge triangle <em>is</em> the throat<sup class="mk l" title="figure_theorem">L1</sup>.</p>
+<p><em>None of that is new physics, and that is the point.</em> Every one of those results is already established in this corpus—the horizon, the light cone, Nariai, the throat's radius, the perspectival reading of the mass—and each is reached here by a route sharing no machinery with the one that established it. A reading that returned new physics from a two-thousand-year-old theorem about circles would be an object of suspicion; one that returns what the construction already proved, repeatedly and from unrelated directions, is doing what a faithful dictionary does. The classical geometry is therefore not evidence for the physics, and is not offered as any: it is a second way of seeing an object the construction arrived at first, and the agreement of the two readings is the only thing either can honestly be cited for. Nor is the reach of the agreement a mystery to be marvelled at. That so much of the classical theory of the circle turns out to speak about causal structure is accounted for entirely by Remark <a class="xr" href="#rem:onecircle">Remark 1</a>: it speaks about causal structure exactly when it speaks about the power of a point with respect to this one circle, and this one circle is the waist of the substrate.</p>
+<h2 id="sec:unification">Maximal symmetry, worn seven ways}</h2>
+<p>The reality of the substrate is the reality of <em>the</em> maximally symmetric Lorentzian manifold (Prop. <a class="xr" href="#prop:unique">Proposition 1</a>); its standard-hood is that same manifold serving as the universal measure (\S<a class="xr" href="#sec:standard">§2</a>). We now state the third face: that maximal symmetry—the isometry group <span class="m">SO(5,1)</span> complete and exhausted—is the single root of seven results the corpus establishes separately. And the list has a geometric substrate of its own worth naming before it is read: the four-geometries it ranges over are the polar slices of the substrate's own points (\S<a class="xr" href="#sec:rulings">§4</a>), one background for each point and none privileged, so <em>the many ways the substrate is read are indexed by the substrate itself</em><sup class="mk r" title="Q6r_polar_is_the_background">P17R12</sup>. The seven are each established; reading them as one fact is this paper's thesis, decidable by the test in \S<a class="xr" href="#sec:frontiers">§8</a>.</p>
+<ol><li><strong>Necessity and sufficiency of the augmentation.</strong> CR is the
+necessary and sufficient augmentation of general relativity for a
+description of structural existence, the necessary half
+measured <span class="cite">[JanzenModernParallax, JanzenCRframework]</span>. Maximal symmetry is what
+makes the substrate the least-arbitrary vacuum such a description can be cut
+from—least-arbitrariness being the programme's own criterion of necessity
+(Rule 2 of <span class="cite">[JanzenShadowExistence]</span>, read in the ontological register): a
+symmetry-breaking modulus is the adjustable parameter that criterion rejects,
+and maximal symmetry the unique structure that requires its configuration, so
+the substrate's selection is an instance of the discipline's own load-bearing
+rule rather than an added axiom.</li><li><strong>The constraint algebra is the symmetric-space grading.</strong>
+
+
+General relativity's own hypersurface-deformation (Dirac) algebra <em>is</em>
+the symmetric-space grading <span class="m">so(5,1)=h</span> of the substrate—two
+normal deformations bracketing into a tangential one being exactly two coset
+directions bracketing into the isotropy, term for term—and the
+“wrong-sign” structure function standardly recognized at the root of the
+problem of time <em>is</em> the substrate's own Lorentzian coset metric, so the
+obstruction dissolves into a single geometric fact: the base-dependence of
+that metric <span class="cite">[JanzenAlgebroid]</span>. <em>Named in the standard language the chain is shorter still</em>:
+for a homogeneous space the action algebroid<sup class="mk l" title="category_theory">L5</sup> of <span class="m"></span> on <span class="m">G/H</span> <em>is</em> the Atiyah algebroid of
+<span class="m">G→G/H</span>, so the grading is the exact sequence <span class="m">0 (5,1) →TC→0</span> with <span class="m">h</span> the kernel of the anchor and <span class="m">m</span> its image—and <em>a
+splitting of that sequence is what a connection is</em>, so a choice of lapse and shift is a connection in
+the standard sense. <em>The problem of time is then the statement that this bundle carries no flat
+one</em>: the structure function varies over the space of cuts <span class="m">C</span>, so no splitting is integrable, and there is no canonical
+time because there is no canonical horizontal distribution. Maximal symmetry, read at the canonical
+rung, is what GR's constraint algebra already <em>was</em> and what dissolves
+its problem of time—established on the symmetry-reducible sector, the
+finite <span class="m">so(5,1)</span> reduction.</li><li><strong>One scale; the constants are gauges.</strong> <em>The hinge figure makes the point before the
+constants do</em>: its incircle is the throat, at <span class="m">α</span>; its circumcircle passes through the hinges, at
+<span class="m">2α</span>; its excircles stand at <span class="m">3α</span>. Those are one scale read at <span class="m">1:2:3</span>, not three—each is
+<span class="m">α</span> times a dimensionless constant of the equilateral triangle, so neither <span class="m">2α</span> nor <span class="m">3α</span>
+carries information <span class="m">α</span> does not<sup class="mk l" title="figure_theorem">L1</sup>. The substrate carries a
+single dimensionful scale, <span class="m">Λ</span>; the constants through which physics is
+written on it are unit gauges. <span class="m"></span> is the null-ruling slope of the equilateral
+pseudo-sphere (\S<a class="xr" href="#sec:rulings">§4</a>), meeting <span class="m">Λ</span> dimensionally only in
+<span class="m">H=c√Λ/3</span>; <span class="m"></span> never appears alone but only as the source's
+gravitational radius <span class="m">GM/c<sup>2</sup></span>, the mass <span class="m"></span> perspectival and fixed to the
+Nariai value by <span class="m">Λ</span> in the cosmology (<span class="m">ΛG<sup>2</sup>M<sup>2</sup>/c<sup>4</sup>=1/9</span>) <span class="cite">[JanzenCRframework]</span>;
+<span class="m">ℏ</span> enters only at the seam, scaled by <span class="m">Λ</span> alone, the de Sitter
+horizon's thermal state <span class="cite">[GibbonsHawking1977]</span> closing the scale factor's lone self-adjoint-extension
+freedom <em>without a free parameter</em> <span class="cite">[JanzenCanonicalTime]</span>—and <em>lone</em> there is a dimension count rather than a manner of speaking, the radial operator having deficiency indices <span class="m">(1,1)</span> so that von Neumann's extension theory gives a <span class="m">U(1)</span> of self-adjoint extensions and exactly one real parameter, which is the parameter the horizon's thermal state spends<sup class="mk l" title="functional_analysis">L10</sup>; and <span class="m">k<sub>B</sub></span>
+converts that horizon temperature to energy. So the
+gravitational–cosmological–quantum sector spends <em>no free dimensionless
+constant</em>—every would-be free parameter is a unit gauge or a freedom maximal
+symmetry has already spent (the perspectival mass fixed at Nariai, the
+quantization closed by the horizon). <em>The claim is about those constants and
+carries one scope, which is stated here rather than discovered later</em>: the graviton
+tower's mode sums are regularised, and their log-scale coefficient is computed and
+does <em>not</em> vanish <span class="cite">[JanzenCanonicalTime]</span>. <em>So the sums spend one
+dimensionless constant.</em> What is measured above — the unit gauges over the one
+curvature scale — stands untouched by that; what does not follow is that
+<em>nothing</em> in the sector spends one. 
+
+<em>And the count that decides this reading has been run.</em> The sector's
+non-symmetric residue is one and is already counted: maximal symmetry leaves a
+one-dimensional quotient which <em>is</em> the scale, so no constant it fails to
+reach remains, and the matter sector spends none of the geometric
+budget<sup class="mk r" title="U3_the_residue_is_one_and_it_is_already_counted">R</sup>. <em>What the count
+leaves is not a constant but an initial condition</em>—the measured
+<span class="m">ρ<sub>r</sub>/ρ<sub>m</sub></span>, which the corpus carries as empirical at no cost to the
+dissolution, exactly as flat <span class="m">Λ</span>CDM carries <span class="m">η</span>. The source facts are each established and cited, the sector's
+free-data count of zero is carried by that count, and the theory's remaining
+free datum is the matter's.</li><li><strong>The cosmology is parameter-free.</strong> With <span class="m">Λ</span> the sole
+scale, the low-multipole deficit, the transmission character, and the
+geometric expansion rate carry no tunable freedom—the rigidity whose
+two-sidedness (match on the rate and the abundances; a parameter-free,
+falsifiable prediction on the acoustic shape—the low-multipole a
+cosmic-variance-limited wash, the damping scale a genuine open build) is the
+discriminating power, the one measured initial condition <span class="m">ρ<sub>r</sub>/ρ<sub>m</sub></span> an
+<span class="m">η</span>-analogue <em>read</em> not tuned <span class="cite">[JanzenCRcosmology]</span>.</li><li><strong>The continuous matter symmetry is excluded.</strong>
+<span class="m">su(3)⊄so(5,1)</span> precisely because <span class="m">SO(5,1)</span>
+is exhausted; the same completeness that locks the constants leaves no room
+in the continuous isometry for a geometric colour <span class="cite">[JanzenBoundary]</span>.
+
+
+The complement is not empty, and the same completeness fixes it: the
+substrate <span class="m">dS<sub>5</sub>=SO(5,1)/SO(4,1)</span> is topologically <span class="m">R×S<sup>4</sup></span>, hence spin with a <em>unique</em> spin structure, inherited by the
+four-dimensional cut; and the one orientation parity
+<span class="m">R (5,1)<sub>0</sub></span> <span class="cite">[JanzenAlgebroid]</span> reflects the
+cut-normal (<span class="m">r<sub>0</sub></span>) direction, acting on the cut's natural spinor as the chirality operator <span class="m">γ<sup>5</sup></span>
+itself—the cut-normal being the transverse mass-modulus (the offset <span class="m">r<sub>0</sub></span>
+that <em>is</em> the mass), whose <span class="m">Cl(1,4)</span> generator is <span class="m">γ<sup>5</sup></span>—so
+the substrate's single orientation <span class="m">Z<sub>2</sub></span> <em>is</em> the chirality
+grading, measuring left against right as it carries the graviton's helicities. <em>And the discrete residue is larger than the orientation parity alone, by a route that uses only what
+the substrate already carries.</em> 
+
+The horizon roots carry surface gravities, hence a residue pairing on the
+triple; that pairing has a holonomy about the Nariai points—the per-root resolution of a square root the
+Galois statement takes in the product—and adjoined to the
+monodromy symmetry it closes the Weyl group of
+<span class="m">so (6,C)</span>, this substrate's own complexified isometry
+algebra <span class="cite">[JanzenGroupoid, JanzenAlgebroid]</span>. <em>The <span class="m">A<sub>2</sub></span> the corpus reads off the cubic is the
+sub-root-system obtained by deleting one node of that <span class="m">A<sub>3</sub></span></em>, so the discrete structure is not an addition to
+the object but a fuller reading of it—which is this paper's thesis applied to itself.
+
+
+So the exhausted isometry does not merely wall a continuous matter symmetry; it
+fixes a discrete one, the fermion chirality identified with the substrate's own
+orientation parity. What the residue supplies is the fermion sector's arena, its chirality grading, and its discrete generation-structure—built and forced within CR rather than conjectured; the content it grades—the mass values, the electroweak scale—is the ordinary route, not the geometry's, so CR's claim is a gravitational–cosmological unification, not a geometric unification of matter <span class="cite">[JanzenBoundary]</span>. 
+
+The residue's discrete content is moreover a linear orientation skeleton—the parity <span class="m"></span>, a time reflection <span class="m"></span>, the <span class="m">γ<sup>5</sup></span> grading, and the <span class="m"></span>-parity carrying the fundamental <span class="m">3</span> to its antifundamental <span class="m">3</span>—whereas charge conjugation, antilinear where those act linearly, is field-level like the charge it acts on (the substrate carrying it as a symmetry and not a datum—the metric even in the charge, its sign the bend of the cut <span class="cite">[JanzenRange]</span>); so a geometric <span class="m"></span> is not auto-yielded, the geometry supplying the orientation <em>skeleton</em> of matter <em>and its antimatter</em>—the discrete <span class="m">3⊕3</span> the <span class="m"></span>-parity relates, matter and antimatter at one weight within CR <span class="cite">[JanzenMatter]</span>—and not the charge, which is field-level on both branches alike—the same partition once more, the residue the arena, the grading, and the skeleton, the content and the charge the ordinary route <span class="cite">[JanzenBoundary]</span>. 
+
+The antilinear structure is not, however, exhausted by the field level, and the boundary the residue draws encloses a positive shape: the reality involution <span class="m">τ↦ τ</span> on complexified cosmic time is antilinear <em>and</em> geometric, so charge conjugation factorises into a geometric kinematic (Feynman–St\"uckelberg) face—carried by the bead's own <span class="m">r=0</span> crossing, so that the cosmogenesis carries <span class="m"></span>'s kinematic content—and the field-level charge sign alone, a geometric <span class="m"></span> staying unyielded because only the charge closes from the field, and this face realised on the built fermion sector's zero-modes <span class="cite">[JanzenBoundary, JanzenMatter]</span>.
+The spin structure and the <span class="m">γ<sup>5</sup></span>-action are grounded:
+the parity <em>measures</em> chirality (the exchange reading excluded by explicit
+computation, since <span class="m"></span> reflects the transverse cut-normal and fixes the four
+spacetime legs), detailed in the boundary paper <span class="cite">[JanzenBoundary]</span>; the
+same parity grades mass in <em>both</em> faces—the geometric mass-reflection
+<span class="m">r<sub>0</sub>↦-r<sub>0</sub></span> (whence <span class="m">2M↦-2M</span>) and the <span class="m"></span>-odd fermion mass term—so
+mass, geometric or fermionic, is the substrate's one <span class="m"></span>-odd datum.
+<em>And that identification carries further than it has been read, so we develop it here rather than leave it
+in a clause.</em> Read at the electroweak sector it says that what the <em>Higgs mechanism</em> breaks is this
+parity: the <span class="m"></span>-symmetric sector is the offset-free, massless configuration and mass is the <span class="m"></span>-odd departure
+from it. <em>What is thereby claimed is a mechanism and not a magnitude</em>—the vacuum expectation value, the
+electroweak scale and the individual masses stay the ordinary route, as this paper says throughout and as the
+one-constant structure requires. <em>But three things follow that were not being said, and each is a
+property of the slicing relation the companion paper already
+carries</em><sup class="mk r" title="P0_the_order_parameter_is_the_offset_and_it_is_bounded_by_the_nariai_member">P17R15</sup>, <span class="m">2M=r<sub>0</sub>-r<sub>0</sub><sup>3</sup></span> in the gauge <span class="m">α=1</span> <span class="cite">[JanzenSlicing]</span>.
+<em>First, the mass-reflection above is an identity of that relation rather than a further assumption</em>: the
+cubic is odd, so <span class="m">r<sub>0</sub>↦-r<sub>0</sub></span> sends <span class="m">2M↦-2M</span> exactly.
+<em>Second, the symmetric sector is the bare substrate.</em> <span class="m">2M=0</span> at <span class="m">r<sub>0</sub>=0,±α</span>, and the metric
+function is <span class="m">1-r<sup>2</sup>/α<sup>2</sup></span> at all three—one massless geometry read at three offsets, so the unbroken
+phase of this breaking is de Sitter itself and not a separate configuration.
+<em>Third, and this is the part that distinguishes the geometric statement from the field-theoretic one it
+is being set beside: the order parameter is bounded, and its bound is the degenerate member.</em> Over the
+admissible offsets <span class="m">|r<sub>0</sub>|≤2α/√3</span>—the regime range the slicing paper reads off the discriminant
+<span class="m">4-3r<sub>0</sub><sup>2</sup></span>—the mass satisfies <span class="m">|M|≤α/3√3</span>, with equality at <span class="m">r<sub>0</sub>=±α/√3</span> and at
+the range endpoints, and that value is the Nariai mass, obtained independently as the double root of the
+horizon cubic. <em>A quartic potential is unbounded in its field; this order parameter is not, and it
+saturates exactly at the configuration a collapse reaches</em> <span class="cite">[JanzenCRframework]</span>.
+<em>And the breaking has a cause here rather than a chosen minimum.</em> The companion paper does not posit the
+offset: it derives that a manifold observer cannot be assumed to sit at <span class="m">r<sub>0</sub>=0</span>, because the reference such
+an observer actually has is the hole's image on their celestial sphere and there is no marked point on that
+image for a reticle to land on <span class="cite">[JanzenSlicing]</span>. <em>So on this reading the symmetry is broken because
+of what a reference is, not because a potential was written with its minimum away from the origin.</em>
+<em>We state the limits of that with the same care.</em> No vacuum expectation value, no scale and no mass value
+follows from any of it; nothing here derives the Higgs field, its potential, or the gauge group it breaks—and
+if that group were ever promoted from described to forced, the relation this paper draws to it would have to be
+re-examined rather than inherited <span class="cite">[JanzenBoundary]</span>. One
+candidate centrepiece stands here: the residue's
+full automorphism <span class="m">Aut(A<sub>2</sub>)=S<sub>3</sub><sub>2</sub>≅D<sub>6</sub></span>, read on a
+fermion sector, carries the shape <span class="m">3×2</span>—three generations times two
+chiralities—the <span class="m">Z<sub>2</sub></span> the <span class="m">γ<sup>5</sup></span> grading just fixed, the <span class="m">S<sub>3</sub></span>
+permuting the three mass-tied roots of the offset-mass cubic (the discrete
+<span class="m">su(3)</span>-Cartan–Weyl shadow <span class="cite">[JanzenAlgebroid]</span>), a <span class="m">2M</span>-degenerate
+flavour triplet whose hierarchy would be a separate breaking; the chirality
+factor grounded, and the generation factor since <em>built</em> and forced within
+CR <span class="cite">[JanzenMatter]</span>; and the descent onto a <em>propagating</em> spinor sector is now
+built as well, a Dirac field on the unpolarised radiating member propagating on the light
+cone and carrying the twist on <span class="m">γ<sup>5</sup></span> alone <span class="cite">[JanzenDynamics]</span>. The same <span class="m">A<sub>2</sub></span> skeleton is now realised in the geometry itself: the slicing paper draws the hexad as a skew hexagon of null rulings across the substrate's two horns, each horn's three vantage-hinges designating the three roots <span class="cite">[JanzenSlicing]</span>. Whether that geometric six-fold is the <em>same</em> hexad as the flavour triplet here—the one exchanged by the geometric time reflection, the other by the offset parity <span class="m"></span>, two distinct <span class="m">O(5,1)</span> reflections that both swap the null rulings—or a resonance of shared abstract type, is <em>settled</em> rather than open: the slicing paper establishes it as a resonance and <em>not</em> an identity—the horn-swap <span class="m"></span> (timelike, horn-flipping) and the offset parity <span class="m"></span> (spacelike, horn-preserving) being distinct reflections that share the fundamental triple and complete it distinctly <span class="cite">[JanzenSlicing]</span>, verified on the six points. The chiral content this parity would grade is
+not built here.</li><li><strong>One circle: the equator is what the construction is built on.</strong> 
+
+The substrate has exactly one waist (Rem. <a class="xr" href="#rem:onecircle">Remark 1</a>), and its radius <em>is</em> the curvature: <span class="m">α=√3/Λ</span>, the sole scale (\S<a class="xr" href="#sec:standard">§2</a>). 
+
+What the construction is built from is a set of facts about that one circle, and they are one fact. 
+
+The power of a point with respect to it is the square of the point's height, <a class="xr" href="#eq:powerisheight">(5)</a>, so the tangent to it from any point of the substrate is null (Prop. <a class="xr" href="#prop:tangentnull">Proposition 2</a>) and the rulings <em>are</em> those tangents (\S<a class="xr" href="#sec:rulings">§4</a>): the double ruling and the classical power law are the same statement, set by <span class="m">α</span> and by nothing else, and the power vanishes identically on the circle itself (<span class="m">x<sub>0</sub>=0</span>). 
+
+That circle is the incircle of the hinge triangle and its nine-point circle besides<sup class="mk l" title="figure_theorem">L1</sup>, so the hinges stand at <span class="m">2α</span> as an <em>output</em> of the hole rather than a stipulation, the three sides are the Nariai double null rulings tangent at their midpoints, and the triple-angle identity returns the Nariai configuration of its own accord <span class="cite">[JanzenSlicing]</span>. 
+
+The signed areal radius passes through zero at a point <em>on</em> that circle, so the three hinges' walls lie on it as a <span class="m">Z<sub>3</sub></span>-orbit whose three-foldness is the hole's own, and the fermion sector's three chiral generations are those three walls <span class="cite">[JanzenMatter]</span>. The slicing's lap runs around it, and through it the cosmological gravitational collapse of a black hole in a prior universe completes into the formation of a universe like our own—collapsed matter cannot terminate but continues as a cosmology—matter and antimatter the two ends of one conjugation across the crossing it carries <span class="cite">[JanzenCRframework, JanzenBoundary]</span>. And the <em>count</em> is not a fifth thing read off that circle but a statement about the circle's own two relations. The substrate's discrete residue is the direct product <span class="m">Aut(A<sub>2</sub>)=S<sub>3</sub><sub>2</sub></span>, whose two factors act on independent structures—the Weyl <span class="m">S<sub>3</sub></span> on the three roots, the inversion on the two rulings <span class="cite">[JanzenAlgebroid]</span>. Read on the waist, those structures are the two things a figure can be to a circle: the three roots are the three special points <em>on</em> it (the offset line meets it at <span class="m"></span> and <span class="m"></span>, with <span class="m">r=0</span> fixed at the back) <span class="cite">[JanzenSlicing]</span>, and the two rulings are the lines <em>tangent</em> to it (\S<a class="xr" href="#sec:rulings">§4</a>). So the residue factorises because <em>on</em> and <em>tangent</em> are independent<sup class="mk l" title="combinatorics">L6</sup>, and the factors differ in kind for the same reason: a ruling is a line of the substrate, so exchanging the two is a motion of it—an isometry, acting on the cut spinor as <span class="m">γ<sup>5</sup></span>, and chirality descends <em>gauged</em>; a root labels a different cut, so permuting the three moves through the solution space and is no motion of the substrate—the
+monodromy symmetry <em>of that cover</em>, which is the Weyl <span class="m">S<sub>3</sub></span> and not the turnaround's <span class="m">Z<sub>3</sub></span> the generations bear (the two threes distinguished below)—and a family symmetry is <em>global</em>. The Standard Model's arrangement of a gauged chirality against a global flavour is, in this reading, the difference between being <em>on</em> the one circle and being <em>tangent</em> to it.
+
+Maximal symmetry is why there is one such circle and not a family of them, and why <span class="m">α</span> is the one length the exhausted isometry leaves to set it: the lines, the curvature, the placement, the count, and the passage are all read off the same waist.</li><li><strong>The universality of physics.</strong> One maximally symmetric
+substrate is one standard the same at every point; that a material structure
+is the same structure everywhere is that constancy of the standard
+(\S<a class="xr" href="#sec:standard">§2</a>). Universality is not a postulate over the geometry but
+the maximal symmetry read as the invariance of the
+measure <span class="cite">[JanzenThesis, JanzenModernParallax]</span>.</li></ol>
+<p>A consequence of the fifth face is drawn, and it is worth stating here precisely because it is <em>not</em> an eighth face. The residue's mass-parity—<span class="m">r<sub>0</sub>↦-r<sub>0</sub></span>, whence <span class="m">2M↦-2M</span>, the substrate's one <span class="m"></span>-odd datum—and the triple angle that fixes the discrete generation index are both statements about the <em>cut</em>, and written in a general dimension they cease to hold. The metric function in <span class="m"></span> dimensions is not assumed but obtained: the slicing operator's vacuum condition, which is the kernel of its matter functional on a cut in the construction gauge, reads <span class="m">rf'+(D-3)(f-1)+2Λr<sup>2</sup>/(D-2)=0</span> in <span class="m"></span> dimensions, and its entire solution space is the Tangherlini–de Sitter family <span class="m">f=1-2M/r<sup>D-3</sup>-r<sup>2</sup>/α<sup>2</sup></span> with <span class="m">α=√(D-1)(D-2)/2Λ</span> and <span class="m"></span> the single constant of integration <span class="cite">[JanzenSlicing]</span>. With that function the mass is <span class="m">2M=r<sub>0</sub><sup>D-3</sup>-r<sub>0</sub><sup>D-1</sup></span>; the horizon relation collapses to a single multiple-angle in the sky angle only at <span class="m">D=4</span> and <span class="m">D=5</span>, since the harmonics standing below the top one number two or more from six dimensions upward against a single available scale; and <span class="m">2M</span> is odd in the signed offset only when <span class="m"></span> is even, so at <span class="m">D=5</span> the parity fixes each geometry instead of exchanging it with its conjugate and there is no <span class="m"></span> for the residue to be. Four dimensions is therefore the only one carrying both a generation count and a chirality, and the corpus's three is its <span class="m">D-1</span> <span class="cite">[JanzenSlicing, JanzenMatter]</span>. <em>The reason this is not a face of maximal symmetry is that it does not come from maximal symmetry.</em> The substrate is maximally symmetric and moduli-free in every dimension, so the criterion of necessity has nothing to grip on the dimension itself; what selects here is the <em>matter sector's own content</em>, and the two statements are compatible only because they are about different objects—the cut's dimension is settled, the substrate's remains bounded below and not above. Reading this as a ceiling on the substrate would re-make exactly the error the distinction is drawn to prevent.</p>
+<p>So the property that makes CR <em>decisive against the world</em>—no knob at any rung—is the property that makes its matter sector <em>geometrically hard</em>: maximal symmetry, having spent everything, leaves the cosmology nothing to tune and leaves the geometry no continuous structure to build matter from. The rigidity and the wall are one fact—and the count of free data makes it exact: with the gravitational–cosmological–quantum sector spending no free dimensionless constant <em>in its geometric ledger</em>—the graviton tower's mode sums spend one, computed at the frontier item <span class="cite">[JanzenCanonicalTime]</span>, which is a regularisation and not a gauge—the theory's entire free-data budget—the one measured <span class="m">ρ<sub>r</sub>/ρ<sub>m</sub></span> and the fermion sector's own content—is carried by the matter, so matter is the residue maximal symmetry leaves not in field content alone but in free data. The descent onto a spinor sector <span class="cite">[JanzenMatter]</span> makes this precise at the discrete rung: the fermion sector's discrete structure—the generation multiplicity, the chirality, and the family symmetry, the full <span class="m">D<sub>6</sub></span> residue—is forced within CR, drawn from the substrate rather than tuned, so it leaves the free-data budget for the residue; the budget then carries the fermion <em>content</em> alone—the gauge assignment and the mass values, the ordinary route, whose deeper structure is the open search. The discrete half of matter is thus the stone's and the content half the search. The residue the wall leaves—now developed from the discrete orientation parity into that full skeleton where matter's one geometric opening lives—is taken up in \S<a class="xr" href="#sec:shadows">§6</a>.</p>
+<h3 id="sec:ledger">The geometric content of the ledger, and the fine-tuning problems the one scale dissolves}</h3>
+<p>The constant rung is not bare unit-counting. On this fully determined geometry each gauge is a specific geometric feature: <span class="m"></span> is the null-ruling slope of the equilateral hyperboloid (\S<a class="xr" href="#sec:rulings">§4</a>), <span class="m">Λ</span> the waist, and <span class="m"></span> the cut's <em>offset</em>—the mass <em>is</em> the offset of the section from the central geodesic, <span class="m">2M=α ((r<sub>0</sub>/α)-(r<sub>0</sub>/α)<sup>3</sup>)</span> <span class="cite">[JanzenOperator, JanzenSlicing]</span>, so <span class="m"></span> enters only as the offset-length <span class="m">GM/c<sup>2</sup></span> and is the identification of the mass-label with that offset, not a coupling of independent matter. These three—<span class="m">c,Λ,G</span>—are the gauges of the <em>real</em> Lorentzian geometry, each a nameable feature of the substrate and its cuts. <span class="m">ℏ</span> and <span class="m">k<sub>B</sub></span> enter a different register: the de Sitter horizon's standard Gibbons–Hawking thermal state (period <span class="m">β=2πα</span>) <span class="cite">[JanzenCanonicalTime]</span>, a Euclidean continuation distinct in kind from the real-analytic imaginaries of \S<a class="xr" href="#sec:imaginary">§3</a>. So whether “the constants are gauges” is mere unit-counting has a structured answer: the real-geometric gauges <span class="m">c,Λ,G</span> carry CR-specific geometric identifications; the thermal gauges <span class="m">ℏ,k<sub>B</sub></span> are standard horizon thermodynamics, their CR-specific content the ledger's closing of the one quantum freedom, not a new geometric feature. The identifications and the register split are established at the cited sources; reading them as one partition is this paper's consolidation of them.</p>
+<p>This settles what the Planck values <em>are</em> here. The traditional Planck length, mass, and time—<span class="m">ℓ<sub>P</sub>=√ℏG/c<sup>3</sup></span>, <span class="m">m<sub>P</sub>=√ℏc/G</span>, <span class="m">t<sub>P</sub>=√ℏG/c<sup>5</sup></span>—are combinations of these gauges, and <em>cross-register</em> ones, mixing the thermal <span class="m">ℏ</span> with the real-geometric <span class="m"></span> and <span class="m"></span>. Since the ledger leaves exactly one physical scale (<span class="m">Λ</span>, equivalently <span class="m">α=√3/Λ</span>), a Planck value is <em>not</em> a physical scale but what unit-counting yields when it has only gauges to count. The one physical length is <span class="m">α</span>, not <span class="m">ℓ<sub>P</sub></span>; their ratio <span class="m">α/ℓ<sub>P</sub>∼10<sup>61</sup></span> (from <span class="m">Λℓ<sub>P</sub><sup>2</sup>≈3×10<sup>-122</sup></span> <span class="cite">[JanzenCRcosmology]</span>) is the size of the universe in gauge-units—a number, not a tuning.</p>
+<p><em>One thermodynamic quantity the corpus has never taken belongs here, because its number is this one and a reader arriving from horizon thermodynamics will compute it.</em> The de Sitter horizon whose Gibbons–Hawking state supplies <span class="m">ℏ</span> above has area <span class="m">A=4πα<sup>2</sup></span>, so the Bekenstein–Hawking value carried on it is</p>
+<div class="eqwrap"><div class="eq">S= A4ℓ<sub>P</sub><sup>2</sup>=π (α/ℓ<sub>P</sub>)<sup>2</sup>= 3πΛℓ<sub>P</sub><sup>2</sup> ≈3×10<sup>122</sup>,</div><span class="eqno">(6)</span></div>
+<p>which is the gauge-count just stated, squared, and nothing further<sup class="mk r" title="P17_the_ds_entropy_is_the_gauge_count_squared_and_is_the_cc_number">P17R17</sup>. <em>So the horizon thermodynamics introduces no scale the ledger has not already entered</em>: <span class="m">S</span> is a pure number built from <span class="m">α/ℓ<sub>P</sub></span>, and <span class="m">ℓ<sub>P</sub></span> enters it as the gauge it was shown to be rather than as a physical length the entropy is measured against.</p>
+<p><em>And it is not merely of the same magnitude as the number the next paragraph meets; it is the same number.</em> The cosmological-constant problem's factor is the ratio of the field-theoretic vacuum estimate to the observed <span class="m">ρ<sub>Λ</sub>=Λ/8πG</span>, which is <span class="m">8π/(Λℓ<sub>P</sub><sup>2</sup>)</span>; the entropy is <span class="m">3π/(Λℓ<sub>P</sub><sup>2</sup>)</span>. <em>The two differ by <span class="m">3/8</span> and by nothing else</em>—both are <span class="m">1/(Λℓ<sub>P</sub><sup>2</sup>)</span> read with a different numerical coefficient, and the <span class="m">10<sup>122</sup></span> of the one is the <span class="m">10<sup>122</sup></span> of the other rather than a coincidence of size<sup class="mk r" title="N1_the_entropy_and_the_fine_tuning_factor_are_one_number">R</sup><sup class="mk l" title="information_theory">L21</sup>. So the reader who arrives with the entropy and the reader who arrives with the fine-tuning are holding one quantity, and the dissolution given below for the second is already the dissolution of the first: there is no physical scale for the ratio to be a tuning <em>between</em>, <span class="m">ℓ<sub>P</sub></span> being a cross-register gauge-combination and not a length the world is built to.</p>
+<p><em>This also says why the corpus takes this horizon's temperature and never its entropy, which is a structural difference rather than an oversight.</em> The temperature <span class="m">T=1/2πα</span> is built from <span class="m">α</span> alone—one register, the real-geometric one, with the thermal gauge setting only the unit; the entropy is a ratio of <span class="m">α</span> to <span class="m">ℓ<sub>P</sub></span> and is therefore a count taken <em>across</em> the register split above, mixing the thermal gauge with the real-geometric ones. <em>The quantity the framework needs is the one-register one, and the quantity that would test the ledger is the cross-register one</em>—and what the cross-register one returns is the ledger's own number back. <em>What is not claimed is that a de Sitter entropy is asserted here</em>: whether <span class="m">S=A/4</span> carries to a cosmological horizon on this reading is a question this paper does not settle, and the clause states what the number <em>is</em> if the standard expression is taken. <em>Were it to fail to carry, that would be a result and not a gap</em>—a one-scale ledger forbidding a thermodynamic relation rather than merely accommodating one. The ledger, the register split and the Planck-value reframe are established above, and <span class="m">S=π(α/ℓ<sub>P</sub>)<sup>2</sup>=3π/(Λℓ<sub>P</sub><sup>2</sup>)</span> together with its coincidence with the cosmological-constant factor is computed <sup class="mk r" title="P17_the_ds_entropy_is_the_gauge_count_squared_and_is_the_cc_number">P17R17</sup>. Whether <span class="m">S=A/4</span> applies to this horizon is not claimed.</p>
+<p><em>One consequence of that declination belongs with it, because it makes the branch consequential where this paragraph leaves it costless.</em> A topological term—the Gauss–Bonnet combination—contributes no field equation in four dimensions <span class="cite">[JanzenCanonicalTime]</span>, so a coefficient multiplying one is not read off any dynamics; its one remaining observable is a horizon-entropy contribution, and that contribution is <em>topological</em>, going as the Euler characteristic of the horizon cross-section <span class="cite">[JacobsonMyers1993]</span> and so contributing an area-independent constant. <em>And the ledger has no absorber for a constant entropy shift</em> as it has the one curvature for a constant vacuum energy: <span class="m">S=π(α/ℓ<sub>P</sub>)<sup>2</sup></span> is fixed once <span class="m">α</span> is. <em>So the two branches do not cost the same.</em> If <span class="m">S=A/4</span> carries, the sector acquires a free dimensionless constant that cannot be absorbed—against a ledger stated to spend none; if it does not, the coefficient has no home and the failure is the result this paragraph already anticipates. <em>The one-scale reading therefore has a stake in the branch, and the question is not neutral</em><sup class="mk r" title="p0_the_entropy_declination_is_load_bearing_for_the_ledger">P17R1</sup>.</p>
+<p>This positions the framework to make a striking conjecture, stated here as the hypothesis it is, to be grounded through the matter sector: <em>the one scale dissolves the two deepest fine-tuning problems of cosmology at once.</em> Two results of the projective bake sharpen what "one scale" means here, and they belong with the claim rather than after it. **First**, the substrate's metric is not merely <em>compatible</em> with a single scale: read projectively it <em>is</em> the Cayley–Klein construction on the absolute <span class="m">η(X,X)=0</span>, whose scale constant is <span class="m">α</span> (\S<a class="xr" href="#sec:rulings">§4</a>)—and a Cayley–Klein geometry carries the scale as its <em>only</em> free constant, signature, null structure and isometry group all being fixed by the absolute's projective type.</p>
+<p>The one-scale reading therefore has a classical mechanism and is not only the outcome of an exhaustive audit. **Second**, <span class="m">α</span> is precisely what the causal structure does <em>not</em> fix: the group preserving the absolute is <span class="m">O(5,1)<sup>+</sup></span>, one generator larger than the substrate's isometry group, and that extra generator is the dilation carrying <span class="m">α↦λα</span> <span class="cite">[JanzenGroupoid]</span>.</p>
+<p>So the null cone determines the geometry up to the scale, and the scale is the one thing it leaves—which is why there is a single dimensionful input and nothing for a dimensionless tuning to hide in. <em>And the family that dilation sweeps out has a shape worth naming, because it makes the light cone structural rather than a limiting case.</em><sup class="mk r" title="P17_the_alpha_family_is_a_foliation">P17R2</sup><sup class="mk l" title="quadric_geometry">L17</sup><sup class="mk l" title="conformal_geometry">L8</sup></p>
+<p>The substrates of every <span class="m">α</span> are the level sets of one quadratic form on the ambient, so the family is a <em>foliation</em> and the null cone is its singular member—the leaf at <span class="m">α=0</span>—rather than an object of a different kind sitting beside the family. <em>One expectation about that family fails, and its failure is structural rather than a gap.</em> A confocal family of quadrics carries a classical orthogonality theorem, and in the equilateral case—which is what this substrate is—the confocal family <em>is</em> the dilation family, so the theorem looks applicable.</p>
+<p>It is vacuous here: the theorem is not that confocal quadrics meet orthogonally, but that through a generic point pass <em>three</em> members, one of each type, and that those meet pairwise orthogonally. The confocal equation is cubic in its parameter generically and <em>linear</em> in the equilateral case, so exactly one member passes through any point and there is no second for it to be orthogonal to.</p>
+<p>The hypothesis fails, not the conclusion—and the same fact without the machinery is that a point assigns one value to the quadratic form, which is what makes the family a foliation. <em>And that same one-member-per-point fact fixes where this construction's harmonic analysis can live</em>: a confocal family through which three surfaces pass at each point supports separation in ellipsoidal coordinates, and one through which a single surface passes does not. There are therefore no ellipsoidal harmonics to be had on the substrate, and the corpus's harmonic analysis is leafwise throughout—on the spatial leaf, in its own spherical harmonics—not by choice of method but because the ambient offers no other separation<sup class="mk l" title="harmonic_analysis">L12</sup>.</p>
+<p>The <em>cosmological-constant problem</em>—that <span class="m">Λ</span> is some <span class="m">10<sup>122</sup></span> times smaller than the quantum-field vacuum estimate <span class="m">∼M<sub>pl</sub><sup>4</sup></span>—rests on two premises the framework rejects.</p>
+<p>First, that the Planck scale is a physical scale <span class="m">Λ</span> must be small against: it is a gauge-combination (above), so there is nothing physical to be small against.</p>
+<p>Second, that a bare <span class="m">Λ</span> and the matter vacuum energy are distinct quantities whose sum must be finely cancelled to the observed value. Here <span class="m">Λ</span> is the geometrically primary substrate curvature—the maximally symmetric ground state's own scale, the single scale of the ledger—and a <em>constant</em> vacuum energy is not a source held against a bare <span class="m">Λ</span> but is absorbed into that one observed curvature: a constant density gravitates as a curvature scale, so it enters the profile's <span class="m">Λr<sup>2</sup>/3</span> term, not as a <span class="m">2m/r</span> bend, and there is no bare-<span class="m">Λ</span>-versus-vacuum-energy split for the <span class="m">10<sup>122</sup></span> cancellation to act on—the substrate carries only the total, the observed ground-state scale. The substrate/bend distinction separates <span class="m">Λ</span> from <em>inhomogeneous</em> matter, a genuine bend that breaks the maximal symmetry, not from the maximally symmetric vacuum energy the ground-state curvature already carries. The first premise is defused on established ground; the second is defused on the profile structure—and it must be, since reading vacuum energy as a <span class="m">2m/r</span>-type bend overreaches for precisely the constant vacuum energy the problem concerns. The <em>coincidence problem</em>—why <span class="m">Λ</span> is comparable to the matter density now—is already answered: the framework has one timescale, <span class="m">∼1/(√Λ\,c)</span>, and any observer observes at a time of its order <span class="cite">[JanzenCRframework]</span>. That both of the deepest fine-tuning problems fall to the <em>same</em> one-scale fact—the substrate's maximal symmetry read at the constant rung—is a strong suggestion of coherence at the most fundamental level, and it is where the geometric core ceases to be an accounting of the corpus and becomes a place the framework renders its own verdict. The coincidence dissolution is argued in the framework paper <span class="cite">[JanzenCRframework]</span> and the Planck-scale reframe above; the cosmological-constant dissolution—that there is no bare-<span class="m">Λ</span>-versus-vacuum-energy split for the cancellation to act on—rests on the profile structure and on <span class="m">Λ</span> being geometrically primary.</p>
+<p><em>The register split is the substrate's two real forms, and this is where the ledger opens onto the physics.</em> The real-geometric gauges <span class="m">c,Λ,G</span> are features of the <em>Lorentzian</em> real form <span class="m">dS<sub>5</sub>=SO(5,1)/SO(4,1)</span>: the existent, temporal geometry whose cuts are the solutions of general relativity, whose indefinite signature is the “wrong sign” the constraint algebra carries as the problem of time <span class="cite">[JanzenAlgebroid]</span>, and on whose cuts the one discrete residue is read once as that solution space and again, on a fermion sector, as the flavour skeleton <span class="cite">[JanzenMatter]</span>.</p>
+<p>The thermal gauges <span class="m">ℏ,k<sub>B</sub></span> enter through the horizon's Gibbons–Hawking Euclidean, and that continuation is the substrate's <em>other</em> real form—the global Wick <span class="m">x<sub>0</sub>↦ix<sub>0</sub></span> carrying <span class="m">dS<sub>5</sub></span> to the compact <span class="m">S<sup>5</sup>=SO(6)/SO(5)</span>, the same compact face of \S<a class="xr" href="#sec:imaginary">§3</a> on which a continuous <span class="m">su(3)</span> can live, real by construction but carrying no clock <span class="cite">[JanzenBoundary]</span>.</p>
+<p>These are two of the real forms of the one complex group <span class="m">SO(6,C)</span>, meeting at the horizon where <span class="m">β=2πα</span>.</p>
+<p>So the thermal and the gauge registers are not two entries in the ledger but one tenant of one real form: colour requires the <em>full</em> <span class="m">SO(6)</span>—the smallest faithful real representation of <span class="m">su(3)</span> is <span class="m">R<sup>6</sup></span>, so it cannot sit in the <span class="m">SO(5)</span> of the seam continuation—and the horizon's <span class="m">β=2πα</span> Euclidean rides that same <span class="m">S<sup>5</sup></span>, so the quantum of action and the colour symmetry share the one Euclidean real form exactly as <span class="m">c,Λ,G</span> share the Lorentzian one.</p>
+<p>Read this way the ledger's own partition is the corpus's deepest divide seen at the constant rung. The Lorentzian real form is the existent world: general relativity, the cosmology whose fluctuations are inherited classical content rather than a substrate quantum vacuum <span class="cite">[JanzenCRcosmology]</span>, the matter, and the flavour the residue grades. The Euclidean real form is the atemporal structure that world carries—the gauge group and the quantum scale together—real but not a co-equal existent, because it holds no clock (\S<a class="xr" href="#sec:imaginary">§3</a>; <span class="cite">[JanzenCanonicalTime]</span>). The maximal symmetry this section has worn seven ways is here worn once more and most simply, as the pair of real forms itself: one substrate, one complex group, the temporal world and its timeless structure its two real slices. On this reading the two divides the last century drew—general relativity against the quantum, and gravity against the gauge forces—are not theories to be joined but the one substrate read on its two real forms, the join already present in the complexification the substrate was reached through; the physics of that reading is drawn in the boundary paper, now the corpus's physics-synthesis <span class="cite">[JanzenBoundary]</span>, and its geometric closure is this. The register split and the two real forms are established (\S<a class="xr" href="#sec:imaginary">§3</a>; <span class="cite">[JanzenBoundary, JanzenAlgebroid, JanzenCanonicalTime]</span>), and the co-location of the thermal and gauge Euclideans—<span class="m">su(3) (6)</span> but <span class="m">⊄so(5)</span>—is computed<sup class="mk r" title="P17_qm_S4_vs_S5">P17R5</sup>.</p>
+<h2 id="sec:shadows">Physics as broken-symmetry shadows}</h2>
+<p>If the maximally symmetric substrate is the universal standard (\S<a class="xr" href="#sec:standard">§2</a>), then the physics—the exact geometries, the masses, the warping, the cosmic history—is what that standard looks like when its symmetry is cut. This is the frame the paper is written in, and it is already the corpus's, stated here in one place.</p>
+<p><b class="para">The ladder of symmetry.</b> The substrate is <span class="m">dS<sub>5</sub>=SO(5,1)/SO(4,1)</span>, maximal symmetry complete. Its physical leaves carry the maximally symmetric four-dimensional background <span class="m">dS<sub>4</sub></span>—the empty cosmology, the clock running on <span class="m">Λ</span> alone.</p>
+<p>Below these are the exact solutions: Schwarzschild, Schwarzschild–de Sitter, Nariai, the Friedmann geometries, each obtained by a cut that breaks some of the substrate's symmetry, with matter the bend of the cut that no continuous symmetry holds in place <span class="cite">[JanzenSlicing, JanzenOperator, JanzenRange]</span>. Each descent down the ladder is a symmetry broken; the standard above is exact, the geometry below is the standard read through the break. <em>What kind of relation the word “cut” names is worth fixing here rather than leaving to be inferred, because the two available readings part company one rung down and the parting is computable.</em><sup class="mk r" title="P17_the_cut_is_planar_only_at_M_zero">P17R14</sup> The first descent is <em>linear</em>: a hyperplane section <span class="m">\X:η(n,X)=c\</span> of the substrate returns, on splitting <span class="m">X=cn+Y</span> with <span class="m">η(n,Y)=0</span>, the locus <span class="m">η(Y,Y)=α<sup>2</sup>-c<sup>2</sup></span>—a de Sitter four-space of radius <span class="m">√α<sup>2</sup>-c<sup>2</sup></span>, for <em>every</em> admissible <span class="m"></span> and <span class="m"></span>, a quadric cut by a linear space being a quadric.</p>
+<p>The polar hyperplane above is the <span class="m">c=0</span> member, and the computation shows it is not one example among many but the <em>only</em> kind: since Schwarzschild–de Sitter has Kretschmann scalar <span class="m">48M<sup>2</sup>/r<sup>6</sup>+24/α<sup>4</sup></span>, which is constant only at <span class="m">M=0</span>, <em>a plane section of the substrate is Schwarzschild–de Sitter exactly when the mass vanishes.</em> <em>Below that rung the relation is therefore not a section, and it is not an isometric embedding either.</em> Imposing on a would-be hypersurface only what the slicing construction already carries—a round areal two-sphere, and staticity as the ambient boost the pencil turns on—makes the substrate condition fix one radial function and the induced metric fix its derivative, two determinations of one function; they disagree, and the boost rate they would require is radius-dependent, which a Killing flow's rate cannot be. <em>The closure defect factors with an overall factor of <span class="m"></span></em>: the amount by which a cut fails to close as a hypersurface is the mass it carries, which is this framework's “matter is the bend of the cut” as an identity rather than a reading. This is consistent with the classical embedding class—Schwarzschild needs two flat dimensions above four and the substrate supplies one—and it fixes the usage: <em>“cut” is the group-theoretic relation the companion papers define</em>, a geometry whose isometry group contains a sweep-subgroup of the substrate's <span class="cite">[JanzenRange]</span>, fixed by an orientation datum together with a causal-vantage datum <span class="cite">[JanzenAlgebroid]</span>, with the derived metric read through that break. <em>The isometric-embedding reading coincides with it at <span class="m">M=0</span> and nowhere else</em>, and nothing in the programme rests on the stronger reading. Among those cuts are both the black holes and the cosmologies, so a black hole and a cosmos are not two objects but one—the substrate read through two breaks—and the collapse of one is continued through the seam as the expansion of the other, the <em>cosmogenetic bead</em> the framework proves one closed curve of the substrate <span class="cite">[JanzenCRframework]</span>. The corpus's deepest single identity is at bottom a fact about the one object: collapse and cosmology are the same substrate seen twice.</p>
+<p><b class="para">The cosmological rate rule is this frame, computed.</b> When the cosmology carries out a calculation on this ladder it reads three things off the one object, and they are the shadow-reading made operational. The <em>layer</em> is the existent—its rate of advance, the lapse, the foliation stacking rate set by the geometry alone, because the standard is exact and the content is what the set rate carries, not a term that sources it. The <em>projection</em> is the shadow the observer reads—the synchronous appearance through which that advance is seen as distance and redshift, a chart and not the object. The <em>bend</em> is the matter, the leaf's departure from the round standard. So the three-level rule the cosmological papers compute on—the observable expansion riding the geometry-set rate, the plasma's diffusion and sound horizon carried on the layer and then projected, never the shadow's machinery run as the existent—is not a separate device but this section's frame at the level of a rate <span class="cite">[JanzenModernParallax, JanzenCanonicalTime, JanzenCRcosmology, JanzenCosmogenesis]</span>. The rigidity that makes the standard exact is what leaves the cosmology no knob (\S<a class="xr" href="#sec:unification">§5</a>); the same exhaustion of continuous symmetry that walls the matter sector is what fixes the rate from the geometry, so the geometric rate and the geometrically hard matter sector are the one maximal symmetry read at two rungs.</p>
+<p><b class="para">Warping as perception — the shadow off the wall.</b> The dissertation reached the reading this makes precise: the possibility that the void does not dynamically warp in the presence of mass at all, but is de Sitter space with the universe moving uniformly through it, the apparent warping of spacetime around massive objects being “the perception of things therein,” by the principle of equivalence <span class="cite">[JanzenThesis]</span>. The corpus makes this a discipline rather than a suggestion: the exact geometry a given observer charts is a <em>projection</em> of one intrinsically real substrate, the perspectival appearances read off the wall by the shadow-reading epistemology, with what is literal and what is perspectival separated exactly <span class="cite">[JanzenShadowExistence, JanzenCRframework]</span>. Schwarzschild mass is the cleanest instance: it is the perspectival label a particular swept vantage manufactures on the fixed-<span class="m">α</span> manifold, real by construction and observer-dependent, not a property the substrate carries in itself <span class="cite">[JanzenSlicing, JanzenGroupoid]</span>. The warping is a true shadow—</p>
+<figure id="fig:comoving"><img src="https://cdn.jsdelivr.net/gh/daryljanzen/shadow-of-existence@main/corpus/../resources/PhD_thesis/dS_comoving_univ_rest.png" alt=""><figcaption>A cut of the substrate read as a universe: comoving worldlines and
+their null structure on the real de Sitter surface. The exact cosmology is a
+symmetry-breaking slicing of the maximally symmetric object, not a separate
+geometry. (2012 dissertation.)}</figcaption></figure>
+<p><b class="para">Matter's one geometric home.</b> The break has a residue. Maximal symmetry, exhausting the continuous isometry, leaves over exactly the <em>discrete</em> orientation parity <span class="m">O(5,1)∖SO<sub>0</sub>(5,1)</span>—the <span class="m">Z<sub>2</sub></span> that threads the mass-reflection, the graviton helicities, and the chirality of the turning polarisation plane past the wall <span class="cite">[JanzenGroupoid, JanzenDynamics, JanzenAlgebroid, JanzenBoundary]</span>. That discrete residue is the structurally indicated home of a fermion sector, if the geometry carries one at all: not the continuous isometry the wall closes, but the discrete parity the wall cannot reach. This is not claimed in either direction, and the ordinary route — a matter bundle placed by hand — is untouched by the wall.</p>
+<p><b class="para">The generation conjecture, and the within-CR result it became.</b> One reach on that residue is worth stating whole, as the conjecture it is, because its parts are grounded in several registers at once and only the last step is open—and capturing it coherently is how the corpus takes hold of a broad, tenuous structure to study it. <strong>The reading, and what stands behind it.</strong> <em>The Standard Model's three fermion generations are the substrate's own three-fold slicing structure, read on a spinor sector</em>—the three mass-tied roots of the one <span class="m"></span>-odd offset-mass cubic (the <span class="m">A<sub>2</sub></span> weights), equivalently the three <span class="m">120<sup>∘</sup></span>-separated hinged vantages of the one sliced substrate, carrying the chirality <span class="m">γ<sup>5</sup>=R</span>. What is <em>grounded</em>, in three registers:</p>
+<ul><li><em>Geometry, the multiplicity.</em> The count is forced to three: the
+offset-mass relation is the pure triple-angle <span class="m">2M=2/3√3 sin 3w</span>,
+driven to a single harmonic only at the unique slicing scale <span class="m">2/√3</span> the
+gnomonic image of the hole fixes, so the three roots are the three preimages of
+<span class="m">3w</span> <span class="cite">[JanzenSlicing]</span>. Not fitted—forced.</li><li><em>Representation theory, the kind.</em> Of the residue's full
+<span class="m">D<sub>6</sub>=S<sub>3</sub><sub>2</sub></span>, only the <span class="m">Z<sub>2</sub></span> is a substrate isometry
+(the parity <span class="m"></span>, acting on the cut spinor as <span class="m">γ<sup>5</sup></span>), so chirality descends
+<em>gauged</em>; the <span class="m">S<sub>3</sub></span> is the monodromy (Weyl) symmetry of the solution space and
+no isometry (<span class="m">su(3)⊄so(5,1)</span>), so a family
+symmetry is <em>global</em>—the Standard Model's own arrangement, gauged
+chirality and global flavour, not assumed but following from which factor is an
+isometry <span class="cite">[JanzenBoundary, JanzenAlgebroid, JanzenGroupoid]</span>. The audit behind this count, its receipts, and the splits that cut its law are collected in the programme's combinatorics ledger<sup class="mk l" title="combinatorics">L6</sup>.</li><li><em>Geometry again, the family as vantage.</em> The <span class="m">S<sub>3</sub></span> is realised
+concretely as three <span class="m">120<sup>∘</sup></span>-separated hinged vantages: shifting the sky
+angle by <span class="m">2π/3</span> fixes <span class="m">2M</span> and cycles the designated root through all three
+(the cyclic <span class="m">Z<sub>3</sub></span>), <span class="m">σ</span> swapping the other two within a
+hinge—three readings of the one substrate, converging from the geometry with
+the representation-theoretic verdict that the family factor is a description
+structure, not field copies <span class="cite">[JanzenSlicing]</span>.</li></ul>
+<p>The breaking is the slicing's own (the <span class="m">r<sub>0</sub></span>-singling <span class="m">2+1</span> factorisation), the mass <em>values</em> the ordinary route. <strong>The step that was open when this reading was first stated—the descent—is now built:</strong> whether a spinor sector inherits this three-fold count, that is, whether three <em>vantages</em> of the one substrate are the three physical <em>generations</em> a single observer sees. That construction is built <span class="cite">[JanzenMatter]</span>: a spinor on the slicing structure binds exactly one chiral zero-mode at each throat wall <em>as a bound mode of the existent leaf</em> (normalizable in the leaf's proper measure, whereas in the conserved spacetime Dirac norm the same static mode is not)—its chirality the parity <span class="m">R=γ<sup>5</sup></span>—and the maximally-symmetric matter construction, the one this programme's own principle selects over any single-hinge truncation (which would carry an unfixed arbitrary modulus), places a wall at each of the three hinges. The count is three, and the <span class="m">S<sub>3</sub></span> permuting the walls is the family symmetry. For the <em>discrete flavour structure</em>—the generation count, the chirality, and the family symmetry—the physical identification is therefore a result, forced <em>within</em> CR: it rests on the maximal-symmetry principle that defines the programme and on the fermion sector being set by the matter construction, which the wall calculation makes concrete, and on nothing further. Beyond the discrete skeleton the propagating spinor field sector is now built as well <span class="cite">[JanzenDynamics]</span>, the leaf-bound modes and the propagating field being two sectors rather than one owed; what stays the ordinary route is the gauge content, excluded from the continuous isometry <span class="cite">[JanzenBoundary]</span>, and the mass spectrum (electroweak). Bold in shape, and, for the discrete skeleton, a result rather than a conjecture.</p>
+<p><b class="para">One principle, worn three ways.</b> Step back from the descent to the shape of the whole. The three-fold built there <span class="cite">[JanzenMatter]</span> is the innermost of three nested registers of maximal symmetry the construction carries. The substrate is maximally symmetric—<span class="m">dS<sub>5</sub></span>, its isometry <span class="m">SO(5,1)</span> exhausted (Prop. <a class="xr" href="#prop:unique">Proposition 1</a>). The evolving three-space it presents is maximally symmetric—the closed <span class="m">S<sup>3</sup></span> of the <span class="m">cosh</span>-law cosmology, <span class="m">SO(4)</span> <span class="cite">[JanzenOperator, JanzenCRcosmology]</span>. And the discrete symmetry the slicing breaks out of the substrate is itself maximally symmetric—the hexagonal <span class="m">Aut(A<sub>2</sub>)=D<sub>6</sub></span>, the <span class="m">3⊕3</span> worn on the two horns, the fundamental <span class="m">3</span> matter and its <span class="m"></span>-image <span class="m">3</span> antimatter, at one weight within CR <span class="cite">[JanzenMatter, JanzenBoundary]</span>. Read this way the candidate synthesis widens past the generations: the Standard Model's apparent arbitrariness—why three families, why a chirality, why any discrete family structure at all—is, with the descent built <span class="cite">[JanzenMatter]</span> and forced within CR, not a list of inputs but the shadow of one principle broken symmetrically: a maximally-symmetric breaking of a maximally-symmetric substrate, carried in a maximally-symmetric space. The grounded floor is the three registers, and the discrete structure they carry is counted and built <span class="cite">[JanzenMatter]</span>, not conjectured: three chiral families related by <span class="m">S<sub>3</sub></span>, forced within CR. What is <em>not</em> claimed—and stays the ordinary route—is a geometric origin for the gauge content or the masses; those are excluded from the isometry, and electroweak. For its discrete flavour skeleton, then, this is the thing the one principle reaches—within CR, at the weight the matter paper states in full.</p>
+<p><b class="para">The two readings: general relativity and the Standard Model's flavour, one discrete structure.</b> Stated at its sharpest, the synthesis is one claim about one discrete structure read two ways. The residue <span class="m">Aut(A<sub>2</sub>)=S<sub>3</sub><sub>2</sub>≅D<sub>6</sub></span>, read as <em>cuts</em> of the substrate, is the organising symmetry of general relativity's symmetry-reducible solution space <span class="cite">[JanzenRange]</span>—the three horizon roots, the vantages that permute them, the mass-reflection <span class="m"></span>, the two null rulings; read on a <em>fermion sector</em> it is the Standard Model's discrete flavour skeleton—a threeness against two chiralities, an <span class="m">S<sub>3</sub></span> and the parity <span class="m">γ<sup>5</sup>=R</span> <span class="cite">[JanzenMatter]</span>. <em>The matter sector distinguishes two threes here and this paper follows it</em>: the <span class="m">S<sub>3</sub></span> among these vantages is the <em>within-state</em> index, and the generations' threeness is the turnaround's deck <span class="m">Z<sub>3</sub></span> (<em>ibid.</em>). One structure, two readings, one slicing operator: the vacuum sector and the flavour skeleton are not two theories to be reconciled but two perspectival shadows of the one substrate's discrete symmetry—the reading, not the read, in the exact sense of \S<a class="xr" href="#sec:shadows">§6</a>. Two boundaries hold this at its weight, and both are load-bearing rather than caveats. <em>What the two readings share is the discrete residue, not the continuous symmetry:</em> the continuous isometry <span class="m">SO(5,1)</span> generates the cuts and is excluded from the Standard Model (<span class="m">su(3)⊄so(5,1)</span> <span class="cite">[JanzenBoundary]</span>), so it is the residue the exhausted continuous isometry leaves that both readings share, the gravitational reading keeping the continuous part to itself. <em>And it is the flavour skeleton, not the gauge structure:</em> the Standard Model's defining <span class="m">SU(3) (2) (1)</span> is exactly the part <em>not</em> read off the substrate <span class="cite">[JanzenBoundary]</span>, the mass spectrum stays electroweak, and the reading delivers the generation count, the chirality, and the family symmetry and those alone. Nor does the synthesis unify the quantum with gravity: what the two readings share is a discrete <em>geometric</em> symmetry, neither quantum nor classical in itself, while “the quantum” enters the corpus separately, in the horizon-thermal register of the ledger (<span class="m">ℏ</span> the Gibbons–Hawking gauge, \S<a class="xr" href="#sec:ledger">§</a>)—so the old divide this synthesis bears on is between general relativity and the Standard Model's discrete content, not between general relativity and the quantum. A gravitational–cosmological unification whose matter reach is the discrete flavour skeleton, asserted nowhere as more. The parts are established across the corpus <span class="cite">[JanzenSlicing, JanzenGroupoid, JanzenOperator, JanzenDynamics]</span>, and the two-reading statement is their consolidation.</p>
+<h2 id="sec:landing">The space the corpus lands in}</h2>
+<p>This section collects, paper by paper, where the geometric core reaches into each of the sixteen and where each reaches back—the connections that belong to no single paper, gathered in one place:</p>
+<ul><li>P1, the metric singularity <span class="cite">[JanzenBHcausality]</span>} — forward: P1's scope note now points here, reading
+its metric-singularity boundary as the structural forcing on which the
+substrate's everywhere-real boundary rests (P1 standing on general relativity
+alone, needing none of the substrate ontology). Reciprocal, into
+\S<a class="xr" href="#sec:imaginary">§3</a> and the augmentation rung of \S<a class="xr" href="#sec:unification">§5</a>:
+P1 supplies the <em>structural</em> forcing complementary to P4's empirical one
+— the event horizon is a <em>metric singularity</em> (a null hypersurface
+along whose generators the spatial extent also contracts to zero), occurring
+only as the null future boundary approached at infinite exterior time, so the
+layered, cosmically-timed ontology the augmentation reads is forced
+structurally as well as measured. It is the finite-curvature species of the
+boundary genus (the infinite-curvature species and the genus in P2), the real
+boundary of \S<a class="xr" href="#sec:imaginary">§3</a> at its first exemplar. The two forcings —
+structural (P1, from general relativity alone) and empirical (P4, measured)
+— are independent and co-equal, neither resting on the other.</li><li>P2, the Schwarzschild circle <span class="cite">[JanzenCircle]</span>} — forward: P2's introduction now points here, its
+two-species genus and perspectival curvature the foundational-geometry
+instance of the substrate's everywhere-real boundary and shadow-reading.
+Reciprocal, into \S<a class="xr" href="#sec:imaginary">§3</a> and \S<a class="xr" href="#sec:shadows">§6</a>: P2 supplies
+the <em>genus</em> — the event horizon and <span class="m">r=0</span> are the two <span class="m"></span>-poles of one
+homogeneous circle, metric singularities of one genus differing only at second
+order (curvature), so P1's finite-curvature species and the conjugate
+infinite-curvature species are one object; and the curvature divergence at
+<span class="m">r=0</span> is the curvature of the <em>perspectival</em> metric, real as that
+metric's and reading the chart's labelling — the first, sharpest instance of
+the shadow-reading of \S<a class="xr" href="#sec:shadows">§6</a> (a real feature of a
+vantage-dependent description, built-and-real, not an artefact in the
+pejorative sense). The everywhere-real continuation through the seam
+(\S<a class="xr" href="#sec:imaginary">§3</a>) is the circle's own analytic completion. Sbierski's inextendibility concerns the maximal analytic
+Schwarzschild spacetime, the <span class="m">Λ=0</span> object this construction does not contain; on the substrate the
+geometry runs through the locus the chart labels <span class="m">r=0</span>, <span class="m">C<sup>∞</sup></span> across it <span class="cite">[JanzenCRframework]</span>.</li><li>P3, the slicing curve <span class="cite">[JanzenSlicing]</span>} — forward: P3's substrate-and-cut section now carries the
+substrate-level statements this paper owns — the Lorentzian signature
+intrinsic to the positive curvature, the straight null rulings its own
+“ruling legs” run along, and the equilateral-pseudo-sphere <span class="m"></span>–<span class="m">Λ</span>
+mechanism — pointing here for the full development. Reciprocal, into this
+paper: P3 supplies the <em>worked instances</em> of the core — its slicing
+curve is the cut of \S<a class="xr" href="#sec:shadows">§6</a> realised; its <code>prop:flip</code> and
+conjugate branch are the seam instance of \S<a class="xr" href="#sec:imaginary">§3</a> (the flip
+confined to the 2-surface, the conjugate region a real branch of the one
+Lorentzian substrate); its two-sweeps/vantage-swap and its
+<span class="m">α</span>-invariant/<span class="m"></span>-perspectival result are the shadow-reading
+(\S<a class="xr" href="#sec:shadows">§6</a>) and the constant-locking (\S<a class="xr" href="#sec:standard">§2</a>) at
+their first concrete rung. What P3 still hands forward: the coupled operations it now collects and owns—the root-exchange <span class="m">σ</span> and the backward-radial reflection <span class="m"></span>, coupled across both regimes, generating the substrate's full discrete symmetry—are the geometric base this paper reads at substrate altitude (the orientation <span class="m">Z<sub>2</sub></span> of \S<a class="xr" href="#sec:shadows">§6</a> being the <span class="m"></span>-factor of that coupled whole, advanced group-theoretically by P5); and the overcritical/lap
+conjugacy is the geometric base of the phase-structure-at-the-seam
+(the geometric base is established; the reading itself is a target rather than a result) (\S<a class="xr" href="#sec:frontiers">§8</a>).</li><li>P4, the modern parallax <span class="cite">[JanzenModernParallax]</span>} — <em>round
+complete, both ways.</em> Forward: P4's exclusion section now points here, reading the
+augmentation it forces as the empirical rung of the substrate's maximal
+symmetry (carrying its own Copernican scope). Reciprocal, into
+\S<a class="xr" href="#sec:unification">§5</a> (the first and fifth rungs): P4 supplies the
+<em>empirical</em> rung — the redshift-isotropy floor (accumulated-redshift
+scatter <span class="m">∼10<sup>-3</sup></span> against an observed <span class="m">≲3×10<sup>-6</sup></span>, a
+three-order exclusion) forces the cosmic foliation as a <em>measured</em>
+feature, and <code>thm:augmentation</code> establishes CR as the <em>necessary
+and sufficient</em> augmentation of general relativity for a description of an
+existing, evolving world (the lapse the objective rate of advance, the shift
+the relativity of synchrony). So the necessity of the first rung is not
+posited but <em>measured</em> — the empirical counterpart of P1's structural
+forcing, which stands on causal structure alone and needs none of this
+evidence. Under the Copernican principle the same datum reaches the maximal
+symmetry of the slices (the fifth rung, universality as the invariance of the
+measure), which P4 marks as an <em>extrapolation</em> beyond the directly
+constrained region — a scope \S<a class="xr" href="#sec:unification">§5</a> inherits, not softens.</li><li>P5, the description groupoid <span class="cite">[JanzenGroupoid]</span>} — forward: P5's <code>rem:orientation</code>
+now reads its orientation-parity <span class="m">Z<sub>2</sub></span> through this paper's lens —
+the discrete residue the exhausted continuous isometry leaves unspent, and,
+not claimed, the structurally indicated matter home — pointing here.
+Reciprocal, into \S<a class="xr" href="#sec:shadows">§6</a>: P5 supplies the residue's concrete
+realisation — the <span class="m">Z<sub>2</sub></span> is the SdS solution space's own
+<span class="m">Aut(A<sub>2</sub>)=S<sub>3</sub><sub>2</sub>≅D<sub>6</sub></span>—the coupled operations the slicing paper owns, advanced here into their group-theoretic form—the mass-reflection
+<span class="m">2M↦-2M</span> realised as the reticle reflection on the horizon-cubic roots
+(<code>rem:orientation</code>), and the su(3)-guard from the gravitational side
+(<code>rem:a2-distinct</code>: this <span class="m">A<sub>2</sub></span> is su(3)'s abstract root system in a
+<em>different realisation</em>, no colour via a continuous isometry — whether
+the shared abstract type is significant left open). The discrete residue of
+\S<a class="xr" href="#sec:shadows">§6</a> is thus not an abstraction but a worked group acting on
+a concrete family.</li><li>P6, the shadow of existence <span class="cite">[JanzenShadowExistence]</span>} — forward: P6 now points here (from its
+closing placement in the programme), its theory-choice discipline the
+epistemic ground on which this paper's
+unification is held as a conjecture rather than an established result. Reciprocal, and it fixes the <em>altitude</em> of
+the whole paper: P6 supplies the <em>epistemic engine</em> — the
+shadow-reading (infer the world that casts the appearances) of
+\S<a class="xr" href="#sec:shadows">§6</a>, the four rules with <em>require over permit</em> (Rule 2)
+the load-bearing one, the modal fallacy, and the constructive ordering
+(ontology from evidence). The unification of
+\S<a class="xr" href="#sec:unification">§5</a> is a rule-favoured structure, and reading its several
+established rungs as one fact is a theory-choice, decidable by the test of
+\S<a class="xr" href="#sec:frontiers">§8</a>
+as the discipline's first programme.</li><li>P7, the framework <span class="cite">[JanzenCRframework]</span>} — <em>round
+complete, both ways.</em> Forward: P7's null-boundary-correspondence section cites this paper for the
+intrinsic-Lorentzian result and the <span class="m"></span>–<span class="m">Λ</span> mechanism, and its synthesis section now
+points here for the maximal-symmetry reading that gathers its structural
+recoveries. Reciprocal, and it is the deepest of the rounds: P7 supplies the
+<em>established</em> rungs of \S<a class="xr" href="#sec:unification">§5</a> and the discipline that
+holds them. Its central theorem (<code>thm:augmentation-p7</code>,
+<code>thm:cosmogenesis</code>) is the necessity-and-sufficiency rung as a formal
+result; its synthesis reads three standing features of general relativity as
+one substrate's — the Carter constant <span class="cite">[Carter1968]</span> <em>as the substrate's own maximal
+symmetry surfacing</em>—a sentence that is true for a reason worth stating, since on Kerr the same words are false: there the Carter constant comes from an <em>irreducible</em> rank-two Killing tensor, one provably not built from the Killing vectors, which is why Carter's separation was a discovery rather than bookkeeping. <em>On a maximally symmetric space the theorem runs the other way</em>: constant curvature leaves no room for an irreducible Killing tensor, so every one is a symmetrised product of Killing vectors and a quadratic first integral cannot be independent information<sup class="mk r" title="I50_the_carter_constant_is_the_substrates_symmetry_and_kerrs_is_not">R</sup><sup class="mk l" title="index_theory">L13</sup>, the problem of time dissolved, the Dirac constraint
+algebra as the symmetric-space grading <span class="m">[m,m]⊂h</span> of <span class="m">SO(5,1)/SO(4,1)</span> — which is the maximal-symmetry
+unification already at work at the structural rung. P7's synthesis section carries the same
+reading at the structural rung, where general relativity's solution space
+closes on one substrate; the unification here is likewise a conjecture, held to
+the two tests the programme keeps open.</li><li>P8, the slicing operator <span class="cite">[JanzenOperator]</span>} — forward: P8's introduction now points here, its
+covariance-of-geometries substrate the geometric core's substrate.
+Reciprocal, into \S<a class="xr" href="#sec:real">§1</a> and \S<a class="xr" href="#sec:shadows">§6</a>: P8 supplies the
+<em>operator</em> that realizes the substrate's cuts — the slicing curve
+promoted from classifier to a generating operator for the whole static
+spherically-symmetric sector, with two derivations at the heart of the core's
+picture: <em>straight cuts are vacuum</em> (the SdS family is exactly the kernel
+of the matter functional) and <em>matter is the bend of the cut</em>
+(<span class="m">ρ=m'/4πr<sup>2</sup></span>, the curvature of the cut off the vacuum profile). The
+covariance is lifted one level — the de Sitter substrate held invariant
+under change of <em>geometry</em> as general relativity holds one geometry
+invariant under change of chart, “many geometries, one substrate” — the
+operational form of \S<a class="xr" href="#sec:real">§1</a>; the reading grounded on the results, not
+entailed by them (P6).</li><li>P9, the range <span class="cite">[JanzenRange]</span>} — forward: P9's introduction now points here, its range the reach of the
+substrate's maximal symmetry. Reciprocal, into \S<a class="xr" href="#sec:unification">§5</a> and
+\S<a class="xr" href="#sec:shadows">§6</a>: P9 supplies the <em>reach</em> of the construction — the
+range of the slicing operator is exactly the symmetry-reducible sector of
+general relativity (every reachable geometry carries a sweep-subgroup of
+<span class="m">SO(5,1)</span>), filled across all Petrov types <span class="cite">[Petrov1954]</span>, so what the substrate's maximal
+symmetry reaches is the constrained, non-radiative skeleton of general
+relativity; the <em>wall</em> is where continuous symmetry is lost — genuinely
+inhomogeneous matter, the onset of free gravitational radiation — the
+matter-boundary face (P13) read from the range side. And the Carter constant
+general relativity carries as an unexplained gift is <em>the substrate's
+maximal symmetry surfacing</em> in the separable corner, one of the
+maximal-symmetry recoveries the unification gathers (with P7). The reachable
+catalogue is one substrate read through a vantage groupoid over a moduli
+family of cuts.</li><li>P10, canonical time <span class="cite">[JanzenCanonicalTime]</span>} — <em>round
+complete, both ways.</em> Forward: P10 now points here (from its dissolution section),
+its dissolution of the problem of time the canonical face of the substrate's
+maximal symmetry. Reciprocal, into \S<a class="xr" href="#sec:unification">§5</a> (the algebroid
+rung): P10 is the <em>canonical</em> complement to P12's structural account of
+the problem of time — where P12 identifies the obstruction (the
+“wrong-sign” structure function <em>is</em> the substrate's coset metric, its
+base-dependence the obstruction), P10 supplies the <em>resolution</em>:
+selecting the cosmic foliation the augmentation forces (empirically by the CMB
+[P4], structurally by the horizon [P1]) deparametrizes the frozen constraint
+into a <em>true Hamiltonian</em>, the frozen and evolving readings the same
+canonical content differing only in whether the manifold is granted existence
+— so the problem of time is <em>dissolved</em>, not solved, by the same
+ontological correction the whole augmentation makes. The closed-<span class="m">S<sup>3</sup></span> graviton
+tower deparametrizes to unitary cosmic-time evolution and projects to the
+flat-<span class="m">Λ</span>CDM graviton, matter the bend of the slicing, not ontological
+content.</li><li>P11, why the cut bends <span class="cite">[JanzenDynamics]</span>} — <em>round
+complete, both ways.</em> Forward: P11's chirality section now points here, the
+graviton's handedness the radiating-sector face of the substrate's discrete
+residue. Reciprocal, into \S<a class="xr" href="#sec:shadows">§6</a> and the wall of
+\S<a class="xr" href="#sec:unification">§5</a>: P11 supplies the <em>dynamics</em> — why and how the
+cut bends in time (the confined Gowdy–de Sitter wave, its energy and momentum
+the shear of the leaf, deparametrized to P10's true Hamiltonian), located at
+the Type-I edge, the last confined stratum before the <em>wall</em> — the
+generative boundary (a Type-N plane wave, <em>not</em> a metric singularity)
+where generation-by-symmetry hands off to ordinary inhomogeneous evolution,
+the dynamical face of P9's range boundary. And the chirality: past the wall
+the graviton's two helicities settle a genuine handedness (the turning of the
+polarization plane), the substrate's <em>orientation parity</em> surfacing in
+the radiating sector — the disconnected <span class="m">Z<sub>2</sub></span> of
+\S<a class="xr" href="#sec:shadows">§6</a>, beyond the index obstruction (P13), the dynamical face of
+matter's one geometric residue. Cosmic no-hair makes the de Sitter background
+an attractor; the continuous dynamics <em>admits</em> rather than forces a
+quantum structure, any forcing isolated to the discrete root structure (P12).</li><li>P12, the constraint algebroid <span class="cite">[JanzenAlgebroid]</span>} — forward: P12's scope section now points here,
+reading its symmetric-space recognition as one rung of the substrate's
+maximal symmetry (at the coherence weight; its own result standing on the
+symmetry-reducible sector). Reciprocal, into \S<a class="xr" href="#sec:unification">§5</a> (the
+sixth rung) and here: P12 supplies the <em>deepest structural</em> rung —
+general relativity's own hypersurface-deformation (Dirac) algebra <em>is</em>
+the symmetric-space grading <span class="m">[m,m]</span>
+of <span class="m">SO(5,1)/SO(4,1)</span> (<code>prop:closure</code>, term for term), and the
+“wrong-sign” structure function at the root of the problem of time
+<em>is</em> the substrate's Lorentzian coset metric, its base-dependence the
+obstruction — so the problem of time dissolves into a single geometric
+fact of the maximal symmetry, established on the symmetry-reducible sector.
+The orientation-parity <span class="m">Z<sub>2</sub></span> of \S<a class="xr" href="#sec:shadows">§6</a> is realised here
+as the central inversion / double-ruling swap, and the su(3) exclusion carried with
+its own scope (<span class="m">SU(3)⊄ SO(5)</span>; the <span class="m">A<sub>2</sub></span> the discrete
+Weyl shadow only, no continuous colour isometry).</li><li>P13, the matter boundary <span class="cite">[JanzenBoundary]</span>} — <em>round
+complete, both ways.</em> Forward: P13's closing programme-significance section now points here, reading its wall as
+one face of the substrate's maximal symmetry. Reciprocal, into
+\S<a class="xr" href="#sec:unification">§5</a> (the fourth rung) and \S<a class="xr" href="#sec:shadows">§6</a>: P13
+supplies the <em>matter-boundary</em> rung — the continuous matter symmetry
+is excluded because <span class="m">SO(5,1)</span> is <em>complete</em> (<span class="m">su(3)⊄ so(5,1)</span>; the geometric-isometry route closed four ways — the
+<span class="m">σ</span>-lift a real Weyl reflection not the Wick rotation, the cascade
+dropping the gauge at the real cut, the <span class="m">A<sub>2</sub></span> skeleton discrete-only, and the
+Atiyah–Hirzebruch index rendering a compact-face fermion sector
+vector-like), so the exhausted symmetry that locks the constants leaves no
+room for a geometric colour. The mechanism is <em>complementary</em>: the index
+acts on the connected gauge group, the gravitational chirality on the
+discrete orientation parity <span class="m">O(5,1)<sub>0</sub></span> the index
+cannot reach, so observed fermion chirality is <em>forced</em> non-geometric
+— and that same discrete parity is the discrete residue of
+\S<a class="xr" href="#sec:shadows">§6</a>, the single geometric opening the wall leaves
+The structure is established; the reading of it offered here is not claimed. The compact (Wick) face is
+real-by-construction but, atemporal, no co-equal existent, by CR's
+existence criterion.</li><li>P14, the fermion sector <span class="cite">[JanzenMatter]</span>} — forward: P14 points here, reading its three chiral
+generations as the innermost of the three registers of maximal symmetry —
+the maximally-symmetric <em>discrete</em> breaking the slicing takes from the
+substrate. Reciprocal, into \S<a class="xr" href="#sec:shadows">§6</a> and the matter rung of
+\S<a class="xr" href="#sec:unification">§5</a>: P14 supplies the <em>built</em> discrete residue —
+the boundary's single geometric opening realised, three chiral families
+related by a global <span class="m">S<sub>3</sub></span> with <span class="m">R=γ<sup>5</sup></span> chirality, forced within CR as the
+maximally-symmetric slicing of a maximally-symmetric substrate, the gauge and
+mass content external. The count is the substrate's discrete symmetry worn as
+matter, originating at the <span class="m">S<sub>3</sub></span>-fixed Nariai crest and unfolding as the
+universe expands; whether it coheres with the empirical Standard Model stays
+the data's to judge.</li><li>P15, the cosmology <span class="cite">[JanzenCRcosmology]</span>} — <em>round
+complete, both ways.</em> Forward: P15's introduction points here for the everywhere-real
+substrate-and-boundary ontology, and its discussion for the root of its rigidity —
+<span class="m">Λ</span> the maximally symmetric substrate's sole scale. Reciprocal, into
+\S<a class="xr" href="#sec:unification">§5</a> (the third rung): P15 supplies the <em>observational</em>
+rung — with <span class="m">Λ</span> the sole scale the cosmology carries no tunable
+freedom (the parameter-free low-multipole deficit set by <span class="m">Λ</span> through
+<span class="m">r<sub>0</sub></span> and <span class="m">D<sub>C</sub></span>; the geometric rate; the transmission dichotomy — no
+inflationary scale-invariant attractor, no consistency relation, no
+substrate-sourced <span class="m"></span>-modes), its discriminating power now
+returned on the data — the genuine-Boltzmann low-multipole shape a
+cosmic-variance-limited wash (a smooth deficit bottoming at <span class="m">ℓ=4</span>,
+neither the sharp observed quadrupole dip nor a sharp
+falsification), while the geometric rate resolves the Hubble tension and
+the primordial abundances return deuterium and helium within measurement on
+the corpus's own hot dense history — the one measured initial condition
+<span class="m">ρ<sub>r</sub>/ρ<sub>m</sub></span> an <span class="m">η</span>-analogue read not tuned. The altitude discipline
+still holds \S<a class="xr" href="#sec:unification">§5</a> at coherence, but the observational rung
+P15–P16 supply stands above it: on the discriminating axes the
+cosmology has begun to earn correspondence, so that “coherence shown is not
+correspondence earned” now marks the boundary between the structural
+unification (held, still, at coherence) and the empirical confrontation (where
+correspondence has started to be paid), not the whole programme's ceiling. The cosmic beginning is the
+cosmogenesis branch point—the substrate finite in curvature across it, the geometry read over
+the areal chart divergent there—reached through the conjugacy yet real.</li><li>P16, the cosmogenesis <span class="cite">[JanzenCosmogenesis]</span>} — <em>round
+complete, both ways.</em> Forward: P16 points here, reading the Big Bang as a
+synthesis of the corpus's deductively forced consequences over this maximally
+symmetric substrate — the hot dense era the far side of a collapse the
+substrate's own geometry already carries through the branch point, finite in the substrate's
+curvature whatever the areal chart reports there.
+Reciprocal, into \S<a class="xr" href="#sec:imaginary">§3</a> and \S<a class="xr" href="#sec:shadows">§6</a>: P16 lands the
+<em>lap</em> — the conjugate branch of the slicing curve, reached through the
+imaginary yet real, read forward as a previous universe's collapsed matter, the
+<em>cosmogenetic bead</em> the framework proves one closed curve <span class="cite">[JanzenCRframework]</span>
+and a concrete instance of this paper's reached-through-the-imaginary principle
+(its cosmic time runs off the real axis through a bounded contour while the areal
+radius stays real at every point it lands on) —
+and returns the one quantitative consequence the synthesis adds beyond the
+corpus's established results: the infalling matter, heated above the deuterium
+bottleneck and re-expanded through it at the standard rate, runs a standard
+nucleosynthesis that <em>produces</em> the primordial light-element abundances
+(helium-4 and deuterium at their observed values, the lithium problem shared
+with <span class="m">Λ</span>CDM). The Big Bang is thus no initial edge of the substrate but
+a broken-symmetry shadow cast within it — the substrate's maximal symmetry
+read at the cosmogenesis rung, the abundances its fossil; its open edge whether
+one progenitor handover fits all abundances together.</li></ul>
+<h2 id="sec:frontiers">Frontiers}</h2>
+<ol><li>
+
+
+
+
+</li><li><strong>The free-data-count test of the unification.</strong> Show that the
+framework's count of genuinely free data equals the substrate's
+non-symmetric residue—maximal symmetry, spent, leaving exactly the one
+measured cosmological IC (<span class="m">ρ<sub>r</sub>/ρ<sub>m</sub></span>) as the sole tunable datum, and
+each constant-relation a locked parameter. Decisive: a hidden geometric
+freedom in the cosmology, or a genuinely free constant where the reading
+says it should lock, falsifies “rigidity and wall are one fact.”
+The item has two sides and they now stand differently, so it is split rather
+than carried whole. <em>The CONSTANT side is a result and
+this paper carries it</em>: \S<a class="xr" href="#sec:ledger">§</a> states that the
+gravitational–cosmological–quantum sector spends <em>no free dimensionless
+constant</em>, and the reason is structural rather than counted—neither real form
+supplies a second invariant and a dimensionless magnitude needs
+two<sup class="mk r" title="P17_no_second_scale_on_either_face">P17R13</sup>, so there is a single dimensionful
+input and nothing for a dimensionless tuning to hide in. <em>That argument is
+about the geometry's own invariants, and it does not reach the regularisation of a
+mode sum</em>: the graviton tower's log-scale coefficient is computed and is not
+zero <span class="cite">[JanzenCanonicalTime]</span>, so one dimensionless constant is spent
+there. <em>The structural reason above survives intact — there is still no second
+invariant — and what it does not establish is that no constant enters by any route
+at all.</em> <em>And the
+falsifier's second clause was met rather than asserted</em>: a place where a
+genuinely free constant could have lived was checked and it locked—the metric
+function, for a time the one input the construction did not derive, follows
+entirely from <span class="m">T<sup>t</sup><sub>t</sub>=0</span>, a first-order linear equation whose whole
+solution space is the Tangherlini–de Sitter family with <span class="m"></span> the single constant
+of integration <span class="cite">[JanzenSlicing]</span>, obtained rather than
+assumed<sup class="mk r" title="P03_operator_at_general_D">P3R34</sup>. <em>The DATUM side remains a
+target</em>, and it is a different kind of quantity: <span class="m">ρ<sub>r</sub>/ρ<sub>m</sub></span> is a matter
+initial condition and not a constant, so it is not in the geometric residue at
+all, and the programme calls it a one-parameter accommodation. <em>And what was written here as owed is a
+result, which is a different thing</em><sup class="mk r" title="X1_the_ratio_is_a_clock_reading_not_a_carried_datum">R</sup>: the derivation from the progenitor
+collapse cannot be delivered, for a structural reason rather than for want of
+work. Radiation dilutes as <span class="m">a<sup>-4</sup></span> and matter as <span class="m">a<sup>-3</sup></span>, so
+<span class="m">ρ<sub>r</sub>/ρ<sub>m</sub>∝1/a</span>—<em>a quantity that changes along the leg has no
+single value for a handover to transmit</em>, and the progenitor's value at its own
+maximum is a reading taken at one point on a curve. Nor does the crossing supply
+one: a factor multiplying both components alike leaves the ratio unchanged, and
+only a species-resolved factor could rescale it—which is exactly the rule
+withdrawn when the crossing was shown lossless for every
+species <span class="cite">[JanzenCRframework]</span>. <em>So <span class="m">ρ<sub>r</sub>/ρ<sub>m</sub></span> is where the
+observable leg's own clock is read</em>, and a clock's zero is not the sort of thing
+a handover carries. <em>A frontier closed by impossibility is a finding and
+this list records it as one</em>: what stands here is not a derivation owed but the
+statement that there is none to give. <em>And the companion
+cosmogenesis paper reaches the same line from the other side, on a different
+ground</em>: what a handover carries is what a conservation law protects, so <span class="m">η</span>
+crosses the compression peak because baryon number is conserved through it,
+while the progenitor's composition is erased there because nuclear binding is
+not—“two kinds of thing,” in that paper's
+words <span class="cite">[JanzenCosmogenesis]</span>. <em>Two independent reasons, agreeing</em>: the
+ratio is not carried because it is not constant along either leg, and it is not
+carried because the crossing destroys what would have fixed
+it.<sup class="mk r" title="P17_the_frontier_item_is_a_result_and_the_cosmogenesis_paper_reaches_it_the_other_way">P17R16</sup>
+
+
+
+
+
+
+
+
+
+
+
+</li><li><strong>The maximal-symmetry ledger.</strong> Systematically determine what
+geometric relations among the fundamental constants the substrate forces
+(<span class="m"></span>–<span class="m">Λ</span> and Nariai the two known instances), reading each as a spent
+parameter; and look for any constant maximal symmetry does not reach—the
+constant-side analogue of the discrete-parity matter opening. This is grounded in two proven instances.
+
+
+
+
+</li></ol>
+<p><em>A third item stood here and has been decided, in both halves, so it is recorded as a result rather than carried as a frontier.</em> The phase structure at the seam is <em>real structure and not interpretation</em> at the level of the object: the antilinear face <span class="m"></span> and the reflection <span class="m"></span> are the two axis-symmetries of one analytic object, whose composite supplies every kinematic datum of charge conjugation, with the self-conjugate photon congruence as <span class="m"></span>'s fixed set; the reading is neither a second labelling of matter and antimatter, which <span class="m"></span> already performs linearly, nor a continuous interpretive parameter, reality admitting exactly two values. <em>And it does not attach to trajectories</em>: a mass enters the mode equation as <span class="m">m<sup>2</sup>a<sup>2</sup></span>, and the branch point annihilates that term while <span class="m">|aH|</span> diverges, so <span class="m">ω/|aH|→0</span> independent of <span class="m"></span>—a massive trajectory carries no phase, by failing to freeze rather than by freezing into one<sup class="mk r" title="S1_a_massive_mode_freezes_too_and_the_mass_term_vanishes_at_the_branch_point">R</sup>.</p>
+<footer>Generated from the paper’s own source. <a href="https://github.com/daryljanzen/shadow-of-existence">Source.</a></footer>
+</div>
+</body>
+</html>

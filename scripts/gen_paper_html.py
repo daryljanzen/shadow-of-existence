@@ -39,7 +39,8 @@ PAPERS = {
 }
 
 THEOREMISH = ('theorem', 'proposition', 'lemma', 'corollary', 'definition',
-              'remark', 'conjecture', 'example')
+              'remark', 'conjecture', 'example', 'axiom', 'principle',
+              'claim', 'observation')
 
 # The math converter is the live edition's, imported rather than copied: two
 # converters gave two answers for one formula at r4597 and that must not recur.
@@ -136,6 +137,29 @@ def inline(t, nums, labels):
     t = re.sub(r'\\cite[tp]?\s*\{([^}]*)\}?',
                lambda m: '<span class="cite">[' + m.group(1) + ']</span>', t)
     t = re.sub(r'\\(?:maketitle|tableofcontents|bigskip|medskip|smallskip)\b', '', t)
+    # Wrappers whose argument is the content, and quote/center blocks.
+    t = re.sub(r'\\(?:textup|textsc|textsf|textrm|mbox|text)\{([^{}]*)\}', r'\1', t)
+    t = re.sub(r'\\texorpdfstring\{([^{}]*)\}\{[^{}]*\}', r'\1', t)
+    t = re.sub(r'\\(?:ldots|dots|cdots)\b', '\u2026', t)
+    t = re.sub(r'\\begin\{(center|small|quote|quotation|table|figure\*)\}(.*?)'
+               r'\\end\{\1\}', r'\2', t, flags=re.S)
+    # A tabular becomes a table; its rules and column spec are LaTeX-only.
+    def _tab(m):
+        rows = [r for r in re.split(r'\\\\\\\\', m.group(2)) if r.strip()]
+        cells = [[c.strip() for c in re.split(r'(?<!\\\\)&', r)] for r in rows]
+        return ('<table>' + ''.join('<tr>' + ''.join(
+            '<td>' + c + '</td>' for c in row) + '</tr>' for row in cells)
+            + '</table>')
+    t = re.sub(r'\\begin\{(tabular|array)\}\{[^}]*\}(.*?)\\end\{\1\}',
+               _tab, t, flags=re.S)
+    t = re.sub(r'\\(?:hline|centering|toprule|midrule|bottomrule|arraystretch)'
+               r'\b\{?[^}\n]*\}?', '', t)
+    t = re.sub(r'\\(?:qquad|quad|,|;|!|:)(?![a-zA-Z])', ' ', t)
+    t = re.sub(r'\\(?:textwidth|linewidth|columnwidth|footnotesize|scriptsize|'
+               r'normalsize|large|Large|par)\b', '', t)
+    t = re.sub(r'\\begin\{eqnarray\*?\}(.*?)\\end\{eqnarray\*?\}',
+               lambda m: '<div class="eq">' + mathspan(m.group(1)) + '</div>',
+               t, flags=re.S)
     t = re.sub(r'\\(sin|cos|tan|log|ln|exp|sinh|cosh|tanh)\b', r'\1', t)
     t = t.replace('---', '\u2014').replace('--', '\u2013').replace('~', ' ')
     t = t.replace("``", '\u201c').replace("''", '\u201d')
@@ -263,8 +287,13 @@ def convert(paper):
             lb = re.search(r'\\label\{([^}]*)\}', txt)
             aid = f' id="{lb.group(1)}"' if lb else ''
             src_f = g.group(1) if g else ''
-            # A PDF figure cannot be an <img>; it is linked rather than shown,
-            # and said so rather than rendered as a broken image.
+            # A PDF figure cannot be an <img>.  The figure scripts now write a
+            # PNG beside each PDF, so prefer that; the link is the fallback for
+            # a figure whose generator has not been taught to yet.
+            if src_f.lower().endswith('.pdf'):
+                png = src_f[:-4] + '.png'
+                if os.path.exists(os.path.join(ROOT, 'corpus', png)):
+                    src_f = png
             if src_f.lower().endswith('.pdf'):
                 media = (f'<p class="figalt"><a href="{CDN}/corpus/{src_f}">'
                          'Open this figure (PDF)</a></p>')
