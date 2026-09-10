@@ -38,6 +38,21 @@ RAW = 'https://raw.githubusercontent.com/daryljanzen/shadow-of-existence/main'
 # from the CDN, which is what a CDN is good at.
 PAGES = os.environ.get('PAGES_BASE', '.')
 
+# Where the PDFs are served from.  On the site they sit beside the pages, which
+# is what makes a download SAME-ORIGIN -- analytics counts a same-origin file
+# download automatically and an outbound CDN click only as a click, so serving
+# them here is what turns "someone left for a CDN" into "someone downloaded P15".
+PDF_BASE = os.environ.get('PDF_BASE', CDN + '/corpus')
+
+# Analytics tag, supplied at build time.  Empty by default: nothing is hardcoded
+# and a local build carries no tracking at all.
+ANALYTICS = os.environ.get('ANALYTICS_ID', '').strip()
+_TAG = ('' if not ANALYTICS else
+        '<script async src="https://www.googletagmanager.com/gtag/js?id='
+        + ANALYTICS + '"></script>\n<script>window.dataLayer=window.dataLayer||[];'
+        'function gtag(){dataLayer.push(arguments);}gtag("js",new Date());'
+        'gtag("config","' + ANALYTICS + '");</script>')
+
 # P-number -> tex stem, in the corpus's own numbering.  The geometric core is
 # P17 and sits seventeenth; the older `p0` tag put it first and is deprecated.
 ORDER = [
@@ -450,7 +465,7 @@ def main():
             print(f'  [WARN] no PDF for {stem}, listed without a link')
             papers.append((num, t, None, stem))
             continue
-        papers.append((num, t, f'{CDN}/{pdf}', stem))
+        papers.append((num, t, f'{PDF_BASE}/{stem}.pdf', stem))
 
     # The introduction becomes a page of its own, generated from the same source
     # by the same run -- a build artefact like the PDFs, not a hand copy, so it
@@ -492,7 +507,7 @@ def main():
     html = rf"""<!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="utf-8">
+<meta charset="utf-8">{_TAG}
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>The Shadow of Existence — the live edition</title>
 <style>
@@ -673,7 +688,7 @@ const PAGES_URL = '{PAGES}';
     # of the book rather than a loose file.
     css = re.search(r'<style>(.*?)</style>', html, re.S).group(1)
     intro_page = (
-        '<!DOCTYPE html>\n<html lang="en">\n<head>\n<meta charset="utf-8">\n'
+        '<!DOCTYPE html>\n<html lang="en">\n<head>\n<meta charset="utf-8">' + _TAG + '\n'
         '<meta name="viewport" content="width=device-width, initial-scale=1">\n'
         '<title>Introduction \u2014 The Shadow of Existence</title>\n'
         '<style>' + css + '</style>\n</head>\n<body>\n<div class="wrap">\n'
@@ -696,7 +711,7 @@ const PAGES_URL = '{PAGES}';
         + (f'<span class="disc">{n}</span>' if n else '') + '</div>'
         for i, q, n in fr)
     front_page = (
-        '<!DOCTYPE html>\n<html lang="en">\n<head>\n<meta charset="utf-8">\n'
+        '<!DOCTYPE html>\n<html lang="en">\n<head>\n<meta charset="utf-8">' + _TAG + '\n'
         '<meta name="viewport" content="width=device-width, initial-scale=1">\n'
         '<title>The open edge \u2014 The Shadow of Existence</title>\n'
         '<style>' + css + '</style>\n</head>\n<body>\n<div class="wrap">\n'
@@ -714,7 +729,7 @@ const PAGES_URL = '{PAGES}';
     print(f'  frontier.html written: {len(fr)} open rows, {len(front_page)} bytes.')
 
     def page(title, lede, body_html):
-        return ('<!DOCTYPE html>\n<html lang="en">\n<head>\n<meta charset="utf-8">'
+        return ('<!DOCTYPE html>\n<html lang="en">\n<head>\n<meta charset="utf-8">' + _TAG + ''
                 '\n<meta name="viewport" content="width=device-width, initial-scale=1">'
                 f'\n<title>{title} \u2014 The Shadow of Existence</title>\n'
                 '<style>' + css + '</style>\n</head>\n<body>\n<div class="wrap">\n'

@@ -63,12 +63,22 @@ jobs:
         run: python3 scripts/regen_frontier.py
 
       - name: Build the chapters
+        # Same-origin PDFs and figures, so downloads are counted rather than
+        # showing up as outbound clicks to a CDN.  ANALYTICS_ID is a repository
+        # variable: unset, the pages carry no tracking at all.
+        env:
+          PDF_BASE: ./pdf
+          FIG_BASE: ./fig
+          ANALYTICS_ID: ${{ vars.ANALYTICS_ID }}
         run: |
           for p in P1 P2 P3 P4 P5 P6 P7 P8 P9 P10 P11 P12 P13 P14 P15 P16 P17 P18; do
             python3 scripts/gen_paper_html.py "$p"
           done
 
       - name: Build the pages
+        env:
+          PDF_BASE: ./pdf
+          ANALYTICS_ID: ${{ vars.ANALYTICS_ID }}
         run: python3 scripts/gen_live_edition.py
 
       - name: Check the build produced what it claims
@@ -98,7 +108,11 @@ jobs:
           cp BOOK_INTRO_cosmiCave/ledgers.html _site/
           cp BOOK_INTRO_cosmiCave/receipts.html _site/
           cp BOOK_INTRO_cosmiCave/paper_P*.html _site/
-          mkdir -p _site/assets
+          mkdir -p _site/pdf _site/fig _site/fig/figs _site/fig/figures _site/assets
+          cp corpus/*.pdf _site/pdf/ 2>/dev/null || true
+          cp corpus/*.png _site/fig/ 2>/dev/null || true
+          cp corpus/figs/*.png _site/fig/figs/ 2>/dev/null || true
+          cp corpus/figures/*.png _site/fig/figures/ 2>/dev/null || true
           cp BOOK_INTRO_cosmiCave/assets/*.html _site/assets/ 2>/dev/null || true
 
       - uses: actions/upload-pages-artifact@v3

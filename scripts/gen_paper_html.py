@@ -24,6 +24,10 @@ import sys
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 OUT_DIR = os.path.join(ROOT, 'BOOK_INTRO_cosmiCave')
 CDN = 'https://cdn.jsdelivr.net/gh/daryljanzen/shadow-of-existence@main'
+# Same reasoning as the index: a same-origin PDF is a counted download, an
+# outbound CDN link is only a click.
+PDF_BASE = os.environ.get('PDF_BASE', CDN + '/corpus')
+FIG_BASE = os.environ.get('FIG_BASE', CDN + '/corpus')
 
 # paper -> (tex stem, receipt appendix, ledger appendix)
 PAPERS = {
@@ -365,10 +369,10 @@ def convert(paper):
                 if os.path.exists(os.path.join(ROOT, 'corpus', png)):
                     src_f = png
             if src_f.lower().endswith('.pdf'):
-                media = (f'<p class="figalt"><a href="{CDN}/corpus/{src_f}">'
+                media = (f'<p class="figalt"><a href="{FIG_BASE}/{src_f}">'
                          'Open this figure (PDF)</a></p>')
             elif src_f:
-                media = f'<img src="{CDN}/corpus/{src_f}" alt="">'
+                media = f'<img src="{FIG_BASE}/{src_f}" alt="">'
             else:
                 media = ''
             fign_out[0] += 1
@@ -467,12 +471,12 @@ def main():
 
     page = (f'<!DOCTYPE html>\n<html lang="en">\n<head>\n<meta charset="utf-8">\n'
             f'<meta name="viewport" content="width=device-width, initial-scale=1">'
-            f'\n<title>{head} \u2014 The Shadow of Existence</title>\n<style>'
+            + _gle._TAG + f'\n<title>{head} \u2014 The Shadow of Existence</title>\n<style>'
             + css + extra + '</style>\n</head>\n<body>\n<div class="wrap paper">\n'
             '<p class="note"><a href="./live_edition.html">\u2190 The Shadow of '
             f'Existence</a></p>\n<p class="pn">{paper}</p>\n<h1>{head}</h1>\n'
             + (f'<p class="lede">{sub.strip()}</p>\n' if sub.strip() else '')
-            + f'<p class="note"><a href="{CDN}/corpus/{stem}.pdf">'
+            + f'<p class="note"><a href="{PDF_BASE}/{stem}.pdf">'
             'Open the typeset PDF</a></p>\n'
             + html_body +
             '\n<footer>Generated from the paper\u2019s own source. '
