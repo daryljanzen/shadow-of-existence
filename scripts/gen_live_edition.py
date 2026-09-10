@@ -196,6 +196,10 @@ def _fixspace(t):
 
 def mathspan(t):
     """`$...$` -> readable Unicode, using the same table the abstracts use."""
+    # Thin-space and spacing macros are punctuation, not letters, so the
+    # macro-name rule never saw them and they reached the page as `\,`.
+    t = re.sub(r'\\[,;:!>]|\\ (?=\S)', ' ', t)
+    t = re.sub(r'\\(?:qquad|quad|thinspace|;|,)\b', ' ', t)
     t = _prep(t)
     t = re.sub(r'\\[dt]?frac\{([^{}]*)\}\{([^{}]*)\}', r'\1/\2', t)
     for _ in range(3):

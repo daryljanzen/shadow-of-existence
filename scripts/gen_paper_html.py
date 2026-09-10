@@ -187,18 +187,40 @@ def convert(paper):
         kind = m.group(1)
         counts[kind] = counts.get(kind, 0) + 1
         labels[m.group(2)] = f'{kind.capitalize()} {counts[kind]}'
+    # align and gather carry labels too, and can carry SEVERAL -- one per line.
+    # Counting only `equation` left forty references across the corpus pointing
+    # at a number that was never assigned.
     eqn = 0
-    for m in re.finditer(r'\\begin\{equation\}(.*?)\\end\{equation\}', body, re.S):
-        eqn += 1
+    for m in re.finditer(r'\\begin\{(equation|align|gather|eqnarray)\*?\}'
+                         r'(.*?)\\end\{\1\*?\}', body, re.S):
+        inner = m.group(2)
+        found = re.findall(r'\\label\{([^}]*)\}', inner)
+        if not found:
+            eqn += 1
+            continue
+        for lb in found:
+            eqn += 1
+            labels[lb] = f'({eqn})'
+    fign = 0
+    for m in re.finditer(r'\\begin\{figure\*?\}(.*?)\\end\{figure\*?\}',
+                         body, re.S):
+        fign += 1
         lb = re.search(r'\\label\{([^}]*)\}', m.group(1))
         if lb:
-            labels[lb.group(1)] = f'({eqn})'
+            labels[lb.group(1)] = f'{fign}'
+    # Section labels sit immediately after the closing brace, and subsections
+    # count too: matching only \section left twenty-eight of them uncollected,
+    # so every cross-reference to one fell back to a bare section mark.
     secn = 0
-    for m in re.finditer(r'\\section\{[^}]*\}\s*\\label\{([^}]*)\}', body):
-        secn += 1
-        labels[m.group(1)] = f'\u00a7{secn}'
+    for m in re.finditer(r'\\(sub)?(sub)?section\*?\{(?:[^{}]|\{[^{}]*\})*\}\s*'
+                         r'\\label\{([^}]*)\}', body):
+        if not m.group(1):
+            secn += 1
+            labels[m.group(3)] = f'\u00a7{secn}'
+        else:
+            labels[m.group(3)] = f'\u00a7{secn}'
 
-    out, eqn, counts = [], 0, {}
+    out, eqn, counts, fign_out = [], 0, {}, [0]
 
     def flush(buf):
         txt = ' '.join(buf).strip()
@@ -212,7 +234,8 @@ def convert(paper):
         ln = lines[i]
         st = ln.strip()
 
-        m = re.match(r'\\(sub)?(sub)?section\*?\{(.*)\}', st)
+        m = re.match(r'\\(sub)?(sub)?section\*?\{((?:[^{}]|\{[^{}]*\})*)\}'
+                     r'\s*(?:\\label|$)', st)
         if m:
             flush(buf)
             lvl = 2 + (1 if m.group(1) else 0) + (1 if m.group(2) else 0)
@@ -283,7 +306,8 @@ def convert(paper):
             i += 1
             txt = '\n'.join(blk)
             g = re.search(r'\\includegraphics(?:\[[^\]]*\])?\{([^}]*)\}', txt)
-            cap = re.search(r'\\caption\{(.*)\}', txt, re.S)
+            cap = re.search(r'\\caption\{(.*?)\}\s*(?:\\label|\\end|$)',
+                            txt, re.S)
             lb = re.search(r'\\label\{([^}]*)\}', txt)
             aid = f' id="{lb.group(1)}"' if lb else ''
             src_f = g.group(1) if g else ''
@@ -301,9 +325,11 @@ def convert(paper):
                 media = f'<img src="{CDN}/corpus/{src_f}" alt="">'
             else:
                 media = ''
+            fign_out[0] += 1
             out.append(f'<figure{aid}>{media}'
-                       + (f'<figcaption>{inline(cap.group(1), nums, labels)}'
-                          '</figcaption>' if cap else '') + '</figure>')
+                       + ('<figcaption><b>Figure ' + str(fign_out[0]) + '.</b> '
+                          + inline(cap.group(1), nums, labels)
+                          + '</figcaption>' if cap else '') + '</figure>')
             continue
 
         if st.startswith(r'\begin{itemize}') or st.startswith(r'\begin{enumerate}'):
