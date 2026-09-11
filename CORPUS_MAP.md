@@ -320,6 +320,373 @@ a false green; with the fix, the same invocation reports `1 pass`. Measured inst
 ⌗ *Two `check_open_ledger` failures cleared in passing that are **not** from this work — `03c0352a38`
 (`canonical_time`, entered at `r6453`) and `0e6cce5b23` (`boundary_paper`); the gate was red on the trunk
 before this branch and both verdicts are the ones the prose already carries. The papers are untouched.*
+### Revision r6497 — 2026-09-09 (node 64). **`prop:throat` is a $J=0$ construction — and the tower's margin against that is measured and wide.**
+
+**⌗ THE DEPENDENCY, FOUND BY ASKING WHAT THE PROPOSITION IS DERIVED FROM.** *`prop:throat`'s argument is
+"direct from $f$ at the Nariai mass", and $f=1-2GM/c^{2}r-r^{2}/\alpha^{2}$ is the **non-rotating** metric. So
+the equal-radii $\dS_2\times S^{2}$, and the entire tower built on it, are established at $J=0$ by
+construction. ⇒ ***And `r6495` has just established that the no-hair tower is not what removes $J$ --- so the
+charge whose survival the row asks about is precisely the one whose presence would deform the geometry the
+argument is conducted on.***
+
+**⛭ AND THE HONEST QUESTION IS HOW MUCH RESTS ON IT, WHICH IS MEASURABLE.** *Generalising off the equal-radii
+point with $\lambda=r_{\rm dS}^{2}/r_{S}^{2}$ gives $\nu^{2}=\tfrac14-\lambda\,\ell(\ell+1)$, and $\lambda=1$
+returns `P15` exactly. ***At $\ell=0$, $\nu^{2}=\tfrac14$ for EVERY $\lambda$*** --- the scale-invariant base
+does not depend on the radii being equal at all. **At $\ell\ge1$, principal series for any
+$\lambda>1/(4\ell(\ell+1))$**: $1/8$ at $\ell=1$, so the damping survives until the $\dS_2$ radius falls below
+$0.354$ of the $S^{2}$ radius --- ***a factor of $2.83$, with $\ell=2$ and $\ell=3$ safer still.***
+
+⇒ **So the isotropisation does not rest on the equal-radii point. It rests on the throat not being squashed by
+nearly a factor of three, and the equal-radii case sits comfortably inside that** --- which strengthens `P15`
+rather than qualifying it.
+
+⚠ **AND IT DOES NOT SHOW THE CONCLUSION SURVIVES ROTATION.** *What $\lambda$ a rotating progenitor produces is
+**not computed**, and a rotating near-horizon geometry is generally **warped** rather than a direct product,
+so $\lambda$ may not even be the right single parameter. ***This measures a margin and names exactly what
+would decide whether rotation eats it.***
+
+⌗ **AND THE ABSENCE GATE FROM `r6483` CAUGHT ME ON MY OWN TEXT**, *two revisions after I built it: I wrote
+"that dependency is drawn nowhere" with no search behind it. **Evidence added beside the claim** --- the seven
+phrases searched across `corpus/*.tex`, where the hits sit, and `INDEX`'s independent record. ⌗ *And the fix
+itself tripped it once more, because quoting another record's absence phrasing reads to the gate as asserting
+one; reworded to state the search instead.* **The gate is doing precisely the job it was built for, on its
+author.**
+
+⌗ *`P15` 96pp, zero undefined; twelve gates green.*
+
+### Revision r6495 — 2026-09-09 (node 64). **`PO-31`'s first computation answered: the damping removes the anisotropic signature and not $J$ — because $J$ is not among the modes the tower is a statement about.**
+
+**⌗ `P15`'s TOWER REPRODUCES EXACTLY, AND IT IS A STATEMENT ABOUT FIELD MODES.** *On the equal-radii throat an
+$S^{2}$ harmonic of degree $\ell$ gives a $\dS_2$ field with $\nu^{2}=\tfrac14-\ell(\ell+1)$: $\ell=0$ returns
+$\nu=\tfrac12$, the scale-invariant base, and every $\ell\ge1$ is heavy principal series, oscillating and
+decaying. **Reproduced at $\ell=0,1,2,3$. The computation is correct --- and it is about a PROPAGATING FIELD
+MODE**, a degree of freedom with a mass that can be heavy.*
+
+**⛭⛭ AND ANGULAR MOMENTUM IS NOT ONE.** *In the standard multipole decomposition about a spherically symmetric
+background: $\ell=0$ carries the **mass**; ***the axial $\ell=1$ carries the ANGULAR MOMENTUM --- the
+slow-rotation limit, a STATIONARY solution and not an oscillation***; the polar $\ell=1$ is a gauge
+translation; and the radiative content begins at $\ell\ge2$. ⇒ **So a principal-series argument applied at
+$\ell=1$ assigns a decay rate to a conserved charge.** The row's own suspicion --- "damping can hide angular
+momentum in the stress-energy without destroying the charge" --- is right, ***and the reason is that the
+charge is not in the tower.***
+
+**⌗ AND THE CORPUS ALREADY CARRIES THE CONCEPT, IN ANOTHER PAPER.** *`P09`: the "non-radiative skeleton of
+general relativity in every symmetry class", types O, D and I, and "the wall is where the field begins to
+propagate". ***The $\ell=0$ and $\ell=1$ sectors are that skeleton's multipole face. It needed connecting, not
+inventing.***
+
+⚠ **AND THE BOUNDARY IS SHARP: this does NOT establish that $J$ survives the leg.** *Only that the no-hair
+tower is not the mechanism that would remove it. A charge can still be carried off by matter or torqued, and
+**the constrained-sector analysis on the throat --- what the axial $\ell=1$ sector does on $\dS_2\times S^{2}$
+specifically --- is a computation and is not done here.** ⌗ *`r6493`'s third branch is untouched, and **vortex
+stretching concentrates exactly this $\ell=1$ axial content** --- the two findings meet on the same sector.*
+
+⌗ *Landed as a second guard in `P15` beside its own, since the first guard bounds what $\ell$ means and this
+bounds what the tower damps. `P15` 95pp, zero undefined; twelve gates green --- `check_pages_current` caught
+`P7`'s served page lagging a marker renumber again, read before rebuilding.*
+
+### Revision r6493 — 2026-09-09 (node 64). **An external development bears on an assumption, not on a theorem — `P16`'s adiabatic argument reaches one of the two ways adiabaticity can fail, and `PO-31`'s damping dichotomy gains a third branch.**
+
+**⌗ RAISED BY `63` AND CHECKED HERE AT SOURCE, all three citations verified before anything was written.**
+
+**⛭ `P16`'s ADIABATIC ARGUMENT EXCLUDES RADIATIVE LOSS, AND NOT DYNAMICAL PRODUCTION.** *Its justification is
+optical depth --- "the photon bath is trapped and compresses with the gas" --- and it is a good argument for
+what it argues. ***Adiabaticity can fail two ways: entropy LEAVES, which that excludes; or entropy is PRODUCED
+dynamically, with nothing leaving anywhere, which it does not reach.*** A finite-time flow singularity is the
+second. ⌗ *And the CR regime is the **less** favourable one for the default: optical thickness makes the flow
+effectively ideal, and the inviscid case was the easier one throughout that literature --- viscosity being
+what regularity leans on, and `P16`'s own argument being that viscosity and conduction are negligible there.*
+
+**⛭⛭ BUT THE PEAK IS ROBUST, AND FOR A REASON WORTH HAVING ON THE RECORD.** *`sec:peak` integrates no fluid
+evolution. It is a **lower bound** from an energy budget ($GM/R_sc^2=1/2$ identically at the horizon) and from
+convergence resting on `P01`'s metric-singularity result --- $T_{\rm pk}\gtrsim10^{2}$ MeV against
+$T_D\simeq0.07$, **three and a half orders of margin**. ⇒ ***A blowup dissipates. It heats. It pushes the way
+the bound already points. The peak was never resting on the flow being smooth.*** ⌗ *And `PO-40`'s finiteness
+is insulated by something established before this arose: the Landauer floor, $k_B\ln2$ per baryon, independent
+of $T_{\rm pk}$, $g_*$, the adiabat, the network, $\eta$ --- **and of flow regularity**, since it needs only
+that the composition is destroyed.*
+
+**⌗ AND `PO-31` GAINS A THIRD BRANCH, ON THE ROW THAT ALREADY OWNS THE QUESTION.** *That row carries the
+four-charge picture and names its first computation: does the collapse leg's no-hair damping remove $J$, or
+only its anisotropic signature? **The damping is an attractor argument, acting over elapsed time on the leg.
+The mechanism now known to break smoothness is vortex stretching, which CONCENTRATES vortical structure** ---
+the opposite process, driven by exactly what a collapse supplies. ⇒ ***So the flow may not stay smooth long
+enough for the damping to complete, and the mechanism that would break it concentrates the very charge in
+question.***
+
+**⛭ AND THE ROW'S OWN REASONING APPLIES TO IT SYMMETRICALLY**, *which is why it belongs there and not on a new
+row: the row places the damping on the **approach** and not the crossing because "damping is a process and
+requires elapsed time, and the crossing has none". ***A blowup is also a process requiring elapsed time.*** So
+the two compete on the same leg, for the same reason, and **neither reaches the crossing**.*
+
+⚠ **SCOPED, AND NOTHING TRANSFERS AS A THEOREM.** *That setting is incompressible, flat, non-relativistic and
+externally **forced**; the leg is compressible, relativistic and self-gravitating. **What changes is the
+status of an assumption.** ⌗ *And the case `P16` computes is the safe one --- a **top-hat** progenitor, no
+vorticity --- while `P07`'s `cor:nonspherical` extends the theorem to collapse of **any** symmetry, and a
+realistic progenitor has vorticity. **The channel is already here: the null-boundary correspondence carries no
+metric multipoles, only $(M,J,Q)$ --- and $J$ is what a vortex is.***
+
+⌗ *`P16` 31pp, zero undefined; twelve gates green. No external numbers or attributions entered the papers.*
+
+### Revision r6491 — 2026-09-09 (node 64). **The boundary located: what the geometry supplies and what it marks external are separated by whether the breaking is ITSELF symmetric — one fact, joining three statements never read together.**
+
+**⌗ THE TENSION THAT MADE IT WORTH READING.** *`r6489` found the geometry **does** supply a breaking --- the
+three-plane. But `P14` also says of the family symmetry: ***"what this sector supplies is the SYMMETRY, not
+the BREAKING"***, the $S_3$ arriving from the substrate's geometry while "the breaking that generates the
+observed masses and mixings remains **external** to it, in the same place as the gauge representations".
+**Both are true, so there are two kinds of breaking, and the corpus distinguishes them without ever saying so
+in one place.***
+
+**⛭⛭ THE DISTINCTION IS THE CRITERION ITSELF.** *The three-plane configuration is **itself symmetric** ---
+nothing to choose, no modulus. A mass hierarchy must **distinguish** the three planes to produce one, so it is
+**not** itself symmetric and carries exactly the free parameter Rule 2 rejects. ⇒ ***The boundary between what
+the geometry supplies and what it marks external coincides with whether the breaking is itself symmetric. One
+fact, not two --- and it says why the COUNT is forced while the MASSES are not.*** ⌗ *A symmetric breaking is
+a configuration; a hierarchy is a choice of which member is heaviest. The first has a symmetric point; the
+second is the statement that there is none.*
+
+**⌗ AND `p0`'s FREE-DATA BUDGET IS NAMED, AND HAS ALREADY SHRUNK ONCE.** *"the theory's entire free-data
+budget --- the one measured $\rho_r/\rho_m$ and the fermion sector's own content --- is carried by the matter,
+so **matter is the residue maximal symmetry leaves ... in free data**." ***The count, the chirality and the
+family symmetry passed from free data to forced structure when `P14` built them***, leaving the mass spectrum
+and the gauge representations. ⇒ **So `PO-30` is, in the corpus's own accounting, whether the remaining
+entries can be converted as the first ones were.**
+
+⚠ **AND NOTHING HERE CLOSES IT, BECAUSE `P14` BOUNDS ITS OWN MARKING.** *The `P13` constraint is "informative
+rather than prohibitive": it ***"does not say that a geometric route to the representation content is
+impossible"***, only that the connected-isometry route is closed; with the measured ratios "the two bound the
+search from opposite sides", and ***"we claim no construction here"***. **A mechanism outside that route is
+not excluded.**
+
+⌗ *The receipt now reads `P14` at run time rather than asserting its wording, so the clause fails if the
+paper's bounding sentence ever goes. `P08` 24pp, zero undefined; twelve gates green.*
+
+### Revision r6489 — 2026-09-09 (node 64). **Asked properly: what actually breaks the symmetry in the cases already built — and the construction turns out to generate content already.**
+
+**⌗ THE MECHANISM, READ OFF `P14`'s OWN FORCING ARGUMENT.** *Two constructions are available: one plane on a
+chosen hinge, or one on each. "A one-plane construction must select **which** hinge to build on: a free
+modulus, unfixed by the geometry, an arbitrary choice among three $\mathbb{Z}_3$-equivalent options. The
+$\mathbb{Z}_3$-symmetric three-plane construction is **the unique configuration carrying no such modulus** ---
+the symmetric point, pinned by the symmetry."* ⇒ ***The criterion does not choose between breaking and not
+breaking. It chooses AMONG BREAKINGS and takes the one that is ITSELF symmetric*** --- and `P14` names the
+source: `p0` "extends this to the discrete sector explicitly, **holding that the discrete breaking is itself
+maximally symmetric**".
+
+**⛭⛭ AND BY THAT ROUTE THE CONSTRUCTION ALREADY GENERATES CONTENT.** *`P14` delivers the **generation count,
+the chirality and the family symmetry**, forced by exactly the moduli-free criterion. ⇒ ***So `r6485`'s
+proposed reading --- that content is not the kind of thing this construction generates --- is not merely
+unproven. It is refuted by a sector the corpus had already built***, and I proposed it without looking.*
+
+**⌗ AND THE ORIGIN IS COMMON, WHICH IS WHAT THE INQUIRY WAS FOR.** *`p0` reads the discrete residue off the
+waist --- $\mathrm{Aut}(A_2)=S_3\times\mathbb{Z}_2$, its factors acting on "the three roots and the two
+rulings, which are, on the waist, the points **on** the circle and the lines **tangent** to it", the residue
+factorising "because those two relations are independent" --- and the three walls carrying the generations
+"lie on it, their three-foldness the hole's own". ⇒ ***The wall, the generations and the chirality are one
+residue read at three places, not three breakings with three origins.***
+
+⇒ **SO THE QUESTION `PO-30` SHOULD BE ASKED IS SHARPER, AND IS OPEN.** *The discrete content has a **finite**
+residue with a symmetric point, so its moduli-free configuration exists and is unique --- three planes. A
+profile $m(r)$ lives in a **function space**. ***Is there a moduli-free configuration for the continuous
+content, in the way the $\mathbb{Z}_3$ three-plane is for the discrete?*** **Well posed in the corpus's own
+idiom, and nothing here answers it.**
+
+⌗ *This replaces the eliminations `r6481` and `r6485` attempted. **Nothing is closed; a question is put where
+two crossings-out were** --- which is what the last three turns should have been doing.*
+
+### Revision r6487 — 2026-09-09 (node 64). **`r6485` WHOLLY RETRACTED — it misread the criterion, applied it two rungs down, and inverted the programme's own thesis. And the drive behind it was closure, not sharpening.**
+
+**⛔ THREE FAULTS, EACH SUFFICIENT ALONE.** *⓵ ***It misreads the principle.*** Rule 2, in its own paper:
+"prefer the world that **requires** the observed phenomena as a consequence of its structure to the world
+that merely **permits** them through adjustable parameters". **A criterion of necessity versus tuning. It
+does not rank options by symmetry and does not select a profile at all** --- I used it as a
+symmetry-maximiser. ⓶ ***It applies it at the wrong rung.*** `P17`: maximal symmetry makes the substrate
+"the least-arbitrary vacuum such a description can be **cut from** ... a symmetry-breaking **modulus** is the
+adjustable parameter that criterion rejects". **It governs the substrate, and rejects a free parameter, not
+a breaking** --- I applied it to profiles on a cut. ⓷ ***And it inverts the thesis.*** `P17`'s capstone is
+that physics **is** the broken-symmetry shadow of one maximally symmetric object. ***Concluding that a
+selector for maximal symmetry cannot deliver a breaking contradicts the foundation the corpus is built on.***
+
+**⛭ WHAT RULE 2 ACTUALLY SAYS IS THE OPPOSITE.** *It does not foreclose a generative law for the content ---
+***it is the standard such a law must meet***: the content must follow as a structural consequence rather
+than enter through an adjustable parameter. **The row stands open, with a criterion attached to what an
+answer would look like.**
+
+⚠ **AND THE PATTERN BEHIND IT IS THE PART WORTH KEEPING.** *`r6481` ruled out one candidate. `r6485` ruled
+out another. The turn after proposed the row "should say content is not the kind of thing this construction
+generates". ***Three moves in one direction, each smaller than the last, and none of them an attempt to find
+out what fixes the content.*** **That is a closure drive in the clothes of sharpening --- the flattening the
+method names, where a question is crossed out rather than explored** --- and it produced an argument that
+contradicts `P17`'s capstone without my noticing, because I was looking for a way to be finished rather than
+a way in.*
+
+⌗ *Retracted in the receipt (kept with its error stated, so the next node does not re-derive it), the
+register row, `P08`, and the runway. `P08` 23pp, zero undefined; twelve gates green.*
+
+### Revision r6485 — 2026-09-09 (node 64). **`PO-30`: the corpus's one selection principle is removed as a candidate, structurally — and every maximally symmetric selection it offers returns something matterless.**
+
+**⌗ `r6481` LEFT THE LAW NEEDING TO FIX A PROFILE.** *The corpus has exactly one selection principle, and
+`P12` states what it prefers: **"the structure requiring no choice of how to break a symmetry"**, silent where
+no such choice arises --- which is why it "selects the manifold at fixed dimension and is silent on the
+dimension itself". ⇒ *Among radial profiles **exactly one qualifies: $\rho$ constant**, every other being a
+choice of which function. **So the principle does reach profiles.***
+
+**⛔ AND WHAT IT SELECTS IS NOT MATTER.** *`p0`, dissolving the cosmological-constant problem: "a constant
+density gravitates as a curvature scale, so it enters the profile's $\Lambda r^{2}/3$ term, ***not as a
+$2m/r$ bend***" --- and immediately, "the substrate/bend distinction separates $\Lambda$ from
+**inhomogeneous** matter, a genuine bend that breaks the maximal symmetry". ⌗ *And `P07` reaches the same
+boundary from the other side: **homogeneous collapse "lies past the wall of inhomogeneity, where the
+construction's generation-by-symmetry hands off to ordinary Einstein evolution"** --- the symmetric case is
+precisely where the construction stops generating.*
+
+⇒ ***MATTER IS A BREAKING OF THE MAXIMAL SYMMETRY; THE PRINCIPLE SELECTS WHAT REQUIRES NO BREAKING.*** *Asking
+it to supply matter asks it for the thing it is defined to avoid. **It cannot be the law.***
+
+**⛭ AND THIS IS THE SECOND TIME THE SAME SHAPE HAS ANSWERED THIS ROW.** *`r6481`: the one cut the
+construction distinguishes intrinsically is Nariai, **and it carries no matter**. Here: the one profile the
+principle selects is constant, **and that is $\Lambda$**. ***Every maximally symmetric selection this
+construction offers returns something matterless*** --- which is `p0`'s own "the rigidity and the wall are one
+fact", seen from inside this row rather than stated over it.*
+
+⚠ **IT DOES NOT CLOSE THE ROW.** *It removes the one existing candidate, so **the law must be something other
+than a symmetry selection**. That is a narrowing of what an answer could look like, not a verdict --- and no
+claim is made that no such law exists.*
+
+⌗ *Built entirely from statements read at source in `P12`, `p0` and `P07`; no absence asserted. Landed in
+`P08` `sec:open`, the row, and the runway. `P08` 23pp, zero undefined; twelve gates green.*
+
+### Revision r6483 — 2026-09-09 (node 64). **`r6481`'s "third route" and "the corpus does not note it" RETRACTED — and the tendency that produced them is now gated.**
+
+**⛔ WHAT WAS WRONG, AND BOTH HALVES WERE.** *⓵ **Not a third route.** `p0`'s offset relation **is** the
+horizon condition: $f(r)=1-2M/r-r^{2}/\alpha^{2}=0$ gives $2M=r-r^{3}/\alpha^{2}$, which in $x=r_0/\alpha$
+is exactly $\alpha(x-x^{3})$ --- verified. **So $r_0$ is a horizon root and extremising the relation is
+precisely the double-root condition $f=f'=0$**, which `P15` states outright at the Nariai locus. ***The same
+computation the corpus already performs, in other variables.*** ⓶ **And "the corpus does not note it" was
+asserted from two greps of `corpus/*.tex`, without opening `P03`, `P17` or `P15`** --- the obvious places,
+and `P15` is where it turned out to be.*
+
+**⚠ THE FAILURE IS A COLLAPSE OF QUANTIFIER**: *"my search did not find it" became "it is not there". ***In
+a corpus whose whole value is coherence, a false asserted absence plants a contradiction that later work
+builds on --- and it is invisible, because nothing contradicts a claim nobody re-checks.***
+
+**⌗ WHAT SURVIVES, UNAFFECTED**: *the offset family has $m(r)$ constant, so $\rho$ vanishes across it, the
+one intrinsically distinguished cut carries no matter, and ***the law `PO-30` wants must fix a FUNCTION and
+not a number***. That was never the part resting on the absence claim.*
+
+**⛭ AND THE TENDENCY IS GATED.** *The corpus has stated the remedy since the source rule --- **NOT FOUND /
+SEARCHED / NOT YET CHECKED** --- and had no enforcement. `corpus/check_absence_claims.py` requires a claim
+that a phrase or fact is absent **from the text** to carry what was searched. ⌗ *It does **not** touch claims
+about what the corpus **asserts** ("does not posit a second scale") --- a position needs no search behind it,
+and conflating the two was the first draft's error: **302 hits, mostly false**. Narrowed to textual absence:
+37, baselined and grandfathered, with the gate failing on the next one.*
+
+⚠ ***AND THE BASELINE ITSELF REPEATED THE ERROR IN MINIATURE.*** *I first wrote it from a **copy** of the
+gate's scanning code and got 77 entries against the gate's 61 --- ***a second source disagreeing with the
+one that checks***. Regenerated from the gate's own `scan()`, so the two cannot diverge. Verified both ways:
+a bare claim fails, the same claim with its search beside it passes.*
+
+⌗ *Retracted in the receipt, the register row, and `P08` itself. Twelve gates green.*
+
+### Revision r6481 — 2026-09-09 (node 64). **`PO-30` investigated: the obvious candidate for the law is ruled out, and a third route to Nariai turns up on the way.**
+
+**⌗ THE QUESTION `r6479` LEFT: what could fix WHICH CUT, absent a progenitor?** *The obvious candidate is
+the cut the construction distinguishes intrinsically. **There is exactly one, and it is the Nariai member.***
+
+**⛭ AND THAT IS A THIRD ROUTE TO IT.** *`p0`'s offset-mass relation $2M=\alpha\left((r_0/\alpha)-(r_0/\alpha)^{3}\right)$
+has a **unique positive stationary point**, and it lands exactly on $r_0=\alpha/\sqrt3=r_N$ with
+$M=\alpha\sqrt3/9=M_N$ --- ***the member `P05` reaches as $\sigma$'s unique fixed point and `P07` by a
+trichotomy on collapse.*** A third argument, sharing no step with either. ⌗ **The corpus does not note it:
+the cubic appears at four sites and none remarks that its maximum is Nariai.**
+
+**⛔ AND IT CANNOT BE THE LAW, BECAUSE IT CARRIES NO MATTER.** *The offset family is pure
+Schwarzschild--de~Sitter --- $m(r)$ **constant** --- so $\rho=m'(r)/4\pi r^{2}$ vanishes identically **at
+every offset, Nariai included**. And `PO-41` says what the head owes is that there **are** baryons on its
+collapse leg. ***The one cut picked out without reference to anything else is empty.***
+
+⇒ **SO THE LAW MUST FIX A FUNCTION, NOT A NUMBER, AND THAT IS THE FINDING.** *"Which cut" is not a choice
+within a one-parameter family: a matter-carrying cut is a whole profile $m(r)$ with $m'\neq0$, and the
+offset parametrises only the matterless members. ***The construction's one distinguished point lives in the
+wrong space.***
+
+⌗ **AND IT SHARPENS `r6479`'s CAVEAT FROM THE OTHER SIDE.** *That entry said its reading fails "if `PO-30`'s
+law fixes only the cut-content RELATION and not which cut". **It does fix which cut --- within the vacuum
+family --- and that is not enough, because the head needs a cut outside it.** The entailment survives; the
+obvious candidate does not.*
+
+⚠ *Not claimed that no such law exists --- only that it cannot be "take the distinguished member". And
+**Nariai stays forced on the COLLAPSE** by `P07`, which is about the limit a collapse approaches and not
+about the profile that collapses.*
+
+⌗ *Landed in `P08` `sec:open` and the row; `P08` 23pp, zero undefined. **Both currency gates fired on my own
+change** --- the served page lagged by a byte after the index shifted, and the runway lagged its row by
+eighteen revisions. Both written forward. Eleven gates green.*
+
+### Revision r6479 — 2026-09-09 (node 64). **Rooms ② and ③ are one wall seen twice, and the map I drew at `r6443` drew them apart.**
+
+**⌗ WHAT EACH ROW OWES IS A DIFFERENT KIND OF THING, and that is what hid the join.** *`PO-30` wants a
+**LAW** --- why a cut bends as it does. `PO-41`'s strike says what is owed at the head is a **FACT** --- "the
+matter on its collapse leg, and how many". *Different kinds, different sectors --- A · matter and D ·
+cosmology --- and different rooms on my map.*
+
+**⛭ BUT THE HEAD IS EXACTLY WHERE A LAW WOULD HAVE TO ACT.** *Every lap after the first inherits its cut's
+shape from its progenitor --- that is what the genealogy transmits. ***The head, by construction, inherits
+nothing*** (`PO-40`). **So the head's cut is fixed by a law or by nothing**, and a generative law for the
+content is precisely a law that picks a cut absent a progenitor.*
+
+⇒ ***`PO-30` DISCHARGED WOULD DISCHARGE WHAT THE HEAD OWES. And the converse fails*** --- *knowing that there
+are baryons at the head, and how many, is a fact about one cut and yields no law.* **So the opening has a
+DIRECTION: `PO-31`'s is the shadow of `PO-30`'s.** ⌗ *A map that draws them apart says two rows must each be
+worked; the corrected map says **working `PO-30` moves both, and working the head alone moves neither**.*
+
+⌗ **AND THE CORPUS DRAWS IT NOWHERE.** *"generative law" never occurs within reach of "head", "genealogy" or
+"progenitor" in the register or any paper. The rows have sat in different sectors since they were opened.*
+
+⚠ **HELD AT WEIGHT: a structural reading, not a computation.** *It rests on the head inheriting nothing,
+which is `PO-40`'s result and not in question; and on a generative law being the kind of thing that fixes a
+cut, which is how `P08` frames the gap. ***It fails if `PO-30`'s law fixes only the cut-content RELATION and
+not which cut*** --- named in the receipt as where to attack it.*
+
+⌗ *Map merged and renumbered: four groupings, not five. **And `check_pages_current`, built two revisions
+ago, caught its first live case on this very change** --- adding a receipt to `P8`'s index shifted a marker
+and the served page lagged by a byte. Regenerated. Eleven gates green.*
+
+### Revision r6477 — 2026-09-09 (node 64). **The header-versus-body class measured — a new gate is the WRONG instrument, the existing one was extended instead, and it caught the live book publishing a withdrawn claim.**
+
+**⌗ MEASURED FIRST, AND THE OBVIOUS GATE DOES NOT WORK.** *A name-based check on module headers --- does a
+docstring name a file, constant or host the code lacks? --- returns **21 file hits and 23 constant hits**
+across 183 modules, and ***nearly all are false***: `TRAIL_AUDIT_c54.NNN.md` is a template, `corpus/p.tex`
+and `/file.py` are placeholders, `gates.yml` lives under `.github/`, and `CRPSI` in a gate's docstring is a
+knob it **discusses**. Narrowed to host claims it returns **one hit --- `r6475`'s own correction record.***
+
+⇒ ***AND THE REASON IS THE INSTRUCTIVE PART: a corrected header names the wrong thing IN ORDER TO record
+the correction, so any name-based check fires on the repairs as readily as the defects.*** **Which is
+exactly the problem `check_withdrawn` already solves: the corpus may QUOTE what it withdrew; it may not
+ASSERT it.**
+
+**⛭ SO THE MACHINERY JOINED THAT SCAN RATHER THAN GETTING A FIFTH INSTRUMENT.** *`check_withdrawn` read
+papers only --- **not module headers, not page templates** --- which is why "the PDFs are served from
+jsDelivr" stood in a generator header and on the live page, and why "the frontier is generated from
+`THE_REGISTER`, which is the one source" stood while the runway was a frozen table. **Two divergences in one
+file in three revisions, and no instrument was looking at headers at all.** Scripts and pages now scan, and
+the CDN claim is registered with its two real pre-`r6475` forms as known-positives.*
+
+**⛔ AND IT FIRED ON ITS FIRST RUN, ON THE LIVE BOOK.** *`paper_P17.html` was still publishing the
+**withdrawn** vector-like claim: the correction landed in the `.tex` at `r6465` and ***the served page was
+never rebuilt***. **A withdrawn claim on a served page is not a stale note --- it is the book telling a
+reader something the corpus has retracted.***
+
+**⛭⛭ WHICH EXPOSED THE CLASS BENEATH IT.** *Four of seven pages checked were behind their sources, **every
+one a paper edited that day**. `corpus/check_pages_current.py` now regenerates each into place, compares,
+and **restores the tree as found** --- the shape `check_appendix_current` already proved, and deliberately
+not an mtime check, which any checkout would falsify in both directions.*
+
+⚠ ***AND IT CAUGHT A HAZARD I HAD CALLED LATENT.*** *`r6453` found the receipt markers are a **positional**
+counter, and judged the risk "latent and bounded" because "every surface regenerates from the one `INDEX`".
+***That is true only if every surface is actually regenerated.*** `paper_P7.html` was not --- so a reader met
+**`P10R11` in `P7` and `P10R12` in `P10`: two numbers for one receipt**, the precise invariant the numbering
+exists to guarantee. **Now verified corpus-wide: 344 receipts referenced across the served pages, zero shown
+with more than one marker.***
+
+⌗ *Eleven gates green.*
 
 ### Revision r6475 — 2026-09-09 (node 64). **The CDN is gone and three places still said otherwise — one of them on the page, to the reader.**
 

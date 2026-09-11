@@ -39,6 +39,19 @@ WINDOW = 900          # characters after a hit in which a correction still count
 # --- THE REGISTRY -------------------------------------------------------------------------
 # (label, phrase pattern, marker pattern, when and where it was withdrawn)
 REGISTRY = [
+    # r6477.  "THE PDFS ARE SERVED FROM JSDELIVR" -- withdrawn at r6475, the site having
+    # moved to serving its own from the repository (`CDN = RAW_GH`, and the body had said
+    # `NO THIRD-PARTY CDN` since the migration).  It survived in a generator header AND on
+    # the live page, telling readers the book depended on a CDN it no longer used.
+    # ** A machinery claim may be QUOTED to record its withdrawal -- r6475 does exactly
+    # that -- but not asserted. **
+    ("the-papers-are-served-from-a-cdn",
+     r'(?:Papers|PDFs)\s+(?:are\s+)?(?:served\s+)?(?:from|via)\s+jsDelivr'
+     r'|served from jsDelivr'
+     r'|FETCHES[^.\n]{0,40}from the CDN',
+     r'(?:r6475|withdrawn|no longer|stopped using|went on describing|NO THIRD-PARTY CDN'
+     r'|repository)',
+     "withdrawn r6475; the site serves its own from the repository"),
     # r6425.  THE COMPACT-FACE SECTOR "IS VECTOR-LIKE".  The face is the FIVE-sphere, and
     # Atiyah--Hirzebruch's equivariant index is Z_2-graded, so its even-dimension hypothesis
     # fails there and that route is vacuous ON THIS FACE.  ** The conclusion survives by the
@@ -201,6 +214,11 @@ HISTORICAL = {
 # a pattern that is broken.  Each entry therefore carries a KNOWN-POSITIVE string, taken verbatim
 # from the text the withdrawal removed, and this gate fails if any pattern stops matching its own.
 POSITIVES = {
+    # the two real pre-r6475 forms: the generator header and the reader-facing line.
+    "the-papers-are-served-from-a-cdn": [
+        "The PDFs are served from jsDelivr, a CDN over the",
+        "Papers via jsDelivr; the frontier read live at page load.",
+    ],
     # the three forms the corpus actually used, taken from the pre-r6425 text of P13
     # sec:wall and its abstract, so the pattern is proved against what it was written for.
     "the-compact-face-sector-is-vector-like": [
@@ -271,6 +289,25 @@ def strip_comments(text):
 def main():
     texs = [t for t in sorted(glob.glob(os.path.join(HERE, '*.tex')))
             if not any(k in os.path.basename(t) for k in SKIP)]
+    # ** r6477: THE MACHINERY IS SCANNED TOO, not only the papers. **  A withdrawn claim
+    # about HOW THE PIPELINE WORKS lives in a module header or a page template, and this
+    # gate was reading neither -- so "the PDFs are served from jsDelivr" stood in a
+    # generator header and on the live page after the code stopped using it (r6475), and
+    # "the frontier is generated from THE_REGISTER, which is the one source" stood while
+    # the runway was a frozen table (r6473).  ** Two header-versus-body divergences in one
+    # file in three revisions, and no instrument was looking at headers at all. **
+    #
+    # ⌗ WHY HERE AND NOT IN A NEW GATE.  A name-based check on headers was MEASURED first
+    # and does not work: a CORRECTED header names the wrong thing in order to record the
+    # correction, so it fires on the repairs as readily as the defects -- 21 file hits and
+    # 23 constant hits, nearly all false, and the one host hit was a correction record.
+    # ** That is precisely the problem this gate already solves: the corpus may QUOTE what
+    # it withdrew, it may not ASSERT it. **  So the machinery joins the scan rather than
+    # getting a fifth instrument that would have to learn the same lesson.
+    machinery = [m for m in sorted(
+        glob.glob(os.path.join(HERE, '..', 'scripts', '*.py'))
+        + glob.glob(os.path.join(HERE, '..', 'BOOK_INTRO_cosmiCave', '*.html')))]
+    texs = texs + machinery
     print()
     print(f"  WITHDRAWN-CLAIM SCAN -- {len(REGISTRY)} registered withdrawal(s) "
           f"x {len(texs)} paper(s)")
