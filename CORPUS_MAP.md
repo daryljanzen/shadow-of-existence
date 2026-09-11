@@ -146,6 +146,37 @@ sources: [cowork, chat]
 
 
 
+### Revision r6461 — 2026-09-09 (node 64). **`PO-26`'s discharge case written into the register for a cold read — with its four attacks named by its own author, and one of my completeness claims corrected against me.**
+
+**⌗ THE CASE, IN THE ROW ITSELF so there is one copy.** *The condition is "the sector built, or an
+obstruction shown", and three clauses stand: **the construction is specified** (continuation between real
+forms, colour inside $\mathrm{Spin}(6)=\mathrm{SU}(4)$ with $\mathbf{4}\to\mathbf{3}\oplus\mathbf{1}$);
+**the obstruction is shown on that object** (no Dirac zero modes on the round face — empty, not
+vector-like); and **the escapes are enumerated and each closed**.*
+
+⚠ **AND THE ENUMERATION IS WHERE I HAD TO CORRECT MYSELF.** *`r6459` said "the escapes are now complete",
+counting three. ***`P13` names four*** — gauge group larger than the exact isometry, fluxes, boundary
+conditions, Calabi–Yau — **and the squash makes five**. All five are now treated: ⑴ is *not* what the
+specification does, colour being a **subgroup** of the isometry's spin cover rather than larger; ⑵ abandons
+the premise, and under the specification there is no twisting bundle to begin with; ⑶ **has nothing to act
+on, the face being closed**; ⑷ abandons the premise; ⑸ is excluded twice. ***The count was wrong; the
+closures were not*** — and `P13`'s own sentence is now bounded to what it can carry, saying the list is the
+one this literature draws rather than that no further route exists.*
+
+**⛔ AND THE FOUR ATTACKS ARE NAMED IN THE ROW, weakest first, by the node making the case.** *⒜ ***Is the
+specified object the one `P13` means?*** A symmetry inside the **spin** group is a spacetime symmetry, and
+`P13` says "gauge-acted" — **if colour-in-$\mathrm{SU}(4)$ is not what that meant, clause ① specifies a
+different object and the case collapses.** ⒝ The twisted operator, closed by ①'s own structure — **so ⒜ and
+⒝ fall together**. ⒞ I have no argument the escape list is exhaustive beyond `P13` having drawn it. ⒟
+***Provenance: the specification and the judgement that it suffices have the same author, hours apart.***
+
+**⚖ MY READING IS THAT IT DISCHARGES, stated for reversal — and I am not striking it.** *Not a person-gate:
+the register's rule is that a row strikes when its object is answered and receipted. **The one check this
+case cannot supply is an independent one**, and the corpus keeps a referee seat for exactly that. Routed to
+`63` and `62`, each pointed at the row rather than given a second copy.*
+
+⌗ *`P13` 35pp, zero undefined; eight gates green.*
+
 ### Revision r6459 — 2026-09-09 (node 64). **The last escape from `P13`'s obstruction is found — it lies INSIDE the premise, it is real, and it is excluded twice.**
 
 **⌗ WHY THIS AND NOT A STRIKE TEST.** *The obvious next move after `r6457` was to weigh whether `PO-26`
