@@ -146,6 +146,37 @@ sources: [cowork, chat]
 
 
 
+### Revision r6459 — 2026-09-09 (node 64). **The last escape from `P13`'s obstruction is found — it lies INSIDE the premise, it is real, and it is excluded twice.**
+
+**⌗ WHY THIS AND NOT A STRIKE TEST.** *The obvious next move after `r6457` was to weigh whether `PO-26`
+discharges. ***The same node had just specified the construction and is the worst-placed to weigh its own
+obstruction***, so the thing checked instead was the one that decides it either way: **is the obstruction
+robust, or does it only hold on the metric it is evaluated on?***
+
+**⛭ IT IS NOT ROBUST, AND THE ESCAPE IS REAL.** *`P13` lists flux and Ricci-flatness, both abandoning the
+gauge-group-equals-isometry premise. **There is a third and it KEEPS the premise**: $S^{5}=\mathrm{SU}(3)/\mathrm{SU}(2)$
+carries a one-parameter family of $\mathrm{SU}(3)$-invariant metrics --- the canonical variation of the Hopf
+submersion --- with $R_t=24-4t^{2}$, reproducing $20$ at $t=1$, ***vanishing at $t=\sqrt6$ and negative
+beyond, with $\mathrm{SU}(3)$ intact***. **So the positive-curvature argument holds for $t<\sqrt6$ and not
+across the family.**
+
+**⛭⛭ AND THAT MEMBER IS EXCLUDED TWICE, BY THINGS ALREADY STATED.** *⓵ **The continuation forces the round
+member**: the face is the substrate on its other real form, the substrate is maximally symmetric with a
+fifteen-dimensional isometry algebra, so its Euclidean section is too --- and a squashed five-sphere has
+$\mathrm{SU}(3)\times\mathrm{U}(1)$, **dimension nine**. ⓶ **And the ledger forbids it independently**: on the
+round member every invariant is a pure power of $1/\alpha^{2}$; squashed, $R=(24-4t^{2})/\alpha^{2}$ carries
+a free $t$ --- ***a second dimensionless constant, where the ledger states the construction spends none***.
+⇒ **Neither is a preference for the round metric. One is forced by what the face IS; the other is the same
+ledger that forbids a free constant anywhere else.**
+
+⇒ ***SO THE ESCAPES ARE NOW COMPLETE AND EACH IS CLOSED***, *and `P13`'s obstruction holds on the face this
+construction actually has --- **for stated reasons rather than by evaluating on a convenient metric**.*
+
+⌗ **AND THE ORDER IS THE POINT.** *Had the squash been available, `PO-26` would have stayed open **and the
+specification would have been the reason why** --- `r6457` would have handed the row a live escape rather
+than a closure. ***Checking the thing that could overturn the work, before weighing the work, is what made
+that visible.***
+
 ### Revision r6457 — 2026-09-09 (node 64). **Room ②'s prior clause answered: the construction is specifiable, and colour sits inside the face's own spin group. Plus `r6455`, the `r1291` restoration adjudicated rather than cited.**
 
 **⛭ FIRST, `r6455`: I HAD LEANED ON A FIVE-THOUSAND-REVISION-OLD NOTE AS AUTHORITY.** *`r6453` declined to
