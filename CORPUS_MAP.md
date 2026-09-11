@@ -146,6 +146,38 @@ sources: [cowork, chat]
 
 
 
+### Revision r6485 — 2026-09-09 (node 64). **`PO-30`: the corpus's one selection principle is removed as a candidate, structurally — and every maximally symmetric selection it offers returns something matterless.**
+
+**⌗ `r6481` LEFT THE LAW NEEDING TO FIX A PROFILE.** *The corpus has exactly one selection principle, and
+`P12` states what it prefers: **"the structure requiring no choice of how to break a symmetry"**, silent where
+no such choice arises --- which is why it "selects the manifold at fixed dimension and is silent on the
+dimension itself". ⇒ *Among radial profiles **exactly one qualifies: $\rho$ constant**, every other being a
+choice of which function. **So the principle does reach profiles.***
+
+**⛔ AND WHAT IT SELECTS IS NOT MATTER.** *`p0`, dissolving the cosmological-constant problem: "a constant
+density gravitates as a curvature scale, so it enters the profile's $\Lambda r^{2}/3$ term, ***not as a
+$2m/r$ bend***" --- and immediately, "the substrate/bend distinction separates $\Lambda$ from
+**inhomogeneous** matter, a genuine bend that breaks the maximal symmetry". ⌗ *And `P07` reaches the same
+boundary from the other side: **homogeneous collapse "lies past the wall of inhomogeneity, where the
+construction's generation-by-symmetry hands off to ordinary Einstein evolution"** --- the symmetric case is
+precisely where the construction stops generating.*
+
+⇒ ***MATTER IS A BREAKING OF THE MAXIMAL SYMMETRY; THE PRINCIPLE SELECTS WHAT REQUIRES NO BREAKING.*** *Asking
+it to supply matter asks it for the thing it is defined to avoid. **It cannot be the law.***
+
+**⛭ AND THIS IS THE SECOND TIME THE SAME SHAPE HAS ANSWERED THIS ROW.** *`r6481`: the one cut the
+construction distinguishes intrinsically is Nariai, **and it carries no matter**. Here: the one profile the
+principle selects is constant, **and that is $\Lambda$**. ***Every maximally symmetric selection this
+construction offers returns something matterless*** --- which is `p0`'s own "the rigidity and the wall are one
+fact", seen from inside this row rather than stated over it.*
+
+⚠ **IT DOES NOT CLOSE THE ROW.** *It removes the one existing candidate, so **the law must be something other
+than a symmetry selection**. That is a narrowing of what an answer could look like, not a verdict --- and no
+claim is made that no such law exists.*
+
+⌗ *Built entirely from statements read at source in `P12`, `p0` and `P07`; no absence asserted. Landed in
+`P08` `sec:open`, the row, and the runway. `P08` 23pp, zero undefined; twelve gates green.*
+
 ### Revision r6483 — 2026-09-09 (node 64). **`r6481`'s "third route" and "the corpus does not note it" RETRACTED — and the tendency that produced them is now gated.**
 
 **⛔ WHAT WAS WRONG, AND BOTH HALVES WERE.** *⓵ **Not a third route.** `p0`'s offset relation **is** the

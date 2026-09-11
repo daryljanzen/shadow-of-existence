@@ -88,6 +88,15 @@ EST = {
         'states at the Nariai locus -- the same computation in other variables, and the absence '
         'claim beside it was made from a grep without opening P03, P17 or P15. What survives is the '
         'connection and the function-not-a-number finding. '
+        'r6485 REMOVES THE CORPUS ONE SELECTION PRINCIPLE AS A CANDIDATE, structurally. P12: '
+        'least-arbitrariness prefers the structure requiring NO CHOICE of how to break a symmetry, and '
+        'among profiles exactly one qualifies, rho constant. But p0 says a constant density enters the '
+        'Lambda r^2/3 term and NOT the 2m/r bend, and P07 puts homogeneous collapse past the wall where '
+        'generation-by-symmetry hands off to Einstein evolution. So the selected profile is the '
+        'cosmological term, not matter -- and matter is a BREAKING of the symmetry the principle selects '
+        'for, so it cannot supply it. Second time this shape has answered the row: the distinguished CUT '
+        'is matterless and the selected PROFILE is Lambda. The law must be something other than a '
+        'symmetry selection. '
 ),
     'PO-31': ('the progenitor spectrum', 1, 1, 6, None,
         'r4493/r6427: two of three rooms closed by impossibility; what remains is the progenitor spectrum, a modelling  '
