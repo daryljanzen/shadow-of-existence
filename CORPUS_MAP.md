@@ -146,6 +146,41 @@ sources: [cowork, chat]
 
 
 
+### Revision r6453 — 2026-09-09 (node 64). **The `r6445` clause resolved STRUCTURALLY: `PO-23` is the last of three named parts, and its remainder is not reachable by refining the free-spectrum method.**
+
+**⌗ THE CLAUSE WAS MINE AND IS NOW DISCHARGED, though not in the direction I expected.** *`r6445` bounded
+`60`'s result on the premise that "coupling acts on this sum by deforming the spectrum". ***That premise
+cannot be established ahead of this row: it asks what the coupling does to THE SUM, and the open item IS
+the definition of that sum.*** ⇒ **So `60`'s table is exactly the reach of the free-spectrum method, and
+the remainder is not reachable by refining it** --- the conditional is the boundary of the technique, not a
+weakness in the work.*
+
+**⛭ AND THE ROW IS THE LAST OF A TRIPLE, TWO OF WHICH ARE NOW SAID.** *`P07`: what remains open is the
+definition of the interacting tower --- **the spectrum of $\hat\Gamma$, whether it is bounded below, and
+the ultraviolet definition of the mode sums** --- then, in its own voice, "**two of those three can now be
+said**". The operator **is** bounded below; its spectrum **is** computable branch by branch, $\tfrac14$ and
+$\tfrac34$. ⌗ *And `P10`'s coupling is not what a deformation table deforms: $\hat\Gamma$ acts on the
+**scale-factor** sector, the $\mu_n$ untouched, and the boundary condition is **settled** fibre by fibre.
+`P10`'s own note: "do not report the coupled sector as a residual quantization freedom".*
+
+**⛔ AND THE RE-SCOPING THIS INVITES IS ONE THE CORPUS ALREADY MADE AND REVERSED --- I WAS ONE STEP FROM
+RE-MAKING IT.** *`P07` frames the item as whether the coupled sector is a consistent, well-defined theory,
+which reads like any interacting theory's problem, and the obvious move was to call the remainder **not
+CR-specific**, as `PO-36` was scoped at `r6407`. ***The ledger: "RESTORED `r1291` --- wrongly kill-listed
+`r1243` as 'not a CR open' and propagated as such this session; a genuine open, not a false-open.
+Daryl-flagged."*** ⇒ **Not re-made. The remainder is a genuine CR open and room ① does not close.**
+
+⚠ **AND LANDING IT EXPOSED A PROPERTY OF THE NEW MARKER NUMBERING, recorded rather than fixed.** *Inserting
+an `INDEX` row **renumbered an existing receipt** --- `P10_the_straddle_is_computed` moved `P10R11` →
+`P10R12` --- because the marker is a **positional counter** over the index rows, not a stored identifier.
+⌗ *Checked before reporting it as a defect: **no prose anywhere cites a marker by number**; every surface
+regenerates from the one `INDEX`, so the three rails stay consistent and the numbering is internally
+sound.* ⇒ ***The hazard is latent and bounded: the moment anything outside the generated set cites a
+number --- a note, a review, a published PDF --- that reference can shift under it.*** **All eighteen
+appendices regenerated together so no rail is left behind.**
+
+⌗ *Nine gates green; eight papers compile at zero undefined; `P10` now carries the bound in `sec:deparam`.*
+
 ### Revision r6451 — 2026-09-09 (node 64). **62's red gate cleared: the duplicate receipt prefix was mine, and it came from writing the deprecated paper tag into a filename.**
 
 **⌗ WHAT IT WAS.** *`r6437`'s receipt was named `p0_the_entropy_declination_...`. The prefix parser reads
