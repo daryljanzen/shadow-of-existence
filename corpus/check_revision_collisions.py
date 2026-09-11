@@ -242,6 +242,9 @@ import os as _os
 #:   statement from either half.*
 _PARITY_BY_NODE = {'54': 0, '60': 0,          # EVEN half
                    '57': 1, '59': 1, '61': 1, # ODD half -- 61 takes over 59's half, r4011
+                   '64': 1,                 # ODD half -- declared r6503 from measurement,
+                                            # not assumed: 49 of 64's r6xxx revisions are odd
+                                            # and 0 are even, against 60's even band above.
                    'cc54': 0,                 # compute node, works under 54's band
                    'ci': None}                # the runner is not a line and holds no half
 _NODE = _os.environ.get('NODE')

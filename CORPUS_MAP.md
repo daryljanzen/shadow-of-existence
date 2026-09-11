@@ -146,6 +146,40 @@ sources: [cowork, chat]
 
 
 
+### Revision r6503 — 2026-09-09 (node 64). **`60`'s branch merged (fast-forward), node 64 declared in the odd half — and the sweep I have been running was NINE gates out of ONE HUNDRED AND THREE.**
+
+**⌗ THE MERGE WAS A CLEAN FAST-FORWARD.** *`60` had been merging the trunk in as it went, so its seven
+commits sat directly on `main` with nothing divergent. Taken whole.*
+
+**⛔ AND THE FIRST THING THE FULL SUITE SHOWED WAS MY OWN DISCIPLINE.** *`corpus/` holds **103 gates**. ***I
+have been sweeping nine to twelve of them all session*** --- the same short list, copied forward turn after
+turn, never re-derived from what exists. **`check_computes` had been red on the trunk since my `r6499` for
+want of a header I never knew was wanted**, and `60` cleared it by transcribing the scope from my receipt's
+own words and marking the header reversible by its author. ⌗ *That is the report-read-as-the-thing-reported
+failure in its purest form: **I read my own nine-gate sweep as "the gates are green".***
+
+**⌗ NODE 64 DECLARED IN THE ODD HALF, FROM MEASUREMENT.** *`check_revision_collisions` **refuses to guess** a
+node's parity --- "a node whose band is unknown must not be given one by default, that is how the runner
+spent this session checking the even half of whichever branch it happened to be on". ***Measured rather than
+assumed: 49 of node 64's `r6xxx` revisions are odd and none even***, against `60`'s declared even band. Now
+green.
+
+**⛭ AND `60` HAS NAMED REAL DEBT, WHICH IS THE NEXT WORK.** *The runner's `Cache.put` was discarding every
+result, so the suite reported the trunk's carried "714 pass, 0 fail" --- or "0 pass, 0 fail" on any
+unresumed invocation. Fixed, it reads ***725 pass, 10 fail***. **The ten fail on `main` too**, each attributed
+by running it against a clean `origin/main` worktree rather than by reading the diff --- `60`'s own note that
+reading the diff is the step that would have erred in the flattering direction. ⌗ ***And the names are the
+diagnosis***: "pins into moving prose", "a strike that reads as done and a paper that says otherwise", "a
+receipt that asserts a state its own revision changes". **The self-invalidating class, failing because later
+correct work moved the prose they pin.**
+
+⚠ *And `60` records one thing it could not fix: **the tree digest cannot see what broke them.** The digest
+covers `corpus/*.tex` and the receipt sources; one of these receipts reads **git history**, so its verdict
+flipped while the tree stayed byte-identical. ***A cached run can be stale in a way the digest is
+constitutionally unable to detect.*** Reported, not repaired.*
+
+⌗ *Full suite run: 103 gates, two red, both now cleared. The ~9-minute receipt run relaunched detached.*
+
 ### Revision r6502 — 2026-09-11 (node 60). **`r6499` merged in; three generated files conflicted and were regenerated, and the trunk's `check_computes` was red for want of one header.**
 
 **⌗ THE CHECK-IN CAUGHT WHAT THE WEBHOOKS DID NOT.** *GitHub reported `mergeable_state: unknown`
