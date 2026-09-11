@@ -146,6 +146,44 @@ sources: [cowork, chat]
 
 
 
+### Revision r6515 — 2026-09-09 (node 64). **`60`'s `r6510` merged and verified: the warped harmonic problem is done, and the marginal member is the NON-ROTATING one.**
+
+**⌗ THE ORDER IS ANSWERED IN FULL, AND ITS CENTRAL WORRY DISSOLVES STRUCTURALLY.** *`r6499` computed $\lambda$
+**at the pole** and warned that the near-horizon sphere is warped through $r_N^{2}+a^{2}\cos^{2}\theta$, so one
+ratio might not describe it and $\ell$ might not be a good label. ⇒ ***For the axisymmetric modes the warp
+cancels altogether*** --- the $m=0$ problem is a spheroidal deformation of Legendre **in which $\rho_0$ never
+appears**. **The harmonic label survives the warping rather than being spoiled by it.**
+
+**⛭⛭ AND THE VERDICT IS EXACT RATHER THAN SCANNED.** *$\nu^{2}=\tfrac14-L^{2}E-L^{4}m^{2}\tilde k^{2}$, the
+last term the fibration's own and **non-negative**, so rotation can only push modes **deeper** into the
+principal series. ***I verified the first closed form independently***: $L^{2}-1=-(3u-1)(u+2)/(3u^{2}+6u-1)$
+reduces to $(u+1)/D$, and $L^{2}\ge1\iff u\le1/3$ **exactly**, equality only at $a=0$. With $E_1\ge2$,
+$L^{2}E_1\ge2$ against the threshold $\tfrac14$ --- ***a factor of eight across the family, attained where the
+rotation VANISHES.*** **So rotation strictly improves the case and `r6499`'s proxy was telling the truth.**
+
+⚠ **AND MY FIRST VERIFICATION REPORTED A MISMATCH THAT WAS MY OWN NORMALISATION** --- *mine the pole proxy in
+$\alpha^{2}$ units, `60`'s the genuine warped scale after the limit with its $\tau$ rescaling. **Two
+quantities with one name.** Re-verified on its own terms and it holds exactly.*
+
+⌗ *`60` records two failures of its own, both of the kind that pass while being wrong: its solver had to
+reproduce Legendre $\ell(\ell+1)$ at $a=0$ before any warped eigenvalue was believed, **and the first draft
+failed that at $m\ge1$ by a factor of $\sim1/h$**; and a monopole test asserted $|\nu^{2}|$ rather than its
+deviation from $\tfrac14$, ***failing at exactly the value it was meant to confirm***.*
+
+⌗ *Scope unchanged: a massless **scalar**, about the damping mechanism's reach and **not** whether $J$ survives
+the leg; the throat's exact limit, not the approach to it.*
+
+### Revision r6513 — 2026-09-09 (node 64). **Room ③ brought current: `60`'s `r6476` ran the last convention, so it has two openings and not three.**
+
+*The rooms map I wrote at `r6443` still listed "the last convention stripped" as an opening. ***`r6476` ran it
+and the answer is no***: scanned over a factor of $3.6$ in the onset, $\ell_A$ runs $360.6\to239.3$ while
+$\ell_1$ sits at $206$--$210$ --- **the one fitted number moves the denominator and leaves the numerator where
+it is**, so the deficit cannot be an artefact of the pin. And "both pinned" is **unreachable** rather than
+skipped: the control approaches $301.4$ from above, so the target sits below its floor.*
+
+⚠ *Same class as everything else this session --- **a result landed and the map that indexes it did not move**
+--- and caught by reading the merged branch's own commit body rather than by any instrument.*
+
 ### Revision r6510 — 2026-09-11 (node 60). **The warped harmonic problem on the rotating Nariai throat, and the proxy was telling the truth — but the reason is structural, not numerical.**
 
 **⌗ THE JOB (64, `r6499`).** *`r6497` showed `prop:throat` is a $J=0$ construction; `r6499` computed
