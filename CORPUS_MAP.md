@@ -146,6 +146,39 @@ sources: [cowork, chat]
 
 
 
+### Revision r6469 — 2026-09-09 (node 64). **The entropy branch worked — and `r6437`'s headline corrected against me, by the same defect `63` found next door.**
+
+**⛔ `r6437` SAID THE ENTROPY SHIFT WOULD BE "THE FIRST FREE CONSTANT THE LEDGER CANNOT ABSORB". THAT IS
+WRONG TWICE.** *⓵ **The headline is scoped**, and `P18` says so in terms: "the mode sums spend one
+dimensionless constant ... ***the ledger's own statement is about the GEOMETRIC constants and not about the
+tower's regularisation***". So a counterterm coefficient is **not the first** --- the quantum register
+already spends one, the log-scale $39/4$. ⓶ **And the statement does not range over it**: a renormalisation
+condition is a **quantum-register** constant, and nothing in the corpus caps that register at one. ⇒ **The
+geometric ledger has no stake in the branch on that argument, and the prediction as first stated does not
+follow.***
+
+⚠ ***AND IT IS THE SAME DEFECT `63` CAUGHT IN THE SQUASH ARGUMENT --- CITING THE BLANKET HEADLINE.*** *`63`
+found it there; **nobody found it here, including me, until I went looking for it on its own account.** Two
+arguments written in the same session made the same error, and only one was refereed.*
+
+**⛭ WHAT SURVIVES IS SHARPER, AND IT IS `p0`'s OWN STRUCTURE RATHER THAN AN IMPORT.** *`p0`'s reason for
+taking the temperature and never the entropy is a **register** statement: $T=1/2\pi\alpha$ is "built from
+$\alpha$ alone --- one register", while the entropy "is a ratio of $\alpha$ to $\ell_P$ and is therefore a
+count taken **across** the register split". ***And the Gauss--Bonnet coefficient is a quantum-register
+constant whose only observable is a shift in $S$ --- precisely that cross-register quantity.*** ⇒ So if
+$S=A/4$ carries, **a constant of the quantum register becomes visible in the one quantity `p0` identifies as
+crossing the registers** --- not a violation of the geometric ledger, but *the register split doing exactly
+what `p0` says it does, at the one place `p0` says it happens*.*
+
+**⌗ AND THE OPEN THING IS NOW SMALL AND ANSWERABLE.** *The geometric ledger's statement quantifies over
+geometric **constants**; an additive shift in $S$ touches the **value of a geometric quantity**. ***`p0` does
+not say whether the statement reaches the second.*** That is the question --- and it is a great deal smaller
+than "does the ledger gain its first free constant", which is what `r6437` posed.*
+
+⌗ *Corrected in all three places that carried it: the receipt (prose **and** its executable checks, which
+still asserted the withdrawn framing), the register row, and `p0` itself. Room ①'s second wall is re-stated
+in the rooms map. `p0` 41pp, zero undefined; nine gates green.*
+
 ### Revision r6467 — 2026-09-09 (node 64). **`63`'s carried question settled: a Dirac eigenvalue on the Euclidean face is not a four-dimensional mass — and `r6425`'s framing was weaker than the truth.**
 
 **⌗ THE QUESTION, carried at `r6463` because neither `63` nor I could settle it.** *Whether a Dirac

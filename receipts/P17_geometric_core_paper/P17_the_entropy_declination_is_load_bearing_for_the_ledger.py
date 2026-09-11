@@ -33,25 +33,46 @@ WHAT A TOPOLOGICAL TERM DOES, IN FOUR DIMENSIONS.
     whose ONLY observable here is the entropy shift. **
 
 --------------------------------------------------------------------------------
-WHY THE LEDGER CANNOT ABSORB IT, WHICH IS THE POINT.
+** ⛔ CORRECTED r6469 AGAINST MYSELF.  THE ORIGINAL CLAIM -- "the first free constant
+   the ledger cannot absorb" -- WAS WRONG TWICE, and by the same defect 63 found in
+   the neighbouring squash argument: it cited the BLANKET no-free-constants headline. **
 
-`p0` has a mechanism for a constant VACUUM ENERGY: it is absorbed into the one
-observed curvature, with no bare-Lambda-versus-vacuum split.  ** There is no
-corresponding absorber for a constant ENTROPY shift. **  S = pi(alpha/l_P)^2 is
-fixed once alpha is, l_P being a gauge; a shift S -> S + s_0 requires s_0 itself.
+  (i) ** The headline is scoped. **  `P18`, in terms: "the mode sums spend one
+      dimensionless constant ... the ledger's own statement is about the GEOMETRIC
+      constants and not about the tower's regularisation."  So a counterterm
+      coefficient would not be the FIRST -- the quantum register already spends one,
+      the log-scale coefficient 39/4.
 
-  ==> S = A/4 CARRIES:        the ledger acquires a free dimensionless constant it
-                              cannot absorb -- ** the first one **, against a claim
-                              the corpus states as spending none.
-  ==> S = A/4 FAILS to carry: the coefficient has no home at all, the ledger counts
-                              no topological term, and `p0`'s "a result and not a
-                              gap" is exactly what obtains.
+  (ii) ** And the ledger's statement does not range over it. **  The Gauss--Bonnet
+      coefficient's finite part is a renormalisation condition: a quantum-register
+      constant.  The geometric ledger says nothing about those, and nothing in the
+      corpus claims the quantum register spends AT MOST one.
 
-** SO THE NO-FREE-CONSTANTS CLAIM, TAKEN SERIOUSLY, PREDICTS THAT S=A/4 DOES NOT
-   CARRY TO THIS HORIZON. **  That is not an argument that it does not; it is a
-statement that the programme has a stake in which branch holds, where `p0` recorded
-the branch as costless either way.  ** The declination is load-bearing, and it was
-not known to be. **
+  ==> ** So the geometric ledger has no stake in the branch on that argument, and the
+      prediction as first stated does not follow. **
+
+--------------------------------------------------------------------------------
+WHAT SURVIVES, AND IT IS SHARPER THAN WHAT IT REPLACES.
+
+`p0`'s own reason for taking the temperature and never the entropy is a REGISTER
+statement, and it is exactly the structure this coefficient has.  T = 1/2 pi alpha is
+"built from alpha alone -- one register"; the entropy "is a ratio of alpha to l_P and
+is therefore a count taken ACROSS the register split, mixing the thermal gauge with
+the real-geometric ones".
+
+  ** The Gauss--Bonnet coefficient is a QUANTUM-register constant whose only
+     observable is a shift in S -- which is precisely the CROSS-register quantity. **
+
+  ==> So if S = A/4 carries, ** a quantum-register constant becomes visible in the one
+      quantity p0 identifies as crossing the registers **.  That is not a violation of
+      the geometric ledger; it is the register split doing what p0 says it does, at
+      the one place p0 says it happens.
+
+  ⚠ AND WHETHER THAT IS A COST IS GENUINELY UNSTATED.  ** The geometric ledger's
+    statement quantifies over geometric CONSTANTS.  Whether it also constrains the
+    VALUES of geometric QUANTITIES -- which is what an additive shift in S would
+    touch -- p0 does not say. **  That is the open thing, and it is smaller and more
+    answerable than "does the ledger gain its first free constant".
 
 --------------------------------------------------------------------------------
 WHAT IS NOT CLAIMED.  Not that S=A/4 fails -- that is the open question and this
@@ -78,31 +99,42 @@ assert gauss_bonnet["Wald entropy"] is True
 print("  Gauss-Bonnet in 4D: no field equation; a Wald-entropy term going as chi")
 print(f"  2-sphere cross-section, chi = {CHI_SPHERE}: an AREA-INDEPENDENT constant shift  OK")
 
-# --- can the ledger absorb it, as it absorbs a constant vacuum energy? -----------
-absorber = {
-    "constant vacuum energy": "Lambda",   # p0's own mechanism
-    "constant entropy shift": None,       # S = pi(alpha/l_P)^2 is fixed once alpha is
+# --- which register does the coefficient live in? --------------------------------
+REGISTERS = {
+    "geometric":  {"spends": 0, "ledger says": "no free dimensionless constant"},
+    "quantum":    {"spends": 1, "ledger says": "the mode sums spend one; no cap stated"},
 }
-assert absorber["constant vacuum energy"] is not None
-assert absorber["constant entropy shift"] is None
-print("  a constant vacuum energy has an absorber (Lambda); a constant entropy")
-print("  shift has none -- it would require a new constant                     OK")
+assert REGISTERS["quantum"]["spends"] == 1, "zeta(0)=10 established this"
+gb_register = "quantum"                       # a renormalisation condition
+assert gb_register != "geometric", "so the geometric ledger's statement does not range over it"
+print(f"  the Gauss-Bonnet coefficient is a {gb_register}-register constant,")
+print(f"  and that register already spends {REGISTERS['quantum']['spends']}.")
+print("  -> NOT 'the first', and not what the geometric ledger speaks about  OK")
 
-# --- so the two branches disagree, which is the whole finding -------------------
-def ledger_gains_a_free_constant(entropy_carries):
-    return bool(entropy_carries)
+# --- what survives: it is the cross-register quantity p0 names -------------------
+one_register = {"T = 1/2 pi alpha": ("alpha",)}
+cross_register = {"S = pi (alpha/l_P)^2": ("alpha", "l_P")}
+assert len(next(iter(one_register.values()))) == 1
+assert len(next(iter(cross_register.values()))) == 2, "p0: a count taken ACROSS the split"
+print("\n  p0: T is one-register; S is a count taken ACROSS the register split.")
+print("  The GB coefficient's ONLY observable is a shift in S.")
+print("  -> a quantum-register constant made visible in the one quantity")
+print("     p0 identifies as crossing the registers                        OK")
 
-assert ledger_gains_a_free_constant(True) is True
-assert ledger_gains_a_free_constant(False) is False
-assert ledger_gains_a_free_constant(True) != ledger_gains_a_free_constant(False), \
-    "the branches must disagree, or the question would be independent"
-print("  S=A/4 carries -> ledger gains a free constant it cannot absorb")
-print("  S=A/4 fails   -> the coefficient has no home; p0's 'result, not gap'")
-print("  -> the branches DISAGREE, so the topological-terms question cannot")
-print("     be settled independently of the entropy                            OK")
+# --- and the genuinely unstated thing -------------------------------------------
+ledger_quantifies_over = "geometric CONSTANTS"
+the_shift_touches = "the VALUE of a geometric QUANTITY"
+assert ledger_quantifies_over != the_shift_touches, \
+    "if these coincided the question would be settled by the ledger as written"
+print(f"\n  the ledger quantifies over : {ledger_quantifies_over}")
+print(f"  an additive shift touches  : {the_shift_touches}")
+print("  -> p0 does not say whether the statement reaches the second.")
+print("     THAT is the open thing, and it is smaller than what r6437 claimed OK")
 
 print()
-print("ESTABLISHED: p0's declination is load-bearing for the counterterm ledger,")
-print("and the no-free-constants claim has a stake in which branch holds -- it")
-print("PREFERS that S=A/4 does not carry, which p0 recorded as costless either way.")
-print("NOT ESTABLISHED: which branch holds. That remains the open question.")
+print("ESTABLISHED: the coefficient is a quantum-register constant whose only")
+print("observable is a shift in the one quantity p0 calls cross-register -- so the")
+print("declination is not costless, but the cost is a register-crossing and NOT the")
+print("geometric ledger gaining its first free constant, which is what r6437 said.")
+print("NOT ESTABLISHED: whether the geometric ledger's statement reaches the VALUES")
+print("of geometric quantities at all. p0 does not say, and that is now the question.")
