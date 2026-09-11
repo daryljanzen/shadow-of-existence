@@ -9,8 +9,10 @@ renders it in the browser.
   A page that baked in the open-row count would be a SECOND HOME for that count,
   and every second home in this corpus has gone stale -- the register's masthead
   (r4487), THE_PLAN's grain cell (r4479), OPEN_PROBLEMS_MAP (r4515), THE_FRONTIER's
-  own headline (r4551).  The frontier is generated from THE_REGISTER by
-  regen_frontier.py, which is the one source; this page reads that artefact and
+  own headline (r4551).  The frontier's LIVE ROWS are generated from THE_REGISTER by
+  regen_frontier.py; its per-row RUNWAY PROSE is an editorial digest held in that
+  script and is NOT derived from the register (see its header, and
+  corpus/check_frontier_current.py).  This page reads the artefact and
   owns no copy of it.
 
 The paper list IS baked, because it changes on the scale of years and a wrong

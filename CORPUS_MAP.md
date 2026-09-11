@@ -146,6 +146,38 @@ sources: [cowork, chat]
 
 
 
+### Revision r6473 — 2026-09-09 (node 64). **`THE_FRONTIER` was not generated from the register in the way everyone treated it — every live row's runway was stale by ~2000 revisions, and it was serving that to the live site.**
+
+**⌗ FOUND BY DOING CLOSURE-ADJACENCY INTO `PO-30`, which `r6465` owed and missed.** *The view's runway for
+`PO-30` still quoted `P08` calling it "the deepest question this construction opens onto" --- ***a sentence
+`r6423` removed from `P08`***. Chasing that found the cause.*
+
+**⛔ THE VIEW IS A FROZEN TABLE INSIDE ITS OWN GENERATOR.** *`regen_frontier.py` reads `THE_REGISTER.md` for
+**which rows are live** --- and struck rows do drop out correctly. **But the per-row title, counts and
+runway prose are a hardcoded `EST` table in the script**, and nothing updated them when a row moved.
+⇒ ***At `r6473` every one of the eight live rows lagged its register row --- by between 1898 and 2578
+revisions.*** **None of today's work had reached the document a node reads to decide what to work next**, and
+the same text was on the public site through `frontier.html`.*
+
+**⚠ AND THE BELIEF THAT LET IT DRIFT WAS WRITTEN INTO THE GENERATORS THEMSELVES.** *`gen_live_edition.py`:
+"the frontier is generated from `THE_REGISTER` by `regen_frontier.py`, **which is the one source**".
+***A document that looks generated and is not is worse than one that looks hand-written: nobody thinks to
+check it.*** Both headers now state what is generated and what is an editorial digest.*
+
+**⛭ FIXED IN BOTH HALVES.** *All eight runways **rewritten forward** to their rows' current state --- not
+stamps bumped, prose written. And `corpus/check_frontier_current.py`: the newest revision a runway cites
+must be at least the newest its row cites, **failing when a row moves and the view does not**. Verified
+against a seeded stale stamp; wired into CI. ⌗ *Currency is what is checkable --- the runway is a digest of a
+row running to tens of thousands of characters and **cannot** be generated, and pretending otherwise is what
+would manufacture the same lie again. **The gate says so: write the runway forward, never bump the stamp.***
+
+⌗ *And the `PO-30` work this was in service of: its runway now carries the `r6423` closure --- the curve's
+dynamics **given content** is supplied, what is owed is a law for the **content** --- and `PO-26`'s strike,
+which closes the geometric route on the compact face, so that is not where the content comes from. **The
+room ② closure-adjacency `r6465` owed is now done.***
+
+⌗ *Ten gates green; `frontier.html` regenerated and clean.*
+
 ### Revision r6471 — 2026-09-09 (node 64). **The entropy branch worked to the end: `r6437` RETRACTED, `PO-43`'s second question answered, and room ① drops to one wall.**
 
 **⌗ THE QUESTION `r6469` LEFT was whether the ledger's statement reaches the VALUE of a geometric quantity
