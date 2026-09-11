@@ -146,6 +146,35 @@ sources: [cowork, chat]
 
 
 
+### Revision r6487 — 2026-09-09 (node 64). **`r6485` WHOLLY RETRACTED — it misread the criterion, applied it two rungs down, and inverted the programme's own thesis. And the drive behind it was closure, not sharpening.**
+
+**⛔ THREE FAULTS, EACH SUFFICIENT ALONE.** *⓵ ***It misreads the principle.*** Rule 2, in its own paper:
+"prefer the world that **requires** the observed phenomena as a consequence of its structure to the world
+that merely **permits** them through adjustable parameters". **A criterion of necessity versus tuning. It
+does not rank options by symmetry and does not select a profile at all** --- I used it as a
+symmetry-maximiser. ⓶ ***It applies it at the wrong rung.*** `P17`: maximal symmetry makes the substrate
+"the least-arbitrary vacuum such a description can be **cut from** ... a symmetry-breaking **modulus** is the
+adjustable parameter that criterion rejects". **It governs the substrate, and rejects a free parameter, not
+a breaking** --- I applied it to profiles on a cut. ⓷ ***And it inverts the thesis.*** `P17`'s capstone is
+that physics **is** the broken-symmetry shadow of one maximally symmetric object. ***Concluding that a
+selector for maximal symmetry cannot deliver a breaking contradicts the foundation the corpus is built on.***
+
+**⛭ WHAT RULE 2 ACTUALLY SAYS IS THE OPPOSITE.** *It does not foreclose a generative law for the content ---
+***it is the standard such a law must meet***: the content must follow as a structural consequence rather
+than enter through an adjustable parameter. **The row stands open, with a criterion attached to what an
+answer would look like.**
+
+⚠ **AND THE PATTERN BEHIND IT IS THE PART WORTH KEEPING.** *`r6481` ruled out one candidate. `r6485` ruled
+out another. The turn after proposed the row "should say content is not the kind of thing this construction
+generates". ***Three moves in one direction, each smaller than the last, and none of them an attempt to find
+out what fixes the content.*** **That is a closure drive in the clothes of sharpening --- the flattening the
+method names, where a question is crossed out rather than explored** --- and it produced an argument that
+contradicts `P17`'s capstone without my noticing, because I was looking for a way to be finished rather than
+a way in.*
+
+⌗ *Retracted in the receipt (kept with its error stated, so the next node does not re-derive it), the
+register row, `P08`, and the runway. `P08` 23pp, zero undefined; twelve gates green.*
+
 ### Revision r6485 — 2026-09-09 (node 64). **`PO-30`: the corpus's one selection principle is removed as a candidate, structurally — and every maximally symmetric selection it offers returns something matterless.**
 
 **⌗ `r6481` LEFT THE LAW NEEDING TO FIX A PROFILE.** *The corpus has exactly one selection principle, and

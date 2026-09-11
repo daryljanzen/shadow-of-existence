@@ -1,65 +1,51 @@
 """
-P08_the_selection_principle_cannot_supply_matter
-================================================
+P08_the_selection_principle_cannot_supply_matter -- ** WHOLLY RETRACTED r6487. **
+================================================================================
 
-Object under test -- `PO-30`, after r6481 reduced it: the law must fix a PROFILE m(r),
-not a number.  ** The corpus has exactly one selection principle -- least-arbitrariness
--- and this asks whether it can select a profile. **
+** THIS RECEIPT'S ARGUMENT IS WRONG AT THE ROOT AND IS RETRACTED, NOT QUALIFIED. **  It
+is kept, with its error stated, because the error is instructive and because deleting a
+wrong argument leaves the next node free to make it again.
 
-** IT CAN, AND WHAT IT SELECTS IS NOT MATTER.  Both halves are already stated in the
-   corpus; what is new is putting them together and seeing what they do to this row. **
+WHAT IT CLAIMED (r6485): that least-arbitrariness "selects" the constant profile, that a
+constant density is Lambda and not matter, and therefore that the principle "cannot
+supply matter, matter being a breaking of the symmetry it selects for".
 
---------------------------------------------------------------------------------
-(1) WHAT THE PRINCIPLE SELECTS.  `P12` states it: it "prefers the structure requiring
-NO CHOICE OF HOW TO BREAK A SYMMETRY", and is silent where no such choice arises --
-which is why it "selects the manifold at fixed dimension and is silent on the dimension
-itself".
+** WHY IT IS WRONG -- THREE FAULTS, EACH SUFFICIENT ON ITS OWN. **
 
-Applied to a radial profile: ** any non-constant rho(r) is a choice of HOW to break
-homogeneity -- which function -- and exactly one profile makes no such choice: rho
-constant. **  So the principle does reach profiles, and it selects the homogeneous one.
+  (1) ** IT MISREADS THE PRINCIPLE. **  Rule 2, in its own paper: "Prefer the world that
+      REQUIRES the observed phenomena as a consequence of its structure to the world
+      that merely PERMITS them through adjustable parameters."  *** It is a criterion of
+      NECESSITY VERSUS TUNING.  It does not rank options by symmetry and does not
+      "select" a profile at all. ***  I used it as a symmetry-maximiser, which it is not.
 
---------------------------------------------------------------------------------
-(2) AND IN THIS CONSTRUCTION A CONSTANT DENSITY IS NOT A BEND AT ALL.
+  (2) ** IT APPLIES IT AT THE WRONG RUNG. **  `P17` states where it acts: "maximal
+      symmetry is what makes the substrate the least-arbitrary vacuum such a description
+      can be CUT FROM ... a symmetry-breaking MODULUS is the adjustable parameter that
+      criterion rejects."  The criterion governs the SUBSTRATE -- the thing cut from --
+      and what it rejects is an adjustable MODULUS.  ** Not a breaking.  A free
+      parameter. **  I applied it to profiles on a cut, two rungs down.
 
-`p0` says so outright, in the course of dissolving the cosmological-constant problem:
-"a constant density gravitates as a curvature scale, so it enters the profile's
-Lambda r^2 / 3 term, ** NOT as a 2m/r bend **" -- and immediately: "the
-substrate/bend distinction separates Lambda from INHOMOGENEOUS matter, a genuine bend
-that breaks the maximal symmetry."
+  (3) ** AND IT INVERTS THE PROGRAMME'S OWN THESIS. **  `P17`'s capstone is that physics
+      IS the broken-symmetry shadows of one maximally symmetric object -- "a
+      symmetry-breaking slicing of the maximally symmetric object, not a separate
+      thing".  *** Concluding that "a selector for maximal symmetry cannot deliver a
+      symmetry-breaking" contradicts the thesis the corpus is built on. ***  Breaking is
+      what the construction DOES.
 
-  ==> ** The profile least-arbitrariness selects is absorbed into Lambda.  It is the
-      cosmological term, not matter. **
+** WHAT RULE 2 ACTUALLY SAYS ABOUT THIS ROW, which is the opposite of what I wrote. **
+It does not foreclose a generative law for the content.  ** It is the STANDARD such a
+law must meet: ** the content must follow as a structural consequence rather than be
+admitted through an adjustable parameter.  *** So Rule 2 leaves the row open and tells
+you what an answer would have to look like. ***
 
-  ⌗ And `P07` reaches the same boundary from the other side: "homogeneous collapse lies
-  past the wall of inhomogeneity, where the construction's generation-by-symmetry hands
-  off to ordinary Einstein evolution."  ** The symmetric case is precisely where the
-  construction stops generating. **
-
---------------------------------------------------------------------------------
-⇒ (3) SO LEAST-ARBITRARINESS CANNOT BE THE LAW `PO-30` WANTS, AND THE REASON IS
-   STRUCTURAL RATHER THAN A GAP.
-
-  matter               = a bend = a BREAKING of the maximal symmetry (`p0`)
-  the principle        = selects what requires no choice of how to break it (`P12`)
-
-** A selector for maximal symmetry cannot deliver a symmetry-breaking. **  Asking it to
-supply matter asks it for the thing it is defined to avoid.
-
-⌗ AND THIS IS THE SECOND TIME THE SAME SHAPE HAS ANSWERED THIS ROW.  r6481: the one cut
-the construction distinguishes intrinsically is the Nariai member, and it carries no
-matter.  Here: the one profile the principle selects is constant, and that is Lambda.
-*** Every maximally symmetric selection this construction offers returns something
-matterless -- which is p0's own "the rigidity and the wall are one fact" seen from
-inside PO-30. ***
-
---------------------------------------------------------------------------------
-⚠ WHAT THIS DOES AND DOES NOT DO.  ** It does not close the row. **  It removes the
-corpus's only existing selection principle as a candidate, which narrows what an answer
-could look like: *** the law must be something other than a symmetry selection, because
-the content it must fix is by definition what symmetry does not. ***  And it does not
-say no such law exists.
+⚠ ** AND THE DRIVE BEHIND IT IS WORTH RECORDING WITH IT. **  r6481 ruled out one
+candidate, r6485 ruled out another, and the turn after proposed that the row "should say
+content is not the kind of thing this construction generates".  *** That is a closure
+drive wearing the clothes of sharpening -- the flattening the method names, where a
+question is crossed out rather than explored. ***  Three moves in one direction, each
+smaller than the last, none of them an attempt to find out what fixes the content.
 """
+
 
 # --- (1) what the principle selects, applied to a profile -----------------------
 PROFILES = {
