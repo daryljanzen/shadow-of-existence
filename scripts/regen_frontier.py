@@ -160,6 +160,18 @@ EST = {
         'does NOT establish that J survives the leg, only that the no-hair tower is not what removes it. '
         'A charge can still be carried off by matter or torqued, and the constrained-sector analysis on '
         'the throat is a computation not yet done. '
+        'r6497 FOLLOWS IT TO THE GEOMETRY. prop:throat is a J=0 construction -- its argument is '
+        'direct from f at the Nariai mass, and f = 1 - 2GM/c^2 r - r^2/alpha^2 is the NON-ROTATING '
+        'metric, so the equal-radii dS2 x S2 and the whole tower on it are established at J=0. The '
+        'charge whose survival this row asks about is the one whose presence would deform the geometry '
+        'the argument is conducted on. BUT THE TOWER IS ROBUST AND THE MARGIN IS A NUMBER: generalising '
+        'to nu^2 = 1/4 - lambda l(l+1) with lambda the ratio of dS2 to S2 radius squared, the l=0 base '
+        'is 1/4 for EVERY lambda, and l>=1 stays principal series for lambda > 1/(4l(l+1)) -- 1/8 at '
+        'l=1, so the damping survives until the dS2 radius falls below 0.354 of the S2 radius, a factor '
+        'of 2.83, higher multipoles safer. So the isotropisation rests not on equal radii but on the '
+        'throat not being squashed by nearly a factor of three. NOT SHOWN: what lambda a rotating '
+        'progenitor produces -- a rotating near-horizon geometry is generally WARPED rather than a '
+        'direct product, so lambda may not be the right single parameter. '
 ),
     'PO-25': ('the charged bead -- DOES A CHARGED COLLAPSE FORM THE CAUCHY HORIZON', 1, 1, 4, None,
         'r3827/r6405: the step is RUN and comes out the same in both charge readings, which decouples it from the datum '

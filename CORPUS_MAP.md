@@ -146,6 +146,40 @@ sources: [cowork, chat]
 
 
 
+### Revision r6497 — 2026-09-09 (node 64). **`prop:throat` is a $J=0$ construction — and the tower's margin against that is measured and wide.**
+
+**⌗ THE DEPENDENCY, FOUND BY ASKING WHAT THE PROPOSITION IS DERIVED FROM.** *`prop:throat`'s argument is
+"direct from $f$ at the Nariai mass", and $f=1-2GM/c^{2}r-r^{2}/\alpha^{2}$ is the **non-rotating** metric. So
+the equal-radii $\dS_2\times S^{2}$, and the entire tower built on it, are established at $J=0$ by
+construction. ⇒ ***And `r6495` has just established that the no-hair tower is not what removes $J$ --- so the
+charge whose survival the row asks about is precisely the one whose presence would deform the geometry the
+argument is conducted on.***
+
+**⛭ AND THE HONEST QUESTION IS HOW MUCH RESTS ON IT, WHICH IS MEASURABLE.** *Generalising off the equal-radii
+point with $\lambda=r_{\rm dS}^{2}/r_{S}^{2}$ gives $\nu^{2}=\tfrac14-\lambda\,\ell(\ell+1)$, and $\lambda=1$
+returns `P15` exactly. ***At $\ell=0$, $\nu^{2}=\tfrac14$ for EVERY $\lambda$*** --- the scale-invariant base
+does not depend on the radii being equal at all. **At $\ell\ge1$, principal series for any
+$\lambda>1/(4\ell(\ell+1))$**: $1/8$ at $\ell=1$, so the damping survives until the $\dS_2$ radius falls below
+$0.354$ of the $S^{2}$ radius --- ***a factor of $2.83$, with $\ell=2$ and $\ell=3$ safer still.***
+
+⇒ **So the isotropisation does not rest on the equal-radii point. It rests on the throat not being squashed by
+nearly a factor of three, and the equal-radii case sits comfortably inside that** --- which strengthens `P15`
+rather than qualifying it.
+
+⚠ **AND IT DOES NOT SHOW THE CONCLUSION SURVIVES ROTATION.** *What $\lambda$ a rotating progenitor produces is
+**not computed**, and a rotating near-horizon geometry is generally **warped** rather than a direct product,
+so $\lambda$ may not even be the right single parameter. ***This measures a margin and names exactly what
+would decide whether rotation eats it.***
+
+⌗ **AND THE ABSENCE GATE FROM `r6483` CAUGHT ME ON MY OWN TEXT**, *two revisions after I built it: I wrote
+"that dependency is drawn nowhere" with no search behind it. **Evidence added beside the claim** --- the seven
+phrases searched across `corpus/*.tex`, where the hits sit, and `INDEX`'s independent record. ⌗ *And the fix
+itself tripped it once more, because quoting another record's absence phrasing reads to the gate as asserting
+one; reworded to state the search instead.* **The gate is doing precisely the job it was built for, on its
+author.**
+
+⌗ *`P15` 96pp, zero undefined; twelve gates green.*
+
 ### Revision r6495 — 2026-09-09 (node 64). **`PO-31`'s first computation answered: the damping removes the anisotropic signature and not $J$ — because $J$ is not among the modes the tower is a statement about.**
 
 **⌗ `P15`'s TOWER REPRODUCES EXACTLY, AND IT IS A STATEMENT ABOUT FIELD MODES.** *On the equal-radii throat an
