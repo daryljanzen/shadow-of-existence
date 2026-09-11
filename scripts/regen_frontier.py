@@ -172,6 +172,18 @@ EST = {
         'throat not being squashed by nearly a factor of three. NOT SHOWN: what lambda a rotating '
         'progenitor produces -- a rotating near-horizon geometry is generally WARPED rather than a '
         'direct product, so lambda may not be the right single parameter. '
+        'r6499 DOES THAT COMPUTATION. Kerr-de Sitters Delta_r = (r^2+a^2)(1 - r^2/alpha^2) - 2Mr '
+        'reduces at a=0 to exactly r^2 f(r), the corpus own horizon function, and its double root '
+        'Delta = Delta = 0 gives a^2 = r^2(alpha^2 - 3r^2)/(alpha^2 + r^2), RECOVERING prop:throats '
+        'r_N = alpha/sqrt3 and M = alpha sqrt3/9 at a=0 rather than assuming them. The family is bounded: '
+        'a_max = (2 - sqrt3) alpha EXACTLY, attained at r/alpha = 0.3933 where Delta = 0 and the double '
+        'root becomes TRIPLE -- the ultracold limit. Rotation shrinks the throat. AND THE ANSWER: lambda '
+        '= 1 exactly at a=0, rising monotonically with a and diverging at the ultracold point, against '
+        'the threshold of 1/8. So lambda starts with a factor of eight in hand and rotation only '
+        'increases it -- rotation STRENGTHENS the isotropisation. PROXY NAMED: lambda is the ratio at '
+        'the POLE; the rotating near-horizon S2 is warped through r_N^2 + a^2 cos^2 theta, so one ratio '
+        'does not describe it. For the conclusion to fail the warping must reverse a trend running the '
+        'right way by a factor of eight. '
 ),
     'PO-25': ('the charged bead -- DOES A CHARGED COLLAPSE FORM THE CAUCHY HORIZON', 1, 1, 4, None,
         'r3827/r6405: the step is RUN and comes out the same in both charge readings, which decouples it from the datum '

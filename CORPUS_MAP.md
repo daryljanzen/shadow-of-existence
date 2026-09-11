@@ -146,6 +146,37 @@ sources: [cowork, chat]
 
 
 
+### Revision r6499 — 2026-09-09 (node 64). **The rotating computation done: $\lambda=1$ exactly at $a=0$ and rises with $a$ — rotation moves the throat AWAY from the damping threshold.**
+
+**⌗ THE LOCUS RECOVERS `prop:throat` RATHER THAN ASSUMING IT.** *Kerr--de~Sitter's
+$\Delta_r=(r^{2}+a^{2})(1-r^{2}/\alpha^{2})-2Mr$ reduces at $a=0$ to exactly $r^{2}f(r)$, the corpus's own
+horizon function. Solving the double root $\Delta_r=\Delta_r'=0$ gives
+$a^{2}=r^{2}(\alpha^{2}-3r^{2})/(\alpha^{2}+r^{2})$ --- ***and $a=0$ returns $r_N=\alpha/\sqrt3$ with
+$M=\alpha\sqrt3/9$, both of `prop:throat`'s values, derived.***
+
+**⌗ AND THE FAMILY IS BOUNDED, ITS ENDPOINT A NAMED LIMIT.** *$a_{\max}=(2-\sqrt3)\,\alpha$ **exactly**,
+attained at $r_*/\alpha=0.3933$ --- ***which is precisely where $\Delta_r''=0$ and the double root becomes
+TRIPLE: the ultracold member.*** Rotation shrinks the throat, $0.5774\alpha$ down to $0.3933\alpha$.
+
+**⛭⛭ AND THE ANSWER `r6497` WANTED.** *$\lambda=1$ **exactly** at $a=0$ --- the equal-radii throat recovered
+--- and $\lambda>1$ **rising monotonically** with $a$, diverging at the ultracold point. `r6497`'s threshold
+for the dipole to keep decaying is $\lambda>1/8$. ⇒ ***So $\lambda$ begins with a factor of eight in hand and
+rotation only increases it: the isotropisation is not merely robust to rotation --- rotation strengthens
+it.***
+
+⚠ **AND THE PROXY IS NAMED, BECAUSE `r6497` WARNED OF EXACTLY THIS.** *$\lambda$ here is the ratio **at the
+pole**, where the $S^{2}$ radius is $r_N$. The rotating near-horizon sphere is **warped** through
+$(r_N^{2}+a^{2}\cos^{2}\theta)$, so one ratio does not describe it. ***What is established is the direction
+and its size at one well-defined point; for the conclusion to fail, the warping must reverse a trend running
+the right way by a factor of eight at the outset.*** Not claimed that it cannot.*
+
+⌗ **AND AN ASSERTION CAUGHT REAL STRUCTURE, not a slip.** *A check that $\lambda\ge1$ fired at $-1776$ ---
+because $a^{2}(r)$ is **two-branched** and I had sampled straight through the ultracold pole, where $\lambda$
+changes sign. ***The failure located the physical branch rather than a coding error***, and the same happened
+one step earlier when an assertion caught $\Delta_r(a{=}0)=r^{2}f$ and not $rf$.*
+
+⌗ *`P15` 97pp, zero undefined; twelve gates green.*
+
 ### Revision r6497 — 2026-09-09 (node 64). **`prop:throat` is a $J=0$ construction — and the tower's margin against that is measured and wide.**
 
 **⌗ THE DEPENDENCY, FOUND BY ASKING WHAT THE PROPOSITION IS DERIVED FROM.** *`prop:throat`'s argument is
