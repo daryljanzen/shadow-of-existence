@@ -146,6 +146,38 @@ sources: [cowork, chat]
 
 
 
+### Revision r6502 — 2026-09-11 (node 60). **`r6499` merged in; three generated files conflicted and were regenerated, and the trunk's `check_computes` was red for want of one header.**
+
+**⌗ THE CHECK-IN CAUGHT WHAT THE WEBHOOKS DID NOT.** *GitHub reported `mergeable_state: unknown`
+--- not `dirty` --- because it was still recomputing against a base that had moved to `r6499` while
+this branch sat green. **A scheduled re-check saw the base sha move; an event-driven one would have
+waited for a transition notice that does not reliably arrive.***
+
+*Three conflicts, **all generated**: `appendix_receipts_P15.tex`, `appendix_receipts_corpus.tex`
+(from `receipts/INDEX.md`) and `paper_P15.html` (from `CR_cosmology.tex`). Regenerated with
+`make_all_appendices.py` and `gen_paper_html.py P15` rather than hand-resolved, per the rule that a
+generated file is repaired by its generator. `regen_grain_currency` went stale again and was
+regenerated too.*
+
+**⛭ AND `scripts/run_fast_job.sh` EARNED ITS KEEP ON ITS FIRST REAL USE, TWO REVISIONS OLD.** *It
+refused the tree before any push, naming `regen_grain_currency` and `check_computes` --- **and
+`check_computes` is a gate the transcribed list of `r6500` did contain, but which only fires on a
+receipt that arrived with `r6499`.** *The failure would have been a third red CI cycle on this
+branch; it cost nothing instead.*
+
+⛔ ***THE `check_computes` FAILURE IS THE TRUNK'S, AND VERIFIED SO ON A CLEAN `main` WORKTREE
+   BEFORE ANYTHING WAS TOUCHED.*** *`r6499`'s own receipt,
+`P15_rotation_moves_the_throat_away_from_the_damping_threshold.py`, pins a concrete parameter and
+declared no `COMPUTES:` scope, so the gate has been red on the trunk since it landed --- blocking
+every node's PR.*
+
+  ⌗ ** The header added here is TRANSCRIBED, not judged. ** *Every clause comes from the receipt's
+    own text: its part (4) names the proxy in its own words ("the ratio at the POLE, where the S^2
+    radius is r_N"), and its closing lines state the bounds under `ESTABLISHED:` and `NOT CLAIMED:`.
+    The one pinned number, `THRESHOLD = 1/8`, is labelled in the source as `r6497`'s.* **The
+    computation is untouched, it still exits 0, and the header is reversible in one edit by its
+    author --- who is the one who knows whether the scope is wider than the receipt's own summary.**
+
 ### Revision r6500 — 2026-09-11 (node 60). **A copy of a list is a claim about the list at the moment it was copied — and this line made that mistake twice in one session, in two different directions.**
 
 **⛔ CI WENT RED ON `check_pages_current`, A GATE THAT WAS NOT IN THE LIST THIS LINE RAN LOCALLY.**
@@ -375,6 +407,37 @@ a false green; with the fix, the same invocation reports `1 pass`. Measured inst
 ⌗ *Two `check_open_ledger` failures cleared in passing that are **not** from this work — `03c0352a38`
 (`canonical_time`, entered at `r6453`) and `0e6cce5b23` (`boundary_paper`); the gate was red on the trunk
 before this branch and both verdicts are the ones the prose already carries. The papers are untouched.*
+### Revision r6499 — 2026-09-09 (node 64). **The rotating computation done: $\lambda=1$ exactly at $a=0$ and rises with $a$ — rotation moves the throat AWAY from the damping threshold.**
+
+**⌗ THE LOCUS RECOVERS `prop:throat` RATHER THAN ASSUMING IT.** *Kerr--de~Sitter's
+$\Delta_r=(r^{2}+a^{2})(1-r^{2}/\alpha^{2})-2Mr$ reduces at $a=0$ to exactly $r^{2}f(r)$, the corpus's own
+horizon function. Solving the double root $\Delta_r=\Delta_r'=0$ gives
+$a^{2}=r^{2}(\alpha^{2}-3r^{2})/(\alpha^{2}+r^{2})$ --- ***and $a=0$ returns $r_N=\alpha/\sqrt3$ with
+$M=\alpha\sqrt3/9$, both of `prop:throat`'s values, derived.***
+
+**⌗ AND THE FAMILY IS BOUNDED, ITS ENDPOINT A NAMED LIMIT.** *$a_{\max}=(2-\sqrt3)\,\alpha$ **exactly**,
+attained at $r_*/\alpha=0.3933$ --- ***which is precisely where $\Delta_r''=0$ and the double root becomes
+TRIPLE: the ultracold member.*** Rotation shrinks the throat, $0.5774\alpha$ down to $0.3933\alpha$.
+
+**⛭⛭ AND THE ANSWER `r6497` WANTED.** *$\lambda=1$ **exactly** at $a=0$ --- the equal-radii throat recovered
+--- and $\lambda>1$ **rising monotonically** with $a$, diverging at the ultracold point. `r6497`'s threshold
+for the dipole to keep decaying is $\lambda>1/8$. ⇒ ***So $\lambda$ begins with a factor of eight in hand and
+rotation only increases it: the isotropisation is not merely robust to rotation --- rotation strengthens
+it.***
+
+⚠ **AND THE PROXY IS NAMED, BECAUSE `r6497` WARNED OF EXACTLY THIS.** *$\lambda$ here is the ratio **at the
+pole**, where the $S^{2}$ radius is $r_N$. The rotating near-horizon sphere is **warped** through
+$(r_N^{2}+a^{2}\cos^{2}\theta)$, so one ratio does not describe it. ***What is established is the direction
+and its size at one well-defined point; for the conclusion to fail, the warping must reverse a trend running
+the right way by a factor of eight at the outset.*** Not claimed that it cannot.*
+
+⌗ **AND AN ASSERTION CAUGHT REAL STRUCTURE, not a slip.** *A check that $\lambda\ge1$ fired at $-1776$ ---
+because $a^{2}(r)$ is **two-branched** and I had sampled straight through the ultracold pole, where $\lambda$
+changes sign. ***The failure located the physical branch rather than a coding error***, and the same happened
+one step earlier when an assertion caught $\Delta_r(a{=}0)=r^{2}f$ and not $rf$.*
+
+⌗ *`P15` 97pp, zero undefined; twelve gates green.*
+
 ### Revision r6497 — 2026-09-09 (node 64). **`prop:throat` is a $J=0$ construction — and the tower's margin against that is measured and wide.**
 
 **⌗ THE DEPENDENCY, FOUND BY ASKING WHAT THE PROPOSITION IS DERIVED FROM.** *`prop:throat`'s argument is
