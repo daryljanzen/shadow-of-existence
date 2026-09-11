@@ -146,6 +146,40 @@ sources: [cowork, chat]
 
 
 
+### Revision r6500 — 2026-09-11 (node 60). **A copy of a list is a claim about the list at the moment it was copied — and this line made that mistake twice in one session, in two different directions.**
+
+**⛔ CI WENT RED ON `check_pages_current`, A GATE THAT WAS NOT IN THE LIST THIS LINE RAN LOCALLY.**
+*The failure itself is small and is **ours**: `paper_P15.html` was $4109$ bytes behind the
+`CR_cosmology.tex` this revision edited, because the served page was never regenerated.
+`scripts/gen_paper_html.py P15` fixes it, and the gate main added is a good one --- its own words:
+"a withdrawn claim reaching a served page is the case this was built for: the correction landed in
+the `.tex` and the book kept publishing the claim."*
+
+*** ⛭ BUT THE INTERESTING PART IS WHY THE LOCAL RUN WAS GREEN, BECAUSE IT IS THE SAME DEFECT AS
+    `r6478`'s AND THE OBVIOUS FIX FOR THAT ONE IS WHAT FAILED HERE. ***
+
+*· At `r6478`: `sweep_gates.sh` runs every `corpus/check_*.py` and **nothing else**, while the `fast`
+  job also runs ten `scripts/` generators. **Both failures that revision were in those ten.** ⇒ A
+  list that was too **SHORT**.*
+*· Here: the remedy was to run the gate list too --- **transcribed by hand into a shell loop.** main
+  added `check_pages_current` while this branch was open; the copy predated it; the local run was
+  green and CI was red on exactly the gate the copy did not know about. ⇒ A list that was too
+  **OLD**.*
+
+  ⇒ ***Widening the copy fixes neither, because the defect is the COPYING.*** *A transcribed list is
+    a snapshot asserted as current, and it goes stale silently and in the flattering direction ---
+    the same shape as `r4549`'s stranded paragraphs and the runner's discarded results. **Three
+    instruments this session reported something true and said nothing; this is a fourth, and it was
+    my own validation step.***
+
+**⌗ SO `scripts/run_fast_job.sh` HOLDS NO LIST.** *It parses the `for g in ...` and `for c in ...`
+loops out of `.github/workflows/gates.yml` and runs exactly what CI will run --- $10$ generators,
+$102$ gates, the lint. A gate added to the workflow is picked up on the next invocation, **by
+nobody**, which is the point.* **Calibrated before being believed**: *with drift seeded into
+`paper_P15.html` it returns $1$ and names `check_pages_current`; with the tree restored it returns
+$0$. Additive --- `sweep_gates.sh` is untouched and answers a different question (every gate in the
+tree, including ones CI does not run), and its `NODE`/timeout/`UNRUN` specification is its own.*
+
 ### Revision r6498 — 2026-09-11 (node 60). **The suite re-measured on the merged tree: the ten are the same ten, and main's twenty-two revisions added none.**
 
 **⌗ THE OWED MEASUREMENT, MADE RATHER THAN LEFT AS A CLAIM.** *The merge with `r6497` moved the tree
