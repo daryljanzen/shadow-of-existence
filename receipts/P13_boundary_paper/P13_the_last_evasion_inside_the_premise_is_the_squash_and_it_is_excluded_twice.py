@@ -36,11 +36,17 @@ the invariant metrics: it holds for t < sqrt(6) and not beyond. ***
   isometry SU(3) x U(1), dimension nine.  ** Nine is not fifteen, so no squashed
   member is the continuation of anything maximally symmetric. **
 
-  ** (b) And the ledger forbids it independently. **  On the round member every
-  curvature invariant is a pure power of 1/alpha^2.  On a squashed member
-  R = (24 - 4t^2)/alpha^2 -- a pure power TIMES a free t.  *** The squash parameter is
-  a second dimensionless constant, and the construction's ledger states that it spends
-  none. ***
+  ** (b) And the ledger forbids it independently -- CITED CORRECTLY r6463, after
+  63's referee read. **  The blanket "the construction spends no free dimensionless
+  constant" is no longer available: it was SCOPED at eight sites once zeta(0) = 10
+  established that the mode sums spend one.  ** The scoped claim's STRUCTURAL REASON is
+  what this needs, and the scoping does not touch it: ** "neither real form supplies a
+  second invariant, and a dimensionless magnitude needs two" -- which sits in `p0`
+  itself with its own receipt, and `p0` carries the register explicitly, "spending no
+  free dimensionless constant in its GEOMETRIC ledger".  The squash parameter t is a
+  dimensionless magnitude and the geometric ledger is where it lives, so that sentence
+  excludes it directly.  ** Same conclusion, better footing -- and verified here
+  independently, 63 having declared an interest in the scoping it landed. **
 
   ==> ** Neither reason is a preference for the round metric.  One is forced by what
       the face IS; the other is the same ledger that forbids a free constant anywhere

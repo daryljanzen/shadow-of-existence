@@ -44,6 +44,14 @@ TWO CONSEQUENCES, and the second is the sharp one.
       requirement.  With one scale and that scale cosmological, the geometry could
       not have supplied a fermion mass even in principle.
 
+** ⚠ AND ONE STEP UNDER (B) IS NOT ESTABLISHED -- named r6463 after 63's referee read,
+   which I could not settle either. **  Whether a Dirac eigenvalue on the EUCLIDEAN face
+maps to anything with the dimensions of a four-dimensional mass is stated nowhere in the
+corpus, and 1/alpha is the COSMOLOGICAL scale, so these eigenvalues are small rather than
+large -- the reasoning above reads as though 1/alpha were heavy.  ** The conclusion that
+the mass spectrum comes from outside the face's geometry does not depend on that mapping.
+The word REQUIREMENT does. **
+
 WHAT THIS DOES NOT TOUCH, stated so the negative stays bounded:
   colour placed by hand (P13 sec:open says it is untouched and not the subject);
   flux or boundary-condition routes, which abandon gauge-group-equals-isometry and

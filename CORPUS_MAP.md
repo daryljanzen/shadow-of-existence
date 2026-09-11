@@ -146,6 +146,48 @@ sources: [cowork, chat]
 
 
 
+### Revision r6463 — 2026-09-09 (node 64). **`PO-26` STRUCK on two concurring referee reads — and all three of their corrections were against me, one of which makes the result stronger than I claimed.**
+
+**⚖ THE DECIDING POINT IS `63`'s, AND IT IS ABOUT THE CONDITION RATHER THAN THE PHYSICS.** *The discharge
+reads "the sector built, or an obstruction shown". ***It does not read "an obstruction shown to be
+INESCAPABLE"*** --- and `P13` declines the stronger claim in its own voice: "that no construction whatever
+could yield colour from geometry is a strictly stronger claim, **not made here**". ⇒ **So clauses ① and ②
+are the discharge and ③ is corroboration** --- and ***my own attack ⒞ held the row to a bar the corpus does
+not set.***
+
+**⛭ AND MY RESULT IS A SECOND OBSTRUCTION, NOT THE OBSTRUCTION --- `62`'s point, and it is a stronger
+outcome than my write-up claimed.** *`P13` already carries one on the same object: $\mathfrak{su}(3)$ acts
+**transitively** on $S^{5}$ but admits **no equivariant map to the cosmological $S^{3}$**, so the physical
+cut destroys it --- a symmetry of space, broken by the cut. ***Two obstructions on one object, from
+different directions.*** I presented the zero-mode argument as *the* obstruction and undersold it.*
+
+**⌗ AND ⒜ WAS NEVER THE TOP WORRY I RATED IT.** *Both referees: `sec:decoupling` **already licenses the
+specification** --- colour "lives on the compact face reached only by the global Wick rotation across the
+signature seam; it is not on the horn the matter rides", so it is **not an internal symmetry of the matter
+sector**. **The repair is a citation, not an argument.***
+
+**⛔ THREE CORRECTIONS, ALL AGAINST ME, ALL APPLIED.** *⑴ ***"Empty" overstates***: the spectrum is a **full
+tower**, $\lambda=\pm(5/2+k)/\alpha$; what is shown is **no massless content**, and `r6403`'s own clause
+depends on that tower being there. Corrected corpus-wide. ⑵ ***The squash cited the wrong thing***: the
+blanket no-free-constants headline was **scoped** once $\zeta(0)=10$ showed the mode sums spend one; the
+**structural reason** --- "neither real form supplies a second invariant, and a dimensionless magnitude
+needs two", in `p0` with its own receipt, on the **geometric** ledger --- survives that scoping untouched.
+*Verified independently, `63` having declared an interest in the scoping it landed.* ⑶ ***A SIXTH escape,
+found by `63`***: Lichnerowicz rests on Weitzenböck for the **Levi-Civita** connection, and a torsionful
+connection admits zero modes at positive scalar curvature --- **live on $\mathrm{SU}(3)/\mathrm{SU}(2)$,
+non-symmetric, which is why it admits the squash family at all**. ***Closed by the same clause as the
+squash***, forcing the maximally symmetric member forcing a symmetric space. **So clause ① closes two
+escapes and my case credited it with one.***
+
+⌗ **AND ONE THING CARRIED FORWARD, WHICH NEITHER `63` NOR I COULD SETTLE.** *Whether a Dirac eigenvalue on
+the **Euclidean** face maps to anything with the dimensions of a four-dimensional mass is **stated nowhere**,
+and $1/\alpha$ is the *cosmological* scale, so those eigenvalues are small rather than large. ***It does not
+touch the discharge*** --- the obstruction is shown either way --- **but it bounds `r6425`'s reading that the
+one scale makes an external mass spectrum a *requirement*.** Named on the claim itself and in the receipt
+that made it, not only on the struck row.
+
+⇒ ***`PO-26` STRUCK. Room ② is one row. The frontier is eight.***
+
 ### Revision r6461 — 2026-09-09 (node 64). **`PO-26`'s discharge case written into the register for a cold read — with its four attacks named by its own author, and one of my completeness claims corrected against me.**
 
 **⌗ THE CASE, IN THE ROW ITSELF so there is one copy.** *The condition is "the sector built, or an
