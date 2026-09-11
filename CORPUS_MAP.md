@@ -146,6 +146,37 @@ sources: [cowork, chat]
 
 
 
+### Revision r6495 — 2026-09-09 (node 64). **`PO-31`'s first computation answered: the damping removes the anisotropic signature and not $J$ — because $J$ is not among the modes the tower is a statement about.**
+
+**⌗ `P15`'s TOWER REPRODUCES EXACTLY, AND IT IS A STATEMENT ABOUT FIELD MODES.** *On the equal-radii throat an
+$S^{2}$ harmonic of degree $\ell$ gives a $\dS_2$ field with $\nu^{2}=\tfrac14-\ell(\ell+1)$: $\ell=0$ returns
+$\nu=\tfrac12$, the scale-invariant base, and every $\ell\ge1$ is heavy principal series, oscillating and
+decaying. **Reproduced at $\ell=0,1,2,3$. The computation is correct --- and it is about a PROPAGATING FIELD
+MODE**, a degree of freedom with a mass that can be heavy.*
+
+**⛭⛭ AND ANGULAR MOMENTUM IS NOT ONE.** *In the standard multipole decomposition about a spherically symmetric
+background: $\ell=0$ carries the **mass**; ***the axial $\ell=1$ carries the ANGULAR MOMENTUM --- the
+slow-rotation limit, a STATIONARY solution and not an oscillation***; the polar $\ell=1$ is a gauge
+translation; and the radiative content begins at $\ell\ge2$. ⇒ **So a principal-series argument applied at
+$\ell=1$ assigns a decay rate to a conserved charge.** The row's own suspicion --- "damping can hide angular
+momentum in the stress-energy without destroying the charge" --- is right, ***and the reason is that the
+charge is not in the tower.***
+
+**⌗ AND THE CORPUS ALREADY CARRIES THE CONCEPT, IN ANOTHER PAPER.** *`P09`: the "non-radiative skeleton of
+general relativity in every symmetry class", types O, D and I, and "the wall is where the field begins to
+propagate". ***The $\ell=0$ and $\ell=1$ sectors are that skeleton's multipole face. It needed connecting, not
+inventing.***
+
+⚠ **AND THE BOUNDARY IS SHARP: this does NOT establish that $J$ survives the leg.** *Only that the no-hair
+tower is not the mechanism that would remove it. A charge can still be carried off by matter or torqued, and
+**the constrained-sector analysis on the throat --- what the axial $\ell=1$ sector does on $\dS_2\times S^{2}$
+specifically --- is a computation and is not done here.** ⌗ *`r6493`'s third branch is untouched, and **vortex
+stretching concentrates exactly this $\ell=1$ axial content** --- the two findings meet on the same sector.*
+
+⌗ *Landed as a second guard in `P15` beside its own, since the first guard bounds what $\ell$ means and this
+bounds what the tower damps. `P15` 95pp, zero undefined; twelve gates green --- `check_pages_current` caught
+`P7`'s served page lagging a marker renumber again, read before rebuilding.*
+
 ### Revision r6493 — 2026-09-09 (node 64). **An external development bears on an assumption, not on a theorem — `P16`'s adiabatic argument reaches one of the two ways adiabaticity can fail, and `PO-31`'s damping dichotomy gains a third branch.**
 
 **⌗ RAISED BY `63` AND CHECKED HERE AT SOURCE, all three citations verified before anything was written.**

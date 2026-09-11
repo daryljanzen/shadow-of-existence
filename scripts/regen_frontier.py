@@ -150,6 +150,16 @@ EST = {
         'cor:nonspherical extends the theorem to collapse of ANY symmetry, and a realistic progenitor has '
         'vorticity. The channel is already here: the null-boundary correspondence carries only (M, J, Q), '
         'and J is what a vortex is. '
+        'r6495 ANSWERS THE ROWS FIRST COMPUTATION: only the signature, because J is not among the '
+        'modes the tower is a statement about. P15s nu^2 = 1/4 - l(l+1) reproduces exactly, and it is a '
+        'computation about a PROPAGATING FIELD MODE -- something with a mass that can be heavy. But in '
+        'the standard multipole decomposition l=0 carries M and l=1 AXIAL carries J, the slow-rotation '
+        'limit, a stationary solution and not an oscillation, with only l>=2 radiative. So a '
+        'principal-series argument at l=1 assigns a decay rate to a conserved charge. P09 already carries '
+        'the concept as its non-radiative skeleton -- it needed connecting, not inventing. BOUNDED: this '
+        'does NOT establish that J survives the leg, only that the no-hair tower is not what removes it. '
+        'A charge can still be carried off by matter or torqued, and the constrained-sector analysis on '
+        'the throat is a computation not yet done. '
 ),
     'PO-25': ('the charged bead -- DOES A CHARGED COLLAPSE FORM THE CAUCHY HORIZON', 1, 1, 4, None,
         'r3827/r6405: the step is RUN and comes out the same in both charge readings, which decouples it from the datum '
