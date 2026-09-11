@@ -36,15 +36,24 @@ OUT = os.path.join(ROOT, 'THE_FRONTIER.md')
 
 # ** id: (short name, steps-left, steps-last-revision, turns-per-step, gate, runway note) **
 EST = {
-    'PO-13': ('the handover datum, and the rigid phase split beneath it', 1, 1, 6, None,
-        'r6433/r6447: the potentials half of the one-locus statement is ANSWERED from this rows own named lead -- the '
-        ' super-horizon join is conservation of R, hence (3/2)/(5/3) = 9/10 exactly, which P15 already states and recei '
-        'pts (C21) while the instrument sets the potential to its primordial value instead. Its size is 10/9 and SCALE- '
-        'INVARIANT, so not the cure. Measured by 60: l1/lA unchanged at 0.6764 exactly as the bound says, but P1/P2 mov '
-        'ed 1.975->1.996 -- because dg0 = 4(Theta - Psi) is a DIFFERENCE with Theta set independently, so a 10% change  '
-        'in Psi is a 19% affine shift, and affine shifts move ratios. THE HALF THAT FAILS IS THIS ROWS OWN DEFECT WITH '
-        ' A NUMBER ON IT. Also: CRIC=branchpoint bypasses the handover block, so CRPSI is inert under it. Remaining: th '
-        'e last convention stripped, both arms free or both pinned -- a run, with 60. '
+    'PO-13': ('the handover datum, and what sets this arms first peak', 1, 1, 6, None,
+        'r6476: THE LAST CONVENTION IS STRIPPED and the instruments own standing question is ANSWERED -- NO. '
+        'ACOUSTIC_two_arm exposed LATARG at r2441 expressly to ask whether the deficit is an artefact of where the '
+        'pin was put, and the question had never been run. Scanned over a factor of 3.6 in z_onset on the converged '
+        'grid: l_A runs 360.6 -> 239.3, a range of 51%, while l_1 sits at 206-210, a range of 2%. THE ONE FITTED '
+        'NUMBER MOVES THE DENOMINATOR AND LEAVES THE NUMERATOR. The deficit is l_1 = 206 against the skys 220.6 at '
+        'EVERY onset, so the pin cannot reach the quantity it lives in -- and the trade is an IDENTITY: pinning l_A '
+        'costs 6.59% on l1/lA and pinning l1/lA costs 6.59% on l_A, the same number twice. Both pinned is '
+        'UNREACHABLE, not skipped: the controls scale approaches 301.4 from above, so LATARG=301.6 is below its '
+        'floor. Two defects of 60s own found in the same text, both against r4549: its three conclusion paragraphs '
+        'sat past CR_cosmologys own end{document} and had NEVER compiled (rehoused here; check_tex_tail now fails '
+        'on it), and the receipt its message said would land next never landed -- run now, the residue is TWO '
+        'FIFTHS of the original, not the quarter it reported. Earlier: r6433/r6447, the potentials half of the '
+        'one-locus statement ANSWERED from this rows own named lead, size 10/9 and scale-invariant so not the cure, '
+        'with l1/lA unchanged and P1/P2 moved because dg0 = 4(Theta - Psi) is a DIFFERENCE. Remaining, and it is a '
+        'DIFFERENT object from the one just closed rather than the same one narrowed: an account of the MODE rather '
+        'than of the scale it is reported against -- on this arm the first peak is not set by the sound horizon, '
+        'and nothing about the pin explains where 206 comes from. '
 ),
     'PO-36': ('does the Hubble-Eddington radius track the dynamical mass or the baryonic one', 1, 0, 4, None,
         'r4203/r6407: the discrimination is QUANTIFIED -- the two mass choices differ by f_b^(-1/3) = 1.85 in the radiu '

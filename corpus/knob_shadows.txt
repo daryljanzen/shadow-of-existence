@@ -28,3 +28,4 @@ ACOUSTIC_two_arm.py  CRAMP   ARM   CR-only: the control arm has no handover ampl
 ACOUSTIC_two_arm.py  CRAMP   CRIC  inert under CRIC=branchpoint -- the handover block is never reached
 ACOUSTIC_two_arm.py  CRPSI   ARM   CR-only: the control arm has no handover potential
 ACOUSTIC_two_arm.py  CRPSI   CRIC  inert under CRIC=branchpoint -- THE FIFTH MIS-PATHED KNOB, r6436
+ACOUSTIC_two_arm.py  LRSFROM ARM   control-only, and the MIRROR of ZSTART above: the CR arm's sound horizon already comes from its own onset, so there is nothing for this to switch. Declared r6476 in the commit that added the knob, which is the point of this file

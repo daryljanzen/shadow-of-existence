@@ -146,6 +146,96 @@ sources: [cowork, chat]
 
 
 
+### Revision r6476 — 2026-09-11 (node 60). **The last convention is stripped, the instrument's own standing question is answered — and the answer is the opposite of what the ratio says.**
+
+**⌗ THE QUESTION WAS THE INSTRUMENT'S, AND IT HAD NEVER BEEN RUN.** *`ACOUSTIC_two_arm.py` exposed
+`LATARG` at `r2441` with its reason written beside it: "GIVEN that $\ell_A$ is fitted, is the peak
+deficit an artefact of where the pin was put?" **Four thousand revisions later nothing had asked it.***
+
+**⛭ SCANNED OVER A FACTOR OF $3.6$ IN THE ONSET, ON THE CONVERGED GRID: $\ell_A$ RUNS $360.6\to239.3$
+— $51\%$ — AND $\ell_1$ SITS AT $206$–$210$ — $2\%$.** *The one fitted number moves the denominator
+and leaves the numerator where it is. **The deficit is $\ell_1=206$ against the sky's $220.6$ at every
+onset in the scan**, so the pin cannot reach the quantity it lives in. The answer is no.*
+
+⚠ ***AND READING THE RATIO ALONE GIVES THE OPPOSITE ANSWER, WHICH IS WHY THIS HAD TO BE RUN.***
+*$\ell_1/\ell_A$ does move with the pin — steeply, monotonically, and it crosses the sky's $0.7312$
+between $z=6761$ and $8600$. **This revision's own first draft read exactly that and concluded "the
+deficit MOVES with the pin".** The data refuting it were already in that draft: $\ell_1$ read the same
+$204$ at every onset on the coarse grid, and the constancy went unremarked.*
+
+**⛭ SO THE TRADE IS AN IDENTITY RATHER THAN A CHOICE.** *Pinning $\ell_A$ to the measured $301.6$ costs
+$6.59\%$ on $\ell_1/\ell_A$; pinning $\ell_1/\ell_A$ to the sky costs $6.59\%$ on $\ell_A$. **The
+same number twice, because $\ell_1$ is the same $206$ in both** — one deficit booked against either of
+two observables, not two deficits. `$0.6830$` and `$-6.6\%$` are two spellings of $\ell_1=206$.*
+
+*And "both pinned" is **unreachable rather than skipped**: under the symmetric convention the control's
+scale falls monotonically as its start recedes and approaches $301.4$ **from above**, so `LATARG`$=301.6$
+sits below its floor and `brentq` reports same-signed endpoints. **The control ARRIVES at the scale this
+arm SPENDS its one fitted number to reach.***
+
+⛔ ***AND TWO DEFECTS OF THIS LINE'S OWN TURNED UP IN THE SAME TEXT, BOTH AGAINST `r4549`.***
+
+*· **Its three conclusion paragraphs sat past `CR_cosmology.tex`'s own `\end{document}` and have never
+once compiled.** `r4549` reported "P15 compiles at 94 pages, zero errors" in the same message — **which
+was true, and is exactly why nothing caught it.** A paper compiles perfectly with text stranded past its
+end; `check_compile` is the wrong instrument by construction, since the text it cannot see is the text
+LaTeX does not read, and every other gate asks about a row or a sentence rather than a file's shape.
+**Rehoused into `sec:refit-bound`; `corpus/check_tex_tail.py` added and calibrated against a seeded
+instance before its zero was believed.** *This is the failure `r6435`'s work order named — "a result that
+lands in a register and not in its paper" — in its least visible form: it landed in the register, in the
+frontier table, and in a `.tex` file inside `corpus/`, and still not in the paper.*
+
+*· **`r4549` said "60's receipt for this result is not yet pushed and lands next". It did not land.** No
+receipt in the tree ever set `LZSTART`, and the sound-horizon half of the convention **had no knob at
+all** — so its numbers were unreproducible from the tree by anyone, its author included. `LRSFROM` added
+here (reachability-checked at the reporting path), and the run made: **the sign change and the overshoot
+reproduce; the residue is two fifths of the original, not the "quarter" `r4549` reported** — a factor of
+$1.5$, in the direction that makes the dissolution look more complete than it is. *`r4549`'s verdict
+survives the correction; its number does not.**
+
+⌗ ***AND THE TWO HALVES RHYME, WHICH IS WORTH MORE THAN EITHER.*** *In the symmetric run a **convention**
+moves $\ell_A$ from $301.4$ to $397.1$ and leaves $\ell_1$ at $482$; in the onset scan the **one fitted
+number** moves $\ell_A$ by $51\%$ and leaves $\ell_1$ at $206$. **Both times the denominator moved and
+the mode did not.** `r4549` wrote that down and drew its conclusion from the quotient anyway; so did this
+revision's first draft. **Twice is a habit: reading a quotient as though both of its halves were
+measurements.** `PO-13`'s remaining object is rewritten accordingly — not the old one narrowed, but a
+different one: an account of the **mode**, not of the scale it is reported against.*
+
+⛔ ***AND THE SUITE THAT WAS MEANT TO VALIDATE THIS REVISION TURNED OUT TO BE REPORTING GREEN OVER
+ZERO MEASUREMENTS — IN CI, ON EVERY RUN.*** *`Cache.put` read `if not self.path: return`, so an
+invocation without `--resume` ran every receipt, measured every one, and **threw all of it away**.
+`res` came back empty, the failure loop printed nothing, the verdict line read `0 pass, 0 fail, 0
+over timeout`, and the run exited $0$ under this file's strongest sentence: "Every registered receipt
+runs, in place, and exits 0 — so every assertion in the reproducibility layer was actually
+evaluated."*
+
+*** AND `.github/workflows/gates.yml:123` INVOKES IT WITH NO `--resume`. ***  *So the heavy job has
+been spending half an hour running the suite and then asserting that over nothing — **and
+`check_receipts_run` agreed, because it only ever failed on a non-zero FAILURE count and never asked
+whether the pass count covered the registered set.** `0 fail` and `0 pass` are the same sentence when
+nothing ran, and only one of those two numbers can tell them apart.*
+
+⌗ ***The banked `RUN_RESULT.txt` on the trunk is honest only by accident***: it happens to have been
+produced by hand **with** `--resume`, which is the one path where `put` stored anything.
+
+**⛭ FIXED ON BOTH SIDES IN ONE REVISION, BECAUSE A BANKED FILE CAN PREDATE EITHER FIX.** *The runner
+now always keeps its results — the path was never about whether a result counts, only about where it
+survives a kill — and **refuses to print a verdict that does not cover the registered set**, exiting
+$2$ instead. `check_receipts_run` now reads the registered count off the runner's own first line and
+fails when the verdict accounts for fewer.* **Calibrated both ways before either zero was believed**:
+*with the old discard re-seeded in a copy, the refusal fires and returns $2$ where it used to return
+a false green; with the fix, the same invocation reports `1 pass`. Measured instance: 735 receipts,
+1856s wall, `0 pass, 0 fail`, exit 0.*
+
+  ⇒ ***This is this runner's own thesis turned on itself.*** *It was built to close the hole where
+    "a green run that reports a receipt as `over timeout` is making no claim about it at all". **Here
+    it made no claim about any of them and said the loudest thing in the file.** Same shape as the
+    two `r4549` defects above, and found the same way — by trying to use the thing.*
+
+⌗ *Two `check_open_ledger` failures cleared in passing that are **not** from this work — `03c0352a38`
+(`canonical_time`, entered at `r6453`) and `0e6cce5b23` (`boundary_paper`); the gate was red on the trunk
+before this branch and both verdicts are the ones the prose already carries. The papers are untouched.*
+
 ### Revision r6475 — 2026-09-09 (node 64). **The CDN is gone and three places still said otherwise — one of them on the page, to the reader.**
 
 **⌗ THE MIGRATION LANDED IN THE CODE AND NOT IN WHAT DESCRIBES IT.** *`CDN = RAW_GH`, and the body has

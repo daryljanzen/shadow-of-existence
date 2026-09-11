@@ -166,6 +166,31 @@ def main():
         print('  [FAIL] the runner result file has no verdict line -- it may have been truncated.')
         return 1
     npass, nfail, nslow = int(m.group(1)), int(m.group(2)), int(m.group(3))
+    # ⛔⚭ r6476 (node 60): ** THE COUNT MUST COVER THE REGISTERED SET, and this gate never asked. **
+    #   *It failed on `nfail` and on `nslow` and was satisfied by `0 pass, 0 fail, 0 over timeout`
+    #   -- which is exactly what the runner printed for half a year whenever it was invoked without
+    #   `--resume`, because `Cache.put` discarded every result in that case.*  ** The heavy job in
+    #   `gates.yml` invokes it without `--resume`: it ran the suite for 1856s, measured all 735, threw
+    #   them away, reported zeroes, and this gate called that green. **
+    #     ⇒ *`0 fail` and `0 pass` are the SAME sentence when nothing ran.  The registered count is
+    #       on the runner's own first line, so the two can be compared and now are.*
+    #   ⌗ Fixed on both sides in one revision: the runner keeps its results and refuses to print a
+    #     verdict that does not cover the set, and this reads the coverage independently -- because
+    #     a banked file can predate either fix.
+    reg = re.search(r'RUN-ALL-RECEIPTS -- (\d+) registered receipt', res)
+    if not reg:
+        print('  ⛔ [FAIL] the runner result carries no registered-receipt count, so nothing says')
+        print('     what the verdict line is a verdict ABOUT.')
+        return 1
+    nreg = int(reg.group(1))
+    if npass + nfail + nslow != nreg:
+        print(f'  ⛔ [FAIL] the verdict accounts for {npass + nfail + nslow} receipt(s) out of '
+              f'{nreg} registered.')
+        print(f'     {nreg - npass - nfail - nslow} are unaccounted for, so this file is not a')
+        print('     statement about the reproducibility layer.  ** No failure was reported because')
+        print('     no RESULT was, which is a different thing from green. **  Re-run the suite.')
+        return 1
+    print(f'  the verdict covers all {nreg} registered receipt(s)')
     failed = re.findall(r'\[FAIL\] receipts/\S+/(\S+\.py)', res)
     # ** r3995: THE EXEMPTION IS CONDITIONAL ON THE MODULE BEING ABSENT, not on the name. **
     #   It was unconditional, so a receipt on this list was filed ENVIRONMENT wherever it

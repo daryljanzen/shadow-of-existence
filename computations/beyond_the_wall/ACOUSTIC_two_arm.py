@@ -33,6 +33,8 @@ Usage:
     ARM=lcdm NODRIVE=1 python3 ACOUSTIC_two_arm.py  # the guard on the control
     ARM=cr   NODRIVE=1 python3 ACOUSTIC_two_arm.py  # the guard on the CR arm
 Env: NK (modes, default 260), LMAXL (default 1300), RTOL, NOPROJ=1 (comb only, no projection).
+     ZSTART / LATARG fix or pin the CR arm's onset; LZSTART the control's start, and
+     LRSFROM=start its sound-horizon convention -- the two halves of a symmetric comparison.
 """
 import os
 import sys
@@ -223,7 +225,22 @@ if ARM == 'lcdm':
     # as k^-1, the k-dependence is an artefact of starting inside the horizon and NOT a fact about
     # CR's driving.  Default 3e7 = byte-identical; nothing moves unless set. **
     Z_START = float(os.environ.get('LZSTART', '3.0e7'))  # deep in radiation domination
-    R_S = rs_from(1e8)                                   # from a ~ 0, the standard sound horizon
+    # ** LRSFROM: THE OTHER HALF OF THE SYMMETRIC COMPARISON, AND r3683 SHIPPED ONLY THE FIRST. **
+    # `LZSTART` matched the two arms' STARTS.  It did not match the two arms' SOUND-HORIZON
+    # CONVENTIONS, which are also different: this arm integrates r_s from a ~ 0 whatever its start
+    # is, while the CR arm integrates it from its own onset.  ** So a run with LZSTART set was only
+    # half symmetric, and the leftover half is a convention rather than a rate -- exactly the
+    # confound the comment above says LZSTART exists to remove. **
+    #   ⇒ *`LRSFROM=start` takes the control's sound horizon from its own Z_START too, so that both
+    #     arms answer the same question about the same integral.  Default `zero` = byte-identical;
+    #     nothing moves unless it is set.*
+    #   ⌗ ** Reachability-checked before use, r6476 **, on the practice that came out of the fifth
+    #     unwired switch: R_S feeds L_A two lines below AND the header line that prints `r_s = ...
+    #     l_A = pi D/r_s`, so the knob is visible in the instrument's own report and was seen to
+    #     move it -- 144.53 Mpc / 301.4 at the default against 109.70 Mpc / 397.1 at LZSTART=6761
+    #     with LRSFROM=start.  *A knob checked at the REPORTING path, not at the definition.*
+    _rsfrom = os.environ.get('LRSFROM', 'zero')
+    R_S = rs_from(Z_START) if _rsfrom == 'start' else rs_from(1e8)   # default: from a ~ 0
 else:
     # ** LATARG IS THE CORPUS'S ONE FITTED NUMBER, MADE VISIBLE, AND r2441+c54.189 IS WHY. **
     # `z_onset` is solved so that l_A = pi D_M / r_s hits a TARGET rather than coming out as an

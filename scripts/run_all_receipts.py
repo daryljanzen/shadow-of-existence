@@ -141,6 +141,31 @@ LONG = {
     #   ⌗ ** The number is the worst MEASURED figure plus headroom **, on the same rule as C59's:
     #     525s measured -> 900s declared, not a round figure chosen to feel safe.
     'C63_no_single_source_term_carries_the_undriven_split_and_the_first_probe_read_an_unwired_knob.py': 900,  # measured 525s under --jobs 4
+    # ⛭ ADDED r6476 (60).  The last convention: seven instrument runs, four scanning the CR arm's
+    # onset over a factor of 3.6 and three walking the control's start under the symmetric
+    # sound-horizon convention.  ** Every one of the seven is load-bearing and the claim cannot be
+    # made from a subset: **  the scan's claim is a RANGE ("l_A moves 51% and l_1 moves 2%"), which
+    # needs its ends AND needs the pin between them to anchor to P15's quoted peak; the control's is
+    # a MONOTONE APPROACH TO A FLOOR FROM ABOVE, which needs three points and the floor to be an
+    # approach rather than two numbers.  *Trimming either to fit the cap would leave a claim the run
+    # no longer makes -- which is the hole this runner exists to close.*
+    #   ⇒ ** Measured end to end on an idle machine: 609s, all eleven assertions evaluated, exit 0 **
+    #     -- nine seconds past the 600s cap, which is the worst possible place for a receipt to sit:
+    #     it would report SLOW or PASS depending on the load, and `SLOW` is not a pass.
+    #   ⌗ The number is the measured figure plus C63's own measured 1.7x spread under contention
+    #     (609 -> 1035), rounded up to 1500 -- not a round figure chosen to feel safe.  *The scan
+    #     runs its subprocesses four at a time, so its cost under `--jobs 4` is contention on
+    #     contention; this is the one declaration where the spread is expected to exceed C63's.*
+    'P15_the_one_fitted_number_moves_the_scale_and_not_the_peak.py': 1500,  # measured 609s standalone
+    # ⛭ ADDED r6476 (60), and declared on the MARGIN rather than on the cap.  Four undriven
+    # instrument runs; measured 367s standalone, which is INSIDE the 600s cap and would pass today.
+    #   ⇒ *Declared anyway, because C63's own measured spread under `--jobs 4` is 1.7x and
+    #     367 x 1.7 = 624 is OUTSIDE it.*  ** A receipt whose standalone figure fits and whose
+    #     contended figure does not is exactly the one that reports SLOW on a busy day and PASS on
+    #     a quiet one -- and `SLOW` is not a pass, so the verdict would depend on the load rather
+    #     than on the tree.**  C63 was declared at 14% of margin; this has 39%, and the rule that
+    #     produced C63's number produces this one.
+    'P15_the_symmetric_comparison_was_never_runnable_and_the_quarter_was_two_fifths.py': 900,  # measured 367s
 }
 # ⌗ ** AND ONE OBSERVATION RECORDED RATHER THAN EXPLAINED, r4564. **  In the run that first showed
 # `C63` at 525s, `Q1_a_stated_tolerance_is_a_request_and_the_corpus_answers_it.py` hit the 600s cap --
@@ -291,11 +316,35 @@ class Cache:
         return (r[0], os.path.join(ROOT, rel), float(r[1]), r[2]) if r else None
 
     def put(self, st, path, dt, msg):
-        if not self.path:
-            return
+        """⛔⚭ r6476 (node 60): ** THIS DISCARDED EVERY RESULT WHEN NO `--resume` WAS GIVEN. **
+
+        *It read `if not self.path: return` -- so an invocation without a cache path ran every
+        receipt, measured every one, and then threw all of it away.*  `res` came back empty, the
+        failure loop printed nothing, the verdict line read ** `0 pass, 0 fail, 0 over timeout` **
+        and the run exited 0 under:
+
+            "Every registered receipt runs, in place, and exits 0 -- so every assertion in the
+             reproducibility layer was actually evaluated."
+
+        *** AND `.github/workflows/gates.yml` INVOKES IT WITH NO `--resume`. ***  ** So the heavy
+        job has been spending half an hour running the suite and then printing the strongest
+        sentence in this file over ZERO measurements ** -- and `check_receipts_run` agreed, because
+        it only ever failed on a non-zero failure count and never asked whether the pass count
+        covered the registered set.  *The banked `RUN_RESULT.txt` on the trunk is honest only
+        because it happens to have been produced by hand WITH `--resume`.*
+
+        ⇒ ** The defect is this runner's own thesis turned on itself. **  It exists to close the
+        hole where "a green run is making no claim at all"; here it made no claim and said the
+        loudest possible thing.  *Measured rather than reasoned: 735 receipts, 1856s wall, `0 pass,
+        0 fail`, exit 0.*
+
+        ⌗ The fix is that RESULTS ARE ALWAYS KEPT and only the DISK WRITE is conditional -- the
+        path was never about whether a result counts, only about where it survives a kill.
+        """
         with self.lock:
             self.results[os.path.relpath(path, ROOT)] = [st, dt, msg]
-            self._write()
+            if self.path:
+                self._write()
 
     def _write(self):
         tmp = self.path + '.tmp'
@@ -471,6 +520,18 @@ def main():
         print()
         print("  ⛔ A REGISTERED RECEIPT THAT DOES NOT RUN WHERE IT IS REGISTERED IS NOT A RECEIPT.")
         return 1
+    # ⛭ r6476 (node 60): ** THE VERDICT BELOW IS A CLAIM ABOUT EVERY REGISTERED RECEIPT, so it is
+    #   not printed unless the results ACCOUNT FOR EVERY ONE. **  *Before this, a run that measured
+    #   nothing at all reached it: `0 pass, 0 fail` satisfies "no failures" vacuously, and the
+    #   sentence below then asserted that every assertion in the layer had been evaluated.*
+    #     ⇒ A count is not a coverage.  ** `0 fail` is the same claim as `0 pass` when nothing ran,
+    #       and only one of those two numbers can tell them apart. **
+    if len(res) != len(files):
+        print()
+        print(f"  ⛔ THIS RUN IS NOT A VERDICT: {len(res)} result(s) for {len(files)} registered")
+        print(f"     receipt(s) -- {len(files) - len(res)} unaccounted for.  ** No failure was")
+        print("     reported because no result was, which is a different thing from green. **")
+        return 2
     print()
     print("  Every registered receipt runs, in place, and exits 0 -- so every assertion in the")
     print("  reproducibility layer was actually evaluated.")
