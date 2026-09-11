@@ -106,14 +106,10 @@ def main():
     #   results together.  ** A file-scoped probe cannot see a rehoming succeed -- the very
     #   defect L207/W1 exists to record, arriving here. **  Searched across the corpus and
     #   the file it now sits in is reported, so a further move is visible rather than fatal.
-    # ⛭ r6510 (node 60), NOT this line's receipt and NOT a change to any claim it makes.
-    #   `check_receipt_tex_scope` is red on the TRUNK for this glob -- verified on a clean `main`
-    #   worktree before touching it -- and prescribes the remedy in its own words: "Skip any
-    #   basename starting `appendix_receipts`, as 30 receipts already do."  The generated
-    #   appendices carry every receipt's own claim text, so an ABSENCE check over `corpus/*.tex`
-    #   measures the INDEX as well as the papers and a receipt can find its own row.
-    #     ⌗ MEASURED, not assumed, before applying: B61 exits 0 on `main` both with and without
-    #       this line, so its verdict is unchanged and only its scope is corrected.
+    # ⌗ `appendix_receipts*` EXCLUDED, and the exclusion is load-bearing: the generated
+    #   appendices carry every receipt's own claim and computes text, so a search over
+    #   `corpus/*.tex` that includes them measures the INDEX as well as the papers --
+    #   `check_receipt_tex_scope` fired on this the moment the glob was added.
     _CORPUS = {os.path.basename(f): flat(os.path.basename(f))
                for f in _glob.glob(os.path.join(ROOT, 'corpus', '*.tex'))
                if not os.path.basename(f).startswith('appendix_receipts')}

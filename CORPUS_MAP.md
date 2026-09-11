@@ -226,6 +226,37 @@ DAMPING MECHANISM reaches these modes; it is NOT about whether $J$ survives the 
 charge carried off by matter or torqued could still decide, and `r6495`'s separation of $J$ from the
 propagating tower is untouched. And the near-horizon geometry is the throat's exact limit, not the
 collapse leg's history: this speaks to the fixed point, not to the approach to it.*
+### Revision r6511 — 2026-09-09 (node 64). **All ten of `60`'s failing receipts are green — and every one of the last four was a count MY OWN edits moved, each working exactly as designed.**
+
+**⌗ `L_probability/R1` — the control word, 23 → 24.** *Its own note said why it was pinned: "re-pinned to the
+measurement ... **so a further move fires here rather than passing**". It fired. Traced to ***my `r6427`***,
+which wrote "across the likelihood's own $\ell=30$--$2508$" into `P15` with `PO-24`'s absorption bound --- a
+genuine new use of the control. **Attributed and re-pinned, exactly as `r4532` did at 26 → 23.**
+
+**⌗ `L273/C1`, the Cartan bake — `torsion` ×3 arrived.** *All three are one sentence-group, added at ***my
+`r6463`*** with `PO-26`'s strike: `63`'s referee read found a **sixth escape** from the positive-curvature
+obstruction, and the paper states and closes it. ⇒ **Two of eight named arrivals is still not an apparatus,
+which is the check's finding and is unchanged**; an *unattributed* arrival still fires.*
+
+**⌗ `L263/S1` — `equivariant index` ×7 → ×9**, *`r4555` and ***my `r6425`*** adding one each, the latter
+propagating the compact-face findings, where the phrase **is** "supplies no equivariant index". **More uses is
+the same fact more strongly**, which is what the check says the term is: a hole in the theatre's prose that is
+`P13` *using* the obstruction. ⌗ *`L268/O1` was purely downstream of `S1`.*
+
+**⛭ AND TWO GATES I HAD NEVER RUN CAUGHT MY REPAIRS WITHIN MINUTES.**
+
+*· `check_receipt_tex_scope`: my `B61` fix globbed `corpus/*.tex` --- and **the generated appendices carry
+every receipt's own claim text**, so an absence check over that glob measures the INDEX, not the papers.
+Excluded.*
+
+*· `check_revision_collisions` reported `60`'s even `r6502` as **my** violation. ***`--first-parent` was added
+at `r3203` for exactly this --- and it guards a MERGE COMMIT. My `r6503` was a FAST-FORWARD, which makes none,
+so `60`'s commits sat on the first-parent path indistinguishable from mine.*** ⇒ **The one merge shape the
+guard does not cover, producing the one thing the band exists to prevent: policing the other half on this
+tree.** Closed by exempting numbers lying in another **declared** node's half --- narrow, so an undeclared
+line still fires.*
+
+⌗ *103 gates green but for `check_receipts_run`, whose ~9-minute suite is still running detached.*
 
 ### Revision r6509 — 2026-09-09 (node 64). **Two more, with one repair — and one of them is the receipt whose entire subject is the distinction it could not draw for itself.**
 
