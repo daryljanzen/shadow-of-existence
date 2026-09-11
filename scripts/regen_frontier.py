@@ -97,6 +97,18 @@ EST = {
         'produces rather than what it cannot. Rule 2 is therefore the STANDARD a law for the content must '
         'meet -- follow from the structure rather than enter as a tuned input -- and not a bar to one. '
         'The row stands OPEN, with that criterion attached to what an answer would look like. '
+        'r6489 ASKS THE QUESTION PROPERLY, by looking at what actually breaks the symmetry in the '
+        'cases already built. P14s prop:forced: a one-plane construction must select WHICH hinge, a free '
+        'modulus, and the Z3-symmetric three-plane is the unique configuration carrying none -- so the '
+        'criterion chooses AMONG BREAKINGS and takes the one that is itself symmetric, p0 extending this '
+        'to the discrete sector and holding that the discrete breaking is itself maximally symmetric. AND '
+        'BY THAT ROUTE CONTENT IS ALREADY GENERATED: P14 delivers the generation count, the chirality and '
+        'the family symmetry. The wall, the generations and the chirality are ONE residue of the waist '
+        'read at three places -- Aut(A2) = S3 x Z2, S3 on the points ON the circle and Z2 on the lines '
+        'TANGENT to it. So the sharp open question is: the discrete residue is a FINITE group with a '
+        'symmetric point, so its moduli-free configuration exists and is unique; a profile lives in a '
+        'FUNCTION SPACE. Is there a moduli-free configuration for the continuous content, as the Z3 '
+        'three-plane is for the discrete? Open, and nothing yet answers it. '
 ),
     'PO-31': ('the progenitor spectrum', 1, 1, 6, None,
         'r4493/r6427: two of three rooms closed by impossibility; what remains is the progenitor spectrum, a modelling  '

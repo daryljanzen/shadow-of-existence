@@ -146,6 +146,38 @@ sources: [cowork, chat]
 
 
 
+### Revision r6489 — 2026-09-09 (node 64). **Asked properly: what actually breaks the symmetry in the cases already built — and the construction turns out to generate content already.**
+
+**⌗ THE MECHANISM, READ OFF `P14`'s OWN FORCING ARGUMENT.** *Two constructions are available: one plane on a
+chosen hinge, or one on each. "A one-plane construction must select **which** hinge to build on: a free
+modulus, unfixed by the geometry, an arbitrary choice among three $\mathbb{Z}_3$-equivalent options. The
+$\mathbb{Z}_3$-symmetric three-plane construction is **the unique configuration carrying no such modulus** ---
+the symmetric point, pinned by the symmetry."* ⇒ ***The criterion does not choose between breaking and not
+breaking. It chooses AMONG BREAKINGS and takes the one that is ITSELF symmetric*** --- and `P14` names the
+source: `p0` "extends this to the discrete sector explicitly, **holding that the discrete breaking is itself
+maximally symmetric**".
+
+**⛭⛭ AND BY THAT ROUTE THE CONSTRUCTION ALREADY GENERATES CONTENT.** *`P14` delivers the **generation count,
+the chirality and the family symmetry**, forced by exactly the moduli-free criterion. ⇒ ***So `r6485`'s
+proposed reading --- that content is not the kind of thing this construction generates --- is not merely
+unproven. It is refuted by a sector the corpus had already built***, and I proposed it without looking.*
+
+**⌗ AND THE ORIGIN IS COMMON, WHICH IS WHAT THE INQUIRY WAS FOR.** *`p0` reads the discrete residue off the
+waist --- $\mathrm{Aut}(A_2)=S_3\times\mathbb{Z}_2$, its factors acting on "the three roots and the two
+rulings, which are, on the waist, the points **on** the circle and the lines **tangent** to it", the residue
+factorising "because those two relations are independent" --- and the three walls carrying the generations
+"lie on it, their three-foldness the hole's own". ⇒ ***The wall, the generations and the chirality are one
+residue read at three places, not three breakings with three origins.***
+
+⇒ **SO THE QUESTION `PO-30` SHOULD BE ASKED IS SHARPER, AND IS OPEN.** *The discrete content has a **finite**
+residue with a symmetric point, so its moduli-free configuration exists and is unique --- three planes. A
+profile $m(r)$ lives in a **function space**. ***Is there a moduli-free configuration for the continuous
+content, in the way the $\mathbb{Z}_3$ three-plane is for the discrete?*** **Well posed in the corpus's own
+idiom, and nothing here answers it.**
+
+⌗ *This replaces the eliminations `r6481` and `r6485` attempted. **Nothing is closed; a question is put where
+two crossings-out were** --- which is what the last three turns should have been doing.*
+
 ### Revision r6487 — 2026-09-09 (node 64). **`r6485` WHOLLY RETRACTED — it misread the criterion, applied it two rungs down, and inverted the programme's own thesis. And the drive behind it was closure, not sharpening.**
 
 **⛔ THREE FAULTS, EACH SUFFICIENT ALONE.** *⓵ ***It misreads the principle.*** Rule 2, in its own paper:
