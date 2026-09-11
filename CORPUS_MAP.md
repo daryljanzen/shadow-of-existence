@@ -146,6 +146,45 @@ sources: [cowork, chat]
 
 
 
+### Revision r6477 — 2026-09-09 (node 64). **The header-versus-body class measured — a new gate is the WRONG instrument, the existing one was extended instead, and it caught the live book publishing a withdrawn claim.**
+
+**⌗ MEASURED FIRST, AND THE OBVIOUS GATE DOES NOT WORK.** *A name-based check on module headers --- does a
+docstring name a file, constant or host the code lacks? --- returns **21 file hits and 23 constant hits**
+across 183 modules, and ***nearly all are false***: `TRAIL_AUDIT_c54.NNN.md` is a template, `corpus/p.tex`
+and `/file.py` are placeholders, `gates.yml` lives under `.github/`, and `CRPSI` in a gate's docstring is a
+knob it **discusses**. Narrowed to host claims it returns **one hit --- `r6475`'s own correction record.***
+
+⇒ ***AND THE REASON IS THE INSTRUCTIVE PART: a corrected header names the wrong thing IN ORDER TO record
+the correction, so any name-based check fires on the repairs as readily as the defects.*** **Which is
+exactly the problem `check_withdrawn` already solves: the corpus may QUOTE what it withdrew; it may not
+ASSERT it.**
+
+**⛭ SO THE MACHINERY JOINED THAT SCAN RATHER THAN GETTING A FIFTH INSTRUMENT.** *`check_withdrawn` read
+papers only --- **not module headers, not page templates** --- which is why "the PDFs are served from
+jsDelivr" stood in a generator header and on the live page, and why "the frontier is generated from
+`THE_REGISTER`, which is the one source" stood while the runway was a frozen table. **Two divergences in one
+file in three revisions, and no instrument was looking at headers at all.** Scripts and pages now scan, and
+the CDN claim is registered with its two real pre-`r6475` forms as known-positives.*
+
+**⛔ AND IT FIRED ON ITS FIRST RUN, ON THE LIVE BOOK.** *`paper_P17.html` was still publishing the
+**withdrawn** vector-like claim: the correction landed in the `.tex` at `r6465` and ***the served page was
+never rebuilt***. **A withdrawn claim on a served page is not a stale note --- it is the book telling a
+reader something the corpus has retracted.***
+
+**⛭⛭ WHICH EXPOSED THE CLASS BENEATH IT.** *Four of seven pages checked were behind their sources, **every
+one a paper edited that day**. `corpus/check_pages_current.py` now regenerates each into place, compares,
+and **restores the tree as found** --- the shape `check_appendix_current` already proved, and deliberately
+not an mtime check, which any checkout would falsify in both directions.*
+
+⚠ ***AND IT CAUGHT A HAZARD I HAD CALLED LATENT.*** *`r6453` found the receipt markers are a **positional**
+counter, and judged the risk "latent and bounded" because "every surface regenerates from the one `INDEX`".
+***That is true only if every surface is actually regenerated.*** `paper_P7.html` was not --- so a reader met
+**`P10R11` in `P7` and `P10R12` in `P10`: two numbers for one receipt**, the precise invariant the numbering
+exists to guarantee. **Now verified corpus-wide: 344 receipts referenced across the served pages, zero shown
+with more than one marker.***
+
+⌗ *Eleven gates green.*
+
 ### Revision r6475 — 2026-09-09 (node 64). **The CDN is gone and three places still said otherwise — one of them on the page, to the reader.**
 
 **⌗ THE MIGRATION LANDED IN THE CODE AND NOT IN WHAT DESCRIBES IT.** *`CDN = RAW_GH`, and the body has
