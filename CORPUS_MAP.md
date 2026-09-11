@@ -146,6 +146,29 @@ sources: [cowork, chat]
 
 
 
+### Revision r6475 — 2026-09-09 (node 64). **The CDN is gone and three places still said otherwise — one of them on the page, to the reader.**
+
+**⌗ THE MIGRATION LANDED IN THE CODE AND NOT IN WHAT DESCRIBES IT.** *`CDN = RAW_GH`, and the body has
+carried "**NO THIRD-PARTY CDN** --- the site serves its own PDFs, figures and data from the repository"
+since the move. **Three statements had not followed it.***
+
+*· `gen_live_edition.py`'s **header**: "It FETCHES `THE_FRONTIER.md` from the CDN at read time".*
+*· the same header: "The PDFs are served from **jsDelivr**, a CDN over the repo".*
+*· ⛔ **and the page itself, to the reader**: "Papers via **jsDelivr**".*
+
+**⛭ THE THIRD IS THE ONE THAT MATTERS.** *A header misleads the next node; **a line on the live page
+misleads every reader**, and it stated as fact a dependency the book no longer has. Corrected to "Papers
+served from the repository", and regenerated.*
+
+⚠ ***THIS IS THE HEADER-VERSUS-BODY DIVERGENCE AGAIN, TWO REVISIONS AFTER `r6473` FOUND IT IN THE SAME
+FILE.*** *There the generator's header claimed the frontier was derived from the register when the runway
+was a frozen table; here it claimed a CDN the code had stopped using. ***The body was right both times, and
+the paragraph a node reads first was not.*** **A file can be correct and still lie in its first sentence.**
+
+⌗ *Verified rather than assumed: the book's only read-time fetches are
+`raw.githubusercontent.com/.../THE_FRONTIER.md` and the dependency matrix, **both 200**, and no `jsdelivr`
+host appears anywhere in the pages or scripts. Ten gates green; the twenty-three pages build.*
+
 ### Revision r6473 — 2026-09-09 (node 64). **`THE_FRONTIER` was not generated from the register in the way everyone treated it — every live row's runway was stale by ~2000 revisions, and it was serving that to the live site.**
 
 **⌗ FOUND BY DOING CLOSURE-ADJACENCY INTO `PO-30`, which `r6465` owed and missed.** *The view's runway for

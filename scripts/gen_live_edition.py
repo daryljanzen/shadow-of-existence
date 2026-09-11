@@ -3,8 +3,8 @@
 gen_live_edition.py -- builds BOOK_INTRO_cosmiCave/live_edition.html
 
 ** THE ONE DESIGN RULE, AND IT IS THE CORPUS'S OWN LESSON. **  The page does NOT
-embed the frontier.  It FETCHES `THE_FRONTIER.md` from the CDN at read time and
-renders it in the browser.
+embed the frontier.  It FETCHES `THE_FRONTIER.md` from the repository at read
+time and renders it in the browser.
 
   A page that baked in the open-row count would be a SECOND HOME for that count,
   and every second home in this corpus has gone stale -- the register's masthead
@@ -16,8 +16,16 @@ renders it in the browser.
   owns no copy of it.
 
 The paper list IS baked, because it changes on the scale of years and a wrong
-title is visible on sight.  The PDFs are served from jsDelivr, a CDN over the
-repo: raw.githubusercontent is not built for reader traffic and rate-limits.
+title is visible on sight.
+
+** THE THIRD-PARTY CDN IS GONE (r6475 corrects this header to the code). **  The
+site serves its own PDFs, figures and data from the repository -- `CDN = RAW_GH`
+below, and the body has said `NO THIRD-PARTY CDN` since the migration.  ** This
+header went on describing jsDelivr after the code stopped using it **, which is
+the header-versus-body divergence this corpus keeps finding: the body was right
+and the paragraph a node reads first was not.  The read-time fetches are
+`raw.githubusercontent.com/.../main/THE_FRONTIER.md` and the dependency matrix,
+both verified 200.
 
 Usage:  python3 scripts/gen_live_edition.py        (from the repo root)
 """
@@ -633,7 +641,7 @@ and it changes when the work does.</p>
 
 <footer>
 Source: <a href="https://github.com/daryljanzen/shadow-of-existence">the
-repository</a>. Papers via jsDelivr; the frontier read live at page load.
+repository</a>. Papers served from the repository; the frontier read live at page load.
 </footer>
 
 </div>
