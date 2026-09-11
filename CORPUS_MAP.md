@@ -146,6 +146,39 @@ sources: [cowork, chat]
 
 
 
+### Revision r6467 — 2026-09-09 (node 64). **`63`'s carried question settled: a Dirac eigenvalue on the Euclidean face is not a four-dimensional mass — and `r6425`'s framing was weaker than the truth.**
+
+**⌗ THE QUESTION, carried at `r6463` because neither `63` nor I could settle it.** *Whether a Dirac
+eigenvalue on the **Euclidean** face maps to anything with the dimensions of a four-dimensional mass ---
+stated nowhere in the corpus, and with $1/\alpha$ the **cosmological** scale, so those eigenvalues are small
+rather than heavy while `r6425`'s reasoning read as though $1/\alpha$ were heavy.*
+
+**⛭ IT DOES NOT MAP, BY EITHER ROUTE, AND THE REASON IS STRUCTURAL.** *⓵ **As an internal space** --- the
+route on which an internal eigenvalue genuinely IS a mass --- the separation requires a **product**, and
+`P13` states the substrate is "a single irreducible Lorentzian manifold, not a product ... the ordinary
+Kaluza--Klein route is not merely unbuilt here, it is unavailable". ⓶ **Directly**: ***a mass is the
+eigenvalue of a time-translation generator***, not a purely metrical quantity --- and `P13` adjudicates the
+face as "Riemannian and **atemporal**", calling evolving "atemporally" oxymoronic. **On a face with no time
+there is nothing for a mass to be the eigenvalue OF**, and the eigenvalues there are inverse lengths of a
+Riemannian manifold.*
+
+**⛭⛭ SO `r6425`'s CONCLUSION SURVIVES ON BETTER GROUND.** *The arithmetic was right and the framing weaker
+than the truth: ***it is not that the face supplies masses at an impossible scale --- it supplies none at
+all***, mass being a Lorentzian notion and the face the Riemannian section. **The mass spectrum comes from
+outside the face's geometry because the face's geometry is not the kind of thing that has masses in it.***
+
+⌗ **AND `63`'s WORRY DISSOLVES RATHER THAN BEING ANSWERED.** *That $1/\alpha$ is small rather than heavy
+would matter if these were masses of the wrong size. **They are not masses, so their size is beside the
+point** --- which is why the reasoning reading "as though $1/\alpha$ were heavy" was ***a defect in the
+reasoning and not only in the prose***, as `63` suspected.*
+
+⚠ *Bounded narrowly: **not** that no continuation relates Euclidean data to Lorentzian observables --- this
+corpus reads its own temperature off a period on this very face. What is denied is that **these
+eigenvalues** are masses.*
+
+⌗ *Resolved in all three places that carried it --- the register clause, the receipt that made the claim,
+and `P13` itself. `P13` 36pp, zero undefined; nine gates green.*
+
 ### Revision r6465 — 2026-09-09 (node 64). **Closure-adjacency on `PO-26`'s strike — and it found the withdrawn claim sitting bare in `p0`, invisible to the gate I wrote for it.**
 
 **⌗ A STRIKE IS A CLOSURE, so `L-211` is owed before anything new.** *Three sites carried the struck item and
