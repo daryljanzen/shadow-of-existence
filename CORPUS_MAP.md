@@ -146,6 +146,38 @@ sources: [cowork, chat]
 
 
 
+### Revision r6483 — 2026-09-09 (node 64). **`r6481`'s "third route" and "the corpus does not note it" RETRACTED — and the tendency that produced them is now gated.**
+
+**⛔ WHAT WAS WRONG, AND BOTH HALVES WERE.** *⓵ **Not a third route.** `p0`'s offset relation **is** the
+horizon condition: $f(r)=1-2M/r-r^{2}/\alpha^{2}=0$ gives $2M=r-r^{3}/\alpha^{2}$, which in $x=r_0/\alpha$
+is exactly $\alpha(x-x^{3})$ --- verified. **So $r_0$ is a horizon root and extremising the relation is
+precisely the double-root condition $f=f'=0$**, which `P15` states outright at the Nariai locus. ***The same
+computation the corpus already performs, in other variables.*** ⓶ **And "the corpus does not note it" was
+asserted from two greps of `corpus/*.tex`, without opening `P03`, `P17` or `P15`** --- the obvious places,
+and `P15` is where it turned out to be.*
+
+**⚠ THE FAILURE IS A COLLAPSE OF QUANTIFIER**: *"my search did not find it" became "it is not there". ***In
+a corpus whose whole value is coherence, a false asserted absence plants a contradiction that later work
+builds on --- and it is invisible, because nothing contradicts a claim nobody re-checks.***
+
+**⌗ WHAT SURVIVES, UNAFFECTED**: *the offset family has $m(r)$ constant, so $\rho$ vanishes across it, the
+one intrinsically distinguished cut carries no matter, and ***the law `PO-30` wants must fix a FUNCTION and
+not a number***. That was never the part resting on the absence claim.*
+
+**⛭ AND THE TENDENCY IS GATED.** *The corpus has stated the remedy since the source rule --- **NOT FOUND /
+SEARCHED / NOT YET CHECKED** --- and had no enforcement. `corpus/check_absence_claims.py` requires a claim
+that a phrase or fact is absent **from the text** to carry what was searched. ⌗ *It does **not** touch claims
+about what the corpus **asserts** ("does not posit a second scale") --- a position needs no search behind it,
+and conflating the two was the first draft's error: **302 hits, mostly false**. Narrowed to textual absence:
+37, baselined and grandfathered, with the gate failing on the next one.*
+
+⚠ ***AND THE BASELINE ITSELF REPEATED THE ERROR IN MINIATURE.*** *I first wrote it from a **copy** of the
+gate's scanning code and got 77 entries against the gate's 61 --- ***a second source disagreeing with the
+one that checks***. Regenerated from the gate's own `scan()`, so the two cannot diverge. Verified both ways:
+a bare claim fails, the same claim with its search beside it passes.*
+
+⌗ *Retracted in the receipt, the register row, and `P08` itself. Twelve gates green.*
+
 ### Revision r6481 — 2026-09-09 (node 64). **`PO-30` investigated: the obvious candidate for the law is ruled out, and a third route to Nariai turns up on the way.**
 
 **⌗ THE QUESTION `r6479` LEFT: what could fix WHICH CUT, absent a progenitor?** *The obvious candidate is

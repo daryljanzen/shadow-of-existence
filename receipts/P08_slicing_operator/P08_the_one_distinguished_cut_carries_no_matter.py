@@ -10,7 +10,8 @@ The obvious candidate is the cut the construction distinguishes intrinsically.  
 establishes which cut that is, and then that it cannot be the answer.
 
 --------------------------------------------------------------------------------
-(1) THERE IS EXACTLY ONE INTRINSICALLY DISTINGUISHED CUT, AND IT IS THE NARIAI MEMBER.
+(1) THERE IS EXACTLY ONE INTRINSICALLY DISTINGUISHED CUT, AND IT IS THE NARIAI MEMBER
+    -- WHICH THE CORPUS ALREADY ESTABLISHES; SEE THE RETRACTION BELOW.
 
 `p0` states the mass IS the offset of the section from the central geodesic:
 
@@ -22,12 +23,24 @@ member the corpus already singles out on wholly different grounds: **
         d(2M)/dr_0 = 0  at  r_0 = alpha/sqrt(3) = r_N        (the Nariai radius)
         and there     2M/2 = alpha sqrt(3)/9   = M_N         (the Nariai mass)
 
--- verified exactly below.  ** So the offset relation reaches Nariai by extremising a
-cubic, where `P05` reaches it as sigma's unique fixed point and `P07` by a trichotomy
-on collapse.  A third route to the same member, by a different argument. **
+-- verified exactly below.
 
-⌗ The corpus does not note this: the offset-mass cubic occurs at four sites and none
-remarks that its maximum is the Nariai member.
+** ⛔ AND THIS IS NOT A THIRD ROUTE.  RETRACTED r6483, BEFORE IT LEFT THE SESSION. **
+The first draft called it "a third route to Nariai, sharing no step with P05's fixed
+point or P07's trichotomy", and said the corpus does not note it.  ** Both were false,
+and the second was asserted on a shallow grep without opening P03, P17 or P15. **
+
+  * The offset relation IS the horizon condition.  f(r) = 1 - 2M/r - r^2/alpha^2 = 0
+    gives 2M = r - r^3/alpha^2, which in x = r_0/alpha is exactly alpha(x - x^3) --
+    verified below.  ** So r_0 is a horizon root, and extremising the offset relation
+    is precisely the DOUBLE-ROOT condition f = f' = 0. **
+  * And `P15` states that outright at the Nariai locus: "the two positive horizon roots
+    ... merge at the Nariai radius r_N = alpha/sqrt3, where f(r_N) = f'(r_N) = 0".
+
+  ==> ** It is the same computation the corpus already performs, in different
+      variables.  What the identity is worth is a connection -- that p0's offset
+      parametrisation and P15's double root are one statement -- and not a new
+      argument. **
 
 --------------------------------------------------------------------------------
 (2) ** AND IT CANNOT BE WHAT FIXES THE HEAD'S CUT, BECAUSE IT CARRIES NO MATTER. **
@@ -76,10 +89,18 @@ r_N, M_N = alpha/sp.sqrt(3), alpha/(3*sp.sqrt(3))
 assert sp.simplify(r0_star - r_N) == 0, f"offset at the max must be r_N, got {r0_star}"
 assert sp.simplify(M_star - M_N) == 0, f"mass at the max must be M_N, got {M_star}"
 assert sp.diff(two_M, x, 2).subs(x, x_star) < 0, "and it is a maximum"
+# the identity that makes this NOT a third route: the offset relation IS f(r)=0
+r_ = sp.Symbol('r', positive=True)
+f_ = 1 - 2*M/r_ - r_**2/alpha**2
+twoM_root = sp.simplify(sp.solve(sp.Eq(f_, 0), M)[0]*2).subs(r_, x*alpha)
+assert sp.simplify(twoM_root - two_M) == 0, \
+    "p0's offset relation must BE the horizon condition, or the retraction is wrong"
+print("  f(r)=0 in x = r_0/alpha IS p0's offset relation, so extremising it is")
+print("  the double-root condition P15 already states                        OK")
 print(f"  2M(r_0) = alpha(x - x^3),  unique positive stationary point at x = {x_star}")
 print(f"    r_0* = {r0_star}  =  r_N   OK")
 print(f"    M*   = {M_star}  =  M_N   OK")
-print("  -> a THIRD route to Nariai: extremising the offset relation          OK")
+print("  -> NOT a third route: the same computation in other variables       OK")
 
 # --- (2) and every member of that family is matterless ----------------------------
 rho = sp.diff(M, r)/(4*sp.pi*r**2)            # m(r) = M, constant offset
@@ -109,7 +130,8 @@ print("  -> the construction's one distinguished point is in the wrong space OK"
 
 print()
 print("ESTABLISHED: the offset-mass cubic's unique maximum is exactly the Nariai")
-print("member -- a third route to it, unremarked in the corpus -- and that member,")
+print("member -- which is P15's double-root condition in other variables, NOT a third")
+print("route and NOT unremarked -- and that member,")
 print("like every member of the offset family, carries no distributed matter. So the")
 print("law PO-30 wants must fix a FUNCTION m(r), and cannot be 'take the")
 print("distinguished cut'. NOT CLAIMED: that no such law exists.")

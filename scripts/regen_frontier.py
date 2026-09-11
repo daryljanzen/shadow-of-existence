@@ -83,6 +83,11 @@ EST = {
         'FAMILY HAS m(r) CONSTANT, so rho vanishes identically -- the one intrinsically distinguished cut '
         'carries NO distributed matter, where PO-41 says the head owes baryons. So the law must fix a '
         'FUNCTION m(r) and not a number: the constructions one distinguished point is in the wrong space. '
+        'r6483 RETRACTS the third-route claim: the offset relation IS the horizon condition f(r)=0 '
+        'written in r0, so extremising it is the double-root condition f = f = 0 that P15 already '
+        'states at the Nariai locus -- the same computation in other variables, and the absence '
+        'claim beside it was made from a grep without opening P03, P17 or P15. What survives is the '
+        'connection and the function-not-a-number finding. '
 ),
     'PO-31': ('the progenitor spectrum', 1, 1, 6, None,
         'r4493/r6427: two of three rooms closed by impossibility; what remains is the progenitor spectrum, a modelling  '
