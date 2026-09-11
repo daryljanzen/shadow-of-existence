@@ -146,6 +146,35 @@ sources: [cowork, chat]
 
 
 
+### Revision r6479 — 2026-09-09 (node 64). **Rooms ② and ③ are one wall seen twice, and the map I drew at `r6443` drew them apart.**
+
+**⌗ WHAT EACH ROW OWES IS A DIFFERENT KIND OF THING, and that is what hid the join.** *`PO-30` wants a
+**LAW** --- why a cut bends as it does. `PO-41`'s strike says what is owed at the head is a **FACT** --- "the
+matter on its collapse leg, and how many". *Different kinds, different sectors --- A · matter and D ·
+cosmology --- and different rooms on my map.*
+
+**⛭ BUT THE HEAD IS EXACTLY WHERE A LAW WOULD HAVE TO ACT.** *Every lap after the first inherits its cut's
+shape from its progenitor --- that is what the genealogy transmits. ***The head, by construction, inherits
+nothing*** (`PO-40`). **So the head's cut is fixed by a law or by nothing**, and a generative law for the
+content is precisely a law that picks a cut absent a progenitor.*
+
+⇒ ***`PO-30` DISCHARGED WOULD DISCHARGE WHAT THE HEAD OWES. And the converse fails*** --- *knowing that there
+are baryons at the head, and how many, is a fact about one cut and yields no law.* **So the opening has a
+DIRECTION: `PO-31`'s is the shadow of `PO-30`'s.** ⌗ *A map that draws them apart says two rows must each be
+worked; the corrected map says **working `PO-30` moves both, and working the head alone moves neither**.*
+
+⌗ **AND THE CORPUS DRAWS IT NOWHERE.** *"generative law" never occurs within reach of "head", "genealogy" or
+"progenitor" in the register or any paper. The rows have sat in different sectors since they were opened.*
+
+⚠ **HELD AT WEIGHT: a structural reading, not a computation.** *It rests on the head inheriting nothing,
+which is `PO-40`'s result and not in question; and on a generative law being the kind of thing that fixes a
+cut, which is how `P08` frames the gap. ***It fails if `PO-30`'s law fixes only the cut-content RELATION and
+not which cut*** --- named in the receipt as where to attack it.*
+
+⌗ *Map merged and renumbered: four groupings, not five. **And `check_pages_current`, built two revisions
+ago, caught its first live case on this very change** --- adding a receipt to `P8`'s index shifted a marker
+and the served page lagged by a byte. Regenerated. Eleven gates green.*
+
 ### Revision r6477 — 2026-09-09 (node 64). **The header-versus-body class measured — a new gate is the WRONG instrument, the existing one was extended instead, and it caught the live book publishing a withdrawn claim.**
 
 **⌗ MEASURED FIRST, AND THE OBVIOUS GATE DOES NOT WORK.** *A name-based check on module headers --- does a

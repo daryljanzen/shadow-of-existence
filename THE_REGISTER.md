@@ -26,10 +26,10 @@ cut and are not this one.*
 | room | rows | where it is open |
 |---|---|---|
 | **① the counterterm ledger** | `PO-23`, `PO-43` | **one**: the interacting tower's ultraviolet definition --- *`P07`'s last of three, and **not reachable by refining the free-spectrum method***. ⌗ *The entropy wall is gone at `r6471`: the ledger does not count a counterterm coefficient, so the branch is costless to it and was never a wall of this room* |
-| **② the matter content** | `PO-30` *(with struck `PO-26`)* | **one**: a generative law for the **content** --- `PO-26` struck at `r6463` on two concurring referee reads, so this room is **one row, not two** |
-| **③ the head** | `PO-31` *(with struck `PO-40`, `PO-41`)* | **one**: what the head IS --- the matter on its collapse leg |
-| **④ the acoustic front and the interior** | `PO-13`, `PO-24`, `PO-25` | **three**: the last convention stripped; the joint fit; what stands in the Cauchy horizon's place |
-| **⑤ --- ** | `PO-36` | **one**, and *it does not discriminate this framework* --- see below |
+| **② the matter content, and the head** | `PO-30`, `PO-31` *(with struck `PO-26`, `PO-40`, `PO-41`)* | **one, with a direction** *(`r6479`)*: a generative law for the **content**. ***`PO-31`'s opening is the shadow of it*** --- every lap after the first inherits its cut's shape and **the head inherits nothing**, so the law that fixes a cut absent a progenitor is what would say what matter is on the head's collapse leg. **`PO-30` discharged discharges both; `PO-31` alone moves neither** |
+
+| **③ the acoustic front and the interior** | `PO-13`, `PO-24`, `PO-25` | **three**: the last convention stripped; the joint fit; what stands in the Cauchy horizon's place |
+| **④ --- ** | `PO-36` | **one**, and *it does not discriminate this framework* --- see below |
 
 **⛭ ① IS THE CLOSEST TO CLOSING, AND ONE OF ITS WALLS WAS FOUND ONLY AT `r6437`.** *Both rows now carry
 values --- the log on the degenerate combination, the Weyl-squared coefficient off it. `PO-43`'s two
@@ -40,20 +40,18 @@ thermodynamics, and **nothing in the corpus carried that before `r6437`.** ⌗ *
 longer merely open: the no-free-constants claim has a stake in the branch, so it is a **prediction**
 rather than an opening.*
 
-**⌗ ② IS ONE BOUNDARY APPROACHED FROM TWO SIDES.** *`P08` now hands the content's generative law to the
-matter sector; `PO-26` asks whether a sector can be built there. **The prior clause joins them**: answer
-what such a construction would be and both rows move at once. Neither moves alone.*
+**⌗ ② WAS DRAWN AS TWO ROOMS UNTIL `r6479`.** *`PO-30` wants a **law** --- why a cut bends as it does --- and `PO-41`'s strike says what is owed at the head is **the matter on its collapse leg, and how many**. ***Every lap after the first inherits its cut's shape from its progenitor; the head, by construction, inherits nothing*** --- so what fixes the head's cut is exactly a law that picks a cut absent a progenitor. ⇒ **`PO-30` discharged would discharge what the head owes; the converse fails, a fact about one cut yielding no law.** So the opening has a **direction**, and `PO-31`'s is the shadow of `PO-30`'s. ⌗ *The corpus draws this nowhere --- "generative law" never occurs within reach of "head", "genealogy" or "progenitor" in the register or any paper, the two rows having sat in different sectors since they were opened.* ⚠ *Held at weight: a **structural reading**, not a computation. **It fails if `PO-30`'s law fixes only the cut-content RELATION and not which cut**, and that is where to attack it.* \rcpt{P08_the_content_law_and_the_head_are_one_wall_seen_twice}
 
-**⌗ ③ IS MOSTLY CLOSED ALREADY, and by rows that are struck.** *$\eta$, $A_s$ and $n_s$ all terminate at
+**⌗ ②'s HEAD HALF IS MOSTLY CLOSED ALREADY, and by rows that are struck.** *$\eta$, $A_s$ and $n_s$ all terminate at
 the head --- `PO-41` for the first, `r6427` for the others once the stationary-recursion route was
 excluded. ***One question asked of three quantities***, and the corpus already names what is owed there:
 the matter on the head's collapse leg.*
 
-**⌗ ④ HAS THE MOST OPENINGS AND ONE INSTRUMENT.** *`PO-24`'s residual is weighed on `PO-13`'s two-arm
+**⌗ ③ HAS THE MOST OPENINGS AND ONE INSTRUMENT.** *`PO-24`'s residual is weighed on `PO-13`'s two-arm
 machinery; `PO-25` hands *what stands in the horizon's place* to `PO-13`'s dynamical interior. **Two of the
 three openings are runs rather than readings**, which is why this room moves slowest from a chat.*
 
-**⛔ AND ⑤ IS NOT A ROOM.** *`PO-36` shares a wall with nothing. `r6407` established that both frameworks
+**⛔ AND ④ IS NOT A ROOM.** *`PO-36` shares a wall with nothing. `r6407` established that both frameworks
 take the same $m(r)$ --- whatever gravitates is the bend --- so the measurement **discriminates the dark
 fraction and not this construction**, and it discharges by an observation nobody has made rather than by
 corpus work. ⌗ ***It is carried here because it is honestly open, not because it bounds anything***, and a
