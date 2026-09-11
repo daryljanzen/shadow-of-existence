@@ -51,6 +51,7 @@ Written r2818.  Stated for reversal.
 """
 import os
 import re
+import glob as _glob
 
 import numpy as np
 
@@ -90,13 +91,41 @@ def main():
           all(np.allclose(g5 @ g + g @ g5, 0) for g in gam))
 
     bnd = flat('boundary_paper.tex')
-    check('⛭⛭⛭ ⓶ and the index obstruction NAMES its own hypotheses: "The obstruction\'s load-bearing '
-          'hypotheses are compactness and a continuous isometry, not a product or Kaluza--Klein '
-          'structure"',
-          'load-bearing hypotheses are compactness and a continuous isometry' in bnd)
+    # ** ⛔⛭ AMENDED r6505.  BOTH PROBES WERE EXACT STRINGS AND BOTH PROSE SITES MOVED --
+    #   and in one case the move was a CORRECTION this receipt must not pin against. **
+    #   *The paper now reads "compactness and a CONNECTED gauge isometry", not "continuous":
+    #   connected is the load-bearing word, because the disconnected orientation parity is
+    #   exactly what escapes the obstruction.  And the second site's summary sentence was
+    #   rewritten at r6505 because it still carried the WITHDRAWN "vector-like" reading.*
+    #   ⇒ *** What this receipt needs is the CLAIM -- that the obstruction's hypotheses are
+    #       compactness and an isometry condition, and that a product or Kaluza--Klein
+    #       structure is NOT among them.  Probed under reordering, with the isometry
+    #       qualifier left open so a later sharpening of it does not read as a loss. ***
+    # ⛭ AND THE CLAIM HAS BEEN REHOMED, r6505: it no longer lives in `boundary_paper.tex`
+    #   but in `matter_sector_paper.tex`, which states it while reading the two vector-like
+    #   results together.  ** A file-scoped probe cannot see a rehoming succeed -- the very
+    #   defect L207/W1 exists to record, arriving here. **  Searched across the corpus and
+    #   the file it now sits in is reported, so a further move is visible rather than fatal.
+    _CORPUS = {os.path.basename(f): flat(os.path.basename(f))
+               for f in _glob.glob(os.path.join(ROOT, 'corpus', '*.tex'))}
+    _hyp, _hyp_home = None, None
+    for _n, _t in sorted(_CORPUS.items()):
+        _m = re.search(r"load-bearing hypotheses are compactness and a[^.]{0,40}?isometry", _t)
+        if _m:
+            _hyp, _hyp_home = _m, _n
+            break
+    _tail = (f'  *as the paper now words it: "{_hyp.group(0)[:76]}"*' if _hyp else '')
+    if _hyp_home and _hyp_home != 'boundary_paper.tex':
+        _tail += f'  *and REHOMED to `{_hyp_home}` since this receipt was written*'
+    check('⛭⛭⛭ ⓶ and the index obstruction NAMES its own hypotheses -- compactness and a gauge '
+          'isometry, and NOT a product or Kaluza--Klein structure' + _tail,
+          bool(_hyp) and any(re.search(r'product or Kaluza--Klein|Kaluza--Klein structure', t)
+                             for t in _CORPUS.values()))
     check('⇒ and the spectral route uses NO isometry -- inner fluctuations $D\\to D+A$ come from the '
           'ALGEBRA, so ** the premise the paper says carries the theorem fails for it **',
-          'continuous gauge isometry meets the Atiyah--Hirzebruch index obstruction' in bnd)
+          any(re.search(r"gauge isometry[^.]{0,160}?Atiyah--Hirzebruch", t)
+              or re.search(r"Atiyah--Hirzebruch[^.]{0,160}?isometry", t)
+              for t in _CORPUS.values()))
 
     check('⓷ while the paper\'s escape clause does not classify it: "with the known escapes all '
           'abandoning the geometric premise" -- ** and the corpus never considered this route, so it '

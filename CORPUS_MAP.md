@@ -146,6 +146,42 @@ sources: [cowork, chat]
 
 
 
+### Revision r6505 — 2026-09-09 (node 64). **Two of `60`'s ten repaired — and the class has one shape: a receipt that cannot tell a WITHDRAWN claim from a LOST one, or a REHOMED one from a missing one.**
+
+**⌗ `L207/W1` — a deliberate retirement read as a rehoming failure.** *Its six claim-probes require all six
+present; exactly one had gone --- **"the deepest question this construction opens onto", which MY `r6423`
+removed** when it rewrote `P08` `sec:open` to the worked claim, the framing having been retired after `r6403`
+showed the kinematic caveat is true of any geometric theory. ⇒ ***The rehoming's success must be measured over
+the claims the corpus still asserts.*** A `_WITHDRAWN` set now carries the claim with the revision that
+withdrew it and why, **and asserts that each listed claim really is absent** --- so a stale list fails loudly
+rather than excusing a real loss.*
+
+**⛭ AND ITS SECOND FAILURE IS THE CLASS IN ONE LINE.** *The receipt's own `r4510` note says what it needs:
+"the exact-string probe **under-counts** the claim probe, which is true at any count below six". ***It then
+pinned the count anyway***, and the withdrawal moved it from 1 back to 0. **A receipt that states the
+invariant and asserts the instance fails on the next correct edit.** Now the instance is reported and the
+invariant is checked.*
+
+**⌗ `L221/B61` — pinned to superseded wording, and the supersession was a CORRECTION.** *It required
+"compactness and a **continuous** isometry"; the corpus now says **connected** --- and connected is the
+load-bearing word, ***because the disconnected orientation parity is exactly what escapes the obstruction***.
+A receipt must not pin against a sharpening. Probed at claim level with the qualifier left open.*
+
+**⌗ AND THE CLAIM HAD ALSO BEEN REHOMED** --- *out of `boundary_paper.tex` and into
+`matter_sector_paper.tex`. **A file-scoped probe cannot see a rehoming succeed: the very defect `W1` exists to
+record, arriving in another receipt.** Now searched corpus-wide, with the file it currently sits in reported,
+so a further move is visible rather than fatal.*
+
+**⛔ AND CHASING `B61` FOUND A THIRD WORDING OF THE WITHDRAWN CLAIM, IN A SUMMARY.** *`P13` still read "a
+continuous gauge isometry **yields a vector-like fermion spectrum** by the Atiyah--Hirzebruch obstruction" ---
+doubly wrong, the index route lapsing on dimension and the result being **no massless content**. ***My
+`check_withdrawn` pattern missed it for the third time: it was keyed to "render ... vector-like" and this says
+"yields".*** ⇒ **A phrase-keyed registry is only ever as wide as the phrasings someone happened to look at.**
+Widened to the adjective under any verb; `P13`'s summary corrected to what is shown.
+
+⌗ *Two of ten green. `P13` recompiled and its page regenerated. Seven still failing; `L560/P1` already passes,
+which is `60`'s count of ten including one that has since been fixed on the trunk.*
+
 ### Revision r6503 — 2026-09-09 (node 64). **`60`'s branch merged (fast-forward), node 64 declared in the odd half — and the sweep I have been running was NINE gates out of ONE HUNDRED AND THREE.**
 
 **⌗ THE MERGE WAS A CLEAN FAST-FORWARD.** *`60` had been merging the trunk in as it went, so its seven

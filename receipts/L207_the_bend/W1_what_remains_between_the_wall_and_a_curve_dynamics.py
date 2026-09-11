@@ -232,10 +232,33 @@ def main():
                'That worldline dynamics is taken up for a concrete matter model',
                'the deepest question the construction opens onto',
                'Since the framework leaves the dynamics of general relativity unchanged']
-    _alive = {k: v for k, v in _CLAIMS.items() if re.search(v, _BODY)}
-    check(f'⛭ CORRECTED c54.228: {len(_alive)} of {len(_CLAIMS)} CLAIMS this receipt quoted are present '
-          f'in the papers\' BODY text after r2581 -- the rehoming moved and reworded them, and lost none',
-          len(_alive) == len(_CLAIMS))
+    # ** ⛔⛭ AMENDED r6505.  A CLAIM THE CORPUS WITHDREW IS NOT A CLAIM THE REHOMING LOST,
+    #   and this receipt could not tell the two apart -- which is why it failed. **
+    #   *`r6423` rewrote `P08` `sec:open` to the worked claim and removed "the deepest question
+    #   this construction opens onto" from the corpus, because `r6403` had shown the kinematic
+    #   caveat is true of any geometric theory and the framing was retired with it.  The probe
+    #   then read a DELIBERATE RETIREMENT as a rehoming failure.*
+    #   ⇒ *** The rehoming's success is measured over the claims the corpus still asserts.  A
+    #       withdrawn claim is listed here, with the revision that withdrew it and why, so the
+    #       count stays auditable and the retirement is visible rather than absorbed. ***
+    _WITHDRAWN = {
+        'it is the deepest question the construction opens onto':
+            'r6423 -- P08 sec:open rewritten to the worked claim; the framing was retired '
+            'after r6403 showed the kinematic caveat is true of any geometric theory',
+    }
+    _live_claims = {k: v for k, v in _CLAIMS.items() if k not in _WITHDRAWN}
+    _alive = {k: v for k, v in _live_claims.items() if re.search(v, _BODY)}
+    for _k, _why in _WITHDRAWN.items():
+        assert _k in _CLAIMS, f'a withdrawn entry must name a claim this receipt actually probed: {_k}'
+        assert not re.search(_CLAIMS[_k], _BODY), (
+            f'"{_k}" is listed as WITHDRAWN but is present in the corpus -- '
+            f'the list is stale and must be re-read, not trusted')
+    check(f'⛭ CORRECTED c54.228, AMENDED r6505: {len(_alive)} of {len(_live_claims)} CLAIMS this receipt '
+          f'quoted are present in the papers\' BODY text after r2581 -- the rehoming moved and reworded '
+          f'them, and lost none.  *{len(_WITHDRAWN)} further claim(s) were WITHDRAWN by the corpus and are '
+          f'excluded rather than counted as losses: ' + '; '.join(f'"{k[:38]}" ({v[:44]})'
+          for k, v in _WITHDRAWN.items()) + '*',
+          len(_alive) == len(_live_claims))
     _verbatim = [q for q in _quotes if q in _BODY]
     # ⛔⛭ AMENDED r4510.  ** THIS RECEIPT'S OWN LESSON, A SECOND LEVEL UP -- AND FROM THE OTHER SIDE. **
     #   c54.228 asserted the exact-sentence count is ZERO.  *It was zero on the day, and `r4187` wrote
@@ -261,7 +284,13 @@ def main():
           + (f'  *The one exact survivor is `{_verbatim[0][:44]}`, which `r4187` wrote into '
              f'CR_synthesis.tex -- a NEW use of the wording, not the old sentence surviving.*'
              if _verbatim else ''),
-          len(_verbatim) < len(_alive) and len(_alive) == len(_CLAIMS))
+          # ⛭ AMENDED r6505: the live claim is the INEQUALITY, which this receipt's own
+          #   r4510 note already names -- "the exact-string probe UNDER-COUNTS the claim
+          #   probe, which is true at any count below six".  It then pinned the count
+          #   anyway, and r6423's withdrawal moved it from 1 back to 0.
+          #   ** A receipt that states the invariant and asserts the instance fails on
+          #      the next correct edit.  The instance is reported; the invariant is checked. **
+          len(_verbatim) < len(_alive) and len(_alive) == len(_live_claims))
 
     print()
     if FAILED:

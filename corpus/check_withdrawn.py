@@ -67,6 +67,13 @@ REGISTRY = [
      # withdrawn claim sat bare in p0 and this gate reported the tree clean.  A registry
      # keyed to one paper's phrasing is a registry that checks one paper. **
      r'|render(?:ing|s)?\s+(?:the|a)\s+[\w-]*\s*fermion sector\s*vector-like'
+     # ** r6505: WIDENED A SECOND TIME.  The first widening was keyed to "render ... vector-like";
+     #   P13's own SUMMARY paragraph says "yields a vector-like fermion spectrum", which neither
+     #   form caught.  *Three wordings, three misses -- a phrase-keyed registry is only ever as
+     #   wide as the phrasings someone happened to look at.*  This one matches the ADJECTIVE
+     #   applied to the spectrum or sector by any verb. **
+     r'|(?:yield|give|produce|leave)(?:s|ing)?\s+(?:a\s+)?vector-like\s+fermion\s+(?:spectrum|sector)'
+     r'|vector-like\s+fermion\s+spectrum'
      r'|makes the spectrum vector-like',
      r'(?:empty|no zero modes|odd-dimensional|even dimension|five-sphere|Lichnerowicz'
      r'|vacuous|withdraw|superseded|struck r\d+|the even-dimensional case)',
