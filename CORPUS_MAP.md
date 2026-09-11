@@ -146,6 +146,39 @@ sources: [cowork, chat]
 
 
 
+### Revision r6507 — 2026-09-09 (node 64). **A third repaired — and it was the receipt catching ME: four open-ledger rows orphaned by my own edits this session, none noticed until the ratchet went red.**
+
+**⌗ `L257/V1` WAS WORKING EXACTLY AS DESIGNED.** *It ratchets the open-ledger WARN count at zero and says why
+in its own text: ***"a WARN reappearing means a paper moved out from under a ledger row again"***. Four had
+reappeared. **The repair is not to loosen the receipt; it is to fix what moved** --- and what moved was mine.*
+
+**⛭ ALL FOUR ROWS NAMED SENTENCES I REWROTE IN THIS SESSION, and in every case the qualification was ANSWERED
+or ABSORBED rather than reworded** --- *which is why the gate reads `UNVERDICTED: 0` while they orphan: there
+is no new sentence to re-home onto.* ⇒ *So they are **retired with the reasoning**, not re-pointed:*
+
+*· `11b0140039` --- "what remains open here is therefore not the emergence of the bend as such". `r6423`--`r6491`
+worked that framing; the qualification is now carried by `24de5efa8c` in the same paper. **Absorbed into a row
+that already exists.**
+*· `45d67de07f` --- "so the index question stays open". `r6465` rewrote `sec:open` when `PO-26` was struck: the
+paper now says the index question is **not** open on that. **Answered in the direction of the claim.**
+*· `8182c34d9b` --- "whether a charged collapse reaches that stationary structure at all". `r6405` **ran** it.
+*· `aab6a5fe8b` --- a **deferral** to the framework paper, discharged by the same run.
+
+**⌗ AND I HAD TO LEARN THE MECHANISM RATHER THAN GUESS IT, TWICE.** *First I repointed the rows in place ---
+but the id is a **hash of the sentence**, so a rewritten sentence has a new id by construction and the old row
+cannot be repointed at all. Then I marked the verdict `RETIRED` --- but retirement is **commenting the row
+out**, because `read_ledger` skips comment lines, which is the only thing that removes it from the live set.
+**Both corrections came from reading the gate's own source rather than from the failure message.***
+
+⇒ ***Ledger now balances: 112 qualifications in the papers, 112 rows, zero WARN, retired 18 → 22.***
+
+⚠ **THE LESSON IS ONE `L560/P1` ALREADY CARRIES.** *Answering a qualification is owed to this ledger **in the
+same revision**, or the row orphans and the next node reads a **paid** claim as a **lost sentence**. ***Four
+in one session, all mine, none noticed until a receipt that ratchets a count went red.*** The receipt was the
+only thing watching.*
+
+⌗ *Three of nine green.*
+
 ### Revision r6505 — 2026-09-09 (node 64). **Two of `60`'s ten repaired — and the class has one shape: a receipt that cannot tell a WITHDRAWN claim from a LOST one, or a REHOMED one from a missing one.**
 
 **⌗ `L207/W1` — a deliberate retirement read as a rehoming failure.** *Its six claim-probes require all six
