@@ -146,6 +146,49 @@ sources: [cowork, chat]
 
 
 
+### Revision r6493 — 2026-09-09 (node 64). **An external development bears on an assumption, not on a theorem — `P16`'s adiabatic argument reaches one of the two ways adiabaticity can fail, and `PO-31`'s damping dichotomy gains a third branch.**
+
+**⌗ RAISED BY `63` AND CHECKED HERE AT SOURCE, all three citations verified before anything was written.**
+
+**⛭ `P16`'s ADIABATIC ARGUMENT EXCLUDES RADIATIVE LOSS, AND NOT DYNAMICAL PRODUCTION.** *Its justification is
+optical depth --- "the photon bath is trapped and compresses with the gas" --- and it is a good argument for
+what it argues. ***Adiabaticity can fail two ways: entropy LEAVES, which that excludes; or entropy is PRODUCED
+dynamically, with nothing leaving anywhere, which it does not reach.*** A finite-time flow singularity is the
+second. ⌗ *And the CR regime is the **less** favourable one for the default: optical thickness makes the flow
+effectively ideal, and the inviscid case was the easier one throughout that literature --- viscosity being
+what regularity leans on, and `P16`'s own argument being that viscosity and conduction are negligible there.*
+
+**⛭⛭ BUT THE PEAK IS ROBUST, AND FOR A REASON WORTH HAVING ON THE RECORD.** *`sec:peak` integrates no fluid
+evolution. It is a **lower bound** from an energy budget ($GM/R_sc^2=1/2$ identically at the horizon) and from
+convergence resting on `P01`'s metric-singularity result --- $T_{\rm pk}\gtrsim10^{2}$ MeV against
+$T_D\simeq0.07$, **three and a half orders of margin**. ⇒ ***A blowup dissipates. It heats. It pushes the way
+the bound already points. The peak was never resting on the flow being smooth.*** ⌗ *And `PO-40`'s finiteness
+is insulated by something established before this arose: the Landauer floor, $k_B\ln2$ per baryon, independent
+of $T_{\rm pk}$, $g_*$, the adiabat, the network, $\eta$ --- **and of flow regularity**, since it needs only
+that the composition is destroyed.*
+
+**⌗ AND `PO-31` GAINS A THIRD BRANCH, ON THE ROW THAT ALREADY OWNS THE QUESTION.** *That row carries the
+four-charge picture and names its first computation: does the collapse leg's no-hair damping remove $J$, or
+only its anisotropic signature? **The damping is an attractor argument, acting over elapsed time on the leg.
+The mechanism now known to break smoothness is vortex stretching, which CONCENTRATES vortical structure** ---
+the opposite process, driven by exactly what a collapse supplies. ⇒ ***So the flow may not stay smooth long
+enough for the damping to complete, and the mechanism that would break it concentrates the very charge in
+question.***
+
+**⛭ AND THE ROW'S OWN REASONING APPLIES TO IT SYMMETRICALLY**, *which is why it belongs there and not on a new
+row: the row places the damping on the **approach** and not the crossing because "damping is a process and
+requires elapsed time, and the crossing has none". ***A blowup is also a process requiring elapsed time.*** So
+the two compete on the same leg, for the same reason, and **neither reaches the crossing**.*
+
+⚠ **SCOPED, AND NOTHING TRANSFERS AS A THEOREM.** *That setting is incompressible, flat, non-relativistic and
+externally **forced**; the leg is compressible, relativistic and self-gravitating. **What changes is the
+status of an assumption.** ⌗ *And the case `P16` computes is the safe one --- a **top-hat** progenitor, no
+vorticity --- while `P07`'s `cor:nonspherical` extends the theorem to collapse of **any** symmetry, and a
+realistic progenitor has vorticity. **The channel is already here: the null-boundary correspondence carries no
+metric multipoles, only $(M,J,Q)$ --- and $J$ is what a vortex is.***
+
+⌗ *`P16` 31pp, zero undefined; twelve gates green. No external numbers or attributions entered the papers.*
+
 ### Revision r6491 — 2026-09-09 (node 64). **The boundary located: what the geometry supplies and what it marks external are separated by whether the breaking is ITSELF symmetric — one fact, joining three statements never read together.**
 
 **⌗ THE TENSION THAT MADE IT WORTH READING.** *`r6489` found the geometry **does** supply a breaking --- the
