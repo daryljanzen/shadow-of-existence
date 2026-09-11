@@ -146,6 +146,46 @@ sources: [cowork, chat]
 
 
 
+### Revision r6457 — 2026-09-09 (node 64). **Room ②'s prior clause answered: the construction is specifiable, and colour sits inside the face's own spin group. Plus `r6455`, the `r1291` restoration adjudicated rather than cited.**
+
+**⛭ FIRST, `r6455`: I HAD LEANED ON A FIVE-THOUSAND-REVISION-OLD NOTE AS AUTHORITY.** *`r6453` declined to
+re-scope `PO-23` because the ledger records `r1291` reversing exactly that move. **Correct outcome, wrong
+warrant.** Adjudicated now on its merits: ⓵ *the generic question and this one are not the same object ---
+perturbative quantum gravity's ultraviolet problem is non-renormalisability, **infinitely many
+counterterms**, where `P10` establishes the basis here is **one-dimensional**;* ⓶ *deparametrization
+**solves** the constraint, so there is a true Hamiltonian on a compact slice with a discrete spectrum ---
+nearer a quantum-mechanical problem than a covariant field-theoretic one;* ⓷ *and the contrast with
+`PO-36` is sharp --- **there both frameworks take the same $m(r)$ so the measurement cannot distinguish
+them**, while here no other framework has this tower. ⇒ ***I agree with `r1291`, for reasons it did not
+give, and the agreement is now a judgement rather than a citation.***
+
+**⌗ AND ROOM ②'s PRIOR CLAUSE IS ANSWERED.** *It asked what a compact-face construction **would be**, the
+usual specification --- a reduction over an internal space --- being unavailable. ***The missing product is
+an obstacle only to the framing.*** The face is not an internal space attached to a spacetime: **it is the
+same manifold on its other real form**, so a field there is related to one on the Lorentzian substrate by
+**continuation**, not reduction.*
+
+**⛭⛭ AND THAT FIXES WHAT A FERMION THERE IS.** *The face is $S^{5}=\mathrm{SO}(6)/\mathrm{SO}(5)$, so its
+spin group is $\mathrm{Spin}(6)=\mathbf{SU(4)}$, with $\mathrm{Spin}(5)=\mathrm{Sp}(2)$ and a
+four-component spinor. ⇒ ***Colour acts as a subgroup of the face's own spin group, not as an internal
+gauge group on a factor --- because there is no factor***: $\mathrm{SU}(3)\times\mathrm{U}(1)<\mathrm{SU}(4)$,
+adjoint $15=8+1+3+\bar3$, **fundamental $\mathbf{4}\to\mathbf{3}\oplus\mathbf{1}$, a colour triplet and a
+singlet**. ⌗ *The branching is the familiar lepton-as-fourth-colour one, **arising from the face's own spin
+group rather than imposed** --- noted as the same branching, not as a claim the construction yields that
+model.* ⌗ ***The corpus named neither $\mathrm{Spin}(6)$ nor $\mathrm{SU}(4)$ anywhere before this.***
+
+**⛔ AND IT SOFTENS NOTHING.** *It specifies the construction; it does not build it, and **it does not evade
+the positive-curvature obstruction** --- the round face still carries no zero modes. ***So the construction
+is now specifiable AND empty: the emptiness of something definite rather than of something unstated.***
+⇒ *Room ②'s opening becomes **whether such a sector can evade that obstruction**, asked of a named object.*
+
+⚠ **AND A GATE CAUGHT A DECORATION OF MINE.** *The receipt asserted `zero_modes_on_round_face == 0` against
+a variable assigned two lines above --- **provably cannot fail**, which the hollow-assertion lint named
+exactly. ***A hollow assertion converts a known gap into an unknown one.*** Replaced with the computation:
+the least $|\lambda|$ over two thousand modes on the round $S^{5}$, checked non-zero. ⌗ *And a spurious
+`appendix_receipts_P18.tex` I generated in sweeping was removed --- untracked, never committed, and `P18`
+does not input it.*
+
 ### Revision r6453 — 2026-09-09 (node 64). **The `r6445` clause resolved STRUCTURALLY: `PO-23` is the last of three named parts, and its remainder is not reachable by refining the free-spectrum method.**
 
 **⌗ THE CLAUSE WAS MINE AND IS NOW DISCHARGED, though not in the direction I expected.** *`r6445` bounded
