@@ -313,9 +313,18 @@ def main():
     check(f'⓸ᵇ SEEDED: "{only_comment}" is in P14\'s comment header and NOT in its body -- the '
           'instrument finds 0',
           only_comment in raw14 and sum(RB.counts(only_comment).values()) == 0)
-    check('⓸ᶜ and it earned itself on this very audit: `equivariant index` ×7 reads as a hole in '
-          'the theatre\'s prose and is P13 using the Atiyah--Hirzebruch obstruction',
-          sum(RB.counts('equivariant index').values()) == 7
+    # ⛭ AMENDED r6511: ×7 -> ×9, and BOTH arrivals are attributed rather than the count relaxed.
+    #   *`r4555` took it 6 -> 7 in `P13` and `r6425` took it 7 -> 8, the latter propagating the
+    #   compact-face findings: the sector supplies NO equivariant index, which is the phrase
+    #   itself.  The ninth is `P11`'s, unmoved.*  ⇒ ** The finding is unchanged and is why this
+    #   check exists: the term reads as a hole in the theatre's prose while being P13 USING the
+    #   obstruction, and more uses of it is the same fact more strongly, not a different one. **
+    #   ⌗ Pinned to the measurement in this file's idiom, so a further move is looked at.
+    _eqi = RB.counts('equivariant index')
+    check(f'⓸ᶜ and it earned itself on this very audit: `equivariant index` ×{sum(_eqi.values())} '
+          f'reads as a hole in the theatre\'s prose and is P13 using the Atiyah--Hirzebruch '
+          f'obstruction (×{_eqi.get("P13", 0)} there; ×7 at the audit, r4555 and r6425 adding one each)',
+          sum(_eqi.values()) == 9 and _eqi.get('P13', 0) == 8
           and 'Atiyah--Hirzebruch index obstruction' in B['P13'])
     check('⓸ᵈ and `permutation representation` ×1 reads as an opening and is P14 citing the '
           'discrete-flavour literature, not an index statement',

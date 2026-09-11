@@ -106,8 +106,13 @@ def main():
     #   results together.  ** A file-scoped probe cannot see a rehoming succeed -- the very
     #   defect L207/W1 exists to record, arriving here. **  Searched across the corpus and
     #   the file it now sits in is reported, so a further move is visible rather than fatal.
+    # ⌗ `appendix_receipts*` EXCLUDED, and the exclusion is load-bearing: the generated
+    #   appendices carry every receipt's own claim and computes text, so a search over
+    #   `corpus/*.tex` that includes them measures the INDEX as well as the papers --
+    #   `check_receipt_tex_scope` fired on this the moment the glob was added.
     _CORPUS = {os.path.basename(f): flat(os.path.basename(f))
-               for f in _glob.glob(os.path.join(ROOT, 'corpus', '*.tex'))}
+               for f in _glob.glob(os.path.join(ROOT, 'corpus', '*.tex'))
+               if not os.path.basename(f).startswith('appendix_receipts')}
     _hyp, _hyp_home = None, None
     for _n, _t in sorted(_CORPUS.items()):
         _m = re.search(r"load-bearing hypotheses are compactness and a[^.]{0,40}?isometry", _t)

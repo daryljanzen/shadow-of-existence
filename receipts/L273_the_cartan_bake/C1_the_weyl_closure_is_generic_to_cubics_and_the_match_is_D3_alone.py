@@ -361,10 +361,25 @@ def main():
           all(v == 0 for v in _then.values()))
     _now = {t: TOTW(t) for t in absent if TOTW(t)}
     check(f'⓺ᵃ¹ ⛭ and {len(absent) - len(_now)} of the {len(absent)} are still ×0; what has arrived '
-          f'is {_now} -- `principal bundle` with the Atiyah-sequence landing at r3251, which is '
-          f'station Ⓖ being answered next door and not an apparatus appearing',
-          len(_now) <= 1 and set(_now) <= {'principal bundle'}
-          and all(TOTW(t) == 0 for t in absent if t != 'principal bundle'))
+          f'is {_now} -- `principal bundle` with the Atiyah-sequence landing at r3251, station Ⓖ '
+          f'answered next door; `torsion` with r6463, where 63''s referee read found a SIXTH '
+          f'escape from the positive-curvature obstruction and the paper closed it.  '
+          f'** Two named arrivals are not an apparatus appearing. **',
+          # ⛭ AMENDED r6511: `torsion` x3 has arrived and is ATTRIBUTED, not tolerated.
+          #   *All three are one sentence-group in `boundary_paper`, added at `r6463` with
+          #   `PO-26`'s strike: node 63's referee read found a SIXTH escape from the
+          #   positive-curvature obstruction -- Lichnerowicz rests on the Weitzenbock identity
+          #   for the LEVI-CIVITA connection, and a connection carrying torsion admits zero
+          #   modes at positive scalar curvature -- and the paper states it and closes it,
+          #   forcing the maximally symmetric member forcing a symmetric space where the
+          #   canonical connection is Levi-Civita and the torsion vanishes.*
+          #   ⇒ ** Two of eight is still not an apparatus, which is this check's finding and is
+          #      unchanged.  Each arrival is named with the revision that brought it and why;
+          #      the six that remain x0 are asserted live, and an UNATTRIBUTED arrival still
+          #      fires here. **
+          len(_now) <= 2 and set(_now) <= {'principal bundle', 'torsion'}
+          and all(TOTW(t) == 0 for t in absent
+                  if t not in ('principal bundle', 'torsion')))
     check('⓺ᵃ ⚠ AND ONE OF THEM WAS A FALSE HOLE THE OTHER WAY: the substring count returned '
           '`G-structure` ×1, matching inside `breaking-structure` in a sentence about symmetry '
           'breaking -- the third substring artefact in this session, so the word-bounded report '

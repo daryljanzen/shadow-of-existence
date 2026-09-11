@@ -169,8 +169,14 @@ print(f"    likelihood: {lik}  (total x{sum(lik.values())})")
 #   took three uses of the control word with it.  *The control's job is to prove the screen can
 #   FIND a statistical word, and 23 does that as well as 26 did; the value is re-pinned to the
 #   measurement, in this file's own idiom, so a further move fires here rather than passing.*
-check("the control word is found, and P15 carries twenty-three (26 before r4111's restatement)",
-      lik.get('P15'), 23)
+# ⛭ AMENDED r6511: 23 -> 24 in P15.  *`r6427` made `PO-24`'s absorption bound exact and wrote
+#   "across the likelihood's own $\ell=30$--$2508$" into the acoustic section -- a GENUINE new use
+#   of the control word, describing the range of the likelihood the comparison is scored on.*
+#   ** The check fired exactly as r4532 designed it to: pinned to the measurement so a move is
+#   looked at rather than absorbed. **  Looked at, attributed to its revision, and re-pinned.
+check("the control word is found, and P15 carries twenty-four "
+      "(26 before r4111's restatement, 23 before r6427's absorption bound)",
+      lik.get('P15'), 24)
 check("and it is the dominant carrier", max(lik, key=lik.get), 'P15')
 print("    *** The screen finds a statistical word when there is one.  The absences above")
 print("        are absences, not blindness. ***")

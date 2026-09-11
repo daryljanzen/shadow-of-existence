@@ -447,8 +447,22 @@ def band_violations(root=None):
             continue
         sha, _, subj = line.partition('\t')
         m = BARE.match(subj.strip())
+        # ** ⛭ r6511: --first-parent IS NOT ENOUGH WHEN THE MERGE WAS A FAST-FORWARD. **
+        #   *r3203 added `--first-parent` so that merging the other line's bundle would not
+        #   flag its commits here -- and it works, for a MERGE COMMIT.  A fast-forward makes no
+        #   merge commit, so the other line's commits sit ON the first-parent path and are
+        #   indistinguishable from this line's own.*  Node 64 fast-forwarded 60's seven commits
+        #   at r6503 and this check then reported 60's even-numbered `r6502` as 64's violation
+        #   -- ** policing the other half on this tree, which is the one thing the band exists
+        #   to avoid, arriving by the one merge shape the guard does not cover. **
+        #   ⇒ *** A revision number lying in ANOTHER DECLARED node's half is that node's by
+        #       construction.  Exempted, and the exemption is narrow: it requires the other
+        #       half to be DECLARED in _PARITY_BY_NODE, so an undeclared line still fires. ***
+        _other_halves = {v for k, v in _PARITY_BY_NODE.items()
+                         if v is not None and k != _NODE and v != PARITY}
         if m and int(m.group(1)[1:]) % 2 != PARITY \
-                and m.group(1) not in BAND_GRANDFATHERED:
+                and m.group(1) not in BAND_GRANDFATHERED \
+                and int(m.group(1)[1:]) % 2 not in _other_halves:
             out.append((sha, m.group(1), m.group(2).strip()))
     return out
 
