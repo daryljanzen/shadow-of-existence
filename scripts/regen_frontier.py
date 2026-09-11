@@ -74,6 +74,15 @@ EST = {
         'ference is that content is read LEFTWARD off the cut rather than fed into it. What is owed is a generative law '
         ' for the CONTENT, which P08 now hands to the matter sector -- and PO-26s strike (r6463) closes the geometric  '
         'route on the compact face, twice over, so that route is not where it comes from. '
+        'r6479 joins this row to the head: every lap after the first inherits its cuts shape and the '
+        'head inherits nothing, so PO-30 discharged discharges what the head owes and the converse fails. '
+        'r6481 RULES OUT THE OBVIOUS CANDIDATE FOR THE LAW. p0s offset-mass relation has a UNIQUE positive '
+        'stationary point and it lands exactly on the NARIAI member, r0 = alpha/sqrt3 and M = alpha sqrt3/9 '
+        '-- a third route to that member, where P05 reaches it as sigmas fixed point and P07 by a collapse '
+        'trichotomy, and unremarked at any of the four sites the cubic appears. BUT EVERY MEMBER OF THAT '
+        'FAMILY HAS m(r) CONSTANT, so rho vanishes identically -- the one intrinsically distinguished cut '
+        'carries NO distributed matter, where PO-41 says the head owes baryons. So the law must fix a '
+        'FUNCTION m(r) and not a number: the constructions one distinguished point is in the wrong space. '
 ),
     'PO-31': ('the progenitor spectrum', 1, 1, 6, None,
         'r4493/r6427: two of three rooms closed by impossibility; what remains is the progenitor spectrum, a modelling  '

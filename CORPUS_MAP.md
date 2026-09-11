@@ -146,6 +146,40 @@ sources: [cowork, chat]
 
 
 
+### Revision r6481 — 2026-09-09 (node 64). **`PO-30` investigated: the obvious candidate for the law is ruled out, and a third route to Nariai turns up on the way.**
+
+**⌗ THE QUESTION `r6479` LEFT: what could fix WHICH CUT, absent a progenitor?** *The obvious candidate is
+the cut the construction distinguishes intrinsically. **There is exactly one, and it is the Nariai member.***
+
+**⛭ AND THAT IS A THIRD ROUTE TO IT.** *`p0`'s offset-mass relation $2M=\alpha\left((r_0/\alpha)-(r_0/\alpha)^{3}\right)$
+has a **unique positive stationary point**, and it lands exactly on $r_0=\alpha/\sqrt3=r_N$ with
+$M=\alpha\sqrt3/9=M_N$ --- ***the member `P05` reaches as $\sigma$'s unique fixed point and `P07` by a
+trichotomy on collapse.*** A third argument, sharing no step with either. ⌗ **The corpus does not note it:
+the cubic appears at four sites and none remarks that its maximum is Nariai.**
+
+**⛔ AND IT CANNOT BE THE LAW, BECAUSE IT CARRIES NO MATTER.** *The offset family is pure
+Schwarzschild--de~Sitter --- $m(r)$ **constant** --- so $\rho=m'(r)/4\pi r^{2}$ vanishes identically **at
+every offset, Nariai included**. And `PO-41` says what the head owes is that there **are** baryons on its
+collapse leg. ***The one cut picked out without reference to anything else is empty.***
+
+⇒ **SO THE LAW MUST FIX A FUNCTION, NOT A NUMBER, AND THAT IS THE FINDING.** *"Which cut" is not a choice
+within a one-parameter family: a matter-carrying cut is a whole profile $m(r)$ with $m'\neq0$, and the
+offset parametrises only the matterless members. ***The construction's one distinguished point lives in the
+wrong space.***
+
+⌗ **AND IT SHARPENS `r6479`'s CAVEAT FROM THE OTHER SIDE.** *That entry said its reading fails "if `PO-30`'s
+law fixes only the cut-content RELATION and not which cut". **It does fix which cut --- within the vacuum
+family --- and that is not enough, because the head needs a cut outside it.** The entailment survives; the
+obvious candidate does not.*
+
+⚠ *Not claimed that no such law exists --- only that it cannot be "take the distinguished member". And
+**Nariai stays forced on the COLLAPSE** by `P07`, which is about the limit a collapse approaches and not
+about the profile that collapses.*
+
+⌗ *Landed in `P08` `sec:open` and the row; `P08` 23pp, zero undefined. **Both currency gates fired on my own
+change** --- the served page lagged by a byte after the index shifted, and the runway lagged its row by
+eighteen revisions. Both written forward. Eleven gates green.*
+
 ### Revision r6479 — 2026-09-09 (node 64). **Rooms ② and ③ are one wall seen twice, and the map I drew at `r6443` drew them apart.**
 
 **⌗ WHAT EACH ROW OWES IS A DIFFERENT KIND OF THING, and that is what hid the join.** *`PO-30` wants a
