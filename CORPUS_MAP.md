@@ -146,6 +146,40 @@ sources: [cowork, chat]
 
 
 
+### Revision r6471 — 2026-09-09 (node 64). **The entropy branch worked to the end: `r6437` RETRACTED, `PO-43`'s second question answered, and room ① drops to one wall.**
+
+**⌗ THE QUESTION `r6469` LEFT was whether the ledger's statement reaches the VALUE of a geometric quantity
+or only its constants. `p0` `sec:ledger`, read whole, answers it.** *The ledger names **two registers and no
+more**: the real-geometric gauges $c,\Lambda,G$, "each a nameable feature of the substrate and its cuts";
+and the thermal $\hbar,k_B$, ***"their CR-specific content the ledger's closing of THE ONE QUANTUM FREEDOM,
+not a new geometric feature"***. **That is the whole of its quantum claim and it is specific** --- the
+self-adjoint extension, closed by thermal regularity.*
+
+**⛭ SO THREE QUANTUM FREEDOMS ARE DISTINCT AND THE LEDGER SPEAKS TO ONE.** *The **extension**, closed by the
+ledger. The **regularisation** of the mode sums, conceded --- they spend one. And **a counterterm's finite
+part**, which neither speaks to. ⇒ ***A Gauss--Bonnet entropy shift is of the third kind, so the ledger does
+not reach it and the branch is costless --- which is exactly what `p0` recorded.***
+
+**⛔ SO `r6437` IS RETRACTED, NOT QUALIFIED.** *It claimed the declination was **load-bearing**, that the
+one-scale reading had a stake where `p0` had called the branch costless. ***`p0` was right.*** The stake was
+an artefact of reading the ledger's headline unscoped --- and `r6469`, which caught the unscoped citation,
+**demoted the claim to a register-crossing and did not go far enough.** ⌗ *Two corrections were needed on one
+finding, and the second only came from working the branch to the end rather than stopping at the repair.*
+
+**⌗ WHAT SURVIVES IS AN OBSERVATION, NOT A COST.** *The coefficient's only observable is a shift in $S$, and
+$S$ is the quantity `p0` singles out as a count taken **across** the register split. **The structure
+behaving as `p0` describes, at the place `p0` says it happens --- a confirmation, not a debit.***
+
+⇒ **AND `PO-43`'s SECOND REPLACEMENT QUESTION IS ANSWERED: the ledger does not count topological terms.**
+*`r6435` reduced that question to the entropy; this is what the reduction returns.* ⇒ ***Room ① drops from
+two walls to one: the interacting tower's ultraviolet definition, and nothing else.*** *The entropy was never
+a wall of that room.*
+
+⚠ *And the hollow-assertion lint caught me a second time in two sessions --- `ledger_counts_topological_terms
+= False` asserted against itself. Replaced with a derivation from the two structures above, which can fail.*
+
+⌗ *`p0` 41pp, zero undefined; nine gates green; frontier regenerated.*
+
 ### Revision r6469 — 2026-09-09 (node 64). **The entropy branch worked — and `r6437`'s headline corrected against me, by the same defect `63` found next door.**
 
 **⛔ `r6437` SAID THE ENTROPY SHIFT WOULD BE "THE FIRST FREE CONSTANT THE LEDGER CANNOT ABSORB". THAT IS
