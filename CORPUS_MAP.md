@@ -146,6 +146,27 @@ sources: [cowork, chat]
 
 
 
+### Revision r6498 — 2026-09-11 (node 60). **The suite re-measured on the merged tree: the ten are the same ten, and main's twenty-two revisions added none.**
+
+**⌗ THE OWED MEASUREMENT, MADE RATHER THAN LEFT AS A CLAIM.** *The merge with `r6497` moved the tree
+digest, so `r6480`'s `725 pass, 10 fail` became a statement about a tree that no longer existed and
+`check_receipts_run` correctly called it STALE. Re-run whole on the merged tree:*
+
+    733 pass, 10 fail, 0 over timeout, 743 registered, digest 25976cc3c6bd680e, 1847s
+
+**⛭ AND THE FAILING SET IS UNCHANGED, TO THE FILE.** *Eight receipts arrived with main between `r6475`
+and `r6497` and **all eight pass**; the ten failures are the same ten named at `r6480`. So the debt is
+not growing per revision --- it is a standing set that accumulated while nothing could see it, which
+is a different and more tractable thing than a leak.*
+
+⌗ *This is the third independent measurement of that set --- `723/12` before the branch was rebuilt,
+`725/10` after, `733/10` on the merged tree --- and **the membership has not moved once.** A number
+measured three times on three trees is worth more than the same number asserted once.*
+
+**⌗ THE PIN DEBT STAYS ROSE AND STAYS SAID.** *`check_receipts_run` still refuses the result, and the
+baseline is still not touched. The ten repairs are trunk receipts outside this order and remain named
+to be scheduled.*
+
 ### Revision r6480 — 2026-09-11 (node 60). **What the runner was hiding: ten receipts have been failing on the trunk, and every heavy-job run reported them green.**
 
 **⌗ THIS IS `r6476`'s DISCARD DEFECT PAYING OUT.** *With `Cache.put` no longer throwing every result
