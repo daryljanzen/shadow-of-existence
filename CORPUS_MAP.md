@@ -146,6 +146,33 @@ sources: [cowork, chat]
 
 
 
+### Revision r6509 — 2026-09-09 (node 64). **Two more, with one repair — and one of them is the receipt whose entire subject is the distinction it could not draw for itself.**
+
+**⌗ `L561/C1` AND `L258/M1` ARE ONE DEFECT.** *`M1`'s only failure was "`C1` exits 1" --- ***purely
+downstream, the same coupling `60` found between `L251/N1` and `L261/A1`***. Fixing `C1` fixed both.*
+
+**⛭ AND `C1` FAILED ON THE CLAIM `W1` FAILED ON, FOR THE SAME REASON.** *"the deepest question this
+construction opens onto", withdrawn by my `r6423`. The same `_WITHDRAWN` repair, with the same assertion that
+each listed claim really is absent. ⇒ ***`C1`'s whole subject is that a probe can be sound and still verify
+the wrong object --- and it could not tell a withdrawal from a loss one level down.***
+
+**⌗ THREE FURTHER CHECKS WERE BUILT ON THAT PHRASE AND DIED WITH IT, each wanting a different repair.**
+*· The **claim count** --- same exclusion as ⓶, else a retirement counts as a reworded loss.
+*· The **comment-stripping demonstration** --- it used the withdrawn phrase as its example, and re-asserting
+on "at least one probe differs" **died too, because that phrase was the only probe the stripping separated**.
+⇒ ***The demonstration has lapsed and the principle has not***: asserted now on what remains checkable, that
+the stripping removes real material, **with the lapse reported rather than quietly dropped**.
+*· The **one-word margin** --- `P8` read "**this** construction" where the receipt quotes "**the**". `r6423`
+removed the sentence altogether, so ***neither form is in the corpus and the margin is recorded rather than
+live***.
+
+⚠ **AND MY FIRST FIX OF THAT LAST ONE ASKED THE WRONG FILE.** *I checked `RECV` for the receipt's own
+quotation --- but `RECV` is the **receiving papers**, and the quotation lives in the receipt's source.
+***Exactly the confusion the receipt exists to record, committed while repairing it.*** Pointed at
+`__file__`.*
+
+⌗ *Five of nine green.*
+
 ### Revision r6507 — 2026-09-09 (node 64). **A third repaired — and it was the receipt catching ME: four open-ledger rows orphaned by my own edits this session, none noticed until the ratchet went red.**
 
 **⌗ `L257/V1` WAS WORKING EXACTLY AS DESIGNED.** *It ratchets the open-ledger WARN count at zero and says why

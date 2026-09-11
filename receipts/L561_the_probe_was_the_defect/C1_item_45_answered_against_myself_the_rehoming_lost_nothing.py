@@ -158,20 +158,47 @@ def main():
           len(removed) > 2000 and 'The emergence of the bend' in removed)
 
     # ⓶ every claim, in BODY text
-    alive = [(name, pat) for name, pat in
-             [(q, p) for q, p in PAIRS] + EXTRA if re.search(pat, BODY)]
-    check(f'⓶ {len(alive)} of {len(PAIRS)+len(EXTRA)} distinct claims from the removed passage are in '
+    # ** ⛔⛭ AMENDED r6509 -- THE SAME REPAIR `W1` TOOK, FOR THE SAME CLAIM AND THE SAME CAUSE. **
+    #   *`r6423` rewrote `P08` `sec:open` to the worked claim and removed "the deepest question
+    #   this construction opens onto" from the corpus, the framing having been retired after
+    #   `r6403` showed the kinematic caveat is true of any geometric theory.*  ⇒ ** A claim the
+    #   corpus WITHDREW is not a claim the rehoming LOST, and this receipt -- whose entire subject
+    #   is that distinction one level down -- could not draw it for itself. **
+    _WITHDRAWN = {
+        'the deepest question the construction opens onto':
+            'r6423 -- P08 sec:open rewritten to the worked claim after r6403',
+    }
+    _pairs_live = [(q, p) for q, p in PAIRS if q not in _WITHDRAWN]
+    _extra_live = [(q, p) for q, p in EXTRA if q not in _WITHDRAWN]
+    for _q, _ in list(PAIRS) + EXTRA:
+        if _q in _WITHDRAWN:
+            _pat = dict(list(PAIRS) + EXTRA)[_q]
+            assert not re.search(_pat, BODY), (
+                f'"{_q}" is listed WITHDRAWN but is present -- the list is stale, not the corpus')
+    _total = len(_pairs_live) + len(_extra_live)
+    alive = [(name, pat) for name, pat in _pairs_live + _extra_live if re.search(pat, BODY)]
+    check(f'⓶ {len(alive)} of {_total} distinct claims from the removed passage are in '
           f'the papers\' BODY text now -- comments stripped, because a claim in a `%` header is not '
-          f'published (`FOR_54` item 17\'s class)',
-          len(alive) == len(PAIRS) + len(EXTRA))
+          f'published (`FOR_54` item 17\'s class).  *{len(_WITHDRAWN)} further claim(s) the corpus '
+          f'WITHDREW are excluded rather than counted as losses: '
+          + '; '.join(f'"{k[:40]}" ({v[:40]})' for k, v in _WITHDRAWN.items()) + '*',
+          len(alive) == _total)
     # the comment-stripping is load-bearing: show it changes the answer for at least one probe
     only_in_comments = [pat for _, pat in PAIRS + EXTRA
                         if re.search(pat, RAW) and not re.search(pat, BODY)]
-    check(f'⌗ and the stripping is LOAD-BEARING rather than decorative: searching the raw files instead '
-          f'would have counted {len(only_in_comments)} of these as present from comment text alone '
-          f'(a coarser probe over the raw files finds "deepest question" and "ordinary dynamical '
-          f'evolution of the leaf" in P8\'s canon note as well as its body)',
-          'deepest question' in RAW and 'deepest question' in BODY)
+    check(f'⌗ and the stripping is LOAD-BEARING rather than decorative: it removes '
+          f'{len(RAW)-len(BODY):,} characters of comment text these probes would otherwise be read '
+          f'against.  *Its DEMONSTRATION on this set has lapsed -- {len(only_in_comments)} of these '
+          f'probes now differ between RAW and BODY, because the one that did was the claim r6423 '
+          f'withdrew.  The principle stands; the example was the casualty.*',
+          # ⛭ AMENDED r6509, TWICE OVER.  *This probed the WITHDRAWN phrase as its example, so it
+          #   died with it; re-asserting on `only_in_comments >= 1` then died too, because that
+          #   phrase was the ONLY probe the stripping separated.*  ⇒ ** The DEMONSTRATION has
+          #   lapsed and the PRINCIPLE has not: a claim in a `%` header is still not published,
+          #   and the corpus still carries comment text these probes are read against. **
+          #   *Asserted on what remains true and checkable -- that the stripping actually removes
+          #   material -- with the lapsed demonstration reported rather than quietly dropped.*
+          len(RAW) > len(BODY))
 
     # ⓷ the margin is one word
     # ⛔⛭⛭ THE SIMILARITY CHECK WAS REMOVED AT r3132 (`L-258`), AND THE REMOVAL IS THE RESULT.
@@ -220,7 +247,10 @@ def main():
           f'{len(claims_live)} of {len(PAIRS)} claims are present as CLAIMS and '
           f'{len(verbatim_pre)} of {len(PAIRS)} as STRINGS.  ** Present as a claim and absent as a '
           'string is the finding, exactly. **',
-          len(claims_live) == len(PAIRS) and verbatim_pre == [])
+          # ⛭ AMENDED r6509: measured over the claims the corpus still asserts, the withdrawn
+          #   one excluded exactly as in ⓶ -- else this counts a retirement as a reworded loss.
+          len(claims_live) == len([q for q, _ in PAIRS if q not in _WITHDRAWN])
+          and verbatim_pre == [])
     check('⓷ᵇ ⛔ and the similarity check that used to sit here is GONE rather than re-tuned: three '
           'metrics were tried and all three failed a control -- a sliding character ratio could not '
           'separate sentences that are not in the corpus at all (0.51) from ones that are (0.52).  '
@@ -228,10 +258,22 @@ def main():
           'threshold to a conclusion, which is what the first form already was.*',
           _removed_for_real())
 
-    check('⛔ AND THE MARGIN IS ONE WORD: P8 now reads "the deepest question THIS construction opens '
-          'onto"; the receipt quotes "...THE construction..."',
-          'deepest question this construction opens onto' in RECV
-          and 'deepest question the construction opens onto' not in RECV)
+    # ⛭ AMENDED r6509.  ** This check's object is GONE FROM THE CORPUS, not reworded again. **
+    #   *It recorded that P8 read "THIS construction" where the receipt quoted "THE construction" --
+    #   a one-word margin, and the point was how fine the difference a string probe turns on.*
+    #   `r6423` removed the sentence entirely when it rewrote `sec:open` to the worked claim.
+    #   ⇒ ** The finding is kept because it is still true of the receipt's own quotation, and
+    #      because a one-word margin is the whole reason this file exists; what is asserted is
+    #      that the receipt still carries the quoted form and the corpus no longer carries either. **
+    check('⛔ AND THE MARGIN WAS ONE WORD -- P8 read "the deepest question THIS construction opens '
+          'onto" where this receipt quotes "...THE construction...".  *r6423 has since removed the '
+          'sentence altogether, so neither form is in the corpus: the margin is recorded, not live.*',
+          # ⌗ the quoted form lives in THIS FILE, not in RECV -- RECV is the receiving papers,
+          #   and asking it for the receipt's own quotation was this amendment's first error.
+          'deepest question the construction opens onto'
+          in open(os.path.abspath(__file__), encoding='utf-8', errors='replace').read()
+          and 'deepest question this construction opens onto' not in BODY
+          and 'deepest question the construction opens onto' not in BODY)
 
     # ⓸ the old probe, and why it returned zero
     verbatim = [q for q, _ in PAIRS if q in RECV]
@@ -242,7 +284,7 @@ def main():
           'specific to what was being done: a RE-PINNING sweep is the operation that updates '
           'quotations, so a sentence-level measurement taken during one measures the thing the sweep '
           'exists to change',
-          len(verbatim) == 0 and len(alive) == len(PAIRS) + len(EXTRA))
+          len(verbatim) == 0 and len(alive) == _total)
 
     # ⓹ and W1 now carries the corrected measurement
     w1 = open(os.path.join(ROOT, 'receipts', 'L207_the_bend',
