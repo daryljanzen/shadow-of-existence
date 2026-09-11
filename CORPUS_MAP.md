@@ -146,6 +146,39 @@ sources: [cowork, chat]
 
 
 
+### Revision r6491 — 2026-09-09 (node 64). **The boundary located: what the geometry supplies and what it marks external are separated by whether the breaking is ITSELF symmetric — one fact, joining three statements never read together.**
+
+**⌗ THE TENSION THAT MADE IT WORTH READING.** *`r6489` found the geometry **does** supply a breaking --- the
+three-plane. But `P14` also says of the family symmetry: ***"what this sector supplies is the SYMMETRY, not
+the BREAKING"***, the $S_3$ arriving from the substrate's geometry while "the breaking that generates the
+observed masses and mixings remains **external** to it, in the same place as the gauge representations".
+**Both are true, so there are two kinds of breaking, and the corpus distinguishes them without ever saying so
+in one place.***
+
+**⛭⛭ THE DISTINCTION IS THE CRITERION ITSELF.** *The three-plane configuration is **itself symmetric** ---
+nothing to choose, no modulus. A mass hierarchy must **distinguish** the three planes to produce one, so it is
+**not** itself symmetric and carries exactly the free parameter Rule 2 rejects. ⇒ ***The boundary between what
+the geometry supplies and what it marks external coincides with whether the breaking is itself symmetric. One
+fact, not two --- and it says why the COUNT is forced while the MASSES are not.*** ⌗ *A symmetric breaking is
+a configuration; a hierarchy is a choice of which member is heaviest. The first has a symmetric point; the
+second is the statement that there is none.*
+
+**⌗ AND `p0`'s FREE-DATA BUDGET IS NAMED, AND HAS ALREADY SHRUNK ONCE.** *"the theory's entire free-data
+budget --- the one measured $\rho_r/\rho_m$ and the fermion sector's own content --- is carried by the matter,
+so **matter is the residue maximal symmetry leaves ... in free data**." ***The count, the chirality and the
+family symmetry passed from free data to forced structure when `P14` built them***, leaving the mass spectrum
+and the gauge representations. ⇒ **So `PO-30` is, in the corpus's own accounting, whether the remaining
+entries can be converted as the first ones were.**
+
+⚠ **AND NOTHING HERE CLOSES IT, BECAUSE `P14` BOUNDS ITS OWN MARKING.** *The `P13` constraint is "informative
+rather than prohibitive": it ***"does not say that a geometric route to the representation content is
+impossible"***, only that the connected-isometry route is closed; with the measured ratios "the two bound the
+search from opposite sides", and ***"we claim no construction here"***. **A mechanism outside that route is
+not excluded.**
+
+⌗ *The receipt now reads `P14` at run time rather than asserting its wording, so the clause fails if the
+paper's bounding sentence ever goes. `P08` 24pp, zero undefined; twelve gates green.*
+
 ### Revision r6489 — 2026-09-09 (node 64). **Asked properly: what actually breaks the symmetry in the cases already built — and the construction turns out to generate content already.**
 
 **⌗ THE MECHANISM, READ OFF `P14`'s OWN FORCING ARGUMENT.** *Two constructions are available: one plane on a
