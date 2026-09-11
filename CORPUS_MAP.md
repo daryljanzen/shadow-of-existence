@@ -146,6 +146,87 @@ sources: [cowork, chat]
 
 
 
+### Revision r6510 — 2026-09-11 (node 60). **The warped harmonic problem on the rotating Nariai throat, and the proxy was telling the truth — but the reason is structural, not numerical.**
+
+**⌗ THE JOB (64, `r6499`).** *`r6497` showed `prop:throat` is a $J=0$ construction; `r6499` computed
+$\lambda$ on the rotating family and found it rising with $a$ — **but read at the POLE**, warning
+that the near-horizon sphere is warped through $r_N^{2}+a^{2}\cos^{2}\theta$, so one ratio may not
+describe it and $\ell$ may not be a good label. This is the genuine problem on that warped sphere.*
+
+**⛭ THE NEAR-HORIZON LIMIT, TAKEN RATHER THAN POSITED, IS A WARPED PRODUCT AND NOT A DIRECT ONE.**
+*Scaling $r=r_0+\epsilon y$, $t=\tau/\epsilon$, $\phi=\varphi+\Omega t$ at the double root and
+letting $\epsilon\to0$: $\rho_0^{2}=r_0^{2}+a^{2}\cos^{2}\theta$ multiplies the $\dS_2$ and
+polar directions alike, and the $\dS_2$ is **fibred** over the sphere by
+$\tilde k=2r_0a\Xi/(r_0^{2}+a^{2})$, non-zero at every rotating member.* **Verified coefficient by
+coefficient as an identity in $\theta$ and $y$ at exact members of the locus — to $10^{-172}$ — with
+the $\tau$ rescaling coming out exactly $1/(r_0^{2}+a^{2})$ and no stray cross terms.** *At $a=0$ it
+collapses to $\dS_2\times S^{2}$ with both radii $\alpha/\sqrt3$: `prop:throat` recovered, which
+is what says the parametrisation is right.*
+
+*** ⛭ AND THE ROW'S OWN WORRY IS ANSWERED BY THE STRUCTURE RATHER THAN BY THE NUMBERS. ***  *A
+massless scalar separates on the warped geometry — the warp cancels from the relation between the
+transverse eigenvalue and the $\dS_2$ operator, because it multiplies both. **And for the
+axisymmetric modes it cancels altogether**: $W\propto\sin\theta$ and
+$P\propto\Delta_\theta\sin\theta$ EXACTLY, so the $m=0$ problem is
+$(\Delta_\theta\sin\theta\,Y')'+E\sin\theta\,Y=0$ — **a spheroidal deformation of Legendre in
+which $\rho_0$ never appears at all.*** ⇒ *The harmonic label survives the warping rather than being
+spoiled by it, and $\rho_0$ — the thing that made $\ell$ look like a bad label — enters only at
+$m\neq0$.*
+
+**⛭ THE VERDICT IS EXACT, NOT SCANNED.** *The decay condition generalises to
+$\nu^{2}=\tfrac14-L^{2}E-L^{4}m^{2}\tilde k^{2}$, the last term the rotation's own fibration,
+**non-negative** — so rotation can only push modes deeper into the principal series. Two closed-form
+bounds then settle the family:*
+  · *$L^{2}-1=-(3u-1)(u+2)/(3u^{2}+6u-1)$ with $u=r_0^{2}/\alpha^{2}$; on the physical branch the
+    denominator is positive, $(u+2)>0$ and $(3u-1)\le0$, so **$L^{2}\ge1$**;*
+  · *$\Delta_\theta\ge1$ pointwise, so the $m=0$ Rayleigh quotient dominates the $a=0$ one term by
+    term and **$E_1\ge2$** — each with equality **only at $a=0$**.*
+
+  ⇒ *** $L^{2}E_1\ge2$ against the threshold $\tfrac14$: a factor of EIGHT, across the whole family
+    $0\le a<a_{\max}$, and attained where the rotation VANISHES.  Every mode above the monopole is
+    principal-series, and the MARGINAL member is the non-rotating one — rotation strictly improves
+    the case rather than threatening it. ***
+
+*The monopole keeps $\nu^{2}=\tfrac14$ exactly on the warped sphere too, asserted structurally as
+well as numerically: the $m=0$ flux operator annihilates constants, so $E_0=0$ is an eigenvalue by
+construction and not a fitted zero.*
+
+**⌗ THE FOUR TRAPS THE ORDER NAMED, EACH CHECKED RATHER THAN AVOIDED BY LUCK.** *T1 two branches —
+every sample asserted on $r_0\in(r_*,\alpha/\sqrt3]$ with $3r_0^{4}+6r_0^{2}-1>0$, so none crosses
+the pole where $L^{2}$ changes sign. T2 $r_*$ is exactly where $\Delta_r''=0$ and $L^{2}$ diverges —
+approached to $10^{-6}$, never evaluated at. T3 $\Delta_r(a{=}0)=r^{2}f$, **not** $rf$, asserted
+symbolically. T4 $a^{2}$ formed directly from the locus, never as a difference of comparable terms.*
+
+⌗ ***AND THE CALIBRATION FIRED, WHICH IS WHY IT IS THERE.*** *The transverse solver was required to
+return Legendre $l(l+1)$ at $a=0$ across $m=0..4$ before any warped zero was believed — and the first
+draft failed it at $m\ge1$ by a factor of $\sim1/h$, because the cell width had been dropped from
+the $m^{2}$ potential term. **A detector that had not been shown to reproduce a known spectrum would
+have reported warped eigenvalues that were wrong by three orders of magnitude and looked fine.***
+
+⛔ ***AND ONE CHECK MEASURED THE WRONG QUANTITY, AGAINST THIS LINE.*** *The monopole test asserted
+$|0.25-L^{2}E_0|<10^{-6}$ — which is $|\nu^{2}|$, **not** the deviation of $\nu^{2}$ from
+$\tfrac14$. It failed at $2.5\times10^{-1}$, i.e. at exactly the value it was meant to be
+confirming. *The deviation is $|L^{2}E_0|$; a test can be arithmetically sound and still be about the
+wrong number.**
+
+⛭ ***AND TWO TRUNK-SIDE REPAIRS IN PASSING, BOTH VERIFIED RED ON A CLEAN `main` WORKTREE FIRST.***
+*`check_receipt_tex_scope` is red on the trunk over `L221/B61`, which globs `corpus/*.tex` without
+excluding the GENERATED appendices --- and those carry every receipt's own claim text, so an
+ABSENCE check over them measures the INDEX as well as the papers and a receipt can find its own row.
+The gate prescribes the remedy in its own words ("skip any basename starting `appendix_receipts`, as
+30 receipts already do"), so the fix is transcribed rather than judged.* ⌗ **And MEASURED before
+applying, not assumed: `B61` exits 0 on `main` both with and without the line, so its verdict is
+unchanged and only its scope is corrected.** *`PO-31`'s frontier runway was written forward in prose
+rather than stamp-bumped, per `r6473`'s rule.*
+
+**⌗ SCOPE, STATED AS CAREFULLY AS THE RESULT.** *This is a massless **scalar** on the near-horizon
+geometry — the same proxy `r6497`'s $\nu^{2}=\tfrac14-\lambda\ell(\ell+1)$ is built on — so it
+does not decompose gravitational perturbations into axial and polar. **It is about whether the
+DAMPING MECHANISM reaches these modes; it is NOT about whether $J$ survives the leg**, which a
+charge carried off by matter or torqued could still decide, and `r6495`'s separation of $J$ from the
+propagating tower is untouched. And the near-horizon geometry is the throat's exact limit, not the
+collapse leg's history: this speaks to the fixed point, not to the approach to it.*
+
 ### Revision r6509 — 2026-09-09 (node 64). **Two more, with one repair — and one of them is the receipt whose entire subject is the distinction it could not draw for itself.**
 
 **⌗ `L561/C1` AND `L258/M1` ARE ONE DEFECT.** *`M1`'s only failure was "`C1` exits 1" --- ***purely
