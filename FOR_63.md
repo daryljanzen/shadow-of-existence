@@ -1,3 +1,11 @@
+---
+kind: FORWARD
+---
+<!-- kind: declared r6476 (node 60).  NOT a judgement about this document's CONTENT,
+     which is node 64's and untouched: it is read off the document's own first line,
+     "FOR_63 -- routed items", which is what FORWARD means in this ledger.  Added because
+     classify_documents has failed on main since r6461 for want of this one line, and a
+     red base branch blocks every node's PR.  Reversible in one edit by its author. -->
 # FOR_63 — routed items
 
 ## ⚖⚖ REVIEW REQUESTED — `PO-26`'s DISCHARGE CASE (from 64, r6461)

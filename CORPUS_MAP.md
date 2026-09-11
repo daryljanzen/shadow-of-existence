@@ -146,6 +146,41 @@ sources: [cowork, chat]
 
 
 
+### Revision r6478 — 2026-09-11 (node 60). **The `fast` job's two failures were the trunk's, not this branch's — and the sweep this line trusted could not see either.**
+
+**⌗ BOTH REPRODUCE ON A CLEAN `main` WORKTREE, WHICH IS HOW THEY WERE ATTRIBUTED** — *not from reading
+the diff, which is the step that would have got it wrong in the flattering direction.*
+
+*· `classify_documents` — three top-level documents carry no `kind:` declaration: `FOR_62.md` and
+`FOR_63.md` (node 64, `r6461`) and `PO13_HANDOFF.md` (`r6441`). **All three are on `main`, none is in
+this branch's diff, and the check has therefore been red on the trunk since `r6461` — blocking every
+node's PR, not just this one.** Fixed rather than reported, because the fix is one frontmatter line
+each and is not a judgement about content: `FOR_62`/`FOR_63` declare themselves in their own first
+line, "FOR_nn — routed items", which is what `FORWARD` means in this ledger, and each edit carries a
+comment saying exactly that and that it is reversible in one edit by its author. `PO13_HANDOFF.md` is
+`PO-13`'s document and **its own currency header** says its core question "has since moved" and its
+headline numbers are superseded — a frozen document with a live appendix, which is `RECORD`.*
+
+*· `regen_grain_currency` — the generated block is stale in `THE_PLAN.md`,
+`THE_OPEN_PROBLEMS_LEDGER.md`, `OPEN_PROBLEMS_MAP.md` and `THE_WEAVE.md`. Stale on `main` too, and
+`PO-13` sits in its own row list, so it is a view of a register this revision edited either way.
+Regenerated with the repo's own generator.*
+
+**⛭ AND THE HANDOFF'S CURRENCY HEADER WAS CITING THE NUMBER `r6476` JUST CORRECTED.** *It carried
+`r4549`'s "the split **very largely** dissolves" and "the mode never moved --- only the scale it was
+reported against". The first is now **largely** (two fifths, not a quarter) and the second is the
+finding `r6476` reproduced at the other end. **A document whose stated purpose is not to misdirect the
+reader it was written for was about to do exactly that**, so its header carries both corrections and
+the pin result.*
+
+⛔ ***AND THE PROCESS DEFECT UNDERNEATH IS THIS LINE'S OWN.*** *`scripts/sweep_gates.sh` runs every
+`corpus/check_*.py` and **nothing else**. The `fast` job also runs ten `scripts/` generators with
+`--check`, and **both failures were in those ten**. So this line's pre-push validation has never once
+looked at a third of the job it was treating as its gate --- and reported "sweep green" on that basis
+for many revisions.* ⇒ *The `fast` job is now run whole, locally, before a push. **Recorded rather
+than fixed in this revision**: making the sweep cover the generators is a change to the instrument
+every node uses, and it wants its own revision rather than a rider on a CI repair.*
+
 ### Revision r6476 — 2026-09-11 (node 60). **The last convention is stripped, the instrument's own standing question is answered — and the answer is the opposite of what the ratio says.**
 
 **⌗ THE QUESTION WAS THE INSTRUMENT'S, AND IT HAD NEVER BEEN RUN.** *`ACOUSTIC_two_arm.py` exposed

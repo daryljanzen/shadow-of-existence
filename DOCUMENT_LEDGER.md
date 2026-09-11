@@ -22,6 +22,7 @@ sources: [chat]
 | **REFERENCE** | 26 |
 | **FORWARD** | 15 |
 | **RECORD** | 94 |
+| **UNCLASSIFIED** | 3 |
 
 ## ⌗ DECLARED CLASSES
 
@@ -263,6 +264,9 @@ sources: [chat]
 | `gate_session_notes_r896_spinup.md` | RECORD | frozen record | — | — |  |
 | `gate_session_notes_session.md` | RECORD | frozen record | — | — |  |
 | `lapse_shift_synchrony_reconciliation.md` | RETIRED | the fork's retired working note, carried at top level and in retired/ both; this line neither owns nor maintains it | — | — |  |
+| `FOR_62.md` | UNCLASSIFIED |  | — | — |  |
+| `FOR_63.md` | UNCLASSIFIED |  | — | — |  |
+| `PO13_HANDOFF.md` | UNCLASSIFIED |  | — | — |  |
 | `THE_CLOSURE_PLAN.md` | PLAN | (declared in frontmatter) | — | c54.207 |  |
 | `THE_DISPATCH.md` | PLAN | (declared in frontmatter) | — | c54.207 |  |
 | `THE_FIELD_BAKE_PLAN.md` | PLAN | The plan for OWED 622's field bakes — the measured standard a bake must meet, the queue in order, the per-bake protocol, and the condition under which 622 may be struck. Written after r3437 threw a bake thinner than the corpus's own standard. | — | c54.226 |  |
@@ -280,7 +284,7 @@ sources: [chat]
 | `OPEN_PROBLEMS_MAP.md` | MAP | the coherent view of the open set — what stands in the way of each step, and which items are adjacent | — | — |  |
 | `PROBABILITY_LEDGER.md` | FIELD-BAKE | The probability and stochastic-processes field-bake ledger — the sixth and last. It bounced completely, and the bounce is measured rather than asserted. | — | — |  |
 | `RUNNING_THE_LEDGER_PASS.md` | INSTRUMENT | How to work corpus/open_ledger.txt one row at a time -- the method, the failure modes it was built against, and what each turn must produce. | — | — |  |
-| `SYNTHESIS_HARVEST.md` | WORKING | The harvest the synthesis paper is written from — every substantive result of the corpus, at its own register, with its home, its anchor, its joins, and what it is NOT operative for. Read WHILE BUILDING OR UPDATING THE SYNTHESIS, and when working a frontier item that needs to know everything the corpus already holds about it. | — | — |  |
+| `SYNTHESIS_HARVEST.md` | WORKING | The harvest the synthesis paper is written from — every substantive result of the corpus, at its own register, with its home, its anchor, its joins, and what it is NOT operative for. Read WHILE BUILDING OR UPDATING THE SYNTHESIS, and when working a frontier item that needs to know everything the corpus already holds about it. | — | c54.31 |  |
 
 > **⚠ THE LAG COLUMN IS A LOOK-SIGNAL, NOT A VERDICT.** *It reads the newest fork revision the file mentions, which any mention satisfies — a document can be made to look current by writing ABOUT the fork. **`declared current` is the honest column**, set only by the pass that actually brings a file current. And a forward document is ahead of the corpus by construction: "stale" is a word for the corpus, never for the instrument examining it.*
 

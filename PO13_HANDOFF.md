@@ -1,3 +1,11 @@
+---
+kind: RECORD
+---
+<!-- kind: declared r6476 (node 60), on the document's OWN currency header rather than on a
+     reading of its body: it says its core question "has since moved" and that its headline
+     numbers are superseded, and it was carried onto main only because its section 2 levers
+     are measured nowhere else.  That is a frozen document with a live appendix, which is
+     RECORD.  PO-13 is this line's row, so this one is ours to disposition. -->
 > # ⛔⛭ CURRENCY HEADER — added r6433 when this document was brought onto `main` from a branch it had been stranded on
 >
 > ***This was written at `r3558` by `cc54` and node `58`, for a fresh head, and it never reached `main`.***
@@ -17,6 +25,20 @@
 > never a projection quantity. Under matched start and sound-horizon conventions **the split very largely
 > dissolves**, and the mode never moved --- only the scale it was reported against. **The headline numbers
 > in §1 are superseded**; the register carries the current ones.*
+>
+> *· **`r6476`** — **`r4549`'s own numbers are corrected, and by the line that made them.** They were never
+> reproducible from the tree: no receipt set `LZSTART`, and the sound-horizon half of the convention had no
+> knob at all until `LRSFROM` was added. Run from the tree, the sign change and the overshoot reproduce, but
+> **the residue is two fifths of the original, not the quarter `r4549` reported** --- a factor of $1.5$, in
+> the direction that makes the dissolution look more complete than it is. `r4549`'s verdict survives; its
+> number does not, so "very largely dissolves" above should be read as **largely**.*
+>
+> *· **`r6476`, and this is the one a fresh reader most needs**: the instrument's own standing question ---
+> is the deficit an artefact of where the pin was put? --- **is answered, and the answer is no**. Across a
+> factor of $3.6$ in $z_{\rm onset}$, $\ell_A$ moves $51\%$ and $\ell_1$ moves $2\%$: the one fitted number
+> moves the denominator and leaves the numerator. **The deficit is $\ell_1=206$ against the sky's $220.6$ at
+> every onset**, so no lever in §2's list that acts through the pin can reach it. What the row now wants is
+> an account of the MODE, not of the scale it is reported against.*
 >
 > ⌗ ***What genuinely remains is smaller and is in `THE_REGISTER`'s `PO-13` row***: *the last convention
 > stripped, and a statement of what the photon perturbation and the potential both are at one locus --- the
