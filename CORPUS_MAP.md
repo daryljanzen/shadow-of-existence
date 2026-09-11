@@ -146,6 +146,56 @@ sources: [cowork, chat]
 
 
 
+### Revision r6480 — 2026-09-11 (node 60). **What the runner was hiding: ten receipts have been failing on the trunk, and every heavy-job run reported them green.**
+
+**⌗ THIS IS `r6476`'s DISCARD DEFECT PAYING OUT.** *With `Cache.put` no longer throwing every result
+away, the suite reports real numbers for the first time — and they are not the numbers the trunk has
+been carrying. **725 pass, 10 fail, 0 over timeout, 735 measured against tree `aa3b3729e5b9679a` in 1847s** --- against the `714 pass, 0 fail` the trunk has been carrying, and against the `0 pass, 0 fail` every unresumed invocation printed.*
+
+*And the attribution was CONFIRMED rather than argued: the run BEFORE the branch was rebuilt read `723 pass, 12 fail`, the one after reads `725 pass, 10 fail`, and **the ten that remain are the ten named below, to the file.** Two moved, and they were the two this branch owned.*
+
+**⛭ EACH ONE RUN AGAINST A CLEAN `origin/main` WORKTREE, WHICH IS HOW THEY WERE ATTRIBUTED.** *Not
+from reading the diff — the step that would have got it wrong in the flattering direction, and the
+step this line got wrong about `r4549` in the same session.*
+
+*Ten fail on `main` too, and are **not** this branch's:*
+
+    L207_the_bend/W1_what_remains_between_the_wall_and_a_curve_dynamics
+    L221_the_bridge/B61_the_walls_do_not_cover_the_spectral_route
+    L257_the_label_did_double_duty/V1_a_strike_that_reads_as_done_and_a_paper_that_says_otherwise
+    L258_the_pin_and_the_thing_that_moves/M1_five_checks_pinned_to_things_that_move...
+    L263_the_station_audit/S1_three_of_eight_stations_are_already_held...
+    L268_broken_by_its_own_edit/O1_a_receipt_that_asserts_a_state_its_own_revision_changes...
+    L273_the_cartan_bake/C1_the_weyl_closure_is_generic_to_cubics_and_the_match_is_D3_alone
+    L560_pins_into_moving_prose/P1_the_last_five_failures_were_pins_into_prose_that_later...
+    L561_the_probe_was_the_defect/C1_item_45_answered_against_myself_the_rehoming_lost_nothing
+    L_probability/R1_the_whole_footprint_is_three_geometry_words
+
+⚠ ***AND THE NAMES ARE THE DIAGNOSIS.*** *"pins into moving prose", "a strike that reads as done and a
+paper that says otherwise", "a receipt that asserts a state its own revision changes is false when
+committed" — **these are the self-invalidating class, the one this line has now hit five times**, and
+they are failing because later correct work moved the prose they pin. That is the class working as
+designed and then not being read.*
+
+**⛔ THE TWO THAT WERE THIS BRANCH'S WERE ONE DEFECT, AND IT WAS THE MERGE.** *`L251/N1` detected the
+duplicate `r6436` directly; `L261/A1` fails because its `⓷ᵇ` requires `N1` to exit $0$. **So the
+collision had two independent detectors — the CI gate and a receipt — and the receipt could only
+speak once the runner stopped discarding its verdict.** Both green after the branch was rebuilt
+linearly on the trunk.*
+
+⌗ ***AND THE TREE DIGEST CANNOT SEE WHAT BROKE THEM***, which is worth writing down: the digest is
+over `corpus/*.tex`, `receipts/**/*.py` and `computations/**/*.py`. **`N1` reads GIT HISTORY.** So the
+tree was byte-identical either side of the rebuild while `N1`'s verdict flipped — *a cached run can be
+stale in a way the digest is constitutionally unable to detect.* Reported, not fixed.
+
+**⌗ THE PIN DEBT IS LEFT ROSE AND SAID TO BE.** *`check_receipts_run` refuses this result — "the pin
+debt ROSE from 0 to N ... repair the receipt, do not edit the number" — and **that verdict is correct
+and the baseline is not touched.** Ten of the repairs are trunk receipts outside this order's scope,
+so they are named here to be scheduled rather than silently absorbed. **The debt did not rise today;
+it rose over the revisions since the last `--resume` run banked `714 pass, 0 fail`, and nothing could
+see it.** That gate runs only in the heavy job, so it does not redden a PR — stated carefully, this
+line having had that wiring backwards at `r4558`.*
+
 ### Revision r6478 — 2026-09-11 (node 60). **The `fast` job's two failures were the trunk's, not this branch's — and the sweep this line trusted could not see either.**
 
 **⌗ BOTH REPRODUCE ON A CLEAN `main` WORKTREE, WHICH IS HOW THEY WERE ATTRIBUTED** — *not from reading

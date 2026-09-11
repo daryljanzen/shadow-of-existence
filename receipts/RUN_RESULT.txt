@@ -1,15 +1,36 @@
 
-  RUN-ALL-RECEIPTS -- 714 registered receipt(s), 4 at a time, 600s each, each from ITS OWN DIRECTORY
+  RUN-ALL-RECEIPTS -- 735 registered receipt(s), 4 at a time, 600s each, each from ITS OWN DIRECTORY
   DECLARED LONG: C59_the_control_reproduces_camb_and_the_height_defect_was_k_truncation.py runs on 1800s, not 600s -- named, with its measured cost in the source
   DECLARED LONG: C63_no_single_source_term_carries_the_undriven_split_and_the_first_probe_read_an_unwired_knob.py runs on 900s, not 600s -- named, with its measured cost in the source
-  TREE-DIGEST: 1befb89dc3dde677
+  DECLARED LONG: P15_the_one_fitted_number_moves_the_scale_and_not_the_peak.py runs on 1500s, not 600s -- named, with its measured cost in the source
+  DECLARED LONG: P15_the_symmetric_comparison_was_never_runnable_and_the_quarter_was_two_fifths.py runs on 900s, not 600s -- named, with its measured cost in the source
+  TREE-DIGEST: aa3b3729e5b9679a
 
-  RESUME: 714 result(s) reused from /tmp/claude-0/-home-user-shadow-of-existence/3f654921-f94d-5e03-8dca-e6e4ffe98045/scratchpad/u_main.json,/tmp/claude-0/-home-user-shadow-of-existence/3f654921-f94d-5e03-8dca-e6e4ffe98045/scratchpad/u_c59.json, 0 left to run
+  RESUME: 0 result(s) reused from /tmp/claude-0/-home-user-shadow-of-existence/3f654921-f94d-5e03-8dca-e6e4ffe98045/scratchpad/suite_cache.json, 735 left to run
 
+    [FAIL] receipts/L207_the_bend/W1_what_remains_between_the_wall_and_a_curve_dynamics.py  (1s)
+               OK    ⇒ᵃ AT ed68babf (c54.228, where this arithmetic was taken) the corpus was READ (2,176,404 characters) and 0 of 6 survived as exact sentences -- the zero, pinned where it was true /     FAIL  ⇒ AND THE ARITHMETIC OF THE OLD PROBE, KEPT SO THE ERROR IS LEGIBLE: 0 of 6 of the same claims survi
+    [FAIL] receipts/L221_the_bridge/B61_the_walls_do_not_cover_the_spectral_route.py  (0s)
+               FAIL  ⇒ and the spectral route uses NO isometry -- inner fluctuations $D\to D+A$ come from the ALGEBRA, so ** the premise the paper says carries the theorem fails for it ** /     OK    ⓷ while the paper's escape clause does not classify it: "with the known escapes all abandoning the geometric pr
+    [FAIL] receipts/L257_the_label_did_double_duty/V1_a_strike_that_reads_as_done_and_a_paper_that_says_otherwise.py  (2s)
+               OK    ⓹ᶜ and no .tex file was touched by THIS revision (74555e6d..ae749cb6) -- the reading was written in the ledger, not in the papers /   1 check(s) FAILED /     - ⓹ᵇ ⌗ 4 WARN(s) remain -- entries naming sentences no longer in any paper.  This file recorded SIX and routed them rather than rebu
+    [FAIL] receipts/L258_the_pin_and_the_thing_that_moves/M1_five_checks_pinned_to_things_that_move_and_one_that_no_control_could_separate.py  (4s)
+               - ⓸ W1 exits 1 /     - ⓸ P1 exits 1 /     - ⓸ C1 exits 1
+    [FAIL] receipts/L263_the_station_audit/S1_three_of_eight_stations_are_already_held_and_one_was_noticed_and_not_propagated.py  (1s)
+               OK    ⓸ᵈ and `permutation representation` ×1 reads as an opening and is P14 citing the discrete-flavour literature, not an index statement /   1 check(s) FAILED /     - ⓸ᶜ and it earned itself on this very audit: `equivariant index` ×7 reads as a hole in the theatre's prose and is P13 using the 
+    [FAIL] receipts/L268_broken_by_its_own_edit/O1_a_receipt_that_asserts_a_state_its_own_revision_changes_is_false_when_committed.py  (1s)
+               OK    ⓸ᵈ ⌗ and nothing about the FINDING moved: the checks that establish the three held stations read the PAPERS, which this revision does not touch /   1 check(s) FAILED /     - ⓸ᶜ and L-263/S1 exits 1
+    [FAIL] receipts/L273_the_cartan_bake/C1_the_weyl_closure_is_generic_to_cubics_and_the_match_is_D3_alone.py  (158s)
+               OK    ⓺ᶜ ⚠ and the missing theorem is the load-bearing one: Ambrose--Singer is what makes a FLAT connection have discrete holonomy, which is what licenses reading monodromy AS holonomy -- the step every computation in this receipt relies on /   1 check(s) FAILED /     - ⓺ᵃ¹ ⛭ and 6 of the 8 are 
+    [FAIL] receipts/L560_pins_into_moving_prose/P1_the_last_five_failures_were_pins_into_prose_that_later_correct_work_moved.py  (1s)
+               OK    ⚠ at 50f0d3f (c54.226) this file did NOT read whether the CONTENT survives under other words: W1 stated the count and said so in terms, routed rather than interpreted /     OK    ⛭ AND c54.228 (`L-561`) ANSWERED IT -- against this fork: the probe compared STRINGS where the question was abo
+    [FAIL] receipts/L561_the_probe_was_the_defect/C1_item_45_answered_against_myself_the_rehoming_lost_nothing.py  (1s)
+               FAIL  ⇒ SO A CHECK CAN BE SOUND AND STILL VERIFY THE WRONG OBJECT -- and the failure mode is specific to what was being done: a RE-PINNING sweep is the operation that updates quotations, so a sentence-level measurement taken during one measures the thing the sweep exists to change /     OK    ⓹ 
+    [FAIL] receipts/L_probability/R1_the_whole_footprint_is_three_geometry_words.py  (1s)
+           ============================================================================== /   VERDICT: 1 CHECK(S) FAILED /     the control word is found, and P15 carries twenty-three (26 before r4111's restatement)
 
-  714 pass, 0 fail, 0 over timeout, in 1795s wall
-  ⌗ ASSEMBLED ACROSS 3 INVOCATION(S) AT THIS DIGEST, 2 OF WHICH MEASURED ANYTHING: 714 result(s) reused, 0 measured here.  Every receipt ran exactly once against tree 1befb89dc3dde677, and the cache is discarded whole the moment that digest changes.  The wall figure is the SUM of the invocations, not a single elapsed clock -- and it is a UNION over invocation ids, so re-assembling adds only the seconds that re-assembly itself costs (r4554: it used to add another invocation's minutes).
-  slowest that passed: C59_the_control_reproduces_camb_and_the_height_defect_was_k_truncation.py 1142s, C63_no_single_source_term_carries_the_undriven_split_and_the_first_probe_read_an_unwired_knob.py 378s, P15_the_driving_is_bought_by_decay_during_oscillation.py 197s, C1_the_weyl_closure_is_generic_to_cubics_and_the_match_is_D3_alone.py 129s, H1_the_low_multipole_deficit_is_two_effects_and_the_ladder_imprint_dies_where_the_transfer_is_narrow.py 111s
+  725 pass, 10 fail, 0 over timeout, in 1847s wall
+  ⌗ ASSEMBLED ACROSS 1 INVOCATION(S) AT THIS DIGEST, 1 OF WHICH MEASURED ANYTHING: 0 result(s) reused, 735 measured here.  Every receipt ran exactly once against tree aa3b3729e5b9679a, and the cache is discarded whole the moment that digest changes.  The wall figure is the SUM of the invocations, not a single elapsed clock -- and it is a UNION over invocation ids, so re-assembling adds only the seconds that re-assembly itself costs (r4554: it used to add another invocation's minutes).
+  slowest that passed: C59_the_control_reproduces_camb_and_the_height_defect_was_k_truncation.py 1166s, P15_the_one_fitted_number_moves_the_scale_and_not_the_peak.py 768s, P15_the_symmetric_comparison_was_never_runnable_and_the_quarter_was_two_fifths.py 436s, C63_no_single_source_term_carries_the_undriven_split_and_the_first_probe_read_an_unwired_knob.py 382s, P15_the_driving_is_bought_by_decay_during_oscillation.py 218s
 
-  Every registered receipt runs, in place, and exits 0 -- so every assertion in the
-  reproducibility layer was actually evaluated.
+  ⛔ A REGISTERED RECEIPT THAT DOES NOT RUN WHERE IT IS REGISTERED IS NOT A RECEIPT.
