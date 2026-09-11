@@ -49,7 +49,11 @@ REGISTRY = [
     # untouched.  It may not do so BARE.
     ("the-compact-face-sector-is-vector-like",
      r'(?:sector|spectrum)\s+(?:there\s+)?(?:is|being)\s+(?:therefore\s+)?vector-like'
-     r'|render(?:ing|s)? the geometric fermion sector vector-like'
+     # ** r6465: WIDENED.  The first pattern was written against P13's wording, "the
+     # GEOMETRIC fermion sector", and p0 says "a COMPACT-FACE fermion sector" -- so the
+     # withdrawn claim sat bare in p0 and this gate reported the tree clean.  A registry
+     # keyed to one paper's phrasing is a registry that checks one paper. **
+     r'|render(?:ing|s)?\s+(?:the|a)\s+[\w-]*\s*fermion sector\s*vector-like'
      r'|makes the spectrum vector-like',
      r'(?:empty|no zero modes|odd-dimensional|even dimension|five-sphere|Lichnerowicz'
      r'|vacuous|withdraw|superseded|struck r\d+|the even-dimensional case)',

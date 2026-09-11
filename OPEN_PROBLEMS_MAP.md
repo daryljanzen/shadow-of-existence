@@ -64,9 +64,7 @@ claim it bears on is a proof rather than a coherent proposition.*
   deepest open question the construction raises, and narrows it in its own words — the confined case is
   exhibited, the radiative boundary is the range paper's wall, and beyond it the framework leaves general
   relativity unchanged.
-- **`PO-26` — the compact-face fermion sector.** A spinor sector *is* built on the discrete component and
-  delivers the count, the chirality and the family symmetry. What is open is the sector on the compact face —
-  the one the index obstruction would act on — and it is unbuilt.
+- ~~**`PO-26` — the compact-face fermion sector.**~~ **STRUCK `r6463`, on two concurring referee reads.** *A spinor sector **is** built on the discrete component (`P14`) and supplies no equivariant index. The sector the obstruction acts on --- gauge-acted, isometry-realised, on the compact face --- **is now specified**: the face is the substrate on its other real form, so the relation is continuation not reduction, and a fermion there is a $\mathrm{Spin}(6)=\mathrm{SU}(4)$ object with colour a subgroup of that spin group. ***Two obstructions meet on it***: $\mathfrak{su}(3)$ admits no equivariant map to the cosmological $S^3$, so the cut destroys it; and the round face carries **no massless content** for it to act on. The discharge asked for *an obstruction shown*, not for one shown inescapable --- **a bar `P13` explicitly declines in its own voice**.
 - **`PO-31` — the progenitor spectrum.** `P15` calls this *the
   genuine frontier* as against its buildable debts, and the reason is structural: the peak is an erasure
   channel, so the progenitor's composition is destroyed and cannot be read backward from ours.

@@ -146,6 +146,32 @@ sources: [cowork, chat]
 
 
 
+### Revision r6465 — 2026-09-09 (node 64). **Closure-adjacency on `PO-26`'s strike — and it found the withdrawn claim sitting bare in `p0`, invisible to the gate I wrote for it.**
+
+**⌗ A STRIKE IS A CLOSURE, so `L-211` is owed before anything new.** *Three sites carried the struck item and
+all three are now current.*
+
+**⛭ `P13`'s `sec:open` said "TWO things stay genuinely open".** *One of them was this row. Rewritten to one
+state: **what such a construction is** was given above --- continuation between real forms, a
+$\mathrm{Spin}(6)=\mathrm{SU}(4)$ object with colour a subgroup of that spin group --- and ***on it two
+obstructions meet from different directions***, the no-equivariant-map one and the no-zero-modes one. **So
+the index question is not open on whether such a sector can be built**, but on the sector that *is* built
+being of the kind the obstruction cannot reach. ⌗ *The second item, empirical coherence as an independent
+ground, is untouched and remains.*
+
+**⛔ AND `p0` CARRIED THE WITHDRAWN CLAIM BARE --- "the Atiyah--Hirzebruch index rendering a compact-face
+fermion sector vector-like".** *Doubly wrong now: the index route **lapses on dimension** there, and what is
+shown is **no massless content**, not a vector-like spectrum. Replaced with what is actually established.*
+
+**⚠ AND MY OWN GATE COULD NOT SEE IT, WHICH IS THE FINDING WORTH KEEPING.** *`r6425` registered the
+withdrawal with known-positives taken from `P13`'s wording --- "rendering **the geometric** fermion sector
+vector-like". `p0` writes "**a compact-face** fermion sector". ⇒ ***A registry keyed to one paper's phrasing
+is a registry that checks one paper***, and it reported the tree clean while the claim stood in the corpus's
+own foundational paper. **Pattern widened; it fired on `p0` immediately and is clean after the repair.***
+
+⌗ *`OPEN_PROBLEMS_MAP`'s entry struck with the reasoning rather than a crossing-out. `p0` and `P13` compile
+at zero undefined; nine gates green.*
+
 ### Revision r6463 — 2026-09-09 (node 64). **`PO-26` STRUCK on two concurring referee reads — and all three of their corrections were against me, one of which makes the result stronger than I claimed.**
 
 **⚖ THE DECIDING POINT IS `63`'s, AND IT IS ABOUT THE CONDITION RATHER THAN THE PHYSICS.** *The discharge
