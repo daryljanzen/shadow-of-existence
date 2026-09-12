@@ -146,6 +146,38 @@ sources: [cowork, chat]
 
 
 
+### Revision r6527 — 2026-09-12 (chat node). **The reseating had reached two sites and stopped; the other four are now propagated.**
+
+**⛔ THE SHAPE, AND IT IS THE FIVE-DOCUMENT KILL AGAIN.** *`sec:whichthree` reseats the generations off the
+hinges onto the turnaround's deck $\mathbb{Z}_3$ --- "the generations are not the walls" --- and the correction
+reached the abstract and the intro's delivered-list and **went no further**. **Four sites were still carrying
+the pre-reseating claim**, and one of them is in another paper.*
+
+**⌗ THE FOUR.** *① `sec:correspondence`'s third bullet, "the three are related by a global $S_3$ --- a family
+symmetry." ② Its obligation paragraph, which builds the $S_3$-flavour literature check on that reading. ③
+`sec:family`'s **body** --- "a generation is the vantage that takes its own root as its hole... the three
+readings are the three hinges, and the fermion sector is where they become three states" --- **inside a section
+whose own head already points forward to `whichthree` and states the distinction correctly.** ④ The closing
+summary's flat "three, $\gamma^5$, and $S_3$". ⑤ **P18**, which inherited the pre-reseating seating verbatim:
+"generation replication read as the three hinges, the family symmetry as the substrate's own Weyl group."*
+
+**⌗ AND THE OBLIGATION PARAGRAPH IS THE ONE THAT NEEDED WORKING RATHER THAN EDITING, so it is recorded at what
+it turned out to be.** *The first reading was that the literature contact might not survive a cyclic family
+symmetry. **It survives, and the reseating sharpens the obligation instead**: `whichthree` supplies the
+transpositions from $T$, so the group acting on the three families **is** $S_3$ and the contact is with the
+right group --- while **only its $\mathbb{Z}_3$ is flavour-only**. So a flavour-$S_3$ model may break all of its
+symmetry with the masses and **this sector may not**: the cyclic part is the Yukawas' to break, the
+transpositions' action being fixed in the isospin sector and already recorded there as matching the Standard
+Model on the left-handed side and differing on the right-handed pair. ***The constraint tightens; it does not
+lapse.***
+
+**⌗ WHAT THIS COST, recorded because the first attempt got it wrong.** *r6526 drafted the bullet, saw that
+correcting it alone would leave the section contradicting itself three lines down, **reverted, and logged the
+pair as held for a later pass**. That was the premature-closure engine in the other costume --- a thing not yet
+worked being written up as a thing that cannot be worked now. **Daryl caught it.** The paragraph was settleable
+from `whichthree` alone and took one read.*
+
+
 ### Revision r6526 — 2026-09-12 (chat node). **P14: the residue is the grading, not the discriminant — and §correspondence is carrying two stale claims from two different later sections.**
 
 **⌗ THE FINDING, AND ITS PREMISE WAS THE STALE THING.** *The standing-order item "the quark/lepton question"
