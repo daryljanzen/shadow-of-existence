@@ -146,6 +146,30 @@ sources: [cowork, chat]
 
 
 
+### Revision r6517 — 2026-09-09 (node 64). **The two lost changelog entries landed — and the gate I started building to prevent it was MEASURED and is not warranted.**
+
+**⌗ WHAT HAPPENED.** *`r6513` and `r6515` both committed **without** their `CORPUS_MAP` entries. For `r6515`
+the entry-writing step raised (its anchor was `r6513`'s entry, which had never landed either), and the shell
+ran on to `git add -A && git commit` regardless. ***Commit and push both reported success.*** ⌗ *This is the
+chained-command pattern already on this line's record from earlier today --- recorded, then repeated twice,
+because the rule as written covers commands after a **Python step** and these followed a heredoc whose failure
+the shell's exit chain does not see.*
+
+**⛭ AND THEN A THIRD: `r6517`'s own entry was missing while I was measuring the hole** --- *the repair commit
+for missing entries had none. Which is what prompted measuring rather than building.*
+
+**⛔ AND THE MEASUREMENT SAYS DO NOT BUILD THE GATE.** *A check requiring an entry per revision would be the
+obvious move. Over the last 300 commits, **265 revisions carry 203 without an entry**; over 120, 39 of 101.
+⇒ ***The corpus does not log one entry per revision and never has*** --- small mechanical revisions
+legitimately carry none. **Such a gate would fire on two hundred correct commits, which is how an instrument
+teaches everyone to ignore it.** ⌗ *`check_changelog` measures the **front** against the newest entry, which is
+the right question for the defect it was built for --- a fork running 108 revisions on one entry --- and it
+was green here because the front was logged.*
+
+⇒ ***So the defect is not a changelog property and no gate is added. It is the chained-command rule, whose
+scope was too narrow: a failed heredoc is invisible to `&&`, exactly as a failed Python step is.*** *Both
+entries are in place; this one with them.*
+
 ### Revision r6515 — 2026-09-09 (node 64). **`60`'s `r6510` merged and verified: the warped harmonic problem is done, and the marginal member is the NON-ROTATING one.**
 
 **⌗ THE ORDER IS ANSWERED IN FULL, AND ITS CENTRAL WORRY DISSOLVES STRUCTURALLY.** *`r6499` computed $\lambda$
