@@ -146,6 +146,40 @@ sources: [cowork, chat]
 
 
 
+### Revision r6542 — 2026-09-12 (chat node). **Correcting `r6541`: the axis vantage is imaginary, not absent — and the "extend the substrate" demand is withdrawn.** *(Daryl's question.)*
+
+**⛔ WHAT `r6541` GOT WRONG, AND IT IS THE CONCLUSION NOT THE COMPUTATION.** *It computed that the
+$\mathbb{Z}_3$-fixed axis meets the substrate in **zero real points** --- $-X_0^2=\alpha^2$ --- and concluded
+that the seat *"is not anywhere in this manifold"*, so a successor must **extend** the substrate. ***The
+computation stands. The conclusion over-claimed.***
+
+**⌗ THE CONSTRUCTION ASSIGNS THAT AXIS A HEIGHT.** *`P17` fixes a vantage by the power of a point,
+$\mathrm{pow}(P)=|X|^2-\alpha^2$, the vantage *"lifted to its own height $X_0=\sqrt{\mathrm{pow}}$"*. Applied: a
+hinge at $|X|=2\alpha$ has $\mathrm{pow}=3\alpha^2$ and height $\sqrt3\,\alpha$, **which lands on the substrate**
+(checked); the throat has $\mathrm{pow}=0$; ***and the axis at $|X|=0$ has $\mathrm{pow}=-\alpha^2$, hence
+$X_0=i\alpha$*** --- **not undefined and not absent, but imaginary, and at exactly the one invariant the
+programme never sends to a limit.**
+
+**⌗ AND THIS CORPUS DOES NOT TREAT IMAGINARY-REACHED LOCI AS UNREAL.** *The equatorial seam is reached by
+$\theta\to\pi/2+i\psi$; the lift occupies an imaginary stretch of cosmic time; `P17`'s own title is *"Reached
+through the imaginary, real by …"*. ***An imaginary height places the axis vantage in the class of things this
+construction reaches by continuation, not the class of things it lacks.*** *So what the zero-intersection
+supports is the narrower **"the seat is at no real point"**, and the continuation route --- the route used
+everywhere else here --- stays open.*
+
+**⌗ THE SEAT'S PROPERTIES, SCORED AGAINST IT.** *Three objects --- **open**. No hinge index --- **met**, the
+$\mathbb{Z}_3$ **fixes** it. Triality-neutral --- **met**, the deck acts trivially. $R$ as a transposition ---
+**open**. Fermion content --- **open**. ***Two of five by construction, and it fails the no-hinge-index test
+nowhere, which is exactly where the reassignment three failed.*** *The first open one --- what would make **one
+fixed locus** a **triple** --- is the next thing.*
+
+**⌗ AND OWED ITEM (3) IS ANSWERED.** *Nothing distinguishes one ruling from the other: the hyperboloid is doubly
+ruled and the two rulings are each other's opposite. **So the A-timelike assignment is not forced** --- and
+***that it is unforced is the content of $R$ being a symmetry of the pair, not a defect in the construction.***
+
+*Receipt `P14R63`.*
+
+
 ### Revision r6541 — 2026-09-12 (chat node). **"The centre carries no wall" is the weak statement of a stronger fact: the $\mathbb{Z}_3$-fixed axis is not a locus of the substrate at all.**
 
 **⌗ WHY THE AXIS WAS THE THING TO CHECK.** *`r6540`'s dilemma is located at the hinge index --- read globally
