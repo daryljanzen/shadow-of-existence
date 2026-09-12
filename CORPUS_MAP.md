@@ -146,6 +146,41 @@ sources: [cowork, chat]
 
 
 
+### Revision r6537 — 2026-09-12 (chat node). **The search space is closed, not merely unsearched: twelve threes enumerated, and none can seat the colourless triple.**
+
+**⌗ WHY THIS AND NOT A STOP.** *`r6536` left the shortfall as "the colourless triple would be a third three" ---
+**a statement about two objects, not about the space of candidates**. The candidates can be listed, and listing
+them turns a narrowing into a closure.*
+
+**⌗ THE ENUMERATION.** *Twelve three-element structures across `P3`'s geometry sections and `P14`'s count,
+chirality and `whichthree`. **Eight reduce to the HINGE three** by maps the corpus already carries --- the
+graze points by the antipodal bijection, the horizon roots because a vantage *is* a choice of which root it
+reads as its own hole, the triangle sides because the six chords project two-to-one onto them, the signed radii
+and the wall monodromies by vantage index, the three timelike puncture-pairs because *"the pair a null binding
+appears to exclude IS THE HINGE ITSELF"*, and the Nariai root triple because those are the roots at the crest.
+**Three reduce to the TURNAROUND three** --- the triality classes by the deck action grading $\lambda\bmod3$,
+the winding classes because the lap **is** the deck orbit. ***Tally: 8 hinge, 3 turnaround, 1 neither.***
+
+**⛔ AND THE ONE THAT IS NEITHER STILL CANNOT SEAT.** *The three **causal classes** are genuinely a third three
+--- timelike, spacelike, null, with no map carrying one to another. But a $2{+}1$ needs $R$ acting as a
+**transposition**, and ***causal character is a metric invariant***: every symmetry preserves it, $R$ included,
+so $R$ acts as the **identity** --- $3{+}0$, not $2{+}1$. `P3R51` adds that the group has **one orbit on each
+class**, so the within-class seats are transitive too. **Both conditions fail.***
+
+**⌗ SO THE DEMAND ON A SUCCESSOR IS NOW A CLOSURE RATHER THAN A NARROWING:** *it must **introduce** structure,
+not re-read what is present. Carried into `P14` `sec:correspondence`.*
+
+**⌗ SCOPE, STATED IN THE PAPER AND NOT ONLY THE RECEIPT.** *The enumeration is exhaustive **of its sources** ---
+`P3`'s geometry and `P14`'s three sections --- and is **not** a theorem that no other three exists. ***A three
+arising in `P5`'s groupoid, `P12`'s algebroid, or the charged sector would reopen it***, and that is the next
+place to look rather than a caveat to file.
+
+⌗ ***And the method note, because it was corrected mid-session rather than arrived at: the previous revision
+ended by offering to stop, on the ground that what remained was speculative. Narrowing and sharpening IS the
+work, and a step whose result is unknown in advance is the only kind worth taking. This revision exists because
+that stopping was refused.***
+
+
 ### Revision r6536 — 2026-09-12 (chat node). **The $2{+}1$ S3 wants exists in this construction, with the right grading — on the wrong three.**
 
 **⌗ THE TURNAROUND MEETS BOTH CONDITIONS, WHICH THE WALL SECTOR DID NOT.** *`sec:whichthree` has $T$
