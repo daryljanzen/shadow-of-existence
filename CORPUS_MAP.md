@@ -146,6 +146,35 @@ sources: [cowork, chat]
 
 
 
+### Revision r6525 — 2026-09-09 (node 64). **Asked the instruments instead of the map: nothing else is owed — and the opening that looked nearest is not a reading.**
+
+**⌗ THE OWED-WORK INSTRUMENTS ARE ALL CLEAN.** *`check_burndown`: the lead register is **15 struck, 0 open**,
+ID space intact from 1 to the maximum. `check_unworked_blockers`, `check_gap_is_held`,
+`check_deferrals_resolve`, `check_close_names_work`: clean. `FOR_56` item 16 --- the prefix bands --- is
+**reported and not failed**, awaiting `56`'s adoption: ***a person-gate, not work***. ⇒ **So the frontier is
+the live surface, and the question is which of its openings can actually be reached.**
+
+**⛔ AND `PO-25`'s CONDITION CANNOT BE REACHED AS A READING.** *`r6521` sharpened it to: does $m(r)$ stay
+$o(1/r)$ at the origin? **Answering that needs the charged interior evolved, and evolving it needs matter.**
+`P08` says exactly what is and is not supplied: the dynamics **given content**, and ***not the constitutive
+relation***. ⇒ *So $m(r)$ near the origin is set by the matter one puts in, not by the geometry.*
+
+**⌗ AND `PO-31`'s REMAINDER AWAITS THE SAME THING, IN ITS OWN WORDS** --- *"a modelling task awaiting a
+progenitor interior". **Two rows, two rooms, one missing interior.***
+
+**⛭ AND THE DISTINCTION FROM `PO-30` IS THE USEFUL PART.** *`PO-30` wants a **generative LAW** for the
+content. ***These two want less: a matter MODEL, chosen rather than derived, and an evolution run with it.***
+A model would answer them and would **not** answer `PO-30` --- so they are **not downstream of it**, they are
+downstream of a modelling step nobody has taken. ⇒ **`PO-30` stays the only one of the three answerable
+without first choosing something arbitrary.**
+
+⚠ *Not claimed that such a run would be worthless: it would settle the condition **for that matter**, which is
+a real answer --- and `P08`'s own point is that general relativity does not supply the equation of state
+either. **What is claimed is that it is a run with an input, not a reading of what the corpus already holds.***
+
+⌗ *Room ③ is one opening, and it is that one. `check_cross_row_dupes` went red at a 120-second cap and green
+at 250 --- **a timeout reported as a failure**, which is worth knowing before it is read as one.*
+
 ### Revision r6523 — 2026-09-09 (node 64). **`60`'s `r6522` merged and verified: the joint fit is run, `r6409`'s reading is confirmed by measurement — and the bound `r6409` gave the row was wrong twice over.**
 
 **⛭ THE READING HOLDS, AND NOW WITH A NUMBER INSTEAD OF AN ARGUMENT.** *$\Delta n_s=-0.08304\pm0.00335$ over
