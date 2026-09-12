@@ -30,12 +30,16 @@ natural label for a wall-bound field rather than an import. **  One lap = three 
 = the whole Z_3 orbit; and each wall is an r = 0 point, the branch point the signed-radius flip
 passes through and where the corpus places charge conjugation.
 
-** WHAT IS NOT SHOWN. **  L-74 is NOT closed: what is established is that its antecedent is the
-corpus's own structure, not that the zero-mode's label transforms as a crossing count -- that
-is a computation on prop:wall's solution (L-76).  ** AND THIS SHARPENS RATHER THAN RELIEVES THE
-WELD CONFLICT: P14 reads the three walls as the three GENERATIONS, the wall<->hinge pairing is a
-bijection, and the fermion-sector reading needs the hinge three to be COLOUR.  Walls cannot be
-both any more than hinges can, and they are the same three. **  L-67 stands, better specified.
+** WHAT THIS SHOWS AND WHAT WAS OWED WHEN IT WAS WRITTEN. **  What is established here is that
+L-74's antecedent is the corpus's own structure.  The step it left owed -- that the zero-mode's
+label transforms as a crossing count -- was RUN at c54.25 (L-78): the sqrt(f) cancels exactly in
+W dl = lambda dr/r, so psi ~ r^(-lambda) and psi -> omega^(-lambda) psi per crossing, giving
+triality = -lambda mod 3.  L-74 and L-72 are closed (r2886).  ** AND THE WELD CONFLICT THIS FILE
+RECORDED IS RESOLVED, NOT STANDING: ** P14 sec:whichthree reseats the generations off the walls
+onto the turnaround's deck Z_3, so the hinge three is the WITHIN-STATE index and the two threes
+are related by no covering construction.  Walls and hinges are not asked to be both.  L-67 is
+discharged by that reseating, and the reading this file called 'a substantial revision to P14
+NOT made here' is the revision P14 has since made.
 
 ORIGIN: computations/baryon_edge/L75_the_wall_is_the_graze_point.py -- built r2376 (c54.23);
 edit the origin, not this copy."""
@@ -209,10 +213,12 @@ print("     P14 calls the BRANCH POINT the signed-radius flip passes through, an
 print("     the corpus places charge conjugation at.  ** So 'the electron's charge is one")
 print("     complete lap' reads as 'three branch-point passages, one per wall'. **")
 print()
-print("  ** L-74 IS NOT CLOSED -- what is shown is that its antecedent is the corpus's own")
-print("     structure rather than an import.  What remains is to show the zero-mode's")
-print("     label transforms as a crossing count, which is a computation on prop:wall's")
-print("     solution and not a naming exercise. **  (L-76.)")
+print("  ** WHAT THIS ESTABLISHED, AND WHAT HAS SINCE BEEN RUN ON TOP OF IT. **")
+print("     Established here: L-74's antecedent is the corpus's own structure rather")
+print("     than an import.  Run at c54.25 (L-78): the zero-mode's label DOES transform")
+print("     as a crossing count -- W dl = lambda dr/r with the sqrt(f) cancelling exactly,")
+print("     so psi ~ r^(-lambda) and psi -> omega^(-lambda) psi per crossing, i.e.")
+print("     triality = -lambda mod 3.  L-72 and L-74 are closed (r2886).")
 
 # =====================================================================
 print()
@@ -225,16 +231,15 @@ print("      eigenvalue, the sign of the signed-radius flip, = R).  L-61 gives e
 print("      point a pair of legs at gnomonic angle +30 and -30.  ** They are now known to")
 print("      be the SAME POINT, so the two signs can be compared directly. **")
 print()
-print("  ⌗ AND THE THING THIS PUTS AT RISK, STATED BECAUSE IT SHOULD BE:")
-print("    ** P14 reads the three walls as the three GENERATIONS.  F-1 needs the three")
-print("       hinges to be COLOUR.  The wall<->hinge pairing is ANTIPODAL AND CANONICAL")
-print("       (PART 3), so walls and hinges are in bijection -- ** which means this does")
-print("       NOT relieve the weld conflict; it sharpens it. **  Walls cannot be colour and")
-print("       generation at once any more than hinges can, and they are the same three.")
-print("    ⇒ L-67 is unchanged in force and better specified: the second three (the")
-print("       turnaround roots, lem:twoturnings) must carry generation, and P14's")
-print("       'which wall each binds at' would then be a COLOUR label, not a family one.")
-print("    ** That is a substantial revision to P14's reading and it is NOT made here. **")
+print("  ⌗ AND THE CONFLICT THIS FILE PUT AT RISK HAS SINCE BEEN RESOLVED:")
+print("    ** When this was written P14 read the three walls as the three GENERATIONS,")
+print("       F-1 needed the three hinges to be COLOUR, and the wall<->hinge pairing is")
+print("       ANTIPODAL AND CANONICAL (PART 3) -- so walls and hinges are in bijection and")
+print("       could not be both. **")
+print("    ⇒ P14 sec:whichthree makes exactly the revision this file said was not made")
+print("       here: the generations are reseated onto the turnaround's deck Z_3, the hinge")
+print("       three is the WITHIN-STATE index, and the two threes are related by no")
+print("       covering construction.  ** L-67 is discharged by that reseating. **")
 print()
 print("  ⌗ AND WHAT DARYL ASKED THAT THIS DOES NOT ANSWER: he said the corpus has 'related")
 print("  structures fitted together with geometric things that are shadows of one or the")
