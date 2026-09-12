@@ -146,6 +146,40 @@ sources: [cowork, chat]
 
 
 
+### Revision r6540 — 2026-09-12 (chat node). **The reassignment three and the wall sector share the hinge — which gives owed item (2) a route and costs the colourless claim in the same move.** *(Daryl's object.)*
+
+**⌗ THE SHARING, FROM TWO CAPTIONS.** *`P7` panel (A): *"Each bead swings in from the hinge along a ruling …
+and exits along the other ruling; **the two ruling lines cross at the hinge**."* `P14`'s three-plane figure: the
+three walls are *"**each antipodal to its hinge**."* So at hinge $k$ the rulings **A** and **B** cross, and hinge
+$k$ owns wall $k$ where `prop:wall` binds. ***A and B are the in-leg and the out-leg of one bead***, $R$
+exchanging them is $R$ exchanging entry for exit, and the bead's turn at $r=0$ between them is where the species
+swaps --- **which is why that exchange is the species exchange**, rather than two facts that happen to agree.*
+
+**⌗ THE ROUTE FOR ITEM (2).** *Content need not be invented for **A**, **B**, **P**: the hinge already has
+`prop:wall`'s mode, and the three are directions through that hinge. ***One bound mode read three ways, rather
+than three modes needing three seats.****
+
+**⛔ AND THE COST, WHICH CORRECTS `r6538`.** *That revision recorded the three as **colourless**, on the ground
+that as global bundles they carry no graze-point index. **True of the global bundles; false of the three
+directions at a hinge** --- the graze-point index **is** the hinge index, by the antipodal bijection. So: read
+**globally**, colourless and **no fermion content**; read **at a hinge**, fermion content and **not**
+colourless. ***Neither reading is both.*** A dilemma, not a refutation: the candidate cannot be had by choosing
+a reading.*
+
+**⌗ AND THE DILEMMA IS SHARP RATHER THAN VAGUE.** *The same `P14` figure states that ***"the centre (the
+$\mathbb{Z}_3$-fixed axis) carries no wall"***. **So the construction's one hinge-unindexed locus is exactly its
+contentless one, and its content-bearing loci are its coloured ones.** A successor must place content on the
+fixed axis, or find at a hinge a mode the hinge does not index. *Carried into `P14` `sec:correspondence`, which
+had the colourless claim standing.*
+
+**⌗ AND A SEVENTH RESEATING SITE.** *That figure's own caption still read "three identical **generations**" and
+"$\mathbb{Z}_3$ sends **generation to generation**" --- reseated to the bound modes and the number. **A sweep
+now returns none.** Sites found after `r6527` declared the propagation complete: **three more**, at `r6533`,
+`r6534` and here.*
+
+*Receipt `P14R61`.*
+
+
 ### Revision r6539 — 2026-09-12 (chat node). **$R$ fixes the photon congruence — and following the check turned up a live branch/seam conflation in the charge-conjugation passage.**
 
 **⌗ OWED ITEM (1) DISCHARGED, ON THE GRADING RATHER THAN THE LAYOUT.** *The figure's colour code makes species a
