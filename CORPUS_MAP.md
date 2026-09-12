@@ -146,6 +146,44 @@ sources: [cowork, chat]
 
 
 
+### Revision r6539 — 2026-09-12 (chat node). **$R$ fixes the photon congruence — and following the check turned up a live branch/seam conflation in the charge-conjugation passage.**
+
+**⌗ OWED ITEM (1) DISCHARGED, ON THE GRADING RATHER THAN THE LAYOUT.** *The figure's colour code makes species a
+function of $\mathrm{sign}(r)$ --- *"blue $=$ matter ($r>0$), red $=$ antimatter ($r<0$), the two exchanged at
+the branch point $r=0$"* --- so on this figure **$R$ is the species exchange**, and an object with no species
+grading has nothing for $R$ to exchange. **A** and **B** are graded and change colour at $r=0$; **P** is
+**black**, outside the grading. *The purple convention confirms the grading is the operative one --- purple
+marks where two conjugate readings run together "carrying opposite species", a device needed only where there
+is a species to oppose, and **no purple arises for P**.* **So $R$ acts as a transposition and the $2{+}1$
+stands**, resting on the grading and not on panel (B)'s list order. *Corroborated from the text, not only the
+figure: "$R$ on the substrate's two null rulings, the $\mathbb{Z}_2$ of $\mathrm{Aut}(A_2)=D_6$", and "a linear
+isometry whose sole fixed point is the bead's own $r=0$ crossing". Falsifier run: **nothing anywhere grades the
+photon congruence by species**.*
+
+⌗ ***And the fixed member being the photon congruence is a consistency rather than a coincidence: being fixed by
+the species conjugation is exactly what it is for a species to be its own conjugate.***
+
+**⛔ AND THE CONFLATION IS NOT HYPOTHETICAL — ONE INSTANCE WAS STANDING.** *`P7`'s charge-conjugation passage
+read *"the vertex on which charge conjugation's kinematic face turns is **the very seam** that completes
+collapse into our expansion"*, of the $r=0$ crossing --- while `P15` states two papers over that $r=0$ ***"is
+NOT a seam: the seams are the two unit-speed loci of the lap, $r=-2\alpha/\sqrt3$ and $r=+\alpha/\sqrt3$"***.
+**Corrected** to "the very branch point … the crossing itself, and not either seam of the lap". *This is the
+conflation `r2123` corrected across 99 sites, alive in a load-bearing sentence, and found by following the
+reassignment lead rather than by sweeping for it.*
+
+**⌗ AND THE GEOMETRY IT HID REFINES `r6538`.** *`P7` line 663 puts the **two seams** at the $120^\circ/240^\circ$
+split, while panel (A) has ***"the two beads turn at the same $r=0$"***. **So the beads share their branch point
+and it is their seams that sit at the thirds.** *Conflating the two makes offset seams read as offset branch
+points* --- which is how this particular confusion propagates, and is the sharper form of the offset recorded
+last revision.
+
+**⌗ STILL OWED, unchanged:** *(2) that these congruences can carry Weyl fermions at all --- **the item that
+decides whether this is a seat** --- and (3) that the A-timelike assignment is a choice the geometry does not
+force.*
+
+*Receipt `P14R60`.*
+
+
 ### Revision r6538 — 2026-09-12 (chat node). **The reassignment carries a three, and the closure is reopened on the axis its own scope clause named.** *(Daryl's object.)*
 
 **⌗ THE THREE, AND IT WAS NOT ON THE LIST BECAUSE IT LIVES IN `P7`.** *The causal reassignment has **three
