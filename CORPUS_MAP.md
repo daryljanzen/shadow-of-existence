@@ -146,6 +146,38 @@ sources: [cowork, chat]
 
 
 
+### Revision r6531 — 2026-09-12 (chat node). **The count that acts on a bound mode is not the count the winding measures, and the two are locked at $\nu=n-1$.**
+
+**⌗ WHAT THE THREE-VANTAGE READING IMPLIES AND NOBODY HAD ENUMERATED.** *Under (ii) a crossing of wall $W$
+branches only $W$'s **owner**, so for a mode bound in vantage $k$ **the crossings that act on its own component
+are the crossings of wall $k$ alone** --- not the other two, and not the total. So a route carries **two**
+counts: $n$, the total graze-point count that `P3`'s winding measures, and $\nu$, the own-wall count that the
+monodromy acts by.*
+
+**⌗ ENUMERATED, AND THEY ARE LOCKED.** *Over all twelve routes between punctures at distinct hinges --- hinges
+at $0/120/240$, wall$_j$ antipodal at $(120j{+}180)$ --- **the realised pairs are $(n,\nu)=(1,0)$ and $(2,1)$
+only**, so ***$\nu=n-1$ on every route***. **Forced by the antipodal map**: wall$_m$ lies between hinges $i$ and
+$j$ whenever $\{i,j,m\}=\{0,1,2\}$, so the **short** route from hinge $k$ crosses only the third hinge's wall
+and the **long** route crosses hinge $k$'s **own** wall and the destination's. *Scope stated because it is not
+general: this is a fact about the two inter-hinge routes and their one-lap difference --- which is exactly the
+domain `P3` defines a winding on --- and it fails on closed circuits, a lap having $n=3$ and $\nu=1$.*
+
+**⛔ AND IT ANSWERS THE OPEN CONDITION IN THE NEGATIVE, WHICH IS THE USEFUL DIRECTION.** *The own-slot monodromy
+is $\omega^{t\nu}=\omega^{t(n-1)}$ --- ***$n$ and $t$ enter as a product***, so **$n\equiv t$ is not what the
+geometry imposes on them**. A route with $n{=}1$ leaves the mode's own component untouched **whatever its
+triality**; a route with $n{=}2$ multiplies it by $\omega^{t}$. **The binding fixes which crossings act, the
+geometry fixes $\nu=n-1$, and the triality is set by the angular problem free of both.***
+
+⌗ ***So the question the dig opened --- can triality-equals-charge-fraction be derived rather than assumed ---
+is answered: not by the binding, and not by the route structure. What the three revisions bought instead is the
+condition stated as one checkable thing ($n\equiv t$ per constituent, `P3R47`), the rule's form corrected to the
+reading the corpus adopted (`P3R48`), and the operative count identified and computed (`P3R49`). The
+identification stands where both papers put it --- assumed --- and is now assumed about a named quantity rather
+than about a register tag.***
+
+*Receipt `P03_the_operative_crossing_count`, registered `P3R49` in both appendices.*
+
+
 ### Revision r6530 — 2026-09-12 (chat node). **The composite admission rule is the one entry the fork's decision table does not carry — and it is the entry P3's own statement of the rule depends on.**
 
 **⌗ THE FORK, AND WHAT WAS CHECKED AGAINST IT.** *`P14R28` decided a fork on the signed areal radius in
