@@ -146,6 +146,46 @@ sources: [cowork, chat]
 
 
 
+### Revision r6538 — 2026-09-12 (chat node). **The reassignment carries a three, and the closure is reopened on the axis its own scope clause named.** *(Daryl's object.)*
+
+**⌗ THE THREE, AND IT WAS NOT ON THE LIST BECAUSE IT LIVES IN `P7`.** *The causal reassignment has **three
+congruences with three roles**: **A**, a null ruling bundle of $dS_4$ promoted to the fundamental **timelike**
+congruence; **B**, the other ruling bundle, which panel (D) reads as *"the flat synchronous space (constant
+$\tau$, its conjugate dual, read in the opposite sense)"*; and **P**, the at-rest comoving worldlines,
+*"timelike in de Sitter space, but in the SdS projection reinterpreted as null geodesics"* --- the photons.
+***And the third option is real, which is what makes it a structure rather than a labelling***: **B** could be
+promoted instead, leaving **A** as *its* synchronous flat space. The paper takes one assignment; the geometry
+admits the swap.*
+
+**⌗ IT MEETS BOTH CONDITIONS, AND ON THE RIGHT KIND OF OBJECT.** *These are congruences of the background, carry
+**no graze-point index** and are therefore **colourless**; they are neither the hinge three (no antipodal or
+root map reaches them) nor the turnaround three (the deck indexes sheets of $r$). $R$ exchanges **A** and **B**
+--- panel (A)'s *"both $R$-conjugate null frames"* --- with **P** outside that pair, so the split is
+***$2{+}1$ with chirality's own grading***. **Unlike the turnaround (`r6536`), the objects are not the
+generations.**
+
+**⌗ THE OFFSET IS WHAT MAKES A AND B INEQUIVALENT.** *Panel (A): each bead splits its wrap $120^\circ$ before
+its turn at $r{=}0$ and $240^\circ$ after, so the branch points sit at **one third and two thirds of the lap**,
+offset by a third, and the two $240^\circ$ arcs overlap on the hinge-side third **carrying opposite species**.
+***The double ruling is not two flat lines crossing at the centre***: each line comes up, conjugates onto the
+lap, branches at $r{=}0$ where charge swaps to antimatter, and exits with the opposite charge --- so each $X$
+has a left half and a right half.*
+
+**⛔ AND IT IS A CANDIDATE, NOT A DISCHARGE. THREE THINGS ARE OWED:** *① $R$'s **fixing of P** is read from the
+figure's grouping --- panel (B) lists the photon congruence outside the $R$-conjugate pair --- and **not** from
+an explicit statement; **if $R$ moves P the $2{+}1$ collapses**. ② That these congruences can **carry Weyl
+fermions** at all is not shown; `prop:wall`'s wall modes are the only fermion content built. ③ The
+**A-timelike** assignment is a choice the geometry does not force.*
+
+*`P14` `sec:correspondence` corrected --- it had claimed the enumeration closed the candidates. Receipt
+`P14R59`.*
+
+⌗ ***Two process notes. The reopening came from Daryl naming an object one paper over, which is the answer to
+`r6537`'s scope clause arriving the same day the clause was written --- the clause was load-bearing, not a
+hedge. And the citation added here used a key `P14`'s bibliography does not define; the gate caught it and I had
+already committed, having run the check and not read its output. Same shape as the receipt-tag collisions.***
+
+
 ### Revision r6537 — 2026-09-12 (chat node). **The search space is closed, not merely unsearched: twelve threes enumerated, and none can seat the colourless triple.**
 
 **⌗ WHY THIS AND NOT A STOP.** *`r6536` left the shortfall as "the colourless triple would be a third three" ---
