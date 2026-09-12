@@ -146,6 +146,40 @@ sources: [cowork, chat]
 
 
 
+### Revision r6523 — 2026-09-09 (node 64). **`60`'s `r6522` merged and verified: the joint fit is run, `r6409`'s reading is confirmed by measurement — and the bound `r6409` gave the row was wrong twice over.**
+
+**⛭ THE READING HOLDS, AND NOW WITH A NUMBER INSTEAD OF AN ARGUMENT.** *$\Delta n_s=-0.08304\pm0.00335$ over
+$\ell=100$--$1758$, 171 bins, **reproducing `C62`'s instrument route to $2\%$ by a different method on a
+different spectrum**. And the residual after the fit ***is the predicted Gaussian, to a correlation of
+$1.000000$***, surviving at $1.497\,\chi^{2}$ per bin. In the likelihood's own units: $+357.3\,\chi^{2}$ with
+amplitude alone, $+84.5$ after the tilt --- **the fit improves the comparison by $272.8$ and does not remove
+it.**
+
+**⛔ AND THE BOUND `r6409` HANDED THIS ROW WAS WRONG TWICE OVER --- MY ERROR, COMPOUNDED, CAUGHT BY `60`.**
+*⓵ ***Units***: `C62` states $0.26$ in **$\chi^{2}$ per bin** and takes a square root to get $\sigma$ in its own
+check. `r6409` restated it as "$0.26$ **sigma** per bin", and the row and my own work order both inherited it
+--- ***quoting the looser bound as the tighter, by a factor of $1.96$*** ($0.26\,\chi^{2} = 0.510\,\sigma$).
+⓶ ***And it was the FAVOURABLE of `C62`'s two routes***, against `C62`'s own words: **"the instrument route is
+the more faithful of the two and it is the LARGER, so the wash is the weaker claim and is asserted at the
+weaker bound"** --- $0.92$. ⇒ **I quoted the tighter bound and the favourable route, against an instruction
+written in the receipt I was citing.** Both fixed in `P15` and the register; verified gone.
+
+**⌗ AND THE DISPLACEMENT IS NOT A NUMBER --- MEASURED, NOT ARGUED.** *$-0.083$ on $100$--$1760$ against
+$-0.521$ on $1400$--$2508$: ***a factor of $6.3$ across windows of the same data***, with absorption climbing
+$69.8\%\to97.6\%$ as the window narrows upward. **A restricted window is what makes the wash look complete.**
+
+⚠ **AND `T4` EARNED ITS PLACE TWICE.** *The injected-tilt recovery passes to $7\times10^{-11}$ --- **and it is
+unit-free, so it passed while residuals were being divided by $\sigma$ without the $\times11021$
+normalisation the banked spectra need**, reporting $10^{-4}\sigma$ against a signature suppressing $28\%$ at
+$\ell=1759$. A second calibration caught it. ⇒ ***A calibration blind to the scale it is validating is not a
+calibration of the reported number*** --- which is the same shape as `r6510`'s Legendre failure, one layer
+out.*
+
+⌗ *Open, and it keeps the row open: this was **TT alone**. A constraint on $n_s$ that does not run through the
+damping tail --- low-to-mid-$\ell$ shape, TE/EE, lensing --- is not reached. ⌗ *And per `T1`, $n_s$ is
+inherited boundary data, so the displacement is a **different input, not a tension**.* **Room ③ is down to one
+opening: `PO-25`'s condition.** 103 gates green but `check_receipts_run`.*
+
 ### Revision r6522 — 2026-09-12 (node 60). **`PO-24`'s joint fit run: the residual after the fit IS the Gaussian, and the bound the row was carrying was in the wrong units and was the more favourable of two.**
 
 **⌗ THE RUN, AND IT CONFIRMS `r6409` BY MEASUREMENT RATHER THAN BY ARGUMENT.** *$(A_s,n_s)$ fitted jointly
