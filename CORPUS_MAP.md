@@ -146,6 +146,35 @@ sources: [cowork, chat]
 
 
 
+### Revision r6533 — 2026-09-12 (chat node). **Two propagation misses cleared, and the first one is mine.**
+
+**⛔ MINE, AND IT IS THE PLAINER OF THE TWO.** *The four receipts registered this session took tags
+**`P3R47`–`P3R50`**, which were **already held** --- the `P3R` range ran to **`P3R58`**. Four duplicate display
+tags, created while writing changelog entries about corrections that reach one site and stop. **Renumbered to
+`P3R59`–`P3R62`** in both appendices; a duplicate check across every appendix now returns clean. *The labels
+themselves (the `\rcptlabel` first argument) were unique, so nothing resolved wrongly --- what collided was what
+a reader sees.*
+
+**⛔ AND THE SECOND IS THE SAME SHAPE AS r6527's.** *The stale weld-conflict bound fixed at `r6528` in
+`P03_wall_is_the_graze_point` was carried by a **second** receipt --- `P03_winding_and_closure` --- and by
+`receipts/INDEX.md`. **I fixed one instance and did not sweep**, which is precisely the failure `r6527` was
+written about. Cleared in both appendices and the index; the receipt's own source did not carry the text.*
+
+**⌗ WHAT WAS DELIBERATELY LEFT.** *The same bound's clause "nor do the leptons have a built seat" **stands** ---
+it was not checked this turn and is not cleared by the reseating. *And `FORK_c54.md` and the changelog keep
+their historical statements of the conflict: those are records of what was believed when, and the one-state rule
+does not reach them.*
+
+**⌗ THE SWEEP THAT PROMPTED THIS, AND WHAT IT FOUND.** *Two candidate fork-decisions were checked for the
+missing-entry pattern `P14R28` showed, and ***both dissolved***: `C3_the_dial_deck_is_S3_not_D6` reads as a
+contradiction of `sec:whichthree`'s $D_6$ by its title alone, and says the same thing --- $S_3$ is the deck of
+the dial over the $2M$-plane, $D_6$ its full symmetry as a figure, the other coset being $R$; and
+`P03_the_U3_figure`'s "hinge $k$ grazes at the other two and never its own" is about the **null legs**, not the
+equatorial routes, so it does not conflict with `P3R61`'s long route crossing hinge $k$'s own wall. ***Two leads,
+two dissolutions, and the misses that did turn up were both in the apparatus rather than the physics --- and one
+of them was three revisions old and mine.***
+
+
 ### Revision r6532 — 2026-09-12 (chat node). **The charge cannot be read from the acting count — and the reason is the thirds themselves.**
 
 **⌗ THE READING THE THREE-VANTAGE STRUCTURE INVITES.** *`P3R49` left two counts on one route: $n$, the signed
