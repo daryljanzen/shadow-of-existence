@@ -146,6 +146,38 @@ sources: [cowork, chat]
 
 
 
+### Revision r6543 — 2026-09-12 (chat node). **A conflation of my own, caught — and the axis vantage counted: it is a pair, not a triple.**
+
+**⛔ THE CORRECTION, AND IT IS THE CONFLATION THIS CORPUS FIGHTS.** *`r6542` scored the axis vantage
+**triality-neutral**, reasoning *"the $\mathbb{Z}_3$ fixes it, so the deck acts trivially."* ***That conflates
+the two threes `P14R4` proves unrelated.*** The $\mathbb{Z}_3$ that **fixes** the axis is the **rotation**
+permuting hinges; triality is graded by the **turnaround's deck**; and no covering construction relates them
+--- $(\omega r)^3-\omega r+2M$ vanishing only at $r=0$. **Fixity under one says nothing about the action of the
+other.** Score withdrawn; the property reverts to open.*
+
+**⌗ AND THE COUNT, WHICH WAS THE NEXT THING NAMED.** *The height rule is $X_0=\sqrt{\mathrm{pow}}$ --- a
+**square** root --- so the axis at $\mathrm{pow}=-\alpha^2$ has branches $+i\alpha$ and $-i\alpha$: ***two, not
+three***. And two is not an accident of the axis: the same rule gives $\pm\sqrt3\,\alpha$ at a hinge, and those
+two branches are its two **horns** --- the corpus's six punctures being *"upper and lower, $3\times2$ and not
+$6$."* **No cube root enters the height**; the lap's three-ness belongs to the areal radius, not to the lift.*
+
+**⌗ SO THE THREE-NESS PROPERTY FAILS, AND FAILS INFORMATIVELY.** *S3's colourless triple is **$2$ left $+\,1$
+right** --- a doublet and a singlet, not three symmetric objects --- and the axis supplies a **pair** exchanged
+by the height's sign. ***So what it offers is the $2$, and what is missing is the $1$.*** *Demand restated: not
+"find a triple", but **"find the singlet that completes the axis pair"** --- a strictly smaller object, and
+stated against one this construction already has.*
+
+**⌗ WHAT IS NOT CLAIMED.** *That the axis pair **is** the lepton doublet. A sign-exchanged height pair matching
+a weak doublet is a **shape**, and shapes have been wrong twice in this arc --- `r6536`'s $2{+}1$ on the
+generations, and the score this revision withdraws. **What is established is the count.***
+
+⌗ ***Scorecard for the axis vantage, honestly: one of five properties met by construction (no hinge index), one
+FAILED (three-ness), three open (triality, $R$'s action, fermion content). It has gone down, not up, and the
+demand got smaller anyway.***
+
+*Receipt `P14R64`.*
+
+
 ### Revision r6542 — 2026-09-12 (chat node). **Correcting `r6541`: the axis vantage is imaginary, not absent — and the "extend the substrate" demand is withdrawn.** *(Daryl's question.)*
 
 **⛔ WHAT `r6541` GOT WRONG, AND IT IS THE CONCLUSION NOT THE COMPUTATION.** *It computed that the
