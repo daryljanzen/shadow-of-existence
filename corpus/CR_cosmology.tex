@@ -468,7 +468,7 @@ Settled: the ${\sim}9\%$ in $r_D$ is genuinely CR-specific and does not dissolve
 neither of the two a reader expects.} Scaling the diffusion length by the instrument's own measured ratio
 multiplies the damping by a Gaussian in $\ell$, and a tilt is a power law --- so over a restricted high-$\ell$
 range the one is well approximated by the other. \emph{Refitting amplitude and tilt therefore absorbs the
-signature almost entirely in shape}, leaving $0.26$ per bin over the $185$-bin ceiling and less the higher one
+signature almost entirely in shape}, leaving $0.26$ in $\chi^{2}$ per bin over the $185$-bin ceiling and less the higher one
 looks. \emph{But the absorption is bought, not free}: it costs a shift of $-0.0304$ in the inferred tilt
 against a $\sigma$ of $0.00323$ derived from the same covariance that scores the fit. \emph{So the signature
 does not vanish under a refit --- it moves out of the spectrum's shape and into an inferred parameter.}
@@ -495,12 +495,29 @@ bound}: freeing only the named degeneracy is the least absorption a fuller refit
 wash \emph{a fortiori}. \emph{The tilt displacement is not a bound}, because more free parameters would share
 it --- the baryon density moves the diffusion length itself. \emph{And the magnitude is not robust to a factor
 of three}: imposing the ratio on the measured spectrum gives the figures above, while applying it inside the
-instrument's own source --- where it also reaches the Doppler term through a derivative --- gives $0.92$ per
+instrument's own source --- where it also reaches the Doppler term through a derivative --- gives $0.92$ in $\chi^{2}$ per
 bin. \emph{The larger comes from the more faithful route, so the wash is stated at the weaker bound} and
 closing that factor is named here as work not done.
 
-\emph{Not} settled: whether a displacement of that size in the inferred tilt is a tension, which is a
-statement about a joint fit not performed here. The observable is $\theta_D/\theta_*=r_D/\rs$, and translating it into a spectrum requires the full acoustic transfer---above all, whether CR's high-$\ell$ peaks, driven on the geometric rate, track flat $\Lambda$CDM's, which is verified only through the third peak ($\ell\lesssim800$). A leading-order pass that simply \emph{assumes} the high-$\ell$ peaks equal $\Lambda$CDM's and applies the extra damping produces a large high-$\ell$ deficit (receipt: \texttt{full\_transfer\_verdict.py}\rcpt{P15_full_transfer_verdict})---but that assumption may not be imported for free: the same geometric rate that enlarges $r_D$ also governs the high-$\ell$ driving envelope, so CR's high-$\ell$ spectrum rests on short-wavelength collapse-phase driving rather than on the boost an expanding radiation era supplies. 
+\emph{That joint fit has since been performed, and it returns the residual this reading
+predicts.} Fitting amplitude and tilt together against the signature-carrying spectrum, on
+\texttt{plik\_lite}'s own bandpowers and covariance, the residual left after the fit is the analytic
+Gaussian-minus-power-law shape to a correlation of $1.000000$ --- \emph{not merely non-zero, but the
+predicted form}. \emph{It survives at $1.50$ in $\chi^{2}$ per bin} over the $185$-bin ceiling
+window on the instrument's own control spectrum, which is larger than either figure above and
+consistent with the ordering they already record, the more faithful route being the larger.
+\emph{And the displacement is not one number}: fitted over $\ell=100$--$1760$ it is $-0.083$, over
+$\ell=1400$--$2508$ it is $-0.521$ --- a factor of $6.3$ across windows of the same data, so a
+displacement is the value of nothing without the window it was fitted over. \emph{In the
+likelihood's own units} the signature costs $+357$ in $\chi^{2}$ with amplitude alone and $+85$ over
+$171$ bins once the tilt is refitted: \emph{the fit improves the comparison by three quarters of the
+cost and does not remove
+it}\rcpt{P15_the_joint_fit_leaves_the_gaussian_and_the_bound_was_chi2_not_sigma}.
+
+\emph{Not} settled, and unchanged by that run: whether a displacement of that size in the inferred
+tilt is a \emph{tension}. The tilt is inherited boundary data here, not predicted, so a different
+value of it is a different input; what would make it a tension is a constraint on $n_s$ that does
+not run through the damping tail, which this fit does not supply. The observable is $\theta_D/\theta_*=r_D/\rs$, and translating it into a spectrum requires the full acoustic transfer---above all, whether CR's high-$\ell$ peaks, driven on the geometric rate, track flat $\Lambda$CDM's, which is verified only through the third peak ($\ell\lesssim800$). A leading-order pass that simply \emph{assumes} the high-$\ell$ peaks equal $\Lambda$CDM's and applies the extra damping produces a large high-$\ell$ deficit (receipt: \texttt{full\_transfer\_verdict.py}\rcpt{P15_full_transfer_verdict})---but that assumption may not be imported for free: the same geometric rate that enlarges $r_D$ also governs the high-$\ell$ driving envelope, so CR's high-$\ell$ spectrum rests on short-wavelength collapse-phase driving rather than on the boost an expanding radiation era supplies. 
 
 \emph{One thing about that figure should be stated because two of this corpus's instruments do not agree on it, and the disagreement is worth knowing rather than averaging.} The $9\%$ above is the observable $\theta_D/\theta_*$, computed on standard thermodynamics with the sound horizon re-anchored to the observed acoustic scale so that only the damping length moves. \emph{The two-arm transfer, measuring the raw diffusion length at the visibility peak, returns $7.55\%$ on its own arms} --- \emph{a different quantity at a different epoch, and not a correction to this one}. \emph{Neither number is offered as a replacement for the other}, and closing the gap between the two routes is a thing this paper does not do.
 

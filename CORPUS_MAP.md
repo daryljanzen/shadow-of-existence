@@ -146,6 +146,47 @@ sources: [cowork, chat]
 
 
 
+### Revision r6522 — 2026-09-12 (node 60). **`PO-24`'s joint fit run: the residual after the fit IS the Gaussian, and the bound the row was carrying was in the wrong units and was the more favourable of two.**
+
+**⌗ THE RUN, AND IT CONFIRMS `r6409` BY MEASUREMENT RATHER THAN BY ARGUMENT.** *$(A_s,n_s)$ fitted jointly
+against the CR spectrum with the diffusion signature present, on `plik_lite`'s own $\ell$ range and
+covariance --- amplitude in closed form, tilt by a bounded search. **$\Delta n_s=-0.08304\pm0.00335$ over
+$\ell=100$–$1758$, $171$ covered bins**, which independently reproduces `C62`'s INSTRUMENT-route displacement
+($-0.0847$) to $2\%$ by a different method on a different spectrum.*
+
+⇒ ***THE RESIDUAL AFTER THE FIT CORRELATES WITH THE ANALYTIC $S(\ell)-A(\ell/1000)^{\Delta n}$ AT
+$1.000000$, AND SURVIVES AT $1.497\,\chi^{2}$ PER BIN.*** *`r6409` predicted a Gaussian-shaped residual that
+no tilt removes. **That is exactly what is there, and it is larger than either bound `C62` left.**
+
+**⛔ AND THE BOUND ITSELF WAS MIS-CARRIED, TWICE OVER, WHICH THE RUN FOUND BY READING ITS SOURCE.** *`C62`
+states **$0.26$ in $\chi^{2}$ per bin** and converts to $\sigma$ with a square root in its own check;
+`r6409` restated it as **"$0.26\sigma$ per bin"** and the row and the work order both inherited that ---
+**the looser bound quoted as the tighter**, since $0.26\,\chi^{2}/$bin is $0.510\,\sigma/$bin. **And `C62`
+carries TWO routes** and says in terms that the instrument route *"is the more faithful of the two and it is
+the LARGER, so the wash is the weaker claim and is asserted at the weaker bound"* --- **$0.92$, not $0.26$.**
+*Both corrected in `P15` sec:diffusion-scale and in the row.*
+
+**⛭ THE DISPLACEMENT IS NOT A NUMBER, NOW MEASURED AND NOT ONLY ARGUED.** *Across windows of the SAME data it
+runs $-0.083$ ($100$–$1760$), $-0.210$ ($700$–$1760$), $-0.309$ ($1000$–$1760$), $-0.341$ ($1000$–$2508$),
+$-0.521$ ($1400$–$2508$) --- **a factor of $6.3$** --- with absorption climbing $69.8\%\to97.6\%$ as the
+window narrows upward. ***So a restricted window is what makes the wash look complete.***
+
+**⌗ IN THE LIKELIHOOD'S OWN UNITS, THE FIT IMPROVES THE COMPARISON AND DOES NOT REMOVE THE COST.** *Over the
+same $171$ bins the signature costs **$+357.3$ $\chi^{2}$ with amplitude alone and $+84.5$ after the tilt is
+refitted** --- an improvement of $272.8$, $76\%$ absorbed. ⌗ *And the sky-compensating tilt is **BLUE**
+($+0.0616$) where the degeneracy fit's is **RED** ($-0.0830$): different questions, kept apart.*
+
+**⚠ CALIBRATED BEFORE BELIEVED --- AND THE FIRST CALIBRATION WAS BLIND TO WHAT THE SECOND CAUGHT.** *A known
+injected tilt is recovered to $7\times10^{-11}$. **That test is unit-free, so it passed while residuals were
+being divided by `plik` $\sigma$ without the $\times11021$ normalisation the banked spectra need** --- which
+reported $10^{-4}\sigma$ against a signature that suppresses $28\%$ at $\ell=1759$. A second calibration,
+requiring a known fractional perturbation to land where the data's own errors say, is what caught it.
+***A calibration blind to the scale it is validating is not a calibration of the reported number.***
+
+⌗ *`n_s` is **inherited** boundary data in `P15`, so the displacement is a different INPUT and not a tension;
+what the run does **not** reach, and what keeps `PO-24` open, is a constraint on $n_s$ off the damping tail
+--- low-to-mid-$\ell$ shape, TE/EE, lensing. This was TT alone. **Room ③ now has one opening, not two.***
+
 ### Revision r6521 — 2026-09-09 (node 64). **`PO-25` sharpened: `P03` makes the stationary-versus-dynamical distinction once, and does not apply it to the obstruction standing beside it.**
 
 **⌗ THE ROW'S OWN MOVE, TAKEN ONE STEP FURTHER.** *`r6405` ran the inner-horizon question and concluded the
