@@ -146,6 +146,33 @@ sources: [cowork, chat]
 
 
 
+### Revision r6536 — 2026-09-12 (chat node). **The $2{+}1$ S3 wants exists in this construction, with the right grading — on the wrong three.**
+
+**⌗ THE TURNAROUND MEETS BOTH CONDITIONS, WHICH THE WALL SECTOR DID NOT.** *`sec:whichthree` has $T$
+descending as the **inversion** $k\mapsto-k$ of the sheet index, fixing the triality-neutral class and
+exchanging the two charged ones, *"which is the action the orientation reflection already has"* --- and $R$ **is**
+that reflection. Computed: the permutation representation of that involution has $R=+1$ of **dimension 2** and
+$R=-1$ of **dimension 1**, and a transposition has a fixed point, so the $R$-pairing fails. ***Both of
+`r6535`'s conditions met, and the grading is chirality's own.***
+
+**⛔ AND S3 IS STILL NOT DISCHARGED, BECAUSE OF THE OBJECTS.** *The deck $\mathbb{Z}_3$ indexes **generation 1,
+2, 3**. S3's colourless triple is $\nu_L,e_L,e_R$ **within one generation** --- the $3$ in $15=12+3$.
+***Reading one as the other is exactly the category error `P14R21` named***, and `r6534`'s retirement of
+`P14R21`'s **seating** argument removed a different obstruction and did not make that reading available.*
+
+**⌗ NET, AND IT NARROWS THE SHORTFALL RATHER THAN CLOSING IT.** ***The colourless triple would be a third
+three.*** *The corpus has two --- the hinge three (within-state index) and the turnaround three (generations)
+--- and `P14R4` shows they are related by **no** covering construction, *"strictly stronger than by no affine
+one."* The colourless triple is neither: within-generation, so not the turnaround's; colourless, so not the
+hinge's. **So a successor must supply a new object rather than a re-reading of one already here** --- a
+narrower demand than the mismatch alone states, and a harder one. Carried into `P14` `sec:correspondence`.*
+
+⌗ ***And the near-miss is filed on purpose. A $2{+}1$ of the right shape and the right grading, sitting on the
+wrong objects, is what a flavour-match looks like from the inside --- it was my own lead, it survived two
+checks, and it failed the third. The receipt exists so the next reader who notices the shape finds the object
+check already done rather than running it again.***
+
+
 ### Revision r6535 — 2026-09-12 (chat node). **The wall is exactly where S3's premise fails — and it still does not discharge S3.**
 
 **⌗ THE LEAD, SETTLED BY THE MODE AND NOT THE LOCUS.** *`r6534` reopened the wall route and flagged one lead
