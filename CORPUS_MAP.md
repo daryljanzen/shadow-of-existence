@@ -146,6 +146,35 @@ sources: [cowork, chat]
 
 
 
+### Revision r6541 — 2026-09-12 (chat node). **"The centre carries no wall" is the weak statement of a stronger fact: the $\mathbb{Z}_3$-fixed axis is not a locus of the substrate at all.**
+
+**⌗ WHY THE AXIS WAS THE THING TO CHECK.** *`r6540`'s dilemma is located at the hinge index --- read globally
+the reassignment three is colourless and contentless, read at a hinge it has `prop:wall`'s mode and carries the
+hinge's colour. The escape would be **a locus bearing content without a hinge index**, and the construction has
+exactly one candidate: the $\mathbb{Z}_3$-fixed axis, since $\mathbb{Z}_3$ fixes it and anything on it is
+triality-neutral.*
+
+**⛔ AND THERE IS NOTHING ON IT, FOR A REASON STRONGER THAN THE MECHANISM.** *The substrate section is
+$-X_0^2+X_1^2+X_2^2=\alpha^2$; the hinge triangle has circumradius $2\alpha$ centred on $X_1=X_2=0$, and its
+incircle **is** the throat --- equilateral inradius $=$ circumradius$/2$, checked, and the corpus's own
+statement that *"the hole … is the incircle of the equilateral of three hinges."* On the axis the substrate
+reads ***$-X_0^2=\alpha^2$, which has no real solution***: **the axis meets the one-sheeted hyperboloid in zero
+points and runs through the hole.** *So the centre carries no wall because it carries **no points**. The figure
+draws it as the centre of a planar diagram; in the substrate it is the hole.*
+
+**⌗ SO THE DEMAND HARDENS ONCE MORE, AND INTO ITS SHARPEST FORM.** ***The seat is not anywhere in this
+manifold*** --- not at a hinge, where it is coloured; not globally, where there is no built content; not on the
+fixed axis, which is absent. **A successor must extend the substrate, or supply content by a mechanism this
+construction does not have.** *Not a rereading of what is here. Carried into `P14` `sec:correspondence`.*
+
+⌗ ***And the arc is worth reading as one thing. Six revisions ago the shortfall was "a projection the geometry
+does not carry". It is now: the seat is absent from the manifold, and here is the equation that says so. Nothing
+was delivered and the statement changed completely --- which is what narrowing is for, and is the reason the
+offer to stop at `r6536` was refused.***
+
+*Receipt `P14R62`.*
+
+
 ### Revision r6540 — 2026-09-12 (chat node). **The reassignment three and the wall sector share the hinge — which gives owed item (2) a route and costs the colourless claim in the same move.** *(Daryl's object.)*
 
 **⌗ THE SHARING, FROM TWO CAPTIONS.** *`P7` panel (A): *"Each bead swings in from the hinge along a ruling …
