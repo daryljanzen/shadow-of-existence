@@ -164,6 +164,17 @@ EST = {
         'izons chances from above. THE ETERNAL INNER HORIZON IS NOT FORMED, so the obstruction is a property of a stat '
         'ionary solution the dynamical problem does not reach. NOT delivered: inextendibility is not a spacelike r=0, s '
         'o the charged case is not thereby rejoined to the bead. '
+        'r6521 SHARPENS WHAT REMAINS, by applying this rows own move to the claim beside it. r6405 '
+        'found the inner-horizon obstruction to be a property of a STATIONARY solution the dynamical '
+        'problem does not reach -- and P03 makes that distinction once and does not apply it to the '
+        'sign-switch obstruction next to it, which is read off the same stationary f with M CONSTANT. '
+        'Dynamically half survives and half is a condition: Gauss law makes the Q^2/r^2 term real, so '
+        'charge does not wait for stationarity to gravitate -- but m is then a FUNCTION, and the sign at '
+        'the origin switches iff 2m/r stays below Q^2/r^2, i.e. iff m(r) = o(1/r) as r -> 0. Writing '
+        'm ~ k r^-p: p<1 keeps the obstruction, p>1 destroys it, p=1 decided by whether 2k exceeds Q^2. '
+        'So what stands in the horizons place is not an open-ended ask about the interior -- it is one '
+        'condition on the interior mass function. NOT CLAIMED that m fails it: nothing computes the '
+        'interior, and mass inflation is about the Cauchy horizon at FINITE r, not about the origin. '
 ),
     'PO-24': ('whether the tilt displacement is a tension', 1, 1, 5, None,
         'r4505/r6409: the remaining question is not well posed as asked. It presumes the displacement is a NUMBER; it i '

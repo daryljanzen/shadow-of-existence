@@ -146,6 +146,34 @@ sources: [cowork, chat]
 
 
 
+### Revision r6521 — 2026-09-09 (node 64). **`PO-25` sharpened: `P03` makes the stationary-versus-dynamical distinction once, and does not apply it to the obstruction standing beside it.**
+
+**⌗ THE ROW'S OWN MOVE, TAKEN ONE STEP FURTHER.** *`r6405` ran the inner-horizon question and concluded the
+obstruction there is ***"a property of a STATIONARY solution that the dynamical problem does not reach"***.
+`P03` then states the closed loop as obstructed because "at any $Q>0$ the sign at the origin has switched" ---
+**read off the same stationary $f$, where $M$ is a CONSTANT.** ⇒ *The paper draws the distinction once and
+then does not apply it to the claim in the next paragraph.*
+
+**⛭ DYNAMICALLY, HALF SURVIVES AND HALF BECOMES A CONDITION.** *The $Q^{2}/r^{2}$ term is **not** a stationary
+artefact --- Gauss's law makes $Q$ conserved and its contribution to the Misner--Sharp mass is $Q^{2}/2r$
+identically, so ***charge does not have to wait for stationarity to gravitate***. But $m$ is then a
+**function**, and the sign at the origin switches only while $2m/r$ stays below $Q^{2}/r^{2}$:*
+
+⇒ ***THE OBSTRUCTION HOLDS IFF $m(r)=o(1/r)$ AS $r\to0$.*** *Written $m\sim kr^{-p}$ and verified:
+**$p<1$ keeps it, $p>1$ destroys it, and $p=1$ is decided by whether $2k$ exceeds $Q^{2}$.**
+
+**⌗ SO THE ROW'S REMAINING QUESTION HAS A SHARP FORM IT DID NOT HAVE.** *"What stands in the horizon's place"
+was an open-ended ask about the interior. ***It is now: does the interior mass function stay $o(1/r)$ at the
+origin?*** If it does, the charged case stays obstructed for `P03`'s own reason. If it does not, **that
+obstruction is a stationary artefact in exactly the way the inner-horizon one was, and the neutral-limit
+question reopens.***
+
+⚠ *Not claimed that $m(r)$ fails it --- **nothing here computes the interior**, and mass inflation is a
+statement about the Cauchy horizon at **finite** $r$ rather than about the origin.*
+
+⌗ *`P03` 68pp, zero undefined. Both currency gates fired on the landing --- five appendix rails and `P14`'s
+served page, the latter on a marker renumber (`P3R49`→`P3R50`) from the new index row, read before rebuilding.*
+
 ### Revision r6517 — 2026-09-09 (node 64). **The two lost changelog entries landed — and the gate I started building to prevent it was MEASURED and is not warranted.**
 
 **⌗ WHAT HAPPENED.** *`r6513` and `r6515` both committed **without** their `CORPUS_MAP` entries. For `r6515`
