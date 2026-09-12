@@ -146,6 +146,39 @@ sources: [cowork, chat]
 
 
 
+### Revision r6529 — 2026-09-12 (chat node). **The condition is located: the two admission rules are independent, and the eleven channels cannot tell them apart.**
+
+**⌗ THE TWO RULES, AND THEY ARE IN DIFFERENT PAPERS.** *(W) `P3` `sec:winding`: a composite is admitted iff its
+**total winding** is integral, $\sum n_i\equiv0$, $n_i$ the signed count of graze points a constituent's route
+crosses --- a statement about **the covering of $r$**, since $r\mapsto\omega r$ once per wall crossing. (T)
+`P14` `sec:chirality`: a configuration exists only if its **total residue** vanishes, $\sum t_i\equiv0$, with
+$t=-\lambda\bmod3$ read off **the angular problem** (`L-78`). ***Two $\mathbb{Z}_3$ conditions on two different
+labels --- one about the route, one about the mode.***
+
+**⛔ AND THE ELEVEN CANNOT SEPARATE THEM.** *Both return $11/11$. **But every constituent in that set is
+assigned $n=t$ at the outset** --- quark $(+1,+1)$, antiquark $(-1,-1)$ --- so $\sum n\equiv\sum t$ identically
+across the whole set and it returns **one verdict for both rules whatever the physics**. ***So the $11/11$
+tests the admission rule and not the identification.*** *Separating them requires a constituent with
+$n\not\equiv t$; the independence is then exhaustive --- at sizes two and three, **180** configurations admitted
+by (W) and refused by (T), and **180** the other way.*
+
+**⌗ WHAT THAT BUYS, and it is a sharpening rather than a closure.** *"The identification of the triality class
+with the charge's fractional part remains the assumption it was" becomes a **per-constituent condition**:
+$n\equiv t\bmod 3$ --- that a mode bound at a wall takes a route whose crossing count is its own triality.
+**Without it the two rules are logically independent**; with it they are one rule. ***Whether the geometry
+admits a constituent whose route class differs from its internal class is the open condition, and it is now
+stated as one thing to check rather than as a register tag.***
+
+**⌗ WHAT THIS IS NOT.** *It does **not** weaken the $11/11$, which stands for the rule it tests. It does **not**
+duplicate `B24_the_triality_test_run`, which tests $t$ against the configuration count and whose own bound says
+***"the derived-vs-assumed identification is untouched"*** --- this takes up exactly that. And `P14` already
+records the neighbouring case in its own voice, that the agreement between "is a field" and "has integer
+charge" is *"not an independent check that could have failed"*; **what is added is the same observation carried
+to the pair of admission rules, with the independence computed.**
+
+*Receipt `P03_winding_vs_triality_closure`, registered `P3R47` in both appendices.*
+
+
 ### Revision r6528 — 2026-09-12 (chat node). **The P3 winding dig: the two conditions are one and a half, not two — and the receipt that would have said so was stale on all three of its clauses.**
 
 **⌗ WHAT THE DIG WAS FOR.** *Whether triality-equals-charge-fraction can be **derived** from the closure rule
