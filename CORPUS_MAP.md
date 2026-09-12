@@ -146,6 +146,46 @@ sources: [cowork, chat]
 
 
 
+### Revision r6530 — 2026-09-12 (chat node). **The composite admission rule is the one entry the fork's decision table does not carry — and it is the entry P3's own statement of the rule depends on.**
+
+**⌗ THE FORK, AND WHAT WAS CHECKED AGAINST IT.** *`P14R28` decided a fork on the signed areal radius in
+favour of **(ii)**: three radii, one per vantage, each vanishing at its own wall and at neither of the other
+two, so a crossing branches only the owner and the monodromy is **diagonal in the vantage basis**. Its decision
+table checked **triality**, **the thirds**, **the three classes** and **route-dependence** --- all four
+insensitive to the fork, which is what made the re-reading safe.*
+
+**⛔ THE COMPOSITE ADMISSION RULE IS NOT ON THAT TABLE, AND IT IS NOT INSENSITIVE.** *Under (ii) a circuit
+crossing wall $W$ with multiplicity $m_W$ has monodromy
+$\mathrm{diag}(\omega^{-\lambda m_A},\omega^{-\lambda m_B},\omega^{-\lambda m_C})$, so **identity requires
+$\lambda m_W\equiv0$ at each wall separately** --- where `P3` `sec:winding` conditions on **the total**,
+$\sum_i n_i\equiv0$. Exhaustive over multiplicities $0$–$3$: **28 configurations separate them**, and ***the
+smallest is the lap itself*** --- $m=(1,1,1)$, total three, admitted by the total rule for every $\lambda$ and
+trivial only at $\lambda\equiv0$. **Which is `P14R28`'s own headline read from the other side:** *"under (ii)
+the lap acts by $\omega^{-\lambda}$, and only triality zero returns."* *Implication computed both ways:
+triviality $\Rightarrow\sum n\equiv0$ **true**, converse **false**.*
+
+**⌗ SO THE RULE IS NECESSARY AND NOT SUFFICIENT, AND P3'S SENTENCE IS (i)'s FORM OF IT.** *Under (i) --- one
+radius, every crossing sending $r\mapsto\omega r$ --- total crossings **is** the sheet advance and "admitting a
+composite exactly when its total fractional part vanishes" is exactly "return to the same branch." Under the
+reading the corpus adopted the branch is **per-vantage**, and vanishing total fractional part is **what that
+demands of the total**. *Corrected in place: "exactly when" to "only when", with the per-vantage form named and
+the lap given as the reason.*
+
+**⌗ WHAT DOES NOT MOVE, and it is most of it.** *Nothing in the eleven-channel result changes: that set is
+stated in constituent content and **does not resolve per-wall multiplicities**, so both rules return the same
+verdict on every member of it --- the same blindness `P3R47` found in it one revision earlier, met a second time
+from a different direction. **`P3`'s rule is correct under (i) and a correct necessary condition under (ii)**,
+and the fork is not reopened: **(ii) stands on the sentence `P14R28` used to decide it.***
+
+*Receipt `P03_closure_under_the_three_vantage_reading`, registered `P3R48` in both appendices.*
+
+⌗ ***And the honest shape of the last two revisions together: I went looking for a derivation that would collapse
+the quark/lepton split's two conditions to one, and did not get it. What came back instead is that the corpus's
+own test set is blind in one specific way, and that a decided fork left one entry unchecked --- both found by
+reading two papers against each other rather than by new geometry, which is the pattern the wall/graze-point
+receipt already names about itself.***
+
+
 ### Revision r6529 — 2026-09-12 (chat node). **The condition is located: the two admission rules are independent, and the eleven channels cannot tell them apart.**
 
 **⌗ THE TWO RULES, AND THEY ARE IN DIFFERENT PAPERS.** *(W) `P3` `sec:winding`: a composite is admitted iff its
