@@ -146,6 +146,35 @@ sources: [cowork, chat]
 
 
 
+### Revision r6532 — 2026-09-12 (chat node). **The charge cannot be read from the acting count — and the reason is the thirds themselves.**
+
+**⌗ THE READING THE THREE-VANTAGE STRUCTURE INVITES.** *`P3R49` left two counts on one route: $n$, the signed
+graze-point count `P3`'s winding measures, and $\nu$, the own-wall count that actually acts on the bound mode.
+**Since $\nu$ is the operative one, the natural next move is to read the charge off it.** Run through `P3`'s own
+derivation --- partner relation, three constituents, closure of both horn-headed triples --- **that reading
+fails, twice over and for two different reasons.***
+
+**⌗ THE THREE CANDIDATES, ALL RUN.** *① **charge $=n/3$** (as written): the routes carry $+\tfrac13$ and
+$-\tfrac23$, the partner relation $y=x-1$ holds, both closure totals are integers, ***the thirds are forced***.
+② **charge $=\nu/3$**: the routes carry $0$ and $-\tfrac13$ and **the partner relation fails** --- the
+difference is $-\tfrac13$, not one lap. ③ **charge $=\nu$**: the partner relation holds, but ***$\nu$ is
+integer-valued by construction***, so closure is satisfied identically and **no denominator is forced**.*
+
+**⌗ SO THE NEGATIVE CARRIES A POSITIVE.** ***The thirds exist precisely because the charge-carrying count and
+the monodromy-acting count are different counts*** --- one running over **all three** walls and fractional in
+thirds of a lap, the other over **one** wall and integral. *Recorded as a clause in `P3` `sec:winding`, because
+the three-vantage reading invites exactly this substitution and the section should close it rather than leave
+it to be tried again.*
+
+**⌗ WHAT IT DOES AND DOES NOT DO TO THE STANDING ITEM.** *It **closes one candidate route** to deriving
+$n\equiv t$ --- via the acting count --- which is now **closed rather than untried**. It does **not** bear on
+the identification itself, which relates the charge-carrying count to the triality and is untouched. And
+`P3`'s derivation needed no defending: it is unchanged, and what is added is **why the obvious substitution
+into it does not work**.*
+
+*Receipt `P03_can_the_charge_be_read_from_the_acting_count`, registered `P3R50` in both appendices.*
+
+
 ### Revision r6531 — 2026-09-12 (chat node). **The count that acts on a bound mode is not the count the winding measures, and the two are locked at $\nu=n-1$.**
 
 **⌗ WHAT THE THREE-VANTAGE READING IMPLIES AND NOBODY HAD ENUMERATED.** *Under (ii) a crossing of wall $W$
