@@ -146,6 +146,35 @@ sources: [cowork, chat]
 
 
 
+### Revision r6535 — 2026-09-12 (chat node). **The wall is exactly where S3's premise fails — and it still does not discharge S3.**
+
+**⌗ THE LEAD, SETTLED BY THE MODE AND NOT THE LOCUS.** *`r6534` reopened the wall route and flagged one lead
+without asserting it: the wall is the $r{=}0$ locus, the signed-radius flip's fixed point, and `prop:wall` ties
+the mode's chirality to that flip's sign. ***The lead is half right.*** Normalizability in the leaf measure
+rejects the growing branch at **every** rung --- $s=-\lambda$ would need $\lambda<\tfrac34$ and no
+$\lambda=j+\tfrac12$ attains it --- so the bound content is **one $R$-eigenspace per rung, never a conjugate
+pair**. *So S3's premise --- that every object the geometry has offered comes in $R$-conjugate pairs --- **has
+an exception, and it is exactly the object S3 wanted a locus for**.*
+
+**⛔ AND THE HALF THAT IS RIGHT DOES NOT HELP.** *S3 asks for **2 left and 1 right**; `sec:count` gives
+$\dim\ker_+=3$, $\dim\ker_-=0$. ***And that split is forced rather than chosen***: the hinge $S_3$ carries the
+three walls into one another, and the sector's group is the **direct** product $D_6=S_3\times\mathbb{Z}_2$ with
+the $\mathbb{Z}_2$ being `prop:wall`'s chirality --- so **$R$ is central**, commutes with every hinge
+permutation, and three equivalent seats carry **one** eigenvalue. *A $2{+}1$ structure requires breaking that
+transitivity and nothing in the wall sector breaks it.* **So the route `r6534` reopened is closed again** ---
+one step further in, and for a computed reason rather than an inherited seating.
+
+**⌗ WHAT IT BUYS, WHICH IS A SHARPER SPECIFICATION THAN S3 AS WRITTEN.** *The colourless three need a locus
+where **the $R$-pairing fails** *and* **the seat symmetry is not transitive** --- ***two conditions, not one***.
+The wall sector meets the first and not the second. *Carried into `P14` `sec:correspondence`, where "that is
+what a successor must supply" now says what.* **The shortfall is unchanged in force for the third time in three
+revisions, and its statement is sharper each time.**
+
+*Receipt `P14_S3_against_the_wall_content`, registered `P14R56`; the tag range was **asserted** before writing
+the entry this time rather than printed and then ignored, which is the fix for the collision that recurred at
+`r6533` and `r6534`.*
+
+
 ### Revision r6534 — 2026-09-12 (chat node). **The reseating frees the walls — and two receipts had been contradicting each other across it.**
 
 **⛔ THE CONTRADICTION, AND IT WAS STANDING.** *`P14R21` sharpened the $12{+}3{=}15$ shortfall by arguing that
