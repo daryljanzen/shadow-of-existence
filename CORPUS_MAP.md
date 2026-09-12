@@ -146,6 +146,41 @@ sources: [cowork, chat]
 
 
 
+### Revision r6534 — 2026-09-12 (chat node). **The reseating frees the walls — and two receipts had been contradicting each other across it.**
+
+**⛔ THE CONTRADICTION, AND IT WAS STANDING.** *`P14R21` sharpened the $12{+}3{=}15$ shortfall by arguing that
+the three walls **cannot** supply the colourless three --- *"because `sec:count` has already spent them as the
+three GENERATIONS; reading them as one generation's leptons is a category error."* Meanwhile
+`P03_transverse_space_is_round`'s bound records, as untouched by its own result, that ***"a lepton IS a wall
+mode with $\lambda=0\bmod3$."*** **One says the walls cannot seat leptons; the other says a lepton is a wall
+mode.**
+
+**⌗ AND `sec:whichthree` DECIDES BETWEEN THEM.** *It removes the first's stated reason --- *"the generations are
+not the walls: what the wall structure fixes is the **number**, which is $D-1$ at either seat"* --- and ***a
+count of three and a seating of three are different expenditures***, which is the distinction that subsection
+was written to draw. **So the obstruction lapses**, and the reading `P14R21` called a category error is the one
+the other bound already carries.*
+
+**⌗ WHAT DOES NOT FOLLOW, WHICH IS MOST OF IT.** ***The shortfall is unchanged in force and changed in its
+reason.*** *`P14R21`'s **S3** --- the colourless triple is chirality-**asymmetric** ($2$ left, $1$ right) while
+every object the geometry has offered comes in $R$-conjugate **pairs**, so the colourless three must sit on an
+$R$-**fixed** locus --- is a requirement on chirality structure, **independent of the seating and untouched**.
+One lead is flagged and not asserted: `prop:wall` gives the wall mode a definite $\sigma_y$ eigenvalue whose
+sign is the sign of the signed-radius flip, i.e. of $R$, and the wall is the $r{=}0$ locus, that flip's fixed
+point --- **whether that makes the wall $R$-fixed in S3's sense is a question about $R$'s action on the mode
+rather than on the locus, and is not settled by the coincidence of names.***
+
+**⌗ CONSEQUENTLY the clause "nor do the leptons have a built seat" is stale** *and is cleared in both appendices
+and the index; `P14R21`'s reason is corrected in the same three places.*
+
+⌗ ***And the count that matters for how this store is trusted: `r6527` said the reseating's propagation was
+complete at four sites. This is the sixth --- two receipt bounds at `r6533`, and a live argument here. Each
+sweep was run on the phrasing the previous one had in hand, which is exactly how a correction keeps arriving
+one site short. The fourth-site claim was wrong when it was made, not overtaken.*** *And the receipt-tag
+collision of `r6533` recurred here and was caught only after registering: the range was printed and the entry
+written before the output was read.*
+
+
 ### Revision r6533 — 2026-09-12 (chat node). **Two propagation misses cleared, and the first one is mine.**
 
 **⛔ MINE, AND IT IS THE PLAINER OF THE TWO.** *The four receipts registered this session took tags
