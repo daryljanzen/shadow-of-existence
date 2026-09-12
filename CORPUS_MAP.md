@@ -146,6 +146,45 @@ sources: [cowork, chat]
 
 
 
+### Revision r6526 — 2026-09-12 (chat node). **P14: the residue is the grading, not the discriminant — and §correspondence is carrying two stale claims from two different later sections.**
+
+**⌗ THE FINDING, AND ITS PREMISE WAS THE STALE THING.** *The standing-order item "the quark/lepton question"
+(placed r1920) rests on a count taken at r1921: `lepton` ×1 in the whole corpus and that one inside a
+bibliography title, `quark` ×0. **Re-counted over the eighteen corpus `.tex` files: `quark` ×26 across four
+papers, nineteen of them in P14; `lepton` ×15.** P14's nine `baryon` uses are particle-level, not the η datum.
+**The sector was built out from under the item.** (Scope of the count: the eighteen papers, not the ledgers.)*
+
+**⌗ AND THE PHYSICS QUESTION THE ITEM ASKS HAS A CONDITIONAL ANSWER.** *P14 already carries the discriminant:
+a mode crossing a wall returns multiplied by $\omega^{-\lambda}$, so the spectrum divides at $\lambda\bmod3$
+into modes that are functions of where they are and modes that are functions of how they got there —
+residue-zero locally readable and free, the rest neither. **That is the shape of the quark/lepton
+distinction, and the triality is computed two independent ways** (the wall monodromies generating the centre;
+the configuration count $\Lambda^3$), agreeing on meson, baryon and diquark with no charge on either side.
+**What stands between the shape and the distinction is two identifications the paper holds as assumptions**:
+that the residue is the physical colour (walled by P13), and that the triality class is the fractional part of
+the charge (marked as an assumption where it is used). ***So the split is not un-forced; it is graded — forced
+given the colour identification, and not otherwise.*** *And the two are not independent: in the Standard Model
+$Q=I_3+Y/2$ locks them, which is why solving for the $uud\leftrightarrow udd$ involution returned
+$w\mapsto\tfrac13-w$ with the constant coming out as the quark doublet's hypercharge, nothing fitted.*
+
+**⛔ THE DEFECT FIXED HERE.** *Line 301 asserted that $\lambda\bmod3$ **is** the quark/lepton discriminant and
+credited `sec:correspondence` with identifying it. **That section does the opposite** — it lists "which of them
+are quarks and which are leptons" among what the sector does **not** fix. **A reader chasing the question was
+being sent to the section that declines it.** Corrected to what both passages support: the divide has the
+*shape*, and the two identifications are named with where each is held.*
+
+**⟐ AND A SECOND DEFECT SURFACED RATHER THAN FIXED, because fixing half of it would have been worse than
+leaving it.** *`sec:correspondence`'s third bullet still reads "the three are related by a global $S_3$ — a
+family symmetry," which `sec:whichthree` corrects: the hinge $S_3$ is the **within-state** index and the
+generations are seated on the turnaround's deck $\mathbb{Z}_3$, "the family symmetry proper — the part acting on
+generations and on nothing else — is cyclic." **The bullet was drafted and reverted**: three lines below it the
+same section builds a literature check on that $S_3$ — the $S_{3L}\times S_{3R}$ democracy work and its
+breaking — and correcting the bullet alone would leave the section contradicting itself within one paragraph.
+***Whether that literature contact survives the reseating is a substantive question this turn did not settle,
+and manufacturing a replacement would have been the coherence failure the casebook names.*** **Held for a pass
+that takes the bullet and the paragraph together.**
+
+
 ### Revision r6525 — 2026-09-09 (node 64). **Asked the instruments instead of the map: nothing else is owed — and the opening that looked nearest is not a reading.**
 
 **⌗ THE OWED-WORK INSTRUMENTS ARE ALL CLEAN.** *`check_burndown`: the lead register is **15 struck, 0 open**,
