@@ -146,6 +146,44 @@ sources: [cowork, chat]
 
 
 
+### Revision r6528 — 2026-09-12 (chat node). **The P3 winding dig: the two conditions are one and a half, not two — and the receipt that would have said so was stale on all three of its clauses.**
+
+**⌗ WHAT THE DIG WAS FOR.** *Whether triality-equals-charge-fraction can be **derived** from the closure rule
+rather than assumed, which would collapse the quark/lepton split's two conditions to one.*
+
+**⌗ WHAT IS ALREADY IN HAND, and the base rate held.** *The step that looked buildable --- carry `prop:wall`'s
+mode through $r=0$ and read its sheet advance --- **is done**, at c54.25 as `L-78`: $W\,d\ell=\lambda\,dr/r$
+with the $\sqrt f$ **cancelling exactly**, so $\psi\sim r^{-\lambda}$ and $\psi\mapsto\omega^{-\lambda}\psi$ per
+crossing, giving **triality $=-\lambda\bmod3$** --- and with it confinement, an isolated mode of
+$\lambda\not\equiv0$ returning to a different sheet than it left. **`L-77` adds that the graze points, the
+walls and the $r=0$ branch points are one locus wearing seven names.** *So nothing was owed there.*
+
+**⌗ WHAT THE DIG THEREFORE PRODUCES IS A SHARPENING, NOT A BUILD.** *Two $\mathbb{Z}_3$ labels are in play and
+they are of different kinds: the **winding** $w=n/3$ is a **route** label, the signed count of graze points a
+constituent's equatorial route crosses; the **triality** $t=-\lambda\bmod3$ is an **internal** label, read off
+the angular problem. A mode of triality $t$ carried across $n$ walls accumulates $\omega^{nt}$ --- ***the
+product of the two, not either one.*** So P3's closure rule ($\sum n_i\equiv0$, total fractional winding
+vanishing) and the sheet-return condition ($\sum n_i t_i\equiv0$) agree for every configuration **iff the
+constituents carry $t_i\equiv1$.*** ***That is what "the identification of the triality class with the charge's
+fractional part remains the assumption it was" amounts to, stated as a condition rather than as a register
+tag***: it is the assumption $n\equiv t$, that a constituent bound at a wall takes a route whose crossing count
+is its own triality. **And it is locatable to a sentence** --- P3 `sec:winding`'s *"to close is therefore to
+return to the same branch, and admitting a composite exactly when its total fractional part vanishes"*, which
+is where the two closure rules are read as one.
+
+**⛔ AND THE RECEIPT THAT SITS ON THIS WAS STALE ON ALL THREE OF ITS CLAUSES.**
+*`P03_wall_is_the_graze_point`'s bound read: ① **"L-74 is NOT closed"** --- `L-72` and `L-74` closed at r2886;
+② **"what remains is to show the zero-mode's label transforms as a crossing count"** --- run at c54.25 as
+`L-78`; ③ **"this SHARPENS the weld conflict: P14 reads the three walls as the three GENERATIONS... L-67
+stands"** --- `sec:whichthree` reseats the generations onto the turnaround, which is **precisely the revision
+the file called "a substantial revision to P14's reading and it is NOT made here."** **Fixed at source (the
+docstring and two print blocks) and in both appendices; the receipt re-runs and still passes.***
+
+⌗ ***Worth naming as a pattern rather than an incident: the receipt's bound was stale in the same direction as
+r6527's four sites, and for the same reason --- the reseating propagated to the papers' arguments and not to the
+apparatus that records what they owe. A bound is a claim about the corpus and goes stale like any other.***
+
+
 ### Revision r6527 — 2026-09-12 (chat node). **The reseating had reached two sites and stopped; the other four are now propagated.**
 
 **⛔ THE SHAPE, AND IT IS THE FIVE-DOCUMENT KILL AGAIN.** *`sec:whichthree` reseats the generations off the
