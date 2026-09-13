@@ -146,6 +146,36 @@ sources: [cowork, chat]
 
 
 
+### Revision r6551 — 2026-09-12 (node 64). **The row-keyed tables are ratcheted together — and the ratchet derives its own severity rather than declaring it.**
+
+**⌗ THE CLASS, MEASURED.** *Nine row-keyed tables across five generators. `regen_frontier` alone carries
+**four**, and a row must be in all of them to reach a reader --- which is why `r6547` produced a generator
+printing "9 open" over a document rendering eight. ***`r6473` found that the per-row content is a frozen table
+and built a currency gate for it; it never asked how many frozen tables there were.***
+
+**⛭⛭ AND THE RATCHET DOES NOT DECLARE WHICH TABLES MATTER --- IT READS IT OFF THE SOURCE.** *A declared list of
+"required tables" is a list that goes stale, **which is the defect one level up**. So the tables are found by
+parse, and classified by how the code accesses them:*
+
+*· **`T[p]` subscript** --- a missing row **RAISES** (`EST`, `GROUP`). **HARD.**
+*· **`p in T`** --- a missing row is **silently DROPPED** from the output (`ORDER`). **HARD.**
+*· **`T.get(p, d)`** --- a missing row takes a **silent DEFAULT** (`KIND`). **SOFT.**
+
+⇒ ***Hard tables must cover every live row. Soft tables carry a debt that is visible and monotone.*** **A
+table that changes how it is read changes class on its own, with nothing to maintain.**
+
+**⌗ AND THE SOFT DEBT IS BASELINED DOWNWARD-ONLY**, *in `corpus/view_table_debt.txt` --- six tables,
+$9,9,9,9,9$ and $7$ live rows absent. Same shape as the assertion census and for the same reason: **a debt that
+can be rewritten upward is not a debt.** ⌗ *Verified by seeding: removing `PO-45` from `ORDER` names the table
+and the row and exits 1; restoring it returns to zero.*
+
+⌗ **AND THE BACKLOG THE REGISTRATION EXPOSED IS CLEARED WITH IT.** *`check_appendix_current` green once the
+fifteen `INDEX` rows existed --- the appendices had been carrying rows the index did not generate since
+`r6529`. And `check_depmatrix` was red in **both grains**: `P3` and `P14`'s rows moved ($20\to21$, $23\to24$,
+$10\to11$) as `65`'s citations landed, and refreshing the LaTeX alone left the HTML companion behind ---
+***"the same claim in two places, and only one was refreshed, which is the correction-reaches-one-grain failure
+exactly"***, in the gate's own words. Both refreshed; `P7` compiles at zero undefined.*
+
 ### Revision r6549 — 2026-09-12 (node 64). **The front end was short a row because the generator has FOUR hardcoded lists and I had filled two — and the gate that watches it checked one.**
 
 **⛔ `r6547` REGISTERED `PO-45` AND THE LIVE SITE STILL READ EIGHT.** *The generator printed "9 open" and

@@ -1,0 +1,19 @@
+# SOFT VIEW-TABLE DEBT, baselined r6551.  Data, not code.
+# Each line: a row-keyed table read with `.get(...)`, so a missing row takes a SILENT
+# DEFAULT rather than raising or dropping the row.  ** That is a lesser defect than a hard
+# table's, and it is still a defect: the view renders the row with a value nobody chose. **
+#
+# ** THIS FILE IS REWRITTEN DOWNWARD ONLY. **  A number here may fall when a table is filled
+# in; it may never rise.  Same shape as the assertion census, and for the same reason --
+# a debt that can be rewritten upward is not a debt.
+#
+# ⌗ Severity is NOT declared here: check_view_tables reads it from how the source accesses
+#   the table, so a `.get` that becomes a subscript becomes HARD without anyone editing this.
+#
+# format:  file<TAB>table<TAB>live rows absent
+check_rows_cite_receipts.py	FLOOR	9
+rank_open.py	CONVERGES	9
+rank_open.py	REACH	9
+regen_frontier.py	KIND	7
+stamp.py	BOUNDED	9
+stamp.py	DEFINEDNESS	9
