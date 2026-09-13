@@ -146,6 +146,43 @@ sources: [cowork, chat]
 
 
 
+### Revision r6547 — 2026-09-12 (node 64). **`PO-45` registered — and registering it found that node `65`'s entire arc rests on receipts that assert nothing.**
+
+**⌗ `PO-45` IS NOW A ROW WHERE ROWS LIVE.** *It was in `OPEN_PROBLEMS_MAP` and **not** in `THE_REGISTER` --- the
+only id in that direction, six going the other way and all struck. So it was invisible to the frontier, the
+burndown and every register-reading gate. ⇒ ***`r6546`'s own words are that the shortfall "states what would
+discharge it, which is what a row requires"*** --- which is the register's definition of a row. Registered with
+its doublet, its obstructed singlet, the forced welding, and `r6537`'s closure carrying its own named
+reopening. **Frontier now nine.** ⌗ *And it needed a runway: the generator's table is hardcoded (`r6473`), so a
+new row counts but does not render. Written.*
+
+⌗ *No map→register gate added: after the fix that direction is empty, and `check_status_honesty` already
+guards the direction with a history. **One instance is not a class** --- the same measurement `r6519` made.*
+
+**⛔ AND THE REAL FINDING, WHICH THE REGISTRATION EXPOSED.** *`check_appendix_current` was red on the trunk ---
+$-20$, $-60$, $-80$ lines --- and the cause is not staleness. ***Fifteen of `65`'s receipts were written into
+the appendices without an `INDEX` row***, from `r6529` to `r6545`: the appendix carried rows the index does not
+generate, **eleven of them cited by papers, which `check_receipts` counts as orphan citations.** ⌗ *`check_receipts`
+exits 1 and sits in the half of the suite I had not swept this turn --- **I measured its exit through a pipe and
+read `tail`'s status instead of the gate's**, which is how it looked green for one command.*
+
+**⛔⛔ AND REGISTERING THEM MADE THE ASSERTION CENSUS FIRE: 15 of 755 receipts carry NO CHECK AT ALL.** *Not one
+`assert`, not one `check(` --- ***they print a derivation and exit zero***. The gate's own words: "a receipt with
+no assertion is a print statement with a filename: its OK certifies that Python exited zero." ⇒ **So `65`'s
+whole arc --- the twelve threes, the imaginary axis pair, the obstructed singlet, the $D=4$ welding --- is
+printed and unverified.** The rule is explicit and I am bound by it: *any receipt registered in this fork must
+carry at least one check.*
+
+⚠ **AND MY OWN `INDEX` ROWS CLAIMED THOSE CHECKS EXISTED.** *I wrote "the receipt's own `check(...)` calls, run
+green" into fifteen rows ***without opening one of them***. Corrected to what is true --- that they carry no
+assertion, are registered because an orphan citation is worse, and that the debt is owed. **The same failure I
+have spent the session correcting, committed while correcting it.**
+
+**⌗ FIRST ONE DONE, AS THE PATTERN FOR THE REST.** *`P14_the_coincidence_is_forced_by_the_dimension` now asserts
+what it had only printed: the antipode/midpoint coincidence over $n=2\ldots39$ tracking hinge-count parity and
+nothing else, $D=4$ welding, $D=3$ and $D=5$ breaking. ***Verified falsifiable --- inverting the parity makes it
+fail.*** **No claim added; the claims made checkable.** Fourteen remain.
+
 ### Revision r6546 — 2026-09-12 (chat node). **The map revised — and three stale items in it cleared while there.**
 
 **⌗ NEW ROW `PO-45` — the colourless triple has no seat, and the reason is the dimension result.** *The

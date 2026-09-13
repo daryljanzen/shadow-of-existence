@@ -88,3 +88,37 @@ print()
 print("  NOT CLAIMED: that odd D is otherwise viable, or that a successor in odd D")
 print("  would recover the Standard Model -- only that the separation is available")
 print("  there and nowhere else reachable from this construction.")
+
+# =================================================================================================
+# ** ⛔ ASSERTIONS ADDED r6547 (node 64).  THIS FILE HAD NONE. **
+#
+#   *Registered at r6547 because `P14` cites it, and an orphan citation is worse than a debt.  But
+#   `check_receipts`' assertion census is right about what it was: ** a receipt with no assertion is
+#   a print statement with a filename, and its OK certifies only that Python exited zero. **  The
+#   arithmetic below was printed and never checked, so nothing here could ever have gone red.*
+#
+#   ⌗ These assert exactly what the file already computes -- the antipode/midpoint coincidence, its
+#     parity, and the two dimensions that break it.  ** No claim is added; the claims are made
+#     falsifiable. **  Written by 64, not 65, and reversible by its author.
+# =================================================================================================
+
+def _antipode_is_midpoint(n):
+    """the antipode of a hinge sits at pi; the midpoints at pi(2j+1)/n.  coincide iff n odd."""
+    return any(abs(1 - (2*j + 1)/n) < 1e-15 for j in range(n))
+
+
+assert _antipode_is_midpoint(3), "D=4 gives n=3 and the welding must hold"
+assert all(_antipode_is_midpoint(n) == (n % 2 == 1) for n in range(2, 40)), \
+    "the coincidence must track the PARITY of the hinge count and nothing else"
+assert not _antipode_is_midpoint(2) and not _antipode_is_midpoint(4), \
+    "D=3 and D=5 give even n and must BREAK the welding -- the paper's two nearest dimensions"
+
+_D = 4
+assert _D - 1 == 3 and _antipode_is_midpoint(_D - 1), \
+    "the hinge count is D-1, so D=4 welds"
+assert all(not _antipode_is_midpoint(D - 1) for D in (3, 5)), \
+    "and the separation lives only at ODD D, which P14's count and parity jointly exclude"
+
+print()
+print("  ASSERTIONS (r6547): the coincidence tracks hinge-count parity over n = 2..39;")
+print("  D=4 (n=3) welds; D=3 and D=5 (n=2,4) break it.  Checked, not only printed.")

@@ -55,6 +55,28 @@ EST = {
         'than of the scale it is reported against -- on this arm the first peak is not set by the sound horizon, '
         'and nothing about the pin explains where 206 comes from. '
 ),
+    'PO-45': ('the colourless triple has no seat, and the reason is the dimension result', 1, 0, 3, None,
+        'r6546/r6547: P14 delivers 12 of the 15 Weyl fermions of a generation and not the colourless 3, and '
+        'that shortfall now states what would discharge it. The triple wanted is a doublet plus a singlet. '
+        'THE DOUBLET EXISTS: the Z3-fixed axis carries a vantage at IMAGINARY height, pow = -alpha^2 giving '
+        'the pair +/- i alpha by the same power-of-a-point rule that puts a hinge at sqrt3 alpha. THE SINGLET '
+        'IS OBSTRUCTED, and by a coincidence of two conditions rather than an absence: a single branch '
+        'requires pow = 0, which holds exactly on the throat circle and nowhere else, and the three walls lie '
+        'on that circle, each antipodal to its hinge -- so being unbranched and being coloured are ONE '
+        'condition here. AND THE WELDING IS FORCED RATHER THAN PLACED, which makes the shortfall the D=4 '
+        'result read from the matter side: a wall is antipodal to its hinge and a graze point lies BETWEEN '
+        'two, and those coincide exactly when the hinge count is ODD, hence in EVEN D. With the count at '
+        'D-1, D=4 gives n=3 -- odd, welded -- so the separation lives only at odd D, which P14s own count '
+        'and parity jointly exclude. WHAT WOULD DISCHARGE IT: a construction separating pow=0 from the '
+        'colour index -- neither a new three nor a larger substrate, but that one separation. AND THE '
+        'SEARCH SPACE IS CLOSED OF ITS SOURCES with its own reopening named: r6537 enumerated TWELVE threes '
+        'across P3s geometry and P14s count, chirality and whichthree -- eight reduce to the hinge three, '
+        'three to the turnaround three, and the one that is neither (the causal classes) fails because '
+        'causal character is a metric invariant, so R acts as the IDENTITY, 3+0 and not the 2+1 a seat '
+        'needs. Exhaustive of its sources and NOT a theorem that no other three exists: a three arising in '
+        'P5s groupoid, P12s algebroid, or the charged sector would reopen it, and that is the next place '
+        'to look. '
+),
     'PO-36': ('does the Hubble-Eddington radius track the dynamical mass or the baryonic one', 1, 0, 4, None,
         'r4203/r6407: the discrimination is QUANTIFIED -- the two mass choices differ by f_b^(-1/3) = 1.85 in the radiu '
         's (10.5 Mpc against 5.7 on a rich cluster) and by 1/f_b = 6.4 in a Lambda inferred from an observed one. BUT I '
