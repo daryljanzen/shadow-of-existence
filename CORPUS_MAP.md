@@ -146,6 +146,41 @@ sources: [cowork, chat]
 
 
 
+### Revision r6565 — 2026-09-12 (node 64). **The lift's interior characterised — the frame exchange is ONE rule, the binding radius is a BRANCH POINT of the time map, and `r6563`'s framing of `[6*]` was wrong.**
+
+**⛭ THE FRAME EXCHANGE DOES NOT CHANGE AT THE BINDING RADIUS.** *`r6563` reported a half-sector relation
+outside the lift and "differently" inside, and flagged the inside as uncharacterised. ***There is no second
+behaviour.*** With $u=(r/A)^{3/2}$, **$r\to-r$ is $u\to iu$ everywhere** --- verified against the original
+figure's own `wing` on both sides of $\|r\|=A$, **real part included**. ⇒ *The map is one rule; the piecewise
+appearance is $\operatorname{arcsinh}$'s.*
+
+**⛭⛭ AND THAT IS BECAUSE THE BINDING RADIUS IS A BRANCH POINT OF THE TIME MAP.** *$\operatorname{arcsinh}$
+branches at $\pm i$, so $\operatorname{arcsinh}(iu)$ branches at $u=\pm1$ --- ***exactly $\|r\|=A$***, where
+$A^{3}=2M\alpha^{2}$ and $A=2^{1/3}R_{\mathrm{TA,max}}$, which `P3` gives as **"the largest shell around a mass
+$M$ that can stay gravitationally bound against the cosmological expansion"**. ⇒ ***The bound/unbound boundary
+and the branch point of the time map are one radius.***
+
+**⌗ AND THE TWO $R$-INVARIANT FIBRES ARE THE LIFT'S TWO ENDS.** *The base runs $\theta=\tfrac23\arcsin u$ from
+$0°$ to $60°$: the **branch point** gives $\{0,120,240\}$, the **hinges**; the **binding radius** gives
+$\{60,180,300\}$, the **walls**; and every fibre strictly between fails invariance. **Not bases that happened
+to work --- the endpoints of the bound region, with the lift the interpolation between them.**
+
+**⛔ AND `r6563` OVERSTATED THE CONTINGENCY, WHICH IS MY ERROR AND IN THE DIRECTION THAT SOUNDS MORE CAUTIOUS.**
+*It called the $2{+}1$ "contingent on `[6*]`". **That conflates two questions.** A **MAP** question --- which
+involutions act on the object --- is computable and needs no species labelling. A **LABELLING** question ---
+whether species is $\mathrm{sign}(r)$ or the quadrant sign --- is what `[6*]` actually asks, and is open.
+⇒ ***The $2{+}1$ is a fact about an involution acting on a fibre and does not wait on `[6*]`. What waits on
+`[6*]` is whether that $2{+}1$ means anything about matter and antimatter.*** ⌗ *And `P7`'s caption is what
+makes $r\to-r$ a **map** rather than a labelling: the two $R$-conjugate frames read **"each matter (blue) on
+its own $r>0$ side"** --- $r$ is frame-relative.*
+
+⚠ *Held where it belongs: **not** that a branch point **is** a binding mechanism. The two coincide in
+**radius**, and coincidence of radius is what is shown.*
+
+⌗ *And `check_receipts` caught an unescaped math bar in my own `INDEX` row --- $\|r\|$ read as column
+separators, 14 columns where 8 were expected. **The gate's own words: the appendix generator silently DROPS
+such receipts.** Escaped in both the row and the register.*
+
 ### Revision r6563 — 2026-09-12 (node 64). **The tension decided: the imaginary-time three is GENUINELY THIRD, and under the motion reading it is the first candidate in this search to pass BOTH of `r6537`'s tests.**
 
 **⌗ `r6561` LEFT TWO FACTS PULLING OPPOSITE WAYS** --- *the sectors carry a $2{+}1$, which a seat needs; and the
