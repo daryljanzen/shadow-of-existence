@@ -146,6 +146,43 @@ sources: [cowork, chat]
 
 
 
+### Revision r6561 — 2026-09-12 (node 64). **The r1000 worldline pictures resurrected — the lift sits on the WALL rays, $\mathrm{Im}\,\tilde\tau$ is three-fold by construction, and `[6*]` gains a stake it has never had.**
+
+**⌗ WORKED AT DARYL'S DIRECTION, AND SPECULATIVE BY DESIGN** --- *resurrecting the $(\mathbb{C}_r\times\mathbb{C}_{\tilde\tau})$
+figures of `r1000`--`r1080` with infrastructure they did not have. **A reframing of an open item, offered at
+that weight.***
+
+**⛭ THE LIFT SITS ON THE WALL RAYS, NOT THE HINGE RAYS.** *Face 2 ($\tilde\tau$ real) at $\arg r=0,120,240$ is
+the **hinges**; face 4 --- the lift, $\tilde\tau$ imaginary --- at $60,180,300$ is the **walls**. ⇒ ***And the
+walls are the graze points, `P14`'s colour index.*** **Real time on the hinges, imaginary time on colour.**
+
+**⛭ AND $\mathrm{Im}\,\tilde\tau$ IS THREE-FOLD BY CONSTRUCTION, NOT BY COUNTING.** *$\sinh^{2}$ is invariant
+under $w\to w+i\pi$ --- the sign flips, the square does not --- so $w$ is defined mod $i\pi$, and
+$\tilde\tau=(2a/3)w$ gives period $2\pi\alpha/3$. ⇒ ***Exactly three sectors fill the horizon's thermal circle
+$\beta=2\pi\alpha$: the three is the ratio of the bead's own imaginary period to the horizon's.*** ⌗ *And the
+lift's ceiling $\pi/3$ is **half** the period --- the sectors' midpoints, which is the walls' own arrangement.
+The lift's boundary $A^{3}=2M\alpha^{2}$ is $2^{1/3}$ times the Hubble--Eddington radius, **the largest shell
+that stays bound**: inside it $\mathrm{Re}\,\tilde\tau=0$ and the motion is purely Euclidean.*
+
+**⛭⛭ AND `[6*]` IS POSED AS A DISJUNCTION WHILE ITS OWN DIAGNOSIS DENIES ONE.** *`r1080`, verbatim: the two
+readings are about **"MOTION ALONG A BEAD"** versus **"WHERE A POINT SITS"** --- "those are not the same
+thing" --- and then it asks **"which reading is the object's"**, which presupposes one question. ***Two
+answers to two questions do not compete.*** ⌗ *And they do different work, measurably: $R$ as **motion**
+permutes the three sectors $\{0{\to}2,1{\to}1,2{\to}0\}$ --- **a $2{+}1$, the first this whole search has
+produced** --- while $R$ as **position** maps between sides and permutes nothing.*
+
+⇒ ***SO `[6*]` NOW HAS A STAKE.*** *Carried since `r1080` as a marked conflict with nothing hanging on it.
+**Which reading governs decides whether a candidate seat for the colourless triple exists at all.***
+
+⚠ **AND MOST OF IT IS NOT ESTABLISHED, WHICH IS THE POINT OF SAYING SO.** *Not that the readings **are**
+complementary --- only that `[6*]` as posed cannot distinguish that from a conflict. ***Not that the sectors
+are genuinely third***: the lift sitting on the wall rays makes **reduction to the wall three** exactly the
+thing to test, and eight of `r6537`'s twelve failed there. And nothing about leptons.*
+
+⌗ *Face 3 checked too: **no lift and no binding radius** --- that is face 1's alone --- and its "all purple" is
+the **ray** rule's verdict, the quadrant rule putting it entirely in one colour. **The same conflict `r1080`
+marked on face 1, on face 3 and in the same direction.***
+
 ### Revision r6559 — 2026-09-12 (node 64). **The deprecated `p0` tag cleared out of this line's own prose — ninety-six uses, all mine, all written after the rule.**
 
 **⛔ THE RULE IS OLDER THAN THIS LINE AND I WAS BREAKING IT THROUGHOUT.** *The geometric core paper is **`P17`**;
