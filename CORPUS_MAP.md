@@ -146,6 +146,34 @@ sources: [cowork, chat]
 
 
 
+### Revision r6545 — 2026-09-12 (chat node). **The welding is forced — and forced by the same result that fixes $D=4$. The arc closes on a statement about the dimension.**
+
+**⌗ THE QUESTION `r6544` LEFT.** *Its demand was "a construction in which $\mathrm{pow}=0$ need not carry the
+colour index." **Is that welding forced, or inherited from how the walls were placed?***
+
+**⌗ IT REDUCES TO A FACT ABOUT $n$ POINTS ON A CIRCLE.** *A wall is **antipodal** to its hinge; a graze point
+lies **between** two hinges; and the graze point is on the throat **by definition**, tangency being
+$\mathrm{pow}=0$. So the welding holds exactly when a hinge's antipode is a midpoint between two hinges. For $n$
+equally spaced hinges the antipode sits at $\pi$ and the midpoints at $\pi(2j+1)/n$ --- ***they coincide iff
+$n=2j+1$, that is, iff $n$ is odd***.*
+
+**⌗ AND $n$ IS NOT FREE.** *The hinge count is $D-1$. So the welding holds in **even $D$**, and $D=4$ gives
+$n=3$ --- odd, welded. **The nearest dimensions that would break it are $D=3$ and $D=5$**, both odd $D$ ---
+***exactly what this paper's count and parity results jointly exclude.****
+
+**⛔ SO THE MISSING SINGLET IS THE DIMENSION RESULT SEEN FROM THE MATTER SIDE.** *The same fact that makes the
+cut four-dimensional **welds unbranchedness to colour**, and the singlet is the price. A successor that
+separates the two conditions is working in a dimension this construction has closed. *Carried into `P14`
+`sec:correspondence`.*
+
+⌗ ***Ten revisions, and the arc's statement has moved from "a projection the geometry does not carry" to "the
+$12{+}3$ shortfall is the $D=4$ result, read from the other end." That is not a delivery and it is not a
+failure to deliver — it is the join the shortfall was hiding. The thing that is missing has been traced to the
+thing that is forced, which is where a negative result stops being a gap and becomes a consequence.***
+
+*Receipt `P14R66`.*
+
+
 ### Revision r6544 — 2026-09-12 (chat node). **The singlet is obstructed — and the obstruction is a coincidence of two conditions, not an absence.**
 
 **⌗ THE THREE REQUIREMENTS, AND TWO OF THEM COLLIDE.** *The singlet must (i) have **one branch** under the
