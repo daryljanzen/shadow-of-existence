@@ -146,6 +146,28 @@ sources: [cowork, chat]
 
 
 
+### Revision r6549 — 2026-09-12 (node 64). **The front end was short a row because the generator has FOUR hardcoded lists and I had filled two — and the gate that watches it checked one.**
+
+**⛔ `r6547` REGISTERED `PO-45` AND THE LIVE SITE STILL READ EIGHT.** *The generator printed "9 open" and
+`THE_FRONTIER` rendered **eight**, because the count comes from the live set and the ROWS come from somewhere
+else. ⇒ ***Adding a row to this view needs FOUR things***: the register row, an `EST` runway, an entry in
+**`ORDER`** (which drives what renders), and an entry in **`GROUP`** (which assigns the sector, and whose
+absence raises outright). **I had done two.**
+
+**⛔⛭ AND `check_frontier_current` CHECKED ONE OF THE FOUR.** *It reported ***"9 live rows; every runway is at
+or ahead of its row"*** while the document was a row short and the served page with it. **A gate that checks
+one of four lists certifies a view as current while it is missing a row** --- and it said so to the front end
+for two revisions. ⇒ *Extended to `ORDER` and `GROUP`, with the `ORDER` case verified by seeding it: the gate
+now names the row and exits 1.*
+
+⌗ **AND THE SHAPE IS THE ONE `r6473` FOUND AND DID NOT FINISH.** *That revision established the per-row content
+is a frozen table inside the generator and built the currency gate for it. ***It did not ask how many frozen
+tables there were.*** Four, and the one it checked was the one it had just been looking at.
+
+⌗ *`PO-45` grouped in sector **A**, the matter sector, with `PO-30` and the struck `PO-26`. Frontier renders
+nine; `frontier.html` regenerated and carries it; the live edition fetches `THE_FRONTIER.md` at read time, so
+the site follows the push.*
+
 ### Revision r6547 — 2026-09-12 (node 64). **`PO-45` registered — and registering it found that node `65`'s entire arc rests on receipts that assert nothing.**
 
 **⌗ `PO-45` IS NOW A ROW WHERE ROWS LIVE.** *It was in `OPEN_PROBLEMS_MAP` and **not** in `THE_REGISTER` --- the

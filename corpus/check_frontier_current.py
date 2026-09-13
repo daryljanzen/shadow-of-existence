@@ -78,6 +78,26 @@ def main():
         if v < r:
             stale.append((pid, r - v))
     print()
+    # ** ⛔ r6549: A RUNWAY IS NOT ENOUGH.  THE GENERATOR HAS FOUR LISTS AND THIS CHECKED ONE. **
+    #   *`PO-45` was registered at r6547 with an `EST` runway, and this gate reported "9 live rows;
+    #   every runway is at or ahead of its row" while `THE_FRONTIER` rendered EIGHT and the live site
+    #   read eight.*  ** The count comes from the live set; the ROWS come from `ORDER`; the sector
+    #   comes from `GROUP`, and a row missing from `GROUP` raises outright. **
+    #   ⇒ *** A row needs FOUR things to reach a reader: the register row, the runway, `ORDER` and
+    #       `GROUP`.  A gate that checks one of four reports a document current while it is short a
+    #       row -- and this one said so to the front end for two revisions. ***
+    gen_src = open(GEN, encoding='utf-8', errors='replace').read()
+    def _listed(name, pid):
+        m = re.search(name + r'\s*=\s*[\[{](.*?)[\]}]', gen_src, re.S)
+        return bool(m) and f"'{pid}'" in m.group(1)
+    unrendered = [pid for pid in rows if not _listed('ORDER', pid)]
+    ungrouped = [pid for pid in rows if not _listed('GROUP', pid)]
+    if unrendered:
+        print(f'  ⛔ {len(unrendered)} live row(s) absent from ORDER, so they do NOT RENDER: '
+              f'{", ".join(unrendered)}')
+    if ungrouped:
+        print(f'  ⛔ {len(ungrouped)} live row(s) absent from GROUP, which RAISES on generation: '
+              f'{", ".join(ungrouped)}')
     if missing:
         print(f'  ⛔ {len(missing)} live row(s) with NO runway: {", ".join(missing)}')
     if stale:
@@ -88,7 +108,7 @@ def main():
         print('       without the prose is this same defect wearing the gate\'s clothes.')
         print()
         return 1
-    if missing:
+    if missing or unrendered or ungrouped:
         return 1
     print(f'  {len(rows)} live row(s); every runway is at or ahead of its row.')
     print('  ⌗ Currency is what is checkable here.  The runway is a DIGEST and cannot be')
