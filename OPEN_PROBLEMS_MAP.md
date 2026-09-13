@@ -75,7 +75,7 @@ claim it bears on is a proof rather than a coherent proposition.*
   and those coincide exactly when the hinge count is odd, hence in even $D$. With the count at $D-1$, the
   separation lives only at odd $D$ --- which `P14`'s own count and parity jointly exclude. **So the missing
   three is the $D=4$ result read from the matter side**, and what would discharge the row is a construction
-  separating $\mathrm{pow}=0$ from the colour index. *`r6545`.*
+  separating $\mathrm{pow}=0$ from the colour index.
 
 - ~~**`PO-26` — the compact-face fermion sector.**~~ **STRUCK `r6463`, on two concurring referee reads.** *A spinor sector **is** built on the discrete component (`P14`) and supplies no equivariant index. The sector the obstruction acts on --- gauge-acted, isometry-realised, on the compact face --- **is now specified**: the face is the substrate on its other real form, so the relation is continuation not reduction, and a fermion there is a $\mathrm{Spin}(6)=\mathrm{SU}(4)$ object with colour a subgroup of that spin group. ***Two obstructions meet on it***: $\mathfrak{su}(3)$ admits no equivariant map to the cosmological $S^3$, so the cut destroys it; and the round face carries **no massless content** for it to act on. The discharge asked for *an obstruction shown*, not for one shown inescapable --- **a bar `P13` explicitly declines in its own voice**.
 - **`PO-31` — the progenitor spectrum.** `P15` calls this *the
@@ -85,8 +85,7 @@ claim it bears on is a proof rather than a coherent proposition.*
 
 **⌗ These three are not adjacent to each other and must not be grouped as one gap.** They share only the shape
 of the obstruction. `PO-30` wants a dynamics; `PO-45` wants a construction; `PO-31` wants a route past an
-erasure. *The paragraph read "these four" and named `PO-26`, struck at `r6463`, and `PO-40`, which is not on
-this map; the count is three, and it is stated as three rather than made up to four.*
+erasure.
 
 **⌗ Two have their difficulty stated as a result rather than as a lack.** `PO-31`'s erasure is *proved*,
 which is what makes it a frontier and not a gap. `PO-26`'s wall is a mechanism, not a failure to build.
@@ -130,9 +129,9 @@ them apart will mis-price the whole set.**
 
 ## WHAT IS *NOT* ON THIS MAP, AND WHY
 
-**Nothing was removed from the frontier to make this shape.** All ten rows appear above --- nine carried
-forward and `PO-45`, which is not an addition to the frontier but the statement the matter sector's shortfall
-acquired once it could say what would discharge it.
+**Nothing was removed from the frontier to make this shape.** All ten rows appear above. `PO-45` is not an
+addition to the frontier but the statement the matter sector's shortfall takes once it can say what would
+discharge it.
 
 **And nothing here is paring.** The set reached ten by items being resolved, not reclassified: sixteen rows
 are struck, and of the seven struck since `P18` was registered, six were sound closes with receipts that run
