@@ -146,6 +146,45 @@ sources: [cowork, chat]
 
 
 
+### Revision r6555 — 2026-09-12 (node 64). **`r6537`'s named reopening walked: two more genuinely third threes, no seat — and four candidates have now found four distinct ways to fail one.**
+
+**⌗ THE REOPENING WAS NAMED AND LEFT STANDING.** *`r6537` closed the seat search "exhaustive of its **sources**"
+and said in terms that a three in `P5`'s groupoid, `P12`'s algebroid or the charged sector **"would reopen it,
+and that is the next place to look rather than a caveat to file"**. All three searched, with `r6537`'s own test
+unchanged: **genuinely third**, and **$R$ acting as a transposition**.*
+
+**⛭ `P5` YIELDS ONE, AND IT FAILS IN A WAY NONE OF THE OTHERS DID.** *The **three discrete operations** ---
+$\sigma$ crossing no seam, $R$ the back seam at $r=0$, $\xi$ the throat seam at $r=\alpha$ --- are three
+distinct maps at three distinct loci, so **genuinely third**. ⇒ ***But $R$ does not act on the set at all***:
+$\sigma$ and $R$ generate $D_6$, so conjugation by $R$ carries $\sigma$ **outside** it (their product has order
+six, so they do not commute --- verified), and $\xi$ is a **partial** involution outside the group entirely.
+**Not $3{+}0$ and not $2{+}1$: there is no action to have eigenvalues.**
+
+**⛭ `P12` YIELDS ANOTHER, FAILING DIFFERENTLY AGAIN.** *The symmetric-pair isotropy dimensions of
+$\mathfrak{so}(5,1)$, $\{6,7,10\}$ --- **genuinely third**, and only two are realised: $10=\mathfrak{so}(4,1)$
+(Type O) and $6=\mathfrak{so}(2,1)\oplus\mathfrak{so}(3)$ (Nariai), ***$7$ by nothing***. **A seat needs $R$ to
+fix one and swap two; here there are two objects and a gap.** ⌗ *The charged sector adds nothing: its threes are
+the cubic's roots, already reduced by the vantage argument.*
+
+**⌗⌗ AND THE USEFUL PART IS THE TAXONOMY.** *Four candidates, ***four distinct ways to fail a seat***: $R$ acts
+and acts **trivially** (the causal classes); the three splits $2{+}1$ but **shares the hinge**, so it has
+fermion content or colour-freedom and never both (the reassignment three); $R$ **does not act** (the
+operations); the third object **does not exist** ($\{6,7,10\}$). **The closure now spans five papers and is
+still not a theorem**, and the demand on a successor is unchanged: **introduce structure, do not re-read what
+is present.**
+
+⚠ **AND I NEARLY WROTE THE REASSIGNMENT THREE OUT OF IT.** *My first draft called the causal classes the only
+genuinely third three, missing that `P14` already carries one **that passes the seat test** and fails for
+sharing the hinge. ***Reading the paper's own passage caught it before it landed***, and the taxonomy is
+better for it --- the one candidate that gets the $2{+}1$ is the one that shows a seat needs more than the
+eigenvalues.*
+
+⌗ **AND TWO GATES CAUGHT MY OWN EDITS.** *`check_paper_tense` on "have since been searched" --- **a record of
+states in a paper that must present one**, which is the rule stated corpus-wide; rewritten. And
+`check_provenance` on a receipt quoting `P5`'s **comment** canon as published text, the `FOR_54` item 17 class;
+replaced with the body's own words, which carry the same distinction. **103 gates green but
+`check_receipts_run`.**
+
 ### Revision r6553 — 2026-09-12 (node 64). **All sixteen of `65`'s receipts now assert — and the sixteenth was one my own scan had counted as registered.**
 
 **⌗ THE CENSUS IS BACK TO ZERO.** *`r6547` registered fifteen receipts that carried **no assertion at all** ---
