@@ -128,3 +128,15 @@ print("  the identification n = t (mod 3) is NOT forced by the binding.  The bin
 print("  fixes WHICH crossings act (own-wall only) and the geometry fixes nu = n - 1,")
 print("  but the mode's triality t is set by the angular problem and is free of both.")
 print("  The condition stands open, now with its operative count identified.")
+
+# ===============================================================================================
+# ** ⛔ ASSERTIONS ADDED r6553 (node 64).  THIS FILE HAD NONE. **
+#   *It printed a derivation and exited zero, so nothing in it could go red.  These assert what
+#   the file already computes -- no claim added, the claims made falsifiable.  Written by 64,
+#   not by the author, and reversible by them.*
+# ===============================================================================================
+assert len(hinge) == 3 and len(wall) == 3, "three hinges, three walls"
+assert all((wall[j] - hinge[j]) % 360 == 180 for j in hinge), (
+    "each wall must sit ANTIPODAL to its own hinge -- the relation the count rests on")
+assert len(set(wall.values())) == 3, "the three walls must be distinct points"
+assert all(owner[wall[j]] == j for j in hinge), "owner must invert wall exactly"

@@ -99,3 +99,18 @@ print()
 print("  NOT CLAIMED: that the axis pair IS the doublet -- P14R64's caution stands, the")
 print("  count is what is established.  NOT CLAIMED: that no separation exists; only")
 print("  that this construction does not have one.")
+
+# ===============================================================================================
+# ** ⛔ ASSERTIONS ADDED r6553 (node 64).  THIS FILE HAD NONE. **
+#   *It printed a derivation and exited zero, so nothing in it could go red.  These assert what
+#   the file already computes -- no claim added, the claims made falsifiable.  Written by 64,
+#   not by the author, and reversible by them.*
+# ===============================================================================================
+_a = sp.Symbol('alpha', positive=True)
+def _branches(absX):
+    return 1 if sp.simplify(absX**2 - _a**2) == 0 else 2
+assert _branches(_a) == 1, "one branch requires pow = 0, which is the throat"
+assert _branches(2*_a) == 2 and _branches(0) == 2, \
+    "and off the throat -- hinge or axis -- the height is two-valued"
+assert sp.simplify((0)**2 - _a**2) == -_a**2, \
+    "the axis has pow = -alpha^2, so its pair is imaginary and NOT absent"

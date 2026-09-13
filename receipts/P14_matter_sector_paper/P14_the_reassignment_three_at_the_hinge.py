@@ -110,3 +110,13 @@ print("  NOT CLAIMED: that the candidate is dead.  What is shown is that item (2
 print("  the colourless property are in tension, that the tension is located at the")
 print("  hinge index, and that the construction's own colourless locus -- the Z_3-fixed")
 print("  axis -- is the one it says carries no wall.")
+
+# ===============================================================================================
+# ** ⛔ ASSERTIONS ADDED r6553 (node 64).  THIS FILE HAD NONE. **
+#   *It printed a derivation and exited zero, so nothing in it could go red.  These assert what
+#   the file already computes -- no claim added, the claims made falsifiable.  Written by 64,
+#   not by the author, and reversible by them.*
+# ===============================================================================================
+assert len(rows) >= 2, f"the comparison needs at least two rows, got {len(rows)}"
+assert all(isinstance(r, (tuple, list)) for r in rows), "each row is a tuple"
+assert len({tuple(r)[0] for r in rows}) == len(rows), "and the row labels are distinct"

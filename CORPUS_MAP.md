@@ -146,6 +146,32 @@ sources: [cowork, chat]
 
 
 
+### Revision r6553 — 2026-09-12 (node 64). **All sixteen of `65`'s receipts now assert — and the sixteenth was one my own scan had counted as registered.**
+
+**⌗ THE CENSUS IS BACK TO ZERO.** *`r6547` registered fifteen receipts that carried **no assertion at all** ---
+printed derivations exiting zero, nothing able to go red. Each now asserts what it already computed: the
+antipode/midpoint parity over $n=2\ldots39$; the **eleven channels** where the two $\mathbb{Z}_3$ admission
+rules must agree; the **twelve threes** tallying $8+3+1$ exactly as the arc claims; $R$'s eigenvalues $+1,+1,-1$
+on a transposition; the axis pair's $\mathrm{pow}=-\alpha^{2}$ giving two purely imaginary conjugate roots; the
+$\mathbb{Z}_3$-fixed axis having **no real solution**. ***No claim added anywhere --- the claims made
+falsifiable.***
+
+**⛔ AND THE HOLLOW-ASSERTION LINT CAUGHT TWO OF MINE ON LANDING.** *A comparison of two literals, and a count
+asserted non-negative. **Both were decorations that could not fail** --- the exact thing I have spent the
+session correcting in others, committed while correcting it. ⌗ *And the replacement was caught too: `_kept == 0`
+is constant-foldable, so it cannot fail either.* ⇒ *Restated as a property over the rungs --- **no rung keeps
+the growing branch, and every rung keeps the decaying one** --- which is what the finding actually says and
+what a survivor would falsify.*
+
+**⛔⛭ AND A SIXTEENTH RECEIPT EXISTED THAT MY SCAN HAD MISSED.** *`P14_the_reseating_frees_the_walls` was
+**mentioned in another row's prose**, so my "is the stem in `INDEX`" substring test counted it registered.
+***`check_receipt_orphans` asks the right question --- does a row REGISTER it --- and found it on disk with no
+row.*** **A test that looks right and measures the wrong thing**, which is the class this session keeps
+turning up, here in my own scan. Registered, with assertions, and its finding is a real one: the obstruction
+`P14R21` stated against the walls **lapses**, because the reseating removed its stated reason.
+
+⌗ *103 gates green but `check_receipts_run`. Appendices, served pages and the dependency matrix all current.*
+
 ### Revision r6551 — 2026-09-12 (node 64). **The row-keyed tables are ratcheted together — and the ratchet derives its own severity rather than declaring it.**
 
 **⌗ THE CLASS, MEASURED.** *Nine row-keyed tables across five generators. `regen_frontier` alone carries

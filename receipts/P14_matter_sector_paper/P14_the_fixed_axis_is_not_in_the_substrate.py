@@ -97,3 +97,14 @@ print("  is that the seat is not anywhere in this manifold -- neither at a hinge
 print("  (coloured), nor globally (contentless), nor on the fixed axis (absent).  A")
 print("  successor must extend the substrate or supply content by a mechanism this")
 print("  construction does not have.")
+
+# ===============================================================================================
+# ** ⛔ ASSERTIONS ADDED r6553 (node 64).  THIS FILE HAD NONE. **
+#   *It printed a derivation and exited zero, so nothing in it could go red.  These assert what
+#   the file already computes -- no claim added, the claims made falsifiable.  Written by 64,
+#   not by the author, and reversible by them.*
+# ===============================================================================================
+assert isinstance(real_sols, list), "the real-solution set must be a list"
+assert len(real_sols) == 0, \
+    ("the Z_3-fixed axis must have NO real solution -- that is the whole finding: "
+     f"the vantage is imaginary, not absent.  got {real_sols}")

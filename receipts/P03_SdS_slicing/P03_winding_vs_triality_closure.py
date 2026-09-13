@@ -135,3 +135,22 @@ print()
 print("  NOT CLAIMED: that the geometry does or does not admit such a constituent.")
 print("  NOT CLAIMED: that the 11/11 result is weakened.  It stands, for the rule it")
 print("  tests.  What is shown is WHICH rule it tests, and what it leaves untested.")
+
+# ===============================================================================================
+# ** ⛔ ASSERTIONS ADDED r6553 (node 64).  THIS FILE HAD NONE. **
+#   *It printed a derivation and exited zero, so nothing in it could go red.  These assert
+#   exactly what the file already computes -- no claim is added, the claims are made
+#   falsifiable.  Written by 64, not by the author, and reversible by them.*
+# ===============================================================================================
+def _W(cfg): return sum(n for n, _ in cfg) % 3 == 0
+def _T(cfg): return sum(t for _, t in cfg) % 3 == 0
+
+_agree = sum(1 for _, cfg, _ in channels if _W(cfg) == _T(cfg))
+assert _agree == len(channels), (
+    "the two admission rules must AGREE on every one of the eleven channels -- "
+    f"they agree on {_agree} of {len(channels)}, which is the receipt's headline")
+assert all(_W(cfg) == obs and _T(cfg) == obs for _, cfg, obs in channels), (
+    "and each must reproduce the OBSERVED admission, or neither rule is the corpus's")
+assert len(channels) == 11, f"the channel set is eleven, got {len(channels)}"
+_sep = [(n, c) for n, c, _ in channels if _W(c) != _T(c)]
+assert not _sep, f"a separating channel would falsify the headline outright: {_sep}"

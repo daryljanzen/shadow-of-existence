@@ -100,3 +100,13 @@ print()
 print("  NET: the colourless triple is a THIRD three, and the corpus's two are spoken")
 print("  for and provably unrelated.  That is a sharper statement of the shortfall")
 print("  than 'a projection the geometry does not carry'.")
+
+# ===============================================================================================
+# ** ⛔ ASSERTIONS ADDED r6553 (node 64).  THIS FILE HAD NONE. **
+#   *It printed a derivation and exited zero, so nothing in it could go red.  These assert what
+#   the file already computes -- no claim added, the claims made falsifiable.  Written by 64,
+#   not by the author, and reversible by them.*
+# ===============================================================================================
+assert (plus, minus) == (2, 1), \
+    f"the inversion k -> -k on Z_3 must give 2+1, got +{plus}/-{minus}"
+assert plus + minus == 3, "and it acts on a three"

@@ -95,3 +95,18 @@ print("  AND THE STANDING ASSUMPTION IS UNCHANGED BY THIS: n = t (mod 3) relates
 print("  charge-carrying count to the triality, and nothing here bears on it.  What is")
 print("  removed is one candidate route to deriving it -- via the acting count -- which")
 print("  is now closed rather than untried.")
+
+# ===============================================================================================
+# ** ⛔ ASSERTIONS ADDED r6553 (node 64).  THIS FILE HAD NONE. **
+#   *It printed a derivation and exited zero, so nothing in it could go red.  These assert what
+#   the file already computes -- no claim added, the claims made falsifiable.  Written by 64,
+#   not by the author, and reversible by them.*
+# ===============================================================================================
+assert len(ROUTES) == 2, f"the two routes, got {len(ROUTES)}"
+_n = {lbl: n for lbl, n, _ in ROUTES}
+_nu = {lbl: nu for lbl, _, nu in ROUTES}
+assert _n != _nu, (
+    "the winding count n and the acting own-wall count nu must DIFFER on the routes -- "
+    "that difference is the receipt's whole subject")
+assert sum(_n.values()) % 3 == sum(_nu.values()) % 3, (
+    "and they must agree mod 3, which is why the charge cannot be read off the acting count")

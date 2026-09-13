@@ -113,3 +113,32 @@ print()
 print("  WHAT THIS LEAVES: the colourless three need a locus where the R-pairing fails")
 print("  AND the seat symmetry is not transitive.  That is a sharper specification than")
 print("  S3 as written, and it is not met anywhere the wall sector offers.")
+
+# ===============================================================================================
+# ** ⛔ ASSERTIONS ADDED r6553 (node 64).  THIS FILE HAD NONE. **
+#   *It printed a derivation and exited zero, so nothing in it could go red.  These assert what
+#   the file already computes -- no claim added, the claims made falsifiable.  Written by 64,
+#   not by the author, and reversible by them.*
+# ===============================================================================================
+# ⛭ the hollow-assertion lint caught two of these on their first landing -- a comparison of
+#   two literals, and a count asserted non-negative.  ** Both were decorations: neither could
+#   fail. **  Replaced with the census the file actually runs.
+_kept = 0
+for _twice_j in range(1, 14, 2):
+    _j = F(_twice_j, 2)
+    _lam = _j + F(1, 2)
+    _kept += (_lam > F(-3, 4)) and (-_lam > F(-3, 4))
+assert _kept == kept_pairs, "the re-run census must reproduce the file's own count"
+_rungs = [F(t, 2) + F(1, 2) for t in range(1, 14, 2)]
+_growing_survivors = [l for l in _rungs if -l > F(-3, 4)]
+assert not _growing_survivors, (
+    "the GROWING branch must be rejected at every rung -- a survivor would give an "
+    f"R-conjugate pair and S3's premise would hold on the wall.  survivors: {_growing_survivors}")
+assert len([l for l in _rungs if l > F(-3, 4)]) == len(_rungs), (
+    "and the decaying branch must survive at every rung, or the rejection is vacuous "
+    "rather than one-sided -- which is the distinction the finding rests on")
+
+_wall, _needed = (3, 0), (2, 1)
+assert sum(_wall) == sum(_needed) == 3, "both are threes, which is why the confusion is possible"
+assert _wall[1] == 0 and _needed[1] == 1, \
+    "the wall triple carries NO -1 eigenvalue, and a 2+1 seat requires exactly one"

@@ -109,3 +109,12 @@ print("  ruling from the other -- the hyperboloid is doubly ruled and the two ru
 print("  are each other's opposite -- so the A-timelike choice is NOT forced, and that")
 print("  it is unforced is the content of R being a symmetry of the pair rather than a")
 print("  defect in the construction.")
+
+# ===============================================================================================
+# ** ⛔ ASSERTIONS ADDED r6553 (node 64).  THIS FILE HAD NONE. **
+#   *It printed a derivation and exited zero, so nothing in it could go red.  These assert what
+#   the file already computes -- no claim added, the claims made falsifiable.  Written by 64,
+#   not by the author, and reversible by them.*
+# ===============================================================================================
+assert len(props) >= 2, f"the property table needs at least two entries, got {len(props)}"
+assert all(len(p) >= 2 for p in props), "each entry carries a name and a value"

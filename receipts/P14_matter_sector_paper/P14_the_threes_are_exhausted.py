@@ -115,3 +115,20 @@ print("  enumeration is drawn from P3's geometry sections and P14's count, chira
 print("  and whichthree sections, and is offered as exhaustive OF THOSE -- not as a")
 print("  theorem that no other three exists.  A three arising in P5's groupoid or P12's")
 print("  algebroid, or in the charged sector, is not covered here.")
+
+# ===============================================================================================
+# ** ⛔ ASSERTIONS ADDED r6553 (node 64).  THIS FILE HAD NONE. **
+#   *It printed a derivation and exited zero, so nothing in it could go red.  These assert
+#   exactly what the file already computes -- no claim is added, the claims are made
+#   falsifiable.  Written by 64, not by the author, and reversible by them.*
+# ===============================================================================================
+from collections import Counter as _C
+_tally = _C(r.split()[0] for _, _, r, _, _ in THREES)
+assert len(THREES) == 12, f"the enumeration is twelve, got {len(THREES)}"
+_hinge = sum(v for k, v in _tally.items() if k.upper().startswith('HINGE'))
+_turn = sum(v for k, v in _tally.items() if k.upper().startswith('TURNAROUND'))
+_neither = [nm for nm, _, r, _, _ in THREES if r.upper().startswith('NEITHER')]
+assert _hinge == 8, f"eight must reduce to the hinge three, got {_hinge}"
+assert _turn == 3, f"three must reduce to the turnaround three, got {_turn}"
+assert len(_neither) == 1, f"exactly one is neither, got {len(_neither)}: {_neither}"
+assert _hinge + _turn + len(_neither) == len(THREES), "the tally must exhaust the enumeration"

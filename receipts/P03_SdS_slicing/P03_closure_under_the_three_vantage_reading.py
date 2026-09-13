@@ -127,3 +127,24 @@ print("  NOT CLAIMED: that the fork should be reopened.  (ii) stands on the sent
 print("  P14R28 used to decide it.")
 print("  WHAT IS CLAIMED: one entry is missing from the decision table, and it is the")
 print("  entry on which P3 sec:winding's own statement of the rule depends.")
+
+# ===============================================================================================
+# ** ⛔ ASSERTIONS ADDED r6553 (node 64).  THIS FILE HAD NONE. **
+#   *It printed a derivation and exited zero, so nothing in it could go red.  These assert what
+#   the file already computes -- no claim added, the claims made falsifiable.  Written by 64,
+#   not by the author, and reversible by them.*
+# ===============================================================================================
+_mults = [{"A": a, "B": b, "C": c} for a in range(3) for b in range(3) for c in range(3)]
+_cases = [(m, l) for m in _mults for l in range(3)]
+
+assert len(WALLS) == 3, f"the three walls are the three graze points, got {len(WALLS)}"
+assert all(trivial(m, l) == (monodromy(m, l) == (0, 0, 0)) for m, l in _cases), \
+    "closure is exactly the vanishing of the monodromy triple, on all 81 cases"
+assert all(trivial(m, 0) for m in _mults), \
+    "lambda = 0 must close on every multiplicity -- an uncharged mode sees no wall"
+assert any(not trivial(m, l) for m, l in _cases), \
+    "and some case must FAIL to close, or the condition distinguishes nothing"
+assert trivial({"A": 3, "B": 0, "C": 0}, 1), \
+    "three crossings of one wall must close: omega^-3 = 1"
+assert not trivial({"A": 1, "B": 0, "C": 0}, 1), \
+    "and one crossing must not"

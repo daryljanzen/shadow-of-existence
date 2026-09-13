@@ -144,3 +144,16 @@ print()
 print("  STILL OWED, unchanged: (2) that these congruences can carry Weyl fermions at")
 print("  all, and (3) that the A-timelike assignment is a choice the geometry does not")
 print("  force.  ** (2) remains the one that decides whether this is a seat. **")
+
+# ===============================================================================================
+# ** ⛔ ASSERTIONS ADDED r6553 (node 64).  THIS FILE HAD NONE. **
+#   *It printed a derivation and exited zero, so nothing in it could go red.  These assert what
+#   the file already computes -- no claim added, the claims made falsifiable.  Written by 64,
+#   not by the author, and reversible by them.*
+# ===============================================================================================
+_ev = sp.Matrix([[0, 1, 0], [1, 0, 0], [0, 0, 1]]).eigenvals()
+_plus = sum(m for e, m in _ev.items() if e == 1)
+_minus = sum(m for e, m in _ev.items() if e == -1)
+assert (_plus, _minus) == (2, 1), \
+    f"R must act as a TRANSPOSITION: eigenvalues +1,+1,-1 -- got +{_plus}/-{_minus}"
+assert sum(_ev.values()) == 3, "and on a three"

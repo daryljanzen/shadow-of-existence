@@ -102,3 +102,22 @@ print()
 print("  NOT ESTABLISHED: that the count is delivered.  S3 stands independently and is")
 print("  the requirement the route must still meet.  The shortfall is unchanged in")
 print("  force and changed in its reason.")
+
+# ===============================================================================================
+# ** ⛔ ASSERTIONS ADDED r6553 (node 64).  THIS FILE HAD NONE, AND NO `INDEX` ROW EITHER. **
+#   *It was mentioned in ANOTHER row's prose, which made it look registered to a substring
+#   scan -- `check_receipt_orphans` is stricter and caught it.  These assert what the file
+#   already sets out: that the three statements it collects are genuinely in tension, and
+#   that the third removes the first's stated reason.*
+# ===============================================================================================
+
+assert len(S) == 3, f"the three statements the file collects, got {len(S)}"
+_src = {k for k, _ in S}
+assert len(_src) == 3, "each must come from a distinct source, or they are not in tension"
+assert any('CANNOT supply' in v for _, v in S), "statement 1 is the obstruction"
+assert any('lepton IS a wall mode' in v for _, v in S), "statement 2 contradicts it"
+assert any('are NOT the walls' in v for _, v in S), \
+    "and statement 3 removes statement 1's stated reason -- which is why the obstruction lapses"
+_ob = [v for _, v in S if 'CANNOT supply' in v][0]
+assert 'SPENT as generations' in _ob, \
+    "the obstruction's REASON must be the spending, since that is what the reseating undoes"

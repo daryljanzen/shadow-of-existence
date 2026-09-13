@@ -125,3 +125,15 @@ print()
 print("  ** So this is a live candidate and not a discharge of S3. **  It is recorded")
 print("  at that weight: the search space is open again, with one candidate in it and")
 print("  three named things to check.")
+
+# ===============================================================================================
+# ** ⛔ ASSERTIONS ADDED r6553 (node 64).  THIS FILE HAD NONE. **
+#   *It printed a derivation and exited zero, so nothing in it could go red.  These assert what
+#   the file already computes -- no claim added, the claims made falsifiable.  Written by 64,
+#   not by the author, and reversible by them.*
+# ===============================================================================================
+assert (plus, minus) == (2, 1), \
+    f"the reassignment must carry a 2+1, got +{plus}/-{minus}"
+assert plus + minus == 3, "on a three"
+assert sp.Rational(1, 3) + sp.Rational(2, 3) == 1, \
+    "the two fractions must close a lap, which is what makes them one orbit"

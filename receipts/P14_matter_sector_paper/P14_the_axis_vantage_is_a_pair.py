@@ -98,3 +98,15 @@ print("  root wherever it is applied; at a hinge the same two branches are the h
 print()
 print("  WHAT IT LEAVES: the demand is now for a singlet to complete a pair, not a")
 print("  triple to fill a hole -- smaller, and stated against an object that exists.")
+
+# ===============================================================================================
+# ** ⛔ ASSERTIONS ADDED r6553 (node 64).  THIS FILE HAD NONE. **
+#   *It printed a derivation and exited zero, so nothing in it could go red.  These assert what
+#   the file already computes -- no claim added, the claims made falsifiable.  Written by 64,
+#   not by the author, and reversible by them.*
+# ===============================================================================================
+assert sp.simplify(pow_axis + a**2) == 0, "the axis sits at pow = -alpha^2"
+_roots = sp.solve(sp.Eq(sp.Symbol('h')**2, pow_axis), sp.Symbol('h'))
+assert len(_roots) == 2, f"a PAIR, not a triple and not a single: got {len(_roots)}"
+assert all(sp.simplify(sp.re(r)) == 0 for r in _roots), "and both purely imaginary"
+assert sp.simplify(sum(_roots)) == 0, "conjugate, so the pair sums to zero"
