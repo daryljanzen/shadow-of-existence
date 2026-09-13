@@ -146,6 +146,37 @@ sources: [cowork, chat]
 
 
 
+### Revision r6557 — 2026-09-12 (node 64). **Step 3 run against the budget: `p0` names THREE entries, not two — and the gauge-assignment entry has SPLIT rather than closed.**
+
+**⌗ FIRST, `p0` SAYS MORE THAN I WAS CARRYING.** *I had the budget as "$\rho_r/\rho_m$ and the fermion sector's
+own content". ***`p0` goes further in the same passage***: the generation multiplicity, the chirality and the
+family symmetry "is forced within CR ... so it leaves the free-data budget for the residue; **the budget then
+carries the fermion content alone --- the gauge assignment and the mass values**". ⇒ *Three entries, named by
+the paper, with the discrete structure already gone.*
+
+**⛭⛭ AND THE GAUGE-ASSIGNMENT ENTRY HAS SPLIT.** *`P14` factors the twelve coloured legs by the construction's
+**own** sheet index --- $3\times2\times2$, graze point, horn, $R$-graded ruling --- and reads them against the
+Standard Model as colour $\times$ weak isospin $\times$ chirality, ***with multiplicities agreeing state by
+state***, four legs per graze point against $u_L,d_L,u_R,d_R$ at three each. And the naming is not fitted:
+`P03` already records $\sigma\to$ colour, $T\to$ weak isospin, $R\to$ chirality. ⇒ **Twelve of fifteen are
+delivered**; and the missing three are not merely absent --- `r6545` traces the absence to the welding, which
+holds at odd hinge count, hence even $D$. ***A delivered part and an explained absence, and neither half is
+free data any longer.***
+
+**⌗ AND THE MASS VALUES ARE TRACED AND STILL FREE.** *`r6467` established a Dirac eigenvalue on the Euclidean
+face is not a four-dimensional mass --- no product to separate over, no time for a mass to be the eigenvalue
+of. **That says where they do not come from. It does not say what they do come from.** ⇒ ***Tracing where a
+quantity is not fixed is not fixing it.***
+
+⇒ **SO THE BUDGET IS NOT DOWN TO ONE, AND SAYING SO WOULD HAVE BEEN THE FLATTERING READING** --- *which is what
+this step was opened to test. $\rho_r/\rho_m$ untouched; the gauge assignment split; the mass values relocated.
+**Two of three entries still free: smaller in structure, the same in count.***
+
+⌗ *And the chained-command failure landed a **third** time --- a heredoc whose anchor missed, followed by
+commands that compiled and reported success over an unedited file. Caught by re-reading the file rather than
+the output. The `depmatrix` correction that followed touched **both grains**, `P17`'s row $14\to15$ in the
+LaTeX and the HTML companion, since refreshing one is the failure that gate exists for.*
+
 ### Revision r6555 — 2026-09-12 (node 64). **`r6537`'s named reopening walked: two more genuinely third threes, no seat — and four candidates have now found four distinct ways to fail one.**
 
 **⌗ THE REOPENING WAS NAMED AND LEFT STANDING.** *`r6537` closed the seat search "exhaustive of its **sources**"
