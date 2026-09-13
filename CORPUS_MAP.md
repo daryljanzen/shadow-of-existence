@@ -146,6 +146,33 @@ sources: [cowork, chat]
 
 
 
+### Revision r6546 — 2026-09-12 (chat node). **The map revised — and three stale items in it cleared while there.**
+
+**⌗ NEW ROW `PO-45` — the colourless triple has no seat, and the reason is the dimension result.** *The
+$12{+}3$ shortfall **now states what would discharge it**, which is what a row requires. The triple wanted is a
+doublet plus a singlet; **the doublet exists** (the axis vantage's pair at imaginary height); **the singlet is
+obstructed**, because one branch requires $\mathrm{pow}=0$, which holds exactly on the throat where the three
+walls sit --- so unbranched and coloured are one condition. *And the welding is forced*: it holds iff the hinge
+count is odd, hence in even $D$, so the separation lives only at odd $D$, which `P14`'s count and parity
+exclude. ***Not an addition to the frontier --- the statement the shortfall takes once it can name its own
+discharge.***
+
+**⛔ AND THREE STALE ITEMS IN THE MAP, FOUND WHILE PLACING IT.** *① The *"these four are not adjacent"*
+paragraph named `PO-26`, **struck at `r6463`**, and `PO-40`, **which is not on this map at all**. ② The *"this
+construction's own"* list named the same two. ③ *"All ten rows appear above"* was true of a count **that
+included the struck row**. All three corrected --- and the first ***to three, stated as three rather than made
+up to four***, which is the trap that paragraph sets.*
+
+**⌗ AND A SELF-CORRECTION INSIDE THE SAME REVISION.** *The first draft of the fix wrote the correction's history
+**into the map** --- a parenthetical on what the paragraph used to say, and an `r6545` stamp on the new row.
+***The one-state rule is corpus-wide and reaches instruments and maps.*** Removed: the map states its state, and
+the fact of the correction lives here.*
+
+⌗ ***And the standing instruction this revision exists under: the derivable facts run the map. A map revision
+the material warrants is written in, not referred upward — the previous turn ended by handing that call to
+Daryl, who has no more access to the truth of it than the receipts do.***
+
+
 ### Revision r6545 — 2026-09-12 (chat node). **The welding is forced — and forced by the same result that fixes $D=4$. The arc closes on a statement about the dimension.**
 
 **⌗ THE QUESTION `r6544` LEFT.** *Its demand was "a construction in which $\mathrm{pow}=0$ need not carry the
