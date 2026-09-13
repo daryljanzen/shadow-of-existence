@@ -146,6 +146,43 @@ sources: [cowork, chat]
 
 
 
+### Revision r6563 — 2026-09-12 (node 64). **The tension decided: the imaginary-time three is GENUINELY THIRD, and under the motion reading it is the first candidate in this search to pass BOTH of `r6537`'s tests.**
+
+**⌗ `r6561` LEFT TWO FACTS PULLING OPPOSITE WAYS** --- *the sectors carry a $2{+}1$, which a seat needs; and the
+two $R$-invariant fibres sit at the hinge and wall angles, which `r6537`'s first test calls reduction. **Both
+are true and the second does not mean what it looks like.***
+
+**⛭ NEITHER TRIPLE MAPS ONTO THE OTHER.** *A $120°$ rotation of $r$ leaves $r^{3}$, hence $\tilde\tau$, fixed.
+A sector shift is $w\to w+i\pi$, which flips $\sinh w$ and leaves $\sinh^{2}w$ --- hence $r$ **itself** ---
+unchanged. ⇒ ***The map collapses each triple to a single point of the other's space***: three hinge rays to
+one $\tilde\tau$ (up to the branch sign), three sectors to one $r$ (verified to $10^{-16}$). **That is exactly
+how eight of `r6537`'s twelve died, and it does not happen here.**
+
+**⛭⛭ AND THE SHARED $120°$ IS EXPLAINED RATHER THAN SUSPICIOUS.** *Both three-foldnesses come from **one
+exponent**: the cube in $r^{3}$ gives three roots of unity $120°$ apart, and the same $3$ in $w=3\tilde\tau/2a$
+divides $\sinh^{2}$'s $i\pi$ period down to $2\pi a/3$. ***One source, entering the two coordinates
+differently --- so they agree on the angle and remain independent.***
+
+**⌗ AND ON THE LIFT THERE ARE EXACTLY TWO $R$-INVARIANT FIBRES.** *Only where $\mathrm{Re}\,\tilde\tau=0$ ---
+the bound region $|r|\le A$ --- does $R$ preserve a fibre at all; elsewhere it carries it to its mirror. The two
+sit at bases $0$ and $\pi/3$, landing on the **hinge** and **wall** angles in imaginary time, ***and each is a
+$2{+}1$***.
+
+⇒ ***SO THE SECTORS PASS BOTH TESTS --- GENUINELY THIRD, AND $R$ ACTING AS A TRANSPOSITION. The first candidate
+in this entire search to do so***, where `r6537`'s twelve, the causal classes, the reassignment three, `P5`'s
+operations and `P12`'s $\{6,7,10\}$ each failed one.
+
+⚠ **AND IT IS CONTINGENT ON `[6*]`, WHICH IS THE WHOLE OF ITS STATUS.** *Under the **position** reading,
+$\mathrm{species}=\mathrm{sign}(r)$, $R$ maps between the two sides and permutes no fibre: **no $2{+}1$, no
+seat.** ⇒ *This is not "a seat found". It is: **if the motion reading governs, a structure passing both tests
+exists; if not, it does not.*** ⌗ **And still unshown**: that the fibre's three elements **are** the colourless
+fermions, that the $2{+}1$ is doublet-plus-singlet, anything about masses. ***A structure of the right shape in
+the right place is not an identification.***
+
+⌗ *And a search of mine reported one invariant fibre where there are two --- I sampled 2001 points across a
+sector and $\pi/3$, at **half** a sector, was not a grid point. Found by solving $2b\equiv0$ instead. **A scan
+whose answer sits at a rational fraction of its step will report the wrong count and look thorough doing it.***
+
 ### Revision r6561 — 2026-09-12 (node 64). **The r1000 worldline pictures resurrected — the lift sits on the WALL rays, $\mathrm{Im}\,\tilde\tau$ is three-fold by construction, and `[6*]` gains a stake it has never had.**
 
 **⌗ WORKED AT DARYL'S DIRECTION, AND SPECULATIVE BY DESIGN** --- *resurrecting the $(\mathbb{C}_r\times\mathbb{C}_{\tilde\tau})$
