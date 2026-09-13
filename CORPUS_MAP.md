@@ -146,10 +146,26 @@ sources: [cowork, chat]
 
 
 
-### Revision r6557 — 2026-09-12 (node 64). **Step 3 run against the budget: `p0` names THREE entries, not two — and the gauge-assignment entry has SPLIT rather than closed.**
+### Revision r6559 — 2026-09-12 (node 64). **The deprecated `p0` tag cleared out of this line's own prose — ninety-six uses, all mine, all written after the rule.**
 
-**⌗ FIRST, `p0` SAYS MORE THAN I WAS CARRYING.** *I had the budget as "$\rho_r/\rho_m$ and the fermion sector's
-own content". ***`p0` goes further in the same passage***: the generation multiplicity, the chirality and the
+**⛔ THE RULE IS OLDER THAN THIS LINE AND I WAS BREAKING IT THROUGHOUT.** *The geometric core paper is **`P17`**;
+`p0` is deprecated, kept in receipts, ledgers, commit history, LaTeX comments and code variables, and **not
+used for new work**. ⇒ ***Ninety-six bare name-uses in prose this line wrote: 46 in the changelog, 28 in the
+register, 22 in `INDEX`.*** All renamed to `P17`. **Receipt stems, paths and history untouched --- those are
+where the deprecated tag legitimately lives**, and the rename was scoped to `` `p0` `` not followed by an
+underscore so it could not touch them.*
+
+⌗ *`r6451` corrected a **filename** that carried the tag and named the rule while doing it. ***It did not occur
+to me to check my own prose against the rule I had just quoted.*** The fix was applied where the gate pointed
+and nowhere else.*
+
+⌗ *Eight papers recompiled at zero undefined, ten appendices regenerated, served pages refreshed; 103 gates
+green but `check_receipts_run`.*
+
+### Revision r6557 — 2026-09-12 (node 64). **Step 3 run against the budget: `P17` names THREE entries, not two — and the gauge-assignment entry has SPLIT rather than closed.**
+
+**⌗ FIRST, `P17` SAYS MORE THAN I WAS CARRYING.** *I had the budget as "$\rho_r/\rho_m$ and the fermion sector's
+own content". ***`P17` goes further in the same passage***: the generation multiplicity, the chirality and the
 family symmetry "is forced within CR ... so it leaves the free-data budget for the residue; **the budget then
 carries the fermion content alone --- the gauge assignment and the mass values**". ⇒ *Three entries, named by
 the paper, with the discrete structure already gone.*
@@ -1874,7 +1890,7 @@ fact, not two --- and it says why the COUNT is forced while the MASSES are not.*
 a configuration; a hierarchy is a choice of which member is heaviest. The first has a symmetric point; the
 second is the statement that there is none.*
 
-**⌗ AND `p0`'s FREE-DATA BUDGET IS NAMED, AND HAS ALREADY SHRUNK ONCE.** *"the theory's entire free-data
+**⌗ AND `P17`'s FREE-DATA BUDGET IS NAMED, AND HAS ALREADY SHRUNK ONCE.** *"the theory's entire free-data
 budget --- the one measured $\rho_r/\rho_m$ and the fermion sector's own content --- is carried by the matter,
 so **matter is the residue maximal symmetry leaves ... in free data**." ***The count, the chirality and the
 family symmetry passed from free data to forced structure when `P14` built them***, leaving the mass spectrum
@@ -1898,7 +1914,7 @@ modulus, unfixed by the geometry, an arbitrary choice among three $\mathbb{Z}_3$
 $\mathbb{Z}_3$-symmetric three-plane construction is **the unique configuration carrying no such modulus** ---
 the symmetric point, pinned by the symmetry."* ⇒ ***The criterion does not choose between breaking and not
 breaking. It chooses AMONG BREAKINGS and takes the one that is ITSELF symmetric*** --- and `P14` names the
-source: `p0` "extends this to the discrete sector explicitly, **holding that the discrete breaking is itself
+source: `P17` "extends this to the discrete sector explicitly, **holding that the discrete breaking is itself
 maximally symmetric**".
 
 **⛭⛭ AND BY THAT ROUTE THE CONSTRUCTION ALREADY GENERATES CONTENT.** *`P14` delivers the **generation count,
@@ -1906,7 +1922,7 @@ the chirality and the family symmetry**, forced by exactly the moduli-free crite
 proposed reading --- that content is not the kind of thing this construction generates --- is not merely
 unproven. It is refuted by a sector the corpus had already built***, and I proposed it without looking.*
 
-**⌗ AND THE ORIGIN IS COMMON, WHICH IS WHAT THE INQUIRY WAS FOR.** *`p0` reads the discrete residue off the
+**⌗ AND THE ORIGIN IS COMMON, WHICH IS WHAT THE INQUIRY WAS FOR.** *`P17` reads the discrete residue off the
 waist --- $\mathrm{Aut}(A_2)=S_3\times\mathbb{Z}_2$, its factors acting on "the three roots and the two
 rulings, which are, on the waist, the points **on** the circle and the lines **tangent** to it", the residue
 factorising "because those two relations are independent" --- and the three walls carrying the generations
@@ -1959,7 +1975,7 @@ no such choice arises --- which is why it "selects the manifold at fixed dimensi
 dimension itself". ⇒ *Among radial profiles **exactly one qualifies: $\rho$ constant**, every other being a
 choice of which function. **So the principle does reach profiles.***
 
-**⛔ AND WHAT IT SELECTS IS NOT MATTER.** *`p0`, dissolving the cosmological-constant problem: "a constant
+**⛔ AND WHAT IT SELECTS IS NOT MATTER.** *`P17`, dissolving the cosmological-constant problem: "a constant
 density gravitates as a curvature scale, so it enters the profile's $\Lambda r^{2}/3$ term, ***not as a
 $2m/r$ bend***" --- and immediately, "the substrate/bend distinction separates $\Lambda$ from
 **inhomogeneous** matter, a genuine bend that breaks the maximal symmetry". ⌗ *And `P07` reaches the same
@@ -1973,19 +1989,19 @@ it to supply matter asks it for the thing it is defined to avoid. **It cannot be
 **⛭ AND THIS IS THE SECOND TIME THE SAME SHAPE HAS ANSWERED THIS ROW.** *`r6481`: the one cut the
 construction distinguishes intrinsically is Nariai, **and it carries no matter**. Here: the one profile the
 principle selects is constant, **and that is $\Lambda$**. ***Every maximally symmetric selection this
-construction offers returns something matterless*** --- which is `p0`'s own "the rigidity and the wall are one
+construction offers returns something matterless*** --- which is `P17`'s own "the rigidity and the wall are one
 fact", seen from inside this row rather than stated over it.*
 
 ⚠ **IT DOES NOT CLOSE THE ROW.** *It removes the one existing candidate, so **the law must be something other
 than a symmetry selection**. That is a narrowing of what an answer could look like, not a verdict --- and no
 claim is made that no such law exists.*
 
-⌗ *Built entirely from statements read at source in `P12`, `p0` and `P07`; no absence asserted. Landed in
+⌗ *Built entirely from statements read at source in `P12`, `P17` and `P07`; no absence asserted. Landed in
 `P08` `sec:open`, the row, and the runway. `P08` 23pp, zero undefined; twelve gates green.*
 
 ### Revision r6483 — 2026-09-09 (node 64). **`r6481`'s "third route" and "the corpus does not note it" RETRACTED — and the tendency that produced them is now gated.**
 
-**⛔ WHAT WAS WRONG, AND BOTH HALVES WERE.** *⓵ **Not a third route.** `p0`'s offset relation **is** the
+**⛔ WHAT WAS WRONG, AND BOTH HALVES WERE.** *⓵ **Not a third route.** `P17`'s offset relation **is** the
 horizon condition: $f(r)=1-2M/r-r^{2}/\alpha^{2}=0$ gives $2M=r-r^{3}/\alpha^{2}$, which in $x=r_0/\alpha$
 is exactly $\alpha(x-x^{3})$ --- verified. **So $r_0$ is a horizon root and extremising the relation is
 precisely the double-root condition $f=f'=0$**, which `P15` states outright at the Nariai locus. ***The same
@@ -2020,7 +2036,7 @@ a bare claim fails, the same claim with its search beside it passes.*
 **⌗ THE QUESTION `r6479` LEFT: what could fix WHICH CUT, absent a progenitor?** *The obvious candidate is
 the cut the construction distinguishes intrinsically. **There is exactly one, and it is the Nariai member.***
 
-**⛭ AND THAT IS A THIRD ROUTE TO IT.** *`p0`'s offset-mass relation $2M=\alpha\left((r_0/\alpha)-(r_0/\alpha)^{3}\right)$
+**⛭ AND THAT IS A THIRD ROUTE TO IT.** *`P17`'s offset-mass relation $2M=\alpha\left((r_0/\alpha)-(r_0/\alpha)^{3}\right)$
 has a **unique positive stationary point**, and it lands exactly on $r_0=\alpha/\sqrt3=r_N$ with
 $M=\alpha\sqrt3/9=M_N$ --- ***the member `P05` reaches as $\sigma$'s unique fixed point and `P07` by a
 trichotomy on collapse.*** A third argument, sharing no step with either. ⌗ **The corpus does not note it:
@@ -2175,7 +2191,7 @@ room ② closure-adjacency `r6465` owed is now done.***
 ### Revision r6471 — 2026-09-09 (node 64). **The entropy branch worked to the end: `r6437` RETRACTED, `PO-43`'s second question answered, and room ① drops to one wall.**
 
 **⌗ THE QUESTION `r6469` LEFT was whether the ledger's statement reaches the VALUE of a geometric quantity
-or only its constants. `p0` `sec:ledger`, read whole, answers it.** *The ledger names **two registers and no
+or only its constants. `P17` `sec:ledger`, read whole, answers it.** *The ledger names **two registers and no
 more**: the real-geometric gauges $c,\Lambda,G$, "each a nameable feature of the substrate and its cuts";
 and the thermal $\hbar,k_B$, ***"their CR-specific content the ledger's closing of THE ONE QUANTUM FREEDOM,
 not a new geometric feature"***. **That is the whole of its quantum claim and it is specific** --- the
@@ -2184,17 +2200,17 @@ self-adjoint extension, closed by thermal regularity.*
 **⛭ SO THREE QUANTUM FREEDOMS ARE DISTINCT AND THE LEDGER SPEAKS TO ONE.** *The **extension**, closed by the
 ledger. The **regularisation** of the mode sums, conceded --- they spend one. And **a counterterm's finite
 part**, which neither speaks to. ⇒ ***A Gauss--Bonnet entropy shift is of the third kind, so the ledger does
-not reach it and the branch is costless --- which is exactly what `p0` recorded.***
+not reach it and the branch is costless --- which is exactly what `P17` recorded.***
 
 **⛔ SO `r6437` IS RETRACTED, NOT QUALIFIED.** *It claimed the declination was **load-bearing**, that the
-one-scale reading had a stake where `p0` had called the branch costless. ***`p0` was right.*** The stake was
+one-scale reading had a stake where `P17` had called the branch costless. ***`P17` was right.*** The stake was
 an artefact of reading the ledger's headline unscoped --- and `r6469`, which caught the unscoped citation,
 **demoted the claim to a register-crossing and did not go far enough.** ⌗ *Two corrections were needed on one
 finding, and the second only came from working the branch to the end rather than stopping at the repair.*
 
 **⌗ WHAT SURVIVES IS AN OBSERVATION, NOT A COST.** *The coefficient's only observable is a shift in $S$, and
-$S$ is the quantity `p0` singles out as a count taken **across** the register split. **The structure
-behaving as `p0` describes, at the place `p0` says it happens --- a confirmation, not a debit.***
+$S$ is the quantity `P17` singles out as a count taken **across** the register split. **The structure
+behaving as `P17` describes, at the place `P17` says it happens --- a confirmation, not a debit.***
 
 ⇒ **AND `PO-43`'s SECOND REPLACEMENT QUESTION IS ANSWERED: the ledger does not count topological terms.**
 *`r6435` reduced that question to the entropy; this is what the reduction returns.* ⇒ ***Room ① drops from
@@ -2204,7 +2220,7 @@ a wall of that room.*
 ⚠ *And the hollow-assertion lint caught me a second time in two sessions --- `ledger_counts_topological_terms
 = False` asserted against itself. Replaced with a derivation from the two structures above, which can fail.*
 
-⌗ *`p0` 41pp, zero undefined; nine gates green; frontier regenerated.*
+⌗ *`P17` 41pp, zero undefined; nine gates green; frontier regenerated.*
 
 ### Revision r6469 — 2026-09-09 (node 64). **The entropy branch worked — and `r6437`'s headline corrected against me, by the same defect `63` found next door.**
 
@@ -2221,23 +2237,23 @@ follow.***
 found it there; **nobody found it here, including me, until I went looking for it on its own account.** Two
 arguments written in the same session made the same error, and only one was refereed.*
 
-**⛭ WHAT SURVIVES IS SHARPER, AND IT IS `p0`'s OWN STRUCTURE RATHER THAN AN IMPORT.** *`p0`'s reason for
+**⛭ WHAT SURVIVES IS SHARPER, AND IT IS `P17`'s OWN STRUCTURE RATHER THAN AN IMPORT.** *`P17`'s reason for
 taking the temperature and never the entropy is a **register** statement: $T=1/2\pi\alpha$ is "built from
 $\alpha$ alone --- one register", while the entropy "is a ratio of $\alpha$ to $\ell_P$ and is therefore a
 count taken **across** the register split". ***And the Gauss--Bonnet coefficient is a quantum-register
 constant whose only observable is a shift in $S$ --- precisely that cross-register quantity.*** ⇒ So if
-$S=A/4$ carries, **a constant of the quantum register becomes visible in the one quantity `p0` identifies as
+$S=A/4$ carries, **a constant of the quantum register becomes visible in the one quantity `P17` identifies as
 crossing the registers** --- not a violation of the geometric ledger, but *the register split doing exactly
-what `p0` says it does, at the one place `p0` says it happens*.*
+what `P17` says it does, at the one place `P17` says it happens*.*
 
 **⌗ AND THE OPEN THING IS NOW SMALL AND ANSWERABLE.** *The geometric ledger's statement quantifies over
-geometric **constants**; an additive shift in $S$ touches the **value of a geometric quantity**. ***`p0` does
+geometric **constants**; an additive shift in $S$ touches the **value of a geometric quantity**. ***`P17` does
 not say whether the statement reaches the second.*** That is the question --- and it is a great deal smaller
 than "does the ledger gain its first free constant", which is what `r6437` posed.*
 
 ⌗ *Corrected in all three places that carried it: the receipt (prose **and** its executable checks, which
-still asserted the withdrawn framing), the register row, and `p0` itself. Room ①'s second wall is re-stated
-in the rooms map. `p0` 41pp, zero undefined; nine gates green.*
+still asserted the withdrawn framing), the register row, and `P17` itself. Room ①'s second wall is re-stated
+in the rooms map. `P17` 41pp, zero undefined; nine gates green.*
 
 ### Revision r6467 — 2026-09-09 (node 64). **`63`'s carried question settled: a Dirac eigenvalue on the Euclidean face is not a four-dimensional mass — and `r6425`'s framing was weaker than the truth.**
 
@@ -2272,7 +2288,7 @@ eigenvalues** are masses.*
 ⌗ *Resolved in all three places that carried it --- the register clause, the receipt that made the claim,
 and `P13` itself. `P13` 36pp, zero undefined; nine gates green.*
 
-### Revision r6465 — 2026-09-09 (node 64). **Closure-adjacency on `PO-26`'s strike — and it found the withdrawn claim sitting bare in `p0`, invisible to the gate I wrote for it.**
+### Revision r6465 — 2026-09-09 (node 64). **Closure-adjacency on `PO-26`'s strike — and it found the withdrawn claim sitting bare in `P17`, invisible to the gate I wrote for it.**
 
 **⌗ A STRIKE IS A CLOSURE, so `L-211` is owed before anything new.** *Three sites carried the struck item and
 all three are now current.*
@@ -2285,17 +2301,17 @@ the index question is not open on whether such a sector can be built**, but on t
 being of the kind the obstruction cannot reach. ⌗ *The second item, empirical coherence as an independent
 ground, is untouched and remains.*
 
-**⛔ AND `p0` CARRIED THE WITHDRAWN CLAIM BARE --- "the Atiyah--Hirzebruch index rendering a compact-face
+**⛔ AND `P17` CARRIED THE WITHDRAWN CLAIM BARE --- "the Atiyah--Hirzebruch index rendering a compact-face
 fermion sector vector-like".** *Doubly wrong now: the index route **lapses on dimension** there, and what is
 shown is **no massless content**, not a vector-like spectrum. Replaced with what is actually established.*
 
 **⚠ AND MY OWN GATE COULD NOT SEE IT, WHICH IS THE FINDING WORTH KEEPING.** *`r6425` registered the
 withdrawal with known-positives taken from `P13`'s wording --- "rendering **the geometric** fermion sector
-vector-like". `p0` writes "**a compact-face** fermion sector". ⇒ ***A registry keyed to one paper's phrasing
+vector-like". `P17` writes "**a compact-face** fermion sector". ⇒ ***A registry keyed to one paper's phrasing
 is a registry that checks one paper***, and it reported the tree clean while the claim stood in the corpus's
-own foundational paper. **Pattern widened; it fired on `p0` immediately and is clean after the repair.***
+own foundational paper. **Pattern widened; it fired on `P17` immediately and is clean after the repair.***
 
-⌗ *`OPEN_PROBLEMS_MAP`'s entry struck with the reasoning rather than a crossing-out. `p0` and `P13` compile
+⌗ *`OPEN_PROBLEMS_MAP`'s entry struck with the reasoning rather than a crossing-out. `P17` and `P13` compile
 at zero undefined; nine gates green.*
 
 ### Revision r6463 — 2026-09-09 (node 64). **`PO-26` STRUCK on two concurring referee reads — and all three of their corrections were against me, one of which makes the result stronger than I claimed.**
@@ -2323,7 +2339,7 @@ tower**, $\lambda=\pm(5/2+k)/\alpha$; what is shown is **no massless content**, 
 depends on that tower being there. Corrected corpus-wide. ⑵ ***The squash cited the wrong thing***: the
 blanket no-free-constants headline was **scoped** once $\zeta(0)=10$ showed the mode sums spend one; the
 **structural reason** --- "neither real form supplies a second invariant, and a dimensionless magnitude
-needs two", in `p0` with its own receipt, on the **geometric** ledger --- survives that scoping untouched.
+needs two", in `P17` with its own receipt, on the **geometric** ledger --- survives that scoping untouched.
 *Verified independently, `63` having declared an interest in the scoping it landed.* ⑶ ***A SIXTH escape,
 found by `63`***: Lichnerowicz rests on Weitzenböck for the **Levi-Civita** connection, and a torsionful
 connection admits zero modes at positive scalar curvature --- **live on $\mathrm{SU}(3)/\mathrm{SU}(2)$,
@@ -2480,11 +2496,11 @@ appendices regenerated together so no rail is left behind.**
 ### Revision r6451 — 2026-09-09 (node 64). **62's red gate cleared: the duplicate receipt prefix was mine, and it came from writing the deprecated paper tag into a filename.**
 
 **⌗ WHAT IT WAS.** *`r6437`'s receipt was named `p0_the_entropy_declination_...`. The prefix parser reads
-`^([A-Za-z]+)(\d+)_` and normalises case, so **`p0` parses as the station prefix `P0`** --- already held by
+`^([A-Za-z]+)(\d+)_` and normalises case, so **`P17` parses as the station prefix `P0`** --- already held by
 `P0_the_order_parameter_is_the_offset_...` in the same directory. ⇒ ***Two files, one prefix, and the gate
 was right to be red.***
 
-**⛭ AND THE NAME WAS WRONG TWICE OVER, which is what makes the fix obvious rather than arbitrary.** *`p0`
+**⛭ AND THE NAME WAS WRONG TWICE OVER, which is what makes the fix obvious rather than arbitrary.** *`P17`
 is the **deprecated** tag --- the geometric core paper is `P17` going forward, the old tag kept in receipts
 and ledgers and not used for new work. **So the filename should never have carried it.** ⌗ And the gate's
 own docstring supplies the clean exit: ***"the directory's own tag is not a station prefix"*** --- a
@@ -2683,7 +2699,7 @@ instrument, not imported**.*
 ### Revision r6439 — 2026-09-09 (node 64). **CLEANUP 1 — one paper, one receipt home: declared, grandfathered, gated. Nothing moved.**
 
 **⌗ THE DEFECT, MEASURED.** *Six papers carry a second receipt directory and one carried a third
-(`P1`, `P3`, `P6`, `P12`, `P13`, `P16`, and `P17`/`p0`), and **nothing declared which was the home**.
+(`P1`, `P3`, `P6`, `P12`, `P13`, `P16`, and `P17`/`P17`), and **nothing declared which was the home**.
 ⇒ ***So a node adding a receipt guesses --- and this line guessed wrong twice in one session***: `r6403`
 put a `P8` receipt in a new `P8_slicing_operator` beside the existing `P08_slicing_operator`, and `r6437`
 created a stray `P17_geometric_core` beside `P17_geometric_core_paper`.*
@@ -2702,7 +2718,7 @@ home removes that cost outright.***
 **⌗ WHAT LANDED.** *`corpus/receipt_home.txt` --- **data, beside `node_roster.txt`** --- declaring one home
 per paper with seventeen papers and seven legacy directories grandfathered; `corpus/check_receipt_home.py`,
 which fails on a **new** stray and asks nothing existing to move; the gate wired into the CI list; and the
-rule at the top of `THE_HUB` where a node adding a receipt will meet it. ⌗ *`p0` and `P17` fold as one
+rule at the top of `THE_HUB` where a node adding a receipt will meet it. ⌗ *`P17` and `P17` fold as one
 paper, the deprecated tag keeping its receipts and the home being the `P17` one.*
 
 ⌗ **AND ONE THING THE SURVEY DID NOT FIND, checked rather than reported.** *Several homes show more files
@@ -2711,9 +2727,9 @@ the gap is `CLAIMS.md` and similar sitting in those directories. Not a defect.*
 
 ⌗ *Gate verified against a seeded stray, and clean on the tree. Eight gates green.*
 
-### Revision r6437 — 2026-09-09 (node 64). **The entropy question is not costless, and `p0` recorded it as being: the no-free-constants claim has a stake in which branch holds.**
+### Revision r6437 — 2026-09-09 (node 64). **The entropy question is not costless, and `P17` recorded it as being: the no-free-constants claim has a stake in which branch holds.**
 
-**⌗ `p0` DECLINES, AND SAYS THE DECLINATION COSTS NOTHING.** *"Whether $S=A/4$ carries to a cosmological
+**⌗ `P17` DECLINES, AND SAYS THE DECLINATION COSTS NOTHING.** *"Whether $S=A/4$ carries to a cosmological
 horizon on this reading is a question this paper does not settle ... **were it to fail to carry, that would
 be a result and not a gap**." ***That declination is load-bearing for the counterterm ledger, and was not
 known to be.***
@@ -2726,28 +2742,28 @@ part is not fixed by the field content: the divergence's coefficient is --- the 
 $c$-type now carried at $1/60$ --- but renormalising it needs a condition, and **that condition is a free
 dimensionless constant whose only observable is that shift**.*
 
-**⛭⛭ AND THE LEDGER HAS NO ABSORBER FOR IT.** *`p0` absorbs a constant **vacuum energy** into the one
+**⛭⛭ AND THE LEDGER HAS NO ABSORBER FOR IT.** *`P17` absorbs a constant **vacuum energy** into the one
 observed curvature, with no bare-versus-vacuum split --- its own mechanism. ***There is no corresponding
 absorber for a constant entropy shift***: $S=\pi(\alpha/\ell_P)^{2}$ is fixed once $\alpha$ is, $\ell_P$
 being a gauge, and a shift needs a new constant.*
 
 ⇒ **SO THE TWO BRANCHES DO NOT COST THE SAME.** *If $S=A/4$ **carries**, the sector acquires **a free
 dimensionless constant it cannot absorb --- the first one**, against a ledger stated to spend none. If it
-**fails**, the coefficient has no home and the failure is the result `p0` already anticipates.*
+**fails**, the coefficient has no home and the failure is the result `P17` already anticipates.*
 
 **⛭⛭⛭ THEREFORE THE NO-FREE-CONSTANTS CLAIM, TAKEN SERIOUSLY, PREDICTS THAT $S=A/4$ DOES NOT CARRY.**
 *Not an argument that it does not --- ***a statement that the programme has a stake in a branch it recorded
-as neutral***. ⌗ And `p0`'s own reason for taking the temperature and never the entropy already anticipates
+as neutral***. ⌗ And `P17`'s own reason for taking the temperature and never the entropy already anticipates
 it: $T=1/2\pi\alpha$ is **one-register**; $S$ is a count taken **across** the register split; and the
 cross-register quantity is precisely the one that would test the ledger.*
 
-⌗ *Propagated into `p0` `sec:ledger` in the same turn, with Jacobson--Myers cited where the one import
+⌗ *Propagated into `P17` `sec:ledger` in the same turn, with Jacobson--Myers cited where the one import
 lands.*
 
 ⚠ **AND TWO INSTRUMENT FAILURES OF MINE, both caught by gates.** *(i) A guard read
 `'JacobsonMyers1993' not in s` **after** the same string had inserted the `\cite` into `s`, so the bibitem
 never went in --- the compile caught it. (ii) I regenerated `appendix_receipts_P17.tex` **under the wrong
-scope** (`p0` rather than `P17`), and `check_appendix_current` reported it would write **-65 lines** ---
+scope** (`P17` rather than `P17`), and `check_appendix_current` reported it would write **-65 lines** ---
 ***which is exactly the case that gate warns about, "running the fix is not automatically right"***, arriving
 because I ran a fix without reading which scope the gate maps that file to. Regenerated correctly; both
 rails match.*
@@ -2774,8 +2790,8 @@ closure is the STATE's and not the geometry's***, which is what `PO-44` says and
 **⛭⛭ ⓶ THE TOPOLOGICAL-TERMS QUESTION IS NOT INDEPENDENT.** *A topological term **contributes no field
 equation** --- `P10`'s own words of the Gauss--Bonnet combination --- so a coefficient multiplying one is
 not read off any dynamics, and its only remaining home is the **horizon entropy**. There the corpus has no
-position: `PO-32` closes the collapse face by absence of a bearer and states that `p0` "computes the number
-conditionally and declines", so **"the corpus is uncommitted on both faces"**. And `p0`'s `sec:ledger` says
+position: `PO-32` closes the collapse face by absence of a bearer and states that `P17` "computes the number
+conditionally and declines", so **"the corpus is uncommitted on both faces"**. And `P17`'s `sec:ledger` says
 nothing of the class --- *topological*, *Gauss*, *Euler*, *field equation*: **zero occurrences**.*
 ⇒ ***So it is the de~Sitter horizon-entropy question reached from the other side, and closes only when that
 one does.***
