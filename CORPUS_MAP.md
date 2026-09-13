@@ -146,6 +146,36 @@ sources: [cowork, chat]
 
 
 
+### Revision r6544 — 2026-09-12 (chat node). **The singlet is obstructed — and the obstruction is a coincidence of two conditions, not an absence.**
+
+**⌗ THE THREE REQUIREMENTS, AND TWO OF THEM COLLIDE.** *The singlet must (i) have **one branch** under the
+height rule, (ii) be **hinge-free**, since the hinge index is the colour index, and (iii) be **$R$-fixed**,
+since the $2{+}1$ needs $R$ to fix it while exchanging the pair.*
+
+*Computed: $X_0=\sqrt{\mathrm{pow}}$ is two-valued wherever $\mathrm{pow}\neq0$, so **(i) forces
+$\mathrm{pow}=0$** --- and $\mathrm{pow}=|X|^2-\alpha^2$ vanishes ***exactly on the throat circle and nowhere
+else***. But the three walls **lie on that circle**, at polar $180/300/60$, each antipodal to its hinge, and the
+graze points are those same three points. **So the one unbranched locus is precisely the one carrying the
+colour index, and (ii) forbids it.** ***(i) and (ii) are in direct conflict, with no room between them.*** And
+(iii) points the same way: `P7` has $R$ as *"a linear isometry whose sole fixed point is the bead's own $r=0$
+crossing"*, and $r=0$ is a wall --- indexed three times over under the three-vantage reading.*
+
+**⛔ SO, IN THIS CONSTRUCTION, BEING UNBRANCHED AND BEING COLOURED ARE THE SAME CONDITION.** *That is why the
+singlet is not there, and it is a structural reason rather than a failure to look.*
+
+**⌗ AND THE NET FOR THE ARC IS THE SMALLEST DEMAND YET STATED.** *The **doublet exists** --- the axis pair ---
+and only the **singlet** is obstructed. So a successor needs ***neither a new three nor a larger substrate***,
+but **a construction in which $\mathrm{pow}=0$ need not carry the colour index**: the separation of two
+conditions this one holds together. *Carried into `P14` `sec:correspondence`.*
+
+⌗ ***Where the arc started and where it is: "the fifth multiplet is a projection the geometry does not carry"
+→ "the seat is a third three" → "the seat is at no real point" → "the seat's doublet exists and its singlet is
+obstructed by pow = 0 doing two jobs". Nothing has been delivered in nine revisions. The thing that is
+different is that a successor now has one condition to break rather than a hole to fill.***
+
+*Receipt `P14R65`.*
+
+
 ### Revision r6543 — 2026-09-12 (chat node). **A conflation of my own, caught — and the axis vantage counted: it is a pair, not a triple.**
 
 **⛔ THE CORRECTION, AND IT IS THE CONFLATION THIS CORPUS FIGHTS.** *`r6542` scored the axis vantage
