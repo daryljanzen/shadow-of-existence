@@ -64,15 +64,29 @@ claim it bears on is a proof rather than a coherent proposition.*
   deepest open question the construction raises, and narrows it in its own words — the confined case is
   exhibited, the radiative boundary is the range paper's wall, and beyond it the framework leaves general
   relativity unchanged.
+- **`PO-45` — the colourless triple has no seat, and the reason is the dimension result.** `P14` delivers
+  $12$ of the $15$ Weyl fermions of a generation and not the colourless $3$, and that shortfall now states
+  what would discharge it. The triple wanted is a doublet plus a singlet. The doublet exists --- the
+  $\mathbb{Z}_3$-fixed axis carries a vantage at imaginary height, $\mathrm{pow}=-\alpha^2$ giving the pair
+  $\pm i\alpha$ by the same power-of-a-point rule that puts a hinge at $\sqrt3\,\alpha$. The **singlet is
+  obstructed**: a single branch requires $\mathrm{pow}=0$, which holds exactly on the throat circle, and the
+  three walls lie on that circle --- so being unbranched and being coloured are one condition here. *And that
+  welding is forced rather than placed*: a wall is antipodal to its hinge and a graze point lies between two,
+  and those coincide exactly when the hinge count is odd, hence in even $D$. With the count at $D-1$, the
+  separation lives only at odd $D$ --- which `P14`'s own count and parity jointly exclude. **So the missing
+  three is the $D=4$ result read from the matter side**, and what would discharge the row is a construction
+  separating $\mathrm{pow}=0$ from the colour index. *`r6545`.*
+
 - ~~**`PO-26` — the compact-face fermion sector.**~~ **STRUCK `r6463`, on two concurring referee reads.** *A spinor sector **is** built on the discrete component (`P14`) and supplies no equivariant index. The sector the obstruction acts on --- gauge-acted, isometry-realised, on the compact face --- **is now specified**: the face is the substrate on its other real form, so the relation is continuation not reduction, and a fermion there is a $\mathrm{Spin}(6)=\mathrm{SU}(4)$ object with colour a subgroup of that spin group. ***Two obstructions meet on it***: $\mathfrak{su}(3)$ admits no equivariant map to the cosmological $S^3$, so the cut destroys it; and the round face carries **no massless content** for it to act on. The discharge asked for *an obstruction shown*, not for one shown inescapable --- **a bar `P13` explicitly declines in its own voice**.
 - **`PO-31` — the progenitor spectrum.** `P15` calls this *the
   genuine frontier* as against its buildable debts, and the reason is structural: the peak is an erasure
   channel, so the progenitor's composition is destroyed and cannot be read backward from ours.
 
 
-**⌗ These four are not adjacent to each other and must not be grouped as one gap.** They share only the shape
-of the obstruction. `PO-30` wants a dynamics; `PO-26` wants a construction; `PO-31` wants a route past an
-erasure; `PO-40` wants a decision about whether a regress terminates.
+**⌗ These three are not adjacent to each other and must not be grouped as one gap.** They share only the shape
+of the obstruction. `PO-30` wants a dynamics; `PO-45` wants a construction; `PO-31` wants a route past an
+erasure. *The paragraph read "these four" and named `PO-26`, struck at `r6463`, and `PO-40`, which is not on
+this map; the count is three, and it is stated as three rather than made up to four.*
 
 **⌗ Two have their difficulty stated as a result rather than as a lack.** `PO-31`'s erasure is *proved*,
 which is what makes it a frontier and not a gap. `PO-26`'s wall is a mechanism, not a failure to build.
@@ -107,7 +121,7 @@ them apart will mis-price the whole set.**
   interacting theory, met here in the substrate's tower rather than manufactured by it. `PO-25` turns on the
   stability of inner horizons, an open question in general relativity that this construction inherits rather
   than creates.
-- **This construction's own.** `PO-30`, `PO-26`, `PO-31` and `PO-40` are questions it raises because of what
+- **This construction's own.** `PO-30`, `PO-45`, `PO-31` and `PO-44` are questions it raises because of what
   it is, and no other framework owes them.
 - **Neither, exactly.** `PO-36` is a question about the world that the standard framing made invisible to
   itself; this construction's contribution is to have asked it.
@@ -116,7 +130,9 @@ them apart will mis-price the whole set.**
 
 ## WHAT IS *NOT* ON THIS MAP, AND WHY
 
-**Nothing was removed from the frontier to make this shape.** All ten rows appear above.
+**Nothing was removed from the frontier to make this shape.** All ten rows appear above --- nine carried
+forward and `PO-45`, which is not an addition to the frontier but the statement the matter sector's shortfall
+acquired once it could say what would discharge it.
 
 **And nothing here is paring.** The set reached ten by items being resolved, not reclassified: sixteen rows
 are struck, and of the seven struck since `P18` was registered, six were sound closes with receipts that run
