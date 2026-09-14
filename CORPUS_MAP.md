@@ -146,6 +146,37 @@ sources: [cowork, chat]
 
 
 
+### Revision r6591 — 2026-09-12 (node 64). **$\widetilde{T}$ is a FOURTH discrete operation — and the bridge between the two circles turned out to be a separation, not a map.**
+
+**⌗ THE QUESTION, OPEN SINCE `r6581` AND MADE STATEABLE AT `r6585`.** *Is $\widetilde{T}$ one of $\sigma$, $R$,
+$\xi$? `r6585` showed it could not be asked through the symbol $w$, which carried two circles, and that a map
+between them would be needed. ⇒ ***There is no such map, and none is needed: they are independent coordinates
+of one two-parameter family.***
+
+**⛭ `P3`'s OWN FORMULAE SAY SO.** *$2M=(2/3\sqrt3)\sin 3w$ depends on the **cut alone**. $r^{3}=2M\alpha^{2}
+\sinh^{2}\tilde{w}$ depends on the cut **and** the bead phase. ⇒ **$w$ says WHICH CUT; $\tilde{w}$ says
+WHEN.** And each operation is an invariance on one of them: $\sigma$ leaves $2M$ unchanged --- *exactly what
+the canon means by "mass-invariant"* --- while $\widetilde{T}$ leaves $r$ unchanged, $\sinh^{2}$ being even.*
+
+**⛭⛭ AND ALL THREE NAMED OPERATIONS FIX THE BEAD PHASE.** *$\sigma$ and $R$ move the cut; $\xi$ continues
+between branches; ***$\widetilde{T}$ alone moves $\tilde{w}$***. $R$'s own statement settles $R$ ---
+$(r,\tilde\tau;2M,Q)\mapsto(-r,\tilde\tau;-2M,Q)$, **flipping the mass and holding $\tilde\tau$ fixed** --- and
+$2M(-w)=-2M(w)$ places that move on the $w$-factor. ⇒ ***So $\widetilde{T}$ is a FOURTH, acting on a factor
+the three do not touch --- and it COMMUTES with $\sigma$ for that reason, verified rather than asserted.***
+
+**⌗ AND THAT IS EXACTLY WHY `r6581`'s COMPOSITION LOOKED LIKE AN ANSWER.** *On one letter, $\sigma$ and
+$\widetilde{T}$ compose to a translation by $\pi/3$. On the two variables **they commute**. ***A composition
+and a commutation are opposite readings, and the symbol collision produced the wrong one.*** The audit was not
+housekeeping before the physics; it was the step that made the physics come out right.*
+
+⚠ *Held where it belongs: **the corpus's "three distinct discrete operations" is untouched.** That clause is
+about operations on the **slicing**, where $\sigma$, $R$ and $\xi$ all act and it stands. $\widetilde{T}$ is
+**outside that domain**, which is why it is a fourth and not a correction. And nothing here says what
+$\widetilde{T}$ **means** beyond reversing cosmic time at fixed $r$ and mass, and grading the lift's $2{+}1$.*
+
+⌗ *`check_provenance` fired on the receipt for quoting a phrase found only in `P3`'s comments --- **my own
+phrase, written into both**, which the gate cannot distinguish from a quotation. Reworded.*
+
 ### Revision r6589 — 2026-09-12 (node 64). **The `PO-13` "stranded files" resolved — they are absent BY DECISION, and my flag misread that as neglect.**
 
 **⛔ MY `r6585` FLAG WAS WRONG IN ITS FRAMING.** *I reported thirteen `po13_*` files as stranded on a stale
