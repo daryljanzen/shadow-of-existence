@@ -191,9 +191,27 @@ damping manufactures a spurious "decisive deficit." Compare CR to the control on
 - **Two pins or it isn't a result.** State the prediction *before* the run.
 - Don't impose arbitrary rules on the physics; don't invent or fit physics to close a gap.
 
-Analysis scripts from this arc live alongside it (`po13_*.py`) and the from-scratch χ/geometry check is
-`po13_chi_antipode.py`. The projection resolution is `verify_closedS3_nonsync.py` and `prop:flat` in
+The projection resolution is `verify_closedS3_nonsync.py` and `prop:flat` in
 `corpus/CR_cosmology.tex` §largescale.
+
+**The `po13_*.py` analysis scripts from that arc are NOT in this repository, and are not owed.**
+They stayed on the branch this document came from, and `FOR_56.md` records the disposition:
+*the branch is assessed, not merged, and not owed.* Two reasons, and both are settled rather
+than pending:
+
+- **The near-antipode χ / hyperspherical-Bessel line is retracted by both sides.**
+  `po13_chi_antipode.py` and `po13_hyperbessel_validate.py` belong to it; `r3557(branch)`
+  retracts `r3553`–`r3556` in its own words, *"projection settled by `prop:flat`, not a
+  lever"*, and main killed it independently at `r4549`: $\ell_1/\ell_A = k_1 r_s/\pi$, the
+  distance cancels identically, so the ratio was never a projection quantity at all.
+- **The rate-sensitive measurements were made on a background the corpus has since changed.**
+  `po13_dragint.py` most explicitly — its object was CR's radiation-free comoving rate against
+  the control's radiation-included one, which is exactly what `r4145` re-answered by
+  reassigning the perturbations to the leaf. Its $0.82$ is not a standing result.
+
+**What does stand is the rate-independent set, and it is preserved in §2 above as prose** —
+$R$ identical by construction, the arrival-phase spread of $0.000\pi$, the projection settled
+on `prop:flat`. *That is why this document is the thing that crossed and the scripts are not.*
 
 ---
 

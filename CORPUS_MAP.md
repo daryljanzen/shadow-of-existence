@@ -146,6 +146,36 @@ sources: [cowork, chat]
 
 
 
+### Revision r6589 — 2026-09-12 (node 64). **The `PO-13` "stranded files" resolved — they are absent BY DECISION, and my flag misread that as neglect.**
+
+**⛔ MY `r6585` FLAG WAS WRONG IN ITS FRAMING.** *I reported thirteen `po13_*` files as stranded on a stale
+branch, with "whoever works `PO-13` next will rebuild things that already exist". ⇒ ***They do not exist in any
+usable sense, and `FOR_56.md` had already recorded the disposition: "the branch is ASSESSED, not merged, and
+not owed."*** **Absent from main and absent by decision are different things, and I read the first as the
+second without opening the file that says so** --- the same failure as the stale figure line at `r6571`.
+
+**⌗ AND THE DISPOSITION IS REASONED FILE BY FILE, NOT A SHRUG.** *The **instrument** does not cross:
+`ACOUSTIC_two_arm.py` diverged two ways and **main's is the version every result from `r4489` to `r4549` rests
+on**. The **near-antipode $\chi$ / hyperspherical-Bessel line is retracted by both sides** --- `r3557(branch)`
+in its own words, "projection settled by `prop:flat`, not a lever", and ***main killed it independently at
+`r4549`: $\ell_1/\ell_A=k_1r_s/\pi$, the distance cancels identically, so the ratio was never a projection
+quantity at all***. **Dead twice over.** And the **rate-sensitive** measurements sit on a background the corpus
+has since changed --- `po13_dragint.py` most explicitly, its object being exactly what `r4145` re-answered by
+reassigning the perturbations to the leaf, so ***its $0.82$ is not a standing result***.
+
+**⌗ WHAT STANDS IS THE RATE-INDEPENDENT SET, AND IT IS ALREADY PRESERVED AS PROSE** --- *$R$ identical by
+construction, the arrival-phase spread of $0.000\pi$, the projection settled on `prop:flat`. **That is why the
+handoff crossed and the scripts did not.***
+
+**⛭ THE ONE REAL RESIDUE IS FIXED.** *`PO13_HANDOFF.md` --- the document that **did** cross --- still named
+`po13_chi_antipode.py` as "the from-scratch $\chi$/geometry check": ***a live pointer to a file that is not in
+main and whose whole line both sides retracted***. Replaced with the recorded disposition, both reasons, and
+what stands instead. **The remaining mentions name those files AS retracted, which is their correct use.**
+
+⌗ *And `65`'s audit never conflicted with mine: it audited **registration on main** and found nothing stranded,
+which is right; I flagged **files absent from main**, which is also right and separately resolved. **Two
+questions, two correct answers.***
+
 ### Revision r6587 — 2026-09-12 (node 64). **The merge's knock-ons cleared, the last red gate diagnosed — and it was never a receipt failure.**
 
 **⌗ THE CONCURRENT PUSH LEFT THREE THINGS, ALL NOW FIXED.** *⓵ Their changelog entry was numbered **`r6547`**,
