@@ -146,6 +146,39 @@ sources: [cowork, chat]
 
 
 
+### Revision r6577 — 2026-09-12 (node 64). **$T$ has a name in the corpus already: it is the third branch of a disjunction `P2` has carried unsettled.**
+
+**⌗ THE QUESTION WAS ASKED BEFORE, IN `P2`, IN ALMOST THESE WORDS.** *`P02_the_third_axis_is_two_poles` bounds
+itself with: **"Not settled here and not needed for the count: whether the reflection $z\to-z$ ($r$-even,
+$\tau$-odd, i.e. **cycloid-time reversal**) is the corpus's $R$, its $K$, or a **third thing**."** ⇒ ***That is
+the same shape as `r6574`'s $T$, and `r6574` answers it.***
+
+**⛭ A THIRD THING, AND FOR TWO INDEPENDENT REASONS.** *$T:\tilde\tau\to-\tilde\tau$ at fixed $r$ and $2M$ is a
+symmetry of the bead relation in its own right, since $\sinh^{2}$ is even. **Not $R$** --- the corpus's $R$
+flips $2M$ and holds $\tilde\tau$. **Not $K$** --- whose operator anticommutes with $\gamma^{5}$ and so flips
+chirality. ***$T$ flips neither.***
+
+⌗ **And the third branch is not idle**: *$T$ is what grades the lift's $2{+}1$* --- `r6566` measured it,
+`r6574` named it.
+
+**⌗ AND THE CYCLOID'S REFLECTION AGREES WITH THE BEAD'S TO THE COEFFICIENT NEAR $r=0$.** *Expanded
+independently, both give $r\to6^{2/3}M^{1/3}\tau^{2/3}/2$ --- ***not merely the same exponent $2/3$, the same
+coefficient*** --- each reducing to the marginally-bound law. ⇒ **So the two reflections coincide where the
+parametrisations do.**
+
+⚠ *Held there: **not** that they are the same map globally. The cycloid is the **bound** case and the bead
+carries $\Lambda$, so agreement is shown **in one limit only** --- "same shape" is what this corpus has been
+caught by before, and it is checked rather than assumed here.*
+
+⌗ *No paper edit is owed: `P2`'s body already calls the third axis **"resolved, not open"**, and the receipt's
+bound says "not settled **here**", which stays true. **Narrating the resolution into either would be the
+one-state violation**, and the `CONSOLIDATION PLAN` is where a fact-of-resolution belongs.*
+
+⛔ **AND THE QUESTION THE DAY ACTUALLY PRODUCED IS STILL OPEN: what $T$ MEANS.** *That it is a symmetry of the
+relation and grades the lift is what is known. ***Whether it is a physical time reversal in the CPT sense is
+not addressed by anything here*** --- and the corpus does have a CPT story, $R\circ K$ turning on the bead's
+$r=0$ crossing, which $T$ sits beside without yet joining.*
+
 ### Revision r6575 — 2026-09-12 (node 64). **`60`'s `r6574` merged and verified: the answer is (b) — $\gamma^5\circ K$ carries the lift's modes OFF the mode space, and what `r6566` measured was never $R\circ K$'s to grade.**
 
 **⛭ THE DO-NOT-ASSERT IS ANSWERED FOR THE LIFT, IN THE NEGATIVE.** *$\gamma^5\circ K$ **anticommutes** with
