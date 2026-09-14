@@ -146,6 +146,30 @@ sources: [cowork, chat]
 
 
 
+### Revision r6569 — 2026-09-12 (node 64). **A structural reason the position reading fails on the lift, and the spinor loophole that would have saved it — checked and closed.**
+
+**⌗ `r6566` GIVES A LOCATIONAL REASON**: *$r\to-r$ does not act **within** the lift, the lift being the $r\le0$
+wing entire. **This adds a structural one**, which holds even granting that it acts.*
+
+**⛭ THE FRAME EXCHANGE HAS ORDER 4 ON THE MODE SPACE.** *`r6566`'s `PART 5` gives
+$(r\to-r)^{2}=(\tilde\tau\to-\tilde\tau)$, verified at `r6567`. And `PART 6` **measures** that square on the
+lift's modes as the $2{+}1$ --- eigenvalues $(+1,+1,-1)$, ***not the identity***. ⇒ So $R_{\mathrm{frame}}^{2}\ne
+\mathrm{id}$ and the operator has **order 4**, while the corpus's $R$ is an **involution**: $\sigma$ and $R$
+generate $D_6$ as two reflections with $R^{2}=e$. ***An order-4 operator cannot be an involution, and that is a
+fact about the operator rather than about where it acts.***
+
+**⌗ AND THE LOOPHOLE IS THE PART WORTH STATING.** *A spinor representation **routinely** carries $R^{2}=-1$ ---
+a $2\pi$ rotation is the identity on the manifold and $-1$ on spinors --- so "order 4 on the representation"
+would ordinarily be **no objection at all**. ⇒ *That escape needs $R_{\mathrm{frame}}^{2}$ to be a **phase**,
+and $(+1,+1,-1)$ is not $c\,I$ for any $c$.* **So it does not represent an involution even projectively.**
+***Checked and closed rather than not considered.***
+
+⚠ **AND THIS DOES NOT SETTLE `[6*]`, which is the whole of its weight.** *What is shown is that **on the lift's
+mode space** the frame exchange cannot be a species conjugation. ***Nothing here shows $\mathrm{sign}(r)$ is
+wrong as a LABELLING*** --- on the base, $r\to-r$ is a perfectly good involution. ⇒ *What it narrows is the
+**shape** of any future settlement: a defence of the position reading must now say **what grades species on the
+lift**, given that the map flipping $\mathrm{sign}(r)$ has the wrong order there.*
+
 ### Revision r6567 — 2026-09-12 (node 64). **`r6566` merged and verified independently: the lift fibre meets `S3` where the wall failed it — $\dim\ker_+=2$, $\dim\ker_-=1$.**
 
 **⌗ THE CRITERION WAS FIXED BEFORE THE COMPUTATION AND IT IS MET.** *`P14_S3_against_the_wall_content` states
