@@ -146,6 +146,39 @@ sources: [cowork, chat]
 
 
 
+### Revision r6571 — 2026-09-12 (node 64). **`[6*]` was resolved before this session started, and a stale status line in nine figure files cost this line four turns.**
+
+**⛔ `A3_factorization` EXISTS, IS REGISTERED, RUNS GREEN, AND REPORTS "[6] RESOLVED, bounded".** *It was worked
+on the full $\mathbb{C}_r\times\mathbb{C}_{\tilde\tau}$ --- ***the very object `r1080` named as what would be
+needed*** --- and establishes $C=(Q\to-Q)_{\text{field}}\circ(R\circ K)_{\text{geometric}}$, with $R\circ K$
+reproducing $C$'s action on species, $|$mass$|$, mass-sign and the Feynman--Stückelberg wing structure while
+**blind to the electric-charge sign**, both factors depending on $Q$ only through $Q^{2}$. ⌗ *And `P13` says it
+in published prose: a "species $=\operatorname{sign} r$" reading is **not** vindicated, since
+"$\operatorname{sign} r$ has no meaning off the real axis".*
+
+**⚠⚠ AND THE COST IS MINE TO STATE PLAINLY.** *`r6561`--`r6569` eliminated candidate readings **by hand**,
+across four turns, against a status marker that had been superseded --- ***instead of opening the receipt named
+two lines away in the same file***. The figure said "the rhyme stays a rhyme until A3 works the full
+$\mathbb{C}_r\times\mathbb{C}_{\tilde\tau}$ object", and A3 had worked it. **A status line in a figure is a
+claim about the corpus and goes stale exactly like any other.** Corrected in all **nine** files that carried
+it, each still rendering or passing.*
+
+**⌗ AND BOTH "READINGS" I ELIMINATED WERE MISSTATEMENTS OF THE CORPUS'S MAPS.** *Its $R$ is
+$(r,\tilde\tau;2M,Q)\mapsto(-r,\tilde\tau;-2M,Q)$ --- **flipping $2M$ and holding $\tilde\tau$ fixed** --- and I
+dropped the mass flip. Its $K$ is $\tilde\tau\mapsto\overline{\tilde\tau}$, not $\tilde\tau\mapsto-\tilde\tau$.*
+
+**⛭ ONE THING SURVIVES, AND IT IS THE USEFUL PART.** *On the lift $\mathrm{Re}\,\tilde\tau=0$, so
+$\overline{\tilde\tau}=-\tilde\tau$ **exactly**: ***the involution `r6566` measured is $K$ restricted to the
+lift***, the corpus's own antilinear Feynman--Stückelberg face rather than a conjectured rule. **The $2{+}1$ is
+graded by the right operator, by a route that did not know it.**
+
+⛔ **AND WHAT REMAINS OPEN IS NOT `[6*]` BUT A3's OWN `DO-NOT-ASSERT`**, verbatim: *"that $R\circ K$ acts on
+`P14`'s actual fermion zero-modes as $C$'s kinematic conjugation"*. ***That is exactly the identification the
+lift result would need.*** `P13` scopes it identically --- the kinematic face is confirmed on the zero-modes
+for $R$ carrying each generation to its bound antimatter partner **on the reversed wall**, which is not the
+lift. ⇒ **The mode count stands as a mode count; calling it a species grading is the thing the corpus says not
+to assert.**
+
 ### Revision r6569 — 2026-09-12 (node 64). **A structural reason the position reading fails on the lift, and the spinor loophole that would have saved it — checked and closed.**
 
 **⌗ `r6566` GIVES A LOCATIONAL REASON**: *$r\to-r$ does not act **within** the lift, the lift being the $r\le0$

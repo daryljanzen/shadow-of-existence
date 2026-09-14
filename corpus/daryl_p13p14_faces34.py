@@ -26,6 +26,35 @@ TOGETHER WITH FACES 1-2 (see section 4b of the storyboard):
 species = sign(r) -- on face 4, sign(r) is undefined on two of the three rays, and on face 3 it is
 undefined everywhere (r is imaginary). That is the point: no face can settle it. THE RHYME STAYS A
 RHYME until A3 works the full C_r x C_tau~ object. ***
+
+*** STATUS, CORRECTED r6571 (node 64).  [6*] IS RESOLVED, AND HAS BEEN SINCE A3. ***
+    The line above -- that the rhyme stays a rhyme "until A3 works the full C_r x C_tau~
+    object" -- was written before that work was done.  IT HAS BEEN DONE:
+    storyboard_receipts/A3_factorization.py, worked on the full C_r x C_tau~ and green,
+    reports "[6] RESOLVED, bounded".  It establishes
+
+        C = (Q -> -Q)_field  o  (R o K)_geometric
+
+    with R : (r, tau~; 2M, Q) |-> (-r, tau~; -2M, Q)   linear, tau~ FIXED
+         K : (r, tau~; 2M, Q) |-> (conj r, conj tau~; 2M, Q)   ANTIlinear
+    R o K reproducing C's action on species, |mass|, mass-sign and the
+    Feynman-Stuckelberg wing structure, and BLIND to the electric-charge sign because
+    both factors depend on Q only through Q^2.  ** The geometry carries all of C's
+    KINEMATIC content; only the charge sign closes from the field. **
+
+    ⌗ AND P13 SAYS IT IN PUBLISHED PROSE: "Nor does the factorisation vindicate a
+    'species = sign r' reading: the maps are stated on the full object, where sign r has
+    no meaning off the real axis, and the particle/antiparticle content is the
+    Feynman-Stuckelberg relation the object carries, not the slice's sign."
+
+    ⛔ WHAT REMAINS OPEN IS NOT [6*] BUT A3's OWN DO-NOT-ASSERT: that R o K acts on P14's
+    actual fermion zero-modes as C's kinematic conjugation.  ** Do not read a mode count
+    on any locus as a species grading on the strength of these pictures. **
+
+    ⚠ THIS STALE LINE COST FOUR TURNS at r6561-r6569: node 64 eliminated candidate
+    readings by hand against a status marker that had been superseded, instead of opening
+    the receipt named two lines away.  *** A status line in a figure is a claim about the
+    corpus and goes stale exactly like any other. ***
 """
 import numpy as np, matplotlib; matplotlib.use('Agg'); import matplotlib.pyplot as plt
 import matplotlib.colors as mc
