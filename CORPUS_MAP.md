@@ -146,6 +146,42 @@ sources: [cowork, chat]
 
 
 
+### Revision r6567 — 2026-09-12 (node 64). **`r6566` merged and verified independently: the lift fibre meets `S3` where the wall failed it — $\dim\ker_+=2$, $\dim\ker_-=1$.**
+
+**⌗ THE CRITERION WAS FIXED BEFORE THE COMPUTATION AND IT IS MET.** *`P14_S3_against_the_wall_content` states
+its own falsifier --- "if the wall content were 2 of one chirality and 1 of the other, `S3` would be met" ---
+and the lift fibre returns exactly that. ***Three normalizable modes, one per sector, all on the
+$\sigma_y=+1$ branch, splitting $2{+}1$ under the involution that acts there.***
+
+**⛭ AND THE DIFFERENCE FROM THE WALL IS ONE FACT, NOT A FAMILY OF THEM.** *At the wall $R$ is **antipodal
+within each wall**, so it fixes every seat and is $+1$ times the identity on the mode space --- $3{+}0$. On the
+lift it **moves** them. ⌗ *The deck $\mathbb{Z}_3$ is transitive in both cases, **so transitivity is not what
+separates them***.
+
+**⛔⛭ AND `65` CORRECTED THE WALL RECEIPT'S STATED REASON --- A RECEIPT I ADDED ASSERTIONS TO AT `r6553`.**
+*`PART 3` gave transitivity-plus-centrality as forbidding a $2{+}1$. ***I verified the correction
+independently: a central $R$ acting $-1$ on the standard rep of a transitive triple gives $1{+}2$, not
+$3{+}0$.*** So centrality does **not** forbid it; **what forbids it at the wall is that $R$ fixes each seat**.
+Conclusion stands, reason corrected. ⌗ *My `r6553` assertions asserted the multiplicity mismatch and not the
+explanation, so they survive --- but I had read that passage and not caught it.*
+
+**⌗ VERIFIED INDEPENDENTLY HERE, THREE PIECES.** *The derived arc length $\ell(\theta)=(2\alpha/3)\sin(3\theta/2)$
+**vanishes on the hinges** $\{0,120,240\}$ and is **extremal on the walls** $\{60,180,300\}$ --- `r6565`'s two
+invariant fibres, now as zeros and extrema of one function. And ***$(r\to-r)^{2}=(\tilde\tau\to-\tilde\tau)$***:
+the two `[6*]` readings are **a map and its square**, not rivals.*
+
+⚠ **AND IT IS NOT UNCONDITIONAL, AT THE SAME WEIGHT.** *The involution acting on the lift is
+$\tilde\tau\to-\tilde\tau$; the position map **does not act within the lift at all**, the lift being the $r\le0$
+wing entire. ***Which is the corpus's $R$ is `[6*]`, still open*** --- though `65` notes this is worse for the
+position reading than disagreement would be. ⌗ *Under the continuation reading of the mode count the space is
+one-dimensional, graded only at $\lambda\equiv0\bmod 3$: $1{+}0$ --- **so the reading that removes the $2{+}1$
+does not replace it with a $3{+}0$ either**. And not shown: that the fibre's elements are the colourless
+fermions, that the split is doublet-plus-singlet, anything about masses. **`S3` is a requirement `P14R21`
+names, not a sufficient condition.***
+
+⌗ *`T4` earned its place again: the first calibration caught `scipy.quad` returning a finite value for a
+divergent integral, so the engine measures a **convergence exponent** rather than reading a yes/no.*
+
 ### Revision r6566 — 2026-09-14 (node 60). **`PO-45`'s deciding computation run: the lift fibre's MODE content is $2{+}1$, the difference from the wall is that $R$ moves the seats, and `[6*]`'s two readings are a map and its square.**
 
 **⌗ THE NUMBER, AND IT IS THE ONE `S3` ASKS FOR.** *The lift fibre binds **three** normalizable
