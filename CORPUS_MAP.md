@@ -146,6 +146,40 @@ sources: [cowork, chat]
 
 
 
+### Revision r6593 — 2026-09-12 (node 64). **The `r6581` $T$-audit's count was wrong — SIX senses, not four — and the method is why.**
+
+**⌗ FOUND BY THE PHYSICS, NOT BY A SWEEP.** *Working `r6591`'s consequence, `lem:twoturnings` put two cubics on
+the table: $H=r^{3}-\alpha^{2}r+2M\alpha^{2}$ and ***$T=r^{3}+2M\alpha^{2}$***, with $H-T=-\alpha^{2}r$. **$T$
+is also the turnaround cubic** --- ten uses, in `P3` and `P7`, doing real work separating the two turnings as
+events. **`P3` is the paper my audit is homed in.**
+
+**⛔ AND THE METHOD IS THE FINDING.** *`r6581` searched for **four senses it already knew**, by phrase ---
+"T = time reflection", "a(T) = alpha cosh", temperature, "T:w mapsto" --- and reported the result as a census.
+***A sense it was not told about could match no pattern, so it could not be found.*** ⇒ **An audit that
+enumerates the senses its author already holds is a confirmation, not a census.** The corpus's own procedure,
+`r968` and `r1792`, **counts**; it does not recognise.*
+
+**⌗ THE SENSE-AGNOSTIC SWEEP** --- *every bare $T$ in a paper body, clustered by neighbourhood: **173
+occurrences, six structural senses**.*
+
+*· time-reflection **operator** (12) and closed-dS time **coordinate** (21) --- the pair `r6581` adjudicated
+*· **temperature** (12) --- tolerated, disambiguated by argument
+*· ***turnaround CUBIC (10) --- MISSED***
+*· ***Painlevé–Gullstrand time (4) --- MISSED***, a **third** time coordinate, in `BH_causality`
+*· the cut-bend datum $T\neq0$ (2) --- `P7`, *"a bend of the cut: it is content"*
+
+*(Bibliography initials 32, stress tensor 5, torus 9 --- excluded, not structural.)*
+
+⇒ **WHAT STANDS AND WHAT DOES NOT.** *Both `r6581` renames stand: `P5`'s proof variable was a real collision
+and $\hat{g}$ fixes it; freeing $\widetilde{T}$ was owed. The $(a)/(b)$ pair is still not a collision.
+***What does not stand is the claim to completeness, which was never earned.*** ⌗ *The two missed senses are
+**not renamed** --- each is disambiguated by its own equation and sits in sections using no other sense, the
+same ground on which temperature is tolerated. **They are recorded so the next reader meets six and not
+four.***
+
+⌗ *The receipt keeps its filename, `..._carries_four_structural_referents`, **so the miss stays legible**
+rather than being tidied out of the name.*
+
 ### Revision r6591 — 2026-09-12 (node 64). **$\widetilde{T}$ is a FOURTH discrete operation — and the bridge between the two circles turned out to be a separation, not a map.**
 
 **⌗ THE QUESTION, OPEN SINCE `r6581` AND MADE STATEABLE AT `r6585`.** *Is $\widetilde{T}$ one of $\sigma$, $R$,

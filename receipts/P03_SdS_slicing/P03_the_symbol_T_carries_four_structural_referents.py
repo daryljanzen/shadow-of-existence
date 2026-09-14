@@ -2,9 +2,14 @@
 P03_the_symbol_T_carries_four_structural_referents
 ==================================================
 
-Object under test -- the bare symbol T across the paper bodies, audited the way r968 and
-r1792 audited R and rho.  ** This SURVEYS and does not rename. **  Homed with P3 because
-P3 carries the fullest statement of the symbol canon and both rename precedents.
+⛔⛔ ** THE COUNT IN THIS FILE'S NAME IS WRONG AND THE METHOD IS WHY.  SEE (5). **  The
+audit found FOUR senses because it searched for four it already knew.  A sense-agnostic
+sweep at r6593 finds SIX, and the two it missed are in the very paper this receipt is
+homed in.  *** The file keeps its name so the miss stays legible. ***
+
+Object under test -- the symbol T across the paper bodies, audited on the r968/r1792
+pattern.  Homed with P3, which carries the fullest statement of the symbol canon and both
+rename precedents.
 
 --------------------------------------------------------------------------------
 (1) THE CORPUS HAS A PROCEDURE FOR THIS AND HAS RUN IT TWICE.
@@ -56,6 +61,38 @@ the fundamental rest frame.  The canon's T reverses X_0, the STATIC time. **
 
   ==> *** A fifth referent, introduced by this line, colliding with a symbol the canon
       reserves -- and the only one of the five that nothing else has been built on. ***
+
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+⛔ (5) AND THE METHOD WAS NOT AN AUDIT.  r6593.
+
+This file searched for FOUR KNOWN SENSES by phrase pattern -- "T = time reflection",
+"a(T) = alpha cosh", temperature, "T:w mapsto" -- and reported the result as a census.
+** A sense it was not told about could not match any pattern, so it could not be found. **
+
+A sense-agnostic sweep -- every bare T in a paper body, clustered by neighbourhood --
+returns 173 occurrences and SIX structural senses:
+
+    time-reflection OPERATOR        12      ) the pair r6581 adjudicated
+    closed-dS time COORDINATE       21      )
+    TEMPERATURE                     12        tolerated, disambiguated by argument
+    turnaround CUBIC                10      ** MISSED **  T = r^3 + 2M alpha^2, with
+                                            H - T = -alpha^2 r -- and it is in P3 and P7,
+                                            P3 being this receipt's own home
+    Painleve-Gullstrand time         4      ** MISSED **  a THIRD time coordinate, in
+                                            BH_causality, distinct from the closed-dS one
+    the CUT-BEND datum (T != 0)      2        P7, "a bend of the cut, T != 0: it is content"
+
+  (bibliography initials 32, stress tensor 5, torus 9 -- excluded, not structural.)
+
+  ==> *** An audit that enumerates the senses its author already holds is a confirmation,
+      not a census.  The corpus's own procedure -- r968, r1792 -- COUNTS; it does not
+      recognise. ***
+
+⌗ WHAT THIS DOES NOT CHANGE.  The two renames r6581 made stand: P5's proof variable was a
+real collision and \hat{g} fixes it; \widetilde{T} was this line's own and needed freeing.
+And the (a)/(b) pair is still not a collision, for the reason given in (3).  ** What
+changes is the CLAIM TO COMPLETENESS, which was never earned. **
 
 --------------------------------------------------------------------------------
 ⚠ WHAT THIS DOES NOT DO.  ** It does not rename anything. **  r968 and r1792 each renamed
