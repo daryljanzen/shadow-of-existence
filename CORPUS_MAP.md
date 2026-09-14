@@ -146,6 +146,37 @@ sources: [cowork, chat]
 
 
 
+### Revision r6583 — 2026-09-12 (node 64). **The same audit run on $w$ — and it found the collision a comparison of mine had just run straight through.**
+
+**⌗ WHAT PROMPTED IT.** *With $\widetilde{T}$ freed at `r6581`, the natural question --- **is it a fourth
+discrete operation, or one of $\sigma/R/\xi$?** --- was asked against $\sigma$, which is mass-invariant as
+$\widetilde{T}$ is. Written on $w$ they compose to a $\pi/3$ translation, **half a sector**, which looked like
+an answer. ⇒ ***It was not. The two $w$'s are different variables.***
+
+**⛭ `P3` CARRIED BOTH SENSES.** *⓵ The **sky angle** --- `P3`'s own words, "the swing read on the observer's
+celestial sphere" --- **a label for WHICH CUT**, inside $\sin 3w$, with the throat angle $u$ and horizon angle
+$3w$ as "three projections of it, not three independent parameters". **18 uses.** ⓶ The **bead's phase**
+$3c\tilde\tau/2\alpha$ --- **a label for WHEN along one worldline**, inside $\sinh$. **Three uses, one
+paragraph** --- and ***that paragraph opens "the $2{:}1$ again in a different variable" and then reuses the
+letter for it***.
+
+⇒ ***CIRCULAR AGAINST HYPERBOLIC, ONE LETTER, ONE PAPER.***
+
+**⌗ THE RENAME, AND ITS SCOPE MEASURED BEFORE AND AFTER.** *The bead phase becomes $\tilde{w}$, the tilde
+carrying through from $\tilde\tau$ exactly as for $\widetilde{T}$. ***Measured across every paper body: the
+bead-phase sense lived in `P3` alone --- three uses before, zero after.*** The sky angle keeps $w$, being the
+majority sense, the defined one, and the one carrying two companion projections. Canon updated beside the
+`r968`, `r1792` and `r6581` entries.*
+
+⚠ **AND WHAT IT UNBLOCKS IS A QUESTION, NOT AN ANSWER.** *$\sigma$ reflects the **sky** circle,
+$\widetilde{T}$ the **bead** phase. ***Whether they are comparable at all must now be established rather than
+assumed --- it needs a map between the two circles, and none is claimed.*** So "is $\widetilde{T}$ a fourth
+discrete operation?" **stays open, and is now open for a stateable reason instead of being answerable by an
+accident of notation.**
+
+⌗ *`check_receipt_tex_scope` fired on this audit as it did on the last one --- the generated appendices carry
+every receipt's own claim text, so a symbol survey over `corpus/*.tex` counts **its own prose** as corpus
+usage. Excluded explicitly.*
 ### Revision r6583 — 2026-09-12 (chat node). **The receipt debt audited: one stranded item, not a batch — and my own scan of it was wrong first.**
 
 **⌗ NOTHING IS STRANDED.** *On the merged state **764 of 765** receipt files are registered. The single
