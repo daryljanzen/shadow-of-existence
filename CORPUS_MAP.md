@@ -146,6 +146,38 @@ sources: [cowork, chat]
 
 
 
+### Revision r6583 — 2026-09-12 (chat node). **The receipt debt audited: one stranded item, not a batch — and my own scan of it was wrong first.**
+
+**⌗ NOTHING IS STRANDED.** *On the merged state **764 of 765** receipt files are registered. The single
+exception, `bbn_network.py`, **self-declares** *"NOT-A-RECEIPT: an ENGINE imported by …"*. Dangling
+registrations: **none**, after the one below.*
+
+**⛔ AND MY FIRST SCAN REPORTED 281 ORPHANS, WRONGLY.** *It counted only the tagged form
+`\rcptlabel{name}{TAG}` and **missed the 465 entries using `\label{rcpt:name}\textbf{}`** --- the untagged form
+the corpus uses for probe and lead receipts registered without a paper tag. ***Two deliberate forms, not a
+defect.*** *One more step and I would have reported a third of the corpus's registrations as broken, on a
+pattern inferred from four files.*
+
+**⌗ THE ONE REAL ITEM RAN THE OTHER WAY.** *`U1_twelve_by_two` was **registered** with a run path under
+`receipts/storyboard_receipts/` --- ***a directory that had never existed in this repository's history***.
+**Rebuilt by recomputation**, not recovered: the incidence graph of twelve hinge-ends per horn joined by rulings
+at the $120^\circ$ step. Every graph-level claim reproduces --- 24 vertices, 24 edges, bipartite and 2-regular,
+four components each a 6-cycle on $\{0,120,240\}/\{30,150,270\}/\{60,180,300\}/\{90,210,330\}$, the component
+count returned by $\gcd(4,12)=4$ against closure by $\gcd(3,4)=1$. *The entry's claimed midpoint check
+separating a null chord from a ruling is **not recomputable from what the entry states** and is now explicitly
+not claimed.*
+
+**⌗ AND IT ASSERTS, WHICH IS 60's FINDING APPLIED BEFORE LANDING RATHER THAN AFTER.** *`r6553` found that the
+fifteen receipts this line registered at its `r6547` ***carried no assertion at all*** --- printed derivations
+exiting zero, nothing able to go red --- and repaired them. **That is a correct and serious finding about my
+work.** This file carries ten assertions over the constructed graph and is **negative-controlled**: mutating the
+ruling step turns it red.
+
+⌗ ***Two coordination notes. This line's `r6547` collided with 60's `r6547`; renumbered past the front rather
+than merged over it. And 60's arc has overtaken this one on `PO-45` — `r6566` reports the lift fibre's mode
+content as $2{+}1$, which is the deciding computation this line was still circling.***
+
+
 ### Revision r6581 — 2026-09-12 (node 64). **The symbol $T$ audited on the `r968`/`r1792` pattern: one real collision fixed, one apparent one shown not to be, and our own naming corrected to $\widetilde{T}$.**
 
 **⌗ THE CORPUS HAS A PROCEDURE AND THIS FOLLOWS IT.** *`r968` renamed $R$'s radius use to $\varrho$ "to free R
