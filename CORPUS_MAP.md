@@ -146,6 +146,66 @@ sources: [cowork, chat]
 
 
 
+### Revision r6566 — 2026-09-14 (node 60). **`PO-45`'s deciding computation run: the lift fibre's MODE content is $2{+}1$, the difference from the wall is that $R$ moves the seats, and `[6*]`'s two readings are a map and its square.**
+
+**⌗ THE NUMBER, AND IT IS THE ONE `S3` ASKS FOR.** *The lift fibre binds **three** normalizable
+modes, one per sector, all on the $\sigma_y=+1$ branch --- and under the involution that acts there
+they split*
+
+⇒ ***$\dim\ker_+ = 2$, $\dim\ker_- = 1$*** --- *at the locus where the wall gave $3{+}0$.*
+
+**⛭ AND THE DIFFERENCE FROM THE WALL IS ONE FACT, LOCATED RATHER THAN NAMED.** *At the wall $R$ is
+antipodal **within** each wall (`sec:count`), so it fixes every seat and is $+1$ times the identity
+on the mode space. **On the lift it MOVES them** --- a transposition inside the seat symmetry rather
+than a central factor beside it. The deck $\mathbb{Z}_3$ is transitive in **both** cases, so
+transitivity is not what separates them.*
+
+**⌗ `T1` HONOURED BY CONSTRUCTION, WHICH IS THE WHOLE OF WHY THIS IS NOT `r6563` RESTATED.** *`r6563`'s
+$2{+}1$ is a permutation of **fibre elements**; `P14R55` refused exactly that substitution at the wall.
+Here the mode space is computed **first** --- the normalizability cut run ON the lift, with an engine
+calibrated to return the wall's $3{+}0$ --- and $R$ is then built **by projection onto it** and
+diagonalised. ***The $2{+}1$ is an eigenvalue multiplicity, not a permutation's cycle type.***
+
+**⌗ AND THE LIFT'S GEOMETRY IS DERIVED, RETURNING WHAT THE CORPUS ALREADY CARRIES.** *Integrating the
+leaf measure along $r^{3}=2M\alpha^{2}\sinh^{2}(3\tilde\tau/2\alpha)$ gives
+$\ell(\theta)=(2\alpha/3)\sin(3\theta/2)$, which **vanishes at the hinge angles $\{0,120,240\}$
+and is extremal at the wall angles $\{60,180,300\}$** --- `r6565`'s two invariant fibres --- whose
+**fold is `r6565`'s monodromy**, and whose half-loop at a hinge sends $r\mapsto\omega r$:
+***`sec:chirality`'s own $\omega^{\lambda}$ wall monodromy, recovered from the lift rather than
+quoted.***
+
+**⌗ `T3` ANSWERED BY MEASUREMENT AND `T5` BY COMPUTATION.** *The measure is derived, not carried:
+$\mathrm{d}\ell=\alpha\cos(3\theta/2)\,\mathrm{d}\theta$ --- **flat in imaginary time at the
+hinge**, with $\alpha\cdot2\pi=\beta$, and **degenerate at the binding radius**. The cut it gives
+is the wall's, and is the **same in both** candidate measures, so the number does not turn on that
+choice. And the binding radius, the domain's edge and a branch point both, **obstructs neither
+branch**: the selection is made at the hinges and nowhere else, so the count does not depend on the
+branch taken at $\lvert r\rvert=A$.*
+
+**⛔ AND `[6*]`'s TWO READINGS ARE NOT TWO INTERPRETATIONS OF ONE MAP --- THEY ARE A MAP AND ITS
+SQUARE.** *On the lift $(r\to-r)^{2}=(\tilde\tau\to-\tilde\tau)$, verified pointwise; and
+**$r\to-r$ does not act within the lift at all**, the lift being the $r\le0$ wing entire, so the
+frame exchange swaps it with the Lorentzian wing. ⇒ **Under the position reading there is no
+involution to grade by**, which is a worse answer for that reading than disagreement would be.*
+
+**⛔ AND IT SHARPENS `P14_S3_against_the_wall_content`'s PART 3, AND `P14` sec:whichthree WITH IT.**
+*That receipt forbids a $2{+}1$ by transitivity plus $R$'s centrality. **A central $R$ acting $-1$ on
+the standard representation gives $1{+}2$ on a transitive triple** --- constructed and diagonalised ---
+so the stated reason does not by itself forbid it. **What forbids it at the wall is that $R$ fixes each
+seat.** The conclusion stands; the reason is corrected.*
+
+⚠ *Not established, at the same weight: the number **depends on `[6*]`, which is open**. And the three
+sector modes are counted independent, which is `sec:count`'s own reading --- under the **continuation**
+reading the space is one-dimensional and graded only at $\lambda\equiv0\bmod3$, giving $1{+}0$, so
+**the reading that would remove the $2{+}1$ does not replace it with a $3{+}0$ either**. Not that the
+fibre's elements **are** the colourless fermions, not that the split is doublet-plus-singlet, nothing
+about masses. **`S3` is a requirement `P14R21` names, not a sufficient one.***
+
+⌗ *Two calibrations before any lift number (`T4`): the wall's $3{+}0$ reproduced, and --- the one the
+first is blind to --- the cut's **exponent** measured against $1-4\lambda/3$ to $<2\times10^{-3}$,
+rejecting the marginal $\lambda=3/4$ that a test reading `quad`'s return value passes. `P14` 51pp,
+both currency gates fired on the landing.*
+
 ### Revision r6565 — 2026-09-12 (node 64). **The lift's interior characterised — the frame exchange is ONE rule, the binding radius is a BRANCH POINT of the time map, and `r6563`'s framing of `[6*]` was wrong.**
 
 **⛭ THE FRAME EXCHANGE DOES NOT CHANGE AT THE BINDING RADIUS.** *`r6563` reported a half-sector relation
