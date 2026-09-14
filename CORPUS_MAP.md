@@ -146,6 +146,38 @@ sources: [cowork, chat]
 
 
 
+### Revision r6595 — 2026-09-12 (node 64). **The $T$ collision bit where it was load-bearing: `P14` attributed the turnaround's dihedral relation to the wrong operation, and the rename is what exposed it.**
+
+**⛔ ONE SUBSECTION, TWO OPERATIONS, ONE LETTER.** *At $\sim$909 `P14` justified the descent by **cosmic-time**
+invariance --- "$\sinh^{2}$ being even" --- and then stated $TDT^{-1}=D^{-1}$ and $\langle D,T\rangle\cong S_3$.
+Eighteen lines later, at $\sim$927: ***"They are supplied by $T$, the **horn swap**."*** Before `r6581` both read
+"$T$".
+
+**⌗ AND THE RECEIPT SETTLES WHICH.** *`P14_the_family_symmetry_is_cyclic` computes on **sheet** indices ---
+$D:k\mapsto k+1$, $T:k\mapsto-k$, ***"the horn swap descends as an inversion"*** --- and says it four times over.
+**The $S_3$'s transposition is the horn swap.**
+
+**⛭ AND BOTH INVERSIONS SATISFY THE SAME RELATION, ON DIFFERENT THREES.** *Verified: the horn on the **cube-root
+sheets** (fixing $0$), $\widetilde{T}$ on the **$\mathrm{Im}\,\tilde\tau$ sectors** (fixing $1$), each conjugating
+its deck to its inverse. ⇒ ***And `r6563` already showed those threes are independent --- a sheet rotation fixes
+$\tilde\tau$, a sector shift fixes $r$.*** So $\sim$909 attached the **sheet** relation to the operation that acts
+on the **sectors**.*
+
+**⌗ FIXED.** *The horn swap carries the sheet relation in the body; $\widetilde{T}$'s sector fact is kept in a
+footnote that states the two threes are independent. `P14` at zero undefined. ⌗ *The horns are **spacelike**
+substrate features --- "a skew hexagon of null rulings across the two horns" --- so the horn swap is not a time
+reflection, and the `r6581` rename did **not** split one object in two.*
+
+⛔ **AND $\sigma$ HAS THE SAME PROBLEM IN THE SAME SUBSECTION, NOT YET FIXED.** *`P14` writes "Let $\sigma$ be
+the involution exchanging the two $\gamma^{5}$-eigenspaces" --- a **local** redefinition --- and then, after it,
+uses bare $\sigma$ for the **canon** sense: ***"$\sigma$ and $R$ generate $D_6$"***. **A shadowed symbol, used
+both ways on either side of its own redefinition.** ⌗ *And the rename is not obvious: the corpus states "the
+**ruling swap**, the orientation parity, the $A_2$ diagram automorphism ... are one", which is $R$ --- while
+`P14`'s local $\sigma$ "moves the ruling datum", which would make it $R$ too, except that $R=\gamma^{5}$ does
+not **exchange** its own eigenspaces.* ⇒ ***Left open deliberately rather than guessed: the candidate
+identification would mean `P14` uses $\sigma$ for what the corpus elsewhere calls $R$, and that is too
+consequential to settle by inference.***
+
 ### Revision r6593 — 2026-09-12 (node 64). **The `r6581` $T$-audit's count was wrong — SIX senses, not four — and the method is why.**
 
 **⌗ FOUND BY THE PHYSICS, NOT BY A SWEEP.** *Working `r6591`'s consequence, `lem:twoturnings` put two cubics on
