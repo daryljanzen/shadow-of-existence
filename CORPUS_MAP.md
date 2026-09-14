@@ -146,6 +146,43 @@ sources: [cowork, chat]
 
 
 
+### Revision r6575 — 2026-09-12 (node 64). **`60`'s `r6574` merged and verified: the answer is (b) — $\gamma^5\circ K$ carries the lift's modes OFF the mode space, and what `r6566` measured was never $R\circ K$'s to grade.**
+
+**⛭ THE DO-NOT-ASSERT IS ANSWERED FOR THE LIFT, IN THE NEGATIVE.** *$\gamma^5\circ K$ **anticommutes** with
+$\gamma^5$, so it flips chirality; the lift's three modes are all $\sigma_y=+1$ and $R$ sends $2M\to-2M$, so it
+carries every one of them onto the conjugate geometry. ***It is not an endomorphism there, has no eigenvalues
+there, and is not the involution `r6566` measured.***
+
+**⌗ AND THIS IS NOT A DEFECT OF THE LIFT --- IT IS WHAT CONJUGATION DOES.** *`P14_P14_payoff` records the same
+at the wall: $R$ carries the bound mode to a bound mode of **opposite** chirality. **The lift behaves exactly as
+the wall does.** What differs is only that `r6566`'s $2{+}1$ was never $R\circ K$'s.*
+
+**⛭⛭ AND WHAT IT ACTUALLY WAS IS NAMED: $T:\tilde\tau\mapsto-\tilde\tau$ at fixed $r$ and $2M$** --- *a symmetry
+of the bead relation in its own right, since $\sinh^{2}$ is even (verified here). **Neither $R$ (flips the mass)
+nor $K$ (flips the chirality); $T$ flips neither.** ⇒ *That answers `r6569`'s narrowing directly: a defence of
+the position reading had to say what grades species on the lift, and ***it is the bead's own time reversal***.*
+
+**⛔ AND A3's TRAP CAUGHT ME LIVE, WHICH IS THE BEST EVIDENCE IT IS REAL.** *My first verification used the
+**C-matrix proper** $i\gamma^{2}\gamma^{0}$, which **commutes** with $\gamma^{5}$ --- returning "chirality
+preserved", ***a clean (a) with the identification appearing to go through***. The operator in $\psi\to\psi^{c}$
+is $i\gamma^{2}$, which anticommutes. **A3 warns the wrong object yields a false refutation; here it yields a
+false confirmation**, and I produced one before catching it.*
+
+⚠ **AND I PRINTED A CONCLUSION MY OWN MEASUREMENT CONTRADICTED, FOR THE SECOND TIME THIS SESSION.** *I computed
+the square as $+1$ and wrote "as `60` reports" beneath it. ⌗ *The discrepancy resolves in `60`'s favour and was
+mine: the operator lives on the **cut spinor**, where it is $\sigma_y\circ K$ and $\sigma_y$ is **imaginary**,
+giving $-1$; I checked the $4\times4$ Dirac $\gamma^{5}$, which is **real**, giving $+1$. **Different space, not
+a disagreement** --- and an antilinear operator with square $-1$ has no eigenvectors, verified.*
+
+⌗ *`60` also records two things beyond the order: the corpus carries $R$ in **two senses** --- `sec:count`'s
+antipodal map at fixed mass, and `sec:cosmogenesis`'s $r_0\to-r_0$ with $2M\to-2M$ --- so `r6566` compared two
+candidate readings **of which neither was A3's**. And `W4` resolves **negatively**: $R$ fixes a point only at
+$r=0$ and $M=0$, so no locus of a fixed-mass geometry is $R$-fixed. ***The lift's invariant fibres are
+$T$-invariant, not $R$-fixed.***
+
+⌗ *`r6566`'s $2{+}1$ stands with only its operator's name corrected, and `S3` is not thereby unmet --- the
+lift's content is still a single $\sigma_y$ eigenspace.*
+
 ### Revision r6574 — 2026-09-14 (node 60). **`A3`'s DO-NOT-ASSERT answered for the lift, in the negative: $\gamma^{5}\!\circ\!K$ flips chirality and grades nothing there, and what `r6566` measured is the bead's TIME REVERSAL.**
 
 **⌗ THE JOB, AND IT COMES OUT THE OTHER WAY.** *`A3_factorization` marks exactly one thing
