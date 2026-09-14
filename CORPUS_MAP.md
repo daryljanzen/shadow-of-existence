@@ -146,6 +146,36 @@ sources: [cowork, chat]
 
 
 
+### Revision r6579 — 2026-09-12 (node 64). **$\tilde\tau$ is COSMIC TIME and the bead relation is `eq:scalefac` — my "correction" of `r6577` was the error, and `r6577` was right.**
+
+**⛔ WHAT I DID WRONG.** *I read $\tilde\tau=\tau+\chi$ out of a sentence about the decoupling and called it
+"the non-synchrony, not the time" --- ***then corrected `r6577`'s "the bead's own time reversal" on that
+basis***. `r6577` was right and the correction was wrong. **I had not read the derivation.**
+
+**⌗ WHAT `sec:properframe` ACTUALLY DERIVES, IN FIVE STEPS.** *(i) a radial geodesic with conserved $E$;
+(ii) the fundamental congruence fixed **by the field** at $E=1$, where $V_{\mathrm{eff}}\equiv1$ --- a locus at
+**negative** areal radius on the conjugate branch; (iii) $E=1$ being ***the one non-degenerate energy at which
+the cosmology integrates in closed form***, giving $r\sim\sinh^{2/3}$; (iv) labelling by comoving $\chi$, under
+which $r$ depends on $\tau,\chi$ **only through their sum**; (v) $g_{\chi\tau}=0$ forcing the integration
+function to be $\chi$ itself. ⇒ The corpus's own words: ***"with COSMIC TIME $\tilde\tau\equiv\tau+\chi$ (by
+Weyl's principle the congruence issues from a common origin and the constant-cosmic-time slices are those of
+constant $\tilde\tau$)"***.
+
+**⛭ SO THE BEAD RELATION IS `eq:scalefac` — THE SCALE FACTOR.** *$r(\tilde\tau)=(6GM/\Lambda
+c^{2})^{1/3}\sinh^{2/3}(\tfrac32\sqrt{\Lambda c^{2}/3}\,\tilde\tau)$, whose prefactor **is exactly $A$** --- the
+lift's binding radius --- and whose argument **is exactly $3\tilde\tau/2\alpha$**. Both verified. ⇒ ***$T$ is
+cosmological time reversal: $r$ is even in $\tilde\tau$, the expanding cosmology is the real branch
+$\tilde\tau>0$, and $T$ carries it to the contracting one AT THE SAME $r$.***
+
+⌗ *And it is **not** the `r968` canon's $T$, which is $X_0\to-X_0$, the **static** time. $\tilde\tau$ is the
+**cosmic** time of a non-synchronous slicing whose slices sit at $45°$ to the fundamental rest frame. **Same
+word, two slicings, and the corpus keeps them apart.***
+
+⛔ *And there was never a $CPT$ question to raise: `P13` settles it **in the negative** --- **"a full geometric
+CPT is NOT auto-yielded (the charge sign is external)"**, with $R\circ K$ carrying the kinematic face and $R$
+named as $\gamma^{5}$ on spinors. ***I proposed a question the corpus had closed, having not read the passage
+that closes it.***
+
 ### Revision r6577 — 2026-09-12 (node 64). **$T$ has a name in the corpus already: it is the third branch of a disjunction `P2` has carried unsettled.**
 
 **⌗ THE QUESTION WAS ASKED BEFORE, IN `P2`, IN ALMOST THESE WORDS.** *`P02_the_third_axis_is_two_poles` bounds

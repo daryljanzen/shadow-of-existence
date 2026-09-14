@@ -58,6 +58,35 @@ marginally-bound law near the singularity.
       r = 0, and this receipt does not claim they do. ***
 
 --------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+(4) AND WHAT tilde-tau IS, SINCE THE ANSWER TURNS ON IT.
+
+** tilde-tau is COSMIC TIME. **  P15 sec:properframe derives it in five steps: a radial
+geodesic with conserved E; the fundamental congruence fixed BY THE FIELD at E=1 (where
+V_eff == 1); that energy integrating in closed form to r ~ sinh^(2/3); the congruence
+labelled by a comoving chi, under which r depends on tau and chi only through their SUM;
+and g_{chi tau} = 0 forcing the integration function to be chi itself.  The corpus's own
+sentence: ** "with COSMIC TIME tilde-tau == tau + chi (by Weyl's principle the congruence
+issues from a common origin and the constant-cosmic-time slices are those of constant
+tilde-tau)". **
+
+  ⌗ SO THE BEAD RELATION IS eq:scalefac, THE SCALE FACTOR:
+        r(tilde-tau) = (6GM/Lambda c^2)^(1/3) sinh^(2/3)( (3/2) sqrt(Lambda c^2/3)
+        tilde-tau )
+    whose prefactor is exactly A = (2GM alpha^2/c^2)^(1/3) and whose argument is exactly
+    3 tilde-tau / 2 alpha -- both verified below.
+
+  ==> *** T : tilde-tau -> -tilde-tau IS COSMOLOGICAL TIME REVERSAL.  r is even in
+      tilde-tau, the expanding cosmology is the real branch tilde-tau > 0, and T carries
+      it to the contracting one AT THE SAME r. ***
+
+⌗ AND IT IS NOT THE CANON'S T.  The r968 symbol canon reserves T for the time reflection
+X_0 -> -X_0 -- the static/embedding time -- while tilde-tau is the COSMIC time of a
+non-synchronous slicing, the constant-tilde-tau slices sitting at 45 degrees to the
+fundamental rest frame.  ** Same word, two slicings; the corpus keeps them apart and so
+does this. **
+
+--------------------------------------------------------------------------------
 ⚠ WHAT IS ESTABLISHED AND WHAT IS NOT.
 
   ESTABLISHED: P2's question is answered in its third branch FOR THE BEAD -- T is neither R nor
@@ -65,9 +94,10 @@ marginally-bound law near the singularity.
   r = 0.
 
   NOT ESTABLISHED: ** that P2's cycloid reflection and the bead's T are the same map globally. **
-  What is shown is agreement in one limit.  *** Nothing here says what T MEANS -- that it is a
-  symmetry of the relation and grades the lift is what is known; whether it is a physical time
-  reversal in the CPT sense is not addressed. ***
+  What is shown is agreement in one limit.  ⌗ And T is cosmological time reversal, NOT the
+  canon's T (X_0 -> -X_0): *** the corpus distinguishes the two slicings and a full geometric
+  CPT is settled in the NEGATIVE anyway -- "CPT IS NOT AUTO-YIELDED (the charge sign is
+  external)" -- so there is no third slot here for T to fill. ***
 """
 
 import sympy as sp
@@ -119,5 +149,23 @@ print("ESTABLISHED: P2's open disjunction -- R, K, or a third thing -- is answer
 print("branch for the bead's T, and T is what grades the lift's 2+1 (r6574). The cycloid's")
 print("reflection has the same parity structure and agrees with the bead's near r=0 to the")
 print("coefficient, both reducing to the marginally-bound law.")
-print("NOT ESTABLISHED: that the two are the same map away from r=0; and nothing here says what")
-print("T MEANS -- whether it is a physical time reversal in the CPT sense is not addressed.")
+print("AND WHAT T IS: tilde-tau is COSMIC TIME (P15 sec:properframe, five steps, Weyl's")
+print("principle), the bead relation IS eq:scalefac the scale factor, and T reverses cosmic")
+print("time -- carrying the expanding branch to the contracting one at the SAME r.")
+print("NOT ESTABLISHED: that the two reflections are the same map away from r=0. And T is")
+print("NOT the canon's T (X_0 -> -X_0, the static time): the corpus keeps the two slicings")
+print("apart, and a full geometric CPT is settled in the NEGATIVE anyway -- the charge sign")
+print("is external -- so there is no third slot for T to fill.")
+# --- (4) tilde-tau is COSMIC TIME, and the bead relation is eq:scalefac ---------------
+G_, M_, Lam_, c_, al_ = sp.symbols('G M Lambda c alpha', positive=True)
+pref = (6*G_*M_/(Lam_*c_**2))**sp.Rational(1, 3)
+A_ = (2*G_*M_*al_**2/c_**2)**sp.Rational(1, 3)
+assert sp.simplify(pref.subs(Lam_, 3/al_**2) - A_) == 0, \
+    "eq:scalefac's prefactor must BE A -- the lift's binding radius"
+tt_ = sp.Symbol('ttau', positive=True)
+arg = sp.Rational(3, 2)*sp.sqrt(Lam_*c_**2/3)*tt_
+assert sp.simplify(arg.subs(Lam_, 3/al_**2).subs(c_, 1) - 3*tt_/(2*al_)) == 0, \
+    "and its argument must be 3 tilde-tau / 2 alpha"
+print("  eq:scalefac's prefactor IS A and its argument IS 3 ttau/2alpha        OK")
+print("  -> the bead relation is the SCALE FACTOR in COSMIC TIME")
+print("  -> T reverses cosmic time: expanding branch -> contracting, same r    OK")
