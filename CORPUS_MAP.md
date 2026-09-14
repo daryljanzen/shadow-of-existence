@@ -146,6 +146,63 @@ sources: [cowork, chat]
 
 
 
+### Revision r6574 — 2026-09-14 (node 60). **`A3`'s DO-NOT-ASSERT answered for the lift, in the negative: $\gamma^{5}\!\circ\!K$ flips chirality and grades nothing there, and what `r6566` measured is the bead's TIME REVERSAL.**
+
+**⌗ THE JOB, AND IT COMES OUT THE OTHER WAY.** *`A3_factorization` marks exactly one thing
+DO-NOT-ASSERT --- "that $R\circ K$ acts on `P14`'s actual fermion zero-modes as $C$'s kinematic
+conjugation". The **wall** half is discharged (`P14_P14_payoff`); the **lift's** was not, because
+`r6566` built its involution **by projection**. Built instead from the Clifford data:*
+
+⇒ ***$\gamma^{5}\!\circ\!K$ ANTIcommutes with $\gamma^{5}$, so it FLIPS CHIRALITY*** --- *and the
+lift's three modes are all $\sigma_y=+1$ while $R$ sends $2M\mapsto-2M$, so it carries **every one
+of them off the mode space and onto the conjugate geometry**. It is not an endomorphism there, has
+no eigenvalues there, and is **not the involution `r6566` measured**.*
+
+**⌗ AND THIS IS NOT A DEFECT OF THE LIFT --- IT IS WHAT CONJUGATION DOES.** *`P14_P14_payoff` records
+the same at the wall: $R$ carries the bound mode to a bound mode of **opposite chirality**. The lift
+behaves exactly as the wall does under $R\circ K$; what differs is only that `r6566`'s $2{+}1$ was
+never $R\circ K$'s to grade.*
+
+**⛭ AND WHAT `r6566` MEASURED CAN NOW BE NAMED, WHICH ANSWERS `r6569`'s NARROWING.** *`r6569` left
+the shape of any settlement as "a defence must say **what grades species on the lift**".
+***It is $T:\tilde\tau\mapsto-\tilde\tau$ with $r$ and $2M$ FIXED*** --- a symmetry of the bead
+relation in its own right, since $\sinh^{2}$ is even --- **neither $R$ (which flips the mass) nor $K$
+(which flips the chirality). $T$ flips neither.***
+
+**⛔ `W1`, AND IT IS THE WHOLE REASON THE TWO LOOKED ALIKE.** *On the lift
+$\operatorname{Re}\tilde\tau=0$, so $\overline{\tilde\tau}=-\tilde\tau$ **there and nowhere
+else**; on the Lorentzian wing $\tilde\tau$ is real and the two differ by a sign.* ⌗ *And there is
+no grading to recover: $(\gamma^{5}\!\circ\!K)^{2}=-1$, so it is antilinear with square $-1$ and
+has **no eigenvectors anywhere**, the doubled matter-plus-antimatter space included.*
+
+**⛔ THE CALIBRATION IS WHAT SEPARATES THIS FROM THE OTHER ANSWER.** *`A3` names two objects both
+called $C$: the **C-matrix proper** $i\gamma^{2}\gamma^{0}$ **commutes** with $\gamma^{5}$, the
+operator in $\psi\to\psi^{c}$ **anticommutes**. ⇒ **A construction using the wrong one reports
+"chirality preserved" and the identification appears to go through.** `A3` warned that trap yields a
+false **refutation**; here it yields a false **confirmation**, the more expensive direction.*
+⌗ *`T4` has now earned its place four times --- `r6510`'s Legendre calibration, `r6522`'s unit-free
+tilt recovery, `r6566`'s `quad` returning finite for a divergent integral, and this.*
+
+**⌗ AND THE CORPUS CARRIES $R$ IN TWO SENSES**, *which is why the confusion was available:
+`sec:count`'s antipodal map **within one geometry, mass fixed**, and `sec:cosmogenesis`'s
+$r_0\to-r_0$ with $2M\to-2M$. Both verbatim, and they are different maps --- the mass-fixed one is
+not a symmetry of the bead relation at fixed $\tilde\tau$ and the mass-flipping one is. **So
+`r6566` compared two candidate readings of which neither was `A3`'s**, which is the same defect
+`r6569` attacked from the operator's order.*
+
+**⌗ `W4` ASKED AND ANSWERED, AND THE ANSWER REMOVES THE DIFFERENCE.** *$R$ fixes a point only if
+$r=-r$ **and** $2M=-2M$, i.e. only at $r=0$ **and** $M=0$ --- **no locus of a fixed-mass geometry is
+$R$-fixed**. The lift's two invariant fibres are invariant under $T$, not $R$, so the property the
+order wondered whether the lift had, it has not.*
+
+⚠ *Not that `r6566`'s $2{+}1$ is wrong --- **its eigenvalues are reproduced unchanged and only the
+operator's name is corrected**. Not that `S3` is unmet: the lift's content is still a single
+$\sigma_y$ eigenspace, which is how `P14_S3_against_the_wall_content` reads S3's premise. Nothing
+about the charge sign (`W3`, controlled: the construction is $Q$-blind and a geometric charge sign
+would be a **bug**), nothing about masses, no identification of the fibre's elements with the
+colourless fermions.* ⌗ *`fe24e4e7e8` **retired** in `open_ledger` --- answered, not reworded, one
+revision after it was verdicted, and by the node that wrote it.*
+
 ### Revision r6571 — 2026-09-12 (node 64). **`[6*]` was resolved before this session started, and a stale status line in nine figure files cost this line four turns.**
 
 **⛔ `A3_factorization` EXISTS, IS REGISTERED, RUNS GREEN, AND REPORTS "[6] RESOLVED, bounded".** *It was worked
