@@ -146,6 +146,26 @@ sources: [cowork, chat]
 
 
 
+### Revision r6587 — 2026-09-12 (node 64). **The merge's knock-ons cleared, the last red gate diagnosed — and it was never a receipt failure.**
+
+**⌗ THE CONCURRENT PUSH LEFT THREE THINGS, ALL NOW FIXED.** *⓵ Their changelog entry was numbered **`r6547`**,
+colliding with node 64's, while **their own commit subject said `r6583`** --- aligned to the commit, which is
+not renumbering their work but making their entry agree with it. ⓶ Their two commits **each wrote an entry**
+for `r6583` --- ***the scrap-and-log-writes-twice pattern `check_map_dupes` names in its own note*** --- so the
+corrected one is kept (764 of 765, headlined "my own scan of it was wrong first") and the superseded one (753
+of 754) removed. ⓷ And `check_deferrals_resolve` fired on a deferral with no forward pointer in
+`appendix_receipts_corpus` --- ***the appendix was STALE***, committed without regeneration after the row was
+edited. Regenerating cleared it. **Not a defect in their receipt; nothing of theirs lost.**
+
+**⛭ AND `check_receipts_run` --- red every sweep this session --- IS A STALE CACHE, NOT A FAILING SUITE.** *Its
+own words: the cached run is against one tree digest and **the tree is now another**, so ***"the cached verdict
+says nothing"***. ⇒ **The gate was refusing to certify a run it could not vouch for, which is the correct
+behaviour and reads as a failure only if the message goes unread.** ⌗ *I swept it as red for a whole session
+without opening it once.*
+
+⌗ *Relaunched detached per its own `--how`, and **not polled** --- a nine-minute job does not belong in chat
+turns. 102 of 103 gates green; this one goes green when the run lands.*
+
 ### Revision r6585 — 2026-09-12 (node 64). **The same audit run on $w$ — and it found the collision a comparison of mine had just run straight through.**
 
 **⌗ WHAT PROMPTED IT.** *With $\widetilde{T}$ freed at `r6581`, the natural question --- **is it a fourth
