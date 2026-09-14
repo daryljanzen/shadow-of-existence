@@ -215,7 +215,7 @@ within each wall**, so it fixes every seat and is $+1$ times the identity on the
 lift it **moves** them. ⌗ *The deck $\mathbb{Z}_3$ is transitive in both cases, **so transitivity is not what
 separates them***.
 
-**⛔⛭ AND `65` CORRECTED THE WALL RECEIPT'S STATED REASON --- A RECEIPT I ADDED ASSERTIONS TO AT `r6553`.**
+**⛔⛭ AND `60` CORRECTED THE WALL RECEIPT'S STATED REASON --- A RECEIPT I ADDED ASSERTIONS TO AT `r6553`.**
 *`PART 3` gave transitivity-plus-centrality as forbidding a $2{+}1$. ***I verified the correction
 independently: a central $R$ acting $-1$ on the standard rep of a transitive triple gives $1{+}2$, not
 $3{+}0$.*** So centrality does **not** forbid it; **what forbids it at the wall is that $R$ fixes each seat**.
