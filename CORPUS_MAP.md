@@ -146,6 +146,35 @@ sources: [cowork, chat]
 
 
 
+### Revision r6581 — 2026-09-12 (node 64). **The symbol $T$ audited on the `r968`/`r1792` pattern: one real collision fixed, one apparent one shown not to be, and our own naming corrected to $\widetilde{T}$.**
+
+**⌗ THE CORPUS HAS A PROCEDURE AND THIS FOLLOWS IT.** *`r968` renamed $R$'s radius use to $\varrho$ "to free R
+for the parity"; `r1792` renamed $\rho\to r_{\mathrm{obs}}$ after counting **three** referents. **Record the
+collision, count, rename one, say which and why** --- and, added here, ***say what was left alone***.
+
+**⛭ THE REAL COLLISION WAS OPERATOR AGAINST OPERATOR, INSIDE ONE PAPER.** *`P5`'s footnote reserves $T$ for the
+time reflection, and `P5`'s own `prop:completeness` then used $T$ for the sky-angle action of a morphism $g$
+--- ***a bound variable in a proof, in the paper that reserves the symbol***. Renamed **$\hat{g}$**, the
+induced action, which reads itself. Four uses; `P5` compiles at zero undefined.*
+
+**⛭ AND OUR OWN NAMING IS CORRECTED TO $\widetilde{T}$.** *`r6574` called the cosmic-time reflection
+$\tilde\tau\mapsto-\tilde\tau$ "$T$". ⇒ **The tilde does the work it does on $\tilde\tau$ itself**: $T$ reverses
+the **static** time $X_0$, $\widetilde{T}$ the **cosmic** $\tilde\tau=\tau+\chi$ of the non-synchronous slicing.
+***Not the same map and neither restricts to the other --- $\widetilde{T}$ holds the mass fixed where the
+conjugation reverses it.*** Landed in `P14`'s body with a footnote carrying that distinction, and in the canon.*
+
+**⛔ AND THE PAIR MY OWN AUDIT CALLED "SHARP" IS NOT A COLLISION AT ALL.** *`r6579` counted $T$ the **operator**
+against $T$ the closed-dS time **coordinate** as two referents. ***$X(T)=\alpha\cosh(T/\alpha)$ is the sphere
+radius, so $X_0=\alpha\sinh(T/\alpha)$ and $T:X_0\to-X_0$ IS $T\to-T$.*** **A coordinate and its own
+reflection --- the ordinary overload, and the same relation $P$ has to $r$.** Left alone, and the audit receipt
+now says so in its own text. ⌗ *Temperature $T$ likewise: disambiguated by argument and units, and covered by
+the corpus's own "a resonance, NOT a naming-blocker".*
+
+⌗ *Two gates caught my edits: `check_compile` on a **doubled `$`** where my replacement ended inside math the
+original continued, and `check_receipt_tex_scope` on the audit globbing `corpus/*.tex` --- **the generated
+appendices carry every receipt's own claim text, so the survey was counting its own prose as corpus usage**.
+Both fixed; 103 gates green but `check_receipts_run`.*
+
 ### Revision r6579 — 2026-09-12 (node 64). **$\tilde\tau$ is COSMIC TIME and the bead relation is `eq:scalefac` — my "correction" of `r6577` was the error, and `r6577` was right.**
 
 **⛔ WHAT I DID WRONG.** *I read $\tilde\tau=\tau+\chi$ out of a sentence about the decoupling and called it
