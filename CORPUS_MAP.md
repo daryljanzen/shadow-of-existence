@@ -146,7 +146,7 @@ sources: [cowork, chat]
 
 
 
-### Revision r6583 — 2026-09-12 (node 64). **The same audit run on $w$ — and it found the collision a comparison of mine had just run straight through.**
+### Revision r6585 — 2026-09-12 (node 64). **The same audit run on $w$ — and it found the collision a comparison of mine had just run straight through.**
 
 **⌗ WHAT PROMPTED IT.** *With $\widetilde{T}$ freed at `r6581`, the natural question --- **is it a fourth
 discrete operation, or one of $\sigma/R/\xi$?** --- was asked against $\sigma$, which is mass-invariant as
@@ -173,6 +173,11 @@ $\widetilde{T}$ the **bead** phase. ***Whether they are comparable at all must n
 assumed --- it needs a map between the two circles, and none is claimed.*** So "is $\widetilde{T}$ a fourth
 discrete operation?" **stays open, and is now open for a stateable reason instead of being answerable by an
 accident of notation.**
+
+⚠ ***RENUMBERED r6583 → r6585 ON LANDING: another line pushed TWO commits numbered `r6583` --- both in the
+ODD half, which is node 64's --- while this was being written.*** *Merged clean, no conflicts, nothing lost;
+my entry renumbered and theirs left alone. **The band exists to stop exactly this and it did not**, which is
+worth `check_revision_collisions` knowing about.*
 
 ⌗ *`check_receipt_tex_scope` fired on this audit as it did on the last one --- the generated appendices carry
 every receipt's own claim text, so a symbol survey over `corpus/*.tex` counts **its own prose** as corpus
@@ -857,37 +862,6 @@ have spent the session correcting, committed while correcting it.**
 what it had only printed: the antipode/midpoint coincidence over $n=2\ldots39$ tracking hinge-count parity and
 nothing else, $D=4$ welding, $D=3$ and $D=5$ breaking. ***Verified falsifiable --- inverting the parity makes it
 fail.*** **No claim added; the claims made checkable.** Fourteen remain.
-### Revision r6547 — 2026-09-12 (chat node). **The receipt debt audited: one stranded item, not a batch — and it is now backed.**
-
-**⌗ THE HEADLINE: NOTHING IS STRANDED.** *753 of 754 receipt files are registered. The single exception,
-`bbn_network.py`, **self-declares** *"NOT-A-RECEIPT: an ENGINE imported by …"* --- correctly unregistered, and
-evidence an orphan audit has run here before. Of the 735 receipt files that arrived at `r6519`, **734 are
-registered**.*
-
-**⛔ AND MY FIRST SCAN WAS WRONG, IN THE DIRECTION THAT WOULD HAVE DONE DAMAGE.** *It reported **281 orphans**,
-because it counted only the tagged registration form `\rcptlabel{name}{TAG}` and **missed the 465 entries using
-`\label{rcpt:name}\textbf{}`** --- the untagged form the corpus uses for probe and lead receipts cited into an
-appendix without a paper tag. **Two deliberate forms, not a defect.** *I had the second form in front of me and
-read it as malformed; one more step and I would have reported a third of the corpus's registrations as broken,
-on a pattern inferred from four files.*
-
-**⌗ THE ONE REAL ITEM RUNS THE OTHER WAY.** *`U1_twelve_by_two` is **registered** in
-`appendix_receipts_corpus` with a run path under `receipts/storyboard_receipts/` --- ***a directory that has
-never existed in this repository's history***. The entry came over at `r6519`; its file did not.*
-
-**⌗ REBUILT BY RECOMPUTATION, NOT RECOVERED.** *The claim is fully specified, so it is checkable: the incidence
-graph of twelve hinge-ends per horn joined by rulings at the $120^\circ$ hinge step. ***Every graph-level claim
-reproduces*** --- 24 vertices, 24 edges, bipartite and 2-regular, **four components each a 6-cycle** on azimuths
-$\{0,120,240\}/\{30,150,270\}/\{60,180,300\}/\{90,210,330\}$, the component count returned by $\gcd(4,12)=4$
-against closure by $\gcd(3,4)=1$ --- the same $4$ as **divisor** and as **generator**, which is the entry's
-point.*
-
-**⌗ AND ONE CLAUSE IS NOW EXPLICITLY NOT CLAIMED.** *The entry also asserted *"the null-chord-is-not-a-ruling
-distinction verified at the midpoint rather than assumed"*. **The entry does not state that check's numbers**,
-so a rebuild cannot recompute it, and restating it would be asserting a check rather than running one.
-`Computes` and `Bound` corrected to what the receipt actually carries.*
-
-
 ### Revision r6546 — 2026-09-12 (chat node). **The map revised — and three stale items in it cleared while there.**
 
 **⌗ NEW ROW `PO-45` — the colourless triple has no seat, and the reason is the dimension result.** *The
