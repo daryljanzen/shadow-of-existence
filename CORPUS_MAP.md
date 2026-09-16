@@ -146,6 +146,30 @@ sources: [cowork, chat]
 
 
 
+### Revision r6599 — 2026-09-12 (node 64). **`r6591` verified against the protected $\sigma$ — it used the canon sense, and the horn swap turns out to confirm the separation rather than complicate it.**
+
+**⌗ NOT A FORMALITY, AFTER `r6597`.** *That revision protected $\sigma$ corpus-wide **because `P14` had carried
+a local redefinition of it**. `r6591` predates the protection, so which $\sigma$ its computation used had to be
+checked rather than assumed.*
+
+**⛭ IT USED THE CANON SENSE.** *$\sigma:w\mapsto\pi/3-w$, leaving $2M$ unchanged --- which is `P13`'s own
+wording, ***"root exchange $w\leftrightarrow\pi/3-w$ at the equatorial seam"***, and exactly what the canon
+means by mass-invariant. **The result stands.**
+
+**⌗ AND THE HORN SWAP, WHICH ONLY BECAME RELEVANT AT `r6595`, CONFIRMS IT.** *`P14` calls the horn swap **"a
+substrate isometry belonging to the order-twelve group already in hand"** --- and that group is
+$D_6=\langle\sigma,R\rangle$. ⇒ ***So it is a product of $\sigma$'s and $R$'s, both of which fix the bead phase,
+and therefore fixes it too.*** And it acts on the **sheet** index $k\mapsto-k$, the sheets being the cube roots
+of $r^{3}=2M\alpha^{2}\sinh^{2}\tilde{w}$ --- the $\arg r$ three, which `r6563` showed leaves $\tilde\tau$ fixed.*
+
+⇒ ***Sheets are on the CUT side.*** *Four operations act there --- $\sigma$, $R$, $\xi$, and the horn swap inside
+$\langle\sigma,R\rangle$ --- and **one on the bead**: $\widetilde{T}$. **The separation is unchanged, and now has
+a fourth cut-side member confirming it rather than a counterexample.***
+
+⌗ *So all three approved steps are closed: `P14`'s dihedral slip fixed (`r6595`), $\sigma$ protected and the
+local sense renamed $\mathsf{P}$ (`r6597`), and `r6591` verified against the protection. **102 of 103 gates
+green; the receipt suite is still running.***
+
 ### Revision r6597 — 2026-09-12 (node 64). **$\sigma$ protected corpus-wide: `P14`'s local redefinition renamed $\mathsf{P}$, and it is neither $\sigma$ nor $R$.**
 
 **⛔ THE COLLISION WAS A SHADOWING, WHICH IS WORSE THAN A CLASH.** *`P14` wrote "Let $\sigma$ be the involution

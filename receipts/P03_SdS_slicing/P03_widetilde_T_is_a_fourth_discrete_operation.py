@@ -50,6 +50,28 @@ letter, sigma and \\widetilde{T} composed to a translation by pi/3.  ** Written 
 variables they commute, because they move different ones. **  *** A composition and a
 commutation are opposite readings, and the symbol collision produced the wrong one. ***
 
+--------------------------------------------------------------------------------
+⌗ (5) WHICH sigma THIS COMPUTED WITH, VERIFIED AT r6599.
+
+r6597 protected sigma corpus-wide after finding P14 had carried a LOCAL redefinition of
+it.  ** This receipt predates that, so which sigma it used is not a formality. **
+
+It used  sigma : w -> pi/3 - w, leaving 2M unchanged -- which is P13's canon in its own
+words, "root exchange w <-> pi/3 - w at the equatorial seam", and exactly what the canon
+means by mass-invariant.  *** THE CANON SIGMA.  The result stands. ***
+
+⌗ AND THE HORN SWAP, WHICH BECAME RELEVANT AT r6595, DOES NOT DISTURB IT.  P14 calls it
+"a substrate isometry belonging to the ORDER-TWELVE group already in hand", and that
+group is D_6 = <sigma, R>.  ** So the horn swap is a product of sigma's and R's, both of
+which fix the bead phase, and therefore fixes it too. **  It acts on the SHEET index
+k -> -k, and the sheets are the cube roots of r^3 = 2M alpha^2 sinh^2(tilde-w) -- the
+arg-r three, which r6563 showed leaves tilde-tau fixed.
+
+  ==> *** Sheets are on the CUT side.  Four operations act there -- sigma, R, xi, and the
+      horn swap inside <sigma,R> -- and one on the bead: widetilde-T.  The separation is
+      unchanged and now has a fourth cut-side member confirming it. ***
+
+--------------------------------------------------------------------------------
 ⚠ WHAT IS NOT CLAIMED.  ** Not that the corpus's "three distinct discrete operations" is
 wrong. **  That clause is about operations on the SLICING -- sigma, R, xi all act there,
 and within that domain it stands untouched.  \\widetilde{T} is outside that domain, which
