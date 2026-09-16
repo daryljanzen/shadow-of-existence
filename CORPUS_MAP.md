@@ -146,6 +146,55 @@ sources: [cowork, chat]
 
 
 
+### Revision r6602 — 2026-09-16 (node 60). **The lift triple's weak-isospin clause run: it occupies ONE $(T,R)$ character where the wall sector occupies four, and it misses the doublet's pair for either sign.**
+
+**⌗ THE THREE ANSWERS, IN THE ORDER ASKED.** *`r6601` settled colour --- trivial, by indexing.
+This is the $(T,R)$ occupation.*
+
+⓵ ***The lift's three modes occupy EXACTLY ONE of the four $(T,R)$ characters***, $(t,+1)$,
+*where the wall sector occupies all four.*
+
+⓶ ***And they do NOT carry the $\{+1,-1\}$ pair that matches the left-handed doublet, for
+EITHER value of $t$.*** *That pair is two $T$-values on ONE $R$-eigenspace; the lift's single
+$R$-eigenspace carries $\{t,t,t\}$ --- one value, three times.* **So the lift fails to reproduce
+the one thing the wall sector got right.**
+
+⓷ *And `P14`'s right-handed mismatch does not appear there either --- **by ABSENCE rather than
+repair**: the lift has no $R$-odd content for the comparison to be about, where the wall reaches
+that structure and differs from the Standard Model by exactly one pair.* **The two loci differ on
+this, and the difference cuts against the lift.**
+
+**⛭ THE MECHANISM, EVERY LINK COMPUTED RATHER THAN READ OFF AN INDEX.** *$T$ commutes with $R$, so
+on the one-dimensional $R$-eigenspace each mode spans it acts by a **scalar**; it **fixes** the bead
+phase where the deck **moves** it (`r6591`), so it is **diagonal** in the sector basis; and a
+diagonal operator commuting with a **transitive** $\mathbb{Z}_3$ has all three entries equal.*
+⇒ ***$T=t\cdot I$ on the whole three-dimensional mode space.*** **The four characters need BOTH
+$R$-values, and the lift's three lie in a single one.**
+
+**⛔ AND THE CALIBRATION IS THE ERROR THE ORDER EXISTS TO PREVENT, RUN AS A TEST.** *The naive
+reading --- "$T$ fixes the index, so $T$ acts trivially, so one character" --- **returns ONE
+character on the WALL, where `P14` publishes FOUR**. A construction using it is not measuring
+occupation at all.* ⌗ *And the mechanism is visible in `P14`'s own factorisation: the twelve factor
+$3\times2\times2$ as graze point $\times$ horn $\times$ ruling, and $T$ **is** the horn swap --- so
+it **fixes the graze-point index and moves the horn factor**.* ***Occupation lives in the factor,
+not in the index*** --- `P14R55`'s locus-versus-mode distinction one level over. ⌗ *Five now:
+`r6510`'s Legendre check, `r6522`'s unit-free tilt recovery, `r6566`'s `quad` on a divergent
+integral, `r6574`'s C-matrix trap, and this.*
+
+⚠ ***What is not established.*** *$t$ **itself is not determined** --- the construction fixes that
+$T$ is one common scalar, not which, exactly as `P14` finds at a single wall where the distinction
+"has no content" --- **and none of the three answers rests on it**. The comparison is
+**asymmetric**, `P14`'s four being a SECTOR occupation and the lift's three a LOCUS mode space,
+which is stated rather than elided. ⌗ **The chirality clause of `S3` is untouched**: in the
+$\gamma^{5}$ grading the lift is $3{+}0$, exactly as the wall is, `r6566`'s $2{+}1$ being
+$\widetilde{T}$'s --- *whether one $\sigma_y$ eigenspace could carry a 2-left-1-right split by
+some other reading is a separate question nobody has asked*. And nothing here says the three lift
+modes **are** the colourless fermions.*
+
+⌗ *Where `PO-45` stands: three clauses run on the lift --- **colour trivial**, **isospin a single
+character that misses the doublet**, **chirality $3{+}0$ and untouched**. **The seat's shape was
+right and its gradings are not.***
+
 ### Revision r6601 — 2026-09-12 (node 64). **The lift's three are COLOURLESS BY INDEXING — the same separation that makes $\widetilde{T}$ a fourth operation makes its eigenvectors colour-neutral.**
 
 **⌗ THE PRIOR QUESTION NOBODY HAD ASKED.** *`r6566` found a $2{+}1$ on the lift and `r6574` named its grading.
