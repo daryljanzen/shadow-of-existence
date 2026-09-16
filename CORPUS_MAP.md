@@ -146,6 +146,37 @@ sources: [cowork, chat]
 
 
 
+### Revision r6601 — 2026-09-12 (node 64). **The lift's three are COLOURLESS BY INDEXING — the same separation that makes $\widetilde{T}$ a fourth operation makes its eigenvectors colour-neutral.**
+
+**⌗ THE PRIOR QUESTION NOBODY HAD ASKED.** *`r6566` found a $2{+}1$ on the lift and `r6574` named its grading.
+***Neither asked whether those three are colourless, or merely elsewhere.*** `PO-45` needs the **colourless**
+triple, so it is not a detail.*
+
+**⛭ THE TWELVE CARRY COLOUR BECAUSE THEIRS IS A $w$-INDEX.** *The corpus's colour grading is $\sigma$
+(`P03_winding_and_closure`: $\sigma\to$ colour, $T\to$ weak isospin, $R\to$ chirality), and $\sigma$ moves the
+**sky angle** $w$. `P14`'s twelve factor $3\times2\times2$ with the $3$ the **graze point** --- the three walls
+at sky angles $60/180/300$.*
+
+**⛭⛭ AND THE LIFT'S THREE CARRY NONE BECAUSE THEIRS IS A $\tilde{w}$-INDEX.** *They are one per
+$\mathrm{Im}\,\tilde\tau$ **sector**, and the sector period $2\pi\alpha/3$ is ***independent of $M$ and of
+$w$*** --- it comes from $\sinh^{2}$ being invariant mod $i\pi$, and nothing in that involves the cut. ⇒
+**$\sigma$ is not a function of $\tilde{w}$ at all, so it acts trivially on the sector index**, and the three
+sit in the ***trivial representation of the colour grading***. **Colourless by indexing, not by sitting
+elsewhere.**
+
+**⌗ AND THIS IS `r6591`'s SEPARATION READ ON ONE GRADING.** *That revision showed $w$ and $\tilde{w}$ are
+independent and that every cut-side operation fixes the bead phase. ***The same fact that makes $\widetilde{T}$
+a fourth discrete operation makes its eigenvectors colour-neutral.***
+
+⌗ *And it rests on `r6597`: **the argument could not be stated unambiguously while `P14` carried a local
+redefinition of $\sigma$.** The protection is load-bearing for a physics claim, not housekeeping.*
+
+⚠ **BOUNDED, AND THE BOUND IS THE LARGER PART.** ***Not that the three are leptons** --- colourless is **one
+clause of one requirement**, and the weak-isospin and chirality assignments are untouched. **Not that the
+$2{+}1$ is doublet-plus-singlet**: that splitting is under $\widetilde{T}$ and nothing connects its eigenvalues
+to $SU(2)_L$. **Nothing about masses.** ⌗ *And **colour-neutrality was never in doubt** --- what is added is
+the **reason**.*
+
 ### Revision r6599 — 2026-09-12 (node 64). **`r6591` verified against the protected $\sigma$ — it used the canon sense, and the horn swap turns out to confirm the separation rather than complicate it.**
 
 **⌗ NOT A FORMALITY, AFTER `r6597`.** *That revision protected $\sigma$ corpus-wide **because `P14` had carried
