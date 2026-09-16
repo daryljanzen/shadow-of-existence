@@ -18,11 +18,11 @@ DOES is a computation on the wall mode, and it is not done here."*
   *** WHEREVER THE HANDEDNESS-EXCHANGING INVOLUTION IS A REALISED SYMMETRY COMMUTING WITH $T$, THE
       ORBIT PARTITION $2+1+1$ IS UNREACHABLE. ***
 
-Let $\sigma$ be the involution that exchanges the two $\gamma^5$ eigenspaces -- the reflection P11's
-criterion calls the identifier of the helicities.  If $\sigma$ is a symmetry of the construction and
-$[\sigma,T]=0$, then $\sigma$ INTERTWINES $T|_+$ with $T|_-$:
+Let $\mathsf{P}$ be the involution that exchanges the two $\gamma^5$ eigenspaces -- the reflection P11's
+criterion calls the identifier of the helicities.  If $\mathsf{P}$ is a symmetry of the construction and
+$[\mathsf{P},T]=0$, then $\mathsf{P}$ INTERTWINES $T|_+$ with $T|_-$:
 
-        T|_-  =  sigma . T|_+ . sigma^{-1}
+        T|_-  =  Phel . T|_+ . Phel^{-1}
 
 so the two restrictions are conjugate, hence have the SAME ORBIT STRUCTURE.  ** $T$ trivial on one
 eigenspace and a swap on the other is exactly a DIFFERENCE of orbit structure, so it is excluded. **
@@ -99,18 +99,18 @@ print('  ⛭ ** AND THE SAME COMPUTATION SETTLES THE HYPOTHESIS PART 2 NEEDS, wh
 print('     DIFFERENT map and must not be smuggled in from this one. **')
 print('  *R is DIAGONAL on the chirality eigenspaces -- it IS the grading.  The map that EXCHANGES')
 print('   them is an involution ANTI-commuting with gamma^5: a reflection, P11\'s helicity')
-print('   identifier.  Call it sigma.  ** PART 2 needs [sigma, T] = 0, and that is not [R,T]=0. **')
-sig = sp.Function('sigma_data')(r0)      # sigma acts on the RULING datum only, as R does
+print('   identifier.  Call it Phel.  ** PART 2 needs [Phel, T] = 0, and that is not [R,T]=0. **')
+sig = sp.Function('sigma_data')(r0)      # Phel acts on the RULING datum only, as R does
 gen = sp.Function('g')(X0, r0)
 ST = gen.subs({r0: sig}, simultaneous=True).subs({X0: -X0}, simultaneous=True)
 TS = gen.subs({X0: -X0}, simultaneous=True).subs({r0: sig}, simultaneous=True)
-print(f'    sigma : r_0 -> sigma(r_0)  (ANY map of the ruling datum; X_0 untouched)')
-print(f'    sigma T g = {ST}')
-print(f'    T sigma g = {TS}')
+print(f'    Phel : r_0 -> Phel(r_0)  (ANY map of the ruling datum; X_0 untouched)')
+print(f'    Phel T g = {ST}')
+print(f'    T Phel g = {TS}')
 check('⓵ᵇ ⛭ ANY map of the ruling datum commutes with T -- because T moves only the horn datum, '
       'which is P14\'s own independence (the direct product D_6 = S_3 x Z_2 IS that independence)',
       sp.simplify(ST - TS) == 0)
-print('  ⇒ *** So [sigma, T] = 0 is not an extra assumption: it follows from the SAME independence')
+print('  ⇒ *** So [Phel, T] = 0 is not an extra assumption: it follows from the SAME independence')
 print('      that makes [R, T] = 0, and it would fail only if the handedness exchange moved the')
 print('      horn datum -- which would make it a different operation. ***')
 
@@ -170,7 +170,7 @@ check('⓶ᵇ and the CONTROL: 2+1+1 is genuinely available before any further c
       'constraint below is not excluding something already impossible', len(need) > 0)
 
 print()
-print('  ** NOW IMPOSE THE HANDEDNESS-EXCHANGING INVOLUTION sigma. **  P11\'s criterion calls it the')
+print('  ** NOW IMPOSE THE HANDEDNESS-EXCHANGING INVOLUTION Phel. **  P11\'s criterion calls it the')
 print('  reflection that IDENTIFIES the two helicities.  It must exchange the eigenspaces:')
 print()
 SIGMAS = []
@@ -180,13 +180,13 @@ for a, b in itertools.permutations(MINUS):
     s[a], s[b] = 0, 1
     SIGMAS.append(tuple(s))
 for s in SIGMAS:
-    print(f'    sigma = {s}   maps +1 eigenspace -> -1 eigenspace, and sigma^2 = '
+    print(f'    Phel = {s}   maps +1 eigenspace -> -1 eigenspace, and Phel^2 = '
           f'{compose(s, s) == IDENT}')
 check('⓷ there are exactly two involutions exchanging the eigenspaces', len(SIGMAS) == 2)
 check('⓷ᵇ and both are genuine involutions', all(compose(s, s) == IDENT for s in SIGMAS))
 
 print()
-print('  *** THE TEST: for which T does SOME sigma commute with it? ***')
+print('  *** THE TEST: for which T does SOME Phel commute with it? ***')
 print(f'    {"T":<16} {"orbits":<12} commutes with a handedness exchange?')
 survive, excluded = [], []
 for T in T_ALL:
@@ -205,13 +205,13 @@ check('⓸ᶜ and the excluded set is exactly the 2+1+1 set, not a superset -- t
 
 print()
 print('  ⇒ *** SO THE PROOF IS NOT A COUNT BUT A CONJUGATION, AND IT IS WORTH SAYING DIRECTLY: ***')
-print('      if sigma exchanges the eigenspaces and commutes with T, then')
-print('          T|_-  =  sigma . T|_+ . sigma^{-1}')
+print('      if Phel exchanges the eigenspaces and commutes with T, then')
+print('          T|_-  =  Phel . T|_+ . Phel^{-1}')
 print('      so T\'s two restrictions are CONJUGATE and cannot differ in orbit structure.')
 for T in need:
     s = SIGMAS[0]
     conj = compose(compose(s, T), s)
-    print(f'      T = {T}:  sigma T sigma^-1 = {conj}  != T   ⇒ no such sigma exists')
+    print(f'      T = {T}:  Phel T Phel^-1 = {conj}  != T   ⇒ no such Phel exists')
     check(f'⓹ the intertwining fails for T={T}, which is what excludes it', conj != T)
 
 # =====================================================================
@@ -240,7 +240,7 @@ print('=' * 78)
 print('PART 3b -- ⛭⛭⛭ THE NO-GO SAYS MORE THAN "ONE SHORT": IT FORCES THE SECTOR VECTOR-LIKE')
 print('=' * 78)
 print('  ** The argument never used that the four are COLOURLESS.  It used only that T commutes')
-print('     with the grading and that sigma exchanges it.  So it applies to the whole generation. **')
+print('     with the grading and that Phel exchanges it.  So it applies to the whole generation. **')
 print()
 print('  ⇒ *** T|_+ =~ T|_- means T acts THE SAME WAY on both chiralities.  So either both sides')
 print('      carry doublets or both carry singlets -- and either way the isospin structure is')
@@ -323,7 +323,7 @@ print()
 print('=' * 78)
 print('PART 4 -- ⛭⛭ WHAT THE CHIRAL MEMBER CHANGES, AND WHY IT IS THE ONLY THING THAT COULD')
 print('=' * 78)
-print('  ** The no-go has ONE hypothesis: that sigma is a REALISED SYMMETRY.  P11 supplies the')
+print('  ** The no-go has ONE hypothesis: that Phel is a REALISED SYMMETRY.  P11 supplies the')
 print('     criterion for exactly when it is. **')
 print()
 u, th = sp.symbols('u theta', real=True)
@@ -342,15 +342,15 @@ const_case = sp.simplify(sp.diff(sp.atan2(sp.Symbol('k', positive=True)*sp.Symbo
                                           sp.Symbol('A', positive=True)), u))
 print(f'    fixed polarisation, h_x = k h_+ with k constant:  d/du arg = {const_case}')
 check('⓻ a constant polarisation ratio has a non-turning argument, so a fixed axis works for all '
-      'u and sigma IS a symmetry -- the ACHIRAL case', const_case == 0)
+      'u and Phel IS a symmetry -- the ACHIRAL case', const_case == 0)
 A = sp.Function('A', positive=True)(u)
 turning = sp.simplify(sp.diff(sp.atan2(A*sp.sin(u), A*sp.cos(u)), u))
 print(f'    turning polarisation, arg = u:                    d/du arg = {turning}')
 check('⓻ᵇ a turning polarisation has a non-zero rate, so NO single axis is a reflection symmetry '
-      'for all u and sigma is NOT a symmetry -- the CHIRAL case', turning != 0)
+      'for all u and Phel is NOT a symmetry -- the CHIRAL case', turning != 0)
 print()
-print('  ⇒ *** achiral  <=>  sigma is a realised symmetry  <=>  the no-go BITES')
-print('      chiral   <=>  sigma is not              <=>  the no-go\'s hypothesis FAILS ***')
+print('  ⇒ *** achiral  <=>  Phel is a realised symmetry  <=>  the no-go BITES')
+print('      chiral   <=>  Phel is not              <=>  the no-go\'s hypothesis FAILS ***')
 print()
 print('  ** AND P11 BUILDS THE CHIRAL MEMBER, WITH THE STRONGEST FORM OF THAT STATEMENT. **')
 # ⛔⛭ ** READ THE WORKING TREE, NOT `HEAD` -- AND THE DISTINCTION IS NOT PEDANTRY. **  This part
@@ -372,7 +372,7 @@ check('⓼ᶜ and to carry a CONSERVED charge on which it acts as a sign flip --
       '"$c \\;=\\; R\\,e^{2P}\\,Q_t \\;=\\; \\text{const}$", with the parity acting as $c\\mapsto-c$',
       re.search(r'e\^\{2P\}\\?,?Q_t', p11) is not None
       and r'\label{eq:twist}' in p11 and r'c\mapsto-c' in p11)
-print('  ⇒ ⛭ ** That is stronger than "sigma is not a symmetry": sigma CHANGES THE VALUE OF A')
+print('  ⇒ ⛭ ** That is stronger than "Phel is not a symmetry": Phel CHANGES THE VALUE OF A')
 print('     CONSERVED CHARGE.  A map that does that is not a symmetry of any solution with')
 print('     c != 0, and the two handednesses are different solutions rather than one solution')
 print('     seen twice. **')
@@ -389,9 +389,9 @@ print('  *** A chirality-ASYMMETRIC isospin action requires an invariant of the 
 print('      DISTINGUISHES the two gamma^5-eigenspaces.  If no invariant separates them, every')
 print('      structure defined on the construction treats them alike, T included. ***')
 print()
-print('    ACHIRAL:  sigma is a symmetry exchanging the eigenspaces, so for every invariant f,')
-print('              f(sigma x) = f(x).  ** Every invariant is BLIND to the distinction. **')
-print('    CHIRAL :  P11 exhibits  c = R e^{2P} Q_t,  CONSERVED, with  sigma : c -> -c.')
+print('    ACHIRAL:  Phel is a symmetry exchanging the eigenspaces, so for every invariant f,')
+print('              f(Phel x) = f(x).  ** Every invariant is BLIND to the distinction. **')
+print('    CHIRAL :  P11 exhibits  c = R e^{2P} Q_t,  CONSERVED, with  Phel : c -> -c.')
 print('              ** So c is an invariant that is NOT blind -- it separates them. **')
 print()
 # ** the achiral half, ENUMERATED rather than asserted.  ⛔ THIS CHECK WAS WRITTEN FIRST AS
@@ -408,21 +408,21 @@ def separates(fn):
 for sg in SIGMAS:
     inv = [fn for fn in ALLF if all(fn[sg[i]] == fn[i] for i in range(4))]
     sep_inv = [fn for fn in inv if separates(fn)]
-    print(f'    sigma = {sg}: {len(inv):2d} of {len(ALLF)} two-valued functions are sigma-invariant, '
+    print(f'    Phel = {sg}: {len(inv):2d} of {len(ALLF)} two-valued functions are Phel-invariant, '
           f'and {len(sep_inv)} of those separate the eigenspaces')
-    check(f'⓯ ⛔ NO sigma-invariant function separates the eigenspaces (sigma={sg}) -- so on the '
+    check(f'⓯ ⛔ NO Phel-invariant function separates the eigenspaces (Phel={sg}) -- so on the '
           'achiral member every invariant is blind to the chirality', len(sep_inv) == 0)
 sep_all = [fn for fn in ALLF if separates(fn)]
 print(f'    and the CONTROL: {len(sep_all)} of {len(ALLF)} functions DO separate them before '
-      f'sigma-invariance is imposed')
+      f'Phel-invariance is imposed')
 check('⓯ᵃ and the control -- separating functions exist in the unconstrained set, so the '
-      'emptiness above is sigma doing work and not an empty universe', len(sep_all) > 0)
-# the chiral half: c is conserved AND sigma-odd, so it separates -- and being conserved is what
+      'emptiness above is Phel doing work and not an empty universe', len(sep_all) > 0)
+# the chiral half: c is conserved AND Phel-odd, so it separates -- and being conserved is what
 # makes it a legitimate label rather than a transient one.
 cc = sp.Symbol('c', real=True)
 sep = sp.simplify(cc - (-cc))
-print(f'    c(sigma . solution) - c(solution) = -c - c = {sep}, nonzero for c != 0')
-check('⓯ᵇ ⛭ c is sigma-ODD, so it takes different values on the two handednesses and therefore '
+print(f'    c(Phel . solution) - c(solution) = -c - c = {sep}, nonzero for c != 0')
+check('⓯ᵇ ⛭ c is Phel-ODD, so it takes different values on the two handednesses and therefore '
       'separates them', sep != 0 and sp.simplify(sep.subs(cc, 0)) == 0)
 check('⓯ᶜ ⛔ and it separates NOTHING at c = 0 -- which is exactly the polarised, achiral cut, so '
       'the two statements are one statement at two values of one charge',
@@ -439,7 +439,7 @@ check('⓰ᵇ and it preserves each eigenspace, so it still commutes with the gr
       set(T_asym[:2]) == set(PLUS) and set(T_asym[2:]) == set(MINUS))
 check('⓰ᶜ and its orbit partition is exactly SU(2)_L\'s 2+1+1', orbits(T_asym) == su2_shape)
 check('⓰ᵈ ⛭ so every constraint the construction imposes -- involution, commuting with the '
-      'grading -- is met; the ONLY thing that excluded it was sigma, and sigma is absent',
+      'grading -- is met; the ONLY thing that excluded it was Phel, and Phel is absent',
       all(compose(sg, T_asym) != compose(T_asym, sg) for sg in SIGMAS))
 print('  ⇒ ** So the chiral member does not merely permit the Standard Model\'s shape: the shape is')
 print('     consistently definable there, and the object that defines it is named. **')
@@ -456,7 +456,7 @@ print()
 print('=' * 78)
 print("PART 4b -- ⛔⛭ THE OBJECTION THAT WOULD SINK THIS IF IT HELD, RUN AGAINST MYSELF")
 print('=' * 78)
-print('  *** IF sigma EXCHANGES THE CHIRALITY EIGENSPACES AND IS A SYMMETRY, DOES IT NOT MAKE THE')
+print('  *** IF Phel EXCHANGES THE CHIRALITY EIGENSPACES AND IS A SYMMETRY, DOES IT NOT MAKE THE')
 print('      WHOLE CONSTRUCTION VECTOR-LIKE -- CONTRADICTING P14\'s dim ker_+ = 3, dim ker_- = 0? ***')
 print('  *A symmetry exchanging the eigenspaces would force ker_+ =~ ker_-, i.e. 3 = 0.  If that')
 print('   followed, PART 2\'s hypothesis could never hold and the no-go would be vacuous.*')
@@ -473,7 +473,7 @@ check('⓭ᵇ while the four states PART 2 acts on are the COLOURLESS four of on
       'colourless' in p14 and 'four one-dimensional' in p14.replace('\n', ' '))
 print('    the wall kernel : one Weyl mode per wall, three walls, ALL ONE CHIRALITY  -> 3 and 0')
 print('    the four states : nu_L, e_L, e_R, nu_R of ONE generation -> both chiralities present')
-check('⓭ᶜ so no map is being asked to exchange the wall kernel with an empty space; sigma acts on '
+check('⓭ᶜ so no map is being asked to exchange the wall kernel with an empty space; Phel acts on '
       'the four-state set, where both eigenspaces are occupied',
       len(PLUS) == 2 and len(MINUS) == 2)
 print()

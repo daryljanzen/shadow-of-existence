@@ -146,6 +146,30 @@ sources: [cowork, chat]
 
 
 
+### Revision r6597 — 2026-09-12 (node 64). **$\sigma$ protected corpus-wide: `P14`'s local redefinition renamed $\mathsf{P}$, and it is neither $\sigma$ nor $R$.**
+
+**⛔ THE COLLISION WAS A SHADOWING, WHICH IS WORSE THAN A CLASH.** *`P14` wrote "Let $\sigma$ be the involution
+exchanging the two $\gamma^{5}$-eigenspaces" --- **a local redefinition** --- and then, *after* it, used bare
+$\sigma$ for the **canon** sense: ***"$\sigma$ and $R$ generate $D_6$"***. ⇒ *The symbol meant one thing before
+the redefinition, another inside it, and the first thing again afterwards, with nothing marking the return.*
+
+**⌗ AND THE IDENTIFICATION QUESTION SETTLES CLEANLY, WHICH IS WHY A NEW SYMBOL IS RIGHT.** *It looked as though
+the local $\sigma$ might **be** $R$ --- the corpus says "the **ruling swap**, the orientation parity, the
+$A_2$ diagram automorphism ... are one", and `P14` says this map "moves the ruling datum". ⇒ ***But
+$R=\gamma^{5}$ IS the chirality grading, acting as $\pm1$ on the eigenspaces, where this map EXCHANGES them ---
+diagonal against off-diagonal.*** Not the same map, so not a case of writing $R$.*
+
+**⛭ RENAMED $\mathsf{P}$** --- *7 uses in `P14`, 48 in its receipt `W1`. **The sans-serif marks a parity of a
+different kind from the areal $P:r\mapsto-r$**, and `P11`'s own word for it is parity: *"that axis furnishes a
+fixed reflection symmetry, **parity identifies the two helicities**"*. ⌗ *$\Pi$ was checked and is taken --- the
+CMB polarisation source in `P15`.* A footnote at the definition distinguishes it from $\sigma$, $R$ and $P$.*
+
+⌗ *$\sigma$ keeps its canon sense in **all eight papers** that use it, `P14` included --- its five remaining
+uses there are the root transpositions, the diagonal designation, and $\langle\sigma,R\rangle=D_6$. **Protected
+corpus-wide, and recorded in the canon beside `r968`, `r1792`, `r6581`, `r6583` and `r6593`.***
+
+⌗ *`P14` and `P3` at zero undefined; `W1` still passes; 102 of 103 gates green.*
+
 ### Revision r6595 — 2026-09-12 (node 64). **The $T$ collision bit where it was load-bearing: `P14` attributed the turnaround's dihedral relation to the wrong operation, and the rename is what exposed it.**
 
 **⛔ ONE SUBSECTION, TWO OPERATIONS, ONE LETTER.** *At $\sim$909 `P14` justified the descent by **cosmic-time**
