@@ -146,6 +146,38 @@ sources: [cowork, chat]
 
 
 
+### Revision r6605 — 2026-09-12 (node 64). **`60`'s `r6602` merged and verified: the isospin clause is run and the lift FAILS it — one $(T,R)$ character where the wall sector has four.**
+
+**⌗ THE THREE ANSWERS, AND THEY GO AGAINST THE LIFT.** *`Q1`: **a proper subset, the smallest there is** --- the
+three lift modes occupy the single character $(t,+1)$. `Q2`: **no**, and not for either $t$ --- the pair
+matching the left-handed doublet is $\{+1,-1\}$ **within one $R$-eigenspace**, and the lift's single
+$R$-eigenspace carries $\{t,t,t\}$. ⇒ ***The lift fails to reproduce the one thing the wall sector got
+right.***
+
+**⛭ AND THE MECHANISM IS TWO INDEPENDENT COLLAPSES, VERIFIED HERE.** *$T$ commutes with $R$, so it is a
+**scalar** on a one-dimensional $R$-eigenspace; $T$ fixes the bead phase where the deck moves it, so it is
+**diagonal**; and ***a diagonal operator commuting with a transitive $\mathbb{Z}_3$ has equal entries*** ---
+$t_1=t_2=t_3$ forced, one common scalar. ⇒ **$R$ alone caps the reachable characters at two however $T$ is
+assigned; $T$'s scalar-ness removes the second.**
+
+**⌗ `Q3`: THE RIGHT-HANDED MISMATCH DOES NOT APPEAR --- BY ABSENCE RATHER THAN REPAIR.** *The lift has no
+$R$-odd content, so `P14`'s comparison cannot be made there at all. ⇒ ***The two loci differ, and the
+difference cuts against the lift: the wall REACHES the right-handed structure and gets one pair wrong; the
+lift does not reach it.*** **A locus that cannot be compared is worse placed than one that is compared and
+mismatches.**
+
+**⚠ AND `W1` WAS THE ORDER'S WHOLE REASON, AND IT BIT `60` TOO --- IN CALIBRATION, WHERE IT WAS MEANT TO.** *The
+naive reading, "$T$ fixes the index so $T$ is trivial", returns **one** character on the **wall**, where `P14`
+publishes **four**. ⌗ *And `P14`'s own factorisation says why: the twelve factor $3\times2\times2$ as graze
+point $\times$ horn $\times$ ruling, and $T$ is the horn swap --- **it fixes the graze-point index and moves
+the horn factor.** ***Occupation lives in the factor.*** That is the error I made at `r6603` and the
+calibration caught it before any lift number was believed.*
+
+⌗ *Bounded as ordered: $t$ itself is not established --- one common scalar, not which, **exactly `P14`'s
+situation at a single wall** --- and none of the three answers rests on it. The comparison is **asymmetric**
+(sector occupation against locus mode space), stated rather than elided. **The chirality clause is untouched**:
+in the $\gamma^{5}$ grading the lift is $3{+}0$, as the wall is. And the seat stays unidentified.*
+
 ### Revision r6602 — 2026-09-16 (node 60). **The lift triple's weak-isospin clause run: it occupies ONE $(T,R)$ character where the wall sector occupies four, and it misses the doublet's pair for either sign.**
 
 **⌗ THE THREE ANSWERS, IN THE ORDER ASKED.** *`r6601` settled colour --- trivial, by indexing.
