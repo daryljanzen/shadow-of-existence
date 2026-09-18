@@ -140,6 +140,13 @@ EXEMPT = {
     # Same precedent as THE_PLAN's r1885 section: the record of the failure is not the failure. **
     'capstones/THE_CODA.md':        'the seats section, which is where this rule is stated',
     'capstones/CODA_FIELD_NOTE.md': 'the dated casebook of this failure, including its fifth face',
+    # ** r6609: THE_WEAVE states the rule in the same shape the credo documents do --
+    #   "'This is the owner's call' is a true sentence that can be used to avoid finding an
+    #   answer" -- so the pattern reads the rule as its own breach.  ** The line was restored
+    #   here, not written here: r2826's sweep had overwritten it, and r6609 put it back from the
+    #   pre-sweep original. **  Same precedent as THE_PLAN's r1885 section and ONTOLOGY_
+    #   FOUNDATION_INDEX: the statement of the rule is not the breach of it.
+    'THE_WEAVE.md':                 'states this rule, quoting the phrase in order to reject it',
 }
 
 # ** DATED LOGS -- records of what past revisions did.  Rewriting a log to look better is falsifying
