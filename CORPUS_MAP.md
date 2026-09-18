@@ -146,6 +146,32 @@ sources: [cowork, chat]
 
 
 
+### Revision r6607 — 2026-09-12 (node 64). **The spin-up's symbol item worked: two real defects fixed, and the third is not a defect.**
+
+**⌗ THE SITE MY OWN `r6581` RENAME MISSED.** *`P5`'s completeness proof carried the proof variable $T$ at one
+more site --- the **second** branch, *"the three reflections $T(w)=\pi/3-w+2\pi k/3$"* --- where the first branch
+had been renamed. ***I renamed three sites and there were four.*** Fixed to $\hat{g}(w)$; `P5` compiles at zero
+undefined, and the only bare $T$ left there is the canon note, the footnote reserving it, and three
+bibliography initials.*
+
+**⛭ AND THE CANON NOTE CONTRADICTED ITSELF TWO LINES APART.** *It read *"adjoining $P$ gives the full
+$\mathrm{Aut}(A_2)=S_3\times\mathbb{Z}_2=D_6$"*, and then, in the very next sentence, ***"the $\mathbb{Z}_2$
+parity IS a substrate isometry ($R$ in $O(5,1)\backslash SO_0$, acting on a cut spinor as $\gamma^{5}$)"***. And
+the canon's own $P$ is the areal spatial parity, marked **"absent from this paper"**. ⇒ *The adjoined
+$\mathbb{Z}_2$ is $R$. Corrected, on the note's own evidence.*
+
+**⛔ AND THE THIRD PART IS NOT A DEFECT --- $R$ AND $P$ ARE NOT ONE MAP UNDER TWO NAMES.** *The report has
+`P13`, `P14` and `P3` using $R$, $P$ or the antipode *"for the same map"*. ***They are not the same map.***
+`P13`'s $R$ is $r\mapsto-r$ **and** $2M\mapsto-2M$ --- which is exactly how `A3` states it. `P14`'s $P$ is
+$\gamma^{1}\gamma^{2}\gamma^{3}$, the spinor spatial parity, which **fixes** the mass. ⇒ **They agree on $r$
+and differ on the mass**, and on spinors $R=\gamma^{5}$ **commutes** with $\gamma^{5}$ where $P$
+**anticommutes** --- verified. ***Two maps sharing one effect, not one map under three names.***
+
+⌗ *That is the fourth time in two days a shared effect has been reported as a shared identity --- the $T$
+coordinate against its own reflection, the horn swap against the time reflection, and now this. **The pattern
+is worth naming: a report that two names denote one map is a claim about the maps, and it has to be checked
+against what each does BESIDES the effect they share.***
+
 ### Revision r6605 — 2026-09-12 (node 64). **`60`'s `r6602` merged and verified: the isospin clause is run and the lift FAILS it — one $(T,R)$ character where the wall sector has four.**
 
 **⌗ THE THREE ANSWERS, AND THEY GO AGAINST THE LIFT.** *`Q1`: **a proper subset, the smallest there is** --- the
