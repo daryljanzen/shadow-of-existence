@@ -479,7 +479,7 @@ has a double root: the $\kappa=0$ degeneracy, computed r1634.
 | Quantity | CR | ΛCDM | Register | Source |
 |---|---|---|---|---|
 | **Age** (from $r=0$) | 12.83 Gyr at $H_0=73$; **13.90 at $H_0=67.4$** | **identical** — the radiation-free law *is* the flat-ΛCDM scale factor | ≈ COMPUTED | receipt `P07_lap_timeline` |
-| $\Omega_m$ | $0.307$, the single CMB-calibrated invariant | same | ≈ measured | P15, Planck 2018 |
+| $\Omega_m$ | $0.307$, the single free parameter, **fitted from the BAO data being confronted** (not CMB-calibrated: Planck's $0.3153$ degrades the fit to $\chi^2/\mathrm{dof}=1.35$) | same | ≈ measured | P15 |
 | **BAO, DESI DR2** (13 measurements, 7 tracers) | $\chi^{2}/\mathrm{dof}\simeq1.0$ **at any $H_0$, including 73** | $\chi^{2}/\mathrm{dof}\simeq14$ when forced to $H_0=73$; pinned near 67 | ≈ COMPUTED | P15 §tensions |
 | **BAO, SDSS DR12** (6 points) | $\chi^{2}\simeq1.7$ at any $H_0$ | $\chi^{2}\simeq49$ at the same local $H_0$ | ≈ COMPUTED | P15 |
 | Inherited radiation | $\rho_r/\rho_m\approx2.0$ at the branch point | — (ΛCDM's structural analogue is $\eta$) | ≈ measured | P15 |
