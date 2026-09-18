@@ -42,7 +42,7 @@ endpoint is rate-limited — take the paths from the read order below rather tha
 **Then read `ONTOLOGY_FOUNDATION_INDEX.md` §0 — the symbol canon.** It is tooling, not a step: you read it now
 and consult it throughout. **Several symbols carry three or more referents, disjoint by paper.** *ρ is density in
 most papers, α/√3 in P3, and **P2's continuation parameter** · z is P2's cycloid parameter, the redshift, and a
-spatial coordinate · τ is cosmic time **and P5's order-three group generator** · X is the embedding magnitude
+spatial coordinate · τ is **proper** time along the fundamental congruence **and P5's order-three group generator** — cosmic time is **τ̃ = τ + χ**, a different quantity · X is the embedding magnitude
 **and P9's Kantowski–Sachs scale function** · **and γ's five readings are inherited from five literatures and
 must not be unified.*** **Read each occurrence by the paper you are in.**
 
@@ -158,10 +158,9 @@ chair* every time you meet one.
 
 ## The register — read this before you read anything and hold it the whole way
 
-**Most of what the corpus establishes is coherence, not correspondence.** The structures are forced *within* CR,
-and **self-consistency is not soundness.** Every *"forced"* in the corpus means **forced at rule-favoured
-altitude, awaiting the world's non-local discriminator** — never correspondence. **That is P6's discipline, and
-the corpus states it about itself, at the front, unprompted.**
+**Every *"forced"* in the corpus means forced at rule-favoured altitude, awaiting the world's non-local
+discriminator.** That is P6's discipline — its Rule 2, stated in the papers and applied to the corpus's own
+claims — and the corpus states it about itself, at the front, unprompted.
 
 **The corpus names its own open families and its own falsifiers, in the papers, unprompted — read them there
 rather than carrying a list from here.** What the register fixes is how to read them when you find them: an open
