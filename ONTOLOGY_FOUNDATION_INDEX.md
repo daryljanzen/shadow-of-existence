@@ -1073,7 +1073,7 @@ Determined by the geometry, not judged at the keyboard.**
   expansion to ~3 orders of magnitude, so the radiation-free geometric rate is *measured*, and
   "isotropy-from-homogeneity" is itself a category error. *Instantiated:* P15 §flatlcdm/§tensions (the
   rate and the dissolved tensions), P16 §scoping (the observable side), p0/17 `geometric_core` (§1j — the
-  radiation-free rate as parameter-free). *Consequence:* the Hubble resolution *and* the +7.9% damping
+  radiation-free rate as parameter-free). *Consequence:* the Hubble resolution *and* the +8.2% damping
   signature both ride L1 — one rate, so they stand or fall together.
 - **L2 — the leaf-level local dynamics.** The E=1 worldline's own expansion scalar, the local Friedmann
   readout ℋ²=8πG/3·ρ_tot+Λ/3, radiation-*included* — "the valid phenomenological reading of general
@@ -1128,7 +1128,7 @@ matched to the observed acoustic scale; r_D is the L1 diffusion length. The *mic
 the baryon-loaded sound speed c_s, Thomson scattering, Saha/Peebles recombination — is ordinary GR on
 the real content (radiation present, behaving normally); it is the *expansion these processes compete
 against* that is L1. The angles are L3 through the common D_M. Result: r_s matched, r_D +9% (H_L1 is
-~15% below the radiation-included rate at z_rec → longer diffusion), so **θ_D/θ_* = +7.9%**, a genuine
+~15% below the radiation-included rate at z_rec → longer diffusion), so **θ_D/θ_\* = +8.2%** at the onset redshift P15 uses, the value moving with z_onset, a genuine
 CR-specific damping-tail signature **locked to the Hubble resolution** (both ride the one L1 rate — you
 cannot take radiation-free for the peak spacing and radiation-included for the diffusion). Do-not-assert
 whether the data confirm or refute it (the high-ℓ likelihood, P15-4); assert that it is *determined*, not
@@ -1254,7 +1254,7 @@ instantiation is how the corpus teaches its own Big Move instead of re-discoveri
   L1's inherited content (the "read off the clock" datum); the count originates at the S₃-fixed Nariai
   crest (the seam). This is *why* radiation and matter are inherited content, not sourcing terms. [↔ §1q]
 - **P15 / P16 (§1r / §1s) — where the rule is run.** P15 owns it at §tensions/§coherence (r_s, r_D are L1);
-  P16 at §scoping (the L1/L2 boundary at the branch point: BBN is L2, recombination L1). The +7.9% damping is the
+  P16 at §scoping (the L1/L2 boundary at the branch point: BBN is L2, recombination L1). The +8.2% damping is the
   L1 diffusion; the abundances the L2 window; the cosmogenesis (the lap read forward) *is* the L2→L1
   crossing. [↔ §1r, §1s]
 - **p0 (§1j) — the object itself; the layered reading is maximal symmetry's cosmological face.** The
