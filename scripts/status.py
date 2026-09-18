@@ -146,7 +146,10 @@ def main():
     # session and made the board and the register disagree by one. ***
     live = len(re.findall(r'^\|\s*\*\*L-\d+\*\*\s*\|', arc, re.M))
     struck = len(re.findall(r'^\|\s*~~L-\d+~~', arc, re.M))
-    print(f'  REGISTER: {live} live rows, {struck} struck')
+    # ⛭ r6611: this counts THE_LIVE_ARC's L-rows, NOT THE_REGISTER's PO rows, and printing
+    #   'REGISTER' made one word name two files -- the board said 8 while the register carried 9.
+    #   ** Named for what it actually reads. **
+    print(f'  LIVE ARC: {live} live L-rows, {struck} struck')
     # ** the wired suite, not every check_*.py on disk -- the workflow is the authority. **
     wf = open(os.path.join(ROOT, '.github', 'workflows', 'gates.yml'),
               encoding='utf-8', errors='replace').read()

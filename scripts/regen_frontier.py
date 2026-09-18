@@ -515,12 +515,18 @@ EST = {
 # ** I scored both of the last two as 0 and they were not. **  *** The counter rising is the
 # thing it exists to show, and inflating it to 0 makes the step estimates a lie -- which is
 # the exact failure it was built to expose. ***
+# ⛭ r6611: these are JUDGEMENTS, not derivable, so they are hardcoded -- and LASTFIND had gone
+#   ~2000 revisions stale, still naming r4549 while the problem space moved repeatedly.  ** A
+#   "last actual move" line that is two thousand revisions behind reports the opposite of what it
+#   is for. **  Set to the last find that actually moved the picture.
 SINCE = 3
-LASTFIND = ("r4549: **the two-arm undriven split is dominated by a comparison asymmetry, not a physical "
-            "difference.** The peak-to-scale ratio has the distance cancel out of it, so it was never a "
-            "projection quantity -- which is why every source term, the damping envelope and the visibility "
-            "each left it untouched. Run with the start and the sound-horizon convention matched it falls to "
-            "a quarter of its size and changes sign, the two mismatches having been partly cancelling.")
+LASTFIND = ("r6605: **the lift fibre occupies ONE (T,R) character where the wall sector occupies "
+            "FOUR, and the seat search's picture of where the colourless triple could sit was "
+            "wrong.** The three lift modes lie in a single R-eigenspace carrying {t,t,t}, so the "
+            "{+1,-1} pair that matches the left-handed doublet is not there -- and the shortfall "
+            "is two independent collapses: R alone caps the reachable characters at two however T "
+            "is assigned, and T's scalar-ness removes the second. The wall REACHES the "
+            "right-handed structure and gets one pair wrong; the lift does not reach it.")
 
 # ** CALIBRATION (r2848) -- estimates measured against actuals rather than felt. **
 # *** Six steps closed with a number attached; EVERY ONE took one turn; I had predicted
@@ -560,7 +566,11 @@ GROUP = {'PO-45': 'A',  # ⛔ r6549: a FOURTH hardcoded list -- GROUP -- and a r
          # PO-19 are substrate geometry; PO-18 is the constant ledger; PO-20 is analysis. **
          'PO-17': 'E', 'PO-18': 'E', 'PO-19': 'E', 'PO-20': 'E',
          'PO-23': 'C', 'PO-43': 'C', 'PO-24': 'D', 'PO-25': 'E', 'PO-26': 'A', 'PO-27': 'A', 'PO-29': 'E', 'PO-31': 'D', 'PO-30': 'A', 'PO-36': 'D', 'PO-34': 'E'}
-GNAME = {'A': 'the matter sector', 'B': 'the matter sector', 'C': 'the quantum sector',
+# ⛭ r6611: sector B carried A's title and NO row has ever been assigned to it -- the
+#   assignments run A:5, C:3, D:5, E:7, B:0.  ** A vestigial sector printing a duplicate
+#   heading over an empty table is a reader's trap, not a section. **  Dropped; if a row
+#   ever needs a second matter sector it gets a title of its own at that point.
+GNAME = {'A': 'the matter sector', 'C': 'the quantum sector',
          'D': 'the cosmology', 'E': 'the substrate geometry'}
 
 
