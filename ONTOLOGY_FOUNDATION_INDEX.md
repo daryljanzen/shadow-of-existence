@@ -892,7 +892,7 @@ Then `A³ = 2Mα² = q = 2ρ³`, so **`A = ∛2·ρ`**: the bead's amplitude is 
 ### L1 / L2 / L3 — the three levels (the decision rule that prevents the shadow-collapse)
 
 Every rate-bearing quantity sits on exactly one level; conflating them is the standing error the framework names (§1·LEVELS; P15/P16):
-- **L1 — the foliation stacking rate** (the *ontological* geometric expansion). The Λ-set `sinh^{2/3}` law read **leftward** — the cut primary, `ρ` the name of its bend, not its cause; **radiation-free**; **empirically forced** (the CMB redshift-isotropy floor forces uniform expansion to ~3 orders, excluding a radiation-sourced rate). The layer's own expansion, **not a shadow** — what observable cosmology rides *from the seam outward*.
+- **L1 — the foliation stacking rate** (the *ontological* geometric expansion). The Λ-set `sinh^{2/3}` law read **leftward** — the cut primary, `ρ` the name of its bend, not its cause; **fixed by α and x₀**; **empirically forced** (the CMB redshift-isotropy floor forces uniform expansion to ~3 orders, excluding a radiation-sourced rate). The layer's own expansion, **not a shadow** — what observable cosmology rides *from the seam outward*.
 - **L2 — the leaf-level local dynamics.** The expansion scalar of a self-gravitating congruence, the ordinary Friedmann readout `H²=(8πG/3)ρ_tot+Λ/3` with radiation gravitating normally — the valid phenomenological GR reading on the progenitor's collapse excursion (where nucleosynthesis runs). The *same* `E=1` geodesic read **inward** as dust collapse that L1 reads outward as cosmology.
 - **L3 — the `E=1` projection** (the shadow). The reassigned synchronous shadow the observer reads, through which an L1 or L2 quantity appears as distance and redshift (the Projection Principle). Geometric origin: **the second ruling** (the synchronous space *is* the second ruling). Reading this appearance *as the existent* is the naïve-realist collapse the epistemology forbids (§1·SHADOW).
 
@@ -1011,7 +1011,7 @@ called it a "likely structural tension." r941 (rightly) rejected the "structural
 collapse. **But r941's *diagnosis* was itself half-caught in the collapse, and r945/r946 correct it — a
 correction that is the reason §1·LEVELS below exists.** r941 said the error was "running the diffusion
 on the geometric rate, which is the observable/shadow." *That is wrong on the load-bearing point:
-the radiation-free sinh^{2/3} rate is NOT the shadow — it is the layer's own ontological geometric
+the geometric sinh^{2/3} rate is NOT the shadow — it is the layer's own ontological geometric
 expansion (L1 below). Running the diffusion on it is correct.* The real error in r939–40 was different
 and elsewhere: r_s was computed as the **standard radiation-era sound horizon** — the FLRW machinery
 that assumes a radiation-dominated era CR does not have — integrated to high z, then compared to r_D.
@@ -1033,9 +1033,9 @@ warning; it must be the explicit positive machinery of the next card.
 
 **The discipline (run at the moment of computation) is the three-level rule of §1·LEVELS.** The old
 two-way form of this discipline — "is this the layer's *local dynamics* (radiation gravitating) or the
-*observable/shadow* rate (radiation-free)?" — is the very conflation that seeded the collapse: it fuses
+*observable/shadow* rate (the geometric one)?" — is the very conflation that seeded the collapse: it fuses
 the ontological geometric expansion (L1) with the shadow (L3), and it wrongly casts recombination-era
-plasma processes as "local dynamics" (they are content riding the foliation → L1, radiation-free). The
+plasma processes as "local dynamics" (they are content riding the foliation → L1, the geometric rate). The
 correct discipline is the three-level determination and its decision rule (§1·LEVELS), which makes the
 which-rate answer *forced by the geometry* rather than re-adjudicated at each computation. This face is
 still the *computational dual* of P6's shadow-reading (P6: infer the world that casts the appearances;
@@ -1070,7 +1070,7 @@ Determined by the geometry, not judged at the keyboard.**
   cut is primary, ρ the name of its bend," the same move as *vacuum is the straight cut, matter is the
   bend*; the amplitude and rate both fixed by Λ alone (Nariai tangency). *Grounded, empirical:* L1 is not
   a modelling choice — P4 `modern_parallax` (§1d) shows the CMB redshift-isotropy floor **forces** uniform
-  expansion to ~3 orders of magnitude, so the radiation-free geometric rate is *measured*, and
+  expansion to ~3 orders of magnitude, so the geometric rate is *measured*, and
   "isotropy-from-homogeneity" is itself a category error. *Instantiated:* P15 §flatlcdm/§tensions (the
   rate and the dissolved tensions), P16 §scoping (the observable side), p0/17 `geometric_core` (§1j — the
   geometric rate as parameter-free). *Consequence:* the Hubble resolution *and* the +8.2% damping
@@ -1122,7 +1122,7 @@ geometric rate dissolves.
 
 **The worked determination (the damping tail, the piece the whole oscillation lived in).** Recombination
 (z≈1090) is *observable cosmology from the seam outward* → **L1**. So the sound horizon and the diffusion
-length are *both* L1 (radiation-free): the acoustic clock starts at the branch point (the coherent null-boundary
+length are *both* L1 (the geometric rate): the acoustic clock starts at the branch point (the coherent null-boundary
 datum, P15 §coherence), so r_s = ∫_{z_rec}^{z_onset} c_s/H_L1 dz is the seam-truncated L1 integral,
 matched to the observed acoustic scale; r_D is the L1 diffusion length. The *microphysics inside* them —
 the baryon-loaded sound speed c_s, Thomson scattering, Saha/Peebles recombination — is ordinary GR on
@@ -1130,7 +1130,7 @@ the real content (radiation present, behaving normally); it is the *expansion th
 against* that is L1. The angles are L3 through the common D_M. Result: r_s matched, r_D +9% (H_L1 is
 ~15% below the radiation-included rate at z_rec → longer diffusion), so **θ_D/θ_\* = +8.2%** at the onset redshift P15 uses, the value moving with z_onset, a genuine
 CR-specific damping-tail signature **locked to the Hubble resolution** (both ride the one L1 rate — you
-cannot take radiation-free for the peak spacing and radiation-included for the diffusion). Do-not-assert
+cannot take the geometric rate for the peak spacing and a radiation-included one for the diffusion). Do-not-assert
 whether the data confirm or refute it (the high-ℓ likelihood, P15-4); assert that it is *determined*, not
 adjudicated. [Receipt: `computations/peak_heights/damping_ratio_clean.py`.]
 
@@ -1342,12 +1342,12 @@ analysis — and that is the end state this index is built toward, here reached 
 3. **The curve across r=0 IS cosmology.** P3's slicing curve continues analytically through the branch point; the single E=1 `sinh^{2/3}` congruence read *inward* is dust collapse and read *outward* is dust cosmology — one analytic curve, the seam its branch point, r=0 a comoving-chart artefact of a throat that IS alpha, the substrate's defining constant α. [P3 `SdS-slicing-curve`; P8 `slicing_operator`]
 4. **The observable cosmology is the Nariai proper frame.** The reassignment selects the Nariai member (fixed by Λ alone, M=c²/3√ΛG); its proper frame is r(τ̃) ∝ `sinh^{2/3}` — *exactly* the flat-ΛCDM scale factor, rate ½√(3Λ)c and amplitude both pure Λ-scales. [P15 §properframe, §flatlcdm]
 5. **The rate is read *leftward*.** H² = ⅓(8πGρ + Λc²) is read with H² (the geometry) primary and ρ = (3H²−Λc²)/8πG bookkeeping for the content the set rate carries. **Radiation and matter are inherited content read off the clock — never terms that source the observable rate; there is no radiation-dominated era in it.** The objection "a radiation fluid must gravitate and so alter the rate" is the *category error* the construction names in ink. [P15 §flatlcdm]
-6. **The three levels, held apart — THE thing that breaks when this is forgotten (see §1·LEVELS for the operational rule).** *Not* "one rate below the onset, another above" — that phrasing is itself the conflation §1·SHADOW warns of. There are three distinct objects: **(L2) leaf-level local dynamics** — the progenitor collapse and its turnaround, a *self-gravitating excursion*: ordinary GR, the local Friedmann rate ℋ²=8πG/3·ρ_tot+Λ/3 with radiation gravitating normally, where the nuclear window and BBN run; **(L1) the foliation stacking rate** — Nariai, radiation-free, Λ-fixed sinh^{2/3}, the layer's *own ontological geometric expansion* (not merely "what H(z) reads"), which the observable cosmology **rides from the seam outward** — this includes recombination, the sound horizon, and the diffusion length, all L1 (so recombination-era plasma processes are L1, riding the foliation, *not* L2 "local dynamics"); **(L3) the E=1 projection** — the shadow the observer reads (distances, redshift), through which L1 is *observed*. The L1↔L2 boundary is the reassignment seam. Each wrong extension is fatal: the L1 stacking law run down into the nuclear window is ~300× too slow (the BBN category error); the L2 radiation-sourced law carried past the seam radiation-pins the sound horizon and re-manufactures the Hubble tension. [P15 §tensions; P16 §scoping; §1·LEVELS]
+6. **The three levels, held apart — THE thing that breaks when this is forgotten (see §1·LEVELS for the operational rule).** *Not* "one rate below the onset, another above" — that phrasing is itself the conflation §1·SHADOW warns of. There are three distinct objects: **(L2) leaf-level local dynamics** — the progenitor collapse and its turnaround, a *self-gravitating excursion*: ordinary GR, the local Friedmann rate ℋ²=8πG/3·ρ_tot+Λ/3 with radiation gravitating normally, where the nuclear window and BBN run; **(L1) the foliation stacking rate** — Nariai, Λ-fixed sinh^{2/3}, the layer's *own ontological geometric expansion* (not merely "what H(z) reads"), which the observable cosmology **rides from the seam outward** — this includes recombination, the sound horizon, and the diffusion length, all L1 (so recombination-era plasma processes are L1, riding the foliation, *not* L2 "local dynamics"); **(L3) the E=1 projection** — the shadow the observer reads (distances, redshift), through which L1 is *observed*. The L1↔L2 boundary is the reassignment seam. Each wrong extension is fatal: the L1 stacking law run down into the nuclear window is ~300× too slow (the BBN category error); the L2 radiation-sourced law carried past the seam radiation-pins the sound horizon and re-manufactures the Hubble tension. [P15 §tensions; P16 §scoping; §1·LEVELS]
 7. **The one measured datum: ρ_r/ρ_m ≈ 2 at the branch point** — the η-analogue, inherited from the progenitor handover, measured not derived (no cost to the dissolution). [P15 §tensions]
 8. **What the forcing then delivers (required, not fitted):** the acoustic scale at the *directly* measured H₀ with no second H₀ (the Hubble tension dissolved); the transmission dichotomy (the degenerate seam's power-law approach transmits the progenitor spectrum unaltered — no inflationary scale-invariant attractor, no substrate B-modes); the parameter-free low-multipole floor. [P15 §tensions, §transmission, §largescale]
 
 **The guard (the anti-veer, [†ONT-COSMO]).**
-> At calculation time, do not reach for the FLRW default — radiation sourcing the rate, a standard radiation-dominated era in the *observable* cosmology, r=0 as the beginning, a synchronous slicing. Those are the veers this forcing forbids, and they are where derivations have exploded. When a derivation needs the rate, the early universe, or the seam, run the three-level determination of §1·LEVELS: the observable cosmology from the seam outward rides the **L1** foliation stacking rate (radiation-free `sinh^{2/3}` read leftward — the layer's own geometric expansion, *not* the shadow); the progenitor collapse / BBN window is the **L2** self-gravitating leaf-level excursion (ordinary GR at the standard rate); the observed distances/redshift are the **L3** projection; the beginning is the branch point at $r=0$ (well-posed because $r_*$ CONVERGES, **not** because curvature is finite -- it diverges there; r2234), the L1↔L2 boundary. Do *not* fall back to the two-way "local dynamics vs the observable/shadow rate" form — that conflates L1 with L3 and mis-scopes recombination (it is L1). Hold P7's ontology *here too* — it is the same forcing, running wherever the corpus does cosmology.
+> At calculation time, do not reach for the FLRW default — radiation sourcing the rate, a standard radiation-dominated era in the *observable* cosmology, r=0 as the beginning, a synchronous slicing. Those are the veers this forcing forbids, and they are where derivations have exploded. When a derivation needs the rate, the early universe, or the seam, run the three-level determination of §1·LEVELS: the observable cosmology from the seam outward rides the **L1** foliation stacking rate (the geometric `sinh^{2/3}` read leftward — the layer's own geometric expansion, *not* the shadow); the progenitor collapse / BBN window is the **L2** self-gravitating leaf-level excursion (ordinary GR at the standard rate); the observed distances/redshift are the **L3** projection; the beginning is the branch point at $r=0$ (well-posed because $r_*$ CONVERGES, **not** because curvature is finite -- it diverges there; r2234), the L1↔L2 boundary. Do *not* fall back to the two-way "local dynamics vs the observable/shadow rate" form — that conflates L1 with L3 and mis-scopes recombination (it is L1). Hold P7's ontology *here too* — it is the same forcing, running wherever the corpus does cosmology.
 
 ---
 
@@ -1460,7 +1460,7 @@ analysis — and that is the end state this index is built toward, here reached 
 
 **What it roots / joints (both ways):**
 - Rests on **P1 (F1** — the metric singularity, the limiting null direction the NBC reassigns**)** and **P4 (F5** — the empirically forced foliation the augmentation theorem uses**)**. [→ §1c, §1d]
-- The NBC + thm:cosmogenesis is the framework-level ground of **§1b's** "the reassignment fixes the radiation-free Nariai rate" and the finite-curvature seam. [→ §1b, P15, P16]
+- The NBC + thm:cosmogenesis is the framework-level ground of **§1b's** "the reassignment fixes the geometric Nariai rate" and the finite-curvature seam. [→ §1b, P15, P16]
 - "Collapsed matter must become a universe, any symmetry" is the general-reach claim **p0** synthesizes. [→ p0]
 - The SM matter sector's propagating spinor theory on the **chiral** member is the largest unbuilt undertaking [P14] — the unpolarised member's Dirac sector being built and propagating [P11]. [→ P11, P14]
 
@@ -1593,7 +1593,9 @@ addition.** *(Logged as D.4 since r903/r904; resolved by reading both, not by ch
 
 **What it roots / joints (both ways):**
 - Rests on the **substrate and horizon cubic** (P3's A₂ hexad, the pivot-and-ruling realization P3 draws as a figure — the six-hinge/six-Nariai resonance stated without being claimed there). [→ §1f, P5]
-- The **Nariai double root = the cosmogenesis branch point** across which the reassignment fixes the Λ-set rate on the leaf-carried density. [→ §1b, §1e, P16]
+- The cosmogenesis branch point is **r=0 in the degenerate Nariai member** — the member is Nariai, the locus
+is r=0 within it, and the double root at α/√3 is the merged horizon, a different locus. The reassignment
+fixes the Λ-set rate on the leaf-carried density across that branch point. [→ §1b, §1e, P16]
 - The mass-reflection's non-isometry of the ±M *charts* is "a property of the representational record, not of the existent" — **the "events exist" horn the foundational augmentation closes**. [→ §1d, §1e]
 - The problem of time's canonical root here; deparametrized on the preferred foliation. [→ P10, P7]
 - The wall as regular radiative boundary. [→ P11, P9]
@@ -2169,7 +2171,7 @@ once used, so it is not written back in.
 **THE PAPER DOES TWO THINGS.** (i) exhibits the Big Bang as the **deductively forced synthesis** of corpus results — no link posited here; (ii) carries it to a **falsifiable number** — the light-element abundances, read as a **fossil** of the previous universe's collapse, found *produced*, not fitted.
 
 **THE SYNTHESIS SPINE (§synthesis) — eight links, each a theorem/measurement in its home paper; their conjunction IS the Big Bang:**
-1. The foliation is **measured** [P4]. 2. The augmentation is **necessary and sufficient** [P7]. 3. **Collapse becomes a universe** (any symmetry; r=0 on no finite layer) [P7, P1]. 4. The completion is the **Nariai κ=0 seam**, a foliation-preserving **reassignment** (a groupoid morphism, signature-preserving) [P11, P5/P8, P9, P13]. 5. The rate is **radiation-free flat-ΛCDM** (the clock a true Hamiltonian) [P10, P15]. 6. **Matter is inherited — a corollary, not a posit** (the reassignment acts on the stacking; the leaf-carried density crosses) [P8 `prop:lapse`, P14]. 7. The **discrete matter crosses** (three generations from the S₃-fixed crest) [P14, P13]. 8. The **peaks are ΛCDM's** (time-reversal driving across the κ=0 seam) [P15]. *"Links (1)–(8) are the Big Bang. No link is posited here."*
+1. The foliation is **measured** [P4]. 2. The augmentation is **necessary and sufficient** [P7]. 3. **Collapse becomes a universe** (any symmetry; r=0 on no finite layer) [P7, P1]. 4. The completion is the **Nariai κ=0 seam**, a foliation-preserving **reassignment** (a groupoid morphism, signature-preserving) [P11, P5/P8, P9, P13]. 5. The rate is **the geometric flat-ΛCDM one** (the clock a true Hamiltonian) [P10, P15]. 6. **Matter is inherited — a corollary, not a posit** (the reassignment acts on the stacking; the leaf-carried density crosses) [P8 `prop:lapse`, P14]. 7. The **discrete matter crosses** (three generations from the S₃-fixed crest) [P14, P13]. 8. The **peaks are ΛCDM's** (time-reversal driving across the κ=0 seam) [P15]. *"Links (1)–(8) are the Big Bang. No link is posited here."*
 
 **[closure — r1096]** §lap now reads the standing **R-conjugation** (our matter ↔ its antimatter progenitor, the two ends of one bead, no seam-made asymmetry) one step further: composed with the antilinear reality involution `τ̃↦τ̄̃` (the imaginary continuation §lap already names), R is the **geometric factor** of the boundary paper's charge-conjugation closure, `C=(Q↦−Q)_field∘(R∘K)_geometric` — this very `r=0` crossing the seat of C's kinematic (FS) face, only the charge sign left to the field. (Garble fixed in the same edit: "our matter and its **antimatter progenitor** the two ends…") The naming bears on identity, not on the thermal history the abundances record. [→ glossary §C·factorization; §1p]
 
@@ -2187,7 +2189,7 @@ once used, so it is not written back in.
 - **The Li verdict reconciled with P15** (both read synthesis, Li shared — the r880/r881 bake). [↔ §1r]
 
 **The guard ([†ONT-BANG]).**
-> The Big Bang is a **synthesis, not a posit** — the conjunction of eight established corpus results (§synthesis); **recognition, not proposal** (Einstein's equations, ordinary nuclear reactions; only the reading is CR's). **THE TWO RATES ARE DIFFERENT OBJECTS** (window = leaf-level, radiation-included; observable = foliation-level, radiation-free) — no seam decoupling mechanism is demanded, and carrying either law into the other's domain is quantitatively fatal (the ~300× veer / the re-manufactured Hubble tension). **The peak clears the bottleneck for EVERY progenitor by the M-independent infall energy** — **ρ_hor is a floor, not a peak** (the r876 mass-ceiling was the artefact of reading the horizon-crossing average as the peak). **The cooling leg IS a standard BBN** — He-4 and D produced at observed with one datum; **Li-7 the shared standard problem** (synthesis, not inheritance — the corrected reading). Held at **forced at rule-favoured altitude** — the open edge is whether one progenitor handover fits deuterium, helium-4, and the metallicity floor together.
+> The Big Bang is a **synthesis, not a posit** — the conjunction of eight established corpus results (§synthesis); **recognition, not proposal** (Einstein's equations, ordinary nuclear reactions; only the reading is CR's). **THE TWO RATES ARE DIFFERENT OBJECTS** (window = leaf-level, radiation-included; observable = foliation-level, the geometric rate) — no seam decoupling mechanism is demanded, and carrying either law into the other's domain is quantitatively fatal (the ~300× veer / the re-manufactured Hubble tension). **The peak clears the bottleneck for EVERY progenitor by the M-independent infall energy** — **ρ_hor is a floor, not a peak** (the r876 mass-ceiling was the artefact of reading the horizon-crossing average as the peak). **The cooling leg IS a standard BBN** — He-4 and D produced at observed with one datum; **Li-7 the shared standard problem** (synthesis, not inheritance — the corrected reading). Held at **forced at rule-favoured altitude** — the open edge is whether one progenitor handover fits deuterium, helium-4, and the metallicity floor together.
 
 ---
 
