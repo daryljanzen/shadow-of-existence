@@ -146,7 +146,7 @@ _a = 1e-4
 _leaf = float(AT.Hleaf(_a))
 _stack = float(AT.H0 * np.sqrt(AT.OM / _a ** 3 + AT.OL))
 check(abs(_leaf / _stack - 1.0) > 0.5,
-      f"at a = 1e-4 the leaf rate is {_leaf/_stack:.3f}x the radiation-free rate — the leaf carries "
+      f"at a = 1e-4 the leaf rate is {_leaf/_stack:.3f}x the geometric rate — the leaf carries "
       f"the radiation term and the stack does not")
 
 eg, ag = AT.eg, AT.ag

@@ -2,20 +2,20 @@
 name: ontology-foundation-index
 job: What is forced here, and by what chain? — each forcing pinned once, whole, with its joints and its guard. Read WHILE READING A PAPER.
 class: whole-corpus-instrument
-current: c54.19
+current: r6649
 ---
 
 # Ontology Foundation Index — the load-bearing pieces that set the ontology, and the flags that point to them
 
-> **⌗⌗ DATED r2389 — `c54.19` (398 KB, the largest instrument in the programme), and its currency matters more
-> than any other on the stale list because THREE of the twelve census entries combed at r2388 point AT it.**
+> **⌗⌗ THE LARGEST INSTRUMENT IN THE PROGRAMME (398 KB), and its currency matters more than any other
+> because THREE of the twelve census entries point AT it.**
 >
 > *Its job is* **"what is forced here, and by what chain? — each forcing pinned once, whole, with its joints and
 > its guard. Read WHILE READING A PAPER."** ⌗ *And that phrasing is why the lag is survivable where
 > `THE_EVOLUTION_MAP`'s is not: **a forcing pinned whole, with its guard, does not go stale the way a position
 > does** — it goes stale only when the forcing itself moves.*
 >
-> **⚠ WHAT MOVED SINCE c54.19, and each of these is a forcing rather than a status:** *the **weld split** (hinge =
+> **⚠ FOUR FORCINGS THIS INDEX CARRIES, each a forcing rather than a status:** *the **weld split** (hinge =
 > the within-state index, generation moved to the turnaround three; both threes are $D-1$, descending from $f$'s
 > degree-$(D-1)$ numerator, so the count is untouched — P14 `sec:whichthree`) · **(A1) discharged at c54.29**, so
 > the operator's solution space is **derived rather than imported** and every dimension-result site inherits a
@@ -92,7 +92,7 @@ current: c54.19
 > stacking rate. **What is kept apart is not two physics but one physics and its projection** — carried on the
 > layer, then projected, never the projection's machinery run as the existent (P7 `sec:CR-FLRW`).
 >
-> **⚠ "radiation-free rate" is retired, corpus-wide, and occurs zero times (r3401–r3404).** It named the rate by
+> **⚠ "radiation-free rate" is retired, corpus-wide (r3401–r3404), and this line is the only place the phrase now appears.** It named the rate by
 > a component it lacks, which presupposes the rate is built from components at all. Say **the geometric rate**,
 > **the stacking rate**, or **fixed by α and x₀**. The failure it invited is on record and is worth knowing:
 > *radiation-free → ΛCDM minus a term → the remaining term is matter → content sets the rate → the constraint
@@ -166,7 +166,7 @@ current: c54.19
 >
 > | epoch | value | what it is |
 > |---|---|---|
-> | **$z_{\mathrm{onset}}$** | $\approx6.8\times10^{3}$, $T\approx1.6$ eV | **where the expanding-phase plasma begins**; the lower limit of $\rs=\int_{z_{\rm rec}}^{z_{\rm onset}}(c_s/H)\dd z$. ***The single FITTED parameter***, needed only because **the rate carries no radiation**. **Not a knob**: the radiation-free rate carries $H_0$ out of both $\rs$ and $D_M$, so **the same $z_{\rm onset}$ meets the scale at every $H_0$** |
+> | **$z_{\mathrm{onset}}$** | $\approx6.8\times10^{3}$, $T\approx1.6$ eV | **where the expanding-phase plasma begins**; the lower limit of $\rs=\int_{z_{\rm rec}}^{z_{\rm onset}}(c_s/H)\dd z$. ***The single FITTED parameter***, needed only because **the rate carries no radiation**. **Not a knob**: the geometric rate carries $H_0$ out of both $\rs$ and $D_M$, so **the same $z_{\rm onset}$ meets the scale at every $H_0$** |
 > | **$z_{\mathrm{eq}}$** | $3398$ | equality; ***consequence and check***, $=(1+z_{\rm onset})/2-1$ — *corrected r2441 from $3426$, which was the **retired** $z_{\rm onset}=6850$; the current $6797$ gives $1+z_{\rm eq}=3399$, and `C7_equality_and_deficit` prints it* |
 > | **$z_{\mathrm{rec}}$** | $\approx1090$ | recombination |
 >
@@ -1010,14 +1010,14 @@ diagnosis).** The peak-height build reported a ~7.8% CR-specific shift in the CM
 called it a "likely structural tension." r941 (rightly) rejected the "structural tension" framing as a
 collapse. **But r941's *diagnosis* was itself half-caught in the collapse, and r945/r946 correct it — a
 correction that is the reason §1·LEVELS below exists.** r941 said the error was "running the diffusion
-on the radiation-free rate, which is the observable/shadow." *That is wrong on the load-bearing point:
+on the geometric rate, which is the observable/shadow." *That is wrong on the load-bearing point:
 the radiation-free sinh^{2/3} rate is NOT the shadow — it is the layer's own ontological geometric
 expansion (L1 below). Running the diffusion on it is correct.* The real error in r939–40 was different
 and elsewhere: r_s was computed as the **standard radiation-era sound horizon** — the FLRW machinery
 that assumes a radiation-dominated era CR does not have — integrated to high z, then compared to r_D.
-*That* is the shadow-collapse: importing synchronous-era machinery, not "using the radiation-free rate."
+*That* is the shadow-collapse: importing synchronous-era machinery, not "using the geometric rate."
 Done the corpus's way (r_s the seam-truncated L1 integral matched to the acoustic scale; r_D the L1
-diffusion), the diffusion length r_D is **~+9%** on the radiation-free rate — a genuine CR-specific effect in the
+diffusion), the diffusion length r_D is **~+9%** on the geometric rate — a genuine CR-specific effect in the
 diffusion **scale**, **locked to the Hubble resolution by the shared L1 rate**, NOT an artefact, and
 **non-reabsorbable** by ω_b (a ~29% shift would be needed vs ~1% allowed). BUT its observable
 consequence for the high-ℓ power is **entangled with the unbuilt high-ℓ acoustic transfer** (whether
@@ -1073,7 +1073,7 @@ Determined by the geometry, not judged at the keyboard.**
   expansion to ~3 orders of magnitude, so the radiation-free geometric rate is *measured*, and
   "isotropy-from-homogeneity" is itself a category error. *Instantiated:* P15 §flatlcdm/§tensions (the
   rate and the dissolved tensions), P16 §scoping (the observable side), p0/17 `geometric_core` (§1j — the
-  radiation-free rate as parameter-free). *Consequence:* the Hubble resolution *and* the +8.2% damping
+  geometric rate as parameter-free). *Consequence:* the Hubble resolution *and* the +8.2% damping
   signature both ride L1 — one rate, so they stand or fall together.
 - **L2 — the leaf-level local dynamics.** The E=1 worldline's own expansion scalar, the local Friedmann
   readout ℋ²=8πG/3·ρ_tot+Λ/3, radiation-*included* — "the valid phenomenological reading of general
@@ -1118,7 +1118,7 @@ share). Mis-assigning is quantitatively fatal in each direction, which is what m
 load-bearing rather than bookkeeping (P16 §scoping, verbatim): carry the L1 stacking law into the window
 and the rate is ~300× below standard at T_D, destroying the freeze-out; carry the L2 radiation-sourced
 law past the seam and it radiation-pins the sound horizon, re-manufacturing the Hubble tension the
-radiation-free rate dissolves.
+geometric rate dissolves.
 
 **The worked determination (the damping tail, the piece the whole oscillation lived in).** Recombination
 (z≈1090) is *observable cosmology from the seam outward* → **L1**. So the sound horizon and the diffusion
@@ -1693,7 +1693,7 @@ addition.** *(Logged as D.4 since r903/r904; resolved by reading both, not by ch
 - §1g (P6): **R2 / least-arbitrariness licenses the substrate's selection**, and the *boundary* sets p0's altitude (coherence, not correspondence).
 - §1h (P12): the constraint-algebra grading; the orientation parity as γ⁵; the A₂ Cartan–Weyl shadow.
 - §1i (P5): the parity as **maximal symmetry's unspent discrete residue**; gauged chirality with global flavour.
-- §1b: the parameter-free cosmology, the radiation-free rate, the one measured datum.
+- §1b: the parameter-free cosmology, the geometric rate, the one measured datum.
 
 *Pass-2 additions (the closure completed — each edge drawn from p0's own `sec:landing` reciprocal):*
 - §1k (P2): **the genus** — the horizon and r=0 are the two r-poles of one homogeneous circle; the r=0 curvature divergence the sharpest instance of the shadow-reading (real-as-the-perspectival-metric's), landing into `sec:imaginary`/`sec:shadows`.
@@ -1703,7 +1703,7 @@ addition.** *(Logged as D.4 since r903/r904; resolved by reading both, not by ch
 - §1o (P11): **the dynamics** — why the cut bends (the confined Gowdy–de Sitter wave at the Type-I edge, the last stratum before the wall); the graviton's handedness the radiating-sector face of the disconnected orientation parity, beyond the index obstruction.
 - §1p (P13): **the matter-boundary rung** — the continuous matter symmetry walled because SO(5,1) is complete (𝔰𝔲(3)⊄𝔰𝔬(5,1), closed four ways); chirality *forced* non-geometric onto the discrete parity the index cannot reach — the single geometric opening the wall leaves `[reach — not claimed]`.
 - §1q (P14): **the built discrete residue** — the boundary's single opening realised: three chiral families under global S₃ with R=γ⁵, forced within CR, the gauge/mass content external; the count originating at the S₃-fixed Nariai crest.
-- §1r (P15): **the observational rung** — with Λ the sole scale the cosmology carries no tunable freedom (the parameter-free low-ℓ deficit, the radiation-free rate, the transmission dichotomy); its two-sidedness the discriminating power; "coherence shown is not correspondence earned" the weight this card is held at.
+- §1r (P15): **the observational rung** — with Λ the sole scale the cosmology carries no tunable freedom (the parameter-free low-ℓ deficit, the geometric rate, the transmission dichotomy); its two-sidedness the discriminating power; "coherence shown is not correspondence earned" the weight this card is held at.
 - §1s (P16): **the lap** — the conjugate branch read forward as a previous universe's collapsed matter, and the one quantitative consequence beyond the corpus's results: the produced light-element abundances (synthesis, not inheritance; the Big Bang a broken-symmetry shadow cast *within* the substrate, not its initial edge).
 
 **The guard ([†ONT-CORE]).**
@@ -2133,14 +2133,14 @@ once used, so it is not written back in.
 
 *Pinned r920 (Pass 2, in-order read — P15 carried only the `[†ONT-COSMO]` feeder anchor, no home card, though it is the corpus's data-confronted cosmology and §1b's model is largely its content). Dug at source (`CR_cosmology.tex`, entire): §background; §properframe + `eq:proper-frame`/`eq:scalefac`; §flatlcdm + `eq:rate`; §tensions; `prop:subhorizon`; §coherence; `prop:amplitude`; `prop:throat`; `prop:flat` + §largescale; `prop:transmission`/`prop:transmit`; §predictions; §scope. Stamped **[†ONT-CMB]**. Stated for reversal.*
 
-*Relation to §1b: **§1b is the anti-veer model extracted from this paper** (the radiation-free rate, the two regimes — "plug in the corpus's cosmology, don't reach for FLRW"); **§1r is P15's own forcing** — the derivation, the perturbation sector, the falsification edge — the home §1b points down to.*
+*Relation to §1b: **§1b is the anti-veer model extracted from this paper** (the geometric rate, the two regimes — "plug in the corpus's cosmology, don't reach for FLRW"); **§1r is P15's own forcing** — the derivation, the perturbation sector, the falsification edge — the home §1b points down to.*
 
 **RESTRAINT (front matter): NO upgrade warranted — and this is a finding, not an omission.** P15's abstract is among the fullest in the corpus; the whole-read test found **nothing load-bearing that is body-only**: it already carries the Nariai=flat-ΛCDM derivation, Ω_k=0/closed-S³, the transmission dichotomy, the low-ℓ deficit (quadrupole ~0.2, over-predicting ℓ=3–4), the factorization, the abundances, and the maturity markers. (The P8/P9 pattern — an exemplary front matter — not the P14 one.) Inbound also clean: P15 cites P7 ×9, P8/`JanzenOperator` ×5 (including the leaf-carried density at §160), P4 ×6, P3/P1/P5 at the points of use — no support left ungrounded.
 
 **The chain, each link forced, with its home:**
 1. **The reassignment selects Nariai → the proper frame IS flat-ΛCDM, derived.** The E=1 fundamental congruence (rest fixed by the field, not stipulated) integrates to r(τ̃)∝sinh^{2/3} [`eq:scalefac`] — *exactly* the flat-ΛCDM scale factor; at Nariai the amplitude is a pure Λ-length 2^{1/3}/√Λ, so **both** rate (½√(3Λ)c) and amplitude are Λ-set. Non-synchronous: constant-τ slices exactly Euclidean, the cosmological slices constant-τ̃=τ+χ. τ̃=0 is the **branch point of the scale factor** (`fig:scalefac3d`), the cosmological reading of P3's lap. [§properframe, §flatlcdm; ← §1c, §1f, §1e]
 2. **The rate read leftward.** H²=⅓(8πGρ+Λc²) with H² primary, ρ bookkeeping; Ω_m/Ω_Λ=csch² is a **clock** (the coincidence problem = we observe at ~one geometry-timescale). Radiation, like matter, inherited content read off the clock, **not a term sourcing the rate** — no radiation era. [§flatlcdm; = §1b link 5; ← §1d]
-3. **The tensions dissolve as consequences of the radiation-free rate.** Hubble: no second H₀ (the CMB's lower value rests on a radiation-governed r_s the construction does not share). Acoustic scale: a one-parameter accommodation via ρ_r/ρ_m≈2 (the η-analogue), **θ*=r_s/D_M fixed by Ω_m alone and H₀-independent** — so the datum cannot be a tuned reconciler of two H₀. **The load-bearing falsifiable claim: radiation carries no term in the rate** — the standing CR-vs-ΛCDM discriminator on data in hand. [§tensions; = §1b link 8]
+3. **The tensions dissolve as consequences of the geometric rate.** Hubble: no second H₀ (the CMB's lower value rests on a radiation-governed r_s the construction does not share). Acoustic scale: a one-parameter accommodation via ρ_r/ρ_m≈2 (the η-analogue), **θ*=r_s/D_M fixed by Ω_m alone and H₀-independent** — so the datum cannot be a tuned reconciler of two H₀. **The load-bearing falsifiable claim: radiation carries no term in the rate** — the standing CR-vs-ΛCDM discriminator on data in hand. [§tensions; = §1b link 8]
 4. **`prop:subhorizon` — the plasma onset is sub-horizon for the acoustic modes** (z_onset≈6797; k_hor≈0.010 vs peaks ≈0.022/Mpc). So the modes are **not** frozen super-horizon data awaiting re-entry; whatever fixes them is the onset handover — the substrate **transmits and gates, not generates**; the ICs are inherited. [§subhorizon]
 5. **THE DECOMPOSITION (the thesis) — substrate DETERMINES structure, progenitor SUPPLIES content, one boundary supplier.** Substrate-determined: coherence, classical character, throat isotropization, the discreteness floor, faithful transmission. Progenitor-supplied: A_s, n_s, ρ_r/ρ_m, the abundances. *"There is one boundary-condition supplier, not two."*
 6. **Coherence from the null boundary.** The seam is **null** → the IVP is **characteristic, not Cauchy**: one free datum per mode = one **phase** per mode, no second quantity to randomize it → a sharp coherent comb (Δℓ≈296); drawing the phase independently per mode washes it out. *"Coherence is what regular characteristic data on a null surface is,"* not imposed. [§coherence]
@@ -2151,7 +2151,7 @@ once used, so it is not written back in.
 11. **`prop:transmission`/`prop:transmit` — THE DECISIVE PROOF.** For f∼(r−r_h)^p: a non-degenerate horizon (p=1, κ>0) has **exponential (thermal)** approach → *imprints* a scale-invariant spectrum (n_s→1, the inflationary de-Sitter-horizon mechanism); the **degenerate Nariai double root** (p=2, κ=0) has **power-law** approach → carries **no scale** → *transmits* the progenitor spectrum unaltered. **So CR carries the primordial tilt rather than manufacturing it — no inflationary scale-invariant attractor, A_s/n_s inherited.** The degeneracy is the proven reason. [§transmission]
 
 **What it roots / joints (both ways):**
-- Rests on **P7** (NBC + framework primitives, ×9), **P1** (the finite-curvature seam), **P3** (the lap/branch point), **P8 `prop:lapse`** (the leaf-carried, lapse-independent density the leftward rate reading rests on, ×5), **P4** (the radiation-free rate's empirical ground), **P5** (Nariai uniqueness). [← §1c, §1e, §1f, §1l, §1d, §1i]
+- Rests on **P7** (NBC + framework primitives, ×9), **P1** (the finite-curvature seam), **P3** (the lap/branch point), **P8 `prop:lapse`** (the leaf-carried, lapse-independent density the leftward rate reading rests on, ×5), **P4** (the geometric rate's empirical ground), **P5** (Nariai uniqueness). [← §1c, §1e, §1f, §1l, §1d, §1i]
 - **Feeds §1b** (the anti-veer model is this paper's content extracted) and **P16** (the cosmogenesis inherits the seam, the ρ_r/ρ_m datum, and the composition-synthesis reading). [→ §1b, §1s]
 - The low-ℓ ISW fill uses **P4's** cumulative-term decomposition (CR's differential-expansion floor being zero under uniform expansion). [← §1d]
 
