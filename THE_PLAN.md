@@ -1919,7 +1919,10 @@ procedure, this section, the gate itself, `ONTOLOGY_FOUNDATION_INDEX` which quot
 **twelve named dated logs**, because rewriting a record to look better is a different failure.*
 ⌗ *Every live instance was rewritten to say **what decides** rather than **who**: `F5`'s stated procedure for a
 conversion, `PROTECTED_OPEN`'s two routes for a closure, and **"unseated — nothing in the material settles it"** for
-the rest.* ⚠ ***And the exemptions are FILE-SCOPED AND EXACT, because an allowlist is exactly how this pattern
+the rest.* ⛔ ***That last is not a general substitute, and `r2494` had already said so***: the phrase
+*"is legitimate ONLY where a judgement remains — otherwise it is a way of not converging"*, and the test is
+one sentence, **name the judgement**. *A blanket "for the rest" is the burying that rule forbids; each
+instance names what is undecided or is worked.* ⚠ ***And the exemptions are FILE-SCOPED AND EXACT, because an allowlist is exactly how this pattern
 survives.***
 
 **⌗ AND ITS COROLLARY, which is where the r1885 line actually came from:** *I did not know whether Phase 7's gate

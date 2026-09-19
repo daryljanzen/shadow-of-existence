@@ -1333,7 +1333,7 @@ analysis — and that is the end state this index is built toward, here reached 
 
 ## 1b. The second worked instance — the forced cosmological model (the ontology the whole corpus runs on)
 
-*Recorded r899 (this session), after a long day of thrashing whose single root was failing to hold this: the geometrically-forced cosmology is held in P7 and then forgotten everywhere a derivation runs, so calculations veer to FLRW defaults and everything explodes. This is that forcing, written once as a held, referenceable chain, so a node plugs the corpus's own model into a derivation instead of the textbook default. Stated for reversal; each link carries its home. It fills the §2 Tier-A P1/P7 cosmological "(to fill)" and is the anchor the cosmology-running papers (P15, P16) and working derivations cite as **[†ONT-COSMO]**.*
+*Recorded r899 (this session), after a long day of thrashing whose single root was failing to hold this: the geometrically-forced cosmology is held in P7 and then forgotten everywhere a derivation runs, so calculations veer to FLRW defaults and everything explodes. This is that forcing, written once as a held, referenceable chain, so a node plugs the corpus's own model into a derivation instead of the textbook default. Stated for reversal; each link carries its home. It is the §2 Tier-A P1/P7 cosmological anchor the cosmology-running papers (P15, P16) and working derivations cite as **[†ONT-COSMO]**.*
 
 **The chain, each link forced (not fitted), with its home:**
 
@@ -2266,16 +2266,15 @@ The law was *found by running the catalogue*, not posited, and each failure cut 
 
 The pieces, in the tiers Daryl set. Status: **[in-bundle]** present now; **[grab]** publicly fetchable
 by the gate (cosmiCave / The Conversation); **[fetch-Daryl]** Daryl supplies (e.g. formal `.tex`).
-"Establishes" is a **placeholder to fill on reading** — the per-piece ontological content, stated at
-weight.
+"Establishes" carries the per-piece ontological content, stated at weight.
 
 ### Tier A — Keystones
 - **P1 — `corpus/BH_causality_v2.tex`** *(black-hole causality / the metric-singular event horizon)* **[in-bundle]**
-  - *Establishes (to fill):* the occurrence/existence distinction at the horizon — collapse never
+  - *Establishes:* the occurrence/existence distinction at the horizon — collapse never
     completes in finite cosmic time; the event horizon as a metric singularity (Null-Temporal
     Degeneracy); the limiting causal orientation that is reassigned as cosmic time.
 - **P7 — `corpus/CR_framework.tex`** *(the CR augmentation / the layered construction; the framework — the cosmology proper is P15 `CR_cosmology.tex`)* **[in-bundle]**
-  - *Establishes (to fill):* the evolving layer as what exists and the manifold as its record; the
+  - *Establishes:* the evolving layer as what exists and the manifold as its record; the
     comoving congruence / objective cosmic rest frame (CMB); matter = the bend of the slicing; the
     SdS↔flat-ΛCDM expansion identity.
 
@@ -2284,7 +2283,7 @@ weight.
   `corpus/cosmicave_*` — `chapterX_metric-singularity`, `dagger_points-places-and-singularities`,
   `double-dagger_DRAFT`)* **[in-bundle]**
 - **When Black Holes Happen — `corpus/cosmicave_when-black-holes-happen.md`** **[in-bundle]**
-  - *Establishes (to fill):* the popular-but-rigorous through-line — the picture of the keystones made
+  - *Establishes:* the popular-but-rigorous through-line — the picture of the keystones made
     explicit (collapse, the horizon, baby universes, the Hubble-tension discriminator).
 
 ### Tier C — Conceptual geometric-boundary constraints (the essays)  [deep-read complete: Arc 1, c18; verified at source, c19]
@@ -2329,7 +2328,7 @@ greatest experienced example of science done properly in the history of science.
 - **The "No Penrose" piece (on Steinhardt & Turok)** *(a further worked example of the engine)* **[grab/fetch-Daryl]**
   - historiographic foundation: **Einstein's Cosmological Considerations** *(the PST ethics argument's
     historiographic foundation, as Setting the Record Straight is Shadow Reading's lived example)* **[grab/fetch-Daryl]**
-  - *Establishes (to fill):* the epistemic warrant — how a claim is read against the record with rigour,
+  - *Establishes:* the epistemic warrant — how a claim is read against the record with rigour,
     and why the engine licenses reading shadows the common record misses.
 
 **Deep primary sources already on the shelf** (`resources/`, the grounding layer, not spin-up reads):
