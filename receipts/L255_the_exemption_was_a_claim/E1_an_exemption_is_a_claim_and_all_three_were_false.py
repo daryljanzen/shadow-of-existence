@@ -66,7 +66,7 @@ MARK = re.compile(r'#\s*RERUNNABLE:\s*NO', re.I)
 THREE = [
     'receipts/L551_register_integrity/R1_a_protected_row_was_corrupt_for_368_commits_and_the_'
     'corruption_satisfied_a_gate.py',
-    'receipts/L555_merge_duplication/M1_the_merge_of_my_own_revision_duplicated_four_protected_rows'
+    'receipts/L555_merge_duplication/M1_the_merge_duplicated_four_protected_rows'
     '_and_no_gate_saw_it.py',
     'receipts/L556_registry_from_rows/R1_the_registry_was_checked_from_citations_inward_so_twenty_'
     'rows_were_read_by_nothing.py',

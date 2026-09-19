@@ -151,7 +151,7 @@ def main():
     # ⓸ what the losing side uniquely held, and where it survives
     elsewhere = ''
     for f in ('THE_LIVE_ARC.md', 'FOR_56.md',
-              'receipts/L555_merge_duplication/M1_the_merge_of_my_own_revision_duplicated_four'
+              'receipts/L555_merge_duplication/M1_the_merge_duplicated_four'
               '_protected_rows_and_no_gate_saw_it.py',
               'receipts/L551_register_integrity/R1_a_protected_row_was_corrupt_for_368_commits_and'
               '_the_corruption_satisfied_a_gate.py'):

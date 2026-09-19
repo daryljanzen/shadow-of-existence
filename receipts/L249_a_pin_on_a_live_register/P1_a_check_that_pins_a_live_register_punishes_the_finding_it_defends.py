@@ -162,7 +162,7 @@ for rel, (tex, sha, why) in HANDED_BACK.items():
           'is the observer line\'s to re-pin, not this one\'s',
           len(prev) > 0 and len(cur) > 0 and prev != cur)
 print()
-print('  ⌗ ** AND ONE THAT IS NOT A PIN-BREAK AT ALL: ** `P15_the_locus_was_wrong_in_six_places`')
+print('  ⌗ ** AND ONE THAT IS NOT A PIN-BREAK AT ALL: ** `P15_the_locus_is_wrong_in_six_places`')
 print('     fails on "check_loci does not pass on the repaired tree" -- a GATE dependency, not a')
 print('     quotation.  *Classifying it with the pin-breaks would have sent someone to re-pin a')
 print('     receipt whose problem is a red gate.*')

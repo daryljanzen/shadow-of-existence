@@ -575,7 +575,7 @@ and the honest statement is that they cannot on this route.***
 ---
 ## ✔✔ APPLIED — 21 · P15's "branch point"/"seam" conflation, six sites — applied c54.197
 
-*Dropped per this file's own rule. **Six sites, not the four the item named** — `check_loci` found a fifth (`C4_driving_envelope`, "reaching the branch point with the same driving amplitude") and the header STATUS block a sixth. The neutrino-decoupling sentence the finder flagged as a false positive **in advance** survived the sweep and is now a declared exception in the lint, keyed to its own text so it lapses if the sentence is rewritten.* ⇒ ***And the lint could not see the item's own first site until this revision: a proposition's receipt binding lives in its argument paragraph, so a per-sentence scan is blind to the body. Found by seeding the defect, not by reading the code.*** Registered `L-509`; receipt `P15_the_locus_was_wrong_in_six_places_and_the_lint_could_not_see_the_worst`.
+*Dropped per this file's own rule. **Six sites, not the four the item named** — `check_loci` found a fifth (`C4_driving_envelope`, "reaching the branch point with the same driving amplitude") and the header STATUS block a sixth. The neutrino-decoupling sentence the finder flagged as a false positive **in advance** survived the sweep and is now a declared exception in the lint, keyed to its own text so it lapses if the sentence is rewritten.* ⇒ ***And the lint could not see the item's own first site until this revision: a proposition's receipt binding lives in its argument paragraph, so a per-sentence scan is blind to the body. Found by seeding the defect, not by reading the code.*** Registered `L-509`; receipt `P15_the_locus_is_wrong_in_six_places_and_the_lint_cannot_see_the_worst`.
 
 ---
 

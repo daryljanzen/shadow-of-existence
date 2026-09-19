@@ -6922,7 +6922,7 @@ fails outright.*
 
 ### Revision r2872 — 2026-08-15 (main line). **`PO-7` CARRIES THE NEGATIVE AND NOT THE POSITIVE.**
 
-*The row cites **four** receipts; **119 exist on this object**. One is named `B6_the_acoustics_reproduce_and_my_dichotomy_was_false`.*
+*The row cites **four** receipts; **119 exist on this object**. One is named `B6_the_acoustics_reproduce_and_the_dichotomy_is_false`.*
 
 **⛭⛭ B6 DELIVERS WHAT THE ROW HAS NEVER HELD:** *"$r_s$ falls $-11.29\%$; acoustics requires $+12.73\%$; **the spacing does $+12.50\%$ — 98.2% of the acoustic rate**. The peaks are set by **this construction's own sound horizon**, as a RESPONSE to a moved parameter rather than as a fit."*
 

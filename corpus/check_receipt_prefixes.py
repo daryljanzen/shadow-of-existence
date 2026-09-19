@@ -9,7 +9,7 @@ REACHED THE PUSHED TREE. **
     56's `I4_the_shear_selection_exists_and_is_vacuum_bound.py` and 54's
     `I4_the_free_shear_is_two_not_five...`.  ** Both were on `main` at r2510. **
   * r2510 + c54.199 -- 54 renamed its file to I5 to resolve that, and 56 had meanwhile written
-    `I5_two_not_five_and_the_constraint_was_in_my_own_receipt.py`.  ** The rename collided too. **
+    `I5_two_not_five_and_the_constraint_is_in_the_receipt.py`.  ** The rename collided too. **
   * r2512 -- 56 resolved both by hand, moving 54's files to I6 and I7 and repointing every citation,
     and named the class themselves: "a collision class the ID bands do not cover: receipt filenames."
     ** Their resolution stands and is not disturbed here. **  *54's c54.199 proposed a band rename to

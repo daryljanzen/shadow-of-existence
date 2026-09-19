@@ -2395,7 +2395,7 @@ register edit broke `PO-6`'s cell count on unescaped `$\ldots|_{\ldots}$` bars, 
 the `INDEX.md` row — where your column lint caught it instantly.*** The register needed me to notice. **That is
 the argument for the gate stated better than I stated it at item 33, and I did not intend to supply it.***
 
-⇒ ***`L-553`, receipt `L553_the_shear_counterterm/S1_the_shear_needs_exactly_one_new_counterterm_and_my_own_count_was_one_too_many.py`, eight seeded defects verified to fire, restore verified byte-for-byte.***
+⇒ ***`L-553`, receipt `L553_the_shear_counterterm/S1_the_shear_needs_exactly_one_new_counterterm.py`, eight seeded defects verified to fire, restore verified byte-for-byte.***
 ⚠⚠ *Narrowing, not closure: no heat-kernel coefficient; the mode is a plane wave and not P10's $S^{3}$
 harmonics (**the COUNT is mode-independent, the COEFFICIENT is not**); `PO-6` stays open and the re-verdict is
 yours.*
@@ -2523,7 +2523,7 @@ file-wide and row by row across all fourteen protected ids. No verdict moved and
 concatenated, in that order, and **the join is mechanical rather than edited**. If you would rather interleave
 them chronologically, everything is there to do it with.*
 
-⇒ ***`L-555`, receipt `L555_merge_duplication/M1_the_merge_of_my_own_revision_duplicated_four_protected_rows_and_no_gate_saw_it.py`, nine seeded defects verified to fire, every "before" fact pinned to a SHA per c54.220's own rule.***
+⇒ ***`L-555`, receipt `L555_merge_duplication/M1_a_merge_duplicated_four_protected_rows_and_no_gate_saw_it.py`, nine seeded defects verified to fire, every "before" fact pinned to a SHA per c54.220's own rule.***
 
 ## ⛔ 39 · TWO GATES ARE RED AND NEITHER IS MINE — `C41` ALLOCATED TWICE AT TWO COMMITS BOTH CALLED r2749 — added c54.221
 

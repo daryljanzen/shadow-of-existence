@@ -79,7 +79,7 @@ SETTINGS: no spectra and no instrument knobs -- this file reads the corpus's .te
 recomputes the horizon quantities symbolically/analytically from the metric function alone.  ** The
 one number taken from elsewhere is r*/r_seam = 1.5338, and it is RE-DERIVED here rather than cited. **
 
-rc=0 on success.  Run: python3 P15_the_locus_was_wrong_in_six_places_and_the_lint_could_not_see_the_worst.py
+rc=0 on success.  Run: python3 P15_the_locus_is_wrong_in_six_places_and_the_lint_cannot_see_the_worst.py
                         (numpy sympy; ~5 s)
 """
 import os

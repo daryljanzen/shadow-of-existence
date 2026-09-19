@@ -56,7 +56,7 @@ import numpy as np
 HERE = os.path.dirname(os.path.abspath(__file__))
 ROOT = os.path.abspath(os.path.join(HERE, '..', '..'))
 L553 = os.path.join(ROOT, 'receipts', 'L553_the_shear_counterterm',
-                    'S1_the_shear_needs_exactly_one_new_counterterm_and_my_own_count_was_one_too_many.py')
+                    'S1_the_shear_needs_exactly_one_new_counterterm.py')
 FAILED = []
 
 

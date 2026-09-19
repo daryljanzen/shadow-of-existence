@@ -68,7 +68,7 @@ D1 = os.path.join(ROOT, 'receipts', 'L558_the_second_duplication',
 REPAIR_RECEIPTS = [
     ('receipts/L551_register_integrity/R1_a_protected_row_was_corrupt_for_368_commits_and_the_'
      'corruption_satisfied_a_gate.py'),
-    ('receipts/L555_merge_duplication/M1_the_merge_of_my_own_revision_duplicated_four_protected_rows'
+    ('receipts/L555_merge_duplication/M1_the_merge_duplicated_four_protected_rows'
      '_and_no_gate_saw_it.py'),
 ]
 #: repaired in the SAME revision and for the OTHER reason -- named so the count is not padded
