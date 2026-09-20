@@ -146,6 +146,45 @@ sources: [cowork, chat]
 
 
 
+### Revision r6696 — 2026-09-20 (node 60). **The hexad read hinge-relatively: the shape is real, and the conjunction is still not met — for a THIRD reason, and for a larger one.**
+
+**⌗ THE STRUCTURE IS REAL AND IS EXACTLY AS DESCRIBED.** *Verified rather than assumed: the six
+Nariai marks sit at $\{30,150,270\}$ with $2M>0$ and $\{90,210,330\}$ with $2M<0$; each hinge's
+neighbours at $\pm30$ are one from each triple. **Three hinges, three $R$-conjugate pairs,
+$\dim R_+=\dim R_-=3$** --- so the lift's FIRST collapse is genuinely killed.*
+
+**⓵ A THIRD COLLAPSE, IN TWO COMMUTATIONS.** *$T$ is diagonal on the marks, fixing the sky angle.
+**Within** a triple the hinge $\mathbb{Z}_3$ is transitive, forcing one entry per block; **across**
+the blocks $T$ commutes with $R$, forcing $t_+=t_-$.* ⇒ ***One $T$-value across the whole hexad ---
+characters $(t,+1)$ and $(t,-1)$, two characters with one $T$-value each.*** *The lift died of
+dimension and of the deck; the hexad dies of the one commutation `P14` states outright.*
+
+**⓶ ⛭ AND THE LARGER REASON: NOTHING BINDS IT, BECAUSE IT IS NOT A MODE SPACE.** *The six are
+**marks in the cut parameter space** --- which member, at which sky angle --- not solutions on a
+leaf, so no normalizability question arises and there is no branch to reject.* ⇒ **It carries both
+$R$-eigenvalues for exactly the reason `C50`'s member does, so it does not defeat `r6695`'s trade:
+it sits on the PROPAGATING side of it, with a three of MARKS.**
+
+**⛔ Q3, ANSWERED IN THE SHARPEST WAY AVAILABLE.** *The hinge-relative $\pm30$ label and
+$\operatorname{sign}2M$ are identical **on all six marks**, because $2M=(2/3\sqrt3)\sin3w$ and
+$3(w_h\pm30)=\pm90 \bmod 360$ at every hinge.* ⇒ ***Not a datum `r6686` failed to reach --- $R$'s
+own label, hinge-relatively named.***
+
+**⌗ Q1 --- THE PREMISE DOES NOT SURVIVE ITS OWN STATEMENT.** *$\widetilde{T}$ fixes the mass by
+definition and the two triples **are** the $2M$-sign blocks, so it is block-diagonal for the same
+reason the blocks exist; $T$ is diagonal too. And the **deck is not in play**: it moves the bead
+phase where the hexad is indexed by the sky angle. The transitive $\mathbb{Z}_3$ here is the hinge
+three.*
+
+⚠ *Not that the hexad's structure is wrong --- **the $3+\bar3$ with $\dim R_\pm=3$ is the shape
+the first conjunct asks for and the only object here supplying it**. Not that a parameter-space
+three could never be a mode three: what is shown is that **this** one is not. $t$ is undetermined as
+`r6602` left it, and no answer rests on it. Nothing named, seated, or said about chirality.*
+
+⌗ *`W4`: **the largest discrete structure the construction carries supplies the first conjunct and
+fails the second**, and the failure is not narrow --- the label is $R$'s own and the object is a
+parameter space.*
+
 ### Revision r6686 — 2026-09-20 (node 60). **No locus in `P07`'s causal stratification carries two values within one $R$-eigenspace — and it is ONE fact: every two-valued datum there is $R$ itself.**
 
 **⌗ THE ANSWER, AND IT IS NOT FIVE SEPARATE FAILURES.** *`r6602`'s mechanism named three escapes ---
