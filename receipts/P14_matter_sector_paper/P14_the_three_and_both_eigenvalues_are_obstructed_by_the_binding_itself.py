@@ -24,22 +24,31 @@ and the SAME mechanism that supplies one denies the other. **
   ⇒ *** EACH SUPPLIES EXACTLY THE CONJUNCT THE OTHER LACKS. ***
 
 --------------------------------------------------------------------------------
-(2) AND THE TRADE IS A MECHANISM, NOT A COINCIDENCE: THE WALL DOES BOTH.
+(2) AND THE TRADE IS A MECHANISM, NOT A COINCIDENCE -- BUT NOT THE ONE THIS RECEIPT FIRST NAMED.
 
-  ** THE THREE COMES FROM WALLS. **  It is the graze-point index -- the three walls at sky
-  angles 60, 180, 300 -- and a locus without walls has no such index to carry.
+⛔ ** THE FIRST VERSION SAID THE THREE IS THE WALLS' GRAZE-POINT INDEX.  The LIFT refutes that
+from inside the corpus: its three is one mode per Im tilde-tau SECTOR, the deck's three
+(tilde-tau -> tilde-tau + 2 pi i alpha/(D-1), which at D=4 is the sector period 2 pi alpha/3),
+and r6601 established that period carries no M- and no w-dependence, so it is NOT a w-index at
+all.  The lift HAS a three and ONE R-eigenvalue, and its three does not come from the walls. **
 
-  ** AND THE WALL BINDS BY REJECTING ONE R-EIGENVALUE. **  P14's prop:wall, in its own words:
-  the bound solution is psi = cosh^{-a}(x/a) chi_+ with chi_+ the sigma_y = +1 eigenspinor, and
-  "the conjugate branch chi_- grows as cosh^{+a} and is rejected".  P14 states the identification
-  outright: *** sigma_y = +1 = R = gamma^5 ***.  So the branch normalizability rejects IS the
-  opposite R-eigenvalue.
+*** THE VARIABLE IS BOUND AGAINST PROPAGATING. ***
 
-  ==> *** A WALL SUPPLIES A THREE AND, BY THE SAME ACT, LEAVES ONE R-EIGENVALUE.  NO WALL
-      LEAVES BOTH AND SUPPLIES NO THREE.  The conjunction is obstructed by the binding. ***
+  the lift          BOUND, normalizable on |r| <= A     three (the DECK's)   ONE R-eigenvalue
+  the wall sector   BOUND, the cosh^{-a} profile        three (the WALLS')   ONE per wall mode
+  C50's member      PROPAGATING, nothing binds          NO three             BOTH R-eigenvalues
 
-  ⌗ And the obstruction is normalizability, which is why it does not look like a choice: one
-  branch decays and one grows, on the same wall profile, and only the decaying one is a state.
+** AND BINDING SELECTS ONE BRANCH THE SAME WAY ON BOTH BOUND LOCI, by normalizability rejecting
+a growing solution. **  At the wall: psi = cosh^{-a}(x/a) chi_+ is bound and "the conjugate
+branch chi_- grows as cosh^{+a} and is rejected".  On the lift: the leaf measure near the branch
+point gives dl ~ sqrt(|r|/2M) dr, so |r|^s needs s > -3/4 -- "the decaying branch s = +lambda
+satisfies this for every lambda; the growing branch s = -lambda would require lambda < 3/4, which
+no lambda = j + 1/2 attains".  *Two different profiles, one rejection.*
+
+And P14 identifies the surviving label with R outright: *** sigma_y = +1 = R = gamma^5 ***.
+
+  ==> *** BINDING LEAVES ONE R-EIGENVALUE, WHATEVER DOES THE BINDING.  PROPAGATION KEEPS BOTH.
+      And BOTH of the corpus's threes sit on BOUND sectors. ***
 
 --------------------------------------------------------------------------------
 ⚠ WHAT IS NOT CLAIMED, and it is the larger part.
@@ -54,10 +63,10 @@ and the SAME mechanism that supplies one denies the other. **
 
   ** NOT anything about isospin or masses. **  The conjunct at issue is R-eigenvalue span.
 
-  ⌗ AND THE OPEN DIRECTION THIS LEAVES IS SHARPER THAN THE ONE IT CLOSES: *is there a three in
-  this construction that does NOT come from the walls?*  The deck's three is one candidate --
-  it is the generations' seating and it is not a wall index -- and whether a propagating sector
-  can carry it is not addressed here.
+  ⌗ AND THE OPEN DIRECTION THIS LEAVES IS SHARPER THAN THE ONE IT CLOSES, and sharper again than
+  the first version's: not "is there a three that does not come from the walls" -- the lift's
+  already is one -- but *** CAN A PROPAGATING SECTOR CARRY A THREE AT ALL? ***  Both threes the
+  corpus has sit on bound sectors, and the one propagating sector it has carries none.
 """
 
 import re
@@ -105,11 +114,14 @@ assert len(NOT_CLAIMED) == 3
 print()
 print("ESTABLISHED: PO-45's demand is a conjunction, and the corpus's two candidate loci fail it")
 print("COMPLEMENTARILY -- the lift carries three states in one R-eigenspace, C50's unpolarised")
-print("member spans both R-eigenvalues and carries no three. The trade is a mechanism: the three")
-print("is the walls' graze-point index, and a wall binds by rejecting the growing branch, which")
-print("P14 identifies with the opposite R-eigenvalue. A wall supplies a three and by the same act")
-print("leaves one eigenvalue; no wall leaves both and supplies no three.")
+print("member spans both R-eigenvalues and carries no three. The variable is BOUND against")
+print("PROPAGATING, not wall against no-wall: the lift's three is the DECK's, not the walls', and")
+print("it still has one eigenvalue. Binding selects one branch by normalizability rejecting a")
+print("growing solution -- cosh^{+a} at the wall, |r|^{-lambda} against the s > -3/4 threshold on")
+print("the lift, two profiles and one rejection -- and P14 identifies the surviving label as")
+print("sigma_y = +1 = R = gamma^5. So binding leaves one R-eigenvalue whatever does the binding,")
+print("propagation keeps both, and both of the corpus's threes sit on bound sectors.")
 print("NOT CLAIMED: that no locus can meet it -- only that these two fail it for one reason.")
-print("THE SHARPER OPEN DIRECTION: is there a three in this construction that does NOT come from")
-print("the walls? The deck's three is the candidate, being the generations' seating rather than a")
-print("wall index, and whether a propagating sector can carry it is not addressed here.")
+print("THE SHARPER OPEN DIRECTION: can a PROPAGATING sector carry a three at all? Both threes")
+print("the corpus has sit on BOUND sectors -- the lift's from the deck, the wall sector's from the")
+print("walls -- and the one propagating sector it has carries none.")
