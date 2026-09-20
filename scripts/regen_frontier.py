@@ -55,6 +55,18 @@ EST = {
         'than of the scale it is reported against -- on this arm the first peak is not set by the sound horizon, '
         'and nothing about the pin explains where 206 comes from. '
 ),
+    'PO-46': ('the propagating Dirac sector on the chiral member is not built', 1, 0, 2, None,
+        'r6685: four papers name this gap in their own voice -- P5, P13, P17 and P18 -- with four open-ledger '
+        'rows marked NAMED-UNBUILT, and it had no register row, so neither this instrument nor P18 could carry '
+        'it. WHAT IS BUILT: the Dirac sector on the UNPOLARISED Gowdy-de Sitter member propagates, its '
+        'characteristic matrix gamma^0 gamma^1 hermitian with eigenvalues exactly +-1 and packet centroid speed '
+        'measured at 1.000000 (P11). And P14 builds the fermion as BOUND leaf modes and says so. WHAT IS NOT '
+        'BUILT is the propagating Dirac sector on the CHIRAL member -- P14s own sentence names it. WHAT WOULD '
+        'DISCHARGE IT: a propagating Dirac field on the polarised member with its characteristic cone computed '
+        'as P11s was. AND IT MATTERS BEYOND BOOKKEEPING: P18 gates its orbifold route on this prerequisite and '
+        'P7 narrows its open work to it, so a gap two papers route through was invisible to the instrument that '
+        'lists open work. '
+    ),
     'PO-45': ('the colourless triple has no seat, and the reason is the dimension result', 1, 0, 3, None,
         'r6546/r6547: P14 delivers 12 of the 15 Weyl fermions of a generation and not the colourless 3, and '
         'that shortfall now states what would discharge it. The triple wanted is a doublet plus a singlet. '
@@ -544,7 +556,7 @@ LASTFIND = ("r6605: **the lift fibre occupies ONE (T,R) character where the wall
 # ⚠ *** A BUILD step has NO completed instance to calibrate against -- PO-11's continuum,
 # PO-6's UV definition, PO-1a's derivation.  Those are marked BUILD and their estimates
 # are declared unmeasured rather than dressed as measured. ***
-KIND = {'PO-13': 'BUILD', 'PO-36': 'READ', 'PO-33': 'BUILD',   # r4145: was READ, scoped when the diagnosis looked answered; it is not
+KIND = {'PO-46': 'BUILD', 'PO-13': 'BUILD', 'PO-36': 'READ', 'PO-33': 'BUILD',   # r4145: was READ, scoped when the diagnosis looked answered; it is not
          'PO-14': 'BUILD', 'PO-15': 'READ', 'PO-16': 'READ',
         # ** brought in r3095 from p0's frontiers and the field ledgers, which carried them
         # unregistered.  PO-17 is a DECISION stated without being claimed both ways; PO-18 an
@@ -559,8 +571,8 @@ KIND = {'PO-13': 'BUILD', 'PO-36': 'READ', 'PO-33': 'BUILD',   # r4145: was READ
 #   and the generator reported "9 open" while the table showed EIGHT -- the count comes from
 #   the live set and the rows come from here.*  ** Adding a row needs three things: the
 #   register row, the runway, and this list. **  check_frontier_current now checks all three.
-ORDER = ['PO-45', 'PO-13', 'PO-43', 'PO-24', 'PO-36', 'PO-30', 'PO-25', 'PO-26', 'PO-31', 'PO-23', 'PO-15', 'PO-14', 'PO-17', 'PO-18', 'PO-19', 'PO-20']
-GROUP = {'PO-45': 'A',  # ⛔ r6549: a FOURTH hardcoded list -- GROUP -- and a row missing here raises.
+ORDER = ['PO-45', 'PO-46', 'PO-13', 'PO-43', 'PO-24', 'PO-36', 'PO-30', 'PO-25', 'PO-26', 'PO-31', 'PO-23', 'PO-15', 'PO-14', 'PO-17', 'PO-18', 'PO-19', 'PO-20']
+GROUP = {'PO-45': 'A', 'PO-46': 'A',  # ⛔ r6549: a FOURTH hardcoded list -- GROUP -- and a row missing here raises.
          'PO-13': 'D', 'PO-14': 'A', 'PO-15': 'C', 'PO-16': 'D',
          # ** r3095: the four brought in from p0's frontiers and the field ledgers.  PO-17 and
          # PO-19 are substrate geometry; PO-18 is the constant ledger; PO-20 is analysis. **

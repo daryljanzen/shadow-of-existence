@@ -32,7 +32,7 @@ ROOT = os.path.abspath(os.path.join(HERE, '..'))
 # ** REACH and CONVERGENCE, entered by hand and dated.  Update when an item's standing changes. **
 # ** PO-5 at r2607: the mod-2 CONDITION is met on the radial operator (A=sz∘conj, A^2=+1, preserves the
 # counted eigenspace).  What remains is the index's VALUE -- a computation, not a search. **
-REACH = {'PO-2': 2, 'PO-3': 2, 'PO-4': 3, 'PO-5': 3, 'PO-6': 3, 'PO-7': 2, 'PO-8': 1,
+REACH = {'PO-46': 2, 'PO-2': 2, 'PO-3': 2, 'PO-4': 3, 'PO-5': 3, 'PO-6': 3, 'PO-7': 2, 'PO-8': 1,
          'PO-9': 2, 'PO-10': 2, 'PO-11': 3, 'PO-12': 2}
 # ** GATED_BY, added r2603 the moment the ranking first ran. **  ⛔ The first run put `PO-7` SECOND --
 # and `PO-7` cannot be worked at all: its one live route ⓷ IS `PO-seam`'s progenitor derivation, and all
@@ -47,6 +47,8 @@ GATED_BY = {'PO-7': 'PO-seam (its route 3 IS the progenitor derivation)',
             'PO-10': 'PO-12 step 2 (both halves are statements about C_l)'}
 
 CONVERGES = {
+    "PO-46": ("P18's orbifold route and P7's narrowed open work both gate on this prerequisite",),
+
     # ** r2605: the mod-2 route is CLOSED (the involution is quaternionic).  What replaces it -- the
 # Kramers question -- serves the same three, so convergence is unchanged and grounded rises. **
     # ** r2609: the OBJECT is delivered (baryon 1/diquark 0/meson 1; monodromies generate SU(3)).  What

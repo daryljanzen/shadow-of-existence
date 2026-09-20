@@ -30,7 +30,7 @@ HERE = os.path.dirname(os.path.abspath(__file__))
 ROOT = os.path.abspath(os.path.join(HERE, '..'))
 
 # ** the ratchet: raise these as rows are worked; never lower one **
-FLOOR = {'PO-5': 17, 'PO-10': 21, 'PO-6': 7, 'PO-7': 5, 'PO-1c': 1}
+FLOOR = {'PO-46': 1, 'PO-5': 17, 'PO-10': 21, 'PO-6': 7, 'PO-7': 5, 'PO-1c': 1}
 DEFAULT = 1
 
 CITE = re.compile(r'`([A-Za-z0-9_]+)`')
