@@ -147,6 +147,13 @@ EXEMPT = {
     #   pre-sweep original. **  Same precedent as THE_PLAN's r1885 section and ONTOLOGY_
     #   FOUNDATION_INDEX: the statement of the rule is not the breach of it.
     'THE_WEAVE.md':                 'states this rule, quoting the phrase in order to reject it',
+    # ** r6665: the wisdom ledger is a DATED RECORD, and r2531 named that exemption and did not
+    #   apply it: 'twelve named dated logs, because rewriting a record to look better is a
+    #   different failure'.  Its rows pin their revisions (r2075, r1920) and quote what was said
+    #   at the time.  ** The sweep rewrote two of them anyway and garbled both -- 'Scope note or
+    #   withdrawal, — unseated:' and 'which is unseated point' -- and r6665 restored them from
+    #   the pre-sweep originals. **  The phrase here is quoted history, not a live deferral.
+    'capstones/THE_WISDOM_LEDGER.md': 'a dated record; its rows quote what was said, with the revision pinned',
 }
 
 # ** DATED LOGS -- records of what past revisions did.  Rewriting a log to look better is falsifying
