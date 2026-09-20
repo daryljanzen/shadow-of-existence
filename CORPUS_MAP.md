@@ -146,6 +146,57 @@ sources: [cowork, chat]
 
 
 
+### Revision r6686 — 2026-09-20 (node 60). **No locus in `P07`'s causal stratification carries two values within one $R$-eigenspace — and it is ONE fact: every two-valued datum there is $R$ itself.**
+
+**⌗ THE ANSWER, AND IT IS NOT FIVE SEPARATE FAILURES.** *`r6602`'s mechanism named three escapes ---
+an $R$-eigenspace of dimension $>1$, a non-transitive deck, or $T$ not commuting with $R$. This runs
+`P07`'s five spans and four joints against all three.*
+
+⇒ ***EVERY TWO-VALUED DATUM THE STRATIFICATION OFFERS IS THE SAME INVOLUTION --- the exchange of the
+bead's two ends --- AND THAT INVOLUTION IS $R$.*** *The **horn** label $\operatorname{sign}X_0$ ($T$
+is the horn swap), the **leg** label $\operatorname{sign}r$, and the **rate's** sign are three names
+for one exchange.* **So the two values are split ACROSS the $R$-eigenspaces and never within one: the
+datum is not merely absent, it IS $R$, and $R$ cannot split its own eigenspace.**
+
+**⛭ Q1 --- THE HORN SPANS ESCAPE THE LIFT'S COLLAPSE AND STILL FAIL, DIFFERENTLY.** *$T$ does not act
+**within** either horn span --- it exchanges them --- so on a single span it is not an endomorphism
+and grades nothing, while on the **pair** it is a transposition and **two** characters are occupied
+against the lift's one. **But they are $(+1,+1)$ and $(-1,-1)$: a correlated pair, not a doublet**,
+$R$ being the same transposition there, so each $R$-eigenspace on the pair is one-dimensional.*
+
+**⌗ Q2 --- THREE OF THE FOUR JOINTS SELECT NO BRANCH.** *At both seams $f=0$ and the inverse square
+root is integrable with $\psi$ finite; at the turnaround $f=1$ and the measure is regular. **The
+selection is the branch point's alone.** And the **front seam** --- `P07`'s one character-preserving
+joint --- carries no selection either: what persists unchanged across it is ONE branch.*
+
+**⛔ Q3 --- AND THE RATE'S SIGN FAILS FOR THE OPPOSITE REASON TO $T$ ON THE LIFT.**
+*$(\mathrm{d}r/\mathrm{d}\tilde\tau)^2=1-f$ and **$f$ is $R$-EVEN**, so the rate's **square** is
+even while ***the RATE IS $R$-ODD*** --- symbolic, the defect under the bare backward reflection
+being exactly twice `P07`'s own $R$-odd part $-2M/r$.* ⇒ ***An $R$-odd grading ANTIcommutes with $R$:
+it carries one eigenspace to the other, so it is not an endomorphism of either and cannot grade one
+at all.*** *$T$ on the lift **collapsed to a scalar**; the rate's sign does not collapse --- it does
+not preserve the eigenspaces it would have to split.*
+
+**⛭ AND THE DIMENSION COUNT SAYS WHY THE WALL SECTOR IS THE ONLY PLACE.** *Two $T$-values in one
+$R$-eigenspace needs dimension $\ge2$, hence **at least four states**; the stratification's
+two-valued data are all **two-state** exchanges. **`P14`'s colourless four is the only object in the
+construction with a two-dimensional $R$-eigenspace.***
+
+⌗ *The engine was re-calibrated in place rather than inherited, and on **both** failure modes: `r6566`
+caught `quad` returning finite for a divergent integral, and this caught its **mirror** --- a guard
+set below `quad`'s own accuracy returning NaN on a **convergent** branch. The marginal
+$\lambda=3/4$ pins both.*
+
+⚠ *Not that $\{0,1,2\}$ is a three of the kind the other two are --- **`L8_the_pencil`'s verdict
+that the pencil runs over ALL $f$ and does not select them stands unchanged**. Not that the rate's
+sign is isospin or anything else: what is computed is its parity. $T$'s scalar on a one-dimensional
+$R$-eigenspace is still undetermined, as `r6602` left it. Nothing seats the triple, and the chirality
+clause of `S3` is untouched.*
+
+⌗ *`PO-45` now carries four run clauses, and the demand on a successor is sharper than before: **a
+locus carrying the pair must supply a two-valued datum INDEPENDENT of $R$**, and `P07`'s five spans
+and four joints supply none.*
+
 ### Revision r6607 — 2026-09-12 (node 64). **The spin-up's symbol item worked: two real defects fixed, and the third is not a defect.**
 
 **⌗ THE SITE MY OWN `r6581` RENAME MISSED.** *`P5`'s completeness proof carried the proof variable $T$ at one
