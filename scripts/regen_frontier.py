@@ -55,17 +55,19 @@ EST = {
         'than of the scale it is reported against -- on this arm the first peak is not set by the sound horizon, '
         'and nothing about the pin explains where 206 comes from. '
 ),
-    'PO-46': ('the propagating Dirac sector on the chiral member is not built', 1, 0, 2, None,
-        'r6685: four papers name this gap in their own voice -- P5, P13, P17 and P18 -- with four open-ledger '
-        'rows marked NAMED-UNBUILT, and it had no register row, so neither this instrument nor P18 could carry '
-        'it. WHAT IS BUILT: the Dirac sector on the UNPOLARISED Gowdy-de Sitter member propagates, its '
-        'characteristic matrix gamma^0 gamma^1 hermitian with eigenvalues exactly +-1 and packet centroid speed '
-        'measured at 1.000000 (P11). And P14 builds the fermion as BOUND leaf modes and says so. WHAT IS NOT '
-        'BUILT is the propagating Dirac sector on the CHIRAL member -- P14s own sentence names it. WHAT WOULD '
-        'DISCHARGE IT: a propagating Dirac field on the polarised member with its characteristic cone computed '
-        'as P11s was. AND IT MATTERS BEYOND BOOKKEEPING: P18 gates its orbifold route on this prerequisite and '
-        'P7 narrows its open work to it, so a gap two papers route through was invisible to the instrument that '
-        'lists open work. '
+    'PO-46': ('STRUCK r6691 -- the premise was false', 0, 0, 0, None,
+        'r6685 registered this on four open-ledger rows marked NAMED-UNBUILT and P14s sentence "what is not '
+        'built is the Dirac sector on it", as though the chiral members propagating Dirac sector were '
+        'unbuilt. IT IS BUILT. C50 builds it and says so in its own opening: P07s open item had three pieces, '
+        'two already existed, and "the owed work is one thing: put a Dirac field on the member P11 already '
+        'built, and report what it does. That is what this does." The receipt is registered and runs green. '
+        'AND THE MEMBER IS THE CHIRAL ONE: P11 is explicit that the polarised cut is achiral, its single '
+        'polarisation pinned by the residual T^2, and that the first chiral member is its unpolarized '
+        'generalization -- the member C50 puts the Dirac field on. So unpolarised and chiral name one member, '
+        'and the gap registered was between two names for it. THE ERROR: NAMED-UNBUILT labels taken at face '
+        'value without opening the receipts that close them, which is the failure r6659-r6683 spent its time '
+        'correcting elsewhere. The four ledger rows are not wrong -- each papers prose does name the sector as '
+        'unbuilt, and that is a defect in those papers rather than a gap in the corpus. '
     ),
     'PO-45': ('the colourless triple has no seat, and the reason is the dimension result', 1, 0, 3, None,
         'r6546/r6547: P14 delivers 12 of the 15 Weyl fermions of a generation and not the colourless 3, and '
