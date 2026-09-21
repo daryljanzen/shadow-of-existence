@@ -34,8 +34,11 @@ allows, and a colourless index sits beside the colour triplet for that reason.*
 THEY ARE NOT THE SAME. **  `P14`'s is built from the wall monodromies: the holonomy group of the
 three wall monodromies with the hinge three-cycle is ** FINITE, of order 81 ** -- constructed and
 counted here -- and finite means zero-dimensional, so by Ambrose--Singer the curvature vanishes
-identically.  `SU(3)` enters only as the smallest CONNECTED group containing it, the finite group
-acting irreducibly on C^3 with scalar commutant.  *The compact face's su(3) would be an isometry
+identically.  ⛔ And the group is NOT inside SU(3): each wall monodromy diag(omega,1,1) has
+determinant omega, so the group lies in U(3) and a connected group containing it must reach U(3),
+not SU(3).  Its determinant-one subgroup has index three, order 27, and THAT lies in SU(3); the
+extra factor is a Z_3 of phases.  The finite group acts irreducibly on C^3 with scalar
+commutant.  *The compact face's su(3) would be an isometry
 subalgebra with a curvature; `P14`'s is the connected closure of a flat finite holonomy on the
 real Lorentzian face.*  `P06`'s own appendix records the consequence: the colour structure
 "turns out NOT to be an isometry of either real form".
