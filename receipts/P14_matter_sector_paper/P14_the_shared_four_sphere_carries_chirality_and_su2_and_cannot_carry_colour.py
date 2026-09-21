@@ -24,19 +24,24 @@ doublet needs: a chirality grading, and a continuous symmetry of the doublet's k
     under the Wick rotation X_0 -> i X_0 it is FIXED -- the locus where the two faces meet;
     under T : X_0 -> -X_0, the horn swap, it is FIXED as well.
 
-  And it is four-dimensional and even.  *** It is the one place in either face where the
-  chirality grading exists. ***
-
-  P12 already carries it: "dS_5 ~ R x S^4 is spin with a unique spin structure, inherited by the
-  four-dimensional cut, and R -- reflecting the transverse cut-normal (r_0) direction and so
+  And it is four-dimensional and even, so it carries a chirality OF ITS OWN -- the grading by the
+  Clifford element of its normal, X_0.  ** That is not the physical chirality. **  Every
+  four-dimensional cut carries the chirality of its own normal, and the physical one is the cut
+  whose normal is r_0.  P12: "dS_5 ~ R x S^4 is spin with a unique spin structure, inherited by
+  the four-dimensional cut, and R -- reflecting the transverse cut-normal (r_0) direction and so
   fixing all four spacetime legs -- acts on the cut's natural spinor as the chirality operator
-  gamma^5 itself."
+  gamma^5 itself."  So R = gamma^5 is the element of r_0, and the sphere's chirality is the element
+  of X_0.  *** The two anticommute. ***  A state of definite sphere chirality is an exactly equal
+  mixture of the cut's left and right (computed: weights 0.500 and 0.500).
 
-  ⌗ And that is consistent with r6702's result that a single reflection EXCHANGES the chirality
-  blocks: r6702 reflected axes OF the four-dimensional spacetime, each of which anticommutes with
-  gamma^5.  R reflects the FIFTH, cut-normal direction, which is not one of the four legs; in the
-  five-dimensional Clifford algebra that reflection is implemented by gamma^5 itself, which
-  commutes with gamma^5 and so grades rather than exchanges.
+  ⌗ What distinguishes this S^4 is that the two FACES meet on it, and (3) below.  It is not the
+  one place chirality exists -- every even-dimensional cut has one -- and its chirality is not the
+  physical one.
+
+  ⌗ And R grading rather than exchanging is consistent with r6702's result that a single
+  reflection EXCHANGES the chirality blocks: r6702 reflected axes OF the four-dimensional cut, each
+  of which anticommutes with that cut's chirality.  R reflects the cut's NORMAL, which is not one of
+  its four legs, and is implemented by that normal's own Clifford element.
 
 --------------------------------------------------------------------------------
 (3) AND THE FOUR-SPHERE'S OWN SYMMETRY CARRIES su(2) AND CANNOT CARRY COLOUR.
@@ -48,7 +53,9 @@ doublet needs: a chirality grading, and a continuous symmetry of the doublet's k
   why it places colour on the five-sphere rather than a four-sphere.
 
   ==> *** THE SHARED S^4 CARRIES A CHIRALITY GRADING AND su(2), AND COLOUR IS STRUCTURALLY
-      ABSENT RATHER THAN MERELY UNUSED.  That is the profile of a colourless chiral doublet. ***
+      ABSENT RATHER THAN MERELY UNUSED.  Colourless by construction -- but the chirality is the
+      sphere's own, which anticommutes with the physical one, so this is NOT the profile of a
+      physical chiral doublet. ***
 
 --------------------------------------------------------------------------------
 ⚠ WHAT IS NOT CLAIMED, and it is the larger part.
@@ -97,10 +104,12 @@ print()
 print("ESTABLISHED: both faces are five-dimensional and odd, so neither carries a handedness; the")
 print("chirality grading lives on four-dimensional cuts. The two faces share one S^4 at X_0 = 0 --")
 print("dS_5's throat, S^5's equator, fixed by the Wick rotation that relates them and by T -- and it")
-print("is four-dimensional, so it is the one place in either face where chirality exists. P12's R")
-print("acts on its spinor as gamma^5. Its isometry so(5) contains su(2)+su(2) and does not contain")
+print("is four-dimensional and carries a chirality of its own -- the Clifford element of its normal")
+print("X_0 -- which is NOT the physical chirality R = gamma^5, the element of the cut's normal r_0; the")
+print("two anticommute. Its isometry so(5) contains su(2)+su(2) and does not contain")
 print("su(3), so the shared sphere carries a chirality grading and su(2), with colour structurally")
-print("absent: the symmetry profile of a colourless chiral doublet.")
+print("absent -- colourless by construction, with a chirality that is the sphere's own and not the")
+print("physical one.")
 print("NOT CLAIMED: that a doublet lives there -- that is an index question, and the untwisted Dirac")
 print("operator has no zero modes on the round S^4. Not that this su(2) is weak isospin. Not that the")
 print("four-sphere is a spacetime.")

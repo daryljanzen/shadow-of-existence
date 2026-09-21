@@ -248,7 +248,8 @@ check('①ᵇ and the spinor curvature built from Omega_mu equals (1/2) R^{ab} S
       'connection is the Levi-Civita one carried onto spinors and not something else', _agree)
 _blkdiag = all(Fs[m][n].extract(IDX[+1], IDX[-1]) == Z2
                and Fs[m][n].extract(IDX[-1], IDX[+1]) == Z2 for m in range(4) for n in range(4))
-check('①ᶜ the curvature is block diagonal in gamma^5, so the two blocks are genuinely two '
+check('①ᶜ the curvature is block diagonal in the sphere\'s own chirality (its intrinsic volume '
+      'element, the X_0 normal\'s -- not the physical R), so the two blocks are genuinely two '
       'independent su(2) bundles and not a projection of one', _blkdiag)
 K, C2 = {}, {}
 for ch in (+1, -1):
@@ -404,7 +405,8 @@ print(f"RESULT -- {len(_fails)} failure(s)")
 print("=" * 90)
 assert not _fails, _fails
 print("  Q1  *** YES -- THE SPHERE SUPPLIES ITS OWN TWIST. ***  Computed in the explicit spinor")
-print("      representation, where the spin connection is block diagonal in gamma^5 and its two")
+print("      representation, where the spin connection is block diagonal in the sphere's own")
+print("      chirality -- the element of its normal X_0, not the physical R -- and its two")
 print("      blocks ARE the su(2) connections with nothing left to normalise: k(S+) = +1 and")
 print("      k(S-) = -1, so c_2 = -1 and +1.  The self-dual half of the round sphere's own spin")
 print("      connection is the unit BPST instanton.  Lichnerowicz is evaded by the geometry.")

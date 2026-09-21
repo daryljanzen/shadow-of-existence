@@ -624,7 +624,14 @@ EST = {
         'b_1 = 0. NOT ESTABLISHED: that the sphere carries no index -- it carries exactly '
         'one, and the geometric twist is a real finding. Not that no other twist could '
         'give a doublet: what is shown is that the bundle THE SPHERE supplies gives a '
-        'singlet. '
+        'singlet. THE JOIN, ANSWERED: P14 poses the gauge content as a question about which bundle '
+        'the operator acts on, listing the substrates spinor bundles among the candidates. For '
+        'the weak su(2), the one the shape suggested -- the sphere s own chiral su(2)_+ -- is '
+        'chiral with respect to the Clifford element of its own normal X_0, which anticommutes '
+        'with the physical chirality R = gamma^5 of the cut s normal r_0; a definite sphere '
+        'chirality is an equal mixture of physical left and right, so su(2)_+ acts on both and '
+        'is not the weak one: that spinor bundle does not supply weak isospin, extending P14 s '
+        'settling of the substrate bundles from colour to the weak su(2) for this candidate. '
 ),
     'PO-36': ('does the Hubble-Eddington radius track the dynamical mass or the baryonic one', 1, 0, 4, None,
         'r4203/r6407: the discrimination is QUANTIFIED -- the two mass choices differ by f_b^(-1/3) = 1.85 in the radiu '
