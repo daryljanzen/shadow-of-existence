@@ -78,7 +78,9 @@ survives -- and a coupled one is not inside a single eigenspace.  *The same move
     that the two routes to propagation this construction has -- native, and inherited by
     continuation -- fail DIFFERENT conjuncts, each for a stated reason.
   * ** NOT that the three families are the colourless triple, or any Standard-Model states. **
-    They are the generations, which `sec:whichthree` has already spoken for.
+    They are the continued WALL three, which `sec:whichthree` settles is the chiral SEATS and
+    NOT the generations' three -- the generations are seated on the deck instead. Being the wall
+    three they carry the colour index, which is why they are not the colourless triple.
   * ** NOT a claim about the R-partner families. **  A space and its R-image always span both
     eigenvalues; PART 0 builds that tautology as a calibration trap so it is not mistaken for a
     finding, and the two ends sit on R-conjugate branches rather than on one locus (W3).
@@ -496,7 +498,9 @@ print("  obstruction is an anticommutation -- the boundary form that would coupl
 print("  anticommutes with R, so no mode space can have both its three and both eigenvalues.")
 print()
 print("  NOT ESTABLISHED: that no propagating sector could ever carry a three -- one does.")
-print("  Not that the families are the colourless triple; they are the generations, already")
-print("  spoken for.  Not any claim resting on a space unioned with its own R-image, which")
+print("  Not that the families are the colourless triple: they are the continued WALL three,")
+print("  the chiral seats, carrying the colour index -- and not the generations either, which")
+print("  sec:whichthree seats on the deck.  Not any claim resting on a space unioned with its own")
+print("  R-image, which")
 print("  PART 0 builds as a trap.  Nothing named, nothing seated, chirality untouched.")
 print("=" * 90)
