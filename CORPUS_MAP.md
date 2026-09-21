@@ -146,6 +146,62 @@ sources: [cowork, chat]
 
 
 
+### Revision r6714 — 2026-09-22 (node 60). **The shared four-sphere twists itself, and its zero mode is a singlet.**
+
+**⌗ WHY THIS LOCUS.** *`r6713` established that both faces are five-dimensional and odd, so neither
+carries a handedness; the two meet at $X_0=0$ on a single $S^4$ --- the substrate's throat and the
+compact face's equator --- which is **even**, so the chirality grading exists there and nowhere
+else in either face. What `r6713` did not establish is that any **state** lives there.*
+
+**⓵ `Q1`: YES --- THE SPHERE SUPPLIES ITS OWN TWIST, AND IT IS THE UNIT INSTANTON.** *Computed in
+the **explicit spinor representation**: $\Omega_\mu=\tfrac12\omega^{ab}_\mu\Sigma_{ab}$ is block
+diagonal in $\gamma^5$, so its two $2\times2$ blocks **are** the $\mathfrak{su}(2)$ connections on
+$S_\pm$ with nothing left to normalise.* **$k(S_+)=+1$, $k(S_-)=-1$, so $c_2=\mp1$** --- *equal and
+opposite as $p_1(S^4)=0$ requires, and the radius drops out, so this is the substrate's
+$\alpha$-sphere and not only the unit one.* ⇒ ***Lichnerowicz is evaded by the geometry rather than
+by an added field.***
+
+> ⛔ **AND THE NORMALISATION IS NOT FREE, WHICH IS WHY IT IS DONE THIS WAY.** *Writing the
+> projection as $A^i=c\,\eta^i_{ab}\omega^{ab}$ and fixing $c$ by a consistency condition returns
+> $|k|=5$ --- a value no orientation or convention can produce from $1$, and one the $p_1$ identity
+> cannot catch because it is **odd** and cancels in the sum. The chiral block has no free constant,
+> and a basis-free self-duality test confirms the two blocks independently of the integral.*
+
+**⓶ `Q2`: THE INDEX IS ONE, TWO INDEPENDENT WAYS.** *Atiyah--Singer from the Chern number
+($\hat A=1$ because $p_1=0$), and Hodge theory from the Betti numbers on the same operator read as
+a complex of forms. **Their agreement is what pins $c_2(S_+)=-1$** rather than leaving it quoted.*
+`W4`: **the kernel is $(1,0)$**, reported apart from its difference.
+
+**⓷ ⛔ `Q3`: NO --- AND NOT BY VACANCY.**
+
+| twisted bundle | $\mathfrak{su}(2)$ content | as forms | zero modes |
+|---|---|---|---|
+| $S_+\otimes S_+$ | $\mathbf1+\mathbf3$ --- **no doublet at all** | $\Lambda^0+\Lambda^+$ | **1** |
+| $S_-\otimes S_+$ | $(\mathbf2,\mathbf2)$ --- **is** a doublet | $\Lambda^1$ | **0**, since $b_1(S^4)=0$ |
+
+> ⇒ ***The chirality that carries the zero mode contains no doublet, and the chirality that is a
+> doublet carries no zero mode. The obstruction is a Betti number.*** *The one zero mode is the
+> **constant function** --- the sphere's own $b_0$ mode.*
+
+**⓸ `Q4`: THE FACTOR SUPPLYING THE TWIST IS THE FACTOR OF WHICH THE ZERO MODE IS A SINGLET.** *The
+bundle-level shape is real --- $S_+=(\mathbf2,\mathbf1)$ is a doublet of one factor and a singlet
+of the other, so one factor does see only one handedness --- **and the state sits in the singlet of
+that same factor**. Twisting by $S_-$ instead is the mirror, not an escape.*
+
+**⛭ TWO BOUNDARIES BELONG WITH IT.** *`W1`: these $\mathfrak{su}(2)$ factors rotate the sphere's
+**tangent** space, so nothing here is an internal symmetry and **nothing is called isospin** --- the
+Kaluza--Klein question is untouched. `W2`: a zero mode on a face with no time in it, in an instanton
+background, is an **index statement about the sphere**, not a state in a spectrum.*
+
+**⛔ W5, PLAINLY.** *A **fourth** place the colourless state is not, and a **fourth** mechanism: the
+unpaired level (`r6698`), the twist (`r6702`), Lichnerowicz (`r6704`), and now $b_1(S^4)=0$.*
+
+**⚠ NOT ESTABLISHED:** *that the sphere carries no index --- it carries exactly one, and the
+geometric twist is a real finding. Not that no other twist could give a doublet: what is shown is
+that the bundle **the sphere** supplies gives a singlet. Nothing about the Lorentzian face's
+colour.*
+`receipts/P14_matter_sector_paper/P14_the_shared_four_sphere_twists_itself_and_its_zero_mode_is_a_singlet.py` --- rc=0, 6 parts, 25 checks.
+
 ### Revision r6710 — 2026-09-21 (node 60). **$\Delta(27)$ acts on the seat index, and the compact face has no loops.**
 
 **⌗ THE QUESTION, AND WHY THE GROUP'S NAME CANNOT ANSWER IT.** *`r6709` identified the
