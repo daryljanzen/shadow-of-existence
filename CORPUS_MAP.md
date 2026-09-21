@@ -146,6 +146,67 @@ sources: [cowork, chat]
 
 
 
+### Revision r6704 — 2026-09-21 (node 60). **The compact face's 4 = 3 + 1 is forced, and the singlet has nothing to carry it.**
+
+**⌗ WHY THE QUESTION MOVED THERE.** *`r6698` and `r6702` closed the colourless state out of the
+Lorentzian face twice, on two discrete mechanisms. The corpus puts continuous curved algebras on
+the **compact face**, so that is where the Standard Model's chirality-plus-pairing would have to
+come from.*
+
+**⓵ `Q1`: THE COMPACT FACE IS $\mathfrak{so}(6)=\mathfrak{su}(4)$.** *`P06` C7 puts
+$\mathfrak{su}(3)$ in $\mathfrak{so}(6)$, realised as the isometry of the Wick-rotated $S^5$.
+$D_3$ and $A_3$ carry twelve roots at rank three and dimension fifteen, and the identification is
+**exhibited rather than named**: the six weights of $\wedge^2\mathbf 4$ fall into three $\pm$
+pairs, which is the $\mathfrak{so}(6)$ vector's own weight shape.*
+
+**⓶ `Q2`: THE EMBEDDING IS FORCED --- AND `W1` BITES.** *$\mathfrak{su}(3)$ has no irreducible of
+dimension two or four, so its only faithful four-dimensional representation is
+$\mathbf 3+\mathbf 1$: **the colourless index is the only thing the algebra allows**.* ⇒ ⛔ ***But
+the corpus carries TWO objects called colour.*** *`P14`'s holonomy group --- the three wall
+monodromies with the hinge three-cycle --- is **finite, of order 81**, built and counted here,
+hence zero-dimensional and **flat** by Ambrose--Singer, acting irreducibly on $\mathbb{C}^3$.
+A compact-face $\mathfrak{su}(3)$ would be an isometry **carrying a curvature**. `P06`'s own
+appendix already records the consequence: the colour structure is "NOT an isometry of either real
+form".*
+
+**⓷ ⛔ `Q3`: BOTH BRANCHES CLOSE, ON TWO FACTS THE CORPUS ALREADY CARRIES.**
+
+| branch | colourless singlet? | content on the face? |
+|---|---|---|
+| **spinorial** (the $\mathbf 4$) | **yes**, $\mathbf 4=\mathbf 3+\mathbf 1$ | **no** --- $S^5$ has $R=n(n-1)=20>0$, so Lichnerowicz forces $\ker D=0$ |
+| **vectorial** (the $\mathbf 6$) | **no** --- $\mathbf 3+\bar{\mathbf 3}$, real, vector-like | yes |
+
+> ⇒ ***THE SINGLET APPEARS IN EXACTLY THE REPRESENTATION THE FACE HAS NOTHING IN.*** *Not a near
+> miss and not an accident of which representation was tried: those are the only two, and each
+> closes for its own reason.*
+
+**⓸ `Q4`: THE HEXAD SITS AT THE WEIGHTS OF $\mathbf 3+\bar{\mathbf 3}$ EXACTLY.** *In the sky
+angle the $A_2$ **roots** are the **zeros** of $2M$ --- the hinge and wall angles $0,60,\dots,300$
+--- and the $\mathbf 3+\bar{\mathbf 3}$ **weights** are the **six Nariai marks**
+$30,90,\dots,330$, set for set, with the triples split by $\operatorname{sign}2M$.* ⛔ *But the
+$30^\circ$ offset is **trigonometry**: zeros and extrema of $\sin 3w$ interleave for any
+three-fold structure whatever, so the placement is **forced** by the $A_2$ structure already
+carried --- it **explains where the six marks sit** and is not new information about
+$\mathfrak{so}(6)$.* ⇒ ***And the decisive part is what is absent***: *what makes the six the
+**vector $\mathbf 6$** rather than "a $\mathbf 3$ and a $\bar{\mathbf 3}$" is the
+**six-dimensional coset** $\mathfrak{so}(6)/(\mathfrak{su}(3)+\mathfrak{u}(1))$ of continuous
+generators mixing the triples --- and the construction offers a **discrete exchange** and a
+**sign** where a phase would be needed.* ⇒ **the weight diagram, not the module --- `P03`'s own
+"resonance and not an identity", and the marks-versus-modes distinction, arriving a third time.**
+
+**⛔ W5, PLAINLY.** *The colourless state does not come from the compact face. **Not because the
+branching is missing** --- it is there and it is forced --- but because the representation
+carrying it has no content, and the one with content carries no singlet. With `r6698`'s bound
+sectors and `r6702`'s native propagating one, **that is three places it is not, on three different
+mechanisms**.*
+
+**⚠ NOT ESTABLISHED:** *that the colourless index is a lepton --- a fourth index beside a triplet
+is a **shape**, this is not Pati--Salam, and nothing is named. Not a doublet: the
+$\mathfrak{so}(4)$ does not commute with this $\mathfrak{su}(3)$, shown two ways. Not that a
+branching label is a state --- `Q3` is precisely that nothing on that face carries it. Not that
+either $\mathfrak{su}(3)$ is wrong: that they are two objects is a fact about the corpus.*
+`receipts/P14_matter_sector_paper/P14_the_compact_faces_four_is_three_plus_one_and_the_singlet_has_nothing_to_carry_it.py` --- rc=0, 6 parts, 24 checks.
+
 ### Revision r6702 — 2026-09-21 (node 60). **The doublet test on `C50`'s member: it has the split, and it has not got the pairing.**
 
 **⌗ THE DEMAND AS `r6701` RESTATES IT.** *Not "does it carry a three" but **does one chirality
