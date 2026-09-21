@@ -2,7 +2,7 @@
 
 WHY (r2154).  P15 l.525 says "The cosmogenesis branch point, BEING the degenerate Nariai horizon, is a
 faithful scale-free transmitter", and prop:transmission argues from the tortoise integral at a DOUBLE
-ROOT (p=2, kappa=0).  But the branch point is r=0 and the Nariai double root is the EQUATORIAL SEAM -- ONE point of the
+ROOT (p=2, kappa=0).  But the branch point is r=0 and the Nariai double root is THE SEAM -- ONE point of the
 substrate, which the bead meets on the way in and again one full lap later.  In the phase
 phi = 2 pi r / (sqrt3 alpha) the three roots sit at phi = +120 deg (r=+alpha/sqrt3), 0 (r=0) and
 -240 deg (r=-2alpha/sqrt3): +120 and -240 differ by EXACTLY 360, so the "two seams" are the same
