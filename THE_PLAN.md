@@ -203,7 +203,7 @@ corpus in `PO13_WORKING_STATE.md`.*
 
 <!-- GRAIN-CURRENCY:BEGIN -->
 
-## ⌗⌗⌗ CURRENCY — **GENERATED** by `scripts/regen_grain_currency.py`, baseline r2417, register front r6698
+## ⌗⌗⌗ CURRENCY — **GENERATED** by `scripts/regen_grain_currency.py`, baseline r2417, register front r6721
 
 > ⚠ **THE BODY BELOW STOPS AT THE BASELINE. This head is the list of what has moved since, and it is REGENERATED rather than written** — *because these documents go stale every ~20 revisions by construction, and paying that by hand is a debt that recurs rather than a defect that closes.*
 >
@@ -379,10 +379,11 @@ progenitor's own vacuum it returns $3\times10^{-103}$ against an observed $2\tim
 **so the primordial statistics are classical and non-vacuum for the source that actually supplies them**, which
 P15 had established only for the substrate's vacuum — the one vacuum the inheritance story was not claiming.*
 
-**⇒ AND ONE POSITIVE THING THE ARC LEAVES: the progenitor's composition is bracketed on both sides** —
-$2.6\times10^{-6}\le\rho\le1.1\times10^{-3}$ — *the child's spectrum from above, the parent's own
-nucleosynthesis from below. **Two observables on opposite legs of one excursion, neither available to the other
-until they were compared.***
+**⇒ AND ONE POSITIVE THING THE ARC LEAVES: the progenitor's composition is derived, not bracketed** —
+$\rho\simeq5.4\times10^{-2}$, from the single bead and the crossing plasma (P16 §interior), meeting the parent's own
+nucleosynthesis floor $\rho\gtrsim3.8\times10^{-6}$ by four orders. *The upper bound from the child's spectrum rested on a
+leaked free oscillation the construction does not supply and on identifying the interior's harmonic index with the
+observed multipole, and P16 carries it as no bound on the determination.*
 
 **⚠⚠ AND THE ARC'S METHODOLOGICAL YIELD, which is the reason this block exists.** *Four live open problems and
 cluster J's tenth germ **had never been registered at all**, and were found by asking a *paper's* frontier list

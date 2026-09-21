@@ -837,14 +837,12 @@ EST = {
 #   ~2000 revisions stale, still naming r4549 while the problem space moved repeatedly.  ** A
 #   "last actual move" line that is two thousand revisions behind reports the opposite of what it
 #   is for. **  Set to the last find that actually moved the picture.
-SINCE = 3
-LASTFIND = ("r6605: **the lift fibre occupies ONE (T,R) character where the wall sector occupies "
-            "FOUR, and the seat search's picture of where the colourless triple could sit was "
-            "wrong.** The three lift modes lie in a single R-eigenspace carrying {t,t,t}, so the "
-            "{+1,-1} pair that matches the left-handed doublet is not there -- and the shortfall "
-            "is two independent collapses: R alone caps the reachable characters at two however T "
-            "is assigned, and T's scalar-ness removes the second. The wall REACHES the "
-            "right-handed structure and gets one pair wrong; the lift does not reach it.")
+SINCE = 2
+LASTFIND = ("r6713: **the two faces are both five-dimensional and share one four-sphere** -- the "
+            "throat of dS_5 and the equator of S^5, fixed by the Wick rotation -- which is the one "
+            "place in either face where chirality exists, and its so(5) carries su(2) and cannot "
+            "carry colour. With r6709-r6711 it moves the picture: P14's SU(3) part is the finite "
+            "Delta(27), acting on the seat index, with SU(3) only its smallest connected home.")
 
 # ** CALIBRATION (r2848) -- estimates measured against actuals rather than felt. **
 # *** Six steps closed with a number attached; EVERY ONE took one turn; I had predicted
