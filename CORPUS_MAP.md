@@ -146,6 +146,12 @@ sources: [cowork, chat]
 
 
 
+### Revision r6713+66.1 — 2026-09-21 (node 66). **The propagating Dirac sector is built on the chiral member, and the beginning and the reassignment are two loci at two levels.**
+**⌗ THE DIRAC GATE.** *P5, P13 (twice), P17 and P18 said the propagating Dirac sector is built on the unpolarised member "and not yet on the chiral one". P11 builds the unpolarised Gowdy--de Sitter member as the first chiral member of the reachable sector and puts a massless Dirac field on it (`dynamics_paper` L218, L247); P7's frontier states the chiral geometry built; P14 computes that on it the geometry permits the chirality-asymmetric action and does not select it. **The five sites now state that**; P13's compact-face (gauge-acted) fermion sector, a different object, is untouched. The map's P7 card corrected to match.*
+**⌗ WHERE THE UNIVERSE BEGINS, AND WHERE THE REASSIGNMENT ACTS.** *Read at P7 `rem:perspectival-singularity`, `thm:cosmogenesis` and r2123/r2291: the beginning is the branch point $r=0$; the causal reassignment and the physical seeding act on the collapse horizon, whose degenerate member is the Nariai horizon at the seam — two loci at two levels. **So `THE_PLAN` A2.11's question of which landmark begins the observable cosmology is answered: $r=0$**, and the 7.06 Gyr figure is the expanding leg's front-seam passage, its exit from the lap. The map's naming rule no longer places the reassignment at the branch point, and its P1 card no longer calls the completion of collapse the beginning.*
+**⌗ WHERE $\hbar$ ENTERS.** *P17 said "at the seam" — by the naming rule the Nariai double root, where $\kappa=0$ and there is no thermal state; the map's P17 card said "at the branch point". **Both now read the de Sitter cosmological horizon**, $\kappa=1/\alpha$ (P10), and the map's one-constant clause carries the geometric-ledger scope P17 and P18 state. `THE_PLAN` A5.1/A5.2 likewise.*
+**⌗ Node 66 registered** in `corpus/node_roster.txt`, band `L-6600`–`L-6699`; this line's revisions are labelled `r<main base>+66.<k>`.
+
 ### Revision r6710 — 2026-09-21 (node 60). **$\Delta(27)$ acts on the seat index, and the compact face has no loops.**
 
 **⌗ THE QUESTION, AND WHY THE GROUP'S NAME CANNOT ANSWER IT.** *`r6709` identified the

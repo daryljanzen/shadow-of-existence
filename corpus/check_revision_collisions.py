@@ -246,6 +246,9 @@ _PARITY_BY_NODE = {'54': 0, '60': 0,          # EVEN half
                                             # not assumed: 49 of 64's r6xxx revisions are odd
                                             # and 0 are even, against 60's even band above.
                    'cc54': 0,                 # compute node, works under 54's band
+                   '66': None,                # holds NO half: 66 labels its revisions
+                                            # r<main base>+66.<k>, never a bare rNNNN,
+                                            # so it cannot enter either half (r6713+66.1)
                    'ci': None}                # the runner is not a line and holds no half
 _NODE = _os.environ.get('NODE')
 if _NODE is None:

@@ -3103,12 +3103,11 @@ The thin high-value edge — contained work inside established machinery, action
     duration attached to each.
     **⚠ AND IT SURFACED A DEFECT IN THIS FILE, which is what a numbers pass is for.** Every figure scales as
     $1/H_0$, because $\Lambda$ is inferred as $3H_0^2\Omega_\Lambda/c^2$ — see the three corrected sites above.
-    **⚠ HELD, not claimed:** *which* landmark begins the **observable** cosmology is not settled here. P7
-    separates the geometric closure through $r=0$ from the physical **seeding** of the layers at the
-    finite-curvature seam, and states that no finite-cosmic-time layer carries back to $r=0$. The receipt
-    computes intervals along the law and does **not** adjudicate that — **so the 7.06 Gyr figure is the phase
-    at which the law reaches $\rho$, not a claim that we passed through the seam then.** *That adjudication is
-    the placement's precondition, and it is the next step on this item.*
+    **⚑ WHICH LANDMARK BEGINS THE OBSERVABLE COSMOLOGY: the branch point $r=0$.** P7 holds two loci at two
+    levels (`rem:perspectival-singularity`): the geometric closure through $r=0$, where the expanding leg
+    begins, and the physical seeding of the layers by the causal reassignment acting on the collapse horizon,
+    whose degenerate member is the Nariai horizon at the seam. **The 7.06 Gyr figure is the expanding leg's
+    passage through the front seam** --- its exit from the lap and the onset of acceleration --- not a seeding event.
 
     **The job:** compute the **finite interval lengths, in SI units, between every landmark on the lap** —
     *"how long did the entire lap take to occur?"* and the same for each leg.
@@ -3577,7 +3576,7 @@ The tests that decide whether the maximal-symmetry reading is sound — each can
   stated as a target, not a result]**.*
   **THE CONSTANT SIDE — zero, and r1765 grounded it as consequence ⑤ of the one-scale mechanism.** *p0 way 3: $c$
   is the null-ruling slope, $G$ appears only as $GM/c^{2}$ with the mass **fixed to Nariai by $\Lambda$**, $\hbar$
-  enters only at the branch point **scaled by $\Lambda$ alone**, $k_B$ converts. **"The gravitational–cosmological–quantum
+  enters only at the de Sitter cosmological horizon **scaled by $\Lambda$ alone**, $k_B$ converts. **"The gravitational–cosmological–quantum
   sector spends no free dimensionless constant."***
   **THE COSMOLOGICAL SIDE — one, and it is named and measured.** *P15: the acoustic scale is met at the directly
   measured $H_0$ **"by a single inherited datum, $\rho_r/\rho_m\approx2$ — a one-parameter accommodation, the
@@ -3602,7 +3601,7 @@ The tests that decide whether the maximal-symmetry reading is sound — each can
   *It is **not two instances**. `CONSTANT_LEDGER_receipt` carries a **closed table of five**, each with where it
   enters and its status:* **Λ** *the sole dimensionful scale ($\alpha=\sqrt{3/\Lambda}$ derived)* · **c** *the
   null-ruling slope, **gauge** (time↔length)* · **G** *only as $GM/c^{2}$, **gauge** (mass↔length), $M$
-  perspectival / Nariai-locked* · **ħ** *the seam's Hartle–Hawking state **scaled by $\Lambda$ alone**, the one
+  perspectival / Nariai-locked* · **ħ** *the de Sitter cosmological horizon's Hartle–Hawking state **scaled by $\Lambda$ alone**, the one
   quantum freedom **closed by the horizon, no free parameter*** · **k_B** *temperature relations only,
   $T=\hbar\kappa/2\pi k_B$, **the fourth gauge, added at T1***. *Plus the moduli $M,a,\mathrm{NUT},Q$ as
   **not fundamental constants** — perspectival cut-labels, or matter as a bend.*

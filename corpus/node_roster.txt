@@ -25,4 +25,5 @@
 59    5900  5999   registered r6401 from check_claims' roster; no L- rows of its own on record
 60    6000  6099   registered r6401 from check_claims' roster; field bakes, the ontology index
 64    6400  6499   opened r6401 -- this line
+66    6600  6699   opened r6713+66.1 -- the chat seat on line/66; corpus defect sweep, merged into main by 64
 cc54   800   899   an alias of 57; the same node under two names, which is itself the hazard

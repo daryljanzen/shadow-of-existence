@@ -39,6 +39,15 @@ WINDOW = 900          # characters after a hit in which a correction still count
 # --- THE REGISTRY -------------------------------------------------------------------------
 # (label, phrase pattern, marker pattern, when and where it was withdrawn)
 REGISTRY = [
+    # r6713+66.1.  THE PROPAGATING DIRAC SECTOR "NOT YET ON THE CHIRAL ONE".  P11 builds the
+    # unpolarised Gowdy--de Sitter member as the first chiral member of the reachable sector and
+    # puts a massless Dirac field on it; P7 states the chiral geometry built; P14 computes that on
+    # it the geometry permits the chirality-asymmetric action and does not select it.  ** The
+    # unpolarised member IS the chiral member. **
+    ("dirac-sector-not-yet-on-the-chiral-member",
+     r'not yet on the chiral (?:one|member)',
+     r'(?:r6713\+66|withdrawn|first chiral member)',
+     "withdrawn r6713+66.1; the unpolarised member is the first chiral member (P11)"),
     # r6477.  "THE PDFS ARE SERVED FROM JSDELIVR" -- withdrawn at r6475, the site having
     # moved to serving its own from the repository (`CDN = RAW_GH`, and the body had said
     # `NO THIRD-PARTY CDN` since the migration).  It survived in a generator header AND on
@@ -221,6 +230,10 @@ HISTORICAL = {
 # a pattern that is broken.  Each entry therefore carries a KNOWN-POSITIVE string, taken verbatim
 # from the text the withdrawal removed, and this gate fails if any pattern stops matching its own.
 POSITIVES = {
+    "dirac-sector-not-yet-on-the-chiral-member": [
+        "the propagating Dirac sector is built on the unpolarised member and not yet on the chiral one",
+        "and not yet on the chiral member the projection would act on",
+    ],
     # the two real pre-r6475 forms: the generator header and the reader-facing line.
     "the-papers-are-served-from-a-cdn": [
         "The PDFs are served from jsDelivr, a CDN over the",
