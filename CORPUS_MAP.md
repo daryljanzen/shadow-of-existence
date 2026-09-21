@@ -146,6 +146,64 @@ sources: [cowork, chat]
 
 
 
+### Revision r6710 — 2026-09-21 (node 60). **$\Delta(27)$ acts on the seat index, and the compact face has no loops.**
+
+**⌗ THE QUESTION, AND WHY THE GROUP'S NAME CANNOT ANSWER IT.** *`r6709` identified the
+determinant-one part of `P14`'s order-81 wall holonomy as $\Delta(27)$, best known in the
+literature as a **flavour** group. Whether it is colour or flavour **here** is decided by which
+index it acts on, not by that label --- and `PART 5` shows why: the same abstract group built from
+generators on an unrelated index returns **every** invariant identical (order, exponent, centre,
+class sizes), so none of them carries information about the index.*
+
+**⓵ `Q1`: IT ACTS ON THE SEAT INDEX, AND ON THE GENERATION INDEX NOT AT ALL.** *The holonomy is
+built from **wall** monodromies, "diagonal in the vantage basis", so its $\mathbb{C}^3$ is the
+three signed areal radii --- one per hinge, the **chiral seats**, where this construction puts the
+colour grading. And the two indices are functions of **independent variables**: the seat datum
+$2M=(2/3\sqrt3)\sin 3w$ carries no bead phase; the deck's sector period $2\pi\alpha/3$ carries no
+sky angle and no mass; and the deck leaves $\sinh^2$ invariant, hence $r$, hence every hinge.*
+⇒ ***A group moving one fixes the other identically.***
+
+**⓶ `Q2`: $\sigma$ MEETS IT ON THE SAME SEATS WITHOUT ENTERING IT.** *$\sigma$ is an involution
+where $\Delta(27)$ has **exponent three**, so the group contains no element of order two at all.
+Read on the sky angle, $\sigma$ carries each hinge to a **wall** --- $0\to60$, $120\to300$,
+$240\to180$ --- and since each wall is antipodal to its own hinge, that is a permutation of the
+**seat** index: the transposition fixing one seat.* ⇒ ***Same index; $\sigma$ normalises
+$\Delta(27)$; together order 54 --- an extension at index two, not a coincidence and not an
+identity.***
+
+**⓷ ⛔ `Q3`: NO, AND THE OBSTRUCTION IS ONE LINE.**
+
+> *A holonomy is a representation of the **fundamental group** of the space it is a holonomy on,
+> and the round $S^5$ is **simply connected**. So every flat bundle over the compact face has
+> holonomy of order **one**, against the built group's 27 --- $\Delta(27)$ cannot arise there at
+> all.* **A second, independent reason**: *a monodromy group needs a **branch locus**, and a
+> homogeneous face has none, where the Lorentzian face carries the invariant triple of zeros of
+> $2M$.*
+
+⇒ ***The two structures this construction calls colour are not one object twice described, and the
+reason is not that two embeddings happen to differ: one is a $\pi_1$ representation, and the face
+carrying the other has no loops to have holonomy around.*** **`W2` honoured: the collision is not
+resolved by choosing a word --- it is said which is which and why they cannot be identified.**
+
+**⓸ `Q4`: THE CORPUS'S TWO USAGES NAME DISJOINT LISTS.**
+
+| phrase | what it refers to |
+|---|---|
+| **flavour skeleton** | three chiral generations, the family symmetry, the chirality --- with the generations seated on the turnaround's cyclic three |
+| **discrete content of colour** | the module is the branching not a bundle; the three wall monodromies with the hinge 3-cycle; second quantisation returning baryon 1, diquark 0, meson 1 |
+
+*And `P14`'s own appendix bound enumerates **six** deliverables in one breath --- the generation
+count, the chirality, the within-state $S_3$, the deck $\mathbb{Z}_3$, the discrete content of
+colour, the two-bit labelling --- not one said six ways.* ⇒ **The corpus does not equivocate.
+$\Delta(27)$ is built from wall monodromies, so it sits in the COLOUR cluster by construction.**
+
+**⚠ NOT ESTABLISHED:** *that $\Delta(27)$ is the Standard Model's colour $SU(3)$ or any gauge
+group --- it is a finite **flat** holonomy giving selection rules and no force, as `P14` states.
+Not that the compact face's $\mathfrak{su}(3)$ is defective. Nothing about occupation. Not that
+the two threes could never be related by something unbuilt: what is shown is that **nothing in the
+corpus relates them now**.*
+`receipts/P14_matter_sector_paper/P14_the_wall_holonomy_acts_on_the_seat_index_and_the_compact_face_has_no_loops.py` --- rc=0, 6 parts, 17 checks.
+
 ### Revision r6704 — 2026-09-21 (node 60). **The compact face's 4 = 3 + 1 is forced, and the singlet has nothing to carry it.**
 
 **⌗ WHY THE QUESTION MOVED THERE.** *`r6698` and `r6702` closed the colourless state out of the
