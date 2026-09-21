@@ -40,23 +40,25 @@ Lambda^1 = (2,2) is a doublet of each su(2) factor and is empty only because b_1
   has the split but not the pairing, blocked by the twist.
 
 --------------------------------------------------------------------------------
-(3) AND P14 ALREADY DRAWS THIS BOUNDARY.
+(3) AND THIS BEARS ON THE QUESTION P14'S BODY POSES.
 
-  Its masthead: NOT DELIVERED are "the GAUGE REPRESENTATIONS (colour, weak isospin, hypercharge --
-  excluded from the isometry; 'they remain the ordinary route, a bundle imposed by hand')".
+  P14 frames the undelivered gauge content as "a question about the bundle: what does the operator
+  act on, and what fixes it?" -- imposed on the ordinary route, supplied by the substrate on a
+  geometric one -- and it settles the substrate's own candidate bundles for COLOUR by a real-form
+  obstruction.  The doublet PO-45 asks for is a weak-isospin representation, so the same question
+  applies to the weak su(2).
 
-  The doublet PO-45 asks for is a weak-isospin representation.  What this line has done since
-  r6686 is supply the MECHANISM behind a boundary P14 states: discrete operations trade chirality
-  against pairing (r6698, r6702); continuous pairing needs curvature, and the curved face is simply
-  connected (r6704); the shared S^4 has the symmetry profile and no first cohomology (r6714); and
-  no compact Riemannian section of the core family has any (here).
+  What this line has done since r6686 is work that question for the weak doublet: discrete
+  operations trade chirality against pairing (r6698, r6702); continuous pairing needs curvature, and
+  the curved face is simply connected (r6704); the shared S^4 has the symmetry profile and no first
+  cohomology (r6714); and no compact Riemannian section of the core family has any (here).
 
 --------------------------------------------------------------------------------
 ⚠ WHAT IS NOT CLAIMED.
 
-  ** NOT that weak isospin is absent from physics or from CR. **  P14's statement is that it
-  enters by the ordinary route -- a bundle -- and that is WHERE it is fixed.  What this receipt
-  adds is why the geometry does not supply it, not that nothing does.
+  ** NOT that weak isospin is absent from physics or from CR. **  P14 poses which bundle carries
+  it; what this receipt adds is that no compact Riemannian section of the core family carries the
+  first cohomology a doublet of this kind would need -- not that no bundle does.
 
   ** NOT that loops would suffice. **  The T^3-Gowdy member has them and fails by the twist.
 
@@ -91,7 +93,7 @@ print("ESTABLISHED: the horizon cubic's three-sheeted branched cover is genus ze
 print("are the punctured BASE's, in the space of members, not in any member's spacetime. And every")
 print("compact Riemannian four-dimensional section of the Schwarzschild-de Sitter family -- S^4 and")
 print("S^2 x S^2 -- has b_1 = 0; the one locus with loops the corpus cites is the T^3-Gowdy class,")
-print("where C50's member fails by the twist. This supplies the mechanism behind a boundary P14 already")
-print("draws: weak isospin enters by the ordinary route, a bundle.")
+print("where C50's member fails by the twist. This works, for the weak doublet, the question P14's body")
+print("poses of the gauge content: which bundle the operator acts on.")
 print("NOT CLAIMED: that weak isospin is absent -- P14 says WHERE it is fixed. Not that loops would")
 print("suffice. Nothing about non-compact or Lorentzian sections.")
