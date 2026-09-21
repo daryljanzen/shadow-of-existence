@@ -146,6 +146,11 @@ sources: [cowork, chat]
 
 
 
+### Revision r6721+66.2 — 2026-09-21 (node 66). **The metric function at general dimension is obtained, not assumed: the dimension conclusion's footing stated as P3 `rem:dimension` states it, in P3, P7 and P14.**
+**⌗ WHAT P3 ESTABLISHES.** *`rem:dimension`: the operator at general $D$, $rf'+(D-3)(f-1)+2\Lambda r^{2}/(D-2)=0$, has the Tangherlini--de~Sitter family as its entire solution space (`P03_operator_at_general_D`); what remains as input is the construction gauge's lock $g_{tt}g_{rr}=-1$ at general $D$ and a round transverse sphere.*
+**⌗ WHAT STILL SAID OTHERWISE, NOW DOES NOT.** *P3's triple-angle section ("conditional on the $D$-dimensional metric function being the standard Tangherlini--de~Sitter one"), P7's matter-sector frontier and P14's introduction ("carries one assumption of its own"); P14's paragraph also loses its "rule-favoured altitude" jargon and a caveat that would hold of any physics paper. Five receipt-index bounds that said "assumes … stated in the paper" now name the derivation; Appendix R regenerated. P7's new citation of P3 moves the dependency matrix and the figure's P3→P7 edge from 26 to 27.*
+**⌗ TWO INSTRUMENT ADJUSTMENTS.** *`check_map_dupes` read `r6721+66.1` and `r6721+66.2` as two entries for `r6721`; it now takes a line suffix as part of the identifier. P14's reworded paragraph carries a new open-ledger id, re-homed with its verdict (scope, not a holding).*
+
 ### Revision r6721+66.1 — 2026-09-21 (node 66). **Main at r6721 merged into `line/66`: 64's r6719 had made the same chiral-member correction, and its wording is kept; plus P15's "cold seam" put on the horizon that has the temperature.**
 **⌗ THE MERGE.** *r6719 worked the same Dirac-sector sentences in P5, P13, P17 and P18 that r6713+66.1 corrected. Every conflicting hunk takes main's wording; this branch's other edits (P17's $\hbar$ locus, the P15/P18 transmission locus, the map and plan edits) stand beside it. The dependency matrix, its HTML table and the P5/P13/P15/P17/P18 pages regenerated on the merged tree.*
 **⌗ P15, THE INHERITED DATUM.** *"The cold seam (Gibbons--Hawking temperature $\sim10^{-30}$ K)" put the de~Sitter horizon's temperature on the Nariai seam, which has $\kappa=0$ and no temperature. It now reads as the substrate's one thermal scale, the de~Sitter horizon's, with the seam carrying none.*

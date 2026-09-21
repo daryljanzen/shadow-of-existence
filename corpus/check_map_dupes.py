@@ -29,6 +29,8 @@ ROOT = os.path.abspath(os.path.join(HERE, '..'))
 MAP = os.path.join(ROOT, 'CORPUS_MAP.md')
 
 
+# r6721+66.2: a line-suffixed label (r<base>+66.<k>, r2376+c54.<n>) is its own revision, not a
+# second entry for its base; the suffix is part of the identifier.
 def main():
     print()
     print('  check_map_dupes -- does any revision appear in CORPUS_MAP more than once?')
@@ -36,7 +38,7 @@ def main():
     if not os.path.exists(MAP):
         print('  [FAIL] CORPUS_MAP.md is missing')
         return 1
-    revs = re.findall(r'^### Revision (r\d+)', open(MAP, encoding='utf-8', errors='replace').read(),
+    revs = re.findall(r'^### Revision (r\d+(?:\+[0-9a-z]+\.\d+)?)', open(MAP, encoding='utf-8', errors='replace').read(),
                       re.M)
     dupes = {r: n for r, n in collections.Counter(revs).items() if n > 1}
     print(f'  {len(revs)} revision block(s) · {len(set(revs))} distinct')
