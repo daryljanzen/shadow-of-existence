@@ -146,6 +146,60 @@ sources: [cowork, chat]
 
 
 
+### Revision r6702 — 2026-09-21 (node 60). **The doublet test on `C50`'s member: it has the split, and it has not got the pairing.**
+
+**⌗ THE DEMAND AS `r6701` RESTATES IT.** *Not "does it carry a three" but **does one chirality
+carry two $T$-values** --- a doublet plus a singlet, which is not a three-fold symmetric object.
+`C50`'s unpolarised member was set aside at `r6693` for lacking a three the triple never needed.*
+
+**⓵ `Q1`: $T$ IS NOT CARRIED BY THIS MEMBER.** *`P14`'s $T$ acts on the twelve's **horn factor**,
+and a Gowdy--de Sitter member has no embedding $X_0$, no vantage and no horn pair. What it could
+carry instead is the spinorial time reflection --- and **every reflection of an ODD number of
+directions anticommutes with $\gamma^{5}$**, enumerated over all sixteen sign patterns with each
+implementer verified against its own conjugation rule. So a time reflection **exchanges** the
+chirality blocks rather than grading one. **And the background refuses it independently**:
+$\psi_t=\sqrt{\Lambda/3}\,e^{\psi}$ admits no $\Lambda>0$ at which $\psi_t=-\psi_t$, so the
+obstruction is the cosmological constant itself.* ⇒ ***`Q2`: there is no
+$(T,\text{chirality})$ character table at all --- the two labels do not commute. The lift
+collapsed to ONE of four characters; this member fails earlier, on simultaneous
+diagonalisability.***
+
+**⓶ AND IT HAS THE SPLIT, WHICH NOTHING ELSE IN THIS LINE SUPPLIES.** *The 4D operator is
+massless, so $\gamma^{5}$ decouples it at every momentum; $\Sigma=\gamma^{0}\gamma^{1}$ commutes
+with a block **exactly when the transverse momenta vanish** --- the commutator is carried by $m_x$
+and $m_y$ alone, measured. There the block is $-E+(k\mp b)\sigma_x$, **the commutant inside it is
+spanned by $1$ and $\Sigma$ and nothing else**, and **both $\Sigma$-values are occupied**: the two
+dispersion branches.*
+
+**⓷ ⛔ WHAT IT HAS NOT GOT IS THE PAIRING, AND THAT IS `Q3`.** *At one energy the two sit at
+**different momenta**, $k=E+b$ and $k=b-E$, so a pairing is not a matrix --- it is a matrix and a
+reflection. Of the sixteen, exactly four preserve chirality and flip $\Sigma$: $tx,ty,zx,zy$.
+**Only $zx$ and $zy$ also preserve the energy** ($tx,ty$ reflect $t$, so they send $E\to-E$ ---
+the frequency wing, which this corpus assigns to conjugation and not to isospin). **And $zx$ and
+$zy$ both send $c\mapsto-c$.***
+
+> ⇒ ***THE ONLY OPERATIONS THAT COULD PAIR TWO STATES OF ONE CHIRALITY AT ONE ENERGY ARE EXACTLY
+> THE ONES THAT FLIP THE TWIST --- AND THE TWIST IS WHAT MAKES THE MEMBER CHIRAL.*** *`P11` states
+> $c=0$ is the polarised, **achiral** cut. The member can be chiral or doublet-paired, and not
+> both: its chirality and its pairing are carried by one field.*
+
+**CALIBRATED BEFORE IT IS USED, ON BOTH LEGS.** *The doublet test is written once and run first on
+a known **YES** (the wall's four characters), a known **NO** (`r6696`'s both-$R$-one-$T$ trap) and
+a second **NO** where the split is present but the pairing leaves the block --- which is the leg
+this member turns on. An instrument that only ever says no is not measuring.*
+
+**⛔ W5, PLAINLY.** *`r6698` put the colourless triple out of every **bound** sector, by the
+pairing's single unpaired level. This puts it out of the construction's one **native propagating**
+sector, by the twist. **Where it is not is now stated twice over, and the two mechanisms are
+different.***
+
+**⚠ NOT ESTABLISHED:** *that $\Sigma$ is weak isospin or that the split is a doublet under some
+other reading --- two values in one chirality is the **shape**, and it is the pairing that fails;
+nothing is named. Not that no propagating sector could carry a doublet: **this** one cannot, for a
+stated reason. Nothing about the $c=0$ member, where the pairing exists and the chirality does not.
+Nothing at transverse momenta, where $\Sigma$ stops commuting and the grading itself is gone.*
+`receipts/P14_matter_sector_paper/P14_the_doublet_pairing_on_c50s_member_is_obstructed_by_lambda_and_by_the_twist.py` --- rc=0, 6 parts, 24 checks.
+
 ### Revision r6698 — 2026-09-20 (node 60). **A propagating mode space DOES carry a three — and the conjunction is obstructed by an anticommutation.**
 
 **⌗ THE SURVEY'S PREMISE DOES NOT HOLD, AND THAT IS THE FIRST FINDING.** *`C50`'s unpolarised member
