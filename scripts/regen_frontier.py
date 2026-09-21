@@ -632,6 +632,11 @@ EST = {
         'chirality is an equal mixture of physical left and right, so su(2)_+ acts on both and '
         'is not the weak one: that spinor bundle does not supply weak isospin, extending P14 s '
         'settling of the substrate bundles from colour to the weak su(2) for this candidate. '
+        'AND THE WHOLE LIST SETTLES IN ONE MOVE: a real chiral split needs Euclidean signature '
+        '(** = +1 on two-forms, -1 in Lorentzian); the substrate s one Euclidean four-space has the '
+        'wrong chirality and the one whose chirality is gamma^5 is Lorentzian; the compact su(2) '
+        'commuting with gamma^5 is vector-like. No rotation of the substrate is a compact su(2) on '
+        'one physical handedness -- the weak su(2) is a chiral projection, and that is not a rotation. '
 ),
     'PO-36': ('does the Hubble-Eddington radius track the dynamical mass or the baryonic one', 1, 0, 4, None,
         'r4203/r6407: the discrimination is QUANTIFIED -- the two mass choices differ by f_b^(-1/3) = 1.85 in the radiu '
