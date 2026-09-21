@@ -146,6 +146,57 @@ sources: [cowork, chat]
 
 
 
+### Revision r6698 — 2026-09-20 (node 60). **A propagating mode space DOES carry a three — and the conjunction is obstructed by an anticommutation.**
+
+**⌗ THE SURVEY'S PREMISE DOES NOT HOLD, AND THAT IS THE FIRST FINDING.** *`C50`'s unpolarised member
+is **not** the only propagating sector this construction builds. `sec:cosmogenesis` builds a second,
+with a receipt of its own: under the signature flip the **three bound wall-modes continue past the
+horizon into three families propagating in cosmic time**.* ⇒ ***A propagating mode space carrying a
+three --- and a three of MODES, not of marks.***
+
+**⓵ AND IT FAILS THE CONJUNCTION FOR A STATED REASON: IT INHERITED BOTH HALVES.** *The continuation
+is a term-for-term bijection **commuting with $\gamma^{5}$** --- computed here on the corpus's own
+undercritical model, where $W$ is real between the horizons and imaginary past one, and both branches
+stay two and stay opposite.* ⇒ ***The map that carries the three across carries the single
+$R$-eigenvalue with it. Propagation acquired after binding transports what the binding settled; it
+does not re-decide it.***
+
+**⓶ ⛭ AND THE SETTLING IS ONE EVENT RATHER THAN TWO --- WHICH IS WHAT `Q3` ASKS FOR.** *The wall
+operator is first order and its two branches are the two $R$-eigenspaces. Write it $A=\dd/\dd\ell+W$:
+then $A^{\dagger}$ carries **every** free eigenfunction to an eigenfunction of the wall problem **at
+the same energy** (residual exactly zero, symbolically), and those states are **reflectionless** ---
+$|T|^{2}=1$ with no reflected component at all.* **A wall that binds one mode transmits everything
+else perfectly.** ⇒ ***The pairing fails at $E=0$ and nowhere else, and $E=0$ is the bound level ---
+so localisation, which a three requires, and the collapse to one $R$-eigenvalue are the SAME unpaired
+level.***
+
+**⓷ `Q2`: THE DECK INDEXES NO PROPAGATING MODE SPACE, ON EITHER READING.** *As a **phase** it is a
+translation by an **imaginary** amount: on $e^{-i\omega\tilde\tau}$ it multiplies by
+$e^{2\pi\omega\alpha/3}$, a positive real for real $\omega$, generating an **infinite** group --- its
+order is three exactly on $\omega=in/\alpha$, the **Matsubara** tower, which is periodicity in
+imaginary time. As a **permutation** it needs the three sectors decoupled, and that is `sec:count`'s
+$\lambda<\tfrac34$ rejection read as a condition on the hinges.* ⇒ ***One inequality decides both
+conjuncts, in opposite senses.***
+
+**⛔ W4, PLAINLY --- AND THE OBSTRUCTION IS AN ANTICOMMUTATION.** *The first-order operator's boundary
+form, the only object that could couple the sectors, is carried by the off-diagonal Clifford element
+and **anticommutes with $R=\gamma^{5}$**, so its matrix elements between states of one $R$-eigenvalue
+vanish identically.* ⇒ ***A mode space inside one eigenspace has nothing with which to couple its
+sectors, and a coupled one is not inside one eigenspace. `PO-45`'s conjunction is obstructed by the
+binding itself.***
+
+**CALIBRATED ON THREE TRAPS**, *the third the one this object invites: the wall's four-character
+occupation is reproduced first, the naive index route fails it four-to-one, the both-$R$-one-$T$
+structure shows "spans both" is the first conjunct only --- and **a space taken together with its own
+$R$-partner spans both by construction**, a tautology built here so the corpus's explicit antimatter
+families are not mistaken for a finding.*
+
+**⚠ NOT ESTABLISHED:** *that no propagating sector could ever carry a three --- **one does**; what is
+shown is that the two routes to propagation, **native** and **inherited**, fail different conjuncts.
+Not that the families are the colourless triple: they are the generations, already spoken for.
+Nothing named, nothing seated, chirality and `L8`'s verdict untouched.*
+`receipts/P14_matter_sector_paper/P14_the_propagating_three_is_inherited_and_the_pairing_fails_only_at_the_bound_energy.py` --- rc=0, 8 parts, 22 checks.
+
 ### Revision r6696 — 2026-09-20 (node 60). **The hexad read hinge-relatively: the shape is real, and the conjunction is still not met — for a THIRD reason, and for a larger one.**
 
 **⌗ THE STRUCTURE IS REAL AND IS EXACTLY AS DESCRIBED.** *Verified rather than assumed: the six
