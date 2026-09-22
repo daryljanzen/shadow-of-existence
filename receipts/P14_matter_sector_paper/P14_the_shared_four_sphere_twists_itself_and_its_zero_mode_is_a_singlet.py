@@ -2,9 +2,14 @@
 P14_the_shared_four_sphere_twists_itself_and_its_zero_mode_is_a_singlet
 ======================================================================
 
-Object under test -- the S^4 the two faces share at X_0 = 0, which `r6713` established is the one
-place in either five-dimensional face where chirality exists.  ** Does a Dirac operator there
-carry a chiral su(2)-doublet zero mode, and does the sphere supply the twist itself? **
+Object under test -- the S^4 the two faces share at X_0 = 0: the substrate's throat and the compact
+face's equator, fixed by the Wick rotation relating them and by T.  Being four-dimensional and even
+it carries a chirality OF ITS OWN -- the grading by the Clifford element of its normal, X_0.
+** That is not the physical chirality: every four-dimensional cut carries the chirality of its own
+normal, and the physical one belongs to the cut whose normal is r_0, where P12's R = gamma^5 grades.
+What distinguishes this sphere is that the two faces meet on it and that its isometry cannot carry
+su(3) -- not that it is uniquely chiral. **  ** Does a Dirac operator there carry a chiral
+su(2)-doublet zero mode, and does the sphere supply the twist itself? **
 
 *** THE SPHERE DOES SUPPLY ITS OWN TWIST, AND IT IS THE UNIT INSTANTON.  THE INDEX IS ONE.  AND
 THE ZERO MODE IS A SINGLET OF THE su(2) THAT SUPPLIED THE TWIST -- the doublet lives in the one
