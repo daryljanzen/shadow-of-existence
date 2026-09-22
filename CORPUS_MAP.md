@@ -146,6 +146,9 @@ sources: [cowork, chat]
 
 
 
+### Revision r6741+66.4 — 2026-09-21 (node 66). **P12 worked and read through in its final state.**
+**⌗ TWO SENTENCES.** *§discrete said the sector's Weyl group is $W(A_3)$ "and what the corpus had been using is the sub-root-system obtained by reading only the horizon cubic" --- a statement about the corpus rather than about the structure; it now says the $A_2$ read off the horizon cubic is that sub-root-system, one node deleted. §scope's "at that reading's weight" now says the geometric core advances it as a conjecture. Nothing else in the paper needed changing: its seams are horizons and the Nariai double root, its wall statement is the measure criterion, and it already keeps the Nariai member and the branch point apart by name.*
+
 ### Revision r6741+66.3 — 2026-09-21 (node 66). **P11 worked and read through in its final state: the wall as P9 states it, the crossing at the branch point, and the re-expansion where P16 puts it.**
 **⌗ THE WALL.** *Three sentences (abstract, introduction twice) gave the wall as the loss of continuous symmetry; P9 states it as the loss of a symmetry able to anchor a sweep, the Type-N plane wave past the wall keeping a five-dimensional isometry algebra. All three now say that, and P11's own wall proposition---a regular radiative boundary, neither species of metric singularity---is untouched.*
 **⌗ THE CROSSING AND THE RE-EXPANSION.** *§scope had the matter crossing "through the seam"; the crossing is at the branch point, as the same sentence's companion citations say. §wall had "the matter re-expanding from the seam" producing the light elements; P16 runs that on the cooling leg after the crossing, and the sentence now says so. "Not owed work" is plainly worded.*
