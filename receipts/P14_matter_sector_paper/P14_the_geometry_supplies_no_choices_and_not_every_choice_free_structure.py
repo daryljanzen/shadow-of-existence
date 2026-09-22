@@ -60,8 +60,8 @@ P14's own ledger of what is delivered.
   inside it, and SU(3) the factor the world's baryons select, since gauging the whole U(3) would forbid
   them (r6742).  The weak su(2)'s chiral action needs a choice of handedness, so it is not choice-free.
   What remains choice-free and not supplied is the LOCAL gauging -- a connection with curvature -- which
-  the structure obstructs -- the seats' disjoint support putting a local rotation that mixes them where a
-  gauge field must propagate -- and which the world forces.
+  the world forces and the structure neither supplies nor obstructs: it carries no connection and no
+  curvature, and both reasons once given for saying it could not carry one have fallen (r6747, r6748).
 
   ==> *** On breakings, r6491's law stands as it was stated.  Extended to the whole ledger, what holds
       in every entry is:
@@ -71,7 +71,7 @@ P14's own ledger of what is delivered.
       Every structure it delivers is free of moduli and of selection among equivalent options, and
       every modulus or selection in the matter sector -- the couplings, the mass splittings, the
       handedness, the measured ratio -- is external.  The one choice-free structure it does not supply
-      is the LOCAL gauging, which the structure obstructs and the world forces. ***
+      is the LOCAL gauging, which the world forces and the structure neither supplies nor obstructs. ***
 
 --------------------------------------------------------------------------------
 (4) WHAT THIS SAYS OF PO-30's QUESTION.  The entries that remain undelivered are of two kinds, and the
@@ -81,9 +81,9 @@ P14's own ledger of what is delivered.
       mean the geometry supplying a choice, which no delivered entry does.  These are where the
       Standard Model's free parameters sit, and the law places them there.
 
-    THE LOCAL GAUGING -- choice-free and not supplied.  The law does not forbid it; the structure
-      obstructs it, the seats' disjoint support putting a local rotation that mixes them where a gauge
-      field must propagate, and the world forces it.  Colour's GLOBAL group is not in
+    THE LOCAL GAUGING -- choice-free and not supplied.  The law does not forbid it, the structure does
+      not obstruct it (r6747, r6748), and the world forces it; what the structure does not do is supply
+      a connection or a curvature.  Colour's GLOBAL group is not in
       this row: it is supplied, as the symmetry of the seats' degeneracy (r6742).  Two routes to a
       continuous group were already closed -- P14's list of the substrate's own bundles, and every
       rotation of the substrate (r6725) -- and a third, through the compact face, needs a choice of
