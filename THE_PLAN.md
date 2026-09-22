@@ -3602,7 +3602,7 @@ The tests that decide whether the maximal-symmetry reading is sound — each can
   *It is **not two instances**. `CONSTANT_LEDGER_receipt` carries a **closed table of five**, each with where it
   enters and its status:* **Λ** *the sole dimensionful scale ($\alpha=\sqrt{3/\Lambda}$ derived)* · **c** *the
   null-ruling slope, **gauge** (time↔length)* · **G** *only as $GM/c^{2}$, **gauge** (mass↔length), $M$
-  perspectival / Nariai-locked* · **ħ** *the de Sitter cosmological horizon's Hartle–Hawking state **scaled by $\Lambda$ alone**, the one
+  perspectival / Nariai-locked* · **ħ** *the seam's Hartle–Hawking state **scaled by $\Lambda$ alone**, the one
   quantum freedom **closed by the horizon, no free parameter*** · **k_B** *temperature relations only,
   $T=\hbar\kappa/2\pi k_B$, **the fourth gauge, added at T1***. *Plus the moduli $M,a,\mathrm{NUT},Q$ as
   **not fundamental constants** — perspectival cut-labels, or matter as a bend.*
