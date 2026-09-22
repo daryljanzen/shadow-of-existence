@@ -60,8 +60,8 @@ P14's own ledger of what is delivered.
   inside it, and SU(3) the factor the world's baryons select, since gauging the whole U(3) would forbid
   them (r6742).  The weak su(2)'s chiral action needs a choice of handedness, so it is not choice-free.
   What remains choice-free and not supplied is the LOCAL gauging -- a connection with curvature -- which
-  the structure itself obstructs, the holonomy being finite so that the curvature vanishes identically,
-  and which the world forces.
+  the structure obstructs -- the seats' disjoint support putting a local rotation that mixes them where a
+  gauge field must propagate -- and which the world forces.
 
   ==> *** On breakings, r6491's law stands as it was stated.  Extended to the whole ledger, what holds
       in every entry is:
@@ -82,7 +82,8 @@ P14's own ledger of what is delivered.
       Standard Model's free parameters sit, and the law places them there.
 
     THE LOCAL GAUGING -- choice-free and not supplied.  The law does not forbid it; the structure
-      obstructs it, the holonomy being finite, and the world forces it.  Colour's GLOBAL group is not in
+      obstructs it, the seats' disjoint support putting a local rotation that mixes them where a gauge
+      field must propagate, and the world forces it.  Colour's GLOBAL group is not in
       this row: it is supplied, as the symmetry of the seats' degeneracy (r6742).  Two routes to a
       continuous group were already closed -- P14's list of the substrate's own bundles, and every
       rotation of the substrate (r6725) -- and a third, through the compact face, needs a choice of
