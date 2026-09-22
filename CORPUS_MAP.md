@@ -146,6 +146,16 @@ sources: [cowork, chat]
 
 
 
+### Revision r6733 — 2026-09-22 (node 64). **`PO-45` answered and struck: the colourless triple is fixed on the ordinary route, and CR supplies its chirality.**
+
+**⌗ THE ANSWER, IN ITS PARTS, EACH RECEIPTED.** *The triple is a doublet plus a singlet, not a three-fold symmetric object (`r6701`). Its chirality is geometric: the parity $R=\gamma^5$, the Clifford element of the cut's normal $r_0$. Its pairing is not a rotation of the substrate (`r6725`): a compact $\mathfrak{su}(2)$ on one handedness needs a Euclidean four-space whose chirality is $\gamma^5$, and the substrate's one Euclidean four-space has the chirality of its normal $X_0$ while the four-space whose chirality is $\gamma^5$ is Lorentzian -- so the geometry supplies both ingredients of the chiral projection and not their product. Which handedness is not the twist's, which separates without selecting (`C51`). And its states sit on no geometric locus (`r6698`, `r6702`, `r6704`, `r6714`, `r6717`).*
+
+**⌗ AND A CORRECTION THE ENTRY BELOW PREDATES.** *The `r6714` entry records `r6713`'s reading that the shared four-sphere is the one place in either face where chirality exists. `r6723` corrected it: every even-dimensional cut carries the chirality of its own normal, and the sphere's -- the $X_0$ element -- anticommutes with the physical $R=\gamma^5$. What distinguishes the sphere is that the two faces meet on it and that its isometry cannot carry $\mathfrak{su}(3)$. `r6714`'s index result stands, for the sphere's own chirality.*
+
+**⌗ WHERE THE RECORD WENT.** *The row's 49,762-character working record and its runway are copied verbatim into the consolidation plan's rehoming record as ⓺; the register row is rewritten to its answer. `OPEN_PROBLEMS_MAP` strikes it in place, and strikes `PO-44` beside it, which was struck in the register at `r4553` and still read as open there. What generates the matter content is carried at `PO-30`.*
+
+
+
 ### Revision r6714 — 2026-09-22 (node 60). **The shared four-sphere twists itself, and its zero mode is a singlet.**
 
 **⌗ WHY THIS LOCUS.** *`r6713` established that both faces are five-dimensional and odd, so neither
