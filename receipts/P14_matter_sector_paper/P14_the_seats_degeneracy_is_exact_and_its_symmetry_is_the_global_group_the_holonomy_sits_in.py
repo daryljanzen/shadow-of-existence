@@ -83,9 +83,12 @@ assumed, as the order requires.
 Q6 -- LEAST ARBITRARINESS, BOTH WAYS.  The global group is forced twice over, structurally (the
 degeneracy is exact and the inner product canonical) and by the world (colour is exactly
 degenerate).  Excluding it is arbitrary by Rule 2(a).  The LOCAL gauging is forced by the world
-(gluons are observed) and NOT by the structure, which blocks it twice: the holonomy is finite,
-hence the curvature vanishes identically, and the modes' disjoint support makes a composite
-localised where a gauge field must propagate.  Claiming it would be arbitrary by Rule 2(b).  The
+(gluons are observed) and NOT by the structure, which obstructs it: the modes' disjoint support
+makes a composite localised where a gauge field must propagate, so a local rotation mixing the
+three seats is not local.  ** The flatness of the Delta(27) bundle is NOT a second obstruction: it
+is the flatness of the bundle OVER THE SPACE OF MEMBERS, and a gauge field on a member's spacetime
+is a connection on a different bundle over a different space, whose curvature that flatness does
+not constrain. **  Claiming it would be arbitrary by Rule 2(b).  The
 coupling is a value, not a structure, and sits where r6735's law puts every modulus -- outside.
 
 ** SO THE BALANCE: CARRY THE GLOBAL SU(3) x U(1) WITH THE ORDER-81 HOLONOMY INSIDE IT, AND DO NOT
@@ -552,9 +555,10 @@ LEDGER = [
                  'restricting to Delta(27) mistakes the HOLONOMY for the STRUCTURE GROUP'),
     dict(piece='the LOCAL gauging — a connection with curvature',
          structure=False, world=True,
-         why_structure='blocked twice: the holonomy is FINITE so the curvature vanishes '
-                       'identically, and the modes\' DISJOINT SUPPORT makes a composite localised '
-                       'where a gauge field must propagate',
+         why_structure='obstructed: the modes disjoint support makes a composite localised '
+                       'where a gauge field must propagate, so a local rotation mixing the three '
+                       'seats is not local. The Delta(27) bundle s flatness is over the SPACE OF '
+                       'MEMBERS and does not constrain a connection on a member s spacetime',
          why_world='gluons are observed — the world forces it as a STRUCTURE, not as a value',
          verdict='DO NOT CARRY IT.  Rule 2(b): the structure does not force it and two of its '
                  'features obstruct it.  Owed to the world, and said so'),
