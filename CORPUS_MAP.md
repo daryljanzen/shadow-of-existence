@@ -146,6 +146,10 @@ sources: [cowork, chat]
 
 
 
+### Revision r6745+66.1 — 2026-09-21 (node 66). **P13 read through to the end; main at r6745 merged, and the PDFs of the five papers this line has worked rebuilt from the merged sources.**
+**⌗ P13.** *One further phrasing: §synthesis's "stated at the weight its pieces carry" now says "stated as its pieces stand". The rest of the paper stands as written: its wall is the index obstruction's, its seams are named by species where it names them, and its account of what the geometry supplies and what the ordinary route fixes needs no change.*
+**⌗ THE PDFS.** *The merge took `main`'s PDFs at every conflict; P3, P7, P8, P11, P12 and P13 are rebuilt here from the merged sources so that each committed PDF is its own paper's.*
+
 ### Revision r6741+66.5 — 2026-09-21 (node 66). **P13, first pass: the re-expansion where P16 puts it, and two phrasings.**
 **⌗ THREE SENTENCES.** *§closure's "the matter riding the real Lorentzian horn re-expands from the seam to produce the primordial light-element abundances" now says after the crossing, as P16 runs it; "the seam between them is the cosmogenesis", said of the join between the geometry's kinematics and the field's charge, is "the join"; §synthesis's "The altitude is held with the paper's own care" states the standing plainly. The \S sigma passages keep "the $r=\sqrt{3/\Lambda}$ equatorial seam": that is the glossary's throat seam, and the three operations the section separates are co-localised there by its own argument. The read continues.*
 
