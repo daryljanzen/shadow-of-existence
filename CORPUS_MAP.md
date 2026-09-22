@@ -146,6 +146,11 @@ sources: [cowork, chat]
 
 
 
+### Revision r6750+66.1 — 2026-09-21 (node 66). **P18 worked and read through in its final state: the big bang's dissolution given its actual reason, the parameter count stated as the section's own list has it, and the corpus's statements of standing in plain English.**
+**⌗ THE BIG BANG.** *§dissolved gave it as "a coordinate feature of the reading rather than a breakdown of the theory, the minimum radius being finite" --- the minimum radius is the substrate's throat and is not what carries this. The next paragraph gives the reason: the horospheres pile onto a smooth null generator, so the substrate stays smooth where the areal chart diverges; the sentence now says that.*
+**⌗ THE PARAMETER COUNT.** *§displace listed the inherited datum, the amplitude and the tilt as measured rather than derived, then said the construction "fits one" --- read together, the sentence undercounted its own list. It now reads: fits one, the onset, and reads the rest off the data directly.*
+**⌗ AND THE STATEMENTS OF STANDING.** *"at the weight each result is established at" (the abstract), "carried at lower altitude than anything above", "held at forced-within-CR coherence … the lowest altitude it carries", the heading "at what altitude" and its paragraph, and "the source marks its own altitude here" now say the scope, the footing, and what is forced within CR. "The seam between the two factors of $C$", said of the join between the geometry's kinematics and the field's charge, is "the join", as in P13.*
+
 ### Revision r6747+66.3 — 2026-09-21 (node 66). **P17 worked and read through in its final state: the bead's crossing named as the branch point, the landing list reaching P18, and four house phrasings in plain English.**
 **⌗ THE CROSSING.** *§shadows had the collapse of a black hole "continued through the seam as the expansion of the other"; on the bead that continuation is through the branch point, as the same sentence's own citation has it.*
 **⌗ THE LANDING LIST.** *§landing gathered where each paper reaches into the core and back, P1 through P16, with no entry for the synthesis paper that gathers the corpus as one object; P18 now has one (with its bibliography entry), naming what it takes from here --- the substrate's uniqueness, the one scale, the constants as gauges --- and what it carries back.*
