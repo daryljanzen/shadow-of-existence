@@ -146,6 +146,10 @@ sources: [cowork, chat]
 
 
 
+### Revision r6747+66.1 — 2026-09-21 (node 66). **P14, first pass (abstract, introduction, §chirality and §inflow read in full): the count's footing stated plainly, and the missing multiplet named as a difference rather than a shortfall.**
+**⌗ THE FRAMING OF WHAT THE SECTOR DOES NOT FIX.** *The abstract twice called the one multiplet the achiral member cannot carry a "shortfall" and said it "costs more than a multiplet"; it is a difference of one pair on the right-handed side, fixed on the ordinary route, and the passage now says so without scoring it as a failure to deliver. "The angular spectrum is worth stating as the honest negative it is" now says "worth stating exactly".*
+**⌗ AND THE PROGRAMME'S OWN WORDS FOR ITS STANDING.** *"each stated at the weight it is earned", "the honest edge is stated plainly rather than gestured at" (twice), "at the same altitude as the rest", "the honest content of the word forced", "stated at the same weight", and "the honest statement is that no third mechanism has been named" are now plain English: the scope, the footing, what the word forced means, and what remains open.*
+
 ### Revision r6745+66.1 — 2026-09-21 (node 66). **P13 read through to the end; main at r6745 merged, and the PDFs of the five papers this line has worked rebuilt from the merged sources.**
 **⌗ P13.** *One further phrasing: §synthesis's "stated at the weight its pieces carry" now says "stated as its pieces stand". The rest of the paper stands as written: its wall is the index obstruction's, its seams are named by species where it names them, and its account of what the geometry supplies and what the ordinary route fixes needs no change.*
 **⌗ THE PDFS.** *The merge took `main`'s PDFs at every conflict; P3, P7, P8, P11, P12 and P13 are rebuilt here from the merged sources so that each committed PDF is its own paper's.*
