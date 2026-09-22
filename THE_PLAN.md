@@ -806,10 +806,10 @@ work, ordered by nothing but the drive to find out. ② is a list kept elsewhere
 **⚠ AND THAT ONE MUST ALWAYS REMAIN A CONJECTURE.** *(Daryl:)* *"The proof that physics describes reality
 impossibility theorem at the heart of science. **Empirical facts are primary. And we work within those
 bounds.**"* **No amount of internal coherence converts it.** This is P6's discipline stated as the programme's
-own ceiling: *forced at rule-favoured altitude.*
+own ceiling.
 **⌗ AND A DISTINCTION THAT BELONGS HERE, because a node could read `A5.5` as trying to breach this ceiling (r1785).**
-*P6's full form is not "coherence, full stop" — it is **"every 'forced within CR' is a coherence claim AT
-RULE-FAVOURED ALTITUDE, awaiting the world's non-local discriminator — never correspondence."*** **`A5.5` does not
+*P6's full form is not "coherence, full stop" — it is **that the reliability of the rules which select a structure
+is itself an empirical hypothesis (`lem:vindication`), its base rate the discipline's first programme.** **`A5.5` does not
 attempt the conversion this section forbids: it asks HOW FAVOURED — whether "favoured-and-recurring" is confirmed
 above a base rate computed from the cases where the rules MISLED (ether, caloric, Kepler's solids).**
 ***So the ceiling stands, and A5.5 measures where under it the work sits.*** *The two are easy to conflate, and
@@ -3686,9 +3686,8 @@ and the remaining work are now the same act**, and it is the cheapest unrun test
   *P6's boundary at source, and it is uncompromising: ***"SELF-CONSISTENCY IS NOT SOUNDNESS. `lem:vindication`
   is built from successes — **survivorship, not measurement** — so it is 'a compelling hypothesis with confirming
   instances, not a calibrated reliability.'*** Sampling the cases where the rules **MISLED** — ether, caloric,
-  Kepler's solids — and computing a base rate is set as **the discipline's FIRST programme, not presumed.
-  Therefore every 'forced within CR' is a coherence claim at rule-favoured altitude, awaiting the world's
-  non-local discriminator — never correspondence."*** **Nothing in the corpus has moved that; the item needs no
+  Kepler's solids — and computing a base rate is set as **the discipline's FIRST programme, not presumed."***
+  **Nothing in the corpus has moved that; the item needs no
   correction and the reference class is unbuilt.**
   **⌗ WHAT HAS MOVED IS THE BRIDGE, and it cuts the other way from the obvious reading.** *A5.3 says: "the
   systematicity is the pattern; **the vindication lemma is why the pattern counts as evidence**… whether
