@@ -146,6 +146,11 @@ sources: [cowork, chat]
 
 
 
+### Revision r6747+66.3 — 2026-09-21 (node 66). **P17 worked and read through in its final state: the bead's crossing named as the branch point, the landing list reaching P18, and four house phrasings in plain English.**
+**⌗ THE CROSSING.** *§shadows had the collapse of a black hole "continued through the seam as the expansion of the other"; on the bead that continuation is through the branch point, as the same sentence's own citation has it.*
+**⌗ THE LANDING LIST.** *§landing gathered where each paper reaches into the core and back, P1 through P16, with no entry for the synthesis paper that gathers the corpus as one object; P18 now has one (with its bibliography entry), naming what it takes from here --- the substrate's uniqueness, the one scale, the constants as gauges --- and what it carries back.*
+**⌗ AND THE PHRASINGS.** *"matter and antimatter at one weight within CR" and "at the weight the matter paper states in full" (the footing and the scope); "Two boundaries hold this at its weight"; "it fixes the altitude of the whole paper" (P6's entry); and, twice, "does not carry a phase by failing to freeze", which states a negative about a reading the paper rejects and now says so directly.*
+
 ### Revision r6747+66.2 — 2026-09-21 (node 66). **P14 read through to the end: its statements of standing in plain English, its crossing at the crossing, and its dimension result resting on the inputs P3 leaves it.**
 **⌗ THE DIMENSION RESULT'S INPUTS.** *§count still closed with "the one assumption is named: the $D$-dimensional metric function is taken to be the standard Tangherlini--de~Sitter one, an extension of the codimension-one operator rather than a rederivation", which P3's `rem:dimension` supersedes --- the operator returns that family as its entire solution space at general $D$. The paragraph now names the two inputs the introduction names: the construction gauge's lock at general dimension, and a round transverse space.*
 **⌗ THE CROSSING.** *§cosmogenesis had "at the seam only the rate is reset" for a sentence whose own subject is the branch point; now "at the crossing".*
