@@ -146,6 +146,9 @@ sources: [cowork, chat]
 
 
 
+### Revision r6741+66.5 — 2026-09-21 (node 66). **P13, first pass: the re-expansion where P16 puts it, and two phrasings.**
+**⌗ THREE SENTENCES.** *§closure's "the matter riding the real Lorentzian horn re-expands from the seam to produce the primordial light-element abundances" now says after the crossing, as P16 runs it; "the seam between them is the cosmogenesis", said of the join between the geometry's kinematics and the field's charge, is "the join"; §synthesis's "The altitude is held with the paper's own care" states the standing plainly. The \S sigma passages keep "the $r=\sqrt{3/\Lambda}$ equatorial seam": that is the glossary's throat seam, and the three operations the section separates are co-localised there by its own argument. The read continues.*
+
 ### Revision r6741+66.4 — 2026-09-21 (node 66). **P12 worked and read through in its final state.**
 **⌗ TWO SENTENCES.** *§discrete said the sector's Weyl group is $W(A_3)$ "and what the corpus had been using is the sub-root-system obtained by reading only the horizon cubic" --- a statement about the corpus rather than about the structure; it now says the $A_2$ read off the horizon cubic is that sub-root-system, one node deleted. §scope's "at that reading's weight" now says the geometric core advances it as a conjecture. Nothing else in the paper needed changing: its seams are horizons and the Nariai double root, its wall statement is the measure criterion, and it already keeps the Nariai member and the branch point apart by name.*
 
