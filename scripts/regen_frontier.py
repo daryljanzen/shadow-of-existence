@@ -99,6 +99,16 @@ EST = {
         'gauge-matter route would first have to complete. TRIP-WIRE: forcing the gauge group forces the Higgs '
         'representation with it.'),
     'PO-30': ('the curves own dynamics -- A GENERATIVE LAW FOR THE MATTER CONTENT', 1, 1, 6, None,
+        'r6735: TESTED ACROSS P14S WHOLE LEDGER, symmetric judged independently of supplied -- does '
+        'specifying the entry need a free modulus or a choice among equivalents? All ten single entries '
+        'sort correctly, and the two compound ones split at exactly the predicted seam: hypercharge s '
+        'normalisation fixed by the winding while its coupling is external; the modes massless while '
+        'their splitting is external. On breakings r6491 holds as stated; extended to every entry one '
+        'direction survives, THE GEOMETRY SUPPLIES NO CHOICES, the continuous gauge groups being '
+        'choice-free and not supplied. So the undelivered entries are of two kinds: the choices, placed '
+        'outside the geometry, where the Standard Model s free parameters sit; and the continuous gauge '
+        'groups, not forbidden, the open conversion, with P14 s bundle list and every rotation of the '
+        'substrate closed as routes. '
         'r6423/r6463: the curves dynamics GIVEN content is SUPPLIED -- the contracted Bianchi identity is entailed by  '
         'the cuts own geometry, not imposed, and a constitutive relation closes the system into ODEs on the cut: the T '
         'OV system in the operators own variables for the spherical class, P09s single ODE on (X,Y) for the homogeneo '
