@@ -637,6 +637,10 @@ EST = {
         'wrong chirality and the one whose chirality is gamma^5 is Lorentzian; the compact su(2) '
         'commuting with gamma^5 is vector-like. No rotation of the substrate is a compact su(2) on '
         'one physical handedness -- the weak su(2) is a chiral projection, and that is not a rotation. '
+        'AND THE TWIST DOES NOT PICK THE HANDEDNESS: C50s twist, the one place left and right differ, '
+        'separates them by direction without selecting -- equal spectra, a directional +-b, and an '
+        'evolving twist that conserves each chirality s total (C51). The choice of left sits with the '
+        'chiral gauge coupling. '
 ),
     'PO-36': ('does the Hubble-Eddington radius track the dynamical mass or the baryonic one', 1, 0, 4, None,
         'r4203/r6407: the discrimination is QUANTIFIED -- the two mass choices differ by f_b^(-1/3) = 1.85 in the radiu '
