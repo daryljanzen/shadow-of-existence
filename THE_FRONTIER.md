@@ -2,7 +2,7 @@
 name: the-frontier
 kind: VIEW
 job: the open problems in dependency order — generated from THE_REGISTER, the one source
-current: r6738
+current: r6741
 sources: [chat]
 ---
 
