@@ -188,6 +188,16 @@ sources: [cowork, chat]
 **⌗ WHERE THE UNIVERSE BEGINS, AND WHERE THE REASSIGNMENT ACTS.** *Read at P7 `rem:perspectival-singularity`, `thm:cosmogenesis` and r2123/r2291: the beginning is the branch point $r=0$; the causal reassignment and the physical seeding act on the collapse horizon, whose degenerate member is the Nariai horizon at the seam — two loci at two levels. **So `THE_PLAN` A2.11's question of which landmark begins the observable cosmology is answered: $r=0$**, and the 7.06 Gyr figure is the expanding leg's front-seam passage, its exit from the lap. The map's naming rule no longer places the reassignment at the branch point, and its P1 card no longer calls the completion of collapse the beginning.*
 **⌗ WHERE $\hbar$ ENTERS.** *The map's P17 card placed it at the branch point, which is not a seam and carries no thermal state; it now reads the de~Sitter cosmological horizon (P10). The map's one-constant clause carries the geometric-ledger scope P17 and P18 state. `THE_PLAN` A5.1 likewise.*
 **⌗ Node 66 registered** in `corpus/node_roster.txt`, band `L-6600`–`L-6699`; this line's revisions are labelled `r<main base>+66.<k>`.
+### Revision r6733 — 2026-09-22 (node 64). **`PO-45` answered and struck: the colourless triple is fixed on the ordinary route, and CR supplies its chirality.**
+
+**⌗ THE ANSWER, IN ITS PARTS, EACH RECEIPTED.** *The triple is a doublet plus a singlet, not a three-fold symmetric object (`r6701`). Its chirality is geometric: the parity $R=\gamma^5$, the Clifford element of the cut's normal $r_0$. Its pairing is not a rotation of the substrate (`r6725`): a compact $\mathfrak{su}(2)$ on one handedness needs a Euclidean four-space whose chirality is $\gamma^5$, and the substrate's one Euclidean four-space has the chirality of its normal $X_0$ while the four-space whose chirality is $\gamma^5$ is Lorentzian -- so the geometry supplies both ingredients of the chiral projection and not their product. Which handedness is not the twist's, which separates without selecting (`C51`). And its states sit on no geometric locus (`r6698`, `r6702`, `r6704`, `r6714`, `r6717`).*
+
+**⌗ AND A CORRECTION THE ENTRY BELOW PREDATES.** *The `r6714` entry records `r6713`'s reading that the shared four-sphere is the one place in either face where chirality exists. `r6723` corrected it: every even-dimensional cut carries the chirality of its own normal, and the sphere's -- the $X_0$ element -- anticommutes with the physical $R=\gamma^5$. What distinguishes the sphere is that the two faces meet on it and that its isometry cannot carry $\mathfrak{su}(3)$. `r6714`'s index result stands, for the sphere's own chirality.*
+
+**⌗ WHERE THE RECORD WENT.** *The row's 49,762-character working record and its runway are copied verbatim into the consolidation plan's rehoming record as ⓺; the register row is rewritten to its answer. `OPEN_PROBLEMS_MAP` strikes it in place, and strikes `PO-44` beside it, which was struck in the register at `r4553` and still read as open there. What generates the matter content is carried at `PO-30`.*
+
+
+
 ### Revision r6714 — 2026-09-22 (node 60). **The shared four-sphere twists itself, and its zero mode is a singlet.**
 
 **⌗ WHY THIS LOCUS.** *`r6713` established that both faces are five-dimensional and odd, so neither

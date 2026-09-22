@@ -6,15 +6,15 @@ job: the coherent view of the open set — what stands in the way of each step, 
 
 <!-- GRAIN-CURRENCY:BEGIN -->
 
-## ⌗⌗⌗ CURRENCY — **GENERATED** by `scripts/regen_grain_currency.py`, baseline r2417, register front r6721
+## ⌗⌗⌗ CURRENCY — **GENERATED** by `scripts/regen_grain_currency.py`, baseline r2417, register front r6733
 
 > ⚠ **THE BODY BELOW STOPS AT THE BASELINE. This head is the list of what has moved since, and it is REGENERATED rather than written** — *because these documents go stale every ~20 revisions by construction, and paying that by hand is a debt that recurs rather than a defect that closes.*
 >
-> **⌗ NOT COVERED — STRUCK since r2417 (181 rows):**
-> `L-150` `L-174` `L-175` `L-176` `L-177` `L-178` `L-179` `L-180` `L-181` `L-182` `L-183` `L-184` `L-185` `L-186` `L-187` `L-188` `L-189` `L-190` `L-191` `L-192` `L-193` `L-194` `L-195` `L-196` `L-197` `L-198` `L-199` `L-200` `L-201` `L-203` `L-204` `L-206` `L-207` `L-210` `L-211` `L-213` `L-214` `L-215` `L-216` `L-217` `L-219` `L-220` `L-222` `L-223` `L-224` `L-225` `L-226` `L-227` `L-228` `L-229` `L-231` `L-232` `L-233` `L-234` `L-235` `L-236` `L-237` `L-238` `L-239` `L-241` `L-243` `L-244` `L-246` `L-247` `L-248` `L-249` `L-250` `L-251` `L-252` `L-253` `L-254` `L-255` `L-256` `L-257` `L-258` `L-259` `L-260` `L-261` `L-262` `L-263` `L-264` `L-265` `L-266` `L-267` `L-268` `L-269` `L-270` `L-271` `L-272` `L-273` `L-274` `L-275` `L-276` `L-277` `L-278` `L-279` `L-280` `L-281` `L-282` `L-283` `L-500` `L-501` `L-502` `L-503` `L-504` `L-505` `L-506` `L-507` `L-508` `L-509` `L-510` `L-511` `L-512` `L-513` `L-514` `L-515` `L-516` `L-517` `L-518` `L-520` `L-521` `L-522` `L-523` `L-535` `L-536` `L-537` `L-538` `L-539` `L-540` `L-800` `L-801` `L-802` `L-803` `L-804` `L-805` `L-806` `L-807` `L-808` `L-809` `L-810` `L-811` `L-812` `L-813` `L-814` `L-815` `L-816` `L-818` `L-819` `L-820` `L-821` `L-822` `L-823` `L-824` `L-826` `L-827` `L-828` `L-829` `L-830` `PO-15` `PO-16` `PO-17` `PO-18` `PO-19` `PO-20` `PO-21` `PO-22` `PO-26` `PO-27` `PO-28` `PO-29` `PO-32` `PO-33` `PO-34` `PO-37` `PO-38` `PO-39` `PO-40` `PO-41` `PO-42` `PO-44` `PO-46`
+> **⌗ NOT COVERED — STRUCK since r2417 (182 rows):**
+> `L-150` `L-174` `L-175` `L-176` `L-177` `L-178` `L-179` `L-180` `L-181` `L-182` `L-183` `L-184` `L-185` `L-186` `L-187` `L-188` `L-189` `L-190` `L-191` `L-192` `L-193` `L-194` `L-195` `L-196` `L-197` `L-198` `L-199` `L-200` `L-201` `L-203` `L-204` `L-206` `L-207` `L-210` `L-211` `L-213` `L-214` `L-215` `L-216` `L-217` `L-219` `L-220` `L-222` `L-223` `L-224` `L-225` `L-226` `L-227` `L-228` `L-229` `L-231` `L-232` `L-233` `L-234` `L-235` `L-236` `L-237` `L-238` `L-239` `L-241` `L-243` `L-244` `L-246` `L-247` `L-248` `L-249` `L-250` `L-251` `L-252` `L-253` `L-254` `L-255` `L-256` `L-257` `L-258` `L-259` `L-260` `L-261` `L-262` `L-263` `L-264` `L-265` `L-266` `L-267` `L-268` `L-269` `L-270` `L-271` `L-272` `L-273` `L-274` `L-275` `L-276` `L-277` `L-278` `L-279` `L-280` `L-281` `L-282` `L-283` `L-500` `L-501` `L-502` `L-503` `L-504` `L-505` `L-506` `L-507` `L-508` `L-509` `L-510` `L-511` `L-512` `L-513` `L-514` `L-515` `L-516` `L-517` `L-518` `L-520` `L-521` `L-522` `L-523` `L-535` `L-536` `L-537` `L-538` `L-539` `L-540` `L-800` `L-801` `L-802` `L-803` `L-804` `L-805` `L-806` `L-807` `L-808` `L-809` `L-810` `L-811` `L-812` `L-813` `L-814` `L-815` `L-816` `L-818` `L-819` `L-820` `L-821` `L-822` `L-823` `L-824` `L-826` `L-827` `L-828` `L-829` `L-830` `PO-15` `PO-16` `PO-17` `PO-18` `PO-19` `PO-20` `PO-21` `PO-22` `PO-26` `PO-27` `PO-28` `PO-29` `PO-32` `PO-33` `PO-34` `PO-37` `PO-38` `PO-39` `PO-40` `PO-41` `PO-42` `PO-44` `PO-45` `PO-46`
 >
-> **⌗ NOT COVERED — OPENED since r2417 (136 rows):**
-> `L-222` `L-223` `L-224` `L-225` `L-226` `L-227` `L-228` `L-229` `L-230` `L-231` `L-233` `L-234` `L-240` `L-242` `L-245` `L-246` `L-247` `L-248` `L-249` `L-250` `L-251` `L-252` `L-253` `L-254` `L-255` `L-256` `L-257` `L-258` `L-259` `L-260` `L-261` `L-262` `L-263` `L-264` `L-265` `L-266` `L-267` `L-268` `L-269` `L-270` `L-271` `L-272` `L-273` `L-274` `L-275` `L-276` `L-277` `L-278` `L-279` `L-280` `L-281` `L-282` `L-283` `L-500` `L-501` `L-502` `L-503` `L-504` `L-505` `L-506` `L-507` `L-508` `L-509` `L-510` `L-511` `L-512` `L-513` `L-514` `L-515` `L-516` `L-517` `L-518` `L-519` `L-520` `L-521` `L-522` `L-523` `L-524` `L-525` `L-526` `L-527` `L-528` `L-529` `L-530` `L-531` `L-532` `L-533` `L-534` `L-535` `L-536` `L-537` `L-538` `L-539` `L-540` `L-541` `L-542` `L-543` `L-544` `L-545` `L-546` `L-547` `L-800` `L-801` `L-802` `L-803` `L-804` `L-805` `L-806` `L-807` `L-808` `L-809` `L-810` `L-811` `L-812` `L-813` `L-814` `L-815` `L-816` `L-818` `L-819` `L-820` `L-821` `L-822` `L-823` `L-824` `L-825` `L-826` `L-827` `L-828` `L-829` `L-830` `PO-30` `PO-31` `PO-36` `PO-43` `PO-45`
+> **⌗ NOT COVERED — OPENED since r2417 (135 rows):**
+> `L-222` `L-223` `L-224` `L-225` `L-226` `L-227` `L-228` `L-229` `L-230` `L-231` `L-233` `L-234` `L-240` `L-242` `L-245` `L-246` `L-247` `L-248` `L-249` `L-250` `L-251` `L-252` `L-253` `L-254` `L-255` `L-256` `L-257` `L-258` `L-259` `L-260` `L-261` `L-262` `L-263` `L-264` `L-265` `L-266` `L-267` `L-268` `L-269` `L-270` `L-271` `L-272` `L-273` `L-274` `L-275` `L-276` `L-277` `L-278` `L-279` `L-280` `L-281` `L-282` `L-283` `L-500` `L-501` `L-502` `L-503` `L-504` `L-505` `L-506` `L-507` `L-508` `L-509` `L-510` `L-511` `L-512` `L-513` `L-514` `L-515` `L-516` `L-517` `L-518` `L-519` `L-520` `L-521` `L-522` `L-523` `L-524` `L-525` `L-526` `L-527` `L-528` `L-529` `L-530` `L-531` `L-532` `L-533` `L-534` `L-535` `L-536` `L-537` `L-538` `L-539` `L-540` `L-541` `L-542` `L-543` `L-544` `L-545` `L-546` `L-547` `L-800` `L-801` `L-802` `L-803` `L-804` `L-805` `L-806` `L-807` `L-808` `L-809` `L-810` `L-811` `L-812` `L-813` `L-814` `L-815` `L-816` `L-818` `L-819` `L-820` `L-821` `L-822` `L-823` `L-824` `L-825` `L-826` `L-827` `L-828` `L-829` `L-830` `PO-30` `PO-31` `PO-36` `PO-43`
 >
 > ⌗ ***The ID half is machine-checked against the register; run `regen_grain_currency.py --check`. The prose half below is a JUDGEMENT and is written by hand — the script preserves it verbatim and never invents it, because a gate can check a declaration and not a judgement.***
 
@@ -46,12 +46,7 @@ claim it bears on is a proof rather than a coherent proposition.*
   non-reabsorbable, and **what it does to the observed high-$\ell$ power is not**, turning on a parameter
   refit and the early integrated Sachs–Wolfe term.
 - **`PO-13` — what the driving does on the leaf rate.** The measured deficit whose mechanism is missing.
-- **`PO-44` — is the tower's boundary condition helicity-blind?** One check, and it closes or opens the
-  parity-odd question outright. **The tower is chirally capable** — its two helicities are inequivalent
-  representations of the connected isometry group, exchanged only on the component no connected action reaches
-  — so whether a parity-odd term is generated turns on *the state* rather than on the geometry. *If the
-  regularity condition does not distinguish the two towers they are populated alike and the content cancels;
-  that is a closure by the state and not achirality.*
+- ~~**`PO-44` — is the tower's boundary condition helicity-blind?**~~ **STRUCK `r4553`: it is, so the parity-odd entry is not generated --- by the state, not by achirality.** *`P10` states it and its reason together: the surface gravity belongs to the background horizon and is common to every fibre, and the operator labelling the fibres is a sum of squares with a single coefficient, so it carries no helicity label and no sign. The two towers are populated alike and the parity-odd content cancels. The tower remains chirally capable.*
 - **`PO-43` — the Weyl-squared coefficient at second order in the shear.** `P10` names the entry rather than
   leaving it open: the shear costs *exactly one* new counterterm and it is the Weyl-squared one, so the ledger
   acquires it and the question is at what coefficient. **`PO-23`'s computation did not cost it** — the
@@ -64,18 +59,7 @@ claim it bears on is a proof rather than a coherent proposition.*
   deepest open question the construction raises, and narrows it in its own words — the confined case is
   exhibited, the radiative boundary is the range paper's wall, and beyond it the framework leaves general
   relativity unchanged.
-- **`PO-45` — the colourless triple has no seat, and the reason is the dimension result.** `P14` delivers
-  $12$ of the $15$ Weyl fermions of a generation and not the colourless $3$, and that shortfall now states
-  what would discharge it. The triple wanted is a doublet plus a singlet. The doublet exists --- the
-  $\mathbb{Z}_3$-fixed axis carries a vantage at imaginary height, $\mathrm{pow}=-\alpha^2$ giving the pair
-  $\pm i\alpha$ by the same power-of-a-point rule that puts a hinge at $\sqrt3\,\alpha$. The **singlet is
-  obstructed**: a single branch requires $\mathrm{pow}=0$, which holds exactly on the throat circle, and the
-  three walls lie on that circle --- so being unbranched and being coloured are one condition here. *And that
-  welding is forced rather than placed*: a wall is antipodal to its hinge and a graze point lies between two,
-  and those coincide exactly when the hinge count is odd, hence in even $D$. With the count at $D-1$, the
-  separation lives only at odd $D$ --- which `P14`'s own count and parity jointly exclude. **So the missing
-  three is the $D=4$ result read from the matter side**, and what would discharge the row is a construction
-  separating $\mathrm{pow}=0$ from the colour index.
+- ~~**`PO-45` — the colourless triple has no seat, and the reason is the dimension result.**~~ **STRUCK `r6733`: the triple is fixed on the ordinary route, and CR supplies its chirality.** *It is a doublet plus a singlet, not a three-fold symmetric object. Its chirality is the geometric parity $R=\gamma^5$; its pairing is not a rotation of the substrate, which supplies both ingredients of the weak coupling's chiral projection and not their product; which handedness is not the twist's, which separates without selecting; and its states sit on no geometric locus. What generates the matter content is carried at `PO-30`.*
 
 - ~~**`PO-26` — the compact-face fermion sector.**~~ **STRUCK `r6463`, on two concurring referee reads.** *A spinor sector **is** built on the discrete component (`P14`) and supplies no equivariant index. The sector the obstruction acts on --- gauge-acted, isometry-realised, on the compact face --- **is now specified**: the face is the substrate on its other real form, so the relation is continuation not reduction, and a fermion there is a $\mathrm{Spin}(6)=\mathrm{SU}(4)$ object with colour a subgroup of that spin group. ***Two obstructions meet on it***: $\mathfrak{su}(3)$ admits no equivariant map to the cosmological $S^3$, so the cut destroys it; and the round face carries **no massless content** for it to act on. The discharge asked for *an obstruction shown*, not for one shown inescapable --- **a bar `P13` explicitly declines in its own voice**.
 - **`PO-31` — the progenitor spectrum.** `P15` calls this *the
@@ -83,9 +67,8 @@ claim it bears on is a proof rather than a coherent proposition.*
   channel, so the progenitor's composition is destroyed and cannot be read backward from ours.
 
 
-**⌗ These three are not adjacent to each other and must not be grouped as one gap.** They share only the shape
-of the obstruction. `PO-30` wants a dynamics; `PO-45` wants a construction; `PO-31` wants a route past an
-erasure.
+**⌗ These two are not adjacent to each other and must not be grouped as one gap.** They share only the shape
+of the obstruction. `PO-30` wants a dynamics; `PO-31` wants a route past an erasure.
 
 **⌗ Two have their difficulty stated as a result rather than as a lack.** `PO-31`'s erasure is *proved*,
 which is what makes it a frontier and not a gap. `PO-26`'s wall is a mechanism, not a failure to build.
