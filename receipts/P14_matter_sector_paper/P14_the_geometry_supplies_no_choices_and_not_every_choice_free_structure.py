@@ -52,21 +52,26 @@ P14's own ledger of what is delivered.
   which mass is heaviest) are external.
 
   The ledger also carries entries that are not breakings: couplings and the measured ratio, which are
-  parameters, and the continuous gauge groups, which are symmetries.  Extending the law from breakings
-  to every entry, one direction survives and one does not.  The continuous gauge groups, SU(3) and
-  SU(2), are choice-free -- a group carries no modulus -- and are NOT supplied: the geometry delivers
-  colour's discrete content Delta(27), not SU(3), and no rotation of the substrate is a compact chiral
-  su(2).
+  parameters, and the continuous gauge groups, which are symmetries.  And a continuous gauge group is two
+  things the law treats differently -- a GLOBAL symmetry, and its LOCAL gauging.
+
+  Colour's GLOBAL continuous group is choice-free and SUPPLIED.  It is the symmetry of the seats' exact
+  degeneracy: a canonical U(3) on the metric's own inner product, with Delta(27) its holonomy sitting
+  inside it, and SU(3) the factor the world's baryons select, since gauging the whole U(3) would forbid
+  them (r6742).  The weak su(2)'s chiral action needs a choice of handedness, so it is not choice-free.
+  What remains choice-free and not supplied is the LOCAL gauging -- a connection with curvature -- which
+  the structure itself obstructs, the holonomy being finite so that the curvature vanishes identically,
+  and which the world forces.
 
   ==> *** On breakings, r6491's law stands as it was stated.  Extended to the whole ledger, what holds
-      in every entry is one direction:
+      in every entry is:
 
           THE GEOMETRY SUPPLIES NO CHOICES.
 
       Every structure it delivers is free of moduli and of selection among equivalent options, and
       every modulus or selection in the matter sector -- the couplings, the mass splittings, the
-      handedness, the measured ratio -- is external.  It does not supply every choice-free structure:
-      the continuous gauge groups are choice-free and not supplied. ***
+      handedness, the measured ratio -- is external.  The one choice-free structure it does not supply
+      is the LOCAL gauging, which the structure obstructs and the world forces. ***
 
 --------------------------------------------------------------------------------
 (4) WHAT THIS SAYS OF PO-30's QUESTION.  The entries that remain undelivered are of two kinds, and the
@@ -76,9 +81,12 @@ P14's own ledger of what is delivered.
       mean the geometry supplying a choice, which no delivered entry does.  These are where the
       Standard Model's free parameters sit, and the law places them there.
 
-    THE CONTINUOUS GAUGE GROUPS -- choice-free and not supplied.  The law does not forbid them.  They
-      are the genuinely open conversion, with two routes already closed: P14's list of the
-      substrate's own bundles, and every rotation of the substrate (r6725).
+    THE LOCAL GAUGING -- choice-free and not supplied.  The law does not forbid it; the structure
+      obstructs it, the holonomy being finite, and the world forces it.  Colour's GLOBAL group is not in
+      this row: it is supplied, as the symmetry of the seats' degeneracy (r6742).  Two routes to a
+      continuous group were already closed -- P14's list of the substrate's own bundles, and every
+      rotation of the substrate (r6725) -- and a third, through the compact face, needs a choice of
+      complex structure the geometry does not supply (r6738).
 
 --------------------------------------------------------------------------------
 ⚠ WHAT IS NOT CLAIMED.
@@ -115,7 +123,7 @@ biconditional_holds = all(((not c) == d) for _, c, d in LEDGER) and \
 one_direction_holds = all((not d) or (not c) for _, c, d in LEDGER) and \
                       ((not CONTINUOUS_GAUGE['supplied']) or CONTINUOUS_GAUGE['choice_free'])
 assert not biconditional_holds and one_direction_holds
-print("  (3) the continuous gauge groups: choice-free and not supplied -- the biconditional")
+print("  (3) global and local separated: colour's global group choice-free AND supplied (r6742);")
 print("      fails, and 'supplied => choice-free' holds in every case                         OK")
 
 print()
@@ -124,8 +132,8 @@ print("modulus or a choice among equivalents -- all ten single entries of P14's 
 print("the two compound ones, hypercharge and the mass spectrum, each split at exactly the seam the law")
 print("predicts, which P14's two columns do not. On breakings, r6491's law holds as stated. Extended to")
 print("every entry, one direction survives -- THE GEOMETRY SUPPLIES NO CHOICES -- and the other fails on")
-print("the continuous gauge groups, choice-free and not supplied. For PO-30, the undelivered entries are of two kinds --")
-print("the choices, which the law places outside the geometry, and the continuous gauge groups, which it")
-print("does not forbid and which are the open conversion.")
+print("the local gauging, choice-free and not supplied. For PO-30, the undelivered entries are of two kinds --")
+print("the choices, which the law places outside the geometry, and the local gauging, which it")
+print("does not forbid and which is the open conversion.")
 print("NOT CLAIMED: a theorem -- one supplied modulus would falsify it. Nor that the criterion is free of")
 print("judgement. Nothing about routes not yet built to the continuous groups.")
