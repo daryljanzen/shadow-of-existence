@@ -3192,3 +3192,49 @@ from the corpus's and has to be written as its own rather than as a repair of th
 *because the corpus's $H_0=73$ is exactly what it replaces, and at $73$ this same configuration is
 rejected seventeen times harder.*
 ⌗ *`receipts/P15_CR_cosmology/P15_at_its_own_preferred_H0_the_crossing_arm_predicts_the_acoustic_comb_with_no_fitted_number.py`*
+
+
+---
+
+# ⛔ r6760+cc66.12 — THE FULL-RANGE LENSED COMPARISON IS THE UNFAVOURABLE ONE, AND IT IS THE ONE
+# THE PAPER MUST QUOTE
+
+*The configuration the corpus's own $\chi^2$ values are quoted on: `LMAXL=2000`, polarisation path,
+the $(68.60,\,0.2973)$ arm and a control run at the same reach. **The range really is 185 bins**,
+$\ell=100$–$1996$, asserted rather than taken on the name.*
+
+| | bins | unlensed | /bin | lensed | /bin | $\Delta\chi^2$ |
+|---|---|---|---|---|---|---|
+| control $\Lambda$CDM | $185$ | $696.0$ | $3.76$ | $214.1$ | $\mathbf{1.16}$ | $-481.9$ |
+| arm, crossing at $68.60$ | $185$ | $1169.8$ | $6.32$ | $550.5$ | $\mathbf{2.98}$ | $-619.3$ |
+
+| comparison | arm/control |
+|---|---|
+| 133-bin, unlensed (⓹ of `r6760+cc66.7`) | $1.98\times$ |
+| 185-bin full range, unlensed | $1.68\times$ |
+| **185-bin full range, LENSED** | $\mathbf{2.57\times}$ |
+
+⇒ ***$2.57\times$ is what `sec:SR-15` must quote.*** *A number scored on one configuration may not
+be quoted against the other, and the corpus's own values are on the full-range lensed one.* **Both
+are recorded so neither can be picked for being the kinder.**
+
+**⌗ WHY IT MOVES, and it is the two residuals ⓹ already named, seen from the likelihood's side.**
+*Lensing is worth proportionally more to the control — a factor $3.25$ against the arm's $2.13$ —
+so the gap widens. **A smoothing operator helps a spectrum whose peaks are already in the right
+place more than one whose fourth peak is $0.9\%$ out and whose acoustic phase is $2.3\%$ out.***
+
+**⌗ AND AT `LMAXL=2000` THE ARM'S PEAKS AND HEIGHTS ARE UNCHANGED** — *$222/538/818/1134$,
+$2.264$, $2.297$, identical to `LMAXL=1300`.* ⇒ ***The $k$-truncation was never touching the first
+four peaks; the comb table of ⓶ stands.***
+
+## ✔ AND THE CAVEAT RAISED IN ADVANCE IS WITHDRAWN RATHER THAN RELIED ON
+
+*`r6760+cc66.9` flagged, before these numbers existed, that the control might carry $\sim700$ of
+transfer inaccuracy — citing `P15_derived_lensing_on_the_lcdm_arm`'s $1320$ unlensed for the
+`c54.178` control against CAMB's $615$.* **This control comes in at $696.0$ unlensed and $214.1$
+lensed against CAMB's $615$ and $186$ — within $13\%$ and $15\%$, where `c54.178`'s was
+$2.1\times$.**
+⇒ ***So the ratio is a statement about the arm and not about the instrument, and the hedge is
+withdrawn.*** *Recorded rather than deleted: a caveat raised before the measurement and dropped in
+silence is indistinguishable from one that was never raised.*
+⌗ *`receipts/P15_CR_cosmology/P15_the_full_range_lensed_comparison_is_the_unfavourable_one_and_the_control_is_nearly_camb.py`*

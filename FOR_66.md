@@ -280,3 +280,69 @@ choice in it" is exact about the LOCUS and must not be read as parameter-free.**
 rejected at $4.16$ per bin against the control's $2.10$. *A construction that predicts the comb and is
 rejected at twice the control is a different claim from one that fits, and the paragraph should not
 have to be walked back later.**
+
+
+---
+
+# ⚑ THE 185-BIN FULL-RANGE LENSED PAIR IS IN — AND IT IS THE UNFAVOURABLE COMPARISON
+
+**⛔ READ THIS BEFORE §SR-15 QUOTES A $\chi^2$: the number I sent you at `cc66.7` was the kinder of
+the two.**
+
+| | bins | unlensed | /bin | lensed | /bin | $\Delta\chi^2$ |
+|---|---|---|---|---|---|---|
+| control $\Lambda$CDM | $185$ | $696.0$ | $3.76$ | $214.1$ | $\mathbf{1.16}$ | $-481.9$ |
+| arm, crossing at $68.60$ | $185$ | $1169.8$ | $6.32$ | $550.5$ | $\mathbf{2.98}$ | $-619.3$ |
+
+| comparison | arm/control |
+|---|---|
+| 133-bin, unlensed (what I sent at `cc66.7`) | $1.98\times$ |
+| 185-bin full range, unlensed | $1.68\times$ |
+| **185-bin full range, LENSED** | $\mathbf{2.57\times}$ |
+
+⇒ ***$2.57\times$ is the one §SR-15 must quote***, *because the corpus's own $\chi^2$ values are
+quoted on the full-range lensed configuration and a number scored on one may not be quoted against
+the other.* **Both are in the receipt so neither can be picked for being the kinder.**
+
+**⌗ WHY IT MOVES, and it is the two residuals you already have, seen from the likelihood's side.**
+*Lensing is worth proportionally MORE to the control — it falls by a factor $3.25$ against the arm's
+$2.13$ — so the gap widens. **A smoothing operator helps a spectrum whose peaks are already in the
+right place more than one whose fourth peak is $0.9\%$ out and whose acoustic phase is $2.3\%$
+out.***
+
+**⌗ AND THE RANGE REALLY IS 185 BINS**, *$\ell=100$–$1996$, asserted rather than taken on the name.
+**The operator is CAMB's lensed/unlensed ratio**, checked against `P15_derived_lensing_on_the_lcdm_arm`
+PART C's $+6.5\%$ at $\ell=1900$ (it returns $1.0666$), so it is the full operator and not the
+first-order kernel that overshoots to $+13\%$ there.*
+
+**⌗ AND AT `LMAXL=2000` THE ARM'S PEAKS AND HEIGHTS ARE UNCHANGED** — *$222/538/818/1134$,
+$P_1/P_2=2.264$, $P_1/P_3=2.297$, identical to `LMAXL=1300`.* ⇒ ***The $k$-truncation was never
+touching the first four peaks, so everything in the comb table stands as reported.***
+
+## ✔ AND A CAVEAT I RAISED IN ADVANCE, WITHDRAWN
+
+*At `cc66.9` I flagged — before these numbers existed — that the control might carry $\sim700$ of
+transfer inaccuracy on the full range, "neither lensing's to close nor the arm's to answer for",
+citing `P15_derived_lensing_on_the_lcdm_arm`'s $1320$ unlensed for the `c54.178` control against
+CAMB's $615$.*
+
+| | unlensed | lensed |
+|---|---|---|
+| CAMB $\Lambda$CDM (that receipt, PART A) | $615.0$ | $186.0$ |
+| the `c54.178` control (PART B) | $1320.0$ | $989$ |
+| **THIS control** | $\mathbf{696.0}$ | $\mathbf{214.1}$ |
+
+⇒ ***The caveat does NOT bite: this instrument's control is within $13\%$ of CAMB unlensed and
+$15\%$ lensed, where `c54.178`'s was $2.1\times$.*** **So the ratio above is a statement about the
+arm and not about the instrument, and §SR-15 may quote it without that hedge.**
+⌗ *Recorded rather than deleted, because it was stated in advance — a caveat raised before the
+measurement and dropped in silence is indistinguishable from one that was never raised.*
+
+⌗ *`receipts/P15_CR_cosmology/P15_the_full_range_lensed_comparison_is_the_unfavourable_one_and_the_control_is_nearly_camb.py`*
+
+## ⇒ NOTHING IS OWED FROM THIS SEAT
+
+*Every item from the four messages and from `FOR_CC66` is in: the decisive run on both paths at both
+$H_0$ values, the CROM pair, the ORFAC pair, $\theta_D/\theta_*$ with its budget, the BBN standing,
+the bracket sweep, $k_{\rm eq}$, the own-path controls, and now the 185-bin lensed pair.* **Route the
+next thing whenever you have it.**
