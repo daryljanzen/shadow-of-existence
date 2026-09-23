@@ -460,6 +460,18 @@ sources: [cowork, chat]
 **⌗ WHERE THE UNIVERSE BEGINS, AND WHERE THE REASSIGNMENT ACTS.** *Read at P7 `rem:perspectival-singularity`, `thm:cosmogenesis` and r2123/r2291: the beginning is the branch point $r=0$; the causal reassignment and the physical seeding act on the collapse horizon, whose degenerate member is the Nariai horizon at the seam — two loci at two levels. **So `THE_PLAN` A2.11's question of which landmark begins the observable cosmology is answered: $r=0$**, and the 7.06 Gyr figure is the expanding leg's front-seam passage, its exit from the lap. The map's naming rule no longer places the reassignment at the branch point, and its P1 card no longer calls the completion of collapse the beginning.*
 **⌗ WHERE $\hbar$ ENTERS.** *The map's P17 card placed it at the branch point, which is not a seam and carries no thermal state; it now reads the de~Sitter cosmological horizon (P10). The map's one-constant clause carries the geometric-ledger scope P17 and P18 state. `THE_PLAN` A5.1 likewise.*
 **⌗ Node 66 registered** in `corpus/node_roster.txt`, band `L-6600`–`L-6699`; this line's revisions are labelled `r<main base>+66.<k>`.
+### Revision r6778 — 2026-09-23 (node 64). **The reading is propagated across the corpus; the figure pass is not done, and the same seven figures stand in `P07` and `P18`.**
+
+**⌗ WHAT LANDED.** *`P06`, `P12`, `P16`, `P17` and `P18` brought to `P15`'s reading, the ontology map with them, and four spent wisdom scraps retired into the record. Five papers recompiled at zero errors and zero undefined, pages regenerated, clean on every rule, 105 gates green but `check_receipts_run`.*
+
+**⌗ AND THE FIGURE PASS IS A SEPARATE PASS, NOT YET RUN.** *Checked across every paper rather than only the ones touched: `P07` and `P18` both still carry $\ell_{1}/\ell_{A}=0.6830$ against the sky's $0.7312$, the height ratios $1.759$ and $1.612$, the fourth peak $1196$, and the likelihood as $118.4$ in $\chi^{2}$ per bin against the control's $2.10$; `P18` also carries $82.05$ per bin. `P15` states none of the seven. The sky's own $2.217$ and $2.277$ do survive in `P15` and are not at issue.*
+
+**⌗ ONE CANDIDATE RULED OUT ON INSPECTION.** *`P16`'s $0.018$ is its own sound speed at turnaround, not a quantity `P15` dropped, and needs no change.*
+
+**⌗ AND THE ONE THAT CANNOT BE SUBSTITUTED.** *`P15` reports the likelihood as $\chi^{2}=397.13$ against $206.44$ with five free parameters each --- a total, not a per-bin figure over a stated bin count --- so the sentence carrying it in `P07`, and its counterpart in `P18`, has to be rewritten rather than renumbered. One rewriting serves both. The verdicts both papers draw stand, and the $6.6\%$ deficit survives in `P15`; it is the supporting figures that come from the abandoned configuration.*
+
+
+
 ### Revision r6776 — 2026-09-23 (node 64). **`P07`'s handover pass landed, and the five acoustic figures it still carries from the superseded configuration named.**
 
 **⌗ WHAT LANDED, AND IT IS SOUND.** *`P07` no longer carries the dissolution or the one-parameter accommodation, and the inherited-boundary-data paragraph now states the acoustic scale as computed from the rate at the branch point rather than calibrated against it --- which is `P15`'s resolution, carried across correctly. Compiles at zero errors and zero undefined; clean on every rule; 105 gates green but `check_receipts_run`.*
