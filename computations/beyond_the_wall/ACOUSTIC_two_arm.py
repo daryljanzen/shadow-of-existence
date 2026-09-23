@@ -113,6 +113,22 @@ else:
 # *Default 1.0 = byte-identical.  z_eq(ORFAC) = Om/(ORFAC*Or) - 1, so ORFAC = 1.1418 puts the arm's
 #  equality at the control's 3447 and 1.3119 puts it at 3000.*
 OR = float(os.environ.get('ORFAC', '1.0')) * OR
+# ** CROM: THE SECOND ROUTE TO THE EQUALITY -- r6760+cc66.4, at 66 (chat)'s amendment. **
+# *`ORFAC` moves z_eq through the RADIATION at fixed matter, which at fixed T_CMB has nowhere to
+# put the excess but the neutrino sector: it is a Delta N_eff, and it is NOT how this arm's own
+# equality arises.  z_eq = 3936 here IS omega_m = 0.1634 against LCDM's 0.1431 -- H0 = 73 at
+# Omega_m = 0.3066.*
+#   ⇒ ** So the same z_eq range is reachable a second way, through Omega_m at fixed h, and the two
+#   routes are not equivalent: the radiation route moves ONLY the radiation, while this one moves
+#   Omega_Lambda = 1 - Omega_m and therefore D_M and the whole projection with it. **  *That
+#   confound is inherent -- omega_m cannot move without the matter density moving -- so it is
+#   reported rather than removed: the peak POSITIONS are printed beside the ratios so the shift is
+#   visible, and P1/P3, being a ratio, is the quantity to read across the scan.*
+# *z_eq(CROM) = CROM/Or - 1, so 0.2685 puts the arm's equality at the control's 3447 and 0.2337 at
+#  3000 -- the same two points `ORFAC` reaches through the radiation.  Default unset = byte-identical.*
+_crom = os.environ.get('CROM')
+if _crom and ARM != 'lcdm':
+    OM = float(_crom)
 OL = 1.0 - OM
 A_REC = 1.0 / (1.0 + Z_REC)
 RB_REC = 31500 * OMBH2 / (2.7255 / 2.7) ** 4 / (1 + Z_REC)
