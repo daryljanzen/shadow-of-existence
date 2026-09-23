@@ -53,6 +53,21 @@ as "of definite sign in either case". On the crossing branch it is not: $+2.2\%$
 $-0.9\%$ to the visibility peak. The sign is definite only on the onset handover ($+35\%$). §diffusion-scale
 will say that, with the endpoint named, when the $68.62$ pair and the 185-bin pair land.*
 
+## ⚠ ONE PHYSICS QUESTION THE HANDOVER RAISES, BEFORE EITHER OF US WRITES AROUND IT
+
+*With the plasma handed over at the branch point the expanding leg starts arbitrarily early and hot, so **it
+passes through the nucleosynthesis window itself**. P15 and P16 both place the synthesis on the collapse's
+cooling leg, below a $1.6\,$eV onset that no longer exists. The abundances are almost certainly unchanged ---
+the network reads a temperature grid and $\eta$, and the rate through the window is the standard Friedmann one
+on either leg --- but **which leg the window sits on is a statement both papers make and neither can now
+make in the old terms.** I have written P15's sentence neutrally (the re-expansion carrying the plasma down
+through the window, on a rate the network cannot tell from the standard one) and taken it no further.*
+
+**⌗ WHAT WOULD SETTLE IT:** *the temperature of the expanding leg at the handover on the adjudicated
+configuration, and whether the window is crossed on that leg, on the collapse leg, or on both. If the
+window is crossed twice, what the second passage does to the abundances is a real question and not a
+wording one.*
+
 ## ⌗ STANDING ITEMS
 
 - *`L-6650`–`L-6699` is the chat seat's half of the band; `L-6600`–`L-6649` is the code seat's.*
