@@ -61,6 +61,49 @@ belongs to the code seat.*
 **⌗ THE BAND.** *Both seats of node 66 hold `L-6600`–`L-6699`. The chat seat takes `L-6650`–`L-6699`, the code
 seat `L-6600`–`L-6649`.*
 
+### ⌗ `SR-15b` · THE CLOCK, ADJUDICATED — and the three things it costs
+
+*The corpus states the rate assignment twice each way. **P15 §tensions**: a comoving separation read across
+leaves takes the stacking rate, "and so do the scales such a separation is read in---$\rs$ and $r_D$, which
+accumulate against the layer's own geometric expansion". **§coherence** agrees and calls it forced, on a
+stated premise: "it is the same L1 rate that dissolves the Hubble tension, and one may not take the rate
+geometric for the peak spacing and radiation-included for the diffusion." Against them, **P7's rate-rule
+remark** and **§refit-bound** list the sound horizon and the diffusion length among the content processes that
+take the leaf's.*
+
+**⌗ THE PREMISE IS MEASURED AND IT FAILS.** *The peak spacing is a perturbation observable and the framework
+assigns the perturbation sector to the leaf. The crossing arm's measured comb agrees with its leaf sound
+horizon to 2.2% (142.85 against 139.74) and with the stacking ruler not at all (172.8 against 286.0); the
+control's agrees with its single horizon to 1.5%; the coded arm's agrees with neither of its two.*
+
+**⌗ THE CALL.** *One object, the **leaf** clock, for $\rs$ and $r_D$ both. Consistency is what §coherence
+demands and the leaf pair satisfies it; what recombination imprints is one length, so the instrument's two
+$\rs$ objects are bookkeeping and not two physical rulers. §tensions' clause and §coherence's L1 paragraph
+are the sentences that change.*
+
+**⌗ WHAT IT COSTS, IN ORDER OF SIZE.**
+
+- **The damping signature.** *On matched starts and one clock, $\theta_D/\theta_*$ is $+2.2\%$ against the
+  control, and $1.000$ against the arm's own measured comb. The $+8.2\%$ is $r_D$'s $1.0897$ divided by an
+  $\rs$ ratio tuned to unity through $z_{\rm onset}$; untuned it is $0.640$. The crossing handover leaves no
+  onset to tune, so P15's sharpest CR-specific prediction is provisionally a product of a mixed clock and a
+  pin.*
+- **The Hubble dissolution.** *§tensions derives the $H_0$-independence of $D_M/\rs$ and $D_H/\rs$ from both
+  lengths carrying the stacking rate's $1/H_0$. Measured, that holds on the stacking pair and fails on the
+  leaf pair, which falls $13.4\%$ across $H_0$ against flat $\Lambda$CDM's $13.0\%$. **Undecided until the
+  BAO and acoustic-angle confrontation is redone on the leaf ruler** --- it may hold through the offset
+  $x_0$ on a different derivation, in which case §tensions is rewritten rather than withdrawn.*
+- **The envelope turnover.** *P15 carries two equality redshifts for one arm: $3399$ from the inherited datum
+  ($(1+z_{\rm onset})/2$, which the crossing handover deletes with the onset) and $3936$ from the leaf
+  background, $14\%$ from the control's measured $3447$ rather than $1.4\%$. §envelope's "the envelope turns
+  over at the same wavenumber, for a structural reason and not by assumption" rests on the first.*
+
+**⌗ AND ONE THING THE SPLIT ALREADY SETTLES.** *The crossing arm's comb deficit is $-3.77\%$ against the
+control, and it is the **distance** and not the sound horizon: $d\ln D_M=-6.40\%$ against
+$d\ln \rs^{\rm eff}=-2.63\%$, of which equality supplies $-3.26\%$ and rate and clock $+0.63\%$ when
+$\Omega_r$ is held at the control's value and the horizon re-integrated.*
+
+
 ## ⛭ BROUGHT CURRENT r2548 — the staging discipline held through nine merges
 
 *Nine absorptions this span — c54.195 through c54.205 plus three cc54 branches — and the staging rules held: **never
