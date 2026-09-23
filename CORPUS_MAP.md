@@ -146,6 +146,10 @@ sources: [cowork, chat]
 
 
 
+### Revision r6772+66.22 — 2026-09-21 (node 66, chat seat). **The driving subtraction stated on the control, with the arm's own measurement routed rather than quoted from the configuration it was taken in.**
+**⌗ THE PARAGRAPH.** *It carried the pinned arm's subtraction --- first peak $206$ to $340$, $\ell_1/\ell_A$ $0.6830$ to $1.1273$, $2.4$ times the control's shift, and the conclusion that the arm overshoots rather than falls short. Those are the old configuration's numbers. The section now gives the closed-form statement of where the wavenumber dependence lives, the control's own subtraction ($220$ to $276$, a shift of $0.1858$) as the measurement of the driving, and says the same subtraction on this arm is what the phase residual is to be read against; the measurement is routed to the code seat in `FOR_CC66`.*
+**⌗ AND THE FRONTIER ITEM.** *Its "the driving's size is measured, and it overshoots rather than falls short, so it does not account for the deficit, and no mechanism for it is in hand" now states what the transfer leaves: a phase residual of $2.3\%$ and the fourth peak $0.9\%$ high, the comb right to a part in six hundred.*
+
 ### Revision r6772+66.21 — 2026-09-21 (node 66, chat seat). **§refit-bound's instrument checks state what they establish without the directional conclusion the old arm's heights carried.**
 **⌗ THE PARAGRAPH.** *It ended by saying the polarisation source lands the control on the sky "because the control was above it" and carries this arm "further below because it was already there", and gave the damping operation as bringing the heights from $13$--$34\%$ to $2$--$3\%$. The arm's heights are no longer below the sky, so the directional reading is gone; the checks remain, each stating what it establishes --- the truncation's removal measured on the control, the damping derived on each arm's own opacity and rate rather than imported, the polarisation source pulling both arms by comparable amounts, and nothing about either operation differing between them.*
 

@@ -68,6 +68,15 @@ configuration, and whether the window is crossed on that leg, on the collapse le
 window is crossed twice, what the second passage does to the abundances is a real question and not a
 wording one.*
 
+## ⌗ ONE MEASUREMENT P15 NOW POINTS AT AND DOES NOT HAVE
+
+*§refit-bound's driving-subtraction paragraph carried the pinned arm's numbers --- first peak $206\to340$,
+$\ell_1/\ell_A$ $0.6830\to1.1273$, $2.4$ times the control's shift. Those are the old configuration's and
+are out. **What the section now says is that the same subtraction on the adjudicated arm is what the phase
+residual is to be read against, and it quotes only the control's ($220\to276$, $0.1858$).** When the queue
+allows: removing every coupling to the potential on the crossing arm at $(68.60,\,0.2973)$, both paths,
+reporting the first peak, $\ell_1/\ell_A$ and the shift against the control's.*
+
 ## ⌗ STANDING ITEMS
 
 - *`L-6650`–`L-6699` is the chat seat's half of the band; `L-6600`–`L-6649` is the code seat's.*
