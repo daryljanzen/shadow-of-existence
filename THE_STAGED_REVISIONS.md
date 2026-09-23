@@ -98,6 +98,29 @@ are the sentences that change.*
   background, $14\%$ from the control's measured $3447$ rather than $1.4\%$. §envelope's "the envelope turns
   over at the same wavenumber, for a structural reason and not by assumption" rests on the first.*
 
+### ⌗ `SR-15f` · THE P15 REWRITE IN PROGRESS — what is consistent, and what is not yet
+
+*The handover fork is adjudicated (§SR-15d): the crossing is the handover, the onset was a repair. P15 is being
+rewritten to that reading section by section, and **the paper is internally inconsistent until the list below
+is empty.** It is recorded here so nothing is carried into a gate as though it were finished.*
+
+**⌗ REWRITTEN.** *§tensions' rate clause (both plasma scales take the leaf's rate, with the comb reproducing
+that integral and not the other); §tensions' Hubble paragraph (the angle and the distances fix $H_0$ together
+at ${\simeq}68.5$, the ladder discrepancy left where the standard model leaves it); §tensions' acoustic-scale
+paragraphs (computed rather than accommodated, the sound horizon carrying no early-universe parameter, the
+fitted-onset configuration named as reporting an angle its own spectrum does not have); §tensions' load-bearing
+claim; §coherence's codings (the single-locus state and the limit that fixes it); §envelope's equality.*
+
+**⌗ NOT YET, AND EACH STILL READS ON THE FITTED ONSET.** *§tensions' inherited-datum block (the radiation
+amplitude as the onset restated, and the naturalness argument built on it) --- **22 onset-dependent phrases,
+the largest remaining block**; the masthead comment and the introduction (9 and 4); the proposition on where
+the modes stand at the onset (5); §refit-bound (4); §diffusion-scale (4); §coherence, §envelope,
+§envelope-consequence, §largescale, §transmission and the conclusion (1--2 each).*
+
+**⌗ AND THEN OUTWARD.** *P7 carries the dissolution in ten places, P6, P12, P16, P17 and P18 in one each; the
+ontology map, `THE_PLAN`, the wisdom ledger, the physical-values ledger and the unfinished list carry it too.
+None of those should move until P15 is consistent.*
+
 ### ⌗ `SR-15e` · THE THREE THAT DO NOT WAIT ON THE FORK — finished prose, ready to paste
 
 *Each of these is established on both handover branches and on both instrument paths, so landing them does not
