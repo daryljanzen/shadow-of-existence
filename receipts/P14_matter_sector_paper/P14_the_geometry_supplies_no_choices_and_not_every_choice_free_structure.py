@@ -60,8 +60,12 @@ P14's own ledger of what is delivered.
   inside it, and SU(3) the factor the world's baryons select, since gauging the whole U(3) would forbid
   them (r6742).  The weak su(2)'s chiral action needs a choice of handedness, so it is not choice-free.
   What remains choice-free and not supplied is the LOCAL gauging -- a connection with curvature -- which
-  the world forces and the structure neither supplies nor obstructs: it carries no connection and no
-  curvature, and both reasons once given for saying it could not carry one have fallen (r6747, r6748).
+  the world forces and the structure neither supplies nor obstructs.  The reason is where the object
+  lives: the three-dimensional space is ker D, a property of a whole leaf, so there is one such space per
+  member and the bundle sits over the SPACE OF MEMBERS, with no spacetime bundle for a connection to be
+  on.  A constant rotation keeps a field in the kernel and a position-dependent one does not, which is
+  the precise sense in which the symmetry is global; the connection that would close the gap must be put
+  in (r6752).
 
   ==> *** On breakings, r6491's law stands as it was stated.  Extended to the whole ledger, what holds
       in every entry is:
@@ -82,8 +86,9 @@ P14's own ledger of what is delivered.
       Standard Model's free parameters sit, and the law places them there.
 
     THE LOCAL GAUGING -- choice-free and not supplied.  The law does not forbid it, the structure does
-      not obstruct it (r6747, r6748), and the world forces it; what the structure does not do is supply
-      a connection or a curvature.  Colour's GLOBAL group is not in
+      not obstruct it (r6747, r6748), and the world forces it.  What the structure does not do is supply a
+      connection, and the reason is that the seats are a section and not a frame: the bundle is over the
+      space of members, not over spacetime (r6752).  Colour's GLOBAL group is not in
       this row: it is supplied, as the symmetry of the seats' degeneracy (r6742).  Two routes to a
       continuous group were already closed -- P14's list of the substrate's own bundles, and every
       rotation of the substrate (r6725) -- and a third, through the compact face, needs a choice of
