@@ -146,6 +146,10 @@ sources: [cowork, chat]
 
 
 
+### Revision r6754+66.1 — 2026-09-21 (node 66). **P15, first pass (abstract through §what-crosses read in full): one cross-reference that pointed at a withdrawal rather than at the argument.**
+**⌗ THE ONE.** *§tensions' reading of the inherited radiation amplitude sent the reader to "the withdrawal two paragraphs below"; what stands there is the naturalness argument and why it fails, so the sentence now points at that paragraph by what it contains.*
+**⌗ READ SO FAR.** *The abstract, the introduction, §background (the reassignment and the Nariai selection, the proper-frame derivation, the recovery of flat $\Lambda$CDM and the amplitude fixed by $\Lambda$), §tensions (the three rate-levels, the Hubble tension, the acoustic scale as a one-parameter accommodation, the inherited datum and why $\eta$ is transmitted rather than determined, the synthesized composition, the distance-ladder confrontation), the onset-census proposition with its guard against reading it at the branch point, and §what-crosses. Nothing else in that span needed changing.*
+
 ### Revision r6750+66.4 — 2026-09-21 (node 66). **P16 worked and read through in its final state: one locus, and nothing else.**
 **⌗ THE ONE.** *§scoping's three-level rule gave the foliation-level stacking rate as "what the observable cosmology rides from the seam outward", where the same section says a dozen lines later that the observable cosmology rides it from the branch point onward; now it says that in both places.*
 **⌗ WHAT WAS CHECKED AND STANDS.** *Every other "seam" in P16 is the degenerate Nariai member the reassignment uses, named as such and kept apart from the crossing by the paper's own argument. The synthesis spine, the peak-temperature floor and its recollapse threshold, the two rate-objects and why no decoupling mechanism is owed, the interior's parity split and the two monodromies, the network's abundances and the $N_{\mathrm{eff}}$ note all read as written.*
