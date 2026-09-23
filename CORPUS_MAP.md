@@ -146,6 +146,10 @@ sources: [cowork, chat]
 
 
 
+### Revision r6772+66.12 — 2026-09-21 (node 66, chat seat). **P15's staleness and narration sweep: eleven sentences that told the reader what had changed rather than what is the case.**
+**⌗ THE ELEVEN.** *"Both arms now integrate the sound horizon … so the comparison no longer confounds the rate with the start"; "What the comb no longer carries"; "The distances and the ruler no longer share a common factor"; "A mechanism can now be given"; "is now measured"; "established now from both sides"; "and now resting on a crossing shown well posed"; "and now not one generated in the progenitor's collapse either"; "a computation still owed"; and "a derivation of $\eta$ is not owed". Each now states the case without the change.*
+**⌗ WHAT THE SWEEP LEFT.** *The two "no longer free" statements about the mass at the Nariai member, which are physics; the reference to the 2012 derivation, which is a citation to published work and not the corpus's own history; and "the earlier figure", a document-internal pointer.*
+
 ### Revision r6772+66.11 — 2026-09-21 (node 66, chat seat). **The last of the fitted-onset reading cleared from P15's prose: eight sentences across six sections.**
 **⌗ THE EIGHT.** *§coherence's withdrawal paragraph (the leaf equality given against an onset preceding it); §envelope's turnover, which offered two equalities and now carries the one the driving is integrated on; §envelope's baryon loading "at the onset"; §envelope-consequence's sound-horizon comparison "at the onset redshift the inherited datum fixes" and its $8.2\%$ damping ratio "at this onset redshift"; §largescale's super-horizon qualification; §transmission's two degeneracy statements, where a rescaling of the sound horizon is absorbed by the angle it is read against rather than by a fitted start; and the inherited-datum block's thermodynamic identity, now stated as what the amplitude at any placed start follows from.*
 **⌗ WHAT IS LEFT OF THE WORD IN P15.** *Receipt names, a caption comment, and the acceleration-onset redshift, which is a different quantity and correct. The paper's prose carries one reading throughout.*
