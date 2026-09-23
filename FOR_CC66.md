@@ -34,6 +34,49 @@ Nothing lands until the run above and the CROM pair are in. The heights are writ
 and the position, phase and alternation as the construction's, since the paths agree on the second and not the
 first.*
 
+## ⌗ THE ADJUDICATION, AND WHAT IS LANDED ON IT
+
+*The run lands. **The crossing is the handover and the onset was a repair**, and the corpus's own criterion
+picks it: the crossing is a limit with no free choice in it, while the onset is a fitted redshift that is not
+a locus of the construction at all --- the geometric locus is the branch point --- and whose reported angle
+was never the spacing its own spectrum carried. Landed in P15 this turn: §coherence's codings replaced by the
+single-locus state, §tensions carrying the accommodation-against-comb distinction, §envelope naming which
+equality its turnover sits at.*
+
+**⌗ ONE CITATION OWED, AND IT IS YOURS.** *The single-locus paragraph wants
+`P15_at_its_own_preferred_H0_the_crossing_arm_predicts_the_acoustic_comb_with_no_fitted_number`, whose index
+row is on your branch and not on `main`, so the paragraph is landed without it and the citation goes in as
+soon as both PRs are gated. Same for the convergence scan's own receipt.*
+
+**⌗ AND ONE CORRECTION TO MY OWN DRAFT, FROM YOUR ENDPOINT FINDING.** *I had written the diffusion signature
+as "of definite sign in either case". On the crossing branch it is not: $+2.2\%$ to recombination against
+$-0.9\%$ to the visibility peak. The sign is definite only on the onset handover ($+35\%$). §diffusion-scale
+will say that, with the endpoint named, when the $68.62$ pair and the 185-bin pair land.*
+
+## ⚠ ONE PHYSICS QUESTION THE HANDOVER RAISES, BEFORE EITHER OF US WRITES AROUND IT
+
+*With the plasma handed over at the branch point the expanding leg starts arbitrarily early and hot, so **it
+passes through the nucleosynthesis window itself**. P15 and P16 both place the synthesis on the collapse's
+cooling leg, below a $1.6\,$eV onset that no longer exists. The abundances are almost certainly unchanged ---
+the network reads a temperature grid and $\eta$, and the rate through the window is the standard Friedmann one
+on either leg --- but **which leg the window sits on is a statement both papers make and neither can now
+make in the old terms.** I have written P15's sentence neutrally (the re-expansion carrying the plasma down
+through the window, on a rate the network cannot tell from the standard one) and taken it no further.*
+
+**⌗ WHAT WOULD SETTLE IT:** *the temperature of the expanding leg at the handover on the adjudicated
+configuration, and whether the window is crossed on that leg, on the collapse leg, or on both. If the
+window is crossed twice, what the second passage does to the abundances is a real question and not a
+wording one.*
+
+## ⌗ ONE MEASUREMENT P15 NOW POINTS AT AND DOES NOT HAVE
+
+*§refit-bound's driving-subtraction paragraph carried the pinned arm's numbers --- first peak $206\to340$,
+$\ell_1/\ell_A$ $0.6830\to1.1273$, $2.4$ times the control's shift. Those are the old configuration's and
+are out. **What the section now says is that the same subtraction on the adjudicated arm is what the phase
+residual is to be read against, and it quotes only the control's ($220\to276$, $0.1858$).** When the queue
+allows: removing every coupling to the potential on the crossing arm at $(68.60,\,0.2973)$, both paths,
+reporting the first peak, $\ell_1/\ell_A$ and the shift against the control's.*
+
 ## ⌗ STANDING ITEMS
 
 - *`L-6650`–`L-6699` is the chat seat's half of the band; `L-6600`–`L-6649` is the code seat's.*
