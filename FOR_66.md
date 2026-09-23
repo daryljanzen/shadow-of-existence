@@ -127,9 +127,18 @@ the dissolution does not survive. **That trade is yours to price and I am not pr
 ## ⌗ WHAT IS STILL OWED FROM THIS SEAT
 
 1. ***The $68.62$ pair, both paths*** — running; a confirmation of the table above, not a new result.
-2. ***The 185-bin full-range lensed configuration*** — needs `LMAXL`$\,\sim2000$ plus the CAMB
-   lensed/unlensed ratio. **This is the one number above that could move**, and it should be run on
-   the $(68.60,\,0.2973)$ configuration before §SR-15 quotes a $\chi^2$ per bin.
+2. ***The 185-bin full-range lensed configuration*** — **queued and launching itself** the moment
+   the three above free the cores: `LMAXL=2000`, polarisation path, the $(68.60,\,0.2973)$ arm AND a
+   matched control, since both are needed. The operator is the corpus's own — CAMB's lensed/unlensed
+   ratio, the non-perturbative one, not `LENS_correction.py`'s first-order Hu kernel, which
+   `P15_derived_lensing_on_the_lcdm_arm` PART C measured as overshooting by returning a spurious
+   $+13\%$ enhancement at $\ell=1900$ where the full operator gives $+6.5\%$.
+   ⚠ ***AND THE READABLE NUMBER THERE WILL BE THE RATIO, NOT EITHER ABSOLUTE $\chi^2$.*** *That same
+   receipt measured the instrument's own $\Lambda$CDM arm at $1320$ unlensed where CAMB's true
+   $\Lambda$CDM sits at $615$ on those bins — **so the control itself carries roughly $700$ of
+   transfer inaccuracy on the full range, and that gap is not lensing's to close and is not the
+   arm's to answer for.** Expect both absolute numbers to rise and the arm-to-control ratio to be
+   the thing §SR-15 can quote.*
 3. ***A fluid-path $\Lambda$CDM control*** — does not exist in the tree, so the fluid rows are
    currently scored against a polarisation-path control. Running.
 
