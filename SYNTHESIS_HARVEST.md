@@ -1,7 +1,7 @@
 ---
 name: synthesis-harvest
 kind: WORKING
-current: r4009
+current: r6758
 job: The harvest the synthesis paper is written from — every substantive result of the corpus, at its own register, with its home, its anchor, its joins, and what it is NOT operative for. Read WHILE BUILDING OR UPDATING THE SYNTHESIS, and when working a frontier item that needs to know everything the corpus already holds about it.
 ---
 
@@ -2120,9 +2120,9 @@ note to self carries the same risk and matches no keyword. **A comment sweep is 
 ⑤ JOINS — [[p15-cr-cosmology]] · [[p7-cr-framework]] · [[p16-cosmogenesis]].
 ⑥ NOT OP FOR — **⛔ WHAT THEY DO NOT BEAR ON**: *the acoustic **scale** and the Hubble tension, which are settled elsewhere on the rate and are not what either row is about* — the scale is a one-parameter accommodation and it is spent, and confusing the deficit with it re-opens a resolved item. **And PO-13's own recorded diagnosis is refuted** (`r4145`), so the row's object stands and its answer does not. ⇒ **WHAT WOULD DISCHARGE THEM:** the two-arm transfer run to convergence on the arm whose answer is not independently known, and a mechanism for the residual it returns.
 
-### the-seven-carried-unaltered-and-why-that-is-a-result
-① CLAIM — **PO-23** (the ultraviolet definition of the mode sums), **PO-25** (the charged bead does not close, and the limit is singular), **PO-26** (the compact-face fermion sector), **PO-27** (empirical coherence as an independent ground), **PO-28** (the adiabatic residual at the largest scales), **PO-29** (the attribution of $-M/r^3$), **PO-30** (the curve's own dynamics — a generative law for the matter content). *Each checked against the papers as they now stand and **carried unaltered**.*
-② REGISTER — **OPEN, seven, unchanged.**
+### the-seven-and-where-they-now-stand
+① CLAIM — **PO-23** (the ultraviolet definition of the mode sums), **PO-25** (the charged bead does not close, and the limit is singular), ~~**PO-26**~~ (the compact-face fermion sector, **struck `r6463`**), **PO-27** (empirical coherence as an independent ground), **PO-28** (the adiabatic residual at the largest scales), **PO-29** (the attribution of $-M/r^3$), ~~**PO-30**~~ (the curve's own dynamics, **struck `r6758`**: the geometry supplies no choices, and under it colour's global group converted). *Each checked against the papers as they now stand.*
+② REGISTER — **five open, two struck.**
 ③ HOME — `THE_REGISTER`.
 ④ ANCHOR — each row's own.
 ⑤ JOINS — [[p10-canonical-time]] (PO-23, PO-28) · [[p3-sds-slicing]] (PO-25) · [[p13-boundary]] (PO-26, PO-27) · [[p12-algebroid]] (PO-29) · [[p8-slicing-operator]] (PO-30).
