@@ -286,9 +286,21 @@ print(f"""
   and 5.8 at another is not "where radiation stops mattering"; it is a fitted redshift, and PART 3's
   flatness is bought with it.
 
-  ⇒ ** So sec:tensions can keep its conclusion and cannot keep its argument, and the honest form of
-    the claim on the leaf clock is weaker: H0 is not FORCED by BAO, rather than H0 is ABSENT from
-    it. **
+  ⇒ ** AND THE TWO LEAF BRANCHES NEED TWO DIFFERENT SENTENCES, r6760+cc66.8 at 66 (chat)'s
+  reading -- an earlier draft of this receipt gave them one and that was wrong: **
+
+      *leaf ruler, ONSET RETAINED* -- sec:tensions keeps its CONCLUSION and not its ARGUMENT.  The
+      fit does hold across H0 = 70-80, so H0 is not FORCED by BAO; but it holds by the onset
+      moving, not by H0 cancelling, so "H0 is ABSENT from it" no longer follows.
+
+      *leaf ruler, NO ONSET* -- ** sec:tensions keeps NEITHER. **  This branch re-pins H0 to
+      {best_fine['H0']:.2f} and breaks at 73 ({[r for r in leaf_noonset if r['H0'] == 73.0][0]['chi2'] / NDOF:.1f} per dof).
+      There is no dissolution here at all: BAO on this ruler forces a low H0 exactly as LCDM's
+      does, and the acoustic angle independently agrees with it.
+
+  *Which branch the corpus takes is not this receipt's to choose.  What it may not do is carry one
+  sentence for both, and the branch that produces the CR spectrum's best acoustic comb
+  (r6760+cc66.7) is the second one -- the branch on which the dissolution does not survive.*
 """)
 
 print("=" * 99)

@@ -2948,8 +2948,20 @@ flatness is bought with it.***
 the observed $0.0104085$ at $H_0=68.55$; BAO on the same ruler prefers $68.50$. **Two different
 datasets, 0.05 apart in $H_0$.***
 
-⇒ ***`sec:tensions` can keep its conclusion and cannot keep its argument. The honest form on the
-leaf clock is weaker: $H_0$ is not FORCED by BAO, rather than $H_0$ is ABSENT from it.***
+⇒ ***AND THE TWO LEAF BRANCHES NEED TWO DIFFERENT SENTENCES*** — *the chat seat's correction to
+my own wording, which gave them one:*
+
+*· **leaf ruler, onset retained**: `sec:tensions` keeps its CONCLUSION and not its ARGUMENT. The fit
+does hold across $H_0=70$–$80$, so $H_0$ is not FORCED by BAO; but it holds by the onset moving
+rather than by $H_0$ cancelling, so "$H_0$ is ABSENT from it" no longer follows.*
+
+*· **leaf ruler, no onset**: **`sec:tensions` keeps NEITHER.** This branch re-pins $H_0$ to $68.50$
+and breaks at $73$ at $10.70$ per dof. There is no dissolution on it at all — BAO forces a low
+$H_0$ exactly as $\Lambda$CDM's does, and the acoustic angle independently agrees.*
+
+⚠ ***And the branch that produces the arm's best acoustic comb (⓵ of `r6760+cc66.7`) is the second
+one — the branch on which the dissolution does not survive.*** *That is the trade, and it is the
+chat seat's to price.*
 ⌗ *`receipts/P15_CR_cosmology/P15_the_desi_dissolution_survives_the_leaf_ruler_but_only_by_moving_the_onset.py`*
 
 ## ⓷ ⚑ THE EQUALITY IS THE RESIDUAL, AND THE ARM'S OWN $z_{\rm eq}$ IS 14% TOO EARLY

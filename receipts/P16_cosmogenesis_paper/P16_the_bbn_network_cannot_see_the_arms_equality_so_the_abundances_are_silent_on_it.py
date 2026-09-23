@@ -4,10 +4,12 @@ RECEIPT -- P16/P15: ** THE BBN NETWORK'S BACKGROUND HAS NO MATTER DENSITY IN IT.
 EQUALITY -- WHICH DIFFERS FROM LCDM's THROUGH omega_m, NOT THROUGH THE RADIATION -- IS INVISIBLE TO
 IT, AND THE ABUNDANCES ARE SILENT ON IT: NEITHER A COST NOR SUPPORT. **
 
-** ⇒ WHAT THE NETWORK DOES SEE IS A Delta N_eff, AND THAT IS A ROUTE THIS ARM DOES NOT TAKE. **
-Reaching z_eq = 3447 by adding radiation at fixed T_CMB moves Y_p from 0.2432 to 0.2577 and D/H
-from 2.567e-5 to 2.269e-5.  ** Those numbers price a different model.  Quoting them for or against
-the CR arm's equality would be scoring it on a parameter it does not move. **
+** ⇒ WHAT THE NETWORK DOES SEE IS A Delta N_eff, AND THAT ROUTE IS EXCLUDED. **  Reaching
+z_eq = 3447 by adding radiation at fixed T_CMB needs N_eff = 4.050 and moves Y_p from 0.2432 to
+0.2576 and D/H from 2.567e-5 to 2.269e-5 -- ** +3.2 sigma in helium and -8.6 sigma in deuterium
+against Aver+ 2015 and Cooke+ 2018, where the standard run sits inside 2 sigma in both. **
+*So the two routes to the same equality are not two options with different prices: one is shut and
+the other is free.*  ⇒ ** What the peak structure is asking for is an omega_m, not a Delta N_eff. **
 
 Built r6760+cc66.7 (node 66, code seat), on `PO-13`, at node 66 (chat seat)'s amendment 2:
 "the BBN table prices the Delta N_eff route only, so the abundances are SILENT on the arm's
@@ -34,8 +36,9 @@ why the abundances cannot arbitrate this question.*
   PART 2  ** THE BACKGROUND'S SOURCE, GREPPED. **  No matter term, and the check is a check.
   PART 3  ** THE STANDARD RUN REPRODUCED. **
   PART 4  ** THE TWO EQUALITIES, AND THE ABUNDANCES BIT-IDENTICAL ACROSS THEM. **
-  PART 5  ** WHAT THE OTHER ROUTE WOULD COST, so the silence is not mistaken for an absence of
-          any constraint at all. **
+  PART 5  ** WHAT THE OTHER ROUTE COSTS, IN SIGMA, ** so the silence is not mistaken for an
+          absence of any constraint at all -- and so that "priced" is not read where "excluded"
+          is meant.
 
 ** COMPUTES: eta10 = 6.14, T9 from 9.0 to 0.08, the REACLIB library -- the network's own defaults.
    CR arm H0 = 73.00, Om = 0.3066; control H0 = 67.40, Om = 0.3150; wr = 4.15e-5.  *** The
@@ -174,6 +177,39 @@ for z_target in (CTL['z_eq'], 3000.0):
           f"{r['He3H']:>11.3e} {r['Li7H']:>12.3e}")
 print(f"  {CR['z_eq']:>12.0f} {3.0:>13.3f} {std['Yp']:>8.4f} {std['DH']:>11.3e} "
       f"{std['He3H']:>11.3e} {std['Li7H']:>12.3e}   <- the arm, on the matter route")
+
+# ** AND THE PRICE IS PUT IN SIGMA, r6760+cc66.8, at 66 (chat)'s reading. **  *Printing that Y_p
+# "moves" leaves the reader to decide whether that matters.  Against the measurements it does not
+# move, it is EXCLUDED, and the difference between those two words is the whole standing of the
+# route.*  Observations, quoted with their sources and not adjusted:
+Y_OBS, Y_ERR = 0.2449, 0.0040        # Aver, Olive & Skillman 2015
+DH_OBS, DH_ERR = 2.527e-5, 0.030e-5  # Cooke, Pettini & Steidel 2018
+print(f"\n  ** AGAINST THE MEASUREMENTS **   Y_p = {Y_OBS} +/- {Y_ERR} (Aver+ 2015),  "
+      f"D/H = {DH_OBS:.3e} +/- {DH_ERR:.3e} (Cooke+ 2018)")
+print(f"  {'z_eq via radiation':>20} {'N_eff':>7} {'Y_p':>9} {'sigma':>8} {'D/H':>11} {'sigma':>8}")
+print(f"  {'3936 (the arm)':>20} {3.0:>7.3f} {std['Yp']:>9.4f} "
+      f"{(std['Yp'] - Y_OBS) / Y_ERR:>+7.1f}s {std['DH']:>11.3e} "
+      f"{(std['DH'] - DH_OBS) / DH_ERR:>+7.1f}s")
+worst = 0.0
+for z_target, Neff, r in rows:
+    sy = (r['Yp'] - Y_OBS) / Y_ERR
+    sd = (r['DH'] - DH_OBS) / DH_ERR
+    worst = max(worst, abs(sy), abs(sd))
+    print(f"  {z_target:>20.0f} {Neff:>7.3f} {r['Yp']:>9.4f} {sy:>+7.1f}s {r['DH']:>11.3e} "
+          f"{sd:>+7.1f}s")
+if abs((std['Yp'] - Y_OBS) / Y_ERR) > 2.0 or abs((std['DH'] - DH_OBS) / DH_ERR) > 2.0:
+    fail.append("the STANDARD run is itself more than 2 sigma from the measurements -- "
+                "the comparison above cannot carry a verdict")
+if worst < 3.0:
+    fail.append(f"the radiation route's worst tension is {worst:.1f} sigma -- not excluded, "
+                "so 'excluded' may not be said")
+print(f"""
+  ⇒ ** SO THE RADIATION ROUTE IS NOT MERELY PRICED, IT IS EXCLUDED **, at {worst:.1f} sigma in the
+  worst of the two, while the standard run sits inside 2 sigma in both.  ** And the matter route is
+  not merely cheaper, it is INVISIBLE. **
+  *That upgrades the finding: the spectrum's request for z_eq ~ 3400 can only be met on the matter
+  side, so what the peaks are asking for is an omega_m and not a Delta N_eff.  The light elements
+  do not weigh the arm's equality -- and they do close the other door.*""")
 
 moved = [abs(r['Yp'] - std['Yp']) / std['Yp'] for _, _, r in rows]
 if max(moved) < 0.02:
