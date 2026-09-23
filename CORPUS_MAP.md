@@ -146,6 +146,10 @@ sources: [cowork, chat]
 
 
 
+### Revision r6750+66.2 — 2026-09-21 (node 66). **P1, P4 and P9 read through in their final state, and each needs nothing.**
+**⌗ WHAT WAS CHECKED.** *The same sweep the other papers had: revision narration, statements of standing in house shorthand, caveats that would hold of any physics paper, "seam" against the glossary's genus, the wall as P9 states it, and cross-paper claims against their sources. P1's uses of "limit" are the infinite-exterior-time limit its argument is about; P4's are the white-noise limit of the path average and the central limit theorem; P9's "seam" is the Nariai double root, named, and its wall statement is the one the rest of the corpus now carries.*
+**⌗ NO EDITS.** *Nothing in the three needed changing, and nothing is changed. The reads are recorded so the sweep's coverage is legible: of the eighteen papers, fifteen are now read through on this line; P10, P15 and P16 remain.*
+
 ### Revision r6750+66.1 — 2026-09-21 (node 66). **P18 worked and read through in its final state: the big bang's dissolution given its actual reason, the parameter count stated as the section's own list has it, and the corpus's statements of standing in plain English.**
 **⌗ THE BIG BANG.** *§dissolved gave it as "a coordinate feature of the reading rather than a breakdown of the theory, the minimum radius being finite" --- the minimum radius is the substrate's throat and is not what carries this. The next paragraph gives the reason: the horospheres pile onto a smooth null generator, so the substrate stays smooth where the areal chart diverges; the sentence now says that.*
 **⌗ THE PARAMETER COUNT.** *§displace listed the inherited datum, the amplitude and the tilt as measured rather than derived, then said the construction "fits one" --- read together, the sentence undercounted its own list. It now reads: fits one, the onset, and reads the rest off the data directly.*
