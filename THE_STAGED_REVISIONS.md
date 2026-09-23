@@ -1,8 +1,8 @@
 ---
 name: the-staged-revisions
 kind: STATE
-current: r2550+c54.205
-description: The observer line's staging ground — revisions to the papers, computations to run, and consolidation work, PREPARED here and executed when the working fork reaches its target. Nothing here has been applied to the corpus; each entry carries its gate, its locus and its done-test.
+current: r6760
+description: The staging ground — revisions to the papers, computations to run, and consolidation work, PREPARED here and executed when their preconditions are met. Nothing here has been applied to the corpus; each entry carries its gate, its locus and its done-test.
 sources: [chat]
 ---
 
@@ -14,6 +14,52 @@ sources: [chat]
 > *Its scope caveat stands as written: the staged items were prepared against an earlier fork and
 > **preparation does not rot the way a narrative does** — but each should be checked against the
 > current papers before executing.*
+
+## ⌗ `SR-15` · THE ACOUSTIC HANDOVER — four paragraphs staged for P15, and what must land before them
+
+*The two-arm transfer hands the collapse leg to the expansion leg at the **onset**, reading the photon
+amplitude through the leg's closed-form transfer and the potential at its primordial value — two halves of
+one handover read at two points. Read instead at the **crossing**, where every acoustic mode is super-horizon
+and the leg potential returns to its regular value, the state is the frozen adiabatic one and the
+radiation-era driving is applied exactly once. Measured on the instrument that reproduces §refit-bound to
+every digit (χ² 15752.0 / 118.4 per bin, the control 279.4 / 2.10, the model separation 122): first peak
+**216** against the sky's 220.4, height ratios **2.250** and **2.150** against 2.217 and 2.277, second-to-first
+gap ratio **0.8693** against 0.8812, phase intercept within **0.019π** of the sky's, and χ² **35.5** per bin.
+It is a limit rather than a parameter — over two decades of starting redshift the peaks hold to the grid step
+and the ratios to half a per cent. What remains is an acoustic scale **4.2% narrow** (the arm's own comb 286.0
+against the sky's 298.4) and a residual concentrated at **ℓ ≈ 700–1000**.*
+
+**⌗ BEFORE ANY OF IT LANDS:** *the ℓ-grid check at `LSTEP=1` and the ladder check at `KCONT=1` on the crossing
+arm; the **derived diffusion damping** on that arm's own opacity and rate, with the band table re-run (the
+arm is unlensed and underdamped, and ℓ ≈ 700–1000 is where damping should act); and `r_s`, `D_M` and
+`θ_D/θ_*` on the crossing arm, so the 4.2% splits into equality (`z_eq` 3936 on the leaf against 3399) versus
+rate, and so the damping signature is not quoted off the coded arm.*
+
+**⌗ THE FOUR PARAGRAPHS.**
+
+- **§coherence**, for *"Three codings, three answers, so the factor is not yet a property of the
+  construction"*: a fourth coding reads both halves at one locus; it is the only one of the four carrying no
+  free choice; and it is a limit, not a parameter, by the starting-redshift scan.
+- **§refit-bound**, for the deficit paragraph's numbers: the peak, the ratios, the gap contraction, the phase
+  intercept, and what remains — the narrow comb and the band at ℓ ≈ 700–1000.
+- **§tensions**, on what the one fitted parameter buys: the fitted onset reports an acoustic scale of 301.6
+  while the coded arm's own comb, fitted by the procedure used on the sky, is 313.0 — the accommodation and
+  the spacing are different quantities, and the single-locus arm's 286.0 is an output.
+- **The datum scan**, for *"no mechanism for that trade is in hand"*: moving the locus buys the position and
+  the alternation together, where every contracting reading in the scan sits at ℓ₁ ≤ 212; the scan varies the
+  datum at the onset, this varies the locus.
+
+**⌗ THE LANDING SURFACE, COMPLETE.** *`CR_cosmology` (four places), `CR_framework` §frontiers and its masthead,
+`CR_synthesis`, `geometric_core_paper`'s P15 entry; the receipt appendices for P15, P16 and the corpus;
+`ONTOLOGY_FOUNDATION_INDEX` (P15 card), `THE_REGISTER`, `PHYSICAL_VALUES_LEDGER`,
+`STATISTICS_INFERENCE_LEDGER`, `THE_LIVE_ARC`, `THE_REMAINING_WORK`, `WHAT_IS_UNFINISHED`, `THE_WEAVE`,
+`capstones/THE_WISDOM_LEDGER`, `CLAIMS`, `THE_PLAN`. **And `PROTECTED_OPEN`'s PO-13 row**, whose chain ends
+"there is no seam phase freedom — only two admissible readings": that stands, because this is a handover
+**locus** and not a phase freedom, and the row should say so rather than be overwritten. `PO13_WORKING_STATE`
+belongs to the code seat.*
+
+**⌗ THE BAND.** *Both seats of node 66 hold `L-6600`–`L-6699`. The chat seat takes `L-6650`–`L-6699`, the code
+seat `L-6600`–`L-6649`.*
 
 ## ⛭ BROUGHT CURRENT r2548 — the staging discipline held through nine merges
 
