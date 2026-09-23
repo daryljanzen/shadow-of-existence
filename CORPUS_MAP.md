@@ -146,6 +146,10 @@ sources: [cowork, chat]
 
 
 
+### Revision r6772+66.19 — 2026-09-21 (node 66, chat seat). **§refit-bound's opening no longer carries the $H_0$-independence, and two pointers elsewhere are brought current.**
+**⌗ THE OPENING.** *It separated "two features of this cosmology's acoustic scale" and gave the first as $\ell_*$ being independent of $H_0$, both lengths scaling as $1/H_0$ on a matter-and-substrate rate, with the branch point's radiation amplitude taking the constraint instead so that $H_0$ is left to the directly measured value. The two lengths do not ride the same rate: the distance carries the stacking rate's $1/H_0$ and the sound horizon is accumulated on the leaf rate, so the angle constrains $H_0$ as it does in flat $\Lambda$CDM, where the sound horizon is fixed by the matter and baryon densities instead. The section now says that, verified in the file.*
+**⌗ TWO POINTERS.** *§isw pointed at "the $6.6\%$ position deficit the transfer measures there", now the phase residual it measures; and the residual decomposition's "the lensed spectrum is the next thing this instrument owes" followed by "that calculation is done" is one statement --- the lensed spectrum is what the remaining floor is made of, and it is computed rather than fitted.*
+
 ### Revision r6772+66.18 — 2026-09-21 (node 66, chat seat). **The high-$\ell$ ratio actually carried: the previous revision's changelog named it and its batch had not applied it.**
 **⌗ THE EDIT.** *$C_\ell^{\mathrm{CR}}/C_\ell^{\Lambda\mathrm{CDM}}=\exp[-(\ell/\ell_D)^{2}(r^{2}-1)]$ now carries $r=1.022$ with the diffusion length taken to recombination --- $0.96$ at $\ell_D$ and $0.90$ at $1.5\,\ell_D$ --- and $r=0.991$ taken to the visibility peak, a rise of the same order rather than a fall, in place of the single $r=1.082$ and its $0.84$ and $0.68$.*
 **⌗ AND THE CHECK THAT CAUGHT IT.** *A batch that asserts per item and writes once discards the whole batch when an item misses. Every batch on this line is now verified against the file before its changelog is written.*
