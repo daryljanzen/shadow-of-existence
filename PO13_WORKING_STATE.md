@@ -2877,3 +2877,177 @@ the next run rather than a conclusion here.*
 ⌗ **AND IT IS A THIRD OBJECT, NAMED.** *PO-13 now carries: the mechanism half, whose weighing waits on
 the locus statement (`r4519`); this split, which is in the projection; and the phase offset the
 transfer exposed. **The first two are independent, which is what this revision establishes.***
+
+---
+
+# ⛭ r6760+cc66.2 — THE CLOCK ADJUDICATED, THE RULER PRICED, AND THE EQUALITY FOUND TO BE THE RESIDUAL
+
+*Node 66 (code seat), on node 66 (chat seat)'s work order. **This section is the code seat's; the
+papers, `ONTOLOGY_FOUNDATION_INDEX.md`, `THE_PLAN.md` and the ledgers are the chat seat's and are
+not touched here.** Lead-ID band `L-6600`–`L-6649`, revisions suffixed `+cc66.N`, per the split
+agreed in band `r6760`.*
+
+## ⓵ ⚑ THE DAMPING-TO-COMB RATIO PICKS ONE CONFIGURATION OUT OF FOUR, AND IT IS THE ONE BOTH
+## SEATS ARRIVED AT SEPARATELY
+
+*$\theta_D/\theta_* = r_D/r_s$ — $D_M$ cancels exactly, which matters, because the arm's $D_M$ is
+$13005$ Mpc against the control's $13865$ and a comparison of $\theta_D$ alone would be reporting
+that instead of the damping.*
+
+| handover locus | clock | $r_s$ | $r_D$ | $r_D/r_s$ | vs control |
+|---|---|---|---|---|---|
+| control ($\Lambda$CDM, one rate) | — | $144.52$ | $6.567$ | $0.04544$ | $1.0000$ |
+| **onset** | **stacking** — *the corpus as it stands* | $135.46$ | $6.986$ | $0.05157$ | $1.135$ |
+| onset | leaf | $105.36$ | $6.479$ | $0.06149$ | $1.353$ |
+| crossing | stacking | $236.37$ | $7.005$ | $0.02963$ | $0.652$ |
+| **crossing** | **leaf** | $139.74$ | $6.490$ | $0.04644$ | $\mathbf{1.022}$ |
+
+⇒ ***The crossing on the leaf clock is 2.2% from the control; the other three are 13.5%, 35.3% and
+34.8%.*** **And neither choice was made to fix this quantity** — the crossing was adopted because
+that is where $aH$ diverges, the leaf clock because the chat seat ruled one object for $r_s$ and
+$r_D$ both. *A 2.2% agreement from a quantity nobody consulted is evidence.*
+
+⌗ **AND THE TWO CHOICES ARE NOT SEPARABLE.** *The crossing on the wrong clock is worse than the
+onset on the wrong clock, and the leaf clock at the wrong locus is the worst row of the four.*
+⇒ ***So this is one configuration, not two improvements landing together, and the corpus's current
+pair is the second-best of four rather than the reasonable default it reads as.***
+
+⚠ **NOT CLAIMED**: *that the spectrum agrees. The crossing arm is still rejected at $35.5$ per bin
+against the control's $2.10$. Getting this ratio right is **necessary and not sufficient**.*
+⌗ *`receipts/P15_CR_cosmology/P15_the_damping_to_comb_ratio_picks_the_crossing_and_the_leaf_clock_out_of_four.py`*
+
+## ⓶ ⚑ WHAT THE LEAF CLOCK COSTS THE DESI RESULT: OUTCOME (a), WITH A PRICE
+
+*The chat seat named three outcomes. **It is (a): the dissolution survives with a different
+derivation.***
+
+| ruler | $H_0$ | $\Omega_m$ fit | $z_{\rm onset}$ | $\rho_r/\rho_m$ there | $\chi^2/12$ dof |
+|---|---|---|---|---|---|
+| stacking | $63$–$80$, every value | $0.3066$ | $6764$ | $2.31$–$1.43$ | $\mathbf{1.00}$, spread $0.0000$ |
+| leaf, **no** onset | $68.50$ | $0.293$ | — | — | $0.88$ |
+| leaf, **no** onset | $73$ | $0.330$ | — | — | $\mathbf{10.70}$ ⛔ |
+| leaf, onset retained | $70$ | $0.2968$ | $178785$ | $51.0$ | $0.88$ |
+| leaf, onset retained | $73$ | $0.2975$ | $61157$ | $16.0$ | $0.88$ |
+| leaf, onset retained | $80$ | $0.2989$ | $26860$ | $5.8$ | $0.88$ |
+
+**⛭ ON THE STACKING RULER $H_0$ CANCELS ALGEBRAICALLY** — *the rate is radiation-free, so $H_0$
+leaves $D_M$, $D_H$ and $r_d$ together and the BAO ratios cannot see it. The measured $\chi^2$
+spread across $H_0=63$–$80$ is **exactly zero**.*
+**⛔ ON THE LEAF RULER IT DOES NOT.** *It enters through $\omega_r/h^2$. The fit holds across
+$70$–$80$ anyway, at $0.88$ per dof, **because the onset moves to keep $\theta_*$ fixed.***
+⇒ ***That is a compensation, not a cancellation, and the two are not the same claim.***
+
+**⌗ THE PRICE, AS A NUMBER.** *The corpus's onset is "where radiation stops mattering". On the
+stacking ruler it is **one** redshift, $6764$, at every $H_0$. On the leaf ruler the **locus**
+moves: $z_{\rm onset}$ runs $1.8\times10^5\to2.7\times10^4$ across $H_0=70$–$80$ and
+$\rho_r/\rho_m$ with it, $51.0\to5.8$.* ⇒ ***A locus sitting at $\rho_r/\rho_m=51$ at one $H_0$ and
+$5.8$ at another is not "where radiation stops mattering"; it is a fitted redshift, and the
+flatness is bought with it.***
+
+**⌗ AND A SECOND, INDEPENDENT DETERMINATION AGREES.** *$\theta_*$ on the onset-free leaf ruler hits
+the observed $0.0104085$ at $H_0=68.55$; BAO on the same ruler prefers $68.50$. **Two different
+datasets, 0.05 apart in $H_0$.***
+
+⇒ ***`sec:tensions` can keep its conclusion and cannot keep its argument. The honest form on the
+leaf clock is weaker: $H_0$ is not FORCED by BAO, rather than $H_0$ is ABSENT from it.***
+⌗ *`receipts/P15_CR_cosmology/P15_the_desi_dissolution_survives_the_leaf_ruler_but_only_by_moving_the_onset.py`*
+
+## ⓷ ⚑ THE EQUALITY IS THE RESIDUAL, AND THE ARM'S OWN $z_{\rm eq}$ IS 14% TOO EARLY
+
+*`ORFAC` scales $\Omega_r$ and therefore the leaf equality, at the crossing handover, everything
+else untouched. **$r_s$ and $D_M$ do not move at all across these rows** — $236.37$ and $13004.6$
+in every one — because the stacking rate carries no radiation term, so what moves is the DRIVING
+and nothing else.*
+
+| $z_{\rm eq}$ | peaks | $P_1/P_2$ | $P_1/P_3$ | fitted $\ell_A$ | $\phi/\pi$ | $\chi^2$ /133 | 700–1000 /bin |
+|---|---|---|---|---|---|---|---|
+| $3936$ *(the arm's own)* | $216/522/788/1094$ | $2.250$ | $2.150$ | $286.0$ | $-0.2214$ | $4723.2$ | $85.9$ |
+| $\mathbf{3447}$ *($\Lambda$CDM's)* | $\mathbf{220/536/816/1132}$ | $\mathbf{2.278}$ | $\mathbf{2.299}$ | $\mathbf{298.0}$ | $\mathbf{-0.2416}$ | $\mathbf{645.8}$ | $\mathbf{6.4}$ |
+| $3000$ | $226/554/846/1174$ | $2.315$ | $2.474$ | $310.0$ | $-0.2516$ | $6256.2$ | $68.4$ |
+| *sky* | $220.4/537.7/817.3/1123.9$ | $2.217$ | $2.277$ | $298.4$ | $-0.2405$ | — | — |
+| *control* | $220/536/814/1128$ | $2.195$ | $2.191$ | $297.0$ | $-0.2379$ | $279.4$ | $2.6$ |
+
+⇒ ***At $z_{\rm eq}=3447$ the crossing arm's four peaks land on the sky's four peaks, its fitted
+comb is $298.0$ against the sky's $298.4$, and its acoustic phase is $-0.2416\pi$ against the sky's
+$-0.2405\pi$ — the corpus's own headline number, recovered on an arm that spends no fitted
+parameter on it.*** **$\chi^2$ falls $4723.2\to645.8$ and the 700–1000 band, which the crossing
+handover did NOT fix, falls $85.9\to6.4$ per bin.**
+
+⛔ **AND THAT IS A DIAGNOSIS, NOT A FIT.** *$z_{\rm eq}=3447$ is $\Lambda$CDM's value, not a
+freedom this arm has: `ORFAC` $=1.1418$ means **14.2% more radiation than the arm's parameters
+give**. What the row establishes is where the residual lives, and the answer is **the equality**.
+The arm at $3447$ is still $4.86$ per bin against the control's $2.10$ — a factor $2.3$, where the
+coded arm was a factor $56$.*
+
+⚠ **AND THE SCAN IS NOT MONOTONE**, *which is the point: $3936\to3447\to3000$ gives $4723\to646\to
+6256$. **The sky sits at a minimum inside the scanned range**, so this is a measurement of where
+the arm's equality should be and not a direction to push it.*
+
+⌗ **THE SECOND ROUTE IS IN FLIGHT.** *`ORFAC` moves $z_{\rm eq}$ through the radiation at fixed
+matter, which at fixed $T_{\rm CMB}$ is a $\Delta N_{\rm eff}$ — and that is **not** how this arm's
+equality arises. $z_{\rm eq}=3936$ here IS $\omega_m=0.1634$ ($H_0=73$ at $\Omega_m=0.3066$)
+against $\Lambda$CDM's $0.1431$. **`CROM` reaches the same two points through $\Omega_m$ at fixed
+$h$** and is running; the confound is inherent and is reported rather than removed — $\Omega_m$
+cannot move without $\Omega_\Lambda$ and therefore $D_M$ moving, so the peak POSITIONS are printed
+beside the ratios and $P_1/P_3$, being a ratio, is what to read across the scan.*
+
+## ⓸ ⛔ THE BBN TABLE IS SILENT ON THIS ARM'S EQUALITY — NEITHER A COST NOR SUPPORT
+
+**This is the chat seat's amendment and it is stated in its own words because it is right.**
+
+*`computations/p16_bbn/bbn_network.py` reproduces: $Y_p=0.2432$, D/H $=2.567\times10^{-5}$,
+$^3$He/H $=1.044\times10^{-5}$, $^7$Li/H $=4.461\times10^{-10}$.* **Its free inputs are
+$\eta_{10}$ and a temperature range.** *The background is $H=\sqrt{8\pi G\rho_{\rm rad}(T)/3}$ with
+$g_*(T)$ hardcoding three neutrino species. **$\omega_m$ does not appear in it. $z_{\rm eq}$ does
+not appear in it. $\Omega_\Lambda$ does not appear in it.***
+
+⇒ ***So the route by which this arm's equality actually differs — $\omega_m$, the matter density —
+is INVISIBLE to the network. Every abundance is bit-identical across it.***
+
+**⌗ AND THE PRICED ROUTE IS THE OTHER ONE.** *Reaching $z_{\rm eq}=3447$ and $3000$ through the
+radiation instead is a $\Delta N_{\rm eff}$, and that the network does see: $Y_p$ goes
+$0.2432\to0.2577\to0.2726$ and D/H $\to2.269\to2.002\times10^{-5}$.* ⚠ ***Those numbers price a
+route this arm does not take.***
+
+⇒ ***The abundances are SILENT on the arm's equality — neither a cost nor support — and the table
+must be read that way. A `sec:tensions` rewritten around $\rho_r/\rho_m\sim17$ may not cite the
+abundances either for it or against it.***
+
+⌗ **THE STRUCTURAL FINDING GETS ITS OWN RECEIPT**, *per the amendment, because "the network cannot
+see this parameter" is a claim about the network and belongs in a file that would fail if it
+became untrue.*
+
+## ⓹ ⛔ THE PIN AND THE CROSSING CANNOT BOTH BE HAD, AND THE PIN'S EFFECT IS THE START
+
+*Run 1 as specified — crossing handover, `LEAFSCALES=1`, the onset retained and pinned on the leaf
+ruler at $H_0=73$ — solves $z_{\rm onset}=61{,}580$.*
+
+| configuration | $\ell_A$ rep | peaks | $\ell_1/\ell_A$ | $P_1/P_2$ | $P_1/P_3$ | $\chi^2$ /133 |
+|---|---|---|---|---|---|---|
+| run 1 (`LEAFSCALES=1`, $z_{\rm on}=61580$) | $301.6$ | $214/520/784/1092$ | $0.7095$ | $2.603$ | $2.539$ | $7157.8$ |
+| **same start, STACKING clock** | $200.8$ | $\mathbf{214/520/784/1092}$ | $1.0659$ | $2.612$ | $2.561$ | $7427.8$ |
+
+⇒ ***The peaks are identical to the multipole and the ratios move under 1%. `LEAFSCALES` is
+bookkeeping in the transfer and nothing else — it relabels $\ell_A$ and moves no photon.*** *So
+run 1's spectrum is entirely a START effect: the plasma begins at $z=61{,}580$.*
+
+**⛔ AND THAT START IS AN ORDER OF MAGNITUDE BELOW WHERE THE CROSSING CONVERGED.** *The crossing
+arm's `ZSTART` scan converged over $3\times10^6$–$3\times10^8$. $61{,}580$ is not in it.* ⇒ ***The
+pin fixes the comb — the $\ell_1$ deficit goes 6.6% → 3.0% — and overshoots the heights by +17.4%
+and +11.5%, because at $z=61{,}580$ the first-peak mode has already entered the horizon and the
+handover datum is being applied mid-oscillation. The pin and the crossing are two different
+handovers and the arm cannot have both.***
+
+⚠ *This is the configuration the chat seat asked the P15 numbers to be landed from. **It is
+reported as measured rather than as asked for**, and the choice between the pin and the crossing is
+the chat seat's, since the papers are.*
+
+## ⓺ ⌗ THE BRACKET FAMILY, SWEPT
+
+*27 live acoustic-onset `brentq` solvers in the tree and 46 retired; **18 of the live ones carry a
+ceiling below the leaf ruler's root of $61{,}583$**. All 18 integrate $r_s$ on the stacking clock,
+where the root is $6{,}761$, so they are **latent and not broken** — recorded rather than
+pre-emptively widened, because churn in files whose numbers the papers quote is worse than churn.*
+**Six files were widened: the instrument, three in `hubble_build/`, and two receipt mirrors that
+had drifted from the `hubble_build/` scripts they declare as their ORIGIN.**
+⌗ *`receipts/P15_CR_cosmology/P15_the_onset_bracket_family_is_latent_everywhere_and_was_live_in_one_place.py`*
