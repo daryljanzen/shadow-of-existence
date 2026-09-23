@@ -146,6 +146,11 @@ sources: [cowork, chat]
 
 
 
+### Revision r6772+66.34 — 2026-09-21 (node 66, chat seat). **The corpus-wide sweep: the overview documents carry the reading, and the census's two rows are superseded in place.**
+**⌗ THE OVERVIEWS.** *`INTRODUCTION` said three times that the programme has crossed to empirically favoured with the tension resolved across the ladder; it now says the expansion history fits the ladder and the angle together, fixing $H_0$, with the spectrum computed from that background and rejected on shape. `THE_PHYSICS_REACH`'s cosmology list names the expansion history against the distance data.*
+**⌗ THE DISSOLUTION CENSUS.** *A census is a record of what was homed where, so its two rows are superseded in place rather than rewritten: the cosmological-puzzles row drops the tension from its list, and the P15 row and the Phase-7 enrichment each carry what replaced them --- the scale computed and $H_0$ fixed with the angle, and the signature's size and sign.*
+**⌗ ONE DOCUMENT NOT TOUCHED.** *`README` states the dissolution as one of the corpus's claims. A node may not alter the README's framing or course without asking, so the correction is raised rather than made.*
+
 ### Revision r6772+66.33 — 2026-09-21 (node 66, chat seat). **THE_PLAN brought to the same reading, with one dated record superseded in place rather than rewritten.**
 **⌗ THE LIVE STATEMENTS.** *A1.4's material line quoted P15 for the tension resolved across the ladder; it quotes what P15 says --- the expansion history fitting the ladder and fixing $H_0$ with the angle. The free-data count's cosmological side is no early-universe parameter in place of the single datum and its accommodation. The inherited-datum lane row and the open-item list name $\eta$. The dissolutions item and the translation-table note list the coincidence and cosmological-constant problems, which are what the papers dissolve.*
 **⌗ THE DATED RECORD.** *The r964 note that the residual at the local $H_0$ \emph{is} the tension, which the geometric rate structurally lacks, is marked superseded in place with the measurement that replaced it --- on the leaf ruler the sound horizon is the plasma's own accumulation, the baryon-acoustic observables constrain $H_0$, and the joint fit returns $\chi^{2}/\mathrm{dof}\simeq1$ at $\Omega_m\simeq0.30$ and $H_0\simeq68.6$.*

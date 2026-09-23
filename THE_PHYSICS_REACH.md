@@ -217,7 +217,7 @@ find what the corpus recovers, dissolves, or connects to that it has not yet cla
 ## THE ARCHITECTURE — what physics the corpus incorporates, by domain (the target surface)
 - **GR / gravitation:** the whole symmetry-reducible sector; the metric-singularity horizon; the layered
   ontology; gravitational waves; the dissolution cluster.
-- **Cosmology:** the non-synchronous SdS cosmology; ΛCDM recovery (sinh^{2/3}); the Hubble tension; the CMB;
+- **Cosmology:** the non-synchronous SdS cosmology; ΛCDM recovery (sinh^{2/3}); the expansion history against the distance data; the CMB;
   horizon/flatness (inflation not needed); cosmogenesis.
 - **QM / quantization:** canonical quantization (deparametrized unitary evolution); deficiency indices; the
   graviton tower; Hartle–Hawking.

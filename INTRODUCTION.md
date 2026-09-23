@@ -111,9 +111,7 @@ cosmology; **P4 measures** it, from the redshift-isotropy floor. Nothing downstr
 hold.
 
 **If you are a cosmologist: P1, P4, then P7, P15, P16.** The forcing, then the framework, then the expansion
-history from causal reassignment, then cosmogenesis — the Big Bang as a synthesis of forced consequences, with
-the light-element abundances reproduced and the Hubble tension resolved across the low-redshift distance
-ladder.
+history from causal reassignment, then cosmogenesis — the Big Bang as a synthesis of forced consequences, with the light-element abundances reproduced and the expansion history fitting the low-redshift distance ladder, which fixes $H_0$ with the acoustic angle.
 
 **If you want to know what it is worth before you spend time on it: P18.** *The synthesis, and it is a door
 rather than a step.* It collects what the construction derives, separates that from what it dissolves and what
@@ -247,9 +245,7 @@ continuation that carries the curve through it.
 
 **⑨ `P7`, then `P15` and `P16` — the framework, and what it predicts.**
 P7 is the necessary-and-sufficient augmentation and the pole everything feeds. Then the cosmology, and here the
-arc's tone changes from structure to consequence: **a geometric expansion rate**, the Hubble tension
-resolved **across the low-redshift distance ladder and not by the acoustic angle alone**, and light-element
-abundances reproduced from a collapse excursion — deuterium at $D/H\simeq2.5\times10^{-5}$, $Y_p\simeq0.25$.
+arc's tone changes from structure to consequence: **a geometric expansion rate** fitting **the low-redshift distance ladder and the acoustic angle together**, and light-element abundances reproduced from a collapse excursion — deuterium at $D/H\simeq2.5\times10^{-5}$, $Y_p\simeq0.25$.
 
 **⑩ And only now, `P1` and `P4`.**
 *Held to the end on purpose.* **P1: no event horizon completes at finite exterior time** — argued from causal
@@ -352,9 +348,7 @@ rather than a preface.
 
 **What is settled.** The forcing arguments; the substrate's geometry and its slicing structure; the operator's
 range; the constraint algebra's identification; three chiral generations on the discrete residue; the expansion
-history; the cosmogenesis synthesis with the light-element abundances reproduced. On the observational axis the
-programme has crossed **from coherence to empirically favoured**: the Hubble tension is resolved across the
-low-redshift distance ladder, and not by the acoustic angle alone.
+history; the cosmogenesis synthesis with the light-element abundances reproduced. On the observational axis the expansion history fits the low-redshift distance ladder and the acoustic angle together, which fixes $H_0$; the acoustic spectrum is then computed from that background and is rejected on shape.
 
 **What is open — five families, and they are named rather than implied.** The inherited datum ·
 the scalar-perturbation sector to a verdict · **the propagating fermion sector**, which is the largest
