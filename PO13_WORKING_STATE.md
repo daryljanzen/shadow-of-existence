@@ -3066,6 +3066,22 @@ handovers and the arm cannot have both.***
 reported as measured rather than as asked for**, and the choice between the pin and the crossing is
 the chat seat's, since the papers are.*
 
+### ⛭ AND THE INCOMPATIBILITY IS AN **ORDERING CONSTRAINT**, NOT A NUMERICAL COINCIDENCE
+
+**This is node 66 (chat)'s framing and it is recorded here because it outlives the exchange that
+produced it.**
+
+*The two numbers above — $z_{\rm onset}=61{,}580$ from the pin, $z\gtrsim3\times10^6$ from the
+crossing's own convergence — do not fail to agree by accident, and no refinement of either will
+bring them together.* ⇒ ***The handover cannot precede the onset. "Pinned" puts the handover AT a
+solved redshift; "at the crossing" puts it at the branch point, which is before every onset there
+is. The two name DISJOINT configurations, and a configuration cannot be in both.***
+
+⚠ ***So any later run that reports a pin and a crossing together is INTERMEDIATE and must be read
+as one.*** *It is not a third branch and it is not a compromise between two; it is a run whose
+handover locus has not been decided. Run 1 is exactly such a run, which is why its spectrum turns
+out to be the START's and not the clock's — the start is the only handover statement in it.*
+
 ## ⓺ ⌗ THE BRACKET FAMILY, SWEPT
 
 *27 live acoustic-onset `brentq` solvers in the tree and 46 retired; **18 of the live ones carry a

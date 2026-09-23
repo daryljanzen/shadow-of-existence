@@ -96,6 +96,21 @@ if ARM == 'lcdm':
     Z_START = None                             # set below, deep in radiation domination
 else:
     H0, OM, OMBH2 = 73.00, 0.3066, 0.0224
+    # ** CRH0: THE ARM'S H0, EXPOSED r6760+cc66.4 AT 66 (chat)'s WORK ORDER. **
+    # *It was a hardcoded literal with no override, so nothing downstream could vary it and nothing
+    # had -- the sixth switch of this class in this file.*  ** The reason it has to move is that
+    # r6760+cc66.2 measured the leaf ruler preferring H0 = 68.6 from DESI BAO and 68.55 from the
+    # acoustic angle independently, while the arm runs at the corpus's 73.  Those are two different
+    # cosmologies and the instrument could only ever be asked about one of them. **
+    #   ⇒ *Setting it here, BEFORE `OR` is formed, carries it into Omega_r = 4.15e-5/h^2, into
+    #     Omega_b = Ombh2/h^2, into both rates and therefore into D_M, r_s and the projection
+    #     together -- which is what changing H0 MEANS.  Setting it later would move some and not
+    #     others.*
+    # ⌗ ** Reachability-checked at the REPORTING path, r6476's practice: the header prints
+    #   `H0=... Om=...` and `D_M = ... r_s = ... l_A = pi D/r_s`, and CRH0 was seen to move all
+    #   three before any spectrum was read off it. **
+    # *Default unset = byte-identical.  `CROM` sets this arm's Omega_m alongside it.*
+    H0 = float(os.environ.get('CRH0', H0))
     FNU, Z_REC = 0.4052, 1089.9
     OR = 4.15e-5 / (H0 / 100) ** 2
     RAD_IN_RATE = False                        # ** radiation is content, not a source **
