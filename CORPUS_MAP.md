@@ -146,6 +146,10 @@ sources: [cowork, chat]
 
 
 
+### Revision r6772+66.30 — 2026-09-21 (node 66, chat seat). **P16 brought to the same reading, masthead included: the handover supplies one datum, and it is the composition.**
+**⌗ THE SIX IN THE BODY.** *§verdict's abundance statement and §scoping's synthesis item, both of which held $\eta$ distinct from a radiation amplitude "that meets the acoustic scale"; the two-rates warning, which said carrying the local law past the seam "re-manufactures the Hubble tension the geometric rate dissolves" and now says what it would pin; the driving-envelope sentence, whose turnover sits at the equality the matter density fixes; and two places naming "the inherited datum" where the datum is $\eta$.*
+**⌗ THE MASTHEAD.** *It carried $\eta$ as "a SECOND datum of the same handover, distinct from the radiation amplitude that sets the acoustic SCALE", with the spacing assigned to that amplitude. It now carries the one datum, with the spacing computed from the rate and the plasma handed over at the branch point; the re-manufactured tension becomes what the mis-assignment would pin; and "forced at rule-favoured altitude" is forced under the criterion of necessity.*
+
 ### Revision r6772+66.29 — 2026-09-21 (node 66, chat seat). **P6, P12, P17 and P18 brought to the same reading.**
 **⌗ P6.** *Its vindication-lemma family and its confrontation list both credited the rate with resolving the Hubble tension without a tuned background; the rate is what the layered cosmology requires rather than tunes, and the baryon-acoustic distances fit it.*
 **⌗ P12.** *Its closing identity paired the problem of time's "wrong sign" with "the geometric stacking rate that dissolves the Hubble tension"; the pairing is with the rate the cosmology is read on.*
