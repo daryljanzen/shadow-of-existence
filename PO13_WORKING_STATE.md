@@ -2983,13 +2983,37 @@ coded arm was a factor $56$.*
 6256$. **The sky sits at a minimum inside the scanned range**, so this is a measurement of where
 the arm's equality should be and not a direction to push it.*
 
-⌗ **THE SECOND ROUTE IS IN FLIGHT.** *`ORFAC` moves $z_{\rm eq}$ through the radiation at fixed
-matter, which at fixed $T_{\rm CMB}$ is a $\Delta N_{\rm eff}$ — and that is **not** how this arm's
-equality arises. $z_{\rm eq}=3936$ here IS $\omega_m=0.1634$ ($H_0=73$ at $\Omega_m=0.3066$)
-against $\Lambda$CDM's $0.1431$. **`CROM` reaches the same two points through $\Omega_m$ at fixed
-$h$** and is running; the confound is inherent and is reported rather than removed — $\Omega_m$
-cannot move without $\Omega_\Lambda$ and therefore $D_M$ moving, so the peak POSITIONS are printed
-beside the ratios and $P_1/P_3$, being a ratio, is what to read across the scan.*
+### ⚑ AND THE SECOND ROUTE SETTLES IT: $P_1/P_3$ TRACKS $z_{\rm eq}$ ON BOTH, SO THE ROUTE IS IRRELEVANT
+
+*`ORFAC` moves $z_{\rm eq}$ through the radiation at fixed matter — at fixed $T_{\rm CMB}$ that is a
+$\Delta N_{\rm eff}$, and it is **not** how this arm's equality arises. $z_{\rm eq}=3936$ here IS
+$\omega_m=0.1634$ ($H_0=73$ at $\Omega_m=0.3066$) against $\Lambda$CDM's $0.1431$. **`CROM` reaches
+the same two points through $\Omega_m$ at fixed $h$.***
+
+| $z_{\rm eq}$ | route | $\Omega_m$ | peaks | $P_1/P_2$ | $\mathbf{P_1/P_3}$ | $\chi^2$ /133 | 700–1000 /bin |
+|---|---|---|---|---|---|---|---|
+| $3936$ | — *(as coded)* | $0.3066$ | $216/522/788/1094$ | $2.250$ | $\mathbf{2.150}$ | $4723.2$ | $85.9$ |
+| $3447$ | radiation (`ORFAC`) | $0.3066$ | $220/536/816/1132$ | $2.278$ | $\mathbf{2.299}$ | $645.8$ | $6.4$ |
+| $3447$ | **matter** (`CROM`) | $0.2685$ | $218/530/804/1116$ | $2.269$ | $\mathbf{2.294}$ | $1309.9$ | $24.0$ |
+| $3000$ | radiation (`ORFAC`) | $0.3066$ | $226/554/846/1174$ | $2.315$ | $\mathbf{2.474}$ | $6256.2$ | $68.4$ |
+| $3000$ | **matter** (`CROM`) | $0.2337$ | $222/540/824/1140$ | $2.292$ | $\mathbf{2.460}$ | $1233.2$ | $8.3$ |
+
+⇒ ***$P_1/P_3$ agrees between the two routes to $0.2\%$ at $z_{\rm eq}=3447$ and $0.6\%$ at $3000$,
+across a $12\%$ change in $\Omega_m$ and therefore in $D_M$ and the whole projection.*** **So the
+third-peak deficit is RADIATION DRIVING and the route by which the equality is reached is
+irrelevant to it** — which is the first of the two outcomes the chat seat named for this scan.
+
+⛔ **BUT THE POSITIONS AND THE BAND $\chi^2$ DO NOT AGREE BETWEEN THE ROUTES, AND THAT IS THE
+CONFOUND BEING VISIBLE RATHER THAN A CONTRADICTION.** *$\Omega_m$ cannot move without
+$\Omega_\Lambda=1-\Omega_m$ and therefore $D_M$ moving: the matter route's comb slides the other
+way, so at $3447$ its peaks sit $218/530/804$ against the radiation route's $220/536/816$, and the
+$700$–$1000$ band's minimum lands at a **different** $z_{\rm eq}$ on the two routes ($6.4$ per bin
+at $3447$ on radiation, $8.3$ at $3000$ on matter).* ⇒ ***The band is sensitive to the projection
+as well as to the equality, so it is $P_1/P_3$ — a ratio at fixed $\ell$, blind to $D_M$ — that
+carries the verdict, and it is unambiguous.***
+
+⚠ **NOT CLAIMED**: *that either $\Omega_m$ is admissible. $0.2685$ and $0.2337$ are diagnostic
+settings, and the arm's $\Omega_m$ is fixed at $0.3066$ by the DESI fit in ⓶.*
 
 ## ⓸ ⛔ THE BBN TABLE IS SILENT ON THIS ARM'S EQUALITY — NEITHER A COST NOR SUPPORT
 
