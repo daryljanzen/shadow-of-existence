@@ -108,6 +108,15 @@ EST = {
         'baryons select. The local gauging is not supplied because the bundle is over the space of members '
         'and there is no spacetime bundle for a connection to be on; the structure neither supplies nor '
         'obstructs it. Not closed: the choices themselves, where the Standard Model s free parameters sit. '
+        'r6762: and the determinant circle that stayed global IS a constituent count, with the conservation '
+        'question settled both ways. Exactly conserved on every STATIC member -- the parity-odd source '
+        'vanishes identically for arbitrary static profiles, so Schwarzschild, Schwarzschild-de Sitter, '
+        'de Sitter and Nariai are instances of one identity, not three separate zeros. Violated on the '
+        'TWISTED member alone, where the source is exactly odd in the twist and vanishes on the polarised '
+        'cut. Coefficient 3, traced to dim ker_- = 0 and not to a convention. NO INFLOW: the construction '
+        'has no bulk gravitational Chern-Simons term, and the one-form potential such a term would need is '
+        'what r6752 ruled out. The violation integrates to the change in the member s gravitational '
+        'Chern-Simons number. A global symmetry s anomaly is not an inconsistency and is not reported as one.'
     ),
     'PO-31': ('the progenitor spectrum, and what the throat damps under rotation', 1, 1, 6, None,
         'r6510: THE WARPED HARMONIC PROBLEM IS DONE AND THE PROXY WAS TELLING THE TRUTH. r6499 computed '
