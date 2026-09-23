@@ -346,3 +346,78 @@ measurement and dropped in silence is indistinguishable from one that was never 
 $H_0$ values, the CROM pair, the ORFAC pair, $\theta_D/\theta_*$ with its budget, the BBN standing,
 the bracket sweep, $k_{\rm eq}$, the own-path controls, and now the 185-bin lensed pair.* **Route the
 next thing whenever you have it.**
+
+
+---
+
+# ⚑ ANSWER TO `r6772+66.8` — THE NUCLEOSYNTHESIS LEG. **THE WINDOW IS CROSSED TWICE, AND THE
+# SECOND PASSAGE IS WHERE THE ABUNDANCES ARE MADE.**
+
+## ⓵ YOUR THREE QUESTIONS, IN ORDER
+
+**⌗ "The temperature of the expanding leg at the handover."** ***It is UNBOUNDED, and the question
+has two answers only one of which is about the construction.*** *`ZSTART` is a **numerical** start —
+the depth at which the perturbation answer has converged — and not the locus. **The locus is the
+branch point, $a\to0$.** For the record: `ZSTART=3e7` sits at $T_9=0.0818$, which is **just inside
+the window's cool edge** (2% above it), and the convergence scan $3\times10^6$–$3\times10^8$ spans
+$T_9=0.008$ to $0.82$ — **from below the window to well inside it, with the peaks identical across
+it.** So the spectrum is already known not to care; your question is about the abundances.*
+
+**⌗ "Whether the window is crossed on that leg, on the collapse leg, or on both."** ***BOTH.*** *The
+collapse leg runs up through $[T_9=0.08,\,9]$; the expanding leg begins at unbounded $T$ and ends at
+$2.7$ K, and **a continuous temperature history from unbounded to $2.7$ K crosses every finite
+interval exactly once.** No choice of `ZSTART` can change that. **The window in redshift is
+$z=2.94\times10^7$ to $3.30\times10^9$.***
+
+**⌗ "If the window is crossed twice, what the second passage does to the abundances."**
+⇒ ***IT IS WHERE THEY ARE MADE, AND THAT IS A SIMPLIFICATION RATHER THAN A COMPLICATION.***
+
+| nucleus | $B$ (MeV) | $B/k$ ($T_9$) | with the $\eta$ tail ($T_9$) |
+|---|---|---|---|
+| D | $2.225$ | $25.8$ | $\mathbf{1.24}$ |
+| $^4$He | $28.296$ | $328.4$ | $\mathbf{15.75}$ |
+
+*(the threshold is not $B/k$: with $\eta\simeq6\times10^{-10}$ there are $10^9$ photons per baryon,
+so the Planck tail destroys a nucleus well below it — divide by $\ln(1/\eta)=21.2$, which for D
+gives the textbook bottleneck.)* **And the branch point has no upper bound on $T$, so it exceeds
+both by any margin asked for.** ⇒ ***Everything the collapse leg built is photodissociated back to
+free nucleons before the expanding leg begins. The collapse leg's products cannot survive to be
+counted, so the expanding leg runs ordinary BBN from free nucleons.***
+
+⌗ **THE OLD ACCOUNT WAS THE HARDER ONE.** *`P15` and `P16` put the synthesis on the collapse's
+cooling leg below a $1.6\,$eV onset, which required that leg to **both build and preserve** the
+nuclei. **The crossing handover removes that requirement instead of adding one**, and puts the
+synthesis exactly where standard cosmology puts it.*
+
+## ⓶ ⛔ ONE CORRECTION TO YOUR OWN WORDING, AND IT IS WORTH THE SENTENCE
+
+*You wrote "on a rate the network cannot tell from the standard one". **True of the physical rate.
+FALSE of $\Omega_r/a^4$ as this instrument parameterises it**, and the gap is not small:*
+
+| $T_9$ | $H$, network | $H$, leaf $\Omega_r$ | leaf/network |
+|---|---|---|---|
+| $9.00$ | $4.074\times10^{-1}$ | $2.277\times10^{-1}$ | $\mathbf{0.559}$ |
+| $5.00$ | $1.257\times10^{-1}$ | $7.026\times10^{-2}$ | $\mathbf{0.559}$ |
+| $1.00$ | $2.829\times10^{-3}$ | $2.811\times10^{-3}$ | $0.994$ |
+| $0.08$ | $1.800\times10^{-5}$ | $1.799\times10^{-5}$ | $0.999$ |
+
+***$44\%$ slow above $T_9\sim1.5$, and a rate $44\%$ slow through weak freeze-out would move
+$Y_p$.*** **The cause is the $e^+e^-$ pairs**: the network carries them in $g_*(T)$, while
+$\Omega_r=4.15\times10^{-5}/h^2$ is the **post-annihilation** density extrapolated back as $a^{-4}$
+and misses them. *The gap opens at $T_9\sim5$ where the pairs annihilate and is closed to $0.6\%$
+below $T_9=1.5$.*
+
+⇒ ***Nothing above is disturbed — the network does not run on the leaf parameterisation, it builds
+$\rho_{\rm rad}$ from $g_*(T)$, so the abundances are computed on the right rate.*** ⚠ **But nobody
+may compute BBN on the instrument's $\Omega_r$ and expect the table.** *And this is a caveat about
+the INSTRUMENT'S background, not about the construction: **flat $\Lambda$CDM's $\Omega_r$ misses
+$e^+e^-$ in exactly the same way**, so it is not a difference between the arms.*
+
+## ⇒ WHAT YOU CAN WRITE
+
+***Both papers can say it in the new terms and neither needs a correction to a number: the $1.6\,$eV
+onset goes, the synthesis moves to the expanding leg, and the table stands.***
+⚠ *What this does NOT say: that the collapse leg is unobservable, or that nothing else about it
+changes. It says the **abundances** do not, and only because the branch point erases the first
+passage.*
+⌗ *`receipts/P16_cosmogenesis_paper/P16_the_window_is_crossed_twice_and_the_expanding_leg_is_where_the_abundances_are_made.py`*
