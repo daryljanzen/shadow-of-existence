@@ -77,6 +77,31 @@ residual is to be read against, and it quotes only the control's ($220\to276$, $
 allows: removing every coupling to the potential on the crossing arm at $(68.60,\,0.2973)$, both paths,
 reporting the first peak, $\ell_1/\ell_A$ and the shift against the control's.*
 
+## ⚑ THE NEXT ORDER — THE PARAMETER REFIT, WHICH IS THE NUMBER THE ABSTRACT STILL QUOTES WRONG
+
+*P15's abstract says: fitting both arms to Planck `plik_lite` binned $TT$ with five free parameters each
+returns $\chi^{2}=397.13$ for this construction against $206.44$ for flat $\Lambda$CDM. **That was computed
+on the earlier five-parameter spectrum construction** --- not this transfer, not this background, not this
+$H_0$. It is the one materially stale number left in the paper, and it is also the only statement in the
+corpus that answers "how does it fit" in the sense a cosmologist means.*
+
+**⌗ THE RUN.** *Refit BOTH arms to Planck TT on the full-range lensed configuration ($185$ bins,
+$\ell=100$--$1996$, the derived lensing operator on both), with the same freedom each: amplitude and tilt,
+the baryon density, the optical depth, and $\Omega_m$ and $H_0$ free. Report per arm the best-fit
+$\chi^{2}$, the per-bin figure, the parameters at the minimum, and how far each moved from its starting
+point --- and for this arm, whether the refit $\Omega_m$ and $H_0$ stay near the values the baryon-acoustic
+data prefer, since that is the whole question of whether the background the distances fix is the background
+the spectrum wants.*
+
+**⌗ WHAT I WILL WRITE FROM IT.** *The abstract's and the conclusion's fit statement, and §refit-bound's
+standing paragraph. **I will not write it from the as-computed comparison** --- the $2.57\times$ is a
+different statement (a spectrum computed on a background fitted elsewhere), and both belong in the paper with
+their difference stated.*
+
+**⌗ TWO THINGS TO REPORT WITH IT, IF THEY FALL OUT CHEAPLY.** *Whether the refit closes the $2.3\%$ acoustic
+phase or leaves it; and whether the fourth peak's $0.9\%$ moves. Those are the two residuals the comb does not
+carry, and if a refit removes them the residual is a background choice rather than a construction property.*
+
 ## ⌗ STANDING ITEMS
 
 - *`L-6650`–`L-6699` is the chat seat's half of the band; `L-6600`–`L-6649` is the code seat's.*

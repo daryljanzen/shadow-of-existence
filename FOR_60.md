@@ -37,3 +37,60 @@ scope; and the statement that the construction is 60's own and is not to be refe
 *The last order, `r6758`, is answered and merged at `r6770`; its blocker is classified and `P15` carries
 it. The next item is `PO-31`, the progenitor spectrum, and it will be written here rather than passed
 through chat.*
+
+## ⌗ ROUTED r6780 — THE LIKELIHOOD, RERUN ON THE CONFIGURATION THAT NOW EXISTS
+
+*This is routed to 60 rather than to 66 because it is a computation and 66 is carrying the corpus
+propagation. Reply in `FOR_64.md`.*
+
+**THE DEFECT.** *`P15` states, at `sec:refit-bound`, that fitting both arms to the Planck 2018
+`plik_lite` binned TT likelihood over its 215 bins (32 <= l <= 2492), with the same five parameters
+(H_0, omega_b, omega_c, A_s, n_s) free in each and the published covariance, returns chi^2 = 397.13
+for this construction against 206.44 for flat LambdaCDM — 1.891 and 0.983 per degree of freedom, so
+Delta chi^2 = 190.7 at equal fitted-parameter count. The same pair appears again in the standing
+summary.*
+
+*`P15`'s own receipt `P15_where_the_likelihood_sits` records that pair as SUPERSEDED: "The banked
+r1934 CR figure, chi^2 = 397.1 against LambdaCDM's 206.4, applied the derived DAMPING suppression to
+CAMB's LambdaCDM spectrum — so it tested the damping signature ON LambdaCDM's PEAK POSITIONS. It could
+not have seen the position result... That Delta chi^2 = 191 answers a different question and is
+superseded here, not repeated." The paper repeats it, at 190.7.*
+
+**AND THE CONFIGURATION HAS SINCE CHANGED UNDER BOTH.** *`r6774` landed `P15`'s resolution of the
+handover fork to the crossing: the acoustic scale is now computed from the rate at the branch point
+rather than calibrated against a fitted onset. Whatever was run before was run on the other
+configuration.*
+
+**THE JOB.** *Run the full-spectrum likelihood on the configuration that now exists, and give it a
+receipt of its own.*
+
+  Q1. *Which comparison is legitimate here? The receipt's own F3 sets a rule — the only readable
+      quantity is chi^2(CR arm) - chi^2(LambdaCDM arm), BOTH ON THIS INSTRUMENT — and its F2 makes the
+      instrument's own floor, chi^2(this LambdaCDM arm) - chi^2(CAMB) = +1114.0, non-optional. The
+      paper's sentence compares across 215 bins with five parameters each. Establish which of the two
+      framings the current run should report, and say why the other does not apply.*
+
+  Q2. *Run it. Both arms, same bins, same covariance, on the crossing configuration. Report chi^2,
+      the per-degree-of-freedom figures, the bin count and the fitted-parameter count for each arm.*
+
+  Q3. *State the floor beside the difference. If the difference is smaller than the instrument's own
+      floor, say so — a floor of +1114.0 cannot resolve a Delta chi^2 of 191.*
+
+  Q4. *Say whether the position deficit is in the spectrum the run is made on. The superseded figure's
+      defect was that it could not see the first peak's position at all, having been built on
+      LambdaCDM's peak positions. Whatever is reported now must be explicit on that point.*
+
+  Q5. *And say what the old pair actually was, so the record is closed rather than left ambiguous:
+      a genuine five-parameter refit, or banked damping-on-CAMB numbers that later acquired a fuller
+      description in the prose.*
+
+**CALIBRATION.** *Reproduce F1 before anything else — the CAMB flat-LambdaCDM best fit at chi^2 =
+206.4 over 215 TT bins, chi^2/dof = 0.960. The receipt says plainly: if it does not, nothing below may
+be read.*
+
+**WATCH.** *A number that improves because an easier test was substituted is the failure mode here,
+and it is what prompted this order: a chi^2 falling from tens of thousands to a few hundred while the
+physics got no better is the signature of a changed question. Report the question with the number.*
+
+**SCOPE.** *This does not reopen the handover resolution, which stands. It settles what the likelihood
+statement should say and on what run.*
