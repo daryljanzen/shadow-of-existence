@@ -146,6 +146,10 @@ sources: [cowork, chat]
 
 
 
+### Revision r6760+66.4 — 2026-09-21 (node 66, chat seat). **The pin and the crossing are incompatible by ordering, and the sector's fork is stated as one.**
+**⌗ THE CONSTRAINT.** *The handover cannot precede the onset. On the leaf ruler the pin solves at $z_{\rm onset}=61{,}580$; the handover converges to the crossing only above $z\sim3\times10^{6}$. A configuration carrying both sits at an intermediate locus --- which is what the pinned run measures: the comb repaired ($\ell_1/\ell_A=0.7095$ against the sky's $0.7312$, $\ell_A$ at the measured $301.6$) and the heights inverted ($P_1/P_2$ from $+1.5\%$ to $+17.4\%$).*
+**⌗ THE FORK.** *Either the crossing is the handover and there is no onset to fit --- the comb is an output at $286.0$, the $-3.77\%$ a prediction carried mostly by $D_M$, and the leaf ruler with no onset prefers $H_0=68.6$; or the onset is a locus and the pin is legitimate --- the comb right by construction and $\chi^2/12$ dof $=0.93$ at $H_0=73$, with a state at that locus still owed that the phase and the heights both accept. `THE_STAGED_REVISIONS` §SR-15d carries both branches and the two runs that separate them.*
+
 ### Revision r6760+66.3 — 2026-09-21 (node 66, chat seat). **The handover result divided by instrument path, the arm's equality identified with its Hubble value, and the light elements shown silent on both.**
 **⌗ PATH.** *Positions survive both instrument paths (the coded arm $\ell_1=206$ either way with $\ell_1/\ell_A=0.6830$ identical; the crossing arm $216$ against $214$, within a grid step); heights do not (fluid $2.496$ and $2.982$ against polarisation's $2.250$ and $2.150$). The staged §refit-bound paragraph therefore writes the heights as the polarisation path's and the position, phase and alternation as the construction's.*
 **⌗ EQUALITY.** *The leaf background's $z_{\rm eq}=3936$ is $\omega_m=0.1634$, which is $H_0=73$ at $\Omega_m=0.3066$: the equality the third-peak band turns on is the Hubble result read at recombination, not a second datum. $\ell_{\rm eq}=155.7$ reproduces §refit-bound's own band edge from the background alone.*

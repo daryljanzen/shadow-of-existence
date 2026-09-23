@@ -98,6 +98,36 @@ are the sentences that change.*
   background, $14\%$ from the control's measured $3447$ rather than $1.4\%$. §envelope's "the envelope turns
   over at the same wavenumber, for a structural reason and not by assumption" rests on the first.*
 
+### ⌗ `SR-15d` · THE PIN AND THE CROSSING CANNOT BOTH BE HAD, AND THAT IS THE FORK
+
+**⌗ THE ORDERING CONSTRAINT.** *The handover cannot precede the onset: the expansion leg does not exist before
+it. On the leaf ruler the pin solves at $z_{\rm onset}=61{,}580$, while the handover converges to the crossing
+only above $z\sim3\times10^{6}$ and is still moving at $3\times10^{5}$. **So a configuration carrying both is
+at an intermediate locus, not at the crossing**, and run~1's figures carry that: the comb is repaired
+($\ell_1/\ell_A=0.7095$ against the sky's $0.7312$, the position deficit $6.6\%\to3.0\%$ with $\ell_A$ at the
+measured $301.6$) and the heights invert ($P_1/P_2$ $2.250\to2.603$, from $+1.5\%$ to $+17.4\%$; $P_1/P_3$
+$2.150\to2.539$).*
+
+**⌗ SO THE ONSET IS EITHER A LOCUS OR A REPAIR, AND THE CORPUS MUST SAY WHICH.**
+
+- ***The crossing is physical.*** *Then there is no onset to fit: the comb is an output, $286.0$ against the
+  sky's $298.4$, and the $-3.77\%$ is a prediction --- $d\ln D_M=-6.40\%$ against $d\ln\rs=-2.63\%$, the
+  distance deficit being the directly measured $H_0$ itself. On the leaf ruler with no onset the joint fit
+  prefers $H_0=68.62$ at $\chi^2/\rm dof=0.96$, and the leaf acoustic angle independently gives $68.54$.
+  **This branch keeps the phase, the alternation and the heights and gives up the Hubble resolution.***
+- ***The onset is physical.*** *Then the pin is legitimate, the comb is right by construction, $\chi^2/12$ dof
+  $=0.93$ at $H_0=73$ on the leaf ruler --- and the state specified at that locus is what the heights then
+  test. The coded state fails the phase; the crossing state imposed there overshoots the heights by $17\%$.
+  **This branch keeps the Hubble resolution and owes a state at the onset that the phase and the heights both
+  accept.***
+
+**⌗ WHAT SEPARATES THEM, AND IT IS TWO CHEAP RUNS.** *The stacking-clock control at $z_{\rm onset}=61{,}580$,
+which says whether run~1's height inversion is the clock or the earlier start; and **the crossing arm, no pin,
+at $H_0=68.6$** --- the self-consistent configuration of the first branch, where the comb should land on the
+sky's $298.4$ as an output rather than a fit. If it lands and the heights hold, the construction with the
+handover at the crossing predicts $H_0\simeq68.6$, which is a different Hubble statement from the corpus's
+and has to be written as one.*
+
 ### ⌗ `SR-15c` · WHAT THE TWO PATHS AND THE NETWORK ADD — one qualification, one identity, one non-cost
 
 **⌗ THE HEIGHTS ARE PATH-SPECIFIC AND THE POSITIONS ARE NOT.** *Run on both instrument paths, the handover
