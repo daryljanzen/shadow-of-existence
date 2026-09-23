@@ -36,6 +36,20 @@ OUT = os.path.join(ROOT, 'THE_FRONTIER.md')
 
 # ** id: (short name, steps-left, steps-last-revision, turns-per-step, gate, runway note) **
 EST = {
+    'PO-10': ('the likelihood comparison, and which run it rests on', 1, 0, 3, None,
+        'r6780: REOPENED. P15 sec:refit-bound reports both arms fitted over 215 bins with the same '
+        'five parameters free in each, returning chi^2 = 397.13 against 206.44, 1.891 and 0.983 per '
+        'degree of freedom, Delta chi^2 = 190.7. P15s own receipt records that pair as the banked '
+        'r1934 figure, built by applying the damping suppression to CAMBs own LambdaCDM spectrum and '
+        'so on LambdaCDMs peak positions, and says it answers a different question and is superseded, '
+        'not repeated. And r6774 changed the configuration under both, the acoustic scale now being '
+        'computed from the rate at the branch point. The row owes a run on the configuration that now '
+        'exists, with its own receipt: the framing settled against the receipts F3, which admits only '
+        'the difference between the two arms on one instrument; the F2 floor of +1114.0 reported beside '
+        'any difference; the position deficits presence in the spectrum run on stated explicitly; and '
+        'the old pairs provenance closed. Routed to node 60. The figure pass into P07 and P18 is held '
+        'on this. '
+    ),
     'PO-13': ('the handover datum, and what sets this arms first peak', 1, 1, 6, None,
         'r6476: THE LAST CONVENTION IS STRIPPED and the instruments own standing question is ANSWERED -- NO. '
         'ACOUSTIC_two_arm exposed LATARG at r2441 expressly to ask whether the deficit is an artefact of where the '
@@ -289,7 +303,7 @@ LASTFIND = ("r6713: **the two faces are both five-dimensional and share one four
 # ⚠ *** A BUILD step has NO completed instance to calibrate against -- PO-11's continuum,
 # PO-6's UV definition, PO-1a's derivation.  Those are marked BUILD and their estimates
 # are declared unmeasured rather than dressed as measured. ***
-KIND = {'PO-46': 'BUILD', 'PO-13': 'BUILD', 'PO-36': 'READ', 'PO-33': 'BUILD',   # r4145: was READ, scoped when the diagnosis looked answered; it is not
+KIND = {'PO-46': 'BUILD', 'PO-10': 'BUILD', 'PO-13': 'BUILD', 'PO-36': 'READ', 'PO-33': 'BUILD',   # r4145: was READ, scoped when the diagnosis looked answered; it is not
          'PO-14': 'BUILD', 'PO-15': 'READ', 'PO-16': 'READ',
         # ** brought in r3095 from p0's frontiers and the field ledgers, which carried them
         # unregistered.  PO-17 is a DECISION stated without being claimed both ways; PO-18 an
@@ -304,9 +318,9 @@ KIND = {'PO-46': 'BUILD', 'PO-13': 'BUILD', 'PO-36': 'READ', 'PO-33': 'BUILD',  
 #   and the generator reported "9 open" while the table showed EIGHT -- the count comes from
 #   the live set and the rows come from here.*  ** Adding a row needs three things: the
 #   register row, the runway, and this list. **  check_frontier_current now checks all three.
-ORDER = ['PO-45', 'PO-46', 'PO-13', 'PO-43', 'PO-24', 'PO-36', 'PO-30', 'PO-25', 'PO-26', 'PO-31', 'PO-23', 'PO-15', 'PO-14', 'PO-17', 'PO-18', 'PO-19', 'PO-20']
+ORDER = ['PO-45', 'PO-46', 'PO-10', 'PO-13', 'PO-43', 'PO-24', 'PO-36', 'PO-30', 'PO-25', 'PO-26', 'PO-31', 'PO-23', 'PO-15', 'PO-14', 'PO-17', 'PO-18', 'PO-19', 'PO-20']
 GROUP = {'PO-45': 'A', 'PO-46': 'A',  # ⛔ r6549: a FOURTH hardcoded list -- GROUP -- and a row missing here raises.
-         'PO-13': 'D', 'PO-14': 'A', 'PO-15': 'C', 'PO-16': 'D',
+         'PO-10': 'D', 'PO-13': 'D', 'PO-14': 'A', 'PO-15': 'C', 'PO-16': 'D',
          # ** r3095: the four brought in from p0's frontiers and the field ledgers.  PO-17 and
          # PO-19 are substrate geometry; PO-18 is the constant ledger; PO-20 is analysis. **
          'PO-17': 'E', 'PO-18': 'E', 'PO-19': 'E', 'PO-20': 'E',
