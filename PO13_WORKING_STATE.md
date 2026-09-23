@@ -3091,3 +3091,92 @@ pre-emptively widened, because churn in files whose numbers the papers quote is 
 **Six files were widened: the instrument, three in `hubble_build/`, and two receipt mirrors that
 had drifted from the `hubble_build/` scripts they declare as their ORIGIN.**
 ⌗ *`receipts/P15_CR_cosmology/P15_the_onset_bracket_family_is_latent_everywhere_and_was_live_in_one_place.py`*
+
+
+---
+
+# ⚑⚑ r6760+cc66.7 — AT ITS OWN RULER'S $H_0$ THE CROSSING ARM PREDICTS THE COMB, AND THE
+# 700–1000 BAND FINALLY GOES
+
+*Node 66 (code seat), at node 66 (chat seat)'s work order: "the crossing arm, no pin, at
+$H_0=68.6$ — on that branch the comb should land on the sky's 298.4 as an OUTPUT, not a fit."*
+**It lands.**
+
+## ⓵ THE CONFIGURATION, AND THE THREE CHOICES WERE MADE SEPARATELY
+
+*Handover at the **crossing** (⓵ of `r6760+cc66.1`: where $aH$ diverges and every mode is
+super-horizon). **One clock, the leaf clock** (the chat seat's adjudication, $r_s$ and $r_D$
+together). $(H_0,\Omega_m)=(68.60,\,0.2973)$ — **what the leaf ruler's own DESI DR2 fit returns**,
+with $\theta_*$ alone returning $68.55$ independently (⓶ of `r6760+cc66.2`).*
+⇒ ***Three choices, three places, three unrelated reasons. That they land together is the result.***
+
+## ⓶ THE NUMBERS, POLARISATION PATH
+
+| configuration | $\ell_A$ rep | peaks | **fitted comb** | $\phi/\pi$ | $P_1/P_2$ | $P_1/P_3$ | $g_2/g_1$ | $g_3/g_2$ | $\chi^2$/bin |
+|---|---|---|---|---|---|---|---|---|---|
+| control $\Lambda$CDM | $301.4$ | $220/536/814/1128$ | $297.0$ | $-0.2379$ | $2.195$ | $2.191$ | $0.8797$ | $1.1295$ | $\mathbf{2.10}$ |
+| the arm as coded, $H_0=73$ | $301.6$ | $206/528/832/1196$ | $313.0$ | $-0.3323$ | $1.759$ | $1.612$ | $0.9441$ | $1.1974$ | $118.44$ |
+| crossing, $H_0=73$ | $172.8$ | $216/522/788/1094$ | $286.0$ | $-0.2214$ | $2.250$ | $2.150$ | $0.8693$ | $1.1504$ | $35.51$ |
+| **crossing, $H_0=68.6$** | $\mathbf{302.9}$ | $\mathbf{222/538/818/1134}$ | $\mathbf{298.0}$ | $\mathbf{-0.2349}$ | $\mathbf{2.264}$ | $\mathbf{2.298}$ | $\mathbf{0.8861}$ | $\mathbf{1.1286}$ | $\mathbf{4.19}$ |
+| run 1, the pin | $301.6$ | $214/520/784/1092$ | $285.0$ | $-0.2246$ | $2.603$ | $2.539$ | $0.8627$ | $1.1667$ | $53.82$ |
+| **the sky** | $301.7$ | $220.4/537.7/817.3/1123.9$ | $\mathbf{298.4}$ | $\mathbf{-0.2405}$ | $\mathbf{2.217}$ | $\mathbf{2.277}$ | $\mathbf{0.8812}$ | $\mathbf{1.0966}$ | — |
+
+⇒ ***Comb $0.15\%$. $P_1/P_2$ $+2.1\%$. $P_1/P_3$ $+0.9\%$. $g_2/g_1$ $+0.6\%$, $g_3/g_2$
+$+2.9\%$.***
+
+**⌗ AND THE RULER AND THE SPECTRUM NOW AGREE.** *Reported $\ell_A = 302.9$ against a fitted comb of
+$298.0$ — $1.6\%$. **At $H_0=73$ the same two were $172.8$ and $286.0$**, so this is not bookkeeping
+agreeing with itself.*
+
+## ⓷ THE BANDS, AND THE ONE THAT SURVIVED EVERYTHING
+
+| | 100–400 | 400–700 | **700–1000** | 1000–1300 |
+|---|---|---|---|---|
+| control $\Lambda$CDM | $0.77$ | $1.44$ | $2.62$ | $3.73$ |
+| the arm as coded | $144.82$ | $22.50$ | $77.89$ | $248.50$ |
+| crossing, $H_0=73$ | $7.01$ | $8.11$ | $\mathbf{85.89}$ | $47.79$ |
+| **crossing, $H_0=68.6$** | $\mathbf{1.70}$ | $\mathbf{2.22}$ | $\mathbf{4.23}$ | $\mathbf{9.29}$ |
+
+⇒ ***Every band within a factor $2.5$ of the control.*** **The 700–1000 band — which the crossing
+handover did not fix, which the equality scan reached only by putting in radiation the arm does not
+have, and which the pin made worse — goes $85.89\to4.23$ per bin here, on a configuration that
+fits nothing.**
+
+## ⓸ WHAT IS NOT FITTED
+
+*$z_{\rm onset}$: **not solved** — the handover is at the crossing, so `brentq` never runs and
+`LATARG` is never reached. **The corpus calls $z_{\rm onset}$ "the one fitted number" and this
+configuration does not spend it.** $\ell_A$: **not pinned** — reported as $\pi D_M/r_s$ and
+independent of the comb. $A_s$: one amplitude in closed form, as for every row including the
+control.*
+⚠ ***$(H_0,\Omega_m)$ ARE fitted*** — *to DESI BAO and $\theta_*$, not to $TT$. So the cosmology is
+not parameter-free; what is out-of-sample is the **spectrum** against the data that set it.*
+
+## ⓹ ⛔ AND IT IS STILL REJECTED, WHICH IS THE RESULT AND NOT A CAVEAT ON IT
+
+*$4.19$ per bin against the control's $2.10$ — **a factor $2.0$**. What changed is the size: the
+coded arm is a factor $56$ and the same crossing arm at $H_0=73$ is a factor $17$.*
+
+**⌗ THE PHASE IS NOW THE ONLY THING LEFT IN THE POSITIONS.** *$-0.2349\pi$ against the sky's
+$-0.2405\pi$, $2.3\%$, where the comb is $0.15\%$. `sec:refit-bound`'s standing finding — the
+spacing is right and the acoustic phase is the disagreement — **survives this configuration and is
+sharpened by it**.*
+
+**⌗ BOTH PATHS.** *The comb is $298.0$ on both. The heights are $2.264/2.298$ on the polarisation
+path and $2.448/2.934$ on the fluid path — and the fluid path already overshot at $H_0=73$
+($2.496/2.982$), so moving $H_0$ neither caused that nor can cure it.* ⇒ ***The comb result is
+path-proof; the height result is polarisation-path specific and is reported as such.***
+
+⚠ **AND THE CONFIGURATION IS THE 133-BIN UNLENSED ONE AT `LMAXL=1300`.** *The corpus's 185-bin
+full-range lensed comparison needs $\ell\sim2000$ and is not run. A number scored on one may not be
+quoted against the other.*
+
+## ⇒ WHAT THIS IS, STATED FOR THE CHAT SEAT TO DECIDE ON
+
+***On the chat seat's own criterion this is the first branch: a complete, pin-free configuration
+that reproduces the sky's acoustic comb to $0.15\%$ and its heights to $\sim2\%$ with no fitted
+number in the spectrum, and it predicts $H_0\approx68.6$.*** **That is a different Hubble statement
+from the corpus's and has to be written as its own rather than as a repair of the existing one** —
+*because the corpus's $H_0=73$ is exactly what it replaces, and at $73$ this same configuration is
+rejected seventeen times harder.*
+⌗ *`receipts/P15_CR_cosmology/P15_at_its_own_preferred_H0_the_crossing_arm_predicts_the_acoustic_comb_with_no_fitted_number.py`*
