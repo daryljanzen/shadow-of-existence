@@ -397,33 +397,14 @@ The null boundary admits only the first column: one characteristic datum per mod
 
 The peak \emph{heights} are then carried by a structural argument rather than a bespoke transfer. The driven acoustic amplitude is the resonant Fourier magnitude of the potential's evolution, $|\tilde\Psi(\omega{=}1)|$---exactly invariant under time reversal, $|\widetilde{\Psi(x)}|=|\widetilde{\Psi(-x)}|$, a Fourier theorem confirmed numerically on the radiation-era transfer function and on a random control\rcpt{P15_time_reversal_driving}. 
 
-This cosmology's driving lives on the \emph{contracting} side---the progenitor's radiation-comparable collapse phase, whose potential evolution is the Friedmann time-reverse of an expanding radiation era---so its driving magnitude equals flat $\Lambda$CDM's exactly, and the branch point's faithful transmission (\S\ref{sec:transmission}) carries it across unaltered. 
+The equality is a theorem about Fourier magnitudes and holds whichever side the driving lives on. \emph{Which
+side it lives on is fixed by the rate rule}: the perturbations run on the leaf congruence, whose matter--radiation
+equality is fixed by the epoch the distance data fix, so the plasma's early history is radiation-dominated and
+the modes carrying the first peak enter the horizon while it is. \emph{The driving is therefore on the
+expanding leg}, and the collapse leg's contribution to the state that meets it is an amplitude and not a
+phase.
 
-The acoustic amplitude, and with it the peak-height pattern, therefore match flat $\Lambda$CDM's---by the time-reversal structure, not by tuning---conditional on the inherited medium being the ordinary photon--baryon plasma, the condition the abundance comparison confirms (\S\ref{sec:tensions}; receipt: \texttt{cr\_collapse\_driving.py}\rcpt{P15_cr_collapse_driving}, the driving validated as a linear oscillator against the known radiation-era boost). 
-
-\emph{That argument rests on a premise that does not hold, which leaves its conclusion
-unsupported rather than merely unproven.} It requires that a geometrically fixed rate possess no expanding
-radiation era at all, so that the contracting side is the only place driving could live. \emph{That census
-was taken on the stacking rate, and the three-level rule assigns the perturbations to the leaf} --- whose matter--radiation equality is fixed by the epoch the distance data fix, the plasma's early history being radiation-dominated. \emph{So the leaf
-does possess an expanding radiation era}, and the modes carrying the first peak are still super-horizon when
-the plasma starts and enter while radiation dominates.
-
-\emph{And the transfer measures what the structural argument predicts, and does not find it.} The height
-ratios this arm returns are $P_1/P_2=1.759$ and $P_1/P_3=1.612$ against the sky's $2.217$ and $2.277$ --- a
-deficit of $20.7\%$ and $29.2\%$, deepening with peak number. \emph{The heights do not match flat
-$\Lambda$CDM's on this construction's own instrument}, and the structural argument above cannot be read as
-establishing that they do. \emph{What produces that pattern is not settled here}, and the reason is sharper than an unanswered
-question. The transfer never integrates the collapse leg: that leg enters through a handover datum of three
-numbers per mode, and \emph{its two halves are read at different points of it} --- the photon amplitude
-carries the closed-form transfer this paper derives, and the potential is set to its primordial value. So
-the expanding-leg driving is re-applied from a potential the collapse leg has already spent, onto an
-amplitude that has not.
-
-\emph{And the factor by which this arm is driven harder than the control is a property of that choice.}
-Carrying the decay across to the potential does not halve the driving --- it doubles it again, to five times
-the control's, and moves the first peak further from the sky rather than back. Reading both halves at the
-same point removes the source altogether and the comb above the first peak with it. \emph{What settles it is a statement of what the photon
-perturbation and the potential both are \emph{at one locus}, and the construction supplies one.}
+\emph{What the state at the handover is has to be said at one locus, and the construction supplies one.}
 
 \emph{At the branch point every acoustic mode is outside the horizon and the leg's closed-form potential has
 returned to its regular value}, so the state arriving there is the ordinary frozen adiabatic one: the
@@ -540,7 +521,7 @@ fixed by the matter density rather than assumed\rcpt{C7_equality_and_deficit}.
 
 Two corrections that might have been expected do not enter. The baryon loading is proportional to the scale
 factor and the driving happens where the scale factor is smallest, so $R\lesssim0.1$ where the driving happens and orders below that at entry; the odd/even asymmetry is imprinted afterwards, on the expansion side at $R\approx0.6$,
-which is ordinary content physics on the observable leg. \emph{The sky's own value, located by parabolic fit on the Planck binned spectrum, is $P_1/P_2=2.2564\pm0.0772$, and flat $\Lambda$CDM's is $2.200$; \emph{what this construction returns for the same quantity is $1.759$, on the transfer of \S\ref{sec:refit-bound} with its wavenumber integral converged, since a peak height is exactly what an unconverged integral misreports}\rcpt{C5b_baryon_term}. \emph{The structural point stands without it}: the loading is the same in both because it is imprinted on the expansion side, and the argument is at the level of contents rather than of the driving---where the loading ratio alone would give $3.5$.} And the free-streaming
+which is ordinary content physics on the observable leg. \emph{The sky's own value, located by parabolic fit on the Planck binned spectrum, is $P_1/P_2=2.2564\pm0.0772$, and flat $\Lambda$CDM's is $2.200$; \emph{what this construction returns for the same quantity is $2.264$ on the polarisation path, on the transfer of \S\ref{sec:refit-bound} with its wavenumber integral converged, since a peak height is exactly what an unconverged integral misreports}\rcpt{C5b_baryon_term}. \emph{The structural point stands without it}: the loading is the same in both because it is imprinted on the expansion side, and the argument is at the level of contents rather than of the driving---where the loading ratio alone would give $3.5$.} And the free-streaming
 neutrinos the cooling-leg nucleosynthesis requires do carry anisotropic stress at these temperatures---the
 branch point is far below their decoupling---but their deep sub-horizon effect is a constant phase shift and a
 constant suppression, and a $k$-independent correction leaves a flat envelope flat\rcpt{C6_neutrino_term}.
@@ -1197,7 +1178,7 @@ The buildable ones below are named as debts, not softened into frontiers. \emph{
 \begin{enumerate}
 \item the sufficiency of the null-boundary characteristic data for the observed acoustic coherence (\S\ref{sec:coherence}), argued from the structure of the characteristic initial-value problem, with the time-reversal driving equality established there as a Fourier theorem, though what that
 equality carries about the peak-height \emph{magnitude} is what \S\ref{sec:coherence}'s own instrument
-does not presently return. \emph{The end-to-end branch-point-to-recombination transfer is run} (\S\ref{sec:refit-bound}): a two-arm line-of-sight Boltzmann integral, $\Delta_\ell(k)=\int S\,j_\ell(k(\eta_0-\eta))\,d\eta$, carried on this cosmology's own background with the perturbations on the leaf congruence the framework assigns them, and validated on its control to $0.14\%$ in the first-to-second height ratio\rcpt{C59_the_control_reproduces_camb_and_the_height_defect_was_k_truncation}. On this arm it returns a $6.6\%$ deficit in the first peak's position and height ratios $20.7\%$ and $29.2\%$ below the sky's, and the likelihood rejects this arm's spectrum; the diffusion-scale signature it carries is located by the joint fit as a Gaussian residual in $\ell$ that no tilt removes (\S\ref{sec:coherence}). \emph{What remains owed is a mechanism}: the driving's size is measured, and it overshoots rather than falls short, so it does not account for the deficit, and no mechanism for it is in hand;
+does not presently return. \emph{The end-to-end branch-point-to-recombination transfer is run} (\S\ref{sec:refit-bound}): a two-arm line-of-sight Boltzmann integral, $\Delta_\ell(k)=\int S\,j_\ell(k(\eta_0-\eta))\,d\eta$, carried on this cosmology's own background with the perturbations on the leaf congruence the framework assigns them, and validated on its control to $0.14\%$ in the first-to-second height ratio\rcpt{C59_the_control_reproduces_camb_and_the_height_defect_was_k_truncation}. On this arm it returns a comb of $298.0$ against the sky's $298.4$ and height ratios $2.264$ and $2.298$ against $2.217$ and $2.277$, with the likelihood still rejecting this arm's spectrum on shape; the diffusion-scale signature it carries is located by the joint fit as a Gaussian residual in $\ell$ that no tilt removes (\S\ref{sec:coherence}). \emph{What remains owed is a mechanism}: the driving's size is measured, and it overshoots rather than falls short, so it does not account for the deficit, and no mechanism for it is in hand;
 \item the exact large-angle \emph{depth} (\S\ref{sec:largescale}): the flat-projection transfer of the discrete closed-$S^3$ source is built with a \emph{genuine Boltzmann transfer}---the exact CMB temperature transfer $\Delta_\ell(k)$ (Sachs--Wolfe, early and late integrated Sachs--Wolfe, and Doppler, all common to CR and flat-$\Lambda$CDM) sampled at the discrete modes $k_L$, gate-validated (the continuum reproduces the reference $C_\ell$ to four figures) with the $r_0$ sensitivity measured rather than asserted---shape stable, depths drifting up to $15\%$ at $\ell=4$ (receipt: \texttt{verify\_lowell\_boltzmann.py}\rcpt{P15_verify_lowell_boltzmann}). 
 
 It gives a \emph{mild} deficit, $\approx0.47$, $0.41$, $0.36$ and $0.68$ of the $\Lambda$CDM expectation at $\ell=2,3,4,5$---\emph{a dip whose minimum falls at $\ell=4$, not at the quadrupole}, the shape reproduced by the programme's own photon hierarchy, which agrees on the location and not on the depth---recovering by $\ell\approx8$: the late integrated Sachs--Wolfe term is sourced above the floor and is therefore retained by the discrete source, leaving the deficit shallower than the bare Sachs--Wolfe starvation. 
