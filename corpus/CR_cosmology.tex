@@ -293,34 +293,20 @@ The tension is structural to a radiation-governed ruler and absent from a geomet
 \label{fig:hubble-bao}
 \end{figure}
 
-\subsection{Where the acoustic modes stand at the onset depends on the rate, and the branch point is the opposite}
+\subsection{Where the acoustic modes stand when the plasma is handed over}
 The cosmological beginning is the branch point $r=0$ at the close of the lift, where the conjugate branch becomes the matter branch~\cite{JanzenCRframework,JanzenSlicing}. The curvature invariants of the $r$-chart diverge there because the areal coordinate degenerates, while the throat itself is the substrate's defining constant $\alpha$ and the bead continues through by analytic continuation~\cite{JanzenCircle}. The lap's seams lie elsewhere, at the two unit-speed loci $r=-2\alpha/\sqrt3$ and $r=+\alpha/\sqrt3$. We record the consequence that organizes the perturbation sector.
 
-\begin{proposition}[Where the acoustic modes stand at the plasma's onset, on the rate they run on]\label{prop:subhorizon}
-\emph{The answer depends on which rate the question is asked of, and the rate rule (\S\ref{sec:tensions}) fixes which: a process running \emph{in} the content---the perturbations among them---takes the leaf's.} On the \emph{stacking} rate~\eqref{eq:rate} the comoving Hubble wavenumber at the onset redshift $z_{\mathrm{onset}}\approx6797$ is $k_{\mathrm{hor}}=H_0E(z_{\mathrm{onset}})/[(1+z_{\mathrm{onset}})c]\approx0.011\ \mathrm{Mpc}^{-1}$, against acoustic peaks at $k\sim\pi/\rs\approx0.022\ \mathrm{Mpc}^{-1}$ and above---so read there the acoustic modes are inside the horizon at the onset. \emph{On the leaf congruence, which carries a radiation term and is the rate the perturbations evolve on, the census returns the opposite for the relevant band}: $k_{\mathrm{hor}}\approx0.018\ \mathrm{Mpc}^{-1}$, every multipole below $\ell=237.7$ is still \emph{super}-horizon when the plasma starts, and the band $155.6<\ell<237.7$ enters the horizon \emph{while radiation dominates}---the leaf background having a matter--radiation equality at $z_{\mathrm{eq}}=3936$, which the onset at $z=6761$ precedes. The first peak sits inside that band, at $k/aH(\mathrm{onset})=0.858$, entering at $z=5590$.
+\begin{proposition}[Every acoustic mode is outside the horizon at the branch point]\label{prop:subhorizon}
+Approaching $r=0$ on the contracting leg the comoving Hubble scale $aH$ grows without bound, so the comoving horizon shrinks to zero and every mode leaves it before the crossing, on either rate and for every wavenumber. \emph{What is handed to the expanding leg is therefore the frozen adiabatic state}---the effective temperature at an extremum with no velocity and the potential at its regular value---and the collapse leg's contribution to it is an amplitude and not a phase.
 \end{proposition}
 
-\noindent\emph{The two epochs this proposition could be read as concerning are distinct, and the
-distinction is load-bearing}\rcpt{P15_the_locus_is_wrong_in_six_places_and_the_lint_cannot_see_the_worst}. $z_{\mathrm{onset}}$ is a redshift on the
-expanding leg---the redshift at which the expanding-phase plasma begins, and the lower limit of the
-sound-horizon integral above. \emph{It is not the branch point.} The branch point is the locus $r=0$, which no
-finite cosmic-time layer reaches and which therefore carries no finite redshift at all. \emph{The proposition
-concerns the onset and nothing else}, and its answer there is the one the rate rule selects: read on the leaf
-congruence the acoustic band below $\ell=237.7$ is still super-horizon when the plasma comes into being, and
-the band $155.6<\ell<237.7$ enters while radiation dominates. \emph{The inside-the-horizon reading is the
-stacking rate's}, and the two onset redshifts quoted above---$6797$ and $6761$---are that same pair of rates
-read at the same event, not two values of one quantity.
+\noindent\emph{What the modes then meet on the expanding leg is fixed by the same background.} The leaf congruence carries a radiation term and the perturbations evolve on it, so the wavenumber entering the horizon at equality, $\ell_{\mathrm{eq}}\simeq156$ at the epoch the distance data fix, separates the modes driven through a radiation-dominated entry from those entering later: the first acoustic peak sits above it and is driven, which is what \S\ref{sec:envelope} computes in closed form and \S\ref{sec:refit-bound} measures.
 
-\emph{And the corresponding statement about the branch point is the opposite one, for a different reason.}
-Approaching $r=0$ on the contracting leg the comoving Hubble scale $aH$ grows without bound, so the comoving
-horizon shrinks to zero and every mode \emph{exits} it before the crossing---which is why what crosses is
-frozen and non-oscillatory (\S\ref{sec:what-crosses}). \emph{That statement is about the crossing and stands
-whatever the census at the onset returns}, the two loci being distinct; reading either at the other's locus
-inverts it.
+\emph{The two loci a reader may run together are distinct, and the distinction is load-bearing}\rcpt{P15_the_locus_is_wrong_in_six_places_and_the_lint_cannot_see_the_worst}. The branch point is the locus $r=0$, which no finite cosmic-time layer reaches and which therefore carries no finite redshift at all; a configuration that instead starts the plasma at a finite redshift on the expanding leg is starting it somewhere else, and there the census is the opposite one---modes inside the horizon, and a state handed over mid-oscillation.
 
-\noindent\emph{Argument.} Direct evaluation of $E(z)=\sqrt{\Omega_m(1+z)^3+\Omega_\Lambda}$ at $z_{\mathrm{onset}}$ and of $\pi/\rs$ with the banked $\rs$ from the acoustic-scale resolution (\S\ref{sec:flatlcdm}); clean residuals (receipts: \texttt{verify\_numeric.py}, anchor~7\rcpt{P15_verify_numeric}). $\qquad\square$
+\noindent\emph{Argument.} The comoving horizon on the contracting leg, $1/(aH)$, vanishes as $r\to0$ because $2M/r$ diverges there, so $k/(aH)\to0$ for every $k$; the equality multipole follows from $1+z_{\mathrm{eq}}=\omega_m/\omega_r$ on the leaf background with the epoch the distance data fix (receipts: \texttt{verify\_numeric.py}, anchor~7\rcpt{P15_verify_numeric}). $\qquad\square$
 
-\emph{The consequence is that the acoustic band is not one regime but two, and the division is at a computed multipole rather than a chosen one.} Above $\ell=237.7$ the modes are inside the horizon when the cosmological side begins, and for those the branch-point handover is what fixes amplitude and phase, there being no super-horizon interval left in which anything else could. Below it they are not, and the sub-band $155.6<\ell<237.7$---which contains the first peak---enters while radiation dominates, so those modes have a driving history on the observable leg of the kind the standard picture gives them. \emph{What this settles is a premise and not a mechanism}: it fixes where each mode stands when the plasma starts, and it does not measure how much of the comb the driving then supplies. That measurement is the transfer of \S\ref{sec:refit-bound}, which measures the driving directly; the division above is a statement about the census, and the transfer is what carries it to the comb.
+\emph{What this settles is a premise and not a mechanism}: it fixes what the plasma is handed and where each mode stands when it starts, and it does not measure how much of the comb the subsequent driving supplies. That measurement is the transfer of \S\ref{sec:refit-bound}, which computes the driving directly; the census above is what the transfer is carried from.
 
 \section{What crosses, and what does not}\label{sec:what-crosses}
 
