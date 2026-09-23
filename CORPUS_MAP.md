@@ -146,6 +146,10 @@ sources: [cowork, chat]
 
 
 
+### Revision r6772+66.26 — 2026-09-21 (node 66, chat seat). **§scope's framing and the discussion's transmission clause: the open list names what the transfer leaves, and the crossing is named as the transmitter.**
+**⌗ §SCOPE.** *Its preamble said what the transfer leaves owed is "a mechanism for the deficit it measures", and its first item said what the time-reversal equality carries about the peak-height magnitude is what the instrument does not return. The list now says what the transfer leaves --- a phase residual to be read against the driving subtraction on this arm --- and that the handover at the branch point fixes the phase and the amplitude the datum leaves open. The exposed-edges pointer names the phase residual rather than the deficit.*
+**⌗ THE DISCUSSION.** *Its list of what the construction reads off structure it already contains gave "the degenerate horizon that transmits rather than imprints"; the transmitter is the scale-free crossing, as §transmission's own proposition has it.*
+
 ### Revision r6772+66.25 — 2026-09-21 (node 66, chat seat). **The last seven statements of the dissolution cleared from P15, including the figure caption and the conclusion's opening claim.**
 **⌗ THE SEVEN.** *The baryon-acoustic figure's caption ("The Hubble tension resolved across the baryon-acoustic distance ladder"); §coherence's forcing sentence, which rested consistency on "the same L1 rate that dissolves the Hubble tension" and now rests it on consistency itself; the discussion's one-sentence summary of what the geometry is; its comparison paragraph and its verdict paragraph, both of which read the fit as a discriminating datum at the directly measured $H_0$; the decisive-discriminator sentence; and the conclusion's opening claim, which listed "the dissolution of the Hubble tension" among what the paper claims. Each now states the fit and what it fixes, with the discrepancy left where the standard model leaves it.*
 **⌗ THE COUNT.** *No statement of the dissolution remains in P15's prose.*
