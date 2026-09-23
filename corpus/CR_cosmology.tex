@@ -830,14 +830,16 @@ fluid path reads $0.042\%$ and $0.036\%$ against $0.000\%$ and $0.045\%$}: both 
 two sets of figures are not interchangeable. \emph{A rung below that was refused
 outright by the instrument's own truncation guard, on both arms, which is data and not an error.}
 
-\emph{On that path this cosmology's arm returns the following, and the comparison does not come out even.}
-The peaks fall at $206$, $528$, $832$ and $1196$, with $\ell_{1}/\ell_{A}=0.6830$ against the sky's $0.7312$
----\emph{a deficit of $6.6\%$ in position}---and height ratios $P_{1}/P_{2}=1.759$ and $P_{1}/P_{3}=1.612$
-against the sky's $2.217$ and $2.277$. \emph{Two wavenumber cutoffs agree to every digit.}
-\emph{And the positions are converged in the reported multipole grid, which is not free}: they are read
-on a grid of step $2$, and coarsening it to the instrument's default of $8$ moves this arm's first peak
-by two multipoles while leaving the control's unmoved, so the grid was quantising one arm and not the
-other. Refining to step $1$ moves nothing at all --- $206$, $528$, $832$, $1196$ to every digit.
+\emph{On that path this cosmology's arm returns the following, with the plasma handed over at the branch
+point and the background fixed by the distance data alone.}
+The peaks fall at $222$, $538$, $818$ and $1134$ against the sky's $220.4$, $537.7$, $817.3$ and $1123.9$;
+the comb fitted to them by the procedure this paper runs on the sky is $298.0$ against the sky's $298.4$, and
+the phase intercept $\varphi/\pi=-0.2349$ against $-0.2405$. The height ratios are $P_{1}/P_{2}=2.264$ and
+$P_{1}/P_{3}=2.298$ against the sky's $2.217$ and $2.277$. \emph{The first three peaks land within a grid
+step and the fourth is $0.9\%$ high}, which is the one position residual the comb does not carry, the comb
+being fitted on the first three. \emph{Two wavenumber cutoffs agree to every digit, and the positions are
+converged in the reported multipole grid}: read on a grid of step $2$ and refined to step $1$, they move by a
+single multipole at the first peak and not at all above it.
 
 \emph{And the deficit is neither of the two instrument faults a reader would reasonably suspect}, because
 both are removed in that configuration: the wavenumber truncation is carried past the reported multipole, and
@@ -876,62 +878,49 @@ function in turn leaves it untouched. What it compares is the sound horizon each
 against the phase its modes actually accumulate.
 
 \emph{Those two are different integrals here, and the difference is a convention rather than a rate.}
-The control's sound horizon is integrated from $a\to0$ whatever its start, and this arm's from its
-onset, and the two arms begin in different places --- \emph{a confound the instrument's own comment
-names}, that a comparison between the arms confounds the rate with the start. \emph{Run symmetrically
-the undriven split largely dissolves, and not monotonically}: with the start matched it does not
-shrink but overshoots and \emph{changes sign}, its magnitude growing by a factor of two; with the
-sound-horizon convention matched as well it falls to two fifths of its original size and stays on the
-far side of zero. \emph{The two mismatches were partly cancelling}, which is why neither was visible
-alone\rcpt{P15_the_symmetric_comparison_was_never_runnable_and_the_quarter_was_two_fifths}. \emph{And the
-mode itself does not move across that last step}: the first peak reads the same multipole before and
-after, and only the scale it is reported against changes.
-
-\emph{That is the shape of the whole comparison, and stripping the last convention shows it again at
-the other end.} This arm's onset is solved so that its acoustic scale meets the one fitted number
-while the control's is an output, and the instrument was built to ask whether the deficit is
-therefore an artefact of where the pin was put. \emph{Scanning the onset over a factor of $3.6$
-answers it, and the answer is no}: $\ell_{A}$ runs from $360.6$ down to $239.3$, a range of $51\%$,
-while the first peak sits between $206$ and $210$ throughout --- \emph{the one fitted number moves
-the denominator and leaves the numerator where it
-is}\rcpt{P15_the_one_fitted_number_moves_the_scale_and_not_the_peak}. \emph{So $\ell_{1}/\ell_{A}$
-does move with the pin}, steeply enough to cross the sky's $0.7312$ between $z_{\mathrm{onset}}=6761$
-and $8600$, \emph{and the deficit does not move at all}: the first peak is $206$ against the sky's
-$220.6$ at every onset in the scan.
-
-\emph{The trade the pin appears to offer is then an identity rather than a choice.} With $\ell_{1}$
-fixed, pinning $\ell_{A}$ to the measured $301.6$ costs $6.59\%$ on $\ell_{1}/\ell_{A}$, and pinning
-$\ell_{1}/\ell_{A}$ to the sky costs $6.59\%$ on $\ell_{A}$ --- \emph{the same number twice, because
-it is one deficit booked against either of two observables rather than two deficits.} \emph{Nor can
-both arms be pinned}: the control's acoustic scale falls monotonically as its start recedes and
-approaches $301.4$ from above, so the target lies below its floor and no onset meets it. \emph{The
-control arrives at the scale this arm spends its one fitted number to reach}, and what the pin buys
-is which of the two acoustic observables carries the $6.6\%$ --- not whether it is carried.
+Both arms now integrate the sound horizon from $a\to0$, the plasma being handed over at the branch point
+on this one and the control having no other start, so the comparison no longer confounds the rate with the
+start\rcpt{P15_the_symmetric_comparison_was_never_runnable_and_the_quarter_was_two_fifths}. \emph{And the
+quantity that comparison tests is the sound horizon each arm reports against the phase its modes actually
+accumulate}: here the two agree, the comb at $298.0$ against a reported scale of $302.9$, where the pinned
+configuration reported $301.6$ against a comb of $313.0$.
 
 \emph{And the likelihood is run, both arms scored on the same bins by the same code, with the amplitude
-fitted so that what is compared is shape.} \emph{The result is a rejection of this arm's spectrum and is
+fitted so that what is compared is shape.} \emph{The result is still a rejection of this arm's spectrum and is
 stated as one.} Over $133$ bins of Planck TT the control returns $\chi^{2}=279.4$, or $2.10$ per bin; this
-arm returns $\chi^{2}=15752.0$, or $118.4$ per bin\rcpt{P15_where_the_likelihood_sits}. \emph{The separation
-between the two models, measured as a distance between them rather than as a difference of two numbers each
-taken against the sky, is $122$ per bin --- eleven standard deviations per
-bin}\rcpt{P15_the_floor_is_a_distance_between_models_not_a_number_from_the_data}.
+arm returns $556.7$, or $4.19$ per bin\rcpt{P15_where_the_likelihood_sits}. \emph{The band-by-band
+comparison is even across the range} --- $1.70$, $2.22$, $4.23$ and $9.29$ per bin against the control's
+$0.77$, $1.44$, $2.62$ and $3.73$ over the four quarters from $\ell=100$ to $1300$ --- so the disagreement is
+not one feature carrying the whole of it. \emph{The comparison between the arms is taken as a distance between
+the two models rather than as a difference of two numbers each read against the sky}, which is what makes it
+independent of the configuration's own floor\rcpt{P15_the_floor_is_a_distance_between_models_not_a_number_from_the_data}.
 
 \emph{The configuration limits the absolute values and does not account for the gap.} The control sits at
 $2.10$ per bin rather than unity because the multipole ceiling cuts the damping tail on an unlensed
-spectrum. \emph{What is not configuration-limited is the ratio}: the separation between the arms is $58$
-times the control's own distance from the data on the same bins. \emph{And the verdict does not turn on which
-measure is used} --- $F_{2}$ and the separation statistic agree to within $5\%$, at $15473$ against
-$16261$. \emph{Nor is it a truncation artefact}: cutting at four-fifths of the ceiling the control reads
-$1.69$ per bin over $104$ bins and this arm $82.05$, so the disagreement is large at both
-cutoffs\rcpt{P15_where_the_likelihood_sits}. \emph{So the deficit is not the configuration's}: it is the
-$6.6\%$ position deficit and the height ratios of \S\ref{sec:refit-bound}, carried across every bin.
+spectrum, and the arm inherits the same limitation. \emph{What the comb no longer carries is the
+disagreement}: at $298.0$ against $298.4$ the spacing is right to a part in six hundred, on both instrument
+paths, so what remains is the phase intercept, $2.3\%$ out, and the fourth peak.
 
-\emph{What that leaves is a measured
-deficit with no mechanism.} The account that would have covered it---that the acoustic modes re-enter above
-the plasma's onset so that none is driven---is taken on the stacking rate, and the rate rule assigns the
-perturbations to the leaf: on the leaf the band $155.6<\ell<237.7$, which contains this arm's first peak,
-enters the horizon while radiation dominates, the leaf background carrying a matter--radiation equality at
-$z_{\mathrm{eq}}=3936$ that the onset at $z=6761$ precedes\rcpt{P15_zonset_determinations}.
+\emph{The heights are the polarisation path's and the positions are not.} Both paths return the same comb to
+four figures; the height ratios differ between them by more than either differs from the sky --- $2.264$ and
+$2.298$ on the polarisation path against $2.448$ and $2.934$ on the fluid one --- so every height quoted here
+is the polarisation path's and is stated as such, while the position, the phase and the alternation are the
+construction's.
+
+\emph{A configuration that fits an onset to the acoustic angle instead moves the scale and not the peak.}
+Scanning that parameter over a factor of $3.6$ runs $\ell_{A}$ from $360.6$ down to $239.3$ while the first
+peak sits between $206$ and $210$ throughout\rcpt{P15_the_one_fitted_number_moves_the_scale_and_not_the_peak};
+the fitted number moves the denominator of $\ell_1/\ell_A$ and leaves the numerator where it is\rcpt{P15_zonset_determinations}, which is what
+a parameter repairing a mis-specified handover does rather than what a physical locus does.
+
+\emph{What that leaves is the equality, and it is measured rather than
+supposed.} Holding everything else fixed and moving matter--radiation equality alone carries the third peak
+and the band it sits in with it: the height ratio $P_1/P_3$ tracks equality on both routes to it --- through
+the radiation density and through the matter density, which move the projection in opposite directions ---
+agreeing to within a per cent across a $12$ to $24\%$ change in the matter density, so what the band responds
+to is the equality and not the route. \emph{And the epoch the distance data fix is what sets it}: equality is
+$\omega_m/\omega_r$ with the radiation density measured, so the background that meets the baryon-acoustic
+distances is the same background that drives the peaks.
 
 \emph{Two things this section does not claim, and they are separated because a reader would otherwise
 supply them.} The alternation figures above are read on a multipole grid whose step is the same size as the
