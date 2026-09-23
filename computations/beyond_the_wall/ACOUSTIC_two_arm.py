@@ -123,9 +123,20 @@ ag = np.logspace(-9, 0, 40000)
 _seed = float(quad(lambda a: C / (a ** 2 * Hphys(a)), 1e-16, ag[0], limit=200)[0])
 eg = np.concatenate([[_seed], _seed + cumulative_trapezoid(C / (ag ** 2 * Hphys(ag)), ag)])
 Hc_of = CubicSpline(eg, ag * Hphys(ag) / C)                       # comoving Hubble, 1/Mpc
-# ** LEAFPERT=1: THE PERTURBATION SECTOR ON THE LEAF'S RATE (option (b)).  P15 sec:properframe and
-# P7's rate-rule remark both assign THE PERTURBATIONS to the leaf: "a process running in the content
-# -- rs, r_D, recombination, the perturbations -- takes the leaf's".  The file carries ONE rate, and
+# ** LEAFPERT=1: THE PERTURBATION SECTOR ON THE LEAF'S RATE (option (b)).  P7's rate-rule remark
+# assigns the perturbations to the leaf: "a quantity computed from a process running IN the content
+# --- the plasma's sound horizon, its diffusion length, recombination, the perturbations --- takes
+# the leaf's."
+# ⚠ ** THE QUOTATION AND THE ATTRIBUTION WERE BOTH WRONG HERE UNTIL r6760+66.1. **  *It read
+# "P15 sec:properframe and P7's rate-rule remark both read 'a process running in the content -- rs,
+# r_D, recombination, the perturbations -- takes the leaf's".  The sentence is not in
+# `sec:properframe`; the P15 sentence is `sec:tensions`', and it says the OPPOSITE of what was
+# quoted: "the scales such a separation is read in --- r_s and r_D, which accumulate against the
+# layer's own geometric expansion; a process running in the content --- recombination's
+# microphysics, the perturbations --- takes the leaf's."*  ** So P15 puts r_s and r_D on the
+# stacking side and P7 puts them on the leaf side, and this comment quoted P7's list under P15's
+# name.  The CODE was never wrong: only the perturbation dynamics moved, and r_s and r_D stayed on
+# the stacking clock -- see LEAFSCALES below, which is where that assignment is now switchable. **  The file carries ONE rate, and
 # in the CR arm it is the stacking rate, so the perturbations run on L1 where the framework says L2.
 # The fix is not a rescaled source but the leaf's own rate in the perturbation equations.  Since both
 # conformal times are monotone in a, the change is an exact chain rule:
@@ -136,8 +147,9 @@ Hc_of = CubicSpline(eg, ag * Hphys(ag) / C)                       # comoving Hub
 def Hleaf(a):
     return H0 * np.sqrt(OM / a ** 3 + OL + OR / a ** 4)            # radiation gravitates: L2
 # ** DEFAULT ON (r3409).  The perturbation sector runs on the LEAF congruence, which is what the
-# framework assigns it: P15 sec:properframe and P7's rate-rule remark both read "a process running
-# in the content --- rs, r_D, recombination, THE PERTURBATIONS --- takes the leaf's".  Validated two
+# framework assigns it: P7's rate-rule remark reads "a process running in the content --- ... ---
+# takes the leaf's", and P15 `sec:tensions` names the PERTURBATIONS on that side too (it differs
+# only over r_s and r_D; see the correction above and LEAFSCALES).  Validated two
 # ways before the default was inverted: the lcdm arm's two rate expressions are character-identical,
 # so Jac == 1 and this is provably a no-op there; and that no-op was confirmed numerically at 2700
 # modes, l_1 = 220 against the validated control's 220 and the sky's 220.6.  Set STACKPERT=1 to
@@ -208,12 +220,33 @@ eta_0 = eg[-1]
 D_M = eta_0 - eta_rec
 
 
+# ** LEAFSCALES=1 PUTS r_s AND r_D BOTH ON THE LEAF CLOCK -- node 66's adjudication, r6760+66.1. **
+# *The corpus states the assignment twice and not alike.  P15 `sec:tensions`: "the scales such a
+# separation is read in --- r_s and r_D, which accumulate against the layer's own geometric
+# expansion", i.e. the STACKING rate, with `sec:coherence` calling it forced.  P7's rate-rule
+# remark: "a process running IN the content --- the plasma's sound horizon, ITS DIFFUSION LENGTH,
+# recombination, the perturbations --- takes the leaf's."*
+#   ⇒ ** The measurement that decides it is the comb. **  With the handover at the crossing the
+#   fitted acoustic scale is l_A = 286.0, against pi D_M / r_s,leaf = 292.4 (2.2%) and
+#   pi D_M / r_s,stack = 172.8 (not close).  ** The comb rides the leaf accumulation. **
+# *Adjudicated: ONE object, the leaf clock, for r_s and r_D both -- and they move TOGETHER, because
+#  `sec:coherence`'s own demand is consistency: "one may not take the rate geometric for the peak
+#  spacing and radiation-included for the diffusion."  A switch that moved one would be the thing
+#  that sentence forbids.*
+# ⚠ ** DEFAULT OFF AND BYTE-IDENTICAL.  The stacking-clock numbers stay reproducible, which is the
+#   whole point of a switch rather than a replacement: every figure the corpus has quoted off this
+#   instrument was taken at LEAFSCALES=0 and must remain re-derivable. **
+LEAFSCALES = os.environ.get('LEAFSCALES', '0') == '1'
+
+
 def rs_from(z_lo):
-    # r_s on the STACKING clock -- the COMOVING RULER for l_A = pi D_M / r_s, theta_* and the
-    # projection (L1).  This is the OTHER of the instrument's two sound horizons; the PHASE
-    # ACCUMULATOR for the oscillator and Q is r_s,leaf in `sound_phase`.  See that docstring: the two
-    # are correct and NOT interchangeable (ratio 1.286 at the physical onset).  Do not unify them.
-    return quad(lambda a: C / (a ** 2 * Hphys(a) * np.sqrt(3 * (1 + RB_REC * a / A_REC))),
+    # r_s -- the COMOVING RULER for l_A = pi D_M / r_s, theta_* and the projection.  On the STACKING
+    # clock at the default (L1, what `sec:tensions` assigns it); on the LEAF clock under
+    # LEAFSCALES=1.  The PHASE ACCUMULATOR for the oscillator and Q is `sound_phase`, which is
+    # always the leaf's -- so at LEAFSCALES=1 the two coincide and the instrument carries ONE
+    # sound horizon, which is what the adjudication asks for.
+    H = Hleaf if LEAFSCALES else Hphys
+    return quad(lambda a: C / (a ** 2 * H(a) * np.sqrt(3 * (1 + RB_REC * a / A_REC))),
                 1.0 / (1.0 + z_lo), A_REC, limit=250)[0]
 
 
@@ -259,8 +292,15 @@ else:
     # alternation appears as z_onset rises past re-entry, the residual IS the absence of
     # crossing-during-plasma and follows from the onset being on the branch point's cooling leg. **
     _zstart_env = os.environ.get('ZSTART')
+    # ⚠ ** THE UPPER BRACKET WAS 60000 AND IT DECIDED PHYSICS UNDER LEAFSCALES=1 -- r6760+66.1. **
+    # *On the stacking ruler the root sits at z_onset = 6764, far inside.  On the LEAF ruler the same
+    # l_A = 301.6 needs z_onset ~ 6e4, and the bracket stopped at 60000 -- where pi D_M/r_s is
+    # 301.85, a quarter of a multipole short -- so the arm did not fail to have a solution, it failed
+    # to be allowed to reach one.*  ** A bracket is an implementation detail until it truncates the
+    # answer, and then it is a silent physics choice. **  Widened; the default root is unmoved
+    # (6764 either way), which is checked rather than assumed.
     Z_START = float(_zstart_env) if _zstart_env else \
-        brentq(lambda z: np.pi * D_M / rs_from(z) - _latarg, 1500., 60000.)
+        brentq(lambda z: np.pi * D_M / rs_from(z) - _latarg, 1500., 5.0e6)
     R_S = rs_from(Z_START)
 A_START = 1.0 / (1.0 + Z_START)
 # ** RENAMED ETA_S -> ETA_ON, r3731. **  *This is the conformal time at the ONSET, A_START --
@@ -365,7 +405,12 @@ _int = (_Rg ** 2 / (1 + _Rg) + _POLC) / (6.0 * (1 + _Rg) * np.maximum(_tp, 1e-30
 #   ⇒ *Recorded rather than repaired, and PO-24's differential is taken on the line-of-sight path
 #     for this reason and not merely for cost.*
 _DAMPX = float(os.environ.get('DAMPX', 1.0))
-_kD2inv = np.concatenate([[0.0], np.cumsum(0.5 * (_int[1:] + _int[:-1]) * np.diff(_egrid))])
+# ** AND THE SAME SWITCH REACHES THE DIFFUSION INTEGRAL, because r_D is the other half of the one
+# assignment.  1/k_D^2 = INT [...] d(eta), and d(eta_leaf) = Jac d(eta_stack). **
+_dE = np.diff(_egrid)
+if LEAFSCALES:
+    _dE = _dE * 0.5 * (np.asarray(Jac_of(_egrid[1:]), float) + np.asarray(Jac_of(_egrid[:-1]), float))
+_kD2inv = np.concatenate([[0.0], np.cumsum(0.5 * (_int[1:] + _int[:-1]) * _dE)])
 kD2inv_of = CubicSpline(_egrid, _kD2inv)
 _rD = float(np.sqrt(_kD2inv[_gi]))
 print(f"  diffusion: r_D at the visibility peak = {_rD:.2f} Mpc  ->  l_D = {(eta_0-ETA_LS)/_rD:.0f}")
