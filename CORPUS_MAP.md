@@ -146,6 +146,10 @@ sources: [cowork, chat]
 
 
 
+### Revision r6750+66.4 — 2026-09-21 (node 66). **P16 worked and read through in its final state: one locus, and nothing else.**
+**⌗ THE ONE.** *§scoping's three-level rule gave the foliation-level stacking rate as "what the observable cosmology rides from the seam outward", where the same section says a dozen lines later that the observable cosmology rides it from the branch point onward; now it says that in both places.*
+**⌗ WHAT WAS CHECKED AND STANDS.** *Every other "seam" in P16 is the degenerate Nariai member the reassignment uses, named as such and kept apart from the crossing by the paper's own argument. The synthesis spine, the peak-temperature floor and its recollapse threshold, the two rate-objects and why no decoupling mechanism is owed, the interior's parity split and the two monodromies, the network's abundances and the $N_{\mathrm{eff}}$ note all read as written.*
+
 ### Revision r6750+66.3 — 2026-09-21 (node 66). **P10 worked and read through in its final state; two phrasings, and nothing else.**
 **⌗ THE TWO.** *"The segment's variational treatment, by contrast, is not owed: it is given below" now simply says it is given below; "Two honest qualifications" is "Two qualifications".*
 **⌗ WHAT WAS CHECKED AND STANDS.** *Its "seam" is the de~Sitter cosmological horizon, where this paper is the source for $\hbar$ entering scaled by $\Lambda$ alone, and the glossary's genus covers it. Its many uses of "limit" are limit-point and limit-circle in Weyl's sense and the essential-self-adjointness threshold, not a scale sent to infinity. The deficiency-index argument, the horizon's thermal state closing the extension, the straddle under coupling, the Euclidean kernel across the lift and the register guard that keeps it apart from a Wick rotation all read as written.*
