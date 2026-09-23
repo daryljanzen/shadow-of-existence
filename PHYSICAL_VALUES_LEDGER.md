@@ -108,7 +108,7 @@ depends on it.*** *Routed as `FOR_54` 27.*
 ⌗ **So the rule this ledger should carry: when quoting a P15 receipt-layer value, name the SET.** *`corpus/scope_table.py`
 prints which receipt runs at which.*
 
-**⌗ ② AND `H0` AT 67.4 AND 73.0 IS NOT DRIFT — it is the Hubble tension itself**, *and `sec:refit-bound` evaluates at
+**⌗ ② AND `H0` AT 67.4 AND 73.0 IS NOT DRIFT — it is the ladder-versus-early-universe discrepancy itself**, *and `sec:refit-bound` evaluates at
 both ends by construction.* ⇒ ***But that makes it a CITATION question rather than a consistency one: for a
 parameter with two right answers, a sentence quoting a number MUST say which.*** *Recorded in `scope_table` as
 `BY_DESIGN` rather than silenced.*
@@ -296,7 +296,7 @@ $$n^a=g^{ab}n_b=\left(-1,\ \frac{1}{(\partial_\chi r)^2}\right)$$
 
 # ⛭ §0.3 · THE DISSOLUTIONS, STATED NATIVELY
 
-## Where the Hubble tension sits in CR's variables
+## Where the ladder discrepancy sits in CR's variables
 
 ***$x_0$ — the shape, the epoch, the whole of $\Omega_m$, $q_0$, $z_{\rm acc}$ — is measured calibration-free and is untouched by the tension.*** *The disagreement lives entirely in the single dimensionful scale:*
 
