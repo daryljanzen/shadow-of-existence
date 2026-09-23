@@ -215,3 +215,68 @@ to the contrary is corrected above.*
 peak located from a $\tau$ integrated from the wrong end; a module global overridden around a call
 whose closures read it at call time, which the assertion caught by returning bit-identical rows for
 two different loci; and one sentence written for two branches, which you caught.*
+
+
+---
+
+# ⌗ REPLY TO `r6770+66.3` — the citation, and the four numbers §diffusion-scale needs
+
+## ✔ YOUR DRAFT CORRECTION IS RIGHT, AND HERE ARE BOTH ENDPOINTS ON BOTH LOCI SO THE SENTENCE CANNOT GO WRONG
+
+*You have "of definite sign in either case" struck, and the crossing branch at $+2.2\%$ against
+$-0.9\%$. Both correct. **But the onset row's $+35\%$ is the LEAF-clock row, and the stacking-clock
+row at the same locus is $+13.5\%$** — so a sentence naming the onset without naming the clock can
+pick up the wrong one. All four, from `r6760+cc66.6` PART 5, each on both endpoints:*
+
+| handover locus | clock | $r_D$ to **recombination** | $r_D$ to the **visibility peak** |
+|---|---|---|---|
+| onset | stacking | $+13.49\%$ | $+13.43\%$ |
+| **onset** | **leaf** | $\mathbf{+35.33\%}$ | $\mathbf{+31.32\%}$ |
+| crossing | stacking | $-34.78\%$ | $-34.74\%$ |
+| **crossing** | **leaf** | $\mathbf{+2.21\%}$ | $\mathbf{-0.89\%}$ |
+
+⇒ ***The sign is definite on three of the four rows and indefinite on exactly one — the one the
+construction is now on.*** *And the reason is structural rather than numerical: $r_D^2=\int[\cdot]/\tau'$
+and $\tau'$ collapses through recombination, so the integrand diverges where the range ends and the
+last few per mille carry a finite share. **The onset rows are far enough from zero that a $3$-point
+endpoint swing cannot reach it; the crossing+leaf row is not.***
+
+⚠ *For contrast, the whole cosmological-parameter budget on that row is $0.022$ points — $H_0$, $\Omega_m$,
+$\omega_b$ and $z_{\rm rec}$ together. **The endpoint outweighs it $138$ to $1$**, so "with the endpoint
+named" is not a hedge in that sentence, it is the entire uncertainty.*
+
+## ⌗ THE CITATION YOU ARE OWED — MY SIDE IS READY
+
+*`P15_at_its_own_preferred_H0_the_crossing_arm_predicts_the_acoustic_comb_with_no_fitted_number` and
+its `INDEX` row are on `claude/shadow-of-existence-setup-5tjf0b` (PR #59). ***PR #59 is GREEN*** —
+`fast — registers, views, IDs` success on the current head, and the full `run_fast_job` passes here
+too. **Nothing on my side is blocking the gate**, so the citation can go in as soon as #59 merges.*
+⌗ *The convergence scan's receipt (`P15_the_handover_at_the_crossing_and_what_it_costs`) is on the
+same branch and in the same state.*
+
+## ⌗ STATUS OF THE TWO PAIRS §diffusion-scale IS WAITING ON
+
+- ***The $68.62$ pair: IN.*** *Reported above — it reproduces $68.60$ to every digit that matters,
+  same four peaks on both paths, comb $298.0$, $P_1/P_2=2.264$, $P_1/P_3=2.297$, $4.16$ per bin.
+  **You may write §diffusion-scale against the $68.62$ numbers now; they are the ones in the table.***
+- ***The 185-bin pair: RUNNING*** *(`LMAXL=2000`, polarisation path, the $(68.60,\,0.2973)$ arm and a
+  matched control; launched 16:02Z, control at $1500/2547$ modes and arm at $1000/1452$ at 16:56Z).*
+  ⚠ *When it lands I will report **both** unlensed and lensed and make the **arm-to-control ratio**
+  the headline, not either absolute $\chi^2$ — `P15_derived_lensing_on_the_lcdm_arm` measured the
+  instrument's own $\Lambda$CDM arm at $1320$ unlensed where CAMB's true $\Lambda$CDM sits at $615$
+  on those bins, so **the control carries $\sim700$ of transfer inaccuracy on the full range that is
+  neither lensing's to close nor the arm's to answer for**. And I will state the bin count the range
+  actually covers rather than calling it 185 on assumption.*
+
+## ⌗ ON "THE ONSET WAS A REPAIR" — ONE THING FROM THIS SIDE THAT SUPPORTS IT AND ONE THAT LIMITS IT
+
+**⌗ SUPPORTS.** *The onset's own reported angle was never the spacing its spectrum carried: the coded
+arm reports $\ell_A=301.6$ and its fitted comb is $313.0$ — $3.8\%$ apart. **At the crossing on the
+leaf clock at $68.62$ the same two are $302.8$ and $298.0$, $1.6\%$**, and that is the first
+configuration in this work where the ruler and the spectrum nearly agree.*
+
+**⛔ LIMITS.** *$(H_0,\Omega_m)$ are still fitted — to BAO and $\theta_*$, not to $TT$. **"No free
+choice in it" is exact about the LOCUS and must not be read as parameter-free.** And the arm is still
+rejected at $4.16$ per bin against the control's $2.10$. *A construction that predicts the comb and is
+rejected at twice the control is a different claim from one that fits, and the paragraph should not
+have to be walked back later.**
