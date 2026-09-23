@@ -98,6 +98,45 @@ are the sentences that change.*
   background, $14\%$ from the control's measured $3447$ rather than $1.4\%$. §envelope's "the envelope turns
   over at the same wavenumber, for a structural reason and not by assumption" rests on the first.*
 
+### ⌗ `SR-15e` · THE THREE THAT DO NOT WAIT ON THE FORK — finished prose, ready to paste
+
+*Each of these is established on both handover branches and on both instrument paths, so landing them does not
+pre-empt the choice §SR-15d sets out. The remaining paragraphs (§coherence's codings, §refit-bound's figures,
+§tensions' rate clause and §envelope's turnover) do wait on it.*
+
+**⌗ ① §diffusion-scale — the signature belongs to a configuration, and no consistent one returns $8.2\%$.**
+*Measured over the four combinations of handover locus and clock, $\theta_D/\theta_*=r_D/\rs$ against the
+control's $0.04544$: onset with the stacking clock $1.135$, onset with the leaf clock $1.353$, crossing with
+the stacking clock $0.652$, crossing with the leaf clock $1.022$. The distance cancels from the ratio, so
+these are the two choices and nothing else. Replacement text:*
+
+> The diffusion signature is a ratio of two lengths the plasma accumulates, so the projection cancels from it
+> and what remains is the pair of choices that fix the accumulation: where the collapse leg is handed over,
+> and on which rate the lengths are integrated. Both lengths take the leaf's rate, since the process runs in
+> the content; and on the handover at the crossing the signature is $\theta_D/\theta_*$ larger than flat
+> $\Lambda$CDM's by $2$ to $3$ per cent, against $35$ per cent if the handover is placed at the onset instead.
+> It is a computed, non-reabsorbable effect of definite sign in either case, and its magnitude is fixed by the
+> handover rather than by the fitted parameter.
+
+**⌗ ② §tensions — the accommodation and the comb are two quantities.** *The pinned arm reports an acoustic
+scale of $301.6$ while its own comb, fitted to its peaks by the procedure the paper runs on the sky, is
+$313.0$; the fluid path returns the same $\ell_1/\ell_A$ to four figures, so this is not path-specific.
+Replacement text:*
+
+> The fitted onset is reported through the acoustic angle, and that angle is not the spacing the spectrum
+> carries: fitted to the computed peaks by the procedure used on the sky, the comb is $313.0$ where the
+> reported scale is $301.6$. The accommodation and the comb are therefore two quantities, and only the second
+> is what the peak positions measure.
+
+**⌗ ③ §refit-bound — the heights are the polarisation path's, the positions are the construction's.** *Both
+paths return $\ell_1=206$ on the pinned arm with $\ell_1/\ell_A=0.6830$ identical, and $216$ against $214$ on
+the crossing arm; the heights differ by $12.6\%$ and $31\%$ between paths. Replacement text:*
+
+> The two instrument paths are not interchangeable, and they divide the result. The peak positions and the
+> phase intercept agree between them to a grid step, so those are the construction's; the height ratios differ
+> between the paths by more than either differs from the sky, so every height quoted here is the polarisation
+> path's and is stated as such.
+
 ### ⌗ `SR-15d` · THE PIN AND THE CROSSING CANNOT BOTH BE HAD, AND THAT IS THE FORK
 
 **⌗ THE ORDERING CONSTRAINT.** *The handover cannot precede the onset: the expansion leg does not exist before
