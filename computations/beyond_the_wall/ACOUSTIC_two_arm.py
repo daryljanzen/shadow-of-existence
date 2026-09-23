@@ -101,6 +101,18 @@ else:
     RAD_IN_RATE = False                        # ** radiation is content, not a source **
     Z_START = None                             # the onset, solved for the pinned acoustic scale
 
+# ** ORFAC: THE INHERITED DATUM, MADE SCANNABLE -- r6760+cc66.2, at 66 (chat)'s work order. **
+# *The radiation fraction the handover delivers is the corpus's one fitted datum, and until now it
+# entered this file only through `4.15e-5/h^2` -- a literal, so nothing downstream could vary it and
+# nothing had.  It sets the LEAF equality, z_eq = Om/Or - 1 = 3936 as coded, against the control's
+# 3447; and `sec:envelope`'s turnover argument is stated on a DIFFERENT equality, the inherited
+# datum's (1+z_onset)/2 = 3399.*
+#   ⇒ ** Scaling Or scales the leaf rate's radiation term AND the photon/neutrino density fractions
+#   together, which is what varying the inherited datum MEANS.  It does NOT touch the CR arm's
+#   stacking rate, which carries no radiation term by construction. **
+# *Default 1.0 = byte-identical.  z_eq(ORFAC) = Om/(ORFAC*Or) - 1, so ORFAC = 1.1418 puts the arm's
+#  equality at the control's 3447 and 1.3119 puts it at 3000.*
+OR = float(os.environ.get('ORFAC', '1.0')) * OR
 OL = 1.0 - OM
 A_REC = 1.0 / (1.0 + Z_REC)
 RB_REC = 31500 * OMBH2 / (2.7255 / 2.7) ** 4 / (1 + Z_REC)
@@ -1198,6 +1210,13 @@ def main():
           f"eta_end = {ETA_END:.0f}")
     print(f"  D_M = {D_M:.0f} Mpc   r_s = {R_S:.2f} Mpc   l_A = pi D/r_s = {L_A:.1f}   "
           f"modes = {len(kk)}")
+    # ** z_eq PRINTED r6760+cc66.2, BECAUSE ORFAC WAS INVISIBLE WITHOUT IT. **  *On the CR arm
+    # `rs_from`, `D_M` and the pin all ride the radiation-FREE rate, so scaling Omega_r moves
+    # nothing on the line above -- the knob acts on the leaf rate and the density fractions and
+    # its effect is entirely in the spectrum.*  ⇒ ** A knob whose only evidence is the quantity
+    # under dispute is not reachability-checked.  This is the line that shows it. **
+    print(f"  z_eq(leaf) = {OM / OR - 1:.1f}   Omega_r = {OR:.6e}   "
+          f"rho_r/rho_m at the onset = {(1 + Z_START) / (OM / OR):.2f}")
     print()
 
     if os.environ.get('LOS', '1') == '1':
