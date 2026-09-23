@@ -98,6 +98,37 @@ are the sentences that change.*
   background, $14\%$ from the control's measured $3447$ rather than $1.4\%$. §envelope's "the envelope turns
   over at the same wavenumber, for a structural reason and not by assumption" rests on the first.*
 
+### ⌗ `SR-15c` · WHAT THE TWO PATHS AND THE NETWORK ADD — one qualification, one identity, one non-cost
+
+**⌗ THE HEIGHTS ARE PATH-SPECIFIC AND THE POSITIONS ARE NOT.** *Run on both instrument paths, the handover
+result divides. Positions survive: the coded arm returns $\ell_1=206$ on either path with
+$\ell_1/\ell_A=0.6830$ identical, and the crossing arm $216$ against $214$, within a grid step. Heights do
+not: on the fluid path the crossing arm gives $P_1/P_2=2.496$ and $P_1/P_3=2.982$, overshooting the sky by
+$12.6\%$ and $31\%$, where the polarisation path lands at $2.250$ and $2.150$. §refit-bound takes its headline
+figures on the polarisation path and already says the two are not interchangeable --- **so the height claim
+must be written as the polarisation path's, and the position, phase and alternation claims as the
+construction's.***
+
+**⌗ THE ARM'S EQUALITY AND ITS HUBBLE VALUE ARE ONE FACT.** *The leaf background's $z_{\rm eq}=3936$ is
+$\omega_m=0.1634$ against flat $\Lambda$CDM's $0.1431$ --- that is $H_0=73$ at $\Omega_m=0.3066$. So the
+equality the third-peak band turns on is not a free datum beside the Hubble result; it is the Hubble result
+read at recombination. $k_{\rm eq}=0.01196\,\mathrm{Mpc}^{-1}$ ($\ell_{\rm eq}=155.7$) against the control's
+$0.01048$ ($146.1$), and $\ell_{\rm eq}$ reproduces §refit-bound's own band edge from the background alone.*
+
+**⌗ THE LEAF RULER COSTS NOTHING IN THE LIGHT ELEMENTS.** *The leaf ruler's pin carries the inherited radiation
+amplitude from ${\sim}1.7$ to ${\sim}17$, and P16's network does not read it: its free inputs are the
+temperature grid and $\eta_{10}$, its expansion rate is $\rho_{\rm rad}(T)$ with $g_*(T)$ fixed, and §verdict
+holds the two data apart by name --- $\eta$ transmitted unchanged, the onset ratio having no single value to
+transmit. Run rather than quoted: $Y_p=0.2432$, $\mathrm{D/H}=2.567\times10^{-5}$,
+$^{7}\mathrm{Li/H}=4.461\times10^{-10}$ at $\eta_{10}=6.14$.*
+
+**⌗ AND THE ABUNDANCE TABLE PRICES ONE ROUTE TO $z_{\rm eq}$, NOT $z_{\rm eq}$ ITSELF.** *Scaling the radiation
+at fixed matter reaches the control's $3447$ at $N_{\rm eff}=4.05$ and costs $+3.2\sigma$ in $Y_p$ and
+$-8.6\sigma$ in D/H; reaching the same equality through $\omega_m$, which is how the arm's own arises, leaves
+the network untouched. **So the light elements neither penalise nor favour the arm's equality** --- they are
+silent on it, and a reading that banks them as support for it would be reading a $\Delta N_{\rm eff}$ table as
+a statement about $\omega_m$.*
+
 **⌗ AND ONE THING THE SPLIT ALREADY SETTLES.** *The crossing arm's comb deficit is $-3.77\%$ against the
 control, and it is the **distance** and not the sound horizon: $d\ln D_M=-6.40\%$ against
 $d\ln \rs^{\rm eff}=-2.63\%$, of which equality supplies $-3.26\%$ and rate and clock $+0.63\%$ when
