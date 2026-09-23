@@ -184,6 +184,15 @@ print(f"""
   that happen to land together; it is one configuration, and the corpus's current pair
   (onset + stacking) is the second-best of four rather than the reasonable default it reads as. ***
 
+  ⌗ ** AND THE 2.2% IS ENDPOINT-DEPENDENT, WHICH r6760+cc66.6 MEASURED AFTERWARDS. **  Every row
+  here integrates r_D to A_REC.  Integrating instead to the COMPUTED VISIBILITY PEAK (z = 1093.8,
+  0.36% away in redshift) moves this row to 0.9911 -- a 3.1-point swing, against a cosmological
+  parameter budget of 0.02 points -- because r_D's integrand carries 1/tau' and tau' collapses
+  exactly where the range ends.  ** The RANKING above survives that: the crossing on the leaf clock
+  is closest on both endpoints and the other three are tens of points away on both, checked in
+  `P15_the_damping_signature_error_budget_and_the_convention_dominates_it`.  The VALUE does not
+  survive it and must be quoted with its endpoint named. **
+
   ⌗ ** WHAT THIS DOES NOT SAY. **  r_D/r_s agreeing with the control to 2.2% does not make the
   spectrum agree with the sky -- the crossing arm is still rejected at 35.5 per bin against the
   control's 2.10 (r6760+cc66.1), and the 700-1000 band is where that lives.  This measures ONE
