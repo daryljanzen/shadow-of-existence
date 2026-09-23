@@ -2,7 +2,7 @@
 name: the-frontier-register
 description: The register of open research questions, opened r3009 after PROTECTED_OPEN was cleared. Same five columns, so every existing gate reads it. A row is STRUCK when its OBJECT is answered and the answer is receipted.
 sources: [observer]
-current: r6772
+current: r6774
 ---
 
 # ▣ THE REGISTER — the corpus's open questions, opened r3009
