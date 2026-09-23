@@ -189,23 +189,51 @@ for b in BANDS:
 
 print()
 print("=" * 112)
-print("  PART 4 -- ** BOTH INSTRUMENT PATHS **")
+print("  PART 4 -- ** BOTH INSTRUMENT PATHS, EACH AGAINST ITS OWN-PATH CONTROL **")
 print("=" * 112)
-print(f"  {'':>26} {'peaks':>26} {'comb':>7} {'P1/P2':>8} {'P1/P3':>8} {'chi2/bin':>9}")
-for nm, s in (('H0 = 68.6, POLARISATION', NEW), ('H0 = 68.6, FLUID', NEWF),
-              ('run 1 pin, POLARISATION', PIN), ('run 1 pin, FLUID', PINF)):
-    print(f"  {nm:>26} {str([int(v) for v in s['P']]):>26} {s['lA']:>7.1f} {s['p12']:>8.3f} "
+# ** THE FLUID-PATH CONTROL DID NOT EXIST IN THE TREE UNTIL r6760+cc66.10, AND ITS ABSENCE WAS
+# MAKING THE FLUID ROWS UNREADABLE. **  *Every fluid row had been scored against the POLARISATION
+# control, so the fluid path's own height behaviour was being charged to the arm.  It is not the
+# arm's: the LCDM control on the fluid path overshoots the sky too.*
+CTLF = score('lcdm_fluid')
+X62 = score('cr_x_h6862_pol')
+X62F = score('cr_x_h6862_fluid')
+print(f"  {'':>30} {'peaks':>26} {'comb':>7} {'P1/P2':>8} {'P1/P3':>8} {'chi2/bin':>9}")
+for nm, s in (('POLARISATION: control LCDM', CTL), ('POLARISATION: arm, H0 = 68.60', NEW),
+              ('POLARISATION: arm, H0 = 68.62', X62),
+              ('FLUID:        control LCDM', CTLF), ('FLUID:        arm, H0 = 68.60', NEWF),
+              ('FLUID:        arm, H0 = 68.62', X62F)):
+    print(f"  {nm:>30} {str([int(v) for v in s['P']]):>26} {s['lA']:>7.1f} {s['p12']:>8.3f} "
           f"{s['p13']:>8.3f} {s['chi2'] / s['n']:>9.2f}")
+print(f"  {'THE SKY':>30} {str([float(v) for v in SKY]):>26} {lA_sky:>7.1f} {SKY_P12:>8.3f} "
+      f"{SKY_P13:>8.3f} {'--':>9}")
 print(f"""
-  ** THE COMB IS PATH-INDEPENDENT AND THE HEIGHTS ARE NOT, which is this instrument's standing
-  behaviour and not a new caveat. **  The fitted comb is {NEW['lA']:.1f} on both paths.  The heights
-  are {NEW['p12']:.3f}/{NEW['p13']:.3f} on the polarisation path and {NEWF['p12']:.3f}/{NEWF['p13']:.3f} on the fluid path,
-  and the fluid path already overshot at H0 = 73 -- so moving H0 did not cause that and cannot cure
-  it.  *`sec:refit-bound`'s height numbers are polarisation-path numbers, so the comparison above is
-  the like-for-like one.*  ⇒ ** The COMB result is path-proof; the HEIGHT result is not, and is
-  reported as polarisation-path specific. **""")
+  ** THE FLUID PATH'S HEIGHT OVERSHOOT IS THE PATH'S, NOT THE ARM'S. **  The LCDM CONTROL on the
+  fluid path returns {CTLF['p12']:.3f}/{CTLF['p13']:.3f} against the sky's {SKY_P12}/{SKY_P13} --
+  {(CTLF['p12'] / SKY_P12 - 1) * 100:+.1f}% and {(CTLF['p13'] / SKY_P13 - 1) * 100:+.1f}% -- and its chi^2 is
+  {CTLF['chi2'] / CTLF['n']:.2f} per bin against the polarisation control's {CTL['chi2'] / CTL['n']:.2f}.
+  *So a fluid row scored against the polarisation control was charging the path to the arm.*
+
+  ** AGAINST ITS OWN-PATH CONTROL THE ARM SITS THE SAME DISTANCE ON BOTH: **
+      polarisation   P1/P2 {(X62['p12'] / CTL['p12'] - 1) * 100:+.1f}%   P1/P3 {(X62['p13'] / CTL['p13'] - 1) * 100:+.1f}%   chi^2 x{X62['chi2'] / CTL['chi2']:.1f}
+      fluid          P1/P2 {(X62F['p12'] / CTLF['p12'] - 1) * 100:+.1f}%   P1/P3 {(X62F['p13'] / CTLF['p13'] - 1) * 100:+.1f}%   chi^2 x{X62F['chi2'] / CTLF['chi2']:.1f}
+  ⇒ *** The comb is path-proof AND the arm-to-control height OFFSET is path-robust.  What is
+  path-specific is the ABSOLUTE height, which both arms and both controls carry alike. ***
+  *That is a weaker caveat than the one r6760+cc66.7 stated, and it is weaker because the control
+  that settles it had not been run.*
+
+  ⌗ ** AND H0 = 68.62, THE VALUE ACTUALLY ORDERED, CONFIRMS 68.60 TO EVERY DIGIT THAT MATTERS: **
+  the same four peaks on both paths, comb {X62['lA']:.1f}, P1/P2 {X62['p12']:.3f}, P1/P3 {X62['p13']:.3f}.""")
 if abs(NEWF['lA'] - NEW['lA']) > 2.0:
     fail.append("the comb is NOT path-independent -- PART 4's claim is wrong")
+if abs(X62['lA'] - NEW['lA']) > 1.0 or abs(X62['p12'] - NEW['p12']) > 0.01:
+    fail.append("H0 = 68.62 does not reproduce 68.60 -- the 0.03% argument is wrong")
+if CTLF['p13'] < SKY_P13 * 1.05:
+    fail.append("the fluid control does NOT overshoot the sky -- PART 4's premise is wrong")
+for lab, arm, ctl in (('polarisation', X62, CTL), ('fluid', X62F, CTLF)):
+    if abs(arm['p12'] / ctl['p12'] - 1) > 0.08:
+        fail.append(f"the {lab} arm-to-control P1/P2 offset is "
+                    f"{(arm['p12'] / ctl['p12'] - 1) * 100:.1f}%, outside 8%")
 
 print()
 print("=" * 112)

@@ -142,11 +142,74 @@ the dissolution does not survive. **That trade is yours to price and I am not pr
 3. ***A fluid-path $\Lambda$CDM control*** — does not exist in the tree, so the fluid rows are
    currently scored against a polarisation-path control. Running.
 
-⌗ **GATES.** *`run_fast_job` green on 103 gates and 10 generators except `check_branches`, which is
-`main`'s and not this branch's — `origin/main` is an ancestor of this HEAD, so the three commits it
-names as non-ancestors (`2f07483`, `15440d1`, `5835241`, the `cc54` dispatch branches listed in
-`FOR_56.md`) cannot be ancestors of `main` either. Nothing on this branch created them and nothing
-on it can clear them.*
+## ⛔⛔ A CORRECTION I OWE YOU BEFORE ANYTHING ELSE IN THIS FILE IS READ
+
+*Everything I sent about `check_branches` was **wrong**, and the way it was wrong is the class the
+corpus gates for.*
+
+**⌗ THE FACT.** ***PR #59's CI is GREEN and has been throughout.*** *Read out of the job log rather
+than inferred from a check-run name:*
+```
+    2f07483  merged
+    15440d1  merged
+    5835241  merged
+  every named branch is merged.
+```
+
+**⌗ WHY MY TREE SAID OTHERWISE.** *This session's checkout was **shallow** — 133 commits, grafted at
+`3f3e01a0`. `git merge-base --is-ancestor` cannot see past a graft, so it returns non-zero for a
+commit that **is** an ancestor.* ⇒ ***That is exactly the failure `.github/workflows/gates.yml`
+documents at lines 25–28 and fixes with `fetch-depth: 0`:*** *"the default depth-1 checkout cannot
+reach a merged parent, so it false-positives NOT MERGED on a commit that IS an ancestor."*
+**I read that comment, in that file, while listing the gates — and did not apply it to my own tree.**
+
+**⌗ AND THE "PROOF" WAS A NON-SEQUITUR ON TOP OF THAT.** *I wrote: `origin/main` is an ancestor of
+HEAD, so those three cannot be ancestors of `main` either.* ⚠ ***That does not follow.*** *`main`
+being an ancestor of HEAD says nothing whatever about what is inside `main`.*
+
+⇒ ***Same class as the "reaped mid-flight" error: a presence-test whose MISS I never defined.*** *A
+miss from `--is-ancestor` means **either** "not an ancestor" **or** "history too truncated to tell",
+and I only ever read the first. **The gate was right and I overrode it four times in commit
+messages and once in the PR body.***
+
+**⌗ FIXED.** *Clone unshallowed (blobless, 2459 commits, no disk cost). `check_branches` rc=0 here
+now, and the whole fast job reports **"every step of the fast job passes on this tree"** — 103 gates,
+10 generators, the hollow-assertion lint. **There is no red gate anywhere.** The PR body is
+corrected and the standing check-in instruction that said "expected red, do not re-litigate" is
+withdrawn, since it would have kept the error alive.*
+
+## ✔ THE ORDERED $H_0=68.62$ CONFIRMS $68.60$, AND THE FLUID CONTROL CHANGES A CAVEAT
+
+| | peaks | comb | $P_1/P_2$ | $P_1/P_3$ | $\chi^2$/bin |
+|---|---|---|---|---|---|
+| POL control $\Lambda$CDM | $220/536/814/1128$ | $297.0$ | $2.195$ | $2.191$ | $2.10$ |
+| POL arm, $68.60$ | $222/538/818/1134$ | $298.0$ | $2.264$ | $2.298$ | $4.19$ |
+| **POL arm, $68.62$** | $\mathbf{222/538/818/1134}$ | $\mathbf{298.0}$ | $\mathbf{2.264}$ | $\mathbf{2.297}$ | $\mathbf{4.16}$ |
+| FLU control $\Lambda$CDM | $220/530/812/1122$ | $296.0$ | $2.392$ | $2.766$ | $22.76$ |
+| FLU arm, $68.62$ | $220/530/816/1126$ | $298.0$ | $2.448$ | $2.933$ | $32.68$ |
+| **the sky** | $220.4/537.7/817.3/1123.9$ | $\mathbf{298.4}$ | $\mathbf{2.217}$ | $\mathbf{2.277}$ | — |
+
+***$68.62$ reproduces $68.60$ to every digit that matters*** — same four peaks on both paths, same
+comb, $P_1/P_2$ identical. **The ordered configuration is the one reported.**
+
+⚑ **AND THE FLUID-PATH $\Lambda$CDM CONTROL — which did not exist in the tree — WEAKENS MY OWN
+CAVEAT.** *It overshoots the sky too: $2.392/2.766$ against $2.217/2.277$, $+7.9\%$ and $+21.5\%$,
+at $22.76$ per bin against the polarisation control's $2.10$.* ⇒ ***So every fluid row I had scored
+against the polarisation control was charging the PATH to the ARM.*** *Against its own-path
+control the arm sits the same distance on both:*
+
+*· polarisation — $P_1/P_2$ $+3.1\%$, $P_1/P_3$ $+4.9\%$, $\chi^2$ $\times2.0$*
+*· fluid — $P_1/P_2$ $+2.4\%$, $P_1/P_3$ $+6.0\%$, $\chi^2$ $\times1.4$*
+
+⇒ ***The comb is path-proof AND the arm-to-control height OFFSET is path-robust. What is
+path-specific is the ABSOLUTE height, which both arms and both controls carry alike.*** **That is a
+weaker caveat than I sent you, and it is weaker because the control that settles it had not been
+run.** *Your rule — heights as the polarisation path's — still holds for the absolute numbers; the
+offset you can now state as the construction's.*
+
+⌗ **GATES.** *`run_fast_job`: **every step passes on this tree** — 103 gates, 10 generators, the
+hollow-assertion lint. CI green on the current head. **No red gate anywhere**, and the earlier claim
+to the contrary is corrected above.*
 
 ⌗ **ERRORS OF MINE THIS TURN, RECORDED BECAUSE THE RECEIPTS' OWN GATES CAUGHT THEM.** *A visibility
 peak located from a $\tau$ integrated from the wrong end; a module global overridden around a call
