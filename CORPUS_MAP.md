@@ -146,6 +146,10 @@ sources: [cowork, chat]
 
 
 
+### Revision r6750+66.3 — 2026-09-21 (node 66). **P10 worked and read through in its final state; two phrasings, and nothing else.**
+**⌗ THE TWO.** *"The segment's variational treatment, by contrast, is not owed: it is given below" now simply says it is given below; "Two honest qualifications" is "Two qualifications".*
+**⌗ WHAT WAS CHECKED AND STANDS.** *Its "seam" is the de~Sitter cosmological horizon, where this paper is the source for $\hbar$ entering scaled by $\Lambda$ alone, and the glossary's genus covers it. Its many uses of "limit" are limit-point and limit-circle in Weyl's sense and the essential-self-adjointness threshold, not a scale sent to infinity. The deficiency-index argument, the horizon's thermal state closing the extension, the straddle under coupling, the Euclidean kernel across the lift and the register guard that keeps it apart from a Wick rotation all read as written.*
+
 ### Revision r6750+66.2 — 2026-09-21 (node 66). **P1, P4 and P9 read through in their final state, and each needs nothing.**
 **⌗ WHAT WAS CHECKED.** *The same sweep the other papers had: revision narration, statements of standing in house shorthand, caveats that would hold of any physics paper, "seam" against the glossary's genus, the wall as P9 states it, and cross-paper claims against their sources. P1's uses of "limit" are the infinite-exterior-time limit its argument is about; P4's are the white-noise limit of the path average and the central limit theorem; P9's "seam" is the Nariai double root, named, and its wall statement is the one the rest of the corpus now carries.*
 **⌗ NO EDITS.** *Nothing in the three needed changing, and nothing is changed. The reads are recorded so the sweep's coverage is legible: of the eighteen papers, fifteen are now read through on this line; P10, P15 and P16 remain.*
