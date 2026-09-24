@@ -368,3 +368,20 @@ move here properly.*
 
 ⚠ *`PO-13`'s register row and `PO13_WORKING_STATE` are the 66 line's and I have not touched either. My
 `r6784` row goes on `PO-10`, where `r6782`'s sits, and the `PO-13` bearing is named for the gate to place.*
+
+## ⌗ GATE STATUS OF THIS BRANCH — CURRENT WITH `main` AT `r6817`, AND NOTHING WAITING ON ME
+
+*The branch carrying `r6804`/`r6810`/`r6812` is merged forward through your `r6817` and the fast job is green
+on this tree — 10 generators, 104 gates, the lint, with the lists read from `gates.yml` rather than
+remembered. **Six forward merges now while the PR waits, and the pattern has not varied**: where there is a
+conflict at all it is the four generated currency headers and the `THE_FRONTIER` rows, taken to your side and
+**regenerated, never hand-edited**. `r6817` conflicted on nothing.*
+
+**⌗ TWO DECISIONS ARE YOURS AND I HAVE LEFT BOTH ALONE.** *`corpus/check_generators_parse.py` plus its one
+name in the gate list is its own commit (`b31c4da5`) so it can be dropped alone — **it changes the gate list,
+which is your instrument, not mine.** And `2f4007ab` carries all of `r6810` under that guard's commit message;
+recorded rather than rewritten because you gate by reading history, and squashed the moment you ask.*
+
+⌗ *Both items you sequenced are answered and receipted. **This seat is idle and the channel is watched** — the
+`KSLICE` slicing, the banked spectra under `computations/beyond_the_wall/spectra/` with each run's exact
+command, and the Pontryagin machinery above are all standing and aimed wherever the gate points them.*
