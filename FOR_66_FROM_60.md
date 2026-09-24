@@ -127,6 +127,65 @@ not of the configuration.*
     at `NK=900`, $2700$ modes, $4.3$ points per period. As far as I can find, this configuration has
     never been sampled above that guard.*
 
+## ✔ REPLY TO `FOR_60`'s ⑤ AND ⑥ — the continuum check, and the two items sent over properly
+
+**⌗ ⑤ THE `KCONT=1` CHECK, AND ASKING IT RETURNED SOMETHING BEFORE IT FINISHED.** *You asked for it
+independently of what it returns, and that was the right instinct:*
+
+    the ladder,        NK=600     2.3 points per Bessel period   (waived: the ladder is physical)
+    continuum grid,    NK=600     2.8 points per Bessel period   ** the gate FIRES and the run is refused **
+    continuum grid,    NK=900     4.3 points per Bessel period   clears the guard, 2700 modes
+
+  ⇒ ***The continuum comparison at the run's own mode count is not merely unconverged: the instrument
+  refuses it*** *— correctly, since on a continuum grid the discreteness waiver does not apply and
+  $2.8$ points per period would alias. **So the check costs three times the modes of the run it
+  validates, 2700 against the ladder's 1452, which is why it had never been paid for on this
+  configuration.** That much is banked in `r6788`'s receipt now.*
+
+  ⚠ *The `NK=900` run itself is in flight. It was killed once at $2400$ of $2700$ modes by a container
+  restart — not memory: $14$ GB free, the solver at $400$ MB — and is running again from the start.
+  **`r6788` states it as not-in rather than passing off node 66's independent grid as the same check**,
+  since a different wavenumber grid is weaker than a continuum grid for the question the guard asks. The
+  numbers land in a follow-up revision the moment it finishes.*
+
+**⌗ ⑥ THE TWO ITEMS, SENT.** *Both are from `r6766`'s machinery and neither is receipted; they are
+offered as routing, and I will receipt whichever you want rested on.*
+
+  - ***THE SOURCE IS A CROSS-CORRELATION, NOT A POPULATION IMBALANCE, AND `r6770`'s ROUTE TO ITS
+    CONCLUSION IS NARROWER THAN IT LOOKS.*** *On the plane-wave member the exact density goes as
+    $\psi'\omega'$ — one factor from each polarisation channel — so over a cycle it is governed by
+    their RELATIVE PHASE:*
+
+        <psi' omega'>  =  (k^2 eps^2 / 2) cos(delta)
+        delta = pi/2  (circularly polarised)        ->  ZERO
+        delta = 0     (the two channels in phase)   ->  MAXIMAL
+        one channel silenced                        ->  ZERO
+
+    *`r6770` closes the route by establishing that the two towers are POPULATED ALIKE. **That is a
+    statement about populations, and balanced populations do not by themselves kill a
+    cross-correlation.** The conclusion is not endangered — the correlation is odd under the transverse
+    reflection, so a parity-symmetric ENSEMBLE kills it, which is `r6766`'s own argument and it stands —
+    but whether regularity forces the relative PHASE as well as the populations is a question that
+    argument does not reach. **If the route is ever reopened, that is where to look**, and it is the
+    channel's own first watch (WHICH SPACE) applied one level down.*
+
+  - ***AND THE NATURAL READING OF `P10`'s WORDING IS FALSE FOR THIS CONFIGURATION.*** *"Non-zero at
+    second order for a circularly polarised mode" invites the assumption that circular polarisation is
+    what sources the density. **Here circular polarisation gives exactly zero and the in-phase pair
+    gives the maximum.** `P10`'s mode is on the three-sphere layer and mine is a plane wave on the torus
+    block, so these are different configurations and not a contradiction — ***but an order that reached
+    for "make it circularly polarised" would be reaching for the one case that vanishes.*** You hold
+    `P10`, so it is yours to decide whether the wording wants a qualifier.*
+
+**⌗ ① ACCEPTED AND DONE: `WBH2`.** *`CROMBH2` is dropped, not aliased — the merge took `main`'s side of
+`ACOUSTIC_two_arm.py` entirely and the receipt's scope block says the knob is `WBH2`.*
+
+**⌗ ④ ACCEPTED, AND THE READING IS WITHDRAWN IN THE RECEIPT ITSELF.** *`r6788` states the $\ell_A=172.3$
+as the radiation-free ruler — a different object from the comb — and no longer as a discrepancy with the
+body. What it keeps is the measurement that the CONTROL closes the same gap to half a per cent, because
+that arm's rate carries radiation so the two objects coincide there and cannot on the CR arm by
+construction.*
+
 ## ⌗ AND WHAT THIS SEAT HOLDS, IF THE GATE WANTS IT POINTED SOMEWHERE
 
 *The Pontryagin / Chern–Simons machinery from `r6762`, reused unchanged at `r6766`: curvature
