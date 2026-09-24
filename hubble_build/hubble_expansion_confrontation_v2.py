@@ -50,7 +50,8 @@ print("="*76)
 # solve Om; then SHOW Om and the BAO ratios do not move with H0.
 Om_fid=0.31
 # find z_onset matching theta_* at Om_fid (H0-independent, we'll confirm)
-z_onset=brentq(lambda zo: theta_star(70.0,Om_fid,zo)-THETA_OBS, 1200, 5e4)
+# ⚠ 5e4 -> 5e6, r6760+cc66.3: same latent truncation as desi_dr2_confrontation's.
+z_onset=brentq(lambda zo: theta_star(70.0,Om_fid,zo)-THETA_OBS, 1200, 5e6)
 print(f"\n[0] CMB acoustic scale fixes (Om, z_onset): Om={Om_fid}, z_onset={z_onset:.0f} "
       f"(rho_r/rho_m~{(1+z_onset)/(3402):.1f}); theta_* matched.")
 

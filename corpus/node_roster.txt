@@ -27,3 +27,4 @@
 64    6400  6499   opened r6401 -- this line
 66    6600  6699   opened r6713+66.1 -- the chat seat on line/66; corpus defect sweep, merged into main by 64
 cc54   800   899   an alias of 57; the same node under two names, which is itself the hazard
+cc66   6600  6649   the Claude Code seat of node 66 -- long unattended spectrum runs; 66 (chat) holds L-6650..L-6699, split agreed in band r6760.  Revisions tagged +cc66.N so the chat seat's +66.N sequence cannot collide.

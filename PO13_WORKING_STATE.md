@@ -2877,3 +2877,403 @@ the next run rather than a conclusion here.*
 ⌗ **AND IT IS A THIRD OBJECT, NAMED.** *PO-13 now carries: the mechanism half, whose weighing waits on
 the locus statement (`r4519`); this split, which is in the projection; and the phase offset the
 transfer exposed. **The first two are independent, which is what this revision establishes.***
+
+---
+
+# ⛭ r6760+cc66.2 — THE CLOCK ADJUDICATED, THE RULER PRICED, AND THE EQUALITY FOUND TO BE THE RESIDUAL
+
+*Node 66 (code seat), on node 66 (chat seat)'s work order. **This section is the code seat's; the
+papers, `ONTOLOGY_FOUNDATION_INDEX.md`, `THE_PLAN.md` and the ledgers are the chat seat's and are
+not touched here.** Lead-ID band `L-6600`–`L-6649`, revisions suffixed `+cc66.N`, per the split
+agreed in band `r6760`.*
+
+## ⓵ ⚑ THE DAMPING-TO-COMB RATIO PICKS ONE CONFIGURATION OUT OF FOUR, AND IT IS THE ONE BOTH
+## SEATS ARRIVED AT SEPARATELY
+
+*$\theta_D/\theta_* = r_D/r_s$ — $D_M$ cancels exactly, which matters, because the arm's $D_M$ is
+$13005$ Mpc against the control's $13865$ and a comparison of $\theta_D$ alone would be reporting
+that instead of the damping.*
+
+| handover locus | clock | $r_s$ | $r_D$ | $r_D/r_s$ | vs control |
+|---|---|---|---|---|---|
+| control ($\Lambda$CDM, one rate) | — | $144.52$ | $6.567$ | $0.04544$ | $1.0000$ |
+| **onset** | **stacking** — *the corpus as it stands* | $135.46$ | $6.986$ | $0.05157$ | $1.135$ |
+| onset | leaf | $105.36$ | $6.479$ | $0.06149$ | $1.353$ |
+| crossing | stacking | $236.37$ | $7.005$ | $0.02963$ | $0.652$ |
+| **crossing** | **leaf** | $139.74$ | $6.490$ | $0.04644$ | $\mathbf{1.022}$ |
+
+⇒ ***The crossing on the leaf clock is 2.2% from the control; the other three are 13.5%, 35.3% and
+34.8%.*** **And neither choice was made to fix this quantity** — the crossing was adopted because
+that is where $aH$ diverges, the leaf clock because the chat seat ruled one object for $r_s$ and
+$r_D$ both. *A 2.2% agreement from a quantity nobody consulted is evidence.*
+
+⌗ **AND THE TWO CHOICES ARE NOT SEPARABLE.** *The crossing on the wrong clock is worse than the
+onset on the wrong clock, and the leaf clock at the wrong locus is the worst row of the four.*
+⇒ ***So this is one configuration, not two improvements landing together, and the corpus's current
+pair is the second-best of four rather than the reasonable default it reads as.***
+
+⚠ **NOT CLAIMED**: *that the spectrum agrees. The crossing arm is still rejected at $35.5$ per bin
+against the control's $2.10$. Getting this ratio right is **necessary and not sufficient**.*
+⌗ *`receipts/P15_CR_cosmology/P15_the_damping_to_comb_ratio_picks_the_crossing_and_the_leaf_clock_out_of_four.py`*
+
+## ⓶ ⚑ WHAT THE LEAF CLOCK COSTS THE DESI RESULT: OUTCOME (a), WITH A PRICE
+
+*The chat seat named three outcomes. **It is (a): the dissolution survives with a different
+derivation.***
+
+| ruler | $H_0$ | $\Omega_m$ fit | $z_{\rm onset}$ | $\rho_r/\rho_m$ there | $\chi^2/12$ dof |
+|---|---|---|---|---|---|
+| stacking | $63$–$80$, every value | $0.3066$ | $6764$ | $2.31$–$1.43$ | $\mathbf{1.00}$, spread $0.0000$ |
+| leaf, **no** onset | $68.50$ | $0.293$ | — | — | $0.88$ |
+| leaf, **no** onset | $73$ | $0.330$ | — | — | $\mathbf{10.70}$ ⛔ |
+| leaf, onset retained | $70$ | $0.2968$ | $178785$ | $51.0$ | $0.88$ |
+| leaf, onset retained | $73$ | $0.2975$ | $61157$ | $16.0$ | $0.88$ |
+| leaf, onset retained | $80$ | $0.2989$ | $26860$ | $5.8$ | $0.88$ |
+
+**⛭ ON THE STACKING RULER $H_0$ CANCELS ALGEBRAICALLY** — *the rate is radiation-free, so $H_0$
+leaves $D_M$, $D_H$ and $r_d$ together and the BAO ratios cannot see it. The measured $\chi^2$
+spread across $H_0=63$–$80$ is **exactly zero**.*
+**⛔ ON THE LEAF RULER IT DOES NOT.** *It enters through $\omega_r/h^2$. The fit holds across
+$70$–$80$ anyway, at $0.88$ per dof, **because the onset moves to keep $\theta_*$ fixed.***
+⇒ ***That is a compensation, not a cancellation, and the two are not the same claim.***
+
+**⌗ THE PRICE, AS A NUMBER.** *The corpus's onset is "where radiation stops mattering". On the
+stacking ruler it is **one** redshift, $6764$, at every $H_0$. On the leaf ruler the **locus**
+moves: $z_{\rm onset}$ runs $1.8\times10^5\to2.7\times10^4$ across $H_0=70$–$80$ and
+$\rho_r/\rho_m$ with it, $51.0\to5.8$.* ⇒ ***A locus sitting at $\rho_r/\rho_m=51$ at one $H_0$ and
+$5.8$ at another is not "where radiation stops mattering"; it is a fitted redshift, and the
+flatness is bought with it.***
+
+**⌗ AND A SECOND, INDEPENDENT DETERMINATION AGREES.** *$\theta_*$ on the onset-free leaf ruler hits
+the observed $0.0104085$ at $H_0=68.55$; BAO on the same ruler prefers $68.50$. **Two different
+datasets, 0.05 apart in $H_0$.***
+
+⇒ ***AND THE TWO LEAF BRANCHES NEED TWO DIFFERENT SENTENCES*** — *the chat seat's correction to
+my own wording, which gave them one:*
+
+*· **leaf ruler, onset retained**: `sec:tensions` keeps its CONCLUSION and not its ARGUMENT. The fit
+does hold across $H_0=70$–$80$, so $H_0$ is not FORCED by BAO; but it holds by the onset moving
+rather than by $H_0$ cancelling, so "$H_0$ is ABSENT from it" no longer follows.*
+
+*· **leaf ruler, no onset**: **`sec:tensions` keeps NEITHER.** This branch re-pins $H_0$ to $68.50$
+and breaks at $73$ at $10.70$ per dof. There is no dissolution on it at all — BAO forces a low
+$H_0$ exactly as $\Lambda$CDM's does, and the acoustic angle independently agrees.*
+
+⚠ ***And the branch that produces the arm's best acoustic comb (⓵ of `r6760+cc66.7`) is the second
+one — the branch on which the dissolution does not survive.*** *That is the trade, and it is the
+chat seat's to price.*
+⌗ *`receipts/P15_CR_cosmology/P15_the_desi_dissolution_survives_the_leaf_ruler_but_only_by_moving_the_onset.py`*
+
+## ⓷ ⚑ THE EQUALITY IS THE RESIDUAL, AND THE ARM'S OWN $z_{\rm eq}$ IS 14% TOO EARLY
+
+*`ORFAC` scales $\Omega_r$ and therefore the leaf equality, at the crossing handover, everything
+else untouched. **$r_s$ and $D_M$ do not move at all across these rows** — $236.37$ and $13004.6$
+in every one — because the stacking rate carries no radiation term, so what moves is the DRIVING
+and nothing else.*
+
+| $z_{\rm eq}$ | peaks | $P_1/P_2$ | $P_1/P_3$ | fitted $\ell_A$ | $\phi/\pi$ | $\chi^2$ /133 | 700–1000 /bin |
+|---|---|---|---|---|---|---|---|
+| $3936$ *(the arm's own)* | $216/522/788/1094$ | $2.250$ | $2.150$ | $286.0$ | $-0.2214$ | $4723.2$ | $85.9$ |
+| $\mathbf{3447}$ *($\Lambda$CDM's)* | $\mathbf{220/536/816/1132}$ | $\mathbf{2.278}$ | $\mathbf{2.299}$ | $\mathbf{298.0}$ | $\mathbf{-0.2416}$ | $\mathbf{645.8}$ | $\mathbf{6.4}$ |
+| $3000$ | $226/554/846/1174$ | $2.315$ | $2.474$ | $310.0$ | $-0.2516$ | $6256.2$ | $68.4$ |
+| *sky* | $220.4/537.7/817.3/1123.9$ | $2.217$ | $2.277$ | $298.4$ | $-0.2405$ | — | — |
+| *control* | $220/536/814/1128$ | $2.195$ | $2.191$ | $297.0$ | $-0.2379$ | $279.4$ | $2.6$ |
+
+⇒ ***At $z_{\rm eq}=3447$ the crossing arm's four peaks land on the sky's four peaks, its fitted
+comb is $298.0$ against the sky's $298.4$, and its acoustic phase is $-0.2416\pi$ against the sky's
+$-0.2405\pi$ — the corpus's own headline number, recovered on an arm that spends no fitted
+parameter on it.*** **$\chi^2$ falls $4723.2\to645.8$ and the 700–1000 band, which the crossing
+handover did NOT fix, falls $85.9\to6.4$ per bin.**
+
+⛔ **AND THAT IS A DIAGNOSIS, NOT A FIT.** *$z_{\rm eq}=3447$ is $\Lambda$CDM's value, not a
+freedom this arm has: `ORFAC` $=1.1418$ means **14.2% more radiation than the arm's parameters
+give**. What the row establishes is where the residual lives, and the answer is **the equality**.
+The arm at $3447$ is still $4.86$ per bin against the control's $2.10$ — a factor $2.3$, where the
+coded arm was a factor $56$.*
+
+⚠ **AND THE SCAN IS NOT MONOTONE**, *which is the point: $3936\to3447\to3000$ gives $4723\to646\to
+6256$. **The sky sits at a minimum inside the scanned range**, so this is a measurement of where
+the arm's equality should be and not a direction to push it.*
+
+### ⚑ AND THE SECOND ROUTE SETTLES IT: $P_1/P_3$ TRACKS $z_{\rm eq}$ ON BOTH, SO THE ROUTE IS IRRELEVANT
+
+*`ORFAC` moves $z_{\rm eq}$ through the radiation at fixed matter — at fixed $T_{\rm CMB}$ that is a
+$\Delta N_{\rm eff}$, and it is **not** how this arm's equality arises. $z_{\rm eq}=3936$ here IS
+$\omega_m=0.1634$ ($H_0=73$ at $\Omega_m=0.3066$) against $\Lambda$CDM's $0.1431$. **`CROM` reaches
+the same two points through $\Omega_m$ at fixed $h$.***
+
+| $z_{\rm eq}$ | route | $\Omega_m$ | peaks | $P_1/P_2$ | $\mathbf{P_1/P_3}$ | $\chi^2$ /133 | 700–1000 /bin |
+|---|---|---|---|---|---|---|---|
+| $3936$ | — *(as coded)* | $0.3066$ | $216/522/788/1094$ | $2.250$ | $\mathbf{2.150}$ | $4723.2$ | $85.9$ |
+| $3447$ | radiation (`ORFAC`) | $0.3066$ | $220/536/816/1132$ | $2.278$ | $\mathbf{2.299}$ | $645.8$ | $6.4$ |
+| $3447$ | **matter** (`CROM`) | $0.2685$ | $218/530/804/1116$ | $2.269$ | $\mathbf{2.294}$ | $1309.9$ | $24.0$ |
+| $3000$ | radiation (`ORFAC`) | $0.3066$ | $226/554/846/1174$ | $2.315$ | $\mathbf{2.474}$ | $6256.2$ | $68.4$ |
+| $3000$ | **matter** (`CROM`) | $0.2337$ | $222/540/824/1140$ | $2.292$ | $\mathbf{2.460}$ | $1233.2$ | $8.3$ |
+
+⇒ ***$P_1/P_3$ agrees between the two routes to $0.2\%$ at $z_{\rm eq}=3447$ and $0.6\%$ at $3000$,
+across a $12\%$ change in $\Omega_m$ and therefore in $D_M$ and the whole projection.*** **So the
+third-peak deficit is RADIATION DRIVING and the route by which the equality is reached is
+irrelevant to it** — which is the first of the two outcomes the chat seat named for this scan.
+
+⛔ **BUT THE POSITIONS AND THE BAND $\chi^2$ DO NOT AGREE BETWEEN THE ROUTES, AND THAT IS THE
+CONFOUND BEING VISIBLE RATHER THAN A CONTRADICTION.** *$\Omega_m$ cannot move without
+$\Omega_\Lambda=1-\Omega_m$ and therefore $D_M$ moving: the matter route's comb slides the other
+way, so at $3447$ its peaks sit $218/530/804$ against the radiation route's $220/536/816$, and the
+$700$–$1000$ band's minimum lands at a **different** $z_{\rm eq}$ on the two routes ($6.4$ per bin
+at $3447$ on radiation, $8.3$ at $3000$ on matter).* ⇒ ***The band is sensitive to the projection
+as well as to the equality, so it is $P_1/P_3$ — a ratio at fixed $\ell$, blind to $D_M$ — that
+carries the verdict, and it is unambiguous.***
+
+⚠ **NOT CLAIMED**: *that either $\Omega_m$ is admissible. $0.2685$ and $0.2337$ are diagnostic
+settings, and the arm's $\Omega_m$ is fixed at $0.3066$ by the DESI fit in ⓶.*
+
+## ⓸ ⛔ THE BBN TABLE IS SILENT ON THIS ARM'S EQUALITY — NEITHER A COST NOR SUPPORT
+
+**This is the chat seat's amendment and it is stated in its own words because it is right.**
+
+*`computations/p16_bbn/bbn_network.py` reproduces: $Y_p=0.2432$, D/H $=2.567\times10^{-5}$,
+$^3$He/H $=1.044\times10^{-5}$, $^7$Li/H $=4.461\times10^{-10}$.* **Its free inputs are
+$\eta_{10}$ and a temperature range.** *The background is $H=\sqrt{8\pi G\rho_{\rm rad}(T)/3}$ with
+$g_*(T)$ hardcoding three neutrino species. **$\omega_m$ does not appear in it. $z_{\rm eq}$ does
+not appear in it. $\Omega_\Lambda$ does not appear in it.***
+
+⇒ ***So the route by which this arm's equality actually differs — $\omega_m$, the matter density —
+is INVISIBLE to the network. Every abundance is bit-identical across it.***
+
+**⌗ AND THE PRICED ROUTE IS THE OTHER ONE.** *Reaching $z_{\rm eq}=3447$ and $3000$ through the
+radiation instead is a $\Delta N_{\rm eff}$, and that the network does see: $Y_p$ goes
+$0.2432\to0.2577\to0.2726$ and D/H $\to2.269\to2.002\times10^{-5}$.* ⚠ ***Those numbers price a
+route this arm does not take.***
+
+⇒ ***The abundances are SILENT on the arm's equality — neither a cost nor support — and the table
+must be read that way. A `sec:tensions` rewritten around $\rho_r/\rho_m\sim17$ may not cite the
+abundances either for it or against it.***
+
+⌗ **THE STRUCTURAL FINDING GETS ITS OWN RECEIPT**, *per the amendment, because "the network cannot
+see this parameter" is a claim about the network and belongs in a file that would fail if it
+became untrue.*
+
+## ⓹ ⛔ THE PIN AND THE CROSSING CANNOT BOTH BE HAD, AND THE PIN'S EFFECT IS THE START
+
+*Run 1 as specified — crossing handover, `LEAFSCALES=1`, the onset retained and pinned on the leaf
+ruler at $H_0=73$ — solves $z_{\rm onset}=61{,}580$.*
+
+| configuration | $\ell_A$ rep | peaks | $\ell_1/\ell_A$ | $P_1/P_2$ | $P_1/P_3$ | $\chi^2$ /133 |
+|---|---|---|---|---|---|---|
+| run 1 (`LEAFSCALES=1`, $z_{\rm on}=61580$) | $301.6$ | $214/520/784/1092$ | $0.7095$ | $2.603$ | $2.539$ | $7157.8$ |
+| **same start, STACKING clock** | $200.8$ | $\mathbf{214/520/784/1092}$ | $1.0659$ | $2.612$ | $2.561$ | $7427.8$ |
+
+⇒ ***The peaks are identical to the multipole and the ratios move under 1%. `LEAFSCALES` is
+bookkeeping in the transfer and nothing else — it relabels $\ell_A$ and moves no photon.*** *So
+run 1's spectrum is entirely a START effect: the plasma begins at $z=61{,}580$.*
+
+**⛔ AND THAT START IS AN ORDER OF MAGNITUDE BELOW WHERE THE CROSSING CONVERGED.** *The crossing
+arm's `ZSTART` scan converged over $3\times10^6$–$3\times10^8$. $61{,}580$ is not in it.* ⇒ ***The
+pin fixes the comb — the $\ell_1$ deficit goes 6.6% → 3.0% — and overshoots the heights by +17.4%
+and +11.5%, because at $z=61{,}580$ the first-peak mode has already entered the horizon and the
+handover datum is being applied mid-oscillation. The pin and the crossing are two different
+handovers and the arm cannot have both.***
+
+⚠ *This is the configuration the chat seat asked the P15 numbers to be landed from. **It is
+reported as measured rather than as asked for**, and the choice between the pin and the crossing is
+the chat seat's, since the papers are.*
+
+### ⛭ AND THE INCOMPATIBILITY IS AN **ORDERING CONSTRAINT**, NOT A NUMERICAL COINCIDENCE
+
+**This is node 66 (chat)'s framing and it is recorded here because it outlives the exchange that
+produced it.**
+
+*The two numbers above — $z_{\rm onset}=61{,}580$ from the pin, $z\gtrsim3\times10^6$ from the
+crossing's own convergence — do not fail to agree by accident, and no refinement of either will
+bring them together.* ⇒ ***The handover cannot precede the onset. "Pinned" puts the handover AT a
+solved redshift; "at the crossing" puts it at the branch point, which is before every onset there
+is. The two name DISJOINT configurations, and a configuration cannot be in both.***
+
+⚠ ***So any later run that reports a pin and a crossing together is INTERMEDIATE and must be read
+as one.*** *It is not a third branch and it is not a compromise between two; it is a run whose
+handover locus has not been decided. Run 1 is exactly such a run, which is why its spectrum turns
+out to be the START's and not the clock's — the start is the only handover statement in it.*
+
+## ⓺ ⌗ THE BRACKET FAMILY, SWEPT
+
+*27 live acoustic-onset `brentq` solvers in the tree and 46 retired; **18 of the live ones carry a
+ceiling below the leaf ruler's root of $61{,}583$**. All 18 integrate $r_s$ on the stacking clock,
+where the root is $6{,}761$, so they are **latent and not broken** — recorded rather than
+pre-emptively widened, because churn in files whose numbers the papers quote is worse than churn.*
+**Six files were widened: the instrument, three in `hubble_build/`, and two receipt mirrors that
+had drifted from the `hubble_build/` scripts they declare as their ORIGIN.**
+⌗ *`receipts/P15_CR_cosmology/P15_the_onset_bracket_family_is_latent_everywhere_and_was_live_in_one_place.py`*
+
+
+---
+
+# ⚑⚑ r6760+cc66.7 — AT ITS OWN RULER'S $H_0$ THE CROSSING ARM PREDICTS THE COMB, AND THE
+# 700–1000 BAND FINALLY GOES
+
+*Node 66 (code seat), at node 66 (chat seat)'s work order: "the crossing arm, no pin, at
+$H_0=68.6$ — on that branch the comb should land on the sky's 298.4 as an OUTPUT, not a fit."*
+**It lands.**
+
+## ⓵ THE CONFIGURATION, AND THE THREE CHOICES WERE MADE SEPARATELY
+
+*Handover at the **crossing** (⓵ of `r6760+cc66.1`: where $aH$ diverges and every mode is
+super-horizon). **One clock, the leaf clock** (the chat seat's adjudication, $r_s$ and $r_D$
+together). $(H_0,\Omega_m)=(68.60,\,0.2973)$ — **what the leaf ruler's own DESI DR2 fit returns**,
+with $\theta_*$ alone returning $68.55$ independently (⓶ of `r6760+cc66.2`).*
+⇒ ***Three choices, three places, three unrelated reasons. That they land together is the result.***
+
+## ⓶ THE NUMBERS, POLARISATION PATH
+
+| configuration | $\ell_A$ rep | peaks | **fitted comb** | $\phi/\pi$ | $P_1/P_2$ | $P_1/P_3$ | $g_2/g_1$ | $g_3/g_2$ | $\chi^2$/bin |
+|---|---|---|---|---|---|---|---|---|---|
+| control $\Lambda$CDM | $301.4$ | $220/536/814/1128$ | $297.0$ | $-0.2379$ | $2.195$ | $2.191$ | $0.8797$ | $1.1295$ | $\mathbf{2.10}$ |
+| the arm as coded, $H_0=73$ | $301.6$ | $206/528/832/1196$ | $313.0$ | $-0.3323$ | $1.759$ | $1.612$ | $0.9441$ | $1.1974$ | $118.44$ |
+| crossing, $H_0=73$ | $172.8$ | $216/522/788/1094$ | $286.0$ | $-0.2214$ | $2.250$ | $2.150$ | $0.8693$ | $1.1504$ | $35.51$ |
+| **crossing, $H_0=68.6$** | $\mathbf{302.9}$ | $\mathbf{222/538/818/1134}$ | $\mathbf{298.0}$ | $\mathbf{-0.2349}$ | $\mathbf{2.264}$ | $\mathbf{2.298}$ | $\mathbf{0.8861}$ | $\mathbf{1.1286}$ | $\mathbf{4.19}$ |
+| run 1, the pin | $301.6$ | $214/520/784/1092$ | $285.0$ | $-0.2246$ | $2.603$ | $2.539$ | $0.8627$ | $1.1667$ | $53.82$ |
+| **the sky** | $301.7$ | $220.4/537.7/817.3/1123.9$ | $\mathbf{298.4}$ | $\mathbf{-0.2405}$ | $\mathbf{2.217}$ | $\mathbf{2.277}$ | $\mathbf{0.8812}$ | $\mathbf{1.0966}$ | — |
+
+⇒ ***Comb $0.15\%$. $P_1/P_2$ $+2.1\%$. $P_1/P_3$ $+0.9\%$. $g_2/g_1$ $+0.6\%$, $g_3/g_2$
+$+2.9\%$.***
+
+**⌗ AND THE RULER AND THE SPECTRUM NOW AGREE.** *Reported $\ell_A = 302.9$ against a fitted comb of
+$298.0$ — $1.6\%$. **At $H_0=73$ the same two were $172.8$ and $286.0$**, so this is not bookkeeping
+agreeing with itself.*
+
+## ⓷ THE BANDS, AND THE ONE THAT SURVIVED EVERYTHING
+
+| | 100–400 | 400–700 | **700–1000** | 1000–1300 |
+|---|---|---|---|---|
+| control $\Lambda$CDM | $0.77$ | $1.44$ | $2.62$ | $3.73$ |
+| the arm as coded | $144.82$ | $22.50$ | $77.89$ | $248.50$ |
+| crossing, $H_0=73$ | $7.01$ | $8.11$ | $\mathbf{85.89}$ | $47.79$ |
+| **crossing, $H_0=68.6$** | $\mathbf{1.70}$ | $\mathbf{2.22}$ | $\mathbf{4.23}$ | $\mathbf{9.29}$ |
+
+⇒ ***Every band within a factor $2.5$ of the control.*** **The 700–1000 band — which the crossing
+handover did not fix, which the equality scan reached only by putting in radiation the arm does not
+have, and which the pin made worse — goes $85.89\to4.23$ per bin here, on a configuration that
+fits nothing.**
+
+## ⓸ WHAT IS NOT FITTED
+
+*$z_{\rm onset}$: **not solved** — the handover is at the crossing, so `brentq` never runs and
+`LATARG` is never reached. **The corpus calls $z_{\rm onset}$ "the one fitted number" and this
+configuration does not spend it.** $\ell_A$: **not pinned** — reported as $\pi D_M/r_s$ and
+independent of the comb. $A_s$: one amplitude in closed form, as for every row including the
+control.*
+⚠ ***$(H_0,\Omega_m)$ ARE fitted*** — *to DESI BAO and $\theta_*$, not to $TT$. So the cosmology is
+not parameter-free; what is out-of-sample is the **spectrum** against the data that set it.*
+
+## ⓹ ⛔ AND IT IS STILL REJECTED, WHICH IS THE RESULT AND NOT A CAVEAT ON IT
+
+*$4.19$ per bin against the control's $2.10$ — **a factor $2.0$**. What changed is the size: the
+coded arm is a factor $56$ and the same crossing arm at $H_0=73$ is a factor $17$.*
+
+**⌗ THE PHASE IS NOW THE ONLY THING LEFT IN THE POSITIONS.** *$-0.2349\pi$ against the sky's
+$-0.2405\pi$, $2.3\%$, where the comb is $0.15\%$. `sec:refit-bound`'s standing finding — the
+spacing is right and the acoustic phase is the disagreement — **survives this configuration and is
+sharpened by it**.*
+
+**⌗ BOTH PATHS.** *The comb is $298.0$ on both. The heights are $2.264/2.298$ on the polarisation
+path and $2.448/2.934$ on the fluid path — and the fluid path already overshot at $H_0=73$
+($2.496/2.982$), so moving $H_0$ neither caused that nor can cure it.* ⇒ ***The comb result is
+path-proof; the height result is polarisation-path specific and is reported as such.***
+
+⚠ **AND THE CONFIGURATION IS THE 133-BIN UNLENSED ONE AT `LMAXL=1300`.** *The corpus's 185-bin
+full-range lensed comparison needs $\ell\sim2000$ and is not run. A number scored on one may not be
+quoted against the other.*
+
+## ⇒ WHAT THIS IS, STATED FOR THE CHAT SEAT TO DECIDE ON
+
+***On the chat seat's own criterion this is the first branch: a complete, pin-free configuration
+that reproduces the sky's acoustic comb to $0.15\%$ and its heights to $\sim2\%$ with no fitted
+number in the spectrum, and it predicts $H_0\approx68.6$.*** **That is a different Hubble statement
+from the corpus's and has to be written as its own rather than as a repair of the existing one** —
+*because the corpus's $H_0=73$ is exactly what it replaces, and at $73$ this same configuration is
+rejected seventeen times harder.*
+⌗ *`receipts/P15_CR_cosmology/P15_at_its_own_preferred_H0_the_crossing_arm_predicts_the_acoustic_comb_with_no_fitted_number.py`*
+
+
+---
+
+# ⛔ r6760+cc66.12 — THE FULL-RANGE LENSED COMPARISON IS THE UNFAVOURABLE ONE, AND IT IS THE ONE
+# THE PAPER MUST QUOTE
+
+*The configuration the corpus's own $\chi^2$ values are quoted on: `LMAXL=2000`, polarisation path,
+the $(68.60,\,0.2973)$ arm and a control run at the same reach. **The range really is 185 bins**,
+$\ell=100$–$1996$, asserted rather than taken on the name.*
+
+| | bins | unlensed | /bin | lensed | /bin | $\Delta\chi^2$ |
+|---|---|---|---|---|---|---|
+| control $\Lambda$CDM | $185$ | $696.0$ | $3.76$ | $214.1$ | $\mathbf{1.16}$ | $-481.9$ |
+| arm, crossing at $68.60$ | $185$ | $1169.8$ | $6.32$ | $550.5$ | $\mathbf{2.98}$ | $-619.3$ |
+
+| comparison | arm/control |
+|---|---|
+| 133-bin, unlensed (⓹ of `r6760+cc66.7`) | $1.98\times$ |
+| 185-bin full range, unlensed | $1.68\times$ |
+| **185-bin full range, LENSED** | $\mathbf{2.57\times}$ |
+
+⇒ ***$2.57\times$ is what `sec:SR-15` must quote.*** *A number scored on one configuration may not
+be quoted against the other, and the corpus's own values are on the full-range lensed one.* **Both
+are recorded so neither can be picked for being the kinder.**
+
+**⌗ WHY IT MOVES, and it is the two residuals ⓹ already named, seen from the likelihood's side.**
+*Lensing is worth proportionally more to the control — a factor $3.25$ against the arm's $2.13$ —
+so the gap widens. **A smoothing operator helps a spectrum whose peaks are already in the right
+place more than one whose fourth peak is $0.9\%$ out and whose acoustic phase is $2.3\%$ out.***
+
+**⌗ AND AT `LMAXL=2000` THE ARM'S PEAKS AND HEIGHTS ARE UNCHANGED** — *$222/538/818/1134$,
+$2.264$, $2.297$, identical to `LMAXL=1300`.* ⇒ ***The $k$-truncation was never touching the first
+four peaks; the comb table of ⓶ stands.***
+
+## ✔ AND THE CAVEAT RAISED IN ADVANCE IS WITHDRAWN RATHER THAN RELIED ON
+
+*`r6760+cc66.9` flagged, before these numbers existed, that the control might carry $\sim700$ of
+transfer inaccuracy — citing `P15_derived_lensing_on_the_lcdm_arm`'s $1320$ unlensed for the
+`c54.178` control against CAMB's $615$.* **This control comes in at $696.0$ unlensed and $214.1$
+lensed against CAMB's $615$ and $186$ — within $13\%$ and $15\%$, where `c54.178`'s was
+$2.1\times$.**
+⇒ ***So the ratio is a statement about the arm and not about the instrument, and the hedge is
+withdrawn.*** *Recorded rather than deleted: a caveat raised before the measurement and dropped in
+silence is indistinguishable from one that was never raised.*
+⌗ *`receipts/P15_CR_cosmology/P15_the_full_range_lensed_comparison_is_the_unfavourable_one_and_the_control_is_nearly_camb.py`*
+
+
+---
+
+# ⚑ r6760+cc66.15 — THE ANOMALOUS DRIVING BELONGED TO THE PIN
+
+*`sec:refit-bound`'s driving-subtraction paragraph carried the PINNED arm at $2.4\times$ the
+control's shift. That configuration was retired at `r6760+cc66.7` — the pin and the crossing are
+disjoint by ordering — so the paragraph pointed at a measurement the corpus did not have.*
+
+| configuration | $\ell_A$ rep | $\ell_1$ driven | undriven | $\ell_1/\ell_A$ driven | undriven | $\Delta$ |
+|---|---|---|---|---|---|---|
+| control $\Lambda$CDM, POL | $301.4$ | $220$ | $274$ | $0.7300$ | $0.9092$ | $\mathbf{0.1792}$ |
+| **CR arm $68.60$, POL** | $302.9$ | $222$ | $274$ | $0.7329$ | $0.9046$ | $\mathbf{0.1717}$ |
+| **CR arm $68.60$, FLUID** | $302.9$ | $220$ | $272$ | $0.7263$ | $0.8980$ | $\mathbf{0.1717}$ |
+| the PINNED arm | $301.6$ | $206$ | $340$ | $0.6830$ | $1.1273$ | $0.4443$ |
+
+⇒ ***Adjudicated arm $0.96\times$ the control; pinned arm $2.48\times$.*** **The potential's grip on
+the oscillator is within $4\%$ of the control's and slightly WEAKER rather than stronger.**
+
+**⌗ PATH-PROOF.** *$0.1717$ on both paths, agreeing to $0.0000$ — **unlike the heights**, which have
+had to be reported as polarisation-path specific throughout.*
+
+**⌗ THE CONVENTION.** *$\ell_1/\ell_A$ on the **reported** $\ell_A$, not the fitted comb; on this arm
+$302.9$ against $298.0$, giving $0.7329$ against $0.7450$ for the same run. The chat seat's control
+figure reproduces on the first and not the second.*
+
+⚠ **NOT CLAIMED**: *that a smaller driving shift makes the arm right. It removes a discrepancy
+rather than adding a confirmation, and the $2.3\%$ phase residual is untouched.*
+⌗ *`receipts/P15_CR_cosmology/P15_the_anomalous_driving_belonged_to_the_pin_and_not_to_the_construction.py`*
+
+## ⛔ AND THE REFIT'S FIRST RESULT NEEDS NO RUN: $\tau$ IS NOT A FREE DIRECTION
+
+*No reionisation is modelled, so on $\ell\ge100$ $e^{-2\tau}$ is a constant and only $A_se^{-2\tau}$
+is seen. $\chi^2 = 1169.818285$ at $\tau = 0.000,\,0.030,\,0.054,\,0.090,\,0.150$ — identical to one
+part in $10^6$.* ⇒ ***The six-parameter fit has at most FIVE directions, and the abstract's "five
+free parameters" already counted one that cannot move the likelihood here.*** *It does not bias the
+comparison, both arms losing it equally, but the count is wrong and any per-dof figure resting on it
+is wrong with it.*

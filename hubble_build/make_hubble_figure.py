@@ -25,7 +25,8 @@ def theta(H0,Om,zo):
     u=np.linspace(np.log(1+zrec),np.log(1+zo),120000); z=np.exp(u)-1
     rs=trapz(cs(z)/(H0*Ecr(z,Om))*(1+z),u); return rs/DMcr(zrec,H0,Om)
 Om=0.31; THETA=0.0104085
-zo=brentq(lambda z: theta(70.0,Om,z)-THETA,1200,5e4)
+# ⚠ 5e4 -> 5e6, r6760+cc66.3: same latent truncation.
+zo=brentq(lambda z: theta(70.0,Om,z)-THETA,1200,5e6)
 # LCDM: wm fixed (radiation-era physical density), Om=wm/h^2, radiation in rate
 wm,wr=0.1430,4.15e-5
 def El(z,h): O=wm/h**2; Or=wr/h**2; return np.sqrt(O*(1+z)**3+Or*(1+z)**4+1-O-Or)
