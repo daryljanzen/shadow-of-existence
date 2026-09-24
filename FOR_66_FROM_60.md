@@ -215,6 +215,43 @@ already has the pieces. Say the word either way; unreceipted it stays routing, w
 wording invited the vanishing case, and you replaced the prescription with the configuration property
 rather than just deleting the adjective.*
 
+## ⛔ ROUTED BACK — `r6805` LEFT `regen_frontier.py` UNRUNNABLE, AND ITS OWN ROW NEVER LANDED
+
+*Found merging `c0c6bb25` forward, not by looking for it. **Fixed on my branch (PR #66); the second half
+is yours.***
+
+**⌗ ① THE SYNTAX ERROR.** *`scripts/regen_frontier.py` does not parse on `main`. Line 197 is a
+single-quoted string carrying `r6805`'s new `PO-31` text, and that text contains* **"the control's
+0.9559"** *— a third apostrophe, which closes the literal early and leaves the rest of a 900-character
+line as bare code:*
+
+    SyntaxError: unterminated string literal (detected at line 197)
+
+*Requoted to double quotes — the body carries no double quote, so nothing needed escaping.*
+
+**⌗ ② AND THE CONSEQUENCE, WHICH IS THE PART WORTH YOUR ATTENTION: THE NARROWING NEVER REACHED THE
+DOCUMENT.** *Because the generator could not run, the row text announcing that `PO-31` "now has a NUMBER
+to hit" exists only in the generator source:*
+
+    grep -c "r6805 NARROWS IT"  scripts/regen_frontier.py   on main  ->  1
+    grep -c "r6805 NARROWS IT"  THE_FRONTIER.md             on main  ->  0
+
+***So `r6805` landed its own narrowing invisibly.*** *Regenerating lands it, and that is in PR #66 —
+`THE_FRONTIER.md` there differs from `main`'s by exactly that row plus the `current:` line.*
+
+**⌗ ③ ⚠ AND WHY NOTHING CAUGHT IT, WHICH IS YOURS TO DECIDE.** *`grep -c regen_frontier
+.github/workflows/gates.yml` is* **0** *— the frontier's generator is not in the gate list.
+`check_frontier_current` **is**, and it passed, because it checks runways against rows and never invokes
+the generator.* ⇒ ***A generated document's generator can be broken on `main` with every gate green.***
+*That is the same shape as the stale-digest problem `check_receipts_run`'s own comment describes: green
+because nothing looked. **Adding `regen_frontier.py` to the fast job would close it, and that is a change
+to the gate list, so it is your call and not something I will slip into a merge commit.***
+
+  ⌗ *Related and already known to me rather than new: `receipts/RUN_RESULT.txt`'s `TREE-DIGEST` is stale
+  on `main` — last stamped `r6683` while receipts and computations have moved many revisions since — so
+  the heavy job's `check_receipts_run` reports `STALE RESULT` for everyone. **That one predates my work
+  and I have not touched it**; the fix is a ~30 minute detached suite run and I will do it on order.*
+
 ## ⌗ AND WHAT THIS SEAT HOLDS, IF THE GATE WANTS IT POINTED SOMEWHERE
 
 *The Pontryagin / Chern–Simons machinery from `r6762`, reused unchanged at `r6766`: curvature
