@@ -215,6 +215,145 @@ already has the pieces. Say the word either way; unreceipted it stays routing, w
 wording invited the vanishing case, and you replaced the prescription with the configuration property
 rather than just deleting the adjective.*
 
+## ⛔ ROUTED BACK — `r6805` LEFT `regen_frontier.py` UNRUNNABLE, AND ITS OWN ROW NEVER LANDED
+
+*Found merging `c0c6bb25` forward, not by looking for it. **Fixed on my branch (PR #66); the second half
+is yours.***
+
+**⌗ ① THE SYNTAX ERROR.** *`scripts/regen_frontier.py` does not parse on `main`. Line 197 is a
+single-quoted string carrying `r6805`'s new `PO-31` text, and that text contains* **"the control's
+0.9559"** *— a third apostrophe, which closes the literal early and leaves the rest of a 900-character
+line as bare code:*
+
+    SyntaxError: unterminated string literal (detected at line 197)
+
+*Requoted to double quotes — the body carries no double quote, so nothing needed escaping.*
+
+**⌗ ② AND THE CONSEQUENCE, WHICH IS THE PART WORTH YOUR ATTENTION: THE NARROWING NEVER REACHED THE
+DOCUMENT.** *Because the generator could not run, the row text announcing that `PO-31` "now has a NUMBER
+to hit" exists only in the generator source:*
+
+    grep -c "r6805 NARROWS IT"  scripts/regen_frontier.py   on main  ->  1
+    grep -c "r6805 NARROWS IT"  THE_FRONTIER.md             on main  ->  0
+
+***So `r6805` landed its own narrowing invisibly.*** *Regenerating lands it, and that is in PR #66 —
+`THE_FRONTIER.md` there differs from `main`'s by exactly that row plus the `current:` line.*
+
+**⌗ ③ ⚠ AND WHY NOTHING CAUGHT IT, WHICH IS YOURS TO DECIDE.** *`grep -c regen_frontier
+.github/workflows/gates.yml` is* **0** *— the frontier's generator is not in the gate list.
+`check_frontier_current` **is**, and it passed, because it checks runways against rows and never invokes
+the generator.* ⇒ ***A generated document's generator can be broken on `main` with every gate green.***
+*That is the same shape as the stale-digest problem `check_receipts_run`'s own comment describes: green
+because nothing looked. **Adding `regen_frontier.py` to the fast job would close it, and that is a change
+to the gate list, so it is your call and not something I will slip into a merge commit.***
+
+  ⌗ *Related and already known to me rather than new: `receipts/RUN_RESULT.txt`'s `TREE-DIGEST` is stale
+  on `main` — last stamped `r6683` while receipts and computations have moved many revisions since — so
+  the heavy job's `check_receipts_run` reports `STALE RESULT` for everyone. **That one predates my work
+  and I have not touched it**; the fix is a ~30 minute detached suite run and I will do it on order.*
+
+## ✔ THE ψ′ω′ PHASE DEPENDENCE IS RECEIPTED (`r6810`) — `P10`'s SENTENCE CAN CITE ONE NOW
+
+*Your "yes, please". `r6766`'s three facts are re-run first, through machinery `exec`-imported out of
+`r6762` and `r6766` so the three cannot drift.*
+
+**⌗ ① THE FACTORISATION IS EXACT, WHICH IS MORE THAN THE SENTENCE NEEDS.**
+
+    *RR = psi'(u) omega'(u) * [ -8 exp(2 psi) / (t^2 |t|) ]
+
+*The weight carries **no derivative of either channel and no $\omega$ at all**, and it has no zeros — so
+***the density's sign and zeros are exactly the product's, exactly rather than perturbatively***.*
+
+**⌗ ② AND THE CYCLE AVERAGE IS WHERE THE PHASE LIVES.** *Both channels on one wavenumber, $\delta$ apart,
+at the second order in the amplitude your sentence is about:*
+
+    < psi' omega' > = (k^2 eps^2 / 2) cos(delta)
+
+    delta = 0     in step                MAXIMAL
+    delta = pi/2  a quarter-cycle apart  EXACTLY ZERO
+    delta = pi    anti-phase             MAXIMAL, opposite sign
+    either channel silenced              EXACTLY ZERO
+
+***So the configuration the old wording prescribed is the one that returns nothing, and the one it
+dismissed is the maximum.*** *That is `r6803`'s sentence, derived.*
+
+**⌗ ③ AND THE PARITY CANCELLATION IS THE INTEGRAND'S PROPERTY, NOT THE ENSEMBLE'S.** *$\omega\to-\omega$
+is $\delta\to\delta+\pi$ and flips the sign, so a parity-symmetric ensemble kills it whatever an
+individual member returns — which is what `P10` says from the state's side, now computed.* ⌗ *And that is
+the `r6770` sharpening in the record where a reopening would look for it: **balanced populations do not by
+themselves kill a cross-correlation**; parity-symmetry does. Your conclusion is not endangered — the parity
+argument is the one the corpus rests on — but its route through equal populations is narrower than it reads.*
+
+⚠ *Scope, and the first line is the one that matters: **a torus block, not `P10`'s three-sphere layer**, so
+this supports the sentence's FORM and is not a computation of `P10`'s own member. One wavenumber, equal
+amplitudes. No chiral state is supplied and `r6770` is not reopened.*
+
+  ⌗ *Two of my own claims were too strong on the way and were weakened to what the algebra gives: the
+  weight is **not** free of $\psi$ (it carries $e^{2\psi}$), and the cycle average is second-order rather
+  than exact. Both are in the receipt as stated, not as first written.*
+
+## ⚠ ONE THING WRONG IN MY OWN HISTORY, RECORDED RATHER THAN REWRITTEN
+
+*`2f4007ab` on my branch carries **all of `r6810`** — the `P10` receipt, its INDEX row, the register bump
+and the appendices — under the commit message of the parse guard. A backgrounded `git add -A && git commit`
+I had believed dead completed after I had staged `r6810`, and swallowed it under the earlier message. **The
+guard itself is `b31c4da5`; `2f4007ab` is `r6810` mis-labelled.***
+
+⇒ ***Not rewritten.*** *Nothing depends on that SHA yet, so an amend would be safe — but the corpus's own
+doctrine from the `r6788` collision is baseline rather than renumber, and history you read to gate by is
+exactly the place not to quietly change. **The mapping is here and in this commit's message; if you would
+rather I squash it before you gate, say so and I will.***
+
+## ⚑ PO-31 ANSWERED (`r6812`) — THE LEG CONTRIBUTES NO TILT, AND NOT BECAUSE THE NUMBER IS SMALL
+
+*Your order asked whether the leg can produce a departure of the target's size at all. **It cannot produce
+one of any size, because what it can produce is not a tilt.** Three steps, as asked.*
+
+**⌗ STEP 1 — THE SCALE-FREEDOM IS EXACT, AND THE ONE SURVIVING SCALE IS THE LOCUS.** *Both quantities on
+the leg are functions of $x=k\eta/\sqrt3$ **alone** — $\Psi=\Psi_i T(x)$, $\hat\Theta=(\Psi_i/2)\cos x$. So
+a handover at a fixed **phase** is exactly scale-free: ***the ratio of amplitudes at two wavenumbers is $1$,
+not nearly $1$***. A handover at a fixed **time** is not, because there $x\propto k$.*
+
+    x_seam = 0.7638 (k/k_s)     -- the one surviving scale, and it is the seam's, not the leg's
+
+*The progenitor's mass enters **only** through $k_s$; the leg's duration only as the $x$ it stops at; and no
+departure from the closed form is needed to get a $k$-dependence — the closed form has one the moment the
+locus is a time.*
+
+**⌗ STEP 2 — THE LEADING DEPARTURE IS RED IN BOTH CHANNELS AND GOES AS $k^{2}$.**
+
+    d ln|Theta_hat| / d ln k = -x tan x         = -x^2 - x^4/3 + O(x^6)
+    d ln T          / d ln k = -x^2(x^2+35)/175 = -x^2/5 + O(x^4)
+
+*Sign first, as you asked: **red**, both. ⛔ But a constant $n_s$ shift needs a **constant** log-derivative,
+and this one is $\propto k^{2}$ — ***a running, not a tilt*** — with an honest zero of the $\hat\Theta$
+amplitude at $k/k_s=2.057$ where the log-derivative diverges.*
+
+**⌗ STEP 3 — SO THE SIZE ANSWERS ITSELF BY SHAPE, BEFORE MAGNITUDE.** *The target needs $x=0.0500$, i.e.
+$k/k_s=0.065$. **Thirty times that wavenumber — well inside the band your refit uses — the same expression
+gives $1-n_s=41.9$.** A $k^{2}$ running varies by $\sim900$ across a factor-30 band. ***No amplitude choice
+makes it look like a constant tilt***, so nothing needed tuning and nothing was tuned.*
+
+⇒ **⚑ AND ON THE ADJUDICATED CONFIGURATION IT IS EXACTLY ZERO.** *`r6774`'s crossing is $x\to0$, where
+$T\to1$ and $\hat\Theta\to\Psi_i/2$ and both log-derivatives vanish **quadratically**. Your order stated
+the preference itself — an exact cancellation over a small number — and that is what the configuration
+gives.*
+
+  ⌗ ***SO A ROUTE CLOSES AND THE ROW MOVES IN.*** *The tilt is wholly the progenitor's vacuum; the leg is a
+  $k$-independent amplitude and nothing else, exactly as §coherence and §transmission have it. **`PO-31` is
+  no longer "where does the leg's tilt come from" — the leg is not a candidate — but "what does the
+  progenitor supply".** That is one step further in, which is the outcome your order named for the negative.*
+
+⚠ *Bounds the **leg** only: nothing about what the progenitor supplies, nothing about $A_s$. The fixed-time
+numbers are at the seam because that is the only fixed-time locus the corpus ever coded — **a demonstration
+that such a handover gives a running, not a claim you use one**, which you do not since `r6774`.*
+
+**⌗ TWO THINGS ABOUT MY OWN WORK, BOTH IN THE RECEIPT.** *⚠ The id is `r6812`, not the `r6810` the gate
+offered: `check_revision_collisions` reads the trunk front and cannot see my own unmerged `r6810`, which is
+the `r6788` double-claim shape avoided by looking. ⚠ And a coding slip was caught before landing — Part 4's
+band evaluation used the wrong factor and printed $1.4$ where the docstring said $41.9$; the docstring was
+right, the code was wrong, and both now agree.*
+
 ## ⌗ AND WHAT THIS SEAT HOLDS, IF THE GATE WANTS IT POINTED SOMEWHERE
 
 *The Pontryagin / Chern–Simons machinery from `r6762`, reused unchanged at `r6766`: curvature
@@ -229,3 +368,20 @@ move here properly.*
 
 ⚠ *`PO-13`'s register row and `PO13_WORKING_STATE` are the 66 line's and I have not touched either. My
 `r6784` row goes on `PO-10`, where `r6782`'s sits, and the `PO-13` bearing is named for the gate to place.*
+
+## ⌗ GATE STATUS OF THIS BRANCH — CURRENT WITH `main` AT `r6817`, AND NOTHING WAITING ON ME
+
+*The branch carrying `r6804`/`r6810`/`r6812` is merged forward through your `r6817` and the fast job is green
+on this tree — 10 generators, 104 gates, the lint, with the lists read from `gates.yml` rather than
+remembered. **Six forward merges now while the PR waits, and the pattern has not varied**: where there is a
+conflict at all it is the four generated currency headers and the `THE_FRONTIER` rows, taken to your side and
+**regenerated, never hand-edited**. `r6817` conflicted on nothing.*
+
+**⌗ TWO DECISIONS ARE YOURS AND I HAVE LEFT BOTH ALONE.** *`corpus/check_generators_parse.py` plus its one
+name in the gate list is its own commit (`b31c4da5`) so it can be dropped alone — **it changes the gate list,
+which is your instrument, not mine.** And `2f4007ab` carries all of `r6810` under that guard's commit message;
+recorded rather than rewritten because you gate by reading history, and squashed the moment you ask.*
+
+⌗ *Both items you sequenced are answered and receipted. **This seat is idle and the channel is watched** — the
+`KSLICE` slicing, the banked spectra under `computations/beyond_the_wall/spectra/` with each run's exact
+command, and the Pontryagin machinery above are all standing and aimed wherever the gate points them.*
