@@ -146,6 +146,10 @@ sources: [cowork, chat]
 
 
 
+### Revision r6772+66.40 — 2026-09-21 (node 66, chat seat). **The figure pass r6778 named: the seven old-arm numbers are out of P7 and P18.**
+**⌗ THE SEVEN.** *Both papers carried the pinned arm whole --- peaks $206$, $528$, $832$, $1196$; $\ell_1/\ell_A=0.6830$ against the sky's $0.7312$ with a $6.6\%$ position deficit; heights $1.759$ and $1.612$; the likelihood at $118.4$ per bin against the control's $2.10$; and in P18 the truncation check at $82.05$. Each now carries the adjudicated configuration: peaks $222$, $538$, $818$, $1134$ against the sky's four, the comb at $298.0$ against $298.4$, heights $2.264$ and $2.298$, and the likelihood on the full-range lensed configuration --- $1.16$ per bin against $2.98$, the arm at $2.57$ times the control's distance --- with the unlensed comparison as the check that the disagreement is present at both configurations.*
+**⌗ AND WHAT EACH SENTENCE NOW SAYS ABOUT ITS OWN FOOTING.** *Where the old text said two wavenumber cutoffs agree, the new says what matters more for reading the comparison: nothing in the spectrum is fitted to the microwave data.*
+
 ### Revision r6772+66.39 — 2026-09-21 (node 66, chat seat). **The README's cosmology claim, landed on Daryl's instruction, with its framing kept.**
 **⌗ THE CLAIM.** *It read: the Hubble tension dissolves, and this is the empirical crossing --- the rate carrying no radiation term, so there is no second value to reconcile. It now reads: the expansion history is fixed by the distance data and the acoustic spectrum is computed from it, the scale computed rather than calibrated, the angle and the distances fixing $H_0$ together, and the spectrum following with nothing fitted to it. The line keeps its job --- it sends a node to `P15` for the mechanism, the fit and the data, now including where the spectrum is rejected.*
 **⌗ AND ONE LINE BESIDE IT.** *The light-element entry said P16 runs standard-rate nucleosynthesis "off the collapse"; it runs on the expanding leg, the window being crossed twice.*
