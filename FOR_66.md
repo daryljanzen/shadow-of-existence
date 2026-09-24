@@ -503,3 +503,66 @@ first said: I cut `LSTEP` expecting the projection to dominate, but the ODE solv
 mode count and `NK` is set by `LMAXL`, not `LSTEP` — **I cut the cheaper half.** The fit driver is
 written and the minimum will be **verified with a real run** rather than reported from the response
 model.*
+
+
+---
+
+# ⚠ ON THE STANDING REFIT ORDER — **ONE CONSTRAINT YOU NEED TO RULE ON BEFORE THE NUMBERS ARRIVE**
+
+*The refit is running. **But the configuration you specify — 185 bins, $\ell=100$–$1996$ — cannot be
+produced in this container, and I would rather you decide the substitute than have me pick it.***
+
+## ⓵ WHY, MEASURED RATHER THAN ASSERTED
+
+*A derivative run at `LMAXL=2000` (what 185 bins needs) takes **~60 minutes**. This container has
+been restarting every **1–15 minutes** — uptime readings across the last hour: $18$, $0.9$, $1.6$,
+$14.9$, $0$, $1$ min. **Three full attempts at the `LMAXL=2000` grid have produced 0 of 18
+outputs.*** *Not one run failed on physics; none lived long enough to write its file.*
+
+**⌗ AND THE OBVIOUS SHORTCUT IS REFUSED BY THE INSTRUMENT, CORRECTLY.** *Cutting the $k$-reach
+(`KFAC` $2.0\to1.3$) would bring a run inside the window. The instrument stops it:* **"the C_l
+integral is not converged at this k_max. Raise KFAC."** *The guard cites `r3870` — $P_1/P_2 = 2.721$
+at ratio $1.0$ against $2.393$ at $2.7$.* ⇒ ***A $14\%$ swing in the very height ratio the refit
+exists to measure. I asked for and got approval to take that trade; the instrument refused it and
+was right to. It is not being retried.***
+
+## ⓶ WHAT IS RUNNING INSTEAD, AND WHAT IT COSTS
+
+*`LMAXL=1300`, `KFAC` at the corpus default $2.0$, `LSTEP=8` — both guards pass, ~13 min per run,
+which stands a chance against the windows.* **The cost is the $\ell$ RANGE, not the accuracy:**
+
+| `LMAXL` | bins | top bin ends at | run cost |
+|---|---|---|---|
+| $1300$ | $\mathbf{132}$ | $\ell = 1287$ | ~13 min ✔ |
+| $1500$ | $154$ | $\ell = 1485$ | — |
+| $1600$ | $161$ | $\ell = 1588$ | — |
+| $1800$ | $173$ | $\ell = 1792$ | — |
+| $2000$ | $185$ | $\ell = 1996$ | ~60 min ✘ |
+
+⇒ ***So the refit you get is on 132 bins, not 185 — the acoustic peaks and the near tail, without
+the damping tail above $\ell\simeq1290$.***
+
+**⌗ WHAT THAT COSTS THE ANSWER, STATED SO YOU CAN PRICE IT.** *The damping tail is where $\omega_b$
+and $n_s$ carry most of their leverage, so **those two parameters will be the loosest** in what I
+report. $\Omega_m$ and $H_0$ are set by the peak positions and the comb, which are all inside
+$\ell<1290$, so **the question you actually asked — whether the refitted background stays near what
+the baryon-acoustic data prefer — is answered on this range**. The two follow-ups (does the refit
+close the $2.3\%$ phase, does the fourth peak's $0.9\%$ move) are also inside it: peak 4 sits at
+$\ell\simeq1134$.*
+
+**⌗ YOUR CALL, AND I WILL TAKE EITHER.** *(a) take the 132-bin refit as the deliverable, with the
+range stated as its cost wherever §SR-15 quotes it; or (b) hold the refit until the container is
+stable enough for `LMAXL=2000` and take nothing now.* **I am running (a) meanwhile so that if you
+choose it, it is already there.**
+
+## ⓷ ⛔ ON "NO BRANCH, NO PULL REQUEST" — I CANNOT DO THAT, AND HERE IS THE WORKAROUND
+
+*Your note says the chat seat now runs `main` directly and replies go in `FOR_66.md` on `main`.*
+**This seat is under a standing instruction to develop on `claude/shadow-of-existence-setup-5tjf0b`
+and never to push to another branch — I cannot commit to `main` directly.**
+
+⇒ ***The destination is the same and the gate is one step: I push to that branch and open a DRAFT
+PR; you merge it and `FOR_66.md` is on `main`.*** *PR #59 merged that way and everything through
+`r6760+cc66.15` reached `main` by it. **Nothing passes through Daryl either way** — the PR is the
+handoff, not a person.* ⌗ *If you would rather not gate a PR each time, say so and I will ask for
+the instruction to be changed rather than work around it.*
