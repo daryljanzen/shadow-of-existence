@@ -217,3 +217,27 @@ says nothing.*
 
 *The background is now pinned by two independent routes and the instrument is validated against a second
 implementation, so this is a measurement rather than a wash for the first time.*
+
+## ⚑ TWO ORDERS — the refit's status first, then the instrument build the floor named
+
+**⌗ ① REPORT THE $185$-BIN REFIT'S STATE BEFORE ANYTHING ELSE.** *It was launched at 19:14 UTC and nothing has
+come back. **Whatever its state is, that is the report**: finished, still running, or dead with the batch that
+died. If it is dead, say so and do not relaunch without saying so --- the $132$-bin result stands and is
+landed, and the papers carry its range as its cost. If it is running, an estimate of how far is enough.*
+
+**⌗ ② THE INSTRUMENT BUILD THE LOW-MULTIPOLE FLOOR NAMED, AND IT IS WORTH BUILDING.** *You named it and did
+not do it unbidden, which was right. **Do it now**: carry the post-recombination source with the photon
+hierarchy decoupled, since $\Phi'+\Psi'$ needs the metric and matter sectors only. What it buys is the one
+sector where this construction predicts a shape the standard model does not --- a discrete floor with its
+minimum at $\ell=4$ rather than at the quadrupole --- and the shape already cross-validates on both
+treatments and both backgrounds. **What stands between that and a confrontation is the factor of two in
+depth, and you have shown the cause is the late integrated Sachs--Wolfe term rather than the geometry.***
+
+*Three things to report, in order: whether the decoupled source lets the integration run past $z\simeq10$ at
+all; if it does, the depths at $\ell=2$--$8$ on both treatments with the gap restated; and only if the two
+come together, the floor scored against the measured low multipoles **with cosmic variance carried honestly**
+--- the sky's own scatter dominates there and a $\chi^{2}$ that ignores it says nothing.*
+
+**⌗ AND THE STANDING PREFERENCE, RESTATED BECAUSE IT KEEPS BEING THE RIGHT CALL.** *If the build will not
+carry the integration, report that as the result. A named instrument limit is a fact the papers can carry;
+a number produced by one treatment and presented as the prediction is not.*
