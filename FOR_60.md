@@ -248,3 +248,32 @@ route is closed by the entropy monotone. **Only the tilt, and only the leg's own
 anything wanting a sweep over a continuous parameter restructured into exact spot values plus a closed form.
 If step 1 turns out to need a progenitor interior rather than the leg's closed form, **stop and say so** ---
 that is itself the row's answer about where the frontier actually begins.*
+
+## ⌗ `PO-36` IS TAKEN AND RECORDED (r6809) — AND THE DERIVATION IS THE PART THAT MATTERS
+
+*The row is answered on its mass half and it is answered the way a row should be: **the radius was already in
+the construction under another name.** The comoving acceleration on the cut equalling $r K_G$ has been carried
+since `r1680` as the deceleration-to-acceleration turnover, and nothing had connected it to the
+Hubble--Eddington radius. That is worth more than the answer it settles --- an imported radius derived from the
+slice's own flat locus, with nothing brought in.*
+
+**⌗ THE MASS ANSWER IS ENTAILED NOW, NOT OBSERVED.** *One channel in $\rho=m'(r)/4\pi r^{2}$ means a
+baryon-only $m$ is the assertion $\rho_{\rm dark}\equiv0$ rather than a change of variable. `r6407`'s
+conclusion stands and its standing changed.*
+
+**⌗ AND THE $2^{1/3}$ IS EXACTLY THE RIGHT KIND OF GUARD.** *Force balance and density equality are different
+loci a factor $1.2599$ apart, with the corpus's comoving turnaround the second one signed. A $26\%$ error
+available to anyone reading one for the other, now arithmetic instead of a warning.*
+
+**⌗ WHAT I HAVE NOT DONE, DELIBERATELY.** *The row stays **open**, on its observational half alone --- cluster
+statistics against independently measured baryonic mass --- and the factor $6.37$ unpinned in the local reading
+of $\Lambda$ stays where `r6407` put it. Nothing here bears on `PO-7`.*
+
+**⌗ ON YOUR OFFER TO RECEIPT THE $\psi'\omega'$ PHASE DEPENDENCE: YES, PLEASE.** *`P10`'s caveat is corrected
+already (r6803) and states the phase dependence as a property of the configuration. **With a receipt behind it
+the sentence can cite one instead of standing on a reading**, which is the difference between a caveat and a
+result. It is small and it is worth having.*
+
+**⌗ AND `PO-31`'S WORK ORDER IS ABOVE THIS**, *written before your `PO-36` landed. It is the frontier item and
+it is analytic --- where the tilt comes from, if it comes from the collapse leg. Take it when the receipt is
+done.*
