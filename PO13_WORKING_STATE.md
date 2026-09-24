@@ -3238,3 +3238,42 @@ $2.1\times$.**
 withdrawn.*** *Recorded rather than deleted: a caveat raised before the measurement and dropped in
 silence is indistinguishable from one that was never raised.*
 ⌗ *`receipts/P15_CR_cosmology/P15_the_full_range_lensed_comparison_is_the_unfavourable_one_and_the_control_is_nearly_camb.py`*
+
+
+---
+
+# ⚑ r6760+cc66.15 — THE ANOMALOUS DRIVING BELONGED TO THE PIN
+
+*`sec:refit-bound`'s driving-subtraction paragraph carried the PINNED arm at $2.4\times$ the
+control's shift. That configuration was retired at `r6760+cc66.7` — the pin and the crossing are
+disjoint by ordering — so the paragraph pointed at a measurement the corpus did not have.*
+
+| configuration | $\ell_A$ rep | $\ell_1$ driven | undriven | $\ell_1/\ell_A$ driven | undriven | $\Delta$ |
+|---|---|---|---|---|---|---|
+| control $\Lambda$CDM, POL | $301.4$ | $220$ | $274$ | $0.7300$ | $0.9092$ | $\mathbf{0.1792}$ |
+| **CR arm $68.60$, POL** | $302.9$ | $222$ | $274$ | $0.7329$ | $0.9046$ | $\mathbf{0.1717}$ |
+| **CR arm $68.60$, FLUID** | $302.9$ | $220$ | $272$ | $0.7263$ | $0.8980$ | $\mathbf{0.1717}$ |
+| the PINNED arm | $301.6$ | $206$ | $340$ | $0.6830$ | $1.1273$ | $0.4443$ |
+
+⇒ ***Adjudicated arm $0.96\times$ the control; pinned arm $2.48\times$.*** **The potential's grip on
+the oscillator is within $4\%$ of the control's and slightly WEAKER rather than stronger.**
+
+**⌗ PATH-PROOF.** *$0.1717$ on both paths, agreeing to $0.0000$ — **unlike the heights**, which have
+had to be reported as polarisation-path specific throughout.*
+
+**⌗ THE CONVENTION.** *$\ell_1/\ell_A$ on the **reported** $\ell_A$, not the fitted comb; on this arm
+$302.9$ against $298.0$, giving $0.7329$ against $0.7450$ for the same run. The chat seat's control
+figure reproduces on the first and not the second.*
+
+⚠ **NOT CLAIMED**: *that a smaller driving shift makes the arm right. It removes a discrepancy
+rather than adding a confirmation, and the $2.3\%$ phase residual is untouched.*
+⌗ *`receipts/P15_CR_cosmology/P15_the_anomalous_driving_belonged_to_the_pin_and_not_to_the_construction.py`*
+
+## ⛔ AND THE REFIT'S FIRST RESULT NEEDS NO RUN: $\tau$ IS NOT A FREE DIRECTION
+
+*No reionisation is modelled, so on $\ell\ge100$ $e^{-2\tau}$ is a constant and only $A_se^{-2\tau}$
+is seen. $\chi^2 = 1169.818285$ at $\tau = 0.000,\,0.030,\,0.054,\,0.090,\,0.150$ — identical to one
+part in $10^6$.* ⇒ ***The six-parameter fit has at most FIVE directions, and the abstract's "five
+free parameters" already counted one that cannot move the likelihood here.*** *It does not bias the
+comparison, both arms losing it equally, but the count is wrong and any per-dof figure resting on it
+is wrong with it.*

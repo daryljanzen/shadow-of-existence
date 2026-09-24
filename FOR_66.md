@@ -421,3 +421,85 @@ onset goes, the synthesis moves to the expanding leg, and the table stands.***
 changes. It says the **abundances** do not, and only because the branch point erases the first
 passage.*
 ⌗ *`receipts/P16_cosmogenesis_paper/P16_the_window_is_crossed_twice_and_the_expanding_leg_is_where_the_abundances_are_made.py`*
+
+
+---
+
+# ⚑ ANSWER TO THE DRIVING-SUBTRACTION ITEM — **THE ANOMALOUS DRIVING BELONGED TO THE PIN**
+
+*`sec:refit-bound`'s paragraph carried the pinned arm at $2.4\times$ the control's shift. **On the
+adjudicated arm it is $0.96\times$.***
+
+| configuration | $\ell_A$ rep | $\ell_1$ driven | undriven | shift | $\ell_1/\ell_A$ driven | undriven | $\Delta$ |
+|---|---|---|---|---|---|---|---|
+| control $\Lambda$CDM, POL | $301.4$ | $220$ | $274$ | $54$ | $0.7300$ | $0.9092$ | $\mathbf{0.1792}$ |
+| **CR arm $68.60$, POL** | $302.9$ | $222$ | $274$ | $52$ | $0.7329$ | $0.9046$ | $\mathbf{0.1717}$ |
+| **CR arm $68.60$, FLUID** | $302.9$ | $220$ | $272$ | $52$ | $0.7263$ | $0.8980$ | $\mathbf{0.1717}$ |
+| the PINNED arm (the paragraph) | $301.6$ | $206$ | $340$ | $134$ | $0.6830$ | $1.1273$ | $0.4443$ |
+
+| | shift | vs the control |
+|---|---|---|
+| the control itself | $0.1792$ | $1.00\times$ |
+| **the adjudicated arm** | $0.1717$ | $\mathbf{0.96\times}$ |
+| the pinned arm | $0.4443$ | $\mathbf{2.48\times}$ |
+
+⇒ ***The potential's grip on the oscillator is within $4\%$ of the control's, and SLIGHTLY WEAKER
+rather than stronger.*** **The paragraph was reporting a property of the pinned configuration, not
+of the construction, and its $2.4\times$ does not survive the configuration change.**
+
+**⌗ AND THIS ONE IS PATH-PROOF.** *The two instrument paths agree to $0.0000$ — $0.1717$ on each.
+**Unlike the heights**, which have had to be reported as polarisation-path specific throughout, the
+driving shift is the construction's and not the path's, so you can write it without the hedge.*
+
+**⌗ THE CONVENTION, because the answer moves with it.** *$\ell_1/\ell_A$ here is the first peak over
+the **REPORTED** $\ell_A=\pi D_M/r_s$ — the instrument's own header number — **not** over the comb
+fitted to the peaks. On this arm those are $302.9$ and $298.0$, giving $0.7329$ against $0.7450$ for
+the same run. **Your control figure reproduces on the reported-$\ell_A$ convention and not on the
+other, which is how I identified it.***
+
+**⌗ ONE TWO-MULTIPOLE DIFFERENCE FROM YOUR QUOTED CONTROL, PRICED.** *You have $\ell_1$ undriven
+$=276$, shift $0.1858$; this tree gives $274$ and $0.1792$. **Two multipoles is one grid step at
+`LSTEP=2`** — resolution, not substance — but it moves the arm's ratio $0.92\times\to0.96\times$ and
+the pinned arm's $2.39\times\to2.48\times$. **The table above is on this tree's control throughout
+rather than mixing a measured shift against a quoted one**; both are in the receipt so the size of
+the difference is visible.*
+
+⚠ **WHAT THIS DOES NOT SAY.** *A smaller driving shift is not evidence the arm is RIGHT. It says the
+arm's driving now behaves like the control's, which **removes a discrepancy rather than adding a
+confirmation**. The phase residual you want this read against is still $2.3\%$ and nothing here
+touches it.*
+⌗ *`receipts/P15_CR_cosmology/P15_the_anomalous_driving_belonged_to_the_pin_and_not_to_the_construction.py`*
+
+## ⌗ THE REFIT — TWO RESULTS ALREADY, AND THE GRID IS RUNNING
+
+**⛔ $\tau$ IS NOT A FREE DIRECTION OF THIS FIT.** *The instrument models no reionisation, so on
+$\ell\ge100$ $e^{-2\tau}$ is a constant and the data sees only $A_s e^{-2\tau}$. Measured on the
+185-bin range:*
+
+| $\tau$ | $0.000$ | $0.030$ | $0.054$ | $0.090$ | $0.150$ |
+|---|---|---|---|---|---|
+| $\chi^2$ | $1169.818285$ | $1169.818285$ | $1169.818285$ | $1169.818285$ | $1169.818285$ |
+
+***Identical to one part in $10^6$; only the fitted amplitude absorbs it.*** ⇒ **So the
+six-parameter fit has at most FIVE directions, and the abstract's "five free parameters" was already
+counting one that cannot move the likelihood on this range.** *It does not bias the comparison —
+both arms lose it equally — but the count is wrong and any per-dof figure resting on it is wrong
+with it.*
+
+**⌗ AND FOUR OF THE SIX PARAMETERS WERE NOT KNOBS AT ALL** *(landed at `r6760+cc66.14`, all
+default-unset and byte-identical, reachability-checked at the reporting path):* **`NS`** *— the tilt
+was the literal $0.965$ inside the $k$ weighting, the seventh of this class in the file, so **the
+refit the abstract quotes was not runnable on this instrument**;* **`LH0`/`LOM`** *— the CONTROL's
+$H_0$ and $\Omega_m$ were literals, so "refit BOTH arms with the same freedom each" could not be
+done;* **`WBH2`** *— $\omega_b$, and it is not `RBFAC`, which scales the loading only and cannot
+move the ionisation history.*
+⌗ *`NS` verified at the SPECTRUM, where it acts, since it is correctly invisible in the header:
+$n_s=0.965\to1.020$ leaves the peaks at $220/532/812/1124$ and moves $P_1/P_2$ $2.393\to2.276$ and
+$P_1/P_3$ $2.766\to2.583$ — positions held, heights tipped, which is what a tilt must do.*
+
+⌗ **THE GRID IS RUNNING**, *18 runs (base $+$ two-sided steps in $H_0$, $\Omega_m$, $\omega_b$,
+$n_s$, per arm) at `LMAXL=2000`, four at a time.* ⚠ *Revised estimate **4½–5 hours**, not the 3 I
+first said: I cut `LSTEP` expecting the projection to dominate, but the ODE solve scales with the
+mode count and `NK` is set by `LMAXL`, not `LSTEP` — **I cut the cheaper half.** The fit driver is
+written and the minimum will be **verified with a real run** rather than reported from the response
+model.*
