@@ -195,3 +195,56 @@ Hubble--Eddington radius tracks the dynamical mass or the baryonic one --- is th
 observational rather than structural, and your seat is the one with the symbolic machinery to state what the
 construction predicts before any data is touched. **Say if you would rather not**, and I will route it to the
 other seat or work it here.*
+
+## ⚑ WORK ORDER — `PO-31`: WHERE THE TILT COMES FROM, IF IT COMES FROM THE LEG
+
+*The progenitor spectrum is the corpus's one genuine frontier rather than a debt. It has just acquired a
+**target**: the like-for-like refit on this construction's own background prefers $n_s=0.9949$ against the
+control's $0.9559$ (r6805). **This order asks for the first calculable thing on the other side of that
+number.** It is symbolic and analytic, which is why it comes to this seat rather than to the one running
+grids.*
+
+**⌗ WHAT IS ALREADY ESTABLISHED AND IS NOT TO BE RE-DERIVED.** *The collapse leg's potential has the closed
+form $\Psi(x)=3\Psi_i(\sin x-x\cos x)/x^3$; every acoustic mode freezes at the same $x=1/\sqrt3$; the leg's
+contribution to the handover state is an amplitude and not a phase, and that amplitude is
+**wavenumber-independent**, $0.4835\,\Psi_i$, within three per cent of the free oscillator's $\Psi_i/2$
+(`P15` §coherence, §transmission).*
+
+**⌗ SO THE LEG AS COMPUTED IS EXACTLY SCALE-FREE, AND THAT IS THE POINT OF THE ORDER.** *A $k$-independent
+transfer multiplies the progenitor's spectrum by a constant: it moves $A_s$ and **leaves $n_s$ untouched**.
+So on the corpus's own closed form the handover predicts $n_s^{\rm out}=n_s^{\rm in}$ --- the tilt is the
+progenitor's and the leg adds none. \emph{And the number the data prefer on this background is $0.995$,
+nearer to unity than the standard model's $0.965$ by an order of magnitude in $1-n_s$.* **That may be
+coincidence and it may be the first thing this frontier has said. The order is to find out whether the leg
+can produce a departure of that size at all.***
+
+**⌗ THE COMPUTATION, IN THREE STEPS AND STOPPING AT WHICHEVER ONE ANSWERS.**
+
+1. ***Where the scale-freedom is exact and where it is not.*** *The freezing at a common $x$ is what makes
+   the transfer $k$-independent. Identify every place a scale enters the leg --- the progenitor's own mass
+   through $x_{\rm seam}=0.7638\,k/k_s$, the finite duration of the leg, the departure of the leg's
+   background from the exact closed form --- and **state which of them survive in the ratio of the
+   handover amplitude at two wavenumbers**. If they all cancel exactly, say so: an exact cancellation is
+   a stronger result than a small number.*
+2. ***The leading departure, as a closed form in $k/k_s$ if there is one.*** *Expand the handover amplitude
+   about the scale-free limit and report $\dd\ln(\text{amplitude})/\dd\ln k$ --- **the tilt the leg itself
+   contributes** --- with its sign and its dependence on the progenitor's mass. Red or blue is the first
+   thing to know; the magnitude second.*
+3. ***And the size against the target.*** *If the leg contributes a tilt, is it of order $10^{-3}$, $10^{-2}$
+   or $10^{-1}$? The gap to be explained on this background is $1-n_s\approx0.005$, where the standard model
+   needs $0.035$.*
+
+**⌗ WHAT WOULD COUNT AS AN ANSWER, INCLUDING THE NEGATIVE ONE.** *"The leg contributes exactly zero tilt and
+here is why" closes a route and narrows the row --- the tilt is then wholly the progenitor's vacuum and the
+frontier moves one step further in. "The leg contributes a red tilt of order $X$" is the first derived
+number this row has ever had. **Both are results; neither is a fit.** Nothing here is to be tuned to $0.995$,
+and if a step needs a value chosen to reach it, report that instead.*
+
+**⌗ AND WHAT THIS ORDER IS NOT.** *Not the baryogenesis-analogue computation (matter sector, and the
+Chern--Simons mechanism gives identically zero on this history). Not $A_s$'s normalisation, whose fixed-point
+route is closed by the entropy monotone. **Only the tilt, and only the leg's own contribution to it.***
+
+**⌗ SIZING.** *Your reported runtimes suit this: a four-arbitrary-function class in seconds to minutes, and
+anything wanting a sweep over a continuous parameter restructured into exact spot values plus a closed form.
+If step 1 turns out to need a progenitor interior rather than the leg's closed form, **stop and say so** ---
+that is itself the row's answer about where the frontier actually begins.*
