@@ -3277,3 +3277,81 @@ part in $10^6$.* ⇒ ***The six-parameter fit has at most FIVE directions, and t
 free parameters" already counted one that cannot move the likelihood here.*** *It does not bias the
 comparison, both arms losing it equally, but the count is wrong and any per-dof figure resting on it
 is wrong with it.*
+
+
+---
+
+# ⚑⚑ r6788+cc66.18 — THE PARAMETER REFIT: THE BACKGROUND STAYS PUT, THE PHASE DOES NOT CLOSE
+
+*132 bins, $\ell=100$–$1287$, per the chat seat's `r6788` ruling. Both arms refitted like-for-like
+on the same bins in $H_0$, $\Omega_m$, $\omega_b$ and $n_s$, with the amplitude closed-form.*
+
+| arm | $H_0$ | $\Omega_m$ | $\omega_b$ | $n_s$ | $\chi^2$ | /bin |
+|---|---|---|---|---|---|---|
+| control, start | $67.4000$ | $0.3150$ | $0.0224$ | $0.9650$ | $134.8$ | $1.02$ |
+| control, refitted | $67.4054$ | $0.3095$ | $0.0220$ | $0.9559$ | $\mathbf{118.3}$ | $\mathbf{0.90}$ |
+| **CR, start** | $68.6000$ | $0.2973$ | $0.0224$ | $0.9650$ | $299.0$ | $2.26$ |
+| **CR, refitted** | $\mathbf{68.6077}$ | $\mathbf{0.2967}$ | $0.0217$ | $\mathbf{0.9949}$ | $\mathbf{171.1}$ | $\mathbf{1.30}$ |
+
+⇒ ***$H_0$ moves by $0.011\%$ and $\Omega_m$ by $0.20\%$.*** **$(68.60,\,0.2973)$ came from DESI BAO
+and $\theta_*$ with no spectrum involved; the spectrum, free to go anywhere, stays there.**
+
+**⌗ AT A SHARP MINIMUM, NOT UNCONSTRAINED.** *One-step excursions cost $\Delta\chi^2$ of $1186$
+($H_0$), $354$ ($\Omega_m$), $84$ ($\omega_b$), $23$ ($n_s$) — all four constrained on both arms.*
+
+**⌗ AND THE MINIMUM IS VERIFIED.** *Predicted $118.2$ and $170.6$; real runs at the best-fit
+parameters give $118.3$ and $171.1$ — $+0.1$ and $+0.5$.*
+
+## ⛔ NEITHER RESIDUAL IS A BACKGROUND CHOICE
+
+| | before | after | |
+|---|---|---|---|
+| acoustic phase, % out | $2.3$ | $\mathbf{4.5}$ | **worse** |
+| fourth peak, % out | $0.9$ | $0.7$ | unchanged |
+
+⇒ ***Freedom does not remove them — the phase gets worse, the fit trading it for likelihood
+elsewhere. So both are properties of the CONSTRUCTION.*** *Ratio at the verified minimum
+$\mathbf{1.45\times}$ against $2.22\times$ as-computed: freedom closes about a third of the gap and
+leaves the rest.*
+
+## ⚠ AND THE KNOB THIS RUN FOUND DEAD
+
+*`NS`, exposed and "verified" at `cc66.14`, was **shadowed** — the literal $0.965$ exists three times
+and the verification was run on the one path where the knob worked. **The flatness test caught it**
+($\Delta\chi^2 = 0.00$ for $n_s$ on both arms); fixed at `cc66.17`; the CR arm's refitted $\chi^2$
+moved $223.3\to170.6$ once the tilt was real.*
+⌗ *`receipts/P15_CR_cosmology/P15_the_refit_leaves_the_background_where_the_distances_put_it_and_does_not_close_the_phase.py`*
+
+---
+
+# ⚑⚑ r6788+cc66.19 — `PO-24`: THE SIGNATURE COLLAPSES AT THE ADJUDICATED RATIO, AND THE ENDPOINT
+# SETS ITS SIGN
+
+*The joint amplitude-and-tilt fit against the arm's own $185$-bin spectrum at $(68.60,\,0.2973)$,
+crossing handover, leaf clock. Window $\ell=100$–$1996$, pivot $\ell=1000$.*
+
+| endpoint | $r=\theta_D/\theta_*$ | $r^2-1$ | $\ell_D$ | amplitude alone | + tilt | $\sigma$/bin | $\delta n_s$ | $\Delta\chi^2$ |
+|---|---|---|---|---|---|---|---|---|
+| to recombination | $1.02313$ | $+0.04679$ | $2133.5$ | $12.575$ ($0.0680$/bin) | $3.744$ ($0.0202$/bin) | $0.142$ | $-0.00926 \pm 0.00313$ | $8.83$ |
+| to the visibility peak | $0.99179$ | $-0.01636$ | $2093.3$ | $1.698$ ($0.0092$/bin) | $0.514$ ($0.0028$/bin) | $0.053$ | $+0.00335 \pm 0.00307$ | $1.18$ |
+| *`C62`, at $1.082$* | *$1.08200$* | *$+0.17072$* | *$2133.5$* | *$159.935$ ($0.864$/bin)* | *$46.18$ ($0.250$/bin)* | *$0.500$* | *$-0.03414$* | *$113.76$* |
+
+⇒ ***A $13$-fold collapse to recombination and a $100$-fold one to the visibility peak, and it is the
+configuration that moved rather than the fit.*** *An amplitude ALONE now absorbs the signature to
+under a tenth of a $\chi^2$ per bin on either endpoint.*
+
+⛔ ***AND THE SIGN IS THE ENDPOINT'S.*** *To recombination the arm damps MORE than the control and the
+absorbing tilt is negative; to the visibility peak it damps LESS and the tilt is positive. The two
+stopping points are $0.4\%$ apart in redshift.* **Which one the corpus reads $r_D$ to is the papers'
+question; the chat seat settles it. Both reported, neither chosen.**
+
+⌗ **THE TILT RUNS WITH ITS WINDOW BY A FACTOR $5.8$** *($-0.00751$ on $\ell=100$–$1300$ to $-0.04354$
+on $1300$–$1996$), against $5.54$ from the ratio of their central $\ell$ squared — `C62`'s
+$(\ell_{\max}/\ell_{\min})^2$ result confirmed as arithmetic. **So the displacement cannot be quoted
+bare.***
+
+⌗ **AND THE $r^2-1$ PRICING THE CHAT SEAT USED IS CORRECT**: *the tilt is linear in $r^2-1$ to better
+than $2\%$ and the $\chi^2$ as its square to $8\%$, checked at one fixed $\ell_D$. The base
+(CR spectrum against `plik_lite`'s own, $1.5\%$) and lensing ($5\%$) each move nothing.*
+
+⌗ *`receipts/P15_CR_cosmology/P15_the_signature_collapses_at_the_adjudicated_ratio_and_the_endpoint_sets_its_sign.py`*
