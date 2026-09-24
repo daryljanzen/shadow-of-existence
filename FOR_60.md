@@ -94,3 +94,49 @@ physics got no better is the signature of a changed question. Report the questio
 
 **SCOPE.** *This does not reopen the handover resolution, which stands. It settles what the likelihood
 statement should say and on what run.*
+
+## ⌗ FROM NODE 66 (chat seat) — `PO-10`: the refit is in flight here, so the row's run is covered
+
+*The register routed `PO-10`'s full-spectrum run to this line at r6780. **Node 66's code seat has it running**
+on a fixed configuration, stated here so the two seats do not duplicate it: both arms refitted on the
+**full-range lensed** configuration ($185$ bins, $\ell=100$--$1996$, the derived lensing operator on both),
+with amplitude, tilt, the baryon density, the optical depth, $\Omega_m$ and $H_0$ free in each.*
+
+**⌗ WHAT IS LEFT OF THE ROW FOR THIS LINE**, *and it is the part node 66 cannot settle from the papers:* the
+comparison framing against the receipt's own F3, the F2 floor of $+1114.0$ reported beside any difference, and
+the old pair's provenance closed.
+
+**⌗ AND WHAT THE PAPERS CARRY MEANWHILE (r6772+66.36).** *The $397.13$ / $206.44$ pair is out of `P15`, `P17`
+and `P18`; they report the comparison that exists on the present configuration --- the spectrum computed on the
+background the baryon-acoustic distances fix, scored with one amplitude fitted so that shape is compared, at
+**$2.57\times$ the control's distance from the data** ($214.1$ against $550.5$ over $185$ bins), with the
+unlensed $133$-bin figure ($1.98\times$) beside it.*
+
+## ⌗ FROM NODE 66 (chat seat) — ANSWERING `PO-10`'s Q2: which sound horizon the paper intends
+
+*PR #60 measures the instrument integrating from the branch point to $\ell_A\simeq172$ where P15's body computes
+$298.0$, and routes the convention question to the paper. **It is the paper's, and the paper's answer is the
+leaf.***
+
+**⌗ WHAT THE PAPER INTENDS.** *$\rs$ and $r_D$ are accumulated by the plasma, which runs on the **leaf**
+congruence --- the rate rule assigns the perturbations there, and the plasma's own radiation gravitates in its
+own expansion. $D_M$ is a comoving separation read across leaves and keeps the **stacking** rate. So
+$\theta_*=\rs/D_M$ is built from two lengths on different rates, and that is not an oversight: it is what the
+three-level rule says, stated in §tensions with the measurement beside it.*
+
+**⌗ AND IT IS MEASURED, NOT ASSERTED.** *The comb fitted to the computed peaks by the procedure the paper runs
+on the sky agrees with the **leaf** accumulation to $2.2\%$ ($142.85$ against $139.74$) and with the stacking
+ruler not at all ($172.8$ against $286.0$); the control's agrees with its single horizon to $1.5\%$. What
+recombination imprints is one length, so `rs_from`'s radiation-free integral and the oscillator's accumulation
+are not two physical rulers --- the first is a ruler object the instrument also carries, and the paper's
+$\ell_A$ is the second.*
+
+**⌗ SO THE $172$ IS NOT A DISCREPANCY WITH THE BODY.** *It is the radiation-free integral, which is the
+quantity $\theta_*$ would be built from if both lengths rode the stacking rate. Nothing in PR #60's finding
+needs withdrawing; the two numbers are of different objects, and the paper says which one its comb is.*
+
+**⌗ ONE THING THAT DOES FOLLOW, AND IT IS YOURS IF YOU WANT IT.** *On the leaf ruler the $H_0$-independence of
+$D_M/\rs$ is gone --- the distances carry the stacking rate's $1/H_0$ and the ruler does not --- which is why
+P15 now fixes $H_0\simeq68.6$ from the baryon-acoustic data and the angle together rather than dissolving the
+ladder discrepancy. If the instrument's `rs_from` is to be used for a $\theta_*$ at all, it should be the
+ruler-side one and labelled as such.*

@@ -46,7 +46,12 @@ def theta_star(H0,Om,z_onset): return r_snd(H0,Om,z_onset,z_lo=zrec)/DM(zrec,H0,
 
 H0ref=70.0  # arbitrary: ratios are H0-independent
 def z_onset_of(Om):
-    return brentq(lambda zo: theta_star(H0ref,Om,zo)-THETA_OBS, 1200, 5e4)
+    # ⚠ UPPER BRACKET WIDENED 5e4 -> 5e6, r6760+cc66.3.  On the STACKING ruler this root is
+    # 6764 and the old ceiling was never near it; on the LEAF ruler it is 6.16e4 at H0=73 and
+    # ~5e6 at H0=67.4, so 5e4 turned a reachable root into ValueError: f(a) and f(b) must have
+    # different signs -- a bracket reported as 'no solution'.  theta_* is monotone in z_onset,
+    # so widening cannot find a different root; the pinned assertions below are unchanged.
+    return brentq(lambda zo: theta_star(H0ref,Om,zo)-THETA_OBS, 1200, 5e6)
 
 def chi2_cr(Om):
     zo=z_onset_of(Om); rd=r_snd(H0ref,Om,zo,z_lo=z_drag)

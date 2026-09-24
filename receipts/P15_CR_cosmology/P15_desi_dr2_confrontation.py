@@ -45,7 +45,13 @@ def theta_star(H0,Om,z_onset): return r_snd(H0,Om,z_onset,z_lo=zrec)/DM(zrec,H0,
 
 H0ref=70.0  # arbitrary: ratios are H0-independent
 def z_onset_of(Om):
-    return brentq(lambda zo: theta_star(H0ref,Om,zo)-THETA_OBS, 1200, 5e4)
+    # ⚠ UPPER BRACKET WIDENED 5e4 -> 5e6, r6760+cc66.6.  The ORIGIN script
+    # (hubble_build/desi_dr2_confrontation.py) was widened at r6760+cc66.3 and this mirror was
+    # not, so the receipt and the script it declares as its origin had different brackets.  On the
+    # STACKING ruler the root is 6764 and neither ceiling was near it; on the LEAF ruler it is
+    # 6.16e4 at H0=73, so 5e4 turns a reachable root into ValueError.  theta_* is monotone in
+    # z_onset, so widening cannot find a different root and every pinned number below is unmoved.
+    return brentq(lambda zo: theta_star(H0ref,Om,zo)-THETA_OBS, 1200, 5e6)
 
 def chi2_cr(Om):
     zo=z_onset_of(Om); rd=r_snd(H0ref,Om,zo,z_lo=z_drag)

@@ -190,6 +190,27 @@ sky's $298.4$ as an output rather than a fit. If it lands and the heights hold, 
 handover at the crossing predicts $H_0\simeq68.6$, which is a different Hubble statement from the corpus's
 and has to be written as one.*
 
+### ⌗ `SR-15g` · THE NUCLEOSYNTHESIS WINDOW IS CROSSED TWICE — staged for P16 and P15
+
+*Measured by the code seat and routed back: the collapse leg runs up through $T_9=0.08$ to $9$, and the
+expanding leg begins at unbounded temperature and ends at $2.7$ K, so **a continuous history from unbounded
+to the present crosses the window exactly once on each leg**. At the branch point the temperature exceeds
+both binding thresholds by any margin asked for --- with $10^{9}$ photons per baryon the Planck tail
+dissociates deuterium at $T_9\simeq1.2$ and helium-4 at $15.8$ --- so **everything the collapse leg built is
+photodissociated back to free nucleons, and the expanding leg runs ordinary big-bang nucleosynthesis from
+free nucleons.** The abundances do not move, and the account gets simpler: the old reading required the
+collapse leg to both build and preserve the nuclei.*
+
+**⌗ WHAT LANDS.** *P16's synthesis account and P15's one-sentence version move the synthesis to the
+expanding leg and drop the $1.6\,$eV onset; the tables stand. **P16 is its own session**, since its
+§peak, §network and §verdict all speak to which leg carries the window.*
+
+**⌗ AND ONE CAVEAT ABOUT THE INSTRUMENT, NOT THE CONSTRUCTION.** *Nobody may compute the abundances on the
+instrument's $\Omega_r/a^{4}$: that is the post-annihilation radiation density extrapolated back, so it misses
+the $e^{+}e^{-}$ pairs and runs $44\%$ slow above $T_9\sim1.5$, where weak freeze-out sits. The network builds
+$\rho_{\rm rad}$ from $g_*(T)$ and is unaffected --- and flat $\Lambda$CDM's $\Omega_r$ misses the pairs in
+exactly the same way, so it is not a difference between the arms.*
+
 ### ⌗ `SR-15c` · WHAT THE TWO PATHS AND THE NETWORK ADD — one qualification, one identity, one non-cost
 
 **⌗ THE HEIGHTS ARE PATH-SPECIFIC AND THE POSITIONS ARE NOT.** *Run on both instrument paths, the handover

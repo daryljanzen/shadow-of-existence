@@ -140,15 +140,17 @@ chair* every time you meet one.
 
 *Named, not delivered — so you meet the arguments in the papers rather than arriving to confirm them.*
 
-- **The Hubble tension dissolves, and this is the empirical crossing.** The geometric expansion rate carries no
-  radiation term, so **there is no second value to reconcile** — the tension is not fit better, it stops
-  existing. **P15** carries the mechanism, the fit, and the data it is run against.
+- **The expansion history is fixed by the distance data, and the acoustic spectrum is then computed from it.**
+  The geometric expansion rate carries no radiation term, so the acoustic scale is **computed rather than
+  calibrated** — the angle and the baryon-acoustic distances fixing H₀ together, and the spectrum following
+  from that background with nothing fitted to it. **P15** carries the mechanism, the fit, and the data it is
+  run against, including where it is rejected.
 - **Three chiral generations, with the family symmetry forced rather than fitted.** **P14** derives the count and
   the symmetry from the throat structure. *(**⌗ Its dimension result settles the CUT at four.** The SUBSTRATE's
   dimension is untouched by it and stays bounded below only — do not fuse the two.)*
 - **GR's constraint algebra is the substrate's grading.** **P12**: the algebra is the symmetric-space structure
   of dS₅, and the problem of time's *"wrong sign"* is the coset signature.
-- **The light elements.** **P16** runs standard-rate BBN off the collapse and gets deuterium and helium-4 at
+- **The light elements.** **P16** runs standard-rate BBN on the expanding leg and gets deuterium and helium-4 at
   their observed values from a single inherited datum. **Lithium-7 is the standard problem, shared and not
   dissolved** — the corpus says that about itself, and the entry should be read that way.
 - **One scale, no free dimensionless constants.** Λ — equivalently α — is the sole dimensionful input; **c and G

@@ -249,6 +249,12 @@ _PARITY_BY_NODE = {'54': 0, '60': 0,          # EVEN half
                    '66': None,                # holds NO half: 66 labels its revisions
                                             # r<main base>+66.<k>, never a bare rNNNN,
                                             # so it cannot enter either half (r6713+66.1)
+                   'cc66': None,              # 66's CODE seat, r6760+cc66.1.  Same form and so
+                                            # the same answer -- and the SUFFIX is cc66 and not
+                                            # 66, because two seats of one node writing +66.<k>
+                                            # is the c54.182/c54.184 duplicate arriving from a
+                                            # third direction.  Band L-6600..L-6649 by the same
+                                            # split; the chat seat holds L-6650..L-6699.
                    'ci': None}                # the runner is not a line and holds no half
 _NODE = _os.environ.get('NODE')
 if _NODE is None:

@@ -90,26 +90,71 @@ BSPLIT = os.environ.get('BSPLIT', '1') != '0'  # baryons at their OWN contrast (
 # ---- the two backgrounds -----------------------------------------------------------------------
 if ARM == 'lcdm':
     H0, OM, OMBH2 = 67.40, 0.3150, 0.0224
+    # ** LH0 / LOM: THE CONTROL'S BACKGROUND, EXPOSED r6760+cc66.14 AT 66 (chat)'s REFIT ORDER. **
+    # *`CRH0` and `CROM` opened the CR arm's H0 and Omega_m at cc66.4; the CONTROL's stayed
+    # literals, so "refit BOTH arms with the same freedom each" was not runnable -- the control
+    # could not be moved at all.*  ** Set BEFORE `OR` is formed so they carry into
+    # Omega_r = 4.15e-5/h^2, Omega_b = Ombh2/h^2, the rate and therefore D_M, r_s and the
+    # projection together, which is what changing them MEANS. **
+    # *Default unset = byte-identical.*
+    H0 = float(os.environ.get('LH0', H0))
+    OM = float(os.environ.get('LOM', OM))
+    OMBH2 = float(os.environ.get('WBH2', OMBH2))
     FNU, Z_REC = 0.4052, 1089.9
     OR = 4.15e-5 / (H0 / 100) ** 2
     RAD_IN_RATE = True
     Z_START = None                             # set below, deep in radiation domination
 else:
-    # ** CRH0 / CROM EXPOSE THE CR ARM'S BACKGROUND, AND r6782 IS WHY. **  These were literals, so
-    # the arm could only ever be run at the directly-measured-H_0 configuration (73.00, 0.3066) that
-    # goes with `LATARG` being FITTED.  `P15` now computes the acoustic scale from the rate at the
-    # branch point instead, at the background the distance data fix on their own -- a DIFFERENT
-    # configuration, and one no knob could reach.  ** A configuration the paper states and the
-    # instrument cannot run is the same class of defect as a dead knob: the run that would check the
-    # claim is unreachable. **  *Default unset = byte-identical to the banked spectra.*
-    H0 = float(os.environ.get('CRH0', '73.00'))
-    OM = float(os.environ.get('CROM', '0.3066'))
-    OMBH2 = float(os.environ.get('CROMBH2', '0.0224'))
+    H0, OM, OMBH2 = 73.00, 0.3066, 0.0224
+    # ** CRH0: THE ARM'S H0, EXPOSED r6760+cc66.4 AT 66 (chat)'s WORK ORDER. **
+    # *It was a hardcoded literal with no override, so nothing downstream could vary it and nothing
+    # had -- the sixth switch of this class in this file.*  ** The reason it has to move is that
+    # r6760+cc66.2 measured the leaf ruler preferring H0 = 68.6 from DESI BAO and 68.55 from the
+    # acoustic angle independently, while the arm runs at the corpus's 73.  Those are two different
+    # cosmologies and the instrument could only ever be asked about one of them. **
+    #   ⇒ *Setting it here, BEFORE `OR` is formed, carries it into Omega_r = 4.15e-5/h^2, into
+    #     Omega_b = Ombh2/h^2, into both rates and therefore into D_M, r_s and the projection
+    #     together -- which is what changing H0 MEANS.  Setting it later would move some and not
+    #     others.*
+    # ⌗ ** Reachability-checked at the REPORTING path, r6476's practice: the header prints
+    #   `H0=... Om=...` and `D_M = ... r_s = ... l_A = pi D/r_s`, and CRH0 was seen to move all
+    #   three before any spectrum was read off it. **
+    # *Default unset = byte-identical.  `CROM` sets this arm's Omega_m alongside it.*
+    H0 = float(os.environ.get('CRH0', H0))
+    OMBH2 = float(os.environ.get('WBH2', OMBH2))
     FNU, Z_REC = 0.4052, 1089.9
     OR = 4.15e-5 / (H0 / 100) ** 2
     RAD_IN_RATE = False                        # ** radiation is content, not a source **
     Z_START = None                             # the onset, solved for the pinned acoustic scale
 
+# ** ORFAC: THE INHERITED DATUM, MADE SCANNABLE -- r6760+cc66.2, at 66 (chat)'s work order. **
+# *The radiation fraction the handover delivers is the corpus's one fitted datum, and until now it
+# entered this file only through `4.15e-5/h^2` -- a literal, so nothing downstream could vary it and
+# nothing had.  It sets the LEAF equality, z_eq = Om/Or - 1 = 3936 as coded, against the control's
+# 3447; and `sec:envelope`'s turnover argument is stated on a DIFFERENT equality, the inherited
+# datum's (1+z_onset)/2 = 3399.*
+#   ⇒ ** Scaling Or scales the leaf rate's radiation term AND the photon/neutrino density fractions
+#   together, which is what varying the inherited datum MEANS.  It does NOT touch the CR arm's
+#   stacking rate, which carries no radiation term by construction. **
+# *Default 1.0 = byte-identical.  z_eq(ORFAC) = Om/(ORFAC*Or) - 1, so ORFAC = 1.1418 puts the arm's
+#  equality at the control's 3447 and 1.3119 puts it at 3000.*
+OR = float(os.environ.get('ORFAC', '1.0')) * OR
+# ** CROM: THE SECOND ROUTE TO THE EQUALITY -- r6760+cc66.4, at 66 (chat)'s amendment. **
+# *`ORFAC` moves z_eq through the RADIATION at fixed matter, which at fixed T_CMB has nowhere to
+# put the excess but the neutrino sector: it is a Delta N_eff, and it is NOT how this arm's own
+# equality arises.  z_eq = 3936 here IS omega_m = 0.1634 against LCDM's 0.1431 -- H0 = 73 at
+# Omega_m = 0.3066.*
+#   ⇒ ** So the same z_eq range is reachable a second way, through Omega_m at fixed h, and the two
+#   routes are not equivalent: the radiation route moves ONLY the radiation, while this one moves
+#   Omega_Lambda = 1 - Omega_m and therefore D_M and the whole projection with it. **  *That
+#   confound is inherent -- omega_m cannot move without the matter density moving -- so it is
+#   reported rather than removed: the peak POSITIONS are printed beside the ratios so the shift is
+#   visible, and P1/P3, being a ratio, is the quantity to read across the scan.*
+# *z_eq(CROM) = CROM/Or - 1, so 0.2685 puts the arm's equality at the control's 3447 and 0.2337 at
+#  3000 -- the same two points `ORFAC` reaches through the radiation.  Default unset = byte-identical.*
+_crom = os.environ.get('CROM')
+if _crom and ARM != 'lcdm':
+    OM = float(_crom)
 OL = 1.0 - OM
 A_REC = 1.0 / (1.0 + Z_REC)
 RB_REC = 31500 * OMBH2 / (2.7255 / 2.7) ** 4 / (1 + Z_REC)
@@ -118,6 +163,12 @@ RB_REC = 31500 * OMBH2 / (2.7255 / 2.7) ** 4 / (1 + Z_REC)
 # compression/rarefaction asymmetry) -- the diagnostic for whether the second-gap contraction
 # (the odd-even alternation) is loading-driven.  A diagnostic lever, not a physics change. **
 RB_REC = float(os.environ.get('RBFAC', '1.0')) * RB_REC
+# ** OMBH2 IS NOW SETTABLE TOO, r6760+cc66.14 -- `WBH2` -- and it is NOT the same knob as RBFAC. **
+# *`RBFAC` scales the baryon LOADING only.  omega_b also sets the free-electron density and
+# therefore the ionisation history, the visibility and the diffusion length: it enters `xe_history`
+# and `n_H0_of` below as well as `RB_REC` above.*  ** So a refit in omega_b must move BOTH, which
+# `RBFAC` cannot do and `WBH2` does. **  *Applied above where OMBH2 is first read, so everything
+# downstream sees one value; default unset = byte-identical.*
 
 
 def Hphys(a):
@@ -132,9 +183,20 @@ ag = np.logspace(-9, 0, 40000)
 _seed = float(quad(lambda a: C / (a ** 2 * Hphys(a)), 1e-16, ag[0], limit=200)[0])
 eg = np.concatenate([[_seed], _seed + cumulative_trapezoid(C / (ag ** 2 * Hphys(ag)), ag)])
 Hc_of = CubicSpline(eg, ag * Hphys(ag) / C)                       # comoving Hubble, 1/Mpc
-# ** LEAFPERT=1: THE PERTURBATION SECTOR ON THE LEAF'S RATE (option (b)).  P15 sec:properframe and
-# P7's rate-rule remark both assign THE PERTURBATIONS to the leaf: "a process running in the content
-# -- rs, r_D, recombination, the perturbations -- takes the leaf's".  The file carries ONE rate, and
+# ** LEAFPERT=1: THE PERTURBATION SECTOR ON THE LEAF'S RATE (option (b)).  P7's rate-rule remark
+# assigns the perturbations to the leaf: "a quantity computed from a process running IN the content
+# --- the plasma's sound horizon, its diffusion length, recombination, the perturbations --- takes
+# the leaf's."
+# ⚠ ** THE QUOTATION AND THE ATTRIBUTION WERE BOTH WRONG HERE UNTIL r6760+66.1. **  *It read
+# "P15 sec:properframe and P7's rate-rule remark both read 'a process running in the content -- rs,
+# r_D, recombination, the perturbations -- takes the leaf's".  The sentence is not in
+# `sec:properframe`; the P15 sentence is `sec:tensions`', and it says the OPPOSITE of what was
+# quoted: "the scales such a separation is read in --- r_s and r_D, which accumulate against the
+# layer's own geometric expansion; a process running in the content --- recombination's
+# microphysics, the perturbations --- takes the leaf's."*  ** So P15 puts r_s and r_D on the
+# stacking side and P7 puts them on the leaf side, and this comment quoted P7's list under P15's
+# name.  The CODE was never wrong: only the perturbation dynamics moved, and r_s and r_D stayed on
+# the stacking clock -- see LEAFSCALES below, which is where that assignment is now switchable. **  The file carries ONE rate, and
 # in the CR arm it is the stacking rate, so the perturbations run on L1 where the framework says L2.
 # The fix is not a rescaled source but the leaf's own rate in the perturbation equations.  Since both
 # conformal times are monotone in a, the change is an exact chain rule:
@@ -145,8 +207,9 @@ Hc_of = CubicSpline(eg, ag * Hphys(ag) / C)                       # comoving Hub
 def Hleaf(a):
     return H0 * np.sqrt(OM / a ** 3 + OL + OR / a ** 4)            # radiation gravitates: L2
 # ** DEFAULT ON (r3409).  The perturbation sector runs on the LEAF congruence, which is what the
-# framework assigns it: P15 sec:properframe and P7's rate-rule remark both read "a process running
-# in the content --- rs, r_D, recombination, THE PERTURBATIONS --- takes the leaf's".  Validated two
+# framework assigns it: P7's rate-rule remark reads "a process running in the content --- ... ---
+# takes the leaf's", and P15 `sec:tensions` names the PERTURBATIONS on that side too (it differs
+# only over r_s and r_D; see the correction above and LEAFSCALES).  Validated two
 # ways before the default was inverted: the lcdm arm's two rate expressions are character-identical,
 # so Jac == 1 and this is provably a no-op there; and that no-op was confirmed numerically at 2700
 # modes, l_1 = 220 against the validated control's 220 and the sky's 220.6.  Set STACKPERT=1 to
@@ -217,12 +280,33 @@ eta_0 = eg[-1]
 D_M = eta_0 - eta_rec
 
 
+# ** LEAFSCALES=1 PUTS r_s AND r_D BOTH ON THE LEAF CLOCK -- node 66's adjudication, r6760+66.1. **
+# *The corpus states the assignment twice and not alike.  P15 `sec:tensions`: "the scales such a
+# separation is read in --- r_s and r_D, which accumulate against the layer's own geometric
+# expansion", i.e. the STACKING rate, with `sec:coherence` calling it forced.  P7's rate-rule
+# remark: "a process running IN the content --- the plasma's sound horizon, ITS DIFFUSION LENGTH,
+# recombination, the perturbations --- takes the leaf's."*
+#   ⇒ ** The measurement that decides it is the comb. **  With the handover at the crossing the
+#   fitted acoustic scale is l_A = 286.0, against pi D_M / r_s,leaf = 292.4 (2.2%) and
+#   pi D_M / r_s,stack = 172.8 (not close).  ** The comb rides the leaf accumulation. **
+# *Adjudicated: ONE object, the leaf clock, for r_s and r_D both -- and they move TOGETHER, because
+#  `sec:coherence`'s own demand is consistency: "one may not take the rate geometric for the peak
+#  spacing and radiation-included for the diffusion."  A switch that moved one would be the thing
+#  that sentence forbids.*
+# ⚠ ** DEFAULT OFF AND BYTE-IDENTICAL.  The stacking-clock numbers stay reproducible, which is the
+#   whole point of a switch rather than a replacement: every figure the corpus has quoted off this
+#   instrument was taken at LEAFSCALES=0 and must remain re-derivable. **
+LEAFSCALES = os.environ.get('LEAFSCALES', '0') == '1'
+
+
 def rs_from(z_lo):
-    # r_s on the STACKING clock -- the COMOVING RULER for l_A = pi D_M / r_s, theta_* and the
-    # projection (L1).  This is the OTHER of the instrument's two sound horizons; the PHASE
-    # ACCUMULATOR for the oscillator and Q is r_s,leaf in `sound_phase`.  See that docstring: the two
-    # are correct and NOT interchangeable (ratio 1.286 at the physical onset).  Do not unify them.
-    return quad(lambda a: C / (a ** 2 * Hphys(a) * np.sqrt(3 * (1 + RB_REC * a / A_REC))),
+    # r_s -- the COMOVING RULER for l_A = pi D_M / r_s, theta_* and the projection.  On the STACKING
+    # clock at the default (L1, what `sec:tensions` assigns it); on the LEAF clock under
+    # LEAFSCALES=1.  The PHASE ACCUMULATOR for the oscillator and Q is `sound_phase`, which is
+    # always the leaf's -- so at LEAFSCALES=1 the two coincide and the instrument carries ONE
+    # sound horizon, which is what the adjudication asks for.
+    H = Hleaf if LEAFSCALES else Hphys
+    return quad(lambda a: C / (a ** 2 * H(a) * np.sqrt(3 * (1 + RB_REC * a / A_REC))),
                 1.0 / (1.0 + z_lo), A_REC, limit=250)[0]
 
 
@@ -268,8 +352,15 @@ else:
     # alternation appears as z_onset rises past re-entry, the residual IS the absence of
     # crossing-during-plasma and follows from the onset being on the branch point's cooling leg. **
     _zstart_env = os.environ.get('ZSTART')
+    # ⚠ ** THE UPPER BRACKET WAS 60000 AND IT DECIDED PHYSICS UNDER LEAFSCALES=1 -- r6760+66.1. **
+    # *On the stacking ruler the root sits at z_onset = 6764, far inside.  On the LEAF ruler the same
+    # l_A = 301.6 needs z_onset ~ 6e4, and the bracket stopped at 60000 -- where pi D_M/r_s is
+    # 301.85, a quarter of a multipole short -- so the arm did not fail to have a solution, it failed
+    # to be allowed to reach one.*  ** A bracket is an implementation detail until it truncates the
+    # answer, and then it is a silent physics choice. **  Widened; the default root is unmoved
+    # (6764 either way), which is checked rather than assumed.
     Z_START = float(_zstart_env) if _zstart_env else \
-        brentq(lambda z: np.pi * D_M / rs_from(z) - _latarg, 1500., 60000.)
+        brentq(lambda z: np.pi * D_M / rs_from(z) - _latarg, 1500., 5.0e6)
     R_S = rs_from(Z_START)
 A_START = 1.0 / (1.0 + Z_START)
 # ** RENAMED ETA_S -> ETA_ON, r3731. **  *This is the conformal time at the ONSET, A_START --
@@ -374,7 +465,12 @@ _int = (_Rg ** 2 / (1 + _Rg) + _POLC) / (6.0 * (1 + _Rg) * np.maximum(_tp, 1e-30
 #   ⇒ *Recorded rather than repaired, and PO-24's differential is taken on the line-of-sight path
 #     for this reason and not merely for cost.*
 _DAMPX = float(os.environ.get('DAMPX', 1.0))
-_kD2inv = np.concatenate([[0.0], np.cumsum(0.5 * (_int[1:] + _int[:-1]) * np.diff(_egrid))])
+# ** AND THE SAME SWITCH REACHES THE DIFFUSION INTEGRAL, because r_D is the other half of the one
+# assignment.  1/k_D^2 = INT [...] d(eta), and d(eta_leaf) = Jac d(eta_stack). **
+_dE = np.diff(_egrid)
+if LEAFSCALES:
+    _dE = _dE * 0.5 * (np.asarray(Jac_of(_egrid[1:]), float) + np.asarray(Jac_of(_egrid[:-1]), float))
+_kD2inv = np.concatenate([[0.0], np.cumsum(0.5 * (_int[1:] + _int[:-1]) * _dE)])
 kD2inv_of = CubicSpline(_egrid, _kD2inv)
 _rD = float(np.sqrt(_kD2inv[_gi]))
 print(f"  diffusion: r_D at the visibility peak = {_rD:.2f} Mpc  ->  l_D = {(eta_0-ETA_LS)/_rD:.0f}")
@@ -797,7 +893,15 @@ def los_spectrum(kk, ee, Y, L_A, D_M, R_S):
     print(f"  line-of-sight: visibility peak eta = {ETA_LS:.2f}, FWHM = {ETA_LS_W:.1f} Mpc, "
           f"{len(ee)} samples over eta = {ee[0]:.0f}-{ee[-1]:.0f}")
     dk = np.gradient(kk)
-    P = kk ** (0.965 - 1) / kk * dk
+    # ** NS: THE PRIMORDIAL TILT, EXPOSED r6760+cc66.14 AT 66 (chat)'s REFIT ORDER. **
+    # *It was the literal 0.965 inside the k weighting -- the SEVENTH hardcoded parameter of this
+    # class found in this file -- so the refit the abstract quotes could not be run on this
+    # instrument at all: n_s was not a knob.*
+    #   ⇒ ** It weights the k INTEGRAND, P(k) dk ~ k^(n_s-1) dk/k, so it is not an ell-space
+    #   rescaling and a change costs a full projection.  The ODE solve is independent of it, but
+    #   this file does not cache that, so one n_s costs one run. **
+    # *Default 0.965 = byte-identical; nothing moves unless it is set.*
+    P = kk ** (float(os.environ.get('NS', '0.965')) - 1) / kk * dk
     x0 = eta_0 - ee
     ls = np.arange(100, int(LMAXL), int(os.environ.get('LSTEP', '8')))
 
@@ -1162,6 +1266,13 @@ def main():
           f"eta_end = {ETA_END:.0f}")
     print(f"  D_M = {D_M:.0f} Mpc   r_s = {R_S:.2f} Mpc   l_A = pi D/r_s = {L_A:.1f}   "
           f"modes = {len(kk)}")
+    # ** z_eq PRINTED r6760+cc66.2, BECAUSE ORFAC WAS INVISIBLE WITHOUT IT. **  *On the CR arm
+    # `rs_from`, `D_M` and the pin all ride the radiation-FREE rate, so scaling Omega_r moves
+    # nothing on the line above -- the knob acts on the leaf rate and the density fractions and
+    # its effect is entirely in the spectrum.*  ⇒ ** A knob whose only evidence is the quantity
+    # under dispute is not reachability-checked.  This is the line that shows it. **
+    print(f"  z_eq(leaf) = {OM / OR - 1:.1f}   Omega_r = {OR:.6e}   "
+          f"rho_r/rho_m at the onset = {(1 + Z_START) / (OM / OR):.2f}")
     print()
 
     if os.environ.get('LOS', '1') == '1':

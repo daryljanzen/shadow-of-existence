@@ -191,7 +191,7 @@ corpus in `PO13_WORKING_STATE.md`.*
 > and `CORPUS_MAP`, and **in no paper**. · **③ worked against data — LANDED**, the BAO ladder against
 > DESI carried in P7 and its receipts. · **④ the lap, rigorously — LANDED**, the $240^\circ/120^\circ$
 > split about the branch point carried in P2, P3, P7 and P15. · **⑤ the dissolutions — LANDED**, the
-> coincidence of the epochs, the Hubble tension and the cosmological-constant problem each stated
+> coincidence of the epochs and the cosmological-constant problem each stated
 > natively in the papers. · **⑥ the fresh acoustic build — LIVE, and it is register row `PO-13`.***
 >
 > **⌗ Two things this exposes, and they are one class:** *step ② and the maximal-symmetry ledger
@@ -599,7 +599,7 @@ the gate suite checks grain freshness**. That is the gap worth closing next.*
 $$\boxed{H^2(z)=\frac{\Lambda}{3}\left(1+\frac{2(1+z)^3}{x_0^3}\right)}\qquad x\equiv r/r_N,\quad r_N=1/\sqrt\Lambda$$
 *with **$\Lambda$ the scale** and **$x_0$ the epoch** (dimensionless). Nariai fixes $M=1/(3\sqrt\Lambda)$ and $r_N=1/\sqrt\Lambda$ — **both from $\Lambda$; there is no free mass parameter.** Then every derived quantity in closed form ($\alpha=\sqrt3\,r_N$, $A_r=\alpha(2/3\sqrt3)^{1/3}$, $r_0=x_0r_N$, the age $=(2\alpha/3c)\operatorname{asinh}(x_0^{3/2}/\sqrt2)$), and the statement that*
 $$\Omega_\Lambda=\frac{x_0^3}{x_0^3+2},\quad \Omega_m=\frac{2}{x_0^3+2},\quad q_0,\quad z_{\rm acc}=x_0-1 \quad\textbf{are all } x_0 \textbf{ alone.}$$
-**⌗ AND A $\Lambda$CDM TRANSLATION TABLE ALONGSIDE** — *the equivalent standard parameters for every quantity, so the **dissolutions can be stated in native language**: the Hubble tension, the coincidence problem, the cosmological-constant problem. Standard variables as the addendum, not the frame.*
+**⌗ AND A $\Lambda$CDM TRANSLATION TABLE ALONGSIDE** — *the equivalent standard parameters for every quantity, so the **dissolutions can be stated in native language**: the coincidence problem and the cosmological-constant problem. Standard variables as the addendum, not the frame.*
 
 ## ② THE MEASUREMENT EQUATIONS
 *For each independent route to $x_0$, the closed-form relation **derived from $H^2(z)$ above**, not borrowed: acceleration onset ($z_{\rm acc}=x_0-1$, exact), $q_0$, BAO shape ratios, SNe distance-modulus shape, $H(z)/H_0$, cosmic chronometers. And the routes to $\Lambda$, each of which needs $x_0$ first: $H_0$, the absolute age, absolute distances.*
@@ -614,7 +614,7 @@ $$\Omega_\Lambda=\frac{x_0^3}{x_0^3+2},\quad \Omega_m=\frac{2}{x_0^3+2},\quad q_
 *Closed forms for each locus, the physics attached to each, the layer assignment at each stage, and **why hypersurface orthogonality fails — which is geometric, not a modelling choice**, and is why the matter-only FLRW equivalent shares the rate but not the causes. ***The two models are NOT equivalent; they share a common rate with different causes.***
 
 ## ⑤ CORPUS ADDITIONS — DISSOLUTIONS
-*The coincidence problem ($z_{\rm acc}=x_0-1$ is **the epoch parameter**, not a coincidence), the cosmological-constant problem, the Hubble tension — stated natively, referencing the ledger (which is attached to the glossary).*
+*The coincidence problem ($z_{\rm acc}=x_0-1$ is **the epoch parameter**, not a coincidence) and the cosmological-constant problem — stated natively, referencing the ledger (which is attached to the glossary).*
 
 ## ⑥ FRESH ACOUSTIC BUILD, FROM FIRST PRINCIPLES
 ***$r=0$ as the onset*** *(hadronisation is the physical bound and the integral is insensitive to anything earlier), correct layer assignment throughout, **every line reasoned rather than inherited**. Existing receipts used for **verification only**.*
@@ -1615,7 +1615,7 @@ propagated down without someone already knowing the mapping in their head.** Now
 |---|---|---|---|---|
 | **1 · Matter branch-point crossing worldline-and-field dynamics** | item 1 | **A2.4** (Lane 1) — and the collapse-excursion build | **A** the matter sector | live · buildable now |
 | ~~2 · Sheet-to-ruling assignment~~ | *removed* | ~~A2.8~~ struck r1442 | — | **KILLED r1280.** Found stale in `THE_PLAN` (to r1442) *and* the register (to r1498) |
-| **3 · Inherited datum** (n_s, A_s; ρ_r/ρ_m≈2) | item 2 | **A2.2** (Lane 3) | **F** the inherited boundary data | live · gated on A4 |
+| **3 · Inherited datum** (n_s, A_s; η) | item 2 | **A2.2** (Lane 3) | **F** the inherited boundary data | live · gated on A4 |
 | **4 · Irreducible interior reassignments** (Kerr-inner, RN-interior) | item 3 | **A6.2** (Lane 3) | **A** | live · gated on family 1 |
 | **5 · Scalar-perturbation sector to a verdict** | item 4 | **A2.3** (Lane 1) · **A1.3** (Lane 2) | **E** the cosmology's empirical edges | live · buildable now; stakes moved r1423 |
 | **6 · Propagating fermion sector** (+ compact-face gauge, mass hierarchy) | item 5 | **A4** (Lane 3) — *the master gate* | **A** | live · the largest undertaking |
@@ -2518,8 +2518,7 @@ it nowhere before it is allowed to stand as open:
    **⚠ And this list's own instruction was the check that would have caught it: "the campaign must confirm, for
    each, that the corpus works it nowhere before it is allowed to stand as open." It had been worked — in the
    paper the list is quoting.**
-3. **The inherited seam-radiation datum ρ_r/ρ_m≈2 (the η-analogue)** — the baryogenesis-analogue derivation;
-   may remain empirical without cost to the dissolution — **which does not make the derivation optional**. *(Composition target met — cosmogenesis.)*
+3. **The inherited composition datum η** — its derivation belonging to the matter sector;    may remain empirical without cost to what the cosmology computes — **which does not make the derivation optional**. *(Composition target met — cosmogenesis.)*
 4. **The irreducible interior reassignments** — Kerr-inner, RN-interior; gated on the matter-sector dynamics.
    *(The REDUCIBLE sector is fully classified and reached — range paper.)*
 5. **The scalar-perturbation sector to a verdict** — the high-ℓ seam-to-recombination transfer (peak heights,
@@ -2642,7 +2641,7 @@ combinatorics ledger at the very least done right.**")* **Lane 8 — the combina
 **Why P16's title draws the corpus-wide line.** P16 sits at the mouth of the whole deductive river: its synthesis *is* the conjunction of P1+P4 (the forced foliation), P7 (collapse must become a universe), P3/P8 (the seam, the radiation-free rate), P14 (the matter crossing). Earning its title means every load-bearing arrow feeding it is earned at necessity, or is a genuine frontier the title does not stake — *which is a scoping call, not a licence to leave it*. Draw the line at P16 and it is drawn across the corpus.
 
 **The two halves of the title, at their proper altitude (P6 §boundary — coherence ≠ correspondence):**
-- **"deductively forced synthesis" — a COHERENCE claim, earned within CR.** Each arrow is proved (§sec:synthesis); the Big Bang is their forced conjunction, not a posit. Whether *the world* is so built — the correspondence — is the data axis (P1's no-horizons, the radiation-free rate, the CMB), which by P6's own boundary is **above the line by construction**: a framework is credited for *requiring* and is *tested* by the world; those tests are strengths the title exposes, not debts it owes. The synthesis half is earned *at its proper altitude*. **(⟂ r964 — those exposed tests have begun to return, and in CR's favour: the radiation-free rate resolves the Hubble tension across the full BAO ladder (A1.4), the abundances land within measurement on the required hot history (D1), and the low-ℓ octopole is a cosmic-variance-limited wash, not a falsification (A1.2). So the correspondence axis — held here as a strength the title exposes — has crossed on several axes from _exposed edge_ to _returned verdict_: the corpus is now __empirically favoured__, coherence → correspondence → confirmed prediction. This does not move the first-edition line (it was never a title debt); it upgrades what the edition ships — the decisive edges publish not merely as honest open frontiers but as edges the world has begun to answer favourably. The structural unification stays at coherence; the full likelihood and damping tail stay open. Baked corpus-wide, r964.)*
+- **"deductively forced synthesis" — a COHERENCE claim, earned within CR.** Each arrow is proved (§sec:synthesis); the Big Bang is their forced conjunction, not a posit. Whether *the world* is so built — the correspondence — is the data axis (P1's no-horizons, the radiation-free rate, the CMB), which by P6's own boundary is **above the line by construction**: a framework is credited for *requiring* and is *tested* by the world; those tests are strengths the title exposes, not debts it owes. The synthesis half is earned *at its proper altitude*. **(⟂ r964 — those exposed tests have begun to return, and in CR's favour: the radiation-free rate fits the full BAO ladder (A1.4), which fixes $H_0$ with the acoustic angle, the abundances land within measurement on the required hot history (D1), and the low-ℓ octopole is a cosmic-variance-limited wash, not a falsification (A1.2). So the correspondence axis — held here as a strength the title exposes — has crossed on several axes from _exposed edge_ to _returned verdict_: the corpus is now __empirically favoured__, coherence → correspondence → confirmed prediction. This does not move the first-edition line (it was never a title debt); it upgrades what the edition ships — the decisive edges publish not merely as honest open frontiers but as edges the world has begun to answer favourably. The structural unification stays at coherence; the full likelihood and damping tail stay open. Baked corpus-wide, r964.)*
 - **"produces the abundances" — the one load-bearing DEBT, now PAID (r955).** He-4 was earned (computed, Y_p=0.2506). "Produces the *whole* pattern jointly" — one handover *requiring* D, He-4, ³He and the metallicity floor together — was the **Big Bang computation not yet run**; it has now been run (multi-nuclide network on the cooling-leg thermal history), returning the joint pattern at few-% fidelity. Debt discharged ⇒ the title's "produces" earned at necessity.
 
 **THE ANSWER (the determination the line was drawn to make — Daryl's three questions):**
@@ -3156,14 +3155,13 @@ run.***
 These are **strengths to state precisely and hold**, not work to grind — the decisive data-gated claims the apparatus was built to make. The move is to state each sharply and watch for the discriminating measurement, not to compute toward a foregone answer.
 
 - **A1.1 · P1 no-horizons — the decisive structural test.** ⟐ *material:* the paper is `corpus/BH_causality_v2.tex`; its card is the ontology map **§1c**, *"the taproot the cosmological forcing rests on"*; it stands on causal structure alone and **needs none of the cosmology**. No event horizon completes at finite exterior time; where the programme's whole weight sits, on causal structure alone.
-- **A1.4 · The radiation-free rate — the near-term discriminator.** ⟐ *material:* `hubble_build/` (incl. `desi_dr2_confrontation.py`); P15 carries the resolution — *"the Hubble tension is resolved across the low-redshift distance ladder and not the acoustic angle alone"*; map card **§1r**. Radiation carries no term in the expansion rate; the cleanest place CR and ΛCDM part on expansion-history data.
+- **A1.4 · The radiation-free rate — the near-term discriminator.** ⟐ *material:* `hubble_build/` (incl. `desi_dr2_confrontation.py`); P15 carries the resolution — *"the expansion history fits the low-redshift distance ladder, which fixes $H_0$ with the acoustic angle"*; map card **§1r**. Radiation carries no term in the expansion rate; the cleanest place CR and ΛCDM part on expansion-history data.
   **⚑ AND IT HAS BEEN RUN AGAINST THE STATE OF THE ART — this line reads as waiting, and the confrontation is in
   P15 with two receipts (found r1770).** *A falsification ledger whose **tested** items read as **pending**
   misrepresents the programme's own exposure, which is the one thing this lane exists to state precisely.*
   **SDSS DR12 consensus:** *the radiation-free rate at $\Omega_m\simeq0.31$ fits at the directly measured $H_0$ —
   $\chi^{2}\simeq1.7$ on six points, **at *any* $H_0$ including 73** — while **the radiation-governed rate at that
-  same local $H_0$ misses badly, $\chi^{2}\simeq49$.** ***"That residual is the Hubble tension itself, which the
-  geometric rate structurally lacks."***
+  same local $H_0$ misses badly, $\chi^{2}\simeq49$.** ***(superseded r6772+66.33: on the leaf ruler the sound horizon is the plasma's own accumulation, so the baryon-acoustic observables constrain $H_0$ here too, and the joint fit returns $\chi^2/\mathrm{dof}\simeq1$ at $\Omega_m\simeq0.30$, $H_0\simeq68.6$.)***
   **DESI DR2 — thirteen measurements, seven tracers, $0.3\lesssim z\lesssim2.3$, full per-tracer
   $D_M/r_s$–$D_H/r_s$ correlations:** *it **"tightens rather than loosens the result"** — with the single
   CMB-calibrated $\Omega_m\simeq0.307$ (at which the inherited datum sits at $\rho_r/\rho_m\approx2.0$) the
@@ -3380,7 +3378,7 @@ Ordered by the dependency graph (below). The matter sector's *content* is the hi
   transit. **P7's own scoping keeps them apart** — the transition law fixes the rate and **"the density crosses as
   inherited content"** — and A2.2's task is precisely to derive that inherited content from the progenitor. **So:
   the transit is geometric; the datum is still inherited.** *The gate is therefore neither "less gated" nor
-  "confirmed gated on A4" — **it is split, and the half that is settled is the half that was never the difficulty.*** — derive ρ_r/ρ_m and the inherited spectrum (A_s, n_s) from the collapse (turns the one accommodation parameter-free); may remain an empirical IC without cost to the dissolution — **the derivation from the progenitor's determined structure remains work**. Gated on the matter/progenitor-handover sector.
+  "confirmed gated on A4" — **it is split, and the half that is settled is the half that was never the difficulty.*** — derive the inherited spectrum (A_s, n_s) from the collapse; may remain an empirical IC without cost to the dissolution — **the derivation from the progenitor's determined structure remains work**. Gated on the matter/progenitor-handover sector.
 - **A6.2 · The irreducible interior remainder** (Kerr-inner / RN-interior reassignments) and **A6.4 · the grand claim past the wall** (GR's entire solution space as one algebroid orbit structure) — both gated on the matter sector.
   **⚑ "GATED ON THE MATTER SECTOR" IS AMBIGUOUS AND P7 DISAMBIGUATES IT — for A6.2 the gate is FAMILY 1, not
   family 6 (r1780).** *The audit has just shown A4's every sub-item collapsing onto **the propagating spinor
@@ -3579,9 +3577,7 @@ The tests that decide whether the maximal-symmetry reading is sound — each can
   is the null-ruling slope, $G$ appears only as $GM/c^{2}$ with the mass **fixed to Nariai by $\Lambda$**, $\hbar$
   enters only at the de Sitter cosmological horizon **scaled by $\Lambda$ alone**, $k_B$ converts. **"The gravitational–cosmological–quantum
   sector spends no free dimensionless constant."***
-  **THE COSMOLOGICAL SIDE — one, and it is named and measured.** *P15: the acoustic scale is met at the directly
-  measured $H_0$ **"by a single inherited datum, $\rho_r/\rho_m\approx2$ — a one-parameter accommodation, the
-  structural analogue of the baryon-to-photon ratio."* **That is exactly the "sole tunable datum" the target
+  **THE COSMOLOGICAL SIDE — no early-universe parameter.** *P15: the plasma is handed over at the branch point, so the sound horizon has no lower endpoint to fit and the acoustic angle is an output, with $H_0$ fixed by it and the baryon-acoustic distances together.* **That is exactly the "sole tunable datum" the target
   names.***
   **⌗ AND THE MATTER SIDE IS NOW SIZED, which is what this item asked for — by P14's own explicit boundary.**
   *p0's §Frontiers **item 3 was ANSWERED and struck at r1609**: a fermion sector does live on the discrete
