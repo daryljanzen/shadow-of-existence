@@ -96,7 +96,14 @@ BARE = re.compile(r'^(r\d{3,5})\s*[—-]\s*(.*)$')
 #:     trade now costs, because it is larger than it was: the disambiguator r3563 relied on -- "cite
 #:     the SHA beside the revision" -- is a rule for NEW citations and does nothing for the nine
 #:     already written.  ⇒ The repair is upstream of the citation, in how the number is CHOSEN. **
-BASELINE = {'r3622',
+BASELINE = {'r6788',      # ⛭ r6792 (66): 66 began numbering `main` itself from the front while
+                          #   60 was mid-write on its own r6788, so both claimed it for different
+                          #   work -- mine the seats' gating, 60's the second-instrument
+                          #   reproduction.  Baselined rather than renumbered for r3563's reason:
+                          #   renumbering either side breaks every citation already written to it.
+                          #   Cite this one by SHA.  The cause is fixed above: 66 now takes the
+                          #   ODD half, so its next is r6793 and not front+2.
+            'r3622',
             #: ⛔⛭⛭⛭ ** r3640 AND r3642, AND THE FIRST OF THEM IS THE COMMIT THAT DIAGNOSED THE
             #: MECHANISM. **  *r3640 (60) is "the parity band broke, and adopting it was not what was
             #: missing: `front + 2` inherits the front's parity", and it names `r3644` as what 59
@@ -246,7 +253,13 @@ _PARITY_BY_NODE = {'54': 0, '60': 0,          # EVEN half
                                             # not assumed: 49 of 64's r6xxx revisions are odd
                                             # and 0 are even, against 60's even band above.
                    'cc54': 0,                 # compute node, works under 54's band
-                   '66': None,                # holds NO half: 66 labels its revisions
+                   '66': 1,                   # ODD half -- declared r6792 from the workflow
+                                            # change: 66 now gates and numbers `main` itself,
+                                            # taking 64's role and so 64's half.  Bare rNNNN
+                                            # from this seat is odd; the older suffixed form
+                                            # r<main base>+66.<k> is history and still parses.
+                                            # (was None: holds NO half, when 66 labelled its
+                                            # revisions
                                             # r<main base>+66.<k>, never a bare rNNNN,
                                             # so it cannot enter either half (r6713+66.1)
                    'cc66': None,              # 66's CODE seat, r6760+cc66.1.  Same form and so
