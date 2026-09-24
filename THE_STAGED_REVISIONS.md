@@ -1,7 +1,7 @@
 ---
 name: the-staged-revisions
 kind: STATE
-current: r6760
+current: r6825
 description: The staging ground — revisions to the papers, computations to run, and consolidation work, PREPARED here and executed when their preconditions are met. Nothing here has been applied to the corpus; each entry carries its gate, its locus and its done-test.
 sources: [chat]
 ---
@@ -15,238 +15,33 @@ sources: [chat]
 > **preparation does not rot the way a narrative does** — but each should be checked against the
 > current papers before executing.*
 
-## ⌗ `SR-15` · THE ACOUSTIC HANDOVER — four paragraphs staged for P15, and what must land before them
+## ⌗ `SR-15` · THE ACOUSTIC HANDOVER — ✔ **EXECUTED r6774–r6825, AND NOTHING OF IT IS STILL STAGED**
 
-*The two-arm transfer hands the collapse leg to the expansion leg at the **onset**, reading the photon
-amplitude through the leg's closed-form transfer and the potential at its primordial value — two halves of
-one handover read at two points. Read instead at the **crossing**, where every acoustic mode is super-horizon
-and the leg potential returns to its regular value, the state is the frozen adiabatic one and the
-radiation-era driving is applied exactly once. Measured on the instrument that reproduces §refit-bound to
-every digit (χ² 15752.0 / 118.4 per bin, the control 279.4 / 2.10, the model separation 122): first peak
-**216** against the sky's 220.4, height ratios **2.250** and **2.150** against 2.217 and 2.277, second-to-first
-gap ratio **0.8693** against 0.8812, phase intercept within **0.019π** of the sky's, and χ² **35.5** per bin.
-It is a limit rather than a parameter — over two decades of starting redshift the peaks hold to the grid step
-and the ratios to half a per cent. What remains is an acoustic scale **4.2% narrow** (the arm's own comb 286.0
-against the sky's 298.4) and a residual concentrated at **ℓ ≈ 700–1000**.*
+*The staging held seven sections while the handover was adjudicated and the corpus was brought to it. **All of
+it is landed**, and what it landed is recorded in `CORPUS_MAP` at the revisions named below; the papers carry
+the claims, the receipts carry the measurements, and `THE_REGISTER` carries the rows. **This entry is the
+record that the staging is spent, so nobody works from it as though it were pending.***
 
-**⌗ BEFORE ANY OF IT LANDS:** *the ℓ-grid check at `LSTEP=1` and the ladder check at `KCONT=1` on the crossing
-arm; the **derived diffusion damping** on that arm's own opacity and rate, with the band table re-run (the
-arm is unlensed and underdamped, and ℓ ≈ 700–1000 is where damping should act); and `r_s`, `D_M` and
-`θ_D/θ_*` on the crossing arm, so the 4.2% splits into equality (`z_eq` 3936 on the leaf against 3399) versus
-rate, and so the damping signature is not quoted off the coded arm.*
+**⌗ WHAT WAS STAGED AND WHERE IT WENT.**
 
-**⌗ THE FOUR PARAGRAPHS.**
+- *The four paragraphs for `P15` --- §coherence's codings, §refit-bound's figures, §tensions on what the
+  fitted onset buys, and the datum scan's trade --- **landed r6772+66.1 through r6772+66.27**, with the
+  paper read word for word in its final state afterwards.*
+- *The clock adjudication and the three statements it put in question --- the damping signature, the
+  $H_0$-independence and §envelope's turnover --- **landed across the same run**, with the signature's
+  endpoint settled at r6797 and `PO-24` struck on the re-run at r6801.*
+- *The path split, the equality identity and the light elements' silence --- **landed r6772+66.3**; the
+  pin-and-crossing fork --- **adjudicated r6772+66.4 and decided at r6774**, the crossing being the handover
+  and the onset a repair.*
+- *The twice-crossed nucleosynthesis window --- **landed r6772+66.37** in `P16` and `P15`, the synthesis
+  moving to the expanding leg and the abundances unmoved.*
+- *The three that did not wait on the fork --- the signature's configuration dependence, the accommodation
+  against the comb, and the heights being the polarisation path's --- **landed r6772+66.2 and after**.*
 
-- **§coherence**, for *"Three codings, three answers, so the factor is not yet a property of the
-  construction"*: a fourth coding reads both halves at one locus; it is the only one of the four carrying no
-  free choice; and it is a limit, not a parameter, by the starting-redshift scan.
-- **§refit-bound**, for the deficit paragraph's numbers: the peak, the ratios, the gap contraction, the phase
-  intercept, and what remains — the narrow comb and the band at ℓ ≈ 700–1000.
-- **§tensions**, on what the one fitted parameter buys: the fitted onset reports an acoustic scale of 301.6
-  while the coded arm's own comb, fitted by the procedure used on the sky, is 313.0 — the accommodation and
-  the spacing are different quantities, and the single-locus arm's 286.0 is an output.
-- **The datum scan**, for *"no mechanism for that trade is in hand"*: moving the locus buys the position and
-  the alternation together, where every contracting reading in the scan sits at ℓ₁ ≤ 212; the scan varies the
-  datum at the onset, this varies the locus.
-
-**⌗ THE LANDING SURFACE, COMPLETE.** *`CR_cosmology` (four places), `CR_framework` §frontiers and its masthead,
-`CR_synthesis`, `geometric_core_paper`'s P15 entry; the receipt appendices for P15, P16 and the corpus;
-`ONTOLOGY_FOUNDATION_INDEX` (P15 card), `THE_REGISTER`, `PHYSICAL_VALUES_LEDGER`,
-`STATISTICS_INFERENCE_LEDGER`, `THE_LIVE_ARC`, `THE_REMAINING_WORK`, `WHAT_IS_UNFINISHED`, `THE_WEAVE`,
-`capstones/THE_WISDOM_LEDGER`, `CLAIMS`, `THE_PLAN`. **And `PROTECTED_OPEN`'s PO-13 row**, whose chain ends
-"there is no seam phase freedom — only two admissible readings": that stands, because this is a handover
-**locus** and not a phase freedom, and the row should say so rather than be overwritten. `PO13_WORKING_STATE`
-belongs to the code seat.*
-
-**⌗ THE BAND.** *Both seats of node 66 hold `L-6600`–`L-6699`. The chat seat takes `L-6650`–`L-6699`, the code
-seat `L-6600`–`L-6649`.*
-
-### ⌗ `SR-15b` · THE CLOCK, ADJUDICATED — and the three things it costs
-
-*The corpus states the rate assignment twice each way. **P15 §tensions**: a comoving separation read across
-leaves takes the stacking rate, "and so do the scales such a separation is read in---$\rs$ and $r_D$, which
-accumulate against the layer's own geometric expansion". **§coherence** agrees and calls it forced, on a
-stated premise: "it is the same L1 rate that dissolves the Hubble tension, and one may not take the rate
-geometric for the peak spacing and radiation-included for the diffusion." Against them, **P7's rate-rule
-remark** and **§refit-bound** list the sound horizon and the diffusion length among the content processes that
-take the leaf's.*
-
-**⌗ THE PREMISE IS MEASURED AND IT FAILS.** *The peak spacing is a perturbation observable and the framework
-assigns the perturbation sector to the leaf. The crossing arm's measured comb agrees with its leaf sound
-horizon to 2.2% (142.85 against 139.74) and with the stacking ruler not at all (172.8 against 286.0); the
-control's agrees with its single horizon to 1.5%; the coded arm's agrees with neither of its two.*
-
-**⌗ THE CALL.** *One object, the **leaf** clock, for $\rs$ and $r_D$ both. Consistency is what §coherence
-demands and the leaf pair satisfies it; what recombination imprints is one length, so the instrument's two
-$\rs$ objects are bookkeeping and not two physical rulers. §tensions' clause and §coherence's L1 paragraph
-are the sentences that change.*
-
-**⌗ WHAT IT COSTS, IN ORDER OF SIZE.**
-
-- **The damping signature.** *On matched starts and one clock, $\theta_D/\theta_*$ is $+2.2\%$ against the
-  control, and $1.000$ against the arm's own measured comb. The $+8.2\%$ is $r_D$'s $1.0897$ divided by an
-  $\rs$ ratio tuned to unity through $z_{\rm onset}$; untuned it is $0.640$. The crossing handover leaves no
-  onset to tune, so P15's sharpest CR-specific prediction is provisionally a product of a mixed clock and a
-  pin.*
-- **The Hubble dissolution.** *§tensions derives the $H_0$-independence of $D_M/\rs$ and $D_H/\rs$ from both
-  lengths carrying the stacking rate's $1/H_0$. Measured, that holds on the stacking pair and fails on the
-  leaf pair, which falls $13.4\%$ across $H_0$ against flat $\Lambda$CDM's $13.0\%$. **Undecided until the
-  BAO and acoustic-angle confrontation is redone on the leaf ruler** --- it may hold through the offset
-  $x_0$ on a different derivation, in which case §tensions is rewritten rather than withdrawn.*
-- **The envelope turnover.** *P15 carries two equality redshifts for one arm: $3399$ from the inherited datum
-  ($(1+z_{\rm onset})/2$, which the crossing handover deletes with the onset) and $3936$ from the leaf
-  background, $14\%$ from the control's measured $3447$ rather than $1.4\%$. §envelope's "the envelope turns
-  over at the same wavenumber, for a structural reason and not by assumption" rests on the first.*
-
-### ⌗ `SR-15f` · THE P15 REWRITE IN PROGRESS — what is consistent, and what is not yet
-
-*The handover fork is adjudicated (§SR-15d): the crossing is the handover, the onset was a repair. P15 is being
-rewritten to that reading section by section, and **the paper is internally inconsistent until the list below
-is empty.** It is recorded here so nothing is carried into a gate as though it were finished.*
-
-**⌗ REWRITTEN.** *§tensions' rate clause (both plasma scales take the leaf's rate, with the comb reproducing
-that integral and not the other); §tensions' Hubble paragraph (the angle and the distances fix $H_0$ together
-at ${\simeq}68.5$, the ladder discrepancy left where the standard model leaves it); §tensions' acoustic-scale
-paragraphs (computed rather than accommodated, the sound horizon carrying no early-universe parameter, the
-fitted-onset configuration named as reporting an angle its own spectrum does not have); §tensions' load-bearing
-claim; §coherence's codings (the single-locus state and the limit that fixes it); §envelope's equality.*
-
-**⌗ NOT YET, AND EACH STILL READS ON THE FITTED ONSET.** *§tensions' inherited-datum block (the radiation
-amplitude as the onset restated, and the naturalness argument built on it) --- **22 onset-dependent phrases,
-the largest remaining block**; the masthead comment and the introduction (9 and 4); the proposition on where
-the modes stand at the onset (5); §refit-bound (4); §diffusion-scale (4); §coherence, §envelope,
-§envelope-consequence, §largescale, §transmission and the conclusion (1--2 each).*
-
-**⌗ AND THEN OUTWARD.** *P7 carries the dissolution in ten places, P6, P12, P16, P17 and P18 in one each; the
-ontology map, `THE_PLAN`, the wisdom ledger, the physical-values ledger and the unfinished list carry it too.
-None of those should move until P15 is consistent.*
-
-### ⌗ `SR-15e` · THE THREE THAT DO NOT WAIT ON THE FORK — finished prose, ready to paste
-
-*Each of these is established on both handover branches and on both instrument paths, so landing them does not
-pre-empt the choice §SR-15d sets out. The remaining paragraphs (§coherence's codings, §refit-bound's figures,
-§tensions' rate clause and §envelope's turnover) do wait on it.*
-
-**⌗ ① §diffusion-scale — the signature belongs to a configuration, and no consistent one returns $8.2\%$.**
-*Measured over the four combinations of handover locus and clock, $\theta_D/\theta_*=r_D/\rs$ against the
-control's $0.04544$: onset with the stacking clock $1.135$, onset with the leaf clock $1.353$, crossing with
-the stacking clock $0.652$, crossing with the leaf clock $1.022$. The distance cancels from the ratio, so
-these are the two choices and nothing else. Replacement text:*
-
-> The diffusion signature is a ratio of two lengths the plasma accumulates, so the projection cancels from it
-> and what remains is the pair of choices that fix the accumulation: where the collapse leg is handed over,
-> and on which rate the lengths are integrated. Both lengths take the leaf's rate, since the process runs in
-> the content; and on the handover at the crossing the signature is $\theta_D/\theta_*$ larger than flat
-> $\Lambda$CDM's by $2$ to $3$ per cent, against $35$ per cent if the handover is placed at the onset instead.
-> It is a computed, non-reabsorbable effect of definite sign in either case, and its magnitude is fixed by the
-> handover rather than by the fitted parameter.
-
-**⌗ ② §tensions — the accommodation and the comb are two quantities.** *The pinned arm reports an acoustic
-scale of $301.6$ while its own comb, fitted to its peaks by the procedure the paper runs on the sky, is
-$313.0$; the fluid path returns the same $\ell_1/\ell_A$ to four figures, so this is not path-specific.
-Replacement text:*
-
-> The fitted onset is reported through the acoustic angle, and that angle is not the spacing the spectrum
-> carries: fitted to the computed peaks by the procedure used on the sky, the comb is $313.0$ where the
-> reported scale is $301.6$. The accommodation and the comb are therefore two quantities, and only the second
-> is what the peak positions measure.
-
-**⌗ ③ §refit-bound — the heights are the polarisation path's, the positions are the construction's.** *Both
-paths return $\ell_1=206$ on the pinned arm with $\ell_1/\ell_A=0.6830$ identical, and $216$ against $214$ on
-the crossing arm; the heights differ by $12.6\%$ and $31\%$ between paths. Replacement text:*
-
-> The two instrument paths are not interchangeable, and they divide the result. The peak positions and the
-> phase intercept agree between them to a grid step, so those are the construction's; the height ratios differ
-> between the paths by more than either differs from the sky, so every height quoted here is the polarisation
-> path's and is stated as such.
-
-### ⌗ `SR-15d` · THE PIN AND THE CROSSING CANNOT BOTH BE HAD, AND THAT IS THE FORK
-
-**⌗ THE ORDERING CONSTRAINT.** *The handover cannot precede the onset: the expansion leg does not exist before
-it. On the leaf ruler the pin solves at $z_{\rm onset}=61{,}580$, while the handover converges to the crossing
-only above $z\sim3\times10^{6}$ and is still moving at $3\times10^{5}$. **So a configuration carrying both is
-at an intermediate locus, not at the crossing**, and run~1's figures carry that: the comb is repaired
-($\ell_1/\ell_A=0.7095$ against the sky's $0.7312$, the position deficit $6.6\%\to3.0\%$ with $\ell_A$ at the
-measured $301.6$) and the heights invert ($P_1/P_2$ $2.250\to2.603$, from $+1.5\%$ to $+17.4\%$; $P_1/P_3$
-$2.150\to2.539$).*
-
-**⌗ SO THE ONSET IS EITHER A LOCUS OR A REPAIR, AND THE CORPUS MUST SAY WHICH.**
-
-- ***The crossing is physical.*** *Then there is no onset to fit: the comb is an output, $286.0$ against the
-  sky's $298.4$, and the $-3.77\%$ is a prediction --- $d\ln D_M=-6.40\%$ against $d\ln\rs=-2.63\%$, the
-  distance deficit being the directly measured $H_0$ itself. On the leaf ruler with no onset the joint fit
-  prefers $H_0=68.62$ at $\chi^2/\rm dof=0.96$, and the leaf acoustic angle independently gives $68.54$.
-  **This branch keeps the phase, the alternation and the heights and gives up the Hubble resolution.***
-- ***The onset is physical.*** *Then the pin is legitimate, the comb is right by construction, $\chi^2/12$ dof
-  $=0.93$ at $H_0=73$ on the leaf ruler --- and the state specified at that locus is what the heights then
-  test. The coded state fails the phase; the crossing state imposed there overshoots the heights by $17\%$.
-  **This branch keeps the Hubble resolution and owes a state at the onset that the phase and the heights both
-  accept.***
-
-**⌗ WHAT SEPARATES THEM, AND IT IS TWO CHEAP RUNS.** *The stacking-clock control at $z_{\rm onset}=61{,}580$,
-which says whether run~1's height inversion is the clock or the earlier start; and **the crossing arm, no pin,
-at $H_0=68.6$** --- the self-consistent configuration of the first branch, where the comb should land on the
-sky's $298.4$ as an output rather than a fit. If it lands and the heights hold, the construction with the
-handover at the crossing predicts $H_0\simeq68.6$, which is a different Hubble statement from the corpus's
-and has to be written as one.*
-
-### ⌗ `SR-15g` · THE NUCLEOSYNTHESIS WINDOW IS CROSSED TWICE — staged for P16 and P15
-
-*Measured by the code seat and routed back: the collapse leg runs up through $T_9=0.08$ to $9$, and the
-expanding leg begins at unbounded temperature and ends at $2.7$ K, so **a continuous history from unbounded
-to the present crosses the window exactly once on each leg**. At the branch point the temperature exceeds
-both binding thresholds by any margin asked for --- with $10^{9}$ photons per baryon the Planck tail
-dissociates deuterium at $T_9\simeq1.2$ and helium-4 at $15.8$ --- so **everything the collapse leg built is
-photodissociated back to free nucleons, and the expanding leg runs ordinary big-bang nucleosynthesis from
-free nucleons.** The abundances do not move, and the account gets simpler: the old reading required the
-collapse leg to both build and preserve the nuclei.*
-
-**⌗ WHAT LANDS.** *P16's synthesis account and P15's one-sentence version move the synthesis to the
-expanding leg and drop the $1.6\,$eV onset; the tables stand. **P16 is its own session**, since its
-§peak, §network and §verdict all speak to which leg carries the window.*
-
-**⌗ AND ONE CAVEAT ABOUT THE INSTRUMENT, NOT THE CONSTRUCTION.** *Nobody may compute the abundances on the
-instrument's $\Omega_r/a^{4}$: that is the post-annihilation radiation density extrapolated back, so it misses
-the $e^{+}e^{-}$ pairs and runs $44\%$ slow above $T_9\sim1.5$, where weak freeze-out sits. The network builds
-$\rho_{\rm rad}$ from $g_*(T)$ and is unaffected --- and flat $\Lambda$CDM's $\Omega_r$ misses the pairs in
-exactly the same way, so it is not a difference between the arms.*
-
-### ⌗ `SR-15c` · WHAT THE TWO PATHS AND THE NETWORK ADD — one qualification, one identity, one non-cost
-
-**⌗ THE HEIGHTS ARE PATH-SPECIFIC AND THE POSITIONS ARE NOT.** *Run on both instrument paths, the handover
-result divides. Positions survive: the coded arm returns $\ell_1=206$ on either path with
-$\ell_1/\ell_A=0.6830$ identical, and the crossing arm $216$ against $214$, within a grid step. Heights do
-not: on the fluid path the crossing arm gives $P_1/P_2=2.496$ and $P_1/P_3=2.982$, overshooting the sky by
-$12.6\%$ and $31\%$, where the polarisation path lands at $2.250$ and $2.150$. §refit-bound takes its headline
-figures on the polarisation path and already says the two are not interchangeable --- **so the height claim
-must be written as the polarisation path's, and the position, phase and alternation claims as the
-construction's.***
-
-**⌗ THE ARM'S EQUALITY AND ITS HUBBLE VALUE ARE ONE FACT.** *The leaf background's $z_{\rm eq}=3936$ is
-$\omega_m=0.1634$ against flat $\Lambda$CDM's $0.1431$ --- that is $H_0=73$ at $\Omega_m=0.3066$. So the
-equality the third-peak band turns on is not a free datum beside the Hubble result; it is the Hubble result
-read at recombination. $k_{\rm eq}=0.01196\,\mathrm{Mpc}^{-1}$ ($\ell_{\rm eq}=155.7$) against the control's
-$0.01048$ ($146.1$), and $\ell_{\rm eq}$ reproduces §refit-bound's own band edge from the background alone.*
-
-**⌗ THE LEAF RULER COSTS NOTHING IN THE LIGHT ELEMENTS.** *The leaf ruler's pin carries the inherited radiation
-amplitude from ${\sim}1.7$ to ${\sim}17$, and P16's network does not read it: its free inputs are the
-temperature grid and $\eta_{10}$, its expansion rate is $\rho_{\rm rad}(T)$ with $g_*(T)$ fixed, and §verdict
-holds the two data apart by name --- $\eta$ transmitted unchanged, the onset ratio having no single value to
-transmit. Run rather than quoted: $Y_p=0.2432$, $\mathrm{D/H}=2.567\times10^{-5}$,
-$^{7}\mathrm{Li/H}=4.461\times10^{-10}$ at $\eta_{10}=6.14$.*
-
-**⌗ AND THE ABUNDANCE TABLE PRICES ONE ROUTE TO $z_{\rm eq}$, NOT $z_{\rm eq}$ ITSELF.** *Scaling the radiation
-at fixed matter reaches the control's $3447$ at $N_{\rm eff}=4.05$ and costs $+3.2\sigma$ in $Y_p$ and
-$-8.6\sigma$ in D/H; reaching the same equality through $\omega_m$, which is how the arm's own arises, leaves
-the network untouched. **So the light elements neither penalise nor favour the arm's equality** --- they are
-silent on it, and a reading that banks them as support for it would be reading a $\Delta N_{\rm eff}$ table as
-a statement about $\omega_m$.*
-
-**⌗ AND ONE THING THE SPLIT ALREADY SETTLES.** *The crossing arm's comb deficit is $-3.77\%$ against the
-control, and it is the **distance** and not the sound horizon: $d\ln D_M=-6.40\%$ against
-$d\ln \rs^{\rm eff}=-2.63\%$, of which equality supplies $-3.26\%$ and rate and clock $+0.63\%$ when
-$\Omega_r$ is held at the control's value and the horizon re-integrated.*
-
+**⌗ AND WHAT SUCCEEDED IT, WHICH IS NOT STAGED EITHER.** *The parameter refit (`PO-10`, struck r6799), the
+leg's inability to supply the tilt (`PO-31`, narrowed r6823), the low-multipole floor's cause and the
+assumption ledger with its three columns are all in the papers. **The live coordination is in `FOR_CC66` and
+`FOR_60`, not here.***
 
 ## ⛭ BROUGHT CURRENT r2548 — the staging discipline held through nine merges
 
