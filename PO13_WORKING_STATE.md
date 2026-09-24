@@ -3277,3 +3277,47 @@ part in $10^6$.* ⇒ ***The six-parameter fit has at most FIVE directions, and t
 free parameters" already counted one that cannot move the likelihood here.*** *It does not bias the
 comparison, both arms losing it equally, but the count is wrong and any per-dof figure resting on it
 is wrong with it.*
+
+
+---
+
+# ⚑⚑ r6788+cc66.18 — THE PARAMETER REFIT: THE BACKGROUND STAYS PUT, THE PHASE DOES NOT CLOSE
+
+*132 bins, $\ell=100$–$1287$, per the chat seat's `r6788` ruling. Both arms refitted like-for-like
+on the same bins in $H_0$, $\Omega_m$, $\omega_b$ and $n_s$, with the amplitude closed-form.*
+
+| arm | $H_0$ | $\Omega_m$ | $\omega_b$ | $n_s$ | $\chi^2$ | /bin |
+|---|---|---|---|---|---|---|
+| control, start | $67.4000$ | $0.3150$ | $0.0224$ | $0.9650$ | $134.8$ | $1.02$ |
+| control, refitted | $67.4054$ | $0.3095$ | $0.0220$ | $0.9559$ | $\mathbf{118.3}$ | $\mathbf{0.90}$ |
+| **CR, start** | $68.6000$ | $0.2973$ | $0.0224$ | $0.9650$ | $299.0$ | $2.26$ |
+| **CR, refitted** | $\mathbf{68.6077}$ | $\mathbf{0.2967}$ | $0.0217$ | $\mathbf{0.9949}$ | $\mathbf{171.1}$ | $\mathbf{1.30}$ |
+
+⇒ ***$H_0$ moves by $0.011\%$ and $\Omega_m$ by $0.20\%$.*** **$(68.60,\,0.2973)$ came from DESI BAO
+and $\theta_*$ with no spectrum involved; the spectrum, free to go anywhere, stays there.**
+
+**⌗ AT A SHARP MINIMUM, NOT UNCONSTRAINED.** *One-step excursions cost $\Delta\chi^2$ of $1186$
+($H_0$), $354$ ($\Omega_m$), $84$ ($\omega_b$), $23$ ($n_s$) — all four constrained on both arms.*
+
+**⌗ AND THE MINIMUM IS VERIFIED.** *Predicted $118.2$ and $170.6$; real runs at the best-fit
+parameters give $118.3$ and $171.1$ — $+0.1$ and $+0.5$.*
+
+## ⛔ NEITHER RESIDUAL IS A BACKGROUND CHOICE
+
+| | before | after | |
+|---|---|---|---|
+| acoustic phase, % out | $2.3$ | $\mathbf{4.5}$ | **worse** |
+| fourth peak, % out | $0.9$ | $0.7$ | unchanged |
+
+⇒ ***Freedom does not remove them — the phase gets worse, the fit trading it for likelihood
+elsewhere. So both are properties of the CONSTRUCTION.*** *Ratio at the verified minimum
+$\mathbf{1.45\times}$ against $2.22\times$ as-computed: freedom closes about a third of the gap and
+leaves the rest.*
+
+## ⚠ AND THE KNOB THIS RUN FOUND DEAD
+
+*`NS`, exposed and "verified" at `cc66.14`, was **shadowed** — the literal $0.965$ exists three times
+and the verification was run on the one path where the knob worked. **The flatness test caught it**
+($\Delta\chi^2 = 0.00$ for $n_s$ on both arms); fixed at `cc66.17`; the CR arm's refitted $\chi^2$
+moved $223.3\to170.6$ once the tilt was real.*
+⌗ *`receipts/P15_CR_cosmology/P15_the_refit_leaves_the_background_where_the_distances_put_it_and_does_not_close_the_phase.py`*

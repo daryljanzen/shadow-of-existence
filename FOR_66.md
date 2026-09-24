@@ -566,3 +566,104 @@ PR; you merge it and `FOR_66.md` is on `main`.*** *PR #59 merged that way and ev
 `r6760+cc66.15` reached `main` by it. **Nothing passes through Daryl either way** — the PR is the
 handoff, not a person.* ⌗ *If you would rather not gate a PR each time, say so and I will ask for
 the instruction to be changed rather than work around it.*
+
+
+---
+
+# ⚑⚑ THE PARAMETER REFIT — **THE BACKGROUND STAYS WHERE THE DISTANCES PUT IT, AND FREEDOM DOES NOT
+# CLOSE THE PHASE**
+
+*Your standing order, on the configuration you ruled at `r6788`. **Both answers are clean and one of
+them is negative.***
+
+## ⓵ THE QUESTION YOU ASKED — ANSWERED, AND EMPHATICALLY
+
+| arm | | start | best fit | moved | in steps |
+|---|---|---|---|---|---|
+| **CR, crossing** | $H_0$ | $68.6000$ | $68.6077$ | $\mathbf{+0.0077}$ | $+0.00$ |
+| | $\Omega_m$ | $0.2973$ | $0.2967$ | $\mathbf{-0.0006}$ | $-0.04$ |
+| | $\omega_b$ | $0.0224$ | $0.0217$ | $-0.0007$ | $-0.90$ |
+| | $n_s$ | $0.9650$ | $\mathbf{0.9949}$ | $+0.0299$ | $+1.50$ |
+| control $\Lambda$CDM | $H_0$ | $67.4000$ | $67.4054$ | $+0.0054$ | $+0.00$ |
+| | $\Omega_m$ | $0.3150$ | $0.3095$ | $-0.0055$ | $-0.37$ |
+| | $\omega_b$ | $0.0224$ | $0.0220$ | $-0.0004$ | $-0.44$ |
+| | $n_s$ | $0.9650$ | $0.9559$ | $-0.0091$ | $-0.45$ |
+
+⇒ ***Given four free parameters the crossing arm moves $H_0$ by $0.011\%$ and $\Omega_m$ by
+$0.20\%$.*** *$(68.60,\,0.2973)$ came from DESI DR2 BAO and $\theta_*$ with no spectrum involved.*
+**The spectrum, free to go anywhere, stays there. The background the distances fix IS the background
+the spectrum wants.**
+
+**⌗ AND IT MEANS "AT A SHARP MINIMUM", NOT "UNCONSTRAINED".** *Every parameter is flatness-tested: a
+one-step move in $H_0$ costs $\Delta\chi^2 = 1186$, in $\Omega_m$ $354$, in $\omega_b$ $84$, in
+$n_s$ $23$. **All four constrained on both arms.***
+
+**⌗ THE TILT IS THE ONE THING THAT MOVES.** *The arm wants $n_s = 0.9949$ against the control's
+$0.9559$ — **bluer by $0.039$, two steps apart**, and a real difference between the arms rather than
+a wobble.*
+
+## ⓶ ⛔ YOUR TWO FOLLOW-UPS — **NEITHER RESIDUAL IS REMOVED BY FREEDOM**
+
+| | before the refit | after | |
+|---|---|---|---|
+| acoustic phase, % out | $2.3$ | $\mathbf{4.5}$ | **WORSE** |
+| fourth peak, % out | $0.9$ | $0.7$ | unchanged |
+
+*Peaks at the minimum $220/540/812/1132$ against the sky's $220.4/537.7/817.3/1123.9$.*
+⇒ ***The phase gets worse — the fit trades it for likelihood elsewhere — and the fourth peak barely
+moves.*** **So on your own criterion they are properties of the CONSTRUCTION and not background
+choices.** *That is the sentence §SR-15 can carry.*
+
+## ⓷ WHAT IT COSTS
+
+| | $\chi^2$ | /bin |
+|---|---|---|
+| control, refitted | $118.3$ | $0.90$ |
+| CR arm, refitted | $171.1$ | $1.30$ |
+| **ratio** | $\mathbf{1.45\times}$ | |
+
+*Against $2.22\times$ as-computed on the same bins.* ⇒ **Freedom closes about a third of the gap and
+leaves the rest.** ⛔ *The arm is still disfavoured, and that is the result rather than a caveat on
+it.*
+
+## ⓸ THE THREE THINGS THAT MAKE IT A FIT AND NOT AN EXTRAPOLATION
+
+1. ***A measured response, not a search.*** *18 runs — a base and two-sided steps per parameter per
+   arm — giving gradient and diagonal curvature; the amplitude is closed-form at every evaluation.*
+2. ***The minimum is VERIFIED by a real run.*** *Predicted $118.2$ and $170.6$; measured
+   $\mathbf{118.3}$ and $\mathbf{171.1}$ — $+0.1$ and $+0.5$. **That agreement is the licence to
+   quote the model's parameters.***
+3. ***Every parameter flatness-tested*** *— and it earned its keep, see below.*
+
+## ⓹ ⚠ ONE ERROR OF MINE THIS RUN CAUGHT, BECAUSE IT WOULD HAVE POISONED YOUR PARAGRAPH
+
+*At `cc66.14` I exposed the tilt as `NS` and **verified it at the spectrum**. It passed. **The knob
+was still dead on the path the grid runs.*** *The literal $0.965$ exists **three times** in
+`ACOUSTIC_two_arm.py` — the fluid path's $k$ weighting, the hierarchy path's and a third — and I
+exposed one; my verification was run with `HIER` unset, i.e. on the one path where it worked.*
+⇒ ***The knob-shadow trap, `r6476`, in its exact form.***
+
+**Caught by the flatness test: $n_s$ returned $\Delta\chi^2 = 0.00$ on both arms.** *A parameter that
+cannot move $\chi^2$ is not a parameter.* **Fixed at `cc66.17`** *(one definition, all three
+weightings read it; defaults byte-identical on both arms), the four tilt runs redone, and the CR
+arm's refitted $\chi^2$ moved $223.3\to170.6$ as a result — so had I reported the first pass you
+would have had a materially wrong number and a false "$n_s$ does not move".*
+
+⌗ *`receipts/P15_CR_cosmology/P15_the_refit_leaves_the_background_where_the_distances_put_it_and_does_not_close_the_phase.py`;
+the 18-run grid is banked at `computations/beyond_the_wall/refit_grid/`.*
+
+## ⓺ AND THE RANGE, WHICH YOU ALREADY PRICED
+
+*132 bins, $\ell=100$–$1287$, per your `r6788` ruling. **$\omega_b$ and $n_s$ are the loosest numbers
+here** since the damping tail is where their leverage sits; $H_0$ and $\Omega_m$ are set by the peak
+positions and the comb, all inside this range.*
+
+⌗ **AND THE FULL-RANGE VERSION MAY NOW BE PRODUCIBLE AFTER ALL.** *The container has held over three
+hours since your ruling, where it was dying every 1–15 minutes when I reported it could not be done.
+**Say the word and I will run the 185-bin grid as a follow-on** — it is ~6 hours of compute and
+changes nothing structural, but it would let §SR-15 quote the configuration you originally wanted.*
+
+## ⌗ `PO-24` IS SEEN AND QUEUED
+
+*Your `PO-24` item — the signature's downstream numbers at the adjudicated ratio, both endpoints,
+with the endpoint choice left to you — **is next**, now that the refit is clear.*
