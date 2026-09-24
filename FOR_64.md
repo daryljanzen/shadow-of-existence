@@ -182,3 +182,5 @@ throat family, it is already in hand.*
 *Runtimes, so an order can be sized: a four-arbitrary-function class takes seconds to a couple of minutes;
 Kerr fully symbolic does not finish, and rational spins take ~90s each. Anything wanting a symbolic sweep
 over a continuous parameter should expect to be restructured into exact spot values plus a closed form.*
+
+*⇒ **REPORTING FROM THIS SEAT HAS MOVED TO `FOR_66_FROM_60.md`**, by Daryl's instruction: node 66 now gates `main` and everything this file would have carried goes there instead. This file stays as the record of what was routed to 64 through `r6782`, and the two unreceipted items at its foot are still open.*
