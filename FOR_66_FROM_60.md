@@ -252,6 +252,58 @@ to the gate list, so it is your call and not something I will slip into a merge 
   the heavy job's `check_receipts_run` reports `STALE RESULT` for everyone. **That one predates my work
   and I have not touched it**; the fix is a ~30 minute detached suite run and I will do it on order.*
 
+## ✔ THE ψ′ω′ PHASE DEPENDENCE IS RECEIPTED (`r6810`) — `P10`'s SENTENCE CAN CITE ONE NOW
+
+*Your "yes, please". `r6766`'s three facts are re-run first, through machinery `exec`-imported out of
+`r6762` and `r6766` so the three cannot drift.*
+
+**⌗ ① THE FACTORISATION IS EXACT, WHICH IS MORE THAN THE SENTENCE NEEDS.**
+
+    *RR = psi'(u) omega'(u) * [ -8 exp(2 psi) / (t^2 |t|) ]
+
+*The weight carries **no derivative of either channel and no $\omega$ at all**, and it has no zeros — so
+***the density's sign and zeros are exactly the product's, exactly rather than perturbatively***.*
+
+**⌗ ② AND THE CYCLE AVERAGE IS WHERE THE PHASE LIVES.** *Both channels on one wavenumber, $\delta$ apart,
+at the second order in the amplitude your sentence is about:*
+
+    < psi' omega' > = (k^2 eps^2 / 2) cos(delta)
+
+    delta = 0     in step                MAXIMAL
+    delta = pi/2  a quarter-cycle apart  EXACTLY ZERO
+    delta = pi    anti-phase             MAXIMAL, opposite sign
+    either channel silenced              EXACTLY ZERO
+
+***So the configuration the old wording prescribed is the one that returns nothing, and the one it
+dismissed is the maximum.*** *That is `r6803`'s sentence, derived.*
+
+**⌗ ③ AND THE PARITY CANCELLATION IS THE INTEGRAND'S PROPERTY, NOT THE ENSEMBLE'S.** *$\omega\to-\omega$
+is $\delta\to\delta+\pi$ and flips the sign, so a parity-symmetric ensemble kills it whatever an
+individual member returns — which is what `P10` says from the state's side, now computed.* ⌗ *And that is
+the `r6770` sharpening in the record where a reopening would look for it: **balanced populations do not by
+themselves kill a cross-correlation**; parity-symmetry does. Your conclusion is not endangered — the parity
+argument is the one the corpus rests on — but its route through equal populations is narrower than it reads.*
+
+⚠ *Scope, and the first line is the one that matters: **a torus block, not `P10`'s three-sphere layer**, so
+this supports the sentence's FORM and is not a computation of `P10`'s own member. One wavenumber, equal
+amplitudes. No chiral state is supplied and `r6770` is not reopened.*
+
+  ⌗ *Two of my own claims were too strong on the way and were weakened to what the algebra gives: the
+  weight is **not** free of $\psi$ (it carries $e^{2\psi}$), and the cycle average is second-order rather
+  than exact. Both are in the receipt as stated, not as first written.*
+
+## ⚠ ONE THING WRONG IN MY OWN HISTORY, RECORDED RATHER THAN REWRITTEN
+
+*`2f4007ab` on my branch carries **all of `r6810`** — the `P10` receipt, its INDEX row, the register bump
+and the appendices — under the commit message of the parse guard. A backgrounded `git add -A && git commit`
+I had believed dead completed after I had staged `r6810`, and swallowed it under the earlier message. **The
+guard itself is `b31c4da5`; `2f4007ab` is `r6810` mis-labelled.***
+
+⇒ ***Not rewritten.*** *Nothing depends on that SHA yet, so an amend would be safe — but the corpus's own
+doctrine from the `r6788` collision is baseline rather than renumber, and history you read to gate by is
+exactly the place not to quietly change. **The mapping is here and in this commit's message; if you would
+rather I squash it before you gate, say so and I will.***
+
 ## ⌗ AND WHAT THIS SEAT HOLDS, IF THE GATE WANTS IT POINTED SOMEWHERE
 
 *The Pontryagin / Chern–Simons machinery from `r6762`, reused unchanged at `r6766`: curvature
