@@ -426,13 +426,16 @@ This is the one genuinely CR-specific piece of the height pattern: a real signat
 
 One thing about this signature is settled and one is not, and it is essential to keep them apart. 
 
-Settled: the ${\sim}9\%$ in $r_D$ is genuinely CR-specific and does not dissolve under the density that would ordinarily rescale it---$r_D\propto\omega_b^{-0.31}$, so a percent-level $\omega_b$ (fixed by primordial deuterium and the peak-height ratio) shifts it by well under a percent (receipt: \texttt{damping\_reabsorption.py}\rcpt{P15_damping_reabsorption}). \emph{And what the signature does to the observed high-$\ell$ power is measured, with a verdict that is
+Settled: the effect in $r_D$ is genuinely CR-specific and does not dissolve under the density that would ordinarily rescale it---$r_D\propto\omega_b^{-0.31}$, so a percent-level $\omega_b$ (fixed by primordial deuterium and the peak-height ratio) shifts it by well under a percent (receipt: \texttt{damping\_reabsorption.py}\rcpt{P15_damping_reabsorption}). \emph{And what the signature does to the observed high-$\ell$ power is measured, with a verdict that is
 neither of the two a reader expects.} Scaling the diffusion length by the instrument's own measured ratio
 multiplies the damping by a Gaussian in $\ell$, and a tilt is a power law --- so over a restricted high-$\ell$
 range the one is well approximated by the other. \emph{Refitting amplitude and tilt therefore absorbs the
-signature almost entirely in shape}, leaving $0.26$ in $\chi^{2}$ per bin over the $185$-bin ceiling and less the higher one
-looks. \emph{But the absorption is bought, not free}: it costs a shift of $-0.0304$ in the inferred tilt
-against a $\sigma$ of $0.00323$ derived from the same covariance that scores the fit. \emph{So the signature
+signature almost entirely in shape}, and what it costs is a shift in the inferred tilt. \emph{Both the
+residual and the shift scale with $r^{2}-1$}, so they are fixed by the same two choices the ratio is: where
+the plasma is handed over, and how far the diffusion integral is carried. At the branch point with the
+integral taken to recombination that factor is $0.045$, where a ratio of $1.082$ gives $0.171$---so the
+figures quoted for the larger ratio scale down with it, and with the integral taken to the visibility peak
+instead the sign reverses. \emph{So the signature
 does not vanish under a refit --- it moves out of the spectrum's shape and into an inferred parameter.}
 \emph{What a refit buys in shape it pays for in parameters}, and that direction is the robust part.
 
@@ -468,8 +471,8 @@ Gaussian-minus-power-law shape to a correlation of $1.000000$ --- \emph{not mere
 predicted form}. \emph{It survives at $1.50$ in $\chi^{2}$ per bin} over the $185$-bin ceiling
 window on the instrument's own control spectrum, which is larger than either figure above and
 consistent with the ordering they already record, the more faithful route being the larger.
-\emph{And the displacement is not one number}: fitted over $\ell=100$--$1760$ it is $-0.083$, over
-$\ell=1400$--$2508$ it is $-0.521$ --- a factor of $6.3$ across windows of the same data, so a
+\emph{And the displacement is not one number}: fitted over $\ell=100$--$1760$ and over
+$\ell=1400$--$2508$ it differs by a factor of $6.3$ across windows of the same data, so a
 displacement is the value of nothing without the window it was fitted over. \emph{In the
 likelihood's own units} the signature costs $+357$ in $\chi^{2}$ with amplitude alone and $+85$ over
 $171$ bins once the tilt is refitted: \emph{the fit improves the comparison by three quarters of the
