@@ -90,6 +90,16 @@ BSPLIT = os.environ.get('BSPLIT', '1') != '0'  # baryons at their OWN contrast (
 # ---- the two backgrounds -----------------------------------------------------------------------
 if ARM == 'lcdm':
     H0, OM, OMBH2 = 67.40, 0.3150, 0.0224
+    # ** LH0 / LOM: THE CONTROL'S BACKGROUND, EXPOSED r6760+cc66.14 AT 66 (chat)'s REFIT ORDER. **
+    # *`CRH0` and `CROM` opened the CR arm's H0 and Omega_m at cc66.4; the CONTROL's stayed
+    # literals, so "refit BOTH arms with the same freedom each" was not runnable -- the control
+    # could not be moved at all.*  ** Set BEFORE `OR` is formed so they carry into
+    # Omega_r = 4.15e-5/h^2, Omega_b = Ombh2/h^2, the rate and therefore D_M, r_s and the
+    # projection together, which is what changing them MEANS. **
+    # *Default unset = byte-identical.*
+    H0 = float(os.environ.get('LH0', H0))
+    OM = float(os.environ.get('LOM', OM))
+    OMBH2 = float(os.environ.get('WBH2', OMBH2))
     FNU, Z_REC = 0.4052, 1089.9
     OR = 4.15e-5 / (H0 / 100) ** 2
     RAD_IN_RATE = True
@@ -111,6 +121,7 @@ else:
     #   three before any spectrum was read off it. **
     # *Default unset = byte-identical.  `CROM` sets this arm's Omega_m alongside it.*
     H0 = float(os.environ.get('CRH0', H0))
+    OMBH2 = float(os.environ.get('WBH2', OMBH2))
     FNU, Z_REC = 0.4052, 1089.9
     OR = 4.15e-5 / (H0 / 100) ** 2
     RAD_IN_RATE = False                        # ** radiation is content, not a source **
@@ -152,6 +163,12 @@ RB_REC = 31500 * OMBH2 / (2.7255 / 2.7) ** 4 / (1 + Z_REC)
 # compression/rarefaction asymmetry) -- the diagnostic for whether the second-gap contraction
 # (the odd-even alternation) is loading-driven.  A diagnostic lever, not a physics change. **
 RB_REC = float(os.environ.get('RBFAC', '1.0')) * RB_REC
+# ** OMBH2 IS NOW SETTABLE TOO, r6760+cc66.14 -- `WBH2` -- and it is NOT the same knob as RBFAC. **
+# *`RBFAC` scales the baryon LOADING only.  omega_b also sets the free-electron density and
+# therefore the ionisation history, the visibility and the diffusion length: it enters `xe_history`
+# and `n_H0_of` below as well as `RB_REC` above.*  ** So a refit in omega_b must move BOTH, which
+# `RBFAC` cannot do and `WBH2` does. **  *Applied above where OMBH2 is first read, so everything
+# downstream sees one value; default unset = byte-identical.*
 
 
 def Hphys(a):
@@ -876,7 +893,15 @@ def los_spectrum(kk, ee, Y, L_A, D_M, R_S):
     print(f"  line-of-sight: visibility peak eta = {ETA_LS:.2f}, FWHM = {ETA_LS_W:.1f} Mpc, "
           f"{len(ee)} samples over eta = {ee[0]:.0f}-{ee[-1]:.0f}")
     dk = np.gradient(kk)
-    P = kk ** (0.965 - 1) / kk * dk
+    # ** NS: THE PRIMORDIAL TILT, EXPOSED r6760+cc66.14 AT 66 (chat)'s REFIT ORDER. **
+    # *It was the literal 0.965 inside the k weighting -- the SEVENTH hardcoded parameter of this
+    # class found in this file -- so the refit the abstract quotes could not be run on this
+    # instrument at all: n_s was not a knob.*
+    #   ⇒ ** It weights the k INTEGRAND, P(k) dk ~ k^(n_s-1) dk/k, so it is not an ell-space
+    #   rescaling and a change costs a full projection.  The ODE solve is independent of it, but
+    #   this file does not cache that, so one n_s costs one run. **
+    # *Default 0.965 = byte-identical; nothing moves unless it is set.*
+    P = kk ** (float(os.environ.get('NS', '0.965')) - 1) / kk * dk
     x0 = eta_0 - ee
     ls = np.arange(100, int(LMAXL), int(os.environ.get('LSTEP', '8')))
 
