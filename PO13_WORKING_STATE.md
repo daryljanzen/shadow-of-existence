@@ -3386,3 +3386,39 @@ sentence describes measures $1.02830$, $+2.83\%$.* ⇒ *The choice is between tw
 ruling's own argument carries it without that support, and the paper's sentence should be corrected.*
 
 ⌗ *`receipts/P15_CR_cosmology/P15_the_signature_collapses_at_the_adjudicated_ratio_and_the_endpoint_sets_its_sign.py`, `PART 1b`*
+
+---
+
+# ⚑ r6801+cc66.22 — THE LOW-MULTIPOLE FLOOR ON THE ADJUDICATED BACKGROUND
+
+*Order ② (a): the depth at $\ell=2$–$8$, both Boltzmann arms, one number for the disagreement.*
+
+| $\ell$ | 2 | 3 | 4 | 5 | 6 | 7 | 8 |
+|---|---|---|---|---|---|---|---|
+| arm A (CAMB exact $\Delta_\ell$) | $0.4874$ | $0.4348$ | $0.3590$ | $0.6663$ | $0.9113$ | $0.9831$ | $0.9981$ |
+| arm B (photon hierarchy) | $0.4905$ | $0.2511$ | $0.1779$ | $0.5998$ | $0.8959$ | $0.9813$ | $0.9967$ |
+| A/B | $0.994$ | $1.731$ | $\mathbf{2.018}$ | $1.111$ | $1.017$ | $1.002$ | $1.001$ |
+
+⇒ **The number is $2.02$ at $\ell=4$ and it WIDENED** *(control $1.84$)*. **The geometry does not
+move**: $r_0 = 5064.75 \to 5051.49$ Mpc ($-0.26\%$), $\ell_2 = 7.74 \to 7.81$, so this is a depth
+measurement and not a geometry one. *The shape still cross-validates — minimum at $\ell=4$, recovery
+by $\ell=8$, on both arms and both backgrounds.*
+
+⛔ **THE CAUSE IS THE LATE ISW.** *Not the geometry — $1\%$ in $r_0$ buys $3.5\%$ at $\ell=4$ against
+a $102\%$ gap. Arm B's line-of-sight cut is `ETAEND` $=20\,a_{\rm rec}$, $z=53.5$; pushing it to
+$z=15$ moves $\ell=3$ and $\ell=4$ **towards** arm A ($12\%$ of the way), which is the direction the
+diagnosis predicts. **And the hierarchy goes non-finite past $z\simeq10$** under the defaults and
+under `NS3=4000` and `NS3=12000, HKCAP=0.02` — not a step-size failure.*
+
+⇒ ***So (b)'s condition — "if the two paths can be brought together" — is not met, and (b) is not
+run.*** *What would earn it: carry the post-recombination source with the photon hierarchy
+**decoupled**, since $\Phi'+\Psi'$ needs the metric and matter sector only. An instrument build, not
+a knob, and not made unbidden.*
+
+⌗ **TWO CHANGES MADE TO ASK THE QUESTION.** *`H0_L` exposed on the hierarchy's control branch
+(default byte-identical; the literal $67.40$ in `Or_content` replaced by `H0`, which is the
+correction away from the default). And both arms given ONE $r_0$ — the banked run's $2.75/D_M$ ladder
+implied $5042$ Mpc against the formula's $5065$; re-run separately it reproduces the banked quartet
+to $2\%$, so the $4.8\%$ that correction costs is measured.*
+
+⌗ *`receipts/P15_CR_cosmology/P15_the_low_multipole_floor_moves_with_no_background_and_the_factor_two_is_the_late_isw.py`*
