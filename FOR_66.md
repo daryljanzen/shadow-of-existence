@@ -877,3 +877,109 @@ if it keeps $0.991$.*
 ⌗ *All four readings and the gates are in `PART 1b` of
 `receipts/P15_CR_cosmology/P15_the_signature_collapses_at_the_adjudicated_ratio_and_the_endpoint_sets_its_sign.py`,
 on `PR #65`. **Nothing here is mine to edit — the papers are yours; this is the pointer.***
+
+---
+
+# ⚑⚑ ORDER ② (a) IS IN — **THE FLOOR DOES NOT MOVE, THE FACTOR TWO DOES NOT CLOSE, AND IT IS THE
+# LATE ISW**
+
+*`r6801+cc66.22`. The depth at $\ell=2$–$8$ on the adjudicated background, both paths, and the
+disagreement as **one number**.*
+
+## ⓵ THE GEOMETRY DOES NOT MOVE — WHICH IS WHAT MAKES (a) A DEPTH MEASUREMENT
+
+*$r_0$ computed from `sec:largescale`'s own parameter-free formula
+$2^{1/3}\Lambda^{-1/2}\sinh^{2/3}u$, **asserted to reproduce the paper's $5064$ Mpc on the control
+before being used anywhere** ($5064.75$).*
+
+| background | $\Lambda^{-1/2}$ | $u$ | $r_0$ | $\ell_2$ |
+|---|---|---|---|---|
+| control $(67.40,\,0.3150)$ | $3102.81$ | $1.18062$ | $5064.75$ | $7.74$ |
+| **adjudicated $(68.60,\,0.2973)$** | $3009.89$ | $1.21533$ | $\mathbf{5051.49}$ | $\mathbf{7.81}$ |
+
+⇒ *A $1.8\%$ rise in $H_0$ and a $5.6\%$ fall in $\Omega_m$, and the radius $\Lambda$ sets moves
+**$-0.26\%$** — the two enter $\Lambda^{-1/2}$ and $\sinh^{2/3}u$ with opposite signs.*
+
+## ⓶ THE DEPTHS, AND THE DISAGREEMENT AS ONE NUMBER
+
+*Adjudicated background, both arms given the **same** $r_0$:*
+
+| $\ell$ | 2 | 3 | 4 | 5 | 6 | 7 | 8 |
+|---|---|---|---|---|---|---|---|
+| **arm A** (CAMB exact $\Delta_\ell$) | $0.4874$ | $0.4348$ | $0.3590$ | $0.6663$ | $0.9113$ | $0.9831$ | $0.9981$ |
+| **arm B** (the programme's hierarchy) | $0.4905$ | $0.2511$ | $0.1779$ | $0.5998$ | $0.8959$ | $0.9813$ | $0.9967$ |
+| **A/B** | $0.994$ | $1.731$ | $\mathbf{2.018}$ | $1.111$ | $1.017$ | $1.002$ | $1.001$ |
+
+⇒ **THE NUMBER IS $2.02$, AT $\ell=4$**; $1.73$ at $\ell=3$; under $1\%$ at $\ell=2$ and under $2\%$
+from $\ell=6$ up. ⛔ **AND IT WIDENED** — on the control the worst point is $1.84$. ***The background
+the distances fix does not bring the two treatments together; it separates them further.***
+
+⌗ *The **shape** still cross-validates: minimum at $\ell=4$ and recovery by $\ell=8$ on **both arms
+and both backgrounds**. It is the depth alone that is open, and now it has a cause.*
+
+## ⓷ ⛔ **THE CAUSE: THE LATE ISW, WHICH ARM B DOES NOT HAVE**
+
+**It is not the geometry, and that is measured.** *Re-summing the same transfer with $r_0$ alone
+moved: **$1\%$ in $r_0$ buys $3.5\%$ at $\ell=4$**, against a $102\%$ gap. The two arms' distances
+differ by about a tenth of a per cent.*
+
+**It is the late ISW.** *Arm B's line-of-sight integration stops at `ETAEND` $=20\,a_{\rm rec}$,
+i.e. **$z=53.5$**. `P15_verify_lowell_boltzmann`'s own diagnosis is that the late ISW at low $\ell$
+is sourced **above** the discrete floor and is therefore **retained** by the CR sum — power that
+**fills** the deficit. Omitting it must make the deficit **deeper**, and arm B is deeper, at exactly
+the multipoles where they disagree. **Directional prediction, and it tests:***
+
+| cut at $z$ | $\ell=2$ | $\ell=3$ | $\ell=4$ | $\ell=5$ |
+|---|---|---|---|---|
+| $53.5$ (default) | $0.4905$ | $0.2511$ | $0.1779$ | $0.5998$ |
+| $30$ | $0.4963$ | $0.2616$ | $0.1808$ | $0.5997$ |
+| $15$ | $0.5043$ | $0.2728$ | $0.1841$ | $0.6000$ |
+| *arm A* | *$0.4874$* | *$0.4348$* | *$0.3590$* | *$0.6663$* |
+
+⇒ *$\ell=3$ and $\ell=4$ move **towards** arm A, $12\%$ of the way by $z=15$. The sign is the
+diagnosis's; the size is not enough, because most of the late ISW is below $z=2$.*
+
+## ⓸ **AND THE ARM CANNOT BE TAKEN THERE — SO (b)'s CONDITION IS NOT MET**
+
+| cut at $z$ | settings | $\ell=2$ |
+|---|---|---|
+| $11$ | defaults | $0.5163$ |
+| $8$ | defaults | **NON-FINITE** |
+| $8$ | `NS3=4000` (4× finer late grid) | **NON-FINITE** |
+| $8$ | `NS3=12000`, `HKCAP=0.02` | **NON-FINITE** |
+
+⇒ ***The truncated free-streaming hierarchy ($L_G=L_N=12$) goes non-finite once the cut passes
+$z\simeq10$, and it is not a step-size or freeze-threshold failure: three refinements fail
+identically.***
+
+**So I have NOT run (b).** *You wrote it conditional — "if the two paths can be brought together" —
+and they cannot. **A low-$\ell$ confrontation run today would be scoring ONE arm and calling it the
+prediction**, which is the thing §largescale's "the depth is not cross-validated" exists to prevent.*
+
+**⌗ WHAT WOULD EARN (b), AND IT IS A BUILD RATHER THAN A KNOB.** *Carry the post-recombination
+source with the photon hierarchy **decoupled**: $\Phi'+\Psi'$ needs the metric and matter sector
+only, not the free-streaming tower whose $L_G=12$ truncation is what goes non-finite. **That is an
+instrument change and I have not made it unbidden — say the word and it is the next build.***
+
+## ⓹ ONE KNOB EXPOSED, AND ONE CORRECTION MEASURED RATHER THAN WAVED AT
+
+1. ***`H0_L`.*** *`HIER_photon_hierarchy` has taken an $H_0$ on its **CR** branch since `r2373` and
+   never on its control branch, so "both arms on one background" could not be asked for. Exposed;
+   the literal $67.40$ inside `Or_content` replaced by `H0` in the same line — **identical at the
+   default, and away from it the correction**, since $\Omega_r=\omega_r/h^2$.*
+2. ***The ladder.*** *The banked arm-B run used $k_L=\sqrt{L(L+2)}\times2.75/D_M$, an implied
+   $r_0=5042$ Mpc against the formula's $5065$ — a mismatch **inside** a comparison whose whole
+   content is a discrepancy. Both arms now read one $r_0$; the banked ladder is re-run separately and
+   reproduces $0.494/0.243/0.184/0.61$ to $2\%$, so **the $4.8\%$ that correction costs is measured
+   and not an excuse for a loose tolerance.** (My first draft asserted $5\%$ agreement and $\ell=4$
+   missed at $5.05\%$; that is what forced the measurement.)*
+
+⌗ *`receipts/P15_CR_cosmology/P15_the_low_multipole_floor_moves_with_no_background_and_the_factor_two_is_the_late_isw.py`
+— rc=0, six parts, 17 gates.*
+
+## ⌗ AND ORDER ① IS STILL RUNNING
+
+*The $185$-bin grid launched at 19:14 UTC, four at a time, `LMAXL=2000` `LSTEP=8` `KFAC=2.0`,
+idempotent so a restart costs at most the in-flight batch. **First batch still in its $k$-loop at the
+time of this push** — the full-range runs are roughly three times the $132$-bin ones. I will report
+the death if it dies, per your order.*

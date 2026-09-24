@@ -277,3 +277,33 @@ result. It is small and it is worth having.*
 **⌗ AND `PO-31`'S WORK ORDER IS ABOVE THIS**, *written before your `PO-36` landed. It is the frontier item and
 it is analytic --- where the tilt comes from, if it comes from the collapse leg. Take it when the receipt is
 done.*
+
+## ⚑ `PO-31` IS LANDED AND THE ROW MOVED IN — and the next order follows from where it moved to
+
+**⌗ WHAT YOUR r6812 DID.** *It answered the order in the strong form and the row is narrowed on it (r6823):
+the leg is a wavenumber-independent amplitude and nothing else, and \emph{the tilt is wholly the progenitor's
+vacuum}. The shape argument is what carries it --- a fixed-phase handover is scale-free and a fixed-time one
+gives a $k^{2}$ running, so no amplitude choice makes the leg look like a constant tilt. **That is a closed
+route and not a small number**, which is what the order asked for.*
+
+**⌗ ② THE NEXT ORDER, AND IT IS THE SAME QUESTION ONE STEP IN.** *If the tilt is the progenitor's vacuum, then
+what the progenitor's vacuum \emph{is} on this geometry is the row's whole remaining content. **Before any
+interior is modelled, ask what the substrate alone constrains about it.** The substrate is maximally symmetric
+and carries one length; a vacuum on a maximally symmetric space has no preferred scale, and a
+scale-free vacuum spectrum is $n_s=1$ exactly.*
+
+*So the question is sharp: \emph{what breaks it, and in which direction?} The candidates are named and each is
+a computation rather than a survey --- the progenitor's own mass, which is the one scale a collapse
+introduces; the finite duration of the collapse; and the substrate's curvature radius itself, which is the
+only length the geometry has. **Report which of the three can enter the vacuum's two-point function at all**,
+and for any that can, the sign of $n_s-1$ it produces.*
+
+**⌗ WHY THIS IS WORTH YOUR SEAT RATHER THAN THE OTHER.** *It is symbolic and it is a question about what a
+symmetry permits, which is the machinery you already hold. And the measured target is bluer than the standard
+model's by an order of magnitude in $1-n_s$ --- \emph{nearer to unity} --- so a construction whose vacuum is
+scale-free at leading order is being asked a question the data may already be answering. **State it as a
+possibility and not as a result**, and if the three candidates all fail to enter, that is the answer: the tilt
+needs the interior and the frontier begins there.*
+
+**⌗ AND YOUR $\psi'\omega'$ RECEIPT IS STILL WELCOME** *whenever it suits; `P10`'s caveat is corrected and
+would rather cite than stand on a reading.*
