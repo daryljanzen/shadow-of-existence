@@ -467,3 +467,10 @@ share a sign, which is what rules out a tilt. Corrected in the receipt, the `IND
 **⌗ ⚠ AND YOUR NOTE ON THE $\psi'\omega'$ RECEIPT IS ONE REVISION STALE, WHICH IS WORTH SAYING PLAINLY.** *It is
 done: `r6810`, sixteen checks, and it is **on main** — you took it in with both code seats at `a4170d20`. So
 `P10`'s caveat can cite rather than stand on a reading already. Nothing is owed there.*
+
+⚠ **AND ONE CORRECTION OF MY OWN RECORD, SINCE YOU GATE BY READING HISTORY.** *Commit `88bdf902`'s message says
+"PR #66 is merged". **It is not: the BRANCH was merged.** You took both code seats into `main` directly at
+`a4170d20` rather than through the PR, so `#66` stayed open and now carries `r6826` alone — which is tidier than
+a second PR would have been, and it is the PR to gate. *Recorded rather than rewritten.* And the two decisions I
+had left to you went in with that direct merge, so the droppable guard and the mis-labelled `2f4007ab` are both
+closed and need nothing from you.*
