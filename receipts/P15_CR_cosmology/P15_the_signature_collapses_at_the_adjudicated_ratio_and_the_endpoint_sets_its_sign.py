@@ -7,14 +7,27 @@ OF THE ROW WAS COMPUTED AT, WHERE THE SAME TEST COSTS $159.9$ AND $-0.0341$. **
 
 ** ⇒ AND THE TWO ENDPOINTS DISAGREE IN SIGN, NOT ONLY IN SIZE. **  To recombination the arm's
 $\theta_D/\theta_*$ is $1.0231$ of the control's and the absorbing tilt is NEGATIVE; to the
-visibility peak it is $0.9918$ and the tilt is POSITIVE.  *** Which endpoint the corpus reads $r_D$
-to is the papers' question and is NOT settled here.  Both are reported; neither is chosen. ***
+visibility peak it is $0.9918$ and the tilt is POSITIVE.  *This seat reported both and chose
+neither, as ordered.*
+
+*** ⚑ AND THE CHAT SEAT THEN SETTLED IT AT `r6797`: BOTH LENGTHS TERMINATE AT THE VISIBILITY PEAK,
+because $\theta_D/\theta_*$ is a ratio of two lengths the plasma accumulates and the observed angle
+is read there. ***  ** So the VISIBILITY-PEAK ROW IS THE ONE THAT STANDS, and the ruled number is
+$r = 0.99179$, $-0.82\%$, at the adjudicated background -- not the $-0.9\%$ the ruling quotes, which
+is that reading at the $H_0 = 73.00$ background the row's figures came from. **  *The recombination
+row is kept because it is what the corpus carried and because the sign turning on the epoch is the
+result; it is not an open alternative.*  PART 1b carries the settlement.
 
 Built r6788+cc66.19 (node 66, code seat), discharging node 66 (chat seat)'s `PO-24` order --
 "re-run the joint amplitude-and-tilt fit against the CR spectrum with the signature at the
 adjudicated ratio, on both endpoints, reporting the per-bin residual after the fit, the tilt
 displacement with its window stated, and the likelihood cost with amplitude alone against amplitude
 and tilt."
+
+** PART 1b ADDED AT r6797+cc66.20 ** *when the chat seat settled the endpoint and asked for the
+common-endpoint number if it is not exactly $0.991$.  Nothing else in the receipt moved: the ruled
+configuration was already the row labelled "to the visibility peak", because the integrals share one
+upper limit.*
 
 ===================================================================================================
 ** WHAT MOVED, AND WHY THE ROW HAD TO BE RE-PRICED **
@@ -176,6 +189,58 @@ check("** and the two endpoints still STRADDLE ONE, so the sign is the endpoint'
 check("the arm's r_D endpoint and the control's are each that arm's own visibility peak, "
       "0.3-0.8% apart in redshift and not shared",
       abs(ARM['a_vis'] - CTL['a_vis']) / CTL['a_vis'] > 1e-3)
+
+# =================================================================================================
+print()
+print(BAR)
+print("  PART 1b -- ** THE ENDPOINT, SETTLED AT r6797: BOTH LENGTHS TO THE VISIBILITY PEAK **")
+print(BAR)
+# ** THE CHAT SEAT SETTLED THIS AFTER THE RUN AND ITS REASON IS CHECKABLE, SO IT IS CHECKED. **
+# `r6797`: theta_D/theta_* is a ratio of two lengths the plasma accumulates, the observed angle is
+# read at the peak of the visibility function, so r_s and r_D both terminate there.  *The RULING is
+# the papers' and is not second-guessed here.  What is measured is whether the instrument needed
+# surgery to obey it, and whether the number it produces is the one the ruling's rationale names.*
+print("  ** THE INSTRUMENT NEEDED NO SURGERY. **  machinery()'s r_s(a_hi) and r_D(a_hi) take ONE")
+print("  upper limit, so 'both lengths to the same epoch' is what every row above already does.")
+print("  *The ruling is obeyed by construction and nothing was substituted for it.*")
+print()
+print(f"  {'r_s runs to':>14} {'r_D runs to':>14} {'ratio':>10} {'':>10} {'reading':>10}")
+
+
+def ratio(ep_s, ep_D, arm):
+    return ((arm['r_D'](arm[ep_D]) / arm['r_s'](arm[ep_s]))
+            / (CTL['r_D'](CTL[ep_D]) / CTL['r_s'](CTL[ep_s])))
+
+
+MIX = {}
+for es in ('a_rec', 'a_vis'):
+    for ed in ('a_rec', 'a_vis'):
+        v = ratio(es, ed, ARM)
+        MIX[(es, ed)] = v
+        tag = '** COMMON **' if es == ed else 'mixed'
+        print(f"  {es:>14} {ed:>14} {v:>10.5f} {100 * (v - 1):>+9.2f}%  {tag:>14}")
+print()
+print("  ⇒ ** THE RULED READING IS r = "
+      f"{MIX[('a_vis', 'a_vis')]:.5f}, i.e. {100 * (MIX[('a_vis', 'a_vis')] - 1):+.2f}%, AT THE ADJUDICATED BACKGROUND **")
+print(f"    and {ratio('a_vis', 'a_vis', OLD):.5f} ({100 * (ratio('a_vis', 'a_vis', OLD) - 1):+.2f}%) at the H0 = 73.00 one the")
+print("    row's -0.9% came from.  *The order asks for the number if it is not exactly 0.991; it is")
+print(f"    {MIX[('a_vis', 'a_vis')]:.5f} where the distances now put the background.*")
+print()
+print("  ⛔ ** AND ONE THING IN THE RULING'S ACCOUNT OF THE OLD NUMBER IS NOT WHAT THE CODE DID. **")
+print("  r6797 describes the +2.2% as 'the sound horizon anchored at the observed angle against a")
+print("  diffusion length taken to a sharp recombination cut' -- a MIXED reading.  *The standalone")
+print("  integration that produced +2.2% took BOTH lengths to recombination:* it is the COMMON")
+print(f"  reading at the other epoch, {MIX[('a_rec', 'a_rec')]:.5f}.  ** The mixed quantity the sentence describes")
+print(f"  measures {MIX[('a_vis', 'a_rec')]:.5f}, {100 * (MIX[('a_vis', 'a_rec')] - 1):+.2f}%, which is not the number the row carried. **")
+print("  ⇒ *So the choice is between two COMMON epochs, not between a common and a mixed reading --")
+print("     which makes the ruling's own argument the whole of its support, and it carries it.*")
+check("** the ruled reading is the common visibility-peak one, and it is NOT exactly 0.991 **",
+      abs(MIX[('a_vis', 'a_vis')] - EP['visibility peak']['r']) < 1e-9
+      and abs(MIX[('a_vis', 'a_vis')] - 0.991) > 5e-4)
+check("the corpus's +2.2% is the COMMON recombination reading, not a mixed one",
+      abs(MIX[('a_rec', 'a_rec')] - EP['recombination']['r']) < 1e-9)
+check("** and mixing the epochs is not a small effect: the four readings span 4 points **",
+      (max(MIX.values()) - min(MIX.values())) > 0.03)
 
 # =================================================================================================
 print()
@@ -379,9 +444,12 @@ print(f"""
 
   ⛔ ** AND THE SIGN IS THE ENDPOINT'S, NOT THE CONSTRUCTION'S. **  To recombination the arm damps
   MORE than the control and the absorbing tilt is negative; to the visibility peak it damps LESS
-  and the tilt is positive.  The two stopping points are 0.4% apart in redshift.  *** Which one the
-  corpus reads r_D to is the papers' question and is NOT answered here.  Both are reported and
-  neither is chosen. ***
+  and the tilt is positive.  The two stopping points are 0.4% apart in redshift.  *This seat
+  reported both and chose neither.*  ** The chat seat settled it at r6797 -- both lengths to the
+  visibility peak -- so the ruled row is the second: r = 0.99179 (-0.82%), an amplitude alone
+  costing {c1_v:.3f} over 185 bins and a tilt of {dn_v:+.5f} absorbing it to {math.sqrt(c2_v / n_v):.3f} sigma per bin. **
+  *PART 1b measures the settlement: the instrument needed no surgery to obey it, and the corpus's
+  +2.2% was the COMMON reading at the other epoch rather than the mixed one the ruling describes.*
 
   ⌗ ** WHAT THIS DOES NOT SAY. **  That the arm fits.  The refit (r6788+cc66.18) leaves it at
   1.30 per bin against the control's 0.90 on 132 bins, and the full-range lensed comparison at
