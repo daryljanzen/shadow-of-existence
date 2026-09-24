@@ -667,3 +667,110 @@ changes nothing structural, but it would let §SR-15 quote the configuration you
 
 *Your `PO-24` item — the signature's downstream numbers at the adjudicated ratio, both endpoints,
 with the endpoint choice left to you — **is next**, now that the refit is clear.*
+
+---
+
+# ⚑⚑ `PO-24` IS IN — **THE SIGNATURE COLLAPSES AT THE ADJUDICATED RATIO, AND THE ENDPOINT SETS ITS
+# SIGN**
+
+*`r6788+cc66.19`. Your order filled as written: the joint amplitude-and-tilt fit against the CR
+spectrum, signature at the adjudicated ratio, **both endpoints**, per-bin residual after the fit,
+tilt displacement with its window, and amplitude alone against amplitude and tilt. **The endpoint is
+not chosen and the structural legs are not re-derived.***
+
+## ⓵ THE NUMBERS YOU ASKED FOR
+
+*Base: the arm's own $185$-bin full-range spectrum at $(68.60,\,0.2973)$, crossing, leaf clock.
+Window $\ell = 100$–$1996$, pivot $\ell = 1000$. $\ell_D = D_M/r_D$ with the control's $r_D$, since
+the envelope imposed is the DIFFERENCE between the arm's damping and the control's.*
+
+| endpoint | $r=\theta_D/\theta_*$ | $r^2-1$ | $\ell_D$ | **amplitude alone** | **+ tilt** | $\sigma$/bin | $\delta n_s$ | in $\sigma$ | $\Delta\chi^2$ |
+|---|---|---|---|---|---|---|---|---|---|
+| **to recombination** | $1.02313$ | $+0.04679$ | $2133.5$ | $12.575$ ($0.0680$/bin) | $3.744$ ($0.0202$/bin) | $0.142$ | $-0.00926 \pm 0.00313$ | $3.0$ | $8.83$ |
+| **to the visibility peak** | $0.99179$ | $-0.01636$ | $2093.3$ | $1.698$ ($0.0092$/bin) | $0.514$ ($0.0028$/bin) | $0.053$ | $+0.00335 \pm 0.00307$ | $1.1$ | $1.18$ |
+| *`C62`, the row as written*† | *$1.08200$* | *$+0.17072$* | *$2133.5$* | *$159.935$ ($0.864$/bin)* | *$46.18$ ($0.250$/bin)* | *$0.500$* | *$-0.03414$* | *$10.9$* | *$113.76$* |
+
+† *the $1.082$ row is run at the recombination endpoint's $\ell_D$, not `C62`'s own $1951.9$, so the
+three rows differ in $r^2-1$ and in nothing else. At `C62`'s $\ell_D$ the adjudicated rows read
+$0.0967$ and $0.0121$ per bin instead — a $42\%$ move that changes no verdict, and it is printed in
+the receipt rather than hidden.*
+
+⇒ **Over the same $185$ bins the row was priced on, an amplitude ALONE now absorbs the signature to
+under a tenth of a $\chi^2$ per bin on either endpoint.** *A $13$-fold collapse to recombination and
+a $100$-fold one to the visibility peak.* ⛔ ***It is the configuration that moved, not the fit.***
+
+*$\sigma(\delta n_s)$ is propagated through the fit's own parameter covariance, built from the same
+`plik_lite` covariance that scores the fit — not a recalled Planck error bar.*
+
+## ⓶ THE TWO ENDPOINTS AND **THE ONE THING I DID NOT CHOOSE**
+
+*To recombination the arm damps MORE than the control and the absorbing tilt is **negative**; to the
+visibility peak it damps LESS and the tilt is **positive**. The two stopping points are $0.4\%$
+apart in redshift. **Both reported; neither chosen — it is yours, as you said.***
+
+⌗ **AND YOUR $1.022$ / $0.991$ SURVIVE THE BACKGROUND MOVE.** *Those were computed at $H_0=73.00$,
+$\Omega_m=0.3066$. At the adjudicated $(68.60,\,0.2973)$ they are $1.02313$ and $0.99179$ —
+**$0.10$ and $0.07$ points**. The signature is not a function of the background worth quoting.*
+
+## ⓷ THE TILT'S WINDOW, WHICH IS THE PART THAT CANNOT BE QUOTED BARE
+
+| window | bins | $\delta n_s$ (to recomb.) | $\delta n_s$ (to vis. peak) |
+|---|---|---|---|
+| $100$–$1996$ | $185$ | $-0.00926$ | $+0.00335$ |
+| $100$–$1300$ | $133$ | $-0.00751$ | $+0.00272$ |
+| $700$–$1996$ | $118$ | $-0.02183$ | $+0.00793$ |
+| $1300$–$1996$ | $51$ | $-0.04354$ | $+0.01619$ |
+
+⇒ **A factor $5.8$ between the low and high windows, against $5.54$ from the ratio of their central
+$\ell$ SQUARED.** *Your $(\ell_{\max}/\ell_{\min})^2$ running, confirmed as arithmetic rather than
+re-derived. **So the displacement is meaningless without its window and I have stated mine.***
+
+## ⓸ YOUR $r^2-1$ PRICING, CHECKED RATHER THAN ASSUMED
+
+*You priced every leg of the row by scaling with $r^2-1$ — $0.045$ against $0.171$, a factor $3.8$.
+**That is an assumption about the fit, and it is cheap to test, so I tested it** at one fixed
+$\ell_D$ so nothing but $r^2-1$ moves:*
+
+| $r$ | $r^2-1$ | $\delta n_s$ vs ref | *predicted* | $\chi^2$(A alone) vs ref | *predicted* |
+|---|---|---|---|---|---|
+| $1.08200$ | $+0.170724$ | $1.0000$ | $1.0000$ | $1.0000$ | $1.0000$ |
+| $1.02313$ | $+0.046789$ | $0.2713$ | *$0.2741$* | $0.0786$ | *$0.0751$* |
+| $0.99179$ | $-0.016355$ | $-0.0943$ | *$-0.0958$* | $0.0098$ | *$0.0092$* |
+
+⇒ **The tilt is linear in $r^2-1$ to better than $2\%$ and the $\chi^2$ goes as its square to $8\%$.** *Your
+factor is $3.65$ to recombination and $10.4$ to the visibility peak; the residual it prices falls by
+those SQUARED.*
+
+## ⓹ TWO THINGS THAT COULD HAVE BEEN DOING THE WORK, AND ARE NOT
+
+1. ***The base.*** *`C62` imposed the envelope on `plik_lite`'s own binned spectrum; you ordered the
+   CR spectrum. **Run both: $\delta n_s$ agrees to $1.4\%$ and $1.5\%$.** The change of base moves
+   nothing.*
+2. ***Lensing.*** *The banked spectra are unlensed; the envelope is physical and precedes lensing, so
+   it is applied first and both are lensed together with P15's full CAMB operator. **The residual
+   moves $5\%$.***
+
+*And the fitter is controlled: injected tilts of $+0.020$ and $+0.050$ come back to $+0.01977$ and
+$+0.04856$, absorbing $99.995\%$ and $99.97\%$.*
+
+## ⓺ WHAT I DID **NOT** DO, PER YOUR ORDER
+
+*The Gaussian-against-power-law argument, the $(\ell_{\max}/\ell_{\min})^2$ slope running and the
+residual's correlation with the predicted form **stand from `C62` and are not re-derived**. PART 3
+reports the window running because you asked for the tilt "with its window stated" and PART 4 checks
+the $r^2-1$ scaling because the whole re-pricing rests on it — a claim the arithmetic depends on is
+not a structural result I can inherit.*
+
+⌗ **AND IT DOES NOT SAY THE ARM FITS.** *The refit leaves it at $1.30$/bin against $0.90$ on $132$
+bins, and the full-range lensed comparison at $2.57\times$. **This measures one thing — what the
+diffusion scale's displacement does to the observed TT power — and says that thing has become small
+enough to stop carrying the row's old arithmetic.***
+
+⌗ *`receipts/P15_CR_cosmology/P15_the_signature_collapses_at_the_adjudicated_ratio_and_the_endpoint_sets_its_sign.py`.*
+
+## ⌗ THE QUEUE IS NOW EMPTY AT THIS SEAT
+
+*`PO-24` was the last item you routed. **The $185$-bin full-range refit offer stands** (~6 hours; this
+container has held 4 hours so far, against the 1–15 minutes it was managing when I reported the
+run could not be done) — say the word in `FOR_CC66` and I will run it. Otherwise I am
+watching for the next order.*
