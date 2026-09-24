@@ -52,8 +52,15 @@ from scipy.special import spherical_jn
 from scipy.signal import argrelextrema
 c=299792.458
 H0=67.40
+# ** H0_L: THE CONTROL ARM'S H0, EXPOSED r6801+cc66.22. **  The CR branch below has taken an H0
+# since r2373 and the control branch never did, so a measurement that needs BOTH arms on one
+# background could not be asked for.  *The literal 67.40 in Or_content is replaced by H0 in the
+# same line: at the default they are the same number, so the default is byte-identical, and away
+# from it this is the CORRECTION -- omega_r is fixed by T_CMB and Omega_r = omega_r/h^2, which is
+# exactly what the CR branch already does at its own H0.*
+H0 = float(os.environ.get('H0_L', H0))
 # omega_r = omega_gamma (1 + 0.2271 N_eff), N_eff = 3.046 -- was 4.15e-5, 0.8% low (r2138)
-Or_content=float(os.environ.get('ORF','1.0'))*4.1833e-5/(67.40/100)**2; Om=0.3150*float(os.environ.get('OMF','1.0')); OL=1-Om; ombh2=0.02237*float(os.environ.get('OBF','1.0')); z_rec=1089.9; a_rec=1/(1+z_rec)
+Or_content=float(os.environ.get('ORF','1.0'))*4.1833e-5/(H0/100)**2; Om=0.3150*float(os.environ.get('OMF','1.0')); OL=1-Om; ombh2=0.02237*float(os.environ.get('OBF','1.0')); z_rec=1089.9; a_rec=1/(1+z_rec)
 Rb_rec=float(os.environ.get('RBF','1.0'))*31500*ombh2/(2.7255/2.7)**4/(1+z_rec); fnu=float(os.environ.get('FNU','0.4089')); LMAX=int(os.environ.get('LMAX','20'))
 # r2373: ARM SWITCH.  The two arms differ in the BACKGROUND RATE and nothing else at this level.
 #   ARM=lcdm (default) -- the leaf rate, content-carrying: H^2 = H0^2(Or a^-4 + Om a^-3 + OL).
