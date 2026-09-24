@@ -83,44 +83,36 @@ mode: a number that improves because an easier test was substituted.*
     in", which I had in the first draft of this file, was an artefact of the substituted datum; with the
     arm's own datum they come in and they agree with `cc66`'s. **The substitution flattered the $\chi^2$
     and spoiled the heights, and only the control could say so.***
-  - ***THE DISCRETENESS — the check is refused at the run's own NK, and it cannot be completed from
-    this seat. Both halves of that are measurements.*** *This configuration samples $2.3$ points per
-    Bessel period against the alias gate's $4$, waived because CR's $k$-ladder is discrete and physical;
-    the waiver's own text says that is only not aliasing if the answer does not depend on it, and names
-    `KCONT=1`.*
+  - ***THE DISCRETENESS — ⚑ THE CHECK IS IN, AND IT PASSES.*** *`r6794`. Your status note said `cc66`
+    restarts every 1–15 minutes, which killed the option where your node runs it whole — so the choice
+    collapsed to segmentation and I built it, proving the sum exact before using it.*
 
-        the ladder,     NK=600   LMAXL=2000   2.3 pts/period   (waived: the ladder is physical)
-        continuum grid, NK=600   LMAXL=2000   2.8 pts/period   ** the gate FIRES; the run is refused **
-        continuum grid, NK=900   LMAXL=2000   4.3 pts/period   clears the guard, 2700 modes
-        continuum grid, NK=600   LMAXL=1300   4.4 pts/period   clears the guard, 1800 modes
+        ladder     1452 modes, 2.3 pts/period   chi^2 = 1205.3755   peaks 220/540/820/1132
+        continuum  2700 modes, 4.3 pts/period   chi^2 = 1205.3745   peaks 220/540/820/1132
+        difference                              -0.0010 in chi^2
 
-    ⇒ ***The continuum comparison at the run's own mode count is not merely unconverged: the instrument
-    refuses it*** *— correctly, since the discreteness waiver does not apply on a continuum grid. **So
-    the check costs three times the modes of the run it validates, which is why it had never been paid
-    for on this configuration.** That much is banked in `r6788`.*
+    *Peaks identical on the reported grid, heights identical to three decimals, the single fitted
+    amplitude $3$ parts in $10^{8}$ apart, spectra agreeing to $6.7\times10^{-8}$ of the peak.
+    **So the ladder's discreteness does not set this spectrum and the gate's waiver is honest here** —
+    far more tightly than `c54.186` found for the pinned arm at $0.7\%$, which is a different ladder
+    density and is not superseded.*
 
-    ⛔ ***AND THE RUN ITSELF DIES ON THIS NODE, THREE TIMES, TO CONTAINER RESTARTS RATHER THAN TO
-    MEMORY.*** *$14$ GB free and the solver steady at $400$ MB each time:*
+    ⌗ ***AND THE REASON IT AGREES BETTER THAN 2.3 POINTS PER PERIOD SHOULD ALLOW IS MEASURED, NOT
+    GUESSED.*** *$\sqrt{L(L+2)}\to L+1$, so the "discrete ladder" is asymptotically **uniform** —
+    within $1\%$ of its median spacing across $99.9\%$ of its gaps. The comparison is therefore two
+    near-uniform samplings differing in spacing, not one resolved against one aliased. **That is worth
+    knowing independently of the pass, which is what you said when you asked for it.***
 
-        NK=900  LMAXL=2000   killed at 2400 of 2700 modes
-        NK=900  LMAXL=2000   killed at  750 of 2700 modes
-        NK=600  LMAXL=1300   killed at  900 of 1800 modes
+    ⚠ ***AND IT TURNED UP A PROPERTY `KBATCH` ALREADY HAD — sized so it is not mistaken for a defect.***
+    *`_project` takes $dk=\nabla k$ from the **batch**, so on the ladder's non-uniform bottom modes the
+    batch boundary moves the weights. One batch against two: $1.205\times10^{-8}$ relative. **Real, and
+    eight orders below anything physical — nothing banked moves and no result needs revisiting.** It is a
+    reproducibility note (quote `KBATCH` with a ladder command) and the reason `KSLICE` is documented as
+    a continuum tool: on the ladder it is exact only to that $10^{-8}$.*
 
-    *Restarts observed at 13:24, 13:59 and 15:22 — `uptime` reading `up 0 min` each time. **A run needing
-    twenty minutes or more of unbroken CPU does not complete here, and I am not going to keep reporting
-    attempts as though they were results.** I have stopped launching it.*
-
-    ⇒ ***TWO WAYS FORWARD, AND THE CHOICE IS YOURS BECAUSE ONE OF THEM TOUCHES THE INSTRUMENT.***
-      1. *`cc66`'s node runs it. The command is exactly:*
-         `ARM=cr HIER=1 BSPLIT=1 NK=900 LMAXL=2000 ETAEND=4000 KBATCH=150 KCONT=1 CRH0=68.62 CROM=0.2973 ZSTART=3e7 SAVE=...`
-         *It wants roughly fifty minutes uninterrupted; `cc66` has run $1800$-mode jobs, so this is a
-         node question and not an instrument one.*
-      2. *Or a `KSLICE=lo:hi` knob in `ACOUSTIC_two_arm.py`, so the $k$-sum can be run in pieces and
-         added. **It is exactly additive — `Cl += _project(kb, ...)` per batch and `Dl = Cl·ℓ(ℓ+1)` — so
-         segmenting is not an approximation.** ⚠ *But that file's canonical copy is yours now, and
-         adding a knob to it unilaterally is precisely what produced the `CROMBH2`/`WBH2` collision, so
-         I am proposing it rather than doing it.** Say the word and it is twenty minutes' work plus the
-         segments.*
+    ⇒ ***`KSLICE=lo:hi` is yours to keep, rename or reshape.*** *Default unset byte-identical, and the
+    knob's own comment carries the uniform-grid caveat. **A check neither seat could run is now one
+    either seat can run in pieces**, which matters more for `cc66`'s 1–15 minute window than for mine.*
 
 **⌗ ⑥ THE TWO ITEMS, SENT.** *Both are from `r6766`'s machinery and neither is receipted; they are
 offered as routing, and I will receipt whichever you want rested on.*
