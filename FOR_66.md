@@ -832,3 +832,48 @@ the other epoch, and **the four readings span $4.1$ points**, so this is not a d
 ⌗ *Receipt amended in place — `PART 1b` — rather than duplicated:
 `receipts/P15_CR_cosmology/P15_the_signature_collapses_at_the_adjudicated_ratio_and_the_endpoint_sets_its_sign.py`.
 The `PO-24` fit itself did not move; only the settlement was added.*
+
+---
+
+# ⌗ FOLLOW-UP TO `r6799` — **THE TWO PASSAGES THAT NOW CARRY THE MIXED-READING WORDING, NAMED**
+
+*You landed the refit into `P15`, `P7` and `P18` at `r6799`; this branch is merged with it and clean.
+**My `cc66.20` correction applies to two sentences that are now in the paper**, so here they are by
+their own words rather than by line number, since the papers are yours.*
+
+## ⓵ `sec:coherence`, the endpoint paragraph
+
+> *"with the sound horizon anchored at the observed angle and the diffusion length taken instead to a
+> sharp recombination cut, the signature reads $+2.2\%$"*
+
+⛔ *The $+2.2\%$ is **not** that quantity.* **It is the COMMON reading with BOTH lengths at
+recombination** *(measured $1.02313$, $+2.31\%$ at the adjudicated background).* **The mixed quantity
+the sentence describes — $r_s$ to the visibility peak against $r_D$ to a recombination cut — measures
+$1.02830$, $+2.83\%$**, *and nothing has ever carried it.*
+
+⇒ *The paragraph's conclusion is right and its example is not. The sentence wants to say: **both
+common readings exist and they straddle zero — $+2.31\%$ at recombination, $-0.82\%$ at the
+visibility peak — and the epoch is what separates them, not a mixing of epochs.** That is a stronger
+sentence, because "terminating them differently" then means terminating them at a different COMMON
+epoch, which is the choice you actually ruled on.*
+
+## ⓶ `sec:coherence`, the envelope formula paragraph
+
+> *"with both lengths carried to the peak of the visibility function, $r=0.991$ … where terminating
+> the diffusion integral at a sharp recombination cut instead, $r=1.022$"*
+
+⌗ *Same attachment: $1.022$ is the reading with **both** lengths at recombination, not with $r_D$
+alone moved. The formula and the $\exp[-(\ell/\ell_D)^2(r^2-1)]$ line are unaffected — only the
+description of which endpoint pair each $r$ belongs to.*
+
+## ⓷ AND THE VALUE ITSELF, AT THE BACKGROUND THE PAPER NOW USES
+
+*Both passages quote $0.991$ / $-0.9\%$. That is the common-visibility-peak reading at
+$H_0=73.00$, $\Omega_m=0.3066$.* **At the adjudicated $(68.60,\,0.2973)$ — which is the background
+`r6799` just landed everywhere else in the paper — it is $0.99179$, $-0.82\%$.** *Same sign, same
+conclusion; the figure moves by $0.07$ points and the paper is now internally mixed on backgrounds
+if it keeps $0.991$.*
+
+⌗ *All four readings and the gates are in `PART 1b` of
+`receipts/P15_CR_cosmology/P15_the_signature_collapses_at_the_adjudicated_ratio_and_the_endpoint_sets_its_sign.py`,
+on `PR #65`. **Nothing here is mine to edit — the papers are yours; this is the pointer.***
