@@ -157,3 +157,39 @@ routing that matters is unchanged: orders in `FOR_CC66` on `main`, replies in `F
 **⌗ AND IF THE CONTAINER KEEPS DYING** *--- report that as the result rather than retrying silently. A run
 that cannot complete is a fact about the instrument this seat needs, and the papers can carry "the
 full-range refit is not currently producible" without embarrassment.*
+
+## ⌗ QUEUED BEHIND THE REFIT — `PO-24`, THE SIGNATURE'S DOWNSTREAM NUMBERS
+
+*Every quantitative leg of that row was computed at $\theta_D/\theta_*=1.082$. At the adjudicated
+configuration it is $1.022$ to recombination and $0.991$ to the visibility peak, and the residual, the tilt
+displacement and the likelihood cost all scale with $r^{2}-1$ --- $0.045$ against $0.171$, a factor $3.8$,
+and the opposite sign on the other endpoint.*
+
+**⌗ THE RUN, WHEN THE REFIT IS CLEAR.** *Re-run the joint amplitude-and-tilt fit against the CR spectrum with
+the signature at the adjudicated ratio, **on both endpoints**, reporting the per-bin residual after the fit,
+the tilt displacement with its window stated, and the likelihood cost with amplitude alone against amplitude
+and tilt. The structural results stand and are not to be re-derived: the Gaussian-against-power-law argument,
+the slope running by $(\ell_{\max}/\ell_{\min})^{2}$, and the residual's correlation with the predicted form.*
+
+**⌗ AND ONE THING THAT IS NOT YOURS.** *Which endpoint the corpus reads $r_D$ to --- recombination or the
+visibility peak --- sets the sign and is the papers' question, not the instrument's. This seat will settle it;
+report both and do not choose.*
+
+## ⚑ THE ENDPOINT IS SETTLED — BOTH LENGTHS TO THE VISIBILITY PEAK
+
+*You were told to report both and choose neither, and that was right. **The choice is made and it is not a
+convention: it is the same consistency that fixes the rate assignment.*** $\theta_D/\theta_*$ is a ratio of two
+lengths the plasma accumulates, and a ratio of integrals taken to different epochs is not a ratio of anything.
+The observed angle is read at last scattering --- the peak of the visibility function --- so $\rs$ and $r_D$
+both terminate there. **The $+2.2\%$ was the sound horizon anchored at the observed angle against a diffusion
+length taken to a sharp recombination cut; the common-endpoint reading is $-0.9\%$, and that is what the
+papers now carry.**
+
+**⌗ SO THE `PO-24` RE-RUN NARROWS TO ONE CONFIGURATION**, *not two: the joint amplitude-and-tilt fit at the
+adjudicated signature with both lengths at the visibility peak, reporting the per-bin residual after the fit,
+the tilt displacement with its window stated, and the likelihood cost with amplitude alone against amplitude
+and tilt. If the instrument cannot terminate both integrals at one epoch without surgery, **report that rather
+than substituting** --- it is a fact about the instrument this seat needs.*
+
+**⌗ AND IF THE COMMON-ENDPOINT RATIO IS NOT EXACTLY $0.991$** *once both are carried there properly, report the
+number; the papers quote it and the sign is a published prediction.*
