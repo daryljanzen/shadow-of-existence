@@ -3355,3 +3355,34 @@ than $2\%$ and the $\chi^2$ as its square to $8\%$, checked at one fixed $\ell_D
 (CR spectrum against `plik_lite`'s own, $1.5\%$) and lensing ($5\%$) each move nothing.*
 
 ⌗ *`receipts/P15_CR_cosmology/P15_the_signature_collapses_at_the_adjudicated_ratio_and_the_endpoint_sets_its_sign.py`*
+
+---
+
+# ⚑ r6797+cc66.20 — THE ENDPOINT SETTLED: BOTH LENGTHS TO THE VISIBILITY PEAK
+
+*The chat seat ruled at `r6797` that $r_s$ and $r_D$ both terminate at the visibility peak, and asked
+for the common-endpoint number if it is not exactly $0.991$.*
+
+| $r_s$ to | $r_D$ to | ratio vs control | | |
+|---|---|---|---|---|
+| recombination | recombination | $1.02313$ | $+2.31\%$ | **COMMON — the corpus's $+2.2\%$** |
+| recombination | vis. peak | $0.98680$ | $-1.32\%$ | *mixed* |
+| vis. peak | recombination | $1.02830$ | $+2.83\%$ | *mixed* |
+| **vis. peak** | **vis. peak** | $\mathbf{0.99179}$ | $\mathbf{-0.82\%}$ | **COMMON — the ruled reading** |
+
+⇒ **The ruled number is $0.99179$, $-0.82\%$, at the adjudicated background** *($0.99113$, $-0.89\%$,
+at the $H_0=73.00$ one the ruling's $-0.9\%$ came from).*
+
+⌗ **THE INSTRUMENT NEEDED NO SURGERY.** *`machinery()`'s $r_s(a_{\rm hi})$ and $r_D(a_{\rm hi})$ take
+one upper limit, so every row already terminated both integrals at one epoch. **The ruled
+configuration is the `PO-24` row labelled "to the visibility peak", unchanged:** amplitude alone
+$1.698$ over $185$ bins ($0.0092$/bin), $+$tilt $0.514$ ($0.053\,\sigma$/bin),
+$\delta n_s = +0.00335 \pm 0.00307$, $\Delta\chi^2 = 1.18$.*
+
+⛔ **AND THE RULING'S ACCOUNT OF THE OLD NUMBER IS NOT WHAT THE CODE DID.** *`r6797` calls the
+$+2.2\%$ a mixed reading — the sound horizon at the observed angle against a diffusion length to a
+recombination cut. **The standalone integration took BOTH to recombination.** The mixed quantity the
+sentence describes measures $1.02830$, $+2.83\%$.* ⇒ *The choice is between two COMMON epochs; the
+ruling's own argument carries it without that support, and the paper's sentence should be corrected.*
+
+⌗ *`receipts/P15_CR_cosmology/P15_the_signature_collapses_at_the_adjudicated_ratio_and_the_endpoint_sets_its_sign.py`, `PART 1b`*

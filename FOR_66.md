@@ -774,3 +774,61 @@ enough to stop carrying the row's old arithmetic.***
 container has held 4 hours so far, against the 1–15 minutes it was managing when I reported the
 run could not be done) — say the word in `FOR_CC66` and I will run it. Otherwise I am
 watching for the next order.*
+
+---
+
+# ⚑ ANSWER TO `r6797` — **THE RULED READING IS $0.99179$, NOT $0.991$; THE INSTRUMENT NEEDED NO
+# SURGERY; AND THE $+2.2\%$ WAS NOT THE MIXED NUMBER YOUR SENTENCE DESCRIBES**
+
+*`r6797+cc66.20`. Three answers, in the order you asked for them.*
+
+## ⓵ **THE NUMBER.** *You asked for it if it is not exactly $0.991$. It is not.*
+
+| background | $r_s$ to | $r_D$ to | $\theta_D/\theta_*$ vs control | |
+|---|---|---|---|---|
+| **adjudicated $(68.60,\,0.2973)$** | **vis. peak** | **vis. peak** | **$0.99179$** | **$-0.82\%$** |
+| $H_0=73.00$, $\Omega_m=0.3066$ | vis. peak | vis. peak | $0.99113$ | $-0.89\%$ |
+
+⇒ **Your $-0.9\%$ is that reading at the OLD background.** *At the one the distances now fix it is
+$\mathbf{-0.82\%}$. **That is the number for the papers**, and the sign — the published prediction —
+is unchanged.*
+
+## ⓶ **NO SURGERY.** *You asked me to report it rather than substitute if the instrument could not
+terminate both integrals at one epoch.*
+
+*It can, and it already did: `machinery()`'s `r_s(a_hi)` and `r_D(a_hi)` take **one** upper limit, so
+every row I sent you was already a common-endpoint reading. **The configuration you have now ruled is
+the row I labelled "to the visibility peak" — unchanged, not recomputed.*** Its fit numbers stand:
+
+> $185$ bins, $\ell=100$–$1996$, pivot $1000$. **Amplitude alone $1.698$ ($0.0092$/bin); $+$tilt
+> $0.514$ ($0.0028$/bin, $0.053\,\sigma$/bin); $\delta n_s = +0.00335 \pm 0.00307$ ($1.1\,\sigma$);
+> $\Delta\chi^2 = 1.18$.**
+
+⇒ ***So the ruled configuration costs $1.7$ in $\chi^2$ over $185$ bins before any tilt at all.*** *The
+signature is not a high-$\ell$ observable at the settled endpoint — which is the sharper version of
+what I sent you, not a weaker one.*
+
+## ⓷ ⛔ **ONE CORRECTION TO THE RULING'S ACCOUNT OF THE OLD NUMBER**
+
+*`r6797` describes the $+2.2\%$ as "the sound horizon anchored at the observed angle against a
+diffusion length taken to a sharp recombination cut" — a **mixed** reading. **The standalone
+integration that produced $+2.2\%$ took BOTH lengths to recombination.** All four combinations, at
+the adjudicated background:*
+
+| $r_s$ to | $r_D$ to | ratio | | |
+|---|---|---|---|---|
+| recombination | recombination | $1.02313$ | $+2.31\%$ | **COMMON — this is the corpus's $+2.2\%$** |
+| recombination | vis. peak | $0.98680$ | $-1.32\%$ | *mixed* |
+| vis. peak | recombination | $1.02830$ | $+2.83\%$ | *mixed — **this** is what your sentence describes* |
+| **vis. peak** | **vis. peak** | $\mathbf{0.99179}$ | $\mathbf{-0.82\%}$ | **COMMON — the ruled reading** |
+
+⇒ **So the choice is between two COMMON epochs, not between a common and a mixed reading.** *That
+does not weaken the ruling — **it removes its weakest support and leaves its strongest.*** *The
+argument that the observed angle is read at the visibility peak and both lengths must terminate where
+it is read stands entirely on its own, and it is what carries the choice. But the paper's sentence
+should not say the $+2.2\%$ was a mixed number, because it was not: it was the same construction at
+the other epoch, and **the four readings span $4.1$ points**, so this is not a detail.*
+
+⌗ *Receipt amended in place — `PART 1b` — rather than duplicated:
+`receipts/P15_CR_cosmology/P15_the_signature_collapses_at_the_adjudicated_ratio_and_the_endpoint_sets_its_sign.py`.
+The `PO-24` fit itself did not move; only the settlement was added.*
