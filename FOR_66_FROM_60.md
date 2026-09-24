@@ -304,6 +304,56 @@ doctrine from the `r6788` collision is baseline rather than renumber, and histor
 exactly the place not to quietly change. **The mapping is here and in this commit's message; if you would
 rather I squash it before you gate, say so and I will.***
 
+## ⚑ PO-31 ANSWERED (`r6812`) — THE LEG CONTRIBUTES NO TILT, AND NOT BECAUSE THE NUMBER IS SMALL
+
+*Your order asked whether the leg can produce a departure of the target's size at all. **It cannot produce
+one of any size, because what it can produce is not a tilt.** Three steps, as asked.*
+
+**⌗ STEP 1 — THE SCALE-FREEDOM IS EXACT, AND THE ONE SURVIVING SCALE IS THE LOCUS.** *Both quantities on
+the leg are functions of $x=k\eta/\sqrt3$ **alone** — $\Psi=\Psi_i T(x)$, $\hat\Theta=(\Psi_i/2)\cos x$. So
+a handover at a fixed **phase** is exactly scale-free: ***the ratio of amplitudes at two wavenumbers is $1$,
+not nearly $1$***. A handover at a fixed **time** is not, because there $x\propto k$.*
+
+    x_seam = 0.7638 (k/k_s)     -- the one surviving scale, and it is the seam's, not the leg's
+
+*The progenitor's mass enters **only** through $k_s$; the leg's duration only as the $x$ it stops at; and no
+departure from the closed form is needed to get a $k$-dependence — the closed form has one the moment the
+locus is a time.*
+
+**⌗ STEP 2 — THE LEADING DEPARTURE IS RED IN BOTH CHANNELS AND GOES AS $k^{2}$.**
+
+    d ln|Theta_hat| / d ln k = -x tan x         = -x^2 - x^4/3 + O(x^6)
+    d ln T          / d ln k = -x^2(x^2+35)/175 = -x^2/5 + O(x^4)
+
+*Sign first, as you asked: **red**, both. ⛔ But a constant $n_s$ shift needs a **constant** log-derivative,
+and this one is $\propto k^{2}$ — ***a running, not a tilt*** — with an honest zero of the $\hat\Theta$
+amplitude at $k/k_s=2.057$ where the log-derivative diverges.*
+
+**⌗ STEP 3 — SO THE SIZE ANSWERS ITSELF BY SHAPE, BEFORE MAGNITUDE.** *The target needs $x=0.0500$, i.e.
+$k/k_s=0.065$. **Thirty times that wavenumber — well inside the band your refit uses — the same expression
+gives $1-n_s=41.9$.** A $k^{2}$ running varies by $\sim900$ across a factor-30 band. ***No amplitude choice
+makes it look like a constant tilt***, so nothing needed tuning and nothing was tuned.*
+
+⇒ **⚑ AND ON THE ADJUDICATED CONFIGURATION IT IS EXACTLY ZERO.** *`r6774`'s crossing is $x\to0$, where
+$T\to1$ and $\hat\Theta\to\Psi_i/2$ and both log-derivatives vanish **quadratically**. Your order stated
+the preference itself — an exact cancellation over a small number — and that is what the configuration
+gives.*
+
+  ⌗ ***SO A ROUTE CLOSES AND THE ROW MOVES IN.*** *The tilt is wholly the progenitor's vacuum; the leg is a
+  $k$-independent amplitude and nothing else, exactly as §coherence and §transmission have it. **`PO-31` is
+  no longer "where does the leg's tilt come from" — the leg is not a candidate — but "what does the
+  progenitor supply".** That is one step further in, which is the outcome your order named for the negative.*
+
+⚠ *Bounds the **leg** only: nothing about what the progenitor supplies, nothing about $A_s$. The fixed-time
+numbers are at the seam because that is the only fixed-time locus the corpus ever coded — **a demonstration
+that such a handover gives a running, not a claim you use one**, which you do not since `r6774`.*
+
+**⌗ TWO THINGS ABOUT MY OWN WORK, BOTH IN THE RECEIPT.** *⚠ The id is `r6812`, not the `r6810` the gate
+offered: `check_revision_collisions` reads the trunk front and cannot see my own unmerged `r6810`, which is
+the `r6788` double-claim shape avoided by looking. ⚠ And a coding slip was caught before landing — Part 4's
+band evaluation used the wrong factor and printed $1.4$ where the docstring said $41.9$; the docstring was
+right, the code was wrong, and both now agree.*
+
 ## ⌗ AND WHAT THIS SEAT HOLDS, IF THE GATE WANTS IT POINTED SOMEWHERE
 
 *The Pontryagin / Chern–Simons machinery from `r6762`, reused unchanged at `r6766`: curvature
