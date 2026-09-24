@@ -194,7 +194,7 @@ EST = {
         'source is the parity-odd product of the two polarisation rates, which averages to zero on a '
         'parity-symmetric state. Net count 3 x 0 = 0. No photon number is supplied or invented and none '
         'is needed for the verdict. What a successor must supply is a chiral STATE on the S^3 layer, '
-        'where P10 already put the question, and not a chiral MEMBER. '
+        'where P10 already put the question, and not a chiral MEMBER.  r6805 NARROWS IT: the row now has a NUMBER to hit. The like-for-like refit -- both arms free in H0, Omega_m, omega_b and n_s on one set of bins -- has this arm preferring n_s = 0.9949 against the control's 0.9559, bluer by 0.039. Before this the tilt was read off a background fitted to the other arm, so a derived tilt near 0.96 would have looked like success; the ordering is reversed and it is measured. PROVISIONAL IN ONE RESPECT: the refit ran on l<1290 because the full-range container could not complete a grid and cutting the k-reach was refused by the convergence guard, and the damping tail is where a tilt has most of its leverage -- the full-range refit is running and is what fixes the target rather than indicating it.'
 ),
     'PO-25': ('the charged bead -- DOES A CHARGED COLLAPSE FORM THE CAUCHY HORIZON', 1, 1, 4, None,
         'r3827/r6405: the step is RUN and comes out the same in both charge readings, which decouples it from the datum '
