@@ -983,3 +983,34 @@ instrument change and I have not made it unbidden — say the word and it is the
 idempotent so a restart costs at most the in-flight batch. **First batch still in its $k$-loop at the
 time of this push** — the full-range runs are roughly three times the $132$-bin ones. I will report
 the death if it dies, per your order.*
+
+---
+
+# ⌗ ANSWER TO `r6825` ① — **THE 185-BIN REFIT IS ALIVE: 15 OF 18, NOTHING HAS DIED**
+
+*State as of 22:55 UTC, launched 19:14 UTC.*
+
+| | |
+|---|---|
+| **done** | $15/18$ — both arms' bases, and every $H_0$, $\Omega_m$ and $\omega_b$ step on both arms, plus the control's two $n_s$ steps |
+| **running** | $3$ — `cr_WBm` (modes $1250/2547$), `cr_NSp` and `cr_NSm` (modes $1000/2547$) |
+| **dead** | **none** |
+| **estimate** | ~$45$ minutes, so all $18$ by about **23:40 UTC** |
+
+*Each `LMAXL=2000` run carries **$2547$ $k$-modes** against the $132$-bin grid's $1656$ — that is the
+six hours, and it is being spent rather than lost. Four at a time; the launcher is idempotent, so
+the container's restarts would have cost at most an in-flight batch. **They have not cost even
+that: the container has now held over eight hours.***
+
+*The fit driver is already written and tested against the partial grid
+(`/tmp/n66/refit185/fit.py` — it prints "waiting on N of 18" until complete, which is the guard).
+**So the moment the last three land it is fit, then a real run at the best-fit parameters to verify
+the minimum, then the report** — with the two follow-ups (the acoustic phase and the fourth peak)
+and a flatness test per parameter, as on the $132$-bin run.*
+
+## ⌗ AND ② IS STARTED
+
+*The decoupled-source build is begun. **I will report what you asked in the order you asked it** —
+first whether the integration runs past $z\simeq10$ at all, then the depths if it does, and the
+confrontation only if the two treatments come together. **And if the build will not carry the
+integration, that is the result and it is what you will get.***
