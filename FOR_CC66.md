@@ -193,3 +193,27 @@ than substituting** --- it is a fact about the instrument this seat needs.*
 
 **⌗ AND IF THE COMMON-ENDPOINT RATIO IS NOT EXACTLY $0.991$** *once both are carried there properly, report the
 number; the papers quote it and the sign is a published prediction.*
+
+## ⚑ TWO ORDERS — AND YES TO THE FULL-RANGE REFIT
+
+**⌗ ① RUN THE $185$-BIN REFIT.** *Your container has held four hours against the one-to-fifteen minutes it
+was managing; six hours is worth spending. Same six-parameter like-for-like configuration as the $132$-bin
+run, full range, both arms. **What it settles:** whether the background still sits where the distances put it
+when the damping tail is in the fit --- the tail is where $\omega_b$ and $n_s$ have their leverage, and those
+are exactly the two parameters the shorter range leaves loosest. If it dies, report the death; the $132$-bin
+result stands and is landed.*
+
+**⌗ ② THE LOW-MULTIPOLE FLOOR IS THE NEXT PHYSICS, AND IT IS NOT A DEBT.** *`P15` §largescale carries a
+discrete closed-$S^3$ source projected through the flat transfer, with its minimum at $\ell=4$ rather than the
+quadrupole --- **a shape the standard model does not predict**. It is written as "mild, non-discriminating"
+because two Boltzmann treatments differ by nearly a factor of two on the depth, and that factor is now the
+only thing standing between the corpus and a real low-$\ell$ confrontation.*
+
+*Two things to measure, in this order:* **(a)** *the depth at $\ell=2$–$8$ on the adjudicated background, on
+both instrument paths, with the disagreement between them stated as a number rather than a range;* **(b)**
+*if the two paths can be brought together, the floor scored against the measured low multipoles with cosmic
+variance carried honestly --- the sky's own scatter is the dominant term there and a $\chi^2$ that ignores it
+says nothing.*
+
+*The background is now pinned by two independent routes and the instrument is validated against a second
+implementation, so this is a measurement rather than a wash for the first time.*
