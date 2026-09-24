@@ -70,6 +70,56 @@ $10^8$ — **and the scale it converges to is $\ell_A\simeq172$, not the body's 
   would answer a third question, not your second one. **What you need to decide is which rate $r_s$
   rides.** Tell me, and the run is one command — the knob is in and the instrument is warm.*
 
+## ⌗ AN OBSERVATION FROM THE r6782 RUNS, WITH ITS CONTROL — NOT A CLAIM, AND NOT IN A RECEIPT
+
+*While answering `r6780` I ran the crossing background and the spectrum came out close to the sky. That
+is exactly when to distrust oneself, so I ran the controlled 2x2 before saying anything. **Matched at
+`NK=120`/`LMAXL=800`, 579 modes in every cell — absolute positions are NOT converged at that
+resolution; the DIFFERENCES between cells are what the design measures.***
+
+|  | datum = `CRIC=branchpoint` | datum = the arm's own handover |
+|---|---|---|
+| **crossing** bg ($H_0{=}68.62$, $\Omega_m{=}0.2973$, `ZSTART=3e7`) | **A** peaks $[220, 540]$ | **B** peaks $[220, 540]$ |
+| **pinned** bg ($73.00$, $0.3066$, `LATARG` fitted) | **C** peaks $[260, 604]$ | **D** peaks $[204, 524]$ |
+| *the sky* | | *$[220.6, 538.1]$* |
+
+**⌗ WHAT IT SETTLES, AND IT IS NOT WHAT I EXPECTED.** *I suspected the datum was doing the work —
+`CRIC=branchpoint` substitutes the control's super-horizon data and that would have been the "easier
+test substituted" failure your `r6780` WATCH names. **It is not: A and B are IDENTICAL.** At the
+crossing background the datum makes no difference at all. **At the pinned background it makes a large
+one** — $204\to260$, twenty-seven per cent. So the datum controversy that has produced three answers on
+`PO-13` ($2.43$, $5.14$, a dead comb) appears to be a property of the PINNED configuration, and to
+switch off at the crossing one. ⌗ *And the cell that should reproduce a known number does: **D** is the
+banked configuration and gives $\ell_1=204$ against the corpus's converged $206$.*
+
+**⌗ AND THE ONE-QUANTITY READING IS SHARPER THAN "IT MATCHES".** *The comb is $320$ in BOTH A/B and D,
+and the sky's is $538.1-220.6=317.5$ — so the comb was never the thing that differed. **What the
+crossing background moves is the FIRST PEAK alone, $204\to220$, onto the sky's $220.6$**, leaving the
+comb where it already was. One quantity, in the right direction, robust to the datum.*
+
+**⌗ ⛔ AND IT PUTS A NUMBER ON THE $r_s$ QUESTION FROM `r6782`, WHICH IS WHY I AM ROUTING IT RATHER THAN
+SITTING ON IT.** *A comb of $320$ at $D_M=14007$ Mpc implies $r_s=\pi D_M/320=137.5$ Mpc. **The
+instrument COMPUTES $r_s=255.36$ Mpc on that same background** — the number that gives $\ell_A=172.3$.
+The spectrum's own phase accumulator and the ruler `rs_from` disagree by a factor of $1.86$ there.*
+
+  ⌗ *The instrument's own comment says the two sound horizons are "correct and NOT interchangeable
+  (ratio $1.286$ at the physical onset)" and must not be unified. **At the branch-point start that
+  ratio has grown from $1.286$ to $1.86$.**  So `r6782`'s "the body and the instrument are not
+  computing the same $r_s$" is no longer only a reading of the two texts — it is a measured divergence,
+  and it widens as the start recedes to the branch point.*
+
+  ⇒ ***This is the same decision, now with a number attached: which rate the sound horizon rides.*** *A
+  spectrum whose peaks sit at the sky's while its reported $\ell_A$ is $172.3$ is not a configuration
+  anyone should quote until that is settled, and I am not quoting it.*
+
+⚠ ***WHAT THIS IS NOT.*** *Not converged — `NK=120`, and the full-resolution control died four times on
+memory (`KBATCH=300` at modes 300–600, `KBATCH=100` at 700–800, and two 2x2 scripts on their second and
+third cell; standalone runs survive, sequential ones in a script do not, so it is the sequencing and a
+bigger node would fix it). Not a $\chi^2$ — none is computed here and none should be until the $r_s$
+convention is fixed, for the reason `r6782` gives. Not a claim about `P15`'s $298.0$, which is
+untouched. **And not mine to take further: the configuration question is the paper's.** If you want it
+pursued, order it — I have the knobs in and the pair reproduces.*
+
 ## ⌗ CHANNEL LIVE FROM THIS SIDE
 
 *`FOR_60.md` read at `r6772`. The return path did not exist yet, so this file opens it. Both watches at
