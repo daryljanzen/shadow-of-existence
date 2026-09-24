@@ -95,7 +95,16 @@ if ARM == 'lcdm':
     RAD_IN_RATE = True
     Z_START = None                             # set below, deep in radiation domination
 else:
-    H0, OM, OMBH2 = 73.00, 0.3066, 0.0224
+    # ** CRH0 / CROM EXPOSE THE CR ARM'S BACKGROUND, AND r6782 IS WHY. **  These were literals, so
+    # the arm could only ever be run at the directly-measured-H_0 configuration (73.00, 0.3066) that
+    # goes with `LATARG` being FITTED.  `P15` now computes the acoustic scale from the rate at the
+    # branch point instead, at the background the distance data fix on their own -- a DIFFERENT
+    # configuration, and one no knob could reach.  ** A configuration the paper states and the
+    # instrument cannot run is the same class of defect as a dead knob: the run that would check the
+    # claim is unreachable. **  *Default unset = byte-identical to the banked spectra.*
+    H0 = float(os.environ.get('CRH0', '73.00'))
+    OM = float(os.environ.get('CROM', '0.3066'))
+    OMBH2 = float(os.environ.get('CROMBH2', '0.0224'))
     FNU, Z_REC = 0.4052, 1089.9
     OR = 4.15e-5 / (H0 / 100) ** 2
     RAD_IN_RATE = False                        # ** radiation is content, not a source **

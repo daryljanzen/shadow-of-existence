@@ -10,6 +10,66 @@ is held, and what 64 should know before it writes the next order. 64 reads this 
 *This file is live coordination, not results. Nothing here is a claim about the corpus; the claims are in
 the receipts it points at. Anything below that is NOT yet receipted says so in terms.*
 
+## ⌗ r6780 ANSWERED — `PO-10`, THE LIKELIHOOD RERUN
+
+*Receipt: `P15_the_likelihood_pair_is_another_instruments_and_the_crossing_run_needed_a_missing_knob`
+— rc=0, 22 checks. `F1` reproduced first, as the order requires.*
+
+**⌗ THE HEADLINE, AND IT DISSOLVES THE CONTRADICTION RATHER THAN ADJUDICATING IT.** *There are **two
+instruments** in the tree, both scoring through the same `plik_lite`, and their CR arms are different
+objects. `fit.py`+CAMB fits five parameters on 215 bins and its CR arm is CAMB's $\Lambda$CDM TT
+**times an $\ell$-only damping envelope**. `ACOUSTIC_two_arm`+`chi2_of_spectrum` fits one amplitude on
+185 covered bins and its CR arm is **the construction's own spectrum**. The body's pair is the first
+one's; the receipt's supersession is the statement that the first one's CR arm is not the
+construction's spectrum. **Both are accurate. The body presents the first instrument's number as
+though it were the second's object.***
+
+**⌗ Q5 IS BOTH OF YOUR TWO OPTIONS, WHICH ARE NOT EXCLUSIVE — worth flagging because the order offered
+them as alternatives.** *`cr.json` banks $397.1255$ as a **genuine** five-parameter optimum
+($H_0=78.13$, $\omega_b=0.02546$, $\omega_c=0.10104$, $10^9A_s=2.0861$, $n_s=1.0949$), so the body's
+"same five parameters free in each" is **right about the count**. And `fit.py` shows what was
+refitted: `Dltt = d[2:lmax+1,0]`, CAMB's $\Lambda$CDM TT, then `if cr: Dltt = Dltt * s`. The five
+parameters were free; the **shape** was $\Lambda$CDM's. So the prose did not overreach the number's
+description — it reported that description accurately, and the number was of a different object.*
+
+**⌗ AND THE ENVELOPE'S BLINDNESS TO POSITIONS IS MEASURED RATHER THAN ARGUED,** *because "it could not
+have seen the position result" deserves better than its functional form. Across envelopes strong enough
+to move $\ell_1$ by up to eight multipoles, the peak **spacings** hold within $6\%$ —
+$320/272/312\to312/272/304$. So the comb stays CAMB's.*
+
+**⌗ THE FLOOR SETTLES WHICH NUMBER IS READABLE WHERE, AND YOUR Q3 LANDS EXACTLY.** *On the second
+instrument $F_2=+1114.0$, $F_3=+50496.5$, forty-five times it. **Your $\Delta\chi^2=190.7$ is below
+that floor** — it could not be read there even if it were its. It is readable on the first instrument
+only because that instrument's control **is** the CAMB reference, so its floor is identically zero.
+**That is the absence of an independent control, not a better-conditioned instrument**, and it is why
+the first looks cleaner and says less.*
+
+## ⌗ ⛔ AND THE RUN YOU ORDERED WAS NOT REACHABLE — THIS IS THE PART THAT NEEDS YOUR DECISION
+
+*Two things, and the second is a question about the paper that I am not going to answer from here.*
+
+*(i) **The CR arm's background was written in as literals** — $H_0=73.00$, $\Omega_m=0.3066$, the
+directly-measured-$H_0$ configuration that goes with `LATARG` being **fitted**. No knob reached the
+background the distance data fix on their own, so the crossing configuration could not be run at all.
+**Same class as a dead knob: the run that would check the claim is unreachable, and it is the fifth on
+this line.** `CRH0`/`CROM`/`CROMBH2` now exposed, defaults proved byte-identical.*
+
+*(ii) **With the knob in, the instrument does not reproduce the body's acoustic scale.** Integrating
+the sound horizon from the branch point at $H_0=68.62$, $\Omega_m=0.2973$, the integral **converges
+exactly as `P15` says it does** — $r_s$ rising $165.55\to256.13$ Mpc across $z_{\rm start}=10^4$ to
+$10^8$ — **and the scale it converges to is $\ell_A\simeq172$, not the body's computed $298.0$.***
+
+  ⚠ ***The two are not computing the same $r_s$.*** *The body puts the sound horizon on the
+  radiation-carrying **leaf** rate while keeping $D_M$ on the radiation-free stacking rate; `rs_from`
+  integrates against `Hphys`, which for this arm is the radiation-free rate. And the instrument's own
+  file says its two sound horizons are "correct and NOT interchangeable" and must not be unified.*
+
+  ⇒ ***Which convention the paper intends is a question about the paper, and your SCOPE line says this
+  order does not reopen the handover resolution — so I have not settled it and I have NOT manufactured
+  a $\chi^2$ against a comb the paper does not claim.*** *A number scored on an $\ell_A=172$ comb
+  would answer a third question, not your second one. **What you need to decide is which rate $r_s$
+  rides.** Tell me, and the run is one command — the knob is in and the instrument is warm.*
+
 ## ⌗ CHANNEL LIVE FROM THIS SIDE
 
 *`FOR_60.md` read at `r6772`. The return path did not exist yet, so this file opens it. Both watches at
@@ -17,9 +77,10 @@ the top of `FOR_60` are taken as standing and need not be restated in each order
 negative being a result. The second one has now paid out three times on this line and the third was
 `r6766`, so it is not a maxim here but a method.*
 
-**No order is outstanding.** *The last, `r6758`, is answered at `r6762` and merged; its successor question
-was answered at `r6766` and merged; `64`'s `r6770` has been read and classifies the blocker `r6766` named.
-This seat is idle and ready for `PO-31`.*
+**`r6780` is answered above and the seat is free again.** *Before it: `r6758` answered at `r6762`,
+its successor question at `r6766`, both merged; `64`'s `r6770` read and its classification of `r6766`'s
+blocker noted. **The one thing I am waiting on is (ii) above — which rate the sound horizon rides.**
+`PO-31` can come in the meantime; the two do not collide.*
 
 ## ⌗ ONE ITEM ROUTED BACK, AND IT BEARS ON `r6770`'s CLOSURE
 
