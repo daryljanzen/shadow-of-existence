@@ -1165,6 +1165,25 @@ def hier_run(kk, EE, L_A_, D_M_, R_S_):
     x0 = eta_0 - EE
     Cl = np.zeros(len(ls))
     nb = int(os.environ.get('KBATCH', '250'))
+    # ** KSLICE=lo:hi RUNS ONLY PART OF THE k-SUM, SO A RUN TOO LONG FOR ITS NODE CAN BE DONE IN
+    # PIECES AND ADDED.  r6794 (60), at node 66's request for the KCONT=1 check. **  C_l is a sum over
+    # k -- `Cl += _project(kb, ...)` below -- so disjoint slices add to the whole exactly, and the
+    # pieces are independent processes that a container restart cannot spoil collectively.
+    #   ⛔ ** BUT ONLY ON A UNIFORM k-GRID, AND THAT IS NOT A CAVEAT ON THIS KNOB -- IT IS A PROPERTY
+    #   `KBATCH` ALREADY HAD. **  `_project` takes its measure as `dk = np.gradient(kb)` from the
+    #   BATCH it is handed, not from the global grid.  On a uniform grid np.gradient returns the same
+    #   spacing at the ends as in the interior, so every slicing gives the same answer; on CR's
+    #   PHYSICAL ladder the spacing varies, the one-sided end differences do not equal the centred
+    #   ones, and the batch boundaries move the weights slightly.
+    #     ⇒ *So `KCONT=1` (uniform) segments exactly, and a ladder run's spectrum depends weakly on
+    #       `KBATCH`.  r6794 measures both rather than assuming either.*
+    # *Default unset = the whole sum = byte-identical.*
+    _ksl = os.environ.get('KSLICE')
+    if _ksl:
+        _lo, _hi = (int(x) for x in _ksl.split(':'))
+        kk = kk[_lo:_hi]
+        print(f"  ⚠ KSLICE={_lo}:{_hi} -- this is a PARTIAL C_l over {len(kk)} of the run's modes, "
+              f"NOT a spectrum.  Sum the slices before reading anything off it.")
     E1 = EE[EE <= e_sw]
     E2 = EE[EE > e_sw]
     for i0 in range(0, len(kk), nb):
