@@ -385,3 +385,85 @@ recorded rather than rewritten because you gate by reading history, and squashed
 ⌗ *Both items you sequenced are answered and receipted. **This seat is idle and the channel is watched** — the
 `KSLICE` slicing, the banked spectra under `computations/beyond_the_wall/spectra/` with each run's exact
 command, and the Pontryagin machinery above are all standing and aimed wherever the gate points them.*
+
+## ⚑ `r6826` — ORDER ② ANSWERED: THE SUBSTRATE CONSTRAINS THE VACUUM COMPLETELY, AND THE CONSTRAINT IS $n_s=1$
+
+*Your order named three candidates and asked which can enter the vacuum's two-point function **at all**.
+**One can, and what it produces is not a tilt.** The order's own stopping rule is therefore reached — "if the
+three candidates all fail to enter, that is the answer" — and it is reached in the strong form rather than by
+three small numbers.*
+
+**⌗ ① THE SUBSTRATE'S CURVATURE RADIUS CANNOT ENTER, AND NOT BECAUSE ITS EFFECT IS SMALL.** *In conformal time
+the substrate's mode equation is*
+
+$$u'' + \left(k^{2} - \frac{2}{\eta^{2}}\right)u = 0$$
+
+*and **$\alpha$ does not appear in it at all** — the one length is spent in the map $\eta\mapsto t$, so the only
+variable the modes see is $k\eta$, and with the vacuum at $\eta\to-\infty$ the whole $k$-dependence is the
+normalisation $1/\sqrt{2k}$. Hence $P(k)=(H/2\pi)^{2}=1/(4\pi^{2}\alpha^{2})$: **$\alpha$ fixes $A_s$ and
+reaches $n_s$ not at all, for every $\alpha$.** A scale absent from the equation has nothing to tilt.*
+
+**⌗ ② AND THE PROGENITOR'S MASS CANNOT EITHER — WHICH ON THIS CONSTRUCTION IS ARITHMETIC AND NOT AN ESTIMATE.**
+*A mass is a length, so on its face it is the second scale your order names. **On the forced member it is not.**
+Nariai is $\Lambda M^{2}=1/9$ with $\Lambda=3/\alpha^{2}$, so*
+
+$$M=\frac{\sqrt3\,\alpha}{9},\qquad \frac{M}{\alpha}=\frac{1}{3\sqrt3}=0.192450\ldots\ \text{a \emph{pure number}}$$
+
+⇒ *so **the progenitor's mass is the curvature radius up to a constant**, it brings no length the mode equation
+did not already fail to contain, and ① disqualifies both together. *Two of your three candidates are one
+candidate.* ⚠ *And the honest counterfactual is in the receipt: off the forced member $M/\alpha$ would be a free
+knob and this argument would not run. It is the Nariai condition doing the work.**
+
+**⌗ ③ ONLY THE FINITE DURATION ENTERS — AND IT ENTERS AS A DECAYING OSCILLATION WITH NO SIGN.** *A finite
+duration means the vacuum is set at a finite $\eta_0$, which is the one way a genuinely new dimensionless
+variable $x=k\lvert\eta_0\rvert$ appears. Matching to instantaneous positive-frequency data there is exact and
+elementary:*
+
+$$\alpha_k=1-\frac{i}{x}-\frac{1}{2x^{2}},\qquad \beta_k=-\frac{e^{2ix}}{2x^{2}},\qquad
+\lvert\alpha_k\rvert^{2}-\lvert\beta_k\rvert^{2}=1\ \text{exactly}$$
+
+$$R(x)\;=\;\lvert\alpha_k-\beta_k\rvert^{2}\;=\;1+\frac{\cos 2x}{x^{2}}-\frac{\sin 2x}{x^{3}}
++\frac{1-\cos 2x}{2x^{4}},\qquad \frac{\dd\ln R}{\dd\ln k}=-\frac{2\sin 2x}{x}+O(x^{-2})$$
+
+*⚑ **That is an oscillation with a decaying envelope, not a constant.** It changes sign 24 times over
+$x\in[1,40]$; its envelope is under $0.2$ beyond $x=10$; and its four octave means **disagree with one another
+and do not share a sign** ($-0.095$, $+0.002$, $+0.020$, $-0.002$) while each band's internal spread exceeds its
+own mean by more than a factor ten. **By your own operational test — a kernel carries a scale exactly when the
+tilt one fits to it depends on which band one fits (`P15` §transmission) — this IS a scale, which is why it
+appears as band dependence rather than as a tilt.***
+
+**⌗ ④ SO THE SIGN QUESTION SURVIVES THE NEGATIVE, AND IT HAS AN EXACT ANSWER.** *The only quantity that can
+produce a **band-independent** log-derivative on a maximally symmetric background is an effective mass:*
+
+$$n_s-1 \;=\; 3-2\sqrt{\tfrac94-m^{2}\alpha^{2}} \;=\; \tfrac23\,m^{2}\alpha^{2}+\tfrac{2}{27}(m^{2}\alpha^{2})^{2}+\ldots$$
+
+*⇒ **a positive effective mass-squared gives a BLUE tilt** — the sign you asked for, and the direction matters
+because the target on this construction's own background is nearer unity than the standard model's by an order
+of magnitude in $1-n_s$, **but nearer unity from below.** Reaching $n_s=0.995$ requires*
+
+$$m^{2}\alpha^{2}=-\frac{1201}{160000}=-0.0075\ldots\qquad\text{slightly \emph{tachyonic}}$$
+
+*⚠ **Stated as your order asked: a requirement on the interior, not a result about it, and a possibility about
+where the data may be pointing rather than a claim that they are.** Nothing was tuned to $0.995$ — the target
+enters once, at the end, and only to be inverted.*
+
+  ⌗ ***SO THE ROW MOVES IN A SECOND TIME.*** *The substrate constrains the vacuum completely and the constraint
+  is $n_s=1$ exactly. **The frontier is no longer "what does the progenitor supply" but "what gives the
+  perturbation a small negative effective mass-squared on the substrate"** — interior physics, named, with its
+  sign fixed in advance so that the answer can be wrong in a way that shows.
+
+**⌗ ONE MODELLING STEP, NAMED RATHER THAN BURIED.** *The corpus's scalar perturbation is treated on the
+substrate as a massless minimally coupled field, which is what makes that mode equation the mode equation. ①
+and ② are robust to it — they are statements about which **lengths** appear, and none appears for any mass —
+**but the exact value $n_s=1$ is not**, which is precisely what ④ says. And ③ computes a **sharp** initial time,
+the one unambiguous prescription: a smooth onset changes the envelope's power and the phase, and cannot change
+the sign alternation, so the claim is the shape and not the coefficient.*
+
+**⌗ AND ONE CORRECTION TO MY OWN RECORD, MADE BEFORE LANDING.** *I first wrote the band criterion as "the octave
+means sit within $0.021$ of zero" and the $[2,4]$ band averages $-0.095$. **The criterion was wrong, not the
+computation, and the true statement is the stronger one** — the means do not agree with one another and do not
+share a sign, which is what rules out a tilt. Corrected in the receipt, the `INDEX` row and here.*
+
+**⌗ ⚠ AND YOUR NOTE ON THE $\psi'\omega'$ RECEIPT IS ONE REVISION STALE, WHICH IS WORTH SAYING PLAINLY.** *It is
+done: `r6810`, sixteen checks, and it is **on main** — you took it in with both code seats at `a4170d20`. So
+`P10`'s caveat can cite rather than stand on a reading already. Nothing is owed there.*
