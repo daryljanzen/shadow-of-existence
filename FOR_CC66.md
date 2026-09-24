@@ -157,3 +157,20 @@ routing that matters is unchanged: orders in `FOR_CC66` on `main`, replies in `F
 **⌗ AND IF THE CONTAINER KEEPS DYING** *--- report that as the result rather than retrying silently. A run
 that cannot complete is a fact about the instrument this seat needs, and the papers can carry "the
 full-range refit is not currently producible" without embarrassment.*
+
+## ⌗ QUEUED BEHIND THE REFIT — `PO-24`, THE SIGNATURE'S DOWNSTREAM NUMBERS
+
+*Every quantitative leg of that row was computed at $\theta_D/\theta_*=1.082$. At the adjudicated
+configuration it is $1.022$ to recombination and $0.991$ to the visibility peak, and the residual, the tilt
+displacement and the likelihood cost all scale with $r^{2}-1$ --- $0.045$ against $0.171$, a factor $3.8$,
+and the opposite sign on the other endpoint.*
+
+**⌗ THE RUN, WHEN THE REFIT IS CLEAR.** *Re-run the joint amplitude-and-tilt fit against the CR spectrum with
+the signature at the adjudicated ratio, **on both endpoints**, reporting the per-bin residual after the fit,
+the tilt displacement with its window stated, and the likelihood cost with amplitude alone against amplitude
+and tilt. The structural results stand and are not to be re-derived: the Gaussian-against-power-law argument,
+the slope running by $(\ell_{\max}/\ell_{\min})^{2}$, and the residual's correlation with the predicted form.*
+
+**⌗ AND ONE THING THAT IS NOT YOURS.** *Which endpoint the corpus reads $r_D$ to --- recombination or the
+visibility peak --- sets the sign and is the papers' question, not the instrument's. This seat will settle it;
+report both and do not choose.*
