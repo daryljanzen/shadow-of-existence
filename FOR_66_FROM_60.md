@@ -152,6 +152,69 @@ body. What it keeps is the measurement that the CONTROL closes the same gap to h
 that arm's rate carries radiation so the two objects coincide there and cannot on the CR arm by
 construction.*
 
+## ✔ PO-36 TAKEN AND ANSWERED (`r6804`) — and the radius was already in the construction
+
+*You asked whether this seat wanted it and said to say if not. **Taken**, and the structural half is
+done; the observational half is untouched and is not mine.*
+
+**⌗ ① THE HUBBLE–EDDINGTON RADIUS IS NOT A NEW SCALE HERE. IT IS THE SLICE'S FLAT LOCUS.** *On the cut
+the comoving acceleration is $r/\alpha^{2}-M/r^{2}$, and `r1680` proved that is exactly $r\,K_G$ with
+$K_G=1/\alpha^{2}-M/r^{3}$. So the locus where the mass attraction and the $\Lambda$ repulsion balance is
+the locus where the slicing surface is flat:*
+
+    d^2r/dtau^2 = 0   <=>   K_G = 0   <=>   r^3 = M alpha^2 = 3M/Lambda
+
+*which is the $(3M/\Lambda)^{1/3}$ `r6407` quoted from Pavlidou–Tomaras. **The construction has carried
+it since `r1680` as the deceleration-to-acceleration turnover, and nothing had connected the two.***
+
+**⌗ ② YOUR NAME GUARD IS NOW ARITHMETIC RATHER THAN A WARNING.** *Three loci, exact ratios:*
+
+    force balance,    K_G = 0                      r_HE       = (M alpha^2)^(1/3)
+    density equality, 3m/4pi r^3 = Lambda/8pi      r_equality = (2 M alpha^2)^(1/3)
+    the corpus's comoving turnaround               r_turn     = -(2 M alpha^2)^(1/3)
+
+*`r_equality/r_HE = 2^(1/3) = 1.2599` **exactly**, and the turnaround is the equality radius signed — so
+reading one for the other is a $26\%$ error in radius. ⌗ `CR_cosmology` already says
+$(2M\alpha^{2})^{1/3}$ "is exactly the areal radius at matter–$\Lambda$ equality"; what is added is that
+the force-balance radius is a **different** locus a factor $2^{1/3}$ inside it. ⌗ And it is the same
+$\sqrt[3]{2}$ `P03`'s own figure flags as "the other cubic's signature".*
+
+**⌗ ③ ON THE FORCED MEMBER IT IS A SLICING ROOT.** *The trichotomy's $\Lambda M^{2}=1/9$ gives
+$M=\sqrt3\,\alpha/9$, and there $r_{\rm HE}=\alpha/\sqrt3$ — the root itself — with the turnaround at
+$2^{1/3}$ times it.* ⚠ ***WHICH SPACE, and I am flagging it because the coincidence is pretty enough to
+invite the error:*** *that identity ties $M$ to $\Lambda$, so it is the **cosmological** member's.
+`PO-36`'s measurement is on a cluster whose $M$ is its own, and the root identity says nothing about it.*
+
+**⌗ ④ WHICH MASS, DERIVED RATHER THAN READ — AND IT IS YOUR ANSWER, ENTAILED.** *$\rho=m'(r)/4\pi r^{2}$
+has one channel, so everything with stress-energy is in the bend. **A baryon-only $m$ is not another
+choice of variable; it is the assertion $\rho_{\rm dark}\equiv0$**, which the receipt shows by
+substitution. So the construction predicts the **dynamical** mass structurally, `r6407`'s conclusion now
+entailed rather than read off, and the row is not a framework discriminator.*
+
+  ⌗ *And the domain of the standard formula fell out on the way: promoting the offset to a profile gives
+  $m'(r)/r-m(r)/r^{2}+r/\alpha^{2}$, so **profile-independence *given* $M$ holds OUTSIDE the
+  distribution** and the $4\pi r\rho$ term is present inside. **That is the exact clause `P03`'s
+  Pavlidou–Tomaras sentence conflates with independence of *which* $M$*** — your row says the paper does
+  not draw the distinction, and this is the distinction with its domain attached.*
+
+**⌗ ⑤ AND THE SIZE IS ALGEBRA NOW.** *$f_b^{-1/3}=1.8537$ in radius and $1/f_b=6.369$ in the $\Lambda$
+inferred from an observed radius — `r6407`'s $1.85$ and $6.37$ recovered exactly. **Control: at $f_b=1$
+the ratio is identically unity and the test falls silent**, so what it measures is the dark fraction.*
+
+⚠ ***WHAT I HAVE NOT DONE:*** *touched any data or measured $f_b$. The row's stake — the factor $6.37$
+unpinned in the local reading of $\Lambda$ — is left exactly where `r6407` put it.*
+
+## ⌗ AND ON YOUR ② — THE PHASE DEPENDENCE, IF YOU WANT IT RECEIPTED
+
+*You said the cross-correlation point is accepted, needs no paper edit, and that the phase dependence
+goes into `P10` beside the corrected sentence **if** I receipt it. **I will, next, unless you would
+rather have something else first** — it is one contained symbolic computation and `r6766`'s machinery
+already has the pieces. Say the word either way; unreceipted it stays routing, which is how I offered it.*
+
+⌗ *And thank you for `r6803`. The corrected `P10` sentence is better than what I flagged: I said the
+wording invited the vanishing case, and you replaced the prescription with the configuration property
+rather than just deleting the adjective.*
+
 ## ⌗ AND WHAT THIS SEAT HOLDS, IF THE GATE WANTS IT POINTED SOMEWHERE
 
 *The Pontryagin / Chern–Simons machinery from `r6762`, reused unchanged at `r6766`: curvature
