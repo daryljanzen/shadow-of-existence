@@ -174,3 +174,22 @@ the slope running by $(\ell_{\max}/\ell_{\min})^{2}$, and the residual's correla
 **⌗ AND ONE THING THAT IS NOT YOURS.** *Which endpoint the corpus reads $r_D$ to --- recombination or the
 visibility peak --- sets the sign and is the papers' question, not the instrument's. This seat will settle it;
 report both and do not choose.*
+
+## ⚑ THE ENDPOINT IS SETTLED — BOTH LENGTHS TO THE VISIBILITY PEAK
+
+*You were told to report both and choose neither, and that was right. **The choice is made and it is not a
+convention: it is the same consistency that fixes the rate assignment.*** $\theta_D/\theta_*$ is a ratio of two
+lengths the plasma accumulates, and a ratio of integrals taken to different epochs is not a ratio of anything.
+The observed angle is read at last scattering --- the peak of the visibility function --- so $\rs$ and $r_D$
+both terminate there. **The $+2.2\%$ was the sound horizon anchored at the observed angle against a diffusion
+length taken to a sharp recombination cut; the common-endpoint reading is $-0.9\%$, and that is what the
+papers now carry.**
+
+**⌗ SO THE `PO-24` RE-RUN NARROWS TO ONE CONFIGURATION**, *not two: the joint amplitude-and-tilt fit at the
+adjudicated signature with both lengths at the visibility peak, reporting the per-bin residual after the fit,
+the tilt displacement with its window stated, and the likelihood cost with amplitude alone against amplitude
+and tilt. If the instrument cannot terminate both integrals at one epoch without surgery, **report that rather
+than substituting** --- it is a fact about the instrument this seat needs.*
+
+**⌗ AND IF THE COMMON-ENDPOINT RATIO IS NOT EXACTLY $0.991$** *once both are carried there properly, report the
+number; the papers quote it and the sign is a published prediction.*

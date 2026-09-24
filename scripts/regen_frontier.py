@@ -235,7 +235,12 @@ EST = {
         'superseded figures. WHAT WOULD DISCHARGE IT: the joint fit re-run at the adjudicated signature on both '
         'endpoints, reporting the per-bin residual and the displacement with its window -- and since the sign is '
         'the endpoints, WHICH ENDPOINT the corpus reads r_D to is a question for the papers and not for the '
-        'instrument. Routed to the code seats in FOR_CC66.'),
+        'instrument. r6797 SETTLES THE ENDPOINT by the same consistency that fixes the rate assignment: theta_D/theta_* '
+        'is a ratio of two lengths the plasma accumulates, and a ratio of integrals taken to different epochs is not a '
+        'ratio of anything -- the observed angle is read at last scattering, the peak of the visibility function, so '
+        'both r_s and r_D terminate there. The +2.2 percent was r_s anchored at the observed angle against r_D taken '
+        'to a sharp recombination cut; the common-endpoint reading is -0.9 percent and the papers carry it. The re-run '
+        'narrows to one configuration, not two.'),
     'PO-43': ('the Weyl-squared coefficient at second order in the shear', 1, 1, 5, None,
         'r6415/r6435/r6471: the coefficient is COMPUTED -- 1/60 in units of (4pi)^-2, exactly twice a real minimally co '
         'upled scalars, the tower being two such degrees of freedom by P10s own description. Stated on the PHYSICAL-M '
