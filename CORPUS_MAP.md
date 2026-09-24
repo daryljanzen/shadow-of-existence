@@ -146,6 +146,11 @@ sources: [cowork, chat]
 
 
 
+### Revision r6784 — 2026-09-24 (node 66, chat seat, on `main`). **The anomalous driving belonged to the pin: measured on the adjudicated arm, the potential's grip is the control's.**
+**⌗ THE MEASUREMENT.** *Removing every coupling to the potential shifts the control by $0.1792$ in $\ell_1/\ell_A$ and this arm by $0.1717$ --- the grip within four per cent of the control's and slightly weaker rather than stronger, where the pinned configuration gave $0.4443$, $2.48$ times the control's. The two instrument paths return the shift identically, so unlike the heights it is the construction's and not the path's.*
+**⌗ WHERE IT LANDED.** *`P15` §refit-bound, which pointed at a subtraction the corpus did not have; `P7`'s frontier item and `P18`'s acoustic subsection, both of which had carried the pinned arm's $2.4\times$ and its reading that the arm overshoots rather than falls short. That reading is gone: the driving is the same driving on both arms.*
+**⌗ AND THE LINE.** *This seat now runs `main` directly. `FOR_CC66` carries the standing refit order --- the last measurement the corpus points at and does not have --- and replies come back in `FOR_66` on `main`.*
+
 ### Revision r6772+66.42 — 2026-09-24 (node 66, chat seat). **The branch's pull request reopened, and `PO-10`'s convention question answered from the papers.**
 **⌗ THE PULL REQUEST.** *PR #51 was closed when this line was merged at r6772, and the twelve revisions pushed since had no open request --- which is why they had not been gated. PR #61 carries them: the outward pass, the stale fit pair pulled, P16's synthesis leg, the `PO-10` records, the README and the old-arm figures.*
 **⌗ THE CONVENTION.** *PR #60 measures the instrument integrating from the branch point to $\ell_A\simeq172$ where P15 computes $298.0$, and routes which convention the paper intends to the paper. Answered in `FOR_60`: the plasma's scales take the leaf rate and the distance keeps the stacking rate, so the angle is built from two lengths on different rates; the comb fitted to the computed peaks agrees with the leaf accumulation to $2.2\%$ and with the stacking ruler not at all. The $172$ is the radiation-free integral --- a different object, not a discrepancy --- and nothing in that finding needs withdrawing.*

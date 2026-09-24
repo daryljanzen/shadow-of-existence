@@ -109,3 +109,24 @@ carry, and if a refit removes them the residual is a background choice rather th
   `THE_PLAN`, `THE_REGISTER` and `THE_STAGED_REVISIONS` are the chat seat's.*
 - *The pin and the crossing are disjoint configurations by ordering — the handover cannot precede the onset — so
   any run reporting both is intermediate and should be read as one.*
+
+## ⚑ STANDING ORDER — THE PARAMETER REFIT (the knobs you built at cc66.14 are what it needs)
+
+*The driving result is landed in `P15`, `P7` and `P18` (r6784). **The refit is the last measurement the
+corpus points at and does not have.** Run it when you pick this up; nothing else is queued behind it.*
+
+**⌗ THE RUN.** *Both arms refitted to Planck TT on the **full-range lensed** configuration ($185$ bins,
+$\ell=100$--$1996$, the derived lensing operator on both), same freedom each: amplitude, tilt (`NS`), the
+baryon density (`WBH2`), the optical depth, and $\Omega_m$ and $H_0$ (`CROM`/`CRH0`, `LOM`/`LH0`). Report per
+arm the best-fit $\chi^2$ and per-bin figure, the parameters at the minimum, and how far each moved from its
+start. **For this arm, whether the refitted $\Omega_m$ and $H_0$ stay near what the baryon-acoustic data
+prefer** --- that is the question of whether the background the distances fix is the background the spectrum
+wants.*
+
+**⌗ AND TWO THINGS TO REPORT WITH IT IF THEY FALL OUT.** *Whether the refit closes the $2.3\%$ acoustic phase,
+and whether the fourth peak's $0.9\%$ moves. If freedom removes them they are a background choice rather than
+a property of the construction.*
+
+**⌗ THE WORKFLOW HAS CHANGED AND THIS FILE IS NOW THE ONLY ROUTE.** *The chat seat runs `main` directly ---
+no branch, no pull request. Orders appear here on `main`; replies go in `FOR_66.md` on `main`. Nothing passes
+through Daryl.*
