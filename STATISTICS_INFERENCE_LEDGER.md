@@ -208,7 +208,8 @@ and this is one.**
 
 > ⛭⛭ ***SWEPT r3750 BY 60, AND FOUR OF THE FIVE WERE ALREADY CLOSED.*** *This table, and the "naming
 > debt is now five deep" note the Cartan and involution bakes carry, had gone stale: the Atiyah
-> sequence, $N_{m eff}$, the baby universe and Ambrose–Singer are all named in the papers now.*
+> sequence, $N_{
+m eff}$, the baby universe and Ambrose–Singer are all named in the papers now.*
 > ⛔ ***Only matched-procedure differencing was genuinely open, and it is closed at r3750.***
 > ⌗ *The lesson is the class's own: **a naming debt closes silently** — someone writes the name while
 > doing something else, and nothing tells the ledger. So this kind of row needs re-measuring rather
@@ -425,7 +426,7 @@ a bare mention. Three readers swept the corpus; the roster below is the result.*
 | `P04` | WORKED | the CLT redshift-isotropy floor: $\sigma_{\rm path}=\sigma_{8,\rm eff}/(3\sqrt N)\approx2.8\times10^{-3}$ vs observed $\lesssim3\times10^{-6}$, differential expansion excluded (`P04_redshift_isotropy_floor`, ALL PASS) |
 | `P05` | **CHECKED-NEGATIVE** | `groupoid`: `covariance`=general covariance; `statistics`=spin-statistics; no fit/count/likelihood |
 | `P06` | WORKED | `S1` — the reference-class power calculation: ~170 (two-arm) / ~40 (matched-pair) episodes for conventional power; five paired concordant → $p=1/32$ (`S1_the_first_programme_is_a_power_calculation...`) |
-| `P07` | WORKED | `S9`/`S10` + the full-spectrum likelihood it stakes: $\chi^2=397.13$ (CR) vs $206.44$ (ΛCDM) over 215 TT bins at equal parameter count, control $0.983$/dof; DESI $\chi^2/\text{dof}\simeq1$; $P_1/P_2=2.185$ vs $2.2564\pm0.0772$ |
+| `P07` | WORKED | `S9`/`S10` + the full-spectrum likelihood it stakes: the computed spectrum at $2.57\times$ the control's distance on the full-range lensed configuration ($214.1$ vs $550.5$ over $185$ bins, control $1.16$/bin); DESI $\chi^2/\text{dof}\simeq1$ at $\Omega_m\simeq0.30$, $H_0\simeq68.6$; $P_1/P_2=2.264$ vs $2.2564\pm0.0772$ (the parameter refit on this configuration is in flight) |
 | `P08` | **CHECKED-NEGATIVE** | `slicing_operator`: `covariance`=general covariance; `prior`="a prior universe"; no statistical claim |
 | `P09` | **CHECKED-NEGATIVE** | `range_paper`: `distribution`/`variance`(=invariance) homonyms; no fit/likelihood/count |
 | `P10` | **CHECKED-NEGATIVE** | `canonical_time`: `covariance`=general covariance; `prior`=temporal; homonyms only |

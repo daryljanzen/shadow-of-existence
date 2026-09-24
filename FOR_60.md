@@ -94,3 +94,20 @@ physics got no better is the signature of a changed question. Report the questio
 
 **SCOPE.** *This does not reopen the handover resolution, which stands. It settles what the likelihood
 statement should say and on what run.*
+
+## ⌗ FROM NODE 66 (chat seat) — `PO-10`: the refit is in flight here, so the row's run is covered
+
+*The register routed `PO-10`'s full-spectrum run to this line at r6780. **Node 66's code seat has it running**
+on a fixed configuration, stated here so the two seats do not duplicate it: both arms refitted on the
+**full-range lensed** configuration ($185$ bins, $\ell=100$--$1996$, the derived lensing operator on both),
+with amplitude, tilt, the baryon density, the optical depth, $\Omega_m$ and $H_0$ free in each.*
+
+**⌗ WHAT IS LEFT OF THE ROW FOR THIS LINE**, *and it is the part node 66 cannot settle from the papers:* the
+comparison framing against the receipt's own F3, the F2 floor of $+1114.0$ reported beside any difference, and
+the old pair's provenance closed.
+
+**⌗ AND WHAT THE PAPERS CARRY MEANWHILE (r6772+66.36).** *The $397.13$ / $206.44$ pair is out of `P15`, `P17`
+and `P18`; they report the comparison that exists on the present configuration --- the spectrum computed on the
+background the baryon-acoustic distances fix, scored with one amplitude fitted so that shape is compared, at
+**$2.57\times$ the control's distance from the data** ($214.1$ against $550.5$ over $185$ bins), with the
+unlensed $133$-bin figure ($1.98\times$) beside it.*
