@@ -60,6 +60,17 @@ DR = 0.0 if NODRIVE else 1.0                  # the driving switch, multiplying 
 DRC = float(os.environ.get('DRC', DR))
 DRE = float(os.environ.get('DRE', DR))
 LMAXL = float(os.environ.get('LMAXL', '1300'))
+# ** NS: THE PRIMORDIAL TILT.  ONE DEFINITION, BECAUSE THERE WERE THREE LITERALS -- r6788+cc66.17. **
+# *cc66.14 exposed the 0.965 in the FLUID path's k weighting and verified it there.  ** The
+# hierarchy path and the low-ell path carry their OWN copies of the same literal (lines ~1213 and
+# ~1387), so `NS` moved nothing on `HIER=1` -- which is the path the refit grid runs on. **  The
+# verification at cc66.14 was done at LSTEP=8 with HIER unset, i.e. on the one path where the knob
+# did work, so it passed and the shadow survived.*
+#   ⇒ ** That is the knob-shadow trap (r6476) in its exact form: a knob checked on a path it
+#   reaches, while the path that matters reads a literal. **  *Caught here because the refit
+#   returned d(chi^2) = 0.00 for a one-step excursion in n_s on BOTH arms -- a parameter that
+#   cannot move chi^2 at all is not a parameter, and the flatness test is what exposed it.*
+NS = float(os.environ.get('NS', '0.965'))
 # ** KFAC: how far past the highest REPORTED multipole the k-integral runs.  r3870. **  See the long
 # note at the k-grid in main(): at KFAC=1 -- which is what building the k-grid from LMAXL amounts to
 # -- the C_l integral is not converged, and the control reports P1/P2 = 2.721 where the converged
@@ -901,7 +912,7 @@ def los_spectrum(kk, ee, Y, L_A, D_M, R_S):
     #   rescaling and a change costs a full projection.  The ODE solve is independent of it, but
     #   this file does not cache that, so one n_s costs one run. **
     # *Default 0.965 = byte-identical; nothing moves unless it is set.*
-    P = kk ** (float(os.environ.get('NS', '0.965')) - 1) / kk * dk
+    P = kk ** (NS - 1) / kk * dk
     x0 = eta_0 - ee
     ls = np.arange(100, int(LMAXL), int(os.environ.get('LSTEP', '8')))
 
@@ -1210,7 +1221,7 @@ def _project(kb, ee, Y, ls, x0, e_sw):
          + _PI * 0.75 * np.gradient(np.gradient(g_ * Pi, ee, axis=0), ee, axis=0)
          / kb[None, :] ** 2)
     dk = np.gradient(kb)
-    P = kb ** (0.965 - 1) / kb * dk
+    P = kb ** (NS - 1) / kb * dk
     out = np.empty(len(ls))
     for j, l in enumerate(ls):
         J = spherical_jn(int(l), kb[None, :] * x0[:, None])
@@ -1384,7 +1395,7 @@ def main():
     damp = np.exp(-(kk * rD) ** 2)
     SWd, DPd = SW * damp, DP * damp
     dk = np.gradient(kk)
-    P = kk ** (0.965 - 1) / kk * dk
+    P = kk ** (NS - 1) / kk * dk
     x = kk * D_M
     xi = kk[None, :] * (eta_0 - ee)[:, None]                               # (n_ee, nk)
     ls = np.arange(100, int(LMAXL), 4)
