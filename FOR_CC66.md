@@ -346,3 +346,33 @@ comparison entirely.*
 **⌗ THIS IS NOT A LICENCE TO LAND IT.** *I have written nothing into `P03` or the row. **Verify first, and if
 it breaks, the breaking is the result** --- I would rather lose a four-line answer than carry one that has not
 been attacked.*
+
+## ⚑ WORK ORDER — `PO-43`'s ONE UNRUN CHECK, WHICH MAY CLOSE THE ROW
+
+*The row has been reduced twice and what is left is small. Question (i) is answered --- the graviton tower on
+the closed layer **is** chirally capable, the handedness being an irrep label that a connected isometry cannot
+exchange. Question (ii) is answered here at r6849 --- the audit does not range over a topological term's
+finite part and should not. **What remains is a check nobody has run**, and it decides whether the parity-odd
+entry is owed at all.*
+
+**⌗ THE CHECK.** *A counterterm answers to the effective action, and the effective action answers to the
+\emph{state} rather than to the tower's capacity. The state here is Hartle--Hawking regularity, imposed fibre
+by fibre on the Euclidean section --- **and nothing in the statement of that condition refers to helicity.**
+If the two helicity towers are populated alike, the parity-odd content cancels between them and the
+Pontryagin-type entry is not owed. **Verify or break that**, on the corpus's own boundary condition rather
+than on a generic argument.*
+
+**⌗ WHAT WOULD BREAK IT, AND THESE ARE THE PLACES TO LOOK.** *Whether the regularity condition's fibre-by-fibre
+statement is helicity-blind at the level of the mode functions and not merely in its wording; whether the
+measure or the degeneracies distinguish the two towers at the floor, where the self-dual and anti-self-dual
+fives sit; and whether the Euclidean continuation itself picks a handedness, since a self-dual pair on a
+four-sphere is exactly where a continuation can.*
+
+**⌗ AND THE READING EITHER WAY.** *If the towers are populated alike, **the entry is not owed and the row
+closes above the entropy question** --- the declined one, which `P17` declines in terms and says failing to
+carry would be a result rather than a gap. If they are not, the parity-odd coefficient is a real entry and
+the row is about what fixes it, which is a different and larger question.*
+
+**⌗ AND ONE CANDIDATE NAMED IN THE ROW AND DELIBERATELY NOT BUILT** --- *the tower's own floor as a canonical
+subtraction point for the log. **Do not build it unless the check above comes out against**, and if you do,
+the burden the row states is the burden: show the floor is forced rather than convenient.*
