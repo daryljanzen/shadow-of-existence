@@ -118,6 +118,28 @@ rs=rs_f(zs); lA=np.pi*DM/rs; rs=rs_f(zs); lA=np.pi*DM/rs
 print("="*80); print("CONTROL — THE SAME MACHINERY ON LambdaCDM"); print("="*80)
 print(f"\n  z_onset={zs:.0f}  eta_onset={eta_onset:.2f}  eta_rec={eta_rec:.1f}  D={DM:.0f}  r_s={rs:.2f}  l_A={lA:.1f}")
 eta_end=float(os.environ.get('ETAEND', np.interp(min(20*a_rec,1.0),ag,eg)))
+# ** ETADEC: THE DECOUPLED POST-RECOMBINATION SOURCE, r6825+cc66.24, at node 66's order. **
+#
+# WHY IT EXISTS.  The line-of-sight cut ETAEND defaults to 20 a_rec, z = 53.5, so the LATE ISW is
+# outside every spectrum this module produces -- and r6801+cc66.22 measured that this is the cause
+# of the factor-two depth gap in P15's low-multipole floor.  *Pushing ETAEND out does not work: the
+# truncated free-streaming towers go NON-FINITE once the cut passes z ~ 10, under the defaults and
+# under two refinements of the step count and the freeze threshold, so it is the LG = 12 truncation
+# itself and not a step size.*
+#
+# WHAT IT DOES.  Past eta = ETADEC the photon and neutrino sectors are FROZEN and dropped from the
+# constraint, and the metric-plus-matter sector alone is carried on:
+#     delta_c' = -theta_c + 3 Phi',   theta_c' = -H theta_c + k^2 Psi,   likewise (delta_b, theta_b)
+#     Phi' = -H Psi - k^2 Phi/(3H) - (H/2)(Omega_c delta_c + Omega_b delta_b),   Psi = Phi
+# ** Phi' + Psi' needs the metric and matter sectors only, which is the whole point: the tower that
+# goes non-finite is not in the ISW source. **  *The radiation perturbations are dropped rather than
+# approximated, and what that costs is MEASURED in the overlap window where the full hierarchy is
+# still valid -- it is not asserted here.*
+#
+# DEFAULT 0 = OFF = byte-identical.  ETADEC must be set WELL AFTER last scattering, where the
+# visibility g = tau' exp(-tau) is negligible: the frozen Theta_0 and theta_b enter the source only
+# through g, so freezing them costs nothing there and would corrupt the source if g were alive.
+_DEC=float(os.environ.get('ETADEC','0'))
 def modes_all(kk):
     """Solve every mode in ONE system.  State: (nk, 7+LMAX-1) flattened.
     The modes are independent, so this is the identical RHS applied to arrays over k --
@@ -198,7 +220,14 @@ def _xe(a):
         xH = _xeg[-1] if z <= _zg[-1] else float(np.interp(z, _zg[::-1], _xeg[::-1]))
         if xH < 1e-3: xH = xH*_XEF          # frozen-out residual tail (tested r2124: negligible)
     return xe_total(z, xH, _nH0, _Yp, helium=_HE)
-_ea = np.linspace(eg[1], eta_end, 20000)
+# ** NTAU: THE OPACITY GRID'S POINT COUNT, EXPOSED r6825+cc66.24. **  tau' spans some twelve
+# orders of magnitude across this range and is splined on a UNIFORM grid, so its resolution is
+# eta_end/NTAU -- i.e. ** raising ETAEND silently COARSENS the opacity **, by 7.5x if the cut is
+# moved from 20 a_rec to today.  *A cubic spline of a function that falls that fast on a grid that
+# coarse overshoots and goes negative, and 1/tau' then overflows inside the tight-coupling
+# viscosity.*  Default 20000 = the historical value = byte-identical at the default ETAEND.
+_NTAU = int(os.environ.get('NTAU','20000'))
+_ea = np.linspace(eg[1], eta_end, _NTAU)
 _aa = np.interp(_ea, eg, ag)
 _tpa = np.array([_xe(x)*_nH0/x**3*sigT*x*Mpc_m for x in _aa])
 taup_of = CubicSpline(_ea, _tpa)
@@ -232,6 +261,22 @@ def source_terms(ee, Yv, kk, g, tau):
 
 def _rhs(e, y, kk, tight):
     dc,tc,dg,tg,dn,tn,Ph,tb,db = [y[:,j] for j in range(9)]
+    # ** THE DECOUPLED BRANCH (ETADEC), r6825+cc66.24. **  Returns EARLY with the radiation sector
+    # frozen, so the free-streaming towers -- whose LG = 12 closure is what goes non-finite past
+    # z ~ 10 -- are not integrated at all.  *Psi = Phi exactly here: the only anisotropic stress in
+    # this system is the two free-streaming species', and they are dropped with it.*  ⌗ *It returns
+    # before the opacity and radiation-fraction splines are touched, because it needs none of them
+    # and this phase is stepped tens of thousands of times.*
+    if _DEC > 0 and e >= _DEC:
+        Hc=Hc_of(e); Ocv=Ocdm_of(e); Obv=Ob_of(e)
+        Php = -Hc*Ph - kk**2*Ph/(3*Hc) - (Hc/2)*(Ocv*dc + Obv*db)
+        out = np.zeros_like(y)
+        out[:,0] = -tc + 3*Php          # delta_c'
+        out[:,1] = -Hc*tc + kk**2*Ph    # theta_c',  Psi = Phi
+        out[:,6] = Php                  # Phi'
+        out[:,7] = -Hc*tb + kk**2*Ph    # theta_b',  Thomson drag is dead here
+        out[:,8] = -tb + 3*Php          # delta_b'
+        return out
     Fg = y[:,IG:IG+LG-1]; Fn = y[:,IN:IN+LN-1]
     Hc=Hc_of(e); Rb=Rb_of(e); Ogv=Og_of(e); Onv=On_of(e); tp=float(taup_of(e))
     Ocv=Ocdm_of(e); Obv=Ob_of(e)
@@ -411,7 +456,13 @@ def evolve(kk):
             # STEP-SIZE limit, h*lambda < ~2.8 with lambda ~ k the multipole-advection rate.
             # So the criterion is on h*k, not on k*eta/LG -- which is why one global k*eta cap was
             # simultaneously 7x too tight for the fine stage and load-bearing for the coarse one.
-            live = (kk*h) < _HK
+            # ** THE FREEZE IS A TOWER GUARD AND THE DECOUPLED SECTOR HAS NO TOWER, cc66.24. **
+            # h*k < HKCAP limits the explicit step against the multipole-advection rate k.  The
+            # decoupled system advects nothing -- its only rates are H and k^2/(3H) -- so freezing
+            # on h*k there would silently stop Phi's decay, which is the very thing being
+            # integrated for.  *Left ON everywhere else, including every default run.*
+            live = (np.ones_like(kk, dtype=bool) if (_DEC > 0 and e >= _DEC)
+                    else (kk*h) < _HK)
             if _CAP < 9.0:                     # legacy behaviour retained under KETACAP<9
                 live = live & ((kk*e) < _CAP*min(LG,LN))
             if not live.any(): break
