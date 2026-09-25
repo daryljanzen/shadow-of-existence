@@ -3703,3 +3703,64 @@ about `PO-23`'s ultraviolet definition; the Weyl-squared entry off the admitted 
 claimed; $39/4$ is not discharged (`r6436` stands).*
 
 ⌗ *`receipts/P10_canonical_time/P10_the_floor_is_forced_as_a_mode_but_the_subtraction_point_is_a_convention_and_the_residue_is_the_absorbed_constant.py`*
+
+---
+
+# ⚑⚑ r6875+cc66.32 — `PO-47`: THE SKY'S OWN FOURTH PEAK, WITH THE COVARIANCE CARRIED
+
+⚠ ***A CORRECTION TO `cc66.28`'s YARDSTICK.*** *That receipt quoted the sky's fourth peak as
+$1121.9\pm0.87$ and used the $0.87$ throughout. **It is a procedure spread** — the window sweep on one
+realisation — not the sky's uncertainty.*
+
+**⌗ THE SKY'S FOURTH PEAK, WITH `plik_lite`'s BANDPOWER COVARIANCE PROPAGATED THROUGH THE SAME PARABOLA.**
+
+| | value |
+|---|---|
+| central | $1121.9$ |
+| statistical (COV_TT, $600$ realisations, $W=55$) | $\pm2.03$ |
+| procedure (seven-window sweep) | $\pm0.87$ |
+| **combined** | $\mathbf{\pm2.21}$ ($\pm1.57$ at $W=80$) |
+
+**⌗ THE WINDOW, CHOSEN ON THE BIAS–VARIANCE TRADE.**
+
+| $W$ | kept | $\sigma_1$ | $\sigma_2$ | $\sigma_3$ | $\sigma_4$ | bias$_4$ | |
+|---|---|---|---|---|---|---|---|
+| $40$ | $529/600$ | $4.38$ | $13.83$ | $2.72$ | $122.32$ | $+0.05$ | ⛔ |
+| $55$ | $600/600$ | $2.39$ | $2.61$ | $1.92$ | $\mathbf{2.03}$ | $+0.63$ | ✔ |
+| $80$ | $600/600$ | $1.33$ | $1.34$ | $1.09$ | $\mathbf{1.31}$ | $-0.37$ | ✔ |
+| $110$ | $600/600$ | $0.80$ | $0.83$ | $0.69$ | $0.96$ | $\mathbf{-6.38}$ | ⛔ |
+
+*Seed-independent to $2\%$ ($2.07$ against $2.03$).*
+
+**⌗ THE THREE PAIRINGS AT THE FOURTH PEAK.**
+
+| pairing | offset | $\sigma$ at $W=55$ | $\sigma$ at $W=80$ |
+|---|---|---|---|
+| **CR arm − control** | $+2.00$ | $\mathbf{+0.90}$ | $\mathbf{+1.27}$ |
+| control − sky | $+2.65$ | $+1.20$ | $+1.69$ |
+| CR arm − sky | $+4.65$ | $+2.10$ | $+2.96$ |
+
+⇒ ***The construction's own displacement does not reach significance at either admissible window.***
+*$57\%$ of the arm-minus-sky offset is the control's — a **shared** offset, not this construction's.*
+
+**⌗ CONTROL — the machinery can see a displacement.**
+
+| planted | recovered |
+|---|---|
+| $4.0$ | $+4.56$ |
+| $10.0$ | $+11.71$ |
+
+⛔ **⌗ AND THE INSTRUMENT TRAP.** *`cc66.28`'s free-extremum locator under the covariance:*
+
+| peak | 1 | 2 | 3 | 4 |
+|---|---|---|---|---|
+| free search | $221.7\pm3.3$ | $526.2\pm54.7$ | $754.7\pm117.3$ | $\mathbf{1050.7\pm131.5}$ |
+
+***Seventy multipoles off. Error propagation through that locator must anchor the window.***
+
+⛔ **BOUND:** *`COV_TT` is the shipped bandpower covariance with foregrounds and calibration
+marginalised — no beam or theory-side term; the central value is the locator's on `plik_lite`'s binning
+(`sec:intro`'s own $1123.9$ is two multipoles away, inside); **none of the three candidates is run**;
+nothing re-opens the phase intercept, the damping envelope, the driving or the refit.*
+
+⌗ *`receipts/P15_CR_cosmology/P15_the_skys_own_fourth_peak_cannot_tell_the_arms_apart_and_the_displacement_is_shared_with_the_control.py`*

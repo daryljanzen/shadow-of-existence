@@ -1665,3 +1665,80 @@ claimed**: where the shear breaks the counterterm degeneracy the Weyl-squared co
 entry, and its own renormalisation condition is `PO-43`'s uncosted one rather than this row's.*
 
 ⌗ *Also unchanged: $39/4$ is not discharged — `r6436` stands, and this receipt does not touch it.*
+
+## ⚑ `PO-47` — **THE STOPPING RULE FIRES, AND THE SPREAD THAT FIRES IT IS NOT THE ONE I GAVE YOU**
+
+*`r6875`'s order, first branch. `receipts/P15_CR_cosmology/P15_the_skys_own_fourth_peak_cannot_tell_the_arms_apart_and_the_displacement_is_shared_with_the_control.py`
+— rc=0, five parts, **11 gates, two controls**. **The three candidates are NOT run.***
+
+## ⓵ ⚠ THE NUMBER I QUOTED AT `cc66.28` WAS THE WRONG HALF OF THE UNCERTAINTY
+
+*I gave the sky's fourth peak as $1121.9\pm0.87$ and used that $0.87$ as the yardstick throughout.
+**It is a procedure spread** — how far the answer moves as the parabola window is swept on **one**
+realisation of the sky. It is not the sky's uncertainty, and nobody had propagated that.*
+
+⇒ *Pushing `plik_lite`'s **bandpower covariance** through the identical parabola:*
+
+$$\boxed{\ \ell_4^{\rm sky}=1121.9\ \pm\ 2.03\ \text{(statistical)}\ \pm\ 0.87\ \text{(procedure)}\ =\ \pm\,2.21\ \text{combined}\ }$$
+
+***The half I was using is the smaller half.***
+
+## ⓶ AND AGAINST THE RIGHT YARDSTICK THE CONSTRUCTION'S DISPLACEMENT DOES NOT REACH SIGNIFICANCE
+
+| pairing | offset | at $W=55$ ($\pm2.21$) | at $W=80$ ($\pm1.57$) |
+|---|---|---|---|
+| **CR arm − control** | $\mathbf{+2.00}$ | $\mathbf{+0.90\sigma}$ | $\mathbf{+1.27\sigma}$ |
+| control − sky | $+2.65$ | $+1.20\sigma$ | $+1.69\sigma$ |
+| CR arm − sky | $+4.65$ | $+2.10\sigma$ | $+2.96\sigma$ |
+
+⇒ ***The sky cannot tell the two models apart at the fourth peak.*** ⚠ *I am not going to call that
+"comfortably inside": the reading runs $0.9\sigma$ to $1.3\sigma$ across the admissible window range,
+so **what is established is "not resolved", not "zero"**. On your test it is inside, and the receipt
+carries both numbers rather than the flattering one.*
+
+⌗ ***AND YOUR $+10.1$ WAS NEVER THIS NUMBER.*** *It is the paper's stored quartet ($1134$) against the
+paper's stored sky ($1123.9$) — two different procedures. Through one locator the arm-minus-sky offset
+is $+4.65$, and the part that is the construction's is $+2.00$.*
+
+## ⓷ ⛔ SO THE CANDIDATES ARE NOT RUN — BUT SOMETHING SMALLER SURVIVES AND IT IS NOT OURS
+
+***Both models sit high of the located sky.*** *The control by $+2.65$ ($1.2\sigma$) and the arm by
+$+4.65$ ($2.1\sigma$) — **$57\%$ of the arm's offset is the control's**. That is a shared offset of flat
+ΛCDM and this arm alike from the sky's fourth peak, and it is **named and not pursued**: your stopping
+rule is explicit, and a convergence check at the fourth peak is where it would go if you want it.*
+
+## ⓸ ⛔ AND AN INSTRUMENT TRAP, WHICH IS THE PART TO CARRY FORWARD
+
+*`cc66.28`'s locator finds its peaks by free extremum search and then fits the parabola. That is right
+on a smooth spectrum and **unusable on a noisy one**: pushed a covariance realisation at a time, the
+free search latches onto noise maxima and returns*
+
+| | peak 1 | 2 | 3 | 4 |
+|---|---|---|---|---|
+| free search under noise | $221.7\pm3.3$ | $526.2\pm54.7$ | $754.7\pm117.3$ | $\mathbf{1050.7\pm131.5}$ |
+
+***Seventy multipoles from the peak it is meant to be measuring.*** *The fix is to anchor the window on
+the unperturbed peak and refit — same parabola, and it asks the question actually being asked. **Any
+future error propagation through that locator has to anchor**, and I kept the failure as a gate so it is
+not rediscovered.*
+
+## ⓹ HOW THE WINDOW WAS CHOSEN, SO IT IS NOT CHOSEN FOR THE ANSWER
+
+| $W$ | kept | $\sigma_4$ | bias$_4$ | |
+|---|---|---|---|---|
+| $40$ | $529/600$ | $122.3$ | $+0.05$ | ⛔ *parabola inverts on $12\%$; too few bandpowers* |
+| $\mathbf{55}$ | $600/600$ | $\mathbf{2.03}$ | $+0.63$ | ✔ |
+| $\mathbf{80}$ | $600/600$ | $\mathbf{1.31}$ | $-0.37$ | ✔ |
+| $110$ | $600/600$ | $0.96$ | $\mathbf{-6.38}$ | ⛔ *bias exceeds the displacement under test* |
+
+*Seed-independent to $2\%$.* ⌗ **CONTROL:** *planting $4.0$ and $10.0$ in $\ell$ recovers $+4.56$ and
+$+11.71$ — **a real fourth-peak displacement would show up in this test**, so the null is not the
+machinery's failure to see.*
+
+## ⓺ WHAT THIS DOES NOT REACH
+
+⚠ *`COV_TT` is the shipped bandpower covariance with foregrounds and calibration marginalised; **no
+beam or theory-side term is added**, so this is the sky's statistical uncertainty and not a full budget.
+The central value is the locator's on `plik_lite`'s binning — `sec:intro`'s own $1123.9$ sits two
+multipoles away and well inside. And nothing here re-opens the phase intercept, the damping envelope,
+the driving or the refit, all of which your row carries as settled.*
