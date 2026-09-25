@@ -513,3 +513,74 @@ the phrase is in `CR_cosmology.tex`) and **the other survives in no paper at all
 ⚠ **Rewriting a frozen changelog on an inference is worse than the defect**, so the gate prints that class
 rather than failing on it, and the entry is named here for whoever owns that record rather than quietly
 "fixed". It is gated on `THE_FRONTIER` alone.*
+
+## ⚑ `r6838` — `PO-36`'s OBSERVATIONAL HALF: THE RADIUS TRACKS THE DYNAMICAL MASS, AND THE BARYON-ONLY READING IS *EXCLUDED*
+
+*Your order's "uninteresting" outcome is the one that occurred, and it is reported plainly as you asked. **But it
+arrives by a stronger route than a preference between two fits, and your guard fired on a locus you did not
+name.***
+
+**⌗ ① THE GUARD FIRES FIRST, AND ON A *THIRD* LOCUS.** *You warned that force balance and density equality
+differ by $2^{1/3}$ and that the literature is not uniform. **The literature is uniform — and reports neither of
+them as we read them.***
+
+- *Pavlidou & Tomaras (JCAP 2014) give a **maximum** turnaround radius $(3GM/\Lambda c^{2})^{1/3}$, "independently
+  of cosmic epoch and the exact nature of dark matter". ⚑ **That is our flat locus identically** — the same
+  closed form, proved here by substituting $\alpha^{2}=3/\Lambda$. The corpus's citation is exact, not loose.*
+- *Korkidis et al. (A&A 639 A122) measure $R_{\rm ta}$ **kinematically**, as "the largest non-expanding scale
+  around a center of gravity", in **N-body only**, and report $R_{\rm ta}\equiv R_{11}$: mean matter contrast
+  $\delta\sim11$ at $z=0$.*
+
+⇒ *⚠ **So the literature's $R_{\rm ta}$ is the ATTAINED radius and $r_{\rm HE}$ is a BOUND on it.** They are not
+the same quantity. And our own comoving turnaround — the density-equality radius — is a **third** locus,
+$2^{1/3}$ *above* $r_{\rm HE}$. **Identifying it with the literature's $R_{\rm ta}$ overpredicts by $1.72$**,
+which is larger than the $26\%$ error your order warned about. Anyone running this row next would have walked
+into it.*
+
+**⌗ ② THE BOUND-TO-ATTAINED FACTOR IS PARAMETER-FREE, WHICH IS WHY IT CAN BE USED.**
+
+$$\frac{\bar\rho(r_{\rm HE})}{\rho_m}=\frac{2\Omega_\Lambda}{\Omega_m}=4.343\qquad\text{$M$ cancels — one number
+for every structure}$$
+
+$$\Rightarrow\quad \frac{R_{\rm ta}}{r_{\rm HE}}=\left(\frac{4.343}{11}\right)^{1/3}=0.734
+\qquad(0.713\ \text{reading }\delta\ \text{as}\ \rho/\rho_m-1)$$
+
+*⚠ **The two readings of $\delta$ differ by $3\%$ in radius and the conclusion survives both**, so the ambiguity
+is reported rather than resolved.*
+
+**⌗ ③ THE ONE MEASUREMENT THAT EXISTS AGREES — AND IT IS NOT CIRCULAR ON THE MASS.** *The Milky Way
+(`arXiv:2105.04978`): $r_{\rm ta}=839\pm121$ kpc, kinematic, from nearby dwarfs, **explicitly "independent from
+internal dynamics"**, so the mass it is tested against is not the quantity the radius was read from.*
+
+| $M_{200m}$ | $r_{\rm HE}$ | $r_{\rm ta}/r_{\rm HE}$ |
+|---|---|---|
+| $1.0\times10^{12}$ | $1.115$ Mpc | $0.753\pm0.109$ |
+| $1.3\times10^{12}$ | $1.216$ Mpc | $0.690\pm0.100$ |
+
+*Consistent with $\Lambda$CDM's own simulated $0.734$ across the whole plausible mass range, **nothing
+adjusted**.*
+
+**⌗ ④ AND AT THE BARYON-ONLY MASS THE MEASUREMENT *EXCEEDS THE MAXIMUM*.** *$f_b M_{\rm dyn}$ puts the bound at
+$0.600$–$0.655$ Mpc against a measured $839$ kpc — **over by $1.28$–$1.40$**, and by $1.62$ on the Milky Way's
+actual, more concentrated baryons. ⚑ **A maximum cannot be exceeded — in this construction for the same reason
+as in $\Lambda$CDM, since outside the flat locus the shell is carried off and is not part of the bound structure
+— so the baryon-only reading is EXCLUDED rather than disfavoured.** That is a sharper statement than the order
+asked for and it does not depend on the cosmic $f_b$ being the right baryon budget.*
+
+**⌗ ⚠ AND THE HONEST WEIGHTING, BECAUSE THE REVERSE EMPHASIS WOULD OVERSTATE IT.** *The agreement in ③ is a
+**consistency statement, not a measurement of the ratio**: a $14\%$ error puts the $2\sigma$ band at roughly
+$0.53$–$0.97$, which would admit a range of models. ***The power of this pass is ④, where a reading falls
+outside a bound — not ③, where one falls inside a wide one.*** And $M_{200m}$ understates the mass inside
+$r_{\rm ta}$, so every ratio above is an **upper** estimate: the true values sit further below the bound, which
+strengthens ④ and cannot weaken it.*
+
+**⌗ ⛔ AND YOUR ACTUAL TARGET — RICH CLUSTERS — HAS NO SUCH MEASUREMENT, WHICH IS THE OTHER HALF OF THE ANSWER.**
+*Korkidis et al. is N-body. The 2024–25 work is still **searching** for a turnaround signature in clusters with
+neural networks rather than quoting radii. **So on rich clusters the row stays open on data that do not yet
+exist, not on nobody having looked** — and it now stays open with both arithmetic traps named, so the next pass
+makes neither. I did not fit anything; every number is a closed form evaluated at literature inputs, and no two
+sources are averaged.*
+
+⌗ *One rendering defect reported rather than silently corrected: Korkidis et al.'s abstract states
+"$(\Omega_m\sim0.7$; $\Omega_\Lambda\sim0.3)$", which is **transposed** — the runs it uses are concordance runs.
+Planck values are used here and the transposition is named.*
