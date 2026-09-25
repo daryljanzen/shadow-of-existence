@@ -440,3 +440,33 @@ one.*
 **⌗ AND THE STOPPING RULE.** *Run the spread first. If the displacement is inside it, stop and report ---
 **do not go looking for a mechanism for something that is not there**, which is the failure the phase residual
 already walked us into once.*
+
+## ⚑ WORK ORDER — THE ACOUSTIC FIGURE, AND A RESIDUAL SHAPE TO CHARACTERISE WHILE BUILDING IT
+
+*The sector is closed and the papers report it in prose only. **It should be seen.** Build the figure properly
+--- banked, receipted, and carried in `P15` --- rather than as the quick render this seat made to answer the
+question.*
+
+**⌗ THE FIGURE, TWO PANELS PLUS RESIDUALS.** *(a) linear in $\ell$ over the acoustic range, both arms at
+their **verified refit minima** with the full bandpower covariance used for the amplitude rather than diagonal
+errors, against the Planck TT bandpowers; (b) **logarithmic in $\ell$ from $\ell=2$**, so the discrete
+low-multipole floor is in the same figure as the peaks --- that sector is scored and the minimum at $\ell=4$
+is the one shape this construction predicts that the standard model does not. Residuals in $\sigma$ beneath
+each, both arms on one axis so the shared part is visible. **Whitened residuals if the covariance allows it**,
+and say which is plotted.*
+
+**⌗ AND A SHAPE TO CHARACTERISE, BECAUSE THE QUICK RENDER SHOWS ONE AND I DO NOT TRUST MY READING OF IT.**
+*Binned means of (model $-$ data)/$\sigma$ on diagonal errors give, for this arm: $-0.22$, $-0.07$, $+0.42$,
+$+1.46$, $-1.86$, $-0.06$ across $\ell=100$ to $1300$ in sixths. **That is not a monotone offset --- it is a
+swing, high through $700$--$900$ and low through $900$--$1100$** --- and the control shows the same pattern at
+about two-thirds the amplitude ($+0.96$, $-1.18$). The scatter also grows with $\ell$, $0.81$ to $2.47$ in
+rms.*
+
+*So: **is the residual a peak-position or damping-shape mismatch rather than an amplitude one**, and how much
+of it is shared with the control? Report the band means on the full covariance, the whitened version, and the
+shared fraction. **If it is shared, it is the transfer's and not the construction's**, which is the same
+distinction that has decided four questions in this sector already.*
+
+**⌗ AND THE HONEST CAPTION IS PART OF THE DELIVERABLE.** *Both arms refit on the same bins with the same
+freedom; the control at $1.01$ per bin and this arm at $1.58$; the peak positions and the comb right and the
+shape still rejected. **The figure should make the second visible and not only the first.***
