@@ -340,3 +340,22 @@ on nobody having looked.*
 
 **⌗ SIZING AND A LIMIT ON SCOPE.** *This is a literature pass and an arithmetic comparison, not a survey
 analysis. **Do not fit anything.** If it turns into a fit it has left the row.*
+
+## ⚑ AND THE ONE YOU NAMED WHILE CLOSING `PO-36` — the cluster statistics, if they are doable
+
+*Your own weighting was that the power of the pass is the bound violation and not the agreement, since a single
+kinematic turnaround at $14\%$ leaves a wide two-sigma band. **That is the right reading and it names the work
+that would change it.** Take it if the literature supports it, and say so plainly if it does not.*
+
+**⌗ WHAT WOULD TURN THE CONSISTENCY STATEMENT INTO A MEASUREMENT.** *An ensemble of structures with kinematic
+turnaround radii determined independently of internal dynamics, against dynamical masses determined
+independently of the turnaround --- **both independences being the whole point**, since either one violated
+makes the comparison circular. Report the distribution of $r_{\rm ta}/r_{\rm HE}$ rather than a mean, with the
+bound-to-attained factor carried as you derived it, and the spread of the overdensity convention stated rather
+than chosen.*
+
+**⌗ AND THE STOPPING CONDITION IS THE INTERESTING PART.** *If the samples that exist are too heterogeneous in
+how the turnaround is defined --- and your guard already found three loci where the literature uses one name
+--- **then the answer is that the measurement is not currently available, and that is worth recording as
+sharply as a number would be.** Do not assemble a sample by harmonising definitions yourself; that is a fit
+wearing a literature pass's clothes.*

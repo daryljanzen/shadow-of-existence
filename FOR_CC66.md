@@ -309,3 +309,40 @@ in question, and it would be a real defect in the state specification rather tha
 **⌗ ORDER AND STOPPING RULE.** *Run the first; if it dissolves the phase, run the second and stop. Report the
 first's numbers whatever they say --- **a residual that turns out to be a fitting artefact is as useful as one
 that turns out to be physics**, and the papers currently carry it as physics.*
+
+## ⚑ WORK ORDER — `PO-25` MAY BE ANSWERED BY AN INTERIOR THE CORPUS ALREADY SOLVED. VERIFY OR BREAK THIS.
+
+*The row's sharpened question is whether the interior mass function stays $o(1/r)$ at the origin: writing
+$m\sim kr^{-p}$, $p<1$ keeps the obstruction, $p>1$ destroys it, **and $p=1$ is decided by whether $2k$
+exceeds $Q^{2}$**. `P16` §interior already carries an exact interior --- the closed dust-plus-radiation ball,
+$a''+a=A/2$ in conformal time, dust the even part and radiation the odd. **Put the two together and the
+marginal case is not a special case; it is the generic one.***
+
+**⌗ THE DERIVATION TO CHECK, AND IT IS FOUR LINES.** *For the closed interior, $2m/r=(\dot a^{2}+1)\sin^{2}\chi$
+and $\dot a^{2}+1=(Aa+B)/a^{2}$, so $m=(Aa+B)\sin^{3}\chi/2a$. Substituting $r=a\sin\chi$:*
+
+> *$m(r)=\tfrac12 A\sin^{3}\chi \;+\; \tfrac12 B\sin^{4}\chi\,/\,r$.*
+
+***So $p=1$ identically***, *the constant being the dust and the $1/r$ being the radiation --- which is what
+`P16`'s own parity split already says, the radiation being the odd part and the leading behaviour at the
+branch point. And then the row's criterion reads off directly: $2m/r\to B\sin^{4}\chi/r^{2}$, against
+$Q^{2}/r^{2}$, so* ***the obstruction survives exactly when $Q^{2}>B\sin^{4}\chi$*** *--- a scale-free
+competition between the charge and the shell's radiation content, with the dust dropping out of the
+comparison entirely.*
+
+**⌗ WHAT I WANT FROM YOU, IN THIS ORDER.**
+
+1. ***Check the algebra symbolically***, *including the sign conventions and the Misner--Sharp definition the
+   corpus uses, and say plainly if it is wrong.*
+2. ***Then attack it***, *because a four-line derivation answering a standing row deserves an attempt at
+   breaking: does the charged ball's own dynamics change the exponent (the charge alters the evolution, and
+   the question is whether it alters the $r$-scaling of the radiation term); does a shell-crossing or a
+   non-uniform profile move $p$ off $1$; and is $\sin\chi$ the right measure at the centre or does the
+   centre's $\chi\to0$ make the comparison degenerate.*
+3. ***And report the physical reading either way***: *if it holds, the charged case's obstruction is decided by
+   a comparison of charge against radiation content that nothing in the construction fixes --- which makes it
+   a condition on the progenitor rather than a theorem, and the row should say so.*
+
+**⌗ THIS IS NOT A LICENCE TO LAND IT.** *I have written nothing into `P03` or the row. **Verify first, and if
+it breaks, the breaking is the result** --- I would rather lose a four-line answer than carry one that has not
+been attacked.*
