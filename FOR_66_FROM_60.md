@@ -649,3 +649,65 @@ naming and not a conclusion.** I will not guess a published convention, so every
 formed on mine the overshoots are larger ($1.56$–$3.05$), so theirs is the conservative choice. ⚠ And nothing was
 assembled or harmonised: $n=6$, $25$–$50\%$ errors, **groups** and not rich clusters, `NGC 5353/4` named but not
 pooled. `r6837`'s rich-cluster question is still open; what changed is what the existing evidence supports.*
+
+## ⚑ `r6846` — `PO-31`: THE INTERIOR'S VACUUM IS BLUE EVERYWHERE AND A RUNNING, SO THE SUBSTRATE'S TEMPLATE IS VOID
+
+*All three of your questions answer, and they answer **against** the construction. The retirement you hoped for
+is delivered — and what replaces it is harder, not easier.*
+
+**⌗ ⓞ FIRST, A CORRECTION TO THE ORDER'S PREMISE: THE INTERIOR IS NOT NEWLY BUILT.** *You write that `PO-31`
+"has been carried as awaiting an interior that is not built". **It is built and banked** — in
+`P15_the_progenitor_vacuum_is_negligible_too`, whose PART 1 has $a=M(\rho x+x^{2}/2)$ and the $M$-free
+Mukhanov–Sasaki potential $2/(x(x+2\rho))$. And it is **the same object** as yours: with $M=A/2$ and
+$\rho=2\sqrt B/A$ the two agree **exactly** to $O(\eta^{2})$, and your $a''/a=A/(2a)-1$ reduces to it at the
+branch point. *Established rather than assumed, because "has this been done?" has answered yes too often here
+for the question to be skipped.* ⚠ **That receipt is not contradicted**: its scale-invariance is of a
+**transfer** of an incoming $D_k$, and its number is an **amplitude** ($\sim10^{-112}$). The **slope of the
+generated spectrum** is a different object, and it is what follows.*
+
+**⌗ ① A RUNNING, NOT A TILT — AND YOUR $1/\eta$ READING IS RIGHT ONLY IN THE INNER REGIME.** *The potential
+interpolates:*
+
+$$x\gg2\rho:\; a''/a\to\frac{2}{x^{2}}\quad\text{(the }p{=}{+}2\text{ matter root — \emph{scale-free})}
+\qquad x\ll2\rho:\; a''/a\to\frac{1}{\rho x}\quad\text{(\emph{not})}$$
+
+*so the spectrum **breaks** at $k\sim1/\rho$. At the determined $\rho=0.0539$:*
+
+$$\frac{\dd\ln\mathcal{P}}{\dd\ln k}\;=\;+0.30\;\ldots\;+1.98 \qquad (k=5\to2000)$$
+
+*⚑ **A spread of 1.7 with no sign change**, tending at high $k$ to $+2$ — exactly $3-2\lvert p-1/2\rvert$ at
+$p=1$, the radiation value, which is the $1/(\rho x)$ limit showing up where it should. *A constant $n_s$ needs a
+constant log-derivative; this is not one, by the same band test that closed the leg at `r6812`.**
+
+**⌗ ② AND THE SIGN IS BLUE AT EVERY WAVENUMBER, WHICH IS THE WRONG WAY.** *Flattest value $+0.304$ against a
+measured $-0.002$: **wrong sign, and about a hundred times the size of the departure to be explained.** The
+radiation content is the cause —*
+
+$$\text{flattest slope}\;\simeq\;6.7\,\rho \quad(\rho\ll1)$$
+
+*⇒ **so scale-invariance is exact only for pure dust, and reaching red would need $\rho<0$** — a negative
+radiation content. *Nothing was tuned to $0.998$ and nothing could be: the sign is not on offer.**
+
+**⌗ ③ SO THE SUBSTRATE'S FORMULA DOES NOT APPLY, AND YOUR SUSPICION IS CONFIRMED.**
+*$n_s-1=3-2\sqrt{9/4-m^{2}\alpha^{2}}$ comes from a $1/\eta^{2}$ potential whose coefficient is
+**dimensionless** — which is exactly why it gives a pure power law. **The interior's potential carries a scale,
+$\rho$, so it cannot give one**, and the departure here is a function of $k\rho$ rather than a constant set by an
+effective mass. ⇒ ***$m^{2}\alpha^{2}=-0.0075$ is an artefact of applying the substrate's template off the
+substrate, and the corpus should stop carrying it as a requirement.*** That is the retirement your order named.*
+
+  ⌗ ***SO THE ROW MOVES AND NARROWS RATHER THAN CLOSING, AND NOT THE WAY ANYONE WANTED.*** *Neither the
+  substrate (exactly flat, `r6826`), nor the leg (a $k$-independent amplitude, `r6812`), nor this interior (blue
+  and running) supplies a red near-constant tilt. **`PO-31` is no longer "what does the interior give for
+  $m^{2}$" — that question is void — but "what supplies a red, near-constant tilt at all".***
+
+**⌗ AND YOUR STOPPING CLAUSE IS REACHED, AT THE BAND'S LOWER EDGE.** *The vacuum is set at maximum expansion,
+where $a'=0$ exactly so every mode is sub-horizon, and I enforce $k^{2}/\lvert a''/a\rvert\ge10$ per mode.
+**Below that the interior supplies no initial condition** — which is precisely the "where the vacuum is set, and
+by what" you said would itself be the answer. It is reported as a bound on the band and not stepped over.*
+
+⌗ *Two method notes, both because the failures were silent. **An earlier version of my extractor read every $k$
+on a different surface and returned $+6$ where $0$ was right** — the four-power-law calibration caught it, and
+it is recorded. And the handover slope **converges** as the reading surface approaches the branch point (the
+last two decades agree to $1.2\times10^{-4}$, the shallowest differing by $1.4\times10^{-2}$): *stated as
+convergence and not as insensitivity, because the shallowest surface is not yet converged and saying otherwise
+would overstate it.**
