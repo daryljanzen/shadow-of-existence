@@ -722,15 +722,19 @@ $$\Omega_\Lambda=\frac{x_0^3}{x_0^3+2},\quad \Omega_m=\frac{2}{x_0^3+2},\quad q_
 >
 > **(1)** three-pass cleanup, all seventeen brought current, receipt verification riding each read — **✔ done r1406**
 > **(R)** systematic corpus-wide receipt verification — **✔ done with it**
-> **(2) ← WE ARE HERE.** Close the four bounded families (1, 3, 4, 5). *And the ledger's own r1408 finding: **these
-> are not four builds but ONE** — families 1, 3, 4 and 5 all live on the single progenitor collapse-excursion P16
-> already models. Build that out and four of the seven close together off it.*
+> **(2) ← WE ARE HERE, on its last family.** Close the four bounded families (1, 3, 4, 5). *The r1408 finding that
+> these are not four builds but ONE — all four living on the single progenitor collapse-excursion `P16` models — is
+> borne out: that interior is built, and it is what closed `PO-25`. **Families 1 and 4 are closed; family 5 has
+> reached its verdict, the arm's spectrum rejected on shape.** What remains of the four is **family 3, the inherited
+> datum, carried at `PO-31`** — with two residuals opened from the closures beside it, `PO-47` on what displaces the
+> fourth acoustic peak and `PO-49` on the charged interior's third regime.*
 > **(3)** the generative maths/physics pass, *without needing 6–8 first*; the arc may reach them.
 > **(4) TERMINAL GOAL** — close the corpus build on a **clean world-correspondence open note**: family 7 the one
 > honest remaining open, whether the world realises CR, awaiting data. ***"Till we hit a wall we can't get past."***
 >
-> *6 and 8 — the propagating fermion sector and the interacting quantum tower — are the genuinely uncertain pair,
-> held as an open bet.*
+> *Of the pair held as the genuinely uncertain bet, **family 6, the propagating fermion and gauge sector, is
+> closed** — the sector propagates and its gauge content is accounted for, `PO-45` and `PO-30` both struck. **Family
+> 8, the interacting quantum tower as a defined theory, is the side still open**, carried at `PO-23` and `PO-51`.*
 
 > *(r1444: this file's `§972` references were stale line-numbers — P7's open-problems section had moved to line 1152. Replaced with its label `sec:frontiers`. Cite by label, never by line.)*
 
