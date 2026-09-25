@@ -158,6 +158,48 @@ EST = {
         'what r6752 ruled out. The violation integrates to the change in the member s gravitational '
         'Chern-Simons number. A global symmetry s anomaly is not an inconsistency and is not reported as one.'
     ),
+    'PO-47': ('what displaces the fourth acoustic peak', 1, 1, 4, None,
+        'OPENED r6861 as PO-13 remainder. With the handover at the branch point and the background fixed by the '
+        'distance data alone, the comb is 298.0 against the sky 298.4 and the first three peaks land within a grid '
+        'step; the FOURTH is about one per cent high, and the offsets keep their sign and order across all four. '
+        'Reproduced on a second instrument at 1132 against 1134, so it is the spectrum and not either implementation. '
+        'ALREADY RULED OUT: the phase intercept is not a residual (through one locator the arm sits inside the sky own '
+        'locating spread and the offset sign flips between the three-peak and four-peak fits); the damping envelope is '
+        'excluded (imposing the control moves the peak a seventh of a multipole against an offset of two, and the '
+        'inverse returns the same displacement with opposite sign); the driving is the control to four per cent; a '
+        'parameter refit does not move it. DISCHARGE: a mechanism that displaces the fourth peak and not the first '
+        'three, or a demonstration that at the locating spreads there is nothing to displace.'),
+    'PO-48': ('does S = A/4 carry to a cosmological horizon on this reading', 1, 1, 4, None,
+        'OPENED r6861, overdue: P17 declines it in terms and TWO struck rows close above it -- PO-24 and PO-43 both '
+        'terminate here without it being carried anywhere, a question propping two closures while belonging to no row. '
+        'NOT A LOOSE END BUT A FORK: P17 sec:ledger takes the temperature and never the entropy and says why -- T is '
+        'built from alpha alone, one register, while the entropy is a ratio of alpha to the Planck length and is a '
+        'count taken ACROSS the register split. So whether the area law carries is a question about that split and not '
+        'an import from black-hole thermodynamics. AND P17 HAS SAID WHAT FAILURE MEANS: were it to fail to carry that '
+        'would be a result and not a gap -- both outcomes results, neither a debt. If it carries, a quantum-register '
+        'constant becomes visible in the one cross-register quantity; if not, the Gauss-Bonnet coefficient has no home.'),
+    'PO-49': ('the charged interior third regime', 1, 1, 3, None,
+        'OPENED r6861 as PO-25 remainder. That row is struck on its own question -- the obstruction is destroyed on '
+        'both charge readings and was never total across the shells -- and the verification reported a turning-point '
+        'structure with THREE regimes where the reading stated two, the third being over-extremality, and nothing '
+        'carries it. DISCHARGE: what the lap does in that regime on the same exact interior, and whether it is '
+        'reachable on a progenitor of the mass this cosmology requires, the struck row scoring the charge-to-mass '
+        'threshold near 1e-2 so reachability is a question about astrophysical charge and not about the geometry.'),
+    'PO-50': ('the turnaround measurement with turnaround masses', 1, 1, 3, None,
+        'OPENED r6861 as PO-36 remainder. That row is struck: the radius tracks the dynamical mass, entailed rather '
+        'than observed. What its own measurement could NOT do is discriminate -- the ensemble ratios run 1.20 to 2.33 '
+        'above the spherical bound at the dynamical mass, and the authors leading explanation is the systematic the '
+        'corpus had named, virial mass substituting for turnaround mass. DISCHARGE: an ensemble with masses measured '
+        'inside the turnaround rather than at the virial radius, with the radius still independent of internal '
+        'dynamics. The bound-to-attained factor is parameter-free and the guard is four-way, so the instrument is '
+        'built and only the sample is missing.'),
+    'PO-51': ('the log subtraction point, and whether the tower floor is forced', 1, 1, 3, None,
+        'OPENED r6861 as PO-43 named-and-unbuilt candidate. A log needs a subtraction point; the corpus holds there is '
+        'no second physical length; and in a discrete mode sum the subtraction point is a mode number -- of which this '
+        'tower has a canonical one, its own floor. THE BURDEN IS STATED AT THE OUTSET: whether that fixes the constant '
+        'or merely names a convention is a question and not a result, and the burden is to show the floor is FORCED '
+        'rather than convenient. Deliberately not built while PO-43 check was outstanding; that check has come out for '
+        'the claim, so the candidate is now this row own.'),
     'PO-31': ('the progenitor spectrum, and what the throat damps under rotation', 1, 1, 6, None,
         'r6510: THE WARPED HARMONIC PROBLEM IS DONE AND THE PROXY WAS TELLING THE TRUTH. r6499 computed '
         'lambda on the rotating family but read it AT THE POLE, warning that the near-horizon sphere is '
@@ -343,12 +385,16 @@ KIND = {'PO-46': 'BUILD', 'PO-10': 'BUILD', 'PO-13': 'BUILD', 'PO-36': 'READ', '
 #   and the generator reported "9 open" while the table showed EIGHT -- the count comes from
 #   the live set and the rows come from here.*  ** Adding a row needs three things: the
 #   register row, the runway, and this list. **  check_frontier_current now checks all three.
-ORDER = ['PO-45', 'PO-46', 'PO-10', 'PO-13', 'PO-43', 'PO-24', 'PO-36', 'PO-30', 'PO-25', 'PO-26', 'PO-31', 'PO-23', 'PO-15', 'PO-14', 'PO-17', 'PO-18', 'PO-19', 'PO-20']
+ORDER = ['PO-47', 'PO-48', 'PO-49', 'PO-50', 'PO-51', 'PO-45', 'PO-46', 'PO-10', 'PO-13', 'PO-43', 'PO-24', 'PO-36', 'PO-30', 'PO-25', 'PO-26', 'PO-31', 'PO-23', 'PO-15', 'PO-14', 'PO-17', 'PO-18', 'PO-19', 'PO-20']
 GROUP = {'PO-45': 'A', 'PO-46': 'A',  # ⛔ r6549: a FOURTH hardcoded list -- GROUP -- and a row missing here raises.
          'PO-10': 'D', 'PO-13': 'D', 'PO-14': 'A', 'PO-15': 'C', 'PO-16': 'D',
          # ** r3095: the four brought in from p0's frontiers and the field ledgers.  PO-17 and
          # PO-19 are substrate geometry; PO-18 is the constant ledger; PO-20 is analysis. **
          'PO-17': 'E', 'PO-18': 'E', 'PO-19': 'E', 'PO-20': 'E',
+         'PO-47': 'D', 'PO-48': 'E', 'PO-49': 'E', 'PO-50': 'D', 'PO-51': 'C',
+         # ** r6861: the five remainders of struck rows, each opened where its parent closed --
+         #   PO-47 and PO-50 are the data-confrontation sector, PO-48 and PO-49 the substrate
+         #   and its interiors, PO-51 the quantum tower. **
          'PO-23': 'C', 'PO-43': 'C', 'PO-24': 'D', 'PO-25': 'E', 'PO-26': 'A', 'PO-27': 'A', 'PO-29': 'E', 'PO-31': 'D', 'PO-30': 'A', 'PO-36': 'D', 'PO-34': 'E'}
 # ⛭ r6611: sector B carried A's title and NO row has ever been assigned to it -- the
 #   assignments run A:5, C:3, D:5, E:7, B:0.  ** A vestigial sector printing a duplicate
