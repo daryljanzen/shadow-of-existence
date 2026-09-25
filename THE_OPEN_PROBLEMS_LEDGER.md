@@ -1,7 +1,7 @@
 ---
 name: the-open-problems-ledger
 kind: STATE
-current: r6649
+current: r6865
 class: whole-corpus-instrument
 job: The open-problems ledger by FAMILY — what each family is, what closed it or holds it open, and its register pointer. The fork writes here; this line absorbs it.
 sources: [cowork, chat]
@@ -136,16 +136,12 @@ reading of `L-269`–`L-273`; no open problem opened or closed, which is itself 
 > ⌗ *The body's picture of the **physics** fronts is not superseded by any of the above; what is superseded is its
 > picture of the **instruments, the register's shape, and how work moves**.*
 
-> **⌗⌗ BROUGHT CURRENT r2378 on the observer line, and the pass found ONE defect and confirmed the rest.**
-> *The table was audited against the register at c54.134.* ***Family 6's pointer was stale — it named
-> `L-164`, struck at c54.128 — and a LIVE family pointing at a struck row has the exposure `PO-5` and
-> `PO-9` had: no burn-down, no HOT budget, no supersession scan reaches it.*** *Corrected to `PO-4`, with
-> the one thing the correction does NOT settle stated in the row.* **Families 3, 5 and 8 verified against
-> live rows (`L-150`, `L-147`, `L-165`); families 1, 2, 4, 9, 10, 11, 12 verified closed.** ⌗ *And the
-> observer line's own census had reported this whole namespace **unfolded**, which was a **phantom**: the
-> table has been a view of the register since c54.121, and the census was asking whether a family NUMBER
-> appears as a register alias, which nothing could satisfy.* ***Second phantom from that instrument; its
-> fold test for this namespace is now local and correct.***
+> **⌗⌗ THE FAMILIES AGAINST THE REGISTER.** *The table is a view of the register, and the register is the single
+> source of truth. **Three families are live**: family 3, the inherited datum, at `PO-31`; family 8, the interacting
+> quantum tower, at `PO-23` and `PO-51`; and family 5's residual at `PO-47`, the family itself having reached its
+> verdict. **Family 4 is closed with a live remainder** at `PO-49`, the charged interior's third regime. **Families 1,
+> 2, 4, 6, 9, 10, 11 and 12 are closed**, family 6 by the matter sector's account of the propagating fermion and gauge
+> content. **Family 7 is not a work item** and says so itself.*
 >
 > ⌗ *Struck in place, not deleted — nothing in this corpus is erased. And recorded honestly: no
 > argument anywhere in the corpus reasons FROM a clue-map, which is the other half of why retiring
@@ -159,12 +155,12 @@ reading of `L-269`–`L-273`; no open problem opened or closed, which is itself 
 > |---|---|---|
 > | 1 | the detailed dynamics of matter crossing the branch point | **closed c54.113** — there is no worldline crossing to compute |
 > | 2 | which sheet goes with which ruling | **killed r1280** — they are the two faces of one object |
-> | 3 | derive the inherited datum rather than measuring it | **LIVE** — register `L-150` |
-> | 4 | the irreducible interior reassignments (Kerr-inner, RN) | **closed c54.118** — both owning rows struck; the remainder lives in them |
-> | 5 | the scalar perturbation sector, to a verdict | **LIVE, one item left** — register `L-147`, the likelihood alone | ⛔⛭ **AND FAMILY 5 IS STALE TOO — CORRECTED r2668 by `check_family_pointers` on its first run.** *This family is "the scalar perturbation sector, to a verdict" and pointed at **`PO-7`** — "the first acoustic peak, and the propagated comb".* ⇒ ***`PO-10` is literally "**The scalar perturbation sector's stated remainder**". The gate found this one; a human found family 6's. **Third staleness across two families, and the second one nobody was looking for.*** ⌗ *Now: **`PO-10`** carries the scalar sector; `PO-7` keeps the acoustic-phase question, which is gated on `PO-seam`.* ⛭⛭ **⟨STRUCK r2993 — both clauses answered: the phase is FORCED then DERIVED, and the $0.615$ deficit is a real disagreement at **$76\sigma$** with a **$0.7\%$** substitution error measured on Planck's own spectrum. `kills/PO-7.md`.⟩** ⛭⛭ **⟨STRUCK r2996 — the full-spectrum refit performed (215 bins; CR $1.891$/dof vs $\Lambda$CDM $0.983$/dof, $\Delta\chi^2=190.7$) and the odd/even pattern produced ($2.185$ vs $2.200$, sky $2.256\pm0.077$). `kills/PO-10.md`.⟩**
-> | 6 | the propagating fermion and gauge sector | ⚠ **LIVE — and its register pointer was STALE, corrected r2378.** *It named `L-164`, which was **struck at c54.128**. The family's live content is `PROTECTED_OPEN` **`PO-4`** — colour and isospin as structures on the cut, which still stands OPEN there — and the strike shut two named routes to it (holonomy, isometry) as a bounded negative, not the family. **A LIVE family pointing at a struck row is the exposure `PO-5` and `PO-9` had: no burn-down, no HOT budget, no supersession scan reaches it.*** ⇒ ***register: `PO-4` (protected) — and the family is owed a live row of its own if anything remains beyond `PO-4`'s object, which is the one thing this correction does NOT settle.*** | ⛔⛭⛭ **STALE AGAIN, CORRECTED r2668 — NOW `PO-11`.** *Repointed to `PO-4` at r2378 after naming struck `L-164`. **But `PO-11` — "the full PROPAGATING spinor field sector — the built modes are leaf-bound, not the propagating theory" — was registered at r2597**, while `PO-4` is "the colour and isospin structure" (narrowed r2626 to $\su(2)_L$ as a gauging).* ⇒ ***A family about the propagating fermion sector was pointing at the COLOUR row. Second staleness in the same pointer — and the corpus's own diagnosis of the first applies verbatim: "a LIVE family pointing at [the wrong] row has the exposure `PO-5` and `PO-9` had: no burn-down, no HOT budget, no supersession scan reaches it."*** ⌗ *Now: **`PO-11`** carries the propagating sector; **`PO-4`** keeps the gauge-group half.*
+> | 3 | derive the inherited datum rather than measuring it | **LIVE** — register `PO-31`, the progenitor spectrum |
+> | 4 | the irreducible interior reassignments (Kerr-inner, RN) | **closed** — the owning rows struck; its charged remainder is live at `PO-49` |
+> | 5 | the scalar perturbation sector, to a verdict | **verdict reached** — the arm's spectrum is rejected on shape; its residual is live at `PO-47`, what displaces the fourth acoustic peak |
+> | 6 | the propagating fermion and gauge sector | **closed** — the sector propagates and its gauge content is accounted for; `PO-45` and `PO-30` struck |
 > | 7 | the world-correspondence and empirical grounding | **not a work item** — the family says so itself: *"NOT a corpus gap — the empirical question."* |
-> | 8 | the interacting quantum tower as a defined theory | **LIVE** — register `L-165` |
+> | 8 | the interacting quantum tower as a defined theory | **LIVE** — register `PO-23` and `PO-51` |
 > | 9 | the structure of the lap and the physics of the lift | **resolved r2154–r2159** |
 > | 10 | the quantum content of the lift | **closed r2239** |
 > | 11 | what crosses: inheritance vs the computed filter | **reclassified r2245** — not a hole but a strengthening. ⛔ *`L-168` was opened here at c54.119 on this family's **r2244 framing** and **struck at c54.121: the framing is the one r2245 itself withdrew.** The tilt IS inherited — frozen modes cross, oscillating ones do not. **Read this family's r2245 verdict, not its r2244 opening.*** |
@@ -722,12 +718,12 @@ resolves) and as the **clue-map** (everywhere an open touches points at where it
 > |---|---|---|
 > | 1 | the detailed dynamics of matter crossing the branch point | **closed c54.113** — there is no worldline crossing to compute |
 > | 2 | which sheet goes with which ruling | **killed r1280** — they are the two faces of one object |
-> | 3 | derive the inherited datum rather than measuring it | **LIVE** — register `L-150` |
-> | 4 | the irreducible interior reassignments (Kerr-inner, RN) | **closed c54.118** — both owning rows struck; the remainder lives in them |
-> | 5 | the scalar perturbation sector, to a verdict | ⚑ **BROUGHT CURRENT r2376+c54.174, and the family has changed shape rather than shrunk.** ***`L-147` is STRUCK (c54.172) and the likelihood's answer is that it CANNOT ARBITRATE***: the pipeline is wired at $\chi^2/\mathrm{dof}=0.96$, but the instrument's own $\Lambda$CDM control sits at $103$, because Planck's binned errors are tenths of a per cent and this transfer's peak heights carry $13$–$34\%$. *What replaced it is an instrument specification, not a verdict: **the likelihood becomes answerable when a transfer's control reaches sub-per-cent HEIGHTS**.* ⚑ **Positions got there at c54.173** — a line-of-sight integral across a finite-width visibility took the control from $1.66\%$ to $0.16\%$, **and the CR deficit did not move at all** ($0.5703$ on both transfers, $21.9\%$ against a $0.16\%$ floor). ⌗ *And the sector's physics is now derived rather than described: the recursion does not run on modes (c54.162), the pre-onset interval is scale-free (c54.167), and the driving's $k$-dependence is $Q=3\kappa c_s\mathcal{H}/\pi k$ in closed form (c54.171).* **LIVE — carried on `L-171` and protected `PO-7`; what is owed is the height half of the transfer.** | ⛔⛭ **AND FAMILY 5 IS STALE TOO — CORRECTED r2668 by `check_family_pointers` on its first run.** *This family is "the scalar perturbation sector, to a verdict" and pointed at **`PO-7`** — "the first acoustic peak, and the propagated comb".* ⇒ ***`PO-10` is literally "**The scalar perturbation sector's stated remainder**". The gate found this one; a human found family 6's. **Third staleness across two families, and the second one nobody was looking for.*** ⌗ *Now: **`PO-10`** carries the scalar sector; `PO-7` keeps the acoustic-phase question, which is gated on `PO-seam`.*
-> | 6 | the propagating fermion and gauge sector | **LIVE** — protected `PO-4` *(pointer corrected r2376+c54.166: it read `L-164`, which this fork struck at c54.128. The family is live; the pointer was dead, and a node following it landed on a struck row and would have read the family as closed.)* | ⛔⛭⛭ **STALE AGAIN, CORRECTED r2668 — NOW `PO-11`.** *Repointed to `PO-4` at r2378 after naming struck `L-164`. **But `PO-11` — "the full PROPAGATING spinor field sector — the built modes are leaf-bound, not the propagating theory" — was registered at r2597**, while `PO-4` is "the colour and isospin structure" (narrowed r2626 to $\su(2)_L$ as a gauging).* ⇒ ***A family about the propagating fermion sector was pointing at the COLOUR row. Second staleness in the same pointer — and the corpus's own diagnosis of the first applies verbatim: "a LIVE family pointing at [the wrong] row has the exposure `PO-5` and `PO-9` had: no burn-down, no HOT budget, no supersession scan reaches it."*** ⌗ *Now: **`PO-11`** carries the propagating sector; **`PO-4`** keeps the gauge-group half.*
+> | 3 | derive the inherited datum rather than measuring it | **LIVE** — register `PO-31`, the progenitor spectrum |
+> | 4 | the irreducible interior reassignments (Kerr-inner, RN) | **closed** — the owning rows struck; its charged remainder is live at `PO-49` |
+> | 5 | the scalar perturbation sector, to a verdict | **verdict reached** — the arm's spectrum is rejected on shape; its residual is live at `PO-47`, what displaces the fourth acoustic peak |
+> | 6 | the propagating fermion and gauge sector | **closed** — the sector propagates and its gauge content is accounted for; `PO-45` and `PO-30` struck |
 > | 7 | the world-correspondence and empirical grounding | **not a work item** — the family says so itself: *"NOT a corpus gap — the empirical question."* |
-> | 8 | the interacting quantum tower as a defined theory | **LIVE** — register `L-165` |
+> | 8 | the interacting quantum tower as a defined theory | **LIVE** — register `PO-23` and `PO-51` |
 > | 9 | the structure of the lap and the physics of the lift | **resolved r2154–r2159** |
 > | 10 | the quantum content of the lift | **closed r2239** |
 > | 11 | what crosses: inheritance vs the computed filter | **reclassified r2245** — not a hole but a strengthening. ⛔ *`L-168` was opened here at c54.119 on this family's **r2244 framing** and **struck at c54.121: the framing is the one r2245 itself withdrew.** The tilt IS inherited — frozen modes cross, oscillating ones do not. **Read this family's r2245 verdict, not its r2244 opening.*** |
