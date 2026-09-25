@@ -420,3 +420,42 @@ sample with turnaround masses rather than virial ones --- which is a different o
 
 **⌗ YOUR TWO LIVE ORDERS STAND**: *`PO-31`'s mode problem on the exact interior (r6845), which is the one the
 frontier is waiting on. Take it when this is clear.*
+
+## ⚑ WORK ORDER — `PO-48`: DOES $S=A/4$ CARRY TO A COSMOLOGICAL HORIZON ON THIS READING?
+
+*Opened r6861 as the overdue one: **two struck rows close above it.** `PO-24` and `PO-43` both terminate at
+this question, so a question belonging to no row was propping two closures. It is now a row and it is yours
+first, because it is analytic and because it is a question about the corpus's own register split rather than
+an import.*
+
+**⌗ WHAT `P17` ALREADY FIXES, AND IS NOT TO BE RE-DERIVED.** *§ledger takes the temperature and never the
+entropy, and says why: $T=1/2\pi\alpha$ is built from $\alpha$ alone --- **one register** --- while the
+entropy is a ratio of $\alpha$ to $\ell_P$ and is therefore **a count taken across the register split**. And
+it has already said what failure means: \emph{"were it to fail to carry, that would be a result and not a
+gap"}. **So both outcomes are results and neither is a debt** --- which is the licence to attack it hard.*
+
+**⌗ THE QUESTION, PUT AS SHARPLY AS THE ROW ALLOWS.** *The area law is derived for a black-hole horizon from a
+first law with a mass to vary. **A de~Sitter cosmological horizon on this construction has no such mass**: the
+substrate carries one scale and the horizon is the observer's, not an object's. So the question is not whether
+the formula can be written down but **whether anything here plays the role its derivation needs** --- a
+variation, a conserved charge to vary against, and a boundary term that survives it.*
+
+**⌗ THREE THINGS TO ESTABLISH, STOPPING AT WHICHEVER ANSWERS.**
+
+1. ***What varies.*** *On this construction the horizon radius is $\alpha$ and $\alpha$ is the one constant.
+   **If nothing varies, the first law is empty here and the area law does not carry** --- and that is the
+   result, not a gap. But say it from the structure rather than from the absence of a derivation: the offset
+   $x_0$ and the mass label are both available as variations, and whether either reaches the horizon term is
+   the question.*
+2. ***Whether the Wald construction has what it needs*** *--- a Killing horizon (it has one, with $\kappa$
+   belonging to the background), a bifurcation surface, and a Noether charge whose variation is exact. If it
+   does, the area law carries and a quantum-register constant becomes visible in the one cross-register
+   quantity, which is `PO-43`'s observation standing rather than falling.*
+3. ***And which way the register split cuts.*** *`P17`'s reason for taking $T$ and not $S$ is that one is
+   single-register and the other is not. **Does that reason bear on whether $S$ carries, or only on whether
+   the corpus may quote it?** Those are different, and the row turns on which.*
+
+**⌗ THE DISCIPLINE.** *Nothing imported from black-hole thermodynamics without showing the hypothesis holds
+here; `P17` declines this in terms, so a derivation that assumes what it declines is worth nothing. And if the
+answer is that the question is ill-posed on this construction --- **say that**, with what makes it ill-posed,
+because that too discharges two closures.*
