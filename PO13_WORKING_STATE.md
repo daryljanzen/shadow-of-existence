@@ -3568,3 +3568,68 @@ is **per-shell**; $\rho_r\propto R^{-4}$ at fixed shell is the top-hat's behavio
 charge's differential bounce makes shell crossings the probe does not follow.*
 
 ⌗ *`receipts/P03_SdS_slicing/P03_the_interior_mass_function_is_p_equals_one_along_the_shell_and_the_charge_falls_short_of_the_equality_radius.py`*
+
+---
+
+# ⚑⚑ r6849+cc66.30 — `PO-43`'s CHECK: THE TWO HELICITY TOWERS ARE POPULATED ALIKE
+
+*`P10` `sec:lock`'s fibre-by-fibre Hartle–Hawking condition, tested for helicity-blindness at the level
+of the mode functions. The condition's whole dependence on the tower is
+$\hat\Gamma=\gamma+c\sum_n\hat\pi_n^{2}$, with $\nu=\sqrt{\hat\Gamma+\tfrac14}$ and the regular branch
+$x^{1/2+\nu}$ on $\hat\Gamma<\tfrac34$.*
+
+**⌗ THE COMMUTATORS WITH THE HELICITY SWAP $P$** *(truncated Fock space, two levels × two helicities,
+3 states per mode):*
+
+| object | $\lVert[\,\cdot\,,P]\rVert_\infty$ |
+|---|---|
+| $\hat\Gamma$ | $1.78\times10^{-15}$ |
+| $\nu(\hat\Gamma)$ | $4.44\times10^{-16}$ |
+| $\Pi_{\hat\Gamma<3/4}$ | $1.67\times10^{-16}$ |
+| *CONTROL: helicity-weighted $\hat\Gamma$* | *$3.633$* |
+
+*And $\kappa=\tfrac12\lvert f'(\alpha)\rvert=1/\alpha$, $\beta=2\pi\alpha$, derived off
+$f=1-r^{2}/\alpha^{2}$ — free symbols $\{\alpha\}$, **no mode index**.*
+
+**⌗ THE TOWER'S BOOKKEEPING, AGAINST `P10`'s OWN DEGENERACY AND EIGENVALUE.**
+*$(j_L,j_R)=\big(\tfrac{m+1}{2},\tfrac{m-3}{2}\big)$ and its swap, $m=n+1$; $\mu^{2}=2(C_L+C_R)-6$.*
+
+| $n$ | $(j_L,j_R)$ | dim each | total | `P10`'s $2(n-1)(n+3)$ | $\mu_n^{2}$ | `P10`'s $n(n+2)-2$ |
+|---|---|---|---|---|---|---|
+| **2** | $(2,0)$ | $5$ | $10$ | $10$ | $6$ | $6$ |
+| 3 | $(5/2,1/2)$ | $12$ | $24$ | $24$ | $13$ | $13$ |
+| 4 | $(3,1)$ | $21$ | $42$ | $42$ | $22$ | $22$ |
+| 5 | $(7/2,3/2)$ | $32$ | $64$ | $64$ | $33$ | $33$ |
+| 6 | $(4,2)$ | $45$ | $90$ | $90$ | $46$ | $46$ |
+| 7 | $(9/2,5/2)$ | $60$ | $120$ | $120$ | $61$ | $61$ |
+| 8 | $(5,3)$ | $77$ | $154$ | $154$ | $78$ | $78$ |
+
+**⌗ THE ISOMETRY THAT FORCES IT.** *$\sigma:g\mapsto g^{-1}=\mathrm{diag}(1,-1,-1,-1)$ on the embedding
+$\mathbb{R}^{4}$: $\sigma^{\mathsf T}\sigma=I$, $\det\sigma=-1$, and $\sigma(gq)=\sigma(q)\sigma(g)$ to
+$1.1\times10^{-16}$ over $200$ random unit-quaternion pairs.* ⇒ *exchanges the $\mathrm{SU}(2)$ factors,
+commutes with the Laplacian, anti-commutes with the curl.*
+
+**⌗ THE PARITY-ODD EXPECTATION, AND WHAT CARRIES THE ZERO.**
+
+| state | $\langle X\rangle$ |
+|---|---|
+| Hartle–Hawking at the common $\beta$ (Fock) | $-1.7\times10^{-18}$ |
+| closed form, $\sum_n[d_n^{+}-d_n^{-}]\,n_B(\beta\mu_n)$, $n=2$–$8$ | $0$ exactly |
+| *CONTROL: unequal degeneracies* | *$0.1366$* |
+| *CONTROL: frequencies split $10\%$* | *$0.3767$* |
+
+**⌗ THE ROTATING CONTROL — what an actual break looks like.** *Chemical potential $\beta\Omega$ on the
+helicity charge:*
+
+| $\Omega$ | $0$ | $0.05$ | $0.10$ | $0.20$ | $0.50$ |
+|---|---|---|---|---|---|
+| $\langle X\rangle$ | $0$ | $+0.12486$ | $+0.25013$ | $+0.50356$ | $+1.31840$ |
+
+*Ratio $\langle X\rangle(0.10)/\langle X\rangle(0.05)=2.0033$ against $2$ — linear, so the break is a
+genuine parity-breaking potential.* ⇒ ***The de Sitter cosmological horizon has $\Omega=0$.***
+
+⛔ **BOUND:** *not that the tower is achiral (`r4547` stands); nothing about the interacting tower's
+ultraviolet definition; the anomaly step is a reading of the corpus's index obstruction and not computed
+here; the declined $S=A/4$ question untouched; the floor-as-subtraction-point candidate not built.*
+
+⌗ *`receipts/P10_canonical_time/P10_the_thermal_condition_is_helicity_blind_at_the_mode_functions_and_the_parity_odd_entry_is_not_owed.py`*

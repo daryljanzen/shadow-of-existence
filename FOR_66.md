@@ -1445,3 +1445,125 @@ a numerical-relativity question this probe does not touch.*
    useful form of the criterion is $r_{\rm inner}>a_{\rm eq}\sin\chi$.*
 4. ***And the per-shell caveat is worth a clause*** — *a charged ball is not the homogeneous interior, so
    the statement lives on shells; that costs nothing, since the conclusion never needed homogeneity.*
+
+## ⚑ `PO-43` — **THE CHECK COMES OUT FOR THE CLAIM, AND NOT BY WORDING**
+
+*`r6849`'s one unrun check, run. `receipts/P10_canonical_time/P10_the_thermal_condition_is_helicity_blind_at_the_mode_functions_and_the_parity_odd_entry_is_not_owed.py`
+— rc=0, seven parts, **28 gates, three controls**. Nothing is written into `P10`, `P17` or the row.*
+
+## ⓵ THE ANSWER, AND WHY IT IS STRONGER THAN "NOTHING IN ITS STATEMENT REFERS TO HELICITY"
+
+*You were right that the wording is helicity-blind. **The wording is not the reason.** `sec:lock` states
+the coupled condition in full, and the tower enters it through exactly one object:*
+
+$$\hat\Gamma=\gamma+c\sum_n\hat\pi_n^{2},\qquad \nu=\sqrt{\hat\Gamma+\tfrac14},\qquad \text{retain }x^{1/2+\nu}\text{ on }\hat\Gamma<\tfrac34 .$$
+
+***A sum of squares over a mode set the helicity swap PERMUTES.*** *So the commutation is exact, and it
+propagates to everything the condition touches:*
+
+| object | $[\,\cdot\,,P]$ |
+|---|---|
+| $\hat\Gamma$ | $1.8\times10^{-15}$ |
+| $\nu(\hat\Gamma)$ | $4.4\times10^{-16}$ |
+| $\Pi_{\hat\Gamma<3/4}$ (the sub-threshold subspace the condition is supported on) | $1.7\times10^{-16}$ |
+| *the control: $\hat\Gamma$ with helicity-weighted coefficients* | *$3.63$* |
+
+⌗ *And the second datum carries no mode index **at all**: I derived $\kappa$ off $f=1-r^{2}/\alpha^{2}$
+rather than quoting it — $\kappa=1/\alpha$, $\beta=2\pi\alpha$, free symbols $\{\alpha\}$. **There is
+nothing in $\beta$ for the swap to act on.***
+
+## ⓶ ⛭ AND THE EQUAL FREQUENCIES ARE **FORCED BY AN ISOMETRY**, NOT BY ARITHMETIC
+
+*This is the part I did not expect to find and it is the load-bearing one. The map*
+
+$$\sigma:\;g\longmapsto g^{-1}\ \text{ on }\ S^{3}=\mathrm{SU}(2),\qquad \sigma=\mathrm{diag}(1,-1,-1,-1)\ \text{on the embedding }\mathbb{R}^{4}$$
+
+*is in $O(4)$ with $\det=-1$ — **an orientation-reversing isometry** — and it conjugates left translations
+into right ones ($\sigma(gq)=\sigma(q)\sigma(g)$, checked on 200 random quaternion pairs to $10^{-16}$).*
+
+⇒ ***It exchanges $(j_L,j_R)$, so it exchanges the two families. Being an isometry it COMMUTES with the
+Laplacian, so it preserves every frequency. Carrying one $\epsilon$, the curl ANTI-commutes with it, so
+it reverses every handedness.*** **One map doing both is exactly what the cancellation needs, and it
+belongs to the geometry rather than to a convention.**
+
+⌗ *Read off the Casimirs the identity is exact and manifestly symmetric:*
+
+$$\mu^{2}=2\big(C_L+C_R\big)-6\qquad\text{reproducing `P10`'s own }\mu_n^{2}=n(n+2)-2\text{ at every level.}$$
+
+| $n$ | $(j_L,j_R)$ | dim each | total | `P10`'s degeneracy | $\mu_n^{2}$ |
+|---|---|---|---|---|---|
+| **2** | $(2,0)$ / $(0,2)$ | $\mathbf{5}$ | $\mathbf{10}$ | $10$ ✔ | $6$ |
+| 3 | $(5/2,1/2)$ | $12$ | $24$ | $24$ ✔ | $13$ |
+| 4 | $(3,1)$ | $21$ | $42$ | $42$ ✔ | $22$ |
+| 5 | $(7/2,3/2)$ | $32$ | $64$ | $64$ ✔ | $33$ |
+
+***The split is $50/50$ at every level — $(n-1)(n+3)$ each — and the floor is your self-dual and
+anti-self-dual FIVE.***
+
+## ⓷ SO THE PARITY-ODD CONTENT CANCELS, EXHIBITED RATHER THAN ASSERTED
+
+*The helicity charge $X=\sum_n\epsilon_n\hat N_n$ is $P$-odd ($P^{\dagger}XP=-X$), and*
+
+$$\langle X\rangle=\sum_{\text{levels}}\big[d_n^{+}-d_n^{-}\big]\,n_B(\beta\mu_n)\;=\;0\quad\text{level by level.}$$
+
+*Zero in the truncated Fock state ($-1.7\times10^{-18}$) and identically zero in closed form.* ⌗ **And two
+controls say which fact is carrying it**: *unequal degeneracies give $\langle X\rangle=0.137$; equal
+degeneracies with frequencies split by ten per cent give $0.377$.* ***Both the $50/50$ split and the equal
+frequencies are load-bearing — so ⓶'s isometry is not decoration.***
+
+## ⓸ THE THREE PLACES YOU NAMED — **(a) AND (b) FAIL, (c) IS THE REAL ONE AND IS ANSWERED**
+
+**⌗ (a) AT THE MODE FUNCTIONS, NOT THE WORDING — FAILS.** *Shown in ⓵: the mode functions enter the
+condition nowhere but through $\sum_n\hat\pi_n^{2}$, and the control shows a $\hat\Gamma$ that would
+break it exists, so the commutation is a fact about **this** $\hat\Gamma$ and not about the algebra.*
+
+**⌗ (b) THE MEASURE OR THE DEGENERACIES AT THE FLOOR — FAILS.** *The floor is the most exposed level —
+smallest degeneracy, lowest frequency — and it is five against five at one $\mu$. And the **measure**
+cannot separate them either: the sub-threshold spectral projector of $\hat\Gamma$ commutes with $P$, so
+every spectral fibre is swap-invariant.*
+
+**⌗ (c) THE EUCLIDEAN CONTINUATION — ⚠ THIS IS THE ONE WITH TEETH, AND YOU WERE RIGHT TO NAME IT.**
+
+1. ***The continuation and the swap act on disjoint coordinate blocks and commute.*** *$x_0\mapsto ix_0$
+   carries $\mathrm{dS}_5=SO(5,1)/SO(4,1)$ to $S^{5}=SO(6)/SO(5)$ — it acts on the **time** coordinate,
+   while $\sigma$ acts on the three-sphere factor. It never touches the orientation the curl reads.*
+2. ⚠ ***But the Hodge star really does change*** — *$\star^{2}=-1$ Lorentzian against $+1$ Riemannian on
+   two-forms, so real self-dual forms exist only on the Euclidean section. **A continuation CAN separate
+   a self-dual pair.** What it needs to do so is a **parity-odd term in the exponent**, and there are
+   exactly two candidates: a **rotation**, absent — the de Sitter cosmological horizon is non-rotating,
+   $\Omega=0$, and `sec:lock` fixes $\kappa=1/\alpha$ and nothing else; and a **$\theta$-term already in
+   the action**, which is circular, the audit's question being whether one is owed — and the
+   Einstein–Hilbert action in the TT sector carries no $\epsilon$ for a continuation to act on.*
+3. ***And the rotating control makes it non-vacuous.*** *Give the same state a chemical potential
+   $\beta\Omega$ on the helicity charge:*
+
+| $\Omega$ | $0$ | $0.05$ | $0.20$ | $0.50$ |
+|---|---|---|---|---|
+| $\langle X\rangle$ | $\mathbf{0}$ | $+0.1249$ | $+0.5036$ | $+1.3184$ |
+
+*Linear in $\Omega$ at small $\Omega$ to $0.3\%$.* ⇒ ***So the vanishing is a statement about THIS horizon,
+not an identity of the bookkeeping.***
+
+## ⓹ THE READING — **THE ENTRY IS NOT OWED AND THE ROW CLOSES ABOVE THE DECLINED QUESTION**
+
+*On your own either-way statement: the towers are populated alike, so the parity-odd content cancels, no
+parity-odd divergence is generated, and **the Pontryagin-type entry is not owed at all**. What remains of
+`PO-43` is the declined question — whether $S=A/4$ carries to a cosmological horizon — which `P17`
+`sec:ledger` declines in terms and says would be a result rather than a gap were it to fail.*
+
+⛔ ***AND ONE JOIN I WANT YOU TO GATE RATHER THAN TAKE FROM ME.*** *The reach of this check is: a
+parity-even bare action plus a parity-even state generates no parity-odd divergence **under a
+parity-even regulator**. A parity-breaking regulator would — but that is a scheme choice and not a
+divergence. **The one mechanism that makes a parity-odd gravitational term with a parity-even bare
+action is the gravitational chiral anomaly, and it needs an unbalanced chiral FERMION content — which
+the row's own index obstruction excludes.** That last sentence is a *reading* of a corpus result and is
+not computed in the receipt; it is the only step in ⓹ that is not.*
+
+⛔ ***AND THE FENCED CANDIDATE IS NOT BUILT.*** *The tower's floor as a canonical subtraction point for
+the log: the order made it conditional on this check coming out **against**, and it does not, so I did
+not build it and the burden you stated is untouched.*
+
+⌗ ***NOT CLAIMED: that the tower is achiral.*** *`r4547` stands whole — it **is** chirally capable, the
+handedness being an irrep label. What this shows is that **the state does not use the capacity**, which
+is the narrower and (for the ledger) the decisive thing.* ⌗ *And nothing here touches the interacting
+tower's ultraviolet definition, which stays `P10`'s open frontier.*
