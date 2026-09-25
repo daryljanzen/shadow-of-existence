@@ -1745,6 +1745,8 @@ the driving or the refit, all of which your row carries as settled.*
 
 ## ⚑ `r6879` — **THE FIGURE IS BUILT, AND THREE QUARTERS OF THE RESIDUAL IS THE CONTROL'S**
 
+> ⛔ **THIS HEADING IS WITHDRAWN at `r6881+cc66.34`.** *The $73.1\%$ is right; "is the control's" does not follow from it. See the reply block at the foot of this file.*
+
 *Both halves of the order. `corpus/make_fig_acoustic_two_arm.py` → `corpus/fig_acoustic_two_arm.pdf`;
 `receipts/P15_CR_cosmology/P15_three_quarters_of_the_arms_residual_is_the_controls_and_what_is_left_is_position_not_amplitude.py`
 — rc=0, five parts, **13 gates**. **Every number the figure plots is recomputed in the receipt and
@@ -1828,6 +1830,17 @@ version is banked beside it and both are in the receipt.*
 > panels are where that is visible rather than the upper ones.***
 
 ## ⛔ `r6881` — **THE FIRST THING IN THIS BLOCK IS A WITHDRAWAL OF MY OWN LAST HEADLINE**
+
+> ⛔ ⛔ **AND IT CROSSED WITH `r6883`, SO READ THIS LINE FIRST.** *You placed the figure in `P15` and put the
+> sentence into the paper — §refit-bound now read "**So three quarters of the disagreement is the transfer's
+> and not the construction's**", and the caption "three quarters of this arm's is the control's". **That is
+> the sentence this block withdraws, and it was live in `corpus/CR_cosmology.tex`.*** ⇒ ***I have corrected it
+> there — minimally, and I am telling you plainly because `P15` is your file and I do not touch it.*** *The
+> paragraph now states the decomposition instead of the attribution and cites the new receipt; the caption
+> drops the clause. **Reword both however you like — my edit is the smallest thing that stops the paper
+> asserting something I have withdrawn, not a proposal about how §refit-bound should read.** The `.pdf` in
+> `corpus/` is now stale against the `.tex` (no TeX here); the served `paper_P15.html` is regenerated.*
+
 
 *`receipts/P15_CR_cosmology/P15_the_shared_fraction_does_not_mean_what_i_said_and_the_peak_trough_pattern_is_the_arms_alone.py`
 — rc=0, four parts, **14 gates**, four controls. You asked for the four diagnostics on the full

@@ -50,7 +50,20 @@ REGISTRY = [
     # excess is the construction's).  ** The row may still QUOTE the sentence -- the withdrawal is
     # recorded by quoting it -- but not assert it. **
     ("the-shared-fraction-attributes-the-misfit-to-the-transfer",
-     r"that part is the transfer's and not the construction's"
+     # ** WIDENED IMMEDIATELY, AND THE FIRST PATTERN IS WHY THE GATE HAS THIS COMMENT. **
+     # The first version read "that part is the transfer's and not the construction's" -- MY
+     # wording, in MY row.  `P15` says "So three quarters of the disagreement is the transfer's
+     # and not the construction's", and the gate reported the tree clean with the withdrawn
+     # claim standing in the paper.  ** A registry keyed to one seat's phrasing is a registry
+     # that checks one seat ** -- the same lesson r6465 records one entry below.
+     r"is the transfer's and not the construction's"
+     # ⌗ NARROW ON PURPOSE.  A generic "<fraction> ... is the control's" also fires on
+     # `PO-47`'s live and UNWITHDRAWN finding that 57% of the fourth-peak offset is the
+     # control's, which is a different claim about a different quantity.  The subject has
+     # to be the RESIDUAL.
+     r"|three quarters of (?:this arm's|the (?:arm's )?residual)[^.\n]{0,20}is the control's"
+     r"|\d\d(?:\.\d)?\s*(?:per cent|\\%) of the arm's (?:residual|\\?chi)[^.\n]{0,40}"
+     r"is the control's"
      r"|(?:fraction|per\s*cent|\\%)[^.\n]{0,80}along the control's[^.\n]{0,80}"
      r"(?:is|are) the transfer's",
      r"(?:r6881|withdrawn|WITHDRAWN|similarity|does not follow|inference)",
@@ -289,6 +302,10 @@ POSITIVES = {
     ],
     "the-shared-fraction-attributes-the-misfit-to-the-transfer": [
         "On the order's own criterion that part is the transfer's and not the construction's.",
+        "So three quarters of the disagreement is the transfer's and not the construction's.",
+        "the residuals are where the rejection lives, and three quarters of this arm's is the "
+        "control's",
+        "73.1\\% of the arm's residual is the control's",
         "73.1\\% of the arm's chi^2 lies along the control's own direction, so that part is the "
         "transfer's",
     ],
