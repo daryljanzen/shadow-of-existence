@@ -376,3 +376,30 @@ the row is about what fixes it, which is a different and larger question.*
 **⌗ AND ONE CANDIDATE NAMED IN THE ROW AND DELIBERATELY NOT BUILT** --- *the tower's own floor as a canonical
 subtraction point for the log. **Do not build it unless the check above comes out against**, and if you do,
 the burden the row states is the burden: show the floor is forced rather than convenient.*
+
+## ⚑ WORK ORDER — `PO-51`: IS THE TOWER'S FLOOR A FORCED SUBTRACTION POINT OR A CONVENIENT ONE?
+
+*Opened r6861 as the candidate `PO-43` named and deliberately did not build --- **and you built the machinery
+for it yesterday**: the floor's degeneracies, the $\mu_n$ at every level, and the group-theoretic reading of
+the tower are all in your helicity receipt. The check that gated it has come out for the claim, so the
+candidate is now its own row and it is yours.*
+
+**⌗ THE ARGUMENT AS THE ROW CARRIES IT.** *A log needs a subtraction point. The corpus holds there is no
+second physical length --- that is the one-scale claim. But in a **discrete** mode sum the subtraction point
+need not be a length at all: it is a mode number, **and this tower has a canonical one, its own floor.**
+
+**⌗ AND THE BURDEN IS STATED AT THE OUTSET, WHICH IS THE WHOLE ORDER.** *Whether that fixes the constant or
+merely names a convention is a question and not a result. **Show the floor is forced rather than convenient**
+--- or show it is not, which is equally a result and closes the row.*
+
+**⌗ WHAT WOULD MAKE IT FORCED, AND THESE ARE THE PLACES TO LOOK.** *Whether the floor is the lowest mode the
+compactness admits rather than a choice --- your own receipt has the tower starting at $n=2$ with no zero mode
+and no soft region, so the infrared is regulated for free; whether a subtraction at any other mode number
+leaves a residue the physics can see, or only shifts a constant nothing measures; and whether the log
+coefficient $39/4$ --- which the corpus carries as an identity rather than an agreement --- is independent of
+the subtraction point, since a coefficient that moves with it would settle the question the other way.*
+
+**⌗ AND THE ADJACENT ROW IS NOT THIS ONE.** *`PO-23`, the ultraviolet definition of the mode sums, is the
+larger open item and this row does not reach it: a subtraction point for a log is not a definition of the sum.
+**Do not drift into it** --- if the work starts needing the coupled tower's definition, stop and report that
+the row's question is downstream of `PO-23`, which is itself a result worth having.*
