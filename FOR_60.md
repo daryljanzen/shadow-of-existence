@@ -359,3 +359,44 @@ how the turnaround is defined --- and your guard already found three loci where 
 --- **then the answer is that the measurement is not currently available, and that is worth recording as
 sharply as a number would be.** Do not assemble a sample by harmonising definitions yourself; that is a fit
 wearing a literature pass's clothes.*
+
+## ⚑ WORK ORDER — `PO-31`: THE PROGENITOR'S VACUUM LIVES ON AN INTERIOR THE CORPUS SOLVES EXACTLY
+
+*Your r6826 closed three channels and left one: $n_s-1=3-2\sqrt{9/4-m^{2}\alpha^{2}}$, with the measured value
+asking the interior for a slightly negative $m^{2}\alpha^{2}$. **That formula is the substrate's, and the
+fluctuations are not generated on the substrate.** They are generated in the progenitor's interior, and
+`PO-25`'s verification has just established what that interior is: **the closed dust-and-radiation ball,
+solved exactly, with its radiation content determined.***
+
+**⌗ WHY THAT CHANGES THE ROW'S STANDING RATHER THAN ITS WORDING.** *`PO-31` has been carried as awaiting an
+interior that is not built. **The background is built**: $a''+a=A/2$ in conformal time, $a=\tfrac
+A2(1-\cos\eta)+\sqrt B\sin\eta$, dust the even part and radiation the odd, with $B=Aa_{\rm eq}$ fixed by the
+same determination that scored `PO-25`. What is missing is not the background but the mode problem on it.*
+
+**⌗ AND THE MODE PROBLEM IS SET BY THAT SAME EQUATION.** *For a canonically normalised field,
+$v''+(k^{2}-a''/a)v=0$, and here $a''=A/2-a$ exactly, so*
+
+> *$a''/a \;=\; \dfrac{A}{2a}-1$,*
+
+*a potential with no free function in it at all --- **the curvature contributing the $-1$ and the dust the
+$A/2a$, with the radiation entering only through $a(\eta)$.** Near the branch point $a\simeq\sqrt B\,\eta$, so
+$a''/a\simeq A/(2\sqrt B\,\eta)-1$: **a $1/\eta$ potential rather than the $2/\eta^{2}$ of de Sitter**, which
+is a different scaling problem and not a perturbation of one.*
+
+**⌗ WHAT TO COMPUTE, STOPPING AT WHICHEVER ANSWERS.**
+
+1. ***The spectrum of the vacuum handed over***, *from the exact mode functions on that background with the
+   adiabatic vacuum set where the modes are deep inside the horizon. Report $\dd\ln\mathcal{P}/\dd\ln k$, and
+   **say whether it is a tilt or a running by the test you used before** --- a constant log-derivative against
+   one that changes sign across the band.*
+2. ***And the sign.*** *Red or blue is the first thing worth knowing; the measured value is $0.998$, red by
+   two parts in a thousand.*
+3. ***And whether the substrate's formula applies at all.*** *If the interior's potential is $1/\eta$ rather
+   than $1/\eta^{2}$, then $n_s-1=3-2\sqrt{9/4-m^{2}\alpha^{2}}$ may be the wrong template and the
+   negative-$m^{2}$ requirement an artefact of applying it. **Say so if so** --- that would retire a
+   requirement the corpus is currently carrying.*
+
+**⌗ AND THE SAME DISCIPLINE AS BEFORE.** *Nothing tuned to $0.998$; if a step needs a value chosen to reach
+it, report that instead. And if the mode problem needs an initial condition the interior does not supply ---
+**where the vacuum is set, and by what** --- that is the answer and the frontier moves to it rather than
+past it.*
