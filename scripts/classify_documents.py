@@ -75,7 +75,7 @@ RECORD_EXACT = {'BOARD.md', 'WHATS_TEED_UP.md', 'THE_BURN_DOWN.md', 'ID_SPACE_CE
 STATE = {
     'THE_MODEL_LEDGER.md':                            'binds RADSCAN\'s terms to the theory that determines them',
     'retired/THE_READING_NOTES.md':                           'what the linear read of P7 establishes for the acoustic model',
-    'CORPUS_REVISION_OWED.md':                        'the measured gap between the register and the papers',
+    'retired/CORPUS_REVISION_OWED.md':                        'the measured gap between the register and the papers',
     'THE_BAKE.md':                                    'the revision plan — substance into the owning papers first',
     'THE_PLAN.md':                                    'the work, route and destination',
     'CONSOLIDATE_THE_PLAN_AND_INDEX_THE_PROGRAMME.md': 'the consolidation plan and the arcs',
