@@ -1208,3 +1208,99 @@ locator errs $3.1$ in $\ell$ and the refinement $0.13$:*
 ⇒ **Your verdict stands — freedom does not close the phase, and the arm carries about twice the
 control's residual. The numbers do not.** *`sec:refit-bound`'s "$2.3\%\to4.5\%$" needs replacing, and
 the control's $1.6\%$ needs saying: the residual is not wholly the construction's.*
+
+---
+
+# ⚑⚑ `r6835` ① AND ② ARE IN — **THERE IS NO PHASE RESIDUAL, AND THE FOURTH PEAK IS NOT THE DAMPING
+# ENVELOPE. ③ IS NOT RUN, BY YOUR OWN STOPPING RULE.**
+
+*`r6835+cc66.28`. Your reading is confirmed — **by a wider margin than you guessed**, and by a
+mechanism you did not name. Read ⓶ before the numbers, because it is where I have to be careful.*
+
+## ⓵ ① THE DIAGNOSTIC — ONE LOCATOR, THE SKY AND BOTH ARMS THROUGH IT
+
+*`sec:intro` locates the sky's peaks on `plik_lite`'s **binned** $TT$. `cc66.25` read the arms'
+peaks on the model's **own** $\ell$ grid, **unlensed**, against the paper's **stored** quartet —
+three mismatches with how the sky's own number is obtained, i.e. three violations of the discipline
+the paper itself names, **matched-procedure differencing**. Here one locator does all three rows.*
+
+| | peaks | $\ell_A$(1–3) | $\varphi/\pi$(1–3) | $\ell_A$(1–4) | $\varphi/\pi$(1–4) |
+|---|---|---|---|---|---|
+| sky | $221.0/533.8/814.8/1121.9$ | $296.91$ | $-0.2378 \pm 0.0099$ | $298.36$ | $-0.2448 \pm 0.0074$ |
+| control | $220.2/537.0/811.7/1124.5$ | $295.75$ | $-0.2318 \pm 0.0018$ | $298.78$ | $-0.2464 \pm 0.0022$ |
+| **CR crossing** | $221.8/536.8/812.9/1126.5$ | $295.58$ | $-0.2278 \pm 0.0017$ | $299.04$ | $-0.2445 \pm 0.0019$ |
+
+*The $\pm$ is the locator's own spread across seven parabola windows. The locator reproduces your
+quartet to $0.6/3.9/2.5/2.0$ — **the second peak is the hardest and carries the largest spread
+($\pm4.24$), which is a fact about `plik_lite`'s wide bins and not a new sky.***
+
+**⇒ AGAINST THE SKY: control $+0.6\sigma$ (1–3) and $-0.2\sigma$ (1–4); CR $\mathbf{+1.0\sigma}$ and
+$\mathbf{+0.0\sigma}$.**
+**⇒ ARM MINUS CONTROL, which is what differencing attributes to the construction:
+$+0.0040 \pm 0.0025 = \mathbf{+1.6\sigma}$ (1–3) and $+0.0019 \pm 0.0029 = \mathbf{+0.6\sigma}$ (1–4).**
+
+*And the sign of the offset against the sky **flips** between the two fits — which is the signature
+of a residual carried by one peak, exactly as you predicted.*
+
+## ⓶ ⚠ **BUT THE MECHANISM IS NOT WHAT IT LOOKS LIKE, AND I WILL NOT WRITE IT THE FLATTERING WAY**
+
+*Priced one mismatch at a time, the three-peak offset goes $3.4\% \to 3.8\% \to 5.3\% \to 4.2\%$.*
+**THE PER-CENT OFFSET DOES NOT SHRINK. It ends up larger than it started.**
+
+⇒ ***What dissolves the residual is the UNCERTAINTY, not the central value.*** *The sky's own
+$\varphi/\pi$ cannot be pinned tighter than $\pm0.0099$, so a $+0.0100$ offset is $1.0\sigma$.*
+**The number was never small — it was never measured against anything.** *Your $\sigma \simeq 0.008$
+in `sec:intro` turns out to be about right; what was missing for four revisions was anyone comparing
+to it.*
+
+## ⓷ ② THE DAMPING ENVELOPE — **RULED OUT**
+
+*Replacing the arm's envelope with the control's, everything else unchanged: multiply by
+$\exp[(r^2-1)(\ell/\ell_D)^2]$ with $r=0.99179$ at your settled endpoint, $\ell_D=D_M/r_D^{\rm ctl}=2094.2$.
+That is $-0.47\%$ at $\ell=1127$.*
+
+| | peak 1 | 2 | 3 | 4 |
+|---|---|---|---|---|
+| CR, as computed | $221.8$ | $536.8$ | $812.9$ | $1126.5$ |
+| CR, damping forced to the control's | $221.7$ | $536.7$ | $812.8$ | $1126.4$ |
+| **the shift** | $-0.01$ | $-0.05$ | $-0.08$ | $\mathbf{-0.13}$ |
+| *the inverse test, on the control* | *$+0.01$* | *$+0.05$* | *$+0.08$* | *$+0.14$* |
+
+⇒ **$0.13$ in $\ell$ against an arm-minus-control offset of $+1.95$ — the envelope accounts for
+$7\%$.** *The inverse test is equal and opposite, so the operation is sound and the answer is
+negative.* ***Your leading candidate is ruled out.***
+
+## ⓸ AND WHAT IS LEFT IS ABOUT ONE MULTIPOLE
+
+| peak | CR − control | sky's spread | in $\sigma$ | comb-width part | left over |
+|---|---|---|---|---|---|
+| 1 | $+1.60$ | $0.65$ | $+2.4$ | $+0.19$ | $+1.41$ |
+| 2 | $-0.24$ | $4.24$ | $-0.1$ | $+0.46$ | $-0.70$ |
+| 3 | $+1.25$ | $2.38$ | $+0.5$ | $+0.69$ | $+0.56$ |
+| 4 | $+1.95$ | $0.94$ | $+2.1$ | $+0.95$ | $+0.99$ |
+
+*The arm's comb is $301.80$ against the control's $301.54$ — $+0.085\%$ — and that column is what it
+alone predicts.* **It accounts for about half of peaks three and four and little of the first.**
+*What is left runs $+1.41$, $+0.56$, $+0.99$: the same sign and order at every peak, which is the
+shape of a phase rather than one displaced peak — **though not a clean constant, and at these
+locating spreads a finer statement is not available.***
+
+## ⓹ ⛔ ③ IS NOT RUN, AND THAT IS YOUR RULE
+
+*The neutrino-sector question is conditional on "a uniform phase offset surviving the first test".
+**None survives**, so nothing measured here indicates a reset of the free-streaming anisotropic
+stress at the branch point.* ⌗ *It may still be worth asking on its own merits — a reset would be a
+defect in the state specification whether or not it shows in the comb — **but this receipt gives no
+evidence for it and I am not going to manufacture a reason to run it.***
+
+## ⓺ WHAT THE PAPERS NOW NEED
+
+1. ***`sec:refit-bound` should stop carrying a phase residual as physics.*** *The honest sentence is
+   that the arm's acoustic phase agrees with the sky to $1.0\sigma$ on the three-peak fit and
+   $0.0\sigma$ on the four-peak fit, with the sky's own locating spread as the bar.*
+2. ***And the fourth peak with it.*** *$+1.95$ in $\ell$ against the control, $2.1\sigma$ of the
+   sky's spread at that peak, about half of it the arm's own comb width. Not the damping envelope.*
+3. *`sec:intro`'s $\sigma\simeq0.008$ was the right number all along and is now the one doing work.*
+
+⌗ *`receipts/P15_CR_cosmology/P15_there_is_no_phase_residual_and_the_fourth_peak_is_not_the_damping_envelope.py`
+— rc=0, five parts, 12 gates.*

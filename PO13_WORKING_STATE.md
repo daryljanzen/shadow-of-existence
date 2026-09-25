@@ -3472,3 +3472,38 @@ settled as a wash rather than left as one.***
 
 ⌗ *`receipts/P15_CR_cosmology/P15_the_full_range_refit_holds_the_background_and_the_phase_residual_was_quantised.py`
 and `.../P15_the_low_multipole_depth_gap_closes_and_two_defects_were_cancelling.py`*
+
+---
+
+# ⚑⚑ r6835+cc66.28 — THERE IS NO PHASE RESIDUAL, AND THE FOURTH PEAK IS NOT THE ENVELOPE
+
+*One locator — bin to `plik_lite`'s bins, convert to $D_l$, spline, parabola over $\pm W$ — applied
+identically to the sky and both arms' verified $185$-bin spectra, $W$ swept over seven values so the
+locator's own spread is the uncertainty carried.*
+
+| | peaks | $\varphi/\pi$(1–3) | $\varphi/\pi$(1–4) |
+|---|---|---|---|
+| sky | $221.0/533.8/814.8/1121.9$ | $-0.2378 \pm 0.0099$ | $-0.2448 \pm 0.0074$ |
+| control | $220.2/537.0/811.7/1124.5$ | $-0.2318 \pm 0.0018$ | $-0.2464 \pm 0.0022$ |
+| CR crossing | $221.8/536.8/812.9/1126.5$ | $-0.2278 \pm 0.0017$ | $-0.2445 \pm 0.0019$ |
+
+⇒ **CR against the sky: $+1.0\sigma$ (1–3), $+0.0\sigma$ (1–4). CR against the control:
+$+1.6\sigma$, $+0.6\sigma$.**
+
+⚠ **AND THE MECHANISM IS THE SIGMA, NOT THE SIZE.** *Priced one mismatch at a time the offset goes
+$3.4\% \to 3.8\% \to 5.3\% \to 4.2\%$ — **it does not shrink**. What dissolves it is that the sky's own
+$\varphi/\pi$ cannot be pinned tighter than $\pm0.0099$. The number was never small; it was never
+measured against anything.*
+
+**② THE DAMPING ENVELOPE IS RULED OUT.** *Forcing the arm's damping to the control's
+($\exp[(r^2-1)(\ell/\ell_D)^2]$, $r=0.99179$, $\ell_D=2094.2$, $-0.47\%$ at $\ell=1127$) moves the
+fourth peak $-0.13$ against an offset of $+1.95$ — $7\%$. The inverse test on the control gives
+$+0.14$, equal and opposite.*
+
+**WHAT IS LEFT:** *offsets $+1.60/-0.24/+1.25/+1.95$; the arm's comb is $+0.085\%$ wider, predicting
+$+0.19/+0.46/+0.69/+0.95$; leftovers $+1.41/-0.70/+0.56/+0.99$ — same sign and order, **not a clean
+constant**.*
+
+⛔ **③ NOT RUN** — *conditional on a uniform phase offset surviving ①, and none does.*
+
+⌗ *`receipts/P15_CR_cosmology/P15_there_is_no_phase_residual_and_the_fourth_peak_is_not_the_damping_envelope.py`*
