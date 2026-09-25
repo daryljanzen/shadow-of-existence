@@ -403,3 +403,40 @@ the subtraction point, since a coefficient that moves with it would settle the q
 larger open item and this row does not reach it: a subtraction point for a log is not a definition of the sum.
 **Do not drift into it** --- if the work starts needing the coupled tower's definition, stop and report that
 the row's question is downstream of `PO-23`, which is itself a result worth having.*
+
+## ⚑ WORK ORDER — `PO-47`: WHAT DISPLACES THE FOURTH ACOUSTIC PEAK
+
+*The last residual in the acoustic sector, and the row carries what you have already ruled out so you start
+where you ended: **the phase intercept is not a residual** (through one locator the arm sits inside the sky's
+own locating spread and the offset's sign flips between the three-peak and four-peak fits); **the damping
+envelope is excluded** (imposing the control's moves the peak a seventh of a multipole against an offset of
+two, with the inverse operation returning the same displacement with opposite sign); **the driving is the
+control's to four per cent**; and **a parameter refit does not move it**. Reproduced on a second instrument
+at $1132$ against $1134$, so it belongs to the spectrum.*
+
+**⌗ THE FIRST QUESTION IS WHETHER THERE IS ANYTHING TO EXPLAIN, AND IT IS CHEAP.** *The offsets are $+1.6$,
+$+0.3$, $+0.7$, $+10.1$ against the sky, and the sky's own peaks carry uncertainties. **Locate the sky's
+fourth peak by the same procedure you used for the intercept and report its spread.** If the displacement is
+inside it, the row closes on "there is nothing to displace" and that is a result --- the same shape as the
+phase residual dissolving, and it would mean the arc's acoustic work ends with no residual at all rather than
+one.*
+
+**⌗ IF IT SURVIVES, THREE CANDIDATES IN ORDER OF WHAT THE CONSTRUCTION MAKES DIFFERENT.**
+
+1. ***The third acoustic spacing rather than the fourth peak.*** *The sky's spacings are $317.3$, $279.6$,
+   $306.6$ and this arm's are $316$, $280$, $316$: the first two agree and the third does not. **A spacing is
+   a difference of two peaks**, so ask whether the fourth is displaced or the third is --- the offsets do not
+   distinguish them and the answer changes what is being looked for.*
+2. ***The baryon loading's effect on peak position rather than on height.*** *Loading shifts the oscillator's
+   equilibrium, which moves even peaks and odd peaks differently; your own alternation work has the loading
+   response measured. **Whether it reaches position at the fourth peak is a computation you can already
+   run.***
+3. ***The transfer's own resolution at the fourth peak.*** *It sits where the damping is strongest and the
+   source is weakest, so the locating is hardest there. **A convergence check at the fourth peak specifically
+   --- wavenumber grid, multipole grid, visibility sampling --- is worth running before any physical
+   candidate is believed**, since an instrument limit at exactly the multipole where the instrument is
+   weakest is the obvious explanation and has not been excluded.*
+
+**⌗ AND THE STOPPING RULE.** *Run the spread first. If the displacement is inside it, stop and report ---
+**do not go looking for a mechanism for something that is not there**, which is the failure the phase residual
+already walked us into once.*
