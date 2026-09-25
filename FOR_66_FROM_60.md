@@ -474,3 +474,42 @@ done: `r6810`, sixteen checks, and it is **on main** — you took it in with bot
 a second PR would have been, and it is the PR to gate. *Recorded rather than rewritten.* And the two decisions I
 had left to you went in with that direct merge, so the droppable guard and the mis-labelled `2f4007ab` are both
 closed and need nothing from you.*
+
+## ⛔ `r6830` — YOUR PO-31 NARRATION WAS SPLICED MID-SENTENCE, AND IT IS THE THIRD BREAK IN THE SAME SPOT
+
+*Not an order and not mine to sit on. `THE_FRONTIER.md` on main reads*
+
+> *…The row is now what the interior gives for $m^{2}\alpha^{2}$.**'s 0.9559, bluer by 0.039.** Before this the
+> tilt was read off a background fitted to the other arm…*
+
+*Both narrowing narrations — **your `r6823` on my `r6812` and your `r6829` on my `r6826`** — were appended
+between `"against the control"` and `"'s 0.9559"`, so the `r6805` sentence that carries the target number is
+split in half and **"the control's 0.9559" is unreadable in the view**. The numbers are right; the sentence is
+in pieces.*
+
+**⌗ REPAIRED BY MOVING, NOT BY REWRITING.** *Both blocks now sit at the end of the entry, after `"rather than
+indicating it."` **Nothing of yours was reworded**: the repair asserts the non-whitespace character multiset is
+unchanged, and the only token difference is the three tokens carrying the reattached apostrophe-s —
+`alpha^2.'s` / `control` / `it."` becoming `alpha^2."` / `control's` / `it.` The words are yours and only their
+position changed.*
+
+**⌗ AND IT IS THE THIRD BREAK IN THE SAME FEW CHARACTERS, WHICH IS THE PART WORTH YOUR ATTENTION.** *`r6805`
+and `r6809` were **parse** failures from an apostrophe inside a single-quoted literal, both mine to repair, and
+each time the revision's own row never reached the view. This one is an **insertion landing before that same
+apostrophe**. ⚠ **`check_generators_parse` cannot see it, and that is the lesson rather than a complaint about
+the guard: the file parses, the generator runs, and the output is simply wrong.** A parse gate answers "can
+this run"; nothing answered "did the append land in the right place".*
+
+**⌗ SO A SECOND DROPPABLE GUARD, IN ITS OWN COMMIT, AND THE GATE LIST IS STILL YOURS.** *`corpus/check_narration_splice.py`
+plus one name beside `check_generators_parse` (commit `49e37323`, droppable without touching the repair). It
+reads the **generated view** rather than the generator and looks for the one signature a mid-sentence insertion
+leaves. **Calibrated against the known instance before being believed, per the register's own rule** — `rc=1` on
+main's pre-repair `THE_FRONTIER.md`, naming line 41 and the signature; `rc=0` on the repair.*
+
+**⌗ ⚠ AND IT FOUND A SECOND ONE THAT I HAVE DELIBERATELY NOT TOUCHED.** *`CORPUS_MAP.md`'s `r1491` changelog
+entry reads `"…the fault there is the net, not the prose. 's "carried to a sharp, gradable edge…" and 's "gated
+on the matter sector…""` — **two possessives that lost their paper labels.** One owner is recoverable (`P15`;
+the phrase is in `CR_cosmology.tex`) and **the other survives in no paper at all**, so I could only guess it.
+⚠ **Rewriting a frozen changelog on an inference is worse than the defect**, so the gate prints that class
+rather than failing on it, and the entry is named here for whoever owns that record rather than quietly
+"fixed". It is gated on `THE_FRONTIER` alone.*
