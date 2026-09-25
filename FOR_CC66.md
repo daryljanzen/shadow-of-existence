@@ -499,3 +499,44 @@ belongs to this construction is the factor of $1.3$.*
 endpoint leaves, or transfer error amplified by this arm's slightly different envelope. **And if the ratio is
 not $1.3$ on the full covariance, say so plainly** --- these four are a seat's diagonal-error reading and are
 offered to be overturned.*
+
+## ⚑ WORK ORDER — TAKE THE SKY'S NOISE OUT AND READ THE MODEL DIFFERENCE DIRECTLY
+
+*Your decomposition left the sector at its sharpest and at its most tangled: **$73\%$ shared, position the only
+named piece of the rest, and amplitude-tilt-damping-position together not accounting for the shape
+rejection.** Every number so far compares each arm \emph{to the sky}, so every residual carries this sky's
+noise realisation --- and the control fits at $1.01$ per bin, meaning **the control's residual essentially is
+the noise.** This order takes the noise out.*
+
+**⌗ ① THE COEFFICIENT HIDING INSIDE THE $73\%$, WHICH IS THE REASON FOR THE ORDER.** *Writing the arm's
+whitened residual in the control's frame, cosine $0.855$ and norm ratio $1.34$ give
+$r_{\rm arm}\simeq1.15\,\hat r_{\rm ctl}+0.70\,(\perp)$. **If the arm merely inherited the same noise the
+coefficient would be $1.00$.** A $15\%$ amplification \emph{along the noise direction} is not noise; it is a
+multiplicative effect on the spectrum's shape, and it has been sitting inside the shared fraction unexamined.
+**Report that coefficient with its uncertainty**, and whether it is stable across bin cuts as the $73\%$ was.*
+
+**⌗ ② THE DECOMPOSITION THAT REMOVES THE REALISATION.** *Let $\Delta$ be the whitened difference of the two
+arms at their own minima --- **no sky in it at all** --- and expand exactly:*
+
+> *$\chi^2_{\rm arm}=\chi^2_{\rm ctl}+2\langle r_{\rm ctl},\Delta\rangle+\lVert\Delta\rVert^2$.*
+
+***Report all three terms.*** *$\lVert\Delta\rVert^2$ is what this construction costs whatever sky we got; the
+cross term is how unluckily its difference lines up with \emph{this} realisation. **If the cross term carries
+the excess and $\lVert\Delta\rVert^2$ is small, part of the rejection is a fluke of one sky** --- and the
+headline changes. Say which, plainly, either way.*
+
+**⌗ ③ AND $\Delta$'s SHAPE IS READABLE WHERE A RESIDUAL IS NOT, BECAUSE IT IS SMOOTH.** *Where does it live ---
+peaks, troughs, the damping tail, the equality scale? Is it a phase, an envelope, or a localised feature?
+**You have already shown it is not in the span of amplitude, tilt, damping and position**, so report what it
+\emph{is} orthogonal to as well as what it looks like: knowing that is most of knowing what it is.*
+
+**⌗ ④ AND THE SHORT LIST, BECAUSE THE CONSTRUCTION DIFFERS FROM THE CONTROL IN ONLY A FEW PLACES.** *The
+two-rate split feeding the driving envelope's \emph{shape}; the handover amplitude at $0.4835$ against the
+free oscillator's $0.5$; the neutrino sector's treatment through the handover, whose free-streaming phase
+shift the earlier order raised and never tested; and the early integrated Sachs--Wolfe term on the leaf rate.
+**Each makes a differently-shaped $\Delta$, and three of the four are already instrumented.** Match, do not
+fit --- and if none of the four matches, that is the result and the list was wrong.*
+
+**⌗ THE DISCIPLINE, SAME AS BEFORE.** *Nothing tuned to close the gap. **A negative --- \emph{it is none of
+these and here is what $\Delta$ looks like} --- is worth more than a match reached by adjusting one of
+them.***
