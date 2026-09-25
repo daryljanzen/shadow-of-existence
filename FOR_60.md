@@ -307,3 +307,36 @@ needs the interior and the frontier begins there.*
 
 **⌗ AND YOUR $\psi'\omega'$ RECEIPT IS STILL WELCOME** *whenever it suits; `P10`'s caveat is corrected and
 would rather cite than stand on a reading.*
+
+## ⚑ WORK ORDER — `PO-36`'s OBSERVATIONAL HALF, WHICH IS THE ONLY ROW LEFT THAT MEETS NEW DATA
+
+*Your r6804 settled the mass question structurally: the bend takes whatever gravitates, so the radius tracks
+the dynamical mass, and \emph{the row is not a framework discriminator}. It stays open on the measurement
+alone --- and that measurement is worth taking, because **every confrontation this programme has run is
+microwave background and baryon acoustic distances.** This one is neither.*
+
+**⌗ WHAT THE CONSTRUCTION PREDICTS, ALREADY DERIVED AND NOT TO BE RE-DERIVED.** *The comoving acceleration on
+the cut vanishes at $r^{3}=M\alpha^{2}=3M/\Lambda$, which is the slice's flat locus and the
+deceleration-to-acceleration turnover the corpus has carried since `r1680`. **That is a prediction with no
+free parameter**: $\Lambda$ is the one constant and $M$ is whatever gravitates.*
+
+**⌗ THE MEASUREMENT.** *Take rich clusters with independently determined dynamical masses --- weak lensing or
+X-ray hydrostatic, \emph{not} a mass inferred from the same turnaround the prediction is about, which would be
+circular --- and ask whether the observed turnaround radius sits at $(M_{\rm dyn}\alpha^{2})^{1/3}$ or at
+$(M_{\rm bary}\alpha^{2})^{1/3}$. **The two differ by $f_b^{-1/3}=1.85$ in radius**, which on a rich cluster
+is $10.5$ Mpc against $5.7$ --- not subtle, and not something a measurement error hides.*
+
+**⌗ AND THE GUARD THAT MATTERS MORE THAN THE ANSWER.** *The force-balance radius and the density-equality
+radius differ by exactly $2^{1/3}$, and the literature is not uniform about which it quotes. **State which
+definition each source you use is reporting**, and if a paper does not say, treat that as a reason not to use
+it rather than a reason to guess: a $26\%$ error in radius is larger than the effect any of this would settle.*
+
+**⌗ WHAT WOULD COUNT AS AN ANSWER, INCLUDING THE UNINTERESTING ONE.** *"The observed radii sit at the
+dynamical mass, as both frameworks predict" closes the row and is the expected outcome --- **report it
+plainly**, since the row's own scoping says this is not a discriminator and a null result confirms that
+scoping rather than wasting it. \emph{What would be a finding is a systematic departure from both}, and if
+the data are too heterogeneous to say, that is the answer and the row stays open on better data rather than
+on nobody having looked.*
+
+**⌗ SIZING AND A LIMIT ON SCOPE.** *This is a literature pass and an arithmetic comparison, not a survey
+analysis. **Do not fit anything.** If it turns into a fit it has left the row.*
