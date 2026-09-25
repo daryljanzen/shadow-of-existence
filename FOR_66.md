@@ -1567,3 +1567,101 @@ not build it and the burden you stated is untouched.*
 handedness being an irrep label. What this shows is that **the state does not use the capacity**, which
 is the narrower and (for the ledger) the decisive thing.* ⌗ *And nothing here touches the interacting
 tower's ultraviolet definition, which stays `P10`'s open frontier.*
+
+## ⚑ `PO-51` — **THE FLOOR IS FORCED AS A MODE; THE SUBTRACTION POINT IS A CONVENTION**
+
+*`r6863`'s order, run against the burden as you stated it. `receipts/P10_canonical_time/P10_the_floor_is_forced_as_a_mode_but_the_subtraction_point_is_a_convention_and_the_residue_is_the_absorbed_constant.py`
+— rc=0, eight parts, **19 gates, three controls**. Nothing is written into `P10`, `P17` or the row.*
+
+⇒ ***THOSE ARE TWO STATEMENTS AND THE ROW'S PREMISE RUNS THEM TOGETHER.*** *The first is a
+determination and is worth keeping. The second is not, and the answer to the burden is **"convenient"**.*
+
+## ⓵ THE HALF THAT IS RIGHT, AND IT IS NOT A CONVENTION
+
+*You wrote that my own receipt has the tower starting at $n=2$ with no zero mode and no soft region.
+**It does, and it is forced rather than observed.***
+
+| | |
+|---|---|
+| $j_R=(m-3)/2$ | $=0$ **exactly** at $m=3$; $<0$ below, where no representation exists |
+| $d(m)=2(m^2-4)$ | $=0$ at $m=2$, $=10$ at $m=3$ — the first mode that exists at all |
+| $\mu_3=\sqrt6=2.4495$ | gapped; finitely many modes under any cut |
+
+⇒ ***The infrared is regulated by the geometry and needs no second regulator.*** *A control confirms
+that is this spectrum's property and not bookkeeping: a floor at $10^{-6}$ blows the infrared-weighted
+sum up to $10^{12}$ against this tower's $0.12$.*
+
+## ⓶ AND THE LOG IS REAL, SCHEME-INDEPENDENTLY — SO THE QUESTION HAD TO BE ANSWERED
+
+$$d(m)\mu(m)=2m^{3}-11m+\frac{39}{4m}+\frac{45}{8m^{3}}+\cdots$$
+
+*and the Dirichlet series $Z(s)=\sum_{m\ge3}d(m)\mu(m)m^{-s}$ carries:*
+
+| pole | residue | what it is |
+|---|---|---|
+| $s=4$ | $2.0000$ | the quartic |
+| $s=2$ | $-11.000$ | the quadratic |
+| $\mathbf{s=0}$ | $\mathbf{9.7500}=39/4$ | ***the log*** |
+
+⇒ ***A pole at $s=0$ is scheme-independent, so zeta regularisation — the one scheme that would hand
+back a unique finite part if there were no pole there — does not evade the subtraction point.***
+
+## ⓷ YOUR THIRD TEST: **$39/4$ DOES NOT MOVE** — and that is the weaker reading
+
+| cut | $L$ at $m_0=3,5,10,50$ | spread across $m_0$ |
+|---|---|---|
+| $800$ | $9.7500189817$ | $2.6\times10^{-30}$ |
+| $8000$ | $9.7500001902$ | $2.3\times10^{-26}$ |
+| $80000$ | $9.7500000019$ | $5.0\times10^{-22}$ |
+
+*The spread across subtraction points is the summation's own rounding — **25 orders below** the
+truncation error, which is itself falling like the $1/m^{3}$ tail. And the finite part shifts by
+**exactly** $\tfrac{39}{4}\ln(m_0'/m_0)$, agreeing to $10^{-12}$ against the direct sum.*
+
+⌗ **A CONTROL SAYS THE INVARIANCE IS A FACT AND NOT A TAUTOLOGY**: *a mass shift **does** move $L$ —
+$\delta=1$ gives $7$, $\delta=3$ gives $0$.*
+
+⚠ ***BUT NOTE WHAT THAT TEST COULD DO.*** *You wrote "a coefficient that moves with it would settle the
+question the other way". **It could only ever have settled it against.** It does not move — and a
+constant that nothing measures does not become determined by the coefficient above it being fixed.*
+
+## ⓸ ⛔ AND YOUR SECOND TEST DECIDES IT, AGAINST, IN TWO STEPS
+
+**⌗ FIRST — A MODE NUMBER IS DIMENSIONLESS, SO THE ONE-SCALE CLAIM PROTECTS EVERY CHOICE EQUALLY.**
+*$\ln(M/m_0)$ has no length in it for **any** $m_0$; the only place a length enters is
+$\omega_m=\mu_m/a$, built from the one length with the mode number a pure multiplier.* ⇒ ***The
+premise is correct and is the real content of the row — and it does not reach the conclusion drawn
+from it. The one-scale claim rules out a second LENGTH; it does not rule out a second NUMBER, and the
+subtraction point is a number.***
+
+**⌗ SECOND — THE RESIDUE IS THE CONSTANT THE CORPUS ALREADY ABSORBS.** *`sec:lock`'s own argument:
+on a maximally symmetric geometry every quadratic invariant and the volume term are multiples of one
+functional, and the admitted substrates are a one-parameter family, so **the counterterm basis is
+one-dimensional**. I checked that holds on the tower's own background rather than a nearby one —
+$a(T)=\alpha\cosh(T/\alpha)$ gives $R=12/\alpha^{2}$, constant, exactly de Sitter. So the log's
+counterterm is degenerate with the cosmological term, and `P17` absorbs a constant vacuum energy into
+the one observed curvature with no bare-versus-vacuum split.* ⇒ ***A change of subtraction point moves
+a constant that is reabsorbed into the one measured gauge. No observable depends on $m_0$, so nothing
+can force it.***
+
+## ⓹ AND THE FLOOR DOES NOT FIX THE CONSTANT EITHER
+
+$$C_{\text{floor}}=-8.51485690643\ldots$$
+
+*Neither zero nor a named number — a number the convention produces rather than one the physics names.
+Subtracting at $m_0=5,10,50$ instead leaves $C+4.98$, $C+11.74$, $C+27.43$.*
+
+## ⓺ THE VERDICT, AND IT IS A RESULT RATHER THAN A FAILURE
+
+***The floor is forced as a MODE and convenient as a SUBTRACTION POINT. The row closes.*** *And the
+one-scale claim comes out of this **stronger where it is true** — a discrete sum needs no second
+length, for any subtraction point at all — with the corpus no longer carrying a determination it was
+not entitled to.*
+
+⌗ ***THE FENCE HELD.*** *Nothing above needs the coupled tower. Every number is the free spectrum's,
+which is what the row asks about — a subtraction point for a log is not a definition of the sum — so
+`PO-23` is not reached and I did not drift.* ⌗ *The one place the question reappears is **named and not
+claimed**: where the shear breaks the counterterm degeneracy the Weyl-squared coefficient is a separate
+entry, and its own renormalisation condition is `PO-43`'s uncosted one rather than this row's.*
+
+⌗ *Also unchanged: $39/4$ is not discharged — `r6436` stands, and this receipt does not touch it.*

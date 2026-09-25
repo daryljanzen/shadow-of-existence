@@ -200,6 +200,17 @@ EST = {
         'or merely names a convention is a question and not a result, and the burden is to show the floor is FORCED '
         'rather than convenient. Deliberately not built while PO-43 check was outstanding; that check has come out for '
         'the claim, so the candidate is now this row own.'),
+    'PO-52': ('where the shear breaks the counterterm degeneracy', 1, 1, 3, None,
+        'OPENED r6867 as PO-51 remainder, on the standing order. PO-51 closes because the log counterterm is '
+        'DEGENERATE with the cosmological term on the admitted background family -- the degeneracy being conformal '
+        'flatness, checked on the tower own background -- so a change of subtraction point moves a constant '
+        'reabsorbed into the one measured gauge. The degeneracy does the work and it is a property of that family. '
+        'SO THE QUESTION IS WHAT HAPPENS WHERE IT BREAKS: at second order in the shear the family is no longer '
+        'conformally flat, and there the Weyl-squared entry is a separate coefficient rather than an absorbed '
+        'constant -- which is PO-43 uncosted entry, named there and again here and carried by neither. DISCHARGE: '
+        'whether the admitted family reaches second order in the shear at all on this construction (if not, the entry '
+        'has no domain and that closes it); and if it does, whether the broken degeneracy leaves a coefficient '
+        'anything observes, which is the cross-register question PO-48 is being worked on.'),
     'PO-31': ('the progenitor spectrum, and what the throat damps under rotation', 1, 1, 6, None,
         'r6510: THE WARPED HARMONIC PROBLEM IS DONE AND THE PROXY WAS TELLING THE TRUTH. r6499 computed '
         'lambda on the rotating family but read it AT THE POLE, warning that the near-horizon sphere is '
@@ -385,13 +396,13 @@ KIND = {'PO-46': 'BUILD', 'PO-10': 'BUILD', 'PO-13': 'BUILD', 'PO-36': 'READ', '
 #   and the generator reported "9 open" while the table showed EIGHT -- the count comes from
 #   the live set and the rows come from here.*  ** Adding a row needs three things: the
 #   register row, the runway, and this list. **  check_frontier_current now checks all three.
-ORDER = ['PO-47', 'PO-48', 'PO-49', 'PO-50', 'PO-51', 'PO-45', 'PO-46', 'PO-10', 'PO-13', 'PO-43', 'PO-24', 'PO-36', 'PO-30', 'PO-25', 'PO-26', 'PO-31', 'PO-23', 'PO-15', 'PO-14', 'PO-17', 'PO-18', 'PO-19', 'PO-20']
+ORDER = ['PO-52', 'PO-47', 'PO-48', 'PO-49', 'PO-50', 'PO-51', 'PO-45', 'PO-46', 'PO-10', 'PO-13', 'PO-43', 'PO-24', 'PO-36', 'PO-30', 'PO-25', 'PO-26', 'PO-31', 'PO-23', 'PO-15', 'PO-14', 'PO-17', 'PO-18', 'PO-19', 'PO-20']
 GROUP = {'PO-45': 'A', 'PO-46': 'A',  # ⛔ r6549: a FOURTH hardcoded list -- GROUP -- and a row missing here raises.
          'PO-10': 'D', 'PO-13': 'D', 'PO-14': 'A', 'PO-15': 'C', 'PO-16': 'D',
          # ** r3095: the four brought in from p0's frontiers and the field ledgers.  PO-17 and
          # PO-19 are substrate geometry; PO-18 is the constant ledger; PO-20 is analysis. **
          'PO-17': 'E', 'PO-18': 'E', 'PO-19': 'E', 'PO-20': 'E',
-         'PO-47': 'D', 'PO-48': 'E', 'PO-49': 'E', 'PO-50': 'D', 'PO-51': 'C',
+         'PO-52': 'C', 'PO-47': 'D', 'PO-48': 'E', 'PO-49': 'E', 'PO-50': 'D', 'PO-51': 'C',
          # ** r6861: the five remainders of struck rows, each opened where its parent closed --
          #   PO-47 and PO-50 are the data-confrontation sector, PO-48 and PO-49 the substrate
          #   and its interiors, PO-51 the quantum tower. **
