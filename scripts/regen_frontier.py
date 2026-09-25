@@ -237,6 +237,17 @@ EST = {
         'thermodynamic content, so there is nothing for the reassignment to transport and the construction is cleaner '
         'than it knew; or whether the reassignment needs something the vanishing denies it, in which case the '
         'framework owes an account of what crosses. Both are results; the second is worth looking for first.'),
+    'PO-55': ('horizon entropy is reading-dependent under the central move', 1, 1, 3, None,
+        'OPENED r6877 as PO-54 remainder, found by node 60 where the order was not looking. The causal reassignment '
+        'relates two readings of one geometry whose horizon areas are GENERICALLY UNEQUAL, and PO-48 established that '
+        'the area law carries at the substrate horizon -- together making horizon entropy reading-dependent, while '
+        'P17 quotes 3 pi/(Lambda l_P^2) as the ledger own number back without saying it is the value in ONE reading. '
+        'Not a contradiction, since the morphism is causal and structural and carries no metric data, so nothing '
+        'computed is wrong: what is missing is the qualification, at the one place the corpus computes an entropy. '
+        'DISCHARGE: say which reading the quoted entropy belongs to, whether the other reading value is computable, '
+        'and if they differ whether anything depends on the difference. Not independent of PO-53, struck at r6871 -- '
+        'the debt rests on the offset family being solutions rather than sections, now settled, so it is live rather '
+        'than conditional.'),
     'PO-31': ('the progenitor spectrum, and what the throat damps under rotation', 1, 1, 6, None,
         'r6510: THE WARPED HARMONIC PROBLEM IS DONE AND THE PROXY WAS TELLING THE TRUTH. r6499 computed '
         'lambda on the rotating family but read it AT THE POLE, warning that the near-horizon sphere is '
@@ -422,13 +433,13 @@ KIND = {'PO-46': 'BUILD', 'PO-10': 'BUILD', 'PO-13': 'BUILD', 'PO-36': 'READ', '
 #   and the generator reported "9 open" while the table showed EIGHT -- the count comes from
 #   the live set and the rows come from here.*  ** Adding a row needs three things: the
 #   register row, the runway, and this list. **  check_frontier_current now checks all three.
-ORDER = ['PO-54', 'PO-53', 'PO-52', 'PO-47', 'PO-48', 'PO-49', 'PO-50', 'PO-51', 'PO-45', 'PO-46', 'PO-10', 'PO-13', 'PO-43', 'PO-24', 'PO-36', 'PO-30', 'PO-25', 'PO-26', 'PO-31', 'PO-23', 'PO-15', 'PO-14', 'PO-17', 'PO-18', 'PO-19', 'PO-20']
+ORDER = ['PO-55', 'PO-54', 'PO-53', 'PO-52', 'PO-47', 'PO-48', 'PO-49', 'PO-50', 'PO-51', 'PO-45', 'PO-46', 'PO-10', 'PO-13', 'PO-43', 'PO-24', 'PO-36', 'PO-30', 'PO-25', 'PO-26', 'PO-31', 'PO-23', 'PO-15', 'PO-14', 'PO-17', 'PO-18', 'PO-19', 'PO-20']
 GROUP = {'PO-45': 'A', 'PO-46': 'A',  # ⛔ r6549: a FOURTH hardcoded list -- GROUP -- and a row missing here raises.
          'PO-10': 'D', 'PO-13': 'D', 'PO-14': 'A', 'PO-15': 'C', 'PO-16': 'D',
          # ** r3095: the four brought in from p0's frontiers and the field ledgers.  PO-17 and
          # PO-19 are substrate geometry; PO-18 is the constant ledger; PO-20 is analysis. **
          'PO-17': 'E', 'PO-18': 'E', 'PO-19': 'E', 'PO-20': 'E',
-         'PO-54': 'E', 'PO-53': 'E', 'PO-52': 'C', 'PO-47': 'D', 'PO-48': 'E', 'PO-49': 'E', 'PO-50': 'D', 'PO-51': 'C',
+         'PO-55': 'E', 'PO-54': 'E', 'PO-53': 'E', 'PO-52': 'C', 'PO-47': 'D', 'PO-48': 'E', 'PO-49': 'E', 'PO-50': 'D', 'PO-51': 'C',
          # ** r6861: the five remainders of struck rows, each opened where its parent closed --
          #   PO-47 and PO-50 are the data-confrontation sector, PO-48 and PO-49 the substrate
          #   and its interiors, PO-51 the quantum tower. **
