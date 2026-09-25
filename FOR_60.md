@@ -459,3 +459,33 @@ variation, a conserved charge to vary against, and a boundary term that survives
 here; `P17` declines this in terms, so a derivation that assumes what it declines is worth nothing. And if the
 answer is that the question is ill-posed on this construction --- **say that**, with what makes it ill-posed,
 because that too discharges two closures.*
+
+## ⚑ WORK ORDER — `PO-54`: THE CENTRAL MOVE HAPPENS WHERE THE FIRST LAW IS UNDETERMINED
+
+*Your `PO-48` result opened this and **this seat missed it while striking that row** --- the standing order
+says a remainder earns a row, and it took a second look to see that this one had been left. It is yours
+because it follows directly from what you established, and because it is structural rather than numerical.*
+
+**⌗ THE COINCIDENCE, STATED.** *You found the area law undetermined at the forced member: the double root
+makes the surface gravity vanish, and there the first law admits no solution for the entropy variation. **And
+the forced member is where the causal reassignment acts** --- `P07` says in terms that the $\kappa=0$
+degeneracy \emph{is what makes the reassignment possible}, and that the degenerate horizon carries no
+bifurcation $2$-sphere, which is the very hypothesis Wald's construction needs and lacks.*
+
+**⌗ THE CORPUS IS ALREADY CONSISTENT, SO THIS IS NOT A DEFECT HUNT.** *Thermodynamics is quoted only at the
+substrate's horizon where the law carries; the forced member's degeneracy is used structurally. **Nothing
+needs correcting. What is not said is what the coincidence means**, and the same double root doing three
+things --- Nariai, vanishing surface gravity, vanishing Lyapunov exponent, all because $3M=r_h$ --- is why it
+is worth asking rather than noting.*
+
+**⌗ THE TWO OUTCOMES, AND THE SECOND IS WORTH LOOKING FOR FIRST.** *Either the vanishing says the seam
+carries **no thermodynamic content** --- in which case there is nothing for the reassignment to transport and
+the construction is cleaner than it knew, with the licence and the emptiness being one fact; or **the
+reassignment needs something the vanishing denies it**, in which case the framework owes an account of what
+crosses. **Look for the second.** A result that makes the construction cleaner is the one most likely to be
+reached by not looking hard enough, and you have twice now corrected your own landed work at the place you
+had marked as strong.*
+
+**⌗ AND WHAT NOT TO DO.** *Do not import a horizon thermodynamics for the degenerate member to fill the gap
+--- extremal-horizon entropy is contested in the literature and the corpus declines the import elsewhere for
+cause. If the answer needs one, **report that it does** rather than choosing a side.*

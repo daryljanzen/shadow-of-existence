@@ -222,6 +222,21 @@ EST = {
         'gate question. DISCHARGE: reading sec:ledger and the operator paper together on whether the offset-labelled '
         'cuts are solutions or sections, and if sections, saying what the vanishing Noether charge means for the '
         'temperature, which the corpus does quote.'),
+    'PO-54': ('the central move happens where the first law is undetermined', 1, 1, 4, None,
+        'OPENED r6873 as PO-48 remainder, on the standing order -- and the gate missed it when striking that row, '
+        'which is the failure the order exists to catch. PO-48 found the area law UNDETERMINED at the forced member, '
+        'the double root making the surface gravity vanish so the first law admits no solution for the entropy '
+        'variation. And the forced member is where the causal reassignment ACTS: the framework says in terms that the '
+        'kappa = 0 degeneracy is what makes the reassignment possible, and that the degenerate horizon carries no '
+        'bifurcation 2-sphere -- the same hypothesis the Noether-charge construction needs and lacks. THE CORPUS IS '
+        'ALREADY CONSISTENT, which is why this is a question and not a defect: it quotes thermodynamics only at the '
+        'substrate horizon where the law carries, and uses the forced member degeneracy structurally rather than '
+        'thermally. What is not said is what the coincidence MEANS -- and it is sharper than a coincidence, since the '
+        'same double root makes the member Nariai, makes the surface gravity vanish, and makes the photon orbit '
+        'Lyapunov exponent vanish, all because 3M = r_h. DISCHARGE: whether the vanishing says the seam carries no '
+        'thermodynamic content, so there is nothing for the reassignment to transport and the construction is cleaner '
+        'than it knew; or whether the reassignment needs something the vanishing denies it, in which case the '
+        'framework owes an account of what crosses. Both are results; the second is worth looking for first.'),
     'PO-31': ('the progenitor spectrum, and what the throat damps under rotation', 1, 1, 6, None,
         'r6510: THE WARPED HARMONIC PROBLEM IS DONE AND THE PROXY WAS TELLING THE TRUTH. r6499 computed '
         'lambda on the rotating family but read it AT THE POLE, warning that the near-horizon sphere is '
@@ -407,13 +422,13 @@ KIND = {'PO-46': 'BUILD', 'PO-10': 'BUILD', 'PO-13': 'BUILD', 'PO-36': 'READ', '
 #   and the generator reported "9 open" while the table showed EIGHT -- the count comes from
 #   the live set and the rows come from here.*  ** Adding a row needs three things: the
 #   register row, the runway, and this list. **  check_frontier_current now checks all three.
-ORDER = ['PO-53', 'PO-52', 'PO-47', 'PO-48', 'PO-49', 'PO-50', 'PO-51', 'PO-45', 'PO-46', 'PO-10', 'PO-13', 'PO-43', 'PO-24', 'PO-36', 'PO-30', 'PO-25', 'PO-26', 'PO-31', 'PO-23', 'PO-15', 'PO-14', 'PO-17', 'PO-18', 'PO-19', 'PO-20']
+ORDER = ['PO-54', 'PO-53', 'PO-52', 'PO-47', 'PO-48', 'PO-49', 'PO-50', 'PO-51', 'PO-45', 'PO-46', 'PO-10', 'PO-13', 'PO-43', 'PO-24', 'PO-36', 'PO-30', 'PO-25', 'PO-26', 'PO-31', 'PO-23', 'PO-15', 'PO-14', 'PO-17', 'PO-18', 'PO-19', 'PO-20']
 GROUP = {'PO-45': 'A', 'PO-46': 'A',  # ⛔ r6549: a FOURTH hardcoded list -- GROUP -- and a row missing here raises.
          'PO-10': 'D', 'PO-13': 'D', 'PO-14': 'A', 'PO-15': 'C', 'PO-16': 'D',
          # ** r3095: the four brought in from p0's frontiers and the field ledgers.  PO-17 and
          # PO-19 are substrate geometry; PO-18 is the constant ledger; PO-20 is analysis. **
          'PO-17': 'E', 'PO-18': 'E', 'PO-19': 'E', 'PO-20': 'E',
-         'PO-53': 'E', 'PO-52': 'C', 'PO-47': 'D', 'PO-48': 'E', 'PO-49': 'E', 'PO-50': 'D', 'PO-51': 'C',
+         'PO-54': 'E', 'PO-53': 'E', 'PO-52': 'C', 'PO-47': 'D', 'PO-48': 'E', 'PO-49': 'E', 'PO-50': 'D', 'PO-51': 'C',
          # ** r6861: the five remainders of struck rows, each opened where its parent closed --
          #   PO-47 and PO-50 are the data-confrontation sector, PO-48 and PO-49 the substrate
          #   and its interiors, PO-51 the quantum tower. **
