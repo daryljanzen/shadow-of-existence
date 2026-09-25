@@ -211,6 +211,17 @@ EST = {
         'whether the admitted family reaches second order in the shear at all on this construction (if not, the entry '
         'has no domain and that closes it); and if it does, whether the broken degeneracy leaves a coefficient '
         'anything observes, which is the cross-register question PO-48 is being worked on.'),
+    'PO-53': ('is the offset family a family of solutions or of sections of one solution', 1, 1, 3, None,
+        'OPENED r6869 as PO-48 remainder, on the standing order; node 60 named it rather than deciding it. PO-48 '
+        'closes because a variation reaches the horizon term at the substrate horizon -- but what varies is an '
+        'OFFSET, and sec:ledger own identification of the mass with that offset makes the family cuts of ONE '
+        'substrate rather than a family of solutions, a re-slicing whose Noether charge the construction returns '
+        'identically zero for. If that reading is the corpus, the variation is void at the substrate horizon too and '
+        'the area law carries nowhere here. It is the difference between the law carrying at one of the two horizons '
+        'and at neither, and it turns on what the corpus means by its own family rather than on a computation -- a '
+        'gate question. DISCHARGE: reading sec:ledger and the operator paper together on whether the offset-labelled '
+        'cuts are solutions or sections, and if sections, saying what the vanishing Noether charge means for the '
+        'temperature, which the corpus does quote.'),
     'PO-31': ('the progenitor spectrum, and what the throat damps under rotation', 1, 1, 6, None,
         'r6510: THE WARPED HARMONIC PROBLEM IS DONE AND THE PROXY WAS TELLING THE TRUTH. r6499 computed '
         'lambda on the rotating family but read it AT THE POLE, warning that the near-horizon sphere is '
@@ -396,13 +407,13 @@ KIND = {'PO-46': 'BUILD', 'PO-10': 'BUILD', 'PO-13': 'BUILD', 'PO-36': 'READ', '
 #   and the generator reported "9 open" while the table showed EIGHT -- the count comes from
 #   the live set and the rows come from here.*  ** Adding a row needs three things: the
 #   register row, the runway, and this list. **  check_frontier_current now checks all three.
-ORDER = ['PO-52', 'PO-47', 'PO-48', 'PO-49', 'PO-50', 'PO-51', 'PO-45', 'PO-46', 'PO-10', 'PO-13', 'PO-43', 'PO-24', 'PO-36', 'PO-30', 'PO-25', 'PO-26', 'PO-31', 'PO-23', 'PO-15', 'PO-14', 'PO-17', 'PO-18', 'PO-19', 'PO-20']
+ORDER = ['PO-53', 'PO-52', 'PO-47', 'PO-48', 'PO-49', 'PO-50', 'PO-51', 'PO-45', 'PO-46', 'PO-10', 'PO-13', 'PO-43', 'PO-24', 'PO-36', 'PO-30', 'PO-25', 'PO-26', 'PO-31', 'PO-23', 'PO-15', 'PO-14', 'PO-17', 'PO-18', 'PO-19', 'PO-20']
 GROUP = {'PO-45': 'A', 'PO-46': 'A',  # ⛔ r6549: a FOURTH hardcoded list -- GROUP -- and a row missing here raises.
          'PO-10': 'D', 'PO-13': 'D', 'PO-14': 'A', 'PO-15': 'C', 'PO-16': 'D',
          # ** r3095: the four brought in from p0's frontiers and the field ledgers.  PO-17 and
          # PO-19 are substrate geometry; PO-18 is the constant ledger; PO-20 is analysis. **
          'PO-17': 'E', 'PO-18': 'E', 'PO-19': 'E', 'PO-20': 'E',
-         'PO-52': 'C', 'PO-47': 'D', 'PO-48': 'E', 'PO-49': 'E', 'PO-50': 'D', 'PO-51': 'C',
+         'PO-53': 'E', 'PO-52': 'C', 'PO-47': 'D', 'PO-48': 'E', 'PO-49': 'E', 'PO-50': 'D', 'PO-51': 'C',
          # ** r6861: the five remainders of struck rows, each opened where its parent closed --
          #   PO-47 and PO-50 are the data-confrontation sector, PO-48 and PO-49 the substrate
          #   and its interiors, PO-51 the quantum tower. **
