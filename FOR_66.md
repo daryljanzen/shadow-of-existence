@@ -1742,3 +1742,85 @@ beam or theory-side term is added**, so this is the sky's statistical uncertaint
 The central value is the locator's on `plik_lite`'s binning — `sec:intro`'s own $1123.9$ sits two
 multipoles away and well inside. And nothing here re-opens the phase intercept, the damping envelope,
 the driving or the refit, all of which your row carries as settled.*
+
+## ⚑ `r6879` — **THE FIGURE IS BUILT, AND THREE QUARTERS OF THE RESIDUAL IS THE CONTROL'S**
+
+*Both halves of the order. `corpus/make_fig_acoustic_two_arm.py` → `corpus/fig_acoustic_two_arm.pdf`;
+`receipts/P15_CR_cosmology/P15_three_quarters_of_the_arms_residual_is_the_controls_and_what_is_left_is_position_not_amplitude.py`
+— rc=0, five parts, **13 gates**. **Every number the figure plots is recomputed in the receipt and
+gated against the banked `.npz` to seven figures, so the two cannot drift.***
+
+⌗ ***I did NOT edit `P15`.*** *The `.tex` is your file. The figure and its generator are banked and the
+include line is `\includegraphics[width=\textwidth]{fig_acoustic_two_arm.pdf}` — yours to place.*
+
+## ⓵ THE DECIDING NUMBER — **$73.1\%$ OF THE ARM'S RESIDUAL LIES ALONG THE CONTROL'S**
+
+| | |
+|---|---|
+| cosine between the whitened residual vectors | $\mathbf{+0.855}$ |
+| fraction of the arm's $\chi^{2}$ along the control's direction | $\mathbf{73.1\%}$ |
+| left once that direction is projected out | $76.2$ of $283.0$ |
+| across bin cuts $100$–$1996$ / $100$–$1500$ / $200$–$1900$ | $73.7\%$ / $72.5\%$ / $73.6\%$ |
+
+⇒ ***On your own criterion that part is the transfer's and not the construction's.***
+
+## ⓶ AND WHAT IS LEFT IS **POSITION, NOT AMPLITUDE AND NOT TILT**
+
+| one further parameter | best | $\Delta\chi^{2}$ on the arm | on the control |
+|---|---|---|---|
+| **peak-position rescale $\varepsilon$** | $-7.5\times10^{-4}$ | $\mathbf{+4.68}$ | $+0.00$ |
+| damping-shape | $+1.7\times10^{-2}$ | $+1.36$ | $+0.30$ |
+| tilt $\delta n_s$ | $-1.3\times10^{-3}$ | $+0.09$ | $+0.00$ |
+
+***Position is the only one of the three that buys anything on the arm and nothing on the control, so
+it is the construction's.*** *The tilt is **exhausted** — the refit already spent it, and
+$\delta n_s=+0.01$ **costs** $+11.2$.*
+
+⚠ ***BUT IT IS SMALL AND I AM NOT GOING TO DRESS IT UP.*** *$\varepsilon$ is $0.8$ multipoles at the
+fourth peak — consistent with the $+2.0$ I measured there last order — and $4.7$ of $283$ is
+**$1.7\%$ of the misfit**. **Amplitude, tilt, damping and position together do not account for the
+shape rejection, and this receipt does not say what does.***
+
+## ⓷ YOUR BAND MEANS WERE ABOUT THREE TIMES THESE, AND HALF OF THAT IS DEMONSTRABLE
+
+| | 1 | 2 | 3 | 4 | 5 | 6 |
+|---|---|---|---|---|---|---|
+| **CR, covariance amplitude** | $-0.61$ | $-0.07$ | $+0.33$ | $\mathbf{+0.54}$ | $\mathbf{-1.06}$ | $-0.36$ |
+| CR, whitened | $-0.63$ | $-0.08$ | $+0.35$ | $+0.55$ | $-0.99$ | $+0.02$ |
+| *CR, diagonal amplitude* | *$-0.34$* | *$+0.31$* | *$+0.79$* | *$+1.08$* | *$-0.51$* | *$+0.19$* |
+| your render | $-0.22$ | $-0.07$ | $+0.42$ | $+1.46$ | $-1.86$ | $-0.06$ |
+| **control, covariance amplitude** | $-0.18$ | $-0.03$ | $+0.16$ | $+0.12$ | $-0.32$ | $-0.04$ |
+
+***The swing's SHAPE reproduces*** — *band 4 high, band 5 low, on both arms — **and its amplitude does
+not**. Fitting the amplitude on **diagonal errors** instead of the covariance puts the arm $0.83\%$
+high and takes band 4 from $+0.54$ to $+1.08$: **the metric accounts for about half the inflation**,
+and the rest is in the render rather than here. Band rms grows $0.78\to1.39$, as you said.*
+
+## ⓸ THE FIGURE, AND TWO CHOICES WORTH YOUR EYE
+
+1. ***Panel (a) is in $\mathcal{D}_\ell$, and that is not presentation.*** *Plotted as the binned
+   $C_\ell$ the likelihood ships, **the peaks vanish under the falling plateau** — I built it that way
+   first and it was unreadable. Same trap the locator hit at `cc66.28`, this time in the figure.*
+2. ***Panel (b)'s floor is a reconstruction and is labelled as one.*** *The sweep carries the floor as
+   a ratio to the flat transfer and there are no absolute low-$\ell$ bandpowers in this tree, so I put
+   it back into $\mathcal{D}_\ell$ against the control's own low-$\ell$ spectrum. **The $\ell=4$
+   minimum is marked.***
+
+⌗ *Whitened residuals are what is plotted, both arms on one axis. **Whitening mixes bins**, so a
+whitened point is drawn at its bin's centre for legibility and that is presentational — the diagonal
+version is banked beside it and both are in the receipt.*
+
+## ⓹ THE CAPTION, AS PART OF THE DELIVERABLE
+
+> *Both arms refitted to Planck `plik_lite` TT on the same bins with the same six-parameter freedom,
+> then carried through the same derived lensing operator and binned identically; the single remaining
+> amplitude is fitted on the full bandpower covariance. **(a)** Linear in $\ell$ across the acoustic
+> range, in $\mathcal{D}_\ell$. **(b)** The same two arms logarithmic from $\ell=2$, so the discrete
+> closed-$S^{3}$ floor sits in the same frame as the peaks; the floor's minimum at $\ell=4$ rather than
+> at the quadrupole is the one shape this construction predicts that the standard model does not. The
+> floor is carried by the sweep as a ratio to the flat transfer and is put back into $\mathcal{D}_\ell$
+> against the control's own low-$\ell$ spectrum, which is a reconstruction and is named as one; the
+> observed low-multipole band is drawn behind it on the same reconstruction. Beneath each, whitened
+> residuals for both arms on one axis. **The control lands at $1.01$ per bin and this arm at $1.58$:
+> the peak positions and the acoustic comb are right and the shape is still rejected, and the lower
+> panels are where that is visible rather than the upper ones.***
