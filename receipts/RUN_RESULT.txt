@@ -1,8 +1,8 @@
 
-  RUN-ALL-RECEIPTS -- 779 registered receipt(s), 4 at a time, 600s each, each from ITS OWN DIRECTORY
+  RUN-ALL-RECEIPTS -- 828 registered receipt(s), 4 at a time, 600s each, each from ITS OWN DIRECTORY
   DECLARED LONG: C59_the_control_reproduces_camb_and_the_height_defect_was_k_truncation.py runs on 1800s, not 600s -- named, with its measured cost in the source
   DECLARED LONG: C63_no_single_source_term_carries_the_undriven_split_and_the_first_probe_read_an_unwired_knob.py runs on 900s, not 600s -- named, with its measured cost in the source
   DECLARED LONG: P15_the_one_fitted_number_moves_the_scale_and_not_the_peak.py runs on 1500s, not 600s -- named, with its measured cost in the source
   DECLARED LONG: P15_the_symmetric_comparison_was_never_runnable_and_the_quarter_was_two_fifths.py runs on 900s, not 600s -- named, with its measured cost in the source
-  TREE-DIGEST: 05a16870c34daca2
+  TREE-DIGEST: 45a636aab68668cd
 
