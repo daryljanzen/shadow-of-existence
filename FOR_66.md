@@ -1304,3 +1304,144 @@ evidence for it and I am not going to manufacture a reason to run it.***
 
 ⌗ *`receipts/P15_CR_cosmology/P15_there_is_no_phase_residual_and_the_fourth_peak_is_not_the_damping_envelope.py`
 — rc=0, five parts, 12 gates.*
+
+## ⚑ `PO-25` — **THE FOUR LINES ARE RIGHT, AND THE OBSTRUCTION IS DESTROYED ANYWAY**
+
+*`r6841` ordered: check the algebra, then attack it, then report the physical reading either way,
+and **not** land it. All three are done. `receipts/P03_SdS_slicing/P03_the_interior_mass_function_is_p_equals_one_along_the_shell_and_the_charge_falls_short_of_the_equality_radius.py`
+— rc=0, nine parts, **28 gates**. Nothing is written into `P03` or the row.*
+
+## ⓵ THE ALGEBRA — **CORRECT, EVERY STEP**
+
+*Not taken on trust: the Misner--Sharp identity is re-derived off the closed-FRW metric with the
+corpus's own $m_{\rm MS}=(R/2)(1-f)$, not quoted.*
+
+| step | verdict |
+|---|---|
+| $2m/R=(\dot a^{2}+1)\sin^{2}\chi$ | ✔ derived, not assumed |
+| $a''+a=A/2$ and its first integral $(a')^{2}+a^{2}=Aa+B$ | ✔ |
+| $\dot a^{2}+1=(Aa+B)/a^{2}$, with $\dot{}=\dd/\dd t$ against $'=\dd/\dd\eta$ | ✔ *the two lines use different derivatives and **both are right in their own*** |
+| $m(R)=\tfrac12A\sin^{3}\chi+\tfrac12B\sin^{4}\chi/R$ | ✔ **exact** |
+| $\Lambda$ enters $m_{\rm MS}$ as $R^{3}/2\alpha^{2}$ | ✔ $O(R^{3})$, cannot compete at the origin |
+
+## ⓶ ⚠ BUT **WHICH $r\to0$?** — THE TWO LIMITS GIVE DIFFERENT EXPONENTS
+
+*The same formula, read two ways:*
+
+- ***Across a constant-time slice*** *($a$ fixed, $\chi\to0$): $m(R)=R^{3}(Aa+B)/2a^{4}$, so $p=-3$ —
+  and the coefficient is exactly $\tfrac{4\pi}{3}\rho$ with $\rho$ the closed-FRW density. **That reading
+  is nothing but centre regularity.***
+- ***Along a comoving shell*** *($\chi$ fixed, $R\to0$): $Rm(R)\to B\sin^{4}\chi/2$, so $p=1$, $2k=B\sin^{4}\chi$.*
+
+⇒ ***Your derivation takes the second, and the second is the right one*** — *there is no static $f$ in a
+dynamical interior to read a spatial profile off, and `PO-25` is asking whether a shell **reaches** $R=0$.
+**But the row's own wording — "the interior mass function at the origin" — points at the first**, which is
+where its $o(1/r)$ came from. That is a wording debt on the row, not an error in the four lines.*
+
+## ⓷ THE ATTACKS — **TWO FAIL, ONE LANDS**
+
+**⌗ (a) DOES THE CHARGE MOVE THE EXPONENT? — NO, and for a better reason than the derivation gives.**
+*The electromagnetic contribution to $m$ is $-Q^{2}/2R$ **identically** (read off $m_{\rm MS}=(R/2)(1-f)$
+on Reissner--Nordström; Gauss's law, no stationarity needed), and the radiation's is $+C/R$ **identically**
+(from $\dot m=-4\pi pR^{2}\dot R$ with $p=\rho/3$ and $\rho\propto R^{-4}$). **Both terms are pinned by
+conservation laws rather than by the background**, which is why the competition is genuinely $R$-free —
+a comparison of two constants and not a limit that could go either way. ⛔ *One thing the line should say:
+a radial field makes the stress anisotropic, so a charged ball is **not** `P16`'s homogeneous interior.
+The conclusion survives because neither conservation law needs homogeneity — but it is then a **per-shell**
+statement, not a statement about "the interior mass function".*
+
+**⌗ (b) A NON-UNIFORM PROFILE OR SHELL CROSSING? — NOT AT LEADING ORDER, and three things are named
+rather than closed.** *The derivation above used only the equations of state, so $A\to2M_d(\chi)$ shell by
+shell and $p=1$ is untouched by a non-uniform **dust** profile. But (i) $\rho_r\propto R^{-4}$ at fixed
+shell is the top-hat's behaviour — in a Lemaître--Tolman interior a comoving fluid redshifts as
+$(R^{2}R')^{-4/3}$ and the radiation exponent moves; (ii) radiation has pressure, so off the top-hat it
+does not stay comoving at all; (iii) **shell crossing is produced by the criterion's own verdict** if
+outer shells bounce while inner ones do not. *None of these breaks $p=1$; all three bound its scope.*
+
+**⌗ (c) IS $\sin\chi$ THE RIGHT MEASURE AT THE CENTRE? — ⛭ THIS ONE LANDS.**
+*Your criterion is $R$-free but it is **not $\chi$-free**, and `PO-25` asks the question at the centre.
+The charge enclosed vanishes **faster** than the radiation term:*
+
+$$Q(\chi)^{2}\big/\big(B\sin^{4}\chi\big)\;=\;\frac{q_c^{2}}{9B}\,\chi^{2}+O(\chi^{4})\;\longrightarrow\;0 .$$
+
+*Verified symbolically and to four decades numerically ($1.81\times10^{-3}\to1.80\times10^{-9}$ from
+$\chi=10^{-1}$ to $10^{-4}$, ratio $10^{-2}$ per decade).* ⇒ ***There is always a critical shell, and the
+core inside it reaches $R=0$ whatever the total charge.***
+
+| $Q_{\rm tot}^{2}/B$ (edge criterion **satisfied**) | $\chi_*$ | unobstructed core, as a fraction of the dust |
+|---|---|---|
+| $2$ | $1.291$ | $0.888$ |
+| $10$ | $0.697$ | $0.264$ |
+| $100$ | $0.234$ | $0.0125$ |
+| $10^{4}$ | $0.0236$ | $1.31\times10^{-5}$ |
+
+⛔ ***So `P03` `sec:charge`'s "at any $Q>0$ the sign at the origin has switched" cannot be right
+dynamically for ANY charge.*** *It is a statement about a stationary $f$ with $M$ constant. **The
+obstruction was never total, and that is the part the row must change whatever else it says.***
+
+## ⓷ᵇ ⌗ AND THE TURNING-POINT STRUCTURE HAS **THREE** REGIMES WHERE THE LINE STATES TWO
+
+*Writing $\beta=B\sin^{4}\chi-Q^{2}$ in $\dot R^{2}=-\sin^{2}\chi+A\sin^{3}\chi/R+\beta/R^{2}$:*
+
+| | roots | what the shell does |
+|---|---|---|
+| $\beta>0$ | one positive | reaches $R=0$ — **no obstruction** |
+| $0<-\beta<A^{2}\sin^{4}\chi/4$ | two positive | bounces at finite $R$ — ***this is the obstruction*** |
+| $-\beta>A^{2}\sin^{4}\chi/4$ | none | $\dot R^{2}<0$ everywhere — **the shell does not exist with that energy at all** |
+
+⌗ *The third is over-extremality and is outside the problem — at the edge the window closes at
+$Q^{2}=B+M^{2}$, and $M^{2}=1.2\times10^{53}$ m$^{2}$ against $B=3.2\times10^{49}$ m$^{2}$, so it needs
+$Q>M$. **But the clean binary is a statement about $\beta$ alone and owes the clause**, and I would
+rather report it than let it turn up later.*
+
+## ⓸ AND **THE DUST DOES NOT DROP OUT** — the criterion is two lengths the corpus already carries
+
+*$Q^{2}>B\sin^{4}\chi$ has no $A$ in it only while $A$ and $B$ are free. **`P16` `sec:interior` determines
+them**: $a_{\rm eq}=A\rho^{2}/4=B/A=1.49$ Mpc. Substituting $B=Aa_{\rm eq}$ and $2M(\chi)=A\sin^{3}\chi$:*
+
+$$Q^{2}>2M(\chi)\,a_{\rm eq}\sin\chi\qquad\Longleftrightarrow\qquad \boxed{\;r_{\rm inner}=\frac{Q^{2}}{2M}\;>\;a_{\rm eq}\sin\chi\;}$$
+
+***The Reissner--Nordström inner-horizon radius against the progenitor's matter--radiation equality
+radius*** — *and $r_{\rm inner}$ is `PO13_WORKING_STATE`'s own quantity, on both of the readings the row
+carries.*
+
+## ⓹ SCORED — **THE OBSTRUCTION IS DESTROYED ON BOTH CHARGE READINGS**
+
+*$a_{\rm eq}=4.598\times10^{22}$ m. Threshold at the edge: $(Q/M)_{\rm crit}=\sqrt{2a_{\rm eq}/M}$.*
+
+| $M$ | $(Q/M)_{\rm crit}$ | reading | $r_{\rm inner}$ | $r_{\rm inner}/a_{\rm eq}$ | shortfall in $Q^{2}$ |
+|---|---|---|---|---|---|
+| $2.33\times10^{23}M_\odot$ | $1.63\times10^{-2}$ | extensive | $2.77\times10^{19}$ m | $6.0\times10^{-4}$ | $\mathbf{1.7\times10^{3}}$ |
+| | | intensive | $2.77\times10^{-99}$ m | $6.0\times10^{-122}$ | $1.7\times10^{121}$ |
+| $4.3\times10^{52}$ kg *(`P16`)* | $5.37\times10^{-2}$ | extensive | $2.99\times10^{20}$ m | $6.5\times10^{-3}$ | $1.5\times10^{2}$ |
+| | | intensive | $2.99\times10^{-98}$ m | $6.5\times10^{-121}$ | $1.5\times10^{120}$ |
+
+*(The $2.8\times10^{19}$ m and $2.8\times10^{-99}$ m the row published at `r3827`/`r3853` are reproduced
+to 5%.)* ⇒ ***Every mass-and-reading pair falls below threshold, so the verdict does not turn on which
+reading is right*** — **`PO-25` decouples from the datum fork exactly as `r6405` did, and this time the
+decoupling ANSWERS the question rather than bounding it.**
+
+## ⓺ THE PHYSICAL READING — **A CONDITION ON THE PROGENITOR, WITH A NUMBER ON IT**
+
+*Your third instruction anticipated this and it is now quantitative. The threshold is a charge-to-mass
+ratio, $(Q/M)_{\rm crit}=1.6\times10^{-2}$: **a progenitor within two orders of extremality would keep the
+obstruction.** The corpus's progenitor is a factor $40$ below it on the most generous charge reading it
+carries. So the row's answer is not a theorem about charged collapse — it is a competition between the
+charge and the shell's radiation content that **nothing in the construction fixes**, which the progenitor
+happens to win, and the row should say exactly that.*
+
+⛔ ***WHAT IS STILL NOT DELIVERED, AND IT IS THE SAME CLAUSE `r6405` LEFT.*** *That the charge term does
+not stop the collapse is **not** that a spacelike $r=0$ forms. And the differential bounce this criterion
+predicts for a supercritical charge makes shell crossings; what the interior does behind the first one is
+a numerical-relativity question this probe does not touch.*
+
+## ⓻ WHAT I WOULD CHANGE, IF YOU LAND ANY OF IT
+
+1. ***The row's $o(1/r)$ needs its limit named*** — *along a comoving shell, not across a slice. Read the
+   other way the answer is the trivial $p=-3$ and the condition is vacuous.*
+2. ***"Obstructed totally at any $Q>0$" is wrong dynamically*** — *it fails on a central core for every
+   charge, by $\chi^{2}$.*
+3. ***"The dust drops out" should go*** — *it drops out only before `P16`'s determination is used, and the
+   useful form of the criterion is $r_{\rm inner}>a_{\rm eq}\sin\chi$.*
+4. ***And the per-shell caveat is worth a clause*** — *a charged ball is not the homogeneous interior, so
+   the statement lives on shells; that costs nothing, since the conclusion never needed homogeneity.*

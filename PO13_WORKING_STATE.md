@@ -3507,3 +3507,64 @@ constant**.*
 ⛔ **③ NOT RUN** — *conditional on a uniform phase offset surviving ①, and none does.*
 
 ⌗ *`receipts/P15_CR_cosmology/P15_there_is_no_phase_residual_and_the_fourth_peak_is_not_the_damping_envelope.py`*
+
+---
+
+# ⚑⚑ r6841+cc66.29 — `PO-25`'S CRITERION IS TWO LENGTHS THE CORPUS ALREADY CARRIES
+
+*`P16` `sec:interior`'s exact closed dust-plus-radiation ball, put through `P03` `sec:charge`'s
+sharpened condition. The algebra is exact and is re-derived rather than quoted; the conclusion it
+points at is not the one the row currently holds.*
+
+**⌗ THE CRITERION, REDUCED.** *Along a comoving shell $Rm(R)\to B\sin^{4}\chi/2$, so $p=1$ and the
+marginal coefficient is $2k=B\sin^{4}\chi$. `P16` determines $a_{\rm eq}=A\rho^{2}/4=B/A=1.49$ Mpc, and
+$2M(\chi)=A\sin^{3}\chi$, so $B\sin^{4}\chi=2M(\chi)a_{\rm eq}\sin\chi$ and*
+
+$$\text{the obstruction survives}\iff r_{\rm inner}=\frac{Q^{2}}{2M}>a_{\rm eq}\sin\chi .$$
+
+| $M$ | $(Q/M)_{\rm crit}=\sqrt{2a_{\rm eq}/M}$ | reading | $r_{\rm inner}$ | $r_{\rm inner}/a_{\rm eq}$ | shortfall in $Q^{2}$ |
+|---|---|---|---|---|---|
+| $2.33\times10^{23}M_\odot$ | $1.63\times10^{-2}$ | extensive | $2.77\times10^{19}$ m | $6.0\times10^{-4}$ | $\mathbf{1.7\times10^{3}}$ |
+| | | intensive | $2.77\times10^{-99}$ m | $6.0\times10^{-122}$ | $1.7\times10^{121}$ |
+| $4.3\times10^{52}$ kg | $5.37\times10^{-2}$ | extensive | $2.99\times10^{20}$ m | $6.5\times10^{-3}$ | $1.5\times10^{2}$ |
+| | | intensive | $2.99\times10^{-98}$ m | $6.5\times10^{-121}$ | $1.5\times10^{120}$ |
+
+⇒ ***Destroyed on every mass-and-reading pair the corpus carries***, *so the verdict does not turn on
+the datum fork. $a_{\rm eq}=4.598\times10^{22}$ m throughout; the $2.8\times10^{19}$ m and
+$2.8\times10^{-99}$ m published at `r3827`/`r3853` are reproduced to $5\%$.*
+
+**⌗ THE TWO LIMITS, WHICH ARE NOT THE SAME QUESTION.**
+
+| limit | $m$ | $p$ | what it is |
+|---|---|---|---|
+| fixed time, $\chi\to0$ | $R^{3}(Aa+B)/2a^{4}$ | $-3$ | centre regularity, coefficient $\tfrac{4\pi}{3}\rho$ |
+| fixed shell, $R\to0$ | $B\sin^{4}\chi/2R$ | $1$ | **the one the criterion needs** |
+
+**⌗ THE CENTRAL DEGENERACY — $Q(\chi)^{2}/(B\sin^{4}\chi)=\tfrac{q_c^{2}}{9B}\chi^{2}+O(\chi^{4})$.**
+
+| $Q_{\rm tot}^{2}/B$ | $\chi_*$ | unobstructed core, fraction of the dust |
+|---|---|---|
+| $2$ | $1.2913$ | $0.888$ |
+| $10$ | $0.6967$ | $0.264$ |
+| $100$ | $0.2339$ | $0.0125$ |
+| $10^{4}$ | $0.02356$ | $1.31\times10^{-5}$ |
+| $10^{8}$ | $2.36\times10^{-4}$ | $1.31\times10^{-11}$ |
+
+*$\chi_*\propto Q_{\rm tot}^{-1/2}$ to four figures, which is the $\chi^{2}$ degeneracy and not a scale
+in the problem.* ⇒ ***The obstruction is never total, for any charge.***
+
+**⌗ THE TURNING POINTS — THREE REGIMES, $\beta=B\sin^{4}\chi-Q^{2}$ in
+$\dot R^{2}=-\sin^{2}\chi+A\sin^{3}\chi/R+\beta/R^{2}$.**
+
+| | roots | the shell |
+|---|---|---|
+| $\beta>0$ | one positive | reaches $R=0$ |
+| $0<-\beta<A^{2}\sin^{4}\chi/4$ | two positive | bounces at finite $R$ — **the obstruction** |
+| $-\beta>A^{2}\sin^{4}\chi/4$ | none | does not exist with that energy (over-extremality, $Q>M$ at the edge) |
+
+⛔ **NOT ESTABLISHED:** *that a spacelike $r=0$ forms — the clause `r6405` left. The charged ball is not
+exactly `P16`'s homogeneous interior (a radial field makes the stress anisotropic), so every statement
+is **per-shell**; $\rho_r\propto R^{-4}$ at fixed shell is the top-hat's behaviour; and a supercritical
+charge's differential bounce makes shell crossings the probe does not follow.*
+
+⌗ *`receipts/P03_SdS_slicing/P03_the_interior_mass_function_is_p_equals_one_along_the_shell_and_the_charge_falls_short_of_the_equality_radius.py`*

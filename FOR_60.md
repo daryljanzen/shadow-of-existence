@@ -340,3 +340,83 @@ on nobody having looked.*
 
 **⌗ SIZING AND A LIMIT ON SCOPE.** *This is a literature pass and an arithmetic comparison, not a survey
 analysis. **Do not fit anything.** If it turns into a fit it has left the row.*
+
+## ⚑ AND THE ONE YOU NAMED WHILE CLOSING `PO-36` — the cluster statistics, if they are doable
+
+*Your own weighting was that the power of the pass is the bound violation and not the agreement, since a single
+kinematic turnaround at $14\%$ leaves a wide two-sigma band. **That is the right reading and it names the work
+that would change it.** Take it if the literature supports it, and say so plainly if it does not.*
+
+**⌗ WHAT WOULD TURN THE CONSISTENCY STATEMENT INTO A MEASUREMENT.** *An ensemble of structures with kinematic
+turnaround radii determined independently of internal dynamics, against dynamical masses determined
+independently of the turnaround --- **both independences being the whole point**, since either one violated
+makes the comparison circular. Report the distribution of $r_{\rm ta}/r_{\rm HE}$ rather than a mean, with the
+bound-to-attained factor carried as you derived it, and the spread of the overdensity convention stated rather
+than chosen.*
+
+**⌗ AND THE STOPPING CONDITION IS THE INTERESTING PART.** *If the samples that exist are too heterogeneous in
+how the turnaround is defined --- and your guard already found three loci where the literature uses one name
+--- **then the answer is that the measurement is not currently available, and that is worth recording as
+sharply as a number would be.** Do not assemble a sample by harmonising definitions yourself; that is a fit
+wearing a literature pass's clothes.*
+
+## ⚑ WORK ORDER — `PO-31`: THE PROGENITOR'S VACUUM LIVES ON AN INTERIOR THE CORPUS SOLVES EXACTLY
+
+*Your r6826 closed three channels and left one: $n_s-1=3-2\sqrt{9/4-m^{2}\alpha^{2}}$, with the measured value
+asking the interior for a slightly negative $m^{2}\alpha^{2}$. **That formula is the substrate's, and the
+fluctuations are not generated on the substrate.** They are generated in the progenitor's interior, and
+`PO-25`'s verification has just established what that interior is: **the closed dust-and-radiation ball,
+solved exactly, with its radiation content determined.***
+
+**⌗ WHY THAT CHANGES THE ROW'S STANDING RATHER THAN ITS WORDING.** *`PO-31` has been carried as awaiting an
+interior that is not built. **The background is built**: $a''+a=A/2$ in conformal time, $a=\tfrac
+A2(1-\cos\eta)+\sqrt B\sin\eta$, dust the even part and radiation the odd, with $B=Aa_{\rm eq}$ fixed by the
+same determination that scored `PO-25`. What is missing is not the background but the mode problem on it.*
+
+**⌗ AND THE MODE PROBLEM IS SET BY THAT SAME EQUATION.** *For a canonically normalised field,
+$v''+(k^{2}-a''/a)v=0$, and here $a''=A/2-a$ exactly, so*
+
+> *$a''/a \;=\; \dfrac{A}{2a}-1$,*
+
+*a potential with no free function in it at all --- **the curvature contributing the $-1$ and the dust the
+$A/2a$, with the radiation entering only through $a(\eta)$.** Near the branch point $a\simeq\sqrt B\,\eta$, so
+$a''/a\simeq A/(2\sqrt B\,\eta)-1$: **a $1/\eta$ potential rather than the $2/\eta^{2}$ of de Sitter**, which
+is a different scaling problem and not a perturbation of one.*
+
+**⌗ WHAT TO COMPUTE, STOPPING AT WHICHEVER ANSWERS.**
+
+1. ***The spectrum of the vacuum handed over***, *from the exact mode functions on that background with the
+   adiabatic vacuum set where the modes are deep inside the horizon. Report $\dd\ln\mathcal{P}/\dd\ln k$, and
+   **say whether it is a tilt or a running by the test you used before** --- a constant log-derivative against
+   one that changes sign across the band.*
+2. ***And the sign.*** *Red or blue is the first thing worth knowing; the measured value is $0.998$, red by
+   two parts in a thousand.*
+3. ***And whether the substrate's formula applies at all.*** *If the interior's potential is $1/\eta$ rather
+   than $1/\eta^{2}$, then $n_s-1=3-2\sqrt{9/4-m^{2}\alpha^{2}}$ may be the wrong template and the
+   negative-$m^{2}$ requirement an artefact of applying it. **Say so if so** --- that would retire a
+   requirement the corpus is currently carrying.*
+
+**⌗ AND THE SAME DISCIPLINE AS BEFORE.** *Nothing tuned to $0.998$; if a step needs a value chosen to reach
+it, report that instead. And if the mode problem needs an initial condition the interior does not supply ---
+**where the vacuum is set, and by what** --- that is the answer and the frontier moves to it rather than
+past it.*
+
+## ⌗ THE CLUSTER PASS IS LANDED (r6847), AND THE CORRECTION IS THE REASON IT IS WORTH HAVING
+
+*The ensemble exists, both independences hold, and **the exclusion in your own previous pass is withdrawn on
+your finding** --- `PO-36`'s row now carries the ratios running $1.20$ to $2.33$ above the spherical bound at
+the dynamical mass, which puts the Milky Way's $1.28$--$1.40$ at baryons only inside the range the dynamical
+mass already produces. Exceeding the bound does not discriminate between the readings. The row stays struck on
+its question and the exclusion does not stand.*
+
+**⌗ AND THE PART YOU CALLED AVOIDABLE IS THE PART WORTH RECORDING.** *You named the virial-for-turnaround
+systematic and drew the opposite consequence from it --- and then said so plainly rather than letting the new
+pass quietly supersede the old. **That is the second time in this arc a seat has corrected its own landed
+result at the place it had marked as strong**, and both times the correction arrived before anyone else
+found it. The guard is four-way now because you kept counting.*
+
+**⌗ NOTHING FURTHER IS ASKED ON `PO-36`.** *The measurement it named is taken, and what would tighten it is a
+sample with turnaround masses rather than virial ones --- which is a different observation and not this row's.*
+
+**⌗ YOUR TWO LIVE ORDERS STAND**: *`PO-31`'s mode problem on the exact interior (r6845), which is the one the
+frontier is waiting on. Take it when this is clear.*
