@@ -739,3 +739,76 @@ settled, and renumbering the symptom does not reach it.**
 content stands. **It is the two attributions that need correcting, and the cause that needs naming.** I have not
 touched `THE_REGISTER`, the baseline note or either `r6855` — the record is yours to amend and this is the
 report, not the amendment.*
+
+## ⚑ `r6864` — `PO-48`: ONE ANSWER PER MEMBER, AND THE REASON §ledger GIVES IS NOT THE ONE THAT WORKS
+
+*The question is **not** ill-posed, and it does not have a single answer. **It has one per member of the family,
+and the two horizons the corpus actually uses fall on opposite sides** — which is why the row has looked
+undecidable. All three of your items answer.*
+
+**⌗ ① SOMETHING DOES VARY, AND IT REACHES THE HORIZON TERM — SO THE "EMPTY FIRST LAW" ROUTE YOU FLOATED IS NOT
+THE ANSWER.** *Your first candidate was that the horizon radius is $\alpha$ and $\alpha$ is the one constant, so
+nothing varies. The geometry says otherwise, and at order one rather than marginally:*
+
+$$\frac{\dd r_c}{\dd M}=\frac{\alpha^{2}r_c}{M\alpha^{2}-r_c^{3}}\;\longrightarrow\;-1,
+\qquad \frac{\dd A_c}{\dd M}=-8\pi\alpha \qquad\text{at }M=0,\;r_c=\alpha$$
+
+*⚠ **But what varies is an offset, and on this construction that is a change of SECTION, not of state.**
+§ledger's own identification is that the mass *is* the offset, $2M=\alpha(u-u^{3})$, with $G$ entering "only as
+the offset-length". **So the family is cuts of ONE substrate, not a family of solutions** — and a variation that
+relabels which cut is read is exactly the class whose Noether charge Wald's construction returns identically
+zero for. ***That, and not the register split, is what can void the first law here — and it is the
+construction's own claim that does it.***
+
+**⌗ ② WALD HAS WHAT IT NEEDS ON THE NON-DEGENERATE MEMBERS AND CANNOT HAVE IT ON THE FORCED ONE.** *Hypotheses
+one at a time, nothing imported:*
+
+| hypothesis | status |
+|---|---|
+| diffeomorphism-invariant Lagrangian | **holds** — the Einstein equations are unchanged here |
+| a Killing horizon | **holds**, with $\kappa$ the background's |
+| $\kappa\neq0$ | ⛔ **fails at Nariai** — exactly zero, $f(r_N)=f'(r_N)=0$ |
+| a bifurcation surface | ⛔ **fails at Nariai** — the double root sends $r_*\sim1/[\Lambda(r-r_N)]$ |
+| a variation within the solution space | ⚠ **open** — it is ①'s re-slicing question |
+
+*And the collapse is a **monotone trend**, not one suspicious point: $\kappa_c = 1.000,\,0.890,\,0.749,\,0.544,\,
+0.319,\,0.151$ along $M/\alpha=0\ldots0.19$, reaching **exactly $0$** at $\sqrt3/9$.*
+
+⇒ *⚑ **At $\kappa=0$ the first law $\delta M=-(\kappa/2\pi)\delta S$ admits NO solution for $\delta S$** — solving
+it returns the empty set. ***It does not give a wrong entropy; it gives none.*** The area law is not falsified
+on the forced member — it is **undetermined** there, which is the sharper statement and is what "nothing plays
+the role its derivation needs" looks like once computed instead of asserted.*
+
+**⌗ AND HERE IS WHY THE ROW LOOKED UNDECIDABLE: THE CORPUS USES TWO DIFFERENT MEMBERS.** *§ledger's horizon —
+the one whose Gibbons–Hawking state supplies $\hbar$, area $4\pi\alpha^{2}$, $T=1/2\pi\alpha$ — is the $M=0$
+**substrate** horizon, where $\kappa=1/\alpha$ and Wald carries. The cosmology's branch point rides the
+**Nariai** member, where $\kappa=0$ and it cannot. **The question has been asked of two objects at once.***
+
+**⌗ ⛔ ③ AND THE REGISTER SPLIT BEARS ON QUOTATION, NOT ON CARRYING — ITS STATED FORM DOES NOT SURVIVE RESTORING
+THE UNITS.** *§ledger's reason for taking $T$ and never $S$ is that $T=1/2\pi\alpha$ is "built from $\alpha$
+alone — one register". **Restore the thermal gauges rather than setting them to one:***
+
+$$T=\frac{\hbar c}{2\pi k_B\alpha}\quad\text{(}\hbar,k_B\text{ AND }c,\alpha\text{)}\qquad
+S=\frac{\pi\alpha^{2}c^{3}}{G\hbar}\quad\text{(}\hbar\text{ AND }c,G,\alpha\text{)}$$
+
+*⚑ ***Both mix the registers.*** "$T$ is built from $\alpha$ alone" is true only in the convention
+$\hbar=k_B=1$ — a choice of units, not a feature of the geometry. The real asymmetry is a different one: **$S$ is
+dimensionless and $T$ is not** — and a pure number is what one can compare without any gauge choice at all,
+which cuts the *opposite* way from a defect.*
+
+⇒ *So whether $S$ **carries** turns on whether a first law with a variation, a charge and a surviving boundary
+term exists; whether the corpus may **quote** $S$ turns on which gauges its expression mixes. ***Those are
+independent, and §ledger leans on the second as though it settled the first.***
+
+  ⌗ ***SO THE ROW GETS A DEFINITE ANSWER EITHER WAY AND BOTH CLOSURES DISCHARGE.*** *The declination is **right
+  about the member the cosmology rides, wrong about the horizon it actually quotes, and its stated reason is
+  insufficient for both.** A sufficient reason exists and it is structural: at Nariai $\kappa=0$ leaves the
+  entropy undetermined; at the substrate horizon the only thing that could void it is the construction's own
+  reading of the offset.*
+
+**⌗ ⚠ AND THE ONE OPEN HINGE, NAMED AND LEFT TO YOU.** *Whether the offset family is a family of **solutions** or
+of **sections of one solution**. §ledger's wording points to the second, which would void the variation at the
+substrate horizon too — **but that is a reading of the construction's intent, not a computation**, so I have
+answered ① as "the variation exists and reaches the horizon, and whether it is a variation of state is the open
+part" rather than as a verdict. *Nothing imported from black-hole thermodynamics as a conclusion: the $A/4$
+value is never assumed, only the existence of a first law is tested.**
