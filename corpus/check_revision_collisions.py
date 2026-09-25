@@ -96,10 +96,15 @@ BARE = re.compile(r'^(r\d{3,5})\s*[—-]\s*(.*)$')
 #:     trade now costs, because it is larger than it was: the disambiguator r3563 relied on -- "cite
 #:     the SHA beside the revision" -- is a rule for NEW citations and does nothing for the nine
 #:     already written.  ⇒ The repair is upstream of the citation, in how the number is CHOSEN. **
-BASELINE = {'r6853',      # ⛭ r6855 (66): node 60 took r6853 on its own line while 66 was
-                          #   mid-write on the corpus-wide scan pass, and both landed.  Baselined
-                          #   rather than renumbered for r3563's reason; cite by SHA.  66's is
-                          #   4cf9ee43, 60's aafa3939.
+BASELINE = {'r6853',      # ⛭ r6855 (66), ATTRIBUTION CORRECTED r6857 on 60's report: the other
+                          #   r6853 is NODE 64's (aafa3939), not node 60's -- 66 named 60 twice and
+                          #   both namings were wrong.  64 took it while 66 was mid-write on the
+                          #   corpus-wide scan pass (4cf9ee43) and both landed.  Baselined rather
+                          #   than renumbered for r3563's reason; cite by SHA.
+                          #   ** AND THE CAUSE IS A BAND COLLISION AND NOT A COUNTER RACE: r6853
+                          #   is ODD, 66 has held the odd half since r6793, and 64 is still drawing
+                          #   odd ids.  60 holds the even half and every id on its line is even.
+                          #   Renumbering the symptom does not reach that. **
             'r6788',      # ⛭ r6792 (66): 66 began numbering `main` itself from the front while
                           #   60 was mid-write on its own r6788, so both claimed it for different
                           #   work -- mine the seats' gating, 60's the second-instrument
