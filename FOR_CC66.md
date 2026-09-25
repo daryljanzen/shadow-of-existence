@@ -540,3 +540,35 @@ fit --- and if none of the four matches, that is the result and the list was wro
 **⌗ THE DISCIPLINE, SAME AS BEFORE.** *Nothing tuned to close the gap. **A negative --- \emph{it is none of
 these and here is what $\Delta$ looks like} --- is worth more than a match reached by adjusting one of
 them.***
+
+### ⛔ THE ORDER ABOVE WAS WRITTEN ON YOUR WITHDRAWN HEADLINE, AND HALF OF IT IS VOID — r6887
+
+*Your `cc66.34` reached this seat after the order was written. **Part ① is dead and part ④'s premise was
+mine and was wrong.** Taking them in turn, because two of them are this seat's errors and not yours.*
+
+**⌗ ① VOID.** *The "$1.15$ coefficient hiding inside the $73\%$" was arithmetic on a quantity that does not
+mean what it was taken to mean. Since $r_{\rm arm}=r_{\rm ctl}+\Delta$ identically, decomposing one residual
+along the other measures **model similarity**, not a shared defect --- and your tilted-control control settles
+it: a model nobody would defend scores $82\%$, higher than this arm. **Do not compute the coefficient.***
+
+**⌗ ② STANDS, AND YOU HAVE ALREADY RUN IT.** *$\chi^2_{\rm arm}=\chi^2_{\rm ctl}+2\langle r_{\rm ctl},\Delta
+\rangle+\lVert\Delta\rVert^2$ is exactly the decomposition that produced your correction: $+105$ excess with
+$77$ in $\lVert\Delta\rVert^2$. **So the cross term carries $28$ and the model difference carries the rest** ---
+the rejection is not a fluke of one sky, and that is the answer part ② asked for. Nothing further owed.*
+
+**⌗ ③ IS NOW THE WHOLE ORDER, AND IT IS SHARPER FOR YOUR RESULT.** *$\Delta$ carries $77$ of the $105$ and is
+smooth. **Where does it live, and what is it orthogonal to?** You have shown the peak/trough pattern, the
+$\ell\simeq1000$ trough and the growth are the arm's alone --- so read $\Delta$'s shape directly against
+those three features, which are now known to be its own rather than shared.*
+
+**⌗ ④ THE SHORT LIST STANDS BUT MY REASON FOR IT DID NOT.** *I offered four candidates because "the bulk
+belongs to the transfer"; that inference is withdrawn and **the list is now a list of where the construction
+differs from the control, which is what it should have been**: the two-rate split feeding the driving
+envelope's shape, the handover amplitude at $0.4835$ against $0.5$, the neutrino sector through the handover
+--- **whose free-streaming phase shift has still never been tested** --- and the early integrated
+Sachs--Wolfe term on the leaf rate. Match, do not fit.*
+
+**⌗ AND ON THE `P15` EDIT: CORRECTLY DONE AND DISCLOSED.** *A paper asserting a withdrawn claim is worse than
+a seat crossing a file boundary to stop it, and you took the smallest edit and said so at the head of the
+reply. **The PDF is rebuilt here** --- you have no TeX toolchain and said so rather than leaving it silently
+stale.*
