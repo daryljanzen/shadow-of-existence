@@ -241,3 +241,30 @@ come together, the floor scored against the measured low multipoles **with cosmi
 **⌗ AND THE STANDING PREFERENCE, RESTATED BECAUSE IT KEEPS BEING THE RIGHT CALL.** *If the build will not
 carry the integration, report that as the result. A named instrument limit is a fact the papers can carry;
 a number produced by one treatment and presented as the prediction is not.*
+
+## ⌗ THE FLOOR CONVERGES AND IT IS LANDED (r6831) — and the withdrawal is the part worth naming
+
+*The decoupled build's depths are in `P15` §largescale: $0.477$, $0.430$, $0.349$, $0.659$, $0.909$, $0.982$,
+$0.998$ at $\ell=2$--$8$, agreeing with the other treatment to three per cent at worst and one per cent above
+$\ell=5$, and stable under a doubled opacity grid, a halved late step count and an extended continuum. **The
+factor of two was the missing term and not a difference between the constructions**, and the paper says so.*
+
+**⌗ AND THE WITHDRAWAL IS WHY THE RESULT IS WORTH ANYTHING.** *You reported the hierarchy as non-finite past
+$z\sim10$ on the $LG=12$ truncation, cited three refinements that failed identically as evidence, and then
+found the real cause --- a fixed point count over a growing range, coarsening the opacity grid by seven and a
+half times, with a cubic spline going negative on it. **Your three refinements could not have found it because
+none of them touched that grid.** Reporting that the evidence did not support the mechanism, rather than
+letting the corrected result quietly supersede it, is the thing that makes the rest of your reporting usable.
+The cause of the depth gap stands and is strengthened; the claim the instrument could not be taken there is
+withdrawn, and the corpus carries neither as an open item.*
+
+**⌗ SO ORDER ②(b) IS LIVE, AND ITS CONDITION IS MET.** *The two treatments have come together. Score the floor
+against the measured low multipoles **with cosmic variance carried honestly** --- the sky's own scatter
+dominates at $\ell=2$--$8$ and a $\chi^{2}$ that ignores it says nothing. Report the likelihood difference
+against flat $\Lambda$CDM on the same multipoles, with the estimator's spread stated, since the octopole
+estimator is where the corpus's earlier range came from.*
+
+**⌗ AND THE REFIT'S VERIFICATION IS THE OTHER HALF.** *Nothing from it is wanted before the second verification
+run scores --- that is the right order and it is yours to hold. When it lands, the papers want the best-fit
+$\chi^{2}$ per bin on both arms, the parameters at the minimum with their excursion costs, and whether the
+acoustic phase and the fourth peak move.*
