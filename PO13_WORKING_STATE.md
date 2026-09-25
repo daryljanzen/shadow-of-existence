@@ -3633,3 +3633,73 @@ ultraviolet definition; the anomaly step is a reading of the corpus's index obst
 here; the declined $S=A/4$ question untouched; the floor-as-subtraction-point candidate not built.*
 
 ⌗ *`receipts/P10_canonical_time/P10_the_thermal_condition_is_helicity_blind_at_the_mode_functions_and_the_parity_odd_entry_is_not_owed.py`*
+
+---
+
+# ⚑⚑ r6863+cc66.31 — `PO-51`: THE FLOOR IS FORCED AS A MODE, NOT AS A SUBTRACTION POINT
+
+*The free transverse-traceless tower of `P10` `sec:lock`: $d(m)=2(m^{2}-4)$, $\mu(m)=\sqrt{m^{2}-3}$,
+$m=n+1\ge3$. Nothing below uses the coupled tower — `PO-23` is fenced and is not reached.*
+
+**⌗ THE FLOOR, FORCED.**
+
+| | $m=2$ | $m=3$ (the floor) | $m=4$ |
+|---|---|---|---|
+| $j_R=(m-3)/2$ | $-1/2$ — no representation | $\mathbf{0}$ | $1/2$ |
+| $d(m)=2(m^{2}-4)$ | $0$ | $\mathbf{10}$ | $24$ |
+| $\mu(m)$ | — | $\mathbf{\sqrt6=2.449490}$ | $3.605551$ |
+
+*Gapped, no zero mode, no soft region.* ⇒ *the infrared is regulated by the geometry.*
+**CONTROL:** *a floor at $10^{-6}$ gives an infrared-weighted sum of $1.0\times10^{12}$ against this
+tower's $0.122$.*
+
+**⌗ THE LOG, AS AN ANALYTIC STRUCTURE.** *$d\mu=2m^{3}-11m+\tfrac{39}{4m}+\tfrac{45}{8m^{3}}+\cdots$;
+$Z(s)=\sum_{m\ge3}d(m)\mu(m)m^{-s}$:*
+
+| pole | measured residue | exact |
+|---|---|---|
+| $s=4$ | $1.9999737$ | $2$ |
+| $s=2$ | $-10.999952$ | $-11$ |
+| $\mathbf{s=0}$ | $\mathbf{9.750007418}$ | $\mathbf{39/4}$ |
+
+⇒ *a pole at $s=0$ is scheme-independent, so no regularisation returns a unique finite part.*
+
+**⌗ THE SUBTRACTION POINT MOVES THE CONSTANT AND NOT THE COEFFICIENT.**
+
+| cut $M_1/M_2$ | $L$ (identical at $m_0=3,5,10,50$) | spread across $m_0$ | $\lvert L-39/4\rvert$ |
+|---|---|---|---|
+| $400/800$ | $9.7500189817039$ | $2.56\times10^{-30}$ | $1.90\times10^{-5}$ |
+| $4000/8000$ | $9.7500001901607$ | $2.33\times10^{-26}$ | $1.90\times10^{-7}$ |
+| $40000/80000$ | $9.7500000019020$ | $4.96\times10^{-22}$ | $1.90\times10^{-9}$ |
+
+*The $m_0$-spread is the summation's own rounding, $25$ orders below the truncation error.*
+**CONTROL:** *a mass shift $\mu^{2}\to m^{2}-3+\delta$ MOVES $L$ — $\delta=1\Rightarrow7$,
+$\delta=3\Rightarrow0$ — so the invariance is a fact and not a tautology.*
+**CONTROL:** *at $\mu^{2}=m^{2}$ the product is the polynomial $2m^{3}-8m$, $L=0$, and the $1/m$ term
+does not exist — no pole, no subtraction point, no question.*
+
+**⌗ THE FINITE PART, AND WHAT IT COSTS TO MOVE IT.**
+
+| subtraction at | constant |
+|---|---|
+| $m_0=3$ (**the floor**) | $\mathbf{-8.51485690643\ldots}$ |
+| $m_0=5$ | $C+4.980549831718$ |
+| $m_0=10$ | $C+11.73873484218$ |
+| $m_0=50$ | $C+27.43075448841$ |
+
+*Shift $=\tfrac{39}{4}\ln(m_0'/m_0)$ exactly, verified to $10^{-12}$ against the direct sum.*
+
+**⌗ WHY NOTHING MEASURES IT.** *Derived here rather than quoted: the closed synchronous slicing
+$a(T)=\alpha\cosh(T/\alpha)$ has $R=12/\alpha^{2}$, **constant** — exactly de Sitter — so `sec:lock`'s
+one-dimensional counterterm basis holds on the tower's own background, the log's counterterm is
+degenerate with the cosmological term, and `P17` absorbs a constant vacuum energy into the one observed
+curvature with no bare-versus-vacuum split.*
+
+⇒ ***FORCED AS A MODE, CONVENIENT AS A SUBTRACTION POINT.*** *The one-scale claim rules out a second
+LENGTH and a mode number is dimensionless, so it protects every choice equally.*
+
+⛔ **BOUND:** *not that the one-scale claim fails — the opposite for the part that matters; nothing
+about `PO-23`'s ultraviolet definition; the Weyl-squared entry off the admitted family is named and not
+claimed; $39/4$ is not discharged (`r6436` stands).*
+
+⌗ *`receipts/P10_canonical_time/P10_the_floor_is_forced_as_a_mode_but_the_subtraction_point_is_a_convention_and_the_residue_is_the_absorbed_constant.py`*
