@@ -248,7 +248,15 @@ EST = {
         ' invariant it multiplies was corrected: C^2 = 2 sum (sigma + H sigma)^2, two more derivatives than the 4 sigm '
         'a^2 P10 stated, so it grows as omega^2 sigma^2 for a mode. BOTH replacement questions are answered: the connec '
         'ted-isometry one by PO-44s strike, and the topological-terms one at r6471 -- the ledger does not count them,  '
-        'its statement being the geometric gauges and the closing of the one extension freedom.  r6849 (66) ANSWERS QUESTION (ii) FROM P17's OWN TEXT: the audit does not range over a topological term's finite part and should not. sec:ledger partitions the constants two ways -- the real-geometric gauges c, Lambda, G, each a nameable feature of the substrate and its cuts, and the thermal hbar, k_B whose CR content is the closing of the ONE quantum freedom, the self-adjoint extension. A topological coefficient is neither: it names no feature of the substrate (a topological term contributes no field equation) and it is not the extension. The ledger counts what the construction must supply to fix the geometry and close that freedom, so counting a constant whose only observable is an entropy shift would be counting a different kind of thing under the same name -- the defect r6437 made and r6471 retracted, in the other direction. WHAT REMAINS is one unrun check and one declined question, neither of which is the row's title: whether Hartle-Hawking regularity imposed fibre by fibre populates the two helicity towers alike, in which case the parity-odd content cancels and the entry is not owed at all; and whether S = A/4 carries to a cosmological horizon, which P17 declines in terms. The row cannot close above the check, and the check is routed to the code seat.'
+        'its statement being the geometric gauges and the closing of the one extension freedom.  r6849 (66) ANSWERS QUESTION (ii) FROM P17 OWN TEXT: sec:ledger partitions the constants two ways -- the real-geometric gauges c, '
+        'Lambda, G, each a nameable feature of the substrate and its cuts, and the thermal hbar, k_B whose CR content '
+        'is the closing of the ONE quantum freedom, the self-adjoint extension. A topological coefficient is neither: '
+        'it names no feature of the substrate and it is not the extension, so counting it would be counting a '
+        'different kind of thing under the same name. WHAT REMAINS is one unrun check and one declined question, '
+        'neither of which is the row title: whether Hartle-Hawking regularity imposed fibre by fibre populates the two '
+        'helicity towers alike, in which case the parity-odd content cancels and the entry is not owed at all; and '
+        'whether S = A/4 carries to a cosmological horizon, which P17 declines in terms. The row cannot close above '
+        'the check, and the check is routed to the code seat.'
 ),
     'PO-23': ('the mode sums beyond the free static case', 1, 1, 5, None,
         'r4537/r6411/r6453: the free case is EXACT -- zeta(0) = 10 by a terminating expansion, log coefficient 39/4 as  '
