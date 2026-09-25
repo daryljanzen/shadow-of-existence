@@ -268,3 +268,44 @@ estimator is where the corpus's earlier range came from.*
 run scores --- that is the right order and it is yours to hold. When it lands, the papers want the best-fit
 $\chi^{2}$ per bin on both arms, the parameters at the minimum with their excursion costs, and whether the
 acoustic phase and the fourth peak move.*
+
+## ⚑ WORK ORDER — THE TWO SURVIVING RESIDUALS, AND A READING OF THEM TO KILL OR KEEP
+
+*The acoustic sector is otherwise closed, and every residual in it so far has turned out to be a locus, a
+clock or a convention rather than noise. **These two are what is left**: a phase offset of about three per
+cent and a fourth peak about one per cent high, both surviving the refit, both reproducing on two
+instruments. Nobody has asked what in the construction produces them.*
+
+**⌗ FIRST, A READING THAT MAY DISSOLVE ONE OF THEM, AND IT IS CHEAP TO TEST.** *Taking the reported peaks
+against the sky --- $222$, $538$, $818$, $1134$ against $220.4$, $537.7$, $817.3$, $1123.9$ --- the offsets
+are $+1.6$, $+0.3$, $+0.7$ and $+10.1$. **The first three are inside the reported grid's own quantisation and
+the fourth is not.** The peak-to-peak spacings say the same thing: $316$, $280$, $316$ against the sky's
+$317.3$, $279.6$, $306.6$, so the first two spacings agree and the third does not. **If that survives a
+refined locator, then there is no phase residual at all --- there is one displaced fourth peak, and the comb
+fit is spreading it across the other three.***
+
+**⌗ SO THE DIAGNOSTIC IS THE FIRST THING TO RUN.** *Refined per-peak positions on both arms with the locator
+you validated against the banked fine-grid spectrum, then the comb fitted two ways: **on peaks one to three,
+and on all four.** Report $\ell_A$ and $\varphi/\pi$ for each, against the sky fitted the same two ways. If
+$\varphi$ on the first three lands within the sky's own uncertainty and only the four-peak fit carries the
+offset, **the phase residual is an artefact of the fit and the paper should say so.***
+
+**⌗ SECOND, THE LEADING CANDIDATE FOR THE FOURTH PEAK, WHICH IS PHYSICAL AND MEASURABLE.** *A peak's apparent
+position is the product of the oscillation with a steeply falling damping envelope, so **the envelope skews
+each peak inward and skews the higher ones more.** This arm's damping ratio differs from the control's by
+about one per cent at the settled endpoint, which is exactly the kind of difference that would displace the
+fourth peak while leaving the first three alone. **Test it directly**: recompute this arm's peaks with the
+damping envelope forced to the control's, everything else unchanged, and report the four positions. If the
+fourth peak's excess collapses, the residual is the damping scale's and belongs beside the signature rather
+than on its own.*
+
+**⌗ THIRD, AND ONLY IF A UNIFORM PHASE OFFSET SURVIVES THE FIRST TEST.** *The standard model's peak positions
+carry a phase shift from free-streaming neutrinos, which is nearly constant across the acoustic band.
+**Report what this arm's handover does with the neutrino sector**: whether the anisotropic stress arrives with
+its own history or is reset with everything else at the branch point. A handover that hands over the photon
+and the potential but resets the free-streaming stress would produce a constant phase error of about the size
+in question, and it would be a real defect in the state specification rather than in the physics.*
+
+**⌗ ORDER AND STOPPING RULE.** *Run the first; if it dissolves the phase, run the second and stop. Report the
+first's numbers whatever they say --- **a residual that turns out to be a fitting artefact is as useful as one
+that turns out to be physics**, and the papers currently carry it as physics.*
