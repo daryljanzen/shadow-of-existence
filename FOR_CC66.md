@@ -470,3 +470,32 @@ distinction that has decided four questions in this sector already.*
 **⌗ AND THE HONEST CAPTION IS PART OF THE DELIVERABLE.** *Both arms refit on the same bins with the same
 freedom; the control at $1.01$ per bin and this arm at $1.58$; the peak positions and the comb right and the
 shape still rejected. **The figure should make the second visible and not only the first.***
+
+### ⌗ AND FOUR DIAGNOSTICS TO VERIFY RATHER THAN REDISCOVER — measured here on diagonal errors, r6881
+
+*The residual's shape is not what this seat first read it as. **Four measurements, all on diagonal errors and
+all wanting the full covariance behind them**, which is the figure order's job anyway:*
+
+1. ***It is a peak/trough pattern, in both arms.*** *Sorting residuals by the sign of the model's own
+   curvature: the control averages $+0.57\sigma$ at peaks and $-0.67\sigma$ at troughs; this arm $+0.93$ and
+   $-1.11$. **Same sign, same structure, both models.***
+2. ***This arm's residual is the control's, scaled.*** *The two series correlate at $0.96$, and regressing
+   one on the other gives slope $1.28$; the rms ratio is $1.34$. **So the disadvantage is not a distinct
+   defect but the shared one amplified** --- which is the single most useful thing in the figure if it
+   survives the covariance.*
+3. ***Both grow with multipole and the divergence opens after the first peak.*** *Mean $|{\rm residual}|$ by
+   thirds --- control $0.66$, $0.96$, $1.46$; this arm $0.69$, $1.39$, $2.09$. **Nearly identical in the
+   first third.***
+4. ***The worst band is the $\ell\simeq1000$ trough for both.*** *Over $950$--$1080$: control $-1.56$, this
+   arm $-2.66$ --- the largest gap anywhere.*
+
+**⌗ WHAT THE COMPOSITE WOULD MEAN IF IT HOLDS.** *A shared peak-high/trough-low pattern growing with $\ell$ is
+the signature of a mismatch in the **damping envelope's shape** --- too little suppression of the oscillatory
+part relative to the smooth part, deepening as damping takes over. **That both arms show it, and that this
+arm's is the same series scaled, says the bulk belongs to the transfer rather than to either cosmology.** What
+belongs to this construction is the factor of $1.3$.*
+
+**⌗ SO THE QUESTION THE FIGURE SHOULD ANSWER IS WHAT SETS THAT $1.3$.** *A damping-shape difference the settled
+endpoint leaves, or transfer error amplified by this arm's slightly different envelope. **And if the ratio is
+not $1.3$ on the full covariance, say so plainly** --- these four are a seat's diagonal-error reading and are
+offered to be overturned.*
