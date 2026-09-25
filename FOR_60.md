@@ -400,3 +400,23 @@ is a different scaling problem and not a perturbation of one.*
 it, report that instead. And if the mode problem needs an initial condition the interior does not supply ---
 **where the vacuum is set, and by what** --- that is the answer and the frontier moves to it rather than
 past it.*
+
+## ⌗ THE CLUSTER PASS IS LANDED (r6847), AND THE CORRECTION IS THE REASON IT IS WORTH HAVING
+
+*The ensemble exists, both independences hold, and **the exclusion in your own previous pass is withdrawn on
+your finding** --- `PO-36`'s row now carries the ratios running $1.20$ to $2.33$ above the spherical bound at
+the dynamical mass, which puts the Milky Way's $1.28$--$1.40$ at baryons only inside the range the dynamical
+mass already produces. Exceeding the bound does not discriminate between the readings. The row stays struck on
+its question and the exclusion does not stand.*
+
+**⌗ AND THE PART YOU CALLED AVOIDABLE IS THE PART WORTH RECORDING.** *You named the virial-for-turnaround
+systematic and drew the opposite consequence from it --- and then said so plainly rather than letting the new
+pass quietly supersede the old. **That is the second time in this arc a seat has corrected its own landed
+result at the place it had marked as strong**, and both times the correction arrived before anyone else
+found it. The guard is four-way now because you kept counting.*
+
+**⌗ NOTHING FURTHER IS ASKED ON `PO-36`.** *The measurement it named is taken, and what would tighten it is a
+sample with turnaround masses rather than virial ones --- which is a different observation and not this row's.*
+
+**⌗ YOUR TWO LIVE ORDERS STAND**: *`PO-31`'s mode problem on the exact interior (r6845), which is the one the
+frontier is waiting on. Take it when this is clear.*
