@@ -3422,3 +3422,53 @@ implied $5042$ Mpc against the formula's $5065$; re-run separately it reproduces
 to $2\%$, so the $4.8\%$ that correction costs is measured.*
 
 ⌗ *`receipts/P15_CR_cosmology/P15_the_low_multipole_floor_moves_with_no_background_and_the_factor_two_is_the_late_isw.py`*
+
+---
+
+# ⚑⚑ r6825+cc66.25/.26 — THE 185-BIN REFIT, THE FLOOR CLOSED, AND TWO WITHDRAWALS
+
+## ⛔ THE WITHDRAWALS, FIRST
+
+1. **`cc66.22`: the blocker past $z\simeq10$ is NOT the $L_G=12$ truncation.** *It is the opacity
+   grid: `_ea = linspace(eg[1], eta_end, 20000)` is a fixed point count over a growing range, so
+   raising the cut coarsens $\tau'$ by $7.5\times$, the cubic spline overshoots negative, and
+   $1/\tau'$ overflows in the tight-coupling viscosity. **With the resolution held fixed the
+   undecoupled hierarchy runs to $a=1$ finite.** The three refinements I offered as evidence were
+   `NS3` and `HKCAP` — neither touches the grid I was blaming.*
+2. **`cc66.18`: the acoustic phase of $4.5\%$ is quantisation.** *Read with `argrelextrema` on the
+   `LSTEP=8` grid, so peaks were quantised to $8$ in $\ell$. **The control returns the same
+   $4.5\%$.** Refined (validated against `LSTEP=1` first: raw locator errs $3.1$ in $\ell$,
+   refinement $0.13$): the arm is at $3.4\%$ on $185$ bins, $3.1\%$ on $132$, against the control's
+   $1.6\%$.*
+
+## ⓵ THE 185-BIN REFIT — VERIFIED
+
+| arm | $H_0$ | $\Omega_m$ | $\omega_b$ | $n_s$ | $\chi^2$ predicted | measured | /bin |
+|---|---|---|---|---|---|---|---|
+| control | $67.4103$ | $0.3098$ | $0.02197$ | $0.9542$ | $185.1$ | $186.5$ | $1.01$ |
+| CR, crossing | $68.5811$ | $0.2972$ | $0.02152$ | $0.9980$ | $292.5$ | $292.4$ | $1.58$ |
+
+⇒ **$H_0$ moves $0.028\%$, $\Omega_m$ $0.031\%$** *(against $0.011\%$ and $0.20\%$ on $132$ bins —
+$\Omega_m$ six times tighter, $H_0$ twice as loose, both inside a thirtieth of a per cent).*
+**Ratio at the verified minimum $1.57\times$**, against $2.56\times$ as-computed. *Flatness
+(control/CR): $1774$/$2527$, $473$/$740$, $98$/$141$, $32$/$31$ — all constrained, every one costing
+more than on $132$ bins.*
+
+## ⓶ THE LOW-MULTIPOLE FLOOR — THE GAP CLOSES
+
+| $\ell$ | 2 | 3 | 4 | 5 | 6 | 7 | 8 |
+|---|---|---|---|---|---|---|---|
+| arm A (CAMB), adjudicated | $0.4874$ | $0.4348$ | $0.3590$ | $0.6663$ | $0.9113$ | $0.9831$ | $0.9981$ |
+| arm B decoupled, adjudicated | $0.4774$ | $0.4300$ | $0.3485$ | $0.6587$ | $0.9091$ | $0.9820$ | $0.9975$ |
+| A/B | $1.021$ | $1.011$ | $1.030$ | $1.012$ | $1.002$ | $1.001$ | $1.001$ |
+
+⇒ ***$3\%$ where the corpus carries $2.02\times$.*** **And the factor of two was TWO defects
+opposing**: a line-of-sight cut at $z=53.5$ (no late ISW, biasing down) and a continuum truncated at
+$0.5\,k_2$ (biasing up). *Fixing the continuum alone widens the gap to $4.02\times$.*
+
+**(b), now that its condition is met:** $\Delta(-2\ln L) = +1.58$ central ($+0.22$ to $+3.40$ across
+the octopole estimators), against the landed $+1.80$. ***The verdict does not move — the sector is
+settled as a wash rather than left as one.***
+
+⌗ *`receipts/P15_CR_cosmology/P15_the_full_range_refit_holds_the_background_and_the_phase_residual_was_quantised.py`
+and `.../P15_the_low_multipole_depth_gap_closes_and_two_defects_were_cancelling.py`*

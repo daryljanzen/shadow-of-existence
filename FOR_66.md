@@ -1014,3 +1014,125 @@ and a flatness test per parameter, as on the $132$-bin run.*
 first whether the integration runs past $z\simeq10$ at all, then the depths if it does, and the
 confrontation only if the two treatments come together. **And if the build will not carry the
 integration, that is the result and it is what you will get.***
+
+---
+
+# ⚑⚑ BOTH ORDERS OF `r6825` ARE IN — **AND TWO NUMBERS THIS SEAT LANDED ARE WITHDRAWN. READ THE
+# WITHDRAWALS FIRST, BECAUSE YOU HAVE ALREADY PUT ONE OF THEM IN THE PAPERS.**
+
+*`r6825+cc66.25` and `r6825+cc66.26`.*
+
+## ⛔⛔ ⓵ THE TWO WITHDRAWALS
+
+**① `cc66.22`'s MECHANISM CLAIM IS WRONG.** *I told you the hierarchy goes non-finite past
+$z\simeq10$ because of the $L_G=12$ truncation, and offered three refinements that failed identically
+as the evidence.* **It is the opacity grid.** `_ea = linspace(eg[1], eta_end, 20000)` *is a **fixed
+point count over a growing range**, so raising the cut silently coarsens $\tau'$ by $7.5\times$;
+$\tau'$ spans twelve orders of magnitude there and is splined with a **cubic**, which on a grid that
+coarse overshoots negative, and $1/\tau'$ then overflows inside the tight-coupling viscosity.*
+**With the resolution held fixed the UNDECOUPLED hierarchy runs to $a=1$ and stays finite.** *My
+three refinements were `NS3` and `HKCAP`; neither touches the opacity grid, so neither could have
+found it. I should have varied the thing I was blaming.*
+
+⇒ ***So "the instrument cannot be taken there" is out. The late-ISW CAUSE stands and is
+strengthened.***
+
+**② `cc66.18`'s ACOUSTIC PHASE OF $4.5\%$ IS QUANTISATION.** *It was read with `argrelextrema` on the
+spectrum's own `LSTEP=8` grid, so every peak was quantised to $8$ in $\ell$ — and the residual it
+feeds is a few per cent.* **The tell was there and I did not look: the CONTROL returns the same
+$4.5\%$.** *A number that cannot tell the arms apart was reported as an arm property.*
+
+*Refined sub-grid — with the refinement **validated first** against the banked `LSTEP=1` spectrum,
+where the raw locator errs by $3.1$ in $\ell$ and the refinement by $0.13$:*
+
+| | phase % out | fourth peak % |
+|---|---|---|
+| control, 185-bin | $1.6$ | $0.5$ |
+| **CR crossing, 185-bin** | $\mathbf{3.4}$ | $0.6$ |
+| CR crossing, 132-bin (what `cc66.18` scored) | $3.1$ | $0.7$ |
+
+⇒ **Your verdict survives on different numbers: freedom does not close the phase, and the arm carries
+about twice the control's residual — but the control carries $1.6\%$ of it, which the landed text
+does not say.** *`P15`'s "$2.3\%\to4.5\%$, WORSE" needs replacing.*
+
+## ⓶ ORDER ① — **THE 185-BIN REFIT. THE BACKGROUND STAYS PINNED WITH THE TAIL IN.**
+
+*Grid complete $18/18$ at 23:09 UTC; $2547$ $k$-modes per run against the $132$-bin grid's $1656$.*
+
+| arm | $H_0$ | $\Omega_m$ | $\omega_b$ | $n_s$ | $\chi^2$ | /bin |
+|---|---|---|---|---|---|---|
+| control | $67.4103$ | $0.3098$ | $0.02197$ | $0.9542$ | $185.1$ | $1.00$ |
+| **CR, crossing** | $\mathbf{68.5811}$ | $\mathbf{0.2972}$ | $0.02152$ | $0.9980$ | $292.5$ | $1.58$ |
+
+**⌗ VERIFIED BY REAL RUNS**: *predicted $185.1$ and $292.5$, measured $\mathbf{186.5}$ and
+$\mathbf{292.4}$ — $+1.4$ and $-0.1$. **That is the licence to quote the parameters.***
+
+⇒ **$H_0$ moves $0.028\%$ and $\Omega_m$ $0.031\%$**, against $0.011\%$ and $0.20\%$ on $132$ bins.
+***So $\Omega_m$ is held SIX TIMES TIGHTER and $H_0$ TWICE AS LOOSELY — not uniformly tighter, and I
+am not going to write it as though it were.*** *Both are inside a thirtieth of a per cent: the
+background the distances fix is not prised off by a spectrum that now sees the tail.* **And the
+tail's leverage lands exactly where the $132$-bin receipt predicted — on $\omega_b$ ($-3.9\%$) and
+$n_s$ ($+3.4\%$), both moving further than before.**
+
+*Flatness — the cheaper of the two one-step excursions, control / CR: $\Delta\chi^2$ of
+$1774$/$2527$ ($H_0$), $473$/$740$ ($\Omega_m$), $98$/$141$ ($\omega_b$), $32$/$31$ ($n_s$).
+**All four constrained on both arms, and every one of them costs more than on $132$ bins** — which is
+what having the tail in the fit buys.*
+**Ratio at the verified minimum $1.57\times$** *against $2.56\times$ as-computed on the same bins.*
+
+## ⓷ ORDER ② — **THE BUILD WORKS AND THE FACTOR OF TWO IS GONE**
+
+*Adjudicated background, both arms given one $r_0$, the continuum reaching $0.1\,k_2$:*
+
+| $\ell$ | 2 | 3 | 4 | 5 | 6 | 7 | 8 |
+|---|---|---|---|---|---|---|---|
+| arm A (CAMB exact $\Delta_\ell$) | $0.4874$ | $0.4348$ | $0.3590$ | $0.6663$ | $0.9113$ | $0.9831$ | $0.9981$ |
+| arm B, **decoupled** (every mode to $a=1$) | $0.4774$ | $0.4300$ | $0.3485$ | $0.6587$ | $0.9091$ | $0.9820$ | $0.9975$ |
+| **A/B** | $1.021$ | $1.011$ | $\mathbf{1.030}$ | $1.012$ | $1.002$ | $1.001$ | $1.001$ |
+
+⇒ **THEY AGREE TO $3\%$ WHERE THE PAPER CARRIES $2.02\times$.** *And the module's own per-mode freeze
+gives the same answer to $4\%$, so neither the freeze nor the towers are doing the work.*
+
+**⌗ AND THE FACTOR OF TWO WAS TWO DEFECTS THAT WERE PARTLY CANCELLING — which is why a wrong number
+looked like a plausible one.**
+
+| | $\ell=2$ | $\ell=3$ | $\ell=4$ | $\ell=5$ | worst A/B |
+|---|---|---|---|---|---|
+| both defects present (the banked arm B) | $0.4974$ | $0.2326$ | $0.1933$ | $0.6186$ | $1.84\times$ |
+| **continuum fixed ONLY** | $0.1175$ | $0.1448$ | $0.1723$ | $0.6069$ | $\mathbf{4.02\times}$ |
+| both fixed | $0.4570$ | $0.4050$ | $0.3350$ | $0.6629$ | $1.06\times$ |
+
+*The truncated continuum biased the ratio **up**; the missing late ISW biased it **down**. Fixing one
+makes it worse.*
+
+## ⓸ AND (b), WHICH ITS CONDITION NOW ALLOWS
+
+*Exact scaled $\chi^2_{2\ell+1}$ likelihood — the baseline cancels in the CR/$\Lambda$CDM ratio, so
+**the $2\ell+1$ IS the sky's scatter rather than an add-on**.*
+
+| table | $\ell=2$ | $\ell=3$ | $\ell=4$ | $\ell=5$ | total | WMAP oct | Efst oct |
+|---|---|---|---|---|---|---|---|
+| arm A, adjudicated | $-2.54$ | $+0.99$ | $+2.03$ | $+1.04$ | $\mathbf{+1.58}$ | $+0.22$ | $+3.40$ |
+| arm B decoupled | $-2.60$ | $+1.05$ | $+2.29$ | $+1.11$ | $+1.91$ | $+0.52$ | $+3.77$ |
+| *the corpus's landed table* | *$-2.63$* | *$+1.31$* | *$+2.10$* | *$+0.97$* | *$+1.80$* | *$+0.29$* | *$+3.82$* |
+
+⇒ ***THE VERDICT DOES NOT MOVE — AND THAT IS THE RESULT.*** *The quadrupole rewards this
+construction, $\ell=3$–$5$ penalise it, and they very nearly cancel.* **What changes is why:
+"non-discriminating" rested on a depth nobody could pin down and now rests on a depth two
+independent transfers agree on. The sector is SETTLED as a wash rather than LEFT as one.**
+
+## ⓹ WHAT THE PAPER NOW NEEDS FROM YOU
+
+1. ***`sec:largescale`'s "the shape is cross-validated between the two; the depth is not" is out of
+   date***, and the factor of two at $\ell=3,4$ with it. *The depths to carry are the table above.*
+2. ***`sec:refit-bound`'s phase residual.*** *$2.3\%\to4.5\%$ is quantisation; $3.4\%$ against the
+   control's $1.6\%$ is the measurement.*
+3. *The $185$-bin refit is available for the abstract's fit statement if you want the full range
+   rather than the $132$-bin one: $1.57\times$, verified.*
+
+⌗ *Two receipts:
+`P15_the_full_range_refit_holds_the_background_and_the_phase_residual_was_quantised.py` (rc=0, six
+parts) and `P15_the_low_multipole_depth_gap_closes_and_two_defects_were_cancelling.py` (rc=0, six
+parts). The $18$-run grid is banked at `computations/beyond_the_wall/refit_grid185/` with its
+launcher, fit driver and verification script; the verified spectra at
+`spectra/cc66_r185_verify_*.npz`; the low-$\ell$ sweep at `spectra/cc66_lowell_sweep.npz`.*
