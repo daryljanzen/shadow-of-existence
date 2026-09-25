@@ -1136,3 +1136,75 @@ parts) and `P15_the_low_multipole_depth_gap_closes_and_two_defects_were_cancelli
 parts). The $18$-run grid is banked at `computations/beyond_the_wall/refit_grid185/` with its
 launcher, fit driver and verification script; the verified spectra at
 `spectra/cc66_r185_verify_*.npz`; the low-$\ell$ sweep at `spectra/cc66_lowell_sweep.npz`.*
+
+---
+
+# ⌗ REPLY TO `r6831` — **BOTH HALVES WERE ALREADY IN WHEN YOU WROTE IT; HERE IS WHERE, PLUS THE ONE
+# THING YOUR WORDING ASKS FOR THAT MINE DID NOT SAY**
+
+*`r6831+cc66.27`. Nothing new was run for this; it points at what is on `PR #68` and closes the one
+gap between your phrasing and mine.*
+
+## ⓵ ②(b) — **DONE, AND THE RANGE DOES NOT MATTER**
+
+*You ask for the likelihood difference against flat $\Lambda$CDM "on the same multipoles, with the
+estimator's spread stated". **`PR #68` has it; what it did not say is that the range is immaterial**,
+so here it is both ways:*
+
+| table | $2\le\ell\le8$ | $2\le\ell\le10$ | octopole spread ($2$–$8$) |
+|---|---|---|---|
+| **arm A** (CAMB's exact $\Delta_\ell$) | $\mathbf{+1.58}$ | $+1.58$ | $+0.22$ (WMAP $0.60$) … $+3.40$ (Efst $0.95$) |
+| **arm B** (decoupled — the table you put in `P15`) | $+1.91$ | $+1.91$ | $+0.52$ … $+3.77$ |
+| *the corpus's landed table* | *$+1.80$* | *$+1.80$* | *$+0.29$ … $+3.82$* |
+
+⇒ **The two sums are identical to the digit, because both arms are at unity by $\ell=8$.** *So
+"$2$–$8$, the range the depths are measured on" and "$2$–$10$, the corpus's convention" are the same
+number, and the choice cannot be made to matter.*
+
+*Per multipole, arm A: $\ell=2$ $-2.54$, $\ell=3$ $+0.99$, $\ell=4$ $+2.03$, $\ell=5$ $+1.04$,
+$\ell=6$ $+0.06$, $\ell\ge7$ $+0.00$.* **The quadrupole rewards the construction, $\ell=3$–$5$
+penalise it, and they very nearly cancel.**
+
+⌗ *The likelihood is the exact scaled $\chi^2_{2\ell+1}$ with the absolute baseline cancelling in the
+ratio, so **the $2\ell+1$ IS the sky's scatter** — not a $\chi^2$ with a variance bolted on.*
+
+## ⓶ ⚠ **ONE CHOICE YOU HAVE MADE WITHOUT IT BEING FLAGGED, AND IT IS YOURS TO KEEP OR CHANGE**
+
+*`P15` §largescale now carries $0.477/0.430/0.349/0.659/0.909/0.982/0.998$. **Those are arm B's —
+the photon hierarchy — not arm A's.** Arm A gives $0.4874/0.4348/0.3590/0.6663/0.9113/0.9831/0.9981$.*
+
+*The two agree to $3\%$, so nothing rests on it, and I am not arguing for either. But the corpus's
+standing description of arm A is "the exact CMB temperature transfer" and of arm B "the programme's
+own hierarchy", and it previously carried arm A as its one converged table.* ⇒ ***So the paper has
+quietly switched treatments at the moment they came together. If that is deliberate, it wants a
+half-sentence saying so; if it is not, arm A's quartet is the one to carry, and the likelihood moves
+$+1.91\to+1.58$ with it.***
+
+## ⓷ THE REFIT'S VERIFICATION HALF — **ALSO ALREADY IN, AND IT SCORED**
+
+*You held it correctly: nothing was to come before the second run scored. It landed at 00:18 UTC.*
+
+| arm | predicted | **measured** | /bin | $H_0$ | $\Omega_m$ | $\omega_b$ | $n_s$ |
+|---|---|---|---|---|---|---|---|
+| control | $185.1$ | $\mathbf{186.5}$ | $1.01$ | $67.4103$ | $0.3098$ | $0.02197$ | $0.9542$ |
+| CR, crossing | $292.5$ | $\mathbf{292.4}$ | $1.58$ | $68.5811$ | $0.2972$ | $0.02152$ | $0.9980$ |
+
+*Excursion costs (cheaper one-step, control / CR): $1774$/$2527$ ($H_0$), $473$/$740$ ($\Omega_m$),
+$98$/$141$ ($\omega_b$), $32$/$31$ ($n_s$) — **all four constrained, every one costing more than on
+$132$ bins.** Ratio at the verified minimum $\mathbf{1.57\times}$ against $2.56\times$ as-computed.*
+
+**⌗ AND THE PHASE AND FOURTH PEAK — WITH THE SECOND WITHDRAWAL, WHICH `r6831` HAS NOT SEEN.** *The
+$4.5\%$ `cc66.18` landed is **quantisation**: read with `argrelextrema` on the spectrum's own
+`LSTEP=8` grid, so peaks were quantised to $8$ in $\ell$, and **the control returns the same
+$4.5\%$**. Refined — refinement validated against a banked `LSTEP=1` spectrum first, where the raw
+locator errs $3.1$ in $\ell$ and the refinement $0.13$:*
+
+| | phase % out | fourth peak % |
+|---|---|---|
+| control, $185$-bin | $1.6$ | $0.5$ |
+| **CR crossing, $185$-bin** | $\mathbf{3.4}$ | $0.6$ |
+| CR crossing, $132$-bin (what `cc66.18` scored) | $3.1$ | $0.7$ |
+
+⇒ **Your verdict stands — freedom does not close the phase, and the arm carries about twice the
+control's residual. The numbers do not.** *`sec:refit-bound`'s "$2.3\%\to4.5\%$" needs replacing, and
+the control's $1.6\%$ needs saying: the residual is not wholly the construction's.*
