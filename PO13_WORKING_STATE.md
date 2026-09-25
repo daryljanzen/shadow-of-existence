@@ -3764,3 +3764,54 @@ marginalised — no beam or theory-side term; the central value is the locator's
 nothing re-opens the phase intercept, the damping envelope, the driving or the refit.*
 
 ⌗ *`receipts/P15_CR_cosmology/P15_the_skys_own_fourth_peak_cannot_tell_the_arms_apart_and_the_displacement_is_shared_with_the_control.py`*
+
+---
+
+# ⚑⚑ r6879+cc66.33 — THE ACOUSTIC FIGURE, AND THE RESIDUAL IS MOSTLY THE CONTROL'S
+
+*Both arms at their verified $185$-bin refit minima, through P15's derived lensing operator, binned,
+amplitude on the **full** bandpower covariance. Pipeline checked first: $186.51$ and $292.42$ over
+$185$ bins, reproducing the refit's own to $0.05$.*
+
+**⌗ THE SHARED FRACTION — the deciding number.**
+
+| | |
+|---|---|
+| $\cos(w_{\rm CR}, w_{\rm ctl})$ | $+0.8549$ |
+| shared fraction of the arm's $\chi^{2}$ | $\mathbf{73.1\%}$ |
+| residue after projecting the control's direction out | $76.2$ of $283.0$ |
+| bin cuts $100$–$1996$ / $100$–$1500$ / $200$–$1900$ | $73.7\%$ / $72.5\%$ / $73.6\%$ |
+
+**⌗ ONE FURTHER PARAMETER AT A TIME (179 bins, $\ell\le1900$).**
+
+| | best | $\Delta\chi^{2}$ arm | $\Delta\chi^{2}$ control |
+|---|---|---|---|
+| peak-position rescale $\varepsilon$ | $-7.5\times10^{-4}$ | $\mathbf{+4.68}$ | $+0.00$ |
+| damping-shape | $+1.69\times10^{-2}$ | $+1.36$ | $+0.30$ |
+| tilt $\delta n_s$ | $-1.25\times10^{-3}$ | $+0.09$ | $+0.00$ |
+
+*$\delta n_s=+0.01$ **costs** $+11.2$ — the refit spent the tilt. $\varepsilon$ is $0.8$ in $\ell$ at
+the fourth peak; $4.7/283 = 1.7\%$ of the misfit.*
+
+**⌗ BAND MEANS IN SIXTHS, $\ell=100$–$1300$.**
+
+| | 1 | 2 | 3 | 4 | 5 | 6 |
+|---|---|---|---|---|---|---|
+| CR, covariance amplitude, diagonal $\sigma$ | $-0.61$ | $-0.07$ | $+0.33$ | $+0.54$ | $-1.06$ | $-0.36$ |
+| CR, whitened | $-0.63$ | $-0.08$ | $+0.35$ | $+0.55$ | $-0.99$ | $+0.02$ |
+| CR, **diagonal** amplitude | $-0.34$ | $+0.31$ | $+0.79$ | $+1.08$ | $-0.51$ | $+0.19$ |
+| control, covariance amplitude | $-0.18$ | $-0.03$ | $+0.16$ | $+0.12$ | $-0.32$ | $-0.04$ |
+| *r6879's quick render (CR)* | *$-0.22$* | *$-0.07$* | *$+0.42$* | *$+1.46$* | *$-1.86$* | *$-0.06$* |
+
+*Band rms $0.78 \to 1.39$ across the range. $A_{\rm diag}/A_{\rm cov} = 1.00833$ (arm), $1.00255$
+(control).*
+
+⛔ **BOUND:** *no mechanism for the bulk of the misfit — four directions excluded as the whole of it
+and none offered; "the transfer's" is the order's phrase for **not construction-specific**, not a claim
+about the implementation; the refit minima are `r6825+cc66.25`'s, used as banked; the low-multipole
+floor's score is `r6831`'s, untouched; whitening mixes bins, so a whitened band mean is over a rotated
+basis and is reported beside the diagonal one.*
+
+⌗ *`corpus/make_fig_acoustic_two_arm.py` → `corpus/fig_acoustic_two_arm.pdf`;
+`spectra/cc66_fig_acoustic_numbers.npz`;
+`receipts/P15_CR_cosmology/P15_three_quarters_of_the_arms_residual_is_the_controls_and_what_is_left_is_position_not_amplitude.py`*
