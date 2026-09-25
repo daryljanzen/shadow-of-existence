@@ -812,3 +812,89 @@ substrate horizon too — **but that is a reading of the construction's intent, 
 answered ① as "the variation exists and reaches the horizon, and whether it is a variation of state is the open
 part" rather than as a verdict. *Nothing imported from black-hole thermodynamics as a conclusion: the $A/4$
 value is never assumed, only the existence of a first law is tested.**
+
+## ⛔ `r6874` — `PO-54`: THE SECOND OUTCOME IS NOT THERE AND I CAN SAY WHY. THE DEBT IS AT THE **OTHER** HORIZON.
+
+`receipts/P07_CR_framework/P07_the_double_root_removes_the_first_law_and_the_area_mismatch_together_and_the_debt_is_at_the_horizon_that_carries.py` — rc=0, 14/14, no hollow assertions.
+
+Your order said **look for the second** outcome, "because a result that makes the construction cleaner is the one
+most likely to be reached by not looking hard enough, and you have twice now corrected your own landed work at the
+place you had marked as strong." *That is the right instruction and I took it literally.* ⇒ **The second outcome is
+not there. But something is, and it is at the horizon the order was not looking at — the one where the first law
+works.**
+
+**⌗ ① THE COINCIDENCE YOU NOTED HAS A MECHANISM, AND IT IS ONE EQUATION: $3M=r_h$.**
+
+      the SdS photon sphere solves d(f/r^2)/dr = 0  at  r = 3M   EXACTLY, and carries NO alpha
+      at the Nariai mass M = sqrt(3) alpha/9,        3M = alpha/sqrt3 = r_N
+      hence f(r_ph) = f(r_h) = 0, and lambda^2 (proportional to f(r_ph)) vanishes with it; f' = 0 kills kappa
+
+*So Nariai, the vanishing surface gravity and the vanishing Lyapunov exponent are **one fact seen three ways**. And
+the photon sphere's radius carrying no $\alpha$ is precisely why it **can** coincide with a horizon whose radius is
+all $\alpha$ — the coincidence is a collision of two independent formulae, not a tuning.*
+
+**⌗ ② AND THAT SAME IDENTITY REMOVES THE FIRST LAW AND THE AREA MISMATCH *TOGETHER*. THAT IS WHAT THE COINCIDENCE
+MEANS.**
+
+      generically   A_collapse = 16 pi M^2  =/=  4 pi alpha^2 = A_deSitter
+                    (equal only at M = alpha/2, which is NOT the Nariai mass)
+      at the seam   both horizons merge at r_N, each of area 4 pi alpha^2/3, and N is the IDENTITY
+
+`P07`'s own theorem is explicit that $N$ "preserves the null fibration, the affine ordering, and the future
+orientation, but is *not* in general an isometry" — "the identification is causal and structural, not metric."
+**Entropy *is* area and temperature *is* surface gravity. Both are metric.** So the reassignment disclaims carrying
+exactly the quantities a first law relates, and ***there is nothing for the undetermined law to fail to supply***.
+⇒ **The licence and the emptiness are one fact, and the fact is $3M=r_h$.** *The seam is the one place with no
+metric discrepancy to carry and no first law to carry it with, and those are the same circumstance.*
+
+**⌗ ③ THE FOUR THINGS THAT COULD HAVE NEEDED WHAT THE VANISHING DENIES, CHECKED ONE AT A TIME.** *Looking for your
+second outcome means naming what would have to break, so I named them and went through them:*
+
+      the residual labelling freedom   NEEDS a bifurcation 2-sphere -- and at the seam there are no TWO
+                                       cross-sections to reframe between, N being the identity.  The freedom
+                                       is ABSENT, not DENIED: nothing asks for it.
+      hbar's licence                   the Gibbons--Hawking state at beta = 2 pi alpha is the SUBSTRATE
+                                       horizon's, kappa = 1/alpha.  §ledger locates it there, not at the seam.
+      the entropy monotone             Landauer's k_B ln 2 -- an ENTROPY bound, needing no temperature -- on
+                                       matter-sector entropies per baryon defined both sides by ordinary
+                                       statistical mechanics.  It never routes through a horizon first law.
+      the transmission dichotomy       USES the degeneracy: the degenerate root carries no scale, so it cannot
+                                       imprint one.  It would BREAK if kappa did not vanish.
+
+⇒ **None of the four needs a first law at the seam, and the fourth needs its failure. So the answer to your second
+outcome is a *checked* negative over four named items rather than a clean-looking one** — which is the distinction
+your order was asking me to make. ⚠ *And it is four items, not a survey: if a fifth thermodynamic assertion sits at
+the seam somewhere in the corpus, this receipt does not cover it.*
+
+**⌗ ⛔ AND HERE IS WHAT I FOUND INSTEAD, WHICH INVERTS WHERE THE ORDER WAS POINTING.**
+
+Generically the two readings' horizon areas are **unequal**. `r6864` established that $S=A/4$ **carries** at the
+substrate horizon. Put those two together:
+
+  ***IF THE AREA LAW CARRIES AT THE HORIZON WHERE IT CARRIES, THEN HORIZON ENTROPY IS READING-DEPENDENT UNDER THE
+  FRAMEWORK'S OWN CENTRAL MOVE.*** *One ontological layer, two causal assignments, two areas, two entropies:
+  $3\pi/(\Lambda\ell_P^{2})$ in one reading, $4\pi G^{2}M^{2}/(\ell_P^{2}c^{4})$ in the other. And §ledger quotes
+  the first as "the ledger's own number back" — **which it is, in one reading**, and the paper does not say so.*
+
+This is **not a contradiction**: the framework already says $N$ carries no metric data, so a reading-dependent
+metric quantity is consistent with it. **What is missing is the sentence saying so, at the one place the corpus
+actually computes an entropy.** ⇒ *The trouble is not where the first law is undetermined; it is where the first law
+works.*
+
+**⌗ ⚠ YOUR PROHIBITION WAS KEPT, AND HERE IS EXACTLY WHERE IT BINDS.** *You forbade importing an extremal-horizon
+thermodynamics for the degenerate member. Nothing is imported: the seam's $\pi/(\Lambda\ell_P^{2})$ appears in the
+receipt as **arithmetic** and is explicitly **not licensed**, since `r6864` showed the first law admits no
+$\delta S$ there. It happens to sit at $1/8$ of the cosmological-constant factor $8\pi/(\Lambda\ell_P^{2})$ where
+the substrate's sits at $3/8$ — **that is a ratio of two numbers and I read nothing into it**, said out loud so a
+later pass does not find significance in it.* ⇒ **And the answer did not need one**, which is the reportable fact:
+③ shows the construction leans on nothing at the seam that a thermodynamics would have had to supply.
+
+**⌗ ⚠ AND `PO-54` IS NOT INDEPENDENT OF `PO-53`. THAT MATTERS FOR HOW YOU GATE THE TWO.** *The debt above rests on
+the law carrying at the substrate horizon, which rests on the offset family being **solutions** rather than
+**sections of one solution** — the hinge I declined in `r6864` and you carried as `PO-53`. If `PO-53` answers
+"sections", the variation is void at the substrate horizon too and **the debt dissolves with it**. So the two rows
+share a hinge, and answering each as though it were independent would get one of them wrong.*
+
+  ⌗ *What I would ask of `PO-54`'s disposition, if you take the finding: the row closes on the seam — cleanly, with
+  a mechanism — and **hands back one sentence owed at §ledger**, not a defect. `PO-7`, $A_s$ and the Gauss–Bonnet
+  coefficient are untouched.*
