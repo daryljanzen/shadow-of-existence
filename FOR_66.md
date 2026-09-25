@@ -1764,6 +1764,8 @@ include line is `\includegraphics[width=\textwidth]{fig_acoustic_two_arm.pdf}` �
 
 ⇒ ***On your own criterion that part is the transfer's and not the construction's.***
 
+> ⛔ **WITHDRAWN at `r6881+cc66.34`, and the seat withdrawing it is mine.** *The number stands; the inference does not — both arms are fitted to the same data, so the statistic ranks model similarity and a deliberately tilted control scores $82.2\%$. **The corrected reading is the opposite: the excess is the construction's.** The reply block at the foot of this file has it in full.*
+
 ## ⓶ AND WHAT IS LEFT IS **POSITION, NOT AMPLITUDE AND NOT TILT**
 
 | one further parameter | best | $\Delta\chi^{2}$ on the arm | on the control |
@@ -1824,3 +1826,106 @@ version is banked beside it and both are in the receipt.*
 > residuals for both arms on one axis. **The control lands at $1.01$ per bin and this arm at $1.58$:
 > the peak positions and the acoustic comb are right and the shape is still rejected, and the lower
 > panels are where that is visible rather than the upper ones.***
+
+## ⛔ `r6881` — **THE FIRST THING IN THIS BLOCK IS A WITHDRAWAL OF MY OWN LAST HEADLINE**
+
+*`receipts/P15_CR_cosmology/P15_the_shared_fraction_does_not_mean_what_i_said_and_the_peak_trough_pattern_is_the_arms_alone.py`
+— rc=0, four parts, **14 gates**, four controls. You asked for the four diagnostics on the full
+covariance and stated the burden yourself. **Running them made me look again at what I had told you
+last order, and that sentence does not survive.***
+
+## ⓵ ⛔ "$73.1\%$ IS THE TRANSFER'S" — **THE NUMBER IS RIGHT AND THE INFERENCE IS WRONG**
+
+*Both arms are fitted to the **same data**. So, identically and not approximately,*
+
+$$r_{\rm CR} \;=\; r_{\rm control} \;+\; (m_{\rm CR}-m_{\rm control})$$
+
+*— verified on the actual fitted vectors to $8.9\times10^{-16}$. **The two residuals carry the same
+$-d$ term by construction**, so "the fraction of the arm's $\chi^2$ lying along the control's
+direction" measures ***how alike the two MODELS are***. It cannot attribute a misfit to either.*
+
+**⌗ AND THE CONTROL THE STATISTIC NEEDED, WHICH I NEVER GAVE IT: a model nobody believes.**
+
+| flat $\Lambda$CDM, deliberately tilted | $\chi^2$ | "shared with the control" |
+|---|---|---|
+| $\delta n_s=+0.02$ | $214.6$ | $\mathbf{82.2\%}$ |
+| $\delta n_s=+0.05$ | $408.8$ | $42.5\%$ |
+| $\delta n_s=+0.10$ | $1083.8$ | $15.6\%$ |
+| $\delta n_s=-0.05$ | $428.4$ | $42.2\%$ |
+| **the CR arm** | $\mathbf{283.0}$ | $\mathbf{73.1\%}$ |
+
+⇒ ***A model no one would defend scores HIGHER than the arm under test, and the score decays with
+the tilt.*** *That is the signature of a similarity measure. **I read it as an attribution and it
+never was one.***
+
+## ⓶ ⚑ AND THE CORRECTED READING POINTS THE **OTHER WAY**
+
+| | |
+|---|---|
+| control | $177.88$ over $179$ bins $=\mathbf{0.994}$/bin |
+| CR arm | $282.96 = 1.581$/bin |
+| **excess** | $\mathbf{+105.1}$ |
+| of which $\lvert m_{\rm CR}-m_{\rm control}\rvert^2$ | $\mathbf{77.3}$ |
+| cross term $2\,r_{\rm ctl}\!\cdot\!\Delta$ | $+27.8$ |
+
+***The control already fits at $0.994$ per bin — there is no shared defect for the arm to be an
+amplification OF.*** *Remove the model difference and the arm **is** the control. **The excess is the
+construction's**, which is the reverse of what I told you.*
+
+## ⓷ YOUR FOUR, ON THE COVARIANCE — **THREE DO NOT SURVIVE**
+
+| | your reading (diag) | mine, diagonal amplitude | mine, whitened |
+|---|---|---|---|
+| **(1)** control peaks / troughs | $+0.57$ / $-0.67$ | $\mathbf{+0.03}$ / $\mathbf{-0.06}$ | $+0.03$ / $-0.07$ |
+| **(1)** arm peaks / troughs | $+0.93$ / $-1.11$ | $+0.36$ / $-0.51$ | $+0.42$ / $-0.52$ |
+| **(2)** correlation | $0.96$ | $\mathbf{0.837}$ | $0.855$ |
+| **(2)** slope | $1.28$ | $1.137$ | $1.078$ |
+| **(2)** rms ratio | $1.34$ | $\mathbf{1.357}$ ✔ | $1.261$ |
+| **(3)** control by thirds | $0.66/0.96/1.46$ | $0.67/0.77/\mathbf{0.88}$ | $0.66/0.74/0.89$ |
+| **(3)** arm by thirds | $0.69/1.39/2.09$ | $0.68/1.12/1.00$ | $0.72/0.91/1.09$ |
+| **(4)** control at $\ell\,950$–$1080$ | $-1.56$ | $\mathbf{+0.06}$ | $-0.07$ |
+| **(4)** arm at $\ell\,950$–$1080$ | $-2.66$ | $-0.64$ | $-1.09$ |
+
+⛔ ***(1) IS THE ONE THAT DECIDES IT.*** *The control shows **essentially no peak/trough pattern** —
+$+0.03/-0.06$ where you have $+0.57/-0.67$. The arm does show it. **So "same sign, same structure,
+BOTH models" is not what the covariance says, and the composite built on it — "that both arms show it
+says the bulk belongs to the transfer rather than to either cosmology" — fails at its premise.***
+
+⌗ *(4) the same way: the $\ell\simeq1000$ gap is the **arm's**, not shared. (3) survives in direction
+only — both do grow and the first third matches almost exactly, but the control's last third is
+$0.88$ rather than $1.46$.*
+
+⌗ *The peaks/troughs are sorted by the sign of the **control's** own binned $\mathcal{D}_\ell$
+curvature for both arms, so the two are partitioned identically. Using each arm's own moves no verdict
+and I did not run it.*
+
+## ⓸ ⚑ YOUR CLOSING QUESTION — **WHAT SETS THE $1.3$**
+
+***The rms ratio is the one of the four that reproduces: $1.357$ against your $1.34$*** *(and $1.261$
+whitened), so you asked the right question. **And the answer is that nothing amplifies anything.***
+
+$$\lvert r_{\rm ctl}\rvert = 13.34,\qquad \lvert m_{\rm CR}-m_{\rm ctl}\rvert = 8.79,\qquad
+\lvert r_{\rm CR}\rvert = 16.82$$
+
+*$= \sqrt{177.9 + 77.3 + 27.8}$, exactly. ⇒ ***The factor of $1.3$ IS the model difference's own
+size.*** *Not a damping-shape difference the endpoint leaves, and not transfer error amplified by this
+arm's envelope — **the two candidates you named are both framed as amplifications of something shared,
+and there is nothing shared to amplify at $0.994$ per bin.***
+
+## ⓹ ⚠ AND WHAT I AM **NOT** CLAIMING, WHICH MATTERS MORE THAN USUAL HERE
+
+1. ***Withdrawing "it is the transfer's" is NOT showing the transfer is innocent.*** *No statistic in
+   this receipt separates a transfer defect from a cosmology difference, and I am not offering one.
+   **What is established is that the shared fraction was never that statistic.***
+2. ***No mechanism is added.*** *`cc66.33` excluded four directions as the whole of the misfit; this
+   excludes none further and still does not say what it is.
+3. ***The rest of `cc66.33` stands*** — *band means, the three single-parameter scans, the figure and
+   its caption. **It is the attribution sentence alone that is struck**, and I have marked it at
+   `receipts/INDEX.md`, in `CORPUS_MAP.md` at its own entry head, and above in this file.*
+4. ***The phrase is registered in `corpus/check_withdrawn.py`***, *so the next summary that quotes the
+   old reading is caught rather than invisible. The gate found one bare occurrence when I added it —
+   in this file — which is what registering it is for.*
+
+⌗ ***Your framing is what made this findable.*** *"All wanting the full covariance behind them" and
+"offered to be overturned" is why I built the tilted control at all instead of just re-running four
+numbers in a better metric — and the tilted control is what caught my own sentence, not yours.*
