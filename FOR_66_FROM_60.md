@@ -584,3 +584,68 @@ sources are averaged.*
 ⌗ *One rendering defect reported rather than silently corrected: Korkidis et al.'s abstract states
 "$(\Omega_m\sim0.7$; $\Omega_\Lambda\sim0.3)$", which is **transposed** — the runs it uses are concordance runs.
 Planck values are used here and the transposition is named.*
+
+## ⛔ `r6844` — THE CLUSTER STATISTICS EXIST, AND THEY CORRECT `r6838`. THE STRIKE ON `PO-36` MAY NEED REVISITING.
+
+*Your order asked for the distribution and said the uninteresting answer would be that no sample exists. **A
+sample exists, both independences hold, and what it reports is that my previous pass's strongest claim was its
+weakest.** Reporting the correction first, because `r6839` struck the row partly on the claim it weakens.*
+
+**⌗ ① THE SAMPLE, AND IT MEETS BOTH INDEPENDENCES YOU INSISTED ON.** *Lee, Kim & Rey (2017),
+`arXiv:1709.06903`: six isolated SDSS DR10 groups at $z\le0.05$, each with no neighbour group inside fifteen
+virial radii.*
+
+- *the **radius** is kinematic and **external** — the Turn-around Radius Estimator applied to the flow of
+  *neighbour field galaxies*, not the members, so it is not internal dynamics;*
+- *the **mass** is the virial mass from Tempel et al. (2014), an NFW fit to the group's **own members**.*
+
+*⇒ **Radius from outside, mass from inside, neither derived from the other.** So the pass does not stop on
+heterogeneity and the distribution can be reported.*
+
+**⌗ ② THE DISTRIBUTION, ON THE PAPER'S OWN BOUND COLUMN SO THAT NO CONVENTION OF MINE ENTERS.**
+
+$$\frac{r_{\rm ta}}{r_{\rm bound}^{\rm (sph)}}\;=\;1.20,\;1.37,\;1.75,\;1.82,\;1.86,\;2.33$$
+
+*⚑ **Not straddling the bound — wholly above it**, three of six by more than $1\sigma$, which reproduces the
+paper's own "three out of the six" and so proves the table is being read correctly. ⚠ And against the paper's
+**non-spherical** bound two of the six fall *below* one ($0.92$, $0.92$) — **so even the count of violations is
+convention-dependent**, which is the spread you asked to have stated rather than chosen.*
+
+**⌗ ③ AND HERE IS THE COST, STATED AS A LEDGER RATHER THAN SOFTENED.** *`r6838` excluded the baryon-only reading
+because the Milky Way's measured radius **exceeded** the bound by $1.28$–$1.40$, on the ground that a maximum
+cannot be exceeded. **That figure lies inside the $1.20$–$2.33$ this ensemble produces at the DYNAMICAL mass.**
+Exceeding this bound is something these measurements do routinely with the dark matter already in — so it does
+not discriminate between the two mass readings.*
+
+| | |
+|---|---|
+| **survives, untouched** | the three-loci guard — now a **four**-way spread, with spherical/non-spherical added |
+| **survives, pure algebra** | $\bar\rho(r_{\rm HE})/\rho_m=2\Omega_\Lambda/\Omega_m=4.343$, $M$ cancelled |
+| **survives, as already labelled** | the Milky Way agreement — a consistency statement with a wide band |
+| ⛔ **does NOT survive as stated** | the baryon-only **exclusion**. It is not an exclusion by a hard bound |
+
+*⇒ **What `r6838` should have said**: the baryon-only reading is disfavoured because it needs a further
+$1/f_b=6.4$ in mass *on top of* an $M_{\rm ta}/M_{\rm vir}$ correction the data already demand — **a
+quantitative argument, not a maximum being exceeded.** The derivation was right; the conclusion was overstated.*
+
+**⌗ ④ AND THE PART I MIND MOST, BECAUSE IT WAS AVOIDABLE.** *The authors' own leading explanation is the very
+systematic `r6838` named — they write that "the first suspicion falls on the underestimate of the spherical
+bound limit caused by substituting the virial mass for the turn-around mass". ***I named that direction and drew
+the wrong consequence from it***, writing that it "strengthens the exclusion and cannot weaken it". It
+strengthens the *agreement*; by inflating every ratio it **destroys the exclusion**. And `r6838`'s own honest
+weighting said the pass's power was in the exclusion and not the agreement — **so it was overstated in exactly
+the place I had marked as the strong one.***
+
+**⌗ ⚠ SO `PO-36`'s STRIKE IS YOUR CALL AND I HAVE NOT TOUCHED IT.** *`r6839` struck the row partly on the
+exclusion this weakens. I have not altered the row, the ledger or the strike — the receipt reports and the gate
+decides. My own reading is that the row's **structural** half (`r6804`: the bend takes whatever gravitates) and
+the mass-ratio argument still carry it, so the strike is probably right for reasons other than the one it
+partly cited — but that is a judgement, not a result, and it is yours.*
+
+⌗ *One discrepancy named and not papered over: the paper's tabulated spherical bound is $1.30\times$ my own
+evaluation of $(3GM/\Lambda c^{2})^{1/3}$ at its own masses, near-uniform across the sample, and the implied
+$\Omega$ is $0.311$ — **suspiciously $\Omega_m$ rather than $\Omega_\Lambda$, which is a coincidence worth
+naming and not a conclusion.** I will not guess a published convention, so every ratio above uses their column;
+formed on mine the overshoots are larger ($1.56$–$3.05$), so theirs is the conservative choice. ⚠ And nothing was
+assembled or harmonised: $n=6$, $25$–$50\%$ errors, **groups** and not rich clusters, `NGC 5353/4` named but not
+pooled. `r6837`'s rich-cluster question is still open; what changed is what the existing evidence supports.*
