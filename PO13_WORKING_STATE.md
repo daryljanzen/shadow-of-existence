@@ -3769,6 +3769,8 @@ nothing re-opens the phase intercept, the damping envelope, the driving or the r
 
 # ⚑⚑ r6879+cc66.33 — THE ACOUSTIC FIGURE, AND THE RESIDUAL IS MOSTLY THE CONTROL'S
 
+⛔ *** HEADING PARTLY WITHDRAWN at `r6881+cc66.34`. *** *The shared fraction is right and "mostly the control's" does not follow from it — see that entry. The measurements below stand; the reading of the first table does not.*
+
 *Both arms at their verified $185$-bin refit minima, through P15's derived lensing operator, binned,
 amplitude on the **full** bandpower covariance. Pipeline checked first: $186.51$ and $292.42$ over
 $185$ bins, reproducing the refit's own to $0.05$.*
@@ -3815,3 +3817,57 @@ basis and is reported beside the diagonal one.*
 ⌗ *`corpus/make_fig_acoustic_two_arm.py` → `corpus/fig_acoustic_two_arm.pdf`;
 `spectra/cc66_fig_acoustic_numbers.npz`;
 `receipts/P15_CR_cosmology/P15_three_quarters_of_the_arms_residual_is_the_controls_and_what_is_left_is_position_not_amplitude.py`*
+
+
+# ⚑⚑ r6881+cc66.34 — ⛔ THE SHARED FRACTION DOES NOT MEAN WHAT I SAID, AND THREE OF FOUR DIAGNOSTICS ARE THE ARM'S
+
+**⌗ THE ALGEBRA, WHICH IS WHY.** *Both arms fitted to the same data:*
+$r_{\rm CR}=r_{\rm ctl}+(m_{\rm CR}-m_{\rm ctl})$ *exactly — $\max\lvert\cdot\rvert = 8.9\times10^{-16}$ on the
+fitted vectors. **The shared $-d$ term makes a "shared fraction" a similarity of MODELS.***
+
+**⌗ THE CONTROL THAT BREAKS IT — a model nobody believes.**
+
+| flat $\Lambda$CDM, tilted | $\chi^2$ | shared with the control |
+|---|---|---|
+| $\delta n_s=+0.02$ | $214.6$ | $\mathbf{82.2\%}$ |
+| $\delta n_s=+0.05$ | $408.8$ | $42.5\%$ |
+| $\delta n_s=+0.10$ | $1083.8$ | $15.6\%$ |
+| $\delta n_s=-0.05$ | $428.4$ | $42.2\%$ |
+| **CR arm** | $283.0$ | $73.1\%$ |
+
+**⌗ THE DECOMPOSITION THAT REPLACES IT (179 bins, $\ell\le1900$).**
+
+| | |
+|---|---|
+| control | $177.88 = \mathbf{0.994}$/bin |
+| CR arm | $282.96 = 1.581$/bin |
+| excess | $\mathbf{+105.08}$ |
+| $\lvert m_{\rm CR}-m_{\rm ctl}\rvert^2$ | $\mathbf{77.3}$ |
+| $2\,r_{\rm ctl}\!\cdot\!\Delta$ | $+27.8$ |
+| $\lvert r_{\rm ctl}\rvert,\ \lvert\Delta\rvert,\ \lvert r_{\rm CR}\rvert$ | $13.34,\ 8.79,\ 16.82$ |
+
+**⌗ `r6881`'s FOUR, BOTH METRICS, WITH THE ROUTED VALUE BESIDE EACH.**
+
+| | routed (diag) | diagonal amplitude | whitened |
+|---|---|---|---|
+| (1) control peaks / troughs | $+0.57$ / $-0.67$ | $\mathbf{+0.03}$ / $\mathbf{-0.06}$ | $+0.03$ / $-0.07$ |
+| (1) arm peaks / troughs | $+0.93$ / $-1.11$ | $+0.36$ / $-0.51$ | $+0.42$ / $-0.52$ |
+| (2) correlation | $0.96$ | $0.837$ | $0.855$ |
+| (2) slope | $1.28$ | $1.137$ | $1.078$ |
+| (2) **rms ratio** | $1.34$ | $\mathbf{1.357}$ | $1.261$ |
+| (3) control thirds | $0.66/0.96/1.46$ | $0.67/0.77/\mathbf{0.88}$ | $0.66/0.74/0.89$ |
+| (3) arm thirds | $0.69/1.39/2.09$ | $0.68/1.12/1.00$ | $0.72/0.91/1.09$ |
+| (4) control, $\ell\,950$–$1080$ ($n=15$) | $-1.56$ | $\mathbf{+0.06}$ | $-0.07$ |
+| (4) arm, $\ell\,950$–$1080$ | $-2.66$ | $-0.64$ | $-1.09$ |
+
+*Peaks/troughs sorted by the sign of the **control's** binned $\mathcal{D}_\ell$ curvature for both arms
+($93$ / $86$), so the two share one partition.*
+
+⛔ **BOUND:** *withdrawing "it is the transfer's" is **not** exonerating the transfer — no statistic here
+separates a transfer defect from a cosmology difference and none is offered; no mechanism is added;
+`cc66.33`'s band means, single-parameter scans and figure are untouched; the diagnostics are on this tree's
+$179$ scored bins at $\ell\le1900$, the figure's own cut and not the order's; each arm's own curvature for
+the split is not run.*
+
+⌗ *`receipts/P15_CR_cosmology/P15_the_shared_fraction_does_not_mean_what_i_said_and_the_peak_trough_pattern_is_the_arms_alone.py`
+— 14 gates, four controls. Phrase registered in `corpus/check_withdrawn.py`.*

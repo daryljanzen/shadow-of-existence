@@ -39,6 +39,35 @@ WINDOW = 900          # characters after a hit in which a correction still count
 # --- THE REGISTRY -------------------------------------------------------------------------
 # (label, phrase pattern, marker pattern, when and where it was withdrawn)
 REGISTRY = [
+    # r6881+cc66.34.  "THE SHARED FRACTION SAYS THE MISFIT IS THE TRANSFER'S".  `r6879+cc66.33`
+    # reported that 73.1% of the CR arm's chi^2 lies along the control's residual direction and read
+    # that as attribution -- "on the order's own criterion that part is the transfer's and not the
+    # construction's".  ** Both arms are fitted to the SAME data, so r_CR = r_ctl + (m_CR - m_ctl)
+    # exactly: the two residuals share the -d term by construction and the statistic ranks how alike
+    # the two MODELS are.  A flat-LCDM control deliberately tilted by dn_s = +0.02, at chi^2 = 214.6,
+    # scores 82.2% -- HIGHER than the arm. **  The number stands; the inference does not, and the
+    # corrected reading points the other way (the control fits at 0.994/bin, so the arm's +105.1
+    # excess is the construction's).  ** The row may still QUOTE the sentence -- the withdrawal is
+    # recorded by quoting it -- but not assert it. **
+    ("the-shared-fraction-attributes-the-misfit-to-the-transfer",
+     # ** WIDENED IMMEDIATELY, AND THE FIRST PATTERN IS WHY THE GATE HAS THIS COMMENT. **
+     # The first version read "that part is the transfer's and not the construction's" -- MY
+     # wording, in MY row.  `P15` says "So three quarters of the disagreement is the transfer's
+     # and not the construction's", and the gate reported the tree clean with the withdrawn
+     # claim standing in the paper.  ** A registry keyed to one seat's phrasing is a registry
+     # that checks one seat ** -- the same lesson r6465 records one entry below.
+     r"is the transfer's and not the construction's"
+     # ⌗ NARROW ON PURPOSE.  A generic "<fraction> ... is the control's" also fires on
+     # `PO-47`'s live and UNWITHDRAWN finding that 57% of the fourth-peak offset is the
+     # control's, which is a different claim about a different quantity.  The subject has
+     # to be the RESIDUAL.
+     r"|three quarters of (?:this arm's|the (?:arm's )?residual)[^.\n]{0,20}is the control's"
+     r"|\d\d(?:\.\d)?\s*(?:per cent|\\%) of the arm's (?:residual|\\?chi)[^.\n]{0,40}"
+     r"is the control's"
+     r"|(?:fraction|per\s*cent|\\%)[^.\n]{0,80}along the control's[^.\n]{0,80}"
+     r"(?:is|are) the transfer's",
+     r"(?:r6881|withdrawn|WITHDRAWN|similarity|does not follow|inference)",
+     "withdrawn r6881+cc66.34; the shared fraction ranks model similarity, not attribution"),
     # r6713+66.1.  THE PROPAGATING DIRAC SECTOR "NOT YET ON THE CHIRAL ONE".  P11 builds the
     # unpolarised Gowdy--de Sitter member as the first chiral member of the reachable sector and
     # puts a massless Dirac field on it; P7 states the chiral geometry built; P14 computes that on
@@ -270,6 +299,15 @@ POSITIVES = {
     "the-monodromy-is-two-pi-over-rho-for-scalars": [
         "the mixing is 2 pi / rho, and it is discontinuous at zero radiation",
         "the resulting monodromy is unipotent with off-diagonal $-2\\pi i/\\rho$",
+    ],
+    "the-shared-fraction-attributes-the-misfit-to-the-transfer": [
+        "On the order's own criterion that part is the transfer's and not the construction's.",
+        "So three quarters of the disagreement is the transfer's and not the construction's.",
+        "the residuals are where the rejection lives, and three quarters of this arm's is the "
+        "control's",
+        "73.1\\% of the arm's residual is the control's",
+        "73.1\\% of the arm's chi^2 lies along the control's own direction, so that part is the "
+        "transfer's",
     ],
     "radiation-of-order-the-matter-density-is-natural": [
         "radiation of order the matter density",
