@@ -203,7 +203,7 @@ corpus in `PO13_WORKING_STATE.md`.*
 
 <!-- GRAIN-CURRENCY:BEGIN -->
 
-## ⌗⌗⌗ CURRENCY — **GENERATED** by `scripts/regen_grain_currency.py`, baseline r2417, register front r6905
+## ⌗⌗⌗ CURRENCY — **GENERATED** by `scripts/regen_grain_currency.py`, baseline r2417, register front r6907
 
 > ⚠ **THE BODY BELOW STOPS AT THE BASELINE. This head is the list of what has moved since, and it is REGENERATED rather than written** — *because these documents go stale every ~20 revisions by construction, and paying that by hand is a debt that recurs rather than a defect that closes.*
 >
@@ -2356,7 +2356,7 @@ combinatorics ledger at the very least done right.**")* **Lane 8 — the combina
 
 ### ⟂ THE P6-COHESION SWEEP (C-P6, r951 → **RUN r952**) — grounding the epistemology at weight, everywhere
 
-> **✔ RUN (r952). Verdict: no surprise — nothing joins D1; one grounding gap (P11) closed.** Full audit in `P6_COHESION_SWEEP.md`. The surprise-hunt walked P16's title chain arrow by arrow: every load-bearing arrow is a **theorem** (P1 metric singularity; P4+P1 forced foliation; P7 `thm:cosmogenesis` + the Nariai trichotomy; P16 §scoping; P8 `prop:lapse`) or the **§peak floor-argument** (T_pk ≳ 10² MeV, M-independent, **4 orders** above the bottleneck — robust), so **no necessity-claim is secretly only permitted, and D1 stays the sole below-line debt.** P6-grounding: every paper grounds in P6 except **P1** (correct — needs none, P6 §place) and **P11** (the one real gap — its "admits vs forces" R2-move was uncited; **grounded r952**, compiles clean). p0's apparent "0 cites" was a bibkey artefact (it cites P6 as `JanzenShadow`); the `JanzenShadow` vs `JanzenShadowExistence` alias is a bibliography-hygiene item (E.1), above the line.
+> **✔ RUN (r952). Verdict: no surprise — nothing joins D1; one grounding gap (P11) closed.** Full audit in `P6_COHESION_SWEEP.md`. The surprise-hunt walked P16's title chain arrow by arrow: every load-bearing arrow is a **theorem** (P1 metric singularity; P4+P1 forced foliation; P7 `thm:cosmogenesis` + the Nariai trichotomy; P16 §scoping; P8 `prop:lapse`) or the **§peak floor-argument** (T_pk ≳ 10² MeV, M-independent, **three and a half orders** above the bottleneck on `P16` §peak's own figures, T_pk ≃ 174 MeV against T_D ≃ 0.07 MeV — robust; the **3.8 orders** that reads like it is the *infall* energy ½m_N c² = 469 MeV and not the thermalised peak), so **no necessity-claim is secretly only permitted, and D1 stays the sole below-line debt.** P6-grounding: every paper grounds in P6 except **P1** (correct — needs none, P6 §place) and **P11** (the one real gap — its "admits vs forces" R2-move was uncited; **grounded r952**, compiles clean). p0's apparent "0 cites" was a bibkey artefact (it cites P6 as `JanzenShadow`); the `JanzenShadow` vs `JanzenShadowExistence` alias was a bibliography-hygiene item (E.1) and is **discharged** — the unification landed at r1566 (item 13a) and every paper now uses `JanzenShadowExistence`.
 
 
 

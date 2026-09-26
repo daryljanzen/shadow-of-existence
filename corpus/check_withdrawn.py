@@ -263,6 +263,103 @@ REGISTRY = [
 
 SKIP = ('appendix_receipts',)
 
+# --- THE NUMERIC REGISTRY, r6907 ------------------------------------------------------------
+# (label, value pattern, filename filter or None, what replaced it and where)
+#
+# ** WHY THIS SITS HERE AND NOT IN A GATE OF ITS OWN. **  It is the same failure as the phrase
+# registry above with a different key: a result lands in the section that produced it and the
+# OLD VALUE stays live in the documents that summarise.  A cold full-corpus read found sixteen
+# such occurrences across five documents in one pass -- a retired driving figure live in two
+# papers while a third measured it, an ontology card carrying four superseded numbers with one
+# of them SIGN-REVERSED, a damping signature quoted at eight times its size, and a readings
+# count that double-counted an identity.  *** None of it is visible from inside any single
+# paper, which is exactly why no instrument was looking. ***
+#
+# ⚠ ** AND THE SEMANTICS ARE STRICTER THAN THE PHRASE REGISTRY'S, FOR A REASON THE CORPUS
+# ITSELF SUPPLIES. **  A withdrawn CLAIM may be quoted honestly, so that registry allows a bare
+# occurrence when an adjacent correction follows.  A superseded NUMBER has no such form: a paper
+# presents one state and never reports its own computational corrections, so a retired value in
+# a live document is a plain failure.  ** There is no adjacent-marker escape here. **
+#
+# ⌗ WHAT IS NOT SCANNED, AND WHY THAT IS NOT A LOOPHOLE.  The changelog, the register, the
+# receipts and retired/ are RECORDS -- history is what they are for, and a retirement is
+# recorded by naming the number it retired.  Only the live documents are scanned: the papers
+# and the ontology index.
+#
+# ⌗ EVERY ENTRY BELOW WAS CALIBRATED BOTH WAYS BEFORE IT WAS ADDED: each pattern was run
+# against the tree as it stood before the correcting revision, where the ten of them return
+# SIXTEEN hits across five files, and against the corrected tree, where they return none.
+# ** A pattern that has never been seen to fire is not an instrument. **
+NUMERIC = [
+    ("driving-2.4-times", r'times as far as it does on the', None,
+     "r6899: the collapse-side driving measured by subtraction is 0.1717 against the control's "
+     "0.1792 -- within four per cent and SLIGHTLY WEAKER rather than stronger.  The retired form "
+     "read '2.4 times as far ... overshooting rather than falling short' and stood in two papers "
+     "while a third measured it; P15's own receipt marks it retired by name."),
+
+    ("damping-theta-ratio-1.08", r'\\approx\s*1\.08\\,\(\\theta_D', None,
+     "r6899: theta_D/theta_* is under a per cent at the adjudicated endpoint, its size fixed by "
+     "the handover and its sign by the common endpoint both lengths are carried to.  The 1.08 was "
+     "the product of two conventions the construction no longer has -- a stacking clock for r_D "
+     "and an r_s truncated at a fitted onset."),
+
+    ("damping-9-per-cent", r'9\\%\$\s*CR-specific diffusion', None,
+     "r6899: same retirement, in the form the summary carried it.  The 9% was the pinned "
+     "configuration's, and the pin is gone."),
+
+    ("H0-68.5", r'68\.5(?!\d)', ('CR_cosmology', 'ONTOLOGY_FOUNDATION_INDEX'),
+     "the joint fit returns H_0 = 68.6; six sites carried it against two, including both "
+     "receipted ones.  Filtered to the two documents that quote it, since 68.5 is an ordinary "
+     "number elsewhere."),
+
+    ("radius-read-seven-ways",
+     r'read seven ways|seven distinct ways|seven independent idioms|'
+     r'seven readings of that one radius', None,
+     "r6901: the readings of r^3 = M alpha^2 are SIX.  The flat locus of the slice's curvature "
+     "and the areal acceleration changing sign are one fact in two languages -- "
+     "d2r/dtau2 = -f'/2 = r K_G by differentiating f -- and were counted twice.  ** The "
+     "maximal-symmetry-worn-seven-ways count is a DIFFERENT seven and must keep working: that is "
+     "why this pattern is a list of the four literal forms the radius count used and not the "
+     "word 'seven'. **"),
+
+    ("amplitude-ladder-eighteen", r'eighteen orders separate', None,
+     "r6901: TEN orders separate the substrate's vacuum from the progenitor's amplified one.  The "
+     "transfer law already carries the crunch mixing, so the amplification is the rho^-6 and not "
+     "a second factor on top of it; the two-step ladder double-counted."),
+
+    ("peak-heights-below-the-sky", r'20\.7\\?%\s*and\s*29\.2', None,
+     "r6899: the height ratios are 2.264 and 2.298 against the sky's 2.217 and 2.277 -- i.e. 2.1% "
+     "and 0.9% ABOVE.  The retired form said twenty and twenty-nine per cent BELOW.  ** A "
+     "sign-reversed number in the card a node reads to orient. **"),
+
+    ("chi2-397-over-206", r'397\.13', None,
+     "the like-for-like refit reports 550.5/214.1 on 185 bins, 556.7/279.4 on 133, and 1.58/1.01 "
+     "per bin refitted.  The 397.13/206.44 pair belonged to a different instrument's arm and "
+     "matches none of them."),
+
+    ("lowell-depths-0.49-0.44", r'0\.49\$ and \$0\.44', None,
+     "the low-multipole depths are 0.47 and 0.41 at ell = 2 and 3, on three body sites and the "
+     "ontology index; one abstract site carried the older pair."),
+
+    ("landing-the-sixteen", r'the sixteen|all 16 rounds', ('geometric_core_paper',),
+     "the landing section enumerates SEVENTEEN companions and the header repeated the miscount.  "
+     "** A COUNT IS A VALUE, AND THIS IS WHY COUNTS ARE REGISTERED HERE RATHER THAN IN A GATE OF "
+     "THEIR OWN. **  A checker that reads a number-word before a list was built and MEASURED at "
+     "r6907 and does not work: at the window that catches this instance -- the count sits a hundred "
+     "characters back, behind a dash and a comma -- it returns six false positives in seven, firing "
+     "on 'gathered in one place', 'that one map', 'the three parametrisations'; at the window with "
+     "no false positives it catches neither this instance nor the readings count, which was in prose "
+     "with no list at all.  *** Proximity does not separate a count from any other number in the "
+     "lead-in, so the instrument was withdrawn rather than allowlisted green. ***  What is left is "
+     "the shape the failure actually has: the same miscount in a body and a header while the list "
+     "disagrees, which is a superseded VALUE in two documents -- exactly this registry's job."),
+
+    ("dlnL-over-ell-8", r'\+1\.6\$? over \$?2\\le\\ell\\le8', None,
+     "Delta(-2 ln L) = +1.8 over 2 <= ell <= 10, on four sites including the canon header.  No "
+     "body passage supports +1.6 or the ell <= 8 range."),
+]
+
+
 # --- SECOND SCOPE, added the same revision it was needed -------------------------------------
 # The gate began by scanning the PAPERS.  Run on the standing registers it immediately found the
 # same withdrawn claim live in five forward-facing documents -- so a withdrawal that reaches the
@@ -463,6 +560,54 @@ def main():
                 if not mrk.search(scope):
                     ctx = txt[max(0, m.start() - 90):m.end() + 90].replace('\n', ' ')
                     bare.append((os.path.basename(r), label, ctx))
+    print()
+
+    # --- THE NUMERIC PASS, r6907 ------------------------------------------------------------
+    # ** No adjacent-marker escape, and the scope is the LIVE documents only. **  The records --
+    # the changelog, the register, the receipts, retired/ -- are where a retirement is written
+    # down by naming what it retired, so scanning them would fire on every correction.
+    live = [t for t in sorted(glob.glob(os.path.join(HERE, '*.tex')))
+            if not any(k in os.path.basename(t) for k in SKIP)]
+    live.append(os.path.join(REGISTER_DIR, 'ONTOLOGY_FOUNDATION_INDEX.md'))
+    print(f"  SUPERSEDED-VALUE SCAN -- {len(NUMERIC)} retired value(s) x "
+          f"{len(live)} live document(s)")
+    print()
+    stale = []
+    for label, pattern, only, prov in NUMERIC:
+        rx = re.compile(pattern)
+        # ⌗ A pattern that cannot match anything is a silent gate, so the selftest below
+        #   requires each to have been calibrated; here we only guard the obvious degenerate case.
+        if rx.search(''):
+            print(f"  [FAIL] {label}: the pattern matches the empty string and would fire on "
+                  f"everything.")
+            return 1
+        for t in live:
+            base = os.path.basename(t)
+            if only and not any(k in base for k in only):
+                continue
+            # ** HEADERS ARE SCANNED HERE, comments and all, and the phrase registry's own
+            #   r6477 note is the precedent: a canon header is what a node reads to orient, so
+            #   a superseded value in one is read by every seat that spins up on it.  Two of the
+            #   staleness instances found in this sweep were in headers.  ** Measured before
+            #   being adopted: scanning raw rather than stripped adds no hit on the clean tree. **
+            body = open(t, encoding='utf-8', errors='replace').read()
+            for m in rx.finditer(body):
+                ctx = body[max(0, m.start() - 110):m.end() + 110].replace('\n', ' ')
+                stale.append((base, label, prov, ctx))
+    if stale:
+        print(f"  ⛔ {len(stale)} SUPERSEDED VALUE(S) LIVE IN A PAPER OR THE INDEX.")
+        print(f"     ** A paper presents one state and never reports its own corrections, so a")
+        print(f"     retired number has no honest bare form here. **")
+        print()
+        for f, label, prov, ctx in stale:
+            print(f"     [{f}] ({label})")
+            print(f"        ...{ctx}...")
+            print(f"        what replaced it: {prov}")
+            print()
+        print("  Fix by carrying the current value, not by annotating the old one.")
+        return 1
+    print(f"  No superseded value is live.  ⌗ A retirement is not finished until its value is")
+    print(f"  in this file's NUMERIC registry -- that is the half a cold read had to do by hand.")
     print()
 
     if bare:
