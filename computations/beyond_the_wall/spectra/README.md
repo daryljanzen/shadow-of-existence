@@ -108,7 +108,7 @@ Launcher: `../r6889_directions/launch.sh`, idempotent.
 | `r6889_noop_{lcdm,cr}.npz` | **nothing set** | ⚑ **max $\lvert\Delta\mathcal{D}_\ell\rvert = 0.0$ against `cc66_r185_verify_*` on BOTH arms — exactly zero, not nearly.** *This is the proof the edits are additive, and it is why the factor sits INSIDE the bracket: written outside it the default sums in a different ORDER and cost $1.1\times10^{-16}$. Measured, not foreseen.* |
 | `r6889_hdp0_{lcdm,cr}.npz` | `DPSRC=0` | moves $\mathcal{D}_\ell$ by **$62.3\%$ / $61.3\%$** where the same switch moved it by **exactly $0.0$** before the repair (`r6885_dp0_*`) — *the pair is what makes the shadow a proof rather than a null.* Contrast ratio $1.0401\to1.0376$; the arm's own oscillation $\to1.828$; cos with the contrast direction $\mathbf{+0.798}$ (LOS: $+0.893$) |
 | `r6889_hsw0_{lcdm,cr}.npz` | `SWSRC=0` | contrast ratio $\to1.0818$; the arm's own oscillation $\to\mathbf{-0.399}$ (it **inverts**); cos $\mathbf{-0.765}$ (LOS: $-0.791$) |
-| `r6889_nufs0_{lcdm,cr}.npz` | `NUFS=0` — the **new** knob: neutrinos as a perfect fluid at the same background density | moves $\mathcal{D}_\ell$ by $36.3\%$ / $37.3\%$ and pushes **every** peak on both arms to LARGER $\ell$, $+9.00$ uniformly across the first four — ⚠ *which is exactly one binned grid step, so the SIGN is established and the VALUE is grid-limited* |
+| `r6889_nufs0_{lcdm,cr}.npz` | `NUFS=0` — the **new** knob: neutrinos as a perfect fluid at the same background density | moves $\mathcal{D}_\ell$ by $36.3\%$ / $37.3\%$ and pushes **every** peak on both arms to LARGER $\ell$ — ⚠ *`r6889` read that as $+9.00$ uniformly across the first four, which was one binned grid step;* ⚠⚑ **CORRECTED r6893+cc66.37: located sub-bin the shift is NOT uniform — it rises monotonically with $\ell$, about $+3$ near the first peak to about $+12$ by $\ell\sim1500$, on both arms and on two independent locators and again at $\ell$-step 2.** ⇒ *And the two arms agree to $0.18$ of a multipole, so it is not a candidate for $\Delta$* |
 
 ⇒ ⚑ **The two halves of the source bracket the contrast with opposite signs on the reporting path
 too**, and agree in sign with the line-of-sight path on both — so `r6885+cc66.35`'s reading, that the
@@ -118,3 +118,37 @@ identified and the cause stays unmeasured.*
 
 Each is a few kilobytes: a strided ℓ grid and its D_ℓ, nothing else.  They are inputs to receipts,
 not results in themselves, and every one of them is reproducible from the command in the table.
+
+---
+
+## `r6893_*` — the switch sweep, the fine grid, and the full-reach nulls
+
+*`r6891`'s order, two parts. The **screen** is the measured half of the switch table: every
+environment switch the instrument reads, set away from the value it holds in the reporting
+configuration, one switch at a time, on both arms. The **fine grid** is order ①'s answer to "a locator
+on a finer $\ell$ grid". The **full-reach nulls** are the half reduced reach cannot carry.*
+
+| file | what is in it | why it is at this resolution |
+|---|---|---|
+| `r6893_switch_screen_{lcdm,cr}.npz` | **63 / 62 spectra**, keyed `ls__<tag>` / `Dl__<tag>` / `lA__<tag>` / `rs__<tag>` / `DM__<tag>` / `rc__<tag>`, plus a `failed` list. `HIER=1 LSTEP=16 LMAXL=500` | ⚑ **connectivity is path-dependent and NOT resolution-dependent** — a switch read on this path is read on it at any $\ell_{\max}$. One run is $22$–$52$ s instead of $\sim20$ min, which is what makes a sweep of every switch affordable at all |
+| `r6893_full_reach_nulls_lcdm.npz` | the nine OFF-PATH switches and the `LRSFROM` pair, re-run at `LSTEP=32 LMAXL=2000` | ⚠ *and this is the half the screen cannot carry: `DAMPX` and `RD` act on the **damping tail**, which $\ell\le500$ barely sees, so every switch the screen calls inert is re-run at the reported reach before the table calls it inert* |
+| `r6893_fine_grid_{lcdm,cr}.npz` | the same four spectra as `cc66_r185_verify_*` and `r6889_nufs0_*`, at `LSTEP=2 LMAXL=2000` — four times the multipole sampling | ⚑ *`cc66.36`'s shift was one bin step because the locator was the bin. Locating sub-bin on the same grid is not enough to say the answer is not the grid's: **these are the runs that say it, and the band-by-band locator reproduces the `LSTEP=8` answer to better than half a multipole*** |
+
+⇒ ⚑ **The screen's result is an ACCOUNTING and not a negative.** Sixty switches read, fifty-one with a
+live use site on the reporting path, fifty-five measured on both arms — and the set of runs that came
+back **bit-identical** is exactly the set four readings predict (off-path; rate-identity on the control
+arm; the arm branch; gated by another switch), with no unexplained null and nothing explained away that
+in fact moved. ⌗ *The nine off-path switches come back at $\max\lvert\Delta\mathcal{D}_\ell\rvert=0.0$
+**exactly**, eighteen runs, `RD` at two different values, and again at full reach.*
+
+⛭ **And two things the sweep turned up, neither moving a reported number.** `LRSFROM` moves the
+reported $r_s$ from $145.38$ to $110.49$ Mpc and $\mathcal{D}_\ell$ by exactly zero — $R_S$ and
+$\ell_A$ are **diagnostics** of this instrument, and `hier_run` accepts $\ell_A$, $D_M$ and $r_s$ and
+uses none of them, so `r6476`'s reachability check for that switch was taken on the **header**. And
+`LATARG` has **no root** at the arm's adjudicated background, which is why the refit command supplies
+`ZSTART=3e7` — the one run in the batch that exits non-zero, kept in the bank's `failed` list rather
+than dropped.
+
+Launchers: `/tmp` scratch is not the record — every run in these banks is one of the two refit commands
+with at most one switch added, and the screen's own grid (`HIER=1 LSTEP=16 LMAXL=500`) is in the table
+above, so each is reproducible from the receipt's `OFFVAL` table line by line.

@@ -256,7 +256,7 @@ EST = {
         'thermodynamic content, so there is nothing for the reassignment to transport and the construction is cleaner '
         'than it knew; or whether the reassignment needs something the vanishing denies it, in which case the '
         'framework owes an account of what crosses. Both are results; the second is worth looking for first.'),
-    'PO-56': ('the acoustic contrast difference, and no mechanism for it', 1, 0, 5, None,
+    'PO-56': ('the acoustic contrast difference, and no mechanism for it', 1, 1, 5, None,
         'OPENED r6891 as PO-13 remainder, on the standing order. PO-13 was struck at r6790 because the handover at '
         'the branch point supplies the one-locus state the row asked for, and it routed what it left -- the acoustic '
         'phase and the fourth peak -- into P15 sec:scope prose rather than into a row. BOTH HAVE SINCE DISSOLVED: the '
@@ -279,18 +279,41 @@ EST = {
         'signs on both, so the reading is not an artefact of the path it first had to be measured on. But neither '
         'deletion returns the two arms to a common contrast (1.0376 and 1.0818 against the base 1.0401), so the '
         'bracket locates where the difference enters and not what produces it, and about a third of the norm is '
-        'unnamed. ONE CANDIDATE IS NOW REACHABLE AND HAS NOT BEEN POINTED AT THE QUESTION: the neutrinos '
-        'free-streaming has a knob -- their anisotropic stress at both of its dynamical sites -- and it is calibrated. '
-        'Removing it pushes every peak on both arms to larger multipole, uniformly across the first four, which is a '
-        'phase shift signature, while the amplitude moves by about a third separately. Its size sits at the resolution '
-        'of the binning, so the SIGN is established and the VALUE is not, and reading the value off wants a locator on '
-        'a finer grid. A HAZARD THE ROW CARRIES RATHER THAN ASSUMES AWAY: three switches in this instrument have now '
-        'been found verified on a path they reach and used on a path they do not -- the tilt literal, the baryon '
-        'density, and the two source terms. Three found by three different routes is a RATE and not a count, and no '
-        'sweep of the remaining switches has been run, so every number on this row is held subject to one. DISCHARGE: '
+        'unnamed. THE ONE REACHABLE CANDIDATE HAS NOW BEEN POINTED AT THE QUESTION AND IT IS RULED OUT -- r6893. '
+        'The neutrinos free-streaming knob was located sub-bin, by a parabola vertex and again by an '
+        'envelope-normalised cross-correlation, on both arms and again at four times the multipole sampling. '
+        'THE SHIFT IS NOT UNIFORM, which corrects r6889: band by band it rises monotonically, +2.9 / +5.6 / +9.4 / '
+        '+10.9 / +12.6 on the control and +3.1 / +5.7 / +9.3 / +10.9 / +12.5 on the arm, so the uniformity r6889 '
+        'gated was the grid. AND IT IS COMMON TO THE TWO ARMS: the largest band-by-band difference is 0.17 of a '
+        'multipole and the extremum-averaged shift in units of each arm own l_A agrees to 1.7e-4, so on the order own '
+        'criterion -- a phase shift common to both is not a candidate for Delta and one that differs between them is '
+        '-- it is not a candidate. The drag half, kept apart and split in two because it is two things, says the same '
+        'independently: removing free-streaming raises the ENVELOPE by 25.7 per cent and changes the peak-to-trough '
+        'CONTRAST by -1.3 per cent, on both arms, agreeing to 0.0004 and 0.0006 -- and Delta is a CONTRAST difference, '
+        'so the knob large effect is in the wrong quantity. In Delta own space the two arms NUFS directions sit at a '
+        'whitened cosine of 0.99918; their difference freely rescaled could reach 8.7 per cent of the norm at a '
+        'NEGATIVE coefficient, and there is no such freedom because both arms carry the same neutrino sector. '
+        'THE HAZARD THE ROW CARRIED IS DISCHARGED -- r6893, and by an accounting rather than by a fourth find. '
+        'Three switches had been found verified on a path they reach and used on a path they do not -- the tilt '
+        'literal, the baryon density, and the two source terms -- and three by three routes is a RATE, not a count. '
+        'The sweep enumerates all SIXTY environment switches the instrument reads, records from the source text which '
+        'of the three source constructions and which of the two solver paths reads each, and measures fifty-five of '
+        'them on both arms one switch at a time. Fifty-one have a live use site on the reporting path; the nine that '
+        'do not come back BIT-IDENTICAL there, all eighteen runs at exactly 0.0, and again at full l reach where DAMPX '
+        'and RD would have shown if they touched the damping tail. The set of bit-identical runs is EXACTLY the set '
+        'four readings predict -- off-path, rate-identity on the control arm, the arm branch, and gated by another '
+        'switch -- with no unexplained null and nothing explained away that in fact moved. TWO THINGS THE SWEEP DID '
+        'TURN UP, neither of the r6476 class and neither moving a reported number: LRSFROM moves the instrument '
+        'reported r_s by a quarter, 145.38 to 110.49 Mpc, and its spectrum by exactly zero -- R_S and L_A are '
+        'DIAGNOSTICS, reaching a print and the SAVE metadata and nothing else, and hier_run accepts l_A, D_M and r_s '
+        'and uses none of the three, so r6476 reachability check for that switch was taken on the header and the '
+        'header is not the reported number; and LATARG, the corpus one fitted number, has NO ROOT at the arm '
+        'adjudicated background, which is why the refit command supplies ZSTART. A consequence worth the right way '
+        'round: because no transfer function reads L_A, the printed l_1/l_A agreeing with the sky 220.6/301.7 is an '
+        'agreement between two INDEPENDENTLY computed quantities and not a value fed in. DISCHARGE: '
         'a mechanism that raises this arm acoustic oscillation about its own envelope by four per cent where the '
         'control is not raised -- or a demonstration that the monopole-to-Doppler balance cannot differ between the '
-        'arms at that size, which moves the search to the unnamed third.'),
+        'arms at that size, which moves the search to the unnamed third. r6895 (66) GATES THE SWEEP AND RULES THE CANDIDATE OUT. The hazard clause is discharged by an accounting and not by a fourth find: sixty environment switches enumerated from the source text, fifty-one with a live use site on the reporting path, fifty-five measured on both arms one at a time, and the set of bit-identical runs EXACTLY the set four readings predict -- off-path, rate-identity on the control, the arm branch, gated by another switch -- with no unexplained null. Three shadows by three routes was a rate; it is now a count. AND THE FREE-STREAMING CANDIDATE IS RULED OUT: removing it moves both arms peaks by the same amount, band by band to a fifth of a multipole and in units of each arm own acoustic scale to two parts in ten thousand, while its large effect falls on the ENVELOPE and Delta is a CONTRAST difference -- a correction the two arms share cannot be what separates them. WITHDRAWN IN THE SAME PASS: r6889 uniformity claim, which this seat had landed in P15. The gate behind it compared differences of bin centres whose smallest non-zero spread is 5 against a tolerance of 0.05, so it could not express the difference it tested. TWO CONFIRMATIONS ARE OWED AND ARE NOT ON THE TREE: the LSTEP=2 re-run that would show the non-uniformity is not a property of the grid, and the full-reach re-run of the nine off-path nulls; the receipt fails on their absence rather than reporting the parts it can run as the whole. What stands without them is the sign, the non-uniformity (also established statically) and the arms agreement, that last being a difference taken on one grid with one locator, which a grid property moves alike. What does not is the SHAPE of the rise with multipole. ALSO NAMED SO IT IS NOT LOST: the sweep is of environment switches, and a hard-coded literal that ought to be a switch -- the cc66.17 tilt literal is the standing instance -- is a different search and has not been run.'),
     'PO-55': ('horizon entropy is reading-dependent under the central move', 1, 1, 3, None,
         'OPENED r6877 as PO-54 remainder, found by node 60 where the order was not looking. The causal reassignment '
         'relates two readings of one geometry whose horizon areas are GENERICALLY UNEQUAL, and PO-48 established that '
@@ -449,12 +472,14 @@ EST = {
 #   ~2000 revisions stale, still naming r4549 while the problem space moved repeatedly.  ** A
 #   "last actual move" line that is two thousand revisions behind reports the opposite of what it
 #   is for. **  Set to the last find that actually moved the picture.
-SINCE = 2
-LASTFIND = ("r6713: **the two faces are both five-dimensional and share one four-sphere** -- the "
-            "throat of dS_5 and the equator of S^5, fixed by the Wick rotation -- which is the one "
-            "place in either face where chirality exists, and its so(5) carries su(2) and cannot "
-            "carry colour. With r6709-r6711 it moves the picture: P14's SU(3) part is the finite "
-            "Delta(27), acting on the seat index, with SU(3) only its smallest connected home.")
+# ⛭ r6895 (66): RESET TO 0.  The switch sweep is the canonical case of the thing this counter
+#   counts -- it did not advance a step, it found that the map of the instrument was wrong in two
+#   places: a switch certified as reachability-checked had been certified on a PRINT rather than on
+#   the reported number, and a gate that passed could not have failed, its tolerance being 0.05 on
+#   bin-centre differences whose smallest non-zero spread is 5.  ** Learning that the instrument's
+#   printed acoustic scale is not an input to the instrument is learning the problem space. **
+SINCE = 0
+LASTFIND = ("r6895: **the instrument's switch surface is now closed rather than sampled** -- all sixty environment switches enumerated from the source text, fifty-five measured one at a time on both arms, and the set of bit-identical runs EXACTLY the set four readings predict, with no unexplained null.  Three shadows had been found by three routes and that was a rate, not a count; it is now a count.  And two certifications fell with it -- a switch checked on a print rather than on the reported number, and a gate whose tolerance could not express the difference it tested.")
 
 # ** CALIBRATION (r2848) -- estimates measured against actuals rather than felt. **
 # *** Six steps closed with a number attached; EVERY ONE took one turn; I had predicted
