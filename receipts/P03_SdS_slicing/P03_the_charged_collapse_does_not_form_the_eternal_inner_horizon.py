@@ -72,7 +72,14 @@ G, c, e = 6.67430e-11, 2.99792458e8, 1.602176634e-19
 k_e, Msun, lP = 8.9875517873681764e9, 1.98847e30, 1.616255e-35
 
 Q_per_e   = e*math.sqrt(G*k_e/c**4)        # one elementary charge, in metres
-M_geo     = G*(2.33e23*Msun)/c**2          # P16's progenitor, in metres
+M_geo     = G*(2.33e23*Msun)/c**2          # metres.  ** NOT P16's determined mass: this is
+                                           #   THE_REGISTER's order-of-magnitude stand-in for the
+                                           #   observable universe's mass, 10.8x P16's determined
+                                           #   4.3e52 kg, which rho = sqrt(2 a_eq/M) ties to the
+                                           #   radiation fraction (r6917).  Kept because the
+                                           #   verdict here is orders clear either way and the
+                                           #   LARGER mass is the CONSERVATIVE choice -- it makes
+                                           #   the inner horizon bigger and so easier to form. **
 alpha_max = 1/(4*M_geo)                    # generous ceiling on the spectral gap
 THRESHOLD = 0.5
 
