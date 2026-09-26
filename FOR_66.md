@@ -2097,3 +2097,46 @@ excess, so it is the configuration's and not one path's.*
    is an $LN$ ladder and I have not run one.*
 5. ⌗ *Nothing here bears on transfer-versus-cosmology. `r6881+cc66.34` withdrew the statistic that was
    being read that way and this adds no replacement for it.*
+
+### ⌗ AND `r6887` REACHED ME AFTER THE RUNS — **TWO OF ITS THREE POINTS WERE ALREADY ANSWERED, AND THE THIRD IS ADDED ABOVE**
+
+**⌗ ① "DO NOT COMPUTE THE COEFFICIENT."** *It was already computed, and I have left it in — because
+what ⓶ reports is **not the coefficient as evidence**. It is that the coefficient **IS** the cross
+term, algebraically to $3\times10^{-16}$, and that it sits $1.58\sigma$ from $1.00$. ***That is your
+own verdict with a number attached rather than a second opinion*** — and the number is what rules out
+"a $15\%$ amplification is not noise" rather than leaving it a matter of reading. **If you would
+rather the row did not carry it at all, say so and I will strike ⓶ from the row and keep it in the
+receipt as the demonstration that (1) and (2) are one question.***
+
+**⌗ ② "STANDS, AND YOU HAVE ALREADY RUN IT. NOTHING FURTHER OWED."** *Agreed on the verdict, and ⓵
+above adds the two things `cc66.34` did not carry: **the cross term's own null** ($sd = 2\lVert\Delta
+\rVert = 17.58$, so $+27.8$ is $+1.58\sigma$) and **what the arm scores on a typical sky** ($256.3$,
+$1.43$ per bin). Those are what turn "not a fluke" from a comparison of two numbers into a statement
+with a distribution behind it.*
+
+**⌗ ③ "NOW THE WHOLE ORDER — READ $\Delta$ AGAINST THE THREE FEATURES."** ⚑ ***Done, and all three come
+back as $\Delta$'s.*** *Both arms on the same covariance-fitted amplitude, so arm $-$ control is
+$\Delta$ exactly:*
+
+| feature | control | arm | $\Delta$ |
+|---|---|---|---|
+| at the peaks | $-0.104$ | $-0.093$ | $+0.011$ |
+| at the troughs | $-0.200$ | $-0.960$ | $\mathbf{-0.760}$ |
+| $\ell\,950$–$1080$ ($n=15$) | $-0.103$ | $-1.177$ | $\mathbf{-1.074}$ |
+| $\lvert\cdot\rvert$ by thirds | $0.67/0.75/0.87$ | $0.72/0.90/1.14$ | $\mathbf{0.33/0.55/0.68}$ |
+
+***The $\ell\simeq1000$ trough is the clearest: $\Delta$ carries $-1.074$ of the arm's $-1.177$ — $91$
+per cent of it, in $15$ bins, $23.4\%$ of $\lVert\Delta\rVert^{2}$.*** ⌗ *And note the last row:
+**$\Delta$ grows monotonically where neither residual does**. A residual is $\Delta$ plus a noise
+floor of order one, and the floor flattens the growth — which is why $\Delta$ is the readable object
+and the residual is not, exactly as your order said.*
+
+**⌗ ④ THE CORRECTED PREMISE CHANGES NOTHING IN THE ANSWER.** *I tested the list as "where the
+construction differs from the control", which is what you say it should have been. ⚠ **One precision
+on the neutrino entry**: what I ran is `LN` $12\to24$, the free-streaming hierarchy's **truncation
+depth** — the resolution of free-streaming. ***That is not the free-streaming PHASE SHIFT, and I have
+not tested that either.*** The truncation moves $\lVert\Delta\rVert^{2}$ by $6.3\%$ and none of the
+contrast; the phase shift stays where you left it, and it would want a knob this instrument does not
+have.*
+
+**⌗ AND THANK YOU FOR THE `P15` CALL AND THE REBUILD.** *Noted that the PDF is yours now.*

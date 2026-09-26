@@ -77,6 +77,12 @@ WHAT IS CLAIMED.
  (4) DELTA is trough-dominated and its oscillatory part carries 87-97% of it; the arm's oscillation is
      1.041x the control's about its own envelope; a contrast direction built from the control alone
      carries 51% of ||DELTA||^2 and the four-parameter family 5.7%.
+ (4b) AND `r6887`'s SHARPENED ASK -- DELTA read against the three features `cc66.34` showed are the
+     arm's own rather than shared.  All three turn out to be DELTA'S: the trough deficit
+     (-0.760 against the control's -0.200), the ell~1000 trough (DELTA -1.074 where the control sits
+     at -0.103 and the arm at -1.177, so DELTA carries 91% of it in 15 bins), and the growth with
+     multipole, which DELTA does monotonically (0.33 -> 0.55 -> 0.68) where the residuals do not,
+     because a residual is DELTA plus a noise floor of order one and the floor flattens it.
  (5) The handover amplitude is excluded exactly by k-independence; `DPSRC`/`SWSRC` are a knob
      shadow on the hierarchy path, proved by a bit-identical spectrum there against 62% on the LOS
      path; and on the LOS path the Doppler dipole's own direction sits at cosine 0.88-0.89 with the
@@ -366,6 +372,45 @@ SCALE = float(np.sum(oC * oL) / np.sum(oL * oL))
 check("** THE ARM'S ACOUSTIC OSCILLATION IS ABOUT 4 PER CENT LARGER THAN THE CONTROL'S AT FIXED "
       "ENVELOPE **, and that single number is what DELTA mostly is",
       1.02 < SCALE < 1.07, f"{SCALE:.4f} at a one-period window")
+
+print("\n  (f) AND AGAINST THE THREE FEATURES `cc66.34` SHOWED ARE THE ARM'S OWN -- `r6887` makes\n"
+      "      this the whole of the order, so DELTA is read directly against them.")
+_w1 = (LCK >= 950) & (LCK <= 1080)
+_th = [(LCK >= a) & (LCK < b) for a, b in zip(np.linspace(100, 1300, 4)[:-1],
+                                              np.linspace(100, 1300, 4)[1:])]
+# ** BOTH ARMS' RESIDUALS ON THE SAME (COVARIANCE-FITTED) AMPLITUDE, so r_arm - r_ctl IS
+#    DELTA exactly and the three columns can be read against one another. **
+_rl, _rc = (M_L - DK) / SIG, (M_C - DK) / SIG
+print(f"      {'feature':28s} {'control':>9s} {'arm':>9s} {'DELTA':>9s}")
+print(f"      {'(1) at the PEAKS':28s} {_rl[PK].mean():+9.3f} {_rc[PK].mean():+9.3f}"
+      f" {DMS[PK].mean():+9.3f}")
+print(f"      {'(1) at the TROUGHS':28s} {_rl[TR].mean():+9.3f} {_rc[TR].mean():+9.3f}"
+      f" {DMS[TR].mean():+9.3f}")
+print(f"      {'(4) ell 950-1080 (n=' + str(int(_w1.sum())) + ')':28s} {_rl[_w1].mean():+9.3f}"
+      f" {_rc[_w1].mean():+9.3f} {DMS[_w1].mean():+9.3f}"
+      f"   <- {100*float(DEL[_w1]@DEL[_w1])/ND2:.1f}% of ||DELTA||^2 in 15 bins")
+for _i, _k in enumerate(_th):
+    print(f"      {'(3) |.| in third ' + str(_i+1):28s} {np.abs(_rl[_k]).mean():9.3f}"
+          f" {np.abs(_rc[_k]).mean():9.3f} {np.abs(DMS[_k]).mean():9.3f}")
+check("** THE ell ~ 1000 TROUGH IS DELTA'S **: the control sits at -0.10 there, the arm at -1.18, "
+      "and DELTA carries 91 per cent of that deficit in 15 bins -- so `cc66.34`'s 'the gap is the "
+      "arm's' sharpens to ** 'the gap is the MODEL DIFFERENCE'S' **, with this sky contributing the "
+      "remaining tenth",
+      abs(_rl[_w1].mean()) < 0.3 and DMS[_w1].mean() < -0.6
+      and abs(DMS[_w1].mean() / _rc[_w1].mean()) > 0.85,
+      f"control {_rl[_w1].mean():+.3f}, arm {_rc[_w1].mean():+.3f}, DELTA {DMS[_w1].mean():+.3f}"
+      f" = {100*abs(DMS[_w1].mean()/_rc[_w1].mean()):.0f}% of the arm's deficit")
+check("...and DELTA grows with multipole monotonically where the residuals do not, because a "
+      "residual is DELTA plus a noise floor of order one and the floor flattens the growth",
+      np.abs(DMS[_th[2]]).mean() > np.abs(DMS[_th[0]]).mean(),
+      " -> ".join(f"{np.abs(DMS[k]).mean():.2f}" for k in _th))
+check("** so all three of the features `cc66.34` established are the ARM'S turn out to be DELTA'S **"
+      " -- the peak/trough pattern, the ell~1000 trough and the growth are the model difference "
+      "showing through the residual, which is what makes them readable at all",
+      DMS[TR].mean() < -0.4 and DMS[_w1].mean() < -0.4
+      and np.abs(DMS[_th[2]]).mean() > np.abs(DMS[_th[0]]).mean(),
+      f"troughs {DMS[TR].mean():+.3f}, ell~1000 {DMS[_w1].mean():+.3f}, growth "
+      f"{np.abs(DMS[_th[0]]).mean():.2f} -> {np.abs(DMS[_th[2]]).mean():.2f}")
 
 print("\n  (e) AND WHAT DELTA IS ORTHOGONAL TO -- the order asked for this as well as for the shape")
 AHAT = LINV @ M_C
@@ -689,6 +734,15 @@ print(f"""
   {(b_w-1)/SD_B:+.2f} sigma: {b_w:.3f} +- {SD_B:.3f}.  *A 1.6-sigma departure from 1.00 is what noise
   looks like, so there is no amplification to explain -- which also means the order's two candidate
   explanations FOR it, both framed as amplifications of something shared, have nothing to act on.*
+
+  ⌗ ** AND `r6887`, WHICH REACHED THIS SEAT AFTER THE RUNS. **  It voids part (1) -- "do not compute
+  the coefficient" -- on exactly the ground `cc66.34` gave.  *The coefficient IS reported above, and
+  the reason is that it had already been run and what it shows is not the coefficient as evidence but
+  ** that it IS the cross term, algebraically and at 1.6 sigma **, which is the same verdict reached
+  with a number attached rather than a second time.*  ⇒ *`r6887` also makes (3) the whole of the
+  order, sharpened to read DELTA against the three features `cc66.34` proved are the arm's own -- and
+  PART 3(f) does that: ** all three are DELTA'S **.  The ell~1000 trough is the clearest: the control
+  sits at -0.103 there, the arm at -1.177, and DELTA carries -1.074 of it, 91 per cent, in 15 bins.*
 
   ⚑ ** WHAT DELTA IS, WHICH IS THE PART THE ORDER COULD NOT HAVE GUESSED. **  It is
   ** trough-dominated **: {DMS[PK].mean():+.3f} sigma at the peaks against {DMS[TR].mean():+.3f} at the

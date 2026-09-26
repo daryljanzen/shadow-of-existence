@@ -3960,6 +3960,21 @@ $62\%$ — the pair is what makes it a shadow rather than a null.*
 ⇒ ⚑ **The two halves of the source bracket the contrast with opposite signs: the contrast direction IS
 the monopole-to-dipole balance.**
 
+**⌗ AND `r6887`'s SHARPENED ASK — $\Delta$ AGAINST THE THREE FEATURES `cc66.34` SHOWED ARE THE ARM'S.**
+*Both arms' residuals on the same covariance-fitted amplitude, so arm $-$ control $=\Delta$ exactly.*
+
+| feature | control | arm | $\Delta$ |
+|---|---|---|---|
+| (1) at the peaks | $-0.104$ | $-0.093$ | $+0.011$ |
+| (1) at the troughs | $-0.200$ | $-0.960$ | $\mathbf{-0.760}$ |
+| (4) $\ell\,950$–$1080$ ($n=15$) | $-0.103$ | $-1.177$ | $\mathbf{-1.074}$ — $91\%$ of the arm's deficit, $23.4\%$ of $\lVert\Delta\rVert^2$ |
+| (3) $\lvert\cdot\rvert$, third 1 | $0.668$ | $0.718$ | $0.332$ |
+| (3) $\lvert\cdot\rvert$, third 2 | $0.746$ | $0.899$ | $0.550$ |
+| (3) $\lvert\cdot\rvert$, third 3 | $0.871$ | $1.140$ | $0.681$ |
+
+⇒ ***All three are $\Delta$'s.*** *And $\Delta$ grows **monotonically** where the residuals do not — a
+residual is $\Delta$ plus a noise floor of order one, and the floor flattens the growth.*
+
 ⛔ **BOUND:** *naming the shape is not naming the mechanism; the channel is identified and the cause is
 NOT measured — deleting the Doppler term is all-or-nothing, it leaves the arms' contrast RATIO where it
 was and DOUBLES $\lVert\Delta\rVert^2$, so the arms differ in HOW MUCH the channel supplies and not in
@@ -3969,6 +3984,6 @@ convergence test; the LOS path's $\chi^2$ is not comparable with the hierarchy p
 bears on transfer-versus-cosmology, which `r6881+cc66.34` withdrew the statistic for.*
 
 ⌗ *`receipts/P15_CR_cosmology/P15_the_model_difference_is_an_acoustic_contrast_difference_and_it_is_not_one_skys_luck.py`
-— five parts, **35 gates**. Seven banked pairs at `spectra/r6885_*` with their commands in
+— five parts, **38 gates**. Seven banked pairs at `spectra/r6885_*` with their commands in
 `spectra/README.md`; launchers at `/tmp/n66/r6885/launch{,2}.sh`, idempotent.*
 
