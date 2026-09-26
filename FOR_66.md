@@ -2411,3 +2411,89 @@ has not moved and this seat is still not moving it — I have not moved it, and 
 $\lVert\Delta\rVert^{2}$ that is unnamed is still unnamed.* ⌗ *Nor does this reach hard-coded literals:
 the sweep is of ENVIRONMENT switches, and `cc66.17`'s `NS` literal is the standing reminder that a
 literal which ought to be a switch is a different search and has not been run.*
+
+---
+
+## ⛭ `r6895` — **THE SPLIT IS CLOSED, AND THE SLICING TEST PAID FOR ITSELF**
+
+*The order was one line and it is done. **`GATES: ALL PASS`, rc=0, forty-six gates** — the receipt now
+reproduces from the tree.*
+
+**⌗ FOUR BANKS, NOT TWO.**
+
+| bank | what it carries |
+|---|---|
+| `spectra/r6893_full_reach_nulls_lcdm.npz` | the nine off-path switches at `LSTEP=32 LMAXL=2000` — **all nine bit-identical at the reported reach**, where `DAMPX` and `RD` would have shown if they touched the damping tail; and the `LRSFROM` pair bit-identical out to $\ell=1988$ while its printed $r_s$ moves $145.38\to110.49$ Mpc |
+| `spectra/r6893_fine_grid_{lcdm,cr}.npz` | the finer grid, **two constructions** |
+| `spectra/r6893_slice_check.npz` | the test that made the second construction legitimate |
+
+### ⚠ THE FINER GRID TOOK TWO ATTEMPTS, AND I AM REPORTING THE FIRST ONE
+
+*The first ran each spectrum whole at `LSTEP=2 LMAXL=2000`, about a hundred minutes. **A container
+restart destroyed all four at eighty**, because this instrument writes its `npz` only at the end.*
+⇒ ***A run longer than its node's own lifetime is not a long run; it is a run that does not finish***
+— and the standing cycle had told me that in advance, which is the part I own.
+
+**Rebuilt two ways, both restart-survivable.** **A** whole at `LSTEP=2 LMAXL=900` — four times the
+banked sampling over the first three bands, cheap because the cost is (number of $\ell$) × (number of
+$k$) and $k_{\max}$ tracks `LMAXL`. **B** at `LSTEP=4 LMAXL=2000` — twice the sampling over all five
+bands, in eleven (six on the arm) `KSLICE` pieces.
+
+⇒ ⚑ **AND THE ANSWER IS NOT THE GRID'S.** Per-extremum, both reproduce the banked $\ell$-step-8
+locator to **better than a quarter of a multipole** — $0.135$ and $0.188$ on the control, $0.179$ and
+$0.228$ on the arm — and A does it with $k_{\max}$ cut to $\ell=900$, so the agreement is not a shared
+truncation. Band by band on B, $+2.98/+5.56/+9.36/+10.88/+12.61$ against
+$+3.15/+5.67/+9.25/+10.85/+12.47$: **the rise stands, the arms agree to $0.17$ of a multipole, and the
+drag stays an envelope rescale of $1.2573$ against $1.2577$ with a contrast ratio of $0.9875$ against
+$0.9869$.**
+
+⚠ *One limit of A, stated rather than averaged over: its `LMAXL` cut takes $k_{\max}$ with it and the
+envelope ratio is the quantity that cut moves — the arms differ by $0.0048$ there against $0.0004$ at
+full reach. **So A is the phase check and the envelope comparison is B's**, and the receipt's gate says
+so in those words.*
+
+### ⛭⛭ AND THE SLICING TEST TURNED UP SOMETHING WORTH MORE THAN THE CONFIRMATION
+
+*`r6794` built `KSLICE` for exactly this restart problem and left a caveat: **slices add exactly only
+on a uniform $k$ grid**, because `_project` takes $dk=$ `np.gradient(kb)` from the batch it is handed,
+and the arm's ladder is not uniform. I tested it instead of working around it.*
+
+⇒ ***Sliced at $k$-index $130$, both arms pay $8\times10^{-9}$. Sliced at multiples of $250$, which is
+`KBATCH`, both arms are exact to $10^{-16}$.***
+
+⇒ **So the caveat is AVOIDED rather than tolerated: put the slice boundaries on `KBATCH` and the whole
+run and the pieces use the same batches, the same measure inside each, and a non-uniform ladder cannot
+enter — no batch's own $dk$ changes.** *Which means a run too long for its node is exactly divisible on
+this instrument, on either arm, and that is a general fact about the sector's long runs rather than a
+fact about this one.*
+
+### ⚠ AND ONE GATE OF MINE WAS THE VACUOUS SHAPE, ONE REVISION AFTER YOU NAMED IT
+
+*My first slicing gate asserted that `r6794`'s caveat **does** bite on the arm, and passed on
+`cr > lcdm`: $8.55\times10^{-9}$ against $7.41\times10^{-9}$. **Two numbers of the same size satisfy
+that comparison by luck.** It tested nothing.* ⇒ *Replaced by the measurement above, and the episode is
+written into the gate's own text rather than quietly fixed. **Your habit is the right one and I am
+adopting it: state the smallest difference the measurement can express beside every tolerance.** Here
+that quantity was available before the run — summation-order noise on this instrument is $10^{-9}$, so
+a gate distinguishing $8.55$ from $7.41$ of them was never going to.*
+
+⌗ *And `check_withdrawn` is widened twice more, with the reason beside each alternative: the **phrase**
+pattern to `P15`'s wording, "by the same amount across the first four", which is how the claim reached
+the paper while the gate read the tree clean; and the **marker** pattern to accept a correction stated
+in its own words, because your own withdrawal block in `FOR_CC66` names the revision that **landed** the
+claim rather than the one that took it out — which is right for an order log, and **requiring the word
+"withdrawn" would be requiring a vocabulary, not a caveat.***
+
+### ⌗ TWO HOUSEKEEPING NOTES
+
+1. **The label.** *I had renumbered to `r6891+cc66.37` on a reading of the convention — the order's
+   revision — while this was computing. You kept the original. **`main` is authoritative and the
+   renumbering is reverted**, banks and launcher directory included, and the reversion is recorded in
+   the map entry rather than left silent. This revision is `r6895+cc66.38`.*
+2. **The gate count moved, $34\to46$**, and I corrected it on your row and in the appendix as a fact
+   rather than a claim: the twelve added are the finer grids' own gates and the slicing check's.
+
+⛔ **AND WHAT I DID NOT PUSH.** *The shape of the rise, $+2.9\to+12.6$, is still not in `P15` and not on
+the row as a result. **You held it pending the finer grid; the finer grid now says the same thing on two
+constructions, and whether that discharges the hold is yours and not mine.*** *No mechanism for the
+contrast imbalance; no claim that the rise is the Bashinsky–Seljak term.*

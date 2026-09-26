@@ -4202,7 +4202,71 @@ different search — `cc66.17`'s `NS` literal is the reminder. The screen runs a
 the NULLS are re-run at full reach.*
 
 ⌗ *`receipts/P15_CR_cosmology/P15_the_free_streaming_knob_is_common_to_both_arms_and_the_switch_sweep_finds_no_further_shadow.py`
-— five parts, **34 gates**. The screen banked at `spectra/r6893_switch_screen_{lcdm,cr}.npz`, the fine
+— five parts, **46 gates (34 at `r6893+cc66.37`; the twelve added at `r6895+cc66.38` are the finer grids' own and the slicing check's)**. The screen banked at `spectra/r6893_switch_screen_{lcdm,cr}.npz`, the fine
 grid at `spectra/r6893_fine_grid_{lcdm,cr}.npz`, the full-reach nulls at
 `spectra/r6893_full_reach_nulls_lcdm.npz`. The instrument gains COMMENTS ONLY, and even that is
 measured: both arms' bases re-run against the annotated file at exactly $0.0$.*
+
+
+# ⛭ r6895+cc66.38 — THE SPLIT CLOSED: THE RECEIPT REPRODUCES FROM THE TREE, AND THE FINER GRID IS MEASURED
+
+*`r6895` gated the sweep with one split — the confirmation banks were not in the push, so on `main`
+the receipt read thirty-two passed and three failed on bank absence, which is `r4549`'s shape: a
+result stated in a message whose receipt does not reproduce from the tree. **The order was one line.
+Four banks are pushed and the receipt runs to `GATES: ALL PASS` at forty-six gates.***
+
+## ⚠ THE FINER GRID TOOK TWO ATTEMPTS, AND THE FIRST IS WHY THE SECOND IS BUILT AS IT IS
+
+The first attempt ran each spectrum whole at `LSTEP=2 LMAXL=2000`, about a hundred minutes.
+**A container restart destroyed all four at eighty**, because this instrument writes its `npz` only at
+the end. ⇒ ***A run longer than its node's own lifetime is not a long run; it is a run that does not
+finish.***
+
+| | construction | what it buys |
+|---|---|---|
+| **A** | `LSTEP=2 LMAXL=900`, whole | **four times** the banked sampling over the first three acoustic bands; cheap because the cost is (number of $\ell$) × (number of $k$) and $k_{\max}$ tracks `LMAXL` |
+| **B** | `LSTEP=4 LMAXL=2000`, in eleven (six on the arm) `KSLICE` pieces of 250 modes | **twice** the sampling over all five bands, resumable at slice granularity |
+
+## ⚑ AND THE ANSWER IS NOT THE GRID'S
+
+| | banked, step 8 | A, step 2 | B, step 4 |
+|---|---|---|---|
+| control, per extremum | $+5.66\,+1.99\,+6.22\,+8.84\,+9.49\ldots$ | $+5.62\,+2.12\,+6.27\,+8.89\,+9.38$ | $+5.63\,+2.10\,+6.28\,+8.85\,+9.48\ldots$ |
+| largest disagreement with step 8 | — | $0.135$ | $0.188$ |
+| arm, largest disagreement | — | $0.179$ | $0.228$ |
+
+⇒ **Better than a quarter of a multipole on both arms and on both grids — and A does it with $k_{\max}$
+cut to $\ell=900$, so the agreement is not a shared truncation.** Band by band on B:
+$+2.98/+5.56/+9.36/+10.88/+12.61$ on the control against $+3.15/+5.67/+9.25/+10.85/+12.47$ on the arm.
+**The rise stands; the arms' agreement stands at $0.17$ of a multipole; the drag stays an envelope
+rescale of $1.2573$ against $1.2577$ with a contrast ratio of $0.9875$ against $0.9869$.**
+
+⚠ *A's `LMAXL` cut takes $k_{\max}$ with it, and the envelope ratio is the quantity that cut moves —
+the two arms differ by $0.0048$ there against $0.0004$ at full reach. **So A is the phase check and the
+envelope comparison is B's**, stated rather than averaged over.*
+
+## ⛭⛭ AND ONE THING WORTH MORE THAN THE CONFIRMATION, FOUND WHILE TESTING THE SLICING
+
+`r6794` built `KSLICE` for exactly this restart problem, and recorded a caveat: **slices add exactly
+only on a uniform $k$ grid**, because `_project` takes $dk=$ `np.gradient(kb)` from the batch it is
+handed, and the CR arm's ladder is not uniform.
+
+⇒ ***Measured. Sliced at $k$-index $130$, both arms pay $8\times10^{-9}$. Sliced at multiples of $250$,
+which is `KBATCH`, both arms are exact to $10^{-16}$.***
+
+⇒ **So the caveat is AVOIDED rather than tolerated: put the slice boundaries on `KBATCH` and the whole
+run and the pieces use the same batches, the same measure inside each, and a non-uniform ladder cannot
+enter — because no batch's own $dk$ changes.** *A run too long for its node is exactly divisible on
+this instrument, on either arm.*
+
+⚠ *And one gate of mine was the vacuous shape `r6895` had just finished naming: the first version
+asserted the caveat DOES bite on the arm and passed on `cr > lcdm`, $8.55\times10^{-9}$ against
+$7.41\times10^{-9}$. **Two numbers of the same size satisfy that by luck.** Replaced, and the episode
+written into the gate's own text.*
+
+⛔ **BOUND:** *the shape of the rise is NOT pushed as a paper result — `r6895` held it and this does not
+move it; no mechanism for the contrast imbalance; and no claim that the rise is the Bashinsky–Seljak
+term.*
+
+⌗ *Launchers: `computations/beyond_the_wall/r6893_directions/` — nine idempotent scripts and both
+bankers, with a README saying what each is for and why it runs at the grid it does.*
