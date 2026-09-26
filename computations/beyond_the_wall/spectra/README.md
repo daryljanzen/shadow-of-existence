@@ -181,3 +181,38 @@ $10^{-16}$ on both arms — so a container restart costs one slice and not a run
 one revision ago while testing something else, and this is the first order it paid for.*
 
 Launchers: `../r6897_directions/`, with a README saying what each is for.
+
+---
+
+## `r6911_*` — the source at both ends of the chain, the no-op pair, and the arm on the control's kind of $k$ grid
+
+*`r6911`'s order: **where is the acoustic contrast made — in the source, or in the projection?** The $\ell$
+end was already banked (`cc66_r185_verify_*`, ratio $1.040$); the $k$ end had never been saved at all, so
+`SRCSAVE` was added and run here. ⌗ These are not spectra either: they are the **source** — $g$ times a
+combination of fields, plus two $\eta$-derivatives — which is a different object from the fields `r6897`
+banked and from the $C_\ell$ everything else here holds.*
+
+| file | what is in it | why it is what it is |
+|---|---|---|
+| `r6911_source_{lcdm,cr}.npz` | on the run's own $k$ grid: the source at last scattering **term by term** — $g(\Theta_0+\Psi)$, the Doppler dipole, the ISW, the polarisation pair — and each term's $\eta$-**integral**, which is the same transfer with the Bessel kernel taken out; plus the $k$-measure $P(k)$, the reported $D_\ell$, and `Dl_swap`, the same source projected through the **other arm's** comoving distance | written by the new `SRCSAVE`, wired into `_project` — **the reporting path**. ⚑ Both the slice and the $\eta$-integral are banked because they are different rungs: an $\eta$-average *without* the kernel is not the same operation as the kernel acting across the visibility, and separating them is what says the step is the kernel's. ⌗ The four terms are banked separately and the receipt **gates that they sum to the instrument's own `S`** ($2.8\times10^{-17}$), so a future edit to `S` that forgets the save block fails there rather than silently |
+| `r6911_source_cr_kcont.npz` | the arm again with `KCONT=1` — the uniform continuum sampling at $2547$ modes, the control's own count — everything else the adjudicated minimum | ⛔ **the one artefact that could have produced the whole answer.** The arms' $k$ grids are not the same *kind* of grid (the control's uniform, CR's the physical ladder $k_L=\sqrt{L(L+2)}/r_0$), and the projection is a sum over that grid with `dk = np.gradient(kb)` as its measure. *Three of the last five findings on this line were resolution or reference artefacts; this is the run that says this one is not* |
+| `r6911_noop.npz` | both arms at the screen grid with `SRCSAVE` **unset**, and again with `SRCXS=1.5` and `SRCSAVE` still unset | the edit adds a branch inside `_project`, which every reported spectrum calls once per $k$-batch — gated **bit-identical** against the banked screen base before any other number is read. ⌗ The second pair is what makes `SRCXS` an output of the save rather than a knob on the physics: set alone it does **nothing at all**, exactly |
+
+⇒ ⚑⚑ **What they say.** The same statistic reads $0.996$ on the source at last scattering, $0.992$ on the
+$\eta$-integrated source, $1.045$ on the raw spectrum and $1.047$ on the banked one. **The excess is
+manufactured between $k$ and $\ell$** — and the order's named route is not how: the arms' distances differ
+by $+0.449\%$ with the **arm's the larger** (not $-6.2\%$; $13005/13865$ is the superseded configuration),
+and removing the difference altogether takes the ratio *up*, $1.045\to1.051$.
+
+⚠ **The $\ell$-space envelope could not be carried across unchanged, and finding that out is part of the
+measurement.** `r6885+cc66.35`'s running *geometric* mean needs a strictly positive quantity; the source
+power comes within a part in $10^{8}$ of its own median at the troughs. So the envelope is a running
+**arithmetic** mean at every rung, both definitions are reported, and the two differ by $0.003$ on the
+$\ell$ rung against the $0.05$ step being measured.
+
+⚑ **Every long run here is sliced on `KBATCH` boundaries**, and this bank re-gates that: the sliced runs
+reproduce the banked $185$-bin refit spectra to $4.9\times10^{-15}$ relative on the control and
+$6.3\times10^{-16}$ on the arm — **which is what makes the $k$ end and the $\ell$ end one run rather than
+two.**
+
+Launchers: `../r6911_directions/`, with a README saying what each is for.

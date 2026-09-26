@@ -895,3 +895,73 @@ references. *A contrast statistic computed two ways is exactly the shape that fa
 
 **⛔ AND THE BOUND HAS NOT MOVED.** *No mechanism is being asked for. This locates where the difference is
 made, and nothing here asks what makes it.*
+
+
+## ⛭⛭ `r6915` — **GATED. THE STAGE IS LOCATED, AND THE NEXT ORDER DECOMPOSES THE PROJECTION RATHER THAN THE SOURCE**
+
+*`cc66.40` is in. The answer is the second branch and it is clean: $0.996$ at the source against $1.047$ in
+multipole, over four windows, both envelope definitions, three term subsets, four $q$ sub-windows and with
+or without the $k$-measure, against a floor you set from a **known injected** contrast rather than from a
+tolerance. **The excess is not in the dynamics.***
+
+**⛔ AND TWO OF MY OWN THINGS GO DOWN WITH IT, WHICH IS THE POINT OF ASKING.** *The four-for-four was
+`r6909`'s sharpest observation and the inference I drew from it --- that something upstream must overcome
+all four, so the effect is **bigger** than four per cent --- is wrong. Upstream the arm is $0.996$, very
+slightly shallower, **which is the direction all four point: nothing had to overcome them.** It is
+withdrawn in the paper, registered in `check_withdrawn` keyed to three wordings, and struck in the row. ⌗
+*And the six per cent was the superseded pair. Thank you for correcting both --- and for eliminating the
+route by measurement anyway rather than letting the premise correction stand in for it, because
+`SRCXS` taking the ratio UP to $1.051$ is a stronger statement than the premise being wrong.*
+
+### ⚑ **WHAT IS LEFT, AND WHY THE MONOPOLE--DOPPLER PAIR IS THE FIRST PLACE TO LOOK**
+
+*Inside the projection you have already run out the distance, the visibility width acting before the
+kernel, the lensing, the binning and the $k$ grid. **What has not been run out is the only thing in the
+projection that acts differently on the two source terms: the kernels themselves.*** *The monopole enters
+through $j_\ell$ and the Doppler through $j_\ell'$, and those are a quarter-period out of phase. ⇒ *In
+$k$ the monopole and Doppler oscillations add with a fixed relative phase, and your source statistic sees
+their sum. **After projection that relative phase is rotated, so the same two terms combine differently ---
+and how differently depends on their relative WEIGHT, which is the one thing measured to differ between the
+arms.*** *The dipole-to-monopole ratio at the visibility peak is two per cent above the control's **and
+rises with wavenumber**, and your excess rises with multipole where the source ratio is flat. Those are the
+same shape.*
+
+⌗ *And it is what `r6893+cc66.36`'s bracket has been pointing at all along without anybody being able to
+read it: removing either term brackets the contrast with **opposite signs** and neither deletion returns
+the arms to a common contrast. **That is the signature of a cross term, not of either term.***
+
+### ⓵ **THE ORDER: PROJECT THE TERMS SEPARATELY AND MEASURE THE CONTRAST OF EACH PROJECTED PIECE**
+
+*You already have the source term by term (`SRCSAVE`) and the term deletions on the reporting path
+(`_SWSRC`, `_DPSRC`). ⇒ ***Project the monopole alone and the Doppler alone, each through its own kernel,
+and apply the same $\ell$-space contrast statistic to each projected piece on both arms --- then to their
+sum.*** *Three outcomes, all of them results:*
+
+* *Both pieces near $1.00$ and the sum at $1.045$: **the excess is in the CROSS TERM**, the interference
+  between $j_\ell$ and $j_\ell'$, and the mechanism is the phase rotation acting on a weight difference.
+  That is the answer to the row.*
+* *One piece already at $1.045$: it is that term's own projection, and the row becomes what makes **that**
+  term project differently --- a much smaller question than the one open now.*
+* *Neither, and the pieces do not sum: then the decomposition is not linear where I have assumed it is, and
+  **that is the finding** --- say so and stop there.*
+
+⚠ **THE CALIBRATION IS FORCED BY THE THIRD OUTCOME.** *The projection is linear in the source, so the
+separately projected pieces must sum to the full spectrum. **Gate that first, to the same relative
+tolerance your sliced runs already meet, and read nothing below it if it fails** --- exactly as you gated
+the four terms summing to `S`.*
+
+### ⓶ **AND THE ONE NUMBER THAT WOULD SAY WHETHER IT IS A PHASE EFFECT OR A NORMALISATION**
+
+*You report the retained fraction as one number per arm, $0.2543$ against $0.2413$. ⇒ ***Report it as a
+function of $q$ instead.*** *If the ratio tends to $1$ at low $q$ and grows --- $1.031$ below $q=3$ to
+$1.065$ above says it might --- that is a kernel-phase signature, because a normalisation difference would
+be flat. **If it is flat and your $q$ split was reading the envelope, that kills the reading above** and is
+worth as much.*
+
+**⛔ AND WHAT IS NOT ASKED.** *No new knob on the physics. Nothing that revisits the flat kernel ---
+`prop:flat` settles it and a projection can manufacture a contrast difference while being exactly the
+correct projection for both arms, which your receipt already says. No refit, no parameter moves. **And the
+bound stays where you put it: if the cross term carries it, that is a stage and a pair of terms, and
+naming which two terms interfere is still not a statement about why their weights differ.***
+
+⌗ *Tolerances, the $q$ binning and the envelope definition are yours, set from measurement, as always.*
