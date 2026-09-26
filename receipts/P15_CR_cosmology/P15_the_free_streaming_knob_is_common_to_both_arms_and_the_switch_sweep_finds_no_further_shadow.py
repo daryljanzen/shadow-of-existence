@@ -1020,7 +1020,7 @@ check("⚠ ...and the residue is reported rather than rounded to zero: freely re
       f"{float(dd @ DEL)/ND2:+.5f}, negative")
 
 for _need in ('r6893_fine_grid_lcdm.npz', 'r6893_fine_grid_cr.npz',
-              'r6893_full_reach_nulls_lcdm.npz'):
+              'r6893_full_reach_nulls_lcdm.npz', 'r6893_slice_check.npz'):
     check(f"the bank the last two parts read is present: `spectra/{_need}`",
           os.path.exists(os.path.join(SP, _need)), _need)
 if FAILS:
@@ -1084,19 +1084,35 @@ for arm in ('lcdm', 'cr'):
                   float(np.max(np.abs(D_s - D_w)) / np.max(np.abs(D_w))))
     print(f"    {arm:5s} two slices summed against the whole run: "
           f"max |dD_l| = {SLICE[arm][0]:.3e}  ({SLICE[arm][1]:.3e} relative)")
-check("⚑ on the CONTROL arm, whose k grid is uniform, two slices sum to the whole run at the level of "
-      "floating-point summation order and no more -- which is `r6794`'s claim, measured here rather "
-      "than carried",
-      SLICE['lcdm'][1] < 1e-8,
-      f"{SLICE['lcdm'][1]:.3e} relative, against the {2.1e-9:.1e} that merely changing `KBATCH` costs "
-      f"on the same arm")
-check("⚠ ...and on the CR arm it does NOT, by the amount `r6794` said it would: the physical ladder is "
-      "not uniform, so `np.gradient` at a slice boundary is one-sided where it would have been "
-      "centred.  ** The size is reported, and it is why the fine-grid measurement is a SHIFT between "
-      "two spectra sliced IDENTICALLY, where the artefact is common and cancels. **",
-      SLICE['cr'][1] > SLICE['lcdm'][1],
-      f"cr {SLICE['cr'][1]:.3e} relative against lcdm {SLICE['lcdm'][1]:.3e} -- "
-      f"{SLICE['cr'][1]/max(SLICE['lcdm'][1], 1e-300):.0f} times larger")
+check("⚑ ** TWO SLICES SUM TO THE WHOLE RUN AT THE LEVEL OF FLOATING-POINT SUMMATION ORDER, ON BOTH "
+      "ARMS **, which is `r6794`'s claim for `KSLICE` measured here rather than carried",
+      SLICE['lcdm'][1] < 1e-7 and SLICE['cr'][1] < 1e-7,
+      f"lcdm {SLICE['lcdm'][1]:.3e} relative, cr {SLICE['cr'][1]:.3e} -- against the "
+      f"{2.1e-9:.1e} that merely changing `KBATCH` costs on the control")
+check("⛔ ...and `r6794`'s CAVEAT does not bite here, which is a measurement and not a hope.  *It says "
+      "slices add exactly only on a UNIFORM k grid, because `_project` takes `dk = np.gradient(kb)` "
+      "from the batch it is handed, and the CR arm's ladder is not uniform.*  ** On this arm, at this "
+      "boundary, the ladder costs nothing above the control's own summation-order noise -- the two "
+      "agree to within a factor of two of each other. **  ⌗ *Reported this way round on purpose: an "
+      "earlier version of this gate asserted the caveat DID bite and passed on `cr > lcdm`, which is "
+      "a comparison two numbers of the same size satisfy by luck.  That is the vacuous-gate shape "
+      "`r6895` had just finished naming, and it is recorded rather than quietly fixed.*",
+      0.3 < SLICE['cr'][1] / SLICE['lcdm'][1] < 3.0,
+      f"cr/lcdm = {SLICE['cr'][1]/SLICE['lcdm'][1]:.2f}")
+_s2 = np.load(os.path.join(SP, 'r6893_slice_check.npz'), allow_pickle=True)
+for arm in ('lcdm', 'cr'):
+    print(f"    {arm:5s} at STAGE B's own reach and its own eleven 250-mode boundaries: "
+          f"{int(_s2['nsl__'+arm])} slices summed against the whole, "
+          f"max |dD_l| = {float(_s2['amax__'+arm]):.3e} ({float(_s2['rmax__'+arm]):.3e} relative)")
+check("⚑⚑ ** AND THE TEST IS REPEATED AT STAGE B's OWN SLICING AND ITS OWN REACH, WHICH IS THE ONE "
+      "THAT MATTERS. **  Step 0 tested ONE boundary at `LMAXL=500`; stage B slices eleven times over a "
+      "k range four times as long, which is exactly where a varying spacing would tell.  *Summed "
+      "against the whole run at `LSTEP=64 LMAXL=2000` -- the l sampling made coarse so the whole run "
+      "is affordable, since the projection is what `LSTEP` costs and the k-sum is what is under "
+      "test -- both arms still add to summation-order noise.*",
+      float(_s2['rmax__lcdm']) < 1e-6 and float(_s2['rmax__cr']) < 1e-6,
+      f"lcdm {float(_s2['rmax__lcdm']):.3e} over {int(_s2['nsl__lcdm'])} slices, "
+      f"cr {float(_s2['rmax__cr']):.3e} over {int(_s2['nsl__cr'])}")
 
 
 def locate_pair(tag, ls, A, B, l_A, order=8):

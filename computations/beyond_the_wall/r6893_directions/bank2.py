@@ -1,6 +1,6 @@
 """Bank r6891's runs into computations/beyond_the_wall/spectra.
 
-  r6893_switch_screen_{arm}.npz   the sweep, one key group per tag            (already banked)
+  r6891_switch_screen_{arm}.npz   the sweep, one key group per tag            (already banked)
   r6893_full_reach_nulls_lcdm.npz the nine off-path switches at LMAXL=2000
   r6893_fine_grid_{arm}.npz       fineA (LSTEP=2 LMAXL=900, whole) and fineB
                                   (LSTEP=4 LMAXL=2000, SUMMED over k-slices), plus the
@@ -79,3 +79,20 @@ for arm in ('lcdm','cr'):
               f"{sorted(k[4:] for k in F if k.startswith('ls__'))}  missing={miss}")
     else:
         print(f"  fine grid {arm}: nothing yet (missing {miss})")
+
+# ---- step 0b: does slicing add at stage B's own slicing and reach? -------------------------------
+S={}
+for arm in ('lcdm','cr'):
+    w=f"{D}/slice2/whole_{arm}.npz"
+    sl=sorted(glob.glob(f"{D}/slice2/k*_{arm}.npz"), key=lambda q:int(os.path.basename(q)[1:].split('_')[0]))
+    if not (os.path.exists(w) and sl): print(f"  slice check {arm}: not ready ({len(sl)} slices)"); continue
+    dw=np.load(w); ls=dw['ls'].astype(np.int32); tot=np.zeros(len(ls))
+    for q in sl:
+        d=np.load(q); assert len(d['ls'])==len(ls); tot=tot+d['Dl'].astype(np.float64)
+    a=float(np.max(np.abs(tot-dw['Dl']))); r=a/float(np.max(np.abs(dw['Dl'])))
+    S[f"nsl__{arm}"]=np.int32(len(sl)); S[f"amax__{arm}"]=np.float64(a); S[f"rmax__{arm}"]=np.float64(r)
+    S[f"ls__{arm}"]=ls; S[f"Dl_whole__{arm}"]=dw['Dl'].astype(np.float64); S[f"Dl_sliced__{arm}"]=tot
+    print(f"  slice check {arm}: {len(sl)} slices, max |dD_l| = {a:.3e} ({r:.3e} relative)")
+if len([k for k in S if k.startswith('nsl__')])==2:
+    np.savez_compressed(os.path.join(SP,'r6893_slice_check.npz'), **S)
+    print("  r6893_slice_check.npz written")
