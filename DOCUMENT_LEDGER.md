@@ -17,12 +17,11 @@ sources: [chat]
 |---|---|
 | **SOURCE** | 1 |
 | **VIEW** | 3 |
-| **STATE** | 20 |
+| **STATE** | 15 |
 | **METHOD** | 38 |
 | **REFERENCE** | 26 |
-| **FORWARD** | 15 |
-| **RECORD** | 94 |
-| **UNCLASSIFIED** | 3 |
+| **FORWARD** | 22 |
+| **RECORD** | 96 |
 
 ## ⌗ DECLARED CLASSES
 
@@ -46,16 +45,12 @@ sources: [chat]
 | `DOCUMENT_LEDGER.md` | VIEW | (declared in frontmatter) | c54.233 | c54.233 | 0 |
 | `INDEX.md` | VIEW | The corpus index — restored r2427 after the duplicate sweep deleted it at r2385/r2393 (a 49 KB live document removed because a 32 KB stub shared its name in retired/). | — | c54.233 | 0 |
 | `THE_FRONTIER.md` | VIEW | the open problems in dependency order — generated from THE_REGISTER, the one source | — | — | never |
-| `ACOUSTIC_BUILD_SETUP.md` | STATE | The boundary conditions, layer assignment and scope for THE_PLAN's parametrisation-arc step ⑥ — the first-principles acoustic build. WRITTEN BEFORE ANY CODE so it can be checked on its own. | — | c54.201 | 32 |
 | `CONSOLIDATE_THE_PLAN_AND_INDEX_THE_PROGRAMME.md` | STATE | Consolidate the plan and index the programme — the arcs (§2), the sequence (§13), the standing actions (§14), and §16 THE DEVELOPMENT RECORD, which is where RG-1 moves a paper's past state. | — | c54.207 | 26 |
-| `CORPUS_REVISION_OWED.md` | STATE | (declared in frontmatter) | — | — | never |
 | `FIGURE_SWEEP.md` | STATE | The figure programme's state — every figure against what it must carry. | — | c54.201 | 32 |
 | `HANDOFF_to_60_PO24_transfer.txt` | STATE | the plain-text build request for PO-24, the bespoke transfer | — | — | never |
 | `HANDOFF_to_60_ledger_pass.txt` | STATE | the plain-text handoff for 60 to run the ledger pass | — | — | never |
 | `HORIZON_TRANSIT_WORKING_STATE.md` | STATE | where the horizon-to-branch-point transit stands -- worked state, held outside the corpus | — | — | never |
 | `OWED.md` | STATE | (declared in frontmatter) | — | c54.232 | 1 |
-| `P3_SWING_ONTOLOGY_hinge-and-door.md` | STATE | The usable ontological skeleton for the SECOND major P3 upgrade — lead with the physical object (one hinge, one door, one swing) and DERIVE w, u, 3w as the shadows it throws. Registered as L-206; the upgrade has not landed. | — | — | never |
-| `PHASE7_BUILD_LEDGER.md` | STATE | the collapse-excursion build ledger — the plan, whose execution lives elsewhere | — | c54.153 | 80 |
 | `PO13_RUN_SPEC_FOR_CC54.md` | STATE | what PO-13 needs run, specified for a node with compute | — | — | never |
 | `PO13_WORKING_STATE.md` | STATE | PO-13's worked state, held outside the corpus | — | c54.186 | 47 |
 | `PO38_WORKING_NOTE.md` | STATE | PO-38's computation as run -- worked state, held outside the corpus | — | — | never |
@@ -64,7 +59,6 @@ sources: [chat]
 | `THE_MODEL_LEDGER.md` | STATE | every switch in the acoustic scan against the theory that determines it | — | — | never |
 | `THE_OPEN_PROBLEMS_LEDGER.md` | STATE | The open-problems ledger by FAMILY — what each family is, what closed it or holds it open, and its register pointer. The fork writes here; this line absorbs it. | — | c54.185 | 48 |
 | `THE_PLAN.md` | STATE | The programme's work, route and destination — the lanes, the per-turn operating layer, the four-step state advance | — | c54.185 | 48 |
-| `THE_READING_NOTES.md` | STATE | what P7's linear read establishes that the acoustic model must answer to | — | — | never |
 | `THE_STAGED_REVISIONS.md` | STATE | (declared in frontmatter) | — | c54.205 | 28 |
 | `BIBKEY_ALIAS_MAP.md` | METHOD | rules / guards / canon | — | — |  |
 | `CLAUDE.md` | METHOD | rules / guards / canon | — | — |  |
@@ -77,7 +71,7 @@ sources: [chat]
 | `JARGON_LEDGER.md` | METHOD | rules / guards / canon | — | — |  |
 | `KICKOFF_CODA_REVIEW.md` | METHOD | A review methodology, not a spent task — Pass A faithful account then STOP; Pass B four questions plus one inward; three verdicts; a finding whose receipt carries no first-hand extract with a locator is structurally void. LOWEST PRIORITY (Daryl, standing): kept where it is, not to be raised again. | — | — |  |
 | `NOTATION_GLOSSARY.md` | METHOD | rules / guards / canon | — | — |  |
-| `ONTOLOGY_FOUNDATION_INDEX.md` | METHOD | What is forced here, and by what chain? — each forcing pinned once, whole, with its joints and its guard. Read WHILE READING A PAPER. | c54.19 | c54.128 |  |
+| `ONTOLOGY_FOUNDATION_INDEX.md` | METHOD | What is forced here, and by what chain? — each forcing pinned once, whole, with its joints and its guard. Read WHILE READING A PAPER. | — | c54.128 |  |
 | `OVERNIGHT_FIELD_BAKE_WORK_ORDER.md` | METHOD | The self-driving procedure for running the eleven remaining field bakes to completion at the depth the three completed ones set. Written for a node to execute without further instruction. | — | — |  |
 | `README.md` | METHOD | rules / guards / canon | — | — |  |
 | `SETUP_THE_REPO.md` | METHOD | THE STANDING INSTRUCTIONS for creating the GitHub repository and giving this line access to it. Gated on Daryl being at a computer, or on the decision to publish. ASK FOR THIS BY NAME — "dig up the repo instructions". | c54.163 | c54.163 |  |
@@ -138,6 +132,13 @@ sources: [chat]
 | `COMBINATORICS_LEDGER.md` | FORWARD | The combinatorics field-bake ledger — what bit, what did not, and why. Lane 8. | — | c54.185 |  |
 | `CONVEXITY_OPTIMISATION_LEDGER.md` | FORWARD | The convexity / optimisation field-bake ledger — what bit, what bounced, and the boundary. One of the three fields listed but never thrown (the overnight order: convexity ×143, constraint ×141). `OWED` 622. | — | — |  |
 | `FIGURE_THEOREM_LEDGER.md` | FORWARD | The figure–theorem ledger: which classical theorem each figure carries, and its receipts. | — | c54.19 |  |
+| `FOR_60.md` | FORWARD | (declared in frontmatter) | — | — |  |
+| `FOR_62.md` | FORWARD | (declared in frontmatter) | — | — |  |
+| `FOR_63.md` | FORWARD | (declared in frontmatter) | — | — |  |
+| `FOR_64.md` | FORWARD | (declared in frontmatter) | — | — |  |
+| `FOR_66.md` | FORWARD | (declared in frontmatter) | — | c54.178 |  |
+| `FOR_66_FROM_60.md` | FORWARD | (declared in frontmatter) | — | c54.186 |  |
+| `FOR_CC66.md` | FORWARD | (declared in frontmatter) | — | — |  |
 | `FUNCTIONAL_ANALYSIS_LEDGER.md` | FORWARD | The functional-analysis / unitarity field-bake ledger — the field that bounced, and the one routing fact it returned. Third of the four fields `L-272`'s re-survey left outstanding. `OWED` 622. | — | — |  |
 | `HARMONIC_ANALYSIS_LEDGER.md` | FORWARD | The harmonic-analysis field-bake ledger — what bit, what bounced, and the boundary. Second of the four fields `L-272`'s re-survey left outstanding. `OWED` 622. | — | — |  |
 | `INVOLUTION_REAL_FORMS_LEDGER.md` | FORWARD | The involution / real-forms field-bake ledger — what bit, what bounced, and the boundary. The field `L-277`'s unclaimed-surface probe named, and the first bake not drawn from a pre-existing list. `OWED` 622. | — | — |  |
@@ -218,8 +219,10 @@ sources: [chat]
 | `NEXT.md` | RECORD | THE WORK ORDER — what to do next, in order, with enough detail to start cold. Read after THE_HUB on arrival. Delete a block when it lands. | — | c54.187 |  |
 | `PHASE1_seam_crossing_build.md` | RETIRED | the fork's retired working note, carried at top level and in retired/ both; this line neither owns nor maintains it | — | — |  |
 | `PHASE3_baryogenesis_analogue.md` | RETIRED | the fork's retired working note, carried at top level and in retired/ both; this line neither owns nor maintains it | — | — |  |
+| `PHASE7_BUILD_LEDGER.md` | RECORD | the collapse-excursion build ledger — the plan, whose execution lives elsewhere | — | c54.153 |  |
 | `PHASE8_DIFF_AUDIT.md` | RETIRED | the fork's retired working note, carried at top level and in retired/ both; this line neither owns nor maintains it | — | — |  |
 | `PLANCK_from_CR_build.md` | RETIRED | the fork's retired working note, carried at top level and in retired/ both; this line neither owns nor maintains it | — | — |  |
+| `PO13_HANDOFF.md` | RECORD | (declared in frontmatter) | — | — |  |
 | `PROGRAMME_UNFINISHEDNESS_CATALOGUE.md` | RECORD | frozen record | — | — |  |
 | `PROPAGATION_QUEUE.md` | RECORD | frozen record | — | — |  |
 | `PROTECTED_OPEN.md` | RECORD | (declared in frontmatter) | — | c54.232 |  |
@@ -241,7 +244,7 @@ sources: [chat]
 | `THE_LIVE_ARC.md` | RECORD | (declared in frontmatter) | — | c54.232 |  |
 | `THE_NEXT_ARC.md` | RETIRED | the fork's retired working note, carried at top level and in retired/ both; this line neither owns nor maintains it | — | — |  |
 | `THE_THIRD_ARC.md` | RETIRED | the fork's retired working note, carried at top level and in retired/ both; this line neither owns nor maintains it | — | — |  |
-| `THE_WORK.md` | RECORD | The working fork's OWN front-level view of the register — fronts, not rows. Absorbed by this line, never edited by it (ARC 15's prime directive). | — | c54.212 |  |
+| `THE_WORK.md` | RECORD | A RECORD of the working fork's front-level view of the register — fronts, not rows — as it stood at its last absorption. The live view is `THE_REGISTER`; every row named here belongs to a retired numbering and none of them is live. | — | c54.212 |  |
 | `THIRD_ARC_T01_heights_firstrun.md` | RETIRED | the fork's retired working note, carried at top level and in retired/ both; this line neither owns nor maintains it | — | — |  |
 | `TIDAL_SHIFT_PLAN.md` | RECORD | the record of how the gradient was turned at r1064-r1090; not a live route | — | — |  |
 | `TRAIL_AUDIT_c54.134.md` | RECORD | (declared in frontmatter) | c54.134 | c54.134 |  |
@@ -264,9 +267,6 @@ sources: [chat]
 | `gate_session_notes_r896_spinup.md` | RECORD | frozen record | — | — |  |
 | `gate_session_notes_session.md` | RECORD | frozen record | — | — |  |
 | `lapse_shift_synchrony_reconciliation.md` | RETIRED | the fork's retired working note, carried at top level and in retired/ both; this line neither owns nor maintains it | — | — |  |
-| `FOR_62.md` | UNCLASSIFIED |  | — | — |  |
-| `FOR_63.md` | UNCLASSIFIED |  | — | — |  |
-| `PO13_HANDOFF.md` | UNCLASSIFIED |  | — | — |  |
 | `THE_CLOSURE_PLAN.md` | PLAN | (declared in frontmatter) | — | c54.207 |  |
 | `THE_DISPATCH.md` | PLAN | (declared in frontmatter) | — | c54.207 |  |
 | `THE_FIELD_BAKE_PLAN.md` | PLAN | The plan for OWED 622's field bakes — the measured standard a bake must meet, the queue in order, the per-bake protocol, and the condition under which 622 may be struck. Written after r3437 threw a bake thinner than the corpus's own standard. | — | c54.226 |  |

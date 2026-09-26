@@ -179,7 +179,7 @@ LOGS = (
     'FIGURE_WORK_LOG.md',
     'THE_CLOSURE_LEDGER.md',
     'SYNTHESIS_FIGURE_STORYBOARD.md',
-    'P3_SWING_ONTOLOGY_hinge-and-door.md',
+    'retired/P3_SWING_ONTOLOGY_hinge-and-door.md',
     'E1_CITATION_CATALOGUE.md',
 )
 

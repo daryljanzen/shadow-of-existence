@@ -1,20 +1,18 @@
 ---
-kind: STATE
+kind: RECORD
 name: corpus-revision-owed
 description: MEASURED r3002 — the gap between what the register now holds and what the papers say. Four named sites minimum, against 211 revisions and 2 corpus edits. Read before any claim that the corpus is current.
 sources: [observer]
 current: r3002
 ---
 
-> **⌗ ITS FOUR SITES ARE RE-VERIFIED AND STILL OWED (r3095).** *Each is `OWED` 599--602, with what the
-> re-check found: ① P7 `frontier:scalar` still carries as remaining two things that have run; ② P10 still
-> calls a computed spectrum "the open frontier" when what was open was the ordering (`PO-15`, **struck r3100 — external by exhaustion**, leaving the ultraviolet definition); ③ P15's
-> maturity marks; ④ P7 `frontier:sm` does not carry the matter sector's delivered results — **the eleven-
-> of-eleven closure and the bounded content mismatch sit in `frontier:quantum` instead, and triality is
-> absent from P7 entirely.***
->
-> *Its measurement stands as the reason the pass exists: 211 revisions logged against two one-sentence
-> corpus edits.*
+> **⌗ RETIRED — ITS FOUR SITES ARE CLOSED.** *This measured the gap between the register and the papers at r3002,
+> and named four sites. All four are now answered in the corpus: ① `P7`'s `frontier:scalar` no longer carries the
+> refit and the odd/even pattern as remaining; ② `P10` distinguishes the open ultraviolet definition from the
+> spectrum, saying in terms that the spectrum is not open with it; ③ `P15`'s maturity marks carry the transfer and
+> the data confrontation as established and the coherence mechanism as the one argued item; and ④ `P7` carries
+> triality and the eleven-of-eleven closure. **The measurement stands as a record of the gap it found and of why a
+> deliberate revision pass was needed; it is no longer a statement of anything owed.***
 
 # ▣ THE CORPUS REVISION OWED — measured, not estimated
 

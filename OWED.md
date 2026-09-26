@@ -1,28 +1,27 @@
 ---
 name: owed
 kind: STATE
-current: r2735
+current: r6865
 description: Work this programme's turns CREATED — the register every other register here lacks, since all of them track work discharged.
 sources: [chat]
 ---
 
 > ✔ **SETTLED r3142 at `sec:correspondence`, as recorded:** *the abstract says the twelve coloured states give "four classes, against the Standard Model's **five** multiplets per generation". The four classes are the $(\text{horn},\text{ruling})$ pairs and cover the **twelve coloured** states only; the SM's coloured multiplets are **three** ($Q_L$, $u^c$, $d^c$) and its five counts all fifteen. **The underlying theorem is unaffected** — the orbit shortfall is $2{+}2$ against $2{+}1{+}1$, which is exact and is what `W1` proves. What needs settling is whether the paper's own use of "class" at `sec:correspondence` vindicates the summary sentence or whether it mixes scopes. **Resolved: the body never says "four classes" — the phrase occurs once, in the abstract alone — and the body's own accounting is an OCCUPATION statement: the left-handed doublet's $T$-values $\{+1,-1\}$ match, while the right-handed singlets give $\{+1,+1\}$ where this sector gives $\{+1,-1\}$, so the sector DRAWS a distinction the Standard Model does not. The receipt confirms the twelve match state by state. The abstract's summary is corrected to the body's $2{+}2$ against $2{+}1{+}1$.***
 >
-> ## ⛭⛭⛭ THE WHOLE OUTSTANDING SURFACE, IN ONE PLACE — **re-measured r3377**
+> ## ⛭⛭⛭ THE WHOLE OUTSTANDING SURFACE, IN ONE PLACE
 >
 > *Not a new list: a view over the ones that exist, so the programme's remaining shape is legible without
-> assembling it from five documents each time. **Re-measure before trusting the numbers**; they are a
-> snapshot and this file is where they go stale first — as the r3120 view of this table did, and was
-> reported back by a spun-up node reading it in good faith.*
+> assembling it from five documents each time. **Re-measure before trusting the numbers** — this file is where
+> they go stale first, and the measurement below is what the sources returned when it was last taken.*
 >
-> | what | where it lives | count at r3377 |
+> | what | where it lives | count |
 > |---|---|---|
-> | **the one work item** | `THE_REGISTER` / `PO13_WORKING_STATE.md` | **`PO-13`** — worked hard r3307–r3373; nine handles eliminated, the mechanism measured, the state written OUTSIDE the corpus on the one-state rule |
-> | **owed items** | this file | **4 open** |
-> | **the corpus read** | `ARC 13` | ⛭ **COMPLETE — all seventeen papers read word for word at verified full coverage** (r3301). `OWED 612` closed on it. |
-> | **receipt failures** | `receipts/RUN_RESULT.txt` | last full pass **638/638 clean**; the standing two are `pynucastro` absent from the container, not defects |
-> | **red gates** | `corpus/check_*.py` | **1 of 93** — `check_receipts_run`, which needs wall-clock and no judgement |
-> | **the absorption gap** | `ABSORPTION.md` | `c54.208`–`233`; one finding still unverified |
+> | **the live rows** | `THE_REGISTER` | **seven** — `PO-23`, `PO-31`, `PO-47`, `PO-48`, `PO-49`, `PO-50`, `PO-51` |
+> | **owed items** | this file | the list below |
+> | **the corpus read** | `ARC 13` | ⛭ **COMPLETE — all seventeen papers read word for word at verified full coverage** |
+> | **receipts** | `receipts/` | **821 on disk**; the suite's verdict is `receipts/RUN_RESULT.txt`, which carries none while a run is in flight |
+> | **red gates** | `corpus/check_*.py` | **1 of 107** — `check_receipts_run`, which needs wall-clock and no judgement |
+> | **the absorption gap** | `ABSORPTION.md` | that file's own record |
 >
 >
 > ## ⛭⛭⛭ AND THE ORDER TO WORK IT IN — **rebuilt r3377, the read having discharged the middle of it**
