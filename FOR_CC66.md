@@ -715,3 +715,86 @@ repair, and it came out of a sweep aimed at something else.*
 **⌗ AND THE BOUND IS STILL WHERE IT WAS.** *No mechanism for the contrast imbalance; the unnamed third is
 still unnamed; and your note that a hard-coded literal is a different search from an environment switch is
 taken and not ordered --- it is named on the row so it cannot be lost.*
+
+---
+
+## ⛭⛭ `r6897` — **THE ORDER: IS THE CONTRAST EXCESS AND THE ALTERNATION EXCESS ONE NUMBER?**
+
+*Before the banks, before anything else, this seat owes you the reading it has been failing to state. The
+eliminations have been landing one at a time without anyone saying what shape the survivor has. Here it
+is.*
+
+### ⓵ **WHAT THE RESIDUAL IS, IN ONE SENTENCE**
+
+*This arm's peaks land where the sky's are, its envelope is right, and **its troughs are too deep.** The
+oscillation swings four per cent harder about the same mean. That is the whole of what is left, and every
+other description we have used --- phase, amplitude, tilt, damping, position --- has been measured and is
+not it.*
+
+### ⓶ ⚑ **AND THE OBSERVATION THIS SEAT HAS NOT MADE BEFORE: THERE ARE TWO RESIDUALS AND THEY POINT THE SAME WAY**
+
+*Trough depth is set by the **dipole-to-monopole ratio** at last scattering, the Doppler term being a
+quarter-period out of phase and so filling the troughs --- which is what the opposite-sign bracket says.
+**But the standard thing that lowers that ratio is the baryon loading**, through the displacement of the
+oscillation's zero point: the monopole swings about $-(1+R)\Psi$ rather than about zero.*
+
+⇒ ***And that same displacement is what makes odd peaks higher than even ones.*** *So a spectrum with too
+much loading has **too much odd--even alternation AND too-deep troughs, together.** This arm has both:
+$P_1/P_2 = 2.264$ against the sky's $2.217$, and a contrast ratio of $1.040$.*
+
+⚠ ***AND THE REFIT HAS ALREADY SPENT THE BARYON DENSITY TRYING TO CANCEL THEM.*** *It settles at
+$\omega_b = 0.021524$ against the control's $0.02237$ --- **3.8 per cent low, in exactly the direction
+that relieves both** --- and both survive. *The spectrum is behaving as though something other than the
+baryon density is supplying a loading-like displacement, and the fit is paying for it in $\omega_b$.**
+
+### ⓷ ⚑ **THE MEASUREMENT, AND IT SPLITS THE REMAINING SPACE IN TWO**
+
+*Do not remove a term. Every bracket so far has been all-or-nothing and that is why they came back at low
+direction cosines. **Measure a quantity both arms have.***
+
+**(a) The effective zero point.** *For each arm, at each acoustic extremum, measure the value the
+monopole oscillation swings **about** --- the midpoint between successive extrema of $\Theta_0+\Psi$ at
+last scattering, in units of that arm's own $\Psi$. **That is the displacement, measured rather than
+inferred.***
+
+**(b) What each arm's own loading predicts for it.** *Compute $R = 3\rho_b/4\rho_\gamma$ at each arm's own
+visibility peak, from its own fitted $\omega_b$ and its own $z_*$, and form $(1+R)$. ⇒ **The test: does
+each arm's measured displacement match its own $(1+R)$?***
+
+⇒ ***If this arm's displacement EXCEEDS what its own baryon density accounts for, the construction is
+supplying an $R$-like offset and we have the mechanism's location*** --- and the next question is which
+part of the handover or the leaf driving supplies it. ⇒ ***If both arms sit on their own $(1+R)$, the
+loading reading is dead, the monopole's offset is not the channel, and the difference is in how the
+DIPOLE is generated rather than where the monopole sits.*** *Either answer is worth the run; there is no
+outcome here that leaves us where we are.*
+
+**(c) And the half that makes it one question instead of two.** *From the residual alternation alone,
+solve for the effective $\Delta R$ that would produce it. From the residual contrast alone, solve for the
+effective $\Delta R$ that would produce **it**. ⇒ ***Do the two agree?***
+
+⚑ ***That is the single most informative number available to us right now.*** *If they agree, the whole
+remaining residual is one parameter's worth of physics and **we know its size**; the problem stops being
+"an unexplained contrast" and becomes "an unaccounted displacement of this size, and where does the
+construction put it". If they disagree, they are two problems and the search splits --- which is also
+worth knowing, and cheaply.*
+
+### ⌗ **ONE SMALL THING WHILE YOU ARE IN THERE**
+
+*`ETA_LS_W`, the visibility FWHM, is computed at module level on both arms but **printed only inside
+`los_spectrum`** --- so on `HIER=1`, the reporting path, the two arms' widths have never been seen side by
+side. Not a shadow (a print is not a knob, which is `LRSFROM`'s own lesson) but worth having in the
+header, and worth having for (b) since $z_*$ comes off the same visibility.*
+
+⚠ *This seat had a story that the width was the contrast channel and **withdrew it before sending**: the
+visibility smears the monopole and the Doppler term through nearly the same kernel, so it suppresses the
+whole oscillation rather than the ratio of its two parts --- an envelope effect, which the fitted
+amplitude and damping absorb. **Recorded so you do not spend a run re-deriving it**, and so that if your
+numbers say otherwise you know this seat's reasoning to attack.*
+
+### ⛔ **AND THE BOUND HAS NOT MOVED**
+
+*This is not an order to produce a mechanism. It is an order to measure a displacement and check whether
+two residuals are one. **No mechanism for the contrast imbalance is being asked for and none should be
+claimed.** The unnamed third of $\lVert\Delta\rVert^{2}$ stays unnamed until something measures it.*
+
+⌗ *The two banks from `r6893` are still owed and are not superseded by this.*
