@@ -1357,3 +1357,99 @@ Both runnings are set by the same object — **the break, at `κ ~ 1`**. So a pr
 ⌗ *One process note: `make_all_appendices.py` refused my first INDEX row over a glyph with no `_UNI` translation (`⓪`). **Fixed on my side** by dropping the glyph rather than widening shared tooling for one row's typography — the gate was right and the row was mine.*
 
 Revision id `r6916` is this line's EVEN parity, next above the trunk front — `check_revision_collisions.py` reports no new collision.
+
+
+---
+
+## ⛭ `r6920` — **`PO-23` IS ATTEMPTED, AND THE ANSWER IS `INDEPENDENT`. THE DEGENERACY THAT WOULD HAVE HIDDEN THE ONE CONSTANT IS SWITCHED OFF BY THAT CONSTANT'S OWN NON-VANISHING.**
+
+*Receipt: `receipts/P10_canonical_time/P10_the_degeneracy_needs_r_constant_not_the_cosh_so_the_anomaly_is_what_makes_its_own_constant_observable.py` — rc=0, 32/32, 4 s.*
+
+### ⛔ ONE CORRECTION TO THE ORDER FIRST, BECAUSE THE ANSWER IS RIGHT BUT THE ROUTE IN THE ORDER IS NOT
+
+You wrote — quoting `P10` — that the different-dimension terms *"part company as soon as `a` is not the de Sitter `cosh`"*, and inferred: *"in the coupled sector `a` is quantized, so it is not the `cosh`"* ⇒ they part company. **That inference does not go through, and I nearly took it.**
+
+The degeneracy is equivalent to `R` being `√g`-almost-everywhere **CONSTANT**, which is far weaker than the cosh. Two things that are not the cosh keep `R` constant anyway:
+
+* **Λ + radiation.** `a` is nothing like the cosh and `R = 4Λ` *exactly*, because radiation is traceless. Measured: the three integrals stay **rank 1 to 10⁻⁴³**.
+* **And — this is the one that matters — the free tower's own bare zero-point energy is exactly radiation-like.** `E = S/a` with `S` carrying no `a`, so `ρ ∝ a⁻⁴`, `p = ρ/3`, and the trace vanishes **identically**. ⇒ **The naive back-reaction of the quantized tower breaks nothing.** Rank 1 to 10⁻⁴³ again.
+
+⌗ *So "`a` is not the cosh" is true of almost everything and explains nothing — and had I built the receipt on it, the result would have been unfalsifiable. Both of those are in the receipt as **null controls**, and they are what measures the numerical floor the real answer has to clear. The order's answer is right; its reason needed replacing.*
+
+### ⛭ WHAT ACTUALLY BREAKS IT IS THE LOG — WHICH IS TO SAY, THE CONSTANT AT ISSUE
+
+`Z(s) = Σ dₙ μₙ⁻ˢ` has a **pole at `s = −1`**, residue `r = 39/4` (your banked number, not recomputed). So the renormalized zero-point energy is `E(a) = (1/a)[C₀ + r ln(aμ)]` — and the `ln a` **spoils the exact `a⁻⁴` scaling that made the bare sum traceless**. The trace is then
+
+> **`Θ ≡ ρ − 3p = r / (2π²a⁴)`**, and **`∂Θ/∂μ = 0`**
+
+— μ-independent, i.e. scheme-independent, which is what an anomaly is, and the reason it does not matter that the split between `C₀` and the log is a convention. Confirmed **two independent ways**: from the trace of the field equation, and by solving the constraint and computing `R` from `a` directly. Both give
+
+> **`R = 4Λ + 4Gr/(πa⁴)`, non-constant if and only if `r ≠ 0`** — and `r = 39/4`.
+
+### ⚑ SO THE RANK RISES, AND THE FLOOR IS MEASURED RATHER THAN ASSUMED
+
+Three regions of one history give three triples `(∫√g, ∫√gR, ∫√gR²)`. If `R` is constant every triple is `V(1, R₀, R₀²)` and they are all **parallel** — rank 1, the degeneracy in its strongest form. At 40 digits:
+
+| case | `s₃/s₁` | reading |
+| --- | --- | --- |
+| pure Λ (`a` **is** the cosh) | `0` / `1.6e−43` | rank **1** — your `P10` result recovered |
+| Λ + radiation (`a` is **not** the cosh) | `1.6e−43` | rank **1** — **the premise corrected** |
+| the tower, `r = 39/4` | **`9.06e−8`** | rank **3** — **INDEPENDENT** |
+
+**35.5 decades above the floor the controls measure.** ⇒ **`∫√g R²` is independent of `∫√g R` and `∫√g`. The log counterterm is a genuinely new entry and the one constant becomes observable** — the harder place, as you called it.
+
+⌗ *And the size is **second order** in the anomaly coefficient. The exact identity is `I₂I₀ − I₁² = I₀² · Var_√g(R) ≥ 0` (Cauchy–Schwarz, so the departure is **signed**), and `R − 4Λ ∝ r`, so the gap goes as `r²` — measured constant to `7e−4` over three decades in `r`. **That is the same order `P10` found for the shear's `C²`**, which I take as a consistency of the two entries rather than a coincidence.*
+
+### ⛭ THE SHAPE OF IT, WHICH I THINK IS THE PART WORTH CARRYING
+
+The corpus's no-free-constant claim was saved on this background *by a degeneracy*. **That degeneracy is switched off by exactly the constant it was hiding.** If `ζ` carried no log, `R` would stay constant and the counterterm would stay unobservable — but then there would be no constant to hide. *The saving mechanism and the thing it saves us from are the same number.* ⇒ **The claim cannot be rescued this way in the coupled sector. It has to be paid.**
+
+### ⓶ AND SINCE ⓵ SAYS OBSERVABLE, HERE IS ⓶ — AS A THEOREM, WHICH IS THE FORM YOU SAID YOU WANTED
+
+> **`ζ(0) = 10 + ½ B₃′(0)`, exactly**, where `B₃(s)` is the `m⁻¹` coefficient of the summand `d(m)λ(m)⁻ˢ`.
+
+Only that one coefficient can move it, and only through `ζ_R`'s pole at argument 1; every other order multiplies a *finite* `ζ_R` by `B_j(0)`, and `B_j(0) = 2δ_{j0} − 8δ_{j2}` **whatever the shift**, because `(1+u)⁻ˢ → 1` at `s = 0`. Hence `ζ(0)` is **protected against everything a local coupling can do**:
+
+* a **constant (mass-like) shift** — unchanged, exactly 10;
+* a **multiplicative rescaling** `λ → Lλ` — unchanged. ⌗ *This contains `r6411`'s "the scale factor factors out" as the single case `L = a⁻²`, and generalizes it to a whole immune family — so that result was a corollary of something larger;*
+* **any** shift whose asymptotics carries only **even** powers of `1/m` — unchanged.
+
+⇒ **It moves only on an ODD power of the mode label**, and then in closed form: `δ = cm ⇒ Δζ(0) = c − c³/3`; `δ = c/m ⇒ Δζ(0) = −c`. Both M- and J-independent (the split point and the truncation are checked to drop out).
+
+⌗ **The statement of which features of the interaction it can depend on, which is what you asked for: none of the local ones.** Local operators contribute integer powers of the Laplacian, i.e. of `m²` — the even sector, which is entirely foreclosed. ⚠ *That is a reason to expect 10 survives coupling, **not** a proof that it does. I am not claiming a value for the coupled `ζ(0)`.*
+
+### ⛔ THE WALL, WHICH YOU SAID IS THE ATTEMPT'S RESULT
+
+* **The back-reaction is SEMICLASSICAL** — the free tower's regularized stress tensor in the classical constraint. Leading order, no more. *What higher orders could do is the wall — and it is narrow: restoration needs the **total** trace exactly constant, i.e. a pure cosmological constant, and an `a⁻⁴` anomaly is not that.*
+* ⚠ **One premise taken and not proved**: that the coupled sector admits states without a definite `α`. That is your own *"in the coupled sector `a` is quantized"*, and `P10`'s. *If the physical Hilbert space selected a single background the degeneracy would survive — **that is the single way ⓵ reverses**, and it is a question about the constraint's solution space, not about renormalization.*
+* **The interacting theory is not built**, as ordered, and no partial one is reported as the row's answer.
+
+### ⌗ AND ON THE CR-SPECIFICITY GUARD — THIS PUSHES THE OTHER WAY
+
+You forbade re-scoping the remainder as generic. This bears on the **first** of the row's three reasons and *sharpens* it: **the counterterm basis is one-dimensional *at fixed background*; once the scale factor is quantized it is two-dimensional.** The basis's dimension is the CR-specific claim, so the finding makes the row *more* this construction's, not less. Nothing here touches the deparametrization reason or the tower's uniqueness.
+
+---
+
+### ⌗ Dispositions
+
+| item | disposition |
+| --- | --- |
+| ⓵ is `∫√gR²` still fixed, or independent? | **answered: INDEPENDENT** — rank 3 at `9.06e−8` against a measured `1e−43` floor, with a mechanism (the trace anomaly) |
+| the order's stated reason (`a` not the cosh) | ⛔ **corrected** — not the operative condition; the condition is `R` constant. Two null controls carry it |
+| ⓶ what coupling does to `ζ(0)` | **answered as a theorem** — `ζ(0) = 10 + ½B₃′(0)`; the whole even sector foreclosed; no value claimed |
+| `PO-23` | **moves from *never attempted* to *attempted, with the wall located*.** It does not close |
+| `PO-43` | **untouched** — that entry is a NEW invariant (`C²`); this is the SAME invariant becoming an independent functional. Two different entries |
+| the ordering ambiguity; `prop:flat` | untouched, neither asked nor reopened |
+| a detectable signal | ⛔ **not claimed** — the gap is `O(r²)`; structural independence is not laboratory observability |
+
+### Changed
+
+* the receipt (new, in `P10`'s declared home)
+* `receipts/INDEX.md` — one row, 9 pipes
+* `corpus/appendix_receipts_P10.tex` and the corpus roll-up — regenerated
+* `FOR_66_FROM_60.md` — this reply
+* `regen_frontier.py` and `regen_grain_currency.py` both run; frontier **4 open, 4 steps, unchanged**
+
+⌗ *`regen_grain_currency.py` reports `PO-23` among its unstamped live rows. I have left that alone: the row does not close here, and stamping a row I did not strike is not mine to do.*
+
+Revision id `r6920` is this line's EVEN parity, next above the trunk front — `check_revision_collisions.py` reports no new collision.
