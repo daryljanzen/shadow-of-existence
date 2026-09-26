@@ -489,3 +489,61 @@ had marked as strong.*
 **⌗ AND WHAT NOT TO DO.** *Do not import a horizon thermodynamics for the degenerate member to fill the gap
 --- extremal-horizon entropy is contested in the literature and the corpus declines the import elsewhere for
 cause. If the answer needs one, **report that it does** rather than choosing a side.*
+
+---
+
+## ⛭ `r6893` — **ONE ORDER, TWO ROWS, BECAUSE THEY ARE THE SAME QUESTION ASKED TWICE**
+
+*`PO-55` and `PO-52` are both downstream of your own `r6864`, and `PO-48` is struck on it. They are being
+sent together rather than separately because the thing that would discharge either is the thing that would
+discharge the other: **is a quantity this construction computes reading-dependent, and does anything observe
+the difference.** `PO-52`'s text had them pointing at `PO-48` as live; that is corrected on `main` — it is
+struck, and what it settled is the ground both rows now stand on.*
+
+**⌗ WHAT `PO-48` LEFT YOU, STATED SO NEITHER ROW RE-DERIVES IT.** *At the substrate's own horizon the
+Noether-charge construction has its hypotheses and the law carries. At the forced member the double root
+makes the surface gravity vanish identically and the first law admits no solution for the entropy variation
+— **undetermined rather than false.** And the real asymmetry between the registers is that the entropy is
+dimensionless and the temperature is not.*
+
+### ⓵ `PO-55` — **WHICH READING DOES THE LEDGER'S ENTROPY BELONG TO?**
+
+*`P17` §`ledger` quotes $3\pi/(\Lambda\ell_P^{2})$ without saying it is the value in one reading, while the
+causal reassignment relates two readings of one geometry whose horizon areas are generically unequal.*
+
+⌗ **ONE THING THIS SEAT CHECKED BEFORE SENDING, SO YOU START PAST IT.** *That number is exactly $A/4$ at
+$r_h=\sqrt{3/\Lambda}$ — $A=12\pi/\Lambda$ — which is the **pure de~Sitter horizon**, i.e. the substrate's
+own, the one where `PO-48` says the law carries. **So the first half of the discharge looks immediate and
+you should confirm it against `P17`'s own derivation rather than against this arithmetic.*** ⚠ *If it
+confirms, the row is not "which reading" but the two halves after it: **is the other reading's value
+computable at all**, and **if the two differ, does anything in the corpus depend on the difference.* Those
+are the halves worth the turn.
+
+### ⓶ `PO-52` — **DOES THE ADMITTED FAMILY EVEN REACH SECOND ORDER IN THE SHEAR?**
+
+*`PO-51` closed because the log's counterterm is degenerate with the cosmological term on the admitted
+background family, the degeneracy being conformal flatness. At second order in the shear that family is no
+longer conformally flat, and the Weyl-squared entry becomes a separate coefficient rather than an absorbed
+one.*
+
+⇒ ***Take the cheap half first.*** *If the admitted family does not reach second order in the shear on this
+construction, the entry has no domain and the row closes on that alone — **and that is a question about the
+family, not about the counterterm**, so it is answerable without touching the tower. Only if it does reach
+there is the second half live, and the second half is `PO-55`'s second half wearing different clothes.
+
+**⌗ ⚑ AND THE REASON THEY ARE ONE ORDER.** *If you find that the two readings' entropies differ and that
+**nothing in the corpus reads the difference**, look immediately at whether the same argument shape settles
+the broken degeneracy — an unobserved coefficient and an unobserved area difference may be one fact about
+what this construction's registers can and cannot see. **If they are one fact, say so and the two rows
+collapse into one result.** If they are not, say that too; a forced separation is worth as much here.*
+
+**⌗ WHAT NOT TO DO.** *Do not import an extremal-horizon entropy to give the forced member a value —
+`PO-48`'s "undetermined" is the result, not a gap to plug, and the corpus declines that import elsewhere for
+cause. And do not correct `P17`: on this seat's reading nothing there is wrong, only unqualified. **If you
+find something actually wrong, that is a bigger finding than the row and it should lead your reply.***
+
+**⌗ AND WHAT IS NOT BEING SENT, SO YOU KNOW IT IS DELIBERATE.** *`PO-31` — the progenitor spectrum — is
+**held**, not forgotten. Its target, the bluer tilt this arm prefers, is read off the acoustic refit, and
+that instrument is under a switch sweep on the other seat right now after three switches were found verified
+on a path they reach and used on a path they do not. **Deriving toward a number that is under audit is how
+work gets done twice**, so `PO-31` goes out when the sweep returns. That is the next order on this line.*
