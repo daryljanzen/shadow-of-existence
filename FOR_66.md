@@ -2224,6 +2224,7 @@ the expansion history moves.*
 the Bashinsky–Seljak pull has — free-streaming drags the peaks to smaller $\ell$, so removing it pushes
 them back — and **uniform** is what a phase shift looks like, as against a rescaling of the acoustic
 scale.*
+  ⚠ ** THE UNIFORMITY IS CORRECTED AT r6893+cc66.37: sub-bin, on both arms and on two independent locators, the shift RISES with multipole -- about $+3$ near the first peak and about $+12$ by $\ell\sim1500$.  The peak positions compared here were quantised to the $\ell$ grid, so the uniformity was the grid.  The SIGN stands. **
 
 ⚠ **TWO THINGS I WILL NOT LET THIS BE READ AS.** *(i) The size is **exactly one binned grid step**
 ($8.9999$), so the sign and the order of magnitude are established here and **the value is not** —
@@ -2253,3 +2254,160 @@ Doppler term removes the dipole's contribution to what we see; `NUFS` changes wh
    different routes — the `NS` literal, the baryon density, and these two source terms. **That is a
    rate, not a count**, and nothing here says there is not a fourth. If you want it swept rather than
    stumbled into, that is its own order and I would take it.*
+
+---
+
+## ⛭⛭ `r6893` — **THE TABLE, AND THE CANDIDATE IS RULED OUT**
+
+*`receipts/P15_CR_cosmology/P15_the_free_streaming_knob_is_common_to_both_arms_and_the_switch_sweep_finds_no_further_shadow.py`
+— rc=0, five parts, **34 gates**. Three banks: the screen at `spectra/r6893_switch_screen_{lcdm,cr}.npz`,
+the fine grid at `spectra/r6893_fine_grid_{lcdm,cr}.npz`, the full-reach nulls at
+`spectra/r6893_full_reach_nulls_lcdm.npz`. **This one touches the instrument, and the touch is COMMENTS
+ONLY — gated bit-identical on both arms, because `cc66.36` is why I no longer assert that a change is
+nothing.***
+
+### ② FIRST, BECAUSE YOU ASKED FOR THE TABLE AND THE TABLE IS THE ANSWER
+
+**Sixty environment switches.** Enumerated through `ast` from the source text, each tagged with which of
+the three source constructions and which of the two solver right-hand sides reads it — and whether the
+switch is **written into** that construction's own text or merely reachable downstream of it, which are
+not the same claim. The reporting path is declared from the dispatch's own three lines (`main:1296`
+`QSCAN`, `main:1352` `LOS`, `main:1364` `HIER`, `return 0` at `main:1379`), and a branch is pruned ONLY
+where an environment comparison settles the test — so **the live set over-counts what runs, which is the
+safe direction: it can under-report a shadow and never invent one.**
+
+⌗ **One thing had to be got right before any of it meant anything: A BINDING IS NOT A USE.** My first
+pass counted `_DAMPX = float(os.environ.get('DAMPX', 1.0))` at module level as evidence the value is
+read, and reported **fifty-five of sixty** live on the reporting path. That line executes on every path
+the instrument can take and proves nothing. Counting only *loads of the bound name* gives fifty-one.
+
+| | |
+|---|---|
+| switches read | **60** |
+| live use site on the reporting path | **51** |
+| none | **9** — `DAMPX` `DSAVE` `DSCAN` `NOPROJ` `PHISAVE` `QK` `QMIN` `QTURN` `RD` |
+| measured, both arms, one switch at a time | **55** (110 runs) |
+| came back bit-identical | **41** — and every one accounted for |
+
+⇒ ⚑ **The nine are not taken on the static argument.** All eighteen runs at
+$\max\lvert\Delta\mathcal{D}_\ell\rvert = \mathbf{0.0}$ exactly; `RD` at two different off-default values
+so the null is not one value's accident; and again at **full $\ell$ reach**, which is where a null could
+have hidden — `DAMPX` and `RD` both act on the damping tail that $\ell\le500$ barely sees.
+
+⇒ ***AND THE ANSWER IS A SET EQUALITY, WHICH IS THE ONLY FORM IT IS WORTH ANYTHING IN.*** The runs that
+came back bit-identical are **exactly** the set four readings predict — no unexplained null, and nothing
+explained away that in fact moved:
+
+1. **OFF-PATH** — the nine, each confined to a *declared alternative mode*: `qscan`, the line-of-sight
+   projection diagnostics, or the low-multipole analytic block `LOS=0` selects.
+2. **RATE-IDENTITY on the control** — `GSRC`, `LEAFSCALES`, `PHASEONLY`, `PHASEPOW`, `STACKPERT` are
+   bit-identically inert on the **control** and **every one of them moves the arm**. On the control
+   `Hphys` and `Hleaf` are the same expression, so the Jacobian is $1$ and every switch that only
+   *chooses between the two congruences* multiplies by exactly $1.0$ — and $x\times1.0$ is exact.
+   ⌗ *That is the control arm being a control, and it is the same floating-point fact that bit me at
+   `cc66.36`.*
+3. **ARM-BRANCH** — fourteen switches the arm dispatch reads in the other arm's branch; **twelve** move
+   on the arm that does read them.
+4. **GATED** — `PHASEPOW` is inert at the default `PHASEONLY=0` on both arms and moves the arm by
+   $176\%$ once `PHASEONLY=1`. *`r4558`'s rule discharged by a run and not by an argument.*
+
+⇒ **So: no fourth knob shadow.** Not "none found" — **every switch accounted for.** That is what I think
+discharges the hazard clause on `PO-56`, and I have rewritten that row rather than leaving it to you.
+
+### ⛭ TWO THINGS THE SWEEP DID TURN UP — AND NEITHER IS OF THE `r6476` CLASS
+
+**(i) `LRSFROM` moves the instrument's REPORTED acoustic scale by a quarter and its spectrum by EXACTLY
+ZERO.** At `LZSTART=6761` the header goes $r_s = 145.38 \to 110.49$ Mpc and
+$\ell_A = 301.5 \to 396.8$ — ***and $\mathcal{D}_\ell$ is bit-identical, at reduced reach and at full.***
+
+⌗ *From the source: on all three paths $R_S$ and $\ell_A$ reach a `print` and the `SAVE` metadata and
+nothing else — and `hier_run(kk, EE, L_A_, D_M_, R_S_)` **accepts the acoustic scale, the distance and
+the sound horizon and loads none of the three.***
+
+⚠ **AND `r6476`'s OWN NOTE IN THE FILE IS WHAT THIS CORRECTS.** It records the switch as
+"reachability-checked before use", on the ground that $R_S$ "feeds $\ell_A$ ... AND the header line ...
+so the knob is visible in the instrument's own report **and was seen to move it**". ***The print is not
+the reported number.*** ⇒ Nothing needs rewiring and no number moves: **what was wrong is the
+certification, and it was a certification of the wrong quantity.** I have marked `r6476`'s map entry
+narrowly — the *practice* it established stands; that one check does not.
+
+⇒ ⛭ **AND I THINK THE CONSEQUENCE IS YOURS TO USE, BECAUSE IT POINTS THE USEFUL WAY.** Because no
+transfer function reads $\ell_A$, the agreement the instrument prints — $\ell_1/\ell_A = 0.7312$ against
+the sky's $220.6/301.7 = 0.7312$ — **is an agreement between two independently computed quantities and
+not a value fed in.** *A reader of the paper could take the acoustic scale for an input to the transfer.
+It is not one, and that is stronger than it has been stated.*
+
+**(ii) `LATARG` — which the file calls "the corpus's one fitted number" — has NO ROOT at the arm's
+adjudicated background.** With `ZSTART` unset the onset solve *raises*: $f(a)$ and $f(b)$ carry the same
+sign across the whole bracket `r6760+cc66.1` widened to $5\times10^{6}$ **for exactly this solve**.
+*Which is why the refit command supplies `ZSTART=3e7` and every reported number already comes from
+that — so nothing moves. But the register had not said the switch is unreachable at the arm's own
+minimum, and now it does.* ⌗ *It is still connected: at `LATARG=310` the root exists and the spectrum
+moves.* **This one is the single run in 110 that exits non-zero, and it is kept in the bank's `failed`
+list rather than dropped.**
+
+### ① AND THE SHIFT IS MEASURED — ⚠ WITH A CORRECTION TO MY OWN `cc66.36`
+
+Two locators, so neither carries it alone: **(A)** a parabola vertex at each acoustic extremum;
+**(B)** a sub-bin cross-correlation of the **envelope-normalised** oscillation, so the amplitude change
+cannot leak into the position estimate. Band by band, one acoustic period wide:
+
+| band | control | arm | **difference** |
+|---|---|---|---|
+| $\ell\sim301$ | $+2.91$ | $+3.08$ | $+0.17$ |
+| $\ell\sim602$ | $+5.57$ | $+5.67$ | $+0.11$ |
+| $\ell\sim904$ | $+9.36$ | $+9.25$ | $-0.11$ |
+| $\ell\sim1205$ | $+10.89$ | $+10.86$ | $-0.03$ |
+| $\ell\sim1507$ | $+12.60$ | $+12.47$ | $-0.14$ |
+
+⚠ ***IT IS NOT UNIFORM, AND THE UNIFORMITY WAS MINE TO WITHDRAW.*** `cc66.36` gated the shift as "UNIFORM
+across the first four peaks on both arms, which is what a PHASE shift looks like as against a rescaling
+of the acoustic scale" — on peak positions **quantised to the $\ell$ grid**, with a tolerance of $0.05$
+on integers that could only differ by a whole bin. **That gate could only ever have passed.** Sub-bin it
+rises monotonically, on both arms, on both locators, and again at four times the multipole sampling.
+
+⌗ *This is the second time in three revisions that a gate of mine passed because the resolution and not
+the physics set the number — the reassociation at `cc66.36` was the first. Both are on the record. The
+common failure is the same one: **a tolerance chosen without asking what the smallest difference the
+measurement can express actually is.*** ⚠ *And a pure rescaling does not fit it either — the straight
+line through the per-extremum shifts has an intercept of three multipoles — so **separating the
+Bashinsky–Seljak constant from the $k$-dependent change in the potentials' decay that `NUFS=0` also
+causes is NOT attempted**, and I am not claiming the growth is BS.*
+
+⇒ ***AND THIS IS THE ANSWER TO YOUR QUESTION: IT IS COMMON TO BOTH ARMS.*** Largest band-by-band
+difference **$0.17$ of a multipole**; in units of each arm's own $\ell_A$ the extremum-averaged shift
+agrees to $\mathbf{1.7\times10^{-4}}$. ⇒ **On your own criterion — *"a phase shift common to both is not
+a candidate for $\Delta$ and one that differs between them is"* — the free-streaming phase shift is NOT
+a candidate.**
+
+⇒ ⚑ **AND THE DRAG HALF, SEPARATE, AND SPLIT IN TWO BECAUSE IT IS TWO THINGS.** Removing free-streaming
+raises the **envelope** by $25.7\%$ and changes the peak-to-trough **contrast** by $-1.3\%$ — on both
+arms, agreeing to $0.0004$ and $0.0006$ respectively. ***$\Delta$ is a CONTRAST difference. This knob's
+large effect is in the wrong quantity, and its arm-difference in the right quantity is six parts in ten
+thousand.*** *A second reason, independent of the first — and the reason I think the negative is a firm
+one rather than a null.*
+
+⌗ *In $\Delta$'s own space, since "common to both" deserves a number: the two arms' `NUFS` directions sit
+at a whitened cosine of $0.99918$ (norms $34.8$ and $36.2$ against $\lVert\Delta\rVert = 8.79$). Their
+difference, **freely rescaled**, could reach $8.7\%$ of $\lVert\Delta\rVert^{2}$ at a **negative**
+coefficient — and I report that rather than rounding it away. **But there is no such freedom: both arms
+carry the same neutrino sector, so nothing sets free-streaming differently on the two.** The $8.7\%$ is
+the size of a handle this construction does not have.*
+
+### ⌗ TWO THINGS I AM LEAVING TO YOU
+
+1. **The `SINCE` / `LASTFIND` counter in `scripts/regen_frontier.py`.** *"Turns since we last found we
+   did not know the problem space"* is Daryl's number and a judgement, not mine. `LRSFROM` is arguably
+   one: the instrument's printed acoustic scale turned out not to be an input to the instrument, and
+   nobody had asked. **I have not touched the counter.**
+2. **Whether `PO-56` should still read one step.** I rewrote its hazard clause (discharged) and its
+   candidate clause (ruled out), and left `steps` at $1$ with `was` at $1$, because the DISCHARGE line —
+   a mechanism that raises this arm's oscillation about its own envelope by four per cent where the
+   control's is not raised — is untouched. *If you read the ruling-out as closing a step, that is your
+   call and not mine.*
+
+⛔ **AND THE BOUND YOU SET IS INTACT.** *No mechanism for the contrast imbalance. You said that boundary
+has not moved and this seat is still not moving it — I have not moved it, and the third of
+$\lVert\Delta\rVert^{2}$ that is unnamed is still unnamed.* ⌗ *Nor does this reach hard-coded literals:
+the sweep is of ENVIRONMENT switches, and `cc66.17`'s `NS` literal is the standing reminder that a
+literal which ought to be a switch is a different search and has not been run.*
