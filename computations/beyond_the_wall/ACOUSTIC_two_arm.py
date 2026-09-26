@@ -1229,6 +1229,19 @@ def hier_run(kk, EE, L_A_, D_M_, R_S_):
     #     ⇒ *So `KCONT=1` (uniform) segments exactly, and a ladder run's spectrum depends weakly on
     #       `KBATCH`.  r6794 measures both rather than assuming either.*
     # *Default unset = the whole sum = byte-identical.*
+    # ** ZPSAVE: THE FIELDS AT THE VISIBILITY PEAK, ON THE REPORTING PATH -- r6897+cc66.39. **
+    # `r6897` asks for the value the monopole oscillation swings ABOUT, which is a property of
+    # Theta_0 and Psi at last scattering and not of the projected spectrum.  ⌗ `PHISAVE` already
+    # saves fields -- and it is one of the NINE switches `r6893+cc66.37` measured as OFF the
+    # reporting path, so using it here would be measuring the low-multipole construction and
+    # calling it the reporting one.  ** This is its reporting-path counterpart. **
+    #   ⇒ It saves the UNDAMPED Theta_0 on purpose.  The envelope D multiplies the WHOLE of
+    #     Theta_0, its offset included, so a damped monopole's swing midpoint carries D with it and
+    #     the displacement -RPsi could not be read off it at all.
+    # *Default unset = nothing written = byte-identical, and that is gated.*
+    _zps = os.environ.get('ZPSAVE')
+    _zpi = int(np.argmin(np.abs(EE - ETA_LS))) if _zps else 0
+    _ZK, _ZTH, _ZPS, _ZPH, _ZTB = [], [], [], [], []
     _ksl = os.environ.get('KSLICE')
     if _ksl:
         _lo, _hi = (int(x) for x in _ksl.split(':'))
@@ -1249,8 +1262,29 @@ def hier_run(kk, EE, L_A_, D_M_, R_S_):
         Y[:len(E1), :, :NVf] = Y1[:-1]
         Y[:len(E1), :, I_TB] = Y1[:-1, :, 3]            # tightly coupled before the switch
         Y[len(E1):] = Y2
+        if _zps:
+            _yl = Y[_zpi]
+            _sn, _sg = _yl[:, 7] / 2, _yl[:, I_FG] / 2
+            _hc = float(Hc_of(EE[_zpi]))
+            _on, _og = float(On_of(EE[_zpi])), float(Og_of(EE[_zpi]))
+            _ZK.append(kb.copy())
+            _ZTH.append(_yl[:, 2] / 4)                       # UNDAMPED Theta_0 -- see above
+            _ZPS.append(_yl[:, 6] - 6 * _hc ** 2 * (_on * _sn + _og * _sg) / kb ** 2)
+            _ZPH.append(_yl[:, 6].copy())
+            _ZTB.append(_yl[:, I_TB].copy())
         Cl += _project(kb, EE, Y, ls, x0, e_sw)
         print(f"    modes {i0}-{i0+nk} done", flush=True)
+    if _zps:
+        _kz = np.concatenate(_ZK)
+        np.savez(_zps, k=_kz, th0=np.concatenate(_ZTH), psi=np.concatenate(_ZPS),
+                 phi=np.concatenate(_ZPH), tb=np.concatenate(_ZTB),
+                 eta=EE[_zpi], eta_ls=ETA_LS, eta_ls_w=ETA_LS_W,
+                 a_ls=float(np.interp(EE[_zpi], eg, ag)),
+                 R_eta=float(Rb_of(EE[_zpi])), R_peak=float(Rb_of(ETA_LS)),
+                 rb_rec=RB_REC, a_rec=A_REC, z_rec=Z_REC, ombh2=OMBH2,
+                 arm=ARM, r_s=R_S, D_M=D_M, sliced=bool(_ksl))
+        print(f"  ZPSAVE: {len(_kz)} modes at eta = {EE[_zpi]:.2f} (visibility peak {ETA_LS:.2f}, "
+              f"FWHM {ETA_LS_W:.2f}), 1+R = {1+float(Rb_of(EE[_zpi])):.5f} -> {_zps}")
     Dl = Cl * ls * (ls + 1)
     return ls, Dl
 
@@ -1358,6 +1392,14 @@ def main():
           f"eta_end = {ETA_END:.0f}")
     print(f"  D_M = {D_M:.0f} Mpc   r_s = {R_S:.2f} Mpc   l_A = pi D/r_s = {L_A:.1f}   "
           f"modes = {len(kk)}")
+    # ** THE VISIBILITY PEAK AND ITS WIDTH, IN THE HEADER -- r6897+cc66.39, at node 66's request. **
+    # *They are computed at module level on both arms and were printed only inside `los_spectrum`, so
+    # on `HIER=1` -- the reporting path -- the two arms' widths had never been seen side by side.*
+    # ⌗ Not a shadow: a print is not a knob, which is `LRSFROM`'s own lesson at r6893+cc66.37.  But
+    # the loading at last scattering is read off this eta, so the header should carry it.
+    print(f"  visibility: peak at eta = {ETA_LS:.2f} (z = {1/float(np.interp(ETA_LS, eg, ag))-1:.1f}), "
+          f"FWHM = {ETA_LS_W:.2f} Mpc   R = 3 rho_b/4 rho_g there = {float(Rb_of(ETA_LS)):.5f}   "
+          f"1+R = {1+float(Rb_of(ETA_LS)):.5f}")
     # ** z_eq PRINTED r6760+cc66.2, BECAUSE ORFAC WAS INVISIBLE WITHOUT IT. **  *On the CR arm
     # `rs_from`, `D_M` and the pin all ride the radiation-FREE rate, so scaling Omega_r moves
     # nothing on the line above -- the knob acts on the leaf rate and the density fractions and
