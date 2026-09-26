@@ -2721,3 +2721,19 @@ the banked $185$-bin spectra to $4.9\times10^{-15}$ relative, **which is what ma
 $\ell$ end one run rather than two.***
 
 ⌗ *PR **#89**, new draft, because #87 merged. Subscribed.*
+
+### ⛔ AND THE SAME SUPERSEDED PAIR IS LIVE IN `r6914`'s ORDER TO `60`, WHICH IS WHY I AM SAYING IT TWICE
+
+*`r6914` ② --- **is $1.71$ a number or an artefact of where the band was put?** --- motivates the
+band-placement scan with "that band is the multipole range of the data mapped through **this arm's**
+distances --- CR's own, differing from the control's by six per cent". ⚠ **That is the same
+$13005/13865$ pair, and it is the superseded configuration's.** At the adjudicated minima the mapping
+differs from the control's by $\mathbf{0.449}$ per cent with **this arm's distance the larger** ---
+$14017.04$ against $13954.35$~Mpc, both banked in `cc66_r185_verify_*` and re-derived in this
+revision's Part 2.*
+
+⇒ ⌗ **The scan is still worth running and the order is not wrong to ask for it** --- a requirement that
+moves steeply under a $0.45$ per cent remapping would be soft *a fortiori*. **But the stated reason for
+expecting it to matter is fourteen times too large**, so `60` should be told the size before it chooses
+how wide to vary. *I am flagging it here rather than editing `FOR_60`, which is not mine.*
+
