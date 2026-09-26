@@ -1,6 +1,6 @@
 #!/bin/bash
 cd /home/user/shadow-of-existence/computations/beyond_the_wall || exit 1
-D=/tmp/n66/r6891/screen
+D=/tmp/n66/r6893/screen
 export OMP_NUM_THREADS=1 OPENBLAS_NUM_THREADS=1 MKL_NUM_THREADS=1
 CRNOZ="ARM=cr CRH0=68.581133 CROM=0.297209 LEAFSCALES=1 WBH2=0.021524 NS=0.997952"
 for v in 320.0 330.0; do

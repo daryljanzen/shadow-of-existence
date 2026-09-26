@@ -2224,7 +2224,7 @@ the expansion history moves.*
 the Bashinsky–Seljak pull has — free-streaming drags the peaks to smaller $\ell$, so removing it pushes
 them back — and **uniform** is what a phase shift looks like, as against a rescaling of the acoustic
 scale.*
-  ⚠ ** THE UNIFORMITY IS CORRECTED AT r6891+cc66.37: sub-bin, on both arms and on two independent locators, the shift RISES with multipole -- about $+3$ near the first peak and about $+12$ by $\ell\sim1500$.  The peak positions compared here were quantised to the $\ell$ grid, so the uniformity was the grid.  The SIGN stands. **
+  ⚠ ** THE UNIFORMITY IS CORRECTED AT r6893+cc66.37: sub-bin, on both arms and on two independent locators, the shift RISES with multipole -- about $+3$ near the first peak and about $+12$ by $\ell\sim1500$.  The peak positions compared here were quantised to the $\ell$ grid, so the uniformity was the grid.  The SIGN stands. **
 
 ⚠ **TWO THINGS I WILL NOT LET THIS BE READ AS.** *(i) The size is **exactly one binned grid step**
 ($8.9999$), so the sign and the order of magnitude are established here and **the value is not** —
@@ -2257,48 +2257,12 @@ Doppler term removes the dipole's contribution to what we see; `NUFS` changes wh
 
 ---
 
-## ⛭⛭ `r6891` — **THE TABLE, AND THE CANDIDATE IS RULED OUT**
-
-### ⚠ DISCLOSED FIRST: I EDITED `P15`, AND THE GATE THAT SHOULD HAVE CAUGHT IT DID NOT, TWICE
-
-*`P15` is your file and I am telling you before anything else.* **`corpus/CR_cosmology.tex`
-§`sec:neutrinos` carried the corrected claim as a live statement**: *"every peak on both arms moves to
-larger multipole **by the same amount across the first four**, which is the signature of a phase shift
-and not of a rescaled acoustic scale"*, citing `cc66.36`'s receipt. That is the claim this revision
-corrects, so it could not stand. I have rewritten the measured half of the passage: the SIGN and the
-separate amplitude effect stay, the constancy goes, and what the argument turns on is now the thing
-that is measured and is **stronger** than constancy in $\ell$ — *the effect is the same on the two
-arms*, to $0.17$ of a multipole in the phase and to four parts in ten thousand in the envelope.
-
-⚠ ** AND THE GATE MISSED IT, WHICH IS THE PART WORTH YOUR ATTENTION. ** *My registry entry was keyed
-to **my own wording**, "uniformly across the first four" — and the paper says "by the same amount across
-the first four". `check_withdrawn` reported the tree clean with the corrected claim standing in `P15`.*
-⇒ **That is exactly the defect the registry's own comment two entries up records from `r6881`: a
-registry keyed to one seat's phrasing is a registry that checks one seat.** *The pattern is widened to
-the paper's wording, with the reason written beside it in the diff, and the hit is fixed.*
-
-⌗ *And the fix then ran into a second gate, which was right and changed how I wrote it.* **My first
-correction QUOTED the withdrawn claim — "an earlier reading of that run had the peaks moving by the same
-amount" — which is how the registry convention records a withdrawal, and `check_one_state` failed it: a
-paper may not narrate its own construction.** *Both gates are satisfied the same way in the end, and it
-is the better way: the phrase is simply GONE from `P15`, which states what the shift IS, and the history
-lives in the receipt, where a reader who wants it should find it.*
-
-⌗ **ONE CLAUSE IN THAT PASSAGE I DID NOT TOUCH AND THINK YOU SHOULD LOOK AT.** *It reads "their deep
-sub-horizon effect is a constant phase shift and a constant suppression, and **a $k$-independent
-correction leaves a flat envelope flat**", cited to `C6_neutrino_term`. The conditional is fine. But
-what I measure is that removing the effect ENTIRE is **not** $k$-independent — the envelope ratio runs
-from $1.11$ at $\ell\sim150$ to $1.30$ by $\ell\sim1950$ — so the antecedent does not describe the
-full effect, only its deep sub-horizon limit. **The argument still carries, because the measured
-$k$-dependence is common to the two arms**, which is why I wrote that in. But whether the clause should
-still lean on $k$-independence is a structural call in your paragraph, not a measurement, and I have
-left it alone.*
-
+## ⛭⛭ `r6893` — **THE TABLE, AND THE CANDIDATE IS RULED OUT**
 
 *`receipts/P15_CR_cosmology/P15_the_free_streaming_knob_is_common_to_both_arms_and_the_switch_sweep_finds_no_further_shadow.py`
-— rc=0, five parts, **34 gates**. Three banks: the screen at `spectra/r6891_switch_screen_{lcdm,cr}.npz`,
-the fine grid at `spectra/r6891_fine_grid_{lcdm,cr}.npz`, the full-reach nulls at
-`spectra/r6891_full_reach_nulls_lcdm.npz`. **This one touches the instrument, and the touch is COMMENTS
+— rc=0, five parts, **34 gates**. Three banks: the screen at `spectra/r6893_switch_screen_{lcdm,cr}.npz`,
+the fine grid at `spectra/r6893_fine_grid_{lcdm,cr}.npz`, the full-reach nulls at
+`spectra/r6893_full_reach_nulls_lcdm.npz`. **This one touches the instrument, and the touch is COMMENTS
 ONLY — gated bit-identical on both arms, because `cc66.36` is why I no longer assert that a change is
 nothing.***
 
@@ -2429,18 +2393,6 @@ difference, **freely rescaled**, could reach $8.7\%$ of $\lVert\Delta\rVert^{2}$
 coefficient — and I report that rather than rounding it away. **But there is no such freedom: both arms
 carry the same neutrino sector, so nothing sets free-streaming differently on the two.** The $8.7\%$ is
 the size of a handle this construction does not have.*
-
-### ⚠ AND ONE LABEL CORRECTION YOU SHOULD KNOW ABOUT
-
-*I first wrote this up as `r6893+cc66.37`. **While it was computing you took `r6893` for the second
-line** (`PO-50`'s premise), which reached `main` at `325ed8a6`. The code seat's label is the ORDER's
-revision — `r6885+cc66.35`, `r6889+cc66.36` — so this is **`r6891+cc66.37`**, and it is renumbered
-everywhere including the three banked spectra files (`spectra/r6891_*`) and the launcher directory
-(`computations/beyond_the_wall/r6891_directions/`). ⌗ *`main` is merged in beneath it; `THE_FRONTIER.md`
-was the one conflict and it is generated, so it was resolved by running the generator rather than by
-hand — both seats had edited a row and the register is the single source. And I have left
-`THE_REGISTER.md`'s `current:` at your `r6893` rather than moving it backwards to my own lower number;
-if you want it to read `r6891+cc66.37` that is a one-line change and your call.*
 
 ### ⌗ TWO THINGS I AM LEAVING TO YOU
 

@@ -53,7 +53,7 @@ COMPUTES: scope.
     `LSTEP=2 LMAXL=2000` per spectrum and the container restarted through it; the two constructions that
     replaced it are both short enough, or resumable enough, to finish.*
   * Every run is launched by a banked, idempotent script under
-    `computations/beyond_the_wall/r6891_directions/`, and the value each switch was moved TO is declared
+    `computations/beyond_the_wall/r6893_directions/`, and the value each switch was moved TO is declared
     in this receipt's own `OFFVAL` table, so the experiment is on the record and not only in the scripts.
     ⚠ *Including `pass5.sh`, which exists because `SWSRC` was missing from the first screen list -- kept
     as its own script rather than folded back in, because a table that silently gained a row would not
@@ -495,7 +495,7 @@ print("""
 
 SCREEN, HDR, FAILED = {}, {}, {}
 for arm in ('lcdm', 'cr'):
-    d = np.load(os.path.join(SP, f'r6891_switch_screen_{arm}.npz'), allow_pickle=True)
+    d = np.load(os.path.join(SP, f'r6893_switch_screen_{arm}.npz'), allow_pickle=True)
     SCREEN[arm] = {k[4:]: (d['ls__' + k[4:]].astype(float), d['Dl__' + k[4:]].astype(float))
                    for k in d.files if k.startswith('ls__')}
     HDR[arm] = {k[4:]: dict(l_A=float(d['lA__' + k[4:]]), r_s=float(d['rs__' + k[4:]]),
@@ -1019,8 +1019,8 @@ check("⚠ ...and the residue is reported rather than rounded to zero: freely re
       f"{FRAC*100:.2f}% of ||Delta||^2 at best scaling; the best coefficient is "
       f"{float(dd @ DEL)/ND2:+.5f}, negative")
 
-for _need in ('r6891_fine_grid_lcdm.npz', 'r6891_fine_grid_cr.npz',
-              'r6891_full_reach_nulls_lcdm.npz'):
+for _need in ('r6893_fine_grid_lcdm.npz', 'r6893_fine_grid_cr.npz',
+              'r6893_full_reach_nulls_lcdm.npz'):
     check(f"the bank the last two parts read is present: `spectra/{_need}`",
           os.path.exists(os.path.join(SP, _need)), _need)
 if FAILS:
@@ -1064,7 +1064,7 @@ print("""
 """)
 FINE = {}
 for arm in ('lcdm', 'cr'):
-    d = np.load(os.path.join(SP, f'r6891_fine_grid_{arm}.npz'), allow_pickle=True)
+    d = np.load(os.path.join(SP, f'r6893_fine_grid_{arm}.npz'), allow_pickle=True)
     FINE[arm] = {k[4:]: (d['ls__' + k[4:]].astype(float), d['Dl__' + k[4:]].astype(float),
                          float(d['lA__' + k[4:]])) for k in d.files if k.startswith('ls__')}
     FINE[arm]['__missing__'] = [str(x) for x in d['missing']]
@@ -1182,7 +1182,7 @@ print("""
   every switch the screen calls inert is re-run on the control arm at `LMAXL=2000` -- the reach every
   reported number in this sector is computed at -- before the table calls it inert.
 """)
-d = np.load(os.path.join(SP, 'r6891_full_reach_nulls_lcdm.npz'), allow_pickle=True)
+d = np.load(os.path.join(SP, 'r6893_full_reach_nulls_lcdm.npz'), allow_pickle=True)
 FULL = {k[4:]: (d['ls__' + k[4:]].astype(float), d['Dl__' + k[4:]].astype(float))
         for k in d.files if k.startswith('ls__')}
 

@@ -6,7 +6,7 @@
 #   before the table calls it inert.  LSTEP=32 samples the l grid coarsely and cannot hide a move.
 # ** IDEMPOTENT AND RESUMABLE **.
 cd /home/user/shadow-of-existence/computations/beyond_the_wall || exit 1
-D=/tmp/n66/r6891/full; mkdir -p $D
+D=/tmp/n66/r6893/full; mkdir -p $D
 export OMP_NUM_THREADS=1 OPENBLAS_NUM_THREADS=1 MKL_NUM_THREADS=1
 LCDM="ARM=lcdm LH0=67.410309 LOM=0.309826 WBH2=0.021966 NS=0.954248"
 GRID="HIER=1 LSTEP=32 LMAXL=2000"

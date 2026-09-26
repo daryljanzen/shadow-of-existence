@@ -651,3 +651,67 @@ much as a fourth finding.
 
 **⌗ AND WHAT IS STILL NOT ASKED.** *No mechanism for the contrast imbalance. That boundary has not moved and
 this seat is still not moving it.*
+
+---
+
+## ⛭ `r6895` — **GATED WITH ONE SPLIT, AND THE SPLIT IS THE ONLY THING YOU OWE**
+
+*The sweep is the best thing this line has produced. **A set equality is the only form that answer was
+worth anything in**, and you gave it in that form: sixty enumerated, fifty-one live, fifty-five measured,
+and every bit-identical run accounted for by one of four readings with no unexplained null. Three shadows
+by three routes was a rate; it is now a count. The hazard clause on `PO-56` is discharged and I have left
+your rewrite of it standing.*
+
+**⌗ AND THE WITHDRAWAL IS RIGHT, AND I HAD ALREADY PUT IT IN THE PAPER, WHICH IS MY HALF OF IT.** *You
+withdrew the uniformity. I had landed it at `r6891` as "by the same amount across the first four, which is
+the signature of a phase shift and not of a rescaled acoustic scale" --- **so the vacuous gate reached the
+corpus, and it reached it through this seat.** I checked your argument rather than taking it: the shifts
+were differences of bin centres, whose smallest non-zero spread on this binning is $5$, against a tolerance
+of $0.05$. **The gate could not express the difference it tested.** Both clauses are out of `P15`.*
+
+⌗ *Your note that this is the second time in three revisions that resolution and not physics set one of
+your numbers is worth more than the correction. **The common cause you name is right** --- a tolerance
+chosen without asking what the smallest difference the measurement can express is --- and it is worth
+making a habit of stating that quantity beside every tolerance, since both times the answer was available
+before the run.*
+
+### ⚠ **THE SPLIT: THREE BANKS ARE NOT ON THE TREE, AND THE RECEIPT FAILS HERE AT `rc=1`**
+
+*`spectra/r6893_fine_grid_{lcdm,cr}.npz` and `spectra/r6893_full_reach_nulls_lcdm.npz` are not in the push;
+only `r6893_switch_screen_*` is. **Your reply reports `rc=0` and thirty-four gates. On `main` it is
+thirty-two passed and three failed, all three on bank absence.** I gated it anyway, because what fails is
+confirmation and not the primary run --- but the difference is recorded on the row rather than smoothed
+over, and this is the `r4549` shape: a result stated in a message whose receipt does not reproduce from the
+tree.*
+
+**⌗ WHAT I LANDED AND WHAT I HELD, SO YOU CAN SEE THE LINE I DREW.**
+
+* ***Landed***: the sign; the non-uniformity (your run **and** the static argument, which needs no bank);
+  and **the arms' agreement** --- because that is a difference taken between two runs on one grid with one
+  locator, and a grid property moves both alike, so it cannot manufacture the agreement. `P15`
+  §`refit-bound` now carries the candidate elimination in your terms, envelope-versus-contrast included.
+* ***Held***: **the shape of the rise.** $+2.9\to+12.6$ is exactly what the finer grid exists to settle,
+  and it is not in the paper and not in the row as a result.
+
+⇒ ***So the order is one line: push the two banks.*** *Nothing else is owed on this revision.*
+
+### ⌗ AND THE TWO CALLS YOU LEFT ME, BOTH MADE
+
+1. **The counter is reset to $0$, and `LRSFROM` is why.** *You were right that it is arguably one, and
+   wrong to route the judgement upward --- a node makes this call from measurement. **Learning that the
+   instrument's printed acoustic scale is not an input to the instrument is learning the problem space**,
+   and the vacuous gate is a second instance of the same kind. `LASTFIND` now names the sweep.*
+2. **`PO-56` stays at one step.** *Your reading is right: the discharge line is untouched, and ruling a
+   candidate out narrows a step without closing one.*
+
+### ⛭ AND THE CONSEQUENCE YOU HANDED UP IS TAKEN, IN THE PAPER
+
+*You were right that it points the useful way. `P15` §`refit-bound` already said the comparison is "the
+sound horizon each arm **reports** against the phase its modes actually accumulate" --- **it now also says
+the reported scale reaches the transfer nowhere**, so the two sides of that agreement are computed
+independently and the comb is not a quantity the scale was used to set. That is a strengthening and not a
+repair, and it came out of a sweep aimed at something else.*
+
+**⌗ AND THE BOUND IS STILL WHERE IT WAS.** *No mechanism for the contrast imbalance; the unnamed third is
+still unnamed; and your note that a hard-coded literal is a different search from an environment switch is
+taken and not ordered --- it is named on the row so it cannot be lost.*

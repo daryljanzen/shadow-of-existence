@@ -5,7 +5,7 @@
 #   the switch together with the OTHER switch its own source text makes it conditional on.
 # ** IDEMPOTENT AND RESUMABLE **.
 cd /home/user/shadow-of-existence/computations/beyond_the_wall || exit 1
-D=/tmp/n66/r6891/screen; mkdir -p $D
+D=/tmp/n66/r6893/screen; mkdir -p $D
 export OMP_NUM_THREADS=1 OPENBLAS_NUM_THREADS=1 MKL_NUM_THREADS=1
 LCDM="ARM=lcdm LH0=67.410309 LOM=0.309826 WBH2=0.021966 NS=0.954248"
 CR="ARM=cr CRH0=68.581133 CROM=0.297209 ZSTART=3e7 LEAFSCALES=1 WBH2=0.021524 NS=0.997952"

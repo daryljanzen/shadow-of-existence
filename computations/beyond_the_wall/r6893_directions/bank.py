@@ -32,6 +32,6 @@ def bank(srcdir, out, arm, strip):
     print(f"  {out}: {n} spectra, {os.path.getsize(os.path.join(SP,out))/1024:.0f} kB")
     return n
 for arm in ('lcdm','cr'):
-    bank('/tmp/n66/r6891/screen', f'r6891_switch_screen_{arm}.npz', arm, True)
-    bank('/tmp/n66/r6891/full',   f'r6891_full_reach_nulls_{arm}.npz', arm, True)
-    bank('/tmp/n66/r6891/fine',   f'r6891_fine_grid_{arm}.npz', arm, True)
+    bank('/tmp/n66/r6893/screen', f'r6893_switch_screen_{arm}.npz', arm, True)
+    bank('/tmp/n66/r6893/full',   f'r6893_full_reach_nulls_{arm}.npz', arm, True)
+    bank('/tmp/n66/r6893/fine',   f'r6893_fine_grid_{arm}.npz', arm, True)

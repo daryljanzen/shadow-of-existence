@@ -1,14 +1,14 @@
 """Bank r6891's runs into computations/beyond_the_wall/spectra.
 
-  r6891_switch_screen_{arm}.npz   the sweep, one key group per tag            (already banked)
-  r6891_full_reach_nulls_lcdm.npz the nine off-path switches at LMAXL=2000
-  r6891_fine_grid_{arm}.npz       fineA (LSTEP=2 LMAXL=900, whole) and fineB
+  r6893_switch_screen_{arm}.npz   the sweep, one key group per tag            (already banked)
+  r6893_full_reach_nulls_lcdm.npz the nine off-path switches at LMAXL=2000
+  r6893_fine_grid_{arm}.npz       fineA (LSTEP=2 LMAXL=900, whole) and fineB
                                   (LSTEP=4 LMAXL=2000, SUMMED over k-slices), plus the
                                   slice-additivity pair at the screen grid
 """
 import os, glob, sys, numpy as np
 SP='/home/user/shadow-of-existence/computations/beyond_the_wall/spectra'
-D='/tmp/n66/r6891'
+D='/tmp/n66/r6893'
 def rc(log):
     if not os.path.exists(log): return None
     for L in open(log):
@@ -32,8 +32,8 @@ for lg in sorted(glob.glob(f"{D}/full/*_lcdm.log")):
     if rc(lg) not in (0,) or not os.path.exists(f"{D}/full/{t}.npz"): fail.append(f"{t}:rc={rc(lg)}")
 if [k for k in out if k.startswith('ls__')]:
     out['failed']=np.array(fail, dtype=object)
-    np.savez_compressed(os.path.join(SP,'r6891_full_reach_nulls_lcdm.npz'), **out)
-    print(f"  r6891_full_reach_nulls_lcdm.npz: {len([k for k in out if k.startswith('ls__')])} spectra, "
+    np.savez_compressed(os.path.join(SP,'r6893_full_reach_nulls_lcdm.npz'), **out)
+    print(f"  r6893_full_reach_nulls_lcdm.npz: {len([k for k in out if k.startswith('ls__')])} spectra, "
           f"failed={fail}")
 else:
     print("  full-reach nulls: nothing yet")
@@ -74,8 +74,8 @@ for arm in ('lcdm','cr'):
     else: miss.append('slicesum')
     if [k for k in F if k.startswith('ls__')]:
         F['missing']=np.array(miss, dtype=object)
-        np.savez_compressed(os.path.join(SP,f'r6891_fine_grid_{arm}.npz'), **F)
-        print(f"  r6891_fine_grid_{arm}.npz: "
+        np.savez_compressed(os.path.join(SP,f'r6893_fine_grid_{arm}.npz'), **F)
+        print(f"  r6893_fine_grid_{arm}.npz: "
               f"{sorted(k[4:] for k in F if k.startswith('ls__'))}  missing={miss}")
     else:
         print(f"  fine grid {arm}: nothing yet (missing {miss})")
