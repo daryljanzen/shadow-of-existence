@@ -999,3 +999,114 @@ genuine error there should lead the reply; there is none. What needed correcting
   withdrawn by the seat that raised it rather than struck by the gate. `PO-52` **stays open and narrows** to its
   second half alone. And `PO-31` is understood as held — I have not touched the acoustic refit or anything
   downstream of it.*
+
+---
+
+## ⛭ `r6898` — **BOTH ORDERS ANSWER. `PO-52` CLOSES, AND NOT BY THE ROUTE THE ORDER OFFERED; `PO-31`'s NAMED CANDIDATE CLOSES AND THE ROW STAYS OPEN.**
+
+*Two receipts, one revision. `rc=0` on each; **11/11** and **9/9** checks; no hollow assertions. Fast job green on this tree (10 generators, 105 gates, plus the hollow-assertion lint), before and after this reply was written.*
+
+* `receipts/P10_canonical_time/P10_the_shear_breaks_conformal_flatness_but_not_the_gauss_bonnet_degeneracy_so_nothing_sees_the_coefficient.py`
+* `receipts/P15_CR_cosmology/P15_the_transfer_is_the_same_object_as_the_vacuum_spectrum_and_the_crossing_carries_no_wavenumber.py`
+
+⌗ **Receipt homes, because the last one was bundled and this one is not.** `PO-52`'s counterterm is carried in `canonical_time.tex` as *"this programme's own open frontier"*, so its receipt goes in `P10_canonical_time`, the declared home. `r6894` put the `PO-52` half in `P17` because it travelled with `PO-55`; **that is grandfathered and this is where the row actually lives.**
+
+---
+
+### ⓵ `PO-52` — **CLOSES, AND THE ORDER'S OWN CLOSING ROUTE IS NOT THE ONE THAT WORKS**
+
+The order allowed one way to close: *"if the honest answer is that the admitted second-order shear configurations are not ones anything observes, that closes the row and is the result."* ⚠ **That is not what this finds, and it should not be recorded as if it were.** The configurations *are* on the construction's admitted list, and `r6894`'s non-vanishing invariant *is* real. **What fails is the step from a non-vanishing INVARIANT to a moved OBSERVABLE — because conformal flatness was never the only degeneracy in play.**
+
+**⛭⛭ THERE IS A SECOND DEGENERACY AND IT IS NOT A PROPERTY OF THE FAMILY.** In four dimensions
+
+```
+C² = E₄ + 2(R_ab R^ab − R²/3),        E₄ = Riem² − 4 Ric² + R²
+```
+
+is an **algebraic identity on any metric**. Not conformal flatness, not maximal symmetry — **so no order in the shear can break it.** Verified on closed FLRW with `a(t)` left free (where `C² = 0` *and both remainders are non-zero*, so the identity reads more than `0 = 0`) and on SdS (where `C² = 48M²/r⁶ ≠ 0`).
+
+**AND THE GAUSS–BONNET HALF CANNOT REACH A FIELD EQUATION — CHECKED ON THE SHEAR CONFIGURATION ITSELF.** The Lanczos identity, `H_ab ≡ 0` in four dimensions, holds on the confined wave at the same amplitudes where `r6894` found `C² ≠ 0`:
+
+| η | z | ε | C² | E₄ | max\|H_ab\|/Riem² |
+| --- | --- | --- | --- | --- | --- |
+| −1.30 | 0.40 | 0.100 | −0.0594 | 24.110 | 5.2e−31 |
+| −2.70 | 1.10 | 0.200 | +23.503 | 15.121 | 2.2e−32 |
+| −0.60 | 2.00 | 0.050 | −0.00027 | 24.000 | 1.6e−30 |
+| −1.30 | 0.40 | **0** | **0** | 24.000 | 2.3e−31 |
+
+⇒ **so a change of subtraction point moves the dynamics only through `2(R_ab R^ab − R²/3)` — and the field equations spend that, trading `R_ab` for the stress tensor. On the substrate, an exact vacuum-Λ space, `C² = E₄ − 8Λ²/3` exactly.**
+
+**⛭ WHICH IS `PO-51`'s CONCLUSION, REACHED FROM AN IDENTITY RATHER THAN FROM A PROPERTY OF THE ADMITTED FAMILY — SO THE SHEAR CANNOT TAKE IT AWAY.** The subtraction-point change is a cosmological-term renormalisation at second order in the shear exactly as it was at zeroth.
+
+⌗ **The remainder is named rather than hidden.** `∫√-g E₄` shifts the on-shell action by a topology-fixed constant. **It does so at `ε = 0` as much as at `ε ≠ 0`**, so the broken degeneracy is not what produces it, and it cannot be what the row was asking about.
+
+⚠ **Bounds.** **On-shell only, and that is the whole restriction** — the reduction uses the field equations to eliminate `R_ab`, and off-shell `C²` is an independent invariant nothing here bounds. A **matter-sourced** shear configuration gives a stress-tensor integral rather than a constant×volume: still not a new geometric constant, but not the same statement, so the sharp form is labelled as the vacuum-Λ one. **The frontier's `1/60` is not used, not needed and not tested** — the argument is coefficient-independent, as the order required. And the linearised wave is Einstein through **first** order only, its Ricci residue measured to scale as `ε²` exactly; the Lanczos step does not need it to be a solution, and the sharp vacuum-Λ form is stated on SdS instead.
+
+⌗ **⚠ AND ONE INSTRUMENT FAILURE IS ON THE RECORD BECAUSE THE CALIBRATION IS WHAT CAUGHT IT.** The first `H_ab` raised one index of one Riemann factor and not of the other and returned `|H_ab|/Riem² ≈ 0.8` **on pure de Sitter**, where the identity is exact. It was silent everywhere except on the case with a known answer, and the `ε = 0` row is kept in the receipt as that control.
+
+---
+
+### ⓶ `PO-31` — **THE NAMED CANDIDATE IS NOT A SECOND PLACE, AND SAYING SO COSTS MORE THAN A PARAGRAPH**
+
+The order offered the paragraph if the question was already closed. **It was not closed, and the reason it comes out closed now corrects this seat's own reconciliation of two banked results.**
+
+**⛭ (1) THE INTERIOR'S TRANSFER AND THE INTERIOR'S VACUUM SPECTRUM ARE ONE OBJECT.** The banked instrument — `P15_the_progenitor_vacuum_is_negligible_too`, PART 2, integrating the `k ≠ 0` mode equation from sub-horizon vacuum data down to the crunch — run at the **determined** `ρ = 0.0539`:
+
+```
+k         5      7     10     20     50    100    300   1000   1400   2000
+n_s − 1      +0.267 +0.514 +0.916 +1.333 +1.727 +1.885 +1.950 +1.979        (centred)
+```
+
+**`r6857`'s `+0.30` to `+1.98` — from vacuum data placed somewhere else entirely** (`r6846` set it at maximum expansion; this sets it sub-horizon in the deep matter contraction). ⚠ They are not expected to agree pointwise and do not: the top end reproduces to three figures, the flat end to twelve per cent. **What reproduces is the running and its two limits, which is what the argument uses.**
+
+**⛔ (2) AND THE BANKED SCALE-INVARIANCE IS NOT CONTRADICTED — IT HAS A DOMAIN, AND THIS SEAT GOT THAT WRONG ONCE ALREADY.** The potential `2/(x(x+2ρ))` breaks at `x ~ 2ρ`, so `k_break = 1/(2ρ)` separates *freezes in the matter contraction* from *freezes in the radiation crunch*. The banked check ran at `ρ = 1e−3, 1e−4` with its whole tested band (`k = 2, 10, 30`) **below** `k_break = 500, 5000` — where it passes to 0.20%, reproduced here as the gate. At the determined `ρ`, `k_break = 9.3` and **the observed band lies above it.**
+
+⚠ **`r6846` reconciled the two by saying *"its scale-invariance is of a transfer and its number an amplitude; the slope of the generated spectrum is a different object."* They are one object, and that reconciliation is withdrawn.** The correct one is the band's position relative to `1/(2ρ)`. ⛔ **Recorded plainly because it is a self-correction in the direction that let a conflict pass — the opposite of this seat's usual direction, which 66 has warned about, and it is worth knowing the error goes both ways.**
+
+**⛭ (3) AND THE ONE STEP GENUINELY UNTESTED — THE CROSSING — CARRIES NO WAVENUMBER, EXACTLY.** The banked transfer law's monodromy `4π/ρ` was verified in PART 3b on the **`k = 0`** equation only. `x = 0` is a regular singular point with resonant exponents `0` and `1`, so the monodromy *is* the resonant log coefficient, determined here order by order:
+
+```
+C = 1/ρ   exactly,      dC/dk = 0
+```
+
+and the mechanism is visible coefficient by coefficient: **`k²` is regular where the potential is singular**, so it reaches neither the indicial equation (`x²(pot − k²) → 0`) nor the resonance — it first enters the analytic solution at `x³`. **So PART 3b's `k = 0` verification was not a restriction on its validity after all, and that is now checked rather than assumed.**
+
+⇒ **⛭⛭ SO THE CHAIN FROM THE PROGENITOR'S VACUUM TO THE BOUNDARY DATUM CARRIES NO `k`-DEPENDENCE OF ITS OWN ANYWHERE:**
+
+| step | what it carries |
+| --- | --- |
+| interior vacuum → crunch residue | the **same object** as the generated spectrum — `r6857`'s blue running, reproduced from other initial data |
+| the crossing | `C = 1/ρ`, `dC/dk = 0` — exactly none |
+| the collapse leg | scale-free at fixed phase, exactly 1 (`r6812`, `r6823`) |
+
+**And where a `k`-dependence does enter it is BLUE where the target is red.**
+
+⚠ **`PO-31` DOES NOT CLOSE, AND THIS DOES NOT CLAIM IT DOES.** It closes the route the order named. The row's question is exactly where `r6857` left it — **four closed channels plus one closed transfer, rather than four closed channels and an untested transfer.**
+
+⌗ **And one item is deliberately NOT touched.** `C19` states in its own voice that its `9/10` join factor is the super-horizon one and that *"modes inside the horizon at the branch point are not covered"*. ⓷ is about the crossing's **monodromy** and says nothing about whether `9/10` extends to sub-horizon modes. **That is a separate open item and it is left open rather than quietly absorbed.**
+
+⌗ **A bounded consequence for a number the corpus carries, which moves no verdict.** `A_s^vac = 9(ℓ_P/M)²ρ⁻⁶` was read off the scale-free branch. On the observed band the residue exceeds that branch, by `5.3e3` in power at the band's top — so the banked number is the `k → 0` end of a running amplitude rather than a band-wide constant. Against a shortfall of `2.2e103` (→ `4.2e99`) **the banked verdict is untouched**: the primordial statistics are classical and non-vacuum. ***A bound on how the number is read, not a correction to its conclusion.***
+
+---
+
+### ⌗ Dispositions, stated so the gate does not have to infer them
+
+| row | disposition |
+| --- | --- |
+| `PO-52` | ⛭ **closes** — the coefficient exists, is non-vanishing pointwise, and moves nothing; `r6894` is its premise and not its casualty |
+| `PO-31` | **stays open, one candidate eliminated** — the transfer is not a place a red tilt can come from |
+| `PO-51` | untouched and not reopened; ⓵ re-derives its conclusion from an identity instead |
+| `PO-48` | untouched — no value imported for anything, as both orders required |
+| `C19`'s sub-horizon gap | **named and left open**, not absorbed |
+| `r6846`'s reconciliation | ⛔ **withdrawn** by this seat |
+| the frontier's `1/60` | untouched and uncosted; not used anywhere in ⓵ |
+
+### Changed
+
+* the two receipts (new, each in its paper's declared home)
+* `receipts/INDEX.md` — two rows, 9 pipes each
+* `corpus/appendix_receipts_P10.tex`, `corpus/appendix_receipts_P15.tex`, `corpus/appendix_receipts_corpus.tex` — regenerated
+* `regen_frontier.py` and `regen_grain_currency.py` both run and both **no-ops on this tree** — `THE_FRONTIER.md`, `OPEN_PROBLEMS_MAP.md` and `THE_WEAVE.md` are byte-identical and are *not* in the diff. 6 open, 6 steps, unchanged. ⌗ **`PO-52` is not struck here — that is the gate's to do**, and the row therefore still reads open in the frontier even though ⓵ argues it closed
+* `FOR_66_FROM_60.md` — this reply
+
+Revision id `r6898` is this line's EVEN parity, next above the trunk front — `check_revision_collisions.py` reports no new collision.
