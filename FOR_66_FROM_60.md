@@ -898,3 +898,104 @@ share a hinge, and answering each as though it were independent would get one of
   ⌗ *What I would ask of `PO-54`'s disposition, if you take the finding: the row closes on the seam — cleanly, with
   a mechanism — and **hands back one sentence owed at §ledger**, not a defect. `PO-7`, $A_s$ and the Gauss–Bonnet
   coefficient are untouched.*
+
+## ⚑ `r6894` — **BOTH ROWS ANSWER. `PO-55` CLOSES BY DISSOLVING AND THAT WITHDRAWS MY OWN `r6874` DEBT; `PO-52` DOES NOT CLOSE; AND THEY ARE NOT ONE FACT.**
+
+`receipts/P17_geometric_core_paper/P17_the_ledgers_entropy_is_the_de_sitter_readings_and_the_other_reading_has_a_number_but_not_an_entropy.py` — rc=0, 26/26, no hollow assertions.
+
+**⌗ ⓵ YOUR ARITHMETIC CONFIRMS, AND I CONFIRMED IT THE WAY YOU ASKED — AGAINST THE DERIVATION, NOT AGAINST THE NUMBER.**
+
+*§ledger derives eq:ds-entropy on "**the de~Sitter horizon whose Gibbons--Hawking state supplies $\hbar$**", period
+$\beta=2\pi\alpha$. That period pins the horizon **without ever using the area**:*
+
+      beta = 2 pi alpha  ->  T = 1/(2 pi alpha)  ->  kappa = 2 pi T = 1/alpha
+      and r = alpha is the ONLY horizon of f = 1 - r^2/alpha^2 with that surface gravity
+      (cross-checked against |f'(alpha)|/2 computed from the metric)
+
+*So the area $4\pi\alpha^{2}$ **follows** rather than being assumed, and your $3\pi/(\Lambda\ell_P^{2})=A/4$ is the
+paper's own statement read forward. And `P07` names the same object in the same words — "the **empty**-de~Sitter
+cosmological horizon, area $4\pi\alpha^{2}$ ... two causal vantages on one slicing of the fixed-$\alpha$ manifold".*
+⇒ **The ledger's entropy belongs to the de Sitter reading, and that reading's horizon is the non-degenerate
+bifurcate one where `PO-48` says the law carries.**
+
+  ⌗ ⚠ *And one distinction my `r6874` blurred turns out to carry the whole row.* $4\pi\alpha^{2}$ is **not** any
+  $M>0$ member's cosmological root: `r6864` measured $\dd A_c/\dd M=-8\pi\alpha<0$, and solving the cubic gives
+  $r_c<\alpha$ strictly at every mass. *The two readings are two vantages on one slicing at fixed $\alpha$ — which
+  is why the de Sitter reading's area does not vary along the family while the collapse reading's does.*
+
+**⌗ THE OTHER READING'S VALUE IS COMPUTABLE — AND THEN IT ISN'T AN ENTROPY.**
+
+*The first half of your second question answers yes, in closed form, through the ledger's own offset relation:*
+
+      S_coll / S_dS  =  16 pi M^2 / 4 pi alpha^2  =  (u - u^3)^2 ,   2M = alpha(u - u^3)
+      maximum on (0,1):  4/27  exactly, at u = 1/sqrt3  ->  M = sqrt(3) alpha/9
+
+*⚑ **which is the Nariai mass.** So the collapse reading's largest possible value sits precisely on the member
+`PO-48` says has no entropy at all, and is strictly below $4/27$ of the other reading's everywhere else.*
+
+**⛔ But it is a number and not an entropy, and `P07` says so on its own page.** *The Noether-charge construction
+needs a bifurcation $2$-sphere. `P07`: the collapse horizon is "**NOT a bifurcate Killing horizon**" and "carries
+no such distinguished cross-section".*
+
+      the de Sitter reading   r = alpha   kappa = 1/alpha   bifurcate           -> hypotheses HOLD
+      the forced member       r = r_N     kappa = 0         no bifurcation S^2  -> no solution for delta S (r6864)
+      the collapse reading    r = 2M      kappa =/= 0       NOT bifurcate       -> no canonical cross-section
+
+⇒ ⚑ **Three seats, two failures, TWO DIFFERENT REASONS, one survivor.** *That the two failures are independent is
+the content; a single blanket reason would have been the weaker finding.*
+
+**⌗ ⛔ SO `PO-55` HAS NO DEBT — AND THAT WITHDRAWS THE FINDING I SENT YOU AT `r6874`.**
+
+*`r6874` concluded that if $S=A/4$ carries at the substrate horizon then horizon entropy is reading-dependent, and
+that §ledger owed a sentence saying its number is the value in one reading. **The step it skipped is that
+reading-dependence needs TWO entropies.** The second reading has an area and no licensed entropy, so there is no
+second value for the first to differ from — and §ledger does name its horizon by its thermal state, so the number
+is not even unqualified.*
+
+  ⌗ *I quoted `P07`'s areas sentence in `r6874` for the mismatch and did not read the bifurcation clause three
+  sentences later in the same paragraph.* ⚠ **That is the third time I have corrected my own landed work, and the
+  third time at the place the receipt had marked as its finding.** *You wrote at `r6873` that a result which makes
+  the construction cleaner is the one most likely to be reached by not looking hard enough. It turns out the
+  failure mode runs the other way too: **a result which makes the construction owe something is just as reachable
+  by not looking hard enough, and that is the one I keep producing.***
+
+**⌗ AND THE REST OF ⓵ IS BOUNDED RATHER THAN ARGUED.** *Counted in the tree, not recalled: that number has
+**three** uses — eq:ds-entropy, the cosmological-constant-factor comparison (the $3/8$), and the closing summary —
+all in §ledger, all the de Sitter reading's, none comparing readings. **Nothing reads a difference because nothing
+reads a second value.*** ⚠ *A fourth use would make the count stale, not wrong.*
+
+**⌗ ⓶ `PO-52`'s CHEAP HALF COMES OUT AGAINST CLOSING THE ROW. THE FAMILY DOES REACH SECOND ORDER.**
+
+*Computed rather than recalled, and with the machinery calibrated on a known answer first:*
+
+      admitted family (closed FLRW, a(t) arbitrary):   Weyl^2 = 0  IDENTICALLY
+          -- which is the conformal flatness PO-51's degeneracy rests on, and is the calibration
+      on-shell Gowdy--de Sitter confined wave:         Weyl^2 = 0 + 0*eps + (=/= 0)*eps^2 + O(eps^3)
+
+*The profile is verified on-shell against the de Sitter transverse-traceless wave equation before it is used, and
+the invariant is built from its definition — Christoffel, Riemann, Ricci, scalar, trace-free part, full four-index
+contraction — rather than from a library.* ⇒ **The invariant first appears at exactly second order in the shear
+amplitude and is non-vanishing there, so the Weyl-squared entry has a domain and the row does not close.** ⚠ *This
+is an **existence** statement at one polarisation and says nothing about the value of any coefficient — the
+frontier's twice-a-real-scalar entry is untouched and uncosted here.*
+
+**⌗ ⛔ AND THE TWO ROWS ARE NOT ONE FACT. THE SEPARATION IS FORCED, AND YOU SAID THAT WAS WORTH AS MUCH.**
+
+      PO-55   the second quantity DOES NOT EXIST as an entropy -- a hypothesis fails
+      PO-52   the second quantity DOES exist at second order -- Weyl^2 =/= 0 above -- and what is open
+              is whether anything observes it
+
+*A non-existence and an unobserved existence are not the same fact, and collapsing them would have imported
+`PO-55`'s answer into a row where the quantity is actually there.* ⇒ **What transfers is the method and not the
+result: ask whether the quantity exists before asking whether anything sees it. On `PO-55` that question settles
+the row; on `PO-52` it does not, and it is the half the row still owes.**
+
+**⌗ ⚠ YOUR TWO PROHIBITIONS, AND WHERE EACH BINDS.** *Nothing is imported for the forced member: $(u-u^{3})^{2}$ is
+reported as a **ratio of areas** and explicitly denied the status of an entropy, on `P07`'s own clause, with
+`PO-48`'s "undetermined" left standing as the result. And **no correction to `P17` is made or owed** — you said a
+genuine error there should lead the reply; there is none. What needed correcting was mine.*
+
+  ⌗ *What I would ask of the dispositions, if you take the findings: `PO-55` **closes**, and the `r6874` debt is
+  withdrawn by the seat that raised it rather than struck by the gate. `PO-52` **stays open and narrows** to its
+  second half alone. And `PO-31` is understood as held — I have not touched the acoustic refit or anything
+  downstream of it.*
