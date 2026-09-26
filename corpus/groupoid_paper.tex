@@ -25,7 +25,7 @@
 % [†ONT-DISC] DESCRIPTION GROUPOID / DISCRETE SYMMETRY — this paper is the HOME (ONTOLOGY_FOUNDATION_INDEX.md §1i).
 %   *** THE THREE OPERATIONS ARE DISTINCT — NEVER FUSE THEM, AND HOLD THEIR LOCI: sigma (Weyl/diagonal;
 %   mass-invariant, Nariai-fixed, NO SEAM-CROSSING AT ALL — an algebraic relabelling); R (diagram/
-%   anti-diagonal; the vantage-swap, dS-fixed, = THE BACK-SEAM AT r=0, onto the conjugate branch); xi
+%   anti-diagonal; the vantage-swap, dS-fixed, = THE BRANCH POINT AT r=0, onto the conjugate branch); xi
 %   (THE THROAT SEAM AT r=alpha; NOT a symmetry but the invertible continuation, onto the cosmological
 %   branch). They share the sin->cosh mechanism but DO NOT COINCIDE AS MAPS. sigma and R generate D_6.
 %   [r968 SYMBOL CANON: R = orientation/mass-reflection parity (A_2 diagram automorphism, O(5,1)\SO_0,
@@ -154,12 +154,12 @@ We begin by specifying the groupoid as a category in the standard sense. The obj
 
 \subsection{Objects: charting vantages}\label{sec:objects}
 
-A \emph{charting vantage} is a fixed point on the de Sitter hyperboloid together with the gnomonic projection induced by that point onto the orthogonal hyperplane. The slicing paper showed (Section~5.1 of~\cite{JanzenSlicing}) that obtaining a planar chart of the slicing curve forces the gnomonic projection: the hole's image lies on the observer's celestial sphere, and the planar chart that maps lines through the projection point to lines in the plane is forced to be the gnomonic one (the orthographic projection being excluded as it does not satisfy the line-mapping requirement). The vantage is therefore specified by the projection direction in the embedding space.
+A \emph{charting vantage} is a fixed point off the de Sitter hyperboloid, from which the hole is visible, together with the gnomonic projection induced by that point onto the orthogonal hyperplane; the observer who charts the construction does not lie on the manifold it charts (the rigidity-groupoid section of~\cite{JanzenSlicing}). The slicing paper showed (Section~5.1 of~\cite{JanzenSlicing}) that obtaining a planar chart of the slicing curve forces the gnomonic projection: the hole's image lies on the observer's celestial sphere, and the planar chart that maps lines through the projection point to lines in the plane is forced to be the gnomonic one (the orthographic projection being excluded as it does not satisfy the line-mapping requirement). The vantage is therefore specified by the projection direction in the embedding space.
 
 We collect the admissible vantages into a set $\mathcal{V}$. Each $v\in\mathcal{V}$ determines a chart: a labelling of the slicing curve by a sky angle $w$ on the projection plane, with $w$ a genuine geometric angle (the angle the slicing curve subtends on the observer's celestial sphere). The same intrinsic curve is therefore charted by different elements of $\mathcal{V}$ as different sky-angle functions $w_{v}: \text{slicing curve}\to\mathbb{R}/2\pi\mathbb{Z}$.
 
 \begin{definition}[Charting vantage]\label{def:vantage}
-A charting vantage $v\in\mathcal{V}$ is a fixed point on the de Sitter hyperboloid together with the gnomonic projection it induces. Two vantages $v$ and $v'$ are equivalent if they differ by a rotation of the de Sitter manifold that fixes the slicing curve setwise.
+A charting vantage $v\in\mathcal{V}$ is a fixed point off the de Sitter hyperboloid, from which the hole is visible, together with the gnomonic projection it induces. Two vantages $v$ and $v'$ are equivalent if they differ by a rotation of the de Sitter manifold that fixes the slicing curve setwise.
 \end{definition}
 
 \subsection{Morphisms: vantage-changes}\label{sec:morphisms}
@@ -605,7 +605,7 @@ reached in two steps: degree three to adjoin $\sin w$, then degree two to adjoin
 $\cos w=\sqrt{1-\sin^{2}w}$\rcpt{X1rr_sky_angle_is_the_galois_closure}. The dial is that degree-six extension.
 Its deck transformations are exactly the two generators of Section~\ref{sec:periodicity}---the periodicity
 $\tau:w\mapsto w+2\pi/3$ and the root-exchange $\sigma:w\mapsto\pi/3-w$, both of which leave $2M$
-fixed---and by Proposition~\ref{prop:tau} they generate $S_{3}$, of order six, equal to the degree: the dial is
+fixed---and by Propositions~\ref{prop:relations} and~\ref{prop:completeness} they generate $S_{3}$, of order six, equal to the degree: the dial is
 a regular cover where the root cover is not. \emph{So the sky angle is not merely a convenient parametrisation
 of the family; it is the splitting cover of the family's own cubic}, and the passage from a designated root to
 the whole triple is the passage to the Galois closure. The involution relating the two sheets of the dial over
