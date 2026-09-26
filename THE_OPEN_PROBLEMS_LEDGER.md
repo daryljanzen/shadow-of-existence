@@ -139,8 +139,9 @@ reading of `L-269`–`L-273`; no open problem opened or closed, which is itself 
 > **⌗⌗ THE FAMILIES AGAINST THE REGISTER.** *The table is a view of the register, and the register is the single
 > source of truth. **Three families are live**: family 3, the inherited datum, at `PO-31`; family 8, the interacting
 > quantum tower, at `PO-23` and `PO-51`; and family 5's residual at `PO-47`, the family itself having reached its
-> verdict. **Family 4 is closed with a live remainder** at `PO-49`, the charged interior's third regime. **Families 1,
-> 2, 4, 6, 9, 10, 11 and 12 are closed**, family 6 by the matter sector's account of the propagating fermion and gauge
+> verdict. **Families 1,
+> 2, 4, 6, 9, 10, 11 and 12 are closed**, family 4 with its last remainder, the charged interior's third regime
+> (`PO-49`), struck as the boundary of admissible data; family 6 by the matter sector's account of the propagating fermion and gauge
 > content. **Family 7 is not a work item** and says so itself.*
 >
 > ⌗ *Struck in place, not deleted — nothing in this corpus is erased. And recorded honestly: no

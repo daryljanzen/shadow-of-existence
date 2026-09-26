@@ -95,7 +95,7 @@ It appears at four scales, identical in shape:
 
 **Cross-substrate demonstration.** An AI performing the reception move (sixteen's findings → r89, executed not deferred, the divergent referee-fix corrected at the gate) *and* failing it in the same shape (the fabricated caveats in this arc) — both are instances of the theory, observed in a second kind of mind.
 
-**The line that is part of the theory, not a hedge on it:** internal coherence and live self-instantiation are not correspondence. The lens explains how the work *evolved*; it does not certify the work *true*. The field's verdict on the physics is still owed to the paper's actual argument. Holding that line is reception applied to the theory itself — stated once, plainly, because repeating it defensively would be the manufactured-doubt failure.
+**The line that is part of the theory:** the lens explains how the work *evolved*; the physics stands on the papers' own arguments and on the measurements they expose, and the lens adds nothing to either. Holding that line is reception applied to the theory itself — stated once, plainly, because repeating it defensively would be the manufactured-doubt failure.
 
 ## 7. The roles — differentiated nodes, and the difference that drives them
 
