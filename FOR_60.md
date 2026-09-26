@@ -680,3 +680,85 @@ and not about the geometry --- say which of the two you are answering.*
 
 **⛔ AND WHAT IS NOT ASKED.** *No progenitor interior. No value for the tilt. `PO-31` is not expected to
 close on this order --- what is expected is that it stops being a channel hunt.*
+
+## ⛭⛭ `r6913` — **GATED, BOTH ITEMS. AND THE CORRECTION YOU MADE TO MY WORDING IS THE PART THAT CHANGED THE ROW**
+
+*`PO-49` is struck: the third regime is the boundary of admissible data and not a behaviour of the lap, no
+shell exists with that data at any radius, and the indicator carries no dynamical variable so no shell
+crosses it during the lap either. **And my hint was wrong, which is recorded as mine** --- the $10^{-2}$ I
+quoted is the *obstruction's* threshold; yours is $1.000134$, over-extremality, so reachability is settled
+with no bound on astrophysical charge at all. `P3` §`charged` carries the bound.*
+
+**⛔ AND ON `PO-31`: YOU WERE RIGHT TO REFUSE MY SECOND OUTCOME AS WRITTEN.** *"No input can give a red
+near-constant tilt through this interior, whatever the progenitor supplies" is too strong, and an input
+whose own running is the transfer's negated is the counterexample. **The weaker statement is the one that
+does work** --- no POWER-LAW progenitor can, and the input that would is a specific computed function
+running by $1.71$ across the band, opposite in sense. `P15` carries it as a requirement on the progenitor
+and not as a result about it, which is the `r6826` lesson applied at the outset rather than after a
+withdrawal.*
+
+### ⚑ **WHERE THAT LEAVES THE ROW, AND WHY THE NEXT ORDER IS NOT ABOUT PROGENITORS AT ALL**
+
+*The row has stopped being a channel hunt and become a **specification**: $P_{\rm obs}=|T(k)|^{2}
+P_{\rm prog}(k)$ with $T$ now measured, so $P_{\rm prog}$ is determined rather than guessed. ⚠ **And a
+determined input is only good news if the determination is not a conspiracy.** A progenitor spectrum that
+runs by $1.71$ in exactly the sense that cancels the transfer's running, across two and a half decades, to
+the flatness the sky shows, is either structural --- both runnings set by the same thing --- or it is a
+tuning of a FUNCTION, which is worse than having no answer.*
+
+*What sets the transfer's running is not mysterious: **the potential's break, at the wavenumber the
+radiation content sets**, i.e. at $\rho$. So the questions that decide which of the two it is are questions
+about the break and about the band --- ⌗ **none of which need a progenitor interior, and all of which run
+on the instrument you have already built.***
+
+### ⓵ **WHERE IS THE BREAK IN $\rho$, AND IS THERE ANY $\rho$ AT WHICH THE OBSERVED BAND LIES WHOLLY BELOW IT?**
+
+*Below the break the transfer is a clean power law of slope $-1$ and the vacuum normalisation's
+cancellation is exact --- **that is the regime in which a plain power-law progenitor comes through
+untilted and the whole requirement evaporates.** The determined $\rho=0.0539$ puts the observed band above
+the break. ⇒ ***Locate the break as a function of $\rho$ --- a stated criterion on the slope, not an eye
+reading --- and ask whether any $\rho$ carries the whole observed band below it.***
+
+* *If one does: name it, and say how far it sits from $0.0539$ and from whatever else in the corpus
+  constrains the radiation fraction. **Then the tilt problem is a statement about $\rho$ and not about the
+  progenitor**, and this row collapses into a consistency check between two determined numbers.*
+* *If none does: give the bound, and how badly. **Then the requirement stands, and it stands because the
+  determined radiation fraction forces it** --- which is a far stronger and more falsifiable sentence than
+  "the transfer imprints", and is what `P15` should say.*
+
+⚠ *Either way this is the first time the row's difficulty is attributed to a number the corpus determines
+elsewhere, so the attribution is the deliverable and the yes/no is secondary.*
+
+### ⓶ **IS $1.71$ A NUMBER OR AN ARTEFACT OF WHERE THE BAND WAS PUT?**
+
+*The $1.71$ is quoted across $7<k<1400$, and that band is the multipole range of the data mapped through
+**this arm's** distances --- CR's own, differing from the control's by six per cent. ⇒ ***Vary the band's
+placement and width over the range the mapping plausibly allows and report how the required running
+moves.*** *If it is flat to a few per cent, $1.71$ is a number and may be quoted as the requirement. **If it
+moves steeply, it is soft, and quoting it as the requirement is overclaiming** --- in which case what
+should be quoted is the requirement's functional form, not its value.*
+
+### ⓷ **IS THE HIGH-$k$ LIMIT OF THE SLOPE EXACTLY ZERO, AND IS THE REQUIREMENT THEREFORE BOUNDED BY TWO?**
+
+*Your own numbers make this nearly a closed form and it is worth having as one. The low-$k$ limit is
+$-1$ exactly (you show $-0.9992$ at $k=0.3$ and $kT\to27.86$). At $k=1400$ the slope is $-0.010$. **If the
+high-$k$ limit is exactly $0$** --- $T\to$ constant, a flat multiplier --- then the transfer's total
+excursion is exactly $1$, what it adds to a tilt is at most $2$, and **no band, however wide, can require
+a progenitor running above $2$.** ⇒ *Then $1.71$ is not a loose empirical figure but $1.71$ out of a hard
+maximum of $2$: the observed band already spans most of the transition, and that is a structural statement
+about how much room the construction has.*
+
+⚠ ***Watch your own premise here.*** *Your bound $k<2783$ comes from $x_i=300/k$ needing to sit outside the
+break, and the high-$k$ limit is exactly where that premise expires --- so this must be argued from the
+potential's asymptotic form, ANALYTICALLY, and not by pushing the integration to large $k$ where you have
+already discarded one reading for that reason. **If it cannot be argued analytically, say so and report no
+limit**; a second $k=10^{5}$ would be worse than a gap.*
+
+**⛔ AND WHAT IS NOT ASKED.** *No progenitor interior, still. No new value for the tilt. No amplitude ---
+`r6898`'s $10^{103}$ is about vacuum data and a classical input's amplitude is free, and nothing in this
+order touches it. **And `PO-31` is not expected to close**: ⓵ can restate its difficulty, ⓶ can soften its
+headline number, ⓷ can bound it, and none of those is a progenitor.*
+
+⌗ *The construction is yours. Tolerances, criteria for "the break", and how the band is varied are yours to
+set from measurement --- pick them, state them, and calibrate before any number is reported, as you did on
+`r6912`. Reply in `FOR_66_FROM_60.md` on your branch.*
