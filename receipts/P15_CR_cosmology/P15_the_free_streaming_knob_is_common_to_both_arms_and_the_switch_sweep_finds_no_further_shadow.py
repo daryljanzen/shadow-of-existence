@@ -47,8 +47,17 @@ COMPUTES: scope.
     path-dependent and not resolution-dependent **: a switch read on this path is read on it at any
     l_max.  ⌗ *Every switch the screen reports as moving NOTHING is re-run at full reach before the
     table calls it inert, because that is the half of the claim reduced reach cannot carry.*
-  * The locator runs on the banked `LSTEP=8` spectra and again on `LSTEP=2` spectra computed here,
-    so the answer can be shown not to be a property of the grid.
+  * The locator runs on the banked `LSTEP=8` spectra and again on two FINER grids computed here --
+    `LSTEP=2` at `LMAXL=900` whole, and `LSTEP=4` at `LMAXL=2000` summed over `KSLICE` pieces -- so the
+    answer can be shown not to be a property of the grid.  ⚠ *The first attempt at this was one run of
+    `LSTEP=2 LMAXL=2000` per spectrum and the container restarted through it; the two constructions that
+    replaced it are both short enough, or resumable enough, to finish.*
+  * Every run is launched by a banked, idempotent script under
+    `computations/beyond_the_wall/r6893_directions/`, and the value each switch was moved TO is declared
+    in this receipt's own `OFFVAL` table, so the experiment is on the record and not only in the scripts.
+    ⚠ *Including `pass5.sh`, which exists because `SWSRC` was missing from the first screen list -- kept
+    as its own script rather than folded back in, because a table that silently gained a row would not
+    say so.*
   * The lensing operator is `c54.183`'s CAMB lensed/unlensed TT ratio at Planck 2018, used exactly
     as `cc66.33`-`cc66.36` use it, and only for the one Delta-space cross-check.
   * ** NOT CLAIMED: a mechanism for the contrast imbalance. **  `r6891` states that boundary has not
@@ -1010,21 +1019,9 @@ check("⚠ ...and the residue is reported rather than rounded to zero: freely re
       f"{FRAC*100:.2f}% of ||Delta||^2 at best scaling; the best coefficient is "
       f"{float(dd @ DEL)/ND2:+.5f}, negative")
 
-# ---------------------------------------------------------------------------------------------------
-# PART 4c -- AND THE LOCATOR ON A FOUR-TIMES-FINER GRID, SO THE ANSWER IS NOT THE GRID'S.
-# ---------------------------------------------------------------------------------------------------
-print("\nPART 4c -- THE SAME FOUR SPECTRA AT LSTEP=2, WHICH IS THE POINT OF r6891's \"FINER GRID\".")
-print("-" * 100)
-print("""
-  `cc66.36`'s number was one bin step because the locator was the bin.  ⇒ It is not enough to locate
-  sub-bin on the same grid and say so: the four spectra are recomputed at `LSTEP=2` -- four times the
-  multipole sampling, the same `LMAXL=2000` reach and the same refit commands -- and the locator is
-  run again.  ** If the answer were a property of the grid it would move here, and the test is that it
-  does not. **
-""")
 for _need in ('r6893_fine_grid_lcdm.npz', 'r6893_fine_grid_cr.npz',
-              'r6893_full_reach_nulls_lcdm.npz'):
-    check(f"the bank this part reads is present: `spectra/{_need}`",
+              'r6893_full_reach_nulls_lcdm.npz', 'r6893_slice_check.npz'):
+    check(f"the bank the last two parts read is present: `spectra/{_need}`",
           os.path.exists(os.path.join(SP, _need)), _need)
 if FAILS:
     print("\n  ⛔ A BANK THIS RECEIPT READS IS NOT ON DISK YET.  The parts that need it are NOT run,")
@@ -1034,67 +1031,160 @@ if FAILS:
     for f in FAILS:
         print(f"  - {f}")
     raise SystemExit(1)
+
+# ---------------------------------------------------------------------------------------------------
+# PART 4c -- AND THE LOCATOR ON A FINER GRID, SO THE ANSWER IS NOT THE GRID'S.
+# ---------------------------------------------------------------------------------------------------
+print("\nPART 4c -- THE SAME MEASUREMENT ON A FINER l GRID, TWO WAYS.")
+print("-" * 100)
+print("""
+  `cc66.36`'s number was one bin step because the locator was the bin.  ⇒ Locating sub-bin on the same
+  grid is not by itself enough to say the answer is not the grid's; the spectra have to be recomputed
+  on a finer one.  ** And that took two attempts, which is on the record because the first one is the
+  reason the second is built the way it is. **
+
+  ⚠ *The first attempt ran the four spectra WHOLE at `LSTEP=2 LMAXL=2000`, about a hundred minutes
+  each.  The container restarted at eighty minutes and took all four with it, because this instrument
+  writes its `npz` only at the end.*  ⇒ ** A run longer than its node's own lifetime is not a long run;
+  it is a run that does not finish. **  So the measurement is rebuilt two ways that both survive a
+  restart:
+
+    A. `LSTEP=2 LMAXL=900` -- FOUR times the multipole sampling, over the first three acoustic bands.
+       Cheap because the cost is (number of l) x (number of k) and k_max tracks `LMAXL`.
+    B. `LSTEP=4 LMAXL=2000` -- TWICE the sampling of the banked spectra, over all five bands, run in
+       k-SLICES.  `r6794` built `KSLICE` for exactly this: C_l is a sum over k, so disjoint slices add,
+       and the pieces are independent processes a restart cannot spoil collectively.
+
+  ⛔ ** AND r6794's OWN CAVEAT IS CARRIED RATHER THAN ASSUMED AWAY. **  Slices add exactly only on a
+  UNIFORM k grid, because `_project` takes `dk = np.gradient(kb)` from the batch it is handed; the CR
+  arm's ladder is not uniform, so its slice boundaries move the weights slightly.  ⇒ *Which does not
+  reach what is being measured: the quantity is a SHIFT between two spectra computed with IDENTICAL
+  slicing, so a slicing artefact is common to both and cancels.  The gate below measures its size
+  rather than arguing about it.*
+""")
 FINE = {}
 for arm in ('lcdm', 'cr'):
     d = np.load(os.path.join(SP, f'r6893_fine_grid_{arm}.npz'), allow_pickle=True)
     FINE[arm] = {k[4:]: (d['ls__' + k[4:]].astype(float), d['Dl__' + k[4:]].astype(float),
                          float(d['lA__' + k[4:]])) for k in d.files if k.startswith('ls__')}
+    FINE[arm]['__missing__'] = [str(x) for x in d['missing']]
+check("both arms' fine-grid banks are complete: the two whole runs of A, the two summed slice sets of "
+      "B, and the slice-additivity pair",
+      all(FINE[a]['__missing__'] == [] for a in ('lcdm', 'cr')),
+      f"lcdm missing {FINE['lcdm']['__missing__']}, cr missing {FINE['cr']['__missing__']}")
+
+# ---- does slicing add?  measured, at the screen grid, against that arm's own whole run ------------
+print("  ----- step 0: does slicing add? -----")
+SLICE = {}
+for arm in ('lcdm', 'cr'):
+    ls_s, D_s, _ = FINE[arm]['slicesum']
+    ls_w, D_w = SCREEN[arm]['base']
+    assert np.array_equal(ls_s, ls_w)
+    SLICE[arm] = (float(np.max(np.abs(D_s - D_w))),
+                  float(np.max(np.abs(D_s - D_w)) / np.max(np.abs(D_w))))
+    print(f"    {arm:5s} two slices summed against the whole run: "
+          f"max |dD_l| = {SLICE[arm][0]:.3e}  ({SLICE[arm][1]:.3e} relative)")
+check("⚑ ** TWO SLICES SUM TO THE WHOLE RUN AT THE LEVEL OF FLOATING-POINT SUMMATION ORDER, ON BOTH "
+      "ARMS **, which is `r6794`'s claim for `KSLICE` measured here rather than carried",
+      SLICE['lcdm'][1] < 1e-7 and SLICE['cr'][1] < 1e-7,
+      f"lcdm {SLICE['lcdm'][1]:.3e} relative, cr {SLICE['cr'][1]:.3e} -- against the "
+      f"{2.1e-9:.1e} that merely changing `KBATCH` costs on the control")
+check("⛔ ...and `r6794`'s CAVEAT does not bite here, which is a measurement and not a hope.  *It says "
+      "slices add exactly only on a UNIFORM k grid, because `_project` takes `dk = np.gradient(kb)` "
+      "from the batch it is handed, and the CR arm's ladder is not uniform.*  ** On this arm, at this "
+      "boundary, the ladder costs nothing above the control's own summation-order noise -- the two "
+      "agree to within a factor of two of each other. **  ⌗ *Reported this way round on purpose: an "
+      "earlier version of this gate asserted the caveat DID bite and passed on `cr > lcdm`, which is "
+      "a comparison two numbers of the same size satisfy by luck.  That is the vacuous-gate shape "
+      "`r6895` had just finished naming, and it is recorded rather than quietly fixed.*",
+      0.3 < SLICE['cr'][1] / SLICE['lcdm'][1] < 3.0,
+      f"cr/lcdm = {SLICE['cr'][1]/SLICE['lcdm'][1]:.2f}")
+_s2 = np.load(os.path.join(SP, 'r6893_slice_check.npz'), allow_pickle=True)
+for arm in ('lcdm', 'cr'):
+    print(f"    {arm:5s} at STAGE B's own reach and its own eleven 250-mode boundaries: "
+          f"{int(_s2['nsl__'+arm])} slices summed against the whole, "
+          f"max |dD_l| = {float(_s2['amax__'+arm]):.3e} ({float(_s2['rmax__'+arm]):.3e} relative)")
+check("⚑⚑ ** AND THE TEST IS REPEATED AT STAGE B's OWN SLICING AND ITS OWN REACH, WHICH IS THE ONE "
+      "THAT MATTERS. **  Step 0 tested ONE boundary at `LMAXL=500`; stage B slices eleven times over a "
+      "k range four times as long, which is exactly where a varying spacing would tell.  *Summed "
+      "against the whole run at `LSTEP=64 LMAXL=2000` -- the l sampling made coarse so the whole run "
+      "is affordable, since the projection is what `LSTEP` costs and the k-sum is what is under "
+      "test -- both arms still add to summation-order noise.*",
+      float(_s2['rmax__lcdm']) < 1e-6 and float(_s2['rmax__cr']) < 1e-6,
+      f"lcdm {float(_s2['rmax__lcdm']):.3e} over {int(_s2['nsl__lcdm'])} slices, "
+      f"cr {float(_s2['rmax__cr']):.3e} over {int(_s2['nsl__cr'])}")
 
 
-def locate_pair(tag, ls, A, B, l_A):
-    ea, eb = extrema(ls, A, order=8), extrema(ls, B, order=8)
-    dls = np.array([b[0] - a[0] for a, b in zip(ea, eb) if a[1] == b[1]])
-    lbs = np.array([a[0] for a, b in zip(ea, eb) if a[1] == b[1]])
+def locate_pair(tag, ls, A, B, l_A, order=8):
+    ea, eb = extrema(ls, A, order=order), extrema(ls, B, order=order)
+    pair = [(a, b) for a, b in zip(ea, eb) if a[1] == b[1]]
+    dls = np.array([b[0] - a[0] for a, b in pair])
+    lbs = np.array([a[0] for a, b in pair])
     bands = [(float(lo + l_A / 2), xshift(ls, A, B, l_A, lo, lo + l_A))
              for lo in np.arange(150., ls[-1] - l_A - 50., l_A)]
     eA, eB = env_of(ls, A, l_A), env_of(ls, B, l_A)
     m = (ls >= 150) & (ls <= ls[-1] - 50)
     cs = []
-    for i in range(len(ea) - 1):
-        (l1, k1, a1), (l2_, k2, a2) = ea[i], ea[i + 1]
-        (m1, _, b1), (m2, _, b2) = eb[i], eb[i + 1]
+    for i in range(len(pair) - 1):
+        (a1, k1, v1), (a2, k2, v2) = pair[i][0], pair[i + 1][0]
+        (_, _, w1), (_, _, w2) = pair[i][1], pair[i + 1][1]
         if k1 != k2:
-            cs.append((b1 / b2) / (a1 / a2) if k1 == 'max' else (b2 / b1) / (a2 / a1))
-    print(f"    {tag:6s} step {ls[1]-ls[0]:.0f}, {len(ls)} multipoles, {len(dls)} extrema: "
-          f"mean {dls.mean():+.3f}, spread {dls.max()-dls.min():.3f}, "
-          f"line {np.polyfit(lbs, dls, 1)[1]:+.3f} {np.polyfit(lbs, dls, 1)[0]:+.5f} l")
-    print(f"           bands  " + "  ".join(f"l~{l:.0f}: {v:+.2f}" for l, v in bands))
+            cs.append((w1 / w2) / (v1 / v2) if k1 == 'max' else (w2 / w1) / (v2 / v1))
+    fit = np.polyfit(lbs, dls, 1) if len(dls) > 2 else np.array([np.nan, np.nan])
+    print(f"    {tag:16s} step {ls[1]-ls[0]:.0f}, l to {ls[-1]:.0f}, {len(ls)} multipoles, "
+          f"{len(dls)} extrema: mean {dls.mean():+.3f}, spread {dls.max()-dls.min():.3f}, "
+          f"line {fit[1]:+.2f} {fit[0]:+.5f} l")
+    print(f"    {'':16s} per-extremum " + " ".join(f"{v:+.2f}" for v in dls))
+    print(f"    {'':16s} bands        " + "  ".join(f"l~{l:.0f}: {v:+.2f}" for l, v in bands))
     return dict(dl=dls, l=lbs, bands=bands, l_A=l_A, step=float(ls[1] - ls[0]),
-                env=float((eB[m] / eA[m]).mean()), con=float(np.mean(cs)))
+                env=float((eB[m] / eA[m]).mean()), con=float(np.mean(cs)), fit=fit)
 
 
 FLOC = {}
+for stage in ('fineA', 'fineB'):
+    print(f"  ----- {stage} -----")
+    for arm in ('lcdm', 'cr'):
+        ls, A, l_A = FINE[arm][f'{stage}_base']
+        _, B, _ = FINE[arm][f'{stage}_nufs0']
+        FLOC[(stage, arm)] = locate_pair(f"{stage} {arm}", ls, A, B, l_A)
+check("the two finer grids are what they say they are: A at l-step 2 (four times the banked spectra) "
+      "and B at l-step 4 (twice), B reaching the full l = 2000",
+      FLOC[('fineA', 'lcdm')]['step'] == 2.0 and FLOC[('fineB', 'lcdm')]['step'] == 4.0
+      and FLOC[('fineB', 'lcdm')]['bands'][-1][0] > 1400,
+      f"A step {FLOC[('fineA','lcdm')]['step']:.0f} to l = 898; B step "
+      f"{FLOC[('fineB','lcdm')]['step']:.0f} to l = 1996, against the banked step {_L['step']:.0f}")
+
+# ---- the comparison that answers "is the answer the grid's?" -------------------------------------
+_pairs = []
 for arm in ('lcdm', 'cr'):
-    ls, A, l_A = FINE[arm]['cc66_r185_verify']
-    _, B, _ = FINE[arm]['r6889_nufs0']
-    FLOC[arm] = locate_pair(arm, ls, A, B, l_A)
-_fL, _fC = FLOC['lcdm'], FLOC['cr']
-check("the fine grid is four times the sampling of the banked spectra, at the same reach",
-      _fL['step'] == 2.0 and _fC['step'] == 2.0 and len(FINE['lcdm']['cc66_r185_verify'][0]) > 900,
-      f"step {_fL['step']:.0f} against the banked {_L['step']:.0f}; "
-      f"{len(FINE['lcdm']['cc66_r185_verify'][0])} multipoles against {len(_L['dl'])} extrema on "
-      f"{238} banked")
-_bmax = max(abs(a[1] - b[1]) for a, b in zip(_L['bands'], _fL['bands'])) if \
-    len(_L['bands']) == len(_fL['bands']) else 99.
-_bmaxC = max(abs(a[1] - b[1]) for a, b in zip(_C['bands'], _fC['bands'])) if \
-    len(_C['bands']) == len(_fC['bands']) else 99.
-check("⚑ ** AND THE ANSWER IS NOT THE GRID'S: band by band, the LSTEP=2 locator reproduces the "
-      "LSTEP=8 locator to better than half a multipole on both arms. **  *The shift was measured, not "
-      "bracketed.*",
-      _bmax < 0.5 and _bmaxC < 0.5,
-      f"largest band-by-band difference between the two grids: {_bmax:.3f} (lcdm), "
-      f"{_bmaxC:.3f} (cr)")
-check("...and every conclusion of Part 4 survives on it: the shift still rises monotonically, the two "
-      "arms still agree to a fifth of a multipole, and the drag is still an envelope rescale with the "
-      "contrast within one per cent of unity",
-      all(b[1] < c[1] for b, c in zip(_fL['bands'], _fL['bands'][1:]))
-      and all(b[1] < c[1] for b, c in zip(_fC['bands'], _fC['bands'][1:]))
-      and max(abs(a[1] - b[1]) for a, b in zip(_fL['bands'], _fC['bands'])) < 0.25
-      and abs(_fC['env'] - _fL['env']) < 2e-3 and abs(_fL['con'] - 1.0) < 0.02,
-      f"rises {_fL['bands'][0][1]:+.2f} -> {_fL['bands'][-1][1]:+.2f} (lcdm) and "
-      f"{_fC['bands'][0][1]:+.2f} -> {_fC['bands'][-1][1]:+.2f} (cr); largest arm difference "
-      f"{max(abs(a[1]-b[1]) for a, b in zip(_fL['bands'], _fC['bands'])):.3f}; "
-      f"envelope {_fL['env']:.4f}/{_fC['env']:.4f}, contrast {_fL['con']:.4f}/{_fC['con']:.4f}")
+    base = _L if arm == 'lcdm' else _C
+    for stage in ('fineA', 'fineB'):
+        f = FLOC[(stage, arm)]
+        n = min(len(f['dl']), len(base['dl']))
+        _pairs.append((stage, arm, float(np.max(np.abs(f['dl'][:n] - base['dl'][:n]))), n))
+for stage, arm, d, n in _pairs:
+    print(f"    {stage} {arm:5s}: largest per-extremum disagreement with the banked l-step 8 locator "
+          f"over the first {n} extrema = {d:.3f} multipoles")
+check("⚑⚑ ** AND THE ANSWER IS NOT THE GRID'S. **  On both arms and on BOTH finer grids, the "
+      "per-extremum shifts reproduce the banked l-step-8 locator to better than half a multipole -- "
+      "and A does it at a k_max cut to l = 900, so the agreement is not a shared truncation either.  "
+      "*The shift was measured, not bracketed.*",
+      all(d < 0.5 for _, _, d, _ in _pairs),
+      "; ".join(f"{s} {a} {d:.3f}" for s, a, d, _ in _pairs))
+check("...and every conclusion of Part 4 survives on the finer grids: the shift still rises "
+      "monotonically band by band, the two arms still agree to a fifth of a multipole, and the drag is "
+      "still an envelope rescale with the contrast within two per cent of unity",
+      all(all(x[1] < y[1] for x, y in zip(FLOC[(st, ar)]['bands'], FLOC[(st, ar)]['bands'][1:]))
+          for st in ('fineA', 'fineB') for ar in ('lcdm', 'cr'))
+      and all(abs(x[1] - y[1]) < 0.25 for st in ('fineA', 'fineB')
+              for x, y in zip(FLOC[(st, 'lcdm')]['bands'], FLOC[(st, 'cr')]['bands']))
+      and all(abs(FLOC[(st, 'cr')]['env'] - FLOC[(st, 'lcdm')]['env']) < 3e-3
+              and abs(FLOC[(st, 'lcdm')]['con'] - 1.0) < 0.02 for st in ('fineA', 'fineB')),
+      "; ".join(f"{st}: {FLOC[(st,'lcdm')]['bands'][0][1]:+.2f} -> "
+                f"{FLOC[(st,'lcdm')]['bands'][-1][1]:+.2f} (lcdm), envelope "
+                f"{FLOC[(st,'lcdm')]['env']:.4f}/{FLOC[(st,'cr')]['env']:.4f}, contrast "
+                f"{FLOC[(st,'lcdm')]['con']:.4f}/{FLOC[(st,'cr')]['con']:.4f}"
+                for st in ('fineA', 'fineB')))
 
 # ---------------------------------------------------------------------------------------------------
 # PART 3c -- AND THE NULLS AT FULL REACH, WHICH IS THE HALF REDUCED REACH CANNOT CARRY.

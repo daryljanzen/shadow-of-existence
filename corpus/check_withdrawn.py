@@ -235,13 +235,29 @@ REGISTRY = [
     # shift stand; its uniformity does not.  \u2317 *The phrase may still be quoted -- this registry
     # exists so that quoting it stays visible -- but not asserted.*
     ("the-free-streaming-shift-is-uniform-across-the-first-four-peaks",
+     # ** WIDENED IMMEDIATELY, AND FOR THE REASON THE ENTRY TWO ABOVE RECORDS. **  The first
+     # pattern was keyed to MY OWN wording, "uniformly across the first four" -- and `P15`
+     # \S`sec:neutrinos` says "every peak on both arms moves to larger multipole by the same
+     # amount across the first four".  The gate reported the tree clean with the corrected
+     # claim standing in the paper, which is the same defect r6881 records one entry up:
+     # ** a registry keyed to one seat's phrasing is a registry that checks one seat. **
      r"(?:UNIFORM|uniform(?:ly)?) across the first four"
+     r"|by the same amount across the first four"
+     r"|moves? to larger multipole by the same amount"
      r"|phase shift[^.\n]{0,60}is uniform",
      # ⌗ NARROW ON PURPOSE.  Every text that carries this claim ALSO hedges its SIZE as
      # "grid-limited" or "one binned grid step" -- and that hedge is about the size, not about
      # the uniformity, so accepting it as the marker would let the withdrawn half stand.
      r"(?:r6893|withdrawn|WITHDRAWN|CORRECTED|corrected|not uniform|NOT uniform"
-     r"|grows with|rises with|not a constant)",
+     r"|grows with|rises with|rises monotonically|not a constant|not constant"
+     # ⌗ AND THREE MORE, BECAUSE THE MARKER SET WAS TOO NARROW FOR A PARAGRAPH WHOSE SUBJECT
+     # IS THE WITHDRAWAL.  `FOR_CC66`'s `r6895` block quotes the claim in the course of
+     # striking it -- "the vacuous gate reached the corpus", "the gate could not express the
+     # difference it tested", "both clauses are out of P15" -- and names the revision that
+     # LANDED it rather than the one that took it out, which is the right thing for an order
+     # log to do.  ** A correction stated in its own words is still a correction; requiring
+     # the word "withdrawn" would be requiring a vocabulary, not a caveat. **
+     r"|vacuous gate|could not express the difference|clauses are out of)",
      "corrected r6893+cc66.37; sub-bin the shift grows with multipole and is not a constant"),
 ]
 
