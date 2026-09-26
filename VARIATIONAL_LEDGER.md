@@ -265,7 +265,7 @@ does not enter the corpus at all.***
   $E{=}1\Rightarrow\sinh^{2/3}$ — **and it explicitly DECLINES the Lagrangian route** ("varying an action
   returns an equality, and an equality has no direction", `V3`).
 - **`P15`,`P16`** — the $E{=}1$ timelike geodesic with conserved energy (P15) and the **Euclidean action of
-  the imaginary segment**, integrand odd, branch actions $\mp0.1443\,\alpha^2/G$ cancelling
+  the imaginary segment**, integrand odd, branch actions $\mp0.0481\,\alpha^2/G$ cancelling
   (P16, `CROSSING_no_made_asymmetry`).
 - **`P09`,`P12`** — `V1` (the Carter chain: shear-free rulings → Goldberg–Sachs → Type D → Killing tensor →
   the Carter constant) and `V4` (P12 RECOGNISES the Dirac/ADM hypersurface-deformation algebra, owes no
@@ -288,7 +288,7 @@ does not enter the corpus at all.***
 | `P13` | **CHECKED-NEGATIVE** | `action` = Hopf/group action + quantum of action $\hbar$; `geodesic` = totally-geodesic submanifold; `stationary` sector |
 | `P14` | **CHECKED-NEGATIVE** | `variational principle` NAMED as an unavailable requirement (no functional written); `separability` = a locus check, not Hamilton–Jacobi; `action` = group action; **no Carter constant** |
 | `P15` | **WORKED** | $E{=}1$ timelike geodesic, conserved energy, $(\dd r/\dd\tau)^2=E^2-V_{\rm eff}$ |
-| `P16` | **WORKED** | Euclidean action of the imaginary segment, odd integrand, $\mp0.1443\,\alpha^2/G$ cancel (`CROSSING_no_made_asymmetry`) |
+| `P16` | **WORKED** | Euclidean action of the imaginary segment, odd integrand, $\mp0.0481\,\alpha^2/G$ cancel (`CROSSING_no_made_asymmetry`) |
 | `p0`  | **CHECKED-NEGATIVE** | carries the only Carter-constant SYNTHESIS assertion (deferred to `P7`), no HJ/Killing-tensor working; `geodesic` = totally-geodesic submanifold; `functional` = matter-functional kernel |
 
 ⇒ ***Seventeen of seventeen accounted for: NINE WORKED, EIGHT CHECKED-NEGATIVE. Reach: **17/17 ACCOUNTED FOR** — 9 **WORKED**, 8 **CHECKED-NEGATIVE by name** (the reading standard; the worked-only figure is $9/17$), up from 4.***

@@ -1570,7 +1570,7 @@ which would turn the one-parameter accommodation into a parameter-free predictio
 itself cannot supply the asymmetry. The imaginary segment's Euclidean action has integrand
 $r[f(r)-1]=-2M-r^{3}/\alpha^{2}$, which is **odd pointwise** under the standing conjugation acting on **offset
 and mass together** ($r\mapsto-r$, $2M\mapsto-2M$):*
-$$S_E(\text{matter})=-0.1443\,\alpha^{2}/G,\qquad S_E(\text{antimatter})=+0.1443\,\alpha^{2}/G,\qquad \text{sum}=0.$$
+$$S_E(\text{matter})=-0.0481\,\alpha^{2}/G,\qquad S_E(\text{antimatter})=+0.0481\,\alpha^{2}/G,\qquad \text{sum}=0.$$
 ***Exact, not approximate.*** *And **traced to the same offset--mass oddness** that fixes the chirality parity
 ($R=\gamma^5$) and the progenitor's antimatter identity — **so it is not a coincidence a refinement of the
 crossing could lift**.*
