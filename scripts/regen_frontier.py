@@ -268,6 +268,35 @@ EST = {
         'thermodynamic content, so there is nothing for the reassignment to transport and the construction is cleaner '
         'than it knew; or whether the reassignment needs something the vanishing denies it, in which case the '
         'framework owes an account of what crosses. Both are results; the second is worth looking for first.'),
+    'PO-57': ('the spin-up 68 read remaining items -- sixteen, complete and unfiltered', 1, 0, 6, None,
+        'OPENED r6899 (66) from a cold full-corpus read taken by a fresh node. Ninety-one mechanical fixes and '
+        'the rate rule are landed at r6899, and so are the two items the read flagged to raise first. What the '
+        'row carries is everything it confirmed at source and did NOT patch, each needing a judgement rather '
+        'than a correction: P18 sec:oneradius displaying an identity and then denying the two quantities are '
+        'related, with P6 sec:place the same defect and the readings count inflated by counting both halves of '
+        'one identity; P5 prop:nariai-fixed claiming a unique fixed point where there are two, reproduced in '
+        'P12 from the same formulas; P5 prop:tau stating order three on a domain where tau is the identity; P9 '
+        'prose giving J = Ma one line after its own proposition gives J = Ma/Xi^2, three sources against one; '
+        'P15 control validation at 0.14 per cent on four sites and 0.23 per cent on one, both true of '
+        'different runs, with P7 pairing the arm headline numbers to the configuration they were taken in and '
+        'P15 abstract not; P15 amplitude ladder ten orders apart by its own propositions and eighteen by the '
+        'connecting sentence; P13 sl(3,R) exclusion right for the wrong reason, the conclusion holding by real '
+        'rank; P13 sec:synthesis 3 + 3bar parenthetical off twice where sec:setup is right; P13 canon header '
+        'stating the superseded obstruction hypotheses and verdict, and it is the header a node reads to '
+        'orient; P14 using two hypercharge normalisations and two values for one quantity, the fix being the '
+        'clause the with-nothing-fitted claim rests on; P12 abstract and header stopping at order twelve and '
+        'omitting the order-48 closure, the paper strongest discrete result; P17 defining alpha with a modulus '
+        'in a section that admits alpha^2 < 0; P18 forbidding the rate assignment sec:tensions requires; '
+        'THE_PLAN carrying a superseded order count and a dead alias item; six uncited bibitems, an editorial '
+        'call and not a defect; and two instruments the read names and this pass did not build -- declared '
+        'counts against enumerated items, which THE_PLAN Phase 6 already names, and a superseded-numeric-value '
+        'ledger grepped corpus-wide, which is the channel that produced the retired driving figure and the '
+        'index four stale numbers. AND WHAT THE READ ELIMINATED IS KEPT: six hypotheses came back negative '
+        'with their blindnesses named, three of them firing on one essay by reading a restatement as a site of '
+        'independent claim, and one class firing because the index notation rule says read each occurrence in '
+        'context never by pattern ONCE, at the top of a two-thousand-line file -- a fact about the index and '
+        'not about the reader. DISCHARGE: each item worked or explicitly declined with a reason, and the two '
+        'named instruments built. Items leave by being worked, never by reclassification.'),
     'PO-56': ('the acoustic contrast difference, and no mechanism for it', 1, 1, 5, None,
         'OPENED r6891 as PO-13 remainder, on the standing order. PO-13 was struck at r6790 because the handover at '
         'the branch point supplies the one-locus state the row asked for, and it routed what it left -- the acoustic '
@@ -533,8 +562,8 @@ KIND = {'PO-46': 'BUILD', 'PO-10': 'BUILD', 'PO-13': 'BUILD', 'PO-36': 'READ', '
 #   and the generator reported "9 open" while the table showed EIGHT -- the count comes from
 #   the live set and the rows come from here.*  ** Adding a row needs three things: the
 #   register row, the runway, and this list. **  check_frontier_current now checks all three.
-ORDER = ['PO-56', 'PO-55', 'PO-54', 'PO-53', 'PO-52', 'PO-47', 'PO-48', 'PO-49', 'PO-50', 'PO-51', 'PO-45', 'PO-46', 'PO-10', 'PO-13', 'PO-43', 'PO-24', 'PO-36', 'PO-30', 'PO-25', 'PO-26', 'PO-31', 'PO-23', 'PO-15', 'PO-14', 'PO-17', 'PO-18', 'PO-19', 'PO-20']
-GROUP = {'PO-56': 'D',  # r6891: PO-13's live remainder, the acoustic sector.
+ORDER = ['PO-57', 'PO-56', 'PO-55', 'PO-54', 'PO-53', 'PO-52', 'PO-47', 'PO-48', 'PO-49', 'PO-50', 'PO-51', 'PO-45', 'PO-46', 'PO-10', 'PO-13', 'PO-43', 'PO-24', 'PO-36', 'PO-30', 'PO-25', 'PO-26', 'PO-31', 'PO-23', 'PO-15', 'PO-14', 'PO-17', 'PO-18', 'PO-19', 'PO-20']
+GROUP = {'PO-57': 'D', 'PO-56': 'D',  # r6891: PO-13's live remainder, the acoustic sector.
          'PO-45': 'A', 'PO-46': 'A',  # ⛔ r6549: a FOURTH hardcoded list -- GROUP -- and a row missing here raises.
          'PO-10': 'D', 'PO-13': 'D', 'PO-14': 'A', 'PO-15': 'C', 'PO-16': 'D',
          # ** r3095: the four brought in from p0's frontiers and the field ledgers.  PO-17 and
