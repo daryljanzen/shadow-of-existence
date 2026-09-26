@@ -1351,7 +1351,7 @@ analysis — and that is the end state this index is built toward, here reached 
 
 ## 1b. The second worked instance — the forced cosmological model (the ontology the whole corpus runs on)
 
-*Recorded r899 (this session), after a long day of thrashing whose single root was failing to hold this: the geometrically-forced cosmology is held in P7 and then forgotten everywhere a derivation runs, so calculations veer to FLRW defaults and everything explodes. This is that forcing, written once as a held, referenceable chain, so a node plugs the corpus's own model into a derivation instead of the textbook default. Stated for reversal; each link carries its home. It is the §2 Tier-A P1/P7 cosmological anchor the cosmology-running papers (P15, P16) and working derivations cite as **[†ONT-COSMO]**.*
+*Recorded r899 (this session), after a long day of thrashing whose single root was failing to hold this: the geometrically-forced cosmology is held in P7 and then forgotten everywhere a derivation runs, so calculations veer to FLRW defaults and everything explodes. This is that forcing, written once as a held, referenceable chain, so a node plugs the corpus's own model into a derivation instead of the textbook default. Each link carries its home. It is the §2 Tier-A P1/P7 cosmological anchor the cosmology-running papers (P15, P16) and working derivations cite as **[†ONT-COSMO]**.*
 
 **The chain, each link forced (not fitted), with its home:**
 
