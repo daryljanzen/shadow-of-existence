@@ -2259,6 +2259,42 @@ Doppler term removes the dipole's contribution to what we see; `NUFS` changes wh
 
 ## ⛭⛭ `r6891` — **THE TABLE, AND THE CANDIDATE IS RULED OUT**
 
+### ⚠ DISCLOSED FIRST: I EDITED `P15`, AND THE GATE THAT SHOULD HAVE CAUGHT IT DID NOT, TWICE
+
+*`P15` is your file and I am telling you before anything else.* **`corpus/CR_cosmology.tex`
+§`sec:neutrinos` carried the corrected claim as a live statement**: *"every peak on both arms moves to
+larger multipole **by the same amount across the first four**, which is the signature of a phase shift
+and not of a rescaled acoustic scale"*, citing `cc66.36`'s receipt. That is the claim this revision
+corrects, so it could not stand. I have rewritten the measured half of the passage: the SIGN and the
+separate amplitude effect stay, the constancy goes, and what the argument turns on is now the thing
+that is measured and is **stronger** than constancy in $\ell$ — *the effect is the same on the two
+arms*, to $0.17$ of a multipole in the phase and to four parts in ten thousand in the envelope.
+
+⚠ ** AND THE GATE MISSED IT, WHICH IS THE PART WORTH YOUR ATTENTION. ** *My registry entry was keyed
+to **my own wording**, "uniformly across the first four" — and the paper says "by the same amount across
+the first four". `check_withdrawn` reported the tree clean with the corrected claim standing in `P15`.*
+⇒ **That is exactly the defect the registry's own comment two entries up records from `r6881`: a
+registry keyed to one seat's phrasing is a registry that checks one seat.** *The pattern is widened to
+the paper's wording, with the reason written beside it in the diff, and the hit is fixed.*
+
+⌗ *And the fix then ran into a second gate, which was right and changed how I wrote it.* **My first
+correction QUOTED the withdrawn claim — "an earlier reading of that run had the peaks moving by the same
+amount" — which is how the registry convention records a withdrawal, and `check_one_state` failed it: a
+paper may not narrate its own construction.** *Both gates are satisfied the same way in the end, and it
+is the better way: the phrase is simply GONE from `P15`, which states what the shift IS, and the history
+lives in the receipt, where a reader who wants it should find it.*
+
+⌗ **ONE CLAUSE IN THAT PASSAGE I DID NOT TOUCH AND THINK YOU SHOULD LOOK AT.** *It reads "their deep
+sub-horizon effect is a constant phase shift and a constant suppression, and **a $k$-independent
+correction leaves a flat envelope flat**", cited to `C6_neutrino_term`. The conditional is fine. But
+what I measure is that removing the effect ENTIRE is **not** $k$-independent — the envelope ratio runs
+from $1.11$ at $\ell\sim150$ to $1.30$ by $\ell\sim1950$ — so the antecedent does not describe the
+full effect, only its deep sub-horizon limit. **The argument still carries, because the measured
+$k$-dependence is common to the two arms**, which is why I wrote that in. But whether the clause should
+still lean on $k$-independence is a structural call in your paragraph, not a measurement, and I have
+left it alone.*
+
+
 *`receipts/P15_CR_cosmology/P15_the_free_streaming_knob_is_common_to_both_arms_and_the_switch_sweep_finds_no_further_shadow.py`
 — rc=0, five parts, **34 gates**. Three banks: the screen at `spectra/r6891_switch_screen_{lcdm,cr}.npz`,
 the fine grid at `spectra/r6891_fine_grid_{lcdm,cr}.npz`, the full-reach nulls at
