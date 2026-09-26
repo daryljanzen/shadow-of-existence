@@ -94,5 +94,27 @@ oscillation sits at $1.040$ of the control's about its own envelope, and every r
 between $1.038$ and $1.044$.  *That is the order's own preferred outcome: it is none of these, and the
 receipt says what Δ looks like instead.*
 
+## ⛭ `r6889_*` — THE KNOB SHADOW REPAIRED, AND THE TESTS RE-RUN ON THE REPORTING PATH, r6889+cc66.36
+
+*`r6885+cc66.35` found that `_SWSRC` and `_DPSRC` are read only inside `los_spectrum`, so `HIER=1` —
+**the path every refit number in this sector is computed on** — was blind to them. They are now wired
+into the hierarchy path and the low-multipole path as well, and these are the runs that prove the
+repair and then use it. Same base commands as `r6885_*`, `HIER=1 LSTEP=8 LMAXL=2000`.*
+
+Launcher: `../r6889_directions/launch.sh`, idempotent.
+
+| file | the knob | what it shows |
+|---|---|---|
+| `r6889_noop_{lcdm,cr}.npz` | **nothing set** | ⚑ **max $\lvert\Delta\mathcal{D}_\ell\rvert = 0.0$ against `cc66_r185_verify_*` on BOTH arms — exactly zero, not nearly.** *This is the proof the edits are additive, and it is why the factor sits INSIDE the bracket: written outside it the default sums in a different ORDER and cost $1.1\times10^{-16}$. Measured, not foreseen.* |
+| `r6889_hdp0_{lcdm,cr}.npz` | `DPSRC=0` | moves $\mathcal{D}_\ell$ by **$62.3\%$ / $61.3\%$** where the same switch moved it by **exactly $0.0$** before the repair (`r6885_dp0_*`) — *the pair is what makes the shadow a proof rather than a null.* Contrast ratio $1.0401\to1.0376$; the arm's own oscillation $\to1.828$; cos with the contrast direction $\mathbf{+0.798}$ (LOS: $+0.893$) |
+| `r6889_hsw0_{lcdm,cr}.npz` | `SWSRC=0` | contrast ratio $\to1.0818$; the arm's own oscillation $\to\mathbf{-0.399}$ (it **inverts**); cos $\mathbf{-0.765}$ (LOS: $-0.791$) |
+| `r6889_nufs0_{lcdm,cr}.npz` | `NUFS=0` — the **new** knob: neutrinos as a perfect fluid at the same background density | moves $\mathcal{D}_\ell$ by $36.3\%$ / $37.3\%$ and pushes **every** peak on both arms to LARGER $\ell$, $+9.00$ uniformly across the first four — ⚠ *which is exactly one binned grid step, so the SIGN is established and the VALUE is grid-limited* |
+
+⇒ ⚑ **The two halves of the source bracket the contrast with opposite signs on the reporting path
+too**, and agree in sign with the line-of-sight path on both — so `r6885+cc66.35`'s reading, that the
+contrast direction IS the monopole-to-dipole balance, was not an artefact of the path it had to be
+measured on. ⚠ *And the arms' contrast RATIO survives both deletions again, so the channel stays
+identified and the cause stays unmeasured.*
+
 Each is a few kilobytes: a strided ℓ grid and its D_ℓ, nothing else.  They are inputs to receipts,
 not results in themselves, and every one of them is reproducible from the command in the table.

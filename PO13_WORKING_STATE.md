@@ -3987,3 +3987,81 @@ bears on transfer-versus-cosmology, which `r6881+cc66.34` withdrew the statistic
 — five parts, **38 gates**. Seven banked pairs at `spectra/r6885_*` with their commands in
 `spectra/README.md`; launchers at `/tmp/n66/r6885/launch{,2}.sh`, idempotent.*
 
+
+# ⛭⛭ r6889+cc66.36 — THE KNOB SHADOW CLOSED WITH ITS DEFAULT PROVED AT EXACTLY ZERO, AND THE NEUTRINOS GET A KNOB
+
+**⌗ THE REPAIR.** *`_SWSRC` and `_DPSRC` now reach all three source constructions — `los_spectrum`,
+the hierarchy path (`los_hier`) and the low-multipole path (`main`) — where they reached one. The
+monopole bracket is **split** so the switch multiplies $g(\Theta_0+\Psi)$ and not the polarisation
+term that shares it and already has `PISRC`.*
+
+| | max $\lvert\Delta\mathcal{D}_\ell\rvert$ against the banked base |
+|---|---|
+| `r6889_noop_lcdm` | $\mathbf{0.0}$ |
+| `r6889_noop_cr` | $\mathbf{0.0}$ |
+
+⚠ *And that took a second attempt, recorded rather than tidied away: written
+`_SWSRC * g_ * (\Theta_0+\Psi) + g_ * \ldots` the default sums in a different **order**, which cost
+$1.1\times10^{-16}$ — immaterial physically and still not zero. Keeping the factor INSIDE the bracket
+makes it exact, because $x\times1.0$ is.*
+
+**⌗ THE CALIBRATION, each newly wired switch on the path it was newly wired into.**
+
+| knob | control | arm |
+|---|---|---|
+| `DPSRC=0` | $62.3\%$ | $61.3\%$ |
+| `SWSRC=0` | (see below) | (see below) |
+| `NUFS=0` | $36.3\%$ | $37.3\%$ |
+
+⛭ ***`DPSRC=0` moved the reporting path by exactly $0.0$ before the repair and $62\%$ after — that
+pair is what makes the shadow a proof rather than a story.***
+
+**⌗ THE TWO BRACKETING TESTS, ON THE REPORTING PATH (r6885's LOS values in brackets).**
+
+| test | $\lVert\Delta_{\rm off}\rVert^2$ | of base | contrast ratio | arm's own oscillation | cos with CONTRAST |
+|---|---|---|---|---|---|
+| `DPSRC=0` | $149.30$ | $193.3\%$ | $1.0376$ | $+1.828$ [$+1.855$] | $\mathbf{+0.798}$ [$+0.893$] |
+| `SWSRC=0` | $229.69$ | $297.3\%$ | $1.0818$ | $\mathbf{-0.399}$ [$-0.300$] | $\mathbf{-0.765}$ [$-0.791$] |
+| base | $77.26$ | $100\%$ | $\mathbf{1.0401}$ | — | — |
+
+⇒ ***The same opposite-sign bracket on both paths, so the contrast direction IS the monopole-to-dipole
+balance and that reading was not the path's.*** ⌗ *The two deletions are not equally inert on the
+ratio: the dipole moves it $-0.0025$, the monopole $+0.042$, and neither collapses it toward $1.000$.*
+
+**⌗ ⚑ `NUFS` — THE FREE-STREAMING KNOB, FOUR LINES.**
+
+*$\sigma_\nu = F_2/2$ at two dynamical sites (the Euler equation and $\Psi$'s shear term), so `NUFS`
+multiplies $\sigma_\nu$ and the $F_2$ source on both solver paths. **The quadrupole's IC is exactly
+zero** — `y0 = np.zeros((nk, NV))` with no assignment to index 7 anywhere — so at `NUFS=0` it is never
+sourced, the whole $\ell\ge2$ ladder stays zero, and the sector is a perfect fluid at the SAME
+background density (`FNU`, `Onv`, `Ogv` untouched).*
+
+| peaks | 1 | 2 | 3 | 4 | 5 | 6 |
+|---|---|---|---|---|---|---|
+| control, free-streaming | $221$ | $536$ | $815$ | $1130$ | $1418$ | $1733$ |
+| control, perfect fluid | $230$ | $545$ | $824$ | $1139$ | $1436$ | $1750$ |
+| arm, free-streaming | $221$ | $536$ | $815$ | $1130$ | $1427$ | $1733$ |
+| arm, perfect fluid | $230$ | $545$ | $824$ | $1139$ | $1436$ | $1750$ |
+
+⇒ ***Every shift POSITIVE on both arms, $+9.00$ uniformly across the first four*** — the sign the
+Bashinsky–Seljak pull has, and the shape a **phase** shift has rather than a rescaling of the acoustic
+scale. ⚠ *Exactly one binned grid step ($8.9999$), so the SIGN and order of magnitude are established
+and the VALUE is not; and the DRAG half, $36$–$37\%$ in $\mathcal{D}_\ell$, is the large effect and is
+not the same number.*
+
+⛭ **AND ONE CORRECTION TO THE ORDER.** *`r6889` says of the source decomposition and the phase shift
+that "the two are the same part of the source". **They are two layers.** `SWSRC`/`DPSRC` switch which
+line-of-sight terms are projected; the phase shift is in the dynamics that set the dipole before last
+scattering. Deleting the Doppler term removes the dipole's contribution; `NUFS` changes what the
+dipole IS. Pointing the first at the second would have measured nothing, which is why it is two knobs.*
+
+⛔ **BOUND:** *no mechanism for the contrast imbalance — `r6889` said that boundary is right; no value
+for the phase shift as a result about this construction, its size being grid-limited and pointing the
+knob at the question being the next order's; the low-multipole path is wired for consistency and NOT
+exercised here; and no other knob is audited — three shadows found by three routes says nothing about
+a fourth.*
+
+⌗ *`receipts/P15_CR_cosmology/P15_the_source_decomposition_is_reachable_on_the_reporting_path_and_the_neutrinos_have_a_knob.py`
+— five parts, **22 gates**. Four pairs banked at `spectra/r6889_*`; launcher at
+`computations/beyond_the_wall/r6889_directions/`, idempotent.*
+
