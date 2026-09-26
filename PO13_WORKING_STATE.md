@@ -4048,7 +4048,7 @@ Bashinsky–Seljak pull has, and the shape a **phase** shift has rather than a r
 scale. ⚠ *Exactly one binned grid step ($8.9999$), so the SIGN and order of magnitude are established
 and the VALUE is not; and the DRAG half, $36$–$37\%$ in $\mathcal{D}_\ell$, is the large effect and is
 not the same number.*
-  ⚠ ** THE UNIFORMITY IS CORRECTED AT r6893+cc66.37: sub-bin, on both arms and on two independent locators, the shift RISES with multipole -- about $+3$ near the first peak and about $+12$ by $\ell\sim1500$.  The peak positions compared here were quantised to the $\ell$ grid, so the uniformity was the grid.  The SIGN stands. **
+  ⚠ ** THE UNIFORMITY IS CORRECTED AT r6891+cc66.37: sub-bin, on both arms and on two independent locators, the shift RISES with multipole -- about $+3$ near the first peak and about $+12$ by $\ell\sim1500$.  The peak positions compared here were quantised to the $\ell$ grid, so the uniformity was the grid.  The SIGN stands. **
 
 ⛭ **AND ONE CORRECTION TO THE ORDER.** *`r6889` says of the source decomposition and the phase shift
 that "the two are the same part of the source". **They are two layers.** `SWSRC`/`DPSRC` switch which
@@ -4068,7 +4068,7 @@ a fourth.*
 
 
 
-# ⛭⛭ r6893+cc66.37 — THE SWITCH SWEEP IS EXHAUSTIVE, AND THE FREE-STREAMING SHIFT IS MEASURED AND RULED OUT
+# ⛭⛭ r6891+cc66.37 — THE SWITCH SWEEP IS EXHAUSTIVE, AND THE FREE-STREAMING SHIFT IS MEASURED AND RULED OUT
 
 *`r6891`, two parts. **① Point `NUFS` at the question on a grid that can resolve it** — "a locator on
 a finer $\ell$ grid, both arms, so the shift is measured rather than bracketed at one bin step — and
@@ -4202,7 +4202,7 @@ different search — `cc66.17`'s `NS` literal is the reminder. The screen runs a
 the NULLS are re-run at full reach.*
 
 ⌗ *`receipts/P15_CR_cosmology/P15_the_free_streaming_knob_is_common_to_both_arms_and_the_switch_sweep_finds_no_further_shadow.py`
-— five parts, **34 gates**. The screen banked at `spectra/r6893_switch_screen_{lcdm,cr}.npz`, the fine
-grid at `spectra/r6893_fine_grid_{lcdm,cr}.npz`, the full-reach nulls at
-`spectra/r6893_full_reach_nulls_lcdm.npz`. The instrument gains COMMENTS ONLY, and even that is
+— five parts, **34 gates**. The screen banked at `spectra/r6891_switch_screen_{lcdm,cr}.npz`, the fine
+grid at `spectra/r6891_fine_grid_{lcdm,cr}.npz`, the full-reach nulls at
+`spectra/r6891_full_reach_nulls_lcdm.npz`. The instrument gains COMMENTS ONLY, and even that is
 measured: both arms' bases re-run against the annotated file at exactly $0.0$.*

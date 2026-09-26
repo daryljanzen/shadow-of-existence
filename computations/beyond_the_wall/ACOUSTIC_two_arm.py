@@ -361,7 +361,7 @@ if ARM == 'lcdm':
     #     l_A = pi D/r_s`, so the knob is visible in the instrument's own report and was seen to
     #     move it -- 144.53 Mpc / 301.4 at the default against 109.70 Mpc / 397.1 at LZSTART=6761
     #     with LRSFROM=start.  *A knob checked at the REPORTING path, not at the definition.*
-    #   ⚠⚑ ** AND THAT CHECK WAS OF THE WRONG QUANTITY -- r6893+cc66.37, from the switch sweep. **
+    #   ⚠⚑ ** AND THAT CHECK WAS OF THE WRONG QUANTITY -- r6891+cc66.37, from the switch sweep. **
     #     *What r6476 watched move was the HEADER, and the header is not the reported number.*  Run at
     #     `LZSTART=6761` on the reporting path, `LRSFROM=start` moves the printed `r_s` from 145.38 to
     #     110.49 Mpc and `l_A` from 301.5 to 396.8 -- ** and D_l comes back BIT-IDENTICAL. **  ⇒ `R_S`
@@ -411,7 +411,7 @@ A_START = 1.0 / (1.0 + Z_START)
 #   ⇒ ** This is a branch-point/onset problem throughout. The front seam does not enter it. **
 ETA_ON = float(np.interp(A_START, ag, eg))
 ETA_END = float(os.environ.get('ETAEND', 0)) or float(np.interp(min(20 * A_REC, 1.0), ag, eg))
-L_A = np.pi * D_M / R_S          # ** A DIAGNOSTIC, NOT AN INPUT -- r6893+cc66.37 measured it: **
+L_A = np.pi * D_M / R_S          # ** A DIAGNOSTIC, NOT AN INPUT -- r6891+cc66.37 measured it: **
 #   no transfer function on any of the three paths reads `L_A` or `R_S`; they are printed and
 #   saved as metadata.  A 24 per cent move in `r_s` leaves D_l bit-identical.  *Which is why the
 #   printed `l_1/l_A` matching the sky is a two-sided agreement and not a tautology.*
@@ -1196,7 +1196,7 @@ def evolve_hier(kk, t_eval, e_sw, yF):
 def hier_run(kk, EE, L_A_, D_M_, R_S_):
     """** THE WHOLE HIERARCHY PATH, BATCHED OVER k SO THAT MEMORY IS BOUNDED BY CHOICE. **
 
-    ⚠ ** `L_A_`, `D_M_` and `R_S_` ARE ACCEPTED AND NOT USED -- gated at r6893+cc66.37. **  They are
+    ⚠ ** `L_A_`, `D_M_` and `R_S_` ARE ACCEPTED AND NOT USED -- gated at r6891+cc66.37. **  They are
     here for signature symmetry with `los_spectrum`, which prints them.  *Naming it matters because a
     reader seeing r_s in the signature would take the acoustic scale for an input to the projection,
     and it is not: the distance enters through `x0 = eta_0 - EE` and the scale enters nowhere.*

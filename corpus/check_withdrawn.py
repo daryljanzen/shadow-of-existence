@@ -224,7 +224,7 @@ REGISTRY = [
      r'|no head start|superseded|struck r\d+|does not support|nine orders)',
      "withdrawn r2376+c54.105 by P15 sec:tensions: rho_r = rho_m at T ~ 0.8 eV, nine orders below "
      "the handover; O(1) there would mean eta ~ 0.5.  The corrected accounting is in P15 and P7."),
-    # r6893+cc66.37.  "THE FREE-STREAMING PHASE SHIFT IS UNIFORM ACROSS THE FIRST FOUR PEAKS".
+    # r6891+cc66.37.  "THE FREE-STREAMING PHASE SHIFT IS UNIFORM ACROSS THE FIRST FOUR PEAKS".
     # `r6889+cc66.36` built `NUFS`, measured the peak shift at +9 on both arms, and gated it as
     # UNIFORM -- "which is what a PHASE shift looks like as against a rescaling of the acoustic
     # scale".  ** The peak positions it compared were quantised to the l grid, and the tolerance was
@@ -240,9 +240,9 @@ REGISTRY = [
      # ⌗ NARROW ON PURPOSE.  Every text that carries this claim ALSO hedges its SIZE as
      # "grid-limited" or "one binned grid step" -- and that hedge is about the size, not about
      # the uniformity, so accepting it as the marker would let the withdrawn half stand.
-     r"(?:r6893|withdrawn|WITHDRAWN|CORRECTED|corrected|not uniform|NOT uniform"
+     r"(?:r6891\+cc66\.37|withdrawn|WITHDRAWN|CORRECTED|corrected|not uniform|NOT uniform"
      r"|grows with|rises with|not a constant)",
-     "corrected r6893+cc66.37; sub-bin the shift grows with multipole and is not a constant"),
+     "corrected r6891+cc66.37; sub-bin the shift grows with multipole and is not a constant"),
 ]
 
 SKIP = ('appendix_receipts',)
@@ -278,7 +278,7 @@ HISTORICAL = {
 # a pattern that is broken.  Each entry therefore carries a KNOWN-POSITIVE string, taken verbatim
 # from the text the withdrawal removed, and this gate fails if any pattern stops matching its own.
 POSITIVES = {
-    # r6893+cc66.37: both forms cc66.36 used -- the gate's own name and the summary line.
+    # r6891+cc66.37: both forms cc66.36 used -- the gate's own name and the summary line.
     "the-free-streaming-shift-is-uniform-across-the-first-four-peaks": [
         "...and it is UNIFORM across the first four peaks on both arms, which is what a PHASE ",
         "pushes every peak on both arms to LARGER multipole, uniformly across the first four, which is what",

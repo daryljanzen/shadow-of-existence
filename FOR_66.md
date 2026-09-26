@@ -2224,7 +2224,7 @@ the expansion history moves.*
 the Bashinsky–Seljak pull has — free-streaming drags the peaks to smaller $\ell$, so removing it pushes
 them back — and **uniform** is what a phase shift looks like, as against a rescaling of the acoustic
 scale.*
-  ⚠ ** THE UNIFORMITY IS CORRECTED AT r6893+cc66.37: sub-bin, on both arms and on two independent locators, the shift RISES with multipole -- about $+3$ near the first peak and about $+12$ by $\ell\sim1500$.  The peak positions compared here were quantised to the $\ell$ grid, so the uniformity was the grid.  The SIGN stands. **
+  ⚠ ** THE UNIFORMITY IS CORRECTED AT r6891+cc66.37: sub-bin, on both arms and on two independent locators, the shift RISES with multipole -- about $+3$ near the first peak and about $+12$ by $\ell\sim1500$.  The peak positions compared here were quantised to the $\ell$ grid, so the uniformity was the grid.  The SIGN stands. **
 
 ⚠ **TWO THINGS I WILL NOT LET THIS BE READ AS.** *(i) The size is **exactly one binned grid step**
 ($8.9999$), so the sign and the order of magnitude are established here and **the value is not** —
@@ -2257,12 +2257,12 @@ Doppler term removes the dipole's contribution to what we see; `NUFS` changes wh
 
 ---
 
-## ⛭⛭ `r6893` — **THE TABLE, AND THE CANDIDATE IS RULED OUT**
+## ⛭⛭ `r6891` — **THE TABLE, AND THE CANDIDATE IS RULED OUT**
 
 *`receipts/P15_CR_cosmology/P15_the_free_streaming_knob_is_common_to_both_arms_and_the_switch_sweep_finds_no_further_shadow.py`
-— rc=0, five parts, **34 gates**. Three banks: the screen at `spectra/r6893_switch_screen_{lcdm,cr}.npz`,
-the fine grid at `spectra/r6893_fine_grid_{lcdm,cr}.npz`, the full-reach nulls at
-`spectra/r6893_full_reach_nulls_lcdm.npz`. **This one touches the instrument, and the touch is COMMENTS
+— rc=0, five parts, **34 gates**. Three banks: the screen at `spectra/r6891_switch_screen_{lcdm,cr}.npz`,
+the fine grid at `spectra/r6891_fine_grid_{lcdm,cr}.npz`, the full-reach nulls at
+`spectra/r6891_full_reach_nulls_lcdm.npz`. **This one touches the instrument, and the touch is COMMENTS
 ONLY — gated bit-identical on both arms, because `cc66.36` is why I no longer assert that a change is
 nothing.***
 
@@ -2393,6 +2393,18 @@ difference, **freely rescaled**, could reach $8.7\%$ of $\lVert\Delta\rVert^{2}$
 coefficient — and I report that rather than rounding it away. **But there is no such freedom: both arms
 carry the same neutrino sector, so nothing sets free-streaming differently on the two.** The $8.7\%$ is
 the size of a handle this construction does not have.*
+
+### ⚠ AND ONE LABEL CORRECTION YOU SHOULD KNOW ABOUT
+
+*I first wrote this up as `r6893+cc66.37`. **While it was computing you took `r6893` for the second
+line** (`PO-50`'s premise), which reached `main` at `325ed8a6`. The code seat's label is the ORDER's
+revision — `r6885+cc66.35`, `r6889+cc66.36` — so this is **`r6891+cc66.37`**, and it is renumbered
+everywhere including the three banked spectra files (`spectra/r6891_*`) and the launcher directory
+(`computations/beyond_the_wall/r6891_directions/`). ⌗ *`main` is merged in beneath it; `THE_FRONTIER.md`
+was the one conflict and it is generated, so it was resolved by running the generator rather than by
+hand — both seats had edited a row and the register is the single source. And I have left
+`THE_REGISTER.md`'s `current:` at your `r6893` rather than moving it backwards to my own lower number;
+if you want it to read `r6891+cc66.37` that is a one-line change and your call.*
 
 ### ⌗ TWO THINGS I AM LEAVING TO YOU
 

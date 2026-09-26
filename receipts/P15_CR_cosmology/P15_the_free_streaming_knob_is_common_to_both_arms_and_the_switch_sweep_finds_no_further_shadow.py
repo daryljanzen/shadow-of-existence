@@ -49,6 +49,12 @@ COMPUTES: scope.
     table calls it inert, because that is the half of the claim reduced reach cannot carry.*
   * The locator runs on the banked `LSTEP=8` spectra and again on `LSTEP=2` spectra computed here,
     so the answer can be shown not to be a property of the grid.
+  * Every run is launched by a banked, idempotent script under
+    `computations/beyond_the_wall/r6891_directions/`, and the value each switch was moved TO is declared
+    in this receipt's own `OFFVAL` table, so the experiment is on the record and not only in the scripts.
+    ⚠ *Including `pass5.sh`, which exists because `SWSRC` was missing from the first screen list -- kept
+    as its own script rather than folded back in, because a table that silently gained a row would not
+    say so.*
   * The lensing operator is `c54.183`'s CAMB lensed/unlensed TT ratio at Planck 2018, used exactly
     as `cc66.33`-`cc66.36` use it, and only for the one Delta-space cross-check.
   * ** NOT CLAIMED: a mechanism for the contrast imbalance. **  `r6891` states that boundary has not
@@ -486,7 +492,7 @@ print("""
 
 SCREEN, HDR, FAILED = {}, {}, {}
 for arm in ('lcdm', 'cr'):
-    d = np.load(os.path.join(SP, f'r6893_switch_screen_{arm}.npz'), allow_pickle=True)
+    d = np.load(os.path.join(SP, f'r6891_switch_screen_{arm}.npz'), allow_pickle=True)
     SCREEN[arm] = {k[4:]: (d['ls__' + k[4:]].astype(float), d['Dl__' + k[4:]].astype(float))
                    for k in d.files if k.startswith('ls__')}
     HDR[arm] = {k[4:]: dict(l_A=float(d['lA__' + k[4:]]), r_s=float(d['rs__' + k[4:]]),
@@ -1022,8 +1028,8 @@ print("""
   run again.  ** If the answer were a property of the grid it would move here, and the test is that it
   does not. **
 """)
-for _need in ('r6893_fine_grid_lcdm.npz', 'r6893_fine_grid_cr.npz',
-              'r6893_full_reach_nulls_lcdm.npz'):
+for _need in ('r6891_fine_grid_lcdm.npz', 'r6891_fine_grid_cr.npz',
+              'r6891_full_reach_nulls_lcdm.npz'):
     check(f"the bank this part reads is present: `spectra/{_need}`",
           os.path.exists(os.path.join(SP, _need)), _need)
 if FAILS:
@@ -1036,7 +1042,7 @@ if FAILS:
     raise SystemExit(1)
 FINE = {}
 for arm in ('lcdm', 'cr'):
-    d = np.load(os.path.join(SP, f'r6893_fine_grid_{arm}.npz'), allow_pickle=True)
+    d = np.load(os.path.join(SP, f'r6891_fine_grid_{arm}.npz'), allow_pickle=True)
     FINE[arm] = {k[4:]: (d['ls__' + k[4:]].astype(float), d['Dl__' + k[4:]].astype(float),
                          float(d['lA__' + k[4:]])) for k in d.files if k.startswith('ls__')}
 
@@ -1108,7 +1114,7 @@ print("""
   every switch the screen calls inert is re-run on the control arm at `LMAXL=2000` -- the reach every
   reported number in this sector is computed at -- before the table calls it inert.
 """)
-d = np.load(os.path.join(SP, 'r6893_full_reach_nulls_lcdm.npz'), allow_pickle=True)
+d = np.load(os.path.join(SP, 'r6891_full_reach_nulls_lcdm.npz'), allow_pickle=True)
 FULL = {k[4:]: (d['ls__' + k[4:]].astype(float), d['Dl__' + k[4:]].astype(float))
         for k in d.files if k.startswith('ls__')}
 
