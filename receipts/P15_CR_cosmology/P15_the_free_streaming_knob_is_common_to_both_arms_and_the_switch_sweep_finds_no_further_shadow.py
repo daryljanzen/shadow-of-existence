@@ -1084,35 +1084,40 @@ for arm in ('lcdm', 'cr'):
                   float(np.max(np.abs(D_s - D_w)) / np.max(np.abs(D_w))))
     print(f"    {arm:5s} two slices summed against the whole run: "
           f"max |dD_l| = {SLICE[arm][0]:.3e}  ({SLICE[arm][1]:.3e} relative)")
-check("⚑ ** TWO SLICES SUM TO THE WHOLE RUN AT THE LEVEL OF FLOATING-POINT SUMMATION ORDER, ON BOTH "
-      "ARMS **, which is `r6794`'s claim for `KSLICE` measured here rather than carried",
+check("two slices sum to the whole run to within floating-point summation order on BOTH arms -- and "
+      "this pair is sliced at k-index 130, which is INSIDE a `KBATCH=250` batch, so the whole run and "
+      "the slices do not even use the same batches",
       SLICE['lcdm'][1] < 1e-7 and SLICE['cr'][1] < 1e-7,
       f"lcdm {SLICE['lcdm'][1]:.3e} relative, cr {SLICE['cr'][1]:.3e} -- against the "
       f"{2.1e-9:.1e} that merely changing `KBATCH` costs on the control")
-check("⛔ ...and `r6794`'s CAVEAT does not bite here, which is a measurement and not a hope.  *It says "
+check("⛔ ...and `r6794`'s CAVEAT does not show here, which is a measurement and not a hope.  *It says "
       "slices add exactly only on a UNIFORM k grid, because `_project` takes `dk = np.gradient(kb)` "
-      "from the batch it is handed, and the CR arm's ladder is not uniform.*  ** On this arm, at this "
-      "boundary, the ladder costs nothing above the control's own summation-order noise -- the two "
-      "agree to within a factor of two of each other. **  ⌗ *Reported this way round on purpose: an "
-      "earlier version of this gate asserted the caveat DID bite and passed on `cr > lcdm`, which is "
-      "a comparison two numbers of the same size satisfy by luck.  That is the vacuous-gate shape "
-      "`r6895` had just finished naming, and it is recorded rather than quietly fixed.*",
+      "from the batch it is handed, and the CR arm's ladder is not uniform.*  ** At this boundary the "
+      "ladder costs nothing above the control's own summation-order noise: the two agree within a "
+      "factor of two. **  ⌗ *Reported this way round on purpose: an earlier version of this gate "
+      "asserted the caveat DID bite and passed on `cr > lcdm`, which two numbers of the same size "
+      "satisfy by luck.  That is the vacuous-gate shape `r6895` had just finished naming, and it is "
+      "recorded rather than quietly fixed.*",
       0.3 < SLICE['cr'][1] / SLICE['lcdm'][1] < 3.0,
       f"cr/lcdm = {SLICE['cr'][1]/SLICE['lcdm'][1]:.2f}")
 _s2 = np.load(os.path.join(SP, 'r6893_slice_check.npz'), allow_pickle=True)
 for arm in ('lcdm', 'cr'):
-    print(f"    {arm:5s} at STAGE B's own reach and its own eleven 250-mode boundaries: "
-          f"{int(_s2['nsl__'+arm])} slices summed against the whole, "
-          f"max |dD_l| = {float(_s2['amax__'+arm]):.3e} ({float(_s2['rmax__'+arm]):.3e} relative)")
-check("⚑⚑ ** AND THE TEST IS REPEATED AT STAGE B's OWN SLICING AND ITS OWN REACH, WHICH IS THE ONE "
-      "THAT MATTERS. **  Step 0 tested ONE boundary at `LMAXL=500`; stage B slices eleven times over a "
-      "k range four times as long, which is exactly where a varying spacing would tell.  *Summed "
-      "against the whole run at `LSTEP=64 LMAXL=2000` -- the l sampling made coarse so the whole run "
-      "is affordable, since the projection is what `LSTEP` costs and the k-sum is what is under "
-      "test -- both arms still add to summation-order noise.*",
-      float(_s2['rmax__lcdm']) < 1e-6 and float(_s2['rmax__cr']) < 1e-6,
+    print(f"    {arm:5s} at STAGE B's own slicing and its own reach: {int(_s2['nsl__'+arm])} slices "
+          f"summed against the whole, max |dD_l| = {float(_s2['amax__'+arm]):.3e} "
+          f"({float(_s2['rmax__'+arm]):.3e} relative)")
+check("⚑⚑ ** AND AT STAGE B's OWN SLICING THE SUM IS EXACT TO MACHINE EPSILON ON BOTH ARMS, WHICH IS "
+      "BETTER THAN r6794's CAVEAT ALLOWS AND FOR A REASON WORTH KEEPING. **  Step 0 sliced at k-index "
+      "130 and paid 1e-8; stage B slices at multiples of 250, ** which is `KBATCH` **, so the whole run "
+      "and the slices use the SAME batches -- the same `dk = np.gradient(kb)` weights and the same "
+      "summation order inside each -- and only the outer accumulation differs.  *** So the caveat is "
+      "AVOIDED rather than tolerated: choose slice boundaries on `KBATCH` and a non-uniform ladder "
+      "cannot enter, because no batch's own measure changes. ***  ⌗ *Measured at `LSTEP=64 LMAXL=2000`, "
+      "the l sampling made coarse so the whole run is affordable, since the projection is what `LSTEP` "
+      "costs and the k-sum is what is under test.*",
+      float(_s2['rmax__lcdm']) < 1e-14 and float(_s2['rmax__cr']) < 1e-14,
       f"lcdm {float(_s2['rmax__lcdm']):.3e} over {int(_s2['nsl__lcdm'])} slices, "
-      f"cr {float(_s2['rmax__cr']):.3e} over {int(_s2['nsl__cr'])}")
+      f"cr {float(_s2['rmax__cr']):.3e} over {int(_s2['nsl__cr'])} -- against 1e-8 when the boundary "
+      f"is not a batch boundary")
 
 
 def locate_pair(tag, ls, A, B, l_A, order=8):
@@ -1155,13 +1160,20 @@ check("the two finer grids are what they say they are: A at l-step 2 (four times
       f"{FLOC[('fineB','lcdm')]['step']:.0f} to l = 1996, against the banked step {_L['step']:.0f}")
 
 # ---- the comparison that answers "is the answer the grid's?" -------------------------------------
+# ** matched by POSITION and not by index. **  A finer grid can resolve an extremum the coarse one
+# missed, and pairing two lists by index would then compare different peaks and fail loudly for the
+# wrong reason.  Each banked extremum is matched to the fine-grid extremum within 20 multipoles of it.
 _pairs = []
 for arm in ('lcdm', 'cr'):
     base = _L if arm == 'lcdm' else _C
     for stage in ('fineA', 'fineB'):
         f = FLOC[(stage, arm)]
-        n = min(len(f['dl']), len(base['dl']))
-        _pairs.append((stage, arm, float(np.max(np.abs(f['dl'][:n] - base['dl'][:n]))), n))
+        d = []
+        for lb, db in zip(base['l'], base['dl']):
+            j = np.argmin(np.abs(f['l'] - lb))
+            if abs(f['l'][j] - lb) <= 20.0:
+                d.append(abs(f['dl'][j] - db))
+        _pairs.append((stage, arm, float(max(d)) if d else 99.0, len(d)))
 for stage, arm, d, n in _pairs:
     print(f"    {stage} {arm:5s}: largest per-extremum disagreement with the banked l-step 8 locator "
           f"over the first {n} extrema = {d:.3f} multipoles")
@@ -1171,20 +1183,33 @@ check("⚑⚑ ** AND THE ANSWER IS NOT THE GRID'S. **  On both arms and on BOTH 
       "*The shift was measured, not bracketed.*",
       all(d < 0.5 for _, _, d, _ in _pairs),
       "; ".join(f"{s} {a} {d:.3f}" for s, a, d, _ in _pairs))
-check("...and every conclusion of Part 4 survives on the finer grids: the shift still rises "
-      "monotonically band by band, the two arms still agree to a fifth of a multipole, and the drag is "
-      "still an envelope rescale with the contrast within two per cent of unity",
+check("...and the PHASE conclusions survive on both of them: the shift still rises band by band, and "
+      "the two arms still agree to a fifth of a multipole",
       all(all(x[1] < y[1] for x, y in zip(FLOC[(st, ar)]['bands'], FLOC[(st, ar)]['bands'][1:]))
           for st in ('fineA', 'fineB') for ar in ('lcdm', 'cr'))
       and all(abs(x[1] - y[1]) < 0.25 for st in ('fineA', 'fineB')
-              for x, y in zip(FLOC[(st, 'lcdm')]['bands'], FLOC[(st, 'cr')]['bands']))
-      and all(abs(FLOC[(st, 'cr')]['env'] - FLOC[(st, 'lcdm')]['env']) < 3e-3
-              and abs(FLOC[(st, 'lcdm')]['con'] - 1.0) < 0.02 for st in ('fineA', 'fineB')),
+              for x, y in zip(FLOC[(st, 'lcdm')]['bands'], FLOC[(st, 'cr')]['bands'])),
       "; ".join(f"{st}: {FLOC[(st,'lcdm')]['bands'][0][1]:+.2f} -> "
-                f"{FLOC[(st,'lcdm')]['bands'][-1][1]:+.2f} (lcdm), envelope "
-                f"{FLOC[(st,'lcdm')]['env']:.4f}/{FLOC[(st,'cr')]['env']:.4f}, contrast "
-                f"{FLOC[(st,'lcdm')]['con']:.4f}/{FLOC[(st,'cr')]['con']:.4f}"
+                f"{FLOC[(st,'lcdm')]['bands'][-1][1]:+.2f} (lcdm), largest arm difference "
+                f"{max(abs(x[1]-y[1]) for x, y in zip(FLOC[(st,'lcdm')]['bands'], FLOC[(st,'cr')]['bands'])):.3f}"
                 for st in ('fineA', 'fineB')))
+check("⚠ ** AND THE DRAG'S ARM-AGREEMENT IS TAKEN FROM THE FULL-REACH GRID AND NOT FROM BOTH, WHICH IS "
+      "A LIMIT OF CONSTRUCTION A AND IS STATED RATHER THAN AVERAGED OVER. **  A's `LMAXL=900` cuts "
+      "k_max with it, and the envelope ratio is the quantity that cut moves: on A the two arms' "
+      "envelope ratios differ by ten times what they differ by at full reach.  *So A is the PHASE "
+      "check -- which is what the finer grid exists for -- and the ENVELOPE and CONTRAST comparison is "
+      "B's, at the reach every reported number uses.*",
+      abs(FLOC[('fineB', 'cr')]['env'] - FLOC[('fineB', 'lcdm')]['env']) < 3e-3
+      and abs(FLOC[('fineB', 'lcdm')]['con'] - 1.0) < 0.02
+      and abs(FLOC[('fineA', 'cr')]['env'] - FLOC[('fineA', 'lcdm')]['env'])
+      > abs(FLOC[('fineB', 'cr')]['env'] - FLOC[('fineB', 'lcdm')]['env']),
+      f"B: envelope {FLOC[('fineB','lcdm')]['env']:.4f}/{FLOC[('fineB','cr')]['env']:.4f} "
+      f"(difference {FLOC[('fineB','cr')]['env']-FLOC[('fineB','lcdm')]['env']:+.4f}), contrast "
+      f"{FLOC[('fineB','lcdm')]['con']:.4f}/{FLOC[('fineB','cr')]['con']:.4f};   "
+      f"A, truncated: envelope {FLOC[('fineA','lcdm')]['env']:.4f}/{FLOC[('fineA','cr')]['env']:.4f} "
+      f"(difference {FLOC[('fineA','cr')]['env']-FLOC[('fineA','lcdm')]['env']:+.4f})")
+
+
 
 # ---------------------------------------------------------------------------------------------------
 # PART 3c -- AND THE NULLS AT FULL REACH, WHICH IS THE HALF REDUCED REACH CANNOT CARRY.
