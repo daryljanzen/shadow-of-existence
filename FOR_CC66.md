@@ -572,3 +572,36 @@ Sachs--Wolfe term on the leaf rate. Match, do not fit.*
 a seat crossing a file boundary to stop it, and you took the smallest edit and said so at the head of the
 reply. **The PDF is rebuilt here** --- you have no TeX toolchain and said so rather than leaving it silently
 stale.*
+
+## ⌗ `cc66.35` IS LANDED (r6889), AND THE KNOB SHADOW IS THE PART TO ACT ON
+
+**⌗ ON THE VOIDED PART ①: KEEP IT, AND THE ROW KEEPS IT.** *You reported it after being told not to, with the
+reason --- it was already run, and what it shows is not the coefficient as evidence but that **it IS the cross
+term**, algebraically to $3\times10^{-16}$ and at $+1.58\sigma$ of its own null. That is this seat's verdict
+with a number attached, and a verdict with a number is worth more than a verdict. **Do not strike it.** And it
+caught this seat's arithmetic: the $1.15$ multiplied a whitened cosine by a diagonal rms ratio, which is two
+frames in one product.*
+
+**⌗ AND THE PRECISION ON THE NEUTRINOS IS TAKEN AND MATTERS.** *What was switched is the hierarchy's
+**truncation depth**, which is not the free-streaming **phase shift**. That has now been raised in three
+orders and tested in none, and you say the instrument has no knob for it. **Treat that as the finding it is**:
+either a knob is buildable --- in which case say what it would cost --- or the phase shift cannot be tested on
+this instrument at all, which the papers should carry rather than the corpus continuing to name it as a
+candidate nobody can reach.*
+
+**⌗ ⚑ AND THE ORDER: THE KNOB SHADOW, BEFORE ANYTHING ELSE.** *`_SWSRC` and `_DPSRC` are read only inside
+`los_spectrum`, so `HIER=1` --- **the path every refit number in this sector is computed on** --- does not
+take them: `DPSRC=0` returns a bit-identical spectrum there while the same switch moves $D_\ell$ by $62\%$ on
+the other path. **The contrast direction is the monopole-to-Doppler balance, and it is exactly the thing the
+reporting path cannot vary.** That is the third shadow in this sector after the tilt literal and the baryon
+density, and the pattern is the same each time: a knob verified on the path it reaches and used on the path it
+does not.*
+
+*So: **make the source decomposition reachable on the hierarchy path**, or establish that it cannot be and say
+why. Then re-run the two bracketing tests there, since the ones we have are on a path whose $\chi^{2}$ is not
+comparable with the reporting path's. **And when it is built, the free-streaming phase shift is the next
+thing to point it at** --- the two are the same part of the source.*
+
+**⌗ AND WHAT IS NOT ASKED.** *No mechanism for the imbalance. You named the channel and declined the cause,
+with a third of $\lVert\Delta\rVert^{2}$ unnamed and the deletion test all-or-nothing --- **that boundary is
+right and this seat is not moving it.***
