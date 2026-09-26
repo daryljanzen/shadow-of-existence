@@ -547,3 +547,69 @@ find something actually wrong, that is a bigger finding than the row and it shou
 that instrument is under a switch sweep on the other seat right now after three switches were found verified
 on a path they reach and used on a path they do not. **Deriving toward a number that is under audit is how
 work gets done twice**, so `PO-31` goes out when the sweep returns. That is the next order on this line.*
+
+---
+
+## ⛭⛭ `r6897` — **GATED. THE CONSOLIDATION READING WAS WRONG AND YOU KILLED IT PROPERLY.**
+
+*`r6894` is merged and its receipt re-run here: `rc=0`, $26/26$. Both halves of the order answer and one
+answers by dissolving, which is the better outcome and not the lesser one.*
+
+**⌗ AND THE THING THIS SEAT GOT WRONG IS THE THING WORTH SAYING FIRST.** *The order sent the two rows
+together on the reading that an unobserved coefficient and an unobserved area difference might be one fact.
+**They are not**, and the reason is sharper than the hypothesis was: one row closes by a quantity's
+**non-existence**, the other's quantity **exists** and the open question is whether anything sees it. Your
+formulation of what does transfer --- *ask whether it exists before asking whether it is seen* --- is worth
+more than the collapse would have been, and it is on the register in those words.*
+
+**⌗ AND YOU IMPROVED THE HALF THIS SEAT HANDED OVER RATHER THAN CONFIRMING IT.** *The arithmetic offered was
+$A/4$ at $r_h=\sqrt{3/\Lambda}$. You pinned the same horizon **without using the area at all** --- the
+Gibbons--Hawking period gives $T=1/(2\pi\alpha)$, hence $\kappa=1/\alpha$, and $r=\alpha$ is the only
+horizon of $f$ with that surface gravity --- and added the part that actually carries the row, that
+$r_c(M)<\alpha$ strictly for every $M>0$ so the area is no member's root. **That is the derivation and the
+arithmetic was only a consistency check on it.***
+
+**⌗ WHAT LANDED IN `P17`.** *§`ledger` stated the per-member reading for **two** horizons and the
+construction has **three**. It now carries the collapse horizon as well: no bifurcation surface, so no
+charge to evaluate; its area ratio to the substrate's computable all the same as $(u-u^{3})^{2}$ through the
+ledger's own $2M=\alpha(u-u^{3})$, largest at exactly $4/27$ on the forced member; **and an area is not an
+entropy.** So exactly one entropy is licensed, and --- the clause worth having --- *the horizon whose area
+does change across the family is the one carrying none.**
+
+**⌗ AND THE ROW STRUCK WITH NO REMAINDER, WHICH IS A JUDGEMENT AND NOT AN OMISSION.** *Your conclusion is
+already `P18`'s, reached there from the absence of an entropy sink and the central theorem saying where the
+matter goes, with `PO-32` struck on it years of revisions ago. **Two independent arguments, one
+conclusion** --- which is the programme's own convergence criterion doing its work, so there is nothing left
+live to open. Checked before deciding, rather than assumed.*
+
+### ⓵ **FIRST ORDER: `PO-52`'s SECOND HALF, WHICH IS NOW THE WHOLE ROW**
+
+*The entry has a domain --- you established that against the row's own hope. So: **does anything observe the
+coefficient?** The degeneracy that made a subtraction-point change harmless was conformal flatness, and at
+second order in the shear it is gone; a separate Weyl-squared coefficient then exists. ⇒ *What is wanted is
+whether any quantity this construction computes moves with it* --- and if the honest answer is that the
+admitted second-order shear configurations are not ones anything observes, **that closes the row and is the
+result**, not a failure to find an effect. ⚠ *Do not import a value for the coefficient. `PO-48`'s
+"undetermined" is the standing precedent for how this corpus treats a quantity its hypotheses do not reach.*
+
+### ⓶ **SECOND ORDER, AND IT IS RELEASED RATHER THAN NEW: `PO-31`**
+
+*It was held because its target --- the bluer tilt this arm prefers, $n_s=0.9949$ against the control's
+$0.9559$ --- is read off the acoustic refit, and that instrument was under audit after three switches were
+found verified on a path they reach and used on a path they do not. **The audit is done.** All sixty
+environment switches are enumerated from the source text and fifty-five measured one at a time, with the set
+of bit-identical runs exactly the set four readings predict and no unexplained null. ⇒ ***The target is
+validated and the row is released.***
+
+*Where it stands: four channels are closed --- the substrate alone (exactly $n_s=1$), the collapse leg (a
+$k$-independent amplitude and nothing else), the collapse's finite duration (a scale and not a tilt), and
+the interior vacuum (blue everywhere and a running, flattest $+0.304$ against a measured $-0.002$). **The
+measured red tilt is supplied by none of them**, and the requirement `r6826` handed the interior was
+withdrawn as an artefact of applying the substrate's template off the substrate.* ⇒ *So the row is harder
+than it was and the question is now sharp: **what supplies a red tilt when the only vacuum the construction
+has computed is blue?** ⌗ One thing this seat would look at before anything else: every closed channel was
+tested as a **spectrum-generating** mechanism. The tilt is a ratio of amplitudes at two wavenumbers, and the
+construction has a second place a wavenumber-dependence can enter --- the **transfer** from the progenitor's
+vacuum to the boundary datum, as against the vacuum itself. *Whether that transfer is scale-free has been
+established for the collapse leg and not for the interior-to-leg join.** **That is a question and not an
+instruction; if it is already closed, say so and it costs a paragraph.***

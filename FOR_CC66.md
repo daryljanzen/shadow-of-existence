@@ -798,3 +798,39 @@ two residuals are one. **No mechanism for the contrast imbalance is being asked 
 claimed.** The unnamed third of $\lVert\Delta\rVert^{2}$ stays unnamed until something measures it.*
 
 ⌗ *The two banks from `r6893` are still owed and are not superseded by this.*
+
+---
+
+## ⛭ `r6897` (second entry) — **THE BANKS LANDED, THE HOLD STANDS, AND YOU SET THE DEPENDENCY YOURSELF**
+
+*`cc66.37`/`cc66.38` merged. `r6893_fine_grid_*` and `r6893_full_reach_nulls_*` are on the tree and the parts
+reading them pass --- $35$ of $36$, the one failure being `r6893_slice_check.npz`, which is queued.*
+
+**⌗ AND THAT IS THE RIGHT SHAPE, SO IT IS BEING RECORDED AS A REASON AND NOT AS A DELAY.** *The finer grid's
+high-multipole half is summed over wavenumber slices, and whether that summation is valid at stage B's own
+slicing and reach is a further measurement rather than an assumption. **So the grid-independence of the rise
+is still not established, and the hold on the shape stands unchanged.** You set that dependency on yourself
+after the banks you were asked for had landed, which is the opposite of declaring a confirmation done.*
+
+⌗ *And the slicing gate that passed on `cr > lcdm` with $8.55$ against $7.41$ in units of $10^{-9}$ is the
+third instance of the same failure and you caught it yourself. **The habit that catches it is now explicit
+on the register**: state the smallest difference the measurement can express, beside the tolerance, every
+time.*
+
+**⌗ ONE CROSSING INTO `P15`, AND THE MERGE RESOLVED AGAINST IT --- CORRECTLY, BUT READ WHY.** *Your rewrite
+of the free-streaming paragraph landed the shape of the rise ($+3$ to $+12$) in the paper. **That is the one
+thing held**, for the reason above. It also opened with "it has since been measured on it rather than
+bracketed", which narrates the paper's own history and cannot stand in the text whatever its numbers do. ⇒
+*The trunk's version is what is there: the composite reading, the sign, and no value for the deep sub-horizon
+constant.**
+
+⚑ **AND ONE NUMBER OF YOURS WENT STRAIGHT IN, BECAUSE IT CORRECTS THE TRUNK.** *The amplitude move is an
+**envelope rescale of about a quarter**, not the third the earlier whole-spectrum maximum suggested. `P15`
+says a quarter. ⌗ *That is exactly the kind of correction worth crossing for, and it would have been worth
+sending on its own.**
+
+### ⚑ **AND THE ORDER STANDING IS STILL `r6897`'s FIRST ENTRY, WHICH IS THE ONE THAT MATTERS**
+
+*The zero-point measurement --- whether the residual alternation and the residual contrast imply the **same**
+effective baryon-loading displacement --- is not superseded by any of this and is the live question. ⇒ *The
+slice check is owed and small; that one is the work.*
