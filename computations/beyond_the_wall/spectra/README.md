@@ -153,3 +153,31 @@ than dropped.
 Launchers: `/tmp` scratch is not the record — every run in these banks is one of the two refit commands
 with at most one switch added, and the screen's own grid (`HIER=1 LSTEP=16 LMAXL=500`) is in the table
 above, so each is reproducible from the receipt's `OFFVAL` table line by line.
+
+---
+
+## `r6897_*` — the fields at the visibility peak, the no-op pair, and the control's own $\omega_b$ response
+
+*`r6897`'s order: **is the contrast excess and the alternation excess one number?** — measured, with no
+mechanism asked for or claimed. ⌗ Two of these three are not spectra: `r6897_fields.npz` holds FIELDS at
+last scattering, which is what the order's (a) and (b) are about, and it is banked here because this is
+the directory the receipts read.*
+
+| file | what is in it | why it is what it is |
+|---|---|---|
+| `r6897_fields.npz` | $k$, $\Theta_0$ (**undamped**), $\Psi$, $\Phi$ and $\theta_b$ at the visibility peak for four runs — both arms and the control at $\omega_b\pm8\%$ — with each run's $\eta_{\rm LS}$, FWHM, $a_{\rm LS}$, $R$, $\omega_b$ and $r_s$ | written by the new `ZPSAVE`, wired into `hier_run` — **the reporting path**. ⌗ *`PHISAVE` already saves fields and is one of the nine switches `r6893+cc66.37` measured as OFF that path, so using it would have measured the low-multipole construction and called it the reporting one.* ⚑ **Undamped on purpose**: the envelope multiplies the whole of $\Theta_0$, its offset included, so the displacement $-R\Psi$ could not be read off a damped monopole at all |
+| `r6897_noop.npz` | both arms at the screen grid with `ZPSAVE` **unset** | the edit adds a branch inside `hier_run`'s own batch loop, so the default path gains a test per batch — gated **bit-identical** against the banked screen base before any other number is read. *`cc66.36` is why this seat no longer says a change is nothing without running it* |
+| `r6897_wb_response_lcdm.npz` | the control at five $\omega_b$ ($\pm8\%$, $\pm4\%$, and its refit value), `LSTEP=8 LMAXL=2000`, each summed over eleven `KSLICE` pieces | (c) converts each residual into an effective $\Delta\omega_b$ through the instrument's **own** response rather than an analytic derivative. ⚑ *Five values and not two, because the contrast response **saturates** — its increments fall monotonically, so a straight line overstates what $\omega_b$ can deliver and the implied $+22.9\%$ is a lower bound* |
+
+⇒ ⚑⚑ **What they say.** Both arms' monopole offsets approach $-R\Psi$ **from below**, reaching $0.78$ and
+$0.76$ of it. Calibrated against a **known** $\Delta R$ — the estimator tracking $77\%$ of it, which is
+`r4558`'s rule applied to a *measurement* rather than to a knob — **the arm's offset falls short of what
+its own loading accounts for by an effective $\omega_b$ of $-2.9\%$**, the wrong sign for the loading
+reading. And the two residuals imply $+22.9\%$ (contrast) against $-1.4\%$ (alternation): **not one
+number.**
+
+⚑ **Every long run here is sliced on `KBATCH` boundaries**, which `r6895+cc66.38` measured as exact to
+$10^{-16}$ on both arms — so a container restart costs one slice and not a run. *That finding was made
+one revision ago while testing something else, and this is the first order it paid for.*
+
+Launchers: `../r6897_directions/`, with a README saying what each is for.

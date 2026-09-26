@@ -2497,3 +2497,133 @@ claim rather than the one that took it out — which is right for an order log, 
 the row as a result. **You held it pending the finer grid; the finer grid now says the same thing on two
 constructions, and whether that discharges the hold is yours and not mine.*** *No mechanism for the
 contrast imbalance; no claim that the rise is the Bashinsky–Seljak term.*
+
+---
+
+## ⛭⛭ `r6897` — **THE ZERO POINT IS NOT THE CHANNEL, AND THE TWO RESIDUALS ARE NOT ONE NUMBER**
+
+*`receipts/P15_CR_cosmology/P15_the_monopole_zero_point_is_not_the_channel_and_the_two_residuals_point_opposite_ways.py`
+— rc=0, six parts, **22 gates**. Four banks at `spectra/r6897_*`, launchers at
+`computations/beyond_the_wall/r6897_directions/`. **This one edits the instrument, so the no-op gate
+comes before any number.***
+
+⌗ **FIRST, ONE THING OFF THE REGISTER: the slice check you recorded as queued is not queued.**
+*`spectra/r6893_slice_check.npz` landed at `824b1dae`, after the head you merged. It is the measurement
+that says `KSLICE` pieces on `KBATCH` boundaries sum to $10^{-16}$ on both arms — so stage B's fine grid
+is verified and the dependency I set on myself is discharged. **And it has already paid for itself
+twice**: every long run in this order is sliced that way, so the restart that cost me eighty minutes
+yesterday now costs one slice.*
+
+### ⓵ WHAT THE INSTRUMENT GAINED, AND THE LINE YOU ASKED FOR
+
+**The header now carries the visibility peak, its redshift, its FWHM and $R$ there — on every path.**
+
+| | $\eta_{\rm LS}$ | $z_*$ | FWHM | $R$ | $1+R$ |
+|---|---|---|---|---|---|
+| control | $281.75$ | $1090.3$ | $\mathbf{38.04}$ Mpc | $0.61063$ | $1.61063$ |
+| arm | $485.99$ | $1087.9$ | $\mathbf{43.59}$ Mpc | $0.59969$ | $1.59969$ |
+
+*The arm's last-scattering surface is $1.146$ times as wide in conformal time. Side by side on the
+reporting path for the first time, which is what you suspected.*
+
+⌗ *And `ZPSAVE`, which saves $\Theta_0$, $\Psi$, $\Phi$ and $\theta_b$ there. **`PHISAVE` could not be
+used**: it is one of the nine switches `r6893+cc66.37` measured as OFF the reporting path, so it would
+have measured the low-multipole construction and called it the reporting one. It saves the **undamped**
+monopole, because the envelope multiplies the offset too. Default gated bit-identical on both arms.*
+
+### ⓶ ⚑⚑ (a)/(b) — **AND I CALIBRATED THE ESTIMATOR BEFORE READING ITS VERDICT**
+
+*Because `r4558`'s rule is about measurements as much as about knobs: **a number that has not been shown
+to move when the thing it measures moves is not a measurement.** So the control is re-run with
+$\omega_b$ displaced $\pm8$ per cent and the estimator is asked whether it tracks a **known** $\Delta
+R$. It tracks $77$ per cent of it — and that measured response, not the raw $-R$, is what converts an
+offset difference into an effective displacement.*
+
+**Both arms' offsets approach the tight-coupling equilibrium $-R\Psi$ FROM BELOW**, reaching $0.78$ of
+it on the control and $0.76$ on the arm. ⇒ *So the absolute form of your (b) answers **no** on both arms
+and by nearly the same amount — that is the approach to equilibrium, not a property of either arm.*
+
+⇒ ***AND THE ARM'S OFFSET FALLS SHORT OF WHAT ITS OWN LOADING ACCOUNTS FOR, BY AN EFFECTIVE $\omega_b$
+OF $-2.9$ PER CENT*** — on top of the $-2.0$ its fitted $\omega_b$ already is, same sign in every third
+of the wavenumber range. **Too much loading is what deepens troughs and raises alternation. This arm's
+monopole behaves as though it had too little, and its troughs are deeper anyway.**
+
+⌗ *On your own branching that is a **third** outcome: not "the construction supplies an $R$-like offset"
+and not "both arms sit on their own $(1+R)$". **It refutes the loading reading by SIGN rather than
+leaving it undetermined**, which I think is the more useful of the two branches you wrote.*
+
+### ⓷ ⚑⚑⚑ (c) — **THE SINGLE MOST INFORMATIVE NUMBER: THEY DIFFER BY A FACTOR OF SIXTEEN AND IN SIGN**
+
+*Both responses measured on the control, five values, both **positive** ($+7.97$ and $+1.85$ per unit
+$\omega_b$) — so more loading gives more of both and neither residual is converted through a response
+that is not there.*
+
+| residual | value | implied effective $\mathrm d\omega_b$ |
+|---|---|---|
+| **contrast** | $+0.04015$ | $\mathbf{+22.9\%}$ |
+| **alternation** | $-0.000569$ | $\mathbf{-1.40\%}$ |
+| **monopole offset** (a) | $+0.01413$ | $\mathbf{-2.94\%}$ |
+
+⇒ ***NOT ONE NUMBER.*** *The contrast asks for more loading; the alternation and the monopole offset ask
+for less. **Two independent measurements of the loading displacement agree, and it is the contrast that
+stands apart.***
+
+⇒ ⚑⚑ **AND THE $+22.9$ IS A LOWER BOUND, BECAUSE THE CONTRAST RESPONSE SATURATES.** *Over the whole
+$\pm8$ per cent range the contrast spans only $0.028$, and its increments fall monotonically —
+$+0.0119, +0.0087, +0.0054, +0.0020$ — so a straight line **overstates** what $\omega_b$ can deliver.*
+***A four per cent contrast excess is beyond what the baryon density reaches in this construction at any
+value, not merely at an implausible one.*** *Which is stronger than "the two disagree": the loading
+channel is closed, not merely unfavoured.*
+
+### ⓸ ⚠ **AND PART OF THAT IS A CORRECTION TO YOUR PREMISE, WHICH MIXED TWO REFERENCES**
+
+*You pair an alternation excess read against the **sky** ($P_1/P_2=2.264$ against $2.217$) with a
+contrast excess read against the **control** ($1.040$).*
+
+| | peaks | heights | $P_1/P_2$ |
+|---|---|---|---|
+| control | $220,537,814$ | $0.5339, 0.2437, 0.2406$ | $2.1912$ |
+| arm | $222,536,815$ | $0.4423, 0.2066, 0.2036$ | $\mathbf{2.1411}$ |
+
+⇒ **Against the control — the reference $\Delta$ is built on — the arm's $P_1/P_2$ is LOWER.** *The two
+were never pointing the same way; the appearance that they were is the two references. I would not have
+looked for this if the numbers had agreed, so the premise being checkable is what made it visible.*
+
+### ⓹ ⛭ **AND ONE POSITIVE LOCALISATION, WITH A SIGN PROBLEM I AM NOT RESOLVING**
+
+*You said that if the monopole is clean, the difference is in how the **dipole** is generated. The same
+bank carries $\theta_b$, so it is a measurement and not a further run.* **The arm's dipole-to-monopole
+amplitude ratio at the visibility peak is $+1.76$ per cent and GROWS with wavenumber** — $+0.46$,
+$+1.72$, $+2.79$ per cent in thirds of the range.
+
+⚠ *But the Doppler term **fills** troughs — `cc66.36` measured `DPSRC=0` taking the arm's own
+oscillation from $1.040$ to $1.828$ — so a larger dipole fraction makes troughs **shallower**, and this
+arm's is larger while its troughs are deeper.* ⇒ **So the dipole fraction works AGAINST the contrast
+excess rather than for it, which leaves a source larger than four per cent and partly cancelled.** *That
+is a statement about size, not a mechanism, and I am stopping there because it is where this order's
+measurements stop. **If you want the next question named: what raises the oscillation about its own
+envelope while the dipole fraction is working the other way.***
+
+### ⌗ TWO METHOD NOTES, BOTH PLACES THIS COULD HAVE GONE WRONG QUIETLY
+
+1. **The offset estimator had three biased predecessors and each is in the receipt with its bias.** A
+   midpoint of successive extrema carries half the amplitude change between them — it came out
+   alternating by a factor of three. The quarter-half-quarter combination of three extrema cancels a
+   **linear** amplitude variation and left $\pm15$ per cent of curvature. And a one-period fitting
+   window is **ill-conditioned**: the constant is nearly collinear with the $\mathrm dq$-weighted
+   oscillation terms. ⇒ *Four periods with a quadratic amplitude: scatter $0.027$ on an offset of
+   $-0.477$, and the verdict unchanged across five settings. **Your habit paid off here — I asked what
+   the smallest difference each estimator could express was, and three of four could not express this
+   one.***
+2. **The alternation statistic is not a second difference.** *That vanishes only on a **linear** trend,
+   and the envelope's decline is strongly curved, so a second-difference statistic comes out dominated
+   by the first triple and is mostly curvature. The trend and the alternation are **fitted together**,
+   and the sign is shown independent of the trend's degree.*
+
+⛔ **AND THE BOUND IS WHERE YOU PUT IT.** *No mechanism for the contrast imbalance — you said none is
+asked for and none is claimed. No claim that the dipole excess produces the contrast excess, its sign
+being wrong for it. No claim that the offset's shortfall against $-R$ is a defect of either arm: it is
+the same shortfall on both. **And the width story you withdrew before sending is not reinstated — I
+looked, and nothing in these numbers attacks your reasoning.***
+
+⌗ *PR **#87**, new, because #84 merged while this was computing. Subscribed.*

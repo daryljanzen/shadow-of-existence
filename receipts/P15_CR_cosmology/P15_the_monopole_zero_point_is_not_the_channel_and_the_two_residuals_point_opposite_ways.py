@@ -71,11 +71,18 @@ WHAT IS CLAIMED.
      unaccounted part is an effective $\\Delta\\omega_b$ of about $-2.5$ per cent -- a further DEFICIT
      on top of the $2.0$ per cent the arm's $\\omega_b$ already is.  *Too much loading is what would
      deepen the troughs; the arm's monopole behaves as though it had too little.*
- (6) ⚑⚑ (c) ** AND THE TWO RESIDUALS DO NOT POINT THE SAME WAY. **  Against the control -- which is the
-     reference $\\Delta$ is built on -- the arm's CONTRAST is $4.0$ per cent higher and its
-     ALTERNATION is about $2$ per cent LOWER.  ⇒ *The effective $\\Delta\\omega_b$ the contrast implies
-     and the one the alternation implies have OPPOSITE SIGNS.  They are not one number, and one of the
-     two residuals is not there.*
+ (6) ⚑⚑ (c) ** AND THE TWO RESIDUALS DO NOT POINT THE SAME WAY -- THEY DIFFER BY A FACTOR OF SIXTEEN
+     AND IN SIGN. **  Against the control -- which is the reference $\\Delta$ is built on -- the arm's
+     CONTRAST is $4.0$ per cent higher and its ALTERNATION about $2$ per cent LOWER.  Converted through
+     the control's own measured responses, the contrast asks for an effective $\\omega_b$ of $+22.9$
+     per cent and the alternation for $-1.4$.  ⇒ *They are not one number; the search splits.*
+ (6b) ⚑⚑ ** AND THE $+22.9$ IS A LOWER BOUND, BECAUSE THE CONTRAST RESPONSE SATURATES. **  Over the
+     whole $\pm8$ per cent range the contrast spans only $0.028$ and its increments FALL monotonically,
+     so a straight line overstates what $\\omega_b$ can deliver.  *** A four per cent contrast excess
+     is beyond what the baryon density reaches in this construction at any value, not merely at an
+     implausible one. ***  ⌗ *And the monopole offset of (5) agrees with the ALTERNATION, at $-2.9$ per
+     cent against $-1.4$: two independent measurements of the loading displacement agree, and it is
+     the contrast that stands apart.*
  (7) ⚠ ** AND THAT IS PARTLY A CORRECTION TO THE ORDER'S PREMISE, WHICH MIXED TWO REFERENCES. **
      `r6897` reads the alternation excess off $P_1/P_2 = 2.264$ against the SKY's $2.217$, and the
      contrast ratio $1.040$ against the CONTROL.  *Against the control, on the banked spectra, the
@@ -479,6 +486,17 @@ check("⚑⚑⚑ ** AND THE ANSWER TO r6897's SINGLE MOST INFORMATIVE NUMBER IS 
       EFF_C > 0 > EFF_A,
       f"contrast {EFF_C/W_L*100:+.2f}% against alternation {EFF_A/W_L*100:+.2f}% of the control's "
       f"omega_b -- opposite signs")
+_inc = np.diff(CR_)
+check("⚑⚑ ** AND THE +23 PER CENT IS A LOWER BOUND, BECAUSE THE CONTRAST RESPONSE SATURATES. **  Over "
+      "the whole 16 per cent range the contrast spans only 0.028, and its successive increments FALL "
+      "monotonically -- 0.0119, 0.0087, 0.0054, 0.0020 -- so a straight line OVERSTATES what omega_b "
+      "can deliver above the control.  *** A four per cent contrast excess is therefore beyond what "
+      "the baryon density reaches in this construction at any value, not merely at an implausible "
+      "one. ***",
+      all(_inc[i] > _inc[i + 1] for i in range(len(_inc) - 1))
+      and (CR_.max() - CR_.min()) < (C_C - 1.0),
+      f"increments {', '.join(f'{x:+.4f}' for x in _inc)}; the whole response spans "
+      f"{CR_.max()-CR_.min():.4f} against a contrast excess of {C_C-1:.4f}")
 check("⚑ ...and the third measurement agrees with the second and not with the first: the MONOPOLE "
       "OFFSET of Part 3 also asks for LESS loading, at an effective d(omega_b) of about -3 per cent, "
       "which is the same sign and nearly the same size as the alternation's.  ** Two independent "
