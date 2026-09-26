@@ -121,7 +121,7 @@ not results in themselves, and every one of them is reproducible from the comman
 
 ---
 
-## `r6893_*` — the switch sweep, the fine grid, and the full-reach nulls
+## `r6893_*` — the switch sweep, the finer grids, the full-reach nulls, and the slicing check
 
 *`r6891`'s order, two parts. The **screen** is the measured half of the switch table: every
 environment switch the instrument reads, set away from the value it holds in the reporting
@@ -132,7 +132,8 @@ on a finer $\ell$ grid". The **full-reach nulls** are the half reduced reach can
 |---|---|---|
 | `r6893_switch_screen_{lcdm,cr}.npz` | **63 / 62 spectra**, keyed `ls__<tag>` / `Dl__<tag>` / `lA__<tag>` / `rs__<tag>` / `DM__<tag>` / `rc__<tag>`, plus a `failed` list. `HIER=1 LSTEP=16 LMAXL=500` | ⚑ **connectivity is path-dependent and NOT resolution-dependent** — a switch read on this path is read on it at any $\ell_{\max}$. One run is $22$–$52$ s instead of $\sim20$ min, which is what makes a sweep of every switch affordable at all |
 | `r6893_full_reach_nulls_lcdm.npz` | the nine OFF-PATH switches and the `LRSFROM` pair, re-run at `LSTEP=32 LMAXL=2000` | ⚠ *and this is the half the screen cannot carry: `DAMPX` and `RD` act on the **damping tail**, which $\ell\le500$ barely sees, so every switch the screen calls inert is re-run at the reported reach before the table calls it inert* |
-| `r6893_fine_grid_{lcdm,cr}.npz` | the same four spectra as `cc66_r185_verify_*` and `r6889_nufs0_*`, at `LSTEP=2 LMAXL=2000` — four times the multipole sampling | ⚑ *`cc66.36`'s shift was one bin step because the locator was the bin. Locating sub-bin on the same grid is not enough to say the answer is not the grid's: **these are the runs that say it, and the band-by-band locator reproduces the `LSTEP=8` answer to better than half a multipole*** |
+| `r6893_fine_grid_{lcdm,cr}.npz` | the same four spectra as `cc66_r185_verify_*` and `r6889_nufs0_*`, on a finer $\ell$ grid **two ways**: **A** whole at `LSTEP=2 LMAXL=900` (four times the sampling, first three acoustic bands) and **B** at `LSTEP=4 LMAXL=2000` (twice the sampling, all five bands) **summed over `KSLICE` pieces of 250 modes** — plus the `slicesum` pair that tests the summing | ⚑ *`cc66.36`'s shift was one bin step because the locator was the bin, and locating sub-bin on the same grid is not enough to say the answer is not the grid's: **these are the runs that say it, and the per-extremum locator reproduces the `LSTEP=8` answer to better than a fifth of a multipole***. ⚠ **AND THE TWO CONSTRUCTIONS EXIST BECAUSE A CONTAINER RESTART DESTROYED THE FIRST ATTEMPT** — one run of `LSTEP=2 LMAXL=2000` per spectrum, killed at eighty minutes of a hundred, because *this instrument writes its `npz` only at the end and a run longer than its node's own lifetime is not a long run; it is a run that does not finish.* ⌗ *A's `LMAXL` cut takes $k_{\max}$ with it, so A is the **phase** check and the envelope comparison is B's* |
+| `r6893_slice_check.npz` | one whole run against its own eleven (six on the arm) 250-mode `KSLICE` pieces, at `LSTEP=64 LMAXL=2000` | ⚠ *`r6794` built `KSLICE` for exactly the restart problem above, and its caveat is that slices add exactly only on a **uniform** $k$ grid, because `_project` takes $dk=$ `np.gradient(kb)` from the batch it is handed.* ⇒ **So the summing is tested at stage B's own slicing and its own reach, with the $\ell$ sampling made coarse so the whole run is affordable — the projection is what `LSTEP` costs and the $k$-sum is what is under test** |
 
 ⇒ ⚑ **The screen's result is an ACCOUNTING and not a negative.** Sixty switches read, fifty-one with a
 live use site on the reporting path, fifty-five measured on both arms — and the set of runs that came

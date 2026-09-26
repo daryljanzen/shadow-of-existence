@@ -1155,13 +1155,20 @@ check("the two finer grids are what they say they are: A at l-step 2 (four times
       f"{FLOC[('fineB','lcdm')]['step']:.0f} to l = 1996, against the banked step {_L['step']:.0f}")
 
 # ---- the comparison that answers "is the answer the grid's?" -------------------------------------
+# ** matched by POSITION and not by index. **  A finer grid can resolve an extremum the coarse one
+# missed, and pairing two lists by index would then compare different peaks and fail loudly for the
+# wrong reason.  Each banked extremum is matched to the fine-grid extremum within 20 multipoles of it.
 _pairs = []
 for arm in ('lcdm', 'cr'):
     base = _L if arm == 'lcdm' else _C
     for stage in ('fineA', 'fineB'):
         f = FLOC[(stage, arm)]
-        n = min(len(f['dl']), len(base['dl']))
-        _pairs.append((stage, arm, float(np.max(np.abs(f['dl'][:n] - base['dl'][:n]))), n))
+        d = []
+        for lb, db in zip(base['l'], base['dl']):
+            j = np.argmin(np.abs(f['l'] - lb))
+            if abs(f['l'][j] - lb) <= 20.0:
+                d.append(abs(f['dl'][j] - db))
+        _pairs.append((stage, arm, float(max(d)) if d else 99.0, len(d)))
 for stage, arm, d, n in _pairs:
     print(f"    {stage} {arm:5s}: largest per-extremum disagreement with the banked l-step 8 locator "
           f"over the first {n} extrema = {d:.3f} multipoles")
@@ -1171,20 +1178,33 @@ check("⚑⚑ ** AND THE ANSWER IS NOT THE GRID'S. **  On both arms and on BOTH 
       "*The shift was measured, not bracketed.*",
       all(d < 0.5 for _, _, d, _ in _pairs),
       "; ".join(f"{s} {a} {d:.3f}" for s, a, d, _ in _pairs))
-check("...and every conclusion of Part 4 survives on the finer grids: the shift still rises "
-      "monotonically band by band, the two arms still agree to a fifth of a multipole, and the drag is "
-      "still an envelope rescale with the contrast within two per cent of unity",
+check("...and the PHASE conclusions survive on both of them: the shift still rises band by band, and "
+      "the two arms still agree to a fifth of a multipole",
       all(all(x[1] < y[1] for x, y in zip(FLOC[(st, ar)]['bands'], FLOC[(st, ar)]['bands'][1:]))
           for st in ('fineA', 'fineB') for ar in ('lcdm', 'cr'))
       and all(abs(x[1] - y[1]) < 0.25 for st in ('fineA', 'fineB')
-              for x, y in zip(FLOC[(st, 'lcdm')]['bands'], FLOC[(st, 'cr')]['bands']))
-      and all(abs(FLOC[(st, 'cr')]['env'] - FLOC[(st, 'lcdm')]['env']) < 3e-3
-              and abs(FLOC[(st, 'lcdm')]['con'] - 1.0) < 0.02 for st in ('fineA', 'fineB')),
+              for x, y in zip(FLOC[(st, 'lcdm')]['bands'], FLOC[(st, 'cr')]['bands'])),
       "; ".join(f"{st}: {FLOC[(st,'lcdm')]['bands'][0][1]:+.2f} -> "
-                f"{FLOC[(st,'lcdm')]['bands'][-1][1]:+.2f} (lcdm), envelope "
-                f"{FLOC[(st,'lcdm')]['env']:.4f}/{FLOC[(st,'cr')]['env']:.4f}, contrast "
-                f"{FLOC[(st,'lcdm')]['con']:.4f}/{FLOC[(st,'cr')]['con']:.4f}"
+                f"{FLOC[(st,'lcdm')]['bands'][-1][1]:+.2f} (lcdm), largest arm difference "
+                f"{max(abs(x[1]-y[1]) for x, y in zip(FLOC[(st,'lcdm')]['bands'], FLOC[(st,'cr')]['bands'])):.3f}"
                 for st in ('fineA', 'fineB')))
+check("⚠ ** AND THE DRAG'S ARM-AGREEMENT IS TAKEN FROM THE FULL-REACH GRID AND NOT FROM BOTH, WHICH IS "
+      "A LIMIT OF CONSTRUCTION A AND IS STATED RATHER THAN AVERAGED OVER. **  A's `LMAXL=900` cuts "
+      "k_max with it, and the envelope ratio is the quantity that cut moves: on A the two arms' "
+      "envelope ratios differ by ten times what they differ by at full reach.  *So A is the PHASE "
+      "check -- which is what the finer grid exists for -- and the ENVELOPE and CONTRAST comparison is "
+      "B's, at the reach every reported number uses.*",
+      abs(FLOC[('fineB', 'cr')]['env'] - FLOC[('fineB', 'lcdm')]['env']) < 3e-3
+      and abs(FLOC[('fineB', 'lcdm')]['con'] - 1.0) < 0.02
+      and abs(FLOC[('fineA', 'cr')]['env'] - FLOC[('fineA', 'lcdm')]['env'])
+      > abs(FLOC[('fineB', 'cr')]['env'] - FLOC[('fineB', 'lcdm')]['env']),
+      f"B: envelope {FLOC[('fineB','lcdm')]['env']:.4f}/{FLOC[('fineB','cr')]['env']:.4f} "
+      f"(difference {FLOC[('fineB','cr')]['env']-FLOC[('fineB','lcdm')]['env']:+.4f}), contrast "
+      f"{FLOC[('fineB','lcdm')]['con']:.4f}/{FLOC[('fineB','cr')]['con']:.4f};   "
+      f"A, truncated: envelope {FLOC[('fineA','lcdm')]['env']:.4f}/{FLOC[('fineA','cr')]['env']:.4f} "
+      f"(difference {FLOC[('fineA','cr')]['env']-FLOC[('fineA','lcdm')]['env']:+.4f})")
+
+
 
 # ---------------------------------------------------------------------------------------------------
 # PART 3c -- AND THE NULLS AT FULL REACH, WHICH IS THE HALF REDUCED REACH CANNOT CARRY.
