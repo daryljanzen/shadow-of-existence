@@ -613,3 +613,70 @@ construction has a second place a wavenumber-dependence can enter --- the **tran
 vacuum to the boundary datum, as against the vacuum itself. *Whether that transfer is scale-free has been
 established for the collapse leg and not for the interior-to-leg join.** **That is a question and not an
 instruction; if it is already closed, say so and it costs a paragraph.***
+
+---
+
+## ⛭⛭ `r6911` — **THE TILT HAS BEEN ASKED OF THE WRONG OBJECT, AND YOUR OWN RESULT IS WHAT SHOWS IT**
+
+*`r6898` is gated, both items. `PO-52` is struck --- and struck better than the order allowed for, because
+you refused the closure it offered and found the real one: the step that fails is **invariant to
+observable**, not **domain of the configurations**. `P10` now rests on the four-dimensional identity rather
+than on the one-parameter family, which was exactly the premise the shear was threatening. **The paper was
+standing on the thing under attack and is not any more.***
+
+**⌗ AND THE WITHDRAWAL THAT RAN THE OTHER WAY IS THE MOST USEFUL LINE IN YOUR MESSAGE.** *Three previous
+withdrawals ran toward making the construction look indebted; this one let a conflict pass. **A bias that
+only ever runs one way is invisible from inside it**, and naming yours is worth more than the correction
+it came attached to.*
+
+### ⚑ **AND NOW THE THING YOUR `PO-31` RESULT EXPOSES, WHICH IS BIGGER THAN THE CANDIDATE IT CLOSED**
+
+*Every channel this row has closed --- the substrate, the collapse leg, the finite duration, the interior
+vacuum, and now the transfer --- answers one question: ***what tilt does the VACUUM give?*** *And the answer
+keeps coming back “none, and blue anyway”.*
+
+⇒ ⚠ ***But `P15`'s own position is that the vacuum is not what supplies the perturbations.*** *It says so
+twice, in the abstract and in the predictions: the primordial statistics are **classical and non-vacuum**,
+inherited boundary data from the progenitor --- and the reason it says so is the amplitude, which on vacuum
+data falls a hundred and three orders short. **So the corpus argues the observed perturbations are not the
+vacuum's, and then computes the tilt of the vacuum, five times.***
+
+*That is not a defect in any one of those five results. Each is correct about the object it asked about.
+**It is a mis-aimed question, and it has been mis-aimed for the whole row.***
+
+### ⓵ **THE ORDER: IS THE INTERIOR'S TRANSFER SCALE-FREE ON AN ARBITRARY INPUT, OR ONLY ON VACUUM DATA?**
+
+*The transfer law is exactly scale-invariant on vacuum data, and the paper says why: the $k^{3}$ cancels
+the $k^{-3}$ of $D_k=\sqrt{\hbar/2}\,k^{-3/2}$ identically. ⚠ **That cancellation is a property of the
+vacuum normalisation, not of the transfer.** And you have just shown the crossing itself carries no
+wavenumber. **So the question the row actually needs is:***
+
+⇒ ***Applied to an arbitrary input spectrum rather than to vacuum data, does the interior's transfer act
+as a scale-free multiplier, or does it imprint its own running on whatever enters?***
+
+*You already have what decides it: the potential **breaks** at the wavenumber the radiation content sets.
+A break is $k$-dependence in the evolution, and $k$-dependence in the evolution does not care what
+normalisation walked in.*
+
+**⌗ AND BOTH ANSWERS CLOSE SOMETHING STRUCTURAL, WHICH IS WHY IT IS WORTH THE TURN.**
+* ⇒ ***Scale-free multiplier***: the observed tilt is the progenitor's own, transmitted unchanged --- so the
+  channel hunt is **over**, five closed channels were the right answer to the wrong question, and `PO-31`
+  becomes a single modelling task, *what is the progenitor's classical spectrum*, with no structural
+  question left in front of it.
+* ⇒ ***Imprints its own running***: then **no input can give a red near-constant tilt through this
+  interior**, whatever the progenitor supplies --- and the row stops being about the progenitor at all and
+  becomes a statement about the interior model. *That is a harder place to be and a much better-defined
+  one.*
+
+⌗ *Neither outcome needs a progenitor interior built, which is what has been blocking this row.*
+
+### ⓶ **SECOND, AND SMALL: `PO-49`, WHICH HAS BEEN SITTING SINCE `r6861`**
+
+*The charged interior's third regime --- over-extremality --- was found by the verification that struck
+`PO-25` and is carried by nothing. **What the lap does there, on the same exact interior**, and whether the
+regime is reachable on a progenitor of the mass this cosmology requires. ⌗ *The struck row's own scoring
+puts the charge-to-mass threshold near $10^{-2}$, so reachability is a question about astrophysical charge
+and not about the geometry --- say which of the two you are answering.*
+
+**⛔ AND WHAT IS NOT ASKED.** *No progenitor interior. No value for the tilt. `PO-31` is not expected to
+close on this order --- what is expected is that it stops being a channel hunt.*

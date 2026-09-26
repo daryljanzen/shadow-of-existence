@@ -834,3 +834,64 @@ sending on its own.**
 *The zero-point measurement --- whether the residual alternation and the residual contrast imply the **same**
 effective baryon-loading displacement --- is not superseded by any of this and is the live question. ⇒ *The
 slice check is owed and small; that one is the work.*
+
+---
+
+## ⛭⛭ `r6911` — **WHERE IS THE CONTRAST MADE: IN THE SOURCE, OR IN THE PROJECTION?**
+
+*`cc66.39` is gated. The negative is clean and the premise correction is taken --- I read the alternation
+against the sky and the contrast against the control and called them aligned, and against the control the
+arm's $P_1/P_2$ is **lower**. That was mine and it was the whole basis of the hypothesis.*
+
+**⌗ AND THE SATURATION IS WORTH MORE THAN THE REFUTATION.** *A response that spans $0.028$ across the whole
+range with falling increments does not say “not at the fitted value” --- it says **not at any value**.
+That is a bound, and bounds are what close searches.*
+
+### ⚑ **WHAT THE STATE NOW IS, AND WHY IT IS STRANGE**
+
+*Four channels that would each **shallow** the troughs are all larger on this arm: the monopole's offset
+short of its own loading; the dipole-to-monopole ratio two per cent high and rising with wavenumber, where
+the Doppler term fills troughs; the visibility wider at $43.6$ against $38.0$~Mpc, so more acoustic phase is
+averaged over; and the driving grip weaker, which makes less oscillation.* ⇒ ***Four for four is the thing
+to explain.*** *Either something upstream is large enough to overcome all of them --- in which case the
+effect is much bigger than four per cent and we have been hunting something too small --- **or the statistic
+is not measuring where we think it is measured**.*
+
+### ⓵ **THE ORDER: COMPUTE THE SAME CONTRAST STATISTIC AT TWO POINTS IN THE CHAIN**
+
+*Do not add a knob. **Take the statistic you already have and apply it before the projection as well as
+after.***
+
+**(a)** *In $k$-space, at last scattering, form the arm-and-control contrast of the **source** --- the same
+envelope split, the same peak-to-trough measure, on the projected-onto-the-sky-nothing version: the
+monopole-plus-Doppler combination as a function of wavenumber. **Ratio arm to control.***
+
+**(b)** *The $\ell$-space ratio is $1.040$. ⇒ **Compare.***
+
+⇒ ***If the source ratio is also about $1.04$, the excess is generated in the dynamics*** and the four
+channels above are downstream modifiers that fail to undo it --- which makes the generating effect larger
+than four per cent and tells us to look at what sets the oscillation amplitude relative to its own smooth
+part, not at what fills troughs.
+
+⇒ ***If the source ratio is about $1.00$ and the projection makes the difference, the excess is
+manufactured between $k$ and $\ell$*** --- and that is live rather than exotic, because **the two arms'
+distances differ by six per cent** ($13005$ against $13865$~Mpc) while their acoustic angles agree, so the
+same $\ell$ samples a different wavenumber on each arm and the Bessel kernel has a different width in $k$.
+*The cancellation that keeps $\ell_A$ equal is a cancellation in the ratio; it is not automatically a
+cancellation in the projection of an oscillating function.* ⚠ **Nobody has checked that, and it is the
+first place I would look given four-for-four.**
+
+**⌗ AND THE THIRD OUTCOME, NAMED SO IT IS NOT READ AS FAILURE.** *If the two ratios differ but neither is
+$1.00$ nor $1.04$, the excess is split between source and projection, and the split itself is the
+measurement --- that is a result and not a muddle.*
+
+### ⌗ **ONE GUARD, FROM THIS WEEK'S OWN LESSONS**
+
+⚠ *The envelope split must be **defined identically** on the two arms and at the two stages, and the
+smallest difference it can express must be stated beside whatever tolerance gates it. **Three of the last
+five findings on this line were resolution or reference artefacts** --- a gate on integers that could only
+differ by a whole bin, a comparison two equal numbers satisfied, and a statistic read against two different
+references. *A contrast statistic computed two ways is exactly the shape that fails that way.**
+
+**⛔ AND THE BOUND HAS NOT MOVED.** *No mechanism is being asked for. This locates where the difference is
+made, and nothing here asks what makes it.*

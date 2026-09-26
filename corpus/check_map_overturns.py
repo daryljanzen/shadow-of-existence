@@ -45,9 +45,16 @@ def main():
         if v in victims:
             continue
         victims.add(v)
-        i = t.find(f'### Revision {v}')
-        if i < 0:
+        # ** r6911: THE LOOKUP WAS A PREFIX MATCH AND THE LOG IS NEWEST-FIRST, so a later
+        #   revision whose digits BEGIN with an older one's shadowed it -- `### Revision r6911`
+        #   was found when the target was `r691`, and the verdict was read off the wrong entry.
+        #   *** It reported the newest entry as an unmarked retraction of something it had never
+        #   heard of, and it will recur for every r69xx against r69x. ***  The boundary is the fix:
+        #   an entry header ends at a non-digit.
+        _hit = re.search(r'^### Revision ' + re.escape(v) + r'(?!\d)', t, re.M)
+        if not _hit:
             continue
+        i = _hit.start()
         if not SELFMARK.search(t[i:i+700]):
             bad.append((v, m.group(1).upper()))
 
