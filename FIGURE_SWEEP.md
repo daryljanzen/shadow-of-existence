@@ -1,7 +1,7 @@
 ---
 name: figure-sweep
 kind: STATE
-current: r2517+c54.201
+current: r6865
 job: The figure programme's state — every figure against what it must carry.
 sources: [cowork]
 ---
@@ -9,28 +9,15 @@ sources: [cowork]
 > **⌗ THE FIGURE PROGRAMME'S STATE — every figure against what it must carry.** *Not a spent sweep: it
 > is where the figures are held to their job.*
 
-> **⌗ CHECKED AGAINST c54.163→c54.185 AND DECLARED CURRENT r2449.** *The span's substantive content is **the derived
-> lensing and the acoustic front** (c54.181–184), **a lint rebuild** (c54.180), **bibitem repairs** (c54.185), and
-> the fork's application of routed items 1–9. This line's own r2417–r2448 added `ARC 16`/`ARC 17`, the `L-150` and
-> `L-213` closures, six outside readers' findings, and two lints.*
-> ⇒ ***None of it bears on the figure inventory and each figure's build state.*** *The question asked was not "what moved in the file" but* ***"did anything the
-> span established or withdrew bear on what this file says"*** *— and the answer here is no.*
-> ⚠ *Stated rather than assumed: **the fourteen documents swept beside this one all turned out to hold real missed
-> landings**, so a declaration of no-effect is a claim and is made as one.*
+# THE FIGURE SWEEP — `H·1` / `L-152`
 
+> **⌗ THIS BLOCK IS GENERATED.** *Regenerate with `python3 computations/frontier_audit/L152w_the_figure_sweep.py`; the inventory and the signal are measured from the
+> papers as they stand, so the file is current when the script has been run against them.*
+>
+> ⌗ *The item reserves the figures themselves —* **"new conceptual figures are unassigned to call/supply, not
+> gate-generated"** *— so the deliverable is the pass and a ranked candidate list, and a node answering `H·1` by
+> drawing eight figures would be violating the item it was answering. That restraint is why the document is short.*
 
-# THE FIGURE SWEEP — `H·1` / `L-152`, run at r2376+c54.107
-
-> **⌗ RE-READ AGAINST c54.163 AND DECLARED CURRENT r2396.** *None of the span's three results bears on a figure
-> pass.* ⌗ *Its own restraint still governs and is the reason it stays short:* **"new conceptual figures are
-> unassigned, not gate-generated"** *— so a node answering `H·1` by drawing eight figures would be
-> violating the item it was answering.*
-
-
-> **⌗ DATED r2385 — `c54.107`, which is when it was run**, *and it is the freshest of this group.* ⌗ *It
-> reserves the figures themselves — **"New conceptual figures are unassigned to call/supply, not gate-generated"** —
-> so it is a pass and a ranked candidate list, and* ***a node that answered `H·1` by drawing eight figures would
-> be violating the item it was answering.*** *That restraint is why the document is short and why it is done.*
 
 *The deliverable `H·1` asks for, and the whole of what it may deliver from this side.* The item
 reserves the figures themselves: **"New conceptual figures are unassigned to call/supply, not
@@ -47,8 +34,7 @@ MAKE, AND THE ITEM SAYS SO IN ITS OWN TEXT.
 
 `H·1`: *"a systematic pass over all fourteen papers for where a NEW figure would earn its place --
 for completeness, for visualisability, and (the non-cosmetic reason) because a figure can surface
-structure the prose alone hides."*  And, in the same item: ** *"New conceptual figures are unassigned to
-call/supply, not gate-generated (the r548 discipline)."* **
+structure the prose alone hides."*  And, in the same item: ** *"New conceptual figures are unassigned, not gate-generated (the r548 discipline)."* **
 
 ** SO THE DELIVERABLE IS THE PASS AND A RANKED CANDIDATE LIST WITH THE REASON EACH IS NON-COSMETIC --
 not figures.  A node that answered this item by drawing things would be violating the item. **
@@ -63,25 +49,45 @@ not figures.  A node that answered this item by drawing things would be violatin
 PART 1 — THE INVENTORY
 ==============================================================================
                        paper  figures   kchars   chars per figure
-              groupoid_paper        0      123                 --
-            janzen_circle_v3        0      105                 --
-         shadow_of_existence        0       85                 --
-              canonical_time        0       67                 --
-            slicing_operator        0       62                 --
+                CR_synthesis        0      233                 --
+              groupoid_paper        0      125                 --
+            janzen_circle_v3        0       96                 --
+              canonical_time        0       92                 --
+         shadow_of_existence        0       89                 --
+            slicing_operator        0       74                 --
                  range_paper        0       57                 --
-              dynamics_paper        0       47                 --
-             algebroid_paper        0       44                 --
-             modern_parallax        0       40                 --
-         matter_sector_paper        1      113               113k
-              boundary_paper        2      103                51k
-        geometric_core_paper        3      124                41k
-             BH_causality_v2        3       76                25k
-          cosmogenesis_paper        3       54                18k
-                CR_framework        4      298                74k
-                CR_cosmology        5      146                29k
-        SdS-slicing-curve_v2       11      217                19k
+              dynamics_paper        0       54                 --
+             algebroid_paper        0       48                 --
+             modern_parallax        0       42                 --
+     appendix_ledgers_corpus        0        7                 --
+         appendix_ledgers_P3        0        3                 --
+        appendix_ledgers_P17        0        3                 --
+        appendix_ledgers_SYN        0        3                 --
+         appendix_ledgers_P5        0        2                 --
+        appendix_ledgers_P14        0        2                 --
+        appendix_ledgers_P15        0        2                 --
+         appendix_ledgers_P7        0        2                 --
+         appendix_ledgers_P4        0        1                 --
+         appendix_ledgers_P2        0        1                 --
+        appendix_ledgers_P10        0        1                 --
+        appendix_ledgers_P16        0        1                 --
+         appendix_ledgers_P8        0        1                 --
+         appendix_ledgers_P1        0        1                 --
+        appendix_ledgers_P11        0        1                 --
+        appendix_ledgers_P13        0        1                 --
+        appendix_ledgers_P12        0        1                 --
+         appendix_ledgers_P6        0        1                 --
+         appendix_ledgers_P9        0        1                 --
+         matter_sector_paper        1      175               175k
+              boundary_paper        2      112                56k
+        geometric_core_paper        3      148                49k
+          cosmogenesis_paper        3       89                29k
+             BH_causality_v2        3       86                28k
+                CR_framework        4      314                78k
+                CR_cosmology        5      232                46k
+        SdS-slicing-curve_v2       11      224                20k
 
-  ** 9 of 17 papers carry NO figure at all: algebroid_paper, canonical_time, dynamics_paper, groupoid_paper, janzen_circle_v3, modern_parallax, range_paper, shadow_of_existence, slicing_operator **
+  ** 29 of 37 papers carry NO figure at all: CR_synthesis, algebroid_paper, appendix_ledgers_P1, appendix_ledgers_P10, appendix_ledgers_P11, appendix_ledgers_P12, appendix_ledgers_P13, appendix_ledgers_P14, appendix_ledgers_P15, appendix_ledgers_P16, appendix_ledgers_P17, appendix_ledgers_P2, appendix_ledgers_P3, appendix_ledgers_P4, appendix_ledgers_P5, appendix_ledgers_P6, appendix_ledgers_P7, appendix_ledgers_P8, appendix_ledgers_P9, appendix_ledgers_SYN, appendix_ledgers_corpus, canonical_time, dynamics_paper, groupoid_paper, janzen_circle_v3, modern_parallax, range_paper, shadow_of_existence, slicing_operator **
 
   ⌗ ** THE INVENTORY IS NOT ITSELF AN ARGUMENT.  A paper with no figure may not need one -- a
      classification result or an algebraic derivation often reads better without. **  *What the
@@ -92,23 +98,43 @@ PART 2 — THE SIGNAL: WHERE PROSE IS DOING A FIGURE'S JOB
 ==============================================================================
   density per 1000 characters (a paper's own prose, comments and bibliography removed)
                        paper  figs   config  traject  deixis     sum
-          cosmogenesis_paper     3     0.02     1.16    0.11    1.29
-            slicing_operator     0     0.08     0.87    0.11    1.06
-             BH_causality_v2     3     0.05     0.90    0.07    1.02
-                CR_framework     4     0.09     0.89    0.02    1.00
-        SdS-slicing-curve_v2    11     0.37     0.43    0.06    0.86
-         matter_sector_paper     1     0.18     0.45    0.04    0.67
-             modern_parallax     0     0.00     0.42    0.17    0.59
-             algebroid_paper     0     0.11     0.36    0.05    0.52
-            janzen_circle_v3     0     0.04     0.44    0.03    0.50
-                CR_cosmology     5     0.01     0.43    0.05    0.48
-              canonical_time     0     0.01     0.42    0.04    0.48
-        geometric_core_paper     3     0.21     0.16    0.08    0.45
+          cosmogenesis_paper     3     0.01     1.09    0.08    1.18
+            slicing_operator     0     0.11     0.87    0.11    1.09
+             BH_causality_v2     3     0.05     0.89    0.06    0.99
+                CR_framework     4     0.08     0.82    0.02    0.93
+        SdS-slicing-curve_v2    11     0.37     0.44    0.06    0.86
+         matter_sector_paper     1     0.16     0.43    0.03    0.61
+             algebroid_paper     0     0.15     0.35    0.04    0.54
+                CR_synthesis     0     0.05     0.42    0.04    0.51
+        geometric_core_paper     3     0.18     0.22    0.07    0.47
+             modern_parallax     0     0.00     0.31    0.14    0.45
+            janzen_circle_v3     0     0.02     0.37    0.03    0.43
               groupoid_paper     0     0.08     0.31    0.01    0.40
-              dynamics_paper     0     0.00     0.32    0.06    0.38
-                 range_paper     0     0.00     0.31    0.03    0.35
-              boundary_paper     2     0.14     0.12    0.08    0.34
-         shadow_of_existence     0     0.02     0.19    0.02    0.23
+                CR_cosmology     5     0.01     0.33    0.03    0.37
+                 range_paper     0     0.00     0.33    0.03    0.37
+              boundary_paper     2     0.12     0.17    0.08    0.36
+              canonical_time     0     0.01     0.31    0.03    0.36
+              dynamics_paper     0     0.00     0.26    0.06    0.31
+         shadow_of_existence     0     0.02     0.18    0.02    0.22
+         appendix_ledgers_P1     0     0.00     0.00    0.00    0.00
+        appendix_ledgers_P10     0     0.00     0.00    0.00    0.00
+        appendix_ledgers_P11     0     0.00     0.00    0.00    0.00
+        appendix_ledgers_P12     0     0.00     0.00    0.00    0.00
+        appendix_ledgers_P13     0     0.00     0.00    0.00    0.00
+        appendix_ledgers_P14     0     0.00     0.00    0.00    0.00
+        appendix_ledgers_P15     0     0.00     0.00    0.00    0.00
+        appendix_ledgers_P16     0     0.00     0.00    0.00    0.00
+        appendix_ledgers_P17     0     0.00     0.00    0.00    0.00
+         appendix_ledgers_P2     0     0.00     0.00    0.00    0.00
+         appendix_ledgers_P3     0     0.00     0.00    0.00    0.00
+         appendix_ledgers_P4     0     0.00     0.00    0.00    0.00
+         appendix_ledgers_P5     0     0.00     0.00    0.00    0.00
+         appendix_ledgers_P6     0     0.00     0.00    0.00    0.00
+         appendix_ledgers_P7     0     0.00     0.00    0.00    0.00
+         appendix_ledgers_P8     0     0.00     0.00    0.00    0.00
+         appendix_ledgers_P9     0     0.00     0.00    0.00    0.00
+        appendix_ledgers_SYN     0     0.00     0.00    0.00    0.00
+     appendix_ledgers_corpus     0     0.00     0.00    0.00    0.00
 
   ⌗ ** THE COLUMN THAT MATTERS IS `figs` AGAINST `sum`: a paper high in the configuration and
      trajectory signals and at zero figures is asking its reader to build a picture from sentences
@@ -121,18 +147,18 @@ PART 2 — THE SIGNAL: WHERE PROSE IS DOING A FIGURE'S JOB
   ── THE TWO AXES READ SEPARATELY, because they are different reasons ──
 
   (a) CONFIGURATION -- 'hold this arrangement in your head', the axis a diagram is FOR:
-              SdS-slicing-curve_v2   0.37   figures: 11  (19k chars/fig)
-              geometric_core_paper   0.21   figures: 3  (41k chars/fig)
-               matter_sector_paper   0.18   figures: 1  (113k chars/fig)
-                    boundary_paper   0.14   figures: 2  (51k chars/fig)
-                   algebroid_paper   0.11   figures: 0  (never)
+              SdS-slicing-curve_v2   0.37   figures: 11  (20k chars/fig)
+              geometric_core_paper   0.18   figures: 3  (49k chars/fig)
+               matter_sector_paper   0.16   figures: 1  (175k chars/fig)
+                   algebroid_paper   0.15   figures: 0  (never)
+                    boundary_paper   0.12   figures: 2  (56k chars/fig)
 
   (b) TRAJECTORY -- 'something moves through stages', the axis a PLOT is for:
-                cosmogenesis_paper   1.16   figures: 3  (18k chars/fig)
-                   BH_causality_v2   0.90   figures: 3  (25k chars/fig)
-                      CR_framework   0.89   figures: 4  (74k chars/fig)
+                cosmogenesis_paper   1.09   figures: 3  (29k chars/fig)
+                   BH_causality_v2   0.89   figures: 3  (28k chars/fig)
                   slicing_operator   0.87   figures: 0  (never)
-               matter_sector_paper   0.45   figures: 1  (113k chars/fig)
+                      CR_framework   0.82   figures: 4  (78k chars/fig)
+              SdS-slicing-curve_v2   0.44   figures: 11  (20k chars/fig)
 
   ⌗⌗ ** AND THE TWO AXES DISAGREE, WHICH IS THE USEFUL PART. **
      *On the raw SUM the strongest un-figured paper is `slicing_operator`; on CONFIGURATION alone it
@@ -203,7 +229,7 @@ PART 3 — THE RANKED CANDIDATES
 PART 4 — WHAT `L-152` BECOMES
 ==============================================================================
   ⇒ ** THE PASS IS DONE AND IT IS THE WHOLE OF WHAT THIS ITEM MAY DELIVER FROM THIS SIDE. **
-     *The item reserves the figures themselves: 'New conceptual figures are unassigned to call/supply,
+     *The item reserves the figures themselves: 'New conceptual figures are unassigned,
      not gate-generated (the r548 discipline).'  A node that answered `H·1` by drawing eight figures
      would be violating the item while appearing to discharge it.*
   

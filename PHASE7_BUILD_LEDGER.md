@@ -1,5 +1,5 @@
 ---
-kind: STATE
+kind: RECORD
 job: the collapse-excursion build ledger — the plan, whose execution lives elsewhere
 status: RETIRED r3127 — SPENT PLANNING DOCUMENT. The build ran and its findings are banked: all twelve lead ids carried by computations/beyond_the_wall/ (43 scripts) appear in the corpus, several in paper appendices — L150 in P15 and P17, L163 in P11, L165 in P07 and P01, L169 in P15. The plan and the execution never matched by NAME because they are indexed differently (build step vs lead id, zero overlap across 49 and 43 identifiers), which is why the owed read never returned anything. Kept as the record of the plan; not a live worklist.
 name: phase7-build-ledger
@@ -7,14 +7,10 @@ description: PHASE 7 — the collapse-excursion build, plan item 2, off which op
 current: r2376
 ---
 
-> **⌗ ITS OWN NAMED GAP IS STILL OPEN, and is now `OWED` 608.** *This is the build's **plan**; the
-> execution happened in `computations/beyond_the_wall/` and in the capstone, and **the two have never
-> been read against each other**. Verified r3095: that directory now holds **43 scripts** where this
-> ledger says 29.*
->
-> *Its position `L-197` did not survive the register's turnover at r3001, and the live register carries
-> no collapse-excursion row — the nearest live work is **`PO-13`**. **What is open is
-> `THE_FRONTIER.md`.***
+> **⌗ A RETIRED BUILD LEDGER.** *This is the build's **plan**; the execution happened in
+> `computations/beyond_the_wall/` and in the capstone. The build ran and its findings are banked, and the gap this
+> ledger once named — the plan and the execution never having been read against each other — is reconciled, as
+> `OWED` 608 records. The register carries no collapse-excursion row; what is open is in `THE_FRONTIER`.*
 
 # PHASE 7 — THE COLLAPSE-EXCURSION BUILD
 
