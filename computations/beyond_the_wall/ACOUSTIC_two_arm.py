@@ -96,6 +96,24 @@ RTOL = float(os.environ.get('RTOL', '1e-7'))
 # shape of the height residual r3739 found on this arm.*
 #   ⇒ ** It was a hardcoded constant with no override, so it had never been varied. **
 LN = int(os.environ.get('LN', '12'))           # neutrino hierarchy depth
+# ⚑ ** NUFS: THE NEUTRINOS' FREE-STREAMING, r6889+cc66.36 -- because the FREE-STREAMING PHASE SHIFT
+#   had been named as a candidate in three orders and tested in none, on the ground that this
+#   instrument had no knob for it. **  *`LN` is the hierarchy's TRUNCATION DEPTH -- how well
+#   free-streaming is RESOLVED -- and that is a different quantity: `r6885+cc66.35` measured the
+#   depth and said so.*
+#   ⇒ ** What makes a neutrino free-stream rather than behave as a perfect fluid is its ANISOTROPIC
+#   STRESS, sigma_nu = F_2/2, at exactly two dynamical sites: the Euler equation
+#   (theta_nu' = k^2 (delta_nu/4 - sigma_nu)) and Psi's shear term.  NUFS multiplies sigma_nu and
+#   the F_2 source; at NUFS=0 the quadrupole is never sourced, so the whole l>=2 ladder stays zero
+#   and the sector is a PERFECT FLUID AT THE SAME BACKGROUND DENSITY -- `Onv` and `FNU` are not
+#   touched, so nothing in the expansion history moves. **
+# ⌗ NUFS=0 removes the WHOLE free-streaming effect -- the phase shift AND the drag on the amplitude
+#   -- so the PHASE half is the peak-POSITION difference between the two runs and the drag is the
+#   rest.  One knob, two readings, and they must not be quoted as one.
+# ⌗ AND IT IS NOT THE SAME KNOB AS `SWSRC`/`DPSRC`, which the routing order supposed: those switch
+#   LINE-OF-SIGHT SOURCE TERMS -- what is projected -- and this changes the DYNAMICS that set the
+#   dipole's phase before last scattering.  Two layers, two knobs.
+_NUFS = float(os.environ.get('NUFS', '1'))     # 1 = free-streaming; 0 = a perfect fluid
 BSPLIT = os.environ.get('BSPLIT', '1') != '0'  # baryons at their OWN contrast (c54.178)
 
 # ---- the two backgrounds -----------------------------------------------------------------------
@@ -682,7 +700,7 @@ def evolve(kk, t_eval=None, e_end=None, y_init=None):
         PH2 = float(Phi2_of(e))                      # PHASEONLY clock factor (1 unless PHASEONLY)
         Ogv, Onv = float(Og_of(e)), float(On_of(e))
         Ocv, Obv = float(Oc_of(e)), float(Ob_of(e))
-        sig = F[:, 0] / 2
+        sig = _NUFS * F[:, 0] / 2                    # NUFS=0 -> a perfect fluid (r6889+cc66.36)
         tp = float(taup_of(e))
         # ** NOTC=1 removes the in-hierarchy tight-coupling damping (the photon quadrupole closure
         # and the baryon slip) so that the DERIVED exp(-k^2/k_D^2) factor is the only place
@@ -710,7 +728,7 @@ def evolve(kk, t_eval=None, e_end=None, y_init=None):
         out[:, 4] = -(4 / 3) * tn + DRC * 4 * Php
         out[:, 5] = kk ** 2 * (dn / 4 - sig) + DRE * kk ** 2 * Ps
         out[:, 6] = Php
-        out[:, 7] = (8 / 15) * tn - (3 / 5) * kk * F[:, 1]
+        out[:, 7] = _NUFS * ((8 / 15) * tn - (3 / 5) * kk * F[:, 1])
         for i in range(1, LN - 2):
             l = i + 2
             out[:, 7 + i] = kk / (2 * l + 1) * (l * F[:, i - 1] - (l + 1) * F[:, i + 1])
@@ -872,6 +890,21 @@ _ISW = 0.0 if os.environ.get('NOISW', '0') == '1' else 1.0
 #     scale, so the switch demonstrably reaches the term it names.
 _SWSRC = float(os.environ.get('SWSRC', '1'))   # g (Theta_0 + Psi), the monopole
 _DPSRC = float(os.environ.get('DPSRC', '1'))   # (1/k^2) d/deta [g theta_b], the Doppler dipole
+# ⛔⛭⛭ ** AND r6889+cc66.36: THEY REACHED ONE PATH OF THREE, WHICH IS THE SHADOW AGAIN. **
+# *r4558 placed these beside `_ISW` and calibrated them -- on `los_spectrum`.  ** The HIERARCHY path
+# builds its own source at the foot of `los_hier` and the LOW-ELL path builds a third at the foot of
+# `main`, and neither read these two. **  `HIER=1` is the path every refit number in this sector is
+# computed on, so `DPSRC=0` there returned a BIT-IDENTICAL spectrum on both arms (r6885+cc66.35)
+# while the same switch moves D_l by 62% on the LOS path.*
+#   ⇒ ** That is the third shadow in this sector after the `NS` literal (cc66.17) and the baryon
+#   density, and the pattern is identical each time: a knob verified on the path it reaches and used
+#   on the path it does not. **  *`_ISW` was wired to all three at r4558 and these two were not,
+#   which is the whole of the difference.*
+# ⌗ THE REPAIR IS ADDITIVE AND ITS DEFAULT IS PROVED, NOT ASSERTED: both are multipliers whose
+#   default is 1.0, and the receipt runs the unset configuration on both arms and both paths and
+#   gates the result BIT-IDENTICAL against the banked spectra before any null is read off them.
+# ⌗ AND EACH IS CALIBRATED WHERE IT IS NEWLY WIRED, because r4558's own note is the rule: a knob
+#   that reports NO CHANGE is indistinguishable from a knob that is not connected.
 
 
 def los_spectrum(kk, ee, Y, L_A, D_M, R_S):
@@ -1100,7 +1133,7 @@ def evolve_hier(kk, t_eval, e_sw, yF):
         Ogv, Onv = float(Og_of(e)), float(On_of(e))
         Ocv, Obv = float(Oc_of(e)), float(Ob_of(e))
         tp = float(taup_of(e))
-        sig = Fn[:, 0] / 2
+        sig = _NUFS * Fn[:, 0] / 2                   # NUFS=0 -> a perfect fluid (r6889+cc66.36)
         sgg = F[:, 0] / 2
         Pi = F[:, 0] + G[:, 0] + G[:, 2]
         Ps = Ph - 6 * Hc ** 2 * (Onv * sig + Ogv * sgg) / kk ** 2
@@ -1116,7 +1149,7 @@ def evolve_hier(kk, t_eval, e_sw, yF):
         out[:, 4] = -(4 / 3) * tn + DRC * 4 * Php
         out[:, 5] = kk ** 2 * (dn / 4 - sig) + DRE * kk ** 2 * Ps
         out[:, 6] = Php
-        out[:, 7] = (8 / 15) * tn - (3 / 5) * kk * Fn[:, 1]
+        out[:, 7] = _NUFS * ((8 / 15) * tn - (3 / 5) * kk * Fn[:, 1])
         for i in range(1, LN - 2):
             l = i + 2
             out[:, 7 + i] = kk / (2 * l + 1) * (l * Fn[:, i - 1] - (l + 1) * Fn[:, i + 1])
@@ -1234,9 +1267,20 @@ def _project(kb, ee, Y, ls, x0, e_sw):
     # that returns it": with PISRC=0 this transfer has exactly the half an envelope has, computed
     # dynamically, so the difference between the two runs IS the returned half and nothing else.
     _PI = float(os.environ.get('PISRC', '1'))
-    S = (g_ * (Th0 + Ps + _PI * Pi / 4)
+    # ** `_SWSRC` AND `_DPSRC` WIRED HERE AT r6889+cc66.36 -- see their declaration. **  The
+    # monopole bracket is SPLIT so that `_SWSRC` multiplies g (Theta_0 + Psi) and nothing else: the
+    # polarisation term rides in the same bracket but is a different term and already has `PISRC`.
+    # *Splitting it is what makes this switch mean the same thing here as it does on the LOS path,
+    # which is the point of wiring it rather than adding a second knob with the same name.*
+    # ⌗ ** AND THE PARENTHESES ARE NOT COSMETIC. **  Written `_SWSRC * g_ * (Th0 + Ps) + g_ * _PI *
+    # Pi / 4` the default sums in a different ORDER from the original `g_ * (Th0 + Ps + _PI*Pi/4)`,
+    # and floating-point addition is not associative: measured, that costs max |dD_l| = 1.1e-16 --
+    # immaterial physically and still not zero.  *Keeping the factor INSIDE the bracket makes the
+    # default byte-identical instead of nearly so, because x * 1.0 is exact, and this revision's
+    # whole claim is that its edits change nothing unless a knob is set.*
+    S = (g_ * (_SWSRC * (Th0 + Ps) + _PI * Pi / 4)
          + _ISW * et * (np.gradient(Ph, ee, axis=0) + np.gradient(Ps, ee, axis=0))
-         + np.gradient(g_ * tb, ee, axis=0) / kb[None, :] ** 2
+         + _DPSRC * np.gradient(g_ * tb, ee, axis=0) / kb[None, :] ** 2
          + _PI * 0.75 * np.gradient(np.gradient(g_ * Pi, ee, axis=0), ee, axis=0)
          / kb[None, :] ** 2)
     dk = np.gradient(kb)
@@ -1412,7 +1456,9 @@ def main():
     IS = np.gradient(Phg, ee, axis=0) + np.gradient(Psg, ee, axis=0)        # (n_ee, nk)
     rD = float(os.environ.get('RD', '5.5' if ARM == 'lcdm' else '10.88'))
     damp = np.exp(-(kk * rD) ** 2)
-    SWd, DPd = SW * damp, DP * damp
+    # ** AND THE THIRD PATH, r6889+cc66.36. **  This one already carries the split as two named
+    # arrays, so the switches attach directly and mean exactly what they mean on the other two.
+    SWd, DPd = _SWSRC * SW * damp, _DPSRC * DP * damp
     dk = np.gradient(kk)
     P = kk ** (NS - 1) / kk * dk
     x = kk * D_M
