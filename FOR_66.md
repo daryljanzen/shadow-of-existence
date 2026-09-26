@@ -2627,3 +2627,95 @@ the same shortfall on both. **And the width story you withdrew before sending is
 looked, and nothing in these numbers attacks your reasoning.***
 
 ⌗ *PR **#87**, new, because #84 merged while this was computing. Subscribed.*
+
+## ⛭⛭ `r6911` — **THE CONTRAST IS NOT IN THE SOURCE. IT IS MADE BETWEEN $k$ AND $\ell$, AND NOT BY THE DISTANCE**
+
+*Your second branch, and the statistic did not need coaxing to say so.*
+
+| rung | what it is | arm/control |
+|---|---|---|
+| 1 | the source at last scattering | $\mathbf{0.9960}$ |
+| 1m | **monopole $+$ Doppler only**, which is what you asked for | $0.9937$ |
+| 1s | monopole alone | $0.9923$ |
+| 2 | the source $\eta$-integrated — the transfer with the kernel taken out | $\mathbf{0.9923}$ |
+| 3 | the raw $D_\ell$ **from the same run** | $\mathbf{1.0452}$ |
+| 4 | lensed, binned, amplitude-fitted — `cc66.35`'s own object | $\mathbf{1.0468}$ |
+
+*Over four envelope windows, both envelope definitions, three term subsets, four $q$ sub-windows and with
+or without the $k$-measure, **the source rungs span $0.971$–$1.005$ and the $\ell$ rung $1.042$–$1.052$.***
+The floor is $0.6$ per cent, set by the statistic's own bias on a **known injected** contrast. The step is
+$5.3$.
+
+⇒ ⚑⚑⚑ **AND FOUR-FOR-FOUR DISSOLVES RATHER THAN BEING SOLVED, WHICH IS THE PART WORTH YOUR TIME.** *You
+wrote that either something upstream is large enough to overcome all four — in which case the effect is
+much bigger than four per cent and we have been hunting something too small — or the statistic is not
+measuring where we think. **It is the second, and the first is not merely unnecessary: upstream this arm's
+oscillation is $0.996$ of the control's, very slightly SHALLOWER, which is exactly the direction all four
+channels point.*** **Nothing overcomes them because nothing had to.** *The effect to explain is not bigger
+than four per cent — it is not upstream at all.*
+
+⛔ **AND YOUR NAMED ROUTE IS OUT TWICE OVER. THE FIRST HALF IS A PREMISE CORRECTION AND IT IS MINE TO
+REPORT, NOT YOURS TO HAVE KNOWN.** *$13005$ against $13865$~Mpc is the **superseded** configuration's pair
+($r_s=135.46/144.53$), where this arm's was the smaller.*
+
+| arm | $D_M$/Mpc | $r_s$/Mpc | $\ell_A$ |
+|---|---|---|---|
+| control | $13954.354$ | $145.382$ | $301.543$ |
+| arm | $14017.039$ | $145.911$ | $301.799$ |
+
+⇒ ***$+0.449$ per cent, and THIS ARM'S IS THE LARGER*** — wrong in size and wrong in sign. ⌗ *Your
+cancellation is real: $\ell_A$ agree to $0.085$ per cent. It is the six per cent that is not.*
+
+⇒ **And I did not stop at the premise, because a route eliminated by arithmetic is not eliminated.**
+*`SRCXS` projects one arm's own source through the **other's** distance, one arm at a time, so the
+geometry is the only thing that moves: the control's contrast falls $0.63$ per cent, this arm's rises
+$0.59$, and **removing the difference altogether takes the ratio UP, $1.045\to1.051$.*** *The distance is
+not how the projection does it.*
+
+**⌗ WHERE IN THE PROJECTION, AS FAR AS I WILL GO ON YOUR BOUND.** *This arm's projection **retains $1.054$
+times as much** of its own source oscillation as the control's does ($0.2413$ against $0.2543$) — your
+question as one number per arm. And four things it is **not**: not the visibility width acting before the
+kernel (rung 1 → rung 2 moves $-0.4$ per cent, and this arm's is $15$ per cent wider, which shallows);
+not the lensing or the binning ($1.045\to1.047$); not the $k$ grid — **`KCONT=1` puts this arm on the
+control's kind of uniform grid at its own $2547$ modes, physics untouched, and the $\ell$ rung is
+unchanged at $1.0452$** while the source rungs move to $1.004$ and $0.999$; and not the distance. *The
+excess also **rises** with wavenumber, $1.031$ below $q=3$ to $1.065$ above, where the source ratio is
+flat.*
+
+⛔ **YOUR GUARD CHANGED THE DEFINITION, AND FINDING THAT OUT IS PART OF THE MEASUREMENT RATHER THAN A
+COMPLICATION IN IT.** *`cc66.35`'s envelope is a running **geometric** mean and needs a strictly positive
+quantity. $D_\ell$ is; **the source power is not** — it comes within a part in $10^{8}$ of its own median
+at the troughs, where a log-mean is dominated by near-zeros and $(P-e)/e$ diverges.* ⇒ **So the envelope
+is a running arithmetic mean at EVERY rung, the $\ell$ rung included, and both are reported: they differ
+by $0.003$ there against the $0.05$ step being measured.** *`cc66.35`'s $1.0401$ is reproduced exactly
+under its own definition and is not superseded.*
+
+⌗ **And I measured the abscissa rather than assuming it, because that is the one way this could have come
+out low for no reason.** *A regression of two oscillations at a frequency mismatch reads as a contrast
+deficit. The arms' acoustic period in $q$: $1.0000$ against $0.9978$ at the source and $1.0347$ against
+$1.0338$ in $\ell$ — agreeing to $0.22$ and $0.09$ per cent, best-fit lags $+0.005$ and $-0.001$.*
+
+**⌗ WHAT LANDED.** *`P15` \S`sec:refit-bound` gains the paragraph and the summary item gains the clause;
+**and one sentence of yours came out** — "the contrast excess stands on top of them", with the inference
+that the residual is larger than its four per cent. It is in `check_withdrawn`'s registry keyed to the
+paper's wording **and** to the map's and the frontier's, because that is the defect that entry two above
+it was widened twice to record. *The four channels' own measurements stand; each is larger on this arm.
+What is withdrawn is the step from there to a larger residual.* `PO-56`'s row and headline move: the stage
+is located, the mechanism is not.
+
+⛔ **BOUND, AND I HELD IT.** *No mechanism within the projection. No claim that the projection is the
+wrong projection — nothing here touches `prop:flat`, and a projection can manufacture a contrast
+difference while being exactly the correct projection for both arms. No claim that the visibility width is
+its route. And no claim that the source is identical on the two arms: it is $0.992$, a real deficit of
+about the statistic's own floor, and that sign is the four channels' own.*
+
+⚑ **AND THE ONE THING I WOULD RULE OUT NEXT IF YOU WANT IT NAMED:** *whether a projection can differ
+between two arms whose acoustic angles agree to a part in a thousand at all. If it cannot, the five per
+cent is an instrument fact and not a physical one, and that is a cheaper question than a mechanism.*
+
+⌗ *Forty-five gates; four banks at `spectra/r6911_*`; launchers at `r6911_directions/`. `SRCSAVE` and
+`SRCXS` are bit-identical when unset on both arms, **and `SRCXS=1.5` with `SRCSAVE` unset is
+bit-identical too** — the swap is an output of the save, not a knob on the physics, which is how "do not
+add a knob" is honoured rather than asserted. Every long run sliced on `KBATCH`; the sliced runs reproduce
+the banked $185$-bin spectra to $4.9\times10^{-15}$ relative, **which is what makes the $k$ end and the
+$\ell$ end one run rather than two.***
