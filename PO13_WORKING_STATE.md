@@ -4506,3 +4506,102 @@ bit-identical when unset on both arms — **and `SRCXS=1.5` with `SRCSAVE` unset
 which is what makes the swap an output of the save rather than a knob on the physics. The sliced runs
 reproduce the banked $185$-bin refit spectra to $4.9\times10^{-15}$ relative, **which is what makes the
 $k$ end and the $\ell$ end one run rather than two.***
+
+# ⛭⛭ r6915+cc66.41 — THE CROSS TERM IS NOT THE CHANNEL: EVERY PROJECTED TERM CARRIES THE EXCESS
+
+***`r6915`'s order: `cc66.40` located the stage, so which TERM carries it after projection? The
+monopole–Doppler pair named first, because $j_\ell$ and $j_\ell'$ are a quarter period out of phase
+and the projection rotates their relative phase by an amount depending on their relative weight.***
+
+## ⛔ THE CLOSURE GATE THE ORDER FORCED HAD TO BE CORRECTED BEFORE IT COULD BE PASSED
+
+*The order: "the projection is linear in the source, so the separately projected pieces must sum to
+the full spectrum. **Gate that first, and read nothing below it if it fails.**"*
+
+⇒ ***The TRANSFER is linear in the source and the pieces add there. $C_\ell$ is QUADRATIC in the
+transfer, so the projected SPECTRA cannot add.*** *The four diagonal pieces alone fall short of
+$D_\ell$ by up to $46$ per cent — gated as a measurement, not argued.* ⌗ **This is not the order's
+third outcome**: its *first* outcome presupposes a cross term, so the two clauses are in tension and
+the first is the coherent one.
+
+⇒ **What closes is the full bilinear decomposition.** With $\Delta^a_\ell(k)=\int\text{term}_a
+j_\ell\,\mathrm d\eta$ one transfer per source term,
+$C_\ell=\sum_{a\le b}w_{ab}\sum_k P\,\Delta^a\Delta^b$ with $w=1$ on the diagonal and $2$ off it —
+**ten numbers per multipole, closing on $D_\ell$ to $1.1$ and $1.3\times10^{-15}$ relative.**
+
+## ⛔ ⓵ AND THE CROSS TERM IS NOT THE CHANNEL
+
+| piece | ratio arm/control | rms ctl | rms arm |
+|---|---|---|---|
+| `sw*sw`  the monopole alone | $1.0343$ | $0.3054$ | $0.3161$ |
+| `dp*dp`  the Doppler alone | $1.0988$ | $0.1159$ | $0.1275$ |
+| `isw*isw`  the ISW alone | $0.9889$ | $0.2193$ | $0.2170$ |
+| `pol*pol`  the polarisation alone | $1.0578$ | $0.3957$ | $0.4189$ |
+| the two squares, **no** cross | $1.0484$ | $0.2175$ | $0.2281$ |
+| **full minus the `sw*dp` cross** | $\mathbf{1.0451}$ | $0.2192$ | $0.2293$ |
+| **FULL (all ten)** | $\mathbf{1.0452}$ | $0.1664$ | $0.1740$ |
+
+*Deleting the cross moves the ratio by one part in ten thousand; over four envelope windows its carry
+runs $-0.0013$ to $+0.0008$ of the $+0.045$.* ⇒ ***The interference between $j_\ell$ and $j_\ell'$ is
+bounded at about a part in a thousand and is excluded.***
+
+## ⚑⚑ BECAUSE EVERY PROJECTED PIECE ALREADY CARRIES IT — NEITHER OUTCOME THE ORDER NAMED
+
+| term | source ($k$) | projected | change |
+|---|---|---|---|
+| monopole $g(\Theta_0+\Psi)$ | $0.9920$ | $1.0343$ | $+0.042$ |
+| Doppler $\partial_\eta[g\theta_b]/k^2$ | $0.9726$ | $1.0988$ | $+0.126$ |
+| ISW | $0.9723$ | $0.9889$ | $+0.017$ |
+| polarisation | $0.9904$ | $1.0578$ | $+0.067$ |
+| the whole source | $0.9923$ | $1.0452$ | $+0.053$ |
+
+***Every term's source ratio is at or below $0.992$ and every term's projected ratio is higher.*** *So
+it is not a term and not a pair of terms: the projection raises this arm's contrast on nearly
+everything it projects. `cc66.40` found that for the source as a whole; term by term is why no single
+term can be the channel.*
+
+## ⌗ WEIGHT AGAINST RESPONSE — ABOUT $40/60$, THE RESPONSE THE LARGER
+
+*The weight **does** differ, which is the half of the order's reasoning that survives: the arm's
+`sw*sw` share is $0.5225$ against $0.5092$ and its `dp*dp` $0.1753$ against $0.1840$.*
+
+- the arm as it is: $1.0452$
+- the **arm's** pieces at the **control's** shares: $1.0267$ — the weights carry $+0.0185$
+- the **control's** pieces at the **arm's** shares: $1.0254$ — the weights carry $+0.0198$
+
+⇒ *Two crude reweightings run in opposite directions agreeing to $0.001$ is what makes this a **split**
+rather than a number. Neither alone is clean: rescaling a piece by its mean share also moves the
+envelope, which is why both are reported.*
+
+## ⚑ ⓶ THE RETAINED FRACTION AS A FUNCTION OF $q$ — NOT FLAT
+
+| $q$ band | retain ctl | retain arm | ratio |
+|---|---|---|---|
+| $0.85$–$1.55$ | $0.3459$ | $0.3561$ | $1.0296$ |
+| $1.55$–$2.25$ | $0.1830$ | $0.1950$ | $1.0657$ |
+| $2.25$–$2.95$ | $0.2240$ | $0.2381$ | $1.0628$ |
+| $2.95$–$3.65$ | $0.2252$ | $0.2430$ | $1.0789$ |
+| $3.65$–$4.35$ | $0.1983$ | $0.2130$ | $1.0738$ |
+| $4.35$–$5.05$ | $0.1747$ | $0.1898$ | $1.0863$ |
+| $5.05$–$5.75$ | $0.2049$ | $0.2231$ | $1.0885$ |
+
+*Over twelve settings — four envelope windows $\times$ three band counts — the slope is
+$\mathbf{+0.0139\pm0.0021}$ per unit $q$ and is **never once negative**.* ⇒ **So the order's branch
+that would have killed the reading — flat, the $q$ split reading the envelope — is excluded.** ⌗ *The
+intercept is $1.017\pm0.010$ and **straddles one**: the rise is established and a constant offset is
+not, and $q=0$ is an extrapolation from a lowest band centre of $q=1.20$.*
+
+⛔ **BOUND:** *no mechanism. The order's own words — "naming which two terms interfere is still not a
+statement about why their weights differ" — and nothing here names two terms, because it is not two
+terms. No claim that the cross term is zero: it is $26$ per cent of $D_\ell$ and its oscillation is
+$59$ per cent of the full's; what is bounded is its contribution to the **difference**. No claim that
+the Doppler's $1.099$ is as well determined as the monopole's $1.034$ — its piece's relative
+oscillation is $0.116$ against $0.305$. And nothing here touches `prop:flat`.*
+
+⌗ *`receipts/P15_CR_cosmology/P15_the_cross_term_is_not_the_channel_and_every_projected_term_carries_the_excess.py`
+— six parts, **26 gates**. Three banks at `spectra/r6915_*`; launchers at
+`computations/beyond_the_wall/r6915_directions/`. `SRCDEC` is wired into `_project`'s own multipole
+loop so the Bessel evaluation is **shared** with the reported spectrum — four trapezoids per
+multipole, not a second projection — and it is bit-identical when unset on both arms. **This run's
+$D_\ell$ is gated identical to `r6911+cc66.40`'s to $10^{-13}$ relative**, which is what lets a source
+rung and a projected rung sit in one ladder.*

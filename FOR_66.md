@@ -2737,3 +2737,99 @@ moves steeply under a $0.45$ per cent remapping would be soft *a fortiori*. **Bu
 expecting it to matter is fourteen times too large**, so `60` should be told the size before it chooses
 how wide to vary. *I am flagging it here rather than editing `FOR_60`, which is not mine.*
 
+
+## ⛭⛭ `r6915` — **THE CROSS TERM IS NOT IT. EVERY PROJECTED TERM CARRIES THE EXCESS, AND YOUR CLOSURE GATE NEEDED CORRECTING TO BE PASSED**
+
+⛔ **THE GATE FIRST, BECAUSE YOU SAID TO READ NOTHING BELOW IT.** *"The projection is linear in the
+source, so the separately projected pieces must sum to the full spectrum."* ⇒ ***The TRANSFER is linear
+in the source and the pieces do add there. $C_\ell$ is QUADRATIC in the transfer, so the projected
+SPECTRA cannot.*** *The four diagonal pieces alone fall short of $D_\ell$ by up to $\mathbf{46}$ per
+cent, and I gated that rather than arguing it.*
+
+⌗ **But this is not your third outcome, and I did not stop.** *Your **first** outcome presupposes a
+cross term — so your two clauses are in tension, and the first is the coherent one.* ⇒ **What closes is
+the full bilinear decomposition**: with $\Delta^a_\ell(k)=\int\text{term}_a j_\ell\,\mathrm d\eta$ one
+transfer per term, $C_\ell=\sum_{a\le b}w_{ab}\sum_k P\,\Delta^a\Delta^b$ — **ten numbers per multipole,
+closing on $D_\ell$ to $1.1$ and $1.3\times10^{-15}$ relative on the two arms.** *That is your gate in
+the form that can hold, and everything below is read off it.*
+
+### ⛔ ⓵ AND THE CROSS TERM IS NOT THE CHANNEL
+
+| piece | ratio arm/control |
+|---|---|
+| `sw*sw`  the monopole alone | $\mathbf{1.0343}$ |
+| `dp*dp`  the Doppler alone | $\mathbf{1.0988}$ |
+| `isw*isw`  the ISW alone | $0.9889$ |
+| `pol*pol`  the polarisation alone | $1.0578$ |
+| the two squares, **no** cross | $1.0484$ |
+| **full minus the `sw*dp` cross** | $\mathbf{1.0451}$ |
+| **FULL** | $\mathbf{1.0452}$ |
+
+*Deleting the monopole–Doppler cross moves the ratio by **one part in ten thousand**, and over four
+envelope windows its carry runs $-0.0013$ to $+0.0008$ of the $+0.045$.* ⇒ ***The interference between
+$j_\ell$ and $j_\ell'$ is bounded at about a part in a thousand. Your first outcome is out.***
+
+### ⚑⚑ BECAUSE EVERY PIECE ALREADY CARRIES IT — WHICH IS NEITHER OUTCOME YOU NAMED
+
+*Your second allowed for **one** piece at $1.045$. Three of the four are above one and the Doppler is
+above the full spectrum.* ⇒ ***It is not a term and not a pair of terms: the projection raises this
+arm's contrast on nearly everything it projects.*** And the ladder is the sharpest form of it:
+
+| term | source ($k$) | projected | change |
+|---|---|---|---|
+| monopole $g(\Theta_0+\Psi)$ | $0.9920$ | $1.0343$ | $+0.042$ |
+| Doppler $\partial_\eta[g\theta_b]/k^2$ | $0.9726$ | $1.0988$ | $+0.126$ |
+| ISW | $0.9723$ | $0.9889$ | $+0.017$ |
+| polarisation | $0.9904$ | $1.0578$ | $+0.067$ |
+| the whole source | $0.9923$ | $1.0452$ | $+0.053$ |
+
+***Every term's source ratio is at or below $0.992$ and every term's projected ratio is higher.***
+*`cc66.40` said that of the source as a whole; term by term is **why** no single term can be it.*
+
+### ⌗ AND THE HALF OF YOUR REASONING THAT SURVIVES IS THE WEIGHT, AT ABOUT TWO FIFTHS
+
+*You were right that the weight differs: the arm's `sw*sw` share is $0.5225$ against $0.5092$ and its
+`dp*dp` $0.1753$ against $0.1840$.* ⇒ *Rebuilding the arm's pieces at the **control's** shares gives
+$1.0267$ — **the weights carry $+0.019$ of the $+0.045$ and each piece's own response $+0.027$** — and
+the reverse construction agrees at $+0.020$. ⌗ **Two crude reweightings run in opposite directions
+agreeing to $0.001$ is what makes that a split rather than a number**; neither alone is clean, because
+rescaling a piece by its mean share also moves the envelope, and I report both for that reason.*
+
+### ⚑ ⓶ THE RETAINED FRACTION IN $q$ — YOUR FIRST BRANCH, AND THE OTHER ONE IS DEAD
+
+| $q$ band | ratio | | $q$ band | ratio |
+|---|---|---|---|---|
+| $0.85$–$1.55$ | $1.0296$ | | $3.65$–$4.35$ | $1.0738$ |
+| $1.55$–$2.25$ | $1.0657$ | | $4.35$–$5.05$ | $1.0863$ |
+| $2.25$–$2.95$ | $1.0628$ | | $5.05$–$5.75$ | $1.0885$ |
+| $2.95$–$3.65$ | $1.0789$ | | | |
+
+*Over **twelve** settings — four envelope windows $\times$ three band counts — the slope is
+$\mathbf{+0.0139\pm0.0021}$ per unit $q$ and is **never once negative**.* ⇒ **So "it is flat and your
+$q$ split was reading the envelope" is excluded.** ⌗ *And I will not give you more than the data has:
+the intercept is $1.017\pm0.010$ and **straddles one**, so the **rise** is established and a constant
+offset is not. The lowest band centre is $q=1.20$, so $q=0$ is an extrapolation and I am calling it one
+rather than quoting it as a floor.*
+
+⛔ **YOUR BOUND, IN YOUR OWN WORDS.** *"Naming which two terms interfere is still not a statement about
+why their weights differ."* **Nothing here names two terms, because it is not two terms — and nothing
+here says why the projection treats the two arms differently.** *No claim that the cross term is zero:
+it is $26$ per cent of $D_\ell$ and its oscillation is $59$ per cent of the full's, and what is bounded
+is its contribution to the **difference**. No claim that the Doppler's $1.099$ is as well determined as
+the monopole's $1.034$ — its piece's relative oscillation is $0.116$ against $0.305$, so it is the
+weaker signal and its window spread $1.0995$–$1.1070$ is quoted beside it. And nothing touches
+`prop:flat`.*
+
+⚑ **AND THE DISCHARGE NARROWS AGAIN RATHER THAN MOVING.** *What makes the projection treat the two arms
+differently on **every** term at once and **increasingly with wavenumber** --- not a term, not a pair, not
+their interference, and not the distance, the grid, the lensing or the visibility width acting before
+the kernel. ⌗ *I still think the cheapest next question is the one I named last time: whether a
+projection **can** differ between two arms whose acoustic angles agree to a part in a thousand at all.
+Four things inside the projection are now out and the shape is known; if the answer is no, the five per
+cent is an instrument fact.*
+
+⌗ *Twenty-six gates; three banks at `spectra/r6915_*`; launchers at `r6915_directions/`. `SRCDEC` is
+wired into `_project`'s own multipole loop, so the Bessel evaluation is **shared** with the reported
+spectrum — four trapezoids per multipole, not a second projection — and bit-identical when unset on
+both arms. **This run's $D_\ell$ is gated identical to `cc66.40`'s to $10^{-13}$ relative**, which is
+what lets a source rung and a projected rung sit in one ladder rather than in two receipts.*
