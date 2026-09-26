@@ -49,5 +49,50 @@ coefficient — see `P15_the_height_target_was_below_the_resolution_of_its_own_s
 
 | `r6794_cr_crossing_kcont_summed.npz` | r6794 (node 60) | **the `KCONT=1` continuum check node 66 asked for, summed from SIX `KSLICE` runs because neither seat's container survives it whole** — `ARM=cr HIER=1 BSPLIT=1 NK=900 LMAXL=2000 ETAEND=4000 KBATCH=150 KCONT=1 CRH0=68.62 CROM=0.2973 ZSTART=3e7 KSLICE=<a>:<a+450>` for `a` = 0, 450, 900, 1350, 1800, 2250, the six `Dl` arrays added. *2700 modes at 4.3 points per Bessel period against the ladder's 1452 at 2.3. Reproduces `r6784_cr_crossing_hier_noCRIC` to 6.7e-8 of the peak, peaks identical, χ² 1205.3745 against 1205.3755 — so the ladder's discreteness does not set the spectrum.* ⌗ **The slice sum was proved exact first (2.195e-16 against a whole run), and `KSLICE` is a CONTINUUM tool: on the ladder it is exact only to 1.2e-8.** |
 
+## ⚑ `r6885_*` — THE CANDIDATE DIRECTIONS FOR THE MODEL DIFFERENCE, r6885+cc66.35
+
+** These are not spectra anybody wants for themselves. **  *Each is ONE knob off an arm's OWN 185-bin
+refit minimum — the `verify.sh` commands in `refit_grid185/` — so that the DIFFERENCE between a pair
+and the base pair is the shape that knob makes at the place Δ = m_arm − m_control is defined.  The
+test they exist for is **"does switching this off on BOTH arms remove Δ"**, because a knob whose
+per-arm shape looks like Δ still carries none of it if it does the same thing to both arms.*
+
+Launchers: `../r6885_directions/launch.sh` (the hierarchy batch) and `launch2.sh` (the line-of-sight batch), both idempotent — they skip any output already on disk, so a container restart costs at most the in-flight run.
+
+Base for every row: `HIER=1 LSTEP=8 LMAXL=2000` with
+`ARM=lcdm LH0=67.410309 LOM=0.309826 WBH2=0.021966 NS=0.954248` and
+`ARM=cr CRH0=68.581133 CROM=0.297209 ZSTART=3e7 LEAFSCALES=1 WBH2=0.021524 NS=0.997952`.
+
+| file | the knob | what it does to ‖Δ‖² = 77.26 |
+|---|---|---|
+| `r6885_ln24_{lcdm,cr}.npz` | `LN=24` — the free-streaming neutrino hierarchy depth doubled from its default 12 | → $72.37$, **$93.7\%$**, contrast $1.0401\to1.0393$. *Doubling the depth removes $6.3\%$; the SIGN says more depth removes more, so this is a direction and not a convergence test.* |
+| `r6885_noisw_{lcdm,cr}.npz` | `NOISW=1` — the integrated Sachs–Wolfe source term | → $71.70$, **$92.8\%$**, contrast $\to1.0438$ (it goes UP) |
+| `r6885_dre0_{lcdm,cr}.npz` | `DRE=0` — the driving's EULER half, the $k^2\Psi$ gradient | → $52.74$, **$68.3\%$** — the largest reduction, but at cosine $-0.16$ with Δ: ⚠ **Δ is REPLACED rather than reduced**, so the $32\%$ is a norm and not a share |
+| `r6885_drc0_{lcdm,cr}.npz` | `DRC=0` — the driving's CONTINUITY half, the $4\Phi'$ | → $67.65$, **$87.6\%$**, contrast $\to1.0384$ |
+| `r6885_dp0_{lcdm,cr}.npz` | `DPSRC=0` — the Doppler dipole source | ⛔ **BIT-IDENTICAL to the base on both arms.** *Kept because a null and an unwired knob look the same and this is the evidence which one it is: `_SWSRC` and `_DPSRC` are read only inside `los_spectrum`, and `HIER=1` does not take that path. **A knob shadow**, the same shape as the `NS` literal at `cc66.17`.* |
+
+### ⌗ AND THE SAME TWO KNOBS ON THE LINE-OF-SIGHT PATH, WHERE THEY ARE WIRED
+
+*Same two configurations, `HIER` dropped and nothing else changed (`LSTEP=8 LMAXL=2000`).  ⚠ The LOS
+path's χ² is **not** comparable with the hierarchy path's — the caveat this file already records for
+`c54.186_lcdm_L3000` — so these are read for SHAPES and for ratios WITHIN the path.*
+
+| file | the knob | what it does |
+|---|---|---|
+| `r6885_los_{lcdm,cr}.npz` | none — the LOS base for the two below | ‖Δ_LOS‖² = $128.43$, contrast $1.0325$; **cos(Δ_LOS, Δ_HIER) = $+0.76$**, so Δ is the configuration's and not one path's |
+| `r6885_losdp0_{lcdm,cr}.npz` | `DPSRC=0` — the Doppler dipole source | moves $\mathcal{D}_\ell$ by up to **$62\%$** (the calibration the bit-identical `r6885_dp0` pair needs), nearly **doubles** each arm's oscillation about its own envelope (to $1.85$), and its shape sits at **cos $+0.88$/$+0.89$ with the contrast direction** |
+| `r6885_lossw0_{lcdm,cr}.npz` | `SWSRC=0` — the monopole source | **inverts** the oscillation, to $-0.300$, at **cos $-0.79$** with the contrast direction |
+
+⇒ ⚑ **So the two halves of the source bracket the contrast with opposite signs: the contrast
+direction IS the monopole-to-dipole balance**, which neither switch on its own would have established.
+⚠ *But deleting a term is all-or-nothing: it leaves the arms' contrast RATIO where it was and DOUBLES
+‖Δ‖², so the CHANNEL is identified and the CAUSE is not measured — that wants the term scaled rather
+than deleted, and wired into the hierarchy path first.*
+
+** AND NOT ONE OF THEM REMOVES THE CONTRAST **, which is what Δ mostly is — the arm's acoustic
+oscillation sits at $1.040$ of the control's about its own envelope, and every row above leaves that
+between $1.038$ and $1.044$.  *That is the order's own preferred outcome: it is none of these, and the
+receipt says what Δ looks like instead.*
+
 Each is a few kilobytes: a strided ℓ grid and its D_ℓ, nothing else.  They are inputs to receipts,
 not results in themselves, and every one of them is reproducible from the command in the table.

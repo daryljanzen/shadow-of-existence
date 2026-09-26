@@ -3871,3 +3871,104 @@ the split is not run.*
 
 ⌗ *`receipts/P15_CR_cosmology/P15_the_shared_fraction_does_not_mean_what_i_said_and_the_peak_trough_pattern_is_the_arms_alone.py`
 — 14 gates, four controls. Phrase registered in `corpus/check_withdrawn.py`.*
+
+
+# ⚑⚑ r6885+cc66.35 — THE MODEL DIFFERENCE IS AN ACOUSTIC **CONTRAST** DIFFERENCE, AND THE REJECTION IS NOT ONE SKY'S LUCK
+
+**⌗ THE DECOMPOSITION (179 bins, $\ell\le1900$, both arms at their own 185-bin minima).**
+
+| | |
+|---|---|
+| $\chi^2_{\rm ctl}$ | $177.88$ |
+| $2\langle r_{\rm ctl},\Delta\rangle$ | $+27.82$ |
+| $\lVert\Delta\rVert^2$ | $\mathbf{77.26}$ |
+| $\chi^2_{\rm arm}$ (sum, exact) | $282.96$ |
+| $\lVert\Delta\rVert^2$ as a share of the $+105.08$ excess | $\mathbf{73.5\%}$ |
+| cross term against its sky-random null $2\lVert\Delta\rVert=17.58$ | $\mathbf{+1.58\sigma}$ |
+| $E[\chi^2_{\rm arm}]$ on a typical sky $= n+\lVert\Delta\rVert^2$ | $256.3 = \mathbf{1.43}$/bin |
+
+**⌗ THE COEFFICIENT, AND IT IS THE CROSS TERM.**
+
+| | whitened | diagonal |
+|---|---|---|
+| cosine / correlation | $+0.8549$ | $+0.8373$ |
+| norm / rms ratio | $1.2612$ | $1.3569$ |
+| **coefficient** | $\mathbf{1.0782}$ | $1.1367$ |
+
+*`r6885`'s $1.15 = 0.855\times1.34$ multiplies the WHITENED cosine by the DIAGONAL rms ratio.*
+⛭ $b-1 = \langle\Delta,r_{\rm ctl}\rangle/\lVert r_{\rm ctl}\rVert^{2}$ **identically** (to $3\times10^{-16}$),
+so $sd(b)=\lVert\Delta\rVert/\lVert r_{\rm ctl}\rVert^{2}=0.0494$ and $b=1.078\pm0.049$, $+1.58\sigma$.
+Bin cuts $100$–$1996$ / $100$–$1500$ / $200$–$1900$ / $100$–$1900$: $b = 1.075/1.057/1.073/1.078$ at
+$+1.58/+1.07/+1.48/+1.58\sigma$, with $\lVert\Delta\rVert^2$ above the cross term at every one.
+
+**⌗ $\Delta$'s SHAPE.**
+
+| | |
+|---|---|
+| $\Delta/\sigma$ at peaks / troughs | $+0.011$ / $\mathbf{-0.760}$ |
+| $\mathcal{D}_\ell$ ratio arm/control at peaks / troughs | $0.9985$ / $0.9856$ |
+| oscillatory part of $\lVert\Delta\rVert^2$ (envelope poly deg $3/5/7$) | $74.9$ / $67.1$ / $66.4$ of $77.26$ |
+| the oscillatory part's own peak / trough means | $+0.389$ / $-0.420$ |
+| **arm's oscillation about its own envelope, as a fraction of the control's** | $\mathbf{1.0401}$ (window $0.75$–$1.5$ periods: $1.041/1.040/1.036/1.028$) |
+| $\lVert\Delta\rVert^2$ in $\ell\,900$–$1500$ | $52.4\%$ |
+
+**⌗ WHAT $\Delta$ IS ORTHOGONAL TO (amplitude marginalised).**
+
+| direction | cos with $\Delta$ | share of $\lVert\Delta\rVert^2$ |
+|---|---|---|
+| amplitude (the fitted $A$) | $-0.0027$ | $0.00\%$ |
+| position (peak rescale) | $+0.0990$ | $0.98\%$ |
+| tilt $\delta n_s$ | $+0.0444$ | $0.20\%$ |
+| damping shape | $-0.0776$ | $0.60\%$ |
+| **CONTRAST (built from the control alone)** | $\mathbf{+0.7151}$ | $\mathbf{51.13\%}$ |
+| span of position+tilt+damping | | $5.73\%$ |
+| **span with the contrast direction** | | $\mathbf{66.84\%}$ |
+
+*Contrast direction across its one window: $51.3/51.1/50.2/46.2\%$.*
+
+**⌗ THE SHORT LIST, each knob off BOTH arms.**
+
+| candidate | $\lVert\Delta_{\rm off}\rVert^2$ | of base | cos with $\Delta$ | contrast |
+|---|---|---|---|---|
+| $LN\,12\to24$ (neutrino depth) | $72.37$ | $93.7\%$ | $+0.999$ | $1.0393$ |
+| `NOISW=1` (early ISW) | $71.70$ | $92.8\%$ | $+0.974$ | $1.0438$ |
+| `DRE=0` (driving, Euler half) | $52.74$ | $68.3\%$ | $\mathbf{-0.163}$ | $1.0395$ |
+| `DRC=0` (driving, continuity half) | $67.65$ | $87.6\%$ | $+0.978$ | $1.0384$ |
+| **base** | $77.26$ | $100\%$ | $+1.000$ | $\mathbf{1.0401}$ |
+
+*The handover amplitude $0.4835\to0.5$ is excluded EXACTLY without a run: $\hat\Theta$ is set
+$k$-independently, so $\chi^2$ moves by $8.5\times10^{-13}$ and the residual by $3.7\times10^{-14}$.*
+⚠ *`DRE=0` rotates $\Delta$ to cos $-0.16$ while shrinking its norm by a third — $\Delta$ **replaced**,
+not reduced — so the $32\%$ is a norm and not a share; and every row is a large excursion, not a
+derivative.*
+
+**⌗ ⛔ AND A KNOB SHADOW, WITH ITS CALIBRATION.**
+
+*`_SWSRC` and `_DPSRC` are read ONLY inside `los_spectrum`; `HIER=1` takes the other path, which
+carries `_ISW` and not these two. `DPSRC=0` at the refit configuration returns a **bit-identical**
+spectrum on both arms ($0.0$ exactly), and the same knob on the LOS path moves $\mathcal{D}_\ell$ by
+$62\%$ — the pair is what makes it a shadow rather than a null.*
+
+**⌗ THE FIFTH CANDIDATE, ON THE PATH WHERE THE KNOB REACHES.**
+
+| | ‖Δ_LOS‖² | contrast (arm/ctl) | cos with the CONTRAST direction |
+|---|---|---|---|
+| LOS base | $128.43$ | $1.0325$ | — (cos with $\Delta_{\rm HIER}$ $+0.757$) |
+| `DPSRC=0` | $261.62$ | $1.0352$ | ctl $+0.877$, arm $\mathbf{+0.893}$; each arm's own oscillation $\to1.85$ |
+| `SWSRC=0` | $134.05$ | — | arm $\mathbf{-0.791}$; its own oscillation $\to\mathbf{-0.300}$ (**inverts**) |
+
+⇒ ⚑ **The two halves of the source bracket the contrast with opposite signs: the contrast direction IS
+the monopole-to-dipole balance.**
+
+⛔ **BOUND:** *naming the shape is not naming the mechanism; the channel is identified and the cause is
+NOT measured — deleting the Doppler term is all-or-nothing, it leaves the arms' contrast RATIO where it
+was and DOUBLES $\lVert\Delta\rVert^2$, so the arms differ in HOW MUCH the channel supplies and not in
+whether it is there, and measuring that wants the term SCALED and wired into the hierarchy path first;
+$33\%$ of $\lVert\Delta\rVert^2$ is unnamed by any direction here; $LN$ is a direction and not a
+convergence test; the LOS path's $\chi^2$ is not comparable with the hierarchy path's; and nothing here
+bears on transfer-versus-cosmology, which `r6881+cc66.34` withdrew the statistic for.*
+
+⌗ *`receipts/P15_CR_cosmology/P15_the_model_difference_is_an_acoustic_contrast_difference_and_it_is_not_one_skys_luck.py`
+— five parts, **35 gates**. Seven banked pairs at `spectra/r6885_*` with their commands in
+`spectra/README.md`; launchers at `/tmp/n66/r6885/launch{,2}.sh`, idempotent.*
+

@@ -1942,3 +1942,158 @@ and there is nothing shared to amplify at $0.994$ per bin.***
 ⌗ ***Your framing is what made this findable.*** *"All wanting the full covariance behind them" and
 "offered to be overturned" is why I built the tilted control at all instead of just re-running four
 numbers in a better metric — and the tilted control is what caught my own sentence, not yours.*
+
+## ⚑ `r6885` — **THE MODEL DIFFERENCE IS AN ACOUSTIC *CONTRAST* DIFFERENCE, AND YOUR (2) DOES NOT FIRE**
+
+*`receipts/P15_CR_cosmology/P15_the_model_difference_is_an_acoustic_contrast_difference_and_it_is_not_one_skys_luck.py`
+— rc=0, five parts, **35 gates**. Seven banked pairs at `spectra/r6885_*` with every command in
+`spectra/README.md`. **Taking the noise out was the right instruction and it changed the answer
+twice.***
+
+## ⓵ ⚑ YOUR (2) — **$\lVert\Delta\rVert^{2}$ CARRIES IT, SO THE REJECTION IS NOT ONE SKY'S LUCK**
+
+$$\chi^{2}_{\rm arm} = \chi^{2}_{\rm ctl} + 2\langle r_{\rm ctl},\Delta\rangle + \lVert\Delta\rVert^{2}
+\qquad 282.96 = 177.88 + 27.82 + 77.26$$
+
+| | | of the $+105.08$ excess |
+|---|---|---|
+| $\lVert\Delta\rVert^{2}$ — what this construction costs whatever sky we got | $\mathbf{77.26}$ | $\mathbf{73.5\%}$ |
+| cross term — how unluckily it lines up with *this* realisation | $+27.82$ | $26.5\%$ |
+
+***So your conditional — "if the cross term carries the excess and $\lVert\Delta\rVert^{2}$ is small,
+part of the rejection is a fluke of one sky" — does not fire.*** *And the sharper way to say it:
+**set the cross term to its expectation of zero and the arm still scores $n+\lVert\Delta\rVert^{2}
+= 256.3$, which is $\mathbf{1.43}$ per bin on a TYPICAL sky** against the control's $0.994$. The
+cross term has a null of its own — $sd = 2\lVert\Delta\rVert = 17.58$ — and $+27.8$ is
+$\mathbf{+1.58\sigma}$ of it: unlucky, not decisive.*
+
+## ⓶ ⛭ YOUR (1) — **THE $1.15$ IS $1.078$, AND IT IS THE CROSS TERM SEEN TWICE**
+
+| | whitened | diagonal |
+|---|---|---|
+| cosine / correlation | $+0.8549$ | $+0.8373$ |
+| norm / rms ratio | $1.2612$ | $1.3569$ |
+| **coefficient** | $\mathbf{1.078}$ | $1.137$ |
+
+***Your $1.15 = 0.855 \times 1.34$ multiplies the WHITENED cosine by the DIAGONAL rms ratio.*** *Taken
+consistently it is $1.078$ or $1.137$, and neither is $1.15$.*
+
+⇒ **And it is not a new quantity at all.** *Identically — to $3\times10^{-16}$ —*
+
+$$b - 1 \;=\; \frac{\langle\Delta,\,r_{\rm ctl}\rangle}{\lVert r_{\rm ctl}\rVert^{2}}
+\;=\; \frac{\text{the cross term}}{2\lVert r_{\rm ctl}\rVert^{2}}$$
+
+*so **the "amplification along the noise direction" and the cross term are one number**, and (1) and
+(2) cannot disagree. With $\Delta$ fixed and the sky a draw, $sd(b) = \lVert\Delta\rVert/\lVert
+r_{\rm ctl}\rVert^{2} = 0.049$:*
+
+> ### $b = 1.078 \pm 0.049$, i.e. $\mathbf{+1.58\sigma}$ from $1.00$
+
+*Stable at $+1.58/+1.07/+1.48/+1.58\sigma$ across your four bin cuts, never reaching $2\sigma$.
+⚠ **So there is no $15\%$ amplification to explain** — which also means both of the candidate
+explanations you named for it, each framed as an amplification of something shared, have nothing to
+act on.*
+
+## ⓷ ⚑ YOUR (3) — **IT IS A CONTRAST, AND THAT IS THE DIRECTION `cc66.33`'s FAMILY WAS MISSING**
+
+| | |
+|---|---|
+| $\Delta/\sigma$ at peaks | $\mathbf{+0.011}$ |
+| $\Delta/\sigma$ at troughs | $\mathbf{-0.760}$ |
+| $\mathcal{D}_\ell$ ratio arm/control, peaks / troughs | $0.9985$ / $0.9856$ |
+| oscillatory share of $\lVert\Delta\rVert^{2}$ | $\mathbf{67}$–$\mathbf{75}$ of $77.3$ |
+| the oscillatory part at peaks / troughs | $+0.389$ / $-0.420$ |
+
+***The two arms agree where the peaks are and differ between them.*** *Split about a smooth envelope,
+the oscillatory part carries the bulk and is **antisymmetric about the envelope** rather than about
+each peak — a phase shift would be the latter. So it is neither a phase nor an envelope:*
+
+> ### The arm's acoustic oscillation is $\mathbf{1.040}$ times the control's about its own envelope
+
+*(Window $0.75$ to $1.5$ acoustic periods: $1.041 / 1.040 / 1.036 / 1.028$.)*
+
+**⌗ AND WHAT IT IS ORTHOGONAL TO, WHICH YOU ASKED FOR AS WELL AS THE SHAPE.**
+
+| direction, amplitude marginalised | cos with $\Delta$ | share of $\lVert\Delta\rVert^{2}$ |
+|---|---|---|
+| amplitude (the fitted $A$) | $-0.003$ | $0.00\%$ |
+| position (peak rescale) | $+0.099$ | $0.98\%$ |
+| tilt $\delta n_s$ | $+0.044$ | $0.20\%$ |
+| damping shape | $-0.078$ | $0.60\%$ |
+| **span of the three** | | $\mathbf{5.73\%}$ |
+| ⚑ **CONTRAST, built from the CONTROL alone — no run, nothing fitted** | $\mathbf{+0.715}$ | $\mathbf{51.13\%}$ |
+| **span with contrast added** | | $\mathbf{66.84\%}$ |
+
+***That is what "amplitude, tilt, damping and position together do not account for the shape
+rejection" was pointing at: the family was missing a direction, and the direction has a name.***
+⌗ *Where it lives: $52.4\%$ of $\lVert\Delta\rVert^{2}$ in $\ell = 900$–$1500$, present everywhere,
+not localised. Its one tunable — the envelope window — gives $51.3/51.1/50.2/46.2\%$ across a factor
+two, so it is reported over a range rather than chosen.*
+
+## ⓸ YOUR (4) — **THE NEGATIVE YOU SAID YOU WOULD RATHER HAVE**
+
+**⌗ THE HANDOVER AMPLITUDE IS EXCLUDED EXACTLY, AND WITHOUT A RUN.** *The instrument sets
+`_That0 = (-T(xe)/2) * ones(nk)` — ***$k$-INDEPENDENT***. So $0.4835 \to 0.5$ scales $C_\ell$ by
+$1.0694$ at every $k$ and **the single fitted amplitude absorbs it**: $\chi^{2}$ moves by
+$8.5\times10^{-13}$ and the residual by $3.7\times10^{-14}$. *It cannot be in $\Delta$ at all.**
+
+**⌗ THE OTHER THREE, EACH SWITCHED OFF ON *BOTH* ARMS.** *That is the test, not the per-arm shape: a
+knob whose shape looks like $\Delta$ still carries none of it if it does the same thing to both arms
+and cancels in the difference.*
+
+| candidate | $\lVert\Delta_{\rm off}\rVert^{2}$ | of base | cos with $\Delta$ | contrast |
+|---|---|---|---|---|
+| neutrino depth $LN\,12\to24$ | $72.37$ | $93.7\%$ | $+0.999$ | $1.0393$ |
+| early ISW, `NOISW=1` | $71.70$ | $92.8\%$ | $+0.974$ | $1.0438$ |
+| driving, **Euler** half `DRE=0` | $52.74$ | $\mathbf{68.3\%}$ | $\mathbf{-0.163}$ | $1.0395$ |
+| driving, **continuity** half `DRC=0` | $67.65$ | $87.6\%$ | $+0.978$ | $1.0384$ |
+| **base** | $77.26$ | $100\%$ | $+1.000$ | $\mathbf{1.0401}$ |
+
+***Not one of them removes the contrast.*** ⚠ *And `DRE=0`'s $32\%$ is **not** a share: it rotates
+$\Delta$ to cosine $-0.16$, so $\Delta$ is **replaced** rather than reduced. Every row is a large
+excursion and not a derivative — both arms move far from their own minima — so the column answers
+"does $\Delta$ survive this" and nothing more.*
+
+## ⓹ ⛔ AND THE FIFTH CANDIDATE, WHICH THE SHAPE NAMES BY ITSELF — **PLUS A KNOB SHADOW**
+
+*Your list has no entry for the oscillating-to-smooth ratio of the source, and the instrument's own
+`los_spectrum` docstring already describes exactly what $\Delta$ looks like: a mis-weighted Doppler
+term **"fills the troughs at high multipole … while leaving the FIRST peak's position almost alone"**.*
+
+⛔ ***But `_SWSRC` and `_DPSRC` are read ONLY inside `los_spectrum`, and `HIER=1` — the path every
+refit number in this sector is computed on — does not take it.*** *`DPSRC=0` at the refit
+configuration returns a **bit-identical** spectrum on both arms ($0.0$ exactly). The same switch on
+the line-of-sight path moves $\mathcal{D}_\ell$ by $\mathbf{62\%}$. **The pair is what makes it a
+shadow rather than a null**, which is the calibration `r4558`'s own note demands — and it is the same
+shape as the `NS` literal I hit at `cc66.17`.*
+
+**⌗ SO IT IS TESTED WHERE THE KNOB REACHES.**
+
+| on the LOS path | $\lVert\Delta_{\rm LOS}\rVert^{2}$ | contrast | cos with the CONTRAST direction |
+|---|---|---|---|
+| base | $128.43$ | $1.0325$ | cos with $\Delta_{\rm HIER}$ $= \mathbf{+0.757}$ |
+| `DPSRC=0` (dipole off) | $261.62$ | $1.0352$ | ctl $+0.877$, **arm $+0.893$**; each arm's own oscillation $\to \mathbf{1.85}$ |
+| `SWSRC=0` (monopole off) | $134.05$ | — | **arm $-0.791$**; its own oscillation $\to \mathbf{-0.300}$ — it **inverts** |
+
+⇒ ⚑ ***The two halves of the source bracket the contrast with opposite signs, so the contrast
+direction IS the monopole-to-dipole balance*** — *which neither switch alone would have established.
+And $\Delta$ agrees between the two instrument paths at cosine $+0.76$ carrying the same contrast
+excess, so it is the configuration's and not one path's.*
+
+## ⓺ ⚠ WHAT I HAVE **NOT** DONE, AND THE TWO THINGS I WOULD WANT ORDERED NEXT
+
+1. ***The channel is identified and the cause is NOT measured.*** *Deleting the Doppler term is
+   all-or-nothing: it leaves the arms' contrast **ratio** where it was ($1.033 \to 1.035$) and
+   **doubles** $\lVert\Delta\rVert^{2}$. **So the arms differ in HOW MUCH that channel supplies, not
+   in whether it is there** — and measuring that wants the term ***scaled*** rather than deleted.
+   `DPSRC` is already a float, so the scan is cheap; it just has to run where the knob is wired.
+2. ***Wiring `SWSRC`/`DPSRC` into the hierarchy path.*** *That is an instrument change and not a
+   receipt's to make, so I have reported the shadow and left it. **Until it is wired, the fifth
+   candidate cannot be tested on the path the refit numbers come from** — and the LOS path's
+   $\chi^{2}$ is not comparable, so I have read only shapes and within-path ratios from it.*
+3. ⚠ ***$33\%$ of $\lVert\Delta\rVert^{2}$ is unnamed by any direction in this receipt.***
+4. ⚠ ***$LN$ is a direction, not a convergence test***: *doubling the depth removes $6.3\%$, and the
+   sign says more depth removes more. If you want the neutrino sector closed rather than ranked, that
+   is an $LN$ ladder and I have not run one.*
+5. ⌗ *Nothing here bears on transfer-versus-cosmology. `r6881+cc66.34` withdrew the statistic that was
+   being read that way and this adds no replacement for it.*
