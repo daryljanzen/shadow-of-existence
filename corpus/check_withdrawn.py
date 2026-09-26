@@ -259,6 +259,36 @@ REGISTRY = [
      # the word "withdrawn" would be requiring a vocabulary, not a caveat. **
      r"|vacuous gate|could not express the difference|clauses are out of)",
      "corrected r6893+cc66.37; sub-bin the shift grows with multipole and is not a constant"),
+    # r6911+cc66.40.  "THE CONTRAST EXCESS STANDS ON TOP OF THE TROUGH-FILLING CHANNELS, SO THE
+    # RESIDUAL IS LARGER THAN ITS FOUR PER CENT."  `r6897+cc66.39` found three channels that each
+    # SHALLOW the troughs all larger on the arm, and `r6909` added a fourth; the reading taken from
+    # that was that whatever generates the contrast must overcome all of them, so the effect to
+    # explain is BIGGER than the four per cent that survives them.  ** Measured, the contrast
+    # difference is not in the source at all: the same statistic reads 1.047 in multipole and 0.996
+    # at last scattering, so the four channels have nothing to overcome. **  The four channels' own
+    # measurements stand -- each is larger on this arm, and that is not withdrawn; what is withdrawn
+    # is the inference that the residual is therefore larger than four per cent.  ⌗ *In the arm's
+    # SOURCE the oscillation is very slightly SHALLOWER, which is the direction all four point.*
+    ("the-contrast-excess-stands-on-top-of-the-trough-filling-channels",
+     # ⌗ KEYED TO THE PAPER'S WORDING AND TO THE LEDGERS', NOT TO ONE SEAT'S.  `P15`
+     # \S`sec:refit-bound` said "the contrast excess stands on top of them"; the map and the
+     # frontier said "the effect to explain is BIGGER than the four per cent" and "the residual
+     # larger than it looked".  ** A registry keyed to one phrasing checks one document, which is
+     # the lesson the entry above this one was widened twice to record. **
+     r"contrast excess stands on top of"
+     r"|(?:residual|effect)[^.\n]{0,40}larger than (?:its |the )?four per cent"
+     r"|(?:effect|thing) to explain is (?:much )?(?:BIGGER|bigger)"
+     r"|must overcome all (?:three|four)"
+     r"|makes the residual larger than",
+     # ⌗ AND THE MARKER SET IS WIDE ON PURPOSE, because the documents that carry this claim are the
+     # ones whose SUBJECT is its withdrawal -- the order log, the map entry and the frontier row all
+     # quote the reading in the course of striking it, and each does so in its own words.
+     r"(?:r6911|withdrawn|WITHDRAWN|corrected|CORRECTED"
+     r"|not in the source|is not upstream|nothing to overcome|nothing had to"
+     r"|manufactured between|between \$?k\$? and|between wavenumber and multipole"
+     r"|dissolves|four-for-four)",
+     "corrected r6911+cc66.40; the contrast difference is not in the source, so the four channels "
+     "have nothing to overcome and the residual is not larger than four per cent"),
 ]
 
 SKIP = ('appendix_receipts',)
@@ -391,6 +421,15 @@ HISTORICAL = {
 # a pattern that is broken.  Each entry therefore carries a KNOWN-POSITIVE string, taken verbatim
 # from the text the withdrawal removed, and this gate fails if any pattern stops matching its own.
 POSITIVES = {
+    # r6911+cc66.40: the paper's own clause, and the two ledger forms.
+    "the-contrast-excess-stands-on-top-of-the-trough-filling-channels": [
+        "channels that would each shallow the troughs are all larger here, and the contrast excess "
+        "stands on top of them.",
+        "the trough-filling a contrast excess would be a shortage of is not short on this arm, "
+        "which makes the residual larger than its four per cent rather than smaller",
+        "So whatever generates the contrast must overcome all three, and the effect to explain is "
+        "BIGGER than the four per cent that survives them.",
+    ],
     # r6893+cc66.37: both forms cc66.36 used -- the gate's own name and the summary line.
     "the-free-streaming-shift-is-uniform-across-the-first-four-peaks": [
         "...and it is UNIFORM across the first four peaks on both arms, which is what a PHASE ",

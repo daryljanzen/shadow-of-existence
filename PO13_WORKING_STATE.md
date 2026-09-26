@@ -4405,3 +4405,104 @@ both; and the width story `r6897` withdrew before sending is not reinstated.*
 `computations/beyond_the_wall/r6897_directions/`. **Every long run sliced on `KBATCH`**, which
 `r6895+cc66.38` measured as exact to $10^{-16}$ — made one revision ago while testing something else,
 and this is the first order it paid for.*
+
+# ⛭⛭ r6911+cc66.40 — THE CONTRAST IS NOT IN THE SOURCE: IT IS MANUFACTURED BETWEEN $k$ AND $\ell$
+
+***`r6911`'s order: take the contrast statistic already in hand and apply it BEFORE the projection as
+well as after. Three outcomes named in advance — $\approx1.04$ = made in the dynamics; $\approx1.00$ =
+manufactured between $k$ and $\ell$; or a split, and the split is the measurement.***
+
+⚑ **The answer is the second, and it is clean.**
+
+| rung | what it is | ratio arm/control |
+|---|---|---|
+| 1 | the source at last scattering, $S(k,\eta_{\rm LS})^{2}$ | $0.9960$ |
+| 1m | monopole $+$ Doppler only (what the order names) | $0.9937$ |
+| 1s | monopole alone | $0.9923$ |
+| 2 | the source $\eta$-integrated, $(\int S\,\mathrm d\eta)^{2}$ — the transfer with the kernel taken out | $0.9923$ |
+| 3 | the raw $D_\ell$ from the same run | $1.0452$ |
+| 4 | lensed, binned, amplitude-fitted — `cc66.35`'s own object | $1.0468$ |
+
+*Over four envelope windows, both envelope definitions, three term subsets, four $q$ sub-windows and
+with or without the $k$-measure, **the source rungs span $0.971$–$1.005$ and the $\ell$ rung
+$1.042$–$1.052$.*** The statistic's floor is $0.6$ per cent, set by its own bias on a **known injected**
+contrast; the step is $5.3$.
+
+## ⛔ SO THE FOUR-FOR-FOUR DISSOLVES RATHER THAN BEING SOLVED
+
+*`r6909`'s sharpest observation was that four channels which each **shallow** the troughs are all larger
+on this arm, so something upstream had to be big enough to overcome all four — and therefore the effect
+to explain was **bigger** than four per cent.* ⇒ ***Upstream the arm's oscillation is $0.996$ of the
+control's — very slightly SHALLOWER, which is exactly the direction all four point.*** **Nothing
+overcomes them because nothing had to.** *The effect is not bigger than four per cent; it is not upstream
+at all, and the search has been in the wrong half of the chain.*
+
+## ⛔ THE NAMED ROUTE IS OUT TWICE OVER — FIRST A PREMISE CORRECTION, THEN A MEASUREMENT
+
+*`r6911`'s route: the arms' distances differ by six per cent while their acoustic angles agree, so the
+same $\ell$ samples a different wavenumber on each and the Bessel kernel has a different width in $k$.*
+
+⚠ ***The pair $13005$ against $13865$~Mpc is the SUPERSEDED configuration's*** ($r_s=135.46/144.53$),
+where the arm's was the smaller. At the adjudicated minima:
+
+| arm | $D_M$/Mpc | $r_s$/Mpc | $\ell_A$ |
+|---|---|---|---|
+| control | $13954.354$ | $145.382$ | $301.543$ |
+| arm | $14017.039$ | $145.911$ | $301.799$ |
+
+⇒ **$+0.449$ per cent, and the ARM'S IS THE LARGER** — wrong in size and wrong in sign. *The
+cancellation the route relies on is real, $\ell_A$ agreeing to $0.085$ per cent, so it is the six per
+cent and not the reasoning that fails.*
+
+⇒ **And the route is eliminated by measurement anyway.** *`SRCXS` projects one arm's own source through
+the **other's** comoving distance, one arm at a time, so the geometry is the only thing that moves: the
+control's contrast falls $0.63$ per cent, the arm's rises $0.59$, and **removing the difference
+altogether takes the arm/control ratio UP, $1.045\to1.051$.***
+
+## ⌗ WHERE IN THE PROJECTION, AND NO FURTHER
+
+*The arm's projection **retains $1.054$ times as much** of its own source oscillation as the control's
+does — rms $0.689\to0.166$ against $0.684\to0.174$, suppression $0.2413$ against $0.2543$. That is the
+whole finding as one number per arm.* And four things it is **not**:
+
+- not the **visibility width** acting before the kernel: rung 1 → rung 2, where an $\eta$-average acts
+  with no kernel, moves the ratio by $-0.4$ per cent. *The arm's visibility is $15$ per cent wider,
+  which shallows contrast — a bound on one route, not the identification of another.*
+- not the **lensing or the binning**: $1.045\to1.047$.
+- not the **$k$ grid**. `KCONT=1` replaces the arm's physical ladder with the uniform continuum
+  sampling at the control's own $2547$ modes, physics untouched: the $\ell$ rung is unchanged at
+  $1.0452$ and the source rungs move to $1.0041$ and $0.9992$. *That switch is shown non-null, so this
+  is a null from a connected knob and not `r4558`'s unwired one.*
+- not the **distance**, per above.
+
+*And the excess **rises** with wavenumber — $1.031$ below $q=3$ to $1.065$ above — where the source
+ratio is flat, $0.992\to0.992$.*
+
+## ⛔ THE GUARD CHANGED THE DEFINITION, AND THAT IS PART OF THE MEASUREMENT
+
+*`r6885+cc66.35`'s envelope is a running **geometric** mean, which needs a strictly positive quantity.
+$D_\ell$ is; **the source power is not** — it comes within a part in $10^{8}$ of its own median at the
+troughs, where a log-mean is dominated by near-zeros and $(P-e)/e$ diverges.* ⇒ **The envelope is a
+running arithmetic mean at EVERY rung**, both definitions are reported side by side, and they differ by
+$0.003$ on the $\ell$ rung against the $0.05$ step being measured. *`cc66.35`'s $1.0401$ is reproduced
+exactly under its own definition and is not superseded.*
+
+⌗ **And the abscissa was measured rather than assumed.** $q=kr_s/\pi$ in $k$ and $q=\ell/\ell_A$ in
+$\ell$ are the same variable under the sharp-visibility map $\ell=kD_M$, because $\ell_A=\pi D_M/r_s$ —
+*so the two arms' acoustic period in $q$ was measured: $1.0000$ against $0.9978$ at the source and
+$1.0347$ against $1.0338$ in $\ell$, agreeing to $0.22$ and $0.09$ per cent, with best-fit lags of
+$+0.005$ and $-0.001$.* **A regression of two oscillations at a frequency mismatch reads as a contrast
+deficit, and that is the one way this measurement could have come out low for no reason.**
+
+⛔ **BOUND:** *no mechanism within the projection — the order asks for none and none is offered; no
+claim that the projection is the wrong projection, nothing here touching `prop:flat`; no claim that the
+visibility width is its route; and no claim that the source is identical on the two arms — it is
+$0.992$, a real deficit of about the statistic's own floor, and that sign is the four channels' own.*
+
+⌗ *`receipts/P15_CR_cosmology/P15_the_acoustic_contrast_is_not_in_the_source_and_the_projection_makes_it_without_the_distance.py`
+— seven parts, **45 gates**. Four banks at `spectra/r6911_*`; launchers at
+`computations/beyond_the_wall/r6911_directions/`. The instrument gained `SRCSAVE` and `SRCXS`, both
+bit-identical when unset on both arms — **and `SRCXS=1.5` with `SRCSAVE` unset is bit-identical too**,
+which is what makes the swap an output of the save rather than a knob on the physics. The sliced runs
+reproduce the banked $185$-bin refit spectra to $4.9\times10^{-15}$ relative, **which is what makes the
+$k$ end and the $\ell$ end one run rather than two.***

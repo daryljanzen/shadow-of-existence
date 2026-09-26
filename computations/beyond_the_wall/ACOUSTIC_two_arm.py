@@ -903,6 +903,29 @@ _ISW = 0.0 if os.environ.get('NOISW', '0') == '1' else 1.0
 #     scale, so the switch demonstrably reaches the term it names.
 _SWSRC = float(os.environ.get('SWSRC', '1'))   # g (Theta_0 + Psi), the monopole
 _DPSRC = float(os.environ.get('DPSRC', '1'))   # (1/k^2) d/deta [g theta_b], the Doppler dipole
+# ⛭⛭ ** SRCSAVE: THE SOURCE ITSELF, SAVED AT TWO POINTS IN THE CHAIN — r6911+cc66.40. **
+# *`r6911` asks where the acoustic contrast is MADE: in the k-space dynamics, or between k and ell.
+# One statistic answers that only if its INPUT exists at both ends, and the reporting path published
+# the ell end alone -- `Dl` -- so the k end had to be saved.*  ** It writes the source at last
+# scattering AND the source's eta-integral, term by term, on the k grid the run reports. **
+#   ⌗ *Not `ZPSAVE` again: that saves the FIELDS (Theta_0, Psi, theta_b) and the source is a
+#     different object -- g times a combination, plus two eta-derivatives.  The zero point is read
+#     off fields; a contrast is read off the source.*
+# ⚠ These two names are loaded ONLY inside `if _SRCS:` blocks, so with `SRCSAVE` unset neither is
+#   read, nothing is written, and the run is byte-identical -- which is gated on both arms.
+_SRCS = os.environ.get('SRCSAVE')
+# ⛭ ** SRCXS: THE SAME SOURCE PROJECTED WITH THE OTHER ARM'S COMOVING DISTANCE. **  The arms' D_M
+# differ by 6.6% while their acoustic angles agree, so at fixed ell the Bessel kernel samples a
+# DIFFERENT wavenumber on each arm and has a different width in k.  `x0 -> SRCXS * x0` is that swap.
+#   ⇒ *It is exact to the visibility width over D_M -- 43.6 against 13005 Mpc, a part in 300 --
+#     because x0 = eta_0 - eta is D_M to that accuracy across the source's whole support.*
+# ⛔ ** IT CHANGES NO REPORTED QUANTITY. **  The swapped spectrum is an EXTRA array inside the save,
+#   never `Cl`, and it is read only where `_SRCS` is already true.  *So this is not a knob on the
+#   physics: `SRCXS` with `SRCSAVE` unset does nothing at all, and that is the same gate.*
+_SRCXS = float(os.environ.get('SRCXS', '1'))
+# the per-batch source accumulator; `hier_run` concatenates it over the k-batches, which is exact
+# because every entry is indexed by k alone -- the eta axis is integrated or sliced out here.
+_SRCB = []
 # ⛔⛭⛭ ** AND r6889+cc66.36: THEY REACHED ONE PATH OF THREE, WHICH IS THE SHADOW AGAIN. **
 # *r4558 placed these beside `_ISW` and calibrated them -- on `los_spectrum`.  ** The HIERARCHY path
 # builds its own source at the foot of `los_hier` and the LOW-ELL path builds a third at the foot of
@@ -1285,6 +1308,19 @@ def hier_run(kk, EE, L_A_, D_M_, R_S_):
                  arm=ARM, r_s=R_S, D_M=D_M, sliced=bool(_ksl))
         print(f"  ZPSAVE: {len(_kz)} modes at eta = {EE[_zpi]:.2f} (visibility peak {ETA_LS:.2f}, "
               f"FWHM {ETA_LS_W:.2f}), 1+R = {1+float(Rb_of(EE[_zpi])):.5f} -> {_zps}")
+    if _SRCS:
+        _n = {q: np.concatenate([d[q] for d in _SRCB]) for q in _SRCB[0] if q != 'Cl_swap'}
+        if 'Cl_swap' in _SRCB[0]:
+            _n['Dl_swap'] = sum(d['Cl_swap'] for d in _SRCB) * ls * (ls + 1)
+        np.savez(_SRCS, ls=ls, eta_ls=ETA_LS, eta_ls_w=ETA_LS_W,
+                 eta_used=EE[int(np.argmin(np.abs(EE - ETA_LS)))],
+                 n_eta=len(EE), xswap=_SRCXS, arm=ARM, r_s=R_S, D_M=D_M, l_A=L_A, ns=NS,
+                 ombh2=OMBH2, R_peak=float(Rb_of(ETA_LS)), sliced=bool(_ksl), **_n)
+        print(f"  SRCSAVE: the source at eta = {EE[int(np.argmin(np.abs(EE - ETA_LS)))]:.2f} and its "
+              f"eta-integral, {len(_n['k'])} modes, term by term; split residual "
+              f"{float(np.max(_n['resid'])):.3e}"
+              + (f"; and the same source at x0 * {_SRCXS:.6f}" if _SRCXS != 1.0 else "")
+              + f" -> {_SRCS}")
     Dl = Cl * ls * (ls + 1)
     return ls, Dl
 
@@ -1337,6 +1373,35 @@ def _project(kb, ee, Y, ls, x0, e_sw):
          / kb[None, :] ** 2)
     dk = np.gradient(kb)
     P = kb ** (NS - 1) / kb * dk
+    # ** r6911+cc66.40 -- THE SOURCE, TERM BY TERM, BEFORE THE KERNEL TOUCHES IT. **
+    # *Placed after `P` on purpose: the k-measure is saved WITH the source so the receipt can show
+    # that including it or leaving it out moves the contrast statistic by less than the statistic's
+    # own resolution, rather than asserting that a smooth factor is removed by the envelope.*
+    if _SRCS:
+        _il = int(np.argmin(np.abs(ee - ETA_LS)))
+        _sw = g_ * (_SWSRC * (Th0 + Ps))
+        _dp = _DPSRC * np.gradient(g_ * tb, ee, axis=0) / kb[None, :] ** 2
+        _iw = _ISW * et * (np.gradient(Ph, ee, axis=0) + np.gradient(Ps, ee, axis=0))
+        _pl = (g_ * (_PI * Pi / 4)
+               + _PI * 0.75 * np.gradient(np.gradient(g_ * Pi, ee, axis=0), ee, axis=0)
+               / kb[None, :] ** 2)
+        # the four terms are the source, and the receipt gates that they sum to it -- so a reader
+        # need not take the split on trust, and a future edit to `S` that forgets this block fails.
+        _md = _sw + _dp                              # the monopole-plus-Doppler combination
+        _rec = dict(k=kb.copy(), P=P.copy(),
+                    sw_ls=_sw[_il].copy(), dp_ls=_dp[_il].copy(), isw_ls=_iw[_il].copy(),
+                    pol_ls=_pl[_il].copy(), md_ls=_md[_il].copy(), S_ls=S[_il].copy(),
+                    sw_i=np.trapezoid(_sw, ee, axis=0), dp_i=np.trapezoid(_dp, ee, axis=0),
+                    isw_i=np.trapezoid(_iw, ee, axis=0), pol_i=np.trapezoid(_pl, ee, axis=0),
+                    md_i=np.trapezoid(_md, ee, axis=0), S_i=np.trapezoid(S, ee, axis=0),
+                    resid=np.max(np.abs(S - (_sw + _dp + _iw + _pl)), axis=0))
+        if _SRCXS != 1.0:
+            _os = np.empty(len(ls))
+            for _j, _l in enumerate(ls):
+                _J = spherical_jn(int(_l), kb[None, :] * (_SRCXS * x0)[:, None])
+                _os[_j] = np.sum(P * np.trapezoid(S * _J, ee, axis=0) ** 2)
+            _rec['Cl_swap'] = _os
+        _SRCB.append(_rec)
     out = np.empty(len(ls))
     for j, l in enumerate(ls):
         J = spherical_jn(int(l), kb[None, :] * x0[:, None])
