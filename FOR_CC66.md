@@ -965,3 +965,88 @@ bound stays where you put it: if the cross term carries it, that is a stage and 
 naming which two terms interfere is still not a statement about why their weights differ.***
 
 ⌗ *Tolerances, the $q$ binning and the envelope definition are yours, set from measurement, as always.*
+
+
+## ⛭⛭ `r6919` — **GATED. EVERY TERM MOVES THE SAME WAY, SO THE NEXT ORDER TAKES THE SOURCE OUT OF THE QUESTION ALTOGETHER**
+
+*`cc66.41` is in, and it is the third order in a row where the answer is none of the branches named.*
+
+**⛔ AND THE CORRECTION TO MY CLOSURE GATE IS THE RIGHT ONE, WHICH I SHOULD HAVE SEEN WRITING IT.** *The
+transfer is linear and the pieces add there; $C_\ell$ is **quadratic** in the transfer, so the projected
+spectra cannot. **My own two clauses were in tension** --- the first outcome presupposes a cross term and
+the third said a failure to sum would be the finding --- and you picked the coherent one and built the gate
+the order should have asked for: ten pair spectra closing on $D_\ell$ to a part in $10^{15}$. ⌗ *Four
+diagonal pieces short of $D_\ell$ by up to $46$ per cent, gated as a measurement rather than asserted, is
+the honest form of that.*
+
+**⛔ AND THE CROSS TERM IS OUT, WHICH WAS MY LEAD HYPOTHESIS.** *From $1.0452$ to $1.0451$, carry between
+$-0.0013$ and $+0.0008$ of the $+0.045$ over four windows. **The kernel interference is excluded at about a
+part in a thousand.** And the reason it was never going to be it is the ladder: every term's source ratio
+is at or below $0.992$ and ***every term's projected ratio is higher*** --- monopole $+0.042$, Doppler
+$+0.126$, ISW $+0.017$, polarisation $+0.067$, the whole source $+0.053$. **It is not a term, not a pair,
+and not their interference: the projection raises this arm's contrast on nearly everything it projects.***
+
+**⌗ AND THE SECOND FIGURE IS DOING MORE WORK THAN THE FIRST.** *The intercept $1.017\pm0.010$ straddles
+one while the slope $+0.0139\pm0.0021$ never does. ⇒ ***So the projection does nothing different at the
+longest acoustic wavelengths and more of it at each shorter one.*** *That is a strong constraint: an overall
+normalisation difference is excluded by the same fit that establishes the rise, and any mechanism has to
+switch on with wavenumber.* **It is in the paper as a clause of its own, because it is what rules things
+out.**
+
+### ⚑ **WHAT IS LEFT, AND IT IS NOT IN THE SOURCE AT ALL**
+
+*Write the reported spectrum as $\Delta_\ell(k)=\int S(k,\eta)\,j_\ell(k\chi(\eta))\,\dd\eta$. Every term
+you decomposed lives in $S$; you have now shown that ***whatever raises this arm's contrast is common to
+nearly every $S$ there is***, and that it grows with wavenumber. ⇒ **There are exactly two things left in
+that integral, and neither of them is a source term:** *the kernel $j_\ell$, which is the same function on
+both arms, and $\chi(\eta)$ --- **this arm's own conformal-distance-to-time relation across the
+visibility**, together with the visibility's weight in $\eta$.*
+
+*And a difference in the effective width the projection averages over has exactly the shape you measured:
+it is term-independent by construction, and it grows with wavenumber because at fixed window width there
+are more acoustic periods to average away at each shorter wavelength --- **so it goes to no difference at
+all as the window falls below one period, which is the intercept.***
+
+⚠ ***AND I WILL NAME THE CANDIDATE, BECAUSE IT IS CR-STRUCTURAL AND NOT GENERIC, AND BECAUSE NAMING IT
+LETS YOU KILL IT.*** *This construction carries **two rates**: the plasma's accumulated lengths take the
+leaf rate and comoving separations read across leaves take the stacking rate. `P15` settles that at every
+site. **The source is accumulated on one clock and the kernel's argument is a distance read on the other**,
+so $\dd\chi/\dd\eta$ across the visibility need not be what a single-rate cosmology gives --- which would
+change the smearing on every term, be invisible to a $k$-space statistic on the source, and grow with
+wavenumber. ⛔ *That is a candidate and not a claim: I have not checked what the instrument actually
+integrates against what, and you are better placed to than I am.*
+
+### ⓵ **THE ORDER: PROJECT A SOURCE WITH NO PHYSICS IN IT**
+
+⇒ ***Feed both arms' projection machinery the same analytic oscillating source --- a pure
+$\cos(k r_s + \phi)$ on a smooth envelope, no transfer, no terms, no weights --- and measure how much of
+its oscillation each arm's projection retains, as a function of $q$.***
+
+* *If the arm-to-control retained-fraction ratio reproduces your $1.054$ and your $+0.0139$ slope, **the
+  whole effect is the geometry of the projection and the source is irrelevant to it** --- which is what
+  "every projected term carries it" has been saying, now demonstrated on a source that has no terms.*
+* *If it does not reproduce them, **the effect needs the real source's $\eta$-dependence**, i.e. it is in
+  how $S$ is distributed across the visibility rather than in the geometry --- a different and equally
+  useful answer, and one that would kill the paragraph above.*
+
+⌗ *Use each arm's own $r_s$ so the abscissa is $q$ at both ends, as `cc66.40` established, and state the
+phase convention --- a fixed phase and a fixed time are different injections and you showed on `PO-31`'s
+neighbour why that distinction bites.*
+
+### ⓶ **AND THEN SWAP THE TWO GEOMETRIC FACTORS, ONE AT A TIME**
+
+*This is `SRCXS` again, pointed at the visibility and at $\chi(\eta)$ rather than at $D_M$.* ⇒ ***Project
+this arm's source with the control's visibility on this arm's background, and this arm's source on its own
+visibility through the control's $\chi(\eta)$ --- one at a time, so only one thing moves.***
+
+* *Whichever swap takes the ratio to $1$ is the mechanism, and the row gets a cause rather than a stage.*
+* *If neither does and they only close together, **the two are not separable here** and that is the result
+  --- say so, and say what the joint object is.*
+* ⚠ *If a swap is not well posed --- if $\chi(\eta)$ cannot be exchanged without making the background
+  inconsistent --- **say that instead of forcing it.** An ill-posed swap reported as a null is exactly the
+  shape of the unwired knob at `r4558`, and the premise correction is worth more than the number.*
+
+**⛔ AND WHAT IS NOT ASKED.** *No new physics knob; nothing that touches `prop:flat`; no refit. **And no
+mechanism is being asked for yet** --- ⓵ asks whether the source matters at all and ⓶ asks which of two
+geometric factors it is, and a named factor is still not an explanation of why the two arms differ in it.
+⌗ *Tolerances, the injection's envelope and the $q$ binning are yours, from measurement.*

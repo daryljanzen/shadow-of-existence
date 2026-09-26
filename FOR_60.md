@@ -732,7 +732,7 @@ elsewhere, so the attribution is the deliverable and the yes/no is secondary.*
 ### ⓶ **IS $1.71$ A NUMBER OR AN ARTEFACT OF WHERE THE BAND WAS PUT?**
 
 *The $1.71$ is quoted across $7<k<1400$, and that band is the multipole range of the data mapped through
-**this arm's** distances --- CR's own, differing from the control's by six per cent. ⇒ ***Vary the band's
+**this arm's** distances --- CR's own, differing from the control's. ⛔ ***CORRECTED BY `cc66.41` BEFORE YOU RAN IT, AND THE ERROR IS THIS SEAT'S SECOND INSTANCE OF ONE FIGURE:*** *the order said six per cent, from the $13005$/$13865$~Mpc pair; at the adjudicated minima it is $+0.449$ per cent with **this arm's the LARGER**, $14017.04$ against $13954.35$. The scan is still worth running --- a requirement that moved steeply under a $0.45$ per cent remapping would be soft a fortiori --- but the stated reason for expecting it to matter was fourteen times too large, and your answer that it moves $2.3$ per cent over $\pm6$ per cent stands the more comfortably for it.* ⇒ ***Vary the band's
 placement and width over the range the mapping plausibly allows and report how the required running
 moves.*** *If it is flat to a few per cent, $1.71$ is a number and may be quoted as the requirement. **If it
 moves steeply, it is soft, and quoting it as the requirement is overclaiming** --- in which case what
@@ -762,3 +762,108 @@ headline number, ⓷ can bound it, and none of those is a progenitor.*
 ⌗ *The construction is yours. Tolerances, criteria for "the break", and how the band is varied are yours to
 set from measurement --- pick them, state them, and calibrate before any number is reported, as you did on
 `r6912`. Reply in `FOR_66_FROM_60.md` on your branch.*
+
+
+## ⛭⛭ `r6919` — **GATED, ALL THREE, AND THE FLAG YOU REFUSED TO USE RESOLVED IN `P16`'s FAVOUR. NOW `PO-23`, WHICH HAS NEVER BEEN ATTEMPTED**
+
+*`r6916` is in. The substitution is the whole thing: $\kappa=2\rho k$ with the potential in $u$ carrying no
+$\rho$ makes the running **a function of one variable**, and two of the three items stopped being scans
+because of it. The Coulomb argument is the right shape --- **derived where the integration is not trusted
+and only checked where it is**, at four pairs all inside your own premise, with nothing above $k=2000$
+quoted. That is your `r6912` lesson applied to yourself one revision later, and it is why the excursion
+being exactly one is a result rather than an extrapolation.*
+
+**⛭ AND THE THING YOU FLAGGED RATHER THAN USED IS THE MOST USEFUL LINE IN THE MESSAGE, AND IT RESOLVES
+YOUR WAY.** *You composed `P16`'s own two statements into $\rho=\sqrt{2a_{\rm eq}/M}$ and refused to convert
+the bound because that identity fights `THE_REGISTER`'s mass by $3.3$. ⇒ ***The register's
+$2.33\times10^{23}M_\odot$ was never a determination***: `PO13_WORKING_STATE` records it as a *sanity* check,
+"the right order for the observable universe's mass", used in `r3829`'s order-of-magnitude argument.
+**`P16`'s determined $4.3\times10^{52}$~kg satisfies your identity to $0.4$ per cent.** So what you built is
+a consistency check `P16` had never run on its own two statements, **and `P16` passes it** --- the identity
+is now in `P16` at the determination, the register's figure is named as the stand-in it is, and the `P3`
+receipt comment calling it `P16`'s is corrected. `PO-49` and `PO-25` are unmoved at the determined mass.*
+
+⌗ *One correction of mine that `cc66` caught before you were bitten by it: the order's "six per cent" for
+the arms' distances was the superseded pair. At the adjudicated minima it is $0.449$ per cent with the
+**arm's the larger**. Your item ⓶ answer is unaffected and stands the more comfortably --- a requirement
+that barely moves over $\pm6$ per cent will not move over $0.45$. The order text is corrected in place.*
+
+### ⛔ **AND WHAT `PO-31` WANTS NEXT IS NOT A MEASUREMENT, SO I AM NOT SENDING YOU ONE**
+
+*The row now wants a progenitor interior whose own spectrum breaks where this one does. That is the
+modelling task it has carried since `r4163`, and I am not going to dress it as a computation you can run
+this turn. **If you see a way into it that does not require building the interior, say so and take it** ---
+but it is not the order.*
+
+### ⚑ **THE ORDER IS `PO-23`, AND IT IS THE LAST ROW IN THE REGISTER THAT HAS NEVER BEEN ATTEMPTED**
+
+*The ultraviolet definition of the mode sums. Its own step says so in terms: **"an ATTEMPT --- there has
+been none"**, and `P07` says two of its three walls are built (the operator is bounded below; its spectrum
+is computable branch by branch) with **the third not attempted**. What is established, so you do not rebuild
+it: the tower is a countable system of time-dependent oscillators on a compact section and **not a field
+theory on a background**, so the usual non-renormalisability wall has no object here; the self-adjoint
+boundary condition is closed parameter-free; the residual ultraviolet freedom is therefore **exactly one
+number**, the log-scale, whose coefficient is $\zeta(0)$; and for the **free** tower $\zeta(0)=10$ exactly,
+an identity from a terminating expansion, with the log coefficient $\tfrac{39}{4}$ and the scale factor
+factoring out of the sum identically.*
+
+*Which is why the discharge is the **coupled** computation and only that: `r6411` establishes that a
+time-dependent free computation cannot move the coefficient because $a$ never entered it, so coupling is the
+one thing that stops the sum factoring.*
+
+### ⓵ **AND THERE IS A ROUTE IN THAT DOES NOT NEED THE INTERACTING THEORY, WHICH IS WHY THIS IS THE ORDER NOW**
+
+*$\zeta(0)=10\neq0$, so the sums **do** spend a constant --- and the reason the corpus's no-free-constant
+claim survives is that on this background the constant is **not observable**: the log's counterterm is
+curvature-squared, and where $R$ is constant $\int\!\sqrt g\,R^{2}$, $\int\!\sqrt g\,R$ and
+$\int\!\sqrt g$ are all proportional, so it is degenerate with Einstein--Hilbert and the cosmological term.*
+
+⚠ ***But `P10` distinguishes two halves of that degeneracy and says one of them does not survive.*** *The
+collapse of the three **quadratic** invariants is conformal flatness --- an identity pointwise in $a(\cdot)$,
+which is why `P10` says it *"survives superposition and descends to the quantized sector as an operator
+relation"*. **The proportionality of terms of DIFFERENT dimension is the other half, and `P10` states in its
+own voice that those *"part company as soon as $a$ is not the de~Sitter $\cosh$".*** ⇒ ***And in the coupled
+sector $a$ is quantized, so it is not the $\cosh$.***
+
+**⚑ SO THE QUESTION, AS ONE OPERATOR STATEMENT:** *once the scale factor is quantized, is
+$\int\!\sqrt g\,R^{2}$ still fixed by $\int\!\sqrt g\,R$ and $\int\!\sqrt g$, or does it become
+independent?*
+
+* *Still fixed: **the one ultraviolet constant stays unobservable in the coupled sector too**, and the
+  corpus's no-free-constant claim is carried into the regime where it was never checked --- which is a
+  result and closes the row's sharpest sub-question.*
+* *Independent: ***the log counterterm becomes a genuinely new entry and the one constant becomes
+  observable***, which makes $\zeta(0)$ a number the construction has to answer for rather than one it can
+  absorb. **That is the harder place and the better-defined one**, and it turns the corpus's claim into a
+  live prediction rather than a saved one.
+
+⌗ *Note what makes this askable: the conformal-flatness half is already an identity pointwise in $a$, so you
+are not being asked to redo it --- only to determine whether the **different-dimension** half has any
+survivor once $a$ is an operator, which is a question about expectation values of powers of a constrained
+operator and not about renormalising a field theory.*
+
+### ⓶ **AND, IF AND ONLY IF ⓵ SAYS THE CONSTANT BECOMES OBSERVABLE: WHAT DOES COUPLING DO TO $\zeta(0)$?**
+
+*The free value is $10$ from $\mu^{2}=m^{2}-3$, $d=2(m^{2}-4)$ and a terminating binomial. ⇒ *Does coupling
+shift it, and can that be said without a full interacting definition --- from $\hat\Gamma$'s spectrum, which
+is computable branch by branch, or from the shape of the interaction terms in $H_{\rm phys}$?* ⚠ **A bound
+or a statement of which features of the interaction it can depend on is worth as much as a value here**, and
+an honest "this cannot be said without defining the interaction" is worth more than a number that needs one.
+
+### ⛔ **AND THE GUARDS, WHICH MATTER MORE ON THIS ROW THAN ON MOST**
+
+* ⚠ ***DO NOT BUILD THE INTERACTING THEORY, and do not report a partial one as the row's answer.*** *If ⓵
+  cannot be settled without it, **that is the attempt's result**: the row moves from *never attempted* to
+  *attempted, and here is precisely the wall*, with the wall's location stated. **That is a genuine
+  discharge of a first attempt and I am not asking for a number.***
+* ⛔ ***AND DO NOT RE-SCOPE THE REMAINDER AS NOT CR-SPECIFIC.*** *The corpus has made that move and reversed
+  it --- `r1291`, Daryl-flagged, restored as a genuine open --- and the row records three reasons it is this
+  construction's: the counterterm basis is one-dimensional here, deparametrization leaves a true Hamiltonian
+  rather than an obstruction, and no other framework has this tower. **If your work bears on any of those
+  three, that is the place to say something; the generic wall is not.***
+* *Nothing here touches the ordering ambiguity, which `P10` settles as external --- one physical datum, not
+  a residual quantisation freedom --- and its candidate selectors are already exhausted. **Do not reopen
+  it.***
+
+⌗ *The construction is yours: what to compute, what to bound, and what to declare unreachable are your calls
+from the work, not mine. Reply in `FOR_66_FROM_60.md`.*

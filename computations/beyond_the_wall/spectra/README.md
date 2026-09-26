@@ -216,3 +216,29 @@ $6.3\times10^{-16}$ on the arm — **which is what makes the $k$ end and the $\e
 two.**
 
 Launchers: `../r6911_directions/`, with a README saying what each is for.
+
+---
+
+## `r6915_*` — each source term projected through its own kernel, and the ten pair spectra
+
+*`r6915`'s order: **which term carries the contrast excess after projection?** ⌗ A third distinct object
+in this directory: `r6897_fields` holds FIELDS at last scattering, `r6911_source` holds the SOURCE before
+the kernel, and these hold what the KERNEL makes of each source term.*
+
+| file | what is in it | why it is what it is |
+|---|---|---|
+| `r6915_pairs_{lcdm,cr}.npz` | per multipole, the **ten pair spectra** $\sum_k P\,\Delta^a\Delta^b$ over the four source terms (monopole, Doppler, ISW, polarisation), with $w=1$ on the diagonal and $2$ off it; plus the run's own $D_\ell$ | ⛔ **the order asked for the pieces to sum to the full spectrum, and they cannot.** The transfer is linear in the source and the pieces add *there*; $C_\ell$ is **quadratic** in the transfer. The four diagonal pieces alone fall short of $D_\ell$ by up to $46\%$. ⇒ *What closes is the bilinear decomposition, and it closes to $1.1$–$1.3\times10^{-15}$ relative* |
+| `r6915_noop.npz` | both arms at the screen grid with `SRCDEC` **unset** | the edit adds a branch inside the multipole loop of `_project`, which every reported spectrum runs — gated **bit-identical** against the banked screen base before any other number is read |
+
+⇒ ⚑⚑ **What they say.** The monopole–Doppler **cross term is not the channel**: deleting it moves the
+arms' contrast ratio from $1.0452$ to $1.0451$, and over four envelope windows its carry runs $-0.0013$
+to $+0.0008$ of the $+0.045$. **Every projected piece already carries an excess instead** — monopole
+$1.034$, Doppler $1.099$, polarisation $1.058$ — while every term's *source* ratio is at or below
+$0.992$. *So it is not a term and not a pair of terms: the projection raises this arm's contrast on
+nearly everything it projects.*
+
+⌗ **The banked $D_\ell$ here is `r6911`'s**, gated identical to $10^{-13}$ relative — the two receipts
+read one configuration, which is what lets the per-term ladder put a source rung and a projected rung
+side by side.
+
+Launchers: `../r6915_directions/`, with a README saying what each is for.

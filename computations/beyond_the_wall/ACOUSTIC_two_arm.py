@@ -923,9 +923,23 @@ _SRCS = os.environ.get('SRCSAVE')
 #   never `Cl`, and it is read only where `_SRCS` is already true.  *So this is not a knob on the
 #   physics: `SRCXS` with `SRCSAVE` unset does nothing at all, and that is the same gate.*
 _SRCXS = float(os.environ.get('SRCXS', '1'))
+# ⛭⛭ ** SRCDEC: EACH SOURCE TERM PROJECTED THROUGH ITS OWN KERNEL — r6915+cc66.41. **
+# *`r6915` asks which of the source's terms carries the contrast excess AFTER projection, and that
+# cannot be read off `SRCSAVE`: the source terms add, but C_l is QUADRATIC in the transfer, so the
+# projected pieces do not.*  ⇒ ** What does close is the full bilinear decomposition. **  With
+# Delta^a_l(k) = INT term_a j_l deta, one per term, C_l = SUM_{a<=b} w_ab SUM_k P Delta^a Delta^b
+# with w = 1 on the diagonal and 2 off it -- ten numbers per multipole that sum to `Cl` EXACTLY.
+#   ⌗ ** The Bessel evaluation is shared with the reported spectrum, so this costs four trapezoids
+#     per multipole and not a second projection. **  `j_l` is the whole cost and it is computed once.
+# ⚠ Read ONLY inside the guarded blocks, exactly as `SRCSAVE` is, so unset changes nothing — gated.
+_SRCD = os.environ.get('SRCDEC')
+# the pair order is fixed here so the bank, the receipt and the print agree on what column is what.
+_DECN = ['sw*sw', 'sw*dp', 'sw*isw', 'sw*pol', 'dp*dp', 'dp*isw', 'dp*pol',
+         'isw*isw', 'isw*pol', 'pol*pol']
 # the per-batch source accumulator; `hier_run` concatenates it over the k-batches, which is exact
 # because every entry is indexed by k alone -- the eta axis is integrated or sliced out here.
 _SRCB = []
+_SRCD_B = []      # one (n_ls, 10) block per k-batch; C_l is a SUM over k, so these add exactly
 # ⛔⛭⛭ ** AND r6889+cc66.36: THEY REACHED ONE PATH OF THREE, WHICH IS THE SHADOW AGAIN. **
 # *r4558 placed these beside `_ISW` and calibrated them -- on `los_spectrum`.  ** The HIERARCHY path
 # builds its own source at the foot of `los_hier` and the LOW-ELL path builds a third at the foot of
@@ -1321,6 +1335,15 @@ def hier_run(kk, EE, L_A_, D_M_, R_S_):
               f"{float(np.max(_n['resid'])):.3e}"
               + (f"; and the same source at x0 * {_SRCXS:.6f}" if _SRCXS != 1.0 else "")
               + f" -> {_SRCS}")
+    if _SRCD:
+        _dc = sum(_SRCD_B) * (ls * (ls + 1))[:, None]
+        np.savez(_SRCD, ls=ls, Dl=Cl * ls * (ls + 1), Dl_pairs=_dc, pairs=np.array(_DECN),
+                 arm=ARM, r_s=R_S, D_M=D_M, l_A=L_A, ns=NS, eta_ls=ETA_LS, eta_ls_w=ETA_LS_W,
+                 sliced=bool(_ksl), n_modes=len(kk))
+        _cl = float(np.max(np.abs(_dc.sum(axis=1) - Cl * ls * (ls + 1))
+                           / np.abs(Cl * ls * (ls + 1))))
+        print(f"  SRCDEC: {len(ls)} multipoles x 10 term pairs; the pairs close on D_l to "
+              f"{_cl:.3e} relative -> {_SRCD}")
     Dl = Cl * ls * (ls + 1)
     return ls, Dl
 
@@ -1377,7 +1400,7 @@ def _project(kb, ee, Y, ls, x0, e_sw):
     # *Placed after `P` on purpose: the k-measure is saved WITH the source so the receipt can show
     # that including it or leaving it out moves the contrast statistic by less than the statistic's
     # own resolution, rather than asserting that a smooth factor is removed by the envelope.*
-    if _SRCS:
+    if _SRCS or _SRCD:
         _il = int(np.argmin(np.abs(ee - ETA_LS)))
         _sw = g_ * (_SWSRC * (Th0 + Ps))
         _dp = _DPSRC * np.gradient(g_ * tb, ee, axis=0) / kb[None, :] ** 2
@@ -1388,6 +1411,7 @@ def _project(kb, ee, Y, ls, x0, e_sw):
         # the four terms are the source, and the receipt gates that they sum to it -- so a reader
         # need not take the split on trust, and a future edit to `S` that forgets this block fails.
         _md = _sw + _dp                              # the monopole-plus-Doppler combination
+    if _SRCS:
         _rec = dict(k=kb.copy(), P=P.copy(),
                     sw_ls=_sw[_il].copy(), dp_ls=_dp[_il].copy(), isw_ls=_iw[_il].copy(),
                     pol_ls=_pl[_il].copy(), md_ls=_md[_il].copy(), S_ls=S[_il].copy(),
@@ -1403,9 +1427,22 @@ def _project(kb, ee, Y, ls, x0, e_sw):
             _rec['Cl_swap'] = _os
         _SRCB.append(_rec)
     out = np.empty(len(ls))
+    _dec = np.zeros((len(ls), 10)) if _SRCD else None
     for j, l in enumerate(ls):
         J = spherical_jn(int(l), kb[None, :] * x0[:, None])
         out[j] = np.sum(P * np.trapezoid(S * J, ee, axis=0) ** 2)
+        if _SRCD:
+            # ** the four TRANSFERS, one per source term, off the SAME `J`. **  The source terms add
+            # and the transfer is linear in the source, so these add to the full transfer exactly;
+            # what does not add is their squares, and that is the whole point of the column set.
+            _Dl = [np.trapezoid(_t * J, ee, axis=0) for _t in (_sw, _dp, _iw, _pl)]
+            _c = 0
+            for _a in range(4):
+                for _b in range(_a, 4):
+                    _dec[j, _c] = (1.0 if _a == _b else 2.0) * np.sum(P * _Dl[_a] * _Dl[_b])
+                    _c += 1
+    if _SRCD:
+        _SRCD_B.append(_dec)
     return out
 
 
