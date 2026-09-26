@@ -237,6 +237,41 @@ EST = {
         'thermodynamic content, so there is nothing for the reassignment to transport and the construction is cleaner '
         'than it knew; or whether the reassignment needs something the vanishing denies it, in which case the '
         'framework owes an account of what crosses. Both are results; the second is worth looking for first.'),
+    'PO-56': ('the acoustic contrast difference, and no mechanism for it', 1, 0, 5, None,
+        'OPENED r6891 as PO-13 remainder, on the standing order. PO-13 was struck at r6790 because the handover at '
+        'the branch point supplies the one-locus state the row asked for, and it routed what it left -- the acoustic '
+        'phase and the fourth peak -- into P15 sec:scope prose rather than into a row. BOTH HAVE SINCE DISSOLVED: the '
+        'phase intercept sits inside the sky own locating spread and the fourth peak is 0.9 to 1.3 sigma out with most '
+        'of the offset shared with the control. What replaced them has never had a row. THE OBJECT, MEASURED: with '
+        'Delta the whitened difference of the two arms at their own minima, chi^2 decomposes exactly as '
+        '282.96 = 177.88 + 27.82 + 77.26, so the model difference carries three quarters of the excess and the '
+        'rejection is not one sky luck -- this arm scores 1.43 per bin against the control 0.99 on a typical sky. '
+        'Delta is TROUGH-DOMINATED (+0.011 at the peaks against -0.760 at the troughs), its oscillatory part carries '
+        'seven tenths of it, and that part is antisymmetric about the ENVELOPE rather than about each peak -- a '
+        'CONTRAST, and not a phase and not an envelope. This arm acoustic oscillation is 1.040 times the control about '
+        'its own envelope. ALREADY RULED OUT, carried across so the row starts where the work ended: the handover '
+        'amplitude EXACTLY, being absorbed by the one fitted amplitude; the neutrino hierarchy truncation depth '
+        '(93.7% of the norm survives it); the early integrated Sachs-Wolfe term (92.8%); the continuity half of the '
+        'driving (87.6%). The Euler half reaches 68.3% but at a direction cosine of -0.16, which is not the direction. '
+        'And the whole amplitude-tilt-damping-position family together carries 5.73%, against 51% for a single '
+        'control-only direction that raises the oscillation at fixed envelope with nothing fitted. THE CHANNEL IS '
+        'IDENTIFIED AND THE CAUSE IS NOT: removing the monopole and removing the Doppler term bracket the contrast '
+        'direction with OPPOSITE SIGNS, on the line-of-sight path and on the reporting path alike and with the same '
+        'signs on both, so the reading is not an artefact of the path it first had to be measured on. But neither '
+        'deletion returns the two arms to a common contrast (1.0376 and 1.0818 against the base 1.0401), so the '
+        'bracket locates where the difference enters and not what produces it, and about a third of the norm is '
+        'unnamed. ONE CANDIDATE IS NOW REACHABLE AND HAS NOT BEEN POINTED AT THE QUESTION: the neutrinos '
+        'free-streaming has a knob -- their anisotropic stress at both of its dynamical sites -- and it is calibrated. '
+        'Removing it pushes every peak on both arms to larger multipole, uniformly across the first four, which is a '
+        'phase shift signature, while the amplitude moves by about a third separately. Its size sits at the resolution '
+        'of the binning, so the SIGN is established and the VALUE is not, and reading the value off wants a locator on '
+        'a finer grid. A HAZARD THE ROW CARRIES RATHER THAN ASSUMES AWAY: three switches in this instrument have now '
+        'been found verified on a path they reach and used on a path they do not -- the tilt literal, the baryon '
+        'density, and the two source terms. Three found by three different routes is a RATE and not a count, and no '
+        'sweep of the remaining switches has been run, so every number on this row is held subject to one. DISCHARGE: '
+        'a mechanism that raises this arm acoustic oscillation about its own envelope by four per cent where the '
+        'control is not raised -- or a demonstration that the monopole-to-Doppler balance cannot differ between the '
+        'arms at that size, which moves the search to the unnamed third.'),
     'PO-55': ('horizon entropy is reading-dependent under the central move', 1, 1, 3, None,
         'OPENED r6877 as PO-54 remainder, found by node 60 where the order was not looking. The causal reassignment '
         'relates two readings of one geometry whose horizon areas are GENERICALLY UNEQUAL, and PO-48 established that '
@@ -433,8 +468,9 @@ KIND = {'PO-46': 'BUILD', 'PO-10': 'BUILD', 'PO-13': 'BUILD', 'PO-36': 'READ', '
 #   and the generator reported "9 open" while the table showed EIGHT -- the count comes from
 #   the live set and the rows come from here.*  ** Adding a row needs three things: the
 #   register row, the runway, and this list. **  check_frontier_current now checks all three.
-ORDER = ['PO-55', 'PO-54', 'PO-53', 'PO-52', 'PO-47', 'PO-48', 'PO-49', 'PO-50', 'PO-51', 'PO-45', 'PO-46', 'PO-10', 'PO-13', 'PO-43', 'PO-24', 'PO-36', 'PO-30', 'PO-25', 'PO-26', 'PO-31', 'PO-23', 'PO-15', 'PO-14', 'PO-17', 'PO-18', 'PO-19', 'PO-20']
-GROUP = {'PO-45': 'A', 'PO-46': 'A',  # ⛔ r6549: a FOURTH hardcoded list -- GROUP -- and a row missing here raises.
+ORDER = ['PO-56', 'PO-55', 'PO-54', 'PO-53', 'PO-52', 'PO-47', 'PO-48', 'PO-49', 'PO-50', 'PO-51', 'PO-45', 'PO-46', 'PO-10', 'PO-13', 'PO-43', 'PO-24', 'PO-36', 'PO-30', 'PO-25', 'PO-26', 'PO-31', 'PO-23', 'PO-15', 'PO-14', 'PO-17', 'PO-18', 'PO-19', 'PO-20']
+GROUP = {'PO-56': 'D',  # r6891: PO-13's live remainder, the acoustic sector.
+         'PO-45': 'A', 'PO-46': 'A',  # ⛔ r6549: a FOURTH hardcoded list -- GROUP -- and a row missing here raises.
          'PO-10': 'D', 'PO-13': 'D', 'PO-14': 'A', 'PO-15': 'C', 'PO-16': 'D',
          # ** r3095: the four brought in from p0's frontiers and the field ledgers.  PO-17 and
          # PO-19 are substrate geometry; PO-18 is the constant ledger; PO-20 is analysis. **

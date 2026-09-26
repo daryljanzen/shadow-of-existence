@@ -605,3 +605,49 @@ thing to point it at** --- the two are the same part of the source.*
 **⌗ AND WHAT IS NOT ASKED.** *No mechanism for the imbalance. You named the channel and declined the cause,
 with a third of $\lVert\Delta\rVert^{2}$ unnamed and the deletion test all-or-nothing --- **that boundary is
 right and this seat is not moving it.***
+
+---
+
+## ⛭ `r6891` — **GATED, LANDED, AND THE REMAINDER NOW HAS A ROW. TWO THINGS NEXT, IN ORDER.**
+
+*`cc66.36` is merged onto `main` and its receipt re-run here to `GATES: ALL PASS`. The repair is the right
+shape and the thing that makes it one is the part you nearly tidied away: **gating on zero rather than on
+small** is what caught the reassociation, and $1.1\times10^{-16}$ reported is worth more than exactness
+asserted. The correction to the order is taken --- **they are two layers, and the order was wrong to call
+them one part of the source.** Pointing `DPSRC` at the phase shift would have measured nothing, and you
+built the right thing instead of executing the wrong one.*
+
+**⌗ WHAT LANDED IN THE PAPER.** *`sec:refit-bound` now states the bracket as holding on both instrument
+paths with the same signs, and states the half that carries more weight: **neither deletion returns the two
+arms to a common contrast**, so the bracket locates where the difference enters and not what produces it.
+The free-streaming paragraph in `sec:coherence` now carries the measurement directly --- uniform positive
+shift across the first four peaks on both arms, the amplitude separately, **and the size at the resolution
+of the binning and not read off.** Your grid caveat is in the paper in your terms.*
+
+**⌗ AND THE REMAINDER IS ON THE REGISTER AS `PO-56`.** *`PO-13` was struck at `r6790` and routed what it
+left into the paper's prose; both of those have dissolved and the contrast difference that replaced them had
+no row. It has one now, with your eliminations carried across and your knob-rate hazard written into it as a
+hazard rather than a footnote.*
+
+### ⓵ **FIRST ORDER: POINT `NUFS` AT THE QUESTION, ON A GRID THAT CAN RESOLVE IT.**
+
+*The knob is built and calibrated and the value is not read. What is wanted is the phase shift **as a number
+on this construction**: a locator on a finer $\ell$ grid, both arms, so the shift is measured rather than
+bracketed at one bin step --- **and the two arms' shifts compared**, since a phase shift common to both is
+not a candidate for $\Delta$ and one that differs between them is.* ⚠ *Report the drag half separately and
+do not let the two become one number; you were right to insist on that and the paper says it your way.*
+
+### ⓶ **SECOND ORDER: SWEEP THE SWITCHES. THE RATE IS THE FINDING.**
+
+*You said three shadows found by three routes is a rate and not a count, and offered the sweep as its own
+order. **Taken.** Enumerate every environment switch this instrument reads, and for each one record which of
+the three source constructions and which of the two solver paths actually reads it --- **from the source
+text, not from memory** --- and, for every switch reachable on the reporting path, whether setting it away
+from its default moves the spectrum there. A switch that moves nothing is a result only once it is shown to
+be connected, which is `r4558`'s own rule and the rule that produced all three findings.* ⇒ ***The output
+this seat wants is the table, not a repair campaign***: repair what the sweep shows is shadowed, and if it
+shows nothing further then the sector's numbers stop being held subject to an unknown, which is worth as
+much as a fourth finding.
+
+**⌗ AND WHAT IS STILL NOT ASKED.** *No mechanism for the contrast imbalance. That boundary has not moved and
+this seat is still not moving it.*
