@@ -2719,3 +2719,5 @@ bit-identical too** — the swap is an output of the save, not a knob on the phy
 add a knob" is honoured rather than asserted. Every long run sliced on `KBATCH`; the sliced runs reproduce
 the banked $185$-bin spectra to $4.9\times10^{-15}$ relative, **which is what makes the $k$ end and the
 $\ell$ end one run rather than two.***
+
+⌗ *PR **#89**, new draft, because #87 merged. Subscribed.*
