@@ -138,8 +138,8 @@ reading of `L-269`–`L-273`; no open problem opened or closed, which is itself 
 
 > **⌗⌗ THE FAMILIES AGAINST THE REGISTER.** *The table is a view of the register, and the register is the single
 > source of truth. **Three families are live**: family 3, the inherited datum, at `PO-31`; family 8, the interacting
-> quantum tower, at `PO-23` and `PO-51`; and family 5's residual at `PO-47`, the family itself having reached its
-> verdict. **Families 1,
+> quantum tower, at `PO-23` (`PO-51` struck); and family 5's live remainder, the acoustic contrast, at `PO-56`, the family itself
+> having reached its verdict (`PO-47` struck). **Families 1,
 > 2, 4, 6, 9, 10, 11 and 12 are closed**, family 4 with its last remainder, the charged interior's third regime
 > (`PO-49`), struck as the boundary of admissible data; family 6 by the matter sector's account of the propagating fermion and gauge
 > content. **Family 7 is not a work item** and says so itself.*
@@ -161,7 +161,7 @@ reading of `L-269`–`L-273`; no open problem opened or closed, which is itself 
 > | 5 | the scalar perturbation sector, to a verdict | **verdict reached** — the arm's spectrum is rejected on shape; its residual is live at `PO-47`, what displaces the fourth acoustic peak |
 > | 6 | the propagating fermion and gauge sector | **closed** — the sector propagates and its gauge content is accounted for; `PO-45` and `PO-30` struck |
 > | 7 | the world-correspondence and empirical grounding | **not a work item** — the family says so itself: *"NOT a corpus gap — the empirical question."* |
-> | 8 | the interacting quantum tower as a defined theory | **LIVE** — register `PO-23` and `PO-51` |
+> | 8 | the interacting quantum tower as a defined theory | **LIVE** — register `PO-23` (`PO-51` struck) |
 > | 9 | the structure of the lap and the physics of the lift | **resolved r2154–r2159** |
 > | 10 | the quantum content of the lift | **closed r2239** |
 > | 11 | what crosses: inheritance vs the computed filter | **reclassified r2245** — not a hole but a strengthening. ⛔ *`L-168` was opened here at c54.119 on this family's **r2244 framing** and **struck at c54.121: the framing is the one r2245 itself withdrew.** The tilt IS inherited — frozen modes cross, oscillating ones do not. **Read this family's r2245 verdict, not its r2244 opening.*** |
@@ -724,7 +724,7 @@ resolves) and as the **clue-map** (everywhere an open touches points at where it
 > | 5 | the scalar perturbation sector, to a verdict | **verdict reached** — the arm's spectrum is rejected on shape; its residual is live at `PO-47`, what displaces the fourth acoustic peak |
 > | 6 | the propagating fermion and gauge sector | **closed** — the sector propagates and its gauge content is accounted for; `PO-45` and `PO-30` struck |
 > | 7 | the world-correspondence and empirical grounding | **not a work item** — the family says so itself: *"NOT a corpus gap — the empirical question."* |
-> | 8 | the interacting quantum tower as a defined theory | **LIVE** — register `PO-23` and `PO-51` |
+> | 8 | the interacting quantum tower as a defined theory | **LIVE** — register `PO-23` (`PO-51` struck) |
 > | 9 | the structure of the lap and the physics of the lift | **resolved r2154–r2159** |
 > | 10 | the quantum content of the lift | **closed r2239** |
 > | 11 | what crosses: inheritance vs the computed filter | **reclassified r2245** — not a hole but a strengthening. ⛔ *`L-168` was opened here at c54.119 on this family's **r2244 framing** and **struck at c54.121: the framing is the one r2245 itself withdrew.** The tilt IS inherited — frozen modes cross, oscillating ones do not. **Read this family's r2245 verdict, not its r2244 opening.*** |
