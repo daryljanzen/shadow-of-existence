@@ -1,7 +1,7 @@
 ---
 name: owed
 kind: STATE
-current: r6865
+current: r6935
 description: Work this programme's turns CREATED — the register every other register here lacks, since all of them track work discharged.
 sources: [chat]
 ---
@@ -16,30 +16,33 @@ sources: [chat]
 >
 > | what | where it lives | count |
 > |---|---|---|
-> | **the live rows** | `THE_REGISTER` | **seven** — `PO-23`, `PO-31`, `PO-47`, `PO-48`, `PO-49`, `PO-50`, `PO-51` |
-> | **owed items** | this file | the list below |
-> | **the corpus read** | `ARC 13` | ⛭ **COMPLETE — all seventeen papers read word for word at verified full coverage** |
-> | **receipts** | `receipts/` | **821 on disk**; the suite's verdict is `receipts/RUN_RESULT.txt`, which carries none while a run is in flight |
-> | **red gates** | `corpus/check_*.py` | **1 of 107** — `check_receipts_run`, which needs wall-clock and no judgement |
-> | **the absorption gap** | `ABSORPTION.md` | that file's own record |
+> | **the live rows** | `THE_REGISTER` | **five** --- `PO-23`, `PO-31`, `PO-50`, `PO-56`, `PO-59` |
+> | **owed items** | this file | **one open** --- `(597)`, the reader package, which is a project and not a physics open. The other $123$ are discharged and keep their rows |
+> | **the corpus read** | `ARC 13`, and two cold reads since | ⛭ **COMPLETE, and re-run twice from outside.** *`ARC 13` read all seventeen papers word for word at verified full coverage. **Two cold full-corpus reads have been gated since** --- one returning a sixteen-item list worked to completion, the other a fourteen-paper patch with nine open items, all worked or decided. The corpus is eighteen papers* |
+> | **receipts** | `receipts/` | **845 on disk.** The suite's verdict is `receipts/RUN_RESULT.txt`; its last complete run gave $766$ pass, $83$ fail, $1$ over timeout, and the cache goes stale the moment a paper or a receipt moves |
+> | **red gates** | `corpus/check_*.py` | **1 of 107** --- `check_receipts_run`, and ⛔ ***it does NOT need only wall-clock***: the debt behind it is **$81$ receipts**, two more being the declared environment pair, and each repair is a judgement about whether a pin froze an error, a finding has since been discharged, or a generated file simply moved. **Carried as `PO-59`** |
+> | **the absorption gap** | `ABSORPTION.md` | ✗ **CLOSED r3096** --- the `c54` fork line is closed, so no row will be added and that file is a terminal record at its own last revision rather than a stale one |
 >
 >
-> ## ⛭⛭⛭ AND THE ORDER TO WORK IT IN — **rebuilt r3377, the read having discharged the middle of it**
+> ## ⛭⛭⛭ AND THE ORDER TO WORK IT IN IS SPENT, BECAUSE THE LIST IT ORDERED IS DOWN TO ONE
 >
-> *The old ordering (A isolated · B gates-the-read · C the read · D after-the-read) is spent: `ARC 13` is
-> complete, so every item that gated it or waited on it has resolved. What remains does not gate anything.*
+> *The r3377 ordering named four. **Three are discharged**: `624`, the height/driving investigation, closed
+> at r3409 when its premise turned out to be a feature count read below a fixed multipole across combs of
+> different spacing; `589`, the comprehensive comb, discharged at r3508; and `622`, the candidate-field
+> bakes, which was node 54's lane and that line is closed. **`597` stands, and it was always explicitly
+> last.***
 >
-> · **`624`** — the height/driving investigation, and the only one with live work in it. *State in
->   `PO13_WORKING_STATE.md`; the open half is what the construction says the datum should be at the onset,
->   which is open rather than unconsulted — checked across all three source classes at r3363.*
-> · **`622`** — the candidate-field bakes, node 54's lane, list exhausted and running on `P14`/`P03`.
-> · **`589`** — the comprehensive comb. *Wanted the corpus current; it now is.*
-> · **`597`** — the reader package. *Explicitly last.*
+> ⇒ ***So this file no longer orders work; the register does.*** *What a turn creates is still written
+> here, which is the form's whole purpose — but the queue it once held has moved to `THE_REGISTER`'s five
+> rows, and the largest single piece of owed work in the corpus is `PO-59` rather than anything on this
+> list.*
 
 
-> **⌗ SORTED BY LAYER r3095 — because the car-wash rule is that each layer gates the next BY WHAT IT
-> EXPOSES, not by what it finishes.** *`OWED` does not need to be empty to move on; it needs nothing left
-> **from the layer being left**.*
+> **⌗ THE r3095 LAYER SORT IS SPENT, AND IS KEPT FOR THE RULE RATHER THAN THE QUEUE.** *Every item it
+> sorted --- `586`--`614` --- is discharged. **The rule it carried is the part worth keeping**: each layer
+> gates the next by what it EXPOSES and not by what it finishes, so this file never needed to be empty
+> to move on, only to have nothing left from the layer being left. *The three layers below are the record
+> of how that was worked and no longer name anything outstanding.**
 >
 > **⛔ LAYER 1 — the instruments the corpus pass will run ON. These gate `ARC 13`.** *`613` currency
 > (and `THE_FRONTIER` carries no marker at all), `614` thirteen unregistered IDs — holes in the space the
@@ -63,9 +66,10 @@ sources: [chat]
 > the half that evaporates at a compaction unless it is written — and every other register here tracks
 > work discharged. **Every item created before r3095 is closed.** Its item ids (`PO-4`, `PO-5`, `PO-6`, `PO-10`,
 > `PO-11`) belong to the register that closed at r3001; the live rows at that time were `PO-13`, `PO-14`, `PO-15`,
-> `PO-17`--`PO-20` in `THE_REGISTER`. **Twelve items are outstanding (586--597).** Two are of one kind — work done in
-> a ledger and never banked into a paper — and ten are the findings of the r3095 staleness pass, each
-> carrying the evidence that found it. **They are the list a consolidation would work from.***
+> `PO-17`--`PO-20` in `THE_REGISTER`. **Of the twelve the r3095 pass filed (586--597), eleven are discharged and `597` stands.** *Two were of
+> one kind — work done in a ledger and never banked into a paper — and ten were that pass's own staleness
+> findings, each carrying the evidence that found it. ⇒ **A consolidation now works from `THE_REGISTER`,
+> not from here**: this file's job is to catch what a turn CREATES, and it is caught.***
 >
 > *Keep the form: when a turn creates owed work, it is written here.*
 
