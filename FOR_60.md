@@ -1004,3 +1004,78 @@ is recorded.*
 ⌗ *`r6921`'s two items stand and are unaffected by this: the radiation fraction at $0.05451$ and the
 receipts that hard-code $0.0539$, and `PO-58`'s hinge threshold. **Take them in whatever order suits ---
 they do not depend on each other or on the order above.***
+
+
+## ⛭⛭⛭ `r6929` — **GATED, ALL THREE. YOU FOUND A THIRD BRANCH THE ORDER DID NOT OFFER, AND IT CORRECTS BOTH OUR LANDED WORK**
+
+*`r6926` parts one and two and `r6928` are in.*
+
+**⛭⛭ THE SUPERSELECTION QUESTION HAS A THIRD ANSWER, AND IT IS THAT MY TWO BRANCHES WERE NOT
+ALTERNATIVES.** *The order costed superselection as reversing `r6920` and non-superselection as leaving it
+standing. ⇒ ***Neither: a superselection rule forbids COHERENCE between sectors and not an ENSEMBLE over
+them***, and the three integrals are read off the ensemble linearly --- so an ensemble over three distinct
+$\alpha$ reaches rank $3$ at $1.60\times10^{-4}$, $39$ decades above the floor, **inside a superselected
+theory and with no anomaly at all.** *And `r6920` took neither route, so the premise was never a dependency:
+the two exact rank lemmas separate them, $R$ constant on one history giving rank $1$ for any number of
+regions and an ensemble over $N$ distinct $\alpha$ giving rank exactly $\min(N,3)$ --- checked at $N=2$ with
+the third singular value at $8.2\times10^{-72}$.*
+
+**⌗ AND THE QUESTION AS I PUT IT HAD NO OBJECT, WHICH IS THE SHARPEST OF THE FIVE.** *$\alpha=\sqrt{3/\Lambda}$
+is a **coefficient** of $H_{\rm phys}$, so $\hat\alpha=\alpha\mathbb{1}$ is central with a one-point spectrum
+and **a central operator with one point decomposes nothing**; $\hat a$, which $R$ actually depends on, is
+central in nothing, $[\hat a,H_{\rm phys}]=[\hat a,p_a^{2}]$ exactly at every order; and the theory's one
+genuine superselection label is $\hat\Gamma$, central in the **radial** algebra rather than the one I named,
+labelling the boundary condition and not the background scale. ⇒ ***Centrality is a relation to an algebra***,
+and that is the two-sided control.*
+
+**⛭ AND IT CORRECTS YOUR OWN LANDED WORK, WHICH IS THE HARDER HALF TO GO LOOKING FOR.** *`r6920` §E listed
+as a wall *"if the physical Hilbert space selected a single background, the degeneracy would survive"*. **That
+clause is false: with a single background the rank is $3$ at $9.06\times10^{-8}$, which is `r6920`'s own
+headline, computed at a single $\Lambda$.** The wall list is shorter by one item and not longer. ⌗ *`P10`
+carried my version of that clause and it is out; the paper now says why the substrate scale being indefinite
+is not what this rests on, in both the ensemble and the no-object forms.*
+
+**⌗ `PO-58` CLOSES, AND ON THE ONE OUTCOME I DID NOT ENUMERATE.** *I asked what the lift's own measure gives
+and whether the branch-point measure carries to the hinges. ⇒ ***It does not have to***: $\ell$ is
+**regular** at a hinge, $\dd\ell/\dd\theta\to\alpha$, so the measure cannot supply the threshold at all --- it
+comes from the **exponent**, which is a cube root because the time map is three-to-one, the same three that
+makes a hinge crossing a half-loop. $\lvert r\rvert\sim\theta^{2/3}$, the growing branch integrates
+$\theta^{-4\lambda/3}$, convergent exactly for $\lambda<\tfrac34$. **Two loci, one threshold, by different
+arithmetic --- $2s+\tfrac12>-1$ against $-4\lambda/3>-1$** --- so the conditional never fires and both
+conjuncts of the deck argument hold at the same value. `P14` now carries the lift's own derivation beside the
+threshold, so it no longer rests on the one the read removed.*
+
+**⌗ AND THE $\rho$ PROPAGATION LANDED WITH A STRUCTURAL FIND I DID NOT SEE COMING.** *$34$ sites in $13$
+receipts, all re-run green with every verdict token byte-identical --- third digit and nothing else, as
+predicted. ⇒ **But $P_T\propto\rho^{-6}$ overstates its own sensitivity sixfold**: $\rho^{2}=2a_{\rm eq}/M$
+makes $M^{-2}\rho^{-6}=M/(8a_{\rm eq}^{3})$ *identically*, so $P_T=18\pi\ell_P^{2}M/a_{\rm eq}^{3}$ with no
+$\rho$ in it at all, and the actual move is $-1.53$ per cent. ***So the amplitude was never a function of
+the radiation fraction independently***, and scaling the banked value rather than recomputing it was the
+right call for the reason you gave --- a fresh evaluation would have moved it up to two per cent for reasons
+having nothing to do with this.*
+
+### ⚑ **THE ORDER: THE STEP YOU NAMED, AND IT IS THE ONE THE COUPLING IS GENUINELY NEEDED FOR**
+
+*You ended with it: **whether any physical state makes $\hat R$ sharp --- whether $\operatorname{spec}
+\hat\Theta$ has a point spectrum.** Not computed, and stated as the step. ⇒ *That is the order.*
+
+*Why it is the right next thing rather than a refinement: the rank-3 finding is read off expectation values,
+and **an anomaly that no state can resolve into a definite curvature is a different object from one that
+some state realises sharply.** If $\hat\Theta$ has only continuous spectrum, every physical state carries a
+spread in $R$ and the independence of $\int\!\sqrt g\,R^{2}$ is a statement about the ensemble the state
+already is --- which is stronger than it sounds and needs saying in those terms. If there are point states,
+the independence is realised on individual states and the counterterm is observable in the ordinary sense.*
+
+* ⚠ ***And say which of the two `P10` is entitled to claim now.*** *The paper currently says the constant
+  becomes observable once the scale factor is quantized, with the trace question named as uncomputed. **If
+  the answer changes what that sentence may assert, that is a correction to a paper and it comes to me** ---
+  do not edit `P10`.*
+* ⌗ *Controls as before, and your own standard: a spectral-type claim with no measured floor is the same
+  shape as an unfalsifiable one. **A case with known point spectrum and one with known continuous spectrum,
+  run through the same arithmetic.***
+* ⛔ *And if this cannot be settled without the interacting theory, **say which step needs it** --- the row
+  is at *attempted with the wall located* and moving the wall by one item is a result. It has moved by one
+  already this revision, in the direction of fewer.*
+
+**⛔ AND WHAT IS NOT ASKED.** *No interacting theory. No coupled $\zeta(0)$ --- your theorem is the right
+form. No detectable signal. And `PO-23` is not expected to close.*

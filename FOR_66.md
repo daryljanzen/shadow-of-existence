@@ -2929,3 +2929,106 @@ source replaces `S` entirely: seconds of setup plus the projection, rather than 
 array nothing reads.*
 
 ⌗ *PR **#92**, new draft, because #89 merged. Subscribed.*
+
+## ⛭⛭ `r6925` — **THE GAP IS ALREADY OPEN IN THE CODE, THE GEOMETRY IS INVARIANT UNDER CLOSING IT — AND THE COMB AND THE CONTRAST DISAGREE**
+
+### ⛔ ⓵a THE AUDIT FOUND SOMETHING NEITHER OF US EXPECTED
+
+| site | clock |
+|---|---|
+| the recombination history's expansion rate, `xe_history(lambda z: Hphys(...))` | **stacking** |
+| $\tau' = n_e\sigma_T a$, `taup_of` built on `eg`'s conformal time | **stacking** |
+| the $\tau$ integration's measure, over `_egrid` | **stacking** |
+| the visibility, its peak and its FWHM, read off `_egrid` | **stacking** |
+| $1/k_D^2$'s measure — **Jac-weighted under `LEAFSCALES`** | **LEAF** |
+
+⇒ ***The diffusion length takes the leaf clock and the optical depth takes the stacking clock. Two
+objects on the same side of your rule, on opposite clocks, and nothing in the instrument or the corpus
+states the choice.*** ⌗ *So the other assignment is not an invention — `VISLEAF=1` applies to $\tau$
+exactly the weighting $1/k_D^2$ already applies to itself. **That is what made it admissible, and it is
+why I did not have to argue about whether it was well posed.***
+
+### ⚑⚑ ⓵b ON THE GEOMETRY THE TWO AGREE — YOUR SECOND BRANCH
+
+| `VISLEAF` | arm $\eta_{\rm LS}$ | arm FWHM | arm $r_D$ | $\mathrm dr_s/\mathrm d\chi$ ctl | arm | ratio |
+|---|---|---|---|---|---|---|
+| 0 | $485.99$ | $43.591$ | $7.473$ | $0.454950$ | $0.396733$ | $0.8720$ |
+| 1 | $483.83$ | $43.952$ | $7.168$ | $0.454950$ | $0.396957$ | $0.8725$ |
+
+***$12.80$ per cent lower becomes $12.75$.*** *And structurally, not luckily: $\mathrm dr_s/\mathrm
+d\chi$ is a **ratio** of two accumulations across the **same** window, so re-weighting that window's
+measure re-weights numerator and denominator alike.* ⇒ **The visibility is not where the freedom is, and
+the $12.8$ per cent is forced by the rule as stated — the sharper place, as you said.** ⌗ *The switch is
+not inert on the arm: $\eta_{\rm LS}$, the FWHM and $r_D$ all move, so the near-null is a connected
+knob's and not `r4558`'s.*
+
+### ⛔ ⓵c BUT YOUR GUARD EARNED ITS PLACE — THE COMB AND THE CONTRAST DISAGREE
+
+**The contrast**, read alone, goes *your first branch's* way:
+
+| $q$ | 1.20 | 1.90 | 2.60 | 3.30 | 4.00 | 4.70 | 5.40 | mean | slope |
+|---|---|---|---|---|---|---|---|---|---|
+| `VISLEAF=0` | 1.029 | 1.055 | 1.070 | 1.088 | 1.107 | 1.100 | 1.146 | $1.0850$ | $+0.02424$ |
+| `VISLEAF=1` | 1.039 | 1.011 | 1.073 | 1.109 | 1.048 | 1.190 | 1.015 | $1.0695$ | $+0.01332$ |
+| the real source | | | | | | | | $1.0694$ | $+0.01167$ |
+
+**The comb says no:**
+
+| arm | `VISLEAF` | first four peaks | $\ell_1/\ell_A$ | $P_1/P_2$ |
+|---|---|---|---|---|
+| control | 0 and 1 | $220, 540, 812, 1132$ | $0.7296$ | $2.192$ |
+| arm | 0 | $220, 540, 812, 1132$ | $0.7290$ | $2.142$ |
+| arm | 1 | $228, 540, 820, 1140$ | $\mathbf{0.7555}$ | $2.017$ |
+
+*The sky is $0.7312$.* ⇒ ***The arm's comb moves AWAY from it and the control's does not move at all.***
+
+⚠ **And the contrast improvement is partly that same move read by the statistic.** *Look at the
+`VISLEAF=1` bands: non-monotonic scatter, with a fitted residual **nine times** the current
+assignment's. Moving $\eta_{\rm LS}$ moves $r_s(\eta_{\rm LS})$ and so moves the comb, and a band ratio
+of two oscillations no longer aligned in $q$ reads their phase mismatch.* ⌗ ***That is `cc66.40`'s guard
+firing a third time on exactly the shape it was built for*** — *and it is the reason I am not handing
+you the $+0.0133$ as a measurement.*
+
+⇒ ***So: the geometry says forced, the contrast says improvable, the comb says no, and the contrast's
+own band structure says its improvement is not to be trusted. I am not picking. The comb is the only
+one of the three with an external referent, and it supports the assignment the instrument already
+has.***
+
+### ⚑ ⓶ AND THE CANCELLATION IS HALF THE LEVEL AND NONE OF THE SLOPE — SO THE SECTOR DOES NOT CLOSE
+
+| | mean | slope |
+|---|---|---|
+| the injection | $1.0850$ | $+0.02424$ |
+| $\times$ the source deficit | $1.0766$ | $+0.02296$ |
+| the real source | $1.0694$ | $+0.01167$ |
+| **the source deficit itself** | $\mathbf{0.9922}$ | $\mathbf{-0.00106}$ — **flat** |
+
+⇒ ***$54$ per cent of the level gap and $10$ per cent of the slope gap.*** *Your conditional was: if it
+is the $0.992$ deficit, the four trough-filling channels are the compensation and the whole sector
+closes into one account.* ⛔ **It is half of it. The deficit is flat in $q$, so it cannot carry a slope
+difference however well it carries a level one — and the slope is where two thirds of the discrepancy
+between pure geometry and the real source lives.** *What flattens the slope is the real source's own
+$\eta$-dependence across the visibility, which is exactly what the injection replaced. I am naming that
+rather than measuring it, because you did not ask for it and it is a run.*
+
+⛔ **BOUND, HELD.** *Nothing here settles whether the two-rate assignment is right — the row's question
+now, and not this order's. No claim that `VISLEAF=1` is wrong **as physics**: what is measured is that
+it moves the comb away from the sky while moving the contrast toward the real source, and that its
+contrast improvement is partly a phase artefact. **Which clock the optical depth should be a density in
+is not settled here** — only that the rule does not determine it, that your two plasma-accumulated
+objects are already on opposite clocks, and that the peak positions support the current choice. And no
+claim that the $0.06$ per cent invariance settles the row: it says the visibility is not where the
+freedom is.*
+
+⚠ **AND ONE THING AGAINST MYSELF, BECAUSE IT IS THE SHAPE WE KEEP CATCHING.** *My first launcher dropped
+its extra environment through a positional-argument bug — `shift 4` then `$5 $6 $7 $8` — and
+**thirty-six slices ran as plain `VISLEAF=0` spectra**. They completed, reported nothing wrong, and
+reproduced the banked spectra. ⇒ ***That is exactly the shape that gets banked as an answer***, and it
+is in the launcher's own comment and its README. The fix is procedural: smoke-test one slice and grep
+its log for the marker the switch must print before the set goes out.*
+
+⌗ *Thirty-one gates; four banks at `spectra/r6925_*`; launchers at `r6925_directions/`. `VISLEAF` gated
+bit-identical **unset on both arms** and **set on the control** — two different gates, the second being
+the rate identity showing in a second place and the one-sidedness of the whole finding in one result.*
+
+⌗ *PR **#94**, new draft, because #92 merged. Subscribed.*

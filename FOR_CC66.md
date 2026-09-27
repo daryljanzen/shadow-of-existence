@@ -1126,3 +1126,77 @@ closes into one account.** ⌗ *That would be worth more than the item costs.*
 **⛔ AND WHAT IS NOT ASKED.** *No mechanism beyond the one you found; nothing that revisits `prop:flat`; no
 refit. **And the bound stays**: naming the clock the visibility runs on is still not a demonstration that
 the two-rate assignment is right, which is the row's question now and not this order's.*
+
+
+## ⛭⛭ `r6929` — **GATED. THE VISIBILITY IS NOT WHERE THE FREEDOM IS, AND THE COMB IS THE ONLY READING WITH AN EXTERNAL REFERENT**
+
+*`cc66.43` is in, and it answers the order's second branch with a structural reason rather than a number.*
+
+**⛭ THE GAP WAS ALREADY OPEN IN THE CODE, WHICH IS MORE THAN THE ORDER ASKED FOR.** *Every site where
+$\tau$ or $g$ touches a rate is on the **stacking** clock --- the recombination history against $H_{\rm
+phys}$, `taup_of` on `eg`'s conformal time, $\tau$ over `_egrid`, `ETA_LS` read off that grid --- while
+$1/k_D^{2}$ twenty lines below **is** `Jac`-weighted under `LEAFSCALES`. ⇒ ***So the diffusion length and
+the optical depth are both scales the plasma accumulates, sitting on opposite clocks, with nothing stating
+the choice.*** *That is what makes `VISLEAF=1` admissible rather than invented: it applies to $\tau$ exactly
+the weighting $1/k_D^{2}$ already applies to itself.*
+
+**⛭⛭ AND ON THE GEOMETRY THE TWO AGREE, STRUCTURALLY RATHER THAN LUCKILY.** *$\dd r_s/\dd\chi$ goes
+$0.396733$ to $0.396957$, so $12.80$ per cent becomes $12.75$ --- a move of $0.06$ --- and the control does
+not move at all. **Because it is a ratio of two accumulations across the SAME window, so re-weighting the
+measure re-weights both.** ⇒ *The visibility is not where the freedom is, and the $12.8$ per cent is forced
+by the rule as stated.*
+
+**⌗ AND THE CLOCK ARGUMENT WAS RIGHT TO REFUSE TO PICK.** *Read alone the other assignment moves the
+injection toward the real source --- $1.0850\to1.0695$, slope $+0.0242\to+0.0133$ --- **but moves the arm's
+first peak $220\to228$ and $\ell_1/\ell_A$ $0.7290\to0.7555$, away from the sky's $0.7312$**, with $P_1/P_2$
+$2.142\to2.017$ and the control's comb bit-identical. And the contrast improvement is partly that same move
+read by the statistic: non-monotonic band-by-band scatter with a fitted residual nine times the current
+assignment's, because moving `ETA_LS` moves $r_s(\mathrm{ETA\_LS})$ and so moves the comb --- **`cc66.40`'s
+guard firing a third time.** ⇒ ***The comb is the only one of the three readings with an external referent,
+and it supports the assignment the instrument has.***
+
+**⛔ AND MY CANCELLATION HYPOTHESIS IS HALF RIGHT AND HALF WRONG, WHICH IS THE USEFUL SPLIT.** *The
+injection times `cc66.40`'s measured source deficit --- $0.9922$, **flat in $q$** at $-0.00106$ --- gives
+$1.0766$ at $+0.02296$ against the real $1.0694$ at $+0.01167$: **$54$ per cent of the level gap and $10$
+per cent of the slope gap.** So the four trough-filling channels account for about half the level and
+essentially none of the slope, and ***the sector does not close into one account***, which is what I
+proposed it might.*
+
+**⚠ AND THE LAUNCHER BUG IS THE MOST IMPORTANT LINE IN YOUR MESSAGE.** *`shift 4` then `$5 $6 $7 $8`, so
+thirty-six slices ran as plain `VISLEAF=0`, **completed, reported nothing wrong, and reproduced the banked
+spectra**. ⇒ ***That is the shape that gets banked as an answer***, and it is the same family as `r4558`'s
+unwired knob and `cc66.36`'s knob shadow --- a switch that is not reaching the physics while everything
+downstream looks healthy. **The smoke test that greps the log for the marker the switch must print is the
+right fix and it should be standing, not per-launcher**: any switch whose effect is a bit-difference should
+print a marker and its launcher should fail if the marker is absent. *Build it that way if it costs little
+more than the one-off.*
+
+### ⚑ **THE ORDER: THE COMB IS NOW THE ARBITER, SO MEASURE WHAT IT CAN ACTUALLY DECIDE**
+
+*You have made the comb the load-bearing reading --- it is the one with an external referent, and it
+supports the current assignment. ⚠ **But the corpus has never measured how sharply it discriminates**, and a
+reading promoted to arbiter needs its resolution stated before it decides anything.*
+
+⇒ ***Scan the assignment continuously rather than as two settings.*** *Let the weighting on $\tau$ run from
+the stacking clock to the leaf's through a one-parameter family --- `VISLEAF` as a fraction rather than a
+flag --- and report, against that parameter: $\ell_1/\ell_A$ against the sky's $0.7312$, the retained
+fraction and its $q$-slope, and $\dd r_s/\dd\chi$.*
+
+* *If $\ell_1/\ell_A$ is **steep** in the parameter while the contrast is shallow: **the comb pins the
+  assignment and the row's question is answered** --- the two-rate assignment is the one the sky's peak
+  positions require, and the $12.8$ per cent is a prediction of it rather than a defect.*
+* *If both are shallow, or the comb's spread over the family is inside the sky's own locating spread:
+  ***the comb cannot arbitrate*** and saying so retracts the sentence your own receipt just leaned on.
+  **That is the finding, and it is worth more than the scan.***
+* *If some intermediate fraction fits the comb **better** than the endpoint the instrument uses: say so
+  plainly and do not round it away. ⚠ *A fitted clock would be a new free parameter and the corpus's
+  no-early-parameter claim would have to answer for it* --- which is exactly why I want it measured rather
+  than assumed absent.*
+
+⌗ *One guard, yours before mine: the comb moves because `ETA_LS` moves, so **report whether the comb's
+motion is the visibility peak relocating or the acoustic phase changing**, and if those cannot be separated
+say so rather than attributing it.*
+
+**⛔ AND WHAT IS NOT ASKED.** *No mechanism beyond `cc66.42`'s. Nothing that touches `prop:flat`. No refit.
+**And not a verdict on the two-rate assignment** --- the row's question is whether it is right, and a scan
+of how well the comb constrains it is evidence toward that, not the answer.*
