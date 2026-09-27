@@ -6,6 +6,14 @@
 #   `cc66.45`.  Sliced on `KBATCH` boundaries and idempotent: the instrument writes its npz only at the
 #   end, and a run longer than its node's life is not a long run.
 #
+#   ⛔ ** THE FIRST PAIR OF RUNS WENT OUT WITH THE TAPER ON THE WHOLE SOURCE, AND THAT IS NOT THE
+#   OPERATION. **  A Gaussian in r_s,leaf over the whole eta grid also crushes the ISW, whose support runs
+#   to eta_0 where |s - s0| reaches 427 Mpc: measured, the ISW's own eta-integral came back at 0.656 of
+#   itself at the small coefficient and 0.238 at the large one, and THAT is what moved l_1 by 7.7 and 27.3
+#   multipoles.  *The default now tapers only the source the visibility carries -- see `SRCTAPERALL`, which
+#   keeps the all-terms form runnable because the confound is a measurement too.  The first pair is banked
+#   as `r6959_{swap,big}all_lcdm` and is read as the ISW's share, not as the swap.*
+#
 #   TWO tapers, both on the CONTROL and both with alpha > 0, so the taper is bounded by 1 everywhere:
 #     `swap`  -- the literal ⓵ᵇ operation: the ARM's spread in r_s,leaf/r_s imposed on the control.
 #                The measurement predicts f = 1.001 .. 1.007, so this run's job is to show the
@@ -57,6 +65,9 @@ $D/swap ${tag}_k${i} $* KSLICE=${i}:${j}"
   done; }
 add swap_lcdm 2547 $LCDM LSTEP=1 LMAXL=2000 SRCTAPER=$AL SRCTAPERS0=$S0
 add big_lcdm  2547 $LCDM LSTEP=1 LMAXL=2000 SRCTAPER=$AB SRCTAPERS0=$S0
+# the all-terms pair is already banked as r6959_{swap,big}all_lcdm -- kept, not re-run:
+#   add swapall_lcdm 2547 $LCDM LSTEP=1 LMAXL=2000 SRCTAPER=$AL SRCTAPERS0=$S0 SRCTAPERALL=1
+#   add bigall_lcdm  2547 $LCDM LSTEP=1 LMAXL=2000 SRCTAPER=$AB SRCTAPERS0=$S0 SRCTAPERALL=1
 printf '%s' "$LIST" | sed '/^$/d' | xargs -P 4 -I{} bash -c 'run {}'
 echo "=== r6959 B LAUNCH COMPLETE $(date -u) ==="
 ls $D/swap/*.npz | wc -l

@@ -1063,6 +1063,25 @@ _SRCEQ = np.array([float(x) for x in os.environ.get(
 #     all, so the default is byte-identical and not merely near it.*
 _SRCT = float(os.environ.get('SRCTAPER', '0'))
 _SRCTS0 = os.environ.get('SRCTAPERS0')
+# ⛔⛭⛭ ** SRCTAPERALL: AND THE FIRST WIRING OF THE TAPER WAS NOT THE OPERATION IT NAMED -- r6959. **
+# *Applied to the WHOLE source, a Gaussian in r_s,leaf does not only reweight the visibility window: it
+# also crushes the ISW, whose support runs to eta_0 where |s - s0| reaches 427 Mpc.  ** Measured on the
+# first pair of runs: the ISW's own eta-integral came back at 0.656 of itself at the coefficient that
+# matches the arm's spread and 0.238 at the coefficient that delivers the observed excess ** -- and that,
+# not the window, is what moved l_1 by 7.7 and 27.3 multipoles and the peak heights by 12 and 48 per
+# cent.*
+#   ⇒ ** So the default now tapers only the source the VISIBILITY carries. **  The monopole, the Doppler
+#     and the polarisation terms all have `g` in them and live in the window; the ISW term has e^-tau
+#     instead and lives after recombination, outside it.  *Leaving the ISW alone is not a convenience:
+#     it is what makes the operation the one the hypothesis names, and the eta-profile the coefficient
+#     is solved from is a window measurement in the same sense.*
+#   ⌗ ** `SRCTAPERALL=1` recovers the all-terms form, because the confound is a measurement too **  --
+#     it is how the ISW's share of the low-q contrast was read -- and a knob whose first wiring was
+#     wrong should leave the wrong version runnable rather than unreproducible.
+#   ⚠ *The ISW-preserving form subtracts the term and adds it back, so the tapered spectrum carries a
+#     round-off of order eps that the all-terms form does not.  `SRCTAPER=0` takes neither branch, so
+#     the default is byte-identical either way.*
+_SRCTALL = os.environ.get('SRCTAPERALL', '0') == '1'
 # the per-batch source accumulator; `hier_run` concatenates it over the k-batches, which is exact
 # because every entry is indexed by k alone -- the eta axis is integrated or sliced out here.
 _SRCB = []
@@ -1479,7 +1498,8 @@ def hier_run(kk, EE, L_A_, D_M_, R_S_):
                  **{_q: sum(d[_q] for d in _SRCE_B)
                     for _q in ('w2', 'w2md', 'w2sw', 'w2dp', 'w2isw', 'w2pol')},
                  arm=ARM, r_s=R_S, D_M=D_M, l_A=L_A, ns=NS, eta_ls=ETA_LS, eta_ls_w=ETA_LS_W,
-                 leafscales=int(bool(LEAFSCALES)), taper=_SRCT, n_eta=len(EE),
+                 leafscales=int(bool(LEAFSCALES)), taper=_SRCT,
+                 taper_all=int(bool(_SRCTALL)), n_eta=len(EE),
                  path='HIER', sliced=bool(_ksl), n_modes=len(kk))
         # ** the header reports the AMPLITUDE-weighted spread of the phase variable over +-3 FWHM of
         # the visibility, on the monopole-plus-Doppler part, because that is the combination the
@@ -1588,7 +1608,12 @@ def _project(kb, ee, Y, ls, x0, e_sw):
     if _SRCT != 0.0:
         _s0 = float(_SRCTS0) if _SRCTS0 else float(rs_leaf_of(ETA_LS))
         _tp = np.exp(-_SRCT * (np.asarray(rs_leaf_of(ee), float) - _s0) ** 2)[:, None]
-        S = S * _tp
+        if _SRCTALL:
+            S = S * _tp
+        else:
+            # ** the ISW term, lifted out and put back untapered -- see `SRCTAPERALL`. **
+            _iw0 = _ISW * et * (np.gradient(Ph, ee, axis=0) + np.gradient(Ps, ee, axis=0))
+            S = (S - _iw0) * _tp + _iw0
     dk = np.gradient(kb)
     P = kb ** (NS - 1) / kb * dk
     # ** r6911+cc66.40 -- THE SOURCE, TERM BY TERM, BEFORE THE KERNEL TOUCHES IT. **
@@ -1606,10 +1631,13 @@ def _project(kb, ee, Y, ls, x0, e_sw):
         # the four terms are the source, and the receipt gates that they sum to it -- so a reader
         # need not take the split on trust, and a future edit to `S` that forgets this block fails.
         if _tp is not None:
-            # ** the four terms carry the taper too, so `resid` still gates that they sum to `S`. **
+            # ** the terms carry the taper too, so `resid` still gates that they sum to `S` -- and the
+            # ISW is excluded here exactly as it is there, or the gate would fail. **
             # *Multiplying them here rather than inside is the same operation: the taper is a factor
-            # in eta alone applied to the assembled source, and the four terms are its addends.*
-            _sw, _dp, _iw, _pl = _sw * _tp, _dp * _tp, _iw * _tp, _pl * _tp
+            # in eta alone applied to the assembled source, and these terms are its addends.*
+            _sw, _dp, _pl = _sw * _tp, _dp * _tp, _pl * _tp
+            if _SRCTALL:
+                _iw = _iw * _tp
         _md = _sw + _dp                              # the monopole-plus-Doppler combination
     if _SRCS:
         _rec = dict(k=kb.copy(), P=P.copy(),
