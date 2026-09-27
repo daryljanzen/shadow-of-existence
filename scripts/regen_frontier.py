@@ -386,6 +386,30 @@ EST = {
         'not a defect: the uncited bibitems, an editorial call, enumerated here rather than taken from the '
         'read -- there are SEVEN across six papers, not six, and the read named every one correctly. Routed '
         'to Daryl as a judgement.'),
+    'PO-59': ('the reproducibility layer pin debt, and the ratchet that was not binding', 1, 1, 3, None,
+        'OPENED r6921 by a GATE FIX and not by a new failure. check_receipts_run located the runner '
+        'verdict with an UNANCHORED re.search, which returns the FIRST match -- and the runner '
+        'captures every receipt stdout into the same file, where L237/G50 SEEDS A FAKE RUNNER TO '
+        'TEST THIS VERY GATE and prints 0 pass, 1 fail, 0 over timeout, in 0s while doing it. So the '
+        'gate built because a runner printed a verdict that was not about the set has been reading a '
+        'verdict that was not its own, and on the r6921 suite it reported 849 receipts unaccounted '
+        'for on a run that had accounted for all 850. The fix is one anchor -- the runner writes at '
+        'line start with exactly two spaces where captured output is indented further -- calibrated '
+        'on that same file, the old pattern returning 0 pass, 1 fail and the anchored one 766 pass, '
+        '83 fail. AND WHAT THE FIX EXPOSES IS A DEBT OF 81: 766 pass, 83 fail, 1 over timeout, two '
+        'of the 83 the declared pynucastro environment pair, against a baseline of 0. The debt is '
+        'INHERITED and not incurred -- all 88 failures of the pre-fix run were re-run against '
+        'pre-merge main in an isolated worktree, 83 already failed there, and the 5 the corpus sweep '
+        'caused were repaired before the run; L237/G50 was added 2026-08-14, so the ratchet has not '
+        'bound since the first suite run that captured its output. The head of receipts/PIN_DEBT.txt '
+        'STAYS AT 0, the baseline moving downward only, and the complete unfiltered list of all 83 '
+        'is written there by family. DISCHARGE: the 81 run and repaired and the head rewritten to 0 '
+        'by the gate rather than by hand. Most are prose pins whose corpus text moved, so the repair '
+        'is per receipt and a judgement each time -- a pin that froze an error is re-pointed at the '
+        'fix, a finding the corpus has since discharged is re-pointed at what discharged it, and '
+        'neither is a reword; r6921 own five repairs are the worked examples. No receipt leaves the '
+        'list by reclassification, only by running. Needs no acoustic or tilt context and displaces '
+        'neither loaded seat, so it is the natural first order for a fresh node.'),
     'PO-58': ('the lift normalizability threshold on the operator the corpus now uses', 1, 1, 2, None,
         'OPENED r6921 from the spin-up 69 read, as the remainder of a fix that landed only half. P14 '
         'count passage rejected the growing zero-mode branch by a leaf-measure argument at the branch '
@@ -798,8 +822,8 @@ KIND = {'PO-46': 'BUILD', 'PO-10': 'BUILD', 'PO-13': 'BUILD', 'PO-36': 'READ', '
 #   and the generator reported "9 open" while the table showed EIGHT -- the count comes from
 #   the live set and the rows come from here.*  ** Adding a row needs three things: the
 #   register row, the runway, and this list. **  check_frontier_current now checks all three.
-ORDER = ['PO-58', 'PO-57', 'PO-56', 'PO-55', 'PO-54', 'PO-53', 'PO-52', 'PO-47', 'PO-48', 'PO-49', 'PO-50', 'PO-51', 'PO-45', 'PO-46', 'PO-10', 'PO-13', 'PO-43', 'PO-24', 'PO-36', 'PO-30', 'PO-25', 'PO-26', 'PO-31', 'PO-23', 'PO-15', 'PO-14', 'PO-17', 'PO-18', 'PO-19', 'PO-20']
-GROUP = {'PO-58': 'A', 'PO-57': 'D', 'PO-56': 'D',  # r6891: PO-13's live remainder, the acoustic sector.
+ORDER = ['PO-59', 'PO-58', 'PO-57', 'PO-56', 'PO-55', 'PO-54', 'PO-53', 'PO-52', 'PO-47', 'PO-48', 'PO-49', 'PO-50', 'PO-51', 'PO-45', 'PO-46', 'PO-10', 'PO-13', 'PO-43', 'PO-24', 'PO-36', 'PO-30', 'PO-25', 'PO-26', 'PO-31', 'PO-23', 'PO-15', 'PO-14', 'PO-17', 'PO-18', 'PO-19', 'PO-20']
+GROUP = {'PO-59': 'C', 'PO-58': 'A', 'PO-57': 'D', 'PO-56': 'D',  # r6891: PO-13's live remainder, the acoustic sector.
          'PO-45': 'A', 'PO-46': 'A',  # ⛔ r6549: a FOURTH hardcoded list -- GROUP -- and a row missing here raises.
          'PO-10': 'D', 'PO-13': 'D', 'PO-14': 'A', 'PO-15': 'C', 'PO-16': 'D',
          # ** r3095: the four brought in from p0's frontiers and the field ledgers.  PO-17 and

@@ -1,5 +1,165 @@
 0
 
+⛔⚭⚭ r6921 (node 66): THE DEBT IS 81 AND THE HEAD STAYS 0 --- AND THE REASON NOBODY
+SAW IT IS THAT THIS GATE HAS BEEN READING SOMEBODY ELSE'S VERDICT.
+766 pass, 83 fail, 1 over timeout, 3383s, tree bd536fbec25e3436.  Two of the 83 are the
+declared pynucastro environment pair, so the real debt is 81.
+
+  ⛔ ** WHAT WAS WRONG WITH THE GATE, AND IT IS THE SHARPEST THING HERE. **  `check_receipts_run`
+    located the runner's verdict with an UNANCHORED `re.search` for
+    `(\d+) pass, (\d+) fail, (\d+) over timeout, in (\d+)s`, and `re.search` returns the FIRST
+    match.  The runner captures each receipt's stdout into the same file --- and
+    `L237/G50_a_success_message_printed_by_a_different_command_than_the_one_it_describes`
+    SEEDS A FAKE RUNNER to test this very gate, printing `0 pass, 1 fail, 0 over timeout,
+    in 0s` while it does so.  *** So the gate built because a runner printed a verdict that
+    was not about the set has been reading a verdict that was not its own --- and on this
+    run it reported 849 receipts unaccounted for on a suite that had accounted for all
+    850. ***
+
+  ⌗ THE COVERAGE CHECK WAS DOING ITS JOB ON A NUMBER IT HAD READ OUT OF THE WRONG
+    SENTENCE, which is why the failure looked like a truncated file rather than a debt.
+    The fix is one anchor: the runner writes its verdict at line start with exactly two
+    spaces and captured receipt output is indented further, so `(?m)^  ` separates them by
+    the one property they do not share.  ** Calibrated on this very file: the old pattern
+    returns `0 pass, 1 fail` from line 54 and the anchored one `766 pass, 83 fail` from
+    line 177. **
+
+  ⚠ ** HOW LONG THE RATCHET HAS BEEN LOOSE, STATED RATHER THAN GUESSED. **  `L237/G50`
+    was added 2026-08-14 (`d623f87d`, `r2656+c54.208`).  From the first suite run that
+    captured its output, this gate has been reading that seeded line.  *The head above is
+    the last verdict the gate reached honestly, and it is not edited: the rule is that the
+    baseline moves DOWNWARD only.*
+
+  ⌗ ** AND THE 81 ARE NOT THIS REVISION'S. **  All 88 failures of the pre-fix run were
+    re-run against pre-merge `main` in an isolated worktree: 83 already failed there and
+    the 5 regressions the corpus sweep caused were repaired in `r6921` before this run.
+    *So the debt is inherited, not incurred --- which is exactly what an unbound ratchet
+    accumulates.*
+
+  ** THE COMPLETE LIST, UNFILTERED, BY FAMILY.  81 plus the 2 declared environment.**
+    L147_two_arm  (1)
+      B10_the_thermal_mechanism_needs_an_exponential_approach.py
+    L150_the_datum  (1)
+      X1_the_ratio_is_a_clock_reading_not_a_carried_datum.py
+    L165_defining_the_sum  (2)
+      S4_the_open_half_is_the_floor.py
+      S50_the_counterterm_basis_is_one_dimensional_because_the_background_family_is.py
+    L200_free_data_count  (3)
+      U1_the_count_as_the_corpus_now_states_it.py
+      U2_the_matter_sector_spends_none.py
+      U3_the_residue_is_one_and_it_is_already_counted.py
+    L202_the_seam  (1)
+      T1_the_transfer_is_half_built.py
+    L204_physics_reach  (4)
+      P13_the_entropy_is_the_corpuss_own_number.py
+      P2_the_corpus_never_mentions_unruh.py
+      P3_the_higgs_is_declined_in_print_and_never_named.py
+      P4_the_corpus_identifies_the_higgs_mechanism_it_does_not_decline_it.py
+    L211_closure_adjacency  (2)
+      A1_the_venue_question_dissolves_and_curvature_remains.py
+      A2_the_three_owed_derivations_are_one_boundary.py
+    L220_arrival_paths  (1)
+      V2_the_arrival_path_admits_no_metric.py
+    L221_quark_lepton  (2)
+      C2_gradings_become_fields_by_being_a_kernel.py
+      P14_the_three_bridges_off_the_grading_all_land_on_the_same_ceiling.py
+    L221_the_bridge  (5)
+      B15_po3_both_clauses_answered.py
+      B66_po5s_route_is_gated_on_po11.py
+      B6_the_object_is_delivered_and_the_row_argues_elsewhere.py
+      B7_two_unbuilt_sectors_not_one.py
+      B8_po4_targets_have_opposite_verdicts.py
+    L237_gates_check_declarations  (1)
+      G50_the_receipt_runner_gate_was_green_because_its_cache_had_no_expiry.py
+    L253_the_seed_that_stopped_seeding  (1)
+      S1_a_seed_that_stops_constructing_its_defect_accuses_the_gate_it_defends.py
+    L255_the_exemption_was_a_claim  (1)
+      E1_an_exemption_is_a_claim_and_all_three_were_false.py
+    L256_the_band_taken  (1)
+      B1_a_finding_that_routes_its_own_remedy_and_then_recurs_is_not_waiting.py
+    L257_the_label_did_double_duty  (1)
+      V1_a_strike_that_reads_as_done_and_a_paper_that_says_otherwise.py
+    L258_the_pin_and_the_thing_that_moves  (1)
+      M1_five_checks_pinned_to_things_that_move_and_one_that_no_control_could_separate.py
+    L259_the_distance_from_the_present  (1)
+      D1_a_check_pinned_to_a_distance_from_the_present_is_pinned_to_the_present.py
+    L261_the_question_was_answered  (1)
+      A1_a_check_on_whether_a_question_is_still_open_punishes_the_answer.py
+    L262_half_a_family  (1)
+      F1_a_table_that_covers_half_a_family_fails_on_the_rest_of_it_later.py
+    L263_the_station_audit  (1)
+      S1_three_of_eight_stations_are_already_held_and_one_was_noticed_and_not_propagated.py
+    L268_broken_by_its_own_edit  (1)
+      O1_a_receipt_that_asserts_a_state_its_own_revision_changes_is_false_when_committed.py
+    L548_propagating_sector  (1)
+      C1_the_tortoise_divergence_is_the_normalisation_of_the_object_not_the_obstruction_to_it.py
+    L550_third_mechanism  (1)
+      M1_the_third_mechanism_is_bounded_and_the_bound_is_two_sentences_earlier.py
+    L553_the_shear_counterterm  (1)
+      S1_the_shear_needs_exactly_one_new_counterterm.py
+    L557_the_correction_stopped_at_the_sentence  (1)
+      R1_the_correction_stopped_at_the_sentence_and_the_number_it_defines_was_left_behind.py
+    L559_the_registry_from_files_inward  (1)
+      O1_the_registry_was_turned_outward_and_the_arrow_still_pointed_one_way.py
+    L560_pins_into_moving_prose  (1)
+      P1_the_last_five_failures_were_pins_into_prose_that_later_correct_work_moved.py
+    L803_station9_neff  (1)
+      S1_the_cosmology_sector_rests_on_neff_and_never_names_it.py  [ENVIRONMENT]
+    L_probability  (1)
+      R1_the_whole_footprint_is_three_geometry_words.py
+    P03_SdS_slicing  (2)
+      P03_the_symbol_T_carries_four_structural_referents.py
+      P03_the_symbol_w_carried_two_circles.py
+    P07_CR_framework  (1)
+      I7_conserved_charge_carries_three_objects_and_one_denies_the_others.py
+    P14_matter_sector_paper  (3)
+      D2_index_carries_three_senses_inside_one_paper.py
+      P14_p3_already_said_it.py
+      P14_the_lifts_two_plus_one_is_not_graded_by_R_after_K_and_the_wrong_C_object_would_have_said_it_was.py
+    P15_CR_cosmology  (27)
+      C14_po12_gates_po10.py
+      C16_the_transfer_is_six_eighths_built.py
+      C17_the_instrument_already_carries_both.py
+      C18_bespoke_means_two_legs.py
+      C23_the_gap_estimated.py
+      C24_the_substitution_itemised.py
+      C25_the_gap_closed_by_integration.py
+      C26_the_onset_is_not_free.py
+      C28_length_against_angle.py
+      C29_nothing_to_calculate_across_the_join.py
+      C30_the_odd_even_half_is_shared.py
+      C31_half_one_owes_a_rule.py
+      C32_half_one_is_model_selection.py
+      C33_the_threshold_corrected.py
+      C34_the_deliverable_is_a_pair.py
+      C38_the_comparison_scores_derivations.py
+      C39_the_derived_list_read.py
+      C46_the_nine_are_right_and_the_one_is_wrong.py
+      C61_the_undriven_premise_is_false_on_the_rate_the_framework_assigns_the_perturbations.py
+      P15_the_acoustic_contrast_is_not_in_the_source_and_the_projection_makes_it_without_the_distance.py
+      P15_the_free_streaming_knob_is_common_to_both_arms_and_the_switch_sweep_finds_no_further_shadow.py
+      P15_the_likelihood_pair_is_another_instruments_and_the_crossing_run_needed_a_missing_knob.py
+      P15_the_locus_is_wrong_in_six_places_and_the_lint_cannot_see_the_worst.py
+      P15_the_low_ell_minimum_is_at_ell_four.py
+      P15_the_model_difference_is_an_acoustic_contrast_difference_and_it_is_not_one_skys_luck.py
+      P15_the_one_fitted_number_moves_the_scale_and_not_the_peak.py
+      P15_the_two_data_are_one.py
+    P16_cosmogenesis_paper  (5)
+      C13_downstream_irrelevant_is_not_downstream_blocked.py
+      P16_the_bbn_network_cannot_see_the_arms_equality_so_the_abundances_are_silent_on_it.py
+      P16_the_window_is_crossed_twice_and_the_expanding_leg_is_where_the_abundances_are_made.py
+      P16_theory_error_and_likelihood.py
+      P16_validate_bbn.py
+    P17_geometric_core_paper  (3)
+      P17_the_ds_entropy_is_the_gauge_count_squared_and_is_the_cc_number.py
+      P17_the_frontier_item_is_a_result_and_the_cosmogenesis_paper_reaches_it_the_other_way.py
+      P17_the_ledgers_entropy_is_the_de_sitter_readings_and_the_other_reading_has_a_number_but_not_an_entropy.py
+    RP_34_gr  (1)
+      G3_the_axis_names_two_orderings.py
+
+  ⛐ Carried as `PO-59`, which owns the repair.  *No receipt on this list is retired by
+    being on it, and none leaves it by reclassification --- only by running.*
+
 ⛔⛭⛭ r4074 (node 60): THE DEBT ROSE TO 2 AND THE HEAD STAYS 0, BECAUSE THE RULE SAYS SO.
 699 pass, 2 fail, 0 over timeout, 1407s, tree cad3dee2d350659e.  The ratchet fires exactly as
 built: ** "the pin debt ROSE from 0 to 2.  The baseline may only be rewritten DOWNWARD -- repair

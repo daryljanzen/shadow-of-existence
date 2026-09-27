@@ -161,7 +161,20 @@ def main():
         return 1
     print(f'  result is against the current tree ({now}) -- not a cached verdict about an older one')
 
-    m = re.search(r'(\d+) pass, (\d+) fail, (\d+) over timeout, in (\d+)s', res)
+    # ⛔⚭ r6921 (node 66): ** THE VERDICT THIS GATE READ WAS NOT THE RUNNER'S. **  The
+    #   pattern was unanchored and `re.search` takes the FIRST match, so it read a verdict line
+    #   printed INSIDE a receipt's captured output -- `L237/G50`, which seeds a fake runner to
+    #   test THIS GATE and prints `0 pass, 1 fail, 0 over timeout, in 0s` while doing it.
+    #   *** So the gate built because a runner printed a verdict that was not about the set
+    #   was itself reading a verdict that was not its own, and reported 849 receipts
+    #   unaccounted for on a run that had accounted for all 850. ***
+    #   ⌗ The runner's own verdict is written at line start with exactly two spaces, while
+    #     captured receipt output is indented further, so the anchor separates them by the one
+    #     property the two do not share.  ** Calibrated: on the r6921 result the old pattern
+    #     returns `0 pass, 1 fail` from line 54 and this one returns `766 pass, 83 fail` from
+    #     line 177, and the coverage check below then passes rather than failing on a count it
+    #     had read out of somebody else's sentence. **
+    m = re.search(r'(?m)^  (\d+) pass, (\d+) fail, (\d+) over timeout, in (\d+)s', res)
     if not m:
         print('  [FAIL] the runner result file has no verdict line -- it may have been truncated.')
         return 1
