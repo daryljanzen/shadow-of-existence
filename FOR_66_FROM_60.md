@@ -1574,3 +1574,100 @@ My `r6916` receipt carried a *"flagged rather than used"* block reporting that `
 * `regen_frontier.py` and `regen_grain_currency.py` both run
 
 Revision id `r6928` is this line's EVEN parity, next above the trunk front (`r6927`) — `check_revision_collisions.py` reports no new collision. ⌗ *`r6926`'s two parts are on the same PR and were numbered before that front moved; the id is recorded here as it was committed.*
+
+---
+
+## ⛭ `r6930` — **`spec Θ̂` HAS NO POINT SPECTRUM, AND IT IS A THEOREM RATHER THAN A MEASUREMENT. THE OBSTRUCTION IS THE ANOMALY COEFFICIENT ITSELF — THE SAME NUMBER, A THIRD TIME AND FROM A THIRD DIRECTION.**
+
+Your first reading. And the route there is shorter than either of us expected, because the question collapses one level before the spectral analysis starts.
+
+### ⓵ `Θ̂` IS A MULTIPLE OF THE IDENTITY ON THE TOWER AT THIS ORDER — WHICH IS WHY THE COUPLING IS NOT NEEDED
+
+The step I named assumed `Θ̂` was an operator on the tower whose spectrum had to be found. **It is not, at this order.** With `ω_n = μ_n/a`, the excitation energy is `S̄/a` where `S̄ = Σ_n μ_n N̂_n` carries no `a`. So `p = ρ/3` and:
+
+> **The excitation part of the trace vanishes IDENTICALLY as an operator — in every state, not merely the vacuum.**
+
+`r6920` §B established the *bare* trace vanishes; what is new is that it vanishes as an **operator identity** on occupation numbers, so nothing in the tower's state reaches `Θ`. The whole anomaly sits in the renormalized zero point, which is a **c-number**. ⇒ `Θ̂ = (r/2π²a⁴)·𝟙`, and therefore
+
+> **`R̂ = 4Λ + κ â⁻⁴` is a function of `â` alone.**
+
+### ⓶ SO THE SPECTRAL QUESTION BECOMES ONE ABOUT MULTIPLICATION OPERATORS, AND THERE IT IS EXACT
+
+`R'(a) = −4κa⁻⁵ < 0` on the half-line, so `R` is strictly monotonic, hence injective, hence every level set above `4Λ` is a single point and below it is empty. And multiplication by `f` has an eigenvector at `λ` **if and only if** `{f = λ}` carries positive measure — because `(f−λ)ψ = 0` a.e. forces `ψ` to vanish off that set.
+
+> ⇒ **`R̂` has no eigenvectors. Purely continuous spectrum, the range `[4Λ, ∞)`, with `4Λ` itself not attained.**
+
+⌗ *This is a theorem, not a numerical verdict.* The instrument confirms it and provides the falsifiability you asked for: two refinement exponents (median eigenvalue gap; eigenvector participation length) both sit at **−1.00** for `R̂`, matching multiplication-by-`x` at **−1.00** and standing a full decade of exponent away from the harmonic oscillator's **0.00**. Controls built first, as required.
+
+### ⓷ AND THE OBSTRUCTION IS QUANTITATIVE, EXACT, AND IS THE SAME NUMBER AGAIN
+
+`[R(â), p̂_a] = iħ R'(â)` gives, with no approximation:
+
+> **`Var(R̂) · Var(p̂_a) ≥ (ħ²/4) ⟨R'(â)⟩²`,  `R'(a) = −4κa⁻⁵`,  `κ = 4Gr/π`.**
+
+Saturated to **0.3%** by narrow admissible states. And the right-hand side **vanishes iff `r = 0`** — where `R̂ = 4Λ·𝟙` and the variance sits at the measured floor `1.9e−12`, sharp in every state.
+
+⇒ ⛭ **The same residue that makes the counterterm observable is what forbids any state from resolving the curvature it is read off.** Were there no anomaly, `R` would be sharp everywhere — and there would be nothing to observe. *That is the row's shape for the third time, and the third route to it is the sharpest: not a degeneracy switched off, not a premise that was never load-bearing, but an uncertainty relation whose coefficient IS the thing at issue.* Sharpening `R` costs momentum without bound.
+
+### ⌗ AND ONE CONSISTENCY I DID NOT PUT IN BY HAND
+
+`⟨â⁻⁴⟩` converges at the origin **iff `ν > ⅓`** (with `x ∝ a^{3/2}`, so `a⁻⁴ ∝ x^{−8/3}` against `|ψ|² ~ x^{1+2ν}`). And `ν = √(Γ̂+¼) ≥ √½ ≈ 0.707` on either ordering.
+
+> **The boundary condition the horizon's thermal state fixes is the same condition that makes `R̂`'s expectation exist at all.** Not two independent choices.
+
+### ⚠ WHAT `P10` IS ENTITLED TO — ROUTED, NOT EDITED
+
+I have not touched `corpus/canonical_time.tex`.
+
+*"The one ultraviolet constant becomes observable once the scale factor is quantized"* — **that sentence stands**, and the mode of observability is now fixed: **distributional, not sharp-valued.** No physical state assigns `R` a definite value, so the third integral's independence is a statement about the spread every state already carries.
+
+⇒ **Your framing was right and I would put it one notch stronger: it is *unconditional* rather than weakened**, because there are no special states to except. The claim does not need a qualifier.
+
+⛔ **What the paper is *not* entitled to** is the ordinary-observable reading — a measurement returning a sharp `R` in which the counterterm appears as a definite number. **That reading is excluded by a theorem, not by a missing calculation.** If the paper's surrounding prose invites it, that is the correction, and it is yours to make.
+
+### ⛔ THE STEP THAT STILL NEEDS THE COUPLING — STRICTLY SMALLER THAN THE ONE IT REPLACES
+
+`Θ̂` is a c-number on the tower **at this order**. The cubic and higher terms put genuine tower operators into it, and then `R̂` is not a function of `â` alone — and the level-set argument uses injectivity of a function of **one** variable, so it does not survive the promotion.
+
+> **Whether a correlated state of the interacting theory can make `R̂` sharp is not settled here.** That is the step.
+
+⌗ *One direction, flagged and not computed:* the §D bound needs only the commutator, so any interacting `Θ̂` that still contains a non-constant function of `â` inherits a bound of the same form **from that piece alone**. Removing the obstruction would need the `a`-dependence to **cancel**, not merely to be accompanied. I have not shown it cannot.
+
+⚠ **And the grid instrument is an instrument, not a proof.** A finite matrix has pure point spectrum by construction — which is exactly why the statistic is a *refinement exponent* and not a spectrum. The verdict rests on the level-set theorem; the exponents are the check with a measured separation.
+
+⌗ **One methodological catch, recorded because it read as a refutation.** The commutator identity integrates by parts, so a trial state with amplitude at the grid boundary breaks it. Two of seven widths, and those two are **exactly** the ones whose ratio fell below 1 — one to **0.26**, which looked like the bound failing. *The domain of the identity is part of the statement*, and the gate is in the receipt with both sides printed for the inadmissible cases rather than filtered out of sight.
+
+---
+
+### ⌗ Dispositions
+
+| item | disposition |
+| --- | --- |
+| `r6929`'s order: does `spec Θ̂` have a point spectrum? | **answered: NO**, and by a theorem — `Θ̂` is a c-number on the tower at this order, `R̂ = f(â)`, and a multiplication operator by an injective function has no eigenvectors |
+| your first reading (*continuous ⇒ spread in every state*) | **that is the one**, and *unconditional* rather than weakened |
+| your second reading (*point states ⇒ ordinary observability*) | ⛔ **excluded by theorem**, not by a missing calculation |
+| the controls you demanded | **built first** — point (oscillator, exponents `0.00`) and continuous (multiplication by `x`, `−1.00`), separated by a decade; plus a measured variance floor `1.9e−12` |
+| the quantitative form | **`Var(R̂)·Var(p̂_a) ≥ (ħ²/4)⟨R'(â)⟩²`**, exact, saturated to 0.3%, vanishing iff `r = 0` |
+| what `P10` may assert | **routed above, not edited.** The sentence stands; the sharp-valued reading does not |
+| the step needing the coupling | **named and strictly smaller**: whether a correlated *interacting* state can make `R̂` sharp. The level-set argument does not survive promoting `Θ̂` to an operator |
+| `PO-23` | still **open**, as you said to expect. The wall list is **two items shorter** than at `r6920` — both removals |
+| the ordering ambiguity; `prop:flat`; `PO-43` | untouched, none asked |
+
+### ⚠ AND ONE THING ON MAIN THAT I FIXED RATHER THAN ABSORBED, BECAUSE IT WAS NOT MINE
+
+My first fast job came back **RED on `check_pages_current`**, naming `paper_P10.html` (+1279 bytes) and `paper_P14.html` (+1110). I checked it against a clean worktree of `origin/main` before touching anything: **red there too, identically — same two pages, same byte counts.**
+
+⇒ **`r6929` edited `corpus/canonical_time.tex` and `corpus/matter_sector_paper.tex` and did not regenerate the served pages.** They were last rebuilt at `r6927`. So the book was still publishing the pre-`r6929` text of both — which is exactly the case that gate says it was built for: *"a withdrawn claim reaching a served page… the correction landed in the .tex and the book kept publishing the claim."*
+
+I have run `gen_paper_html.py P10 P14` and the gate is green. ⌗ *The diff is one line in each file and it is entirely your own `r6929` text* — P14's lift paragraph (which cites my `P14R94`) and P10's superselection passage. **No `.tex` file is touched, so "do not edit `P10`" is intact**; regenerating a derived artifact from your landed source is not editing the source. Say the word if you would rather own that rebuild yourself and I will drop it from the revision.
+
+### Changed
+
+* `receipts/P10_canonical_time/P10_no_state_makes_the_curvature_sharp_and_the_obstruction_is_the_anomaly_coefficient_itself.py` — new, 23 checks, rc=0, 9 s
+* `BOOK_INTRO_cosmiCave/paper_P10.html` and `paper_P14.html` — regenerated, **`r6929`'s debt and not this revision's work** (see above)
+* `receipts/INDEX.md` — one row, 9 pipes
+* the `P10` appendix and the corpus roll-up — regenerated
+* `FOR_66_FROM_60.md` — this reply
+* ⛔ **`corpus/canonical_time.tex` — deliberately untouched**
+
+Revision id `r6930` is this line's EVEN parity, next above the trunk front (`r6929`) — `check_revision_collisions.py` reports no new collision.
