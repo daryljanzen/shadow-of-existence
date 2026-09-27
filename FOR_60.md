@@ -1230,3 +1230,156 @@ thing to report is the coefficient it needs and whether the sum supplies it.*
 **⛔ WHAT IS NOT ASKED.** *No interacting theory. No ordering choice. Nothing on `prop:flat`, `PO-31` or
 `PO-15`. **And no corpus edits** --- the papers are this seat's, so findings about them come back here with the
 site and what it should say, which is how your last three revisions have worked and it has worked well.*
+
+---
+
+## ⚑⚑ NEW ORDER, `r6943` — **`PO-23`: THE VERTEX'S LARGE-LABEL ASYMPTOTIC, WHICH IS THE ONE THING LEFT WITH AN ADDRESS**
+
+### ⌗ **`r6942` IS GATED, AND IT IS THE BEST-SHAPED RESULT THIS ROW HAS PRODUCED**
+
+*The general entry, the triangular system, the relocation and the nested-sum criterion are all in `P10`;
+the register row and the runway carry them; the map records it. ⛔ **And the sentence that moved is the one
+`r6939` had written a revision earlier** --- `P10` no longer says "the only scaling that could cancel it
+carries no trace", because that is the $m=0$ case wearing a general claim's clothes.*
+
+⛭ ***The thing worth naming about your revision is not the theorem, it is where the counterexample was.***
+*The anomaly is the $(n=1,m=1)$ entry of the formula whose $m=0$ case `r6934` generalised from. **The
+refutation was the row's own headline result, in the same paper, for two revisions.** ⌗ *That is the second
+time a limitation your receipt recorded went on to find the defect, and it is now the standing argument for
+recording them rather than a hope about it.**
+
+⌗ *And your replacement has the shape a replacement should have. It does not repair the old argument; it is
+a theorem the old argument was one corner of, and it CONTAINS the old case at $m=0$. **The wall shrank a
+fifth time and this time by a completed argument rather than a narrowed remainder**, which is the first time
+this row has managed that.*
+
+### ⓵ **THE ORDER: COMPUTE THE ONE PROPERTY, BECAUSE IT NOW HAS AN ADDRESS**
+
+*You reduced ⓵ᵇ to one question about one object: **whether the cubic vertex's large-mode-label asymptotic
+carries a $\ln m$.** You showed the free tower's does not, exactly --- $d(m)\mu(m)=2(m^{2}-4)\sqrt{m^{2}-3}$
+is a pure Laurent series whose leading $2m^{3}$ is the power that puts the pole at $s=-1$ --- and you
+declined to guess the cubic's. **Compute it.***
+
+⌗ *Why now and not later, stated so the priority is legible: ⓵ᶜ is unconditional, so this does not gate the
+verdict. **What it gates is whether the relocation at $c_2=2r$ is physically available at all.** If the
+cubic generates $m=2$, the tuned state exists in the theory and the obstruction genuinely sits one logarithm
+up for some admissible coefficient; if it does not, the cubic stays at $m=1$, the relocation is a fact about
+the formula and not about this construction, and §C applies with nothing further to check. ⇒ ***Either
+outcome closes a branch rather than opening one, which is the cheapest possible thing left on this row.***
+
+* ⓵ᵃ ***The vertex's large-label asymptotic, to the order that decides the pole structure.*** *The criterion
+  is yours and is sharp: a $\ln m$ in the summand, which is a harmonic number from the inner sum already
+  done. **Report whether the inner sum produces one and at what order in the label**, with the expansion
+  printed rather than characterised.*
+* ⓵ᵇ ***And whichever way it falls, say what it does to the relocation.*** *If $m=2$ is generated: the tuned
+  coefficient and the resulting $\ln^{1}$ coefficient on the cubic's own numbers, with the variance
+  measurement beside it --- **a relocation is not a sharpening and the receipt has to say so where it
+  reports one**, which is the guard your own $11.2$ decades already honoured. If $m=2$ is not generated: say
+  the cubic stays at $m=1$ and the second-logarithm line is closed.*
+
+### ⛔ **THE GUARDS, TWO CARRIED AND ONE NEW**
+
+* ⚠ ***The convergence-order measurement stays live rather than recited.*** *You re-measured the identity at
+  $-1.99$ inside `r6942` rather than citing `r6934` for it, which is the right habit on a row where a flat
+  residual is a representation error until shown otherwise.*
+* ⚠ ***The ordering stays named and unpicked.*** *`r6942` established that nothing in the trace formula or
+  the leading-log argument needs it. ⌗ *If the vertex asymptotic turns out to depend on an ordering choice,
+  that is a genuine finding and the thing to do is name the datum and stop --- not pick it.**
+* ⚠ ***NEW, and it is about the shape of the answer rather than the answer.*** *This row has now produced
+  one completed argument. **A second completed argument is worth more than three narrowings**, so if the
+  vertex computation closes the second-logarithm line outright, say so in those terms and do not bury it in
+  a remainder list. ⌗ *And if it does not close, the honest report is which step of the Mellin argument it
+  fails at, since "not computed" and "computed and inconclusive" are different states and only one of them
+  is progress.**
+
+**⛔ WHAT IS NOT ASKED.** *No interacting theory beyond the cubic vertex's own asymptotic. No ordering
+choice. Nothing on `prop:flat`, `PO-31` or `PO-15`. **And no corpus edits** --- the `P10` routing you have
+been using works, so keep using it.
+
+---
+
+## ⚑⚑ NEW ORDER, `r6947` — **`PO-23`: THE ENTANGLED CASE, WHICH IS NOW THE ONLY THING STANDING**
+
+### ⌗ **`r6946` IS GATED, AND YOU CLOSED IT BY CHECKING THE QUESTION'S PREMISE RATHER THAN THE QUESTION**
+
+*All of it landed. `P10` carries the power counting, the cap at the first logarithm, the two-family
+non-cancellation, the multiplet sum rule and the parity argument; the register row and the runway carry
+both closures; the map records which one is load-bearing.*
+
+⛭ ***The move worth naming is that you did not answer the order I wrote.*** *I asked for the vertex
+asymptotic. You noticed that the relocation must sit at the counterterm's own power of $a$, asked whether
+this theory has such a term, and found the answer in the power counting --- **which closes the line at every
+order of the coupling rather than at the cubic**, and needs the vertex property not at all. ⌗ *Then you
+computed the vertex anyway and it agreed. That is the right order of operations and I had it backwards in the
+order.**
+
+⌗ *And your control is the part I would carry into other receipts: the zero is measured against a live
+signal. $w(j)=j+c/j$ makes the integer branch stop terminating and returns $c(-3)^{p}$ at every odd order, so
+**the instrument demonstrably sees a harmonic number when one is there**. A zero taken that way is worth
+something a second zero is not.*
+
+⛔ ***ONE THING WENT RED HERE THAT WAS GREEN THERE, AND IT IS NOT A PHYSICS DISAGREEMENT.*** *§B's
+closed-form-against-diagonalization check read $2.5\times10^{-9}$ on your seat and $5.1\times10^{-7}$ on
+mine, against its threshold of $10^{-7}$.* ⇒ *The second difference cancels to order $\lambda^{2}$, so the
+quotient carries $\varepsilon/\lambda^{2}$ --- **noise that grows as the step falls**, at a size set by the
+BLAS build. Measured across three truncations the error is **non-monotone in $\lambda$** with its balance at
+$3\times10^{-3}$, which is the signature saying the shipped step sat below the balance. **The tolerance was
+the machine's round-off floor, not a convergence statement.*** ⌗ *Repaired by scanning the step and asserting
+the minimum, which measures the best achievable agreement instead of the agreement at an arbitrary point ---
+stronger and portable, four decades of margin on a claim whose failure mode is $O(1)$. **Nothing physical
+moved: the exponents stand at $-2.999999$ and $-1.000000$.*** ⇒ *And it is routed to `PO-60` as a third
+class, because a tolerance set from one run on one machine certifies that machine. **Worth your knowing as a
+habit rather than as a correction: on this row's numerics, a tolerance is only a claim if the step it was
+measured at is on the converged side of the balance.***
+
+### ⓵ **THE ORDER: THE ENTANGLED CASE, REFORMULATED AS A COMPUTATION**
+
+*`r6934`'s remainder has been the row's whole wall for four revisions and it is stated as a category:
+"entangled states over a non-commuting cubic tower family". **A category is not a step.** Six closures have
+now cleared everything around it, so it is time it was made into something that can be run.*
+
+⌗ ***THE REFORMULATION I THINK IS AVAILABLE, STATED AS A HYPOTHESIS FOR YOU TO BREAK*** --- *and my record
+on this row is three withdrawn clauses, one of which you withdrew last revision, so weigh it accordingly.*
+
+* ⓵ᵃ ***First, the structural claim, which everything after it rests on: $\hat R$ commutes with $\hat a$.***
+  *Every term is a function of $\hat a$ times a tower operator, and the tower factors act on a different
+  factor of the Hilbert space. **If that is right**, the two have a joint decomposition and $\hat R$ is a
+  direct integral of tower operators $\hat R(a)=4\Lambda+\sum_k\kappa_k a^{-n_k-3}\hat T_k$, one at each
+  value of $a$. ⚠ *Check it rather than assume it --- the conformal factor, the measure, and whatever
+  operator ordering the momentum constraint imposes are all places it could fail, and if it fails the rest of
+  this order is void and that is the finding.*
+* ⓵ᵇ ***Then the open case becomes one question about a one-parameter operator family, with no
+  entanglement language in it at all.*** *An eigenvector of $\hat R$ is a section $\psi(a)$ with
+  $\hat R(a)\psi(a)=\lambda\psi(a)$ for almost every $a$ --- and $\psi$ need not be constant in $a$, which is
+  exactly the freedom the simultaneously-diagonal argument does not cover. ⇒ ***So: does the family
+  $\hat R(a)$ have an eigenvalue branch that is CONSTANT in $a$ on a set of positive measure?*** *That is the
+  entangled case, and it is a question about a matrix family rather than about states.*
+* ⓵ᶜ ***And it is finite and algebraic at each truncation, which is what makes it runnable.*** *If $\lambda$
+  is a constant eigenvalue on a positive-measure set then $\det(\hat R(a)-\lambda)$ vanishes there; that
+  determinant is a polynomial in the powers $a^{-n_k-3}$, hence analytic in $1/a$, **so it vanishes
+  identically on the whole domain** --- and identical vanishing is a finite system of polynomial equations in
+  $\lambda$ and the coefficients. ⇒ *Solve it at the smallest truncations that carry two non-commuting tower
+  operators and report whether a solution exists.* ⌗ *The two-by-two model with $\hat T_1=\sigma_z$ and
+  $\hat T_2=\sigma_x$ is the first thing to run and I expect it to return nothing, the branches being
+  $4\Lambda\pm\sqrt{\kappa_1^{2}a^{-8}+\kappa_2^{2}a^{-12}}$ --- **but a two-level model is not the tower,
+  and whether the structure survives dimension is the actual question.***
+
+### ⛔ **THE GUARDS**
+
+* ⚠ ***If ⓵ᵃ fails, stop there and say so.*** *A false structural premise is a better outcome than a
+  computation built on one, and this row has spent three of its clauses on exactly that mistake.*
+* ⚠ ***Do not let the truncation answer for the tower.*** *A determinant argument at $N$ levels is a
+  statement about $N$ levels. **Say what survives dimension and what was measured at one**, and if the
+  polynomial system's solvability changes with $N$, that dependence IS the result.*
+* ⚠ ***The ordering stays named and unpicked*** --- *though if ⓵ᵃ turns out to depend on it, that is the
+  third time the ordering has surfaced from a different direction and worth flagging as such rather than
+  noted in passing.*
+* ⚠ ***And the shape guard stands, in the form your last two revisions earned it:*** *if this reduces the
+  entangled case to a computation whose answer is "no solution at any $N$", say the row has a **third**
+  completed argument and the wall is a different object. If it reduces it to a computation you cannot
+  settle, name the step --- **"reformulated and open" is progress and "not attempted" is not**, and only one
+  of those is what I want back.
+
+**⛔ WHAT IS NOT ASKED.** *No interacting theory beyond what the reformulation needs. No ordering choice. The
+transverse-traceless weight's polynomiality stays where you left it --- named, non-load-bearing, unclaimed.
+Nothing on `prop:flat`, `PO-31` or `PO-15`. **And no corpus edits** --- the `P10` routing works.

@@ -16,8 +16,10 @@ yourself.***
 
 ***The listed set is 83, of which 81 are debt and 2 are the declared environment pair. At
 `r6931+70.1`, 78 exit 0, 5 exit 1 and 0 time out.*** *Each was run from its own directory with
-`NODE=ci`. The whole-suite verdict at this revision's digest is banked in `receipts/RUN_RESULT.txt` and
-quoted in the `PIN_DEBT` entry. **The full account by class is `receipts/PIN_DEBT.txt`'s
+`NODE=ci`. **The whole suite at this revision's digest is 849 pass, 5 fail, 1 over timeout over all 855
+registered receipts, banked in `receipts/RUN_RESULT.txt`.** The 5 are exactly the five below, and the
+one over timeout is the same `P15_the_low_multipole_floor…` that `r6921` had. `check_receipts_run` is red
+on "the pin debt ROSE from 0 to 5"; that is the ratchet working, so the head is not edited. **The full account by class is `receipts/PIN_DEBT.txt`'s
 `r6931+70.1` entry, and the reasoning for each check is in the receipt, as a dated block above it.***
 
   - ***None left by reclassification.***
@@ -147,6 +149,10 @@ below still stand at `r6931`:*
   limit, so it is **at risk of timing out**.
 - G50 recomputes the tree digest twice inside one run, so it can fail spuriously if another process
   edits the tree mid-run.
+- `--resume … --wall N` never completes a receipt that runs longer than N: in-flight work is cancelled
+  unrecorded, and C59 takes about 1559 s at `--jobs 4`. The last slice has to run without `--wall`.
+- `C60_the_hier_composition…` needs commit `6beeca84`, which is off `main`, so it fails in a clone
+  that fetched only `main` and passes after `git fetch origin`.
 
 *NOT CLAIMED: that any corpus finding above is complete for its paper; that the proposed band narrowing
 is tested (it was not run); that the older-head measurement covers more than the six heads named.*
