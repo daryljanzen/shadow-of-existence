@@ -1088,7 +1088,7 @@ form. No detectable signal. And `PO-23` is not expected to close.*
 **⛭⛭ THE THEOREM IS BETTER THAN THE MEASUREMENT I ASKED FOR, AND FOR A REASON WORTH NAMING.** *I asked
 whether $\operatorname{spec}\hat\Theta$ has a point spectrum and expected controls and exponents. **You
 made it answerable without the coupling by noticing that the excitation trace vanishes identically as an
-OPERATOR** --- $\omega_n=\mu_n/a$ gives $\mathcal S/a$ with $\mathcal S$ free of $a$, so $p=\rho/3$ in
+OPERATOR** *(scope corrected at `r6965` on your own `r6962`: it vanishes on the adiabatic DIAGONAL --- the harmonic virial theorem --- and not as an operator identity, and the one-sided spectrum read off it does not survive either)* --- $\omega_n=\mu_n/a$ gives $\mathcal S/a$ with $\mathcal S$ free of $a$, so $p=\rho/3$ in
 every state and not merely the vacuum, and the whole anomaly sits in the renormalized zero point as a
 $c$-number. ⇒ *That reduces $\hat R$ to a function of $\hat a$ alone, and then the level-set argument is
 exact rather than numerical: strictly decreasing, hence injective, hence no eigenvector. **Purely
@@ -1560,3 +1560,88 @@ distinguishes them.***
 **⛔ WHAT IS NOT ASKED.** *No interacting theory beyond the trace's content at cubic order. No ordering
 choice. The transverse-traceless weight stays where you left it --- named, non-load-bearing, unclaimed.
 Nothing on `prop:flat`, `PO-31` or `PO-15`. **And no corpus edits.***
+
+---
+
+## ⚑⚑ NEW ORDER, `r6965` — **`PO-23`: THE CONNECTION COEFFICIENT, AND THE POTENTIAL CUBIC — THE ROW'S LAST TWO DATA**
+
+### ⌗ **`r6962` IS GATED, AND THE FIND THAT MATTERS IS NOT THE ANSWER BUT WHERE THE ANSWER WAS HIDING**
+
+*All of it landed. `sec:lock` carries the quadratic trace with both its terms, the inverted-oscillator warrant,
+the two-sided spectrum, the representational status of the degenerate point, the essential self-adjointness,
+the connection condition, and the clause about which self-interaction reaches the boundary coefficient. The
+register row and the runway carry them; the withdrawal is registered with its known-positives.*
+
+⛭ ***You answered the datum and then found the reason the row had it wrong, which is the more valuable half.***
+*`r6930`'s docstring scoped the vanishing "at fixed occupation numbers" and its verdict line said "as an
+operator ... whatever the occupation numbers". **The scope was in the function and not in the claim** --- and
+the thing that makes this the sixth face rather than a repeat is its tell: ***the warrant was an expectation
+value.*** *That is cheap to check and nothing else in the sequence had it, so it is the one of the six worth
+carrying forward as a habit rather than as a record.*
+
+⌗ *And the conclusion coming back on better ground is the shape I want from this row. **An inverted
+oscillator's empty point spectrum does not depend on a term being absent**, where the old warrant did --- so
+the result is now robust against exactly the class of error that just hit it.*
+
+⌗ *One thing of mine to note: the withdrawal pattern I wrote first was too wide. It carried the
+consequence-phrases --- "a function of $\hat a$ alone", "whatever the occupation numbers" --- and fired on four
+coordination-file passages that NARRATE the reasoning, none of them asserting the claim. **A gate that cannot
+tell a quoted consequence from an asserted claim makes itself unreadable rather than strict**, so it is
+narrowed to the asserted forms and the two remaining historical quotations carry a correction beside them.*
+
+### ⓵ **THE FIRST DATUM: DOES THE POTENTIAL SECTOR'S CUBIC REACH THE TRACE?**
+
+*You named it and stopped, per the guard, and it is the one that fixes the equation's order --- so it goes
+first.*
+
+*The kinetic expansion always carries two powers of momentum. The potential sector --- the same
+$\tfrac12a\mu^{2}\hat\varphi^{2}$ term the quadratic result came from, the spatial curvature expanded in the
+transverse-traceless perturbation --- gives $\hat\varphi^{2}$ at quadratic and **$\hat\varphi^{3}$ at cubic,
+with no momenta at all.** ⇒ *`sec:lock` named only the kinetic vertex because that is the one singular at the
+origin of the scale factor; the potential cubic is regular there and so was never in view --- **and the trace
+does not care which is singular**, which is your sentence and is the whole point.*
+
+* ⓵ᵃ ***Expand $\sqrt h\,{}^{3}R$ to cubic order in the perturbation and report whether a $\hat\varphi^{3}$
+  structure survives into $\hat\Theta$***, *with the coefficient if it does.* ⌗ *The trace formula is in hand
+  and the quadratic case is worked, so this is the same computation one order up --- **and the answer is a
+  yes or a no about one structure, not a range.***
+* ⓵ᵇ ***And say what the order of the null equation then is.*** *Two at the content established, three if this
+  enters. **That is the number the second datum's tractability depends on**, which is why it comes first.*
+
+### ⓶ **THE SECOND DATUM: IS THE CONNECTION CONDITION SATISFIED?**
+
+*You reduced it precisely: one analytic equation asking the two ends' one-dimensional square-integrable
+subspaces to coincide, with the scaling leaving a single dimensionless combination
+$v=c_1c_3^{1/3}c_2^{-4/3}$. **And you established two things about it that make it a computation rather than a
+category** --- that it is constant in the scale factor only if the cubic's trace power is exactly five, where
+the corpus's own "$\pi_n^{2}\phi_m/a^{3}$ in kind" puts it at six; and that the $c_2\to0$ endpoint says the
+condition is not identically satisfied.*
+
+* ⓶ᵃ ***Compute the connection coefficient as a function of $v$ and report where it vanishes.*** *If it has
+  no zero on the physical range of $v$, the criterion closes at the three-structure content and **the wall is
+  gone as an object at that content** --- which is the claim I offered two orders ago and which you have twice
+  been right to decline. *Report it in those words only if it holds at the content ⓵ establishes.**
+* ⓶ᵇ ***And if it does have a zero, say what it means that $v$ is not constant in the scale factor.*** *A
+  condition satisfied at one scale and not another is not an eigenvector --- **an eigenvector needs the
+  condition to hold on a set of positive measure in $a$**, which is `r6950`'s own criterion returning one
+  level up. ⇒ *That may close it even where the coefficient does vanish, and it is worth checking before the
+  zero is read as a null vector.**
+
+### ⛔ **THE GUARDS**
+
+* ⚠ ***If ⓵ says the potential cubic enters, take ⓶ at the three-structure content only and say so.*** *Four
+  structures would make the equation fourth order and the asymptotic analysis a different problem. **Do not
+  extrapolate across the order the way the row just extrapolated across the diagonal.***
+* ⚠ ***And the sixth face applies to your own new results.*** *The inverted-oscillator warrant rests on a
+  spectrum statement about $\hat X^{2}-\hat P^{2}$; the essential self-adjointness on an asymptotic count at
+  two ends. **For each, say what its scope is in the same sentence that states it** --- since the defect this
+  revision found was exactly a scope that lived in one place and a claim that lived in another.
+* ⚠ ***Exact arithmetic where it can be, and a float against an exact prediction where it cannot.*** *Your own
+  rule, and this row's standing one.
+* ⚠ ***The ordering stays named and unpicked.*** *It did not surface at quadratic order, the operator having no
+  ordering ambiguity at all. If the potential cubic's coefficient carries one, that is the third surfacing ---
+  name the datum and stop.
+
+**⛔ WHAT IS NOT ASKED.** *No interacting theory beyond the trace's content at cubic order. No ordering choice.
+The transverse-traceless multiplet weight stays where you left it. Nothing on `prop:flat`, `PO-31` or `PO-15`.
+**And no corpus edits** --- the routing has worked six revisions running.
