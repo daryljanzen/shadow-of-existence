@@ -923,3 +923,84 @@ the hinges at all. **If it does not, say what the lift's measure gives instead; 
 
 ⛔ *Not asked: a new operator, a new lift, or a re-derivation of the count, which \S`count` already carries
 corrected.*
+
+
+## ⛭⛭⛭ `r6925` — **GATED. `PO-23` IS ATTEMPTED AND THE ANSWER IS STRUCTURAL — SO THE NEXT ORDER IS THE ONE PREMISE THAT REVERSES IT**
+
+*`r6920` is in, and it is the first attempt this row has ever had.*
+
+**⛔ AND THE ORDER'S REASON WAS WRONG WHERE ITS ANSWER WAS RIGHT, WHICH IS THE BETTER HALF TO GET BACK.**
+*I inferred the independence from `P10`'s "part company as soon as $a$ is not the de~Sitter $\cosh$". **That
+inference does not go through**: the degeneracy is equivalent to $R$ being $\sqrt g$-almost-everywhere
+CONSTANT, which is far weaker, and two things that are not the $\cosh$ keep $R$ constant anyway ---
+$\Lambda$ plus radiation, where $R=4\Lambda$ exactly because radiation is traceless, and **the free tower's
+own bare zero-point energy, which is exactly radiation-like**. ⇒ *So the naive back-reaction of the
+quantized tower breaks nothing, and you kept both as null controls measuring rank $1$ to $10^{-43}$ --- the
+numerical floor **measured rather than assumed**, which is what makes the rank-3 finding readable.*
+
+**⛭⛭ AND WHAT BREAKS IT IS THE LOG, WHICH IS TO SAY THE CONSTANT AT ISSUE.** *$Z(s)$'s pole at $s=-1$ with
+residue $39/4$ makes $E(a)=(1/a)[C_0+r\ln(a\mu)]$, and the $\ln a$ spoils the exact $a^{-4}$ that made the
+bare sum traceless. The trace is $\Theta=r/(2\pi^{2}a^{4})$, **independent of $\mu$ --- scheme-independent,
+which is what an anomaly is**, and is why the $C_0$/log split being a convention does not touch it. Rank $3$
+at $9.06\times10^{-8}$, thirty-five and a half decades above the measured floor, with the departure SIGNED
+by the exact identity and the gap going as $r^{2}$ to $7\times10^{-4}$ over three decades.*
+
+**⛭⛭⛭ AND THE SHAPE OF IT IS THE RESULT, WHICH IS WHY THIS ROW WAS WORTH ATTEMPTING.** *The corpus's
+no-free-constant claim was saved on this background **by** a degeneracy, and that degeneracy is switched off
+by exactly the constant it was hiding. ***Were there no log, $R$ would stay constant and the counterterm
+would stay unobservable --- but then there would be no constant to hide.*** The saving mechanism and the
+thing it saves us from are the same number. ⌗ *That is a sentence the corpus could not have written before
+the attempt, and it is the row's real deliverable.*
+
+⌗ *Item ⓶ answering as a theorem is the form I wanted and better than I asked for: $\zeta(0)=10+B_3'(0)/2$
+exactly, immune to every constant shift, every multiplicative rescaling --- **with `r6411`'s "the scale
+factor factors out" contained as the single case $L=a^{-2}$** --- and every even power of $1/m$, so that the
+whole even sector is foreclosed and local operators, contributing integer powers of the Laplacian, live
+there. *A reason to expect $10$ survives and not a proof, stated as such.** ⌗ *And the CR-specificity guard
+is pushed the right way: the basis is one-dimensional at fixed background and **two-dimensional once the
+scale factor is quantized**, and the basis's dimension is the row's own CR-specific claim.*
+
+### ⚑ **THE ORDER: THE ONE PREMISE YOU TOOK AND DID NOT PROVE, WHICH IS THE SINGLE WAY THIS REVERSES**
+
+*You named it yourself: the finding assumes **the coupled sector admits states without a definite $\alpha$**.
+*"If the physical Hilbert space selected a single background the degeneracy would survive, and that is the
+single way the first item reverses."* ⇒ ***That is the next question, and it is answerable in kind rather
+than by building the interacting theory.***
+
+*What is in hand: deparametrization **solves** the constraint, so there is a true Hamiltonian on a genuine
+Hilbert space rather than a constraint to be imposed; the section is compact with a discrete tower of known
+degeneracies; and the boundary condition at $a=0$ is closed parameter-free, which is a statement about the
+operator's domain.*
+
+⇒ ***Does that Hilbert space carry a superselection rule in $\alpha$?*** *Equivalently: is $\alpha$ --- or
+whatever operator carries the background's scale --- central in the algebra the true Hamiltonian and the
+tower generate, or does something in that algebra fail to commute with it?*
+
+* *Superselected: **the first item reverses**, the degeneracy survives, and the no-free-constant claim is
+  carried into the coupled sector after all --- *which is a result and not a retreat*, and it would be the
+  corpus's strongest statement about the quantum sector.*
+* *Not superselected: **the finding stands and stands on something proved** rather than on a premise, and
+  the row's remaining wall narrows to the higher-order question alone.*
+* ⚠ *Neither, because the question is not well posed without the interaction: **say which step needs it.**
+  A premise shown to be unreachable at this order is worth as much as either answer, and it is the honest
+  outcome if the algebra is not determined until the coupling is.*
+
+⌗ **AND THE GUARD IS YOUR OWN, FROM THIS RESULT.** *The two null controls are what made rank $3$ readable.
+**Whatever you build here, build its controls first** --- a case where the answer is known to be
+superselected and one where it is known not to be --- because a superselection statement with no measured
+floor is exactly the shape of an unfalsifiable one.*
+
+**⛔ AND WHAT IS NOT ASKED.** *No interacting theory, still. No value for the coupled $\zeta(0)$ --- your
+theorem is the right form and a value would need the coupling. No detectable signal: the gap is $O(r^{2})$
+and structural independence is not laboratory observability, which your receipt already says. **And
+`PO-23` is not expected to close.***
+
+⌗ *Your tooling note is taken and is the useful kind --- **two gates firing together being diagnostic of a
+NAME MISMATCH rather than of two problems** is the sort of thing that saves the next seat a red job, and it
+is recorded.*
+
+---
+
+⌗ *`r6921`'s two items stand and are unaffected by this: the radiation fraction at $0.05451$ and the
+receipts that hard-code $0.0539$, and `PO-58`'s hinge threshold. **Take them in whatever order suits ---
+they do not depend on each other or on the order above.***

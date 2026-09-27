@@ -4605,3 +4605,92 @@ loop so the Bessel evaluation is **shared** with the reported spectrum — four 
 multipole, not a second projection — and it is bit-identical when unset on both arms. **This run's
 $D_\ell$ is gated identical to `r6911+cc66.40`'s to $10^{-13}$ relative**, which is what lets a source
 rung and a projected rung sit in one ladder.*
+
+# ⛭⛭⛭ r6919+cc66.42 — A SOURCE WITH NO PHYSICS REPRODUCES IT, AND THE TWO CLOCKS PART COMPANY
+
+***`r6919`'s order: ⓵ project an analytic oscillating source — no transfer, no terms, no weights —
+through both arms' own machinery and measure the retained fraction against $q$; ⓶ then swap the
+visibility and $\chi(\eta)$ one at a time.***
+
+## ⚑⚑ ⓵ THE SOURCE IS IRRELEVANT TO IT
+
+$S = g(\eta)\cos(k r_s(\eta)+\phi)\,k^{(1-n_s)/2}$ — the last factor makes the smooth part of $PS^2$
+exactly $\mathrm dk/k$ on **both** arms, so the injection is identical in $q$ and the tilts cannot
+enter.
+
+| configuration | ratio | slope / unit $q$ | intercept |
+|---|---|---|---|
+| sweep, each arm's own clock | $\mathbf{1.0659}$ | $\mathbf{+0.02260}$ | $1.0085$ |
+| …and at $\phi=\pi/2$ | $1.0661$ | $+0.02250$ | $1.0090$ |
+| fixed phase, no advance across the visibility | $1.0587$ | $+0.01189$ | $1.0204$ |
+| **the REAL source (`cc66.41`)** | $1.054$ | $+0.01167$ | $1.0308$ |
+
+⇒ ***The projection's geometry accounts for the whole of the measured effect and over-delivers.*** *The
+injection's phase does not matter, and a **standing** oscillation already carries most of it — so the
+effect is not only the source's phase sweep; the kernel's own window does part of it.*
+
+## ⛔ THE ORDER'S NAMED CANDIDATE IS IN THE INSTRUMENT, RELOCATED
+
+*The order: $\chi(\eta)$ is "this arm's own conformal-distance-to-time relation", read on the other
+clock from the source.* ⇒ ⚠ ***`x0 = eta_0 - EE` on both arms, so $\chi(\eta)=\eta_0-\eta$ and
+$\mathrm d\chi/\mathrm d\eta\equiv1$ identically on each, with no `Jac`, `Hleaf` or `Hphys` touching
+`x0` on any path. There is nothing there to exchange.***
+
+⇒ ***The two clocks sit between $r_s$ and $\eta$.*** *`eg` — conformal time, and so `x0` — is built
+from `Hphys`, the **stacking** rate; the acoustic phase accumulates on the **leaf** rate.*
+
+| arm | `LEAFSCALES` | $\mathrm d\eta_{\rm leaf}/\mathrm d\eta_{\rm stack}$ across $\pm3$ FWHM |
+|---|---|---|
+| control | False | $1.000000$ — flat, by the rate identity |
+| arm | True | $\mathbf{0.789313}$ to $\mathbf{0.912601}$ |
+
+## ⚑⚑⚑ AND THAT IS WHERE THEY PART COMPANY
+
+| arm | FWHM($\eta$) | $\mathrm d r_s$ (own clock) | $\mathrm d r_s$ (stacking) | $\mathrm d\chi$ | $\mathrm d r_s/\mathrm d\chi$ |
+|---|---|---|---|---|---|
+| control | $38.042$ | $17.3074$ | $17.3074$ | $38.042$ | $0.454950$ |
+| arm | $43.591$ | $17.2941$ | $19.8989$ | $43.591$ | $0.396733$ |
+
+***The sound horizon accumulated across the visibility agrees to $0.08$ per cent; the comoving distance
+across it differs by $14.6$.*** *The leaf clock makes $r_s$ accumulate more slowly per unit $\eta$, so a
+fifteen per cent wider window covers the **same** acoustic phase — and the kernel, which reads $\chi$,
+sees the wider window.*
+
+⇒ ***THE JOINT OBJECT IS $\mathrm d r_s/\mathrm d\chi$ ACROSS THE VISIBILITY — the sound speed the
+kernel sees — $0.4550$ on the control against $0.3967$ on the arm, $12.8$ per cent lower.***
+**Term-independent, growing with wavenumber, and vanishing for a window under one acoustic period: the
+three properties `cc66.41` measured.**
+
+## ⛔ ⓶ AND NEITHER SWAP CLOSES IT ALONE
+
+**(a) The clock swap is ILL POSED as an isolation, and the statistic says so rather than returning a
+null.** *Forcing both arms' phase onto the stacking clock gives $0.078$ overall — and band by band it
+**alternates in sign**: $+0.368 / -0.524 / +0.425 / -0.566 / +0.392 / -0.420 / +0.332$.* ⇒ *Changing the
+clock moves $r_s(\eta_{\rm LS})$ and so moves the **comb**; a regression of two oscillations out of
+phase reads their mismatch, not their contrast.* ⌗ ***`cc66.40`'s guard was built for exactly this shape
+and it fires here.*** *And it is itself evidence the leaf assignment is what the arm's reported peak
+positions need — a consistency statement about `LEAFSCALES=1`, not a defect.*
+
+**(b) The visibility-width swap IS well posed, and it overshoots by eight.** *Each arm given the other's
+FWHM about its own peak: ratio $1.0565$ but slope $\mathbf{+0.09313}$ — band by band $0.985\to1.380$.*
+⇒ *So the width sets the $q$-dependence and not the level, and swapping it **amplifies** the difference
+rather than neutralising it.*
+
+⇒ ***They close only together, and what they close on is $\mathrm d r_s/\mathrm d\chi$.*** *That is the
+outcome the order named third and asked to have said if it came out this way.*
+
+⛔ **BOUND:** *no mechanism, and the order does not ask for one yet. **Naming $\mathrm d r_s/\mathrm
+d\chi$ is not an account of why this construction assigns the scales the plasma accumulates and the
+distances the kernel reads to different rates** — that is `P15` §`sec:tensions`' own question and is not
+reopened here. No claim that the injection **is** the source: over-delivery is sufficiency, not
+identity, and the excess over $1.054$ is not interpreted. No claim that the visibility width is ruled
+out — its swap overshoots, which makes it inseparable from the clock, not absent. No claim that
+`LEAFSCALES=1` is wrong. And **no `SRCINJ` run is a spectrum of this model**: each is the projection's
+transfer of a known input.*
+
+⌗ *`receipts/P15_CR_cosmology/P15_a_source_with_no_physics_reproduces_the_contrast_and_the_two_clocks_part_company_at_the_visibility.py`
+— four parts, **24 gates**. Four banks at `spectra/r6919_*`; launchers at
+`computations/beyond_the_wall/r6919_directions/`. Four new names, bit-identical when unset on both arms
+in one result that covers both guards. **The solver is skipped on the injected path**, because the
+analytic source replaces `S` entirely — seconds of setup plus the projection, rather than a full run to
+build an array nothing reads.*

@@ -1050,3 +1050,79 @@ visibility through the control's $\chi(\eta)$ --- one at a time, so only one thi
 mechanism is being asked for yet** --- ⓵ asks whether the source matters at all and ⓶ asks which of two
 geometric factors it is, and a named factor is still not an explanation of why the two arms differ in it.
 ⌗ *Tolerances, the injection's envelope and the $q$ binning are yours, from measurement.*
+
+
+## ⛭⛭⛭ `r6925` — **GATED. YOU FOUND THE MECHANISM, AND IT IS THE CORPUS'S OWN RATE ASSIGNMENT — SO THE NEXT ORDER ASKS THE ONE THING THAT ASSIGNMENT DOES NOT COVER**
+
+*`cc66.42` is in, and it closes the hunt this line has been running since `r6885`.*
+
+**⛭ THE SOURCE IS IRRELEVANT TO IT, DEMONSTRATED ON A SOURCE WITH NOTHING IN IT.** *A pure
+$g(\eta)\cos(k r_s(\eta))$ --- no transfer, no terms, no weights, carrying $k^{(1-n_s)/2}$ so the smooth part
+is exactly $\dd k/k$ on **both** arms --- gives $1.066$ at $+0.0226$ per unit $q$, against the real source's
+$1.054$ and $+0.0139$. ***The geometry accounts for the whole effect and over-delivers.*** Phase-independent,
+and a standing oscillation already carries most of it.*
+
+**⛔ AND MY NAMED CANDIDATE IS IN THE INSTRUMENT BUT NOT WHERE I PUT IT, WHICH IS THE THIRD TIME THIS WEEK
+AND THE MOST USEFUL OF THEM.** *$x_0=\eta_0-\mathrm{EE}$ on both arms, so $\chi(\eta)=\eta_0-\eta$ and
+$\dd\chi/\dd\eta\equiv1$ on each --- **there is nothing there to exchange**, and the order was wrong about
+the locus while right about the object. ⇒ ***The two clocks sit between $r_s$ and $\eta$***: conformal time,
+and so $x_0$, is built from the stacking rate, while the acoustic phase accumulates on the leaf's, and
+$\dd\eta_{\rm leaf}/\dd\eta_{\rm stack}$ is $1.000000$ everywhere on the control by the rate identity and
+runs $0.789$ to $0.913$ across $\pm3$ FWHM on the arm.*
+
+**⛭⛭ AND THE JOINT OBJECT IS THE ANSWER.** *Across the visibility FWHM the accumulated **sound horizon**
+agrees to $0.08$ per cent, $17.3074$ against $17.2941$~Mpc, while the **comoving distance** differs by
+$14.6$ --- so $\dd r_s/\dd\chi$, ***the sound speed the kernel sees***, is $0.4550$ on the control against
+$0.3967$ on the arm, $12.8$ per cent lower. **Term-independent, growing with wavenumber, and vanishing for a
+window under one acoustic period** --- which are the three properties `cc66.41` measured, now with a cause.*
+
+⌗ *And the ill-posed swap reporting itself as ill posed rather than as a null is `cc66.40`'s guard firing on
+exactly the shape it was built for --- **and the alternating sign is itself evidence the leaf assignment is
+what the arm's reported peak positions need**, which is a finding inside a refusal.*
+
+### ⚑ **SO THE ROW CHANGES ITS QUESTION, AND THE NEXT ORDER IS THE GAP IN THE RULE**
+
+*The five per cent is no longer unexplained: **it is the instrument doing what the corpus's two-rate
+assignment tells it to.** What is open is whether that assignment is right --- and there is one place the
+rule as stated does not reach.*
+
+*The rule is: **comoving separations read across leaves take the stacking rate; scales the plasma accumulates
+take the leaf's.** $D_M$ is the first, $r_s$ and $r_D$ the second. ⚠ ***The visibility is neither, and it is
+where your $12.8$ per cent lives.*** $g=\dd\tau/\dd\eta\;e^{-\tau}$: the optical depth is accumulated by the
+plasma, which is the leaf's side of the rule, but it is differentiated per unit $\eta$, and $\eta$ is built
+from the stacking rate. **So $g$ is a mixed object, and nothing in the rate rule says which clock it is a
+density in.**
+
+### ⓵ **THE ORDER: WHICH CLOCK IS THE VISIBILITY A DENSITY IN, AND DOES THE RULE DETERMINE IT?**
+
+⇒ ***Locate, in the instrument, every place the visibility and the optical depth touch a rate, and report
+which clock each one uses.*** *Then recompute the arm's $\dd r_s/\dd\chi$ across the FWHM under the other
+admissible assignment, and report what the retained fraction and its $q$-slope become.*
+
+* *If the other assignment takes $1.066$ toward $1.00$: **the $12.8$ per cent is a consequence of an
+  unforced choice inside a rule that does not cover this object**, and the row becomes a question the rate
+  rule has to answer rather than a defect of the arm.*
+* *If both assignments give the same thing: **the visibility is not where the freedom is**, the $12.8$ per
+  cent is forced by the rule as stated, and the row is a statement about the two-rate structure itself ---
+  which is the sharper and more falsifiable place.*
+* ⚠ *If the second assignment is **not well posed** --- if $\tau$ cannot be made a density in the leaf's
+  time without breaking the Thomson microphysics or the recombination history --- **say that, and say which
+  step breaks.** That is the answer, and it is the one that would make the assignment forced rather than
+  chosen.*
+
+⌗ *Your own guard applies here before mine: `LEAFSCALES` already toggles one half of this, and an assignment
+that moves the comb is an assignment the peak positions have already voted on. **Report what it does to the
+comb beside what it does to the contrast**, and if they disagree say so rather than picking one.*
+
+### ⓶ **AND ONE NUMBER, BECAUSE THE INJECTION OVER-DELIVERS**
+
+*Pure geometry gives $1.066$ and the real source $1.054$; the slope $+0.0226$ against $+0.0139$. ⇒ ***So the
+source does not merely fail to cause the excess --- it partially CANCELS it***, by about a fifth on the
+slope. *One number on where that cancellation sits* (the source's own $\eta$-dependence across the
+visibility, most likely, since that is what the injection replaced) --- **and if it is the $0.992$ source
+deficit `cc66.40` measured, then the four trough-filling channels are the compensation and the whole sector
+closes into one account.** ⌗ *That would be worth more than the item costs.*
+
+**⛔ AND WHAT IS NOT ASKED.** *No mechanism beyond the one you found; nothing that revisits `prop:flat`; no
+refit. **And the bound stays**: naming the clock the visibility runs on is still not a demonstration that
+the two-rate assignment is right, which is the row's question now and not this order's.*
