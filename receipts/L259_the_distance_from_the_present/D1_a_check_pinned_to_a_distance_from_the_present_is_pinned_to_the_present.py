@@ -140,6 +140,9 @@ def main():
                   for n in ast.walk(tree)))
     r = subprocess.run([sys.executable, B1], cwd=os.path.dirname(B1), capture_output=True,
                        text=True, errors='replace', timeout=900)
+    # ** r6931+70.1: LEFT RED, downstream of a class (d). **  `B1` fails only on ⓸ᶜ¹, because r6511's
+    #    `_other_halves` exemption in check_revision_collisions makes the band unable to fire (see the
+    #    r6931+70.1 note in B1).  This check is right to require B1 green; it clears when the gate does.
     check(f'⓷ᶜ and `B1` exits {r.returncode}', r.returncode == 0)
     # ** ⛔⛭⛭ THE SEED STOPPED CONSTRUCTING ITS DEFECT, AND THE GUARD IS WHAT CAUGHT IT (r3968). **
     # ** It was a literal `.replace()` of `B1`'s whole assertion line, verbatim down to the variable

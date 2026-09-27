@@ -10,9 +10,13 @@ posit?"  Asked nowhere yet. ***
 ** ⛭⛭ ⓵ THE ANSWER IS IN WHAT CR ACTUALLY HAS, AND MOST OF IT IS DERIVED. **
 
       *** alpha      the ONE dimensionful invariant
-          Omega_m    the single calibrated parameter -- fitted to the acoustic angle
+          Omega_m    FIXED BY DATA, not a test -- the epoch x_0 the baryon-acoustic distances fix
+                     (r6931+70.1: this line read "calibrated ... fitted to the acoustic angle" and
+                     P15 read "CMB-calibrated"; P15 corrected that at r6625 and restated it at r6772)
           A_s        anchored at the first peak: INHERITED, not predicted
-          z_onset    FIXED; "meets the scale at every H_0" -- not a knob (r2688)
+          z_onset    (r6931+70.1: GONE from P15 since r6772 -- the plasma is handed over at the
+                     branch point and the sound horizon has no lower endpoint, so there is no onset
+                     to list; it was not a test at r2746 either)
           theta_*    DERIVED as D_M/r_s
           r=1.0816   DERIVED (RE-PINNED c54.223 -- was 1.0926), "with no free parameter"
           9/10       DERIVED, the branch-point transfer ***
@@ -21,8 +25,10 @@ posit?"  Asked nowhere yet. ***
       import, because there is nothing to count: a derivation has no $k$. ***
 
 ** ⓶ AND P15 ALREADY REPORTS SUCH PAIRS, SCATTERED. **  ** $\\theta_*=302.2$ against the measured
-$301$ ** ; ** $r_s=146.4$ against $145.4$ ** ; ** $1+z_{\\rm eq}=3399$, "a consequence and a check, not
-an input" **.
+$301$ ** ; ** $r_s=146.4$ against $145.4$ ** ; ** $1+z_{\\rm eq}=\\omega_m/\\omega_r$, "fixed by the same
+epoch", so the spectrum "is a test of the background rather than a further fit to it" **.  (r6931+70.1:
+at r2746 this read "$1+z_{\\rm eq}=3399$, a consequence and a check, not an input" -- the onset-tied
+wording P15 dropped at r6772; the pair is the same pair.)
   ⇒ ** So the instrument is not new. **  *** The comparison is the COLLECTION of these into one score,
     and the corpus already holds every derivation in it. ***
 
@@ -85,16 +91,39 @@ def main():
     check('⛭⛭ ⓵ P15 derives $\\theta_{*}$ and reports it against measurement: '
           '"$\\theta_{*}=D_{M}/r_{s}=302.2$ against the measured $301$"',
           '302.2' in p15 and 'against the measured' in p15)
-    check('and states $1+z_{\\rm eq}$ is derived: "Matter--radiation equality is then a consequence '
-          'and a check, not an input"',
-          'is then a consequence and a check, not an input' in p15)
+    # ** r6931+70.1: STALE (c).  The finding is unchanged; the sentence carrying it was rewritten.
+    #   This pinned "Matter--radiation equality is then a consequence and a check, not an input",
+    #   which `caaf3481` (r6772+66.3) removed when P15 dropped the fitted onset and handed the
+    #   plasma over at the branch point.  The same paragraph now reads "Matter--radiation equality
+    #   is then fixed by the same epoch ... so ... the computed spectrum is a test of the background
+    #   rather than a further fit to it", and sec:tensions' parameter bill has omega_m entering
+    #   "once, through equality".  ** That is still z_eq as a CONSEQUENCE of quantities fixed
+    #   elsewhere and not an input, which is all this check was for; only its anchor moved, from
+    #   the onset (gone) to the epoch x_0. **  The number 3399 left with the onset and is not
+    #   re-pinned.
+    check('and states $1+z_{\\rm eq}$ is derived: "Matter--radiation equality is then fixed by the '
+          'same epoch", so the spectrum "is a test of the background rather than a further fit to it"',
+          'Matter--radiation equality is then fixed by the same epoch' in p15
+          and 'is a test of the background rather than a further fit to it' in p15)
     check('and the high-$\\ell$ ratio carries "no free parameter"',
           'with no free parameter' in p15)
 
     # ⓶ while the fitted ones are named as fitted
-    check('⓶ while $\\Omega_m$ is named as the single calibrated parameter -- "the single '
-          'CMB-calibrated $\\Omega_{m}$" -- so it is fitted and not a test',
-          'single CMB-calibrated' in p15)
+    # ** r6931+70.1: FROZE AN ERROR (a).  This pinned "the single CMB-calibrated $\\Omega_{m}$",
+    #   and the adjective was wrong: P15's own body fits Omega_m to the distance data (Planck's
+    #   0.3153 degrades that fit), and `174202ab` (r6625) corrected the abstract and caption to
+    #   "the single free $\\Omega_m$ ... the data themselves prefer".  The r6772 rewrite then states
+    #   the parameter bill once, in sec:tensions: "the epoch $x_{0}$ (equivalently
+    #   $\\Omega_m=2/(x_{0}^{3}+2)$ ...), which the rate carries and the baryon-acoustic data fix".
+    #   ** The finding -- Omega_m is FIXED BY DATA and so cannot be scored as a derivation -- is
+    #   what the corrected sentence says, more accurately; the pin follows the correction rather
+    #   than defending "CMB-calibrated". **
+    check('⓶ while $\\Omega_m$ is named as fixed by data -- "the epoch $x_{0}$ (equivalently '
+          '$\\Omega_m$ ...), which the rate carries and the baryon-acoustic data fix" -- so it is '
+          'fitted and not a test',
+          'The quantities this cosmology actually uses are the epoch $x_{0}$ (equivalently '
+          '$\\Omega_m=2/(x_{0}^{3}+2)$' in p15
+          and 'which the rate carries and the baryon-acoustic data fix' in p15)
     check('and $A_s$ is "anchored" at the first peak by a value the construction "inherits rather '
           'than predicts" -- also not a test',
           'the first peak is where the amplitude is anchored' in p15
@@ -115,7 +144,7 @@ def main():
     print('     derived; scoring them against measurement imports no parameter vector, because there is')
     print('     nothing to count.')
     print('  ⓶ ** And P15 already reports such pairs, scattered: ** θ_* = 302.2 against 301, r_s = 146.4')
-    print('     against 145.4, 1+z_eq = 3399 "a consequence and a check, not an input".')
+    print('     against 145.4, and 1+z_eq = ω_m/ω_r "fixed by the same epoch" the distances fix.')
     print('     ⇒ ** The instrument is not new — the comparison is the COLLECTION. **')
     print('  ⛔ ⓷ *** AND WHAT THIS RECEIPT REFUSES TO DO IS THE POINT.  A first draft scored three')
     print('     pairs at χ²/dof = 5.67 with a 4σ pull on θ_*.  EVERY σ IN IT WAS INVENTED BY THIS LINE.')

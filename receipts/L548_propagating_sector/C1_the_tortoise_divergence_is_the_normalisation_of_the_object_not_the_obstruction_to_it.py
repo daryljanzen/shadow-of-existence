@@ -226,13 +226,23 @@ def main():
     check('   and the disambiguation was LOCAL, checked at its own commit: the surrounding sentence '
           'stood unchanged across c54.214 -- only the parenthesis moved',
           _SENT in _before and _SENT in _after)
-    check('   ⛭ and p0 has since gone further, at r3811: "the propagating spinor field sector is now '
-          'built as well~\\cite{JanzenDynamics}, the leaf-bound modes and the propagating field '
-          'being two sectors rather than one owed" -- which is this file\'s own reading arriving in '
-          'the paper, the divergence having been the normalisation and not the obstruction',
-          'the propagating spinor field sector is now built as well' in p0
-          and 'the leaf-bound modes and the propagating field being two sectors rather than one '
-              'owed' in p0
+    # ** r6931+70.1: class (c), STALE.  r6683 (73eb61ef) rewrote p0's "the propagating spinor field
+    #   sector is now built as well~\cite{JanzenDynamics}, the leaf-bound modes and the propagating
+    #   field being two sectors rather than one owed" into "the descent onto a \emph{propagating}
+    #   spinor sector is built on ... a Dirac field there propagating on the light cone" and "the
+    #   leaf-bound modes and the propagating field being two sectors"; r6719 (440623b6) named the member
+    #   "the chiral member, which is the unpolarised one".  Same two facts -- the propagating object is
+    #   built, and it is a different sector from the leaf-bound modes -- so this file's reading (the
+    #   divergence was the normalisation, not the obstruction) is still what the paper carries.
+    #   Re-pinned to the current sentences; the old parenthesis is still required absent. **
+    check('   ⛭ and p0 has since gone further (r3811, current wording r6683/r6719): "the descent onto a '
+          'propagating spinor sector is built on the chiral member, which is the unpolarised one, a '
+          'Dirac field there propagating on the light cone", "the leaf-bound modes and the propagating '
+          'field being two sectors" -- which is this file\'s own reading arriving in the paper, the '
+          'divergence having been the normalisation and not the obstruction',
+          ('the descent onto a \\emph{propagating} spinor sector is built on the chiral member, which '
+           'is the unpolarised one, a Dirac field there propagating on the light cone') in p0
+          and 'the leaf-bound modes and the propagating field being two sectors' in p0
           and _SENT not in p0)
 
     # AND THE RESULT IS BANKED IN P14, not only in this file -- an unbanked result is lost

@@ -109,9 +109,17 @@ def main():
     # ** not a synonym and the pin is sharper for it: `excluded` names what does the excluding.
     #   ⌗ *And the fifth of five instances: `walled` runs zero times in corpus/*.tex and 51 times
     #     across receipts/, of which only these few sit inside a pin.*
+    # ** r6931+70.1: class (c), STALE.  r6747+66.1 (43965df3, "P14 first pass ... stated plainly")
+    #   dropped the hedge "the honest statement is that" and turned ", and naming one remains open"
+    #   into ", so naming one remains open": "...the isometry route is excluded separately, and no
+    #   third mechanism has been named, so naming one remains open."  Same existential, same place,
+    #   same refusal to close.  And the next sentence P14 now adds is THIS receipt's finding in the
+    #   paper's voice -- "What can be said about one before it is named is more than nothing, and it
+    #   is the dimensional sentence just used, which mentions no route" -- pinned below with the
+    #   banked restatement.  The distance check (<900 chars, <=4 sentence-ends) still binds. **
     residue = ('What is not excluded here is a mechanism that is neither holonomy nor isometry; the '
-               'isometry route is excluded separately, and the honest statement is that no third '
-               'mechanism has been named, and naming one remains open.')
+               'isometry route is excluded separately, and no third mechanism has been named, so '
+               'naming one remains open.')
     check('⓵ P14 states the residue as an unbounded existential: "no third mechanism has been named"',
           residue in p14)
     check('   and the register carries it that way too', 'no third mechanism has been named' in po)
@@ -211,9 +219,15 @@ def main():
           'deliver is therefore a fixed pure number rather than a free parameter"',
           'what a third mechanism must deliver is therefore a fixed pure number rather than a free '
           'parameter' in p14)
+    # ** r6931+70.1: class (c), same rewording as ⓵ (43965df3): ", and naming" -> ", so naming". **
     check('   ⚠ and the paragraph still DECLINES to close the row: "no third mechanism has been '
-          'named, and naming one remains open"',
-          'no third mechanism has been named, and naming one remains open' in p14)
+          'named, so naming one remains open"',
+          'no third mechanism has been named, so naming one remains open' in p14)
+    check('   ⛭ and P14 now says this receipt\'s point itself, right after the residue: "What can be '
+          'said about one before it is named is more than nothing, and it is the dimensional sentence '
+          'just used, which mentions no route"',
+          ('What can be said about one before it is named is more than nothing, and it is the '
+           'dimensional sentence just used, which mentions no route') in p14)
 
     print()
     if FAILED:

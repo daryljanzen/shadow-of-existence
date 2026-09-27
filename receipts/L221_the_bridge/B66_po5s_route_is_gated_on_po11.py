@@ -6,16 +6,34 @@ of: the chain is `PO-2` → `PO-5` → `PO-11`, it terminates, and `PO-11` is th
 contain a massless spin-1 state?"  ** That question has a prior, and the prior settles the row's place
 on the board. ** ***
 
-** ⓵ WHAT THE COMPOSITE WOULD BE MADE OF. **  P14: the modes are ** wall-bound zero-modes ** with
-** disjoint support ** on three distinct throat walls -- "the three throat walls are distinct loci, so
-the wall-bound zero-modes have disjoint support and span a three-dimensional space".
+** ⓵ WHAT THE COMPOSITE WOULD BE MADE OF. **  P14: the modes are ** wall-bound zero-modes **, BOUND
+STATES OF THE LEAF -- "the three throat walls are distinct loci, so the wall-bound zero-modes are
+linearly independent and span a three-dimensional space", and "CR reads the fermion as a mode of the
+existent leaf, not a propagating spacetime field carrying the tortoise norm---on the leaf it is a bound
+state".
+
+** r6931+70.1: ⓵ AS WRITTEN RESTED ON AN ERROR THE CORPUS HAS SINCE CORRECTED. **  At r2823 P14 said the
+wall-bound zero-modes "have DISJOINT SUPPORT", and this receipt argued from that: a composite of modes
+with disjoint support "lives ON the walls".  r6748 (a839957a) showed the supports are NOT disjoint -- the
+modes are algebraic, not exponential; the binding branch vanishes at its own wall; the pairwise overlap
+is exact and of order one (1/6 + sqrt(3)/pi at lambda = 1); the walls are lines meeting at the centre --
+and r6756 (23a98f4f) replaced the reason in P14: three modes span three dimensions because they are
+linearly INDEPENDENT.  So "localised on the walls" is withdrawn here as the reason.  ** What carries the
+finding is the other property P14 states and r6748 does not touch: the modes are static BOUND states of
+the leaf, normalisable in the leaf measure and NOT in the conserved spacetime Dirac norm -- not
+propagating fields. **  A composite of leaf-bound static modes is itself leaf-bound, and a gauge field
+must propagate on the four-dimensional cut; so the route still needs a propagating sector to compose
+from, which is ⓷.
 
 ** ⓶ AND WHAT A GAUGE FIELD MUST BE. **  *** A PROPAGATING massless spin-1 field on the four-dimensional
 cut. ***
 
-  ⇒⇒ *** A BOUND STATE OF LOCALISED MODES IS LOCALISED.  ** Two zero-modes with disjoint support on
-      walls compose to an object that lives ON the walls; it does not propagate off them. **  The
-      composite route needs a PROPAGATING sector to compose from. ***
+  ⇒⇒ *** A BOUND STATE OF LEAF-BOUND MODES IS LEAF-BOUND.  ** Static zero-modes normalisable only in
+      the leaf measure compose to an object that is a bound state of the leaf, not a propagating field
+      on the cut. **  The composite route needs a PROPAGATING sector to compose from. ***  (r6931+70.1:
+      the r2823 wording here was "two zero-modes with disjoint support on walls compose to an object
+      that lives ON the walls"; the disjointness was false, r6748, and the argument now runs on
+      boundness, which is what it needed.)
 
 ** ⛭⛭⛭ ⓷ AND THAT SECTOR IS `PO-11`, BY THE CORPUS'S OWN NAME FOR IT. **  `groupoid_paper`: the
 discrete skeleton "is built as ** bound-state zero-modes ** of the existent leaf ... while ** the descent
@@ -75,13 +93,26 @@ def main():
     p14 = flat('matter_sector_paper.tex')
     grp = flat('groupoid_paper.tex')
 
-    check('⓵ the wall kernel\'s modes are BOUND and LOCALISED: "the three throat walls are distinct '
-          'loci, so the wall-bound zero-modes have disjoint support and span a three-dimensional '
-          'space"',
-          'wall-bound zero-modes have disjoint support' in p14)
-    check('⇒ so a composite of them is localised on the walls -- ** it does not propagate off them, '
-          'and a gauge field must **',
-          'disjoint support' in p14)
+    # ** r6931+70.1: class (a), FROZE AN ERROR.  ⓵ pinned P14's "the wall-bound zero-modes have
+    #   disjoint support and span a three-dimensional space".  r6748 (a839957a) showed the supports are
+    #   not disjoint (algebraic modes, order-one exact overlap, walls are lines meeting at the centre)
+    #   and r6756 (23a98f4f) corrected P14 to "are linearly independent and span a three-dimensional
+    #   space".  The pin follows the correction, and requires the disjointness sentence gone.
+    #   The second check had pinned the bare phrase 'disjoint support' -- which still passed only because
+    #   P14 QUOTES the slicing paper's "with disjoint support" elsewhere; it was carrying the error, not
+    #   the finding.  What the finding needs is that the modes are leaf-BOUND and not propagating, which
+    #   P14 states in sec:chirality and r6748 does not touch, so that is what it now pins. **
+    check('⓵ the wall kernel\'s modes are BOUND: "the three throat walls are distinct loci, so the '
+          'wall-bound zero-modes are linearly independent and span a three-dimensional space" '
+          '(was "have disjoint support"; corrected r6756 after r6748)',
+          'the wall-bound zero-modes are linearly independent and span a three-dimensional space' in p14
+          and 'wall-bound zero-modes have disjoint support' not in p14)
+    check('⇒ and they are static BOUND STATES OF THE LEAF, not propagating fields -- "CR reads the '
+          'fermion as a mode of the existent leaf, not a propagating spacetime field carrying the '
+          'tortoise norm---on the leaf it is a bound state" -- so a composite of them is leaf-bound, '
+          '** and a gauge field must propagate **',
+          ('CR reads the fermion as a mode of the existent leaf, not a propagating spacetime field '
+           'carrying the tortoise norm---on the leaf it is a bound state') in p14)
 
     # ⛔⛭⛭ RE-PINNED r3954, AND THE BREAKAGE IS MINE.  This asserted `"largest unbuilt" in grp` --
     #   the phrase "the programme's largest unbuilt undertaking", which I REMOVED from
@@ -95,12 +126,20 @@ def main():
     #     failure mode -- "calling a handover a debt" -- so the receipt was pinning a known defect.
     #   The skeleton half is untouched and still asserted; the "unbuilt" half is replaced by what
     #   the paper now states, which keeps this check discriminating rather than merely present.
+    # ** r6931+70.1: class (c), STALE.  r6719 (440623b6) reworded groupoid_paper's "the descent onto a
+    #   full propagating spinor field sector is now built" to "... is built---on the static slicing
+    #   structure, and again on this framework's own chiral member", adding the second built member
+    #   (the unpolarised chiral one, JanzenDynamics) and dropping "now".  Same claim, more of it: the
+    #   propagating sector is built, and the unbuilt one is still the compact-face sector.  Re-pinned
+    #   to the current sentence; the skeleton and "stays unbuilt" halves are unchanged. **
     check('⛭⛭⛭ ⓶ the skeleton is the BOUND sector, and the descent is now BUILT -- groupoid_paper, '
-          'as repaired at r3904: "the descent onto a full propagating spinor field sector is now '
-          'built ... the sector that stays unbuilt is the other one, gauge-acted and '
-          'isometry-realised on the compact face"',
+          'as repaired at r3904: "the descent onto a full propagating spinor field sector is '
+          'built---on the static slicing structure, and again on this framework\'s own chiral member '
+          '... the sector that stays unbuilt is the other one, gauge-acted and isometry-realised on '
+          'the compact face"',
           'bound-state zero-modes of the existent leaf' in grp
-          and 'spinor field sector is now built' in grp
+          and ('the descent onto a full \\emph{propagating} spinor field sector is built---on the '
+               'static slicing structure, and again on this framework\'s own chiral member') in grp
           and 'stays unbuilt is the other one' in grp)
 
     # ⓷ the chain terminates
@@ -143,12 +182,14 @@ def main():
         print(f'  {len(FAILED)} check(s) FAILED')
         return 1
     print("  VERDICT: ** PO-5's surviving route is gated on PO-11, and the chain terminates there. **")
-    print('  ⓵ ** The composite would be made of wall-BOUND zero-modes with DISJOINT SUPPORT. **')
-    print('     ⇒ *** A bound state of localised modes is localised.  It lives ON the walls and does')
-    print('     not propagate off them — and a gauge field must. ***')
+    print('  ⓵ ** The composite would be made of wall-BOUND zero-modes: static bound states of the')
+    print('     leaf, normalisable in the leaf measure and not as propagating spacetime fields. **')
+    print('     ⇒ *** A bound state of leaf-bound modes is leaf-bound.  It does not propagate on the')
+    print('     cut — and a gauge field must. ***')
     print('  ⛭⛭⛭ ⓶ ** So the route needs a PROPAGATING sector to compose from, and that sector is')
-    print('     PO-11 ** — "the descent onto a full propagating spinor field sector, the programme\'s')
-    print('     largest unbuilt undertaking".')
+    print('     PO-11 ** — "the descent onto a full propagating spinor field sector" (groupoid_paper now')
+    print('     says that descent is built, on the static structure and on the chiral member; the')
+    print('     "largest unbuilt undertaking" wording this line once quoted was removed at r3904).')
     print('     ⇒ ** Not gated by anyone\'s decision — by what a composite is made of. **')
     print('  ⛭⛭ ⓷ ** And the chain terminates: **')
     print('       PO-2  →  PO-5  →  PO-11  →  (nothing)')

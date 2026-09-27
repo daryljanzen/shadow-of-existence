@@ -13,6 +13,13 @@ minimum at $\\ell=4$ and the SAME recovery.  ** Their DEPTHS do not agree: ** $0
 against $0.49/0.24/0.18/0.61$, close at the quadrupole and nearly a factor two apart at $\\ell=3$ and
 $4$.  *The paper says it in one line: "The shape is cross-validated between the two; the depth is
 not."*
+  ⛭ ** r6931+70.1: THE DEPTH HALF IS DISCHARGED.  ** The factor of two was two opposed defects in the
+    second arm (late ISW cut at z = 53.5; continuum truncated at 0.5 k_2), found and fixed by
+    `P15_the_low_multipole_depth_gap_closes_and_two_defects_were_cancelling` (r6825+cc66.26); the
+    two treatments now agree to three per cent and P15 says they "cross-validate the depth as well as
+    the shape", at 0.487/0.435/0.359/0.666 on the adjudicated background.  The attribution
+    contradiction routed below is settled the receipts' way.  ** The ell=4 minimum -- this file's
+    finding -- stands on every quartet. **  The paragraphs below are kept as the r3980 record.
   ⛔ ** AN EARLIER FORM OF THIS FILE CLAIMED THEY "differ only in depth, uniformly by 10--25%", AND
     THE PAPER WITHDREW THAT FIGURE AT r3213 ** -- "neither is reproduced by either arm and both are
     withdrawn" -- while this file went on asserting it.  ⌗ *And it stopped failing on that only
@@ -123,56 +130,94 @@ BOL = open(os.path.join(HERE, 'P15_verify_lowell_boltzmann.py'), encoding='utf-8
 # **     PAPER'S OWN ATTRIBUTION, so they cannot silently become the same number again. ***  What is
 # **     asserted is what the paper holds: the same minimum, the same recovery, and depths that
 # **     differ -- "The shape is cross-validated between the two; the depth is not."
-_PAIR = re.search(
-    r'the second arm returns \$?([\d.]+)\$?, \$?([\d.]+)\$?, \$?([\d.]+)\$? and \$?([\d.]+)\$? '
-    r'against the first\'s \$?([\d.]+)\$?, \$?([\d.]+)\$?, \$?([\d.]+)\$? and \$?([\d.]+)\$?',
-    re.sub(r'\s+', ' ', TEX))
-assert _PAIR, ('the paper must state both arms in one sentence, or this file cannot tell them apart '
-               '-- which is exactly how it came to read one arm twice')
-_second = [float(x) for x in _PAIR.groups()[:4]]
-_first = [float(x) for x in _PAIR.groups()[4:]]
-# arm A -- the programme's own photon hierarchy, the converged quartet the paper's depth table and
-#          figure caption carry.  Read off the standing likelihood receipt rather than retyped.
+# ** r6931+70.1: THE DEPTH HALF OF THIS SECTION IS DISCHARGED (b), THE ARM-ATTRIBUTION CONTRADICTION
+#   WITH IT, AND THE PAPER'S QUARTET MOVED FOR AN INNOCENT REASON (c).  Three moves, all in the
+#   r6921 merge (`5f83b86f`, gated at `5f9c2b2d`):
+#   · (b) `2da9b74a` (spin-up check-in, part 3a) removed the side-by-side sentence this file read
+#     both arms from ("the second arm returns 0.49 ... against the first's 0.473 ...") and "The
+#     shape is cross-validated between the two; the depth is not".  ** The depth gap it recorded
+#     was CLOSED BY COMPUTATION, not by rewording: **
+#     `P15_the_low_multipole_depth_gap_closes_and_two_defects_were_cancelling` (r6825+cc66.26)
+#     found the factor of two was two opposed defects in the SECOND arm -- the line-of-sight cut
+#     at z = 53.5 dropping the late ISW, and a continuum truncated at 0.5 k_2 -- and with both
+#     fixed the two treatments agree to three per cent.  P15 now says "The two independent
+#     Boltzmann treatments cross-validate the depth as well as the shape".  So the "nearly a
+#     factor two apart at ell=3 and 4" this file asserted was a defect's number, and the asserts
+#     that defended it are replaced by the discharge, not loosened.
+#   · (b) and the attribution this file ROUTED (caption and sec:largescale swapped) is settled the
+#     way the receipts said: the caption now reads "Those figures are read through the exact
+#     transfer, and the photon hierarchy ... agrees with them to three per cent".
+#   · (c) `638037dc` put the depths on the adjudicated background at every site: 0.473/0.410/
+#     0.356/0.676 (the control-background quartet the likelihood receipt still carries) became
+#     0.487/0.435/0.359/0.666.  Same minimum, same recovery; the difference is the background, and
+#     is measured below rather than assumed away.
+# ** What this file ESTABLISHED -- the minimum at ell=4 on both arms, never quoted before -- is
+#    untouched, and is now asserted on BOTH quartets. **
+_TEXn = re.sub(r'\s+', ' ', TEX)
+_Q = re.search(r'on the exact transfer the deficit is \$([\d.]+)\$, \$([\d.]+)\$, \$([\d.]+)\$, '
+               r'\$([\d.]+)\$ of the flat expectation at \$\\ell=2\$ to \$5\$', _TEXn)
+assert _Q, 'the paper must state the exact-transfer quartet at ell=2..5'
+PAPER = dict(zip((2, 3, 4, 5), [float(x) for x in _Q.groups()]))
+# the control-background exact-transfer quartet, read off the standing likelihood receipt
 CAMB = {int(a): float(b) for a, b in
         re.findall(r'(\d+):([\d.]+)', re.search(r'depth\s*=\s*\{([^}]*)\}', LIK).group(1))}
-# arm B -- the independent transfer: this cosmology's discrete source read through a standard
-#          Boltzmann code's own Delta_l(k).
-HIER = dict(zip((2, 3, 4, 5), _second))
+# the historical second-arm quartet, read AT THE COMMIT WHERE THE PAPER STATED IT (c54.220's rule):
+# `39da79a6` is r6919 main, the last tree before 2da9b74a merged.
+import subprocess
+_OLD = re.sub(r'\s+', ' ', subprocess.run(['git', 'show', '39da79a6:corpus/CR_cosmology.tex'],
+                                          cwd=ROOT, capture_output=True, text=True,
+                                          errors='replace').stdout)
+_PAIR = re.search(
+    r'the second arm returns \$?([\d.]+)\$?, \$?([\d.]+)\$?, \$?([\d.]+)\$? and \$?([\d.]+)\$? '
+    r'against the first\'s \$?([\d.]+)\$?, \$?([\d.]+)\$?, \$?([\d.]+)\$? and \$?([\d.]+)\$?', _OLD)
+assert _PAIR, 'at r6919 the paper stated both arms side by side'
+HIER_OLD = dict(zip((2, 3, 4, 5), [float(x) for x in _PAIR.groups()[:4]]))
 
 print("=" * 78)
-print("1 — THE TWO ARMS, AND THEY AGREE ON THE SHAPE")
+print("1 — THE ARMS AGREE ON THE SHAPE, AND NOW ON THE DEPTH")
 print("=" * 78)
-print(f"  {'ell':>5} {'CAMB Delta_l(k) x discrete k_L':>33} {'programme photon hierarchy':>26} {'ratio':>7}")
+print(f"  {'ell':>5} {'exact transfer, control bg':>27} {'exact transfer, adjudicated':>28} "
+      f"{'2nd arm at r6919 (defective)':>29}")
 for l in (2, 3, 4, 5, 6, 7):
-    a, b = CAMB.get(l), HIER.get(l)
-    print(f"  {l:>5} {('-' if a is None else f'{a:.3f}'):>33} "
-          f"{('-' if b is None else f'{b:.3f}'):>22} "
-          f"{('-' if (a is None or b is None) else f'{a/b:.3f}'):>7}")
+    a, b, c = CAMB.get(l), PAPER.get(l), HIER_OLD.get(l)
+    print(f"  {l:>5} {('-' if a is None else f'{a:.3f}'):>27} {('-' if b is None else f'{b:.3f}'):>28} "
+          f"{('-' if c is None else f'{c:.3f}'):>29}")
 amin = min((2, 3, 4, 5), key=lambda l: CAMB[l])
-hmin = min(HIER, key=lambda l: HIER[l])
+pmin = min(PAPER, key=lambda l: PAPER[l])
+hmin = min(HIER_OLD, key=lambda l: HIER_OLD[l])
 rec = min(l for l in sorted(CAMB) if CAMB[l] > 0.95)
-sp = [CAMB[l]/HIER[l] for l in (2, 3, 4, 5)]
+bg = [PAPER[l]/CAMB[l] for l in (2, 3, 4, 5)]
+old = [CAMB[l]/HIER_OLD[l] for l in (2, 3, 4, 5)]
 print()
-print(f"  ** minimum over ell=2..5:  arm A at ell={amin}   arm B at ell={hmin} **")
-print(f"  ** arm A recovers (>0.95) at ell={rec}; the paper's caption says ~8 **")
-print(f"  ** depth ratio A/B = {min(sp):.2f}--{max(sp):.2f}: CLOSE at the quadrupole and nearly a "
-      f"factor two apart at ell=3 and 4 -- NOT a uniform spread, which the paper withdrew (r3213) **")
-print(f"  ** the paper's own two quartets: first {_first}, second {_second} **")
-assert amin == hmin == 4, ('both arms must minimise at ell=4 -- the location is what the paper says '
-                           'is cross-validated', amin, hmin)
-# ** the FIRST arm this file reads must be the paper's first arm, or the arms are not two **
-assert [CAMB[l] for l in (2, 3, 4, 5)] == _first, (
-    'arm A must be the converged quartet the paper attributes to the photon hierarchy',
-    [CAMB[l] for l in (2, 3, 4, 5)], _first)
-assert max(sp) > 1.8, ('the paper says the arms are "nearly a factor two apart at ell=3 and 4"; a '
-                       'spread that has collapsed toward 1 means both arms are reading one source',
-                       sp)
-assert 0.9 < min(sp) < 1.1, ('and "close at the quadrupole"', sp)
-# ⛔ NOT asserted: a UNIFORM 10--25% spread.  r3213 withdrew that figure from the paper in six
-#   places -- "neither is reproduced by either arm and both are withdrawn" -- and the assertion
-#   that stood here, `1.10 < mean ratio < 1.35`, was exactly it.  ** The depths do NOT agree and
-#   the paper says so: "The shape is cross-validated between the two; the depth is not." **
-assert 'The shape is cross-validated between the two; the depth is not' in re.sub(r'\s+', ' ', TEX)
+print(f"  ** minimum over ell=2..5: control bg at ell={amin}, adjudicated at ell={pmin}, and even the "
+      f"defective r6919 second arm at ell={hmin} **")
+print(f"  ** the control-background quartet recovers (>0.95) at ell={rec}; the paper says ~8 **")
+print(f"  ** background move, adjudicated/control = {min(bg):.3f}--{max(bg):.3f}: the minimum does "
+      f"not move **")
+print(f"  ** the r6919 gap, control/second-arm = {min(old):.2f}--{max(old):.2f} -- the factor two "
+      f"the depth-gap receipt traced to two opposed defects in the second arm **")
+assert amin == pmin == hmin == 4, ('every quartet must minimise at ell=4 -- the location is what '
+                                   'this file established', amin, pmin, hmin)
+assert all(0.93 < r < 1.07 for r in bg), ('the adjudicated background moves the depths by a few '
+                                          'per cent, not the shape', bg)
+assert max(old) > 1.8, ('the historical gap this file recorded, read at the commit that stated it',
+                        old)
+_DISCH = os.path.join(HERE, 'P15_the_low_multipole_depth_gap_closes_and_two_defects_were_'
+                            'cancelling.py')
+_dsrc = open(_DISCH, encoding='utf-8').read() if os.path.exists(_DISCH) else ''
+print(f"  ** the discharging receipt exists and names the two defects: "
+      f"{'TWO DEFECTS IN THE SECOND ARM' in _dsrc} **")
+assert 'TWO DEFECTS IN THE SECOND ARM' in _dsrc and 'THE LOW-MULTIPOLE DEPTH GAP CLOSES' in _dsrc
+# ⛔ and NOT asserted any longer: "the depth is not" cross-validated.  The paper now says the
+#   opposite, on a computation this file did not run, and it is checked as a discharge:
+assert 'The shape is cross-validated between the two; the depth is not' not in _TEXn
+assert 'The two independent Boltzmann treatments cross-validate the depth as well as the shape' \
+    in _TEXn
+assert 'the hierarchy agrees to three per cent at every multipole' in _TEXn
+assert ('Those figures are read through the exact transfer, and the photon hierarchy built for this '
+        'programme') in _TEXn, 'the attribution this file routed is settled the receipts\' way'
+print("  ⇒ ** depth cross-validated to 3% (discharged, r6825+cc66.26); attribution settled: the "
+      "exact transfer carries the quartet, the hierarchy agrees. **")
 
 print()
 print("=" * 78)
@@ -204,6 +249,19 @@ print(f"  ** the largest single-multipole penalty is at ell={worst} ({pe[worst]:
 print(f"  ** and the quadrupole REWARDS the construction ({pe[2]:+.2f}) **")
 assert worst == 4 and pe[4] > pe[3] > 0 > pe[2]
 assert abs(tot - 1.8) < 0.15
+# ** r6931+70.1: (c) the paper's table moved to the adjudicated background (`638037dc`) and its sector
+#   total with it, to "+1.6 over 2 <= ell <= 10".  The same likelihood on the paper's own quartet
+#   (ell 6-8 from its sec:scope row, 0.911/0.983/0.998) reproduces that, and the finding -- the
+#   quadrupole rewards, the largest penalty is at ell=4 -- holds on both tables. **
+_P8 = {**PAPER, 6: 0.911, 7: 0.983, 8: 0.998, 9: 1.0, 10: 1.0}
+assert '$0.487$, $0.435$, $0.359$, $0.666$, $0.911$, $0.983$ and $0.998$' in _TEXn
+pa = {l: (2*l+1)*(obs[l]*(1.0/_P8[l] - 1.0) + math.log(_P8[l])) for l in range(2, 11)}
+tota = sum(pa.values())
+worsta = max(range(2, 11), key=lambda l: pa[l])
+print(f"  ** on the paper's adjudicated table: total {tota:+.2f} against the paper's +1.6, largest "
+      f"penalty at ell={worsta} ({pa[worsta]:+.2f}), quadrupole {pa[2]:+.2f} **")
+assert worsta == 4 and pa[4] > pa[3] > 0 > pa[2]
+assert abs(tota - 1.6) < 0.1 and '$\\Delta(-2\\ln L)=+1.6$ over $2\\le\\ell\\le10$' in _TEXn
 
 print()
 print("=" * 78)
@@ -230,26 +288,40 @@ print("=" * 78)
 #    its first pass; nothing had run this receipt since the paper was rewritten. **  The patterns
 #    now tolerate an intervening citation marker, which is what they should always have done:
 #    they are about what the paper SAYS, not about where its citations sit.
+# ** r6931+70.1: four of the eight moved; each is re-pinned to the same site carrying the same claim.
+#   · (c) the body's profile "$\approx0.47$, $0.41$, $0.36$ and $0.68$" is the adjudicated-background
+#     "$\approx0.487$, $0.435$, $0.359$ and $0.666$" since `638037dc` -- same site, same minimum.
+#   · (b) "what two independent Boltzmann treatments cross-validate is the shape" left at `2da9b74a`
+#     because the depth was then cross-validated too (PART 1): pinned to "cross-validate the depth as
+#     well as the shape", the discharge rather than the old limit.
+#   · (c) the abstract's "($\approx0.36$" became "($0.36$ of the $\Lambda$CDM expectation there" at
+#     `8cf74828` (r6851, the abstract brought to the measured state) -- the tilde dropped, the
+#     minimum and its depth still there.
+#   · (b) the caption's "neither supersedes the other" left at `2da9b74a`: the caption no longer
+#     weighs two figures because there is one, cross-validated -- "Those figures are read through
+#     the exact transfer ... the shape and the depth are both cross-validated".  Still a caption
+#     that does not call the Boltzmann figure leading-order. **
 _R = r'(?:\\rcpt\{[^}]*\})?'          # an optional citation marker, anywhere inside a phrase
 CHECKS = [
     ("the body states the minimum at ell=4",
      r'minimum falls at \$\\ell=4\$\}' + _R + r'---and the quadrupole and octopole'),
     ("the body carries the four-multipole profile",
-     r'\$\\approx0\.47\$, \$0\.41\$, \$0\.36\$ and \$0\.68\$'),
-    ("the body states the two-code cross-validation",
-     r'two independent Boltzmann treatments cross-validate is the shape'),
+     r'\$\\approx0\.487\$, \$0\.435\$, \$0\.359\$ and \$0\.666\$'),
+    ("the body states the two-code cross-validation, depth and shape",
+     r'two independent Boltzmann treatments cross-validate the depth as well as the shape'),
     ("the abstract carries the minimum",
-     r'minimum falls at \$\\ell=4\$\}' + _R + r' \(\$\\approx0\.36\$'),
+     r'minimum falls at \$\\ell=4\$\}' + _R + r' \(\$0\.36\$ of the \$\\Lambda\$CDM expectation there'),
     ("the scope section carries the minimum",
      r'a dip whose minimum falls at \$\\ell=4\$' + _R + r'(?:,| ---| ---)? ?(?:not at the quadrupole|---and)'),
     ("the likelihood item names ell=4 as the largest penalty",
      r"largest single-multipole penalty sits not at the octopole but at \$\\ell=4\$"),
     ("the summary carries the minimum", r'\$D_C\$---bottoming at \$\\ell=4\$'),
     ("the caption no longer calls the Boltzmann figure leading-order",
-     r'neither supersedes the other'),
+     r'Those figures are read through the exact transfer, and the photon hierarchy built for this '
+     r'programme .{0,200}the shape and the depth are both cross-validated'),
 ]
 for what, pat in CHECKS:
-    hit = bool(re.search(pat, TEX))
+    hit = bool(re.search(pat, TEX)) or bool(re.search(pat, _TEXn))
     print(f"  {what:>58}  ** {'yes' if hit else 'NO':>3} **")
     assert hit, what
 print()

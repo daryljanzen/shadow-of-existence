@@ -48,7 +48,10 @@ full bandpower covariance, and the model difference DELTA = m_arm - m_control re
         almost alone", which is DELTA's signature exactly.  ⛔ ** And its knob is a KNOB SHADOW on the
         refit path: `_SWSRC` and `_DPSRC` are read only inside `los_spectrum`, and `HIER=1` does not
         take that path, so `DPSRC=0` at the refit configuration returns a BIT-IDENTICAL spectrum on
-        both arms. **  Reported as a finding, not repaired.
+        both arms. **  Reported as a finding, not repaired.  (r6931+70.1: repaired since, by the order
+        it routed -- `736f9399`, r6889+cc66.36, wired both switches into the hierarchy projection
+        with the default byte-identical; PART 2 (b) reads the shadow at `736f9399^` and checks the
+        closure on the live file.)
       * SO THE FIFTH IS TESTED ON THE PATH WHERE THE KNOB REACHES (PART 5), which both CALIBRATES the
         switch -- 62% on D_l there against exactly zero on HIER=1, which is what makes the shadow a
         proof rather than a null -- and answers it: ⚑ ** the Doppler dipole IS the contrast knob.
@@ -507,6 +510,21 @@ check("...and independently, DELTA's overlap with the amplitude direction is zer
       f"cos = {float(DEL @ AHAT)/np.sqrt(ND2):+.4f}")
 
 print("\n  (b) ⛔ AND A KNOB SHADOW, FOUND WHILE TESTING THE FIFTH CANDIDATE AND REPORTED AS A FINDING.")
+# ** r6931+70.1: DISCHARGED (b) -- the shadow this part found was CLOSED one commit later, by the
+#   next order it routed.  `736f9399` (r6889+cc66.36, "the knob shadow closed with its default proved
+#   at exactly zero") wired `_SWSRC` and `_DPSRC` into `_project`, the hierarchy path's projection,
+#   with the monopole bracket split so the default stays byte-identical; `ba9a98b5` (r6915+cc66.41)
+#   later added the SRCSAVE/SRCDEC term block, a third `_DPSRC *` and `_ISW * et *` use.  So on the
+#   live file "`_DPSRC` once, inside `los_spectrum`" is false for a CORRECT reason.  ** What this
+#   part measured is a claim about the instrument AS IT WAS, and by c54.220's rule it is read at the
+#   commit where it stood -- `736f9399^`, the tree this receipt ran on; the live file is checked
+#   separately for what discharged it: both switches now multiply their terms inside `_project`. **
+#   The banked `DPSRC=0 on HIER=1` null below is that tree's measurement and stays as recorded.
+import subprocess as _sp
+_SRC_NOW = SRC
+SRC = _sp.run(['git', 'show', '736f9399^:computations/beyond_the_wall/ACOUSTIC_two_arm.py'],
+              cwd=ROOT, capture_output=True, text=True, errors='replace').stdout
+assert len(SRC) > 50000, 'the instrument as this receipt read it must be recoverable at 736f9399^'
 _los = SRC.index('def los_spectrum')
 _hier = SRC.index('_ISW * et *', SRC.index('_ISW * et *') + 1)
 print(f"      `_SWSRC` and `_DPSRC` -- the monopole and Doppler switches r4558 added -- are read")
@@ -523,6 +541,16 @@ check("...while `_ISW` is used TWICE, in DIFFERENT functions -- which is why the
       SRC.count('_ISW * et *') == 2 and 'def ' in SRC[_isw1:_hier] and _hier > SRC.index('_DPSRC *'),
       f"_ISW used {SRC.count('_ISW * et *')}x, at {_isw1} and {_hier}, with "
       f"{SRC[_isw1:_hier].count(chr(10) + 'def ')} top-level def(s) between them")
+_pj = _SRC_NOW.index('def _project')
+_pj_end = _SRC_NOW.index('\ndef ', _pj + 1)
+_PJ = _SRC_NOW[_pj:_pj_end]
+check("⛭ and the shadow is CLOSED on the live instrument (736f9399, r6889+cc66.36): `_project`, the "
+      "hierarchy path's projection, now multiplies the monopole by `_SWSRC` and the Doppler term by "
+      "`_DPSRC` -- so the Doppler candidate IS testable on the refit path, which this part routed",
+      '_SWSRC * (Th0 + Ps)' in _PJ and '+ _DPSRC * np.gradient(g_ * tb, ee, axis=0)' in _PJ
+      and '_ISW * et *' in _PJ,
+      f"`_project` spans offsets {_pj}-{_pj_end} and carries all three switches")
+SRC = _SRC_NOW
 
 RD = os.path.join(ROOT, 'computations', 'beyond_the_wall', 'spectra')
 have = lambda t: (os.path.exists(os.path.join(RD, f'r6885_{t}_lcdm.npz'))

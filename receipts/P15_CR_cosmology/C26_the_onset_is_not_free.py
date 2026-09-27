@@ -44,6 +44,13 @@ a datum and is what the paper says it is.  ** Not that $\\rho_r/\\rho_m\\propto1
 where both are free-streaming, and the agreement at the onset ($1.87$ vs $\\simeq2$) is the check.
 
 Written r2688.  Stated for reversal.
+
+** r6931+70.1 (PO-59) -- THE FINDING STANDS AND ITS MECHANISM IS CORRECTED. **  *** The start is not free,
+and the paper now says so more strongly -- but not because a fitted $z_{\\rm onset}\\simeq6797$ is spent on
+the acoustic angle.  The fitted onset was adjudicated a repair (r6770+66.3) and removed (r6772+66.3,
+`caaf3481`): the plasma is handed over at the branch point, a limit with no free choice in it, and the
+acoustic angle is computed. ***  ⓶'s "P15's stated $\\simeq2$" and ⓷'s "+9.4%" are the r2688 paper's; the
+arithmetic of those checks stands as the model it was.
 """
 import os
 import re
@@ -108,14 +115,38 @@ def main():
     #    SYMBOL to the NUMBER through whatever relation sits between them, and still requires the
     #    number: it cannot pass on a paper that names the symbol and no value.
     _ONSET = re.compile(r"z_\{\\mathrm\{onset\}\}\s*(?:\\approx|\\simeq|=)\s*6797")
-    check('⛭⛭ ⓵ P15 gives it: "the onset redshift $z_{\\mathrm{onset}}$", at a stated value -- '
-          '"$z_{\\mathrm{onset}}\\approx6797$"',
-          'onset redshift $z_{\\mathrm{onset}}$' in p15 and _ONSET.search(p15) is not None)
-    check('and how it is fixed: "It is fitted to the acoustic angle at the directly measured $H_{0}$"',
-          'fitted to the acoustic angle at the \\emph{directly} measured $H_0$' in p15)
-    check('and that it is not a knob: "the same $z_{\\rm onset}$ meets the scale at every $H_{0}$ across '
-          'the range"',
-          'meets the scale at every' in p15)
+    # ** r6931+70.1 (PO-59): CLASS (a), ALL THREE -- THE PINS DEFENDED A FITTED START THE CORPUS
+    #    RETIRED AS A REPAIR.  The node-66 adjudication at r6770+66.3 (`84cc27fa`, "the crossing is the
+    #    handover and the onset was a repair"; FOR_CC66.md: "the onset is a fitted redshift that is not
+    #    a locus of the construction at all --- the geometric locus is the branch point") was carried
+    #    through P15 in r6772+66.1-66.11; these three sentences went at `caaf3481` (r6772+66.3, "no
+    #    early-universe parameter, one boundary datum").  *** This receipt's finding -- the start is NOT
+    #    FREE -- survives, and more strongly: the plasma is handed over at the branch point, which
+    #    carries no finite redshift; the handover is "a limit rather than a parameter"; and "where the
+    #    plasma starts moves the scale and not the peak, which is why the start is not free".  What the
+    #    corpus corrected is HOW it was not free: not "fitted to the acoustic angle" (the angle is now
+    #    an output of the rate) but fixed at a locus of the construction.  So each check follows the
+    #    correction, and each also asserts the retired value is gone, so it cannot pass on a paper that
+    #    still carries both. ***  Passed at r6502 (`b96e1a49`); failing from r6774. **
+    check('⛭⛭ ⓵ [corrected r6772+66.3] P15 gives the start as a LOCUS, not a redshift: "the plasma is '
+          'handed over at the branch point", which "carries no finite redshift at all" -- and '
+          '$z_{\\mathrm{onset}}\\approx6797$ is gone',
+          _ONSET.search(p15) is None and 'z_{\\mathrm{onset}}' not in p15
+          and 'the plasma is handed over at the branch point' in p15
+          and 'which therefore carries no finite redshift at all' in p15)
+    check('and how it is fixed -- not "fitted to the acoustic angle" but as a limit: "It is a limit rather '
+          'than a parameter: carried back over two decades in starting redshift the peaks hold to the '
+          'grid step", the angle being "an output of the rate rather than a calibration of it"',
+          'fitted to the acoustic angle at the \\emph{directly} measured $H_0$' not in p15
+          and '\\emph{It is a limit rather than a parameter}: carried back over two decades in starting '
+              'redshift the peaks hold to the grid step' in p15
+          and 'the angle is an output of the rate rather than a calibration of it' in p15)
+    check('and that it is not a knob: "Where the plasma starts moves the scale and not the peak, which is '
+          'why the start is not free", with "no early-universe parameter left to carry the acoustic angle"',
+          'meets the scale at every' not in p15
+          and '\\emph{Where the plasma starts moves the scale and not the peak, which is why the start is '
+              'not free.}' in p15
+          and 'there is no early-universe parameter left to carry the acoustic angle' in p15)
 
     # ⓶ the model checks at the onset
     R_on = R0/AON
@@ -138,7 +169,10 @@ def main():
     if FAILED:
         print(f'  {len(FAILED)} check(s) FAILED')
         return 1
-    print("  VERDICT: ** the onset is NOT free, and the residual gap is the WEIGHT. **")
+    print("  VERDICT (r6931+70.1): ** the start is NOT free -- now as a LOCUS (the branch-point handover,")
+    print("     a limit rather than a parameter), not as a redshift fitted to the angle (retired r6772+66.3).")
+    print("     The r2688 finding as it stood: **")
+    print("  ** the onset is NOT free, and the residual gap is the WEIGHT. **")
     print('  ⛭⛭ ⓵ ** P15 fixes it twice: ** z_onset ≈ 6797, "** fitted to the acoustic angle at the')
     print('     directly measured H_0 **", landing near rho_r/rho_m ≈ 2 — and ** "the same z_onset meets')
     print('     the scale at every H_0 across the range". **')

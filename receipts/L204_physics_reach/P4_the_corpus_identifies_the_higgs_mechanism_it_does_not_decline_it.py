@@ -107,10 +107,18 @@ def main():
     check('and "Geometric and fermion mass are thereby the same kind of object, the one discrete '
           'residue broken"',
           'Geometric and fermion mass are thereby the same kind of object' in p6)
-    check('⛭⛭ AND THE IDENTIFICATION: "the electroweak breaking that supplies the fermion mass being, '
+    # ** r6931+70.1: CLASS (c) -- STALE; THE CLAUSE BECAME A SENTENCE.  73eb61ef (r6683, the node's
+    #   combined groups 1-6 patch) split P6's long sentence, so "the electroweak breaking that
+    #   supplies the fermion mass BEING, in this reading, the breaking of the substrate's orientation
+    #   parity" now reads "The electroweak breaking that supplies the fermion mass IS, in this
+    #   reading, the breaking of the substrate's orientation parity, and CR's $R$-structure does not
+    #   constrain that breaking".  Same identification, same section, same scoping; only the
+    #   grammar moved (from a participial clause to a main clause).  Re-pinned to the sentence.
+    check('⛭⛭ AND THE IDENTIFICATION: "The electroweak breaking that supplies the fermion mass is, '
           "in this reading, the breaking of the substrate's orientation parity\"",
-          'the electroweak breaking that supplies the fermion mass being, in this reading, the '
-          "breaking of the substrate's orientation parity" in p6)
+          'The electroweak breaking that supplies the fermion mass is, in this reading, the '
+          "breaking of the substrate's orientation parity, and CR's $R$-structure does not "
+          'constrain that breaking' in p6)
     check('⇒ SO CR IDENTIFIES ELECTROWEAK SYMMETRY BREAKING WITH THE BREAKING OF $R$ -- a claim about '
           'what the mechanism IS, not a decline of it',
           "the breaking of the substrate's orientation parity" in p6)
@@ -119,9 +127,21 @@ def main():
     check('and what the same sentence declines is narrow and explicit: the substrate "sets no scale, '
           'chirality, or epoch"',
           'the substrate sets no scale, chirality, or epoch' in p6)
-    check('together with the mass VALUES -- "What the geometry does not fix are the individual mass '
-          '\\emph{values}; those stay the ordinary route"',
-          'What the geometry does not fix are the individual mass \\emph{values}' in p6)
+    # ** r6931+70.1: CLASS (c) -- STALE; THE DECLINE MOVED ONE PARAGRAPH AND GREW.  The pin was
+    #   "What the geometry does not fix are the individual mass \emph{values}; those stay the
+    #   ordinary route".  73eb61ef (r6683) removed it from this paragraph, and the next paragraph of
+    #   the same section carries it with the scale and history beside it: "Three parts of the content
+    #   the geometry does not fix---the individual mass values, the electroweak scale and
+    #   assignment, and the cosmological breaking history---and those are fixed on the ordinary
+    #   route".  The decline is the same and no wider than before (values, scale, epoch), which is
+    #   what this check guards.  (The move left "Beyond the values," without an antecedent in the
+    #   paragraph above it -- reported to node 66, not repaired here.)
+    check('together with the mass VALUES -- "Three parts of the content the geometry does not fix---the '
+          'individual mass values, the electroweak scale and assignment, and the cosmological breaking '
+          'history---and those are fixed on the ordinary route"',
+          'Three parts of the content the geometry does not fix---the individual mass values, the '
+          'electroweak scale and assignment, and the cosmological breaking history---and those are '
+          'fixed on the ordinary route' in p6)
     check('⇒ THE ONE-CONSTANT THEOREM FORBIDS THE STRENGTHS.  IT SAYS NOTHING ABOUT THE MECHANISM',
           'the substrate sets no scale, chirality, or epoch' in p6
           and "the breaking of the substrate's orientation parity" in p6)
@@ -132,8 +152,11 @@ def main():
           'This is the symmetry breaking, located precisely' in p3)
     check('and P0 frames the whole physics as "broken-symmetry shadows"',
           'broken-symmetry shadows' in p0)
+    # ** r6931+70.1: this label described P6 at r2524; since r6683 the identification is its own
+    #   sentence in P6, and p0 develops it (c54.203: "what the Higgs mechanism breaks is this parity
+    #   ... a mechanism and not a magnitude").  The label is kept as the r2524 reading and says so.
     check('⇒⇒ SO TWO SYMMETRY-BREAKING MECHANISMS ARE IN PLAY, the second identified with a substrate '
-          'structure in a SUBORDINATE CLAUSE, and never developed',
+          'structure -- at r2524 in a SUBORDINATE CLAUSE and never developed; since developed in p0',
           'This is the symmetry breaking, located precisely' in p3
           and "the breaking of the substrate's orientation parity" in p6)
 

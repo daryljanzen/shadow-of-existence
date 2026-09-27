@@ -51,7 +51,9 @@ was recorded as a caveat. **
 ** SCOPE, STATED RATHER THAN LEFT TO BE FOUND. **
   · ** This refutes a PREMISE.  It does not measure the driving's SIZE **, and it does not claim the
     acoustic residual is explained, reduced or removed.  The instrument's own `NODRIVE=1` subtraction
-    is what measures the size and it is not run here.
+    is what measures the size and it is not run here.  (r6931+70.1: DISCHARGED elsewhere -- P07's
+    frontier now reports "the driving is measured on both arms by subtraction and this one's is the
+    control's to four per cent", and P15 states this census's finding; see PART 1.)
   · ** It does not touch the position deficit itself. **  The converged CR arm reports
     $\ell_1/\ell_A=0.6764$ against the sky's $0.7312$; that number is what it is either way.
   · ** It is not a verdict on `P07`'s sentence. **  "This rate" is ambiguous in that paragraph between
@@ -119,15 +121,41 @@ check(len(_P07_THEN) > 100000 and q07 in _P07_THEN,
       "P07 sec:frontiers CARRIED the premise at a3b69075^ (before r4133): \"...on this rate the "
       "acoustic modes re-enter above the onset, so none of them does\" -- read where it stood, on a "
       "file that was actually read (%d characters)" % len(_P07_THEN))
-check('enters the horizon while radiation dominates' in re.sub(r'\s+', ' ', P07)
-      and 'those modes have a driving history of the kind the standard picture gives them'
-      in re.sub(r'\s+', ' ', P07),
-      "⛭ and P07 carries THE CORRECTED STATEMENT now: the band containing the first peak \"enters "
-      "the horizon while radiation dominates\", so \"those modes have a driving history of the kind "
-      "the standard picture gives them\" -- which is what this receipt established")
+# ** r6931+70.1: DISCHARGED (b) -- the corrected statement did not go away, it went where the finding
+#   belongs and was then MEASURED.  This pinned P07's r4133 sentence that the first-peak band "enters
+#   the horizon while radiation dominates", so "those modes have a driving history of the kind the
+#   standard picture gives them".  `440623b6` (r6719, the cowork read's eleven-paper list) cut that
+#   paragraph from P07's frontier, which now cites P15 for the transfer and states the RESULT instead:
+#   "The driving is measured on both arms by subtraction and this one's is the control's to four per
+#   cent" (`b5b6ac97`, r6772+66.16, and `4cf9ee43`, r6853) -- the NODRIVE-subtraction size this
+#   receipt's SCOPE said it did not run.  The census statement itself now stands in P15, the paper
+#   it is about: "the perturbations run on the leaf congruence, whose matter--radiation equality is
+#   fixed by the epoch the distance data fix, so the plasma's early history is radiation-dominated
+#   and the modes carrying the first peak enter the horizon while it is.  The driving is therefore
+#   on the expanding leg".  ** So the check is re-pointed at both: P15 carrying the finding, and P07
+#   carrying the measurement that answered what this receipt left open -- the modes are driven, and
+#   by the control's amount.  Neither sentence is a rewording of the deleted premise. **
+_P07n = re.sub(r'\s+', ' ', P07)
+_P15n = re.sub(r'\s+', ' ', open(os.path.join(_ROOT, 'corpus', 'CR_cosmology.tex'),
+                                 encoding='utf-8').read())
+check('the perturbations run on the leaf congruence, whose matter--radiation equality is fixed by '
+      'the epoch the distance data fix, so the plasma\'s early history is radiation-dominated and '
+      'the modes carrying the first peak enter the horizon while it is' in _P15n
+      and 'The driving is therefore on the expanding leg' in _P15n
+      and 'The driving is measured on both arms by subtraction and this one\'s is the control\'s to '
+          'four per cent' in _P07n,
+      "⛭ and THE CORRECTED STATEMENT stands now: P15 says the modes carrying the first peak \"enter "
+      "the horizon while it is\" radiation-dominated on the leaf, so \"the driving is therefore on the "
+      "expanding leg\" -- which is what this receipt established -- and P07 carries its measurement: "
+      "\"the driving is measured on both arms by subtraction and this one's is the control's to four "
+      "per cent\"")
 check(qws in WS, f"PO13_WORKING_STATE carries {qws!r}")
-check("the perturbations computed on the leaf\ncongruence the framework assigns them to" in P07,
-      "and the SAME paragraph names the leaf congruence as where the framework puts the perturbations")
+# ** r6931+70.1: STALE (c).  "the perturbations computed on the leaf\ncongruence the framework
+#   assigns them to" was re-flowed and trimmed by `440623b6` (r6719) to "with the perturbations on
+#   the leaf congruence the framework assigns them to"; same clause, same paragraph (sec:frontiers,
+#   the transfer's summary).  Read whitespace-flattened so a re-flow cannot break it again. **
+check("with the perturbations on the leaf congruence the framework assigns them to" in _P07n,
+      "and P07's frontier names the leaf congruence as where the framework puts the perturbations")
 
 # =====================================================================================
 print(); print(BAR); print("PART 2 — THE INSTRUMENT'S OWN BACKGROUND, ARM=cr"); print(BAR)

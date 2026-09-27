@@ -63,10 +63,33 @@ PINNED = '1c14922c5e'          # r3125, where both ends of each repair were pinn
 GATE = os.path.join(ROOT, 'corpus', 'check_rerunnable_honest.py')
 MARK = re.compile(r'#\s*RERUNNABLE:\s*NO', re.I)
 
+# ** r6931+70.1: THE L555 PATH IS SPLIT INTO ITS NAME THEN AND ITS NAME NOW.  Class (c), STALE --
+#    a file renamed, and the rename's reference rewrite missed half a split literal. **
+#    `f0ad9bbb` (r6647, "five first-person error confessions renamed") moved
+#    `M1_the_merge_of_my_own_revision_duplicated_four_protected_rows_and_no_gate_saw_it.py` to
+#    `M1_a_merge_duplicated_four_protected_rows_and_no_gate_saw_it.py`, and rewrote this list's entry
+#    to `M1_the_merge_duplicated_four_protected_rows...` -- a name that exists at NO commit (the
+#    literal is split across two lines, so the replacement matched only its first half).  Every
+#    live read of it then raised FileNotFoundError, and every `git show` of it at BEFORE/PINNED
+#    returned nothing -- so ⓶ counted 2 of 3 marked and ⓶ᵇ ran an EMPTY file, which "exited 0".
+#    ⇒ The finding is unchanged: three receipts carried a permanence mark that r3125's pins falsified.
+#      History is read under the name the file HAD at BEFORE and PINNED; the live tree under the name
+#      it has now.  Same file (`git log --follow` shows one R100 rename), same three.
+THEN = {
+    'receipts/L555_merge_duplication/M1_a_merge_duplicated_four_protected_rows_and_no_gate_saw_it.py':
+    'receipts/L555_merge_duplication/M1_the_merge_of_my_own_revision_duplicated_four_protected_rows'
+    '_and_no_gate_saw_it.py',
+}
+
+
+def then(p):
+    return THEN.get(p, p)
+
+
 THREE = [
     'receipts/L551_register_integrity/R1_a_protected_row_was_corrupt_for_368_commits_and_the_'
     'corruption_satisfied_a_gate.py',
-    'receipts/L555_merge_duplication/M1_the_merge_duplicated_four_protected_rows'
+    'receipts/L555_merge_duplication/M1_a_merge_duplicated_four_protected_rows'
     '_and_no_gate_saw_it.py',
     'receipts/L556_registry_from_rows/R1_the_registry_was_checked_from_citations_inward_so_twenty_'
     'rows_were_read_by_nothing.py',
@@ -109,7 +132,7 @@ def main():
     print('  ' + '=' * 74)
     print('  PART 2 -- ⛔ ALL THREE WERE MARKED, AND ALL THREE ARE GREEN')
     print('  ' + '=' * 74)
-    marked_before = [p for p in THREE if MARK.search(git('show', f'{BEFORE}:{p}'))]
+    marked_before = [p for p in THREE if MARK.search(git('show', f'{BEFORE}:{then(p)}'))]
     check(f'⓶ at {BEFORE} all three carried the mark: {len(marked_before)} of {len(THREE)}',
           len(marked_before) == 3)
     # ** and each was red there, which is what the mark was FOR -- shown by running the parent's
@@ -120,7 +143,9 @@ def main():
             d = os.path.join(td, os.path.dirname(p))
             os.makedirs(d, exist_ok=True)
             f = os.path.join(td, p)
-            open(f, 'w', encoding='utf-8').write(git('show', f'{BEFORE}:{p}'))
+            _src = git('show', f'{BEFORE}:{then(p)}')
+            assert _src.strip(), f'no source for {then(p)} at {BEFORE}'   # never run an empty file
+            open(f, 'w', encoding='utf-8').write(_src)
             # the receipt locates ROOT two levels up from itself, so mirror the real tree
             for name in os.listdir(ROOT):
                 src = os.path.join(ROOT, name)
@@ -157,8 +182,8 @@ def main():
     subj = git('log', '-1', '--format=%s', PINNED).strip()
     touched = git('show', '--name-only', '--format=', PINNED).split()
     check(f'⓷ᶜ and the pinning landed at {PINNED} -- "{subj[:58]}" -- which touched all three: '
-          f'{sum(1 for p in THREE if p in touched)} of {len(THREE)}',
-          all(p in touched for p in THREE) and subj.startswith('r3125'))
+          f'{sum(1 for p in THREE if then(p) in touched)} of {len(THREE)}',
+          all(then(p) in touched for p in THREE) and subj.startswith('r3125'))
 
     # ============================================================ (3) the gate now tests the claim
     print()

@@ -277,8 +277,15 @@ check(sp.simplify(A_dS - 4 * sp.pi * alpha**2) == 0,
 # =============================================================================================
 head("PART 5 — THE NUMBER'S USES, COUNTED IN THE TREE RATHER THAN RECALLED")
 
+# ** r6931+70.1: THE READ WAS CWD-RELATIVE AND THE RUNNER RUNS FROM THIS DIRECTORY.
+#   Class (c), STALE -- the three uses and both phrases are unchanged in P17.  Written at r6894
+#   (`42620b60`) with a root-relative path, while `scripts/run_all_receipts.py` runs each
+#   receipt with `cwd=` its family directory, so this raised FileNotFoundError under the runner
+#   (red at r6921 `5f9c2b2d`, its first suite run) and passed 26/26 from the root.  ** Anchored
+#   to the repository root from this file's own location; the count of 3 is re-measured, not
+#   restated. **
 import pathlib
-tex = pathlib.Path("corpus/geometric_core_paper.tex").read_text()
+tex = (pathlib.Path(__file__).resolve().parents[2] / "corpus" / "geometric_core_paper.tex").read_text()
 needles = [r"\label{eq:ds-entropy}", r"3\pi/(\Lambda\ell_P^{2})", r"3\pi/(\Lambda\ell_P^2)"]
 hits = [(nd, tex.count(nd)) for nd in needles]
 total = sum(c for _, c in hits)

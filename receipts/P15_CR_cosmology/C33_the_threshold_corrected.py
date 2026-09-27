@@ -47,6 +47,13 @@ settles it ** -- Liddle notes AIC and BIC can disagree and that AIC "tends to fa
 more parameters than the true model"; here they agree.
 
 Written r2710.  Stated for reversal.
+
+** r6931+70.1 (PO-59) -- THE COUNT IS SETTLED BY THE CORPUS, AND NOT AT $k=2$ AGAINST $6$. **  *** The refit
+P15 runs frees the same four parameters in each arm with the amplitude in closed form (r6799), and P15
+states that no information criterion separates them (r6811): at equal $k$ the penalty difference is zero,
+so this receipt's threshold ($\\Delta$BIC $21.5$) is the arithmetic of a count asymmetry the corpus no longer
+carries.  And the $\\chi^2$ "nothing here scores" is scored: the arm at $1.57$ times the control. ***  The
+Jeffreys scale, the table and the AICc arithmetic stand as arithmetic.
 """
 import os
 import re
@@ -82,14 +89,39 @@ def main():
     check('⛔ ⓵ P15 puts the amplitude in the fit: "the first peak is where the amplitude is anchored, '
           'by an $A_{s}$ this construction inherits rather than predicts"',
           'the first peak is where the amplitude is anchored' in p15)
-    check('and names it as the accommodation: "the framework paper\'s scoping of this as a '
-          'one-parameter accommodation stands unchanged"',
-          'one-parameter accommodation stands unchanged' in p15)
-    # ** a real check: the arm's two fitted quantities are each named by P15 as fitted. **
-    check('⇒ so the CR arm carries $\\Omega_m$ AND $A_s$: $k=2$, not r2709\'s $k=1$ -- both named as '
-          'fitted by P15, the first "fitted to the acoustic angle", the second "anchored" at the peak',
-          'fitted to the acoustic angle' in p15
-          and 'the first peak is where the amplitude is anchored' in p15)
+    # ** r6931+70.1 (PO-59): CLASS (c), STALE.  `b27e8293` (r6772+66.24, "the transmission accommodation
+    #    brought to what the paper carries") rewrote "the framework paper's scoping of this as a
+    #    one-parameter accommodation stands unchanged" as "the inherited quantity is $P_{\\Psi}$ and the
+    #    map from it to $A_{s}$ is derived, so what the construction takes from the progenitor here is
+    #    the potential power and nothing about the map".  *** Same finding for this check: the amplitude
+    #    is ONE quantity taken from outside, not derived -- so it is counted.  Re-pinned to the new
+    #    sentence's load-bearing clause. ***
+    check('and names what is taken from outside: "what the construction takes from the progenitor here is '
+          'the potential power and nothing about the map"',
+          'one-parameter accommodation stands unchanged' not in p15
+          and 'That factor is computed rather than fitted: the inherited quantity is $P_{\\Psi}$' in p15
+          and 'what the construction takes from the progenitor here is the potential power and nothing '
+              'about the map' in p15)
+    # ** r6931+70.1 (PO-59): CLASS (a) THEN (b).  "fitted to the acoustic angle" -- the fitted onset,
+    #    which this receipt read as the arm's first fitted quantity -- went at `caaf3481` (r6772+66.3)
+    #    when the onset was retired as a repair (r6770+66.3).  *** And the count question this receipt
+    #    corrected from $k=1$ to $k=2$ was then settled by the corpus in a different way: the refit
+    #    frees THE SAME FOUR parameters in each arm with the amplitude in closed form (`2007dc1e`,
+    #    r6799), "so no information criterion separates them" (`8a627481`, r6811) -- equal $k$, so the
+    #    threshold this receipt computed (ΔBIC 21.5) is not the comparison's; and the $\\chi^2$ it said
+    #    "nothing here scores" IS scored: the arm at $1.57$ times the control. ***  So the check follows
+    #    both: the amplitude still fitted ("anchored"), the counts equal, and the number scored.
+    #    Passed at r6502 (`b96e1a49`). **
+    check('⇒ [corrected r6772+66.3, settled r6799/r6811] the CR arm does carry $A_s$ as fitted ("anchored" at '
+          'the peak) -- but not against $k=6$: the refit frees "the expansion rate, the matter and baryon '
+          'densities and the tilt" in EACH arm, amplitude in closed form, "so no information criterion '
+          'separates them", and the $\\chi^2$ is scored: the arm at $1.57$ times the control',
+          'fitted to the acoustic angle' not in p15
+          and 'the first peak is where the amplitude is anchored' in p15
+          and 'With the expansion rate, the matter and baryon densities and the tilt free in each arm and '
+              'the amplitude in closed form' in p15
+          and 'The two arms fit the same four parameters, so no information criterion separates them' in p15
+          and "\\emph{the arm at $1.57$ times the control's distance" in p15)
 
     # ⓶ the table
     rows = {}
@@ -115,7 +147,10 @@ def main():
     if FAILED:
         print(f'  {len(FAILED)} check(s) FAILED')
         return 1
-    print('  VERDICT: ** the threshold is 21.5, not 26.9 — and the verdict survives by 3.5x. **')
+    print('  VERDICT (r6931+70.1): ** SETTLED DIFFERENTLY BY THE CORPUS -- the refit frees the same four')
+    print('     parameters in each arm (r6799) and no information criterion separates them (r6811); the')
+    print('     chi^2 is scored at 1.57x the control.  The r2710 table as it stood: **')
+    print('  ** the threshold is 21.5, not 26.9 — and the verdict survives by 3.5x. **')
     print('  ⛔ ⓵ ** r2709\'s k=1 was wrong and P15 says so: ** "the first peak is where the amplitude is')
     print('     ** anchored **, by an A_s this construction inherits rather than predicts", and the')
     print('     framework scopes it as ** a one-parameter accommodation **.  ** Anchored to the data IS')

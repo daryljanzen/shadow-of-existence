@@ -286,6 +286,17 @@ def main():
     finally:
         C.PARITY = keep
         shutil.rmtree(_tmp, ignore_errors=True)
+    # ** r6931+70.1: LEFT RED, class (d) -- the GATE is what is wrong, and gates are not this seat's to
+    #    edit. **  `eec88be3` (r6511) added to `band_violations()` an exemption for "a revision number
+    #    lying in ANOTHER DECLARED node's half" (for a fast-forward of the other line's commits).  But
+    #    `_PARITY_BY_NODE` declares BOTH halves (54/60/cc54 even; 59/64/66 odd), so for every declared
+    #    node the "other declared half" IS the whole out-of-band half: measured for NODE=54,60,59,64,66,
+    #    `_other_halves` is {1},{1},{0},{0},{0} -- every out-of-band number is exempted and the band
+    #    can never fire.  This seed shows it: EVEN band flags [] where it must flag r4001, flipped band
+    #    flags [] where it must flag r4000.  GREEN at b96e1a49 (r6502, before the exemption), RED after.
+    #    ⇒ Not repaired here: making the seed pass would mean seeding around the exemption, i.e. hiding
+    #      that the prevention is vacuous.  Routed as a gate finding (corpus/check_revision_collisions.py
+    #      `_other_halves`, ~l.496-501).  L259/D1 and L261/A1 fail only because this file does.
     check(f'⓸ᶜ¹ on a repository this file BUILDS -- two unmerged commits, r4000 EVEN and r4001 ODD '
           f'-- the even band flags {[v[1] for v in _in_band]} and the flipped band flags '
           f'{[v[1] for v in seeded]}: the flip MOVES which commit is out of band, rather than '

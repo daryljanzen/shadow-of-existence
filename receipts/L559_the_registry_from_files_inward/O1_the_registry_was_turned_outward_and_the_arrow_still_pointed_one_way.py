@@ -132,7 +132,16 @@ def main():
           'is written by hand and the file list is read from the INDEX -- two halves of one gate, '
           'kept in two places, disagreeing about which files exist',
           "'bbn_network'" in runner
-          and 'bbn_network' not in ''.join(r.token for r in index_rows.rows()))
+          # ** r6931+70.1: class (c) STALE -- a substring pin met an innocent new name. **  This read
+          #    `'bbn_network' not in ''.join(tokens)`, and `02454864` (r6760+cc66.3, "BBN is silent on
+          #    it") registered `P16_the_bbn_network_cannot_see_the_arms_equality_so_the_abundances_
+          #    are_silent_on_it.py` -- a different receipt whose NAME contains the substring.  The
+          #    engine itself still has no row (it declares NOT-A-RECEIPT).  ⇒ Asserted on the FILE a
+          #    row names, not on a substring of the concatenated tokens: no row's path ends in
+          #    `bbn_network.py` (or globs to it), so a real row for the engine still fires, and a
+          #    further receipt merely NAMED after the network does not.
+          and not [r.token for r in index_rows.rows()
+                   if __import__('fnmatch').fnmatch('bbn_network.py', os.path.basename(r.token))])
 
     # ⓸ what was reporting it
     p17 = open(os.path.join(ROOT, 'receipts', 'P17_geometric_core_paper',

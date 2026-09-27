@@ -101,19 +101,38 @@ print(f"  {'OK ' if _ok_gone else 'STILL THERE'}  {GONE[0]}")
 if not _ok_gone:
     fail.append("p0 still prints the datum half as an owing — the revision did nothing")
 
+# ** r6931+70.1: FOUR OF THESE EIGHT MOVED AT ONE COMMIT, r6683 (`73eb61ef`, "the node's combined
+#   groups 1-6 patch"), which rewrote this paragraph out of p0's frontier list and into the
+#   "On the datum side" passage.  Red since then, so at r6774 (`91751daa`) and r6921 (`5f9c2b2d`).
+#   ⓐ Class (a) for two of them.  "And what was written here as owed is a result, which is a
+#     different thing" and "A frontier closed by impossibility is a finding and this list records
+#     it as one" were the paper narrating its OWN earlier state -- which a paper may not do: it
+#     presents one state.  r6683 removed that narration correctly, so pinning it would defend the
+#     very thing the correction removed.  What this receipt's finding needs is the MODALITY -- the
+#     derivation stated as impossible for a structural reason, and the finding stated as such --
+#     and p0 now states both in its own single voice: "It cannot be derived from the progenitor
+#     collapse, for a structural reason rather than for want of work" and "So $\rho_r/\rho_m$ is
+#     where the observable leg's own clock is read, and a clock's zero is not the sort of thing a
+#     handover carries".  Re-pointed there; the old owing sentence stays asserted ABSENT above.
+#   ⓑ Class (c) for the other two: "a factor multiplying both components alike leaves the ratio
+#     unchanged" and "what a handover carries is what a conservation law protects" are VERBATIM,
+#     now broken across a line; the literal space in each pin becomes \s+.
 WRITTEN = [
-    ("the reversal is stated as such — what was written as owed is a result",
-     r'what was written here as owed is a\s*\n?result, which is a different thing'),
+    ("the result is stated in the paper's own single voice — the derivation is impossible, for a "
+     "structural reason, and not owed",
+     r'It cannot\s+be derived from the progenitor collapse, for a structural reason rather than for '
+     r'want of\s+work'),
     ("the standing receipt is cited rather than re-derived",
      r'\\rcpt\{X1_the_ratio_is_a_clock_reading_not_a_carried_datum\}'),
     ("the scaling reason is given",
      r'\\rho_r/\\rho_m\\propto1/a'),
     ("the multiplicative-crossing reason is given",
-     r'a factor multiplying both components alike leaves the ratio unchanged'),
-    ("and the impossibility is named as a finding",
-     r'A frontier closed by impossibility is a finding'),
+     r'a factor multiplying both components alike leaves the ratio\s+unchanged'),
+    ("and the impossibility is stated as the finding: the ratio is a clock reading, not a carried datum",
+     r'is where the observable leg\'s own clock is read\},\s+and a clock\'s zero is not the sort of\s+'
+     r'thing a handover carries'),
     ("⛭ the CORRECTED cross-reference is on the conservation law",
-     r'what a handover carries is what a conservation law protects'),
+     r'what a handover carries is what a conservation law\s+protects'),
     ("it names baryon number as the protected quantity",
      r'baryon number is conserved through it'),
     ("and states the two reasons as independent and agreeing",
@@ -165,9 +184,33 @@ print()
 print("  ⛭⛭ AND WHERE THE DRAFT'S SENTENCE ACTUALLY CAME FROM, WHICH IS THE FINDING:")
 _comment_only = len(re.findall(r'peak spacing', P16, re.I)) - _ps_p16
 print(f"     'peak spacing' in P16's COMMENTS: {_comment_only}   in P16's BODY: {_ps_p16}")
+# ** r6931+70.1: THE HEADER COMMENT WAS CORRECTED, SO THE PROVENANCE IS READ AT THE COMMIT IT DESCRIBES.
+#   Class (a).  r6772+66.30 (`0960c7aa`, "P16 brought to the same reading, masthead included")
+#   rewrote P16's header: it no longer says "eta fixes the abundances and the CMB peak HEIGHTS,
+#   rho_r/rho_m the peak SPACING" but "eta fixes the abundances and the CMB peak HEIGHTS, while the
+#   peak SPACING is computed from the rate, the plasma being handed over at the branch point so that
+#   the acoustic angle carries no early-universe parameter" -- the attribution to rho_r/rho_m is
+#   gone from the comment too, which is the correction the body already carried.  ** This part's
+#   finding is PROVENANCE -- where the draft's sentence came from at r2566 -- and that is a fact
+#   about the tree at `0fcafd6c`, the commit this receipt's docstring says its absences are measured
+#   at.  So the header is read THERE (a git lookup, as the retro-pin rule has it), and the current
+#   header is asserted to carry the corrected attribution, so the misattribution cannot return
+#   unseen. **  (The current P16's comment still names the peak spacing once; the comment/body
+#   split below is measured on HEAD and is unchanged in kind.)
+import subprocess as _sp
+_P16_AT = _sp.run(['git', 'show', '0fcafd6c:corpus/cosmogenesis_paper.tex'], cwd=ROOT,
+                  capture_output=True, text=True).stdout
 _hdr = re.search(r'eta fixes the abundances and the CMB peak HEIGHTS, rho_r/rho_m\s*\n%\s*the peak SPACING',
-                 P16)
-print(f"     {'FOUND  ' if _hdr else 'ABSENT '} P16's header comment carries the draft's sentence almost verbatim")
+                 _P16_AT)
+_hdr_now_corrected = (re.search(r'rho_r/rho_m\s*\n?%?\s*the peak SPACING', P16) is None
+                      and re.search(r'peak SPACING is computed from the rate', P16) is not None)
+print(f"     {'FOUND  ' if _hdr else 'ABSENT '} P16's header comment carried the draft's sentence almost verbatim "
+      f"(at 0fcafd6c, r2566)")
+print(f"     {'OK     ' if _hdr_now_corrected else 'STALE  '} and it has since been corrected: the spacing is "
+      f"'computed from the rate', not attributed to rho_r/rho_m (r6772+66.30)")
+if not _hdr_now_corrected:
+    fail.append("P16's header comment again attributes the peak spacing to rho_r/rho_m, or no longer says "
+                "the spacing is computed from the rate")
 print("     *** SO THE WRONG CROSS-REFERENCE WAS NOT INVENTED -- IT WAS READ OFF A NON-PRINTING")
 print("         HEADER COMMENT AND CARRIED INTO A PAPER AS IF IT WERE THE PAPER. ***")
 print("     ⚠ *A header comment is corpus-shaped text that no reader sees, no gate reads, and no")
@@ -203,8 +246,8 @@ if _unindexed:
 print("     ⌗ *The comment is not FALSE -- P15 does tie the spacing to the sound horizon, which the")
 print("        radiation content enters.  ** It is unprinted, which is a different defect. **")
 if not _hdr:
-    fail.append("P16's header comment no longer carries the sentence — the provenance finding "
-                "cannot be reproduced and should be re-stated rather than left asserted")
+    fail.append("P16's header comment at 0fcafd6c does not carry the sentence (or git history is "
+                "unavailable) — the provenance finding cannot be reproduced")
 if _comment_only == 0:
     fail.append("the comment/body split this part measures has vanished")
 
@@ -265,6 +308,7 @@ for what, pat in P16_SAYS:
     assert re.search(pat, P16, re.I | re.S), f"P16 does not support the cross-reference: {what}"
 assert _ps_p16 == 0 and _ps_p0 == 0 and _ps_p15 > 0, "the 'peak spacing' attribution is not where it belongs"
 assert _hdr and _comment_only > 0, "the header-comment provenance of the withdrawn sentence cannot be reproduced"
+assert _hdr_now_corrected, "P16's header comment no longer carries the corrected attribution"
 assert _ok_x1, "the cited receipt is absent"
 print(f"GATE c54.207 (r2566), `L-530`: p0's owing sentence is gone and the impossibility stands in its "
       f"place citing `X1` (r2433); the cross-reference is P16's conservation-law line, checked in P16's "

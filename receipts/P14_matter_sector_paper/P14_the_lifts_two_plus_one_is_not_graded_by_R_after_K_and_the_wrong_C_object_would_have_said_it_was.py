@@ -255,8 +255,17 @@ print()
 print("-" * 88)
 print("  ⛔ AND THE CORPUS CARRIES `R` IN TWO SENSES, WHICH IS WHY THE CONFUSION IS POSSIBLE")
 print("-" * 88)
-_tex = open('corpus/matter_sector_paper.tex', encoding='utf-8').read()
-_pay = open('receipts/P14_matter_sector_paper/P14_P14_payoff.py', encoding='utf-8').read()
+# ** r6931+70.1: THE TWO READS WERE CWD-RELATIVE AND THE RUNNER RUNS FROM THIS DIRECTORY.
+#   Class (c), STALE -- neither sentence moved; both are still verbatim in the tree.  Written at
+#   r6574 (`28c7fde8`) with root-relative paths, while `scripts/run_all_receipts.py` runs each
+#   receipt with `cwd=` its family directory, so the read raised FileNotFoundError under the
+#   runner (red at r6921 `5f9c2b2d`) and passed only from the root.  ** Anchored to the
+#   repository root from this file's own location; the two pins are unchanged. **
+import os as _os
+_ROOT = _os.path.abspath(_os.path.join(_os.path.dirname(_os.path.abspath(__file__)), '..', '..'))
+_tex = open(_os.path.join(_ROOT, 'corpus', 'matter_sector_paper.tex'), encoding='utf-8').read()
+_pay = open(_os.path.join(_ROOT, 'receipts', 'P14_matter_sector_paper', 'P14_P14_payoff.py'),
+            encoding='utf-8').read()
 _secount = "exchanged by the antipodal map, which is $R$." in _tex
 _cosmo = "R = r_0->-r_0 (2M->-2M) carries 3 -> 3bar" in _pay
 print("    sec:count       : 'the two crossings are exchanged by the antipodal map, which is R'")

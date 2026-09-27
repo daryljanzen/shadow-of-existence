@@ -30,12 +30,20 @@ delta, so the tortoise coordinate is
 ** ⛭⛭ ⓷ AND P15 ALREADY DERIVED THIS, FOR A DIFFERENT PURPOSE. **  Its transmission dichotomy:
 
   "a non-degenerate horizon's ** exponential near-horizon approach ** imprints a scale-invariant spectrum
-   (the inflationary de Sitter-horizon mechanism), whereas ** the degenerate Nariai member's power-law,
-   scale-free approach ** to the branch point is argued to transmit the progenitor spectrum unaltered."
+   (the inflationary de Sitter-horizon mechanism), whereas ** the degenerate Nariai double root's
+   power-law approach carries no scale **, and the branch point where the modes cross---a third case
+   ... accumulates no phase at all"
+  (** r6931+70.1 **: quoted as P15 states it since r6717+66.1.  The earlier wording, quoted here until
+  then, had the Nariai member's power-law approach "to the branch point" transmitting the spectrum --
+  conflating the double root with the crossing locus.  The split this receipt uses is the double
+  root's power law, which is unchanged; the TRANSMISSION is the branch point's, a third case.)
 
   ⇒ *** THE SAME EXPONENTIAL/POWER-LAW SPLIT, ONE PAPER OVER, USED TO ARGUE ABOUT SPECTRAL TRANSMISSION
       AND NEVER CONNECTED TO THE TEMPERATURE QUESTION. ***  ** P15 needed it to say what CROSSES; L-519
       needed it to say what the configuration CARRIES.  It is one fact. **
+  (** r6931+70.1 **: "never connected" was true at r2543 and was DISCHARGED 45 minutes later by
+  c54.205 (9fd40454), which put this receipt's argument into P1 and connected the two uses there --
+  "one fact serving two purposes".  The check now pins that connection.)
 
 ** ⓸ SO L-519 HAS THREE INDEPENDENT FOOTINGS AND THEY AGREE. **
   * ** c54.202's ** -- the near-horizon geometry is the equal-radii dS_2 x S^2 throat, which ** carries a
@@ -121,13 +129,36 @@ def main():
     check("⛭⛭ AND P15 ALREADY DERIVED THE SPLIT, for a different purpose: a non-degenerate horizon's "
           '"exponential near-horizon approach" imprints a scale-invariant spectrum',
           'exponential near-horizon approach' in allp)
-    check("while \"the degenerate Nariai member's power-law, scale-free approach\" transmits the "
-          'progenitor spectrum unaltered',
-          "degenerate Nariai member's power-law, scale-free approach" in allp)
-    check('⇒ SO IT IS ONE FACT USED FOR TWO PURPOSES -- P15 needed it to say what CROSSES; L-519 needs '
-          'it to say what the configuration CARRIES -- and the two were never connected',
-          'exponential near-horizon approach' in allp
-          and "degenerate Nariai member's power-law, scale-free approach" in allp)
+    # ** r6931+70.1: CLASS (a) -- THE PIN FROZE A CONFLATION THE CORPUS CORRECTED AT r6717+66.1
+    #   (715ccd02).  It pinned P15's abstract as "the degenerate Nariai member's power-law,
+    #   scale-free approach TO THE BRANCH POINT is argued to transmit the progenitor spectrum
+    #   unaltered" -- which put the double root's power law and the transmission at one locus.
+    #   715ccd02 separated them across P15/P18/the map: the Nariai double root's power-law
+    #   approach "carries no scale", and the transmission locus is the branch point, "a third
+    #   case" where f diverges and the crossing accumulates no phase (and the transfer there is
+    #   now computed, not argued).  ** What THIS receipt uses is only the exponential/power-law
+    #   split at a simple vs a double root, and that is exactly what the corrected sentence still
+    #   states. **  So the pin follows the correction: P15 is tested on its own text (CR_cosmology)
+    #   for the double root's power law carrying no scale, and the label no longer says the double
+    #   root transmits anything.
+    #   ⌗ CLASS (b) for the next check: its "never connected" was DISCHARGED by c54.205
+    #   (9fd40454, 45 minutes after this receipt): P1 itself (BH_causality_v2) says the simple/double-root split "is put to a
+    #   second use in a companion paper ... one fact serving two purposes".  The check now pins
+    #   that connection in P1 rather than asserting its absence.
+    p15 = re.sub(r'\s+', ' ', '\n'.join(
+        l for l in open(os.path.join(ROOT, 'corpus', 'CR_cosmology.tex'),
+                        encoding='utf-8', errors='replace').read().split('\n')
+        if not l.lstrip().startswith('%')))
+    check("while \"the degenerate Nariai double root's power-law approach carries no scale\" -- the "
+          'transmission itself being the branch point\'s, a third case',
+          "degenerate Nariai double root's power-law approach carries no scale" in p15
+          and 'a third case' in p15)
+    check('⇒ SO IT IS ONE FACT USED FOR TWO PURPOSES -- P15 needs it to say what CROSSES; L-519 needs '
+          'it to say what the configuration CARRIES -- and P1 now says so itself: "one fact serving '
+          'two purposes"',
+          'exponential near-horizon approach' in p15
+          and "degenerate Nariai double root's power-law approach carries no scale" in p15
+          and 'one fact serving two purposes' in p1)
 
     # ⓸ the three footings
     # ** RE-PINNED r4022, AND THE PIN WAS ANCHORED ON THE ONE THING 61's r4019 EXISTED TO REMOVE. **
@@ -162,7 +193,7 @@ def main():
     print('     Planck spectrum.  At a double root that relation does not exist, so the construction has')
     print('     no first step. **  ⇒ ** Not "T = 0": THE MECHANISM IS ABSENT. **')
     print('  ⛭ And P15 already derived the same split for its transmission dichotomy -- ** one fact, two')
-    print('     purposes, never connected. **')
+    print('     purposes **, which P1 now states in its own voice.')
     print('  ⌗ So L-519 now has THREE independent footings: ** the SCALE (c54.202), the FRAME (r2528),')
     print('    and the MECHANISM (here) ** -- and the first two say what cannot be read while this one')
     print('    says what is true.')

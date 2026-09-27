@@ -42,7 +42,9 @@ the same number. **
 ===================================================================================================
 
 ** Not that a de Sitter entropy is asserted. **  *Whether S = A/4 carries to a cosmological horizon on
-this reading is exactly what would have to be argued, and p0 says so in the clause.*  ** Not that
+this reading is exactly what would have to be argued, and p0 says so in the clause.*  [r6931+70.1:
+DISCHARGED since -- r6869 (PO-48) argued it, per member: the law carries at the substrate's horizon and
+is undetermined at the forced member, and p0 now states that in place of the not-claimed.]  ** Not that
 PO-6's dark half is closed ** -- the one-constant regulation question is untouched; what is removed is
 the appearance that the entropy poses a NEW instance of it.  ** Not a derivation of Lambda's value **,
 which p0 keeps as the ledger's one input.  ** And not that the 3/8 is meaningful **: it is a
@@ -145,6 +147,9 @@ print("=" * 78)
 print("PART 4 — WHAT p0 NOW SAYS, AND THE PARAGRAPH THE COINCIDENCE IS AGAINST")
 print("=" * 78)
 P0 = open(os.path.join(CORPUS, 'geometric_core_paper.tex'), encoding='utf-8').read()
+assert os.path.exists(os.path.join(os.path.dirname(os.path.abspath(__file__)),
+    'P17_the_area_law_carries_on_the_substrate_horizon_and_cannot_on_the_forced_member_and_the_'
+    'register_reason_is_not_the_one.py')), "the receipt that discharged the not-claimed must exist"
 WRITTEN = [
     ("the entropy is named at all — it was at ZERO uses in p0 before this revision",
      r'Bekenstein--Hawking'),
@@ -162,8 +167,23 @@ WRITTEN = [
      r'differ by \$3/8\$ and by nothing else'),
     ("the one-register/cross-register reason for the asymmetry is stated",
      r'count taken \\emph\{across\} the\s*\n?register split'),
-    ("and the not claimed is attached",
-     r'not claimed is that a de~Sitter entropy is asserted here'),
+    # ** r6931+70.1: THE NOT-CLAIMED WAS DISCHARGED.  Class (b).  At r2566 p0 attached "What is not
+    #   claimed is that a de~Sitter entropy is asserted here: whether $S=A/4$ carries to a
+    #   cosmological horizon on this reading is a question this paper does not settle".  r6869
+    #   (`91f0b51f`, "PO-48 struck: the area law carries per member") SETTLED it and replaced the
+    #   sentence: "Whether the area law carries is settled per member rather than once" -- at the
+    #   substrate's own horizon the Noether-charge construction's hypotheses hold "so the law carries
+    #   there", and at the forced member the surface gravity vanishes and it is "undetermined rather
+    #   than false", with the computation banked as
+    #   P17_the_area_law_carries_on_the_substrate_horizon_and_cannot_on_the_forced_member_and_the_
+    #   register_reason_is_not_the_one.  Red since r6869, i.e. at r6921 (`5f9c2b2d`); green at r6774.
+    #   ** Pinning the old non-assertion would keep an open question alive past its answer, so the
+    #   check is re-pointed at the settlement -- which is what makes the S = 3pi/(Lambda l_P^2) this
+    #   clause names the entropy of the horizon the construction licenses, not only a number. **
+    ("⛭ and the question the not-claimed left open is SETTLED per member (r6869, PO-48): the area "
+     "law carries at the substrate's horizon and is undetermined at the forced member",
+     r'Whether the area law carries is settled per member rather than once\}.*?'
+     r'so the law carries there\..*?undetermined rather than false'),
 ]
 for what, pat in WRITTEN:
     ok = re.search(pat, P0, re.I | re.S) is not None
@@ -195,7 +215,8 @@ if fail:
 print("ALL CHECKS PASS — S reduces to pi(alpha/l_P)^2 and to 3pi/(Lambda l_P^2); the cosmological-")
 print("constant factor reduces to 8pi/(Lambda l_P^2), so the two are one quantity differing by 3/8;")
 print("at p0's own Lambda l_P^2 the entropy is 3.1e122 against a gauge-count of 1.0e61; and p0 now")
-print("carries the clause, the coincidence and the not claimed, against all three anchors it rests on.")
+print("carries the clause, the coincidence and the per-member settlement of the area law that")
+print("discharged the not-claimed (r6869), against all three anchors it rests on.")
 print("=" * 78)
 
 # ============================================================================================
@@ -218,6 +239,8 @@ print("=" * 78)
 #       an absence. **
 #   NOT gated: that S = A/4 applies to a cosmological horizon on this reading.  ** p0 declines it and
 #   this file declines it; what is computed is what the number IS if the expression is taken. **
+#   [r6931+70.1: p0 no longer declines it -- r6869 settled it per member, and source check (4)'s
+#   last entry now pins that settlement; this file still computes the number, not the law.]
 # ============================================================================================
 assert _ok_sq and _ok_lam, "the entropy does not reduce to the forms p0 prints"
 assert _ok_common, "S and the CC factor are NOT the same 1/(Lambda l_P^2) — the coincidence claim fails"
@@ -230,5 +253,5 @@ for what, pat in ANCHORS:
 print(f"GATE c54.207 (r2566), `L-532`: S = pi(alpha/l_P)^2 = 3pi/(Lambda l_P^2) = {_S:.2e} at p0's own "
       f"Lambda l_P^2 = {LLP2:.0e}, against a gauge-count {_gauge:.2e}; the cosmological-constant factor "
       f"is 8pi/(Lambda l_P^2), so S/CC = {_ratio} exactly and the two 10^122's are one dimensionless "
-      f"combination; and p0 states the clause with its not claimed, against three standing anchors — "
+      f"combination; and p0 states the clause with the area law settled per member, against three standing anchors — "
       f"pinned against `FOR_54` item 52 (r2536, answered r2564).")

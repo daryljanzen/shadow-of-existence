@@ -46,6 +46,13 @@ is unchanged.  ** Not that $0.408$ and $0.615$ are $\\chi^2$ values ** -- they a
 to the control, and the receipt they carry is P15's.
 
 Written r2711.  Stated for reversal.
+
+** r6931+70.1 (PO-59) -- DISCHARGED, AND WHERE. **  *** The pair was the deliverable while the datum's phase
+was a two-valued choice.  P15 now fixes both of the datum's freedoms at the branch-point handover
+(r6772+66.20, `ce1a6706`) -- one reading, first peak at $222$ -- and the likelihood is scored on it as one
+number ($2.57\\times$ the control as computed, $1.57\\times$ refitted), at equal parameter count (r6799,
+r6811), so the threshold side of the pair ($\\Delta$BIC $21.5$) is the r2710 premise's, not the
+comparison's. ***
 """
 import os
 import subprocess
@@ -108,15 +115,30 @@ def main():
           and "own phase freedom is a real lever on it and spans a third of it" in _P15_THEN
           and 'thirty-four per cent, and no further' in _P15_THEN
           and 'cannot close the discrepancy' in _P15_THEN)
-    check('⛭⛭ ⓶ᵇ and P15 states it MORE strongly now, which is why the pins broke: "The seam datum '
-          'carries two freedoms, and how far the first peak moves with them is measured" -- across '
-          'the seventeen admitted readings the first peak spans $148$ to $228$, a factor of $1.541$, '
-          'the sky\'s $220.6$ inside it, and "there is no such reading" reproducing the sky.  ** So a '
-          '$\\chi^2$ scored while PO-7 is open still carries a two-valued input, and the freedoms '
-          'still do not close the gap. **',
-          'The seam datum carries two freedoms' in p15
-          and 'how far the first peak moves with them is measured' in p15
-          and 'there is no such reading' in p15)
+    # ** r6931+70.1 (PO-59): CLASS (b), DISCHARGED.  `ce1a6706` (r6772+66.20, "the datum scan restated:
+    #    the handover fixes both freedoms, the span measures what choosing a reading cost") replaced "The
+    #    seam datum carries two freedoms ... there is no such reading" with: the datum "leaves two things
+    #    to be fixed, and the handover fixes both" -- at the branch point the phase is an extremum with no
+    #    velocity and the amplitude the frozen $0.4835\\,\\Psi_i$.  *** So the two-valued input this
+    #    receipt's pair was built for is SELECTED: one reading, the single-locus one, returning the first
+    #    peak at $222$ outside the position/alternation trade, and the likelihood is scored on it as ONE
+    #    number (the computed spectrum at $2.57$ times the control, the refit at $1.57$). ***  The
+    #    seventeen-reading span survives as a measure of what choosing a reading costs.  The check pins
+    #    the selection and the single score, and the absence of the two-freedom sentence.  Passed at
+    #    r6502 (`b96e1a49`). **
+    check('⛭⛭ ⓶ᵇ [discharged r6772+66.20] the two freedoms are FIXED, so the input is no longer two-valued: '
+          'the datum "leaves two things to be fixed, and the handover fixes both"; "The single-locus reading '
+          'is not inside that trade: it returns the first peak at $222$"; the seventeen-reading span '
+          '($148$ to $228$) stays as the cost of choosing; and the likelihood is scored once -- "$2.57$ '
+          'times" as computed, "$1.57$" refitted',
+          'The seam datum carries two freedoms' not in p15
+          and 'leaves two things to be fixed, and the handover fixes both' in p15
+          and '\\emph{The single-locus reading is not inside that trade}: it returns the first peak at '
+              '$222$' in p15
+          and 'Across the seventeen readings admitted by a four-peak criterion fixed before the numbers, '
+              'the first peak spans $148$ to $228$' in p15
+          and "\\emph{the arm sits at $2.57$ times the control's distance from the data}" in p15
+          and "\\emph{the arm at $1.57$ times the control's distance" in p15)
 
     # ⓷ discrete, so k is unchanged
     dB2 = (6 - 2)*np.log(N)
@@ -129,7 +151,10 @@ def main():
     if FAILED:
         print(f'  {len(FAILED)} check(s) FAILED')
         return 1
-    print("  VERDICT: ** PO-10's deliverable is a PAIR, and the specification is now closed. **")
+    print("  VERDICT (r6931+70.1): ** DISCHARGED -- the handover fixes both freedoms (r6772+66.20), so the")
+    print("     input is one-valued and the likelihood is scored once (2.57x computed, 1.57x refitted).")
+    print("     The r2711 specification as it stood: **")
+    print("  ** PO-10's deliverable is a PAIR, and the specification is now closed. **")
     print('  ⓵ ** The acoustic sector IS open — it is PO-7 ** ("the first acoustic peak, and the')
     print('     propagated comb"), and r2709-r2710 were setting PO-10 up as though its input were')
     print('     settled.')

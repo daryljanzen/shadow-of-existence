@@ -124,7 +124,17 @@ def main():
           f'85 when this was written, and the extra is CR_synthesis.tex\'s single result, the paper '
           f'r4187 added',
           tot == 86 and _by_file.get('CR_synthesis.tex') == 1)
-    check(f'routes 2+3 alone flag 20 (found {len(n23)})', len(n23) == 20)
+    # ** r6931+70.1: class (c), STALE COUNT -- 20 -> 19, and the one that left is named.  Measured
+    #   20 at 91751daa (r6774) and 19 at r6931 head; the move is `groupoid_paper.tex`'s
+    #   `prop:nariai-fixed`, whose statement gained "the involution $\sigma$ of \eqref{eq:f}" and a
+    #   pointer to its scope note at r6903 (84ae474d), so route 3 (a declaration) now catches it.
+    #   Every other flagged label is unchanged, set for set.  A flagged result acquiring an explicit
+    #   arrival path is the narrowing this receipt is about, not a change to it; the check keeps
+    #   asserting the CURRENT number and the label that moved, so a further move fires here. **
+    check(f'routes 2+3 alone flag 19 (found {len(n23)}) -- 20 when last pinned; prop:nariai-fixed '
+          f'gained a declaration (\\eqref) at r6903',
+          len(n23) == 19
+          and ('groupoid_paper.tex', 'prop:nariai-fixed') not in n23)
 
     _, n123 = sweep({'proof', 'inbody', 'decl'})
     # ⛭ r4070: THE COUNT MOVED 7 -> 6 UNDER 61's REACH PASSES, AND THE THESIS DID NOT.
@@ -136,8 +146,18 @@ def main():
     #   b702f932219f8f56 (this branch, after 61's r4009-r4065); it was 7 before those passes.
     #   The check asserts the CURRENT number and the narrowing that carries the argument, so a
     #   further move fires here rather than passing silently.*
-    check(f'adding route 1 -- the proof environment -- cuts it to 6 (found {len(n123)})',
-          len(n123) == 6)
+    # ** r6931+70.1: class (c), STALE COUNT -- 6 -> 5, the same result one step earlier.  Measured 6
+    #   at 440623b6 (r6719) and 5 at 876a4779 (r6735+66.2) and every head since (91751daa r6774
+    #   already failed on it; the older-head run agrees).  `prop:nariai-fixed` always HAD a proof, but
+    #   a remark ("The fixed point carries a dynamical coincidence...") sat between the statement and
+    #   it; r6735+66.2 moved that remark and the \begin{proof} now follows the statement, so route 1
+    #   sees it.  Same finding: a flag dissolving under closer reading was a route the instrument
+    #   missed.  The five left: prop:amplitude, prop:transmission (P15), prop:unique (P0),
+    #   prop:autA2 (P5), thm:modal. **
+    check(f'adding route 1 -- the proof environment -- cuts it to 5 (found {len(n123)}) -- 6 when '
+          f'last pinned; prop:nariai-fixed\'s proof now follows its statement (r6735+66.2)',
+          len(n123) == 5
+          and ('groupoid_paper.tex', 'prop:nariai-fixed') not in n123)
 
     _, n4 = sweep({'proof', 'inbody', 'decl', 'tag', 'argument'})
     check(f'and routes 4 and 5, found by READING two of the seven, cut it further '

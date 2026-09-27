@@ -141,8 +141,20 @@ check("the within-state label runs in SIX papers, not the one the raw search fou
 #   ⌗ *Per c54.226 a count is a claim about a FILE AT A COMMIT: 14 measured at tree
 #   b702f932219f8f56, after 61's r4009-r4065; it was 15 before them.  Asserted, not relaxed,
 #   so a further move fires here rather than passing silently.*
-check("x14 in all", sum(w.values()), 14)
-check("P14 carries seven of them", w.get('P14'), 7)
+# ** r6931+70.1: 14 -> 18 and P14 7 -> 10, class (c) STALE -- the sense and its home are
+#   unchanged; the label is USED more because P14 now draws the distinction it labels.  Measured
+#   per revision with this file's own body() and WITHIN: r6527 (`8633e9a7`, "the reseating of
+#   sec:whichthree propagated") P14 7 -> 9; r6679 (`47edd441`, groups 1-3 patch) P14 9 -> 10;
+#   r6683 (`73eb61ef`, groups 1-6 patch) p0 1 -> 2.  Every new site is the LABEL sense -- "the hinge
+#   $S_3$ is a within-state index and not a family symmetry", "the $\mathbb{Z}_3$ inside $Aut(A_2)$
+#   ... is therefore the within-state index", p0's "the $S_3$ among these vantages is the
+#   within-state index" -- i.e. sec:whichthree setting the hinge S_3 against the generations' deck.
+#   The six papers are the same six.  ** Asserted at the new measurement so a further move fires
+#   here; red since r6527, so already red at r6774 (`91751daa`) and r6921 (`5f9c2b2d`). **
+check("x18 in all (x14 before r6527/r6679/r6683 seated the hinge S_3 as the within-state index)",
+      sum(w.values()), 18)
+check("P14 carries ten of them (seven before r6527's sec:whichthree reseating and r6679)",
+      w.get('P14'), 10)
 HARM = re.compile(r'harmonic\s+index', re.I)
 h = {c: len(HARM.findall(t)) for c, t in BODIES.items()}
 h = {c: n for c, n in h.items() if n}
@@ -154,7 +166,7 @@ check("and a SECOND label form the first pass missed entirely, in four papers",
 #   stated condition: the adiabatic residue" -- which added a harmonic-index use to `canonical_time`.
 #   *A count is a claim about a FILE AT A COMMIT; the label sense grew by one because a paper worked
 #   an item, which is the direction this receipt's thesis predicts.*
-check("x8 in all now (x7 when this was written), so the LABEL sense runs x22 across seven papers "
+check("x8 in all now (x7 when this was written), so the LABEL sense runs x26 across seven papers "
       "-- the growth is P10's, 2 -> 3, added by r4231's PO-28 close",
       sum(h.values()), 8)
 check("and it is P10 that moved, the other three standing where they were",
@@ -201,7 +213,7 @@ if FAIL:
     for f in FAIL:
         print("   ", f)
     raise SystemExit(1)
-print(f"  VERDICT: ALL PASS.  `index` x{total} carries an operator invariant, a LABEL (x22 across seven")
+print(f"  VERDICT: ALL PASS.  `index` x{total} carries an operator invariant, a LABEL (x26 across seven")
 print("  papers, in at least three surface forms) and a subgroup index -- and P14 carries all")
 print("  three about one threeness.  The row is owed, and it belongs to the map, because which")
 print("  of the corpus's words carry two senses is a statement about the corpus.")

@@ -39,6 +39,13 @@ construction is the major undertaking any geometric gauge-matter route would fir
 
   ⇒ *** THE UNBUILT THING IS AN OPERATOR, NOT A SECTOR. ***
 
+  (r6931+70.1: DISCHARGED on the P13 side.  Since r6683 (73eb61ef) P13 no longer calls that sector
+  unbuilt: sec:open specifies it -- a fermion on the compact face is an SU(4) spinor on the round S^5 --
+  and finds it obstructed twice, the second obstruction being that the round face's Dirac operator has
+  NO zero modes.  That is this reading carried out: the thing owed was an operator's kernel, and the
+  operator was exhibited and its kernel is empty -- "the emptiness of a definite object".  The PO-5
+  question below, about the COLOURLESS four, is a different operator and stays as stated.)
+
   ⇒ ** So PO-5's live question resolves into something buildable and sharply stated: IS THERE AN
     OPERATOR ON THIS STRUCTURE WHOSE KERNEL IS THE FOUR COLOURLESS GRADINGS? **  Not "can a colourless
     sector be built" -- ** can the operator whose index counts four be exhibited. **
@@ -106,14 +113,30 @@ def main():
           "one operator's kernel" in p14 and 'four one-dimensional ones' in p14)
 
     # ** and what P13's "unbuilt" means **
-    check('P13: "the compact-face fermion sector the obstruction would act on remains unbuilt"',
-          'remains unbuilt' in p13)
-    check('and calls its construction the major undertaking any geometric gauge-matter route '
-          'would first have to complete',
-          'the major undertaking any geometric' in p13)
-    check('⇒ SO THE UNBUILT THING IS AN OPERATOR, NOT A SECTOR -- because an operator is exactly '
-          'what the coloured side had and the colourless side lacks',
-          "one operator's kernel" in p14 and 'remains unbuilt' in p13)
+    # ** r6931+70.1: class (b), DISCHARGED.  These three checks pinned P13's "The compact-face fermion
+    #   sector the obstruction would act on remains unbuilt, and its construction is the major
+    #   undertaking any geometric gauge-matter route would first have to complete", which r6683
+    #   (73eb61ef) replaced with "sec:open specifies that sector and finds it obstructed twice".  And
+    #   the way P13 discharged it is THIS RECEIPT'S READING carried out: sec:open specifies the sector
+    #   as a definite object -- a fermion on the compact face is an SU(4) spinor on the round S^5 -- and
+    #   its second obstruction is a statement about that object's Dirac OPERATOR: "the round face
+    #   carries no Dirac zero modes, so there is no massless content for it to act on", closing the
+    #   squash and torsion evasions, so "what is definite is the emptiness of a definite object".  The
+    #   unbuilt thing was an operator's kernel; P13 exhibited the operator and its kernel is empty.
+    #   Re-pinning to the new wording alone would keep "unbuilt" alive past its answer, so the checks
+    #   are re-pointed at what discharged it.  The PO-5 narrowing above is untouched by this. **
+    check('P13 has since specified "the compact-face fermion sector the obstruction would act on": '
+          '"that sector can be specified, and is obstructed twice" (was "remains unbuilt"; r6683)',
+          'that sector can be specified, and is obstructed twice' in p13
+          and 'remains unbuilt' not in p13)
+    check('and the specified object is a definite spinor with a definite Dirac operator: "a fermion on '
+          'the compact face is an SU(4) object", and "the round face carries no Dirac zero modes"',
+          'a fermion on the compact face is an $\\SU(4)$ object' in p13
+          and 'the round face carries no Dirac zero modes, so there is no massless content for it to act on' in p13)
+    check('⇒ SO THE UNBUILT THING WAS AN OPERATOR\'S KERNEL, NOT A SECTOR -- and P13 discharged it by '
+          'exhibiting the operator and finding the kernel empty: "the emptiness of a definite object"',
+          "one operator's kernel" in p14
+          and 'what is definite is the emptiness of a definite object' in p13)
 
     # ** and nothing is built here **
     check('⛔ and nothing here exhibits such an operator or argues one exists -- PO-5 stays open',
@@ -131,8 +154,9 @@ def main():
     print('  ⇒ ** The colourless four are the one-dimensional representations of D_6 trivial on the')
     print('     deck Z_3 -- a fact about a GROUP, not the kernel of anything. **  So P14\'s "a count of')
     print('  gradings and not of fields" is exactly right, and now for a stated reason.')
-    print('  ⛭⛭ AND IT NAMES WHAT P13\'s "REMAINS UNBUILT" MEANS: ** the unbuilt thing is an OPERATOR,')
-    print('     not a sector. **')
+    print('  ⛭⛭ AND IT NAMED WHAT P13\'s "REMAINS UNBUILT" MEANT: ** the unbuilt thing was an OPERATOR,')
+    print('     not a sector ** -- and P13 has since discharged it that way: the face\'s Dirac operator is')
+    print('     specified and has no zero modes, the emptiness of a definite object.')
     print('  ⇒ PO-5\'s live question is therefore buildable and sharply stated: ** is there an operator')
     print('    on this structure whose kernel is the four colourless gradings? **  Not "can a')
     print('    colourless sector be built" -- ** can the operator whose index counts four be')

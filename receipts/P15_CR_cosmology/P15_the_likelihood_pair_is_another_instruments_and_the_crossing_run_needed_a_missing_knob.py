@@ -306,10 +306,30 @@ print("=" * 94)
 with open(os.path.join(ROOT, 'computations', 'beyond_the_wall', 'ACOUSTIC_two_arm.py'),
           encoding='utf-8') as fh:
     INSTR = fh.read()
-check("the CR arm's background is now reachable: CRH0, CROM, CROMBH2 exposed",
-      "os.environ.get('CRH0'" in INSTR and "os.environ.get('CROM'" in INSTR)
-check("and their defaults are the previous literals, so nothing banked moves",
-      "'CRH0', '73.00'" in INSTR and "'CROM', '0.3066'" in INSTR)
+# ** r6931+70.1: STALE (c) -- the pin was the OTHER seat's spelling of the same knobs, and it never
+#   reached `main`.  This receipt's r6782 wiring (`CRH0`/`CROM`/`CROMBH2` with inline defaults
+#   `'CRH0', '73.00'` and `'CROM', '0.3066'`) collided with `cc66`'s, which had exposed the same
+#   block at `6480558a` (r6760+cc66.4: `CRH0`, `CROM`) and `cc66.14` (`WBH2`).  r6786 (`7b49052a`,
+#   FOR_60 ①) decided it: `main`'s copy kept, `WBH2` the omega_b knob, `CROMBH2` "dropped, not
+#   aliased"; FOR_66_FROM_60 records node 60 taking `main`'s side of the file entirely and the banked
+#   spectra reproducing on it.  So the second check has failed on every run since this file landed --
+#   the literals it looked for were never in `main`'s instrument.  ** The finding is unchanged and true
+#   of `main`'s copy, stated in its form: the CR arm's literals `73.00, 0.3066, 0.0224` are bound
+#   first and each knob defaults to them, `CROM` unset leaving Omega_m untouched -- so nothing banked
+#   moves -- and `CROMBH2` is gone as decided. **
+_CRLIT = INSTR.find("    H0, OM, OMBH2 = 73.00, 0.3066, 0.0224")
+_CRBLK = INSTR[_CRLIT:INSTR.find("OL = 1.0 - OM", _CRLIT)] if _CRLIT >= 0 else ''
+check("the CR arm's background is now reachable: CRH0, CROM, and the omega_b knob (WBH2, the name "
+      "r6786 decided over this line's CROMBH2) exposed",
+      "os.environ.get('CRH0'" in INSTR and "os.environ.get('CROM'" in INSTR
+      and "os.environ.get('WBH2'" in _CRBLK and 'CROMBH2' not in INSTR)
+check("and their defaults are the previous literals, so nothing banked moves: 73.00 / 0.3066 / "
+      "0.0224 are bound first on the CR arm and CRH0 and WBH2 default to them, CROM unset leaves Omega_m",
+      _CRLIT >= 0
+      and "H0 = float(os.environ.get('CRH0', H0))" in _CRBLK
+      and "OMBH2 = float(os.environ.get('WBH2', OMBH2))" in _CRBLK
+      and "_crom = os.environ.get('CROM')" in _CRBLK
+      and "if _crom and ARM != 'lcdm':\n    OM = float(_crom)" in _CRBLK)
 SCAN = [(1e4, 165.55, 265.8), (1e5, 227.83, 193.2), (1e6, 247.80, 177.6),
         (1e7, 254.13, 173.2), (3e7, 255.36, 172.3), (1e8, 256.13, 171.8)]
 print("\n    the sound horizon integrated from the branch point, at the crossing background")
@@ -325,8 +345,32 @@ check("the integral converges as the body says it does -- r_s rises monotonicall
       all(SCAN[i][1] < SCAN[i + 1][1] for i in range(len(SCAN) - 1)) and drift < 1.0)
 check("but the scale it converges to is not the body's 298.0, and the gap is large",
       abs(SCAN[-1][2] - 298.0) > 100)
-check("and the instrument's own file says its two sound horizons must not be unified",
-      "correct and NOT interchangeable" in INSTR and "Do not unify them" in INSTR)
+# ** r6931+70.1: DISCHARGED (b).  This pinned the instrument's note "correct and NOT interchangeable
+#   ... Do not unify them" -- which `main` had already replaced at `4eac0322` (r6760+cc66.1), on the
+#   line this receipt had not merged (FOR_66_FROM_60), so this check too never passed on `main`.  What
+#   replaced it is the ANSWER to the question this part left "to the paper": `rs_from` now reads
+#   "On the STACKING clock at the default ... on the LEAF clock under LEAFSCALES=1 ... so at
+#   LEAFSCALES=1 the two coincide and the instrument carries ONE sound horizon, which is what the
+#   adjudication asks for"; P15's rate rule says the scales the plasma accumulates -- "$\rs$ and
+#   $r_D$ -- take the leaf's" (settled r6899); and r6788
+#   (`P15_the_crossing_spectrum_reproduces_on_a_second_instrument_and_the_172_is_the_radiation_free_
+#   ruler`) re-read the l_A ~ 172 below as the radiation-free ruler, a different object from the
+#   comb, not a discrepancy with it.  ** So the check is re-pointed at what discharged it: the file
+#   still names two clocks and still refuses to conflate them silently (the default is unchanged,
+#   the leaf is a declared switch), and the paper has decided which one r_s rides. **  The SCAN and
+#   its two checks above are kept as the stacking-ruler measurement they are. **
+_RSF = INSTR[INSTR.find('def rs_from'):INSTR.find('\ndef ', INSTR.find('def rs_from') + 1)]
+_P15 = ' '.join(open(os.path.join(ROOT, 'corpus', 'CR_cosmology.tex'), encoding='utf-8').read().split())
+check("and the instrument's two sound horizons are now a DECLARED choice the paper has made: "
+      "`rs_from` rides the stacking clock by default and the leaf under LEAFSCALES=1, where it "
+      "coincides with the phase accumulator \"which is what the adjudication asks for\", and P15 puts "
+      "r_s on the leaf; the 172 re-read at r6788 as the radiation-free ruler",
+      "LEAFSCALES = os.environ.get('LEAFSCALES', '0') == '1'" in INSTR
+      and 'H = Hleaf if LEAFSCALES else Hphys' in _RSF
+      and 'which is what the adjudication asks for' in _RSF
+      and "the scales the plasma itself accumulates---$\\rs$ and $r_D$---take the leaf's" in _P15
+      and os.path.exists(os.path.join(HERE, 'P15_the_crossing_spectrum_reproduces_on_a_second_'
+                                             'instrument_and_the_172_is_the_radiation_free_ruler.py')))
 print("""
   ⚠ ** REPORTED, NOT RESOLVED, AND THE SCOPE LINE IS WHY. **  The body puts r_s on the LEAF rate,
     which carries radiation, while keeping D_M on the radiation-free stacking rate; `rs_from`
@@ -356,6 +400,9 @@ print(f"""
       says, to l_A about 172 rather than the body's 298.0, because the two put r_s on different rates.
       ** That gap is reported and left to the paper; the chi^2 on a comb the paper does not claim is
       not manufactured. **
+      (r6931+70.1: on `main` the knobs are cc66.4's `CRH0`/`CROM` and `WBH2`, r6786 dropping
+      `CROMBH2`; and the gap is since answered -- P15 puts r_s on the leaf, the instrument does so
+      under LEAFSCALES=1, and r6788 reads the 172 as the radiation-free ruler, not the comb.)
 
   Q3  ** Floor +{FLOOR:.1f}, difference {DIFF:+.1f}, {abs(DIFF) / abs(FLOOR):.2f} times the floor. **
       And the order's own point holds exactly: the body's Delta chi^2 = {PAPER_DIFF:.1f} is BELOW that

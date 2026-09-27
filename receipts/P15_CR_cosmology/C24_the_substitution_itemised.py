@@ -50,6 +50,13 @@ too and are not itemised here.  ** Not that the two-leg join is addressed ** -- 
 is super-horizon.
 
 Written r2686.  Stated for reversal.
+
+** r6931+70.1 (PO-59) -- ⓸'S PREMISE CORRECTED BY THE CORPUS. **  *** "Holding $\\ell_*$ fixes the onset
+redshift" is gone (r6772+66.6, `a99b7a86`): the onset was retired as a repair, the plasma is handed over at
+the branch point, $\\theta_*$ is computed, and both $r_s$ and $r_D$ are accumulated on the leaf rate, so the
+stacking-vs-leaf gap does not enter $\\theta_D/\\theta_*$ at all -- the signature is now $-0.9\\%$ at the
+common visibility-peak endpoint, set by the handover and the endpoint. ***  ⓵-⓷ stand as the arithmetic of
+the substitution; ⓸'s "+6.8% against +9.4%" is the r2686 comparison, read at the commits where it stood.
 """
 import os
 import re
@@ -110,9 +117,13 @@ def main():
     #       changed one side only. ***  Sixth repair kind.
     #   Re-pinned to the LOAD-BEARING FRAGMENT rather than the whole sentence, so an ordinary
     #   rephrase does not break it again: the rate word, the number, and the comparison.
-    check('⓵ P15 states the rate difference: "the geometric stacking rate near recombination is $13\\%$ '
-          'below the radiation-included one there"',
-          'geometric rate is' in p15 and '13\\%$ below the radiation-included one' in p15)
+    # ** r6931+70.1 (PO-59): CLASS (c), STALE -- `1a2ab59c` (r6899) rewrote "The geometric rate is
+    #    ${\\sim}13\\%$ below ..." as "the geometric one is ${\\sim}13\\%$ below the radiation-included
+    #    one at recombination" (after "\\emph{The two rates are far apart}").  Same number, same
+    #    comparison, same epoch; re-pinned to the fragment carrying all three. **
+    check('⓵ P15 states the rate difference: "the geometric one is ${\\sim}13\\%$ below the '
+          'radiation-included one at recombination"',
+          'the geometric one is ${\\sim}13\\%$ below the radiation-included one at recombination' in p15)
     h = 1 / np.sqrt(1 + 0.3)
     check(f'and at $\\rho_r/\\rho_m=0.3$ it reconstructs: $1/\\sqrt{{1.3}}={h:.4f}$, i.e. '
           f'{100*(1-h):.1f}% below',
@@ -133,18 +144,42 @@ def main():
           abs(rs - 1.140) < 0.003 and abs(rd - 1.068) < 0.003 and rs != rd)
 
     # ⓸ against the paper's number
-    check('⓸ and P15 pins $\\theta_*$: "Holding $\\ell_{*}$ to its measured value fixes the onset '
-          'redshift"',
-          'to its measured value fixes the onset redshift' in p15)
-    check(f'so only $r_D$ moves, by {100*(rd-1):+.1f}% -- against P15\'s stated $+9.4\\%$, the gap being '
-          'that the 13% is LOCAL while the integrals ACCUMULATE',
-          abs(100*(rd-1) - 6.8) < 0.3 and '9.4' in _p15_at(_BEFORE_R2755) and '8.2' in p15)
+    # ** r6931+70.1 (PO-59): CLASS (a), THE PIN FROZE THE FITTED-ONSET READING THE CORPUS RETIRED.
+    #    "Holding $\\ell_{*}$ to its measured value fixes the onset redshift" was deleted at `a99b7a86`
+    #    (r6772+66.6, "the signature's size is the handover's and its sign the endpoint's"), on the
+    #    r6770+66.3 adjudication that "the onset was a repair": the plasma is handed over at the
+    #    branch point, $\\theta_*$ is COMPUTED rather than pinned by a fitted redshift, and BOTH lengths
+    #    are accumulated on the leaf rate, so "the rate gap is not what the signature is made of".
+    #    *** So the premise of ⓸ -- $\\theta_*$ pinned, $r_D$ alone moving on the stacking rate -- is
+    #    what the corpus corrected; the check now pins the correction.  ⓷'s structural point
+    #    ($r_s\\sim H^{-1}$, $r_D\\sim H^{-1/2}$) is arithmetic and stands. ***  Passed at r6502.
+    check('⓸ [corrected r6772+66.6] P15 no longer pins $\\theta_*$ by a fitted onset: both lengths ride the '
+          'leaf rate and the signature depends on "where the plasma is handed over, and how far the '
+          'diffusion integral is carried" -- "So the rate gap is not what the signature is made of"',
+          'to its measured value fixes the onset redshift' not in p15
+          and 'Both lengths are accumulated by the plasma on the leaf rate' in p15
+          and 'where the plasma is handed over, and how far the diffusion integral is carried' in p15
+          and 'So the rate gap is not what the signature is made of' in p15)
+    # ** r6931+70.1: and the `'8.2' in p15` conjunct below was VACUOUS -- the 8.2% signature left P15
+    #    with the same revision (`a99b7a86`), and the check stayed green on an unrelated "the control
+    #    by $8.2\\%$" in sec:refit-bound.  Both historical values are now read at the commits where
+    #    they stood (c54.220's rule), and the current value is asserted on its own terms: the
+    #    signature at the common visibility-peak endpoint is $-0.9\\%$ ($+2.2\\%$ to a sharp cut). **
+    check(f'so only $r_D$ moves, by {100*(rd-1):+.1f}% -- against P15\'s then-stated $+9.4\\%$ (and r2755\'s '
+          '$8.2\\%$), the gap being that the 13% is LOCAL while the integrals ACCUMULATE; the paper now '
+          'states "$-0.9\\%$" at the common endpoint instead',
+          abs(100*(rd-1) - 6.8) < 0.3 and '9.4' in _p15_at(_BEFORE_R2755)
+          and 'That figure and the $8.2\\%$ of' in _p15_at('a99b7a86^')
+          and 'a common endpoint at the visibility peak gives $-0.9\\%$' in p15)
 
     print()
     if FAILED:
         print(f'  {len(FAILED)} check(s) FAILED')
         return 1
-    print('  VERDICT: ** the substitution is itemised, and the ratio does not cancel. **')
+    print('  VERDICT (r6931+70.1): ** ⓸\'s premise corrected -- no fitted onset pins theta_*, both lengths')
+    print('     ride the leaf rate, and the signature is -0.9% at the common endpoint (r6772+66.6).  The')
+    print('     r2686 itemisation as it stood: **')
+    print('  ** the substitution is itemised, and the ratio does not cancel. **')
     print('  ⓵ ** The rate difference reconstructs: ** 1/sqrt(1.3) = 0.877, ** 12.3% below **, matching')
     print("     P15's stated 13%.")
     print('  ⛭⛭ ⓶ ** The instrument splits cleanly: ** conformal time, sound horizon, comoving horizon')

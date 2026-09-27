@@ -51,6 +51,13 @@ an independent finite-difference pipeline agreeing to six digits:
                                                           invariant must ***
 
   ⇒ ** A linear-polarisation calculation returns zero and would have concealed it. **
+  (r6931+70.1: ON THIS CONFIGURATION -- a single TT plane wave on flat-sliced de Sitter, the two
+  channels a quarter-cycle apart for "circular".  Which polarisation gives the zero is NOT a general
+  rule: P10's caveat was corrected at r6803 (7ee029a8) because its old wording, "a linearly polarised
+  mode returns zero for it", invited reading it as one -- on a plane-wave PAIR the density goes with the
+  relative phase of the two channels and vanishes a quarter-cycle apart.  The numbers above are a
+  computed fact about this ansatz and stand; the lesson they carry is P10's current one: "the zero is a
+  property of the mode chosen and not of the geometry".)
   ⌗⌗ *** And this is not a generic caveat here: P11 carries the corpus's own chirality result --
       "chirality is the turning of the polarization plane", helicity $\\pm2$ -- so the corpus
       contains exactly the object that makes $R\\tilde R$ non-zero. ***
@@ -333,9 +340,24 @@ def main():
           'counterterm, and it is the Weyl-squared one"',
           'the shear therefore costs exactly one new counterterm, and it is the Weyl-squared one'
           in p10)
-    check('   ⚠ and P10 states the parity-odd caveat rather than leaving it to be found: "a linearly '
-          'polarised mode returns zero for it, and the corpus carries a chirality"',
-          'a linearly polarised mode returns zero for it, and the corpus carries a chirality' in p10)
+    # ** r6931+70.1: class (a), FROZE AN ERROR.  This pinned P10's "non-zero at second order for a
+    #   circularly polarised mode ... a linearly polarised mode returns zero for it, and the corpus
+    #   carries a chirality".  r6803 (7ee029a8) corrected it on node 60's item: stated as a rule it
+    #   prescribes a helicity, and which configuration gives the zero depends on the relative phase of
+    #   the channels (on a plane-wave pair, zero a quarter-cycle apart) -- so the old wording could send a
+    #   reader to the vanishing case.  What this check is about is that P10 STATES the parity-odd caveat
+    #   rather than leaving it to be found, and that the zero is a property of the mode, not the
+    #   geometry -- which this file's LINEAR-vs-CIRCULAR control demonstrates on its own ansatz.  The pin
+    #   follows the correction: the caveat as P10 now states it, its configuration clause, and the
+    #   helicity-prescribing sentence required absent. **
+    check('   ⚠ and P10 states the parity-odd caveat rather than leaving it to be found: the Pontryagin '
+          'density "can be non-zero at second order in the metric perturbation and reverses with the '
+          'handedness---so the zero is a property of the mode chosen and not of the geometry", and '
+          '"Which modes give the zero is a question about the configuration and not a general rule"',
+          ('which can be non-zero at second order in the metric perturbation and reverses with the '
+           'handedness---\\emph{so the zero is a property of the mode chosen and not of the geometry}') in p10
+          and 'Which modes give the zero is a question about the configuration and not a general rule' in p10
+          and 'a linearly polarised mode returns zero for it' not in p10)
 
     print()
     print(f'  [{time.time() - t0:.0f}s]')

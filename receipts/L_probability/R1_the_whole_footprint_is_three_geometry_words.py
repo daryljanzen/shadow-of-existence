@@ -155,7 +155,15 @@ var = wcount('variance')
 print(f"    variance word-bounded: {var}  (total x{sum(var.values())})")
 cosmic = sum(len(re.findall(r'cosmic[- ]variance', t, re.I)) for t in BODIES.values())
 print(f"    of which `cosmic variance`: x{cosmic}")
-check("cosmic variance occurs twenty-four times", cosmic, 24)
+# ** r6931+70.1: 24 -> 25, class (c) STALE -- the object and its sense are unchanged, the count
+#   moved with the low-multipole work.  Green at r6774 (`91751daa`, P07 3 + P15 19 + p0 2 = 24).
+#   r6831 (`d6fbdbf9`, "the low-multipole floor converges") took P15 19 -> 20: it added "scored
+#   against the measured multipoles with cosmic variance carried" (x2, sec:largescale and the
+#   scope summary) and dropped "... consistent with LambdaCDM within the lowest multipoles' cosmic
+#   variance. Taken together".  ** Every one of the 25 is still COSMIC variance, the genuine
+#   statistical object this verdict names, so the pin follows the measurement: P07 3 + P15 20 +
+#   p0 2. **
+check("cosmic variance occurs twenty-five times (24 before r6831's low-multipole floor)", cosmic, 25)
 print("    *** A genuine statistical object, correctly used with an exact cosmic-variance")
 print("        likelihood -- and it is the statistics-inference bake's, not this one's. ***")
 
@@ -174,9 +182,18 @@ print(f"    likelihood: {lik}  (total x{sum(lik.values())})")
 #   of the control word, describing the range of the likelihood the comparison is scored on.*
 #   ** The check fired exactly as r4532 designed it to: pinned to the measurement so a move is
 #   looked at rather than absorbed. **  Looked at, attributed to its revision, and re-pinned.
-check("the control word is found, and P15 carries twenty-four "
-      "(26 before r4111's restatement, 23 before r6427's absorption bound)",
-      lik.get('P15'), 24)
+# ** r6931+70.1: 24 -> 26 in P15, class (c) STALE -- the control's job (FIND a statistical word)
+#   is unchanged and 26 does it as well as 24 did.  Measured revision by revision on P15 since
+#   r6774 (`91751daa`, 24): r6772+66.36 (`754e76db`) took the stale refit figures out, -2 (22);
+#   r6799 (`2007dc1e`) landed the refit, +1, and r6801 (`a21467b0`) struck PO-24, -1 (22); r6839
+#   (`a1872979`) +1 (23); r6877 (`df2f380f`) +2 (25) -- "the likelihood's own covariance is
+#   propagated", twice; r6891 (`a468912a`) +1 (26) -- "Running one locator over the binned
+#   likelihood".  ** Every addition describes the Planck likelihood the spectrum is scored on:
+#   genuine uses of the control word, attributed and re-pinned in this file's idiom. **
+check("the control word is found, and P15 carries twenty-six "
+      "(26 before r4111's restatement, 23 before r6427's absorption bound, 24 before the "
+      "r6772..r6891 refit and locator)",
+      lik.get('P15'), 26)
 check("and it is the dominant carrier", max(lik, key=lik.get), 'P15')
 print("    *** The screen finds a statistical word when there is one.  The absences above")
 print("        are absences, not blindness. ***")

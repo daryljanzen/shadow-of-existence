@@ -159,6 +159,13 @@ def main():
     #   ⇒ *The object did not go anywhere: it is raised again as `38005b708a`, live and REGISTERED
     #     at PO-23, and the r4525 note on that row restates it.*  What is checked is the
     #     conservation -- exactly one of the pair is live, and it is the one the papers raise.
+    # ** r6931+70.1: LEFT RED, class (d) -- the finding holds and the REGISTER is what moved. **
+    #    `4a453403` (r6819 follow-up, "open ledger ... carried with the correction") rewrote
+    #    `corpus/open_ledger.txt` and 15 re-emitted live rows lost their `##` notes -- among them
+    #    `38005b708a`, whose note read "OPEN and carried at PO-23, restated r4525 ... SUCCEEDS
+    #    114e4d9ede".  The row still reads REGISTERED, but REGISTERED means "carried by a register row"
+    #    and the row no longer names one.  PO-23 is still live (THE_OPEN_PROBLEMS_LEDGER family 8).
+    #    Routed to node 66: restore the note.  Not loosened here.
     _PAIR = ('114e4d9ede', '38005b708a')
     check('⓵ᶜᐢ ⛭ and the retirement did not lose the object -- exactly one of '
           f'{_PAIR} is LIVE and it is the one the papers\' own scan raises, and it reads '
@@ -174,6 +181,10 @@ def main():
           closed == ['dc0202b02d', 'f36eef9790']
           and all(row(k) == (None, None, None) for k in closed)
           and reworded == ['114e4d9ede'])
+    # ** r6931+70.1: LEFT RED, class (d). **  The same `4a453403` added FOUR rows as UNVERDICTED --
+    #    0cea1492c1 (P07), f7cc119e8a, c1ff64096b, 8b92369a04 (P18) -- "the only bucket that means
+    #    work".  They are real unread qualifications; they leave by being read, not by this check
+    #    being relaxed.  Routed to node 66.
     unv = [k for k, v in led.items() if v[1] == 'UNVERDICTED']
     check(f'⓵ᵈ and nothing is left UNVERDICTED: {len(unv)}', unv == [])
 
@@ -186,10 +197,20 @@ def main():
               encoding='utf-8', errors='replace').read()
     prot = open(os.path.join(ROOT, 'PROTECTED_OPEN.md'), encoding='utf-8').read()
     kill = open(os.path.join(ROOT, 'kills', 'PO-6.md'), encoding='utf-8', errors='replace').read()
+    # ** r6931+70.1: RE-PINNED, class (c) STALE -- reworded, same claim. **  `440623b6` (r6719, the
+    #    cowork read worked across eleven papers) rewrote the tail of P07's sentence from "the latter
+    #    is a genuine open frontier of the programme's quantum sector, carried as such and to be
+    #    worked" to "the latter is the open item of the programme's quantum sector".  *The claim this
+    #    check needs is unchanged: P07 still says the shared wall does not settle it and still carries
+    #    the UV definition as OPEN in its quantum sector* -- which is the half that makes the strike's
+    #    "MET, NOT OWED" read as a label doing double duty.  Both clauses are pinned in ONE sentence so
+    #    the openness cannot be satisfied by an unrelated "open item" elsewhere in the paper.
+    _p7f = re.sub(r'\s+', ' ', p7)
     check('⓶ P07 says the shared character of the wall does NOT settle it, and that the UV '
-          'definition is "a genuine open frontier of the programme\'s quantum sector"',
-          'the shared character of the wall does not settle it' in p7
-          and 'a genuine open frontier of the programme' in p7)
+          'definition is "the open item of the programme\'s quantum sector"',
+          'But the shared character of the wall does not settle it: the quantization ambiguity this '
+          'framework fixes and the interacting theory\'s definition it does not are two different '
+          'things, and the latter is the open item of the programme\'s quantum sector' in _p7f)
     po6 = [l for l in prot.split('\n') if re.match(r'\|\s*~*\*\*PO-6\*\*', l)]
     # ** ⛭⛭⛭ AND HERE IS THE FINDING BEING ACTED ON, IN THE REGISTER ITSELF (re-pinned r3962). **
     # ** This file's whole argument is that clause ③ read "THE UV DEFINITION: MET, NOT OWED" while
@@ -288,9 +309,23 @@ def main():
     #     *An owed item that is not load-bearing is a different debt; an item that has been PAID and is
     #     not load-bearing is not a debt at all, and the section keeps its point either way.*
     _p10 = re.sub(r'\s+', ' ', p10)
-    check('⓸ P10 has since SETTLED the straddle -- "The straddle itself is now a computed fact" -- so '
-          'the item PART 4 carried as owed-but-not-load-bearing is now paid',
-          'The straddle itself is now a computed fact' in _p10
+    # ** r6931+70.1: RE-PINNED, class (b) DISCHARGED -- and pointed at WHAT discharged it. **
+    #    `440623b6` (r6719) dropped the word "now" from "The straddle itself is now a computed fact"
+    #    -- a paper presents one state, so the sentence no longer narrates its own change.  The
+    #    discharge is untouched: the sentence still cites `\rcpt{P10_the_straddle_is_computed}` and
+    #    still carries the computation (spec Gamma-hat = [gamma, infinity) with gamma <= 1/4 < 3/4).
+    #    ⇒ So the pin follows the discharge rather than the adverb: the sentence, its receipt citation,
+    #      the receipt FILE existing where it is cited, and the spectrum statement that is the
+    #      computation itself.  The old open wording must still be absent.
+    _straddle_rcpt = os.path.join(ROOT, 'receipts', 'P10_canonical_time',
+                                  'P10_the_straddle_is_computed.py')
+    check('⓸ P10 has since SETTLED the straddle -- "The straddle itself is a computed fact", citing '
+          '`P10_the_straddle_is_computed` (which exists), with spec Gamma-hat = [gamma, inf) and '
+          'gamma <= 1/4 < 3/4 -- so the item PART 4 carried as owed-but-not-load-bearing is paid',
+          'The straddle itself is a computed fact\\rcpt{P10_the_straddle_is_computed}' in _p10
+          and os.path.exists(_straddle_rcpt)
+          and '\\operatorname{spec}\\hat\\Gamma=[\\gamma,\\infty)' in _p10
+          and '$\\gamma\\le\\tfrac14<\\tfrac34$ places spectrum strictly below the threshold' in _p10
           and 'not the floor but the straddle itself as a computed fact' not in _p10)
     check('⓸ᵃ ⌗ and the half this section turns on is untouched: the closure "is supplied fibre by '
           'fibre and so cannot be broken by the size of the sub-threshold set" -- which is why the '
@@ -327,6 +362,10 @@ def main():
     # ** backlog to still exist fails when the backlog is cleared, which is the direction nobody
     # ** writes a test for. ***  Asserted as a RATCHET in the corpus's own idiom: the count may fall
     # ** to zero and stay there, and it fails if the backlog GROWS past what this file recorded.
+    # ** r6931+70.1: LEFT RED, class (d) -- exactly the case this check names. **  The one WARN is
+    #    `8c089c7d7b` (open_ledger.txt, REGISTERED, "the depth is open"): P18 now states the depth as
+    #    ESTABLISHED, the two transfers agreeing to three per cent (`4e82b053`, CR_synthesis.tex
+    #    ~l.1463).  A paper moved out from under a ledger row; the row must be retired as answered.
     warns = r.stdout.count('[WARN]')
     #   ⌗ and the bound is the MEASURED value, not a slack one.  `min(warns, 6) == warns` would pass
     #     at anything up to six and so would notice nothing; ZERO is what the gate reports, so zero

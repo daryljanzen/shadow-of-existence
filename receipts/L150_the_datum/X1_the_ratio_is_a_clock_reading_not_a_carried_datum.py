@@ -37,6 +37,20 @@ quantity a crossing can carry, because it is not a constant of the evolution on 
       the same handover, not one derived from the other.  And the observable rate is read LEFTWARD:
       "radiation and matter are inherited content read off the clock, never terms that source the
       rate".
+      (** r6931+70.1 **: the P16 "quotation" just above was never printed -- it is P16's `%`
+      masthead comment, as L237/G50 and P17_the_frontier_item_... record; it is kept verbatim because
+      that propagation finding reads it here, and is not a statement of what P16 prints.)
+      ** r6931+70.1 -- (3) AS THE CORPUS NOW STATES IT, AND IT STATES THIS RECEIPT'S ANSWER. **  The
+      r6772 P15 rewrite (the handover fork adjudicated: the crossing is the handover, the fitted onset
+      was a repair) retired the "single inherited datum" and "one-parameter accommodation" wording.
+      P15 now says the radiation amplitude at a start placed by hand "is that start read in units of
+      a density rather than an inheritance; with the plasma handed over at the branch point there is
+      no such start and no such amplitude" (r6772+66.10), and that "The cosmology carries no
+      early-universe parameter".  P16 lists the radiation amplitude as "Closed rather than open ...
+      because it changes along the leg and a quantity with no single value has no handover to
+      transmit" -- which is argument (1) here, in the paper -- and keeps eta separate: "the same
+      standard datum that fixes both the light-element abundances and the microwave-background peak
+      heights", the spacing being P15's, computed from the rate.
 
 ** ⇒ THE VERDICT: THE DATUM HALF OF p0'S FRONTIER ITEM 1 DOES NOT CLOSE BY DERIVATION FROM THE
    PROGENITOR, AND THE OBSTRUCTION IS STRUCTURAL RATHER THAN OUTSTANDING WORK. **  rho_r/rho_m at our
@@ -56,6 +70,10 @@ WHAT THIS DOES NOT CLAIM, and the distinction matters for the fork's interface:
   * It does NOT claim z_onset is undetermined; z_onset is a different quantity, fixed on the
     observable leg, and NOTHING here bears on it.  ** The fork's instrument keeps pinning z_onset
     from the measured acoustic angle, and that must be said rather than claimed past. **
+    (** r6931+70.1 **: SUPERSEDED by the corpus, not by this receipt.  The fork was adjudicated at
+    r6772: the onset was a repair, P15 carries no early-universe parameter, and the acoustic angle is
+    an output of the rate.  There is no z_onset left for this argument to leave untouched; the
+    interface check below now pins that replacement fact.)
   * It does NOT close p0's item; ** it converts the datum half from an OPEN TARGET into a CLOSED
     NEGATIVE with a stated reason, which is a different disposition and a weaker claim than closure. **
 
@@ -115,12 +133,58 @@ def main():
 
     # ---- (3) the corpus already treats it as a reading -------------------------
     p15 = flat('corpus/CR_cosmology.tex')
-    check('P15 calls it a single INHERITED datum', 'a single inherited datum' in p15)
-    check('and a ONE-PARAMETER ACCOMMODATION rather than a parameter-free prediction',
-          'one-parameter accommodation' in p15)
-    p16 = flat('corpus/cosmogenesis_paper.tex')
-    check('P16 separates it from eta: eta fixes the HEIGHTS, rho_r/rho_m the SPACING',
-          'eta fixes the abundances and the CMB peak HEIGHTS, rho_r/rho_m' in p16)
+    # ** r6931+70.1: CLASS (b) -- DISCHARGED, AND BY THE CORPUS TAKING THIS RECEIPT'S ANSWER.  The
+    #   pin was P15's "a single inherited datum" (from r2419), removed from P15 in the r6772 rewrite
+    #   (507d2e99 r6772+66.1, sec:tensions to the adjudicated handover; the last copies went at
+    #   r6772+66.28/.30 in P7 and P16).  The check was EVIDENCE that the corpus treats rho_r/rho_m
+    #   as a reading rather than a transmitted constant.  P15 now says it outright (a0dd2890,
+    #   r6772+66.10): the radiation amplitude at a start placed by hand "is that start read in units
+    #   of a density rather than an inheritance", and with the handover at the branch point "there is
+    #   no such start and no such amplitude".  ** That is this receipt's verdict -- a clock reading,
+    #   not a carried datum -- in the paper's own sentence, so the check is re-pointed at it. **
+    check('P15 treats the radiation amplitude as a READING: "that start read in units of a density '
+          'rather than an inheritance" -- and with the handover at the branch point, "no such start '
+          'and no such amplitude"',
+          'is that start read in units of a density rather than an inheritance' in p15
+          and 'there is no such start and no such amplitude' in p15)
+    # ** r6931+70.1: CLASS (a) -- THE PIN FROZE A READING THE CORPUS CORRECTED.  "one-parameter
+    #   accommodation" was the fitted-onset account of the acoustic scale; r6772+66.1 (507d2e99)
+    #   replaced it: the acoustic scale is COMPUTED, the sound horizon carrying no early-universe
+    #   parameter, the fitted-onset configuration named as a repair.  The check's role -- that the
+    #   ratio is not a parameter-free prediction carried from the progenitor -- now holds more
+    #   strongly: there is no parameter for it to be.  Pinned to the corrected sentence.
+    check('and P15 carries NO early-universe parameter for it to be: the angle is "an output of the '
+          'rate rather than a calibration of it"',
+          'There is no early-universe parameter among them' in p15
+          and 'the angle is an output of the rate rather than a calibration of it' in p15)
+    # ** r6931+70.1: P16 IS READ WITHOUT ITS COMMENTS.  The pin this replaces was satisfied by
+    #   P16's MASTHEAD, a `%` comment the paper never printed -- the instance L237/G50 records from
+    #   r2656's tree.  A claim about what the paper says is tested on what it prints.
+    _p16_raw = open(os.path.join(ROOT, 'corpus', 'cosmogenesis_paper.tex'), encoding='utf-8',
+                    errors='replace').read()
+    p16 = re.sub(r'\s+', ' ', '\n'.join(
+        (ln[:m.start()] if (m := re.search(r'(?<!\\)%', ln)) else ln)
+        for ln in _p16_raw.split('\n')))
+    # ** r6931+70.1: CLASS (a) + (b).  The pin was P16's masthead COMMENT "eta fixes the abundances
+    #   and the CMB peak HEIGHTS, rho_r/rho_m the peak SPACING" (r2419).  0960c7aa (r6772+66.30)
+    #   brought P16 to the adjudicated reading, the masthead now giving the spacing to the rate.
+    #   That rho_r/rho_m sets the spacing was the fitted-onset error and is not asserted; the
+    #   spacing's replacement fact is P15's, pinned above ("the angle is an output of the rate").
+    #   What P16 PRINTS, and what is pinned: eta is "the same standard datum that fixes both the
+    #   light-element abundances and the microwave-background peak heights ... and the one quantity
+    #   the handover supplies" -- eta separate from, not derived from, anything the clock reads --
+    #   and P16's body now closes the radiation amplitude on THIS receipt's argument (1) (acf560be
+    #   r4493, stated in the standing at 2a5bbf42 r6671): "because it changes along the leg and a
+    #   quantity with no single value has no handover to transmit".
+    check('P16 keeps eta apart: "the same standard datum that fixes both the light-element abundances '
+          'and the microwave-background peak heights ... the one quantity the handover supplies" -- and '
+          'closes the radiation amplitude because "a quantity with no single value has no handover to '
+          'transmit"',
+          'the same standard datum that fixes both the light-element abundances and the '
+          'microwave-background peak \\emph{heights}' in p16
+          and 'the one quantity the handover supplies' in p16
+          and 'a quantity with no single value has no handover to transmit' in p16
+          and 'rho_r/rho_m the peak SPACING' not in p16)
 
     # ---- and the link to the one-constant theorem ------------------------------
     p0 = flat('corpus/geometric_core_paper.tex')
@@ -146,10 +210,19 @@ def main():
     # z_{\rm onset}.  A probe defect, not a corpus defect -- the same class as r2417's line-wrap
     # miss.  ** Normalise or verify the token before asserting on it. **
     # And the sentence it found is stronger than what was being checked for.
-    check('P15 already names z_onset as its ONE FITTED PARAMETER and says its status should be '
-          'stated plainly -- so this argument does not touch it and the fork keeps pinning it',
-          'The cosmology carries one fitted parameter and its status should be stated plainly' in p15
-          and 'z_{\\mathrm{onset}}' in p15)
+    # ** r6931+70.1: CLASS (a) -- THE PIN FROZE THE FITTED-ONSET READING THE CORPUS CORRECTED.
+    #   caaf3481 (r6772+66.3, P15's abstract and introduction) replaced "The cosmology carries one
+    #   fitted parameter and its status should be stated plainly" with "The cosmology carries no
+    #   early-universe parameter, and what it does carry should be stated plainly", and
+    #   z_{\mathrm{onset}} no longer occurs in P15 (0 occurrences at r6931).  The interface
+    #   promise was "nothing here bears on z_onset"; the replacement fact is that there is no fitted
+    #   onset left to bear on, the plasma being handed over at the branch point.  The check pins
+    #   that, and the absence of the token, so a returning fitted onset would reopen the question.
+    check('P15 carries NO early-universe parameter and "what it does carry should be stated plainly" '
+          '-- the fitted onset is gone, so this argument has no z_onset to leave untouched',
+          'The cosmology carries no early-universe parameter, and what it does carry should be '
+          'stated plainly' in p15
+          and 'z_{\\mathrm{onset}}' not in p15)
 
     print()
     if FAILED:
@@ -166,9 +239,9 @@ def main():
     print('  ⇒ ** Which is the one-constant theorem\'s second face reached from the matter side:')
     print('     rho_r/rho_m IS a dimensionless magnitude, and the substrate has one invariant. **')
     print('  ⚠ NOT claimed: that the progenitor derivation is worthless (it fixes the progenitor\'s')
-    print('    own composition, turnaround and mass), that z_onset is undetermined (a different')
-    print('    quantity, untouched here -- the fork keeps pinning it from the acoustic angle), or')
-    print('    that p0\'s item CLOSES.  ** The datum half moves from OPEN TARGET to CLOSED NEGATIVE')
+    print('    own composition, turnaround and mass), or that p0\'s item CLOSES.  (The fitted onset')
+    print('    this once had to step around is gone: P15 carries no early-universe parameter.)')
+    print('     ** The datum half moves from OPEN TARGET to CLOSED NEGATIVE')
     print('     with a stated reason -- a different disposition, and a weaker claim than closure. **')
     print()
     return 0

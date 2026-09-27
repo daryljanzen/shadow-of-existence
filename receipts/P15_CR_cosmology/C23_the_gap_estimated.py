@@ -43,6 +43,14 @@ composition is not computed.  ** Not that the $13\\%$ applies across the peak ra
 "near recombination", and the peaks span a range over which $\\mathcal H$ changes.
 
 Written r2665.  Stated for reversal.
+
+** r6931+70.1 (PO-59) -- DISCHARGED, AND ANSWERED THE OTHER WAY. **  *** The run this estimate said would
+replace it is done (the transfer, r6719; the driving subtraction on this arm): the potential's grip on this
+arm is within four per cent of the control's and slightly WEAKER, not ~15% faster.  And the premise of ⓵
+is corrected by r6899 (`1a2ab59c`): the perturbations run on the leaf rate, radiation included, so the 13%
+stacking-vs-leaf gap is not a difference in $k^2/(3\\mathcal H)$ between the arms. ***  ⓷'s damping number
+($0.843$ at $r=1.082$) is likewise the retired fitted-onset configuration's; the paper's $r$ is now $0.992$.
+The ⓶ arithmetic stands as the estimate it always said it was.
 """
 import os
 import re
@@ -87,9 +95,32 @@ def main():
     #       changed one side only. ***  Sixth repair kind.
     #   Re-pinned to the LOAD-BEARING FRAGMENT rather than the whole sentence, so an ordinary
     #   rephrase does not break it again: the rate word, the number, and the comparison.
-    check('and the rate difference is the paper\'s: "the geometric stacking rate near recombination is '
-          '$13\\%$ below the radiation-included one there"',
-          'geometric rate is' in p15 and '13\\%$ below the radiation-included one' in p15)
+    # ** r6931+70.1 (PO-59): CLASS (c) for the pin, STALE -- `1a2ab59c` (r6899) rewrote "The geometric
+    #    rate is ${\\sim}13\\%$ below the radiation-included one at recombination" as "\\emph{The two
+    #    rates are far apart}: the geometric one is ${\\sim}13\\%$ below the radiation-included one at
+    #    recombination".  Same number, same comparison, same epoch; the subject became "the geometric
+    #    one".  Re-pinned to the new fragment carrying all three. **
+    check('and the rate difference is the paper\'s: "the geometric one is ${\\sim}13\\%$ below the '
+          'radiation-included one at recombination"',
+          'the geometric one is ${\\sim}13\\%$ below the radiation-included one at recombination' in p15)
+    # ** r6931+70.1 (PO-59): AND THE ESTIMATE BUILT ON IT IS DISCHARGED -- CLASS (b) -- AND ITS PREMISE
+    #    CORRECTED -- CLASS (a).  The same revision (r6899, "the rate rule settled on the leaf") puts
+    #    the perturbations on the LEAF congruence, radiation included, so the $\\mathcal H$ in
+    #    $k^2/(3\\mathcal H)$ is not the rate that is 13% lower: on the flat-LCDM arm the two rates are
+    #    identical and the assignment a no-op.  *** And the number this receipt said "a run of the
+    #    hierarchy would replace" HAS been replaced, by measurement: subtracting every coupling to the
+    #    potential shifts the control's $\\ell_1/\\ell_A$ by $0.1792$ and this arm's by $0.1717$ -- "the
+    #    potential's grip within four per cent of the control's, and slightly WEAKER rather than
+    #    stronger" -- against this estimate's ~15% faster decay. ***  The estimate's arithmetic below
+    #    is kept as what it was: a stated-model estimate, now answered and answered the other way. **
+    check('⌗ [discharged r6899/r6719] the estimate is REPLACED by the run it asked for: the perturbations '
+          '"run on the leaf congruence", and the measured driving is "the potential\'s grip within four '
+          'per cent of the control\'s, and slightly weaker rather than stronger" -- not ~15% faster',
+          'The perturbation sector runs on the leaf congruence, which is what the framework assigns '
+          'it' in p15
+          and 'Run on this arm the same subtraction gives $0.1717$' in p15
+          and '\\emph{the potential\'s grip within four per cent of the control\'s, and slightly weaker '
+              'rather than stronger}' in p15)
     check('and the decay size is the paper\'s: "by a factor of order two across the first few peaks"',
           'by a factor of order two across the first few peaks' in p15)
 
@@ -128,7 +159,10 @@ def main():
     if FAILED:
         print(f'  {len(FAILED)} check(s) FAILED')
         return 1
-    print('  VERDICT: ** the gap is ~19% down at the peaks -- an ESTIMATE, with its model stated. **')
+    print('  VERDICT (r6931+70.1): ** DISCHARGED -- the run replaced the estimate: the driving on this arm is')
+    print('     within 4% of the control\'s and slightly WEAKER (not ~15% faster), and the perturbations ride')
+    print('     the leaf rate (r6899).  The r2665 estimate as it stood: **')
+    print('  ** the gap is ~19% down at the peaks -- an ESTIMATE, with its model stated. **')
     print('  ⓵ ** The rate that drives the decay is built from the thing that differs: ** the paper gives')
     print('     k²/(3ℋ) as the rate and ** "the geometric stacking rate near recombination is 13% below the')
     print('     radiation-included one" ** as the difference.')

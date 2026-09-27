@@ -9,12 +9,23 @@ $\\so(6)\\to\\su(3)$?* ** ---it did not close."
 ** ⛭⛭ ⓵ THE FIRST TARGET IS DELIVERED, AND NOT BY REDUCING ANYTHING. **  P14: "Because the wall is a wall
 of a hinge, the construction carries three signed areal radii rather than one, so a wall crossing
 branches only the vantage that owns it and the monodromy is diagonal in the vantage basis and non-abelian
-across it; ** the smallest connected group containing the three wall monodromies and the hinge $3$-cycle
-is $SU(3)$, with the lap as its centre **."
+across it; ** the three wall monodromies and the hinge $3$-cycle generate a finite group of order $81$ in
+$U(3)$, each monodromy carrying determinant $\\omega$, whose determinant-one part is $\\Delta(27)$ and lies
+in $SU(3)$, with the lap as its centre **."  And in the body: "the smallest connected group containing the
+ratios together with the hinge three-cycle is $SU(3)$ itself".
 
   ⇒ ⛔ *** The row asks what REDUCES $\\so(6)$ to $\\su(3)$.  P14 does not reduce anything: it GENERATES
-      $SU(3)$ as the smallest connected group containing three monodromies and a $3$-cycle.  The status
-      line has been asking after a route the corpus did not take. ***
+      from three monodromies and a $3$-cycle a finite group whose unimodular part, $\\Delta(27)$, sits in
+      $SU(3)$, and $SU(3)$ is the smallest connected group containing it.  The status line has been
+      asking after a route the corpus did not take. ***
+
+** r6931+70.1: ⓵ WAS WRITTEN ON AN ERROR THE CORPUS HAS SINCE CORRECTED. **  At r2626 P14 said "the
+smallest connected group containing the three wall monodromies and the hinge 3-cycle is SU(3)".  Each
+wall monodromy has determinant omega, so they generate a FINITE group of order 81 in U(3), not SU(3);
+corrected at r6707 (3b921b95, body) and r6719 (440623b6, abstract).  The verdict survives in corrected
+form: what the first target receives is colour's DISCRETE content -- Delta(27) inside SU(3), with SU(3)
+its connected closure -- still by generation and not by reduction, and still opposite to su(2)_L,
+which receives a discrete swap and no chiral action.
   ⌗ ** And the module is named too: ** "the module the operator's colour structure acts on is ** the
     branching ** rather than any bundle of the substrate."
 
@@ -22,8 +33,8 @@ is $SU(3)$, with the lap as its centre **."
 isospin as a gauging: $T$ is a discrete horn swap and delivers a species label, not $SU(2)_L$'s chiral
 action **, the two occupations differing on the right-handed pair."
 
-  ⇒ ** So the two halves of one target column have OPPOSITE verdicts: ** *** $\\su(3)$ is built as a
-    structure on the cut; $\\su(2)_L$ is not, and the reason is that what the geometry supplies is a
+  ⇒ ** So the two halves of one target column have OPPOSITE verdicts: ** *** $\\su(3)$'s discrete content is
+    built on the cut (Delta(27) in SU(3)); $\\su(2)_L$ is not, and the reason is that what the geometry supplies is a
     DISCRETE SWAP where a gauging needs a CHIRAL ACTION. ***
 
 ** ⓷ AND THE ROW'S SCOPE IS WIDER THAN WHAT REMAINS. **  r2608 recorded P14's own reduction: "So the
@@ -37,7 +48,7 @@ supplies."
 cut" but "$\\su(2)_L$ AS A GAUGING -- a chiral action where the geometry currently supplies a discrete
 swap." ***  ** One target, and its obstruction is named rather than open-ended. **
 
-WHAT IS NOT CLAIMED.  ** Not that $SU(3)$ is delivered as a FORCE ** -- "the bundle above is flat, so the
+WHAT IS NOT CLAIMED.  ** Not that colour is delivered as a FORCE ** -- "the bundle above is flat, so the
 construction supplies colour's exact selection rules and no force---it quantises and does not couple",
 which is `PO-5`'s remaining half and not this one.  ** Not that the horn swap cannot become a gauging **
 -- P14 says what it currently delivers, not what it forecloses.  ** Not that the $\\so(6)$ question is
@@ -87,11 +98,24 @@ def main():
     check('and its status asks a REDUCTION question: "what reduces $\\so(6)\\to\\su(3)$?"',
           'what reduces $\\so(6)\\to\\su(3)$' in row)
 
-    # ⓵ SU(3) is generated, not reduced
-    check('⛭⛭ ⓶ and P14 GENERATES it instead: "the smallest connected group containing the three wall '
-          'monodromies and the hinge $3$-cycle is $SU(3)$, with the lap as its centre"',
-          'the smallest connected group containing the three wall monodromies and the hinge $3$-cycle '
-          'is $SU(3)$' in p14 and 'with the lap as its centre' in p14)
+    # ⓵ colour's discrete content is generated (Delta(27) in SU(3)), not reduced
+    # ** r6931+70.1: class (a), FROZE AN ERROR.  This pinned "the smallest connected group containing
+    #   the three wall monodromies and the hinge $3$-cycle is $SU(3)$".  The monodromies have determinant
+    #   omega and generate a finite group of order 81 in U(3); corrected at r6707 (3b921b95, body) and
+    #   r6719 (440623b6, abstract).  The check is about P14 reaching SU(3) by GENERATION rather than by
+    #   reducing so(6); it still does, in corrected form -- the determinant-one part Delta(27) lies in
+    #   SU(3), and the smallest connected group containing the ratios with the three-cycle is SU(3).
+    #   The pin follows the correction and requires the old sentence gone. **
+    check('⛭⛭ ⓶ and P14 GENERATES instead: "the three wall monodromies and the hinge $3$-cycle generate a '
+          'finite group of order $81$ in $U(3)$ ... whose determinant-one part is $\\Delta(27)$ and lies in '
+          '$SU(3)$, with the lap as its centre", SU(3) being the smallest connected group containing the '
+          'ratios and the three-cycle',
+          'the three wall monodromies and the hinge $3$-cycle generate a finite group of order $81$ in $U(3)$' in p14
+          and 'whose determinant-one part is $\\Delta(27)$ and lies in $SU(3)$, with the lap as its centre' in p14
+          and ('the smallest connected group containing the ratios together with the hinge three-cycle '
+               'is $SU(3)$ itself') in p14
+          and ('the smallest connected group containing the three wall monodromies and the hinge '
+               '$3$-cycle is $SU(3)$') not in p14)
     check('with the module named: "the module the operator\'s colour structure acts on is the branching '
           'rather than any bundle of the substrate"',
           "the module the operator's colour structure acts on is the branch" in p14)
@@ -116,11 +140,12 @@ def main():
         return 1
     print("  VERDICT: ** PO-4's two targets have OPPOSITE verdicts, and its status line asks after a")
     print('  route the corpus did not take. **')
-    print('  ⛭⛭ ⓵ ** $\\su(3)$ IS DELIVERED, and not by reducing anything: ** "the smallest connected')
-    print('     group containing the three wall monodromies and the hinge 3-cycle is SU(3), with the lap')
-    print('     as its centre".')
-    print('     ⇒ ⛔ ** The row asks what REDUCES so(6) to su(3).  P14 GENERATES SU(3).  The status line')
-    print('       has been waiting on a route the corpus did not take. **')
+    print('  ⛭⛭ ⓵ ** $\\su(3)$\'s DISCRETE CONTENT IS DELIVERED, and not by reducing anything: ** the three')
+    print('     wall monodromies and the hinge 3-cycle generate a finite order-81 group in U(3) whose')
+    print('     determinant-one part Delta(27) lies in SU(3), with the lap as its centre.')
+    print('     ⇒ ⛔ ** The row asks what REDUCES so(6) to su(3).  P14 GENERATES, and SU(3) is the connected')
+    print('       closure of what it generates.  The status line has been waiting on a route the corpus')
+    print('       did not take. **')
     print('  ⛔ ⓶ ** $\\su(2)_L$ IS NOT, and the reason is one clause: ** "T is a discrete horn swap and')
     print("     delivers a species label, ** not SU(2)_L's chiral action **\".")
     print('  ⓷ ** And the sector\'s own count is reduced: ** "the undelivered content is ** two items and')
