@@ -3032,3 +3032,119 @@ bit-identical **unset on both arms** and **set on the control** — two differen
 the rate identity showing in a second place and the one-sidedness of the whole finding in one result.*
 
 ⌗ *PR **#94**, new draft, because #92 merged. Subscribed.*
+
+
+---
+
+# ⛭⛭⛭ `cc66.44` — THE ARBITER'S RESOLUTION IS FOUR MULTIPOLES, AND THE SKY IS OUTSIDE THE FAMILY
+
+*`r6929` filled. `VISLEAF` is a **fraction** now, $f=0$ the stacking clock and $f=1$ the leaf's, and the
+weighting on $\mathrm d\tau$ is $1+f(\mathrm{Jac}-1)$. **The endpoint is a separate branch on purpose** —
+$1+1\cdot(\mathrm{Jac}-1)$ is not $\mathrm{Jac}$ in floating point — so $f=1$ takes the `r6925` expression
+character for character, and it reproduces your banked `VISLEAF=1` spectra **bit for bit**, both the real
+one and the injection. $f=0$ reproduces the banked reported spectrum to the `KSLICE` sum's own rounding.*
+
+## ⛭⛭ EVERYTHING IS LINEAR IN THE PARAMETER, AND THE WHOLE FAMILY IS FOUR MULTIPOLES WIDE
+
+| $f$ | $\ell_1$ | $\ell_1/\ell_A$ | $P_1/P_2$ | contrast | its $q$-slope | its s.e. | band residual |
+|---|---|---|---|---|---|---|---|
+| 0 | 221.953 | 0.73543 | 2.141 | 1.0584 | $+0.01042$ | 0.00284 | 0.0089 |
+| 0.1 | 222.356 | 0.73677 | 2.128 | 1.0567 | $+0.00913$ | 0.00275 | 0.0086 |
+| 0.25 | 222.968 | 0.73880 | 2.109 | 1.0541 | $+0.00727$ | 0.00392 | 0.0123 |
+| 0.5 | 224.008 | 0.74224 | 2.078 | 1.0501 | $+0.00436$ | 0.00713 | 0.0223 |
+| 0.75 | 225.073 | 0.74577 | 2.048 | 1.0463 | $+0.00178$ | 0.01063 | 0.0333 |
+| 1 | 226.163 | 0.74938 | 2.017 | 1.0429 | $-0.00039$ | 0.01410 | 0.0441 |
+
+*(The sky: $0.7312$ and $2.217$. $\mathrm dr_s/\mathrm d\chi$ runs $0.396733\to0.396957$ across the same
+family — your $12.80$ per cent becoming $12.75$, reproduced exactly at both endpoints — and $\ell_A$ does
+not move at all, so $\ell_1/\ell_A$ is $\ell_1$ in other units.)*
+
+$\ell_1 = 221.93 + 4.21f$ to **three hundredths of a multipole**, so the family carries one number and the
+scan is not hiding structure between its points. Its whole span is $0.01395$ in $\ell_1/\ell_A$ —
+**$4.2$ of the sky's one-multipole locating widths, $2.1$ of its two-multipole ones**.
+
+⇒ ***The comb pins $f$ to $\pm0.24$. It separates the family's ends and comes nowhere near fixing the
+clock.*** *That is the answer to what you actually asked: the arbiter discriminates, and it discriminates
+weakly.*
+
+## ⛔ YOUR FIRST BRANCH IS HALF RIGHT, AND THE HALF THAT FAILS IS WORTH MORE
+
+*You guessed steep comb, shallow contrast.* The contrast's **level** is shallow — $1.75\sigma$ of its own
+band scatter against the comb's $4.21$ — **but its $q$-slope is not**: $+0.01042\to-0.00039$ is
+$3.80\sigma$ of its own fit error, the comb's statistical equal.
+
+⇒ ⛭ ***What separates them is not steepness. It is that the contrast's error GROWS with the parameter and
+the comb's does not.*** *Band residual $0.0089\to0.0441$, slope standard error $0.00284\to0.01410$ — a
+factor five each — because moving `ETA_LS` moves $r_s(\mathrm{ETA\_LS})$ and a band ratio of two
+oscillations no longer aligned in $q$ reads their phase mismatch. **`cc66.40`'s guard, fourth firing.**
+The injection degrades the same way, so it is the statistic's response to the comb moving and not
+something in the plasma. The comb's locating width is identical at both ends.*
+
+## ⛭⛭⛭ AND THE DECIDING RESULT IS NOT ABOUT THE CHOICE AT ALL
+
+**The sky's $0.7312$ sits at $f=-0.304$ on the family's own straight line** — on the far side of the
+stacking clock, outside both admissible assignments.
+
+⇒ ***No interior fraction fits the comb better than the endpoint the instrument already uses.*** *Your
+third branch does not arise: there is no fitted clock to declare and the no-early-parameter claim is not
+asked to answer for one.* The best point in the family is $f=0$, and ⇒ ***the residual first-peak
+disagreement cannot be absorbed by the clock assignment, because the direction it would need is not
+admissible.***
+
+⚑ *And $P_1/P_2$ is a **second** external referent, independent of $\ell_1$, and it agrees:
+$2.141\to2.017$ against $2.217$. Both are best at $f=0$; neither is being traded against the other.*
+
+## ⚑ YOUR GUARD, SEPARATED THREE WAYS RATHER THAN DEFERRED
+
+*The injection is a $\cos(k r_s)$ source with no plasma dynamics in it, which is what makes this a
+measurement instead of an attribution:*
+
+| share of the comb's motion | $\mathrm d\ell_1/\ell_1$ | multipoles | share |
+|---|---|---|---|
+| the peak relocating through $r_s(\mathrm{ETA\_LS})$, $146.099\to145.241$ | $+0.591\%$ | $+1.311$ | **31%** |
+| the visibility's re-weighting of the kernel (injection, above that) | $+0.175\%$ | $+0.388$ | **9%** |
+| the plasma's own acoustic phase (real spectrum, above the injection) | $+1.131\%$ | $+2.510$ | **60%** |
+
+⇒ ***The comb's motion is NOT mostly the peak relocating. Three fifths of it is the plasma responding to
+the re-weighted optical depth.***
+
+## ⚠ AND TWO OF MY OWN `cc66.43` NUMBERS WERE GRID-LIMITED. I AM CORRECTING THEM HERE
+
+*The $220\to228$ I reported to you is **one `LSTEP=8` bin step**, and $0.7290\to0.7555$ is its
+consequence.* Sub-bin — locator validated first on the banked `LSTEP=1` spectrum, where it recovers the
+fine-grid $\ell_1$ to $0.004$ of a multipole — the motion is $221.95\to226.16$ and
+$0.73543\to0.74938$: **the direction survives, the magnitude was overstated $1.9\times$, and the sign of
+the arm's offset from the sky at $f=0$ flips — the arm sits $1.28$ multipoles ABOVE the sky, not below.**
+
+⌗ *And the FWHM's $43.591\to43.952$ I quoted is exactly **one step** of the $\eta$ grid, and the value
+jitters non-monotonically across the family — **so the width's motion was never resolved**, while
+`ETA_LS`'s (six steps, monotone) and $r_D$'s ($-4.1$ per cent, smooth) are. The paper's sentence and the
+register's row now carry the refined numbers.*
+
+## ⛭ THE SWITCH GUARD IS STANDING, AS YOU ASKED, AND IT COST LESS THAN THE ONE-OFF
+
+*The instrument prints a `__SWITCHES__` line naming every switch in its environment, and **the inventory
+is read off its own source** rather than hand-maintained: `r3512`'s flag inventory was wider than the
+code, and a list derived from the `os.environ` reads cannot drift from them — so **`VISLEAFF=1` is absent
+from the marker and fails the guard instead of running silently**. `switch_smoke.sh` checks every
+assignment in one import, no solver and no projection; this launcher smoke-tests every distinct
+environment before the set goes out and checks every slice's own log after, and a slice whose environment
+did not arrive is not marked done.*
+
+⚠ ***What it cannot catch is written where it is built:*** *it proves the environment ARRIVED and that the
+name is one the instrument reads. It does not prove the value reached the physics — that is the knob
+shadow, and it takes a differential, not a print. I would rather that limit be in the file than in a
+message.*
+
+⛔ **BOUND, HELD.** *No verdict on the two-rate assignment — the row's question, and this is evidence
+toward it. $f<0$ is the family's line **extrapolated**, reported because you asked what the comb can
+decide, not offered as a candidate: the family is bounded by the two clocks. The sky's locating width is
+P15's own and is not re-derived here. The injected runs are not spectra of this model. No mechanism beyond
+`cc66.42`'s, nothing touches `prop:flat`, no refit.*
+
+⌗ *Forty-two gates; receipt
+`P15_the_combs_resolution_is_four_multipoles_and_the_skys_own_value_lies_outside_the_family.py`; banks at
+`spectra/r6929_*`; launchers at `r6929_directions/`. `r6925`'s receipt keeps `GATES: ALL PASS` with its
+source-text gate reading the two lines that replaced the flag's single read.*
+
+⌗ *PR **#96**, draft, opened before the scan finished so the machinery could be read early. Subscribed.*

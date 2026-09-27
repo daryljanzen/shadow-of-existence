@@ -493,13 +493,59 @@ def band_violations(root=None):
         #   ⇒ *** A revision number lying in ANOTHER DECLARED node's half is that node's by
         #       construction.  Exempted, and the exemption is narrow: it requires the other
         #       half to be DECLARED in _PARITY_BY_NODE, so an undeclared line still fires. ***
-        _other_halves = {v for k, v in _PARITY_BY_NODE.items()
-                         if v is not None and k != _NODE and v != PARITY}
+        #
+        #   ⛔⛔ r6937 (66, on node 70's r6931+70.1): ** THAT EXEMPTION WAS NOT NARROW -- IT WAS
+        #     TOTAL, AND THE PREVENTION COULD NOT FIRE FOR THREE THOUSAND REVISIONS. **
+        #     *There are exactly two halves.  Once BOTH are declared -- 60 even, 66 odd -- the set
+        #     `_other_halves` contains the only parity an out-of-band id can have, so
+        #     `n % 2 not in _other_halves` is FALSE for every out-of-band commit and the branch is
+        #     unreachable.*  ⇒ *** The r6511 note reasoned about the exemption's PRECONDITION (the
+        #     other half must be declared) and never asked what the exemption ADMITS once it is.
+        #     A guard whose escape hatch covers its whole domain is not a narrow guard. ***
+        #     ⌗ *Found by `L256/B1`, which builds two unmerged commits and expects the even band to
+        #     flag one: green at r6502, red from r6511, and red for the right reason the whole time.*
+        #
+        #   ⇒ ** THE NARROWING, WHICH IS NODE 70's AND IS ADOPTED: exempt a commit only when some
+        #     remote-tracking ref OTHER than the trunk and this branch's own contains it. **  That is
+        #     provably another line's PUSHED work, which is the fast-forward case r6511 was written
+        #     for -- and it is what "another node's by construction" was reaching for, stated as a
+        #     fact about the object rather than as an arithmetic about parities.
+        #     ⚠ *An out-of-band id that no other line has pushed now FIRES, which is the prevention
+        #     doing its job before the number reaches the trunk.*
+        #     ⌗ *`git branch --remotes --contains` is one call per candidate and only out-of-band
+        #     commits are candidates, so the cost is paid only when something is already wrong.*
         if m and int(m.group(1)[1:]) % 2 != PARITY \
                 and m.group(1) not in BAND_GRANDFATHERED \
-                and int(m.group(1)[1:]) % 2 not in _other_halves:
+                and not _pushed_by_another_line(sha, root or ROOT):
             out.append((sha, m.group(1), m.group(2).strip()))
     return out
+
+
+def _pushed_by_another_line(sha, root):
+    """** Is `sha` contained in a remote branch that is neither the trunk nor this branch's own? **
+
+    *That is the one fact the r6511 exemption actually wanted: a commit another line has PUSHED is
+    that line's, whatever half its number falls in, and a fast-forward of it onto this tree does not
+    make it this line's violation.*  ⛔ *Returns False on any git failure -- an exemption that cannot
+    be established is not granted, which is the direction a guard's uncertainty has to fall.*
+    """
+    r = subprocess.run(['git', 'branch', '--remotes', '--contains', sha],
+                       cwd=root, capture_output=True, text=True)
+    if r.returncode != 0:
+        return False
+    own = subprocess.run(['git', 'rev-parse', '--abbrev-ref', 'HEAD'],
+                         cwd=root, capture_output=True, text=True)
+    own_name = own.stdout.strip() if own.returncode == 0 else ''
+    trunk = UPSTREAM.split('/')[-1] if '/' in UPSTREAM else UPSTREAM
+    for ln in r.stdout.split('\n'):
+        ref = ln.strip().lstrip('* ').strip()
+        if not ref or '->' in ref:
+            continue
+        short = ref.split('/', 1)[1] if '/' in ref else ref
+        if short == trunk or short == own_name:
+            continue
+        return True
+    return False
 
 
 #: ⛭⛭⛭ ** THE PARITY RUN ON THE TRUNK -- r3640 (`L-`), 60, after the band's first real break. **

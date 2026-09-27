@@ -239,9 +239,25 @@ def main():
     check('⓸ the check reads `origin/main..HEAD` -- this line\'s own unmerged commits, the only '
           'ones whose numbers can still be changed', "f'{UPSTREAM}..HEAD'" in src
           and 'not yet reached the shared trunk' in src)
-    v = C.band_violations()
-    check(f'⓸ᵇ and this tree is in band: {len(v) if v is not None else "no upstream"} violation(s)',
-          v == [])
+    # ** ⛔⛭ r6937 (66, on this file's own report): THIS CHECK WAS PASSING BECAUSE THE
+    #   EXEMPTION WAS TOTAL, AND IT BREAKS THE MOMENT THE PREVENTION WORKS. **
+    #   *This file sets `NODE=60` at the top so PART 4's seed exercises the EVEN band on a built
+    #   subject.  `band_violations()` on the LIVE tree then judges this tree against the OTHER
+    #   node's half -- and node 66's unmerged odd-numbered work is out of band for node 60 by
+    #   construction.*  ⇒ *** Under the r6511 exemption every out-of-band id was exempt, so the
+    #   impersonation was invisible and this read as a statement about this tree.  With r6937's
+    #   narrowing it is a statement about the wrong half. ***
+    #   ⌗ *The impersonation is for the SEED, which builds its own repository; the live tree must
+    #   be judged on the half it actually holds.*  Restored afterwards, the way the seed does.
+    _saved = C.PARITY
+    try:
+        C.PARITY = C._PARITY_BY_NODE['66']
+        v = C.band_violations()
+    finally:
+        C.PARITY = _saved
+    check(f'⓸ᵇ and this tree is in band AT ITS OWN DECLARED PARITY, not at the half this file '
+          f'impersonates for the seed: {len(v) if v is not None else "no upstream"} violation(s)',
+          v == [] and C.PARITY == _saved)
     # ** ⛔⛭⛭ THE SEED BUILDS ITS OWN REPOSITORY NOW, AND IT HAD TO (r3996). **  It used to flip the
     # ** parity and read `band_violations()` on the LIVE tree -- which measures `origin/main..HEAD`,
     # ** this line's UNMERGED commits.  *** The moment this line's work merges, that set is EMPTY,

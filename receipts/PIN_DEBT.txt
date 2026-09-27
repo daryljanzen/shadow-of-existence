@@ -107,9 +107,9 @@ declared pynucastro environment pair, so the real debt is 81.
     located the runner's verdict with an UNANCHORED `re.search` for
     `(\d+) pass, (\d+) fail, (\d+) over timeout, in (\d+)s`, and `re.search` returns the FIRST
     match.  The runner captures each receipt's stdout into the same file --- and
-    `L237/G50_a_success_message_printed_by_a_different_command_than_the_one_it_describes`
-    SEEDS A FAKE RUNNER to test this very gate, printing `0 pass, 1 fail, 0 over timeout,
-    in 0s` while it does so.  *** So the gate built because a runner printed a verdict that
+    `L237/G50_the_receipt_runner_gate_was_green_because_its_cache_had_no_expiry`
+    RUNS THE REAL RUNNER on `--only L150_the_datum` to test this very gate, so its verdict
+    line covers one receipt and not the set.  *** So the gate built because a runner printed a verdict that
     was not about the set has been reading a verdict that was not its own --- and on this
     run it reported 849 receipts unaccounted for on a suite that had accounted for all
     850. ***
@@ -122,9 +122,15 @@ declared pynucastro environment pair, so the real debt is 81.
     returns `0 pass, 1 fail` from line 54 and the anchored one `766 pass, 83 fail` from
     line 177. **
 
-  ⚠ ** HOW LONG THE RATCHET HAS BEEN LOOSE, STATED RATHER THAN GUESSED. **  `L237/G50`
-    was added 2026-08-14 (`d623f87d`, `r2656+c54.208`).  From the first suite run that
-    captured its output, this gate has been reading that seeded line.  *The head above is
+  ⛔ ** HOW LONG THE RATCHET HAS BEEN LOOSE IS NOT ESTABLISHED, AND r6921 SAID IT WAS.**
+    *That entry read the date off `d623f87d` (2026-08-14), the commit that ADDED G50's
+    `--only` invocation, and called it "stated rather than guessed".*  ⛔ ** A file's
+    creation date does not date a gate's misreading. **  The misread needs a suite run to
+    capture G50's output AND the coverage check, which arrived at r6476 -- and node 70
+    measured G50 GREEN at both r6502 and r4287, so it was not failing then.  *** The honest
+    statement is that the start is unmeasured. ***  What IS measured is 70's own six-head
+    sweep: of the 79 that failed at head, 55 were last green at r6502 and 9 at r6774, and
+    all were red at r6921.  *The head above is
     the last verdict the gate reached honestly, and it is not edited: the rule is that the
     baseline moves DOWNWARD only.*
 

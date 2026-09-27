@@ -177,10 +177,10 @@ $$\rho\simeq5.4\times10^{-2},\qquad \left.\frac{\rho_r}{\rho_m}\right|_{\rm max}
 about $2.5\times$ the observable leg's present value. It began as an assertion — one bead with one
 integration constant, plus a crossing photon–baryon plasma — and ended as a **derivation**: in spherical
 collapse a small perturbation shares its background's composition, so the patch's equality is the ambient
-universe's. The arithmetic closes to three figures, $1.492$ Mpc against $1.490$.
+universe's. The arithmetic closes to four figures, $A\rho^2/4=1.4904$ Mpc against $1.4905$.
 
 And with it, two numbers the progenitor never had: **it turns around at $z\simeq1.5$** — an ordinary
-structure-formation epoch — **with a mass of $4.3\times10^{52}$ kg**, comparable to this universe's own
+structure-formation epoch — **with a mass of $4.17\times10^{52}$ kg**, comparable to this universe's own
 matter content. *Which is what "the matter of our hot dense era is that previous universe's collapsed
 matter" requires, and the first time that sentence met a number.*
 

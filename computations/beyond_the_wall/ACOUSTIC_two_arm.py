@@ -37,6 +37,7 @@ Env: NK (modes, default 260), LMAXL (default 1300), RTOL, NOPROJ=1 (comb only, n
      LRSFROM=start its sound-horizon convention -- the two halves of a symmetric comparison.
 """
 import os
+import re
 import sys
 
 import numpy as np
@@ -47,6 +48,25 @@ from scipy.signal import argrelextrema
 from scipy.special import spherical_jn
 
 C = 299792.458
+
+# ⛭⛭⛭ ** THE SWITCH MARKER -- r6929+cc66.44, and it is STANDING rather than per-launcher. **
+# *`r6925`'s launcher dropped its extra environment through a positional-argument bug and thirty-six
+# slices ran as plain `VISLEAF=0`: they COMPLETED, reported nothing wrong, and reproduced the banked
+# spectra, which is exactly the shape that gets banked as an answer.*  ⇒ 66's instruction: any switch
+# whose effect is a bit-difference should print a marker and its launcher should FAIL if the marker
+# is absent -- built once here rather than once per launcher.
+#   ⛭ ** THE INVENTORY IS READ OFF THIS FILE'S OWN SOURCE and never hand-maintained. **  `r3512`'s
+#     flag inventory was WIDER than the code and that is how a knob shadow hides; a list derived from
+#     the `os.environ` reads themselves cannot drift from them, and a name the source never reads is
+#     therefore absent from the marker -- so `VISLEAFF=1` fails the guard instead of running silently.
+#   ⚠ ** AND WHAT IT CANNOT CATCH IS STATED WHERE IT IS BUILT: it proves the environment ARRIVED and
+#     that the name is one this file reads.  It does NOT prove the value reached the physics -- that
+#     is the knob shadow (`r4558`, `cc66.36`) and it takes a DIFFERENTIAL, not a print. **
+SWITCH_NAMES = tuple(sorted(set(re.findall(
+    r"os\.environ(?:\.get)?[(\[]\s*'([A-Z][A-Z0-9_]*)'", open(__file__).read()))))
+print("__SWITCHES__ " + " ".join(f"{n}={os.environ[n]}" for n in SWITCH_NAMES if n in os.environ),
+      flush=True)
+
 ARM = os.environ.get('ARM', 'lcdm')
 NODRIVE = os.environ.get('NODRIVE', '0') == '1'
 DR = 0.0 if NODRIVE else 1.0                  # the driving switch, multiplying EVERY coupling
@@ -476,11 +496,22 @@ _tp = np.maximum(taup_of(_egrid), 0.0)
 # ⚠ ** AND IT IS NOT A NO-OP ON THE CONTROL EITHER, in the sense that matters: there Jac == 1 by the
 #   rate identity, so it is bit-identical THERE and only there. **  Default unset = byte-identical on
 #   both arms, which is gated.
-_VISL = os.environ.get('VISLEAF', '0') == '1'
+# ⛭⛭⛭ ** AND AT r6929+cc66.44 IT IS A FRACTION RATHER THAN A FLAG, because the comb was promoted
+#   to arbiter and an arbiter needs its RESOLUTION stated before it decides anything. **
+#   *`VISLEAF=f` weights `d(tau)`'s measure by `1 + f (Jac - 1)`, so f=0 is the stacking clock, f=1
+#   is the leaf's, and the assignment is scanned CONTINUOUSLY instead of read at two settings.*
+#   ⚠ ** THE ENDPOINT IS ITS OWN BRANCH ON PURPOSE. **  `1 + 1*(Jac - 1)` is not `Jac` in floating
+#     point, and `r6925`'s banked `VISLEAF=1` spectra are the comparison the scan's endpoint is read
+#     against -- so f == 1 takes the r6925 expression UNCHANGED and the bit-identity is gated.
+_VISLF = float(os.environ.get('VISLEAF', '0'))
+_VISL = _VISLF != 0.0
 _dTau = np.diff(_egrid)
-if _VISL:
+if _VISLF == 1.0:
     _dTau = _dTau * 0.5 * (np.asarray(Jac_of(_egrid[1:]), float)
                            + np.asarray(Jac_of(_egrid[:-1]), float))
+elif _VISL:
+    _Jm = 0.5 * (np.asarray(Jac_of(_egrid[1:]), float) + np.asarray(Jac_of(_egrid[:-1]), float))
+    _dTau = _dTau * (1.0 + _VISLF * (_Jm - 1.0))
 _tau = np.concatenate([[0.0], np.cumsum(0.5 * (_tp[1:] + _tp[:-1]) * _dTau)])
 _tau = _tau[-1] - _tau                                      # tau(eta), zero today
 tau_of = CubicSpline(_egrid, _tau)
