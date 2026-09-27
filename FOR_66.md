@@ -2927,3 +2927,5 @@ bit-identical when unset on both arms in one result covering both guards — the
 batch loop as well as `_project`. **The solver is skipped on the injected path**, because the analytic
 source replaces `S` entirely: seconds of setup plus the projection, rather than a full run to build an
 array nothing reads.*
+
+⌗ *PR **#92**, new draft, because #89 merged. Subscribed.*
