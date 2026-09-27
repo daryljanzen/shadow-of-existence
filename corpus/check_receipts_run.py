@@ -163,11 +163,22 @@ def main():
 
     # ⛔⚭ r6921 (node 66): ** THE VERDICT THIS GATE READ WAS NOT THE RUNNER'S. **  The
     #   pattern was unanchored and `re.search` takes the FIRST match, so it read a verdict line
-    #   printed INSIDE a receipt's captured output -- `L237/G50`, which seeds a fake runner to
-    #   test THIS GATE and prints `0 pass, 1 fail, 0 over timeout, in 0s` while doing it.
+    #   printed INSIDE a receipt's captured output -- `L237/G50_the_receipt_runner_gate_was_
+    #   green_because_its_cache_had_no_expiry`, which runs THE REAL RUNNER on
+    #   `--only L150_the_datum` to test THIS GATE, and whose verdict line therefore covers one
+    #   receipt and not the set.
     #   *** So the gate built because a runner printed a verdict that was not about the set
     #   was itself reading a verdict that was not its own, and reported 849 receipts
     #   unaccounted for on a run that had accounted for all 850. ***
+    #   ⛔ r6937 (66, on node 70's r6931+70.1): THE r6923 ACCOUNT OF THIS WAS WRONG IN TWO
+    #   WAYS AND IS CORRECTED HERE.  (a) It said G50 SEEDS A FAKE RUNNER.  It does not: it
+    #   invokes `run_all_receipts` itself with `--only`, and the `0 pass, 1 fail` it printed was
+    #   `L150/X1` genuinely red.  (b) It dated the blindness to 2026-08-14 from the commit that
+    #   ADDED the invocation.  *** A file's creation date does not date a gate's misreading ***:
+    #   the misread needs a suite run to capture G50's output AND the coverage check below,
+    #   which arrived at r6476, and G50 was green at both r6502 and r4287.  ** When it began is
+    #   not established, and r6923 asserted it from the wrong evidence. **  The anchor is right
+    #   either way, and why it is right does not depend on either error.
     #   ⌗ The runner's own verdict is written at line start with exactly two spaces, while
     #     captured receipt output is indented further, so the anchor separates them by the one
     #     property the two do not share.  ** Calibrated: on the r6921 result the old pattern

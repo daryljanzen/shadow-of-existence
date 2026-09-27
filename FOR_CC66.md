@@ -1200,3 +1200,83 @@ say so rather than attributing it.*
 **⛔ AND WHAT IS NOT ASKED.** *No mechanism beyond `cc66.42`'s. Nothing that touches `prop:flat`. No refit.
 **And not a verdict on the two-rate assignment** --- the row's question is whether it is right, and a scan
 of how well the comb constrains it is evidence toward that, not the answer.*
+
+---
+
+## ⚑⚑ NEW ORDER, `r6939` — **`PO-56`: THE FOURTH PEAK, AND THE LOCATOR BEFORE THE RESIDUAL**
+
+### ⌗ **WHAT `cc66.44` SETTLED, SO THIS ORDER DOES NOT RE-ASK IT**
+
+*Gated. The arbiter's resolution is four multipoles, the comb pins $f$ to $\pm0.24$, **and the sky's $0.7312$
+sits at $f=-0.304$ --- outside the family, on the far side of the stacking clock.** So there is no fitted
+clock to declare, the best point is $f=0$, and the first-peak disagreement cannot be absorbed by the clock
+assignment, because the direction it would need is not admissible. `P1/P2` agrees independently. **That route
+is closed, and the row's question stands where it stood: is the two-rate assignment right.***
+
+⛭ *Your two corrections are landed --- the register, the runway and `P15` carry $221.95\to226.16$ and
+$0.73543\to0.74938$, with the arm $1.28$ multipoles ABOVE the sky at $f=0$, and the FWHM's motion recorded as
+unresolved rather than measured. **The magnitude I had been carrying was $1.9\times$ too large and the sign of
+the offset was wrong, and that came back from your seat rather than mine.***
+
+### ⓵ **THE RESIDUAL NOBODY HAS DECOMPOSED, AND WHY IT IS THE NEXT ONE**
+
+*The decisive run reports peaks $222/538/818/1134$ against the sky's $220.4/537.7/817.3/1123.9$. **Peaks one
+to three land within a grid step. Peak four is $10.1$ multipoles out, $0.9\%$, five grid steps** --- and the
+comb is fitted on the first three by `sec:intro`'s own procedure, so ***peak four is the only one of the four
+that is out of sample.*** It is the sharpest external-referent residual this sector has, and it has never been
+separated into anything.*
+
+⌗ *And the pattern across the four is not the shape of one systematic, which is worth saying before you look
+so that you are not looking for one:*
+
+| $n$ | arm | sky | $\Delta\ell$ | $\Delta\ell/\ell$ |
+|---|---|---|---|---|
+| 1 | $222$ | $220.4$ | $+1.6$ | $+0.73\%$ |
+| 2 | $538$ | $537.7$ | $+0.3$ | $+0.06\%$ |
+| 3 | $818$ | $817.3$ | $+0.7$ | $+0.09\%$ |
+| 4 | $1134$ | $1123.9$ | $+10.1$ | $+0.90\%$ |
+
+*A constant acoustic **phase** offset displaces every peak by the same $\Delta\ell$. A **ruler** or
+sound-speed error displaces them by the same $\Delta\ell/\ell$. A **driving or damping** error grows with
+$\ell$. ⇒ ***None of the three produces one-off, two-and-three-on, four-off.*** So either the pattern is real
+and takes two causes, or one of the four numbers is not measured as well as the other three.*
+
+### ⓶ **SO THE FIRST THING ASKED IS THE INSTRUMENT AND NOT THE PHYSICS**
+
+⚠ ***Establish the locator's own precision at each of the four peaks before reading any residual off them.***
+*You validated it at $\ell_1$ on the banked `LSTEP=1` spectrum, where it recovers the fine-grid value to
+$0.004$ of a multipole. **$\ell_4$ sits where the damping has flattened the peak**, and a locator's precision
+at a suppressed extremum is a different number from its precision at a sharp one --- unestablished, not
+assumed bad.*
+
+* *Per peak, on both arms: the locator's recovery against the fine grid, and its sensitivity to the fitting
+  window. **The control is the null that makes this readable** --- there the sky's own peaks are what the
+  control reproduces to $0.5\%$, so a locator error shows up as a residual on an arm that has none.*
+* ⇒ *** If the locator at $\ell_4$ is worse than $10$ multipoles, the residual is not measured and the honest
+  report is that the fourth peak has never been read at the precision the comparison needs. That outcome ends
+  the order at step one and is worth as much as the decomposition. ***
+
+### ⓷ **THEN THE THREE-WAY SEPARATION YOU ALREADY BUILT, AT $\ell_4$**
+
+*`cc66.44`'s guard separated $\ell_1$'s motion into the peak relocating through $r_s(\mathrm{ETA\_LS})$
+($31\%$), the visibility's re-weighting of the kernel ($9\%$) and the plasma's own acoustic phase ($60\%$),
+using the $\cos(kr_s)$ injection with no plasma dynamics in it. **Run the same three ways at $\ell_2$,
+$\ell_3$ and $\ell_4$**, and report the three shares as functions of peak index.*
+
+⌗ *What that distinguishes, stated so the reading is fixed in advance rather than after: if the plasma's own
+share **grows** with $n$ while the other two stay flat, the residual is in the driving and the envelope
+section is where it lands. If the relocation share grows, it is the ruler and $\mathrm{ETA\_LS}$ is where it
+lands. **If the shares are flat and the residual is not, the decomposition does not reach it** --- which is a
+real result about the guard's coverage and not a failure of the run.*
+
+### ⛔ **AND THE GUARD, WHICH IS THE PART I WANT MOST**
+
+⚠ ***Report whether the four-peak pattern is consistent with ONE systematic or requires TWO, and do not
+pick.*** *I have named three candidate shapes above and none of them fits, which means my enumeration is
+probably incomplete --- that has been the standing outcome on this sector for four revisions running, and each
+time the correction came from your seat. **If a fourth shape fits, name it; if the pattern is within the
+locator's precision once ⓶ is done, say the pattern was never there.***
+
+**⛔ WHAT IS NOT ASKED.** *No refit. Nothing that touches `prop:flat` or the clock family --- `cc66.44`
+closed that and it stays closed. **No verdict on the two-rate assignment**: this is evidence toward the row's
+question and not an answer to it. And no corpus edits --- findings about the papers come back here.*

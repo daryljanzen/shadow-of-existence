@@ -1,7 +1,7 @@
 ---
 name: owed
 kind: STATE
-current: r6865
+current: r6935
 description: Work this programme's turns CREATED — the register every other register here lacks, since all of them track work discharged.
 sources: [chat]
 ---
@@ -16,30 +16,33 @@ sources: [chat]
 >
 > | what | where it lives | count |
 > |---|---|---|
-> | **the live rows** | `THE_REGISTER` | **seven** — `PO-23`, `PO-31`, `PO-47`, `PO-48`, `PO-49`, `PO-50`, `PO-51` |
-> | **owed items** | this file | the list below |
-> | **the corpus read** | `ARC 13` | ⛭ **COMPLETE — all seventeen papers read word for word at verified full coverage** |
-> | **receipts** | `receipts/` | **821 on disk**; the suite's verdict is `receipts/RUN_RESULT.txt`, which carries none while a run is in flight |
-> | **red gates** | `corpus/check_*.py` | **1 of 107** — `check_receipts_run`, which needs wall-clock and no judgement |
-> | **the absorption gap** | `ABSORPTION.md` | that file's own record |
+> | **the live rows** | `THE_REGISTER` | **five** --- `PO-23`, `PO-31`, `PO-50`, `PO-56`, `PO-59` |
+> | **owed items** | this file | **one open** --- `(597)`, the reader package, which is a project and not a physics open. The other $123$ are discharged and keep their rows |
+> | **the corpus read** | `ARC 13`, and two cold reads since | ⛭ **COMPLETE, and re-run twice from outside.** *`ARC 13` read all seventeen papers word for word at verified full coverage. **Two cold full-corpus reads have been gated since** --- one returning a sixteen-item list worked to completion, the other a fourteen-paper patch with nine open items, all worked or decided. The corpus is eighteen papers* |
+> | **receipts** | `receipts/` | **845 on disk.** The suite's verdict is `receipts/RUN_RESULT.txt`; its last complete run gave $766$ pass, $83$ fail, $1$ over timeout, and the cache goes stale the moment a paper or a receipt moves |
+> | **red gates** | `corpus/check_*.py` | **1 of 107** --- `check_receipts_run`, and ⛔ ***it does NOT need only wall-clock***: the debt behind it is **$81$ receipts**, two more being the declared environment pair, and each repair is a judgement about whether a pin froze an error, a finding has since been discharged, or a generated file simply moved. **Carried as `PO-59`** |
+> | **the absorption gap** | `ABSORPTION.md` | ✗ **CLOSED r3096** --- the `c54` fork line is closed, so no row will be added and that file is a terminal record at its own last revision rather than a stale one |
 >
 >
-> ## ⛭⛭⛭ AND THE ORDER TO WORK IT IN — **rebuilt r3377, the read having discharged the middle of it**
+> ## ⛭⛭⛭ AND THE ORDER TO WORK IT IN IS SPENT, BECAUSE THE LIST IT ORDERED IS DOWN TO ONE
 >
-> *The old ordering (A isolated · B gates-the-read · C the read · D after-the-read) is spent: `ARC 13` is
-> complete, so every item that gated it or waited on it has resolved. What remains does not gate anything.*
+> *The r3377 ordering named four. **Three are discharged**: `624`, the height/driving investigation, closed
+> at r3409 when its premise turned out to be a feature count read below a fixed multipole across combs of
+> different spacing; `589`, the comprehensive comb, discharged at r3508; and `622`, the candidate-field
+> bakes, which was node 54's lane and that line is closed. **`597` stands, and it was always explicitly
+> last.***
 >
-> · **`624`** — the height/driving investigation, and the only one with live work in it. *State in
->   `PO13_WORKING_STATE.md`; the open half is what the construction says the datum should be at the onset,
->   which is open rather than unconsulted — checked across all three source classes at r3363.*
-> · **`622`** — the candidate-field bakes, node 54's lane, list exhausted and running on `P14`/`P03`.
-> · **`589`** — the comprehensive comb. *Wanted the corpus current; it now is.*
-> · **`597`** — the reader package. *Explicitly last.*
+> ⇒ ***So this file no longer orders work; the register does.*** *What a turn creates is still written
+> here, which is the form's whole purpose — but the queue it once held has moved to `THE_REGISTER`'s five
+> rows, and the largest single piece of owed work in the corpus is `PO-59` rather than anything on this
+> list.*
 
 
-> **⌗ SORTED BY LAYER r3095 — because the car-wash rule is that each layer gates the next BY WHAT IT
-> EXPOSES, not by what it finishes.** *`OWED` does not need to be empty to move on; it needs nothing left
-> **from the layer being left**.*
+> **⌗ THE r3095 LAYER SORT IS SPENT, AND IS KEPT FOR THE RULE RATHER THAN THE QUEUE.** *Every item it
+> sorted --- `586`--`614` --- is discharged. **The rule it carried is the part worth keeping**: each layer
+> gates the next by what it EXPOSES and not by what it finishes, so this file never needed to be empty
+> to move on, only to have nothing left from the layer being left. *The three layers below are the record
+> of how that was worked and no longer name anything outstanding.**
 >
 > **⛔ LAYER 1 — the instruments the corpus pass will run ON. These gate `ARC 13`.** *`613` currency
 > (and `THE_FRONTIER` carries no marker at all), `614` thirteen unregistered IDs — holes in the space the
@@ -63,9 +66,10 @@ sources: [chat]
 > the half that evaporates at a compaction unless it is written — and every other register here tracks
 > work discharged. **Every item created before r3095 is closed.** Its item ids (`PO-4`, `PO-5`, `PO-6`, `PO-10`,
 > `PO-11`) belong to the register that closed at r3001; the live rows at that time were `PO-13`, `PO-14`, `PO-15`,
-> `PO-17`--`PO-20` in `THE_REGISTER`. **Twelve items are outstanding (586--597).** Two are of one kind — work done in
-> a ledger and never banked into a paper — and ten are the findings of the r3095 staleness pass, each
-> carrying the evidence that found it. **They are the list a consolidation would work from.***
+> `PO-17`--`PO-20` in `THE_REGISTER`. **Of the twelve the r3095 pass filed (586--597), eleven are discharged and `597` stands.** *Two were of
+> one kind — work done in a ledger and never banked into a paper — and ten were that pass's own staleness
+> findings, each carrying the evidence that found it. ⇒ **A consolidation now works from `THE_REGISTER`,
+> not from here**: this file's job is to catch what a turn CREATES, and it is caught.***
 >
 > *Keep the form: when a turn creates owed work, it is written here.*
 
@@ -190,7 +194,7 @@ sources: [chat]
 - [x] (594) RESOLVED r3096 — `THE_DIMENSION_DEEPENING_AUDIT`'s "what remains open" list was stale in two of three items, **and the document's own head said so** — the head and the list contradicting each other inside one file, which is the header-versus-body class. ⌗ *Fixed: the discharges are marked at the list itself. **①** the 39 screened probes — done, `L-08` struck, the partition published. **③** P3's `(A1)` — discharged, and **verified at source**: `rem:dimension` now reads *"the metric function itself is not an input here"* and derives the vacuum sector as the kernel of the matter functional, generalising in $D$ dimensions. **②** the unrun stations alone still stands.* [r3096]
 - [x] (595) RESOLVED r3096 — `CR_AND_THE_HIGGS` stated four falsification conditions and they were **worked ten revisions later** (`L-217`, r2414); the head carries the result and **the body did not**. Its `F3` row read *"LIVE, and the corpus states it as an obligation rather than a result — see F3"* — referring the reader to itself, while the head recorded that the working **inverted the direction**. ⌗ *Fixed: the row now carries its own working — the Higgs sector CONSTRAINS CR, the manner of the $S_3$ breaking being a constraint CR inherits rather than a prediction CR risks, and the composition is the finding: **CR is a selection-rule theory, the Higgs sector a magnitude theory, and they compose asymmetrically**.* [r3096]
 - [x] (596) DONE r3111 — **and C closed with it, so the re-scoping is a discharge rather than a relabel.** *§0 derived $A=\sqrt[3]{2}\rho$ and eight lines later filed it "★ Named and unrun … Well-posed, unattempted"; the ledger's own diagnosis was that the RELATION is closed and what is unattempted is C, its MEANING. **Both are now closed**: the ratio is $\sqrt[3]{2}$ because $1-f=0$ carries $2M$ where $f'=0$ carries $M$ — one factor of two inside one cube root, exact for every $M$ and $\alpha$ — so the relation is real, exact and shallow, and its tie to a horizon **root** is Nariai-only (`PO-19`, struck r3096).* ⌗ *Three sites fixed: the §0 self-contradiction, the calibration entry's status line (kept as the indexing rule's illustration, with its status corrected), and **the ledger's header list, which was stale in all three of its clauses** — it still called the citation owed after r3111 resolved it and still called §0's note owed after r3096 closed it.* [r3111]
-- [ ] (597) PROJECT: **BUILD** `L-218`, the reader package — the book in every reading format plus an AI companion spun up from this corpus, in one repo. Daryl's idea, registered r2415, and it did not cross at the r3009 turnover. Not a physics open; recorded so it is not lost again. [found in the r3095 staleness pass]
+- [x] (597) ✅ **DELIVERED, AND NOT AS THE ITEM IMAGINED IT** *(crossed r6937, Daryl)*. The item asked for “the book in every reading format plus an AI companion spun up from this corpus, in one repo” and held it as a build. **It is done, in three pieces that were not on the list:** *`shadow_of_existence` is the book; the public repository with its README is the spin-up, so **anyone can start a node on the README and learn the corpus in their own way** — which is the companion, supplied as a capability rather than as an artefact; and `shadow.cosmiCave.org` is the front-end reader, loading on any device.* ⇒ ⌗ ***And the form is what the item got wrong***: *it specified a deliverable where what was wanted was an entry point, so “every reading format” resolved into one reader that adapts and one README a reader can interrogate. **The corpus is already readable by anything that can read a repository**, which is why nothing here had to be built as the item described.*
 - [x] (598) MEASURED r3126 — **and the answer is that the corpus declines $\langle T_{\mu\nu}\rangle$ deliberately and already says so, in scope.** *The remaining half asked whether the corpus **should** use the renormalised stress-energy expectation. It should not, and the papers give the reason twice over.* · **Its matter is not a quantum field**: *"the classical bend of the slicing curve, $\rho=m'/4\pi r^{2}$, not a spinor field" (P13), and P7 states the same in its own scope — the framework is the gravitational and geometric sector, matter the bend of the cut up to the wall. $\langle T_{\mu\nu}\rangle$ is the object of a construction whose matter back-reacts as a quantum field; this one's does not.* · **And the one place it would ordinarily be needed is explicitly scoped out rather than passed over**: *P7's Hawking-absence argument says what is absent is **horizon-induced** radiation, "whose entire mechanism is the completed horizon", while "local, horizon-independent particle production---strong-field vacuum polarisation and the like---is untouched, and a perpetually collapsing ultra-compact body need not be quiescent". **That is the $\langle T_{\mu\nu}\rangle$ question named and left to the sector that owns it**, not an uncomputed gap.* ⇒ **Zero uses is the correct number**, *and station ⑤'s coverage owe is discharged: trans-Planckian entered the papers, and this one is declined with its reason stated. `THE_PHYSICS_REACH` updated.* [r3126]
 - [x] (599) NOT OWED — **the item was already updated and I mis-recorded it.** `frontier:scalar` does not state the two as remaining; it says outright *"Both items are run, and the result is a disagreement rather than a closure"*, carrying $\chi^2=397.13$ against the standard model's $206.44$ over 215 binned $TT$ multipoles at equal fitted-parameter count, and the height pattern $P_1/P_2=2.185$ against the sky's $2.2564\pm0.0772$. ⌗ *My check grepped for "full-spectrum likelihood", "odd/even height" and "remains" and matched all three while the semantics were the opposite — the same grep-for-read failure this pass keeps finding.* ⛭ **What the read DID find, and it was mine:** *relocating `frontier:inherited`'s content to `sec:inherited-datum` I carried its register-alias comment along and relabelled it as the scalar/`PO-13` alias, leaving `frontier:scalar` with no alias and `sec:inherited-datum` with a wrong one some seven hundred lines from the item it named. **Fixed: all four aliases now sit with their items** — `sec:inherited-datum` carries a note that its row is `PO-16`, struck; `frontier:scalar`/`PO-13`, `frontier:sm`/`PO-14`, `frontier:quantum`/`PO-15` each preceded by their own. Compiled clean.* [r3096]
 - [x] (600) DISCHARGED r3105 — **P10 fixed at source.** *The sentence now names the ultraviolet definition alone as the open frontier and states that the spectrum is not open with it: it is computed branch by branch, and which branch is a question the construction has been shown not to answer internally (`PO-15`, struck r3100).*

@@ -86,7 +86,7 @@ def main():
     #    The w=0 algebra survives (and is verified below), but P15 now says it is "the stacking rate's
     #    answer, and the perturbations do not take it: they take the leaf's, which carries the radiation
     #    term and therefore the driving".  So the stretch this receipt called pressureless is, on the
-    #    rate the perturbations run on, radiation-dominated for everything above l_eq ~ 156, re-entry
+    #    rate the perturbations run on, radiation-dominated for everything above l_eq ~ 144, re-entry
     #    there IS an event, and there WAS something to calculate across the join -- which the
     #    end-to-end transfer (r6719) and the closed-form driving of sec:envelope calculate.  The fitted
     #    onset these pins located the boundary against was retired as a repair (r6770+66.3).
@@ -123,19 +123,32 @@ def main():
     #    mode ... crossed before the plasma began" were computed against the fitted onset and on the
     #    stacking rate (P15's own footnote then said the leaf moves the boundary and was not recomputed).
     #    With the plasma handed over at the branch point, every mode is outside the horizon at the
-    #    handover and each re-enters on the expanding leg; on the leaf, everything above l_eq ~ 156 is
+    #    handover and each re-enters on the expanding leg; on the leaf, everything above l_eq ~ 144 is
     #    driven.  The checks now pin that census, and the absence of the retired one. **
     check('⓶ [corrected r6772+66.9] the geometry, restated on the handover: every mode is outside at the '
           'branch point "so each re-enters on the expanding leg at its own time", and no boundary mode '
           '"coincides with the onset"',
           'the mode whose crossing coincides with the onset is' not in p15
           and 'so each re-enters on the expanding leg at its own time' in p15)
+    # ⛔⛭ r6937 (66, on node 70's routed mis-citation): ** THE NUMBER THIS CHECK PINNED WAS THE WRONG
+    #   BACKGROUND'S, AND PINNING IT FROZE THAT. **  156 is `ell_eq` for the ARM AS CODED at
+    #   H0 = 73.00, Om = 0.3066 -- not for "the epoch the distance data fix", which is
+    #   (68.60, 0.2973) and gives 143.5.  *Recomputed two ways at r6937, independently of the
+    #   receipt that reports it: k_eq = a_eq H_leaf(a_eq)/c = 0.010245/Mpc on the leaf rate,
+    #   projected by D_M = 14011 Mpc on the radiation-free stacking rate the distances take.*
+    #   ⇒ *** The qualifier and the figure named two different backgrounds, so the paper moved to
+    #   144 and this pin follows it. ***  ⌗ *The FINDING this check carries is the CENSUS -- driven
+    #   at re-entry rather than "crossed before the plasma began" -- and that is unaffected either
+    #   way, the first peak sitting above 144 as it sat above 156.  ** The number is pinned because
+    #   a figure whose qualifier disagrees with it is exactly what went unread here for one
+    #   revision. **
     check('with the modes above equality DRIVEN at re-entry rather than "crossed before the plasma began": '
-          '"everything above $\\ell_{\\mathrm{eq}}\\simeq156$ at the epoch the distance data fix---are '
-          'driven"',
+          '"everything above $\\ell_{\\mathrm{eq}}\\simeq144$ at the epoch the distance data fix---are '
+          'driven", the figure being the one that epoch actually gives',
           'crossed before the plasma began' not in p15
-          and 'everything above $\\ell_{\\mathrm{eq}}\\simeq156$ at the epoch the distance data '
-              'fix---are driven' in p15)
+          and 'everything above $\\ell_{\\mathrm{eq}}\\simeq144$ at the epoch the distance data '
+              'fix---are driven' in p15
+          and '\\simeq156$ at the epoch the distance data fix' not in p15)
 
     # ⓷ the residue is PO-7's
     # ⛔⛭ RE-PINNED r3952 -- r3841's sweep, same cause as r3950's five.  ⛭ AND THIS ONE IS KIND ①, NOT ⑥: the SENTENCE was rewritten, not just the term.
@@ -173,7 +186,8 @@ def main():
         print(f'  {len(FAILED)} check(s) FAILED')
         return 1
     print("  VERDICT (r6931+70.1): ** CORRECTED -- on the leaf rate the perturbations run on, re-entry is")
-    print("     DRIVEN for every mode above l_eq ~ 156 (r6772+66.9), so the join had content, and the")
+    print("     DRIVEN for every mode above l_eq ~ 144 (r6772+66.9; the figure corrected r6937 -- 156")
+    print("     was the arm as coded, not the epoch the distance data fix), so the join had content, and the")
     print("     end-to-end transfer computes it (r6719).  The w=0 algebra and the non-crossing of the")
     print("     collapse-leg phase stand.  The r2701 finding as it stood: **")
     print("  ** PO-12's remaining half has NO CONTENT. **")

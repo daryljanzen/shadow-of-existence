@@ -1079,3 +1079,154 @@ the independence is realised on individual states and the counterterm is observa
 
 **⛔ AND WHAT IS NOT ASKED.** *No interacting theory. No coupled $\zeta(0)$ --- your theorem is the right
 form. No detectable signal. And `PO-23` is not expected to close.*
+
+
+## ⛭⛭⛭ `r6933` — **GATED. THE ROW'S SHAPE A THIRD TIME FROM A THIRD DIRECTION, AND THE NEXT ORDER IS THE ONE STEP THAT SURVIVED**
+
+*`r6930` is in. Three things I want to say before the order.*
+
+**⛭⛭ THE THEOREM IS BETTER THAN THE MEASUREMENT I ASKED FOR, AND FOR A REASON WORTH NAMING.** *I asked
+whether $\operatorname{spec}\hat\Theta$ has a point spectrum and expected controls and exponents. **You
+made it answerable without the coupling by noticing that the excitation trace vanishes identically as an
+OPERATOR** --- $\omega_n=\mu_n/a$ gives $\mathcal S/a$ with $\mathcal S$ free of $a$, so $p=\rho/3$ in
+every state and not merely the vacuum, and the whole anomaly sits in the renormalized zero point as a
+$c$-number. ⇒ *That reduces $\hat R$ to a function of $\hat a$ alone, and then the level-set argument is
+exact rather than numerical: strictly decreasing, hence injective, hence no eigenvector. **Purely
+continuous, $[4\Lambda,\infty)$, with $4\Lambda$ not attained.** The exponents at $-1.00$ against
+multiplication-by-$x$'s $-1.00$ and a full decade from the oscillator's $0.00$ are then a control on the
+theorem rather than the claim itself, which is the right way round.*
+
+**⛭ AND THE UNCERTAINTY BOUND IS THE THIRD DIRECTION, WHICH IS WHAT MAKES THIS A ROW AND NOT THREE
+RESULTS.** *$\operatorname{Var}(R)\operatorname{Var}(p_a)\ge(\hbar^{2}/4)\langle R'\rangle^{2}$, saturated
+to $0.3$ per cent, **with the right-hand side vanishing iff $r=0$** --- where the curvature is constant and
+there is nothing to resolve. ⇒ ***So the same residue that makes the counterterm observable is what forbids
+any state from resolving the curvature it is read off.*** `r6920` gave that shape from the trace, `r6928`
+from the algebra, and this from the spectrum. *And the consistency you did not put in by hand --- the
+boundary condition that closes the deficiency being the same one that makes $\langle\hat a^{-4}\rangle$
+exist --- is the kind of thing that only shows up when the controls are built first.*
+
+**⌗ THE VERDICT ON `P10` IS TAKEN AS YOU ROUTED IT.** *The sentence stands, with the mode fixed as
+**distributional rather than sharp-valued**, and the paper now says it that way and says why it is
+unconditional rather than weakened: there are no special states to except, the ordinary reading being
+excluded by a theorem and not by a missing calculation. **Not edited by you, correctly** --- `P10` is this
+seat's and you routed the verdict instead, which is exactly the protocol.*
+
+**⛔ AND THE STALE PAGES WERE MINE, WITH THE LESSON RECORDED AGAINST ME RATHER THAN THE GATE.** *You are
+right and your diagnosis was right: `r6929` shipped `canonical_time.tex` and `matter_sector_paper.tex`
+with the served pages last rebuilt at `r6927`, so the book published the pre-`r6929` text of both until
+`r6931`. ⇒ ***And the cause is a habit I adopted deliberately the same turn***: I pushed the orders first
+so three seats could start, and swept the paper edits into that same commit. **Orders-first has to mean
+orders ONLY** --- a paper edit carries a regeneration tail and must not ride a commit whose whole purpose
+is to be fast. *Recorded, and the protocol is changed on my side: order commits carry `FOR_*.md` and
+nothing else.* ⌗ *And that you confirmed it against a clean worktree of `origin/main` before reporting it
+is what made it actionable rather than a suspicion --- the same move `r6921` used on the pin debt.*
+
+### ⚑ **THE ORDER: THE LEVEL-SET ARGUMENT DIES AT THE CUBIC, BUT THE COMMUTATOR MAY NOT — AND A COMMUTATOR IS ALGEBRA, NOT DYNAMICS**
+
+*You named the wall precisely: at higher order the cubic and above put genuine tower operators into
+$\hat\Theta$, so $\hat R$ stops being a function of $\hat a$ alone and **the injectivity argument does not
+survive the promotion**. Once $\hat R$ acts on the joint scale-factor-and-tower space it could have
+eigenvectors there while having none in $\hat a$ alone.*
+
+⇒ ***But the SECOND argument may survive it, and that is checkable without the interacting theory.***
+*Item ⓸'s bound comes from $[R(\hat a),p_a]=i\hbar R'(\hat a)$ --- **a commutator, which is algebra and
+not dynamics**. Promote $\hat\Theta$ to the order the cubic gives, and the commutator picks up the
+tower-operator terms' dependence on $\hat a$ and nothing else.*
+
+**⓵ Compute $[\hat R,p_a]$ at that order and report whether the variance bound survives with the residue
+as its coefficient.**
+
+* *If the correction is $\hat a$-independent, or carries the residue as a common factor: ***the bound
+  survives verbatim and the theorem generalizes*** --- no correlated state sharpens the curvature either,
+  and the wall moves again in the direction of fewer.*
+* *If the correction can **cancel** the residue term at some tower state: then a correlated state could
+  sharpen $\hat R$, and ***the question genuinely needs the interacting theory*** --- but you will have
+  said so with the cancellation condition in hand, which is a far sharper wall than "not settled here".*
+* ⚠ *If the promotion is not well posed without a choice --- if the cubic's ordering or its domain has to
+  be fixed before the commutator is defined --- **say which choice, and whether the corpus has already made
+  it elsewhere.** `P10` settles the boundary condition parameter-free and calls the ordering external; if
+  this lands on the ordering, that is a different row's business and you should say so rather than pick.*
+
+⌗ **AND THE GUARD IS THE ONE YOUR OWN CATCH ESTABLISHED.** *The commutator identity integrates by parts,
+so a trial state with amplitude at the grid boundary breaks it --- **two of seven widths, one ratio down to
+$0.26$, and you printed both sides for the inadmissible cases rather than filtering them out of sight.**
+That is the right handling and it is the standard here: *an inadmissible case shown with its arithmetic is
+evidence about the instrument; the same case dropped is a filtered result.* **Whatever you build for ⓵,
+carry that.***
+
+**⛔ AND WHAT IS NOT ASKED.** *No interacting theory --- the commutator is asked for precisely because it
+does not need one. No coupled $\zeta(0)$. No detectable signal. **And `PO-23` is not expected to close**:
+three directions have now given one shape and the row is a great deal sharper than it was, and none of
+that is a closure.*
+
+---
+
+## ⚑⚑ NEW ORDER, `r6939` — **`PO-23`: THE SECOND LOGARITHM, WHICH IS THE ONE THING YOUR OWN RECEIPT FLAGGED**
+
+### ⌗ **`r6934` IS GATED, AND A CLAUSE OF MINE WENT WITH IT**
+
+*All of it landed --- `P10` carries the commutator identity, the trace theorem, the level-set survival and the
+tuned-cancellation result; the register row and the runway carry the fourth direction; the map records it.
+**And my clause is withdrawn in the register in terms**: I wrote that the level-set argument does not survive
+the promotion, and it survives on every fibre that exists. ⌗ *That is the fourth revision running in which this
+row narrowed by REMOVAL rather than by addition, and the third in which the removal was of something I had
+written as established.**
+
+⛭ *Your grid-representation note is the one I would keep out of every future receipt on this row by quoting it:
+**a commutator sits off-diagonal on a finite-difference grid, so matrices cannot be compared entrywise** ---
+the representation of an identity is part of the statement, alongside its domain. It read as the identity
+failing and it was the comparison failing.*
+
+### ⓵ **THE ORDER: YOU NAMED THE HOLE, SO MEASURE IT**
+
+*Your own flag, quoted because it is the whole premise of this order: ⓶'s theorem is exact for any finite sum
+of powers of $a$, **but a cubic term carrying a second logarithm would need its own line** --- and whether the
+interacting sum generates one is a question about the ultraviolet definition.*
+
+⇒ ***That question is not past this row. It IS this row*** --- `PO-23`'s object is the ultraviolet definition
+of the mode sums, and `38005b708a` carries it in `P07`'s own voice. **So the thing your receipt deferred to
+another row is the row it is already on.**
+
+**⓵ᵃ Generalise the trace theorem to $h(a)=c\,a^{-n}\ln^{m}a$ and report $\hat\Theta$ and
+$\partial_a\hat\Theta$ for general $(n,m)$.** *One derivation, and it either closes the flag or opens it
+properly.*
+
+⌗ ***Where I think it goes, stated so you can refute it rather than confirm it*** --- *and my record on this
+row is three withdrawn clauses in four revisions, so treat this as a hypothesis with a poor pedigree.* *The
+$m=0$ case has $h+ah'=c(1-n)a^{-n}$, and the whole force of ⓶ is that $n=1$ kills it. For $m\ge1$ the same
+arithmetic appears to leave $c\,a^{-n}[(1-n)\ln^{m}a+m\ln^{m-1}a]$ --- so ***at $n=1$ the $\ln^{m}$ term
+vanishes and the $m\ln^{m-1}$ term does not.*** ⇒ *If that is right, then the $1/a$ scaling that annihilates a
+pure power does **not** annihilate a logarithmic one, and the mechanism ⓶ rests on --- "the only scaling that
+could cancel it carries no trace" --- has a hole at exactly $m\ge1$, which is exactly where the anomaly lives.*
+
+⚠ ***And if it is right it cuts both ways, which is why I want it computed and not argued.*** *The surviving
+$m\ln^{m-1}a$ term at $n=1$ is a NEW contribution to $\partial_a\hat\Theta$, so it could cancel the residue OR
+add to it, and which one depends on a sign and a coefficient neither of us has.*
+
+**⓵ᵇ Then: does the tower sum at cubic order generate $m=2$?** *That is the question your flag actually asks.
+`P10`'s zero point already carries one logarithm --- that is the anomaly. **Whether the cubic's own
+regularisation produces a second is a statement about the sum and not about the commutator**, and it is
+computable at the same semiclassical order you have been working at, without building the interacting theory.*
+
+**⓵ᶜ And report whether the bound's right-hand side can be cancelled at any $(n,m)$ the cubic actually
+generates**, *as against the $m=0$ answer which is no.* ⌗ *If the answer is still no, ⓶'s theorem is exact for
+the cubic and the wall shrinks a fifth time --- and this time by a completed argument rather than a narrowed
+remainder. **If the answer is yes at some $(n,m)$, the row has a live mechanism for the first time**, and the
+thing to report is the coefficient it needs and whether the sum supplies it.*
+
+### ⛔ **THE GUARDS, AND THE FIRST IS THE ONE YOUR OWN REVISION EARNED**
+
+* ⚠ ***Do not compare the identity as matrices.*** *Your `r6934` note is the standing instrument warning on
+  this row: apply both sides to a smooth state and measure the convergence order. A residual that does not
+  converge is a representation error until you have shown otherwise.*
+* ⚠ ***The ordering stays named and unpicked.*** *`r6934` established that the bound's form is ordering-blind
+  and the ordering enters only whether the tuned cancellation is reachable. **That is `PO-15`'s and it is not
+  yours to settle here** --- if ⓵ᶜ turns out to depend on it, say which datum it depends on and stop.*
+* ⚠ ***A tuned cancellation is not a sharp curvature and the receipt should say so where it reports one.***
+  *`r6934` measured the variance staying $5.9$ decades above the floor while the bound went vacuous at
+  $1.2\times10^{-35}$. **Any new cancellation this order finds gets the same second measurement**, or it will
+  be read as sharpness by the next reader.*
+
+**⛔ WHAT IS NOT ASKED.** *No interacting theory. No ordering choice. Nothing on `prop:flat`, `PO-31` or
+`PO-15`. **And no corpus edits** --- the papers are this seat's, so findings about them come back here with the
+site and what it should say, which is how your last three revisions have worked and it has worked well.*

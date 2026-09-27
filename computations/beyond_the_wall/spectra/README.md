@@ -296,3 +296,37 @@ picked, which is what the order asked for.*
 
 Launchers: `../r6925_directions/`, with a README saying what each is for — including the launcher bug
 that wasted thirty-six slices and the smoke test that now precedes the set.
+
+## `r6929_*` — the comb's resolution, measured before it decides anything
+
+*`r6929`'s order: `cc66.43` made the comb the arbiter between the two admissible clocks for the optical
+depth, **but the corpus had never measured how sharply it discriminates**. So scan the assignment
+continuously — `VISLEAF` as a fraction, $f=0$ the stacking clock and $f=1$ the leaf's.*
+
+| file | what is in it | why it is what it is |
+|---|---|---|
+| `r6929_scan_cr.npz` | the arm at $f = 0,\,0.1,\,0.25,\,0.5,\,0.75,\,1$: `Dl__comb_cr_f*`, the **real reported spectrum**, and `Dl__inj_cr_f*`, the **injection** — `HIER=1 LSTEP=8 LMAXL=2000`, each summed over six `KSLICE` pieces of 250 modes | ⚠ two kinds of object under separate keys, `r6925`'s caveat carried forward: the injection is the projection's transfer of a $\cos(k r_s)$ input and is **not** a spectrum of the model. ⚑ *It is also what separates the order's guard — a source with no plasma dynamics in it carries geometry and visibility weighting only* |
+| `r6929_geometry.npz` | fifteen values of $f$ on **both** arms: $\eta_{\rm LS}$, the FWHM, $r_D$, $\ell_A$, $r_s(\eta_{\rm LS})$ on both clocks, $\tau$ and `Jac` at the peak, $\mathrm dr_s/\mathrm d\chi$ | it is all module-level, so the scan is thirty imports and no solver. **$\ell_A$ does not move at all and the control does not move at all**; $\eta_{\rm LS}$ drifts six grid steps and $r_D$ $-4.1\%$, and ⚠ *the FWHM's whole excursion is two steps of that grid and is non-monotonic — so `cc66.43`'s $43.591\to43.952$ is the quantisation* |
+| `r6929_noop.npz` | `VISLEAF=0` against the unset path on the arm, and the control at $f=0$ against $f=0.5$ | the fraction's zero must **be** the flag's off, and `Jac ≡ 1` on the control must collapse the whole family to one run. *Both bit-identical, and both also bit-identical to `r6925`'s banked no-ops* |
+
+⇒ ⛭⛭ **What they say.** $\ell_1 = 221.93 + 4.21f$ to three hundredths of a multipole: the family's entire
+span is $0.01395$ in $\ell_1/\ell_A$, which is $4.2$ of the sky's one-multipole locating widths, so **the
+comb pins $f$ to $\pm0.24$** — it separates the ends and comes nowhere near fixing the clock. The
+contrast's *level* is shallow ($1.75\sigma$) but its $q$-slope is the comb's equal ($3.80\sigma$); what
+separates them is that **the contrast's own error grows five-fold across the family while the comb's
+locating width does not move**.
+
+⛭⛭⛭ **And the deciding result is not about the choice at all: the sky's $0.7312$ sits at $f=-0.304$ on
+the family's own line — outside it.** So no interior fraction fits better than the endpoint in use, $f=0$
+is the best point, and *the residual first-peak disagreement cannot be absorbed by the clock assignment,
+because the direction it would need is not admissible.* $P_1/P_2$ agrees independently: $2.141\to2.017$
+against the sky's $2.217$.
+
+⚑ **The guard, separated three ways**: the comb's motion is $31\%$ the visibility peak relocating through
+$r_s(\eta_{\rm LS})$, $9\%$ the visibility's re-weighting of the kernel, and $60\%$ the plasma's own
+acoustic phase.
+
+⚠ **And the endpoint is gated against `r6925`'s bank bit for bit** — the family's $f=1$ *is* the flag —
+while $f=0$ reproduces the banked reported spectrum to the `KSLICE` sum's own rounding.
+
+Launchers: `../r6929_directions/`, and the switch guard is now standing in `../switch_smoke.sh`.

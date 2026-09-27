@@ -202,8 +202,14 @@ check("⛔ ** AND THE TWO ARE ON OPPOSITE CLOCKS. **  `1/k_D^2`'s measure is Jac
       "stating the choice.  *That is the gap `r6925` named, already open in the code.*",
       SRC.count('_dE = _dE * 0.5 * (np.asarray(Jac_of(') == 1
       and SRC.count('_dTau = _dTau * 0.5 * (np.asarray(Jac_of(') == 1
-      and SRC.count("_VISL = os.environ.get('VISLEAF', '0') == '1'") == 1,
-      "`1/k_D^2` Jac-weighted unconditionally under LEAFSCALES; `tau` only under the new `VISLEAF`")
+      # ⌗ `r6929+cc66.44` made `VISLEAF` a FRACTION -- f=0 the stacking clock, f=1 the leaf's -- so
+      #   this gate reads the two lines that replaced the flag's single read.  ** The substance it
+      #   asserts is unchanged: `1/k_D^2`'s measure is Jac-weighted unconditionally under
+      #   `LEAFSCALES` and `tau`'s only under `VISLEAF`, and f == 1 takes the expression above
+      #   UNCHANGED so this receipt's own runs are still the code's endpoint, bit for bit. **
+      and SRC.count("_VISLF = float(os.environ.get('VISLEAF', '0'))") == 1
+      and SRC.count('_VISL = _VISLF != 0.0') == 1,
+      "`1/k_D^2` Jac-weighted unconditionally under LEAFSCALES; `tau` only under `VISLEAF`")
 for t in ('lcdm', 'cr'):
     b = np.load(os.path.join(SP, f'r6893_switch_screen_{t}.npz'))
     check(f"[{t}] `VISLEAF` UNSET IS BIT-IDENTICAL against the banked base",

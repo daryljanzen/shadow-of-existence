@@ -239,8 +239,28 @@ def _prop_subhorizon_bound_to_its_locus():
         src = re.sub(r'(?m)^\s*#\s*\*\*.*$', '', src)
         named[k] = (len(re.findall(r'branch[ -]point', src, re.I)),
                     len(re.findall(r'\bseam\b|\bonset\b', src, re.I)))
-    ok = says_bp and bool(keys) and all(nb > ns for nb, ns in named.values())
-    return ok, f'asserts the branch-point side: {says_bp}; argument cites {named} (branch point, seam/onset)'
+    # ⛭⛔ r6937 (66, discharging (d)): ** THE PREDICATE `all(nb > ns)` MEASURED THE WRONG THING, AND
+    #   IT WOULD HAVE REJECTED THE CORRECT CITATION. **  *It required EVERY receipt cited anywhere in
+    #   the Argument to be branch-point-dominant.  But the Argument makes TWO claims: the census (a
+    #   locus claim) and the equality multipole (not a locus claim at all).*  ⇒ *** The receipt that
+    #   computes ell_eq has no business naming a locus, and the receipt that computes the DISTINCTION
+    #   between the two loci names both by construction -- 52 and 52.  So the predicate excluded the
+    #   only two receipts that could honestly carry this Argument. ***
+    #   ⇒ ** THE FINDING, STATED AS WHAT IT IS: no receipt bound to a branch-point claim may be one
+    #     that computed the OPPOSITE locus, and at least one must actually compute at the branch
+    #     point. **  A locus-neutral receipt cited for a non-locus claim is not a defect.
+    #     · onset-dominant (ns > nb) anywhere in the Argument ⇒ FAIL.  That is the r6931+70.1 defect
+    #       verbatim: `P15_verify_numeric` is (0 branch point, 9 seam/onset).
+    #     · at least one cited receipt with nb >= ns and nb > 0 ⇒ the census has a computing receipt.
+    #   ⌗ *This is not a loosening that lets the original defect through: PART 4's seed re-plants
+    #     exactly that citation and this predicate must reject it.*
+    offenders = {k: v for k, v in named.items() if v[1] > v[0]}
+    computes_bp = [k for k, (nb, ns) in named.items() if nb >= ns and nb > 0]
+    ok = says_bp and bool(keys) and not offenders and bool(computes_bp)
+    return ok, (f'asserts the branch-point side: {says_bp}; argument cites {named} '
+                f'(branch point, seam/onset); opposite-locus citations: '
+                f'{sorted(offenders) or "none"}; computes at the branch point: '
+                f'{sorted(computes_bp) or "NONE"}')
 
 
 for name, pat in REPAIRED[:3]:
@@ -349,20 +369,39 @@ else:
     #    locus is chosen as the one the bound receipt does NOT name, so the seed stays a locus
     #    mismatch after node 66 re-cites the argument (see the (d) entry in PART 2), rather than
     #    silently riding on that defect. **
-    _bk =re.findall(r'\\rcpt\{([^}]+)\}',
-                     re.search(r'\\emph\{Argument\.\}.*?(?:\n\s*\n)', body[_j:], re.S).group(0))
-    _bn = set()
-    for _k in _bk:
-        _rp = check_loci.find_receipt(_k.replace('\\_', '_'))
-        if _rp:
-            _bn |= check_loci.loci_in(open(_rp, encoding='utf-8', errors='replace').read())
-    _plant = next((w for w in ('branch point', 'seam') if w not in _bn), None)
+    # ⛭⛔ r6937 (66, re-seeded when (d) was discharged): ** THE OLD SEED PICKED A LOCUS THE BOUND
+    #   RECEIPT DOES NOT NAME, AND ONCE THE ARGUMENT CITED THE RIGHT RECEIPT THERE WAS NO SUCH
+    #   LOCUS LEFT TO PICK. **  *The receipt that computes the DISTINCTION names both loci -- that is
+    #   what makes it the authority on the distinction -- so `next((w for w in ('branch point',
+    #   'seam') if w not in _bn))` returned None and the seed silently planted nothing.  It reported
+    #   "the target sentence moved", which was not what happened.*
+    #   ⇒ *** The seed now plants the HISTORICAL DEFECT WHOLE, both halves at once, instead of
+    #   riding on whatever the live Argument happens to cite: the body asserts a horizon property AT
+    #   THE BRANCH POINT, and the Argument's citation is replaced by `P15_verify_numeric` -- the
+    #   receipt that computes the onset census, which is what the Argument cited until r6937. ***
+    #   ⌗ *So the seed is independent of the repair it is testing, which is the property it lacked:
+    #   it reproduces the r2440 site as it actually stood and stays a locus mismatch whatever the
+    #   corrected citation becomes.*
     _clause = 'so the comoving horizon shrinks to zero and every mode leaves it before the crossing'
-    seeded = body if _plant is None or _clause not in _prop else (
-        body[:_i] + _prop.replace(_clause, f'so the acoustic modes are inside the horizon at the '
-                                           f'{_plant}') + body[_j:])
+    _ARG_RE = re.compile(r'\\emph\{Argument\.\}.*?(?=\n\s*\n)', re.S)
+    _tail, _am = body[_j:], _ARG_RE.search(body[_j:])
+    if _clause not in _prop or _am is None:
+        seeded = body
+    else:
+        _arg = _am.group(0)
+        # one citation, to the receipt that computed the OTHER locus -- the defect as it stood
+        _arg_bad = re.sub(r'\\rcpt\{[^}]+\}', '', _arg).rstrip()
+        _arg_bad = _arg_bad.replace('$\\qquad\\square$',
+                                    '\\rcpt{P15_verify_numeric}$\\qquad\\square$')
+        seeded = (body[:_i]
+                  + _prop.replace(_clause, 'so the acoustic modes are inside the horizon at the '
+                                           'branch point')
+                  + _tail[:_am.start()] + _arg_bad + _tail[_am.end():])
 if seeded == body:
     fail.append("could not seed the motivating defect -- the target sentence moved")
+elif '\\rcpt{P15_verify_numeric}' not in seeded[seeded.find(r'\label{prop:subhorizon}'):][:4000]:
+    fail.append("the seed did not re-attach the onset receipt to the argument -- it is then not "
+                "the defect this part reproduces")
 
 
 def _flags(text, theorem_binding=True):
