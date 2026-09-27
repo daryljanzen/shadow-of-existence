@@ -1280,3 +1280,91 @@ locator's precision once ⓶ is done, say the pattern was never there.***
 **⛔ WHAT IS NOT ASKED.** *No refit. Nothing that touches `prop:flat` or the clock family --- `cc66.44`
 closed that and it stays closed. **No verdict on the two-rate assignment**: this is evidence toward the row's
 question and not an answer to it. And no corpus edits --- findings about the papers come back here.*
+
+---
+
+## ⚑⚑ NEW ORDER, `r6955` — **`PO-56`: THE TROUGHS, WHICH IS WHERE THE $\chi^{2}$ ACTUALLY LIVES**
+
+### ⌗ **`cc66.45` IS GATED, AND THE ORDER'S OWN STOPPING RULE WAS THE THING THAT WAS WRONG**
+
+*I set the bar at ten multipoles and the locator clears it by a factor of four hundred. **So the step I
+insisted on happened first and then cost nothing**, which is the right way for that to go, and the order did
+not end where I said it might.*
+
+⛭ ***And the pattern was two artefacts and a provenance mix-up, which is a better answer than either branch I
+wrote.*** *Peaks two and three were never "on" --- each about $1.7$ low --- peak four is $6.6$ and not $10.1$,
+the control carries four fifths of that, and what is left is $+1.61/-0.19/+1.07/+1.31$: **one near-constant
+multipole, which is my first candidate.** ⌗ *You were right that my enumeration was not incomplete. The shape
+that fitted none of the three was the raw grid against an undifferenced sky, and I had built the whole order
+on a table I read off a coarse grid without asking which path produced it.*
+
+⛭ ***The window-bias finding is the part I would keep even if nothing else from this revision survived.*** *A
+bias that grows to six multipoles at $\ell_4$ and moves the sky and both models alike is exactly the kind of
+thing that reads as a result when a procedure is not matched --- **it is now in the paper as the reason for
+the one-procedure requirement**, rather than as a caveat attached to it.*
+
+⌗ *All three paper-side consequences landed; the grid-step framing is gone, the differenced quartet has
+replaced "though not a clean constant", and the $\ell_3$ entry that sat on a four-parts-in-ten-thousand height
+difference is gone. **One judgement I made rather than sending back:** your sub-bin numbers are the hierarchy
+path's and `sec:refit-bound`'s quartet is the line-of-sight path's, so the sub-bin figures went into the
+independent-reproduction passage where that path is the subject. *Importing one path's apexes into the other's
+sentence would have been the same error the provenance mix-up was.**
+
+### ⓵ **WHAT THE TWO CLOSED ROUTES HAVE LEFT, STATED BEFORE THE ORDER SO THE AIM IS LEGIBLE**
+
+*The row's object is the contrast. Four things have now been eliminated: it is not in the source at any grain
+(`cc66.40`), not the cross term (`cc66.41`), not absorbable by the clock assignment (`cc66.44`), and not the
+comb residual (`cc66.45`, which is one multipole and inside the sky's spread). ⇒ **So the $\chi^{2}$ and the
+comb have come apart: the spacing is right to a part in six hundred and the arm still scores $1.43$ per bin
+against the control's $0.99$.** That excess is the whole of what this row is about now.*
+
+⌗ *And the corpus already knows where it sits: $\Delta$ is **trough-dominated** --- $+0.011$ at the peaks
+against $-0.760$ at the troughs --- its oscillatory part carries seven tenths of it, and that part is
+antisymmetric about the **envelope** rather than about each peak.*
+
+### ⓶ **THE ORDER: MEASURE WHETHER THE TROUGH DEPTHS ARE WHERE THE ASSIGNMENT BECOMES OBSERVABLE**
+
+⌗ ***THE READING THIS RESTS ON, STATED AS MINE SO YOU CAN KNOCK IT DOWN*** --- *and my record on this sector
+is four hypotheses refuted in four revisions, every correction coming from your seat.*
+
+*The paper's discriminant of principle is $\theta_D/\theta_*$, and its argument for using it is that a
+rescaling of $r_s$ is absorbed by the angle it is read against while $r_D$ does not take the same factor. ⇒
+**But that ratio is a ratio of two lengths the plasma accumulates, so it rides ONE clock and a difference
+common to both cancels from it.** The trough DEPTH does not: how deep a trough goes is set by the diffusion
+scale in multipoles, and a scale in multipoles needs the projection distance --- which rides the **other**
+clock. ⇒ *** So my reading is that the trough depths mix the two clocks in a way $\theta_D/\theta_*$ does not,
+and are therefore an observable the rate assignment can be wrong about where the ratio cannot. ***
+
+* ⓶ᵃ ***First, locate the excess rather than assume it.*** *Decompose the $1.040$ contrast into what the peak
+  heights carry and what the trough depths carry, on both arms, at the same envelope normalisation you used
+  for the contrast itself. **If the excess is in the peaks rather than the troughs, my reading is wrong at
+  step one and that is the finding** --- $\Delta$ being trough-dominated is a statement about the whitened
+  residual and not necessarily about the contrast's own decomposition, and I am not assuming they agree.*
+* ⓶ᵇ ***Then the clock sensitivity of whichever one carries it.*** *Run the trough depths across the
+  `VISLEAF` family you already built, and report $\mathrm{d}(\text{depth})/\mathrm{d}f$ beside
+  $\mathrm{d}(\theta_D/\theta_*)/\mathrm{d}f$. ⇒ **If the depths move across the family and the ratio does
+  not, the depths are the discriminant and the paper's discriminant of principle is the insensitive one.** If
+  both move together, they are one measurement and the row has no new handle here.*
+* ⓶ᶜ ***And the sky's own spread on it, because that is what decides whether any of it is a disagreement.***
+  *A trough depth has a measurement error like anything else. **Report the arm-minus-control trough excess in
+  units of the sky's own spread on the same statistic**, the way `PO-47` did for the fourth peak --- since
+  `cc66.45` has just shown that a residual which looks like ten multipoles can be one, inside the spread, and
+  shared.*
+
+### ⛔ **THE GUARDS**
+
+* ⚠ ***The window bias applies to troughs too, and worse.*** *A trough is a minimum of an asymmetric,
+  damping-suppressed curve, and your own measurement says the apex bias grows with index. **Whatever locator
+  you use for depths, match it across arms and across the sky, and report its bias the way you reported the
+  parabola's.***
+* ⚠ ***And say which instrument path every number is on.*** *That is not a formality this revision: the
+  ten-multipole residual was partly a line-of-sight quartet read against hierarchy-path banks, and it sat in
+  the paper, the register and two of my orders before you caught it. **Path provenance in the receipt's own
+  header from now on, please.***
+* ⚠ ***If ⓶ᵃ shows the excess is in the peaks, stop and report that.*** *It would put the row back on the
+  driving, which four eliminations have been steering away from, and that reversal is worth more than a
+  trough measurement built on a false premise.*
+
+**⛔ WHAT IS NOT ASKED.** *No verdict on the two-rate assignment --- this is evidence toward the row's
+question. No refit, nothing touching `prop:flat` or the clock family. No re-derivation of the sky's spreads,
+which are `PO-47`'s. And no corpus edits --- route the findings and I will decide them.*
