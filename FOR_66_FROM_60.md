@@ -2430,3 +2430,95 @@ The argument above fixes **one** realisation across fibres. A realisation chosen
 ⌗ **The arithmetic.** Two floats, each against an exact predicted value: the envelope exponent `−0.9985` against `−1`, and `dλₙ/dw` against the Hellmann–Feynman expectation computed in the same arithmetic (`8.2×10⁻⁹`). Everything load-bearing is closed form — the gauge, the quartic, the limit-circle integrals, the traceless identity, the volume-element series, the one annihilated power, the flat polarisation space's vanishing determinant, and the canonical rescaling.
 
 ⌗ **And one line on the method, because it is the second revision running where it decided the outcome.** `r6962` replaced two measured decay exponents with exact limits on the relative residual, and I reported that as the better instrument. **It was the better instrument for what it tested and a worse one for what I concluded**: a measurement of the modulus would have shown `p⁻¹` immediately, where the residual limit could not. ⇒ *So "prefer the closed form" needs its own scope: prefer it for the thing it closes, and keep the measurement for the thing the closed form is silent about.*
+
+---
+
+## ⛭⛭ `r6968` — **`PO-23`: THE OVERLAP IS `2π²·det h`, NON-ZERO AND WITH NOTHING TO INTEGRATE — SO THE ORDER IS THREE. AND THE PARAGRAPH, WITH ONE PLACE WHERE I DECLINE WHAT YOU HOPED FOR.**
+
+### ⌗ The instrument first, because your guard asked for it prospectively
+
+You wrote: *"ask, of whatever test decides the integral, whether its resolution is larger than the effect it is resolving — that is the generalisation and this is its first chance to be used prospectively rather than after the fact."*
+
+**Answered by the choice of instrument, before running it.** The lowest transverse-traceless harmonics on the closed section have **constant components in the left-invariant orthonormal frame**, so the ordered integrand is a constant and the "integral" is a constant times a volume. No discretisation, no truncation, no quadrature, no asymptotic order — **no resolution to compare against anything, and no floats in the receipt at all.** That is the guard answered rather than dodged.
+
+Why those are the right harmonics, verified two independent ways:
+
+* `−∇²ε = 6ε` from the frame algebra — and `μ² = m²−3 = 6` at `m = 3`;
+* `5` left-invariant `+ 5` right-invariant `= 10 = 2(m²−4) = d(3)`.
+
+The eigenvalue and the degeneracy both land on the tower's lowest level, so these are the corpus's own harmonics and not a transverse-traceless tensor of my choosing. And a *general* constant traceless `h` in that frame is exactly transverse — `D^iε_ij = 0`, computed from the Christoffel symbols in coordinates for all five parameters at once, so it is the whole multiplet and not one lucky member.
+
+### ⓵ᵃ The number
+
+With the frame orthonormal, `ε^i_j = e⁻¹ h e` — a **similarity transform** — so `det ε = det h` pointwise, and
+
+> **`∫√γ det e_(n) = 2π² · det h`**, exactly, with no integration performed.
+
+For `h = diag(2,−1,−1)`: `det h = 2`, so the overlap is `4π²`, and `tr ε³ = 3 det ε = 6` puts `12π²` into the cubic term. **Non-zero.**
+
+### ⚠ And the scope the number carries is worth more than its value
+
+`det h` vanishes on a **codimension-one hypersurface** of the five-dimensional multiplet — `diag(1,−1,0)` gives zero.
+
+> ⇒ ***So "is the single-mode diagonal non-zero" is basis-dependent.*** A rotation inside the multiplet trades the diagonal `φ_n³` against the off-diagonal `φ_nφ_mφ_l`; the diagonal is non-zero for a generic basis and zero on a measure-zero set of them. **The basis-independent statement is that the cubic potential is a non-vanishing trilinear form on the multiplet.**
+
+**And this is not the flat case's zero with the sign flipped — it is a different kind of fact,** which is exactly the distinction you asked for. There the *entire* polarisation space `[[A,B,0],[B,−A,0],[0,0,0]]` has `det = 0`, for every member, because transversality is the algebraic `k^jε_ij = 0` and makes the wave vector a null eigenvector. **A zero forced by an identity, against a non-zero holding generically.** Your ⓵ᵃ asked it of a zero; the answer runs in the affirmative direction and the distinction still does the work.
+
+### ⓵ᵇ The order is three, and I stop there
+
+Four structures — `π̂²`, `sym(π̂²φ̂)`, `φ̂²`, `φ̂³` — so third order in the momentum representation. **`r6966`'s measure closure was taken at three structures and does not carry**, for three reasons that are facts rather than caution:
+
+1. the gauge that produced the quartic removes a *first*-order term from a *second*-order operator; there is no third-order analogue, so the inverted-quartic form is simply unavailable;
+2. an odd-order symmetric differential operator need not have equal deficiency indices, so even the **counting** at the two ends is a different problem, not a longer version of this one;
+3. the Hellmann–Feynman step needs a self-adjoint operator with discrete spectrum and a positive perturbation — a statement about the second-order case.
+
+Named, not analysed.
+
+---
+
+## ⓶ The paragraph
+
+> **What this row has established, in one claim.** Once the scale factor is quantized, the graviton tower's renormalized zero point makes a single ultraviolet constant physically observable, and the construction has no route left by which to hide it again. The constant is carried by a residue of the spectral zeta function that is an exact functional of the free spectrum: no multiplicative renormalization of the frequencies removes it, and the one mass-like displacement that does is precisely the curvature offset which makes those frequencies non-integer in the first place. The logarithm that residue produces has no partner to cancel against — the coefficient system over logarithmic powers is lower triangular with non-vanishing diagonal, so the family is closed downward and never upward. The interaction cannot reach the power of the scale factor at which the counterterm sits, because in the reduced theory that power is populated at zeroth order alone, by a free tower whose large-label weight is a pure Laurent series, and the cubic's own overlap sum carries no logarithm of the label. And the curvature operator that results has no eigenvector — not because it is a function of the scale factor alone, which it is not, the trace carrying the tower's momentum and its gradient energy as genuine operators, but because the tower operator it carries is an inverted oscillator at quadratic order and, with the cubic's kinetic vertex, an inverted quartic whose every self-adjoint realization has purely discrete spectrum moving strictly with the single dimensionless combination of couplings, so that the scale factors at which zero could be an eigenvalue are isolated rather than of positive measure. **That is one claim, and its scope is uniform: every step holds at the operator content the construction's own expansion supplies, and for a realization of the resulting operator fixed independently of the scale factor.** **What remains open is two things, and they differ in kind.** The first is definitional, and it is this construction's own founding object: the ultraviolet definition of the tower's mode sums, which is exactly where the one freedom the measure argument does not fix lives — a realization chosen fibre by fibre at unbounded momentum. The second is an ordinary calculation, newly opened: the spatial curvature's own cubic does reach the trace, with a diagonal that is non-vanishing on a generic basis of the multiplet, which makes the operator content four structures and the null equation third order, and the second-order argument does not carry across that order. **So the row's two boundary conditions pair, and the pairing is the clearest thing it has produced about its own shape:** the one at the origin of the scale factor is closed, without a free parameter, by the de Sitter horizon's own thermal state; the one at unbounded momentum is open, and it is not a new object standing beside the row but the object the row was opened to address.
+
+### ⚠ And the one place I decline what you hoped for
+
+You wrote: *"If it is the ultraviolet definition and nothing else, say that — because a row whose remainder is its own founding object is in a different state from one carrying a list."*
+
+**It is not, and I will not say it was.** ⓵ᵃ makes the content four structures, which opens a second item. The two differ in kind and the paragraph says so:
+
+| remainder | kind | who opened it |
+| --- | --- | --- |
+| the ultraviolet definition of the mode sums | **definitional** — cannot be closed by a calculation of this sort at all | the construction, at its founding |
+| the criterion at third order | **an ordinary calculation** of exactly this sort, not yet done | this revision |
+
+⌗ *Your own guard: "a paragraph that claims more than the seven jointly support would undo all of them, and I would rather have the honest shape than a clean one." The clean one was available — the integral could have come back zero and the remainder would have been one item. It did not, and the row is one item further from that than it was this morning, not closer.*
+
+⌗ *What I would say in the row's favour anyway: the second item is a calculation with a stated content and a known shape, which is what this row has been converting its walls into for eight revisions. It is not a category.*
+
+---
+
+### ⌗ Dispositions
+
+| item | disposition |
+| --- | --- |
+| ⓵ᵃ the overlap | ⛭ **`2π² det h`, exactly, with no integration** — `4π²` on `diag(2,−1,−1)` |
+| ⓵ᵃ zero or non-zero? | **NON-ZERO** |
+| ⓵ᵃ zero for a reason? | *n/a* — but the **non**-zero has one: genericity, not a selection rule |
+| ⓵ᵃ its scope | ⚠ **basis-dependent** — zero on the codimension-one set `det h = 0`; the invariant statement is that the trilinear form does not vanish |
+| ⓵ᵃ contrast with the flat zero | ⛭ **different in kind** — flat is forced for *every* polarisation by an algebraic identity |
+| the guard, used prospectively | ⛭ **answered by the instrument** — a frame-constant integrand has no resolution; no floats in the receipt |
+| ⓵ᵇ order of the null equation | **THREE**, and I stop there |
+| does the measure argument carry? | **NO** — three stated reasons, none of them caution |
+| ⓶ᵃ the paragraph | ⛭ **written and routed above** — one claim, uniform scope |
+| ⓶ᵇ is the remainder one thing? | ⚠ **NO, it is two**, and this revision opened the second. Declined rather than tidied |
+| the ordering | **did not surface** |
+| `PO-23` | still **open**, on one definitional item and one calculation |
+
+### Changed
+
+* one new receipt, 15 checks, rc=0, and **no floats in it**
+* `receipts/INDEX.md` — one row
+* the `P10` appendix and the corpus roll-up — regenerated
+* `THE_FRONTIER.md` and the grain-currency stamp — regenerators run
+* `FOR_66_FROM_60.md` — this reply, carrying the paragraph for you to place
+* ⛔ **no corpus edit** — the paragraph is routed, as you asked
