@@ -201,10 +201,19 @@ def main():
           f'{rec_full}, floor alone at l={rec_floor} -- so the paper\'s quoted "recovery by l≈8" '
           'is the ladder\'s number and not the floor\'s',
           rec_full < rec_floor and rec_full == 8)
-    check('⓶ᶜ ⌗ and the paper reports the deficit as ONE effect: "The location is geometric and '
-          'robust; the depth is settled by the full Boltzmann transfer" -- a split it states '
-          'qualitatively and does not compute',
-          'location is geometric and robust' in p15)
+    # ** r6921: THIS CHECK'S PREMISE IS DISCHARGED, AND BY THE CORPUS RATHER THAN BY A REWORDING.
+    #   It read the paper as stating the location/depth split QUALITATIVELY and not computing it,
+    #   pinned to "the location is geometric and robust; the depth is whatever the full Boltzmann
+    #   transfer returns, AND THE TWO RUN HERE DIFFER ON IT".  ** The two no longer differ: the
+    #   exact transfer and the programme's own photon hierarchy now agree to three per cent at
+    #   every multipole, and the caption says the shape and the depth are BOTH cross-validated. **
+    #   *** Re-pointed at what discharged it rather than re-pinned to the new wording, since a
+    #   pin alone would keep a finding alive past its answer. ***
+    check('⓶ᶜ ⌗ ⛭ and the split this bake named is now COMPUTED rather than stated: the '
+          'paper carries the depths at every multipole and reports the shape and the depth as '
+          'BOTH cross-validated, two Boltzmann treatments agreeing to three per cent',
+          'the shape and the depth are both cross-validated' in p15
+          and 'three per cent at every multipole' in p15)
 
     print()
     print('  ' + '=' * 74)

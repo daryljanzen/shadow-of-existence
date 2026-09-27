@@ -78,17 +78,18 @@
 %   synchronous congruences of the cosmology), and it sends r_0 -> -r_0 hence 2M -> -2M, CARRYING THE +M CUT
 %   TO THE -M CUT ACROSS EXACTLY THE SO_0-ORBITS THE CONNECTED ACTION CANNOT CROSS.
 %   WHY Aut(A_2) IS A *DIRECT* PRODUCT: "the two factors act on INDEPENDENT STRUCTURES — the three roots and
-%   the two rulings — AND THE INVERSION IS CENTRAL.~The audit behind this count, its receipts, and the splits that cut its law are collected in the programme's combinatorics ledger (\texttt{COMBINATORICS\_LEDGER.md})."
+%   the two rulings — AND THE INVERSION IS CENTRAL." "
 %   "THE DOUBLE-RULING SWAP, THE ORIENTATION PARITY O(5,1)/SO_0, THE A_2 DIAGRAM AUTOMORPHISM, AND THE
 %   GRAVITON CHIRALITY ARE ONE AND THE SAME Z_2."
 %   *** AND Aut(A_2) IS NOT WHERE THE DISCRETE STRUCTURE STOPS — sec:weyl-a3 IS THE PAPER'S STRONGEST
 %   DISCRETE RESULT AND A SUMMARY ENDING AT ORDER TWELVE UNDERSTATES IT.  The residue pairing the horizon
 %   roots carry has a NON-TRIVIAL HOLONOMY about the Nariai points; adjoining it to the monodromy S_3
 %   closes a group of ORDER TWENTY-FOUR, and adjoining the orientation parity as well closes one of ORDER
-%   FORTY-EIGHT.  "NEITHER IS AN ABSTRACT COINCIDENCE OF ORDER": the element profile identifies it rather
-%   than counting it — ALL SIX ORDER-FOUR ELEMENTS ARE IMPROPER, the signature of the FULL TETRAHEDRAL
-%   group T_d and not of the chiral octahedral one — so the group is W(A_3) IN ITS WEYL EMBEDDING, one rank
-%   above the A_2 the linear face shows.  Receipts: GROUP_full_order48, EMBEDDING_is_Td_equals_WA3. *** And a FIFTH, FERMIONIC FACE: dS_5 ~ R x S^4 is spin with a
+%   FORTY-EIGHT (the hyperoctahedral W(B_3)).  "NEITHER IS AN ABSTRACT COINCIDENCE OF ORDER": the element
+%   profile identifies the order-24 group rather than counting it — ALL SIX ORDER-FOUR ELEMENTS ARE IMPROPER,
+%   the signature of the FULL TETRAHEDRAL group T_d and not of the chiral octahedral one — so it is W(A_3)
+%   IN ITS WEYL EMBEDDING, one rank above the A_2 the linear face shows; the order-48 group is
+%   W(A_3) x Z_2, the orientation parity acting as the central inversion.  Receipts: GROUP_full_order48, EMBEDDING_is_Td_equals_WA3. *** And a FIFTH, FERMIONIC FACE: dS_5 ~ R x S^4 is spin with a
 %   UNIQUE SPIN STRUCTURE, inherited by the cut, and R — reflecting the transverse cut-normal and so FIXING
 %   ALL FOUR SPACETIME LEGS — ACTS ON THE CUT'S NATURAL SPINOR AS THE CHIRALITY OPERATOR gamma^5 ITSELF, so
 %   THE ORIENTATION PARITY *IS* THE CHIRALITY GRADING. (Grounded: "the parity MEASURES chirality, THE
@@ -131,19 +132,15 @@
 % substrate supplies both, and on the symmetry-reducible sector the
 % identification closes as a calculation."
 %
-% STATUS: FIRST DRAFT (r216), assembled from corpus/algebroid_base_and_
-% substrate.md + anchor_consolidation.md + algebroid_closure_consolidation.md
-% (Moves 4-7, 11). Stated for review. HONESTLY SCOPED: closure is on the
-% symmetry-reducible (finite so(5,1)) sector; the per-stratum subalgebra
-% grading is now computed (symmetric at Type O and Nariai only, the
-% connection elsewhere). [r916 update, from the paper's own §scope:] the
-% SMEARED, infinite-dimensional homomorphism ON THIS SECTOR now follows as a
-% COROLLARY — the normal-normal structure function being the inverse leaf
-% metric, a momentum-independent tensor field already fixed by the finite-mode
-% identification — so it is NOT an open item. What lies genuinely beyond the
-% finite so(5,1) pattern is the free transverse sector past the wall, grounded
-% in the dynamics paper; the algebroid hands off to it there. Compiles clean
-% (9pp, 0 undefined); bib keys reconciled.
+% STATUS — SCOPED: closure is on the symmetry-reducible (finite so(5,1)) sector;
+% the per-stratum subalgebra grading is computed (symmetric at Type O and Nariai
+% only, the connection elsewhere); the SMEARED, infinite-dimensional
+% homomorphism ON THIS SECTOR follows as a COROLLARY -- the normal-normal
+% structure function being the inverse leaf metric, a momentum-independent
+% tensor field already fixed by the finite-mode identification. What lies
+% beyond the finite so(5,1) pattern is the free transverse sector past the
+% wall, grounded in the dynamics paper; the algebroid hands off to it there.
+% The discrete skeleton extends past Aut(A_2) to W(A_3) (sec:weyl-a3).
 % =====================================================================
 
 \usepackage[margin=1in]{geometry}
@@ -191,14 +188,14 @@ An action Lie algebroid is a Lie algebra acting on a base manifold, with an anch
 
 \emph{The structure function is identified with the coset metric}, and what makes that more than dimensional bookkeeping is the signature: the indefinite sign is supplied by the substrate's own geometry rather than inserted.
 
-As the cut moves off the symmetric vacuum the isotropy drops, and its strata are the range paper's Petrov classes. Read as a count of first integrals, the stratification says where the construction's hidden symmetry is needed and where it is not. The discrete skeleton at those strata is the substrate's own Weyl group: both factors of $\mathrm{Aut}(A_2)=S_3\times\mathbb{Z}_2\cong D_6$ are realized geometrically, the $S_3$ permuting the three horizon roots and the $\mathbb{Z}_2$ the central inversion that swaps the substrate's two null rulings---so the double-ruling swap, the orientation parity, the diagram automorphism and the graviton's chirality are one and the same $\mathbb{Z}_2$. \emph{And the skeleton does not stop there}: the residue pairing the horizon roots carry has a non-trivial holonomy about the Nariai points, and adjoining it to the monodromy $S_3$ closes a group of order twenty-four, with the orientation parity adjoined as well closing one of order forty-eight. \emph{Its element profile identifies it rather than counting it}---all six order-four elements are improper, which is the signature of the full tetrahedral group and not of the chiral octahedral one---so the group is $W(A_3)$ in its Weyl embedding, one rank above the $A_2$ the linear face shows.
+As the cut moves off the symmetric vacuum the isotropy drops, and its strata are the range paper's Petrov classes. Read as a count of first integrals, the stratification says where the construction's hidden symmetry is needed and where it is not. The discrete skeleton at those strata is the substrate's own Weyl group: both factors of $\mathrm{Aut}(A_2)=S_3\times\mathbb{Z}_2\cong D_6$ are realized geometrically, the $S_3$ permuting the three horizon roots and the $\mathbb{Z}_2$ the central inversion that swaps the substrate's two null rulings---so the double-ruling swap, the orientation parity, the diagram automorphism and the graviton's chirality are one and the same $\mathbb{Z}_2$. \emph{And the skeleton does not stop there}: the residue pairing the horizon roots carry has a non-trivial holonomy about the Nariai points, and adjoining it to the monodromy $S_3$ closes a group of order twenty-four. \emph{Its element profile identifies it rather than counting it}---all six order-four elements are improper, which is the signature of the full tetrahedral group and not of the chiral octahedral one---so the group is $W(A_3)$ in its Weyl embedding, one rank above the $A_2$ the linear face shows; with the orientation parity adjoined as well, acting as the central inversion, it closes $W(A_3)\times\mathbb{Z}_2$ of order forty-eight, exactly as that parity extends $W(A_2)$ to $\mathrm{Aut}(A_2)$.
 
 \emph{The verification is on the symmetry-reducible sector throughout, and we are explicit about it}: $\so(5,1)$ is finite-dimensional, the full Dirac algebra is not, and what is established is the finite reduction rather than a claim about the entire infinite-dimensional algebra. The algebroid hands off at the wall to the propagating sector, which is the companion dynamics paper's subject.
 \end{abstract}
 
 \section{Introduction: an algebroid without a base}\label{sec:intro}
 
-In the canonical formulation of general relativity, deformations of a spatial hypersurface generate an algebra~\cite{Dirac1964,ADM1962,Teitelboim1973}---an algebra whose \emph{content}, and not only whose form, bears on what follows, since Teitelboim's reading of it is that the brackets \emph{are} the embeddability condition for the hypersurface in a spacetime, and Hojman, Kucha\v{r} and Teitelboim show that requiring a canonical representation of them on $(g_{ij},\pi^{ij})$ alone recovers the Einstein Hamiltonian~\cite{HKT1976}. \emph{That forcing is dimension-dependent}: the same algebra closes for the Lovelock theories~\cite{TeitelboimZanelli1987}, which coincide with general relativity only in four dimensions. \emph{So the leaf being four-dimensional is doing work here rather than merely being the case}, and it is a different point from the one the dimension result guards---that the cut's dimension says nothing about the substrate's. We record the connection and claim no more than it: this paper's algebroid is a recognition of the structure the brackets already have, not a derivation of the field equations~\cite{JanzenRange}. Written out, with $\Hc_\perp$ the normal (Hamiltonian) constraint and $\Hc_a$ the tangential (momentum) constraint, smeared with lapse and shift, the brackets read:
+In the canonical formulation of general relativity, deformations of a spatial hypersurface generate an algebra~\cite{Dirac1964,ADM1962,Teitelboim1973}---an algebra whose \emph{content}, and not only whose form, bears on what follows, since Teitelboim's reading of it is that the brackets \emph{are} the embeddability condition for the hypersurface in a spacetime, and Hojman, Kucha\v{r} and Teitelboim show that requiring a canonical representation of them on $(g_{ij},\pi^{ij})$ alone recovers the Einstein Hamiltonian~\cite{HKT1976}. \emph{That forcing is dimension-dependent}: the same algebra closes for the Lovelock theories~\cite{TeitelboimZanelli1987}, which coincide with general relativity only in four dimensions. \emph{So the cut being four-dimensional is doing work here rather than merely being the case}, and it is a different point from the one the dimension result guards---that the cut's dimension says nothing about the substrate's. We record the connection and claim no more than it: this paper's algebroid is a recognition of the structure the brackets already have, not a derivation of the field equations~\cite{JanzenRange}. Written out, with $\Hc_\perp$ the normal (Hamiltonian) constraint and $\Hc_a$ the tangential (momentum) constraint, smeared with lapse and shift, the brackets read:
 \begin{align}
 \{\Hc_a[N^a],\Hc_b[M^b]\} &= \Hc_a\bigl[[N,M]^a\bigr],\\
 \{\Hc_a[N^a],\Hc_\perp[M]\} &= \Hc_\perp\bigl[N^a\partial_a M\bigr],\\
@@ -363,17 +360,20 @@ The residue pairing on functions over the root triple---diagonal, entries $1/f'(
 $(2,1)$---has a non-trivial holonomy about the Nariai points~\cite{AmbroseSinger1953}, the Klein four-group $V_{4}$ of even sign
 changes, whose origin is the per-root resolution of $\sqrt{\Delta}$~\cite{JanzenGroupoid}. Adjoining it to the
 monodromy $S_{3}$ closes a group of order twenty-four; adjoining the orientation parity as well closes one of order
-forty-eight\rcpt{GROUP_full_order48}. \emph{Neither is an abstract coincidence of order.} Computing the element
-profile: the six order-four elements are all \emph{improper}, none a proper rotation, which is the signature of
+forty-eight, the hyperoctahedral group $W(B_{3})$ of signed permutations, of which the order-twelve $D_{6}$ and the
+order-twenty-four group are both proper subgroups\rcpt{GROUP_full_order48}. \emph{Neither is an abstract
+coincidence of order.} Computing the element profile of the order-twenty-four group: the six order-four elements are all \emph{improper}, none a proper rotation, which is the signature of
 the full tetrahedral group $T_{d}$ and not of the chiral octahedral group; the transpositions appear as
 reflections, the $V_{4}$ as the three proper two-fold rotations, the three-cycles as three-fold
-rotations\rcpt{EMBEDDING_is_Td_equals_WA3}. \emph{So the group is $W(A_{3})$ in its Weyl embedding, not merely
-a group isomorphic to $S_{4}$.}
+rotations\rcpt{EMBEDDING_is_Td_equals_WA3}. \emph{So the order-twenty-four group is $W(A_{3})$ in its Weyl embedding, not
+merely a group isomorphic to $S_{4}$}; and since the orientation parity acts as the central inversion, which lies
+outside it, the order-forty-eight group is $W(A_{3})\times\mathbb{Z}_{2}$---the same extension by the orientation
+parity that carries $W(A_{2})=S_{3}$ to $\mathrm{Aut}(A_{2})=D_{6}$.
 
 \emph{And $A_{3}$ is not a new structure.} The substrate's isometry algebra is $\so(5,1)$, a real form of
 $\so(6,\mathbb{C})$, whose root system is $D_{3}\cong A_{3}$; and $A_{2}$ sits inside $A_{3}$ by deleting one
 node. \emph{So the sector's discrete group is the Weyl group of the substrate's own complexified isometry
-algebra}, and the $A_{2}$ the construction reads off the horizon
+algebra, extended by the orientation parity}, and the $A_{2}$ the construction reads off the horizon
 cubic is its sub-root-system, one node deleted. The enlargement is therefore not an addition to the construction but a recognition of what the
 construction already contains, reached by transporting a form the substrate itself supplies.
 

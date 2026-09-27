@@ -128,10 +128,32 @@ PATTERNS = [
 # ** archived record -- rewriting it to look better is a different failure. **
 ARCHIVE = ('retired/', '_dig/', 'c24_work/', 'storyboard_receipts/', 'forks/c19fork/', '.git/')
 
+# ** SECTION-SCOPED exemptions: the file is scanned, and only hits inside the named section are exempt.
+# THE_PLAN's exemption is its r1885/r1907 record, not the whole plan -- a deferral written anywhere else in
+# THE_PLAN is a live deferral.  The section runs from the heading that starts with the key to the next
+# '## ' heading. **
+SECTION_EXEMPT = {
+    'THE_PLAN.md': '## ⛔⛔⛔⛔ AND I DO NOT WRITE DEFERRALS TO DARYL INTO THE DOCUMENTS',
+}
+
+
+def in_exempt_section(rel, t, line):
+    head = SECTION_EXEMPT.get(rel)
+    if head is None:
+        return False
+    lines = t.split('\n')
+    start = next((i for i, l in enumerate(lines) if l.startswith(head)), None)
+    if start is None:
+        return False
+    end = next((i for i in range(start + 1, len(lines)) if lines[i].startswith('## ')), len(lines))
+    return start < line <= end
+
+
 # ** the two named exemptions.  FILE-SCOPED AND EXACT. **
 EXEMPT = {
     'PROTECTED_OPEN.md':            'the stated exit procedure for a protected row (a safeguard, not a block)',
-    'THE_PLAN.md':                  'the r1885 record of this failure, including Daryl\'s own words',
+    'THE_PLAN.md':                  'the r1885 record of this failure, including Daryl\'s own words '
+                                    '(section-scoped: SECTION_EXEMPT)',
     'corpus/check_deferrals.py':    'this gate',
     'ONTOLOGY_FOUNDATION_INDEX.md': 'exists BECAUSE of the r269 correction; every hit quotes the phrase '
                                     'in order to REJECT it',
@@ -228,6 +250,14 @@ def main():
             exempt_hits += len(hits)
             if show_all:
                 print(f'    log     {rel}  ({len(hits)} hit(s)) -- dated record of past work')
+            continue
+        if rel in SECTION_EXEMPT:
+            kept = [(ln, x) for ln, x in hits if not in_exempt_section(rel, t, ln)]
+            exempt_hits += len(hits) - len(kept)
+            if show_all and len(kept) < len(hits):
+                print(f'    exempt  {rel}  ({len(hits) - len(kept)} hit(s)) -- {EXEMPT[rel]} (section only)')
+            for line, txt in kept:
+                bad.append((rel, line, txt))
             continue
         if rel in EXEMPT:
             exempt_hits += len(hits)

@@ -233,7 +233,7 @@ $(+,+)\to(-,+)$ in `P03`,`P05`,`p0`,`P11`,`P02`.*
 | `P13` | **WORKED** | **the five real forms of $\SO(6,\mathbb C)$** (`I1` — corrected from four; so*(6)≅su(3,1) admits su(3)); $\sigma$≠Wick; $K$, $R\circ K$, fixed set $\{r=0\}$ (`I1`, `S1_so42...`, `P13_A3_factorization`) |
 | `P14` | **WORKED** | parallel conjugation → real structure so(3), signature $(5,1)$; involution on $\gamma^5$-eigenspaces; fixed-point-free involution on the root set (`P14_the_bundle_is_the_branching`) |
 | `P15` | **WORKED** (involution axis) | root-exchange involution, Nariai unique fixed point, generic vantages in two-cycles; $R$-parity $r\mapsto-r$; $\tau\mapsto-\tau$ evenness. NO real forms; all 28 "signature" = "signature of X" |
-| `P16` | **WORKED** | antilinear reality involution $K$; standing conjugation $r\mapsto-r,2M\mapsto-2M$, odd integrand $\mp0.1443\alpha^2/G$; CPT (`CROSSING_no_made_asymmetry`) |
+| `P16` | **WORKED** | antilinear reality involution $K$; standing conjugation $r\mapsto-r,2M\mapsto-2M$, odd integrand $\mp0.0481\alpha^2/G$; CPT (`CROSSING_no_made_asymmetry`) |
 | `p0`  | **WORKED** | the two real forms of $\SO(6,\mathbb C)$ + global Wick (`P17_qm_S4_vs_S5`); inversion involution fixed set = substrate (`C3_inversion_extends`); $K$ fixed set = photon congruence; $[\mathfrak m,\mathfrak m]\subset\mathfrak h$ |
 
 ⇒ ***Seventeen of seventeen accounted for: FIFTEEN WORKED, TWO CHECKED-NEGATIVE. Reach: **17/17 ACCOUNTED FOR** — 15 **WORKED**, 2 **CHECKED-NEGATIVE by name** (the reading standard; the worked-only figure is $15/17$) — the deepest

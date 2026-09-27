@@ -696,7 +696,7 @@ Weight key: CONFIRMED = stated at source and verified.
 
    **⌗ DEEPENED (r2276): the dissolution is now DYNAMICAL as well as representational.** *The entry above establishes that the asymmetry is **a standing $R$-conjugation, not a seam event** — a statement about parity and labels. ***It leaves open whether the geometry, while labelling the branches reciprocally, might still weight one of them.*** **It does not.** The segment along which the conjugate branch is reached is a solution of a variational principle, and its action's integrand $r[f(r)-1]=-2M-r^{3}/\alpha^{2}$ is **odd under the same $R$** (which acts on offset and mass together, $r\mapsto-r$ with $2M\mapsto-2M$), so the two branches carry **equal and opposite action, summing to zero identically**:*
 
-   $$S_E(\text{matter})=-0.1443\,\alpha^{2}/G,\qquad S_E(\text{antimatter})=+0.1443\,\alpha^{2}/G.$$
+   $$S_E(\text{matter})=-0.0481\,\alpha^{2}/G,\qquad S_E(\text{antimatter})=+0.0481\,\alpha^{2}/G.$$
 
    ***A construction could make each branch call the other antimatter while still preferring one dynamically. This one does not.*** *And **the oddness doing the work is the same relation that fixes the chirality parity and the progenitor's identity**, so the balance cannot be lifted by refining the crossing — what would have to fail is the relation that makes the progenitor antimatter at all. **Any observed asymmetry therefore enters through the charge sign carried by the matter field**, which the geometry does not supply — ***the same conclusion reached independently through the charge sector in P9's `rem:charge` (r2275) and through the cosmogenesis frontier (r2259)***. *Sites: P7 `thm:antimatter` remark, P9 `rem:charge`, P16 `sec:lap`.*
 

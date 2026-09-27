@@ -89,7 +89,14 @@ FAILED = []
 
 #: the six sites, and the qualifier each carries.  FIXED before the search.
 SITES = [
-    ('p0', 'only real Riemannian manifold that is maximally symmetric', 'intrinsic signature'),
+    # ** r6921: the qualifier's WORDING was corrected corpus-wide and this pin followed it.
+    #   de Sitter is Lorentzian, hence PSEUDO-Riemannian and not Riemannian, and `p0` and `P13`
+    #   both now say so -- "in each dimension, the only real pseudo-Riemannian manifold that is
+    #   maximally symmetric and carries an intrinsic Lorentzian signature".  ** The finding this
+    #   receipt makes is about which sites CARRY a qualifier, not about which adjective they use,
+    #   so a pin that freezes the wrong adjective would defend the error against its own fix. **
+    ('p0', 'only real pseudo-Riemannian manifold that is maximally symmetric',
+     'intrinsic signature'),
     ('P03', 'unique real Riemannian manifold whose Lorentzian signature is intrinsic',
      'intrinsic signature'),
     ('P03', 'unique maximally symmetric real-Lorentzian manifold', 'unforced modulus'),
@@ -174,9 +181,10 @@ def main():
           'symmetric; what separates them is SIGNATURE, and that is prop:unique',
           'leaves nothing to choose' in p06)
     check('⓷ᶜ ⛭ while the SIGNATURE scoping does separate them: p0 states it as a labelled '
-          'proposition — "De Sitter space ... is the only real Riemannian manifold that is '
-          'maximally symmetric and carries an intrinsic Lorentzian signature"',
-          'only real Riemannian manifold that is maximally symmetric' in B['p0']
+          'proposition — "De Sitter space ... is, in each dimension, the only real '
+          'pseudo-Riemannian manifold that is maximally symmetric and carries an intrinsic '
+          'Lorentzian signature"',
+          'only real pseudo-Riemannian manifold that is maximally symmetric' in B['p0']
           and 'intrinsic Lorentzian signature' in B['p0'])
     check('⓷ᵈ and it is labelled `prop:unique`, so it is citable',
           'prop:unique' in B['p0'])

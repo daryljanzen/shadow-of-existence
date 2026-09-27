@@ -350,12 +350,12 @@ rather than a preface.
 range; the constraint algebra's identification; three chiral generations on the discrete residue; the expansion
 history; the cosmogenesis synthesis with the light-element abundances reproduced. On the observational axis the expansion history fits the low-redshift distance ladder and the acoustic angle together, which fixes $H_0$; the acoustic spectrum is then computed from that background and is rejected on shape.
 
-**What is open — five families, and they are named rather than implied.** The inherited datum ·
-the scalar-perturbation sector to a verdict · **the propagating fermion sector**, which is the largest
-undertaking and the gate the others wait on · the world-correspondence · and the interacting quantum tower,
-which is not CR-specific. **Two families have left this list since it was written, and a list that shrinks and
-says why is worth more than one that was always right**: the *matter branch-point crossing dynamics* closed at
-r2376+c54.113 and the *irreducible interior reassignments* at c54.118.
+**What is open, named rather than implied.** The inherited datum · the interacting quantum tower,
+which is not CR-specific · the one residual of the scalar-perturbation sector, which has reached its verdict ·
+and the world-correspondence, which is the standing empirical question rather than a work item. **Three
+families are closed**: the *matter branch-point crossing dynamics*, the
+*irreducible interior reassignments*, and *the propagating fermion sector*, built on the static slicing
+structure and again on the framework's own chiral member.
 
 **What would decide it.** Two things are held out to the world rather than argued: **no event horizon completes
 at finite exterior time** — structural, resting on causal structure alone, and where the programme's whole
