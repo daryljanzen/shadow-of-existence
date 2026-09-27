@@ -1230,3 +1230,68 @@ thing to report is the coefficient it needs and whether the sum supplies it.*
 **⛔ WHAT IS NOT ASKED.** *No interacting theory. No ordering choice. Nothing on `prop:flat`, `PO-31` or
 `PO-15`. **And no corpus edits** --- the papers are this seat's, so findings about them come back here with the
 site and what it should say, which is how your last three revisions have worked and it has worked well.*
+
+---
+
+## ⚑⚑ NEW ORDER, `r6943` — **`PO-23`: THE VERTEX'S LARGE-LABEL ASYMPTOTIC, WHICH IS THE ONE THING LEFT WITH AN ADDRESS**
+
+### ⌗ **`r6942` IS GATED, AND IT IS THE BEST-SHAPED RESULT THIS ROW HAS PRODUCED**
+
+*The general entry, the triangular system, the relocation and the nested-sum criterion are all in `P10`;
+the register row and the runway carry them; the map records it. ⛔ **And the sentence that moved is the one
+`r6939` had written a revision earlier** --- `P10` no longer says "the only scaling that could cancel it
+carries no trace", because that is the $m=0$ case wearing a general claim's clothes.*
+
+⛭ ***The thing worth naming about your revision is not the theorem, it is where the counterexample was.***
+*The anomaly is the $(n=1,m=1)$ entry of the formula whose $m=0$ case `r6934` generalised from. **The
+refutation was the row's own headline result, in the same paper, for two revisions.** ⌗ *That is the second
+time a limitation your receipt recorded went on to find the defect, and it is now the standing argument for
+recording them rather than a hope about it.**
+
+⌗ *And your replacement has the shape a replacement should have. It does not repair the old argument; it is
+a theorem the old argument was one corner of, and it CONTAINS the old case at $m=0$. **The wall shrank a
+fifth time and this time by a completed argument rather than a narrowed remainder**, which is the first time
+this row has managed that.*
+
+### ⓵ **THE ORDER: COMPUTE THE ONE PROPERTY, BECAUSE IT NOW HAS AN ADDRESS**
+
+*You reduced ⓵ᵇ to one question about one object: **whether the cubic vertex's large-mode-label asymptotic
+carries a $\ln m$.** You showed the free tower's does not, exactly --- $d(m)\mu(m)=2(m^{2}-4)\sqrt{m^{2}-3}$
+is a pure Laurent series whose leading $2m^{3}$ is the power that puts the pole at $s=-1$ --- and you
+declined to guess the cubic's. **Compute it.***
+
+⌗ *Why now and not later, stated so the priority is legible: ⓵ᶜ is unconditional, so this does not gate the
+verdict. **What it gates is whether the relocation at $c_2=2r$ is physically available at all.** If the
+cubic generates $m=2$, the tuned state exists in the theory and the obstruction genuinely sits one logarithm
+up for some admissible coefficient; if it does not, the cubic stays at $m=1$, the relocation is a fact about
+the formula and not about this construction, and §C applies with nothing further to check. ⇒ ***Either
+outcome closes a branch rather than opening one, which is the cheapest possible thing left on this row.***
+
+* ⓵ᵃ ***The vertex's large-label asymptotic, to the order that decides the pole structure.*** *The criterion
+  is yours and is sharp: a $\ln m$ in the summand, which is a harmonic number from the inner sum already
+  done. **Report whether the inner sum produces one and at what order in the label**, with the expansion
+  printed rather than characterised.*
+* ⓵ᵇ ***And whichever way it falls, say what it does to the relocation.*** *If $m=2$ is generated: the tuned
+  coefficient and the resulting $\ln^{1}$ coefficient on the cubic's own numbers, with the variance
+  measurement beside it --- **a relocation is not a sharpening and the receipt has to say so where it
+  reports one**, which is the guard your own $11.2$ decades already honoured. If $m=2$ is not generated: say
+  the cubic stays at $m=1$ and the second-logarithm line is closed.*
+
+### ⛔ **THE GUARDS, TWO CARRIED AND ONE NEW**
+
+* ⚠ ***The convergence-order measurement stays live rather than recited.*** *You re-measured the identity at
+  $-1.99$ inside `r6942` rather than citing `r6934` for it, which is the right habit on a row where a flat
+  residual is a representation error until shown otherwise.*
+* ⚠ ***The ordering stays named and unpicked.*** *`r6942` established that nothing in the trace formula or
+  the leading-log argument needs it. ⌗ *If the vertex asymptotic turns out to depend on an ordering choice,
+  that is a genuine finding and the thing to do is name the datum and stop --- not pick it.**
+* ⚠ ***NEW, and it is about the shape of the answer rather than the answer.*** *This row has now produced
+  one completed argument. **A second completed argument is worth more than three narrowings**, so if the
+  vertex computation closes the second-logarithm line outright, say so in those terms and do not bury it in
+  a remainder list. ⌗ *And if it does not close, the honest report is which step of the Mellin argument it
+  fails at, since "not computed" and "computed and inconclusive" are different states and only one of them
+  is progress.**
+
+**⛔ WHAT IS NOT ASKED.** *No interacting theory beyond the cubic vertex's own asymptotic. No ordering
+choice. Nothing on `prop:flat`, `PO-31` or `PO-15`. **And no corpus edits** --- the `P10` routing you have
+been using works, so keep using it.
