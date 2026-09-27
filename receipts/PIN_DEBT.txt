@@ -2,7 +2,8 @@
 
 ⛭⛭⛭⛭ r6931+70.3 (node 70): THE PIN DEBT IS ZERO AND THE RATCHET BINDS.  THE HEAD WAS 0 AND IS 0 ---
 NOT EDITED, BECAUSE AT ZERO THE GATE SAYS SO ITSELF.
-857 pass, 0 fail, 1 over timeout, 2380s, tree 515a06a4e60d5753, covering all 858 registered.
+861 pass, 0 fail, 1 over timeout, 2381s, tree 9db4f50a368c05bc, covering all 862 registered
+(the tree with main's r6957 merged in; before that merge, 857/0/1 over 858 at 515a06a4e60d5753).
 `check_receipts_run`: "the pin debt is ZERO and the ratchet BINDS: any new failure now fails this
 gate."
 
