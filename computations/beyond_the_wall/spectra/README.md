@@ -330,3 +330,34 @@ acoustic phase.
 while $f=0$ reproduces the banked reported spectrum to the `KSLICE` sum's own rounding.
 
 Launchers: `../r6929_directions/`, and the switch guard is now standing in `../switch_smoke.sh`.
+
+## `r6941_*` — the fine reference that clears the locator at every peak
+
+*`r6941`'s order: the fourth peak is the only one of the four out of sample, and **the first thing asked
+is the instrument** — the locator's own precision at each of the four peaks, before any residual is read
+off them, with the stopping rule that a locator worse than ten multipoles at $\ell_4$ means the residual
+is not measured.*
+
+| file | what is in it | why it is what it is |
+|---|---|---|
+| `r6941_fine_{lcdm,cr}.npz` | the **reported configuration re-run at `LSTEP=1 LMAXL=2000`** — $1900$ multipoles against the reported $238$ — on both arms, each summed over its `KSLICE` pieces of 250 modes | ⚑ *this is the reference the reported grid's locator is measured against, peak by peak.* One `cr` slice costs 4m37s against well under a minute at `LSTEP=8`, so the set is sliced: **`r6893` lost a whole `LSTEP=2` run to a container restart at eighty minutes of a hundred** |
+| `r6941_fine_cr_visleaf.npz` | the arm's `VISLEAF=1` endpoint, real (`comb_f1`) and injected (`inj_f0`, `inj_f1`), at the same fine sampling | so `cc66.44`'s three-way separation is **measured** at $\ell_2$, $\ell_3$ and $\ell_4$ rather than inherited from the coarse grid. ⚠ the injected arrays are the projection's transfer of a known input and are **not** spectra of the model |
+
+⇒ ⛭⛭ **What they say.** The reported grid's locator recovers the fine-grid peak to
+$0.0007/0.0126/0.0283/0.0176$ of a multipole on the control and $0.0035/0.0089/0.0167/0.0229$ on the arm
+— **two hundredths at $\ell_4$ against a bar of ten**, so the stopping rule misses by a factor of four
+hundred and the residual is measured. ⛔ *What is imprecise is the parabola's **window**: over `PO-47`'s
+admissible $W=15\ldots110$ the located peak moves up to $5.8$ (arm) and $6.5$ (control) multipoles at
+$\ell_4$, a bias that grows with peak index and displaces the sky and both models alike.*
+
+⛭⛭⛭ **And the four-peak pattern is two artefacts.** Sub-bin the arm is $221.96/536.11/815.40/1130.53$,
+so the residual is $+1.56/-1.60/-1.90/+6.63$ — *peaks two and three were never "on"* — and the
+**control** produces four fifths of the fourth peak's residual ($+5.32$ of $+6.63$). What is the
+construction's is $+1.61/-0.19/+1.07/+1.31$: **one near-constant multipole at all four peaks**, inside
+the sky's own locating spread at every one of them.
+
+⌗ *And at $\ell_3$ the two bracketing `LSTEP=8` bins differ by four parts in ten thousand, so the raw
+grid reading there is a coin flip — the paper quotes $820$, this locator picks $812$, the sub-bin apex is
+$815.40$ and the fine grid's own maximum is at $815$.*
+
+Launchers: `../r6941_directions/`.

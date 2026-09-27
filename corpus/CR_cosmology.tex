@@ -778,11 +778,17 @@ point and the background fixed by the distance data alone.}
 The peaks fall at $222$, $538$, $818$ and $1134$ against the sky's $220.4$, $537.7$, $817.3$ and $1123.9$;
 the comb fitted to them by the procedure this paper runs on the sky is $298.0$ against the sky's $298.4$, and
 the phase intercept $\varphi/\pi=-0.2349$ against $-0.2405$. The height ratios are $P_{1}/P_{2}=2.264$ and
-$P_{1}/P_{3}=2.298$ against the sky's $2.217$ and $2.277$. \emph{The first three peaks land within a grid
-step, and the fourth is not resolved against the sky}: located through one procedure with the likelihood's own
-covariance propagated, this arm sits $0.9$ to $1.3$ standard deviations from the measured fourth peak across
-the admissible window, so \emph{the data cannot tell the two models apart
+$P_{1}/P_{3}=2.298$ against the sky's $2.217$ and $2.277$. \emph{The first three peaks agree with the sky inside the
+spread the locating itself carries, and the fourth is not resolved against it}: located through one procedure
+with the likelihood's own covariance propagated, this arm sits $0.9$ to $1.3$ standard deviations from the
+measured fourth peak across the admissible window, so \emph{the data cannot tell the two models apart
 there}\rcpt{P15_the_skys_own_fourth_peak_cannot_tell_the_arms_apart_and_the_displacement_is_shared_with_the_control}.
+\emph{That one procedure is a requirement and not a convenience}, because the fitting window is a source of
+bias rather than of scatter: across the admissible windows the located peak moves by a fraction of a multipole
+at the first peak and by some six at the fourth, a wider fit on an increasingly asymmetric and
+damping-suppressed hump pulling its apex down the envelope's slope---\emph{and it moves the sky and both
+models the same way}, so it cancels from a difference taken through one procedure and does not cancel from
+anything else.
 \emph{And what offset there is, is mostly not this construction's}: both models sit high of the located sky,
 the control by $1.2$ standard deviations and this arm by $2.1$, with well over half of this arm's offset being
 the control's own. \emph{Two wavenumber cutoffs agree to every digit, and the positions are
@@ -878,9 +884,16 @@ pin that intercept tighter than a hundredth, and the offset is inside it.
 \emph{What remains is about one multipole at each peak, and it is not the damping envelope.} Imposing the
 control's envelope on this arm moves the fourth peak by a seventh of a multipole against an offset of two,
 and the inverse operation returns the same displacement with the opposite sign, so the test is sound and the
-answer negative. \emph{The offsets keep their sign and order across all four peaks} --- the shape of a small
-common phase rather than one displaced peak, though not a clean constant --- and \emph{at the spreads the
-locating itself carries, a finer statement is not available}.
+answer negative. \emph{And read as the difference between the two arms, located sub-bin by the same procedure on each, the
+offsets are one near-constant multipole at all four peaks}: $+1.61$, $-0.19$, $+1.07$ and $+1.31$. \emph{That
+is the shape of a small common phase and not of a ruler or a driving error}---a constant displacement fits it
+half again better than a constant fractional one, which would have to grow from half a multipole at the first
+peak to two and a half at the fourth, and a driving error would grow faster still. \emph{What each arm shares
+with the other is larger than what separates them}: both sit low of the located sky at the second and third
+peaks and high at the fourth, and at the fourth the control carries four fifths of the
+offset\rcpt{P15_the_locator_is_good_to_three_hundredths_and_the_fourth_peaks_residual_is_the_controls_too}.
+\emph{At the spread the sky's own locating carries, one multipole is not distinguishable from none}, so this
+is a shape the comparison exhibits rather than a disagreement it records.
 
 \begin{figure}[t]
 \centering
@@ -1072,11 +1085,14 @@ paths, so what remains is about one multipole at each peak.
 
 \emph{The result is reproduced independently on a second instrument.} A separate implementation---the
 hierarchy path rather than the line-of-sight one, $185$ covered bins rather than $133$, its own wavenumber
-grid---returns peaks at $220$, $540$, $820$ and $1132$ against this one's $222$, $538$, $818$ and $1134$,
-height ratios $2.273$ and $2.319$ against $2.264$ and $2.298$, and $4.02$ per bin in the band from $\ell=700$
-to $1000$ against $4.23$: \emph{within a grid step on every peak and within one per cent on the
-heights}. \emph{The fourth peak's excess reproduces there too}, at $1132$, so it is a property of the
-spectrum rather than of either implementation.
+grid---returns peaks at $221.96$, $536.11$, $815.40$ and $1130.53$, located sub-bin on a grid refined to unit
+step and recovered there to a few hundredths of a multipole, against this path's $222$, $538$, $818$ and
+$1134$; height ratios $2.273$ and $2.319$ against $2.264$ and $2.298$; and $4.02$ per bin in the band from
+$\ell=700$ to $1000$ against $4.23$: \emph{within a multipole on every peak and within one per cent on the
+heights}. \emph{The fourth peak's excess reproduces there too}, so it is a property of the
+spectrum rather than of either implementation---and on that path, where the sub-bin location is available on
+both arms, it is a property the control carries with
+it\rcpt{P15_the_locator_is_good_to_three_hundredths_and_the_fourth_peaks_residual_is_the_controls_too}.
 
 \emph{The heights are the polarisation path's and the positions are not.} Both paths return the same comb to
 four figures; the height ratios differ between them by more than either differs from the sky --- $2.264$ and

@@ -629,11 +629,38 @@ algebraic identity and not a dynamical one}: $[f(a)\otimes T,p_a]=\mathrm{i}\hba
 scale-factor function alone and the tower factor rides through---so the inequality holds verbatim in form
 at every order, and its form is blind to the ordering. \emph{And pointwise cancellation is excluded by the
 trace rather than found to be absent}: the trace of an energy term $h(a)\otimes T$ is $(h+ah')T/2\pi^{2}a^{3}$
-exactly, traceless precisely when $h\propto1/a$, so a power law $c\,a^{-n}$ contributes
-$\partial_a\Theta\propto(n-1)(n+3)a^{-n-4}$ and matching the anomaly's $a^{-5}$ forces $n=1$, where the
-coefficient $(1-n)$ vanishes and the term contributes nothing at all. \emph{The anomaly exists because
-$\ln a$ breaks the exact $1/a$ scaling that made the bare sum traceless, and the only scaling that could
-cancel it is that same $1/a$}---what would undo it is what it undid. The level-set argument likewise
+exactly, so a term $c\,a^{-n}\ln^{m}a$ contributes
+$2\pi^{2}\Theta=c\,a^{-(n+3)}\bigl[(1-n)\ln^{m}a+m\ln^{m-1}a\bigr]$, and the counterterm's own $a^{-4}$ is the
+member of that family at $n=1$, $m=1$. \emph{The whole family is closed under the operation rather than
+annihilated by it, and closure in one direction only is what settles the question.} From a term at $n=1$ the
+highest power surviving in $\partial_a\Theta$ is $\ln^{m-1}a$ with coefficient exactly $-4mc$, while a term
+one logarithm higher reaches both $\ln^{m}a$ and $\ln^{m-1}a$: so the terms chain \emph{downward} in the
+logarithm and never upward, the coefficient system over log powers is lower triangular with diagonal $-4m$,
+and $\partial_a\Theta\equiv0$ therefore forces every coefficient to vanish. \emph{The leading logarithm has no
+partner}, and that is why nothing cancels the residue at any $(n,m)$---the pure-power case, where $n=1$ kills
+the coefficient outright, is this statement at $m=0$. \emph{What a tuned coefficient would do is relocate the
+obstruction rather than remove it}---at exactly twice the residue a second-logarithm term annihilates the
+constant coefficient the counterterm sits in and leaves the next logarithm up at sixteen times the residue,
+with the curvature's variance at that same state eleven decades above the measured
+floor\rcpt{P10_the_second_logarithm_holes_the_mechanism_and_not_the_conclusion_because_the_leading_log_is_unpartnered}---\emph{but
+that relocation is a fact about the trace formula's closure and not about this theory, because the term it
+needs does not exist here.} The relocation must sit at the power of $a$ the counterterm sits at, since that is
+what lets it reach the constant coefficient at all. \emph{And in the reduced theory the only scales are $a$
+and the Planck length}, so the vacuum energy is $a^{-1}\sum_j f_j(\ell_P/a)^{j}$ against a polynomial in
+$\ln(a/\ell_P)$: the power is $1+j$, one vertex pair costs $\ell_P^{2}$, and the interaction therefore enters
+at $j\ge2$. \emph{So the counterterm's own power is populated at $j=0$ alone}---by the free tower, whose
+large-label weight $2(m^{2}-4)\sqrt{m^{2}-3}$ is a pure Laurent series and carries no logarithm of the label,
+so the pole there is simple and the logarithm is capped at the first power. \emph{The second logarithm is
+therefore unavailable at every order of the coupling and not merely at the lowest}, and asking the two
+families to cancel each other instead has no solution, one coefficient being unable to annihilate two
+different powers of $a$ at once. \emph{The cubic's own sum carries no logarithm either}: the three-harmonic
+overlap on the spatial section obeys an exact multiplet sum rule, weight $n_1n_2n_3$ on the triples
+satisfying the triangle inequality with odd perimeter, and every term of the soft expansion has the form
+$j(j^{2}-3)^{p}$---an odd polynomial terminating above the first power when $p$ is an integer, an
+even-power series otherwise---so the inverse first power, which is what a harmonic number would
+occupy, has coefficient exactly zero at every
+order\rcpt{P10_the_second_logarithm_line_closes_because_the_interaction_cannot_reach_the_anomalys_own_power_of_a}.
+The level-set argument likewise
 survives on every fibre that exists: wherever the cubic's tower operators are simultaneously diagonal, the
 curvature is multiplication by $4\Lambda+\sum_j c_j a^{-n_j}$, whose derivative has no zero while $r>0$,
 whose level sets clear to a polynomial of degree six and are therefore finite, and a direct sum over such
@@ -641,10 +668,25 @@ fibres manufactures no point spectrum from parts that have
 none\rcpt{P10_the_commutator_bound_survives_the_cubic_because_the_scaling_that_could_cancel_it_carries_no_trace}.
 \emph{A tuned coefficient can make the right-hand side vanish, and that is not sharpness}: the bound goes
 vacuous while the curvature's variance stays almost six decades above the measured floor, and two distinct
-powers of $a$ agree at isolated points rather than on a set of positive measure. \emph{So what the coupling
-is needed for is narrower again}---entangled states over a non-commuting cubic tower family, the
-non-commutativity measured against a commuting control by fourteen orders---and whether such a state can
-sharpen the curvature is open.
+powers of $a$ agree at isolated points rather than on a set of positive measure. \emph{And the correlated
+case is a question about one operator family rather than about states.} Because the trace equation is
+\emph{algebraic} in the matter trace---$R=4\Lambda+\kappa\Theta$ carries no derivative of the scale
+factor---the curvature commutes with it exactly, so the curvature is a direct integral of
+$4\Lambda+\sum_k\kappa_k a^{-m_k}T_k$, one operator on the excitation factor at each scale. \emph{A constant
+eigenvalue branch then forces its own value}: every power is negative, so the family tends to $4\Lambda$ and
+a branch constant on a set of positive measure can only be $4\Lambda$ itself---leaving the condition that
+$\sum_k\kappa_k a^{-m_k}T_k$ be singular for almost every scale. \emph{At finite truncation that is exactly
+the singularity of the excitation operators' own pencil}, a condition carrying neither the scale nor the
+couplings, because with distinct powers no two monomials of the determinant can meet on the curve the scale
+traces; and the pencil is non-singular at every truncation computed, in exact arithmetic, for the two
+non-commuting operators the cubic supplies and for three at the powers where they
+collide\rcpt{P10_the_entangled_case_is_a_singular_pencil_question_and_the_pencil_is_non_singular_at_every_truncation}.
+\emph{The one place the truncation speaks for itself runs toward the affirmative rather than away from it}: at
+odd truncation a ladder matrix is singular and the coupling system does acquire solutions, but every one of
+them switches off at least two couplings, and the operators the tower actually carries have purely continuous
+spectrum and so no null vector at all. \emph{What is open is the tower limit of that criterion}---at finite
+truncation singularity is a vanishing determinant, and in the tower it is a statement about the point
+spectrum of an unbounded family.
 
 \emph{And there is a second place the degeneracy ends, at fixed background, which is the shear.}
 The deficit \emph{is} $C^{2}$; for an anisotropic shear over an isotropic expansion the invariant is

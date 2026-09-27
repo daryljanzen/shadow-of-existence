@@ -4895,3 +4895,102 @@ assignment — the row's question is whether it is right, and how well the comb 
 toward that, not the answer; that $f<0$ is admissible; a re-derivation of the sky's locating width, which
 is P15's own; that the injected runs are spectra of this model; any mechanism beyond `cc66.42`'s; nothing
 touches `prop:flat` and there is no refit.
+
+
+# ⛭⛭⛭ r6941+cc66.45 — THE LOCATOR IS GOOD TO THREE HUNDREDTHS, AND THE FOURTH PEAK IS THE CONTROL'S TOO
+
+***`r6941`'s order (headed `r6939`): the fourth peak is the only one of the four out of sample, so ⓶
+establish the locator's own precision at each of the four peaks BEFORE reading any residual off them —
+the stopping rule being that a locator worse than ten multipoles at $\ell_4$ means the residual is not
+measured and the order ends there. ⓷ Then the three-way separation at every peak index. And the guard:
+one systematic or two, and do not pick.***
+
+## ⛭⛭ ⓶a THE STOPPING RULE DOES NOT FIRE, AND IT MISSES BY A FACTOR OF FOUR HUNDRED
+
+The reported configuration re-run at `LSTEP=1 LMAXL=2000` — $1900$ multipoles against the reported $238$,
+on both arms, 35 `KSLICE` slices — gives the reference the reported grid's locator is measured against:
+
+| | $\ell_1$ | $\ell_2$ | $\ell_3$ | $\ell_4$ |
+|---|---|---|---|---|
+| control, fine | 220.351 | 536.291 | 814.331 | 1129.224 |
+| control, `LSTEP=8` | 220.350 | 536.303 | 814.303 | 1129.206 |
+| **error** | **0.0007** | **0.0126** | **0.0283** | **0.0176** |
+| arm, fine | 221.956 | 536.105 | 815.398 | 1130.531 |
+| arm, `LSTEP=8` | 221.953 | 536.114 | 815.381 | 1130.508 |
+| **error** | **0.0035** | **0.0089** | **0.0167** | **0.0229** |
+
+⇒ ***Two hundredths of a multipole at $\ell_4$ against a bar of ten.*** *And the extremum search is
+insensitive to its own width — order $3$ through $40$ on the fine grid returns the same four peaks to
+every printed digit — so the damping's flattening costs neither the search nor the refinement.*
+
+## ⛔ ⓶b WHAT IS IMPRECISE IS THE PARABOLA'S WINDOW, AND IT IS A BIAS RATHER THAN A NOISE
+
+Swept over `PO-47`'s admissible $W=15\ldots110$ the located peak moves $0.08/2.77/4.73/5.82$ on the arm
+and $0.11/2.98/4.97/6.49$ on the control — **growing steeply with peak index**, because a wider fit on an
+increasingly asymmetric, damping-suppressed hump pulls its apex down the envelope's slope.
+
+⇒ *So at $\ell_4$ the window's bias is comparable to the residual being read there* — **but it displaces
+the sky and both models the same way, which is exactly what the corpus's matched-procedure differencing
+is for** and not a convenience. At the tight window $W=25$ the anchored parabola and the three-point
+locator agree to $0.2$ of a multipole at every peak.
+
+## ⛭⛭⛭ AND THE ORDER'S PATTERN IS TWO ARTEFACTS, NEITHER OF THEM PHYSICS
+
+**First the quartet's provenance.** $222/538/818/1134$ is `sec:refit-bound`'s **line-of-sight** path;
+every bank in this campaign is the **hierarchy** path, whose raw grid reading is $220/540/812/1132$. ⌗
+*And at $\ell_3$ the two bracketing `LSTEP=8` bins differ by **four parts in ten thousand**, so which one
+is called the peak is a coin flip: the paper quotes $820$ on this path, this run's locator picks $812$,
+the sub-bin apex is $815.40$, and the fine grid's own maximum is at $815$.*
+
+**Second, the differencing.**
+
+| $n$ | arm | control | sky | arm − sky | control − sky | **arm − control** |
+|---|---|---|---|---|---|---|
+| 1 | 221.956 | 220.351 | 220.4 | $+1.556$ | $-0.049$ | **$+1.605$** |
+| 2 | 536.105 | 536.291 | 537.7 | $-1.595$ | $-1.409$ | **$-0.186$** |
+| 3 | 815.398 | 814.331 | 817.3 | $-1.902$ | $-2.969$ | **$+1.067$** |
+| 4 | 1130.531 | 1129.224 | 1123.9 | $+6.631$ | $+5.324$ | **$+1.308$** |
+
+⇒ ***Sub-bin, peaks two and three were never "on" — they are each about $1.7$ LOW — and peak four is
+$6.6$ out rather than $10.1$.*** And ⇒ ***the CONTROL produces four fifths of the fourth peak's residual
+($+5.32$ of $+6.63$), so what belongs to this construction is $+1.61/-0.19/+1.07/+1.31$: a near-constant
+ONE multipole at all four peaks.***
+
+**That is a constant $\Delta\ell$ — the FIRST of the order's three shapes** — fitting half again better
+than the ruler's constant $\Delta\ell/\ell$ (rms $0.68$ against $1.02$, the ruler needing
+$0.52/1.25/1.91/2.65$) and nothing like a driving error growing with $\ell$. ⇒ **So the pattern needs ONE
+systematic and not two, and the "one-off, two-and-three-on, four-off" shape that fitted none of the three
+candidates was the raw grid plus an undifferenced sky comparison.**
+
+⌗ *And the sky cannot tell that one multipole from zero: `PO-47` measured its fourth peak at
+$1121.9\pm2.36$ and put the arm-minus-control displacement at $0.83\sigma$ — every one of the four is
+inside that spread, which is why this is reported as a shape and not as a disagreement.*
+
+## ⚑ ⓷ THE SEPARATION AT EVERY PEAK INDEX, AND $\ell_1$ IS THE OUTLIER
+
+| $n$ | total motion | relocation | visibility | plasma |
+|---|---|---|---|---|
+| 1 | $+1.893\%$ | $31.2\%$ | $9.2\%$ | $59.6\%$ |
+| 2 | $+0.628\%$ | $94.1\%$ | $26.4\%$ | $-20.5\%$ |
+| 3 | $+0.709\%$ | $83.4\%$ | $22.7\%$ | $-6.0\%$ |
+| 4 | $+0.662\%$ | $89.3\%$ | $23.5\%$ | $-12.8\%$ |
+
+***At $\ell_2$ through $\ell_4$ the motion is almost entirely geometric and the plasma's phase partially
+CANCELS it, where at $\ell_1$ the plasma dominates and adds.*** By the order's reading, fixed in advance:
+the plasma's share does not grow with $n$, so the residual is not in the driving; the relocation share
+does grow, which points at the ruler. ⚠ **But the third reading is the one that applies: the shares are
+not flat and the residual is not reached** — the family's motion is $+0.6$ to $+0.7$ per cent with one
+sign at every peak while the sky residual alternates, *so the decomposition does not cover the four-peak
+pattern, which is a statement about the guard's coverage and not a failure of the run.*
+
+⌗ *The motions are resolved: fine against coarse they agree to $0.02$ of a multipole at every peak, so
+the shares are the spectra's and not the grid's.*
+
+⚑ **Receipt**: `P15_the_locator_is_good_to_three_hundredths_and_the_fourth_peaks_residual_is_the_controls_too.py`
+— four parts, **24 gates**, `GATES: ALL PASS`. Banks at `spectra/r6941_*`; launchers at
+`computations/beyond_the_wall/r6941_directions/`. ⌗ **No corpus edits, as the order directs** — the
+paper-side consequences go to 66 in `FOR_66.md`. ⚠ **NOT CLAIMED**: a mechanism for the one-multipole
+offset; a re-derivation of the sky's locating spread, which is `PO-47`'s; that the window convention is
+an error rather than a convention; that peak four is uninteresting — it is the largest of the four and
+four fifths of it is the control's; no verdict on the two-rate assignment; no refit; nothing touches
+`prop:flat` or the clock family.
