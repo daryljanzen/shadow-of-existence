@@ -106,7 +106,17 @@ jobs:
     name: heavy — every receipt run where it is registered
     if: github.event_name == 'schedule' || github.event_name == 'workflow_dispatch'
     runs-on: ubuntu-latest
-    timeout-minutes: 45
+    # ⛭ r6959 (66): RAISED 45 -> 75, sized from node 70's measurement rather than from the failure.
+    #   The suite measured 2380s (39.7 min) at `--jobs 4` with
+    #   `P15_the_low_multipole_floor...` KILLED at the 600s cap -- so 5 minutes of margin under a
+    #   45-minute job.  That receipt is now declared LONG at 1800s on a measured 1021s standalone,
+    #   and the runner does not schedule by declared budget, so in the worst case it starts last and
+    #   adds its full 1200s of newly-permitted time to the critical path: 2380 + 1200 = 3580s, or
+    #   about 60 minutes.  ⇒ *** A 45-minute job would then fail on the clock rather than on the
+    #   tree, which is the same class of defect as a cap that files a receipt as a failure. ***
+    #   ⌗ *75 is the worst case plus a quarter, on the rule the LONG declarations use: the measured
+    #   figure plus headroom, not a round number chosen to feel safe.*
+    timeout-minutes: 75
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5

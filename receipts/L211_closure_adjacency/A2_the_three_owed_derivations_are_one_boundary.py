@@ -130,9 +130,16 @@ def main():
     # at the source is the same error this line has made eleven other ways. **
     cap = re.sub(r'\s+', ' ', open(os.path.join(ROOT, 'THE_ASSUMPTIONS_RETREATED_UPWARD.md'),
                                    encoding='utf-8', errors='replace').read())
+    # ** r6959 (66, gating 70's r6931+70.3): THE SAME CORRECTION, ONE LINE UP, AND THIS CHECK WAS
+    #    PINNING ITS STALE HALF.  The capstone carried the PRE-CORRECTION PAIR -- rho ~ 5.4e-2 with
+    #    (rho_r/rho_m)_max ~ 7.3e-4 -- while P16 sec687 has carried 5.45e-2 and 7.4e-4 since r6921.
+    #    *** r6939 corrected the MASS and a_eq in this same passage and left the pair above them
+    #    untouched, which is how a document ends up internally split across one correction. ***  The
+    #    capstone now reads the corpus's pair and this pin follows it, with the retired figure
+    #    asserted gone the way 70 did for the mass one line below. **
     check("AND THE PROGENITOR ROUTE HAS BEEN WALKED: the capstone carries the progenitor's "
-          "composition DERIVED, (rho_r/rho_m)_max ~ 7.3e-4",
-          '7.3\\times10^' in cap)
+          "composition DERIVED, (rho_r/rho_m)_max ~ 7.4e-4",
+          '7.4\\times10^' in cap and '7.3\\times10^' not in cap)
     # ** r6931+70.3: class (a), A PIN THAT FROZE A VALUE THE CORPUS CORRECTED.  The progenitor is
     #    the forced member, so its mass M = c^2/(3 sqrt(Lambda) G) runs as 1/H0: 4.3e52 is the Planck
     #    configuration's figure and 4.17e52 the one at the H0 the distances fix.  r6921 (5f9c2b2d)

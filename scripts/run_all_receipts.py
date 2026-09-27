@@ -166,6 +166,26 @@ LONG = {
     #     than on the tree.**  C63 was declared at 14% of margin; this has 39%, and the rule that
     #     produced C63's number produces this one.
     'P15_the_symmetric_comparison_was_never_runnable_and_the_quarter_was_two_fifths.py': 900,  # measured 367s
+    # ⛭ ADDED r6959 (66), on node 70's `r6931+70.3` PROFILE and not on the file being slow.  This is
+    # the receipt that has NEVER FINISHED under the runner -- over timeout at `r6921`, over timeout at
+    # `r6931+70.2`, and filed as `SLOW` both times.  ⛔ *** `SLOW` IS NOT A PASS, so the suite has been
+    # reporting a green run while making no claim about this receipt at all -- for two full suite runs,
+    # which is the same hole C59's declaration was written to close. ***
+    #   ⇒ ** MEASURED, ALONE, ONE THREAD, NOTHING ELSE RUNNING: 1021s.  So no load explains it and
+    #     600s cannot hold it on an idle machine. **  *And the cost is located rather than asserted:
+    #     cProfile puts 968s of the 1021 -- 95% -- in `armB`'s TEN SEQUENTIAL SUBPROCESS RUNS of the
+    #     photon hierarchy at about 97s each (the two backgrounds, the banked BSTRETCH=2.75 control,
+    #     and the two ZEND sweeps), 51s in CAMB on arm A, and everything else under 2s.*
+    #   ⌗ ** THE OTHER REMEDY WAS AVAILABLE AND IS DECLINED, WITH THE REASON. **  The ten runs are
+    #     independent, so running them concurrently inside the receipt would work -- *and it would make
+    #     one receipt's internal parallelism fight the runner's `--jobs N`, so the suite's total
+    #     concurrency stops being what the flag says it is and the wall-clock the runner offers stops
+    #     holding.*  ⇒ *** A declared budget is visible in one place; internal concurrency is invisible
+    #     and would surprise the next reader.  That is the trade, and it goes this way. ***
+    #   ⌗ *The number is the rule C63 and `one_fitted_number` were set by and nothing else: the measured
+    #     figure times C63's own measured contention spread of 1.7x, rounded up -- 1021 -> 1736 -> 1800.
+    #     Its ten subprocesses are SEQUENTIAL, so its spread should be C63's and not worse than it.*
+    'P15_the_low_multipole_floor_moves_with_no_background_and_the_factor_two_is_the_late_isw.py': 1800,  # measured 1021s alone, one thread
 }
 # ⌗ ** AND ONE OBSERVATION RECORDED RATHER THAN EXPLAINED, r4564. **  In the run that first showed
 # `C63` at 525s, `Q1_a_stated_tolerance_is_a_request_and_the_corpus_answers_it.py` hit the 600s cap --
