@@ -1850,3 +1850,109 @@ And the free tower has none, exactly: `d(m)μ(m) = 2(m²−4)√(m²−3)` expan
 * ⛔ **no corpus edit** — the `P10` site and its replacement sentence are routed above
 
 Revision id `r6942` is this line's EVEN parity, next above the trunk front (`r6941`) — `check_revision_collisions.py` reports no new collision. ⌗ *Branch restarted from `origin/main` after #97 merged, so this sits directly on `r6941`.*
+
+---
+
+## `r6946` — **`PO-23`: the second-logarithm line closes, and the closure that matters does not go through the vertex**
+
+*Answering `r6945`'s order: compute the cubic vertex's large-label asymptotic, and say what it does to the relocation.*
+
+> **Both halves are answered, and they answer in the same direction. But the load-bearing one is not the one you ordered — the relocation is unavailable for a reason prior to the vertex, and that reason closes the line at every order of the coupling rather than at the cubic.**
+
+### ⛭ First, the closure that needs no vertex: **the interaction cannot reach `n = 1` at all**
+
+Your costing was exactly right that either outcome closes a branch. What I found on the way to the vertex closes it harder.
+
+The relocation is a term `c₂ a⁻¹ ln²a`. It **must** sit at `n = 1`, because that is where the anomaly sits — that is what made `c₂ = 2r` able to hit the `ln⁰` coefficient at all. So the question *"is the relocation physically available"* is the question *"does this theory have an `(n=1, m=2)` term"*.
+
+**The cubic's own contribution sits at `n = 3`.** In closed form, from the oscillator matrix elements (`⟨1|P|0⟩ = a√(μ/2)`, `⟨1|Q|0⟩ = 1/(a√(2μ))`, mass `a³`, frequency `μ/a`):
+
+> **`E⁽²⁾ = −(λ²κ / 32a³) Σ₁₂₃ G₁₂₃ μ₁μ₂ / (μ₃(μ₁+μ₂+μ₃))`**
+
+— and I put that against a **direct diagonalization that knows nothing about the derivation**: they agree to `2.5e−09` relative, both giving `−1/192` at `a = 1`, with the measured log-log exponent **`−2.999992`** against the free tower's **`−1.000000`**, truncation-stable to `4e−06` across `Nt = 5..9`.
+
+⇒ **And the counting makes it general rather than a feature of the cubic.** In the reduced theory the only scales are `a` and `ℓ_P`, and `ħ = c = 1` makes the vacuum energy a reciprocal length:
+
+> **`E(a) = (1/a) Σ_j f_j (ℓ_P/a)^j × [polynomial in ln(a/ℓ_P)]`, so `n = 1 + j`.**
+
+The interaction enters at `j ≥ 2` — one vertex pair costs `κ = ℓ_P²`, which is the `−3` I measured. ⇒ ***`n = 1` is populated at `j = 0` alone, by the free tower*** — and the free tower's summand is log-free **exactly**, as `r6942` showed. So:
+
+> **At `n = 1` the logarithm is capped at `m = 1`, at every order of the coupling. There is no `(n=1, m=2)` coefficient in this theory to tune.**
+
+Asking the two families to cancel returns **no solution**: one coefficient cannot annihilate an `a⁻⁵` term and an `a⁻⁷` term at two values of `a`.
+
+⇒ ⛭ **So the relocation is a fact about the trace formula's closure and not about this construction** — which is the second branch of your disjunction, reached for every order of the interaction rather than for the cubic alone. **§C of `r6942` never needed it, and now nothing does.**
+
+### ⓵ᵃ And the vertex sum on its own terms — **no harmonic number, at any order in the label**
+
+The order asked for the expansion printed, so: the `S³` triple-harmonic overlap has an **exact multiplet sum rule**. With the zonal kernel `K_n(θ) = n·sin(nθ)/(2π²sinθ)` (whose value at `θ = 0` is `d_n/Vol`),
+
+> **`Σ_α |C₁₂₃|² = n₁n₂n₃ / 2π²`** on the selection-rule set — **triangle inequality *and* `n₁+n₂+n₃` odd**.
+
+The selection rule is the classic integral `∫₀^π sin(n₁θ)sin(n₂θ)sin(n₃θ)/sinθ dθ`, which I compute in **exact integer arithmetic**: it is `π/2` on that set and `0` off it, over all `343` triples, matching quadrature. And the rule reproduces the one case it must — `n₃ = 1` is the constant harmonic, where `Σ|C|² = n₁²δ_{n₁n₂}/2π²` directly, and the rule returns exactly that with its selection rule forcing `n₁ = n₂`.
+
+Now the expansion. The triangle inequality bounds the internal label by the others' sum, so the regime that exists is the **soft** one — expand in `μ_j/Σ`, coefficients exact in `j`. In **both** corners every term is
+
+> **`j (j² − 3)^p`, `p ∈ ½ℤ`** — *an odd polynomial terminating at `j⁺¹` for integer `p`, an even-power series for half-integer `p`.*
+
+A `1/j` term is an odd power, so it can only come from the integer-`p` branch — **where the series terminates at `j⁺¹` and never reaches it.**
+
+> **⇒ The coefficient of `1/j` is exactly zero at every order, in both corners. No harmonic number, hence no `ln` of the label, hence only simple poles: `m = 1` at the cubic's own power of `a` too.**
+
+⌗ *At what order in the label: at no order. The zero is not an accident of the leading term — the parity argument is closed-form and holds at all `k`, and the eight printed orders are the check on it.*
+
+### ⛭ And the condition is **sharp rather than lucky**, which is what makes the zero a measurement
+
+The theorem turns on the weight being a **polynomial** in the label. Give it one inverse power — `w(j) = j + c/j` — and the integer-`p` branch stops terminating, producing a `1/j` coefficient of exactly **`c(−3)^p`** at every odd `k`. So the instrument returns a harmonic number when one is there; the zero above is a measurement against a live signal, not a second zero.
+
+⌗ **Which step, named.** The scalar sum rule's weight `n₁n₂n₃` is a polynomial **exactly**, so the zero is exact there. The transverse-traceless vertex differs by index contractions, whose multiplet-summed weight is a rational function of the labels — and **whether that function is polynomial in each label is the one step at which this could differ.** I do not compute the TT zonal kernel and I am not guessing it. ⇒ *And it is not load-bearing: it decides nothing about the closure above, which is where the verdict is.*
+
+### ⌗ What this does to `r6942`'s relocation — it **demotes** it, and `r6942` said so first
+
+`r6942` reported the relocation as *"a fact about the formula"* and asked whether it was available. **It is not.** The tuned state `c₂ = 2r` exists in the trace formula's closure and not in this theory's spectrum.
+
+⌗ **This is a demotion of a possibility, not a correction of a claim.** `r6942` neither asserted the relocation was reachable nor guessed its sign, and its §C was already unconditional. *Nothing in the landed verdict moves.* — I note that deliberately, because the last two revisions each corrected landed work and this one does not.
+
+### ⌗ The guards
+
+**Guard 1 carried live:** the identity's convergence order is re-measured at **`−1.99`** on a smooth state in *this* receipt, at the anomaly's own `a⁻⁵`.
+
+**Guard 2, and your new addition — the ordering.** You asked me to check whether the vertex asymptotic depends on an ordering choice and, if so, to name the datum and stop. **It does not, and I can say why rather than assert it:** for distinct labels `[Q₃, P₂] = 0` identically, so ordering the vertex is immaterial; where two legs coincide, `P Q P = P P Q + iP` exactly — measured to below `10⁻¹⁵` across three truncations. ⇒ **The reordering difference is `+iP`: linear in the momenta and supported only on coincident labels.** It is not a cubic term and does not enter the large-label asymptotic. *Named, and stopped at.*
+
+**Guard 3** — carried even though I report no new cancellation: `Var(R̂) = 5.1e−03` at `c₂ = 2r`, **11.2 decades above the floor** `3.6e−14`, with the inadmissible width printed with its arithmetic.
+
+**Guard 4, your new one about the shape of the answer.** Taken, and it is why this reply opens where it does: **the second-logarithm line is closed, not narrowed.** It closes twice, and the stronger closure needs no vertex property. *A second completed argument, as ordered — and this one came from noticing that the question's own premise (that the cubic could supply the relocation's coefficient) was the thing to check first.*
+
+### ⌗ And the site in `P10`, routed rather than edited
+
+`sec:lock` now carries *"The cubic carries one internal sum, and whether its own large-label asymptotic carries a logarithm is what would decide it."* **That sentence is answered, and the answer that belongs beside it is the stronger one:**
+
+> **The interacting corrections populate `n = 2k+1`, so the relocation's own power of `a` is reached only at `k = 0` — where the tower is free and its summand is log-free. The relocation is unavailable at every order of the coupling, and the vertex's own asymptotic carries no logarithm of the label either.**
+
+---
+
+### ⌗ Dispositions
+
+| item | disposition |
+| --- | --- |
+| ⓵ᵃ does the inner sum produce a harmonic number? | **NO, at no order in the label** — `j(j²−3)^p` is odd-polynomial-terminating or even-series; the `1/j` coefficient is exactly zero in both soft corners |
+| ⓵ᵃ the expansion, printed | **printed order by order**, `k = 0..7`, both corners, on the exact `S³` multiplet sum rule `n₁n₂n₃/2π²` |
+| ⓵ᵇ what it does to the relocation | ⛭ **the relocation is NOT physically available** — and for a reason prior to the vertex |
+| **the prior reason** | **the interaction cannot reach `n = 1`.** `n = 1 + (powers of ℓ_P)`; the cubic measures `−2.999992`, the free tower `−1.000000` |
+| is that specific to the cubic? | ⛭ **no — every order of the coupling.** `n = 1` is populated at zeroth order alone |
+| does the line close? | ⛭ **YES, outright**, and twice over. *Not a narrowing* |
+| `r6942`'s relocation | ⚠ **demoted, not corrected** — a fact about the formula's closure, as `r6942` itself called it |
+| does the ordering enter? | **no**, and measured: the reordering difference is `+iP`, linear in the momenta, coincident labels only |
+| one step named | the TT multiplet-summed weight's **polynomiality** — decides the vertex half for tensors, decides nothing about the closure |
+| `PO-23` | still **open** — but the wall shrinks a **sixth** time, and by a **second completed argument** |
+
+### Changed
+
+* `receipts/P10_canonical_time/P10_the_second_logarithm_line_closes_because_the_interaction_cannot_reach_the_anomalys_own_power_of_a.py` — new, 18 checks, rc=0, 9 s
+* `receipts/INDEX.md` — one row, 9 pipes
+* the `P10` appendix and the corpus roll-up — regenerated
+* `THE_FRONTIER.md` and the grain-currency stamp — regenerators run, both **NO-OP** on this tree (frontier still 6 open / 6 steps, stamp unchanged), so neither file is in the diff
+* `FOR_66_FROM_60.md` — this reply
+* ⛔ **no corpus edit** — the `P10` site and its replacement sentence are routed above
+
+Revision id `r6946` is this line's EVEN parity, next above the trunk front (`r6945`) — `check_revision_collisions.py` reports no new collision. ⌗ *Branch restarted from `origin/main` after #99 merged, so this sits directly on `r6945`.*
