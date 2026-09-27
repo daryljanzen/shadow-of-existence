@@ -2162,3 +2162,114 @@ Everything load-bearing here is closed form: the reduction, the general-`z` solu
 * ⛔ **no corpus edit** — the `P10` site and its replacement sentence are routed above
 
 Revision id `r6954` is this line's EVEN parity, next above the trunk front (`r6953`) — `check_revision_collisions.py` reports no new collision. ⌗ *Branch restarted from `origin/main` after #102 merged, so this sits directly on `r6953`.*
+
+---
+
+## ⛭⛭ `r6962` — **`PO-23`: ⓵ IS YES, AND IT IS YES AT QUADRATIC ORDER. THE THING TO CHECK WAS THE ROW'S PREMISE ABOUT WHERE THE CONTENT BEGINS.**
+
+You made the datum the whole row and named the direction: *"the curvature enters through the trace, so the question is which structures the stress trace carries at cubic order … a `φ̂²` in `Θ̂` is a potential-like term, and the cubic vertex you used is kinetic."* **The direction is right and the order is wrong.** A `φ̂²` structure does enter `R̂`, it is potential-like exactly as you said, and it does not wait for the cubic: **it is in `Θ̂` at quadratic order, from the tower's own gradient energy**, at the power `a^{-2}` with coefficient `κμ_n²/2π²`.
+
+### ⓵ The answer, and three routes to it
+
+`sec:lock`'s own tower Hamiltonian is `Ĥ = Σ_n[π̂_n²/2a³ + ½aμ_n²φ̂_n²]`, and `r6934`'s trace formula sends an energy term `h(a)⊗T` to `(h+ah′)T/2π²a³`. Term by term:
+
+> **`2π²Θ̂_quad = −π̂_n²/a⁶ + μ_n²φ̂_n²/a²`**
+
+* **Route 2, independent of the trace formula.** For a minimally coupled mode `ρ−3p = (∂φ)² = −φ̇² + μ²φ²/a²` with `φ̇ = π/a³`. Term for term the same operator, with no `∂/∂V` taken anywhere.
+* **Route 3, and this is the one that locates the seam: your own instrument.** `r6930`'s `trace_of` applied to `E = S(a)/a` is exactly `S′(a)/2π²a³` — *the verdict "traceless" is the single step `S′ = 0`.* Written in the **fixed** field operators, `S(a) = μ(N̂+½) = (a²μ²φ̂² + π̂²/a²)/2`, and `S′/2π²a³` reproduces routes 1 and 2 term for term.
+
+`μ_n² = m²−3 ≥ 6` for every `m ≥ 3`, so the coefficient is never zero and never small. And the structure is **degree two** in the fields — it is not a cubic-order effect at all.
+
+### ⌗ Why the row read it as absent, and it is a sixth face of the standing lesson
+
+`r6930`'s own docstring names its scope: *"`Θ = ρ−3p` with `ρ = E/V` and `p = −dE/dV`, **at fixed occupation numbers**."* The verdict line drops it: *"traceless IDENTICALLY, as an operator … whatever the occupation numbers."* **The scope was in the function and not in the claim.** `â_n` depends on `a` (because `Mω = a²μ` does), so `S` is free of `a` for the c-number zero point `Σμ_n/2` and along fixed occupation — and not for the operator.
+
+In the adiabatic basis the same operator is exactly
+
+> **`2π²Θ̂_quad = (μ/a⁴)(â² + â†²) = X̂² − P̂²`, with `[X̂,P̂] = iμ/a⁴`**
+
+whose **diagonal is exactly zero at every truncation** — which *is* the harmonic virial theorem, `⟨n|K̂|n⟩ = ⟨n|V̂|n⟩`, verified exactly. So `ρ ∝ a^{-4}` and `p = ρ/3` are true of the expectation in every stationary state and in every mixture of them. On the squeezed state `|0⟩ + t|2⟩` the expectation is `2√2μt/a⁴(1+t²) ≠ 0`. Normal ordering cannot remove it either: `â²+â†²` carries no contraction.
+
+> ⛭ **The lesson: an operator that vanishes on the diagonal of a basis vanishes on that diagonal.** The five faces were the domain of a symbol, of an identity, of a representation, of an expansion, and of an equivalence. This is the **domain of a vanishing**, and its tell is that the warrant was an expectation value.
+
+### ⌗ What that does to the landed conclusion: it survives, and on better ground
+
+At quadratic order the residual tower operator is an **inverted oscillator**, whose point spectrum is empty. Exactly: the null equation in the momentum representation is `ψ″ + p²ψ/μ²a⁴ = 0`, solved (by substitution) by `√p J_{±1/4}(p²/2μa²)` — **both regular at the momentum origin, and neither square-integrable at infinity**, `|ψ|² ~ 1/p` with `∫₁^∞dp/p = ∞`. The envelope exponent measures `−0.50000` against the exact `−1/2`, and the `−1/2` holds at **every** real `z` exactly, since the WKB amplitude is `(p²+z)^{−1/4}`.
+
+> ⇒ **`R̂` still has no eigenvector at quadratic order — not because it is a function of `â` alone, which it is not, but because the operator it carries is an inverted oscillator.** That is a stronger warrant, because it does not depend on a term being absent.
+
+⚠ **What does not survive as stated is the half-line.** *"The spectrum is purely continuous, the half-line above `4Λ` with `4Λ` itself not attained"* used the same absence. `X̂²−P̂²` has spectrum all of `ℝ`, so the restored content puts spectrum **below** `4Λ` too. *Purely continuous survives; two-sided rather than a half-line.* I claim that at quadratic content only and route the sentence rather than extrapolating it.
+
+### ⓶ And the second branch's object does not exist either: the degenerate point is representational
+
+You asked, conditional on ⓵, for the deficiency indices at `x₀` and the form of the family. **The family is a single point, and the reason is `r6954`'s own third face returning on `r6954`'s own result.** One abstract operator `M̂ = c₁π̂² + c₂·½(π̂²φ̂+φ̂π̂²) + c₃φ̂²`; two representations, verified to be one operator by its exact Hermite matrix against the abstract ladder matrix:
+
+| representation | expression | leading coefficient |
+| --- | --- | --- |
+| position | `−(c₁+c₂x)ψ″ − c₂ψ′ + c₃x²ψ` | `−(c₁+c₂x)` — **vanishes at `x₀ = −c₁/c₂`** |
+| momentum | `−c₃ψ″ + ic₂(p²ψ′+pψ) + c₁p²ψ` | `−c₃` — **a constant; vanishes nowhere** |
+
+* The obstruction at the momentum origin is gone, as you predicted.
+* But there is **no singular point at which to impose a condition**. At large `|p|` the two asymptotic behaviours are `ψ₁ ~ p^{-1}exp(ic₂p³/3c₃ − ic₁p/c₂)` and `ψ₂ ~ exp(ic₁p/c₂)` — each verified by an exact limit on the ansatz's relative residual, and both exponents purely imaginary for real couplings, so `|ψ₁| = 1/p` and `|ψ₂| = 1` exactly. **Exactly one solution is `L²` at each end ⇒ both ends limit-point ⇒ deficiency `(0,0)` ⇒ essentially self-adjoint.**
+
+> ⇒ **So ⓶'s selection problem has no object, and the argument that closed the first-order case has more than purchase: at `c₂ = 0` — the quadratic content alone — it closes the question exactly.**
+
+**And what distinguishes `x₀` from `a = 0`, which you asked directly.** `a = 0` is an **endpoint of the physical configuration space** and a physical locus — the de Sitter cosmological horizon, surface gravity `1/α` — so the extension freedom is genuine and the horizon's own thermal state is there to close it. `x₀ = −c₁/c₂` is an **interior point in one representation and no point at all in the other**, and carries no locus. *The mechanism does not reach the degenerate point because there is nothing there for it to reach.*
+
+### ⌗ The status, in your own terms — and it is not the third completed argument
+
+Your first branch's words (*"the wall is gone as an object … the third completed argument, to be reported in those words"*) are for the branch where `φ̂²` does **not** enter. We are not on that branch, so I am not reporting them. Two of your own guards fire instead:
+
+1. **The closure at `c₂ = 0` does not extend by continuity.** At `c₂ = 0` neither solution is `L²`; at `c₂ ≠ 0` exactly one is, at each end. Switching on the kinetic vertex **creates** a square-integrable solution where there was none. What remains is a **connection condition** — one analytic equation asking the two ends' one-dimensional subspaces to coincide — and *not* a boundary condition. The scaling `p → λq` leaves one dimensionless parameter `v = c₁c₃^{1/3}c₂^{−4/3}`, constant in `a` only if the cubic's trace power is exactly `5`; the corpus's own *"`π_n²φ_m/a³` in kind"* puts it at `6`; and the `c₂ → 0` endpoint says the condition is not identically satisfied. **A shape, not a verdict.**
+2. **The content may be larger than three structures, and your guard says report the order and stop.** The kinetic sector's expansion `π̂²/(1+λφ̂)` always carries two powers of momentum. The **potential** sector — the term `½aμ²φ̂²` that §⓵ came from, `√h ³R` expanded in the transverse-traceless perturbation — gives `φ̂²` at quadratic order and **`φ̂³` at cubic**, with no momenta at all. `sec:lock` named only the kinetic vertex because that is the one that is singular at `a = 0`; the potential cubic is regular there and so was never in view — **but the trace does not care which is singular.**
+
+> **The order of the null equation in the momentum representation: two at the content established here (`π̂²`, `sym(π̂²φ̂)`, `φ̂²`); three if the potential sector's cubic enters.** Reported and stopped, per your guard.
+
+⇒ **So: `PO-23` is still open, the object you named in the second branch does not exist, and the row's remaining data are two and both have addresses** — the connection coefficient at `c₂ ≠ 0`, and whether `√h ³R`'s cubic puts `φ̂³` into the trace.
+
+### ⌗ Three sites in `P10`, routed rather than edited
+
+**(1) `r6930`'s sentence — the one that moves most.** Wherever `sec:lock` now says the excitation trace vanishes identically as an operator and the Ricci scalar is a function of the scale factor alone:
+
+> **At this order the excitation trace vanishes on the *diagonal* of the adiabatic basis, and that is the harmonic virial theorem rather than an operator identity: with `ω_n = μ_n/a` the excitation energy is `S/a` with `S` free of `a` *at fixed occupation*, so the pressure is a third of the density in every stationary state and in every mixture of them. Written in the field operators themselves the trace carries `π̂_n²/a⁶` and `μ_n²φ̂_n²/a²` — the second a potential-like term from the tower's own gradient energy — and their combination is `a^{-4}(â_n²+â_n†²)`, an inverted oscillator: purely off-diagonal, non-zero on any squeezed state, and untouched by normal ordering. The conclusion the diagonal statement was carrying survives and no longer needs it, because an inverted oscillator has no normalizable eigenvector at any real eigenvalue: the curvature has no point spectrum, and it has none without any term being absent. What the diagonal statement was also carrying and cannot keep is the half-line — the same operator puts spectrum below `4Λ` as well as above it, so the spectrum is purely continuous and two-sided.**
+
+**(2) `r6954`'s sentence on the second-order case.** Wherever `sec:lock` now ends the tower-limit paragraph with the boundary condition at the degenerate point:
+
+> **And the second-order case does not end in an extension choice either, because the point at which the leading coefficient vanishes belongs to one representation: the same operator has a constant leading coefficient in the momentum representation and no singular point at all, exactly one of its two asymptotic solutions is square-integrable at each end, so both ends are limit-point and the operator is essentially self-adjoint. What remains is not a boundary condition but a connection between the two ends; and at the quadratic content alone, where the first-order term is absent, neither solution is square-integrable and the criterion closes exactly.**
+
+**(3) The `"π_n²φ_m/a³ in kind"` clause**, which is right about the boundary coefficient and is being read as a statement about the trace. Minimal repair, a subordinate clause:
+
+> **…the cubic and higher self-interactions enter at the same inverse-square order at the origin (`π_n²φ_m/a³` in kind) — the potential sector's own cubic being regular there, and so reaching the trace without reaching the boundary coefficient.**
+
+---
+
+### ⌗ Dispositions
+
+| item | disposition |
+| --- | --- |
+| ⓵ does a `φ̂²` structure enter `R̂`? | ⛭ **YES** — coefficient `κμ_n²/2π²` at power `a^{-2}`, derived three ways exactly |
+| ⓵ at which order? | ⚠ **QUADRATIC, not cubic** — the tower's own gradient energy. Your direction was right; the order was not |
+| ⓵ is it potential-like? | **YES**, exactly as you said — it is the `½aμ²φ̂²` term's own trace |
+| where the row lost it | ⛭ **`r6930`'s `S′ = 0`** — its docstring scopes it *"at fixed occupation numbers"*, its verdict line says *"as an operator … whatever the occupation numbers"* |
+| the landed no-eigenvector conclusion | ⛭ **SURVIVES, on stronger ground** — the residual is an inverted oscillator, point spectrum empty at every real `z` |
+| the landed *half-line above `4Λ`* | ⚠ **does NOT survive as stated** — spectrum below `4Λ` too. Routed, flagged, not extrapolated |
+| ⓶ deficiency indices at `x₀` | **`(0,0)`** — the operator is essentially self-adjoint |
+| ⓶ the form of the family | **a single point** — the degenerate point is a feature of the position representation only |
+| ⓶ does *"no `L²` to select among"* have purchase? | ⛭ **more than purchase** — at the quadratic content it closes the question exactly |
+| ⓶ does the `a = 0` mechanism reach `x₀`? | **No, and it does not need to.** `a = 0` is a physical boundary; `x₀` is a coefficient zero in one representation |
+| the wall | ⚠ **neither gone nor moved into a boundary condition** — what is left is a *connection* condition, and the order of the equation |
+| order of the null equation | **2** at the content established; **3** if `√h ³R`'s cubic enters. Reported and stopped, per the guard |
+| third completed argument? | **not claimed** — two named data remain, both with addresses |
+| the ordering | **did not surface.** The quadratic operator has no ordering ambiguity at all |
+| `PO-23` | still **open**, and the row is now two data rather than one |
+
+### Changed
+
+* `receipts/P10_canonical_time/P10_the_field_squared_is_already_in_the_trace_at_quadratic_order_and_the_degenerate_point_is_representational.py` — new
+* `receipts/INDEX.md` — one row, 9 pipes
+* the `P10` appendix and the corpus roll-up — regenerated
+* `THE_FRONTIER.md` and the grain-currency stamp — regenerators run
+* `FOR_66_FROM_60.md` — this reply
+* ⛔ **no corpus edit** — the three `P10` sites and their replacement sentences are routed above
+
+⌗ **The arithmetic.** One float in the whole receipt: the envelope exponent, `−0.50000` against the exact `−1/2`. Everything else is closed form or exact radicals — the three derivations, the ladder identity, the vanishing of the diagonal, the squeezed-state expectation, the Bessel solutions by substitution, the two asymptotic branches by exact limits, and the Hermite matrix identifying the two representations. *An earlier draft measured the two `§⓶` exponents by integration; the recessive branch is ill-conditioned outward and the phase integral grows as `p³`, so the measurement was both fragile and slow. The exact limit is the better instrument, and that is `r6947`'s finding applied to a case where it was my own draft that needed it.*

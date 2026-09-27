@@ -289,6 +289,45 @@ REGISTRY = [
      r"|dissolves|four-for-four)",
      "corrected r6911+cc66.40; the contrast difference is not in the source, so the four channels "
      "have nothing to overcome and the residual is not larger than four per cent"),
+    # ⛔ r6965 (66, on node 60's r6962).  "THE EXCITATION TRACE VANISHES IDENTICALLY AS AN OPERATOR,
+    # SO THE CURVATURE IS A FUNCTION OF THE SCALE FACTOR ALONE, AND ITS SPECTRUM IS THE HALF-LINE
+    # ABOVE 4 LAMBDA."  `r6930` established the vanishing and `r6933` built the spectral result on it.
+    # ** The vanishing is a property of the DIAGONAL of the adiabatic basis -- the harmonic virial
+    # theorem -- and not of the operator: `r6930`'s own docstring scoped it "at fixed occupation
+    # numbers" while its verdict line said "as an operator ... whatever the occupation numbers". **
+    #   ⇒ *Written in the field operators the trace carries `pi_n^2/a^6` and `mu_n^2 phi_n^2/a^2`,
+    #     combining to `a^-4 (a_n^2 + a_n-dagger^2)`: purely OFF-diagonal, non-zero on any squeezed
+    #     state, and untouched by normal ordering, which has no contraction to take.*
+    # ⌗ ** THE CONCLUSION SURVIVES AND THE SCOPE DOES NOT. **  The curvature still has no point
+    #   spectrum -- an inverted oscillator has no normalizable eigenvector at any real eigenvalue, and
+    #   that warrant does not turn on a term being absent, so it is the stronger one.  *** What cannot
+    #   be kept is the HALF-LINE: the same operator puts spectrum BELOW 4 Lambda as well as above it,
+    #   so the spectrum is purely continuous and TWO-SIDED. ***
+    #   ⚠ *Two claims are withdrawn here and they are not the same claim: the operator-identity
+    #     vanishing, and the one-sided spectrum that was read off it.  A document may QUOTE either --
+    #     the withdrawal is recorded by quoting it -- but not assert it.*
+    ("the-excitation-trace-vanishes-as-an-operator-and-the-spectrum-is-one-sided",
+     # ⌗ ** THE PATTERN IS THE ASSERTED FORMS AND NOT THEIR CONSEQUENCES, and the first writing of
+     #   it was the other way round. **  It carried "a function of $\\hat a$ alone" and "whatever the
+     #   occupation numbers", which fire on every coordination file that NARRATES the reasoning ---
+     #   four bare hits in the order log and the reply, not one of them an assertion of the withdrawn
+     #   claim.  ⇒ *A consequence quoted while reasoning is not the claim being withdrawn, and a
+     #   pattern that cannot tell the two apart makes the gate unreadable rather than strict.*
+     r"(?:the excitation trace vanishes identically"
+     r"|Ricci scalar is a function of the scale factor alone"
+     r"|half-line above \$?4\\Lambda\$?"
+     r"|half-line above 4 ?Lambda)",
+     # ⌗ The marker set is wide for the same reason the entry above it is: the register row, the
+     #   runway, the map entry and this gate's own comment all quote the claim while withdrawing it.
+     r"(?:r6962|r6965|withdrawn|WITHDRAWN|corrected|CORRECTED"
+     r"|at fixed occupation|fixed occupation numbers|on the diagonal|diagonal of"
+     r"|virial|inverted oscillator|off-diagonal|squeezed"
+     r"|two-sided|below \$?4\\Lambda\$?|below 4 ?Lambda"
+     r"|not an operator identity|does not survive)",
+     "corrected r6965 on node 60's r6962; the vanishing is the harmonic virial theorem on the "
+     "adiabatic diagonal and not an operator identity, the residual is an inverted oscillator whose "
+     "point spectrum is empty, and the spectrum is purely continuous and two-sided rather than the "
+     "half-line above 4 Lambda"),
 ]
 
 SKIP = ('appendix_receipts',)
@@ -423,6 +462,17 @@ HISTORICAL = {
 # a pattern that is broken.  Each entry therefore carries a KNOWN-POSITIVE string, taken verbatim
 # from the text the withdrawal removed, and this gate fails if any pattern stops matching its own.
 POSITIVES = {
+    # ⛔ r6965 on node 60's r6962: the three real forms the claim was carried in --- `P10`'s own
+    #   sentence before the repair, the receipt verdict it rested on, and the spectral clause read
+    #   off it.  *The docstring scope that contradicted the verdict is the fourth form and is the
+    #   one that made the defect findable, so it is registered too.*
+    "the-excitation-trace-vanishes-as-an-operator-and-the-spectrum-is-one-sided": [
+        "the excitation trace vanishes identically \\emph{as an operator}---in every state and not "
+        "merely the vacuum",
+        "So the Ricci scalar is a function of the scale factor alone",
+        "The spectrum is purely continuous, the half-line above $4\\Lambda$ with $4\\Lambda$ itself "
+        "not attained",
+    ],
     # r6911+cc66.40: the paper's own clause, and the two ledger forms.
     "the-contrast-excess-stands-on-top-of-the-trough-filling-channels": [
         "channels that would each shallow the troughs are all larger here, and the contrast excess "

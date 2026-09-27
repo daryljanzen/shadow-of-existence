@@ -1,18 +1,18 @@
 
-  RUN-ALL-RECEIPTS -- 858 registered receipt(s), 4 at a time, 600s each, each from ITS OWN DIRECTORY
+  RUN-ALL-RECEIPTS -- 862 registered receipt(s), 4 at a time, 600s each, each from ITS OWN DIRECTORY
   DECLARED LONG: C59_the_control_reproduces_camb_and_the_height_defect_was_k_truncation.py runs on 1800s, not 600s -- named, with its measured cost in the source
   DECLARED LONG: C63_no_single_source_term_carries_the_undriven_split_and_the_first_probe_read_an_unwired_knob.py runs on 900s, not 600s -- named, with its measured cost in the source
   DECLARED LONG: P15_the_one_fitted_number_moves_the_scale_and_not_the_peak.py runs on 1500s, not 600s -- named, with its measured cost in the source
   DECLARED LONG: P15_the_symmetric_comparison_was_never_runnable_and_the_quarter_was_two_fifths.py runs on 900s, not 600s -- named, with its measured cost in the source
-  TREE-DIGEST: 515a06a4e60d5753
+  TREE-DIGEST: 9db4f50a368c05bc
 
-  RESUME: 0 result(s) reused from /tmp/claude-0/-home-user-shadow-of-existence/4913e7eb-3c04-585c-bc52-ac1b69fc5eb8/scratchpad/suite3.cache, 858 left to run
+  RESUME: 0 result(s) reused from /tmp/claude-0/-home-user-shadow-of-existence/4913e7eb-3c04-585c-bc52-ac1b69fc5eb8/scratchpad/suite4.cache, 862 left to run
 
     [slow] receipts/P15_CR_cosmology/P15_the_low_multipole_floor_moves_with_no_background_and_the_factor_two_is_the_late_isw.py  -- exceeded 600s
 
-  857 pass, 0 fail, 1 over timeout, in 2380s wall
-  ⌗ ASSEMBLED ACROSS 1 INVOCATION(S) AT THIS DIGEST, 1 OF WHICH MEASURED ANYTHING: 0 result(s) reused, 858 measured here.  Every receipt ran exactly once against tree 515a06a4e60d5753, and the cache is discarded whole the moment that digest changes.  The wall figure is the SUM of the invocations, not a single elapsed clock -- and it is a UNION over invocation ids, so re-assembling adds only the seconds that re-assembly itself costs (r4554: it used to add another invocation's minutes).
-  slowest that passed: C59_the_control_reproduces_camb_and_the_height_defect_was_k_truncation.py 1282s, P15_the_one_fitted_number_moves_the_scale_and_not_the_peak.py 815s, P15_the_low_multipole_depth_gap_closes_and_two_defects_were_cancelling.py 550s, P15_the_symmetric_comparison_was_never_runnable_and_the_quarter_was_two_fifths.py 459s, C63_no_single_source_term_carries_the_undriven_split_and_the_first_probe_read_an_unwired_knob.py 419s
+  861 pass, 0 fail, 1 over timeout, in 2381s wall
+  ⌗ ASSEMBLED ACROSS 1 INVOCATION(S) AT THIS DIGEST, 1 OF WHICH MEASURED ANYTHING: 0 result(s) reused, 862 measured here.  Every receipt ran exactly once against tree 9db4f50a368c05bc, and the cache is discarded whole the moment that digest changes.  The wall figure is the SUM of the invocations, not a single elapsed clock -- and it is a UNION over invocation ids, so re-assembling adds only the seconds that re-assembly itself costs (r4554: it used to add another invocation's minutes).
+  slowest that passed: C59_the_control_reproduces_camb_and_the_height_defect_was_k_truncation.py 1277s, P15_the_one_fitted_number_moves_the_scale_and_not_the_peak.py 819s, P15_the_low_multipole_depth_gap_closes_and_two_defects_were_cancelling.py 564s, P15_the_symmetric_comparison_was_never_runnable_and_the_quarter_was_two_fifths.py 460s, C63_no_single_source_term_carries_the_undriven_split_and_the_first_probe_read_an_unwired_knob.py 417s
 
   Every registered receipt runs, in place, and exits 0 -- so every assertion in the
   reproducibility layer was actually evaluated.
