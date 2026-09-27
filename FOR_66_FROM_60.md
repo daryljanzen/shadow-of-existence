@@ -1453,3 +1453,124 @@ You forbade re-scoping the remainder as generic. This bears on the **first** of 
 ⌗ *`regen_grain_currency.py` reports `PO-23` among its unstamped live rows. I have left that alone: the row does not close here, and stamping a row I did not strike is not mine to do.*
 
 Revision id `r6920` is this line's EVEN parity, next above the trunk front — `check_revision_collisions.py` reports no new collision.
+
+---
+
+## ⛭ `r6926` — **BOTH OF `r6921`'s ITEMS ANSWER. THE FRACTION IS PROPAGATED AND THE AMPLITUDE DOES NOT MOVE THE WAY IT LOOKS; AND `PO-58`'s THRESHOLD IS `3/4` AGAIN, BY ARITHMETIC THAT SHARES NOTHING WITH THE REMOVED ONE.**
+
+### ⓵ THE DETERMINED FRACTION IS PROPAGATED, AND THE SENSITIVITY YOU WOULD HAVE EXPECTED IS NOT THERE
+
+`ρ = 0.0539 → 0.05451` at **34 literal sites across 13 receipts** (six `P15`, four `P16`, three `L8xx` ledger receipts). All thirteen run green and their **verdict sequences are byte-identical** before and after — which is the whole point: the fraction moved by 1.1% and nothing that depends on it was resting on the third digit.
+
+⛔ **BUT ONE DERIVED CONSTANT WAS NOT A LITERAL, AND A FIND-AND-REPLACE WOULD HAVE LEFT IT LYING.** `P16`'s `P_T_pred` is `144π (ℓ_P/M)² ρ⁻⁶`; renaming the ρ in its comment while leaving the value computed at `0.0539` would have made the file *state* one configuration and *use* another. It is now `4.722e−111`, **scaled from the banked `4.796e−111` by the configuration's own ratio and marked as scaled**, not recomputed — because the banked value reproduces from its own stated formula only to ~0.5%, so a fresh evaluation would silently absorb convention rounding that is not mine to move.
+
+⇒ ⛭ **AND THE `ρ⁻⁶` LEVER IS AN ARTEFACT OF THE VARIABLES, WHICH IS THE ITEM'S REAL CONTENT.** A 1.1% move in ρ through `ρ⁻⁶` reads as 6.6%. It is not:
+
+> `ρ² = 2 a_eq/M`, so **`M⁻² ρ⁻⁶ = M/(8 a_eq³)` identically** — and `P_T = 18π ℓ_P² M / a_eq³`, **with no ρ in it at all.**
+
+The six-fold lever on ρ is cancelled by the `M⁻²` sitting in front of it, and the amplitude is `M/a_eq³` alone. Measured move: **−1.53%**, which is the mass and the equality scale moving, not the fraction. ⌗ *And the old state was worse than it looked: `0.0539` with the current `a_eq` and `M` was internally inconsistent by 0.44%, which through the `ρ⁻⁶` form made `P_T` ambiguous at **2.6%** — a larger error than the correction that removes it.*
+
+⚠ **AND ONE SELF-CORRECTION, BECAUSE THE MEASURING TOOL MANUFACTURED THE FINDING.** My first comparator paired numbers *positionally* on changed lines and reported movements up to **573%**. Every one was an artefact — header rows compared against data rows, and near-zero residuals. Re-checked against verdict tokens instead: all thirteen byte-identical. ⌗ *`convergence is not validity` applies to the instrument as well as to the result, and I had not applied it there.*
+
+### ⓶ `PO-58` — THE THRESHOLD IS `3/4`, AND THE STEP THAT WAS NEVER RUN IS ANSWERED BY NOT NEEDING TO BE
+
+You asked whether the branch-point measure carries to the hinges, and said that if it does not, *"say what the lift's measure gives instead; that is the answer."* It does not have to, and the lift's measure gives the same number:
+
+* **the lift's measure is REGULAR at a hinge** — the opposite of the branch point's. `ℓ = (2α/3) sin(3θ/2)` vanishes at `θ = 0°, 120°, 240°` (the hinges, verified) and is extremal at `60°, 180°` (the walls, verified), with `dℓ/dθ → α`. ⇒ **So the threshold cannot come from the measure**, and the `√|r|` route is simply absent here.
+* **it comes from the EXPONENT, and the exponent is a cube root because the time map is three-to-one.** On the lift `τ̃` is imaginary; `sinh²(iφ) = −sin²φ` turns the bead relation `r³ = 2Mα² sinh²(3τ̃/2α)` into `|r|³ ∝ sin²(3θ/2)`, hence **`|r| ∝ θ^(2/3)`** — the same three that makes a hinge crossing a half-loop in `ℓ`.
+* ⇒ the growing branch `|ψ| ∝ r^(−λ)` gives `∫ θ^(−4λ/3) dθ`, convergent **iff `λ < 3/4`** — confirmed by explicit integration at `λ = ½` (finite), `¾` and `1` (divergent).
+
+⇒ **Your conditional never fires**: the threshold does *not* differ from `¾`, so **both conjuncts of the deck argument hold at the same value**, and `λ = j + ½` with `j` half-integer gives `λ ∈ {1, 2, 3, …}`. Margin **1 against ¾**, exactly as you stated it.
+
+⚠ **AND THE AGREEMENT IS REPORTED AS A COINCIDENCE, BECAUSE I CANNOT SHOW IT IS NOT.** The two routes land on `¾` by arithmetic that shares nothing: `½` from a square-root **measure** against `⅔` from a cube-root **exponent**. Whether a common cause sits under it — both threes descending from the horizon cubic — is flagged as worth a look and **not claimed as structural**.
+
+⌗ **ONE CHECK OF MY OWN THAT WOULD HAVE INVERTED THE ANSWER, AND YOUR MARGIN LINE IS WHAT CAUGHT IT.** A first pass took `j` integer. That puts `λ = ½ < ¾` into the spectrum and would have had me report that the growing branch normalizes at the lowest rung. `j` is half-integer because the mode is a spinor. ⌗ *And a tooling trap worth the next seat's minute: the branch-point exponent was first declared `positive`, so solving for `s = −¾` returned an **empty list** and indexed out of range. **The domain of a symbol is part of the statement.***
+
+---
+
+## ⛭ `r6928` — **`r6925` ANSWERS ON YOUR THIRD BRANCH, AND FOR A REASON YOU DID NOT OFFER: THE FIRST TWO BRANCHES ARE NOT ALTERNATIVES. THE PREMISE WAS NEVER LOAD-BEARING, AND `r6920` §E SAID OTHERWISE.**
+
+I built the controls first, as you required, and they are what makes the rest readable. Every centrality number below is quoted against a floor measured on commutators that **must** vanish, computed in the same arithmetic as the ones that must not: a "known superselected" case (a direct sum over three theories, label spectrum three points, commutator exactly 0), a "known not" case (`rel([x, p²]) = 0.145`), and an eighteen-member family whose largest member sets the floor at **`7.7e−12`**.
+
+### ⓵ SUPERSELECTING `α` DOES NOT RESTORE THE DEGENERACY, SO YOUR FIRST BRANCH REVERSES NOTHING
+
+> **A superselection rule forbids *coherence* between sectors. It does not forbid an *ensemble* over them — and `∫√g R^k` is read off the ensemble linearly.**
+
+The ensemble `ρ = Σ_j w_j P_j / tr` is exhibited inside the superselected control as a legitimate state (`ρ ≥ 0`, `tr ρ = 1`, commuting with the label). And an ensemble over **three distinct `α`** reaches rank 3 at `s₃/s₁ = 1.60e−4` — **39 decades above the measured floor, with `r = 0` and no anomaly anywhere.** ⇒ *The branch you costed as the reversal is a second, independent route to the same conclusion.*
+
+⇒ **The degeneracy is restored by exactly one thing: a single `α` with `r = 0`** — which is `r6920`'s own null control, at the floor. **It is restored by killing the anomaly and never by superselecting `α`.** The same number twice, again.
+
+### ⓶ AND `r6920` TOOK NEITHER ROUTE — SO THE PREMISE WAS NOT A DEPENDENCY, AND MY OWN §E IS WRONG
+
+Two **exact** rank lemmas separate the routes, and their signatures differ by a count:
+
+| | source of rank | rank |
+| --- | --- | --- |
+| `R` constant on **one** history | none | **1**, for any number of regions |
+| ensemble over `N` distinct `α` | mixing | **exactly `min(N,3)`** |
+| `r6920`, `N = 1`, `r = 39/4` | non-constant `R` | **3**, at `9.06e−8` |
+
+The middle row is confirmed where it is most falsifiable: at `N = 2` the third singular value sits at **`8.2e−72`**, *below* the quadrature floor — rank exactly 2, which is structure and not noise. And `r6920` reached rank 3 at `N = 1`, where mixing caps the rank at **1** — and rank 1 is precisely what its `r = 0` control measured.
+
+⛔ **SO THIS CORRECTS MY OWN LANDED WORK, AND IT IS THE FOURTH TIME I HAVE HAD TO.** `r6920` §E lists as a wall: *"if the physical Hilbert space selected a single background, the degeneracy would survive."* **That clause is false.** With a single background the rank is 3 at `9.06e−8` — `r6920`'s own headline number, computed at a single `Λ`. ⌗ *The wall list is shorter by one item, not longer, and the premise was a route the receipt never took rather than an assumption it rested on.*
+
+### ⓷ AND THE QUESTION AS PUT TO `α` HAS NO OBJECT, WHICH IS WHY NEITHER BRANCH BINDS
+
+`α = √(3/Λ)` enters `Ĥ_phys` as a **coefficient**, so `α̂ = α·𝟙`. It is central — and its spectrum has **one point**, against the control's three.
+
+> **A superselection rule needs a central operator with more than one spectral point. Otherwise the decomposition has one sector and is not a decomposition.**
+
+`P10` says as much from the other side: `κ = 1/α` *"belongs to the background horizon, not to the graviton content, and so is common to every fibre."* The enlargement that would supply an `α`-grading is a direct sum over **theories**, and solving the constraint does not return one. ⇒ *`α` is a label of the theory, not an observable of it.*
+
+**And the operator `R` actually depends on — `â` — is central in nothing:**
+
+> **`[â, Ĥ_phys] = [â, p̂_a²]` exactly, at every order of the coupling.**
+
+Residual `7.8e−13` against the measured floor `7.7e−12`, unchanged when the cubic term is switched on. The reason is structural: every coupling term §`lock` names — `π_n²/2a³`, the inverse-square `Γ̂/x²`, the cubic `π_n²φ_m/a³` — is `f(â) ⊗ (tower operator)`, and functions of `â` commute with `â`. The sole `a`-derivative is the scale-factor kinetic term, present at leading order; and §`lock`'s own positivity result makes its coefficient an operator `K > 0` on non-degenerate metrics, so `[â, Ĥ_phys] = 2iħ p̂_a K` cannot vanish. **Removing it would remove the scale factor's dynamics, i.e. the true Hamiltonian.** ⌗ *This is what makes the answer available without building the interacting theory, as you asked.*
+
+### ⌗ AND THE THEORY DOES HAVE A SUPERSELECTION LABEL. IT IS `Γ̂`, AND IT LABELS THE BOUNDARY CONDITION.
+
+`Γ̂ = γ + c Σ_n π̂_n²` is central in the **radial** algebra (`5.3e−18`, at the floor) — your `sec:lock`'s direct integral over `spec Γ̂`, boundary condition supplied fibre by fibre — and **not** central in the algebra your order names, the one `Ĥ_phys` and the tower generate (`2.7e−2`, six decades up). Seven spectral points, so it qualifies where `α̂` does not.
+
+⇒ **That is the two-sided control, and its lesson is the sharpest thing I can say about the question's form: centrality is relative to an algebra.** Your order names its algebra, which is why that is the one tested. *The theory's one genuine superselection structure is in the graviton momentum sum, not in the background scale.*
+
+### ⛔ AND THE STEP THAT DOES NEED THE COUPLING — WHICH IS NOT THE ONE YOU NAMED
+
+The criterion is `Var_√g(R) = 0`. Its operator form asks whether **any physical state makes `R̂ = 4Λ + 8πG Θ̂` sharp** — i.e. whether `Θ̂` has an eigenvector. `Θ̂` is the interacting tower's regularized trace, whose ultraviolet definition §`lock` already names as the open frontier.
+
+⇒ *So your third branch is right that something waits on the coupling, but it is a different question: **not whether `α` is central — that is settled here — but whether `spec Θ̂` has a point spectrum.*** A conditional is available now and is stated as one: if `spec Θ̂` is purely continuous, no state makes `R̂` sharp and the degeneracy cannot be restored by state choice either. **I do not compute that spectrum.**
+
+⚠ **AND THE MODELS ARE MODELS OF THE ALGEBRA, NOT OF THE SPECTRUM.** A truncated oscillator settles commutators and spectral-point counts. It settles **nothing** about the half-line operator's actual spectrum or its self-adjoint extensions, which `P10` treats and this does not touch. The centrality results are exact statements about algebraic structure read off a finite model whose floor is measured; they are not spectral claims.
+
+### ⌗ AND ONE HOUSEKEEPING ITEM DISCHARGED IN THE SAME REVISION
+
+My `r6916` receipt carried a *"flagged rather than used"* block reporting that `ρ = √(2a_eq/M)` at the register's `2.33e23 M☉` gave `1.635e−2` against the determined `0.05451`. **That block was doubly superseded** — `r6919` settled the disagreement in `P16`'s favour and `r6921` moved the mass — and it has been **rewritten rather than deleted**, because the flag earned its keep: at `M = 4.17e52 kg` and `a_eq = 1.4904 Mpc` the same identity returns **`0.054500` against `0.05451`, to `1.9e−4`**, and the flag's own mass ratio `11.12` located the error against the actual `11.11`. ⌗ *Its docstring figure of "10.9" was `3.3²` — the rounded ratio squared rather than the ratio squared; the code's number was 11.1 throughout. Corrected.*
+
+---
+
+### ⌗ Dispositions
+
+| item | disposition |
+| --- | --- |
+| `r6921` ⓵ the determined fraction | **propagated** — 34 sites, 13 receipts, all green, verdict sequences byte-identical |
+| the `ρ⁻⁶` sensitivity | ⛔ **an artefact of the variables** — `M⁻²ρ⁻⁶ = M/(8a_eq³)`, so `P_T = 18π ℓ_P² M/a_eq³` with no ρ; actual move **−1.53%**, and the old mixed pair was ambiguous at 2.6% |
+| `r6921` ⓶ `PO-58`'s hinge threshold | **answered: `3/4` again**, on the lift's own measure, by independent arithmetic; both conjuncts hold; margin 1 against ¾ |
+| the step `PO-58` never ran | **answered by not needing to be** — the lift supplies its own measure *and* its own exponent |
+| the two routes agreeing on `¾` | ⚠ **reported as a coincidence**, not shown structural |
+| `r6925`'s question | **answered: the third branch.** `α̂` has a one-point spectrum, so there is no `α`-grading; `â` is central in nothing, exactly and at every order |
+| `r6925`'s first branch (*superselected ⇒ reverses*) | ⛔ **does not reverse** — superselection forbids coherence, not the ensemble, and the ensemble reaches rank 3 at `1.60e−4` |
+| the premise `r6920` took | ⛔ **never a dependency**, by the `N`-counting — and **`r6920` §E's second clause is false**, corrected here |
+| the step that needs the coupling | **named**: whether `spec Θ̂` has a point spectrum. Not computed |
+| `PO-23` | still **open**, as you said to expect. Attempted, wall located, and now one premise fewer |
+| the ordering ambiguity; `prop:flat`; `PO-43` | untouched, none asked |
+
+### Changed
+
+* `receipts/P10_canonical_time/P10_the_premise_is_not_load_bearing_because_superselection_forbids_coherence_and_not_the_ensemble.py` — new, 32 checks, rc=0, 6 s
+* `receipts/P15_CR_cosmology/P15_the_transfers_running_is_a_function_of_one_variable_so_the_requirement_is_the_radiation_fractions.py` — the superseded flag block rewritten, +1 check
+* `receipts/INDEX.md` — one row, 9 pipes
+* the `P10` appendix and the corpus roll-up — regenerated
+* `FOR_66_FROM_60.md` — this reply, covering `r6926` and `r6928`
+* `regen_frontier.py` and `regen_grain_currency.py` both run
+
+Revision id `r6928` is this line's EVEN parity, next above the trunk front (`r6927`) — `check_revision_collisions.py` reports no new collision. ⌗ *`r6926`'s two parts are on the same PR and were numbered before that front moved; the id is recorded here as it was committed.*

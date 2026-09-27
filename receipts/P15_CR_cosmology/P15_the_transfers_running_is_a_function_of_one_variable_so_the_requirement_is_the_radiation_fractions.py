@@ -67,15 +67,25 @@ OBJECT UNDER TEST -- `PO-31`, `r6914`, three items.  The order's framing, verbat
       distance mapping allows, the requirement moves by 0.040, i.e. 2.3%.  ⚠ Over a much wider
       band it moves 6-9%, which is reported rather than hidden.
 
-⌗ AND ONE THING FOUND ON THE WAY THAT IS NOT THIS ORDER'S TO RESOLVE, FLAGGED RATHER THAN USED.
+⌗ AND ONE THING FOUND ON THE WAY THAT WAS NOT THIS ORDER'S TO RESOLVE -- FLAGGED, AND SINCE
+  RESOLVED, WHICH IS WHY THE FLAG IS REWRITTEN RATHER THAN DELETED.
   The bound in ⓵ is a bound on rho, and rho is not a free number: from `P16`'s own two
   statements -- rho = 2 sqrt(B)/A and a_eq = A rho^2/4 = B/A -- it follows that
-  ** rho = sqrt(2 a_eq / M) ** (with A = 2M), verified symbolically below.  ⚠ But that identity
-  at `a_eq` = 1.49 Mpc and the REGISTER's mass 2.33e23 Msun gives rho = 1.635e-2, against the
-  determined 0.05451 -- a factor 3.3, i.e. a mass ratio of 10.9.  ** The two are consistent only
-  at two different progenitor masses, and which one the radiation fraction's determination uses
-  is not settled here. **  So the bound is reported as a bound on rho and, as a SCALING, on
-  a_eq/M; it is deliberately NOT converted into a number for a_eq or M.
+  ** rho = sqrt(2 a_eq / M) ** (with A = 2M), verified symbolically below.  ⚠ As first written,
+  that identity at `a_eq` = 1.49 Mpc and the REGISTER's mass 2.33e23 Msun gave rho = 1.635e-2
+  against the determined 0.05451 -- a factor 3.334, i.e. a mass ratio of 11.1 -- so the two were
+  consistent only at two different progenitor masses, and the bound was reported as a bound on
+  rho and, as a SCALING, on a_eq/M.
+  ** THAT OBSTRUCTION IS GONE, AND IT WENT THE WAY THE FLAG POINTED. **  `r6919` settled the
+  disagreement in `P16`'s favour and `r6921` moved the progenitor mass to M = 4.17e52 kg
+  = 2.097e22 Msun; at that mass and a_eq = 1.4904 Mpc the same identity returns rho = 0.054500
+  against the determined 0.05451, agreeing to 1.9e-4.  ⌗ *And the flag's own ratio is what located
+  the error: it said 11.1 where the actual mass ratio is 11.11, to a tenth of a percent.  (The
+  figure first written into this block was 10.9, which is 3.3 squared -- the rounded ratio squared
+  rather than the ratio squared, and the code's own number was 11.1 throughout.)*  ⇒ The bound is
+  therefore convertible in principle now; it is still REPORTED as a bound on rho and a scaling on
+  a_eq/M, because that is what this instrument measures, and the conversion belongs to whatever
+  asks for it rather than to this receipt.
 
 COMPUTES: scope -- what this settles and what it must not be read as.
   * ** THE CALIBRATION IS THE GATE. **  PART 1 re-runs the banked check at the banked rho and k.
@@ -248,7 +258,7 @@ check(RHO / bounds[(-0.5, 1400.0)] > 50 and RHO / bounds[(-0.95, 2000.0)] > 500,
       f"{RHO/bounds[(-0.95,2000.0)]:.0f}x on the strict one")
 
 # =============================================================================================
-head("PART 5 -- WHAT THE rho BOUND IS A BOUND ON, AND WHAT IS NOT SETTLED HERE")
+head("PART 5 -- WHAT THE rho BOUND IS A BOUND ON, AND THE DISCREPANCY IT FLAGGED, SINCE RESOLVED")
 
 A_, B_, M_, aeq_ = sp.symbols('A B M a_eq', positive=True)
 rho_def = 2 * sp.sqrt(B_) / A_                       # P16: rho = 2 sqrt(B)/A
@@ -260,18 +270,28 @@ check(sp.simplify(rho_from - sp.sqrt(2 * aeq_ / M_)) == 0,
       f"and together they give rho = sqrt(2 a_eq / M) = {rho_from}")
 Msun, Mpc = 1.98847e30, 3.0857e22
 G, c = 6.67430e-11, 2.99792458e8
-M_reg = G * (2.33e23 * Msun) / c**2
-aeq = 1.49 * Mpc
-rho_reg = np.sqrt(2 * aeq / M_reg)
-print(f"  at a_eq = 1.49 Mpc and the REGISTER's mass 2.33e23 Msun:  rho = {rho_reg:.4e}")
-print(f"  against the DETERMINED rho = {RHO}                     ratio = {RHO/rho_reg:.2f}"
-      f"   (a mass ratio of {(RHO/rho_reg)**2:.1f})")
-check(2.0 < RHO / rho_reg < 5.0,
-      "⚠ the two are consistent only at two DIFFERENT progenitor masses, and which one the "
-      "radiation fraction's determination uses is NOT settled here")
-print("  ⇒ ** so the bound is reported as a bound on rho, and as a SCALING on a_eq/M")
-print("     (rho^2 = 2 a_eq/M, so rho 55x down needs a_eq/M about 3000x down) --")
-print("     deliberately NOT converted into a number for a_eq or for M. **")
+geo = lambda m_kg: G * m_kg / c**2                   # kg -> geometrized length
+# the flag AS FIRST WRITTEN, kept because its ratio is what located the error
+rho_reg = np.sqrt(2 * (1.49 * Mpc) / geo(2.33e23 * Msun))
+print(f"  as first flagged -- a_eq = 1.49 Mpc and the REGISTER's 2.33e23 Msun:  rho = {rho_reg:.4e}")
+print(f"     against the DETERMINED rho = {RHO}:  ratio {RHO/rho_reg:.2f}, i.e. a mass ratio of "
+      f"{(RHO/rho_reg)**2:.1f}")
+# and the RESOLUTION: r6919 settled it in P16's favour, r6921 moved the mass
+M_NARIAI, AEQ = 4.17e52, 1.4904 * Mpc                # r6921's corrected configuration
+rho_now = np.sqrt(2 * AEQ / geo(M_NARIAI))
+ratio_actual = 2.33e23 / (M_NARIAI / Msun)
+print(f"  as RESOLVED at r6921 -- a_eq = 1.4904 Mpc and M = 4.17e52 kg "
+      f"({M_NARIAI / Msun:.3e} Msun):  rho = {rho_now:.6f}")
+check(abs(rho_now - RHO) / RHO < 1e-3,
+      f"** the identity RETURNS the determined rho: {rho_now:.6f} against {RHO}, to "
+      f"{abs(rho_now - RHO) / RHO:.1e} -- the discrepancy this receipt flagged is RESOLVED, and in "
+      "the direction the flag pointed (`r6919` in P16's favour, `r6921` moving the mass) **")
+check(abs((RHO / rho_reg)**2 / ratio_actual - 1) < 0.05,
+      f"and the flag's own mass ratio is what located it: {(RHO / rho_reg)**2:.2f} against the "
+      f"actual {ratio_actual:.2f}, to {abs((RHO / rho_reg)**2 / ratio_actual - 1):.1e}")
+print("  ⇒ ** so the bound is convertible in principle now; it is still REPORTED as a bound on")
+print("     rho and as a SCALING on a_eq/M (rho^2 = 2 a_eq/M, so rho 55x down needs a_eq/M about")
+print("     3000x down), because that is what THIS instrument measures. **")
 
 # =============================================================================================
 head("PART 6 (⓶) -- IS 1.71 SOFT UNDER THE BAND'S PLACEMENT?")
@@ -333,9 +353,10 @@ print(f"""
 
   ⌗ WHAT THIS DOES NOT DO.  `PO-31` does not close.  No progenitor interior, no tilt value, no
     amplitude.  No integration above k = 2000 is performed or quoted -- the high-k limit is the
-    potential's asymptotics, as ordered.  And the rho bound is NOT converted into a number for
-    a_eq or M, because `P16`'s rho = sqrt(2 a_eq/M) and the register's mass disagree with the
-    determined rho by a factor {RHO/rho_reg:.1f}; ** that discrepancy is flagged, not used. **
+    potential's asymptotics, as ordered.  And the rho bound is still NOT converted into a number
+    for a_eq or M -- ** no longer because anything disagrees, since `r6921`'s mass makes
+    rho = sqrt(2 a_eq/M) return {rho_now:.6f} against the determined {RHO}, but because a bound on
+    rho is what this instrument measures. **  The conversion is available to whatever asks for it.
 """.rstrip())
 
 print()
