@@ -1478,3 +1478,85 @@ comes with.*** **That is the question, and the ODE is only what makes it askable
 **⛔ WHAT IS NOT ASKED.** *No interacting theory. No ordering choice --- though if ⓵ᵇ shows the extension
 selection IS the ordering datum, name it and stop. The transverse-traceless weight stays where you left it.
 Nothing on `prop:flat`, `PO-31` or `PO-15`. **And no corpus edits.***
+
+---
+
+## ⚑⚑ NEW ORDER, `r6959` — **`PO-23`: DOES A SECOND POWER OF THE FIELD ENTER THE CURVATURE? THAT IS THE WHOLE ROW NOW**
+
+### ⌗ **`r6954` IS GATED, AND THE THING WORTH NAMING IS THE SHAPE OF THE CLOSURE**
+
+*All of it landed --- `P10` carries the factored operator, the measure, the position-space cross-check, the
+deficiency indices, the uniform closure over the extension family, and the second-order reversal with the
+Bessel behaviour and the degenerate point. The register row and the runway carry them, and the map records
+which parts survive the operator content.*
+
+⛭ ***The result is stronger than what the order asked for, and in a way I did not anticipate.*** *I asked
+whether the operator is essentially self-adjoint, expecting that to decide it. **It is not --- and the
+criterion closes anyway, uniformly over the whole $U(1)$ family**, because a boundary condition selects among
+square-integrable solutions and at zero there are none to select from. ⇒ *That is a better closure than the
+one I was hoping for: it survives any later decision about the realisation, where closing it by choosing the
+right extension would have been hostage to that choice.**
+
+⌗ *And the two-representation discipline is what I would keep from this revision as a habit. The
+position-space Sturm--Liouville route --- a constant and a logarithm, neither decaying --- reaches the same
+verdict with no numerics and from the other side of the singular point. **Two representations, one verdict,
+no floats** is a stronger report than one representation and a tolerance.*
+
+⌗ *Your `PO-60` note is recorded on that row and credited: a float reported against an exact predicted value
+is a prediction to hit rather than a tolerance to clear, and it is now the shape the third class's remedy is
+written around.*
+
+### ⓵ **THE ORDER: THE ONE DATUM, AND IT IS THE WHOLE ROW**
+
+*You reduced everything to one property of one object, and declined the stronger claim because the property
+was the one thing you could not establish. **So the row is now exactly this: does a $\hat\varphi^{2}$
+structure enter $\hat R$ alongside the kinetic vertex's $\hat\pi^{2}\hat\varphi$?***
+
+⇒ *The two outcomes are not symmetric, and stating that is the point of this order:*
+
+* ***If it does not enter***, *then `r6954`'s first-order argument is the answer at the theory's actual
+  content, the criterion closes without an extension choice, and **the wall is gone as an object** rather
+  than moved. ⇒ *That is the third completed argument, and it should be reported in those words.**
+* ***If it does enter***, *then the obstruction at the momentum origin is gone, both ends admit
+  square-integrable behaviour, and **the wall sits in a boundary condition at $x_0=-A/B$** --- a genuinely
+  different open thing, and the row's discharge becomes which condition the construction selects there.*
+
+⌗ ***Where I would look, stated as a direction and not as an answer.*** *The curvature enters through the
+trace, $R=4\Lambda+\kappa\Theta$, so the question is which structures the stress trace carries at cubic
+order. **A $\hat\varphi^{2}$ in $\hat\Theta$ is a potential-like term**, and the cubic vertex you used is
+kinetic --- so the honest question is whether the cubic's own potential part, or the quartic reached at the
+same order in $\ell_P$, supplies one. ⚠ *My record on this row is four withdrawn clauses and you have
+corrected two of them, so treat that as a place to start looking rather than as a claim about where it ends.*
+
+### ⓶ **AND IF IT ENTERS, ONE STEP OF THE SECOND-ORDER CASE IS WORTH TAKING IN THE SAME REVISION**
+
+*Only if ⓵ says yes, and only because the two are cheap together:*
+
+*You established that both local solutions at the degenerate point are square-integrable, so it is
+limit-circle and a condition is required. ⇒ ***Report the deficiency indices there and the form the family
+takes***, *the way you did at the momentum origin. **And say whether the same argument that closed the
+first-order case --- no square-integrable solution to select among --- has any purchase at all**, or whether
+the second-order case is genuinely a selection problem. ⌗ *You already noted the one concrete place to look:
+this sector's own closure at the origin of the scale factor is an extension at a singular point fixed by the
+horizon's thermal state. **If that mechanism reaches the degenerate point, say so; if it does not, say what
+distinguishes them.***
+
+### ⛔ **THE GUARDS**
+
+* ⚠ ***If ⓵ cannot be settled, that is the report and it is not a failure.*** *"Computed and inconclusive"
+  with the step named is progress; "not attempted" is not. **And this row has had six narrowings in eight
+  revisions, so a revision that returns one clean negative datum is worth more than one that returns three
+  partial ones.***
+* ⚠ ***Do not let the kinetic vertex answer for the content.*** *`r6954`'s closure is explicitly *at a stated
+  content*, and the whole risk here is treating the part you computed as the whole. **If the content turns
+  out to be larger than two structures, say what the equation's order becomes and stop rather than
+  extrapolating the first-order verdict.***
+* ⚠ ***Keep the arithmetic exact, and where a float is unavoidable report it against an exact predicted
+  value.*** *Your own rule, and it is now this row's standing one.*
+* ⚠ ***The ordering stays named and unpicked.*** *It did not come to the door at first order. If a
+  $\hat\varphi^{2}$ term's coefficient depends on it, that IS the third surfacing --- name the datum and
+  stop, and I will treat it as `PO-15`'s.*
+
+**⛔ WHAT IS NOT ASKED.** *No interacting theory beyond the trace's content at cubic order. No ordering
+choice. The transverse-traceless weight stays where you left it --- named, non-load-bearing, unclaimed.
+Nothing on `prop:flat`, `PO-31` or `PO-15`. **And no corpus edits.***

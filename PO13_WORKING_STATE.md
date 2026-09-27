@@ -4994,3 +4994,90 @@ offset; a re-derivation of the sky's locating spread, which is `PO-47`'s; that t
 an error rather than a convention; that peak four is uninteresting — it is the largest of the four and
 four fifths of it is the control's; no verdict on the two-rate assignment; no refit; nothing touches
 `prop:flat` or the clock family.
+
+
+# ⛭⛭⛭ r6955+cc66.46 — THE EXCESS IS SYMMETRIC, AND THE TROUGHS ARE WHERE THE SKY MEASURES IT BEST
+
+***`r6955`'s order: four routes are eliminated, so what is left is the $\chi^2$ — trough-dominated in the
+whitened residual. 66's reading, stated as its own: the trough depths mix the two clocks in a way
+$\theta_D/\theta_*$ does not. ⓶ᵃ Locate the excess first (if it is in the peaks, stop); ⓶ᵇ then the clock
+sensitivity of whichever carries it; ⓶ᶜ and the sky's own spread on it, the way `PO-47` did.***
+
+⌗ **Path provenance, in the receipt's header as the order now requires.** Every model number is the
+**hierarchy** path — `cc66_r185_verify_*`, the `LSTEP=1` references `r6941_fine_*`, and the `VISLEAF`
+family `r6929_scan_cr` / `r6941_fine_cr_visleaf`. `sec:refit-bound`'s quartet is the **line-of-sight**
+path's and is not read at all — searched for by grepping the receipt for each of the four values and for
+every line-of-sight bank name, none of which occurs in its code. The sky is `plik_lite` TT through the likelihood's own
+binning, with the models binned identically before any comparison.
+
+## ⛭⛭ ⓶ᵃ THE EXCESS IS SYMMETRIC ABOUT THE ENVELOPE
+
+Splitting the band variance of the envelope-normalised oscillation at its own zero — a decomposition, the
+two parts adding to the whole to machine precision:
+
+| | mean over the seven bands |
+|---|---|
+| total contrast | $1.0546$ |
+| **peak side** | **$1.0668$** |
+| **trough side** | **$1.0561$** |
+
+And at the literal extrema (six of each, fine grid) the arm exceeds the control by **$5.7$ per cent at
+the maxima against $5.3$ at the minima**.
+
+⇒ ***It is an AMPLITUDE excess, carried equally by peak heights and trough depths.*** *So $\Delta$'s
+trough dominance is a statement about the whitened residual and does not transfer to the contrast's own
+decomposition — which the order explicitly declined to assume, and the answer is that they disagree.* ⚠
+*The stop condition does not fire either: the excess is not in the peaks, so the row is not pushed back
+onto the driving.*
+
+## ⛔ ⓶ᵇ THE DEPTHS ARE THREE TIMES THE MORE CLOCK-RESPONSIVE — AND THE DISCRIMINANT MOVES MORE STILL
+
+| across the `VISLEAF` family | $f=0$ | $f=1$ | change |
+|---|---|---|---|
+| mean peak height | $0.25070$ | $0.24878$ | $-0.77\%$ |
+| mean trough depth | $0.25733$ | $0.25070$ | $\mathbf{-2.58\%}$ |
+| $\theta_D/\theta_* = r_D/r_s$ | $0.051216$ | $0.049127$ | $\mathbf{-4.08\%}$ |
+
+⇒ *The depths are $3.4\times$ the more responsive of the two observables — **that half of the reading
+holds**. But $\theta_D/\theta_*$ moves more than either, because $r_D$ is itself `Jac`-weighted under
+`LEAFSCALES` and the $\tau$ re-weighting moves it directly.* ⇒ ***The paper's discriminant of principle
+is the MOST sensitive of the three, not the insensitive one, and by the order's own rule — both move
+together — the depths are not a new handle on the clock.*** *The endpoints reproduce on the `LSTEP=1`
+grid, so the response is the spectra's and not the grid's.*
+
+## ⛭⛭⛭ ⓶ᶜ AND YET THE TROUGHS ARE WHERE IT BECOMES OBSERVABLE: THE SKY MEASURES DEPTHS TWICE AS WELL
+
+Same data, same likelihood binning, same anchored locator, `COV_TT` propagated by Monte Carlo (two seeds,
+$600$ realisations each, stable to $5\times10^{-4}$):
+
+| | control | arm | sky | arm − control | the sky's spread | in sigma |
+|---|---|---|---|---|---|---|
+| **trough depth** | $0.28007$ | $0.29071$ | $0.28038$ | $+0.01064$ | $\mathbf{0.00588}$ | **$+1.81$** |
+| **peak height** | $0.27715$ | $0.28743$ | $0.28382$ | $+0.01029$ | $\mathbf{0.01135}$ | **$+0.91$** |
+
+⇒ ***The excess is the same SIZE in both, and reads twice as significantly in the depths, because the sky
+measures depths twice as precisely.*** And ⇒ ***the control lands on the sky's trough depths at
+$-0.05\sigma$ while the arm sits $+1.76$ above: the first statistic in this sector whose residual is NOT
+shared with the control*** — against the fourth peak, where arm-minus-control was $0.83\sigma$ and both
+models sat high of the sky.
+
+⇒ **So the order's conclusion stands and its argument does not.** *The troughs are where the assignment
+becomes observable because of how well the sky measures them, not because of how they mix the clocks.*
+
+## ⚑ THE GUARDS THE ORDER ASKED FOR
+
+* ***The window bias does not exist for this statistic.*** The anchored depth is identical over
+  $W=20\ldots70$ on the sky and on both arms, because it reads a **value** at a located extremum rather
+  than the **location** of one — where `cc66.45`'s parabola apex drifted six multipoles at $\ell_4$.
+* ⚠ ***But `PO-47`'s trap reproduces exactly, on depths instead of positions***: a free extremum search
+  under noise returns $0.0369$ against the anchored $0.00588$, six times worse, because it latches onto
+  noise minima. **The anchoring is necessary and not a convenience**, and that is gated.
+* ⌗ *The one real systematic is the envelope's abscissa: the sky's depth runs $0.2790\to0.2830$ as the
+  $\ell_A$ that sets it goes $298\to305$, about a third of a sigma, reported rather than minimised.*
+
+⚑ **Receipt**: `P15_the_contrast_excess_is_symmetric_about_the_envelope_and_the_troughs_are_where_the_sky_measures_it_best.py`
+— four parts, **21 gates**, `GATES: ALL PASS`. ⚑ *And this revision cost no solver time: it is analysis
+on the banks `cc66.44` and `cc66.45` already built, which is why all three parts and all three guards fit
+in one revision.* ⚠ **NOT CLAIMED**: that $1.8\sigma$ is a detection; a mechanism for the amplitude
+excess; a re-derivation of `PO-47`'s spreads; that the depths discriminate the clock — they do not; no
+verdict on the two-rate assignment; no refit; nothing touches `prop:flat`; no corpus edits.

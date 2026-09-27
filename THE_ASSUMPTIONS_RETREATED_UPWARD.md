@@ -172,7 +172,7 @@ fifty-six at the predicted amplitude.
 
 ### The progenitor's composition, derived
 
-$$\rho\simeq5.4\times10^{-2},\qquad \left.\frac{\rho_r}{\rho_m}\right|_{\rm max}\simeq7.3\times10^{-4}$$
+$$\rho\simeq5.45\times10^{-2},\qquad \left.\frac{\rho_r}{\rho_m}\right|_{\rm max}\simeq7.4\times10^{-4}$$
 
 about $2.5\times$ the observable leg's present value. It began as an assertion — one bead with one
 integration constant, plus a crossing photon–baryon plasma — and ended as a **derivation**: in spherical
