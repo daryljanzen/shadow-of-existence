@@ -272,3 +272,27 @@ the width swap is well posed and **amplifies** the $q$-dependence eightfold ($+0
 while barely moving the mean. *The two are not separable, which is the outcome the order named third.*
 
 Launchers: `../r6919_directions/`, with a README saying what each is for.
+
+---
+
+## `r6925_*` — the visibility's clock, and the comb's vote on it
+
+*`r6925`'s order: which clock is $g=\tau'e^{-\tau}$ a density in, and does the rate rule determine it?*
+
+| file | what is in it | why it is what it is |
+|---|---|---|
+| `r6925_geometry.npz` | per arm and per assignment: $\eta_{\rm LS}$, the FWHM, $\mathrm dr_s$ across it, $\mathrm d\chi$, their ratio, $r_D$, $r_s$, $\ell_A$, $D_M$ | ⚑ **the decisive number**: $\mathrm dr_s/\mathrm d\chi$ goes $0.396733\to0.396957$ on the arm, so $12.8\%$ lower becomes $12.7\%$ — *and structurally, since it is a ratio of two accumulations across the same window and re-weighting the measure re-weights both* |
+| `r6925_visleaf_{lcdm,cr}.npz` | under `VISLEAF=1`: `Dl__injvl`, the **injection**'s spectrum, and `Dl__combvl`, the **real reported** spectrum | ⚠ two different kinds of object under one file and deliberately under separate keys: the first is the projection's transfer of a known input and is **not** a spectrum of the model; the second is. *The order asks for the contrast and the comb side by side, so they come off one bank* |
+| `r6925_noop.npz` | `VISLEAF` unset on both arms, **and set on the control** | two gates, not one: that the switch is inert unset, and that it is inert on the arm whose two clocks coincide — *the rate identity showing in a second place, and the one-sidedness of the whole finding in one result* |
+
+⇒ ⛔ **What they say, and the three readings do not agree.** On the **geometry** the two assignments are
+the same, so the $12.8\%$ is forced by the rule as stated. On the **contrast** the other assignment
+moves the injection's retained ratio $1.0850\to1.0695$ and its slope $+0.0242\to+0.0133$, *toward* the
+real source. But on the **comb** the arm's first peak moves $220\to228$ and $\ell_1/\ell_A$
+$0.7290\to0.7555$, **away** from the sky's $0.7312$, with the control's comb bit-identical — and the
+contrast improvement is partly the statistic reading that same shift, its band residual $9\times$ the
+current assignment's. *The comb is the only one of the three with an external referent. Neither is
+picked, which is what the order asked for.*
+
+Launchers: `../r6925_directions/`, with a README saying what each is for — including the launcher bug
+that wasted thirty-six slices and the smoke test that now precedes the set.

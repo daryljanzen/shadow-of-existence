@@ -462,7 +462,26 @@ TPGATE = 0.6
 # tau(eta) = INT_eta^eta0 tau' d(eta'),  g = tau' exp(-tau),  and the source is integrated against g. **
 _egrid = np.linspace(float(_ea[0]), eta_0, 40000)
 _tp = np.maximum(taup_of(_egrid), 0.0)
-_tau = np.concatenate([[0.0], np.cumsum(0.5 * (_tp[1:] + _tp[:-1]) * np.diff(_egrid))])
+# ⛭⛭ ** VISLEAF: WHICH CLOCK THE VISIBILITY IS A DENSITY IN -- r6925+cc66.43. **
+# *`r6925` names the gap in the rate rule: comoving separations read across leaves take the stacking
+# rate and scales the plasma accumulates take the leaf's, and `g = tau' e^-tau` is NEITHER --- the
+# optical depth is accumulated by the plasma, which is the leaf's side, but it is differentiated per
+# unit eta, and eta is built from the stacking rate.*
+#   ⛔ ** AND THE INSTRUMENT ALREADY ANSWERS IT TWICE, DIFFERENTLY. **  `1/k_D^2` twenty lines below
+#   IS Jac-weighted under `LEAFSCALES`, so the diffusion length -- a scale the plasma accumulates --
+#   takes the leaf clock.  `tau` on this line is NOT, so the optical depth takes the stacking clock.
+#   *Two objects on the same side of the rule, given opposite clocks, and nothing states the choice.*
+#   ⇒ `VISLEAF=1` applies to `tau` exactly the weighting `_kD2inv` already applies to itself, which
+#     is what makes this the OTHER ADMISSIBLE ASSIGNMENT rather than a new invention.
+# ⚠ ** AND IT IS NOT A NO-OP ON THE CONTROL EITHER, in the sense that matters: there Jac == 1 by the
+#   rate identity, so it is bit-identical THERE and only there. **  Default unset = byte-identical on
+#   both arms, which is gated.
+_VISL = os.environ.get('VISLEAF', '0') == '1'
+_dTau = np.diff(_egrid)
+if _VISL:
+    _dTau = _dTau * 0.5 * (np.asarray(Jac_of(_egrid[1:]), float)
+                           + np.asarray(Jac_of(_egrid[:-1]), float))
+_tau = np.concatenate([[0.0], np.cumsum(0.5 * (_tp[1:] + _tp[:-1]) * _dTau)])
 _tau = _tau[-1] - _tau                                      # tau(eta), zero today
 tau_of = CubicSpline(_egrid, _tau)
 vis_of = CubicSpline(_egrid, _tp * np.exp(-_tau))           # g = tau' e^-tau
