@@ -3148,3 +3148,120 @@ P15's own and is not re-derived here. The injected runs are not spectra of this 
 source-text gate reading the two lines that replaced the flag's single read.*
 
 ⌗ *PR **#96**, draft, opened before the scan finished so the machinery could be read early. Subscribed.*
+
+
+---
+
+# ⛭⛭⛭ `cc66.45` — THE LOCATOR IS GOOD TO THREE HUNDREDTHS, AND THE FOURTH PEAK IS MOSTLY THE CONTROL'S
+
+*`r6941` filled, instrument first as you asked.*
+
+## ⛭⛭ ⓶a YOUR STOPPING RULE DOES NOT FIRE, AND IT MISSES BY A FACTOR OF FOUR HUNDRED
+
+*The reported configuration re-run at `LSTEP=1 LMAXL=2000` — $1900$ multipoles against the reported
+$238$, on **both** arms, 35 `KSLICE` slices, one `cr` slice costing 4m37s — is the reference. Against it:*
+
+| | $\ell_1$ | $\ell_2$ | $\ell_3$ | $\ell_4$ |
+|---|---|---|---|---|
+| control: fine / `LSTEP=8` / **error** | 220.351 / 220.350 / **0.0007** | 536.291 / 536.303 / **0.0126** | 814.331 / 814.303 / **0.0283** | 1129.224 / 1129.206 / **0.0176** |
+| arm: fine / `LSTEP=8` / **error** | 221.956 / 221.953 / **0.0035** | 536.105 / 536.114 / **0.0089** | 815.398 / 815.381 / **0.0167** | 1130.531 / 1130.508 / **0.0229** |
+
+⇒ ***Two hundredths of a multipole at $\ell_4$ against your bar of ten.*** *And the extremum search is
+insensitive to its own width — order $3$ through $40$ on the fine grid returns the same four peaks to
+every printed digit — so the damping's flattening costs neither the search nor the refinement. **The
+residual is measured, and the order does not end at step one.***
+
+## ⛔ ⓶b BUT WHAT IS IMPRECISE IS THE PARABOLA'S WINDOW, AND IT IS A BIAS AND NOT A NOISE
+
+*Over `PO-47`'s admissible $W=15\ldots110$ the located peak moves $0.08/2.77/4.73/5.82$ on the arm and
+$0.11/2.98/4.97/6.49$ on the control — **growing steeply with peak index**, because a wider fit on an
+increasingly asymmetric, damping-suppressed hump pulls its apex down the envelope's slope.*
+
+⇒ *At $\ell_4$ that bias is comparable to the residual being read there.* ⚑ **But it displaces the sky
+and both models the same way — so this is the quantitative reason matched-procedure differencing is a
+discipline and not a convenience.** *At the tight window $W=25$ the anchored parabola and the three-point
+locator agree to $0.2$ of a multipole at every peak, so the two conventions are one measurement where the
+bias is small.*
+
+## ⛭⛭⛭ AND YOUR PATTERN IS TWO ARTEFACTS, NEITHER OF THEM PHYSICS
+
+**First, the quartet's provenance, and this one is worth your attention.** *$222/538/818/1134$ is
+`sec:refit-bound`'s **line-of-sight** path. Every bank in this campaign — including the decisive run — is
+the **hierarchy** path, whose raw reading is $220/540/812/1132$.* ⌗ *And at $\ell_3$ the two bracketing
+`LSTEP=8` bins differ by **four parts in ten thousand**, so which one is called the peak is a coin flip:
+the paper quotes $820$ on this path, my locator picks $812$, the sub-bin apex is $815.40$ and the fine
+grid's own maximum is at $815$.*
+
+**Second, the differencing.**
+
+| $n$ | arm | control | sky | arm − sky | control − sky | **arm − control** |
+|---|---|---|---|---|---|---|
+| 1 | 221.956 | 220.351 | 220.4 | $+1.556$ | $-0.049$ | **$+1.605$** |
+| 2 | 536.105 | 536.291 | 537.7 | $-1.595$ | $-1.409$ | **$-0.186$** |
+| 3 | 815.398 | 814.331 | 817.3 | $-1.902$ | $-2.969$ | **$+1.067$** |
+| 4 | 1130.531 | 1129.224 | 1123.9 | $+6.631$ | $+5.324$ | **$+1.308$** |
+
+⇒ ***Sub-bin, peaks two and three were never "on" — each is about $1.7$ LOW — and peak four is $6.6$ out
+rather than $10.1$. And the CONTROL produces four fifths of the fourth peak's residual.***
+
+⇒ ***What belongs to this construction is $+1.61/-0.19/+1.07/+1.31$: one near-constant multipole at all
+four peaks.*** **That is a constant $\Delta\ell$ — the FIRST of your three shapes** — fitting half again
+better than the ruler's constant $\Delta\ell/\ell$ (rms $0.68$ against $1.02$; the ruler would need
+$0.52/1.25/1.91/2.65$) and nothing like a driving error growing with $\ell$.
+
+⇒ **So the answer to the guard is ONE systematic, not two** — and your enumeration was not incomplete.
+*The shape that fitted none of your three candidates was the raw grid plus an undifferenced sky
+comparison; once both are removed, your first candidate fits.*
+
+⌗ *And the sky cannot tell that one multipole from zero. `PO-47` already measured its fourth peak at
+$1121.9\pm2.36$ and put the arm-minus-control displacement at $0.83\sigma$ — **every one of the four is
+inside that spread**, so I am reporting a shape and not a disagreement.*
+
+## ⚑ ⓷ THE SEPARATION AT EVERY PEAK INDEX, AND $\ell_1$ IS THE OUTLIER
+
+| $n$ | total motion | relocation | visibility | plasma |
+|---|---|---|---|---|
+| 1 | $+1.893\%$ | $31.2\%$ | $9.2\%$ | $59.6\%$ |
+| 2 | $+0.628\%$ | $94.1\%$ | $26.4\%$ | $-20.5\%$ |
+| 3 | $+0.709\%$ | $83.4\%$ | $22.7\%$ | $-6.0\%$ |
+| 4 | $+0.662\%$ | $89.3\%$ | $23.5\%$ | $-12.8\%$ |
+
+***At $\ell_2$ through $\ell_4$ the motion is almost entirely geometric and the plasma's phase partially
+CANCELS it; at $\ell_1$ the plasma dominates and adds.*** *By your reading, fixed in advance: the plasma's
+share does not grow with $n$, so the residual is not in the driving; the relocation share does grow,
+which points at the ruler.* ⚠ **But the third of your readings is the one that applies: the shares are
+not flat and the residual is not reached.** *The family's motion is $+0.6$ to $+0.7$ per cent with one
+sign at every peak while the residual alternates — so the decomposition does not cover the four-peak
+pattern, which is about the guard's coverage rather than a failure of the run.*
+
+⌗ *Motions resolved: fine against coarse they agree to $0.02$ of a multipole at every peak, so the shares
+are the spectra's and not the grid's.*
+
+## ⌗ THE PAPER-SIDE CONSEQUENCES, WHICH I AM REPORTING RATHER THAN APPLYING
+
+*You said no corpus edits, so these are yours to decide:*
+
+1. `sec:refit-bound`'s *"the first three peaks land within a grid step, and the fourth is not resolved
+   against the sky"* is the **line-of-sight** path's raw-grid reading. Sub-bin on the hierarchy path
+   peaks two and three are each about $1.7$ **low**, and peak four is $6.6$ out. *The sentence is not
+   wrong about the fourth; it is the "within a grid step" that is a grid statement rather than a
+   measurement.*
+2. The same section's *"what remains is about one multipole at each peak"* — which the paper already says
+   — **is exactly what the differenced quartet now measures**: $+1.61/-0.19/+1.07/+1.31$. That sentence
+   is better supported than it was.
+3. The $\ell_3$ quartet entry on the hierarchy path ($820$) sits on a $0.04$ per cent height difference
+   between two bins. *If that number is ever quoted again it should be the sub-bin $815.4$.*
+
+⛔ **BOUND, HELD.** *No mechanism for the one-multipole offset — measured, named as a constant
+$\Delta\ell$, left. No re-derivation of the sky's locating spread, which is `PO-47`'s. No claim that the
+window convention is an error: it is a convention, and what I establish is that it is shared and that the
+tight window agrees with the three-point locator. No verdict on the two-rate assignment. No refit,
+nothing touching `prop:flat` or the clock family, and no corpus edits.*
+
+⌗ *Twenty-four gates; receipt
+`P15_the_locator_is_good_to_three_hundredths_and_the_fourth_peaks_residual_is_the_controls_too.py`;
+banks at `spectra/r6941_*`; launchers at `r6941_directions/`.*
+
+⌗ *PR **#100**, draft, opened with the launcher before the runs finished. Subscribed. ⌗ One label note:
+the order's own header reads `r6939` while the commit that shipped it is `r6941`, and I have named this
+`r6941+cc66.45` after the commit.*
