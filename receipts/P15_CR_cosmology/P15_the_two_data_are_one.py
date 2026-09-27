@@ -8,6 +8,10 @@ what the naturalness argument offered for it actually describes.
    thermodynamics and no feature of this construction.  Given $\eta$ and the measured
    matter-to-baryon ratio, both inherited for the composition regardless, the ratio at onset IS the
    onset.  ** So the handover supplies ONE composition datum and the cosmology fits ONE parameter.
+   (r6931+70.1: the first half stands and both papers state it.  The second half is superseded --
+   since r6772 the plasma is handed over at the branch point, P15 carries "no early-universe
+   parameter" and there is no onset to fit; the identity then says the amplitude at ANY placed start
+   is that start restated, and "with the handover at the branch point there is no such start".)
 
 ** (2) AND THE NATURALNESS ARGUMENT DESCRIBES AN EPOCH NINE ORDERS AWAY FROM THE HANDOVER. **
    $\rho_r=\rho_m$ occurs at $T\simeq0.8\,$eV.  The handover sits four orders ABOVE the deuterium
@@ -94,14 +98,27 @@ for a, b in [
     ("rho_r/rho_m at onset", "** NOT INDEPENDENT -- the three above **"),
 ]:
     print(f"  {a:>34} {b:>34}")
+print("  (r6931+70.1: the table is the r2376 bill.  Since r6772 there is no onset -- the plasma is")
+print("   handed over at the branch point -- so the 'FITTED' row is empty and the bill is one datum.)")
 print()
 p7 = open(os.path.join(ROOT, 'corpus', 'CR_framework.tex'), encoding='utf-8',
           errors='replace').read()
 gone = 'These are\ndistinct data of the same handover'
-here = 'These are not, on inspection, distinct data'
+# ** r6931+70.1: STALE (c).  "These are not, on inspection, distinct data" was P7's r2419 wording of
+#   this receipt's finding; `440623b6` (r6719) and `89d23854` (r6772+66.28, "P7 no longer carries the
+#   dissolution or the one-parameter accommodation") rewrote sec:inherited-datum onto the branch-point
+#   handover.  The finding survives both, in P7's own new words: "One quantity the handover does not
+#   supply is a second datum beside $\eta$" -- the amplitude at a placed start "follows from $\eta$
+#   and the measured matter-to-baryon ratio by standard thermodynamics alone ... so it is the start
+#   restated rather than an inheritance".  ** Same accounting -- one datum, not two -- re-pinned to
+#   where P7 now states it; read whitespace-flattened because the paragraph is hard-wrapped. **
+_p7n = ' '.join(p7.split())
+here = ('One quantity the handover does not supply is a second datum beside $\\eta$',
+        'so it is the start restated rather than an inheritance')
 print(f"  P7's superseded sentence ('distinct data of the same handover') is GONE: ** {gone not in p7} **")
-print(f"  P7 now carries the corrected accounting:                              ** {here in p7} **")
-assert gone not in p7 and here in p7
+print(f"  P7 now carries the corrected accounting:                              ** "
+      f"{all(h in _p7n for h in here)} **")
+assert gone not in p7 and all(h in _p7n for h in here)
 print()
 for s in [
  "⚠⚠ ** THEY ARE NOT DISTINCT.  Fix $\\eta$ and the matter content -- which this cosmology inherits",
@@ -192,15 +209,33 @@ print("THE PAPERS NOW CARRY IT")
 print("=" * 78)
 p15 = open(os.path.join(ROOT, 'corpus', 'CR_cosmology.tex'), encoding='utf-8',
            errors='replace').read()
+# ** r6931+70.1: three of these five moved; each is re-pinned to where the same finding now stands.
+#   · STALE (c).  "should be withdrawn rather than carried" became "One naturalness argument ...
+#     fails, because it compares a quantity with itself at two epochs nine orders apart" at `73eb61ef`
+#     (r6683) -- the one-state rule: a paper states the argument fails, it does not narrate a
+#     withdrawal.  Same argument, same verdict, same "nine orders apart" reason this receipt computes.
+#   · STALE (c).  "it is the fitted onset restated" left with the fitted onset at `884eb32e`
+#     (r6772+66.2).  P15 now says the amplitude "at a start placed by hand ... is that start read in
+#     units of a density rather than an inheritance; with the plasma handed over at the branch point
+#     there is no such start and no such amplitude" -- this receipt's identity, stated for any start.
+#   · SUPERSEDED, re-pointed (c).  P7's "what the cosmology fits is one parameter" was removed by
+#     `89d23854` (r6772+66.28), with the fitted onset it counted.  The half of the accounting this
+#     receipt established -- the ratio is not a second datum -- is what P7 now says: "One quantity the
+#     handover does not supply is a second datum beside $\eta$".  The "one fitted parameter" half is
+#     not re-pinned: the corpus no longer fits one, for a reason (the handover) outside this receipt.
+#   All needles are matched whitespace-flattened, since both papers hard-wrap these paragraphs. **
+_p15n = ' '.join(p15.split())
 CHECKS = [
-    ("P15 withdraws the naturalness argument by name",
-     'should be withdrawn rather than carried', p15),
+    ("P15 says the naturalness argument fails, by name",
+     'One naturalness argument about the handover fails, because it compares a quantity with '
+     'itself at two epochs nine orders apart', _p15n),
     ("P15 states the handover ratio at ~9e8", r'{\sim}9\times10^{8}', p15),
     ("P15 states the eta ~ 0.5 consequence", r'\eta\simeq0.5', p15),
-    ("P15 states the ratio is the fitted onset restated",
-     'it is the fitted onset restated', p15),
-    ("P7 carries the corrected accounting",
-     'what the cosmology fits is one\nparameter', p7),
+    ("P15 states the ratio at a placed start is that start restated, and there is none",
+     'is that start read in units of a density rather than an inheritance; with the plasma handed '
+     'over at the branch point there is no such start and no such amplitude', _p15n),
+    ("P7 carries the corrected accounting: no second datum beside eta",
+     'One quantity the handover does not supply is a second datum beside $\\eta$', _p7n),
 ]
 for what, needle, txt in CHECKS:
     hit = needle.replace('\\', '\\') in txt

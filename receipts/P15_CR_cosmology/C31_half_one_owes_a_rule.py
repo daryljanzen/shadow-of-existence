@@ -41,9 +41,17 @@ defect ** -- it is what the papers state, and it is what makes the comparison as
 $\\ell<30$, no lensing") stands as written.
 
 Written r2708.  Stated for reversal.
+
+** r6931+70.1 (PO-59) -- ⓵ AND ⓷ DISCHARGED, ⓶ CORRECTED. **  *** The refit is run and its rule is stated
+(same four parameters in each arm, amplitude in closed form; the arm at 1.57x the control).  And ⓶'s
+asymmetry -- "CR has essentially ONE adjustable number" -- is what the corpus corrected: the single
+CMB-calibrated $\\Omega_m$ went at r6625, the fitted onset at r6772+66.3, $\\Omega_m$ is fitted from the
+distances, and P15 locates the frameworks' asymmetry in what each fixes before fitting, not in the
+count. ***  The "matched freedom" question ⓷ asked is answered by equal counts, not by a penalty.
 """
 import os
 import re
+import subprocess
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 ROOT = os.path.abspath(os.path.join(HERE, '..', '..'))
@@ -81,9 +89,24 @@ def main():
     #    (H0, omega_b, omega_c, A_s, n_s) free in each, which is precisely the refit this receipt
     #    distinguished from L-147.  Result: chi^2 = 397.13 against 206.44, Delta = 190.7.  The
     #    identity check below is kept -- it is what made the distinction visible in the first place. **
-    check('⓵ half ① was a REFIT and it HAS BEEN RUN: P15 fits both arms with the same five parameters '
-          'free in each, which is the refit this receipt distinguished from L-147',
-          'free in each' in p15 and '397.13' in p15 and '206.44' in p15)
+    # ** r6931+70.1 (PO-59): CLASS (c), RE-MEASURED WITH PROVENANCE.  The 215-bin five-parameter figures
+    #    were the fitted-onset arm's; `754e76db` (r6772+66.36) took them out as stale, the refit was re-run
+    #    on the branch-point arm (`2007dc1e`, r6799) and carried to the full lensed range (`62c8ae58`,
+    #    r6833).  *** Still a REFIT, still run, still the object this receipt distinguished from L-147:
+    #    now the expansion rate, the matter and baryon densities and the tilt free in each arm with the
+    #    amplitude in closed form -- FOUR directions plus an amplitude, which is why "five" became
+    #    "four" -- the arm at $1.57$ times the control. ***  Old figures read where they stood. **
+    _then = re.sub(r'\s+', ' ', subprocess.run(
+        ['git', 'show', '754e76db^:corpus/CR_cosmology.tex'], cwd=ROOT,
+        capture_output=True, text=True, errors='replace').stdout)
+    check('⓵ half ① was a REFIT and it HAS BEEN RUN: P15 frees "the expansion rate, the matter and baryon '
+          'densities and the tilt" in each arm with "the amplitude in closed form", the arm at $1.57$ '
+          'times the control -- the refit this receipt distinguished from L-147 (r3005-r6772 figures '
+          '$397.13$/$206.44$ read at `754e76db^`)',
+          'With the expansion rate, the matter and baryon densities and the tilt free in each arm and the '
+          'amplitude in closed form' in p15
+          and "\\emph{the arm at $1.57$ times the control's distance" in p15
+          and '397.13' in _then and '206.44' in _then)
     check('while L-147 holds parameters FIXED, using CAMB only as a reference: "THE PIPELINE IS WIRED '
           'IFF the CAMB flat-LambdaCDM best fit reproduces chi^2 = 206.4 over 215 TT bins"',
           'the CAMB flat-LambdaCDM best fit reproduces' in l147)
@@ -91,11 +114,31 @@ def main():
           'discharging `L-147`' in l147)
 
     # ⓶ the arms are asymmetric
-    check('⛭⛭ ⓶ and P15 states CR\'s freedom: "$\\theta_{*}$ is fixed by $\\Omega_{m}$ alone and the '
-          'same $z_{\\rm onset}$ meets the scale at every $H_{0}$ across the range"',
-          'is fixed by' in p15 and 'meets the scale at every' in p15)
-    check('with the DESI fit on "the single CMB-calibrated $\\Omega_{m}\\simeq0.31$"',
-          'single CMB-calibrated' in p15)
+    # ** r6931+70.1 (PO-59): ⓶ CLASS (a), BOTH PINS -- THE ASYMMETRY THEY CARRIED IS WHAT THE CORPUS
+    #    CORRECTED.  "the same $z_{\\rm onset}$ meets the scale at every $H_0$" went at `caaf3481`
+    #    (r6772+66.3) with the fitted onset, retired as a repair at r6770+66.3; "the single CMB-calibrated
+    #    $\\Omega_m$" went at `174202ab` (r6625, "P15's A_s and Omega_m ... contradictions between a
+    #    section and its own corollary"), and P15 now says $\\Omega_m$ "is fitted from the distance data
+    #    here rather than taken from the microwave background".  *** So CR does not have "essentially ONE
+    #    adjustable number" against LCDM's six: P15 states no early-universe parameter, a background
+    #    fixed by the late-time data, and a refit that frees THE SAME FOUR parameters in each arm -- and
+    #    it relocates the asymmetry to what each framework had to fix BEFORE there was a model to fit. ***
+    #    The checks follow that correction.  Passed at r6502 (`b96e1a49`). **
+    check('⛭⛭ ⓶ [corrected r6625/r6772+66.3] P15 states CR\'s freedom -- and it is not one number against '
+          'six: "There is no early-universe parameter among them", and "The two arms fit the same four '
+          'parameters, so no information criterion separates them"; the asymmetry is "in what had to be '
+          'fixed before there was a model to fit"',
+          'meets the scale at every' not in p15
+          and '\\emph{There is no early-universe parameter among them}' in p15
+          and 'The two arms fit the same four parameters, so no information criterion separates them' in p15
+          and 'the asymmetry between the frameworks is not in what was fitted but in what had to be fixed '
+              'before there was a model to fit' in p15)
+    check('with the DESI fit on a distance-fitted $\\Omega_m$, not "the single CMB-calibrated" one: "It is '
+          'fitted from the distance data here rather than taken from the microwave background", DESI at '
+          '"$\\chi^2/\\text{dof}\\simeq1$ at $\\Omega_m\\simeq0.30$"',
+          'single CMB-calibrated' not in p15
+          and 'It is fitted from the distance data here rather than taken from the microwave background' in p15
+          and 'returns $\\chi^2/\\text{dof}\\simeq1$ at $\\Omega_m\\simeq0.30$' in p15)
     check('and the high-$\\ell$ ratio "follows with no free parameter"',
           'with no free parameter' in p15)
 
@@ -105,15 +148,26 @@ def main():
     #    fitted-parameter count", which is exactly the matching rule this receipt said was owed
     #    before any number.  The receipt asked the right question in the right order and it has
     #    been answered; the pin records the answer rather than the absence. **
-    check('⛭⛭ ⓷ and the comparison\'s RULE -- owed FIRST, before its number -- is now set and stated: '
-          'the same five parameters free in each arm, at equal fitted-parameter count',
-          'free in each' in p15 and 'equal fitted-parameter count' in (p7 + p15))
+    # ** r6931+70.1 (PO-59): CLASS (c).  "equal fitted-parameter count" went with the stale figures at
+    #    `754e76db` (r6772+66.36); the rule is restated at `8a627481` (r6811, "the assumption ledger
+    #    beside the fit"): "The two arms fit the same four parameters, so no information criterion
+    #    separates them---penalties of about two per fitted parameter".  *** Same rule -- matched
+    #    freedom, stated before the number -- now with its penalty arithmetic said aloud. ***
+    check('⛭⛭ ⓷ and the comparison\'s RULE -- owed FIRST, before its number -- is set and stated: the '
+          'same parameters free in each arm, "The two arms fit the same four parameters, so no '
+          'information criterion separates them---penalties of about two per fitted parameter"',
+          'free in each arm' in p15
+          and 'The two arms fit the same four parameters, so no information criterion separates them' in p15
+          and 'penalties of about two per fitted parameter' in p15)
 
     print()
     if FAILED:
         print(f'  {len(FAILED)} check(s) FAILED')
         return 1
-    print("  VERDICT: ** half ① is real, unrun, and NOT the banked test — and it owes a RULE first. **")
+    print("  VERDICT (r6931+70.1): ** half ① is RUN (1.57x at matched freedom) and its RULE is stated -- the")
+    print("     same four parameters in each arm.  ⓶'s one-against-six asymmetry is CORRECTED by the corpus")
+    print("     (r6625, r6772+66.3, r6811).  The r2708 finding as it stood: **")
+    print("  ** half ① is real, unrun, and NOT the banked test — and it owes a RULE first. **")
     print('  ⓵ ** DIFFERENT OBJECTS: ** `L-147` runs the likelihood at the inherited datum with')
     print('     parameters ** FIXED **, using CAMB\'s best fit as a reference for the floor.  Half ① is')
     print('     ** a refit **.  A fixed-parameter comparison does not discharge a refit.')

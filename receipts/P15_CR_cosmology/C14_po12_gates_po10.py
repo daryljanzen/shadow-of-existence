@@ -38,6 +38,13 @@ open item. ***  ** Not that $R_b=0.60$ is in doubt ** -- it is computed and stan
 step ② is small ** -- the paper calls it "a genuine build, not a plug-in".
 
 Written r2646.  Stated for reversal.
+
+** r6931+70.1 (PO-59) -- DISCHARGED, AND WHERE. **  *** The transfer this receipt found unbuilt is RUN:
+r6719 (`440623b6`) replaced "a genuine build, not a plug-in" with the end-to-end branch-point-to-
+recombination transfer, a two-arm line-of-sight integral on this cosmology's own background, and both of
+`PO-10`'s halves were then taken off it -- the full-spectrum likelihood on the computed spectrum and the
+odd/even ratio $2.264$ on its polarisation path. ***  The ordering finding (`PO-12` before `PO-10`) is what
+happened; the "not built" statement above is the r2646 state and is no longer the corpus's.
 """
 import os
 import re
@@ -84,14 +91,31 @@ def main():
     #   STRING from `radiation-free` to `geometric stacking`, and P15 was swept to a different
     #   successor.  The paper says "specifying how the fluctuations gravitate on the GEOMETRICALLY
     #   FIXED background".  Pinned to the fragment that carries the claim, not the whole clause.
-    check('⛔ ⓶ and P15 says the transfer is not built: "This is a genuine build, not a plug-in: it '
-          'requires first \\emph{specifying how the fluctuations gravitate on the geometric stacking '
-          'background}"',
-          'This is a genuine build, not a plug-in' in p15
-          and 'it requires first \\emph{specifying how the fluctuations gravitate on the' in p15
-          and 'fixed background}' in p15)
-    check('"and then a bespoke transfer against that specification"',
-          'and then a bespoke transfer against that specification' in p15)
+    # ** r6931+70.1 (PO-59): CLASS (b), DISCHARGED -- the two pins above died at `440623b6` (r6719,
+    #    "the transfer is run"), which deleted "This is a genuine build, not a plug-in ... and then a
+    #    bespoke transfer against that specification" because the build it named was done. **  P15
+    #    now states the end-to-end transfer as RUN, a two-arm line-of-sight Boltzmann integral on this
+    #    cosmology's own background (sec:scope item 1, sec:refit-bound).  *** Re-pointing at the new
+    #    wording alone would keep "not built" alive past its answer, so both checks now pin WHAT
+    #    DISCHARGED IT -- and the second pins that BOTH of PO-10's halves were then read OFF that
+    #    transfer (the full-spectrum likelihood run on the computed spectrum; the odd/even height
+    #    ratio "on the transfer of sec:refit-bound"), which is this receipt's ordering finding
+    #    (PO-12 gates PO-10) carried out in the order it named. ***  Receipt passed at r6502
+    #    (`b96e1a49`) and fails from r6719 on; not inherited from before the handover rewrite.
+    check('⛔ ⓶ [discharged r6719] P15 no longer says the transfer is unbuilt -- it says it is RUN: '
+          '"The end-to-end branch-point-to-recombination transfer is run", "a two-arm line-of-sight '
+          'Boltzmann integral ... carried on this cosmology\'s own background"',
+          'This is a genuine build, not a plug-in' not in p15
+          and '\\emph{The end-to-end branch-point-to-recombination transfer is run}' in p15
+          and 'a two-arm line-of-sight Boltzmann integral, $\\Delta_\\ell(k)=\\int S\\,j_\\ell' in p15
+          and "carried on this cosmology's own background with the perturbations on the leaf "
+              'congruence the framework assigns them' in p15)
+    check('and BOTH of PO-10\'s halves are read off that transfer, in the order this receipt named: '
+          '"The full-spectrum likelihood is run on the computed spectrum", and the odd/even ratio '
+          '"$2.264$ on the polarisation path, on the transfer of sec:refit-bound"',
+          '\\emph{The full-spectrum likelihood is run on the computed spectrum}' in p15
+          and 'what this construction returns for the same quantity is $2.264$ on the polarisation '
+              'path, on the transfer of \\S\\ref{sec:refit-bound}' in p15)
 
     # the numbers, for the record
     Rb = 0.60
@@ -111,7 +135,9 @@ def main():
     if FAILED:
         print(f'  {len(FAILED)} check(s) FAILED')
         return 1
-    print('  VERDICT: ** PO-12 GATES BOTH of PO-10\'s runs, and neither row says so. **')
+    print('  VERDICT (r6931+70.1): ** DISCHARGED -- the transfer PO-12 named is RUN (r6719), and both of')
+    print('     PO-10\'s halves were read off it, in the order below. **  What follows is the r2646 finding:')
+    print('  ** PO-12 GATES BOTH of PO-10\'s runs. **')
     print('  ⛔ ⓵ ** The obvious route imports what the corpus says is not built: ** the textbook odd/even')
     print('     ratios at R_b = 0.60 give ** 3.50, 4.00, 3.06 ** -- but those are ΛCDM peak-height')
     print('     formulae, ** which assume a transfer from the primordial spectrum to the observed C_l. **')

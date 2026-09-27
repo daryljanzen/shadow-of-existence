@@ -91,9 +91,16 @@ def main():
     #          REPLACED by what the rewrite established.  This is the second kind. ***
     #    What the receipt is FOR survives untouched and is now stronger: the decomposition never
     #    rested on the floor, and P10 now says the closure does not rest on the straddle either.
-    check('and the straddle is no longer open but COMPUTED: "the straddle itself is now a computed '
+    # ** r6931+70.1: CLASS (c) -- STALE, AND THE WORD THAT WENT IS ONE A PAPER SHOULD NOT CARRY.
+    #   440623b6 (r6719, the cowork read's list across eleven papers) changed "The straddle itself is
+    #   NOW a computed fact" to "The straddle itself is a computed fact" -- same sentence, same
+    #   \rcpt{P10_the_straddle_is_computed}, same spec(Gamma-hat) = [gamma, inf) argument.  "now" was
+    #   a record-of-states word (a paper presents one state), so its removal is the corpus's tidying,
+    #   not a change of claim.  Re-pinned to the current sentence plus its receipt citation, so the
+    #   check still requires the straddle to be stated as COMPUTED and cited.
+    check('and the straddle is no longer open but COMPUTED: "the straddle itself is a computed '
           'fact", the spectrum occupying both sides of 3/4',
-          'straddle itself is now a computed fact' in p10
+          'straddle itself is a computed fact\\rcpt{P10_the_straddle_is_computed}' in p10
           and 'does occupy both sides' in p10)
     check('and the receipt\'s own thesis is what P10 now states outright -- the closure does not rest '
           'on where the straddle falls, "supplied fibre by fibre and so cannot be broken by the size '

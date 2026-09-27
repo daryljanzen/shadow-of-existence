@@ -178,8 +178,30 @@ def main():
     check('⌗ and the Unruh case kept the job it was written for: COMPLETION, not observer-dependence, '
           'is what sorts the four horizons -- the sorting is the content',
           'completion sorts all four' in allp)
-    check('⛔ AND "stress tensor": ZERO -- the central object of QFT in curved space',
-          counts['stress tensor'] == 0)
+    # ** r6931+70.1: CLASS (c) -- THE COUNT MOVED FOR AN INNOCENT REASON, AND THE FINDING DID NOT.
+    #   "stress tensor" is no longer at zero: it is at ONE, and the one is named.  r6909 (5eaa787a,
+    #   PO-52 closing on the Gauss-Bonnet identity) added to P10 (canonical_time.tex) "the Ricci
+    #   remainder being what the field equations trade for the stress tensor" -- the CLASSICAL
+    #   source in Einstein's equations, used in passing to say where a Ricci-squared counterterm
+    #   goes.  ** What this check is FOR is that the corpus never treats the central object of QFT in
+    #   curved space, the renormalised expectation value <T_mn>; that is still true: no paper's prose
+    #   carries \langle T, point-splitting or a Hadamard state (the one "point-splitting" is the
+    #   Bunch-Davies bibitem title in the dynamics paper's bibliography). **  So the check now pins the count at 1
+    #   with its location and sentence, and asserts the <T_mn> absence directly -- a second use, or
+    #   any treatment of the expectation value, fails it and must be read.
+    _st_where = [os.path.basename(f) for f in P
+                 if re.search('stress tensor', body(f), re.I)]
+    _prose_nobib = re.sub(r'\\bibitem\{[^}]*\}.*?(?=\\bibitem|\\end\{thebibliography\})', '',
+                          allp, flags=re.S)
+    check('⛔ AND "stress tensor" as QFT in curved space\'s object: STILL ABSENT -- the one use (P10, '
+          'r6909) is the classical source "the field equations trade for the stress tensor", and no '
+          'paper treats the renormalised <T_mn> (no \\langle T, no point-splitting, no Hadamard)',
+          counts['stress tensor'] == 1
+          and _st_where == ['canonical_time.tex']
+          and 'what the field equations trade for the stress tensor' in body(
+              os.path.join(ROOT, 'corpus', 'canonical_time.tex'))
+          and not re.search(r'\\langle\s*(?:\\hat\s*\{?\s*)?T(?![A-Za-z])', _prose_nobib)
+          and not re.search(r'Hadamard|point-splitting', _prose_nobib, re.I))
     check('⛭ AND "trans-Planckian" is in print -- at ZERO when this receipt was written, supplied at '
           'c54.207 WITH its scoping, which is the whole content of that clause',
           counts['trans-Planckian'] > 0)
@@ -213,7 +235,9 @@ def main():
     print('     ** so its argument is already on the right side of the distinction. **')
     print('  ⛔ BUT THE ABSENCE IS TOTAL: ** Hawking 94, graviton 73, Bogoliubov 8 -- and Unruh 0,')
     print('     stress tensor 0, trans-Planckian 0, and every "Rindler" the AUTHOR on lensing, never')
-    print('     a Rindler HORIZON. **  A referee in this field asks about')
+    print('     a Rindler HORIZON. **  (As written at r2521; Unruh, the Rindler horizon and')
+    print('     trans-Planckian have since been supplied, and "stress tensor" has one classical use in')
+    print('     P10 since r6909 -- the renormalised <T_mn> is still untreated.)  A referee in this field asks about')
     print('     Unruh in the first paragraph.')
     print('  ⌗ Unlike ③④, this is NOT a missing sentence: ** nothing in the corpus addresses Unruh at')
     print('    all, so the treatment must be WRITTEN rather than assembled. **  And it strengthens the')

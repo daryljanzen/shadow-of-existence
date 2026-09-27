@@ -21,6 +21,12 @@ WHAT IS ESTABLISHED.
      support means each wall's structure is supported away from the others, so one vantage's
      radial function does not vanish at another's wall.  The one-radius reading is excluded by
      the slicing paper's own text, in general, with no mass parameter anywhere in it.
+     [r6931+70.1: THE WORD WAS WRONG AND THE PREMISE WAS NOT.  r6748 computed that the wall modes
+     are algebraic, not exponential, and that their overlap is exact and of order one -- the
+     supports are NOT disjoint -- and r6756 took "disjoint support" out of P14's five sites.  What
+     the fork needs survives in P14 as the true statement: "each vantage's signed areal radius
+     vanishes at its own and at neither of the others", with the three modes spanning three
+     dimensions because they are linearly INDEPENDENT.  That is the premise here, not disjointness.]
   2. ** AND "a one-hinge truncation being excluded as carrying an unfixed arbitrary modulus" is
      a SECOND, INDEPENDENT argument of a kind neither earlier receipt used: not that one radius
      is geometrically wrong, but that truncating to one hinge leaves a free parameter the
@@ -93,6 +99,12 @@ for s in [
  "   SECOND, INDEPENDENT argument against reading (i), of a kind neither `L-128` nor `L-128b`",
  "   used: not that one radius is geometrically wrong, but that truncating to one hinge leaves a",
  "   free parameter the construction cannot fix. **",
+ "",
+ "⛔ [r6931+70.1] ** 'DISJOINT SUPPORT' ITSELF WAS FALSE, AND THE PREMISE DID NOT NEED IT. **",
+ "   r6748 (`P14_the_walls_modes_are_algebraic_not_exponential_so_the_disjointness_obstruction_",
+ "   does_not_hold`) showed the wall modes overlap exactly and at order one; r6756 removed the",
+ "   word from P14.  What excludes reading (i) is the part that is true -- vantage j's signed",
+ "   radius vanishes at wall j and at neither other wall -- and P14 states it in those words.",
 ]:
     print("  " + s)
 
@@ -192,16 +204,32 @@ _tex = open(_p3, encoding="utf-8", errors="replace").read()
 _m14 = open(_p14, encoding="utf-8", errors="replace").read()
 
 # ⓵ WHAT IS STILL TRUE: P14 states the premise itself, and the load-bearing clause is there.
-assert _m14.count("disjoint support") >= 1, \
-    "P14 must still carry 'disjoint support' -- if this fires the premise is lost from the corpus"
+# ** r6931+70.1: THIS PIN FROZE AN ERROR.  Class (a).  It required P14 to carry "disjoint support",
+#   and r6748 (`a839957a`, receipt P14_the_walls_modes_are_algebraic_not_exponential_so_the_
+#   disjointness_obstruction_does_not_hold) established that the three wall modes do NOT have
+#   disjoint support -- algebraic, not exponential, overlap exact and of order one.  r6756
+#   (`23a98f4f`) then corrected all of P14's sites: the conclusions stand, the stated reasons became
+#   the true ones.  Red since r6756, so red at r6774 (`91751daa`) and r6921 (`5f9c2b2d`).
+#   ** The premise this receipt is about -- vantage j's radial function does not vanish at wall k,
+#   so one radius vanishing at all three walls is excluded -- was never the disjointness; it is the
+#   convention footnote's surviving clause.  Re-pointed there, and at the independence that now
+#   carries the three-dimensional span, and the word is asserted ABSENT so the refuted reason
+#   cannot quietly return. **
+assert ("at distinct points of the throat circle, and each vantage's signed areal radius vanishes "
+        "at its own and at neither of the others") in _m14, \
+    "P14 must still carry the three-walls clause -- if this fires the premise is lost from the corpus"
+assert "wall-bound zero-modes are linearly independent and span a three-dimensional space" in _m14, \
+    "P14 must carry the three-dimensional span on the TRUE reason, linear independence"
+assert "disjoint support" not in _m14, \
+    "P14 has regained 'disjoint support', which r6748 refuted -- route it, do not re-pin to it"
 assert "unfixed arbitrary modulus" in _m14, \
     "P14 must still carry the one-hinge exclusion in its own voice"
 
 # ⓶ WHAT WAS LOST, asserted as a FACT so the loss is checkable and cannot be quietly reversed
 #    without this receipt noticing in the other direction.
 assert "disjoint support" not in _tex, \
-    ("P3 has regained 'disjoint support'.  That is GOOD NEWS and this receipt must be rewritten "
-     "to its original form: the cross-paper support is back.")
+    ("P3 has regained 'disjoint support' -- the word r6748 refuted.  Route it to the chat seat; "
+     "the cross-paper support this receipt wants is the vanishing-at-its-own-wall clause.")
 assert "one-hinge" not in _tex, \
     "P3 has regained the one-hinge clause -- rewrite this receipt to its original form"
 

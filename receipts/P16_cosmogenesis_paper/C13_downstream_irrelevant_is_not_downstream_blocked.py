@@ -25,7 +25,10 @@ something.  P16, on both entries:
 for `fig:history` -- *** the same statement about the same peak, in two places, counted twice. ***  Third
 time this session a bucket count concealed a duplicate (r2617, r2618, here).
 
-** ⓷ AND THE THIRD ITEM IS MARKED "NOT A DEBT" IN THE SAME BREATH AS "OPEN". **  "What remains open is
+** ⓷ AND THE THIRD ITEM IS MARKED "NOT A DEBT" IN THE SAME BREATH AS "OPEN". **  [r6931+70.1: as quoted
+below this is the r2639 text.  Its likelihood half was since DONE -- r6719, deuterium and helium-4 within
+1 sigma -- and P16 now names the remainder "a precision frontier the title does not stake itself on ...
+not a debt".]  "What remains open is
 ** not the computation but its last-percent precision **: the specially-evaluated (as against REACLIB)
 light-nuclide rates and the likelihood against the measured abundances---** a data-confrontation frontier
 the title does not stake itself on, NOT A DEBT **."
@@ -103,9 +106,28 @@ def main():
     check('⓷ and the third is marked NOT A DEBT in the same sentence as "open": "What remains open is not '
           'the computation but its last-percent precision"',
           'What remains open is not the computation but its last-percent precision' in p16)
-    check('"a data-confrontation frontier the title does not stake itself on ... not a debt"',
-          'a data-confrontation frontier the title does not stake itself on' in p16
+    # ** r6931+70.1: HALF OF THIS SENTENCE WAS DISCHARGED, AND THE OTHER HALF IS THE FINDING.
+    #   Class (b) for the half that moved, (c) for the half that stays.  At r2639 the open remainder
+    #   was TWO things -- "the specially-evaluated (as against REACLIB) light-nuclide rates AND THE
+    #   LIKELIHOOD AGAINST THE MEASURED ABUNDANCES---a data-confrontation frontier the title does not
+    #   stake itself on ... not a debt".  r6719 (`440623b6`) did the confrontation: P16's abstract now
+    #   says "The data-confrontation is \emph{done}: the network meets the measured deuterium and
+    #   helium-4 within $1\sigma$ at the Planck $\eta$, with lithium the standard several-$\sigma$
+    #   miss", and the body sentence dropped the likelihood clause, so what it names is "a PRECISION
+    #   frontier the title does not stake itself on (Sec~\ref{sec:verdict}), not a debt".  Red since
+    #   r6719, i.e. at r6774 (`91751daa`) and r6921 (`5f9c2b2d`).  ** This check's finding -- the
+    #   third item is marked NOT A DEBT in the sentence that calls it open -- is intact on the
+    #   remainder, so it is pinned there; the discharged half is pinned to what discharged it, so the
+    #   receipt does not keep an already-run confrontation listed as open. **
+    check('"a precision frontier the title does not stake itself on ... not a debt" -- the remainder, '
+          'the specially-evaluated light-nuclide rates',
+          'a precision frontier the title does not stake itself on' in p16
           and 'not a debt' in p16)
+    check('⛭ and the likelihood against the measured abundances, the other half of r2639\'s frontier, '
+          'is DISCHARGED: "The data-confrontation is done: the network meets the measured deuterium '
+          'and helium-4 within 1 sigma at the Planck eta" (r6719)',
+          'The data-confrontation is \\emph{done}: the network meets the measured deuterium and '
+          'helium-4 within $1\\sigma$' in p16)
 
     print()
     if FAILED:
@@ -119,7 +141,8 @@ def main():
     print('  ⓶ ** And two of the three are ONE fact: ** the body sentence and the fig:history caption,')
     print('     counted twice.  ** Third time this session a bucket count concealed a duplicate. **')
     print('  ⓷ ** And the third is marked "not a debt" in the same breath as "open": ** "a')
-    print('     data-confrontation frontier the title does not stake itself on".')
+    print('     precision frontier the title does not stake itself on" -- its data-confrontation half')
+    print('     since done (r6719: D and He-4 within 1 sigma at the Planck eta).')
     print('  ⇒⇒ ** So all three are SCOPE-BY-DESIGN in the ledger\'s own taxonomy -- statements a paper')
     print('     makes about what it does not cover and why nothing depends on it. **  *** What made them')
     print('     look like work is a bucket whose NAME described a dependency the papers never')

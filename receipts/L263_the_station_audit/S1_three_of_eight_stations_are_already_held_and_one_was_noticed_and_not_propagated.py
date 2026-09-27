@@ -320,17 +320,38 @@ def main():
     #   check exists: the term reads as a hole in the theatre's prose while being P13 USING the
     #   obstruction, and more uses of it is the same fact more strongly, not a different one. **
     #   ⌗ Pinned to the measurement in this file's idiom, so a further move is looked at.
+    # ** r6931+70.1: RE-MEASURED ×9 -> ×8, class (c) STALE, and the departure is NAMED. **
+    #    `73eb61ef` (r6683, "the node's combined groups 1-6 patch") rewrote P13's sec:open paragraph
+    #    that opened "CR had at the time of this boundary's statement no fermion sector built at all
+    #    ... there was then no Dirac operator and no equivariant index in the theory to evaluate" --
+    #    a sentence narrating the paper's own earlier state, removed under the one-state rule; the
+    #    replacement says the sector CR builds "supplies no equivariant index", which was already
+    #    counted.  P13 8 -> 7; P11's one unmoved.  ⇒ *The finding is untouched: every remaining
+    #    occurrence is P13 (or P11) USING the obstruction -- the equivariant index a circle action
+    #    kills, the Z2-graded operator, the sector that supplies none.*  Pinned to the measurement,
+    #    so a further move is looked at again.
     _eqi = RB.counts('equivariant index')
     check(f'⓸ᶜ and it earned itself on this very audit: `equivariant index` ×{sum(_eqi.values())} '
           f'reads as a hole in the theatre\'s prose and is P13 using the Atiyah--Hirzebruch '
-          f'obstruction (×{_eqi.get("P13", 0)} there; ×7 at the audit, r4555 and r6425 adding one each)',
-          sum(_eqi.values()) == 9 and _eqi.get('P13', 0) == 8
+          f'obstruction (×{_eqi.get("P13", 0)} there; ×7 at the audit, r4555 and r6425 adding one '
+          f'each, r6683 removing the one that narrated the paper\'s earlier state)',
+          sum(_eqi.values()) == 8 and _eqi.get('P13', 0) == 7 and _eqi.get('P11', 0) == 1
           and 'Atiyah--Hirzebruch index obstruction' in B['P13'])
-    check('⓸ᵈ and `permutation representation` ×1 reads as an opening and is P14 citing the '
-          'discrete-flavour literature, not an index statement',
-          sum(RB.counts('permutation representation').values()) == 1
+    # ** r6931+70.1: RE-MEASURED ×1 -> ×2, class (c) STALE, and the arrival is NAMED. **
+    #    `dacd0486` (r6536, "the 2+1 S3 wants exists ... on the wrong three") added to P14: the
+    #    turnaround's T is "an involution with a fixed point whose permutation representation splits
+    #    2+1 under R" (\rcpt{P14_the_two_plus_one_is_on_the_wrong_three}).  That is P14 computing the
+    #    permutation representation of its OWN three -- a group-theoretic splitting, not an index
+    #    statement -- so the finding (the phrase reads as an opening and is not an index statement)
+    #    holds for both occurrences.  Both are pinned by their own text.
+    _perm = RB.counts('permutation representation')
+    check(f'⓸ᵈ and `permutation representation` ×{sum(_perm.values())} reads as an opening and is '
+          f'P14 citing the discrete-flavour literature, and P14 splitting its turnaround\'s three '
+          f'2+1 -- neither an index statement',
+          sum(_perm.values()) == 2 and _perm.get('P14', 0) == 2
           and 'three-object permutation representation' in B['P14']
-          and 'democracy matrix' in B['P14'])
+          and 'democracy matrix' in B['P14']
+          and 'whose permutation representation splits $2{+}1$ under $R$' in B['P14'])
 
     print()
     if FAILED:

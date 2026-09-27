@@ -43,6 +43,13 @@ open.  ** Not that the $+43\\%$ to $-3\\%$ range is reproduced ** -- that spans 
 scanned here.
 
 Written r2687.  Stated for reversal.
+
+** r6931+70.1 (PO-59) -- DISCHARGED, AND WHERE. **  *** ⓸'s owed item -- the start of the plasma "from the
+construction rather than as a scan variable" -- is supplied: the plasma is handed over at the branch point
+(r6770+66.3, landed in sec:diffusion-scale at r6772+66.6, `a99b7a86`), and the paper states the start is
+not a free parameter while keeping this receipt's monotone dependence on it. ***  The z_onset table above
+integrates the stacking-vs-leaf gap as r2687 framed it; the paper now accumulates both lengths on the leaf
+rate, so its numbers are this receipt's model and no longer the paper's.
 """
 import os
 import re
@@ -120,8 +127,12 @@ def main():
     check(f'⛭⛭ ⓶ integrated: z=1200 -> {vals[1200]:+.1f}%, z=2000 -> {vals[2000]:+.1f}%, '
           f'z=3000 -> {vals[3000]:+.1f}%, z=10000 -> {vals[10000]:+.1f}%',
           6.5 < vals[1200] < 7.5 and 9.5 < vals[3000] < 11)
-    check("and P15's $+9.4\\%$ sits between the z=2000 and z=3000 rows",
-          vals[2000] < 9.4 < vals[3000] and '9.4' in _p15_at(_BEFORE_R2755) and '8.2' in p15)
+    # ** r6931+70.1 (PO-59): the `'8.2' in p15` conjunct here was VACUOUS -- the 8.2% signature left
+    #    P15 at `a99b7a86` (r6772+66.6) and the check stayed green on an unrelated "the control by
+    #    $8.2\\%$" in sec:refit-bound.  The 8.2 is now read where it stood (`a99b7a86^`, c54.220's rule). **
+    check("and P15's then-stated $+9.4\\%$ sits between the z=2000 and z=3000 rows",
+          vals[2000] < 9.4 < vals[3000] and '9.4' in _p15_at(_BEFORE_R2755)
+          and 'That figure and the $8.2\\%$ of' in _p15_at('a99b7a86^'))
     check('while r2686\'s point-scaling $+6.8\\%$ is the $z\\to z_{\\rm rec}$ limit, below every '
           'integrated value',
           all(v > 6.8 for v in vals.values()))
@@ -131,15 +142,33 @@ def main():
     check('⓷ and the dependence is MONOTONIC in the onset redshift, which is what makes $\\theta_*$ and '
           '$\\theta_D$ two constraints rather than one',
           all(vals[zs[i]] < vals[zs[i+1]] for i in range(len(zs)-1)))
-    check('as P15 argues: "it varies from $+43\\%$ to $-3\\%$ across the onset redshifts one might '
-          'consider, so a single datum cannot absorb both observables"',
-          'so a single datum cannot absorb both observables' in p15)
+    # ** r6931+70.1 (PO-59): CLASS (b), DISCHARGED.  "it varies from $+43\\%$ to $-3\\%$ across the onset
+    #    redshifts one might consider, so a single datum cannot absorb both observables" was deleted at
+    #    `a99b7a86` (r6772+66.6) -- read at `a99b7a86^` below, where it stood.  This receipt's ⓸ said
+    #    what was owed was "the ONSET REDSHIFT from the construction rather than as a scan variable".
+    #    *** The construction supplies it: on the r6770+66.3 adjudication the plasma is handed over at
+    #    the branch point, and sec:diffusion-scale now says the ratio depends on "where the plasma is
+    #    handed over, and how far the diffusion integral is carried" -- "Neither is a free parameter,
+    #    and the first is the larger" -- while keeping this receipt's monotone dependence: "a start
+    #    placed later on the expanding leg raises it steeply". ***  So the check pins the discharge and
+    #    the surviving dependence, not the new wording alone.  Passed at r6502 (`b96e1a49`). **
+    check('as P15 argued ("a single datum cannot absorb both observables", read at `a99b7a86^`) -- and '
+          '[discharged r6772+66.6] the start this receipt said was owed is now the construction\'s: '
+          '"where the plasma is handed over", "Neither is a free parameter, and the first is the larger", '
+          'with the same monotone dependence, "a start placed later on the expanding leg raises it steeply"',
+          'so a single datum cannot absorb both observables' in _p15_at('a99b7a86^')
+          and 'so a single datum cannot absorb both observables' not in p15
+          and 'where the plasma is handed over, and how far the diffusion integral is carried' in p15
+          and '\\emph{Neither is a free parameter, and the first is the larger.}' in p15
+          and 'a start placed later on the expanding leg raises it steeply' in p15)
 
     print()
     if FAILED:
         print(f'  {len(FAILED)} check(s) FAILED')
         return 1
-    print('  VERDICT: ** the gap closes by integration, and the answer is set by the ONSET. **')
+    print('  VERDICT (r6931+70.1): ** DISCHARGED -- the start is the construction\'s (the branch-point')
+    print('     handover, "Neither is a free parameter"), r6772+66.6.  The r2687 finding as it stood: **')
+    print('  ** the gap closes by integration, and the answer is set by the ONSET. **')
     print('  ⛔ ⓵ ** The first integration was nonsense and that located the variable: ** running from')
     print('     a → 0 made r_s larger by a factor of ** 110 **, because rho_r/rho_m diverges there.')
     print('     ** P15 fixes it — the lower limit is the BRANCH POINT, "there is no observable expansion')

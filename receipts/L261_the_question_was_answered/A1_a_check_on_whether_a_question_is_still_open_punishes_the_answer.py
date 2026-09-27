@@ -135,6 +135,9 @@ def main():
           'THE BAND IS A PROPOSAL, NOT A PREVENTION' in b1
           and 'THE BAND IS A PROPOSAL, NOT A PREVENTION' in n1
           and SENT_N1 not in b1 and SENT_N1 not in n1)
+    # ** r6931+70.1: LEFT RED, downstream of a class (d). **  N1 exits 0; `B1` fails only on ⓸ᶜ¹,
+    #    because r6511's `_other_halves` exemption makes the band unable to fire for any declared node
+    #    (see B1's r6931+70.1 note).  Not loosened: it clears when the gate is corrected.
     check(f'⓷ᵇ and both exit 0', run(B1) == 0 and run(N1) == 0)
 
     # ** THE SEED, AND IT IS WHAT SHOWS THE NEW FORM IS STRONGER RATHER THAN MERELY DIFFERENT:

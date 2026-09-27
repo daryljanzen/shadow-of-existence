@@ -23,6 +23,18 @@ round three-sphere of radius $a(T)=\alpha\cosh(T/\alpha)$ in cosmic time $T$"* -
   ⚠ *This is the FIFTH substitution of a nearby object this session across both lines, and the second
   by this one.  It was found by asking which background the tower is actually defined on -- a question
   c54.210 should have asked before importing an answer from another paper.*
+** ⛔ r6931+70.1 -- THE "BECAUSE" IN THIS RECEIPT'S TITLE IS NO LONGER THE CORPUS'S REASON, AND IT WAS
+CORRECTED THERE, NOT HERE FIRST. **  r6909 (5eaa787a, closing PO-52) changed P10 from "one-dimensional
+because the admitted background family is" to "one-dimensional on the admitted family", and added that
+the reduction "does not in fact need the family": in four dimensions $C^2=E_4+2(R_{\mu\nu}R^{\mu\nu}-R^2/3)$
+is an ALGEBRAIC IDENTITY ON ANY METRIC, so no order in the shear separates the curvature-squared
+invariants; the vacuum-$\Lambda$ backgrounds supply only the rest of the step ($C^2=E_4-8\Lambda^2/3$
+on shell), and the one restriction is the on-shell one.  ** What PARTS 1-4 compute -- every quadratic
+invariant a constant times $\alpha^{-4}$ on the maximally symmetric family, on P10's own slicing -- is
+still true and is still what P10 states "on the admitted family"; what is withdrawn is that the family
+is the REASON.  The file name is an identifier and is kept. **  And the c54.215 line below, "the real
+limit is the SHEAR", is superseded the same way: the shear breaks conformal flatness but not the
+Gauss-Bonnet degeneracy, so the limit P10 names is off-shell $C^2$, not the shear.
 ** KIND: LATENT ** -- *p0 states the invariant fact for a different job; nothing here is new physics.*
 
 ===================================================================================================
@@ -264,8 +276,16 @@ WRITTEN = [
      r'the counterterm\s+a constant vacuum energy requires is a cosmological-constant term'),
     ("the sub-leading successors are named rather than left implicit",
      r'quadratic and\s+logarithmic successors\} carry the mass'),
-    ("the basis degeneracy is stated with its reason",
-     r'the counterterm basis is\s+one-dimensional because the admitted background family is'),
+    # ** r6931+70.1: CLASS (a) -- THE PIN FROZE A REASON THE CORPUS CORRECTED.  It pinned
+    #   "the counterterm basis is one-dimensional because the admitted background family is"; r6909
+    #   (5eaa787a, PO-52) rewrote it to "one-dimensional on the admitted family" and gave the reason
+    #   the shear cannot remove: the 4D algebraic identity C^2 = E_4 + 2(Ric^2 - R^2/3) "on any
+    #   metric", with the admitted backgrounds supplying only the on-shell rest of the step.  The
+    #   slot still asks for "the basis degeneracy stated WITH ITS REASON" -- now the corrected one.
+    ("the basis degeneracy is stated with its reason -- one-dimensional on the admitted family, and "
+     "the reduction resting on a 4D identity on any metric rather than on the family",
+     r'the counterterm basis is\s+one-dimensional on the admitted family\}.*?that reduction does not '
+     r'in fact need the family.*?an\s+\\emph\{algebraic identity on any\s+metric\}'),
     ("⛔ and the scope names P10's OWN slicing, not another paper's rate",
      r'the closed synchronous slicing\s+\$a\(T\)=\\alpha\\cosh\(T/\\alpha\)\$'),
     ("stating that the degeneracy holds on the tower's own geometry",
@@ -308,7 +328,9 @@ print("this framework admits; the two sentences the argument assembles are the c
 print("slicing a(T)=alpha*cosh(T/alpha) has R = 12/alpha^2 CONSTANT, so the degeneracy holds on the")
 print("background the free tower uses; and the c54.211 'real limit is the coupled sector' is WITHDRAWN")
 print("at c54.215 (L-549): the degeneracy is CONFORMAL FLATNESS, not maximal symmetry, so no scale factor")
-print("can break it, and back-reaction cannot. The real limit is the SHEAR (L-549).")
+print("can break it, and back-reaction cannot. (r6931+70.1: and per P10 at r6909 the reduction does not")
+print("need the family at all -- C^2 = E_4 + 2(Ric^2 - R^2/3) is an identity on any 4D metric, so the")
+print("shear cannot separate the invariants either; the one restriction is on shell.)")
 print("=" * 78)
 
 # ============================================================================================

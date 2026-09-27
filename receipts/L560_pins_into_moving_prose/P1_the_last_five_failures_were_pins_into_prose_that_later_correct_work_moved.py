@@ -132,10 +132,28 @@ def main():
           'Lovelock' not in p12_then
           and 'the same algebra closes for the Lovelock theories' in live)
     p0_then = flat(git('show', 'aa2b6ee:corpus/geometric_core_paper.tex'))
-    check('⇒ U1/U3: p0 read "Reach: stated as a target, not a result" at aa2b6ee and reads "the item '
-          'has two sides and they now stand differently" now -- the fork\'s c54.179 split it',
+    # ** r6931+70.1: RE-POINTED, class (b) DISCHARGED -- and at what discharged it. **  The c54.179
+    #    split sentence ("The item has two sides and they now stand differently, so it is split rather
+    #    than carried whole") is itself gone: `73eb61ef` (r6683, the groups 1-6 patch) rewrote p0's
+    #    frontier list, and the item now reads "The test has two sides, and each has been run", with
+    #    "On the constant side" carried by sec:ledger and "On the datum side" closed by an
+    #    impossibility result cited to `X1_the_ratio_is_a_clock_reading_not_a_carried_datum`.  *The
+    #    split c54.179 made left the datum side a TARGET; that target has since been run.*
+    #    ⇒ The check's finding -- the target wording U1/U3 pinned was moved by correct work, and it is
+    #      gone -- is asserted as before; the successor is pinned to the RUN, both sides, with the
+    #      datum side's own receipt citation, not to a re-worded sentence alone.
+    _p0_live = flat(open(os.path.join(ROOT, 'corpus', 'geometric_core_paper.tex'),
+                         encoding='utf-8', errors='replace').read())
+    p0_split = flat(git('show', '2af0b0b3:corpus/geometric_core_paper.tex'))
+    check('⇒ U1/U3: p0 read "Reach: stated as a target, not a result" at aa2b6ee; the fork\'s c54.179 '
+          '(2af0b0b3) split it -- "two sides and they now stand differently" -- and the item now reads '
+          '"The test has two sides, and each has been run", the datum side closed at X1',
           'Reach: stated as a target, not a result' in p0_then
-          and 'item has two sides and they now stand differently' in live
+          and 'item has two sides and they now stand differently' in p0_split
+          and '\\emph{The test has two sides, and each has been run.}' in _p0_live
+          and '\\emph{On the constant side}' in _p0_live
+          and '\\emph{On the datum side}' in _p0_live
+          and 'for want of work}\\rcpt{X1_the_ratio_is_a_clock_reading_not_a_carried_datum}' in _p0_live
           and 'Reach: stated as a target, not a result' not in live)
     p7_then = flat(git('show', 'e8e58cf:corpus/CR_framework.tex'))
     seg_then = p7_then[p7_then.find('\\section{Frontiers and open problems}'):]

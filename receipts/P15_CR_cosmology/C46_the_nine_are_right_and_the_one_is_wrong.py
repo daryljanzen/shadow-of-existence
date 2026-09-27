@@ -35,6 +35,17 @@ because two receipts disagreed.  ** They no longer disagree: one of them is corr
 own rule -- stale when one receipt asserts and none competes -- the tilde is now removable, and the
 value to write is the one the surviving receipt computes: $\\theta_D/\\theta_* = 1.0816$, ** $+8.2\\%$. ***
 
+** ⌗ r6931+70.1: AND THE $+8.2\\%$ HAS SINCE BEEN SUPERSEDED IN ITS TURN -- NOT AS AN ERROR OF THIS
+TRACE BUT BY A LATER COMPUTATION. **  *** The $\\sim8\\%$ was the ratio at the FITTED ONSET with the two
+lengths taken to different epochs.  P15 dropped the onset for the branch-point handover (r6772), settled
+both lengths onto the leaf rate and onto one endpoint, the visibility peak (r6797, r6899), and now reads
+$\\theta_D/\\theta_*$ "moved by under a per cent" with $r=0.992$ --
+`P15_the_damping_signature_error_budget_and_the_convention_dominates_it` and
+`P15_the_signature_collapses_at_the_adjudicated_ratio_and_the_endpoint_sets_its_sign` (0.99179).  What
+survives here is the TRACE: the $9.4\\%$ was the $x_e$ error, the nine $\\sim8\\%$ were right on the
+configuration they were computed for, and the paper carried $8.2\\%$ from r2755 to r6772.  ** "The value
+to write is $+8.2\\%$" is a statement about r2755's paper and is not the current value. ** ***
+
 WHAT IS NOT CLAIMED.  ** Not that $8.16\\%$ is exact ** -- *** the three corrected routes give $7.65$,
 $8.16$ and $8.24$; they agree on the leading digit and differ in the second, which is why the paper
 edit below writes $8.2\\%$ and not four figures. ***  ** Not that `C9` and `C10` are wrong in their own
@@ -108,10 +119,34 @@ def main():
     check('⓵ P15\'s sentence cited C10: "$\\theta_{D}/\\theta_{*}$ larger by $9.4\\%$ ... '
           '\\rcpt{C10_highl_ratio}" at ' + _BEFORE_R2755,
           'larger by $9.4\\%$' in _p15_before and 'C10_highl_ratio' in _p15_before)
+    # ** r6931+70.1: DISCHARGED (b), and read by this file's own c54.220 rule.  This check asserted
+    #   the edit had landed by reading the LIVE paper for "larger by $8.2\\%$" and
+    #   "r=\\theta_{D}/\\theta_{*}=1.082".  Both left P15 later, for reasons that are not this trace's:
+    #   `de97f96e` (r6772+66.11) turned "larger by $8.2\\%$ at this onset redshift" into "larger by a
+    #   few per cent, its size fixed by the handover" when the fitted onset was dropped;
+    #   `d9f2fa17` (r6772+66.18) replaced r=1.082; and `1a2ab59c` (r6899) made it "moved by under a
+    #   per cent ... its sign by the common endpoint both lengths are carried to", r=0.992, once
+    #   r6797 put both lengths at the visibility peak.  ** So "did r2755's edit land" is a claim
+    #   about a COMMIT and is read at `3edaeea0` (c54.223, where both 8.2% and 1.082 stand); and
+    #   the live paper is checked for what discharged the ~8% -- the settled endpoint's
+    #   under-a-per-cent ratio -- and for the 9.4% error staying gone. **  The discharging
+    #   computation is `P15_the_signature_collapses_at_the_adjudicated_ratio_and_the_endpoint_sets_
+    #   its_sign` (0.99179 at the adjudicated background), required to exist.
+    _p15_c54223 = _p15_at('3edaeea0')
+    _discharge = glob.glob(os.path.join(
+        ROOT, 'receipts', '**',
+        'P15_the_signature_collapses_at_the_adjudicated_ratio_and_the_endpoint_sets_its_sign.py'),
+        recursive=True)
     check('⛭ AND THE EDIT LANDED: r2755 made it $8.2\\%$, and c54.223 carried the same correction '
-          'into `r` one paragraph later, which r2755 had left at 1.093',
-          'larger by $8.2\\%$' in p15 and 'r=\\theta_{D}/\\theta_{*}=1.082' in p15
-          and 'larger by $9.4\\%$' not in p15)
+          'into `r` one paragraph later, which r2755 had left at 1.093 (read at 3edaeea0)',
+          'larger by $8.2\\%$' in _p15_c54223 and 'r=\\theta_{D}/\\theta_{*}=1.082' in _p15_c54223
+          and 'larger by $9.4\\%$' not in _p15_c54223)
+    check('⛭ and the ~8% is since DISCHARGED by the settled endpoint, not reverted: the live paper '
+          'reads $\\theta_D/\\theta_*$ "moved by under a per cent ... its sign by the common endpoint", '
+          '$r=0.992$ at the visibility peak, with the 9.4% still gone',
+          'is then $\\theta_{D}/\\theta_{*}$ moved by under a per cent' in p15
+          and 'visibility function, $r=0.992$' in p15
+          and '9.4\\%' not in p15 and len(_discharge) == 1)
     check('and C10 cited C9 for it: "theta_D/theta_* is +9.26% larger (DERIVED, C9)"',
           'DERIVED, C9' in rcpt('C10_highl_ratio.py')
           or 'DERIVED in C9' in rcpt('C10_highl_ratio.py'))
@@ -156,7 +191,10 @@ def main():
     print('     receipt citation and a derivation chain; ** the hedged figure was the accurate one. **')
     print('  ⓸ ** So r2749\'s tilde test now resolves the other way: ** the receipts no longer')
     print('     disagree, one is corrected, and by r2749\'s own rule the tilde is removable.')
-    print('     ** The value to write is +8.2%. **')
+    print('     ** The value to write was +8.2% — and P15 carried it from r2755 to r6772. **')
+    print('  ⌗ (r6931+70.1) ** Since superseded by computation, not reverted: ** with the handover at')
+    print('     the branch point and both lengths at the visibility peak the ratio is r = 0.992,')
+    print('     "moved by under a per cent".  The 9.4% stays gone.')
     print()
     return 0
 

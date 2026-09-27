@@ -223,11 +223,23 @@ for t in ('lcdm', 'cr'):
 _CODE = [ln for ln in SRC.splitlines() if not ln.lstrip().startswith('#')]
 _USE = [ln for ln in _CODE if '_SRCS' in ln or '_SRCXS' in ln]
 _DECL = [ln for ln in _USE if ln.startswith(('_SRCS =', '_SRCXS ='))]
-_GUARD = [ln for ln in _USE if ln.strip() == 'if _SRCS:']
+# ** r6931+70.1: STALE (c).  `ba9a98b5` (r6915+cc66.41, "the cross term is not the channel") added a
+#   third save switch beside these two, `SRCDEC` (`_SRCD`), and hoisted the term-by-term source
+#   block this receipt's save reads so the two saves share it: its guard went from `if _SRCS:` to
+#   `if _SRCS or _SRCD:`.  That line names `_SRCS`, sits at the top level of the function, and so
+#   failed "every use indented under a guard" although it IS a guard -- the block under it only
+#   builds `_sw/_dp/_iw/_pl/_md` for the saves and assigns nothing the spectrum reads, and the
+#   SRCSAVE-unset bit-identity above is re-run on the current file and still exact.  ** Same finding
+#   (the switch is inert when unset, and every load is confined), re-counted: 2 declarations, 2
+#   `if _SRCS:` guards plus the one shared `if _SRCS or _SRCD:` guard, and SRCDEC itself declared. **
+_GUARD = [ln for ln in _USE if ln.strip() in ('if _SRCS:', 'if _SRCS or _SRCD:')]
 check("`SRCSAVE` and `SRCXS` are declared beside `_SWSRC`/`_DPSRC` and every load of either sits "
-      "inside an `if _SRCS:` block -- a binding is not a use, so the two declarations are counted "
-      "apart from the loads and the bit-identity above is the proof that the loads are confined",
-      len(_DECL) == 2 and len(_GUARD) == 2
+      "inside an `if _SRCS:` block (or the `if _SRCS or _SRCD:` block `SRCDEC` shares) -- a binding "
+      "is not a use, so the two declarations are counted apart from the loads and the bit-identity "
+      "above is the proof that the loads are confined",
+      len(_DECL) == 2 and len(_GUARD) == 3
+      and sum(ln.strip() == 'if _SRCS:' for ln in _GUARD) == 2
+      and "_SRCD = os.environ.get('SRCDEC')" in SRC
       and SRC.count('if _SRCXS != 1.0:') == 1
       and all(ln.startswith(' ' * 8) or ln in _DECL or ln in _GUARD for ln in _USE),
       f"{len(_DECL)} declarations, {len(_GUARD)} guarded blocks, {len(_USE)} executable lines in all,"

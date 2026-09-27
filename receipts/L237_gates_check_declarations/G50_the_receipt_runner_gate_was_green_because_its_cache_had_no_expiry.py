@@ -152,25 +152,65 @@ if full + trail < 50_000:
 
 print()
 print("  ⇒ AND THE ONE ACCIDENTAL INSTANCE, still checkable in its own source:")
-_x1 = os.path.join(ROOT, 'receipts', 'L150_the_datum',
-                   'X1_the_ratio_is_a_clock_reading_not_a_carried_datum.py')
-_p16 = os.path.join(ROOT, 'corpus', 'cosmogenesis_paper.tex')
-_ok_x1 = os.path.exists(_x1) and os.path.exists(_p16)
-if _ok_x1:
-    raw = io.open(_p16, encoding='utf-8', errors='replace').read()
-    body = '\n'.join((ln[:m.start()] if (m := re.search(r'(?<!\\)%', ln)) else ln)
+# ** r6931+70.1: THE INSTANCE IS NOW READ AT THE LAST TREE THAT CARRIED IT, AND ITS RETIREMENT AT
+#    HEAD IS ASSERTED.  Class (c), STALE -- the finding is unchanged and the corpus text it was about
+#    moved for its own reason. **  `0960c7aa` (r6772+66.30, "P16 brought to the same reading,
+#    masthead included") rewrote the `%` masthead comment of `cosmogenesis_paper.tex`: eta is now
+#    "the ONE datum of the same handover", the peak SPACING is "computed from the rate", and the
+#    sentence `eta fixes the abundances and the CMB peak HEIGHTS, rho_r/rho_m the peak SPACING` is
+#    gone from the RAW file as well as the body.  *So the live three-way test (asserted / in raw /
+#    not in body) could no longer be satisfied -- not because the instance was mis-measured, but
+#    because the comment that satisfied X1 was rewritten.*
+#    ⇒ The finding is about r2656's tree: ONE receipt whose check was satisfied by comment text the
+#      paper never printed.  That is a fact about history, so it is read from history --
+#      `01c1a672` (the first parent of `0960c7aa`, the last tree carrying the sentence) -- with the
+#      SAME three conditions, none relaxed.  ** And the present is asserted in its own direction:
+#      the sentence is absent from P16's raw source at HEAD, so no check can be silently satisfied
+#      by it any more -- X1 reading it now FAILS loudly, which is the surface doing its job. **
+#      (X1's own repair is its family's, not this file's; X1 is NOT read live here, because an edit
+#      to X1 must not decide whether r2656's instance existed.)
+_X1_REL = 'receipts/L150_the_datum/X1_the_ratio_is_a_clock_reading_not_a_carried_datum.py'
+_P16_REL = 'corpus/cosmogenesis_paper.tex'
+_PIN = '01c1a672b299'          # first parent of 0960c7aa (r6772+66.30)
+
+
+def _git_show(rev, rel):
+    r = subprocess.run(['git', 'show', f'{rev}:{rel}'], cwd=ROOT, capture_output=True,
+                       text=True, errors='replace')
+    return r.stdout if r.returncode == 0 else None
+
+
+S = 'eta fixes the abundances and the CMB peak HEIGHTS, rho_r/rho_m'
+
+
+def _strip_comments(raw):
+    return '\n'.join((ln[:m.start()] if (m := re.search(r'(?<!\\)%', ln)) else ln)
                      for ln in raw.split('\n'))
-    S = 'eta fixes the abundances and the CMB peak HEIGHTS, rho_r/rho_m'
-    in_raw = S in re.sub(r'\s+', ' ', raw)
-    in_body = S in re.sub(r'\s+', ' ', body)
-    asserted = S in io.open(_x1, encoding='utf-8', errors='replace').read()
-    print(f"     `X1` asserts the string against P16      : {asserted}")
-    print(f"     the string is in P16 read RAW            : {in_raw}   ** so the check passes **")
-    print(f"     the string is in P16's printed BODY      : {in_body}   ** and the paper never says it **")
+
+
+_x1_then = _git_show(_PIN, _X1_REL)
+_p16_then = _git_show(_PIN, _P16_REL)
+_p16_now_path = os.path.join(ROOT, _P16_REL)
+_ok_x1 = _x1_then is not None and _p16_then is not None and os.path.exists(_p16_now_path)
+if _ok_x1:
+    asserted = S in _x1_then
+    in_raw = S in re.sub(r'\s+', ' ', _p16_then)
+    in_body = S in re.sub(r'\s+', ' ', _strip_comments(_p16_then))
+    raw_now = io.open(_p16_now_path, encoding='utf-8', errors='replace').read()
+    in_raw_now = S in re.sub(r'\s+', ' ', raw_now)
+    print(f"     at {_PIN} (last tree before r6772+66.30):")
+    print(f"       `X1` asserts the string against P16    : {asserted}")
+    print(f"       the string is in P16 read RAW          : {in_raw}   ** so the check passed **")
+    print(f"       the string is in P16's printed BODY    : {in_body}   ** and the paper never said it **")
+    print(f"     at HEAD, the string is in P16 RAW        : {in_raw_now}   ** the comment was rewritten "
+          f"at 0960c7aa, so nothing is satisfied by it now **")
     if not (asserted and in_raw and not in_body):
-        fail.append("the X1 instance no longer reproduces — the finding must be re-stated, not left asserted")
+        fail.append("the X1 instance no longer reproduces at its pinned tree — the finding must be "
+                    "re-stated, not left asserted")
+    if in_raw_now:
+        fail.append("the comment-only sentence is back in P16's raw source — re-measure the instance")
 else:
-    fail.append("X1 or P16 is missing — the instance cannot be checked")
+    fail.append("X1 or P16 is missing at the pinned tree — the instance cannot be checked")
 print()
 print("  *** ONE instance, already on the record.  `L-535` is an INSTANCE, not a class. ***")
 
@@ -259,16 +299,52 @@ print("=" * 78)
 _p = subprocess.run([sys.executable, RUNNER, '--only', 'L150_the_datum',
                      '--jobs', '2', '--timeout', '60'],
                     cwd=ROOT, capture_output=True, text=True, timeout=240)
-_ran = 'pass,' in _p.stdout and _p.returncode == 0
+# ** r6931+70.1: "THE RUNNER RUNS" IS NOW ASSERTED AS THE RUNNER'S OWN ACCOUNTING, NOT AS ANOTHER
+#    RECEIPT'S EXIT CODE.  Class (c), STALE -- the finding (the runner is de-shadowed and runs) is
+#    unchanged; what moved was the one receipt this check borrowed. **  The old predicate was
+#    `'pass,' in stdout and returncode == 0`.  Since r6476 the runner exits 1 whenever a receipt in
+#    its filter FAILS, so on `--only L150_the_datum` it was really asserting that X1 passes -- and X1
+#    has failed since the r6772+66.x handover rewrite (`507d2e99`, `89d23854`, `0960c7aa`), measured
+#    here by running this file in worktrees: GREEN at b96e1a49 (r6502) and 2290a528 (r4287), RED at
+#    91751daa (r6774) and after.  *This file's own docstring disclaims exactly that: "not that this
+#    gate now proves the receipts pass".*
+#    ⛔ AND THE BORROWING IS WHAT FED `check_receipts_run` ITS WRONG VERDICT (r6921/r6923): red, this
+#      file printed the one-family runner's `0 pass, 1 fail, 0 over timeout` into the suite's
+#      captured output, and the unanchored pattern read it.  So G50 has been emitting that line only
+#      since ~r6772, not since 2026-08-14.
+#    ⇒ The check now demands MORE of the runner than before, not less: (i) no crash -- no Traceback,
+#      no `SimpleQueue`; (ii) the verdict line found by the gate's OWN anchored pattern
+#      `(?m)^  N pass, N fail, N over timeout`; (iii) that verdict COVERS the registered set the
+#      runner announced for the filter (pass+fail+slow == N registered, N >= 1); and (iv) the exit
+#      code AGREES with the verdict -- 0 iff nothing failed or overran, 1 otherwise.  A runner that
+#      crashed, printed nothing, under-counted, or exited 0 over a failure fails every one of these.
+#      X1's own verdict is REPORTED, not asserted -- its family owns it.
+_crash = ('Traceback' in _p.stderr) or ('SimpleQueue' in (_p.stdout + _p.stderr))
+_v = re.search(r'(?m)^  (\d+) pass, (\d+) fail, (\d+) over timeout, in (\d+)s', _p.stdout)
+_reg = re.search(r'RUN-ALL-RECEIPTS -- (\d+) registered receipt', _p.stdout)
+_np, _nf, _ns = (int(_v.group(1)), int(_v.group(2)), int(_v.group(3))) if _v else (None,) * 3
+_nreg = int(_reg.group(1)) if _reg else None
+_covers = bool(_v and _reg and _nreg >= 1 and _np + _nf + _ns == _nreg)
+_rc_agrees = bool(_v) and _p.returncode == (0 if (_nf == 0 and _ns == 0) else 1)
+_ran = (not _crash) and _covers and _rc_agrees
+print(f"  the runner ran without crashing  : {not _crash}")
+print(f"  its anchored verdict line        : "
+      f"{(str(_np) + ' pass, ' + str(_nf) + ' fail, ' + str(_ns) + ' over timeout') if _v else '(none)'}"
+      f"  of {_nreg} registered")
+print(f"  and the verdict covers the set   : {_covers}")
+print(f"  and its exit code ({_p.returncode}) agrees  : {_rc_agrees}")
+print(f"  (X1 itself {'passes' if _v and _nf == 0 else 'FAILS'} at this tree -- reported, not "
+      f"asserted: that is L150's finding, not this file's)")
 _stamped = re.search(r'TREE-DIGEST:\s*([0-9a-f]{8,})', _p.stdout)
-print(f"  a one-receipt run exits 0        : {_ran}")
 print(f"  and carries its own digest       : {bool(_stamped)}"
       f"  ({_stamped.group(1) if _stamped else '—'})")
 print(f"  which matches the tree here      : {bool(_stamped) and _stamped.group(1) == tree_digest()}")
 print()
 print("  *Before the de-shadowing this call died on `queue.SimpleQueue` without running a receipt.*")
 if not _ran:
-    fail.append(f"the runner still does not run: {(_p.stdout + _p.stderr).strip()[-200:]}")
+    # one line, ' / '-joined: never re-emit a runner verdict at line start inside this file's output
+    fail.append("the runner does not run and account for its set: "
+                + ' / '.join(l.strip() for l in (_p.stdout + _p.stderr).split('\n') if l.strip())[-200:])
 if not _stamped or _stamped.group(1) != tree_digest():
     fail.append("the runner's stamp does not match the digest computed here")
 
@@ -296,7 +372,8 @@ print("=" * 78)
 #       FAILS on an absent stamp -- ** the old gate's only failure mode was a truncated file, which
 #       is why a 294-commit-old result read as current **;
 #   (4) the stdlib shadow demonstrated by resolving `import queue` in a subprocess, not asserted;
-#   (5) and *** the runner RUN ***, exiting 0 with a digest matching this tree.  ** An instrument
+#   (5) and *** the runner RUN ***, its anchored verdict covering its set and its exit code agreeing
+#       with that verdict (r6931+70.1; was "exiting 0"), with a digest matching this tree.  ** An instrument
 #       that cannot finish is indistinguishable from one that has not been started, and that
 #       ambiguity is what kept this hidden for 41 commits. **
 #   SEEDED SEPARATELY (both fired): a result file with a WRONG digest claiming "436 pass, 0 fail"

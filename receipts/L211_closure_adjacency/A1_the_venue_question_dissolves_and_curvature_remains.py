@@ -20,16 +20,36 @@ other than su(3) as a substrate isometry."
 FACE. **  P14: "The bundle the operator acts on is not a bundle of the substrate: every ambient
 candidate is real, and a real bundle's complexification carries a parallel conjugation, so its holonomy
 lands in the real form and none can carry su(3).  ** THE MODULE IS THE BRANCHING ITSELF. **"  And the
-smallest connected group containing the three wall monodromies and the hinge 3-cycle is SU(3), with the
-lap as its centre -- "every channel the Standard Model has, with the configuration group SELECTED
+three wall monodromies with the hinge 3-cycle generate a FINITE group of order 81 in U(3), each
+monodromy carrying determinant omega, whose determinant-one part is Delta(27) and lies in SU(3), with
+the lap as its centre -- "every channel the Standard Model has, with the configuration group SELECTED
 rather than chosen."
+
+** r6931+70.1: this paragraph previously said "the smallest connected group containing the three wall
+monodromies and the hinge 3-cycle is SU(3)".  That was P14's wording at r2455 and it was an error the
+corpus corrected at r6707 (3b921b95, the body) and r6719 (440623b6, the abstract): a single wall
+monodromy has determinant omega, so the group they generate is finite, of order 81, in U(3), and only
+its determinant-one part Delta(27) lies in SU(3).  The finding here never rested on the group being
+SU(3) -- it rests on the route being BUILT, SELECTED and FLAT -- so it survives the correction intact. **
+
+** r6931+70.1: AND THE ADJACENT GAP BELOW HAS SINCE BEEN DISCHARGED BY P13 ITSELF. **  At r6683
+(73eb61ef) P13 stopped calling the compact-face fermion sector "unbuilt ... the major undertaking":
+sec:open now SPECIFIES that sector (a fermion on the face is an SU(4) object, 4 -> 3 + 1) and finds it
+OBSTRUCTED TWICE (no equivariant map to the cosmological three-sphere; no Dirac zero modes on the round
+face, the squash and torsion evasions both excluded), "so what is definite is the emptiness of a
+definite object" (receipts P13_boundary_paper/P13_the_construction_is_specifiable_and_colour_sits_in_
+the_spin_group and P13_the_last_evasion_inside_the_premise_is_the_squash_and_it_is_excluded_twice).
+That discharge STRENGTHENS this receipt's conclusion: the compact-face venue is now not merely priced
+as an ADD but specified and empty, so the venue question is closed from that side too, and curvature
+is still what remains.
 
 ⇒ ** SO THE THREE ROUTES TO COLOUR COMPOSE INTO ONE STATEMENT THE CORPUS HELD IN PIECES: **
 
     su(3) as a SUBSTRATE ISOMETRY   -- WALLED (PO-4, the 6-versus-5 dimension count)
     su(3) on the COMPACT FACE       -- PRICED AS AN ADD (L-213), and F13 shows it is the ONLY real
                                        form that could have hosted it
-    su(3) from WALL MONODROMY       -- BUILT, and the group is SELECTED rather than chosen
+    colour from WALL MONODROMY      -- BUILT: a finite order-81 group in U(3) whose determinant-one
+                                       part Delta(27) lies in SU(3), SELECTED rather than chosen
                                        ** but the bundle is FLAT **
 
 ** AND THE FLATNESS IS WHERE THE LIVE GAP ACTUALLY SITS **, in P14's own words: "the bundle is FLAT.
@@ -38,7 +58,8 @@ content of colour and supplies no force."
 
 ⇒⇒ *** THE VENUE QUESTION DISSOLVES.  The corpus was never short of a home for su(3) -- it has one that
    SELECTS rather than chooses.  What F13 and L-213 leave is sharper and smaller: NOT "where does colour
-   live" but "WHERE DOES ITS CURVATURE COME FROM". ***
+   live" but "WHERE DOES ITS CURVATURE COME FROM". ***  (r6931+70.1: "a home for su(3)" read here as a
+   home for colour's DISCRETE content -- the finite holonomy above -- which is all P14 claims.)
 
 ⌗ WHY THIS IS THE ROW'S MECHANISM AND NOT A COINCIDENCE: the three facts sit in THREE PAPERS (P13's
 frontier, P13's face-status, P14's discrete opening) and in two nodes' findings.  ** No single reading
@@ -76,11 +97,24 @@ def main():
     p13, p14 = flat('boundary_paper.tex'), flat('matter_sector_paper.tex')
 
     # the gap P13 advertises next to the closure
-    check('P13 names the adjacent gap: the compact-face fermion sector "remains unbuilt"',
-          'remains unbuilt' in p13)
-    check('and calls its construction "the major undertaking any geometric \\emph{gauge}-matter '
-          'route would first have to complete"',
-          'the major undertaking any geometric' in p13)
+    # ** r6931+70.1: class (b), DISCHARGED.  These two checks pinned P13's "The compact-face fermion
+    #   sector the obstruction would act on remains unbuilt, and its construction is the major
+    #   undertaking any geometric gauge-matter route would first have to complete".  r6683 (73eb61ef)
+    #   replaced that sentence with "sec:open specifies that sector and finds it obstructed twice", and
+    #   sec:open does the work: the sector is specified as an SU(4) object and shown empty by two
+    #   independent obstructions, with its own receipts.  Re-pinning to the new wording alone would keep
+    #   an "unbuilt" gap alive past its answer, so the checks are re-pointed at WHAT DISCHARGED IT: the
+    #   specification, the two obstructions, the stated emptiness, and the receipt that carries them. **
+    check('P13 names the adjacent gap and has since answered it: the compact-face sector "can be '
+          'specified, and is obstructed twice" (discharged r6683)',
+          'finds it obstructed twice' in p13
+          and 'that sector can be specified, and is obstructed twice' in p13)
+    check('and what the specification returns is "the emptiness of a definite object", carried by '
+          "P13's own receipt of the specification",
+          'what is definite is the emptiness of a definite object' in p13
+          and 'P13_the_construction_is_specifiable_and_colour_sits_in_the_spin_group' in p13
+          and os.path.exists(os.path.join(ROOT, 'receipts', 'P13_boundary_paper',
+              'P13_the_construction_is_specifiable_and_colour_sits_in_the_spin_group.py')))
     check('and requires "some route other than $\\su(3)$ as a substrate isometry"',
           'other than $\\su(3)$ as a substrate isometry' in p13)
 
@@ -92,10 +126,16 @@ def main():
           'parallel conjugation' in p14 and 'none can carry' in p14)
     check('⇒ "The module is the \\emph{branching} itself"',
           'The module is the \\emph{branching} itself' in p14)
-    check('and the smallest connected group containing the three wall monodromies and the hinge '
-          '3-cycle is SU(3), with the lap as its centre',
-          'smallest connected group containing the three wall monodromies' in p14
-          and 'with the lap as its centre' in p14)
+    # ** r6931+70.1: class (a), FROZE AN ERROR.  This pinned "the smallest connected group containing
+    #   the three wall monodromies and the hinge 3-cycle is SU(3)".  A single wall monodromy has
+    #   determinant omega, so the monodromies generate a FINITE group of order 81 in U(3), not SU(3);
+    #   corrected at r6707 (3b921b95) in the body and r6719 (440623b6) in the abstract.  What this check
+    #   is about is that the monodromy route yields a definite, selected group with the lap as its centre;
+    #   the pin follows the correction: order 81 in U(3), determinant-one part Delta(27) in SU(3). **
+    check('and the three wall monodromies with the hinge 3-cycle generate a finite group of order 81 '
+          'in U(3), whose determinant-one part Delta(27) lies in SU(3), with the lap as its centre',
+          'generate a finite group of order $81$ in $U(3)$' in p14
+          and 'whose determinant-one part is $\\Delta(27)$ and lies in $SU(3)$, with the lap as its centre' in p14)
     check('with the configuration group SELECTED rather than chosen',
           'selected} rather than chosen' in p14 or 'selected\\/} rather than chosen' in p14
           or '\\emph{selected} rather than chosen' in p14)
@@ -122,9 +162,11 @@ def main():
         return 1
     print('  VERDICT: ** THE VENUE QUESTION DISSOLVES. **')
     print('  su(3) as a substrate isometry -- WALLED.  On the compact face -- PRICED AS AN ADD, and it')
-    print('  is the only real form that could have hosted it.  From wall monodromy -- ** BUILT, with')
-    print('  the configuration group SELECTED rather than chosen. **')
-    print('  ⇒ The corpus was never short of a home for su(3).  ** What F13 and L-213 leave is sharper')
+    print('  is the only real form that could have hosted it (and P13 has since specified that sector')
+    print('  and found it obstructed twice).  From wall monodromy -- ** BUILT: a finite order-81 group in')
+    print('  U(3) whose determinant-one part Delta(27) lies in SU(3), SELECTED rather than chosen. **')
+    print("  ⇒ The corpus was never short of a home for colour's discrete content.  ** What F13 and")
+    print('    L-213 leave is sharper')
     print('    and smaller: NOT "where does colour live" but "WHERE DOES ITS CURVATURE COME FROM" --')
     print('    because the built bundle is FLAT, and flat holonomy supplies selection rules and no')
     print('    force. **')

@@ -436,9 +436,27 @@ print("""
 """)
 
 OFF = [r['env'] for r in ROWS if not r['on']]
+# ** r6931+70.1: STALE (c) -- the count moved because the instrument grew, and the growth is named.
+#   This receipt (r6895+cc66.38, `824b1dae`) swept the SIXTY switches the file read at `7188edb5`.
+#   Four later code-seat orders each added switches to the same file, and nothing was removed:
+#     ZPSAVE                                  `04c92e4f`  r6897+cc66.39  (the zero-point save)
+#     SRCSAVE, SRCXS                          `c35b58a1`  r6911+cc66.40  (the source save, the swap)
+#     SRCDEC                                  `ba9a98b5`  r6915+cc66.41  (the term-pair decomposition)
+#     SRCINJ, SRCINJPH, SRCINJRS, SRCINJVIS   `1552b5ee`  r6919+cc66.42  (the analytic injection)
+#     VISLEAF                                 `b58100c4`  r6925+cc66.43  (the leaf visibility clock)
+#   60 + 9 = 69.  ** The check keeps both of its halves: the count is re-pinned to 69 WITH the
+#   provenance asserted as a set difference (so a tenth switch arriving unnamed fails here), and
+#   "every bound switch is used" is unchanged. **  The nine are save, decomposition, injection and
+#   clock switches, each gated by its own receipt; this receipt's bit-identity sweep covered the
+#   sixty it was built on and is not claimed for them.
+SWEPT_SIXTY_PLUS = {'ZPSAVE', 'SRCSAVE', 'SRCXS', 'SRCDEC', 'SRCINJ', 'SRCINJPH', 'SRCINJRS',
+                    'SRCINJVIS', 'VISLEAF'}
+_ROWENVS = {r['env'] for r in ROWS}
 check("the instrument reads sixty environment switches with at least one use site, and every switch "
-      "that is bound is also used somewhere",
-      len(ROWS) == 60 and not [e for e in DEFAULT if e not in USES],
+      "that is bound is also used somewhere -- sixty at this sweep, sixty-nine now, the nine added "
+      "since named with their commits",
+      len(ROWS) == 69 and SWEPT_SIXTY_PLUS <= _ROWENVS and len(_ROWENVS - SWEPT_SIXTY_PLUS) == 60
+      and not [e for e in DEFAULT if e not in USES],
       f"{len(ROWS)} switches used, {len(DEFAULT)} bound, "
       f"bound-but-never-used {[e for e in DEFAULT if e not in USES]}")
 check("⚑ ** NINE OF THE SIXTY HAVE NO LIVE USE SITE ON THE REPORTING PATH **, and every one of the "
@@ -712,8 +730,32 @@ check("`hier_run` accepts `L_A_`, `D_M_` and `R_S_` and loads none of the three 
       not ({'L_A_', 'D_M_', 'R_S_'} & _hnames),
       f"hier_run signature at line {SPANS['hier_run'][0]}; names it does load include "
       f"{sorted(_hnames & {'kk', 'EE', 'kb', 'ls', 'Cl'})}")
+# ** r6931+70.1: STALE (c), two new sites, both added after this sweep and neither a model input.
+#   · the `r_s=R_S, D_M=D_M` continuation line of ZPSAVE's `np.savez` (`04c92e4f`, r6897+cc66.39):
+#     SAVE metadata, missed only because the classifier read one physical line and the call wraps.
+#     Now any line inside an `np.savez(...)` call's span counts as SAVE metadata, by AST, not text.
+#   · `_ph = kb[None, :] * R_S` (`1552b5ee`, r6919+cc66.42): the phase of the ANALYTIC INJECTION,
+#     inside `_project`'s `if _SRCI:` block, which REPLACES the model's `S` with a known test source
+#     -- the instrument's own comment: "Nothing here is a spectrum of the model".  `SRCINJ` unset
+#     (the default, `os.environ.get('SRCINJ')` = None) never enters the block.  ** So R_S is still
+#     not an input to any transfer function of the model: it is the phase of a probe, on a declared
+#     probe path that is off by default.  Classified as that, and the check still fails on any
+#     arithmetic use outside it. **
+_SAVEZ_LINES, _SRCI_LINES = set(), set()
+for _n in ast.walk(TREE):
+    if isinstance(_n, ast.Call) and isinstance(_n.func, ast.Attribute) and _n.func.attr == 'savez':
+        _SAVEZ_LINES |= set(range(_n.lineno, _n.end_lineno + 1))
+    if isinstance(_n, ast.If) and isinstance(_n.test, ast.Name) and _n.test.id == '_SRCI':
+        _SRCI_LINES |= set(range(_n.lineno, _n.end_lineno + 1))
+assert "_SRCI = os.environ.get('SRCINJ')" in SRC, 'the injection must stay off by default'
+
+
 def _rs_kind(l):
     ln = SRC.split('\n')[l - 1]
+    if l in _SAVEZ_LINES:
+        return 'SAVE metadata'
+    if l in _SRCI_LINES:
+        return 'the SRCINJ probe phase (off by default; replaces the model source)'
     if 'R_S = rs_from' in ln or 'L_A = np.pi' in ln:
         return 'the definition itself'
     if 'print(' in ln or ln.lstrip().startswith('f"'):

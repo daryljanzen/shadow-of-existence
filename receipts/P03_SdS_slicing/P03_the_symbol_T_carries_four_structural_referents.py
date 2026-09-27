@@ -101,7 +101,20 @@ naming.  What is established is the count, the sets, and which pair is sharp.
 """
 
 import glob
+import os
 import re
+
+# ** r6931+70.1: THE READS WERE CWD-RELATIVE AND THE RUNNER RUNS FROM THE RECEIPT'S OWN DIR.
+#   Class (c), STALE -- nothing in the corpus moved.  Written at r6581/r6593 (`4c3c01df`,
+#   `64cef650`) with `corpus/...` paths that resolve only from the repository root, while
+#   `scripts/run_all_receipts.py` runs every receipt with `cwd=` its family directory.  So
+#   under the runner the survey glob matched NOTHING -- which silently satisfied the "(d) is
+#   GONE" assertion vacuously -- and the P5 read raised FileNotFoundError.  It has failed under
+#   the runner since birth (red at r6774 `91751daa` and r6921 `5f9c2b2d` alike) while passing
+#   from the root.  ** Anchored to ROOT, the house convention: the survey now sees the paper
+#   bodies again, so the absence of (d) is measured and not vacuous. **
+HERE = os.path.dirname(os.path.abspath(__file__))
+ROOT = os.path.abspath(os.path.join(HERE, '..', '..'))
 
 PAT = {
     'a_time_reflection_operator': r'T\s*=\s*time reflection|T:X_0|horn-swap \(\$?T',
@@ -114,7 +127,7 @@ for name, pat in PAT.items():
     # ⌗ `appendix_receipts*` and `appendix_ledgers*` excluded: the generated appendices
     #   carry every receipt's own claim text, so a symbol survey over `corpus/*.tex` that
     #   includes them counts THIS FILE's prose as corpus usage.
-    files = {f.split('/')[-1] for f in glob.glob('corpus/*.tex')
+    files = {f.split('/')[-1] for f in glob.glob(os.path.join(ROOT, 'corpus', '*.tex'))
              if not f.split('/')[-1].startswith('appendix')
              and re.search(pat, open(f, encoding='utf-8', errors='replace').read())}
     found[name] = files
@@ -126,7 +139,7 @@ assert len(found) == 4, "four senses surveyed"
 # replacement present.  ** A survey that still found it would mean the fix did not land. **
 assert not found['d_groupoid_transformation'], \
     "P5's proof variable T must be GONE -- renamed to \\hat{g} at r6581"
-_p5 = open('corpus/groupoid_paper.tex', encoding='utf-8', errors='replace').read()
+_p5 = open(os.path.join(ROOT, 'corpus', 'groupoid_paper.tex'), encoding='utf-8', errors='replace').read()
 assert '\\hat{g}' in _p5, "and its replacement must be present"
 assert 'T$ is the time reflection' in _p5, "while P5 still reserves T for the canon sense"
 print("  -> (d) renamed away; P5 keeps its footnote reserving T                OK")

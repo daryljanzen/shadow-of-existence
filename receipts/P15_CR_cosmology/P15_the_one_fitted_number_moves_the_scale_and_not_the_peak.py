@@ -3,6 +3,12 @@ r"""
 P15 — ** THE LAST CONVENTION, STRIPPED.  THE INSTRUMENT'S OWN STANDING QUESTION IS ANSWERED, AND THE
 ANSWER IS NO: THE FITTED ONSET MOVES THE ACOUSTIC SCALE AND DOES NOT MOVE THE FIRST PEAK. **
 
+** ⌗ r6931+70.1: "THE ONE FITTED NUMBER" IS THIS FILE'S NAME AND r6476's STATE, NOT THE CORPUS'S NOW. **
+Since r6772 P15 hands the plasma over at the branch point and carries "no early-universe parameter";
+the fitted onset was a repair.  What survives is this scan, and P15 cites it for exactly that: a
+hand-placed start "moves the scale and not the peak, which is why the start is not free".  Read
+"fitted onset" below as "a start placed by hand".
+
 ** THE QUESTION IS THE INSTRUMENT'S, NOT THIS RECEIPT'S. **  `ACOUSTIC_two_arm.py` says why `LATARG`
 was exposed, in its own words: *"Exposing it asks the question the front actually needs: GIVEN that
 l_A is fitted, is the peak SPACING deficit --- the only acoustic content left after c54.187 and
@@ -201,8 +207,28 @@ def main():
     check('⓵ᵇ and it states the standing question in its own comment -- "GIVEN that l_A is fitted, '
           'is the peak SPACING deficit ... an artefact of where the pin was put?"',
           'an artefact of where the pin was put?' in ' '.join(inst.split()))
-    check('⓵ᶜ and P15 states the fit in its own voice, calling z_onset the one fitted number',
-          'the one fitted number' in p15)
+    # ** r6931+70.1: FROZE AN ERROR (a).  This pinned P15 calling z_onset "the one fitted number",
+    #   and the corpus has since withdrawn the fitted onset itself: r6770+66.3 found "the crossing is
+    #   the handover and the onset was a repair", `884eb32e` (r6772+66.2) rewrote the parameter bill
+    #   to "no early-universe parameter", and `1cee1c64` (r6772+66.5) removed "the one fitted number"
+    #   from sec:refit-bound.  ** What P15 says now is THIS receipt's scan as the reason: "Where the
+    #   plasma starts moves the scale and not the peak, which is why the start is not free.  Scanning
+    #   a hand-placed start over a factor of $3.6$ runs $\ell_{A}$ from $360.6$ down to $239.3$ while
+    #   the first peak sits between $206$ and $210$" \rcpt{this file}. **  So the pin follows the
+    #   correction: the finding (the start moves the denominator and not the numerator) is what the
+    #   paper now cites it for, and the check no longer asserts the onset is a parameter the
+    #   construction carries.  The file keeps its name; the docstring says what it now means.
+    check('⓵ᶜ and P15 states this scan in its own voice as the reason the start is NOT a parameter: '
+          '"Where the plasma starts moves the scale and not the peak, which is why the start is not '
+          'free", with the scan\'s 360.6 / 239.3 / 206-210 and this receipt cited, and "no '
+          'early-universe parameter" in the bill',
+          'Where the plasma starts moves the scale and not the peak, which is why the start is not '
+          'free' in p15
+          and 'runs $\\ell_{A}$ from $360.6$ down to $239.3$ while the first peak sits between $206$ '
+              'and $210$ throughout\\rcpt{P15_the_one_fitted_number_moves_the_scale_and_not_the_peak}'
+          in p15
+          and 'There is no early-universe parameter among them' in p15
+          and 'the one fitted number' not in p15)
 
     print()
     print('  ' + '=' * 74)

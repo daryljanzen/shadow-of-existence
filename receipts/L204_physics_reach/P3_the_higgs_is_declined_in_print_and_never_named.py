@@ -122,9 +122,27 @@ def main():
         check(f'⛔ and "{k}" appears ZERO times across all {len(P)} papers', v == 0)
 
     # ⓶ but it is principled and stated
-    check('⛭ P6 (boundary) states it: "the value stays the ordinary route, the electroweak breaking '
-          'that supplies the fermion mass"',
-          'the value stays the ordinary route' in p6)
+    # ** r6931+70.1: CLASS (c) -- STALE; THE DECLINE MOVED ONE PARAGRAPH, IT DID NOT GO.  The pin
+    #   was P6's clause "the value stays the ordinary route, the electroweak breaking that supplies
+    #   the fermion mass being, in this reading, the breaking of the substrate's orientation parity".
+    #   73eb61ef (r6683, the node's combined groups 1-6 patch) split that sentence: the identification
+    #   stays ("The electroweak breaking that supplies the fermion mass is, in this reading, the
+    #   breaking of the substrate's orientation parity"), and the decline is carried by the next
+    #   paragraph of sec:open, which is FULLER than the clause it replaces -- "Three parts of the
+    #   content the geometry does not fix---the individual mass values, the electroweak scale and
+    #   assignment, and the cosmological breaking history---and those are fixed on the ordinary
+    #   route".  Same decline, same section; re-pinned to both halves.
+    #   (The same patch left "Beyond the values," one paragraph earlier without its antecedent --
+    #   reported to node 66, not repaired here.)
+    _p6_decline = ('Three parts of the content the geometry does not fix---the individual mass values, the '
+          'electroweak scale and assignment, and the cosmological breaking history---and those are '
+          'fixed on the ordinary route') in p6
+    _p6_ident = ('The electroweak breaking that supplies the fermion mass is, in this reading, the '
+                 "breaking of the substrate's orientation parity" in p6)
+    check('⛭ P6 (boundary) states it: the mass values, the electroweak scale and the breaking history '
+          '"are fixed on the ordinary route", the electroweak breaking that supplies the fermion mass '
+          'being the orientation parity\'s',
+          _p6_decline and _p6_ident)
     # ⛔⛭ RE-PINNED r3958.  This pinned `walled and electroweak`.  `walled` is retired jargon --
     #   r3799 removed it from the corpus, and geometric_core_paper now reads "those are EXCLUDED
     #   FROM THE ISOMETRY, and electroweak".  ⇒ Same cause as B17 (r3956): the sweep reached the
@@ -144,7 +162,8 @@ def main():
     check('⇒ SO THE CORPUS DECLINES THE MAGNITUDES DELIBERATELY AND SAYS SO IN PRINT -- and c54.203 '
           'supplied the missing word, so it now names the mechanism it declines',
           # ⛭ r3958: second instance of the same retired pin in this file -- see the note above.
-          'the value stays the ordinary route' in p6
+          # ** r6931+70.1: and the P6 half re-pinned as above (class (c), r6683).
+          _p6_decline
           and 'excluded from the isometry, and electroweak' in p0
           and zero['Higgs'] > 0)
     check('⛔ AND THE DECLINE SURVIVED THE NAMING, which is the thing worth guarding: p0 still refuses '

@@ -44,6 +44,16 @@ cancels; *** what this shows is that it describes a ratio ON one leg and not the
 ** Not that the instrument is inadequate ** -- it is validated for what it does.
 
 Written r2660.  Stated for reversal.
+
+** r6931+70.1 (PO-59) -- TWO OF THIS RECEIPT'S QUOTATIONS WERE CORRECTED BY THE CORPUS, AND ⓸ WITH THEM. **
+*** ⓶'s "the diffuse plasma rides the L1 foliation radiation is excluded from" is gone (r6899, `1a2ab59c`):
+the plasma's scales and the perturbations ride the LEAF rate, radiation included, the same side as the
+nucleosynthesis window, and only the comoving distance rides the stacking rate.  ⓷'s "the same L1 rate
+that dissolves the Hubble tension" is gone (r6772+66.25, `06459d04`): the construction leaves the ladder
+discrepancy where the standard model leaves it. ***  So ⓸'s prescription -- "the L1 rate on the expansion
+leg for every observable at once" -- is not the corpus's rule; the rule is the leaf for what the plasma
+accumulates and the stacking rate for separations read across leaves, and the transfer was run that way
+(r6719).  The friction-coefficient finding ⓵ and the consistency rule itself stand.
 """
 import os
 import re
@@ -89,11 +99,24 @@ def main():
           'On the radiation-dominated collapse leg the potential obeys' in p15)
 
     # ⓶ two legs, two contents
-    check('⛭⛭ ⓶ and the two legs carry different content: "there the self-gravitating excursion sets the '
-          'L2 rate radiation is included in, here the diffuse plasma rides the L1 foliation radiation is '
-          'excluded from"',
-          'the L2 rate radiation is included in' in p15
-          and 'the L1 foliation radiation is excluded from' in p15)
+    # ** r6931+70.1 (PO-59): CLASS (a), THE PIN FROZE AN ASSIGNMENT THE CORPUS CORRECTED.  The sentence
+    #    "here the diffuse plasma rides the L1 foliation radiation is excluded from" was rewritten at
+    #    `1a2ab59c` (r6899, "the rate rule settled on the leaf"): the plasma accumulating its own scales
+    #    takes the SAME leaf rate the nucleosynthesis excursion does, "the two windows fall on the
+    #    same side of it rather than on opposite sides", and only the distance the angle is divided by
+    #    rides the stacking rate.  *** So what this check asserted -- the expansion-leg plasma on the
+    #    radiation-excluded rate -- is what the corpus now says is wrong; the check follows the
+    #    correction.  The receipt's two-leg STRUCTURE survives (the leaf rate is radiation-included
+    #    on both legs; what differs is only what is read off it), and its ⓸ prescription "the L1 rate
+    #    on the expansion leg for every observable" does not. ***  Passed at r6502 (`b96e1a49`). **
+    check('⛭⛭ ⓶ [corrected r6899] the two windows sit on the SAME rate, not different ones: "there the '
+          'self-gravitating excursion sets the leaf rate radiation is included in, and here the plasma '
+          'accumulating its own scales takes that same rate" -- "the two windows fall on the same side '
+          'of it rather than on opposite sides"',
+          'the L1 foliation radiation is excluded from' not in p15
+          and 'there the self-gravitating excursion sets the leaf rate radiation is included in, and '
+              'here the plasma accumulating its own scales takes that same rate' in p15
+          and 'the two windows fall on the \\emph{same} side of it rather than on opposite sides' in p15)
 
     # ⓷ the consistency rule
     # ⛔⛭ RE-PINNED r3952 -- r3841's sweep, same cause as r3950's five.  The paper says "one may not take the rate GEOMETRIC for the peak spacing and
@@ -103,8 +126,23 @@ def main():
           'geometric stacking for the peak spacing and radiation-included for the diffusion"',
           'one may not take the rate geometric for the peak spacing and radiation-included for the '
           'diffusion' in p15)
-    check('calling it forced: "This is forced: it is the same L1 rate that dissolves the Hubble tension"',
-          'This is forced: it is the same L1 rate that dissolves the Hubble tension' in p15)
+    # ** r6931+70.1 (PO-59): CLASS (a).  "This is forced: it is the same L1 rate that dissolves the
+    #    Hubble tension" was removed at `06459d04` (r6772+66.25, "the last seven statements of the
+    #    dissolution cleared from P15"): P15 now states the construction does NOT dissolve the
+    #    discrepancy with the local distance ladder, and the rule is "forced by consistency", its
+    #    force being that the peak spacing is the LEAF accumulation, measured, so both lengths go on
+    #    the leaf.  *** The rule is still called forced (the finding this check carried); what it is
+    #    forced BY follows the correction. ***
+    check('calling it forced -- [corrected r6772+66.25] by consistency and by the measured leaf '
+          'accumulation, not by a Hubble-tension dissolution the paper no longer claims: "This is forced '
+          'by consistency", "the peak spacing this construction computes is the leaf accumulation", and '
+          '"this construction does not dissolve the discrepancy with the local distance ladder"',
+          'This is forced: it is the same L1 rate that dissolves the Hubble tension' not in p15
+          and 'This is forced by consistency: one may not take the rate geometric for the peak spacing '
+              'and radiation-included for the diffusion' in p15
+          and '\\emph{the peak spacing this construction computes is the leaf accumulation}' in p15
+          and '\\emph{So this construction does not dissolve the discrepancy with the local distance '
+              'ladder}' in p15)
 
     # ⓸ the instrument is single-background
     check('⓸ while the instrument is described as single-background: "The full flat-projection transfer"',
@@ -114,7 +152,11 @@ def main():
     if FAILED:
         print(f'  {len(FAILED)} check(s) FAILED')
         return 1
-    print('  VERDICT: ** "bespoke" means TWO backgrounds joined at the branch point. **')
+    print('  VERDICT (r6931+70.1): ** CORRECTED IN PART -- the expansion-leg plasma rides the LEAF rate')
+    print('     (r6899), not the L1 foliation, and the rule is forced by consistency, not by a Hubble-tension')
+    print('     dissolution (r6772+66.25).  The transfer was run on that assignment (r6719).  The r2660')
+    print('     finding as it stood, with ⓶ and ⓸ superseded: **')
+    print('  ** "bespoke" means TWO backgrounds joined at the branch point. **')
     print('  ⚠ ⓵ ** The driving\'s 4/eta friction is the RADIATION-dominated coefficient ** (8/eta for')
     print('     matter) -- ** which looked like the perturbation sector assuming radiation while the debt')
     print('     asks for a geometric stacking background. **  *** It is not: the paper scopes it in the same')

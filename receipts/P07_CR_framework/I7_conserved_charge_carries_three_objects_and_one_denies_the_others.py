@@ -30,6 +30,7 @@ VERDICTS, each able to have returned otherwise:
      not by which paper it is in -- and the discriminator is quoted and pinned.
   3. sense C is classified by its own sentence naming the progenitor / baryon object.
   4. THE COLLISION: P07 carries B and C, both spelt `conserved charge`, in one paper.
+     [r6931+70.1: and since r6521 P03 carries A and B -- the denying sense beside Gauss's-law Q.]
   5. CONTROL -- `first integral` must come back SINGLE-sensed on the same machinery, or the
      classifier is finding structure that is not there.
 
@@ -172,8 +173,23 @@ for c, v in sorted(multi.items()):
 # ** ASSERT THE MEASURED VALUE, NOT `> 0 == True`. **  A bare True on the right-hand side is the
 #   hollow shape THE_BASE_RATE's sixteenth entry names, and `check_receipts` flagged two of them
 #   here: it converts a known gap into an unknown one and makes the debt number lie.
-check("exactly one paper carries two senses of the same phrase", sorted(multi), ['P07'])
-check("and its two senses are B and C", multi['P07'], ['B', 'C'])
+# ** r6931+70.1: ['P07'] -> ['P03', 'P07'], class (c) STALE -- and the thesis HOLDING, not moving.
+#   r6521 (`a9769777`, "PO-25 sharpened") wrote into P03's charged-collapse passage "Gauss's law
+#   makes $Q$ a conserved charge and its contribution to the Misner--Sharp mass is $Q^{2}/2r$" -- an
+#   electric charge conserved by a field law, sense B by this receipt's own definition and its own
+#   unchanged classifier -- while P03's mass section still carries sense A, "a conserved charge in
+#   an asymptotically-de~Sitter spacetime is widely held not to be well defined at all".  Red at
+#   r6774 (`91751daa`) and r6921 (`5f9c2b2d`), both after r6521.  ** Both sentences are correct
+#   physics and neither is a defect to route; what they are is a SECOND within-paper collision,
+#   and the sharper one: in P03 the sense that DENIES the object and a sense that USES it sit in
+#   one paper, which is exactly the import this receipt warns a reader against.  So the pin
+#   follows the measurement, each colliding paper's pair is asserted, and P07's B/C pair -- the
+#   collision this receipt was written about -- keeps its own check. **
+check("the papers that carry two senses of the same phrase are P03 and P07 (P07 alone before "
+      "r6521 added P03's Gauss-law charge)", sorted(multi), ['P03', 'P07'])
+check("and P07's two senses are B and C", multi['P07'], ['B', 'C'])
+check("⛭ and P03's are A and B -- the denying sense and an affirming one in one paper",
+      multi['P03'], ['A', 'B'])
 
 print("\nVERDICT 4 — AND THE COLLISION IS NOT AN ARTEFACT OF ONE LOOSE SENTENCE.")
 p07 = [(off, s) for c, off, s, _ in sites if c == 'P07']
@@ -231,6 +247,7 @@ if FAIL:
         print("   ", f)
     raise SystemExit(1)
 print(f"  VERDICT: ALL PASS.  `conserved charge` x{total} carries three objects.  Sense A is a negative")
-print("  existence claim about the very phrase senses B and C use affirmatively, and P07 carries")
-print("  two of the three.  The row is owed, and it belongs to the map rather than to a paper.")
+print("  existence claim about the very phrase senses B and C use affirmatively; P07 carries")
+print("  two of the three, and P03 carries the denying one beside an affirming one.  The row is")
+print("  owed, and it belongs to the map rather than to a paper.")
 print("=" * 78)

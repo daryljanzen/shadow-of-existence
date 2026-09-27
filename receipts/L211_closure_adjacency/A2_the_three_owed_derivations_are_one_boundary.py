@@ -13,6 +13,11 @@ reached from the matter side.)
 sec:scope lists what it owes: "the DERIVATION---as against the measurement---of ** A_s, n_s, and the
 inherited datum ** the composition is run on."
 
+(r6931+70.1: that was the list at r2456.  Since r6719 (440623b6) P15's list reads "of A_s and n_s" --
+the inherited datum left it as a closed datum -- and P15's transmission section names all three as one
+handover: "fixed by the progenitor collapse---the same handover that fixes rho_r/rho_m".  The join this
+receipt made is now the paper's own; the checks pin that.)
+
 ⇒ ** L-150 CLOSED THE THIRD ITEM.  AND ITS ARGUMENT REACHES ALL THREE, because all three are
   DIMENSIONLESS MAGNITUDES. **
 
@@ -72,9 +77,25 @@ def main():
     p15 = flat('CR_cosmology.tex')
 
     # the list, in P15's own words
-    check('P15 lists what it owes: "the \\emph{derivation}---as against the measurement---of '
-          '$A_s$, $n_s$, and the inherited datum"',
-          'as against the measurement---of $A_s$, $n_s$, and the inherited datum' in p15)
+    # ** r6931+70.1: class (b), DISCHARGED IN PART.  This pinned P15's abstract listing as Open "the
+    #   derivation---as against the measurement---of $A_s$, $n_s$, and the inherited datum".  At r6719
+    #   (440623b6) the third item left that list: the commit records "eta and rho_r/rho_m are closed
+    #   data", and the abstract now owes only "$A_s$ and $n_s$" -- with omega_r measured and equality
+    #   fixed by the late-time epoch.  That is L-150's closure (the third item, closed in the negative
+    #   as a derivation from the substrate) now carried by the paper itself.  And the JOIN this receipt
+    #   made is in the paper too: sec:transmission says $n_s$ and $A_s$ are inherited, "fixed by the
+    #   progenitor collapse---the same handover that fixes $\rho_r/\rho_m$" (text present since r2419,
+    #   last touched r6899).  So the check is re-pointed at what discharged it: the list now carries two
+    #   items, the third closed as inherited, and the paper names all three as one handover.  The two
+    #   left are still owed in P15, and this receipt's reading of them -- dimensionless, so not from the
+    #   substrate -- is unchanged. **
+    check('P15 now owes only "the \\emph{derivation}---as against the measurement---of $A_s$ and '
+          '$n_s$" -- the inherited datum having left the list as closed (r6719)',
+          'as against the measurement---of $A_s$ and $n_s$' in p15
+          and 'as against the measurement---of $A_s$, $n_s$, and the inherited datum' not in p15)
+    check('and P15 itself joins the three: $n_s$ and $A_s$ are "fixed by the progenitor collapse---the '
+          'same handover that fixes $\\rho_r/\\rho_m$"',
+          'fixed by the progenitor collapse---the same handover that fixes $\\rho_r/\\rho_m$' in p15)
 
     # all three are dimensionless
     check('$A_s$ is dimensionless (a power, ~2e-9)', True is not None and '$A_s' in p15)

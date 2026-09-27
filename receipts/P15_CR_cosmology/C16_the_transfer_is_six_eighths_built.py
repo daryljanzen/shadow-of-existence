@@ -49,6 +49,13 @@ a consequence and not as the spectrum. ***  ** Not that $\\ell_*=302.2$ closes t
 paper says "to that accuracy rather than exactly".
 
 Written r2658.  Stated for reversal.
+
+** r6931+70.1 (PO-59) -- DISCHARGED, AND WHERE. **  *** What this receipt found missing -- the visibility
+function and the absolute line-of-sight spectrum -- is RUN: r6719 (`440623b6`) states the end-to-end
+transfer as a two-arm line-of-sight integral on this cosmology's own background, and the visibility is
+located and measured on both arms. ***  And ⓷'s ratio now carries the paper's current $r=0.992$ (a rise of
+about two per cent at $\\ell_D$), not r2658's $1.082$ / $0.84$, which belonged to the fitted-onset handover
+the corpus retired at r6770+66.3.
 """
 import os
 import re
@@ -81,8 +88,24 @@ def main():
     p15 = re.sub(r'\s+', ' ', body(os.path.join(ROOT, 'corpus', 'CR_cosmology.tex')))
 
     # the debt as framed
-    check('⓵ the debt is framed as a build: "This is a genuine build, not a plug-in"',
-          'This is a genuine build, not a plug-in' in p15)
+    # ** r6931+70.1 (PO-59): CLASS (b), DISCHARGED.  "This is a genuine build, not a plug-in" was
+    #    deleted at `440623b6` (r6719, "the transfer is run") because the build was done.  This
+    #    receipt's finding was that what PO-12 still owed was the ABSOLUTE spectrum -- "the
+    #    visibility-weighted line-of-sight integral that turns Theta(k) into C_l itself" -- and that
+    #    is exactly what P15 now states as run: a two-arm line-of-sight integral
+    #    Delta_l(k) = int S j_l(k(eta_0-eta)) d eta on this cosmology's own background, with the
+    #    visibility located on both arms (its width measured, 43.6 against 38.0 Mpc).  *** So the
+    #    check pins the discharge, the two pieces this receipt marked NOT located, and the absence of
+    #    the old framing -- not merely the new wording. ***  Passed at r6502 (`b96e1a49`). **
+    check('⓵ [discharged r6719] the debt WAS framed as a build ("a genuine build, not a plug-in") and '
+          'that framing is gone because the build is run: "The end-to-end branch-point-to-'
+          'recombination transfer is run", the absolute spectrum as "a two-arm line-of-sight '
+          'Boltzmann integral, $\\Delta_\\ell(k)=\\int S\\,j_\\ell(k(\\eta_0-\\eta))\\,d\\eta$", and '
+          'the visibility located on both arms ("$43.6$ against $38.0$~Mpc")',
+          'This is a genuine build, not a plug-in' not in p15
+          and '\\emph{The end-to-end branch-point-to-recombination transfer is run}' in p15
+          and 'a two-arm line-of-sight Boltzmann integral, $\\Delta_\\ell(k)=\\int S\\,j_\\ell(k(\\eta_0-\\eta))\\,d\\eta$' in p15
+          and 'visibility is \\emph{wider}, $43.6$ against $38.0$~Mpc' in p15)
 
     # ⓵ the driving, verified rather than taken
     x = sp.symbols('x', positive=True)
@@ -101,20 +124,35 @@ def main():
           '302.2' in p15 and '301' in p15)
 
     # ⓷ the ratio, recomputed
-    r = 1.082          # ** RE-PINNED c54.223 (`L-557`) -- was 1.093; see the note below **
+    # ** r6931+70.1 (PO-59): CLASS (a) -- this pair was passing VACUOUSLY at head and failed at r6774
+    #    (`91751daa`).  The paper's $r$ in this formula is no longer 1.082: the branch-point handover
+    #    (r6770+66.3, "the onset was a repair") and the common visibility-peak endpoint (r6797) put it
+    #    at $r=0.992$, a RISE of about two per cent at $\\ell_D$ (sentence landed `2da9b74a`, merged
+    #    at r6921), where 1.082 was the fitted-onset configuration's ratio.  The old pin
+    #    `'1.082' in p15` came green again only because r6795/r6801 (`1cb0c1be`, `a21467b0`) added an
+    #    unrelated "a ratio of $1.082$ gives $160$" sentence -- a bare number held the check up.  *** The finding (a C_l ratio with no free parameter is in the paper) is unchanged; the
+    #    pin now binds the formula to its stated $r$ and the recomputation to the paper's stated
+    #    size.  The 1.082 / 0.844 arithmetic is kept below as the value the paper carried then. ***
+    r = 0.992          # ** RE-PINNED c54.223 (`L-557`) -- was 1.093; then 1.082; r6931+70.1: 0.992 **
     ratio = float(np.exp(-(1.0**2) * (r**2 - 1)))
+    _then = float(np.exp(-(1.082**2 - 1)))
     check('⛭⛭⛭ ⓸ and a $C_\\ell$ ratio with no free parameter is already in the paper: '
           '"$C_{\\ell}^{\\rm CR}/C_{\\ell}^{\\Lambda\\rm CDM}=\\exp[-(\\ell/\\ell_{D})^{2}(r^{2}-1)]$ with '
-          '$r=1.082$"',
-          'with no free parameter' in p15 and '1.082' in p15)
-    check(f'and recomputing it at $\\ell=\\ell_D$ gives {ratio:.3f}, matching the paper\'s $0.84$',
-          abs(ratio - 0.84) < 0.005)
+          '$r=\\theta_{D}/\\theta_{*}$", and at the visibility peak "$r=0.992$"',
+          'The high-$\\ell$ consequence follows with no free parameter' in p15
+          and 'with $r=\\theta_{D}/\\theta_{*}$' in p15
+          and 'visibility function, $r=0.992$, it is a rise of about two per cent at $\\ell_{D}$' in p15)
+    check(f'and recomputing it at $\\ell=\\ell_D$ gives {ratio:.3f} -- the paper\'s "rise of about two '
+          f'per cent" (at the retired $r=1.082$ it was {_then:.3f}, the old $0.84$)',
+          abs(ratio - 1.016) < 0.002 and abs(_then - 0.844) < 0.002)
 
     print()
     if FAILED:
         print(f'  {len(FAILED)} check(s) FAILED')
         return 1
-    print("  VERDICT: ** PO-12's step ② is smaller than its framing. **")
+    print("  VERDICT (r6931+70.1): ** DISCHARGED -- the absolute spectrum is RUN (r6719) and the ratio's r is")
+    print("     now 0.992 (a ~2% rise at l_D).  What follows is the r2658 finding as it stood: **")
+    print("  ** PO-12's step ② is smaller than its framing. **")
     print('  ⓵ ** Six of the transfer\'s eight pieces are computed: ** the driving in closed form (verified')
     print('     here: satisfies its ODE, even in x, normalised at x=0), exact source removal, the')
     print('     amplitude at horizon entry, r_s = 146.4 Mpc, the diffusion scale 10.8% longer, and')

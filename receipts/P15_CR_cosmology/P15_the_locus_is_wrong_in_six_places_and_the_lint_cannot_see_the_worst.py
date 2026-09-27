@@ -160,26 +160,97 @@ tex = open(TEX, encoding='utf-8').read()
 body = re.sub(r'(?m)^%.*$', '', tex)
 
 # the six repaired sites, each pinned by the corrected text rather than by a line number
+# ** r6931+70.1: THREE OF THESE MOVED, AND THE REASON IS ONE CHANGE OF PHYSICS, NOT THREE REWORDINGS.
+#   r6770+66.3 / r6772 retired the fitted onset: the plasma is handed over AT THE BRANCH POINT.  So the
+#   paper now asserts a horizon property of the branch point again -- the OTHER half of the inversion
+#   PART 1 derives, "every mode leaves it before the crossing", which is TRUE and is what this file's
+#   own arithmetic says of r -> 0.  PART 2's title is therefore read as "no longer asserts a
+#   SUB-horizon property of the branch point", and the GONE list below is unchanged and still passes.
+#   · heading, STALE (c): "The acoustic modes are sub-horizon at the onset, and the branch point is
+#     the opposite" -> "Where the acoustic modes stand at the onset depends on the rate ..." at
+#     `94d9e35d` (r6621) -> "Where the acoustic modes stand when the plasma is handed over" at
+#     `965176fc` (r6772+66.4).  Pinned with the proposition title under it, which names the locus
+#     and the side: "Every acoustic mode is outside the horizon at the branch point".
+#   · sec:coherence, FROZE AN ERROR (a) then STALE (c): the pinned repair "already sub-horizon at the
+#     seam (Prop.~\ref{prop:subhorizon})" itself carried a mis-citation -- the proposition was about
+#     the onset and never named the seam -- which `2a5bbf42` (r6671) corrected; `440623b6` (r6719)
+#     then cut the sentence with the collapse-side-driving claim it carried (P15 now puts the driving
+#     on the expanding leg).  sec:coherence's locus statement is now "At the branch point every
+#     acoustic mode is outside the horizon", and the seam claim with its own receipt stands in
+#     sec:envelope: "a statement about the seam that Prop.~\ref{prop:subhorizon}, being about the
+#     branch point, does not make\rcpt{C2_horizon_limits}" -- the two loci kept apart, which is the
+#     finding.
+#   · prop:subhorizon body: FORBIDDEN TO REPAIR (d) -- see the comment at that entry. **
 REPAIRED = [
     ('subsection heading',
-     r'\\subsection\{The acoustic modes are sub-horizon at the onset, and the branch point is the opposite\}'),
+     r'\\subsection\{Where the acoustic modes stand when the plasma is handed over\}'
+     r'(?s:(?:(?!\\subsection).)*?)\\begin\{proposition\}\[Every acoustic mode is outside the horizon at '
+     r'the branch point\]'),
     # ⛔⛭ AMENDED r4520: the proposition was REWRITTEN by the rate-rule work (r4133 and after) --
     #    it is "Where the acoustic modes stand at the plasma's onset, ON THE RATE THEY RUN ON" now,
     #    and it answers on both rates, so the closing clause reads "the acoustic modes are inside
     #    the horizon at the onset" with the factor gone.  ** The LOCUS is what these six sites are
     #    about, and the locus is still `onset`. **  *"by a factor" was incidental to the repair and
     #    pinning it made the check fail on a sentence that says exactly what the repair asked for.*
+    # ⛔ r6931+70.1: FORBIDDEN TO REPAIR (d).  The pin "inside the horizon at the onset" went with the
+    #    onset at `965176fc` (r6772+66.4), and the proposition is now about the branch point and
+    #    TRUE.  But this file's finding is not "the claim is true"; it is that a locus claim must
+    #    be the locus its RECEIPT computed (PART 3: "the cited receipts' own words ... are the
+    #    authority on which locus was computed").  prop:subhorizon's argument still cites
+    #    `P15_verify_numeric` anchor 7, which computes "acoustic modes are SUB-horizon at the plasma
+    #    onset" at the retired z_onset = 6797 on Planck LCDM -- the opposite locus and the opposite
+    #    census -- and does not compute the leaf-rate ell_eq ~ 156 the argument cites it for.
+    #    *** Six sites said "branch point" where their receipts said "onset"; the seventh now does,
+    #    in the proposition this file was built around. ***  So this entry is re-pointed at the
+    #    finding, NOT at new wording: the body must assert the branch-point side AND the receipt its
+    #    argument cites must name the branch point.  It fails until the corpus re-cites the argument
+    #    (routed to node 66); it is not loosened to pass.
     ('prop:subhorizon body',
-     r'inside the horizon at the onset'),
+     None),
     ('sec:coherence',
-     r'already sub-horizon at the seam \(Prop\.~\\ref\{prop:subhorizon\}\)'),
+     r'\\emph\{At the branch point every acoustic mode is outside the horizon and the leg\'s '
+     r'closed-form potential has\s+returned to its regular value\}'
+     r'(?s:.*)a statement about the seam that Prop\.~\\ref\{prop:subhorizon\}, being about the '
+     r'branch point, does not make\\rcpt\{C2_horizon_limits\}'),
     ('sec:envelope derivation',
      r'\\emph\{seam\}\s*\} sits just inside that turning point'),
     ('sec:envelope driving amplitude',
      r'reaching the \\emph\{seam\}---where the collapse leg ends---with the same driving amplitude'),
 ]
 # (the heading regex above is written against the file; the envelope one is checked loosely below)
+def _prop_subhorizon_bound_to_its_locus():
+    """r6931+70.1 (d): the proposition asserts the branch-point side, and the receipt its argument
+    cites is one that names the branch point -- the binding this file's finding is about."""
+    i = body.find(r'\label{prop:subhorizon}')
+    j = body.find(r'\end{proposition}', i) if i >= 0 else -1
+    if i < 0 or j < 0:
+        return False, 'prop:subhorizon not locatable'
+    head = body.rfind(r'\begin{proposition}', 0, i)
+    says_bp = 'outside the horizon at the branch point' in body[head:i]
+    tail = body[j:]
+    am = re.search(r'\\emph\{Argument\.\}', tail)
+    para = tail[am.start():] if am else ''
+    para = para[:re.search(r'\n\s*\n', para).start()] if re.search(r'\n\s*\n', para) else para
+    keys = [k.replace('\\_', '_') for k in re.findall(r'\\rcpt\{([^}]+)\}', para)]
+    named = {}
+    for k in keys:
+        p = os.path.join(ROOT, 'receipts', 'P15_CR_cosmology', k + '.py')
+        src = open(p, encoding='utf-8').read() if os.path.exists(p) else ''
+        src = re.sub(r'(?m)^\s*#\s*\*\*.*$', '', src)
+        named[k] = (len(re.findall(r'branch[ -]point', src, re.I)),
+                    len(re.findall(r'\bseam\b|\bonset\b', src, re.I)))
+    ok = says_bp and bool(keys) and all(nb > ns for nb, ns in named.values())
+    return ok, f'asserts the branch-point side: {says_bp}; argument cites {named} (branch point, seam/onset)'
+
+
 for name, pat in REPAIRED[:3]:
+    if pat is None:
+        ok, why = _prop_subhorizon_bound_to_its_locus()
+        print(f"  {'OK ' if ok else 'MISSING'}  {name}  ({why})")
+        if not ok:
+            fail.append(f"{name}: the proposition claims the branch point but its argument's receipt "
+                        f"computes the onset -- {why}")
+        continue
     ok = re.search(pat, body) is not None
     print(f"  {'OK ' if ok else 'MISSING'}  {name}")
     if not ok:
@@ -271,8 +342,25 @@ if _i < 0 or _j < 0:
     seeded = body
 else:
     _prop = body[_i:_j]
-    seeded = body[:_i] + _prop.replace('inside the horizon at the onset',
-                                       'inside the horizon at the branch point') + body[_j:]
+    # ** r6931+70.1: STALE (c).  The seed replaced "inside the horizon at the onset", which left the
+    #    proposition at `965176fc` (r6772+66.4) when it became the branch-point census.  The defect
+    #    seeded is unchanged in kind -- a proposition BODY asserting a horizon property of a locus
+    #    its bound receipt did not compute -- and is planted in the body's own claim clause.  The
+    #    locus is chosen as the one the bound receipt does NOT name, so the seed stays a locus
+    #    mismatch after node 66 re-cites the argument (see the (d) entry in PART 2), rather than
+    #    silently riding on that defect. **
+    _bk =re.findall(r'\\rcpt\{([^}]+)\}',
+                     re.search(r'\\emph\{Argument\.\}.*?(?:\n\s*\n)', body[_j:], re.S).group(0))
+    _bn = set()
+    for _k in _bk:
+        _rp = check_loci.find_receipt(_k.replace('\\_', '_'))
+        if _rp:
+            _bn |= check_loci.loci_in(open(_rp, encoding='utf-8', errors='replace').read())
+    _plant = next((w for w in ('branch point', 'seam') if w not in _bn), None)
+    _clause = 'so the comoving horizon shrinks to zero and every mode leaves it before the crossing'
+    seeded = body if _plant is None or _clause not in _prop else (
+        body[:_i] + _prop.replace(_clause, f'so the acoustic modes are inside the horizon at the '
+                                           f'{_plant}') + body[_j:])
 if seeded == body:
     fail.append("could not seed the motivating defect -- the target sentence moved")
 

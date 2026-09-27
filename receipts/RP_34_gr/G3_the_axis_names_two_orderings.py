@@ -27,11 +27,14 @@ HORIZON/SYMMETRY ONE -- NOT THE PETROV ORDERING: **
   (ii)  "WHERE THE LAST CONTINUOUS SYMMETRY IS LOST the operator can no longer generate the leaf by a
          sweep ... so the layered generation runs from the seam (the inner, Nariai end of the
          null-degeneracy axis) out to the wall, THE TWO ITS ENDPOINTS"
+         [r6931+70.1: corrected in P9 at r6719 to "WHERE THE LAST SYMMETRY ABLE TO ANCHOR A SWEEP IS
+         LOST" -- the type-N plane wave keeps five Killing fields and is still beyond the wall, so
+         losing continuous symmetry was never the condition.  Still a symmetry condition, not Weyl.]
   (iii) "whose seam is exactly the degenerate Nariai member THIS RANGE PLACES AT THE INNER END OF THE
          NULL-DEGENERACY AXIS"
 
 ⇒ ** Inner end: an algebraic condition on the HORIZON polynomial.  Outer end: the loss of the last
-   CONTINUOUS SYMMETRY.  Neither endpoint is a Weyl-tensor condition, and the Petrov types are LABELS
+   SYMMETRY ABLE TO ANCHOR A SWEEP (written "last continuous symmetry" at r2418; corrected r6719).  Neither endpoint is a Weyl-tensor condition, and the Petrov types are LABELS
    of what sits along the axis rather than the ordering itself. **
 
 ** SO THE ERROR WAS A MISPARSE, AND IT IS THIS LINE'S. **  "lies along IT" -- the antecedent is THE
@@ -81,9 +84,22 @@ def main():
     check('(i) the inner end is THE HORIZON CUBIC\'S DOUBLE ROOT where two horizon null surfaces merge',
           "the horizon cubic's double root $\\Lambda M^{2}=1/9$ where two horizon null surfaces merge"
           in flat)
-    check('(ii) the outer end is WHERE THE LAST CONTINUOUS SYMMETRY IS LOST',
-          'where the last continuous symmetry is lost the operator can no longer generate the leaf'
-          in flat)
+    # ** r6931+70.1: THE PIN FROZE AN ERROR.  Class (a).  r6719 (`440623b6`, "the cowork read's list
+    #   worked across eleven papers") corrected P9's outer end from "where the last CONTINUOUS
+    #   symmetry is lost" to "where the last symmetry ABLE TO ANCHOR A SWEEP is lost": the type-N
+    #   plane wave -- this receipt's own cor:wall exemplar, five Killing fields, vacuum -- keeps
+    #   continuous symmetry and still lies beyond the wall, so the loss of symmetry as such is not
+    #   the condition; its commit says the plane wave "shows [the anchoring condition] is stronger
+    #   than the loss of symmetry".  Red since r6719, i.e. at r6774 (`91751daa`) and r6921
+    #   (`5f9c2b2d`).  ** This check's finding -- the outer end is a SYMMETRY condition and not a
+    #   Weyl-tensor one, so the Petrov types label the axis rather than order it -- is carried by the
+    #   corrected clause exactly as by the old; the pin follows the correction, and the old wording is
+    #   asserted gone so the refuted condition cannot return. **
+    check('(ii) the outer end is WHERE THE LAST SYMMETRY ABLE TO ANCHOR A SWEEP IS LOST (not merely '
+          'the last continuous symmetry -- the plane wave keeps five Killing fields and is beyond it)',
+          'where the last symmetry able to anchor a sweep is lost the operator can no longer generate '
+          'the leaf' in flat
+          and 'last continuous symmetry is lost' not in flat)
     check('(ii) and that passage names the two as the axis\'s endpoints',
           'out to the wall, the two its endpoints' in flat)
     check('(iii) and the seam is placed at the inner end a third time',
@@ -129,7 +145,7 @@ def main():
     print('  VERDICT: the sentence is CORRECT and the objection was a misparse.  ** The corpus')
     print('     defines the axis three times in this same paper, and both endpoints are')
     print('     HORIZON/SYMMETRY conditions -- the horizon cubic\'s double root at the inner end,')
-    print('     the loss of the last continuous symmetry at the outer.  The Petrov types are')
+    print('     the loss of the last symmetry able to anchor a sweep at the outer.  The Petrov types are')
     print('     LABELS of what sits along the axis, not the ordering itself. **')
     print('  "lies along IT" refers to THE AXIS; this line attached it to the PND count and every')
     print('  objection followed.  Type N lies BEYOND the wall, consistent with cor:wall.')

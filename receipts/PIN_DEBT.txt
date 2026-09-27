@@ -1,5 +1,103 @@
 0
 
+⛭⛭⛭ r6931+70.1 (node 70): PO-59 WORKED ONCE THROUGH --- 78 OF THE 83 RUN GREEN, AND THE 5 LEFT
+ARE CORRECTLY RED AND NOT THIS LINE'S TO MOVE.  THE HEAD STAYS 0.
+Listed set: 83 (81 debt + 2 declared environment).  At r6931+70.1: 78 exit 0, 5 exit 1, 0 over
+timeout.  Every one of the 83 was run from its own directory with NODE=ci.  SUITE: see the
+RUN_RESULT.txt stamped with this revision's digest.
+
+  ⌗ ** HOW THEY LEFT THE LIST, AND NONE BY RECLASSIFICATION. **
+    * 4 by RUNNING, no edit: the P16 BBN four (bbn_network, window, theory_error, validate_bbn)
+      pass once pynucastro is installed, as the `heavy` tier installs it.  This includes the
+      environment member of the pair.  The other environment member, L803/S1, ran with camb
+      present and failed on prose, so it was repaired like the rest.
+    * 3 by a DEPENDENCY clearing, no edit: L258/M1 (ran B66 and L560/P1), L262/F1 (L253/S1 and
+      L255/E1) and L268/O1 (L263/S1).
+    * 71 REPAIRED, each at the check with a dated `r6931+70.1` block naming the commit that moved
+      it and the class.  By class, per receipt (a receipt can carry more than one class):
+        (a) PIN FROZE AN ERROR, re-pointed at the correction.  These are the sharpest:
+            - P14's "smallest connected group ... is SU(3)" was corrected at r6707/r6719 to a
+              group of order 81 in U(3) whose determinant-one part Δ(27) lies in SU(3).
+              Receipts: L211/A1, L221_the_bridge B6/B8/B15.
+            - The wall modes' "disjoint support" was shown false at r6748/r6756.
+              Receipts: B66, P14_p3_already_said_it.
+            - The fitted onset z_onset was retired at r6770+66.3/r6772+66.x.
+              Receipts: L150/X1, C18, C24, C26, C29, C31, C32, C38, C39, P15_one_fitted_number.
+            - P10's linear-mode helicity prescription was withdrawn at r6803.  Receipt: L553/S1.
+            - "Hubble tension" lived only in the withdrawn dissolution claim.  Receipt: L803/S1.
+            - Others:
+                · L165/S50, r6909
+                · L200/U2, r6719
+                · L147/B10, r6717+66.1
+                · RP_34/G3, r6719
+                · P17 frontier, r6683 and r6772+66.30
+                · L557/R1, r6772+66.11 and r6899
+        (b) DISCHARGED, re-pointed at what discharged it:
+            - The P15 transfer was run end to end at r6719.
+              Receipts: L202/T1, C14, C16, C17, C61.
+            - The compact-face sector was specified and obstructed twice at r6683.
+              Receipts: L211/A1, L221_quark_lepton/C2, B7.
+            - L200 U1/U3 (both sides run), L560/P1, P16/C13, P17 ds_entropy (PO-48 at r6869).
+            - C25, C30, C34 and C46; P15 low_ell (depth cross-validated, r6825+cc66.26);
+              P15 model_difference (the shadow closed at r6889+cc66.36); P15 likelihood_pair.
+        (c) STALE, re-pinned:
+            - Rewordings: L165/S4, L204 P2/P3/P4/P13, L548/C1, L550/M1, C23, C28, C33,
+              P15 two_data, C38/C39 (z_eq).
+            - Counts re-measured with each arrival named:
+                · L220/V2 20→19 and 6→5
+                · L_probability/R1 cosmic variance 24→25, likelihood 24→26
+                · P14/D2 14→18
+                · L263/S1 9→8 and 1→2
+                · P07/I7 gained P03
+                · P15 free_streaming switches 60→69, all nine named
+            - A rename that split a literal: L253/S1, L255/E1 (r6647).
+            - A substring grown ambiguous: L559/O1.
+            - Four receipts that were NEVER green under the runner, because they read paths
+              relative to the repo root while the runner runs from the family directory: P03 T,
+              P03 w, P14 lifts, P17 ledgers.  P03 T and P03 w could pass VACUOUSLY on an empty glob.
+              Anchored to the root, with a guard added that they see the papers.
+            - L237/G50: see below.
+      ⚠ And five checks that were GREEN VACUOUSLY were repaired along the way.  They were bare
+        numbers matching unrelated sentences: C16 '1.082', and the '8.2' conjunct in C24, C25, C28
+        and L557 ⓹.
+
+  ⛔ ** THE 5 THAT STAY RED, AND WHY EACH IS CORRECTLY RED. **
+    * L256/B1, and L259/D1 and L261/A1 transitively.
+      - B1 is a TRUE report against a GATE: `check_revision_collisions.band_violations`'s r6511
+        exemption `_other_halves` covers the whole out-of-band half once both halves are declared
+        (60 even, 66 odd).  So the band's prevention can never fire.
+      - B1 builds r4000/r4001 and the even band flags nothing.
+      - Green at r6502, red from r6511 (eec88be3).  Routed to 66, because the gate is shared by
+        every line.
+    * L257/V1: three register defects in corpus/open_ledger.txt, all from 4a453403 (r6819
+      follow-up).  Row 38005b708a lost its PO-23/succession note, four rows are UNVERDICTED, and
+      row 8c089c7d7b still reads the P18 depth as open.  Routed to 66.
+    * P15_CR_cosmology/P15_the_locus_is_wrong_in_six_places: prop:subhorizon's Argument
+      (CR_cosmology.tex ~l.303) cites P15_verify_numeric anchor 7.  That anchor computes the
+      OPPOSITE census, sub-horizon at the retired onset.  Routed to 66.
+    ⇒ *** The debt on the listed set is 5, every one blocked on a gate or corpus change, none on a
+        receipt. ***  The head is not edited; it moves when the debt is zero.
+
+  ⌗ ** WHEN THEY BROKE, MEASURED IN SIX WORKTREES AND NOT ASSUMED. **
+    The 79 that failed at head were run at r3531, r3829, r4287, r6502, r6774 and r6921.  Result by
+    last green head:
+      - r6502: 55
+      - r6774: 9
+      - r3531: 1
+      - never green at a sampled head: 14.  Of these, 10 were born after r4287 (5 of them
+        exist only at r6921), 4 of them born cwd-relative.  The other 4 (L257, L258, L263, L268)
+        fail at every sampled head.
+    All 79 were red at r6921.  *** So the debt is inherited relative to r6921, as that entry says,
+    but most of it is RECENT: it accrued between r6502 and r6921, through the r6683/r6719 cold
+    reads and the r6770-72 handover rewrite of P15, while the ratchet was loose. ***
+    ⚠ And L237/G50 is not the seeded fake runner the r6921/r6923 account describes.  It runs the
+      REAL runner on `--only L150_the_datum`, and it printed `0 pass, 1 fail` because X1 was
+      genuinely red, from about r6772 and not from 2026-08-14.  The anchor fix is right either way.
+      G50's step (5) now asserts the runner's anchored verdict COVERS its set and that the exit
+      code agrees with it, instead of borrowing X1's exit code.
+
+  ⛐ PO-59 stays OPEN on the 5 above.  *No receipt left this list except by running.*
+
 ⛔⚭⚭ r6921 (node 66): THE DEBT IS 81 AND THE HEAD STAYS 0 --- AND THE REASON NOBODY
 SAW IT IS THAT THIS GATE HAS BEEN READING SOMEBODY ELSE'S VERDICT.
 766 pass, 83 fail, 1 over timeout, 3383s, tree bd536fbec25e3436.  Two of the 83 are the

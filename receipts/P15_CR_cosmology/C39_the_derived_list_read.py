@@ -21,8 +21,14 @@ own statements **.  *** The second is a read of P15, and this is it. ***
           r_s          "returns r_s = 146.4 Mpc against 145.4 ... within 0.7% of each other"
           1+z_eq       "a consequence and a check, NOT AN INPUT --- 1+z_eq = 3399, exactly half
                         the onset"
+                        (r6931+70.1: now "fixed by the same epoch", and "equality falls within a
+                        couple of per cent of flat LCDM's with nothing fitted to a spectrum" --
+                        the onset, and 3399 with it, left P15 at r6772)
           eta_ratio    "the ratio at onset is [...] which returns 1.99 at T_onset = 1.6 eV
                         --- THE QUOTED DATUM, TO ONE PER CENT" ***
+                        (r6931+70.1: NOT A PAIR -- r2758's correction above; P15 now says the same:
+                        the amplitude "follows from standard thermodynamics alone" and is "not a
+                        feature of this construction")
 
   ⌗ ** The fourth was not in r2746's draft. **  *** It is the baryon-to-photon ratio at onset, and P15
     states its accuracy in the same breath as its value -- which is what makes it usable without this
@@ -30,6 +36,8 @@ own statements **.  *** The second is a read of P15, and this is it. ***
 
 ** ⓶ AND THE EXCLUSIONS ARE THE PAPER'S OWN, NOT A JUDGEMENT. **
   * ** $\\Omega_m$: ** "the single CMB-calibrated $\\Omega_m$" -- ** fitted **, and P15 says to what;
+    (r6931+70.1: "CMB-calibrated" was P15's error, corrected at r6625; it is the epoch $x_0$ "which
+    the rate carries and the baryon-acoustic data fix" -- fitted still, to the distances)
   * ** $A_s$: ** "the first peak is where the amplitude is anchored, by an $A_s$ this construction
     ** inherits rather than predicts **";
   * ** $N_{\\rm eff}$: ** adopted, and the corpus carries a receipt named for the fact that CR ** makes
@@ -90,17 +98,47 @@ def main():
           '302.2' in p15 and 'against the measured' in p15)
     check('$r_s$: "returns $r_{s}=146.4$Mpc against $145.4$ ... within $0.7\\%$ of each other"',
           '146.4' in p15 and 'within $0.7\\%$ of each other' in p15)
-    check('$1+z_{\\rm eq}$: "a consequence and a check, not an input---$1+z_{\\rm eq}=3399$, exactly '
-          'half the onset"',
-          'is then a consequence and a check, not an input' in p15 and '3399' in p15)
-    check('and the onset ratio -- NOT in r2746\'s draft: "which returns $1.99$ at '
-          '$T_{\\rm onset}=1.6$eV---the quoted datum, to one per cent"',
-          'returns $1.99$ at $T_{\\mathrm{onset' in p15
-          and 'the quoted datum, to one per' in p15)
+    # ** r6931+70.1: STALE (c).  Pinned "a consequence and a check, not an input---$1+z_{\\rm
+    #   eq}=3399$, exactly half the onset", removed by `caaf3481` (r6772+66.3) when P15 dropped the
+    #   fitted onset for the branch-point handover.  z_eq is still marked derived and still carries
+    #   the paper's own accuracy clause, now against LCDM rather than against the onset: "Matter--
+    #   radiation equality is then fixed by the same epoch" (the abstract-level summary) and, in
+    #   sec:tensions, "equality falls within a couple of per cent of flat $\\Lambda$CDM's with
+    #   nothing fitted to a spectrum".  ** Same pair, same marker; the "half the onset" relation and
+    #   the number 3399 went with the onset and are not re-pinned. **
+    check('$1+z_{\\rm eq}$: "Matter--radiation equality is then fixed by the same epoch", and '
+          '"equality falls within a couple of per cent of flat $\\Lambda$CDM\'s with nothing fitted '
+          'to a spectrum"',
+          'Matter--radiation equality is then fixed by the same epoch' in p15
+          and 'equality falls within a couple of per cent of flat $\\Lambda$CDM\'s with nothing '
+              'fitted to a spectrum' in p15)
+    # ** r6931+70.1: FROZE AN ERROR (a) -- and the error was this receipt's own, withdrawn in its
+    #   header at r2758 ("THE FOURTH PAIR IS NOT A PAIR", see C48) while this check went on pinning
+    #   the sentence that had been misread as a pair.  `de97f96e` (r6772+66.11) removed "which
+    #   returns $1.99$ at $T_{\\rm onset}=1.6$eV---the quoted datum, to one per cent" with the rest
+    #   of the fitted-onset reading, and P15 now states r2758's correction in its own words: the
+    #   amplitude a start placed by hand would carry "is not a feature of this construction ... it
+    #   follows from standard thermodynamics alone", and "with the plasma handed over at the branch
+    #   point there is no such start and no such amplitude".  ** So the check is re-pointed at the
+    #   IDENTITY -- the reason the fourth entry is excluded -- rather than at a pair that is not one. **
+    check('and the onset ratio is NOT a fourth pair (r2758): P15 says the amplitude at a placed start '
+          '"follows from standard thermodynamics alone", "not a feature of this construction", and '
+          'that with the branch-point handover "there is no such start and no such amplitude"',
+          'is not a feature of this construction either' in p15
+          and 'it follows from standard thermodynamics alone' in p15
+          and 'there is no such start and no such amplitude' in p15)
 
     # ⓶ the exclusions are the paper's own
-    check('⓶ and the exclusions are P15\'s own words: $\\Omega_m$ is "the single CMB-calibrated" one',
-          'single CMB-calibrated' in p15)
+    # ** r6931+70.1: FROZE AN ERROR (a), same site as C38 ⓶.  "the single CMB-calibrated" was
+    #   P15's wrong adjective (its body fits Omega_m to the distances), corrected by `174202ab`
+    #   (r6625) and restated at r6772 as the epoch x_0 "which the rate carries and the
+    #   baryon-acoustic data fix".  ** The exclusion is still P15's own sentence, and still says
+    #   fitted -- only now to the right data. **
+    check('⓶ and the exclusions are P15\'s own words: $\\Omega_m$ is the epoch "which the rate '
+          'carries and the baryon-acoustic data fix" -- fitted, to the distances',
+          'The quantities this cosmology actually uses are the epoch $x_{0}$ (equivalently '
+          '$\\Omega_m=2/(x_{0}^{3}+2)$' in p15
+          and 'which the rate carries and the baryon-acoustic data fix' in p15)
     check('and $A_s$ is anchored "by an $A_{s}$ this construction inherits rather than predicts"',
           'inherits rather than predicts' in p15)
 
@@ -113,22 +151,23 @@ def main():
     if FAILED:
         print(f'  {len(FAILED)} check(s) FAILED')
         return 1
-    print('  VERDICT: ** the derived list is READ — four pairs, three exclusions, all P15\'s own. **')
-    print('  ⛭⛭ ⓵ ** FOUR PAIRS, each with the paper\'s own accuracy clause attached: **')
+    # r6931+70.1: the verdict carried r2747's four pairs after r2758 withdrew the fourth, and
+    # P15's "CMB-calibrated"; both corrected here to what the checks above now establish.
+    print('  VERDICT: ** the derived list is READ — three pairs, and the exclusions are P15\'s own. **')
+    print('  ⛭⛭ ⓵ ** THREE PAIRS, each with the paper\'s own accuracy clause attached: **')
     print('       theta_*   302.2 against the measured 301')
     print('       r_s       146.4 Mpc against 145.4, "within 0.7% of each other"')
-    print('       1+z_eq    3399, "a consequence and a check, NOT AN INPUT"')
-    print('       eta       1.99 at T_onset=1.6 eV, "the quoted datum, TO ONE PER CENT"')
-    print('     ⌗ ** The fourth was not in r2746\'s draft ** — and P15 states its accuracy in the same')
-    print('       breath as its value, which is what makes it usable without this line supplying')
-    print('       anything.')
-    print('  ⓶ ** And the exclusions are the paper\'s own sentences, not a judgement: ** Ω_m "the single')
-    print('     CMB-calibrated", A_s "inherits rather than predicts", N_eff adopted.')
+    print('       1+z_eq    "fixed by the same epoch", "within a couple of per cent of flat LCDM\'s"')
+    print('     ⛔ ** r2747 read a FOURTH, the onset ratio, and it is not a pair (r2758, C48): ** an')
+    print('       identity on inherited η and ω_m/ω_b — and P15 now says so, "from standard')
+    print('       thermodynamics alone", "not a feature of this construction".')
+    print('  ⓶ ** And the exclusions are the paper\'s own sentences, not a judgement: ** Ω_m the epoch')
+    print('     "the baryon-acoustic data fix", A_s "inherits rather than predicts", N_eff adopted.')
     print('     ⇒ *** That is the test r2746 said decides the comparison\'s size — decided by READING')
     print('       rather than by choosing. ***')
     print('  ⛭ ⓷ ** And the high-ℓ ratio is derived with no measured partner ** — a SHAPE test, not a')
     print('     pair, and r2725 established that scoring it wrongly is how the last attempt failed.')
-    print('  ⇒ ⓸ ** So the row owes ONE item: ** the published uncertainties for four measured values.')
+    print('  ⇒ ⓸ ** So the row owes ONE item: ** the published uncertainties for three measured values (r6931+70.1: was four, r2758).')
     print('    ** Data, and not this line\'s to invent. **')
     print()
     return 0

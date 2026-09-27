@@ -8,6 +8,18 @@ fifteen receipts that carried the stale value and the two failure modes they spl
 showing that the gate built to stop the paper and the receipt drifting apart is what held them together
 at the wrong value.
 
+** ⛔ r6931+70.1: THE VALUE THIS FILE CALLS "CORRECTED" HAS SINCE BEEN SUPERSEDED BY THE CORPUS. **
+`1.0816` / `+8.2%` was theta_D/theta_* at a FITTED onset redshift.  The r6772 handover adjudication
+withdrew the fitted onset (`de97f96e`, r6772+66.11, "the last of the fitted-onset reading cleared
+from P15's prose"), and the paper now carries the ratio as fixed by the handover and by the common
+endpoint both lengths are carried to: `r = 0.992` at the visibility peak and `r = 1.023` at a sharp
+recombination cut (`2da9b74a`; computed in `P15_the_signature_collapses_at_the_adjudicated_ratio_and_
+the_endpoint_sets_its_sign`), the sentence reading "moved by under a per cent" (`1a2ab59c`, r6899).
+*So everything below about `1.0816` is a statement about the tree at r2755/c54.223, pinned to those
+commits; the finding -- a correction that stops at the sentence and leaves the number it defines
+behind -- is checked on the PRESENT paper against the present values, and it holds: the sentence and
+`r` agree.*
+
 ** ⛭⛭⛭ WHAT HAPPENED, AND IT IS ONE STEP SHORT RATHER THAN ONE STEP WRONG. **
 
 r2755 traced P15's `9.4\\%` in three steps and found it downstream of the `x_e` non-cancellation r2753
@@ -121,10 +133,22 @@ def main():
     p15_before = flat(git('show', f'{BEFORE}:corpus/CR_cosmology.tex'))
 
     # ------------------------------------------------------------------ ⓪ the correction itself
+    # ** r6931+70.1: RE-POINTED, class (a) -- the pin defended a value the corpus later corrected. **
+    #    ⓪ read "larger by $8.2\%$" in the LIVE paper.  `de97f96e` (r6772+66.11) withdrew the fitted
+    #    onset redshift the 8.2% was computed at ("larger by a few per cent, its size fixed by the
+    #    handover"), and `1a2ab59c` (r6899) settled it as "moved by under a per cent, its size fixed by
+    #    the handover and its sign by the common endpoint".  *r2755's change is a fact about r2755, so
+    #    it is read AT r2755; and the present sentence is pinned in its own words, carrying neither the
+    #    9.4 nor the 8.2.*
+    p15_r2755 = flat(git('show', f'{R2755}:corpus/CR_cosmology.tex'))
     check(f'⓪ r2755 ({R2755}) changed the sentence: "larger by $9.4\\%$" at {BEFORE} '
-          f'-> "larger by $8.2\\%$" now',
-          'larger by $9.4\\%$' in p15_before and 'larger by $8.2\\%$' in p15
-          and 'larger by $9.4\\%$' not in p15)
+          f'-> "larger by $8.2\\%$" at {R2755}; and the sentence now reads "moved by under a per '
+          f'cent, its size fixed by the handover and its sign by the common endpoint"',
+          'larger by $9.4\\%$' in p15_before and 'larger by $8.2\\%$' in p15_r2755
+          and 'larger by $9.4\\%$' not in p15_r2755
+          and '$\\theta_{D}/\\theta_{*}$ moved by under a per cent, its size fixed by the handover '
+              'and its sign by the common endpoint both lengths are carried to' in p15
+          and 'larger by $8.2\\%$' not in p15 and 'larger by $9.4\\%$' not in p15)
     check('⛭ and it took every hedge off at the same time: {\\sim}8\\% appeared '
           f'{p15_before.count(chr(123) + chr(92) + "sim" + chr(125) + "8" + chr(92) + "%")} times '
           f'before and {p15.count(chr(123) + chr(92) + "sim" + chr(125) + "8" + chr(92) + "%")} now',
@@ -151,17 +175,49 @@ def main():
           '1.0816' in clean or 'CR/LCDM' in clean)
     check('   ROUTE B -- C46 feeds C9\'s own division the corrected r_D and brackets +7.65%..+8.24%',
           '7.65' in c46 and '8.24' in c46)
-    check('   ROUTE C -- the corrected paper sentence says $8.2\\%$', 'larger by $8.2\\%$' in p15)
+    # ** r6931+70.1: class (a) -- ROUTE C is a route to the value AT c54.223, so it is read there. **
+    #    The live sentence no longer carries 8.2% (see ⓪): the fitted onset it was computed at is gone.
+    C54_223 = '3edaeea0'          # this receipt's own commit, where the paper was repaired to 1.082
+    p15_c223 = flat(git('show', f'{C54_223}:corpus/CR_cosmology.tex'))
+    check(f'   ROUTE C -- the corrected paper sentence said $8.2\\%$ at {C54_223}',
+          'larger by $8.2\\%$' in p15_c223)
     r = 1.0816
     exact = [round(2.718281828459045 ** (-(x ** 2) * (r ** 2 - 1)), 4) for x in (1.0, 1.5)]
     check(f'⇒ AND WHAT FOLLOWS: r^2-1 = {r**2-1:.6f}, the ratio is {exact[0]:.3f} at l_D and '
           f'{exact[1]:.3f} at 1.5 l_D, and l_D(CR) = 1400/r = {1400/r:.0f}',
           abs((r ** 2 - 1) - 0.169859) < 1e-6 and abs(exact[0] - 0.8438) < 2e-4
           and abs(exact[1] - 0.6824) < 2e-4 and abs(1400 / r - 1294.4) < 0.1)
-    check('⇒ and the PAPER now carries all three, with `r` named as the ratio so the two paragraphs '
-          'cannot part again',
-          'r=\\theta_{D}/\\theta_{*}=1.082' in p15 and '$0.84$ at $\\ell_{D}$' in p15
-          and '$0.68$ at' in p15 and '1.093' not in p15)
+    check(f'⇒ and at {C54_223} the PAPER carried all three, with `r` named as the ratio so the two '
+          'paragraphs could not part again',
+          'r=\\theta_{D}/\\theta_{*}=1.082' in p15_c223 and '$0.84$ at $\\ell_{D}$' in p15_c223
+          and '$0.68$ at' in p15_c223 and '1.093' not in p15_c223)
+    # ** r6931+70.1: AND THE FINDING, CHECKED ON THE PRESENT PAPER -- class (a), re-pointed at the
+    #    correction.  `2da9b74a` (spin-up 3a) and `d9f2fa17` (r6772+66.18) replaced `r=1.082` in
+    #    sec:envelope-consequence with the adjudicated ratio at both endpoints, and the paragraph cites
+    #    THIS receipt for the consequence.  So this file now computes what it is cited for, and asserts
+    #    the invariant it was written to defend: the sentence and the `r` it defines AGREE -- `r` is
+    #    still named as "the same ratio the preceding paragraph derives", its values are the ones the
+    #    adjudicating receipt computes (0.9918, 1.0231), "under a per cent" holds at the common
+    #    endpoint, and neither superseded value is printed as `r`. **
+    R_VIS, R_CUT = 0.9918, 1.0231
+    _adj = rcpt('P15_the_signature_collapses_at_the_adjudicated_ratio_and_the_endpoint_sets_its_sign.py')
+    env = [round(100 * (2.718281828459045 ** (-(x ** 2) * (rr ** 2 - 1)) - 1), 2)
+           for rr in (R_VIS, R_CUT) for x in (1.0, 1.5)]
+    print(f'       at r = {R_VIS} (visibility peak): {env[0]:+.2f}% at l_D, {env[1]:+.2f}% at 1.5 l_D;'
+          f'  at r = {R_CUT} (sharp cut): {env[2]:+.2f}%, {env[3]:+.2f}%')
+    check('⇒ ⛭ and the PAPER NOW keeps the sentence and `r` together at the adjudicated values: '
+          '"moved by under a per cent" and `r` named as "the same ratio the preceding paragraph '
+          'derives", r = 0.992 at the visibility peak (a rise of about two and four per cent) and '
+          '1.023 at a sharp cut (a fall of four and ten), both as P15_the_signature_collapses computes '
+          'them, and neither 1.093 nor 1.082 printed as `r`',
+          'with $r=\\theta_{D}/\\theta_{*}$---the same ratio the preceding paragraph derives' in p15
+          and '$r=0.992$, it is a rise of about two per cent at $\\ell_{D}$ and four at' in p15
+          and '$r=1.023$, turns it into a fall of four and ten' in p15
+          and '$1.0231$' in _adj and '$0.9918$' in _adj
+          and abs(R_VIS - 1) < 0.01
+          and abs(env[0] - 2) < 1 and abs(env[1] - 4) < 1
+          and abs(env[2] + 4) < 1 and abs(env[3] + 10) < 1
+          and 'r=\\theta_{D}/\\theta_{*}=1.082' not in p15 and '1.093' not in p15)
 
     # ------------------------------------------------------------------ ⓷ the thirteen
     STALE = ['C10_highl_ratio', 'C16_the_transfer_is_six_eighths_built', 'C22_the_end_to_end_number',
@@ -226,7 +282,9 @@ def main():
     check('⛭ and r2755 moved the state -- it settled the contest and removed all nine hedges -- so the '
           'first\'s verdict is the operative one and the second\'s rule is what licensed the change',
           p15_before.count('{\\sim}8\\%') == 9 and p15.count('{\\sim}8\\%') == 0
-          and '8.2\\%' in p15)
+          # r6931+70.1: read at r2755, not live -- the live paper's only `8.2\%` is now the control
+          # arm's (sec. on the two ratios), so a live read passed on an unrelated number.
+          and 'larger by $8.2\\%$' in p15_r2755)
 
     # ------------------------------------------------------------------ what is left alone
     ROUTED = ['CORPUS_MAP.md', 'PROTECTED_OPEN.md', 'THE_EVOLUTION_MAP.md',
@@ -244,6 +302,8 @@ def main():
         print(f'  {len(FAILED)} check(s) FAILED')
         return 1
     print('  VERDICT: ** the correction stopped at the sentence, and `r` is that sentence. **')
+    print('  (at r2755/c54.223, on the fitted onset redshift since withdrawn -- the paper now carries')
+    print('   r = 0.992 at the visibility peak and 1.023 at a sharp cut, and sentence and r agree)')
     print('    r        1.0930 -> 1.0816')
     print('    r^2-1    0.1946 -> 0.1699')
     print('    at l_D    0.823 -> 0.844        (16% down, not 18%)')

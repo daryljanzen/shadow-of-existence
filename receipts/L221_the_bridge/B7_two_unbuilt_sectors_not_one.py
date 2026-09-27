@@ -21,6 +21,15 @@ carried the object.  *** The table fell 32 -> 27 and this line reported it as pu
   * ** `boundary_paper`'s: ** the ** COMPACT-FACE ** fermion sector, ** gauge-acted **, which an
     equivariant index would act on and which the gauge wall's obstruction needs in order to bite.
 
+  (r6931+70.1: that was boundary_paper at r2621.  Since r6683 (73eb61ef) it no longer calls the
+  compact-face sector "unbuilt ... the major undertaking": sec:open says "The sector the obstruction would
+  act on is the other one---gauge-acted and isometry-realized, on the compact face---and that sector can be
+  specified, and is obstructed twice", specifies it as an SU(4) spinor on the round S^5, and finds it
+  empty -- "The specification does not build the sector ... what is definite is the emptiness of a
+  definite object".  So the compact-face sector is still not built, now because it is shown EMPTY; and
+  the propagating one has been built since r3802.  The two-sectors distinction is sharper than when it
+  was written: one built, the other specified and obstructed.)
+
 ** ⓶ AND THEY ARE UNBUILT FOR DIFFERENT REASONS, WHICH IS THE TEST THAT SETTLES IT. **
   * *** the propagating sector is unbuilt because the modes delivered are BOUND *** -- normalizable in
     the leaf's proper measure, where the propagating Dirac-norm mode is not;
@@ -77,9 +86,23 @@ def main():
           'slicing structure, not a gauge-acted sector on the compact face"',
           'is a spinor on the real Lorentzian slicing structure, not a gauge-acted sector on the '
           'compact face' in bp)
-    check('and names what stays unbuilt: "The compact-face fermion sector the obstruction would act on '
-          'remains unbuilt"',
-          'The compact-face fermion sector the obstruction would act on remains unbuilt' in bp)
+    # ** r6931+70.1: class (b), DISCHARGED.  This pinned "The compact-face fermion sector the
+    #   obstruction would act on remains unbuilt", which r6683 (73eb61ef) replaced with "sec:open
+    #   specifies that sector and finds it obstructed twice".  sec:open does it: the sector is named as
+    #   the OTHER one, specified (an SU(4) spinor on the round S^5, receipt
+    #   P13_the_construction_is_specifiable_and_colour_sits_in_the_spin_group) and shown empty.  The
+    #   finding this check carries -- the compact-face sector is a DIFFERENT sector from the built one --
+    #   is now the paper's own sentence, so the check is re-pointed at that sentence and at what
+    #   discharged "unbuilt" (specified, obstructed twice, not built, empty), never at a new way of
+    #   saying unbuilt. **
+    check('and names the OTHER sector and what became of it: "The sector the obstruction would act on is '
+          'the other one---gauge-acted and isometry-realized, on the compact face---and that sector can '
+          'be specified, and is obstructed twice" (was "remains unbuilt"; discharged r6683)',
+          ('The sector the obstruction would act on is the other one}---gauge-acted and '
+           'isometry-realized, on the compact face---and that sector can be specified, and is '
+           'obstructed twice') in bp
+          and 'The specification does not build the sector' in bp
+          and 'what is definite is the emptiness of a definite object' in bp)
     check('and why it matters: the built sector "supplies no equivariant index for the obstruction to '
           'act on"',
           'supplies no equivariant index for the obstruction to act on' in bp)
@@ -99,13 +122,20 @@ def main():
     #   ⌗ This is the fourth paper to carry the correction: P07 L267, P5 L648 (repaired r3904),
     #     `boundary_paper` (item 41), and here.  A receipt asserting the old state was the last
     #     place it survived.
+    # ** r6931+70.1: class (c), STALE, both.  r6683 (73eb61ef) trimmed P0's "the leaf-bound modes and
+    #   the propagating field being two sectors rather than one owed" to "... being two sectors", and
+    #   replaced "the propagating spinor field sector is now built as well" with "the descent onto a
+    #   propagating spinor sector is built on ..."; r6719 (440623b6) then identified the member it is
+    #   built on as the chiral one, "which is the unpolarised one" (formerly "the unpolarised radiating
+    #   member").  Same two facts -- two sectors, and the propagating one built -- in current words. **
     check("⓶ and the two sectors are DISTINCT, which is this receipt's title and the paper's own "
-          'words: "the leaf-bound modes and the propagating field being two sectors rather than one"',
-          'two sectors rather than one' in p0)
+          'words: "the leaf-bound modes and the propagating field being two sectors"',
+          'the leaf-bound modes and the propagating field being two sectors' in p0)
     check('⛭ and the propagating one is NO LONGER UNBUILT -- the corpus overtook this receipt: '
-          '"the propagating spinor field sector is now built as well"',
-          'propagating spinor field sector is now built as well' in p0
-          and 'unpolarised radiating member' in p0)
+          '"the descent onto a propagating spinor sector is built on the chiral member, which is the '
+          'unpolarised one, a Dirac field there propagating on the light cone"',
+          ('the descent onto a \\emph{propagating} spinor sector is built on the chiral member, which '
+           'is the unpolarised one, a Dirac field there propagating on the light cone') in p0)
 
     # different reasons
     check('⓷ and they are unbuilt for DIFFERENT reasons -- the compact-face route is walled by '

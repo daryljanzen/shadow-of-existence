@@ -278,10 +278,20 @@ for what, pat in WRITTEN:
         fail.append(f"P14 does not carry: {what}")
 
 print()
+# ** r6931+70.1: class (c), STALE -- the clause was put into the active voice, the claim unchanged.
+#   r6683 (73eb61ef) rewrote P14's "no claim is made about a fourth route, and none is made that the
+#   bridge does not exist" as "We make no claim about a fourth route, and none that the bridge does
+#   not exist".  Same refusal of the stronger reading, same sentence, same place (after the three routes
+#   converge on one ceiling).  But the old pins turned it inside out: the declining pin no longer
+#   matched, and the flattening pin's look-behind no longer shielded the phrase, so the file reported
+#   the vein CLOSED because P14 still DECLINES to close it.  Both pins now carry the current wording;
+#   the flattening pattern still fires on any bare "the bridge does not exist" / "no bridge exists" /
+#   "PO-5 is closed" anywhere else in P14. **
 _closed = re.search(r'PO-5 is (?:now )?closed'
-                    r'|(?<!none is made that )the bridge does not exist'
+                    r'|(?<!none is made that )(?<!and none that )the bridge does not exist'
                     r'|no bridge exists', P14) is not None
-_declines = re.search(r'none is made that the bridge does not exist', P14) is not None
+_declines = re.search(r'We make\s+no claim about a fourth route, and none that the bridge does not exist',
+                      P14) is not None
 print(f"  {'OK ' if not _closed else 'BREACH '}  ⛔ the vein is NOT declared closed anywhere in P14")
 print(f"  {'OK ' if _declines else 'MISSING'}  and the clause says so explicitly")
 print("     ⚠ *a vein reported as one settled question has been FLATTENED; three of four candidates")

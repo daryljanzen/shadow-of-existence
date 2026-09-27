@@ -46,6 +46,11 @@ runs geometric stacking ** -- the paper calls it flat-projection and the debt st
 other six findings are affected ** -- they are verified independently and stand.
 
 Written r2659.  Stated for reversal.
+
+** r6931+70.1 (PO-59) -- DISCHARGED, AND WHERE. **  *** The debt ⓷ described -- the validated instrument
+run on this cosmology's own background -- is RUN (r6719, `440623b6`): both arms on one set of equations,
+the perturbations on the leaf congruence, the rate change an exact chain rule between two conformal
+times. ***  The "debt stands" statements above are the r2659 state.
 """
 import os
 import re
@@ -105,9 +110,26 @@ def main():
     #   STRING from `radiation-free` to `geometric stacking`, and P15 was swept to a different
     #   successor.  The paper says "specifying how the fluctuations gravitate on the GEOMETRICALLY
     #   FIXED background".  Pinned to the fragment that carries the claim, not the whole clause.
-    check("while the debt names the other background: \"specifying how the fluctuations gravitate on the "
-          'geometric stacking background\"',
-          'how the fluctuations gravitate on the' in p15 and 'fixed background' in p15)
+    # ** r6931+70.1 (PO-59): CLASS (b), DISCHARGED.  The debt's clause ("specifying how the
+    #    fluctuations gravitate on the ... background ... and then a bespoke transfer") was deleted at
+    #    `440623b6` (r6719, "the transfer is run").  This receipt's finding was that the instrument
+    #    already existed and the CR-specific change was the background it RUNS ON, confined to $H(a)$.
+    #    *** That is what was done: P15 states the transfer run "on this cosmology's own background
+    #    with the perturbations on the leaf congruence the framework assigns them", both arms "on one
+    #    set of equations", and the change "an exact chain rule between two monotone conformal times,
+    #    so every spline and grid is untouched" -- the instrument, with the rate swapped. ***  Pinned
+    #    to the discharge and to the absence of the old clause.  Passed at r6502 (`b96e1a49`). **
+    check('[discharged r6719] the debt that named the other background is gone because the instrument '
+          'was run on it: "carried on this cosmology\'s own background with the perturbations on the '
+          'leaf congruence", "Both arms run on one set of equations", the change "an exact chain rule '
+          'between two monotone conformal times"',
+          'how the fluctuations gravitate on the' not in p15
+          and "carried on this cosmology's own background with the perturbations on the leaf "
+              'congruence the framework assigns them' in p15
+          and 'Both arms run on one set of equations, so no comparison between them is a difference '
+              'of machinery' in p15
+          and 'the change is an exact chain rule between two monotone conformal times, so every '
+              'spline and grid is untouched' in p15)
     check('and the corpus states what would differ: "the whole difference is carried by $H(a)$"',
           'the whole difference is carried by $H(a)$' in p15)
 
@@ -115,7 +137,9 @@ def main():
     if FAILED:
         print(f'  {len(FAILED)} check(s) FAILED')
         return 1
-    print("  VERDICT: ** both of r2658's \"missing\" pieces are BUILT and validated. **")
+    print("  VERDICT (r6931+70.1): ** DISCHARGED -- the instrument was run on this cosmology's own background")
+    print("     (r6719), the change an exact chain rule in the rate.  The r2659 finding as it stood: **")
+    print("  ** both of r2658's \"missing\" pieces are BUILT and validated. **")
     print('  ⛔ ⓵ ** sec:instrument is a Boltzmann transfer built for this programme: ** a full photon')
     print('     hierarchy with polarisation, second-order tight coupling, massless neutrinos, and ** a')
     print('     Peebles recombination history ** (the visibility function); with ** a line-of-sight source')

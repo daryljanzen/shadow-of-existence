@@ -68,9 +68,31 @@ D1 = os.path.join(ROOT, 'receipts', 'L558_the_second_duplication',
 REPAIR_RECEIPTS = [
     ('receipts/L551_register_integrity/R1_a_protected_row_was_corrupt_for_368_commits_and_the_'
      'corruption_satisfied_a_gate.py'),
-    ('receipts/L555_merge_duplication/M1_the_merge_duplicated_four_protected_rows'
+    ('receipts/L555_merge_duplication/M1_a_merge_duplicated_four_protected_rows'
      '_and_no_gate_saw_it.py'),
 ]
+# ** r6931+70.1: THE L555 PATH IS SPLIT INTO ITS NAME AT `BEFORE` AND ITS NAME NOW.  Class (c),
+#    STALE -- a file renamed, and the rename's reference rewrite missed half a split literal. **
+#    `f0ad9bbb` (r6647, "five first-person error confessions renamed") moved
+#    `M1_the_merge_of_my_own_revision_duplicated_four_protected_rows_and_no_gate_saw_it.py` to
+#    `M1_a_merge_duplicated_four_protected_rows_and_no_gate_saw_it.py` and rewrote this entry to
+#    `M1_the_merge_duplicated_four_protected_rows...` -- a name that exists at NO commit, because the
+#    literal is split across two lines and the replacement matched only its first half.  So ⓹ᶜ and
+#    ⓺ᶜ died on FileNotFoundError and every `git show BEFORE:` of it read nothing.
+#    ⇒ The finding is unchanged (M1 pinned the BEFORE half and read the AFTER half live, at three
+#      sites).  The tree AS IT WAS is read under the name the file HAD at BEFORE; the live tree under
+#      the name it has now.  One file, one R100 rename.
+THEN = {
+    REPAIR_RECEIPTS[1]:
+    ('receipts/L555_merge_duplication/M1_the_merge_of_my_own_revision_duplicated_four_protected_rows'
+     '_and_no_gate_saw_it.py'),
+}
+
+
+def then(rel):
+    return THEN.get(rel, rel)
+
+
 #: repaired in the SAME revision and for the OTHER reason -- named so the count is not padded
 SEED_ONLY = ('receipts/L556_registry_from_rows/R1_the_registry_was_checked_from_citations_inward_so_'
              'twenty_rows_were_read_by_nothing.py')
@@ -225,7 +247,8 @@ def main():
     #   What is measured is how many working-tree reads of the repaired FILE each receipt makes. **
     TARGET = {REPAIR_RECEIPTS[0]: 'PROTECTED_OPEN.md', REPAIR_RECEIPTS[1]: 'PROTECTED_OPEN.md'}
     for rel in REPAIR_RECEIPTS:
-        was = git('show', f'{BEFORE}:{rel}')
+        was = git('show', f'{BEFORE}:{then(rel)}')
+        assert was.strip(), f'nothing at {BEFORE}:{then(rel)}'
         pat = "open(os.path.join(ROOT, '" + TARGET[rel] + "')"
         print(f'    {os.path.basename(rel)[:58]}')
         print(f'          working-tree reads of {TARGET[rel]}: {was.count(pat)} at {BEFORE}, '
@@ -252,7 +275,8 @@ def main():
     print('  PART 4 -- ⛔ THE RULE WAS ALREADY IN THE FILE, APPLIED ONCE AND LEFT AT THREE SITES')
     print('  ' + '=' * 74)
     m1_rel = REPAIR_RECEIPTS[1]
-    m1_old = git('show', f'{BEFORE}:{m1_rel}')
+    m1_old = git('show', f'{BEFORE}:{then(m1_rel)}')
+    assert m1_old.strip(), f'nothing at {BEFORE}:{then(m1_rel)}'
     # ** the quotation is a COMMENT, so it is wrapped across lines behind `#` markers: normalise
     #   before matching, or the check tests the line width rather than the sentence. **
     m1_flat = re.sub(r'\s+', ' ', m1_old.replace('#', ' '))

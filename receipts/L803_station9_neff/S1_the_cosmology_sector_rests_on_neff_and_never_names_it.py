@@ -27,7 +27,10 @@ is absent while the number is fixed in code.
 "number of neutrino" / "relativistic species" / "3.046" / "3.044": ZERO. The single parameter every BBN
 and every CMB analysis organises around does not appear by name anywhere in the corpus. (For contrast the
 sector is otherwise deep: the lithium problem is named and worked, deuterium/helium/Yp/nucleosynthesis
-are everywhere, the Hubble tension is engaged -- so this is one missing name, not a missing sector.)
+are everywhere, the H0 discrepancy with the local distance ladder is engaged -- so this is one missing
+name, not a missing sector.)  [r6931+70.1: this parenthesis read "the Hubble tension is engaged" at
+r2541, when the corpus engaged it by claiming to RESOLVE it; the r6772 sweep withdrew that claim, and
+P15 sec:tensions now engages the discrepancy by saying the construction does NOT dissolve it.]
 
 ** THE ANSWER THAT IS NEVERTHELESS THERE. **  bbn_network.py commits to it in code, unnamed: "nu decoupling
 (g_*(T), g_{*s}(T), T_nu/T -> (4/11)^{1/3})" and "3 nu (7/8*2 each, at T_nu)" -- which IS the standard
@@ -166,10 +169,29 @@ def main():
           and 'makes no $N_{\\mathrm{eff}}$ prediction' in cosmo
           and 'adopted' in cosmo)
     # and the sector is otherwise deep -- so it is one missing name, not a missing sector
-    check('yet the sector is deep: "lithium problem", "deuterium", "nucleosynthesis" and "Hubble '
-          'tension" are all present -- so this is ONE MISSING NAME, not a missing sector',
+    # ** r6931+70.1: THE FOURTH TERM FROZE AN ERROR.  Class (a).  "Hubble tension" survived in the
+    #   corpus only inside the claim that the geometric rate RESOLVES / DISSOLVES it ("a redshift-free
+    #   expansion rate that resolves the Hubble tension", "the apparent Hubble tension resolve[s] as
+    #   consequences", "There is no second Hubble rate to reconcile").  The r6772 sweep withdrew that
+    #   claim -- P15 sec:tensions rewritten at `507d2e99` (r6772+66.1), the last statements cleared
+    #   through `b27e8293`..`0960c7aa` (r6772+66.24..66.30, P7/P6/P12/P17/P18/P16) -- and the phrase went
+    #   to ZERO corpus-wide at `0960c7aa`, which is why this was green at r6774 (`91751daa`, before
+    #   that merge) and red at r6921 (`5f9c2b2d`).  r6921 then kept sec:tensions consistent with its
+    #   own title.  ** The finding here is that the sector ENGAGES the field's questions, so the
+    #   engagement is re-pointed at the corrected one: P15 states in its own voice that the
+    #   construction does NOT dissolve the discrepancy with the local distance ladder, and names it
+    #   as the distance-ladder tension that z_acc is untouched by.  Pinning the withdrawn phrase would
+    #   have defended the dissolution against its own withdrawal. **
+    cr_cosmo = open(os.path.join(ROOT, 'corpus', 'CR_cosmology.tex'),
+                    encoding='utf-8', errors='replace').read()
+    check('yet the sector is deep: "lithium problem", "deuterium", "nucleosynthesis" are all present, '
+          'and the H0 discrepancy is engaged -- P15 sec:tensions: "this construction does not dissolve '
+          'the discrepancy with the local distance ladder", and z_acc is "untouched by the '
+          'distance-ladder tension" -- so this is ONE MISSING NAME, not a missing sector',
           corpus_count('lithium problem') > 0 and corpus_count('deuterium') > 0
-          and corpus_count('nucleosynthesis') > 0 and corpus_count('Hubble tension') > 0)
+          and corpus_count('nucleosynthesis') > 0
+          and 'does not dissolve the discrepancy with the local distance ladder' in cr_cosmo
+          and corpus_count('distance-ladder tension') > 0)
 
     # ---- the discipline: the corpus ANSWERS N_eff in code, unnamed ---------------------------------
     bbn = open(os.path.join(ROOT, 'computations', 'p16_bbn', 'bbn_network.py'),

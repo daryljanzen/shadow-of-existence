@@ -53,6 +53,15 @@ scale. **
 in the same paper, not joined to the question. **  sec:ledger answers what sec:frontiers asks, and
 sec:frontiers still reads "[Reach: stated as a target, not a result]".
 
+** r6931+70.1 -- BOTH OPEN ENDS ABOVE HAVE SINCE CLOSED IN THE CORPUS. **  The join: r3097 (45718b1f)
+put this receipt into p0 at the frontier list -- "The maximal-symmetry ledger is complete ... the
+constant-side analogue of the discrete-parity matter opening does not exist" \rcpt{U3_...}.  The datum
+side: L-150's X1 answered it as a structural negative, and r6683 (73eb61ef) rewrote p0's item to "The
+test has two sides, and each has been run", the datum side "a clock reading rather than a datum a
+handover transmits"; the "one-parameter accommodation" reading was retired in the r6772 cosmology
+rewrite.  The "never joined" and "stays ... a one-parameter accommodation" lines are true as of r2422
+and are no longer asserted of the current corpus.
+
 Written r2422.  Stated for reversal.
 """
 import os, re, sys
@@ -132,15 +141,31 @@ def main():
     # ** ⛭⛭ RE-PINNED r3962: c54.179's replacement went in UNDER a "[Reach: ...]" status stamp, and
     # ** r3787 removed the stamps -- capitalising the leading word and breaking a pin that quoted the
     # ** stamped form.  The fragment below is the case-free part of the same sentence. **
+    # ** r6931+70.1: CLASS (b) -- DISCHARGED.  c54.179's "item has two sides and they now stand
+    #   differently, so it is split rather than carried whole" (constant side a result, datum side
+    #   OPEN) stood until 73eb61ef (r6683), which rewrote it to "The test has two sides, and each has
+    #   been run" -- the datum side answered by L150/X1 as a clock reading.  The c54.179 sentence is
+    #   asserted at the commit before r6683; the live check pins what discharged the open side, and
+    #   the join of THIS receipt to the item (r3097, 45718b1f), which the verdict used to deny.
+    _p0_pre6683 = _at('73eb61ef^', 'corpus/geometric_core_paper.tex')
     check('⛭ AND c54.179 REPLACED IT: "item has two sides and they now stand differently, so it '
-          'is split rather than carried whole" -- the constant side a result, the datum side open',
+          'is split rather than carried whole" (until r6683) -- and both sides are now RUN, the '
+          'datum side by L150/X1, the constant side joined to this receipt in p0',
           'item has two sides and they now stand differently, so it is split rather than carried '
-          'whole' in p0)
+          'whole' in _p0_pre6683
+          and 'The test has two sides, and each has been run' in p0
+          and 'X1_the_ratio_is_a_clock_reading_not_a_carried_datum' in p0
+          and 'U3_the_residue_is_one_and_it_is_already_counted' in p0)
     _p0_at_179 = _at('2af0b0b', 'corpus/geometric_core_paper.tex')
-    check('⇒ and r3787 unstamped it: the paper asserts it directly now rather than under "[Reach: ]"',
-          'The item has two sides' in p0
+    # ** r6931+70.1: CLASS (c) -- the unstamping is unchanged; the sentence it capitalised was
+    #   rewritten at r6683 (above), so the capitalised form is asserted where it stood and the
+    #   absence of any stamp on the live text.
+    check('⇒ and r3787 unstamped it: the paper asserted it directly rather than under "[Reach: ]" '
+          '(until r6683), and carries no stamp now',
+          'The item has two sides' in _p0_pre6683
           and 'Reach: the item has two sides' in _p0_at_179
-          and 'Reach: the item has two sides' not in p0)
+          and 'Reach: the item has two sides' not in p0
+          and '[Reach:' not in p0)
     check('L-201\'s sharp target -- "any constant maximal symmetry does not reach" -- has no room:'
           ' the quotient is 1-dimensional and IS the scale',
           (dim_o51 + 1) - dim_o51 == 1)
@@ -149,8 +174,8 @@ def main():
     if FAILED:
         print(f'  {len(FAILED)} check(s) FAILED')
         return 1
-    print('  VERDICT: ** the residue is already counted, in p0\'s own ledger section, and it was never')
-    print('     joined to the frontier item that asks for it. **')
+    print('  VERDICT: ** the residue is already counted, in p0\'s own ledger section -- unjoined to the')
+    print('     frontier item at r2422, and joined to it by r3097 (p0 cites this receipt there). **')
     print('     BUDGET (residue): 1 dimensionful, 0 dimensionless   [dim O(5,1) x R^+ - dim O(5,1)]')
     print('     SPEND    (U1/U2): 1 dimensionful (Lambda), 0 dimensionless')
     print('  ⇒ The two sides of the CONSTANT-side ledger match exactly, and the match has a classical')
@@ -161,8 +186,8 @@ def main():
     print('     disconnected component; the constant ledger has no analogous leftover. **')
     print('  ⚠ NOT settled: p0\'s item also asks that rho_r/rho_m be the sole tunable datum.  That is a')
     print('    MATTER INITIAL CONDITION, not a constant, and it is not in the geometric residue.')
-    print('    It stays where the corpus leaves it -- a one-parameter accommodation, L-150 owing the')
-    print('    derivation.')
+    print('    (r6931+70.1: L-150/X1 has since answered it -- a clock reading, not a carried datum --')
+    print('    and p0\'s item now says both sides have been run.)')
     print()
     return 0
 

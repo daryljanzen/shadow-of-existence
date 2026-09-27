@@ -47,6 +47,12 @@ that ADDED this receipt is the tree its absence was measured against — **a git
 guess**. c54.220's rule, r2776.)*
 
 Written r2709.  Stated for reversal.
+
+** r6931+70.1 (PO-59) -- ⓵ FILLED, ⓶-⓷'S PREMISE CORRECTED. **  *** The information criterion is now in the
+corpus, and P15 applies it -- at EQUAL count: the refit frees the same four parameters in each arm (r6799),
+so "no information criterion separates them" (r6811), and the $k=1$ against $k=6$ this receipt's
+$\\Delta$AIC $=10$ / $\\Delta$BIC $=26.9$ rest on is the r2709 premise, corrected when the single
+CMB-calibrated $\\Omega_m$ left P15 (r6625) and the fitted onset was retired (r6772+66.3). ***
 """
 import glob
 import os
@@ -118,14 +124,34 @@ def main():
           'before any $\\chi^2$ is scored',
           abs(dAIC - 10.0) < 1e-9 and abs(dBIC - 26.9) < 0.1)
 
-    check('⓷ with CR\'s single parameter stated by P15: "the single CMB-calibrated $\\Omega_{m}"',
-          'single CMB-calibrated' in re.sub(r'\s+', ' ', papers))
+    # ** r6931+70.1 (PO-59): CLASS (a), THE PIN FROZE THE PREMISE THE CORPUS CORRECTED.  "the single
+    #    CMB-calibrated $\\Omega_m$" left P15 at `174202ab` (r6625, "P15's A_s and Omega_m ... contradictions
+    #    between a section and its own corollary"; $\\Omega_m$ is now "fitted from the distance data here
+    #    rather than taken from the microwave background") and is in no paper at head.  *** And the $k=1$
+    #    it stood for is gone with it: the refit P15 runs frees the SAME four parameters in each arm
+    #    (`2007dc1e`, r6799), and `8a627481` (r6811) writes the information-criterion statement this
+    #    receipt found missing -- "The two arms fit the same four parameters, so no information criterion
+    #    separates them---penalties of about two per fitted parameter".  So the criterion is in the
+    #    corpus (this receipt's finding, filled) and the count asymmetry it was applied to is not (its
+    #    premise, corrected): at equal $k$ the penalty difference is zero. ***  The ΔAIC=10 / ΔBIC=26.9
+    #    arithmetic above is kept as the r2709 premise's arithmetic.  Passed at r6502 (`b96e1a49`). **
+    p15 = re.sub(r'\s+', ' ', body(os.path.join(ROOT, 'corpus', 'CR_cosmology.tex')))
+    check('⓷ [corrected r6625/r6811] CR\'s "single CMB-calibrated $\\Omega_{m}$" is in no paper, and P15 '
+          'applies the criterion at EQUAL count: "The two arms fit the same four parameters, so no '
+          'information criterion separates them---penalties of about two per fitted parameter"',
+          'single CMB-calibrated' not in re.sub(r'\s+', ' ', papers)
+          and 'It is fitted from the distance data here rather than taken from the microwave background' in p15
+          and 'The two arms fit the same four parameters, so no information criterion separates them' in p15
+          and 'penalties of about two per fitted parameter' in p15)
 
     print()
     if FAILED:
         print(f'  {len(FAILED)} check(s) FAILED')
         return 1
-    print('  VERDICT: ** half ① is an information-criterion comparison, and the penalty is computable')
+    print('  VERDICT (r6931+70.1): ** the criterion is in the corpus and P15 applies it at EQUAL count (same')
+    print('     four parameters per arm, r6799/r6811) -- so the k=1-vs-6 penalty below is the r2709 premise,')
+    print('     corrected.  The r2709 finding as it stood: **')
+    print('  ** half ① is an information-criterion comparison, and the penalty is computable')
     print('  now. **')
     print('  ⛔ ⓵ ** The corpus NAMES the target and never uses the tool: ** P15 lists "the')
     print('     likelihood-level ** model selection **" among its reaches, while ** AIC, BIC, Akaike,')

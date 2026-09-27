@@ -46,6 +46,11 @@ what is established is that they measure DIFFERENT things and that this line con
 single end-to-end run is done ** -- it is not, and it is the whole of what remains.
 
 Written r2700.  Stated for reversal.
+
+** r6931+70.1 (PO-59) note. **  The one failing pin was stale wording (the 0.7% sentence lost its "onset
+redshift" qualifier at r6772+66.11).  *** And ⓸'s "the single end-to-end run is not done" is the r2700
+state: the end-to-end branch-point-to-recombination transfer is run (r6719, `440623b6`). ***  The 9.4% /
+8.2% figures are the fitted-onset paper's and are read at the commits where they stood.
 """
 import os
 import re
@@ -100,10 +105,22 @@ def main():
           'a diffusion length' in p15 and '10.8' in p15)
     check('the ANGLE: "The observable, in which the common distance cancels, is then '
           '$\\theta_{D}/\\theta_{*}$ larger by $9.4\\%$"',
-          'in which the common distance cancels' in p15 and '9.4' in _p15_at(_BEFORE_R2755) and '8.2' in p15)
-    check('and the sound horizon moves rather than being pinned: "within $0.7\\%$ of each other at the '
-          'onset redshift the inherited datum fixes"',
-          'within $0.7\\%$ of each other at the onset redshift' in p15)
+          'in which the common distance cancels' in p15 and '9.4' in _p15_at(_BEFORE_R2755)
+          # ** r6931+70.1: `'8.2' in p15` was VACUOUS -- the 8.2% left P15 at `a99b7a86`
+          #    (r6772+66.6) and the conjunct held on an unrelated "the control by $8.2\\%$".  Read
+          #    where it stood instead (c54.220's rule). **
+          and 'That figure and the $8.2\\%$ of' in _p15_at('a99b7a86^'))
+    # ** r6931+70.1 (PO-59): CLASS (c), STALE.  `de97f96e` (r6772+66.11, "the last of the fitted-onset
+    #    reading cleared from P15's prose") dropped the qualifier "at the onset redshift the inherited
+    #    datum fixes" from this sentence: it now reads "Doing so returns $r_{s}=146.4$~Mpc against
+    #    $145.4$ on the radiation-included rate---within $0.7\\%$ of each other, the exact crossing
+    #    sitting a little lower".  *** Same two lengths, same 0.7%, same sentence -- the sound horizon
+    #    still MOVES rather than being pinned, which is all this check carries; only the retired
+    #    onset's name left it. ***  Re-pinned to the numbers and the comparison together. **
+    check('and the sound horizon moves rather than being pinned: "returns $r_{s}=146.4$~Mpc against '
+          '$145.4$ on the radiation-included rate---within $0.7\\%$ of each other"',
+          'Doing so returns $r_{s}=146.4$~Mpc against $145.4$ on the radiation-included rate---within '
+          '$0.7\\%$ of each other' in p15)
 
     # ⓶ C10's own r is the angle ratio
     m = re.search(r'r\s*=\s*(1\.09\d+)', c10) or re.search(r'1\.0926', c10)

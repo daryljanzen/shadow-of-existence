@@ -48,6 +48,18 @@ receipt does not run it.  ** Not that `sec:envelope` is the whole of step ① **
 whether it constitutes the full specification a transfer needs is not established here.  ** Not that the
 row should close **: ② is genuinely not run, and the item stands.
 
+** ⛭ r6931+70.1 -- DISCHARGED: STEP ② HAS BEEN RUN, AND THE PAPER NO LONGER STATES THE DEBT. **  The
+register struck `PO-12` at r2702 ("the bespoke transfer is BUILT and its numbers verified"), and
+r6719 (440623b6) brought P15 to it: the two-step debt sentence, "the piece that sets the high-ell
+driving envelope", "they tie radiation's gravity to its presence" and "the tilt-irreducible residual
+the part the transfer would isolate" all went, replaced by "The end-to-end branch-point-to-recombination
+transfer is run (sec:refit-bound)" -- a two-arm line-of-sight Boltzmann integral "carried on this
+cosmology's own background with the perturbations on the leaf congruence the framework assigns them",
+validated on its control -- and the residual it was to isolate is now LOCATED: "a Gaussian residual in
+ell that no tilt removes".  ** This receipt's finding -- that ① existed and only ② was owed -- is what
+that run confirms; its "half built" is the state at r2623, not now.  The checks below are re-pointed
+at what discharged each part. **
+
 Written r2623.  Stated for reversal.
 """
 import os
@@ -81,18 +93,33 @@ def main():
     #   STRING from `radiation-free` to `geometric stacking`, and P15 was swept to a different
     #   successor.  The paper says "specifying how the fluctuations gravitate on the GEOMETRICALLY
     #   FIXED background".  Pinned to the fragment that carries the claim, not the whole clause.
-    check('⓵ the paper states the debt as TWO steps: "it requires first specifying how the fluctuations '
-          'gravitate on the geometric stacking background ... and then a bespoke transfer against that '
-          'specification"',
-          'it requires first \\emph{specifying how the fluctuations gravitate on the' in p15
-          and 'fixed background}' in p15
-          and 'and then a bespoke transfer against that specification' in p15)
-    check('and names step ① as what sets the envelope: "the piece that sets the high-$\\ell$ driving '
-          'envelope"',
-          'the piece that sets the high-$\\ell$ driving envelope' in p15)
-    check('and why no standard code supplies it: "they tie radiation\'s gravity to its presence and so '
-          'cannot represent the content-not-rate split"',
-          "they tie radiation's gravity to its presence" in p15)
+    # ** r6931+70.1: CLASS (b) -- DISCHARGED, FOR THE THREE CHECKS BELOW.  They pinned P15's
+    #   statement of the debt: "it requires first specifying how the fluctuations gravitate on the
+    #   geometrically fixed background -- the piece that sets the high-ell driving envelope, and
+    #   which the standard Boltzmann codes cannot supply because they tie radiation's gravity to its
+    #   presence ... -- and then a bespoke transfer against that specification".  440623b6 (r6719,
+    #   "the transfer is run") removed the whole sentence because the debt was PAID (PO-12 struck
+    #   r2702).  Re-pointing at the reworded prose would not be possible and would not be honest; so
+    #   each check is re-pointed at what discharged its part:
+    #     ⓵ the two steps  -> P15 states the end-to-end transfer RUN, and "three are run" of its four
+    #                         named debts;
+    #     ① the spec       -> the run carries "the perturbations on the leaf congruence the framework
+    #                         assigns them", on "this cosmology's own background" -- step ① in use;
+    #     no standard code -> the bespoke instrument is VALIDATED against a standard code on its
+    #                         control (C59_the_control_reproduces_camb_...), which is what "a genuine
+    #                         build, not a plug-in" had to come to.
+    check('⓵ the two-step debt is PAID: "The end-to-end branch-point-to-recombination transfer is run", '
+          'three of P15\'s four named debts run',
+          'The end-to-end branch-point-to-recombination transfer is run} (\\S\\ref{sec:refit-bound})' in p15
+          and 'Of the four, three are run and one is a frontier' in p15)
+    check('and step ① is what it runs on: "carried on this cosmology\'s own background with the '
+          'perturbations on the leaf congruence the framework assigns them"',
+          "carried on this cosmology's own background with the perturbations on the leaf congruence "
+          'the framework assigns them' in p15)
+    check('and the build no standard code could be plugged in for is VALIDATED against one on its '
+          'control (C59_the_control_reproduces_camb_and_the_height_defect_was_k_truncation)',
+          'validated on its control to' in p15
+          and 'C59_the_control_reproduces_camb_and_the_height_defect_was_k_truncation' in p15)
 
     # ⓶ step ① is built
     check('⛭⛭ ⓶ and STEP ① IS BUILT: "That driving is computed below (\\S\\ref{sec:envelope}), and the '
@@ -113,9 +140,14 @@ def main():
     check('⓸ and the heights do NOT need it: "The peak heights are then carried by a structural argument '
           'rather than a bespoke transfer."',
           'carried by a structural argument rather than a bespoke transfer' in p15)
-    check('so what the transfer would isolate is the residual: "with the tilt-irreducible residual the '
-          'part the transfer would isolate"',
-          'with the tilt-irreducible residual the part the transfer would isolate' in p15)
+    # ** r6931+70.1: CLASS (b) -- DISCHARGED.  "with the tilt-irreducible residual the part the
+    #   transfer would isolate" went at 440623b6 (r6719) because the transfer isolated it: P15 now
+    #   says the joint fit "locates [it] as a Gaussian residual in ell that no tilt removes".  Same
+    #   object (the tilt-irreducible part of the diffusion-scale signature), now found rather than
+    #   owed; the check pins the finding.
+    check('so what the transfer was to isolate -- the tilt-irreducible residual -- it has isolated: '
+          '"a Gaussian residual in $\\ell$ that no tilt removes"',
+          'located by the joint fit as a Gaussian residual in $\\ell$ that no tilt removes' in p15)
 
     # the row
     check("⌗ and the PO-12 row carries the debt but not the split", 'debt' in row.lower())
@@ -124,7 +156,10 @@ def main():
     if FAILED:
         print(f'  {len(FAILED)} check(s) FAILED')
         return 1
-    print('  VERDICT: ** PO-12 is HALF BUILT, and the paper says so two sections earlier. **')
+    print('  VERDICT: ** PO-12 was HALF BUILT at r2623, and the paper said so two sections earlier. **')
+    print('  (r6931+70.1: DISCHARGED since -- PO-12 struck r2702, and P15 states the end-to-end transfer')
+    print('   RUN on the leaf congruence, the tilt-irreducible residual located as a Gaussian no tilt')
+    print('   removes.)')
     print('  ⓵ ** The debt is TWO steps: ** ① specify how fluctuations gravitate on the geometric stacking')
     print('     background -- the piece that sets the high-ℓ driving envelope, which no standard')
     print('     Boltzmann code can supply -- and ② a bespoke transfer against that specification.')

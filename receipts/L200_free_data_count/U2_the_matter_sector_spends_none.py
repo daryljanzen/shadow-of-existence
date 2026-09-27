@@ -16,6 +16,11 @@ that each "no" has a DIFFERENT reason, and the third is the one that matters:
       in three families, a number the Standard Model takes as an input---is, within CR, ** NO FREE
       COUNT ** but the three 120-degree hinges of one substrate read three ways: three is the
       maximally-symmetric matter construction's own index, ** not a datum to be fit **."
+      (** r6931+70.1 **: P14 now reads "no free count but the fold of the one polynomial $f$: the three
+      walls count it and the comoving turnaround's deck carries it ... both being $D-1$ for the same
+      reason, so three is the maximally-symmetric matter construction's own index, not a datum to be
+      fit" -- r6719 corrected which object carries the generations (the turnaround's deck Z_3, the
+      walls' S_3 being the within-state seats), not whether three is an index.)
       ⇒ A count that is an index is not a spent parameter.  It is the SAME parameter (Lambda, through
         alpha) read structurally.
 
@@ -78,8 +83,20 @@ def main():
     p0 = flat(os.path.join(ROOT, 'corpus', 'geometric_core_paper.tex'))
 
     # (1) the count is an index, not a datum
-    check('(1) the generation count is "no free count" but the substrate\'s own index',
-          'no free count but the three $120^\\circ$ hinges of one substrate read three ways' in p14)
+    # ** r6931+70.1: CLASS (a) -- THE PIN FROZE THE CARRIER THE CORPUS CORRECTED.  It pinned "no
+    #   free count but the three $120^\circ$ hinges of one substrate read three ways".  440623b6
+    #   (r6719, the cowork read's list: "the walls are seats") rescoped P14: the generations sit on
+    #   the comoving turnaround's deck Z_3, the walls' S_3 is the within-state seat index, and the
+    #   sentence now reads "no free count but the fold of the one polynomial $f$: the three walls
+    #   count it and the comoving turnaround's deck carries it ... both being $D-1$ for the same
+    #   reason".  ** What this check is FOR is unchanged -- three is an INDEX of the construction,
+    #   not a spent parameter -- and the corrected sentence states exactly that, "the
+    #   maximally-symmetric matter construction's own index". **  Pinned to the corrected carrier.
+    check('(1) the generation count is "no free count" but the substrate\'s own index -- "the fold of '
+          'the one polynomial f", three walls counting it and the turnaround\'s deck carrying it',
+          'no free count but the fold of the one polynomial $f$' in p14
+          and "the comoving turnaround's deck carries it" in p14
+          and "so three is the maximally-symmetric matter construction's own index" in p14)
     check('(1) and explicitly "not a datum to be fit"', 'not a datum to be fit' in p14)
 
     # (2) the hypercharges are not fitted

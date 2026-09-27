@@ -277,6 +277,10 @@ _PARITY_BY_NODE = {'54': 0, '60': 0,          # EVEN half
                                             # is the c54.182/c54.184 duplicate arriving from a
                                             # third direction.  Band L-6600..L-6649 by the same
                                             # split; the chat seat holds L-6650..L-6699.
+                   '70': None,                # third CODE seat, r6931+70.1, routed by 66's
+                                            # FOR_70.md at r6929.  Suffixed form only, never a
+                                            # bare rNNNN, so it holds NO half -- the same
+                                            # answer as cc66 and for the same reason.
                    'ci': None}                # the runner is not a line and holds no half
 _NODE = _os.environ.get('NODE')
 if _NODE is None:

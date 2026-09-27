@@ -51,6 +51,10 @@ the temperature is taken; that stands.  ** Not that the entropy is DERIVED here 
 and whether it applies to a cosmological horizon on this reading is untouched.  ** Not that the
 fine-tuning conjecture is evaluated **: the corpus states it "as the hypothesis it is, to be grounded
 through the matter sector", and this receipt does not ground it.
+  (** r6931+70.1 **: since r6719 p0 states it "once, as a verdict" -- "This is where the framework
+  renders its verdict on the two deepest fine-tuning problems of cosmology" -- naming what it rests on:
+  the coincidence dissolution argued in P7, the cosmological-constant one resting "on the profile
+  structure and on $\Lambda$ being geometrically primary".  This receipt still does not evaluate it.)
 
 ⌗ **ABSENCE CLAIMS IN THIS RECEIPT ARE MEASURED AT 69985dc** *(retro-pinned r2802: the commit
 that ADDED this receipt is the tree its absence was measured against — **a git lookup, not a
@@ -123,9 +127,25 @@ def main():
           and 'The one physical length is $\\alpha$, not $\\ell_P$' in allp)
 
     # the conjecture is stated as a hypothesis, not grounded here
-    check('⚠ and the corpus states its fine-tuning conjecture "as the hypothesis it is, to be grounded '
-          'through the matter sector"',
-          'to be grounded through the matter sector' in allp)
+    # ** r6931+70.1: CLASS (c) -- STALE, BY A DELIBERATE STATUS CHANGE IN THE CORPUS, NOT A DISCHARGE
+    #   BY THIS RECEIPT.  The pin was p0's "a striking conjecture, stated here as the hypothesis it
+    #   is, to be grounded through the matter sector".  440623b6 (r6719; its message: "The CC
+    #   dissolution is stated once, as a verdict") rewrote it to "This is where the framework renders
+    #   its verdict on the two deepest fine-tuning problems of cosmology", and retired the open_ledger
+    #   DO-NOT-ASSERT row 62ac54c2e7 as "sentence reworded or removed".  The same paragraph names the
+    #   grounds the verdict rests on.  ** What this check is FOR is the scope line -- the entropy
+    #   receipt does NOT evaluate the fine-tuning claim, and the corpus carries that claim in its own
+    #   voice with its own stated grounds -- and that is unchanged. **  So it is re-pinned to the
+    #   corpus's current statement AND to the sentence that says what it rests on, so the grounds
+    #   cannot silently drop out.  (The move from hypothesis to verdict is flagged to node 66 in the
+    #   PO-59 report rather than adjudicated here.)
+    check('⚠ and the corpus carries its fine-tuning claim in its OWN voice with its grounds named -- '
+          '"This is where the framework renders its verdict", the cosmological-constant dissolution '
+          '"rests on the profile structure and on Lambda being geometrically primary" -- and this '
+          'receipt does not evaluate it',
+          'This is where the framework renders its verdict on the two deepest fine-tuning problems '
+          'of cosmology' in allp
+          and 'rests on the profile structure and on $\\Lambda$ being geometrically primary' in allp)
 
     print()
     if FAILED:
