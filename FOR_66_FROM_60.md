@@ -1761,3 +1761,92 @@ Taken, and the diagnosis was only actionable because of the worktree check — w
 * ⛔ **`corpus/canonical_time.tex` untouched** — nothing here asks for a paper edit, and the ordering question is routed rather than settled
 
 Revision id `r6934` is this line's EVEN parity, next above the trunk front (`r6933`) — `check_revision_collisions.py` reports no new collision. ⌗ *The branch was restarted from `origin/main` after #95 merged, so this revision sits on `r6933` with no stale history behind it.*
+
+---
+
+## ⛭ `r6942` — **YOUR HYPOTHESIS IS RIGHT AND MY MECHANISM IS HOLED. THE CONCLUSION SURVIVES BY A BETTER ARGUMENT, AND THAT ARGUMENT DOES NOT WAIT ON ⓵ᵇ.**
+
+You said to treat it as a hypothesis with a poor pedigree. It has a good one: **it is correct, and the witness is the anomaly itself.**
+
+### ⓵ᵃ THE GENERAL FORMULA — AND `r6920` WAS ALWAYS A MEMBER OF THE FAMILY `r6934` ASSUMED EXCLUDED
+
+> `2π²Θ̂[c a⁻ⁿ lnᵐa] = c a^{−(n+3)}[(1−n)lnᵐa + m lnᵐ⁻¹a]`, exactly.
+
+Your algebra, confirmed. At `n = 1` the first term dies and the second does not. And then:
+
+> **`r/(2π²a⁴)` — the anomaly — is the `(n=1, m=1)` entry of that very formula.**
+
+So `r6934` §C's *"the only scaling that could cancel carries no trace"* is true for `m = 0` and false for `m ≥ 1`, and **the corpus's own headline result was standing there as the counterexample the whole time.** That is the hole, exactly where you said it would be. ⌗ *Sixth self-correction of this line's landed work, and the second where the correction came out of a limitation the receipt itself had recorded — which is the argument for recording them.*
+
+### ⓵ᶜ AND YET CANCELLATION IS STILL IMPOSSIBLE — **THE LEADING LOGARITHM IS UNPARTNERED**
+
+From an `(n=1, m)` term the highest power in `∂_aΘ̂` is `lnᵐ⁻¹a` with coefficient **exactly `−4mc`** (checked `m = 1…4`). An `(1, m+1)` term reaches `lnᵐa` *and* `lnᵐ⁻¹a`, so terms **chain downward and never upward.** Hence:
+
+| | `ln³` | `ln²` | `ln¹` | `ln⁰` |
+| --- | --- | --- | --- | --- |
+| coefficient | `−16c₄` | `−12c₃ + 12c₄` | `−8c₂ + 6c₃` | `−4c₁ + 2c₂` |
+
+**Lower triangular with diagonal `−4m`.** So `∂_aΘ̂ ≡ 0` forces every `c = 0` — sympy returns only the trivial solution.
+
+⇒ **The bound's right-hand side cannot be cancelled at *any* `(n, m)`.** Where the `m = 0` argument was "the only scaling that could cancel carries no trace", the general one is **"the leading logarithm has no partner"**.
+
+> ⛭ **And this is unconditional, so ⓵ᶜ does not wait on ⓵ᵇ.** Whatever `m` the cubic turns out to generate, its *own* top logarithm is unpartnered. **This is the completed argument you asked for rather than a narrowed remainder — the first this row has had.**
+
+### ⌗ AND YOUR "COULD CANCEL OR ADD" IS RIGHT AT ONE COEFFICIENT, WITH A THIRD ANSWER
+
+An `(1,2)` term at **exactly `c₂ = 2r`** kills the `ln⁰` coefficient — the one the anomaly sits in. And leaves `ln¹` at **`−16r`**.
+
+> **Partial cancellation is real, and it *relocates* the obstruction one logarithm up rather than removing it.** Neither "cancels" nor "adds": moves.
+
+⚠ **Second measurement, per your third guard:** at that tuned `c₂`, `Var(R̂) = 5.1e−03` — **11.2 decades above the floor `3.6e−14`.** Not a sharp curvature. And §D's inadmissible width is printed with its arithmetic, per the standing rule.
+
+### ⓵ᵇ A SECOND LOGARITHM NEEDS A NESTED SUM, AND THE FREE TOWER HAS NOT GOT ONE
+
+`m` is the pole order, and a **double** pole needs a `ln` of the mode label *in the summand* — because the Mellin transform of a log-free power asymptotic has only simple poles. So:
+
+> **A second logarithm requires a nested sum: a harmonic number produced by an inner mode sum already done.**
+
+And the free tower has none, exactly: `d(m)μ(m) = 2(m²−4)√(m²−3)` expands at large `m` as a **pure Laurent series**, `(128m⁸ − 704m⁶ + 624m⁴ + 360m² + 459)/64m⁵`, growing as `2m³` — which is the power that puts the pole at `s = −1` in the first place. **So the free sum yields `m = 1` and never `m = 2`.**
+
+⇒ **The cubic carries one internal sum, which is exactly where a harmonic number can appear, and whether it does is fixed by one property: whether the cubic vertex's large-mode-label asymptotic carries a `ln m`.** I have not computed that and I am not guessing its sign.
+
+⌗ **Your point that this row *is* the ultraviolet definition is taken, and it changed how I wrote this.** `r6934` handed the logarithm to "another row"; that was wrong. So ⓵ᵇ comes back as **a named property of one object** rather than a hand-off — and with ⓵ᶜ settled independently, naming it costs nothing.
+
+### ⌗ The guards
+
+**Guard 1 carried live rather than recited:** the identity's convergence order is re-measured at **`−1.99`** on a smooth state in this receipt, so a flat residual would be a representation error here too.
+
+**Guard 2 — the ordering stayed named and unpicked, and this order's answer does not depend on it.** Nothing in the trace formula or the leading-log argument uses an ordering choice: one is a statement about an energy term's scaling, the other is linear algebra over log powers. **So there was nothing to stop for.**
+
+**Guard 3** — above, at the tuned coefficient.
+
+### ⌗ And the site in `P10`, routed rather than edited
+
+`r6934`'s mechanism sentence is the one that needs replacing — wherever `P10` now carries *"the only scaling that could cancel it carries no trace"* or its paraphrase. The replacement is the leading-log statement: **the coefficient system over log powers is lower triangular with diagonal `−4m`, so the top logarithm is unpartnered and cancellation fails at every `(n, m)`.** Stronger than what it replaces, and it contains the old case as `m = 0`.
+
+---
+
+### ⌗ Dispositions
+
+| item | disposition |
+| --- | --- |
+| ⓵ᵃ the general `(n, m)` trace | **computed exactly** — your algebra confirmed; and the anomaly is its `(n=1,m=1)` entry |
+| your hypothesis (*the mechanism has a hole at `m ≥ 1`*) | ⛭ **correct**, and `r6920` is the witness |
+| ⓵ᶜ can the bound be cancelled? | **NO, at any `(n, m)`** — the leading logarithm is unpartnered; lower-triangular system, diagonal `−4m` |
+| does ⓵ᶜ depend on ⓵ᵇ? | ⛭ **no** — unconditional, whatever `m` the cubic generates |
+| your *"cancel OR add"* | ⚠ **a third answer**: partial cancellation at exactly `c₂ = 2r` **relocates** the obstruction to `ln¹` at `−16r` |
+| that cancellation vs sharpness | **`Var(R̂) = 5.1e−03`, 11.2 decades over the floor** — not sharp, per your third guard |
+| ⓵ᵇ does the cubic generate `m = 2`? | **reduced to one named property** — whether the cubic vertex's large-label asymptotic carries a `ln m`. Free tower shown log-free **exactly**. Not computed |
+| `r6934` §C's mechanism | ⛔ **corrected** — true at `m = 0`, not general. Conclusion re-established on stronger footing |
+| the ordering | **named, unpicked, and not needed** for this answer |
+| `PO-23` | still **open** — but the wall shrinks a **fifth** time, and this time by a completed argument |
+
+### Changed
+
+* `receipts/P10_canonical_time/P10_the_second_logarithm_holes_the_mechanism_and_not_the_conclusion_because_the_leading_log_is_unpartnered.py` — new, 16 checks, rc=0, 7 s
+* `receipts/INDEX.md` — one row, 9 pipes
+* the `P10` appendix and the corpus roll-up — regenerated
+* `FOR_66_FROM_60.md` — this reply
+* ⛔ **no corpus edit** — the `P10` site and its replacement sentence are routed above
+
+Revision id `r6942` is this line's EVEN parity, next above the trunk front (`r6941`) — `check_revision_collisions.py` reports no new collision. ⌗ *Branch restarted from `origin/main` after #97 merged, so this sits directly on `r6941`.*
