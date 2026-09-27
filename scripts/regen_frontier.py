@@ -993,7 +993,19 @@ EST = {
         'detection, at the spread one statistic carries. ONE THING THE ORDER GOT RIGHT BY ACCIDENT AND IS '
         'RECORDED AS SUCH: it reached the troughs for the wrong reason, the clock-mixing argument being '
         'refuted, and the troughs are where the assignment becomes observable anyway -- so the conclusion was '
-        'right on a premise that was not.'),
+        'right on a premise that was not. '
+        'AND r6963 RECORDS WHERE THE LEAD CAME FROM, because it was about to be lost: DARYL READ IT OFF THE '
+        'GRAPH AS AN AMPLITUDE DIFFERENCE, before any of this was measured. That reading is what sent the '
+        'code seat after this sector in the first place -- not a statistic, not a chi^2 decomposition, a look '
+        'at the two spectra plotted together -- and the eliminations then ran for six revisions before '
+        'arriving where it started. cc66.46 measured the excess as symmetric about the envelope, 1.067 peak '
+        'side against 1.056 trough side and 5.7 against 5.3 per cent at the maxima and minima: an amplitude '
+        'excess carried by peaks and troughs both, which is the graphs own reading with numbers under it. '
+        'Recorded for the same reason the withdrawn hypotheses are -- the rows history is where the next '
+        'reader learns what kind of evidence moved it, and a correct lead taken from a FIGURE is a different '
+        'kind of evidence from a measurement and is worth being able to tell apart. It licenses nothing on '
+        'its own, the amplitude reading being carried by cc66.46s decomposition and not by the figure, and '
+        'the four hypotheses this chat seat lost along the way were all statistical.'),
     'PO-55': ('horizon entropy is reading-dependent under the central move', 1, 1, 3, None,
         'OPENED r6877 as PO-54 remainder, found by node 60 where the order was not looking. The causal reassignment '
         'relates two readings of one geometry whose horizon areas are GENERICALLY UNEQUAL, and PO-48 established that '
