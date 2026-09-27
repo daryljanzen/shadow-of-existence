@@ -3,8 +3,11 @@
 ⛭⛭⛭ r6931+70.1 (node 70): PO-59 WORKED ONCE THROUGH --- 78 OF THE 83 RUN GREEN, AND THE 5 LEFT
 ARE CORRECTLY RED AND NOT THIS LINE'S TO MOVE.  THE HEAD STAYS 0.
 Listed set: 83 (81 debt + 2 declared environment).  At r6931+70.1: 78 exit 0, 5 exit 1, 0 over
-timeout.  Every one of the 83 was run from its own directory with NODE=ci.  SUITE: see the
-RUN_RESULT.txt stamped with this revision's digest.
+timeout.  Every one of the 83 was run from its own directory with NODE=ci.  WHOLE SUITE, banked in
+RUN_RESULT.txt: 849 pass, 5 fail, 1 over timeout, 5481s, tree cdf21a8206487495, covering all 855
+registered.  The 5 are exactly the five below; the one over timeout is
+P15_the_low_multipole_floor_moves..., the same one r6921 had.  `check_receipts_run` reads it
+correctly and is red on "the pin debt ROSE from 0 to 5", which is the ratchet speaking: 81 -> 5.
 
   ⌗ ** HOW THEY LEFT THE LIST, AND NONE BY RECLASSIFICATION. **
     * 4 by RUNNING, no edit: the P16 BBN four (bbn_network, window, theory_error, validate_bbn)
