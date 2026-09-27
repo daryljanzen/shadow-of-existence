@@ -35,7 +35,7 @@ corpus's own two scale-free roots and a third regime:
       x >> 2 rho :  a''/a -> 2/x^2      the p = +2 MATTER root, scale-free (r6812's second root of p(p-1)=2)
       x << 2 rho :  a''/a -> 1/(rho x)  the 1/eta form the order names -- NOT scale-free
 
-so the spectrum breaks at k ~ 1/rho.  At the determined composition rho = 0.0539 (P16, `c54.143`), the
+so the spectrum breaks at k ~ 1/rho.  At the determined composition rho = 0.05451 (P16, `c54.143`), the
 log-derivative over the band where the interior supplies an adiabatic vacuum:
 
       d ln P / d ln k  =  +0.21  ...  +1.98      from k ~ 5 to k ~ 2000
@@ -87,7 +87,7 @@ COMPUTES: scope -- what this settles and what it must not be read as.
     fixed-phase locus changed the answer outright. **  Stated as convergence rather than as insensitivity,
     because the shallowest surface is NOT yet converged and saying otherwise would overstate it.
   * ⚠ A = 1 sets the unit of conformal time; every reported quantity is a log-derivative or a ratio, so no
-    result depends on it.  rho = 0.0539 is the DETERMINED composition and is taken from the banked receipt,
+    result depends on it.  rho = 0.05451 is the DETERMINED composition and is taken from the banked receipt,
     not chosen here; the rho-scaling is reported so the dependence is visible.
   * ⚠ ** This computes a massless minimally coupled field's vacuum on the interior background. **  It is the
     same modelling step `r6826` named and the standard one; a different field content would change the
@@ -116,7 +116,7 @@ def check(label, ok):
 
 print(__doc__)
 
-RHO_DET = 0.0539            # the DETERMINED composition (P16, c54.143), as the banked receipt uses it
+RHO_DET = 0.05451            # the DETERMINED composition (P16, c54.143), as the banked receipt uses it
 A_UNIT = 1.0                # sets the unit of conformal time; every result below is a ratio or a slope
 
 

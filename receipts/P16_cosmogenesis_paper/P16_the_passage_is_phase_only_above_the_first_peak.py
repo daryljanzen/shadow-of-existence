@@ -47,7 +47,7 @@ from scipy.integrate import solve_ivp
 
 print(__doc__.split("rc=0")[0])
 fail = []
-CS, RHO, SMAP = 1.0 / np.sqrt(3.0), 0.0539, 2.750
+CS, RHO, SMAP = 1.0 / np.sqrt(3.0), 0.05451, 2.750
 
 
 def eta_c(r):

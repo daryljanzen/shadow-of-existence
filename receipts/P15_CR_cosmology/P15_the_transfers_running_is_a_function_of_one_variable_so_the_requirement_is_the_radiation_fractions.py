@@ -60,7 +60,7 @@ OBJECT UNDER TEST -- `PO-31`, `r6914`, three items.  The order's framing, verbat
 
       ⇒ ** So the answer is the order's SECOND branch: the requirement stands, and it stands
          because the DETERMINED radiation fraction forces it. **  Not because the transfer
-         imprints in the abstract -- because rho = 0.0539 puts the observed band 55 to 378
+         imprints in the abstract -- because rho = 0.05451 puts the observed band 55 to 378
          times too far above its own break.
 
   ⓶ ** AND 1.71 IS A NUMBER, NOT AN ARTEFACT OF THE PLACEMENT. **  Over the +/-6% the arm's own
@@ -72,7 +72,7 @@ OBJECT UNDER TEST -- `PO-31`, `r6914`, three items.  The order's framing, verbat
   statements -- rho = 2 sqrt(B)/A and a_eq = A rho^2/4 = B/A -- it follows that
   ** rho = sqrt(2 a_eq / M) ** (with A = 2M), verified symbolically below.  ⚠ But that identity
   at `a_eq` = 1.49 Mpc and the REGISTER's mass 2.33e23 Msun gives rho = 1.635e-2, against the
-  determined 0.0539 -- a factor 3.3, i.e. a mass ratio of 10.9.  ** The two are consistent only
+  determined 0.05451 -- a factor 3.3, i.e. a mass ratio of 10.9.  ** The two are consistent only
   at two different progenitor masses, and which one the radiation fraction's determination uses
   is not settled here. **  So the bound is reported as a bound on rho and, as a SCALING, on
   a_eq/M; it is deliberately NOT converted into a number for a_eq or M.
@@ -89,7 +89,7 @@ COMPUTES: scope -- what this settles and what it must not be read as.
     1.71 from centred slopes on its k-grid; this uses a +/-8% two-point slope and gets 1.724.
     ** The requirement is therefore quoted as 1.71-1.72 and not to three decimals ** -- and that
     0.7% spread is itself part of ⓶'s answer.
-  * ** rho = 0.0539, a_eq = 1.49 Mpc, the potential and the background are taken from banked
+  * ** rho = 0.05451, a_eq = 1.49 Mpc, the potential and the background are taken from banked
     receipts **, not re-chosen.  No progenitor interior is built.
   * ** NO tilt value, NO amplitude ** -- `r6898`'s 10^103 is about vacuum data and a classical
     input's amplitude is free.  ** And `PO-31` does not close **, as the order said.
@@ -122,7 +122,7 @@ def head(title):
     print("=" * 94)
 
 
-RHO = 0.0539                        # the DETERMINED composition (P16, c54.143) -- taken
+RHO = 0.05451                        # the DETERMINED composition (P16, c54.143) -- taken
 TARGET = 3.0 / (2.0 * np.sqrt(2.0))
 K_PREMISE = 300.0 / (2 * RHO)       # x_i = 300/k sits outside the break only below this
 
@@ -178,10 +178,10 @@ check(sp.simplify(k_term - (2 * rho_s * k_s)**2) == 0,
       "and rho and k enter only as kappa = 2 rho k")
 print("  ⇒ so d lnT/d lnk must be a universal function of kappa alone.  Measured:")
 print(f"  {'kappa':>7} " + " ".join(f"{'rho='+format(r,'.4f'):>13}" for r in
-                                   (0.0539, 0.0100, 0.0020, 0.2000)) + f" {'spread':>10}")
+                                   (0.05451, 0.0100, 0.0020, 0.2000)) + f" {'spread':>10}")
 worst_scale = 0.0
 for kap in [0.2, 0.5, 1.0, 2.0, 5.0, 12.0, 30.0]:
-    row = [slope(kap / (2 * r), r) for r in (0.0539, 0.0100, 0.0020, 0.2000)]
+    row = [slope(kap / (2 * r), r) for r in (0.05451, 0.0100, 0.0020, 0.2000)]
     sp_ = max(row) - min(row)
     worst_scale = max(worst_scale, sp_)
     print(f"  {kap:>7.2f} " + " ".join(f"{v_:>13.6f}" for v_ in row) + f" {sp_:>10.2e}")
@@ -209,8 +209,8 @@ print("  ⇒ d lnT/d lnk = d(pi eta/2)/d lnk = - pi eta/2 = ** - pi/(4 rho k) ->
 print()
 print(f"  {'k':>8} {'rho':>8} {'measured':>13} {'-pi/(4 rho k)':>15} {'ratio':>9}")
 worst_as = 0.0
-for (kk, rr) in [(1400.0, 0.0539), (2000.0, 0.0539), (700.0, 0.0539),
-                 (300.0, 0.0539), (2000.0, 0.0100)]:
+for (kk, rr) in [(1400.0, 0.05451), (2000.0, 0.05451), (700.0, 0.05451),
+                 (300.0, 0.05451), (2000.0, 0.0100)]:
     m, a = slope(kk, rr), -np.pi / (4 * rr * kk)
     worst_as = max(worst_as, abs(m / a - 1))
     print(f"  {kk:>8.0f} {rr:>8.4f} {m:>13.6f} {a:>15.6f} {m/a:>9.4f}")
@@ -240,7 +240,7 @@ for target, label in ((-0.5, "midpoint of the excursion"),
         rb = kap / (2 * kmax)
         bounds[(target, kmax)] = rb
         print(f"     band top k = {kmax:.0f}  =>  band wholly below the break needs "
-              f"rho < {rb:.3e}   (determined 0.0539 is {RHO/rb:.0f}x larger)")
+              f"rho < {rb:.3e}   (determined 0.05451 is {RHO/rb:.0f}x larger)")
 check(all(b < RHO / 40 for b in bounds.values()),
       "a rho that works EXISTS, and every criterion puts it at least 40x below the determined one")
 check(RHO / bounds[(-0.5, 1400.0)] > 50 and RHO / bounds[(-0.95, 2000.0)] > 500,
@@ -309,7 +309,7 @@ print(f"""
       rho putting the observed band wholly below the break EXISTS, and the break's location is
       exact rather than estimated: k_break = kappa*/(2 rho).  But it needs
       rho < 9.7e-4 on the midpoint criterion and < 1.4e-4 on the strict one -- ** 55x to 378x
-      below the determined 0.0539. **  So the requirement stands *because the determined
+      below the determined 0.05451. **  So the requirement stands *because the determined
       radiation fraction forces it*, which is the falsifiable sentence the order asked for.
 
   ⓶ ** 1.71 IS A NUMBER. **  Over the +/-6% the arm's own distances allow it moves {100*spread6/base:.1f}%.

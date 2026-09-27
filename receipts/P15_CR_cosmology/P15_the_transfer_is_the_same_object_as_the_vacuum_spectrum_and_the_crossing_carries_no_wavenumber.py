@@ -24,7 +24,7 @@ one thing named to look at first.  The order, verbatim:
   ⓵ ** THE INTERIOR'S TRANSFER AND THE INTERIOR'S VACUUM SPECTRUM ARE ONE OBJECT. **  The banked
       instrument (`P15_the_progenitor_vacuum_is_negligible_too`, PART 2) integrates the k != 0 mode
       equation from sub-horizon vacuum data at large x down to the crunch and reads the constant
-      residue.  Run at the DETERMINED composition rho = 0.0539 across the band r6846 used, the
+      residue.  Run at the DETERMINED composition rho = 0.05451 across the band r6846 used, the
       k^{3/2}-stripped residue has a log-slope running +0.27 to +1.98, tending to +2.  ** That is
       r6857's number, from initial data placed somewhere else entirely -- r6846 set the vacuum at
       maximum expansion, this sets it sub-horizon in the deep matter contraction. **  ⚠ They are
@@ -40,7 +40,7 @@ one thing named to look at first.  The order, verbatim:
       wavenumber that separates "freezes in the matter contraction" from "freezes in the radiation
       crunch" is k_break = 1/(2 rho).  The banked receipt tested rho = 1e-3 and 1e-4 at k = 2, 10,
       30 -- ** the whole tested band below k_break = 500 and 5000, where the transfer IS scale-free
-      and the check passes to 0.2%. **  At the determined rho = 0.0539, k_break = 9.3 and the
+      and the check passes to 0.2%. **  At the determined rho = 0.05451, k_break = 9.3 and the
       observed band sits ABOVE it.  ⚠ `r6846` reconciled the two banked results by saying "its
       scale-invariance is of a transfer and its number an amplitude; the slope of the generated
       spectrum is a different object."  ** They are not different objects, and that reconciliation
@@ -79,7 +79,7 @@ COMPUTES: scope -- what this settles and what it must not be read as.
     If 3/(2 sqrt 2) does not reproduce there, nothing below may be read: the whole of PART 2 is the
     same instrument pointed at a different composition.
   * ** NOTHING HERE IS A NEW BACKGROUND OR A NEW MODE PROBLEM. **  The potential, the composition
-    rho = 0.0539 and the monodromy's role are all taken from banked receipts.  What is new is where
+    rho = 0.05451 and the monodromy's role are all taken from banked receipts.  What is new is where
     they are evaluated and what the resonance is asked for.
   * ** THE CROSSING RESULT IS ABOUT THE MONODROMY AND NOT ABOUT C19's 9/10. **  `C19` states in its
     own voice that its join factor is the super-horizon one and that "modes inside the horizon at
@@ -116,7 +116,7 @@ def head(title):
     print("=" * 94)
 
 
-RHO_DET = 0.0539            # the DETERMINED composition (P16, c54.143), taken not chosen
+RHO_DET = 0.05451            # the DETERMINED composition (P16, c54.143), taken not chosen
 TARGET = 3.0 / (2.0 * np.sqrt(2.0))
 
 
@@ -283,7 +283,7 @@ print(f"""
   ⛔ AND THE PRICE OF SAYING SO IS A WITHDRAWAL OF THIS SEAT'S OWN RECONCILIATION.  `r6846`
      reconciled the banked scale-invariance with its own blue running by calling them different
      objects.  They are one object; the banked check was run at rho = 1e-3 and 1e-4, where the
-     tested band lies wholly below k_break = 1/(2 rho), and at the determined rho = 0.0539 the
+     tested band lies wholly below k_break = 1/(2 rho), and at the determined rho = 0.05451 the
      observed band lies wholly above it.  ** The reconciliation was wrong in the direction that let
      a conflict pass, which is the opposite of this seat's usual direction and is recorded for
      that reason. **

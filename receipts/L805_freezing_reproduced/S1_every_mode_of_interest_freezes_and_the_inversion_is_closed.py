@@ -20,7 +20,7 @@ front; report what the modes do. **
 
 ** THE COMPUTATION. ** cc54's own implementation of the progenitor's exact interior -- the closed
 dust+radiation ball a(eta) = (A/2)(1-cos eta) + sqrt(B) sin eta at the determined composition (A=2,
-rho=0.0539) -- with the sub-horizon ratio r(x,k) = c_s k / |aH| at conformal distance x = eta_c - eta
+rho=0.05451) -- with the sub-horizon ratio r(x,k) = c_s k / |aH| at conformal distance x = eta_c - eta
 before the crunch. r > 1 oscillating (sub-horizon); r < 1 frozen (super-horizon).
 
   PART 1 -- THE FREEZE-OUT EPOCH. For every observed multipole ell = 28..2475 (k = ell/2.75) the mode
@@ -76,7 +76,7 @@ ROOT = os.path.abspath(os.path.join(HERE, '..', '..'))
 FAILED = []
 
 # ---- cc54's own implementation of the progenitor interior (independent of the P16 receipt) ----------
-A, RHO = 2.0, 0.0539
+A, RHO = 2.0, 0.05451
 B = RHO ** 2 * A ** 2 / 4.0
 SMAP = 2.75                                   # interior mode k -> observed multipole ell = 2.75 k
 ETA_C = 2 * np.pi - 2 * np.arctan(RHO)        # crunch (branch point)

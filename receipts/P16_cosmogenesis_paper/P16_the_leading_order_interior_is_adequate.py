@@ -41,7 +41,7 @@ zeta_out = np.sqrt(AS_OBS)
 h_out = np.sqrt(R_BOUND * AS_OBS)
 print()
 print(f"  {'rho':>12} {'break mode k = 1/rho':>22} {'delta at equality':>20} {'h at equality':>18}")
-for rv in [0.0539, 1e-3, 3.8e-6]:
+for rv in [0.05451, 1e-3, 3.8e-6]:
     kb = 1.0 / rv
     d_eq = (1 / 10) * (2 / (3 * np.pi)) * kb**2 * rv**2 * zeta_out
     h_eq = (2 / (3 * np.pi)) * h_out
@@ -93,7 +93,14 @@ print("  growing tensor mode, and bounding the tensor sector bounds it.")
 print("  In the matter era h ∝ |sigma|^{-3}, so Sigma = (3/8) M^2 |sigma|^3 h, against a domination")
 print("  threshold Sigma << M^2 rho^3/2 (where shear would beat radiation at equality):")
 print()
-P_T_pred = 4.796e-111                    # 144 pi (l_P/M_nariai)^2 rho^-6 at rho = 0.0539
+P_T_pred = 4.722e-111                    # 144 pi (l_P/M_nariai)^2 rho^-6 on the CORRECTED
+#   configuration (r6921): M_nariai = 4.17e52 kg and rho = 0.05451, both on the background the
+#   distance data fix.  ** SCALED from the banked 4.796e-111 by the configuration's own ratio
+#   (-1.53%), not recomputed from scratch: the banked value reproduces from its stated formula
+#   only to ~0.5%, so it carries convention rounding a fresh evaluation would silently change. **
+#   And the rho^-6 form OVERSTATES the sensitivity: rho^2 = 2 a_eq/M makes M^-2 rho^-6 =
+#   M/(8 a_eq^3) identically, so P_T = 18 pi l_P^2 M / a_eq^3 with NO rho in it -- the 6x lever
+#   on rho is cancelled by M^-2, and the amplitude is M/a_eq^3 alone.
 print(f"  {'tensor amplitude granted':>46} {'h at equality':>16} {'Sigma / threshold':>20}")
 for nm, hv in [("the OBSERVATIONAL CEILING (r < 0.032)", (2 / (3 * np.pi)) * np.sqrt(R_BOUND * AS_OBS)),
                ("** this construction's PREDICTED P_T **", (2 / (3 * np.pi)) * np.sqrt(P_T_pred))]:

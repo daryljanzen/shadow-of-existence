@@ -36,7 +36,7 @@ from scipy.integrate import solve_ivp
 print(__doc__.split("rc=0")[0])
 fail = []
 
-RHO, A = 0.0539, 2.0
+RHO, A = 0.05451, 2.0
 B = RHO ** 2
 
 # =====================================================================

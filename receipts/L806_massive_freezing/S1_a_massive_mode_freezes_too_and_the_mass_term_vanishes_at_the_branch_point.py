@@ -65,7 +65,7 @@ ROOT = os.path.abspath(os.path.join(HERE, '..', '..'))
 FAILED = []
 
 # cc54's L-805 progenitor interior
-A, RHO = 2.0, 0.0539
+A, RHO = 2.0, 0.05451
 Bc = RHO ** 2 * A ** 2 / 4.0
 SMAP = 2.75
 ETA_C = 2 * np.pi - 2 * np.arctan(RHO)

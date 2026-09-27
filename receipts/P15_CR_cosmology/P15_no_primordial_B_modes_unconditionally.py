@@ -27,7 +27,7 @@ LAM, LP, MPC = 1.1056e-52, 1.616255e-35, 3.0857e22
 AS_OBS, R_BOUND = 2.1e-9, 0.032
 alpha = np.sqrt(3.0 / LAM)
 M_nar = alpha / (3 * np.sqrt(3))
-RHO_HI = 0.0539                     # the progenitor's determined composition (c54.143)
+RHO_HI = 0.05451                     # the progenitor's determined composition (c54.143)
 
 # =====================================================================
 print("=" * 78)

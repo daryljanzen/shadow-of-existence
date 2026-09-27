@@ -133,7 +133,7 @@ ee = sp.symbols('ee')
 A_num = 2.0
 print(f"\n  {'rho':>10} {'zeta_out (z = a)':>20} {'zeta_out (z_S)':>18} {'ratio':>10}")
 _ratios = []
-for _rho in [0.2, 0.1, 0.0539]:
+for _rho in [0.2, 0.1, 0.05451]:
     _B = _rho**2 * A_num**2 / 4
     _a = (A_num / 2) * (1 - sp.cos(ee)) + sp.sqrt(_B) * sp.sin(ee)
     _zS = _a * (_a + 4 * _B / (3 * A_num)) / sp.diff(_a, ee)
@@ -168,7 +168,7 @@ print("=" * 78)
 LAM, LP, MPC, AS_OBS = 1.1056e-52, 1.616255e-35, 3.0857e22, 2.1e-9
 alpha = np.sqrt(3.0 / LAM)
 M_nar = alpha / (3 * np.sqrt(3))
-rho_max = 0.0539                      # the composition DETERMINED (P16, c54.143)
+rho_max = 0.05451                      # the composition DETERMINED (P16, c54.143)
 As_vac = 9.0 * (LP / M_nar)**2 * rho_max**-6.0
 print(f"  {'quantity':>50} {'value':>16}")
 for nm, v in [("alpha [Mpc]", alpha / MPC),

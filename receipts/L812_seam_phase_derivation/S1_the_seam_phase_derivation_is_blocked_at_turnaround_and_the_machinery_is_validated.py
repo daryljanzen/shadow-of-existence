@@ -61,7 +61,7 @@ never the register, and never a phi it cannot yet support. Stated for reversal.
 import numpy as np
 from scipy.integrate import solve_ivp
 
-A, RHO = 2.0, 0.0539
+A, RHO = 2.0, 0.05451
 Bc = RHO ** 2 * A ** 2 / 4.0
 ETA_C = 2 * np.pi - 2 * np.arctan(RHO)
 ETA_T = np.pi - np.arctan(RHO)

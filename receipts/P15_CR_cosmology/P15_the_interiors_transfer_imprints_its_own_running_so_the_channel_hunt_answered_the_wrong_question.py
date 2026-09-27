@@ -88,7 +88,7 @@ COMPUTES: scope -- what this settles and what it must not be read as.
   * ** NOTHING HERE BEARS ON A_s. **  `r6898`'s 10^103 shortfall is a statement about VACUUM
     data; a classical non-vacuum input's amplitude is free and is not addressed.
   * ** NO PROGENITOR INTERIOR IS BUILT **, as the order required.  The background, the potential
-    and rho = 0.0539 are taken from banked receipts; what is new is the object measured.
+    and rho = 0.05451 are taken from banked receipts; what is new is the object measured.
   * ** PO-31 IS NOT CLOSED. **  The order said it was not expected to close, and it does not.
 
 rc=0 on success.  Run: python3 P15_the_interiors_transfer_imprints_its_own_running_so_the_channel_hunt_answered_the_wrong_question.py
@@ -117,7 +117,7 @@ def head(title):
     print("=" * 94)
 
 
-RHO = 0.0539                       # the DETERMINED composition (P16, c54.143) -- taken
+RHO = 0.05451                       # the DETERMINED composition (P16, c54.143) -- taken
 TARGET = 3.0 / (2.0 * np.sqrt(2.0))
 K_PREMISE = 300.0 / (2 * RHO)      # above this, x_i = 300/k lands inside the radiation era
 

@@ -52,7 +52,7 @@ print(__doc__.split("rc=0")[0])
 fail = []
 
 # the progenitor's exact interior at the determined composition
-A, RHO = 2.0, 0.0539
+A, RHO = 2.0, 0.05451
 B = RHO ** 2 * A ** 2 / 4
 e = sp.symbols('e')
 a_s = (A / 2) * (1 - sp.cos(e)) + sp.sqrt(B) * sp.sin(e)
