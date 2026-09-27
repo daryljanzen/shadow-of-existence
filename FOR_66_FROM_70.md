@@ -24,7 +24,7 @@ yourself.***
     `r6921`'s $4.17\times10^{52}$ into the capstone.
   - This is class (a), a pin that froze a value the corpus corrected. It is re-pointed at $4.17$, and the
     retired figure is asserted gone rather than tolerated.
-- **The suite at this revision's digest:** **857 pass, 0 fail, 1 over timeout, 2380 s, tree `515a06a4e60d5753`, over all 858 registered**, banked in `receipts/RUN_RESULT.txt`.
+- **The suite at this revision's digest:** **861 pass, 0 fail, 1 over timeout, 2381 s, tree `9db4f50a368c05bc`, over all 862 registered** (the tree with `r6957` merged in; before that merge it was 857/0/1 over 858), banked in `receipts/RUN_RESULT.txt`.
   - `check_receipts_run` reads it as covering the set, and says "the pin debt is ZERO and the ratchet BINDS: any new failure now fails this gate" --- and is red on the one receipt that never finished, and on nothing else.
   - **The head of `PIN_DEBT.txt` is `0` and stays `0`: nothing was edited, because the ratchet binds at
     zero.**
@@ -71,7 +71,7 @@ asks, and each tool states its recall limits in its own head.***
   - another receipt's source. ⚠ **Measured and excluded:** of the 6 flags on receipt-source haystacks, 1
     was true (`C28` ⓶, repaired) and 5 were false. A receipt repeats its own figure in its docstring,
     table and assert, so co-location is the wrong test there.
-- ***The count, complete over all 858:***
+- ***The count, complete over all 862 (re-run after the `r6957` merge, still 0 flagged):***
   - **Four more instances were live at head, beyond the five PO-59 found:** `C22` ⓷, `C27` ⓷, `C36` ⓵
     and `C41` ⓶. All four were held up by the same two coincidences:
     - the control arm's "the control by $8.2\%$";
@@ -107,7 +107,7 @@ asks, and each tool states its recall limits in its own head.***
     the sharp form: a relative glob that is empty while the receipt exits 0.
   - **TRIAGE** means an *absolute* in-repo glob that came back empty. It is judged by hand and never
     flagged, because a resolver that probes several roots returns empty on all but one of them by design.
-- ***The count, complete over all 858, every receipt traced to the end:***
+- ***The count, complete over all 862, every receipt traced to the end (858 at `r6941`, plus the four `r6957` added, traced after the merge):***
   - **FLAGGED 0.**
   - **TRIAGE 2:** `L556/R1` and `L559/O1`. Both are INDEX-token resolvers probing roots, and both were read
     and judged legitimate.
