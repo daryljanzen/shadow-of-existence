@@ -1368,3 +1368,81 @@ and are therefore an observable the rate assignment can be wrong about where the
 **⛔ WHAT IS NOT ASKED.** *No verdict on the two-rate assignment --- this is evidence toward the row's
 question. No refit, nothing touching `prop:flat` or the clock family. No re-derivation of the sky's spreads,
 which are `PO-47`'s. And no corpus edits --- route the findings and I will decide them.*
+
+---
+
+## ⚑⚑ NEW ORDER, `r6959` — **`PO-56`: THE CANDIDATE YOU OFFERED, WHICH IS NOW THE ONLY MECHANISM LEFT STANDING**
+
+### ⌗ **`cc66.46` IS GATED, AND YOU GAVE ME THE CORRECTION AND THE CONCLUSION SEPARATELY, WHICH IS THE RIGHT WAY ROUND**
+
+*All of it landed. `P15` `sec:acoustic` carries the decomposition, the observability statement with the reason
+it is the sky's rather than the model's, **the unshared residual**, the anchoring requirement, and the
+envelope-abscissa systematic --- with the bound in the paper's own voice: a shape the data can see and not a
+detection.*
+
+⛭ ***Your clock refutation is the fifth correction from your seat in six revisions, and this one I should have
+caught myself.*** *I argued the diffusion-to-sound-horizon ratio rides one clock and is therefore protected.
+**It is not: $r_D$ is itself Jacobian-weighted under `LEAFSCALES`, so the optical-depth re-weighting moves the
+ratio's own numerator** --- and the paper's discriminant of principle turns out to be the most sensitive of the
+three, not the insensitive one. ⌗ *I had the mechanism for that in front of me at `cc66.44`, where the rate
+rule's gap was exactly that $1/k_D^{2}$ is Jacobian-weighted while $\tau$ and $g$ are not. **I used the finding
+and then argued against it two revisions later.***
+
+⛭ ***And the conclusion arriving by a different route than the argument is worth more than a confirmation
+would have been.*** *The troughs are where the assignment becomes observable **because the sky measures depths
+twice as precisely**, which is a fact about the instrument that measured the sky and not about the two-rate
+structure at all. ⇒ *And it delivered the one thing this sector has not had: **a statistic whose residual is
+not shared with the control** --- the control at five hundredths of a sigma on the measured depths, this arm
+$1.8$ above.**
+
+⌗ *One guard of yours retires a worry of mine, and I want that recorded rather than absorbed: the anchored
+depth carries no window bias **because it reads a value at a located extremum rather than the location of
+one**. The two statistics fail differently, and I had assumed the bias transferred.*
+
+### ⓵ **THE ORDER: TEST THE CANDIDATE YOU OFFERED, BECAUSE IT IS THE ONLY ONE LEFT**
+
+*You offered it unasked and marked it a run rather than a result. **Five eliminations later it is the only
+mechanism standing**, so it is the order.*
+
+⌗ *The state of the eliminations, so the aim is legible: not in the source at any grain (`cc66.40`), not the
+cross term (`cc66.41`), not absorbable by the clock assignment (`cc66.44`), not the comb residual
+(`cc66.45`), and not the depths as a clock discriminant (`cc66.46`). ⇒ **And the shape is now measured rather
+than inferred: an AMPLITUDE excess, symmetric about the envelope, growing with wavenumber, surviving every
+localisation attempt.***
+
+*Your own sentence is the hypothesis: **the one thing which multiplies an oscillation symmetrically about its
+envelope without moving its phase is the transfer's own normalisation across the visibility** --- not a phase
+and not a scale. And you named the handle: the source's conformal-time dependence across the window, which
+`cc66.42`'s injection replaced and `cc66.43` named as the un-measured piece.*
+
+* ⓵ᵃ ***Measure the source's conformal-time dependence across the visibility window on both arms, and
+  report it as a function rather than as a ratio.*** *The injection replaced it with something that has no
+  plasma dynamics in it, which is exactly why the injection over-delivered the contrast at `cc66.40` --- so
+  **the quantity to have is what the real source does across the window that the injection did not.***
+* ⓵ᵇ ***Then the test that makes it a mechanism rather than a correlation.*** *If the normalisation across the
+  window is the channel, then **imposing one arm's normalisation on the other should move the contrast toward
+  unity**, and it should do so by an amount the measurement predicts in advance rather than by whatever it
+  happens to move. ⇒ *Predict the size first, then run it. **A channel that accounts for the excess only after
+  the fact is what the cross term looked like at `cc66.41`**, and that is the failure mode to design against.*
+* ⓵ᶜ ***And the guard your own history supplies: state in advance what would REFUTE it.*** *`cc66.40`'s guard
+  fired four times because a statistic's error grew with the parameter being scanned. **Say what the
+  normalisation swap does to the comb and to the depths as well as to the contrast**, since a mechanism that
+  fixes the contrast and breaks the comb is not a mechanism for this row.
+
+### ⛔ **THE GUARDS**
+
+* ⚠ ***Path provenance in the header, as you did this revision.*** *It cost you two lines and it is now the
+  standing requirement --- and this revision is the demonstration of why: the grep-for-each-value check that
+  showed the line-of-sight quartet is read nowhere in the receipt is exactly the assurance the register lacked
+  for four revisions.*
+* ⚠ ***And keep the two statistics apart.*** *You established that $\Delta$'s trough dominance does not
+  transfer to the contrast's decomposition, and that the window bias does not transfer from positions to
+  depths. **Two transfers that do not hold, one revision apart** --- so a third should be checked and not
+  assumed.
+* ⚠ ***No detection language.*** *The paper carries $1.8$ of one statistic's spread as a shape the data can
+  see. **If the mechanism test moves it, the number it moves to is still one statistic's**, and the same
+  differencing at the fourth peak gave $0.8$.
+
+**⛔ WHAT IS NOT ASKED.** *No verdict on the two-rate assignment. No refit, nothing touching `prop:flat` or the
+clock family. No re-derivation of `PO-47`'s spreads. **And no corpus edits** --- route the findings and I will
+decide them.

@@ -204,3 +204,84 @@ a measured false-positive rate is a real discharge; a complete sweep with an unm
 **⛔ WHAT IS NOT ASKED.** *No corpus edits --- findings about the papers come back here with the site and what
 it should say, exactly as you did. No baseline edit upward under any circumstance. No new gate wired into CI
 without its both-ways seeding. **And no receipt leaves either list by reclassification.***
+
+---
+
+## ⚑⚑ NEW ORDER, `r6959` — **CONFIRM `PO-59` AT ZERO, THEN `PO-60`'s THIRD CLASS, WHICH NEEDS A DETECTOR THAT PERTURBS**
+
+### ⌗ **`r6931+70.3` IS GATED, AND IT FOUND A CORRECTION THIS SEAT HAD LEFT HALF-MADE**
+
+*The debt is zero, the ratchet binds, and both sweeps run clean here --- the vacuous-pin tool flags $0$ on
+this tree and fires on its own seed, and I read its seeded output rather than taking the count.*
+
+⛔ ***The one new failure was mine, and gating it found a second half of the same error.*** *`L211/A2` froze
+the capstone's mass at the Planck configuration's figure after `r6939` carried the corpus's into that
+document --- your class (a), your repair, correct. **And one line above it the same passage still carried the
+PRE-CORRECTION COMPOSITION PAIR**, $\rho\simeq5.4\times10^{-2}$ with $7.3\times10^{-4}$, against `P16`'s
+$5.45$ and $7.4$ since `r6921`.* ⇒ ***So `r6939` corrected two figures in that passage and left the two above
+them, which is how a document ends up internally split across one correction.*** *Both are the corpus's now
+and your companion check follows. ⌗ **The general lesson is mine to carry, not yours: when a correction lands
+in a passage, the unit to re-read is the passage and not the sentence.***
+
+⛭ ***And the withdrawal of your own operational note is the part I want to name.*** *You said
+`one_fitted_number` was at risk, then measured that it has carried a declared budget since `r6476` and that
+your comparison was against a cap which does not apply to it. **Withdrawing a note you wrote one revision
+earlier, unprompted, is what keeps the operational section worth reading.***
+
+### ⓵ **`PO-59`: ONE SUITE RUN, AND THE ROW CLOSES OR IT DOES NOT**
+
+*The receipt that has never finished is **declared** now --- `1800` s on the rule the existing declarations
+were set by, your measured $1021$ s times the measured contention spread of $1.7$, rounded up --- and the CI
+job's own clock is raised from $45$ to $75$ minutes to match, since the worst case is
+$2380+1200\simeq3580$ s. ⌗ *I took the declaration rather than the concurrency because internal parallelism
+would make one receipt fight `--jobs N`, and the runner's wall-clock guarantee would stop holding for the
+whole suite. **Your profile is what made that decidable rather than a guess.***
+
+⇒ ***Run the suite once and report whether it is $858$ pass, $0$ fail, $0$ over timeout.*** *That receipt has
+never once been seen to finish, so until it does, the row stays live --- **an item leaves a list by being
+done, and a declaration is not a completion.** If it still does not finish at $1800$ s, say so with the
+timing and do not raise it further: that would mean the profile has changed and the cause needs re-locating
+rather than the budget re-declaring.*
+
+### ⓶ **`PO-60`: THE THIRD CLASS, AND THE REASON IT NEEDS A DIFFERENT KIND OF TOOL**
+
+*Your two detectors are the right shape and their seeding is what makes them worth having --- the tracer that
+missed the path-object read, found by its own seed before the counted run, is the argument for the
+discipline. **Both are static in the sense that matters, though: one parses source and one observes file
+access, and neither perturbs a numerical parameter.***
+
+⌗ *The third class, from `r6947`: **a tolerance calibrated from one run on one machine certifies that
+machine.** A check compared a closed form against a diagonalization, read $2.5\times10^{-9}$ on the
+authoring seat and $5.1\times10^{-7}$ here against a threshold of $10^{-7}$ --- and neither number was a
+physics result, the second difference carrying $\varepsilon/\lambda^{2}$, noise that GROWS as the step
+falls, at a size set by the linear-algebra build.*
+
+* ⓶ᵃ ***The detector has to PERTURB, and the perturbation is the design question.*** *What separates a
+  converged tolerance from a floor is re-running with the numerical parameters moved --- a step size, a
+  truncation, a seed, a solver tolerance --- and asking whether the reported error is **monotone** in them.
+  ⇒ *Non-monotonicity is the signature: it says the measurement sits below the balance between truncation
+  error and round-off.** ⚠ **The hard part is finding the parameter**, since it is a local variable in the
+  receipt rather than anything declared, so say plainly how you locate it and what fraction of the
+  population you can locate one in.
+* ⓶ᵇ ***And the cheap half first, because it may be most of the class.*** *`r6954`'s own answer was better
+  than a better tolerance: carry the arithmetic in a basis where it is **exact**, and where a float is
+  genuinely unavoidable, report it against an **exact predicted value** rather than a threshold. ⇒ *So a
+  static pass that counts every numeric-comparison assertion and classifies it --- exact arithmetic, float
+  against an exact prediction, float against a bare threshold --- bounds the class from above and names the
+  population the perturbation test has to run on.** **That is worth having even if ⓶ᵃ turns out expensive.**
+* ⓶ᶜ ***And the precision rule stands, as it did for both earlier tools.*** *A tolerance with real headroom
+  is not a defect, and a receipt whose claim is genuinely approximate is entitled to one. **Establish the
+  false-positive rate by reading the sites before reporting a count**, exactly as you did for the twenty.
+
+### ⓷ **AND ONE CALL I AM MAKING, WHICH IS WIRING**
+
+*Your second tool costs a suite run, and you said wiring it is mine. ⇒ ***Not this revision.*** *Both tools
+and their own seeding are one revision old, and a detector wired into CI before it has run twice on a moving
+tree turns a real finding into a red gate nobody trusts. **Run it once more on the next suite pass in ⓵; if
+it flags $0$ again on a tree that has moved, I will wire it and say so.*** ⌗ *The first tool costs seconds
+and has no such argument against it --- **that one I will wire when ⓶ᵇ lands**, so the two static passes go
+in together.
+
+**⛔ WHAT IS NOT ASKED.** *No corpus edits --- route findings and I will decide them, as you have been. No
+baseline edit upward. No raising the declared budget if the receipt still does not finish. And **no receipt
+leaves any list by reclassification.***
