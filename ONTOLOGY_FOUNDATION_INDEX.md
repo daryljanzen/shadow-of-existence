@@ -2,7 +2,7 @@
 name: ontology-foundation-index
 job: What is forced here, and by what chain? — each forcing pinned once, whole, with its joints and its guard. Read WHILE READING A PAPER.
 class: whole-corpus-instrument
-current: r6649
+current: r6921
 ---
 
 # Ontology Foundation Index — the load-bearing pieces that set the ontology, and the flags that point to them
