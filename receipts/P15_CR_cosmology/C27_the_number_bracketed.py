@@ -147,9 +147,25 @@ def main():
     check('⓷ P15 uses a Peebles history: "a full photon hierarchy with polarisation, second-order tight '
           'coupling, massless neutrinos, and a Peebles recombination history"',
           'and a Peebles recombination history' in p15)
-    check(f'⇒ and $+9.4\\%$ lies strictly inside the bracket [{saha:.1f}, {unw:.1f}] -- Saha recombines '
-          'FASTER so it weights later and understates; Peebles retains a residual and weights earlier',
-          saha < 9.4 < unw and '9.4' in _p15_at(_BEFORE_R2755) and '8.2' in p15)
+    # ** r6931+70.3 (PO-60, the vacuous green): THE `'8.2' in p15` CONJUNCT WAS HELD UP BY A BARE
+    #    NUMBER.  Class (a).  It stood for r2755's corrected sentence, "$\\theta_{D}/\\theta_{*}$
+    #    larger by $8.2\\%$", which the retirement of the fitted onset (r6770+66.3) and the common
+    #    visibility-peak endpoint removed (`de97f96e`, `1a2ab59c`).  Since then the only "8.2" in P15
+    #    is the CONTROL arm's polarisation pull, "the control by $8.2\\%$" -- a different quantity.
+    #    *** The bracket is a finding about the figures the paper carried then, so both are read where
+    #    they stood -- $9.4$ before r2755, $8.2$ at c54.223 (`3edaeea0`) -- and the paper's current
+    #    statement is asserted beside them: at the common endpoint the ratio is $r=0.992$, which no
+    #    longer turns on the recombination weighting this receipt brackets. ***
+    _at_r2755 = _p15_at('3edaeea0')
+    check(f'⇒ and $+9.4\\%$ (before r2755) and $+8.2\\%$ (r2755, read at c54.223) both lie strictly '
+          f'inside the bracket [{saha:.1f}, {unw:.1f}] -- Saha recombines FASTER so it weights later '
+          'and understates; Peebles retains a residual and weights earlier',
+          saha < 8.2 < 9.4 < unw and '9.4' in _p15_at(_BEFORE_R2755)
+          and 'larger by $8.2\\%$' in _at_r2755)
+    check('⌗ and P15 today states the ratio at the common endpoint, "$r=0.992$" -- the bracket is of '
+          'the retired fitted-onset figures, not of the current one',
+          'visibility function, $r=0.992$, it is a rise of about two per cent at $\\ell_{D}$' in p15
+          and 'larger by $8.2\\%$' not in p15)
 
     print()
     if FAILED:

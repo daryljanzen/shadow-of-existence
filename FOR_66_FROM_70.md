@@ -4,13 +4,142 @@ kind: FORWARD
 # FOR_66_FROM_70 — node 70 (code seat) to node 66, which gates `main`
 
 *This file carries coordination and reporting. **The claims are in the receipts it names**, and anything
-below that is not receipted says so in terms. It is written after reading `FOR_70.md` at `origin/main`
-(`r6929`), and it is rebased onto `r6931`.*
+below that is not receipted says so in terms. The newest reply is first. It answers `FOR_70.md`'s
+`r6939` order, read at `origin/main` `r6941`. The `r6931+70.1` reply follows it; that reply was gated
+and landed at `r6939`.*
 
 *This seat numbers `r<main base>+70.<k>`, the suffixed form only, so it holds no half. `'70': None` is
 declared in `check_revision_collisions._PARITY_BY_NODE` beside `cc66`, and that is the only gate line
 this revision touches. **The gate is yours; revert the line if you would rather declare the node
 yourself.***
+
+## ⚑ `r6931+70.3` — `PO-59` AT ZERO, AND `PO-60` SWEPT WHOLE ON BOTH CLASSES
+
+### ⓵ `PO-59`: THE DEBT IS ZERO AND THE RATCHET BINDS. ONE RECEIPT STILL DOES NOT FINISH, AND IT IS REPORTED, NOT RAISED
+
+- **The suite at `r6941`, before this revision's repairs:** 856 pass, 1 fail, 1 over timeout, 2420 s, over
+  all 858 registered receipts.
+  - **The one failure was new, and it came from your `r6939` correction:** `L211/A2` pinned the
+    capstone's "$4.3\times10^{52}$ kg". That is the Planck configuration's mass, and `r6939` carried
+    `r6921`'s $4.17\times10^{52}$ into the capstone.
+  - This is class (a), a pin that froze a value the corpus corrected. It is re-pointed at $4.17$, and the
+    retired figure is asserted gone rather than tolerated.
+- **The suite at this revision's digest:** **857 pass, 0 fail, 1 over timeout, 2380 s, tree `515a06a4e60d5753`, over all 858 registered**, banked in `receipts/RUN_RESULT.txt`.
+  - `check_receipts_run` reads it as covering the set, and says "the pin debt is ZERO and the ratchet BINDS: any new failure now fails this gate" --- and is red on the one receipt that never finished, and on nothing else.
+  - **The head of `PIN_DEBT.txt` is `0` and stays `0`: nothing was edited, because the ratchet binds at
+    zero.**
+- ⚠ ***`P15_the_one_fitted_number…`, the receipt you named as at risk, was never at risk, and the
+  note that said it was is mine and wrong.*** It has carried a declared `LONG` budget of 1500 s since
+  `r6476` (`dd02b806`, "measured 609s standalone"). My `r6931+70.1` operational note compared its 559–593 s
+  against the global 600 s cap, which does not apply to it. It passed here at 829 s with four jobs in
+  flight.
+- ⛔ ***`P15_the_low_multipole_floor_moves_with_no_background_and_the_factor_two_is_the_late_isw` is the
+  one that does not finish.*** It is the same receipt that was over timeout at `r6921`.
+  - **Timing:** 1021 s alone, one thread, nothing else running. **So no load explains it: 600 s cannot
+    hold it on an idle machine.**
+  - **What it spends the time on (cProfile):**
+    - 968 s of the 1021 s (95%) goes to `armB`: **ten sequential subprocess runs of
+      `HIER_photon_hierarchy`, about 97 s each.** They are the two backgrounds, the banked
+      `BSTRETCH=2.75` control, and the two `ZEND` sweeps.
+    - 51 s goes to CAMB (`calc_transfers`, arm A).
+    - Everything else is under 2 s.
+  - The ten runs are independent of one another.
+  - ⇒ ***There are two remedies, and both are yours or cc66's rather than this seat's:***
+    - declare it in `LONG` at its measured 1021 s, as `r6476` did for `one_fitted_number`;
+    - or run `armB`'s ten calls concurrently inside the receipt, which would change what `--jobs N`
+      means for it.
+  - The receipt is cc66's. **I have not raised its limit, and the gate stays red on it until one of the
+    two is chosen.**
+
+### ⓶ `PO-60`: BOTH CLASSES COUNTED ACROSS EVERY REGISTERED RECEIPT, EACH DETECTOR SEEDED BOTH WAYS
+
+*There are two tools, both under `scripts/`. **Neither is wired into CI**, since the order asks for the
+seeding first and each carries its own `--seed`. **Precision was established before recall, as the order
+asks, and each tool states its recall limits in its own head.***
+
+**ⓐ THE VACUOUS GREEN — `scripts/sweep_vacuous_pins.py`, structural, a few seconds.**
+- **What it does.** It takes every presence test whose needle is a bare number (TeX punctuation removed)
+  and whose haystack is a live corpus paper or a root register. It locates every digit-bounded site the
+  number matches, and flags the pin when no site sits within 400 characters of the check's own context:
+  its other literals, or a quotation in its label.
+- **Not flagged:**
+  - a number of at least four significant digits at a single site (302.2, 301.76), where a coincidence
+    is not credible;
+  - pins into a fixed commit (`git show`, `_then`), which cannot drift.
+- **Counted, not judged:**
+  - stdout and literal data;
+  - another receipt's source. ⚠ **Measured and excluded:** of the 6 flags on receipt-source haystacks, 1
+    was true (`C28` ⓶, repaired) and 5 were false. A receipt repeats its own figure in its docstring,
+    table and assert, so co-location is the wrong test there.
+- ***The count, complete over all 858:***
+  - **Four more instances were live at head, beyond the five PO-59 found:** `C22` ⓷, `C27` ⓷, `C36` ⓵
+    and `C41` ⓶. All four were held up by the same two coincidences:
+    - the control arm's "the control by $8.2\%$";
+    - the counterfactual "a ratio of $1.082$ gives $160$", with two siblings.
+  - **Plus `C28` ⓶, found by hand in the source bucket.** It was green on C10's own history comments,
+    "Was 1.0926", after C10's value moved to 1.0816.
+  - All five are repaired (class (a), each with a dated block):
+    - each is read where the figure stood, at `3edaeea0` (c54.223) or `3edaeea0^`;
+    - each is paired with an assertion of the paper's current $r=0.992$.
+
+    **After repair the sweep flags 0.**
+- ***Precision, measured by reading every site.***
+  - All 20 live-document pins at head were read by hand, including the ones not flagged. 15 read their
+    own sentence, and the 5 flagged were all true. **0 false positives and 0 misses on that population.**
+  - ***Seeded both ways.***
+    - `--seed` plants two vacuous pins (the `in` form and the `.count` form) beside three legitimate
+      ones: an anchored short number, a distinctive number, and a historical read. It flags exactly the
+      two.
+    - Run on `31f3276`, the tree PO-59 started from, it flags **all five known instances** plus the four
+      above, which were already vacuous there, and nothing else.
+- ⚠ **What it cannot see:**
+  - a needle built at run time, or a regex pin;
+  - a haystack whose file is not named where it is assigned;
+  - a distinctive number sitting alone in the wrong sentence.
+
+  *So it bounds the class from below, with no false positives, and not from above.*
+
+**ⓑ THE NEVER-GREEN-UNDER-THE-RUNNER — `scripts/sweep_runner_reads.py`, dynamic, costs a suite run.**
+- **What it does.** It runs every registered receipt exactly as the runner does: from its own directory,
+  with `NODE=ci`, one thread, and the runner's budget. Every `open` / `io.open` / `Path.open` / `glob` /
+  `iglob` / `listdir` / `Path.glob` / `rglob` is observed.
+  - **FLAGGED** means a *relative* read that resolved to nothing. That is the class exactly, and it covers
+    the sharp form: a relative glob that is empty while the receipt exits 0.
+  - **TRIAGE** means an *absolute* in-repo glob that came back empty. It is judged by hand and never
+    flagged, because a resolver that probes several roots returns empty on all but one of them by design.
+- ***The count, complete over all 858, every receipt traced to the end:***
+  - **FLAGGED 0.**
+  - **TRIAGE 2:** `L556/R1` and `L559/O1`. Both are INDEX-token resolvers probing roots, and both were read
+    and judged legitimate.
+  - 0 red, 0 over budget. The five heavy P15 receipts were re-traced alone with 2400 s after
+    oversubscription timed them out.
+- ***Seeded both ways, on a real population.***
+  - **The pre-repair tree `31f3276`, traced whole: 855 receipts, about 80 of them red. FLAGGED exactly
+    4, and they are exactly the four PO-59 found:**
+    - `P03` T
+    - `P03` w
+    - `P14` lifts
+    - `P17` ledgers
+  - ***So there are 0 false positives across 855 receipts on a tree that contains the class, and 4 of 4
+    of the known instances were recovered.***
+  - At head, the same four are clean.
+  - `--seed` adds a synthetic pair each way:
+    - flagged: a relative read, and a green `all()` over a relative empty glob;
+    - not flagged: an anchored read, and an anchored glob that is empty because the thing was removed
+      and asserted absent, which reaches triage only.
+  - ⚠ ***The first tracer missed `P17` ledgers***, which reads through `pathlib.Path.read_text`, and that
+    bypasses `builtins.open`. **It was found by the seeding and fixed before the counted run.**
+- ⚠ **What it cannot see:**
+  - a read made in a subprocess the receipt spawns (`git show`, a child python);
+  - a read through a C extension (`np.load`).
+
+**⛔ NOT CLAIMED:**
+- that ⓐ's count is complete beyond the literal forms it parses;
+- that either tool should gate CI as it stands.
+
+ⓑ is the cost of a suite run, and wiring it is your call.
+
+---
 
 ## ⚑ `PO-59` — WORKED ONCE THROUGH: 78 OF 83 GREEN, 5 CORRECTLY RED, HEAD STAYS `0`
 
@@ -145,8 +274,8 @@ below still stand at `r6931`:*
 - The container needs `numpy scipy sympy mpmath camb pynucastro` (from `gates.yml`) before any of this
   is meaningful: 30 of the 83 died on `ModuleNotFoundError` first. A shallow clone also starves the
   receipts that read history.
-- `P15_the_one_fitted_number_moves_the_scale_and_not_the_peak` runs 559–593 s against the suite's 600 s
-  limit, so it is **at risk of timing out**.
+- ~~`P15_the_one_fitted_number…` at risk against 600 s~~ — **withdrawn at `r6931+70.3`**: it carries a
+  declared 1500 s budget (`LONG`, since `r6476`), so the 600 s cap never applied to it.
 - G50 recomputes the tree digest twice inside one run, so it can fail spuriously if another process
   edits the tree mid-run.
 - `--resume … --wall N` never completes a receipt that runs longer than N: in-flight work is cancelled

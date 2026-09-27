@@ -1,27 +1,18 @@
 
-  RUN-ALL-RECEIPTS -- 855 registered receipt(s), 2 at a time, 600s each, each from ITS OWN DIRECTORY
+  RUN-ALL-RECEIPTS -- 858 registered receipt(s), 4 at a time, 600s each, each from ITS OWN DIRECTORY
   DECLARED LONG: C59_the_control_reproduces_camb_and_the_height_defect_was_k_truncation.py runs on 1800s, not 600s -- named, with its measured cost in the source
   DECLARED LONG: C63_no_single_source_term_carries_the_undriven_split_and_the_first_probe_read_an_unwired_knob.py runs on 900s, not 600s -- named, with its measured cost in the source
   DECLARED LONG: P15_the_one_fitted_number_moves_the_scale_and_not_the_peak.py runs on 1500s, not 600s -- named, with its measured cost in the source
   DECLARED LONG: P15_the_symmetric_comparison_was_never_runnable_and_the_quarter_was_two_fifths.py runs on 900s, not 600s -- named, with its measured cost in the source
-  TREE-DIGEST: cdf21a8206487495
+  TREE-DIGEST: 515a06a4e60d5753
 
-  RESUME: 853 result(s) reused from /tmp/claude-0/-home-user-shadow-of-existence/4913e7eb-3c04-585c-bc52-ac1b69fc5eb8/scratchpad/suite.cache, 2 left to run
+  RESUME: 0 result(s) reused from /tmp/claude-0/-home-user-shadow-of-existence/4913e7eb-3c04-585c-bc52-ac1b69fc5eb8/scratchpad/suite3.cache, 858 left to run
 
-    [FAIL] receipts/L256_the_band_taken/B1_a_finding_that_routes_its_own_remedy_and_then_recurs_is_not_waiting.py  (10s)
-               OK    ⓺ᵈ and N1 WITHDRAWS its own routing in place rather than being quietly superseded /   1 check(s) FAILED /     - ⓸ᶜ¹ on a repository this file BUILDS -- two unmerged commits, r4000 EVEN and r4001 ODD -- the even band flags [] and the flipped band flags []: the fl
-    [FAIL] receipts/L257_the_label_did_double_duty/V1_a_strike_that_reads_as_done_and_a_paper_that_says_otherwise.py  (2s)
-               - ⓵ᶜᐢ ⛭ and the retirement did not lose the object -- exactly one of ('114e4d9ede', '38005b708a') is LIVE and it is the one the papers' own scan raises, /     - ⓵ᵈ and nothing is left UNVERDICTED: 4 /     - ⓹ᵇ ⌗ 1 WARN(s) remain -- entries naming sentences no longer in any paper.  This file reco
-    [FAIL] receipts/L259_the_distance_from_the_present/D1_a_check_pinned_to_a_distance_from_the_present_is_pinned_to_the_present.py  (102s)
-               OK    ⓸ᵇ and with it back the receipt exits 1 -- so the repair is what makes it green, not the tree happening to sit at a convenient revision /   1 check(s) FAILED /     - ⓷ᶜ and `B1` exits 1
-    [FAIL] receipts/L261_the_question_was_answered/A1_a_check_on_whether_a_question_is_still_open_punishes_the_answer.py  (36s)
-               OK    ⓹ ⌗ and the pinned historical fact is untouched: `N1` still records that it ROUTED the band and that the routing was withdrawn, which is a claim about commits and not about the present /   1 check(s) FAILED /     - ⓷ᵇ and both exit 0
-    [FAIL] receipts/P15_CR_cosmology/P15_the_locus_is_wrong_in_six_places_and_the_lint_cannot_see_the_worst.py  (3s)
-             (c) the excused sentence rewritten -> 1 flag(s)  ** exception lapsed, site re-flagged ** / ============================================================================== / FAILED: prop:subhorizon body: the proposition claims the branch point but its argument's receipt computes the onset -- asserts
     [slow] receipts/P15_CR_cosmology/P15_the_low_multipole_floor_moves_with_no_background_and_the_factor_two_is_the_late_isw.py  -- exceeded 600s
 
-  849 pass, 5 fail, 1 over timeout, in 5481s wall
-  ⌗ ASSEMBLED ACROSS 8 INVOCATION(S) AT THIS DIGEST, 8 OF WHICH MEASURED ANYTHING: 853 result(s) reused, 2 measured here.  Every receipt ran exactly once against tree cdf21a8206487495, and the cache is discarded whole the moment that digest changes.  The wall figure is the SUM of the invocations, not a single elapsed clock -- and it is a UNION over invocation ids, so re-assembling adds only the seconds that re-assembly itself costs (r4554: it used to add another invocation's minutes).
-  slowest that passed: C59_the_control_reproduces_camb_and_the_height_defect_was_k_truncation.py 1559s, P15_the_one_fitted_number_moves_the_scale_and_not_the_peak.py 786s, C63_no_single_source_term_carries_the_undriven_split_and_the_first_probe_read_an_unwired_knob.py 696s, P15_the_low_multipole_depth_gap_closes_and_two_defects_were_cancelling.py 558s, P15_the_driving_is_bought_by_decay_during_oscillation.py 488s
+  857 pass, 0 fail, 1 over timeout, in 2380s wall
+  ⌗ ASSEMBLED ACROSS 1 INVOCATION(S) AT THIS DIGEST, 1 OF WHICH MEASURED ANYTHING: 0 result(s) reused, 858 measured here.  Every receipt ran exactly once against tree 515a06a4e60d5753, and the cache is discarded whole the moment that digest changes.  The wall figure is the SUM of the invocations, not a single elapsed clock -- and it is a UNION over invocation ids, so re-assembling adds only the seconds that re-assembly itself costs (r4554: it used to add another invocation's minutes).
+  slowest that passed: C59_the_control_reproduces_camb_and_the_height_defect_was_k_truncation.py 1282s, P15_the_one_fitted_number_moves_the_scale_and_not_the_peak.py 815s, P15_the_low_multipole_depth_gap_closes_and_two_defects_were_cancelling.py 550s, P15_the_symmetric_comparison_was_never_runnable_and_the_quarter_was_two_fifths.py 459s, C63_no_single_source_term_carries_the_undriven_split_and_the_first_probe_read_an_unwired_knob.py 419s
 
-  ⛔ A REGISTERED RECEIPT THAT DOES NOT RUN WHERE IT IS REGISTERED IS NOT A RECEIPT.
+  Every registered receipt runs, in place, and exits 0 -- so every assertion in the
+  reproducibility layer was actually evaluated.

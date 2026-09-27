@@ -27,7 +27,8 @@ carries $\\Theta+\\Psi=\\Phi/3$ with $\\Phi$ super-horizon and constant.  $\\Lam
       *** power ratio  =  (1/1.04)^2  =  0.925    ⇒  a 7.5% LOW-ELL POWER DEFICIT ***
 
 ** ⓷ AND AT THE OTHER END, THE PAPER'S OWN DAMPING RATIO. **  $C_\\ell^{\\rm CR}/C_\\ell^{\\Lambda\\rm CDM}
-=\\exp[-(\\ell/\\ell_D)^2(r^2-1)]$, $r=1.082$ (RE-PINNED c54.223 -- was 1.093):
+=\\exp[-(\\ell/\\ell_D)^2(r^2-1)]$, $r=1.082$ (RE-PINNED c54.223 -- was 1.093); ** r6931+70.3: the paper now carries $r=0.992$, a two per cent RISE at $\\ell_D$, so
+ the numbers below are the retired fitted-onset configuration's, kept as arithmetic **:
 
       *** l = 0.5 l_D : 0.958     l = l_D : 0.843     l = 1.5 l_D : 0.681     l = 2 l_D : 0.505 ***
       (RE-PINNED c54.223 (`L-557`) from r = 1.093 -- see the note in `C10_highl_ratio`)
@@ -132,8 +133,22 @@ def main():
     check(f'⓷ and the damping ratio at l/l_D = 0.5, 1, 1.5, 2 gives '
           f'{ {k: round(v,3) for k,v in vals.items()} }',
           abs(vals[1.0] - 0.843) < 0.002 and abs(vals[2.0] - 0.505) < 0.002)
-    check('from the paper\'s own no-free-parameter form with $r=1.082$',
-          'with no free parameter' in p15 and '1.082' in p15)
+    # ** r6931+70.3 (PO-60, the vacuous green): THIS CHECK WAS HELD UP BY A BARE NUMBER.  Class (a).
+    #    `'1.082' in p15` has not matched the paper's no-free-parameter form since the fitted onset
+    #    was retired (r6770+66.3) and the common visibility-peak endpoint set the ratio at $r=0.992$
+    #    (sentence landed `2da9b74a`, merged at r6921).  It stayed green on three OTHER sentences --
+    #    "a ratio of $1.082$ gives $160$", "$1.50$ per bin at a ratio of $1.082$", "seven tenths at
+    #    $1.082$" -- which quote 1.082 as the counterfactual configuration.  *** So the pin now binds
+    #    the formula to the r the paper states, and the arithmetic above is labelled as the retired
+    #    configuration's, which is what C16's repair (r6931+70.1) did for the same number. ***
+    r_now = 0.992
+    at_lD = float(np.exp(-(r_now**2 - 1)))
+    check('⓷ the arithmetic above is at the RETIRED $r=1.082$ (the fitted-onset configuration); the '
+          'paper\'s no-free-parameter form now carries "$r=0.992$", a RISE of about two per cent at '
+          f'$\\ell_D$ -- recomputed here as {at_lD:.3f}',
+          'The high-$\\ell$ consequence follows with no free parameter' in p15
+          and 'visibility function, $r=0.992$, it is a rise of about two per cent at $\\ell_{D}$' in p15
+          and abs(at_lD - 1.016) < 0.002)
 
     print()
     if FAILED:
@@ -152,8 +167,10 @@ def main():
     print('     BOTH ** -- so CR is not at its asymptote and the contrast is gone.')
     print(f'     ⇒ the arithmetic that followed, kept as arithmetic and not as a prediction:')
     print(f'       power ratio (1/1.04)² = {ratio:.3f}, a {100*(1-ratio):.1f}% deficit ON THAT PREMISE.')
-    print('  ⓷ ** HIGH-ELL, the paper\'s own ratio: ** 0.958 at 0.5 l_D, ** 0.843 at l_D **, 0.681 at')
-    print('     1.5 l_D, ** 0.459 at 2 l_D. **')
+    print('  ⓷ ** HIGH-ELL, at the RETIRED r = 1.082 (r6931+70.3): ** '
+          + ', '.join(f'{v:.3f} at {k} l_D' for k, v in vals.items()) + '.')
+    print(f'     ** At the paper\'s current r = 0.992 the ratio at l_D is {at_lD:.3f} -- a rise, not a')
+    print('     deficit. **  The low/high contrast below was drawn on the retired configuration.')
     print('  ⇒⇒ ⓸ ** AND THE GAP IS NAMED: ** between them -- ** the acoustic peaks ** -- the chain does')
     print('     not reach, because Φ decays by ~2 there and the decay is k-dependent through k²/(3H).')
     print('     *** That gap is PO-10, and r2646\'s gate now has a MECHANISM rather than a category. ***')

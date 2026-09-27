@@ -128,10 +128,20 @@ def main():
     # **   ⇒ *A replacement count is not a removal count, and asserting them equal turns prose being
     # **     tightened into a receipt failure.*  What is load-bearing is that the hedge is GONE and
     # **     the computed figure is CARRIED, so that is what is asserted; both numbers are reported.
+    # ** r6931+70.3 (PO-60, the vacuous green): `p15.count('8.2') >= 1` WAS HELD UP BY A BARE NUMBER.
+    #    Class (a).  The bare figure r2755 put in place of the hedges left P15 when the fitted onset
+    #    was retired (r6770+66.3; `de97f96e`, `1a2ab59c`); since then the single "8.2" in P15 is the
+    #    CONTROL arm's polarisation pull, "the control by $8.2\\%$".  *** The resolution this check
+    #    records is r2755's, so the carried figure is counted where r2755 left it -- c54.223
+    #    (`3edaeea0`) -- and the hedges are asserted still gone at HEAD, which is the part of the
+    #    finding that is about the live paper. ***
+    _at_r2755 = _p15_at('3edaeea0')
+    _carried = len(re.findall(r'8\.2\\%', _at_r2755))
     check(f'⛭ and r2755 resolved the contest and took every hedge off: {_n_now} tilde-marked site(s) '
-          f'remain of the {_n_before} there were, and the bare figure is carried at '
-          f'{p15.count("8.2")} site(s) -- *** the rule held; the STATE moved ***',
-          _n_now == 0 and p15.count('8.2') >= 1)
+          f'remain of the {_n_before} there were, and a bare `8.2\\%` occurs at {_carried} '
+          'site(s) where r2755 left it (c54.223) -- *** the rule held; the STATE moved ***',
+          _n_now == 0 and _carried >= 1
+          and len(re.findall(r'\{\\sim\}8\\%', _at_r2755)) == 0)
     c8 = rcpt('C8_diffusion_length.py')
     # ** C8 prints the figure from an f-string, so the number is COMPUTED and not literal --
     # which is stronger: it cannot go stale against its own derivation. **

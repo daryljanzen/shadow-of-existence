@@ -42,7 +42,7 @@ when its two halves turned out to be one argument.
 
 The progenitor is a physical system with its own dynamics, and ** the corpus has already walked that
 route once: ** L-150 sec:0 found the progenitor's composition DERIVED --
-(rho_r/rho_m)_max ~ 7.3e-4, turnaround z ~ 1.5, mass 4.3e52 kg.  ** What is closed is the SUBSTRATE
+(rho_r/rho_m)_max ~ 7.3e-4, turnaround z ~ 1.5, mass 4.17e52 kg.  ** What is closed is the SUBSTRATE
 route.  The progenitor route is open and has been walked. **
 
 WHAT IS NOT CLAIMED.  Not that A_s or n_s have been derived from the progenitor -- they have not.  Not
@@ -133,8 +133,14 @@ def main():
     check("AND THE PROGENITOR ROUTE HAS BEEN WALKED: the capstone carries the progenitor's "
           "composition DERIVED, (rho_r/rho_m)_max ~ 7.3e-4",
           '7.3\\times10^' in cap)
-    check('with a mass of 4.3e52 kg -- so "not from the substrate" is not "not at all"',
-          '4.3\\times10^{52}' in cap)
+    # ** r6931+70.3: class (a), A PIN THAT FROZE A VALUE THE CORPUS CORRECTED.  The progenitor is
+    #    the forced member, so its mass M = c^2/(3 sqrt(Lambda) G) runs as 1/H0: 4.3e52 is the Planck
+    #    configuration's figure and 4.17e52 the one at the H0 the distances fix.  r6921 (5f9c2b2d)
+    #    corrected P15/P16; r6939 (f02fad17) carried it into the capstone this check reads.  The
+    #    finding -- the progenitor route is walked and carries a mass -- is unchanged, so the pin
+    #    follows the correction, and the retired figure is asserted gone rather than tolerated. **
+    check('with a mass of 4.17e52 kg -- so "not from the substrate" is not "not at all"',
+          '4.17\\times10^{52}' in cap and '4.3\\times10^{52}' not in cap)
 
     print()
     if FAILED:
