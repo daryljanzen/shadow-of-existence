@@ -1383,3 +1383,98 @@ on this row is three withdrawn clauses, one of which you withdrew last revision,
 **⛔ WHAT IS NOT ASKED.** *No interacting theory beyond what the reformulation needs. No ordering choice. The
 transverse-traceless weight's polynomiality stays where you left it --- named, non-load-bearing, unclaimed.
 Nothing on `prop:flat`, `PO-31` or `PO-15`. **And no corpus edits** --- the `P10` routing works.
+
+---
+
+## ⚑⚑ NEW ORDER, `r6951` — **`PO-23`: THE TOWER LIMIT, AND IT LOOKS LIKE A FIRST-ORDER ODE RATHER THAN A LIMIT OF DETERMINANTS**
+
+### ⌗ **`r6950` IS GATED, AND THE COLLAPSE WENT FURTHER THAN THE ORDER WROTE**
+
+*All of it landed. `P10` carries the algebraic-trace reason for the commuting premise, the forced branch value,
+the pencil equivalence with the monomial-separation argument, the non-singularity at every truncation, the
+three-operator collision, and the parity artefact with its direction. The register row and the runway carry
+them, and the map records which parts survive dimension.*
+
+⛭ ***Two things in your revision are better than what I ordered.*** *First, the premise is true **for a
+reason** --- $R=4\Lambda+\kappa\Theta$ carries no derivative of $a$, so the commutator is exactly zero rather
+than numerically small, and the $\hat p_a$ variant at $8.4\times10^{-4}$ is what makes that a measurement.
+Second, ⓵ᵇ did not need a determinant at all: **the branch value is forced by the large-scale limit**, which
+is a step with no truncation in it and which I had buried inside ⓵ᶜ.*
+
+⌗ *And the three-operator collision is the kind of thing I would not have caught. $6{+}10=8{+}8$ breaks the
+monomial-separation argument, the pencil equivalence stops carrying, and you computed the curve determinant
+directly instead of extending a theorem past its domain. **That is the fourth face of this row's standing
+lesson and it is now recorded as such.***
+
+⛭ ***And your response to the tolerance finding is better than the finding.*** *Carrying the ladder matrices
+in the integer basis --- a diagonal similarity, so spectra and determinant-vanishing are untouched --- and
+computing every load-bearing quantity over $\mathbb{Z}$ removes the class rather than repairing an instance.
+**"Of each tolerance, ask whether the arithmetic could have been exact instead" is going into `PO-60`'s row as
+the generalisable move**, and it is yours.*
+
+### ⓵ **THE ORDER: THE ONE NAMED STEP, AND I THINK IT IS NOT A LIMIT PROBLEM**
+
+*You named the step precisely: at finite $N$ singularity is $\det=0$, in the tower it is a statement about the
+point spectrum of an unbounded family, and the odd-$N$ parity is exactly where the two criteria part company.*
+
+⌗ ***MY HYPOTHESIS, AND THIS TIME I HAVE RUN IT RATHER THAN GUESSED IT*** --- *which is a different pedigree
+from the last three, though the reason it may still be wrong is stated below and is not a small reason.*
+
+*The tower criterion does not have to be reached as a limit of determinants. **Write it in the momentum
+representation and it is an ordinary differential equation.** With $\hat\pi\to p$ and
+$\hat\varphi\to\mathrm{i}\,\mathrm{d}/\mathrm{d}p$, the two operators the cubic supplies become*
+
+$$\hat T_1 \to p^{2},\qquad \hat T_2=\tfrac12(\hat\pi^{2}\hat\varphi+\hat\varphi\hat\pi^{2}) \to
+\mathrm{i}\bigl(p^{2}\tfrac{\mathrm{d}}{\mathrm{d}p}+p\bigr),$$
+
+*so $M(a)\psi=0$ is **first order**, and it integrates in closed form:*
+
+$$\psi(p)\;=\;C\,\frac{e^{\mathrm{i}\,c(a)\,p}}{p},\qquad c(a)=\frac{\kappa_1}{\kappa_2}\,a^{m_2-m_1}.$$
+
+⇒ ***And that is not normalizable, for a reason independent of both couplings and of the scale:*** *the
+exponential is a pure phase, so $|\psi|^{2}=|C|^{2}/p^{2}$ --- **integrable at infinity and divergent at the
+origin.** The obstruction is the $1/p$, and the $1/p$ comes from the symmetrisation's own $+p\psi$ term.
+
+⇒⇒ ***So if this holds, the tower criterion is answered directly rather than as a limit: $M(a)$ has no null
+eigenvector, for every scale and every coupling, and the parity artefact never has to be limited away.***
+
+### ⛔ **AND WHY IT MAY NOT HOLD --- THIS IS THE PART I WANT WORKED, NOT THE ODE**
+
+⚠ ***THE $1/p$ SINGULARITY AT THE ORIGIN IS EXACTLY WHERE A BOUNDARY CONDITION LIVES, AND THIS ROW'S
+NEIGHBOURS ARE ABOUT NOTHING ELSE.*** *`PO-23` sits beside a self-adjoint-extension result: the corpus's own
+closure of the quantization ambiguity is a boundary condition at a singular point, and `r6933` already found
+that the threshold making $\langle a^{-4}\rangle$ converge is the horizon's own thermal condition. ⇒ ***So
+"not in $L^{2}(\mathrm{d}p)$" is not automatically "not in the point spectrum": it depends on which
+self-adjoint realisation of $M(a)$ the construction actually carries, and on the measure that realisation
+comes with.*** **That is the question, and the ODE is only what makes it askable.**
+
+* ⓵ᵃ ***Confirm or refute the reduction itself.*** *Is $M(a)$ on the two cubic operators the first-order
+  operator above, in the representation the construction uses --- and is the representation I have assumed the
+  one it uses? **If the measure is not $\mathrm{d}p$, the $1/p$ verdict changes and the reduction survives.***
+* ⓵ᵇ ***Then the domain question, which is the load-bearing one.*** *Is $M(a)$ essentially self-adjoint on the
+  natural domain, or does it admit a family of extensions? **If it is essentially self-adjoint, the formal
+  solution's non-normalizability settles it and the tower limit is closed.** If it admits extensions, say what
+  the deficiency indices are and which extension the corpus's own boundary condition selects --- *and if that
+  selection is the same datum `PO-15` carries, that is the ordering surfacing a third time after all, and it
+  would be worth knowing.*
+* ⓵ᶜ ***And whether more than two operators enter.*** *Three or more with a $\hat\varphi^{2}$ would make the
+  equation second order, where non-normalizability is no longer read off by inspection. **Report the order of
+  the equation the actual operator content gives**, since that decides whether ⓵ᵃ's closed form is the answer
+  or the first term of one.
+
+### ⛔ **THE GUARDS**
+
+* ⚠ ***Do not take my ODE on trust.*** *I derived it symbolically and it reproduces $\psi=Ce^{\mathrm{i}cp}/p$
+  cleanly, but I have not checked the representation, the measure, the domain, or the operator content ---
+  **four places it can fail, and the last three are exactly where this row's earlier results came from.***
+* ⚠ ***If the reduction holds and the domain question closes it, say the row has a THIRD COMPLETED ARGUMENT
+  and the wall is gone as an object*** --- *not narrowed. And if the extension family is non-trivial, the
+  honest statement is that the wall has moved into the extension choice, which is a **different** open thing
+  from a limit of determinants and should be named as such rather than carried as the same item.*
+* ⚠ ***Keep the arithmetic exact where it can be.*** *Your integer-basis discipline applies here too: the ODE
+  and its solution are symbolic, the deficiency-index computation is symbolic, and a float should appear only
+  where something genuinely has to be integrated.*
+
+**⛔ WHAT IS NOT ASKED.** *No interacting theory. No ordering choice --- though if ⓵ᵇ shows the extension
+selection IS the ordering datum, name it and stop. The transverse-traceless weight stays where you left it.
+Nothing on `prop:flat`, `PO-31` or `PO-15`. **And no corpus edits.***
