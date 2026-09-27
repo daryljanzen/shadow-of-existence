@@ -1,180 +1,27 @@
 
-  RUN-ALL-RECEIPTS -- 850 registered receipt(s), 2 at a time, 600s each, each from ITS OWN DIRECTORY
+  RUN-ALL-RECEIPTS -- 855 registered receipt(s), 2 at a time, 600s each, each from ITS OWN DIRECTORY
   DECLARED LONG: C59_the_control_reproduces_camb_and_the_height_defect_was_k_truncation.py runs on 1800s, not 600s -- named, with its measured cost in the source
   DECLARED LONG: C63_no_single_source_term_carries_the_undriven_split_and_the_first_probe_read_an_unwired_knob.py runs on 900s, not 600s -- named, with its measured cost in the source
   DECLARED LONG: P15_the_one_fitted_number_moves_the_scale_and_not_the_peak.py runs on 1500s, not 600s -- named, with its measured cost in the source
   DECLARED LONG: P15_the_symmetric_comparison_was_never_runnable_and_the_quarter_was_two_fifths.py runs on 900s, not 600s -- named, with its measured cost in the source
-  TREE-DIGEST: bd536fbec25e3436
+  TREE-DIGEST: cdf21a8206487495
 
-    [FAIL] receipts/L147_two_arm/B10_the_thermal_mechanism_needs_an_exponential_approach.py  (1s)
-               OK    ⌗ c54.202's footing: the near-horizon geometry of the degenerate member is dS_2 x S^2, which carries a scale of its own /     OK    and it says the two readings are not reconciled there, and claims the coincidence rather than a value /   2 check(s) FAILED
-    [FAIL] receipts/L150_the_datum/X1_the_ratio_is_a_clock_reading_not_a_carried_datum.py  (0s)
-               OK    rho_r/rho_m is DIMENSIONLESS -- the same dimension over itself, which is what makes the one-constant law apply to it /     FAIL  P15 already names z_onset as its ONE FITTED PARAMETER and says its status should be stated plainly -- so this argument does not touch it and the fork keeps pinni
-    [FAIL] receipts/L165_defining_the_sum/S4_the_open_half_is_the_floor.py  (0s)
-               OK    so the boundedness question is about COMPLETION, not sign -- and P10 states the leading-order spectrum as "bounded below by $\gamma$ and unbounded above" /     OK    ⌗ and the commutation is structural, not perturbative: "As $\hat\Gamma$ commutes with the radial part, $-\partial_x^2+\hat\G
-    [FAIL] receipts/L165_defining_the_sum/S50_the_counterterm_basis_is_one_dimensional_because_the_background_family_is.py  (1s)
-             'counterterm' in P10's printed body : 14 before this revision -> 14 now / ============================================================================== / FAILED: P10 does not carry: the basis degeneracy is stated with its reason
-    [FAIL] receipts/L200_free_data_count/U1_the_count_as_the_corpus_now_states_it.py  (0s)
-               OK    the retired ledger closed the gravitational-quantum sector at ZERO free constants /     OK    and recorded the matter-side count as OPEN -- which is what has since moved /   6 check(s) FAILED
-    [FAIL] receipts/L200_free_data_count/U2_the_matter_sector_spends_none.py  (0s)
-               OK       and both occurrences sit in the one paragraph that walls the coupling -- the second added c54.216 states the bound is on the TARGET, not the route /     OK    and "free constant" occurs nowhere in P14 /   1 check(s) FAILED
-    [FAIL] receipts/L200_free_data_count/U3_the_residue_is_one_and_it_is_already_counted.py  (0s)
-               FAIL  ⇒ and r3787 unstamped it: the paper asserts it directly now rather than under "[Reach: ]" /     OK    L-201's sharp target -- "any constant maximal symmetry does not reach" -- has no room: the quotient is 1-dimensional and IS the scale /   2 check(s) FAILED
-    [FAIL] receipts/L202_the_seam/T1_the_transfer_is_half_built.py  (0s)
-               FAIL  so what the transfer would isolate is the residual: "with the tilt-irreducible residual the part the transfer would isolate" /     OK    ⌗ and the PO-12 row carries the debt but not the split /   4 check(s) FAILED
-    [FAIL] receipts/L204_physics_reach/P13_the_entropy_is_the_corpuss_own_number.py  (1s)
-               OK    ⇒⇒ SO T = 1/(2 pi alpha) IS A ONE-REGISTER QUANTITY AND S IS A GAUGE-COUNT ACROSS TWO -- a structural reason for the asymmetry, not a decline /     FAIL  ⚠ and the corpus states its fine-tuning conjecture "as the hypothesis it is, to be grounded through the matter sector" /   1 check(s) FA
-    [FAIL] receipts/L204_physics_reach/P2_the_corpus_never_mentions_unruh.py  (0s)
-               OK    ⌗ and the argument SURVIVES the test, because it is already the COMPLETION argument: the thermal flux is absent for want of a horizon that FORMS, not for want of one that is invariant /     OK    ⇒ Unruh is a standing counterexample to "perspectival horizon implies no thermal flux" -- whic
-    [FAIL] receipts/L204_physics_reach/P3_the_higgs_is_declined_in_print_and_never_named.py  (0s)
-               OK    with CR's own one-constant theorem saying it cannot supply the strengths /     OK    ⇒⇒ AND THE ANSWER IS IN A PAPER NOW -- the one-clause fix this receipt asked for was made at c54.203, discharging L-217's live half.  The ledger's own sentence must still be there for the paper clause to b
-    [FAIL] receipts/L204_physics_reach/P4_the_corpus_identifies_the_higgs_mechanism_it_does_not_decline_it.py  (0s)
-               OK    ⌗ and the neighbouring structure is built: $\gamma^5$ fixes the massless fermions /     OK    ✔ NOW while "Higgs" still appears ZERO times, so the identification is invisible to search /   2 check(s) FAILED
-    [FAIL] receipts/L211_closure_adjacency/A1_the_venue_question_dissolves_and_curvature_remains.py  (0s)
-               OK    and F13 established su(3) embeds in exactly one real form /     OK    L-211's procedure is what joined three papers no single reading would have /   3 check(s) FAILED
-    [FAIL] receipts/L211_closure_adjacency/A2_the_three_owed_derivations_are_one_boundary.py  (0s)
-               OK    AND THE PROGENITOR ROUTE HAS BEEN WALKED: the capstone carries the progenitor's composition DERIVED, (rho_r/rho_m)_max ~ 7.3e-4 /     OK    with a mass of 4.3e52 kg -- so "not from the substrate" is not "not at all" /   1 check(s) FAILED
-    [FAIL] receipts/L220_arrival_paths/V2_the_arrival_path_admits_no_metric.py  (0s)
-               OK    U1: P16 answers a question in the next sentence and never asks it /     OK    V1/G1: rem:carter-chain was ALREADY written by the fork before the item was routed /   2 check(s) FAILED
-    [FAIL] receipts/L221_quark_lepton/C2_gradings_become_fields_by_being_a_kernel.py  (0s)
-               FAIL  ⇒ SO THE UNBUILT THING IS AN OPERATOR, NOT A SECTOR -- because an operator is exactly what the coloured side had and the colourless side lacks /     OK    ⛔ and nothing here exhibits such an operator or argues one exists -- PO-5 stays open /   3 check(s) FAILED
-    [FAIL] receipts/L221_quark_lepton/P14_the_three_bridges_off_the_grading_all_land_on_the_same_ceiling.py  (1s)
-                   closed is a vein MAPPED, and the fourth stays dark and named* / ============================================================================== / FAILED: P14 declares PO-5 closed — a vein has been flattened; the clause does not decline the stronger reading — it will be over-read
-    [FAIL] receipts/L221_the_bridge/B15_po3_both_clauses_answered.py  (0s)
-               OK    ⛭⛭ ⓸ and PO-3 ALREADY CARRIES the generation clause -- "The bridge was BUILT at c54.42--c54.62 ... the smallest connected group containing the three wall monodromies and the hinge $3$-cycle is $SU(3)$" /     OK    so BOTH clauses are in this one row, and it still reads OPEN /   1 check(s) 
-    [FAIL] receipts/L221_the_bridge/B66_po5s_route_is_gated_on_po11.py  (0s)
-               OK    ⇒ ** and the register did not record the PO-5 → PO-11 link before this receipt ** -- at 465ebef05a^ the PO-5 row read as gated on nothing /     OK    ⇒ ⛭ AND IT DOES NOW, which is this receipt landing rather than this receipt breaking: PO-5 is gated on ['PO-11'] in the live register /   2 
-    [FAIL] receipts/L221_the_bridge/B6_the_object_is_delivered_and_the_row_argues_elsewhere.py  (0s)
-               OK    ⓷ P14 lists the coupling as NOT delivered: "the bundle above is flat, so the construction supplies colour's exact selection rules and no force" /     OK    and weak isospin as a gauging: "$T$ is a discrete horn swap and delivers a species label, not $SU(2)_L$'s chiral action" /   2 check(s
-    [FAIL] receipts/L221_the_bridge/B7_two_unbuilt_sectors_not_one.py  (0s)
-               OK    while the two remain distinct for the reason this receipt gave -- the leaf-bound modes are not the propagating field, which is why they were never one sector /     OK    ⌗ and the ledger now carries it as NAMED-UNBUILT again, with the correction recorded /   3 check(s) FAILED
-    [FAIL] receipts/L221_the_bridge/B8_po4_targets_have_opposite_verdicts.py  (0s)
-               OK    with the difference located: "the two occupations differing on the right-handed pair" /     OK    ⓸ and the sector's own count is reduced: "So the undelivered content is two items and not three. What remains genuinely outstanding is the gauge group and the multiplet structure" /   1 check(
-    [FAIL] receipts/L237_gates_check_declarations/G50_the_receipt_runner_gate_was_green_because_its_cache_had_no_expiry.py  (1s)
-           FAILED: the X1 instance no longer reproduces — the finding must be re-stated, not left asserted; the runner still does not run: lainly -- so this argument does not touch it and the fork keeps pinni /   0 pass, 1 fail, 0 over timeout, in 0s wall /   ⛔ A REGISTERED RECEIPT THAT DOES NOT RUN WHERE IT I
-    [FAIL] receipts/L253_the_seed_that_stopped_seeding/S1_a_seed_that_stops_constructing_its_defect_accuses_the_gate_it_defends.py  (2s)
-               f'{open(os.path.join(ROOT, rel), encoding="utf-8").read().count(pat)} now') /        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ / FileNotFoundError: [Errno 2] No such file or directory: '/home/claude/shadow-of-existence/receipts/L555_merge_duplication/M1_the_merge_duplicated_four_protected_
-    [FAIL] receipts/L255_the_exemption_was_a_claim/E1_an_exemption_is_a_claim_and_all_three_were_false.py  (59s)
-               all(('REPAIRED' in open(os.path.join(ROOT, p), encoding='utf-8').read() /                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ / FileNotFoundError: [Errno 2] No such file or directory: '/home/claude/shadow-of-existence/receipts/L555_merge_duplication/M1_the_merge_duplicated_four_
-    [FAIL] receipts/L256_the_band_taken/B1_a_finding_that_routes_its_own_remedy_and_then_recurs_is_not_waiting.py  (7s)
+  RESUME: 853 result(s) reused from /tmp/claude-0/-home-user-shadow-of-existence/4913e7eb-3c04-585c-bc52-ac1b69fc5eb8/scratchpad/suite.cache, 2 left to run
+
+    [FAIL] receipts/L256_the_band_taken/B1_a_finding_that_routes_its_own_remedy_and_then_recurs_is_not_waiting.py  (10s)
                OK    ⓺ᵈ and N1 WITHDRAWS its own routing in place rather than being quietly superseded /   1 check(s) FAILED /     - ⓸ᶜ¹ on a repository this file BUILDS -- two unmerged commits, r4000 EVEN and r4001 ODD -- the even band flags [] and the flipped band flags []: the fl
     [FAIL] receipts/L257_the_label_did_double_duty/V1_a_strike_that_reads_as_done_and_a_paper_that_says_otherwise.py  (2s)
-               - ⓶ P07 says the shared character of the wall does NOT settle it, and that the UV definition is "a genuine open frontier of the programme's quantum sect /     - ⓸ P10 has since SETTLED the straddle -- "The straddle itself is now a computed fact" -- so the item PART 4 carried as owed-but-not-load
-    [FAIL] receipts/L258_the_pin_and_the_thing_that_moves/M1_five_checks_pinned_to_things_that_move_and_one_that_no_control_could_separate.py  (3s)
-             2 check(s) FAILED /     - ⓸ B66 exits 1 /     - ⓸ P1 exits 1
-    [FAIL] receipts/L259_the_distance_from_the_present/D1_a_check_pinned_to_a_distance_from_the_present_is_pinned_to_the_present.py  (19s)
+               - ⓵ᶜᐢ ⛭ and the retirement did not lose the object -- exactly one of ('114e4d9ede', '38005b708a') is LIVE and it is the one the papers' own scan raises, /     - ⓵ᵈ and nothing is left UNVERDICTED: 4 /     - ⓹ᵇ ⌗ 1 WARN(s) remain -- entries naming sentences no longer in any paper.  This file reco
+    [FAIL] receipts/L259_the_distance_from_the_present/D1_a_check_pinned_to_a_distance_from_the_present_is_pinned_to_the_present.py  (102s)
                OK    ⓸ᵇ and with it back the receipt exits 1 -- so the repair is what makes it green, not the tree happening to sit at a convenient revision /   1 check(s) FAILED /     - ⓷ᶜ and `B1` exits 1
-    [FAIL] receipts/L261_the_question_was_answered/A1_a_check_on_whether_a_question_is_still_open_punishes_the_answer.py  (8s)
+    [FAIL] receipts/L261_the_question_was_answered/A1_a_check_on_whether_a_question_is_still_open_punishes_the_answer.py  (36s)
                OK    ⓹ ⌗ and the pinned historical fact is untouched: `N1` still records that it ROUTED the band and that the routing was withdrawn, which is a claim about commits and not about the present /   1 check(s) FAILED /     - ⓷ᵇ and both exit 0
-    [FAIL] receipts/L262_half_a_family/F1_a_table_that_covers_half_a_family_fails_on_the_rest_of_it_later.py  (89s)
-             2 check(s) FAILED /     - ⓹ S1_a_seed_that_stops_constructing_its_defect_a exits 1 /     - ⓹ E1_an_exemption_is_a_claim_and_all_three_were_ exits 1
-    [FAIL] receipts/L263_the_station_audit/S1_three_of_eight_stations_are_already_held_and_one_was_noticed_and_not_propagated.py  (1s)
-             2 check(s) FAILED /     - ⓸ᶜ and it earned itself on this very audit: `equivariant index` ×8 reads as a hole in the theatre's prose and is P13 using the Atiyah--Hirzebruch obst /     - ⓸ᵈ and `permutation representation` ×1 reads as an opening and is P14 citing the discrete-flavour literature, not
-    [FAIL] receipts/L268_broken_by_its_own_edit/O1_a_receipt_that_asserts_a_state_its_own_revision_changes_is_false_when_committed.py  (1s)
-               OK    ⓸ᵈ ⌗ and nothing about the FINDING moved: the checks that establish the three held stations read the PAPERS, which this revision does not touch /   1 check(s) FAILED /     - ⓸ᶜ and L-263/S1 exits 1
-    [FAIL] receipts/L548_propagating_sector/C1_the_tortoise_divergence_is_the_normalisation_of_the_object_not_the_obstruction_to_it.py  (5s)
-               OK    ⛭ SCOPE CONTROL: the exponential belongs to the SIMPLE root -- as M -> Nariai (0.1924501) both surface gravities go to zero: 0.12000->(1.56031,0.67895), 0.19000->(0.17049,0.15067), 0.19240->(0.02302,0.02262), 0.19245->(0.00097,0.00097) /     OK       ⇒ nothing here is claimed at a double r
-    [FAIL] receipts/L550_third_mechanism/M1_the_third_mechanism_is_bounded_and_the_bound_is_two_sentences_earlier.py  (0s)
-               i_dim, i_res = p14.index(dim), p14.index(residue) /                                    ^^^^^^^^^^^^^^^^^^ / ValueError: substring not found
-    [FAIL] receipts/L553_the_shear_counterterm/S1_the_shear_needs_exactly_one_new_counterterm.py  (4s)
-               FAIL     ⚠ and P10 states the parity-odd caveat rather than leaving it to be found: "a linearly polarised mode returns zero for it, and the corpus carries a chirality" /   [4s] /   1 check(s) FAILED
-    [FAIL] receipts/L557_the_correction_stopped_at_the_sentence/R1_the_correction_stopped_at_the_sentence_and_the_number_it_defines_was_left_behind.py  (0s)
-               OK    ⛭ and r2755 moved the state -- it settled the contest and removed all nine hedges -- so the first's verdict is the operative one and the second's rule is what licensed the change /     OK    ⌗ and 5 register/ledger file(s) still carry the stale value and are ROUTED, not edited: CORPUS_MAP.
-    [FAIL] receipts/L559_the_registry_from_files_inward/O1_the_registry_was_turned_outward_and_the_arrow_still_pointed_one_way.py  (2s)
-               OK    ⓺ check_receipt_orphans: clean 0; an unrowed file added -> 1 (named); restored 0, byte-identical (True) /     OK    ⇒ AND THE DECLARATION IS WHAT EXEMPTS, NOT THE IMPORT: with `NOT-A-RECEIPT:` removed the engine FAILS, though three receipts still import it -- so an exemption cannot be acqu
-    [FAIL] receipts/L560_pins_into_moving_prose/P1_the_last_five_failures_were_pins_into_prose_that_later_correct_work_moved.py  (1s)
-               OK    ⚠ at 50f0d3f (c54.226) this file did NOT read whether the CONTENT survives under other words: W1 stated the count and said so in terms, routed rather than interpreted /     OK    ⛭ AND c54.228 (`L-561`) ANSWERED IT -- against this fork: the probe compared STRINGS where the question was abo
-    [FAIL] receipts/L803_station9_neff/S1_the_cosmology_sector_rests_on_neff_and_never_names_it.py  (3s)
-               OK    and raising N_eff by ONE shifts 100*theta_* by ~ -3% and r_drag by ~ -5 Mpc (got -3.21% and -4.7 Mpc) -- a large lever, per unit N_eff, on exactly the ell_A/r_s the sector predicts to 0.075%/15.7 sigma /     OK    and the missing name is load-bearing for CR specifically: the construction c
-    [FAIL] receipts/L_probability/R1_the_whole_footprint_is_three_geometry_words.py  (1s)
-             VERDICT: 2 CHECK(S) FAILED /     cosmic variance occurs twenty-four times /     the control word is found, and P15 carries twenty-four (26 before r4111's restatement, 23 before r6427's absorption bound)
-    [FAIL] receipts/P03_SdS_slicing/P03_the_symbol_T_carries_four_structural_referents.py  (0s)
-               _p5 = open('corpus/groupoid_paper.tex', encoding='utf-8', errors='replace').read() /           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ / FileNotFoundError: [Errno 2] No such file or directory: 'corpus/groupoid_paper.tex'
-    [FAIL] receipts/P03_SdS_slicing/P03_the_symbol_w_carried_two_circles.py  (0s)
-               P3 = open('corpus/SdS-slicing-curve_v2.tex', encoding='utf-8', errors='replace').read() /          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ / FileNotFoundError: [Errno 2] No such file or directory: 'corpus/SdS-slicing-curve_v2.tex'
-    [FAIL] receipts/P07_CR_framework/I7_conserved_charge_carries_three_objects_and_one_denies_the_others.py  (0s)
-           ============================================================================== /   VERDICT: 1 CHECK(S) FAILED /     exactly one paper carries two senses of the same phrase
-    [FAIL] receipts/P14_matter_sector_paper/D2_index_carries_three_senses_inside_one_paper.py  (0s)
-             VERDICT: 2 CHECK(S) FAILED /     x14 in all /     P14 carries seven of them
-    [FAIL] receipts/P14_matter_sector_paper/P14_p3_already_said_it.py  (0s)
-               assert _m14.count("disjoint support") >= 1, \ /            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ / AssertionError: P14 must still carry 'disjoint support' -- if this fires the premise is lost from the corpus
-    [FAIL] receipts/P14_matter_sector_paper/P14_the_lifts_two_plus_one_is_not_graded_by_R_after_K_and_the_wrong_C_object_would_have_said_it_was.py  (0s)
-               _tex = open('corpus/matter_sector_paper.tex', encoding='utf-8').read() /            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ / FileNotFoundError: [Errno 2] No such file or directory: 'corpus/matter_sector_paper.tex'
-    [FAIL] receipts/P15_CR_cosmology/C14_po12_gates_po10.py  (0s)
-               OK    ⓸ and PO-12 is half built: its step ① is computed in sec:envelope /     OK    ✔ and NOW neither row records the dependency /   2 check(s) FAILED
-    [FAIL] receipts/P15_CR_cosmology/C16_the_transfer_is_six_eighths_built.py  (1s)
-               OK    ⛭⛭⛭ ⓸ and a $C_\ell$ ratio with no free parameter is already in the paper: "$C_{\ell}^{\rm CR}/C_{\ell}^{\Lambda\rm CDM}=\exp[-(\ell/\ell_{D})^{2}(r^{2}-1)]$ with $r=1.082$" /     OK    and recomputing it at $\ell=\ell_D$ gives 0.843, matching the paper's $0.84$ /   1 check(s) FAILED
-    [FAIL] receipts/P15_CR_cosmology/C17_the_instrument_already_carries_both.py  (0s)
-               FAIL  while the debt names the other background: "specifying how the fluctuations gravitate on the geometric stacking background" /     OK    and the corpus states what would differ: "the whole difference is carried by $H(a)$" /   1 check(s) FAILED
-    [FAIL] receipts/P15_CR_cosmology/C18_bespoke_means_two_legs.py  (0s)
-               FAIL  calling it forced: "This is forced: it is the same L1 rate that dissolves the Hubble tension" /     OK    ⓸ while the instrument is described as single-background: "The full flat-projection transfer" /   2 check(s) FAILED
-    [FAIL] receipts/P15_CR_cosmology/C23_the_gap_estimated.py  (0s)
-               OK    ⚠ ⓷ and 0.813 sits near the damping ratio 0.843 at $\ell_D$ -- DIFFERENT ORIGINS, named so they are not conflated /     OK    ⛭ and the correction WIDENED the coincidence rather than tightening it: the gap was 0.010 at r = 1.093 and is 0.030 at r = 1.082 -- so the "do not conflate" warning
-    [FAIL] receipts/P15_CR_cosmology/C24_the_substitution_itemised.py  (0s)
-               FAIL  ⓸ and P15 pins $\theta_*$: "Holding $\ell_{*}$ to its measured value fixes the onset redshift" /     OK    so only $r_D$ moves, by +6.8% -- against P15's stated $+9.4\%$, the gap being that the 13% is LOCAL while the integrals ACCUMULATE /   2 check(s) FAILED
-    [FAIL] receipts/P15_CR_cosmology/C25_the_gap_closed_by_integration.py  (0s)
-               OK    ⓷ and the dependence is MONOTONIC in the onset redshift, which is what makes $\theta_*$ and $\theta_D$ two constraints rather than one /     FAIL  as P15 argues: "it varies from $+43\%$ to $-3\%$ across the onset redshifts one might consider, so a single datum cannot absorb both observable
-    [FAIL] receipts/P15_CR_cosmology/C26_the_onset_is_not_free.py  (0s)
-               OK    and weighting toward recombination brings it down: $a^3\to+8.7\%$, $a^6\to+7.8\%$ -- P15's $+9.4\%$ lies between them /     OK    which is what a collapsing $x_e$ does, since P15's integrand carries $g(R)/(H x_e)$ /   3 check(s) FAILED
-    [FAIL] receipts/P15_CR_cosmology/C28_length_against_angle.py  (0s)
-               OK    while the length ratio ALONE is +10.8% and the angle ratio ALONE is +9.3% -- both stated, both with passing receipts /     OK    ⓸ and r2689's bracket [7.0, 13.1] contains BOTH numbers, so it was never in conflict with the paper /   1 check(s) FAILED
-    [FAIL] receipts/P15_CR_cosmology/C29_nothing_to_calculate_across_the_join.py  (0s)
-               FAIL  with "every mode at and above the acoustic peaks crossed before the plasma began" /     FAIL  ⓷ and P15 states the residue: "on this rate nothing before the onset can imprint an acoustic phase, so whatever sets it must act on modes already inside the sound horizon when the plasma begins" /
-    [FAIL] receipts/P15_CR_cosmology/C30_the_odd_even_half_is_shared.py  (0s)
-               OK    ⓷ so the pattern is arithmetic in $R$ alone: $1+3R=2.80$, $|1-3R|=0.80$, ratio 3.50 /     OK    ⛭ ⓸ and $R=3\rho_b/4\rho_\gamma$ is a ratio of CONTENTS, so the rate difference -- which P15 says carries "the whole difference" -- does not enter it /   3 check(s) FAILED
-    [FAIL] receipts/P15_CR_cosmology/C31_half_one_owes_a_rule.py  (0s)
-               OK    and the high-$\ell$ ratio "follows with no free parameter" /     FAIL  ⛭⛭ ⓷ and the comparison's RULE -- owed FIRST, before its number -- is now set and stated: the same five parameters free in each arm, at equal fitted-parameter count /   4 check(s) FAILED
-    [FAIL] receipts/P15_CR_cosmology/C32_half_one_is_model_selection.py  (1s)
-               OK    so $\Delta$AIC $=2(6-1)=10.0$ and $\Delta$BIC $=5\ln215=26.9$ in CR's favour before any $\chi^2$ is scored /     FAIL  ⓷ with CR's single parameter stated by P15: "the single CMB-calibrated $\Omega_{m}" /   1 check(s) FAILED
-    [FAIL] receipts/P15_CR_cosmology/C33_the_threshold_corrected.py  (0s)
-               OK    while r2709's figure was 26.9 -- the correction moved it by 5.4 and did not touch the conclusion /     OK    ⓸ and the AICc correction is negligible at $N=215$: 0.06 at $k=2$ against 0.40 at $k=6$, shifting $\Delta$AIC by 0.35 /   2 check(s) FAILED
-    [FAIL] receipts/P15_CR_cosmology/C34_the_deliverable_is_a_pair.py  (0s)
-               FAIL  ⛭⛭ ⓶ᵇ and P15 states it MORE strongly now, which is why the pins broke: "The seam datum carries two freedoms, and how far the first peak moves with them is measured" -- across the seventeen admitted readings the first peak spans $148$ to $228$, a factor of $1.541$, the sky's $220.6$ inside
-    [FAIL] receipts/P15_CR_cosmology/C38_the_comparison_scores_derivations.py  (0s)
-               OK    and $A_s$ is "anchored" at the first peak by a value the construction "inherits rather than predicts" -- also not a test /     OK    ⛔ ⓷ and this receipt reports NO score: the draft that computed one invented every $\sigma$, which is r2726's failure in a new costume /   2 check(s) FAILED
-    [FAIL] receipts/P15_CR_cosmology/C39_the_derived_list_read.py  (0s)
-               OK    and $A_s$ is anchored "by an $A_{s}$ this construction inherits rather than predicts" /     OK    ⛭ ⓷ while the high-$\ell$ ratio is derived without a measured partner: "the high-$\ell$ consequence follows with no free parameter" /   3 check(s) FAILED
-    [FAIL] receipts/P15_CR_cosmology/C46_the_nine_are_right_and_the_one_is_wrong.py  (0s)
-               OK    ⓷ and feeding the CORRECTED $r_D$ through C9's own division gives +7.65% and +8.24% -- not $9.4\%$ /     OK    which brackets what P15 says nine times, and matches the direct computation $\theta_D/\theta_*=1.0816$ in P15_damping_ratio_clean /   1 check(s) FAILED
-    [FAIL] receipts/P15_CR_cosmology/C61_the_undriven_premise_is_false_on_the_rate_the_framework_assigns_the_perturbations.py  (1s)
-              - ⛭ and P07 carries THE CORRECTED STATEMENT now: the band containing the first peak "enters the horizon while radiation dominates", so "those modes have a driving history of the kind the standard picture gives them" -- which is what this receipt established /    - and the SAME paragraph names the
-    [FAIL] receipts/P15_CR_cosmology/P15_the_acoustic_contrast_is_not_in_the_source_and_the_projection_makes_it_without_the_distance.py  (14s)
-           ==================================================================================================== / GATES: 1 FAILED: /   - `SRCSAVE` and `SRCXS` are declared beside `_SWSRC`/`_DPSRC` and every load of either sits inside an `if _SRCS:` block -- a binding is not a use, so the two declarations are c
-    [FAIL] receipts/P15_CR_cosmology/P15_the_free_streaming_knob_is_common_to_both_arms_and_the_switch_sweep_finds_no_further_shadow.py  (9s)
-           GATES: 2 FAILED: /   - the instrument reads sixty environment switches with at least one use site, and every switch that is bound is also used somewhere /   - ...and every live line on the reporting path that mentions `R_S` or `L_A` is the DEFINITION itself, a `print`, the `SAVE` metadata, or the `h
-    [FAIL] receipts/P15_CR_cosmology/P15_the_likelihood_pair_is_another_instruments_and_the_crossing_run_needed_a_missing_knob.py  (0s)
-               assert ok, label /            ^^ / AssertionError: and their defaults are the previous literals, so nothing banked moves
-    [FAIL] receipts/P15_CR_cosmology/P15_the_locus_is_wrong_in_six_places_and_the_lint_cannot_see_the_worst.py  (1s)
-             (c) the excused sentence rewritten -> 1 flag(s)  ** exception lapsed, site re-flagged ** / ============================================================================== / FAILED: the repaired text for subsection heading is not in the paper; the repaired text for prop:subhorizon body is not in the
-    [FAIL] receipts/P15_CR_cosmology/P15_the_low_ell_minimum_is_at_ell_four.py  (0s)
-               assert _PAIR, ('the paper must state both arms in one sentence, or this file cannot tell them apart ' /            ^^^^^ / AssertionError: the paper must state both arms in one sentence, or this file cannot tell them apart -- which is exactly how it came to read one arm twice
-    [FAIL] receipts/P15_CR_cosmology/P15_the_model_difference_is_an_acoustic_contrast_difference_and_it_is_not_one_skys_luck.py  (8s)
-           GATES: 2 FAILED: /   - `_DPSRC` appears in the source exactly once outside its own definition, and that use is INSIDE `los_spectrum` /   - ...while `_ISW` is used TWICE, in DIFFERENT functions -- which is why the ISW candidate below IS testable on the refit path and the Doppler one is not
-    [FAIL] receipts/P15_CR_cosmology/P15_the_one_fitted_number_moves_the_scale_and_not_the_peak.py  (1012s)
-             ========================================================================== /   ⛔ 1 CHECK(S) FAILED /       ⓵ᶜ and P15 states the fit in its own voice, calling z_onset the one fitted number
-    [FAIL] receipts/P15_CR_cosmology/P15_the_two_data_are_one.py  (0s)
-               assert gone not in p7 and here in p7 /            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ / AssertionError
-    [FAIL] receipts/P16_cosmogenesis_paper/C13_downstream_irrelevant_is_not_downstream_blocked.py  (0s)
-               OK    ⓷ and the third is marked NOT A DEBT in the same sentence as "open": "What remains open is not the computation but its last-percent precision" /     FAIL  "a data-confrontation frontier the title does not stake itself on ... not a debt" /   1 check(s) FAILED
-    [FAIL] receipts/P16_cosmogenesis_paper/P16_the_bbn_network_cannot_see_the_arms_equality_so_the_abundances_are_silent_on_it.py  (0s)
-             File "/home/claude/shadow-of-existence/computations/p16_bbn/bbn_network.py", line 30, in <module> /     import pynucastro as pyna / ModuleNotFoundError: No module named 'pynucastro'
-    [FAIL] receipts/P16_cosmogenesis_paper/P16_the_window_is_crossed_twice_and_the_expanding_leg_is_where_the_abundances_are_made.py  (0s)
-             File "/home/claude/shadow-of-existence/computations/p16_bbn/bbn_network.py", line 30, in <module> /     import pynucastro as pyna / ModuleNotFoundError: No module named 'pynucastro'
-    [FAIL] receipts/P16_cosmogenesis_paper/P16_theory_error_and_likelihood.py  (0s)
-             File "/home/claude/shadow-of-existence/receipts/P16_cosmogenesis_paper/bbn_network.py", line 48, in <module> /     import pynucastro as pyna / ModuleNotFoundError: No module named 'pynucastro'
-    [FAIL] receipts/P16_cosmogenesis_paper/P16_validate_bbn.py  (0s)
-             File "/home/claude/shadow-of-existence/receipts/P16_cosmogenesis_paper/bbn_network.py", line 48, in <module> /     import pynucastro as pyna / ModuleNotFoundError: No module named 'pynucastro'
-    [FAIL] receipts/P17_geometric_core_paper/P17_the_ds_entropy_is_the_gauge_count_squared_and_is_the_cc_number.py  (0s)
-             OK   and p0's reading of a Planck value as a gauge and not a scale, which does the dissolving / ============================================================================== / FAILED: the written clause does not carry: and the not claimed is attached
-    [FAIL] receipts/P17_geometric_core_paper/P17_the_frontier_item_is_a_result_and_the_cosmogenesis_paper_reaches_it_the_other_way.py  (0s)
-             OK   and the no-single-value conclusion / ============================================================================== / FAILED: p0 does not carry: the reversal is stated as such — what was written as owed is a result; p0 does not carry: the multiplicative-crossing reason is given; p0 does not c
-    [FAIL] receipts/P17_geometric_core_paper/P17_the_ledgers_entropy_is_the_de_sitter_readings_and_the_other_reading_has_a_number_but_not_an_entropy.py  (1s)
-               return io.open(self, mode, buffering, encoding, errors, newline) /            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ / FileNotFoundError: [Errno 2] No such file or directory: 'corpus/geometric_core_paper.tex'
-    [FAIL] receipts/RP_34_gr/G3_the_axis_names_two_orderings.py  (0s)
-               OK    the wall is described as the COMPLEMENT, not as a Petrov endpoint inside the range /     OK    the ambiguity is REMOVED: the clause now reads "lies along that axis" (fixed c54.179) /   1 check(s) FAILED
+    [FAIL] receipts/P15_CR_cosmology/P15_the_locus_is_wrong_in_six_places_and_the_lint_cannot_see_the_worst.py  (3s)
+             (c) the excused sentence rewritten -> 1 flag(s)  ** exception lapsed, site re-flagged ** / ============================================================================== / FAILED: prop:subhorizon body: the proposition claims the branch point but its argument's receipt computes the onset -- asserts
     [slow] receipts/P15_CR_cosmology/P15_the_low_multipole_floor_moves_with_no_background_and_the_factor_two_is_the_late_isw.py  -- exceeded 600s
 
-  766 pass, 83 fail, 1 over timeout, in 3383s wall
-  slowest that passed: C59_the_control_reproduces_camb_and_the_height_defect_was_k_truncation.py 1111s, P15_the_symmetric_comparison_was_never_runnable_and_the_quarter_was_two_fifths.py 642s, C63_no_single_source_term_carries_the_undriven_split_and_the_first_probe_read_an_unwired_knob.py 365s, P15_the_low_multipole_depth_gap_closes_and_two_defects_were_cancelling.py 344s, P14_the_constituent_count_is_conserved_on_every_static_member_and_the_twist_alone_violates_it.py 237s
+  849 pass, 5 fail, 1 over timeout, in 5481s wall
+  ⌗ ASSEMBLED ACROSS 8 INVOCATION(S) AT THIS DIGEST, 8 OF WHICH MEASURED ANYTHING: 853 result(s) reused, 2 measured here.  Every receipt ran exactly once against tree cdf21a8206487495, and the cache is discarded whole the moment that digest changes.  The wall figure is the SUM of the invocations, not a single elapsed clock -- and it is a UNION over invocation ids, so re-assembling adds only the seconds that re-assembly itself costs (r4554: it used to add another invocation's minutes).
+  slowest that passed: C59_the_control_reproduces_camb_and_the_height_defect_was_k_truncation.py 1559s, P15_the_one_fitted_number_moves_the_scale_and_not_the_peak.py 786s, C63_no_single_source_term_carries_the_undriven_split_and_the_first_probe_read_an_unwired_knob.py 696s, P15_the_low_multipole_depth_gap_closes_and_two_defects_were_cancelling.py 558s, P15_the_driving_is_bought_by_decay_during_oscillation.py 488s
 
   ⛔ A REGISTERED RECEIPT THAT DOES NOT RUN WHERE IT IS REGISTERED IS NOT A RECEIPT.
