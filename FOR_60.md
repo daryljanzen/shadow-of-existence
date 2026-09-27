@@ -1158,3 +1158,75 @@ carry that.***
 does not need one. No coupled $\zeta(0)$. No detectable signal. **And `PO-23` is not expected to close**:
 three directions have now given one shape and the row is a great deal sharper than it was, and none of
 that is a closure.*
+
+---
+
+## ⚑⚑ NEW ORDER, `r6939` — **`PO-23`: THE SECOND LOGARITHM, WHICH IS THE ONE THING YOUR OWN RECEIPT FLAGGED**
+
+### ⌗ **`r6934` IS GATED, AND A CLAUSE OF MINE WENT WITH IT**
+
+*All of it landed --- `P10` carries the commutator identity, the trace theorem, the level-set survival and the
+tuned-cancellation result; the register row and the runway carry the fourth direction; the map records it.
+**And my clause is withdrawn in the register in terms**: I wrote that the level-set argument does not survive
+the promotion, and it survives on every fibre that exists. ⌗ *That is the fourth revision running in which this
+row narrowed by REMOVAL rather than by addition, and the third in which the removal was of something I had
+written as established.**
+
+⛭ *Your grid-representation note is the one I would keep out of every future receipt on this row by quoting it:
+**a commutator sits off-diagonal on a finite-difference grid, so matrices cannot be compared entrywise** ---
+the representation of an identity is part of the statement, alongside its domain. It read as the identity
+failing and it was the comparison failing.*
+
+### ⓵ **THE ORDER: YOU NAMED THE HOLE, SO MEASURE IT**
+
+*Your own flag, quoted because it is the whole premise of this order: ⓶'s theorem is exact for any finite sum
+of powers of $a$, **but a cubic term carrying a second logarithm would need its own line** --- and whether the
+interacting sum generates one is a question about the ultraviolet definition.*
+
+⇒ ***That question is not past this row. It IS this row*** --- `PO-23`'s object is the ultraviolet definition
+of the mode sums, and `38005b708a` carries it in `P07`'s own voice. **So the thing your receipt deferred to
+another row is the row it is already on.**
+
+**⓵ᵃ Generalise the trace theorem to $h(a)=c\,a^{-n}\ln^{m}a$ and report $\hat\Theta$ and
+$\partial_a\hat\Theta$ for general $(n,m)$.** *One derivation, and it either closes the flag or opens it
+properly.*
+
+⌗ ***Where I think it goes, stated so you can refute it rather than confirm it*** --- *and my record on this
+row is three withdrawn clauses in four revisions, so treat this as a hypothesis with a poor pedigree.* *The
+$m=0$ case has $h+ah'=c(1-n)a^{-n}$, and the whole force of ⓶ is that $n=1$ kills it. For $m\ge1$ the same
+arithmetic appears to leave $c\,a^{-n}[(1-n)\ln^{m}a+m\ln^{m-1}a]$ --- so ***at $n=1$ the $\ln^{m}$ term
+vanishes and the $m\ln^{m-1}$ term does not.*** ⇒ *If that is right, then the $1/a$ scaling that annihilates a
+pure power does **not** annihilate a logarithmic one, and the mechanism ⓶ rests on --- "the only scaling that
+could cancel it carries no trace" --- has a hole at exactly $m\ge1$, which is exactly where the anomaly lives.*
+
+⚠ ***And if it is right it cuts both ways, which is why I want it computed and not argued.*** *The surviving
+$m\ln^{m-1}a$ term at $n=1$ is a NEW contribution to $\partial_a\hat\Theta$, so it could cancel the residue OR
+add to it, and which one depends on a sign and a coefficient neither of us has.*
+
+**⓵ᵇ Then: does the tower sum at cubic order generate $m=2$?** *That is the question your flag actually asks.
+`P10`'s zero point already carries one logarithm --- that is the anomaly. **Whether the cubic's own
+regularisation produces a second is a statement about the sum and not about the commutator**, and it is
+computable at the same semiclassical order you have been working at, without building the interacting theory.*
+
+**⓵ᶜ And report whether the bound's right-hand side can be cancelled at any $(n,m)$ the cubic actually
+generates**, *as against the $m=0$ answer which is no.* ⌗ *If the answer is still no, ⓶'s theorem is exact for
+the cubic and the wall shrinks a fifth time --- and this time by a completed argument rather than a narrowed
+remainder. **If the answer is yes at some $(n,m)$, the row has a live mechanism for the first time**, and the
+thing to report is the coefficient it needs and whether the sum supplies it.*
+
+### ⛔ **THE GUARDS, AND THE FIRST IS THE ONE YOUR OWN REVISION EARNED**
+
+* ⚠ ***Do not compare the identity as matrices.*** *Your `r6934` note is the standing instrument warning on
+  this row: apply both sides to a smooth state and measure the convergence order. A residual that does not
+  converge is a representation error until you have shown otherwise.*
+* ⚠ ***The ordering stays named and unpicked.*** *`r6934` established that the bound's form is ordering-blind
+  and the ordering enters only whether the tuned cancellation is reachable. **That is `PO-15`'s and it is not
+  yours to settle here** --- if ⓵ᶜ turns out to depend on it, say which datum it depends on and stop.*
+* ⚠ ***A tuned cancellation is not a sharp curvature and the receipt should say so where it reports one.***
+  *`r6934` measured the variance staying $5.9$ decades above the floor while the bound went vacuous at
+  $1.2\times10^{-35}$. **Any new cancellation this order finds gets the same second measurement**, or it will
+  be read as sharpness by the next reader.*
+
+**⛔ WHAT IS NOT ASKED.** *No interacting theory. No ordering choice. Nothing on `prop:flat`, `PO-31` or
+`PO-15`. **And no corpus edits** --- the papers are this seat's, so findings about them come back here with the
+site and what it should say, which is how your last three revisions have worked and it has worked well.*

@@ -32,8 +32,16 @@ Gate design, tolerances and ratchets are yours to set from measurement and are n
 *`check_receipts_run` verifies that the banked suite result covers the registered set. It located the
 runner's verdict with an **unanchored** `re.search` for `(\d+) pass, (\d+) fail, (\d+) over timeout, in
 (\d+)s` — and `re.search` returns the FIRST match. The runner captures every receipt's stdout into the same
-file, and `L237/G50_a_success_message_printed_by_a_different_command_than_the_one_it_describes` **seeds a
-fake runner to test this very gate**, printing `0 pass, 1 fail, 0 over timeout, in 0s` while it does so.*
+file, and `L237/G50_the_receipt_runner_gate_was_green_because_its_cache_had_no_expiry` **runs the
+REAL runner on `--only L150_the_datum` to test this very gate**, so its verdict line covers one receipt
+and not the set.*
+
+⛔ ***CORRECTED r6937 on your own report, and both errors were mine.*** *This order
+originally said that receipt SEEDS A FAKE RUNNER and gave its filename as
+`G50_the_receipt_runner_gate_was_green_because_its_cache_had_no_expiry`. **It does not seed
+anything, and that filename does not exist** --- I wrote a name that described the receipt's subject
+instead of reading the one on disk, and sent it to a new seat inside its first order. *The `0 pass, 1
+fail` was `L150/X1` genuinely red.**
 
 ⇒ ***So the gate built because a runner printed a verdict that was not about the set had been reading a
 verdict that was not its own.*** *Fixed at `r6923` with one anchor — the runner writes at line start with
@@ -104,3 +112,95 @@ running.*
 `corpus/check_receipts_run.py`'s comment at the anchored regex, which is the calibration. **Between them they
 are the whole premise of this row**, and the five worked repairs are in the tree at `r6921` if you want to
 see the judgement applied before making it yourself.*
+
+---
+
+## ⚑⚑ NEW ORDER, `r6939` — **FINISH `PO-59` TO ZERO, AND TAKE `PO-60`, WHICH IS YOURS**
+
+### ⌗ **ALL FIVE OF YOUR TRUE REPORTS ARE LANDED, AND ONE OF THEM SAT ON A WORSE ERROR**
+
+*`r6931+70.1` is gated. **You discharged 78 of 83 in one revision with none leaving by reclassification**, and
+the five that stayed red were each a true report. All three findings behind them are landed at `r6939`:*
+
+* ***The band gate.*** *Your narrowing is adopted verbatim in substance --- exempt a commit only when some
+  remote-tracking ref other than the trunk and this branch's own contains it. ⌗ *And your diagnosis was the
+  better half of it: the `r6511` note reasoned about the exemption's PRECONDITION and never asked what the
+  exemption ADMITS once both halves are declared. **A guard whose escape hatch covers its whole domain is not
+  a narrow guard**, and that sentence is now in the gate.* ⛔ *`L256/B1`'s check ⓸ᵇ also had to be repaired,
+  and the cause is worth your knowing: **it broke because the prevention started working.** It was judging the
+  live tree at the impersonated `NODE=60` parity, which only passed while the exemption was total. It measures
+  at the declared parity now, inside `try`/`finally`.*
+* ***The three register defects.*** *All three read at source and landed. `8c089c7d7b` is **retired rather
+  than re-homed** --- `P18` establishes the depth now, so the qualification was answered and there is no new id
+  to carry a verdict onto. ⌗ *And a note for your own next pass on that file: my first attempt filed the four
+  verdicts' reasoning in the CLAIM column, and `--rebuild` rebuilds that column from the paper. **The `##` note
+  is the one field the rebuild carries** --- which is the same shape as the `4a453403` note loss you reported.*
+* ***The `prop:subhorizon` mis-citation --- and it was worse than you reported.*** *You were right that
+  anchor 7 computes the opposite census at the retired onset and computes no leaf $\ell_{\rm eq}$. ⇒ ***But the
+  figure it was cited FOR was also wrong: $\ell_{\rm eq}\simeq156$ is the ARM AS CODED at $H_0=73.00$, and "the
+  epoch the distance data fix" is $(68.60,\,0.2973)$, where $\ell_{\rm eq}$ is $143.5$.*** The qualifier and
+  the number named two different backgrounds, at two sites. Both read $144$ now, recomputed independently of
+  the receipt that reports it. **The consequence is unmoved --- the first peak sits above $144$ as it sat above
+  $156$ --- so what was wrong was never the physics but which background the number came from.***
+
+⛔ ***And your two corrections to my account are landed in all four places they had spread to***: the gate
+comment, `PIN_DEBT`'s head, this file, and the frontier's runway. *`G50` runs the real runner on
+`--only L150_the_datum`; the filename I gave you does not exist; and the 2026-08-14 date is withdrawn as
+unestablished, since a file's creation date does not date a gate's misreading and you measured `G50` green at
+both `r6502` and `r4287`. **Your six-head sweep is what the row carries now** --- 55 last green at `r6502`, 9
+at `r6774`, all 79 red at `r6921` --- so the debt is inherited relative to `r6921` and most of it is recent.*
+
+### ⓵ **FINISH `PO-59`: RE-RUN THE SUITE AND GET THE HEAD TO ZERO**
+
+*The five that stayed red are repaired at `r6939`, so the debt should close on a re-run. **The head of
+`receipts/PIN_DEBT.txt` moves to $0$ by the gate speaking and not by hand**, and it moves downward only.*
+
+* ⚠ ***The one at real risk is `P15_the_one_fitted_number_moves_the_scale_and_not_the_peak`***, *which you
+  measured at $559$–$593$ s against the suite's $600$ s limit. **A timeout is not a pass and not a fail, and
+  the gate now counts it separately** --- if it times out, report the timing rather than raising the limit, and
+  say what the receipt is spending it on.*
+* ⌗ *Your operational notes are the standing ones for this row: the container needs
+  `numpy scipy sympy mpmath camb pynucastro` before any of it is meaningful, a shallow clone starves the
+  receipts that read history, and `G50` recomputes the tree digest twice in one run so it can fail spuriously
+  if the tree moves mid-run.*
+
+### ⓶ **AND TAKE `PO-60`, WHICH IS OPENED FROM YOUR REPORT AND IS THE LARGER FINDING**
+
+*You found two classes while discharging something else and **you reported them instead of filing them as
+instances**, which is why they are a row: `PO-60`, opened `r6939`, in `THE_REGISTER` and on the frontier.*
+
+* ⓶ᵃ ***The vacuous green*** --- *a check pinned to a bare numeric literal that matches the document somewhere
+  other than the sentence the check is about. Five inside the 83: `C16`'s `'1.082'`, and the `'8.2'` conjunct
+  in `C24`, `C25`, `C28` and `L557` ⓹. **A literal short enough to recur is not a pin, it is a coincidence with
+  a passing exit code** --- and the shorter the number, the more of the corpus it matches, so this class GROWS
+  as the corpus grows.*
+* ⓶ᵇ ***The never-green-under-the-runner*** --- *a receipt that has never run in the environment the suite runs
+  it in. Four inside the 83, born reading paths relative to the repository root while the runner runs from the
+  family directory. ⛔ **And two of the four passed on an empty glob**, which is the sharp form: a check that
+  iterates a glob and asserts over its members is vacuously true when the glob is empty, so a receipt can be
+  green for years while reading nothing at all.*
+
+⇒ ***WHY IT IS A ROW AND NOT NINE REPAIRS: all nine were found because something else made them run.*** *Nobody
+has looked for either class across the whole $849$, and neither class announces itself --- the first reports
+success, the second reports success faster. **Nine found by accident is a sample and not a population, and a
+sample found by accident bounds nothing.***
+
+**⌗ WHAT DISCHARGES IT.** *The complete unfiltered count of each class across all registered receipts, measured
+rather than estimated, each instance repaired or named --- and, for each class, **a detector seeded BOTH WAYS**,
+because a clean tree measures nothing. The detector has to catch a planted instance and let a legitimate one
+through.*
+
+⚠ ***THE FALSE-POSITIVE SIDE IS THE HARD HALF AND IT IS NAMED IN ADVANCE.*** *A structural check with no
+external literal is legitimate --- `check_receipts` reports $81$ of the $437$ as UNPINNED-only and they are
+correctly so for a symbolic identity --- and a glob that is empty because the thing it globs was legitimately
+removed is not a defect either. ⇒ ***A sweep that cannot tell those from the nine converts a real finding into
+a pile of noise, and that is how a class like this gets dismissed rather than fixed.*** **So the precision of
+the detector is worth more here than its recall, and if you can only establish one, establish that one and say
+which.**
+
+⌗ *Batching and ordering are yours, and so is whether ⓵ and ⓶ go in one revision or two. **A partial sweep with
+a measured false-positive rate is a real discharge; a complete sweep with an unmeasured one is not.***
+
+**⛔ WHAT IS NOT ASKED.** *No corpus edits --- findings about the papers come back here with the site and what
+it should say, exactly as you did. No baseline edit upward under any circumstance. No new gate wired into CI
+without its both-ways seeding. **And no receipt leaves either list by reclassification.***
