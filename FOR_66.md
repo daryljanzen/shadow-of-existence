@@ -3030,3 +3030,5 @@ its log for the marker the switch must print before the set goes out.*
 ⌗ *Thirty-one gates; four banks at `spectra/r6925_*`; launchers at `r6925_directions/`. `VISLEAF` gated
 bit-identical **unset on both arms** and **set on the control** — two different gates, the second being
 the rate identity showing in a second place and the one-sidedness of the whole finding in one result.*
+
+⌗ *PR **#94**, new draft, because #92 merged. Subscribed.*
