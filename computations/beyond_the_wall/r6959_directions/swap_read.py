@@ -82,7 +82,7 @@ def load(p):
 
 B = {t: load(os.path.join(SP, f'r6941_fine_{t}.npz')) for t in ('lcdm', 'cr')}
 S = {}
-for nm, f in (('swap_lcdm', 'r6959_swap_lcdm.npz'), ('tight_cr', 'r6959_tight_cr.npz')):
+for nm, f in (('swap_lcdm', 'r6959_swap_lcdm.npz'), ('big_lcdm', 'r6959_big_lcdm.npz')):
     p = os.path.join(SP, f)
     if os.path.exists(p):
         S[nm] = load(p)
@@ -101,7 +101,7 @@ print("    cr   " + "  ".join(f"{x:.6f}" for x in C0['cr']))
 print("    ratio" + "  ".join(f"{a / b:.5f}" for a, b in zip(C0['cr'], C0['lcdm'])))
 
 for nm, arm, pred in (('swap_lcdm', 'lcdm', np.array(PR['f'])),
-                      ('tight_cr', 'cr', np.array(PR.get('f_cr', PR['f'])))):
+                      ('big_lcdm', 'lcdm', np.array(PR['f_big']))):
     if nm not in S:
         print(f"\n  ({nm} not on disk yet)")
         continue
@@ -123,7 +123,7 @@ for nm, arm, pred in (('swap_lcdm', 'lcdm', np.array(PR['f'])),
 print("\n" + "=" * 100)
 print("⓵ᶜ R4 -- WHAT THE SWAP DOES TO THE COMB AND TO THE DEPTHS")
 print("=" * 100)
-for nm, arm in (('swap_lcdm', 'lcdm'), ('tight_cr', 'cr')):
+for nm, arm in (('swap_lcdm', 'lcdm'), ('big_lcdm', 'lcdm')):
     if nm not in S:
         continue
     d = S[nm]
