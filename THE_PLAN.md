@@ -1,7 +1,7 @@
 ---
 name: the-plan
 kind: STATE
-current: r6863
+current: r6921
 job: The programme's work, route and destination — the lanes, the per-turn operating layer, the four-step state advance
 ---
 
@@ -203,86 +203,39 @@ corpus in `PO13_WORKING_STATE.md`.*
 
 <!-- GRAIN-CURRENCY:BEGIN -->
 
-## ⌗⌗⌗ CURRENCY — **GENERATED** by `scripts/regen_grain_currency.py`, baseline r2417, register front r6919
+## ⌗⌗⌗ CURRENCY — **GENERATED** by `scripts/regen_grain_currency.py`, baseline r2417, register front r6921
 
 > ⚠ **THE BODY BELOW STOPS AT THE BASELINE. This head is the list of what has moved since, and it is REGENERATED rather than written** — *because these documents go stale every ~20 revisions by construction, and paying that by hand is a debt that recurs rather than a defect that closes.*
 >
 > **⌗ NOT COVERED — STRUCK since r2417 (198 rows):**
 > `L-150` `L-174` `L-175` `L-176` `L-177` `L-178` `L-179` `L-180` `L-181` `L-182` `L-183` `L-184` `L-185` `L-186` `L-187` `L-188` `L-189` `L-190` `L-191` `L-192` `L-193` `L-194` `L-195` `L-196` `L-197` `L-198` `L-199` `L-200` `L-201` `L-203` `L-204` `L-206` `L-207` `L-210` `L-211` `L-213` `L-214` `L-215` `L-216` `L-217` `L-219` `L-220` `L-222` `L-223` `L-224` `L-225` `L-226` `L-227` `L-228` `L-229` `L-231` `L-232` `L-233` `L-234` `L-235` `L-236` `L-237` `L-238` `L-239` `L-241` `L-243` `L-244` `L-246` `L-247` `L-248` `L-249` `L-250` `L-251` `L-252` `L-253` `L-254` `L-255` `L-256` `L-257` `L-258` `L-259` `L-260` `L-261` `L-262` `L-263` `L-264` `L-265` `L-266` `L-267` `L-268` `L-269` `L-270` `L-271` `L-272` `L-273` `L-274` `L-275` `L-276` `L-277` `L-278` `L-279` `L-280` `L-281` `L-282` `L-283` `L-500` `L-501` `L-502` `L-503` `L-504` `L-505` `L-506` `L-507` `L-508` `L-509` `L-510` `L-511` `L-512` `L-513` `L-514` `L-515` `L-516` `L-517` `L-518` `L-520` `L-521` `L-522` `L-523` `L-535` `L-536` `L-537` `L-538` `L-539` `L-540` `L-800` `L-801` `L-802` `L-803` `L-804` `L-805` `L-806` `L-807` `L-808` `L-809` `L-810` `L-811` `L-812` `L-813` `L-814` `L-815` `L-816` `L-818` `L-819` `L-820` `L-821` `L-822` `L-823` `L-824` `L-826` `L-827` `L-828` `L-829` `L-830` `PO-10` `PO-13` `PO-15` `PO-16` `PO-17` `PO-18` `PO-19` `PO-20` `PO-21` `PO-22` `PO-24` `PO-25` `PO-26` `PO-27` `PO-28` `PO-29` `PO-30` `PO-32` `PO-33` `PO-34` `PO-36` `PO-37` `PO-38` `PO-39` `PO-40` `PO-41` `PO-42` `PO-43` `PO-44` `PO-45` `PO-46` `PO-47` `PO-48` `PO-49` `PO-51` `PO-52` `PO-53` `PO-54` `PO-55` `PO-57`
 >
-> **⌗ NOT COVERED — OPENED since r2417 (145 rows):**
-> `L-222` `L-223` `L-224` `L-225` `L-226` `L-227` `L-228` `L-229` `L-230` `L-231` `L-233` `L-234` `L-240` `L-242` `L-245` `L-246` `L-247` `L-248` `L-249` `L-250` `L-251` `L-252` `L-253` `L-254` `L-255` `L-256` `L-257` `L-258` `L-259` `L-260` `L-261` `L-262` `L-263` `L-264` `L-265` `L-266` `L-267` `L-268` `L-269` `L-270` `L-271` `L-272` `L-273` `L-274` `L-275` `L-276` `L-277` `L-278` `L-279` `L-280` `L-281` `L-282` `L-283` `L-500` `L-501` `L-502` `L-503` `L-504` `L-505` `L-506` `L-507` `L-508` `L-509` `L-510` `L-511` `L-512` `L-513` `L-514` `L-515` `L-516` `L-517` `L-518` `L-519` `L-520` `L-521` `L-522` `L-523` `L-524` `L-525` `L-526` `L-527` `L-528` `L-529` `L-530` `L-531` `L-532` `L-533` `L-534` `L-535` `L-536` `L-537` `L-538` `L-539` `L-540` `L-541` `L-542` `L-543` `L-544` `L-545` `L-546` `L-547` `L-800` `L-801` `L-802` `L-803` `L-804` `L-805` `L-806` `L-807` `L-808` `L-809` `L-810` `L-811` `L-812` `L-813` `L-814` `L-815` `L-816` `L-818` `L-819` `L-820` `L-821` `L-822` `L-823` `L-824` `L-825` `L-826` `L-827` `L-828` `L-829` `L-830` `PO-31` `PO-36` `PO-43` `PO-47` `PO-48` `PO-49` `PO-50` `PO-51` `PO-52` `PO-53` `PO-54` `PO-55` `PO-56` `PO-57`
+> **⌗ NOT COVERED — OPENED since r2417 (146 rows):**
+> `L-222` `L-223` `L-224` `L-225` `L-226` `L-227` `L-228` `L-229` `L-230` `L-231` `L-233` `L-234` `L-240` `L-242` `L-245` `L-246` `L-247` `L-248` `L-249` `L-250` `L-251` `L-252` `L-253` `L-254` `L-255` `L-256` `L-257` `L-258` `L-259` `L-260` `L-261` `L-262` `L-263` `L-264` `L-265` `L-266` `L-267` `L-268` `L-269` `L-270` `L-271` `L-272` `L-273` `L-274` `L-275` `L-276` `L-277` `L-278` `L-279` `L-280` `L-281` `L-282` `L-283` `L-500` `L-501` `L-502` `L-503` `L-504` `L-505` `L-506` `L-507` `L-508` `L-509` `L-510` `L-511` `L-512` `L-513` `L-514` `L-515` `L-516` `L-517` `L-518` `L-519` `L-520` `L-521` `L-522` `L-523` `L-524` `L-525` `L-526` `L-527` `L-528` `L-529` `L-530` `L-531` `L-532` `L-533` `L-534` `L-535` `L-536` `L-537` `L-538` `L-539` `L-540` `L-541` `L-542` `L-543` `L-544` `L-545` `L-546` `L-547` `L-800` `L-801` `L-802` `L-803` `L-804` `L-805` `L-806` `L-807` `L-808` `L-809` `L-810` `L-811` `L-812` `L-813` `L-814` `L-815` `L-816` `L-818` `L-819` `L-820` `L-821` `L-822` `L-823` `L-824` `L-825` `L-826` `L-827` `L-828` `L-829` `L-830` `PO-31` `PO-36` `PO-43` `PO-47` `PO-48` `PO-49` `PO-50` `PO-51` `PO-52` `PO-53` `PO-54` `PO-55` `PO-56` `PO-57` `PO-58`
 >
 > ⌗ ***The ID half is machine-checked against the register; run `regen_grain_currency.py --check`. The prose half below is a JUDGEMENT and is written by hand — the script preserves it verbatim and never invents it, because a gate can check a declaration and not a judgement.***
 
 <!-- GRAIN-CURRENCY:PROSE -->
-> **⌗ AND THE FOUR THINGS THE BODY WOULD ACTIVELY MISLEAD A NODE ABOUT — written by hand r2469, because
-> this half is a judgement and the script will not invent it.**
+> **⌗ AND THE THINGS THE BODY WOULD ACTIVELY MISLEAD A NODE ABOUT — the hand-written half, because it is a
+> judgement and the script will not invent it.**
 >
-> *· **The three PROTECTED rows are not untouchable and three of them have been worked.** `PROTECTED_OPEN`
-> means **a node may not CLOSE ⌗ **⟨r2834: PRE-r2830 rule; the person-gate is gone — a row is struck by the register with a kill receipt⟩** **, not may not touch — "a node may write a bounded negative". PO-5, PO-6 and ⛭⛭ **⟨STRUCK r3001 — all three clauses answered; what remains is the ORDERING, which IS "does the graviton tower's zero-point energy gravitate at the horizon?" — the cc problem, and the decomposition survives either way. `kills/PO-6.md`.⟩** ⌗ **⟨r2834: the register's PRE-r2830 rule. **The person-gate is gone** — a row is struck by the register with a kill receipt, not by a person; quoted here as the rule then, not the rule now.⟩**
-> PO-9 were all narrowed at r2464–r2466, and **all three had a concrete next step written in their own rows ⌗ **⟨r2832: `PO-9` is STRUCK — its object (is the substrate's dimension settled?) is answered BOUNDED BELOW ONLY, as a result of the criterion, and `kills/PO-9.md` clears on all four checks. This section is the lead's record, not live work.⟩**
-> the whole time**.*
-> *· **The colour front has moved and its question has changed.** Not "where does $\mathfrak{su}(3)$ live" —
-> it is **selected** by the wall monodromy, and the compact face is priced as an ADD — but ***"what would make
-> the module stop being a branching"***, since **a covering map is flat by definition** and that is why the
-> construction supplies no force (`L-233`, r2468).*
-> *· **The programme lives in a public repository with two lines working it**, `THE_HUB` is the arrival
-> document, the ID bands are declared, and **absorption happens by git merge** — the bundle-relay workflow the
-> body describes no longer runs.*
-> *· **And `L-211`'s closure-adjacency procedure is the operative method now**: after a closure, read the gaps
-> in the papers it touches. **Seven runs, seven distinct kinds of result**, including two that corrected this
-> line's own claims. ***A triggered front has outperformed the enumerated ones it sits beside.****
+> *· **No row is closed by a person.** A register row is struck by the register with a kill receipt; the
+> pre-r2830 person-gate the body sometimes quotes is gone.*
+> *· **The colour bundle is flat because it is a branching**, a covering map carrying a canonical flat
+> connection — a theorem about branchings, not a limitation of the construction. What the geometry supplies is
+> colour's selection rules (the wall holonomy, order 81); the force is not the construction's.*
+> *· **Work moves on GitHub.** `main` is gated by node 66; seats route orders to one another in the repository's
+> `FOR_*` files, and absorption happens by merge — the bundle-relay workflow the body describes no longer runs.*
+> *· **The cosmology the body describes has moved on four settled points**: the beginning is the branch point
+> $r=0$ and the plasma is handed over there, with no onset parameter; the sound horizon and the diffusion length
+> ride the leaf's rate and the distances the stacking rate; $H_0\simeq68.6$ is fixed by the acoustic angle and the
+> baryon-acoustic distances together, leaving the local-ladder discrepancy where the standard model leaves it; and
+> the acoustic sector's live edge is the acoustic contrast, located in the projection from wavenumber to
+> multipole. **Every $H_0=73$ figure, onset, and "front seam" dating in the body below predates these.***
 >
-> ⌗ *Everything else in the body stands: the lanes, the standing orders, and the physics fronts are what they
-> were.*
+> ⌗ *Everything else in the body stands: the lanes, the standing orders, and the physics fronts beyond those four.*
 
 <!-- GRAIN-CURRENCY:END -->
-
-## ⌗⌗⌗ CURRENCY, r2444 / r2376+c54.185 — **what this document does NOT cover, DECLARED AS A CHECKABLE LIST**
-
-> ⚠ **THE BODY BELOW STOPS BEFORE r2417 AND TWENTY-SEVEN REVISIONS HAVE LANDED SINCE.** *Read this head before the
-> body.*
->
-> ⌗ ***AND THE LIST IS GIVEN AS REGISTER IDs RATHER THAN PROSE, deliberately*** *— a list of IDs is mechanically
-> checkable against the register, so the declaration can be verified rather than believed.*
->
-> ⚠ **AND A DOUBLE CORRECTION THIS LINE OWES, because it got the gate's mechanism wrong twice in one revision.**
-> *At r2440 this line said `check_grains` measures lag **by git commits**, and left two grains red on the ground that
-> a prose note would fake it. It then "corrected" that to **fork markers**, having read `marker_of`.* ⇒ ***The first
-> claim was right and the correction was wrong: `marker_of`'s own docstring says "the no-git fallback", and `main()`
-> reaches it only `if not have_git()`. In the repo, git mode runs.***
-> ⌗ **THE LESSON IS NARROWER AND MORE USEFUL THAN EITHER CLAIM:** ***read which BRANCH executes, not which function
-> is defined.*** *Reading a function that exists and inferring behaviour from it is the sixth variant of one failure
-> this line keeps repeating — taking an instrument's surface for its behaviour.*
->
-> ⇒ **SO: touching this file DOES move it, and this block would turn the gate green on the strength of having been
-> written.** *That is exactly why the gap is declared as **register IDs** rather than prose:* ***the list is
-> checkable against `THE_LIVE_ARC` by anyone who doubts it, and a reader who checks it does not have to trust that
-> the gate's green means anything.*** **The green is worth what the list is worth, and the list can be audited.**
->
-> **⌗ NOT COVERED — STRUCK SINCE r2417, eight rows:**
-> `L-215` `L-201` `L-214` `L-223` `L-200` `L-224` `L-229` `L-225`
->
-> **⌗ NOT COVERED — OPENED SINCE r2417, nine rows:**
-> `L-221` `L-222` `L-223` `L-224` `L-225` `L-226` `L-227` `L-230` `L-231`
->
-> **⌗ AND THE FOUR THINGS THE BODY WOULD MISLEAD A NODE ABOUT, named because a list of IDs is not a reading:**
-> *· **`ARC 16` is discharged and `ARC 17` exists** — the linear re-read of `THE_EVOLUTION_MAP` is complete, all
-> eighteen stations, and its harvest is that ***the corpus has no place for a sentence that is true-for-now***
-> (`L-214`, `L-223`);*
-> *· **`L-200`/`L-201` are closed, by ONE argument** — the constant side because the residue is one *dimensionful*
-> parameter, the datum side because $\rho_r/\rho_m$ is *dimensionless*. **p0's frontier item 1 does not close: it
-> asked for the datum to be DERIVED and the answer is that it cannot be** (routed as `FOR_54` 18);*
-> *· **the programme now lives in a public git repository with two lines working it** (`L-215`, `L-222`), and
-> **`THE_HUB`** is the arrival document — this plan's picture of how work moves between nodes is superseded entirely;*
-> *· **six outside readers have been through the corpus** (`L-225`, `L-226`), producing **twenty-nine routed items**,
-> **two adopted lints**, and **two defects of this line's own** — and the standing result is that ***the corpus held
-> everywhere it was load-bearing except one Einstein-space invariant, one locus word, and a handful of scope
-> qualifiers***.*
->
-> ⌗ *The body's picture of the **physics** fronts is not superseded by any of the above; what is superseded is its
-> picture of the **instruments, the register's shape, and how work moves**.*
 
 ## ⌗⌗ BROUGHT CURRENT r2379 (observer line) — *the plan's own rules were the ones going unenforced, and that is the entry*
 
@@ -330,8 +283,8 @@ programme's INSTRUMENTS is superseded entirely.*
 there are **no primordial $B$-modes** at $\sim5\times10^{-111}$; the leading-order interior is **adequate**,
 with the Bianchi shear identified as the long-wavelength growing tensor mode; the true hydrodynamical scalar
 variable is $z_S=a(a+4B/3A)/a'$ and the **scalar monodromy is $4\pi/\rho$, twice the tensor's**; recollapse
-**is** the Nariai threshold; the composition is **derived** rather than bounded, $\rho\simeq5.4\times10^{-2}$,
-with the progenitor turning around at $z\simeq1.5$ with a mass $4.3\times10^{52}$ kg.* ⚠ **And the full-lap
+**is** the Nariai threshold; the composition is **derived** rather than bounded, $\rho\simeq5.45\times10^{-2}$,
+with the progenitor turning around at $z\simeq1.5$ with a mass $4.17\times10^{52}$ kg.* ⚠ **And the full-lap
 Floquet apparatus of c54.143–148, together with c54.149's own ground for withdrawing it, is WITHDRAWN.** *What
 those revisions bracket is a question the corpus had never posed: **the construction's recursion** — for a mode
 observed today, in whose harmonic basis does its history run, through how many passages, with which monodromy
@@ -380,7 +333,7 @@ progenitor's own vacuum it returns $3\times10^{-103}$ against an observed $2\tim
 P15 had established only for the substrate's vacuum — the one vacuum the inheritance story was not claiming.*
 
 **⇒ AND ONE POSITIVE THING THE ARC LEAVES: the progenitor's composition is derived, not bracketed** —
-$\rho\simeq5.4\times10^{-2}$, from the single bead and the crossing plasma (P16 §interior), meeting the parent's own
+$\rho\simeq5.45\times10^{-2}$, from the single bead and the crossing plasma (P16 §interior), meeting the parent's own
 nucleosynthesis floor $\rho\gtrsim3.8\times10^{-6}$ by four orders. *The upper bound from the child's spectrum rested on a
 leaked free oscillation the construction does not supply and on identifying the interior's harmonic index with the
 observed multipole, and P16 carries it as no bound on the determination.*
@@ -738,7 +691,7 @@ $$\Omega_\Lambda=\frac{x_0^3}{x_0^3+2},\quad \Omega_m=\frac{2}{x_0^3+2},\quad q_
 
 > *(r1444: this file's `§972` references were stale line-numbers — P7's open-problems section had moved to line 1152. Replaced with its label `sec:frontiers`. Cite by label, never by line.)*
 
-**Major re-cut r925 (c37), superseding the r188 route-plan in full.** The old plan (Phases 0–5, plotted 2026-06-12) planned the *build* of the corpus — the matter sector, the cosmogenesis, the ontology spine. **That build is done.** This plan is cut from the comprehensive sift of `PROGRAMME_UNFINISHEDNESS_CATALOGUE.md` (survivors only; retired noise in `RETIRED_PLANNING_THREADS.md`), and it routes from the finished, self-knowing corpus to the work that actually remains. One of the standing documents; held at weight, stated for reversal. *(The pre-r925 content is superseded, not erased — it is preserved in the session bundles, e.g. `cr_work_r923.tar`.)*
+**Major re-cut r925 (c37), superseding the r188 route-plan in full.** The old plan (Phases 0–5, plotted 2026-06-12) planned the *build* of the corpus — the matter sector, the cosmogenesis, the ontology spine. **That build is done.** This plan is cut from the comprehensive sift of `PROGRAMME_UNFINISHEDNESS_CATALOGUE.md` (survivors only; retired noise in `RETIRED_PLANNING_THREADS.md`), and it routes from the finished, self-knowing corpus to the work that actually remains. One of the standing documents. *(The pre-r925 content is superseded, not erased — it is preserved in the session bundles, e.g. `cr_work_r923.tar`.)*
 
 **⛔ STANDING RULE (Daryl, r1448) — NO WORK-BLOCKERS.** Nothing in this programme's documents may say, or imply, that a piece of work *need not be done*: not "not load-bearing," not "at no cost," not "low-priority," not "optional," not "not on the critical path," not "unlocks nothing." Those phrases are **empty blockers** — they keep real work out of the plan by pre-deciding it away, and they are read as "leave it, unnecessary." **It is all necessary.** A document may record what a thing *is*, what state it is in, and what working it would involve. It may not rank it out of existence. The corpus's own earlier lesson is the rule: *"'not load-bearing' is never grounds to bury a structural lead."*
 
@@ -1002,7 +955,7 @@ value, and the taxonomy's numerology test applies.*
 **The result (r1679–r1680):** $K_{G}=-f'/2r$ identically, so $\mathrm{d}^{2}r/\mathrm{d}\tilde\tau^{2}=rK_{G}$ —
 **the comoving acceleration is the slice's own Gaussian curvature** — and the flat locus is therefore the
 deceleration-to-acceleration turnover, which on Nariai is the seam and in standard terms is
-$\rho_{m}=2\rho_{\Lambda}$, at **7.06 Gyr** ($H_0=73$).
+$\rho_{m}=2\rho_{\Lambda}$, at **≈7.46 Gyr** ($H_0\simeq68.6$, $\Omega_m\simeq0.297$).
 **Daryl's scope: P3, P5, P7, P8–9, P15 to start with, and `PHYSICAL_VALUES_LEDGER` if it bears.**
 - [x] **P3 `sec:curvature`** — the identity and its dynamical reading, r1679–80. Receipt home.
 - [x] **P7 `rem:twocritical`** — placed r1681 beside the rate-minimum it already carried, **with the
@@ -1077,7 +1030,7 @@ $\rho_{m}=2\rho_{\Lambda}$, at **7.06 Gyr** ($H_0=73$).
       neither (checked at $\alpha=1$, $M=0.1$: horizons at 0.209 and 0.879, turnover at 0.464). And the unit
       rate tracks $f=0$, not $f'=0$ — a horizon property, not a turnover property.* **(b) The radius carries two
       distinct things: the $\kappa=0$ DEGENERACY, a property of the geometry that the reassignment uses, and the
-      comoving CROSSING at 7.06 Gyr, an event on our worldline.** *The seeding is the first; the turnover is the
+      comoving CROSSING at ≈7.46 Gyr, an event on our worldline.** *The seeding is the first; the turnover is the
       second — the same level distinction P7 draws between the geometric closure and the physical seeding.*
       **And the thing that makes it a crossing rather than an approach: on this member $f\le0$ EVERYWHERE with
       equality only at $\rho$ — the static region has collapsed to a single radius, there is no exterior, and
@@ -1384,8 +1337,8 @@ held."** *Five terms canonised, and they are the ones that say what every other 
 — *R2 in the ontological register: **a structure with an unforced modulus is a FAMILY $\{W_\lambda\}$, not a
 world; maximal symmetry is the unique moduli-free choice** — **this licenses the corpus's foundational SELECTION
 of the substrate*** · **ALTITUDE** — *not whether a claim is true but **what kind of warrant it has*** ·
-**RULE-FAVOURED ALTITUDE** — *"every 'forced within CR' is a coherence claim at rule-favoured altitude, awaiting
-the world's non-local discriminator — never correspondence"* · **COHERENCE vs CORRESPONDENCE**.
+**RULE-FAVOURED ALTITUDE** — *every "forced within CR" is a coherence claim at rule-favoured altitude; whether
+the world is so built is the data axis, which the world judges* · **COHERENCE vs CORRESPONDENCE**.
 ***Because every other §0 row is a NOUN, and these five say what the nouns are WORTH. A node can use all 31
 symbol rows correctly and still not know that "forced" means forced-within-CR at rule-favoured altitude rather
 than forced simpliciter.***
@@ -1530,12 +1483,12 @@ propagated down without someone already knowing the mapping in their head.** Now
 
 | Family (ledger) | P7 §frontiers | Lane items (this file) | Map cluster | State |
 |---|---|---|---|---|
-| **1 · Matter branch-point crossing worldline-and-field dynamics** | item 1 | **A2.4** (Lane 1) — and the collapse-excursion build | **A** the matter sector | live · buildable now |
+| **1 · Matter branch-point crossing worldline-and-field dynamics** | item 1 | **A2.4** (Lane 1) — and the collapse-excursion build | **A** the matter sector | **closed** (c54.113) |
 | ~~2 · Sheet-to-ruling assignment~~ | *removed* | ~~A2.8~~ struck r1442 | — | **KILLED r1280.** Found stale in `THE_PLAN` (to r1442) *and* the register (to r1498) |
-| **3 · Inherited datum** (n_s, A_s; η) | item 2 | **A2.2** (Lane 3) | **F** the inherited boundary data | live · gated on A4 |
-| **4 · Irreducible interior reassignments** (Kerr-inner, RN-interior) | item 3 | **A6.2** (Lane 3) | **A** | live · gated on family 1 |
-| **5 · Scalar-perturbation sector to a verdict** | item 4 | **A2.3** (Lane 1) · **A1.3** (Lane 2) | **E** the cosmology's empirical edges | live · buildable now; stakes moved r1423 |
-| **6 · Propagating fermion sector** (+ compact-face gauge, mass hierarchy) | item 5 | **A4** (Lane 3) — *the master gate* | **A** | live · the largest undertaking |
+| **3 · Inherited datum** (n_s, A_s; η) | item 2 | **A2.2** (Lane 3) | **F** the inherited boundary data | live · at `PO-31`, now a specification: the tilt requirement is the radiation fraction's, bounded above by two |
+| **4 · Irreducible interior reassignments** (Kerr-inner, RN-interior) | item 3 | **A6.2** (Lane 3) | **A** | **closed** (c54.118; its last remainder, `PO-49`, struck) |
+| **5 · Scalar-perturbation sector to a verdict** | item 4 | **A2.3** (Lane 1) · **A1.3** (Lane 2) | **E** the cosmology's empirical edges | **verdict reached**: the transfer and the likelihood run; its one live remainder the acoustic contrast, at `PO-56` |
+| **6 · Propagating fermion sector** (+ compact-face gauge, mass hierarchy) | item 5 | **A4** (Lane 3) — *the master gate* | **A** | **closed** — the matter sector's account of the propagating fermion and gauge content |
 | **7 · World-correspondence + the discipline's empirical grounding** | *none, correctly* — not a corpus gap | **Lane 2** entire (A1.1, A1.4, A2.1, A2.6) | **E**, **G** | live · closes on the world only |
 | **8 · The interacting quantum tower** | item 6 | **A3** (Lane 3) | **B** the quantum completion | live · not CR-specific |
 
@@ -2292,14 +2245,14 @@ This line **cuts across the six lanes**, and the audit that populates it is `FIR
 
 **⟂ PUNCH-LIST CURRENCY (r966): items 1–3 are DONE (r933/r934, per `FIRST_EDITION_AUDIT`); 4–6 remain.** ~~1. Four hard fixes — P3's six figures (now `corpus/figs/fig2…fig7.pdf`); P5 `JanzenAlgebroid` bibitem; P7 fermion contradiction; P16 stale meta-correction.~~ **DONE.** ~~2. Two matter-sector-staleness reconciliations — P12 `JanzenMatter` cite (verified present); P13 spinor wording.~~ **DONE.** ~~3. Bibliography pass (house-style "companion paper (P#)", orphan bibitems, receipt-pointers, p0 anchors).~~ **DONE (C1–C6, r933/r934).** The two genuine items that remain are 4 (references-completeness) and 5 (frontier-vs-chore, the author's intent call — this is exactly the r966 judgment-call pass now underway); 6 is optional mechanical. The historical list is retained struck for the record.
 
-**⟂ CURRENCY (r1144): ITEM 4 IS DONE. Item 5 remains, and it is Daryl's, not the gate's.** E.1 ran to completion at r1144 (15/15 papers, ~95 sites, 9 doors, 3 vestigial
+**⟂ CURRENCY (r1144): ITEM 4 IS DONE. Item 5 remains, and what decides it is the recorded intent, read item by item.** E.1 ran to completion at r1144 (15/15 papers, ~95 sites, 9 doors, 3 vestigial
 bibitems retired; all 17 papers close with zero orphans and zero missing; the criterion baked as
 `E1_CITATION_CATALOGUE` §THE CRITERION, every strike carrying its reason). **Every item on this list the gate can work is now discharged.** Item 5 (frontier-vs-chore) *"requires intent
 (Daryl's + the arc-docs/c33 record), not a source read"* — by its own words. Item 6 is a mechanical pass. *(r1448: "optional" REMOVED.)*
-**What remains here is one judgment call, and it is the orchestrator's.**
+**What remains here is one judgement per marked-open item — frontier or chore — and the arc documents and the c33 record are what settle each.**
 
 **⟂ r1145 (Daryl) — and this supersedes the r1139/r1142 framing that E.1 was the last thing owed.** *(Daryl: "The line has moved well down this list. **I'm not publishing without the
-combinatorics ledger at the very least done right.**")* **Lane 8 — the combinatorics ledger — is now DONE (r1157: LANE COMPLETE, publication blocker DISCHARGED)**; *"at the very least"* was the operative phrase, so **more may still join — the orchestrator says what.** E.1's discharge cleared the last *reference* debt; Lane 8's discharge cleared the combinatorics blocker.
+combinatorics ledger at the very least done right.**")* **Lane 8 — the combinatorics ledger — is now DONE (r1157: LANE COMPLETE, publication blocker DISCHARGED)**; *"at the very least"* was the operative phrase, so **more may still join, as the work names them.** E.1's discharge cleared the last *reference* debt; Lane 8's discharge cleared the combinatorics blocker.
 
 **The checks owed:**
 4. ~~**The references-completeness pass**~~ — **✔ DONE r1144: E.1 COMPLETE. THE ONE GENUINE WORK-ITEM GATING SHIP IS DISCHARGED.** *(original text retained below for the record)* **The references-completeness pass — LEAN (Daryl, r932): the referee-would-demand-it threshold, not every definition.** For load-bearing definitions/principles that aren't Google-able named things, a chase-able reference; for significant results, a significance-reference (the Carter-constant model). Dispatchable paper-by-paper. *(This is `E.1`.)*
@@ -2317,7 +2270,7 @@ combinatorics ledger at the very least done right.**")* **Lane 8 — the combina
 
 **The edition-1 ambition (settled r931):** publish the forced matter *skeleton* — three chiral generations forced within CR (P14) — with the *content* marked as the open frontier; **do not gate on deriving the Higgs.** That's edition 2's headline, flagged in edition 1 as exactly where it goes next. **Convergence:** this line *is* the distributable-programme milestone — a claim-audited, referenced, internally-consistent bundle is precisely what people can feed to NotebookLM or run an LLM-programme on.
 
-**⟂ EDITION 2 — the planned re-architecture (Daryl, r954; read off the dependency matrix, held for reversal).** For a world that has ingested edition 1, the *presentation* order (a choice over a fixed dependency structure) is re-cut to the topological/logical one:
+**⟂ EDITION 2 — the planned re-architecture (Daryl, r954; read off the dependency matrix).** For a world that has ingested edition 1, the *presentation* order (a choice over a fixed dependency structure) is re-cut to the topological/logical one:
 - **P4 → P1.** The empirical forcing (`modern_parallax`) is the rightful root. P1 and P4 are the two co-equal roots (structural forcing from GR alone; empirical forcing from the redshift-isotropy floor); nothing in the geometry stream P1–P3 depends on P4, so the rotation **P4→P1, old P1–P3 → P2–P4** preserves the internal DAG. *Why not now:* P4's claim (objective cosmic present, a measured preferred frame, simultaneity resolved) is dismissed as "impossible in principle" if led with; behind P1–P3's unimpeachable GR geometry it lands as *"the data forces exactly the foliation this geometry provides."* Edition 1's geometry-first is both **shielding** and the better first encounter (absorb the architecture geometrically → see it's also empirically forced, and maps algebraically); edition 2 leads empirical because trust is earned — the coda-walks-through-the-gate order (same as the spinup coda-read: the epistemics come third).
 - **P5 folds into P3.** The 34× P5→P3 edge is the corpus's heaviest single dependency — P5 is the algebraic/relational content of P3's one object (P3 the slicing curve + hexad; P5 the involution, deck group, Aut(A₂)=D₆). Fold: those 34 cross-cites become internal and vanish. *Design choice:* **one paper, two marked movements** (geometric construction → algebraic groupoid) preferred over a bare pair, keeping the geometric-then-algebraic pedagogy as internal structure. (P5→P4×8: the merged paper cites the new-P1 — clean, since P4 leads.)
 - **Net edition-2 opening:** P1 empirical (was P4), P2–P4 geometry (was P1–P3, with the P3/P5 merge), then P6 epistemics, P7 framework, unchanged downstream. Nothing in edition 1 forecloses it; the numbering is presentation over the fixed structure the matrix already draws. *(A guess to plan toward, not a commitment; the first edition ships in the current order.)*
@@ -2335,13 +2288,13 @@ combinatorics ledger at the very least done right.**")* **Lane 8 — the combina
 **Why P16's title draws the corpus-wide line.** P16 sits at the mouth of the whole deductive river: its synthesis *is* the conjunction of P1+P4 (the forced foliation), P7 (collapse must become a universe), P3/P8 (the seam, the radiation-free rate), P14 (the matter crossing). Earning its title means every load-bearing arrow feeding it is earned at necessity, or is a genuine frontier the title does not stake — *which is a scoping call, not a licence to leave it*. Draw the line at P16 and it is drawn across the corpus.
 
 **The two halves of the title, at their proper altitude (P6 §boundary — coherence ≠ correspondence):**
-- **"deductively forced synthesis" — a COHERENCE claim, earned within CR.** Each arrow is proved (§sec:synthesis); the Big Bang is their forced conjunction, not a posit. Whether *the world* is so built — the correspondence — is the data axis (P1's no-horizons, the radiation-free rate, the CMB), which by P6's own boundary is **above the line by construction**: a framework is credited for *requiring* and is *tested* by the world; those tests are strengths the title exposes, not debts it owes. The synthesis half is earned *at its proper altitude*. **(⟂ r964 — those exposed tests have begun to return, and in CR's favour: the radiation-free rate fits the full BAO ladder (A1.4), which fixes $H_0$ with the acoustic angle, the abundances land within measurement on the required hot history (D1), and the low-ℓ octopole is a cosmic-variance-limited wash, not a falsification (A1.2). So the correspondence axis — held here as a strength the title exposes — has crossed on several axes from _exposed edge_ to _returned verdict_: the corpus is now __empirically favoured__, coherence → correspondence → confirmed prediction. This does not move the first-edition line (it was never a title debt); it upgrades what the edition ships — the decisive edges publish not merely as honest open frontiers but as edges the world has begun to answer favourably. The structural unification stays at coherence; the full likelihood and damping tail stay open. Baked corpus-wide, r964.)*
+- **"deductively forced synthesis" — a COHERENCE claim, earned within CR.** Each arrow is proved (§sec:synthesis); the Big Bang is their forced conjunction, not a posit. Whether *the world* is so built — the correspondence — is the data axis (P1's no-horizons, the radiation-free rate, the CMB), which by P6's own boundary is **above the line by construction**: a framework is credited for *requiring* and is *tested* by the world; those tests are strengths the title exposes, not debts it owes. The synthesis half is earned *at its proper altitude*. **(The tests have returned, on the corpus's own numbers (P15, P16): the leaf-ruler fit to the BAO ladder with the acoustic angle fixes $H_0\simeq68.6$; the abundances land within measurement on the required hot history (D1); the low-multipole sector sits at $\Delta(-2\ln L)\simeq+1.6$ against the standard model, level with it; and the full-spectrum likelihood rejects the computed temperature spectrum on its shape, the gap being the acoustic contrast made in the projection (`PO-56`). So the correspondence axis returns a mixed verdict — level on the background and the large angles, against on the acoustic shape — and the discipline counts all of it (P6). This does not move the first-edition line; it fixes what the edition ships. The structural unification stays at coherence.)*
 - **"produces the abundances" — the one load-bearing DEBT, now PAID (r955).** He-4 was earned (computed, Y_p=0.2506). "Produces the *whole* pattern jointly" — one handover *requiring* D, He-4, ³He and the metallicity floor together — was the **Big Bang computation not yet run**; it has now been run (multi-nuclide network on the cooling-leg thermal history), returning the joint pattern at few-% fidelity. Debt discharged ⇒ the title's "produces" earned at necessity.
 
 **THE ANSWER (the determination the line was drawn to make — Daryl's three questions):**
 1. **The sole below-the-line debt owed P16's title is the Big Bang computation** — the multi-abundance network (A2.1-compute + the D/Li reduction to exact numbers, P16-A). Everything else that "lags" the title is above the line (inventory below).
 2. **It requires no new paper.** It is a computation *within* P16 — a network integrated on T(τ̃),ρ(τ̃) with CR's rate per epoch (the scoping already derived, §scoping); a validated reduced network suffices. No new paper, no new research programme, is load-bearing for the title.
-3. **It is reachable *before* the matter content (the Higgs).** [Determination, held for reversal:] the abundances are ordinary nuclear physics on the collapse thermal history — measured nuclear rates and particle masses, exactly as standard BBN — so the matter sector's *content* (Higgs, colour, masses) is **not** load-bearing for P16's title. Daryl's hypothesis confirmed at the current understanding. *Held open as an evolving determination:* if building the network surfaces a place where an abundance turns on something the matter sector must first derive, that piece moves below the line — none is visible now.
+3. **It is reachable *before* the matter content (the Higgs).** [Determination:] the abundances are ordinary nuclear physics on the collapse thermal history — measured nuclear rates and particle masses, exactly as standard BBN — so the matter sector's *content* (Higgs, colour, masses) is **not** load-bearing for P16's title. Daryl's hypothesis confirmed at the current understanding. *Held open as an evolving determination:* if building the network surfaces a place where an abundance turns on something the matter sector must first derive, that piece moves below the line — none is visible now.
 
 ### ⟂ THE PLACED INVENTORY (evolving; every open item sorted against the line)
 
@@ -2349,7 +2302,7 @@ combinatorics ledger at the very least done right.**")* **Lane 8 — the combina
 - ~~**D1 · The Big Bang computation**~~ — **✔ DONE (r955).** The full multi-abundance network on the cooling-leg thermal history (D/H, He-4, ³He, Li-7, the metallicity floor), integrated on T(τ̃),ρ(τ̃) with CR's rate per epoch (window rate in the nuclear window; §scoping), now runs and returns the joint pattern at few-% fidelity to standard BBN. Route taken: a validated reduced network built on JINA REACLIB rates via `pynucastro` (AlterBBN's host was unreachable) + the corpus thermal weak n↔p; gated against standard-BBN benchmarks (Y_p 1.5%, D/H 2%, ³He 0.4%, ⁷Li at the shared over-prediction; d ln(D/H)/d ln η=−1.60; ⁷Li valley; baryon number conserved). **The SMART goal's measurable target is met: run jointly ⇒ P16's title earned.** [was A2.1-compute + P16-A; receipts in `computations/p16_bbn/`.]
 
 **ABOVE THE LINE — not owed the title (each with its reason):**
-- *Data tests the world judges (correspondence; P6 §boundary):* P1 no-horizons (A1.1), the radiation-free rate discriminator (A1.4), the low-ℓ octopole / full-spectrum likelihood (A1.2/A1.3), the multi-abundance *verdict* against data (A2.1's data half — distinct from D1, its computation). The title is a coherence claim; these are the decisive edges it exposes, not debts. [Lane 2.]
+- *Data tests the world judges (correspondence; P6 §boundary):* P1 no-horizons (A1.1), the geometric rate (A1.4), the low-ℓ sector / full-spectrum likelihood (A1.2/A1.3), the multi-abundance *verdict* against data (A2.1's data half — distinct from D1, its computation). The title is a coherence claim; these are the decisive edges it exposes, not debts. [Lane 2.]
 - *Inherited rather than derived, as ΛCDM carries its own η — the derivation remains work (r1448):* the derivation vs inheritance of η / ρ_r/ρ_m / the progenitor spectrum (A2.2). The title says "with the *inherited* η"; it does not stake on the derivation. [Lane 3.]
 - *Not owed to P16's title specifically — which says nothing about whether they are work (r1448):* the matter *content* (A4 — Higgs, colour, masses), the quantum completion (A3), the interior remainder / grand claim (A6.2/A6.4), the unification verdict (A5). Edition-1 publishes the forced *skeleton*, content marked open (settled r931). [Lanes 3–4.]
 - *Cohesion / scholarship (corpus-quality, not title-debts):* terminology (D.2), ~~the P-symbol collision (D.3)~~ **[RESOLVED r968: canon R=mass-reflection/γ⁵, P=spatial parity, T=time; applied + verified corpus-wide]**, citations/figures (E.1/E.2), **and the P6-grounding sweep (C-P6, below).** [Lane 5.]
@@ -2397,15 +2350,13 @@ gate, a scope, a premise or a target that the corpus had moved past.**
 The thin high-value edge — contained work inside established machinery, actionable today, ordered by impact:
 
 1. **A2.3 · CMB peak-heights transfer** — build the seam-to-recombination transfer that carries the single-phase null-boundary datum to the observed acoustic peak *heights* (qualitatively collapse-phase driving, r824; the exact heights open). *"A computation, not a missing idea."* Highest-impact buildable item; the coherence-sufficiency half may run ahead of the full matter-sector gate.
-   **⟐ STAKES CHANGED r1415–r1423 (recorded here r1471 — the lane did not know).** The ~8% diffusion-scale
-   signature was recomputed independently and confirmed (θ_D/θ_* = +7.0%, r_D = +8.9%, on one geometry with
-   CAMB's real recombination opacity), and its **spectral** consequence was then examined: it is **~90%
-   degenerate with the spectral tilt n_s at fixed θ_\*** (n_s alone absorbs 82%). **So the transfer is no
-   longer deciding tension-versus-wash.** What it delivers when run is the **exact shape of the small
-   ℓ²-curvature residual** the tilt cannot absorb, and the **mid-ℓ peak behaviour** whose driving runs partly
-   post-seam. Lower stakes, same build. *(A "tension" manufactured at r1420/21 by multiplying ΛCDM peaks by a
-   CR damping envelope was struck at r1422 — never multiply one cosmology's peaks by another's damping.)*
-2. ~~**A1.2 · Low-ℓ octopole / large-angle shape** — the exact closed-S³ hyperspherical (or full Boltzmann) large-angle shape, to firm the octopole verdict (the sharpest exposed falsification edge). Computation-complete/data-limited, but the exact-shape solve closes the last `[reading]`.~~ **✔ DONE (built in P15 §largescale/§scope, r1006 sweep-confirmed):** the exact large-angle shape is now built with a *genuine Boltzmann transfer* (SW + early/late ISW + Doppler, sampled at the discrete closed-S³ modes), gate-validated to four figures against the reference C_ℓ and stable in r₀ (receipts `verify_lowell_boltzmann.py`, `verify_lowell_exact_measure.py`, `verify_lowell_likelihood_v2.py`). It firmed the octopole verdict decisively: a *mild, non-discriminating* deficit (≈0.47/0.41 of ΛCDM at ℓ=2/3, recovering by ℓ≈7), a **wash** under the exact cosmic-variance likelihood (Δ(−2ln L)≈+1.8 over 2≤ℓ≤30, inside cosmic variance) — superseding the earlier over-deep ~0.2 estimate (≈+14) that had wrongly named it a falsification edge. The deficit's existence and location stand as a real parameter-free feature; its depth places it consistent with ΛCDM. The once-sharpest exposed edge is closed as non-discriminating. *(Was stale in the runway; struck. The broader full-spectrum likelihood remains open — that is A1.3, distinct.)*
+   **✔ RUN (P15 `sec:refit-bound`).** The branch-point-to-recombination transfer is run on both arms, the control
+   reproducing a standard code to 0.23% in the arm's configuration: the arm returns the comb to a part in six hundred
+   and height ratios 2.264 and 2.298 against the sky's 2.217 and 2.277, and the full-spectrum likelihood rejects it
+   on TT shape, the difference being the **acoustic contrast**, made in the projection from wavenumber to multipole
+   and not in the source — the live edge (`PO-56`). On the settled leaf assignment the damping-scale signature is
+   under a per cent. *(Never multiply one cosmology's peaks by another's damping.)*
+2. ~~**A1.2 · Low-ℓ octopole / large-angle shape** — the exact closed-S³ hyperspherical (or full Boltzmann) large-angle shape, to firm the octopole verdict (the sharpest exposed falsification edge). Computation-complete/data-limited, but the exact-shape solve closes the last `[reading]`.~~ **✔ DONE (built in P15 §largescale/§scope, r1006 sweep-confirmed):** the exact large-angle shape is now built with a *genuine Boltzmann transfer* (SW + early/late ISW + Doppler, sampled at the discrete closed-S³ modes), gate-validated to four figures against the reference C_ℓ and stable in r₀ (receipts `verify_lowell_boltzmann.py`, `verify_lowell_exact_measure.py`, `verify_lowell_likelihood_v2.py`). It firmed the octopole verdict decisively: a *mild, non-discriminating* deficit (≈0.49/0.44 of ΛCDM at ℓ=2/3, minimum at ℓ=4, recovering by ℓ≈8, depth cross-validated between two transfers), a **wash** under the exact cosmic-variance likelihood (Δ(−2ln L)≈+1.6 over 2≤ℓ≤10, inside cosmic variance) — superseding the earlier over-deep ~0.2 estimate (≈+14) that had wrongly named it a falsification edge. The deficit's existence and location stand as a real parameter-free feature; its depth places it consistent with ΛCDM. The once-sharpest exposed edge is closed as non-discriminating. *(Was stale in the runway; struck. The broader full-spectrum likelihood remains open — that is A1.3, distinct.)*
 3. **A2.4 · Matter branch-point crossing worldline dynamics** — the detailed worldline/field dynamics of a concrete matter model transiting the shared layer (the crossing is well-posed; the depth is open). **This is the worldline-and-field side of item 2 below** — not a separate build. The crossing's well-posedness, isotropisation, scale-freeness and transition law are established (P7 §frontiers item 1); what is open is the dynamics on the excursion.
 4. ~~**A6.3 · Explicit matter functionals + EoS** — collect the cut's stress-energy functionals and equations of state for the homogeneous (Kantowski–Sachs) and axisymmetric (Weyl) classes; method established, only the systematic collection remains.~~ **✔ DONE (collected in P9 §open, r999 sweep-confirmed):** the explicit functionals are collected for both classes — homogeneous (two functionals of the cut mod the contracted-Bianchi identity, generically anisotropic, perfect-fluid closure a single ODE, dust and SdS-vacuum the degenerate members) and axisymmetric Weyl (the fluid bend from non-harmonic U + the axial-strut bend, the conical-defect EoS) — verified symbolically against the Einstein tensor with every vacuum kernel recovered (receipt `computations/matter_functionals/matter_functionals_C9.py`). Was stale in the runway; struck.
 5. **A4.7 · Zero-mode continuation** ⟐ *material:* `retired/A5_fermion_sector_build.md`, `MATTER_SECTOR_germ.md`; the zero-mode is P14's built half ⟐ — onto the cosmological leaf** — the explicit continuation of the fermion zero-mode across the branch point for a concrete cosmological-side model.
@@ -2649,8 +2600,8 @@ The thin high-value edge — contained work inside established machinery, action
 
    **⚠ HONEST COUNT (r1606):** of seventeen abstracts, **ten have now been read in full (r1607)** — P1, P2, P3, P4, P5, P8, P9, P11, P15, p0 — **and seven have not**: P6, P7, P10, P12, P13, P14, P16. *The five placements and
    two clean declines all came from the six that were read. The eleven remain a genuine gap in this scan.*
-     underneath**."* P3 recompiles clean, 40pp. **NOT warranted in P16 or P1:** their origin is the **finite-curvature seam**, explicitly *"not r=0"* — a different object from the spike. **P1** likewise: its downstream root is *"the finite-curvature cosmogenesis branch point
-     (not r=0)"*. *Three papers where the result would have looked plausible and would have been wrong.*
+     underneath**."* P3 recompiles clean, 40pp. **NOT warranted in P16 or P1:** neither's object is the $r$-chart's spike — P16's is the handover at the branch point,
+     read in the substrate's finite curvature, and P1's the collapse horizon. *Papers where the result would have looked plausible and would have been wrong.*
    **P7 recompiles clean, 55pp, 0 undefined.**
    *The interpretation remains A2.10 §II.2's, and the corpus says nothing it has not earned.*
    · **⟐ THE TEST TO APPLY (r1543):** `GEOMETRY_PHYSICS_TAXONOMY.md` holds the programme's own
@@ -2709,7 +2660,7 @@ The thin high-value edge — contained work inside established machinery, action
    · *depends on:* P16's existing model · *depended on by:* items 3, 4; the phase plan's step 3
    · *state:* **not started. This is where the physics stands.**
 
-**3. Decide whether the seam datum is fixed by geometry or rides on composition.** The progenitor is fully determined (M = c²/3√Λ G = 4.30×10⁵² kg; **⚠ THE NUMBER CARRIES AN UNSTATED H₀ (r1631).** Λ is inferred as 3H₀²Ω_Λ/c², so **M ∝ 1/H₀**: 4.30×10⁵² kg is the **Planck H₀ ≈ 67.4** value, while **at the directly measured H₀ = 73 that CR's own cosmology fits at, M = 3.94×10⁵² kg** (Ω_m = 0.307; receipt `lap_timeline.py`, which asserts ΛG²M²/c⁴ = 1/9 rather than a number). *`eq:Nariai-mass` states M **symbolically** and is right; the number lived only in this file, at an H₀ the programme does not use. Quote it with its H₀ or not at all.* E=1 worldline; peak T ≳170 MeV, M-independent). What geometry does not fix is what matter it carried. Either answer is a result and either updates the dependency graph.
+**3. Decide whether the seam datum is fixed by geometry or rides on composition.** The progenitor is fully determined (M = c²/3√Λ G, **which carries its H₀**: Λ is inferred as 3H₀²Ω_Λ/c², so **M ∝ 1/H₀** — **M ≈ 4.17×10⁵² kg at the H₀ ≈ 68.6, Ω_m ≈ 0.297 the distances fix**, 4.30×10⁵² kg at the Planck values; receipt `lap_timeline.py` asserts ΛG²M²/c⁴ = 1/9 rather than a number. *`eq:Nariai-mass` states M **symbolically** and is right. Quote a number with its H₀ or not at all.* E=1 worldline; peak T ≳170 MeV, M-independent). What geometry does not fix is what matter it carried. Either answer is a result and either updates the dependency graph.
    · *from:* this session, r1441–46 · *depends on:* item 2's model · *depended on by:* F3's closure route
 
 *A2.3 (peak-heights transfer), A2.4 (matter branch-point crossing) and A2.2 (the baryogenesis IC, Lane 3) all ride the collapse-excursion model of item 2. Building it is what makes them close together.*
@@ -2786,10 +2737,10 @@ The thin high-value edge — contained work inside established machinery, action
     **phase, inverted** — and it is an identity chain, not a match: $\rho/A=2^{-1/3}$ with the $\sinh$ law gives
     $\sinh w_f=2^{-1/2}$, then $\cosh 2w=1+2\sinh^2 w$ gives $\cosh 2w_f=2$, while $2\rho/A=2^{2/3}$ with the
     $\cosh$ law gives $\cosh w_b=2$. **Teeth by the taxonomy's test: mechanism plus consequence.**
-    **(b) THE INTERVALS**, at $\Omega_m=0.307$ and the directly measured $H_0=73$ ($2\alpha/3c=10.73$ Gyr per
-    unit phase): collapse leg, back seam → turnaround **14.13 Gyr** · **the LIFT: 0.000 Gyr** · expansion,
-    $r=0$ → front seam **7.06 Gyr** · $r=0$ → present epoch **12.83 Gyr** (identical to flat-ΛCDM's own age
-    formula, as it must be) · front seam → present **5.77 Gyr**.
+    **(b) THE INTERVALS**, on the background the distances fix, $H_0\simeq68.6$, $\Omega_m\simeq0.297$ ($2\alpha/3c=11.34$
+    Gyr per unit phase): collapse leg, back pass through the seam → turnaround **14.93 Gyr** · **the LIFT: 0.000 Gyr** ·
+    expansion, $r=0$ → front pass through the seam **7.46 Gyr** · $r=0$ → present epoch **13.78 Gyr** (identical to
+    flat-ΛCDM's own age formula, as it must be) · front pass → present **6.31 Gyr**.
     **⚑ (c) AND THE SHARPEST ONE: THE LIFT ADVANCES $\operatorname{Re}\tilde\tau$ BY EXACTLY ZERO.** *The
     collapse-to-expansion handoff takes no cosmic time at all* — it is a stretch of the **contour**, not of
     time, of imaginary length $\pi\alpha/3$. **This is the item's own stated purpose reached:** it separates
@@ -2798,17 +2749,17 @@ The thin high-value edge — contained work inside established machinery, action
     **⚠ AND IT SURFACED A DEFECT IN THIS FILE, which is what a numbers pass is for.** Every figure scales as
     $1/H_0$, because $\Lambda$ is inferred as $3H_0^2\Omega_\Lambda/c^2$ — see the three corrected sites above.
     **⚑ WHICH LANDMARK BEGINS THE OBSERVABLE COSMOLOGY: the branch point $r=0$.** P7 holds two loci at two
-    levels (`rem:perspectival-singularity`): the geometric closure through $r=0$, where the expanding leg
-    begins, and the physical seeding of the layers by the causal reassignment acting on the collapse horizon,
-    whose degenerate member is the Nariai horizon at the seam. **The 7.06 Gyr figure is the expanding leg's
-    passage through the front seam** --- its exit from the lap and the onset of acceleration --- not a seeding event.
+    levels (`rem:perspectival-singularity`): the branch point $r=0$, where the expanding leg and the observable
+    cosmology begin, and the collapse horizon the causal reassignment acts on, whose degenerate member is the
+    Nariai horizon at the seam. **The ≈7.46 Gyr figure is the expanding leg's front pass through the seam** ---
+    its exit from the lap and the onset of acceleration --- not a seeding event.
 
     **The job:** compute the **finite interval lengths, in SI units, between every landmark on the lap** —
     *"how long did the entire lap take to occur?"* and the same for each leg.
 
     **Why it is computable now, and has never been done.** The law is closed-form — the bead's outward branch
     is r = (2Mα²)^{1/3} sinh^{2/3}(3τ̃/2α) — and **both constants are fixed, not fitted**: α = √(3/Λ), and
-    M = c²/3√Λ G ≈ 4.30×10⁵² kg (`eq:Nariai-mass`, verified to six figures). **⚠ THE NUMBER CARRIES AN UNSTATED H₀ (r1631).** Λ is inferred as 3H₀²Ω_Λ/c², so **M ∝ 1/H₀**: 4.30×10⁵² kg is the **Planck H₀ ≈ 67.4** value, while **at the directly measured H₀ = 73 that CR's own cosmology fits at, M = 3.94×10⁵² kg** (Ω_m = 0.307; receipt `lap_timeline.py`, which asserts ΛG²M²/c⁴ = 1/9 rather than a number). *`eq:Nariai-mass` states M **symbolically** and is right; the number lived only in this file, at an H₀ the programme does not use. Quote it with its H₀ or not at all.* **The corpus states every landmark
+    M = c²/3√Λ G (`eq:Nariai-mass`), **≈ 4.17×10⁵² kg at the H₀ ≈ 68.6, Ω_m ≈ 0.297 the distances fix** (4.30×10⁵² kg at the Planck values; M ∝ 1/H₀; receipt `lap_timeline.py` asserts ΛG²M²/c⁴ = 1/9 rather than a number). *Quote a number with its H₀ or not at all.* **The corpus states every landmark
     and no interval between any two of them:** `sinh^{2/3}` appears 17× in P7, *turnaround* 15×, *branch point*
     10×, *Nariai* 34× — and **seconds, Gyr and SI units appear zero times in P7, P15 or P16** (checked r1558).
 
@@ -2830,9 +2781,9 @@ The thin high-value edge — contained work inside established machinery, action
 
 **⌖ LANE 2 AUDIT STATE (ARC 11, r1770) — and the lane's name is now half wrong, which matters for a
 falsification ledger.**
-*`A1.4` **is not waiting: it has been run against the state of the art and passes** — DESI DR2, thirteen
-measurements across seven tracers, $\chi^{2}/\mathrm{dof}\simeq1.0$ **at any $H_0$ including 73**, while the
-radiation-pinned ruler **breaks $\Lambda$CDM at 73 ($\chi^{2}/\mathrm{dof}\simeq14$)**. Two registered receipts.
+*`A1.4` **is not waiting: it has been run against the state of the art** — DESI DR2, thirteen
+measurements across seven tracers, $\chi^{2}/\mathrm{dof}\simeq1$ at $\Omega_m\simeq0.30$, $H_0\simeq68.6$ on the leaf
+ruler, the acoustic angle alone agreeing within a twentieth of a unit.
 · `A1.1` **is structural, not data-gated at all** — it stands on causal structure alone and needs none of the
 cosmology; **what it waits on is not a measurement but a refutation**, which is a different kind of waiting. ·
 `A1.3` **honestly downgraded already at r1471** — the sharpening is a small $\ell^{2}$-curvature residual,
@@ -2849,35 +2800,27 @@ run.***
 These are **strengths to state precisely and hold**, not work to grind — the decisive data-gated claims the apparatus was built to make. The move is to state each sharply and watch for the discriminating measurement, not to compute toward a foregone answer.
 
 - **A1.1 · P1 no-horizons — the decisive structural test.** ⟐ *material:* the paper is `corpus/BH_causality_v2.tex`; its card is the ontology map **§1c**, *"the taproot the cosmological forcing rests on"*; it stands on causal structure alone and **needs none of the cosmology**. No event horizon completes at finite exterior time; where the programme's whole weight sits, on causal structure alone.
-- **A1.4 · The radiation-free rate — the near-term discriminator.** ⟐ *material:* `hubble_build/` (incl. `desi_dr2_confrontation.py`); P15 carries the resolution — *"the expansion history fits the low-redshift distance ladder, which fixes $H_0$ with the acoustic angle"*; map card **§1r**. Radiation carries no term in the expansion rate; the cleanest place CR and ΛCDM part on expansion-history data.
+- **A1.4 · The geometric rate — the near-term discriminator.** ⟐ *material:* `hubble_build/` (incl. `desi_dr2_confrontation.py`); P15 carries the resolution — *"the expansion history fits the low-redshift distance ladder, which fixes $H_0$ with the acoustic angle"*; map card **§1r**. Radiation carries no term in the expansion rate; the cleanest place CR and ΛCDM part on expansion-history data.
   **⚑ AND IT HAS BEEN RUN AGAINST THE STATE OF THE ART — this line reads as waiting, and the confrontation is in
   P15 with two receipts (found r1770).** *A falsification ledger whose **tested** items read as **pending**
   misrepresents the programme's own exposure, which is the one thing this lane exists to state precisely.*
-  **SDSS DR12 consensus:** *the radiation-free rate at $\Omega_m\simeq0.31$ fits at the directly measured $H_0$ —
-  $\chi^{2}\simeq1.7$ on six points, **at *any* $H_0$ including 73** — while **the radiation-governed rate at that
-  same local $H_0$ misses badly, $\chi^{2}\simeq49$.** ***(superseded r6772+66.33: on the leaf ruler the sound horizon is the plasma's own accumulation, so the baryon-acoustic observables constrain $H_0$ here too, and the joint fit returns $\chi^2/\mathrm{dof}\simeq1$ at $\Omega_m\simeq0.30$, $H_0\simeq68.6$.)***
   **DESI DR2 — thirteen measurements, seven tracers, $0.3\lesssim z\lesssim2.3$, full per-tracer
-  $D_M/r_s$–$D_H/r_s$ correlations:** *it **"tightens rather than loosens the result"** — with the single
-  CMB-calibrated $\Omega_m\simeq0.307$ (at which the inherited datum sits at $\rho_r/\rho_m\approx2.0$) the
-  radiation-free rate fits at **$\chi^{2}/\mathrm{dof}\simeq1.0$, again at any $H_0$ including 73**, while **the
-  radiation-pinned ruler forces $\Lambda$CDM to $H_0\simeq67$ and breaks it at 73, $\chi^{2}/\mathrm{dof}\simeq14$**.
-  Receipts `P15_desi_dr2_confrontation` and `P15_hubble_expansion_confrontation_v2`. And the cosmic
-  chronometers, which read $H(z)$ **directly**, are consistent with the local value.*
-  **⌗ THE MECHANISM, since a falsification item should carry why it discriminates and this one did not:** *the
-  BAO observables $D_M/r_s$ and $D_H/r_s$ are **independent of $H_0$, fixed by $\Omega_m$ alone**. **In $\Lambda$CDM
-  the ruler $r_s$ is pinned in physical length by the radiation-era density $\omega_m=\Omega_m h^{2}$**, so the
-  same data constrain $H_0$ and pull it low. **Here they do not** — the acoustic data fix $\Omega_m$ and leave
-  $H_0$ to the ladder, **with no second value to reconcile.** With the invariance guard: **the invariant is
-  $\Omega_m$, not $\omega_m$ — holding the physical density fixed imports the $\Lambda$CDM assumption.***
-  **⌗ So A1.4's status is not "waiting": it is TESTED AND PASSING on expansion-history data, at the current state
-  of the art, with the discriminating comparison quantified both ways.** *What remains data-gated is the rest of
-  the lane — A2.1's multi-abundance BBN likelihood and A1.3's full-spectrum model selection.*
+  $D_M/r_s$–$D_H/r_s$ correlations:** *the distances ride the stacking rate and the sound horizon is the plasma's own
+  accumulation on the leaf rate, so the baryon-acoustic observables constrain $H_0$ here as they do in flat
+  $\Lambda$CDM, and the joint fit returns $\chi^2/\mathrm{dof}\simeq1$ at $\Omega_m\simeq0.30$, $H_0\simeq68.6$, the
+  acoustic angle alone agreeing from independent data. The discrepancy with the local distance ladder is left where
+  the standard model leaves it.*
+  **⌗ WHAT DISCRIMINATES:** *not the value of $H_0$ but the ruler's provenance — pinned in $\Lambda$CDM by a
+  radiation-era physical density, accumulated here on a rate whose geometric part carries no radiation — and the
+  angle is computed with no early-universe parameter. With the invariance guard: **the invariant is $\Omega_m$ (the
+  offset $x_0$), not $\omega_m$.***
+  **⌗ So A1.4 is run, at the current state of the art, and passes on the expansion history.** *What remains
+  data-gated is the rest of the lane — A2.1's multi-abundance BBN likelihood and A1.3's full-spectrum model selection.*
 - **A1.3 · Likelihood-level CR-vs-ΛCDM** ⟐ *state, added r1810 by sweep `A2`:* **the crosswalk lists this as *live · buildable now* under family 5 and this line said nothing about buildability either way.** *It is buildable in the sense that the machinery exists; **what r1471 downgraded is the SIZE of the expected sharpening, not the buildability** — and r1770's audit found the neighbouring `A1.4` **tested and passing on DESI DR2**, so the lane's data side is live. **Stated here so the item and the crosswalk agree explicitly.*** ⟐ — the full-spectrum model selection (blunt at low-ℓ today; sharpens
-  with the peak-heights transfer of Lane 1). **⟐ r1471: expect a smaller sharpening than this line implies.**
-  The transfer's own stakes fell at r1423 — the ~8% diffusion-scale signature is ~90% degenerate with n_s, so
-  what the likelihood gains is sensitivity to a **small ℓ²-curvature residual**, not to a gross difference.
-  And the residual's significance is not robust: the 82σ figure is **cosmic-variance-limited to ℓ=3000**, the
-  most optimistic data conceivable, while Planck is noise-limited above ℓ≈2000.
+  with the peak-heights transfer of Lane 1). **✔ RUN:** the full-spectrum likelihood scores both arms on the same
+  bins; on the full-range lensed configuration the arm sits at 2.57 times the control's distance from the data as
+  computed and 1.57 times once both are refitted — a rejection on TT shape whose content is the acoustic contrast
+  (P15 `sec:refit-bound`).
 - **A2.1 · Multi-abundance BBN likelihood** — whether one progenitor handover fits D, He-4, and the metallicity floor together (the live refutation edge).
 - **A2.6 · Li-7** — the shared problem, inherited honestly (neither cured nor worsened). **A4.8 · Dark matter** — carried as the bend, particle question open, at full weight against the standard evidence. *(Standing honest limitations, logged so no node re-manufactures a tension.)*
 
@@ -2893,7 +2836,7 @@ r1609** · `A2.2`'s gate is **split** by P7 — the transit is geometric, the da
 **⌗ And three of the five were BINARIES that dissolved into "both, on different objects"** — *which is now a
 test worth applying before working any item that offers a choice: **ask first whether it is one question.***
 **⌗ AND THE REST OF THE LANE, r1776–r1782:** *`A4.4` **answered by `prop:forced`**, its two legs collapsing to
-one · `A4.6` **"GATED, NOT CLOSED"** on the propagating spinor sector, its sibling direct route **closed** ·
+one · `A4.6` **carried out on bound modes** (the matter sector's wall is the orbifold construction on the non-compact normal), its sibling direct route **closed** ·
 `A6.1` **completely characterised by P11** — the wall a **regular radiative boundary**, neither species of
 singularity · `A6.2` **gated on family 1, which is buildable now** — the crosswalk had it right and the prose did
 not · `A6.4` **gated on `A6.1`**, which makes A6.1's *"does not gate other items"* false and the **dependency
@@ -3001,54 +2944,10 @@ Ordered by the dependency graph (below). The matter sector's *content* is the hi
   the criterion reads the natural single-hinge index — one — not three."***
   ***So A4.4's answer: the link is forced, the two legs are one, and the whole rests on a criterion whose own
   vindication is `A5.5`.*** **That is the join between Lane 3 and Lane 4 and neither item names it: A4.4's
-  forcing and A5.5's base-rate programme are the same load-bearing point seen from two lanes.**, **A4.5/A4.6** the discrete-residue matter home and the orbifold geometric-chirality route (stated without being claimed). **⚠ A4.5's FIRST HALF IS ANSWERED — corrected r1771.** *"The discrete-residue matter home" is **p0 §Frontiers item 3**, and p0 **struck it at r1609**: *"ANSWERED; struck r1609, kept as the record… **It has since been answered in the first sense**: a Dirac field on the slicing structure **binds exactly one chiral zero-mode at each of the substrate's three throat walls**, the count forced within CR and the family symmetry the Weyl $S_3$ itself."* **So a fermion sector does live on the discrete residue** — that was the question, and P14 settled it. **What stays open is A4.6, the orbifold geometric-chirality ROUTE**, which is a different question: not *whether* the residue houses matter but *by what construction*.
-  **⚑ AND P13 STATES A4.6's EXACT STATUS — "GATED, NOT CLOSED" — with the gate named and the reason it OPENED (r1777).**
-  *P13's own words: **"THE ORBIFOLD ROUTE IS *GATED*, NOT CLOSED"** — and it says why it reads **more openly** than
-  a first pass had it: **"because the parity acts as $\gamma^5$ — a chirality projector — a discrete projection by
-  it would yield a CHIRAL spectrum, not the vector-like one an exchange would force, so the route is not closed by
-  the projection itself but gated."** *The mechanism behind that: **the parity GRADES, it does not EXCHANGE** — it
-  reflects the cut-normal along which the offset $r_0$, **which is the mass**, carries one cut to the next, so it
-  is **orientation-reversing on $\mathrm{dS}_5$ but orientation-PRESERVING on the four-dimensional spacetime,
-  fixing all four spacetime legs**, and its Clifford generator on the cut **is $\gamma^5$**.*
-  **⌗ THE GATE, named precisely and singular:** ***a PROPAGATING spinor sector to project*** — *"the built flavour
-  skeleton being **bound leaf-modes**", while the projection needs the propagating one. **With the structural
-  caveat attached: "the fifth substrate direction being the non-compact slicing normal rather than a compactified
-  circle."*** **So A4.6 is gated on exactly one thing, and it is family 6's own master gate — the propagating
-  fermion sector.**
-  **⌗ AND THE SIBLING ROUTE IS CLOSED, which the pairing hid:** *the **direct** route — the parity carrying a
-  fermion's handedness while its gauge charges are placed by hand — **still fails**, because *"the Standard
-  Model's chirality IS the differential gauge assignment (left and right in different representations),
-  gauge-internal and non-geometric, not a bare handedness carried apart from it."* **Two routes, opposite
-  verdicts: direct CLOSED, orbifold GATED.***
-  **⌗ And one further lead P13 names beside them, which no plan item carries:** *whether **a fermion mass, being
-  the $R$-odd departure the same substrate structure governs, inherits that cubic's three-fold form** —
-  ***"the one place the geometry might reach into the mass CONTENT after all."*** **That is A4.3's live
-  identification approached from the other side, and it is named in P13 rather than in the plan.**
-  **⚑ AND P13 STATES A4.6 EXACTLY — GATED, NOT CLOSED, ON ONE NAMED PREREQUISITE (transcribed r1777).**
-  ***"THE ORBIFOLD ROUTE IS *GATED*, NOT CLOSED."*** *The reason is the parity's action, read correctly: **the
-  parity GRADES, it does not EXCHANGE.** It reflects **the cut-normal** — along which the offset $r_0$, **which is
-  the mass**, carries one cut to the next — so **while orientation-reversing on $\mathrm{dS}_5$ it is
-  orientation-PRESERVING on the four-dimensional spacetime, fixing all four spacetime legs — and its Clifford
-  generator on the cut IS $\gamma^{5}$.***
-  ***Hence: "a discrete projection by a chirality PROJECTOR would yield a CHIRAL spectrum, not the vector-like one
-  an exchange would force" — so the route "is not closed by the projection itself but GATED on the one
-  prerequisite not yet supplied: a PROPAGATING spinor sector to project."*** *With the structural note that
-  distinguishes it from ordinary orbifold constructions: **"the fifth substrate direction being the non-compact
-  slicing normal rather than a compactified circle."***
-  **⌗ AND THE GATE IS THE SAME ONE FAMILY 6 SITS ON, which the pairing hid.** *P13: **"the propagating sector the
-  orbifold route needs remaining the unbuilt prerequisite"**, and **what IS built is bound leaf-modes** — the
-  count, the chirality and the family, within CR. **So A4.6 is not a separate frontier: it is one more thing
-  waiting on the propagating fermion sector**, which is `A4`/family 6, *"the largest undertaking and the gate the
-  others wait on."**
-  **⌗ And its companion, which P13 names in the same breath and the plan does not carry:** *"what remains a named,
-  unbuilt lead is **the MASS structure — whether a fermion mass, being the $R$-odd departure the same substrate
-  structure governs, inherits that cubic's three-fold form** — **the one place the geometry might reach into the
-  mass CONTENT after all; not claimed for the demonstration."* ***That is A4.3's live identification, stated from
-  P13's side*** — so A4.3 and A4.6 are two readings of one gate, and both wait on the same construction.*
-  **⚠ AND THE DIRECT ROUTE'S FAILURE IS SHARPER THAN "walled", worth keeping because it is the reason the orbifold
-  route exists at all:** *"the Standard Model's chirality **IS** the differential gauge assignment (left and right
-  in different representations), **gauge-internal and non-geometric, not a bare handedness carried apart from
-  it**."* **And p0's own strike carries the warning that applies here: the old bracket was "a false-open under the corpus's own standing law."** *This lane carried the same false open for 162 revisions, in the pairing `A4.5/A4.6` that made one code cover two questions of different status.*
+  forcing and A5.5's base-rate programme are the same load-bearing point seen from two lanes.**, **A4.5/A4.6** the discrete-residue matter home and the orbifold geometric-chirality route (stated without being claimed). **⚠ A4.5's FIRST HALF IS ANSWERED — corrected r1771.** *"The discrete-residue matter home" is **p0 §Frontiers item 3**, and p0 **struck it at r1609**: *"ANSWERED; struck r1609, kept as the record… **It has since been answered in the first sense**: a Dirac field on the slicing structure **binds exactly one chiral zero-mode at each of the substrate's three throat walls**, the count forced within CR and the family symmetry the Weyl $S_3$ itself."* **So a fermion sector does live on the discrete residue** — that was the question, and P14 settled it. **A4.6, the orbifold geometric-chirality ROUTE**, is a different question: not *whether* the residue houses matter but *by what construction* — answered below.
+  **✔ A4.6 IS CARRIED OUT — the orbifold route on bound modes (P13 §Fourth; P14's wall).** *The parity **grades**, it does not exchange: it reflects the cut-normal, along which the offset $r_0$, which is the mass, carries one cut to the next, so it is orientation-preserving on the four-dimensional spacetime and its Clifford generator on the cut is $\gamma^5$. A projection by it yields a **chiral** spectrum. Of the route's two conditions, the non-compact slicing normal is the setting in which a domain wall does what an orbifold does on a circle — and **the matter sector's wall is that construction on bound modes**, its superpotential odd in the signed radius; the propagating spinor sector is met on the chiral member, whose Dirac sector P11 builds. **The direct route fails**: the Standard Model's chirality **is** the differential gauge assignment, gauge-internal and non-geometric. What the route delivers is exactly the wall's content — the count, the chirality and its grading operator — and not the differential charging.*
+  **⌗ The lead P13 names beside it:** *whether a fermion mass, being the $R$-odd departure the same substrate structure governs, inherits that cubic's three-fold form — A4.3's identification approached from P13's side.*
+  *The pairing `A4.5/A4.6` once made one code cover two questions of different status; they are now both answered, in different senses.*
 - **A2.2 · The baryogenesis-analogue IC** *(⟐ r1471: item 3 in Lane 1 is the gate-determining question for this — whether the seam datum is fixed by the progenitor's determined geometry or rides on its composition. Either answer moves this item: fixed ⇒ less gated than the graph assumes; composition ⇒ confirmed gated on A4, and η-like.)*
   **⚑ THE GATE IS PARTLY ANSWERED, AND THE POINTER IS FRAGILE — both found r1772.**
   ***The pointer first:** "item 3 in Lane 1" is a reference **by list position**, and Lane 1's numbering runs
@@ -3058,8 +2957,8 @@ Ordered by the dependency graph (below). The matter sector's *content* is the hi
   **⌗ AND THE GATE QUESTION IS PARTLY SETTLED IN P7, in the direction of "fixed by geometry."** *r1471 asked
   whether the seam datum is fixed by the progenitor's determined geometry **or rides on its composition**. **P7
   §frontiers item 1 establishes three properties of the crossing that all cut the same way:*** *it is **well posed
-  at the finite-curvature seam** — a **characteristic, not Cauchy** crossing on the null degenerate surface, with
-  no curvature obstruction · **it ISOTROPIZES** — "the throat's de Sitter no-hair damps the anisotropic part of
+  at the branch point** — a **characteristic, not Cauchy** crossing on the null boundary, the substrate's curvature
+  finite there and no curvature obstruction · **it ISOTROPIZES** — "the throat's de Sitter no-hair damps the anisotropic part of
   the crossing stress-energy to the isotropic monopole" · **it is SCALE-FREE** — "the degenerate approach imprints
   no thermal scale" · and it obeys a **structural transition law** — "the reassignment preserves the cosmic
   foliation and the density is leaf-carried and lapse-independent, so the reassignment acts on the time-stacking,
@@ -3341,7 +3240,7 @@ and the remaining work are now the same act**, and it is the cheapest unrun test
   un-predicted input); a candidate cosmiCave-bound paper centerpiece.
   **⟐ r1471 — the one-scale claim now has a worked instance to stand on.** The collapse selects the Nariai
   configuration, so `eq:Nariai-mass` reads the progenitor's mass straight off Λ: **M = c²/(3√Λ G) =
-  4.30×10⁵² kg ≈ 2.16×10²² M⊙** *(at the Planck H₀ ≈ 67.4; **3.94×10⁵² kg at the directly measured H₀ = 73**, since M ∝ 1/H₀ — r1631)*, checked against ΛG²M²/c⁴ = 1/9 to six figures, with its gravitational radius
+  4.30×10⁵² kg ≈ 2.16×10²² M⊙** *(at the Planck H₀ ≈ 67.4; **≈4.17×10⁵² kg at the H₀ ≈ 68.6 the distances fix**, since M ∝ 1/H₀)*, checked against ΛG²M²/c⁴ = 1/9 to six figures, with its gravitational radius
   exactly 2α/(3√3). P7 states the consequence in terms — the cosmology *"is not one member of an overcritical
   family selected by fitting a mass; it is the unique non-pivoting member, **fixed by Λ alone**"* — and
   everything on the bead scales off the same α = √(3/Λ): the seam radii ±α/√3 and −2α/√3, the turnaround
@@ -3440,10 +3339,10 @@ of a bake is a document of this shape, not a list of matches.*
 
 ## Lane 5 — Cohesion, scholarship, and THE DELIVERABLES — **heading corrected r1817; the lane is not split**
 **⛭ THE FIX WAS THE HEADING, NOT A SPLIT — and the programme's own rules say so.** *`CONSOLIDATE` §3 step 4: ***"Place each item into §1, or into an existing resource — never into a new document."*** r1744: ***before restructuring a section, ask what its internal divisions are doing*** — **and here they are doing real work: the `D.n` and `H.n` series are already cleanly separated inside the lane.** r1746: **a heading is a claim; make it true.** ***So the defect was never the structure. Renaming a heading costs nothing and breaks no reference; splitting a lane renumbers everything downstream of it and breaks every "Lane 5" pointer in five documents.***
-*The lane holds **two series**, and the heading now names both: eleven `D.n` **cohesion** items, all audited r1719–r1724 — and **seven `H.n` DELIVERABLES**: `H.0` the introduction (✔ written r1593) · `H.1` ***The Shadow of Existence***, the whole-picture book · `H.2` publication · `H.3` the essays · `H.4` face-science as a publishable interdisciplinary paper · `H.5` the centre-vs-edge structure · `H.6` the P14 spin-off.* ***The book and the publication programme are not cohesion work.*** **r1477 placed `H.0` here calling it "Lane 6" — a lane that never existed (r1745) — and the H-series has sat under this heading for 338 revisions.** *Whether to split is `Q5` in the residue register: **a lane split is a structural change and Daryl calls those.***
+*The lane holds **two series**, and the heading now names both: eleven `D.n` **cohesion** items, all audited r1719–r1724 — and **seven `H.n` DELIVERABLES**: `H.0` the introduction (✔ written r1593) · `H.1` ***The Shadow of Existence***, the whole-picture book · `H.2` publication · `H.3` the essays · `H.4` face-science as a publishable interdisciplinary paper · `H.5` the centre-vs-edge structure · `H.6` the P14 spin-off.* ***The book and the publication programme are not cohesion work.*** **r1477 placed `H.0` here calling it "Lane 6" — a lane that never existed (r1745) — and the H-series has sat under this heading for 338 revisions.** *Whether to split was `Q5` in the residue register, and the programme's own rules settled it: **the heading was the defect, and it is corrected (`E1`).***
 
 
-Real cohesion work. *(r1448: the heading read "low-priority hygiene" and the line "subordinate to the research lanes" — both REMOVED as work-blockers. These items are work like any other; sequencing is Daryl's call, not a rank written into the document.)*
+Real cohesion work. *(r1448: the heading read "low-priority hygiene" and the line "subordinate to the research lanes" — both REMOVED as work-blockers. These items are work like any other; sequencing is set by the structure — what verifies what, and what one piece needs from another — not by a rank written into the document.)*
 
 - ~~**D.5 · The bare-`(PN)` cross-reference convention**~~ — **✔ CLOSED r1144, WORKED, NO DEFECT.** Raised
   in the E.1 pass as a possible referee problem: the papers cross-reference **both** by `\cite{JanzenX}`
@@ -3628,7 +3527,7 @@ Real cohesion work. *(r1448: the heading read "low-priority hygiene" and the lin
    · *from:* `THE_MORPH_QUEUE` B4 (**filtered r1451**) + `THE_DEPENDENCY_LEDGER` (**filtered r1451**)
    · *depends on:* items 7, 8 (the bakes are what stop it growing) · *depended on by:* items 5, 6
    · *rule carried in with it:* **do not work downstream of something still moving.**
-   · *note:* the stability call is Daryl's.
+   · *note:* the section is stable when nothing it draws on is still moving.
 
 **5. Propagate the back-references** from every paper P7's section draws on. · *depends on:* 4
 
@@ -3664,9 +3563,9 @@ Real cohesion work. *(r1448: the heading read "low-priority hygiene" and the lin
    exactly. The map is now the *record* of the defect plus the one rule that outlives it (*absence in a grep
    window is not absence of a citation*) and its live distinct-works list. *A completed fix left its own
    warning standing for 58 revisions, in a document the index told nodes to read first.* 
-   **⚑ 13b · WHAT REMAINS IS DARYL'S, NOT A NODE'S (r1590): two title flags, both pending his call.**
+   **⚑ 13b · THE TWO TITLE FLAGS — both worked (r1591–r1592).**
    *(13a bibkey ✔ r1566 · the dependency-matrix sweep ✔ r1567 · P11's title done r1297, chirality added.)*
-   - ~~**P12 — flagged *problem-of-time*.**~~ **✔ RETITLED r1592 — STATED FOR REVERSAL.**
+   - ~~**P12 — flagged *problem-of-time*.**~~ **✔ RETITLED r1592.**
      **Now:** *"General relativity's constraint algebra as the symmetric-space structure of a de Sitter
      substrate: the action Lie algebroid of the symmetry-reducible sector, **and the problem of time's "wrong
      sign" as the substrate's coset signature**."*
@@ -3679,7 +3578,7 @@ Real cohesion work. *(r1448: the heading read "low-priority hygiene" and the lin
      identified here as a signature of the substrate's geometry.
      **Propagated:** the bibitem in **all ten sibling papers** updated; **all ten recompile clean**, P12 11pp.
 
-   - ~~**P13 — flagged *synthesis*.**~~ **✔ RETITLED r1591 — STATED FOR REVERSAL.**
+   - ~~**P13 — flagged *synthesis*.**~~ **✔ RETITLED r1591.**
      **Now:** *"The de Sitter substrate and the Standard Model: **four converging routes to** a geometric
      boundary on what one maximally-symmetric Lorentzian substrate's isometry does and does not force, and the
      framework and gauge on its two real forms."*
@@ -3695,8 +3594,7 @@ Real cohesion work. *(r1448: the heading read "low-priority hygiene" and the lin
      *(Every paper cites P13 by a bibitem carrying its title — the retitle was a one-line change with an
      eleven-file propagation, which is the session's own lesson in miniature.)*
 
-   **A node must not retitle a paper.** Both are recorded here with their current text and the question each
-   flag asks, so the call is one decision rather than a re-read.
+   Both are recorded here with their current text and the question each flag asked.
 
 **14. The attack manual** — for each open problem, how you would actually go at it, gathering everywhere in the corpus that bears on it. Was to be written when the paper-by-paper sweep finished; the sweep finished at r1406.
    · *from:* `THE_OPEN_PROBLEMS_LEDGER` (not yet filtered)
@@ -3842,7 +3740,7 @@ this session's did.*
 | **A4 — TWO LIVE DEFECTS, and one of them was the SAME BANNER in THREE documents.** | **Read the first screen of each live document.** ***⚠ MY SCOPE WAS WRONG BY 8×: the row said "~15" and root holds 117 `.md` files.*** *Bounded honestly to **the twenty a node actually meets** — the seven top-level, the six whole-corpus instruments, the three remaining grains, the capstone pair, `THE_ARSENAL` and the manual — and read.* ***FINDING ①:*** **`THE_PLAN`'s own first line read *"This file is now the stalest thing in the programme"* — for 103 revisions after the audit it opened began fixing that.** *The most-read text in the file, and it is now the most recently audited document in the programme.* ***FINDING ②, and it is the seed class paying out:*** **r1449's *"sits in the bin… place nothing new here"* banner was corrected in `THE_PLAN` at r1745 — and NOBODY CHECKED WHETHER IT SAT ELSEWHERE. It sat in three more: `THE_ARSENAL` (first screen), `THE_OPEN_PROBLEMS_LEDGER` (first screen), `THE_WEAVE` (at 29%).** *All three corrected, each with what is true now — and each original kept as the record.* **⌗ The other sixteen first screens are clean.** | **20 documents** (not 15) | r1784, run r1812 || ~15 docs | r1784 |
 | **A5 — items 1 and 2 propagate correctly; ITEM 4 was routed at the CLUSTER level and empty at the ITEM level.** | **p0 §Frontiers' other three checked against every plan item leaning on them.** ***Item 1 ✔*** — `A5.1` carries its falsifier verbatim (*"a hidden geometric freedom in the cosmology, or a genuinely free constant where the reading says it should lock"*) and its `[Reach: stated as a target, not a result]` tag. ***Item 2 ✔*** — `A5.2` carries *c–Λ and Nariai the two known instances* **and** the second half nobody usually repeats, *"look for any constant maximal symmetry does not reach."* ***⚠ ITEM 4 — the phase structure at the branch point — had NO statement anywhere in the file.*** *Zero hits on "phase structure", "everywhere-real", or its own words; the crosswalk note claimed **"the other three route to Lane 4 and Cluster J"** and **Cluster J's line named only the cluster.*** **So the routing was true at the cluster level and empty at the item level — stated now, with its **not claimed-BOTH-WAYS** register, which is the part that would have been lost.** | 3 items | r1771, run r1813 || 3 items | r1771 |
 | **A6 — twelve results checked, ALL TWELVE carried by their owning item. The seed was the only failure and r1773 fixed it.** | **For each result this session leaned on, does the item that owns it carry it?** ***✔ all twelve:*** *P13's rank count (`A4.1` — **the seed, absent until r1773**) · `prop:forced` (`A4.4`) · `prin:reclass` (`A5.3`) · `lem:vindication` (`A5.5`) · $\Lambda G^2M^2/c^4=1/9$ (`A5.4`) · ⊢58's one privileged circle (`F.3b`) · the chirality criterion and *matter and radiation are the bend* (`F.5`) · P7's **isotropises / scale-free / transition law** (`A2.2`) · the two real forms (`A3`/P10) · **the offset is the mass** (`A5.6`, carried as P8's RN–dS *"not an independent posit fed into the geometry; it is the curvature of the cut"*) · signs **16 of 16** (grain 0). ⚠ *And the run needed **two** instruments: a bounded-body extractor that returned **0 chars for all seven** — a uniform failure, which is the tell — and then a proximity window of **1400 chars that was too short for `A2.2`**, whose scale-free clause sits at ~1900. **Both caught by reading.*** | 12 results | r1773, run r1814 || one pass | r1773 |
-| **A7 — NEITHER LANE HAS CHANGED KIND, and each is now a different KIND OF MIXED than Lane 7 was.** | **Is Lane 5 still a cohesion lane? Is Lane 1 still a runway?** ***LANE 1 — still a runway, and the heading is exactly right.*** *Its `⟐` clause reads *"research we can start, no gate"*, and after ARC 11 **four items are closed** (A2.9, A2.11, E.1-a, A4.9) with **four open and every one genuinely startable**: `A2.3` the peak-heights transfer — *"a computation, not a missing idea"* · `A2.4` the branch-point crossing dynamics, **which r1780 found is what `A6.2` in Lane 3 waits on** · `A4.7` the zero-mode continuation · item 6's five surviving computations. ***So the lane has SHRUNK by half and not changed kind — and one of its open items gates a Lane 3 item, which makes the runway load-bearing rather than merely available.*** ⚠ *With the numbering defect left as found: **items go 1, 3, 5, 6, 7, 7, 9, 10 — two items both numbered 7** — deliberately not renumbered, since **renumbering breaks every external reference to "Lane 1 item 7"**, and r1772 already showed a list-position pointer rotting.* ***LANE 5 — still cohesion, and it holds TWO KINDS that its heading names only one of.*** *Eleven `D.n` cohesion items ✔ — all audited r1719–r1724 — **and seven `H.n` items that are not cohesion at all: H.0 the introduction (✔ written r1593), H.1 *The Shadow of Existence* the whole-picture book, H.2 publication, H.3 the essays, H.4 face-science as a publishable paper, H.5 centre-vs-edge, H.6 the P14 spin-off.*** **Those are DELIVERABLES — the book and the publication programme — living in a lane headed *Cohesion & scholarship*.** *r1477 put H.0 there calling it "Lane 6" (r1745), and the H-series has sat under Lane 5 ever since.* **Not corrected: the pairing is 338 revisions old and the fix is a lane split, which is a structural change Daryl should call.** *Recorded as `Q5` in section C.* | 2 lanes | r1763, run r1815 || 2 lanes | r1763 |
+| **A7 — NEITHER LANE HAS CHANGED KIND, and each is now a different KIND OF MIXED than Lane 7 was.** | **Is Lane 5 still a cohesion lane? Is Lane 1 still a runway?** ***LANE 1 — still a runway, and the heading is exactly right.*** *Its `⟐` clause reads *"research we can start, no gate"*, and after ARC 11 **four items are closed** (A2.9, A2.11, E.1-a, A4.9) with **four open and every one genuinely startable**: `A2.3` the peak-heights transfer — *"a computation, not a missing idea"* · `A2.4` the branch-point crossing dynamics, **which r1780 found is what `A6.2` in Lane 3 waits on** · `A4.7` the zero-mode continuation · item 6's five surviving computations. ***So the lane has SHRUNK by half and not changed kind — and one of its open items gates a Lane 3 item, which makes the runway load-bearing rather than merely available.*** ⚠ *With the numbering defect left as found: **items go 1, 3, 5, 6, 7, 7, 9, 10 — two items both numbered 7** — deliberately not renumbered, since **renumbering breaks every external reference to "Lane 1 item 7"**, and r1772 already showed a list-position pointer rotting.* ***LANE 5 — still cohesion, and it holds TWO KINDS that its heading names only one of.*** *Eleven `D.n` cohesion items ✔ — all audited r1719–r1724 — **and seven `H.n` items that are not cohesion at all: H.0 the introduction (✔ written r1593), H.1 *The Shadow of Existence* the whole-picture book, H.2 publication, H.3 the essays, H.4 face-science as a publishable paper, H.5 centre-vs-edge, H.6 the P14 spin-off.*** **Those are DELIVERABLES — the book and the publication programme — living in a lane headed *Cohesion & scholarship*.** *r1477 put H.0 there calling it "Lane 6" (r1745), and the H-series has sat under Lane 5 ever since.* **Corrected by renaming the heading to name both series (`E1`), which is what the programme's own rules call for; no lane split.** | 2 lanes | r1763, run r1815 || 2 lanes | r1763 |
 | **A8 — by `B4`, which ran first.** | **Route (b)'s input-type check.** ***No: a "bend" in P11's sense is a metric perturbation on a leaf, and `B4` swept every `.tex` plus the ledger and storyboard and found the branches given a metric perturbation NOWHERE.*** *So the input-type mismatch r1760 suspected is confirmed exhaustively rather than argued.* **Route (b) needs an object to be a bend OF, and the branches are not one.** | ✔ resolved by `B4` |
 | **A9 — NOT a standing action; it goes in the per-turn list.** | **The binary check.** *Three for three in Lane 3 — `A2.2`'s gate, `A4.3`'s geometric-or-external, `A4.1`'s held-open — **and each dissolved because the SOURCE distinguished two things the item had fused.*** ***That makes it a reading discipline, not a sweep: it fires when you open an item, not once across a corpus.*** **A standing action is a recurring PASS; the per-turn list is where a per-item habit lives.** *Placed there, one line, beside the header-vs-body check.* | ✔ decided |
 | **A10 — DONE, and `B2` did it.** | **The rhyme table's grading.** *The proposal was a column: **killer-quotable vs killer-unlocated.** ***`B2` produced the grading's whole content without the column:*** `R2` **DEAD, killer quoted from c40** · `R4` **DEAD, computed cause** · `R3` **UNTOUCHED on a reason sourced to nothing**, now marked so in the ledger. **A grading column with three rows and no fourth coming is a column that says what three annotations already say.** *Not built — the distinction is recorded where it bites, in `R3`'s own row.* | ✔ decided |
@@ -3872,7 +3770,7 @@ appendix RETIRED, not deleted** — `retired/corpus/appendix_receipts_p0.tex` wi
 `retired/receipts/README_retired_receipts.md` already established. ***It had content: the *"[borrowed from
 P17]"* variant, which dates the moment p0 and P17 were still two papers.*** **The filter's step 5 is *place, then INDEX or RETIRE* — and "delete" is not one of the two.** *Corpus appendices 19 → 18; checker 106↔106; p0
 still inputs `appendix_receipts_P17`.* **Formerly listed here as**, *as the smallest structural items: both are one deletion each with the check already done.*
-***So the structural docket is four plus two, and only `E1` needs Daryl. `E2` has an answer already implicit in it, `E3` has a home waiting, `E4` is an adjudication.***
+***So the structural docket is four plus two, and all are settled: `E1` by the programme's own rules, `E2` by the answer already implicit in it, `E3` by the home waiting for it, `E4` by adjudication.***
 
 **⛭ B · OPEN NOT-FOUNDS — each already carries its SEARCHED and NOT-YET-CHECKED, so each is resumable cold.**
 | # | not found | not yet checked | from |
@@ -3998,12 +3896,12 @@ signal the argument is not yet written.*
 | **G.1** | The kaleidoscope | the full symmetry group as one figure — lines run out far enough to show the squares, triangles and circles | Lane 7 F.1; p0 `sec:unification` way 6 (which **argues it in prose**) | held; brief **re-scoped r1725** to illustration |
 | **G.2** | The overhead / fundamental-ellipse plate | the slicing curve's lines **as light rays** (⊢10) | Lane 7 F.1 → P3 | held; P3's `fig6` defect **discharged r1333/r1439** |
 | **G.3** | The P14 conjecture figure | at its **narrowed** weight only — *the geometry carries the vertex's kinematic (FS/CPT) face and not its charge face*, `prop:closure`'s operator/species bound | Lane 7 F.1 → P14 | held at narrowed weight |
-| **G.4** | Acceleration = slice curvature | the sign of $K_G$ **as** the sign of $\mathrm{d}^2r/\mathrm{d}\tilde\tau^2$ — negatively curved decelerating, flat at the turnover, positively curved accelerating; the turnover at $7.06$ Gyr marked | r1680; P3 `sec:curvature`, P7 `rem:twocritical`, P15 reckoning | **new r1726** |
+| **G.4** | Acceleration = slice curvature | the sign of $K_G$ **as** the sign of $\mathrm{d}^2r/\mathrm{d}\tilde\tau^2$ — negatively curved decelerating, flat at the turnover, positively curved accelerating; the turnover at $\approx7.46$ Gyr ($H_0\simeq68.6$) marked | r1680; P3 `sec:curvature`, P7 `rem:twocritical`, P15 reckoning | **new r1726** |
 | **G.5** | The power of a point is the height | $\mathrm{pow}(P)=|X|^2-\alpha^2=x_0^2$ drawn on the waist — tangent length = height, so $\mathrm{d}s^2=0$; **Euclid III.36 and the null cone as one figure** | p0 `sec:power`, `prop:tangentnull` | **new r1726** |
 | **G.6** | On versus tangent | $\mathrm{Aut}(A_2)=S_3\times\mathbb{Z}_2$ as the two things a figure can be to a circle — three roots **on** the waist, two rulings **tangent** to it; gauged chirality against global flavour | p0 `sec:unification` way 6 | **new r1726** |
 | **G.7** | The energy family's deformation | the two cubics as the $E{=}0$ and $E{=}1$ ends of one family — colinear roots with $S_3$ as **monodromy**, deforming to the equilateral triangle with $S_3$ as **figure symmetry** | r1434; `lem:twoturnings` | **new r1726** |
 | **G.9** | The 3D plot | **every line on its actual null ruling**, the hyperbolas, and **the full 24 hinges both sides of the hyperboloid** — of which **the kaleidoscope (G.1) is a flat projection**. *Daryl, r1108: **"staged, not now."*** | Lane 7 `F.2`; and it is the parent object of G.1 | **moved from Lane 7 r1763** — a figure build sitting as a lane item, which SA-8 forbids |
-| **G.8** | The lap on the bead | the closed contour with its four landmarks and the intervals — collapse 14.13, lift 16.85 (with $\operatorname{Re}\tilde\tau$ frozen), expansion 12.83 Gyr — **labelled as arc length in complex cosmic time, not a chronology** | A2.11; P7 `rem:twocritical` | **new r1726** |
+| **G.8** | The lap on the bead | the closed contour with its four landmarks and the intervals — collapse 14.93, lift 17.81 (with $\operatorname{Re}\tilde\tau$ frozen), expansion 13.78 Gyr at $H_0\simeq68.6$ — **labelled as arc length in complex cosmic time, not a chronology** | A2.11; P7 `rem:twocritical` | **new r1726** |
 **⌗ THE STANDING ACTION THAT KEEPS IT FED:  on the  docket (r1727) — *feed the figure ideas register, and never follow it*.**
 **⌗ THE STANDING ACTION THAT KEEPS IT FED:** `SA-8` on the `CONSOLIDATE` docket (r1727) — *feed the figure ideas register, and never follow it.*
 **⌗ HOUSEKEEPING:** *`SYNTHESIS_FIGURE_STORYBOARD` and `FIGURE_THEOREM_LEDGER` are this register's working documents; the six-panel synthesis figure and P7's triptych are **built and integrated** and are not entries here.*
@@ -4115,7 +4013,7 @@ every entry meets it, rather than left inside one retired lane item.*
   line–circle bitangent formula is still the one missing input.*
 - **✔ THE OPEN CALL, CLOSED (r1119) — §Euclid fits in p0/17, is already in, and wants no paper.**
   *Daryl: "You do what you think is the right thing to do." The call was carried, not handed back.*
-  **The reasoning, for reversal:** **(1)** the result is one sentence and it is a statement about the
+  **The reasoning:** **(1)** the result is one sentence and it is a statement about the
   **substrate** — *the power of a point w.r.t. the throat is the square of its height, and that is a
   fact about one circle, the waist* — which is what p0/17 is for, and it landed in **§rulings** because
   §rulings was already saying it in the other register (*the surface is doubly ruled by straight null
@@ -4370,11 +4268,9 @@ PUBLICATION IS NOT A DRIVER FOR ANY OF THE WORK WE DO."***
 
 **⌖ CHECKED r1786 (ARC 11) — both entries hold, and one of them is now the tightest constraint in the programme.**
 *① **Work-blockers anywhere.** *Phrase class closed, 45 removed; five forms under SA-1, sweep at `D.8`.* **And
-`D.8` is one of four items riding a full-corpus read-through that nothing schedules** — r1721 named all four as
-**passengers on the canon sweep**, the last such read-through was **r1406**, and **the canon sweep is
-proposed-not-started.** ***So the programme's FIRST non-negotiable — the one the hard publication block is built
-on — is discharged by a sweep that has no date.*** **That is not a defect in this list; it is the list correctly
-reporting a real state**, and it is the sharpest argument the audit produced for scheduling layer ②.*
+`D.8` is one of four passengers on the canon sweep** (r1721), **and that sweep is run**: all seventeen papers read
+word for word at verified full coverage, with `OWED 612` closed on it at r3301, so the programme's first
+non-negotiable rode a pass that happened.*
 *② **`conjecture` and the operating-jargon layer.** *Scope re-counted at r1724: **15→17 documents, ×37/11 → ×43/14**.*
 **Its ⏳ marker is the right disposition and its reasoning is worth keeping visible: the tags stay while they still
 do their drafting job**, and *"its position in the docket is set by that, not by its non-negotiable status."**

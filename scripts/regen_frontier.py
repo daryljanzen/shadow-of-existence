@@ -386,6 +386,28 @@ EST = {
         'not a defect: the uncited bibitems, an editorial call, enumerated here rather than taken from the '
         'read -- there are SEVEN across six papers, not six, and the read named every one correctly. Routed '
         'to Daryl as a judgement.'),
+    'PO-58': ('the lift normalizability threshold on the operator the corpus now uses', 1, 1, 2, None,
+        'OPENED r6921 from the spin-up 69 read, as the remainder of a fix that landed only half. P14 '
+        'count passage rejected the growing zero-mode branch by a leaf-measure argument at the branch '
+        'point -- dl ~ sqrt(|r|/2M) dr, so |r|^s normalizes for s > -3/4 and the growing s = -lambda '
+        'would need lambda < 3/4, which no lambda = j+1/2 attains. ON THE OPERATOR THE CORPUS NOW USES '
+        'THAT ARGUMENT IS GONE: the read corrected the count passage, where near the branch point '
+        'f -> -2M/r makes the exponent go as i sqrt(|r|), both chiralities a bounded phase and the '
+        'measure integrable, so the crossing selects nothing and costs the norm nothing. BUT THE SAME '
+        '3/4 SURVIVES TWICE IN sec:lift AND THERE IT IS LOAD-BEARING: the lift mode content is a '
+        'normalizability computation on THE LIFT OWN MEASURE AT THE THREE HINGES, a different locus and '
+        'a different measure from the branch point, and it rejects the growing branch by the same '
+        'condition. The second occurrence makes it structural: the deck third case is excluded because '
+        'it needs the three sectors decoupled, which is that same rejection read as a condition on the '
+        'hinges -- one inequality deciding both conjuncts in opposite senses -- so a wrong threshold '
+        'moves two conclusions at once and in opposite directions. THE MARGIN IS STATED WITH THE '
+        'DEFECT: the smallest admissible lambda is 1, so any threshold below 1 returns the same '
+        'verdict and the conclusion has room; what is at risk is the NUMBER and the derivation behind '
+        'it, the corpus not getting to quote a threshold whose argument it has replaced elsewhere in '
+        'the same paper, nor to assume the branch-point measure carries to the hinges, which is the '
+        'step that has never been run. DISCHARGE: the hinge normalizability recomputed on the current '
+        'operator and the lift own measure, reporting the threshold it gives; and if it differs from '
+        '3/4, whether both conjuncts of the deck argument still hold at the new value.'),
     'PO-56': ('the acoustic contrast difference: made in the projection, mechanism still absent', 1, 1, 5, None,
         'OPENED r6891 as PO-13 remainder, on the standing order. PO-13 was struck at r6790 because the handover at '
         'the branch point supplies the one-locus state the row asked for, and it routed what it left -- the acoustic '
@@ -776,8 +798,8 @@ KIND = {'PO-46': 'BUILD', 'PO-10': 'BUILD', 'PO-13': 'BUILD', 'PO-36': 'READ', '
 #   and the generator reported "9 open" while the table showed EIGHT -- the count comes from
 #   the live set and the rows come from here.*  ** Adding a row needs three things: the
 #   register row, the runway, and this list. **  check_frontier_current now checks all three.
-ORDER = ['PO-57', 'PO-56', 'PO-55', 'PO-54', 'PO-53', 'PO-52', 'PO-47', 'PO-48', 'PO-49', 'PO-50', 'PO-51', 'PO-45', 'PO-46', 'PO-10', 'PO-13', 'PO-43', 'PO-24', 'PO-36', 'PO-30', 'PO-25', 'PO-26', 'PO-31', 'PO-23', 'PO-15', 'PO-14', 'PO-17', 'PO-18', 'PO-19', 'PO-20']
-GROUP = {'PO-57': 'D', 'PO-56': 'D',  # r6891: PO-13's live remainder, the acoustic sector.
+ORDER = ['PO-58', 'PO-57', 'PO-56', 'PO-55', 'PO-54', 'PO-53', 'PO-52', 'PO-47', 'PO-48', 'PO-49', 'PO-50', 'PO-51', 'PO-45', 'PO-46', 'PO-10', 'PO-13', 'PO-43', 'PO-24', 'PO-36', 'PO-30', 'PO-25', 'PO-26', 'PO-31', 'PO-23', 'PO-15', 'PO-14', 'PO-17', 'PO-18', 'PO-19', 'PO-20']
+GROUP = {'PO-58': 'A', 'PO-57': 'D', 'PO-56': 'D',  # r6891: PO-13's live remainder, the acoustic sector.
          'PO-45': 'A', 'PO-46': 'A',  # ⛔ r6549: a FOURTH hardcoded list -- GROUP -- and a row missing here raises.
          'PO-10': 'D', 'PO-13': 'D', 'PO-14': 'A', 'PO-15': 'C', 'PO-16': 'D',
          # ** r3095: the four brought in from p0's frontiers and the field ledgers.  PO-17 and

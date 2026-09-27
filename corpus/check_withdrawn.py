@@ -368,8 +368,10 @@ NUMERIC = [
      "matches none of them."),
 
     ("lowell-depths-0.49-0.44", r'0\.49\$ and \$0\.44', None,
-     "the low-multipole depths are 0.47 and 0.41 at ell = 2 and 3, on three body sites and the "
-     "ontology index; one abstract site carried the older pair."),
+     "the low-multipole depths on the adjudicated background (68.6, 0.2973), arm A with the late "
+     "ISW carried to a = 1, are 0.487 and 0.435 at ell = 2 and 3 (0.473 / 0.410 is the control "
+     "background); the bare two-digit pair 0.49 / 0.44 was the second arm's defective quartet, so "
+     "the current values are written to three digits."),
 
     ("landing-the-sixteen", r'the sixteen|all 16 rounds', ('geometric_core_paper',),
      "the landing section enumerates SEVENTEEN companions and the header repeated the miscount.  "

@@ -141,7 +141,10 @@ def main():
     print('  PART 3 -- ⛭⛭ WHAT SURVIVES, AND IT IS THE ROUTING FINDING')
     print('  ==========================================================================')
     B = RB.BODIES_TEX
-    qualified = [('p0', 'only real Riemannian manifold that is maximally symmetric'),
+    # ** r6921: pinned to the CORRECTED wording.  de Sitter is Lorentzian, hence
+    #   pseudo-Riemannian and not Riemannian; the QUALIFIER is what this check is about and the
+    #   adjective is not, so the pin follows the fix rather than defending the error. **
+    qualified = [('p0', 'only real pseudo-Riemannian manifold that is maximally symmetric'),
                  ('P03', 'unique real Riemannian manifold whose Lorentzian signature is intrinsic'),
                  ('P06', 'maximally symmetric structure being the unique one that requires its own'),
                  ('P10', 'unique maximally symmetric structure carrying no unforced')]
