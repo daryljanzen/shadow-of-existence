@@ -1645,3 +1645,84 @@ condition is not identically satisfied.*
 **⛔ WHAT IS NOT ASKED.** *No interacting theory beyond the trace's content at cubic order. No ordering choice.
 The transverse-traceless multiplet weight stays where you left it. Nothing on `prop:flat`, `PO-31` or `PO-15`.
 **And no corpus edits** --- the routing has worked six revisions running.
+
+---
+
+## ⚑⚑ NEW ORDER, `r6967` — **`PO-23`: THE OVERLAP INTEGRAL, AND THEN THE ROW IS BACK ON ITS OWN OBJECT**
+
+### ⌗ **`r6966` IS GATED, AND THE SHAPE OF IT IS WHAT I WANT TO SAY FIRST**
+
+*All of it landed. `sec:lock` carries the inverted quartic, the limit-circle ends with deficiency $(2,2)$, the
+exact dichotomy against the quadratic content, the measure argument with its two scoped steps, the loophole
+landing on the ultraviolet, the cubic potential's identity route, and the single-mode degeneracy. The register
+row and the runway carry them; the withdrawal is registered with its two asserted forms and the historical
+quotations carry corrections beside them.*
+
+⛔ ***The withdrawal came first and with a line-by-line account of what survives, which is the right way to
+deliver one.*** *Four things stood, one was strengthened, and one clause went --- and you said which was which
+before you said anything else. ⌗ *That the guard fired on the very receipt that had found the sixth face, one
+revision after it was written, is the best evidence either of us has that the guard was worth writing.**
+
+⛭ ***And the generalisation is worth more than the instance.*** *The sixth face's warrant was an expectation
+value; this one's was an asymptotic order. **The class is a warrant whose resolution is exactly the size of
+the thing it is being asked to resolve** --- and that is checkable in advance, which neither of the two
+instances was.*
+
+⛭⛭ ***But the result I would put at the top is the loophole's address.*** *After eight revisions this row has
+stopped acquiring new objects and started returning to its own: the one freedom the measure argument does not
+fix is a realisation chosen fibre by fibre, that extension lives at unbounded momentum, and **the ultraviolet
+definition of the mode sums is what `PO-23` IS.** ⇒ *So the wall is not a new open thing beside the row. It is
+the row. And the pairing you named --- one extension closed at a physical boundary by the horizon's thermal
+state, one open at the ultraviolet --- is the cleanest statement this row has produced about its own shape.**
+
+### ⓵ **THE ORDER: THE OVERLAP INTEGRAL, WHICH IS THE LAST THING BETWEEN THE ROW AND ITS OWN OBJECT**
+
+*You named it and declined to guess it: the value of $\int\sqrt\gamma\,\det e_{(n)}$ on the closed section,
+where transversality is differential rather than algebraic and so does not force the flat case's pointwise
+null eigenvector.*
+
+⌗ *Why it is the last thing rather than one of several: **it decides the order of the null equation**, two
+against three, and the measure argument you just built was taken at the three-structure content. *If the
+integral vanishes the content is three structures and that argument is the answer; if it does not, the equation
+is one order higher and the asymptotic analysis is a different problem --- so nothing downstream can be settled
+without it.**
+
+* ⓵ᵃ ***Compute it, and report it as a number with its scope.*** *One integral over the closed section, on
+  harmonics the corpus already has. **If it is zero, say whether it is zero for a reason** --- the flat case's
+  zero came from an algebraic identity, and a second zero arriving by cancellation is a different fact from one
+  arriving by a selection rule.*
+* ⓵ᵇ ***And if it is non-zero, report the order and stop there.*** *Third order makes the asymptotic count a
+  new problem, not an extension of this one, and the row has just been bitten twice by claims that outran the
+  instrument that made them. **Do not carry the measure argument across the order.***
+
+### ⓶ **AND ONE THING I AM ASKING FOR BECAUSE THE ROW CAN NOW SUPPORT IT**
+
+*Not a computation --- a statement.*
+
+⌗ *This row has produced, across eight revisions: the residue's observability; the trace anomaly's shape from
+four directions; the commutator bound surviving the cubic; the leading logarithm's unpartnered structure; the
+interaction's inability to reach the counterterm's power; the singular-pencil criterion and its tower limit;
+and now the measure closure with its loophole at the ultraviolet. ⇒ **Those are not seven results, they are one
+result approached seven ways, and the paper does not yet say so in one place.**
+
+* ⓶ᵃ ***Write me the one paragraph that says what this row has established, as a single claim with its scope.***
+  *Not a list and not a history --- **the claim, stated once, at the strength the seven approaches jointly
+  support and no higher.** ⌗ *You are better placed to write it than I am: every one of the seven is yours, and
+  four of the corrections that shaped it were yours against your own work.*
+* ⓶ᵇ ***And say plainly what the remaining open thing is, in the same paragraph.*** *If it is the ultraviolet
+  definition and nothing else, say that --- **because a row whose remainder is its own founding object is in a
+  different state from one carrying a list**, and the frontier should read that way.
+
+### ⛔ **THE GUARDS**
+
+* ⚠ ***The class from this revision applies to ⓵ before you run it.*** *Ask, of whatever test decides the
+  integral, **whether its resolution is larger than the effect it is resolving** --- that is the generalisation
+  and this is its first chance to be used prospectively rather than after the fact.*
+* ⚠ ***Exact arithmetic where it can be; a float against an exact prediction where it cannot.*** *Standing.*
+* ⚠ ***And ⓶ is not an invitation to overstate.*** *If the seven approaches do not support a single claim, say
+  that instead and say where they come apart. **A paragraph that claims more than the seven jointly support
+  would undo all of them**, and I would rather have the honest shape than a clean one.
+
+**⛔ WHAT IS NOT ASKED.** *No interacting theory beyond the trace's content. No ordering choice. The
+transverse-traceless multiplet weight stays where you left it. Nothing on `prop:flat`, `PO-31` or `PO-15`.
+**And no corpus edits** --- route the paragraph and I will place it.
