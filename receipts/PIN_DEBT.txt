@@ -1,5 +1,29 @@
 0
 
+⛭⛭⛭⛭ r6931+70.3 (node 70): THE PIN DEBT IS ZERO AND THE RATCHET BINDS.  THE HEAD WAS 0 AND IS 0 ---
+NOT EDITED, BECAUSE AT ZERO THE GATE SAYS SO ITSELF.
+857 pass, 0 fail, 1 over timeout, 2380s, tree 515a06a4e60d5753, covering all 858 registered.
+`check_receipts_run`: "the pin debt is ZERO and the ratchet BINDS: any new failure now fails this
+gate."
+
+  ⌗ ** WHAT MOVED SINCE r6931+70.1. **
+    - r6939 landed the five true reports, so B1, D1, A1 (L261), V1 (L257) and the locus receipt
+      are green.
+    - The r6941 suite found ONE new failure: L211/A2, class (a).  It pinned the capstone's 4.3e52 kg,
+      which is the Planck configuration's mass; r6939 carried r6921's 4.17e52 into the capstone.
+      It is re-pointed, and the retired figure is asserted gone.
+    - PO-60's sweep found five more checks green VACUOUSLY: C22 ⓷, C27 ⓷, C36 ⓵, C41 ⓶ and C28 ⓶.
+      All are class (a) and repaired in this revision.  They are counted in PO-60, not here: none of
+      them was red, which is exactly why the class is invisible to this ledger.
+
+  ⛔ ** THE ONE THAT NEVER FINISHES IS NOT DEBT, AND IT IS NOT HIDDEN. **
+    P15_the_low_multipole_floor_moves_with_no_background_and_the_factor_two_is_the_late_isw runs
+    1021s ALONE, one thread, on an idle machine.  95% of that is ten sequential HIER_photon_hierarchy
+    subprocesses of about 97s each.  It was over timeout at r6921 too.  The gate counts it separately
+    and stays red on it.
+    ⇒ The remedy is a declared LONG budget at its measured cost, or concurrency inside the receipt.
+      It is cc66's receipt and 66's call, so it is ROUTED and NOT RAISED.
+
 ⛭⛭⛭ r6931+70.1 (node 70): PO-59 WORKED ONCE THROUGH --- 78 OF THE 83 RUN GREEN, AND THE 5 LEFT
 ARE CORRECTLY RED AND NOT THIS LINE'S TO MOVE.  THE HEAD STAYS 0.
 Listed set: 83 (81 debt + 2 declared environment).  At r6931+70.1: 78 exit 0, 5 exit 1, 0 over

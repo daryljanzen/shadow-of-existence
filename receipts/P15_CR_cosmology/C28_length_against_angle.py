@@ -123,9 +123,24 @@ def main():
           '$0.7\\%$ of each other' in p15)
 
     # ⓶ C10's own r is the angle ratio
-    m = re.search(r'r\s*=\s*(1\.09\d+)', c10) or re.search(r'1\.0926', c10)
-    check("⓶ and C10 carries the angle ratio itself: r = 1.0926, i.e. +9.3% -- which IS the 9.4%",
-          m is not None or '1.0926' in c10)
+    # ** r6931+70.3 (PO-60, the vacuous green): THIS CHECK WAS HELD UP BY C10's HISTORY COMMENTS.
+    #    Class (a).  c54.223 (`3edaeea0`) corrected C10's angle ratio from 1.0926 to 1.0816, and
+    #    both alternatives here then matched only prose ABOUT the old value -- "rounded r = 1.093"
+    #    and "Was 1.0926" -- never an assignment.  *** The finding is that C10's r is the ANGLE
+    #    ratio theta_D/theta_*, so the check now reads the assignment itself: 1.0926 where it stood
+    #    (`3edaeea0^`) and the corrected 1.0816 at HEAD, both printed as theta_D/theta_*. ***
+    import subprocess
+    _c10_then = subprocess.run(
+        ['git', 'show', '3edaeea0^:receipts/P15_CR_cosmology/C10_highl_ratio.py'],
+        cwd=ROOT, capture_output=True, text=True, errors='replace').stdout
+    _then = re.search(r'(?m)^th_ratio\s*=\s*(1\.\d+)', _c10_then)
+    _now = re.search(r'(?m)^th_ratio\s*=\s*(1\.\d+)', c10)
+    check("⓶ and C10 carries the angle ratio itself: th_ratio = "
+          f"{_then.group(1) if _then else '?'} where C28 read it (+9.3% -- which IS the 9.4%), "
+          f"corrected at c54.223 to {_now.group(1) if _now else '?'}, and printed as theta_D/theta_*",
+          _then is not None and _then.group(1) == '1.0926'
+          and _now is not None and _now.group(1) == '1.0816'
+          and 'theta_D/theta_* is' in c10)
 
     rD, rs = 1.108, 146.36/145.4
     check(f'⓷ so the length ratio {rD} divided by the sound-horizon shift {rs:.4f} gives '

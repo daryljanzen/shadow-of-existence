@@ -48,6 +48,7 @@ Written r2724.  Stated for reversal.
 import glob
 import os
 import re
+import subprocess
 
 import numpy as np
 
@@ -78,7 +79,26 @@ def main():
     # ⓵ the envelope is the paper's
     check('⓵ the envelope is P15\'s own: the high-$\\ell$ consequence "follows with no free parameter"',
           'with no free parameter' in p15)
-    check('with $r=1.082$ stated in the paper', '1.082' in p15 or '1.0816' in p15)
+    # ** r6931+70.3 (PO-60, the vacuous green): THIS CHECK WAS HELD UP BY A BARE NUMBER.  Class (a).
+    #    `'1.082' in p15` has not matched the envelope's $r$ since the fitted onset was retired
+    #    (r6770+66.3) and the common visibility-peak endpoint set it at $r=0.992$ (`2da9b74a`,
+    #    merged r6921).  It stayed green on three sentences that quote 1.082 as the COUNTERFACTUAL
+    #    configuration ("a ratio of $1.082$ gives $160$" and two more).  *** The finding is about the
+    #    envelope AS IT STOOD when L-814 ran, so it is read there -- c54.223 (`3edaeea0`), where the
+    #    paper stated $r=\theta_D/\theta_*=1.082$ -- and the paper's current envelope is stated
+    #    beside it: a two per cent RISE at $\ell_D$, which no longer carries this suppression. ***
+    _then = re.sub(r'\s+', ' ', subprocess.run(
+        ['git', 'show', '3edaeea0:corpus/CR_cosmology.tex'],
+        cwd=ROOT, capture_output=True, text=True, errors='replace').stdout)
+    check('with $r=1.082$ stated in the paper WHERE L-814 WAS SCORED (c54.223): "with '
+          '$r=\\theta_{D}/\\theta_{*}=1.082$ ... so the ratio is $0.84$ at $\\ell_{D}$"',
+          len(_then) > 100000
+          and 'with $r=\\theta_{D}/\\theta_{*}=1.082$' in _then
+          and 'so the ratio is $0.84$ at $\\ell_{D}$' in _then)
+    check('⌗ and the envelope TODAY is the adjudicated one: "$r=0.992$, it is a rise of about two per '
+          'cent at $\\ell_{D}$" -- so the estimate below explains the negative L-814 measured on the '
+          'retired configuration, and is not a statement about the current one',
+          'visibility function, $r=0.992$, it is a rise of about two per cent at $\\ell_{D}$' in p15)
 
     # ⓶ the estimate
     r, lD = 1.0816, 1400.0   # ** RE-PINNED c54.223 (`L-557`) -- was 1.0926 **
@@ -118,6 +138,8 @@ def main():
         print(f'  {len(FAILED)} check(s) FAILED')
         return 1
     print("  VERDICT: ** the negative is NOT an artefact — P15's own envelope gives the same order. **")
+    print("  ⌗ (r6931+70.3) ** On the envelope as it stood when L-814 ran, r = 1.082.  P15 now carries")
+    print("    r = 0.992, a two per cent RISE at l_D, so this explains that negative and predicts none today. **")
     print(f'  ⛭⛭ ⓵ ** From the paper\'s published formula alone ** — C_CR/C_ΛCDM = exp[−(ℓ/ℓ_D)²(r²−1)],')
     print(f'     r = 1.0816 — the suppression runs {ratio[0]:.3f} → {ratio[-1]:.3f} across the band, and')
     print(f'     scored against cosmic variance on 215 bins gives χ² ~ {chi2:.2g}.')
