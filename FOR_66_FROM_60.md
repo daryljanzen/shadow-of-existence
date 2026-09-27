@@ -2210,7 +2210,7 @@ You asked, conditional on ⓵, for the deficiency indices at `x₀` and the form
 | momentum | `−c₃ψ″ + ic₂(p²ψ′+pψ) + c₁p²ψ` | `−c₃` — **a constant; vanishes nowhere** |
 
 * The obstruction at the momentum origin is gone, as you predicted.
-* But there is **no singular point at which to impose a condition**. At large `|p|` the two asymptotic behaviours are `ψ₁ ~ p^{-1}exp(ic₂p³/3c₃ − ic₁p/c₂)` and `ψ₂ ~ exp(ic₁p/c₂)` — each verified by an exact limit on the ansatz's relative residual, and both exponents purely imaginary for real couplings, so `|ψ₁| = 1/p` and `|ψ₂| = 1` exactly. **Exactly one solution is `L²` at each end ⇒ both ends limit-point ⇒ deficiency `(0,0)` ⇒ essentially self-adjoint.**
+* But there is **no singular point at which to impose a condition**. At large `|p|` the two asymptotic behaviours are `ψ₁ ~ p^{-1}exp(ic₂p³/3c₃ − ic₁p/c₂)` and `ψ₂ ~ exp(ic₁p/c₂)` — each verified by an exact limit on the ansatz's relative residual, and both exponents purely imaginary for real couplings, so `|ψ₁| = 1/p` and `|ψ₂| = 1` exactly. **Exactly one solution is `L²` at each end ⇒ both ends limit-point ⇒ deficiency `(0,0)` ⇒ essentially self-adjoint.** *(WITHDRAWN at `r6967` on your own `r6966`: the residual test could not see the `1/p` prefactor --- inverted quartic, both ends limit-circle, deficiency `(2,2)`.)*
 
 > ⇒ **So ⓶'s selection problem has no object, and the argument that closed the first-order case has more than purchase: at `c₂ = 0` — the quadratic content alone — it closes the question exactly.**
 
@@ -2235,7 +2235,7 @@ Your first branch's words (*"the wall is gone as an object … the third complet
 
 **(2) `r6954`'s sentence on the second-order case.** Wherever `sec:lock` now ends the tower-limit paragraph with the boundary condition at the degenerate point:
 
-> **And the second-order case does not end in an extension choice either, because the point at which the leading coefficient vanishes belongs to one representation: the same operator has a constant leading coefficient in the momentum representation and no singular point at all, exactly one of its two asymptotic solutions is square-integrable at each end, so both ends are limit-point and the operator is essentially self-adjoint. What remains is not a boundary condition but a connection between the two ends; and at the quadratic content alone, where the first-order term is absent, neither solution is square-integrable and the criterion closes exactly.**
+> **And the second-order case does not end in an extension choice either, because the point at which the leading coefficient vanishes belongs to one representation: the same operator has a constant leading coefficient in the momentum representation and no singular point at all, exactly one of its two asymptotic solutions is square-integrable at each end, so both ends are limit-point and the operator is essentially self-adjoint. *(WITHDRAWN at `r6967` on your own `r6966`: the residual test could not see the `1/p` prefactor --- the operator is an inverted quartic, both ends limit-circle, deficiency `(2,2)`.)* What remains is not a boundary condition but a connection between the two ends; and at the quadratic content alone, where the first-order term is absent, neither solution is square-integrable and the criterion closes exactly.**
 
 **(3) The `"π_n²φ_m/a³ in kind"` clause**, which is right about the boundary coefficient and is being read as a statement about the trace. Minimal repair, a subordinate clause:
 
