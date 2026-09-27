@@ -247,6 +247,21 @@ def Hleaf(a):
 LEAFPERT = os.environ.get('STACKPERT', '0') != '1'
 Hl_of  = CubicSpline(eg, ag * Hleaf(ag) / C)                       # comoving leaf Hubble, 1/Mpc
 Jac_of = CubicSpline(eg, Hphys(ag) / Hleaf(ag))                    # d eta_leaf / d eta_stack
+# ⛭⛭ ** r_s ACCUMULATED TO eta, ON EACH CLOCK SEPARATELY -- r6919+cc66.42. **
+# *`rs_from` gives the sound horizon at RECOMBINATION, which is the ruler l_A is read against.  The
+# INJECTION of `r6919`'s order needs the phase the plasma has accumulated at each eta ACROSS the
+# visibility, which is a different object -- and it needs it on both clocks, because that is what
+# the order's candidate is about.*
+#   ⛔ ** AND THE TWO CLOCKS ARE WHERE THE ASYMMETRY ACTUALLY IS. **  `Jac_of` above is
+#   d eta_leaf / d eta_stack.  On the control `Hleaf` and `Hphys` are character-identical, so it is
+#   1.000000 everywhere.  On the arm it runs 0.789 to 0.913 across +-3 FWHM of the visibility --
+#   ** the acoustic phase is accumulated in LEAF conformal time while the projection kernel's
+#   argument x0 = eta_0 - eta is in STACKING conformal time, and on the arm those differ. **
+#   ⌗ *`x0` is the same object on both arms: chi(eta) = eta_0 - eta, so d chi / d eta == 1 on each.
+#     The two-clock structure is between r_s and eta, NOT between chi and eta.*
+_csi = lambda H: C / (ag ** 2 * H(ag) * np.sqrt(3 * (1 + RB_REC * ag / A_REC)))
+rs_stack_of = CubicSpline(eg, np.concatenate([[0.0], cumulative_trapezoid(_csi(Hphys), ag)]))
+rs_leaf_of = CubicSpline(eg, np.concatenate([[0.0], cumulative_trapezoid(_csi(Hleaf), ag)]))
 # ** PHASEONLY=1: reckon ONLY the oscillator's phase in leaf conformal time, nothing else -- the
 # PURE-CLOCK operation, isolated from LEAFPERT's full leaf dynamics.  Scaling the photon PRESSURE
 # (restoring) term by phi^2=(H_stack/H_leaf)^2 makes the sound frequency k c_s -> k c_s
@@ -936,6 +951,30 @@ _SRCD = os.environ.get('SRCDEC')
 # the pair order is fixed here so the bank, the receipt and the print agree on what column is what.
 _DECN = ['sw*sw', 'sw*dp', 'sw*isw', 'sw*pol', 'dp*dp', 'dp*isw', 'dp*pol',
          'isw*isw', 'isw*pol', 'pol*pol']
+# ⛭⛭ ** SRCINJ: PROJECT A SOURCE WITH NO PHYSICS IN IT -- r6919+cc66.42. **
+# *`r6919`'s order: feed both arms' projection machinery the SAME analytic oscillating source and
+# measure how much of its oscillation each arm's projection retains.  If the arm-to-control ratio
+# reproduces `cc66.41`'s 1.054 and its +0.0139 slope, the effect is the projection's geometry and
+# the source is irrelevant to it; if it does not, the effect needs the real source's eta-dependence.*
+#   `fixed` : S = g(eta) cos(k R_S + phi)          -- no phase advance across the visibility
+#   `sweep` : S = g(eta) cos(k r_s(eta) + phi)     -- the phase advancing as the plasma accumulates
+# ⚠ ** THE TWO ARE DIFFERENT INJECTIONS AND THE ORDER SAYS TO STATE WHICH. **  A fixed phase asks
+#   what the kernel does to a standing oscillation; a sweeping one asks what it does to the one the
+#   plasma actually has, whose phase moves THROUGH the visibility.  *Only the second can carry a
+#   clock difference, because a clock is a rate and a fixed phase has none.*
+_SRCI = os.environ.get('SRCINJ')
+_SRCIP = float(os.environ.get('SRCINJPH', '0'))        # the phase, in units of pi
+# ⛭ ** SRCINJRS: WHICH CLOCK r_s(eta) IS ACCUMULATED ON -- the one-at-a-time swap `r6919` ⓶ asks
+# for, in the place the instrument actually has two clocks. **  `own` = this arm's convention
+# (`LEAFSCALES`); `stack` and `leaf` force both arms onto one.  *Nothing else moves: same
+# background, same visibility, same kernel, same k grid.  That is what makes it a swap.*
+_SRCIRS = os.environ.get('SRCINJRS', 'own')
+# ⛭ ** SRCINJVIS: a visibility FWHM to impose instead of this arm's own -- the OTHER factor. **
+# *The arms' visibilities sit at different eta (281.7 against 486.0), so the control's cannot be
+# used on the arm's background as it stands.  What is well posed is its WIDTH: g is rescaled about
+# this arm's own peak to the requested FWHM, preserving its integral.  ⌗ Reported as the
+# construction it is, not as "the control's visibility".*
+_SRCIV = os.environ.get('SRCINJVIS')
 # the per-batch source accumulator; `hier_run` concatenates it over the k-batches, which is exact
 # because every entry is indexed by k alone -- the eta axis is integrated or sliced out here.
 _SRCB = []
@@ -1290,6 +1329,13 @@ def hier_run(kk, EE, L_A_, D_M_, R_S_):
     for i0 in range(0, len(kk), nb):
         kb = kk[i0:i0 + nb]
         nk = len(kb)
+        if _SRCI:
+            # ** THE SOLVER IS SKIPPED BECAUSE ITS OUTPUT IS DISCARDED. **  `_project` overwrites
+            # `S` from the analytic injection, so evolving the hierarchy would cost the whole run
+            # to build an array nothing reads.  *Guarded, so an unset `SRCINJ` changes nothing.*
+            Cl += _project(kb, EE, np.zeros((len(EE), nk, NVH)), ls, x0, e_sw)
+            print(f"    modes {i0}-{i0+nk} done (injected source, solver skipped)", flush=True)
+            continue
         t1 = np.concatenate([E1, [e_sw]])
         s1, _, NVf = evolve(kb, t_eval=t1, e_end=e_sw)
         Y1 = s1.y.T.reshape(len(t1), nk, NVf)
@@ -1394,6 +1440,24 @@ def _project(kb, ee, Y, ls, x0, e_sw):
          + _DPSRC * np.gradient(g_ * tb, ee, axis=0) / kb[None, :] ** 2
          + _PI * 0.75 * np.gradient(np.gradient(g_ * Pi, ee, axis=0), ee, axis=0)
          / kb[None, :] ** 2)
+    if _SRCI:
+        # ** THE ANALYTIC SOURCE REPLACES `S` ENTIRELY, so `Y` is unused on this path -- and
+        # `hier_run` skips the solver for exactly that reason.  Nothing here is a spectrum of the
+        # model and the receipt says so; it is the projection's own transfer of a known input. **
+        _gi = g_
+        if _SRCIV:
+            # rescale the visibility about its own peak to the requested FWHM, integral preserved
+            _f = float(_SRCIV) / ETA_LS_W
+            _gi = vis_of(ETA_LS + (ee - ETA_LS) / _f)[:, None] / _f
+        if _SRCI == 'sweep':
+            _rf = {'own': (rs_leaf_of if LEAFSCALES else rs_stack_of),
+                   'stack': rs_stack_of, 'leaf': rs_leaf_of}[_SRCIRS]
+            _ph = kb[None, :] * _rf(ee)[:, None]
+        else:
+            _ph = kb[None, :] * R_S
+        # ** k^((1-NS)/2) makes the SMOOTH part of the integrand P * S^2 exactly dk/k on BOTH arms,
+        # so the injection is identical in q and the two arms' different tilts cannot enter. **
+        S = _gi * np.cos(_ph + _SRCIP * np.pi) * kb[None, :] ** (0.5 * (1.0 - NS))
     dk = np.gradient(kb)
     P = kb ** (NS - 1) / kb * dk
     # ** r6911+cc66.40 -- THE SOURCE, TERM BY TERM, BEFORE THE KERNEL TOUCHES IT. **

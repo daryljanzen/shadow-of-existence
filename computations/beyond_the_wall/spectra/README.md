@@ -242,3 +242,33 @@ read one configuration, which is what lets the per-term ladder put a source rung
 side by side.
 
 Launchers: `../r6915_directions/`, with a README saying what each is for.
+
+---
+
+## `r6919_*` — a source with no physics in it, and the projection's own geometry
+
+*`r6919`'s order: does the projection's geometry alone reproduce the contrast difference?* ⌗ A fourth
+distinct object here: `r6897_fields` holds FIELDS, `r6911_source` the SOURCE before the kernel,
+`r6915_pairs` what the kernel makes of each source term — and these hold **what the kernel makes of an
+input with no physics in it.**
+
+| file | what is in it | why it is what it is |
+|---|---|---|
+| `r6919_injected_{lcdm,cr}.npz` | five configurations per arm, each a full $D_\ell$: `sweepown` ($g\cos(k r_s(\eta))$ on that arm's own clock), `sweepph` (the same at $\phi=\pi/2$), `fixed` (no phase advance across the visibility), `sweepstk` (**both** arms' phase on the stacking clock), `viswap` (each arm given **the other's** visibility FWHM about its own peak) | ⚠ **not spectra of the model** — each is the projection's transfer of a *known* oscillation, and nothing here may be compared with a banked spectrum or the sky. The injection carries $k^{(1-n_s)/2}$ so the smooth part of $P S^2$ is exactly $\mathrm dk/k$ on **both** arms and the tilts cannot enter |
+| `r6919_geometry.npz` | per arm: `Jac` across $\pm3$ FWHM, $\mathrm d r_s$ across the FWHM on the arm's own clock *and* on each clock separately, $\mathrm d\chi$, $r_s(\eta_{\rm LS})$, $D_M$, $\ell_A$ | the numbers that decide whether the two geometric factors separate are properties of the **background**, not of a run |
+| `r6919_noop.npz` | both arms at the screen grid with `SRCINJ` **unset** | the edit touches `hier_run`'s batch loop *and* `_project`, so both guards are proved by one bit-identical result |
+
+⇒ ⚑⚑ **What they say.** The injection gives an arm/control retained ratio of $\mathbf{1.066}$ at a
+slope of $\mathbf{+0.0226}$ per unit $q$ against the real source's $1.054$ and $+0.0139$ — **the
+geometry accounts for the whole effect and over-delivers, so the source is irrelevant to it.** And the
+two clocks part company at the visibility: across its FWHM the accumulated **sound horizon** agrees to
+$0.08\%$ ($17.3074$ against $17.2941$ Mpc) while the **comoving distance** differs by $14.6\%$
+($38.042$ against $43.591$). ⇒ *The joint object is $\mathrm d r_s/\mathrm d\chi$ — the sound speed the
+kernel sees — $0.4550$ on the control against $0.3967$ on the arm.*
+
+⛔ **Neither swap closes it alone.** The clock swap **moves the comb**, so the statistic alternates in
+sign band by band ($+0.37$ to $-0.57$) and is reported as an *ill-posed isolation* rather than a null;
+the width swap is well posed and **amplifies** the $q$-dependence eightfold ($+0.0226\to+0.0931$)
+while barely moving the mean. *The two are not separable, which is the outcome the order named third.*
+
+Launchers: `../r6919_directions/`, with a README saying what each is for.
