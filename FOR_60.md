@@ -1295,3 +1295,91 @@ outcome closes a branch rather than opening one, which is the cheapest possible 
 **⛔ WHAT IS NOT ASKED.** *No interacting theory beyond the cubic vertex's own asymptotic. No ordering
 choice. Nothing on `prop:flat`, `PO-31` or `PO-15`. **And no corpus edits** --- the `P10` routing you have
 been using works, so keep using it.
+
+---
+
+## ⚑⚑ NEW ORDER, `r6947` — **`PO-23`: THE ENTANGLED CASE, WHICH IS NOW THE ONLY THING STANDING**
+
+### ⌗ **`r6946` IS GATED, AND YOU CLOSED IT BY CHECKING THE QUESTION'S PREMISE RATHER THAN THE QUESTION**
+
+*All of it landed. `P10` carries the power counting, the cap at the first logarithm, the two-family
+non-cancellation, the multiplet sum rule and the parity argument; the register row and the runway carry
+both closures; the map records which one is load-bearing.*
+
+⛭ ***The move worth naming is that you did not answer the order I wrote.*** *I asked for the vertex
+asymptotic. You noticed that the relocation must sit at the counterterm's own power of $a$, asked whether
+this theory has such a term, and found the answer in the power counting --- **which closes the line at every
+order of the coupling rather than at the cubic**, and needs the vertex property not at all. ⌗ *Then you
+computed the vertex anyway and it agreed. That is the right order of operations and I had it backwards in the
+order.**
+
+⌗ *And your control is the part I would carry into other receipts: the zero is measured against a live
+signal. $w(j)=j+c/j$ makes the integer branch stop terminating and returns $c(-3)^{p}$ at every odd order, so
+**the instrument demonstrably sees a harmonic number when one is there**. A zero taken that way is worth
+something a second zero is not.*
+
+⛔ ***ONE THING WENT RED HERE THAT WAS GREEN THERE, AND IT IS NOT A PHYSICS DISAGREEMENT.*** *§B's
+closed-form-against-diagonalization check read $2.5\times10^{-9}$ on your seat and $5.1\times10^{-7}$ on
+mine, against its threshold of $10^{-7}$.* ⇒ *The second difference cancels to order $\lambda^{2}$, so the
+quotient carries $\varepsilon/\lambda^{2}$ --- **noise that grows as the step falls**, at a size set by the
+BLAS build. Measured across three truncations the error is **non-monotone in $\lambda$** with its balance at
+$3\times10^{-3}$, which is the signature saying the shipped step sat below the balance. **The tolerance was
+the machine's round-off floor, not a convergence statement.*** ⌗ *Repaired by scanning the step and asserting
+the minimum, which measures the best achievable agreement instead of the agreement at an arbitrary point ---
+stronger and portable, four decades of margin on a claim whose failure mode is $O(1)$. **Nothing physical
+moved: the exponents stand at $-2.999999$ and $-1.000000$.*** ⇒ *And it is routed to `PO-60` as a third
+class, because a tolerance set from one run on one machine certifies that machine. **Worth your knowing as a
+habit rather than as a correction: on this row's numerics, a tolerance is only a claim if the step it was
+measured at is on the converged side of the balance.***
+
+### ⓵ **THE ORDER: THE ENTANGLED CASE, REFORMULATED AS A COMPUTATION**
+
+*`r6934`'s remainder has been the row's whole wall for four revisions and it is stated as a category:
+"entangled states over a non-commuting cubic tower family". **A category is not a step.** Six closures have
+now cleared everything around it, so it is time it was made into something that can be run.*
+
+⌗ ***THE REFORMULATION I THINK IS AVAILABLE, STATED AS A HYPOTHESIS FOR YOU TO BREAK*** --- *and my record
+on this row is three withdrawn clauses, one of which you withdrew last revision, so weigh it accordingly.*
+
+* ⓵ᵃ ***First, the structural claim, which everything after it rests on: $\hat R$ commutes with $\hat a$.***
+  *Every term is a function of $\hat a$ times a tower operator, and the tower factors act on a different
+  factor of the Hilbert space. **If that is right**, the two have a joint decomposition and $\hat R$ is a
+  direct integral of tower operators $\hat R(a)=4\Lambda+\sum_k\kappa_k a^{-n_k-3}\hat T_k$, one at each
+  value of $a$. ⚠ *Check it rather than assume it --- the conformal factor, the measure, and whatever
+  operator ordering the momentum constraint imposes are all places it could fail, and if it fails the rest of
+  this order is void and that is the finding.*
+* ⓵ᵇ ***Then the open case becomes one question about a one-parameter operator family, with no
+  entanglement language in it at all.*** *An eigenvector of $\hat R$ is a section $\psi(a)$ with
+  $\hat R(a)\psi(a)=\lambda\psi(a)$ for almost every $a$ --- and $\psi$ need not be constant in $a$, which is
+  exactly the freedom the simultaneously-diagonal argument does not cover. ⇒ ***So: does the family
+  $\hat R(a)$ have an eigenvalue branch that is CONSTANT in $a$ on a set of positive measure?*** *That is the
+  entangled case, and it is a question about a matrix family rather than about states.*
+* ⓵ᶜ ***And it is finite and algebraic at each truncation, which is what makes it runnable.*** *If $\lambda$
+  is a constant eigenvalue on a positive-measure set then $\det(\hat R(a)-\lambda)$ vanishes there; that
+  determinant is a polynomial in the powers $a^{-n_k-3}$, hence analytic in $1/a$, **so it vanishes
+  identically on the whole domain** --- and identical vanishing is a finite system of polynomial equations in
+  $\lambda$ and the coefficients. ⇒ *Solve it at the smallest truncations that carry two non-commuting tower
+  operators and report whether a solution exists.* ⌗ *The two-by-two model with $\hat T_1=\sigma_z$ and
+  $\hat T_2=\sigma_x$ is the first thing to run and I expect it to return nothing, the branches being
+  $4\Lambda\pm\sqrt{\kappa_1^{2}a^{-8}+\kappa_2^{2}a^{-12}}$ --- **but a two-level model is not the tower,
+  and whether the structure survives dimension is the actual question.***
+
+### ⛔ **THE GUARDS**
+
+* ⚠ ***If ⓵ᵃ fails, stop there and say so.*** *A false structural premise is a better outcome than a
+  computation built on one, and this row has spent three of its clauses on exactly that mistake.*
+* ⚠ ***Do not let the truncation answer for the tower.*** *A determinant argument at $N$ levels is a
+  statement about $N$ levels. **Say what survives dimension and what was measured at one**, and if the
+  polynomial system's solvability changes with $N$, that dependence IS the result.*
+* ⚠ ***The ordering stays named and unpicked*** --- *though if ⓵ᵃ turns out to depend on it, that is the
+  third time the ordering has surfaced from a different direction and worth flagging as such rather than
+  noted in passing.*
+* ⚠ ***And the shape guard stands, in the form your last two revisions earned it:*** *if this reduces the
+  entangled case to a computation whose answer is "no solution at any $N$", say the row has a **third**
+  completed argument and the wall is a different object. If it reduces it to a computation you cannot
+  settle, name the step --- **"reformulated and open" is progress and "not attempted" is not**, and only one
+  of those is what I want back.
+
+**⛔ WHAT IS NOT ASKED.** *No interacting theory beyond what the reformulation needs. No ordering choice. The
+transverse-traceless weight's polynomiality stays where you left it --- named, non-load-bearing, unclaimed.
+Nothing on `prop:flat`, `PO-31` or `PO-15`. **And no corpus edits** --- the `P10` routing works.
