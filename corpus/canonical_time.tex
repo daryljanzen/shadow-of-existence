@@ -629,11 +629,26 @@ algebraic identity and not a dynamical one}: $[f(a)\otimes T,p_a]=\mathrm{i}\hba
 scale-factor function alone and the tower factor rides through---so the inequality holds verbatim in form
 at every order, and its form is blind to the ordering. \emph{And pointwise cancellation is excluded by the
 trace rather than found to be absent}: the trace of an energy term $h(a)\otimes T$ is $(h+ah')T/2\pi^{2}a^{3}$
-exactly, traceless precisely when $h\propto1/a$, so a power law $c\,a^{-n}$ contributes
-$\partial_a\Theta\propto(n-1)(n+3)a^{-n-4}$ and matching the anomaly's $a^{-5}$ forces $n=1$, where the
-coefficient $(1-n)$ vanishes and the term contributes nothing at all. \emph{The anomaly exists because
-$\ln a$ breaks the exact $1/a$ scaling that made the bare sum traceless, and the only scaling that could
-cancel it is that same $1/a$}---what would undo it is what it undid. The level-set argument likewise
+exactly, so a term $c\,a^{-n}\ln^{m}a$ contributes
+$2\pi^{2}\Theta=c\,a^{-(n+3)}\bigl[(1-n)\ln^{m}a+m\ln^{m-1}a\bigr]$, and the counterterm's own $a^{-4}$ is the
+member of that family at $n=1$, $m=1$. \emph{The whole family is closed under the operation rather than
+annihilated by it, and closure in one direction only is what settles the question.} From a term at $n=1$ the
+highest power surviving in $\partial_a\Theta$ is $\ln^{m-1}a$ with coefficient exactly $-4mc$, while a term
+one logarithm higher reaches both $\ln^{m}a$ and $\ln^{m-1}a$: so the terms chain \emph{downward} in the
+logarithm and never upward, the coefficient system over log powers is lower triangular with diagonal $-4m$,
+and $\partial_a\Theta\equiv0$ therefore forces every coefficient to vanish. \emph{The leading logarithm has no
+partner}, and that is why nothing cancels the residue at any $(n,m)$---the pure-power case, where $n=1$ kills
+the coefficient outright, is this statement at $m=0$. \emph{What a tuned coefficient can do is relocate the
+obstruction rather than remove it}: at exactly twice the residue a second-logarithm term annihilates the
+constant coefficient the counterterm sits in and leaves the next logarithm up at sixteen times the residue,
+with the curvature's variance at that same state eleven decades above the measured
+floor\rcpt{P10_the_second_logarithm_holes_the_mechanism_and_not_the_conclusion_because_the_leading_log_is_unpartnered}.
+\emph{And whether the interacting sum reaches a second logarithm at all is fixed by one property of the
+vertex}: the power $m$ is the order of the pole, a double pole requires a logarithm of the mode label inside
+the summand, and a logarithm of the label requires a nested sum---so the free tower cannot supply one, its
+large-label weight $2(m^{2}-4)\sqrt{m^{2}-3}$ being a pure Laurent series whose leading $2m^{3}$ is what puts
+the pole at $s=-1$ in the first place. The cubic carries one internal sum, and whether its own large-label
+asymptotic carries a logarithm is what would decide it. The level-set argument likewise
 survives on every fibre that exists: wherever the cubic's tower operators are simultaneously diagonal, the
 curvature is multiplication by $4\Lambda+\sum_j c_j a^{-n_j}$, whose derivative has no zero while $r>0$,
 whose level sets clear to a polynomial of degree six and are therefore finite, and a direct sum over such
