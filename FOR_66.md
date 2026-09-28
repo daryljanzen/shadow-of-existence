@@ -3611,3 +3611,105 @@ quoted. No refit, nothing touching `prop:flat` or the clock family, and **no cor
 ⌗ *Twenty-eight gates; receipt
 `P15_the_term_mix_has_the_shape_the_offset_needs_and_over_delivers_its_size.py`. Two banks
 `spectra/r6975_mix{,b}_lcdm.npz`, one launcher, and **no new switch** — the knob was already there.*
+
+---
+
+# ⛭⛭⛭ cc66.49 — `r6983` FILLED: THE COMPOSITION RULE IS MEASURED, IT IS MULTIPLICATIVE, AND IT RETRACTS MY OWN `cc66.48` INFERENCE WHILE CONFIRMING ITS ARITHMETIC
+
+**The order.** `PO-56` stopped being "which channel carries the excess" and became **"how do two channels
+compose"**, because `cc66.48` divided one response into the excess, got a remainder, and then argued the
+remainder was an artefact of a composition rule nobody had measured. ⇒ *So I measured the rule.* Both
+knobs on ONE control spectrum at the sizes their own revisions solved —
+`SRCTAPER=1.100877765e-4 SRCTAPERS0=145.3465211 SRCTAPERNORM=1` from `cc66.47` and `DPSRC=0.8794` from
+`cc66.48` — **neither coefficient re-chosen, no new switch, no third channel.**
+
+**All four pre-registered conditions pass, and the one separation the test could make is made.**
+
+| condition | pre-registered | measured | |
+|---|---|---|---|
+| T-SIZE | within $0.005$ of product/sum **or** quadrature in ≥5 of 7 | product **7/7**, sum **7/7**, quadrature **0/7** (worst miss $0.018$) | ✔ |
+| T-WEIGHT | $2.83$, bracket $[2.2, 3.6]$ | **$2.80$** | ✔ |
+| T-COMB | $\ell_1$ $+1.79$, bracket $[+1.0, +2.6]$ | **$+1.41$** | ✔ |
+| T-INTERCEPT | product $1.1035$ / sum $1.1019$ / quadrature $1.0839$, bar $0.005$ | **$1.0993$** — $0.0042$ from product, $0.0026$ from sum, $0.0154$ from quadrature | ✔ |
+
+⌗ *The pre-registration declared in advance that product and sum differ here by at most $0.0016$ and are
+therefore NOT separable by this measurement. They are not separated. **That is a declared limit, not a
+failure**, and saying it first is the only reason it reads as one.*
+
+⛭ **The pair is slightly sub-multiplicative, consistently**: $0.971$ of the product and $0.985$ of the
+sum, below both in every one of the seven bands and above quadrature in every one.
+
+## ⛔ WHAT THIS DOES TO MY OWN PREVIOUS REVISION — ONE RETRACTION, ONE CONFIRMATION
+
+* ✔ **CONFIRMED, by direct measurement rather than by adding two numbers.** `cc66.48` put the pair at
+  $1.72$ times the measured excess from the two channels separately. Composing them in **one** spectrum
+  reads **$1.70$**. The arithmetic was right to one per cent.
+* ⛔ **RETRACTED: the inference I drew from it.** I argued that because the shares sum to more than the
+  excess, the channels do not compose as assumed, and therefore that a remainder got by DIVIDING one
+  response into the excess is a construct of a wrong rule. ***The rule is now measured and it IS the
+  assumed one.*** Dividing is the right operation, so the remainder is a well-defined object and not an
+  artefact. **The over-delivery was evidence about the SIZES, not about the RULE** — and reading it as
+  evidence about the rule is the error. ⌗ *`r6983`'s own order was written on that inference, so this is
+  the second revision running in which the order's framing has to move; I am reporting it rather than
+  filling the order as if the framing held.*
+
+## ⛭⛭ AND THE OBSTRUCTION THAT SURVIVES IS A SHAPE, WHICH IS STRONGER THAN WHAT IT REPLACES
+
+The joint response is **the flattest thing this sector has measured** — its $q$-dependence is $0.004$ of
+its intercept, against the term mix's $0.031$ and the measured excess's $0.442$, a factor of a hundred.
+So the pair over-delivers **$3.87\times$ in the longest-wavelength band and $1.38\times$ in the
+shortest.**
+
+⇒ *** No coefficient on either knob reproduces the excess: scale the pair to the offset at $q=0$ and it
+is short at high $q$; scale it to high $q$ and it is an order too large at low $q$. *** With the rule
+*assumed*, those same numbers read as a size discrepancy a smaller coefficient could absorb. **That
+reading is available only because the rule was measured.**
+
+⌗ **So the row's next object, as I read it:** not a third candidate, and no longer how the channels
+combine — **what sets the sizes**, given that the pair at the sizes the profiles themselves solve is
+flat where the excess grows. The frontier row is written that way; gate or redirect it as you see fit.
+
+## WHAT IS ON THE BRANCH
+
+Receipt `P15_the_two_channels_compose_multiplicatively_and_the_pair_is_flat_where_the_excess_grows.py`,
+five parts, **22 gates**, `GATES: ALL PASS`, path provenance in its header. Bank
+`spectra/r6983_joint_lcdm.npz`. `PREDICTION.md` committed before the run; `bank.py` and `joint_read.py`
+committed before the spectrum landed. INDEX row, `spectra/README.md`, `PO13_WORKING_STATE`,
+`CORPUS_MAP`, `THE_REGISTER`'s PO-56 clause, `regen_frontier.py`'s PO-56 row re-run, appendices and the
+P15 page all regenerated. Fast job green at this seat, 107 gates.
+
+⚠ **Two things for you to route, neither of them mine to fix.**
+
+1. ⛔ **`check_env_fingerprint` is red in CI on every push, here and on `main`, and it is `PO-64`'s.**
+   The runner is on **python 3.11.16** (read from a job's own `pythonLocation`) against the **3.11.15**
+   in `receipts/ENV_FINGERPRINT.txt`. Cause: all seven `setup-python` sites in
+   `.github/workflows/gates.yml` ask for `python-version: '3.11'`, **which floats** —
+   `requirements-ci.txt` states the interpreter is "pinned by the workflow's `setup-python`" and it is
+   not. ⇒ *So the one event `PO-62` says a push cannot see has happened a second time, through the hole
+   `r6981`'s numpy pin did not close.* `r6985+70.1` pinned `pynucastro` but not this. **The gate is
+   working; I have not touched the fingerprint or the workflow.** Remedy is 70's: either hold the swept
+   environment by pinning `'3.11.15'` at all seven sites, or run the whole sweep on `3.11.16` and move
+   the pin and the fingerprint together.
+2. ⌗ **A property of the three scoped jobs worth a look, `PO-62`'s.** Their verdict is a statement about
+   the *push*, not about the *tree*: a red scoped job is silenced by the next small push that happens
+   not to touch what it covered, and nothing records that the red was never answered. I watched both of
+   this branch's scoped reds go green on a one-commit push with **nothing repaired** — and the same
+   mechanism explains why `main`'s tolerance job went green after `r6981` while `P10`'s three flagged
+   sites sat exactly where they were. *Two shapes suggest themselves — carry the last red scope forward
+   until a push covers it, or let the monthly backstop close them — and choosing is the row's, not mine.*
+
+⌗ 3. ⌗ **And a third, for 60 and 70 together, which I found while reporting the second.**
+   `Q1_a_stated_tolerance_is_a_request_and_the_corpus_answers_it.py` is complained about by TWO
+   independent CI instruments while passing green here. *The 600 s overrun did **not** recur on a
+   comparable scope, so `r4564`'s timeout anomaly stands at twice with no mechanism* — but on the
+   merged tree the **tolerance sweep's probe reports it `rc=1`**, unable to complete, so none of its
+   comparisons was measured. ⌗ *The sweep says so in terms rather than scoring it clean, which is the
+   same discipline as the gates above.* It runs `rc=0`, `VERDICT: ALL PASS`, in well under a minute at
+   this seat. ⇒ **So "load" is the weaker explanation**: a receipt that finishes in under a minute
+   here, blows a ten-minute cap twice on the runner and errors under an instrumented probe build looks
+   environment-sensitive in a way nobody has characterised — a better lead for `r4564`'s open note than
+   the `--jobs` slot I first offered. ⌗ *Characterising it needs the runner, not this seat.*
+   ⌗ *The reproducible timeout is a different receipt: `P14_the_constituent_count…`, over the cap on
+   two of three runs and at $534$ s — $89$ per cent of it — on the third, which is the plain
+   undeclared-margin class the $900$ s declaration on `P15_the_symmetric_comparison_…` was written
+   for.* **I have declared no budget and touched no tolerance.** Details on PR #122.
