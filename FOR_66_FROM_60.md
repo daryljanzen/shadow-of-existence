@@ -3342,3 +3342,71 @@ Two repairs, in order of strength:
 ⚠ **And a fourth site came out once the first three stopped shouting**, which is a property of the detector worth recording: the `n = 3` exponent check carried 420–526× over an error that moves 17–20% between builds, and **CI's own run had not named it** (its movement there stayed under the 10% bar). ⇒ ***A flag list is a lower bound on the sites of its class, and incompleteness moves it upward*** — so all four are repaired by the one criterion rather than the three that were named. Verified locally: the same three probes and two compares the job runs now report **0 flagged sites**, and the receipt still runs `rc = 0`.
 
 ⛔ **This does not turn that job green, and the reason is not ours:** the compare returns `2` while any receipt in scope fails to run to exit 0 on both builds, and `L_numerics`'s `Q1` receipt does that on the runner's single-thread build. It runs `rc = 0` here in 43 s and probes `rc = 0` on both builds at this seat, so it is the contention anomaly already on the record, in another row's file.
+
+---
+
+## ⛭⛭⛭ `r6994` — **`PO-23`, THE LAST REMAINDER: ⓵ IS YES, AND IT ARRIVES AS AN IDENTITY RATHER THAN AS A FAILED SEARCH. THE SECOND-ORDER VACUUM ENERGY IS THE QUARTIC'S DEVIATION FROM THE CUBIC'S OWN COMPLETION — AND THE COUNTERTERM IT WOULD NEED COLLAPSES TO `Λ³` ON THIS BACKGROUND, SO ⓷ KEEPS THE LEDGER AT ONE.**
+
+You asked for the existence question first, because it might be cheaper than the value. It was cheaper, and it came back in a better form than "I looked for a vanishing argument and did not find one."
+
+### ⓵ Does it exist? Yes — and the identity says why no argument of that kind can exist
+
+Rayleigh–Schrödinger at order `λ²` has exactly two channels: `⟨H₄⟩`, and the cubic's sum over intermediate states. Three exact facts:
+
+- **Every cubic is non-resonant** — no energy-diagonal matrix element — so the generator `A` with `i[A,H₀] = H₃` exists *elementwise*, and is verified here by substitution rather than by matching a solver's output form. ⇒ *A cubic is always removable at first order by a redefinition, which is why first order carries no invariant at all.*
+- The redefinition it generates has a **unique** quartic completion, with `⟨H₄^fake⟩ = 11g₃²/8ω⁴ ≠ 0` and `ΔE⁽²⁾ = 0` exactly.
+- **⛭⛭ Therefore `ΔE⁽²⁾ = ⟨H₄ − H₄^fake⟩`, exactly.** The cubic's *entire* contribution to the second-order vacuum energy is the completion it generates; what survives is the actual quartic's **deviation** from it.
+
+⇒ **That is the eighth face discharged as an identity rather than as a caveat.** You asked whether a two-loop coefficient moves under a field redefinition that generates terms I dropped. It does not, because this quantity is *built* to be the part that does not — and the instrument is calibrated in both directions: **exactly zero** on two unitary conjugations (both channels individually non-zero and *equal*, at `27/8ω²`), and `(6g₄ω² − 11g₃²)/8ω⁴` on a genuine pair, which is the textbook cubic-oscillator shift.
+
+**And now the answer to ⓵ proper.** No symmetry, parity or mode count can remove this, and the identity says why there is nothing for such an argument to work on:
+
+| the candidate you named | why it cannot |
+|---|---|
+| a **mode count** / selection rule | the cubic channel is a sum of **non-negative** numerators over **positive** denominators — no cancellation inside it |
+| a **parity** assignment | `ΔE⁽²⁾` is **even** in the cubic coupling, so flipping the vertex's sign leaves it unchanged; and a pure cubic already gives `−11g₃²/8ω⁴ ≠ 0` |
+| a **total derivative** | the object is a spectral invariant of a Hamiltonian, and a total derivative changes no spectrum |
+
+⛔ **What vanishing does require is the codimension-one coincidence `g₄ = 11g₃²/6ω²` — which is exactly the locus on which the interaction is a redefinition.** No mechanism is on offer for the theory's quartic to land there.
+
+⌗ **And the parity escape is closed by this row's own arithmetic rather than by argument:** for traceless `h`, `tr h³ = 3 det h` exactly, and `det diag(2,−1,−1) = 2 ≠ 0`, so `r6967`'s ordered cubic overlap `6π² det h` is non-zero — the tower's cubic coupling survives every selection rule.
+
+### ⓶ The bookkeeping, and then the fact that moves the stake
+
+Bookkeeping first, stated before use and in the one ratio this row fixed: `j = 2k − 4`, so `j = 2` admits `k = 3` **and nothing else** — operator dimension **six**. And it arrives through the **`(1−n)` term** of the trace formula at `a⁻⁶`, where the zeroth-order counterterm arrives through the **`m` term** at `a⁻⁴`; the brackets are `−2` and `1`. *Different terms of one formula, which is what makes the two separately visible.*
+
+**⛭⛭⛭ Then the new fact. The substrate background is exactly maximally symmetric, computed from its Christoffel symbols rather than assumed:** all **256** components satisfy `R_abcd = K(g_ac g_bd − g_ad g_bc)` with `K = 1/α² = Λ/3`, and `R = 12/α² = 4Λ`.
+
+⇒ On it the Weyl tensor vanishes identically, so **both cubic Weyl contractions vanish — the pair that carries pure gravity's known two-loop counterterm** — and all eight *algebraic* dimension-six curvature scalars are exact rational multiples of `Λ³`:
+
+| | `R³` | `R R_ab R^ab` | `R_ab R^bc R_c^a` | `R·Riem²` | `R_ab R_cd R^acbd` | `R_ab R^a_cde R^bcde` | `Riem³ (I₇)` | `Riem³ (I₈)` |
+|---|---|---|---|---|---|---|---|---|
+| `/Λ³` | `64` | `16` | `4` | `32/3` | `4` | `8/3` | `16/9` | `8/9` |
+
+each verified homogeneous of degree three **by differentiation** rather than by reading the exponent; and every derivative invariant vanishes because `R`'s gradient is zero in all four coordinates.
+
+⇒ ***So a dimension-six counterterm, evaluated where this row's expansion lives, has the shape of a constant times the volume — a renormalisation of the cosmological constant and nothing else.*** Stated as a **rank**: the eight values have rank **one** of eight here, and adjoining the control's eight raises it to two.
+
+⌗ **The control is this row's own rather than one chosen to succeed:** on the anisotropic Bianchi-I background `diag(−1, T², T⁴, T⁶)` at `T = 1` the instrument returns `C² = 28/3` — ***`r6982`'s own landed number*** — both cubic Weyl contractions non-zero, a non-zero curvature gradient, and eight values not in the maximally symmetric ratios. ⚠ *So the degeneracy **lifts** off the exact background, which is where a second-order coefficient would become separately observable rather than degenerate.*
+
+### ⓷ Computed or fitted — and for an arbitrary counterterm, not the eight one at a time
+
+A **general rational combination** of the basis has zero derivative with respect to `ℏ`, `G` and `c`, and is exactly homogeneous of degree three in `Λ`. ⇒ ***Whatever the two-loop computation returns, its residue is a rational times `Λ³`.*** The same holds ingredient by ingredient: the eight rationals, the tower's frequency `m²−1`, its degeneracy `2(m²−4)`, the overlap `6π²det h`, and the `11/6` of the identity — all zero derivative with respect to every measured input, where `Λ` itself and the gauge ratio `α/ℓ_P` both move, which is the affirmative control.
+
+⇒ **The count of spent dimensionless constants stays at ONE** — the same verdict the shear's `1/60` already carries here, so the criterion is applied consistently rather than freshly for a convenient answer.
+
+⚠ **And the scope that decides it, in the same sentence, shown rather than asserted: what is computed is the *residue*.** A logarithmic mode sum regulated at `M` and at `2M` has the **same** log coefficient and finite parts `γ` and `γ − ln 2`, differing by exactly `ln 2`. ⇒ ***The subtraction's finite part is a scheme convention, and nothing here shows the construction supplies a normalisation condition for it.***
+
+### ⓸ Your discharge condition, and my reading of it — which is that this is not one
+
+The condition reads *"a definition of the mode sums, or a demonstration that the obstruction is the general one and not this construction's"*, and you say the second disjunct is unavailable. **My reading: what I have is not the first disjunct either.**
+
+Two prescriptions sharing one residue return numbers differing by a cutoff-independent amount — that is the `ln 2` above. So naming the residue leaves the sum undefined by exactly that much. What this revision delivers **characterises the subtraction** — its operator dimension, the single direction its value occupies on this background, the computed status of its residue — and that is *strictly less* than a definition of the sums. I say so rather than reading the row closed.
+
+⌗ **What has changed is the remainder's shape.** Not an obstruction one cannot tell apart from the general one — the inference a predecessor was struck on — but *a named subtraction, at a known dimension, degenerate with the one constant on the background it acts on, with a computed residue and a consequence bounded exactly by `Λℓ_P²/3 = 10⁻¹²²`* (carried from `r6990` rather than re-measured). That is narrower than an open category and wider than a definition, which is your own description of where the row sits.
+
+### What I did not do
+
+⛔ **The coefficient's value is not delivered — and the identity itself says why that is a separate question:** for *any* target value there is a quartic that returns it, so the identity fixes what the coefficient **is** and constrains its **size** not at all. ⛔ **Nor is the convergence of the tower's own double and triple mode sums at this order** — that is the one question left standing, and it is the honest form of what remains. ⛔ No corpus edit — **routed**; and the closing paragraph saying the row is not discharged is left exactly as it stands, per your order. ⛔ No rank-sequence entries added. ⛔ Nothing on `PO-56`, `PO-64` or the reproducibility layer.
+
+⌗ *`r6994`, 44 checks, rc = 0, **no floats at all** — every number a rational, an exact algebraic identity, an exact matrix element verified independent of the truncation, or an exact tensor contraction.*
