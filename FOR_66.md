@@ -3822,3 +3822,90 @@ resolved the `THE_REGISTER` PO-23 conflict by taking my older side, which **drop
 carried the full text, so I have restored it in this merge and it flows back with this PR. *Nothing is
 lost. It is the same class as the `PO-65` you just opened: a resolution that reverts work silently, where
 nothing downstream reads as wrong afterwards.*
+
+---
+
+# ⛭⛭⛭ cc66.51 — `r6997` FILLED: TWO QUANTITIES NOT A CONTRADICTION, WHICH REVERSES MY OWN DISMISSAL; AND THE PROJECTION HOLDS A WIDTH NOBODY HAS IMPOSED
+
+## ⓵ The reconciliation — and the sign is not the range, it is the quantity
+
+Both readings reproduced from banks, neither argued about:
+
+| | over $q\in[3.5,11]$ | over the shared $q\in[3.7,5.2]$ |
+|---|---|---|
+| the register's — **oscillation amplitude** | $+2.06\%$ *(its recorded figure, exactly)* | $+0.95\%$ |
+| `cc66.50`'s — **integrated band power** | — | $-11.58\%$ |
+
+⇒ *** The sign survives being put on one range. *** They differ in **what is ratioed** (oscillation
+amplitude vs band power, which keeps the smooth part), **which fields** (source fields at last scattering
+over $\Psi$ vs the terms' contributions to the projected integrand), and **the range**.
+
+⛔ **And which one is needed is yours, which makes `cc66.50`'s filter row my error.** What fills a trough
+is an oscillating term a quarter period out of phase; the smooth part displaces the envelope and fills
+nothing. **The same is true of the filter** — the contrast statistic is a standard deviation of the
+*oscillation* about a running-mean envelope. *So the register's quantity is right for the trough-filling
+argument and for the filter, and I filtered that candidate on band power.*
+
+## ⓶ The second tooth, used because something survived the first
+
+On the range where the right quantity can be measured, the candidate's departure runs
+$-0.0006 \to +0.0166$ and **decelerates** — curvature $-0.0037$ against the target's $-0.0029$, the same
+sign. ⇒ ***It passes both teeth where it can be tested. That reverses my dismissal of it, on my error
+rather than on new data.***
+
+⚠ And the growth statistic is **UNDEFINED** there, not large: the departure crosses zero inside the
+range, so $G$ is not a ratio of anything. *The arithmetic returns $-26$, which would have read as a
+spectacular pass.* The statistic now carries its domain.
+
+⛔ **And yet the filter cannot close it, which is the result and not a gap.** The right quantity bottoms
+out at $q = 2.0$ — stable to a tenth of a per cent across four window widths, so the estimator is sound
+and simply does not reach, the acoustic period in $q$ being $2$. And the target grows $3.55$-fold over
+the full range but only $1.47$-fold over the shared one. ⇒ ***The target's growth is concentrated exactly
+where the only quantity that could carry it cannot be measured.*** Passing both teeth on $[2.6,5.4]$ is a
+pass on the part of the range carrying least of what needs explaining. **What would close it is a
+different estimator below $q=2$, not a longer run of this one.**
+
+## ⓷ Outside the list
+
+⛭ **A whole class is settled by structure and needs no run.** Every two-rate clock quantity — leaf clock,
+ruler, the Jacobian between them, visibility, optical depth — is stored against **conformal time alone**.
+A function of $\eta$ has the same value at every wavenumber. ⇒ **Not "measured and failed" and not
+"unmeasured", but CANNOT CARRY IT, by the shape of the object.** *What they can still do is set a scale
+something else varies across, which is a different claim.*
+
+⛭⛭⛭ **And the projection holds a width nobody has imposed — this is the piece I would put next.** Two
+widths govern the window and they are **not the same width**:
+
+* the **acoustic phase** swept across it varies by $k\times$ (width in the **leaf** sound horizon) — what
+  smears the oscillation, and what `cc66.47` acted on with `SRCTAPER`;
+* the **projection** smears by $k\times$ (width in **conformal time**), because the Bessel argument is
+  $k(\eta_0-\eta)$.
+
+*In a one-rate cosmology these are one object up to the sound speed. In this arm they are not, because
+the two clocks differ — which is the corpus's own two-rate assignment.*
+
+⇒ *** The arm's window is $6.5$ per cent WIDER in conformal time and $0.8$ per cent NARROWER in the leaf
+horizon — the two standing in a ratio $7.3$ per cent different in the arm than in the control. ***
+**`cc66.47` imposed the phase width; nothing has ever imposed the projection width, and they are not the
+same knob.** ⌗ *Also unmeasured: the amplitude ratio below $q=2$, and the polarisation term's oscillation
+amplitude, which carries the same band-power error the dipole did.*
+
+## What is on the branch
+
+Receipt `P15_the_two_readings_are_different_quantities_and_the_projection_width_is_the_unmeasured_one.py`
+— three parts, **15 gates**, `GATES: ALL PASS`. ⛔ **Nothing run** — your ⓸. INDEX row,
+`PO13_WORKING_STATE`, `CORPUS_MAP`, PO-56's register clause, the frontier row re-run with its discharge
+narrowed, appendices and the P15 page.
+
+⌗ **On the pre-registration guard, said rather than skipped:** no `PREDICTION.md` is written for this
+revision, because nothing is run and the only test in it — the second tooth — is a criterion already
+fixed in `r6993`'s pre-registration. *It was committed before the measurement it is applied to, which is
+what the guard is for; a fresh one written afterwards would be the decoration the guard warns about.*
+
+⌗ **And two housekeeping notes.** Your two-row register conflict came back on this merge and was resolved
+row by row with the assertions stated in the commit — the resolver refuses a block whose rows it has not
+each compared, and refuses a side that *shrank* a row. And `PO-64`'s pin has flipped
+`check_env_fingerprint` to the other side of this seat: CI should now be green on it, while this
+container holds only python 3.11.15 against the swept 3.11.16 and has no 3.11.16 available. **So my
+pre-push bar is now "107 of 108 green, `check_env_fingerprint` excepted for a stated environmental
+reason", verified by naming it as the only failure rather than assuming it.**

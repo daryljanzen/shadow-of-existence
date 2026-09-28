@@ -5292,3 +5292,39 @@ path. *Which quantity the register measured is owed before that candidate is clo
 ⇒ ***The useful form of the empty result: the carrier is not among the things this sector has already
 measured.*** *That is a statement about the list searched, and the list is now written down with a number
 beside each entry, which is what makes the next one cheap.*
+
+## `cc66.51` (`r6997`) — TWO QUANTITIES, NOT A CONTRADICTION; AND THE PROJECTION'S UNMEASURED WIDTH
+
+*Path: **hierarchy** throughout. Banks `r6897_fields`, `r6959_eta_*`, `r6941_fine_*`; receipt
+`P15_the_two_readings_are_different_quantities_and_the_projection_width_is_the_unmeasured_one.py`,
+**15 gates**. ⛔ Nothing RUN — the order's ⓸.*
+
+**⓵ THE SIGN IS NOT THE RANGE, IT IS THE QUANTITY.** The register's reading is reproduced from its own
+bank and estimator at $+2.06$ per cent over its own range, and is still $+0.95$ over the part of
+`cc66.50`'s range it reaches — where `cc66.50`'s reads $-11.58$. They differ in **what is ratioed** (the
+oscillation amplitude of each source field against the integrated band power, which keeps the smooth
+part), **which fields**, and **over what range**. ⛔ **And which one is needed is the register's, which
+makes `cc66.50`'s filter row this seat's own error**: what fills a trough is an oscillating amplitude,
+and so is what the contrast statistic measures.
+
+**⓶ SO THE SECOND TOOTH IS USED.** On the range where the right quantity can be measured the candidate's
+departure runs $-0.0006 \to +0.0166$ and **decelerates**, curvature $-0.0037$ against the target's
+$-0.0029$. ***It passes both teeth where it can be tested, reversing `cc66.50` on this seat's error
+rather than on new data.*** ⚠ The growth statistic is **undefined** there, not large — the departure
+crosses zero, and the arithmetic's $-26$ would have read as a spectacular pass.
+
+⛔ **AND THE FILTER STILL CANNOT CLOSE IT.** The right quantity bottoms out at $q = 2.0$ — stable to a
+tenth of a per cent across four window widths, so sound and simply not reaching — while the target grows
+$3.55$-fold over the full range and only $1.47$-fold over the shared one. ⇒ ***The target's growth is
+concentrated exactly where the only quantity that could carry it cannot be measured.*** What would close
+it is a different estimator below $q=2$, not a longer run of this one.
+
+**⓷ AND THE ENUMERATION OF THE UNMEASURED.** ⛭ A whole class is settled by **structure**: every two-rate
+clock quantity — leaf clock, ruler, Jacobian, visibility, optical depth — is stored against conformal
+time alone, and a function of $\eta$ has the same value at every wavenumber, so it **cannot carry it**,
+no run needed. ⛭⛭⛭ **And the projection holds a width nobody has imposed**: the acoustic phase varies
+across the window by $k\times$ the width in the **leaf** clock — what `cc66.47` acted on — while the
+projection smears by $k\times$ the width in **conformal time**, the Bessel argument being
+$k(\eta_0-\eta)$. One object in a one-rate cosmology; two here. ⇒ ***The arm's window is $6.5$ per cent
+wider in conformal time and $0.8$ per cent narrower in the leaf horizon — a ratio $7.3$ per cent
+different from the control's, and the projection width has never been imposed.***
