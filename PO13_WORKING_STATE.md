@@ -5400,3 +5400,81 @@ what would reach below $q=2$. ⚠ **Its cost is that the held period must be rig
 per cent leaks into $A$ as a slow drift, which is exactly the $q$-dependence being measured. ⇒ *It would
 have to be validated against the window estimator on $[2.6,\,5.4]$, where both work, before anything it
 says below $q=2$ is read.*
+
+## `cc66.53` (`r7001`) — THE BELOW-FLOOR ESTIMATOR REACHES A BAND NOTHING HAS REACHED, AND THE TOOTH THAT WOULD DECIDE CANNOT BE APPLIED
+
+*Path: **hierarchy** throughout. Banks `r6897_fields`, `r6941_fine_*`, `r6959_eta_*`; receipt
+`P15_the_held_period_estimator_reaches_below_the_floor_and_the_tooth_that_would_decide_cannot_be_applied.py`,
+**23 gates**; pre-registration `r7001_directions/PREDICTION.md`, both nulls tabled. ⛔ Nothing SOLVED.*
+
+**⛭⛭ ⓵ THE ESTIMATOR, AND THE FIRST THING IT FOUND IS THAT THE PERIOD IS NOT THE PERIOD.** The acoustic
+period in $q = k r_s/\pi$ is $2$ **by construction**, and it is not $2$ in the fields. Read off the drift
+of the recovered phase and iterated to self-consistency: **monopole $1.9636$, dipole $1.9909$** on the
+control; $1.9585$ and $1.9896$ on the arm. ⇒ ***A two per cent error, and a different one for the two
+fields*** — exactly the failure the order asked to be measured rather than noted. **So the held period is
+measured per field and per arm**, its own uncertainty taken from disjoint sub-ranges: $1.3$ per cent.
+
+**⛔ VALIDATION FIRST, WHICH WAS THE ORDER AND IS THE STANDING GUARD MADE PROCEDURAL.** Against the
+window estimator on the same quantity and the same fields, the **means agree** — $1.4987$ (window at
+`half` $=2$, where it is sound) against $1.4911$ (held at `half` $=0.5$), $0.5$ per cent apart.
+
+⚠ **And the window estimator does not survive its own width while the held one does.** Its ripple runs
+$0.7 \to 11.6$ per cent as it narrows from `half` $=2$ to `half` $=0.5$ — ***the width `cc66.51` read the
+candidate at*** — while the held estimator sits near $2.5$ per cent at **every** width and reaches
+$q = 0.39$, against the window estimator's hard floor of $1.5 + \mathrm{half} \ge 2.00$.
+
+**⛭ AND THE LEAK IS MEASURED, NOT NOTED, AND IT IS HALF A PER CENT.** Perturbing the held period at the
+$1.3$ per cent it is known to moves the candidate's span across the bands by $0.00005$ against a span of
+$0.0097$. ⌗ *The reason is a mechanism: the fit re-fits the **phase** in every window, so a wrong held
+period is absorbed there and costs only a common amplitude factor — which cancels in a ratio of ratios.*
+⇒ ***The estimator can answer the question.***
+
+**⛭⛭ ⓶ IT REACHES $q = 1.90$, AND STOPS AT $q = 1.20$ FOR A MECHANISM.**
+
+| $q$ | 1.20 | 1.90 | 2.60 | 3.30 | 4.00 | 4.70 | 5.40 |
+|---|---|---|---|---|---|---|---|
+| departure | $-0.0003$ | $+0.0048$ | $+0.0049$ | $+0.0051$ | $+0.0090$ | $+0.0124$ | $+0.0144$ |
+| spread over 8 settings | $0.0210$ | $0.0030$ | $0.0050$ | $0.0052$ | $0.0011$ | $0.0021$ | $0.0010$ |
+
+⛔ **Band 1 is still not measurable** — its spread exceeds its value — *because its window straddles the
+first acoustic excursion, where there is no oscillation amplitude to estimate.* **A floor of mechanism,
+not of width**, and the pre-registration's second null.
+
+**⛭ THE TEETH, SIGN FIRST.** On $q = 1.90$–$5.40$ the candidate's departure is **positive in every band**
+as the target's is, and runs $+0.0048 \to +0.0144$: $G = 2.99$ against the target's $1.33$, the same
+direction. ⇒ ***It passes SIGN and it passes GROWTH, on the range this estimator unlocked.***
+
+**⛔⛔ AND THE CURVATURE TOOTH CANNOT BE APPLIED — THE FIRST NULL, AND THE REASON IS EXACT RATHER THAN
+STATISTICAL.** On the full seven-band range the target's curvature is $-0.0033$ as pre-registered at
+`r6993`. **Dropping band 1 alone flips it to $+0.0003$; dropping any other single band leaves it in
+$[-0.0053,\,-0.0028]$.** ⇒ ***The target's deceleration is carried entirely by the one band no estimator
+of the candidate can reach.*** *The filter is out of teeth rather than the candidate out of chances, and
+that is a statement about the filter.*
+
+**⚠⚠ AND `cc66.51`'s CURVATURE PASS DOES NOT SURVIVE — a correction to this seat's own landed result.**
+Read with the window estimator on its own range and its own recipe, the candidate's curvature runs
+$-0.0093$ at `half` $=0.5$, $-0.0005$ at $1.0$, $+0.0012$ at $2.0$. ⛔ **`cc66.51`'s stability check
+certified the MEAN over a sub-range; the curvature was never the quantity that was checked** — the
+"say which quantity" guard biting the seat that wrote it. ⌗ *The mean is reproduced and stands; only the
+curvature read off it does not.*
+
+**⛭⛭⛭ ⓷ THE PREDICTION IS AN INDEPENDENT READING OF THE JACOBIAN, AND IT IS NOT OBSERVABLE.**
+
+- **The comb reads the CUMULATIVE ratio** $r_{s,\rm leaf}/r_{s,\rm stack}$ at last scattering $= 0.5665$:
+  $\pi D_M/r_{s,\rm leaf} = 301.41$ against the banked $l_A = 301.80$, while
+  $\pi D_M/r_{s,\rm stack} = 170.76$ is not close.
+- **The widths read the WINDOW-LOCAL average** $\langle\mathrm{Jac}\rangle = 0.8744$.
+- ⇒ ***A third apart. Both are $1$ on one rate and neither carries a free coefficient, so a construction
+  tuned to the comb must still produce the right LOCAL Jacobian to match the widths.*** **The width ratio
+  is not a restatement of the comb.**
+
+⛔ **But no measurement reaches the ratio.** The **phase** width, which the window's Landau damping reads,
+differs between the arms by $0.84$ per cent; the **conformal** width, which the projection reads, differs
+by $13.5$ — and `cc66.52` bounded the projection's contrast effect at $2$ per cent with its sign
+undetermined. ⇒ ***NO, not observable in its own right*** — said in the order's own terms. ⌗ *The
+independence finding above is named as a separate thing and is not offered as an observability argument;
+where the passage lives is the chat seat's call.*
+
+**⛔ ⓸ NOTHING ELSE.** No new channels. *The polarisation note in `r7001_directions/independent.py` is a
+statement about what this instrument does not carry — it banks polarisation only as its contribution to
+the temperature decomposition, not as an E-mode spectrum — and is not a proposal.*

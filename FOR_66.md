@@ -4029,3 +4029,90 @@ have to re-derive it.*
 
 ⌗ *No re-run was spent: reproducing it on the base is the stronger test, and a deterministic failure
 is not a flake.*
+
+---
+
+# ⛭⛭⛭ cc66.53 — `r7001` FILLED: THE ESTIMATOR IS BUILT AND IT REACHES A BAND NOTHING HAS REACHED; THE CANDIDATE PASSES EVERY TOOTH THAT CAN BE APPLIED; AND THE TOOTH THAT WOULD DECIDE **CANNOT** BE APPLIED, BECAUSE THE TARGET'S OWN DECELERATION SITS ENTIRELY IN THE ONE BAND NO ESTIMATOR CAN REACH
+
+**⚠ AND ONE THING BEFORE ANY OF IT, BECAUSE IT CORRECTS SOMETHING YOU HAVE ALREADY LANDED.** *`cc66.51`'s
+curvature pass does not survive.* Read with the window estimator on its own range and its own recipe, the
+candidate's curvature runs **$-0.0093$ at `half` $=0.5$** — *the width it was read at* — through
+$-0.0005$ at $1.0$ to **$+0.0012$ at `half` $=2$**, where that estimator is sound. ⛔ **The stability
+check I ran at `cc66.51` certified the MEAN over a sub-range. The curvature was never the quantity that
+was checked.** ⇒ *My own "say which quantity" guard, biting the seat that wrote it. The mean is
+reproduced and stands; only the curvature read off it does not.*
+
+**⛭⛭ ⓵ AND THE FIRST THING THE NEW ESTIMATOR FOUND IS THAT THE PERIOD IS NOT THE PERIOD.** *The acoustic
+period in $q$ is $2$ **by construction**, and it is not $2$ in the fields.* Read off the drift of the
+recovered phase and iterated to self-consistency: **monopole $1.9636$, dipole $1.9909$** on the control.
+⇒ ***A two per cent error, and a different one for the two fields.*** **So the held period is measured
+per field and per arm**, with its own uncertainty from disjoint sub-ranges: $1.3$ per cent. ⌗ *Had it
+been held at $2$ the estimator would have been wrong in exactly the way your guard names.*
+
+**⛔ VALIDATION FIRST, WHICH WAS YOUR ORDERING AND IS ALSO THE GUARD.** The means agree — $1.4987$
+(window at the width where it is sound) against $1.4911$ — and ⚠ **the window estimator does not survive
+its own width while the held one does**: its ripple runs $0.7 \to 11.6$ per cent as it narrows, while the
+held estimator sits near $2.5$ per cent at **every** width and reaches $q = 0.39$ against the window
+estimator's hard floor of $2.00$.
+
+**⛭ AND THE COST YOU TOLD ME TO MEASURE RATHER THAN NOTE IS HALF A PER CENT.** Perturbing the held period
+at the $1.3$ per cent it is known to moves the candidate's span by $0.00005$ against a span of $0.0097$.
+⌗ *And the reason is a mechanism, not a number: the fit re-fits the **phase** in every window, so a wrong
+held period is absorbed there and costs only a common amplitude factor — which cancels in a ratio of
+ratios.* ⇒ ***The estimator can answer the question.***
+
+**⛭⛭ ⓶ IT REACHES $q = 1.90$ — AND STOPS AT $q = 1.20$ FOR A MECHANISM RATHER THAN A WIDTH.** Band 2 is
+now measured, stable to $0.003$ across eight estimator settings, where nothing has reached below
+$q = 2.0$. ⛔ **Band 1 is still not measurable**: spread $0.021$ against a value $0.0003$, *because its
+window straddles the first acoustic excursion, where there is no oscillation amplitude to estimate at
+all.* **That is the pre-registration's second null and it is a property of the fields.**
+
+**⛭ SIGN FIRST, GROWTH AFTER — YOUR GUARD, APPLIED HERE FOR THE FIRST TIME.** On $q = 1.90$–$5.40$ the
+candidate's departure is **positive in every band**, as the target's is, running $+0.0048 \to +0.0144$:
+$G = 2.99$ against the target's $1.33$, the same direction. ⇒ ***IT PASSES SIGN AND IT PASSES GROWTH, ON
+THE RANGE THIS ESTIMATOR UNLOCKED.***
+
+**⛔⛔ AND THEN THE TOOTH THAT WOULD DECIDE CANNOT BE APPLIED, AND THE REASON IS EXACT RATHER THAN
+STATISTICAL.** On the full seven-band range the target's curvature is $-0.0033$, as pre-registered at
+`r6993`. ***Dropping band 1 alone flips it to $+0.0003$; dropping any other single band leaves it in
+$[-0.0053,\,-0.0028]$.*** ⇒ *** THE TARGET'S DECELERATION IS CARRIED ENTIRELY BY THE ONE BAND NO
+ESTIMATOR OF THE CANDIDATE CAN REACH. *** ⌗ **The filter is out of teeth rather than the candidate out of
+chances** — which is a statement about the filter, and it is the pre-registration's first null. *The
+candidate's own curvature is stable there ($+0.0007$, drop-one $[+0.0004, +0.0014]$); what is missing is
+the target's sign, not the candidate's number.*
+
+**⛭⛭⛭ ⓷ AND THE PREDICTION IS AN INDEPENDENT READING OF `Jac` — BUT IT IS NOT OBSERVABLE, AND I SAY SO
+IN YOUR TERMS.**
+
+- **The comb reads the CUMULATIVE ratio** $r_{s,\rm leaf}/r_{s,\rm stack}$ at last scattering, $0.5665$:
+  $\pi D_M/r_{s,\rm leaf} = 301.41$ against the banked $l_A = 301.80$, while $\pi D_M/r_{s,\rm stack} =
+  170.76$ is not close — *that is what "the comb rides the leaf accumulation" is, as a number*.
+- **The widths read the WINDOW-LOCAL average**, $\langle\mathrm{Jac}\rangle = 0.8744$.
+- ⇒ ***A third apart. Both are $1$ on one rate and neither carries a free coefficient*** — so a
+  construction tuned to the comb must **still** produce the right local Jacobian to match the widths.
+  **The width ratio is not a restatement of the comb.**
+
+⛔ **And no measurement reaches the ratio.** The phase width — what the Landau damping reads — differs
+between the arms by $0.84$ per cent; the conformal width — what the projection reads — by $13.5$, and
+`cc66.52` bounded its contrast effect at $2$ with its sign undetermined. ⇒ ***NO, not observable in its
+own right.*** ⌗ **So by your own instruction the passage stays where it is.** *I note separately, and
+mark it as not an observability argument, that the independence above was not in hand when that passage
+was written — the prediction's CONTENT does not belong to the channel it was found while chasing. Whether
+that is a reason to move it is yours and I am not arguing it.*
+
+**⛔ ⓸ NOTHING ELSE.** No new channels. *The polarisation remark in the directions file is a statement
+about what this instrument does not carry — it banks polarisation only as its contribution to the
+temperature decomposition, not as an E-mode spectrum — and is marked as not a proposal.*
+
+## What is on the branch
+
+Receipt
+`P15_the_held_period_estimator_reaches_below_the_floor_and_the_tooth_that_would_decide_cannot_be_applied.py`
+— **23 gates**, `GATES: ALL PASS`, under $4$ s. Pre-registration `r7001_directions/PREDICTION.md` with
+**both** nulls tabled and with the date of each of its own parts stated. Working scripts
+`r7001_directions/held_period.py` (⓵⓶) and `independent.py` (⓷). INDEX row, `PO13_WORKING_STATE`,
+appendices regenerated.
+
+⛔ **No corpus edits** — your ⛔. Nothing on the quantum sector or the reproducibility rows. ⌗ *And
+`cc66.51`'s curvature sentence is the one thing in `P15` that this revision contradicts; the correction
+is routed rather than applied.*
