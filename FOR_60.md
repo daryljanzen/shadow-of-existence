@@ -2054,3 +2054,68 @@ since it scales with the coefficient.*
 **⛔ WHAT IS NOT ASKED.** *No re-derivation of anything already at the corrected frequency unless ⓵ moves it.
 The ultraviolet definition is still not a deliverable; it is the row. Nothing on `prop:flat`, `PO-31` or
 `PO-15`. **And no corpus edits** — route it and I will place it.
+
+---
+
+## ⛭ **r6979 → 60. `r6976` GATED, BOTH HALVES. `PO-63` STRIKES WITH NO REMAINDER, WHICH IS RARE — AND THE CRITERION NOW NEEDS ONE SENTENCE PROVED RATHER THAN AN INSTRUMENT FOUND.**
+
+**⛭⛭⛭ THE ANCHOR IS BETTER THAN THE ORDER ASKED FOR IN THREE WAYS.** *It exhibits the harmonic and its
+non-constancy by differentiating the components rather than asserting them; the level is $n=4$ rather than the
+$n=3$ I named, **with the reason stated** — that is where the transverse-traceless content of such a field
+sits — so it is a longer lever for the same purpose; and the floor is **recomputed by the same pipeline in the
+same arithmetic** rather than quoted, which is what makes it two levels on one machine instead of one level
+against a memory.* ⌗ *And the separating order was named before the count: the two candidates differ by exactly
+two and every step is exact, so the test's own resolution is zero.*
+
+**⛭⛭ AND THE TWO-LEVEL TWO-SPLIT CROSS-CHECK IS THE PART I DID NOT THINK TO ASK FOR.** *The split discrepancy
+is the same constant at both levels while the level difference is the same in both splits.* ⇒ **So the level
+dependence is a property of the object and the constant offset is a property of the presentation, measured
+rather than argued — and the constant is exactly the one `r6974` pinned by carrying both splits with their
+background terms.** *That is the eighth face closing on itself, and it is why the row strikes with nothing left
+over.*
+
+**⌗ AND THE EMPTY LIST STATED IS WORTH MORE THAN THE EMPTY LIST ASSUMED**, *which is why I asked for it. Every
+downstream figure is a functional of the general formula the anchor confirms; the degeneracy is a count and
+$\zeta(0)$ is a functional of it; forty-two harmonics at that very level. **A confirmation adds no number, and
+what it removes is the sentence the row was opened for.***
+
+### ⛭⛭ **AND THE OTHER HALF IS THE BEST THING THIS ROW HAS PRODUCED SINCE THE MEASURE ARGUMENT**
+
+*Two instruments failed and the reduction explains both with one sentence: each needed the realisation carried
+along the path as a domain in $L^{2}$, and `r6972` showed no realisation admits one. **Naming the class by
+what the failures had in common is a different kind of move from trying a third thing**, and it is the one that
+was available all along.* ⇒ *The criterion is now one scalar equation in one real variable, the realisation held
+fixed as a finite-dimensional datum while the domain moves — and the hypothesis drops from something false to
+something that might be true.* ⌗ *Landed in `sec:lock` with the unproved sentence in its own place, so the
+class-naming cannot be read as a closure.*
+
+### ⚑⚑ **NEW ORDER — THE ONE SENTENCE, AND NOTHING ELSE UNTIL IT IS SETTLED**
+
+* ⓵ ***Settle whether the Weyl function is real-analytic in the invariant and not constant.*** *That is the
+  whole of it. ⌗ *Two things I would want said either way, because they are where this could go wrong
+  quietly:* **⓵ᵃ** *the Weyl function is defined relative to a boundary triple, and a triple is a choice —
+  say whether the analyticity statement is independent of that choice or holds for a triple you construct, and
+  if the latter, construct it.* **⓵ᵇ** *"not constant" is the half that could fail for a boundary reason
+  rather than a deep one; if it is constant on a sub-family, say which and why.* ⛔ *And if either half is
+  false, that is the result — report it as one rather than reaching for a fourth instrument.*
+* ⓶ ***If it is true, say exactly what closes and what does not.*** *My reading, offered to be corrected: a
+  real-analytic non-constant scalar has isolated zeros, so the set of scale factors is discrete and there is
+  no eigenvector — which would close the criterion at both deficiency counts at once. **Say whether that is
+  the whole inference or whether something else is needed between the zero set and the conclusion.***
+* ⓷ ***And one thing outside it, cheap and worth banking:*** *you now have an exact zero-mode integrator
+  validated on three known integrals. **Say in one line whether it generalises** — whether any other
+  computation in this sector is doing triple integrals it could do exactly — since a tool that took one
+  receipt from 408 s to 184 s is worth knowing the reach of.
+
+### ⛔ **THE GUARDS**
+
+* ⚠ ***The rule you carried forward is adopted here too:*** *verify by the corrected state, never by the
+  defect.*
+* ⚠ ***The eighth face, standing, and it has now closed on itself once.***
+* ⚠ ***The seventh face, standing.*** *Name the separating order before any count.*
+* ⚠ ***The fifth face on your own results, standing.***
+* ⚠ ***And do not extend either failed instrument.*** *Standing, and you have kept it three times.*
+
+**⛔ WHAT IS NOT ASKED.** *No fourth instrument. No re-derivation of anything the anchor confirms. The
+ultraviolet definition is still not a deliverable; it is the row. **And no corpus edits** — route it and I will
+place it.
