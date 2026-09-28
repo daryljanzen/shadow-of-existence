@@ -42,6 +42,7 @@ also the dependency index that scopes the next month's pushes.
 
 Usage:
     python3 scripts/sweep_runner_reads.py --out DIR [--jobs 4] [--root R]   # trace every receipt
+    python3 scripts/sweep_runner_reads.py --out DIR --from LIST             # trace only the listed receipts
     python3 scripts/sweep_runner_reads.py --report DIR                       # summarise a trace
     python3 scripts/sweep_runner_reads.py --seed                             # both-ways seeding
     python3 scripts/sweep_runner_reads.py --trace-one LOG FILE               # internal: one receipt
@@ -53,6 +54,7 @@ import shutil
 import subprocess
 import sys
 import tempfile
+import time
 
 HERE = os.path.abspath(__file__)
 _ONE_THREAD = {'OMP_NUM_THREADS': '1', 'OPENBLAS_NUM_THREADS': '1', 'MKL_NUM_THREADS': '1',
@@ -69,12 +71,17 @@ def trace_one(log, target):
     import runpy
 
     events = []
+    inside = [0]           # >0 while a glob wrapper runs: its own internal scandir is not a directory read
     reads = set()          # every path opened and every glob pattern, absolute -- the dependency index
     real_open, real_popen = builtins.open, pathlib.Path.open
 
-    def read(p):
+    def read(p, pat=False):
+        # ⛔ r6977+70.1: a glob was recorded as `abspath('glob:' + abs)` -- which is RELATIVE, so it came
+        #   out as `<family dir>/glob:<abs>` and matched no pattern in the index.  Every glob in the
+        #   r6975 trace (107 receipts) was invisible to `receipt_scope`.  Its own --seed built the index
+        #   from a hand-written JSON and never went through this line; `--seed` here now does.
         if len(reads) < 5000:
-            reads.add(os.path.abspath(os.fspath(p)))
+            reads.add(('glob:' if pat else '') + os.path.abspath(os.fspath(p)))
 
     def note(kind, arg, n=None, ok=None):
         if len(events) < 400:
@@ -97,8 +104,12 @@ def trace_one(log, target):
     pg, prg = pathlib.Path.glob, pathlib.Path.rglob
 
     def _globw(pat, *a, **k):
-        read('glob:' + os.path.abspath(os.fspath(pat)))
-        r = rg(pat, *a, **k)
+        read(pat, pat=True)
+        inside[0] += 1
+        try:
+            r = rg(pat, *a, **k)
+        finally:
+            inside[0] -= 1
         if not r:
             note('glob_empty', pat, 0)
         if not os.path.isabs(os.fspath(pat)):
@@ -106,8 +117,12 @@ def trace_one(log, target):
         return r
 
     def _iglobw(pat, *a, **k):
-        read('glob:' + os.path.abspath(os.fspath(pat)))
-        r = list(rig(pat, *a, **k))
+        read(pat, pat=True)
+        inside[0] += 1
+        try:
+            r = list(rig(pat, *a, **k))
+        finally:
+            inside[0] -= 1
         if not r:
             note('glob_empty', pat, 0)
         if not os.path.isabs(os.fspath(pat)):
@@ -115,13 +130,20 @@ def trace_one(log, target):
         return iter(r)
 
     def _ldw(p='.'):
+        if not inside[0] and isinstance(p, (str, os.PathLike)) and isinstance(os.fspath(p), str):
+            read(os.path.join(os.fspath(p), '*'), pat=True)
         r = rld(p)
         if not r:
             note('listdir_empty', p, 0)
         return r
 
     def _pgw(self, pat, *a, **k):
-        r = list(pg(self, pat, *a, **k))
+        read(os.path.join(os.fspath(self), pat), pat=True)
+        inside[0] += 1
+        try:
+            r = list(pg(self, pat, *a, **k))
+        finally:
+            inside[0] -= 1
         if not r:
             note('glob_empty', f'{self}/{pat}', 0)
         if not self.is_absolute():
@@ -129,18 +151,33 @@ def trace_one(log, target):
         return iter(r)
 
     def _prgw(self, pat, *a, **k):
-        r = list(prg(self, pat, *a, **k))
+        read(os.path.join(os.fspath(self), '**', pat), pat=True)
+        inside[0] += 1
+        try:
+            r = list(prg(self, pat, *a, **k))
+        finally:
+            inside[0] -= 1
         if not r:
             note('glob_empty', f'{self}/**/{pat}', 0)
         if not self.is_absolute():
             note('glob_rel', f'{self}/**/{pat}', len(r))
         return iter(r)
 
+    rsd = os.scandir
+
+    def _sdw(p='.'):
+        # os.walk reaches the filesystem through os.scandir, so this also records every walk
+        if not inside[0] and isinstance(p, (str, os.PathLike)) and isinstance(os.fspath(p), str):
+            read(os.path.join(os.fspath(p), '*'), pat=True)
+        return rsd(p)
+
     builtins.open = _io.open = _open
+    os.scandir = _sdw
     pathlib.Path.open = _popen
     _glob.glob, _glob.iglob, os.listdir = _globw, _iglobw, _ldw
     pathlib.Path.glob, pathlib.Path.rglob = _pgw, _prgw
     rc = 0
+    t0 = time.time()
     try:
         sys.argv = [target]
         sys.path.insert(0, os.path.dirname(os.path.abspath(target)))   # as `python3 FILE` does
@@ -151,9 +188,16 @@ def trace_one(log, target):
         rc = 1
         note('exception', f'{type(e).__name__}: {e}')
     finally:
+        # ⛭ r6977+70.1: every module the receipt IMPORTED is a read too.  Imports go through the import
+        #   system and never touch `open`, so a shared helper -- the code a tolerance defect is born in --
+        #   was missing from the read set of every receipt that imports it rather than opening it.
+        for _m in list(sys.modules.values()):
+            _f = getattr(_m, '__file__', None)
+            if isinstance(_f, str):
+                reads.add(os.path.abspath(_f))
         with real_open(log, 'w') as fh:
             json.dump({'receipt': os.path.abspath(target), 'rc': rc, 'events': events,
-                       'reads': sorted(reads)}, fh)
+                       'reads': sorted(reads), 'dt': round(time.time() - t0, 2)}, fh)
         sys.stdout.flush()
     os._exit(rc)
 
@@ -176,7 +220,7 @@ def _run(root, rel, budget, out):
                        'timeout': True}, fh)
 
 
-def sweep(root, out, jobs):
+def sweep(root, out, jobs, only=None):
     import importlib.util
     from concurrent.futures import ThreadPoolExecutor
     spec = importlib.util.spec_from_file_location('rar', os.path.join(root, 'scripts',
@@ -186,6 +230,9 @@ def sweep(root, out, jobs):
     spec.loader.exec_module(m)
     sys.argv = argv
     files, _ = m.registered()
+    if only is not None:                  # a scoped run: the receipts `receipt_scope` named, nothing else
+        files = [f for f in files if os.path.relpath(f, root) in only]
+    out = os.path.abspath(out)            # the child runs from the receipt's directory: a relative log lands there
     os.makedirs(out, exist_ok=True)
     with ThreadPoolExecutor(max_workers=jobs) as ex:
         list(ex.map(lambda f: _run(root, os.path.relpath(f, root), 2 * max(900, m.budget(f, 600)), out),
@@ -256,6 +303,24 @@ _SEEDS = {
     'S4_legit_absence_asserted.py':
         "import glob, os\nROOT = os.path.abspath(os.path.join(os.path.dirname(__file__), '..', '..'))\n"
         "assert glob.glob(os.path.join(ROOT, 'corpus', 'withdrawn_*.tex')) == []\n",
+    # LEGITIMATE, and here for the READ SET (r6977+70.1): the three directory reads that bypass glob.glob
+    'S5_legit_path_glob_listdir_walk.py':
+        "import os, pathlib\nROOT = pathlib.Path(__file__).resolve().parents[2]\n"
+        "assert list((ROOT / 'corpus').glob('seed_*.tex'))\n"
+        "assert os.listdir(ROOT / 'corpus')\nassert list(os.walk(ROOT / 'corpus'))\n",
+    # LEGITIMATE, and here for the READ SET: code reached by IMPORT, not by open
+    'S6_legit_imports_a_helper.py':
+        "import sys, os\nsys.path.insert(0, os.path.join(os.path.dirname(os.path.abspath(__file__)), '..', '..', 'lib'))\n"
+        "import seed_helper\nassert seed_helper.X == 1\n",
+}
+# ⛭ r6977+70.1: what each seed's READ SET must contain, relative to the seed root -- because the read set
+#   is what `receipt_scope` indexes, and a trace that records a read wrongly scopes nothing.  The r6975 trace
+#   recorded every glob under a mangled path and no seed looked at the read set, so nothing noticed.
+_READS = {
+    'S3_legit_anchored_read.py': ['corpus/seed_paper.tex'],
+    'S4_legit_absence_asserted.py': ['glob:corpus/withdrawn_*.tex'],
+    'S5_legit_path_glob_listdir_walk.py': ['glob:corpus/seed_*.tex', 'glob:corpus/*'],
+    'S6_legit_imports_a_helper.py': ['lib/seed_helper.py'],
 }
 
 
@@ -265,16 +330,21 @@ def seed():
         os.makedirs(os.path.join(tmp, 'corpus'))
         os.makedirs(os.path.join(tmp, 'receipts', 'SEED'))
         open(os.path.join(tmp, 'corpus', 'seed_paper.tex'), 'w').write('\\section{Seed}\n')
+        os.makedirs(os.path.join(tmp, 'lib'))
+        open(os.path.join(tmp, 'lib', 'seed_helper.py'), 'w').write('X = 1\n')
         out = os.path.join(tmp, 'trace')
         os.makedirs(out)
         for name, body in _SEEDS.items():
             open(os.path.join(tmp, 'receipts', 'SEED', name), 'w').write(body)
             _run(tmp, os.path.join('receipts', 'SEED', name), 60, out)
-        got = {}
+        got, missing = {}, {}
         for name in _SEEDS:
             d = json.load(open(os.path.join(out, f'receipts_SEED_{name}.json')))
             f, t = classify(d, tmp)
             got[name] = ('FLAGGED' if f else ('TRIAGE' if t else 'clean'), d['rc'])
+            rel = {('glob:' if r.startswith('glob:') else '') + os.path.relpath(r[5:] if r.startswith('glob:') else r, tmp)
+                   for r in d.get('reads', [])}
+            missing[name] = [r for r in _READS.get(name, []) if r not in rel]
     finally:
         shutil.rmtree(tmp, ignore_errors=True)
     for k, v in got.items():
@@ -282,10 +352,15 @@ def seed():
     planted = got['S1_planted_relative_read.py'][0] == 'FLAGGED' \
         and got['S2_planted_green_on_an_empty_glob.py'] == ('FLAGGED', 0)
     legit = got['S3_legit_anchored_read.py'] == ('clean', 0) \
-        and got['S4_legit_absence_asserted.py'] == ('TRIAGE', 0)
+        and got['S4_legit_absence_asserted.py'] == ('TRIAGE', 0) \
+        and got['S5_legit_path_glob_listdir_walk.py'] == ('clean', 0) \
+        and got['S6_legit_imports_a_helper.py'] == ('clean', 0)
+    recorded = not any(missing.values())
     print(f'  planted instances flagged (S2 green, as the sharp form is): {planted}')
     print(f'  legitimate reads not flagged (S4 reaches triage only)       : {legit}')
-    return 0 if planted and legit else 1
+    print(f'  every read and glob in the READ SET, at its real path       : {recorded}'
+          + ('' if recorded else f'  -- missing {missing}'))
+    return 0 if planted and legit and recorded else 1
 
 
 def main():
@@ -296,13 +371,17 @@ def main():
     ap.add_argument('--out')
     ap.add_argument('--report')
     ap.add_argument('--jobs', type=int, default=4)
+    ap.add_argument('--from', dest='frm', help='trace only the receipts listed in this file, one per line')
     ap.add_argument('--seed', action='store_true')
     a = ap.parse_args()
     if a.seed:
         print('\n  sweep_runner_reads --seed: does it catch a planted instance AND let a legitimate one through?\n')
         return seed()
     if a.out:
-        n = sweep(os.path.abspath(a.root), a.out, a.jobs)
+        only = None
+        if a.frm:
+            only = {l.strip() for l in open(a.frm) if l.strip()}
+        n = sweep(os.path.abspath(a.root), a.out, a.jobs, only)
         print(f'  traced {n} registered receipt(s) into {a.out}')
         return report(a.out, os.path.abspath(a.root))
     if a.report:
