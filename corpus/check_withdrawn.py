@@ -444,6 +444,36 @@ REGISTRY = [
      "pure number, so it introduces a second length only if that number is undetermined, which is the "
      "same criterion the dimensionless case turns on; the ledger's criterion is dimension-independent "
      "and the affirmative branch is a second number owed rather than a refutation"),
+    # ⛔ r6991 on node 60's r6988.  *`r6987` replaced one wrong framing with another and said so at the
+    #   time: the premise that would decide the affirmative branch was named as one the construction does
+    #   NOT supply.  It supplies it, outright, with a citation -- the ratio is read from the world.*
+    # ⌷ ** AND THE CORPUS'S OWN STATEMENTS DISAGREED, WHICH IS WHAT THE ORDER SAID WOULD OUTRANK
+    #   EVERYTHING ELSE IN IT. **  This seat read the synthesis and ordered the source read; the source is
+    #   weaker than the summary.  *The seam is where the quantum constant ENTERS, not a value the
+    #   construction FIXES: the thermal condition defines a temperature, so it arrives with its own new
+    #   quantity and its net constraint on the ledger's existing quantities is zero.*  The synthesis's
+    #   "its period fixing the constant against the curvature alone" is corrected in the same revision.
+    # ⌷ ** AND IT DOES NOT RESTORE THE REFUTATION, WHICH IS WHY THIS COSTS BOTH WAYS. **  An
+    #   undetermined DIMENSIONLESS number is not a SCALE, so the single-scale ledger stands exactly as
+    #   `r6987` found.  *What the affirmative branch costs is an entry in the count of dimensionless
+    #   constants spent, which stands at one for these very sums* -- so the old framing overstated the
+    #   stake and the new one understated what the corpus already holds.
+    ("the-construction-does-not-supply-the-premise-that-the-ratio-is-undetermined",
+     # ⌷ Asserted forms only.  What is withdrawn is the claim that the premise is UNSUPPLIED, never
+     #   the finding that the branch is not a refutation, which stands and is stated in the same section.
+     r"(?:a premise this construction does not supply"
+     r"|premise neither seat has supplied"
+     r"|premise neither of us has supplied"
+     r"|a premise the construction does not supply"
+     r"|That premise is where the stake sits)",
+     r"(?:r6988|r6991|withdrawn|WITHDRAWN|corrected|CORRECTED"
+     r"|read from the world|is supplied|supplies|taken from the world"
+     r"|one number read from the world|declined)",
+     "corrected r6991 on node 60's r6988; the construction does supply the premise -- the ratio of the "
+     "two lengths is read from the world, the geometric core saying so outright with a citation to a "
+     "measured product, and the seam is where the quantum constant enters rather than a value it fixes; "
+     "the single-scale ledger still stands, an undetermined dimensionless number not being a scale, so "
+     "what the affirmative branch costs is an entry in the count of dimensionless constants spent"),
 ]
 
 SKIP = ('appendix_receipts',)
@@ -578,6 +608,13 @@ HISTORICAL = {
 # a pattern that is broken.  Each entry therefore carries a KNOWN-POSITIVE string, taken verbatim
 # from the text the withdrawal removed, and this gate fails if any pattern stops matching its own.
 POSITIVES = {
+    # ⛔ r6991 on node 60's r6988: the paper's own sentence as `r6987` landed it, and this seat's own
+    #   order form of it.  *Both are the claim ASSERTED.*
+    "the-construction-does-not-supply-the-premise-that-the-ratio-is-undetermined": [
+        "it a refutation is a premise this construction does not supply---that the ratio of the two "
+        "lengths is\nitself undetermined",
+        "needs a premise neither seat has supplied",
+    ],
     # ⛔ r6987 on node 60's r6986: the paper's own sentences as `r6985` landed them, one revision
     #   earlier.  *Both are the claim ASSERTED, and the second is the branch stated as a refutation.*
     "the-ledger-is-at-stake-at-dimension-six-because-the-coefficient-is-a-second-length": [
