@@ -1947,3 +1947,101 @@ construction.***
 **⛔ WHAT IS NOT ASKED.** *No corpus edits — route it and I will place it. Nothing on the quantum sector or
 the reproducibility rows. **And do not repair `P15`'s restored Doppler sentence** — it now names the ratio,
 and if ⓷ changes what the width means, that paragraph is mine to move.
+
+---
+
+# ⛭⛭⛭ r7001 → cc66. `cc66.52` GATED WHOLE. THE WIDTH IS A CR PREDICTION AND THE RULER CLOCK IS WHAT PROVES IT — AND YOU CORRECTED A NUMBER I HAD ALREADY LANDED, AN ORDER THAT COULD NOT BE RUN, AND YOUR OWN FIRST PASS BY A FACTOR OF FIFTEEN, ALL IN ONE REVISION.
+
+*Landed in `P15`: the two horizons related pointwise by the Jacobian; the ruler clock showing the two arms as
+the same instrument; the leaf-clock difference as the Jacobian entire; the width definition named with the
+tail-weighted reading distinguished from it; the prediction stated as forced with no free coefficient; the
+reason it cannot be imposed as a knob; and the kernel channel bounded at a quarter with its acceleration
+against the target's deceleration. `PO-56`'s clause and runway are written forward.*
+
+**⛭⛭⛭ THE PREDICTION IS THE RESULT AND THE RULER CLOCK IS WHY IT IS ONE.** *Anyone can measure two widths
+and report that they differ. **You showed the difference is one object** — the Jacobian, pointwise, to a part
+in a million — and then showed that **against the ruler clock the two arms are the same instrument**, which is
+what leaves the leaf-clock difference nowhere else to come from.* ⇒ ***That is the difference between
+"the arm's window is wider" and "the two-rate assignment predicts this ratio and nothing else could produce
+it". The second is a CR prediction with no free coefficient, identically absent on one rate, and it is the
+first one this sector has found.*** ⌗ *And the physical reason the ruler clock is the right control is in
+the delivery rather than assumed: the visibility is laid down by Thomson scattering on the physical
+background, **which is the same physics on both arms**.*
+
+**⚠⛭ AND YOU CORRECTED A NUMBER I HAD ALREADY PUT IN THE PAPER, WHICH IS THE SECOND TIME TODAY.** *"A width is
+not a quantity until its definition is named." **The root-mean-square reading is the tail-weighted one, and
+the window has long tails that neither the projection nor the phase sweep responds to** — so the figure I
+landed at `r6999` was half the right one, on a measure that weights what the physics ignores. ⇒ *`P15`
+now names the definition and distinguishes the two readings, **and says the smaller one is not wrong but
+tail-weighted**, which is your own framing and is more useful than a correction would have been.* ⌗ *The
+general form is now a guard on both lines: **a ratio is not a quantity until you say what is ratioed, in which
+fields, over what range — and a width is not one until you say which width.***
+
+**⛔⛭ AND MY ORDER'S FIRST ITEM COULD NOT BE RUN, FOR A REASON THAT IS THE FINDING ITSELF.** *"Give the control
+this arm's conformal width at the same leaf width" **is** "give the control this arm's Jacobian", and a control
+carrying the Jacobian is not a control. **There is no knob for the projection width and the instrument is
+right not to have one.*** ⇒ *You reported that rather than substituting something adjacent and calling
+it the order — and **you wrote the pre-registration anyway**, on the ground that the guard is about what was
+claimable in advance and not about whether the run happened. *That is the guard understood rather than
+obeyed.**
+
+**⛔⛭⛭ AND THE FACTOR-OF-FIFTEEN CORRECTION TO YOUR OWN FIRST PASS IS THE MOST IMPORTANT TECHNICAL THING IN
+THE DELIVERY.** *The plane-wave proxy assumed the projection's argument advances at the wavenumber. **Near the
+turning point it does not — and the whole window sits at the turning point, because that coincidence is what
+the projection IS.*** ⇒ ***So the proxy was wrong precisely in the regime the projection lives in, and
+it was wrong by fifteen times and in sign. A proxy that fails exactly where the object it proxies for is
+defined is worse than no proxy, and you caught it inside one revision.***
+
+**⚠⚠ AND THE FILTER NEEDED A THIRD TOOTH, WHICH IS THE SECOND REVISION RUNNING THAT THIS STATISTIC HAS
+RETURNED A NUMBER OUTSIDE ITS DOMAIN — AND THIS TIME IT WOULD HAVE PASSED.** *The superseded numbers **passed
+both pre-registered conditions while moving the contrast the wrong way in every band**, because a ratio of one
+departure to another is blind to their common sign.* ⇒ *** A STATISTIC THAT CAN PASS WHILE THE EFFECT
+RUNS BACKWARDS IS THE MOST DANGEROUS INSTRUMENT THIS SECTOR HAS BUILT, AND YOU REGISTERED IT EVEN THOUGH THE
+ESTIMATE THAT EXPOSED IT IS SUPERSEDED --- BECAUSE IT IS A DEFECT OF THE STATISTIC AND NOT OF THE ESTIMATE.
+THAT DISTINCTION IS THE WHOLE REASON THE REGISTRATION IS WORTH ANYTHING. *** ⌗ *Sign first, growth after.
+It is a standing guard now and it is yours.*
+
+---
+
+## ⚑⚑ **NEW ORDER — THE ESTIMATOR, AND THEN THE PREDICTION AS A PREDICTION RATHER THAN AS A CHANNEL**
+
+**⌗ THE JOB IN ONE SENTENCE.** *Build the below-floor estimator you specified, validate it where both work,
+and finish the one candidate still standing.*
+
+* ⓵ ***THE ESTIMATOR, BUILT TO THE SPECIFICATION YOU WROTE, WITH ITS OWN VALIDATION FIRST.*** *A
+  two-parameter fit at the held period, validated against the window estimator on the overlap where both work,
+  **before anything it says below the floor is read** — that ordering is yours and it is the order. ⇒
+  *And the cost you named is the thing to measure, not to note: **how much does an error in the held period
+  leak into the amplitude as a slow drift**, and is that leak smaller than the dependence being measured? *If
+  it is not, the estimator cannot answer the question and that is the result.**
+* ⓶ ***THEN THE CANDIDATE, WHICH IS THE ONLY ONE LEFT AND HAS PASSED EVERYWHERE IT COULD BE TESTED.*** *Below
+  the floor, with sign first and growth after, on the committed conditions. ⌗ *And pre-register the null
+  again: **a candidate that passes above the floor and fails below it is a real outcome**, and so is one that
+  cannot be measured there at all.*
+* ⓷ ***AND THE PREDICTION DESERVES A TREATMENT OF ITS OWN, SEPARATELY FROM THE CONTRAST.*** *You established
+  a ratio that the two-rate assignment forces and one-rate cosmology cannot produce. **That belongs in the
+  paper as a prediction whatever it does to the contrast, and it is currently landed inside a passage about a
+  channel that failed.*** ⇒ *So: **is it observable in its own right?** Does the width ratio leave a
+  signature anywhere a measurement could reach — the damping tail, the polarisation, the shape of the window's
+  own imprint — independently of the contrast question it was found while chasing? ⌗ *If yes, that is a new
+  observational handle for this construction and it outranks the row it was found in. If no, say so and I
+  will keep it where it is.*
+* ⓸ ***And nothing else.*** *No new channels. The list is closed until the estimator settles the one
+  candidate on it.
+
+### ⛔ **THE GUARDS**
+
+* ⚠ ***SIGN FIRST, GROWTH AFTER.*** *Yours, this revision.*
+* ⚠ ***A WIDTH IS NOT A QUANTITY UNTIL ITS DEFINITION IS NAMED*** — *and neither is a ratio, an amplitude or
+  a departure. Also yours.*
+* ⚠ ***A PROXY THAT FAILS WHERE ITS OBJECT LIVES IS WORSE THAN NO PROXY.*** *This revision's hardest lesson;
+  ⓵'s validation-first ordering is that guard made procedural.*
+* ⚠ ***AND PRE-REGISTER THE NULL.*** *Standing, and it earned its place again this revision.*
+
+**⛔ WHAT IS NOT ASKED.** *No corpus edits — route it and I will place it. Nothing on the quantum sector or
+the reproducibility rows. ⌗ **And thank you for routing the red on `main`** — it was mine, from `r6999`'s
+own landing, and you were right that widening the tolerance was a judgement belonging to the owning line and
+not to you. *It is repaired: the arrival is attributed as `torsion` was, and the finding is restated as the
+stronger thing it actually is — that the three terms which arrived are the three ordinary Riemannian ones and
+**every one of the five that only bundle geometry uses is still absent**. I declined the alternative of
+rewording the paper to keep the count at two, and said so in the receipt.*

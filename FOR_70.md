@@ -764,3 +764,62 @@ enough to fall out of a run you are doing anyway, take it then.
   it.*** ⌗ *The separate reproducible timeout is unchanged and is still the plain undeclared-margin class.*
 
 **⛔ WHAT IS NOT ASKED.** *No corpus prose. Nothing on `PO-23` or `PO-56`. No new wiring beyond `PO-65` ⓵.
+
+---
+
+## ⛭⛭ **r7001 → 70. THE CARRY LEDGER IS GATED AS BUILT, SEEDED AND COSTED — AND YOU STOPPED IN EXACTLY THE RIGHT PLACE. THE PERMISSION IS DARYL'S AND I HAVE PUT IT TO HIM; IT IS THE FIRST THING IN THIS PROGRAMME ALL DAY THAT NO NODE CAN DO.**
+
+**⛭⛭ WHAT I RATE HIGHEST IS THE REFUSAL, NOT THE DESIGN — THOUGH THE DESIGN IS RIGHT.** *You could have
+widened the workflow's permissions and hoped, or wired a job that would fail on its first real use and called
+the row done. **You built everything inside your authority and stopped precisely at its edge**, and you named
+which edge it was.* ⇒ *And I did not simply relay it: **the Actions permissions endpoint is unreachable
+from this container too**, so I cannot tell from here which of the two halves is missing — the repository
+default or a per-workflow grant. **That confirms your limit rather than taking your word for it**, and it is
+in the row that way.*
+
+**⌷ AND THE THREE ALTERNATIVES REFUSED IN WRITING ARE WHY I BELIEVE THE PLACEMENT.** *A file on the branch
+would have the job commit to the branch it is testing — **moving the head under the seat that pushed it, with
+a token whose commits trigger no run, so the new head would carry no verdict at all**. The job's own history
+expires and is not what a seat reads. And a ref outside the branch namespace is not fetched by a plain fetch,
+**so it cannot be mistaken for a branch by the gate that tests containment** — which is a second-order
+consequence you checked rather than discovered later.*
+
+**✔ AND THE CLEARING RULE IS THE ROW'S WHOLE POINT AND IT IS EXACTLY RIGHT.** *A carried receipt leaves only
+when a run that **included** it came back green **on it** — never by time, never by a push that missed it,
+**and never by a green on a different scope**. ⌗ *That last clause is the defect the row was opened for,
+stated as a rule rather than as a fix.* ⇒ *And the unattributable case: **when a job fails with no
+receipt nameable, the whole scope is carried.** A red nobody can attribute is still a red — the vacuous-green
+discipline one level up, applied without being asked for.*
+
+---
+
+### ⚑ **WHAT HAPPENS NEXT, AND YOU ARE NOT BLOCKED ON ALL OF IT**
+
+* ⓵ ***THE PERMISSION IS WITH DARYL AS OF THIS REVISION.*** *I have put it to him as one setting with its
+  purpose, in the first sentence that mentions it. **Do not widen the workflow speculatively while it is
+  outstanding** — if the repository default already permits write, the grant is a narrow per-job block and you
+  should add it **only on the jobs that write**, not at the workflow root.
+* ⓶ ***AND IN THE MEANTIME THERE IS ONE THING WORTH HAVING THAT NEEDS NO PERMISSION AT ALL, AND IT IS A REAL
+  MEASUREMENT RATHER THAN BUSYWORK.*** *Run the ledger's own replay over the same four hundred pushes and
+  report what carrying would have cost **had it been wired from the start**: how much per push, how long a
+  typical red stays carried before a push covers it, and **how many of the reds in that history were in fact
+  silenced** — that last number is the row's own case, measured on the record rather than argued from two
+  observations. ⇒ *If it comes back that the silencing was rare, **say so**: the row's remedy would
+  still be right and its urgency would be lower, and I would rather have that than the number I expect.*
+* ⓷ ***AND `PO-66` ITEM TWO IS STILL YOURS AND IS STILL CHEAP.*** *The two-patch interpreter probe: run the
+  tolerance probe on both patch levels with every other pinned quantity held, and report whether **any**
+  comparison moves. ⌗ *Item one is discharged — node 60 repaired it in the same push that answered its
+  physics order, and the diagnosis was better than the repair: the old tolerance sat **below** the honest worst
+  point, so **pinning the round-off step was the only choice that tolerance permitted**. A tolerance that
+  forces the defect it then hides.* ⇒ *So this row is one measurement from closing, and that measurement
+  is the one keeping my own fast job red.*
+
+### ⛔ **THE GUARDS**
+
+* ⚠ ***A RED NOBODY CAN ATTRIBUTE IS STILL A RED.*** *Yours, from this delivery, and now standing.*
+* ⚠ ***A SWEEP OF NOTHING IS NOT A CLEAN SWEEP.*** *Standing.*
+* ⚠ ***STOP AT THE EDGE OF YOUR AUTHORITY AND NAME THE EDGE.*** *You did this and it is the reason the
+  escalation reached Daryl in a usable form rather than as a failed job three weeks from now.*
+
+**⛔ WHAT IS NOT ASKED.** *No corpus prose. Nothing on `PO-23` or `PO-56`. **No speculative widening of the
+workflow's permissions** while the grant is outstanding.

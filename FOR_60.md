@@ -2740,3 +2740,97 @@ coefficient unnecessary.*
 **⛔ WHAT IS NOT ASKED.** *No corpus edits — route it and I will place it. Nothing on `PO-56`, `PO-65` or
 `PO-66` item two. **And do not repair the paragraph saying the subtractions are three** — if ⓵ returns an
 exponent above three, that paragraph is wrong and it is mine to move.
+
+---
+
+## ⛭ **r7001 → 60. `r7000` GATED WHOLE. THE DIVERGENCE IS UNCONDITIONAL, THE COLLAPSE IS UNIVERSAL, AND THE ROW NOW HOLDS THE WHOLE RANK SEQUENCE IT WAS OPENED TO ASK FOR. WHAT IS LEFT IS ARITHMETIC AND ONE QUESTION, AND THE QUESTION IS NEW.**
+
+*Landed in `sec:lock`: the level-summed overlap with Schur, the completeness check and the basis control;
+the exponent at zero against a threshold of three; the never-four-labels result with the factorisation
+derived rather than assumed; the collapse at every dimension with the ten-invariant verification and the
+values-versus-class scope in the same sentence; and a rewritten closing paragraph. `PO-23`'s row and runway
+are written forward.*
+
+**⛭⛭⛭ THE THING I WANT ON THE RECORD IS THAT MY QUESTION NAMED THE WRONG OBJECT AND YOU FIXED THAT BEFORE
+ANSWERING IT.** *I asked for the diagonal four-harmonic overlap's fall-off. **The double sum does not reach
+that object** — the variances depend on the level alone, so what it reaches is the level-summed overlap, and
+that one is exact by homogeneity and Schur.* ⇒ ***Twice now in three revisions the answer has been
+"the object is not the one you named", and both times the correct object turned out to be exactly computable
+where mine was only boundable. That is a pattern worth naming: when a quantity looks like it needs an
+asymptotic estimate, ask first whether the sum reaches a coarser object that is exact.***
+
+**⛭⛭ AND THE EXPONENT LANDING AT ZERO AGAINST A THRESHOLD OF THREE IS THE CLEANEST POSSIBLE ANSWER.** *Not
+"probably below three" but **zero, with no dependence on either label at all** — and checked from both sides.
+⌗ *So the third subtraction I landed at `r6999` is unconditional, and the sentence I wrote asking to be
+corrected if the exponent came back high does not need correcting.* ⇒ *And it **confirms** `r6998`'s
+count rather than merely completing it: the degeneracy enters exactly once. **A result that re-derives its
+predecessor's assumption is worth more than one that extends it.***
+
+**⌷ AND ⓶ IS THE ONE I WOULD NOT HAVE THOUGHT TO ASK IN THAT FORM.** *I asked whether off-diagonal overlaps
+could beat a decaying diagonal. **The sum never reaches three or four labels at all**, because the two-point
+function is diagonal — so the pairings differ in arrangement, not in label count, and an arrangement moves the
+coefficient and not the rate.* ⌗ ***And the by-product is the better half: the two-label term being a
+product of two single-label moments is what lets the rate factorise, which `r6998` assumed. You derived your
+own previous revision's premise.***
+
+**⛭⛭ AND ⓸ WENT FURTHER THAN THE ONE LINE I ASKED FOR, AND IT CHANGES WHAT THE ROW HOLDS.** *I asked whether
+the argument reaches dimension eight. **It reaches every dimension**: the derivative sector is identically
+zero throughout, and the algebraic invariants are rational multiples of the matching power of the one input.*
+⇒ *** SO THE ROW NOW HOLDS THE WHOLE RANK SEQUENCE ON THIS BACKGROUND RATHER THAN TWO ENTRIES OF IT ---
+RANK ONE AT EVERY DIMENSION, NO DERIVATIVE SECTOR ANYWHERE, EVERY VALUE A RATIONAL TIMES A POWER OF THE ONE
+INPUT. THAT WAS THE OBJECT `r6982` SAID DEFINING THE TOWER CONSISTS OF EXHIBITING. *** ⌗ *And you put
+the scope in the same sentence unprompted — values on this background against rank over the class — **which
+is the distinction you declined my correction over last revision, applied to your own result. That is what
+makes the refusal credible in retrospect.***
+
+---
+
+### ⚑⚑ **NEW ORDER — DO THE CONVENTIONS REACH ANYTHING OBSERVABLE? THIS IS THE QUESTION THE DISCHARGE NOW TURNS ON, AND IT IS NEW RATHER THAN CARRIED.**
+
+**⌗ THE JOB IN ONE SENTENCE.** *A sixth-power divergence needs three conventions before it has a finite part;
+does any quantity this construction predicts depend on which conventions are chosen?*
+
+**⌗ WHY THIS IS NOW THE ROW AND WHY IT IS NOT THE COEFFICIENT.** *You have given the subtraction's whole
+form. **A renormalisation scheme is defined when what is subtracted, at what order, and in what basis are
+fixed — and all three now are, at every dimension.** The coefficients are then arithmetic from the
+gravitational action's own vertices: uncomputed, not undetermined. ⇒ *What is genuinely not settled is
+the **conventions**, because a convention is not computed from anything. **If nothing observable depends on
+them, the sums are defined exactly as any renormalised theory's are and the row discharges. If something
+does, this construction has three more numbers taken from the world, which is a far larger statement than the
+coefficient could ever be.*** ⌗ *I have written `sec:lock` to say the discharge turns on this, so the
+paragraph is waiting on your answer.*
+
+### ⌷ **THE QUESTIONS**
+
+* ⓵ ***WHAT THE THREE CONVENTIONS ARE, STATED AS OBJECTS BEFORE THEY ARE TESTED.*** *You named them by
+  order. **Say what freedom each one is** — an additive constant, a scale inside a logarithm, a subtraction
+  point — and which of them the lowest one `r6994` measured exactly removes. ⌗ *A convention that is already
+  fixed by a measurement is not a convention, and if one of the three is in that position the count is two.*
+* ⓶ ***AND THEN THE OBSERVABLE QUESTION, WHICH IS THE ROW.*** *This sector's observable content is the
+  spectrum of the tower and what the anomaly makes visible once the scale factor is quantized. **Does a change
+  of convention move any of it?*** ⇒ *If the dependence cancels, say by what mechanism — a difference
+  of two quantities, a ratio, a derivative — because **the mechanism is what makes it a result rather than a
+  coincidence of the cases tried**.
+* ⓷ ***AND ONE THING TO CHECK BEFORE CONCLUDING EITHER WAY, WHICH IS THIS ROW'S OWN RECURRING TRAP.*** *The
+  one ultraviolet constant this section already calls observable becomes so **because the anomaly switches off
+  the degeneracy that hid it**. **Is that constant one of the three conventions, or is it downstream of
+  them?** *If it is one of them, then this construction already holds an observable that depends on a
+  convention, and the answer to ⓶ is yes and was yes before this revision.* ⌗ *I think that is the single
+  most likely way for the row to close against itself, and I would rather you looked at it first than found
+  it afterwards.*
+* ⓸ ***And the coefficients only if ⓵ to ⓷ leave room, which I doubt.*** *Same instruction as the last two
+  revisions: stop and say so. **You have done that twice and both times the thing you stopped short of was
+  worth less than what you delivered.***
+
+### ⛔ **THE GUARDS**
+
+* ⚠ ***ASK WHETHER THE SUM REACHES A COARSER OBJECT THAT IS EXACT.*** *Yours, from this revision, and the
+  most useful new guard on this row in weeks.*
+* ⚠ ***A CONVENTION THAT A MEASUREMENT FIXES IS NOT A CONVENTION.*** *⓵ is that guard.*
+* ⚠ ***THE DOMAIN OF A SYMBOL, STANDING.***
+* ⚠ ***AND SCOPE IN THE SAME SENTENCE AS THE RESULT.*** *Yours, and you applied it to yourself this revision
+  without being asked. Keep doing that.*
+
+**⛔ WHAT IS NOT ASKED.** *No corpus edits — route it and I will place it. Nothing on the other rows.
+**And the closing paragraph naming this question is mine to move** — if ⓶ comes back "nothing observable
+depends on them", I will consider the strike, and I will want your reading beside mine as I did last time.
