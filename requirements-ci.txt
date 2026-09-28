@@ -31,11 +31,15 @@
 #   · `matplotlib` is pinned last and least: it draws two figures.  ⚠ *It is not in the fingerprint, so a
 #     move in it is caught by the suite and not by the fingerprint gate -- stated so the gate is not read
 #     as covering more than it does.*
-#   ⛔ · **`pynucastro` IS DELIBERATELY NOT PINNED, and the reason is the row's own rule.**  It is absent
-#     from this container, so no seat has recorded which version the nuclear-network receipts were verified
-#     on, and *a pin to a version nobody has run is exactly the defect `PO-60` is about -- a number that
-#     certifies nothing while looking like a guarantee.*  ⇒ *Owed: run the BBN four, record the version they
-#     pass on, and pin it in the same push.*  Until then it floats and the suite is what catches it.
+#   · `pynucastro` is pinned on a measurement (r6985+70.1, node 70, PO-64 ⓶).  Until then it floated,
+#     because no seat had recorded which version the nuclear-network receipts pass on -- and a pin to a
+#     version nobody has run certifies nothing.  ** Measured both ways: exactly FOUR registered receipts
+#     need it ** -- P16_theory_error_and_likelihood, P16_validate_bbn, P16_the_bbn_network_cannot_see_the_
+#     arms_equality..., P16_the_window_is_crossed_twice... -- each exits 0 with pynucastro 3.1.0 and exits
+#     1 with the module blocked, while the seven other receipts that mention the network pass either way.
+#     All four passed on 3.1.0 in the heavy job's full-history dispatch (868 pass; the three failures were
+#     elsewhere) and here.  ⌗ *The workflow's install lines still name `pynucastro` after this file; with
+#     the pin here that resolves to the pinned version.*
 
 numpy==2.4.4
 scipy==1.17.1
@@ -43,3 +47,4 @@ sympy==1.14.0
 mpmath==1.3.0
 camb==2.0.4
 matplotlib==3.10.9
+pynucastro==3.1.0
