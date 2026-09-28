@@ -5328,3 +5328,75 @@ projection smears by $k\times$ the width in **conformal time**, the Bessel argum
 $k(\eta_0-\eta)$. One object in a one-rate cosmology; two here. ⇒ ***The arm's window is $6.5$ per cent
 wider in conformal time and $0.8$ per cent narrower in the leaf horizon — a ratio $7.3$ per cent
 different from the control's, and the projection width has never been imposed.***
+
+## `cc66.52` (`r6999`) — THE TWO WIDTHS DIFFER BY THE JACOBIAN ALONE, WHICH MAKES THE DIFFERENCE A CR PREDICTION; AND THE CHANNEL IT OPENS IS A QUARTER OF THE EXCESS
+
+*Path: **hierarchy** throughout. Banks `r6959_eta_*`, `r6941_fine_*`; receipt
+`P15_the_two_projection_widths_differ_by_the_jacobian_alone_and_the_channel_that_opens_is_a_quarter_of_the_excess.py`,
+**17 gates**; pre-registration `r6999_directions/PREDICTION.md`. ⛔ Nothing SOLVED — the projection
+kernel is evaluated directly with `scipy.special.spherical_jn` at the instrument's own $\ell$, $k$,
+$\eta_0$.*
+
+**⛭⛭⛭ ⓷ FORCED, AND FORCED BY ONE OBJECT — reported first because the order says it is worth more than
+the contrast result.** The instrument keeps two sound horizons on one integrand and two rates, so
+$d(r_{s,\rm leaf})/d(r_{s,\rm stack}) = \mathrm{Jac}$ pointwise — checked across the window to **one part
+in a million** on the arm and exactly on the control, where $\mathrm{Jac}\equiv 1$ by the rate identity.
+
+- **ⓐ On the RULER clock the two arms are the same instrument.** The window's conformal width against
+  its width in $r_{s,\rm stack}$ agrees between the arms to $0.3$ per cent on both core width
+  definitions. *The visibility is laid down in $\eta$ by Thomson scattering on the physical background,
+  which is the same physics on both arms.*
+- **ⓑ On the LEAF clock it is $+14.5$ per cent, and the whole of that is $\mathrm{Jac}$** — Jac share
+  $1.1484$ against a leaf ratio $1.1446$; the arm's own leaf-to-ruler width ratio equals
+  $\langle\mathrm{Jac}\rangle = 0.8744$ to $0.4$ per cent.
+- **ⓒ $\mathrm{Jac} = H_{\rm phys}/H_{\rm leaf}$ is not a knob** — fixed by the background solution once
+  the arm is specified, no free coefficient, identically $1$ on any one-rate cosmology. ⇒ ***The two
+  widths standing in a different ratio is a prediction of the two-rate assignment and not an artefact of
+  how this instrument builds its window. The ruler clock is what proves it.***
+
+⚠ **AND THE SIZE IS DEFINITION-DEPENDENT WHILE THE ATTRIBUTION IS NOT.** Under one measure — the
+visibility as a density over $\eta$ — RMS gives $+7.3$ per cent (`cc66.51`'s figure) while FWHM and the
+characteristic function's half-fall give $+14.5$ and agree with each other to better than a hundredth of
+a per cent. *The window has long tails; RMS weights them; neither the projection nor the phase sweep
+responds to them.* ⇒ **Quote the prediction on a core width, with the definition named.**
+
+**⛭⛭ ⓶ THE FILTER, APPLIED IN THE INSTRUMENT'S OWN KERNEL.** The order's operation done analytically on
+the control's own projection: hold the source phase $\cos(k r_{s,\rm leaf})$ and stretch only the Bessel
+argument by the measured $s = 1.135$.
+
+⛔ **And it corrects its own first pass, by a factor of fifteen and in sign.** That pass used the
+plane-wave proxy $\lvert\int g\,e^{-ik\eta}\rvert$, on the reading that the Bessel argument advances at
+rate $k$. **It does not**: $j_\ell(x)$ near its turning point $x\sim\ell$ — *where the entire window
+sits, $kD_M\sim\ell$ being what the projection IS* — oscillates at local rate $\sqrt{1-\ell^2/x^2}$,
+which vanishes there. The proxy gives $-29.7$ per cent at the top band; the kernel gives $+1.96$.
+
+⚠ **And the sign is not determined on paper, because a stretch needs a fixed point.** Mean-anchored the
+departure runs $+0.0034 \to +0.0196$; peak-anchored $-0.0034 \to +0.0016$, crossing zero, where $G$ is
+**undefined**. *A stretch about the wrong point is a stretch plus a displacement, and a displacement of
+the window moves the comb rather than the contrast.*
+
+⛔ **THE VERDICT.** Curvature $+0.00016$ (mean) and $+0.00037$ (peak) against the target's $-0.00327$:
+**it accelerates where the target decelerates, so it fails the committed second tooth under both
+anchorings** — and at the top band it delivers $+1.96$ per cent against the $+7.62$ the measurement
+needs. ⇒ ***Not the carrier. Not excluded as a contributor.***
+
+⚠ **AND THE FILTER ITSELF NEEDED A THIRD TOOTH.** The superseded plane-wave numbers run
+$-0.033 \to -0.297$: $G = 8.93$, curvature $-0.0014$ — ***passing both pre-registered teeth while moving
+the contrast the wrong way in every band.*** $G$ is a ratio of a departure to a departure and is blind to
+their common sign. ⇒ **SIGN is now the first tooth, and $G$ is read only after it.** *Second revision
+running in which this statistic returned a number outside its domain.*
+
+**⛔ ⓵ THE RUN IS NOT CONSTRUCTIBLE, WHICH FOLLOWS FROM ⓷ AND NOT FROM EFFORT.** *"Give the control arm
+this arm's conformal width at the same leaf width"* is, by ⓐ–ⓒ, exactly *"give the control arm this
+arm's $\mathrm{Jac}$"* — and a control with $\mathrm{Jac}\neq1$ is not a control. **There is no knob for
+the projection width and the instrument is right not to have one.** *Reported rather than substituted
+for.* ⌗ The pre-registration is written anyway and carries all four outcomes including the null, and
+states which teeth were committed at `r6993` before the measurement and which two are added now.
+
+**⌗ ⓸ THE SUB-PERIOD ESTIMATOR, SAID AND NOT BUILT.** The acoustic period in $q$ is **known** and equal
+to $2$, so a fit of $A\cos(\pi q + \varphi)$ with the period **held** has two free parameters per $q$
+rather than an amplitude read off a window, and needs only a fraction of a period of support — which is
+what would reach below $q=2$. ⚠ **Its cost is that the held period must be right**: an error of a few
+per cent leaks into $A$ as a slow drift, which is exactly the $q$-dependence being measured. ⇒ *It would
+have to be validated against the window estimator on $[2.6,\,5.4]$, where both work, before anything it
+says below $q=2$ is read.*

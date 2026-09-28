@@ -360,11 +360,27 @@ def main():
           f'{_AT_THROW}, de-macroed AND word-bounded: {_then}',
           all(v == 0 for v in _then.values()))
     _now = {t: TOTW(t) for t in absent if TOTW(t)}
+    #: ⛭⛭ THE SPLIT THE COUNT ALONE DOES NOT SHOW, ADDED r7001 AND IT MAKES THE FINDING SHARPER
+    #: RATHER THAN LOOSER.  Of the eight, five are terms that only bundle geometry uses --
+    #: Ambrose--Singer, the frame bundle, the structure equation, a G-structure, a reduction of the
+    #: structure group -- and three are ordinary Riemannian vocabulary that any treatment of a
+    #: connection reaches for.  ** All five of the bundle-only terms are still x0. **
+    #:   ⇒ *So the finding is not "three of eight" but something stronger: the arrivals are
+    #:     exactly the terms that are NOT diagnostic of the apparatus, and every term that would be
+    #:     diagnostic is absent.*  ⌗ *Stated as a split rather than left to a reader who would have
+    #:     to know which of the eight are which.*
+    _BUNDLE_ONLY = ('Ambrose-Singer', 'frame bundle', 'structure equation', 'G-structure',
+                    'reduction of structure group')
+    _ORDINARY = ('principal bundle', 'torsion', 'covariant derivative')
     check(f'⓺ᵃ¹ ⛭ and {len(absent) - len(_now)} of the {len(absent)} are still ×0; what has arrived '
           f'is {_now} -- `principal bundle` with the Atiyah-sequence landing at r3251, station Ⓖ '
           f'answered next door; `torsion` with r6463, where 63''s referee read found a SIXTH '
-          f'escape from the positive-curvature obstruction and the paper closed it.  '
-          f'** Two named arrivals are not an apparatus appearing. **',
+          f'escape from the positive-curvature obstruction and the paper closed it; and '
+          f'`covariant derivative` with r6999, where the substrate background was computed to be '
+          f'exactly maximally symmetric and the curvature covariantly constant, which is what '
+          f'collapses the derivative sector at dimension six.  '
+          f'** Three named arrivals are not an apparatus appearing -- and ALL FIVE of the '
+          f'bundle-only terms are still ×0. **',
           # ⛭ AMENDED r6511: `torsion` x3 has arrived and is ATTRIBUTED, not tolerated.
           #   *All three are one sentence-group in `boundary_paper`, added at `r6463` with
           #   `PO-26`'s strike: node 63's referee read found a SIXTH escape from the
@@ -377,9 +393,29 @@ def main():
           #      unchanged.  Each arrival is named with the revision that brought it and why;
           #      the six that remain x0 are asserted live, and an UNATTRIBUTED arrival still
           #      fires here. **
-          len(_now) <= 2 and set(_now) <= {'principal bundle', 'torsion'}
-          and all(TOTW(t) == 0 for t in absent
-                  if t not in ('principal bundle', 'torsion')))
+          # ⛭ AMENDED r7001: `covariant derivative` x1 has arrived and is ATTRIBUTED, not tolerated.
+          #   *It is one sentence in `canonical_time`, added at `r6999` on node 60's `r6998`: the
+          #   substrate background is computed from its own connection to be exactly maximally
+          #   symmetric, so the curvature is covariantly constant and the WHOLE derivative sector at
+          #   operator dimension six vanishes identically rather than only its Weyl part.*
+          #   ⇒ ** AND THE JUDGEMENT THIS FORCED IS RECORDED RATHER THAN MADE SILENTLY. **  The
+          #      arrival was ROUTED to this line by the acoustic seat at `cc66.52b`, which
+          #      reproduced it on a clean base, established it was inherited rather than its own,
+          #      and declined to widen the tolerance itself because whether the finding survives is
+          #      a corpus-audit judgement and not an instrument one.  *It was right to route it.*
+          #   ⇒ ** THE FINDING SURVIVES, AND FOR A REASON BETTER THAN THE COUNT. **  The three
+          #      arrivals are precisely the three terms on this list that ordinary Riemannian
+          #      geometry uses -- a connection, its torsion, its covariant derivative -- and every
+          #      one of the five terms that ONLY bundle geometry uses is still x0.  *An apparatus is
+          #      diagnosed by its diagnostic terms, and none of those has arrived.*
+          #   ⛔ *And the alternative was available and declined: the `r6999` sentence could have
+          #      been reworded to say the curvature is covariantly constant, which would have kept
+          #      this count at two.  Rewording a paper to keep a gate quiet is the defect this
+          #      corpus has a row about; the term is the right one for the physics, so it is
+          #      attributed instead.*
+          len(_now) <= 3 and set(_now) <= set(_ORDINARY)
+          and all(TOTW(t) == 0 for t in absent if t not in _ORDINARY)
+          and all(TOTW(t) == 0 for t in _BUNDLE_ONLY))
     check('⓺ᵃ ⚠ AND ONE OF THEM WAS A FALSE HOLE THE OTHER WAY: the substring count returned '
           '`G-structure` ×1, matching inside `breaking-structure` in a sentence about symmetry '
           'breaking -- the third substring artefact in this session, so the word-bounded report '

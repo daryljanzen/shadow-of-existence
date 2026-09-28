@@ -3909,3 +3909,123 @@ each compared, and refuses a side that *shrank* a row. And `PO-64`'s pin has fli
 container holds only python 3.11.15 against the swept 3.11.16 and has no 3.11.16 available. **So my
 pre-push bar is now "107 of 108 green, `check_env_fingerprint` excepted for a stated environmental
 reason", verified by naming it as the only failure rather than assuming it.**
+
+---
+
+# ⛭⛭⛭ cc66.52 — `r6999` FILLED: ⓷ IS FORCED AND IT IS FORCED BY THE JACOBIAN ALONE, WHICH MAKES IT THE CR PREDICTION YOU SAID WOULD BE WORTH MORE; ⓶ FAILS ON CURVATURE AT A QUARTER OF THE EXCESS; AND ⓵ CANNOT BE CONSTRUCTED, WHICH FOLLOWS FROM ⓷
+
+**⌗ TAKE ⓷ FIRST, BECAUSE YOU WERE RIGHT THAT IT IS THE BIGGER OBJECT.** *The two widths standing in a
+different ratio in the arm is **forced**, and the proof is a pointwise identity plus one comparison.*
+
+⛭ **The identity.** The instrument keeps two sound horizons on one integrand and two rates, so
+$d(r_{s,\rm leaf})/d(r_{s,\rm stack}) = \mathrm{Jac}$ — *checked pointwise across the window to **one
+part in a million** on the arm, and exactly on the control, where $\mathrm{Jac}\equiv1$ by the rate
+identity.*
+
+⛭⛭ **And the comparison that turns it into an attribution.** **On the RULER clock the two arms are the
+same instrument** — the window's conformal width against its width in $r_{s,\rm stack}$ agrees between
+them to $0.3$ per cent on both core width definitions, *because the visibility is laid down in $\eta$ by
+Thomson scattering on the physical background and that is the same physics on both arms*. **On the LEAF
+clock it is $+14.5$ per cent, and the whole of that is $\mathrm{Jac}$**: Jac share $1.1484$ against a
+leaf ratio $1.1446$, and the arm's own leaf-to-ruler width ratio equals $\langle\mathrm{Jac}\rangle$ to
+$0.4$ per cent.
+
+⇒ ***$\mathrm{Jac} = H_{\rm phys}/H_{\rm leaf}$ has no free coefficient in it, is fixed by the background
+solution once the arm is specified, and is identically $1$ on any one-rate cosmology. So the different
+ratio is a prediction of the two-rate assignment and not an artefact of this instrument's window — and
+the ruler clock is what proves it rather than my saying so.***
+
+⚠ **AND IT CHANGES THE NUMBER I GAVE YOU AT `cc66.51`, WHICH YOU SHOULD HAVE BEFORE YOU PLACE ANY OF
+IT.** A width is not a quantity until its definition is named. Under one measure and three definitions:
+RMS gives $+7.3$ per cent — **that is `cc66.51`'s figure** — while FWHM and the characteristic
+function's half-fall give $+14.5$ and agree with **each other** to better than a hundredth of a per
+cent. *The window has long tails, RMS weights them, and neither the projection nor the phase sweep
+responds to them.* ⇒ **The prediction is to be quoted on a core width with the definition named. The
+$7.3$ is not wrong; it is the tail-weighted reading of the same object.**
+
+**⛔ ⓵ CANNOT BE RUN AS WRITTEN, AND THAT IS A CONSEQUENCE OF ⓷ RATHER THAN A LIMIT OF EFFORT.** *"Give
+the control arm this arm's conformal width at the same leaf width"* is, by the above, exactly *"give the
+control arm this arm's $\mathrm{Jac}$"* — **and a control with $\mathrm{Jac}\neq1$ is not a control.**
+⇒ *There is no knob for the projection width, the instrument is right not to have one, and the channel
+is not separable from the two-rate assignment.* **Reported rather than substituted for, on your standing
+instruction.** ⌗ *The pre-registration is written anyway — `r6999_directions/PREDICTION.md`, all four
+outcomes with the NULL named and its meaning stated — because the guard is about what was claimable in
+advance, not about whether the run happened.*
+
+**⛭⛭ ⓶ SO THE FILTER IS APPLIED IN THE INSTRUMENT'S OWN KERNEL, WHICH IS THE PROJECTION SECTOR'S WHOLE
+CONTENT.** Hold the source phase $\cos(k r_{s,\rm leaf})$ and stretch only the Bessel argument by the
+measured $s = 1.135$.
+
+⛔ **And I have to correct my own first pass, by a factor of fifteen and in sign.** That pass used the
+plane-wave proxy $\lvert\int g\,e^{-ik\eta}\rvert$, on the reading that the Bessel argument advances at
+rate $k$. ***It does not.*** $j_\ell(x)$ near its turning point $x\sim\ell$ — *and the whole window sits
+there, $kD_M\sim\ell$ being what the projection IS* — oscillates at local rate $\sqrt{1-\ell^2/x^2}$,
+which vanishes there. **The proxy says $-29.7$ per cent at the top band; the instrument's own kernel
+says $+1.96$.**
+
+⚠ **And the sign is not determined on paper, because a stretch needs a fixed point.** Mean-anchored the
+departure runs $+0.0034\to+0.0196$; peak-anchored $-0.0034\to+0.0016$ and **crosses zero**, where $G$ is
+undefined. *A stretch about the wrong point is a stretch plus a displacement, and a displacement of the
+window moves the comb rather than the contrast.*
+
+⛔ **THE VERDICT.** Curvature $+0.00016$ and $+0.00037$ against the target's $-0.00327$: ***it
+accelerates where the target decelerates, and fails the committed second tooth under both anchorings***
+— and at the top band it delivers $+1.96$ per cent against the $+7.62$ the measurement needs. ⇒ **Not
+the carrier. Not excluded as a contributor, and its size is now bounded rather than unknown.**
+
+**⚠ AND THE FILTER ITSELF NEEDED A THIRD TOOTH — THIS IS THE SECOND REVISION RUNNING THAT THIS STATISTIC
+HAS RETURNED A NUMBER OUTSIDE ITS DOMAIN.** The superseded plane-wave numbers run $-0.033\to-0.297$:
+$G = 8.93$ and curvature $-0.0014$, ***which passes both pre-registered teeth while moving the contrast
+the wrong way in every band.*** $G$ is a ratio of a departure to a departure and is **blind to their
+common sign**. ⇒ **SIGN is now the first tooth and $G$ is read only after it.** *Registered even though
+the estimate that exposed it is superseded, because it is a defect of the statistic and not of that
+estimate.*
+
+**⌗ ⓸ SAID AND NOT BUILT, AS YOU ASKED.** The acoustic period in $q$ is **known** and equal to $2$, so
+what reaches below $q=2$ is a fit of $A\cos(\pi q + \varphi)$ with the period **held** — two free
+parameters per $q$ rather than an amplitude read off a window, needing only a fraction of a period of
+support. ⚠ **Its cost is that the held period must be right**: an error of a few per cent leaks into $A$
+as a slow drift, *which is exactly the $q$-dependence being measured*. ⇒ *So it would have to be
+validated against the window estimator on $[2.6,\,5.4]$, where both work, before anything it says below
+$q=2$ is read.*
+
+## What is on the branch
+
+Receipt
+`P15_the_two_projection_widths_differ_by_the_jacobian_alone_and_the_channel_that_opens_is_a_quarter_of_the_excess.py`
+— **17 gates**, `GATES: ALL PASS`, 1.5 s. Pre-registration `r6999_directions/PREDICTION.md` with the
+null tabled. Working scripts `r6999_directions/width_forced.py` (⓷) and `width_filter.py` (⓶, carrying
+its own superseded pass rather than deleting it). INDEX row and `PO13_WORKING_STATE`.
+
+⛔ **No corpus edits** — your ⛔. Nothing on P15's restored Doppler sentence, nothing on the quantum
+sector or the reproducibility rows. ⌗ *If ⓷ changes what the width means for that paragraph, the
+sentence is yours to move and the number it should carry is $14.5$ per cent on a named core width, not
+the $7.3$ I gave you.*
+
+---
+
+# ⚠ cc66.52b — A GATE ON `main` IS RED FROM YOUR OWN `r6999` LANDING, AND IT IS THE `L273` BAKE'S UNATTRIBUTED-ARRIVAL CHECK DOING EXACTLY WHAT IT WAS BUILT TO DO
+
+**⌗ WHAT IS FAILING.** `receipts/L273_the_cartan_bake/C1_the_weyl_closure_is_generic_to_cubics_and_the_match_is_D3_alone.py`,
+check `⓺ᵃ¹`. It surfaced on my PR #130's scoped suite — **313 pass, 1 fail** — and I have
+**reproduced it identically on a clean `origin/main` worktree**, same check, same counts, `rc=1`.
+*My branch touches no file under `receipts/L273_the_cartan_bake/`.*
+
+**⛭ WHY IT FIRES, AND IT IS NOT A DEFECT IN THE GATE.** That check asserts the bundle apparatus is
+absent from the seventeen paper bodies, tolerating **at most two attributed arrivals** —
+`{'principal bundle', 'torsion'}`, the second attributed by you at `r6511`. A **third** has now
+arrived: `covariant derivative` ×1, at `corpus/canonical_time.tex:693` — *"And the covariant
+derivative of the curvature vanishes identically here…"*. `git log -S` puts it in **`228ae5fb`**
+(`r6999`), the landing of `sec:lock`'s three-subtraction paragraph. ⇒ ***Its own comment says an
+UNATTRIBUTED arrival fires here, and one just did.***
+
+**⛔ AND THE REPAIR IS NOT MINE, WHICH IS WHY IT IS ROUTED RATHER THAN DONE.** Attribute
+`covariant derivative` ×1 to `r6999` in the `⓺ᵃ¹` block the way `torsion` ×3 was attributed, widen
+the tolerated set to three, and restate the finding as *three of eight is still not an apparatus*.
+⚠ **Whether three of eight still reads as "not an apparatus" is a corpus-audit judgement and belongs
+to the `L273`/`P10` line, not to the instrument** — and applying it here would widen the PR past the
+order it fills. *The proposed patch is written out in a comment on #130 so whoever takes it does not
+have to re-derive it.*
+
+⌗ *No re-run was spent: reproducing it on the base is the stronger test, and a deterministic failure
+is not a flake.*
