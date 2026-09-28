@@ -1,8 +1,8 @@
 #!/usr/bin/env python3
 """sweep_runner_reads.py -- ** PO-60 ⓶ᵇ: THE NEVER-GREEN-UNDER-THE-RUNNER, SWEPT ACROSS EVERY RECEIPT. **
 
-Built r6931+70.3 by node 70.  NOT wired into CI: `--seed` below is the both-ways seeding the
-order requires before any wiring, and a full sweep costs what a suite run costs.
+Built r6931+70.3 by node 70.  WIRED r6977+70.1: per push on the receipts `receipt_scope.py --scope reads`
+names (`--from`), and whole in the monthly backstop -- whose trace is also what refreshes the read index.
 
 ** THE CLASS. **  A receipt that has never run in the environment the suite runs it in.  Four
 were found inside PO-59's 83: born reading `corpus/...` relative to the REPOSITORY ROOT while
@@ -39,6 +39,17 @@ with its filesystem reads observed** (`open`, `io.open`, `pathlib.Path.open`, `g
 ** r6975+70.1: EVERY TRACE ALSO RECORDS ITS READ SET ** -- each path opened and each glob run, absolute, in
 the log's `reads` field.  `scripts/receipt_scope.py` builds its read index from it, so one full sweep is
 also the dependency index that scopes the next month's pushes.
+  ⛔ r6977+70.1, THREE GAPS IN THAT READ SET, FOUND WHEN THE INDEX WAS MADE TO BE COMMITTED:
+    * every GLOB was recorded as `abspath('glob:' + path)` -- relative, so it came out under the family
+      directory and matched nothing: 107 receipts' globs were invisible to the r6975 index;
+    * `Path.glob`, `Path.rglob`, `os.listdir` and `os.walk` (via `os.scandir`) were observed for the
+      FLAG and never recorded as READS -- and a glob's own internal scandir must NOT be, or every
+      glob reads its whole directory;
+    * IMPORTS never touch `open`, so a helper module -- the code a tolerance defect is born in -- was in
+      no receipt's read set.  Every module a receipt imported is recorded now.
+  `--seed` checks the read set of each seed at its real path (it did not before, which is how the first
+  one passed), and `receipt_scope.py --seed` now goes through this tracer rather than a hand-written log.
+  Each trace also records its seconds (`dt`), which the runner schedules by.
 
 Usage:
     python3 scripts/sweep_runner_reads.py --out DIR [--jobs 4] [--root R]   # trace every receipt
@@ -193,7 +204,7 @@ def trace_one(log, target):
         #   was missing from the read set of every receipt that imports it rather than opening it.
         for _m in list(sys.modules.values()):
             _f = getattr(_m, '__file__', None)
-            if isinstance(_f, str):
+            if isinstance(_f, str) and os.path.abspath(_f) != HERE:      # the tracer is not the receipt's
                 reads.add(os.path.abspath(_f))
         with real_open(log, 'w') as fh:
             json.dump({'receipt': os.path.abspath(target), 'rc': rc, 'events': events,

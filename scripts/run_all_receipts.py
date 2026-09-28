@@ -401,6 +401,8 @@ def main():
     ap.add_argument('--timeout', type=int, default=600)
     ap.add_argument('--jobs', type=int, default=max(1, (os.cpu_count() or 4) - 2))
     ap.add_argument('--only', default='')
+    # r6977+70.1: the SCOPED suite -- exactly the receipts `receipt_scope.py --list` wrote, one per line
+    ap.add_argument('--from', dest='frm', default='', help='run only the registered receipts listed in FILE')
     ap.add_argument('--quick', action='store_true')
     # ⌗ *`--resume a.json,b.json` reads every cache named and WRITES ONLY THE FIRST.*  The one
     #   receipt declared LONG (C59, measured 1302s) is longer than any foreground tool call this
@@ -416,6 +418,12 @@ def main():
     files, unresolved = registered()
     if a.only:
         files = [f for f in files if a.only in f]
+    if a.frm:
+        _listed = {l.strip() for l in open(a.frm) if l.strip()}
+        files = [f for f in files if os.path.relpath(f, ROOT) in _listed]
+        print(f"\n  ⌗ SCOPED: {len(files)} registered receipt(s) from {a.frm}"
+              + (f" ({len(_listed) - len(files)} listed and not registered)" if len(_listed) > len(files) else "")
+              + " -- a verdict below is about THESE, not the suite")
     if a.skip:
         files = [f for f in files if a.skip not in f]
     if a.quick:
@@ -523,7 +531,7 @@ def main():
     # even when every file that does exist passes. **  *A registry entry naming nothing is not a
     # smaller defect than a receipt that exits 1 -- it is the same defect one step earlier, and it
     # was the one with no reader.*
-    if unresolved and not a.only:
+    if unresolved and not (a.only or a.frm):
         print()
         print(f"  ⛔ {len(unresolved)} REGISTERED ROW(S) NAME A `.py` THAT DOES NOT EXIST:")
         for lineno, tok in unresolved:
@@ -536,7 +544,7 @@ def main():
         print("  ⛔ THIS RUN IS NOT A VERDICT: receipts were not reached.  Re-invoke with the same")
         print("     --resume cache until it reports none.")
         return 2
-    if bad or (unresolved and not a.only):
+    if bad or (unresolved and not (a.only or a.frm)):
         print()
         print("  ⛔ A REGISTERED RECEIPT THAT DOES NOT RUN WHERE IT IS REGISTERED IS NOT A RECEIPT.")
         return 1
@@ -553,6 +561,10 @@ def main():
         print("     reported because no result was, which is a different thing from green. **")
         return 2
     print()
+    if a.frm:
+        print(f"  Every receipt IN THIS SCOPE ({len(files)} of the registered set) runs, in place, and exits 0.")
+        print("  ** A claim about the scope and not the suite: the suite's verdict is the heavy job's. **")
+        return 0
     print("  Every registered receipt runs, in place, and exits 0 -- so every assertion in the")
     print("  reproducibility layer was actually evaluated.")
     return 0
