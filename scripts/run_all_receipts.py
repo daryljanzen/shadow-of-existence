@@ -260,6 +260,40 @@ _ONE_THREAD = {
 }
 
 
+# ---------------------------------------------------------------- r6977+70.1
+# ** LONGEST FIRST, BECAUSE A FIXED POOL FINISHES WHEN ITS LAST RECEIPT DOES. **  In INDEX order the
+# longest receipts start wherever the registry happens to put them -- `P15_the_low_multipole_floor...`
+# (995s) sat at 820 of 868 -- and become the tail.  Simulated on the r6975 suite's own per-receipt times,
+# four workers, reproducing that run's wall exactly: INDEX order 2,993s, longest-first 2,686s, which is
+# perfect packing (the floor is total/4 = 2,686s; C59 alone is 1,270s).  ** 307s, 10%, and no receipt
+# changes. **
+#   ⛔ AND ONE INTERACTION, MEASURED, WHICH IS WHY IT IS NOT A PLAIN SORT.  Under `--wall W` a receipt
+#   longer than W can never finish inside the invocation (in-flight work is abandoned at the budget).
+#   Sorted longest-first, the four longest are all longer than 500s, so they take every worker at t=0 of
+#   EVERY slice and nothing finishes: simulated, `--wall 500` makes no progress at all.  So receipts
+#   expected to exceed the wall go LAST.  Simulated at W = 300 / 500 / 900: INDEX order leaves 694 / 51 /
+#   3 unfinished before it stalls, this order 10 / 5 / 3 -- exactly the receipts longer than the wall,
+#   which need one unbounded invocation under either order (as before).  The resume cache is keyed by
+#   path at a digest, so the order cannot change what it holds -- only how soon.
+# ⌗ The expected time is the READ INDEX's traced seconds (`receipts/READ_INDEX.json`, `s`), else the
+#   declared LONG budget, else 0; no index, INDEX order.  Stable, so ties keep INDEX order.
+def expected_seconds():
+    try:
+        with open(os.path.join(ROOT, 'receipts', 'READ_INDEX.json')) as fh:
+            return {k: v.get('s') or 0 for k, v in json.load(fh)['receipts'].items()}
+    except (OSError, ValueError, KeyError):
+        return None
+
+
+def schedule(files, wall=0):
+    exp = expected_seconds()
+    if exp is None:
+        return files, 'INDEX order (no READ_INDEX.json)'
+    t = lambda f: exp.get(os.path.relpath(f, ROOT)) or LONG.get(os.path.basename(f), 0)
+    return (sorted(files, key=lambda f: (bool(wall) and t(f) > wall, -t(f))),
+            'longest first by READ_INDEX.json' + (f', those over the {wall}s wall last' if wall else ''))
+
+
 def budget(path, default):
     """The per-file timeout: the declared one if this receipt has it, else the global cap."""
     return LONG.get(os.path.basename(path), default)
@@ -446,6 +480,8 @@ def main():
     cache = Cache(a.resume, _digest)
     _inv = uuid.uuid4().hex[:12]          # this invocation's own id (r4554)
     todo = [f for f in files if cache.get(os.path.relpath(f, ROOT)) is None]
+    todo, _order = schedule(todo, a.wall)
+    print(f"  ORDER: {_order}")
     if a.resume:
         print(f"  RESUME: {len(files) - len(todo)} result(s) reused from {a.resume}, "
               f"{len(todo)} left to run"
