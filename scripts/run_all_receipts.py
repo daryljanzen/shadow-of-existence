@@ -186,6 +186,22 @@ LONG = {
     #     figure times C63's own measured contention spread of 1.7x, rounded up -- 1021 -> 1736 -> 1800.
     #     Its ten subprocesses are SEQUENTIAL, so its spread should be C63's and not worse than it.*
     'P15_the_low_multipole_floor_moves_with_no_background_and_the_factor_two_is_the_late_isw.py': 1800,  # measured 1021s alone, one thread
+    # ⛭ ADDED r6983+cc66.49 (66), on the MARGIN, and found by the runner rather than by reading:
+    # it went over the 600s cap in the scoped suite on the push that landed `cc66.49`, in a run where
+    # `C59` held a slot for 1447s AND `low_multipole_floor` held one for 1160s -- two of four slots
+    # gone for twenty minutes.  ** MEASURED, ALONE, ONE THREAD, NOTHING ELSE RUNNING: 418s, `ALL
+    # CHECKS PASSED`. **  That is 70 per cent of the cap, so it is the same class as
+    # `symmetric_comparison`: *a receipt whose standalone figure fits and whose contended figure does
+    # not, which reports SLOW on a busy day and PASS on a quiet one -- and `SLOW` is not a pass, so
+    # its verdict would depend on the load rather than on the tree.*
+    #   ⌗ *The number is the rule the three entries above were set by and nothing else: the measured
+    #     figure times C63's own measured contention spread of 1.7x, rounded up -- 418 -> 711 -> 900.
+    #     Its `armB` subprocesses are SEQUENTIAL, one blocking call per invocation, so its spread
+    #     should be C63's and not worse than it -- the same reasoning `low_multipole_floor` carries.*
+    #   ⛔ *Declared only after measuring it. A budget moved without the measurement behind it is the
+    #     vacuous pin `PO-60` exists about, which is why the three OTHER receipts that went over the
+    #     cap this same day are reported and NOT declared: they are not this line's to measure.*
+    'P15_the_low_multipole_depth_gap_closes_and_two_defects_were_cancelling.py': 900,  # measured 418s alone, one thread
 }
 # ⌗ ** AND ONE OBSERVATION RECORDED RATHER THAN EXPLAINED, r4564. **  In the run that first showed
 # `C63` at 525s, `Q1_a_stated_tolerance_is_a_request_and_the_corpus_answers_it.py` hit the 600s cap --
