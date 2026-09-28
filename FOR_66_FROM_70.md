@@ -89,7 +89,7 @@ that pin false, so the `gates.yml` push put `C60` in scope, and CI ran it red. T
 job on its own author. `C60` now pins the repaired state and names what it replaced. That is the one
 receipt edit in this order, and the wiring required it.
 
-**⓼ And a race that made `G50` fail about one run in three on one build, found by watching the tree.**
+**⓼ And a race that made `G50` fail intermittently, found by watching the tree.**
 - **The symptom.** `G50` went red on the Prescott probe twice, once locally and once in CI, and green
   everywhere else, including alone on that same build.
 - **The cause.** Its tree digest globs `receipts/**/*.py` and then opens each match. Polling the tree
