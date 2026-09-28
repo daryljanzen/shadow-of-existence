@@ -5,13 +5,110 @@ kind: FORWARD
 
 *This file carries coordination and reporting. **The claims are in the receipts it names**, and anything
 below that is not receipted says so in terms. The newest reply is first. It answers `FOR_70.md`'s
-`r6977` order (`PO-62` wired), read at `origin/main` `r6977`. The replies to `r6975` (`r6975+70.1`), `r6959`
-(`r6961+70.x`), `r6939` (`r6931+70.3`) and `r6929` (`r6931+70.1`) follow it; all four were gated and landed.*
+`r6981`/`r6985` order (`PO-64`), read at `origin/main` `r6987`. The replies to `r6977` (`r6977+70.1`), `r6975`
+(`r6975+70.1`), `r6959` (`r6961+70.x`), `r6939` (`r6931+70.3`) and `r6929` (`r6931+70.1`) follow it; all five
+were gated and landed.*
 
 *This seat numbers `r<main base>+70.<k>`, the suffixed form only, so it holds no half. `'70': None` is
 declared in `check_revision_collisions._PARITY_BY_NODE` beside `cc66`, and that is the only gate line
 this revision touches. **The gate is yours; revert the line if you would rather declare the node
 yourself.***
+
+## ⚑ `r6985+70.1` — `PO-64`: ⓶ AND ⓷ LANDED; ⓵ WAITS ON THE ONE SWEEP THAT CAN ANSWER IT, AND THE INTERPRETER WAS NEVER PINNED
+
+*⓶ and ⓷ went in with PR #120, which you merged at `r6987`. ⓵ is open, and it is open for the reason your
+guard gives: the sweep that answers it has to run on the interpreter CI actually uses, which this container
+cannot install. Everything below is measured, and the one thing still owed is named with its date.*
+
+### ⓶ THE NUCLEAR-NETWORK PACKAGE — PINNED ON A MEASUREMENT, `pynucastro==3.1.0`
+
+- **Which receipts need it — measured both ways, not taken from the docstring.** Each of the eleven
+  registered receipts that mention the network was run twice: with pynucastro 3.1.0, and with the module
+  blocked (a stub on `PYTHONPATH` that raises `ImportError`).
+  - **Exactly four need it:** each exits 0 with it and 1 without.
+    - `P16_theory_error_and_likelihood`
+    - `P16_validate_bbn`
+    - `P16_the_bbn_network_cannot_see_the_arms_equality…`
+    - `P16_the_window_is_crossed_twice…`
+  - The other seven pass either way.
+  - ⚠ *`check_receipts_run`'s docstring says "four need `pynucastro`", but its declared `UNRUNNABLE` list
+    names only the first two. The count was right and the list was two short. Named, not edited: that
+    file is yours.*
+- **The version they pass on.** All four passed on 3.1.0 in the heavy job's full-history dispatch
+  (868 pass; the three failures were elsewhere) and here. They also pass on the **exact pinned set**
+  (numpy 2.4.4, scipy 1.17.1, camb 2.0.4, matplotlib 3.10.9, pynucastro 3.1.0), installed together in a
+  clean virtual environment. **So every version in the file is now one some run has passed on**, which
+  is your guard's own test.
+- **`matplotlib==3.10.9` checked by the same rule:** CI had been installing 3.11.2. The three receipts
+  that import matplotlib (`P03_the_turnaround_figure`, `P03_the_U3_figure`, `F_flat`) pass on 3.10.9.
+  Your pin stands, now on a run.
+
+### ⓷ THE REPAIRED `Var(R)` FLOOR — CONFIRMED ON EIGHT BUILDS, AND THE JUDGEMENT RENEWED, NOT INHERITED
+
+| build | floor (max of ten eigenvectors) | Var(R) | rc |
+|---|---|---|---|
+| Prescott, 1 / 4 threads | 1.17e-12 / 1.05e-12 | 2.309e-7 | 0 / 0 |
+| Sandybridge, 1 / 4 | 1.36e-12 / 2.05e-12 | 2.309e-7 | 0 / 0 |
+| Haswell, 1 / 4 | 1.48e-12 / 1.65e-12 | 2.309e-7 | 0 / 0 |
+| SkylakeX, 1 / 4 | 1.65e-12 / 1.90e-12 | 2.309e-7 | 0 / 0 |
+
+- **The spread is under 2×**, where the single-eigenvector floor moved 133×. Var(R) does not move at all.
+  **The repair holds.** It is recorded in the receipt's own "owed" note, which now says what was owed and
+  that it is met.
+- **The judgement, renewed at the repaired receipt's blob (`9ac359b8ce4c`).** The scoped tolerance job on
+  PR #120 flagged the two `Var(R) > 1e3·VAR_FLOOR` sites again, with headroom 72–140. The old judgement had
+  lapsed with the receipt, as designed.
+  - **Across every build measured, the floor spans 3×:** eight here, 1.05–2.05e-12, and CI's three,
+    1.48–3.18e-12. The tightest headroom is 72×, so a flip needs a floor **72 times** above the noisiest
+    build seen.
+  - The flag is the detector's known blind spot: a threshold scaled by a floor measured in the same run
+    moves with that floor.
+  - **Judged FALSE, with that reasoning in the file**, and the r6961 judgement named as superseded. It is
+    not inherited: its evidence (headroom 12.2 against a 133× spread) no longer describes this receipt.
+
+### ⓵ THE NEWER ENVIRONMENT — THE SWEEP IS RUNNING, AND ⚠ THE INTERPRETER IS THE PART YOUR PIN DOES NOT PIN
+
+- **`requirements-ci.txt` says the interpreter is "pinned by the workflow's `setup-python`". It is not.**
+  `python-version: '3.11'` resolves to the newest 3.11 patch, which is 3.11.16 today against a swept 3.11.15.
+  - So after your pin, the fingerprint gate still fires on every push, on `python` alone. numpy, scipy and
+    the BLAS all read "same".
+  - **This is the same unchosen move your pin exists to prevent, one field over.** It is also what keeps
+    `fast` red on `main`.
+- **The sweep that answers ⓵ is running in CI now.** It is the whole tolerance class on three builds,
+  under Python 3.11.16 and numpy 2.4.6, started by the backstop dispatch on this branch. 3.11.16 is not
+  installable here (uv has no build of it), so the answer has to come from CI's own interpreter.
+  - It is bounded by the job's 300-minute limit, so it ends by 16:42 UTC today.
+  - Then, in one push, from that run's own printed environment and nothing else:
+    - the numpy pin moves to what was swept;
+    - `setup-python` is pinned to the exact patch that was swept;
+    - `receipts/ENV_FINGERPRINT.txt` moves with both;
+    - every site it flags is read, then repaired or named before anything moves.
+  - ⌗ *Pinning the patch in the workflow is the pin half of ⓵, not new wiring: it is what your file already
+    says it does. If you would rather float the patch and drop `python` from the fingerprint, that is the
+    other consistent choice. It is yours, and I have not made it.*
+
+### ⌗ ONE OBSERVATION, UNREPRODUCED AND SO NOT A FINDING
+
+- `L_numerics/Q1_a_stated_tolerance_is_a_request…` exited 1 once, on the four-thread build of PR #120's
+  scoped tolerance probe, with three other receipts probing beside it.
+- The guard did its job: **"not a sweep of 1 receipt"**, rather than "0 flagged".
+- Alone at four threads it passes in 34 s, "ALL PASS", and each of its four child receipts takes about
+  6 s at one thread and at four.
+- **Two observations are not a cause.** The whole-suite sweep includes Q1 on the same four-thread build,
+  and its result will say whether this recurs.
+
+### ⛔ THE GUARDS
+
+- **A sweep of nothing is not a clean sweep.** Both detectors exit 2 on any receipt that did not run to
+  exit 0, and that is how Q1's one failure surfaced.
+- **Every version in the pin file is one some run has passed on:** pynucastro and matplotlib by name,
+  above, and the full set installed together.
+- **Seeded both ways:**
+  - the pynucastro need: with the module and with it blocked;
+  - the judged-sites file: passes at the blob it names, counts the flags at any other.
+- **Not asked, and not done:** no cadence work, no index refresh, no corpus prose.
+
+---
 
 ## ⚑ `r6977+70.1` — `PO-62` WIRED: A COMMITTED INDEX, THREE SCOPED JOBS, AND THE RUNNER LONGEST-FIRST — AND THE INDEX I MEASURED LAST ROUND WAS BLIND TO EVERY GLOB
 
