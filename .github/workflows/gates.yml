@@ -249,8 +249,11 @@ jobs:
       - name: nothing in scope — nothing runs
         if: steps.scope.outputs.n == '0'
         run: echo "0 receipts in the suite scope of this range -- nothing to run, and nothing was."
+      # ⌗ three attempts: at r6977+70.1 one run's index answered "camb (from versions: none)" while the
+      #   PR run of the same commit installed it in 19 s.  A package that is really gone fails all three.
       - if: steps.scope.outputs.n != '0'
-        run: pip install numpy scipy sympy mpmath camb pynucastro matplotlib
+        shell: bash
+        run: for i in 1 2 3; do pip install numpy scipy sympy mpmath camb pynucastro matplotlib && exit 0; sleep 30; done; exit 1
       - name: run the scoped receipts, as the runner runs every receipt
         if: steps.scope.outputs.n != '0'
         shell: bash
@@ -283,8 +286,11 @@ jobs:
       - name: nothing in scope — nothing runs
         if: steps.scope.outputs.n == '0'
         run: echo "0 receipts in the reads scope of this range -- nothing to run, and nothing was."
+      # ⌗ three attempts: at r6977+70.1 one run's index answered "camb (from versions: none)" while the
+      #   PR run of the same commit installed it in 19 s.  A package that is really gone fails all three.
       - if: steps.scope.outputs.n != '0'
-        run: pip install numpy scipy sympy mpmath camb pynucastro matplotlib
+        shell: bash
+        run: for i in 1 2 3; do pip install numpy scipy sympy mpmath camb pynucastro matplotlib && exit 0; sleep 30; done; exit 1
       - name: trace the scoped receipts from their own directories
         if: steps.scope.outputs.n != '0'
         run: python3 scripts/sweep_runner_reads.py --out "$RUNNER_TEMP/trace" --from "$RUNNER_TEMP/scope.txt"
@@ -316,8 +322,11 @@ jobs:
       - name: nothing in scope — nothing runs
         if: steps.scope.outputs.n == '0'
         run: echo "0 receipts in the tolerance scope of this range -- nothing to run, and nothing was."
+      # ⌗ three attempts: at r6977+70.1 one run's index answered "camb (from versions: none)" while the
+      #   PR run of the same commit installed it in 19 s.  A package that is really gone fails all three.
       - if: steps.scope.outputs.n != '0'
-        run: pip install numpy scipy sympy mpmath camb pynucastro matplotlib
+        shell: bash
+        run: for i in 1 2 3; do pip install numpy scipy sympy mpmath camb pynucastro matplotlib && exit 0; sleep 30; done; exit 1
       - name: probe on three builds, compare each with the runner's
         if: steps.scope.outputs.n != '0'
         shell: bash
