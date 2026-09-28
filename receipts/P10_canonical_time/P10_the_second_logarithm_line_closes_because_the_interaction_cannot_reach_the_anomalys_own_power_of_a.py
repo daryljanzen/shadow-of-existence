@@ -294,33 +294,72 @@ for a_ in [1.0, 1.5, 2.25, 3.375]:
 #     an argument about that run.  The scan fixed WHERE the step sits; it did not fix the margin, and
 #     the margin is the part a second machine sees. **
 #   ⇒ ** REPAIRED BY MEASUREMENT RATHER THAN BY ARGUMENT: each tolerance is set an order of magnitude
-#     above the worst value measured across those builds.  Every failure mode here is O(1) -- a wrong
-#     power of a, a wrong exponent, a truncation-dependent answer -- so the widened tolerances leave
-#     about five decades of real margin while no longer certifying one machine. **
+#     above the worst value measured across those builds. **
+#
+# ⛔⛭⛭ r6990 (60, on 70's detector firing again on this very site): ** AND THE r6975 REPAIR'S SENTENCE
+#   AND ITS ARITHMETIC WERE NOT THE SAME OBJECT, WHICH IS THE EIGHTH FACE ON THIS LINE'S OWN FILE. **
+#   `r6975` gave the REASON "every failure mode here is O(1) ... so the widened tolerances leave about
+#   five decades of real margin", and then implemented "an order of magnitude above the worst value
+#   measured" -- which is 16x to 950x of headroom, not five decades.  ** A statement that names both a
+#   criterion and the thing said to satisfy it has to check the two are the same object, and here they
+#   were not: the numbers still carried a measured floor's fingerprint, so the detector flagged all
+#   three sites again -- correctly. **  (`sweep_tolerances.py`: a site is flagged when its error moves
+#   more than 10% between builds AND headroom < 1e3; widening from 2.4-13.6x to 16-950x moved the
+#   headroom and never crossed that bar, so the repair relieved the symptom's size and not its class.)
+#   ⇒ ** THE TWO REPAIRS THIS TIME, IN ORDER OF STRENGTH. **
+#     (1) ⛭ THE SCAN NOW REPORTS ITS WORST GRID POINT RATHER THAN ITS BEST, which is a STRICTLY
+#         STRONGER CLAIM and the only one of the three that is build-stable by construction: "the
+#         closed form agrees at EVERY step tried" instead of "there is a step where it agrees to
+#         2.5e-9".  The best point was a floor lottery -- which lam wins is set by round-off, and the
+#         three builds picked different winners (2.5e-9 / 7.3e-8 / 1.5e-7 are three DIFFERENT grid
+#         points' values, which is what "the scan minimum is floor-dominated" means read exactly).
+#         The worst point is the lam = 1e-2 end, where the lam^2 truncation term dominates the noise,
+#         so it is the same number on every build.  ⌗ *The printed scan is kept, so the balance the
+#         scan exists to show is still visible.*
+#     (2) AND EACH TOLERANCE IS NOW SET FROM WHAT THE CHECK DISCRIMINATES, NOT FROM A FLOOR.  The
+#         alternatives are O(1) apart -- a wrong closed form is wrong by a factor, an exponent is 1
+#         rather than 3, a cut-dependent answer moves by its own size -- so a tolerance three or more
+#         decades above the observed error still separates them by decades, and is a claim about the
+#         PHYSICS rather than about this machine's round-off.  ** That is the five decades r6975
+#         asserted, now actually spent. **
+#   ⌗ ** AND A FOURTH SITE CAME OUT WHEN THE FIRST THREE STOPPED SHOUTING, which is worth recording as
+#     a property of the detector rather than as a surprise: the n = 3 exponent check at 1e-2 carried
+#     420x-526x over an error that moves 17-20% between builds, and CI's own run of the same three
+#     builds had not shown it (its movement there stayed under the 10% bar).  ⇒ *A flag list is a
+#     LOWER BOUND on the sites of its class, and incompleteness moves it upward -- so all four are
+#     repaired by the one criterion rather than the three that were named.*
+#   ⌗ *And this is the second consecutive revision in which a sentence of this line's own is found to
+#     name a criterion its arithmetic does not meet.  The instrument that caught it is node 70's, run
+#     on our file -- which is the cheapest kind of correction there is.*
 #   ⌗ *70's alternative, carrying the second difference in exact arithmetic, is better where it
 #     applies and is not taken here: the quantity is an eigenvalue of a truncated matrix, so exact
 #     arithmetic would change the instrument rather than its tolerance.  Named as the stronger route.*
 _LAM_GRID = (1e-2, 3e-3, 1e-3)
 _rels = {lam: abs(shift2(1.0, 8, lam)[1] / closed_form(1.0) - 1.0) for lam in _LAM_GRID}
-rel = min(_rels.values())
-_at = min(_rels, key=_rels.get)
+rel = max(_rels.values())       # r6990: the WORST grid point, not the best -- see the note above
+_at = max(_rels, key=_rels.get)
 print("\n   lam-scan of the second difference (relative to the closed form), a = 1, Nt = 8:")
 for lam in _LAM_GRID:
-    print(f"     lam = {lam:.0e}   {_rels[lam]:.2e}" + ("   <- best" if lam == _at else ""))
-check(rel < 1e-5,      # r6975: 1e-5, an order above the worst of 2.5e-9 / 7.3e-8 / 1.5e-7
-      f"** the closed form matches the diagonalization to {rel:.1e} relative at lam = {_at:.0e}: "
-      f"-lam^2 mu_1 mu_2 / (32 a^3 mu_3 sum mu), and at a=1 both give -1/192 **")
-check(max(abs(np.array(sl_f) + 1)) < 1e-3,   # r6975: 4.2x-5.3x of headroom measured at 1e-5
+    print(f"     lam = {lam:.0e}   {_rels[lam]:.2e}" + ("   <- worst" if lam == _at else ""))
+check(rel < 1e-2,      # r6990: set from the discrimination -- a wrong closed form is O(1) out, so this
+                       # separates by four decades; the worst point is truncation-dominated, not a floor
+      f"** the closed form matches the diagonalization to {rel:.1e} relative at EVERY lam tried "
+      f"(worst at lam = {_at:.0e}): -lam^2 mu_1 mu_2 / (32 a^3 mu_3 sum mu), and at a=1 both give "
+      f"-1/192 **")
+check(max(abs(np.array(sl_f) + 1)) < 1e-1,   # r6990: the discrimination is 1 against 3, so this is a
+                                            # twentieth of the gap and not a floor measured at 1e-5
       f"the FREE energy's exponent measures {np.mean(sl_f):+.6f} -- the n = 1 family, which is "
       "where the anomaly and its logarithm live")
-check(max(abs(np.array(sl_s) + 3)) < 1e-2,   # r6975: the same site on the n = 3 branch
+check(max(abs(np.array(sl_s) + 3)) < 1e-1,   # r6990: the same site on the n = 3 branch, and the same
+                                            # discrimination -- 3 against 1, so a twentieth of the gap
       f"** the cubic's second-order shift measures exponent {np.mean(sl_s):+.6f} -- it is an "
       "n = 3 term, NOT an n = 1 term **")
 
 tr = [shift2(2.0, Nt=N)[1] for N in (5, 6, 7, 8, 9)]
 spread = max(tr) - min(tr)
 print(f"\n      truncation Nt = 5..9 at a = 2: {[f'{q:.9e}' for q in tr]}")
-check(abs(spread / tr[0]) < 1e-4,   # r6975: 2.4x-3.7x of headroom measured at 1e-5
+check(abs(spread / tr[0]) < 1e-2,   # r6990: a cut-dependent exponent would move by its own O(1)
+                                   # size, so 1% separates by decades; 1e-4 was a floor with 16x over it
       f"and the measurement is truncation-stable to {abs(spread / tr[0]):.1e} relative, so the "
       "exponent is a property of the operator rather than of the cut")
 
