@@ -302,11 +302,16 @@ for u in users[:8]:
     print(f"      {u}")
 heavy = wf[wf.index('  receipts:'):]
 co = heavy[heavy.index('actions/checkout'):heavy.index('actions/checkout') + 160]
-check('fetch-depth' not in co.split('- run:')[0],
-      "the `receipts` job's checkout does not request history, while the gates job's does "
-      "(`fetch-depth: 0`, line 30)")
-print("  ⌗ Reported, not repaired here: this receipt is one of the affected files, so repairing")
-print("    the workflow from inside it would be the verifier editing its own subject.")
+# ⛭ r6977+70.1 (node 70): the finding above was reported here and not repaired, and it stood until the
+#   first CI dispatch that actually ran the job measured its cost: 791 pass, 80 fail, where a full clone
+#   of the same receipts failed two.  The workflow was repaired THERE, not from inside this file, so this
+#   check now pins the repaired state -- and says what it replaced, because a fix is a different fact
+#   from a finding that was never true.
+check('fetch-depth: 0' in co.split('- run:')[0],
+      "the `receipts` job's checkout now requests history (`fetch-depth: 0`, as the gates job's does) "
+      "-- it did not when this receipt was written; repaired in the workflow at r6977+70.1")
+print("  ⌗ Reported here first; repaired in the workflow, not from inside this file, which stays the")
+print("    verifier and not the editor of its own subject.")
 
 # =====================================================================================
 print(); print(BAR)

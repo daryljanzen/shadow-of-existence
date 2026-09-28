@@ -1,7 +1,15 @@
 #!/usr/bin/env python3
 """sweep_tolerances.py -- ** PO-60's THIRD CLASS: A TOLERANCE CALIBRATED ON ONE MACHINE CERTIFIES THAT MACHINE. **
 
-Built r6961+70.2 by node 70, on node 66's r6959 order.  NOT wired into CI.
+Built r6961+70.2 by node 70, on node 66's r6959 order.  WIRED r6977+70.1: per push on the receipts
+`receipt_scope.py --scope tolerance` names (`--from`), and whole in the monthly backstop.
+
+** r6977+70.1, FOR THE WIRING. **  `--from LIST` probes only the listed receipts.  `--compare` passes a
+FLAG (never a FLIP) at a site recorded in receipts/TOLERANCE_JUDGED.json ONLY while the receipt's git blob
+is the one it was judged on -- a judgement lapses the moment the receipt changes.  ⛔ And a relative
+`--probe` directory silently recorded nothing: the child runs from the receipt's own directory, so its log
+landed there and every receipt was filed `rc=None, 0 sites` -- a sweep of nothing that reads as clean.  The
+directory is made absolute now.  *(The r6961 sweep used absolute paths; its numbers stand.)*
 
 ** THE CLASS (r6947). **  A check compared a closed form against a diagonalization and read 2.5e-9 on
 the seat that wrote it and 5.1e-7 on the seat that gated it, against a threshold of 1e-7.  Neither was
@@ -64,6 +72,8 @@ fraction of flagged sites where that parameter could be located and what it show
     another compiler); a floor-reader whose error happens not to move between these builds; and any
     threshold that is itself a measured floor, which it flags whether or not it is a defect.
 
+  --from LIST  (with --probe) only the receipts listed, one per line
+  --judged F   the judged-sites file (default receipts/TOLERANCE_JUDGED.json)
   --seed       the both-ways seeding: a second difference at a step far below its balance (planted),
                a converged eigenvalue with 1e5 headroom and a truncation-dominated finite difference
                with thin headroom (both legitimate).  Exit 0 iff exactly the planted one is flagged.
@@ -421,6 +431,23 @@ def compare(a_dir, b_dir):
     return out
 
 
+def not_swept(a_dir, b_dir):
+    """⛔ r6977+70.1: every receipt whose probe did not run to exit 0 on BOTH builds.  The first backstop
+    dispatch ran without numpy (its install had failed), every receipt died on import, and `compare` --
+    which only looks at sites that were recorded -- read "0 flagged" off 871 empty probes.  A comparison of
+    nothing is not a clean result, so this is reported and the exit code is 2."""
+    out = []
+    for pa in sorted(glob.glob(os.path.join(a_dir, '*.json'))):
+        pb = os.path.join(b_dir, os.path.basename(pa))
+        A = json.load(open(pa))
+        B = json.load(open(pb)) if os.path.exists(pb) else {'rc': 'missing'}
+        bad = [f'{n} rc={d.get("rc")}' + (' timeout' if d.get('timeout') else '')
+               for n, d in (('A', A), ('B', B)) if d.get('rc') != 0]
+        if bad:
+            out.append((os.path.basename(pa)[:-5], ', '.join(bad)))
+    return out
+
+
 def _run(root, rel, budget, out, env_extra):
     key = rel.replace('/', '_')
     log = os.path.join(out, key + '.json')
@@ -438,7 +465,7 @@ def _run(root, rel, budget, out, env_extra):
             json.dump({'receipt': rel, 'rc': None, 'sites': {}, 'timeout': True}, fh)
 
 
-def probe_all(root, out, jobs, env_extra):
+def probe_all(root, out, jobs, env_extra, only=None):
     import importlib.util
     from concurrent.futures import ThreadPoolExecutor
     spec = importlib.util.spec_from_file_location('rar', os.path.join(root, 'scripts',
@@ -448,11 +475,47 @@ def probe_all(root, out, jobs, env_extra):
     spec.loader.exec_module(m)
     sys.argv = argv
     files, _ = m.registered()
+    if only is not None:                  # a scoped run: the receipts `receipt_scope` named, nothing else
+        files = [f for f in files if os.path.relpath(f, root) in only]
+    out = os.path.abspath(out)            # the child runs from the receipt's directory: a relative log lands there
     os.makedirs(out, exist_ok=True)
     with ThreadPoolExecutor(max_workers=jobs) as ex:
         list(ex.map(lambda f: _run(root, os.path.relpath(f, root), 2 * max(900, m.budget(f, 600)),
                                    out, env_extra), files))
     return len(files)
+
+
+# ------------------------------------------------------------------------------ judged sites
+# ⛭ r6977+70.1, for the SCOPED job.  Two sites were read at r6961+70.2 and judged FALSE (a threshold that
+#   is a floor measured on the running machine, which recalibrates itself).  Wired per push, they would
+#   fail every push that scopes their receipt, and a gate that is red for a known reason is a gate that
+#   gets ignored.  ** So a judgement is recorded -- and it is bound to the receipt's git BLOB: the moment the
+#   receipt changes, the judgement LAPSES and the flag counts again until someone reads it. **  A FLIP is
+#   never judged away: a check that passes on one build and fails on another is the class itself.
+JUDGED = os.path.join('receipts', 'TOLERANCE_JUDGED.json')
+
+
+def split_judged(flags, path, root):
+    try:
+        J = json.load(open(path))['sites']
+    except (OSError, ValueError, KeyError):
+        return [], []
+    blob = {}
+    for l in subprocess.run(['git', 'ls-files', '-s', 'receipts'], cwd=root, capture_output=True,
+                            text=True).stdout.split('\n'):
+        if '\t' in l:
+            blob[l.split('\t', 1)[1].replace('/', '_')] = l.split()[1]
+    judged, lapsed = [], set()
+    for r in flags:
+        key = r['receipt'] + ('' if r['receipt'].endswith('.py') else '.py')
+        for rec, j in J.items():
+            if rec.replace('/', '_') != key:
+                continue
+            if not blob.get(key, '').startswith(j['sha']):
+                lapsed.add((rec, f"judged on blob {j['sha']}, now {blob.get(key, 'absent')[:12]}"))
+            elif r['kind'] == 'FLAG' and r['site'] in j['sites']:
+                judged.append(r)
+    return judged, sorted(lapsed)
 
 
 # ------------------------------------------------------------------------------ seeding
@@ -523,6 +586,9 @@ def main():
     ap.add_argument('--threads', default='1')
     ap.add_argument('--jobs', type=int, default=4)
     ap.add_argument('--compare', nargs=2)
+    ap.add_argument('--from', dest='frm', help='probe only the receipts listed in this file, one per line')
+    ap.add_argument('--judged', default=os.path.join(os.path.dirname(os.path.dirname(HERE)), JUDGED),
+                    help='sites read and judged FALSE, each bound to the receipt blob it was judged on')
     ap.add_argument('--seed', action='store_true')
     a = ap.parse_args()
     if a.seed:
@@ -540,12 +606,16 @@ def main():
                'MKL_NUM_THREADS': a.threads}
         if a.coretype:
             env['OPENBLAS_CORETYPE'] = a.coretype
-        n = probe_all(os.path.abspath(a.root), a.probe, a.jobs, env)
+        only = {l.strip() for l in open(a.frm) if l.strip()} if a.frm else None
+        n = probe_all(os.path.abspath(a.root), a.probe, a.jobs, env, only)
         print(f'  probed {n} registered receipt(s) into {a.probe}')
         return 0
     if a.compare:
         rows = compare(*a.compare)
+        unswept = not_swept(*a.compare)
         flags = [r for r in rows if r['kind'] in ('FLAG', 'FLIP')]
+        judged, lapsed = split_judged(flags, a.judged, os.path.abspath(a.root))
+        flags = [r for r in flags if r not in judged]
         eps = [r for r in rows if r['kind'] == 'EPS']
         print(f'\n  BUILD PERTURBATION -- {len(flags)} flagged site(s); {len(eps)} at the precision '
               f'floor (< {EPS_LEVEL:g}), counted and not flagged')
@@ -553,6 +623,18 @@ def main():
             print('  ⛔', json.dumps(r))
         for r in eps:
             print('  ⌗', json.dumps(r))
+        for r in judged:
+            print('  ⌗ JUDGED FALSE, receipt unchanged since:', json.dumps(r))
+        for rec, why in lapsed:
+            print(f'  ⚠ judgement LAPSED for {rec}: {why} -- its flags above count until it is read again')
+        if unswept:
+            print(f'\n  ⛔ NOT A SWEEP OF {len(unswept)} RECEIPT(S): they did not run to exit 0 on both builds, so '
+                  f'none of their comparisons was measured -- "0 flagged" says nothing about them.')
+            for rec, why in unswept[:12]:
+                print(f'      {why:28} {rec}')
+            if len(unswept) > 12:
+                print(f'      ... and {len(unswept) - 12} more')
+            return 2
         return 1 if flags else 0
     ap.print_help()
     return 2

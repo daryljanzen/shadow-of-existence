@@ -135,7 +135,13 @@ jobs:
     #   figure plus headroom, not a round number chosen to feel safe.*
     timeout-minutes: 75
     steps:
+      # ⛔ r6977+70.1 (70): FULL HISTORY.  With the default depth-1 checkout every receipt that reads an
+      #   earlier commit (`git show <sha>^`) fails here and passes in any real clone -- the first dispatch
+      #   of this job read 791 pass, 80 fail, where a full clone of the same receipts fails only r6975's
+      #   two -- and every failure legible in the log is a history read or a commit not fetched.  Never
+      #   green under THIS runner: PO-60's second class, one level up.
       - uses: actions/checkout@v4
+        with: { fetch-depth: 0 }
       - uses: actions/setup-python@v5
         with: { python-version: '3.11' }
       # ** THE GAIN THAT ONLY CI CAN GIVE. **  Ten receipts import camb/pynucastro,
@@ -161,16 +167,195 @@ jobs:
     runs-on: ubuntu-latest
     timeout-minutes: 300
     steps:
+      # ⛔ r6977+70.1 (70): FULL HISTORY.  With the default depth-1 checkout every receipt that reads an
+      #   earlier commit (`git show <sha>^`) fails here and passes in any real clone -- the first dispatch
+      #   of this job read 791 pass, 80 fail, where a full clone of the same receipts fails only r6975's
+      #   two -- and every failure legible in the log is a history read or a commit not fetched.  Never
+      #   green under THIS runner: PO-60's second class, one level up.
       - uses: actions/checkout@v4
+        with: { fetch-depth: 0 }
       - uses: actions/setup-python@v5
         with: { python-version: '3.11' }
-      - run: pip install numpy scipy sympy mpmath camb pynucastro matplotlib
+      # ⛔ r6977+70.1: the first dispatch's install failed on an index hiccup, the `always()` steps below
+      #   ran anyway without numpy, every receipt died on import, and the tolerance comparison read
+      #   "0 flagged" off 871 empty probes.  So: three attempts, and every sweep step requires the install.
+      - name: install
+        id: install
+        shell: bash
+        run: for i in 1 2 3; do pip install numpy scipy sympy mpmath camb pynucastro matplotlib && exit 0; sleep 30; done; exit 1
       # ⓵ the cheap structural class, whole -- also wired per push, so this is only a cross-check
       - run: python3 scripts/sweep_vacuous_pins.py
       # ⓶ the runner-read class, whole.  ** This is also what REFRESHES THE READ INDEX **, which is
       #   why the backstop cannot be dropped once the per-push scopes are wired.
-      - run: python3 scripts/sweep_runner_reads.py
+      #   ⛭ r6977+70.1 (70): both sweeps were invoked BARE, and bare they print their usage and exit 2 --
+      #   so this job would have failed on its first firing having swept nothing.  They take an output
+      #   directory (and the tolerance sweep three probes and two comparisons), spelled out below.
+      - name: ⓶ the runner-read sweep, whole
+        id: reads
+        run: python3 scripts/sweep_runner_reads.py --out "$RUNNER_TEMP/trace"
+      # ⌗ the index is written from the same trace whether or not the sweep flagged anything -- a flag
+      #   is a receipt to repair, not a reason to keep scoping on last month's map.  CI cannot commit, so
+      #   the refreshed index is an ARTIFACT: a seat downloads it and commits it as receipts/READ_INDEX.json.
+      - name: index — the read index, refreshed from this trace
+        if: (success() || failure()) && steps.install.outcome == 'success'
+        shell: bash
+        run: |
+          python3 scripts/receipt_scope.py --emit "$RUNNER_TEMP/trace" --index "$RUNNER_TEMP/READ_INDEX.json"
+          git diff --no-index --stat receipts/READ_INDEX.json "$RUNNER_TEMP/READ_INDEX.json" || true
+      - if: (success() || failure()) && steps.install.outcome == 'success'
+        uses: actions/upload-artifact@v4
+        with: { name: READ_INDEX, path: '${{ runner.temp }}/READ_INDEX.json' }
       # ⓷ the machine-dependent-tolerance class, whole, across the builds that decide round-off.
       #   ⚠ *If this goes red on a build nobody has swept, the remedy is to repair or name what it
       #   flags and THEN refresh receipts/ENV_FINGERPRINT.txt -- never the file alone.*
-      - run: python3 scripts/sweep_tolerances.py
+      - name: ⓷ the tolerance perturbation, whole, on three builds
+        if: (success() || failure()) && steps.install.outcome == 'success'
+        shell: bash
+        # ⌗ the environment it swept on is printed FIRST, so a refreshed ENV_FINGERPRINT.txt can be copied
+        #   from the log of a sweep that ran on it, and from nothing else.
+        run: |
+          NODE=ci python3 corpus/check_env_fingerprint.py || true
+          T="$RUNNER_TEMP"
+          python3 scripts/sweep_tolerances.py --probe "$T/tA"
+          python3 scripts/sweep_tolerances.py --probe "$T/tB" --threads 4
+          python3 scripts/sweep_tolerances.py --probe "$T/tC" --threads 2 --coretype Prescott
+          rc=0
+          python3 scripts/sweep_tolerances.py --compare "$T/tA" "$T/tB" || rc=1
+          python3 scripts/sweep_tolerances.py --compare "$T/tA" "$T/tC" || rc=1
+          exit $rc
+
+  # ===================================================================================================
+  # ⛭ r6977+70.1 (node 70), PO-62: THE THREE SCOPED JOBS -- each detector run on exactly the receipts
+  #   this push, or this PR, can have changed.  ** Scoping runs the SAME detector on FEWER receipts; a
+  #   receipt outside the scope is one whose source, reads, imports and globs the range did not touch. **
+  #
+  #   ⌗ WHAT IS SCOPED, PER EVENT.  push: exactly the commits pushed (`before..after`), so the check on a
+  #     commit is about that push.  pull_request: the whole PR against its base -- what merging it
+  #     brings -- so a later push that is green cannot hide an earlier red one on the same PR.  A branch
+  #     with an open PR therefore pays both, and the cost below is per event.
+  #   ⌗ THE INDEX, AND WHAT HAPPENS WHEN IT IS STALE.  The scope is read from receipts/READ_INDEX.json,
+  #     one full trace of the suite, committed.  ** It is REFRESHED by the monthly `backstop` job below **
+  #     (its `index` step writes a new one as an artifact; a seat commits it).  A receipt edited since
+  #     the trace is scoped on its traced reads PLUS its current source's names and imports; a receipt
+  #     added since, on the latter alone -- both counts are printed by every scope step.  ** And the
+  #     whole index EXPIRES 35 days after the commit it was traced at: every scoped job then FAILS and
+  #     names the remedy, rather than scoping on a map of a tree that has moved on. **
+  #   ⌗ A push that touches nothing any receipt reads runs NOTHING: the scope step prints 0, and the
+  #     steps that install and run are skipped, so such a push costs a checkout and a `git diff`.
+  scope-suite:
+    name: scoped — the plain suite, on what this push can have changed
+    if: github.event_name == 'push' || github.event_name == 'pull_request'
+    runs-on: ubuntu-latest
+    # ⌗ COST, measured (receipt_scope.py --replay 400 against the r6977 index, main's first-parent
+    #   pushes 09-12..09-28): 90 receipts at the median, 184 at p90, 397 at most; 1,547 s of
+    #   compute at the mean (about 7 minutes of wall at four jobs), 3,598 s at p90, 6,562 s at most; 7 of 400
+    #   pushes had nothing in scope.  Worst case is the whole suite, which
+    #   the heavy job below runs in ~50 minutes on the same four jobs -- hence the same 75.
+    timeout-minutes: 75
+    steps:
+      - uses: actions/checkout@v4
+        with: { fetch-depth: 0 }
+      - uses: actions/setup-python@v5
+        with: { python-version: '3.11' }
+      - name: scope — which receipts this range can have changed
+        id: scope
+        shell: bash
+        run: |
+          python3 scripts/receipt_scope.py --ci --scope suite --list "$RUNNER_TEMP/scope.txt"
+          echo "n=$(wc -l < "$RUNNER_TEMP/scope.txt")" >> "$GITHUB_OUTPUT"
+          sed 's/^/    /' "$RUNNER_TEMP/scope.txt"
+      - name: nothing in scope — nothing runs
+        if: steps.scope.outputs.n == '0'
+        run: echo "0 receipts in the suite scope of this range -- nothing to run, and nothing was."
+      # ⌗ three attempts: at r6977+70.1 one run's index answered "camb (from versions: none)" while the
+      #   PR run of the same commit installed it in 19 s.  A package that is really gone fails all three.
+      - if: steps.scope.outputs.n != '0'
+        shell: bash
+        run: for i in 1 2 3; do pip install numpy scipy sympy mpmath camb pynucastro matplotlib && exit 0; sleep 30; done; exit 1
+      - name: run the scoped receipts, as the runner runs every receipt
+        if: steps.scope.outputs.n != '0'
+        shell: bash
+        # ⛔ `SLOW` is not a pass here either: the verdict must read `0 fail, 0 over timeout`.
+        run: |
+          python3 scripts/run_all_receipts.py --from "$RUNNER_TEMP/scope.txt" --jobs 4 --timeout 600 \
+            | tee "$RUNNER_TEMP/scoped_result.txt"
+          grep -Eq '^  [0-9]+ pass, 0 fail, 0 over timeout' "$RUNNER_TEMP/scoped_result.txt"
+
+  scope-reads:
+    name: scoped — the runner-read sweep, on what this push deleted or renamed
+    if: github.event_name == 'push' || github.event_name == 'pull_request'
+    runs-on: ubuntu-latest
+    # ⌗ COST, measured as above: 0 receipts at the median, 1 at p90, 152 at most; 19 s of compute at the
+    #   mean; 265 of 400 pushes had nothing in scope.
+    #   Scope: a receipt that changed, or one whose read or glob hit a path the range DELETED or RENAMED.
+    timeout-minutes: 75
+    steps:
+      - uses: actions/checkout@v4
+        with: { fetch-depth: 0 }
+      - uses: actions/setup-python@v5
+        with: { python-version: '3.11' }
+      - name: scope — which receipts this range can have made read nothing
+        id: scope
+        shell: bash
+        run: |
+          python3 scripts/receipt_scope.py --ci --scope reads --list "$RUNNER_TEMP/scope.txt"
+          echo "n=$(wc -l < "$RUNNER_TEMP/scope.txt")" >> "$GITHUB_OUTPUT"
+          sed 's/^/    /' "$RUNNER_TEMP/scope.txt"
+      - name: nothing in scope — nothing runs
+        if: steps.scope.outputs.n == '0'
+        run: echo "0 receipts in the reads scope of this range -- nothing to run, and nothing was."
+      # ⌗ three attempts: at r6977+70.1 one run's index answered "camb (from versions: none)" while the
+      #   PR run of the same commit installed it in 19 s.  A package that is really gone fails all three.
+      - if: steps.scope.outputs.n != '0'
+        shell: bash
+        run: for i in 1 2 3; do pip install numpy scipy sympy mpmath camb pynucastro matplotlib && exit 0; sleep 30; done; exit 1
+      - name: trace the scoped receipts from their own directories
+        if: steps.scope.outputs.n != '0'
+        run: python3 scripts/sweep_runner_reads.py --out "$RUNNER_TEMP/trace" --from "$RUNNER_TEMP/scope.txt"
+
+  scope-tolerance:
+    name: scoped — the tolerance perturbation, on code and data this push changed
+    if: github.event_name == 'push' || github.event_name == 'pull_request'
+    runs-on: ubuntu-latest
+    # ⌗ COST, measured as above: 5 receipts at the median, 40 at p90, 232 at most; 674 s at the
+    #   mean, 1,539 s at p90; 87 of 400 pushes had nothing in scope.  Three probes of the same receipts
+    #   (the runner's one thread; four threads; the Prescott kernel at two), so a scope costs three
+    #   times its receipts' time.  Worst case measured: 5,937 s x 3, about 75 minutes at four jobs, hence 120.
+    #   Scope: a receipt that changed, or code or data it reads, imports or names -- never prose.
+    #   ⚠ The ENVIRONMENT is not in any diff: that half of the class is `check_env_fingerprint` in the
+    #   fast job and the whole sweep in `backstop`.
+    timeout-minutes: 120
+    steps:
+      - uses: actions/checkout@v4
+        with: { fetch-depth: 0 }
+      - uses: actions/setup-python@v5
+        with: { python-version: '3.11' }
+      - name: scope — which receipts this range's code and data can have moved
+        id: scope
+        shell: bash
+        run: |
+          python3 scripts/receipt_scope.py --ci --scope tolerance --list "$RUNNER_TEMP/scope.txt"
+          echo "n=$(wc -l < "$RUNNER_TEMP/scope.txt")" >> "$GITHUB_OUTPUT"
+          sed 's/^/    /' "$RUNNER_TEMP/scope.txt"
+      - name: nothing in scope — nothing runs
+        if: steps.scope.outputs.n == '0'
+        run: echo "0 receipts in the tolerance scope of this range -- nothing to run, and nothing was."
+      # ⌗ three attempts: at r6977+70.1 one run's index answered "camb (from versions: none)" while the
+      #   PR run of the same commit installed it in 19 s.  A package that is really gone fails all three.
+      - if: steps.scope.outputs.n != '0'
+        shell: bash
+        run: for i in 1 2 3; do pip install numpy scipy sympy mpmath camb pynucastro matplotlib && exit 0; sleep 30; done; exit 1
+      - name: probe on three builds, compare each with the runner's
+        if: steps.scope.outputs.n != '0'
+        shell: bash
+        # ⌗ A site judged FALSE is passed only while its receipt's blob is the one it was judged on
+        #   (receipts/TOLERANCE_JUDGED.json); a FLIP is never passed.  Both comparisons always run.
+        run: |
+          L="$RUNNER_TEMP/scope.txt"; T="$RUNNER_TEMP"
+          python3 scripts/sweep_tolerances.py --probe "$T/tA" --from "$L"
+          python3 scripts/sweep_tolerances.py --probe "$T/tB" --from "$L" --threads 4
+          python3 scripts/sweep_tolerances.py --probe "$T/tC" --from "$L" --threads 2 --coretype Prescott
+          rc=0
+          python3 scripts/sweep_tolerances.py --compare "$T/tA" "$T/tB" || rc=1
+          python3 scripts/sweep_tolerances.py --compare "$T/tA" "$T/tC" || rc=1
+          exit $rc
