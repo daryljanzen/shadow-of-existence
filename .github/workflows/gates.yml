@@ -164,7 +164,13 @@ jobs:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
         with: { python-version: '3.11' }
-      - run: pip install numpy scipy sympy mpmath camb pynucastro matplotlib
+      # ⛔ r6977+70.1: the first dispatch's install failed on an index hiccup, the `always()` steps below
+      #   ran anyway without numpy, every receipt died on import, and the tolerance comparison read
+      #   "0 flagged" off 871 empty probes.  So: three attempts, and every sweep step requires the install.
+      - name: install
+        id: install
+        shell: bash
+        run: for i in 1 2 3; do pip install numpy scipy sympy mpmath camb pynucastro matplotlib && exit 0; sleep 30; done; exit 1
       # ⓵ the cheap structural class, whole -- also wired per push, so this is only a cross-check
       - run: python3 scripts/sweep_vacuous_pins.py
       # ⓶ the runner-read class, whole.  ** This is also what REFRESHES THE READ INDEX **, which is
@@ -179,19 +185,19 @@ jobs:
       #   is a receipt to repair, not a reason to keep scoping on last month's map.  CI cannot commit, so
       #   the refreshed index is an ARTIFACT: a seat downloads it and commits it as receipts/READ_INDEX.json.
       - name: index — the read index, refreshed from this trace
-        if: always()
+        if: (success() || failure()) && steps.install.outcome == 'success'
         shell: bash
         run: |
           python3 scripts/receipt_scope.py --emit "$RUNNER_TEMP/trace" --index "$RUNNER_TEMP/READ_INDEX.json"
           git diff --no-index --stat receipts/READ_INDEX.json "$RUNNER_TEMP/READ_INDEX.json" || true
-      - if: always()
+      - if: (success() || failure()) && steps.install.outcome == 'success'
         uses: actions/upload-artifact@v4
         with: { name: READ_INDEX, path: '${{ runner.temp }}/READ_INDEX.json' }
       # ⓷ the machine-dependent-tolerance class, whole, across the builds that decide round-off.
       #   ⚠ *If this goes red on a build nobody has swept, the remedy is to repair or name what it
       #   flags and THEN refresh receipts/ENV_FINGERPRINT.txt -- never the file alone.*
       - name: ⓷ the tolerance perturbation, whole, on three builds
-        if: always()
+        if: (success() || failure()) && steps.install.outcome == 'success'
         shell: bash
         # ⌗ the environment it swept on is printed FIRST, so a refreshed ENV_FINGERPRINT.txt can be copied
         #   from the log of a sweep that ran on it, and from nothing else.

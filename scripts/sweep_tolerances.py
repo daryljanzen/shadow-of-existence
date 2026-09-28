@@ -431,6 +431,23 @@ def compare(a_dir, b_dir):
     return out
 
 
+def not_swept(a_dir, b_dir):
+    """⛔ r6977+70.1: every receipt whose probe did not run to exit 0 on BOTH builds.  The first backstop
+    dispatch ran without numpy (its install had failed), every receipt died on import, and `compare` --
+    which only looks at sites that were recorded -- read "0 flagged" off 871 empty probes.  A comparison of
+    nothing is not a clean result, so this is reported and the exit code is 2."""
+    out = []
+    for pa in sorted(glob.glob(os.path.join(a_dir, '*.json'))):
+        pb = os.path.join(b_dir, os.path.basename(pa))
+        A = json.load(open(pa))
+        B = json.load(open(pb)) if os.path.exists(pb) else {'rc': 'missing'}
+        bad = [f'{n} rc={d.get("rc")}' + (' timeout' if d.get('timeout') else '')
+               for n, d in (('A', A), ('B', B)) if d.get('rc') != 0]
+        if bad:
+            out.append((os.path.basename(pa)[:-5], ', '.join(bad)))
+    return out
+
+
 def _run(root, rel, budget, out, env_extra):
     key = rel.replace('/', '_')
     log = os.path.join(out, key + '.json')
@@ -595,6 +612,7 @@ def main():
         return 0
     if a.compare:
         rows = compare(*a.compare)
+        unswept = not_swept(*a.compare)
         flags = [r for r in rows if r['kind'] in ('FLAG', 'FLIP')]
         judged, lapsed = split_judged(flags, a.judged, os.path.abspath(a.root))
         flags = [r for r in flags if r not in judged]
@@ -609,6 +627,14 @@ def main():
             print('  ⌗ JUDGED FALSE, receipt unchanged since:', json.dumps(r))
         for rec, why in lapsed:
             print(f'  ⚠ judgement LAPSED for {rec}: {why} -- its flags above count until it is read again')
+        if unswept:
+            print(f'\n  ⛔ NOT A SWEEP OF {len(unswept)} RECEIPT(S): they did not run to exit 0 on both builds, so '
+                  f'none of their comparisons was measured -- "0 flagged" says nothing about them.')
+            for rec, why in unswept[:12]:
+                print(f'      {why:28} {rec}')
+            if len(unswept) > 12:
+                print(f'      ... and {len(unswept) - 12} more')
+            return 2
         return 1 if flags else 0
     ap.print_help()
     return 2

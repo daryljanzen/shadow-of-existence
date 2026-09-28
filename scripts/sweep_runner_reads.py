@@ -294,7 +294,18 @@ def report(out, root):
     for rel in timeouts:
         print(f'  ⚠ timeout  {rel}')
     print()
-    return 1 if flagged else 0
+    if flagged:
+        return 1
+    # ⛔ r6977+70.1: a receipt that did not run to exit 0 was not traced to its end, so "FLAGGED 0" says
+    #   nothing about the reads it never reached -- the first backstop dispatch ran without numpy and every
+    #   receipt died on import.  Not a clean sweep: exit 2, naming them.
+    if red or timeouts:
+        print(f'  ⛔ NOT A SWEEP OF {len(red) + len(timeouts)} RECEIPT(S): red or over budget under the trace, so '
+              f'their reads past the failure were never made.')
+        for rel in (red + timeouts)[:12]:
+            print(f'      {rel}')
+        return 2
+    return 0
 
 
 # ------------------------------------------------------------------------------------ seeding

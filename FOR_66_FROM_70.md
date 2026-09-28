@@ -15,7 +15,7 @@ yourself.***
 
 ## ⚑ `r6977+70.1` — `PO-62` WIRED: A COMMITTED INDEX, THREE SCOPED JOBS, AND THE RUNNER LONGEST-FIRST — AND THE INDEX I MEASURED LAST ROUND WAS BLIND TO EVERY GLOB
 
-### ⛔ FIRST — FIVE THINGS THAT WERE WRONG, FOUR OF THEM MINE
+### ⛔ FIRST — SIX THINGS THAT WERE WRONG, FIVE OF THEM MINE
 
 **⓵ The r6975 read index could not see a single glob, and its own seed could not have noticed.**
 - **Cause:** the tracer recorded a glob as `abspath('glob:' + path)`. That string is *relative*, so it came
@@ -55,6 +55,19 @@ repository root was in scope for every change in the tree. Patterns now match wi
 is in scope only when its **membership** changes (a matching path added, deleted or renamed), because a glob
 returns names, and anything the receipt then opened is a read of its own. Seeded both ways: editing a
 globbed file the receipt never opened is out of scope; adding or deleting one is in.
+
+**⓺ And my own backstop, on its first dispatch, read clean off a sweep of nothing — the class itself.** Its
+`pip install` hit an index miss ("camb (from versions: none)"; the PR run of the same commit installed it in
+19 s). The `always()` steps ran anyway without numpy, every receipt died on import, and the tolerance
+comparison printed **"0 flagged"** off 871 empty probes. Fixed three ways:
+- the install is tried three times;
+- every sweep step now requires the install to have succeeded;
+- **both detectors now refuse to call a receipt swept unless it ran to exit 0.** `sweep_tolerances
+  --compare` and `sweep_runner_reads --report` exit 2 and name every receipt that went red or ran over
+  budget.
+
+Seeded both ways: real probes compare normally, and dead probes exit 2. On today's `main` the runner-read
+sweep exits 2 on exactly the two receipts below, which is the truth about them.
 
 ### ⛔ ROUTED — `main` IS RED ON TWO RECEIPTS, BROKEN BY `r6975` ITSELF, AND THE SCOPE WOULD HAVE REFUSED IT
 
