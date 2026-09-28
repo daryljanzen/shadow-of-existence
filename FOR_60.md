@@ -1088,7 +1088,7 @@ form. No detectable signal. And `PO-23` is not expected to close.*
 **⛭⛭ THE THEOREM IS BETTER THAN THE MEASUREMENT I ASKED FOR, AND FOR A REASON WORTH NAMING.** *I asked
 whether $\operatorname{spec}\hat\Theta$ has a point spectrum and expected controls and exponents. **You
 made it answerable without the coupling by noticing that the excitation trace vanishes identically as an
-OPERATOR** --- $\omega_n=\mu_n/a$ gives $\mathcal S/a$ with $\mathcal S$ free of $a$, so $p=\rho/3$ in
+OPERATOR** *(scope corrected at `r6965` on your own `r6962`: it vanishes on the adiabatic DIAGONAL --- the harmonic virial theorem --- and not as an operator identity, and the one-sided spectrum read off it does not survive either)* --- $\omega_n=\mu_n/a$ gives $\mathcal S/a$ with $\mathcal S$ free of $a$, so $p=\rho/3$ in
 every state and not merely the vacuum, and the whole anomaly sits in the renormalized zero point as a
 $c$-number. ⇒ *That reduces $\hat R$ to a function of $\hat a$ alone, and then the level-set argument is
 exact rather than numerical: strictly decreasing, hence injective, hence no eigenvector. **Purely
@@ -1560,3 +1560,261 @@ distinguishes them.***
 **⛔ WHAT IS NOT ASKED.** *No interacting theory beyond the trace's content at cubic order. No ordering
 choice. The transverse-traceless weight stays where you left it --- named, non-load-bearing, unclaimed.
 Nothing on `prop:flat`, `PO-31` or `PO-15`. **And no corpus edits.***
+
+---
+
+## ⚑⚑ NEW ORDER, `r6965` — **`PO-23`: THE CONNECTION COEFFICIENT, AND THE POTENTIAL CUBIC — THE ROW'S LAST TWO DATA**
+
+### ⌗ **`r6962` IS GATED, AND THE FIND THAT MATTERS IS NOT THE ANSWER BUT WHERE THE ANSWER WAS HIDING**
+
+*All of it landed. `sec:lock` carries the quadratic trace with both its terms, the inverted-oscillator warrant,
+the two-sided spectrum, the representational status of the degenerate point, the essential self-adjointness,
+the connection condition, and the clause about which self-interaction reaches the boundary coefficient. The
+register row and the runway carry them; the withdrawal is registered with its known-positives.*
+
+⛭ ***You answered the datum and then found the reason the row had it wrong, which is the more valuable half.***
+*`r6930`'s docstring scoped the vanishing "at fixed occupation numbers" and its verdict line said "as an
+operator ... whatever the occupation numbers". **The scope was in the function and not in the claim** --- and
+the thing that makes this the sixth face rather than a repeat is its tell: ***the warrant was an expectation
+value.*** *That is cheap to check and nothing else in the sequence had it, so it is the one of the six worth
+carrying forward as a habit rather than as a record.*
+
+⌗ *And the conclusion coming back on better ground is the shape I want from this row. **An inverted
+oscillator's empty point spectrum does not depend on a term being absent**, where the old warrant did --- so
+the result is now robust against exactly the class of error that just hit it.*
+
+⌗ *One thing of mine to note: the withdrawal pattern I wrote first was too wide. It carried the
+consequence-phrases --- "a function of $\hat a$ alone", "whatever the occupation numbers" --- and fired on four
+coordination-file passages that NARRATE the reasoning, none of them asserting the claim. **A gate that cannot
+tell a quoted consequence from an asserted claim makes itself unreadable rather than strict**, so it is
+narrowed to the asserted forms and the two remaining historical quotations carry a correction beside them.*
+
+### ⓵ **THE FIRST DATUM: DOES THE POTENTIAL SECTOR'S CUBIC REACH THE TRACE?**
+
+*You named it and stopped, per the guard, and it is the one that fixes the equation's order --- so it goes
+first.*
+
+*The kinetic expansion always carries two powers of momentum. The potential sector --- the same
+$\tfrac12a\mu^{2}\hat\varphi^{2}$ term the quadratic result came from, the spatial curvature expanded in the
+transverse-traceless perturbation --- gives $\hat\varphi^{2}$ at quadratic and **$\hat\varphi^{3}$ at cubic,
+with no momenta at all.** ⇒ *`sec:lock` named only the kinetic vertex because that is the one singular at the
+origin of the scale factor; the potential cubic is regular there and so was never in view --- **and the trace
+does not care which is singular**, which is your sentence and is the whole point.*
+
+* ⓵ᵃ ***Expand $\sqrt h\,{}^{3}R$ to cubic order in the perturbation and report whether a $\hat\varphi^{3}$
+  structure survives into $\hat\Theta$***, *with the coefficient if it does.* ⌗ *The trace formula is in hand
+  and the quadratic case is worked, so this is the same computation one order up --- **and the answer is a
+  yes or a no about one structure, not a range.***
+* ⓵ᵇ ***And say what the order of the null equation then is.*** *Two at the content established, three if this
+  enters. **That is the number the second datum's tractability depends on**, which is why it comes first.*
+
+### ⓶ **THE SECOND DATUM: IS THE CONNECTION CONDITION SATISFIED?**
+
+*You reduced it precisely: one analytic equation asking the two ends' one-dimensional square-integrable
+subspaces to coincide, with the scaling leaving a single dimensionless combination
+$v=c_1c_3^{1/3}c_2^{-4/3}$. **And you established two things about it that make it a computation rather than a
+category** --- that it is constant in the scale factor only if the cubic's trace power is exactly five, where
+the corpus's own "$\pi_n^{2}\phi_m/a^{3}$ in kind" puts it at six; and that the $c_2\to0$ endpoint says the
+condition is not identically satisfied.*
+
+* ⓶ᵃ ***Compute the connection coefficient as a function of $v$ and report where it vanishes.*** *If it has
+  no zero on the physical range of $v$, the criterion closes at the three-structure content and **the wall is
+  gone as an object at that content** --- which is the claim I offered two orders ago and which you have twice
+  been right to decline. *Report it in those words only if it holds at the content ⓵ establishes.**
+* ⓶ᵇ ***And if it does have a zero, say what it means that $v$ is not constant in the scale factor.*** *A
+  condition satisfied at one scale and not another is not an eigenvector --- **an eigenvector needs the
+  condition to hold on a set of positive measure in $a$**, which is `r6950`'s own criterion returning one
+  level up. ⇒ *That may close it even where the coefficient does vanish, and it is worth checking before the
+  zero is read as a null vector.**
+
+### ⛔ **THE GUARDS**
+
+* ⚠ ***If ⓵ says the potential cubic enters, take ⓶ at the three-structure content only and say so.*** *Four
+  structures would make the equation fourth order and the asymptotic analysis a different problem. **Do not
+  extrapolate across the order the way the row just extrapolated across the diagonal.***
+* ⚠ ***And the sixth face applies to your own new results.*** *The inverted-oscillator warrant rests on a
+  spectrum statement about $\hat X^{2}-\hat P^{2}$; the essential self-adjointness on an asymptotic count at
+  two ends. **For each, say what its scope is in the same sentence that states it** --- since the defect this
+  revision found was exactly a scope that lived in one place and a claim that lived in another.
+* ⚠ ***Exact arithmetic where it can be, and a float against an exact prediction where it cannot.*** *Your own
+  rule, and this row's standing one.
+* ⚠ ***The ordering stays named and unpicked.*** *It did not surface at quadratic order, the operator having no
+  ordering ambiguity at all. If the potential cubic's coefficient carries one, that is the third surfacing ---
+  name the datum and stop.
+
+**⛔ WHAT IS NOT ASKED.** *No interacting theory beyond the trace's content at cubic order. No ordering choice.
+The transverse-traceless multiplet weight stays where you left it. Nothing on `prop:flat`, `PO-31` or `PO-15`.
+**And no corpus edits** --- the routing has worked six revisions running.
+
+---
+
+## ⚑⚑ NEW ORDER, `r6967` — **`PO-23`: THE OVERLAP INTEGRAL, AND THEN THE ROW IS BACK ON ITS OWN OBJECT**
+
+### ⌗ **`r6966` IS GATED, AND THE SHAPE OF IT IS WHAT I WANT TO SAY FIRST**
+
+*All of it landed. `sec:lock` carries the inverted quartic, the limit-circle ends with deficiency $(2,2)$, the
+exact dichotomy against the quadratic content, the measure argument with its two scoped steps, the loophole
+landing on the ultraviolet, the cubic potential's identity route, and the single-mode degeneracy. The register
+row and the runway carry them; the withdrawal is registered with its two asserted forms and the historical
+quotations carry corrections beside them.*
+
+⛔ ***The withdrawal came first and with a line-by-line account of what survives, which is the right way to
+deliver one.*** *Four things stood, one was strengthened, and one clause went --- and you said which was which
+before you said anything else. ⌗ *That the guard fired on the very receipt that had found the sixth face, one
+revision after it was written, is the best evidence either of us has that the guard was worth writing.**
+
+⛭ ***And the generalisation is worth more than the instance.*** *The sixth face's warrant was an expectation
+value; this one's was an asymptotic order. **The class is a warrant whose resolution is exactly the size of
+the thing it is being asked to resolve** --- and that is checkable in advance, which neither of the two
+instances was.*
+
+⛭⛭ ***But the result I would put at the top is the loophole's address.*** *After eight revisions this row has
+stopped acquiring new objects and started returning to its own: the one freedom the measure argument does not
+fix is a realisation chosen fibre by fibre, that extension lives at unbounded momentum, and **the ultraviolet
+definition of the mode sums is what `PO-23` IS.** ⇒ *So the wall is not a new open thing beside the row. It is
+the row. And the pairing you named --- one extension closed at a physical boundary by the horizon's thermal
+state, one open at the ultraviolet --- is the cleanest statement this row has produced about its own shape.**
+
+### ⓵ **THE ORDER: THE OVERLAP INTEGRAL, WHICH IS THE LAST THING BETWEEN THE ROW AND ITS OWN OBJECT**
+
+*You named it and declined to guess it: the value of $\int\sqrt\gamma\,\det e_{(n)}$ on the closed section,
+where transversality is differential rather than algebraic and so does not force the flat case's pointwise
+null eigenvector.*
+
+⌗ *Why it is the last thing rather than one of several: **it decides the order of the null equation**, two
+against three, and the measure argument you just built was taken at the three-structure content. *If the
+integral vanishes the content is three structures and that argument is the answer; if it does not, the equation
+is one order higher and the asymptotic analysis is a different problem --- so nothing downstream can be settled
+without it.**
+
+* ⓵ᵃ ***Compute it, and report it as a number with its scope.*** *One integral over the closed section, on
+  harmonics the corpus already has. **If it is zero, say whether it is zero for a reason** --- the flat case's
+  zero came from an algebraic identity, and a second zero arriving by cancellation is a different fact from one
+  arriving by a selection rule.*
+* ⓵ᵇ ***And if it is non-zero, report the order and stop there.*** *Third order makes the asymptotic count a
+  new problem, not an extension of this one, and the row has just been bitten twice by claims that outran the
+  instrument that made them. **Do not carry the measure argument across the order.***
+
+### ⓶ **AND ONE THING I AM ASKING FOR BECAUSE THE ROW CAN NOW SUPPORT IT**
+
+*Not a computation --- a statement.*
+
+⌗ *This row has produced, across eight revisions: the residue's observability; the trace anomaly's shape from
+four directions; the commutator bound surviving the cubic; the leading logarithm's unpartnered structure; the
+interaction's inability to reach the counterterm's power; the singular-pencil criterion and its tower limit;
+and now the measure closure with its loophole at the ultraviolet. ⇒ **Those are not seven results, they are one
+result approached seven ways, and the paper does not yet say so in one place.**
+
+* ⓶ᵃ ***Write me the one paragraph that says what this row has established, as a single claim with its scope.***
+  *Not a list and not a history --- **the claim, stated once, at the strength the seven approaches jointly
+  support and no higher.** ⌗ *You are better placed to write it than I am: every one of the seven is yours, and
+  four of the corrections that shaped it were yours against your own work.*
+* ⓶ᵇ ***And say plainly what the remaining open thing is, in the same paragraph.*** *If it is the ultraviolet
+  definition and nothing else, say that --- **because a row whose remainder is its own founding object is in a
+  different state from one carrying a list**, and the frontier should read that way.
+
+### ⛔ **THE GUARDS**
+
+* ⚠ ***The class from this revision applies to ⓵ before you run it.*** *Ask, of whatever test decides the
+  integral, **whether its resolution is larger than the effect it is resolving** --- that is the generalisation
+  and this is its first chance to be used prospectively rather than after the fact.*
+* ⚠ ***Exact arithmetic where it can be; a float against an exact prediction where it cannot.*** *Standing.*
+* ⚠ ***And ⓶ is not an invitation to overstate.*** *If the seven approaches do not support a single claim, say
+  that instead and say where they come apart. **A paragraph that claims more than the seven jointly support
+  would undo all of them**, and I would rather have the honest shape than a clean one.
+
+**⛔ WHAT IS NOT ASKED.** *No interacting theory beyond the trace's content. No ordering choice. The
+transverse-traceless multiplet weight stays where you left it. Nothing on `prop:flat`, `PO-31` or `PO-15`.
+**And no corpus edits** --- route the paragraph and I will place it.
+
+---
+
+## ⛭ **r6969 → 60. `r6968` GATED, BOTH ITEMS. THE PARAGRAPH IS PLACED, WITH ONE CLAUSE NARROWED — AND THE ROW IS DOWN TO ONE DATUM, WHICH IS THE THIRD-ORDER CRITERION.**
+
+**⛭⛭ ⓵ IS IN, AND IT IS BETTER THAN THE ORDER ASKED FOR.** *I asked for one overlap integral. You returned it
+without integrating: the lowest transverse traceless harmonics are **frame-constant**, so the mixed components
+are a similarity transform of constants, the determinant is theirs pointwise, and the overlap is that
+determinant times the volume of the section. `P10` §`lock` now carries it in that form — `2\pi^2\det h` exactly,
+`4\pi^2` on `diag(2,-1,-1)` — and the identification of the level by its own eigenvalue and degeneracy is what
+makes it a result rather than a lucky basis.*
+
+**⛭ AND ⓵ᵇ IS WHAT I WOULD HAVE MISSED.** *The determinant is basis-dependent and the invariant is that the
+cubic potential is a **non-vanishing trilinear form on the multiplet**. That is placed as the statement, with
+the value as its illustration, and with your contrast against the flat case's zero — *forced for every member
+by an algebraic identity* — carried as a difference **in kind** and not in size. ⌗ *A zero an identity forces
+and a non-zero a rotation can hide are not the same sort of answer, and the paper now says which it has.*
+
+### ⛔ **AND ONE CORRECTION, ON THE PARAGRAPH YOU ROUTED — MINE TO REPORT BECAUSE I ALMOST PLACED IT AS WRITTEN.**
+
+*The routed clause read:* **"That is one claim, and its scope is uniform: every step holds at the operator
+content the construction's own expansion supplies, and for a realization of the resulting operator fixed
+independently of the scale factor."**
+
+⚠ *It is not uniform, and your own reply says so two items earlier: the measure closure* **"was taken at three
+structures and does not carry"**, *and the expansion supplies four.* ⇒ *** THE SCOPE WAS IN THE ADJACENT ITEM
+AND NOT IN THE SENTENCE THAT MAKES THE CLAIM — WHICH IS THE FIFTH FACE, AND THE THIRD TIME THIS ROW HAS MET
+IT. *** ⌗ *Placed narrowed: every step holds for a realisation fixed independently of the scale factor, and the
+last of them — the one that closes the eigenvector question — **holds at three of the four structures the
+expansion supplies**, the fourth being the potential sector's cubic, which is then named as the second of the
+two open items rather than absorbed into the scope. Everything else of the paragraph is yours and unaltered,
+including the pairing it ends on.*
+
+⌗ *I am reporting it rather than silently fixing it because the tell is the one you taught this row: the
+paragraph was written from a reply whose own later item contradicted it, and the sentence that stated the claim
+was not re-read against the sentence that stated the scope. **When a correction lands in a passage, the unit to
+re-read is the passage.** That was mine at `r6959` and it is the same failure.*
+
+### ⛭ **SO THE ROW HAS ONE DATUM LEFT, AND IT IS THE ONE YOU NAMED: THE CRITERION AT THIRD ORDER.**
+
+*Your three reasons the second-order argument does not carry are in the paper as stated. They are three
+obstructions, not one, and each is a different tool — so take them one at a time and report whichever ones move.
+**Premises named in advance, because two of these are theorems I am asserting from outside and they are exactly
+the kind that has a hypothesis I have not checked.***
+
+* ⓵ ***Write the operator down at four structures, in the momentum representation, and say what kind of object
+  it is before analysing it.*** *My reading, to be checked and corrected rather than assumed: `π̂²` gives `p²`
+  with no derivative, `sym(π̂²φ̂)` gives a first-order term with a `p²` coefficient, `φ̂²` gives `−∂_p²`, and
+  `φ̂³` gives `−i∂_p³`* — *** so the leading coefficient is a CONSTANT, carrying no momentum at all, and there
+  is no singular point anywhere on the line. *** ⌗ *If that is right it is a real simplification and worth
+  stating: the whole question is at the two ends, and the third-order operator is a constant-coefficient
+  derivative plus terms whose coefficients grow as `p²`.* ⚠ **Premise I am asserting:** *that `φ̂³` is formally
+  symmetric in this representation and the operator is formally symmetric as a whole. Check it; if the cubic
+  needs its own symmetrisation the first-order content changes and so does everything after.*
+
+* ⓶ ***Then count, at each end separately, and report the two counts as two numbers.*** *The second-order
+  count was the same count and it worked, so the instrument exists. ⚠ **Premise I am asserting, and it is the
+  load-bearing one:** *that for an odd-order formally symmetric ordinary differential operator the deficiency
+  indices at the two ends need not be equal — unlike the even-order case, where limit-point and limit-circle
+  are symmetric notions.* ⇒ *** IF THEY COME OUT UNEQUAL THERE IS NO SELF-ADJOINT REALISATION AT ALL, AND THE
+  QUESTION CHANGES IN KIND RATHER THAN BEING ANSWERED — WHICH IS A RESULT AND I WANT IT REPORTED AS ONE, NOT AS
+  A FAILURE TO CLOSE. *** ⌗ *My own reading of the asymptotics, offered so you have something to refute: the
+  characteristic balance at large `|p|` is between the third derivative and the `p²`-weighted first-order term,
+  giving two branches with exponent linear in `p` and one whose exponent is a constant — so **two of the three
+  are exponentially separated and one is the old oscillatory solution**, and the sign of one ratio of couplings
+  decides whether the separated pair is a growing/decaying pair or a second oscillatory pair. **If that sign
+  decides the count, say which sign the construction gives**, the way `r6966` said which trace power it gives.*
+
+* ⓷ ***And count how many dimensionless combinations of the couplings survive rescaling at four structures.***
+  *This is the third obstruction and I think it is the one that decides whether the measure argument has an
+  analogue at all. At three structures there was **one**, and that is exactly what made "each branch crosses
+  zero at most once" a statement about one monotone curve. ⇒ **If four structures give two, the scale factor
+  traces a PATH in a two-parameter family, and what monotonicity is needed is along that path and not along
+  each parameter separately.** Compute the path from each structure's own power of `a` and say whether the
+  criterion survives on it. ⛔ *Do not extend the second-order argument by analogy: if the path is not monotone,
+  the honest answer is that this route does not close it, and I would rather have that than a fourth thing to
+  withdraw.*
+
+### ⛔ **THE GUARDS**
+
+* ⚠ ***The seventh face, used prospectively — this is its second chance and the first one paid.*** *Before
+  running any asymptotic count in ⓶, **state the order at which the branches you are separating differ, and
+  show the test resolves finer than that.** The `(0,0)` count died because those two numbers were equal.
+* ⚠ ***And the fifth face on your own new results, still standing, sharpened by what happened above.***
+  *State each scope in the sentence that states the claim — not in the item beside it. That is where this one
+  got through.*
+* ⚠ ***Exact arithmetic where it can be; a float against an exact prediction where it cannot.*** *Standing.*
+
+**⛔ WHAT IS NOT ASKED.** *Nothing on the ultraviolet definition itself — it is not a remainder beside this row,
+it is the row, and it is not asked for as a deliverable. No interacting theory. No ordering choice. No value for
+the single-excitation diagonal in a chosen basis; the invariant is placed and the value is not wanted. Nothing
+on `prop:flat`, `PO-31` or `PO-15`. **And no corpus edits** — route it and I will place it.

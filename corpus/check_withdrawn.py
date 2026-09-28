@@ -289,6 +289,85 @@ REGISTRY = [
      r"|dissolves|four-for-four)",
      "corrected r6911+cc66.40; the contrast difference is not in the source, so the four channels "
      "have nothing to overcome and the residual is not larger than four per cent"),
+    # ⛔ r6965 (66, on node 60's r6962).  "THE EXCITATION TRACE VANISHES IDENTICALLY AS AN OPERATOR,
+    # SO THE CURVATURE IS A FUNCTION OF THE SCALE FACTOR ALONE, AND ITS SPECTRUM IS THE HALF-LINE
+    # ABOVE 4 LAMBDA."  `r6930` established the vanishing and `r6933` built the spectral result on it.
+    # ** The vanishing is a property of the DIAGONAL of the adiabatic basis -- the harmonic virial
+    # theorem -- and not of the operator: `r6930`'s own docstring scoped it "at fixed occupation
+    # numbers" while its verdict line said "as an operator ... whatever the occupation numbers". **
+    #   ⇒ *Written in the field operators the trace carries `pi_n^2/a^6` and `mu_n^2 phi_n^2/a^2`,
+    #     combining to `a^-4 (a_n^2 + a_n-dagger^2)`: purely OFF-diagonal, non-zero on any squeezed
+    #     state, and untouched by normal ordering, which has no contraction to take.*
+    # ⌗ ** THE CONCLUSION SURVIVES AND THE SCOPE DOES NOT. **  The curvature still has no point
+    #   spectrum -- an inverted oscillator has no normalizable eigenvector at any real eigenvalue, and
+    #   that warrant does not turn on a term being absent, so it is the stronger one.  *** What cannot
+    #   be kept is the HALF-LINE: the same operator puts spectrum BELOW 4 Lambda as well as above it,
+    #   so the spectrum is purely continuous and TWO-SIDED. ***
+    #   ⚠ *Two claims are withdrawn here and they are not the same claim: the operator-identity
+    #     vanishing, and the one-sided spectrum that was read off it.  A document may QUOTE either --
+    #     the withdrawal is recorded by quoting it -- but not assert it.*
+    ("the-excitation-trace-vanishes-as-an-operator-and-the-spectrum-is-one-sided",
+     # ⌗ ** THE PATTERN IS THE ASSERTED FORMS AND NOT THEIR CONSEQUENCES, and the first writing of
+     #   it was the other way round. **  It carried "a function of $\\hat a$ alone" and "whatever the
+     #   occupation numbers", which fire on every coordination file that NARRATES the reasoning ---
+     #   four bare hits in the order log and the reply, not one of them an assertion of the withdrawn
+     #   claim.  ⇒ *A consequence quoted while reasoning is not the claim being withdrawn, and a
+     #   pattern that cannot tell the two apart makes the gate unreadable rather than strict.*
+     r"(?:the excitation trace vanishes identically"
+     r"|Ricci scalar is a function of the scale factor alone"
+     r"|half-line above \$?4\\Lambda\$?"
+     r"|half-line above 4 ?Lambda)",
+     # ⌗ The marker set is wide for the same reason the entry above it is: the register row, the
+     #   runway, the map entry and this gate's own comment all quote the claim while withdrawing it.
+     r"(?:r6962|r6965|withdrawn|WITHDRAWN|corrected|CORRECTED"
+     r"|at fixed occupation|fixed occupation numbers|on the diagonal|diagonal of"
+     r"|virial|inverted oscillator|off-diagonal|squeezed"
+     r"|two-sided|below \$?4\\Lambda\$?|below 4 ?Lambda"
+     r"|not an operator identity|does not survive)",
+     "corrected r6965 on node 60's r6962; the vanishing is the harmonic virial theorem on the "
+     "adiabatic diagonal and not an operator identity, the residual is an inverted oscillator whose "
+     "point spectrum is empty, and the spectrum is purely continuous and two-sided rather than the "
+     "half-line above 4 Lambda"),
+    # ⛔⛭ r6967 (66, on node 60's r6966).  "EXACTLY ONE OF THE TWO ASYMPTOTIC SOLUTIONS IS SQUARE-
+    # INTEGRABLE AT EACH END, SO BOTH ENDS ARE LIMIT-POINT, THE DEFICIENCY INDICES ARE (0,0), AND THE
+    # OPERATOR IS ESSENTIALLY SELF-ADJOINT."  `r6962` established it and `r6965` landed it in the paper.
+    # ** Every clause of it is wrong, and the mechanism is the sixth face transposed. **  The test was an
+    # exact limit on an ansatz's RELATIVE RESIDUAL, and for the dominant branch that residual vanishes at
+    # order 1/p -- *which is exactly the order of the 1/p prefactor the ansatz was missing*, so both the
+    # bare exponential and the exponential over p pass it.  Multiplying by p separates them.
+    #   ⇒ *** THE CHECK'S DISCRIMINATING ORDER EQUALLED THE EFFECT'S ORDER, and the claim drawn from it
+    #     -- the modulus, hence the L^2 count, hence the deficiency, hence "nothing to select" -- lived
+    #     outside what the check could see. ***  Where the fifth face's warrant was an expectation value,
+    #     this one's was an asymptotic order.
+    # ⌗ ** THE REPAIR IS A CLOSED FORM. **  One gauge of unit modulus -- unitary on L^2, so every spectral
+    #   and L^2 count carries over -- removes the first-order term with residual EXACTLY zero and leaves
+    #   an INVERTED QUARTIC, whose quartic coefficient is negative whatever the sign of the first-order
+    #   vertex.  At every real eigenvalue both solutions fall as 1/p, so the modulus squared is integrable
+    #   at each end: *** both ends LIMIT-CIRCLE, deficiency (2,2), NOT essentially self-adjoint, and a
+    #   null solution does exist. ***
+    #   ⚠ *So the uniform argument that closed the quadratic case -- a boundary condition selects among
+    #     square-integrable solutions and there are none -- has no purchase at the three-structure
+    #     content, where there are two.  What closes it is the measure criterion one level up.*
+    #   ⌗ **And the dichotomy against the quadratic content is EXACT rather than continuous:** the same
+    #     integral converges over a quartic turning point and diverges over a quadratic one, so the
+    #     quadratic-content closure stands untouched and the discontinuity is sharper than `r6962` said.
+    ("the-momentum-side-operator-is-essentially-self-adjoint-with-deficiency-zero",
+     # ⌗ The asserted forms only, on the lesson the previous entry's first writing taught: a consequence
+     #   quoted while reasoning is not the claim being withdrawn.
+     r"(?:both ends are limit-point"
+     r"|the deficiency indices are \$?\(0,0\)\$?"
+     r"|deficiency `\(0,0\)`"
+     r"|deficiency \(0,0\)"
+     r"|exactly one of its two asymptotic solutions is square-integrable at each end"
+     r"|exactly one solution is square-integrable at each end)",
+     r"(?:r6966|r6967|withdrawn|WITHDRAWN|corrected|CORRECTED"
+     r"|inverted quartic|limit-circle|limit circle"
+     r"|\(2,2\)|two,? ?two"
+     r"|relative residual|discriminating order|asymptotic order"
+     r"|does not survive|is wrong)",
+     "corrected r6967 on node 60's r6966; the momentum-side operator is an inverted quartic, both ends "
+     "are limit-circle, the deficiency indices are (2,2) and it is not essentially self-adjoint -- the "
+     "earlier count came from a residual test whose discriminating order equalled the effect's order"),
 ]
 
 SKIP = ('appendix_receipts',)
@@ -423,6 +502,25 @@ HISTORICAL = {
 # a pattern that is broken.  Each entry therefore carries a KNOWN-POSITIVE string, taken verbatim
 # from the text the withdrawal removed, and this gate fails if any pattern stops matching its own.
 POSITIVES = {
+    # ⛔ r6967 on node 60's r6966: the paper's own sentence as `r6965` landed it, and the reply's
+    #   own summary form.  *Both are the claim ASSERTED, which is what this pattern is for.*
+    "the-momentum-side-operator-is-essentially-self-adjoint-with-deficiency-zero": [
+        "exactly one of its two asymptotic solutions is square-integrable at each end, the two\n"
+        "behaving as an inverse first power and as a constant modulus; so both ends are limit-point, "
+        "the deficiency\nindices are $(0,0)$, and the operator is essentially self-adjoint",
+        "both ends limit-point ⇒ deficiency `(0,0)` ⇒ essentially self-adjoint",
+    ],
+    # ⛔ r6965 on node 60's r6962: the three real forms the claim was carried in --- `P10`'s own
+    #   sentence before the repair, the receipt verdict it rested on, and the spectral clause read
+    #   off it.  *The docstring scope that contradicted the verdict is the fourth form and is the
+    #   one that made the defect findable, so it is registered too.*
+    "the-excitation-trace-vanishes-as-an-operator-and-the-spectrum-is-one-sided": [
+        "the excitation trace vanishes identically \\emph{as an operator}---in every state and not "
+        "merely the vacuum",
+        "So the Ricci scalar is a function of the scale factor alone",
+        "The spectrum is purely continuous, the half-line above $4\\Lambda$ with $4\\Lambda$ itself "
+        "not attained",
+    ],
     # r6911+cc66.40: the paper's own clause, and the two ledger forms.
     "the-contrast-excess-stands-on-top-of-the-trough-filling-channels": [
         "channels that would each shallow the troughs are all larger here, and the contrast excess "
