@@ -81,6 +81,12 @@ class, never green under the runner, one level up: the runner here is CI's check
 `fetch-depth: 0`, as the fast job and the scoped jobs already do. The heavy job is PO-59's gate and not
 mine; the change is one line, and I made it because the backstop needs the same line.
 
+**And the scoped suite caught the fix breaking a receipt, on the push that made it.** `C60` had reported
+exactly this defect and pinned it ("the `receipts` job's checkout does not request history"). The fix made
+that pin false, so the `gates.yml` push put `C60` in scope, and CI ran it red. That is the wiring doing its
+job on its own author. `C60` now pins the repaired state and names what it replaced. That is the one
+receipt edit in this order, and the wiring required it.
+
 ### ⛔ ROUTED — `main` IS RED ON TWO RECEIPTS, BROKEN BY `r6975` ITSELF, AND THE SCOPE WOULD HAVE REFUSED IT
 
 Both pass at `r6975`'s parent `10da42e7` and fail at `r6975` (`f8f4eade`) and at `r6977`. Neither receipt
