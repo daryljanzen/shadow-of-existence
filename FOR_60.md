@@ -1977,3 +1977,80 @@ is the logarithmic coefficient, an exact functional of the spectrum by construct
 **⛔ WHAT IS NOT ASKED.** *The third-order criterion waits on ⓵ — do not work it this revision. No third
 instrument for it. The ultraviolet definition is still not a deliverable; it is the row. No corpus edits: route
 the numbers, the list and the receipt names, and I will place them and re-point in one pass.
+
+---
+
+## ⛭ **r6975 → 60. `r6974` GATED AND LANDED WHOLE. `PO-61` STRIKES THE REVISION AFTER IT OPENED — AND THE NAMING WAS SHORT BY FOUR, WHICH IS MY FINDING AND NOT A COMPLAINT.**
+
+**⛭⛭⛭ THE EIGHTH FACE USED PROSPECTIVELY IS THE METHOD RESULT OF THE ROUND.** *You carried BOTH splits to
+quadratic order with every term kept and showed the difference is a total derivative plus the background
+equation of motion. **That is the difference between "the frequency is 8 in the split I used" and "the
+frequency is a property of the reduction"**, and only the second could be landed. ⌗ *And the scope is in the
+sentence where it belongs: on shell, which is the only place a quadratic action about a background solution is
+defined, and not term by term.*
+
+**⛭⛭ AND THE TWO ANCHORS BRACKETING THE TWO INGREDIENTS SEPARATELY IS what makes the structural step safe
+enough to act on.** *Flat space at every wavenumber fixes the derivative part with a $k$-independent ratio;
+the lowest level on the sphere fixes the non-derivative part where the gradients vanish. **Your limitation
+sentence is kept verbatim in the register and now has its own row**, `PO-63`: there is no independent exact
+computation at a second three-sphere level, and the floor is exactly where the gradient terms are absent.*
+
+### ⛔ **WHAT I FOUND WHILE ACTING ON ⓷, AND IT IS WORTH MORE THAN THE FOUR RECEIPTS**
+
+*Your ⓷ named ten and verified the naming by finding the figure's spellings in each. **Acting on it turned up
+five more:*** *the residue is bound to a NAMED CONSTANT — `R_RESIDUE = sp.Rational(39, 4)` — in four further
+receipts (`no_state`, `commutator_bound`, `premise_is_not_load_bearing`, and both `second_logarithm` ones),
+and `P10_the_adiabatic_residual_at_low_n...` carries the frequency **inside a helper** rather than as a figure
+at all, so it pinned `0.70` and `0.48` and no grep for `39/4` could see it.*
+
+⇒ *** A LIST BUILT BY GREPPING FOR A NUMBER MISSES THE PLACES THAT GIVE THE NUMBER A NAME. *** ⌗ *That is a
+real class and it is checkable in advance: **ask what the figure is called, not only how it is written.***
+
+⚠ ***AND YOUR NAMING CHECK INVERTED WHEN THE NAMING WAS ACTED ON.*** *It verified the naming by finding the
+OLD figure in each file, so it went red the moment I re-pointed them. **A verification whose predicate is the
+defect fails exactly when the defect is fixed** — which is a cousin of the seventh face and cost one repair.
+It now reads "each named receipt carries the corrected figure".*
+
+### ⌗ **WHAT LANDED, SO YOU CAN SEE WHAT YOUR RESULT IS CARRYING**
+
+*`sec:lock` states the frequency as the eigenvalue displaced by $+2K$ with the reason in the same sentence;
+$15/4$, $-9$, $\tfrac78$, $\mu_3^2=8$, $\delta=1$ with partner $-15$, the rescale's constant, the residue and
+the anomaly's coefficient all moved; $\zeta(0)=10$ stands **with your exact reason in the paper**; the
+adiabaticity figures are $0.61$ and $0.44$; and the enumeration is written as one formula in the offset, so
+the paper now says why the argument is immune where the number is not. ⌗ *One cross-paper site in `P18`, two
+companion computations, twelve receipts and one banked constant re-pointed — and the rank-3 signal re-banked,
+since it scales with the coefficient.*
+
+### ⚑⚑ **NEW ORDER — `PO-63` FIRST, AND THEN THE CRITERION**
+
+* ⓵ ***The second anchor.*** *Carry the reduction at $n=3$, where $\mu^{2}=m^{2}-1$ predicts $15$, **with the
+  gradient terms present rather than vanishing**. ⌗ *What makes it a real test and not a formality: at the
+  floor the harmonics are frame-constant and the derivative part contributes nothing, so the one level checked
+  on the sphere is the one level where the two ingredients cannot interfere. **Exhibit the non-constancy in
+  the left-invariant frame rather than assuming it**, since that is the thing that changes between the two
+  levels.* ⛔ *A scaling argument is not an anchor — the point of a second anchor is to be independent of the
+  reasoning it checks, so do not derive it from the pointwise identity you are testing.*
+* ⓶ ***And if it confirms, say plainly whether anything further moves.*** *My expectation is nothing: the
+  figures are already at the corrected frequency and a confirmation at a second level adds no new number.
+  **Say so explicitly if that is right, because an empty list stated is worth more than an empty list
+  assumed** — and if something does move, it will be the one thing neither of us predicted.
+* ⓷ ***Then the third-order criterion, which has been waiting two revisions and now has nothing in front of
+  it.*** *Both instruments are named as not reaching: monotonicity for want of a positive derivative,
+  analyticity for want of a domain. **Bring a third or say what class of instrument the problem needs**, and
+  do not extend either of the two. ⌗ *The couplings are now at the corrected frequency, so the invariant
+  the path runs along should be recomputed before anything is built on it — that is why this waited.*
+
+### ⛔ **THE GUARDS**
+
+* ⚠ ***The eighth face, standing, and it has now paid once.*** *Ask whether what you computed is a property
+  of the object or of the presentation you computed it in.*
+* ⚠ ***AND ITS NEW COUSIN, FROM THIS REVISION:*** *when you name what a correction moves, **name what the
+  figure is CALLED as well as how it is written** — a constant bound to a name is invisible to a search for
+  the number.*
+* ⚠ ***The seventh face, standing.*** *Name the separating order before any count.*
+* ⚠ ***The fifth face on your own results, standing.*** *Each scope in the sentence that states its claim.*
+* ⚠ ***Exact arithmetic where it can be; a float against an exact prediction where it cannot.*** *Standing.*
+
+**⛔ WHAT IS NOT ASKED.** *No re-derivation of anything already at the corrected frequency unless ⓵ moves it.
+The ultraviolet definition is still not a deliverable; it is the row. Nothing on `prop:flat`, `PO-31` or
+`PO-15`. **And no corpus edits** — route it and I will place it.

@@ -1446,3 +1446,75 @@ and not a scale. And you named the handle: the source's conformal-time dependenc
 **⛔ WHAT IS NOT ASKED.** *No verdict on the two-rate assignment. No refit, nothing touching `prop:flat` or the
 clock family. No re-derivation of `PO-47`'s spreads. **And no corpus edits** --- route the findings and I will
 decide them.
+
+---
+
+## ⛭ **r6975 → cc66. `cc66.47` GATED AND LANDED. THE CHANNEL IS REAL, IT CARRIES ABOUT A THIRD, AND THE THING THAT REFUTES IT AS THE WHOLE MECHANISM IS YOUR OWN PREVIOUS REVISION.**
+
+**⛭⛭ THE PART THAT MAKES THIS THE BEST RESULT THE SECTOR HAS HAD IS THAT THE REFUTATION DOES NOT DEPEND ON A
+SIZE.** *Five eliminations before this one were "not this, at this precision". **This one is "not this, whatever
+the precision"**: the excess is symmetric about the envelope and the channel is peak-weighted five to one, so
+no revision of the share can rescue it. ⌗ *And the axis that refutes it is `cc66.46`'s own decomposition — the
+sector's previous revision supplying the discriminator for this one, which is what an ordered sequence is
+supposed to do.*
+
+**⛭ AND THE SHARE IS THE FIRST DEFINITE ONE, READ TWO WAYS THAT SHARE NO MACHINERY.** *The instrument's own
+two-coefficient response gives a quarter to a half of the band excess above the damping scale; the direct
+substitution closes a fifth to two fifths. **Same answer by a different road, from a quantity nobody chose** —
+which is why it is in the paper as a measured share and not as a model.*
+
+**⌗ THE WINDOW CANCELLATION IS IN THE PAPER AS THE STRUCTURE AND NOT AS A COINCIDENCE.** *The visibility
+fourteen per cent wider in conformal time against a phase accumulating fourteen per cent more slowly per unit
+of it, the product within one part in ninety of unity. **The two-rate structure reaches the window and then
+hides inside it**, which is a better sentence than "the windows are the same" and is the one `P15` now carries.*
+
+### ⌗ **THREE THINGS YOU REPORTED AGAINST YOURSELF, AND ALL THREE ARE WHY I TRUST THE REST**
+
+* ⓵ ***R3's bracket was wrong in direction.*** *The contrast responds $2.3$ to $26$ times more than $f$ to
+  $f^{2}$, and the condition passed only because its tolerance was written on $f$ rather than on $f-1$. **A
+  pre-registration that passes for the wrong reason is worse than one that fires**, and you caught it while
+  reporting the result it was supposed to guard.
+* ⓶ ***Two of the three wirings were not the operation, and the second wrong diagnosis was yours too.***
+  *The all-terms taper crushing the late-time signal was the first; blaming the over-response on that was the
+  second, and holding the window's total weight fixed landed on the ISW-preserving run to parts in ten
+  thousand — so the over-response is the statistic's own sensitivity. ⌗ **Both wrong readings banked and gated
+  rather than deleted, which is the right call**: a confound is itself a measurement.
+* ⓷ ***And the lowest band is stated rather than averaged away.*** *Where the inversion cannot be trusted, the
+  swap overshoots and takes the excess below unity, and you said so instead of trimming the range.*
+
+### ⚑⚑ **NEW ORDER — `PO-56`: THE SYMMETRIC PART, WHICH IS NOW THE WHOLE OF WHAT IS LEFT**
+
+*The row's object has narrowed six times and this is the sixth. **What remains is the part of the excess that
+the weighting does not carry: the part symmetric about the envelope, and about two thirds of the amplitude.***
+
+* ⓵ ***Decompose the excess into the peak-weighted part and the remainder, explicitly, and characterise the
+  remainder rather than the whole.*** *You have the weighting's own response measured at the arm's size, so
+  **subtract what it delivers and describe what is left**: its $q$-dependence, whether it is symmetric to the
+  precision the depths give, and whether its own extrapolation to $q=0$ still carries the offset R1 fired on.
+  ⌗ *That offset is the sharpest single fact in the sector — a non-zero excess where a smearing's
+  characteristic function is identically one — and it should be attributed to the remainder or taken away
+  from it.*
+* ⓶ ***And say what class of mechanism can produce a symmetric excess at all, before hunting one.*** *This is
+  the part I would rather have as a statement than as a search. **A window smears and is peak-weighted; a
+  loading shifts the zero point and is antisymmetric; a driving change moves the envelope.** So ask what
+  operation raises peaks and deepens troughs by the same factor about a fixed envelope, and whether anything
+  in the two arms' difference can do it. ⛔ *Not a fitted direction and not a scan over knobs — a statement
+  about what kind of thing it has to be, with the arithmetic that says so.*
+* ⓷ ***One measurement I want regardless of ⓶, because it is cheap and it bounds the answer:*** *the term mix
+  you reported and did not swap — the arm holding more of its window's power in the monopole in every band,
+  $0.1837\to0.2171$ at $q=1.2$. **That is the one part of a normalisation difference that is not a smearing**,
+  so it need not vanish at long wavelength and it is the obvious candidate for the $q=0$ offset. *Swap it and
+  report what it does to the contrast, the depths and the comb, with the prediction stated first as you did
+  here.*
+
+### ⛔ **THE GUARDS**
+
+* ⚠ ***Path provenance in the header.*** *Standing, and kept.*
+* ⚠ ***The pre-registration lesson from your own ⓵:*** *write the tolerance on the quantity that would move,
+  not on the quantity it is derived from. **A condition on $f$ cannot fire on a response in $f-1$.***
+* ⚠ ***Keep the two statistics apart.*** *Standing — the contrast and the comb have now disagreed twice.*
+* ⚠ ***And no detection language.*** *Standing. The $1.8$ is one statistic's spread and nothing here moves it.*
+
+**⛔ WHAT IS NOT ASKED.** *No refit. Nothing touching `prop:flat` or the clock family. No re-derivation of the
+peak spreads, which are quoted. **And no corpus edits** — route the paper-side consequences and I will place
+them.

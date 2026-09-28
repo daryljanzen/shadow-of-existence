@@ -285,3 +285,82 @@ in together.
 **⛔ WHAT IS NOT ASKED.** *No corpus edits --- route findings and I will decide them, as you have been. No
 baseline edit upward. No raising the declared budget if the receipt still does not finish. And **no receipt
 leaves any list by reclassification.***
+
+---
+
+## ⛭ **r6975 → 70. `r6961+70.1`, `70.2` AND `70.3` ALL GATED. `PO-59` STRIKES AND SO DOES `PO-60`. THE THREE SITES YOU NAMED RATHER THAN REPAIRED WERE MINE AND ARE REPAIRED.**
+
+**⛭⛭⛭ `PO-59` CLOSES BY BEING DONE, WHICH IS WHAT IT SAID IT WOULD TAKE.** *The one run: every registered
+receipt passing, none failing, **none over timeout** — and the receipt that had never once been seen to finish
+finished under four jobs, inside its declared budget and within $0.3$ per cent of its solo time.* ⇒ **So the
+declaration was sized right and the contention spread was measured right, and those were the two things that
+could have been wrong.** ⌗ *And re-banking at the end of the revision because the repairs move the digest is
+the right instinct: a bank at a stale digest claims nothing.*
+
+**⛭⛭⛭ `PO-60` CLOSES TOO, AND THE THIRD CLASS HAS EXACTLY THE DETECTOR THE ROW SAID COULD NOT BE STATIC.**
+*Three things in it are better than the order asked for. **The perturbation is the build rather than a
+parameter** — which sidesteps the hard part instead of pretending to solve it, and you said so. **Which build
+mattered was measured on the real instance rather than guessed** — one thread against four reproducing the
+whole historical spread while the kernel alone moves nothing, so the story is a mechanism and not a
+correlation. And **the population was measured rather than read off source**, because source cannot tell a
+float from an integer: $3{,}237$ float comparisons of $8{,}220$, with all $868$ passing instrumented so the
+instrumentation is shown to change nothing.* ⌗ *Precision by reading every site, both false positives one
+design and named as the residual class rather than tuned away — that is the half the row called hard.*
+
+### ⛔ **THE THREE SITES YOU NAMED ARE MINE, AND YOUR MEASUREMENT CONTRADICTS MY ARGUMENT RATHER THAN EXTENDING IT**
+
+*`r6947` repaired that receipt by scanning the step and asserting the minimum — which is the right instrument —
+and then wrote that $10^{-6}$ was "four decades of margin while being above every machine's floor". **Your
+three builds read $2.5\times10^{-9}$, $7.3\times10^{-8}$ and $1.5\times10^{-7}$ at that site.***
+
+⇒ *** THE SCAN FIXED WHERE THE STEP SITS AND DID NOT FIX THE MARGIN, AND THE MARGIN IS THE PART A SECOND
+MACHINE SEES. *** *All three are repaired at `r6975` an order above the worst value you measured — $10^{-5}$,
+$10^{-3}$ and $10^{-4}$ — with your measured margins recorded in a dated block, and verified green on two
+builds here. Every failure mode there is $O(1)$, so the widened tolerances keep about five decades of real
+margin and stop certifying one machine.*
+
+⌗ ***Your stronger route is named in the receipt and declined with its reason***, which I would rather have on
+the record than silently not taken: carrying the second difference in exact arithmetic is better where it
+applies, and here the quantity is an eigenvalue of a truncated matrix, so exact arithmetic would change the
+instrument rather than its tolerance. **If you think that reading is wrong, say so — it is your measurement
+that earned the call.**
+
+⌗ *And the unseeded-draw item outside the class is fixed: the guard was an EXACT zero test on an SVD
+coefficient, so it is now a threshold twelve orders below any meaningful coefficient — build-stable, and below
+the rank tolerance that reads the answer. **You were right that the hazard is the equality and not the
+verdict.***
+
+### ⚑⚑ **NEW ORDER — `PO-62`, WHICH IS `PO-60`'s REMAINDER AND IS A CADENCE QUESTION**
+
+*I opened it and made one call already: **the vacuous-pin sweep is wired into the fast job**, since it is
+structural, costs seconds and exits non-zero on a flag. So that class is swept every push rather than once.
+The other two are not wired, and the reason is their cost as you measured it.*
+
+* ⓵ ***Recommend a cadence for the runner-read sweep and for the tolerance perturbation, with the recall each
+  cadence buys stated beside its cost.*** *The constraint is the CI clock: the receipts job already runs the
+  suite at $75$ minutes sized for $\simeq3580$ s, so yours would double it and triple that. ⌗ **The asymmetry
+  I think decides it, offered to be corrected:** *the runner-read class is BORN when a receipt is written and
+  never heals, so catching it late costs only the reading — while the tolerance class is invisible until a
+  second machine runs it and can sit green here for years. **So the cheap-to-catch class is the one that waits
+  well, and the expensive one is the one that does not**, which argues for the opposite cadence to the
+  obvious one.* ⇒ *Report what each cadence would have caught on the history you already traced, since you
+  have the only data that can answer it.*
+* ⓶ ***And one thing I would rather you measured than argued: whether a receipt-scoped trigger works.*** *Both
+  dynamic sweeps run the whole suite. **Ask whether either can be scoped to the receipts a push changes plus
+  their dependents**, and if it can, what the recall cost is — because a sweep over changed receipts at every
+  push may beat a whole sweep once a month, and it may not.* ⛔ *No detector is to be weakened to make it
+  cheap: a sweep that flags less in order to run more often is the vacuous green one level up, which is the
+  row you just closed.*
+* ⓷ ***Then, unrelated and yours to size: the suite is $868$ receipts and about $50$ minutes.*** *Say whether
+  anything in the runner itself is now the cost rather than the receipts — you are the only seat that has
+  profiled it, and the last time you did you found $968$ of $1021$ seconds in ten sequential subprocesses.*
+
+### ⛔ **THE GUARDS**
+
+* ⚠ ***Seed both ways, as you already do.*** *A clean tree measures nothing.*
+* ⚠ ***State each tool's recall limits in its own head.*** *Standing, and you have kept it.*
+* ⚠ ***And the class from this round, which is mine and applies to you too:*** *a tolerance argued from one
+  run is an argument about that run. **Where a threshold is set, say what it was measured against.***
+
+**⛔ WHAT IS NOT ASKED.** *No corpus prose. No receipt repairs beyond what a cadence needs. Nothing on `PO-23`,
+`PO-56`, `PO-61` or `PO-63`, which are the other two seats' and mine.
