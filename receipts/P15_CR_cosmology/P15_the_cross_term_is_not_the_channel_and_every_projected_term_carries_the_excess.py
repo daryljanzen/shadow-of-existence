@@ -245,7 +245,11 @@ check("⛔ and the SPECTRA really do NOT add without the cross terms, which is t
 _C = [ln for ln in SRC.splitlines() if not ln.lstrip().startswith('#')]
 _U = [ln for ln in _C if '_SRCD' in ln]
 _BIND = [ln for ln in _U if ln.startswith(('_SRCD =', '_SRCD_B ='))]
-_GUARD = [ln for ln in _U if ln.strip() in ('if _SRCD:', 'if _SRCS or _SRCD:')
+# ⛭ r6977: same re-pointing as its sibling -- cc66's r6959 added `SRCETA` to the shared guard, so
+#   `if _SRCS or _SRCD or _SRCE:` is the third accepted spelling.  ** The confinement claim and
+#   the bit-identity that proves it are untouched. **
+_GUARD = [ln for ln in _U if ln.strip() in ('if _SRCD:', 'if _SRCS or _SRCD:',
+                                            'if _SRCS or _SRCD or _SRCE:')
           or ln.strip().endswith('if _SRCD else None')]
 _INNER = [ln for ln in _U if ln not in _BIND and ln not in _GUARD]
 check("`SRCDEC` is declared beside `SRCSAVE`, and every executable line naming it is a binding, a "

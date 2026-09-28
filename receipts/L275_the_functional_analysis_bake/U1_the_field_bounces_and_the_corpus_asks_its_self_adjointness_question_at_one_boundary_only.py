@@ -29,8 +29,8 @@ arithmetic; and where in the corpus each verdict actually lives.  Nothing is fit
 
 ** ⌗ ⓶ AND THE VOCABULARY ABSENCE IS NOT A HOLE, WHICH IS WORTH SEPARATING FROM THE CARTAN CASE. **
 *`Hilbert space` ×0, `inner product` ×0, `von Neumann` ×0, `density matrix` ×0, `mixed state` ×0,
-`S-matrix` ×0, `spectral theorem` ×0, `resolvent` ×0 when written (×1 since r6967, in P10's limit-circle
-closure: "compact resolvent"); `Stone` ×1 and not in a physics sense.*
+`S-matrix` ×0, `spectral theorem` ×0, `resolvent` ×0 -- ×1 for exactly one revision, r6967 to r6973,
+in a limit-circle closure the corpus then withdrew; `Stone` ×1 and not in a physics sense.*
   ⇒ ** But `P10` names its Hilbert spaces as $L^2$ of the half-line and $L^2(\mathbb{R})$ throughout. **
     *The objects are there under their standard notation and the phrases are not.*
   ⇒ *** So this is the sixth appearance of the corpus's anonymity, and it is the WEAK form: a
@@ -143,14 +143,23 @@ def main():
     #    So `resolvent` is x1, in P10 alone, at exactly that argument -- and the other seven stay x0.
     #    *** The finding (a vocabulary gap over work fully done) narrows by the one term the work came
     #    to need; it is re-pinned to that, not re-read as "the gap is gone". ***
-    closed = {'resolvent'}
-    check('⓶ seven of the field\'s eight standard phrases are ×0 across the seventeen bodies, '
+    # ⛔ r6977 (66): ** THE EIGHTH PHRASE IS BACK TO ×0, AND THE ROUND TRIP IS THE INTERESTING PART. **
+    #   `r6967` put "compact resolvent" into P10 when the measure argument closed the criterion at three
+    #   structures; `r6973` took it out again, because that argument was withdrawn -- the structure it
+    #   rested on turned out to be a parametrisation artefact.  ⇒ *So the vocabulary gap closed for one
+    #   revision and re-opened, and the receipt records the round trip rather than only its current
+    #   state: a term the corpus needed once and then stopped needing is a different fact from a term
+    #   it has never needed, and this row is about which of those the field's vocabulary is.*
+    #   ⌗ Found by node 70's dependency trace at `r6975`, which is the scoped-suite argument in
+    #     miniature: the push that removed the phrase was in this receipt's own read scope.
+    check('⓶ all EIGHT of the field\'s standard phrases are ×0 across the seventeen bodies, '
           'word-bounded',
-          all(TOTW(t) == 0 for t in absent if t not in closed))
-    check('⓶ᵃ ⛭ and the eighth is P10\'s own, once, where r6967 closed the wall: "every realisation '
-          'has compact resolvent and therefore purely discrete spectrum"',
-          RB.word_counts('resolvent') == {k: (1 if k == 'P10' else 0) for k in RB.word_counts('resolvent')}
-          and 'has compact resolvent and therefore purely discrete' in re.sub(r'\s+', ' ', p10))
+          all(TOTW(t) == 0 for t in absent))
+    check('⓶ᵃ ⛭ and the eighth went ×1 for exactly one revision and back: r6967 wrote "compact '
+          'resolvent" into P10 when the measure argument closed the criterion, and r6973 removed it '
+          'with that argument -- so the gap re-opened where the work stopped needing the term',
+          TOTW('resolvent') == 0
+          and 'compact resolvent' not in re.sub(r'\s+', ' ', p10))
     check('⓶ᵇ ⛭ BUT THE OBJECTS ARE THERE UNDER THEIR STANDARD NOTATION: P10 works on "$L^2$ of '
           'the half-line" and "$L^2(R)$" -- so this is a vocabulary gap over work fully done',
           'L^2' in p10 or 'L^{2}' in p10)

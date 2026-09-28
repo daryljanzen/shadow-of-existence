@@ -449,13 +449,21 @@ OFF = [r['env'] for r in ROWS if not r['on']]
 #   "every bound switch is used" is unchanged. **  The nine are save, decomposition, injection and
 #   clock switches, each gated by its own receipt; this receipt's bit-identity sweep covered the
 #   sixty it was built on and is not claimed for them.
+# ⛭ r6977: SIX MORE, all cc66's r6959 window-measurement family -- `SRCETA` and its band edges
+#   `SRCETAQ`, and the taper `SRCTAPER` with its three modifiers `SRCTAPERALL`, `SRCTAPERNORM`
+#   and `SRCTAPERS0`.  ** Each is off by default and byte-identical unset, verified on that
+#   revision after every wiring, and each reaches the hierarchy path alone. **  ⌗ *The bit-identity
+#   sweep below still covers the sixty it was built on and is not claimed for these fifteen: the
+#   set exists precisely so the count can grow without the sweep silently claiming more.*
 SWEPT_SIXTY_PLUS = {'ZPSAVE', 'SRCSAVE', 'SRCXS', 'SRCDEC', 'SRCINJ', 'SRCINJPH', 'SRCINJRS',
-                    'SRCINJVIS', 'VISLEAF'}
+                    'SRCINJVIS', 'VISLEAF',
+                    'SRCETA', 'SRCETAQ', 'SRCTAPER', 'SRCTAPERALL', 'SRCTAPERNORM',
+                    'SRCTAPERS0'}
 _ROWENVS = {r['env'] for r in ROWS}
 check("the instrument reads sixty environment switches with at least one use site, and every switch "
-      "that is bound is also used somewhere -- sixty at this sweep, sixty-nine now, the nine added "
-      "since named with their commits",
-      len(ROWS) == 69 and SWEPT_SIXTY_PLUS <= _ROWENVS and len(_ROWENVS - SWEPT_SIXTY_PLUS) == 60
+      "that is bound is also used somewhere -- sixty at this sweep, seventy-five now, the fifteen "
+      "added since named with their commits",
+      len(ROWS) == 75 and SWEPT_SIXTY_PLUS <= _ROWENVS and len(_ROWENVS - SWEPT_SIXTY_PLUS) == 60
       and not [e for e in DEFAULT if e not in USES],
       f"{len(ROWS)} switches used, {len(DEFAULT)} bound, "
       f"bound-but-never-used {[e for e in DEFAULT if e not in USES]}")
@@ -745,9 +753,21 @@ _SAVEZ_LINES, _SRCI_LINES = set(), set()
 for _n in ast.walk(TREE):
     if isinstance(_n, ast.Call) and isinstance(_n.func, ast.Attribute) and _n.func.attr == 'savez':
         _SAVEZ_LINES |= set(range(_n.lineno, _n.end_lineno + 1))
-    if isinstance(_n, ast.If) and isinstance(_n.test, ast.Name) and _n.test.id == '_SRCI':
+    if isinstance(_n, ast.If) and isinstance(_n.test, ast.Name) and _n.test.id in ('_SRCI', '_SRCE'):
         _SRCI_LINES |= set(range(_n.lineno, _n.end_lineno + 1))
 assert "_SRCI = os.environ.get('SRCINJ')" in SRC, 'the injection must stay off by default'
+# ⛭ r6977: ** `_SRCE` JOINS `_SRCI` HERE, AND THE REASON IS WORTH STATING BECAUSE THE ALTERNATIVE
+#   WOULD HAVE BEEN TO LABEL AWAY A REAL FINDING. **  cc66's r6959 band sum forms `q = k r_s / pi`,
+#   which IS arithmetic on the acoustic scale -- and this receipt's claim is that the scale is a
+#   diagnostic of the instrument rather than an input to it.  ⇒ *The claim is about the REPORTING
+#   PATH, and that arithmetic is inside `if _SRCE:`, a block gated by a switch that is off by
+#   default and byte-identical unset -- the same standing as the injection probe already
+#   recorded here.*  ⌗ The branch is not pruned automatically because the guard tests a NAME bound
+#   from the environment rather than an inline read, and `decide` over-counts in that case by
+#   design, which is the safe direction.  ⚠ *So the site is recorded as an off-by-default
+#   alternative mode, with the assertion below holding it to that: if the switch ever acquires a
+#   default, this stops being true and the check fails rather than passing quietly.*
+assert "_SRCE = os.environ.get('SRCETA')" in SRC, 'the window measurement must stay off by default'
 
 
 def _rs_kind(l):
@@ -767,9 +787,10 @@ def _rs_kind(l):
     return 'ARITHMETIC -- this would be a real input'
 _kinds = {l: _rs_kind(l) for l, q in _rs_live}
 check("...and every live line on the reporting path that mentions `R_S` or `L_A` is the DEFINITION "
-      "itself, a `print`, the `SAVE` metadata, or the `hier_run` call that drops it -- not one is "
-      "arithmetic feeding a transfer function.  ** So the acoustic scale is a DIAGNOSTIC of this "
-      "instrument and not an input to it. **",
+      "itself, a `print`, the `SAVE` metadata, the `hier_run` call that drops it, or a block gated "
+      "by a switch that is off by default -- not one is arithmetic feeding a transfer function on "
+      "the reporting path.  ** So the acoustic scale is a DIAGNOSTIC of this instrument and not an "
+      "input to it. **",
       all(v != 'ARITHMETIC -- this would be a real input' for v in _kinds.values()),
       f"{len(_rs_live)} live sites: " + ", ".join(f"{l} ({v})" for l, v in sorted(_kinds.items())))
 _p1, _p2 = cmp2('lcdm', 'pairLRSFROMbase', 'pairLRSFROM')[0], mv('lcdm', 'LRSFROM')[0]
