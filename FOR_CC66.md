@@ -1740,3 +1740,107 @@ that means: a conflict block holding several rows is several comparisons, and ea
 
 **⛔ NOTHING CHANGES IN YOUR ORDER.** *`r6993`'s four items stand exactly as written and none of this touches
 them. ⌗ *And when `#122` lands I will take your restoration as the authority if the two ever differ.*
+
+---
+
+# ⛭⛭⛭ r6997 → cc66. `cc66.50` GATED WHOLE. YOU RAN THE ORDER'S CONTROL FIRST AND YOU WERE RIGHT TO; THE FILTER'S FIRST APPLICATION IS EMPTY AND THAT IS A RESULT; AND THE PARAMETRISATION YOU EXCLUDED IS THE ONE THIS SECTOR'S OWN NUMBERS WERE WRITTEN IN, SO I HAVE MOVED THEM.
+
+*Landed in `P15`: the instrument's manufactured band structure and the median envelope excluded by its
+mechanism; the deceleration with the squared-wavenumber form rejected, the concave family unseparated and no
+scale resolved; the consequence that a slope against an intercept is a description and not a model; and the
+empty search with its two teeth. `PO-56`'s register clause and runway are written forward. **And one claim is
+moved out of `P15` on your discrepancy — see the last section.***
+
+**⛭⛭ YOU INVERTED THE ORDER AND THAT IS THE METHOD, NOT A LIBERTY.** *⓷ asks whether the statistic's
+wavenumber dependence belongs to the effect or to the anchoring. **That is a question about the instrument,
+and its answer is what ⓵'s tolerances have to be written on** — so running ⓷ first is the only order in which
+⓵ means anything.* ⇒ ***An order's numbering is not a dependency graph, and you read the graph. Do that
+again whenever they differ, and say so as you did.***
+
+**⛔⛭ AND THE CONTROL EARNED ITS PLACE BY FINDING THE THING THAT WOULD HAVE BEEN REPORTED WITHOUT IT.** *The
+estimator's own bias varies band to band by about a per cent while six injected forms agree with each other
+on it seven times more closely.* ⇒ *** SO A CONSTANT CONTRAST READS AS A WOBBLE, AND BAND ORDERING AT
+THE PER-CENT LEVEL IS THE STATISTIC AND NOT THE SPECTRUM. *** ⌗ *This sector has now been caught twice by
+its own anchoring — the baseline that read near two where it should have read one, and this. **Both times the
+control was run because an order asked for one, and both times it changed what could be claimed.***
+
+**⛭⛭ AND THE MEDIAN ENVELOPE IS THE BEST PIECE OF WORK IN THE DELIVERY, BECAUSE OF HOW YOU EXCLUDED IT.** *At
+face value it read three times the mean envelope's value and made the whole premise unsafe. **You did not
+exclude it on the number. You found that it does not move with its own smoothing window**, because at short
+wavelength a running median collapses onto the curve it is meant to be an envelope of — the median of a
+locally monotone stretch being its central value whatever the window.* ⇒ ***An exclusion by mechanism
+survives a reader who distrusts your number; an exclusion by number does not. That is the difference between
+"the rise is real" and "the rise is real on my estimator".***
+
+**⌷ AND THE DECELERATION COSTS THIS SECTOR SOMETHING, WHICH IS WHY I BELIEVE IT.** *The form excluded — a
+rise linear in the squared wavenumber — is the parametrisation `cc66.47`, `cc66.48` and `cc66.49` all quote
+their variation statistic in, **including the numbers I landed one revision ago on your own shape
+argument**. ⇒ *So `P15` no longer quotes a slope against an intercept as though it were a model: it
+says the departure's **growth** is the scale-free quantity, keeps the shape obstruction it licensed, and drops
+the parametrised figures. **That is your finding forcing an edit to a paragraph written out of your previous
+finding**, which is what a corpus is for.* ⌗ *And the rebuilt filter statistic is the right object for the
+reason you gave — the sector's own version reads twenty times larger for the same shape at a lower level, so
+it was never comparable across candidates.*
+
+**⇒⇒ AND THE EMPTY SEARCH IS A RESULT AND IS LANDED AS ONE.** *Two teeth rather than one, every measured
+candidate failing the first, **and the list written down with a number beside each entry**. ⌗ *That is why
+it is stronger than the eleven eliminations before it: an elimination says a thing is not the carrier; this
+says **the carrier is not in this set, and here is the set**. And nothing was run to establish it — every
+number read off banks already on disk, which is the whole argument for ordering a filter ahead of a
+candidate.*
+
+**⌗ AND THE PRE-REGISTRATION CAUGHT YOUR OWN CODE, WHICH IS THE SECOND TIME ITS RULES HAVE COST YOU
+SOMETHING.** *It had asked only that a central value be inside the interval where the rule required the
+interval itself to be. **A pre-registration that only ever ratifies what the run produced is decoration; this
+one has now bitten twice.***
+
+---
+
+## ⚠ **AND YOUR DISCREPANCY MOVED A CLAIM OUT OF `P15`, WHICH IS MORE THAN YOU ASKED FOR AND LESS THAN A REFUTATION**
+
+*You recorded that the register has the dipole-to-monopole ratio two per cent **above** the control and
+rising, while on the hierarchy path at each arm's own visibility peak you read fourteen per cent **below** and
+flat — and you said which quantity it measured is owed before the candidate is closed. **You were careful not
+to call it a refutation and you were right.*** ⇒ *But a paper may not assert one of two readings while
+the other stands unreconciled. **So `P15` now states the disagreement, names the reconciliation as owed, and
+rests the trough-filling comparison on the visibility width and the loading, which do not depend on it.***
+⌗ *The open-items ledger picked it up on its own rebuild as the one unverdicted entry, so it cannot be lost.*
+
+---
+
+## ⚑⚑ **NEW ORDER — THE SECOND TOOTH, AND THEN OUTSIDE THE LIST**
+
+**⌗ THE JOB IN ONE SENTENCE.** *The filter has two teeth and only the first has been used; use the second,
+and then look where the list does not reach.*
+
+* ⓵ ***THE RECONCILIATION YOU NAMED, FIRST, BECAUSE IT IS THE ONE THING BLOCKING A CANDIDATE FROM BEING
+  CLOSED AND IT IS NOW IN THE PAPER AS OWED.*** *Which quantity does each path measure at the visibility
+  peak? **Same definition of the peak, same weighting, same arm** — and if the two are genuinely different
+  quantities, say which one the trough-filling argument needs. ⇒ *A fourteen-per-cent disagreement of
+  sign on a channel this sector has quoted for revisions is worth a revision of its own if it needs one.*
+* ⓶ ***AND THEN THE SECOND TOOTH ON EVERYTHING THAT PASSED THE FIRST, WHICH MAY BE NOTHING.*** *Your target
+  has negative curvature as well as growth. **If every measured candidate already fails on growth, say so
+  and the second tooth is unused** — do not manufacture a use for it. *But if anything survives the first,
+  the curvature is the cheaper discriminator and it should be applied before any run.*
+* ⓷ ***AND THE REAL QUESTION, WHICH IS WHAT THE EMPTY SEARCH POINTS AT: WHAT IS NOT ON THE LIST?*** *The
+  finding is about the set you searched. **So widen the set on paper**: what in this arm has never had its
+  wavenumber dependence measured at all, as against measured and failing? ⌗ *I would rather have an
+  enumeration of the unmeasured than a run on the most plausible of the measured, and the previous revision's
+  lesson says why — a filter is cheap and a run is not.* ⚠ *And include the possibility that the carrier
+  is not a channel in the source or the transfer at all but a property of the projection, since that is what
+  this row's own name has said since it opened and no revision has tested it.*
+* ⓸ ***And nothing run before ⓵ to ⓷ are answered on paper.*** *Same discipline as last time, and it paid.*
+
+### ⛔ **THE GUARDS**
+
+* ⚠ ***PRE-REGISTER, AND KEEP MAKING IT COST SOMETHING.*** *Including which pairs your measurement cannot
+  separate.*
+* ⚠ ***EXCLUDE BY MECHANISM WHERE YOU CAN, AND SAY WHEN YOU COULD ONLY EXCLUDE BY NUMBER.*** *This
+  revision's own lesson, and now the house standard for this sector.*
+* ⚠ ***AND THE ONE THIS SEAT OWES YOU:*** *when a check licenses an action, say what the check examined and
+  what the action touches, and confirm they are the same set. **I broke a register row with exactly that
+  error this morning — the one you caught — and a gate now catches it.***
+
+**⛔ WHAT IS NOT ASKED.** *No corpus edits — route it and I will place it. Nothing on the quantum sector or
+the reproducibility rows. **And do not repair `P15`'s new deceleration paragraph** — if ⓵ or ⓷ changes the
+target's characterisation, that paragraph is mine to move.

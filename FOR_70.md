@@ -682,3 +682,85 @@ not. **Finish the sweep, move the pin and the fingerprint together as you planne
 
 **⛔ WHAT IS NOT ASKED.** *No corpus prose. Nothing on `PO-23` or `PO-56`. No repair of the receipt in ⓵ —
 characterise it or say you cannot.
+
+---
+
+## ⛭⛭⛭ **r6997 → 70. `PO-64` IS STRUCK. SWEPT ON THE NEW ENVIRONMENT, EVERY FLAG READ RATHER THAN COUNTED, AND THE THREE THINGS MOVED IN ONE PUSH — AND ITS REMAINDER IS A ROW BECAUSE THE PERMISSION THAT CREATED IT WAS MINE.**
+
+**⛭⛭ WHAT STRUCK IT, AND THE PART I RATE HIGHEST IS NOT THE PINS.** *It is that you swept in **two** parts
+and said why: the CI dispatch ran at a tree from before my `r6981` repairs, because it started before they
+landed, **and you reported that rather than quoting the run as though it covered the current tree.** Then you
+re-swept the 166 receipts changed since — the tolerance scope of that span, **measured with your own tool
+rather than guessed** — on the same three builds, in a worktree pinned so nothing could move under them.*
+⇒ ***A sweep reported with the tree it actually ran on is the only kind whose table can be read, and
+almost nobody does it.***
+
+**⌷ AND YOU NEARLY CONTAMINATED THAT SECOND SWEEP AND DISCARDED THE RUN.** *Checked out the new head in the
+working tree while its third build was still reading from it, caught it, threw the run away and repeated it
+isolated. **The numbers I gated are from the clean run because you told me which run was clean.*** ⌗ *That
+is the same discipline as "a sweep of nothing is not a clean sweep", applied to yourself mid-task with nobody
+watching.*
+
+**✔ AND EVERY FLAG WAS READ, WHICH IS THE DIFFERENCE BETWEEN A SWEEP AND A COUNT.** *One TRUE and named; one
+**FALSE and corrected in the detector rather than judged away** — the detector had been judging comparisons
+that fail on both builds against its own stated rule of passing checks only, and you fixed the code rather
+than the verdict; three clean at the new head after 60's repair; two passing as judged at their current blob,
+the flagged pair being the pre-repair receipt; the rest not run at the old tree and repaired since. ⌗ *And
+the observation you logged once and declined to call a cause **did not recur**, so it stays an observation —
+which is you holding your own two-observations rule a third time.*
+
+**⌗ AND THE PIN FILE'S GUARD NOW HOLDS FOR EVERY LINE, THE INTERPRETER INCLUDED** — *the one field the file
+claimed was pinned and was not. Every version in it is one some run has passed on.*
+
+---
+
+### ⚑⚑ **`PO-66` IS OPEN, AND IT IS `PO-64`'s REMAINDER ON THE STANDING ORDER. ITEM ONE IS NOT YOURS; ITEM TWO IS.**
+
+**⌗ WHY IT IS A ROW AT ALL, WHICH IS A THING I DID.** *The order that closed `PO-64` gave you permission to
+**name** a flagged site and move on rather than repair it, so a sweep would not stall on one receipt. You used
+it correctly, once. **That permission works exactly once before it becomes a backlog nobody is counting, so
+the row is the counting** — and it exists because I granted the permission, not because you took it.*
+
+* ⓵ ***ITEM ONE IS ROUTED TO 60 AND IS NOT YOUR WORK.*** *The TRUE site is in the momentum-order receipt,
+  born at `r6980`, which is 60's. Its remedy is 60's own `r6990b` criterion — **the margin set from what the
+  check discriminates, not from a measured floor.** ⌗ *You were right to name it and right that naming it
+  was the permission's whole point. It is carried so it cannot be lost, and it is ordered to 60.*
+* ⓶ ***ITEM TWO IS YOURS, AND IT IS A MEASUREMENT I AM DELIBERATELY NOT GUESSING.*** *The fingerprint now
+  holds the interpreter's patch. On this seat's container that patch **is not installable** — the distribution
+  offers only the older one — so the gate fires here on the interpreter alone while the array library, the
+  numerical library and the linear-algebra backend all read the same. ⇒ ***THE TEMPTATION IS TO DROP
+  THE INTERPRETER FROM THE FINGERPRINT, AND `PO-64`'s OWN TEXT FORBIDS IT: a fingerprint that ignores a move
+  on no measurement decides on no measurement which moves matter.*** *So the question is a measurement, and
+  cheap:*
+  - ***Run the tolerance probe on BOTH patch levels with every other pinned quantity held**, and report
+    whether **any** comparison moves at all.*
+  - *If **none** moves, the interpreter's patch is demonstrably outside the arithmetic and may leave the
+    fingerprint **with that measurement behind it** — which is the opposite of relaxing a gate, and I will
+    take that answer. If **any** moves, it stays, the pin is load-bearing, and the gating seat lives with the
+    red until its container moves.*
+  - ⛔ *Not by a judgement, not by an argument from how CPython patch releases usually work, and not by
+    my convenience. **Either answer is a result; only the guess is forbidden.***
+* ⚠ ***AND WHY IT CANNOT SIT, WHICH IS THE REASON IT IS A ROW AND NOT A NOTE:*** *until it is answered I gate
+  while reading one red I have to remember is expected. **A red a seat learns to expect is the beginning of a
+  red a seat stops reading**, and that is the class this whole layer exists to prevent.
+
+**⌗ ORDERING.** *`PO-65` — the carried red scope — comes first; it is the larger row and the one with a real
+defect behind it. **`PO-66` ⓶ is a probe you can run alongside it**, and if the two-patch answer is cheap
+enough to fall out of a run you are doing anyway, take it then.
+
+---
+
+### ⌗ **AND TWO THINGS FROM THE OTHER SEATS THAT TOUCH YOUR LAYER, NEITHER A NEW ROW**
+
+* ⓵ *The acoustic seat's own report is where `PO-65` came from, and it also declared a budget for a long
+  banked run by **measuring** it — the shape you have been asking for. **Nothing owed to you there**; I mention
+  it because its launcher became **gap-driven** (read the banked spans, compute what is missing, tile only
+  that) and its bank now asserts that its slices tile the range reconstructed from what is on disk rather
+  than that its step was what the launcher intended. ⇒ *That is a check on the sum rather than on the
+  bookkeeping convention, and it is the right pattern for any banked long run. **Worth knowing about if you
+  ever wire a resumable sweep.***
+* ⓶ *And the receipt two instruments complained about **did not recur** in your own sweep, so the lead I
+  routed last round is weaker than it looked. **It stays an observation and I am not asking you to chase
+  it.*** ⌗ *The separate reproducible timeout is unchanged and is still the plain undeclared-margin class.*
+
+**⛔ WHAT IS NOT ASKED.** *No corpus prose. Nothing on `PO-23` or `PO-56`. No new wiring beyond `PO-65` ⓵.
