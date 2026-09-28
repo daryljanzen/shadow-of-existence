@@ -2370,3 +2370,62 @@ this tells us what any such number would mean, including the one already in hand
 
 **⛔ WHAT IS NOT ASKED.** *No corpus edits — route it and I will place it. No further entries of the rank
 sequence. Nothing on `PO-56`, `PO-64` or the reproducibility layer.
+
+---
+
+## ⛭ **r6987+66.1 → 60. AMENDMENT TO THE ORDER ABOVE, MADE THE SAME DAY AND BEFORE YOU START: ⓵ IS LARGELY ANSWERED IN THE CORPUS ALREADY, AND READING IT MOVES THE ORDER RATHER THAN CANCELLING IT.**
+
+*I sent that order and then did what it told you to do, which I should have done first. **`P18`'s
+cosmological-constant accounting and its `\hbar` subsection both commit on the premise**, and they commit
+against the premise rather than for it. So ⓵ is not an open question the way I wrote it; what is left of it
+is a consistency check, and the live question is a different and better one.*
+
+**⌗ WHAT THE CORPUS ALREADY ASSERTS, QUOTED SO YOU CAN CHECK ME RATHER THAN TRUST ME.** *`P18`
+(`sec:dissolved`): the Planck values are **cross-register combinations, mixing a thermal constant with the
+geometric ones, so they are gauge combinations and not physical scales**; the one physical length is the
+substrate's curvature radius; and **"the ratio of it to the Planck length is the size of the universe
+measured in gauge units --- a number, and not a tuning."** ⌗ *And the residue is stated outright: **the
+curvature's value is the ledger's one input, and it is not predicted**.* ⌷ *And `P18`'s `\hbar`
+subsection places the chain: the horizon's period fixes `\hbar` **against the curvature alone**, "the
+constants enter as unit gauges over the one scale, and the single place a free quantum parameter could have
+sat is closed by the horizon's own thermal state."*
+
+⇒ ***SO THE RATIO IS NOT A FREE NUMBER. IT IS DETERMINED ONCE THE ONE INPUT IS GIVEN, WHICH IS THE STANDING
+OF EVERY OTHER QUANTITY IN THE LEDGER.*** *Which makes your correction stronger than you stated it: a
+coefficient carrying a length squared cannot be a second **physical** length **on this construction's own
+accounting**, at any operator dimension, because the second length is a gauge combination over the first by
+assertion and not by hope. ⌗ *The `10^{122}` a reader computes from the horizon is, in `P18`'s words, "the
+gauge count squared and nothing further".*
+
+### ⚑ **SO ⓵ BECOMES A CONSISTENCY CHECK, AND IT IS THE ONE PLACE THE PREMISE COULD STILL REOPEN**
+
+* ⓵ ***Does that chain reach the tower?*** *`P18` is a synthesis and I have read its summary, not its
+  sources --- **that reading is still yours to do, at `P17` and the framework paper.** The specific thing to
+  check: the chain is curvature to horizon period to `\hbar` to the Planck length. **If anything in
+  `sec:lock`'s tower takes `\hbar` as an independent constant rather than the horizon-fixed one, the
+  gauge-combination claim does not reach the tower** and the premise reopens for the tower specifically,
+  whatever `P18` says in general. ⇒ *That is a real possibility and it is exactly the "which space" guard
+  applied to a constant instead of a manifold.*
+* ⓶ ***AND THE QUANTITATIVE QUESTION, WHICH IS THE ONE WITH TEETH AND IS CHEAP.*** *The ratio is of order
+  $10^{-61}$ and its square of order $10^{-122}$. A dimension-six counterterm enters at second order in that
+  ratio. **So work out what the second-order term's size actually is at the epochs the construction cares
+  about, and say whether the expansion is still an expansion there.*** ⇒ *If the answer is that a
+  second-order divergence exists and is suppressed by something of that order, then **the row's remaining
+  question is one of principle with no quantitative consequence** --- which is a closing statement and not a
+  gap, and it is a far more useful thing to land than the coefficient itself. ⌗ *And if the scale factor's
+  own powers undo the suppression at some epoch, that is a result with a locus and I want it with the locus
+  named.*
+* ⓷ ***And one thing to say plainly either way, because the corpus already names a cousin of it.*** *`P18`
+  locates **a surviving instance of the cosmological-constant problem inside the boundary coefficient**, as
+  "an epistemic gap of a single physical datum rather than a residual freedom of the quantization". **Say
+  whether the datum your branch would owe is the same datum or a second one.** *If it is the same, the
+  affirmative branch costs the ledger nothing it has not already declared; if it is a second, that is the
+  first genuine addition to the one-input ledger and it must be reported as one.*
+* ⓸ ***What the earlier order's ⓶ and ⓷ asked for still stands*** --- what a determination would have to be
+  if the chain does not reach, and whether anything already banked reads the ratio one way without saying so.
+  ⛔ *And the two-loop coefficient is still sequenced after this, for the reason ⓶ gives: its size is worth
+  more than its value.*
+
+⚠ ***AND I AM HANDING YOU A SUMMARY AND SAYING SO.*** *Everything quoted above is `P18`'s prose about
+`P17`'s and the framework paper's claims. **If the sources do not say what the synthesis says they say, that
+is the result and it outranks everything else in this order.***
