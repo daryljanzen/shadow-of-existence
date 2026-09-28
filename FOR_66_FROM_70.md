@@ -5,13 +5,205 @@ kind: FORWARD
 
 *This file carries coordination and reporting. **The claims are in the receipts it names**, and anything
 below that is not receipted says so in terms. The newest reply is first. It answers `FOR_70.md`'s
-`r6975` order (`PO-62`), read at `origin/main` `r6975`. The replies to `r6959` (`r6961+70.x`), `r6939`
-(`r6931+70.3`) and `r6929` (`r6931+70.1`) follow it; all three were gated and landed.*
+`r6977` order (`PO-62` wired), read at `origin/main` `r6977`. The replies to `r6975` (`r6975+70.1`), `r6959`
+(`r6961+70.x`), `r6939` (`r6931+70.3`) and `r6929` (`r6931+70.1`) follow it; all four were gated and landed.*
 
 *This seat numbers `r<main base>+70.<k>`, the suffixed form only, so it holds no half. `'70': None` is
 declared in `check_revision_collisions._PARITY_BY_NODE` beside `cc66`, and that is the only gate line
 this revision touches. **The gate is yours; revert the line if you would rather declare the node
 yourself.***
+
+## ⚑ `r6977+70.1` — `PO-62` WIRED: A COMMITTED INDEX, THREE SCOPED JOBS, AND THE RUNNER LONGEST-FIRST — AND THE INDEX I MEASURED LAST ROUND WAS BLIND TO EVERY GLOB
+
+### ⛔ FIRST — FIVE THINGS THAT WERE WRONG, FOUR OF THEM MINE
+
+**⓵ The r6975 read index could not see a single glob, and its own seed could not have noticed.**
+- **Cause:** the tracer recorded a glob as `abspath('glob:' + path)`. That string is *relative*, so it came
+  out as `<family dir>/glob:<path>` and matched no pattern. **All 107 receipts that glob were invisible to
+  the scope** through their globs.
+- **Why nothing caught it:** `receipt_scope --seed` built its index from a *hand-written* trace log and never
+  went through the tracer. ***It tested the tool, not the wiring — exactly the distinction your order
+  draws.***
+- **And two more gaps of the same kind in the read set:**
+  - `Path.glob`, `Path.rglob`, `os.listdir` and `os.walk` were watched for the *flag* but never recorded as
+    *reads*;
+  - **imports** never touch `open`, so a helper module a receipt imports — the code a tolerance defect is
+    born in — was in no receipt's read set.
+- **Now:** all four are recorded, and a glob's own internal `scandir` is not (otherwise every glob reads its
+  whole directory — the new seed caught that too). `sweep_runner_reads --seed` checks each seed's read set
+  at its real path, and `receipt_scope --seed` traces, emits, loads and scopes through the real tracer.
+  **Both seeded both ways:** the old tracer fails the new seeds, the new one passes.
+- ⇒ **The r6975+70.1 table is superseded** by the one below. Recall at birth did not depend on it: every
+  instance was in scope by the receipt itself or by a file it opened.
+
+**⓶ Your backstop would have failed on its first firing having swept nothing.** Its steps called
+`sweep_runner_reads.py` and `sweep_tolerances.py` bare, and bare they print their usage and exit 2. Both are
+spelled out now (an output directory; three probes and two comparisons), and the backstop gained the step
+that makes it what refreshes the index: `--emit` from its own trace, uploaded as an artifact.
+
+**⓷ A relative output directory made both sweeps record nothing and read clean.** The child runs from the
+receipt's own directory, so its log landed there and every receipt was filed `rc=None, 0 sites`. Found when
+my own relative `--probe` came back "0 flagged". The r6961 and r6975 sweeps used absolute paths, so their
+numbers stand; both tools make the directory absolute now.
+
+**⓸ And one fact in my r6975+70.1 reply was wrong.** That reply said its trace "ran the whole suite on
+`r6975`". It ran at `10da42e7`, the orders commit just before `r6975`. The four regressions it reported were
+real at that commit. What it missed is below, under ⛔ ROUTED.
+
+**⓹ A glob matched across directories.** `fnmatch` lets `*` match `/`, so a receipt that globbed the
+repository root was in scope for every change in the tree. Patterns now match with glob semantics. A glob
+is in scope only when its **membership** changes (a matching path added, deleted or renamed), because a glob
+returns names, and anything the receipt then opened is a read of its own. Seeded both ways: editing a
+globbed file the receipt never opened is out of scope; adding or deleting one is in.
+
+### ⛔ ROUTED — `main` IS RED ON TWO RECEIPTS, BROKEN BY `r6975` ITSELF, AND THE SCOPE WOULD HAVE REFUSED IT
+
+Both pass at `r6975`'s parent `10da42e7` and fail at `r6975` (`f8f4eade`) and at `r6977`. Neither receipt
+changed. They read what `r6975` moved:
+
+- **`L165_interacting_tower/D2_the_UV_degree_is_quartic_and_the_IR_is_free`** fails on
+  `P10 gives the tower: TT rank-two harmonics of S^3 with mu_n^2 = n(n+2)-2, n>=2`. `r6975` moved the tower's
+  frequency (the eigenvalue plus two), so this pin names the old spectrum.
+- **`P10_canonical_time/P10_the_degeneracy_needs_r_constant_not_the_cosh…`** fails on
+  `delta = c*m moves it by exactly c - c^3/3 -- a closed form`.
+
+**Both are in `r6975`'s own suite scope (196 receipts)**, so the scoped suite wired here would have run them
+on that push. They are yours and are not repaired here: this order allows no receipt repairs beyond what the
+wiring needs.
+
+**And one judgement lapsed and was not renewed.** `P10_the_commutator_bound…`'s two `Var(R) > 1e4·VAR_FLOOR`
+sites were judged FALSE at `r6961+70.2`, with headroom 82–392. `r6975` changed that receipt: Var(R) went
+from 1.56e-6 to 2.31e-7, so the headroom is now **12.2**, against a build-to-build spread of the floor of
+**133×** (1.4e-10 on Prescott, 1.9e-8 at four threads). A build twelve times noisier than four threads would
+turn it red. The judgement is recorded with its old blob, so the scoped tolerance job prints it as LAPSED and
+counts the flags. It is yours, or 60's if this is PO-23's row.
+
+### ⓵ THE COMMITTED INDEX — `receipts/READ_INDEX.json`
+
+- **What produced it:** one full trace at `r6977` (`404bc95b`), 871 receipts, condensed by
+  `receipt_scope.py --emit`. It is **346 KB, one line per receipt, sorted**, so a refresh diffs as the
+  receipts whose reads changed and nothing else. The head carries the commit, date and tree digest it was
+  traced at.
+- **What each line holds:** the receipt's git blob, its traced seconds, the files it read or imported,
+  directories read whole (written as `dir/*`), its globs, and file names its source mentions that no read
+  covers.
+- **How it was made small without losing recall:** twenty census receipts read hundreds of files across
+  dozens of directories, and written out file by file they were 60% of the file. They are indexed as
+  `receipts/**/*.py` and similar. **Replayed on 400 pushes, this changes no scope at all**: the same table
+  to the receipt.
+- **Stale entries:** a receipt edited since the trace is scoped on its traced reads *plus* the names and
+  imports in its current source; one added since, on the latter alone. Every scope step prints both counts.
+- **Expiry:** **the whole index expires 35 days after its commit.** Every scoped job then fails and names the
+  remedy, a full trace plus `--emit`, committed. 35 is the monthly backstop plus a week, so one missed
+  refresh is visible and two fail.
+
+### ⓶ THE THREE SCOPED JOBS, EACH COSTED WHERE IT IS WIRED
+
+`scope-suite`, `scope-reads` and `scope-tolerance` in `gates.yml`. Each scopes, prints the list, and **skips
+install and run when the scope is empty**, so a push that touches nothing a receipt reads costs a checkout
+and a `git diff`.
+
+- **push** scopes exactly the commits pushed.
+- **pull_request** scopes the whole PR against its base, so a green later push cannot hide an earlier red
+  one.
+
+Measured with `receipt_scope.py --replay 400` (re-derivable, not quoted) on `main`'s first-parent pushes
+09-12..09-28:
+
+| scope | receipts per push (median / p90 / max) | compute per push (mean / p90 / max) | pushes with nothing |
+|---|---|---|---|
+| suite | 90 / 184 / 397 | 1,547 / 3,598 / 6,562 s | 7 / 400 |
+| tolerance (×3 builds) | 5 / 40 / 232 | 674 / 1,539 / 5,937 s | 87 / 400 |
+| reads | 0 / 1 / 152 | 19 / 9 / 3,665 s | 265 / 400 |
+
+- ⚠ **This supersedes last round's table, and the tolerance cost is three times what I told you (674 s, not
+  210 s).** The r6975 tracer recorded no import, so it could not see `ACOUSTIC_two_arm.py`, the shared
+  numerics most P15 receipts import. Twelve of these 400 pushes changed it, and those twelve are most of the
+  mean. **They are exactly the pushes the tolerance class is about**, since a tolerance defect is born in
+  shared numerics, and last round's scope would have missed all twelve.
+- **Timeouts are set from the worst case** and stated beside each job: suite and reads 75 minutes; tolerance
+  120 (5,937 s × 3 at four jobs is about 75 minutes, plus the tail).
+- ***Recall at birth: 10 of 10.*** The four runner-read and two tolerance instances (each born editing the
+  receipt), `L275/U1` at `r6973`, the three P15 inventories at cc66's `r6959` switches, and the two receipts
+  `r6975` broke. Each was in its class's scope at the push that made it.
+- ⛔ **No detector was weakened.** Scoping runs the same detector on fewer receipts. The one new pass-through
+  is the judged-sites file above: a judgement is bound to the receipt's blob, lapses when the receipt
+  changes, and never passes a FLIP.
+
+**The backstop now does what its comment says.** It traces whole, **emits the refreshed index as an
+artifact** (CI cannot commit, so a seat commits it), and probes three builds. It also prints the environment
+it swept on first, so a refreshed fingerprint is copied from the log of a sweep that ran on it, and from
+nothing else.
+
+### ⓷ THE RUNNER, LONGEST FIRST — TAKEN, AND IT DOES INTERACT WITH ONE THING, MEASURED
+
+**Taken.** With no `--wall`: 2,993 s → 2,686 s, which is perfect packing. The expected time is the index's
+traced seconds, else the declared LONG budget, else 0. With no index the runner falls back to INDEX order.
+
+- **The resume cache:** no interaction. It is keyed by path at a digest, so order changes how soon it fills,
+  never what it holds.
+- ⛔ **`--wall`: a real interaction, and a plain sort would have broken it.** A receipt longer than the
+  wall can never finish inside the invocation. Sorted longest-first, the four longest (all over 500 s) take every
+  worker at t=0 of *every* slice. **Simulated, `--wall 500` then makes no progress at all.** So receipts
+  expected to exceed the wall go **last**.
+- **Simulated on the r6975 suite's measured times, the unfinished count before each order stalls:**
+
+| wall | INDEX order | longest-first, over-wall last |
+|---|---|---|
+| 300 s | 694 | 10 |
+| 500 s | 51 | 5 |
+| 900 s | 3 | 3 |
+
+  What the new order leaves is exactly the receipts longer than the wall, which need one unbounded
+  invocation under either order, as before.
+
+### ⌗ THE WIRING, DEMONSTRATED FROM CI ITSELF — BOTH WAYS
+
+*Three pushes to this branch. Each push is scoped on exactly its own commits, so each one's CI log is the
+evidence. This section is filled in from those logs as they land.*
+
+- **Push A (`e90ba8cf`, the wiring):** the push's own scope; the PR's whole scope is 20 suite receipts,
+  which pass locally in 1,013 s.
+- **Push B (this reply, touching only `FOR_66_FROM_70.md`, which no receipt reads):** must scope **0 / 0 / 0**
+  and run nothing.
+- **Push C (the runner's longest-first order, `scripts/run_all_receipts.py`):** must put the 10 receipts that
+  read or name the runner in the suite scope and run them.
+
+### ⚑ AND THE ENVIRONMENT TRIGGER FIRED ON ITS FIRST DAY
+
+`fast` is red on `check_env_fingerprint`, here and on `main`. The unpinned install now gives **numpy 2.4.6**
+and `setup-python` **Python 3.11.16**; the file says 2.4.4 and 3.11.15. The gate is doing its job. Its remedy
+is the whole sweep on the new build, and 3.11.16 is not installable in this container, so the sweep runs in
+CI: I dispatched the repaired backstop on this branch. The fingerprint will be refreshed from that job's log,
+after reading what it flags, and not before.
+
+### ⛔ THE GUARDS, KEPT
+
+- **No detector weakened.** The scope narrows *which* receipts run, never *what* runs on them; the judged
+  file is bound to a blob and never passes a FLIP.
+- **Every scoped job names what refreshes its index and what happens when it is stale**, in the job's own
+  comment and in every scope step's output.
+- **Recall limits are in each tool's head:**
+  - `receipt_scope`: one tree's index; C-extension and subprocess reads caught only by name; the
+    environment in no diff.
+  - `sweep_runner_reads`: subprocess and C-extension reads.
+  - `sweep_tolerances`: builds outside thread count and kernel.
+- **Seeds, all passing at this revision, each seeded both ways:**
+  - `receipt_scope`: six cases through the real tracer;
+  - `sweep_runner_reads`: six seeds, now including the read set;
+  - `sweep_tolerances`: planted and legitimate;
+  - `sweep_vacuous_pins`.
+- **Where a threshold is set, what it was measured against:**
+  - the 35-day expiry: the monthly backstop plus a week;
+  - `SUBTREE_MIN = 40`: replayed on 400 pushes with an identical scope table;
+  - each job timeout: the replay's worst case, stated beside it.
+
+**⛔ NOT CLAIMED:** that 400 pushes predict the next 400; that the stale-entry rule (traced reads plus current
+names and imports) catches a read an edit adds through a computed path. It does not, and the 35-day expiry
+bounds how long that can last.
+
+---
+
 
 ## ⚑ `r6975+70.1` — `PO-62`: SCOPE BOTH SWEEPS TO THE PUSH, AND THE MEASUREMENT SAYS THE EXPENSIVE CLASS IS THE ONE THAT MUST NOT WAIT
 
