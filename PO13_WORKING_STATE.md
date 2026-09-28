@@ -5149,3 +5149,58 @@ power in the monopole in every band ($0.1837\to0.2171$ at $q=1.2$, $0.5320\to0.5
 correspondingly less in the Doppler, with the ISW under half a per cent of the window's power on both
 arms. *That is a normalisation difference which is not a smearing and is not required to vanish at long
 wavelength — where R1's $q$-independent offset could come from. Measured here, tested nowhere.*
+
+## `cc66.48` (`r6975`) — THE TERM MIX HAS THE OFFSET'S SHAPE AND OVER-DELIVERS ITS SIZE; THE CHANNELS DO NOT ADD
+
+*Path: **hierarchy** throughout. Banks `spectra/r6975_mix{,b}_lcdm.npz` plus `r6959_*`; receipt
+`P15_the_term_mix_has_the_shape_the_offset_needs_and_over_delivers_its_size.py`, 28 gates.*
+
+**⓵ THE REMAINDER.** Measured excess ÷ what the window channel delivers at the arm's size: $1.0184$ at
+$q=0$ (**46 % of R1's offset**), $123$ % of the measured $q^{2}$ slope, anchored ratio $0.49$ against the
+window channel's $12.44$.
+
+**⓶ THE CLASS ARITHMETIC — AND THE STATISTIC'S OWN BASELINE.** Each class applied to the control's
+spectrum and re-read with the same envelope and locator:
+
+| class | heights | depths | ratio |
+|---|---|---|---|
+| amplitude (oscillation scaled about the envelope) | $+7.53\%$ | $+3.84\%$ | $\mathbf{1.96}$ |
+| envelope (smooth part scaled at fixed oscillation) | $+7.93\%$ | $+4.05\%$ | $1.96$ |
+| loading (a smooth positive component removed) | $+2.21\%$ | $+3.51\%$ | $0.63$ |
+| smearing (Gaussian in $\ell$, nine multipoles) | $+5.55\%$ | $-1.05\%$ | $-5.28$ |
+
+⇒ **A symmetric operation reads $1.95$ here, not $1$** — stable across a fivefold range of sizes, because
+the running-mean envelope is recomputed and shifts the oscillation upward by a constant. ⛭ *So the
+anchored reading **confirms** `cc66.46`'s variance split: $2.20$ against $1.96$ is twelve per cent. My
+own note that the two statistics disagreed is retracted, in the pre-registration, before the runs landed.*
+
+**⓷ THE TERM-MIX SWAP.** `DPSRC` was already wired to the hierarchy path (`r6889+cc66.36`), and the
+coefficient giving the control the arm's monopole fraction is solved from the profiles: $0.860$–$0.897$
+across the seven bands — **one constant to two per cent**.
+
+| $q$ | $1.20$ | $1.90$ | $2.60$ | $3.30$ | $4.00$ | $4.70$ | $5.40$ |
+|---|---|---|---|---|---|---|---|
+| `DPSRC=0.8794` | $1.0595$ | $1.1088$ | $1.0780$ | $1.0821$ | $1.0905$ | $1.0724$ | $1.0911$ |
+| `DPSRC=0.60` | $1.2078$ | $1.4010$ | $1.2759$ | $1.2995$ | $1.3331$ | $1.2658$ | $1.3394$ |
+| measured excess | $1.0215$ | $1.0574$ | $1.0519$ | $1.0606$ | $1.0748$ | $1.0659$ | $1.0762$ |
+| **over-delivery** | $2.77\times$ | $1.90\times$ | $1.50\times$ | $1.35\times$ | $1.21\times$ | $1.10\times$ | $1.20\times$ |
+
+* ✔ **T1 sign** — the contrast rises in every band.
+* ⛭⛭ **T2 shape — the finding.** The response is **$q$-independent**: intercept $1.0805$ at $q=0$, slope
+  worth three per cent of it. ***The first channel measured with the signature the offset needs***, where
+  a smearing's characteristic function is identically one.
+* ⛔ **T3′ weighting fires** — $2.23$ and $2.21$, peak-weighted at the symmetric baseline, where the
+  remainder it was to be is $0.49$. **The term mix is not the remainder.**
+* ⛔ **T4 comb fires, wrong way** — $\ell_1$ $-1.04$, $\ell_2$ $-1.79$, both outside the sky's widths,
+  where the arm sits at $+1.61$.
+
+⛔⛭⛭ **THE CONSEQUENCE.** Window channel $1.72\%$ band-mean, term mix $8.32\%$, measured $5.84\%$ ⇒
+**their sum is $1.72\times$ what is measured**, so the two cannot both be present at their measured sizes
+and simply compose. ***And ⓵'s remainder is a ratio of two responses, so it is a construct of that
+composition rule and not a residual channel*** — which is why its $0.49$ and the swap's $2.23$ are not in
+conflict.
+
+⚠ **AND MY ⓶ IDENTIFICATION IS REFUTED BY ⓷.** I argued the Doppler fills the oscillation and that
+removing it should read as the loading class near $0.6$; it reads $2.23$. The profiles say why: the
+Doppler's band-to-band power tracks the monopole's at correlation $0.95$, so it is an **oscillating** term
+in quadrature, not a smooth additive one, and removing it is nearly a pure amplitude change.
