@@ -104,3 +104,45 @@ heights and equal percentage changes are not equal variance shares.* ⇒ **Two s
 symmetric and one of them not, on the same excess** — the standing guard, firing again. *Everything in
 `cc66.47` compared SHARES of the arm's own excess and so is unaffected; but the word "symmetric" belongs
 to the variance split and I will say which statistic every weighting number is on.*
+
+---
+
+# SECOND SUPPLEMENT — ⓶'s ARITHMETIC RETRACTS THE FIRST SUPPLEMENT'S FRAMING, AND RESETS T3′'s REFERENCE
+
+*⓶ is arithmetic on the control's own banked spectrum, done before any `DPSRC` slice finished. It changes
+the number T3′ must be measured against, so it goes in now.*
+
+**What a five per cent operation of each named class reads as, on the anchored statistic** — computed by
+applying the operation to the control's own binned spectrum and re-running the same envelope and the same
+anchored locator:
+
+| class | operation on $D_\ell$ | heights | depths | **ratio** |
+|---|---|---|---|---|
+| **A amplitude** | the oscillation scaled about the envelope | $+7.53\%$ | $+3.84\%$ | **$1.95$** |
+| **B envelope** | the smooth part scaled at fixed oscillation | $+7.93\%$ | $+4.05\%$ | **$1.96$** |
+| **C loading** | a smooth positive component removed | $+2.21\%$ | $+3.51\%$ | **$0.60$–$0.67$** |
+| **E smearing** | a Gaussian in $\ell$ of nine multipoles | $+5.55\%$ | $-1.05\%$ | **$-5.28$** |
+
+⛔ ***So the baseline for a SYMMETRIC operation on this statistic is not $1$ — it is $1.95$***, stable
+across operation sizes, because the running-mean envelope is recomputed and shifts $o$ upward by a
+constant, which adds to the heights and subtracts from the deeper troughs.
+
+⚠ **THAT RETRACTS THE FIRST SUPPLEMENT'S CLOSING NOTE.** *I wrote there that the anchored statistic and
+the variance split disagree, the excess being "peak-weighted $2.20$" on one and symmetric on the other.
+**They do not disagree**: $2.20$ against a symmetric baseline of $1.95$ is agreement to thirteen per cent,
+so the anchored reading confirms `cc66.46`'s variance split rather than contradicting it.* ⇒ **The
+statistic has a baseline and I compared to $1$ instead of computing it. The guard about keeping two
+statistics apart was right; my application of it was not.**
+
+**AND T3′'s REFERENCE MOVES WITH IT.** *Measured against $1.95$, not against $1$:*
+
+* the **whole excess**, $2.20$ → within thirteen per cent of a pure amplitude change;
+* the **window channel**, $12.44$ → strongly peak-weighted, on the smearing side;
+* the **remainder**, $0.49$ → strongly trough-weighted, **and the only named class on that side of
+  $1.95$ is the loading class at $0.60$–$0.67$.**
+
+⇒ ***So ⓶'s answer is that the remainder is in the loading class — a smooth additive component removed —
+and reducing the Doppler is exactly that operation.*** **T3′ restated: the `DPSRC` swap should read
+between about $0.5$ and $0.7$, trough-weighted, well below the symmetric baseline of $1.95$.** ⛔ *Refuted
+as the remainder if it reads at or above $1.95$ (symmetric or peak-weighted); refuted equally if it reads
+far below $0.4$, which no named class produces.*
