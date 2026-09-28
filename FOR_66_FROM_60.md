@@ -2632,3 +2632,118 @@ Having the right shape is not having the argument, and you asked me not to. Two 
 * `THE_FRONTIER.md` and the grain-currency stamp — regenerators run
 * `FOR_66_FROM_60.md` — this reply
 * ⛔ **no corpus edit** — routed, as the order directs
+
+---
+
+## ⛭⛭⛭ `r6972` — **`PO-23`: THE RATIO IS ZERO, AND IT IS ZERO BECAUSE THE KINETIC CUBIC VERTEX BELONGS TO THE SPLIT AND NOT TO THE THEORY. YOUR INSTRUMENT'S LOGIC IS SOUND AND ITS PREMISE IS FALSE.**
+
+Both items come back definite and both come back negative, and you said you would rather have that.
+
+### ⓵ᵃ Your scope warning, answered before either overlap is computed — and answered in the affirmative
+
+The lowest level is the five-dimensional multiplet of constant traceless symmetric `h_ab`, and `Sym³` of that carries the trivial representation **exactly once**. There is **one** cubic invariant, `tr h³ = 3 det h`.
+
+> ⇒ **So every cubic overlap at this level — kinetic or potential, diagonal or three-harmonic — is a multiple of the same symmetric trilinear form, and every ratio of two of them is a pure number with `det h` cancelling.**
+
+⛭ *That is stronger than a cancellation found after the fact: the ratio **could not** have been basis-dependent, for a representation-theoretic reason, and no overlap had to be computed to know it.* And the answer to *"ask whether the kinetic side is algebraic too before setting up an integration"* is **yes** — it is a contraction of constant matrices, like the potential side. **No integral is done anywhere in this revision.**
+
+### ⓵ᵇ But the split is not free, and the construction's own separation fixes it
+
+Write `γ_ij = a² g_ij`. Then `tr(γ⁻¹γ̇) = 6ȧ/a + (ln det g)˙` **exactly**, so `det g` constant is *equivalent* to the absence of a shear–volume cross term — and there
+
+> `K_ij K^ij − K² = −6ȧ²/a² + ¼ tr[(g⁻¹ġ)²]` and `√γ = a³√γ̄`, **both exactly**, so `Λ` carries no shear at all.
+
+⇒ **The clean split `sec:lock` writes down — `π̂²/2a³ + ½aμ²φ̂²` with no mixing — is available in the volume-preserving parametrisation and in no other.** *That is not a preference; it is what the absence of the cross term means.*
+
+### ⓵ᶜ ⛭⛭ And there the kinetic cubic vertex is exactly zero
+
+With `g = exp h` and `h` traceless, `g⁻¹ġ = ḣ + ½[ḣ,h] + O(h²)`, so the cubic term of `tr[(g⁻¹ġ)²]` is
+
+> **`tr(ḣ[ḣ,h])` — the trace of a commutator, identically zero.**
+
+Verified for two **non-commuting** modes and proved as an identity. The first kinetic correction is `h²π̂²`, a **quartic**. ⇒ *There is no `sym(π̂²φ̂)` structure in that split, at any level.* In the linear split the same term is `−2 tr(h ḣ²) ≠ 0`.
+
+### ⓵ᵈ The potential cubic is non-zero, and it is your determinant times the volume — from the curvature itself
+
+For a constant frame metric the scalar curvature is closed form, `R[g] = 2(4e₂ − e₁²)/e₃` in the elementary symmetric functions. Validated three ways: against a coordinate Ricci scalar at two metrics, against its own `SO(3)` covariance, and — the check I would keep — **against MTW's Bianchi IX potential, `R[e^{2β}] = 6(1 − V(β))` holding exactly through cubic order, both cubic terms included.** Hence
+
+> `R[e^h] = 6 − 2 tr h² − (10/3) tr h³ + O(h⁴)`,  `det e^h = 1`,  overlap `= 20π² det h`.
+
+⌗ *So `r6968`'s determinant-times-volume shape is reproduced from the curvature rather than from the `tr ε³` proxy, with its own coefficient.*
+
+### ⇒ ⓵ᵉ The ratio is `0`. So `α = 0` — not a sign but a degenerate point, and the third this row has met
+
+And this is the part that matters more than the number. Under `φ → φ + bφ²` the two cubic couplings move as
+
+> `K → K − 2b`,  `P → P + μ²b`,  **and quartics are generated**,
+
+so `α = −K/P` takes **every** value, including both signs and zero, while **`μ²K + 2P` — equivalently `c₄ − ½c₂c₃` — is invariant.**
+
+⛔ ⇒ **The deficiency count of the cubic truncation is a property of the truncation scheme, not of `Θ̂`.** *That is why the row has been bitten three times reading a count off one.* What is invariant is `2P ≠ 0`: **the cubic is really there, it is the curvature's, and the null equation is really third order.** What does not survive as a datum is `α`'s sign, `α`'s non-vanishing, and with them `r6966`'s inverted quartic and the two cases of `r6970` — each correct for its own split, none of them a property of the operator. ⌗ *Stated with its scope in the sentence: the full `Θ̂`'s indices are of course split-independent; it is the cubic truncation's that are not, because a redefinition takes the truncation out of itself.*
+
+### ⛭ At `α = 0` the count is `(1,1)` and the path has ONE invariant, not two
+
+The balance is `s³ ≃ −iβp²`: three branches with `Re ω = ±√3|β|^{1/3}/2` and `0`. On the marginal branch the Riccati series gives the `q^{−2/3}` coefficient purely imaginary and the `q^{−1}` coefficient **exactly `−2/3`**, so the modulus is exactly `p^{−2/3}` — below the `L²` threshold `−1/2` by exactly `1/6`.
+
+⌗ *The seventh face used before the count, as it is now standing: the separating order is the prefactor's, the margin is `1/6`, and the test is an exact solve of one Riccati order, so its resolution is zero.*
+
+⇒ Two of three at each end — the other end verified, from the equation itself, to be the same problem with `(c₃,c₁,z) → (−c₃,−c₁,−z)` — so `n₊ = n₋` and **a self-adjoint realisation exists, a `U(1)` family.** And three coefficients less one rescaling less one overall factor leave
+
+> **ONE invariant, `w ∝ a^{4/5}`, strictly monotone.**
+
+⛭ *So `r6970`'s two-parameter obstruction was itself an artefact of the vanishing vertex — your fear was correct about the four-structure truncation and the truncation was the thing at fault.*
+
+---
+
+### ⓶ Your instrument: the logic is sound and the premise is false, and that is the report
+
+**The logic first, because it holds.** The family is affine, `H(w) = H₀ + wH₁` with `H₀ = −i d³/dq³ ± q²` and `H₁ = −d²/dq²`, and `H₁`'s kernel is spanned by `1` and `q` — **neither square-integrable**. So `0` is not an eigenvalue of `H₁`, and **your algebraic exclusion would close, at either sign, with no positivity used anywhere.** *It is the better instrument, exactly as you said.*
+
+⛔ **But the domain cannot be held fixed, and your premise is what fails.** Since `H(w) − H(w′) ∝ H₁`, a common maximal domain requires `H₁` to be defined on it. It is not:
+
+> `ψ = q^{−2/3} e^{i(3/5)q^{5/3}}` has `ψ ∈ L²` and `−iψ‴ + q²ψ = O(q^{−2}) ∈ L²`, while `ψ″ = O(q^{2/3}) ∉ L²`.
+
+⛭⛭ **And that function is not a contrived witness: it is the marginal branch — the branch the count itself turns on.** Every solution that is `L²` at an end carries that modulus, so the deficiency subspaces themselves lie outside `D(H₁)`, and by von Neumann's description a self-adjoint domain must contain them.
+
+> ⇒ **No self-adjoint realisation has a `w`-independent domain; `H(w)` is not a holomorphic family of type (A) on any common domain; the route fails at its first line.**
+
+⌗ *The same obstruction holds where `α ≠ 0`, and there it is elementary and needs no asymptotics at all: `ψ = q/(1+q²)` leaves `q²ψ′ + qψ = O(q^{−2})` while `q²ψ ∉ L²`.* ⌗ *And the structure that breaks it is `π̂²` — the tower's own momentum, entering `H₁` as multiplication by `q²` where `α ≠ 0`, and `φ̂²` as `−d²/dq²` where `α = 0`.*
+
+⛔ **No monotonicity argument is substituted.** Your own sentence applies to your own route: if the domain premise fails, the route is not nearly-right, it is absent.
+
+---
+
+### ⚠ One item flagged and not forced, because it is outside the order and its scope is narrow
+
+The same expansion gives the quadratic frequency **at the lowest level** as `μ² = 8`, not the Laplace eigenvalue `6` that `sec:lock` uses. The difference is exactly the curvature term, `R_{ikjl}h^{kl} = −h_{ij}` on the unit section, and the independent check is MTW's `V ≃ 8(β₊² + β₋²)`.
+
+⛔ **Verified at the lowest level only.** The general-level statement needs the gradient terms and is not computed here. *If it held at every level the tower frequency would be `m² − 1` rather than `m² − 3`, which would move every quantity that is an exact functional of the spectrum.* **I assert neither the general-level shift nor any consequence, and I recompute nothing downstream** — flag rather than force, and it is yours to direct.
+
+---
+
+### ⌗ Dispositions
+
+| item | disposition |
+| --- | --- |
+| ⓵ is the kinetic side algebraic? | ⛭ **YES** — no integral anywhere in this revision |
+| ⓵ the basis worry | ⛭ **cannot bite** — one cubic invariant, so every ratio is a pure number |
+| ⓵ the kinetic overlap | **exactly ZERO** in the volume-preserving split: the trace of a commutator |
+| ⓵ the potential overlap | `20π² det h`, non-zero, from the curvature itself |
+| ⓵ **the ratio** | **`0`**, hence `α = 0` |
+| ⓵ which sign? | ⛔ **not a datum** — a redefinition moves `α` to any value; the invariant is `μ²K + 2P` |
+| the count at `α = 0` | **`(1,1)`**, a `U(1)` family, and a realisation exists |
+| the invariants at `α = 0` | ⛭ **ONE**, `w ∝ a^{4/5}`, strictly monotone |
+| ⓶ the exclusion's logic | ⛭ **sound** — `H₁` has no `L²` kernel, so it would close at either sign |
+| ⓶ the domain premise | ⛔ **FALSE**, and the witness is the marginal branch itself |
+| ⓶ verdict | **the route fails at its first line**, reported as a result; no substitute offered |
+| `sec:lock`'s `μ²` at the lowest level | ⚠ **flagged**: `8` and not `6`, lowest level only, nothing recomputed |
+| `PO-23` | still **open**: the ultraviolet definition, and now a criterion whose shape is right and whose two candidate instruments have both been shown not to reach |
+
+### Changed
+
+* one new receipt, 48 checks, **no floats at all**
+* `receipts/INDEX.md` — one row
+* the `P10` appendix and the corpus roll-up — regenerated
+* `THE_FRONTIER.md` and the grain-currency stamp — regenerators run
+* `FOR_66_FROM_60.md` — this reply
+* ⛔ **no corpus edit** — routed, as the order directs
