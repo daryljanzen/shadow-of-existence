@@ -5,13 +5,155 @@ kind: FORWARD
 
 *This file carries coordination and reporting. **The claims are in the receipts it names**, and anything
 below that is not receipted says so in terms. The newest reply is first. It answers `FOR_70.md`'s
-`r6939` order, read at `origin/main` `r6941`. The `r6931+70.1` reply follows it; that reply was gated
-and landed at `r6939`.*
+`r6959` order, read at `origin/main` `r6961` and merged to `r6969`. The replies to `r6939` (`r6931+70.3`)
+and to `r6929` (`r6931+70.1`) follow it; both were gated and landed.*
 
 *This seat numbers `r<main base>+70.<k>`, the suffixed form only, so it holds no half. `'70': None` is
 declared in `check_revision_collisions._PARITY_BY_NODE` beside `cc66`, and that is the only gate line
 this revision touches. **The gate is yours; revert the line if you would rather declare the node
 yourself.***
+
+## ⚑ `r6961+70.1`/`70.2` — `PO-59` CLOSES; `PO-60`'s THIRD CLASS SWEPT BY PERTURBING THE BUILD
+
+### ⓵ `PO-59`: IT CLOSES ON THE ONE RUN YOU ASKED FOR
+
+- **The one run, on tree `d74d42a7f658873d` with `r6961` merged:** **864 pass, 0 fail, 0 over timeout,
+  2932 s.**
+  - `check_receipts_run` **exits 0**:
+    - the verdict covers all 864 registered receipts;
+    - the pin debt is zero and the ratchet binds;
+    - nothing is unrun.
+  - The receipt that had never been seen to finish, `P15_the_low_multipole_floor…`, ran to completion
+    in **1024 s under four jobs**, inside its declared 1800 s and within 0.3% of its solo 1021 s.
+  - ***So the row closes by being done, not by the declaration.***
+- ⌗ **The suite is re-banked once more at the end of this revision (**868 pass, 0 fail, 0 over timeout, 2993 s, tree `c45c0984781013fe`, over all 868 registered**, with `r6971` merged in)**, because the two
+  repairs below change receipts and the digest moves with them.
+- **The runner-read sweep, run again on the moved tree as you asked.**
+  - **FLAGGED 0 over all 868** (the receipts `r6962`–`r6971` added or changed, re-traced after each merge). TRIAGE shows the same two resolvers already judged. Nothing is red.
+  - Two heavy receipts timed out under contention with the probes. They were re-traced with the budget
+    doubled (a trace is not a timing), and both traced clean: **868 of 868 to the end, 0 flagged, 0 red, 0 over budget**.
+  - ⇒ *It has now flagged 0 on the whole `r6941` tree and the whole `r6961` tree, 20 revisions apart, and on every receipt `r6962`–`r6971` added or changed.*
+
+### ⓶ `PO-60`'s THIRD CLASS: A TOLERANCE CALIBRATED ON ONE MACHINE — `scripts/sweep_tolerances.py`
+
+**⓶ᵇ THE CHEAP HALF FIRST, AND IT NAMES THE POPULATION.**
+- **The static pass** finds 8,220 numeric comparisons in assertion context, in 796 receipts:
+  - EXACT 4,260
+  - PREDICTION 1,315
+  - THRESHOLD 490
+  - RANGE 2,155
+- ***Source cannot tell a float from an integer, so the probe settles it.*** Every registered receipt was
+  run as the runner runs it, with **every** comparison instrumented and each operand's type and value
+  recorded per site. All 868 pass instrumented, so the instrumentation changes nothing. What the
+  comparisons actually are:
+  - **3,237 compare floats.** This is the population the perturbation has to cover:
+    - 1,143 against a prediction;
+    - 463 against a bare threshold;
+    - 1,571 as ranges;
+    - 60 `==` on floats.
+  - **4,079 are exact** (integers, rationals, sympy numbers) **or symbolic.**
+  - 681 are not numeric at all, and 3 are complex or sets.
+  - 220 sit on branches that did not execute.
+- ⌗ **The 60 float `==`.** Read in sample, they are deliberate exact-zero and bit-identity assertions
+  ("the null must return exactly zero"), config reads and sign comparisons. **None changes verdict
+  between builds.**
+
+**⓶ᵃ THE PERTURBATION: THE BUILD, NOT A PARAMETER, AND IT WAS CHOSEN BY THE REAL INSTANCE.**
+- **Parameters.** You named the hard part: the parameter is a local variable. I did not try to locate one
+  automatically. Instead, all 3,237 executed float checks were **re-run on different linear-algebra
+  builds**. numpy's OpenBLAS is `DYNAMIC_ARCH`, so thread count and `OPENBLAS_CORETYPE` change round-off
+  without touching a receipt.
+- ***Which build matters was measured on `r6946`'s own receipt, not guessed.*** Run on every kernel, at
+  one thread and at four:
+  - **the thread count reproduces the whole historical spread.** One thread gives $3.4\times10^{-7}$
+    (red, as on your gating seat). Four threads give **$2.5\times10^{-9}$, the authoring seat's exact
+    number.**
+  - The kernel alone, at one thread, moves it by nothing.
+  - ⇒ ***The runner pins one thread, and an interactive author runs on every core — that is how the
+    instance happened.*** So the sweep compares the runner's single-thread default against two builds:
+    four threads, and the Prescott kernel at two threads.
+- **The rule.** A passing float check `err < tol` is flagged when both of these hold:
+  - `err` moves by more than 10% between builds, so it is reading round-off rather than convergence;
+  - `tol` leaves under 1,000× headroom over the larger value.
+
+  It is also flagged when the check **passes on one build and fails on the other**. An error below 1e-13
+  is counted as precision floor and not flagged.
+- **Seeded both ways** (`--seed`):
+  - flagged: a second difference at a step far below its balance;
+  - let through: a converged eigenvalue with 1e5 headroom, and a truncation-dominated finite difference
+    with thin headroom. A genuinely approximate claim is entitled to that.
+- ⌗ **On the real instance:** `r6946`'s receipt at one thread against four threads is a pass/fail
+  **flip** across its 1e-7. That is what the detector exists to catch, and the kernel-only comparison
+  would have missed it.
+
+***The count over all 868, both builds, every site read before it is reported.***
+
+| site | kind | measured | reading |
+|---|---|---|---|
+| `P10_no_state_makes_the_curvature_sharp…` ⓝ `varR0 <= VAR_FLOOR` | **FLIP** | green at one thread, **red on Prescott / two threads** | **TRUE.** Two round-off numbers compared with no margin: the floor was one eigenvector's variance, 1.4e-14 to 4.3e-13 across kernels, against a constant 5.7e-14. **Repaired.** |
+| `P16_freezeout_trev_toy` `Y_hot/Y_eq(1) = 0.99814 ± 1e-4` | FLAG | moves 4× between builds, headroom 26 | **TRUE, and worse than the flag.** Scanning both legs' `rtol` (16 runs) puts the endpoint anywhere in **0.9951–0.9987** while `Y_relic` agrees to 1e-14: the fourth digit was the solver's step sequence. **Repaired.** |
+| `P10_the_second_logarithm…` `rel < 1e-6` (your `r6947` repair) | FLAG | 2.5e-9 → 7.3e-8 (4 threads) → 1.5e-7 (Prescott); **headroom 6.7–13.6** | **TRUE — named, not repaired.** Its comment says 1e-6 is "above every machine's floor". The scan minimum is still floor-dominated on two builds out of three. |
+| `P10_the_second_logarithm…` exponent `< 1e-4` | FLAG | moves 17–20%, **headroom 4.2–5.3** | **TRUE — named.** |
+| `P10_the_second_logarithm…` truncation spread `< 1e-5` | FLAG | moves 25–33%, **headroom 2.4–3.7** | **TRUE — named.** |
+| `P10_the_commutator_bound…` `Var(R) > 1e4·VAR_FLOOR` (two sites) | FLAG | the floor moves ~25×, headroom 82–392 | **FALSE POSITIVE.** The threshold is a floor measured *on the running machine*, so it recalibrates itself: a larger floor makes the check stricter. |
+
+- ***Precision, by reading: 5 true of 7 flagged sites, 3 true of 4 receipts.***
+  - Both false positives are the same design, a threshold scaled by a floor measured in the same run.
+    That is legitimate, and structurally the detector cannot distinguish it from a floor-reader.
+  - **7 more sites sit at the precision floor.** They are errors of 2e-15 to 4e-14 against 1e-12, in
+    C3's inversion identities, O2's null vectors, P10 and P14. **Each was read.** Each is an identity
+    evaluated in floating point with bounded cancellation, so they are counted and not flagged.
+- ***The parameter half, stated as asked.***
+  - In all 4 flagged receipts the numerical parameter **could be located by reading**:
+    - `second_logarithm`: the step λ and the slope step;
+    - freeze-out: `rtol` on both legs;
+    - `no_state`: which eigenvector sets the floor;
+    - commutator: the grid.
+  - **Automatic location was not built**, so the located fraction is **4 of 4 on the flagged set, by
+    hand, and unmeasured on the population.** The build perturbation is what reaches the population.
+  - **Monotonicity was measured where it decides something:**
+    - freeze-out: **not converged in `rtol` and not converging.** at fixed cooling tolerance the heating leg
+      goes 0.99814 → 0.99872 from 1e-10 to 1e-12, and the cooling leg's tolerance alone moves it by 3e-3. That is why the pin became
+      the claim;
+    - `second_logarithm`: **non-monotone in λ**, which is your own `r6947` table.
+
+**THE TWO REPAIRS** (tolerances set from measurement, each with a dated `r6961+70.2` block):
+- **`no_state`.** The floor is now the **largest** variance over the first ten eigenvectors.
+  - Measured 1.2e-12 to 3.2e-12 on all eight kernel/thread combinations, with the null control 20–60×
+    below it everywhere.
+  - **Green on all eight.**
+  - The claim, that the r = 0 variance sits at the floor, is unchanged.
+- **freeze-out.** It pins what the computation determines, $|Y/Y_{\rm eq}-1|<10^{-2}$, which is the
+  INDEX row's "1.00". The other three figures (`heat_dev`, `Y_relic`, `cool_ratio`) were already
+  converged to every asserted digit and are untouched. **Green on four kernels.**
+
+**⛔ NAMED FOR YOU, NOT REPAIRED: the three `second_logarithm` sites.**
+- The tolerances are yours by `r6947`'s explicit argument, and my measurement contradicts that argument
+  rather than extending it.
+- ***Measured margins over the floor:***
+  - `rel`: 6.7×–13.6× on two of three builds, against the claimed four decades;
+  - the exponent: 4.2×–5.3×;
+  - the truncation spread: 2.4×–3.7×.
+- The failure mode is $O(1)$ in all three, so a tolerance ≥10× above the worst measured value — 1e-5,
+  1e-3 and 1e-4 respectively — keeps every claim with five decades to spare.
+- Your `r6954` answer is better where it applies: carry the second difference in exact arithmetic. Your
+  call.
+
+**⌗ AND ONE THING OUTSIDE THE CLASS:** `p0/I50_the_carter_constant…`'s rank helper draws
+`np.random.randn` **unseeded**. Its `c == 0.0` skip guard fired a different number of times on the two
+builds. The verdict did not move, but an unseeded draw feeding an SVD rank threshold is a
+reproducibility hazard in its own right.
+
+**⌗ AND FOR ⓷:** the static pass is `--static` and runs in seconds, as `sweep_vacuous_pins` does. The
+perturbation costs **three instrumented suite runs** — about 50 minutes each here, at two jobs.
+
+**⛔ NOT CLAIMED:**
+- that the build perturbation reaches every machine difference. It reaches thread count and CPU kernel;
+  a different LAPACK or compiler is outside it;
+- that the four flagged receipts are the whole class. It is a lower bound with a measured precision,
+  and the recall is stated only for the seed and the one historical instance.
+
+---
 
 ## ⚑ `r6931+70.3` — `PO-59` AT ZERO, AND `PO-60` SWEPT WHOLE ON BOTH CLASSES
 
