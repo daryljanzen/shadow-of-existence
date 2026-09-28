@@ -5081,3 +5081,71 @@ on the banks `cc66.44` and `cc66.45` already built, which is why all three parts
 in one revision.* ⚠ **NOT CLAIMED**: that $1.8\sigma$ is a detection; a mechanism for the amplitude
 excess; a re-derivation of `PO-47`'s spreads; that the depths discriminate the clock — they do not; no
 verdict on the two-rate assignment; no refit; nothing touches `prop:flat`; no corpus edits.
+
+## `cc66.47` (`r6959`) — THE NORMALISATION ACROSS THE VISIBILITY: A THIRD OF THE EXCESS, AND PEAK-WEIGHTED
+
+*Path: **hierarchy** (`LOS=1 HIER=1`) throughout — `_project`, where `SRCETA` and `SRCTAPER` live, is
+reached from `hier_run` and nowhere else. Banks `spectra/r6959_*`; receipt
+`P15_the_windows_phase_spread_is_nearly_equal_because_the_visibility_widens_as_the_leaf_clock_slows.py`,
+45 gates.*
+
+**⓵ᵃ THE FUNCTION.** The source's weight across the window, band by band in $q$, with $r_{s,\rm leaf}$ as
+its abscissa. Spread in the phase variable: $0.06523$ of $r_s$ on the control, $0.06424$ on the arm — the
+arm narrower by $1.5$ per cent, $1.1$–$2.0$ per cent by band.
+
+| | control | arm |
+|---|---|---|
+| visibility FWHM in $\eta$ | $38.04$ | $\mathbf{43.59}$ ($+14.6\%$) |
+| $\mathrm d r_{s,\rm leaf}/\mathrm d\eta$ over $\pm3$ FWHM | $0.45572$ | $\mathbf{0.39334}$ ($-13.7\%$) |
+| `Jac` across the window | $1.0000$ | $0.789$–$0.913$ |
+| product, which is what a smearing reads | $1$ | $\mathbf{0.9890}$ |
+
+⇒ **The two-rate structure reaches the window and then very nearly cancels inside it**, because the
+visibility widens by almost the factor the leaf clock slows by.
+
+**⓵ᵇ THE PREDICTION, PRE-REGISTERED, AND WHAT THE RUNS DID TO IT.** The exact characteristic function of
+the phase under the measured weight gives $\mathcal D_{\rm cr}/\mathcal D_{\rm lcdm}=1.00078\to1.01654$
+against a measured excess of $1.0215\to1.0762$. R5 (sign) survives; R2 (size) fires at $0.223$ of the
+$[\tfrac12,2]$ bar; R1 (shape) fires because the measured excess extrapolates to $1.0400$ at $q=0$ where
+a characteristic function is identically $1$.
+
+⚠ **And R3's bracket was wrong in direction, which is mine.** `PREDICTION.md` argued the contrast responds
+*between* $f$ and $f^2$; measured it responds $2.3$ to $26$ times **more**, at both coefficients and in
+every band, and the condition passed only because its tolerance was written multiplicatively on $f$
+instead of on $f-1$.
+
+**THREE WIRINGS, THE FIRST TWO NOT THE OPERATION.** (1) The taper on the whole source cuts the ISW's
+$\eta$-integral to $0.656$ and $0.238$ of itself and moves $\ell_1$ by $7.7$ and $27.3$ multipoles.
+(2) Tapering only the visibility-carried source fixes that, and still outran the prediction by three.
+(3) Holding the window's total weight fixed lands on (2) to parts in ten thousand — **so that second
+diagnosis of mine was wrong too**, and the over-response is the contrast statistic's own sensitivity to
+the window's spread.
+
+**THE SIZE, FROM THE INSTRUMENT'S OWN RESPONSE.** Two coefficients fix $\ln R=c_1\alpha+c_2\alpha^2$ per
+band; inverted:
+
+| $q$ | $1.20$ | $1.90$ | $2.60$ | $3.30$ | $4.00$ | $4.70$ | $5.40$ |
+|---|---|---|---|---|---|---|---|
+| arm's own narrowing | $1.09\%$ | $1.53\%$ | $1.51\%$ | $1.89\%$ | $1.81\%$ | $1.97\%$ | $1.95\%$ |
+| narrowing for ALL of it | $1.24\%$ | $5.58\%$ | $3.59\%$ | $5.05\%$ | $7.16\%$ | $4.90\%$ | $4.01\%$ |
+| **share the arm's narrowing delivers** | $(88\%)$ | $\mathbf{25\%}$ | $\mathbf{40\%}$ | $\mathbf{36\%}$ | $\mathbf{23\%}$ | $\mathbf{37\%}$ | $\mathbf{44\%}$ |
+| **the direct swap closes** | $(124\%)$ | $\mathbf{33\%}$ | $\mathbf{38\%}$ | $\mathbf{20\%}$ | $\mathbf{22\%}$ | $\mathbf{23\%}$ | $\mathbf{21\%}$ |
+
+⇒ **Two independent routes agree on about a third above $q=1.9$**, and the narrowing for all of it is
+$4.5$ per cent against the arm's $1.7$ — a factor $2.7$. *The lowest band is where the inversion cannot
+be trusted and the swap overshoots, taking the excess below unity; that is reported rather than averaged
+away.*
+
+**⓵ᶜ R4, AND THE REFUTATION FROM `cc66.46`.** The arm-sized swap delivers $81$ per cent of the arm's
+peak-height excess and $14$ per cent of its trough-depth excess — a $5.7$-fold asymmetry — where
+`cc66.46` measured the excess **symmetric** about the envelope. ⇒ **A peak-weighted channel cannot carry
+a symmetric excess alone, whatever its size**, and that argument uses no size estimate at all. The taper
+that would deliver the whole excess moves $\ell_1$ by $18.5$ multipoles and the heights by $45$ per cent;
+the arm-sized one overshoots $\ell_1$ past the arm's own value ($+2.83$ against $+1.61$) while $\ell_2$,
+$\ell_3$ and $\ell_4$ stay inside the sky's locating widths.
+
+**THE TERM MIX, REPORTED AND NOT SWAPPED.** The same profiles show the arm holding more of its window's
+power in the monopole in every band ($0.1837\to0.2171$ at $q=1.2$, $0.5320\to0.5875$ at $q=5.4$) and
+correspondingly less in the Doppler, with the ISW under half a per cent of the window's power on both
+arms. *That is a normalisation difference which is not a smearing and is not required to vanish at long
+wavelength — where R1's $q$-independent offset could come from. Measured here, tested nowhere.*

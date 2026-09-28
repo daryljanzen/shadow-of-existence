@@ -1025,9 +1025,80 @@ _SRCIRS = os.environ.get('SRCINJRS', 'own')
 # this arm's own peak to the requested FWHM, preserving its integral.  ⌗ Reported as the
 # construction it is, not as "the control's visibility".*
 _SRCIV = os.environ.get('SRCINJVIS')
+# ⛭⛭ ** SRCETA: THE SOURCE'S CONFORMAL-TIME DEPENDENCE ACROSS THE WINDOW, AS A FUNCTION -- r6959. **
+# *`SRCSAVE` reports the source AT the visibility peak and its eta-INTEGRAL: a value and a ratio.
+# What `r6959` asks for is neither -- it is the eta-DEPENDENCE itself, which is what the analytic
+# injection of `cc66.42` replaced and therefore never measured.*
+#   ⌗ ** The object saved is the source's own WEIGHT across the window, band by band in q: **
+#       w(eta, band) = sum_{k in band} P(k) S(eta, k)^2
+#     summing over a BAND of k is what makes it a normalisation rather than an oscillation: at fixed
+#     k the source oscillates in eta as cos(k r_s(eta)), and neighbouring k oscillate at different
+#     rates, so the band sum leaves the envelope and cancels the ringing.  *The bands are the
+#     contrast statistic's own (`ED = arange(0.85, 5.76, 0.7)`), so the function is reported on the
+#     abscissa the excess is measured in and no re-binning is needed to compare them.*
+#   ⌗ ** And it is saved WITH its phase variable, r_s,leaf(eta), because that is what the smearing
+#     is a spread IN. **  `sound_phase` is the leaf's on both arms and `rs_leaf_of == rs_stack_of`
+#     identically on the control, so one abscissa serves both.
+#   ⚠ Read ONLY inside guarded blocks, exactly as `SRCSAVE` is: unset changes nothing.
+_SRCE = os.environ.get('SRCETA')
+_SRCEQ = np.array([float(x) for x in os.environ.get(
+    'SRCETAQ', '0.85,1.55,2.25,2.95,3.65,4.35,5.05,5.75').split(',')])
+# ⛭⛭ ** SRCTAPER / SRCTAPERS0: THE NORMALISATION SWAP -- r6959 ⓵ᵇ. **
+# *The mechanism test is to impose one arm's normalisation across the window on the other.  The
+# operation is a REWEIGHTING of the assembled source in the phase's own variable,*
+#       S(eta, k) -> S(eta, k) * exp(-SRCTAPER * (r_s,leaf(eta) - s0)^2),
+# *applied AFTER every gradient in `S` has been taken, so it touches no plasma dynamics, no phase and
+# no k-dependence at fixed eta: it changes only how much of each eta enters the integral.*
+#   ⌗ ** Why this parametrisation and not a window rescale: ** for a weight of spread sigma in s a
+#     Gaussian taper gives 1/sigma'^2 = 1/sigma^2 + 2*SRCTAPER, so the coefficient that imposes a
+#     TARGET spread is fixed in advance by the `SRCETA` measurement and by nothing else.  *Both signs
+#     are allowed -- a positive coefficient narrows the window, a negative one widens it.*
+#   ⌗ ** No renormalisation is applied and none is needed: ** the contrast statistic divides the
+#     spectrum by its own running mean, so it is invariant under an overall scale exactly, and the
+#     comb's positions are too.  *The receipt gates that invariance rather than asserting it.*
+#   ⚠ ** This knob reaches the HIERARCHY path only, because `_project` is called only from
+#     `hier_run`. **  That is the reporting path (`LOS=1 HIER=1`), which is where the contrast, the
+#     comb and the depths are all measured -- but the knob shadow of r4558/cc66.36 is why it is said
+#     here rather than left to be discovered.  *`SRCTAPER=0` is the default and takes no product at
+#     all, so the default is byte-identical and not merely near it.*
+_SRCT = float(os.environ.get('SRCTAPER', '0'))
+_SRCTS0 = os.environ.get('SRCTAPERS0')
+# ⛔⛭⛭ ** SRCTAPERALL: AND THE FIRST WIRING OF THE TAPER WAS NOT THE OPERATION IT NAMED -- r6959. **
+# *Applied to the WHOLE source, a Gaussian in r_s,leaf does not only reweight the visibility window: it
+# also crushes the ISW, whose support runs to eta_0 where |s - s0| reaches 427 Mpc.  ** Measured on the
+# first pair of runs: the ISW's own eta-integral came back at 0.656 of itself at the coefficient that
+# matches the arm's spread and 0.238 at the coefficient that delivers the observed excess ** -- and that,
+# not the window, is what moved l_1 by 7.7 and 27.3 multipoles and the peak heights by 12 and 48 per
+# cent.*
+#   ⇒ ** So the default now tapers only the source the VISIBILITY carries. **  The monopole, the Doppler
+#     and the polarisation terms all have `g` in them and live in the window; the ISW term has e^-tau
+#     instead and lives after recombination, outside it.  *Leaving the ISW alone is not a convenience:
+#     it is what makes the operation the one the hypothesis names, and the eta-profile the coefficient
+#     is solved from is a window measurement in the same sense.*
+#   ⌗ ** `SRCTAPERALL=1` recovers the all-terms form, because the confound is a measurement too **  --
+#     it is how the ISW's share of the low-q contrast was read -- and a knob whose first wiring was
+#     wrong should leave the wrong version runnable rather than unreproducible.
+#   ⚠ *The ISW-preserving form subtracts the term and adds it back, so the tapered spectrum carries a
+#     round-off of order eps that the all-terms form does not.  `SRCTAPER=0` takes neither branch, so
+#     the default is byte-identical either way.*
+_SRCTALL = os.environ.get('SRCTAPERALL', '0') == '1'
+# ⛔⛭⛭ ** SRCTAPERNORM: AND THE SECOND THING THE TAPER DOES THAT THE HYPOTHESIS DOES NOT NAME. **
+# *A taper bounded by 1 narrows the window's spread AND reduces the window's total weight, and the
+# contrast statistic is invariant under an overall scale but NOT under a change in the ratio of two
+# ADDITIVE components -- so the visibility-carried source shrinking against the ISW moves the contrast
+# by itself.*  ** Measured on the ISW-preserving pair: the run moved the contrast 2 to 4 times further
+# than the pure-smearing prediction, and this is why. **
+#   ⇒ `SRCTAPERNORM=1` divides the taper by its own VISIBILITY-WEIGHTED mean over the window,
+#     int g tau deta / int g deta, so the window's total weight is preserved and only its SPREAD moves.
+#     *That is the operation the hypothesis names and the one the prediction is a prediction of.*
+#   ⌗ The normalisation is a constant in eta, so it changes no shape: it is the one factor the contrast
+#     statistic is provably blind to when the source has a single component, and the whole point is that
+#     this source does not.
+_SRCTNRM = os.environ.get('SRCTAPERNORM', '0') == '1'
 # the per-batch source accumulator; `hier_run` concatenates it over the k-batches, which is exact
 # because every entry is indexed by k alone -- the eta axis is integrated or sliced out here.
 _SRCB = []
+_SRCE_B = []      # one (n_eta, n_band) block per k-batch; the band sum over k is exact, so these add
 _SRCD_B = []      # one (n_ls, 10) block per k-batch; C_l is a SUM over k, so these add exactly
 # ⛔⛭⛭ ** AND r6889+cc66.36: THEY REACHED ONE PATH OF THREE, WHICH IS THE SHADOW AGAIN. **
 # *r4558 placed these beside `_ISW` and calibrated them -- on `los_spectrum`.  ** The HIERARCHY path
@@ -1431,6 +1502,41 @@ def hier_run(kk, EE, L_A_, D_M_, R_S_):
               f"{float(np.max(_n['resid'])):.3e}"
               + (f"; and the same source at x0 * {_SRCXS:.6f}" if _SRCXS != 1.0 else "")
               + f" -> {_SRCS}")
+    if _SRCE:
+        np.savez(_SRCE, eta=EE, rs_leaf=np.asarray(rs_leaf_of(EE), float),
+                 rs_stack=np.asarray(rs_stack_of(EE), float),
+                 vis=np.asarray(vis_of(EE), float), etau=np.exp(-np.asarray(tau_of(EE), float)),
+                 jac=np.asarray(Jac_of(EE), float), q_edges=_SRCEQ,
+                 w2all=sum(d['w2all'] for d in _SRCE_B), nk=sum(d['nk'] for d in _SRCE_B),
+                 **{_q: sum(d[_q] for d in _SRCE_B)
+                    for _q in ('w2', 'w2md', 'w2sw', 'w2dp', 'w2isw', 'w2pol')},
+                 arm=ARM, r_s=R_S, D_M=D_M, l_A=L_A, ns=NS, eta_ls=ETA_LS, eta_ls_w=ETA_LS_W,
+                 leafscales=int(bool(LEAFSCALES)), taper=_SRCT,
+                 taper_all=int(bool(_SRCTALL)), taper_norm=int(bool(_SRCTNRM)), n_eta=len(EE),
+                 path='HIER', sliced=bool(_ksl), n_modes=len(kk))
+        # ** the header reports the AMPLITUDE-weighted spread of the phase variable over +-3 FWHM of
+        # the visibility, on the monopole-plus-Doppler part, because that is the combination the
+        # smearing acts on: `sqrt(w2md)` is the RMS oscillation amplitude at each eta once the band
+        # sum has cancelled the ringing, and the +-3 FWHM cut excludes the ISW tail, which extends to
+        # eta_0 and does not oscillate in k r_s. **  *A diagnostic; the receipt recomputes it from the
+        # saved arrays and shows it stable across +-2 to +-6 FWHM rather than taking the cut on
+        # trust.*
+        _wa = sum(d['w2md'] for d in _SRCE_B)
+        _rl = np.asarray(rs_leaf_of(EE), float)
+        _cw = (EE >= ETA_LS - 3 * ETA_LS_W) & (EE <= ETA_LS + 3 * ETA_LS_W)
+        _sg = []
+        for _b in range(_wa.shape[1]):
+            _w = np.sqrt(np.maximum(_wa[:, _b], 0.0))[_cw]
+            _t = float(np.trapezoid(_w, EE[_cw]))
+            if _t <= 0:
+                _sg.append(float('nan'))
+                continue
+            _m1 = float(np.trapezoid(_w * _rl[_cw], EE[_cw])) / _t
+            _sg.append(float(np.sqrt(max(np.trapezoid(_w * (_rl[_cw] - _m1) ** 2, EE[_cw]) / _t,
+                                         0.0))))
+        print(f"  SRCETA: the source's weight across {len(EE)} conformal times in "
+              f"{_wa.shape[1]} q-bands, with r_s,leaf as its abscissa; monopole+Doppler "
+              f"sigma_s/r_s = {', '.join('%.5f' % (x / R_S) for x in _sg)} -> {_SRCE}")
     if _SRCD:
         _dc = sum(_SRCD_B) * (ls * (ls + 1))[:, None]
         np.savez(_SRCD, ls=ls, Dl=Cl * ls * (ls + 1), Dl_pairs=_dc, pairs=np.array(_DECN),
@@ -1508,13 +1614,29 @@ def _project(kb, ee, Y, ls, x0, e_sw):
         # ** k^((1-NS)/2) makes the SMOOTH part of the integrand P * S^2 exactly dk/k on BOTH arms,
         # so the injection is identical in q and the two arms' different tilts cannot enter. **
         S = _gi * np.cos(_ph + _SRCIP * np.pi) * kb[None, :] ** (0.5 * (1.0 - NS))
+    # ⛭⛭ r6959+cc66.47 -- ** THE NORMALISATION SWAP, IN THE PHASE'S OWN VARIABLE.  See `SRCTAPER`. **
+    # *Placed here, after the real source AND after the injection, so it reweights whatever source is
+    # in play and so that every gradient inside `S` has already been taken.*
+    _tp = None
+    if _SRCT != 0.0:
+        _s0 = float(_SRCTS0) if _SRCTS0 else float(rs_leaf_of(ETA_LS))
+        _tp = np.exp(-_SRCT * (np.asarray(rs_leaf_of(ee), float) - _s0) ** 2)[:, None]
+        if _SRCTNRM:
+            _gv = np.asarray(vis_of(ee), float)
+            _tp = _tp / (float(np.trapezoid(_gv * _tp[:, 0], ee)) / float(np.trapezoid(_gv, ee)))
+        if _SRCTALL:
+            S = S * _tp
+        else:
+            # ** the ISW term, lifted out and put back untapered -- see `SRCTAPERALL`. **
+            _iw0 = _ISW * et * (np.gradient(Ph, ee, axis=0) + np.gradient(Ps, ee, axis=0))
+            S = (S - _iw0) * _tp + _iw0
     dk = np.gradient(kb)
     P = kb ** (NS - 1) / kb * dk
     # ** r6911+cc66.40 -- THE SOURCE, TERM BY TERM, BEFORE THE KERNEL TOUCHES IT. **
     # *Placed after `P` on purpose: the k-measure is saved WITH the source so the receipt can show
     # that including it or leaving it out moves the contrast statistic by less than the statistic's
     # own resolution, rather than asserting that a smooth factor is removed by the envelope.*
-    if _SRCS or _SRCD:
+    if _SRCS or _SRCD or _SRCE:
         _il = int(np.argmin(np.abs(ee - ETA_LS)))
         _sw = g_ * (_SWSRC * (Th0 + Ps))
         _dp = _DPSRC * np.gradient(g_ * tb, ee, axis=0) / kb[None, :] ** 2
@@ -1524,6 +1646,14 @@ def _project(kb, ee, Y, ls, x0, e_sw):
                / kb[None, :] ** 2)
         # the four terms are the source, and the receipt gates that they sum to it -- so a reader
         # need not take the split on trust, and a future edit to `S` that forgets this block fails.
+        if _tp is not None:
+            # ** the terms carry the taper too, so `resid` still gates that they sum to `S` -- and the
+            # ISW is excluded here exactly as it is there, or the gate would fail. **
+            # *Multiplying them here rather than inside is the same operation: the taper is a factor
+            # in eta alone applied to the assembled source, and these terms are its addends.*
+            _sw, _dp, _pl = _sw * _tp, _dp * _tp, _pl * _tp
+            if _SRCTALL:
+                _iw = _iw * _tp
         _md = _sw + _dp                              # the monopole-plus-Doppler combination
     if _SRCS:
         _rec = dict(k=kb.copy(), P=P.copy(),
@@ -1540,6 +1670,31 @@ def _project(kb, ee, Y, ls, x0, e_sw):
                 _os[_j] = np.sum(P * np.trapezoid(S * _J, ee, axis=0) ** 2)
             _rec['Cl_swap'] = _os
         _SRCB.append(_rec)
+    if _SRCE:
+        # ** the band sum, which is what turns an oscillation into a normalisation. **  q = k r_s/pi
+        # is the same abscissa `l/l_A` is read in, so the bands ARE the contrast statistic's bands.
+        _qk = kb * R_S / np.pi
+        _bi = np.digitize(_qk, _SRCEQ) - 1
+        _nb = len(_SRCEQ) - 1
+        # ** the whole source, the oscillating combination, and each of the four terms on its own. **
+        # *The last four are what makes this a FUNCTION set and not one curve: the window's shape is
+        # also what fixes how much Doppler and how much ISW ride with the monopole at each eta, and
+        # that part of a normalisation difference does NOT have to vanish as q -> 0, while the phase
+        # smearing does.  => Two channels with different q-signatures, separable only if the terms
+        # are carried separately.*
+        _TM = dict(w2=S, w2md=_md, w2sw=_sw, w2dp=_dp, w2isw=_iw, w2pol=_pl)
+        _reg = {'nk': np.zeros(_nb), 'w2all': (P[None, :] * S ** 2).sum(axis=1)}
+        for _nm, _t in _TM.items():
+            _PT = P[None, :] * _t ** 2
+            _a = np.zeros((len(ee), _nb))
+            for _b in range(_nb):
+                _m = _bi == _b
+                if _m.any():
+                    _a[:, _b] = _PT[:, _m].sum(axis=1)
+            _reg[_nm] = _a
+        for _b in range(_nb):
+            _reg['nk'][_b] = int(np.sum(_bi == _b))
+        _SRCE_B.append(_reg)
     out = np.empty(len(ls))
     _dec = np.zeros((len(ls), 10)) if _SRCD else None
     for j, l in enumerate(ls):
