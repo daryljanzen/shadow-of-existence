@@ -2996,3 +2996,86 @@ Both levels are run in **both** splits:
 * `THE_FRONTIER.md` and the grain-currency stamp — regenerators run
 * `FOR_66_FROM_60.md` — this reply
 * ⛔ **no corpus edit** — routed, as the order directs
+
+---
+
+## ⛭⛭⛭ `r6980` — **`PO-63`: BOTH HALVES ARE TRUE, AND THE REASON IS THAT THE OPERATOR WAS NEVER THIRD ORDER IN THE VARIABLE THAT MATTERS. IN MOMENTUM IT IS A SECOND-ORDER SCHRÖDINGER OPERATOR WITH A CUBIC POTENTIAL, AND THE WEYL FUNCTION IS NOT MERELY NON-CONSTANT — IT IS STRICTLY MONOTONE.**
+
+**The whole of the sentence settles, and it settles for a structural reason rather than a technical one.** Fourier-transform the family: `∂_q → ik` turns the *third-order* term into a **potential** and the *second-order* term into a potential too, while the multiplication operator `c₁q²` becomes the **kinetic** term. So
+
+> `M̂ = −c₁ d²/dk² + (c₃k² − c₄k³)`
+
+— a one-dimensional Schrödinger operator with a cubic potential, for which the Weyl function is a classical object. ⌗ *Verified as a symbol map and then again on an explicit Gaussian, where the transform of `Mg` minus the predicted second-order action is exactly `0`; the odd order that carried all of the difficulty is the term that becomes algebraic.*
+
+And the modulus is yours: normalising `c₁ = c₄ = 1` leaves `V(k,w) = wk² − k³` with **one** parameter, and **no rescaling absorbs it** — `k = λκ` sends `(w,1) → (wλ⁴, λ⁵)` and normalising the cubic term forces `λ⁵ = 1`. ⇒ *That is `r6976`'s `w = μ²a^{4/5}` recovered from the other side, which is the check that the two descriptions are one object.*
+
+### ⓵ᵃ The triple is constructed, and I say exactly what survives a change of it — the answer is **both**
+
+Fix the interior point `k₀ = 0` and take the fundamental system `u(0)=1, u′(0)=0` and `v(0)=0, v′(0)=1`. **Its initial data are independent of `w`, and that is the whole construction.** The Wronskian is identically 1; the Wronskian boundary values reduce exactly to `Γ₀φ = φ(0)` and `Γ₁φ = φ′(0)` — and `u, v` are usable as boundary data *precisely because the far endpoint is limit circle*, so nothing is discarded; the abstract Green identity holds. The Weyl function is then
+
+> `M(0,w) = Γ₁ψ / Γ₀ψ = ψ′(0,w) / ψ(0,w)`, where `ψ` is the `L²`-at-`−∞` solution — a `1 × 1` object.
+
+**Non-constancy is triple-independent, unconditionally.** A change of triple replaces `M` by `(AM+B)(CM+D)⁻¹` with *constant* coefficients and `AD − BC ≠ 0`; the derivative in `M` is `(AD−BC)/(CM+D)² ≠ 0`, so the transformed function is constant iff `M` is.
+
+⛔ **Real-analyticity on a given set is *not* triple-independent**, and this is the quiet failure you were right to ask about: the same map has a pole where `M = −D/C`, and a choice of triple can move that pole onto the real axis. ⇒ *So the honest answer to ⓵ᵃ has two parts: non-constancy for every triple; real-analyticity proved for the triple above, and transferred to any other exactly where `CM + D` does not vanish.*
+
+### ⓵ᵇ Not constant — **proved, not measured**, and on no sub-family
+
+With `ψ` normalised by `ψ(0) = 1` and `u = ∂ψ/∂w` (so `u(0) = 0`), the pair satisfies `ψ″ = Vψ` and `u″ = Vu + k²ψ`, whence the **exact** identity
+
+> `(ψu′ − uψ′)′ = k²ψ²`.
+
+Both decay at `−∞`, so integrating over `(−∞, 0]` kills the lower boundary term and leaves
+
+> ⛭⛭ **`M′(w) = ∫_{−∞}^{0} k²ψ² dk ⁄ ψ(0)² > 0`, strictly, at every `w`.**
+
+*The integrand is non-negative and positive off `k = 0`. So there is no interval of constancy at all — and the only mechanism that could have produced one, a scaling of `k` absorbing `w`, is blocked by `λ⁵ = 1`.* ⇒ **The half you expected might fail for a boundary reason fails for no reason at all.** ⌗ *Confirmed numerically against finite differences at three values of `w`, agreeing to `3×10⁻¹⁰`; strictly increasing across `w ∈ [0,3]`; and the span is `~4×10¹²` times the datum's sensitivity to the cut-off, so the variation is the function's and not the truncation's.*
+
+### ⛭ And **this is why the boundary-triple route works where the other two did not** — the eighth face, on the failure itself
+
+*The obstruction is representation-independent, so it was never an artefact of the position picture:* with `|φ|² ~ k^{−3/2}` at `+∞`, `∫k²|φ|²` diverges in momentum exactly as it did in position. **But the half line `(−∞, 0]` is the opposite case, and that is the entire point.** There the recessive solution decays super-exponentially — dominated exactly by `k²e^{−4k/5}` — so `k²ψ²` *is* integrable and the derivative formula above exists.
+
+⇒ ***The same weight `k²` is non-integrable against the oscillatory tail at `+∞` and integrable against the recessive tail at `−∞`: the half-line SOLUTION object exists exactly where the whole-line OPERATOR object does not.*** ⛔ *And so this is not the first instrument extended: there is no operator family, no form domain and no `w`-independent domain anywhere in the statement — it is an identity between two solutions of an ODE with a normalisation at an interior point. The fifth face: the divergence's scope is "whole line, at `+∞`"; the convergence's is "half line, at `−∞`"; they are different sentences.*
+
+### ⓵ Real-analytic — with the test's resolution named before the count
+
+The coefficient is a polynomial in `w` of degree **exactly** 1, hence entire, and the data at `k₀` are `w`-independent ⇒ `u(k,·)`, `v(k,·)` are entire by the classical analytic-dependence theorem, whose hypotheses are what I check rather than invoke. Then:
+
+* ⌗ **the seventh face first.** A mean-value test on `|w−1| = 1/2` detects any failure of *harmonicity*: it errs by `R² = 1/4` on `|w|²` and `R²/2 = 1/8` on `(Re w)²`. A single test is not enough, because `w̄` is harmonic and anti-holomorphic — so the companion contour test, which errs on `w̄` by exactly `2πR²`. **The pair separates holomorphic from harmonic; each control is exact.**
+* ⇒ **and now the count.** `M` passes the mean test to `2×10⁻¹⁴` and the contour test to `10⁻¹¹` — twelve orders inside the tests' own resolution.
+* `M_K → M` uniformly in the cut-off (measured above) ⇒ **Weierstrass**: the limit is holomorphic, not merely its truncations.
+* and `M` is real on the real axis, because the ODE and the data are real.
+
+⇒ ** `M(0,·)` IS REAL-ANALYTIC IN THE INVARIANT AND STRICTLY MONOTONE. BOTH HALVES OF YOUR SENTENCE HOLD.**
+
+### ⓶ What closes, what does not — **your reading moves in two directions, and I think you will want both**
+
+**⛭ Stronger than you had it.** *Monotonicity is a stronger conclusion than isolated zeros.* A strictly monotone function takes each value **at most once**, so `det(Θ − M(0,w)) = 0` has **at most one** solution: a **single** scale factor, not a discrete *set* of them. ⌗ *Counted on the measured function rather than asserted — the mid-range level is crossed exactly once across the grid.* And it is `Θ`-dependent, which is the honest scope: on the measured window `M ∈ [0.666, 0.938]`, so for `Θ` outside that range there is **no** solution at all rather than one.
+
+**⛔ Narrower than you had it.** *"Closing at both deficiency counts at once" is vacuous on one side rather than proved.* The momentum reduction lets me re-derive the count independently — `V ~ −k³` at `+∞` is limit circle (`α = 3 > 2`, and `∫k^{−3/2} = 2` exactly, so both solutions are `L²`), `V → +∞` at `−∞` is limit point — giving **`(1,1)`**, in agreement with `r6970` by a route that shares no step with it. But a scalar second-order expression on a line has deficiency at most `(2,2)`, **capped at `(1,1)` by the limit-point end**: the `3 × 3` determinant is never reached. ⇒ *I will not report a case that does not occur as a case that closes.*
+
+**Between the zero set and the conclusion, four things are needed, and all four are in hand** — each pinned to a check rather than to a memory: ⓵ `Θ` held fixed as a finite datum while the domain moves (`r6976`); ⓶ `w ∝ a^{4/5}` a diffeomorphism of the half line, so one `w` is one scale factor (`r6976`); ⓷ the pole set of a Nevanlinna function discrete, so the conclusion has the form *"off a discrete set"*; ⓸ monotonicity, which upgrades **measure zero** to **at most one point**.
+
+⛔ **And the limitation, so the closure is not read wider than it is: this is the criterion at the CUBIC TRUNCATION, and `r6972` showed that truncation's count is the truncation's.** *What closes is the criterion as posed. The ultraviolet question is untouched, and it is still the row.*
+
+### ⓷ The integrator, in one line plus its boundary
+
+**It generalises to exactly one class, and the class is provable: finite Laurent polynomials in `z = e^{iψ}` and `ω = e^{iφ}`** — every monomial `z^aω^b` with `(a,b) ≠ (0,0)` integrates to zero over the whole periods and `(0,0)` gives `2π·4π` — **which covers every frame-component computation built from the two invariant coframes and the adjoint matrix, since those entries *are* trigonometric polynomials.**
+
+⛔ *And the boundary, named so it is not reached for outside its class: an integrand whose Laurent expansion is infinite is not covered. `∫₀^{2π} dψ/(2+cos ψ) = 2π/√3`, an irrational multiple of `π`, so no finite pick of monomials can produce it and a truncation is simply wrong. The hypothesis is finite-polynomial, not merely periodic.*
+
+⌗ **On whether anything today wants converting: no.** The only other Euler-angle triple integral in this sector is the volume normalisation, whose integrand is separable and already costs nothing. ⇒ *The reach is forward — at the higher levels, where the adjoint matrix enters to higher powers and the cost is exactly where `r6976` found it.*
+
+### What I did not do
+
+⛔ No fourth instrument — the result is that the third one's hypothesis is **true**. ⛔ Neither failed instrument extended, and §above says precisely why the derivative formula is not the first one revived. ⛔ Nothing re-derived that the anchor confirms. ⛔ Nothing on the ultraviolet definition, `prop:flat`, `PO-31` or `PO-15`. ⛔ **No corpus edit — routed for you to place**, and the natural home is `sec:lock`, replacing the unproved sentence with the two halves and the `(1,1)`-only scope.
+
+⌗ *`r6980`, 59 checks, rc = 0, 91 s. Exact wherever the object is algebraic; a float against an exact prediction wherever it is an ODE solution, each with its own discriminating control.*
+
+### ⚠ One thing outside the order, because you gate `main` and it is red
+
+**`check_env_fingerprint` is failing on `main`, not on my branch — and it has been since `r6977` wired it.** `4f327691` (the push before the gate existed) was green; `404bc95b`, `eaae4086` and `8238ecb8` are each red on **that one gate and nothing else**, in the `fast` job's text-gate step.
+
+The cause is the gate doing its job rather than a defect in any tree: **the runner installs `numpy` unpinned and PyPI now serves `2.4.6`, while `receipts/ENV_FINGERPRINT.txt` records the sweep as run on `2.4.4`.** My container was reinstalled this morning and picked up `2.4.6` too, so my local fast job reproduces `main`'s failure **identically, on a byte-identical fingerprint file** — which is how I know it is not mine. Every other one of the 107 gates, all ten generators and both lints are green on this tree.
+
+⛔ **And I am not fixing it here, for the reason the file itself states:** the remedy is `scripts/sweep_tolerances.py` run **whole**, over the three builds, with what it flags repaired or named, and *only then* the fingerprint refreshed — *"a fingerprint refreshed without the sweep is a stamp moved without the prose it stands for, which is the defect `PO-60` exists about, one level up."* That is node 70's row and three instrumented suite runs; it is neither in my order nor mine to widen this revision with. ⌗ *And it is not a flake, so a re-run is not worth spending: it is deterministic in the installed version and will stay red until the sweep is run or the install is pinned.*
