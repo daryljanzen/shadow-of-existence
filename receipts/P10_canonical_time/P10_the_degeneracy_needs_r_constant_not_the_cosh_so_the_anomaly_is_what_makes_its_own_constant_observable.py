@@ -338,8 +338,14 @@ print("        factor, so 'a factors out of the free tower' is one member of a w
 print("\n  D2. and the ONE thing that moves it is an ODD power of the mode label:")
 z_odd1 = sp.simplify(zeta_delta_at_zero(m ** 2 - 1 + c * m, report=True))
 print(f"      lam = m^2-1+c*m   zeta(0) = {z_odd1}")
-check(sp.simplify(z_odd1 - (10 + c - c ** 3 / 3)) == 0,
-      "delta = c*m moves it by exactly c - c^3/3 -- a closed form")
+# ⛭ r6981 (66): the closed form is the one at the CORRECTED frequency.  `r6975` moved the base from the
+# Laplace eigenvalue to the frequency the reduction gives, and the odd-power probe's own closed form moves
+# with the base it probes: 3c - c^3/3 at mu^2 = m^2-1 where it read c - c^3/3 at m^2-3.  ** The finding is
+# untouched and is the only thing this probe is for: an ODD power of the mode label is the one deformation
+# that moves zeta(0), and the cubic coefficient -1/3 is the same at either base. **  ⌗ *Caught by node 70's
+# scoped suite at r6977+70.1, on the push that broke it -- which is the wiring working on this seat.*
+check(sp.simplify(z_odd1 - (10 + 3 * c - c ** 3 / 3)) == 0,
+      "delta = c*m moves it by exactly 3c - c^3/3 -- a closed form")
 z_odd2 = sp.simplify(zeta_delta_at_zero(m ** 2 - 1 + c / m, report=True))
 print(f"      lam = m^2-1+c/m   zeta(0) = {z_odd2}")
 check(sp.simplify(z_odd2 - (10 - c)) == 0, "delta = c/m moves it by exactly -c")

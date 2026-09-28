@@ -260,6 +260,40 @@ _ONE_THREAD = {
 }
 
 
+# ---------------------------------------------------------------- r6977+70.1
+# ** LONGEST FIRST, BECAUSE A FIXED POOL FINISHES WHEN ITS LAST RECEIPT DOES. **  In INDEX order the
+# longest receipts start wherever the registry happens to put them -- `P15_the_low_multipole_floor...`
+# (995s) sat at 820 of 868 -- and become the tail.  Simulated on the r6975 suite's own per-receipt times,
+# four workers, reproducing that run's wall exactly: INDEX order 2,993s, longest-first 2,686s, which is
+# perfect packing (the floor is total/4 = 2,686s; C59 alone is 1,270s).  ** 307s, 10%, and no receipt
+# changes. **
+#   ⛔ AND ONE INTERACTION, MEASURED, WHICH IS WHY IT IS NOT A PLAIN SORT.  Under `--wall W` a receipt
+#   longer than W can never finish inside the invocation (in-flight work is abandoned at the budget).
+#   Sorted longest-first, the four longest are all longer than 500s, so they take every worker at t=0 of
+#   EVERY slice and nothing finishes: simulated, `--wall 500` makes no progress at all.  So receipts
+#   expected to exceed the wall go LAST.  Simulated at W = 300 / 500 / 900: INDEX order leaves 694 / 51 /
+#   3 unfinished before it stalls, this order 10 / 5 / 3 -- exactly the receipts longer than the wall,
+#   which need one unbounded invocation under either order (as before).  The resume cache is keyed by
+#   path at a digest, so the order cannot change what it holds -- only how soon.
+# ⌗ The expected time is the READ INDEX's traced seconds (`receipts/READ_INDEX.json`, `s`), else the
+#   declared LONG budget, else 0; no index, INDEX order.  Stable, so ties keep INDEX order.
+def expected_seconds():
+    try:
+        with open(os.path.join(ROOT, 'receipts', 'READ_INDEX.json')) as fh:
+            return {k: v.get('s') or 0 for k, v in json.load(fh)['receipts'].items()}
+    except (OSError, ValueError, KeyError):
+        return None
+
+
+def schedule(files, wall=0):
+    exp = expected_seconds()
+    if exp is None:
+        return files, 'INDEX order (no READ_INDEX.json)'
+    t = lambda f: exp.get(os.path.relpath(f, ROOT)) or LONG.get(os.path.basename(f), 0)
+    return (sorted(files, key=lambda f: (bool(wall) and t(f) > wall, -t(f))),
+            'longest first by READ_INDEX.json' + (f', those over the {wall}s wall last' if wall else ''))
+
+
 def budget(path, default):
     """The per-file timeout: the declared one if this receipt has it, else the global cap."""
     return LONG.get(os.path.basename(path), default)
@@ -401,6 +435,8 @@ def main():
     ap.add_argument('--timeout', type=int, default=600)
     ap.add_argument('--jobs', type=int, default=max(1, (os.cpu_count() or 4) - 2))
     ap.add_argument('--only', default='')
+    # r6977+70.1: the SCOPED suite -- exactly the receipts `receipt_scope.py --list` wrote, one per line
+    ap.add_argument('--from', dest='frm', default='', help='run only the registered receipts listed in FILE')
     ap.add_argument('--quick', action='store_true')
     # ⌗ *`--resume a.json,b.json` reads every cache named and WRITES ONLY THE FIRST.*  The one
     #   receipt declared LONG (C59, measured 1302s) is longer than any foreground tool call this
@@ -416,6 +452,12 @@ def main():
     files, unresolved = registered()
     if a.only:
         files = [f for f in files if a.only in f]
+    if a.frm:
+        _listed = {l.strip() for l in open(a.frm) if l.strip()}
+        files = [f for f in files if os.path.relpath(f, ROOT) in _listed]
+        print(f"\n  ⌗ SCOPED: {len(files)} registered receipt(s) from {a.frm}"
+              + (f" ({len(_listed) - len(files)} listed and not registered)" if len(_listed) > len(files) else "")
+              + " -- a verdict below is about THESE, not the suite")
     if a.skip:
         files = [f for f in files if a.skip not in f]
     if a.quick:
@@ -438,6 +480,8 @@ def main():
     cache = Cache(a.resume, _digest)
     _inv = uuid.uuid4().hex[:12]          # this invocation's own id (r4554)
     todo = [f for f in files if cache.get(os.path.relpath(f, ROOT)) is None]
+    todo, _order = schedule(todo, a.wall)
+    print(f"  ORDER: {_order}")
     if a.resume:
         print(f"  RESUME: {len(files) - len(todo)} result(s) reused from {a.resume}, "
               f"{len(todo)} left to run"
@@ -523,7 +567,7 @@ def main():
     # even when every file that does exist passes. **  *A registry entry naming nothing is not a
     # smaller defect than a receipt that exits 1 -- it is the same defect one step earlier, and it
     # was the one with no reader.*
-    if unresolved and not a.only:
+    if unresolved and not (a.only or a.frm):
         print()
         print(f"  ⛔ {len(unresolved)} REGISTERED ROW(S) NAME A `.py` THAT DOES NOT EXIST:")
         for lineno, tok in unresolved:
@@ -536,7 +580,7 @@ def main():
         print("  ⛔ THIS RUN IS NOT A VERDICT: receipts were not reached.  Re-invoke with the same")
         print("     --resume cache until it reports none.")
         return 2
-    if bad or (unresolved and not a.only):
+    if bad or (unresolved and not (a.only or a.frm)):
         print()
         print("  ⛔ A REGISTERED RECEIPT THAT DOES NOT RUN WHERE IT IS REGISTERED IS NOT A RECEIPT.")
         return 1
@@ -553,6 +597,10 @@ def main():
         print("     reported because no result was, which is a different thing from green. **")
         return 2
     print()
+    if a.frm:
+        print(f"  Every receipt IN THIS SCOPE ({len(files)} of the registered set) runs, in place, and exits 0.")
+        print("  ** A claim about the scope and not the suite: the suite's verdict is the heavy job's. **")
+        return 0
     print("  Every registered receipt runs, in place, and exits 0 -- so every assertion in the")
     print("  reproducibility layer was actually evaluated.")
     return 0

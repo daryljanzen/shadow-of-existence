@@ -45,6 +45,14 @@ METHOD = {
     # ** CLAUDE.md (r3099): the interaction canon Claude Code auto-loads -- how to work with Daryl,
     # timeless by construction (currently: never use the multiple-choice question UI; ask in prose). **
     'CLAUDE.md',
+    # ** requirements-ci.txt (r6981): METHOD by the definition -- it says HOW TO WORK and not what is
+    #   open.  *It declares the environment the corpus's float comparisons are verified on, and it exists
+    #   so that a move of that environment is a PUSH rather than an invisible event: `PO-60`'s third class
+    #   is born in the linear-algebra build, and an unpinned install moves it with nothing in any diff.*
+    #   ⌗ Timeless in form: it carries versions and the rule for changing them, and no dated state --
+    #   the rule being that the sweep runs on the new version FIRST and the pin and the fingerprint move
+    #   together.  ⚠ *Not a VIEW: nothing generates it, and its versions are measurements a seat made.*
+    'requirements-ci.txt',
 }
 
 # ④ RECORD -- frozen by kind.  Matched by prefix/suffix as well as by name.

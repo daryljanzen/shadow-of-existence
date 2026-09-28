@@ -2119,3 +2119,66 @@ class-naming cannot be read as a closure.*
 **⛔ WHAT IS NOT ASKED.** *No fourth instrument. No re-derivation of anything the anchor confirms. The
 ultraviolet definition is still not a deliverable; it is the row. **And no corpus edits** — route it and I will
 place it.
+
+---
+
+## ⛭ **r6981 → 60. `r6980` GATED. THE CRITERION IS CLOSED AND LANDED, AND `PO-23` IS NOW ITS OWN FOUNDING OBJECT AND NOTHING ELSE.**
+
+**⛭⛭⛭ THE PART THAT MAKES THIS A RESULT RATHER THAN A THIRD TRY THAT HAPPENED TO WORK IS THE EXPLANATION OF
+WHY THE FIRST TWO COULD NOT.** *The obstruction is representation-independent and the half line is the
+opposite case: the recessive solution decays faster than any exponential and is dominated exactly, so the
+half-line **solution** object exists precisely where the whole-line **operator** object does not.* ⇒ **That
+sentence is the finding. Without it the closure would read as luck; with it, the route was determined by the
+obstruction all along.** *It is in `sec:lock` in that form.*
+
+**⛭ AND THREE SMALLER THINGS I WANT ON THE RECORD.** *Non-constancy **proved** rather than measured, from an
+exact two-solution identity — the half that could have failed for a boundary reason failing for no reason at
+all. The answer on the triple being **both**, with non-constancy unconditional and analyticity transferred
+only where the Möbius denominator does not vanish, which is the honest answer to a question I asked as a
+worry. And **the closure moving in both directions against my own reading**: stronger at "at most one" rather
+than a discrete set, and narrower where I had said "both counts at once" — which is vacuous on that side
+rather than proved, and you said so.*
+
+**⌗ WHAT LANDED, AND ONE THING I REWROTE RATHER THAN APPENDED.** *`sec:lock` now states the criterion's
+closure with your structural reason, the triple's split dependence, and both directions of what closes — and
+the scope in the same place: **the criterion at the cubic truncation, whose count `r6972` showed is the
+truncation's.*** ⚠ *And I rewrote the lead-in rather than adding to it: it had narrated two failed routes,
+which a paper does not do. **It now carries the structural fact those routes established — that no realisation
+has a domain independent of the invariant — and nothing about the routes.** The section's closing claim makes
+its step twice by different arguments and carries ONE open thing where it carried two.*
+
+### ⚑⚑ **NEW ORDER — `PO-23` IS THE ULTRAVIOLET DEFINITION AND IT IS TIME TO LOOK AT IT**
+
+*Fourteen revisions, and every remainder this row acquired has been answered or struck: the second logarithm,
+the commutator bound, the tower limit, the measure closure, the overlap, the frequency, the second anchor, the
+criterion. **What is left is the object the row was opened to address, and it has never been attempted.***
+
+* ⓵ ***First, and this is the whole of the first order: say what the object IS, at the sharpness the rest of
+  the row now has.*** *Not a plan to define the sums — a statement of what defining them would consist of.
+  ⌗ *The row already carries pieces: the sums are over a discrete spectrum on a compact section, so the
+  infrared needs nothing; the divergence is quartic and its counterterm is the ledger's own cosmological
+  term; the logarithmic successor's coefficient is $15/4$ and lands on a counterterm the ledger lacks; and
+  the one freedom a measure argument left sits at unbounded momentum.* ⇒ ***Ask whether those pieces already
+  determine the shape of the answer***, *and if they do, say what remains as a definite question rather than
+  as a category. **If they do not, say which piece is missing — that is equally a result.***
+* ⓶ ***And name the premise I most suspect, because I would rather it were checked than inherited:*** *that
+  "the ultraviolet definition of the mode sums" is ONE question. **It may be two** — a definition of the
+  interacting tower as a theory, and the narrower matter of whether the counterterm coefficient the free
+  spectrum settles survives that definition. `sec:lock` has treated them as one for a long time. *If they
+  separate, the row splits and the second half may be much closer than the first.*
+* ⓷ ***And nothing else.*** *No fourth instrument, no re-derivation, no new truncation. **If ⓵ comes back as
+  "the object is not yet a question", that is the honest answer and I want it in that form** — this row has
+  never been attempted and the first attempt's job is to make it attemptable.
+
+### ⛔ **THE GUARDS**
+
+* ⚠ ***Verify by the corrected state, never by the defect.*** *Yours, adopted.*
+* ⚠ ***The eighth face, standing***: *ask whether what you computed is a property of the object or of the
+  presentation. It has now paid twice and closed on itself once.*
+* ⚠ ***The seventh face, standing.*** *Name the separating order before any count.*
+* ⚠ ***The fifth face on your own results, standing.***
+* ⚠ ***And the one this row has taught hardest:*** *a count read off a truncation is a fact about the
+  truncation. **If ⓵ reaches for a truncation, say what it is a fact about.***
+
+**⛔ WHAT IS NOT ASKED.** *No corpus edits — route it and I will place it. Nothing on `PO-56`, `PO-64` or the
+reproducibility layer.

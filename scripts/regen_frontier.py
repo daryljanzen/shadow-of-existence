@@ -386,6 +386,34 @@ EST = {
         'not a defect: the uncited bibitems, an editorial call, enumerated here rather than taken from the '
         'read -- there are SEVEN across six papers, not six, and the read named every one correctly. Routed '
         'to Daryl as a judgement.'),
+    'PO-64': ('the environment moved and the sweep has not followed it', 1, 0, 2, None,
+        'r6981: OPENED by a gate firing for real within hours of being wired, which is the best thing that '
+        'could have happened to it. r6977 wired check_env_fingerprint because the row before it had measured '
+        'that the one event a per-push scope cannot see is an unpinned install moving the arithmetic under '
+        'every float comparison in the corpus -- and it then happened: numpy went 2.4.4 to 2.4.6 between two '
+        'runs, nobody chose it, and nothing in any diff recorded it. Node 60 met the same red on its own '
+        'container after a reinstall and ROUTED it rather than patching it, which is the protocol working. '
+        'WHAT IS DONE AT r6981, AND IT IS THE SYSTEMIC HALF RATHER THAN THE PATCH: requirements-ci.txt pins '
+        'the fingerprinted quantities and the packages whose output the corpus measures, and every install '
+        'site in the workflow goes through it -- SO A MOVE OF THE ENVIRONMENT IS NOW AN EDIT TO A FILE, a '
+        'push, which the scope sees, which the fingerprint gate reads, and which a human chose. The one '
+        'event a push could not see becomes ordinary. And the pin restores the environment the corpus is '
+        'verified on rather than blessing the one it drifted to, which is the difference between a fix and a '
+        'silence. WHAT IS NOT DONE, AND IT IS THE WHOLE OF WHAT IS LEFT: the newer environment has not been '
+        'swept, so the corpus is verified on 2.4.4 and pinned to it -- honest, and not the same as being '
+        'verified on what the world now installs. The remedy the fingerprint file itself prescribes is to '
+        'run the whole tolerance sweep on the new version across the builds that decide round-off, repair or '
+        'name every site it flags, and move the pin and the fingerprint IN THE SAME PUSH; the monthly '
+        'backstop is the cheapest place to buy that answer. AND ONE EXCLUSION IS NAMED RATHER THAN QUIETLY '
+        'PINNED, because pinning it would be this rows own defect: the nuclear-network package is absent '
+        'from the gating container, so no seat has recorded which version the four BBN receipts were '
+        'verified on, and a pin to a version nobody has run certifies nothing while looking like a '
+        'guarantee -- so it floats, the suite catches it, and the owed measurement is stated in the pin file '
+        'itself. DISCHARGE: the sweep run on the newer environment with every flagged site repaired or '
+        'named, the pin and the fingerprint moved together, and the BBN packages verified version recorded '
+        'and pinned -- and NOT by relaxing the gate, since a fingerprint that ignores a patch-level move is '
+        'one that decides on no measurement which moves matter, which is what the struck row before it was '
+        'about.'),
     'PO-63': ('the frequency shift has two exact anchors and neither is a second three-sphere level', 1, 0, 3, None,
         'r6975: OPENED as PO-61s remainder, and node 60 named it in its own sentence before anyone '
         'asked. The shift that corrects the tower frequency to mu^2 = m^2 - 1 is established '
@@ -1890,6 +1918,47 @@ EST = {
         'fails exactly when the defect is fixed -- verify by the corrected state, never by the defect. '
         'DISCHARGE: the ultraviolet definition, which is the row; and one hypothesis about one scalar '
         'function, which is what the third-order criterion has come down to after three instruments. '
+        'AND r6981 (on node 60 r6980) CLOSES THE THIRD-ORDER CRITERION, SO THIS ROW IS DOWN TO ITS OWN '
+        'FOUNDING OBJECT AND NOTHING ELSE. Both halves of the one sentence hold, and the reason is STRUCTURAL '
+        'rather than technical: transform the family and the third-order term becomes a POTENTIAL while the '
+        'multiplication operator becomes the KINETIC term, so the object is unitarily a second-order '
+        'Schrodinger operator with a cubic potential, for which the Weyl function is a classical object -- '
+        'verified as a symbol map and again on an explicit Gaussian where the transform minus the predicted '
+        'second-order action is exactly zero, with the modulus the previous revision found recovered from the '
+        'other side, and no rescaling absorbs it because the scaling that normalises the cubic term is forced '
+        'to the identity. NOT CONSTANT IS PROVED RATHER THAN MEASURED: an exact two-solution identity gives '
+        'the derivative of the Weyl function as an integral of a square over the half line divided by a '
+        'square, strictly positive at every value, so there is no interval of constancy and no sub-family on '
+        'which it is constant -- the half that could have failed for a boundary reason fails for no reason at '
+        'all, confirmed against finite differences at three points with the variation four thousand billion '
+        'times the datums sensitivity to the cut-off. AND REAL-ANALYTIC WITH THE TESTS RESOLUTION NAMED '
+        'BEFORE THE COUNT: the coefficient is degree exactly one in the parameter and the data are '
+        'parameter-independent so the fundamental system is entire; a mean-value test and a contour test '
+        'together separate holomorphic from harmonic, with three controls whose errors are exact, and the '
+        'datum passes both twelve orders inside the tests own resolution. AND THE EIGHTH FACE ON THE EARLIER '
+        'FAILURES EXPLAINS WHY THIS ROUTE REACHES, WHICH IS WHAT MAKES IT A RESULT AND NOT A LUCKY THIRD TRY: '
+        'the obstruction that killed the first two instruments is REPRESENTATION-INDEPENDENT, the whole-line '
+        'weighted integral diverging in momentum exactly as in position -- but THE HALF LINE IS THE OPPOSITE '
+        'CASE, and there the recessive solution decays faster than any exponential and is dominated exactly, '
+        'so the same weight is integrable. THE HALF-LINE SOLUTION OBJECT EXISTS PRECISELY WHERE THE '
+        'WHOLE-LINE OPERATOR OBJECT DOES NOT, and no operator family, form domain or parameter-independent '
+        'domain appears anywhere in the statement; neither failed instrument is extended. THE TRIPLE IS '
+        'CONSTRUCTED AND THE ANSWER ON CHOICE IS BOTH: non-constancy is independent of the triple '
+        'UNCONDITIONALLY, a change of triple being a constant Mobius map of non-vanishing determinant, while '
+        'real-analyticity on a given set is NOT, the same map having a pole a choice can move onto the real '
+        'axis -- so the statement is proved for the triple constructed and transferred exactly where the '
+        'denominator does not vanish. AND WHAT CLOSES MOVES IN BOTH DIRECTIONS AGAINST THE ORDERS OWN '
+        'READING: STRONGER, monotonicity gives AT MOST ONE solution, a single scale factor and not a discrete '
+        'set, and outside the measured window none at all; NARROWER, the deficiency count is re-derived from '
+        'the endpoint thresholds and comes out at the lower value, which a scalar second-order expression on '
+        'a line is capped at, so the larger case is never reached and both-counts-at-once is vacuous on that '
+        'side rather than proved. Four things are needed between the zero set and the conclusion and each is '
+        'pinned to a check, and the limitation is stated: this is the criterion AT THE CUBIC TRUNCATION, '
+        'whose count r6972 showed is the truncations. DISCHARGE, AFTER FOURTEEN REVISIONS: the ultraviolet '
+        'definition of the mode sums, and nothing else. Every remainder this row acquired on the way has been '
+        'answered or struck -- the second logarithm, the commutator bound, the tower limit, the measure '
+        'closure, the overlap, the frequency, the second anchor, and now the criterion -- and what is left is '
+        'the thing it was opened to address. '
 ),
     'PO-15': ('the ordering — EXHAUST the selection candidates', 1, 1, 3, None,
         'r3015: THE STEP IS AN EXHAUSTION. The thermal state is eliminated (it selects the Friedrichs extension, which is defined FROM the form an ordering produces). Enumerate what else could select one — the substrates symmetry, the seams characteristic structure, the deparametrization — and either find one or state the choice is external WITH the enumeration as evidence. '
@@ -1988,8 +2057,8 @@ KIND = {'PO-46': 'BUILD', 'PO-10': 'BUILD', 'PO-13': 'BUILD', 'PO-36': 'READ', '
 #   and the generator reported "9 open" while the table showed EIGHT -- the count comes from
 #   the live set and the rows come from here.*  ** Adding a row needs three things: the
 #   register row, the runway, and this list. **  check_frontier_current now checks all three.
-ORDER = ['PO-63', 'PO-62', 'PO-61', 'PO-60', 'PO-59', 'PO-58', 'PO-57', 'PO-56', 'PO-55', 'PO-54', 'PO-53', 'PO-52', 'PO-47', 'PO-48', 'PO-49', 'PO-50', 'PO-51', 'PO-45', 'PO-46', 'PO-10', 'PO-13', 'PO-43', 'PO-24', 'PO-36', 'PO-30', 'PO-25', 'PO-26', 'PO-31', 'PO-23', 'PO-15', 'PO-14', 'PO-17', 'PO-18', 'PO-19', 'PO-20']
-GROUP = {'PO-63': 'C', 'PO-62': 'C', 'PO-61': 'C', 'PO-60': 'C', 'PO-59': 'C', 'PO-58': 'A', 'PO-57': 'D', 'PO-56': 'D',  # r6891: PO-13's live remainder, the acoustic sector.
+ORDER = ['PO-64', 'PO-63', 'PO-62', 'PO-61', 'PO-60', 'PO-59', 'PO-58', 'PO-57', 'PO-56', 'PO-55', 'PO-54', 'PO-53', 'PO-52', 'PO-47', 'PO-48', 'PO-49', 'PO-50', 'PO-51', 'PO-45', 'PO-46', 'PO-10', 'PO-13', 'PO-43', 'PO-24', 'PO-36', 'PO-30', 'PO-25', 'PO-26', 'PO-31', 'PO-23', 'PO-15', 'PO-14', 'PO-17', 'PO-18', 'PO-19', 'PO-20']
+GROUP = {'PO-64': 'C', 'PO-63': 'C', 'PO-62': 'C', 'PO-61': 'C', 'PO-60': 'C', 'PO-59': 'C', 'PO-58': 'A', 'PO-57': 'D', 'PO-56': 'D',  # r6891: PO-13's live remainder, the acoustic sector.
          'PO-45': 'A', 'PO-46': 'A',  # ⛔ r6549: a FOURTH hardcoded list -- GROUP -- and a row missing here raises.
          'PO-10': 'D', 'PO-13': 'D', 'PO-14': 'A', 'PO-15': 'C', 'PO-16': 'D',
          # ** r3095: the four brought in from p0's frontiers and the field ledgers.  PO-17 and

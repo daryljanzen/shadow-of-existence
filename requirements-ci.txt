@@ -1,0 +1,45 @@
+# ** THE ENVIRONMENT THE CORPUS'S FLOAT COMPARISONS ARE VERIFIED ON. **  Pinned r6981 (66).
+#
+# *** WHY THIS FILE EXISTS, AND IT IS NOT DEPENDENCY HYGIENE. ***  `PO-60`'s third class is a tolerance
+# calibrated at one machine's round-off floor, and node 70's measurement found the deciding variable to be
+# the linear-algebra build.  `PO-62` then scoped every detector to the push -- and named the one event a
+# push cannot see:
+#
+#     ⇒ ** an UNPINNED install moves the arithmetic under every float comparison in the corpus with no
+#       push at all. **  It happened within hours of the fingerprint gate being wired: numpy went 2.4.4 to
+#       2.4.6 between two runs, nobody chose it, and nothing in any diff recorded it.
+#
+# *** PINNING CONVERTS THAT EVENT INTO A PUSH. ***  A move of the environment is now an edit to this file,
+# which the scope sees, which the fingerprint gate reads, and which a human chose.  ** That is the whole
+# point: the class stops being invisible and becomes ordinary. **
+#
+# ⛔ ** HOW TO MOVE A PIN. **  Run the whole tolerance sweep on the NEW version, repair or name every site
+# it flags, and then move the pin and `receipts/ENV_FINGERPRINT.txt` in the same push.  *Moving the pin
+# alone leaves the corpus verified on an environment it no longer runs on; moving the fingerprint alone is
+# the vacuous green one level up.*  ⌗ The sweep is the monthly backstop's own work, so the cheapest way to
+# bump a pin is to bump it just before a backstop and read the answer off that run.
+#
+# ⌗ ** WHAT IS PINNED AND WHAT IS NOT, because naming the exclusions is the honest half. **  The four
+# fingerprinted quantities are the interpreter (pinned by the workflow's `setup-python`), numpy, scipy and
+# the BLAS numpy carries.  Those are what decide round-off in the linear algebra every receipt's floats come
+# out of, and they are pinned here.
+#   · `sympy` and `mpmath` are pinned too, and for a different reason: they are EXACT, so a change cannot
+#     move a round-off floor -- but it can move a closed form's spelling, which several receipts pin.
+#   · `camb` is pinned because it computes the spectra the whole acoustic sector measures on: a change there
+#     moves results rather than their last digits, which is a larger fact than this file is about and should
+#     not arrive unchosen either.
+#   · `matplotlib` is pinned last and least: it draws two figures.  ⚠ *It is not in the fingerprint, so a
+#     move in it is caught by the suite and not by the fingerprint gate -- stated so the gate is not read
+#     as covering more than it does.*
+#   ⛔ · **`pynucastro` IS DELIBERATELY NOT PINNED, and the reason is the row's own rule.**  It is absent
+#     from this container, so no seat has recorded which version the nuclear-network receipts were verified
+#     on, and *a pin to a version nobody has run is exactly the defect `PO-60` is about -- a number that
+#     certifies nothing while looking like a guarantee.*  ⇒ *Owed: run the BBN four, record the version they
+#     pass on, and pin it in the same push.*  Until then it floats and the suite is what catches it.
+
+numpy==2.4.4
+scipy==1.17.1
+sympy==1.14.0
+mpmath==1.3.0
+camb==2.0.4
+matplotlib==3.10.9

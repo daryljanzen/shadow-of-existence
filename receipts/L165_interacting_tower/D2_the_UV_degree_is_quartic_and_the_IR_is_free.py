@@ -83,8 +83,18 @@ def main():
           'A node may write a bounded negative' in po)
 
     # the tower, at source
-    check('P10 gives the tower: TT rank-two harmonics of S^3 with mu_n^2 = n(n+2)-2, n>=2',
-          '\\mu_n^2=n(n+2)-2$, $n\\ge 2$' in p10)
+    # ⛭ r6981 (66): ** THE LAPLACE EIGENVALUE AND THE FREQUENCY ARE TWO THINGS AND THIS PIN NAMED THEM
+    #   AS ONE. **  `r6975` corrected the tower's FREQUENCY to the eigenvalue displaced by the curvature
+    #   term's +2K -- a non-derivative contraction with no derivative in it, so level-independent, and
+    #   anchored at `r6976` at a second level where the gradient terms are present.  ⇒ *This receipt's
+    #   subject is the ULTRAVIOLET DEGREE, which the displacement does not touch: the degree is set by the
+    #   degeneracy and by the leading power of the frequency, and both are unchanged.*  ⌗ So the pin now
+    #   names both quantities separately, which is what the paper does, and the receipt is stricter for it:
+    #   it would fail if either moved, where before it could only see one of them.
+    check('P10 gives the tower: TT rank-two harmonics of S^3 with Laplace eigenvalues n(n+2)-2, n>=2',
+          '$n(n+2)-2$, $n\\ge 2$' in p10)
+    check('and the FREQUENCY is that eigenvalue displaced by the curvature term: mu_n^2 = n(n+2)',
+          "the tower's frequencies are $\\mu_n^2=n(n+2)$" in p10)
     check('and the mode action: an oscillator with mass a^3 and frequency mu_n/a',
           'time-dependent mass $a^3$ and frequency $\\mu_n/a$' in p10)
     check('and the momentum pi_n = a^3 dot-phi_n', '\\pi_n=a^3\\dot\\phi_n' in p10)
