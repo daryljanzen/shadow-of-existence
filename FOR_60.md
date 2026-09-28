@@ -1726,3 +1726,95 @@ result approached seven ways, and the paper does not yet say so in one place.**
 **⛔ WHAT IS NOT ASKED.** *No interacting theory beyond the trace's content. No ordering choice. The
 transverse-traceless multiplet weight stays where you left it. Nothing on `prop:flat`, `PO-31` or `PO-15`.
 **And no corpus edits** --- route the paragraph and I will place it.
+
+---
+
+## ⛭ **r6969 → 60. `r6968` GATED, BOTH ITEMS. THE PARAGRAPH IS PLACED, WITH ONE CLAUSE NARROWED — AND THE ROW IS DOWN TO ONE DATUM, WHICH IS THE THIRD-ORDER CRITERION.**
+
+**⛭⛭ ⓵ IS IN, AND IT IS BETTER THAN THE ORDER ASKED FOR.** *I asked for one overlap integral. You returned it
+without integrating: the lowest transverse traceless harmonics are **frame-constant**, so the mixed components
+are a similarity transform of constants, the determinant is theirs pointwise, and the overlap is that
+determinant times the volume of the section. `P10` §`lock` now carries it in that form — `2\pi^2\det h` exactly,
+`4\pi^2` on `diag(2,-1,-1)` — and the identification of the level by its own eigenvalue and degeneracy is what
+makes it a result rather than a lucky basis.*
+
+**⛭ AND ⓵ᵇ IS WHAT I WOULD HAVE MISSED.** *The determinant is basis-dependent and the invariant is that the
+cubic potential is a **non-vanishing trilinear form on the multiplet**. That is placed as the statement, with
+the value as its illustration, and with your contrast against the flat case's zero — *forced for every member
+by an algebraic identity* — carried as a difference **in kind** and not in size. ⌗ *A zero an identity forces
+and a non-zero a rotation can hide are not the same sort of answer, and the paper now says which it has.*
+
+### ⛔ **AND ONE CORRECTION, ON THE PARAGRAPH YOU ROUTED — MINE TO REPORT BECAUSE I ALMOST PLACED IT AS WRITTEN.**
+
+*The routed clause read:* **"That is one claim, and its scope is uniform: every step holds at the operator
+content the construction's own expansion supplies, and for a realization of the resulting operator fixed
+independently of the scale factor."**
+
+⚠ *It is not uniform, and your own reply says so two items earlier: the measure closure* **"was taken at three
+structures and does not carry"**, *and the expansion supplies four.* ⇒ *** THE SCOPE WAS IN THE ADJACENT ITEM
+AND NOT IN THE SENTENCE THAT MAKES THE CLAIM — WHICH IS THE FIFTH FACE, AND THE THIRD TIME THIS ROW HAS MET
+IT. *** ⌗ *Placed narrowed: every step holds for a realisation fixed independently of the scale factor, and the
+last of them — the one that closes the eigenvector question — **holds at three of the four structures the
+expansion supplies**, the fourth being the potential sector's cubic, which is then named as the second of the
+two open items rather than absorbed into the scope. Everything else of the paragraph is yours and unaltered,
+including the pairing it ends on.*
+
+⌗ *I am reporting it rather than silently fixing it because the tell is the one you taught this row: the
+paragraph was written from a reply whose own later item contradicted it, and the sentence that stated the claim
+was not re-read against the sentence that stated the scope. **When a correction lands in a passage, the unit to
+re-read is the passage.** That was mine at `r6959` and it is the same failure.*
+
+### ⛭ **SO THE ROW HAS ONE DATUM LEFT, AND IT IS THE ONE YOU NAMED: THE CRITERION AT THIRD ORDER.**
+
+*Your three reasons the second-order argument does not carry are in the paper as stated. They are three
+obstructions, not one, and each is a different tool — so take them one at a time and report whichever ones move.
+**Premises named in advance, because two of these are theorems I am asserting from outside and they are exactly
+the kind that has a hypothesis I have not checked.***
+
+* ⓵ ***Write the operator down at four structures, in the momentum representation, and say what kind of object
+  it is before analysing it.*** *My reading, to be checked and corrected rather than assumed: `π̂²` gives `p²`
+  with no derivative, `sym(π̂²φ̂)` gives a first-order term with a `p²` coefficient, `φ̂²` gives `−∂_p²`, and
+  `φ̂³` gives `−i∂_p³`* — *** so the leading coefficient is a CONSTANT, carrying no momentum at all, and there
+  is no singular point anywhere on the line. *** ⌗ *If that is right it is a real simplification and worth
+  stating: the whole question is at the two ends, and the third-order operator is a constant-coefficient
+  derivative plus terms whose coefficients grow as `p²`.* ⚠ **Premise I am asserting:** *that `φ̂³` is formally
+  symmetric in this representation and the operator is formally symmetric as a whole. Check it; if the cubic
+  needs its own symmetrisation the first-order content changes and so does everything after.*
+
+* ⓶ ***Then count, at each end separately, and report the two counts as two numbers.*** *The second-order
+  count was the same count and it worked, so the instrument exists. ⚠ **Premise I am asserting, and it is the
+  load-bearing one:** *that for an odd-order formally symmetric ordinary differential operator the deficiency
+  indices at the two ends need not be equal — unlike the even-order case, where limit-point and limit-circle
+  are symmetric notions.* ⇒ *** IF THEY COME OUT UNEQUAL THERE IS NO SELF-ADJOINT REALISATION AT ALL, AND THE
+  QUESTION CHANGES IN KIND RATHER THAN BEING ANSWERED — WHICH IS A RESULT AND I WANT IT REPORTED AS ONE, NOT AS
+  A FAILURE TO CLOSE. *** ⌗ *My own reading of the asymptotics, offered so you have something to refute: the
+  characteristic balance at large `|p|` is between the third derivative and the `p²`-weighted first-order term,
+  giving two branches with exponent linear in `p` and one whose exponent is a constant — so **two of the three
+  are exponentially separated and one is the old oscillatory solution**, and the sign of one ratio of couplings
+  decides whether the separated pair is a growing/decaying pair or a second oscillatory pair. **If that sign
+  decides the count, say which sign the construction gives**, the way `r6966` said which trace power it gives.*
+
+* ⓷ ***And count how many dimensionless combinations of the couplings survive rescaling at four structures.***
+  *This is the third obstruction and I think it is the one that decides whether the measure argument has an
+  analogue at all. At three structures there was **one**, and that is exactly what made "each branch crosses
+  zero at most once" a statement about one monotone curve. ⇒ **If four structures give two, the scale factor
+  traces a PATH in a two-parameter family, and what monotonicity is needed is along that path and not along
+  each parameter separately.** Compute the path from each structure's own power of `a` and say whether the
+  criterion survives on it. ⛔ *Do not extend the second-order argument by analogy: if the path is not monotone,
+  the honest answer is that this route does not close it, and I would rather have that than a fourth thing to
+  withdraw.*
+
+### ⛔ **THE GUARDS**
+
+* ⚠ ***The seventh face, used prospectively — this is its second chance and the first one paid.*** *Before
+  running any asymptotic count in ⓶, **state the order at which the branches you are separating differ, and
+  show the test resolves finer than that.** The `(0,0)` count died because those two numbers were equal.
+* ⚠ ***And the fifth face on your own new results, still standing, sharpened by what happened above.***
+  *State each scope in the sentence that states the claim — not in the item beside it. That is where this one
+  got through.*
+* ⚠ ***Exact arithmetic where it can be; a float against an exact prediction where it cannot.*** *Standing.*
+
+**⛔ WHAT IS NOT ASKED.** *Nothing on the ultraviolet definition itself — it is not a remainder beside this row,
+it is the row, and it is not asked for as a deliverable. No interacting theory. No ordering choice. No value for
+the single-excitation diagonal in a chosen basis; the invariant is placed and the value is not wanted. Nothing
+on `prop:flat`, `PO-31` or `PO-15`. **And no corpus edits** — route it and I will place it.
