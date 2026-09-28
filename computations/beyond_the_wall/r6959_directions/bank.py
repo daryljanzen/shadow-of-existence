@@ -10,6 +10,11 @@
     `prediction.json` rather than chosen here.
   * `r6959_big_lcdm.npz` -- the taper that WOULD deliver the observed excess at the top band.  *It
     answers what the candidate needs rather than what it has.*
+  * `r6959_n{swap,big}_lcdm.npz` -- ** the same two coefficients with the window's TOTAL weight held
+    fixed (`SRCTAPERNORM=1`), which is the operation the hypothesis names. **  A taper bounded by 1
+    narrows the spread AND shrinks the window against the ISW, and the contrast statistic is blind to an
+    overall scale only when the source has one component; dividing the taper by its own
+    visibility-weighted mean removes that second effect and leaves the spread.
   * `r6959_{swap,big}all_lcdm.npz` -- ** the same two coefficients with the taper on the WHOLE source,
     which is what the first pair of runs did before the wiring was corrected. **  A Gaussian in
     r_s,leaf over the whole eta grid also crushes the ISW, whose support runs to eta_0: the ISW's own
@@ -49,15 +54,22 @@ for arm in ('lcdm', 'cr'):
     shutil.copyfile(os.path.join(D, 'eta', f'eta_{arm}.npz'),
                     os.path.join(SP, f'r6959_eta_{arm}.npz'))
     print(f'  {arm}: the eta-profile -> spectra/r6959_eta_{arm}.npz')
-for tag, al, sub, allt in (('swap_lcdm', PR['alpha'], 'swap', 0),
-                           ('big_lcdm', PR['alpha_big'], 'swap', 0),
-                           ('swapall_lcdm', PR['alpha'], 'swapall', 1),
-                           ('bigall_lcdm', PR['alpha_big'], 'swapall', 1)):
-    src = 'swap_lcdm' if tag.startswith('swap') else 'big_lcdm'
+SETS = (('swap_lcdm', PR['alpha'], 'swap', 'swap_lcdm', 0, 0),
+        ('big_lcdm', PR['alpha_big'], 'swap', 'big_lcdm', 0, 0),
+        ('swapall_lcdm', PR['alpha'], 'swapall', 'swap_lcdm', 1, 0),
+        ('bigall_lcdm', PR['alpha_big'], 'swapall', 'big_lcdm', 1, 0),
+        ('nswap_lcdm', PR['alpha'], 'norm', 'nswap_lcdm', 0, 1),
+        ('nbig_lcdm', PR['alpha_big'], 'norm', 'nbig_lcdm', 0, 1))
+for tag, al, sub, src, allt, nrm in SETS:
+    if not os.path.isdir(os.path.join(D, sub)):
+        print(f'  {tag}: {sub}/ not present -- skipped')
+        continue
     out = fold(src, sub)
     out['taper'] = float(al)
     out['taper_s0'] = float(PR['s0'])
     out['taper_all'] = int(allt)
+    out['taper_norm'] = int(nrm)
     np.savez(os.path.join(SP, f'r6959_{tag}.npz'), **out)
     print(f'  {tag}: {len(out["ls"])} multipoles at LSTEP=1, SRCTAPER={al:.10g}'
-          f'{" SRCTAPERALL=1" if allt else ""} -> spectra/r6959_{tag}.npz')
+          f'{" SRCTAPERALL=1" if allt else ""}{" SRCTAPERNORM=1" if nrm else ""}'
+          f' -> spectra/r6959_{tag}.npz')
