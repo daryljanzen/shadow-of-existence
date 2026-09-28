@@ -51,9 +51,18 @@ assert ok, "P16 trev toy: the cooling/heating discriminator FAILED"
 # (b) COOLING: the relic freezes at Y_inf = 1.197e-2, i.e. 6.21e19 times the final equilibrium.
 assert abs(Y_relic - 1.19732e-2) < 1e-6
 assert abs(cool_ratio/1e19 - 6.2078) < 5e-3
-# (c) HEATING: same network, opposite arrow -- the abundance tracks equilibrium (Y/Y_eq = 0.998),
+# (c) HEATING: same network, opposite arrow -- the abundance tracks equilibrium (Y/Y_eq = 1 to 1%),
 #     so no relic survives; the max departure over x=1..2 is 0.148.
-assert abs(Y_hot/Yeq(1.0) - 0.99814) < 1e-4
+# ** r6961+70.2 (PO-60, the third class): THIS PIN CERTIFIED ONE SEQUENCE OF SOLVER STEPS, NOT A NUMBER.
+#   It read 0.99814 +- 1e-4.  Scanned over both legs' rtol (1e-10..1e-13 each, sixteen runs) the
+#   heating endpoint Y_hot/Y_eq(1) ranges over 0.9951..0.9987 while Y_relic agrees to 1e-14 in every one
+#   of them -- the endpoint is fixed only to ~3e-3, and it moved by 5e-6 between OpenBLAS kernels at the
+#   shipped settings.  So the fourth digit was the solver's, and 0.99814 sat 1.8e-4 from the value the
+#   same code returns one tolerance tighter.  *** What the computation DOES determine is the claim:
+#   equilibrium re-established, Y/Y_eq = 1 to better than one per cent on every configuration -- the
+#   INDEX row's "1.00" -- so that is what is pinned.  Every other figure here was already converged:
+#   heat_dev, Y_relic and cool_ratio agree to every asserted digit across the scan. ***
+assert abs(Y_hot/Yeq(1.0) - 1.0) < 1e-2
 assert abs(heat_dev - 0.14835) < 1e-4
 # (d) and the two legs differ by ~20 orders of magnitude -- the time-reversal violation itself.
 assert cool_ratio/(Y_hot/Yeq(1.0)) > 1e15

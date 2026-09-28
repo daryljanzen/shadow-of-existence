@@ -11,7 +11,7 @@ that iterates a glob and asserts over its members is vacuously true when the glo
 receipt can be green for years while reading nothing at all.
 
 ** WHAT THIS MEASURES.  It does not read source and guess: it RUNS each receipt exactly as the
-runner does -- from its own directory, `NODE=ci`, one thread, the runner's own per-file budget --
+runner does -- from its own directory, `NODE=ci`, one thread, twice the runner's per-file budget (a trace is not a timing) --
 with its filesystem reads observed** (`open`, `io.open`, `pathlib.Path.open`, `glob.glob`,
 `glob.iglob`, `os.listdir`, `Path.glob`, `Path.rglob`):
 
@@ -173,7 +173,7 @@ def sweep(root, out, jobs):
     files, _ = m.registered()
     os.makedirs(out, exist_ok=True)
     with ThreadPoolExecutor(max_workers=jobs) as ex:
-        list(ex.map(lambda f: _run(root, os.path.relpath(f, root), max(900, m.budget(f, 600)), out),
+        list(ex.map(lambda f: _run(root, os.path.relpath(f, root), 2 * max(900, m.budget(f, 600)), out),
                     files))
     return len(files)
 

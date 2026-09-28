@@ -29,7 +29,8 @@ arithmetic; and where in the corpus each verdict actually lives.  Nothing is fit
 
 ** ⌗ ⓶ AND THE VOCABULARY ABSENCE IS NOT A HOLE, WHICH IS WORTH SEPARATING FROM THE CARTAN CASE. **
 *`Hilbert space` ×0, `inner product` ×0, `von Neumann` ×0, `density matrix` ×0, `mixed state` ×0,
-`S-matrix` ×0, `spectral theorem` ×0, `resolvent` ×0; `Stone` ×1 and not in a physics sense.*
+`S-matrix` ×0, `spectral theorem` ×0, `resolvent` ×0 when written (×1 since r6967, in P10's limit-circle
+closure: "compact resolvent"); `Stone` ×1 and not in a physics sense.*
   ⇒ ** But `P10` names its Hilbert spaces as $L^2$ of the half-line and $L^2(\mathbb{R})$ throughout. **
     *The objects are there under their standard notation and the phrases are not.*
   ⇒ *** So this is the sixth appearance of the corpus's anonymity, and it is the WEAK form: a
@@ -136,8 +137,20 @@ def main():
         return max(sum(RB.word_counts(t).values()), sum(RB.word_counts(t, tex=True).values()))
     absent = ['Hilbert space', 'inner product', 'von Neumann', 'density matrix', 'mixed state',
               'S-matrix', 'spectral theorem', 'resolvent']
-    check('⓶ every one of the field\'s standard phrases is ×0 across the seventeen bodies, '
-          'word-bounded', all(TOTW(t) == 0 for t in absent))
+    # ** r6961+70.2: class (b), ONE TERM OF THE GAP CLOSED BY THE CORPUS'S OWN WORK.  r6967 (`7b669802`)
+    #    closed PO-23's wall with the limit-circle criterion one level up, and P10 now says so in the
+    #    field's word: "every realisation has compact RESOLVENT and therefore purely discrete spectrum".
+    #    So `resolvent` is x1, in P10 alone, at exactly that argument -- and the other seven stay x0.
+    #    *** The finding (a vocabulary gap over work fully done) narrows by the one term the work came
+    #    to need; it is re-pinned to that, not re-read as "the gap is gone". ***
+    closed = {'resolvent'}
+    check('⓶ seven of the field\'s eight standard phrases are ×0 across the seventeen bodies, '
+          'word-bounded',
+          all(TOTW(t) == 0 for t in absent if t not in closed))
+    check('⓶ᵃ ⛭ and the eighth is P10\'s own, once, where r6967 closed the wall: "every realisation '
+          'has compact resolvent and therefore purely discrete spectrum"',
+          RB.word_counts('resolvent') == {k: (1 if k == 'P10' else 0) for k in RB.word_counts('resolvent')}
+          and 'has compact resolvent and therefore purely discrete' in re.sub(r'\s+', ' ', p10))
     check('⓶ᵇ ⛭ BUT THE OBJECTS ARE THERE UNDER THEIR STANDARD NOTATION: P10 works on "$L^2$ of '
           'the half-line" and "$L^2(R)$" -- so this is a vocabulary gap over work fully done',
           'L^2' in p10 or 'L^{2}' in p10)

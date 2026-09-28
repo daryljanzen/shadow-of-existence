@@ -162,9 +162,20 @@ xs = np.linspace(-8, 8, 1200)
 hs = xs[1] - xs[0]
 Hosc = -(-2 * np.eye(1200) + np.eye(1200, k=1) + np.eye(1200, k=-1)) / hs ** 2 + np.diag(xs ** 2)
 _w, _V = np.linalg.eigh(Hosc)
-v4 = _V[:, 3]
-VAR_FLOOR = abs(float(v4 @ (Hosc @ (Hosc @ v4)) - (v4 @ (Hosc @ v4)) ** 2))
-print(f"      Var(H_osc) on its own 4th eigenvector = {VAR_FLOOR:.3e}")
+# ⛔ ** r6961+70.2 (PO-60, the third class): ONE EIGENVECTOR'S VARIANCE IS NOT A FLOOR, IT IS A DRAW
+#   FROM ONE.  This read `_V[:, 3]` alone, and the null control below asserts `|Var(R)| <= VAR_FLOOR`
+#   -- one round-off number against another, with no margin.  Measured across OpenBLAS kernels
+#   (OPENBLAS_CORETYPE), the 4th eigenvector's variance was 4.0e-13 (default), 1.9e-13 (Prescott),
+#   4.3e-13 (Sandybridge), 1.2e-13 (Haswell) and 1.4e-14 (Prescott, two threads), while the null
+#   control is a constant 5.7e-14 -- so this receipt was GREEN HERE AND RED ON ANOTHER BUILD, which
+#   `scripts/sweep_tolerances.py` found by running it on both. **
+#   ⇒ *** The floor is now the LARGEST variance over the first ten eigenvectors: 1.2e-12 to 1.6e-12 on
+#       every kernel measured, stable to 30 per cent, with the null control twenty times below it on
+#       all of them.  The claim is unchanged -- the r = 0 variance is at the floor, not above it -- and
+#       the floor is now a property of the operator's round-off rather than of one eigenvector's. ***
+VAR_FLOOR = max(abs(float(_V[:, k] @ (Hosc @ (Hosc @ _V[:, k])) - (_V[:, k] @ (Hosc @ _V[:, k])) ** 2))
+                for k in range(10))
+print(f"      Var(H_osc) on its own eigenvectors, the largest of the first ten = {VAR_FLOOR:.3e}")
 check(VAR_FLOOR < 1e-8,
       f"'the variance vanishes' measures as {VAR_FLOOR:.2e} here -- the floor any claim that some "
       "state makes an observable sharp has to clear")
