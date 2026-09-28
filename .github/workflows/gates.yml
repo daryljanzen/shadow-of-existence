@@ -38,7 +38,11 @@ jobs:
         with: { fetch-depth: 0 }
       - uses: actions/setup-python@v5
         with: { python-version: '3.11' }
-      - run: pip install numpy scipy sympy mpmath
+      # ⛭ r6981 (66): the versions come from requirements-ci.txt, which is the environment the
+      #   corpus's float comparisons are verified on.  ** An unpinned install moved numpy under
+      #   every float in the corpus with no push at all, hours after the fingerprint gate was
+      #   wired -- so the pin is what makes a move of the environment a PUSH the scope can see. **
+      - run: pip install -r requirements-ci.txt
       # ** r2440: `set -e` REMOVED, AND THE REASON IS A TWELVE-REVISION OUTAGE IT CAUSED. **
       # classify_documents --check began failing at r2427 (twenty-eight restored files, unclassified).
       # Under `set -e` that aborted the step on its FIRST command, so ** the fifteen text gates and the
@@ -152,7 +156,7 @@ jobs:
       # ⛭ r3946: matplotlib added.  Without it P03_the_U3_figure and P03_the_turnaround_figure
       #   fail on import in EVERY environment -- this container and this job alike -- so two
       #   registered receipts were unrunnable everywhere and counted as real failures.
-      - run: pip install numpy scipy sympy mpmath camb pynucastro matplotlib
+      - run: pip install -r requirements-ci.txt pynucastro
       - run: python3 scripts/run_all_receipts.py --jobs 4 --timeout 600 | tee receipts/RUN_RESULT.txt
       - run: python3 corpus/check_receipts_run.py
 
@@ -182,7 +186,7 @@ jobs:
       - name: install
         id: install
         shell: bash
-        run: for i in 1 2 3; do pip install numpy scipy sympy mpmath camb pynucastro matplotlib && exit 0; sleep 30; done; exit 1
+        run: for i in 1 2 3; do pip install -r requirements-ci.txt pynucastro && exit 0; sleep 30; done; exit 1
       # ⓵ the cheap structural class, whole -- also wired per push, so this is only a cross-check
       - run: python3 scripts/sweep_vacuous_pins.py
       # ⓶ the runner-read class, whole.  ** This is also what REFRESHES THE READ INDEX **, which is
@@ -271,7 +275,7 @@ jobs:
       #   PR run of the same commit installed it in 19 s.  A package that is really gone fails all three.
       - if: steps.scope.outputs.n != '0'
         shell: bash
-        run: for i in 1 2 3; do pip install numpy scipy sympy mpmath camb pynucastro matplotlib && exit 0; sleep 30; done; exit 1
+        run: for i in 1 2 3; do pip install -r requirements-ci.txt pynucastro && exit 0; sleep 30; done; exit 1
       - name: run the scoped receipts, as the runner runs every receipt
         if: steps.scope.outputs.n != '0'
         shell: bash
@@ -308,7 +312,7 @@ jobs:
       #   PR run of the same commit installed it in 19 s.  A package that is really gone fails all three.
       - if: steps.scope.outputs.n != '0'
         shell: bash
-        run: for i in 1 2 3; do pip install numpy scipy sympy mpmath camb pynucastro matplotlib && exit 0; sleep 30; done; exit 1
+        run: for i in 1 2 3; do pip install -r requirements-ci.txt pynucastro && exit 0; sleep 30; done; exit 1
       - name: trace the scoped receipts from their own directories
         if: steps.scope.outputs.n != '0'
         run: python3 scripts/sweep_runner_reads.py --out "$RUNNER_TEMP/trace" --from "$RUNNER_TEMP/scope.txt"
@@ -344,7 +348,7 @@ jobs:
       #   PR run of the same commit installed it in 19 s.  A package that is really gone fails all three.
       - if: steps.scope.outputs.n != '0'
         shell: bash
-        run: for i in 1 2 3; do pip install numpy scipy sympy mpmath camb pynucastro matplotlib && exit 0; sleep 30; done; exit 1
+        run: for i in 1 2 3; do pip install -r requirements-ci.txt pynucastro && exit 0; sleep 30; done; exit 1
       - name: probe on three builds, compare each with the runner's
         if: steps.scope.outputs.n != '0'
         shell: bash

@@ -55,7 +55,7 @@ exists because $\ln a$ breaks that scaling; cancelling it would need exactly the
 ** ⛭ ⓷ THE EXPECTATION CAN BE TUNED TO ZERO -- AND THAT IS NOT SHARPNESS. **  $\langle\partial_a\hat
 R\rangle$ sums distinct powers of $a$ weighted by tower expectations, and a tuned coefficient zeroes
 it: at $B^{*}$ the bound's right-hand side collapses to $1.2\times10^{-35}$.  ⚠ **But
-$\operatorname{Var}(\hat R)=1.6\times10^{-6}$ there, six decades above the measured floor.**  A
+$\operatorname{Var}(\hat R)=2.3\times10^{-7}$ there, five decades above the measured floor.**  A
 vacuous bound is not a sharp curvature; it only stops constraining.  ⇒ *So the order's second branch
 is reachable in the weak sense and not in the strong one, and the cancellation condition is in hand.*
 
@@ -109,8 +109,22 @@ xs = np.linspace(-8, 8, 1200)
 hs = xs[1] - xs[0]
 Hosc = -(-2 * np.eye(1200) + np.eye(1200, k=1) + np.eye(1200, k=-1)) / hs ** 2 + np.diag(xs ** 2)
 _w, _V = np.linalg.eigh(Hosc)
-v4 = _V[:, 3]
-VAR_FLOOR = abs(float(v4 @ (Hosc @ (Hosc @ v4)) - (v4 @ (Hosc @ v4)) ** 2))
+# ⛭ r6981 (66, on node 70's r6977+70.1): ** THE FLOOR IS THE LARGEST OF TEN AND NOT ONE
+#   EIGENVECTOR'S, WHICH IS THE SAME REPAIR 70 MADE TO THIS SITE'S SIBLING AND FOR THE SAME REASON. **
+#   A floor read off a single eigenvector is one round-off number, and 70 measured it moving
+#   1.4e-10 to 1.9e-8 across linear-algebra builds -- a spread of 133x.  ⇒ *A threshold scaled by such
+#   a floor recalibrates itself only while the floor is stable, and this one is not: when `r6975`
+#   moved Var(R) from 1.56e-6 to 2.31e-7 the headroom fell to 12.2, so a build twelve times noisier
+#   than four threads would turn the check red.  The judgement that had called it a false positive
+#   LAPSED with that change, and 70's scoped tolerance job is what printed it.*
+#   ⌗ **Measured here: the largest variance over the first ten eigenvectors is 1.65e-12 against the
+#   fourth's 2.42e-13 -- 6.8x larger and, on the sibling's eight-build measurement, stable to a factor
+#   under three where the single-eigenvector form moved thirty.**  So the threshold below reads against
+#   a floor that is bigger and steadier, and the headroom on it is 1.4e5.
+#   ⚠ *What is owed and named rather than assumed: the cross-build confirmation of THIS floor. Only a
+#   seat that can perturb the build can make it, and it is ordered.*
+VAR_FLOOR = max(abs(float(_V[:, k] @ (Hosc @ (Hosc @ _V[:, k]))
+                          - (_V[:, k] @ (Hosc @ _V[:, k])) ** 2)) for k in range(10))
 print(f"\n  VARIANCE FLOOR, on an operator that DOES have eigenvectors:"
       f"  Var(H_osc) on its 4th = {VAR_FLOOR:.3e}")
 check(VAR_FLOOR < 1e-8,
@@ -262,10 +276,15 @@ tuned = [q for q in adm if abs(q[0] - BSTAR) < 1e-12][0]
 check(abs(tuned[2]) < 1e-12,
       f"** at B* the bound's coefficient <dR/da> = {tuned[2]:.2e} vanishes, so the bound collapses to "
       f"{tuned[4]:.2e} -- VACUOUS **")
-check(tuned[3] > 1e4 * VAR_FLOOR,
+# r6981: 1e3 against the ten-eigenvector floor, which is 6.8e3 times the old one-eigenvector floor --
+# so in ABSOLUTE terms this is within a factor of one and a half of the threshold it replaces, while
+# being read against a quantity that does not move with the build.  The failure mode is O(1) -- a sharp
+# curvature against one that is not -- and the measured headroom is 1.4e5, so there are two decades of
+# margin even if the stable floor moves a hundredfold.
+check(tuned[3] > 1e3 * VAR_FLOOR,
       f"** but Var(R) = {tuned[3]:.3e} there, {np.log10(tuned[3] / VAR_FLOOR):.1f} decades above the "
       f"floor {VAR_FLOOR:.1e}: a vacuous bound is NOT a sharp curvature **")
-check(all(q[3] > 1e4 * VAR_FLOOR for q in adm),
+check(all(q[3] > 1e3 * VAR_FLOOR for q in adm),
       "and no admissible state in the sweep comes near the floor, tuned or not")
 check(len(adm) == 4 and len(rows) == 5,
       "one of the five rows is inadmissible and is reported with its arithmetic, per the order's guard")
