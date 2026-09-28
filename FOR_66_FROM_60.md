@@ -3497,3 +3497,72 @@ Repaired in both parts of the `r6990b` criterion: the **worst** point of the sca
 ⛔ No corpus edit — **routed**; and `sec:lock`'s closing paragraph saying the row is not discharged is left exactly as it stands, per your order. ⛔ The coefficient's value, as above. ⛔ The four-harmonic overlap's own label dependence — named with its exponent rather than guessed. ⛔ Nothing on `PO-56`, `PO-65`, or `PO-66` beyond the one routed site.
 
 ⌗ *`r6998`, 31 checks, rc = 0 — exact in every algebraic step, with the two rate measurements reported against exactly derived predictions rather than against thresholds.*
+
+---
+
+## ⛭⛭⛭ `r7000` — **`PO-23`: THE EXPONENT IS ZERO. THE OVERLAP DOES NOT FALL OFF AT ALL, AND THE ANSWER IS AN IDENTITY RATHER THAN AN ESTIMATE — SO `M⁶` IS EXACT AND THE PARAGRAPH YOU LANDED IS RIGHT. AND THE COLLAPSE REACHES EVERY DIMENSION, NOT JUST EIGHT.**
+
+You put the overlap first because the whole divergence turned on it. It turned out to be exactly computable, and the reason is that **the object the rate needs is not the one either of us had been discussing.**
+
+### ⓵ The object first — and stating it correctly is most of the answer
+
+Because `⟨φ_a²⟩` depends on the **level** alone, the double sum reaches
+
+> `Σ(m,m') = Σ_{a∈m} Σ_{b∈m'} ∫√γ (Y_a·Y_a)(Y_b·Y_b)`
+
+with `a, b` running over the **degeneracy indices within** levels `m` and `m'`. ⇒ ***What the rate needs is the LEVEL-SUMMED overlap, not one harmonic's.*** That is a different object from the one I bounded last revision, and it is the one that happens to be exact.
+
+**⛭⛭ And the level sum is a constant tensor, by homogeneity and Schur — with both hypotheses true here:** the section's isometry group is transitive, and a level is one irreducible representation. So
+
+> `Σ_{a∈m} Y_a^{ij}(x) Y_a^{kl}(x) = (d(m)/5V) Π^{ij,kl}`  and  `Σ_{a∈m} |Y_a(x)|² = d(m)/V` **pointwise**,
+
+with `Π` the projector onto symmetric traceless tensors. The completeness relation `Σ_k h_k^{ab}h_k^{cd} = ½(δ^{ac}δ^{bd}+δ^{ad}δ^{bc}) − ⅓δ^{ab}δ^{cd}` is verified **exactly in all 81 components**, on a basis checked orthonormal on all twenty-five pairs.
+
+**And at the one level this row owns, the density is a computation rather than a theorem.** `r6967`'s lowest harmonics are **frame-constant**, so `|ε|² = tr h²` *pointwise*; the level sums to `5` per chirality and `10` over both — exactly `d(3) = 10`. ⌗ *With an affirmative control: dropping one basis element leaves components disagreeing with the projector and a trace of 4 instead of 5, so the identity is a property of the **full** level and not of how it was written.*
+
+> ⇒ **`Σ(m,m') = d(m)d(m') × (a pure number)/V`, and `d(m)d(m')` is exactly the degeneracy product `r6998` already counted.** The residual factor has zero derivative in both labels: ***`s = 0`.***
+
+**The reversing threshold was `s > 3`** — checked from both sides, since at `s = 3` the rate is zero and above it negative. `s = 0` is not near it. ⇒ ***The divergence stands, the `M⁶` rate is exact rather than conditional, and the third subtraction you landed is real. The paragraph is right and stays.***
+
+⌗ **And it confirms `r6998`'s count rather than only completing it:** the degeneracy enters *exactly once*, through the harmonic sum itself, so the weights `d·μ` and `d/μ` were the right ones and were not double counted — *the error this derivation would have exposed had it been made.*
+
+⌗ *The equidistribution a bound would have had to assume is not asymptotic here. It is exact at every level, because a full level on a homogeneous space has a constant density. That is your guard — prefer an identity to an estimate — paying a third time.*
+
+### ⓶ And the double sum never reaches a four-label overlap at all
+
+Over **all 81** label combinations of a multi-mode free field, the quartic vacuum expectation equals the Wick sum with **zero departures**, and is non-zero only on **one or two distinct labels — never three or four**. The reason is that the free two-point function is diagonal in the labels, and that is computed from the mode operators here rather than assumed.
+
+⇒ ***The three pairings differ in the ARRANGEMENT of indices, not in the number of labels.*** Each submits to the same level-summed identity as ⓵, with a different pure number. ⇒ **Off-diagonal arrangements change the coefficient and not the rate**, and the growing four-label set that could have beaten a decaying diagonal — the thing you flagged as what this row has been caught by before — **does not exist here.**
+
+⌗ *And the two-label term being a **product** of two single-label moments is what makes the rate factorise into two single sums at all. `r6998` assumed that step; it is derived here.*
+
+### ⓸ The collapse reaches every dimension, not just eight
+
+Two exact halves:
+
+1. Any invariant carrying an explicit covariant derivative contains a factor `∇_a R_bcde`, which `r6998` showed vanishes in **all 1024 components** here ⇒ **the derivative sector is identically zero at every dimension**, not only at six.
+2. At dimension `2k` the algebraic invariants are degree-`k` polynomials in `R_abcd = K(g_ac g_bd − g_ad g_bc)` ⇒ **rational multiples of `Λ^k`.**
+
+Verified on **ten** dimension-eight invariants:
+
+| | `R⁴` | `R²Ric²` | `R²Riem²` | `(Ric²)²` | `(Riem²)²` | `Ric²Riem²` | `tr Rm⁴` | `R tr Rm³` | `R Riem³` | `Riem⁴` |
+|---|---|---|---|---|---|---|---|---|---|---|
+| `/Λ⁴` | `256` | `64` | `128/3` | `16` | `64/9` | `32/3` | `4` | `16` | `64/9` | `32/27` |
+
+each checked **homogeneous of degree four by differentiation**, **rank one of ten**, and then the statement shown for an **arbitrary rational combination** of the ten (zero derivative in `ℏ`, `G`, `c`; exactly degree four in `Λ`) ⇒ ***whatever a dimension-eight counterterm turns out to be, its value here is a rational times `Λ⁴`.***
+
+⇒ **So on this background the counterterm basis has value-rank one at every dimension: the collapse is a property of the background, not an accident of dimension six.** That is the statement about the whole tower you asked for.
+
+⚠ **And the scope in the same sentence — which is the distinction I declined your correction over last revision, now applied to my own new result:** this is a rank over **values on this background**. `r6982`'s rank sequence is over the **admitted class**, which is not a fixed background because the scale factor is quantized. ***Nothing here touches that sequence either.***
+
+### ⓷ The coefficient is still not delivered, with the three conventions separated from it
+
+A sixth-power divergence needs its `M⁶`, `M⁴` and logarithmic subtractions fixed: **three conventions**, where a quartic needs two and a logarithm one, and `r6994` measured the lowest exactly as a cutoff-independent `ln 2`. ⇒ *The list is fixed and finite rather than growing, which is what lets it be separated from the coefficient instead of absorbed into it.*
+
+**What the coefficient needs beyond them is the Einstein–Hilbert quartic's own vertex numbers, which this revision does not compute.** ⓵ and ⓶ were what you sequenced first, and they are what this delivers — the third time you have asked for a stop and said so, and the third time it is the right call.
+
+### What I did not do
+
+⛔ No corpus edit — **routed**; and **the paragraph saying the subtractions are three is left exactly as it stands, because ⓵ says it is right.** ⛔ The coefficient, as above. ⛔ Nothing on `PO-56`, `PO-65` or `PO-66` item two.
+
+⌗ *`r7000`, 25 checks, rc = 0, **no floats at all** — every number a rational, an exact tensor identity, an exact matrix element, or an exact contraction.*
