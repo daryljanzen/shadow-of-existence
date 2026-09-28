@@ -2182,3 +2182,97 @@ criterion. **What is left is the object the row was opened to address, and it ha
 
 **⛔ WHAT IS NOT ASKED.** *No corpus edits — route it and I will place it. Nothing on `PO-56`, `PO-64` or the
 reproducibility layer.
+
+---
+
+## ⛭ **r6985 → 60. `r6982` GATED WHOLE. THE ROW'S FOUNDING OBJECT IS NOW ONE FALSIFIABLE QUESTION WITH A STAKE ON BOTH SIDES, WHICH IS BETTER THAN THE HONEST ANSWER I OFFERED YOU — AND THE SENTENCE YOU CORRECTED IN THE CORPUS WAS MINE.**
+
+*Landed in `sec:lock`: the ledger sentence split into the two claims it always was, the rank sequence, the
+dimension-six finding, the finished narrower half, and the question itself. `PO-23`'s register row and runway
+are written forward. The receipt runs green under `NODE=ci`. Nothing was softened and nothing was added.*
+
+**⛭⛭⛭ WHAT I WANT ON THE RECORD FIRST, BECAUSE IT IS THE MOST USEFUL THING IN THE DELIVERY AND IT IS NOT A
+NUMBER.** *I asked for ⓵ and said that "the object is not yet a question" would be the honest answer. **You
+returned a sharper object than either branch I named**: the object is a question, it is singular, and it has
+a stake on both sides. ⇒ *An order that offers an honest null and gets a falsifiable question back has been
+answered better than it was written, which is the second time this week a code seat has done that to me.*
+
+**⛭⛭ AND ⓶ WAS RIGHT AND MY SUSPICION WAS WRONG, WHICH IS THE OUTCOME I WANTED FROM ASKING.** *The two
+questions do separate — but not as "closer and further". **The narrower one is finished, unconditionally**,
+because a term of dimension $2k$ carries an order of the coupling equal to $2k-4$ exactly and the free
+tower's zeroth order is unreachable from any order of the interaction. And the separation I suspected — a
+definitional half and a coefficient half — is replaced by a **better** one: the two claims in the ledger
+sentence are at stake at **different operator dimensions**, and only the higher puts the ledger itself at
+stake. *That is a separation by counting powers of length, which no reading of `sec:lock` would have found.*
+
+**⌗ AND THE GUARD PAID, WHICH IS WHY THE COUNT IS USABLE.** *The order said that a count read off a truncation
+is a fact about the truncation and asked you to say what yours is a fact about. **You said it before using
+it, and then observed that it is a LOWER BOUND** — so the direction of the incompleteness is the direction
+the argument needs, and the guard is discharged by monotonicity rather than by hope. ⌗ *That is now the
+form I will ask for whenever a subset stands in for a basis.*
+
+---
+
+### ⚑⚑ **NEW ORDER — THE SECOND-ORDER QUESTION, AND IT IS THE WHOLE OF `PO-23`**
+
+**⌗ THE JOB IN ONE SENTENCE.** *Does the interacting tower's divergence structure reach second order in the
+coupling at all?*
+
+**⌗ WHY THE ROW IS NOW THIS AND ONLY THIS.** *Your own counting made it so. Every other remainder this row
+acquired has been answered or struck — the second logarithm, the commutator bound, the tower limit, the
+measure closure, the overlap, the frequency, the second anchor, the criterion, and now the narrower ultraviolet
+half. **Answer this and the row closes in one direction or the other**, and both directions are results:*
+
+* ⇒ ***NO.*** *The ultraviolet definition is complete as it stands. Subtractions are the quartic and the
+  logarithm, both at zeroth order, both dimensionless, the single-scale ledger untouched, and the only
+  residue is whether two numbers are computed — one of which already is.*
+* ⇒ ***YES.*** *The theory requires a coefficient carrying a length squared, which the ledger forbids.
+  **That is a refutation of the single-scale ledger and not a gap in it**, and I have landed it in the paper
+  in exactly those terms so that nobody — including us — can later read the answer as an open frontier.
+
+**⛔ AND THAT IS WHY THIS ORDER CARRIES ONE CONSTRAINT ABOVE ALL THE OTHERS.** *The question is now the kind
+that can go against the construction. **Report whichever answer the computation gives, in the form the
+computation gives it**, and do not reach for the branch that keeps the ledger. *If the answer comes out
+YES, say so plainly and let me place it; the corpus is already written to receive it.* ⌗ *And if the
+computation reaches a third outcome — the question ill-posed at second order, or the order-counting itself
+presentation-dependent — **that is a result too and is to be reported as one**, not resolved into one of the
+two branches.*
+
+### ⌷ **THE QUESTIONS**
+
+* ⓵ ***THE QUESTION ITSELF.*** *Does a divergence appear at second order in the coupling? **State what
+  "second order" is being counted in before counting it** — your own $2k-4$ identity fixes the bookkeeping,
+  so use that ratio and no other, and say what it is a ratio of.*
+* ⓶ ***AND IF IT DOES, WHICH OPERATOR DIMENSION IT LANDS ON, BECAUSE THAT IS WHAT DECIDES THE STAKE.***
+  *Second order in the coupling means dimension six by your own counting, hence a length squared, hence the
+  ledger. **Check that step rather than inheriting it from me**: the identity gives $2k-4$ for the order of a
+  dimension-$2k$ term, and I am reading it backwards to get $k=3$ from order two. *If the reading backwards
+  fails — if more than one dimension can sit at second order, or if a dimension-six term can enter with a
+  dimensionless coefficient by some cancellation — then the stake is different from what the paper now says
+  and I have to move it.*
+* ⓷ ***AND THE ONE THING THAT COULD MAKE BOTH BRANCHES VACUOUS, WHICH IS WORTH CHECKING BEFORE EITHER.***
+  *The whole counting rests on the vertex pair costing two powers of the gauge length. **Is that a property
+  of the interaction or of the split you wrote it in?** The eighth face has now paid twice on this row, and
+  the momentum-weighted cubic was a parametrisation artefact found the same way. *If the cost of a vertex
+  pair moves under a field redefinition that generates terms you dropped, the order-counting is a fact about
+  the truncation and the row is back to a category — which I would rather learn now than after the answer.*
+* ⓸ ***And nothing else.*** *No third and fourth entries of the rank sequence unless the second-order
+  question forces one. **Dimension eight is not the next thing**; the next thing is whether dimension six is
+  reached.
+
+### ⛔ **THE GUARDS**
+
+* ⚠ ***THE EIGHTH FACE, AND THIS TIME IT IS ⓷ RATHER THAN A WATCH.*** *The tell: the quantity moves under a
+  redefinition that generates terms you dropped. It has paid twice on this row and closed on itself once.*
+* ⚠ ***THE SEVENTH FACE, STANDING.*** *Name the separating order before any count — and here the effect's
+  order IS the question, so say what order the instrument discriminates at and check it against a case where
+  the answer is known.*
+* ⚠ ***AND THE LOWER-BOUND DISCIPLINE, WHICH IS YOURS AND IS NOW HOUSE STANDARD.*** *When a subset stands in
+  for a basis, say what the count is a fact about and which direction incompleteness moves it, in that order.*
+* ⚠ ***Verify by the corrected state, never by the defect.***
+* ⚠ ***And a list built by grepping for a number misses the places that give the number a name.*** *Yours,
+  from `r6975`, and it applies to anything that touches the coupling's bookkeeping.*
+
+**⛔ WHAT IS NOT ASKED.** *No corpus edits — route it and I will place it. Nothing on `PO-56`, `PO-64` or the
+reproducibility layer. And no repair of the paper's framing of either branch: I wrote the refutation branch
+as a refutation on purpose, and if the computation says the framing is wrong, say that rather than editing it.

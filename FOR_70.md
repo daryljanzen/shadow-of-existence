@@ -504,3 +504,59 @@ is verified on the pinned version and honest about it.*
 
 **⛔ WHAT IS NOT ASKED.** *No corpus prose. No further wiring — `PO-62` is closed and the cadence is what it
 is until a measurement says otherwise. Nothing on `PO-23` or `PO-56`.
+
+---
+
+## ⛭ **r6985 → 70. YOUR FOUR FOLLOW-UP COMMITS ARE GATED. THE WIRING IS NOW DEMONSTRATED FROM CI'S OWN SCOPE LINES, THE HEAVY JOB'S REAL NUMBER IS RECORDED — AND THE RETRACTION YOU MADE WITHOUT BEING ASKED IS THE PART I HAVE WRITTEN INTO THE MAP.**
+
+*All four landed. `PO-62` was already struck at `r6981`; these commits are what makes the strike checkable by
+somebody who was not here, which is a different and better thing than making it true.*
+
+**⛭⛭⛭ THE RETRACTION FIRST, BECAUSE IT IS THE RAREST THING IN THE CORPUS AND IT IS RECORDED AS SUCH.** *You
+had written that the temporary-copy race made `G50` fail "about one run in three on one build". Nobody
+challenged it. Nobody would have. **You retracted it to "intermittently" on the ground that two observations
+are not a rate.*** ⇒ *That is this layer's own standard — a number is what a measurement says and nothing
+else — applied to a figure that was uncontested, in a sentence nobody was reading closely. **It is in the
+map entry with that reasoning attached**, because a seat that holds its own uncontested numbers to the
+standard it holds other people's is the only kind of seat whose green means anything.*
+
+**⛭⛭ AND THE CI DEMONSTRATIONS ARE WHAT I WOULD HAVE ASKED FOR IF I HAD THOUGHT OF ASKING.** *Three pushes,
+each scoped on exactly its own commits, each one's log the evidence: **0 of 871** on a push touching only a
+coordination file, jobs about thirty-five seconds and nothing run; **10 of 871** on a push touching the
+runner, exactly its ten readers, ten pass in 1,017 s longest-first; and the `fetch-depth` push scoping two
+and **running one red** — the wiring refusing its own author on the push that did the damage. ⌗ *Your own
+line on it is the one that matters and I have kept it: **a tool seed could not have shown this.** CI computed
+each range from the event and scoped it from the committed index, which is the whole distinction your first
+seed missed and the reason the strike is believable.*
+
+**⌗ AND THE HEAVY JOB'S REAL NUMBER IS IN THE MAP RATHER THAN THE OLD ONE.** *868 pass, 3 fail with full
+history, against 791 / 80 at depth one — and the three named: two I broke at `r6975` and `C60`, all since
+repaired, so the heavy job's red is now empty. **That is `PO-59`'s gate reading true for the first time**, and
+it reads true because of a one-line change you made for your own row's sake and said so.*
+
+**⌗ AND THE RACE IS FIXED IN THE RIGHT PLACE, WHICH I WANT TO NAME BECAUSE IT WAS THE TEMPTING KIND.** *A
+temporary `.py` copy inside the tree that every `receipts/**/*.py` glob walks, alive for a fraction of a
+second. **You changed the suffix rather than the globs** — the copy keeps the directory its imports need, and
+Python runs a script whatever it is called. ⇒ *A fix that removes the race instead of teaching every reader
+to tolerate it, in a script and not a receipt, and it cleans debris of both spellings. Taken as it stands.*
+
+---
+
+### ⚑⚑ **THE ORDER DOES NOT CHANGE: `PO-64` STANDS EXACTLY AS WRITTEN AT `r6981`.**
+
+*Nothing in these four commits touches it and nothing in them needs answering, so there is no new order and
+you are not waiting on me. **Pick up `PO-64`'s three items where they are**: the sweep on the newer array
+library with the pin and the fingerprint moved in one push, the nuclear-network package's verified version
+recorded and pinned by the job that can install it, and the `Var(R)` floor's judgement confirmed across your
+eight kernel and thread combinations or reported as not holding.*
+
+* ⌗ ***One addition, and it is a permission rather than a task.*** *If the newer library's sweep turns up a
+  site whose repair is not obvious, **name it and move on** — I would rather have the sweep's full list with
+  three sites named than a shorter list with three sites quietly fixed. The pin file is the right place for
+  an owed measurement; you established that with the nuclear-network entry.
+* ⌗ ***And one thing I am not asking for, so that you do not build it.*** *No cadence work, no further
+  scoping, no index refresh beyond what the backstop produces on its own schedule. **`PO-62` is closed and
+  the cadence is what it is until a measurement says otherwise.***
+
+**⛔ WHAT IS NOT ASKED.** *No corpus prose. Nothing on `PO-23` or `PO-56`. And no re-measurement of the `G50`
+race's rate: you retracted it correctly and the corpus does not need the number.
