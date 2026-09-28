@@ -3150,3 +3150,51 @@ Whether the `j ≥ 2` divergences exist at all — that is the question, not a r
 ⛔ No fourth instrument, no re-derivation, no new truncation. ⛔ No corpus edit — **routed for you to place**, and the natural home is `sec:lock`, where the sentence *"a curvature-squared coupling is not an entry in this framework's ledger"* should become the two claims it is, and where the open item becomes the `j = 2` question rather than "the ultraviolet definition of the mode sums". ⛔ Nothing on `PO-56`, `PO-64` or the reproducibility layer.
 
 ⌗ *`r6982`, 49 checks, rc = 0, 8 s, **no floats at all**; every invariant computed from the metric, every rank an exact rational rank, every dimension a count of powers of length, with a discriminating control on the one vanishing the argument leans on.*
+
+---
+
+## ⛭⛭⛭ `r6986` — **`PO-23`: THE THIRD OUTCOME IS THE ONE THAT OCCURS, AND IT OCCURS TWICE. ⓷ IS YES — THE VERTEX COST IS THE SPLIT'S — AND ⓶'s ARITHMETIC IS SOUND WHILE ITS INFERENCE TO THE LEDGER IS A NON SEQUITUR. BOTH FINDINGS ARE AGAINST `r6982`, WHICH IS MINE.**
+
+**⓷ first, because you were right to put it first, and the answer is the one you feared.** A field redefinition's parameter multiplying the square of a canonically normalised field must carry a **length** — and the framework offers *two*, `√κ ~ ℓ_P` and `α`. So a redefinition off the `ℓ_P` grading is dimensionally admissible and generates vertices carrying no `ℓ_P` at all. ⇒ **The cost of a vertex pair is a property of the split.**
+
+And I show it on a case where the answer is known rather than arguing it. Take a **free** oscillator and the point transformation `q = Q + λQ²`, `p = P/(1+2λQ)`. Its Poisson bracket is exactly `1`, so the map is canonical and the Hamiltonian is the *same function on phase space* — every spectral quantity, `E(J)` included, is unchanged. Expanded, that same Hamiltonian reads
+
+> `½(P² + ω²Q²) − λQ(2P² − ω²Q²) + (λ²/2)Q²(12P² + ω²Q²) + …`
+
+⇒ ***the truncation at first order is a genuinely interacting Hamiltonian with a non-zero cubic vertex, and the resummation is free.*** ⌗ *That is `r6972`'s own lesson in its smallest form — a truncation of a positive function reads as an operator that has lost its floor — used here as the instrument rather than recalled as a caveat.*
+
+⛭ **And the instrument is shown to discriminate, which is what makes the silence a finding.** The generated cubic is **parity-odd**, so even a naive first-order shift vanishes on it. Against that, the *same* first-order instrument on a genuine quartic `g q⁴` returns `3g/4ω² ≠ 0`. *A control that returns the affirmative when the affirmative is true.*
+
+### ⇒ But the conclusion survives, for a better reason than the one I gave you
+
+The vacuum energy is a **spectral invariant**, so its `ℓ_P`-expansion cannot move under a redefinition. ⇒ **`r6982`'s `j ≥ 2` stands — and it stands grounded in the observable, where the warrant I actually wrote was the vertex count, which is the split's.** The eighth face paying a third time on this row, and this time on my own warrant.
+
+### ⓵ The bookkeeping, stated before it is used
+
+The expansion of the **vacuum energy** in `ℓ_P/a` — the gauge length to the scale factor — and in no other ratio. A counterterm of operator dimension `2k` has `[c] = L^{2k−4}` and contributes an energy `c·a^{3−2k}`, so writing `c = f·ℓ_P^{2k−4}` gives `f·a⁻¹(ℓ_P/a)^j` with **`j = 2k − 4` exactly**.
+
+### ⓶ The reading backwards is sound and unique — and then it fails at the next step
+
+`j = 2` gives `k = 3` and nothing else, by **both** forms of the equation; and a logarithm carries no power of `a`, so `ln(a/ℓ_P)` rides at the *same* `j`. ⇒ **There is no route by which more than one dimension sits at second order.** Your arithmetic is right: dimension six, coefficient `L²`.
+
+⛔ **But "carries `L²`" is not "introduces a second length", and that is the step that fails.** The framework's dimensionful content is **one** length, and its own sentence says `ℓ_P` is a gauge-combination over that length rather than a second physical one. So a coefficient of dimension `L²` is admissibly `f·α²` with `f` a pure number — and `f·α² = f·ℓ_P²·(α/ℓ_P)²` identically, so writing it in `ℓ_P` adds nothing *dimensional*, only the value of a ratio.
+
+⇒ ***It introduces a second length only if that dimensionless factor is undetermined — which is the same test as at dimension four***, where the coefficient is dimensionless and the question is whether it is computed. And the row already holds one instance of that test **passed**: the shear's `2 × 1/120 = 1/60`, a count of propagating modes rather than a fitted number.
+
+> ⛭⛭ **THE CORRECTED STATEMENT, AND IT IS SIMPLER AND STRONGER THAN MINE: the ledger's criterion is dimension-independent.** At every operator dimension the question is whether each coefficient is a number the framework determines. **What the dimension ladder decides is *how many* such numbers — which is the renormalisability question, not the single-scale one.**
+
+⛔ **And it is the eighth face on my own sentence, which was self-defeating as shipped.** `r6982` wrote *"a second physical length, which is exactly what the ledger forbids **and what a gauge-combination Planck length was asserted to avoid**"* — the second clause defeats the first. *The dimensional table is arithmetic and stands unchanged; the inference I drew from it does not.*
+
+⇒ **So the paper's framing of the affirmative branch as a refutation of the single-scale ledger does not follow.** Per your order I am reporting that rather than editing it. ⌗ *And which length the coefficient is built from remains a real question with an enormous lever, since `α²/ℓ_P²` is — but it is a question about a ratio the framework claims to determine, not about dimensions.*
+
+### ⛔ ⓵ is not answered here, and I say so rather than picking a branch
+
+The two-loop vacuum divergence's coefficient is **not computed** in this revision. What is settled is that the question is **well posed** — bookkeeping fixed to an observable by ⓷, dimension unique by ⓶ — and that **the stake has changed rather than the question**, so the row does not close in one direction or the other on that computation alone.
+
+⚠ **And the one thing I owe on your constraint, stated plainly: what I found *does* keep the ledger.** I did not go looking for it; it arrived as a correction to **my own** revision rather than to yours, and both findings are stated in the direction that costs me something — the warrant I gave for `r6982`'s counting was the split's, and the inference I drew from its table was invalid. *If you want the affirmative branch to stay a refutation, it needs a premise neither of us has supplied: that `(ℓ_P/α)²` is not determined by the framework.*
+
+### What I did not do
+
+⛔ No third or fourth entry of the rank sequence; dimension eight untouched. ⛔ No corpus edit — **routed**, and `sec:lock`'s affirmative branch is what needs moving. ⛔ Nothing on `PO-56`, `PO-64` or the reproducibility layer. ⛔ No repair of the framing.
+
+⌗ *`r6986`, 30 checks, rc = 0, **no floats at all** — every statement an algebraic identity, an exact Poisson bracket, an exact Gaussian moment, or a count of powers of length.*

@@ -121,8 +121,12 @@ _w, _V = np.linalg.eigh(Hosc)
 #   fourth's 2.42e-13 -- 6.8x larger and, on the sibling's eight-build measurement, stable to a factor
 #   under three where the single-eigenvector form moved thirty.**  So the threshold below reads against
 #   a floor that is bigger and steadier, and the headroom on it is 1.4e5.
-#   ⚠ *What is owed and named rather than assumed: the cross-build confirmation of THIS floor. Only a
-#   seat that can perturb the build can make it, and it is ordered.*
+#   ⚠ *What was owed and named rather than assumed: the cross-build confirmation of THIS floor.*
+#   ⛭ r6985+70.1 (node 70, PO-64 ⓷): ** CONFIRMED ON ALL EIGHT KERNEL/THREAD COMBINATIONS. **  Prescott,
+#   Sandybridge, Haswell and SkylakeX, each at one thread and at four, numpy 2.4.6: the floor measures
+#   1.05e-12 to 2.05e-12 -- a spread under 2x, where the single-eigenvector form moved 133x -- and Var(R)
+#   reads 2.309e-7 on every one.  Worst case, Var(R) clears the 1e3-scaled threshold by 113x and the floor
+#   itself by 1.1e5.  Green on all eight.  *The repair holds.*
 VAR_FLOOR = max(abs(float(_V[:, k] @ (Hosc @ (Hosc @ _V[:, k]))
                           - (_V[:, k] @ (Hosc @ _V[:, k])) ** 2)) for k in range(10))
 print(f"\n  VARIANCE FLOOR, on an operator that DOES have eigenvectors:"

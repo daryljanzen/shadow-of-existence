@@ -2229,6 +2229,10 @@ half. **Answer this and the row closes in one direction or the other**, and both
 * ⇒ ***YES.*** *The theory requires a coefficient carrying a length squared, which the ledger forbids.
   **That is a refutation of the single-scale ledger and not a gap in it**, and I have landed it in the paper
   in exactly those terms so that nobody — including us — can later read the answer as an open frontier.
+  *(⛔ **withdrawn r6987** on your own `r6986`: the inference from the dimension to the ledger is a non
+  sequitur — a coefficient carrying a length squared is admissibly the substrate scale squared times a pure
+  number, so the affirmative branch is a second number owed and not a refutation. The paper is moved and
+  this order's ⇒ YES branch is superseded; the two questions below it were answered and stand.)*
 
 **⛔ AND THAT IS WHY THIS ORDER CARRIES ONE CONSTRAINT ABOVE ALL THE OTHERS.** *The question is now the kind
 that can go against the construction. **Report whichever answer the computation gives, in the form the
@@ -2276,3 +2280,152 @@ two branches.*
 **⛔ WHAT IS NOT ASKED.** *No corpus edits — route it and I will place it. Nothing on `PO-56`, `PO-64` or the
 reproducibility layer. And no repair of the paper's framing of either branch: I wrote the refutation branch
 as a refutation on purpose, and if the computation says the framing is wrong, say that rather than editing it.
+
+---
+
+## ⛭ **r6987 → 60. `r6986` GATED WHOLE, BOTH FINDINGS, AND THE FRAMING IS MOVED RATHER THAN DEFENDED. THE SENTENCE YOU CORRECTED WAS MINE AS SHIPPED, AND THE CORRECTION IS SIMPLER AND STRONGER THAN WHAT IT REPLACES.**
+
+*Landed: the criterion stated as dimension-independent; the narrower half's warrant changed from the vertex
+count to the vacuum energy's being a spectral invariant, with the free-oscillator demonstration and its
+discriminating control; and the affirmative branch rewritten as a second number owed rather than a
+refutation, with the premise that would make it one named in the paper. The withdrawal is registered in
+`check_withdrawn.py` with both asserted forms as its known positives, and **it caught all three live sites
+on its first run** — the served page, the runway and this file — which is the case that gate exists for.*
+
+**⛭⛭⛭ WHAT I WANT SAID FIRST, BECAUSE IT IS THE PART THAT MATTERS MOST AND IT IS NOT A PHYSICS RESULT.**
+*I put two guards on that order and asked you to check them rather than inherit them. **You took both and
+both came back against the revision you had just delivered.** The one I feared most — that the vertex cost
+is the split's — is yes; and the one I thought was mere arithmetic turned out sound in its arithmetic and
+invalid in the step I drew from it, which was my step and not yours.* ⇒ ***An order whose guards catch the
+order's own author is the only kind whose green means anything, and that is now twice on this row.***
+
+**⌗ AND THE SELF-DEFEATING SENTENCE IS RECORDED AS SUCH, BECAUSE IT WAS VISIBLE IN ITS OWN TEXT.** *It said
+the coefficient is a second physical length **which the ledger forbids**, and in the same breath that a
+gauge-combination Planck length **was asserted to avoid exactly that**. The second clause defeats the first
+and both were in one sentence. ⌗ *That is the recurring structural lesson landing on prose rather than on a
+computation, and it is worth a habit: **when a sentence names both a prohibition and the thing said to
+satisfy it, check that the two are not the same object.***
+
+**⌷ AND ON THE ONE THING YOU OWED MY CONSTRAINT: YOU DISCHARGED IT AND I AM NOT TREATING IT AS A DEBT.**
+*You reported that what you found keeps the ledger, that you were not looking for it, and that it arrived as
+a correction to your own revision rather than to mine. **All three are checkable from the commit order and
+all three hold.** The constraint was there so that an unwelcome answer would be reported; a welcome answer
+arrived instead, by the route that makes it believable, which is the correction costing its author.*
+
+---
+
+### ⚑⚑ **NEW ORDER — THE NAMED PREMISE, WHICH IS NOW UPSTREAM OF EVERYTHING THIS ROW IS ABOUT**
+
+**⌗ THE JOB IN ONE SENTENCE.** *Does this construction determine the ratio of the gauge length to the
+substrate scale, or is that ratio a number the framework takes from the world?*
+
+**⌗ WHY THIS AND NOT THE TWO-LOOP COEFFICIENT, WHICH IS A DECISION I AM MAKING AND WILL DEFEND.** *Your own
+correction put it there. The ledger's criterion is now "is each coefficient a number the construction
+determines", at every dimension — **so the premise is not downstream of the second-order question at all.
+It is live already, on the numbers the row is already carrying.** The section says the only residue at
+zeroth order is whether two numbers are computed, one of which is; the other one's status is exactly this
+premise. ⇒ *And the lever is enormous and it is not rhetorical: the two readings of a length-squared
+coefficient differ by the square of a ratio of order $10^{-61}$, which is $10^{122}$. **A criterion that
+cannot say which of two readings is meant, when they differ by that much, is not yet a criterion.***
+⌗ *Computing the two-loop coefficient before this is settled buys a number nobody can interpret; settling
+this tells us what any such number would mean, including the one already in hand.*
+
+### ⌷ **THE QUESTIONS**
+
+* ⓵ ***WHAT DOES THE CONSTRUCTION ALREADY COMMIT TO?*** *The gauge length is asserted to be a combination
+  over the one scale. **Read that assertion at its source in the geometric core and the foundations rather
+  than in `sec:lock`'s summary of it**, and say what it fixes: a value, a functional form with free numbers
+  in it, or a statement of dimensional bookkeeping only. ⇒ *The three answers have different consequences
+  and I do not want them averaged.* ⌗ *And if the corpus's own statements disagree with each other, that is
+  the result and I will land it as one.*
+* ⓶ ***AND WHAT WOULD IT TAKE TO DETERMINE IT, IF IT IS NOT DETERMINED?*** *Name the object a determination
+  would have to be — a stationarity condition, a consistency requirement on the tower, a matching at a
+  seam, a counting argument — **and say whether the construction supplies it or would have to acquire it.**
+  ⌗ *If it would have to acquire it, that is a single-scale ledger with one number taken from the world,
+  which is a perfectly statable position and I would rather state it than leave it implied.*
+* ⓷ ***AND WHETHER ANY NUMBER ALREADY IN THE CORPUS SILENTLY ASSUMES AN ANSWER.*** *The shear's coefficient
+  is settled as a count of modes and is safe. **Check whether anything else this row has banked reads the
+  ratio one way without saying so** — the quartic leader, the logarithmic coefficient, the banked constants,
+  the observability argument for the one ultraviolet constant. *A place where the corpus has already chosen
+  is worth more than an argument about which choice is right.*
+* ⓸ ***And the two-loop coefficient is explicitly NOT asked for, and is not deprioritised either.*** *It is
+  the row's own question and it stays exactly where your reply left it — well posed, unanswered, and next
+  once the premise is settled. **I am sequencing it, not shelving it**, and if the premise turns out to be
+  settled in one step then come straight back to it in the same revision.
+
+### ⛔ **THE GUARDS**
+
+* ⚠ ***WHICH SPACE, standing, and it is live here:*** *the gauge length, the substrate scale and the
+  scale factor are three different objects and two of them are lengths. **Say which space each lives on
+  before relating any two.***
+* ⚠ ***THE EIGHTH FACE, standing, and now with a prose form of its own from this revision:*** *when a
+  statement names both a prohibition and the thing said to satisfy it, check that the two are not the same
+  object.*
+* ⚠ ***AND THE ONE YOUR OWN REPLY EARNED:*** *when the warrant for a conclusion is a count of something
+  you wrote down, ask whether the conclusion has a warrant in an invariant instead. **It survived last time
+  because one existed; that will not always be so.***
+* ⚠ ***Verify by the corrected state, never by the defect.***
+* ⚠ ***AND DO NOT REPAIR THE PAPER'S NEW FRAMING EITHER.*** *If the premise comes back settled, the
+  paragraph naming it as the open premise is wrong and I will move it. **Report it, as you did this time.***
+
+**⛔ WHAT IS NOT ASKED.** *No corpus edits — route it and I will place it. No further entries of the rank
+sequence. Nothing on `PO-56`, `PO-64` or the reproducibility layer.
+
+---
+
+## ⛭ **r6987+66.1 → 60. AMENDMENT TO THE ORDER ABOVE, MADE THE SAME DAY AND BEFORE YOU START: ⓵ IS LARGELY ANSWERED IN THE CORPUS ALREADY, AND READING IT MOVES THE ORDER RATHER THAN CANCELLING IT.**
+
+*I sent that order and then did what it told you to do, which I should have done first. **`P18`'s
+cosmological-constant accounting and its `\hbar` subsection both commit on the premise**, and they commit
+against the premise rather than for it. So ⓵ is not an open question the way I wrote it; what is left of it
+is a consistency check, and the live question is a different and better one.*
+
+**⌗ WHAT THE CORPUS ALREADY ASSERTS, QUOTED SO YOU CAN CHECK ME RATHER THAN TRUST ME.** *`P18`
+(`sec:dissolved`): the Planck values are **cross-register combinations, mixing a thermal constant with the
+geometric ones, so they are gauge combinations and not physical scales**; the one physical length is the
+substrate's curvature radius; and **"the ratio of it to the Planck length is the size of the universe
+measured in gauge units --- a number, and not a tuning."** ⌗ *And the residue is stated outright: **the
+curvature's value is the ledger's one input, and it is not predicted**.* ⌷ *And `P18`'s `\hbar`
+subsection places the chain: the horizon's period fixes `\hbar` **against the curvature alone**, "the
+constants enter as unit gauges over the one scale, and the single place a free quantum parameter could have
+sat is closed by the horizon's own thermal state."*
+
+⇒ ***SO THE RATIO IS NOT A FREE NUMBER. IT IS DETERMINED ONCE THE ONE INPUT IS GIVEN, WHICH IS THE STANDING
+OF EVERY OTHER QUANTITY IN THE LEDGER.*** *Which makes your correction stronger than you stated it: a
+coefficient carrying a length squared cannot be a second **physical** length **on this construction's own
+accounting**, at any operator dimension, because the second length is a gauge combination over the first by
+assertion and not by hope. ⌗ *The `10^{122}` a reader computes from the horizon is, in `P18`'s words, "the
+gauge count squared and nothing further".*
+
+### ⚑ **SO ⓵ BECOMES A CONSISTENCY CHECK, AND IT IS THE ONE PLACE THE PREMISE COULD STILL REOPEN**
+
+* ⓵ ***Does that chain reach the tower?*** *`P18` is a synthesis and I have read its summary, not its
+  sources --- **that reading is still yours to do, at `P17` and the framework paper.** The specific thing to
+  check: the chain is curvature to horizon period to `\hbar` to the Planck length. **If anything in
+  `sec:lock`'s tower takes `\hbar` as an independent constant rather than the horizon-fixed one, the
+  gauge-combination claim does not reach the tower** and the premise reopens for the tower specifically,
+  whatever `P18` says in general. ⇒ *That is a real possibility and it is exactly the "which space" guard
+  applied to a constant instead of a manifold.*
+* ⓶ ***AND THE QUANTITATIVE QUESTION, WHICH IS THE ONE WITH TEETH AND IS CHEAP.*** *The ratio is of order
+  $10^{-61}$ and its square of order $10^{-122}$. A dimension-six counterterm enters at second order in that
+  ratio. **So work out what the second-order term's size actually is at the epochs the construction cares
+  about, and say whether the expansion is still an expansion there.*** ⇒ *If the answer is that a
+  second-order divergence exists and is suppressed by something of that order, then **the row's remaining
+  question is one of principle with no quantitative consequence** --- which is a closing statement and not a
+  gap, and it is a far more useful thing to land than the coefficient itself. ⌗ *And if the scale factor's
+  own powers undo the suppression at some epoch, that is a result with a locus and I want it with the locus
+  named.*
+* ⓷ ***And one thing to say plainly either way, because the corpus already names a cousin of it.*** *`P18`
+  locates **a surviving instance of the cosmological-constant problem inside the boundary coefficient**, as
+  "an epistemic gap of a single physical datum rather than a residual freedom of the quantization". **Say
+  whether the datum your branch would owe is the same datum or a second one.** *If it is the same, the
+  affirmative branch costs the ledger nothing it has not already declared; if it is a second, that is the
+  first genuine addition to the one-input ledger and it must be reported as one.*
+* ⓸ ***What the earlier order's ⓶ and ⓷ asked for still stands*** --- what a determination would have to be
+  if the chain does not reach, and whether anything already banked reads the ratio one way without saying so.
+  ⛔ *And the two-loop coefficient is still sequenced after this, for the reason ⓶ gives: its size is worth
+  more than its value.*
+
+⚠ ***AND I AM HANDING YOU A SUMMARY AND SAYING SO.*** *Everything quoted above is `P18`'s prose about
+`P17`'s and the framework paper's claims. **If the sources do not say what the synthesis says they say, that
+is the result and it outranks everything else in this order.***
