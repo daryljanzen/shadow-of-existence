@@ -361,3 +361,28 @@ grid reading there is a coin flip — the paper quotes $820$, this locator picks
 $815.40$ and the fine grid's own maximum is at $815$.*
 
 Launchers: `../r6941_directions/`.
+
+## `r6959_*` — the source's conformal-time dependence across the window, and three wirings of the swap
+
+*`r6959`'s order: ⓵ᵃ measure the source's $\eta$-dependence across the visibility on both arms as a
+**function**; ⓵ᵇ impose one arm's normalisation on the other and check the contrast moves by the amount
+the measurement predicted **in advance**; ⓵ᶜ say first what would refute it. Receipt
+`P15_the_windows_phase_spread_is_nearly_equal_because_the_visibility_widens_as_the_leaf_clock_slows.py`;
+the prediction and the six refutation conditions are in `r6959_directions/PREDICTION.md`, committed
+before any swap ran.*
+
+| bank | what it is |
+|---|---|
+| `r6959_eta_lcdm.npz`, `r6959_eta_cr.npz` | ⓵ᵃ. The instrument's own `SRCETA` output, unaltered: the source's weight $w(\eta,\text{band}) = \sum_{k\in\text{band}} P(k)S(\eta,k)^2$ for the whole source, for the monopole-plus-Doppler combination and for **each of the four terms separately**, with the phase abscissa $r_{s,\rm leaf}(\eta)$, the visibility, $e^{-\tau}$ and `Jac`. `LSTEP=8 LMAXL=2000` — the profile is a property of the **source**, so the k-grid is `r6941_fine_*`'s and the kernel work is an eighth of it. Unsliced. |
+| `r6959_swap_lcdm.npz`, `r6959_big_lcdm.npz` | ⓵ᵇ, wiring two: the control tapered in $r_{s,\rm leaf}$ with the **ISW left alone**, at the coefficient matching the arm's spread and at the coefficient that would deliver the observed excess under the analytic model. `LSTEP=1 LMAXL=2000`, `r6941_fine_*`'s own grid. |
+| `r6959_nswap_lcdm.npz`, `r6959_nbig_lcdm.npz` | ⓵ᵇ, wiring three (`SRCTAPERNORM=1`): the same two coefficients with the window's **total weight held fixed**, so only its spread moves. ⌗ *These are the ones the report reads, and they land on wiring two to parts in ten thousand.* |
+| `r6959_swapall_lcdm.npz`, `r6959_bigall_lcdm.npz` | ⓵ᵇ, wiring one (`SRCTAPERALL=1`): the taper on the **whole** source, which is what went out first. ⛔ *Not the operation the hypothesis names — a Gaussian in $r_{s,\rm leaf}$ over the whole $\eta$ grid also cuts the ISW's own $\eta$-integral to $0.656$ and $0.238$ of itself, moving $\ell_1$ by $7.7$ and $27.3$ multipoles. **Kept and read, because it is how the ISW's share of the low-$q$ contrast is measured**, and because a knob whose first wiring was wrong should leave the wrong version banked rather than deleted.* |
+
+⛭ **What the set establishes.** The arm's window is $1.5$ per cent narrower than the control's in the
+phase variable, and only that much because its visibility is $14.6$ per cent wider in conformal time
+while its phase accumulates $13.7$ per cent slower per unit of it — *the two-rate structure reaches the
+window and nearly cancels inside it*. Through the instrument's own two-coefficient response the arm's
+narrowing delivers **$23$ to $45$ per cent of the band contrast excess above $q=1.9$**, and the direct
+swap closes $20$ to $39$ per cent there. ⛔ *But the channel is peak-weighted — $81$ per cent of the
+arm's peak-height excess against $14$ per cent of its trough-depth excess — where `cc66.46` measured the
+excess symmetric, so it cannot be the whole of it whatever its size.*
