@@ -1082,6 +1082,19 @@ _SRCTS0 = os.environ.get('SRCTAPERS0')
 #     round-off of order eps that the all-terms form does not.  `SRCTAPER=0` takes neither branch, so
 #     the default is byte-identical either way.*
 _SRCTALL = os.environ.get('SRCTAPERALL', '0') == '1'
+# ⛔⛭⛭ ** SRCTAPERNORM: AND THE SECOND THING THE TAPER DOES THAT THE HYPOTHESIS DOES NOT NAME. **
+# *A taper bounded by 1 narrows the window's spread AND reduces the window's total weight, and the
+# contrast statistic is invariant under an overall scale but NOT under a change in the ratio of two
+# ADDITIVE components -- so the visibility-carried source shrinking against the ISW moves the contrast
+# by itself.*  ** Measured on the ISW-preserving pair: the run moved the contrast 2 to 4 times further
+# than the pure-smearing prediction, and this is why. **
+#   ⇒ `SRCTAPERNORM=1` divides the taper by its own VISIBILITY-WEIGHTED mean over the window,
+#     int g tau deta / int g deta, so the window's total weight is preserved and only its SPREAD moves.
+#     *That is the operation the hypothesis names and the one the prediction is a prediction of.*
+#   ⌗ The normalisation is a constant in eta, so it changes no shape: it is the one factor the contrast
+#     statistic is provably blind to when the source has a single component, and the whole point is that
+#     this source does not.
+_SRCTNRM = os.environ.get('SRCTAPERNORM', '0') == '1'
 # the per-batch source accumulator; `hier_run` concatenates it over the k-batches, which is exact
 # because every entry is indexed by k alone -- the eta axis is integrated or sliced out here.
 _SRCB = []
@@ -1499,7 +1512,7 @@ def hier_run(kk, EE, L_A_, D_M_, R_S_):
                     for _q in ('w2', 'w2md', 'w2sw', 'w2dp', 'w2isw', 'w2pol')},
                  arm=ARM, r_s=R_S, D_M=D_M, l_A=L_A, ns=NS, eta_ls=ETA_LS, eta_ls_w=ETA_LS_W,
                  leafscales=int(bool(LEAFSCALES)), taper=_SRCT,
-                 taper_all=int(bool(_SRCTALL)), n_eta=len(EE),
+                 taper_all=int(bool(_SRCTALL)), taper_norm=int(bool(_SRCTNRM)), n_eta=len(EE),
                  path='HIER', sliced=bool(_ksl), n_modes=len(kk))
         # ** the header reports the AMPLITUDE-weighted spread of the phase variable over +-3 FWHM of
         # the visibility, on the monopole-plus-Doppler part, because that is the combination the
@@ -1608,6 +1621,9 @@ def _project(kb, ee, Y, ls, x0, e_sw):
     if _SRCT != 0.0:
         _s0 = float(_SRCTS0) if _SRCTS0 else float(rs_leaf_of(ETA_LS))
         _tp = np.exp(-_SRCT * (np.asarray(rs_leaf_of(ee), float) - _s0) ** 2)[:, None]
+        if _SRCTNRM:
+            _gv = np.asarray(vis_of(ee), float)
+            _tp = _tp / (float(np.trapezoid(_gv * _tp[:, 0], ee)) / float(np.trapezoid(_gv, ee)))
         if _SRCTALL:
             S = S * _tp
         else:
