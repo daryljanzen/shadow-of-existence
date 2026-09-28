@@ -58,6 +58,7 @@ Usage:
     python3 scripts/red_carry.py --show                              # print the ledger
     python3 scripts/red_carry.py --replay N                          # PO-65 ⓶: what carrying costs
     python3 scripts/red_carry.py --seed                              # PO-65 ⓷: both ways, on a real remote
+    python3 scripts/red_carry.py --silenced FILE --work DIR          # PO-65 ⓶: the reds of the record, silenced
 """
 import argparse
 import datetime
@@ -332,6 +333,89 @@ def replay(root, n, index=None):
     return rows
 
 
+def silenced(root, n, cands, work, index=None, timeout=600):
+    """PO-65 ⓶, on the RECORD: for each receipt known to have gone red in this history, run it at every
+    push that can change it -- its class's natural scope -- and so recover when it was red.  Between two
+    such pushes nothing it reads moved, so its state is constant (the index's claim, which is checked
+    below rather than assumed).  A push inside a red stretch that is NOT in the receipt's scope is a push
+    whose scoped job said nothing about it: the red was SILENT there, and the carry is what would have
+    run it.  `stride` > 1 runs every stride-th scope push and bisects where the state changes (a red that
+    rose and fell inside one stride is missed, and is said to be)."""
+    rs = _mod('receipt_scope')
+    idx, traced, _, _ = rs.load(root, index)
+    shas = rs.git(root, 'rev-list', '--first-parent', f'-{n}', 'origin/main').split()[::-1]
+    diffs = [rs.diff(root, f'{s}^1..{s}') for s in shas]
+    if not os.path.isdir(work):
+        git(root, 'worktree', 'add', '-q', '--detach', work, shas[0], check=True)
+    tol = os.path.join(HERE, 'sweep_tolerances.py')
+    out = {}
+
+    def state(which, rec, i):
+        git(work, 'checkout', '-q', '--force', shas[i], check=True)
+        if not os.path.exists(os.path.join(work, rec)):
+            return 'absent'
+        if which == 'suite':
+            try:
+                r = subprocess.run([sys.executable, os.path.basename(rec)], cwd=os.path.dirname(os.path.join(work, rec)),
+                                   capture_output=True, text=True, timeout=timeout)
+            except subprocess.TimeoutExpired:
+                return 'slow'
+            return 'green' if r.returncode == 0 else 'red'
+        d = tempfile.mkdtemp(prefix='sil_')
+        try:
+            lst = os.path.join(d, 'l')
+            open(lst, 'w').write(rec + '\n')
+            for tag, extra in (('A', []), ('B', ['--threads', '4']), ('C', ['--threads', '2', '--coretype', 'Prescott'])):
+                subprocess.run([sys.executable, tol, '--root', work, '--probe', os.path.join(d, tag), '--from', lst,
+                                *extra], capture_output=True, text=True)
+            red = reds_tolerance([os.path.join(d, t) for t in 'ABC'], work, [rec])
+            return 'red' if red else 'green'
+        finally:
+            shutil.rmtree(d, ignore_errors=True)
+
+    for which, rec, stride in cands:
+        pts = [0] + [i for i in range(1, len(shas)) if rec in rs.scope(idx, *diffs[i], which)]
+        seen = {}
+        probe = sorted(set(pts[::stride]) | {pts[-1]})
+        for i in probe:
+            seen[i] = state(which, rec, i)
+        # bisect between evaluated scope points whose states differ
+        todo = True
+        while todo:
+            todo = False
+            ev = sorted(seen)
+            for a, b in zip(ev, ev[1:]):
+                if seen[a] != seen[b]:
+                    mid = [p for p in pts if a < p < b]
+                    if mid:
+                        m = mid[len(mid) // 2]
+                        seen[m] = state(which, rec, m)
+                        todo = True
+                        break
+        # the state at every push, constant between scope points
+        ev, st, cur = sorted(seen), [], None
+        for i in range(len(shas)):
+            if i in seen:
+                cur = seen[i]
+            st.append(cur)
+        scoped = set(pts[1:])
+        red_pushes = [i for i in range(len(shas)) if st[i] == 'red']
+        silent = [i for i in red_pushes if i not in scoped]
+        births = [i for i in range(1, len(shas)) if st[i] == 'red' and st[i - 1] != 'red']
+        # CHECK THE CONSTANCY CLAIM: a few pushes NOT in scope, run, must match the stretch they sit in
+        rnd = [i for i in range(1, len(shas)) if i not in scoped and i not in seen]
+        spot = rnd[::max(1, len(rnd) // 4)][:4]
+        mism = [(shas[i][:8], st[i], s_) for i in spot for s_ in [state(which, rec, i)] if s_ != st[i]]
+        out[rec] = dict(which=which, runs=len(seen), scope=len(pts) - 1, red=len(red_pushes), silent=len(silent),
+                        births=[shas[i][:8] for i in births], mism=mism,
+                        cost=len(silent) * (idx.get(rec, {}).get('s') or 0) * (3 if which == 'tolerance' else 1))
+        o = out[rec]
+        print(f'  {which:9} {os.path.basename(rec)[:64]:64}  scope {o["scope"]:3}  ran {o["runs"]:3}  '
+              f'red on {o["red"]:3} pushes, SILENT on {o["silent"]:3}  births {o["births"]}  '
+              f'carry {o["cost"]:,.0f}s  spot-check mismatches {mism or 0}', flush=True)
+    return out
+
+
 # ------------------------------------------------------------------------------------ PO-65 ⓷: seed
 def seed():
     """Both ways, on a real bare remote, through the same two functions CI calls.  A fake runner reads
@@ -442,11 +526,18 @@ def main():
     ap.add_argument('--replay', type=int, metavar='N')
     ap.add_argument('--index')
     ap.add_argument('--seed', action='store_true')
+    ap.add_argument('--silenced', metavar='FILE', help='lines of: CLASS RECEIPT [STRIDE]')
+    ap.add_argument('--work', help='with --silenced: a scratch worktree path')
     a = ap.parse_args()
     root = os.path.abspath(a.root)
     if a.seed:
         print('\n  red_carry --seed: is a red carried until a run covers it and passes, and only then cleared?\n')
         return seed()
+    if a.silenced:
+        c = [(l.split()[0], l.split()[1], int(l.split()[2]) if len(l.split()) > 2 else 1)
+             for l in open(a.silenced) if l.strip() and not l.startswith('#')]
+        silenced(root, a.replay or 400, c, os.path.abspath(a.work or os.path.join(tempfile.gettempdir(), 'po65_silenced')), a.index)
+        return 0
     if a.replay:
         replay(root, a.replay, a.index)
         return 0
