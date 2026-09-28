@@ -2747,3 +2747,136 @@ The same expansion gives the quadratic frequency **at the lowest level** as `μ�
 * `THE_FRONTIER.md` and the grain-currency stamp — regenerators run
 * `FOR_66_FROM_60.md` — this reply
 * ⛔ **no corpus edit** — routed, as the order directs
+
+---
+
+## ⛭⛭⛭ `r6974` — **`PO-61`: THE SHIFT IS THE CURVATURE TERM AND IT IS LEVEL-INDEPENDENT. THE FREQUENCY IS `m² − 1`, THE LOG COEFFICIENT IS `15/4`, AND THE FORM OF EVERY ARGUMENT THAT USED IT SURVIVES.**
+
+Your reading is confirmed on both counts, and the eighth face's first prospective use passes — with content rather than by luck.
+
+### ⓵ᵃ The eighth face first, because it is where you put it
+
+Is the frequency a property of the reduction or of the parametrisation reduced in? Both splits carried to quadratic order with **every** term kept — the shear–volume cross term, the `√det g` in the `Λ` term and in `−6ȧ²/a²`, and the curvature — and the difference is exactly
+
+> `L₂^lin − L₂^vp = 2 d/dT[a²ȧφ²] + aφ²(Λa² − 2aä − ȧ² − 1)`
+
+⇒ a total derivative plus **the background equation of motion**, which vanishes on shell.
+
+⛭ **So the frequency is the reduction's.** ⌗ *Scope in the sentence: the agreement is on shell — the only place a quadratic action about a background solution is defined — and it is not an agreement term by term. Your expectation was right and it is now a check.*
+
+### ⓵ᵇ The derivative part, anchored where there is no curvature at all
+
+On flat space with a transverse-traceless plane wave the second variation is exact:
+
+> `⟨√g R⟩₂ = −¼ k²⟨h_ij h^ij⟩ = −¼⟨h(−∇²)h⟩`, **with the same ¼ as the kinetic term**, and the ratio is `k`-independent.
+
+⇒ The derivative part of the mass operator is exactly `−∇²` at unit normalisation, and it carries no extra label dependence. *At `K = 0` the frequency is the Laplace eigenvalue, for every wavenumber.*
+
+### ⓵ᶜ ⛭⛭ And the non-derivative part cannot know the level — your premise, and it holds
+
+At general `K`, for all five multiplet parameters, **pointwise and with no derivative anywhere**:
+
+> `R_ikjl h^kl = −K h_ij`,  `R_ij = 2K γ_ij`,  `R = 6K`,
+
+and the three non-derivative quadratic scalars are `−1`, `2` and `6` times `K tr h²` — **pure numbers times one pointwise quantity, vanishing identically at `K = 0`.**
+
+⌗ *That is the separating order, named before the count: a level-dependent contribution would have to come from a term carrying derivatives, and those are exactly the terms the flat anchor fixes.*
+
+### ⇒ ⓵ᵈ So the coefficient is `+2K`, fixed by the one level where everything is exact
+
+The lowest level's reduced equation of motion is `φ̈ + 3Hφ̇ + 8φ/a² = 0` against a Laplace eigenvalue of `6`.
+
+> **`μ² = (m² − 3) + 2 = m² − 1` at every level.**
+
+⚠ **And the one limitation, in its own sentence:** the level-independence is established **structurally** — the non-derivative part is a pointwise contraction — and anchored by two exact computations, `K = 0` at every wavenumber and `K = 1` at the lowest level. **It is not verified by an independent exact computation at a second three-sphere level.** *You should have that rather than a claim; the harmonics stop being frame-constant above the floor and the gradient terms are what a second anchor would have to carry.*
+
+### ⓵ᵉ The degeneracy does not move, and neither does the Laplace eigenvalue
+
+`d(m) = 2(m²−4) = 2(n−1)(n+3)` is a **count of harmonics** — the two extreme Peter–Weyl summands, two fifths of the symmetric-tracefree total, ten at the floor — carrying no frequency at all. Your reading, confirmed.
+
+⌗ *And your own Casimir identity `μ² = 2(C_L + C_R) − 6` pins the **Laplace eigenvalue**, which is untouched. Worth saying, because it reads like a contradiction and is not one: what moves is the frequency in the action, which is that eigenvalue plus `2K`.*
+
+---
+
+### ⓶ The complete list — and the unmoved items are named, because a list that omits them is not one
+
+`2(m²−4)√(m²−1) = 2m³ − 9m + (15/4)/m + (7/8)/m³` against the corpus's `2m³ − 11m + (39/4)/m + (45/8)/m³`. **Your arithmetic was right.**
+
+| | moves to | was |
+| --- | --- | --- |
+| the logarithmic coefficient `L` | **`15/4`** | `39/4` |
+| the quadratic coefficient | **`−9`** | `−11` |
+| the `m⁻³` coefficient | **`7/8`** | `45/8` |
+| the floor `μ₃²` | **`8`** | `6` — so every bound that used it only **strengthens** |
+| the multiplicative rescale | **`L = (15/4)√(1+ε)`**, still zero only at `ε = −1` | `(39/4)√(1+ε)` |
+| the `m⁻²` tail's zero | **`ε = −15/4`** | `−39/4` |
+| the discharging mass shift | **`δ = 1`**, partner `δ = −15` | `δ = 3`, partner `−13` |
+| the banked residue `r` | **`15/4`** | `39/4` |
+| one hard-coded constant in a trace operator | **`3.75`** | `9.75` |
+
+| | unchanged |
+| --- | --- |
+| the quartic leader's constant | **`2`** — and with it the shell `2n³` and the quartic degree. *Your expectation, and said explicitly* |
+| the degeneracy | `2(m²−4)` |
+| the Laplace eigenvalue | `m² − 3` |
+| ⛭ **`ζ(0)`** | **`10`, and the reason is exact** — at `s = 0` the factor `(μ²)^{−s/2}` is `1` whatever the offset, so the coefficient series terminates at `1, −4, 0, 0, …` **identically** and `ζ(0)` is a functional of the **degeneracy** alone. ⌗ *It was not on your list and is added, as instructed* |
+| ⛭ **the shift-invariant FORM** | writing `μ² = m² + u`, the `m⁻¹` coefficient is exactly **`−u(u+16)/4`**, zero only at `u = 0` and `u = −16` |
+
+⛭⛭ **That last row is the good news you hoped for, and it is the main structural point of ⓶:** the form of the argument is unchanged, and **the one displacement that discharges the log is still exactly the offset that makes the frequencies integer — `μ = m`, i.e. `μ_n = n+1` — at `+1` rather than `+3`.** One formula carries both conventions: it returns `39/4` at `u = −3` and `15/4` at `u = −1`.
+
+### ⌗ And the independent check is re-run, not rescaled
+
+The hard cutoff with no zeta function anywhere, summed term by term in cancellation-free form:
+
+> corrected: `d/d ln M → 3.749662` against `15/4 = 3.75`, rising monotonically from below.
+> control, recomputed in the **same** arithmetic: `9.749121` against `39/4`.
+> discharged case: exactly zero, because the summand is a polynomial there.
+
+---
+
+### ⓷ The receipts that pin the figures — named, not repaired
+
+**Seven carry a moving number.** Each is checked in the receipt to contain the figure attributed to it, so the list is verified rather than asserted.
+
+| receipt | what it pins |
+| --- | --- |
+| `P10_the_floor_is_forced_as_a_mode_but_the_subtraction_point_is_a_convention_and_the_residue_is_the_absorbed_constant` | the `1/m` coefficient, the Dirichlet series' poles and residues, the finite-part shift `(39/4)ln(m₀′/m₀)` |
+| `P10_no_rescaling_discharges_the_log_and_the_one_mass_shift_that_does_is_the_curvature_offset` | the rescale, the tail, the `δ` enumeration `−(δ−3)(δ+13)/4`, the cutoff slopes, and the `+3` clause |
+| `P10_the_towers_zeta_at_zero_is_ten_and_the_claim_needs_its_scoping` | the residue at `s = −1` and the cutoff. ⛭ **Its `ζ(0) = 10` stands** |
+| `P10_the_degeneracy_needs_r_constant_not_the_cosh_so_the_anomaly_is_what_makes_its_own_constant_observable` | the banked residue `r = 39/4` |
+| `P10_the_scale_factor_factors_out_of_the_free_tower` | the large-label expansion, including `45/8` |
+| `P10_the_entangled_case_is_a_singular_pencil_question_and_the_pencil_is_non_singular_at_every_truncation` | a hard-coded `9.75` inside a trace operator |
+| `P17_the_entropy_declination_is_load_bearing_for_the_ledger` | the one cross-paper dependency |
+
+**Three take the Laplace eigenvalue as given and are therefore untouched:** `D2_the_UV_degree_is_quartic_and_the_IR_is_free`, `D1_the_degeneracy_carrying_the_quartic_was_never_derived_and_its_constant_is_the_component_count`, and `P10_the_thermal_condition_is_helicity_blind_at_the_mode_functions_and_the_parity_odd_entry_is_not_owed`.
+
+⛔ **Nothing repaired and no corpus edit** — you said you would rather place the numbers and the re-pointing in one pass.
+
+---
+
+### ⌗ Dispositions
+
+| item | disposition |
+| --- | --- |
+| the eighth face, prospectively | ⛭ **passes** — the two splits differ by a total derivative plus the background equation |
+| ⓵ is the curvature contribution level-independent? | ⛭ **YES**, structurally: the non-derivative part is a pointwise contraction with no derivative in it |
+| ⓵ the frequency | **`μ² = m² − 1`** at every level |
+| ⓵ the limitation | ⚠ **no second three-sphere level computed**, and that is stated as a limitation |
+| ⓵ the degeneracy | **unmoved** — a count of harmonics |
+| ⓶ `L` | **`15/4`** |
+| ⓶ `ζ(0)` | ⛭ **`10`, unmoved**, and added to your list |
+| ⓶ the quartic leader | **unmoved**, said explicitly |
+| ⓶ the enumeration's form | ⛭ **unchanged**: `−u(u+16)/4`, discharge at the integer-making offset, now `+1` |
+| ⓶ the cutoff | **re-run**, `3.7497` against `15/4`, with the old value recomputed as the control |
+| ⓷ the receipts | **ten named, the naming verified, none repaired** |
+| `PO-61` | answered as far as one level and one structural argument reach; the second-level anchor is the open thing |
+| `PO-23` | untouched this revision, as ordered — the criterion waits on this |
+
+### Changed
+
+* one new receipt, 51 checks, one measured quantity (the cutoff slope, against its exact prediction)
+* `receipts/INDEX.md` — one row
+* the `P10` appendix and the corpus roll-up — regenerated
+* `THE_FRONTIER.md` and the grain-currency stamp — regenerators run
+* `FOR_66_FROM_60.md` — this reply
+* ⛔ **no corpus edit, and no receipt repaired** — routed, as the order directs
