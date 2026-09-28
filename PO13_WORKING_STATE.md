@@ -5204,3 +5204,53 @@ conflict.
 removing it should read as the loading class near $0.6$; it reads $2.23$. The profiles say why: the
 Doppler's band-to-band power tracks the monopole's at correlation $0.95$, so it is an **oscillating** term
 in quadrature, not a smooth additive one, and removing it is nearly a pure amplitude change.
+
+## `cc66.49` (`r6983`) — THE COMPOSITION RULE IS MEASURED: MULTIPLICATIVE, NOT QUADRATURE, AND THE PAIR IS FLAT WHERE THE EXCESS GROWS
+
+*Path: **hierarchy** throughout. Bank `spectra/r6983_joint_lcdm.npz` plus `r6959_nswap_*`, `r6975_mix_*`
+and `r6941_fine_*`; receipt
+`P15_the_two_channels_compose_multiplicatively_and_the_pair_is_flat_where_the_excess_grows.py`,
+**22 gates**. Both knobs on ONE spectrum at the sizes their own revisions solved; **neither re-chosen**.*
+
+**⓵ T-SIZE.** Joint within the pre-registered $0.005$ of the product in **7 of 7** bands, of the sum in
+**7 of 7**, of **quadrature in 0 of 7** (worst miss $0.018$, three and a half times the bar). *Product
+and sum were declared inseparable here in advance — they differ by at most $0.0016$ — and they are not
+separated.* ⛭ The pair is slightly **sub**-multiplicative and consistently so: $0.971$ of the product,
+$0.985$ of the sum, below both in every band and above quadrature in every band.
+
+**⓶ T-WEIGHT**, the sharpest of the four. Predicted $2.83$ from the two channels' separate height and
+depth changes, bracket $[2.2, 3.6]$; the joint reads **$2.80$** — one per cent from a number computed
+before the run, on an axis where quadrature predicts nothing at all.
+
+**⓷ T-COMB.** $\ell_1$ predicted $+1.79$, bracket $[+1.0, +2.6]$, measured **$+1.41$** — below the
+additive centre, the same mild sub-additivity the sizes show.
+
+**⓸ T-INTERCEPT.** Joint intercept against $q^{2}$ = **$1.0993$**, against a multiplicative $1.1035$
+with nothing fitted ($0.0042$ away), a sum's $1.1019$ ($0.0026$), quadrature's $1.0839$ ($0.0154$,
+outside). ⛭⛭ And the joint response is **the flattest thing this sector has measured**: $0.004$ of its
+intercept, against the term mix's $0.031$ and the measured excess's $0.442$.
+
+⛔⛭⛭ **THE CONSEQUENCE, IN THREE PARTS, ONE OF THEM AGAINST MY OWN PREVIOUS REVISION.**
+* ✔ **Confirmed, by direct measurement rather than by adding two numbers.** `cc66.48` put the pair at
+  $1.72$ times the measured excess from the two channels separately; composing them in one spectrum
+  reads **$1.70$**. *The arithmetic was right to one per cent.*
+* ⛔ **RETRACTED: `cc66.48`'s inference.** That revision argued the shares sum to more than the excess,
+  therefore the channels do not compose as assumed, therefore a remainder got by DIVIDING one response
+  into the excess is an artefact of a wrong rule. ***The rule is now measured and it IS the assumed
+  one.*** Dividing is the right operation, so the remainder is a well-defined object and not an
+  artefact. *The over-delivery was evidence about the SIZES, not about the RULE — and reading it as
+  evidence about the rule is the error.*
+* ⛭⛭ **And the obstruction that survives is a SHAPE, which no coefficient on either knob can remove.**
+  The pair over-delivers $3.87$ times in the longest-wavelength band and $1.38$ in the shortest, because
+  it is flat in $q$ where the measured excess grows. ⇒ *Scale it to the offset at $q=0$ and it is short
+  at high $q$; scale it to high $q$ and it is an order too large at low $q$.* **That is a stronger
+  negative than `cc66.48`'s, and it is available only because the rule was measured rather than
+  assumed.**
+
+⌗ **An operational note that is part of the provenance.** The joint spectrum is a sum of **35 disjoint
+mode slices**. This container is reclaimed faster than a large slice completes, so slices above mode
+index $750$ restarted from zero at every churn and would never have landed; the run was re-sliced twice
+midway, finally at $50$ modes, and the launcher became gap-driven. ⇒ **The bank's check moved with it:
+it reconstructs each slice's span from its filename and asserts the spans tile $[0, 2547)$ with no gap
+and no overlap, rather than asserting a fixed step — a check on the SUM instead of on the bookkeeping
+convention, which is what makes re-slicing midway verifiable rather than trusted.**

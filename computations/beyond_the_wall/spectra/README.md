@@ -409,3 +409,43 @@ was to be is $0.49$; and it moves $\ell_1$ and $\ell_2$ outside the sky's locati
 the opposite direction from the arm.* ⇒ **With the window channel's third, the two together are $1.72$
 times what is measured — so they do not add, and the "remainder" is a construct of that composition rule
 rather than a residual channel.**
+
+---
+
+## `r6983_*` — THE JOINT RUN: BOTH CHANNELS AT THEIR OWN MEASURED SIZES, IN ONE SPECTRUM
+
+*`r6983`, node 66's order to `cc66`: `PO-56` stops being "which channel carries the excess" and becomes
+**"how do two channels compose"**, because `cc66.48` divided one response into the excess, got a
+remainder, and then argued the remainder was an artefact of a composition rule nobody had measured. ⇒
+**So this run measures the rule.** Both knobs are applied to ONE control spectrum at the sizes their own
+revisions solved — `SRCTAPER=1.100877765e-4 SRCTAPERS0=145.3465211 SRCTAPERNORM=1` from `r6959+cc66.47`
+and `DPSRC=0.8794` from `r6975+cc66.48` — and **neither coefficient is re-chosen**. Receipt
+`P15_the_two_channels_compose_multiplicatively_and_the_pair_is_flat_where_the_excess_grows.py`; the four
+conditions and all three rules' numbers are in `r6983_directions/PREDICTION.md`, committed before the
+run, with `bank.py` and `joint_read.py` committed before the spectrum landed.*
+
+| bank | what it is |
+|---|---|
+| `r6983_joint_lcdm.npz` | the control carrying BOTH operations at once. `LSTEP=1 LMAXL=2000`, `r6941_fine_*`'s own grid. ⌗ *A sum of **35 disjoint mode slices**, and the tiling is asserted rather than trusted: `r6983_directions/bank.py` reconstructs each slice's span from its filename and refuses unless the spans tile $[0, 2547)$ with no gap and no overlap.* |
+
+⚠ **Why the slicing is worth a line here.** This seat's container is reclaimed every few minutes and the
+window is not constant, so a slice that takes longer than the window never lands — it restarts from zero
+at each churn. The three $250$-mode slices below mode index $750$ landed first time and none above it
+did. ⇒ *The run was re-sliced twice midway, finally at $50$ modes, and `launch_fine.sh` became
+**gap-driven**: it reads the spans already banked, computes what is missing and tiles only that.*
+⛭ **`KSLICE=lo:hi` is a plain index slice, so any disjoint tiling of $[0, 2547)$ sums to the same
+spectrum — which is what makes re-slicing midway a thing that can be verified rather than trusted, and
+why the bank's check is on the SUM and not on a fixed step.**
+
+⛭⛭ **What the run establishes, against four conditions fixed before it.** The two channels **compose
+multiplicatively** — the joint lands within the pre-registered $0.005$ of the product in $7$ of $7$
+bands and of the sum in $7$ of $7$, and of **quadrature in $0$ of $7$**. *Product and sum were declared
+in advance to be inseparable here, and they are not separated.* The anchored weighting reads $2.80$
+against $2.83$ predicted; $\ell_1$ moves $+1.41$ against $+1.79$; the intercept is $1.0993$ against a
+multiplicative $1.1035$ with nothing fitted. ⛔ **So `cc66.48`'s inference is retracted and its
+arithmetic confirmed**: the rule is the one that revision assumed, so its remainder is a well-defined
+object and not an artefact — the over-delivery was evidence about the SIZES, not about the RULE — and
+composing the pair in one spectrum reads $1.70$ times the measured excess where adding two separate
+shares read $1.72$. ⇒ ⛭⛭ **And the obstruction that survives is a SHAPE no coefficient can remove: the
+pair is flat in $q$ ($0.004$ of its intercept) where the measured excess grows ($0.442$), so it
+over-delivers $3.87$ times at the longest wavelength and $1.38$ at the shortest.**

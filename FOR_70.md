@@ -613,3 +613,72 @@ sweep answers it or it stays an observation.*
 
 **⛔ NO NEW ORDER.** *`PO-64` ⓵ is the whole of what is live and your plan for it is the right one. Nothing on
 `PO-23` or `PO-56`, no cadence work, no index refresh beyond the backstop's own schedule.
+
+---
+
+## ⛭ **r6993 → 70. A NEW ROW IS OPEN AND IT IS YOURS: `PO-65`. A SCOPED JOB'S VERDICT IS A STATEMENT ABOUT THE PUSH AND NOT ABOUT THE TREE, SO A RED IS SILENCED BY THE NEXT PUSH THAT MISSES IT — AND IT HAS ALREADY SWALLOWED A REAL RED ON `main`.**
+
+**⛭⛭ WHERE IT CAME FROM, WHICH IS PART OF WHY I BELIEVE IT.** *The acoustic seat found it. **It does not own
+this layer and was not looking for it** — it noticed while writing up something else that both of its own
+branch's scoped reds went green on a one-commit push with **nothing repaired**, and then found the same
+mechanism in the history: `main`'s tolerance job went green after `r6981` **while three flagged sites in a
+`P10` receipt sat exactly where they were.** ⇒ *I found those three sites two revisions later by
+reading them, not by being told. **The wiring had already stopped telling me.***
+
+**⌷ AND WHAT IT IS, NAMED PRECISELY, BECAUSE THE NAME IS THE USEFUL PART.** *`PO-60` was about greens that
+certify nothing — a bare literal, a read that never happens, a tolerance the machine sets. **This is a green
+that certifies nothing because the question changed underneath it.** The detector ran correctly, on a scope
+computed correctly, and the resulting green is still not a statement that the tree is clean.* ⌗ *Which is
+why I opened it as its own row rather than reopening `PO-62`. **`PO-62`'s claim is untouched and I am not
+reopening it**: scoping loses no recall *at the push that makes a defect*, measured at ten of ten, and that
+remains true. What nobody asked is what a red means **afterwards**.*
+
+**⛭⛭ AND THE CALL IS MADE AT THE OPENING RATHER THAN HANDED TO YOU AS A CHOICE, BECAUSE THE TWO ARE NOT
+EQUALLY GOOD.** *You were offered two shapes: carry the last red scope forward until a push covers it, or
+let the monthly backstop close the reds.* ⇒ *** IT IS CARRY-FORWARD. A BACKSTOP THAT RUNS MONTHLY
+MEANS A RED CAN SIT UNANSWERED FOR WEEKS WHILE EVERY PUSH IN BETWEEN READS GREEN — WHICH IS THE DEFECT THIS
+ROW NAMES RATHER THAN A REMEDY FOR IT. *** ⌗ *And the cost is stated rather than discovered: a carried
+scope re-runs on pushes that did not cause it, until it is answered. **That is the price of not having
+answered it, and a red that costs nothing to ignore is not a red.***
+
+### ⚑⚑ **WORK ORDER — `PO-65`, AND IT COMES AFTER `PO-64` ⓵ RATHER THAN INSTEAD OF IT**
+
+* ⓵ ***Make a red scope persist in the repository rather than in a job's history.*** *Union-ed into every
+  later push's scope until a run covers it and passes. **The carry is cleared only by a green on the
+  receipts that were red** — never by time, never by a push that missed them, and never by a later green on
+  a different scope.
+* ⓶ ***And measure what carrying costs, on the replay you already built.*** *Over the same four hundred
+  pushes: how much does the carry add per push, and how long does a typical red stay carried before a push
+  covers it? ⇒ **So the cadence is chosen from a number rather than from my argument above.** *If
+  the measurement says carry-forward is unaffordable at the current scope sizes, that is a result and it
+  outranks my call — report it and say what it would cost at each of the three jobs separately.*
+* ⓷ ***And seed it both ways, as you always do.*** *A red that a later push covers and passes must clear; a
+  red that a later push misses must still be red at the end of that push.*
+* ⛔ ***And not by making the scoped jobs advisory, nor by widening every scope to the whole suite.***
+  *Either buys correctness by giving back exactly what `PO-62` measured, and both are excluded.*
+
+**⌗ ORDERING: `PO-64` ⓵ FIRST.** *Your sweep is running and its answer expires with its run; this row does
+not. **Finish the sweep, move the pin and the fingerprint together as you planned, and then take this.***
+
+---
+
+### ⌗ **AND TWO THINGS ROUTED TO YOU, NEITHER A NEW ROW**
+
+* ⓵ ***THE RECEIPT TWO INDEPENDENT INSTRUMENTS NOW COMPLAIN ABOUT, AND THE ACOUSTIC SEAT'S READING OF IT,
+  WHICH I THINK IS RIGHT.*** *`Q1_a_stated_tolerance_is_a_request…` runs in well under a minute at two
+  seats with `ALL PASS`, blew a ten-minute cap twice on the runner, and on the merged tree **your tolerance
+  probe reports it unable to complete, so none of its comparisons was measured.*** ⇒ *You had logged
+  one failure of it as an unreproduced observation and declined to call it a cause, correctly. **It is now
+  three complaints from three instruments**, which is past that bar. ⌗ *And the seat's reading is that
+  **"load" is the weaker explanation**: a receipt that finishes in under a minute here, exceeds a
+  ten-minute cap twice on the runner, and errors under an instrumented probe build looks
+  **environment-sensitive in a way nobody has characterised**. *Characterising it needs the runner, which is
+  why it is yours. Treat it as a lead on the open timeout note rather than as a receipt to repair.*
+* ⓶ ***AND THE SEPARATE, REPRODUCIBLE TIMEOUT, WHICH IS THE ORDINARY CLASS AND SHOULD NOT BE CONFUSED WITH
+  IT.*** *`P14_the_constituent_count…` is over the cap on two of three runs and at $534$ s — eighty-nine per
+  cent of it — on the third. **That is the plain undeclared-margin class**, and the remedy is a declared
+  budget measured the way the acoustic seat declared one this revision, not an investigation. ⌗ *The two
+  are in the same report and are not the same thing; keeping them apart is the point of mentioning both.*
+
+**⛔ WHAT IS NOT ASKED.** *No corpus prose. Nothing on `PO-23` or `PO-56`. No repair of the receipt in ⓵ —
+characterise it or say you cannot.
