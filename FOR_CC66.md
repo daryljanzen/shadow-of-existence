@@ -1518,3 +1518,69 @@ the weighting does not carry: the part symmetric about the envelope, and about t
 **⛔ WHAT IS NOT ASKED.** *No refit. Nothing touching `prop:flat` or the clock family. No re-derivation of the
 peak spreads, which are quoted. **And no corpus edits** — route the paper-side consequences and I will place
 them.
+
+---
+
+## ⛭ **r6983 → cc66. `cc66.48` GATED AND LANDED. THE ORDER'S FRAMING WAS WRONG AND YOU ANSWERED THAT INSTEAD OF FILLING IT, WHICH IS THE RIGHT WAY FOR AN ORDER TO BE WRONG.**
+
+**⛭⛭⛭ THE CONSEQUENCE IS WORTH MORE THAN EITHER CHANNEL, AND IT IS A CHANGE OF OBJECT.** *A third from the
+window and above one and a half from the term mix make $1.72$ times what is measured.* ⇒ ***So the two cannot
+both be present at their measured sizes and simply compose — and the "remainder" I asked you to characterise
+is a RATIO OF TWO RESPONSES, hence a construct of whatever the composition rule turns out to be rather than a
+residual channel waiting to be found.*** *My order asked for the remainder to be described and for what
+carries it to be hunted. **That question has no object until a composition rule exists, and you said so.***
+⌗ *`P15` and `PO-56` now carry it that way, with the retraction of my framing in the row.*
+
+**⛭⛭ AND THE BASELINE NOBODY HAD COMPUTED HAS THE WIDEST REACH OF ANYTHING IN THE REVISION.** *That a purely
+symmetric operation reads $1.95$ on the anchored statistic and not $1$ — stable across a fivefold range of
+sizes, because the running-mean envelope is recomputed — **changes how every class reading in this sector is
+interpreted**, including readings already banked.* ⇒ *And it turns two instruments that looked in tension into
+two that agree to twelve per cent: **the anchored reading CONFIRMS the variance split**. ⌗ *`P15` carries the
+baseline beside the numbers it licenses, because without it none of them can be read.*
+
+**⌗ AND TWO RETRACTIONS, BOTH YOURS, BOTH BEFORE THE RUNS LANDED.** *The note that the two instruments
+disagree, retracted in the pre-registration rather than after the fact — which is where a retraction is worth
+something. And your own `loading` identification of the Doppler refuted by your own swap in the same
+revision, **with the mechanism**: its band-to-band power tracks the monopole's at $0.95$, so it is an
+oscillating term in quadrature and removing it is nearly a pure amplitude change. *A wrong identification
+reported with the reason it was wrong is worth more than a right one reported without one.*
+
+### ⚑⚑ **NEW ORDER — `PO-56`: THE COMPOSITION RULE, WHICH IS NOW THE ROW**
+
+* ⓵ ***Measure how the two channels compose, rather than assuming they add.*** *You have both knobs wired and
+  both responses characterised. **Apply them together, at their own measured sizes, and read the result on the
+  same statistic with the same locator** — then compare against the product, the sum, and the sum in
+  quadrature. ⌗ *If any one of those three reproduces the joint response inside the sky's own spread, that is
+  the rule and the row's arithmetic closes; if none does, the departure is the finding and should be reported
+  as a shape rather than as a shortfall.*
+* ⓶ ***And state in advance what each candidate rule predicts for the $q$-dependence and the weighting,
+  not only for the size.*** *This is where the last two revisions earned their results: the window was
+  refuted on weighting and the term mix on weighting and the comb, both independently of any size. **A
+  composition rule that gets the size right and the weighting wrong is refuted the same way**, so the
+  pre-registration should carry all three axes.
+* ⓷ ***One thing I want measured because it is the cheapest discriminator you have:*** *whether the joint
+  response is $q$-independent. **The window's is not and the term mix's is**, so if the two compose
+  multiplicatively the joint response's long-wavelength intercept is a prediction with no free constant in
+  it — and the offset R1 fired on is exactly a long-wavelength intercept. *Report the intercept against that
+  prediction.*
+* ⚠ ***And the baseline applies to everything in ⓵ to ⓷.*** *Every reading goes against $1.95$ and not $1$, and
+  say so where you report it, since a joint response read against the wrong baseline will look like the wrong
+  rule.
+
+### ⛔ **THE GUARDS**
+
+* ⚠ ***Path provenance in the header.*** *Standing.*
+* ⚠ ***Write the tolerance on the quantity that would move.*** *Yours, from `cc66.47`, and it applies to every
+  condition in ⓶.*
+* ⚠ ***Keep the two statistics apart.*** *Standing — and the baseline finding is why: they were never in
+  tension, only differently normalised.*
+* ⚠ ***No detection language.*** *Standing.*
+
+**⛔ WHAT IS NOT ASKED.** *No third candidate channel — the row does not need one and would be worse off with
+one. No refit. Nothing touching `prop:flat` or the clock family. **And no corpus edits** — route it and I will
+place it.
+
+⌗ *One thing on my side rather than yours: the environment red you reported is fixed at `r6981` — the install
+is pinned and every install site goes through the pin, so `check_env_fingerprint` is green on the swept
+version. You, 60 and 70 all hit it independently, which is what made it worth a systemic answer rather than a
+patch. `PO-64` carries the sweep that is still owed on the newer version.*
