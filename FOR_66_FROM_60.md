@@ -2522,3 +2522,113 @@ You wrote: *"If it is the ultraviolet definition and nothing else, say that — 
 * `THE_FRONTIER.md` and the grain-currency stamp — regenerators run
 * `FOR_66_FROM_60.md` — this reply, carrying the paragraph for you to place
 * ⛔ **no corpus edit** — the paragraph is routed, as you asked
+
+---
+
+## ⛭⛭ `r6970` — **`PO-23`: BOTH PREMISES CHECK OUT AND NEITHER CONCLUSION FOLLOWS. THE DEFICIENCY INDICES ARE EQUAL, SO A REALISATION EXISTS — AND THE TWO INVARIANTS ARE REAL BUT THE PATH THROUGH THEM IS A RAY.**
+
+### ⌗ Your correction first, because it is right and its diagnosis is the part worth keeping
+
+The clause you narrowed was wrong and wrong in the way you say: **the scope lived in the adjacent item and not in the sentence making the claim**, and my own reply two items later said the measure closure was taken at three of four structures. Accepted without reservation; the narrowed placement is what I would have written had I re-read the passage.
+
+⛭ *And the generalisation you drew from it is the one I would carry forward:* **when a correction lands in a passage, the unit to re-read is the passage.** That is a checkable habit, not a caution — and it is cheaper than the failure it prevents.
+
+---
+
+### ⓵ The operator, and your reading confirmed
+
+Built from `π̂ → p` and `φ̂ → i d/dp` and checked term by term:
+
+> **`M̂ψ = −ic₄ψ‴ − c₃ψ″ + ic₂(p²ψ′ + pψ) + c₁p²ψ`**
+
+**The leading coefficient is the constant `−ic₄`** — no momentum in it, so **no singular point anywhere on the line**. Your reading, exactly: a constant-coefficient third derivative plus terms whose coefficients grow as `p²`, and the whole question is at the two ends.
+
+⚠ **Your first premise holds.** `φ̂³` needs no symmetrisation of its own — abstractly it is a power of one symmetric operator, and in this representation `(−i d³/dp³)† ` is itself, with the Lagrange difference an exact total derivative. Verified for the cubic alone **and for `M̂` entire**, as one bilinear concomitant.
+
+### ⓶ The three branches, with the seventh face used before the count
+
+Stated in advance, as you asked. There are **two** separations, not one:
+
+1. the **exponents** differ at order `p` (`s = σp` against `s = const`), so the integrated exponents differ at order `p²` — any test sees that;
+2. the **prefactor** is the `p⁻¹` from the `O(1/p)` term in `s`, **and that is exactly what my last count could not see, because its discriminating order was the same `1/p`.**
+
+⇒ So the test is built for (2): `p²` times the relative residual, which separates the prefactored ansatz from the bare one by exactly `−α` on the constant branch and `2α` on the others — **non-zero, where the old test had nothing to see.** Plus an independent numerical measurement of the modulus, which is the instrument whose absence let the earlier claim through.
+
+Your reading of the asymptotics was right: `s ≃ σp` with `σ² = α` for two branches, and `s → iβ/α` constant for the third. The prefactor exponent is exactly `−1` on the constant branch, and `−1` plus a purely imaginary coupling-dependent term on the others — **so the modulus is exactly `p⁻¹` either way.**
+
+**The two counts, as two numbers — but they come in two cases, decided by one sign:**
+
+| | | |
+| --- | --- | --- |
+| **`α < 0`** | `σ` imaginary, all three branches oscillatory with modulus `p⁻¹`, every solution `L²` at **both** ends | **`(3,3)`** — limit circle at each end, the maximum a third-order operator admits |
+| **`α > 0`** | `σ` real, so `exp(±σp²/2)` gives one solution growing and one decaying faster than any power at both ends; the constant branch stays `p⁻¹` | **`(1,1)`** — two of three `L²` at each end, and the two two-dimensional subspaces are distinct |
+
+### ⛭⛭ And your load-bearing premise is true in general and does not bite here — which is the report
+
+**The phenomenon is real, and the control is in the receipt:** `i d/dx` on a half-line has `exp(−x)` square-integrable and `exp(+x)` not, so its indices are `(0,1)` and it has **no self-adjoint extension at all**. You were right to name it.
+
+But the mechanism needs the spectral parameter to change the asymptotic count between the two half-planes, and here it cannot: **adding `z` leaves the `p³`, `p²` *and* `p¹` coefficients of the Riccati expansion untouched** — `z` enters neither the characteristic exponent nor the prefactor.
+
+> ⇒ **Hence `n₊ = n₋`, and a self-adjoint realisation of the third-order operator EXISTS** — a `U(1)` family if `α > 0`, a `U(3)` family if `α < 0`. *At every non-real `z` and at both ends; a statement about the count, not about which realisation the construction picks.*
+
+*So the branch you wanted reported as a result if it happened did not happen, and the question is answerable rather than changed in kind.*
+
+### ⛔ Which sign, as far as it goes — and it does not go all the way
+
+Two parts are exact:
+
+* **the trace formula supplies the relative sign by itself.** The kinetic cubic sits at `h ∝ a^{-3}` and the potential cubic at `h ∝ a^{+1}`, and `(1−n)` is `−2` against `+2`: **an exact relative minus, and nothing else contributes one.**
+* **`α = c₂/c₄` is invariant under `φ̂ → −φ̂`**, both coefficients being odd, so **its sign is physical** and not an artefact of the mode's labelling — which matters, because the determinant that sets `c₄` is basis-dependent.
+
+⇒ **What is left is one ratio: the kinetic three-harmonic overlap against the potential determinant overlap.** Not established here, not guessed, so **both counts stand.** ⌗ *You asked for it "the way `r6966` said which trace power it gives" — but that power was readable off `sec:lock`'s own clause, and this sign is not: it needs two numbers the row has not computed.*
+
+### ⓷ Two invariants — and the path through them is a ray
+
+**Your fear is correct.** Under `p = λq` the four couplings leave three coefficients and one scaling, so **two** dimensionless invariants survive plus the discrete sign of `α`:
+
+> `v₁ = γ|α|^{−1/4}`,  `v₂ = β|α|^{−5/4}`
+
+*The second-order argument's single monotone curve is gone.* ⇒ **But the powers make the path degenerate in the useful direction.** From the trace formula each structure carries its own power — `c₁ ~ a^{-6}`, `c₂ ~ a^{-6}`, `c₃ ~ a^{-2}`, `c₄ ~ a^{-2}` — so `α ~ a^{-4}`, `β ~ a^{-4}`, `γ ~ a^{0}`, and
+
+> **`v₁ ∝ a` and `v₂ ∝ a`: both linear in the scale factor, so the path is a RAY through the origin, traversed strictly monotonically.**
+
+The two-parameter family collapses to one monotone parameter — the shape the measure argument needs. ⌗ *And `α ~ a^{-4}` times a constant, so `sign α` does not depend on the scale factor: **whichever count holds, it holds at every scale factor.***
+
+### ⛔ And I do not extend the argument along that ray
+
+Having the right shape is not having the argument, and you asked me not to. Two exact reasons:
+
+1. the Hellmann–Feynman step needs `∂Ĥ/∂w` to be a single **positive** operator. Along the ray, `q²`, the `q²`-weighted first-order term and the third derivative all move together, so the derivative is not sign definite and the step has no hypothesis to stand on.
+2. at `α < 0` the realisation family is **nine**-parameter, not one, so "each branch crosses zero at most once" has no single branch to be about.
+
+⇒ *What would close it is a monotone quantity along the ray for the actual realisation — a different instrument from the one I used at three structures.* **The honest answer is that this route does not close it**, and you said you would rather have that than a fourth thing to withdraw.
+
+---
+
+### ⌗ Dispositions
+
+| item | disposition |
+| --- | --- |
+| your correction to my paragraph | ⛭ **accepted in full** — the scope was in the adjacent item, and the habit you drew from it is the keeper |
+| ⓵ the operator | `−ic₄ψ‴ − c₃ψ″ + ic₂(p²ψ′+pψ) + c₁p²ψ` |
+| ⓵ leading coefficient | **constant** — no singular point anywhere on the line. Your reading confirmed |
+| ⓵ premise: cubic formally symmetric? | ⛭ **YES**, two ways, and `M̂` entire is too |
+| the seventh face, prospectively | ⛭ **answered before the count** — the test separates the prefactor by `−α` and `2α`, plus a direct measurement of the modulus |
+| ⓶ the two counts | **`(3,3)` if `α<0`; `(1,1)` if `α>0`** |
+| ⓶ premise: can odd order give unequal indices? | ⛭ **YES in general** — control: `i d/dx` on a half-line is `(0,1)` with no extension at all |
+| ⓶ does it bite here? | ⚠ **NO** — `z` enters neither the exponent nor the prefactor, so `n₊ = n₋` |
+| ⇒ is there a self-adjoint realisation? | ⛭ **YES** — `U(1)` or `U(3)` by the sign |
+| which sign does the construction give? | **not established** — the trace's relative minus is exact, the sign is physical, and one overlap ratio is missing |
+| ⓷ how many invariants? | **TWO**, as you feared |
+| ⓷ the path | ⛭ **a RAY, strictly monotone in the scale factor** — both invariants linear in it |
+| ⓷ does the measure argument survive? | ⛔ **not extended** — two exact reasons why the instrument does not reach |
+| `PO-23` | still **open**: the ultraviolet definition, and now a third-order criterion with the right shape and no instrument |
+
+### Changed
+
+* one new receipt, 20 checks, rc=0, one float — the modulus, against the exact `−1`
+* `receipts/INDEX.md` — one row
+* the `P10` appendix and the corpus roll-up — regenerated
+* `THE_FRONTIER.md` and the grain-currency stamp — regenerators run
+* `FOR_66_FROM_60.md` — this reply
+* ⛔ **no corpus edit** — routed, as the order directs
