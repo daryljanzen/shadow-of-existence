@@ -143,7 +143,7 @@ integral in this sector is the volume normalisation, whose integrand is separabl
 nothing -- so there is no second call site to convert today; the reach is forward, at the higher levels
 where the adjoint matrix enters to higher powers and the cost is where this receipt's predecessor found
 it.*
-rc=0 on all 59 checks.
+rc=0 on all 57 checks.
 """
 
 import sys
@@ -368,14 +368,38 @@ def integral_formula(ww, K=7.0):
     return float(np.trapezoid(ks ** 2 * p ** 2, ks))
 
 
+# ⛔⛭ r6998 (60, on node 70's sweep reading this site TRUE and 66 routing it back as `PO-66`):
+#   ** THE CHECK BELOW USED TO PIN ONE STEP SIZE, h = 1e-5, AND THAT IS THE ROUND-OFF SIDE OF THE
+#   BALANCE.  The scan printed below is why: the relative difference falls as h^2 from h = 1e-3 to
+#   h = 1e-4 -- truncation-dominated, so the same number on every build -- and then STOPS FALLING and
+#   goes non-monotonic at h = 1e-5, which is round-off.  A threshold set an order above THAT reading is
+#   a statement about this machine, and the sweep measured about 35x of headroom moving by nearly its
+#   whole value between linear-algebra builds. **
+#   ⇒ ** REPAIRED BY THIS LINE'S OWN r6990b CRITERION, AND IN BOTH OF ITS PARTS. **
+#     (1) the WORST point of the scan is asserted rather than one chosen point -- a strictly stronger
+#         claim ("the formula agrees at every step tried") and a build-stable one, because the worst
+#         point is the h^2 end; and
+#     (2) the margin is set from WHAT THE CHECK DISCRIMINATES -- a wrong closed form for M'(w) is wrong
+#         by an O(1) factor, so 1e-4 separates the true formula from any false one by four decades while
+#         leaving over a thousandfold of room above the measured value.  ** A claim about the identity
+#         rather than about this machine's round-off. **
+_H_SCAN = (1e-3, 1e-4, 1e-5)
+_rels, _iis = {}, {}
 for ww in (0.5, 1.0, 2.0):
-    h = 1e-5
-    fd = (M_of(ww + h) - M_of(ww - h)) / (2 * h)
-    ii = integral_formula(ww)
-    rel = abs(fd - ii) / abs(ii)
-    check(rel < 1e-8 and ii > 0,
-          f"the exact formula against the numerics at w = {ww}: M = {M_of(ww):.9f}, finite-difference "
-          f"dM/dw = {fd:.9f}, the integral = {ii:.9f}, relative difference {rel:.1e} -- and POSITIVE")
+    _iis[ww] = integral_formula(ww)
+    for _h in _H_SCAN:
+        _fd = (M_of(ww + _h) - M_of(ww - _h)) / (2 * _h)
+        _rels[(ww, _h)] = abs(_fd - _iis[ww]) / abs(_iis[ww])
+print("\n   step-size scan of the central difference against the exact integral, relative:")
+for ww in (0.5, 1.0, 2.0):
+    print(f"     w = {ww:.2f}   " + "   ".join(f"h={_h:.0e}: {_rels[(ww, _h)]:.2e}" for _h in _H_SCAN))
+_at = max(_rels, key=_rels.get)
+rel = _rels[_at]
+check(rel < 1e-4 and all(v > 0 for v in _iis.values()),
+      f"the exact formula against the numerics at EVERY step tried and at every w: worst relative "
+      f"difference {rel:.1e}, at w = {_at[0]} and h = {_at[1]:.0e} -- the h^2 end of the scan, which is "
+      f"truncation-dominated and so the same on every build -- and the integral is POSITIVE at all three "
+      f"points ({', '.join(f'{v:.6f}' for v in _iis.values())})")
 
 ws = np.arange(0.0, 3.0001, 0.05)
 Ms = np.array([M_of(x) for x in ws])

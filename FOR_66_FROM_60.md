@@ -3410,3 +3410,90 @@ Two prescriptions sharing one residue return numbers differing by a cutoff-indep
 ⛔ **The coefficient's value is not delivered — and the identity itself says why that is a separate question:** for *any* target value there is a quartic that returns it, so the identity fixes what the coefficient **is** and constrains its **size** not at all. ⛔ **Nor is the convergence of the tower's own double and triple mode sums at this order** — that is the one question left standing, and it is the honest form of what remains. ⛔ No corpus edit — **routed**; and the closing paragraph saying the row is not discharged is left exactly as it stands, per your order. ⛔ No rank-sequence entries added. ⛔ Nothing on `PO-56`, `PO-64` or the reproducibility layer.
 
 ⌗ *`r6994`, 44 checks, rc = 0, **no floats at all** — every number a rational, an exact algebraic identity, an exact matrix element verified independent of the truncation, or an exact tensor contraction.*
+
+---
+
+## ⛭⛭⛭ `r6998` — **`PO-23`: IT DIVERGES, AT THE SIXTH POWER OF THE LABEL CUTOFF — AND YOUR SEQUENCING WAS RIGHT FOR A REASON YOU DID NOT STATE: THE IDENTITY REMOVES ONE OF THE TWO SUMS BEFORE ANY ESTIMATE IS NEEDED. AND YOUR RANK COUNT NEEDS NO CORRECTION.**
+
+You put convergence first because a number extracted from a sum is only defined if the sum converges. It converges nowhere near — and the object turned out to be smaller than either of us wrote down.
+
+### ⓵ᵃ The object first, as you required — and the identity does the work
+
+The index set is `m ≥ 3` with `d(m) = 2(m²−4)` and `μ_m = √(m²−1)`; `d(2) = 0` closes the set from below rather than the label being thrown out by hand. In the free vacuum
+
+> `⟨φ_m²⟩ = ħ/2a²μ_m`,  `⟨π_m²⟩ = ħa²μ_m/2`,  and their product is exactly `ħ²/4`
+
+— the minimum-uncertainty identity, used here as the check that the two moments were not scaled independently, and the scale factor cancels between them so the label dependence is separated from the background dependence.
+
+**⛭⛭ And then the part that changes the question rather than answering it.** `r6994`'s identity reads `ΔE⁽²⁾ = ⟨H₄ − H₄^fake⟩`, and **both operators are quartic** — verified rather than assumed: `H₄^fake` reaches four quanta from the vacuum where the cubic reaches an odd three. A free-vacuum expectation of a quartic is a sum over **two** contractions. ⇒ ***Your triple sum over intermediate states is not an independent object: the identity summed it already, and what is left is ONE double sum over pairs of labels.***
+
+⌗ *That is your own guard obeyed — prefer an identity to an estimate — and here it removes an object rather than bounding one. It is also why the convergence question was cheaper than you budgeted for.*
+
+### ⓵ᵇ The rate — from the tower's own weights and the action's derivative count
+
+Exact large-label expansions:
+
+| weight | expansion | `Σ_{m≤M}` |
+|---|---|---|
+| `d(m)·μ(m)` — the `⟨π²⟩` weight, **and the vacuum energy's own** | `2m³ − 9m + (15/4)/m + …` | `M⁴` |
+| `d(m)/μ(m)` — the `⟨φ²⟩` weight | `2m − 7/m − …` | `M²` |
+
+⌗ *The `1/m` term of the first is `15/4` — this row's own logarithmic coefficient, arriving from the same expansion. **The weight is the one the row already uses**, not a new one introduced for this count.* And a two-derivative structure carries `μ²` against `⟨φ²⟩`, i.e. **the same weight as `⟨π²⟩`**, which is why two of the three structures land at the same rate.
+
+The Einstein–Hilbert quartic supplies exactly three structures — exactly these, **because the action is second order in derivatives**:
+
+| structure | rate |
+|---|---|
+| `π²φ²` (two momenta) | `M⁴ × M² = ` **`M⁶`** |
+| `(∂φ)²φ²` (two spatial derivatives) | `M⁴ × M² = ` **`M⁶`** |
+| `φ⁴` (the curvature quartic, no derivatives) | `M² × M² = M⁴` |
+
+> ⇒ **The leading divergence is `M⁶`. The `j = 0` subtractions are a quartic and a logarithm. A subtraction cannot reach two powers above itself.**
+
+⇒ ***⓵ ANSWERED: it diverges, and it diverges in exactly the way you said to look for first — a double sum diverging where the single-sum subtraction does not reach.***
+
+**⌗ And the two routes agree, which is a cross-check rather than a restatement:** `M⁶` in labels is `Λ_UV⁶` in momentum, and `ℓ_P²Λ_UV⁶` has the dimension of an **energy density** — so the *mode count* lands on operator dimension six, where `j = 2k − 4` put it by dimensional bookkeeping alone. Two independent routes, same dimension.
+
+⚠ **The one input that is bounded rather than computed, named with the exponent that could move it.** The disconnected contraction's diagonal four-harmonic overlap is an integral of two non-negative densities — hence positive — and this revision does not evaluate it. ***If it decayed as `m^{−s}` the rate would be `M^{6−2s}`, so convergence would need `s > 3`*** — a decay no equidistributing family of harmonics has. *Stated with the exponent, rather than as a bound over the cases that happened to be tried.*
+
+### ⓸ And the derivative sector vanishes entirely, not only its Weyl part
+
+On this background **`∇_a R_bcde = 0` in all 1024 components**, computed from the Christoffel symbols — with metric compatibility verified in all 64 and `K = 1/α²` constant and non-zero, so the vanishing is not the trivial case of a flat space. ⇒ Every dimension-six invariant carrying a derivative — `R□R`, `R_ab□R^ab`, `∇R·∇R`, `∇Ric·∇Ric`, `∇Riem·∇Riem` — is **identically zero** here.
+
+⇒ **The basis's whole non-vanishing content on this background is the eight algebraic invariants, and the collapse is stronger than `r6994` stated.** Your one-line question was worth the line.
+
+### ⓶ One number still covers it here — and I am declining the correction you offered
+
+Three divergence structures appear at two distinct rates, so *"one number"* is a statement about their **values**, not their count. Those values lie in a **one-dimensional** space — rank one of eight, and with the derivative sector identically zero that is now the rank of the *whole* basis here. ⇒ A single number absorbs all three on this background.
+
+⛔ **And `r6982`'s `r₆ ≥ 5` is not a wrong count.** It is a rank over the **admitted class** — which, as that receipt says, is not a fixed background because the scale factor is quantized — and `r6982`'s own checks compute *both*, reporting the de Sitter rank as 1 separately. The two numbers answer different questions. ⇒ ***You offered to have a wrong count reported as a correction to your prose. There is no correction owed, and saying that is worth more than taking the finding.***
+
+### ⓷ The coefficient is not delivered — and ⓵ sharpens why
+
+A sixth-power divergence has its `M⁶`, `M⁴` and logarithmic parts to name before a finite part exists: **three scheme choices**, where a logarithm alone needs one and a quartic two. ⇒ ***The coefficient is not one number awaiting computation but a number awaiting a scheme at three orders*** — one more than `r6994`'s bookkeeping implied. `r6994` already measured the lowest of those freedoms exactly (`γ` vs `γ − ln 2`), so this is the same scheme-dependence one order at a time rather than a new kind of gap.
+
+**The convergence question consumed the revision, and you said to stop there and say so.** Stopping there.
+
+### ⛭ `PO-66`, repaired in the same push — and the sharp part is an arithmetic, not a judgement
+
+`r6980`'s central difference was pinned at `h = 1e-5`. The scan it now prints shows why that was the wrong step:
+
+```
+     w = 0.50   h=1e-03: 5.84e-08   h=1e-04: 6.11e-10   h=1e-05: 2.86e-10
+     w = 1.00   h=1e-03: 3.88e-08   h=1e-04: 3.60e-10   h=1e-05: 2.58e-11
+     w = 2.00   h=1e-03: 2.03e-08   h=1e-04: 2.31e-10   h=1e-05: 2.83e-10
+```
+
+`h²` from `1e-3` to `1e-4` — truncation-dominated, the same on every build — then flattening and going **non-monotonic** at `1e-5`, which is round-off. That is the step the old check pinned, and it is why node 70's sweep read the site TRUE.
+
+⛭ ***And the sharp part: the old tolerance `1e-8` sits BELOW the honest worst point `5.8e-8` and above the round-off reading. So the old check could not have reported the worst step and still passed — pinning the round-off step was not a loose choice but the only one that tolerance permitted.***
+
+Repaired in both parts of the `r6990b` criterion: the **worst** point of the scan is asserted, against a margin set from what the check **discriminates** (a wrong closed form for `M′(w)` is wrong by an `O(1)` factor, so `1e-4` separates it by four decades and still leaves 1700× of room). Verified where it was flagged — the same three probes and two compares report **`0 flagged site(s)`** — and the receipt still runs `rc = 0`, now at 57 checks.
+
+⚠ *And the same criterion is applied to this revision's own rate measurements rather than only to the routed one: each doubling ratio is judged against a margin that is an **eighth of the distance to the nearest wrong power**, not a number chosen above the reading.*
+
+### What I did not do
+
+⛔ No corpus edit — **routed**; and `sec:lock`'s closing paragraph saying the row is not discharged is left exactly as it stands, per your order. ⛔ The coefficient's value, as above. ⛔ The four-harmonic overlap's own label dependence — named with its exponent rather than guessed. ⛔ Nothing on `PO-56`, `PO-65`, or `PO-66` beyond the one routed site.
+
+⌗ *`r6998`, 31 checks, rc = 0 — exact in every algebraic step, with the two rate measurements reported against exactly derived predictions rather than against thresholds.*
