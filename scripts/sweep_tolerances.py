@@ -45,9 +45,9 @@ all, reaches EVERY receipt, and is the perturbation r6947 actually suffered.  It
 does not measure MONOTONICITY in a step, which needs the parameter -- see FOR_66_FROM_70.md for the
 fraction of flagged sites where that parameter could be located and what it showed.
 
-** THE MEASUREMENT (r6961+70.2, 867 registered, three instrumented suite runs). **
-  * --static: 8,187 numeric assertions in 795 receipts.  The probe types them: 3,236 compare FLOATS,
-    4,052 are exact or symbolic, 676 are not numeric, 220 sit on unexecuted branches.  All 867 pass
+** THE MEASUREMENT (r6961+70.2, 868 registered, three instrumented suite runs). **
+  * --static: 8,220 numeric assertions in 796 receipts.  The probe types them: 3,237 compare FLOATS,
+    4,079 are exact or symbolic, 681 are not numeric, 220 sit on unexecuted branches.  All 868 pass
     instrumented, so the instrumentation changes nothing.
   * --compare, on the pre-repair tree, over both builds: 7 sites flagged in 4 receipts, EVERY ONE READ.
       TRUE 5  -- P10_no_state... FLIPPED (green at one thread, red on Prescott/two threads: a round-off

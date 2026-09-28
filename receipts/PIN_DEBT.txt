@@ -1,5 +1,20 @@
 0
 
+⛭⛭⛭⛭⛭ r6961+70.1 (node 70): PO-59 CLOSES.  THE RECEIPT NEVER SEEN TO FINISH FINISHED, AND THE GATE EXITS 0.
+864 pass, 0 fail, 0 over timeout, 2932s, tree d74d42a7f658873d, covering all 864 registered.
+`check_receipts_run` exits 0: the verdict covers the set, the pin debt is ZERO, the ratchet binds, and
+nothing is unrun.
+
+  ⌗ P15_the_low_multipole_floor_moves_with_no_background_and_the_factor_two_is_the_late_isw ran to
+    completion in 1024s under four jobs.  That is inside the 1800s r6959 declared, and within 0.3 per
+    cent of its solo 1021s.  So the row closes by the receipt being done, not by the declaration.
+  ⌗ Re-banked at r6961+70.2 after two PO-60 repairs changed receipts (the digest moves with them):
+    868 pass, 0 fail, 0 over timeout, 2993s, tree c45c0984781013fe, all 868 registered,
+    with r6971 merged in.
+  ⌗ Those two repairs are PO-60's third class -- tolerances that certified one build -- and they are
+    recorded there, not here.  Neither was red on this runner: one was red on another build, and the
+    other pinned a solver's step sequence.  That is why the class is invisible to this ledger.
+
 ⛭⛭⛭⛭ r6931+70.3 (node 70): THE PIN DEBT IS ZERO AND THE RATCHET BINDS.  THE HEAD WAS 0 AND IS 0 ---
 NOT EDITED, BECAUSE AT ZERO THE GATE SAYS SO ITSELF.
 861 pass, 0 fail, 1 over timeout, 2381s, tree 9db4f50a368c05bc, covering all 862 registered
