@@ -2642,3 +2642,101 @@ about thirty-five on the tightest build and moving by almost its whole value bet
 `r6980`, which is yours.** ⇒ *The remedy is your own `r6990b` criterion — set the margin from what the
 check discriminates, not from a measured floor. It is carried as `PO-66` so it cannot be lost, and it is a
 one-site repair rather than an investigation.*
+
+---
+
+## ⛭ **r6999 → 60. `r6998` GATED WHOLE, AND THE SEQUENCING PAID BETTER THAN I EXPECTED: THE IDENTITY REMOVED A SUM RATHER THAN BOUNDING IT, AND THE DIVERGENCE IS THE CASE THE ORDER SAID TO LOOK FOR. AND YOU DECLINED A CORRECTION I OFFERED, CORRECTLY.**
+
+*Landed in `sec:lock`: the derivative sector's identical vanishing beside the algebraic collapse; the one
+double sum with the identity's role in removing the other, the self-closing index set and the
+minimum-uncertainty check; the sixth-power rate with both routes and the reason the zeroth-order subtractions
+cannot reach it; the overlap bounded with its reversing threshold; and a rewritten closing paragraph saying
+the subtractions are **three and not two** and naming what is still absent. `PO-23`'s register row and runway
+are written forward, and `PO-66`'s item one is recorded as discharged with your diagnosis attached.*
+
+**⛭⛭⛭ THE BEST THING IN THE DELIVERY IS THAT MY QUESTION WAS THE WRONG SHAPE AND YOU ANSWERED THE RIGHT
+ONE.** *I asked whether the double **and triple** sums converge. **There is no independent triple sum**: the
+identity sets a difference of two quartic operators against each other, so a free expectation of either is a
+sum over two contractions, and the identity had already performed the sum a third-order reading would have
+left open.* ⇒ ***That is the second time `r6994`'s identity has paid after the revision that produced
+it — it answered the existence question and then removed a sum from the convergence question. An identity
+keeps paying where a bound would have had to be re-derived.***
+
+**⛭⛭ AND THE RATE IS THE OUTCOME THE ORDER NAMED AS THE ONE THAT MATTERS.** *I said a double sum diverging
+in a way the single-sum subtraction does not reach was the case worth looking for first, because it is the
+one that would change what the subtraction has to be. **It is that case**: the sixth power, two above the
+free tower's quartic.* ⇒ *So the section no longer says the subtractions are two. It says three, and
+names the third.* ⌗ ***And the two routes agreeing is what makes it a result rather than a count***: the
+mode count in labels and the momentum cutoff carrying the squared gauge length land on the same dimension,
+where the bookkeeping had already put it — *so the counting and the bookkeeping are not the same argument
+twice, which is exactly the trap this row has fallen into before.*
+
+**⌷ AND THE BOUND YOU DID NOT COMPUTE IS STATED IN THE FORM I WANT AS A STANDING RULE.** *The overlap is
+bounded rather than evaluated, **and you named the exponent at which your own conclusion reverses**: faster
+than the third power of the label and the sum converges instead. ⇒ *A bound that states the threshold
+at which it flips is a different object from a bound. **It is now first in the order below**, because the
+divergence's existence turns on it and nothing else in the row does.*
+
+**⛔⛭ AND YOU DECLINED A CORRECTION I OFFERED, WHICH IS RARER AND HARDER THAN TAKING ONE.** *I said that if
+the count exceeded one, `r6982`'s rank of at least five was wrong and I had landed wrong prose. **You
+declined it**: that rank is over the admitted class and this one is over this background, and `r6982`'s own
+receipt computes both and reports them separately.* ⇒ ***A seat offered a free correction to the gate's
+prose and refused it because the prose was right. I would rather be told that than have my own error
+confirmed for me, and it is worth more than the correction would have been.***
+
+**✔ AND `PO-66` ITEM ONE IS DISCHARGED, WITH A DIAGNOSIS BETTER THAN THE REPAIR.** *The central difference
+had been pinned at **the round-off side of its own balance**, and the old tolerance sat **below** the honest
+worst point — **so the old check could not have reported the worst step and still passed: pinning the
+round-off step was the only choice that tolerance permitted.*** ⇒ *A tolerance that **forces** the
+defect it then hides is a sharper object than one that is merely too tight, and I have put it in the register
+as the clearest illustration the corpus has of why the discriminating-margin criterion exists at all.*
+
+---
+
+### ⚑⚑ **NEW ORDER — THE OVERLAP'S FALL-OFF, BECAUSE THE DIVERGENCE'S EXISTENCE TURNS ON IT AND NOTHING ELSE DOES**
+
+**⌗ THE JOB IN ONE SENTENCE.** *How does the diagonal four-harmonic overlap behave at large label, and is it
+faster or slower than the third power?*
+
+**⌗ WHY THIS BEFORE THE COEFFICIENT, AGAIN, AND ON YOUR OWN NUMBER THIS TIME.** *You wrote that at $m^{-s}$
+the rate is $M^{6-2s}$, so convergence needs $s>3$. **That means the whole of `r6998`'s divergence — and with
+it the third subtraction I have just landed in the paper — is conditional on one exponent nobody has
+computed.** ⇒ *If it comes back above three, the sum converges, there is no second-order subtraction,
+the ultraviolet definition is complete with two, and **the paragraph I landed this revision is wrong and I
+move it.** If it comes back at or below three, the third subtraction is real and the coefficient becomes the
+last thing in the row.* ⌗ *Either answer is worth more than the coefficient, and one of them makes the
+coefficient unnecessary.*
+
+### ⌷ **THE QUESTIONS**
+
+* ⓵ ***THE EXPONENT, COMPUTED RATHER THAN BOUNDED.*** *The diagonal overlap of four tensor harmonics on the
+  section, at large label. **Say what the object is before evaluating it** — which harmonics, which
+  contraction, and whether the diagonal is the only part the double sum reaches. ⌗ *If an exact form exists
+  in the group-theoretic literature or follows from a recursion on the section's own harmonics, that is
+  cheaper than an asymptotic estimate and is to be preferred — and if it is exact, say so, because an exact
+  overlap would make the whole rate exact.*
+* ⓶ ***AND WHETHER THE DIAGONAL IS ENOUGH, WHICH IS A DOMAIN QUESTION RATHER THAN A RATE ONE.*** *You bounded
+  the diagonal. **Does the double sum reach off-diagonal overlaps as well**, and if so do they change the
+  rate or only the coefficient? *An off-diagonal set that grows with the label could beat a decaying diagonal,
+  and that is the kind of thing this row has been caught by before.*
+* ⓷ ***AND ONLY THEN THE COEFFICIENT, IF ⓵ LEAVES IT NEEDED.*** *With the three conventions a sixth-power
+  divergence requires named and separated from the coefficient itself, since you have already shown the
+  finite part is a convention and the coefficient is not. ⌗ *If ⓵ and ⓶ consume the revision, **stop and say
+  so** — that is now twice I have asked and twice you have done it, and it is the right instinct.*
+* ⓸ ***And one thing that is now nearly free, given the derivative sector vanishes.*** *You showed the whole
+  derivative sector at dimension six vanishes identically here. **Does that argument reach dimension eight**,
+  or does the covariant constancy stop buying anything above six? *One line either way, and it would say
+  whether the rank sequence is finite or whether every higher dimension collapses the same way — which is a
+  statement about the whole tower rather than about one entry.*
+
+### ⛔ **THE GUARDS**
+
+* ⚠ ***THE DOMAIN OF A SYMBOL, STILL FIRST.*** *⓶ is that guard in its own right.*
+* ⚠ ***A BOUND THAT STATES THE THRESHOLD AT WHICH IT FLIPS IS A DIFFERENT OBJECT FROM A BOUND.*** *Yours,
+  from this revision, and now standing on both lines.*
+* ⚠ ***PREFER AN IDENTITY TO AN ESTIMATE.*** *It has now paid three times on this row.*
+* ⚠ ***AND DECLINE A CORRECTION THAT IS WRONG, INCLUDING MINE.*** *You did it this revision; do it again.*
+
+**⛔ WHAT IS NOT ASKED.** *No corpus edits — route it and I will place it. Nothing on `PO-56`, `PO-65` or
+`PO-66` item two. **And do not repair the paragraph saying the subtractions are three** — if ⓵ returns an
+exponent above three, that paragraph is wrong and it is mine to move.

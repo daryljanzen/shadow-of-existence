@@ -1844,3 +1844,106 @@ and then look where the list does not reach.*
 **⛔ WHAT IS NOT ASKED.** *No corpus edits — route it and I will place it. Nothing on the quantum sector or
 the reproducibility rows. **And do not repair `P15`'s new deceleration paragraph** — if ⓵ or ⓷ changes the
 target's characterisation, that paragraph is mine to move.
+
+---
+
+# ⛭⛭⛭ r6999 → cc66. `cc66.51` GATED WHOLE. YOU REVERSED YOUR OWN DISMISSAL ON YOUR OWN ERROR AND THE ROW IS BETTER FOR IT — AND THE WIDTH YOU FOUND BY ASKING WHAT WAS OUTSIDE THE LIST IS THE MOST PROMISING THING THIS SECTOR HAS PRODUCED SINCE THE CONTRAST WAS MEASURED.
+
+*Landed in `P15`: the Doppler claim **restored** at its correct weight with the amplitude-versus-power
+distinction stated as physics; the one surviving candidate passing both conditions where it can be tested;
+the estimator's period floor as a result about the instrument; the clock class excluded by structure; and the
+projection's two widths with the unimposed ratio. `PO-56`'s clause and runway are written forward, and the
+withdrawal of the filter row and of my own two-readings framing is registered with both asserted forms.*
+
+**⛔⛭ THE FIRST THING IS THAT I WEAKENED A CORRECT CLAIM IN THE PAPER AND YOU GOT IT BACK.** *At `r6997` I
+moved the dipole sentence out of `P15` on the ground that two readings disagreed and the reconciliation was
+owed. **There were never two readings of one quantity** — an oscillation-amplitude ratio and a
+band-integrated-power ratio, differing in what is ratioed, in which fields, and over what range, with the
+registered figure reproducing exactly. ⇒ *So the claim is restored, and the rule I applied was right
+while the premise I applied it to was wrong: **a paper may not assert one of two readings of one quantity,
+but these were two quantities and the paper should have said which one it meant.*** ⌗ *That is the actual
+defect in the original sentence and it is now fixed — the paper names the ratio.*
+
+**⛭⛭⛭ AND WHICH QUANTITY IS NEEDED IS PHYSICS, WHICH IS WHY THIS IS A REVERSAL AND NOT A TIE.** *Trough-
+filling is an oscillating term a quarter period out of phase adding into another's troughs, **so what fills a
+trough is an oscillating amplitude while the smooth part displaces the envelope and fills nothing** — and the
+contrast statistic is itself a deviation of the *oscillation* about a running mean. ⇒ ***So your own
+filter row answered the wrong question, and you said so in those terms rather than presenting the new number
+as additional evidence. That is the hardest available move and it is the third time this sector has made
+it.***
+
+**⌷ AND THE NEAR-MISS IS THE PART I HAVE PUT IN THE REGISTER, BECAUSE NOBODY WOULD HAVE CAUGHT IT LATER.**
+*The departure crosses zero inside the range, so the growth ratio is not a ratio of anything there — **and
+the arithmetic returned a large negative value that would have read as a spectacular pass.*** ⇒ *A
+statistic returning a number outside its domain is the most dangerous kind of green there is, because it does
+not look like an error. **The statistic now carries its domain**, which is the right fix and not a note.*
+
+**⌗ AND THE ESTIMATOR'S FLOOR IS A RESULT AND IS LANDED AS ONE.** *An oscillation amplitude needs about a
+period either side of where it is estimated, so the acoustic period sets a floor — **stable to a tenth of a
+per cent across four window widths, so the estimator is sound and simply stops**, which is a different
+statement from an estimator that is noisy there. ⌗ *And the sting is exact: **the excess's growth is
+concentrated precisely where the only quantity that could carry it cannot be measured.** That is a hard place
+to be and it is a clean one.*
+
+**⛭⛭⛭ AND THE WIDTH IS THE FINDING WITH THE LONGEST REACH, AND IT COST NOTHING.** *Two widths govern the
+window and they are not the same width — the acoustic phase swept across it goes with the **leaf sound
+horizon**, which is what `cc66.47` acted on, while the projection's smearing goes with **conformal time**,
+that being what the projection's argument carries. **In a one-rate cosmology these are one object up to the
+sound speed; on two rates they are not, because the clocks differ.*** ⇒ *** SIX PER CENT WIDER IN ONE
+AND SLIGHTLY NARROWER IN THE OTHER, A RATIO SEVEN PER CENT DIFFERENT FROM THE CONTROL'S, AND NOTHING IN THIS
+COMPARISON HAS EVER IMPOSED IT. *** ⌗ *This is what the row has been named after since it opened — the
+projection's geometry — and it is the first arm-specific structural difference in the projection that anybody
+has identified. **Found by asking what was outside the list, with nothing run.** That is the whole argument
+for ordering a filter ahead of a candidate, and it has now paid twice.
+
+---
+
+## ⚑⚑ **NEW ORDER — IMPOSE THE WIDTH. IT IS THE FIRST THING THIS ROW HAS HAD THAT CAN BE TESTED DIRECTLY RATHER THAN FILTERED.**
+
+**⌗ THE JOB IN ONE SENTENCE.** *Impose the conformal-time window width the arm actually has on the
+projection, and measure what it does to the contrast.*
+
+**⌗ WHY THIS AHEAD OF THE ESTIMATOR, WHICH IS A CALL AND I WILL DEFEND IT.** *You left two things: an
+estimator below the period floor, and this width. **The estimator is instrumentation that would let you
+finish testing a candidate; the width is a difference the construction actually carries and that nothing has
+imposed.*** ⇒ *And it is directly testable — you already have both arms' widths in both clocks, so
+imposing one on the other is the same shape of operation as the two channels you have already measured, at a
+size that is **not a free coefficient but a measured property of the arm**. ⌗ *That last part is what makes
+it different from every channel before it: **the size is not solved from the profiles, it is read off the
+construction.***
+
+### ⌷ **THE QUESTIONS**
+
+* ⓵ ***IMPOSE IT, AT THE SIZE THE ARM HAS AND NOT AT A FITTED ONE.*** *The projection smears by the window's
+  width in conformal time. **Give the control arm this arm's conformal width at the same leaf width**, and
+  measure the contrast, the anchored statistic, the comb and the peak positions. ⌗ *And pre-register what
+  each outcome would mean **including the one where it does nothing**, since a measured-size channel that
+  does nothing is as informative as one that works.*
+* ⓶ ***AND THE SHAPE FIRST IF IT IS CHEAPER, BECAUSE THE FILTER STILL APPLIES.*** *A smearing in conformal
+  time must die at long wavelength — **so does its departure grow and decelerate like the target's, or is it
+  flat like the window weighting was?** *If it fails the filter on paper, that is the answer and the run is
+  not needed; if it passes, the run is worth its cost.* ⇒ *Apply your own filter to it before running
+  it. **You built the filter for exactly this.***
+* ⓷ ***AND WHETHER THE TWO WIDTHS BEING DIFFERENT IS FORCED OR CHOSEN, WHICH IS A CR QUESTION AND NOT AN
+  INSTRUMENT ONE.*** *On two rates the widths differ because the clocks differ. **Is the ratio you measured
+  a prediction of the two-rate assignment, or an artefact of how the window was constructed in this
+  instrument?*** ⌗ *If it is forced by the construction, this is a CR prediction nobody has stated and it
+  belongs in the paper as one regardless of what it does to the contrast. **That would be worth more than the
+  contrast result.***
+* ⓸ ***And the estimator below the period floor stays on the list and is not dropped.*** *It is the only
+  route to finishing the surviving candidate, and it is second rather than gone. ⌗ *If ⓵ to ⓷ leave room,
+  say what such an estimator would have to be — fitting a sinusoid with a known period rather than estimating
+  an amplitude from a window, for instance — without building it.*
+
+### ⛔ **THE GUARDS**
+
+* ⚠ ***A STATISTIC MUST CARRY ITS DOMAIN.*** *Yours, from this revision, and now standing everywhere.*
+* ⚠ ***SAY WHICH QUANTITY, ALWAYS.*** *Also yours, and the sharpest version of it: a ratio is not a
+  quantity until you say what is ratioed, in which fields, over what range.*
+* ⚠ ***EXCLUDE BY MECHANISM WHERE YOU CAN.*** *Standing.*
+* ⚠ ***AND PRE-REGISTER THE NULL.*** *This revision's addition: when a channel's size is **measured rather
+  than fitted**, a result of "it does nothing" is a real result and has to be claimable in advance.*
+
+**⛔ WHAT IS NOT ASKED.** *No corpus edits — route it and I will place it. Nothing on the quantum sector or
+the reproducibility rows. **And do not repair `P15`'s restored Doppler sentence** — it now names the ratio,
+and if ⓷ changes what the width means, that paragraph is mine to move.
