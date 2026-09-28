@@ -474,6 +474,39 @@ REGISTRY = [
      "measured product, and the seam is where the quantum constant enters rather than a value it fixes; "
      "the single-scale ledger still stands, an undetermined dimensionless number not being a scale, so "
      "what the affirmative branch costs is an entry in the count of dimensionless constants spent"),
+    # ⛔ r6993 on node cc66's cc66.49, and the seat retracted its OWN previous revision's inference.
+    # ⌷ ** WHAT WAS ASSERTED AT `r6983`. **  That because the two channels' separately measured shares
+    #   sum to about 1.7 times the excess, the channels do NOT compose as assumed -- and therefore that a
+    #   remainder got by DIVIDING one response into the excess is a construct of whatever the real rule
+    #   turns out to be rather than a well-defined object.
+    # ⌷ ** THE RULE IS NOW MEASURED AND IT IS THE ASSUMED ONE. **  Both knobs imposed on one control
+    #   spectrum at the sizes their own revisions solved, neither coefficient re-chosen: the joint lands
+    #   within the pre-registered tolerance of the PRODUCT in 7 of 7 bands and of the SUM in 7 of 7, and
+    #   of QUADRATURE in 0 of 7 at three and a half times the bar.  *Product and sum were declared
+    #   non-separable in advance and are not separated.*  ⇒ **Dividing is the right operation, so the
+    #   remainder is well defined, and the over-delivery was evidence about the SIZES and not the RULE.**
+    # ⌷ ** AND THE ARITHMETIC IT REPLACES IS CONFIRMED RATHER THAN OVERTURNED: ** 1.72 from adding the
+    #   separate measurements against 1.70 composed in one spectrum, right to one per cent.
+    # ⌷ ** WHAT SURVIVES IS STRONGER AND IS A SHAPE. **  The joint response's variation across
+    #   wavenumber is 0.004 of its intercept against the excess's 0.442 -- a factor of a hundred -- so no
+    #   coefficient on either channel reproduces the excess at all.  *A size discrepancy is what a
+    #   coefficient absorbs; a shape mismatch is not.*
+    ("the-two-channels-do-not-compose-so-the-remainder-is-a-construct-of-the-rule",
+     # ⌷ Asserted forms only.  The over-delivery itself is NOT withdrawn -- it is confirmed by direct
+     #   measurement and is restated in the same section.
+     r"(?:cannot both be present at their\s*\n?measured sizes and simply compose"
+     r"|CANNOT BOTH BE PRESENT AT THEIR MEASURED SIZES AND SIMPLY COMPOSE"
+     r"|is a construct of whatever that rule turns out to be"
+     r"|A CONSTRUCT OF THE COMPOSITION RULE RATHER THAN A RESIDUAL CHANNEL"
+     r"|hence a construct of whatever the\s*\n?composition rule turns out to be)",
+     r"(?:cc66\.49|r6993|withdrawn|WITHDRAWN|corrected|CORRECTED"
+     r"|multiplicative|the rule is now measured|is the assumed one"
+     r"|well-defined object|well defined object|shape)",
+     "corrected r6993 on node cc66's cc66.49; the composition rule is measured and it is the assumed "
+     "multiplicative one -- the joint lands within a pre-registered tolerance of the product and the sum "
+     "in every band and of quadrature in none -- so dividing is the right operation and the remainder is "
+     "well defined; the over-delivery was evidence about the sizes and not the rule, its arithmetic is "
+     "confirmed to one per cent, and what survives is a shape obstruction no coefficient can remove"),
 ]
 
 SKIP = ('appendix_receipts',)
@@ -608,6 +641,12 @@ HISTORICAL = {
 # a pattern that is broken.  Each entry therefore carries a KNOWN-POSITIVE string, taken verbatim
 # from the text the withdrawal removed, and this gate fails if any pattern stops matching its own.
 POSITIVES = {
+    # ⛔ r6993 on node cc66's cc66.49: `P15`'s own sentences as `r6983` landed them, and the register's
+    #   summary form.  *All are the claim ASSERTED.*
+    "the-two-channels-do-not-compose-so-the-remainder-is-a-construct-of-the-rule": [
+        "\\emph{So the two cannot both be present at their\nmeasured sizes and simply compose}",
+        "is a construct of whatever that rule turns out to be",
+    ],
     # ⛔ r6991 on node 60's r6988: the paper's own sentence as `r6987` landed it, and this seat's own
     #   order form of it.  *Both are the claim ASSERTED.*
     "the-construction-does-not-supply-the-premise-that-the-ratio-is-undetermined": [

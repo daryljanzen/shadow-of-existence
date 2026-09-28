@@ -386,6 +386,37 @@ EST = {
         'not a defect: the uncited bibitems, an editorial call, enumerated here rather than taken from the '
         'read -- there are SEVEN across six papers, not six, and the read named every one correctly. Routed '
         'to Daryl as a judgement.'),
+    'PO-65': ('a scoped jobs verdict is about the push and not the tree', 1, 0, 2, None,
+        'r6993 (66) OPENS IT ON A FINDING BY THE ACOUSTIC SEAT, WHICH DOES NOT OWN THIS LAYER AND WAS NOT '
+        'LOOKING FOR IT. A scoped jobs verdict is a statement about the PUSH and not about the TREE: a red '
+        'records a verdict on the commits that produced it, and the next push computes a new scope from its '
+        'own commits, so if that scope does not cover the red receipt the job goes GREEN WITH NOTHING '
+        'REPAIRED and nothing anywhere records that the earlier red was never answered. OBSERVED TWICE, ONCE '
+        'DELIBERATELY AND ONCE IN THE HISTORY: both of one branchs scoped reds went green on a one-commit '
+        'push with nothing repaired; and the same mechanism explains why mains tolerance job went green after '
+        'r6981 WHILE THREE FLAGGED SITES IN A P10 RECEIPT SAT EXACTLY WHERE THEY WERE, sites r6991 then found '
+        'by reading them rather than by being told. SO THE GAP HAS ALREADY SWALLOWED A REAL RED ON MAIN. AND '
+        'WHAT IT IS, NAMED PRECISELY, IS THE STRUCK ROWS OWN CLASS ONE LEVEL UP: the third detector family '
+        'was about greens that certify nothing -- a bare literal, a read that never happens, a tolerance the '
+        'machine sets -- and THIS IS A GREEN THAT CERTIFIES NOTHING BECAUSE THE QUESTION CHANGED UNDERNEATH '
+        'IT. The detector ran correctly, on a scope computed correctly, and the green is still not a '
+        'statement that the tree is clean. Which is why it is its own row and not a reopening of the cadence '
+        'row, whose claim -- that scoping loses no recall AT THE PUSH THAT MAKES A DEFECT -- is untouched and '
+        'remains measured at ten of ten. AND THE CALL IS MADE AT THE OPENING RATHER THAN CARRIED AS A CHOICE, '
+        'BECAUSE THE TWO CANDIDATES ARE NOT EQUALLY GOOD: carry the last red scope forward until a push '
+        'covers it, or let the monthly backstop close the reds. IT IS CARRY-FORWARD -- a backstop running '
+        'monthly means a red can sit unanswered for weeks while every push in between reads green, WHICH IS '
+        'THE DEFECT THIS ROW NAMES RATHER THAN A REMEDY FOR IT. And the cost is the right cost and is stated '
+        'rather than discovered: a carried scope re-runs on pushes that did not cause it, until it is '
+        'answered -- the price of not having answered it, and a red that costs nothing to ignore is not a '
+        'red. WHAT WOULD DISCHARGE IT: a red scope persisting in the repository rather than in a jobs '
+        'history, union-ed into every later pushs scope until a run covers it and passes; the carry cleared '
+        'only by a green on the receipts that were red, never by time and never by a push that missed them; '
+        'and the whole thing MEASURED ON THE REPLAY THE ROW BEFORE IT BUILT, so the cadence is chosen from a '
+        'number over the same four hundred pushes rather than from this argument. AND NOT by making the '
+        'scoped jobs advisory nor by widening every scope to the whole suite, which buys correctness by '
+        'giving back exactly what was measured. '
+),
     'PO-64': ('the environment moved and the sweep has not followed it', 1, 0, 2, None,
         'r6981: OPENED by a gate firing for real within hours of being wired, which is the best thing that '
         'could have happened to it. r6977 wired check_env_fingerprint because the row before it had measured '
@@ -1281,6 +1312,16 @@ EST = {
         'SETS THE SIZES -- the composition rule is now measured and multiplicative, so the open question '
         'is no longer how the channels combine but why the pair, at the sizes the profiles themselves '
         'solve, is flat where the excess grows; and not a third candidate. '
+        'AND r6993 (66) GATES IT AND REDIRECTS THE NEXT OBJECT ONE STEP FURTHER, ON THE SEATS OWN ARGUMENT '
+        'RATHER THAN AGAINST IT. The seat read the next object as WHAT SETS THE SIZES. But its own finding is '
+        'a SHAPE refutation and not a size one: the joint responses variation across wavenumber is 0.004 of '
+        'its intercept against the excesss 0.442, so NO coefficient on either channel reproduces the excess '
+        '-- which means no account of what sets the sizes can close the gap either, because the gap is not a '
+        'size. SO THE ROWS OBJECT IS NOW A POSITIVE SEARCH CRITERION, THE FIRST THIS ROW HAS EVER HAD: what '
+        'channel carries the excesss own wavenumber dependence? Every step before this was an elimination and '
+        'could only remove candidates; this admits them. And it is a hard filter rather than a hint -- a '
+        'candidate must vary across wavenumber by something near forty-four per cent of its own intercept, '
+        'which rules out anything flat on sight, both channels measured so far included at 0.004 and 0.031. '
         ),
     'PO-55': ('horizon entropy is reading-dependent under the central move', 1, 1, 3, None,
         'OPENED r6877 as PO-54 remainder, found by node 60 where the order was not looking. The causal reassignment '
@@ -2272,8 +2313,8 @@ KIND = {'PO-46': 'BUILD', 'PO-10': 'BUILD', 'PO-13': 'BUILD', 'PO-36': 'READ', '
 #   and the generator reported "9 open" while the table showed EIGHT -- the count comes from
 #   the live set and the rows come from here.*  ** Adding a row needs three things: the
 #   register row, the runway, and this list. **  check_frontier_current now checks all three.
-ORDER = ['PO-64', 'PO-63', 'PO-62', 'PO-61', 'PO-60', 'PO-59', 'PO-58', 'PO-57', 'PO-56', 'PO-55', 'PO-54', 'PO-53', 'PO-52', 'PO-47', 'PO-48', 'PO-49', 'PO-50', 'PO-51', 'PO-45', 'PO-46', 'PO-10', 'PO-13', 'PO-43', 'PO-24', 'PO-36', 'PO-30', 'PO-25', 'PO-26', 'PO-31', 'PO-23', 'PO-15', 'PO-14', 'PO-17', 'PO-18', 'PO-19', 'PO-20']
-GROUP = {'PO-64': 'C', 'PO-63': 'C', 'PO-62': 'C', 'PO-61': 'C', 'PO-60': 'C', 'PO-59': 'C', 'PO-58': 'A', 'PO-57': 'D', 'PO-56': 'D',  # r6891: PO-13's live remainder, the acoustic sector.
+ORDER = ['PO-65', 'PO-64', 'PO-63', 'PO-62', 'PO-61', 'PO-60', 'PO-59', 'PO-58', 'PO-57', 'PO-56', 'PO-55', 'PO-54', 'PO-53', 'PO-52', 'PO-47', 'PO-48', 'PO-49', 'PO-50', 'PO-51', 'PO-45', 'PO-46', 'PO-10', 'PO-13', 'PO-43', 'PO-24', 'PO-36', 'PO-30', 'PO-25', 'PO-26', 'PO-31', 'PO-23', 'PO-15', 'PO-14', 'PO-17', 'PO-18', 'PO-19', 'PO-20']
+GROUP = {'PO-65': 'C', 'PO-64': 'C', 'PO-63': 'C', 'PO-62': 'C', 'PO-61': 'C', 'PO-60': 'C', 'PO-59': 'C', 'PO-58': 'A', 'PO-57': 'D', 'PO-56': 'D',  # r6891: PO-13's live remainder, the acoustic sector.
          'PO-45': 'A', 'PO-46': 'A',  # ⛔ r6549: a FOURTH hardcoded list -- GROUP -- and a row missing here raises.
          'PO-10': 'D', 'PO-13': 'D', 'PO-14': 'A', 'PO-15': 'C', 'PO-16': 'D',
          # ** r3095: the four brought in from p0's frontiers and the field ledgers.  PO-17 and
