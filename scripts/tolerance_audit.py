@@ -155,7 +155,13 @@ def run_one(path, mode, timeout, outfile):
     if code is None:
         return dict(path=path, verdict='NO-SITES', sites=[], secs=0.0)
     d = os.path.dirname(path)
-    fd, tmp = tempfile.mkstemp(prefix='_tolaudit_', suffix='.py', dir=d)
+    # ⛔ r6977+70.1 (node 70): NOT `.py`.  The copy must sit in the receipt's own directory (imports,
+    #   `__file__`), but under a `.py` name it is also inside every `receipts/**/*.py` glob in the tree --
+    #   and it lives for a fraction of a second.  A receipt or runner that globs, then opens, while Q50 is
+    #   running beside it finds a file that is gone: `G50`'s tree digest raised on it, intermittently, in
+    #   two tolerance probes (caught by polling the tree: a new `_tolaudit_*.py` every 0.2 s).  Python runs
+    #   a script whatever its extension, so the suffix is all that changes.
+    fd, tmp = tempfile.mkstemp(prefix='_tolaudit_', suffix='.tolaudit', dir=d)
     t0 = time.time()
     try:
         with os.fdopen(fd, 'w') as f:
@@ -190,7 +196,7 @@ def sweep_debris(verbose=True):
     n = 0
     for dp, _, fns in os.walk(os.path.join(ROOT, 'receipts')):
         for fn in fns:
-            if fn.startswith('_tolaudit_') and fn.endswith('.py'):
+            if fn.startswith('_tolaudit_') and fn.endswith(('.py', '.tolaudit')):   # .py: debris from before r6977+70.1
                 os.remove(os.path.join(dp, fn))
                 n += 1
     if verbose and n:

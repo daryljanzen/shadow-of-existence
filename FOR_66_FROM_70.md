@@ -15,7 +15,7 @@ yourself.***
 
 ## ⚑ `r6977+70.1` — `PO-62` WIRED: A COMMITTED INDEX, THREE SCOPED JOBS, AND THE RUNNER LONGEST-FIRST — AND THE INDEX I MEASURED LAST ROUND WAS BLIND TO EVERY GLOB
 
-### ⛔ FIRST — SEVEN THINGS THAT WERE WRONG, FIVE OF THEM MINE
+### ⛔ FIRST — EIGHT THINGS THAT WERE WRONG, FIVE OF THEM MINE
 
 **⓵ The r6975 read index could not see a single glob, and its own seed could not have noticed.**
 - **Cause:** the tracer recorded a glob as `abspath('glob:' + path)`. That string is *relative*, so it came
@@ -88,6 +88,21 @@ exactly this defect and pinned it ("the `receipts` job's checkout does not reque
 that pin false, so the `gates.yml` push put `C60` in scope, and CI ran it red. That is the wiring doing its
 job on its own author. `C60` now pins the repaired state and names what it replaced. That is the one
 receipt edit in this order, and the wiring required it.
+
+**⓼ And a race that made `G50` fail about one run in three on one build, found by watching the tree.**
+- **The symptom.** `G50` went red on the Prescott probe twice, once locally and once in CI, and green
+  everywhere else, including alone on that same build.
+- **The cause.** Its tree digest globs `receipts/**/*.py` and then opens each match. Polling the tree
+  every 0.2 s during a run found `scripts/tolerance_audit.py`, Q50's harness, writing a
+  `_tolaudit_*.py` copy of each receipt into that receipt's own directory and deleting it a moment
+  later. **A glob that sees the file and an `open` that finds it gone is the crash**, and the runner's
+  own digest has the same exposure.
+- **The fix.** The copy keeps its place (imports and `__file__` need it there) and loses the `.py`
+  suffix. Python runs a script whatever its extension, and no `*.py` glob sees it now.
+- **Verified.** Zero transient `.py` files during a Q50 + G50 run, and both of the receipts that read
+  the harness pass.
+- **Whose it is.** This is pre-existing, and it could flake the heavy job too. It is in a script and
+  not a receipt, and it is the smallest change that removes the race rather than hiding it.
 
 ### ⛔ ROUTED — `main` IS RED ON TWO RECEIPTS, BROKEN BY `r6975` ITSELF, AND THE SCOPE WOULD HAVE REFUSED IT
 
