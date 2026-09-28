@@ -11,6 +11,14 @@ on:
   pull_request:
   schedule:
     - cron: '0 3 * * *'      # nightly: the compile and heavy tiers
+    # ⛭ r6977 (66), PO-62: the MONTHLY BACKSTOP.  The two dynamic detectors are to be scoped per
+    #   push (node 70's r6975+70.1 measured 13 s and 210 s x 3 builds of compute per push against a
+    #   whole sweep's 10,700 s), and a scope is a measurement of ONE tree: a receipt whose reads
+    #   change is indexed stale until the next full trace.  ** So the backstop is what keeps the
+    #   index honest, and it is not optional to the cadence -- it is the half that catches what the
+    #   scope cannot. **  ⌗ *The freeze-out pin makes the case: it was born in the repository's root
+    #   commit, so no per-push trigger could ever have seen it, and one full sweep found it.*
+    - cron: '0 4 1 * *'      # monthly: the full backstop sweeps, and the read index they refresh
   # ⛭ r4004: `workflow_dispatch` WAS NAMED IN THE HEAVY TIER'S OWN `if:` AND WAS NOT A TRIGGER
   #   HERE, so that arm of the condition could never be true and the receipts tier had exactly
   #   one way to fire: the 03:00 cron.  A job that declares two routes and has one is a job
@@ -76,7 +84,7 @@ jobs:
                    check_appendix_current check_currency check_deferrals_resolve check_depth \
                    check_model_ledger check_one_value check_paper_tense check_protected_dupes \
                    check_view_tables check_absence_claims check_pages_current check_frontier_current check_generators_parse check_narration_splice check_knob_shadows check_receipt_home check_receipt_orphans check_receipt_tex_scope check_row_matchers \
-                   check_self_certification check_settings check_theatre_currency \
+                   check_self_certification check_settings check_theatre_currency check_env_fingerprint \
                    check_marker_buried check_landing_rows_trace check_one_state check_revision_collisions check_glyph_coverage check_register_ids check_citation_chain check_source_hygiene check_bibitem_titles; do
             echo "── $g"
             # NODE=ci added r2504+c54.198 (54): check_claims no longer defaults to a REAL node,
@@ -141,3 +149,28 @@ jobs:
       - run: pip install numpy scipy sympy mpmath camb pynucastro matplotlib
       - run: python3 scripts/run_all_receipts.py --jobs 4 --timeout 600 | tee receipts/RUN_RESULT.txt
       - run: python3 corpus/check_receipts_run.py
+
+  # ===================================================================================================
+  backstop:
+    name: backstop — the full sweeps, monthly, and the read index they refresh
+    # ⛭ r6977 (66), PO-62.  ** Fires only on the monthly cron and by hand **, never on a push: the
+    #   whole tolerance sweep is three instrumented suite runs and would quadruple the receipts job.
+    #   ⌗ *`github.event.schedule` is how the two crons are told apart; without it this job would fire
+    #   nightly and the nightly tier would quietly become four times its measured cost.*
+    if: (github.event_name == 'schedule' && github.event.schedule == '0 4 1 * *') || github.event_name == 'workflow_dispatch'
+    runs-on: ubuntu-latest
+    timeout-minutes: 300
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: { python-version: '3.11' }
+      - run: pip install numpy scipy sympy mpmath camb pynucastro matplotlib
+      # ⓵ the cheap structural class, whole -- also wired per push, so this is only a cross-check
+      - run: python3 scripts/sweep_vacuous_pins.py
+      # ⓶ the runner-read class, whole.  ** This is also what REFRESHES THE READ INDEX **, which is
+      #   why the backstop cannot be dropped once the per-push scopes are wired.
+      - run: python3 scripts/sweep_runner_reads.py
+      # ⓷ the machine-dependent-tolerance class, whole, across the builds that decide round-off.
+      #   ⚠ *If this goes red on a build nobody has swept, the remedy is to repair or name what it
+      #   flags and THEN refresh receipts/ENV_FINGERPRINT.txt -- never the file alone.*
+      - run: python3 scripts/sweep_tolerances.py

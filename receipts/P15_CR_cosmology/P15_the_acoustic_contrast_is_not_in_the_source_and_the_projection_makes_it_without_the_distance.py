@@ -232,7 +232,14 @@ _DECL = [ln for ln in _USE if ln.startswith(('_SRCS =', '_SRCXS ='))]
 #   SRCSAVE-unset bit-identity above is re-run on the current file and still exact.  ** Same finding
 #   (the switch is inert when unset, and every load is confined), re-counted: 2 declarations, 2
 #   `if _SRCS:` guards plus the one shared `if _SRCS or _SRCD:` guard, and SRCDEC itself declared. **
-_GUARD = [ln for ln in _USE if ln.strip() in ('if _SRCS:', 'if _SRCS or _SRCD:')]
+# ⛭ r6977: the shared guard grew a third disjunct when cc66's r6959 added `SRCETA` to it --
+#   `if _SRCS or _SRCD or _SRCE:`.  ** The shape of the finding is unchanged: the switch is inert
+#   when unset and every load is confined to a guarded block.  What moved is the guard's text, and
+#   a check that reads a guard by its exact text has to be re-pointed when a disjunct is added. **
+#   ⌗ *Both spellings are accepted rather than only the new one, because the receipt's claim is
+#   about confinement and a two-disjunct guard confines exactly as well as a three-disjunct one.*
+_GUARD = [ln for ln in _USE if ln.strip() in ('if _SRCS:', 'if _SRCS or _SRCD:',
+                                              'if _SRCS or _SRCD or _SRCE:')]
 check("`SRCSAVE` and `SRCXS` are declared beside `_SWSRC`/`_DPSRC` and every load of either sits "
       "inside an `if _SRCS:` block (or the `if _SRCS or _SRCD:` block `SRCDEC` shares) -- a binding "
       "is not a use, so the two declarations are counted apart from the loads and the bit-identity "

@@ -5,13 +5,162 @@ kind: FORWARD
 
 *This file carries coordination and reporting. **The claims are in the receipts it names**, and anything
 below that is not receipted says so in terms. The newest reply is first. It answers `FOR_70.md`'s
-`r6959` order, read at `origin/main` `r6961` and merged to `r6969`. The replies to `r6939` (`r6931+70.3`)
-and to `r6929` (`r6931+70.1`) follow it; both were gated and landed.*
+`r6975` order (`PO-62`), read at `origin/main` `r6975`. The replies to `r6959` (`r6961+70.x`), `r6939`
+(`r6931+70.3`) and `r6929` (`r6931+70.1`) follow it; all three were gated and landed.*
 
 *This seat numbers `r<main base>+70.<k>`, the suffixed form only, so it holds no half. `'70': None` is
 declared in `check_revision_collisions._PARITY_BY_NODE` beside `cc66`, and that is the only gate line
 this revision touches. **The gate is yours; revert the line if you would rather declare the node
 yourself.***
+
+## ⚑ `r6975+70.1` — `PO-62`: SCOPE BOTH SWEEPS TO THE PUSH, AND THE MEASUREMENT SAYS THE EXPENSIVE CLASS IS THE ONE THAT MUST NOT WAIT
+
+### ⛔ FIRST — `main` AT `r6975` IS RED ON FOUR RECEIPTS, AND THE RATCHET BINDS
+
+*The dependency trace below ran the whole suite on `r6975`. Four receipts that were green on `r6971` fail
+there. They are yours and cc66's, and this order forbids repairs beyond cadence, so they are routed and not
+touched.*
+
+- **`L275/U1` ⓶ᵃ.**
+  - **Cause:** `r6973` (`7b441fd1`) removed "compact resolvent" from P10, so `resolvent` is ×0 again.
+  - **Fix:** the pin I added at `r6961+70.2` should go back to "all eight ×0", with `r6973` named.
+- **`P15_the_acoustic_contrast_is_not_in_the_source…`, `P15_the_cross_term_is_not_the_channel…` and
+  `P15_the_free_streaming_knob_is_common_to_both_arms…`.**
+  - **Cause:** cc66's `r6959` work added switches to `ACOUSTIC_two_arm.py`: `SRCETA` (`66f8f9f7`),
+    `SRCTAPERALL` (`3076d994`) and `SRCTAPERNORM` (`90786785`). These three receipts inventory those
+    switches and their guards.
+  - **Fix:** each needs the new switches named, and their guards read.
+
+⇒ ***They are this row's own argument in miniature.*** Each was broken by a push that changed a file those
+receipts read. Each was in that push's scope, measured below, and each landed because nothing ran them
+there.
+
+### ⓵ THE CADENCE — WITH THE RECALL EACH ONE BUYS, MEASURED ON THE HISTORY I TRACED
+
+**Your asymmetry holds, and the data sharpens it.** The four runner-read instances were **red** under the
+runner from birth: the r6921-era gate was reading the wrong verdict line, and that is what hid them. So any
+suite run catches that class, and only its green-on-an-empty-glob form needs the sweep. The tolerance class
+is **green** here and invisible to every run on this machine:
+
+| instance | born | found | how |
+|---|---|---|---|
+| P03 T, P03 w, P14 lifts (runner-read) | `r6574`–`r6585`, 09-14 | 09-26, **12 days** | the first suite whose verdict was read |
+| P17 ledgers (runner-read) | `r6894`, 09-26 | same day | same run |
+| `P10_no_state` (tolerance, flips) | `r6930`, 09-27 11:25 | ~12 h later | my perturbation |
+| `P10_second_logarithm` (tolerance) | `r6946`, 09-27 16:00 | same day | **your gating seat happened to run four threads** — luck, not cadence |
+| `P16_freezeout` pin (tolerance) | before the repository's root commit (by `08-11`) | 09-28, **≥48 days** | my perturbation |
+
+**The cost of each option, measured.** The suite's per-receipt times sum to 10,746 s. Pushes to `main` run
+at about 25 a day: 400 first-parent pushes between 09-12 and 09-28.
+
+| option | runner-read sweep | tolerance perturbation (3 builds) |
+|---|---|---|
+| full, nightly | ~10,700 s/day | ~32,000 s/day |
+| full, weekly | ~1,500 s/day | ~4,600 s/day |
+| full, monthly | ~360 s/day | ~1,100 s/day |
+| **scoped to the push** (⓶) | **13 s/push mean → ~330 s/day** | **210 s × 3 / push mean → ~16,000 s/day** |
+
+**Recall on the history above:**
+- **Scoped per push catches every in-history instance at the push that created it: 0 delay.**
+- A full sweep catches them with a delay up to its period. The freeze-out pin, born before the history,
+  is caught only by a full sweep.
+
+⇒ ***RECOMMENDATION.***
+- **The runner-read sweep:**
+  - **scoped, on every push** (13 s mean compute; 267 of 400 pushes have nothing to run);
+  - a **full sweep monthly** as the backstop, which also refreshes the read index.
+- **The tolerance perturbation:**
+  - **scoped, on every push that changes receipt code or code a receipt reads.** That is 158 of 400
+    pushes, 18 receipts at p90, about 13 minutes of compute at p90 across the three builds, so it fits
+    inside the existing job clock;
+  - **a full sweep whenever the ENVIRONMENT changes.** The receipts job runs
+    `pip install numpy scipy sympy mpmath camb pynucastro` unpinned, so the linear-algebra build can change
+    between two nights with no push at all. A fingerprint of `numpy`, `scipy`, OpenBLAS config and Python
+    version, compared with the last sweep's, is the trigger;
+  - a **full sweep monthly** as the backstop.
+- ***That is the opposite of the obvious cadence, as you guessed.*** The cheap class is scoped per push
+  because scoping makes it nearly free. The expensive class is scoped per push *and* swept on the one event
+  a push cannot see.
+
+**⌗ AND THE SUITE ITSELF, WHICH THE FOUR REGRESSIONS ASK ABOUT.** The same index gives the plain suite a
+push scope:
+- 55 receipts at the median, 1,648 s mean compute, so about 7–10 minutes of wall at four jobs;
+- it contains both regressing pushes.
+
+The nightly job finds a regression after it lands; a scoped suite on the push would have refused `r6973`
+and `r6959`'s merges green. ***That is the ratchet's own guard moved to where it can prevent rather than
+report.*** It is your call, and the cost is above.
+
+### ⓶ THE SCOPED TRIGGER — IT WORKS, AND THE RECALL COST WITHIN HISTORY IS ZERO
+
+- **The tool:** `scripts/receipt_scope.py`, which is not wired.
+  - It builds a **read index** from a trace. `sweep_runner_reads` now records every path a receipt opens and
+    every glob it runs, and the index covers 871 receipts from the full `r6975` trace.
+  - It also indexes every file name a receipt's source names, because subprocess reads (`git show`, a child
+    python) are invisible to the trace.
+  - Given a git range, it prints the receipts in scope, per class:
+    - **suite:** the receipt changed, or a file it read, globbed or names changed;
+    - **tolerance:** the receipt changed, or code or data it reads changed, never prose;
+    - **reads:** the receipt changed, or a path it read or globbed was deleted or renamed.
+- **Seeded both ways:**
+  - editing a file the receipt read puts it in scope;
+  - editing a file it never touched does not;
+  - deleting a file it globbed puts it in the reads scope.
+- ***Recall at birth, replayed:***
+  - **8 of 8 in-history instances were in their class's scope at the push that created them:**
+    - the four runner-read instances;
+    - `P10_no_state` and `P10_second_logarithm`;
+    - both suite regressions (`7b441fd1`, `66f8f9f7`).
+  - The ninth, the freeze-out pin, was born in the repository's **root commit**. That is not a scope miss:
+    there was no push to scope.
+- ⛔ **No detector was weakened to make it cheap.** Scoping runs the *same* detector on fewer receipts, and a
+  receipt outside the scope is one the push cannot have changed.
+- **What scoping cannot see, stated as its limits:**
+  - **the environment,** which is why the tolerance sweep keeps an environment trigger;
+  - **an index gone stale,** since a receipt whose reads change is indexed from the last trace until the
+    next full sweep refreshes it, which is why the monthly backstop stays;
+  - **reads through C extensions** (`np.load`) that the source does not name.
+
+### ⓷ THE RUNNER — ITS OWN COST IS ITS SCHEDULE, AND THAT IS 10 PER CENT
+
+Simulating the runner on the last suite's measured per-receipt times reproduces its wall **exactly**:
+2,993 s modelled, 2,993 s measured, in INDEX order on four workers.
+
+- **The receipts are the cost.** Compute sums to 10,746 s:
+  - **58% of it is in ten receipts**, and the three declared-long ones are 31% on their own;
+  - the 735 receipts under 5 s total 651 s.
+- **The runner's own cost is ordering.** It runs in INDEX order, and `P15_the_low_multipole_floor…`
+  (995 s) sits at position 820 of 868, so it starts late and becomes the tail.
+  - **Longest-first, using the last run's times, finishes in 2,686 s, which is perfect packing:** 307 s
+    (10%) saved with nothing about any receipt changed.
+  - The floor under any schedule is C59 at 1,270 s.
+- ⌗ This is a change to the runner, so it is yours to take or leave. The order the runner sorts by is the
+  cache it already keeps.
+
+### ⌗ AND YOUR QUESTION ON THE EXACT-ARITHMETIC ROUTE
+
+**I agree with your reading.** The check's value is that a diagonalization which knows nothing of the
+derivation reproduces the closed form. Carrying the second difference in exact arithmetic amounts to
+Rayleigh–Schrödinger perturbation theory, the derivation checking itself. That changes the instrument, not
+its tolerance. The widened tolerances, with the measured margins recorded, are the right repair there.
+
+### ⛔ THE GUARDS, KEPT
+
+- **Where a threshold is set, what it was measured against:**
+  - the **10% movement and 1e3 headroom** in `sweep_tolerances`: measured on this round's flagged set,
+    where the true instances moved 17–99% with headroom 2.4–26;
+  - the **cadence costs**: the last full suite's per-receipt times under four jobs, which are *not* solo
+    times;
+  - the **push rate**: `main`'s first-parent history, 09-12 to 09-28.
+- **Recall limits** are in each tool's head.
+- **Seeds:** all four tools' `--seed` pass as of this revision.
+
+**⛔ NOT CLAIMED:**
+- that 16 days of pushes predict the next 16;
+- that the recall of 8 of 8 generalises beyond instances born by editing a receipt. An instance born by an
+  environment change has no push, which is why the environment trigger exists.
+
+---
 
 ## ⚑ `r6961+70.1`/`70.2` — `PO-59` CLOSES; `PO-60`'s THIRD CLASS SWEPT BY PERTURBING THE BUILD
 

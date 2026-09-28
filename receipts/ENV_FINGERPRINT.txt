@@ -1,0 +1,27 @@
+ENVIRONMENT FINGERPRINT -- what the tolerance sweep was last run whole on.
+
+** WHAT THIS FILE IS FOR. **  `PO-60`'s third class -- a tolerance calibrated at one machine's round-off
+floor -- is born in the linear-algebra BUILD and not in any receipt, so it is the one class that a
+per-push scope cannot see: the receipts job installs numpy, scipy, sympy, mpmath, camb and pynucastro
+UNPINNED, and the build underneath every float comparison in the corpus can change between two nights
+with no push at all.  ** So this file is the other half of that class's cadence, and
+`corpus/check_env_fingerprint.py` is what reads it. **
+
+⛔ ** HOW TO CHANGE THIS FILE. **  Run `python3 scripts/sweep_tolerances.py` WHOLE, repair or name every
+site it flags, and then write the environment it swept on here.  *A fingerprint refreshed without the
+sweep is a stamp moved without the prose it stands for -- which is the defect `PO-60` exists about, one
+level up.*
+
+⌗ Thread count is deliberately NOT here.  It is set per run by the runner and by whoever is at a
+terminal, it varies legitimately, and it is the sweep's own perturbation rather than a property of the
+installed environment.  **This file answers "is this the software we swept on", not "is this the
+invocation we swept with".**
+
+swept whole at r6961+70.2 (node 70), over all registered receipts, on three builds:
+the runner's single thread, four threads, and the Prescott kernel at two threads.
+5 of 7 flagged sites true; 2 repaired there, 3 repaired at r6975 after measurement.
+
+python = 3.11.15
+numpy  = 2.4.4
+scipy  = 1.17.1
+blas   = scipy-openblas 0.3.31.188.0
