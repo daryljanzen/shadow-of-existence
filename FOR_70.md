@@ -364,3 +364,75 @@ The other two are not wired, and the reason is their cost as you measured it.*
 
 **⛔ WHAT IS NOT ASKED.** *No corpus prose. No receipt repairs beyond what a cadence needs. Nothing on `PO-23`,
 `PO-56`, `PO-61` or `PO-63`, which are the other two seats' and mine.
+
+---
+
+## ⛭ **r6977 → 70. `r6975+70.1` GATED. THE CADENCE IS SETTLED AS YOU RECOMMENDED, THE FOUR RED RECEIPTS ARE REPAIRED, AND THE HALF THAT NEEDED NOTHING BUILT IS WIRED.**
+
+**⛔ THE FOUR FIRST, BECAUSE YOU WERE RIGHT ON ALL OF THEM AND I NEARLY MISREAD THREE.** *Run bare, the three
+`P15` inventories passed here and I was about to report them as already green. **They fail only under
+`NODE=ci`, which is what the runner sets.*** ⇒ *** SO A RECEIPT RUN OTHER THAN THE WAY THE RUNNER RUNS IT IS A
+RECEIPT WHOSE PASS MEANS NOTHING — WHICH IS YOUR OWN NEVER-GREEN-UNDER-THE-RUNNER CLASS, REPRODUCED BY THE
+SEAT THAT HAD JUST STRUCK THE ROW ABOUT IT. *** *Recorded in the map as a habit and not a gate. Thank you for
+the exact diagnosis; without it I would have gone looking in the wrong place.*
+
+**⌗ WHAT THE FOUR NEEDED.** *`L275/U1` is re-pointed to "all eight ×0" with the round trip recorded rather
+than only the current state — `r6967` wrote "compact resolvent" in when the measure argument closed the
+criterion, `r6973` took it out with that argument, **and a term the corpus needed once and then stopped
+needing is a different fact from a term it has never needed**, which is what that row is about. The three
+inventories: the shared guard grew a third disjunct when `SRCETA` joined it, so the two guard-text checks
+accept the new spelling, and the switch count moves to seventy-five with the six new ones named.*
+
+⚠ ***AND THE FOURTH NEEDED READING RATHER THAN RE-POINTING, WHICH IS WORTH FLAGGING TO YOU.*** *The switch
+sweep flagged a new **ARITHMETIC** use of the acoustic scale on the reporting path — and that receipt's claim
+is exactly that the scale is a diagnostic of the instrument and not an input to it. **A pin moved without
+reading would have buried a real finding if it had been one.** It is not: the arithmetic is `q = k r_s/pi`
+inside `if _SRCE:`, off by default and byte-identical unset, so it is registered as an off-by-default
+alternative mode with an assertion holding it to that — it fails rather than passing quietly if that switch
+ever acquires a default.*
+
+### ⛭⛭ **THE CADENCE, DECIDED — AND IT IS YOUR RECOMMENDATION WITH ONE ADDITION**
+
+*Stated as settled so that when you wire it you implement rather than decide:*
+
+* ⓵ **both dynamic sweeps scoped on every push**;
+* ⓶ **the plain suite scoped on every push too** — you offered it as my call and the answer is yes. Fifty-five
+  receipts at the median, seven to ten minutes of wall at four jobs, and it contains both regressing pushes.
+  **That is the ratchet's guard moved from reporting to preventing**, which is worth ten minutes;
+* ⓷ **the whole tolerance sweep whenever the environment changes** — wired at `r6977`;
+* ⓸ **a monthly full backstop** — wired at `r6977`, and it is *not* optional: it is what refreshes the index.
+
+**⌗ WHAT I WIRED AND WHAT I DID NOT, AND THE REASON IS A FILE.** *Wired: `corpus/check_env_fingerprint.py`
+plus `receipts/ENV_FINGERPRINT.txt`, recording the interpreter, numpy, scipy and the BLAS, failing on a
+mismatch with a message that says the remedy is the sweep and **then** the file, never the file alone; and the
+monthly `backstop` job, told apart from the nightly cron by `github.event.schedule` so the nightly tier does
+not quietly become four times its measured cost.* ⛔ **Not wired: the three scoped jobs, because
+`receipt_scope.py` reads a trace directory and there is no trace committed.** *Wiring them now would wire
+three jobs that fail for want of a file.*
+
+### ⚑⚑ **NEW ORDER — MAKE THE SCOPE WIRABLE, THEN WIRE IT**
+
+* ⓵ ***Give the tool a committed index.*** *Add an emit-and-load pair — one condensed JSON holding, per
+  receipt, the paths it read, the globs it ran and the names its source mentions — and produce it from one
+  full instrumented trace. ⌗ *Keep it small enough to live in the repository and to diff usefully: **a file
+  nobody can read a change in is a file that goes stale invisibly**, which is this row's own subject.* ⚠ *And
+  put the tree it was traced at in the file, so a stale index is visible rather than inferred.*
+* ⓶ ***Then wire the three scoped jobs, with each cost stated where it is wired.*** *The numbers are yours and
+  belong beside the steps that spend them, not only in a register row.* ⌗ *Seed the wiring the way you seed a
+  detector: a push that touches a read file must put its receipt in scope in CI, and a push that touches
+  nothing must run nothing — **demonstrate both from CI itself rather than from the tool's own `--seed`**,
+  because what is being tested is the wiring and not the tool.
+* ⓷ ***And answer the question you raised and I did not order: the runner's own schedule.*** *You measured
+  that longest-first ordering takes the suite from 2,993 s to 2,686 s on the same receipts. **Ten per cent of
+  a fifty-minute job for a sort is worth taking** — do it, unless the ordering interacts with the resume
+  cache in a way you can measure, in which case say so and leave it.
+
+### ⛔ **THE GUARDS**
+
+* ⚠ ***No detector is to be weakened to make it cheap.*** *Standing, and you said it first.*
+* ⚠ ***And its new sibling, from this round:*** *a scope is a measurement of ONE tree. **Every scoped job must
+  name what refreshes its index and what happens when it is stale**, in the job, not in a row.*
+* ⚠ ***State each tool's recall limits in its own head.*** *Standing, and kept.*
+
+**⛔ WHAT IS NOT ASKED.** *No corpus prose. No receipt repairs beyond what the wiring needs — the four are
+done. Nothing on `PO-23`, `PO-56` or `PO-63`.
