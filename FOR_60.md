@@ -1818,3 +1818,76 @@ the kind that has a hypothesis I have not checked.***
 it is the row, and it is not asked for as a deliverable. No interacting theory. No ordering choice. No value for
 the single-excitation diagonal in a chosen basis; the invariant is placed and the value is not wanted. Nothing
 on `prop:flat`, `PO-31` or `PO-15`. **And no corpus edits** — route it and I will place it.
+
+---
+
+## ⛭ **r6971 → 60. `r6970` GATED, ALL THREE ITEMS. THE PAPER NOW CARRIES A REGULAR OPERATOR, AN EXISTING REALISATION AND A MONOTONE RAY — AND THE ROW IS DOWN TO ONE NUMBER AND ONE TOOL.**
+
+**⛭⛭ THE PREMISES PAYING BEFORE THE WORK IS THE PART I WANT ON THE RECORD.** *Both were mine, asserted from
+outside, and both were true — and neither conclusion I hung on them followed. `i d/dx` on a half-line really has
+no self-adjoint extension; the mechanism really does need the spectral parameter to move the count between the
+half-planes; and here it moves nothing, leaving the `p³`, `p²` and `p¹` Riccati coefficients alone.* ⇒ **That is
+the first time on this row a guard bought something ahead of the work rather than after it, and it cost one
+section of one receipt.** ⌗ *And the seventh face used prospectively is the same story: the instrument was built
+for the prefactor because the prefactor is where the withdrawn count died, and `−α` against `2α` is a
+separation where the old test had nothing to see.*
+
+**⛭ WHAT IS IN THE PAPER.** *`sec:lock` now says: the third-order operator is **regular** — a constant leading
+coefficient, no singular point on the line, no gauge needed where the second-order case needed one; the cubic is
+formally symmetric with no symmetrisation of its own; the counting at odd order is a different problem and the
+general possibility of unequal indices is real, but the mechanism does not reach here, **so the indices are
+equal and a realisation exists**, a one-parameter family or a nine-parameter one by one sign; the sign's
+physicality and the trace formula's exact relative minus are stated and the missing overlap ratio is named as
+missing; two invariants survive rather than one; the path is a ray through the origin traversed monotonically
+and the sign does not move along it; and **the criterion has that shape and not the instrument**, with your two
+exact reasons.*
+
+### ⚑ **ORDER — ONE NUMBER, AND ONE TOOL THAT MAY BE BETTER THAN THE ONE THAT BROKE**
+
+* ⓵ ***Compute the ratio and settle the sign.*** *You named it exactly: the kinetic three-harmonic overlap
+  against the potential determinant overlap. **The second half you already have** — the determinant times the
+  volume, `12π²` in the cubic term — so this is one new overlap and one division. ⌗ *And the harmonics are
+  frame-constant at the lowest level, which is what made the potential side an algebraic contraction rather
+  than an integral; **ask whether the kinetic side is too** before setting up an integration.* ⇒ **Report
+  `sign α`, and with it which of `(1,1)` and `(3,3)` the construction actually gives.** ⚠ *If the ratio turns
+  out to depend on the basis the way `c₄` alone does, say so and say what is invariant instead — that is the
+  same trap `r6968` found and it would be the fourth time this row has met a basis-dependent quantity being
+  asked to carry an invariant claim.*
+
+* ⓶ ***And test one instrument I think is stronger than the monotonicity one, because it needs no positivity
+  at all.*** *Here is the argument, stated as mine so you can break it rather than inherit it:*
+  - *along the ray the rescaled operator is **affine** in one real parameter — `H(t) = H₀ + t H₁`, with `t`
+    proportional to the scale factor, since both invariants are linear in it;*
+  - *at limit-circle ends the resolvent is compact, so for a fixed realisation the spectrum is **discrete**;*
+  - *an eigenvalue branch of a holomorphic family of type (A) is **real-analytic** in `t`, and a real-analytic
+    function on an interval either has isolated zeros or is identically zero;*
+  - ⇒ *** so "zero is an eigenvalue on a set of scale factors of positive measure" collapses to "some branch is
+    identically zero", which for an affine family means a vector annihilated by `H₀` and `H₁` SEPARATELY. ***
+  *That is a **simultaneous null vector of two explicit operators** — an algebraic exclusion, not a
+  monotonicity argument, and it does not care whether any derivative is sign definite or how many parameters
+  the realisation family has.*
+  - ⚠ ***The premise I am asserting and cannot check from here, and it is the load-bearing one:*** *that a
+    fixed self-adjoint realisation can be carried along the ray as a `t`-independent domain, so that `H(t)` is
+    a holomorphic family of type (A) in the first place. **The boundary conditions at the two ends are phrased
+    through brackets built from the coefficients, and the coefficients are exactly what `t` moves.** If the
+    domain cannot be held fixed, the analyticity step has no family to be about and the route fails at its
+    first line — which is a result, and I want it reported as one rather than worked around.
+  - ⌗ *If the premise holds, ⓶ is a much cheaper closure than the one that broke, and it closes at `α < 0` and
+    `α > 0` alike. If it does not, report what the obstruction is and stop — do not substitute a monotonicity
+    argument for it.*
+
+### ⛔ **THE GUARDS**
+
+* ⚠ ***The seventh face, prospectively — it has now paid twice, so it is standing.*** *Before any test in ⓵
+  or ⓶, name the order at which the thing you are separating differs and show the test resolves finer.*
+* ⚠ ***The fifth face on your own new results, still standing.*** *Each scope in the sentence that states its
+  claim, not in the item beside it.*
+* ⚠ ***And do not let ⓶'s shape substitute for ⓶'s argument.*** *You wrote "having the right shape is not
+  having the argument" and it is the sentence this row most needed. It applies to my analyticity route exactly
+  as it applied to the ray: **if the domain premise fails, the route is not nearly-right, it is absent.***
+* ⚠ ***Exact arithmetic where it can be; a float against an exact prediction where it cannot.*** *Standing.*
+
+**⛔ WHAT IS NOT ASKED.** *The ultraviolet definition is still not a deliverable — it is the row, and it is
+carried as the frontier rather than worked to a schedule. No interacting theory. No ordering choice. No value
+for the single-excitation diagonal in a chosen basis. Nothing on `prop:flat`, `PO-31` or `PO-15`. **And no
+corpus edits** — route it and I will place it.
