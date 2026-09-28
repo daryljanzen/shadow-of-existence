@@ -65,3 +65,42 @@ was. Both at `LSTEP=1 LMAXL=2000`, `r6941_fine_*`'s own grid.
 
 ⌗ **Path provenance.** Every number is the **hierarchy** path (`LOS=1 HIER=1`). `DPSRC` reaches all three
 paths but only the hierarchy one is read here. ⌗ **No detection language.**
+
+---
+
+# SUPPLEMENT — ⓵'s DECOMPOSITION SHARPENS T3, AND THIS IS STILL BEFORE THE RUNS LAND
+
+*Written after the file above and **before any `DPSRC` slice finished**, which is checkable in the
+history. ⓵ is analysis on banks already in hand and it changes what T3 should be looking for, so the
+sharper target goes in now rather than being applied afterwards.*
+
+**⓵'s result.** Dividing the measured excess by what the window channel actually delivers at the arm's
+own size leaves a remainder which is $1.0184$ at $q=0$ — **$46$ per cent of the offset R1 fired on** —
+and which carries $123$ per cent of the measured $q^{2}$ slope. ⇒ *So the remainder is where the growth
+with wavenumber lives, and about half the long-wavelength offset.*
+
+⛭⛭ **AND THE REMAINDER IS TROUGH-WEIGHTED, WHICH IS THE OPPOSITE OF THE CHANNEL IT WAS LEFT BY.**
+On the anchored reading: the whole excess is $+5.66$ per cent on heights against $+2.58$ on depths
+(ratio $2.20$); the window channel delivers $+4.59$ against $+0.37$ (ratio $12.44$); **the remainder is
+$+1.07$ against $+2.21$ — a ratio of $0.49$.**
+
+⇒ ***So T3's target is not "symmetric". It is trough-weighted by about two***, and the term-mix swap has
+a two-sided bar rather than a one-sided one:
+
+* **T3′ — THE REMAINDER'S OWN WEIGHTING.** If the `DPSRC` swap is to be the remainder, its anchored
+  height-to-depth ratio must land near $0.5$ and on the trough side of $1$. ⛔ ***Refuted as the remainder
+  if it comes out peak-weighted (ratio above $1$), and refuted equally if it is flat (ratio within ten
+  per cent of $1$), because the remainder is not.***
+* ⌗ **And there is a reason to expect the trough side, stated before the run:** the Doppler is a quarter
+  period out of phase with the monopole, so it *fills* the oscillation rather than deepening it, and
+  removing it should take more out of the troughs than it adds to the peaks. **If that is right the swap
+  lands near $0.49$ by its own physics and not by fitting.**
+
+⚠ **AND ONE THING ⓵ TURNED UP THAT IS NOT A PREDICTION BUT A CORRECTION OF FRAMING, RECORDED HERE SO IT
+IS NOT MISTAKEN FOR A FINDING OF THE RUN.** *`cc66.46`'s "symmetric about the envelope" is the band
+variance split's statement — $1.0668$ peak side against $1.0561$ trough side. On the **anchored** heights
+and depths the same excess is peak-weighted $2.20$, because the control's depths are more than twice its
+heights and equal percentage changes are not equal variance shares.* ⇒ **Two statistics, one of them
+symmetric and one of them not, on the same excess** — the standing guard, firing again. *Everything in
+`cc66.47` compared SHARES of the arm's own excess and so is unaffected; but the word "symmetric" belongs
+to the variance split and I will say which statistic every weighting number is on.*
