@@ -36,6 +36,10 @@ with its filesystem reads observed** (`open`, `io.open`, `pathlib.Path.open`, `g
     python), and a read through a C extension (numpy.load, np.loadtxt) -- those bypass the Python
     hooks.  Stated as recall limits.
 
+** r6975+70.1: EVERY TRACE ALSO RECORDS ITS READ SET ** -- each path opened and each glob run, absolute, in
+the log's `reads` field.  `scripts/receipt_scope.py` builds its read index from it, so one full sweep is
+also the dependency index that scopes the next month's pushes.
+
 Usage:
     python3 scripts/sweep_runner_reads.py --out DIR [--jobs 4] [--root R]   # trace every receipt
     python3 scripts/sweep_runner_reads.py --report DIR                       # summarise a trace
@@ -65,18 +69,26 @@ def trace_one(log, target):
     import runpy
 
     events = []
+    reads = set()          # every path opened and every glob pattern, absolute -- the dependency index
     real_open, real_popen = builtins.open, pathlib.Path.open
+
+    def read(p):
+        if len(reads) < 5000:
+            reads.add(os.path.abspath(os.fspath(p)))
 
     def note(kind, arg, n=None, ok=None):
         if len(events) < 400:
             events.append({'kind': kind, 'arg': str(arg)[:300], 'n': n, 'ok': ok})
 
     def _open(file, *a, **k):
-        if isinstance(file, (str, os.PathLike)) and not os.path.isabs(os.fspath(file)):
-            note('open_rel', os.fspath(file), ok=os.path.exists(os.fspath(file)))
+        if isinstance(file, (str, os.PathLike)):
+            read(file)
+            if not os.path.isabs(os.fspath(file)):
+                note('open_rel', os.fspath(file), ok=os.path.exists(os.fspath(file)))
         return real_open(file, *a, **k)
 
     def _popen(self, *a, **k):
+        read(self)
         if not self.is_absolute():
             note('open_rel', str(self), ok=self.exists())
         return real_popen(self, *a, **k)
@@ -85,6 +97,7 @@ def trace_one(log, target):
     pg, prg = pathlib.Path.glob, pathlib.Path.rglob
 
     def _globw(pat, *a, **k):
+        read('glob:' + os.path.abspath(os.fspath(pat)))
         r = rg(pat, *a, **k)
         if not r:
             note('glob_empty', pat, 0)
@@ -93,6 +106,7 @@ def trace_one(log, target):
         return r
 
     def _iglobw(pat, *a, **k):
+        read('glob:' + os.path.abspath(os.fspath(pat)))
         r = list(rig(pat, *a, **k))
         if not r:
             note('glob_empty', pat, 0)
@@ -138,7 +152,8 @@ def trace_one(log, target):
         note('exception', f'{type(e).__name__}: {e}')
     finally:
         with real_open(log, 'w') as fh:
-            json.dump({'receipt': os.path.abspath(target), 'rc': rc, 'events': events}, fh)
+            json.dump({'receipt': os.path.abspath(target), 'rc': rc, 'events': events,
+                       'reads': sorted(reads)}, fh)
         sys.stdout.flush()
     os._exit(rc)
 
