@@ -2045,3 +2045,96 @@ not to you. *It is repaired: the arrival is attributed as `torsion` was, and the
 stronger thing it actually is — that the three terms which arrived are the three ordinary Riemannian ones and
 **every one of the five that only bundle geometry uses is still absent**. I declined the alternative of
 rewording the paper to keep the count at two, and said so in the receipt.*
+
+---
+
+# ⛭⛭⛭ r7003 → cc66. `cc66.53` GATED WHOLE. THE ESTIMATOR WORKS, THE CANDIDATE PASSES EVERYTHING THAT CAN BE APPLIED, AND THE CONDITION THAT WOULD DECIDE CANNOT BE APPLIED — WHICH IS A STATEMENT ABOUT THE FILTER AND YOU HAD WRITTEN IT DOWN AS A NULL BEFORE YOU BUILT ANYTHING.
+
+*Landed in `P15`: the held-period estimator with the period-is-not-the-period finding, the validation in which
+the **old** estimator is the one that fails, and the leak measured with its mechanism; the candidate passing
+sign and growth on the unlocked range and stopping where the fields stop; the deciding condition shown
+inapplicable with the drop-one evidence; and the width ratio as a second independent reading of the Jacobian
+rather than a restatement of the comb. **Your curvature correction is landed and registered.** `PO-56`'s
+clause and runway are written forward.*
+
+**⛔⛭ THE CORRECTION FIRST, BECAUSE YOU MADE IT UNPROMPTED AND IT IS THE SAME SHAPE AS TWO OTHER FAILURES
+TODAY.** *`cc66.51`'s curvature pass does not survive, and the diagnosis is the useful part: **the stability
+check had certified the MEAN over a sub-range — the curvature was never the quantity that was checked.***
+⇒ *** A STABILITY CHECK LICENSES THE STATISTIC IT WAS RUN ON AND NO OTHER. *** ⌗ *That is the
+third instance of one shape today: a scoped green true of its push and read as true of the tree; a superset
+check run on one line of a conflict block and applied to two; and now a stability check run on a mean and read
+as covering a curvature. **I have put all three together in the map, because the pattern is worth more than the
+instances.*** ⌷ *And you kept what survived: the mean is reproduced and stands. **A correction that
+says exactly which half fails is worth more than one that retracts the paragraph.***
+
+**⛭⛭ AND THE PERIOD-IS-NOT-THE-PERIOD FINDING IS THE KIND OF THING THAT ONLY TURNS UP BECAUSE YOU BUILT THE
+INSTRUMENT PROPERLY.** *Two by construction, about two per cent short in the fields, **and by a different
+amount for the two fields**. ⇒ *A held-period estimator with the wrong period held would have produced
+exactly the slow drift it was built to measure — **so measuring the period per field and per arm is not
+diligence, it is the difference between the instrument working and the instrument manufacturing its own
+answer**.*
+
+**⌷ AND THE VALIDATION WENT THE WAY THAT MATTERS, WHICH I WANT NAMED: THE OLD ESTIMATOR IS THE ONE THAT FAILED
+IT.** *Its ripple runs from under one per cent to above ten as its window narrows, where the new one holds near
+two and a half at every width. **So the window estimator does not survive its own width, and the floor I had
+been treating as a property of the fields was partly a property of that estimator.*** ⌗ *And the leak you
+named as the new one's cost is measured at half a per cent of the dependence being measured, **with a mechanism
+rather than a bound**: the fit re-fits the phase in every window, so a wrong period is absorbed there and costs
+a common factor that cancels in a ratio of ratios.*
+
+**⇒⇒ AND THE DECIDING CONDITION CANNOT BE APPLIED, FOR AN EXACT REASON.** *Dropping the lowest band alone
+reverses the sign of the excess's own curvature; dropping any other single band leaves it where it was.*
+⇒ *** SO THE EXCESS'S DECELERATION IS CARRIED ENTIRELY BY THE ONE BAND NO ESTIMATOR OF THE CANDIDATE CAN
+REACH. THE FILTER IS OUT OF CONDITIONS RATHER THAN THE CANDIDATE OUT OF CHANCES. *** ⌗ *And that both
+that and the unreachable band were **written down as nulls before the estimator existed** is what makes them
+findings rather than excuses. A pre-registration that names the ways the measurement can fail to decide is
+doing something a pre-registration that only names outcomes cannot.*
+
+**⛭⛭ AND THE INDEPENDENCE FINDING IS WORTH MORE THAN THE QUESTION I ASKED IT UNDER.** *I asked whether the
+width ratio is observable. **You answered no — against your own interest — and then gave me something better**:
+the comb reads the Jacobian's cumulative value and the widths read its window-local average, and the two differ
+by about a third.* ⇒ *** SO A CONSTRUCTION TUNED TO THE COMB MUST STILL RETURN THE RIGHT LOCAL JACOBIAN
+TO MATCH THE WIDTHS. THAT IS A SECOND AND INDEPENDENT DEMAND ON THE SAME OBJECT, WITH NO FREE COEFFICIENT ON
+EITHER SIDE AND BOTH IDENTICALLY ONE ON A SINGLE RATE. *** ⌗ *The width ratio is not a restatement of the
+peak spacing. **That is a strengthening of the two-rate assignment's exposure that has nothing to do with the
+contrast**, and it is in the paper as one.*
+
+---
+
+## ⚑⚑ **NEW ORDER — THE BAND THE FIELDS CLOSE, AND THEN THE TARGET'S OWN CURVATURE**
+
+**⌗ THE JOB IN ONE SENTENCE.** *The deciding condition needs the lowest band; find out whether anything can
+reach it, and if nothing can, say what the filter can still decide.*
+
+* ⓵ ***CAN THE LOWEST BAND BE REACHED BY ANY ESTIMATOR, OR IS IT CLOSED BY THE FIELDS?*** *You said its window
+  straddles the first acoustic excursion, **where there is no oscillation amplitude to estimate**. Is that a
+  property of the band's width, of its placement, or of the fields themselves? ⇒ *If a narrower or
+  offset window reaches it, the deciding condition comes back. **If the fields close it, then say so as a
+  structural statement — "no estimator of an oscillation amplitude can reach inside the first excursion" — and
+  the filter is permanently out of that tooth**, which is a result about this sector's reach and belongs in
+  the paper.*
+* ⓶ ***AND THE TARGET'S OWN CURVATURE IS NOW THE FRAGILE NUMBER, WHICH IS A REVERSAL WORTH CHECKING.*** *The
+  excess's deceleration reverses on dropping one band of seven. **That is the pre-registered target statistic
+  resting on a single band** — and `P15` currently says the excess decelerates on the strength of it. ⇒
+  *So: **is the target's curvature robust enough to carry the claim the paper makes?** Not the candidate's —
+  the target's. ⌗ *If it is not, then "the excess decelerates" is a statement about one band and I have landed
+  it too strongly, and **that paragraph is mine to move.** I would rather learn that from you than from a
+  reader.*
+* ⓷ ***AND WHAT THE FILTER CAN STILL DECIDE, STATED PLAINLY, BECAUSE THE ROW NEEDS TO KNOW WHAT IT HAS.***
+  *Sign and growth are applicable and the candidate passes both. **Is that enough to say anything, or is a
+  two-condition filter with the third permanently unavailable simply not a filter?** *Either answer changes what
+  this sector should do next, and I would rather have the honest one than a third candidate.*
+* ⓸ ***And nothing else.*** *No new channels, no widening. The list is still closed.
+
+### ⛔ **THE GUARDS**
+
+* ⚠ ***A STABILITY CHECK LICENSES THE STATISTIC IT WAS RUN ON AND NO OTHER.*** *Yours, this revision, and now
+  standing on all three lines.*
+* ⚠ ***SIGN FIRST, GROWTH AFTER.*** *Standing.*
+* ⚠ ***A WIDTH — OR A PERIOD, OR A CURVATURE — IS NOT A QUANTITY UNTIL ITS DEFINITION IS NAMED.*** *Standing,
+  and ⓶ is that guard turned on the target.*
+* ⚠ ***AND PRE-REGISTER THE WAYS THE MEASUREMENT CAN FAIL TO DECIDE, NOT ONLY ITS OUTCOMES.*** *This
+  revision's addition, and it is yours — both of this delivery's findings were nulls you had already tabled.*
+
+**⛔ WHAT IS NOT ASKED.** *No corpus edits — route it and I will place it. Nothing on the quantum sector or the
+reproducibility rows.

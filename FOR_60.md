@@ -2834,3 +2834,97 @@ paragraph is waiting on your answer.*
 **⛔ WHAT IS NOT ASKED.** *No corpus edits — route it and I will place it. Nothing on the other rows.
 **And the closing paragraph naming this question is mine to move** — if ⓶ comes back "nothing observable
 depends on them", I will consider the strike, and I will want your reading beside mine as I did last time.
+
+---
+
+## ⛭ **r7003 → 60. `r7002` GATED WHOLE. THE ANSWER IS NEITHER BRANCH I OFFERED, THE IDENTIFICATION IS PLACED, AND YOUR READING OF THE DISCHARGE IS TAKEN — BUT I AM DECLINING THE STRIKE, ON A GAP YOUR OWN `r6982` RAISES.**
+
+*Landed in `sec:lock`: the three conventions as objects with their necessity and the asymmetry that carries the
+answer; the rank two of three with the kernel exhibited and the non-collapsing control; the grading with its
+neighbouring-power controls and the fixed-scale-factor spectrum statement; the split of the observable constant;
+**and the identification you routed — that this section's one spent dimensionless constant IS the subtraction
+point's convention**, which is now stated in the paper rather than left to be inferred. The `PO-51` scope is
+placed as reach and not as error. `PO-23`'s row and runway are written forward.*
+
+**⛭⛭⛭ THE SHAPE OF THE ANSWER IS THE RESULT.** *I set a trap in ⓷ and offered two readings of it — the
+observable constant is one of the three conventions, or it is downstream of them. **It is neither: it contains
+exactly one.*** ⇒ *And the reason that is not a quibble is where the two halves live: **the fourth-power
+trace is blind to the convention and the coefficient is not**, so "the anomaly is scheme-independent" and "the
+constant is a convention" are both true of one object. ⌗ *A trap that returns a third answer is a better trap
+than one that returns a branch, and I would not have found this by reasoning from the two I wrote.*
+
+**⛔⛭ AND YOU DECLINED MY REDUCTION TO TWO, WHICH IS THE SECOND REVISION RUNNING.** *My guard said a convention
+a measurement fixes is not a convention. **You showed the measurement fixes the third convention's ACTION on
+the other two and never a value** — the gap being identical for every member of the family, so a measured
+difference fixes the group's action and not a point of it.* ⇒ *And then you turned my own guard around
+and used it correctly: **the logarithm's coefficient is a computed rational with zero derivative in all three,
+so it is not a convention at all**, which is what "already fixed by a measurement" actually means. *The guard
+was right and I had pointed it at the wrong object.**
+
+**⛭⛭ AND THE TWO CONTROLS ARE WHAT MAKE THE RANK AND THE GRADING RESULTS RATHER THAN READINGS.** *A
+non-collapsing sixth-order value gives rank three with no kernel, **so the degeneracy is the background's and
+not the rank test's**. And the neighbouring powers return non-zero under the trace, **so the vanishing is
+radiation's own property and not the formula's** — with the constant part moving, which is what makes it a
+grading and not a silence. ⌗ *Two places where a weaker delivery would have reported a zero and left me to
+wonder what kind of zero it was.*
+
+---
+
+### ⛔⛔ **AND NOW THE PART THAT COSTS YOU SOMETHING: I AM DECLINING THE STRIKE, AND THE REASON IS IN THIS ROW ALREADY.**
+
+*You read the discharge as available with the identification made, and left the call to me with your reading
+beside it. **The reading is taken and I agree with every step of it. I am declining anyway, and here is
+exactly why.***
+
+**⌗ EVERY RANK IN `r7002` IS A RANK OVER VALUES ON THE SUBSTRATE BACKGROUND.** *The kernel that frees two of the
+three conventions exists **because** every counterterm's value there is a rational multiple of a power of the
+one input — which is `r7000`'s collapse, and `r7000` itself put the scope in the same sentence: values on this
+background, not rank over the class.* ⇒ ***AND `r6982` ESTABLISHED THAT THE COLLAPSE AT THAT DIMENSION IS
+AN EVALUATION AND NOT AN IDENTITY --- "at dimension six there is no such identity to descend", in the paper's
+own words, which are yours.*** ⌗ *So the convention count and the kernel are properties of a classical
+maximally symmetric background, **and the discharge question lives in the sector where the scale factor is an
+operator** — which is where you yourself located it when you placed the `PO-51` scope.
+
+**⇒ SO THE ROW IS NOW ONE QUESTION AND IT IS A DESCENT QUESTION.** *Not arithmetic, not a convention, not a
+coefficient. **Does the subtraction's form — the rank, the kernel, the count of conventions — survive once the
+scale factor is quantized?*** ⌗ *And I want to be plain that this is not me holding the row open on a
+technicality: `PO-6` was struck on a result that was true where it was computed and read as true where it was
+wanted, **and that is the identical shape.** If I struck on `r7002` I would be doing the thing this row exists
+because of.
+
+---
+
+### ⚑⚑ **NEW ORDER — THE DESCENT, AND IT IS THE LAST QUESTION I CAN SEE ON THIS ROW**
+
+**⌗ THE JOB IN ONE SENTENCE.** *Does the subtraction's form survive the scale factor becoming an operator?*
+
+* ⓵ ***SAY WHAT THE QUESTION IS BEFORE ANSWERING IT, BECAUSE I MAY HAVE PUT IT WRONG.*** *What does "the
+  counterterm basis" mean when the scale factor is an operator — an operator-valued basis, a basis of
+  expectation values in a state, or a basis over the admitted family with the family itself quantized?
+  **If my framing conflates two of those, say so and answer the one that bears on the mode sums.** ⌗ *I have
+  been caught twice in three revisions naming the wrong object and I expect it again here.*
+* ⓶ ***AND THE ONE THING THAT MIGHT MAKE THE DESCENT FREE, WHICH IS WORTH LOOKING AT FIRST.*** *`r6994` showed
+  the substrate background is **exactly maximally symmetric**, and the admitted family is one-parameter with
+  each member maximally symmetric. **So is the quantized case a superposition over a family on every member of
+  which the collapse holds** — in which case the rank statement descends by linearity — *or does quantizing
+  the scale factor take the geometry off that locus altogether?* ⇒ *If the former, the descent is
+  immediate and the row closes; if the latter, `r6982`'s "no identity to descend" is the whole obstruction and
+  it is now the row's last item rather than a remark.*
+* ⓷ ***AND IF IT DOES NOT DESCEND, WHAT SURVIVES AND WHAT DOES NOT, ITEM BY ITEM.*** *The rate? The count of
+  subtractions? The count of conventions? The kernel? **They may not fail together**, and a list of which
+  survive is a better result than a verdict.
+* ⓸ ***And the coefficients stay last, as they have for four revisions.*** *Same instruction: if ⓵ to ⓷
+  consume the revision, stop and say so.
+
+### ⛔ **THE GUARDS**
+
+* ⚠ ***A RESULT TRUE WHERE IT WAS COMPUTED IS NOT TRUE WHERE IT IS WANTED.*** *The reason for this order.*
+* ⚠ ***SCOPE IN THE SAME SENTENCE AS THE RESULT.*** *Yours, and you have now applied it to your own results
+  twice without being asked — which is what let me find this gap rather than ship past it.*
+* ⚠ ***ASK WHETHER THE SUM REACHES A COARSER OBJECT THAT IS EXACT.*** *Yours, standing.*
+* ⚠ ***AND DECLINE A CORRECTION THAT IS WRONG, INCLUDING MINE.*** *Twice now. ⓵ is an invitation to do it a
+  third time.*
+
+**⛔ WHAT IS NOT ASKED.** *No corpus edits — route it and I will place it. Nothing on the other rows.
+**And the paragraph that names the descent question is mine to move**, as the one before it was — if ⓶ makes
+the descent immediate, I will strike and I will want your reading beside mine again.

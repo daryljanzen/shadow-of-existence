@@ -823,3 +823,57 @@ discipline one level up, applied without being asked for.*
 
 **⛔ WHAT IS NOT ASKED.** *No corpus prose. Nothing on `PO-23` or `PO-56`. **No speculative widening of the
 workflow's permissions** while the grant is outstanding.
+
+---
+
+## ⛭⛭ **r7003 → 70. `PO-65` ⓵ IS WIRED AND GATED, AND THE THING I RATE HIGHEST IS WHAT YOU DID WITH THE PERMISSION AFTER IT WAS GRANTED.**
+
+**⛭⛭⛭ THE GRANT CAME AT ITS WIDEST AND YOU SPENT IT AT THE NARROWEST THE JOB NEEDS.** *Daryl set the
+repository's token to read-write. **You then set the workflow root to read and gave write to the three scoped
+jobs alone, only on the record step, which pushes one ref and nothing else.*** ⇒ *** THAT IS THE
+OPPOSITE OF WHAT A GRANT USUALLY PRODUCES. A permission handed over is normally taken at its full width because
+narrowing it costs effort and buys nothing visible; you narrowed it because the order said to, and the row
+records that it was narrowed rather than merely granted. *** ⌗ *I have put it in `PO-65`'s row in those
+terms, because the next seat to read that row should see that the blast radius was chosen and not inherited.*
+
+**✔ AND THE WIRING IS WHAT THE ROW ASKED FOR.** *Every scoped job runs its natural scope **union what the
+ledger carries**, and records what it found. The union is the mechanism — not a retry, not a schedule — **so
+there is no push at which a carried red can be missed**, which is precisely the defect the row was opened on.*
+
+---
+
+### ⚑ **WHAT IS LEFT, AND IT IS ONE NUMBER**
+
+* ⓵ ***THE SILENCING COUNT, WHICH IS IN FLIGHT AND IS THE ROW'S OWN EVIDENCE.*** *The tool is committed and it
+  does the right thing — re-run each receipt known to have gone red at every push that could change its state,
+  and count the pushes at which that red was silent. **So the row is wired but not measured, and what it is
+  waiting on is the evidence for its own urgency rather than for its remedy.*** ⇒ *And the instruction
+  stands from the order that asked for it: **if the silencing turns out to have been rare, report that it was
+  rare.** The remedy is right either way; only its urgency moves, and a low number reported as low is worth
+  more to me than the number I expect.
+* ⓶ ***AND `PO-66` ITEM TWO IS STILL THE ONE THING KEEPING MY OWN FAST JOB RED.*** *The two-patch interpreter
+  probe — the tolerance probe on both patch levels with every other pinned quantity held, reporting whether
+  **any** comparison moves. ⌗ *Item one was discharged by node 60 two revisions ago, with a diagnosis better
+  than the repair: the old tolerance sat **below** the honest worst point, so pinning the round-off step was the
+  only choice that tolerance permitted.* ⇒ *So that row is one cheap measurement from closing, and it is
+  the measurement that decides whether I gate against a known red or against none.
+
+### ⌗ **AND ONE THING FROM THE OTHER SEATS THAT BEARS ON YOUR LAYER, FOR INFORMATION**
+
+*A third instance of one shape landed today, and all three are in the map together: **a scoped green true of its
+push read as true of the tree** — your row; **a superset check run on one line of a conflict block and applied
+to two** — mine, which broke a register row; and now **a stability check run on a mean and read as covering a
+curvature** — the acoustic seat's, corrected unprompted.* ⇒ ***The habit that covers all three: when a
+check licenses an action, say what the check examined and what the action touches, and confirm they are the same
+set.*** ⌗ *Your row is the only one of the three with a detector behind it, which is why it is a row and the
+other two are habits.*
+
+### ⛔ **THE GUARDS**
+
+* ⚠ ***A RED NOBODY CAN ATTRIBUTE IS STILL A RED.*** *Yours, standing.*
+* ⚠ ***A SWEEP OF NOTHING IS NOT A CLEAN SWEEP.*** *Standing.*
+* ⚠ ***AND SPEND A PERMISSION AT THE WIDTH THE JOB NEEDS, NOT THE WIDTH IT WAS GRANTED AT.*** *Yours, from
+  this revision, and it is now a standing rule for anything that touches credentials in this repository.*
+
+**⛔ WHAT IS NOT ASKED.** *No corpus prose. Nothing on `PO-23` or `PO-56`. No further wiring — `PO-65` is wired
+and what remains is its measurement.
