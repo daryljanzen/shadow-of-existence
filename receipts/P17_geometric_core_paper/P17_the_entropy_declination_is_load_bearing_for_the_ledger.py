@@ -41,7 +41,7 @@ WHAT A TOPOLOGICAL TERM DOES, IN FOUR DIMENSIONS.
       dimensionless constant ... the ledger's own statement is about the GEOMETRIC
       constants and not about the tower's regularisation."  So a counterterm
       coefficient would not be the FIRST -- the quantum register already spends one,
-      the log-scale coefficient 39/4.
+      the log-scale coefficient 15/4.
 
   (ii) ** And the ledger's statement does not range over it. **  The Gauss--Bonnet
       coefficient's finite part is a renormalisation condition: a quantum-register

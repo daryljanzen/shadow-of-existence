@@ -1,6 +1,15 @@
 #!/usr/bin/env python3
 r"""
-P10 — ** THE COUPLED ATTEMPT PO-23 ASKED FOR, AND IT RETURNS `39/4` UNCHANGED IN KIND: NO
+** r6975 (66, on node 60's r6974): RE-POINTED TO THE CORRECTED TOWER FREQUENCY mu^2 = m^2 - 1. **  The
+second variation carries a non-derivative curvature contraction alongside the gradient term, so the
+frequency is the Laplace eigenvalue displaced by +2K at every level.  ** The enumeration below is the
+same enumeration and every verdict in it is unchanged: no rescaling discharges the log, and there is
+exactly one mass-like discharge, at the offset that makes the frequencies integer. **  What moved is
+where that offset sits -- d = 1 with partner -15, where it read d = 3 with partner -13 -- and the free
+value, 15/4 where it read 39/4.  ⌗ *And the receipt now carries the reason the arguments are immune:
+at mu^2 = m^2 + u the coefficient is -u(u+16)/4 for every u, so ONE formula holds both conventions.*
+
+P10 — ** THE COUPLED ATTEMPT PO-23 ASKED FOR, AND IT RETURNS `15/4` UNCHANGED IN KIND: NO
 RESCALING OF THE TOWER'S FREQUENCIES CAN DISCHARGE THE LOG, AND THE ONE MASS-LIKE SHIFT THAT
 DOES IS EXACTLY THE THREE-SPHERE CURVATURE OFFSET. **
 
@@ -14,12 +23,12 @@ coefficient is the $1/m$ term of $d(m)\mu(m)$ --- an exact functional of the spe
 question *which deformations can move it* is answerable EXACTLY, without solving the coupled
 sector, and that is what is answered:
 
-      overall rescale   mu^2 -> (1+e)(m^2-3)   L = (39/4) sqrt(1+e)     NEVER zero
-      mass shift        mu^2 -> m^2-3+d        L = -(d-3)(d+13)/4       zero at d = 3, -13
-      1/m^2 tail        mu^2 -> m^2-3+e/m^2    L = e + 39/4             zero at e = -39/4
-      linear in m       mu^2 -> m^2-3+e m      L = -(e^2+12)(5e^2-52)/64 zero at e = +-2sqrt(65)/5
+      overall rescale   mu^2 -> (1+e)(m^2-1)   L = (15/4) sqrt(1+e)     NEVER zero
+      mass shift        mu^2 -> m^2-1+d        L = -(d-1)(d+15)/4       zero at d = 1, -15
+      1/m^2 tail        mu^2 -> m^2-1+e/m^2    L = e + 15/4             zero at e = -15/4
+      linear in m       mu^2 -> m^2-1+e m      L = -5(e^2-12)(e^2+4)/64  zero at e = +-2sqrt(3)
 
-*** => NO RESCALING DISCHARGES IT. ***  $L=(39/4)\sqrt{1+\epsilon}$ vanishes only at $\epsilon=-1$,
+*** => NO RESCALING DISCHARGES IT. ***  $L=(15/4)\sqrt{1+\epsilon}$ vanishes only at $\epsilon=-1$,
 where every frequency in the tower vanishes with it.  ** That generalises `r6411` from the scale
 factor to ANY multiplicative renormalisation of the frequencies **, and it is the class the leading
 back-reaction lives in: the coupling acts through $a$ and through $\hat\Gamma=\gamma+c\sum_n
@@ -27,7 +36,7 @@ back-reaction lives in: the coupling acts through $a$ and through $\hat\Gamma=\g
 rescaled.*  ⌗ *So the free result is not fragile against the corrections the coupling first
 generates; it is invariant under all of them.*
 
-** AND THE ONE MASS-LIKE DISCHARGE IS A NAMED POINT RATHER THAN A TUNING. **  $\delta=3$ gives
+** AND THE ONE MASS-LIKE DISCHARGE IS A NAMED POINT RATHER THAN A TUNING. **  $\delta=1$ gives
 $\mu^2=m^2$, hence $\mu_n=n+1$ exactly, and then $d(m)\mu(m)=2m^3-8m$ is a POLYNOMIAL: the $1/m$
 term does not cancel, *it does not exist*.  And $+3$ is exactly the three-sphere curvature offset
 in the transverse-traceless Lichnerowicz spectrum --- the term that makes the tower's frequencies
@@ -94,44 +103,54 @@ def main():
     print('  ' + '=' * 74)
     print('  PART 1 -- THE FREE COEFFICIENT, RE-DERIVED ONLY AS THE ANCHOR')
     print('  ' + '=' * 74)
-    L0 = L_of(M_ ** 2 - 3)
+    L0 = L_of(M_ ** 2 - 1)
     check(f'⓵ the free tower\'s log coefficient is the 1/m term of d(m)mu(m) and equals {L0}',
-          L0 == sp.Rational(39, 4))
+          L0 == sp.Rational(15, 4))
+    # r6975: and the enumeration is ONE formula in the offset, which is why the correction to the
+    # frequency moved the number without touching any of the arguments below.
+    U_ = sp.Symbol('u')
+    Lu = sp.simplify(L_of(M_ ** 2 + U_))
+    check(f'⓵ᵇ and it is one formula in the offset: L(u) = -u(u+16)/4, giving 39/4 at the Laplace '
+          f'eigenvalue u = -3 and 15/4 at the frequency u = -1, and vanishing at u = 0 and -16 alone',
+          sp.simplify(Lu + U_ * (U_ + 16) / 4) == 0
+          and Lu.subs(U_, -3) == sp.Rational(39, 4) and Lu.subs(U_, -1) == sp.Rational(15, 4))
 
     # ============================================================ (2) no rescaling discharges
     print()
     print('  ' + '=' * 74)
     print('  PART 2 -- *** NO RESCALING OF THE FREQUENCIES CAN DISCHARGE IT ***')
     print('  ' + '=' * 74)
-    Lr = sp.simplify(L_of((1 + E_) * (M_ ** 2 - 3)))
-    print(f'      overall rescale mu^2 -> (1+e)(m^2-3):   L(e) = {sp.factor(Lr)}')
+    Lr = sp.simplify(L_of((1 + E_) * (M_ ** 2 - 1)))
+    print(f'      overall rescale mu^2 -> (1+e)(m^2-1):   L(e) = {sp.factor(Lr)}')
     roots = [r for r in sp.solve(sp.Eq(Lr, 0), E_) if r.is_real]
-    check(f'⓶ L(e) = (39/4)sqrt(1+e), whose only real zero is e = -1 -- the point at which EVERY '
+    check(f'⓶ L(e) = (15/4)sqrt(1+e), whose only real zero is e = -1 -- the point at which EVERY '
           f'frequency in the tower vanishes.  So no multiplicative renormalisation discharges the '
           f'log: {roots}',
-          sp.simplify(Lr - sp.Rational(39, 4) * sp.sqrt(1 + E_)) == 0 and roots == [-1])
+          sp.simplify(Lr - sp.Rational(15, 4) * sp.sqrt(1 + E_)) == 0 and roots == [-1])
     check('⓶ᵇ ⇒ and that GENERALISES r6411 from the scale factor to any rescaling: the leading '
           'back-reaction acts through a and through Gamma-hat = gamma + c sum(pi_n^2), whose '
           'expectation is (a^2/2) sum(d_n mu_n) -- the same sum rescaled, hence in this class',
-          sp.simplify(Lr.subs(E_, 0) - sp.Rational(39, 4)) == 0)
+          sp.simplify(Lr.subs(E_, 0) - sp.Rational(15, 4)) == 0)
 
     # ============================================================ (3) the mass-like discharge
     print()
     print('  ' + '=' * 74)
     print('  PART 3 -- ⛭ THE ONE MASS-LIKE DISCHARGE IS THE CURVATURE OFFSET')
     print('  ' + '=' * 74)
-    Lm = sp.simplify(L_of(M_ ** 2 - 3 + D_))
-    print(f'      mass shift mu^2 -> m^2-3+d:   L(d) = {sp.factor(Lm)}')
-    check(f'⓷ L(d) = -(d-3)(d+13)/4, so the discharge points are exactly d = 3 and d = -13',
-          sorted([r for r in sp.solve(sp.Eq(Lm, 0), D_) if r.is_real]) == [-13, 3])
-    poly = sp.simplify(sp.expand(2 * (M_ ** 2 - 4) * sp.sqrt(M_ ** 2 - 3 + 3)))
-    check(f'⓷ᵇ *** and at d = 3 the summand becomes {poly}, a POLYNOMIAL -- so the 1/m term does '
+    Lm = sp.simplify(L_of(M_ ** 2 - 1 + D_))
+    print(f'      mass shift mu^2 -> m^2-1+d:   L(d) = {sp.factor(Lm)}')
+    check(f'⓷ L(d) = -(d-1)(d+15)/4, so the discharge points are exactly d = 1 and d = -15',
+          sorted([r for r in sp.solve(sp.Eq(Lm, 0), D_) if r.is_real]) == [-15, 1])
+    poly = sp.simplify(sp.expand(2 * (M_ ** 2 - 4) * sp.sqrt(M_ ** 2 - 1 + 1)))
+    check(f'⓷ᵇ *** and at d = 1 the summand becomes {poly}, a POLYNOMIAL -- so the 1/m term does '
           f'not CANCEL, it does not EXIST ***',
           sp.simplify(poly - (2 * M_ ** 3 - 8 * M_)) == 0)
-    check('⓷ᶜ ⌗ and +3 is exactly the three-sphere curvature offset: mu^2 = m^2 - 3 is the '
-          'transverse-traceless Lichnerowicz spectrum, so d = 3 removes precisely the term that '
-          'makes the tower\'s frequencies non-integer, giving mu_n = n+1',
-          sp.simplify((M_ ** 2 - 3 + 3) - M_ ** 2) == 0)
+    check('⓷ᶜ ⌗ and +1 is exactly the offset that makes the frequencies non-integer -- the NET of '
+          'the Laplace eigenvalue\'s -3 and the curvature term\'s +2, which is why the discharge '
+          'point moved with the frequency while the statement about it did not -- so d = 1 gives '
+          'mu_n = n+1',
+          sp.simplify((M_ ** 2 - 1 + 1) - M_ ** 2) == 0
+          and sp.simplify((M_ ** 2 - 3) + 2 - (M_ ** 2 - 1)) == 0)
 
     # ============================================================ (4) cancellation-free check
     print()
@@ -145,20 +164,20 @@ def main():
             s = mp.mpf(0)
             for k in range(3, M + 1):
                 mm = mp.mpf(k)
-                s += (2 * (mm ** 2 - 4) * mp.sqrt(mm ** 2 - 3 + delta)
-                      - 2 * mm ** 3 - (delta - 11) * mm)
+                s += (2 * (mm ** 2 - 4) * mp.sqrt(mm ** 2 - 1 + delta)
+                      - 2 * mm ** 3 - (delta - 9) * mm)
             pts.append((M, s))
         return [float((pts[i][1] - pts[i - 1][1]) / mp.log(mp.mpf(pts[i][0]) / pts[i - 1][0]))
                 for i in range(1, len(pts))]
 
-    s0, s3 = slope(0), slope(3)
-    print(f'      delta = 0 : slopes {[round(x, 6) for x in s0]}   (exact 9.75)')
-    print(f'      delta = 3 : slopes {[round(x, 6) for x in s3]}   (exact 0)')
+    s0, s3 = slope(0), slope(1)
+    print(f'      delta = 0 : slopes {[round(x, 6) for x in s0]}   (exact 3.75)')
+    print(f'      delta = 1 : slopes {[round(x, 6) for x in s3]}   (exact 0)')
     check(f'⓸ summed TERM BY TERM in cancellation-free form -- each term O(1/m) before it is '
           f'added, so no large quantity is formed and none is subtracted -- the free case returns '
-          f'{s0[-1]:.6f} against 39/4',
-          abs(s0[-1] - 9.75) < 0.01)
-    check(f'⓸ᵇ and the d = 3 case returns {s3[-1]:.6f}, i.e. EXACTLY zero rather than a small '
+          f'{s0[-1]:.6f} against 15/4',
+          abs(s0[-1] - 3.75) < 0.01)
+    check(f'⓸ᵇ and the d = 1 case returns {s3[-1]:.6f}, i.e. EXACTLY zero rather than a small '
           f'difference of large numbers, because the summand is a polynomial there',
           abs(s3[-1]) < 1e-9)
 
@@ -186,9 +205,9 @@ def main():
         for f_ in FAILED:
             print(f'      {f_[:110]}')
         return 1
-    print('  *** THE COUPLED ATTEMPT RETURNS 39/4 UNCHANGED IN KIND. ***  No rescaling of the')
+    print('  *** THE COUPLED ATTEMPT RETURNS 15/4 UNCHANGED IN KIND. ***  No rescaling of the')
     print('    frequencies can discharge the log, and that is the class the leading back-reaction')
-    print('    generates.  The one mass-like discharge is d = 3 -- exactly the S^3 curvature')
+    print('    generates.  The one mass-like discharge is d = 1 -- exactly the net curvature')
     print('    offset, where mu_n = n+1 and the 1/m term does not exist rather than cancelling.')
     print('  ⌗ NOT a solution of the coupled sector, and the non-adiabatic half is untouched.')
     print('  ' + '=' * 74)

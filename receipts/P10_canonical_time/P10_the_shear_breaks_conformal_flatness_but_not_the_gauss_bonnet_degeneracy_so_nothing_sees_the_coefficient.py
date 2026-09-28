@@ -83,7 +83,7 @@ COMPUTES: scope -- what this settles and what it must not be read as.
     Lanczos identity is an identity); ⓷'s sharp form does, and is stated for exact vacuum-Lambda
     spaces with SdS as the witness rather than for the linearised wave.
   * ** Nothing here bears on PO-51 (closed), on PO-48's undetermined, on A_s, or on the tower's
-    zeta(0) = 10 and log coefficient 39/4 **, which are the DEGENERATE combination's and not this
+    zeta(0) = 10 and log coefficient 15/4 **, which are the DEGENERATE combination's and not this
     counterterm's -- the distinction CR_synthesis sec:frontier already draws.
 
 rc=0 on success.  Run: python3 P10_the_shear_breaks_conformal_flatness_but_not_the_gauss_bonnet_degeneracy_so_nothing_sees_the_coefficient.py

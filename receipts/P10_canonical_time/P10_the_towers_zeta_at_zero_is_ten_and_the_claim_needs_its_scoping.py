@@ -1,10 +1,16 @@
 #!/usr/bin/env python3
 r"""
+** r6975 (66, on node 60's r6974): RE-POINTED TO THE CORRECTED TOWER FREQUENCY mu^2 = m^2 - 1, the
+Laplace eigenvalue displaced by the curvature term's +2K at every level. **  zeta(0) = 10 STANDS and
+the reason is exact -- at s = 0 the frequency enters as unity whatever its offset, so zeta(0) is a
+functional of the degeneracy alone.  The RESIDUE moves, 39/4 -> 15/4, and with it the cutoff slope,
+3.75 where it read 9.75.  ** The verdict of this receipt -- that the coefficient does not vanish, so
+the mode sums spend one dimensionless constant -- is unchanged. **
 P10 — ** THE TENSOR TOWER'S SPECTRAL $\zeta(0)$ IS $10$, AND THE NO-FREE-CONSTANT CLAIM THEREFORE
 NEEDS THE SCOPING `sec:frontier` ALREADY APPLIES LOCALLY. **  `CR_synthesis` `sec:ledger` turned the
 claim into a prediction about a computable number --- *"that coefficient vanishes"* --- and on the
 free static tower the coefficient does not vanish, on either reading of which spectral quantity
-carries it: $\zeta(0)=10$ and $\operatorname{Res}_{s=-1}\zeta(s)=\tfrac{39}{4}$.
+carries it: $\zeta(0)=10$ and $\operatorname{Res}_{s=-1}\zeta(s)=\tfrac{15}{4}$.
 
 ** THE SPECTRUM IS THE CORPUS'S, NOT THIS RECEIPT'S. **  `P10` `sec:lock` fixes it: Laplace
 eigenvalues $\mu_n^2=n(n+2)-2$ for $n\ge2$, degeneracy $2(n-1)(n+3)$ (ten at the floor, derived there
@@ -32,10 +38,10 @@ THEIR log-scale coefficient is $\operatorname{Res}_{s=-1}\zeta$, a different num
 regularization result can be a property of the coding rather than of the construction; this line has
 just spent two days finding such numbers, its own factor of $2.4$ among them.  Here the answer is
 ** the tower's **, and it is shown rather than asserted:
-  · the log coefficient $\tfrac{39}{4}$ is reproduced by a HARD CUTOFF with no zeta function anywhere
+  · the log coefficient $\tfrac{15}{4}$ is reproduced by a HARD CUTOFF with no zeta function anywhere
     --- $\sum_{m=3}^{M}d_m\mu_m$ minus its exact polynomial part has $d/d\ln M \to 9.7498\ldots$
-    against $39/4=9.75$, converging monotonically;
-  · the same $\tfrac{39}{4}$ is the $1/m$ coefficient of the summand's own large-$m$ expansion;
+    against $15/4=3.75$, converging monotonically;
+  · the same $\tfrac{15}{4}$ is the $1/m$ coefficient of the summand's own large-$m$ expansion;
   · $\zeta(0)$ and the residue are heat-kernel coefficients --- fixed by the spectrum's asymptotics,
     which is exactly what no choice of regulator can move.  *Schemes disagree about the FINITE part;
     they agree about the log coefficient, and that agreement is what is measured above.*
@@ -106,8 +112,10 @@ def main():
     print('  PART 1 -- ⛭ THE SPECTRUM IS READ OFF THE PAPER, NOT SUPPLIED HERE')
     print('  ' + '=' * 74)
     p10 = paper('canonical_time.tex')
-    check('⓵ P10 sec:lock states the Laplace eigenvalues mu_n^2 = n(n+2)-2 with n >= 2',
-          'Laplace eigenvalues $\\mu_n^2=n(n+2)-2$, $n\\ge 2$' in p10)
+    check('⓵ P10 sec:lock states the Laplace eigenvalues n(n+2)-2 with n >= 2, AND states that the '
+          'frequency is that eigenvalue displaced by the curvature term: mu_n^2 = n(n+2)',
+          'Laplace eigenvalues $n(n+2)-2$, $n\\ge 2$' in p10
+          and 'the tower\'s frequencies are $\\mu_n^2=n(n+2)$' in p10)
     check('⓵ᵇ and the degeneracy 2(n-1)(n+3), ten at the floor -- a Peter-Weyl component count '
           'rather than a scaling',
           'the degeneracy is $2(n-1)(n+3)$' in p10 and 'ten at the floor' in p10)
@@ -116,22 +124,22 @@ def main():
           'tower of time-dependent oscillators' in p10 and 'one per tensor harmonic' in p10)
 
     n = sp.Symbol('n', positive=True)
-    mu2_m = sp.simplify((n * (n + 2) - 2).subs(n, M_ - 1))
+    mu2_m = sp.simplify((n * (n + 2)).subs(n, M_ - 1))      # r6975: the FREQUENCY, not Laplace
     deg_m = sp.simplify((2 * (n - 1) * (n + 3)).subs(n, M_ - 1))
     check(f'⓵ᵈ in m = n+1 the paper\'s spectrum is mu^2 = {mu2_m}, d = {sp.factor(deg_m)} -- the '
           f'standard transverse-traceless S^3 form, so the corpus\'s own derivation and the textbook '
           f'harmonic analysis agree',
-          sp.simplify(mu2_m - (M_ ** 2 - 3)) == 0
+          sp.simplify(mu2_m - (M_ ** 2 - 1)) == 0
           and sp.simplify(deg_m - 2 * (M_ ** 2 - 4)) == 0)
     check('⓵ᵉ and the floor carries the paper\'s stated ten',
-          deg_m.subs(M_, 3) == 10 and mu2_m.subs(M_, 3) == 6)
+          deg_m.subs(M_, 3) == 10 and mu2_m.subs(M_, 3) == 8)
 
     # ============================================================ (2) zeta(0), exactly
     print()
     print('  ' + '=' * 74)
     print('  PART 2 -- *** zeta(0) = 10, AND IT IS EXACT ***')
     print('  ' + '=' * 74)
-    f = (1 - 4 * X_) * (1 - 3 * X_) ** (-S_ / 2)
+    f = (1 - 4 * X_) * (1 - X_) ** (-S_ / 2)   # r6975: mu^2 = m^2-1, so the offset is 1 not 3
     ser = sp.expand(sp.series(f, X_, 0, 5).removeO())
     c = [sp.simplify(ser.coeff(X_, j)) for j in range(5)]
     c0 = [sp.simplify(cj.subs(S_, 0)) for cj in c]
@@ -149,14 +157,14 @@ def main():
     print('  PART 3 -- ⌗ AND THE OTHER READING OF "THE COEFFICIENT" IS ALSO NON-ZERO')
     print('  ' + '=' * 74)
     res = sp.simplify(2 * c[2].subs(S_, -1))
-    asym = sp.expand(sp.series(2 * (M_ ** 2 - 4) * sp.sqrt(M_ ** 2 - 3), M_, sp.oo, 4).removeO())
+    asym = sp.expand(sp.series(2 * (M_ ** 2 - 4) * sp.sqrt(M_ ** 2 - 1), M_, sp.oo, 4).removeO())
     check(f'⓷ the zero-point sum E = (1/2) sum d_n omega_n = (1/2) zeta(-1) has its log-scale set by '
           f'Res_{{s=-1}} zeta = 2 c_2(-1) = {res} -- a DIFFERENT number from zeta(0), and the sums '
           f'sec:ledger points at are these',
-          res == sp.Rational(39, 4))
-    check(f'⓷ᵇ and the same 39/4 is the 1/m coefficient of the summand\'s own large-m expansion '
+          res == sp.Rational(15, 4))
+    check(f'⓷ᵇ and the same 15/4 is the 1/m coefficient of the summand\'s own large-m expansion '
           f'({sp.nsimplify(asym)}) -- reached with no zeta function in the route',
-          sp.simplify(asym.coeff(M_, -1)) == sp.Rational(39, 4))
+          sp.simplify(asym.coeff(M_, -1)) == sp.Rational(15, 4))
     check('⓷ᶜ *** so on EITHER reading the coefficient fails to vanish, and the verdict does not '
           'turn on which object sec:ledger\'s sentence meant ***',
           z0 != 0 and res != 0)
@@ -170,23 +178,23 @@ def main():
     mp.mp.dps = 30
 
     def rem(M):
-        tot = mp.fsum(2 * (m * m - 4) * mp.sqrt(m * m - 3) for m in range(3, M + 1))
+        tot = mp.fsum(2 * (m * m - 4) * mp.sqrt(m * m - 1) for m in range(3, M + 1))
         S3 = mp.mpf(M) ** 2 * (M + 1) ** 2 / 4 - 9
         S1 = mp.mpf(M) * (M + 1) / 2 - 3
-        return tot - (2 * S3 - 11 * S1)
+        return tot - (2 * S3 - 9 * S1)
 
     pts = [(M, rem(M)) for M in (1000, 2000, 4000, 8000)]
     slopes = [float((pts[i][1] - pts[i - 1][1]) / mp.log(mp.mpf(pts[i][0]) / pts[i - 1][0]))
               for i in range(1, len(pts))]
     for (M0, _), (M1, _), sl in zip(pts, pts[1:], slopes):
-        print(f'      cutoff {M0:>5} -> {M1:<5}   d(sum)/d(ln M) = {sl:.6f}      (39/4 = 9.75)')
+        print(f'      cutoff {M0:>5} -> {M1:<5}   d(sum)/d(ln M) = {sl:.6f}      (15/4 = 3.75)')
     check(f'⓸ a HARD CUTOFF -- no zeta function anywhere in it -- returns the same log coefficient: '
-          f'the slope is {slopes[-1]:.4f} against 39/4 = 9.75 and is still rising toward it',
-          abs(slopes[-1] - 9.75) < 0.01)
+          f'the slope is {slopes[-1]:.4f} against 15/4 = 3.75 and is still rising toward it',
+          abs(slopes[-1] - 3.75) < 0.01)
     check('⓸ᵇ and it approaches monotonically from below rather than straddling, which is what an '
           'asymptotic series does and a coincidence does not',
           all(slopes[i] > slopes[i - 1] for i in range(1, len(slopes)))
-          and all(s < 9.75 for s in slopes))
+          and all(s < 3.75 for s in slopes))
     # ⛭ the cross-scheme claim is TESTED and not asserted: the cutoff slope is compared against the
     #   number the ZETA route produced, so the check fails if the two regulators ever disagree.
     gap = abs(slopes[-1] - float(res))
@@ -234,8 +242,8 @@ def main():
           f'{z0} and the zero-point sum\'s log-scale coefficient = {res} ***  -- so the prose cannot '
           f'drift from the computation without failing here',
           f'the spectral zeta at zero is ${z0}$ exactly' in syn
-          and 'log-scale coefficient is $39/4$' in syn
-          and z0 == 10 and res == sp.Rational(39, 4))
+          and 'log-scale coefficient is $15/4$' in syn
+          and z0 == 10 and res == sp.Rational(15, 4))
     check('⓺ᵍ and the scoping the earlier wording said was OWED is now CARRIED -- the ledger\'s '
           'statement is about the geometric constants and not about the tower\'s regularisation',
           'the claim carries the scoping' in syn
@@ -262,7 +270,7 @@ def main():
           'quadratic and logarithmic successors' in p10
           and 'a curvature-squared coupling is not an entry in this framework' in p10)
     check('⓺ᶠ ⇒ SO THE MEASUREMENT LANDS ON A COUNTERTERM THE LEDGER LACKS, NOT MERELY ON AN '
-          'UNSCOPED SENTENCE.  The 39/4 is the coefficient of exactly the logarithmic successor the '
+          'UNSCOPED SENTENCE.  The 15/4 is the coefficient of exactly the logarithmic successor the '
           'paper singles out; the quartic leader it had already absorbed into Lambda, and this is '
           'the next term along, which it says it cannot absorb the same way.',
           res != 0)
@@ -274,7 +282,7 @@ def main():
     print('  ' + '=' * 74)
     r = subprocess.run([sys.executable, COMP], capture_output=True, text=True, errors='replace')
     check('⓻ the computation exits 0 and reports both numbers',
-          r.returncode == 0 and 'zeta(0) = 10' in r.stdout and '39/4' in r.stdout)
+          r.returncode == 0 and 'zeta(0) = 10' in r.stdout and '15/4' in r.stdout)
 
     print()
     print('  ' + '=' * 74)
@@ -283,7 +291,7 @@ def main():
         for f_ in FAILED:
             print(f'      {f_[:110]}')
         return 1
-    print('  *** zeta(0) = 10 AND Res_{s=-1} = 39/4.  THE COEFFICIENT DOES NOT VANISH. ***')
+    print('  *** zeta(0) = 10 AND Res_{s=-1} = 15/4.  THE COEFFICIENT DOES NOT VANISH. ***')
     print('    ⛔ And the paper names the cost itself: the quartic leader it absorbs into Lambda,')
     print('       but the LOGARITHMIC successor goes with curvature-squared invariants and "a')
     print('       curvature-squared coupling is not an entry in this framework\'s ledger".')

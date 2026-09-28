@@ -23,7 +23,7 @@ solved.  What remains is whether a divergent sum over a KNOWN DISCRETE SPECTRUM 
     constant is "the propagating-component count rather than a universal";
   * frequency $\omega_n = \mu_n/a(T)$, shell contribution $2n^3$, the sum diverging quartically.
 
-  ⌗ In $m=n+1\ge3$ this is $\mu^2=m^2-3$, $d=2(m^2-4)$ -- the standard transverse-traceless form on
+  ⌗ In $m=n+1\ge3$ this is $\mu^2=m^2-1$, $d=2(m^2-4)$ -- the transverse-traceless form on
     the unit three-sphere.  *Checked here rather than assumed: the corpus's Peter--Weyl derivation
     and the textbook harmonic analysis are the same numbers, which is what makes the literature's
     machinery usable on the corpus's object.*
@@ -51,7 +51,9 @@ M_, S_, X_ = sp.symbols('m s x', positive=True)
 def spectrum():
     """(mu^2, degeneracy) in the corpus's n, and the same in m = n+1."""
     n = sp.Symbol('n', positive=True)
-    mu2_n, deg_n = n * (n + 2) - 2, 2 * (n - 1) * (n + 3)
+    # r6975 (node 60's r6974): the FREQUENCY is the Laplace eigenvalue n(n+2)-2 displaced by the
+    # curvature term's +2K at every level, so mu^2 = n(n+2) and in m = n+1 it is m^2 - 1.
+    mu2_n, deg_n = n * (n + 2), 2 * (n - 1) * (n + 3)
     mu2_m = sp.simplify(mu2_n.subs(n, M_ - 1))
     deg_m = sp.simplify(deg_n.subs(n, M_ - 1))
     return mu2_n, deg_n, mu2_m, deg_m
@@ -59,7 +61,7 @@ def spectrum():
 
 def coeffs(J=4):
     """c_j(s) in  (m^2-4)(m^2-3)^{-s/2} = m^{2-s} sum_j c_j(s) m^{-2j}."""
-    f = (1 - 4 * X_) * (1 - 3 * X_) ** (-S_ / 2)
+    f = (1 - 4 * X_) * (1 - X_) ** (-S_ / 2)
     ser = sp.expand(sp.series(f, X_, 0, J + 1).removeO())
     return [sp.simplify(ser.coeff(X_, j)) for j in range(J + 1)]
 
@@ -90,7 +92,7 @@ def residue_at_minus_one():
 
 def log_coefficient_from_the_summand():
     """The same number by a route with no zeta function in it: the 1/m term of d_m * mu_m."""
-    asym = sp.expand(sp.series(2 * (M_ ** 2 - 4) * sp.sqrt(M_ ** 2 - 3), M_, sp.oo, 4).removeO())
+    asym = sp.expand(sp.series(2 * (M_ ** 2 - 4) * sp.sqrt(M_ ** 2 - 1), M_, sp.oo, 4).removeO())
     return sp.simplify(asym.coeff(M_, -1)), sp.nsimplify(asym)
 
 
@@ -103,8 +105,8 @@ def main():
     print(f'    in m = n+1 >= 3      :  mu^2   = {mu2_m}   degeneracy = {sp.factor(deg_m)}')
     print(f'    floor  m=3           :  mu^2 = {mu2_m.subs(M_, 3)}   degeneracy = {deg_m.subs(M_, 3)}'
           '   (the corpus\'s "ten at the floor")')
-    print(f'    structural relation  :  d = 2(mu^2 - 1)  ->  '
-          f'{sp.simplify(deg_m - 2 * (mu2_m - 1)) == 0}')
+    print(f'    structural relation  :  d = 2(mu^2 - 3)  ->  '
+          f'{sp.simplify(deg_m - 2 * (mu2_m - 3)) == 0}')
     print()
 
     z0, c = zeta_at_zero()

@@ -460,34 +460,39 @@ check(all(s_new[i] > s_new[i - 1] for i in range(1, len(s_new))) and all(s < 3.7
       "convergence and not a disagreement")
 
 # ===========================================================================
-head("G.  3  THE RECEIPTS THAT PIN THE FIGURES -- NAMED, AND THE NAMING VERIFIED")
+head("G.  3  THE RECEIPTS THAT PIN THE FIGURES -- NAMED, AND NOW RE-POINTED")
+# r6975 (66): the naming was verified at r6974 against the PRE-REPAIR tree, by finding the old figure
+# in each named file.  ** That check inverts the moment the naming is acted on **, which is a small
+# instance of a real hazard: a verification whose predicate is the defect goes red exactly when the
+# defect is fixed.  So the needles are the CORRECTED figures, and the check now reads "each named
+# receipt carries the corrected figure" rather than "each still carries the old one".
 # ===========================================================================
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 PINS = [
     ("P10_canonical_time/P10_the_floor_is_forced_as_a_mode_but_the_subtraction_point_is_a_convention_"
-     "and_the_residue_is_the_absorbed_constant.py", ["39/4", "45/8"],
+     "and_the_residue_is_the_absorbed_constant.py", ["15/4", "7/8"],
      "the 1/m coefficient, the Dirichlet series' poles and residues, the finite-part shift"),
     ("P10_canonical_time/P10_no_rescaling_discharges_the_log_and_the_one_mass_shift_that_does_is_the_"
-     "curvature_offset.py", ["39/4", "9.75"],
+     "curvature_offset.py", ["15/4", "3.75"],
      "the rescale, the tail, the delta enumeration, the cutoff slopes, the +3 clause"),
     ("P10_canonical_time/P10_the_towers_zeta_at_zero_is_ten_and_the_claim_needs_its_scoping.py",
-     ["39", "zeta(0)"], "the residue at s = -1 and the cutoff; its zeta(0) = 10 STANDS"),
+     ["15/4", "zeta(0)"], "the residue at s = -1 and the cutoff; its zeta(0) = 10 STANDS"),
     ("P10_canonical_time/P10_the_degeneracy_needs_r_constant_not_the_cosh_so_the_anomaly_is_what_makes_"
-     "its_own_constant_observable.py", ["39", "2(m^2-4)"], "the banked residue r"),
-    ("P10_canonical_time/P10_the_scale_factor_factors_out_of_the_free_tower.py", ["39/4", "45/8"],
+     "its_own_constant_observable.py", ["15/4", "2(m^2-4)"], "the banked residue r"),
+    ("P10_canonical_time/P10_the_scale_factor_factors_out_of_the_free_tower.py", ["15/4", "7/8"],
      "the large-label expansion"),
     ("P10_canonical_time/P10_the_entangled_case_is_a_singular_pencil_question_and_the_pencil_is_non_"
-     "singular_at_every_truncation.py", ["9.75"], "a hard-coded 9.75 inside a trace operator"),
+     "singular_at_every_truncation.py", ["3.75"], "a hard-coded slope inside a trace operator"),
     ("P17_geometric_core_paper/P17_the_entropy_declination_is_load_bearing_for_the_ledger.py",
-     ["39/4"], "the one cross-paper dependency"),
+     ["15/4"], "the one cross-paper dependency"),
 ]
 for rel, needles, what in PINS:
     p = os.path.join(ROOT, rel)
     txt = open(p, encoding="utf-8").read() if os.path.exists(p) else ""
     hit = [nd for nd in needles if nd in txt]
     check(bool(txt) and len(hit) > 0,
-          f"PINS A MOVING FIGURE -- {rel.split('/')[-1][:58]}... : {what}  (found {hit})")
+          f"RE-POINTED -- {rel.split('/')[-1][:58]}... : {what}  (found {hit})")
 
 UNTOUCHED = [
     ("L165_interacting_tower/D2_the_UV_degree_is_quartic_and_the_IR_is_free.py", "n(n+2)-2"),

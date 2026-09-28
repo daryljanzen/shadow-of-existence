@@ -178,7 +178,7 @@ def rel_comm(R, X):
 
 
 A_full = np.kron(Ahat, It)
-R_trace = np.kron(np.diag(LAM4F + 9.75 * ag ** -6.0), It) + np.kron(np.diag(ag ** -8.0), Tn)
+R_trace = np.kron(np.diag(LAM4F + 3.75 * ag ** -6.0), It) + np.kron(np.diag(ag ** -8.0), Tn)
 R_kin = R_trace + 0.5 * np.kron(Dp @ Dp, It)          # the p_a-carrying variant: the CONTROL
 
 c_trace, c_kin = rel_comm(R_trace, A_full), rel_comm(R_kin, A_full)
@@ -211,7 +211,7 @@ orders = {
 }
 o_ok = True
 for nm, Tv in orders.items():
-    Rv = np.kron(np.diag(LAM4F + 9.75 * ag ** -6.0), It) + np.kron(np.diag(ag ** -8.0), Tv)
+    Rv = np.kron(np.diag(LAM4F + 3.75 * ag ** -6.0), It) + np.kron(np.diag(ag ** -8.0), Tv)
     cv = rel_comm(Rv, A_full)
     print(f"        {nm}: ||[R,a]||/(||R|| ||a||) = {cv:.3e}")
     o_ok = o_ok and cv < 1e-15

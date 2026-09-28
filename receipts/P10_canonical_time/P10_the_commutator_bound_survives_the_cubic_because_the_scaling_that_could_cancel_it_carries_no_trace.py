@@ -98,7 +98,7 @@ def head(title):
     print("=" * 94)
 
 
-R_RESIDUE = sp.Rational(39, 4)                    # Res_{s=-1} zeta_omega -- BANKED at r6920
+R_RESIDUE = sp.Rational(15, 4)                    # Res_{s=-1} zeta_omega -- r6975 re-point of r6920
 KAP = 4.0 * float(R_RESIDUE) / np.pi
 LAM4, HBAR = 12.0, 1.0
 

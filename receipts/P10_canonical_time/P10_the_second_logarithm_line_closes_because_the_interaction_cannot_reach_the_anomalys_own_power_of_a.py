@@ -99,7 +99,7 @@ def head(title):
     print("=" * 94)
 
 
-R_RES = sp.Rational(39, 4)                       # Res_{s=-1} zeta_omega -- BANKED at r6920
+R_RES = sp.Rational(15, 4)  # r6975: 15/4, not 15/4 -- the frequency carries the curvature term's +2K (node 60's r6974)                       # Res_{s=-1} zeta_omega -- BANKED at r6920
 a = sp.Symbol('a', positive=True)
 L = sp.log(a)
 VOL = 2 * sp.pi ** 2 * a ** 3
@@ -276,9 +276,30 @@ for a_ in [1.0, 1.5, 2.25, 3.375]:
 #   ⇒ ** THE REPAIR IS TO MEASURE THE BEST-ACHIEVABLE AGREEMENT RATHER THAN THE AGREEMENT AT AN
 #     ARBITRARY STEP: ** scan lam over a stated grid and assert the minimum.  *That is a stronger
 #     instrument, not a looser one -- the claim under test is a POWER OF a, and a wrong power is
-#     O(1) out, so 1e-6 is four decades of margin while being above every machine's floor.*
+#     O(1) out, so the tolerance can sit well above every machine's floor.*
 #   ⌗ *Routed to `PO-60` as evidence: a check green for machine-specific reasons is that row's
 #     first class seen outside the nine 70 found, and it was found by running rather than swept for.*
+#
+# ⛔⛭ r6975 (66, on node 70's r6961+70.2): ** THE r6947 REPAIR WAS RIGHT IN METHOD AND WRONG IN ITS
+#   MARGIN, AND THE THING THAT CAUGHT IT IS THE DETECTOR THAT ROW ASKED FOR. **  `r6947` scanned the
+#   step and asserted the minimum -- which is the right instrument -- and then claimed "four decades
+#   of margin".  70's build perturbation measured the same site on three linear-algebra builds:
+#         one thread (the runner's own)      2.5e-9
+#         four threads                       7.3e-8
+#         Prescott kernel, two threads       1.5e-7
+#   ⇒ *** SO THE MARGIN OVER 1e-6 WAS 6.7x TO 13.6x ON TWO BUILDS OF THREE, NOT FOUR DECADES, AND THE
+#     SCAN MINIMUM IS STILL FLOOR-DOMINATED ON THOSE TWO. ***  The exponent check measured 4.2x-5.3x
+#     and the truncation-spread check 2.4x-3.7x.
+#   ⌗ ** The lesson is the one r6947 itself drew, applied to r6947: a tolerance argued from one run is
+#     an argument about that run.  The scan fixed WHERE the step sits; it did not fix the margin, and
+#     the margin is the part a second machine sees. **
+#   ⇒ ** REPAIRED BY MEASUREMENT RATHER THAN BY ARGUMENT: each tolerance is set an order of magnitude
+#     above the worst value measured across those builds.  Every failure mode here is O(1) -- a wrong
+#     power of a, a wrong exponent, a truncation-dependent answer -- so the widened tolerances leave
+#     about five decades of real margin while no longer certifying one machine. **
+#   ⌗ *70's alternative, carrying the second difference in exact arithmetic, is better where it
+#     applies and is not taken here: the quantity is an eigenvalue of a truncated matrix, so exact
+#     arithmetic would change the instrument rather than its tolerance.  Named as the stronger route.*
 _LAM_GRID = (1e-2, 3e-3, 1e-3)
 _rels = {lam: abs(shift2(1.0, 8, lam)[1] / closed_form(1.0) - 1.0) for lam in _LAM_GRID}
 rel = min(_rels.values())
@@ -286,20 +307,20 @@ _at = min(_rels, key=_rels.get)
 print("\n   lam-scan of the second difference (relative to the closed form), a = 1, Nt = 8:")
 for lam in _LAM_GRID:
     print(f"     lam = {lam:.0e}   {_rels[lam]:.2e}" + ("   <- best" if lam == _at else ""))
-check(rel < 1e-6,
+check(rel < 1e-5,      # r6975: 1e-5, an order above the worst of 2.5e-9 / 7.3e-8 / 1.5e-7
       f"** the closed form matches the diagonalization to {rel:.1e} relative at lam = {_at:.0e}: "
       f"-lam^2 mu_1 mu_2 / (32 a^3 mu_3 sum mu), and at a=1 both give -1/192 **")
-check(max(abs(np.array(sl_f) + 1)) < 1e-5,
+check(max(abs(np.array(sl_f) + 1)) < 1e-3,   # r6975: 4.2x-5.3x of headroom measured at 1e-5
       f"the FREE energy's exponent measures {np.mean(sl_f):+.6f} -- the n = 1 family, which is "
       "where the anomaly and its logarithm live")
-check(max(abs(np.array(sl_s) + 3)) < 1e-4,
+check(max(abs(np.array(sl_s) + 3)) < 1e-2,   # r6975: the same site on the n = 3 branch
       f"** the cubic's second-order shift measures exponent {np.mean(sl_s):+.6f} -- it is an "
       "n = 3 term, NOT an n = 1 term **")
 
 tr = [shift2(2.0, Nt=N)[1] for N in (5, 6, 7, 8, 9)]
 spread = max(tr) - min(tr)
 print(f"\n      truncation Nt = 5..9 at a = 2: {[f'{q:.9e}' for q in tr]}")
-check(abs(spread / tr[0]) < 1e-5,
+check(abs(spread / tr[0]) < 1e-4,   # r6975: 2.4x-3.7x of headroom measured at 1e-5
       f"and the measurement is truncation-stable to {abs(spread / tr[0]):.1e} relative, so the "
       "exponent is a property of the operator rather than of the cut")
 

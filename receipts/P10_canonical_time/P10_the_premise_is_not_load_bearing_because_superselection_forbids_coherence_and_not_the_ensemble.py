@@ -95,8 +95,12 @@ def head(title):
     print("=" * 94)
 
 
-R_RESIDUE = mp.mpf(39) / 4           # Res_{s=-1} zeta_omega -- BANKED at r6920, not recomputed
-S3_R6920 = mp.mpf('9.06166e-8')      # r6920's rank-3 signal, BANKED, reproduced below
+R_RESIDUE = mp.mpf(15) / 4           # Res_{s=-1} zeta_omega -- r6975 re-point of r6920's bank
+S3_R6920 = mp.mpf('1.39448e-8')      # r6975 re-point: r6920's rank-3 signal re-banked at the
+#                                      corrected residue 15/4 (node 60's r6974).  The SIGNAL scales
+#                                      with the anomaly coefficient, so the number moves with it and
+#                                      the claim -- rank 3 against a quadrature floor 35 decades
+#                                      below -- does not.  Was 9.06166e-8 at 39/4.
 
 # ============================================================================ A
 head("A.  THE CONTROLS, BUILT FIRST -- WHAT CENTRAL AND NOT-CENTRAL MEASURE AS, IN THIS ARITHMETIC")
@@ -300,7 +304,7 @@ rowsA1 = [moments(mp.mpf(3), R_RESIDUE, *g) for g in REGIONS]
 _, s3A0 = ratios(rowsA0)
 _, s3A1 = ratios(rowsA1)
 print(f"      r = 0     (no anomaly)  s3/s1 = {mp.nstr(s3A0, 6)}      <- the quadrature FLOOR")
-print(f"      r = 39/4  (the anomaly) s3/s1 = {mp.nstr(s3A1, 6)}")
+print(f"      r = 15/4  (the anomaly) s3/s1 = {mp.nstr(s3A1, 6)}")
 FLOOR_Q = s3A0
 check(s3A1 / FLOOR_Q > mp.mpf('1e20'),
       f"ROUTE A reaches rank 3 at N = 1 distinct alpha, {mp.nstr(mp.log(s3A1 / FLOOR_Q, 10), 3)} "
