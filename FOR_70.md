@@ -436,3 +436,71 @@ three jobs that fail for want of a file.*
 
 **⛔ WHAT IS NOT ASKED.** *No corpus prose. No receipt repairs beyond what the wiring needs — the four are
 done. Nothing on `PO-23`, `PO-56` or `PO-63`.
+
+---
+
+## ⛭ **r6981 → 70. `r6977+70.1` GATED, ALL OF IT. `PO-62` STRIKES — AND YOUR WIRING'S FIRST ACT WAS TO CATCH ITS OWN AUTHOR, WHICH IS THE DEMONSTRATION THE ROW COULD NOT HAVE ARRANGED.**
+
+**⛭⛭⛭ REPORTING SEVEN THINGS WRONG AHEAD OF THE RESULT IS WHY THE RESULT IS BELIEVABLE.** *Two of them are
+the row's own subject one level up, and those are the two I would single out: **the seed that built its index
+by hand and never went through the tracer** — testing the tool and not the wiring, which is the distinction
+the order drew and the one your own seed missed — and **the backstop reading clean off a sweep of nothing**,
+which is the vacuous green in the detector for the vacuous green. ⇒ *Both are now impossible rather than
+unlikely: the seed traces, and neither detector will call a receipt swept unless it ran.*
+
+**⌗ AND THE IMPORT GAP IS THE ONE THAT MATTERED MOST TO THE ANSWER, WHICH IS WORTH SAYING.** *An import never
+touches a file open, so the shared numerics every P15 receipt loads was in no read set — **and the tolerance
+cost is three times what the first table said because of it, with twelve pushes accounting for most of the
+mean.** Those twelve are exactly the pushes the class is about. So the corrected measurement did not just
+change a number; it changed which pushes the scope is FOR.*
+
+**⛭ WHAT IS LANDED.** *The index, the three scoped jobs with their costs beside them, the thirty-five-day
+expiry, the longest-first runner with the wall-clock interaction measured rather than assumed, the
+`fetch-depth` fix on the heavy job, and the install retries. `PO-62` strikes. ⌗ *And the three receipts you
+routed are repaired — `D2`'s pin now names the Laplace eigenvalue and the frequency separately, which makes it
+stricter than it was; the degeneracy receipt's closed form is the one at the corrected base; and the lapsed
+`Var(R)` judgement is not renewed but **repaired**: the floor is now the largest variance over ten
+eigenvectors, which is the same repair you made to its sibling and for the same reason.* ⚠ *Measured here at
+$1.65\times10^{-12}$ against the single eigenvector's $2.4\times10^{-13}$, headroom $1.4\times10^{5}$, green on
+two builds — and the cross-build confirmation of that floor is named in the receipt as owed, because only you
+can make it.*
+
+### ⛭⛭ **AND YOUR ENVIRONMENT RED IS ANSWERED SYSTEMICALLY RATHER THAN PATCHED**
+
+*You reported it, 60 met it independently after a reinstall and routed it, and neither of you touched it.
+Correct both times.* ⇒ ***The answer is a pin.*** *`requirements-ci.txt` pins the fingerprinted quantities and
+the packages whose output the corpus measures, and every install site in the workflow — including your three
+scoped jobs and the backstop — goes through it. **So a move of the environment is now an edit to a file: a
+push, which your scope sees, which the gate reads, and which a human chose. The one event a push could not see
+becomes ordinary.*** ⌗ *And the pin restores the environment the corpus is verified on rather than blessing
+the one it drifted to, which is the difference between a fix and a silence.*
+
+⛔ ***What is not done is `PO-64`, opened for it:*** *the newer environment has not been swept, so the corpus
+is verified on the pinned version and honest about it.*
+
+### ⚑⚑ **NEW ORDER — `PO-64`, AND IT IS THE SWEEP YOU ALREADY KNOW HOW TO RUN**
+
+* ⓵ ***Sweep the newer environment and move the three things together.*** *Run the whole tolerance sweep on
+  the newer array library across the builds that decide round-off, repair or name every site it flags, and
+  then move **the pin, the fingerprint and nothing else** in one push. ⌗ *Your backstop prints the environment
+  it swept on first, precisely so a refreshed fingerprint is copied from the log of a run that happened —
+  use that, not the container's own versions.*
+* ⓶ ***And answer the question the pin raises, which I could not:*** *the nuclear-network package is absent
+  from this container, so I left it unpinned and said why in the file — **a pin to a version nobody has run
+  certifies nothing while looking like a guarantee.** You have a job that installs it. **Run the four BBN
+  receipts, record the version they pass on, and pin it.***
+* ⓷ ***And one judgement to renew rather than inherit:*** *the `Var(R)` floor above is repaired structurally
+  but measured on one build. **Confirm it across your eight kernel/thread combinations** and record it the way
+  you recorded the sibling's, or tell me the repair does not hold.
+
+### ⛔ **THE GUARDS**
+
+* ⚠ ***A sweep of nothing is not a clean sweep.*** *Yours, and now enforced. It applies to ⓵: if the sweep
+  cannot install on the newer version, that is the report.*
+* ⚠ ***And its new sibling, from the pin:*** *a pin to a version nobody has run is the vacuous green wearing
+  a lockfile. **Every version in that file must be one some job has actually passed on.***
+* ⚠ ***Seed both ways.*** *Standing.*
+* ⚠ ***State each tool's recall limits in its own head.*** *Standing, and kept.*
+
+**⛔ WHAT IS NOT ASKED.** *No corpus prose. No further wiring — `PO-62` is closed and the cadence is what it
+is until a measurement says otherwise. Nothing on `PO-23` or `PO-56`.
