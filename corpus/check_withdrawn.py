@@ -544,6 +544,37 @@ REGISTRY = [
      "need is the amplitude ratio, because what fills a trough is an oscillating amplitude and the "
      "contrast statistic is a deviation of the oscillation; so the dipole passes both filter conditions "
      "everywhere it can be tested and is the one candidate left standing"),
+    # \u26d4 r7003 on node cc66's cc66.53, and the seat corrected a landed result of its own for the
+    #   second time in three revisions.
+    # \u2337 ** WHAT WAS ASSERTED AT `r6999`. **  That the surviving candidate's departure "grows and
+    #   decelerates, with a curvature of the same sign as the target's and of comparable size", so that it
+    #   passed BOTH filter conditions where it could be tested.  *The growth and the sign stand; the
+    #   CURVATURE does not.*
+    # \u2337 ** WHY IT DOES NOT. **  Read with the window estimator on its own range and its own recipe the
+    #   candidate's curvature runs from clearly negative at the width it was read at, through nearly zero,
+    #   to POSITIVE at the widest -- and `cc66.51`'s stability check had certified the MEAN over a
+    #   sub-range.  ** The curvature was never the quantity that was checked. **  *A stability check
+    #   licenses the statistic it was run on and no other -- the same shape of error this corpus opened
+    #   `PO-65` over and broke a register row with on the same day.*
+    # \u2337 ** AND WHAT REPLACES IT IS STRONGER WHERE IT CAN BE HAD. **  With the held-period estimator the
+    #   candidate passes SIGN in every band and passes GROWTH, on a range no estimator had reached; and the
+    #   curvature condition cannot be applied at all, because the target's own deceleration is carried
+    #   ENTIRELY by the one band no estimator of the candidate can reach.  *The filter is out of conditions
+    #   rather than the candidate out of chances.*
+    ("the-candidates-curvature-matches-the-targets-and-it-passes-both-conditions",
+     # \u2337 Asserted forms only.  The candidate's GROWTH and SIGN are not withdrawn -- both are
+     #   re-established on a wider range in the same section.
+     r"(?:grows and decelerates, with a curvature of the same sign as the target's"
+     r"|its curvature of the same sign as the targets and of comparable size"
+     r"|its curvature of the\s*\nsame sign as the target's and of comparable size)",
+     r"(?:cc66\.53|r7003|withdrawn|WITHDRAWN|corrected|CORRECTED"
+     r"|never the quantity|the mean|held-period|cannot be applied|out of\s*\n?conditions)",
+     "corrected r7003 on node cc66's cc66.53; the candidate's growth and sign stand and are re-established "
+     "on a wider range with the held-period estimator, but the curvature does not -- read on its own range "
+     "the window estimator returns curvatures of both signs across its widths, and the stability check that "
+     "licensed the earlier reading had certified the MEAN over a sub-range rather than the curvature; and "
+     "the curvature condition cannot be applied at all, the target's deceleration being carried entirely by "
+     "the one band no estimator of the candidate can reach"),
 ]
 
 SKIP = ('appendix_receipts',)
@@ -678,6 +709,12 @@ HISTORICAL = {
 # a pattern that is broken.  Each entry therefore carries a KNOWN-POSITIVE string, taken verbatim
 # from the text the withdrawal removed, and this gate fails if any pattern stops matching its own.
 POSITIVES = {
+    # \u26d4 r7003 on node cc66's cc66.53: `P15`'s own sentence as `r6999` landed it, and the register's
+    #   summary form.  *Both are the claim ASSERTED.*
+    "the-candidates-curvature-matches-the-targets-and-it-passes-both-conditions": [
+        "grows and decelerates, with a curvature of the same sign as the target's and of comparable size",
+        "its curvature of the same sign as the targets and of comparable size",
+    ],
     # \u26d4 r6999 on node cc66's cc66.51: `P15`'s own sentence as `r6997` landed it, and the register's
     #   summary form of the filter row.  *Both are the claim ASSERTED.*
     "the-dipole-ratio-fails-the-filter-and-the-two-readings-disagree-about-one-quantity": [
