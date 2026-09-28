@@ -3630,3 +3630,63 @@ The Einstein–Hilbert quartic's own vertex numbers are not computed. ⓵ to ⓷
 ⛔ **No corpus edit — routed**, including the closing paragraph that names this question: ⓶'s answer is *"one of them does, and it is already paid for"*, which is neither of the two branches that paragraph anticipates, so **the strike is yours to consider with my reading beside it, as you asked last time.** ⛔ No repair of `r6863`'s row — the scope statement is routed above. ⛔ Nothing on the other rows.
 
 ⌗ *`r7002`, 34 checks, rc = 0; exact everywhere except the one rate measurement, which is reported at its **worst** point against an exactly derived prediction, with the margin set from what the check discriminates.*
+
+---
+
+## ⚑ `r7004` — **THE DESCENT IS FREE AT THE ORDER THIS SECTION WORKS AT, IT FLIPS AT THE NEXT ONE, AND THE KERNEL ROTATES RATHER THAN FAILING. YOUR DECLINE OF THE STRIKE STANDS — BUT NOT FOR THE REASON YOU GAVE.**
+
+Answers your `r7003` order. And ⓵ was the invitation you said it was: **the framing carries one object and not three, and the reading you put first is the one with no object — which is this row's own landed result.**
+
+### ⓵ What the question is, before it is answered
+
+Every counterterm value on this family is a function of the **single** operator `â`, the curvature radius entering as a number. For functions of one operator:
+
+* **(a) the operator-valued basis and the basis of values are the same object.** A combination of functions of `â` vanishes as an operator exactly where the function vanishes on the spectrum — verified here as equal ranks *and*, normalised, the identical kernel vector on a four-point spectrum. ⇒ ***a rank descends with no linearity argument at all.***
+* **(b) the expectation-value basis adds nothing.** The expectation of a function of `â` is phase-independent, so it sees the spectral measure alone — against a non-commuting control whose phase derivative is non-zero. Superposition and ensemble are one object here.
+* **(c) and the basis over the quantized family has no object as put.** The curvature radius is a coefficient of the physical Hamiltonian rather than an observable of it, so its operator has a **one-point spectrum**, where every function of it is a multiple of the identity and the rank is **1** — against **2** on a two-point spectrum. *That is `r6982`'s superselection result, exhibited as an arithmetic rather than quoted.*
+
+⇒ **So the framing conflates (c) with (a), and ⓶'s first branch — "a superposition over a family on every member of which the collapse holds" — is not available: it is the reading your own `PO-23` work already retired.** The question that bears on the mode sums is the **single-radius** one with `â` an operator of purely continuous spectrum. ⌗ *Third decline on this row, and this one changes which question is asked rather than which answer is right.*
+
+### ⓶ And answered there, the descent is free at this order — and neither branch is why
+
+The deformation the theory actually makes is **not arbitrary**, and that is the whole of it:
+
+> **pure radiation leaves `R = 4Λ` exactly** — computed from the exact closed-FRW scalars, your own claim re-derived — so the `a⁻⁴` in the curvature scalar is the **logarithm's and nothing else's**: `R = 4Λ + ενa⁻⁴`.
+
+On that deformation every dimension-six invariant shifts **along the same function**: the four computed here move by `48`, `12`, `8`, `3` times `Λ²νa⁻⁴` against zeroth orders `64`, `16`, `32/3`, `4` times `Λ³` — *each exactly three quarters of its own zeroth order over `Λ`*.
+
+⇒ ***RANK ONE AT FIRST ORDER AS WELL AS AT ZEROTH: `r7000`'s collapse descends.*** ⌗ *Calibrated first on the member itself, where the machinery returns `4Λ`, `4Λ²`, `8Λ²/3` and all four dimension-six values from the metric rather than from `r7000`'s frame.*
+
+**And it flips at SECOND order**: rank **two** there, the breaking carried by `a⁻⁸` terms with `log²a` structure the first-order terms do not have.
+
+⇒ **So `r6982`'s "no identity to descend" is real and does not bite at first order — it is a statement about an *arbitrary* deformation, and the one the anomaly makes preserves the rank.** ⌗ *Control: put an `a⁻⁶` into one invariant — a deformation the anomaly does not make — and the rank is two already at first order. The survival belongs to the deformation, not to the rank test.*
+
+### ⓷ Item by item, because they do not fail together
+
+| | descends? | how it is established |
+|---|---|---|
+| the rate `M⁶` | **yes, at every order** | the weights are harmonic data in the label alone; the whole scale-factor dependence is the single factor `a⁻⁴`, so a state enters as one moment multiplying the sum |
+| the count of subtractions | **yes** | each still necessary with that moment in front |
+| the count of conventions (three) | **yes** | same |
+| rank one per dimension | **at first order; fails at second** | ⓶ |
+| the kernel | **in number, yes — in place, no** | below |
+
+**The kernel is the finding.** Still two directions of three with a one-dimensional kernel — **but with the anomaly on, the free direction necessarily carries the logarithm's convention, where with it off that entry is exactly zero.** Releasing the dimension-six convention costs a shift of the logarithm's in the computed ratio `L/(48Λ²ενq₆)`, which runs away as the anomaly is switched off — *so the classical kernel is the limit of this one and not a different case.*
+
+⇒ ***`r7002`'s "the subtraction this row added costs no observable at all" survives the descent with its mechanism changed: the absorption is into a combination of the cosmological term and the one constant already spent — and the count of numbers taken from the world is unchanged at this order.***
+
+⛭ **And that is the fourth appearance of one number.** `L` makes the third convention, opens the second observable direction, and now rotates the kernel; at `L = 0` all three vanish together.
+
+### ⛔ Your decline stands, and I am not asking you to revisit it
+
+⓷ says the count of observable directions is unchanged **at the order this section's back-reaction is semiclassical**, and the second-order rank is **two**. So the gap you declined on is real and it has moved rather than closed: it is no longer "does the form descend" but **"what does the form look like at second order in the back-reaction"** — which is the first time this row has had a next question that is neither a convention nor a coefficient. ⌗ *If you want my reading beside yours again: I would not strike here either.*
+
+### ⓸ Not attempted, and said
+
+The Einstein–Hilbert quartic's vertex numbers. ⓵ to ⓷ consumed the revision, the fourth time. ⌗ *And the answer does not wait on them: an unknown factor on the dimension-six direction leaves the rank and the rotated kernel unchanged.*
+
+### What I did not do
+
+⛔ **No corpus edit — routed**, including the paragraph that names the descent question: ⓶ makes the descent free *at one order and not the next*, which is neither branch that paragraph anticipates, so **the move is yours and my reading is above.** ⛔ Nothing on the other rows.
+
+⌗ *`r7004`, 25 checks, rc = 0, **no floats at all** — exact closed-FRW scalars, exact rational invariants, exact matrix ranks on exact sample points, and the kernel solved symbolically.*
