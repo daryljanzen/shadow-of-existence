@@ -507,6 +507,43 @@ REGISTRY = [
      "in every band and of quadrature in none -- so dividing is the right operation and the remainder is "
      "well defined; the over-delivery was evidence about the sizes and not the rule, its arithmetic is "
      "confirmed to one per cent, and what survives is a shape obstruction no coefficient can remove"),
+    # \u26d4 r6999 on node cc66's cc66.51, and the seat reversed its OWN dismissal of a candidate.
+    # \u2337 ** WHAT WAS ASSERTED. **  At `cc66.50` (landed r6997): that the dipole's ratio fails the
+    #   filter's growth condition, and so that no measured candidate carries the excess's wavenumber
+    #   dependence.  And at `r6997` in `P15`, by this seat: that the ratio "reads opposite ways on the two
+    #   solver paths" with which quantity each measured OWED -- a disagreement about one quantity.
+    # \u2337 ** IT IS NOT ONE QUANTITY. **  The register's figure is a ratio of OSCILLATION AMPLITUDES and
+    #   reproduces exactly; `cc66.50` filtered a ratio of band-integrated POWERS, which reads the opposite
+    #   sign on the same spectra.  *They differ in what is ratioed, in which fields, and over what range.*
+    # \u2337 ** AND THE ONE THE ARGUMENT NEEDS IS THE AMPLITUDE RATIO, WHICH IS PHYSICS AND NOT A
+    #   CONVENTION: ** trough-filling is an oscillating term a quarter period out of phase adding into
+    #   another's troughs, so what fills a trough is an oscillating amplitude, while the smooth part
+    #   displaces the envelope and fills nothing -- and the contrast statistic is itself a deviation of the
+    #   OSCILLATION about a running mean.  *So the filter row answered the wrong question.*
+    #   \u21d2 *** THE CANDIDATE PASSES BOTH CONDITIONS EVERYWHERE IT CAN BE TESTED, AND THE REVERSAL IS
+    #     ON THE SEAT'S OWN ERROR RATHER THAN ON NEW DATA. ***
+    # \u2337 ** AND A STATISTIC WAS RETURNING A NUMBER OUTSIDE ITS DOMAIN. **  The departure crosses zero
+    #   inside the range, so the growth ratio is not a ratio of anything there; the arithmetic returned a
+    #   large negative value that *would have read as a spectacular pass*.  The statistic now carries its
+    #   domain.
+    ("the-dipole-ratio-fails-the-filter-and-the-two-readings-disagree-about-one-quantity",
+     # \u2337 Asserted forms only.  The empty-search finding for the OTHER candidates stands and is
+     #   restated in the same section; what is withdrawn is the dipole's dismissal and the one-quantity
+     #   framing.
+     r"(?:reads opposite ways on the two\s*\nsolver paths"
+     r"|READS FOURTEEN PER CENT \*\*BELOW\*\* AND FLAT"
+     r"|Which quantity each path measures is owed before this channel is closed"
+     r"|the ratio of dipole to monopole at the visibility\s*\npeak, and all three"
+     r"|the dipole-to-monopole ratio, and all three channels with measured shares)",
+     r"(?:cc66\.51|r6999|withdrawn|WITHDRAWN|corrected|CORRECTED"
+     r"|different quantit|oscillation amplitude|amplitude ratio"
+     r"|passes both|reverses|band-integrated)",
+     "corrected r6999 on node cc66's cc66.51; the two readings are different quantities rather than two "
+     "readings of one -- an oscillation-amplitude ratio, which reproduces the registered figure exactly, "
+     "against a ratio of band-integrated powers -- and the one the trough-filling and contrast arguments "
+     "need is the amplitude ratio, because what fills a trough is an oscillating amplitude and the "
+     "contrast statistic is a deviation of the oscillation; so the dipole passes both filter conditions "
+     "everywhere it can be tested and is the one candidate left standing"),
 ]
 
 SKIP = ('appendix_receipts',)
@@ -641,6 +678,13 @@ HISTORICAL = {
 # a pattern that is broken.  Each entry therefore carries a KNOWN-POSITIVE string, taken verbatim
 # from the text the withdrawal removed, and this gate fails if any pattern stops matching its own.
 POSITIVES = {
+    # \u26d4 r6999 on node cc66's cc66.51: `P15`'s own sentence as `r6997` landed it, and the register's
+    #   summary form of the filter row.  *Both are the claim ASSERTED.*
+    "the-dipole-ratio-fails-the-filter-and-the-two-readings-disagree-about-one-quantity": [
+        "But the amplitude ratio that would say whether it is stronger here reads opposite ways on the "
+        "two\nsolver paths",
+        "Which quantity each path measures is owed before this channel is closed",
+    ],
     # ⛔ r6993 on node cc66's cc66.49: `P15`'s own sentences as `r6983` landed them, and the register's
     #   summary form.  *All are the claim ASSERTED.*
     "the-two-channels-do-not-compose-so-the-remainder-is-a-construct-of-the-rule": [
