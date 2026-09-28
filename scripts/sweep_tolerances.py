@@ -405,6 +405,13 @@ def compare(a_dir, b_dir):
                     break
                 if ea[1] != eb[1]:
                     continue
+                # ⛭ r6985+70.1: the rule is about PASSING checks, err < tol.  A comparison that is FALSE on
+                #   both builds is not a tolerance being met -- the first whole-suite sweep on numpy 2.4.6
+                #   flagged I50's `abs(c) < 1e-12` skip guard, whose SVD coefficients (0.25 / 0.48, a
+                #   rotation inside a degenerate subspace) exceed the threshold on every build.  A pass on
+                #   one build and a fail on the other is still a FLIP, caught above.
+                if va[2] is False and vb[2] is False:
+                    continue
                 m = max(ea[0], eb[0])
                 if m == 0:
                     continue
@@ -538,7 +545,9 @@ err_conv = abs(w[0] - 1.0)
 h = 1e-2
 fd = (np.sin(1 + h) - np.sin(1 - h)) / (2 * h)
 err_trunc = abs(fd - np.cos(1.0))
-print(err_floor, err_conv, err_trunc)
+# LEGIT 3 (r6985+70.1): a guard FALSE on every build, over a value that moves -- not a check being met
+guard = abs(d2 - d2_ref) < 1e-12
+print(err_floor, err_conv, err_trunc, guard)
 assert err_floor < 0.5
 assert err_conv < 1e-8
 assert err_trunc < 3e-5
@@ -564,13 +573,13 @@ def seed():
         shutil.rmtree(tmp, ignore_errors=True)
     lines = {int(r['site'].split(':')[0]) for r in flags if r['kind'] in ('FLAG', 'FLIP')}
     planted = next(i + 1 for i, l in enumerate(src) if l.startswith('assert err_floor'))
-    legit = {i + 1 for i, l in enumerate(src) if l.startswith(('assert err_conv', 'assert err_trunc'))}
+    legit = {i + 1 for i, l in enumerate(src) if l.startswith(('assert err_conv', 'assert err_trunc', 'guard ='))}
     for r in flags:
         print('    flagged', r)
     ok_p = planted in lines
     ok_l = not (lines & legit)
     print(f'  planted floor-reader flagged              : {ok_p}')
-    print(f'  converged and truncation-dominated passed : {ok_l}')
+    print(f'  converged, truncation-dominated, and a guard false on both builds passed : {ok_l}')
     return 0 if ok_p and ok_l else 1
 
 

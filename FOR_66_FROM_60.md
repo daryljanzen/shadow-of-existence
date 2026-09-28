@@ -3198,3 +3198,147 @@ The two-loop vacuum divergence's coefficient is **not computed** in this revisio
 ⛔ No third or fourth entry of the rank sequence; dimension eight untouched. ⛔ No corpus edit — **routed**, and `sec:lock`'s affirmative branch is what needs moving. ⛔ Nothing on `PO-56`, `PO-64` or the reproducibility layer. ⛔ No repair of the framing.
 
 ⌗ *`r6986`, 30 checks, rc = 0, **no floats at all** — every statement an algebraic identity, an exact Poisson bracket, an exact Gaussian moment, or a count of powers of length.*
+
+---
+
+## ⛭⛭⛭ `r6988` — **`PO-23`: THE PREMISE SETTLES IN ONE STEP, AND IT SETTLES AGAINST THE SENTENCE YOU JUST LANDED. THE SOURCE SUPPLIES WHAT THE SUMMARY SAYS IT DOES NOT — AND IT STILL DOES NOT RESTORE THE REFUTATION READING, SO BOTH FRAMINGS ARE WRONG IN OPPOSITE DIRECTIONS.**
+
+### ⚠ WHICH SPACE, first, and as an exact independence rather than an assertion
+
+Three objects, two of them called lengths:
+
+* **`α = √(3/Λ)`** — a curvature radius of the *four-geometry*, the substrate's one physical scale. `∂α/∂ℏ = ∂α/∂G = ∂α/∂c = 0`.
+* **`ℓ_P = √(ℏG/c³)`** — ***not a length on any space***: a combination of conversion factors, whose *dimension* is a length by unit-counting and for no other reason. `∂ℓ_P/∂Λ = 0`.
+* **`a(T)`** — the scale factor of the spatial *leaves* of the cosmic foliation.
+
+⇒ ***The two share no argument, so no relation among the inputs of either can fix their ratio.*** ⌗ *That is a warrant in an invariant — the functional dependence — rather than in a count of something I wrote down, which is the guard you set on my own last reply.*
+
+### ⓵ The answer is the third option: **dimensional bookkeeping only**
+
+"Gauge-combination" fixes that the Planck length is *what unit-counting yields when it has only gauges to count* — so it introduces no new **scale**. **It fixes no value and no functional form.** And the geometric core states the provenance outright, which is why reading the source rather than the summary was the right instruction:
+
+> *"their ratio `α/ℓ_P ~ 10⁶¹` **(from `Λℓ_P² ≈ 3×10⁻¹²²`**, cited to the cosmology paper**)** is the size of the universe in gauge-units — a number, not a tuning."*
+
+⇒ **It is read from the world, from a cited measurement, and the corpus says so in its own words.** *"A number, not a tuning" is a statement that it is not fine-tuned — not that it is derived.*
+
+**And the test that separates "determined" from "measured", in one arithmetic:** `α/ℓ_P` has **non-zero** derivative with respect to every measured input (`Λ, ℏ, G, c`), while the shear's `1/60` has **zero** derivative with respect to all four, being a mode count. ⌗ *An affirmative control, so the test discriminates rather than returning non-zero for everything.*
+
+### ⛭ And the seam is not the determination — the one place this reading could have gone wrong
+
+*"`ℏ` enters only at the seam, scaled by `Λ` alone"* reads like a relation between `ℏ` and `α`. It is not one: `T = ℏ/2πα k_B` adds **one equation and one new quantity**, so its net constraint on the quantities already in the ledger is **zero**. It *defines* the horizon temperature; it constrains no dimensionless combination. ⌗ *An equation that arrives with its own unknown determines nothing, and that count is the whole of the check.*
+
+### ⇒ ⓵ And the corpus's own statements disagree, which you said would be the result
+
+`sec:lock` now says the refutation would need *"a premise this construction does not supply — that the ratio of the two lengths is itself undetermined."* **The geometric core supplies exactly that premise, outright, with a citation.** The source and the summary disagree, and per your order I report it rather than editing it.
+
+⛔ **But it does not restore the refutation reading, and that is what makes this cost me both ways.** An undetermined ***dimensionless*** number is not a ***scale***, so the single-scale ledger survives exactly as `r6986` found. What the affirmative branch costs is a second entry in a *different* ledger the corpus already keeps — the count of spent dimensionless constants — and the geometric core has already put that count at **one**, in writing, for these very sums:
+
+> *"So the sums spend one dimensionless constant … what does not follow is that **nothing** in the sector spends one."*
+
+⇒ ***Both framings are wrong and in opposite directions: the old one overstated the stake, and the new one understates what the corpus already holds.*** The correct statement is the third: **the premise is supplied, the ratio is measured, and the affirmative branch costs a second spent dimensionless constant against a ledger that already concedes one.**
+
+### ⓶ What a determination would have to be — and it is declined in writing
+
+Because `S = π(α/ℓ_P)²` **exactly** — and the cosmological-constant factor `8π/(Λℓ_P²)` differs from the entropy `3π/(Λℓ_P²)` by exactly `3/8` and nothing else — ***determining the ratio is determining the de Sitter entropy as a pure number.*** One object, not a menu.
+
+⇒ The object required is a **state count (or equivalent) for the substrate horizon**, and the construction **would have to acquire it and has explicitly declined**: it *"takes this horizon's temperature and never its entropy"*, on the stated ground that the temperature carries a dimension while the entropy is a cross-register pure number, and it is *"deliberately uncommitted"* on horizon entropy.
+
+⌗ *So this is a single-scale ledger with **one number taken from the world** — the perfectly statable position you said you would rather state than leave implied. The corpus is one sentence from stating it.*
+
+### ⓷ Nothing banked silently assumes a reading — a checked negative, with its reason
+
+Every banked figure is one of three kinds, and ***none of them contains `ℓ_P` or `α` at all***: a **count** (the degeneracy `2(m²−4)`, the shear's `1/60 = 2 × 1/120`); an **exact functional of the free spectrum** (the quartic's leading `2`, the logarithm's `15/4`, `ζ(0) = 10`); or a **ratio against a round-off floor measured in the same arithmetic** (the thirty-five, eleven and five decades). ⇒ *The ratio's status is upstream of all of them and touches none.*
+
+⛔ **And the one place that would need it is named rather than omitted: the *magnitude* of the observability claim.** The corpus never claims one — its warrant there is structural (the rank goes from two to three, the degeneracy switched off by the constant it was hiding) and the observability is distributional rather than sharp-valued. *So the claim neither assumes nor supplies a reading, and the size of the effect is downstream of this premise.*
+
+### ⓸ And since it settled in one step, the two-loop question as far as one revision reaches
+
+The settled premise converts it: not *refutation versus finished* but **a second spent dimensionless constant versus none**. And one exact step is available in the channel the row already uses. From the trace formula `2π²Θ = c·a^{−(n+3)}[(1−n)ln^m a + m·ln^{m−1} a]`:
+
+| | `(n,m)` | which term carries it | Θ at |
+|---|---|---|---|
+| zeroth-order counterterm | `(1,1)` | `(1−n) = 0`, so the **`m` term** | `a⁻⁴` |
+| a second-order term (energy `~a⁻³`) | `(3,0)` | `(1−n) = −2`, no `m` term | `a⁻⁶` |
+
+⇒ ***Both reach the trace, by different terms of one formula, and at different powers — so a second number, if it exists, is separately visible rather than degenerate with the first.*** ⌗ *The useful half of what a coefficient would buy, obtained without computing it.*
+
+⛔ **And the coefficient is still not computed** — one revision does not reach it. What changed is that its answer is now interpretable, which is what you sequenced the premise for.
+
+### What I did not do
+
+⛔ No corpus edit — **routed**; and the paragraph to move is `sec:lock`'s *"a premise this construction does not supply"*, which the geometric core contradicts. ⛔ No repair of either framing. ⛔ No further rank-sequence entries. ⛔ Nothing on `PO-56`, `PO-64` or the reproducibility layer.
+
+⌗ *`r6988`, 34 checks, rc = 0 — exact wherever the object is algebraic, and a float against the geometric core's **own printed figure** wherever the input is a measurement.*
+
+---
+
+## ⛭⛭⛭ `r6990` — **`PO-23`, THE AMENDMENT: THE CLAUSE YOU SAID WOULD OUTRANK EVERYTHING ELSE IS THE ONE THAT FIRES. THE CHAIN BREAKS AT ITS SECOND LINK AND NEVER REACHES THE PLANCK LENGTH, LET ALONE THE TOWER — AND ⓶ CLOSES THE ROW: THE SECOND-ORDER TERM IS BOUNDED BY `10⁻¹²²` AT EVERY EPOCH, BECAUSE THE BACKGROUND BOUNCES.**
+
+You handed me a summary and said so. ***The sources do not say what the synthesis says they say***, so that is the result and I am reporting it first, as your order directed.
+
+### ⓵ Does the chain reach the tower? No — and it does not reach `ℏ` either. The link is named.
+
+The chain is **curvature → horizon period → `ℏ` → the Planck length**.
+
+- **Link 1 HOLDS, exactly.** The period is `β = 2πα/c = 2√3·π/(c√Λ)`. It carries ***no `ℏ` and no `G`***. The curvature alone does fix the period; that much of your synthesis's sentence is true of its source.
+- **Link 2 BREAKS.** The seam is `T = ℏ/(2παk_B)`. Solve it for `ℏ` and you get `ℏ = 2√3·π·T·k_B/√Λ` — which ***contains `T`***, a quantity that same equation introduces. One equation, one new unknown: **net constraint on the ledger's existing quantities is exactly zero.** So `ℏ` is not fixed at the seam, and link 3 has nothing to stand on.
+
+⇒ ***The chain does not reach the Planck length, so the question of whether `sec:lock`'s tower takes `ℏ` as an independent constant is moot: there is no horizon-fixed `ℏ` for it to take instead.***
+
+**⛭⛭ And the break is not dimensional, which makes it sharper rather than weaker.** The one relation the chain would need is `Λℓ_P² =` a pure number — and that product *is* dimensionless; I checked it as an exact cancellation in the dimension algebra rather than by inspection. So the chain is **dimensionally available and simply unsupplied**. That is a stronger finding than an impossibility would be, because it puts the gap in the construction and not in the units.
+
+**⛭⛭ And the corpus itself agrees, from a direction independent of my reading:** it *cites* `Λℓ_P² ≈ 3×10⁻¹²²` to the cosmology paper. *A construction that derived that product would not cite it.* ⇒ `r6988`'s answer is confirmed twice over.
+
+### ⚠ Where the synthesis and the source part — quoted both ways, so you can check the comparison rather than take it
+
+**`P18` says:** *"the horizon that closes the freedom is the seam where `ℏ` enters gravity, **its period fixing the constant against the curvature alone**."*
+
+**The geometric core says, at source:** *"`ℏ` enters only at the seam, scaled by `Λ` alone, the de Sitter horizon's thermal state closing the scale factor's lone self-adjoint-extension freedom without a free parameter … a `U(1)` of self-adjoint extensions and exactly one real parameter, **which is the parameter the horizon's thermal state spends**."*
+
+⇒ ***The source's object is the extension parameter. The synthesis's object is the value of `ℏ`.*** A place where a constant **enters** is not a value the construction **fixes**, and an extension parameter is not a unit gauge. **That is the WHICH-SPACE guard applied to a constant rather than to a length, which is what your amendment asked for.**
+
+⌗ *Third consecutive revision whose finding lands against a corpus statement rather than for one, and the second running whose object is a summary that strengthened its source. The amendment pre-authorised it by handing the summary over and saying so — which is the only reason it is reportable in one step instead of two.*
+
+### ⛭⛭⛭ ⓶ The quantitative question — and it is a closing statement, stronger than you hoped for
+
+On the closed synchronous background `a(T) = α·cosh(T/α)`:
+
+- the **only** stationary point is `T = 0` (solved, not assumed);
+- the second derivative there is `1/α > 0` ⇒ it is a **MINIMUM**, at `a = α`.
+
+⇒ the expansion parameter obeys
+
+> **`(ℓ_P/a)² ≤ Λℓ_P²/3 ≈ 1.00×10⁻¹²² ` at every epoch,** the maximum falling **at the bounce**.
+
+⇒ ***The case you asked me to look for — the scale factor's own powers undoing the suppression at some epoch — does not exist on this background, because `a` has a positive minimum.*** The locus of the extremum is named, as you required: `T = 0`. **The expansion is still an expansion everywhere, by one hundred and twenty-two orders.**
+
+⌗ *And this answer is **independent of ⓵**: it is arithmetic on a cited product and holds whether the ratio is derived or measured. So the row closes on the quantitative question whichever way the premise goes — which is why I put ⓶ second in the order but never behind ⓵ in the work.*
+
+### ⓷ Same datum or a second one? A second one — and then immediately scoped by ⓶
+
+`P18`'s surviving instance is whether the tower's zero-point energy gravitates: it lives in the ***boundary*** coefficient at `a = 0`, is settled by an ordering choice, and is a **binary**. A dimension-six coefficient lives in the ***bulk*** counterterm basis at operator dimension six, and is a real number. Different objects ⇒ **a second datum.**
+
+⛔ **But by ⓶ the term it would multiply is bounded by `10⁻¹²²` at every epoch** ⇒ ***it is the first genuine addition to the one-input ledger in principle, and costs nothing measurable in practice.*** Both halves, in that order: the first alone overstates it, the second alone buries it.
+
+### ⚠ The scope of ⓶, attached rather than left to be found
+
+The bound is on the **classical background** the free tower evolves on, where `a ≥ α`. In the **quantized** scale-factor sector the wavefunction reaches toward `a = 0`, and there the governing fact is the one this row already landed: the expectation of a negative power of `a` converges at the origin only above a threshold in the boundary index, and ***the horizon's own thermal condition — the same condition that closes the extension — is what clears it.*** ⇒ *The suppression survives quantization in the sense that matters, said with its regime attached rather than extended past it.*
+
+### What I did not do
+
+⛔ The two-loop coefficient is still **not computed** — one revision does not reach it, and by ⓶ its **size** is now worth more than its **value**, which is what you argued when you called the quantitative question the one with teeth. ⛔ No corpus edit — **routed**; and the sentence to move is `P18`'s *"its period fixing the constant against the curvature alone"*, which its source does not support. ⛔ No rank-sequence entries added. ⛔ Nothing on `PO-56`, `PO-64` or the reproducibility layer.
+
+⌗ *`r6990`, 25 checks, rc = 0 — exact wherever the object is algebraic (both links, the dimension algebra, the extremum and its sign), and a float only against the corpus's **own printed cited figure**.*
+
+### ⛭ And one repair carried in the same push, because 70's detector fired on our own file
+
+The scoped build-perturbation job flagged **three sites in `r6975`'s second-logarithm receipt** — this line's own — and reading them gives a finding rather than a chore. `r6975` gave the *reason* "every failure mode here is O(1) … so the widened tolerances leave about five decades of real margin", and then implemented *"an order of magnitude above the worst value measured"*, which is **16× to 950× of headroom, not five decades**. ***The sentence and the arithmetic were not the same object*** — the eighth face in its prose form, on my own file, and the detector was right to flag all three again.
+
+Two repairs, in order of strength:
+
+1. **The lam-scan now reports its *worst* grid point rather than its best** — a strictly stronger claim (*"the closed form agrees at every step tried"* instead of *"there is a step where it agrees to 2.5e-9"*) and the only one of the four that is build-stable **by construction**: the worst point is the `lam = 1e-2` end, where the `lam²` truncation term dominates the noise. ⌗ *The three builds' numbers `2.5e-9 / 7.3e-8 / 1.5e-7` were three **different grid points'** values — the best point was a floor lottery, which is what "the scan minimum is floor-dominated" means read exactly.*
+2. **Each tolerance is now set from what the check discriminates, not from a measured floor.** The alternatives are `O(1)` apart — a wrong closed form is wrong by a factor, an exponent is `1` rather than `3`, a cut-dependent answer moves by its own size — so three-plus decades of margin still separates them by decades and is a claim about the physics rather than about this machine's round-off.
+
+⚠ **And a fourth site came out once the first three stopped shouting**, which is a property of the detector worth recording: the `n = 3` exponent check carried 420–526× over an error that moves 17–20% between builds, and **CI's own run had not named it** (its movement there stayed under the 10% bar). ⇒ ***A flag list is a lower bound on the sites of its class, and incompleteness moves it upward*** — so all four are repaired by the one criterion rather than the three that were named. Verified locally: the same three probes and two compares the job runs now report **0 flagged sites**, and the receipt still runs `rc = 0`.
+
+⛔ **This does not turn that job green, and the reason is not ours:** the compare returns `2` while any receipt in scope fails to run to exit 0 on both builds, and `L_numerics`'s `Q1` receipt does that on the runner's single-thread build. It runs `rc = 0` here in 43 s and probes `rc = 0` on both builds at this seat, so it is the contention anomaly already on the record, in another row's file.

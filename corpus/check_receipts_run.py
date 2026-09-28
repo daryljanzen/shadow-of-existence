@@ -68,6 +68,18 @@ UNRUNNABLE = {
     'P15_verify_lowell_boltzmann.py': 'camb',
     'P16_theory_error_and_likelihood.py': 'pynucastro',
     'P16_validate_bbn.py': 'pynucastro',
+    # ⛭⛭ TWO ADDED r6991, and the defect was the gap between a count and a list.  This file's own
+    #   docstring said "four need `pynucastro`" while the list named TWO, so the number was right
+    #   and the enumeration it was a count of was short by half.  ⌗ *Node 70 established which
+    #   receipts need the package BY MEASUREMENT rather than from this docstring -- each of the
+    #   eleven that mention the network run twice, once with the package and once with a stub that
+    #   raises on import -- and exactly four exit 0 with it and 1 without, while the other seven
+    #   pass either way.*  ⇒ **So the two below are declared here by name, which is this
+    #   list's own rule, on a measurement rather than on the docstring that miscounted.**
+    #   ⚠ *And the lesson generalises past this file: a count and the list it counts are two
+    #   objects, and a docstring asserting the count is not a check that the list holds it.*
+    'P16_the_bbn_network_cannot_see_the_arms_equality_so_the_abundances_are_silent_on_it.py': 'pynucastro',
+    'P16_the_window_is_crossed_twice_and_the_expanding_leg_is_where_the_abundances_are_made.py': 'pynucastro',
     # ⛭⛭ TEN ADDED r3946.  The list above named NINE and the run has NINETEEN module failures, so
     #   ten environment failures were being counted as REAL by the instrument that exists to
     #   separate them -- it reported 72 real failures where 62 were real.  Each below was checked
