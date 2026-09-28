@@ -3504,3 +3504,110 @@ corpus edits** — the paper-side consequences are routed here for you to decide
 Eight banks `spectra/r6959_*`, three launchers in `r6959_directions/`, and five new switches — `SRCETA`,
 `SRCTAPER`, `SRCTAPERS0`, `SRCTAPERALL`, `SRCTAPERNORM` — each reaching the hierarchy path only, each
 byte-identical when unset, re-verified against the pre-edit file after every one of the three wirings.*
+
+---
+
+# ⛭⛭⛭ `cc66.48` — THE TERM MIX HAS THE OFFSET'S SHAPE AND OVER-DELIVERS ITS SIZE, SO THE TWO CHANNELS DO NOT ADD — AND YOUR "REMAINDER" IS A CONSTRUCT OF THE COMPOSITION RULE
+
+*`r6975` filled. ⌗ **Path provenance**: every model number is the **hierarchy** path. `DPSRC` reaches all
+three paths and only the hierarchy one is read; the banks record it. `sec:refit-bound`'s quartet is not
+read at all, searched for by grepping the receipt for each of the four values and for every line-of-sight
+bank name.*
+
+⚑ **THE PRE-REGISTRATION AND ITS TWO SUPPLEMENTS WERE ALL COMMITTED BEFORE ANY SLICE FINISHED**, and the
+second supplement **retracts the first** — so the order of the record matters and is preserved. *I have
+written the tolerances on the quantities that move, as you corrected me to.*
+
+## ⛭⛭ ⓵ THE REMAINDER — AND IT IS TROUGH-WEIGHTED WHERE THE CHANNEL THAT LEFT IT IS PEAK-WEIGHTED
+
+*Measured excess ÷ what `cc66.47`'s window channel delivers at the arm's own size: **$1.0184$ at $q=0$,
+which is $46$ per cent of the offset R1 fired on**, carrying $123$ per cent of the measured $q^{2}$
+slope. Anchored: the whole excess $+5.66\%/+2.58\%$ (ratio $2.20$), the window channel $+4.59\%/+0.37\%$
+($12.44$), the remainder $+1.07\%/+2.21\%$ (**$0.49$**).*
+
+## ⛭⛭⛭ ⓶ THE CLASS ARITHMETIC — AND THE STATISTIC HAS A BASELINE I HAD NOT COMPUTED
+
+| class | heights | depths | ratio |
+|---|---|---|---|
+| **amplitude** — the oscillation scaled about the envelope | $+7.53\%$ | $+3.84\%$ | $\mathbf{1.96}$ |
+| **envelope** — the smooth part scaled at fixed oscillation | $+7.93\%$ | $+4.05\%$ | $1.96$ |
+| **loading** — a smooth positive component removed | $+2.21\%$ | $+3.51\%$ | $0.63$ |
+| **smearing** — a Gaussian in $\ell$ of nine multipoles | $+5.55\%$ | $-1.05\%$ | $-5.28$ |
+
+⇒ ***A SYMMETRIC operation reads $1.95$ on this statistic, not $1$*** — stable across a fivefold range of
+sizes, because the running-mean envelope is recomputed and shifts the oscillation upward by a constant
+that adds to the heights and subtracts from the deeper troughs.
+
+⚠ **THAT RETRACTS MY OWN NOTE THAT YOUR TWO STATISTICS DISAGREE.** *I had written that the anchored
+reading makes the excess peak-weighted $2.20$ where your variance split makes it symmetric. **Against a
+baseline of $1.96$, $2.20$ is agreement to twelve per cent** — the anchored reading **confirms**
+`cc66.46`. The guard was right; I compared to $1$ instead of computing the baseline, and the retraction
+is in the pre-registration, before the runs landed.*
+
+## ⛔ ⓷ THE SWAP: THE SHAPE IS RIGHT, THE SIZE IS HALF AGAIN TOO BIG, THE WEIGHTING IS WRONG
+
+*It needed no new switch — `DPSRC` scales the Doppler and nothing else and you wired it to this path at
+`r6889+cc66.36`. And the coefficient is solved from the profiles, not chosen: **$0.860$ to $0.897$ across
+all seven bands, one constant to two per cent**, so the arm's term-mix difference is a single scalar and
+not a $q$-dependent reshaping.*
+
+| $q$ | $1.20$ | $1.90$ | $2.60$ | $3.30$ | $4.00$ | $4.70$ | $5.40$ |
+|---|---|---|---|---|---|---|---|
+| `DPSRC=0.8794` | $1.0595$ | $1.1088$ | $1.0780$ | $1.0821$ | $1.0905$ | $1.0724$ | $1.0911$ |
+| measured excess | $1.0215$ | $1.0574$ | $1.0519$ | $1.0606$ | $1.0748$ | $1.0659$ | $1.0762$ |
+| **over-delivery** | $2.77\times$ | $1.90\times$ | $1.50\times$ | $1.35\times$ | $1.21\times$ | $1.10\times$ | $1.20\times$ |
+
+- ✔ **T1 sign passes** — the contrast rises in every band.
+- ⛭⛭ **T2 shape passes, and it is the finding.** The response is ***$q$-INDEPENDENT***: intercept
+  $1.0805$ at $q=0$, slope worth three per cent of it. **This is the first channel measured with the
+  signature your offset needs** — a non-zero excess where a smearing's characteristic function is
+  identically one.
+- ⛔ **T3′ weighting FIRES** — $2.23$ and $2.21$ at the two coefficients: peak-weighted, at the symmetric
+  baseline, where the remainder it was to be is $0.49$. ***The term mix is not the remainder.***
+- ⛔ **T4 comb fires, and in the wrong direction** — $\ell_1$ $-1.04$ and $\ell_2$ $-1.79$, both outside
+  the sky's widths, where the arm sits at $+1.61$.
+
+## ⛔⛭⛭ THE RESULT: THE CHANNELS DO NOT ADD, AND THAT IS WHAT THE DECOMPOSITION ASSUMED
+
+*Window channel $1.72\%$ band-mean, term mix $8.32\%$, measured $5.84\%$ — **their sum is $1.72\times$
+what is measured**. So they cannot both be present at their measured sizes and simply compose.* ⇒
+***And ⓵'s remainder is a RATIO of two responses, so it is a construct of that composition rule and not a
+residual physical channel*** — which is why its trough-weighted $0.49$ and the swap's peak-weighted
+$2.23$ are not in conflict: the first is an artefact of the arithmetic and the second is a measurement.
+
+⇒ **So I think the row's question has changed shape. It is no longer "which channel carries the
+symmetric part" — it is "how do two channels that each over-account compose".** *I am not asserting the
+answer and I have not built one; I am telling you the decomposition you asked for does not survive its
+own arithmetic, which seems to me the more useful thing to know.*
+
+## ⚠ AND MY ⓶ IDENTIFICATION WAS REFUTED BY MY OWN ⓷
+
+*I argued the Doppler is a quarter period out of phase and therefore **fills** the oscillation, so
+removing it should read as the loading class near $0.6$. **It reads $2.23$.** The profiles say why: the
+Doppler's band-to-band power tracks the monopole's at correlation $0.95$, so it is an **oscillating** term
+in quadrature and not a smooth additive one — and removing an in-quadrature oscillating component is very
+nearly a pure amplitude change, which is exactly the baseline it landed beside. The loading class is
+real; the Doppler is not in it.*
+
+## ⛔ ONE THING THAT IS NOT MINE AND IS BLOCKING EVERY BRANCH
+
+⚠ ***`check_env_fingerprint` is red, on my branch and on a clean `origin/main` checkout in the same
+container.*** *This container's numpy resolved to $2.4.6$ where the tolerance sweep was banked on $2.4.4$,
+and `gates.yml` installs numpy **unpinned** — so CI resolves the same and the gate is red there too; I
+have confirmed it in the runner's own log, where it is the single failure in the fast tier.* ⇒ **I have
+not touched it**: the gate's own instructions forbid restamping without re-running
+`scripts/sweep_tolerances.py` whole, that is a full-suite run on three linear-algebra builds, it is node
+70's instrument and `PO-60` is node 70's row. *Standing down with a comment on the PR rather than
+widening into another seat's work — but it needs an owner, because it will block every branch until the
+sweep is re-run.*
+
+⛔ **BOUND, HELD.** *NOT that the term mix is the remainder — T3′ refutes it. NOT that it is the
+mechanism: it over-delivers by half again and moves the comb the wrong way. NOT that it is nothing: it is
+the first channel measured to carry the offset's signature. NOT a replacement decomposition — what is
+established is that the composition rule is at fault, and I have not supplied a better one. NOT a
+detection. NOT a verdict on the two-rate assignment. NOT a re-derivation of `PO-47`'s spreads, which are
+quoted. No refit, nothing touching `prop:flat` or the clock family, and **no corpus edits**.*
+
+⌗ *Twenty-eight gates; receipt
+`P15_the_term_mix_has_the_shape_the_offset_needs_and_over_delivers_its_size.py`. Two banks
+`spectra/r6975_mix{,b}_lcdm.npz`, one launcher, and **no new switch** — the knob was already there.*

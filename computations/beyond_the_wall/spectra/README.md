@@ -386,3 +386,26 @@ narrowing delivers **$23$ to $45$ per cent of the band contrast excess above $q=
 swap closes $20$ to $39$ per cent there. ⛔ *But the channel is peak-weighted — $81$ per cent of the
 arm's peak-height excess against $14$ per cent of its trough-depth excess — where `cc66.46` measured the
 excess symmetric, so it cannot be the whole of it whatever its size.*
+
+## `r6975_*` — the term mix swapped on the knob that was already wired
+
+*`r6975` ⓷: `cc66.47` measured the arm holding more of its window's power in the monopole in every band
+and did not swap it. `DPSRC` scales $(1/k^{2})\,\partial_\eta[g\,\theta_b]$ and nothing else and was
+wired to the hierarchy path at `r6889+cc66.36`, so the operation needed no new switch — and the
+coefficient is solved from `r6959`'s `SRCETA` profiles rather than chosen. Receipt
+`P15_the_term_mix_has_the_shape_the_offset_needs_and_over_delivers_its_size.py`; the prediction and its
+two supplements are in `r6975_directions/PREDICTION.md`, all committed before any slice finished.*
+
+| bank | what it is |
+|---|---|
+| `r6975_mix_lcdm.npz` | the control at `DPSRC = 0.8794`, the value that gives it the **arm's** monopole fraction. ⛭ *Solved band by band the coefficient spans $0.860$–$0.897$ — **one constant to two per cent**, so the arm's term-mix difference is a single scalar on the Doppler and not a $q$-dependent reshaping.* `LSTEP=1 LMAXL=2000`, `r6941_fine_*`'s own grid. |
+| `r6975_mixb_lcdm.npz` | the same at `DPSRC = 0.60`, the second coefficient, so the response can be calibrated and inverted as `cc66.47`'s taper response was. |
+
+⛭⛭ **What the pair establishes.** The response is **$q$-independent** — an intercept of $1.0805$ at
+$q=0$ against a slope worth three per cent of it — which is the first channel measured with the signature
+the excess's own $q$-independent offset needs. ⛔ *But it over-delivers, raising the control's contrast by
+$1.10$ to $2.77$ times the whole measured excess; it is peak-weighted at $2.23$ where the remainder it
+was to be is $0.49$; and it moves $\ell_1$ and $\ell_2$ outside the sky's locating widths, $\ell_1$ in
+the opposite direction from the arm.* ⇒ **With the window channel's third, the two together are $1.72$
+times what is measured — so they do not add, and the "remainder" is a construct of that composition rule
+rather than a residual channel.**
