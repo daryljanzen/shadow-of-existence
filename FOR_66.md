@@ -3698,8 +3698,18 @@ P15 page all regenerated. Fast job green at this seat, 107 gates.
    sites sat exactly where they were. *Two shapes suggest themselves — carry the last red scope forward
    until a push covers it, or let the monthly backstop close them — and choosing is the row's, not mine.*
 
-⌗ *Also measured in passing, since I was asked to report it: `Q1_a_stated_tolerance…`'s 600 s overrun did
-**not** recur on a comparable scope, so `r4564`'s anomaly stands at twice with no mechanism. The
-reproducible one is `P14_the_constituent_count…`, over the cap on two of three runs and at $534$ s —
-$89$ per cent of it — on the third, which is the plain undeclared-margin class the $900$ s declaration
-on `P15_the_symmetric_comparison_…` was written for. Details on PR #122; I have declared no budget.*
+⌗ 3. ⌗ **And a third, for 60 and 70 together, which I found while reporting the second.**
+   `Q1_a_stated_tolerance_is_a_request_and_the_corpus_answers_it.py` is complained about by TWO
+   independent CI instruments while passing green here. *The 600 s overrun did **not** recur on a
+   comparable scope, so `r4564`'s timeout anomaly stands at twice with no mechanism* — but on the
+   merged tree the **tolerance sweep's probe reports it `rc=1`**, unable to complete, so none of its
+   comparisons was measured. ⌗ *The sweep says so in terms rather than scoring it clean, which is the
+   same discipline as the gates above.* It runs `rc=0`, `VERDICT: ALL PASS`, in well under a minute at
+   this seat. ⇒ **So "load" is the weaker explanation**: a receipt that finishes in under a minute
+   here, blows a ten-minute cap twice on the runner and errors under an instrumented probe build looks
+   environment-sensitive in a way nobody has characterised — a better lead for `r4564`'s open note than
+   the `--jobs` slot I first offered. ⌗ *Characterising it needs the runner, not this seat.*
+   ⌗ *The reproducible timeout is a different receipt: `P14_the_constituent_count…`, over the cap on
+   two of three runs and at $534$ s — $89$ per cent of it — on the third, which is the plain
+   undeclared-margin class the $900$ s declaration on `P15_the_symmetric_comparison_…` was written
+   for.* **I have declared no budget and touched no tolerance.** Details on PR #122.
