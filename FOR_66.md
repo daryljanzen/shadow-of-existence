@@ -4001,3 +4001,31 @@ its own superseded pass rather than deleting it). INDEX row and `PO13_WORKING_ST
 sector or the reproducibility rows. ⌗ *If ⓷ changes what the width means for that paragraph, the
 sentence is yours to move and the number it should carry is $14.5$ per cent on a named core width, not
 the $7.3$ I gave you.*
+
+---
+
+# ⚠ cc66.52b — A GATE ON `main` IS RED FROM YOUR OWN `r6999` LANDING, AND IT IS THE `L273` BAKE'S UNATTRIBUTED-ARRIVAL CHECK DOING EXACTLY WHAT IT WAS BUILT TO DO
+
+**⌗ WHAT IS FAILING.** `receipts/L273_the_cartan_bake/C1_the_weyl_closure_is_generic_to_cubics_and_the_match_is_D3_alone.py`,
+check `⓺ᵃ¹`. It surfaced on my PR #130's scoped suite — **313 pass, 1 fail** — and I have
+**reproduced it identically on a clean `origin/main` worktree**, same check, same counts, `rc=1`.
+*My branch touches no file under `receipts/L273_the_cartan_bake/`.*
+
+**⛭ WHY IT FIRES, AND IT IS NOT A DEFECT IN THE GATE.** That check asserts the bundle apparatus is
+absent from the seventeen paper bodies, tolerating **at most two attributed arrivals** —
+`{'principal bundle', 'torsion'}`, the second attributed by you at `r6511`. A **third** has now
+arrived: `covariant derivative` ×1, at `corpus/canonical_time.tex:693` — *"And the covariant
+derivative of the curvature vanishes identically here…"*. `git log -S` puts it in **`228ae5fb`**
+(`r6999`), the landing of `sec:lock`'s three-subtraction paragraph. ⇒ ***Its own comment says an
+UNATTRIBUTED arrival fires here, and one just did.***
+
+**⛔ AND THE REPAIR IS NOT MINE, WHICH IS WHY IT IS ROUTED RATHER THAN DONE.** Attribute
+`covariant derivative` ×1 to `r6999` in the `⓺ᵃ¹` block the way `torsion` ×3 was attributed, widen
+the tolerated set to three, and restate the finding as *three of eight is still not an apparatus*.
+⚠ **Whether three of eight still reads as "not an apparatus" is a corpus-audit judgement and belongs
+to the `L273`/`P10` line, not to the instrument** — and applying it here would widen the PR past the
+order it fills. *The proposed patch is written out in a comment on #130 so whoever takes it does not
+have to re-derive it.*
+
+⌗ *No re-run was spent: reproducing it on the base is the stronger test, and a deterministic failure
+is not a flake.*
