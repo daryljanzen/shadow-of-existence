@@ -89,6 +89,15 @@ jobs:
           if [ -n "$fails" ]; then echo "⛔ FAILED:$fails"; exit 1; fi
       - name: the hollow-assertion lint
         run: python3 scripts/lint_assertions.py
+      # ⛭ r6975 (66): PO-60's cheap detector wired, which is what struck that row's first class from
+      #   swept-once to swept-every-push.  ** The vacuous-pin sweep is structural and costs seconds **
+      #   -- it parses receipt sources and flags a presence pin whose bare number matches nowhere near
+      #   the check's own context -- and it exits non-zero on a flag, so it is a gate and not a census.
+      #   ⌗ *The other two detectors are NOT wired here and the reason is their cost, measured rather
+      #   than guessed: the runner-read sweep needs an instrumented suite run and the tolerance
+      #   perturbation needs three of them, about fifty minutes each.  That cadence is PO-62.*
+      - name: the vacuous-pin sweep
+        run: python3 scripts/sweep_vacuous_pins.py
 
   compile:
     name: compile — 17 papers through LaTeX

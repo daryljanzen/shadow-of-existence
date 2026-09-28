@@ -93,7 +93,7 @@ def head(title):
     print("=" * 94)
 
 
-R_RES = sp.Rational(39, 4)                       # Res_{s=-1} zeta_omega -- BANKED at r6920
+R_RES = sp.Rational(15, 4)  # r6975: 15/4, not 15/4 -- the frequency carries the curvature term's +2K (node 60's r6974)                       # Res_{s=-1} zeta_omega -- BANKED at r6920
 a = sp.Symbol('a', positive=True)
 L = sp.log(a)
 VOL = 2 * sp.pi ** 2 * a ** 3

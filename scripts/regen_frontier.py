@@ -386,6 +386,53 @@ EST = {
         'not a defect: the uncited bibitems, an editorial call, enumerated here rather than taken from the '
         'read -- there are SEVEN across six papers, not six, and the read named every one correctly. Routed '
         'to Daryl as a judgement.'),
+    'PO-63': ('the frequency shift has two exact anchors and neither is a second three-sphere level', 1, 0, 3, None,
+        'r6975: OPENED as PO-61s remainder, and node 60 named it in its own sentence before anyone '
+        'asked. The shift that corrects the tower frequency to mu^2 = m^2 - 1 is established '
+        'STRUCTURALLY -- the non-derivative part of the mass operator is a pointwise contraction, '
+        'R_ikjl h^kl = -K h_ij with no derivative in it, so it cannot know which level the perturbation '
+        'belongs to -- AND anchored by two exact computations that bracket the two ingredients '
+        'SEPARATELY: K = 0 at every wavenumber, where the derivative parts ratio to the kinetic term is '
+        'exactly 1/4 and k-independent, and K = 1 at the lowest level, where the harmonics are '
+        'frame-constant and the reduction is exact. WHAT IS MISSING IS THE TWO TOGETHER: no independent '
+        'exact computation at a second three-sphere level. And the reason that is the interesting gap '
+        'rather than a formality is that the floor is exactly where the gradient terms are ABSENT -- '
+        'above it the harmonics stop being frame-constant, so the one level checked on the sphere is the '
+        'one level at which the derivative part contributes nothing. WHY IT MATTERS: every exact '
+        'functional of the spectrum now rests on the shift holding at every level -- the logarithmic '
+        'coefficient 15/4, the residue, the discharging displacement, the floor -- and a shift correct '
+        'only at the floor would move all of them again, which the corpus has just done once. AND WHY IT '
+        'IS NOT A THREAT: the structural step is an identity rather than an estimate, the same identity '
+        'at every K and for all five multiplet parameters, and the enumeration that carries the physics '
+        'is one formula in the offset, -u(u+16)/4, so a further correction would move a number and not '
+        'an argument -- exactly as this one did; the degeneracy, the Laplace eigenvalue and zeta(0) are '
+        'untouched by any offset at all. DISCHARGE: the reduction carried out at n = 3, where m^2 - 1 '
+        'predicts 15, with the gradient terms carried explicitly rather than vanishing, the harmonics '
+        'non-constancy in the left-invariant frame exhibited rather than assumed, and the frequency '
+        'compared against the prediction. A scaling argument is not an anchor: the point of a second '
+        'anchor is to be independent of the reasoning it checks.'),
+    'PO-62': ('three detectors exist and only the cheapest of them runs', 1, 0, 3, None,
+        'r6975: OPENED as PO-60s remainder, and it is a CADENCE question rather than a detection one. '
+        'PO-60 swept all three classes of vacuous green whole and each detector is seeded both ways -- '
+        'but a class swept at one head is a class swept ONCE, and every one of the three arose the same '
+        'way, by something else making a receipt run. A sweep that does not run measures the tree it was '
+        'written on. WHAT RUNS NOW AND WHAT DOES NOT, WITH THE COSTS MEASURED: the vacuous-pin sweep IS '
+        'wired into the fast job at r6975, being structural, seconds long, and non-zero on a flag, so '
+        'that class is swept every push rather than once; the runner-read sweep is NOT wired, needing an '
+        'instrumented suite run of about fifty minutes; and the tolerance perturbation is NOT wired, '
+        'needing THREE of them, about 150 minutes in all. AND THE CI CLOCK IS THE CONSTRAINT, which is '
+        'why this is a row and not an edit: the receipts job already runs the suite at a 75-minute clock '
+        'sized for 2380 + 1200 = 3580 s, so adding the second doubles that job and adding the third '
+        'quadruples it, and the question is which cadence buys what -- nightly, pre-release, or on '
+        'receipts that changed. AND ONE ASYMMETRY MAKES THE ANSWER NON-OBVIOUS: the runner-read class is '
+        'BORN when a receipt is written and never heals, so catching it late costs only the reading, '
+        'while the tolerance class is invisible until a second machine runs it and can sit green on one '
+        'container for years -- so the cheap-to-catch class is the one that waits well and the expensive '
+        'one is the one that does not. DISCHARGE: a cadence for the two dynamic detectors chosen from '
+        'measurement and wired, with each cost stated where it is wired and the recall each cadence '
+        'gives stated beside it, and any declined cadence explained in the same place rather than in a '
+        'register row. No detector is to be weakened to make it cheap: a sweep that flags less in order '
+        'to run more often is the vacuous green one level up.'),
     'PO-61': ('the tower frequency may carry the curvature term, and the log coefficient moves with it', 1, 0, 3, None,
         'r6973: OPENED, from node 60 r6972, which FLAGGED IT AND DID NOT FORCE IT -- it was outside the '
         'order and 60 said so, and the row exists so the flag is a live item rather than a sentence in a '
@@ -1058,7 +1105,35 @@ EST = {
         'over-response being the contrast statistics own sensitivity to the windows spread. What is named '
         'as un-tested is the term mix -- the arm holding more of its windows power in the monopole in every '
         'band -- which is the one part of a normalisation difference that need not vanish at long '
-        'wavelength, where the excesss own q-independent offset of 1.040 sits.'),
+        'wavelength, where the excesss own q-independent offset of 1.040 sits.'
+        'AND r6975 LANDS THE PAPER-SIDE CONSEQUENCE OF cc66.47, WHICH IS THE FIRST DEFINITE SHARE THIS SECTOR '
+        'HAS MEASURED AND THE FIRST REFUTATION THAT DOES NOT DEPEND ON A SIZE. P15 now carries the sources '
+        'weighting across the visibility as a real channel, read two ways that share no machinery -- the '
+        'instruments own two-coefficient response giving a quarter to a half of the band excess above the '
+        'damping scale, and the direct substitution closing a fifth to two fifths of it -- so about a THIRD, '
+        'measured rather than modelled, from a quantity nobody chose. AND IT CANNOT BE THE WHOLE OF IT FOR A '
+        'REASON INDEPENDENT OF EVERY ONE OF THOSE SIZES, WHICH IS WHY THIS IS A REFUTATION AND NOT A '
+        'SHORTFALL: cc66.46 measured the excess SYMMETRIC about the envelope, heights and depths carrying it '
+        'equally, and the weighting is not -- imposed at the arms own size it delivers four fifths of the '
+        'peak-height excess and one seventh of the trough-depth excess, a five-fold asymmetry against a '
+        'symmetric object. A PEAK-WEIGHTED CHANNEL CANNOT CARRY A SYMMETRIC EXCESS ALONE, WHATEVER ITS SHARE, '
+        'AND THAT ARGUMENT SURVIVES ANY REVISION OF THE SHARE. Two further readings agree without being '
+        'needed: the measured response extrapolates to a non-zero offset at zero wavenumber where a windows '
+        'own characteristic function is identically one, and a weighting large enough to deliver the whole '
+        'excess moves the first peak by eighteen multipoles and the heights by nearly half. AND THE SEATS OWN '
+        'PRE-REGISTRATION WAS WRONG IN ONE DIRECTION AND SAYS SO: it argued the contrast responds between f '
+        'and f^2 and it responds 2.3 to 26 times MORE, at both coefficients and in every band, the condition '
+        'passing only because its tolerance was written on f rather than on f-1. Two of the six pre-committed '
+        'refutation conditions fired on the measurement alone -- the size at 0.223 of its bar and the shape '
+        'at a non-zero q=0 offset -- with the sign surviving. Three wirings, the first two not the operation: '
+        'the all-terms taper crushed the late-time signals own integral to 0.656 and 0.238 of itself, moving '
+        'l_1 by 7.7 and 27.3; tapering only the visibility-carried source fixed that and still outran the '
+        'prediction by three; holding the windows total weight fixed landed on the second to parts in ten '
+        'thousand, so the second diagnosis was wrong too and the over-response is the statistics own '
+        'sensitivity. Both wrong readings are banked and gated rather than deleted. DISCHARGE: the SYMMETRIC '
+        'PART, which is what the rows object narrows to for the sixth time -- a share is measured, the '
+        'channel that carries it is peak-weighted, and what remains is the part of the excess that is not. '
+        ),
     'PO-55': ('horizon entropy is reading-dependent under the central move', 1, 1, 3, None,
         'OPENED r6877 as PO-54 remainder, found by node 60 where the order was not looking. The causal reassignment '
         'relates two readings of one geometry whose horizon areas are GENERICALLY UNEQUAL, and PO-48 established that '
@@ -1827,8 +1902,8 @@ KIND = {'PO-46': 'BUILD', 'PO-10': 'BUILD', 'PO-13': 'BUILD', 'PO-36': 'READ', '
 #   and the generator reported "9 open" while the table showed EIGHT -- the count comes from
 #   the live set and the rows come from here.*  ** Adding a row needs three things: the
 #   register row, the runway, and this list. **  check_frontier_current now checks all three.
-ORDER = ['PO-61', 'PO-60', 'PO-59', 'PO-58', 'PO-57', 'PO-56', 'PO-55', 'PO-54', 'PO-53', 'PO-52', 'PO-47', 'PO-48', 'PO-49', 'PO-50', 'PO-51', 'PO-45', 'PO-46', 'PO-10', 'PO-13', 'PO-43', 'PO-24', 'PO-36', 'PO-30', 'PO-25', 'PO-26', 'PO-31', 'PO-23', 'PO-15', 'PO-14', 'PO-17', 'PO-18', 'PO-19', 'PO-20']
-GROUP = {'PO-61': 'C', 'PO-60': 'C', 'PO-59': 'C', 'PO-58': 'A', 'PO-57': 'D', 'PO-56': 'D',  # r6891: PO-13's live remainder, the acoustic sector.
+ORDER = ['PO-63', 'PO-62', 'PO-61', 'PO-60', 'PO-59', 'PO-58', 'PO-57', 'PO-56', 'PO-55', 'PO-54', 'PO-53', 'PO-52', 'PO-47', 'PO-48', 'PO-49', 'PO-50', 'PO-51', 'PO-45', 'PO-46', 'PO-10', 'PO-13', 'PO-43', 'PO-24', 'PO-36', 'PO-30', 'PO-25', 'PO-26', 'PO-31', 'PO-23', 'PO-15', 'PO-14', 'PO-17', 'PO-18', 'PO-19', 'PO-20']
+GROUP = {'PO-63': 'C', 'PO-62': 'C', 'PO-61': 'C', 'PO-60': 'C', 'PO-59': 'C', 'PO-58': 'A', 'PO-57': 'D', 'PO-56': 'D',  # r6891: PO-13's live remainder, the acoustic sector.
          'PO-45': 'A', 'PO-46': 'A',  # ⛔ r6549: a FOURTH hardcoded list -- GROUP -- and a row missing here raises.
          'PO-10': 'D', 'PO-13': 'D', 'PO-14': 'A', 'PO-15': 'C', 'PO-16': 'D',
          # ** r3095: the four brought in from p0's frontiers and the field ledgers.  PO-17 and

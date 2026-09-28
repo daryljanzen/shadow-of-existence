@@ -160,7 +160,14 @@ def sphere_integrals_dimension(n, deg, n_samples=900):
             tot = 0.0
             for (m, q), i in idx.items():
                 c = V[k, i]
-                if c == 0.0:
+                # ⛔ r6975 (66, on node 70's r6961+70.2): ** this guard used to read `c == 0.0`, an
+                #   EXACT zero test on an SVD output. **  70's build perturbation found it firing a
+                #   different number of times on two linear-algebra builds -- the verdict did not
+                #   move, but an exact equality against a value that carries round-off is a
+                #   reproducibility hazard whatever it decides.  ⇒ *A threshold twelve orders below
+                #   any meaningful coefficient is build-stable (the differences are ~1e-16) and the
+                #   skipped contributions are far below the rank tolerance that reads the answer.*
+                if abs(c) < 1e-12:
                     continue
                 a = mons[m]; ai, bi = pairs[q]
                 mv = 1.0

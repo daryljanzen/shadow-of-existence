@@ -1,4 +1,16 @@
 """
+** r6975 (66, on node 60's r6974): RE-POINTED TO THE CORRECTED TOWER FREQUENCY. **  The reduction of
+the second-order action carries a non-derivative curvature contraction alongside the gradient term --
+R_ikjl h^kl = -K h_ij, pointwise, with no derivative in it -- so the frequency is the Laplace
+eigenvalue displaced by +2K at EVERY level: mu^2 = m^2 - 1, not m^2 - 3.  ** The Laplace eigenvalue and
+the degeneracy are untouched; what moves is every exact functional of the FREQUENCY. **  Here: L goes
+15/4 (was 39/4), the quadratic pole residue -9 (was -11), the m^-3 tail 7/8 (was 45/8), the floor
+mu_3^2 = 8 (was 6, so the gap widens and every bound using it strengthens), the discharging mass shift
+delta = 1 with partner -15 (was 3 and -13), and the constant the floor leaves moves with them.
+** Nothing about the STRUCTURE moves, and the receipt now says why in one line: at mu^2 = m^2+u the
+coefficient is -u(u+16)/4 for every u, so one formula carries both conventions and the vanishing is
+still only at u = 0 and u = -16. **
+
 P10_the_floor_is_forced_as_a_mode_but_the_subtraction_point_is_a_convention_and_the_residue_is_the_absorbed_constant
 ===================================================================================================================
 
@@ -18,7 +30,7 @@ The order named three places to look, and they are PARTS 4, 5 and 7:
   (i)   whether the floor is the lowest mode the compactness admits rather than a choice;
   (ii)  whether a subtraction at any other mode number leaves a residue the physics can see, or only
         shifts a constant nothing measures;
-  (iii) whether the log coefficient 39/4 is independent of the subtraction point, "since a
+  (iii) whether the log coefficient 15/4 is independent of the subtraction point, "since a
         coefficient that moves with it would settle the question the other way".
 
 -------------------------------------------------------------------------------
@@ -33,11 +45,11 @@ statements and the row's premise runs the first into the second.
     zero mode and no soft region: mu_3 = sqrt(6), so ** the infrared is regulated by the geometry and
     needs no second regulator. **  That much of the row is right and is not a convention.
 
-(iii) comes out FOR, but it is the weaker of the two readings: 39/4 is an ASYMPTOTIC property of the
+(iii) comes out FOR, but it is the weaker of the two readings: 15/4 is an ASYMPTOTIC property of the
     summand, so it cannot move with where the sum starts.  The test 66 named was "a coefficient that
     moves with it would settle the question the other way" -- it does not move, so that test does not
     settle it against.  ** It also does not settle it for, and a control shows why: the coefficient DOES
-    move under a deformation of the spectrum (a mass shift takes 39/4 to -(d-3)(d+13)/4), so the
+    move under a deformation of the spectrum (a mass shift takes 15/4 to -(d-1)(d+15)/4), so the
     invariance under the subtraction point is a real fact and not a tautology of the machinery. **
 
 ** (ii) IS THE DECIDING ONE AND IT COMES OUT AGAINST. **  Two things, and the second is the structural one.
@@ -49,7 +61,7 @@ statements and the row's premise runs the first into the second.
   content of the row; it just does not reach the conclusion drawn from it.
 
   SECOND: the residue a different choice leaves is exactly the constant the corpus already absorbs.
-  Changing m_0 -> m_0' shifts the finite part by (39/4) ln(m_0'/m_0) and nothing else.  On the admitted
+  Changing m_0 -> m_0' shifts the finite part by (15/4) ln(m_0'/m_0) and nothing else.  On the admitted
   one-parameter family `P10` sec:lock's own argument makes the counterterm basis ONE-dimensional -- every
   quadratic invariant and the volume term are multiples of one functional on a maximally symmetric
   geometry -- so the log's counterterm is degenerate with the cosmological term, and `P17` absorbs a
@@ -57,7 +69,7 @@ statements and the row's premise runs the first into the second.
   ** So the shift is absorbed into the one measured gauge, and no observable depends on m_0. **
 
   AND THE FLOOR DOES NOT FIX THE CONSTANT TO ANYTHING EITHER: subtracting at the floor leaves
-  C = -8.51485690643..., which is not zero and not a named number.  ** The floor is the natural
+  C = -3.39047210119..., which is not zero and not a named number.  ** The floor is the natural
   convention, not a determination. **
 
 ** SO THE ANSWER TO THE BURDEN AS STATED IS: IT NAMES A CONVENTION, AND THE ROW CLOSES. **  That is the
@@ -70,18 +82,18 @@ WHAT IS CLAIMED.
 
  (1) d(m) = 2(m^2-4), mu(m) = sqrt(m^2-3), m = n+1 >= 3, reproducing `P10` sec:lock's own degeneracy
      2(n-1)(n+3) and eigenvalue n(n+2)-2, and the floor m = 3 is forced by the representation theory.
- (2) d(m) mu(m) = 2m^3 - 11m + (39/4)/m + (45/8)/m^3 + ..., so L = 39/4 exactly.
+ (2) d(m) mu(m) = 2m^3 - 9m + (15/4)/m + (7/8)/m^3 + ..., so L = 15/4 exactly.
  (3) The log is a simple POLE AT s = 0 of the Dirichlet series SUM d(m)mu(m) m^(-s), with residue
-     exactly 39/4 (and poles at s = 4 and s = 2 with residues 2 and -11, the quartic and the quadratic).
+     exactly 15/4 (and poles at s = 4 and s = 2 with residues 2 and -9, the quartic and the quadratic).
      ** So no regularisation scheme evades the subtraction point: zeta regularisation, which gives a
      unique finite part when there is no pole at s = 0, does not here. **
  (4) Changing the subtraction point leaves L UNCHANGED and shifts the finite part by exactly
-     (39/4) ln(m_0'/m_0) -- verified to 15 digits against the direct sum.
+     (15/4) ln(m_0'/m_0) -- verified to 15 digits against the direct sum.
  (5) There is no zero mode and no soft region: mu_3^2 = 6 > 0 and the spectrum is gapped, so the
      infrared needs no regulator and the floor is doing real work THERE.
  (6) A mode number is dimensionless, so ln(M/m_0) is scale-free for every m_0 -- the one-scale claim
      does not select the floor.
- (7) The constant left by subtracting at the floor is -8.51485690643..., neither zero nor distinguished.
+ (7) The constant left by subtracting at the floor is -3.39047210119..., neither zero nor distinguished.
  (8) CONTROLS, all three of which must break: a spectrum with no 1/m term (mu^2 = m^2) has NO log and no
      subtraction point at all; a mass-shifted spectrum MOVES L, so (4)'s invariance is not a tautology;
      and a spectrum with a soft floor makes the infrared sum diverge, so (5) is not vacuous either.
@@ -97,19 +109,19 @@ WHAT IS NOT CLAIMED.
  * NOT a statement about the Weyl-squared entry off the admitted family.  Where the shear breaks the
    counterterm degeneracy that coefficient is separate and `PO-43` carries it as uncosted; its own
    renormalisation condition is that row's question, named here and not claimed.
- * NOT that 39/4 is discharged.  `r6436` stands: no rescaling discharges it.
+ * NOT that 15/4 is discharged.  `r6436` stands: no rescaling discharges it.
 
 ** COMPUTES: the FREE transverse-traceless tower of `P10` sec:lock on the closed synchronous slicing
 a(T) = alpha cosh(T/alpha) -- degeneracy d(m) = 2(m^2-4), frequencies mu(m) = sqrt(m^2-3), floor m = 3,
 with m = n+1.  Every symbolic statement is parameter-free and holds for any alpha, the scale factor
 leaving the dimensionless coefficient identically (r6411).  The numerical parts are cuts at
-M = 800 / 8000 / 80000 at 40 working digits; the constant C = -8.51485690643... is that spectrum's, at
+M = 800 / 8000 / 80000 at 40 working digits; the constant C = -3.39047210119... is that spectrum's, at
 the floor subtraction.  Lambda enters only through alpha and is not varied.  ** NOTHING HERE USES THE
 COUPLED TOWER: the interacting sector's ultraviolet definition is `PO-23` and the order fences it. **
 
-WHAT WOULD FALSIFY IT.  The floor not being forced by the representation theory; L not equal to 39/4;
-the Dirichlet series having no pole at s = 0, or a residue other than 39/4; the finite-part shift
-differing from (39/4) ln(m_0'/m_0); the constant at the floor turning out to be zero or a named number;
+WHAT WOULD FALSIFY IT.  The floor not being forced by the representation theory; L not equal to 15/4;
+the Dirichlet series having no pole at s = 0, or a residue other than 15/4; the finite-part shift
+differing from (15/4) ln(m_0'/m_0); the constant at the floor turning out to be zero or a named number;
 or any control failing to break.
 """
 import mpmath as mp
@@ -137,12 +149,15 @@ m, n, s = sp.symbols('m n s', positive=True)
 print("\nPART 1 -- THE SPECTRUM AND THE FLOOR.  IS m = 3 A CHOICE?")
 print("-" * 100)
 d_sym = 2 * (m ** 2 - 4)
-mu_sym = sp.sqrt(m ** 2 - 3)
+mu_sym = sp.sqrt(m ** 2 - 1)        # r6975: the FREQUENCY.  Laplace is m^2-3; see below.
 print("  P10 sec:lock:  degeneracy 2(n-1)(n+3), eigenvalue mu_n^2 = n(n+2)-2, n >= 2;  m = n+1.")
 check("d(m) = 2(m^2-4) is P10's 2(n-1)(n+3) at m = n+1",
       sp.simplify(d_sym.subs(m, n + 1) - 2 * (n - 1) * (n + 3)) == 0)
-check("mu(m)^2 = m^2-3 is P10's n(n+2)-2 at m = n+1",
+check("the LAPLACE eigenvalue m^2-3 is P10's n(n+2)-2 at m = n+1 -- untouched by r6974",
       sp.simplify((m ** 2 - 3).subs(m, n + 1) - (n * (n + 2) - 2)) == 0)
+check("and the FREQUENCY is that eigenvalue displaced by the curvature term's +2K: mu^2 = m^2-1, "
+      "which is P10's n(n+2) at m = n+1",
+      sp.simplify((m ** 2 - 1).subs(m, n + 1) - (n * (n + 2))) == 0)
 
 jL, jR = (m + 1) / 2, (m - 3) / 2
 print(f"\n  r4547's family: (j_L, j_R) = ({jL}, {jR}) and its swap.")
@@ -154,10 +169,11 @@ check("...and the degeneracy 2(m^2-4) is positive only above m = 2, so m = 3 is 
       "exists at all",
       d_sym.subs(m, 2) == 0 and d_sym.subs(m, 3) > 0,
       f"d(2) = {d_sym.subs(m, 2)}, d(3) = {d_sym.subs(m, 3)}")
-check("there is NO ZERO MODE and NO SOFT REGION: mu_3^2 = 6 and the spectrum is gapped, so the "
-      "infrared is regulated by the geometry and needs no second regulator",
-      (m ** 2 - 3).subs(m, 3) == 6 and sp.simplify(sp.diff(m ** 2 - 3, m)) == 2 * m,
-      f"mu_3 = sqrt(6) = {float(sp.sqrt(6)):.6f}")
+check("there is NO ZERO MODE and NO SOFT REGION: mu_3^2 = 8 and the spectrum is gapped, so the "
+      "infrared is regulated by the geometry and needs no second regulator -- the gap is WIDER at the "
+      "corrected frequency than at the Laplace eigenvalue, so every bound that used it strengthens",
+      (m ** 2 - 1).subs(m, 3) == 8 and sp.simplify(sp.diff(m ** 2 - 1, m)) == 2 * m,
+      f"mu_3 = sqrt(8) = {float(sp.sqrt(8)):.6f}")
 
 print("\n  => (i) COMES OUT FOR THE ROW.  The floor is forced AS A MODE.  That is a real fact about the")
 print("     geometry, and PART 6 is where it stops reaching the conclusion drawn from it.")
@@ -167,18 +183,27 @@ print("\nPART 2 -- THE LOG'S COEFFICIENT, EXACTLY.")
 print("-" * 100)
 ser = sp.expand(sp.series(d_sym * mu_sym, m, sp.oo, 5).removeO())
 print(f"  d(m) mu(m) = {ser} + ...")
-L = sp.simplify(sp.limit(m * (d_sym * mu_sym - 2 * m ** 3 + 11 * m), m, sp.oo))
-check("the 1/m coefficient is exactly 39/4, which is P10 sec:lock's own L",
-      L == sp.Rational(39, 4), f"L = {L}")
+L = sp.simplify(sp.limit(m * (d_sym * mu_sym - 2 * m ** 3 + 9 * m), m, sp.oo))
+check("the 1/m coefficient is exactly 15/4, which is P10 sec:lock's own L",
+      L == sp.Rational(15, 4), f"L = {L}")
+# r6975: and one formula carries every offset, which is why the correction moves the number
+# without touching the argument -- at mu^2 = m^2+u the coefficient is -u(u+16)/4.
+_u = sp.Symbol('u')
+_Lu = sp.simplify(sp.limit(m * (d_sym * sp.sqrt(m ** 2 + _u) - 2 * m ** 3 - (_u - 8) * m), m, sp.oo))
+check("and the enumeration is one formula in the offset: L(u) = -u(u+16)/4, giving 15/4 at u = -3 "
+      "and 15/4 at u = -1, and vanishing at u = 0 and u = -16 alone",
+      sp.simplify(_Lu + _u * (_u + 16) / 4) == 0
+      and _Lu.subs(_u, -3) == sp.Rational(39, 4) and _Lu.subs(_u, -1) == sp.Rational(15, 4),
+      f"L(u) = {sp.factor(_Lu)}")
 
 # ---------------------------------------------------------------------------------
 print("\nPART 3 -- THE LOG IS A POLE AT s = 0, SO NO SCHEME EVADES A SUBTRACTION POINT.")
 print("-" * 100)
 print("  Z(s) = SUM_{m>=3} d(m) mu(m) m^(-s).  Subtracting the asymptotic terms leaves an entire piece")
-print("  near s = 0, so Z(s) = 2 zeta(s-3) - 11 zeta(s-1) + (39/4) zeta(s+1) + entire, minus m = 1, 2.")
+print("  near s = 0, so Z(s) = 2 zeta(s-3) - 9 zeta(s-1) + (15/4) zeta(s+1) + entire, minus m = 1, 2.")
 
-f_ = lambda k: 2 * (k ** 2 - 4) * mp.sqrt(k ** 2 - 3)
-rem = lambda k: f_(k) - 2 * k ** 3 + 11 * k - mp.mpf(39) / 4 / k
+f_ = lambda k: 2 * (k ** 2 - 4) * mp.sqrt(k ** 2 - 1)
+rem = lambda k: f_(k) - 2 * k ** 3 + 9 * k - mp.mpf(15) / 4 / k
 
 
 def Z(sv):
@@ -186,29 +211,29 @@ def Z(sv):
     z3 = mp.zeta(sv - 3) - 1 - mp.mpf(2) ** (3 - sv)
     z1 = mp.zeta(sv - 1) - 1 - mp.mpf(2) ** (1 - sv)
     zm = mp.zeta(sv + 1) - 1 - mp.mpf(2) ** (-1 - sv)
-    return ent + 2 * z3 - 11 * z1 + mp.mpf(39) / 4 * zm
+    return ent + 2 * z3 - 9 * z1 + mp.mpf(15) / 4 * zm
 
 
 res0 = [mp.mpf(e) * Z(mp.mpf(e)) for e in ('1e-4', '1e-5', '1e-6')]
 for e, v in zip(('1e-4', '1e-5', '1e-6'), res0):
     print(f"    s = {e:>6s} :  s Z(s) = {mp.nstr(v, 12)}")
-check("Z has a SIMPLE POLE at s = 0 with residue 39/4 -- the log, in the one scheme that would give a "
+check("Z has a SIMPLE POLE at s = 0 with residue 15/4 -- the log, in the one scheme that would give a "
       "unique finite part if there were no pole there",
-      abs(res0[-1] - mp.mpf(39) / 4) < mp.mpf('1e-4'), f"residue -> {mp.nstr(res0[-1], 10)} vs 9.75")
+      abs(res0[-1] - mp.mpf(15) / 4) < mp.mpf('1e-4'), f"residue -> {mp.nstr(res0[-1], 10)} vs 3.75")
 r2 = mp.mpf('1e-5') * Z(2 + mp.mpf('1e-5'))
 r4 = mp.mpf('1e-5') * Z(4 + mp.mpf('1e-5'))
-check("...and the quadratic and quartic divergences are the poles at s = 2 and s = 4, residues -11 "
+check("...and the quadratic and quartic divergences are the poles at s = 2 and s = 4, residues -9 "
       "and 2, which need no logarithm and so no subtraction point",
-      abs(r2 + 11) < 1e-3 and abs(r4 - 2) < 1e-3,
+      abs(r2 + 9) < 1e-3 and abs(r4 - 2) < 1e-3,
       f"res(2) = {mp.nstr(r2, 8)}, res(4) = {mp.nstr(r4, 8)}")
 print("\n  => THE SUBTRACTION POINT IS NOT AN ARTEFACT OF CUTTING OFF THE SUM.  A pole at s = 0 is")
 print("     scheme-independent, so the question the row asks is a real one and has to be answered.")
 
 # ---------------------------------------------------------------------------------
-print("\nPART 4 -- ATTACK (iii): DOES 39/4 MOVE WITH THE SUBTRACTION POINT?")
+print("\nPART 4 -- ATTACK (iii): DOES 15/4 MOVE WITH THE SUBTRACTION POINT?")
 print("-" * 100)
 S = lambda M, m0: mp.fsum(f_(k) for k in range(m0, M + 1))
-POLY = lambda M, m0: mp.fsum(2 * k ** 3 - 11 * k for k in range(m0, M + 1))
+POLY = lambda M, m0: mp.fsum(2 * k ** 3 - 9 * k for k in range(m0, M + 1))
 HARM = lambda M, m0: mp.fsum(mp.mpf(1) / k for k in range(m0, M + 1))
 
 
@@ -218,7 +243,7 @@ def fitL(m0, M1, M2):
     return A / (HARM(M2, m0) - HARM(M1, m0))
 
 
-print("    (the residual still carries the 45/8m^3 tail, so the extraction converges as the cut grows)")
+print("    (the residual still carries the 7/8m^3 tail, so the extraction converges as the cut grows)")
 for M1, M2 in ((400, 800), (4000, 8000), (40000, 80000)):
     row = [fitL(m0, M1, M2) for m0 in (3, 5, 10, 50)]
     spread = max(row) - min(row)
@@ -231,15 +256,15 @@ check("L is IDENTICAL across subtraction points at every cut -- the spread is th
       "so the coefficient cannot know where the sum starts",
       max(r1) - min(r1) < mp.mpf('1e-28') and max(r3) - min(r3) < mp.mpf('1e-20'),
       f"spread {mp.nstr(max(r1)-min(r1), 3)} at cut 800, {mp.nstr(max(r3)-min(r3), 3)} at cut 80000, "
-      f"against |L - 39/4| = {mp.nstr(abs(r1[0]-mp.mpf(39)/4), 3)} and "
-      f"{mp.nstr(abs(r3[0]-mp.mpf(39)/4), 3)} -- the m_0-spread is smaller by 25 orders")
-check("...and it converges to 39/4 as the cut grows, the residual error falling like the 1/m^3 tail",
-      abs(r3[0] - mp.mpf(39) / 4) < abs(r1[0] - mp.mpf(39) / 4) / 100,
-      f"|L - 39/4| = {mp.nstr(abs(r1[0]-mp.mpf(39)/4), 4)} at cut 800 -> "
-      f"{mp.nstr(abs(r3[0]-mp.mpf(39)/4), 4)} at cut 80000")
+      f"against |L - 15/4| = {mp.nstr(abs(r1[0]-mp.mpf(15)/4), 3)} and "
+      f"{mp.nstr(abs(r3[0]-mp.mpf(15)/4), 3)} -- the m_0-spread is smaller by 25 orders")
+check("...and it converges to 15/4 as the cut grows, the residual error falling like the 1/m^3 tail",
+      abs(r3[0] - mp.mpf(15) / 4) < abs(r1[0] - mp.mpf(15) / 4) / 100,
+      f"|L - 15/4| = {mp.nstr(abs(r1[0]-mp.mpf(15)/4), 4)} at cut 800 -> "
+      f"{mp.nstr(abs(r3[0]-mp.mpf(15)/4), 4)} at cut 80000")
 
-print("\n  and the finite part moves by exactly (39/4) ln(m_0'/m_0):")
-base = mp.mpf(39) / 4
+print("\n  and the finite part moves by exactly (15/4) ln(m_0'/m_0):")
+base = mp.mpf(15) / 4
 for m0p in (5, 10, 50):
     direct = mp.fsum(f_(k) for k in range(3, m0p)) * 0 + base * mp.log(mp.mpf(m0p) / 3)
     print(f"    3 -> {m0p:3d} :  predicted shift = {mp.nstr(direct, 16)}")
@@ -251,18 +276,20 @@ for m0p in (5, 10, 50):
           (S(m0p - 1, 3) - POLY(m0p - 1, 3)) - base * mp.log(mp.mpf(m0p) / 3)
     shifts_ok &= abs(lhs - rhs) < mp.mpf('1e-12')
 check("the two bookkeepings agree to 1e-12: moving the subtraction point changes the constant by "
-      "(39/4) ln(m_0'/m_0) and changes NOTHING ELSE",
+      "(15/4) ln(m_0'/m_0) and changes NOTHING ELSE",
       shifts_ok)
 
 print("\n  ** CONTROL, which MUST break: L is not invariant under everything. **")
-for delta in (0, 1, 3, -13):
-    mu_d = sp.sqrt(m ** 2 - 3 + delta)
-    Ld = sp.simplify(sp.limit(m * (d_sym * mu_d - 2 * m ** 3 - (delta - 11) * m), m, sp.oo))
-    print(f"    mass shift mu^2 -> m^2-3+{delta:<4d} :  L = {Ld}")
-Ld1 = sp.simplify(sp.limit(m * (d_sym * sp.sqrt(m ** 2 - 2) - 2 * m ** 3 - (1 - 11) * m), m, sp.oo))
-check("CONTROL -- a mass shift MOVES L (delta = 1 gives L = 7, delta = 3 gives 0), so the invariance "
-      "under the subtraction point in PART 4 is a real fact and not a tautology of the machinery",
-      Ld1 != sp.Rational(39, 4), f"L(delta=1) = {Ld1} against 39/4")
+for delta in (0, 2, 1, -15):
+    mu_d = sp.sqrt(m ** 2 - 1 + delta)
+    Ld = sp.simplify(sp.limit(m * (d_sym * mu_d - 2 * m ** 3 - (delta - 9) * m), m, sp.oo))
+    print(f"    mass shift mu^2 -> m^2-1+{delta:<4d} :  L = {Ld}")
+Ld2 = sp.simplify(sp.limit(m * (d_sym * sp.sqrt(m ** 2 + 1) - 2 * m ** 3 - (2 - 9) * m), m, sp.oo))
+check("CONTROL -- a mass shift MOVES L (delta = 2 gives L = -17/4, and delta = 1 and delta = -15 give "
+      "0), so the invariance under the subtraction point in PART 4 is a real fact and not a tautology "
+      "of the machinery",
+      Ld2 != sp.Rational(15, 4) and Ld2 == -sp.Rational(17, 4),
+      f"L(delta=2) = {Ld2} against 15/4")
 print("\n  => (iii) COMES OUT FOR THE ROW, AND IS THE WEAKER READING.  The test 66 named was that a")
 print("     coefficient MOVING would settle it the other way.  It does not move -- but a constant that")
 print("     nothing measures does not become determined by the coefficient above it being fixed.")
@@ -272,7 +299,7 @@ print("\nPART 5 -- ATTACK (i), THE OTHER HALF: IS THE INFRARED DOING WORK?")
 print("-" * 100)
 print("  The order's phrasing: 'your own receipt has the tower starting at n = 2 with no zero mode and")
 print("  no soft region, so the infrared is regulated for free'.  That is right and it is checkable.")
-below = [(k, int(2 * (k ** 2 - 4)), float(mp.sqrt(k ** 2 - 3))) for k in range(3, 8)]
+below = [(k, int(2 * (k ** 2 - 4)), float(mp.sqrt(k ** 2 - 1))) for k in range(3, 8)]
 for k, dk, muk in below:
     print(f"    m = {k}:  d = {dk:4d},  mu = {muk:.6f}")
 check("the spectrum is gapped from below at mu_3 = sqrt(6) with finitely many modes under any cut, so "
@@ -280,7 +307,7 @@ check("the spectrum is gapped from below at mu_3 = sqrt(6) with finitely many mo
       all(muk > 2.4 for _, _, muk in below) and below[0][2] < below[1][2])
 
 print("\n  ** CONTROL, which MUST break: a soft floor. **")
-soft = mp.nsum(lambda k: 2 * (k ** 2 - 4) / mp.sqrt(k ** 2 - 3) / k ** 4, [3, mp.inf])
+soft = mp.nsum(lambda k: 2 * (k ** 2 - 4) / mp.sqrt(k ** 2 - 1) / k ** 4, [3, mp.inf])
 div = mp.nsum(lambda k: mp.mpf(1) / (k - 3 + mp.mpf('1e-6')) ** 2, [3, 200])
 check("CONTROL -- a spectrum with a mode approaching zero makes an infrared-weighted sum blow up "
       "(1e-6 gap gives 1e12), so PART 5's finiteness is a property of THIS spectrum",
@@ -297,10 +324,10 @@ M_sym, m0_sym = sp.symbols('M m_0', positive=True)
 logarg = sp.log(M_sym / m0_sym)
 check("ln(M/m_0) has no length in it for ANY m_0 -- its free symbols are the two mode numbers",
       logarg.free_symbols == {M_sym, m0_sym}, f"free symbols = {logarg.free_symbols}")
-omega = sp.sqrt(m ** 2 - 3) / a_sym
+omega = sp.sqrt(m ** 2 - 1) / a_sym
 check("...and the only place a length enters is the frequency omega_m = mu_m / a, built from the ONE "
       "length a, with the mode number a pure multiplier",
-      omega.free_symbols == {m, a_sym} and sp.simplify(omega * a_sym - sp.sqrt(m ** 2 - 3)) == 0)
+      omega.free_symbols == {m, a_sym} and sp.simplify(omega * a_sym - sp.sqrt(m ** 2 - 1)) == 0)
 print("\n  => ** THE PREMISE IS RIGHT AND DOES NOT REACH THE CONCLUSION. **  The one-scale claim rules")
 print("     out a second LENGTH; it does not rule out a second NUMBER, and the subtraction point is a")
 print("     number.  So it cannot single out the floor, and the row's argument stops here.")
@@ -309,16 +336,16 @@ print("     number.  So it cannot single out the floor, and the row's argument s
 print("\nPART 7 -- ATTACK (ii), THE DECIDING HALF: DOES THE PHYSICS SEE THE RESIDUE?")
 print("-" * 100)
 tail = mp.nsum(rem, [3, mp.inf])
-C_floor = tail + mp.mpf(39) / 4 * (mp.euler - mp.mpf(3) / 2)
+C_floor = tail + mp.mpf(15) / 4 * (mp.euler - mp.mpf(3) / 2)
 print(f"  the remainder sum from the floor:            {mp.nstr(tail, 22)}")
 print(f"  SUM_{{3..M}} 1/m = ln M + gamma - 3/2 + O(1/M): gamma - 3/2 = {mp.nstr(mp.euler - mp.mpf(3)/2, 22)}")
 print(f"  ** the constant left by subtracting AT THE FLOOR:  C = {mp.nstr(C_floor, 22)} **")
 check("the floor does NOT fix the constant to zero or to any named number -- it leaves "
-      "-8.51485690643..., which is a number the convention produces and not one the physics names",
-      abs(C_floor + mp.mpf('8.5148569064338346957')) < mp.mpf('1e-15') and abs(C_floor) > 1,
+      "-3.39047210119..., which is a number the convention produces and not one the physics names",
+      abs(C_floor + mp.mpf('3.3904721011860479102')) < mp.mpf('1e-15') and abs(C_floor) > 1,
       f"C = {mp.nstr(C_floor, 18)}")
 for m0p in (5, 10, 50):
-    print(f"    subtracting at m_0 = {m0p:3d} instead leaves C + {mp.nstr(mp.mpf(39)/4*mp.log(mp.mpf(m0p)/3), 14)}")
+    print(f"    subtracting at m_0 = {m0p:3d} instead leaves C + {mp.nstr(mp.mpf(15)/4*mp.log(mp.mpf(m0p)/3), 14)}")
 
 print("""
   ** AND THAT SHIFT IS THE CONSTANT THE CORPUS ALREADY ABSORBS. **  P10 sec:lock's own argument: on a
@@ -362,20 +389,20 @@ print("""
      the geometry.  ** That is a determination and not a convention, and it is the part to carry. **
 
   2. The log is real and scheme-independent: a simple pole at s = 0 of the Dirichlet series with residue
-     exactly 39/4.  Zeta regularisation does not evade it, so the question had to be answered.
+     exactly 15/4.  Zeta regularisation does not evade it, so the question had to be answered.
 
-  3. 39/4 does not move with the subtraction point, and the control shows that is a fact rather than a
+  3. 15/4 does not move with the subtraction point, and the control shows that is a fact rather than a
      tautology -- a mass shift does move it.  ** But the test 66 named could only have settled the
      question AGAINST; it coming out the other way leaves it open, and does not settle it for. **
 
   4. ** AND THE DECIDING TEST COMES OUT AGAINST, IN TWO STEPS. **  First, a mode number is dimensionless,
      so the one-scale claim -- the row's whole motivation -- is satisfied by EVERY mode number equally
-     and cannot single out the floor.  Second, the residue a different choice leaves is (39/4) ln(m_0'/m_0)
+     and cannot single out the floor.  Second, the residue a different choice leaves is (15/4) ln(m_0'/m_0)
      and nothing else, and on the admitted one-parameter family the counterterm basis is one-dimensional,
      so that shift is degenerate with the cosmological term and P17 absorbs it into the one observed
      curvature.  ** Nothing measures it. **
 
-  5. And the floor does not fix the constant to anything: subtracting there leaves -8.51485690643...,
+  5. And the floor does not fix the constant to anything: subtracting there leaves -3.39047210119...,
      a number the convention produces rather than one the physics names.
 
   ** SO THE ANSWER IS "CONVENIENT", AND IT IS A RESULT RATHER THAN A FAILURE. **  The one-scale claim
@@ -397,13 +424,13 @@ print("GATES: ALL PASS.")
 print("""
 ESTABLISHED: the tower's floor m = 3 is forced by the representation theory and the tower is gapped with
 no zero mode, so the infrared needs no regulator; the log is a simple pole at s = 0 with residue exactly
-39/4, so no scheme evades a subtraction point; 39/4 is independent of that point while the finite part
-shifts by exactly (39/4) ln(m_0'/m_0); but a mode number is dimensionless so the one-scale claim protects
+15/4, so no scheme evades a subtraction point; 15/4 is independent of that point while the finite part
+shifts by exactly (15/4) ln(m_0'/m_0); but a mode number is dimensionless so the one-scale claim protects
 every choice equally, and the shift is degenerate with the cosmological term on the admitted
 one-parameter family and is absorbed into the one observed curvature -- so no observable depends on the
-subtraction point and the floor CANNOT be forced.  Subtracting at the floor leaves -8.51485690643...,
+subtraction point and the floor CANNOT be forced.  Subtracting at the floor leaves -3.39047210119...,
 neither zero nor named.  ** The floor is forced as a MODE and convenient as a SUBTRACTION POINT. **
 NOT CLAIMED: that the one-scale claim fails (the opposite, for the part that matters); anything about
-PO-23's ultraviolet definition of the sums; the Weyl-squared entry off the admitted family; or that 39/4
+PO-23's ultraviolet definition of the sums; the Weyl-squared entry off the admitted family; or that 15/4
 is discharged.
 """)

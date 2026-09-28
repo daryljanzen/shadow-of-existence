@@ -21,7 +21,8 @@ Two quantities, both from P10's own text:
     with I = 3.3387 alpha^-1 on the forced member -- CONVERGENT because omega goes
     as s^-2/3 and is integrable, which is a statement about the integral and NOT
     about slow variation;
-  * the adiabaticity parameter is C/mu_n with C running 1.72 near the branch point
+  * the adiabaticity parameter is C/mu_n with C running 1.72 near the branch point,
+    and mu_n^2 = n(n+2) is the reduction's frequency rather than the Laplace eigenvalue
     to 0.16 near the turnaround, so the projection is controlled by the harmonic
     index alone.
 
@@ -59,7 +60,9 @@ C_TURN = 0.16          # ... near the turnaround
 
 def mu(n):
     """S^3 tensor-harmonic eigenvalue: mu_n^2 = n(n+2) - 2, n >= 2."""
-    return math.sqrt(n * (n + 2) - 2)
+    # r6975: the FREQUENCY, not the Laplace eigenvalue -- the reduction displaces it by the
+    # curvature term's +2K at every level (node 60's r6974), so mu^2 = n(n+2).
+    return math.sqrt(n * (n + 2))
 
 
 def exponent(n):
@@ -83,9 +86,9 @@ for n in range(2, 11):
           f" {C_BRANCH/mu(n):12.3f}")
 print()
 
-# P10 states 0.70 at n=2, 0.48 at n=3, 0.16 by n=10
-check("eps(n=2) reproduces P10's 0.70", abs(C_BRANCH / mu(2) - 0.70) < 0.01)
-check("eps(n=3) reproduces P10's 0.48", abs(C_BRANCH / mu(3) - 0.48) < 0.01)
+# P10 states 0.61 at n=2, 0.44 at n=3, 0.16 by n=10 (r6975: at the corrected frequency)
+check("eps(n=2) reproduces P10's 0.61", abs(C_BRANCH / mu(2) - 0.61) < 0.01)
+check("eps(n=3) reproduces P10's 0.44", abs(C_BRANCH / mu(3) - 0.44) < 0.01)
 check("eps(n=10) reproduces P10's 0.16", abs(C_BRANCH / mu(10) - 0.16) < 0.01)
 
 # the exact-to-naive ratio P10 states as 2.32

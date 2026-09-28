@@ -46,7 +46,7 @@ classical constraint.  The interacting theory is NOT built, as ordered, and §E 
 
   ⛭ ** WHAT ACTUALLY BREAKS IT IS THE LOG, WHICH IS TO SAY: THE CONSTANT AT ISSUE BREAKS THE
      DEGENERACY THAT WOULD HAVE HIDDEN IT. **  $Z(s)=\sum_n d_n\mu_n^{-s}$ has a POLE at $s=-1$ with
-     residue $r=\tfrac{39}{4}$ (banked), so the renormalized zero-point energy is
+     residue $r=\tfrac{15}{4}$ (banked), so the renormalized zero-point energy is
      $E(a)=\tfrac1a\,[\,C_0+r\ln(a\mu)\,]$ --- and the $\ln a$ spoils the exact $a^{-4}$ scaling that
      made the bare sum traceless.  The trace is then
 
@@ -56,7 +56,7 @@ classical constraint.  The interacting theory is NOT built, as ordered, and §E 
      reason the split between $C_0$ and the log being a convention does not touch the conclusion.
      ⇒ $R=4\Lambda+4Gr/(\pi a^{4})$, confirmed TWO ways: from the trace of the field equation, and
      independently by solving the constraint and computing $R$ from $a$ directly (§B3).
-     ⇒ ** $R$ is non-constant if and only if $r\neq0$, and $r=\tfrac{39}{4}$. **
+     ⇒ ** $R$ is non-constant if and only if $r\neq0$, and $r=\tfrac{15}{4}$. **
 
   ⚑ ** SO THE RANK RISES, AND THE MEASUREMENT IS CLEAN. **  Three regions of one history give three
      triples $(\int\!\sqrt g,\int\!\sqrt gR,\int\!\sqrt gR^{2})$.  If $R$ is constant every triple is
@@ -136,7 +136,7 @@ def head(title):
     print("=" * 94)
 
 
-R_RESIDUE = sp.Rational(39, 4)      # Res_{s=-1} zeta_omega -- BANKED, not recomputed here
+R_RESIDUE = sp.Rational(15, 4)      # Res_{s=-1} zeta_omega -- r6975 re-point of the bank
 ZETA0_FREE = 10                     # zeta_Delta(0) for the free tower -- BANKED
 
 # ============================================================================ A
@@ -217,7 +217,7 @@ check(sp.simplify(sp.diff(Th_ren, C)) == 0,
       "  and Theta is independent of the finite part C_0 as well")
 check(sp.simplify(Th_ren.subs(r, 0)) == 0,
       "  and Theta -> 0 when r -> 0: the trace exists BECAUSE the log coefficient does")
-print(f"      at the banked r = 39/4:   Theta = {sp.simplify(Th_ren.subs(r, R_RESIDUE))}")
+print(f"      at the banked r = 15/4:   Theta = {sp.simplify(Th_ren.subs(r, R_RESIDUE))}")
 
 print("\n  B3. R from the CONSTRAINT, computed independently of the trace identity.")
 adot2 = sp.simplify(Lam * a ** 2 / 3 - 1 + (8 * sp.pi * G / 3) * rho_ren * a ** 2)
@@ -270,7 +270,7 @@ FLOOR = max(s2a, s3a, s2b, s3b)
 print(f"      => the numerical floor, MEASURED: {mp.nstr(FLOOR, 4)}")
 
 s2t, s3t = ratios(triples(LAM, GG, R_RESIDUE, C0, MU))
-print(f"\n  THE TOWER, r = 39/4:   s2/s1 = {mp.nstr(s2t, 6)}   s3/s1 = {mp.nstr(s3t, 6)}")
+print(f"\n  THE TOWER, r = 15/4:   s2/s1 = {mp.nstr(s2t, 6)}   s3/s1 = {mp.nstr(s3t, 6)}")
 check(s3t > FLOOR * mp.mpf('1e20'),
       f"rank 3: s3/s1 = {mp.nstr(s3t, 4)} stands {mp.nstr(mp.log(s3t / FLOOR, 10), 3)} decades above "
       "the measured floor")
@@ -319,15 +319,15 @@ def zeta_delta_at_zero(lam_expr, M=3, J=8, report=False):
 
 
 c, delta, L, b = sp.symbols('c delta L b')
-z_free = zeta_delta_at_zero(m ** 2 - 3)
+z_free = zeta_delta_at_zero(m ** 2 - 1)
 print(f"\n  free tower, lam = m^2 - 3:            zeta(0) = {z_free}")
 check(z_free == ZETA0_FREE, "the banked zeta(0) = 10 reproduced by this receipt's own machinery")
 
 print("\n  D1. the PROTECTED sector -- every one of these leaves it at exactly 10:")
-for lab, lam in (("constant (mass-like) shift  lam = m^2-3+delta", m ** 2 - 3 + delta),
-                 ("multiplicative rescaling    lam = L*(m^2-3)  ", L * (m ** 2 - 3)),
-                 ("even, falling               lam = m^2-3+b/m^2", m ** 2 - 3 + b / m ** 2),
-                 ("even, falling               lam = m^2-3+b/m^4", m ** 2 - 3 + b / m ** 4)):
+for lab, lam in (("constant (mass-like) shift  lam = m^2-1+delta", m ** 2 - 1 + delta),
+                 ("multiplicative rescaling    lam = L*(m^2-1)  ", L * (m ** 2 - 1)),
+                 ("even, falling               lam = m^2-1+b/m^2", m ** 2 - 1 + b / m ** 2),
+                 ("even, falling               lam = m^2-1+b/m^4", m ** 2 - 1 + b / m ** 4)):
     z = zeta_delta_at_zero(lam)
     print(f"      {lab}   zeta(0) = {z}")
     check(sp.simplify(z - ZETA0_FREE) == 0, f"  unchanged: {lab.split('lam')[0].strip()}")
@@ -336,17 +336,17 @@ print("\n      ⌗ the rescaling case CONTAINS r6411's result and generalizes it
 print("        factor, so 'a factors out of the free tower' is one member of a whole immune family.")
 
 print("\n  D2. and the ONE thing that moves it is an ODD power of the mode label:")
-z_odd1 = sp.simplify(zeta_delta_at_zero(m ** 2 - 3 + c * m, report=True))
-print(f"      lam = m^2-3+c*m   zeta(0) = {z_odd1}")
+z_odd1 = sp.simplify(zeta_delta_at_zero(m ** 2 - 1 + c * m, report=True))
+print(f"      lam = m^2-1+c*m   zeta(0) = {z_odd1}")
 check(sp.simplify(z_odd1 - (10 + c - c ** 3 / 3)) == 0,
       "delta = c*m moves it by exactly c - c^3/3 -- a closed form")
-z_odd2 = sp.simplify(zeta_delta_at_zero(m ** 2 - 3 + c / m, report=True))
-print(f"      lam = m^2-3+c/m   zeta(0) = {z_odd2}")
+z_odd2 = sp.simplify(zeta_delta_at_zero(m ** 2 - 1 + c / m, report=True))
+print(f"      lam = m^2-1+c/m   zeta(0) = {z_odd2}")
 check(sp.simplify(z_odd2 - (10 - c)) == 0, "delta = c/m moves it by exactly -c")
 
 print("\n  D3. self-checks on the continuation -- the split point and the truncation must not matter:")
-byM = [sp.simplify(zeta_delta_at_zero(m ** 2 - 3 + c * m, M=MM)) for MM in (3, 6, 10)]
-byJ = [sp.simplify(zeta_delta_at_zero(m ** 2 - 3 + c * m, J=JJ)) for JJ in (6, 8, 11)]
+byM = [sp.simplify(zeta_delta_at_zero(m ** 2 - 1 + c * m, M=MM)) for MM in (3, 6, 10)]
+byJ = [sp.simplify(zeta_delta_at_zero(m ** 2 - 1 + c * m, J=JJ)) for JJ in (6, 8, 11)]
 print(f"      M = 3, 6, 10 : {byM}")
 print(f"      J = 6, 8, 11 : {byJ}")
 check(all(sp.simplify(v - byM[0]) == 0 for v in byM), "M-independent: the split point drops out")

@@ -4,7 +4,7 @@ r"""ZETA_the_coupled_log_coefficient.py -- PO-23's coupled attempt.
 ** WHAT IS ALREADY SETTLED and is NOT re-derived here (r6411, r6435). **
   * spectrum $\mu_n^2=n(n+2)-2$, degeneracy $2(n-1)(n+3)$, $n\ge2$ -- `P10` from Peter--Weyl;
   * $\zeta(0)=10$ exactly, the binomial expansion terminating;
-  * the log coefficient $39/4$ exactly, the $1/m$ term of $d(m)\mu(m)=2m^3-11m+(39/4)/m+\dots$;
+  * the log coefficient $15/4$ exactly, the $1/m$ term of $d(m)\mu(m)=2m^3-11m+(15/4)/m+\dots$;
   * ** the free time-dependent computation is VACUOUS **: $\omega_n=\mu_n/a$, so $a$ leaves the
     dimensionless coefficient identically, for every $a$.  Only coupling can stop that.
 
@@ -16,12 +16,12 @@ $d(m)\mu(m)$, so it is an exact functional of the deformed spectrum and needs no
 theory in the coupling.
 
 ** THE RESULT, and its first line is the strong one. **
-      overall rescale   mu^2 -> (1+e)(m^2-3)   L = (39/4) sqrt(1+e)     NEVER zero
-      mass shift        mu^2 -> m^2-3+d        L = -(d-3)(d+13)/4       zero at d = 3, -13
-      1/m^2 tail        mu^2 -> m^2-3+e/m^2    L = e + 39/4             zero at e = -39/4
-      linear in m       mu^2 -> m^2-3+e m      L = -5e^4/64-e^2/8+39/4  zero at e = +-2sqrt(65)/5
+      overall rescale   mu^2 -> (1+e)(m^2-1)   L = (15/4) sqrt(1+e)     NEVER zero
+      mass shift        mu^2 -> m^2-1+d        L = -(d-1)(d+15)/4       zero at d = 1, -15
+      1/m^2 tail        mu^2 -> m^2-1+e/m^2    L = e + 15/4             zero at e = -15/4
+      linear in m       mu^2 -> m^2-1+e m      L = -5e^4/64-e^2/8+15/4  zero at e = +-2sqrt(65)/5
 
-*** => NO RESCALING DISCHARGES IT. ***  $L=(39/4)\sqrt{1+\epsilon}$ vanishes only at
+*** => NO RESCALING DISCHARGES IT. ***  $L=(15/4)\sqrt{1+\epsilon}$ vanishes only at
 $\epsilon=-1$, where every frequency vanishes.  ** This generalises r6411 from the scale factor to
 ANY multiplicative renormalisation of the frequencies ** -- and that is the class the leading
 back-reaction lives in, since the coupling acts through $a$ and through
@@ -79,10 +79,10 @@ def log_coefficient(mu2):
 
 
 FAMILIES = [
-    ('overall rescale', (1 + E_) * (M_ ** 2 - 3), E_),
-    ('mass shift', M_ ** 2 - 3 + D_, D_),
-    ('1/m^2 tail', M_ ** 2 - 3 + E_ / M_ ** 2, E_),
-    ('linear in m', M_ ** 2 - 3 + E_ * M_, E_),
+    ('overall rescale', (1 + E_) * (M_ ** 2 - 1), E_),
+    ('mass shift', M_ ** 2 - 1 + D_, D_),
+    ('1/m^2 tail', M_ ** 2 - 1 + E_ / M_ ** 2, E_),
+    ('linear in m', M_ ** 2 - 1 + E_ * M_, E_),
 ]
 
 
@@ -113,7 +113,7 @@ def main():
         print(f"    {name:<20} {str(sp.factor(L)):<34} {roots if roots else 'never'}")
     print('  ' + '=' * 74)
     print()
-    print('  *** NO RESCALING DISCHARGES IT: L = (39/4) sqrt(1+e) is zero only where every')
+    print('  *** NO RESCALING DISCHARGES IT: L = (15/4) sqrt(1+e) is zero only where every')
     print('      frequency is.  The leading back-reaction is a rescaling, so it cannot. ***')
     print()
     print('  the one mass-like discharge, delta = 3:')
@@ -123,7 +123,7 @@ def main():
     print('      the S^3 curvature offset in the transverse-traceless Lichnerowicz spectrum.')
     print()
     print('  CANCELLATION-FREE CONFIRMATION (term by term, never a big difference):')
-    for delta, want in ((0, '39/4 = 9.75'), (3, '0')):
+    for delta, want in ((0, '15/4 = 3.75'), (3, '0')):
         sl = residual_slope(delta)
         print(f"      delta = {delta}:  d(residual)/d(ln M) = {sl[-1]:.6f}   exact {want}")
     print()
