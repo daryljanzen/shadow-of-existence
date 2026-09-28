@@ -3269,3 +3269,63 @@ The settled premise converts it: not *refutation versus finished* but **a second
 ⛔ No corpus edit — **routed**; and the paragraph to move is `sec:lock`'s *"a premise this construction does not supply"*, which the geometric core contradicts. ⛔ No repair of either framing. ⛔ No further rank-sequence entries. ⛔ Nothing on `PO-56`, `PO-64` or the reproducibility layer.
 
 ⌗ *`r6988`, 34 checks, rc = 0 — exact wherever the object is algebraic, and a float against the geometric core's **own printed figure** wherever the input is a measurement.*
+
+---
+
+## ⛭⛭⛭ `r6990` — **`PO-23`, THE AMENDMENT: THE CLAUSE YOU SAID WOULD OUTRANK EVERYTHING ELSE IS THE ONE THAT FIRES. THE CHAIN BREAKS AT ITS SECOND LINK AND NEVER REACHES THE PLANCK LENGTH, LET ALONE THE TOWER — AND ⓶ CLOSES THE ROW: THE SECOND-ORDER TERM IS BOUNDED BY `10⁻¹²²` AT EVERY EPOCH, BECAUSE THE BACKGROUND BOUNCES.**
+
+You handed me a summary and said so. ***The sources do not say what the synthesis says they say***, so that is the result and I am reporting it first, as your order directed.
+
+### ⓵ Does the chain reach the tower? No — and it does not reach `ℏ` either. The link is named.
+
+The chain is **curvature → horizon period → `ℏ` → the Planck length**.
+
+- **Link 1 HOLDS, exactly.** The period is `β = 2πα/c = 2√3·π/(c√Λ)`. It carries ***no `ℏ` and no `G`***. The curvature alone does fix the period; that much of your synthesis's sentence is true of its source.
+- **Link 2 BREAKS.** The seam is `T = ℏ/(2παk_B)`. Solve it for `ℏ` and you get `ℏ = 2√3·π·T·k_B/√Λ` — which ***contains `T`***, a quantity that same equation introduces. One equation, one new unknown: **net constraint on the ledger's existing quantities is exactly zero.** So `ℏ` is not fixed at the seam, and link 3 has nothing to stand on.
+
+⇒ ***The chain does not reach the Planck length, so the question of whether `sec:lock`'s tower takes `ℏ` as an independent constant is moot: there is no horizon-fixed `ℏ` for it to take instead.***
+
+**⛭⛭ And the break is not dimensional, which makes it sharper rather than weaker.** The one relation the chain would need is `Λℓ_P² =` a pure number — and that product *is* dimensionless; I checked it as an exact cancellation in the dimension algebra rather than by inspection. So the chain is **dimensionally available and simply unsupplied**. That is a stronger finding than an impossibility would be, because it puts the gap in the construction and not in the units.
+
+**⛭⛭ And the corpus itself agrees, from a direction independent of my reading:** it *cites* `Λℓ_P² ≈ 3×10⁻¹²²` to the cosmology paper. *A construction that derived that product would not cite it.* ⇒ `r6988`'s answer is confirmed twice over.
+
+### ⚠ Where the synthesis and the source part — quoted both ways, so you can check the comparison rather than take it
+
+**`P18` says:** *"the horizon that closes the freedom is the seam where `ℏ` enters gravity, **its period fixing the constant against the curvature alone**."*
+
+**The geometric core says, at source:** *"`ℏ` enters only at the seam, scaled by `Λ` alone, the de Sitter horizon's thermal state closing the scale factor's lone self-adjoint-extension freedom without a free parameter … a `U(1)` of self-adjoint extensions and exactly one real parameter, **which is the parameter the horizon's thermal state spends**."*
+
+⇒ ***The source's object is the extension parameter. The synthesis's object is the value of `ℏ`.*** A place where a constant **enters** is not a value the construction **fixes**, and an extension parameter is not a unit gauge. **That is the WHICH-SPACE guard applied to a constant rather than to a length, which is what your amendment asked for.**
+
+⌗ *Third consecutive revision whose finding lands against a corpus statement rather than for one, and the second running whose object is a summary that strengthened its source. The amendment pre-authorised it by handing the summary over and saying so — which is the only reason it is reportable in one step instead of two.*
+
+### ⛭⛭⛭ ⓶ The quantitative question — and it is a closing statement, stronger than you hoped for
+
+On the closed synchronous background `a(T) = α·cosh(T/α)`:
+
+- the **only** stationary point is `T = 0` (solved, not assumed);
+- the second derivative there is `1/α > 0` ⇒ it is a **MINIMUM**, at `a = α`.
+
+⇒ the expansion parameter obeys
+
+> **`(ℓ_P/a)² ≤ Λℓ_P²/3 ≈ 1.00×10⁻¹²² ` at every epoch,** the maximum falling **at the bounce**.
+
+⇒ ***The case you asked me to look for — the scale factor's own powers undoing the suppression at some epoch — does not exist on this background, because `a` has a positive minimum.*** The locus of the extremum is named, as you required: `T = 0`. **The expansion is still an expansion everywhere, by one hundred and twenty-two orders.**
+
+⌗ *And this answer is **independent of ⓵**: it is arithmetic on a cited product and holds whether the ratio is derived or measured. So the row closes on the quantitative question whichever way the premise goes — which is why I put ⓶ second in the order but never behind ⓵ in the work.*
+
+### ⓷ Same datum or a second one? A second one — and then immediately scoped by ⓶
+
+`P18`'s surviving instance is whether the tower's zero-point energy gravitates: it lives in the ***boundary*** coefficient at `a = 0`, is settled by an ordering choice, and is a **binary**. A dimension-six coefficient lives in the ***bulk*** counterterm basis at operator dimension six, and is a real number. Different objects ⇒ **a second datum.**
+
+⛔ **But by ⓶ the term it would multiply is bounded by `10⁻¹²²` at every epoch** ⇒ ***it is the first genuine addition to the one-input ledger in principle, and costs nothing measurable in practice.*** Both halves, in that order: the first alone overstates it, the second alone buries it.
+
+### ⚠ The scope of ⓶, attached rather than left to be found
+
+The bound is on the **classical background** the free tower evolves on, where `a ≥ α`. In the **quantized** scale-factor sector the wavefunction reaches toward `a = 0`, and there the governing fact is the one this row already landed: the expectation of a negative power of `a` converges at the origin only above a threshold in the boundary index, and ***the horizon's own thermal condition — the same condition that closes the extension — is what clears it.*** ⇒ *The suppression survives quantization in the sense that matters, said with its regime attached rather than extended past it.*
+
+### What I did not do
+
+⛔ The two-loop coefficient is still **not computed** — one revision does not reach it, and by ⓶ its **size** is now worth more than its **value**, which is what you argued when you called the quantitative question the one with teeth. ⛔ No corpus edit — **routed**; and the sentence to move is `P18`'s *"its period fixing the constant against the curvature alone"*, which its source does not support. ⛔ No rank-sequence entries added. ⛔ Nothing on `PO-56`, `PO-64` or the reproducibility layer.
+
+⌗ *`r6990`, 25 checks, rc = 0 — exact wherever the object is algebraic (both links, the dimension algebra, the extremum and its sign), and a float only against the corpus's **own printed cited figure**.*
