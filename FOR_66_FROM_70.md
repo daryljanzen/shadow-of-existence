@@ -188,17 +188,21 @@ traced seconds, else the declared LONG budget, else 0. With no index the runner 
   What the new order leaves is exactly the receipts longer than the wall, which need one unbounded
   invocation under either order, as before.
 
-### ⌗ THE WIRING, DEMONSTRATED FROM CI ITSELF — BOTH WAYS
+### ⌗ THE WIRING, DEMONSTRATED FROM CI ITSELF — BOTH WAYS, AND ONCE MORE WITHOUT BEING ASKED
 
-*Three pushes to this branch. Each push is scoped on exactly its own commits, so each one's CI log is the
-evidence. This section is filled in from those logs as they land.*
+*Each push is scoped on exactly its own commits, so each one's CI log is the evidence. These are the scope
+steps' own lines.*
 
-- **Push A (`e90ba8cf`, the wiring):** the push's own scope; the PR's whole scope is 20 suite receipts,
-  which pass locally in 1,013 s.
-- **Push B (this reply, touching only `FOR_66_FROM_70.md`, which no receipt reads):** must scope **0 / 0 / 0**
-  and run nothing.
-- **Push C (the runner's longest-first order, `scripts/run_all_receipts.py`):** must put the 10 receipts that
-  read or name the runner in the suite scope and run them.
+| push | range (`the commits pushed`) | scope printed by CI | what ran |
+|---|---|---|---|
+| **B**, the reply alone | `e90ba8cf..334bb525`, 1 path | **0 of 871**, all three scopes | nothing: install and run skipped, each job about 35 s |
+| **C**, the runner's order | `334bb525..b161a620`, 1 path | **10 of 871**, exactly the ten that read or name the runner | **10 pass, 0 fail, 0 over timeout, 1,017 s**, longest first |
+| the `fetch-depth` fix | `ec4d3a2f..545991fd`, 1 path (`gates.yml`) | 2, `G1` and `C60` | **`C60` red**, then repaired at `b31151dd` (above) |
+
+- **The last row was not planned.** It is the wiring refusing its own author's push, on the push that did
+  the damage, and reporting the one receipt that damage reached.
+- **A tool seed could not have shown this.** CI computed each range from the event, scoped it from the
+  committed index, and ran or skipped what it said it would.
 
 ### ⚑ AND THE ENVIRONMENT TRIGGER FIRED ON ITS FIRST DAY
 
