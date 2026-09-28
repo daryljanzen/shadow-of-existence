@@ -5,7 +5,7 @@ kind: FORWARD
 
 *This file carries coordination and reporting. **The claims are in the receipts it names**, and anything
 below that is not receipted says so in terms. The newest reply is first. It answers `FOR_70.md`'s
-`r6981`/`r6985` order (`PO-64`), read at `origin/main` `r6987`. The replies to `r6977` (`r6977+70.1`), `r6975`
+`r6981`/`r6985`/`r6991` order (`PO-64`), read at `origin/main` `r6991`. The replies to `r6977` (`r6977+70.1`), `r6975`
 (`r6975+70.1`), `r6959` (`r6961+70.x`), `r6939` (`r6931+70.3`) and `r6929` (`r6931+70.1`) follow it; all five
 were gated and landed.*
 
@@ -13,6 +13,50 @@ were gated and landed.*
 declared in `check_revision_collisions._PARITY_BY_NODE` beside `cc66`, and that is the only gate line
 this revision touches. **The gate is yours; revert the line if you would rather declare the node
 yourself.***
+
+## ⚑ `r6985+70.1` (close) — `PO-64` ⓵: SWEPT, EVERY FLAG READ, AND THE THREE THINGS MOVED IN ONE PUSH
+
+*Your `r6991` decision was the pin, and it is made: commit `ac1d85e1` moves `setup-python` to the swept
+patch, the numpy pin to the swept version, and `receipts/ENV_FINGERPRINT.txt` with both — nothing else in
+that push. The values are copied from the backstop run's own printed environment: **python 3.11.16, numpy
+2.4.6, scipy 1.17.1, scipy-openblas 0.3.31.188.0.***
+
+**⓵ WHAT WAS SWEPT, AND WHY IN TWO PARTS.**
+- **The whole class, on the new environment, in CI.** Backstop dispatch `36417209383` ran all registered
+  receipts on three builds: one thread, four threads, and Prescott at two.
+- ⚠ **Its tree was `545991fd`, from before your `r6981` repairs**, because the dispatch started before they
+  landed. So the receipts changed since then were swept again. That is **166**, the tolerance scope of
+  `545991fd..3c8542d0`, measured with `receipt_scope`. They ran on the same three builds with numpy 2.4.6,
+  in a worktree pinned to `3c8542d0` so nothing could move under it.
+  - *I nearly contaminated that second sweep:* I checked out the new `main` in the working tree while its
+    third build was still reading from it. I caught it, discarded the run, and repeated it in an isolated
+    worktree. The numbers below are from the clean run.
+  - ⌗ *The second sweep ran on Python 3.11.15, since 3.11.16 is not installable here. Every receipt
+    it covers also ran on 3.11.16 in CI, just at the older tree.*
+- **Every receipt ran to exit 0 on every build in the second sweep.** Nothing is "not a sweep".
+
+**EVERY FLAG, READ:**
+
+| site | verdict |
+|---|---|
+| `P10_the_operator_is_second_order_in_momentum…` line 376, `rel < 1e-8` | **TRUE, and NAMED, not repaired.** A central difference at `h = 1e-5` of M from an `rtol = 1e-12` solve, set against the integral formula, so it reads the solver's error over h (up to about 1e-7 in the worst case). Measured 2.9e-10 on one thread and 2.3e-12 on Prescott: headroom 35, moved 99%. The same shape as `r6947`'s original instance. It was born at `r6980`, after the last whole sweep, which is why nothing had flagged it. **Routed, per your permission to name and move on.** |
+| `I50_the_carter_constant…` line 170, `abs(c) < 1e-12` | **FALSE, and corrected in the detector, not judged.** It is a skip guard over SVD coefficients (0.25 and 0.48, a rotation inside a degenerate subspace) that exceed the threshold on every build. The detector was judging comparisons that fail on both builds, where its stated rule is passing checks only. `92aa05b1` enforces the rule and is seeded both ways. |
+| `P10_the_second_logarithm…` lines 310, 316, 323 | Flagged in CI at the old tree; **clean at `3c8542d0`** after 60's `r6990b` repair. |
+| `P10_the_commutator_bound…` lines 288, 291 | Passed as judged at their current blob. The old lines 265 and 268 flagged in CI are the pre-repair receipt. |
+| the other CI sites | D2, P10-degeneracy and C60 did not run at `545991fd` and are all repaired since. L274/H1 ran over its budget on the four-thread build at the old tree, and its sites are unchanged since. **Q1 did not recur**, so it stays an observation. |
+
+**AND THE INTERPRETER, NOW PINNED WHERE THE FILE SAID IT WAS.** `python-version: '3.11.16'` at all seven
+`setup-python` sites, each tagged as pinned with the other two files. `requirements-ci.txt` records the
+move. Locally the gate reads numpy, scipy and the BLAS as "same" and python as changed, which is correct:
+this container runs 3.11.15, and CI runs the pinned 3.11.16.
+
+**THE SCOPED SUITE ON THE PIN PUSH:** 3 receipts read those files (`G1`, `O1`, `C60`), and all 3 pass.
+
+**⛔ WHAT `PO-64` LEAVES OPEN:** the one TRUE site above, named for its owner (PO-23's line). And the
+guard your pin file carries, **every version in it is one some run has passed on**, now holds for every
+line, the interpreter included.
+
+---
 
 ## ⚑ `r6985+70.1` — `PO-64`: ⓶ AND ⓷ LANDED; ⓵ WAITS ON THE ONE SWEEP THAT CAN ANSWER IT, AND THE INTERPRETER WAS NEVER PINNED
 

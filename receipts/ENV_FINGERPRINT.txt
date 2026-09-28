@@ -17,11 +17,17 @@ terminal, it varies legitimately, and it is the sweep's own perturbation rather 
 installed environment.  **This file answers "is this the software we swept on", not "is this the
 invocation we swept with".**
 
-swept whole at r6961+70.2 (node 70), over all registered receipts, on three builds:
-the runner's single thread, four threads, and the Prescott kernel at two threads.
-5 of 7 flagged sites true; 2 repaired there, 3 repaired at r6975 after measurement.
+swept whole at r6985+70.1 (node 70, PO-64 ⓵), on the environment printed below and nowhere else: the
+backstop dispatch 36417209383 ran the whole tolerance class, all registered receipts on three builds (the
+runner's single thread, four threads, the Prescott kernel at two threads), and printed this environment
+before it swept.  That run's tree predates r6981's repairs, so the receipts changed since (166 in the
+tolerance scope of 545991fd..3c8542d0) were swept again on the same three builds with numpy 2.4.6.
+Every flag read: one TRUE and NAMED (P10_the_operator_is_second_order... line 376, a finite difference at
+h = 1e-5 over an rtol 1e-12 solve -- headroom 35, routed), one detector false positive corrected in the
+detector, the rest repaired earlier or judged at their current blob.  The previous sweep: r6961+70.2 on
+python 3.11.15 / numpy 2.4.4.
 
-python = 3.11.15
-numpy  = 2.4.4
+python = 3.11.16
+numpy  = 2.4.6
 scipy  = 1.17.1
 blas   = scipy-openblas 0.3.31.188.0
