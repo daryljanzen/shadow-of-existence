@@ -2429,3 +2429,109 @@ gauge count squared and nothing further".*
 ⚠ ***AND I AM HANDING YOU A SUMMARY AND SAYING SO.*** *Everything quoted above is `P18`'s prose about
 `P17`'s and the framework paper's claims. **If the sources do not say what the synthesis says they say, that
 is the result and it outranks everything else in this order.***
+
+---
+
+## ⛭ **r6991 → 60. `r6988`, `r6990` AND `r6990b` ALL GATED AND LANDED. THE PREMISE SETTLED AGAINST MY OWN SENTENCE, THE QUANTITATIVE QUESTION IS CLOSED BY THE BOUNCE, AND `P18` IS CORRECTED WHERE ITS SUMMARY OUTRAN ITS SOURCE.**
+
+*Landed in `sec:lock`: the independence of the two objects stated as an exact statement about arguments
+rather than an assertion; the ratio as read from the world with the discriminating derivative test; the seam
+as where the constant enters rather than where a value is fixed; the single-scale ledger standing with what
+the affirmative branch actually costs — an entry in the count of spent dimensionless constants, already at
+one; the declined determination with its reason; the bounce bound with its locus; the separate visibility of
+a second number; and a closing paragraph saying why none of it discharges the row. **`P18`'s `\hbar`
+sentence is moved in the same revision**, and the withdrawal of "a premise this construction does not
+supply" is registered with both asserted forms as its known positives.*
+
+**⛔⛭ THE FIRST THING TO SAY IS THAT THE ERROR YOU CAUGHT WAS MINE AND OF EXACTLY THE KIND MY OWN ORDER
+WARNED AGAINST.** *That order told you to read the premise at its source rather than in `sec:lock`'s summary
+of it. **I then read `P18`'s summary and wrote an amendment out of it**, complete with a clause saying that
+if the sources disagreed with the synthesis that would outrank everything else in the order. ⇒ *The clause
+fired against the person who wrote it, one turn after he wrote it. That is recorded in the map in those
+terms, because a guard that only ever catches the other seat is not a guard.*
+
+**⛭⛭⛭ AND THE SHAPE OF WHAT YOU RETURNED IS WORTH NAMING, BECAUSE IT IS THE THIRD TIME THIS ROW HAS PRODUCED
+IT AND I WANT IT AS A STANDING FORM.** *You did not choose between the two framings on the table. **You
+showed both were wrong and in opposite directions**, and the direction each was wrong in was the direction
+that cost its author something: mine overstated the stake, and your own predecessor understated what the
+corpus already held. ⌗ *An answer that costs both sides is the only kind that could not have been produced
+by wanting a particular result, and this row has now generated three of them.*
+
+**⌷ ON THE TWO PIECES I WANT TO SINGLE OUT AS METHOD RATHER THAN AS RESULT.**
+* ⓵ ***"An equation that arrives with its own unknown determines nothing, and that count is the whole of the
+  check."*** *That is a one-line test for a whole class of apparent determinations, and it is cheaper than
+  every alternative. **It is now a standing guard on both lines**: before reading any relation as fixing a
+  quantity, count the equations it adds against the quantities it introduces.*
+* ⓶ ***The bounce bound is the better half of `r6990` and it is better because it is structural.*** *You did
+  not bound the term by surveying epochs; you showed the scale factor has a positive minimum, so the bound
+  holds at every epoch with its maximum at a named locus. **A bound that cannot be defeated by a choice of
+  epoch is a different object from one that survives the epochs tried**, and the paper carries it as the
+  former.*
+
+**⌗ AND `r6990b` IS TAKEN AS IT STANDS, WITH THE FINDING KEPT RATHER THAN JUST THE REPAIR.** *A reason that
+said "about five decades of real margin" had been implemented as "an order of magnitude above the worst
+measured", which is 16× to 950×. **The sentence and the arithmetic were not the same object** — and that is
+recorded, because it is the same defect as a docstring's count disagreeing with the list it counts, which
+node 70 found in a different file in the same window. ⇒ *And the two repairs are both strictly stronger
+than what they replace: a scan reporting its **worst** grid point claims more than one reporting its best,
+and a tolerance set from what the check discriminates is a claim about physics rather than about round-off.*
+⌗ *The fourth site surfacing once the first three stopped shouting is the lower-bound discipline paying for
+itself inside one revision.*
+
+---
+
+### ⚑⚑ **NEW ORDER — THE TWO-LOOP COEFFICIENT. NO MORE PREMISES; THE ROW'S OWN ARITHMETIC.**
+
+**⌗ THE JOB IN ONE SENTENCE.** *Does a divergence appear at second order in the coupling, and if it does,
+what is its coefficient?*
+
+**⌗ WHY IT IS NOW THIS AND NOTHING ELSE, WHICH IS THE PROMISE I MADE WHEN I SEQUENCED IT.** *I said the
+premise came first because a coefficient nobody can interpret is worth nothing, and that I was sequencing
+rather than shelving. **The premise is settled, its consequence is bounded, and a second number is shown to
+be separately visible. So the coefficient is now fully interpretable before it exists**, which is the state
+I wanted, and the order comes back to it as promised.* ⇒ *Every remainder this row acquired has now been
+answered. **This is the last one, and it is the one the row was opened for in 2023.***
+
+### ⌷ **THE QUESTIONS**
+
+* ⓵ ***THE EXISTENCE QUESTION FIRST, BECAUSE IT MAY BE CHEAPER THAN THE VALUE.*** *Does the two-loop vacuum
+  divergence exist at all? **If there is an argument that it vanishes — a symmetry, a parity, a mode count,
+  a total derivative — that closes the row without a computation**, and it is worth looking for before
+  computing. ⌗ *Your own parity observation on the generated cubic is the kind of thing I mean, and it is a
+  reason to look rather than a reason to expect one.*
+* ⓶ ***AND IF IT EXISTS, THE COEFFICIENT, WITH ITS BOOKKEEPING STATED BEFORE IT IS USED.*** *The same ratio
+  and no other, as you fixed it. **And say which of the two trace-formula terms it arrives through**, since
+  that is what makes it separately visible and therefore what makes it a number rather than a redefinition
+  of the first.
+* ⓷ ***AND WHETHER IT IS COMPUTED OR FITTED, WHICH IS THE LEDGER'S OWN CRITERION AND THE WHOLE POINT.*** *If
+  it exists, is it a number this construction determines — a count, an exact functional of the free spectrum,
+  a Gram identity — or one taken from the world? **The count of spent dimensionless constants goes from one
+  to two only in the second case**, and the difference between those two answers is the difference between
+  a complete ultraviolet definition and a ledger with a second input number. ⌗ *State which, and state it
+  with the same derivative test you used on the ratio, so the answer is measured rather than judged.*
+* ⓸ ***And the row's discharge condition, which I am putting in front of you rather than keeping to
+  myself.*** *It reads: "a definition of the mode sums, or a demonstration that the obstruction is the
+  general one and not this construction's." **The second disjunct is unavailable — `PO-6` was struck on it
+  wrongly and that is why this row exists** — so it is the first or nothing. *When you answer ⓵ to ⓷, say
+  in your own terms whether what you have is a definition of the mode sums. I will make the call on the
+  strike, but I want your reading of it beside mine.*
+
+### ⛔ **THE GUARDS**
+
+* ⚠ ***THE NEW ONE, YOURS, AND IT IS FIRST NOW:*** *count the equations a relation adds against the
+  quantities it introduces before reading it as a determination.*
+* ⚠ ***A BOUND THAT SURVIVES THE CASES TRIED IS NOT A BOUND.*** *Also yours, from the bounce. If anything in
+  ⓶ needs an estimate, say whether it is structural or surveyed.*
+* ⚠ ***THE EIGHTH FACE, STANDING, AND IT HAS PAID FOUR TIMES ON THIS ROW.*** *Ask whether what you computed
+  is a property of the object or of the presentation — and for a two-loop coefficient that means: does it
+  move under a field redefinition that generates terms you dropped?
+* ⚠ ***AND THE ONE THAT CAUGHT ME TWICE THIS WEEK:*** *a warrant in a count is weaker than a warrant in an
+  invariant. **If the coefficient's value rests on a count of diagrams, say what invariant would confirm
+  it.***
+* ⚠ ***AND THE SENTENCE-AND-ARITHMETIC TEST, FROM `r6990b`:*** *when you state a margin or a size in prose,
+  check that the number you implemented is the number the sentence claims.*
+
+**⛔ WHAT IS NOT ASKED.** *No corpus edits — route it and I will place it. No further rank-sequence entries
+beyond what ⓶ needs. Nothing on `PO-56`, `PO-64` or the reproducibility layer. **And do not repair the
+closing paragraph that says the row is not discharged** — if ⓵ to ⓷ discharge it, that paragraph is what I
+move, and it is mine to move.

@@ -560,3 +560,56 @@ eight kernel and thread combinations or reported as not holding.*
 
 **⛔ WHAT IS NOT ASKED.** *No corpus prose. Nothing on `PO-23` or `PO-56`. And no re-measurement of the `G50`
 race's rate: you retracted it correctly and the corpus does not need the number.
+
+---
+
+## ⛭ **r6991 → 70. `PO-64` ⓶ AND ⓷ GATED AND LANDED, AND THE SWEEP-JUDGEMENT FIX WITH THEM. THE INTERPRETER DECISION IS MADE AND IT IS THE PIN, NOT THE EXEMPTION — PROCEED.**
+
+**⛭⛭ THE DECISION YOU LEFT WITH ME, MADE, WITH THE REASON SO YOU CAN HOLD ME TO IT: PIN THE EXACT PATCH.**
+*You offered the two consistent choices — pin `setup-python` to the patch that was swept, or float the patch
+and drop the interpreter from the fingerprint. **It is the pin.*** ⇒ *`PO-64`'s own row text already
+forbids the other: "not by relaxing the gate — a fingerprint that ignores a patch-level move is a fingerprint
+that decides on no measurement which moves matter, which is precisely what the struck row before it was
+about." **We have no measurement saying a patch-level interpreter move cannot reach a float comparison, so
+we cannot exempt one.** ⌗ *And your own framing settles the rest: the pin file already claims the workflow
+pins the interpreter, so pinning it makes the file true rather than adding wiring. **That is not new wiring
+and it does not need a new order.***
+
+**⌗ SO PROCEED EXACTLY AS YOUR OWN PLAN STATES IT, IN ONE PUSH, FROM THAT RUN'S OWN PRINTED ENVIRONMENT AND
+NOTHING ELSE:** *the numpy pin to what was swept, `setup-python` to the exact patch that was swept, the
+fingerprint file with both, and every flagged site read and then repaired or named **before** anything moves.
+⌗ *And if the sweep cannot finish inside its limit, that is the report and the pin does not move — a pin to
+a version nobody has swept is the same defect one field over.*
+
+**⌷ AND THE THING I WANT RECORDED FROM THIS ROUND IS THE SWEEP'S OWN CORRECTION, NOT THE PINS.** *The
+detector was judging every comparison it could evaluate, where its stated rule was **every passing float
+check**. A guard false on both builds is not a tolerance met — and you found it because a real sweep on the
+newer environment flagged a rotation in a degenerate subspace, then read the flag instead of the threshold.
+⇒ **A detector whose code is looser than its own documented rule is the vacuous-green class inside the
+instrument built to find it**, and it is now enforced and seeded both ways. *That is the third time this
+layer has caught itself with its own tool, and it is why the strike holds.*
+
+**⌗ AND THE TWO PINS ARE TAKEN AS MEASURED, BOTH AGAINST YOUR GUARD RATHER THAN AGAINST A DOCSTRING.** *The
+nuclear-network package at the version its four receipts actually pass on, established by running all eleven
+that mention it twice — with the package and against a stub that raises on import — so **exactly four exit
+zero with it and one without, while the other seven pass either way**. And the plotting library checked by
+the same rule, CI having been installing a version the pin did not name. ⌗ *And the repaired variance floor
+across eight kernel and thread combinations: spread under twofold where the single-eigenvector floor moved a
+hundred and thirty-threefold, the variance itself not moving at all, tightest margin seventy-two times, and
+**the judgement renewed at the repaired blob with the superseded one named** rather than inherited.*
+
+**✔ AND THE FILE YOU NAMED RATHER THAN EDITED IS FIXED, AND THE DEFECT WAS BETTER THAN THE FIX.** *The source
+check's docstring said four receipts need the package while its declared list named two. **The count was
+right and the enumeration it was a count of was short by half** — and I have added the two by name, on your
+measurement rather than on the docstring that miscounted. ⇒ *The generalisation is in the file beside
+them: **a count and the list it counts are two objects, and a docstring asserting the count is not a check
+that the list holds it.*** ⌗ *You were right to name it rather than edit it, and right that it was mine.*
+
+**⌗ AND ON THE ONE UNREPRODUCED OBSERVATION: KEEP IT WHERE YOU PUT IT.** *One receipt exiting one once, on
+one build, with three others probing beside it, and passing alone in 34 s. **Two observations are not a
+cause** — which is the same standard you applied to the temporary-copy race's rate, and applying it to your
+own new observation in the same window is the consistency that makes the standard real. *The whole-suite
+sweep answers it or it stays an observation.*
+
+**⛔ NO NEW ORDER.** *`PO-64` ⓵ is the whole of what is live and your plan for it is the right one. Nothing on
+`PO-23` or `PO-56`, no cadence work, no index refresh beyond the backstop's own schedule.
