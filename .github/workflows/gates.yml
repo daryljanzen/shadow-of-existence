@@ -135,7 +135,13 @@ jobs:
     #   figure plus headroom, not a round number chosen to feel safe.*
     timeout-minutes: 75
     steps:
+      # ⛔ r6977+70.1 (70): FULL HISTORY.  With the default depth-1 checkout every receipt that reads an
+      #   earlier commit (`git show <sha>^`) fails here and passes in any real clone -- the first dispatch
+      #   of this job read 791 pass, 80 fail, where a full clone of the same receipts fails only r6975's
+      #   two -- and every failure legible in the log is a history read or a commit not fetched.  Never
+      #   green under THIS runner: PO-60's second class, one level up.
       - uses: actions/checkout@v4
+        with: { fetch-depth: 0 }
       - uses: actions/setup-python@v5
         with: { python-version: '3.11' }
       # ** THE GAIN THAT ONLY CI CAN GIVE. **  Ten receipts import camb/pynucastro,
@@ -161,7 +167,13 @@ jobs:
     runs-on: ubuntu-latest
     timeout-minutes: 300
     steps:
+      # ⛔ r6977+70.1 (70): FULL HISTORY.  With the default depth-1 checkout every receipt that reads an
+      #   earlier commit (`git show <sha>^`) fails here and passes in any real clone -- the first dispatch
+      #   of this job read 791 pass, 80 fail, where a full clone of the same receipts fails only r6975's
+      #   two -- and every failure legible in the log is a history read or a commit not fetched.  Never
+      #   green under THIS runner: PO-60's second class, one level up.
       - uses: actions/checkout@v4
+        with: { fetch-depth: 0 }
       - uses: actions/setup-python@v5
         with: { python-version: '3.11' }
       # ⛔ r6977+70.1: the first dispatch's install failed on an index hiccup, the `always()` steps below

@@ -15,7 +15,7 @@ yourself.***
 
 ## ⚑ `r6977+70.1` — `PO-62` WIRED: A COMMITTED INDEX, THREE SCOPED JOBS, AND THE RUNNER LONGEST-FIRST — AND THE INDEX I MEASURED LAST ROUND WAS BLIND TO EVERY GLOB
 
-### ⛔ FIRST — SIX THINGS THAT WERE WRONG, FIVE OF THEM MINE
+### ⛔ FIRST — SEVEN THINGS THAT WERE WRONG, FIVE OF THEM MINE
 
 **⓵ The r6975 read index could not see a single glob, and its own seed could not have noticed.**
 - **Cause:** the tracer recorded a glob as `abspath('glob:' + path)`. That string is *relative*, so it came
@@ -68,6 +68,18 @@ comparison printed **"0 flagged"** off 871 empty probes. Fixed three ways:
 
 Seeded both ways: real probes compare normally, and dead probes exit 2. On today's `main` the runner-read
 sweep exits 2 on exactly the two receipts below, which is the truth about them.
+
+**⓻ The heavy job has never been able to go green, and neither could the backstop.** Both checked out at
+the default depth of 1. Every receipt that reads an earlier commit (`git show <sha>^`, "recoverable at
+`736f9399^`") fails there and passes in any real clone. Two more cases of the same kind:
+- C60 needs `6beeca84`, which is deliberately not an ancestor of `main`, so only a full fetch reaches it;
+- the first dispatch of the heavy job read **791 pass, 80 fail**, where a full clone of the same receipts
+  fails only `r6975`'s two.
+
+Every failure legible in that log is a history read or an unfetched commit. **This is PO-60's second
+class, never green under the runner, one level up: the runner here is CI's checkout.** Both jobs now take
+`fetch-depth: 0`, as the fast job and the scoped jobs already do. The heavy job is PO-59's gate and not
+mine; the change is one line, and I made it because the backstop needs the same line.
 
 ### ⛔ ROUTED — `main` IS RED ON TWO RECEIPTS, BROKEN BY `r6975` ITSELF, AND THE SCOPE WOULD HAVE REFUSED IT
 
