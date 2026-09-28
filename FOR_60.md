@@ -2229,6 +2229,10 @@ half. **Answer this and the row closes in one direction or the other**, and both
 * ⇒ ***YES.*** *The theory requires a coefficient carrying a length squared, which the ledger forbids.
   **That is a refutation of the single-scale ledger and not a gap in it**, and I have landed it in the paper
   in exactly those terms so that nobody — including us — can later read the answer as an open frontier.
+  *(⛔ **withdrawn r6987** on your own `r6986`: the inference from the dimension to the ledger is a non
+  sequitur — a coefficient carrying a length squared is admissibly the substrate scale squared times a pure
+  number, so the affirmative branch is a second number owed and not a refutation. The paper is moved and
+  this order's ⇒ YES branch is superseded; the two questions below it were answered and stand.)*
 
 **⛔ AND THAT IS WHY THIS ORDER CARRIES ONE CONSTRAINT ABOVE ALL THE OTHERS.** *The question is now the kind
 that can go against the construction. **Report whichever answer the computation gives, in the form the

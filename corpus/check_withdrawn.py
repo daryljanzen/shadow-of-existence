@@ -408,6 +408,42 @@ REGISTRY = [
      "artefact -- it vanishes identically in the volume-preserving split the construction's own "
      "separation of shear from volume requires -- so the inverted quartic, its (2,2) count and the "
      "measure closure taken on it are properties of a truncation and not of the trace operator"),
+    # ⛔ r6987 on node 60's r6986.  *The claim `r6985` landed one revision earlier, and it was
+    #   SELF-DEFEATING AS SHIPPED: the same sentence said that a dimension-six coefficient is a second
+    #   physical length which the ledger forbids, AND that a gauge-combination Planck length was
+    #   asserted to avoid exactly that -- and the second clause defeats the first.*
+    # ⌗ ** WHAT IS ARITHMETIC AND STANDS UNCHANGED. **  The dimensional table: a coefficient of
+    #   operator dimension 2k carries L^(2k-4), so at dimension six it carries a length squared, and
+    #   second order in the coupling admits that dimension and no other.  *None of that is withdrawn.*
+    # ⌗ ** WHAT FAILS IS THE INFERENCE FROM THE TABLE. **  The framework's dimensionful content is ONE
+    #   length and the gauge length is a combination over it, so a coefficient carrying L^2 is
+    #   admissibly the substrate scale squared times a pure number.  *It introduces a second length
+    #   only if that pure number is left undetermined -- which is the same test the dimensionless case
+    #   already turns on, and which this row holds one instance of PASSED.*
+    #   ⇒ *** SO THE LEDGER'S CRITERION IS DIMENSION-INDEPENDENT: at every operator dimension the
+    #     question is whether each coefficient is a number the construction determines, and what the
+    #     dimension ladder decides is HOW MANY such numbers -- the renormalisability question and not
+    #     the single-scale one. ***
+    # ⌗ ** AND THE AFFIRMATIVE BRANCH IS A SECOND NUMBER OWED AND NOT A REFUTATION. **  What would make
+    #   it one is a premise this construction does not supply: that the ratio of the two lengths is
+    #   itself undetermined.  *That premise is where the stake sits, and it is named in the paper in
+    #   place of the refutation.*
+    ("the-ledger-is-at-stake-at-dimension-six-because-the-coefficient-is-a-second-length",
+     # ⌗ Asserted forms only.  The withdrawn step is dimension -> second length -> forbidden, never
+     #   the dimensional count itself, which stands and is stated in the same section.
+     r"(?:that is a second physical length"
+     r"|a second physical length: the thing the ledger forbids"
+     r"|requires a coefficient carrying a length squared, which the ledger forbids"
+     r"|only the higher one puts the ledger itself at\s*\n?stake"
+     r"|second branch is a refutation and not a gap)",
+     r"(?:r6986|r6987|withdrawn|WITHDRAWN|corrected|CORRECTED"
+     r"|non sequitur|dimension-independent|second number owed"
+     r"|pure number|undetermined|combination over)",
+     "corrected r6987 on node 60's r6986; the dimensional table stands but the inference from it does "
+     "not -- a coefficient carrying a length squared is admissibly the substrate scale squared times a "
+     "pure number, so it introduces a second length only if that number is undetermined, which is the "
+     "same criterion the dimensionless case turns on; the ledger's criterion is dimension-independent "
+     "and the affirmative branch is a second number owed rather than a refutation"),
 ]
 
 SKIP = ('appendix_receipts',)
@@ -542,6 +578,14 @@ HISTORICAL = {
 # a pattern that is broken.  Each entry therefore carries a KNOWN-POSITIVE string, taken verbatim
 # from the text the withdrawal removed, and this gate fails if any pattern stops matching its own.
 POSITIVES = {
+    # ⛔ r6987 on node 60's r6986: the paper's own sentences as `r6985` landed them, one revision
+    #   earlier.  *Both are the claim ASSERTED, and the second is the branch stated as a refutation.*
+    "the-ledger-is-at-stake-at-dimension-six-because-the-coefficient-is-a-second-length": [
+        "\\emph{At dimension six every coefficient carries a length squared},\nand that is a second "
+        "physical length: the thing the ledger forbids outright",
+        "does, the theory requires a coefficient carrying a length squared, which the ledger forbids. "
+        "\\emph{That\nsecond branch is a refutation and not a gap",
+    ],
     # ⛔ r6973 on node 60's r6972: the paper's own sentences as `r6967` and `r6971` landed them, and
     #   the reply's summary form.  *All three are the claim ASSERTED.*
     "the-trace-carries-a-momentum-weighted-cubic-and-the-operator-is-an-inverted-quartic": [
