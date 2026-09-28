@@ -25,6 +25,10 @@ on:
   #   whose second route nobody can find is missing -- it reads as available and is not.
   workflow_dispatch:
 
+# ⛭ PO-65 (node 70): the repository's default token is read-write; every job here reads only, except
+#   the three scoped jobs below, whose record step pushes `refs/ci/carry` (scripts/red_carry.py).
+permissions: { contents: read }
+
 jobs:
   fast:
     name: fast — registers, views, IDs
@@ -249,6 +253,7 @@ jobs:
   scope-suite:
     name: scoped — the plain suite, on what this push can have changed
     if: github.event_name == 'push' || github.event_name == 'pull_request'
+    permissions: { contents: write }   # PO-65: the record step pushes refs/ci/carry, and nothing else
     runs-on: ubuntu-latest
     # ⌗ COST, measured (receipt_scope.py --replay 400 against the r6977 index, main's first-parent
     #   pushes 09-12..09-28): 90 receipts at the median, 184 at p90, 397 at most; 1,547 s of
@@ -266,6 +271,7 @@ jobs:
         shell: bash
         run: |
           python3 scripts/receipt_scope.py --ci --scope suite --list "$RUNNER_TEMP/scope.txt"
+          python3 scripts/red_carry.py --union suite --list "$RUNNER_TEMP/scope.txt"
           echo "n=$(wc -l < "$RUNNER_TEMP/scope.txt")" >> "$GITHUB_OUTPUT"
           sed 's/^/    /' "$RUNNER_TEMP/scope.txt"
       - name: nothing in scope — nothing runs
@@ -277,6 +283,7 @@ jobs:
         shell: bash
         run: for i in 1 2 3; do pip install -r requirements-ci.txt pynucastro && exit 0; sleep 30; done; exit 1
       - name: run the scoped receipts, as the runner runs every receipt
+        id: run
         if: steps.scope.outputs.n != '0'
         shell: bash
         # ⛔ `SLOW` is not a pass here either: the verdict must read `0 fail, 0 over timeout`.
@@ -285,9 +292,17 @@ jobs:
             | tee "$RUNNER_TEMP/scoped_result.txt"
           grep -Eq '^  [0-9]+ pass, 0 fail, 0 over timeout' "$RUNNER_TEMP/scoped_result.txt"
 
+      # ⛭ PO-65: whatever happened above, write it down.  A receipt this run covered and passed leaves
+      #   the carry; a red one joins it; a failure that names nothing carries the whole scope.
+      - name: record — carry this push's reds forward, clear what it ran green
+        if: always() && steps.scope.outcome == 'success'
+        shell: bash
+        run: python3 scripts/red_carry.py --record suite --list "$RUNNER_TEMP/scope.txt" --outcome "${{ steps.run.outcome }}" --suite-log "$RUNNER_TEMP/scoped_result.txt"
+
   scope-reads:
     name: scoped — the runner-read sweep, on what this push deleted or renamed
     if: github.event_name == 'push' || github.event_name == 'pull_request'
+    permissions: { contents: write }   # PO-65: the record step pushes refs/ci/carry, and nothing else
     runs-on: ubuntu-latest
     # ⌗ COST, measured as above: 0 receipts at the median, 1 at p90, 152 at most; 19 s of compute at the
     #   mean; 265 of 400 pushes had nothing in scope.
@@ -303,6 +318,7 @@ jobs:
         shell: bash
         run: |
           python3 scripts/receipt_scope.py --ci --scope reads --list "$RUNNER_TEMP/scope.txt"
+          python3 scripts/red_carry.py --union reads --list "$RUNNER_TEMP/scope.txt"
           echo "n=$(wc -l < "$RUNNER_TEMP/scope.txt")" >> "$GITHUB_OUTPUT"
           sed 's/^/    /' "$RUNNER_TEMP/scope.txt"
       - name: nothing in scope — nothing runs
@@ -314,12 +330,21 @@ jobs:
         shell: bash
         run: for i in 1 2 3; do pip install -r requirements-ci.txt pynucastro && exit 0; sleep 30; done; exit 1
       - name: trace the scoped receipts from their own directories
+        id: run
         if: steps.scope.outputs.n != '0'
         run: python3 scripts/sweep_runner_reads.py --out "$RUNNER_TEMP/trace" --from "$RUNNER_TEMP/scope.txt"
+
+      # ⛭ PO-65: whatever happened above, write it down.  A receipt this run covered and passed leaves
+      #   the carry; a red one joins it; a failure that names nothing carries the whole scope.
+      - name: record — carry this push's reds forward, clear what it ran green
+        if: always() && steps.scope.outcome == 'success'
+        shell: bash
+        run: python3 scripts/red_carry.py --record reads --list "$RUNNER_TEMP/scope.txt" --outcome "${{ steps.run.outcome }}" --trace "$RUNNER_TEMP/trace"
 
   scope-tolerance:
     name: scoped — the tolerance perturbation, on code and data this push changed
     if: github.event_name == 'push' || github.event_name == 'pull_request'
+    permissions: { contents: write }   # PO-65: the record step pushes refs/ci/carry, and nothing else
     runs-on: ubuntu-latest
     # ⌗ COST, measured as above: 5 receipts at the median, 40 at p90, 232 at most; 674 s at the
     #   mean, 1,539 s at p90; 87 of 400 pushes had nothing in scope.  Three probes of the same receipts
@@ -339,6 +364,7 @@ jobs:
         shell: bash
         run: |
           python3 scripts/receipt_scope.py --ci --scope tolerance --list "$RUNNER_TEMP/scope.txt"
+          python3 scripts/red_carry.py --union tolerance --list "$RUNNER_TEMP/scope.txt"
           echo "n=$(wc -l < "$RUNNER_TEMP/scope.txt")" >> "$GITHUB_OUTPUT"
           sed 's/^/    /' "$RUNNER_TEMP/scope.txt"
       - name: nothing in scope — nothing runs
@@ -350,6 +376,7 @@ jobs:
         shell: bash
         run: for i in 1 2 3; do pip install -r requirements-ci.txt pynucastro && exit 0; sleep 30; done; exit 1
       - name: probe on three builds, compare each with the runner's
+        id: run
         if: steps.scope.outputs.n != '0'
         shell: bash
         # ⌗ A site judged FALSE is passed only while its receipt's blob is the one it was judged on
@@ -363,3 +390,10 @@ jobs:
           python3 scripts/sweep_tolerances.py --compare "$T/tA" "$T/tB" || rc=1
           python3 scripts/sweep_tolerances.py --compare "$T/tA" "$T/tC" || rc=1
           exit $rc
+
+      # ⛭ PO-65: whatever happened above, write it down.  A receipt this run covered and passed leaves
+      #   the carry; a red one joins it; a failure that names nothing carries the whole scope.
+      - name: record — carry this push's reds forward, clear what it ran green
+        if: always() && steps.scope.outcome == 'success'
+        shell: bash
+        run: python3 scripts/red_carry.py --record tolerance --list "$RUNNER_TEMP/scope.txt" --outcome "${{ steps.run.outcome }}" --tol-dirs "$RUNNER_TEMP/tA" "$RUNNER_TEMP/tB" "$RUNNER_TEMP/tC"
