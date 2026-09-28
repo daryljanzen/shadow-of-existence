@@ -3566,3 +3566,67 @@ A sixth-power divergence needs its `M⁶`, `M⁴` and logarithmic subtractions f
 ⛔ No corpus edit — **routed**; and **the paragraph saying the subtractions are three is left exactly as it stands, because ⓵ says it is right.** ⛔ The coefficient, as above. ⛔ Nothing on `PO-56`, `PO-65` or `PO-66` item two.
 
 ⌗ *`r7000`, 25 checks, rc = 0, **no floats at all** — every number a rational, an exact tensor identity, an exact matrix element, or an exact contraction.*
+
+---
+
+## ⚑ `r7002` — **TWO OF THE THREE CONVENTIONS REACH NOTHING OBSERVABLE, AND THE THIRD IS THE CONSTANT `sec:lock` ALREADY RECORDS THE MODE SUMS AS SPENDING. THE SUBTRACTION THIS ROW ADDED COSTS NO OBSERVABLE AT ALL.**
+
+Answers your `r7001` order. The short form: **the answer to ⓶ is yes for exactly one of the three, it was yes before this revision, and the dependence is on a constant already paid for — so nothing new is owed and the count does not move.** And the reason two of the three cost nothing is `r7000`'s collapse, which puts them in one direction.
+
+### ⓵ The three conventions, as objects — and the count stays three, so your offered reduction is declined
+
+* **(a) the finite part of the dimension-SIX counterterm's coefficient** — an *additive constant*, whose value on this background is a rational multiple of `Λ³` (`r7000`);
+* **(b) the finite part of the dimension-FOUR (cosmological) one** — an *additive constant*;
+* **(c) the SCALE inside the logarithm**, equivalently the subtraction point — ***the only one of the three that is a scale rather than an additive constant, and the only one whose action on the energy density carries a power of the scale factor rather than none.*** That asymmetry is what the whole answer turns on.
+
+**And all three are necessary rather than listed:** leaving any one of `M⁶`, `M⁴` or the logarithm unsubtracted leaves an infinite limit; subtracting all three leaves exactly the finite part. So the count of conventions *is* the count of structures that must be fixed.
+
+> ***What `r6994` measured is (c)'s action on (a) and (b), not a value for any of them.*** Re-derived at this row's own weight rather than borrowed — `d(m)μ(m) = 2m³ − 9m + 15/(4m) + …`, so the logarithm's coefficient is the weight's own `1/m` term — an octave in the subtraction point moves the finite part by exactly `(15/4)ln 2` and moves the coefficient not at all.
+
+⇒ **And the gap is the same for *every* member of the family: `G(2κ) − G(κ) = L ln 2` identically in `κ`, while `G` itself moves with `κ`.** A measured *difference* fixes the group's action and not a point of it, so it cannot single out a subtraction point. ⌗ *Your guard cuts the other way for the coefficient: `L = 15/4` is a computed rational with zero derivative in all three conventions, so `L` is not a convention at all — which is what "already fixed by a measurement" means. **The count stays three.***
+
+⌗ *Measured on the exact weight as well as on its expansion, because the closed form is silent about whether the expansion is the right one: the same coefficient leaves `4.7e-3` at the **worst** point of the scan, falling as `1/M`, against the `0.173` a coefficient wrong by a quarter would leave — and the wrong coefficient's residue does **not** fall.*
+
+### ⓶ Then the observable question — rank **two of three**, and the kernel is this row's own collapse
+
+The three conventions move the energy density along `{q₆Λ³, q₄Λ², L a⁻⁴}` — the first two **pure constants here**, because every counterterm's value on this background is a rational multiple of a power of the one input. So:
+
+> **the non-trivial triple `(q₄Λ², −q₆Λ³, 0)` shifts the energy density by exactly zero, identically in `a`** — the kernel exhibited rather than counted.
+
+⇒ ***THE DIMENSION-SIX CONVENTION — THE ONE THIS ROW ADDED — IS RANK ONE WITH THE COSMOLOGICAL ONE. The third subtraction is new as a subtraction and not as a number taken from the world.*** ⌗ *Control: give the dimension-six counterterm a value that does **not** collapse — an `a⁻⁶`, which `r7000`'s anisotropic control returns — and the rank is three with no kernel. The degeneracy is this background's, not the rank test's.*
+
+**And the one observable this section names is untouched, by a mechanism and not by the cases tried.** The mechanism is a **grading**:
+
+> `Θ[c a⁻ⁿ] = (4 − n) c a⁻ⁿ` exactly ⇒ `a⁻⁴` is the **whole** kernel of the trace, and the zero is at `n = 4` alone.
+
+The anomaly is the `a⁻⁴` coefficient of `Θ`, which is exactly `L`: ***zero derivative in all three conventions, unit derivative in `L`.*** The two power conventions move only the **constant** part of the trace — the cosmological term the framework absorbs into the one observed curvature — and (c) moves nothing at all, being traceless. ⌗ *Controls at `a⁻³` and `a⁻⁶` return `c a⁻³` and `−2c a⁻⁶`, so the vanishing is radiation's own property and not the formula's; and that the constant part **does** move is what makes this a grading rather than a silence.*
+
+**And the tower's spectrum is untouched at fixed scale factor**, a convention being a multiple of the identity there: every spacing exactly unchanged while the total energy shifts, against a control that is not a multiple of the identity and moves every spacing.
+
+### ⓷ Your trap, taken first — and the answer is neither of the two you offered
+
+The constant `sec:lock` calls observable is the **logarithmic counterterm's coefficient**, and it *splits*:
+
+> **a divergent part fixed at `L` — an anomaly, scheme-independent — plus a finite part that IS convention (c).**
+
+⇒ ***So it is neither downstream of the three nor one of them: it contains exactly one of them***, and "the anomaly is scheme-independent" and "the constant is a convention" are both true of the same object, separated by **where they appear** — the `a⁻⁴` trace is blind to (c), and the coefficient is not.
+
+⇒ **So ⓶ is yes for one of the three, and it was yes before this revision — the closure you suspected — but the dependence is on the constant `sec:lock` already records the mode sums as spending. Nothing new is owed, and the honest word can become "definition" only with that identification made explicit.** ⌗ *That identification — that the ledger's one spent dimensionless constant **is** convention (c) — is a statement about what your entry is, and it is yours to place. Routed, not edited.*
+
+### ⛭ And the same number makes the third convention and the second direction
+
+Set `L = 0`: the logarithm, its convention and the `a⁻⁴` direction all go **at once**, the rank falls to **one**, and every convention is absorbed into the one constant.
+
+⇒ **The anomaly buys exactly one observable direction and no more — the difference of the two ranks is 1.** That is this section's own shape, *the saving mechanism and the thing it saves us from are one number*, now holding for the **conventions** and not only for the counterterm.
+
+⚠ **And it locates what that retires, as a scope rather than as an error.** `r6863`'s `PO-51` — *"no observable depends on the subtraction point"* — rests on a **one-dimensional** counterterm basis. That is the reading on the one-parameter family, and it is right there; **the anomaly makes the basis two-dimensional in the quantized sector, which is where the discharge question lives.** So `PO-51`'s conclusion does not reach the sector `r7001` is asking about, and the protection has to come from the ledger entry instead. ⌗ *Routed to you; nothing edited.*
+
+### ⓸ Not attempted, and said rather than implied
+
+The Einstein–Hilbert quartic's own vertex numbers are not computed. ⓵ to ⓷ did not leave room — which you predicted and instructed. ⌗ *And the answer does not wait on them: carried through as an unknown factor on the dimension-six counterterm, every rank and the kernel are unchanged and the anomaly's coefficient is untouched, while the unknown is **not** inert — it moves the constant part of the trace. So it is not in the way rather than absent.*
+
+### What I did not do
+
+⛔ **No corpus edit — routed**, including the closing paragraph that names this question: ⓶'s answer is *"one of them does, and it is already paid for"*, which is neither of the two branches that paragraph anticipates, so **the strike is yours to consider with my reading beside it, as you asked last time.** ⛔ No repair of `r6863`'s row — the scope statement is routed above. ⛔ Nothing on the other rows.
+
+⌗ *`r7002`, 34 checks, rc = 0; exact everywhere except the one rate measurement, which is reported at its **worst** point against an exactly derived prediction, with the margin set from what the check discriminates.*
