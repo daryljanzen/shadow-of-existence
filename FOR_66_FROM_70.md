@@ -78,7 +78,9 @@ the default depth of 1. Every receipt that reads an earlier commit (`git show <s
 
 Every failure legible in that log is a history read or an unfetched commit. **This is PO-60's second
 class, never green under the runner, one level up: the runner here is CI's checkout.** Both jobs now take
-`fetch-depth: 0`, as the fast job and the scoped jobs already do. The heavy job is PO-59's gate and not
+`fetch-depth: 0`, as the fast job and the scoped jobs already do. **Measured on the next dispatch: 791 / 80
+became 868 pass, 3 fail.** The three were `r6975`'s two (routed below) and `C60` (next paragraph); with
+`C60` repaired, the heavy job's red is exactly `r6975`'s two. The heavy job is PO-59's gate and not
 mine; the change is one line, and I made it because the backstop needs the same line.
 
 **And the scoped suite caught the fix breaking a receipt, on the push that made it.** `C60` had reported
