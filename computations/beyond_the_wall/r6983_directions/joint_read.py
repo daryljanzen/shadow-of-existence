@@ -11,7 +11,10 @@ import sys
 import numpy as np
 from scipy.interpolate import CubicSpline
 
-ROOT = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
+# ⌗ four levels: this file sits in computations/beyond_the_wall/r6983_directions/, one deeper than
+#   the receipts, which is where the three-level form in the receipt comes from.
+ROOT = os.path.dirname(os.path.dirname(os.path.dirname(
+    os.path.dirname(os.path.abspath(__file__)))))
 SP = os.path.join(ROOT, 'computations', 'beyond_the_wall', 'spectra')
 sys.path.insert(0, os.path.join(ROOT, 'computations', 'planck_tt_likelihood'))
 import chi2_of_spectrum as CS                                             # noqa: E402
@@ -137,3 +140,23 @@ for nm, R in (('window', RW), ('term mix', RM), ('JOINT', RJ), ('measured excess
           f"|slope x <q^2>|/|intercept| = {abs(s * Q2.mean()) / abs(i):.3f}")
 print("    pre-registered: product 1.1035, sum 1.1019, quadrature 1.0839; "
       "the measured excess's own 1.0400")
+
+print("\n⓹ THE COMPOSITION RULE, READ AS A FRACTION OF EACH RULE'S OWN PREDICTED EXCESS")
+for nm, P in (('product', PROD), ('sum', SUM), ('quadrature', QUAD)):
+    f = (RJ - 1) / (P - 1)
+    print(f"    joint / {nm:11s} " + "  ".join(f"{x:.4f}" for x in f) + f"   mean {f.mean():.4f}")
+print(f"    joint below product in all 7: {bool(np.all(RJ < PROD))};  below sum in all 7: "
+      f"{bool(np.all(RJ < SUM))};  above quadrature in all 7: {bool(np.all(RJ > QUAD))}")
+
+print("\n⓺ AND WHAT THE JOINT IS AGAINST THE MEASURED EXCESS -- the arithmetic the row turns on")
+OV = (RJ - 1) / (MEAS - 1)
+print("    joint / measured, band by band  " + "  ".join(f"{x:.2f}" for x in OV) + f"   mean {OV.mean():.2f}")
+_s, _i = np.polyfit(Q2, np.log(RJ), 1)
+_sm, _im = np.polyfit(Q2, np.log(MEAS), 1)
+print(f"    at q=0: joint offset {np.exp(_i) - 1:.4f} against the measured {np.exp(_im) - 1:.4f}"
+      f"  ->  {(np.exp(_i) - 1) / (np.exp(_im) - 1):.2f}x")
+print(f"    band-mean: joint {100 * (RJ - 1).mean():.3f}%  measured {100 * (MEAS - 1).mean():.3f}%"
+      f"  ->  {(RJ - 1).mean() / (MEAS - 1).mean():.2f}x")
+print(f"    the two channels summed ALONE (cc66.48's reading): "
+      f"{100 * ((RW - 1).mean() + (RM - 1).mean()):.3f}%"
+      f"  ->  {((RW - 1).mean() + (RM - 1).mean()) / (MEAS - 1).mean():.2f}x")
