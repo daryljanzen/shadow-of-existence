@@ -5254,3 +5254,41 @@ midway, finally at $50$ modes, and the launcher became gap-driven. ⇒ **The ban
 it reconstructs each slice's span from its filename and asserts the spans tile $[0, 2547)$ with no gap
 and no overlap, rather than asserting a fixed step — a check on the SUM instead of on the bookkeeping
 convention, which is what makes re-slicing midway verifiable rather than trusted.**
+
+## `cc66.50` (`r6993`) — THE EXCESS DECELERATES, AND THE FIRST POSITIVE SEARCH RETURNS EMPTY
+
+*Path: **hierarchy** throughout. Banks `r6941_fine_*`, `r6959_eta_*`, `r6959_nswap_*`, `r6975_mix_*`,
+`r6983_joint_*`; receipt
+`P15_the_excess_decelerates_and_nothing_measured_in_this_arm_carries_its_wavenumber_dependence.py`,
+**22 gates**. ⛔ Nothing is RUN: every number is read from banks on disk, which is the order's ⓸.*
+
+**⓷ FIRST, AND THE INVERSION IS THE METHOD.** ⓷ asks whether the statistic's $q$-dependence belongs to
+the effect or the anchoring — a question about the INSTRUMENT, whose answer is what ⓵'s pre-registration
+must write its tolerances on. ✔ Six injected forms, two with a **scale** in them, recover to $1.3$ per
+cent. ⚠ But the per-band bias swings about one per cent and the six forms agree on it seven times more
+closely, so it is fixed: ***a constant contrast reads as a wobble***, and band ordering at the per-cent
+level is the instrument. ⛔ **The median envelope is excluded with its mechanism** — it reads $1.49$
+against the mean's $0.44$ and would have been the headline, but it does not move with its own window,
+because at high $q$ the running median collapses onto the curve itself ($3.6$ per cent from it against
+the mean's $14$). ✔ The rise survives the mean envelope at $0.44/0.44/0.40$. ⇒ **The rise is real; the
+wobble is not.**
+
+**⓵ AND THE SHAPE EXCLUDES THE PARAMETRISATION THIS SECTOR QUOTES.** At the pre-registered
+$\sigma = 0.013$: ⛔ **a rise linear in $q^{2}$ is EXCLUDED** at $\chi^{2}/\nu = 4.66$, the only one of
+six — ***and it is the form `cc66.47`, `cc66.48` and `cc66.49` all quote their variation statistic in***.
+The excess **decelerates**. The concave family all fit and **none is preferred** ($\Delta\chi^{2}=0.43$
+against a bar of $4$); both pre-registered non-separations held; **no scale is resolved**, and the rule as
+written caught this seat's own code, which had asked only that the central value be inside. ⚠ And the rise
+is a **preference, not an exclusion of flatness** — $\Delta\chi^{2}=6.0$–$10.4$ over a constant whose own
+$\chi^{2}/\nu=2.03$ is under the exclusion bar.
+
+**⓶ AND THE FILTER'S FIRST APPLICATION RETURNS EMPTY.** The target's departure grows by $G=3.55$ with
+negative curvature. Every candidate already measured fails the growth tooth: six source terms
+($0.54$–$1.00$), the dipole-to-monopole ratio ($1.08$), and all three channels — window $0.55$, term mix
+$1.53$, the pair $1.27$. ⚠ And the order's named candidate **disagrees with the register**: recorded as
+two per cent above the control and rising, it reads fourteen per cent **below** and flat on the hierarchy
+path. *Which quantity the register measured is owed before that candidate is closed.*
+
+⇒ ***The useful form of the empty result: the carrier is not among the things this sector has already
+measured.*** *That is a statement about the list searched, and the list is now written down with a number
+beside each entry, which is what makes the next one cheap.*

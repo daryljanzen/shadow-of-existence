@@ -3713,3 +3713,112 @@ P15 page all regenerated. Fast job green at this seat, 107 gates.
    two of three runs and at $534$ s — $89$ per cent of it — on the third, which is the plain
    undeclared-margin class the $900$ s declaration on `P15_the_symmetric_comparison_…` was written
    for.* **I have declared no budget and touched no tolerance.** Details on PR #122.
+
+---
+
+# ⛭⛭⛭ cc66.50 — `r6993` FILLED: THE EXCESS DECELERATES, WHICH EXCLUDES THE FORM WE ALL QUOTE; AND THE FIRST POSITIVE SEARCH RETURNS EMPTY
+
+**The redirect is accepted and it was right.** I had written the next object as *what sets the sizes*.
+Your argument — a shape refutation is not closed by any account of sizes, because a correct size still
+leaves a flat response against one that varies — is correct, and ⓵ below makes it sharper than either of
+us had it.
+
+## ⓷ FIRST, AND THE INVERSION IS THE METHOD
+
+⓷ asks whether the $q$-dependence belongs to the effect or the anchoring. *That is a question about the
+INSTRUMENT, and its answer is what ⓵'s pre-registration must write its tolerances on — the alternative is
+a guessed resolution, which is what my own `cc66.47` lesson is about.* So the control ran first.
+
+* ✔ **A known $q$-dependence reads back**, over six injected forms including two carrying a **scale** —
+  worst error $1.3$ per cent. The filter can see the shapes it filters on.
+* ⚠ **But the estimator manufactures band-to-band structure.** Its per-band bias swings about one per
+  cent and the six forms agree on it seven times more closely, so it is fixed: ***a constant contrast
+  reads as a wobble.*** ⇒ **Band ordering at the per-cent level is the instrument** — and the excess's own
+  wobble is exactly that size, which is why ⓵ judges monotonicity on the rise and not the ordering.
+* ⛔ **And the median envelope would have been this delivery's headline.** It reads a variation of $1.49$
+  against the mean envelope's $0.44$ — taken at face value, the filter is anchoring-dependent and your
+  premise is unsafe. ***The tell is that it does not move with its own window***: the last band reads the
+  same to seven figures at two smoothing scales. At high $q$ the running median collapses onto the curve
+  itself, within $3.6$ per cent of it against the mean's $14$, because the median of a locally monotone
+  stretch is its central value whatever the window. **Excluded with its mechanism, not with its number.**
+* ✔ The rise survives the mean envelope at $0.44/0.44/0.40$. ⇒ **The rise is real; the wobble is not.**
+
+## ⛔⛭⛭ ⓵ AND THE TARGET'S SHAPE EXCLUDES THE PARAMETRISATION EVERY RESULT IN THIS SECTOR IS WRITTEN IN
+
+| form | $\chi^{2}/\nu$ | |
+|---|---|---|
+| linear in $q^{2}$ | **4.66** | ⛔ **EXCLUDED** — the only one of six |
+| logarithm | 1.02 | fits |
+| power law | 0.54 | fits |
+| saturating exponential | 0.43 | fits |
+| turnover | 0.35 | fits, best |
+| constant | 2.03 | disfavoured, **not excluded** |
+
+⇒ ***THE EXCESS DECELERATES WITH WAVENUMBER.*** **And $q^{2}$ is the form `cc66.47`, `cc66.48` and
+`cc66.49` all quote their variation statistic in** — including the $0.442$ in your own order. ⌗ *The
+statistic remains a fine descriptive measure; what is excluded is reading it as the FORM. I do not think
+this touches any of those three results, but you own that call and I am flagging it rather than deciding
+it.*
+
+* **None of the concave family is preferred** — best-over-next $\Delta\chi^{2} = 0.43$ against the
+  pre-registered bar of $4$.
+* ✔ **Both pre-registered non-separations held**: power law against logarithm $3.42$, power law against
+  turnover $0.99$. *Named before they failed to separate.*
+* ⛔ **No scale is resolved.** Both scale-bearing forms put $q_0$ with its uncertainty on the bottom edge.
+  ⚠ *And the rule as written caught my own code: I had coded the test as "central value inside", where the
+  pre-registration said "inside WITH ITS UNCERTAINTY". The looser test passed the turnover. The rule as
+  written is what is applied, and the slip is in the receipt.*
+* ⚠ **The rise is a PREFERENCE over flatness, not an exclusion of it** — $\Delta\chi^{2} = 6.0$–$10.4$
+  over a constant whose own $\chi^{2}/\nu = 2.03$ sits under the exclusion bar. *Two different claims and
+  I am not merging them.*
+
+## ⛭⛭⛭ ⓶ AND THE FILTER'S FIRST APPLICATION RETURNS EMPTY
+
+The target's departure from unity grows by $G = 3.55$ across the range with negative curvature, so the
+filter has **two teeth**: grow, and decelerate.
+
+| candidate | $G$ | | candidate | $G$ |
+|---|---|---|---|---|
+| source, monopole | 0.95 | | dipole/monopole ratio | 1.08 |
+| source, Doppler | 1.00 | | channel: window | 0.55 |
+| source, early ISW | 0.54 | | channel: term mix | **1.53** |
+| source, full | 0.88 | | channel: the pair | 1.27 |
+
+⇒ ***Every candidate already measured in this arm fails the growth tooth, the largest reaching less than
+half.*** **So the carrier is not among the things this sector has measured** — a statement about the list
+searched, and the list is now written down with a number beside each entry, which is what makes the next
+candidate cheap.
+
+⌗ *A methodological note, since it changes what the filter is: I first used the sector's own
+$|{\rm slope}\times\langle q^{2}\rangle|/|{\rm intercept}|$ and it is **not comparable across
+candidates** — it divides by $\ln r$ at $q=0$, so a candidate at $r\simeq0.78$ is divided by $0.25$ where
+the excess at $1.04$ is divided by $0.04$, and the same shape reads twenty times larger at the lower
+level. Fine for one quantity near unity, wrong for a filter. The growth of the departure is scale-free and
+is what "carries the dependence" actually means.*
+
+## ⚠ ONE THING FOR YOU, NOT A FINDING
+
+**The order's named candidate disagrees with the register.** `THE_REGISTER` records the
+dipole-to-monopole ratio as *two per cent above the control's and rising with $q$*. Read from `r6959`'s
+profiles on the **hierarchy** path, at each arm's own visibility peak, the amplitude ratio sits
+**fourteen per cent BELOW** the control and is flat ($G = 0.97$, curvature positive).
+
+⛔ *I am not calling the register wrong.* The register's reading may be the **line-of-sight** path, or a
+different definition — this receipt reads only the hierarchy path. ⇒ **Which quantity that number
+measured is owed before the candidate is closed**, and it is yours to place.
+
+## WHAT IS ON THE BRANCH
+
+Receipt `P15_the_excess_decelerates_and_nothing_measured_in_this_arm_carries_its_wavenumber_dependence.py`
+— three parts, **22 gates**, `GATES: ALL PASS`, path provenance in its header. ⛔ **Nothing was run**: the
+order's ⓸, and every number is read from banks already on disk, which is what makes a filter cheaper than
+the runs it exists to save. `r6993_directions/PREDICTION.md` was committed **before any fit**, with its
+tolerances on the resolution ⓷ measured. INDEX row, `PO13_WORKING_STATE`, `CORPUS_MAP`, `THE_REGISTER`'s
+PO-56 clause, `regen_frontier.py`'s PO-56 row re-run, appendices and the P15 page regenerated.
+
+⌗ **And a merge thing you should see**, unrelated to the physics: your merge of my branch at `76b78e72`
+resolved the `THE_REGISTER` PO-23 conflict by taking my older side, which **dropped node 60's `r6990` and
+`r6991` register content** — and `r6993` was then written on top of the reverted row. My branch still
+carried the full text, so I have restored it in this merge and it flows back with this PR. *Nothing is
+lost. It is the same class as the `PO-65` you just opened: a resolution that reverts work silently, where
+nothing downstream reads as wrong afterwards.*
