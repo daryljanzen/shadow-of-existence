@@ -368,6 +368,46 @@ REGISTRY = [
      "corrected r6967 on node 60's r6966; the momentum-side operator is an inverted quartic, both ends "
      "are limit-circle, the deficiency indices are (2,2) and it is not essentially self-adjoint -- the "
      "earlier count came from a residual test whose discriminating order equalled the effect's order"),
+    # ⛔⛭ r6973 (66, on node 60's r6972).  "THE TRACE CARRIES A MOMENTUM-WEIGHTED CUBIC STRUCTURE, THE
+    # MOMENTUM-SIDE OPERATOR IS AN INVERTED QUARTIC WITH DEFICIENCY (2,2), AND THE MEASURE ARGUMENT
+    # CLOSES THE CRITERION ON IT."  `r6966` established it, `r6967` landed it, `r6970` built two
+    # deficiency cases on the sign of its coupling ratio.  ** None of it is a property of the trace
+    # operator. **  The structure is present or absent according to how the spatial metric is
+    # parametrised, and the construction's own separation of shear from volume fixes the parametrisation:
+    # only in the volume-preserving one does the extrinsic-curvature invariant lose its shear-volume
+    # cross term and the volume element reduce to the scale factor's cube, and THERE the cubic term of
+    # the shear's kinetic trace is the trace of a commutator and vanishes identically, at every level.
+    #   ⇒ *** SO THE OPERATOR CONTENT IS THREE STRUCTURES, NOT FOUR; THERE IS NO FIRST-ORDER TERM FOR A
+    #     GAUGE TO REMOVE, NO QUARTIC FOR IT TO LEAVE BEHIND, AND NO COUPLING RATIO TO READ A SIGN OFF. ***
+    # ⌗ ** AND THE LESSON IS AN EIGHTH FACE OF THE STANDING ONE: THE DOMAIN OF A TRUNCATION. **  A
+    #   redefinition of the field by its own square moves the two cubic couplings against each other
+    #   while GENERATING quartics, so the cubic truncation is not closed under it and their ratio takes
+    #   every value, both signs included.  *A count read off a truncation that the theory's own
+    #   redefinitions do not preserve is a fact about where the expansion was cut.*  The tell is
+    #   checkable in advance: the quantity moves under a redefinition that generates terms you dropped.
+    # ⌗ ** WHAT SURVIVES, ONE BY ONE. **  The cubic itself: the curvature's, non-zero, an overlap that is
+    #   a determinant times the volume of the section, so the null equation really is of third order.
+    #   The invariant combination the truncation does fix, which is non-zero.  The quadratic-content
+    #   closure, untouched: an inverted oscillator with empty point spectrum, and it never used the
+    #   absent structure.  And the count at the surviving content, freshly taken: equal indices, so a
+    #   self-adjoint realisation exists, and one monotone invariant rather than two.
+    ("the-trace-carries-a-momentum-weighted-cubic-and-the-operator-is-an-inverted-quartic",
+     # ⌗ Asserted forms only, on the lesson the first entry of this pair taught twice over.
+     r"(?:\\emph\{an inverted\s+quartic\}"
+     r"|is an inverted quartic"
+     r"|leaves an inverted quartic"
+     r"|the deficiency indices are \$?\(2,2\)\$?"
+     r"|deficiency `\(2,2\)`"
+     r"|both ends are limit-circle, the\s*\n?deficiency indices are"
+     r"|cubic's kinetic vertex supplies)",
+     r"(?:r6972|r6973|withdrawn|WITHDRAWN|corrected|CORRECTED"
+     r"|split artefact|parametrisation artefact|volume-preserving"
+     r"|trace of a commutator|three structures"
+     r"|truncation|scheme|does not survive|is wrong)",
+     "corrected r6973 on node 60's r6972; the momentum-weighted cubic structure is a parametrisation "
+     "artefact -- it vanishes identically in the volume-preserving split the construction's own "
+     "separation of shear from volume requires -- so the inverted quartic, its (2,2) count and the "
+     "measure closure taken on it are properties of a truncation and not of the trace operator"),
 ]
 
 SKIP = ('appendix_receipts',)
@@ -502,6 +542,16 @@ HISTORICAL = {
 # a pattern that is broken.  Each entry therefore carries a KNOWN-POSITIVE string, taken verbatim
 # from the text the withdrawal removed, and this gate fails if any pattern stops matching its own.
 POSITIVES = {
+    # ⛔ r6973 on node 60's r6972: the paper's own sentences as `r6967` and `r6971` landed them, and
+    #   the reply's summary form.  *All three are the claim ASSERTED.*
+    "the-trace-carries-a-momentum-weighted-cubic-and-the-operator-is-an-inverted-quartic": [
+        "removes\nthe first-order term exactly and leaves a plain Schr\u00f6dinger operator on the whole line: "
+        "\\emph{an inverted\nquartic}, its quartic coefficient negative whatever the sign of the "
+        "first-order vertex",
+        "both ends are limit-circle, the\ndeficiency indices are $(2,2)$, and a null solution does exist",
+        "the excitation operators the\ncubic's kinetic vertex supplies are $p^{2}$ and "
+        "$\\mathrm{i}\\,p\\,(\\mathrm{d}/\\mathrm{d}p)(p\\,\\cdot)$",
+    ],
     # ⛔ r6967 on node 60's r6966: the paper's own sentence as `r6965` landed it, and the reply's
     #   own summary form.  *Both are the claim ASSERTED, which is what this pattern is for.*
     "the-momentum-side-operator-is-essentially-self-adjoint-with-deficiency-zero": [

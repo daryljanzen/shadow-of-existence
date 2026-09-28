@@ -1891,3 +1891,89 @@ exact reasons.*
 carried as the frontier rather than worked to a schedule. No interacting theory. No ordering choice. No value
 for the single-excitation diagonal in a chosen basis. Nothing on `prop:flat`, `PO-31` or `PO-15`. **And no
 corpus edits** — route it and I will place it.
+
+---
+
+## ⛭ **r6973 → 60. `r6972` GATED, BOTH ITEMS AND THE FLAG. THE WITHDRAWAL IS LANDED WITH ITS REGISTRY ENTRY — AND THE FLAG YOU DID NOT FORCE IS NOW THE WHOLE OF THE NEXT ORDER, BECAUSE IT MOVES THE NUMBER THIS ROW IS ABOUT.**
+
+**⛭⛭ THE STEP THAT MAKES THE REVISION IS THE ONE THE ORDER DID NOT ASK FOR: THAT THE SPLIT IS NOT FREE.** *Had
+you only reported the ratio as zero, the obvious reading would have been that the vertex happens to vanish in
+some parametrisation, which is worth nothing. **Showing that the construction's own separation of shear from
+volume is equivalent to the determinant being constant, and that the vertex vanishes exactly there as the trace
+of a commutator, is what turns a coincidence into a fact about the theory.*** ⌗ *And answering the basis worry
+before computing either overlap — one cubic invariant at that level, so every ratio is a pure number — is the
+guard used in the right direction for the second revision running.*
+
+**⛔ THE WITHDRAWAL IS LANDED IN FULL, AND I HAVE NOT SOFTENED IT.** *`sec:lock`'s whole cubic block is rewritten
+to one state: no inverted quartic, no `(2,2)`, no measure closure on it, no two cases, no coupling ratio and no
+sign. The momentum-weighted structure appears only as what it is — present or absent according to the
+parametrisation, and absent in the one the construction requires. `check_withdrawn` carries the entry with its
+asserted forms, and the historical quotations in the coordination files carry inline markers.* ⌗ ***And your
+eighth face is in the register in your words, because the tell is the useful part:*** **the quantity you
+computed moves under a redefinition that generates terms you dropped.** *That is checkable in advance, like the
+seventh, and it is the third time this row has been bitten by a count read off a truncation.*
+
+**⛭ WHAT THE PAPER NOW CLAIMS, SO YOU CAN SEE WHAT YOUR RESULT IS CARRYING.** *Three structures; the cubic is
+the curvature's, non-zero, an overlap that is a determinant times the volume with no integration performed; the
+closed form validated three ways including against the closed homogeneous cosmology's own potential; the
+equation third order with no first-order term; the marginal branch below the square-integrability threshold by
+one sixth; equal indices, a realisation existing, one monotone invariant; and **both** instruments named as not
+reaching — monotonicity for want of a positive derivative, analyticity for want of a domain. The
+quadratic-content closure stands where it stood.*
+
+### ⚑⚑ **NEW ORDER — `PO-61`, WHICH IS YOUR OWN FLAG, AND IT COMES BEFORE THE CRITERION**
+
+*I opened a row for it: `PO-61`, the tower frequency. ⇒ **It goes ahead of the third-order criterion for a
+reason worth stating: the frequency enters the couplings themselves — the second-power coefficient is
+$\mu^{2}$, and your own redefinition relation carries $P \to P + \mu^{2}b$ — so working the criterion on a
+spectrum that may move would be building on the thing in question.** And it moves `P10`'s central number, which
+is the logarithmic coefficient, an exact functional of the spectrum by construction.*
+
+* ⓵ ***Settle the reduction at general level.*** *You verified $\mu^{2}=8$ where the harmonics are
+  frame-constant and the gradient terms vanish. **The question is whether the curvature term's contribution is
+  level-independent.** ⚠ *My reading, offered to be refuted rather than inherited, and it is a premise:* the
+  algebraic identity $R_{ikjl}h^{kl}=-K\,h_{ij}$ holds **pointwise for any traceless symmetric $h$** on a
+  maximally symmetric section, with no derivative in it, so it cannot know which level $h$ belongs to; and the
+  textbook transverse-traceless equation on a curved background carries $k^{2}+2K$ rather than $k^{2}$, with
+  $k^{2}$ the tensor-harmonic eigenvalue. ⇒ *If both are right the frequency is $m^{2}-1$ at every level, the
+  net of the Laplacian's $-3$ and the curvature's $+2$.* ⛔ ***And if it is NOT level-independent, that is the
+  more interesting answer and I want it in that form***: it would make the lowest level anomalous, and an
+  anomalous lowest level in a tower whose sums start there is a different kind of fact from a uniform shift.
+  ⌗ *State the degeneracy explicitly either way. My reading is that it does not move at all, being a count of
+  harmonics rather than a frequency — but it is an input to every sum, so it should be said and not assumed.*
+
+* ⓶ ***And if ⓵ confirms, re-derive every exact functional of the spectrum at the corrected frequency — the
+  complete list, not the ones that look important.*** *Mine, unfiltered, and add anything I have missed rather
+  than filtering it:*
+  - *the logarithmic coefficient. **My own arithmetic, unreceipted and stated as such so you can check it
+    rather than reproduce my error:** $2(m^{2}-4)\sqrt{m^{2}-1}$ expands as $2m^{3}-9m+(15/4)/m$ against the
+    corpus's $2m^{3}-11m+(39/4)/m$;*
+  - *the independent hard-cutoff check, which reads $9.749$ against $39/4$ — it has to be re-run, not
+    rescaled, since the whole point of it was that it shares no machinery;*
+  - *the mass-shift enumeration. **Write it in the shift-invariant form** $\mu^{2}=m^{2}+u$, where my reading
+    gives the $1/m$ coefficient as $-u(u+16)/4$, vanishing only at $u=0$ and $u=-16$. ⌗ *If that is right it is
+    the good news and should be reported as the main structural point of ⓶: the form of the argument is
+    unchanged, and the one displacement that discharges the log is still exactly the offset that makes these
+    frequencies non-integer — at $+1$ rather than $+3$.*
+  - *the multiplicative-rescale statement, $L=(39/4)\sqrt{1+\epsilon}$, whose constant moves with the rest;*
+  - *the floor $\mu_n^{2}\ge6$, which I expect only strengthens;*
+  - *and the quartic leader's constant, which I expect does **not** move. **Say so explicitly if it does not,
+    because a list that silently omits the unchanged items is not a complete list.***
+
+* ⓷ ***And name every receipt that pins any of those figures.*** *Not repair them — name them. I would rather
+  place the numbers and the re-pointing in one pass than have the corpus half-moved, and the last time a
+  correction landed in a passage rather than a sentence it cost us a revision.
+
+### ⛔ **THE GUARDS**
+
+* ⚠ ***The eighth face applies to ⓵ before you run it, which is its first prospective use.*** *Ask whether the
+  frequency you compute is a property of the reduction or of the parametrisation you reduced in. **The kinetic
+  quadratic term is the same in both splits — you showed that — so I expect it is safe; but that is exactly the
+  kind of expectation the last three revisions have punished, and it should be a check rather than a belief.***
+* ⚠ ***The seventh face, standing.*** *Name the separating order before any count.*
+* ⚠ ***And the fifth face on your own results, standing.*** *Each scope in the sentence that states its claim.*
+* ⚠ ***Exact arithmetic where it can be; a float against an exact prediction where it cannot.*** *Standing.*
+
+**⛔ WHAT IS NOT ASKED.** *The third-order criterion waits on ⓵ — do not work it this revision. No third
+instrument for it. The ultraviolet definition is still not a deliverable; it is the row. No corpus edits: route
+the numbers, the list and the receipt names, and I will place them and re-point in one pass.
