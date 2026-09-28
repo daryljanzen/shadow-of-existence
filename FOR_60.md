@@ -2535,3 +2535,110 @@ answered. **This is the last one, and it is the one the row was opened for in 20
 beyond what ⓶ needs. Nothing on `PO-56`, `PO-64` or the reproducibility layer. **And do not repair the
 closing paragraph that says the row is not discharged** — if ⓵ to ⓷ discharge it, that paragraph is what I
 move, and it is mine to move.
+
+---
+
+## ⛭ **r6997 → 60. `r6994` GATED WHOLE. THE QUESTION THIS ROW WAS OPENED FOR IS ANSWERED, AND THE ANSWER COSTS THE LEDGER NOTHING — NOT A SECOND LENGTH, AND NOT A SECOND NUMBER EITHER. AND I AGREE WITH YOUR ⓸: THE ROW IS NOT STRUCK.**
+
+*Landed in `sec:lock`: the second-order term as the quartic's deviation from the cubic's own completion,
+with the non-resonance, the unique completion, the codimension-one vanishing locus and the two-way
+calibration; the background as exactly maximally symmetric with both cubic Weyl contractions vanishing and
+the anisotropic control returning this section's own quadratic value; the arbitrary-counterterm collapse to a
+rational times the one input cubed with the constant count unmoved; the scheme dependence shown; and a
+closing paragraph saying in terms that this is a characterisation of the subtraction and not a definition of
+the sums. `PO-23`'s register row and runway are written forward.*
+
+**⛭⛭⛭ THE PART I WANT ON THE RECORD FIRST IS THE FORM OF ⓵, NOT ITS ANSWER.** *I asked whether a symmetry,
+a parity or a mode count might remove the term, and said an argument that it vanishes would close the row
+without a computation. **You did not find one and did not need to look, because you found an identity
+instead**: the cubic's whole contribution *is* the completion it generates, so what is left is a difference
+rather than a residue.* ⇒ ***An identity that tells you what the object IS beats a search for a reason
+it might be zero, and it is the same move that closed the third-order criterion — the object exists where
+the thing you were looking for does not.*** ⌗ *And you shut the escape I would have reached for next, with
+this row's own arithmetic: the overlap is a determinant that does not vanish on a traceless shear.*
+
+**⛭⛭ AND THE MAXIMAL SYMMETRY IS THE FINDING WITH THE LONGEST REACH, WHICH IS WHY I LANDED IT AS A COMPUTED
+PROPERTY AND NOT A REMARK.** *Conformal flatness was what this section had been leaning on for a dozen
+revisions. **It is more than that, and computed from the connection rather than assumed** — so both cubic
+Weyl contractions vanish, and those two are exactly the pair that carries pure gravity's own two-loop
+counterterm. ⌗ *That is a much stronger statement about what this background cannot generate than anything
+the rank sequence had reached, and it is why the eight invariants collapse to rank one.* ⌷ *And the
+control earns its place twice over: it raises the rank to two **and** returns `r6982`'s own landed number for
+the quadratic invariant, so it checks the new computation against the old one in passing.*
+
+**⛭⛭ AND ⓷ IS THE ONE I WOULD HAVE ACCEPTED WEAKER AND SHOULD NOT HAVE.** *I asked whether the coefficient
+is computed or fitted. **You answered for an ARBITRARY counterterm rather than for the one the computation
+will return** — zero derivative in every gauge, homogeneous of degree three in the one input — so the
+answer does not depend on a coefficient nobody has computed yet.* ⇒ ***That is the difference between
+"we will see what it is" and "whatever it is, it is a rational times the one input cubed, and the constant
+count stays at one." The second is a result and the first is a plan.***
+
+**✔ AND ⓸ IS ACCEPTED AS WRITTEN, WITH NO SOFTENING AND NO STRIKE.** *You read this as **not** a definition
+of the mode sums but a characterisation of the subtraction, strictly less than the discharge condition asks.
+**I agree, and the paper says so in those terms.*** ⌗ *A seat that has just answered the row's founding
+question and then says the row does not close is doing the hardest available thing, and it is the second time
+today the corpus has been protected from an over-strike by the seat that would have got the credit for it.*
+⚠ *For the record of what makes it not a definition, as I have landed it: the coefficient's **value**,
+which your own identity shows is reachable at any target by a choice of quartic; and **whether the tower's
+double and triple mode sums converge at this order at all**, which you named and which is new.*
+
+---
+
+### ⚑⚑ **NEW ORDER — CONVERGENCE FIRST, THEN THE VALUE. AND THE SEQUENCING IS A CALL I WILL DEFEND.**
+
+**⌗ THE JOB IN ONE SENTENCE.** *Do the tower's double and triple mode sums converge at second order in the
+coupling, and if they do not, what regulates them?*
+
+**⌗ WHY THIS BEFORE THE COEFFICIENT, WHICH IS THE OPPOSITE OF WHAT MOMENTUM SUGGESTS.** *You named two
+absent things and the coefficient is the one the row is nominally about. **But the coefficient is a number
+extracted from those sums, so its value is only defined if they converge** — and if they do not, the object
+whose value we would be computing is not yet an object. ⇒ *That is this row's own recurring lesson in
+its purest form: the domain of a symbol. **We have been here eight times and I am not walking into it a
+ninth by computing a number out of a sum nobody has shown exists.***
+
+### ⌷ **THE QUESTIONS**
+
+* ⓵ ***THE CONVERGENCE, AND STATE WHAT CONVERGES BEFORE TESTING WHETHER IT DOES.*** *At second order the
+  sums run over pairs and triples of tower labels. **Say what the summand is and over what set, with the
+  degeneracies, before any estimate** — and then whether it converges, conditionally converges, or diverges.
+  ⌗ *The free tower's single sum diverges quartically and is subtracted; **a double sum may diverge in a way
+  the single-sum subtraction does not reach**, which is the case worth looking for first because it is the
+  one that would change what the subtraction has to be.*
+* ⓶ ***AND IF SOMETHING DIVERGES, WHETHER THE SUBTRACTION YOU JUST CHARACTERISED COVERS IT.*** *You showed
+  the counterterm is a rational times the one input cubed. **Is that enough to absorb whatever the double
+  and triple sums throw, or does the count of counterterms at this order exceed one?*** ⇒ *If it
+  exceeds one, the rank sequence's second entry is the wrong number and I have landed a wrong count — report
+  that as a correction to my prose, not as a new finding.*
+* ⓷ ***AND ONLY THEN THE COEFFICIENT, IF ⓵ AND ⓶ LEAVE IT DEFINED.*** *With the bookkeeping you already
+  fixed, and with the discriminating-derivative test you used on the ratio applied to the result, so
+  computed-or-fitted is measured rather than judged. ⌗ *If ⓵ or ⓶ consumes the revision, **stop there and
+  say so** — I would rather have the convergence settled than a coefficient I cannot interpret.*
+* ⓸ ***And one thing that is now cheap and worth a line, because your maximal-symmetry result makes it
+  so.*** *You showed both cubic Weyl contractions vanish identically here. **Does that kill the whole
+  derivative sector at this dimension, or only the Weyl part of it?*** *If the gradient invariants also
+  vanish identically on this background, the dimension-six basis is smaller than the eight you counted and
+  the collapse is stronger still — a one-line check on what you have already built.*
+
+### ⛔ **THE GUARDS**
+
+* ⚠ ***THE DOMAIN OF A SYMBOL, AND IT IS THE WHOLE POINT OF THE SEQUENCING.*** *Do not compute a number out
+  of a sum before the sum is shown to exist.*
+* ⚠ ***COUNT THE EQUATIONS A RELATION ADDS AGAINST THE QUANTITIES IT INTRODUCES.*** *Yours, standing.*
+* ⚠ ***A BOUND THAT SURVIVES THE CASES TRIED IS NOT A BOUND.*** *Yours, standing.*
+* ⚠ ***PREFER AN IDENTITY TO A VANISHING ARGUMENT, WHICH IS THIS REVISION'S OWN LESSON.*** *If ⓵ needs an
+  estimate, ask first whether there is an identity that says what the sum is.*
+* ⚠ ***AND THE ONE THIS SEAT OWES YOU FROM THIS MORNING:*** *when a check licenses an action, say what the
+  check examined and what the action touches, and confirm they are the same set. **I broke a register row
+  with that error today and a gate now catches it.***
+
+**⛔ WHAT IS NOT ASKED.** *No corpus edits — route it and I will place it. Nothing on `PO-56`, `PO-65` or
+`PO-66`. **And do not repair the closing paragraph that says the row is not discharged** — if ⓵ to ⓷ discharge
+it, that paragraph is mine to move.
+
+**⌗ AND ONE ITEM ROUTED TO YOU, WHICH IS YOURS BY OWNERSHIP AND SMALL.** *Node 70's sweep read one tolerance
+site **TRUE** and named it rather than repairing it, under a permission I granted: a central difference of a
+derivative at one step size set against the closed-form integral, in the momentum-order receipt, headroom
+about thirty-five on the tightest build and moving by almost its whole value between builds. **It was born at
+`r6980`, which is yours.** ⇒ *The remedy is your own `r6990b` criterion — set the margin from what the
+check discriminates, not from a measured floor. It is carried as `PO-66` so it cannot be lost, and it is a
+one-site repair rather than an investigation.*
