@@ -3079,3 +3079,74 @@ The coefficient is a polynomial in `w` of degree **exactly** 1, hence entire, an
 The cause is the gate doing its job rather than a defect in any tree: **the runner installs `numpy` unpinned and PyPI now serves `2.4.6`, while `receipts/ENV_FINGERPRINT.txt` records the sweep as run on `2.4.4`.** My container was reinstalled this morning and picked up `2.4.6` too, so my local fast job reproduces `main`'s failure **identically, on a byte-identical fingerprint file** — which is how I know it is not mine. Every other one of the 107 gates, all ten generators and both lints are green on this tree.
 
 ⛔ **And I am not fixing it here, for the reason the file itself states:** the remedy is `scripts/sweep_tolerances.py` run **whole**, over the three builds, with what it flags repaired or named, and *only then* the fingerprint refreshed — *"a fingerprint refreshed without the sweep is a stamp moved without the prose it stands for, which is the defect `PO-60` exists about, one level up."* That is node 70's row and three instrumented suite runs; it is neither in my order nor mine to widen this revision with. ⌗ *And it is not a flake, so a re-run is not worth spending: it is deterministic in the installed version and will stay red until the sweep is run or the install is pinned.*
+
+---
+
+## ⛭⛭⛭ `r6982` — **`PO-23`: THE PIECES DO DETERMINE THE SHAPE, AND THE SHAPE IS NOT THE ONE THE ROW HAS BEEN CARRYING. THE OBJECT IS A RANK SEQUENCE, THE LEDGER IS AT STAKE AT DIMENSION SIX AND NOT AT DIMENSION FOUR, AND YOUR SUSPECTED PREMISE IS FALSE — IT IS TWO QUESTIONS, AND THE SECOND IS NOT CLOSER BUT FINISHED.**
+
+**Your suspicion first, because it is the load-bearing one, and it is right.** ⓶ separates — but not where you put it, and the separation is sharper than "two questions": **it is the power of the scale factor, which is the same counting as the operator dimension.**
+
+> A dimension-$2k$ term contributes an energy $c_k a^{3-2k}$ with $[c_k] = L^{2k-4}$; writing $c_k = f\,\ell_P^{2k-4}$ gives $a^{-1}(\ell_P/a)^j$ with **$j = 2k-4$ exactly**. So `j = 0` **is** dimension four, `j = 2` **is** dimension six.
+
+One vertex pair costs $\ell_P^2$, so the interaction enters at `j ≥ 2` and **cannot populate `j = 0` at any order**; the free tower populates `j = 0` alone, because its large-label weight carries no logarithm of the label (checked, not quoted — `m⁵` times the expansion is a polynomial, and the test discriminates: a weight that *does* carry one returns it). ⇒ **The narrower half — whether the coefficient the free spectrum settles survives — lives at a power no order of the coupling reaches, so it survives *unconditionally* and not conditionally.** It is not closer. **It is finished.** ⌗ *And the first half is not one question either: it is indexed by `j = 2, 4, …`, which is to say by operator dimension, and only its first entry is a thing this framework can be asked about.*
+
+### ⓵ᵃ And the sharpening that reframes the row is dimensional — the eighth face on a sentence `sec:lock` has carried as one claim
+
+The row carries *"a curvature-squared coupling is not an entry in this framework's ledger."* **That is two claims, and counting powers of length separates them:**
+
+| functional | dimension | its coefficient carries |
+|---|---|---|
+| `∫√g` | `L⁴` | `L⁻⁴` — a scale |
+| `∫√g R` | `L²` | `L⁻²` — a scale |
+| `∫√g R²`, `∫√g C²` | `L⁰` | **`L⁰` — dimensionless** |
+| `∫√g R³`, `∫√g (∇R)²` | `L⁻²` | **`L²` — a second physical length** |
+
+⇒ **At dimension four the ledger's single-scale claim was never what the ultraviolet threatened.** Every candidate entry there is dimensionless; what is at stake is the *separate* no-free-parameter claim — and the row already has one instance of that settled, since the shear's `C²` coefficient is `2 × 1/120 = 1/60`, a count of propagating modes rather than a fitted number. ⌗ *Absence from a list is a property of the list's presentation; the dimension of the coefficient is the object's. The two were held in one sentence.*
+
+**⛔ And at dimension six every coefficient carries `L²` — a second physical length, which is exactly what the ledger forbids and what `ℓ_P`-as-a-gauge-combination was asserted to avoid.**
+
+### ⓵ᵇ The rank at dimension four, computed in all three regimes
+
+Everything below is computed from the metric by Christoffel symbols, in exact arithmetic. ⌗ *The separating order before any count: each rank is the rank of an exact rational coefficient matrix over monomials in the jet variables, so a relation either shows or does not — **the test's resolution is zero**, and one missing relation is the whole difference between any two of these numbers.*
+
+* `C² = 0` identically on a closed Friedmann geometry for **every** `a(T)` — one relation, and an identity in the scale factor rather than an evaluation on a class.
+* ⛭ **And the control, without which that zero is uninterpretable:** the *same* combination on an anisotropic Bianchi-I metric with three different rates returns `28/3T⁴`, **not** zero. So the combination discriminates and the Friedmann vanishing is the geometry's, not the code's.
+* Gauss–Bonnet is an exact total derivative here, `√g(R² − 4Ric² + Riem²) = 24 d(ȧ³/3 + ȧ)/dT` — your claim, verified rather than inherited.
+* **Pointwise on a general scale factor the three quadratic invariants have rank 2 of 3**, and adjoining the Gauss–Bonnet combination leaves it at 2 — so that combination is already inside the *pointwise* span, and the further reduction to one functional is the total-derivative step and not a pointwise identity.
+* On the one-parameter family the rank **as functionals** is 1; the anomaly opens it by the exact Gram identity `I₂I₀ − I₁² = I₀²Var(R) = w₁w₂(R₁−R₂)²`, zero iff `R` is a.e. constant.
+
+⇒ **The dimension-four entry is 1 / 2 / 3** in the three regimes, and by the table above all three coefficients are dimensionless.
+
+### ⓵ᶜ ⛭⛭ And at dimension six the degeneracy does not exist at all
+
+Five dimension-six scalars — `R³`, `R·Ric²`, `Ric³`, `(∇R)²`, `R□R` — on a general scale factor are **pointwise independent: rank 5 of 5, no relation whatever**, while on the one-parameter family the two derivative ones vanish identically and the other three are pure powers of `α⁻⁶`, rank 1.
+
+⇒ ***THE COLLAPSE 5 → 1 AT DIMENSION SIX IS ENTIRELY THE ONE-PARAMETER EVALUATION.*** At dimension four the collapse was an identity in `a` — conformal flatness — which you proved descends to the quantized sector as an operator relation. **At dimension six there is no such identity to descend.** The half of the argument that already failed under quantization is, at dimension six, *the whole of the collapse*. And the fixed-background argument buys strictly *less* at the higher dimension, not more: four loses one of three pointwise, six loses none of five.
+
+⚠ **What that count is a fact about, and I say it before I use it.** It is read off a **chosen five-element subset** of the dimension-six basis, so it is a fact about those five. **But it is a *lower bound* on the full basis's rank, and a lower bound is the direction the argument needs** — completing the basis can only raise it, so no completion can undo the conclusion. *Your hardest guard is discharged by monotonicity, not by hope.*
+
+### ⇒ ⓵ So what the object IS, and the definite question
+
+> **Defining the interacting tower consists of exhibiting the rank sequence `r₂ₖ` of the counterterm basis on the class the construction admits — which, since the scale factor is quantized, is *not* a fixed background — together with, at each dimension, the data that determines that many numbers.**
+
+The row holds the first two entries and both are computed here. And then:
+
+> ⛭⛭⛭ **THE DEFINITE QUESTION: does the interacting tower's divergence structure reach `j = 2` at all?**
+>
+> **If it does not, the ultraviolet definition is *finished*** — the subtractions are the quartic and the logarithm, both at `j = 0`, both with dimensionless coefficients, the single-scale ledger untouched, and the only residue is whether the two numbers are computed, as one of them already is.
+>
+> **If it does, the theory requires a coefficient carrying `L²`: a second physical length, which the ledger forbids. *That is a refutation and not a gap.***
+
+⇒ **So the pieces determine the shape, and what remains is one falsifiable question with a stake on both sides rather than a category.** ⛔ *And therefore the answer you offered as honest — "the object is not yet a question" — is **not** the one I return. It is a question, and both of its branches are consequential.*
+
+### ⛔ What is not determined, so the shape is not read as an answer
+
+Whether the `j ≥ 2` divergences exist at all — that is the question, not a result. The **full** dimension-six rank; mine is a lower bound. Whether the dimension-four coefficient other than `1/60` is computed. ⌗ *And the standing limitation, in the sentence that states the claim: the interacting content the row has is the cubic truncation, whose count `r6972` showed is the truncation's — so "the interaction enters at `j ≥ 2`" is a statement about vertex cost and not about that truncation.*
+
+⌗ *And one scope on my own separation, since `ℓ_P` is a gauge-combination and so the variable `ℓ_P/a` is a presentation: the correspondence I actually use is **power-of-`a` to operator-dimension**, fixed by the dimensional table alone, and that is the object's.*
+
+### What I did not do
+
+⛔ No fourth instrument, no re-derivation, no new truncation. ⛔ No corpus edit — **routed for you to place**, and the natural home is `sec:lock`, where the sentence *"a curvature-squared coupling is not an entry in this framework's ledger"* should become the two claims it is, and where the open item becomes the `j = 2` question rather than "the ultraviolet definition of the mode sums". ⛔ Nothing on `PO-56`, `PO-64` or the reproducibility layer.
+
+⌗ *`r6982`, 49 checks, rc = 0, 8 s, **no floats at all**; every invariant computed from the metric, every rank an exact rational rank, every dimension a count of powers of length, with a discriminating control on the one vanishing the argument leans on.*
