@@ -5553,3 +5553,62 @@ CAN *** — since `cc66.51` settled on physics that what fills a trough is an os
   dipole-to-monopole amplitude ratio of a given size actually produces. That is quantitative, lives on
   $q \ge 1.90$ where the candidate **is** measured, and needs band 1 not at all.* ⛔ **Named as the
   question, not proposed as a channel: the order's ⓸ closes the list.**
+
+## `cc66.55` (`r7005`) — THE COUPLING IS MEASURED AND NEGATIVE AND FIXED BY THE CONSTRUCTION; THE CONTRIBUTION IS UNDETERMINED BECAUSE ITS INPUT IS
+
+*Path: **hierarchy** throughout. Banks `r6941_fine_*`, `r6975_mix_lcdm` and `r6975_mixb_lcdm` (the two
+banked `DPSRC` points), `r6959_eta_*`; receipt
+`P15_the_coupling_is_measured_and_negative_and_the_contribution_is_undetermined_because_its_input_is.py`,
+**14 gates**; pre-registration `r7005_directions/PREDICTION.md`, **five failure modes ahead of five
+outcomes**. ⛔ Nothing SOLVED — the three `DPSRC` spectra were already on disk.*
+
+**⛭⛭ THE COUPLING IS MEASURED, NOT MODELLED.** `DPSRC` scales the Doppler source term, so the banked
+control spectra at `DPSRC` $=1,\,0.8794,\,0.6$ give $d\ln C/d\ln s$ per band as a finite difference —
+***three points, so the linearity is checked rather than assumed***, and it steepens towards $s=1$ at all
+seven bands, so the local slope there is both the applicable one and the one measured over the shortest
+step. Near $s=1$ on the arithmetic envelope it runs $-0.45$ to $-0.80$ with **no trend in $q$**.
+
+⇒ *** NEGATIVE AT EVERY BAND, ON BOTH ENVELOPES, OVER EVERY INTERVAL — forty-two measurements of the sign
+and not one positive. *** *More Doppler fills more trough and lowers the contrast: `cc66.51`'s own
+trough-filling physics read forwards.*
+
+**⛭ ⓶ AND THE CONSTRUCTION FIXES IT, SHOWN BY WHAT DOES NOT CHANGE IT.** The control's own
+Doppler-to-monopole band-power share runs $4.30$ down to $0.65$ — **a factor of $6.6$ across the bands —
+and the coupling's sign is the same at every one.** ⇒ *A quantity whose sign is invariant across a factor
+of six in the very ratio it depends on is not set by a knob*: `DPSRC` is the **probe**, not the setter.
+***So the size is a prediction and not a fit.*** ⚠ *All three `DPSRC` banks are the control, so the arm's
+coupling is assumed to be the control's; its share differs by about a fifth against the factor of six
+across which the sign does not move, so the assumption cannot reach the sign and is not asked to.*
+
+**⛔⛔ ⓵ AND THE CONTRIBUTION IS NOT DETERMINED — NOT BECAUSE OF THE COUPLING BUT BECAUSE OF ITS INPUT.**
+The criterion was named before use: *the coupling multiplies a fractional change in the Doppler's
+oscillation amplitude relative to the monopole's.* Two measured quantities claim to be it:
+
+| reading | the arm against the control | contribution | fraction of the excess |
+|---|---|---|---|
+| **FIELD** (`cc66.51`'s held-period estimator, at last scattering) | **higher** by $+0.5$ to $+1.4$ % | $-0.004$ to $-0.010$ | **$-7$ to $-13$ %, the WRONG sign** |
+| **PROJECTED** (`cc66.50`'s quantity, $\sqrt{}$ of the banked `w2dp/w2sw` share — *what `DPSRC` actually scales*) | **lower** by $10$ to $13$ % | $+0.066$ to $+0.108$ | **$+188$ down to $+94$ %, the RIGHT sign** |
+
+⇒ *** THE COUPLING TURNS A DISAGREEMENT ABOUT A QUANTITY INTO A DISAGREEMENT ABOUT WHETHER THE CANDIDATE
+HELPS AT ALL — a factor of seven in magnitude even at their closest. This is the third revision in which
+these two readings decide the answer between them and the first in which they decide its SIGN. ***
+
+**⌗ AND THE ORDER'S SECOND HALF — CONSTANT SHORTFALL OR GROWING? GROWING, ON BOTH READINGS, IN OPPOSITE
+DIRECTIONS.** The field reading's fraction grows in magnitude from $-7$ to $-13$ %; the projected
+reading's falls from $+188$ to $+94$. ⇒ ***A shape mismatch and not a coupling deficit, on either
+reading, and the fourth this sector has found.*** *The coupling is flat, so the $q$-dependence belongs to
+the input.*
+
+**⛭ ⓷ AND THE ENVELOPE QUESTION HAS THE GOOD ANSWER.** The coupling's sign survives both envelopes at
+every band, so **the contribution does not reverse with the statistic and the coupling question does not
+inherit the envelope ambiguity.** *Its magnitude does — the median envelope's coupling reaches $2.2\times$
+the arithmetic one's at the top band — so a quoted **fraction** inherits the ambiguity while the **sign**
+does not, and that is said before any fraction is quoted.* ⛔ *The envelope question is not revisited to
+settle it: the order forbids that, both are carried, and no conclusion rests on choosing one.*
+
+**⌗ AND WHAT WOULD SETTLE THE INPUT, NAMED AND NOT BUILT.** Neither banked quantity is the right one: the
+field reading is an amplitude but **at last scattering** rather than in the projected source, and the
+projected reading is in the projected source but is a **band power**, which keeps the smooth part
+`cc66.51` showed fills no trough. ⇒ **The quantity the coupling multiplies is the OSCILLATION AMPLITUDE OF
+THE PROJECTED DOPPLER CONTRIBUTION, per band, and the instrument banks neither it nor the $\eta$-resolved
+fields a derivative of it would need.** *One bank, not a channel: the order's ⓸ closes the list.*

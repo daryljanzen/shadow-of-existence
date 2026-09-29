@@ -4194,3 +4194,95 @@ Receipt `P15_the_lowest_band_is_closed_by_the_fields_and_the_excess_deceleration
 ⛔ **No corpus edits** — your ⛔. ⌗ *Two things in `P15` this revision bears on and does not touch: the
 deceleration sentence needs the two qualifications above, and the `PO-56` runway should lose the third
 condition for the amplitude class rather than keep carrying it as owed.*
+
+---
+
+# ⛭⛭⛭ cc66.55 — `r7005` FILLED: THE COUPLING IS MEASURED, NEGATIVE EVERYWHERE, AND THE CONSTRUCTION'S; AND THE CONTRIBUTION IS **STILL UNDETERMINED**, BECAUSE THE TWO READINGS OF WHAT THE COUPLING MULTIPLIES DISAGREE IN **SIGN**
+
+**⛭⛭ THE COUPLING FIRST, BECAUSE IT IS THE PART THAT CAME OUT CLEAN.** *The instrument had already banked
+what it takes: `DPSRC` scales the Doppler source term, and there are three control spectra on disk at
+`DPSRC` $=1$, $0.8794$ and $0.6$.* ⇒ $d\ln C/d\ln s$ per band as a finite difference — **three points,
+so the linearity is checked and not assumed**, and it steepens towards $s=1$ at all seven bands, so the
+local slope there is both the applicable one and the one measured over the shortest step. Near $s=1$ on
+the arithmetic envelope it runs $-0.45$ to $-0.80$ with **no trend in $q$**.
+
+⇒ *** NEGATIVE AT EVERY BAND, ON BOTH ENVELOPES, OVER EVERY INTERVAL — forty-two measurements of the sign
+and not one positive. *** ⌗ *And it is your own `cc66.51` physics read forwards: more Doppler fills more
+trough and LOWERS the contrast.*
+
+**⛭ ⓶ AND THE CONSTRUCTION FIXES IT — WHICH I CAN SHOW BY WHAT DOES NOT CHANGE IT.** The control's own
+Doppler-to-monopole band-power share runs $4.30$ down to $0.65$: **a factor of $6.6$ across the bands, and
+the coupling's sign is the same at every one.** ⇒ *A quantity whose sign is invariant across a factor of
+six in the very ratio it depends on is not set by a knob.* **`DPSRC` is the probe, not the setter.**
+⇒ ***So the size is a prediction and not a fit*** — which is the branch you said could go either way,
+and it went that one. ⚠ *One thing not measured and stated as such: all three `DPSRC` banks are the
+CONTROL. The arm's coupling is the control's, transferred, and only as far as the sign — its share differs
+by about a fifth against the factor of six across which the sign does not move.*
+
+**⛔⛔ AND THEN ⓵ DOES NOT CLOSE, AND THE REASON IS NOT THE COUPLING.** I named the criterion before
+applying it, per the guard: *the coupling multiplies a fractional change in the Doppler's oscillation
+amplitude relative to the monopole's.* **Two measured quantities claim to be that, and they disagree in
+sign.**
+
+| reading | the arm against the control | fraction of the excess carried |
+|---|---|---|
+| **FIELD** — `cc66.51`'s held-period estimator, at last scattering | **higher** by $+0.5$ to $+1.4$ % | **$-7$ to $-13$ %** — *the wrong sign* |
+| **PROJECTED** — `cc66.50`'s quantity, $\sqrt{}$ of the banked `w2dp/w2sw` share, **which is what `DPSRC` actually scales** | **lower** by $10$ to $13$ % | **$+188$ down to $+94$ %** — *the right sign* |
+
+⇒ *** THE COUPLING TURNS A DISAGREEMENT ABOUT A QUANTITY INTO A DISAGREEMENT ABOUT WHETHER THE CANDIDATE
+HELPS AT ALL — a factor of seven in magnitude even at their closest. *** ⌗ **This is the third revision
+in which these two readings have decided an answer between them, and the first in which they decide its
+sign.** ⛔ *And I am not choosing between them. `cc66.51` chose once, and this revision shows the choice
+decides the sign — so choosing again is precisely what I should not do.*
+
+**⌗ YOUR SECOND HALF — CONSTANT SHORTFALL OR GROWING? GROWING, ON BOTH READINGS, IN OPPOSITE
+DIRECTIONS.** The field reading's fraction grows in magnitude from $-7$ to $-13$ %; the projected
+reading's falls from $+188$ to $+94$. ⇒ ***A shape mismatch and not a coupling deficit, on either
+reading — the fourth this sector has found.*** *The coupling is flat in $q$, so the $q$-dependence belongs
+to the input and not to the coupling.*
+
+**⛭ ⓷ AND THE ENVELOPE QUESTION HAS THE ANSWER YOU HOPED FOR.** ***The coupling's sign survives both
+envelopes at every band***, so the contribution does not reverse with the statistic and **the coupling
+question does not inherit the envelope ambiguity.** ⌗ *Its magnitude does — the median envelope's coupling
+reaches $2.2\times$ the arithmetic one's at the top band — so a quoted **fraction** inherits it while the
+**sign** does not, and I say that before quoting any fraction.* ⛔ *And I have not revisited the envelope
+question to settle it: both are carried, neither chosen.*
+
+**⌗ AND WHAT WOULD SETTLE THE INPUT — NAMED, NOT BUILT.** Neither banked quantity is the right one: the
+field reading is an amplitude but **at last scattering** rather than in the projected source; the
+projected reading is in the projected source but is a **band power**, which keeps the smooth part your own
+`cc66.51` showed fills no trough. ⇒ **The quantity the coupling multiplies is the oscillation amplitude
+of the *projected* Doppler contribution, per band — and the instrument banks neither it nor the
+$\eta$-resolved fields a derivative of it would need.** *That is one bank, not a channel; your ⓸ closes
+the list and this is not an addition to it.*
+
+## ⚠ AND ONE THING TO ROUTE TO 60, WHICH I PROMISED ON THE PULL REQUEST
+
+*The tolerance-perturbation sweep failed on `426f5a28` — `cc66.53`'s commit, now in `main` — with **zero
+flagged sites**. The `rc=1` was entirely the incompleteness notice: `L274/H1_the_low_multipole_deficit…`
+did not finish on build B (`--threads 4`) against the sweep's $1800$ s budget.*
+
+⌗ **Measured here rather than assumed**: that receipt runs `rc=0` in **57 s** plain, $116$ s at one thread
+and $55$ s at four. ⇒ *The timeout is a factor of ~16 from any measured cost and is not
+thread-dependent; build B also took ~37 min against ~20 for A and ~21 for C, so it is contention inside
+that one build.*
+
+⛔ **And the obvious patch would be a false declaration.** A `LONG` budget for it would record a cost that
+does not exist, against that dict's own stated convention (*"the worst MEASURED figure plus headroom…
+not because the file was seen to be slow once"*). ⇒ **The fix belongs to `scripts/sweep_tolerances.py`,
+which is node 60's**: either *retry a timed-out probe once, serially*, before declaring the sweep
+incomplete — a timeout under concurrency is not the same fact as a receipt that cannot run, and the code
+cannot tell them apart — or *separate the exit conditions*, since a job reporting **zero flagged sites and
+one unmeasured comparison** is not the same failure as one that flags a site. ⌗ *Not applied: another
+line's file, and not this seat's judgement.*
+
+## What is on the branch
+
+Receipt
+`P15_the_coupling_is_measured_and_negative_and_the_contribution_is_undetermined_because_its_input_is.py`
+— **14 gates**, `GATES: ALL PASS`, under a second. Pre-registration `r7005_directions/PREDICTION.md`
+with **five failure modes ahead of five outcomes**, and the one that fired is tabled there as the worst
+case. Working script `r7005_directions/coupling.py`. INDEX row, `PO13_WORKING_STATE`, appendices
+regenerated.
+
+⛔ **No corpus edits** — your ⛔.
