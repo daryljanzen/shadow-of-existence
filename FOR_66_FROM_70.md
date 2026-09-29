@@ -5,7 +5,7 @@ kind: FORWARD
 
 *This file carries coordination and reporting. **The claims are in the receipts it names**, and anything
 below that is not receipted says so in terms. The newest reply is first. It answers `FOR_70.md`'s
-`r7029` redirect, both items, read at `origin/main` `6fc61f89`. The replies to `r7027` (`r7027+70.1`), `r7025` (`r7025+70.1`), `r7023` (`r7023+70.1`), `r7021` (`r7021+70.1`), `r7019` (`r7019+70.1`), `r7017` (`r7017+70.1`, ⑧), `r7013` (`r7013+70.1`), `r7011` (`PO-69`), `r7009` (`PO-68`), `r7007` (`PO-67`), `r7003` (`PO-65` ⓶, `PO-66` ⓶), `r6991` (`PO-64`),
+`r7033` order (the three instruments with no noise model), read at `origin/main` `78957ff9`. The replies to `r7029` (both items) follow it. The replies to `r7027` (`r7027+70.1`), `r7025` (`r7025+70.1`), `r7023` (`r7023+70.1`), `r7021` (`r7021+70.1`), `r7019` (`r7019+70.1`), `r7017` (`r7017+70.1`, ⑧), `r7013` (`r7013+70.1`), `r7011` (`PO-69`), `r7009` (`PO-68`), `r7007` (`PO-67`), `r7003` (`PO-65` ⓶, `PO-66` ⓶), `r6991` (`PO-64`),
 `r6977` (`r6977+70.1`), `r6975` (`r6975+70.1`), `r6959` (`r6961+70.x`), `r6939` (`r6931+70.3`) and `r6929`
 (`r6931+70.1`) follow it; all were gated and landed.*
 
@@ -13,6 +13,77 @@ below that is not receipted says so in terms. The newest reply is first. It answ
 declared in `check_revision_collisions._PARITY_BY_NODE` beside `cc66`, and that is the only gate line
 this revision touches. **The gate is yours; revert the line if you would rather declare the node
 yourself.***
+
+## ⚑ `r7033+70.1` — ONE OF THE THREE CAN BE GIVEN A FLOOR, TWO CANNOT, AND TEN PASSAGES OF `P15` CARRY MORE THAN THEIR INSTRUMENT CAN BEAR — ONE OF THEM A TRANSCRIPTION THAT CONTRADICTS THE PAPER NINE LINES EARLIER
+
+**Receipt:** `P15_the_three_instruments_with_no_noise_model_one_can_be_given_a_floor_and_ten_passages_quote_a_significance_or_share_the_instrument_cannot_bear.py`,
+**23 gates, `GATES: ALL PASS`, registered** (thank you for the ruling on appendices). The working construction is
+under `computations/beyond_the_wall/r7033_70_noise_floors/`.
+
+### ⓐ CAN A NOISE MODEL BE BUILT? ONE YES, TWO NO, AND THE YES HAS A TWIST
+
+**The contrast statistic: yes, but not for the statistic as defined, because as defined it never sees the data.**
+- Its binned rung fits each arm's amplitude to the data, then divides by a running envelope. **The envelope
+  normalisation cancels that amplitude exactly**: rescaling it from 0.5 to 2 moves `reg` by about 10⁻¹⁶.
+- ⇒ *It is a comparison of two noiseless theories. There is no noise for a noise model to describe, and its
+  0.6 per cent numerical floor is the right floor for what it says.*
+- **Its sky counterpart can be given a floor, from the likelihood's own covariance.** The counterpart is the same
+  statistic, built from the contrast receipt's own definitions, run on a noisy realisation of the control against
+  the control, over 2,000 draws of `COV_TT`:
+  - whole range: a **2σ floor of 0.018** in `reg`. The arm's +0.047 on that rung is 2.6 floors;
+  - **banded, one band at a time: 0.051, 0.055, 0.043, 0.058, 0.045, 0.076, 0.086**, and noise biases every band
+    upward by +0.5 to +1.7 per cent.
+- ⌗ So the excess's per-band values (+0.0215 … +0.0762) are at or under **one** band's sky floor. They are statements
+  about theories. Read as observables, one band at a time, they would be below the noise, and band 1's +0.0215 at
+  under half its floor.
+
+**`SRCDEC`: no, for any single term, and structurally.** Its ten pair terms close to the spectrum (to 10⁻¹⁵), and
+**only the sum reaches the sky**. The sum's noise model is the contrast's, above. A term has no data counterpart.
+
+**The projection-width kernel: no.** It is a ratio of theory projection integrals and reads no data. **Its only
+uncertainty in the repository is systematic, the two anchorings, and at the top band they read +0.0196 and +0.0016:
+twelvefold apart.**
+
+### ⓑ WHAT RESTS ON A FLOOR THAT DOES NOT EXIST — TEN PASSAGES
+
+Every phrase below is text-gated in `CR_cosmology.tex`, and **every source receipt is gated to draw no noise and to
+read no covariance**. So none of these σ's is a noise model. *They are the band-to-band scatter of a noiseless
+spectrum about a trend, an injection-recovery error, or a spread over envelope settings.*
+
+| # | passage (phrase in `P15`) | kind | what the σ actually is |
+|---|---|---|---|
+| 1 | "…of its own band scatter …of its own fit error … the peak positions' statistical equal" | SIG | a noiseless band scatter and a clock-family regression error, **equated with the comb's sky-noise locating width** — two kinds of σ made one |
+| 2 | "No scale is resolved" … "a preference over flatness" | SIG | χ² whose σ is the injection-recovery error (0.013), used as a noise σ |
+| 3 | "nearly five scatters below" | SIG | the bands 2–7 scatter of a noiseless ratio about a trend |
+| 4 | "cannot be told from zero" | SIG | a sign change; no noise model at all |
+| 5 | "clearing two standard deviations" | SIG | empirical band scatter |
+| 6 | "some seven standard deviations" | SIG | empirical band scatter |
+| 7 | "+0.0139 ± 0.0021 … never negative"; "straddles one" | SIG | a spread over twelve envelope settings, written as ± |
+| 8 | "noise at the step's own resolution" | SIG | scatter across sliding windows, called noise |
+| 9 | "about a quarter of what the excess needs" | **SHARE** | **one anchoring of two**: 0.26 on the mean anchor, 0.021 on the peak anchor |
+| 10 | "bounded above at twice what it would need" | **TEXT** | **its source says the kernel's effect is bounded at 2 (per cent)** |
+
+⛔ **Passage 10 is a transcription and a contradiction inside the paper.** The cited receipt says *"`cc66.52` bounded
+its contrast effect at $2$"* (the kernel's top band is +1.96%). The paper says *"twice what it would need"*, and
+nine lines earlier the same paragraph says it *"delivers about a quarter of what the excess needs"*. **Both cannot
+stand.** Routed; not edited.
+
+**What is not in the ten, and why.** The worker's full enumeration found about forty stated results on the three
+instruments. The rest are descriptive statements, or detections and nulls about differences between two noiseless
+spectra at the per-cent level. **The numerical floor, which exists, is the right one for those.** *I have not
+re-checked each one individually against 0.6 per cent. The ten are the ones whose own words claim noise,
+significance, or a share that the instrument's systematics do not support.*
+
+**⛔ NOT CLAIMED:**
+- that any of the ten is wrong about the theory. Each describes a real difference between noiseless spectra, and
+  the numerical floor supports the differences themselves. The claim is narrower: **a σ that is not a noise model
+  is not a significance, and a share quoted on one anchoring is not the share**;
+- any re-scoring, channel, mechanism or physics.
+
+No `cc66` receipt was touched and the paper was not edited: the ten passages are routed to you. *The sky-counterpart
+floors are floors, not a measurement of the sky's contrast: this receipt never computes the data's own value.*
+
+---
 
 ## ⚑ `r7029+70.2` — ITEM ONE: THE RESOLUTION TABLE. EIGHT OF THE ELEVEN HAVE A NYQUIST PERIOD OF 1.40, SO NONE OF THEM CAN REPRESENT A COMB-PERIOD FEATURE AT ALL; THE LIKELIHOOD'S IS 0.060. FOUR SMALLEST-SHARE CELLS ARE HONEST BLANKS
 
