@@ -78,6 +78,32 @@ the closure rather than reopening it: **the next suite timeout is read when it c
 something else that lands as a correction on a finished item, the way the build-B refutation landed on a struck
 row.*
 
+**⛭ AND THAT IS EXACTLY WHAT ARRIVED AT `r7029`, UNPROVOKED, AND IT CORRECTS THE CLOSURE IN ONE PLACE WITHOUT
+REOPENING IT.** *Two further readings came from the other instruments on that branch's own pushes. **All three
+stalls are the same child running past the same limit — and the third is the run AS WRITTEN, on a single
+thread**, in an invocation where the tightened run then passed outright.* ⇒ *** SO NEITHER THE TIGHTENING NOR
+THE THREAD COUNT IS THE CONDITION, AND THE TWO READINGS THAT SUGGESTED OTHERWISE WERE A COINCIDENCE OF
+INSTRUMENTS AND NOT A CAUSE. *** *The locus is the sample child itself, which costs about six seconds as
+written and twenty tightened, and which has now passed six hundred seconds three times.*
+
+**⛭ AND A COUNT THAT NARROWS IT FURTHER, STATED AS A COUNT AND NOT AS A CAUSE.** *Where that child runs in the
+suite as itself, it appears in **none of 1,233 readings from 165 logs across four days** — never among a run's
+five slowest, never failed, never over the cap. **Every stall read so far has been as the receipt's child,
+under a captured subprocess inside a probe or tracer wrapper.*** ⇒ *** SO ⑦'s SECOND EXIT IS NOT WEAKENED BY
+THE CORRECTION, IT IS SHARPENED BY IT: THE STATED LIMIT NOW NAMES THE CONDITION MORE NARROWLY THAN IT COULD AT
+`r7027`, AND STILL NAMES NOTHING THIS TREE CONTROLS. *** ⌗ *And the instrument built at `r7025` proved itself on
+its first real event: the receipt named the sample, named the verdict, ran its other ten checks and said so in
+its own summary line, where before the change this would have been a traceback.*
+
+**⛭⛭⛭ AND THE OFFERED FOLLOW-UP IS DECLINED, WHICH IS THE STANDING ORDER DOING THE WORK IT WAS BUILT FOR.**
+*The delivering seat named the open question — why that child stalls, and whether only as a grandchild — and
+said in terms that the finished list does not need it and the call was not its to make.* ⇒ ***It is a remainder
+of the second kind: the same question at finer resolution, whose honest form is a stated limit written where it
+acts. `STANDING ORDER r7013` says that is a FINISHED outcome and not a deferral, so no row is opened and no
+order is written.*** ⌗ *This is the first time that order has been used to **decline** work a seat offered
+rather than to close work already done, and it is the whole point of it: the reproducibility layer converged
+because a seat was allowed to stop, not because it ran out of questions.*
+
 **⛭⛭⛭ SO THE LIST IS COMPLETE — EIGHT OF EIGHT.** *And what "complete" means is exactly what the list says and
 nothing more: **the eight things this layer set itself are done**, two of them ending in stated limits rather
 than repairs. *It is not a claim that nothing will ever go wrong here; it is the claim that the layer has no
@@ -288,7 +314,7 @@ corpus in `PO13_WORKING_STATE.md`.*
 
 <!-- GRAIN-CURRENCY:BEGIN -->
 
-## ⌗⌗⌗ CURRENCY — **GENERATED** by `scripts/regen_grain_currency.py`, baseline r2417, register front r7027
+## ⌗⌗⌗ CURRENCY — **GENERATED** by `scripts/regen_grain_currency.py`, baseline r2417, register front r7029
 
 > ⚠ **THE BODY BELOW STOPS AT THE BASELINE. This head is the list of what has moved since, and it is REGENERATED rather than written** — *because these documents go stale every ~20 revisions by construction, and paying that by hand is a debt that recurs rather than a defect that closes.*
 >
