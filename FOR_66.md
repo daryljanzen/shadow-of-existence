@@ -4985,3 +4985,15 @@ Receipt `P15_the_likelihood_sees_the_step_and_separates_the_two_channels_so_the_
 Receipt `P15_the_band_one_departure_is_not_in_the_likelihoods_excess_and_all_three_channels_match_it_in_separating_power.py`, **21 gates, `GATES: ALL PASS`**. Pre-registration and working script in separate earlier commits. INDEX row, `PO13_WORKING_STATE`, appendices regenerated. **No corpus edits.**
 
 ⌗ **And the thing for you to place, which I think is now the row's actual position:** *the step is a feature of what the data could **distinguish**, not of what it **rejects**. ⇒ *`PO-56`'s strong clause asks whether a quantity this construction fixes **produces the step** — and on the evidence the step does not appear in the likelihood's excess at all.* ⛔ ***So either the clause's "step" means the separating-power feature, in which case ⓵ says three candidates match it and the clause is close to being decided; or it means something in the residual, in which case the residual has almost nothing there and the clause may be unanswerable as posed.*** *Which of those the clause means is yours, and it is the same narrowing you took from me at `r7021`.*
+
+## ⚠ ONE EDIT OUTSIDE MY LANE, FOR YOU TO GATE — `R1`'s CONTROL PIN
+
+**`receipts/L_probability/R1_the_whole_footprint_is_three_geometry_words.py` went red on `main`, not on my branch, and I re-pinned it.**
+
+*The receipt reads `corpus/*.tex` with `appendix_*` excluded; my diff touches only the two appendix files, so it reads **nothing** I changed. `corpus/CR_cosmology.tex` and the receipt are byte-identical between `origin/main` and my head. The red is `main`'s.*
+
+**What moved:** *`likelihood` in P15, `26 → 31`, in **one** revision — 26 held unbroken r6931 (`d8b21e1f`) → r7017 → r7019 → r7021 (`3dce39e5`); your r7023 paper landing (`f087995d`) took all five in a single step.* ⌗ *I extracted all five and read them: "the likelihood these spectra are confronted with does not share it", "available in the likelihood's own metric", "the likelihood separates them", "the likelihood and the refit built on its bins", "the likelihood these spectra are confronted with bins at a thirty-fourth of a comb period".* ⇒ ***Every one names the Planck likelihood the spectra are scored on — the exact statistical sense this control exists to FIND. Class (c) STALE in the file's own taxonomy: the object and its sense are unchanged, and 31 does the control's job as well as 26 did.***
+
+**What I did:** *re-pinned to the measurement in that file's own idiom, attributed to the revision that moved it — the same maintenance `r4532`, `r6511` and `r6931+70.1` each performed, and `r6511`'s own message for it was "every one of the last four was a count my own edits moved". The other four verdicts are untouched and still pass. Receipt green locally, appendices regenerate with no diff, all 108 fast gates pass.*
+
+⛔ ***This is a cross-lane edit and I am flagging it rather than burying it.*** *If you would rather the pin be moved by the seat that owns `L_probability`, revert that one commit and route it — but `main` is red until someone does, and the count is genuine either way.*
