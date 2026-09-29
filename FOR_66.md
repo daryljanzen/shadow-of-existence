@@ -4420,3 +4420,96 @@ written before the measurement. Working script `r7009_directions/the_step.py`. I
 `PO13_WORKING_STATE`, appendices regenerated.
 
 ⛔ **No corpus edits** — your ⛔.
+
+# ⛭⛭⛭ cc66.58 — `r7011` FILLED: THE WINDOW-FREE READING **CANNOT RESOLVE** THE FIRST CYCLE AND THAT IS THE ANSWER; THE FLATNESS WAS MEASURED ON THE FULL RANGE BUT AS A **TREND**, SO YOUR GUARD FIRES ON THE STATISTIC RATHER THAN ON THE RANGE AND **THE LIST IS NOT EXHAUSTED**; AND **NINE TENTHS OF THE STEP IS COMMON TO BOTH ARMS**
+
+*`r7011` filled. ⌗ **Path provenance:** every model number below is the **hierarchy** path — banks `r6941_fine_{lcdm,cr}`, `r6959_nswap_lcdm`, `r6975_mix_lcdm`, `r6983_joint_lcdm`, and `r6959_eta_cr`'s band edges. **Nothing is solved and nothing is run**; `sec:refit-bound`'s quartet is not read, and the receipt gates on that by scanning its own executable body for the line-of-sight values and bank names. No corpus edits.*
+
+⚑ **AND THE PRE-REGISTRATION WENT IN AS A SEPARATE COMMIT AHEAD OF THE WORKING SCRIPT**, so the ordering is in the history and not in a sentence: `b013da5c` is `PREDICTION.md`, `ee861d1e` is `the_first_cycle.py`. **Every one of its three outcome tables leads with the row that damages `cc66.57`**, and two of them fired.
+
+---
+
+## ⛭⛭ ⓵ YOUR STRONGER CLAIM IS NOT ESTABLISHED — AND THE REASON IS NOT THAT THE EXCESS IS NON-ZERO, IT IS THAT **THE READING YOU ASKED ME TO PRESS HAS ONE DATUM**
+
+*You asked whether $-0.0017$ is zero to the reading's coarseness or just small. ⛔ **It is neither. It is unresolved.** I said the reading carries about one acoustic cycle per band; I had not counted it. It carries **one half-cycle transition in band 1** — one number — because the first locatable extremum pair sits at $q = 1.363$ and the step is at $1.794$.*
+
+| | value | against zero | against the bands 2–7 mean |
+|---|---|---|---|
+| band 1, per-transition | $-0.0008$ | $\mathbf{0.02\sigma}$ | $\mathbf{1.60\sigma}$ |
+
+⇒ *** IT IS CONSISTENT WITH ZERO **AND** WITH THERE BEING NO STEP AT ALL. *** *The uncertainty is not asserted — it is the per-transition scatter $0.0456$ over the ten data in bands 2–7, your own featureless stretch, which is the only honest yardstick available.*
+
+**AND I BUILT THE FINER VERSION YOU ASKED FOR, AND IT DOES NOT RESCUE IT.** *The **extremal envelope** — successive maxima and successive minima interpolated separately, so it uses only located extrema and no running window anywhere, and is continuous rather than one number per half-cycle. ⛔ It covers only $27\%$ of band 1, because it needs a located extremum of each kind and so cannot start at $q = 0.85$; its below-step stretch rests on the **same single extremum**; and it interpolates **across** the step, so its $+0.0245$ is biased **toward** the above-step value rather than away from it.* ⌗ *Three settings of what counts as an extremum give the same below/above ratio, $0.338$, to six decimals — the finder is not what decides it.*
+
+⇒ **SO THE ANSWER COMES FROM THE STATISTICS THAT DO RESOLVE BAND 1.** *The windowed contrast reads the full band $q = 0.85$–$1.55$, including the $73\%$ of it the window-free family cannot reach at all, and gives band 1's excess as $\mathbf{+0.0215}$.*
+
+⇒ *** "SMALL BUT NON-ZERO" IS THE SUPPORTED ROW. THE STEP STAYS A STEP AND DOES NOT BECOME AN ONSET. *** *Your conjecture is **not established** — and I want to be exact: it is **not excluded** either, because the one reading that suggested it is the one with no resolving power there.*
+
+### ⛔ AND THE PART THAT IS MINE TO GIVE BACK
+
+**`cc66.57` called the envelope-free reading "the sharpest of the four". THAT IS WITHDRAWN: IT WAS THE COARSEST OF THE FOUR**, by one datum against four hundred. *"Envelope-free" is a statement about **bias**, not about **resolution**, and I ran them together.*
+
+⌗ **But notice what that does to the size, because it is the opposite of what a withdrawal usually does.** *The "none" endpoint of my range was never a reading — it was an unresolved number. Removing it **tightens** the claim rather than loosening it:*
+
+⇒ *** BAND 1 IS BETWEEN A THIRD AND TWO THIRDS OF THE REST, ON EVERY STATISTIC THAT CAN SEE IT *** — $0.333$, $0.391$, $0.633$ windowed, and $0.338$ on the extremal envelope's own below/above split.
+
+---
+
+## ⛔⛔ ⓶ THE RANGE WAS FULL — SO YOUR GUARD DOES NOT FIRE THERE — BUT IT FIRES ON THE **STATISTIC**, AND THAT IS WORSE FOR ME THAN THE VERSION YOU ASKED
+
+**ⓐ THE RANGE, ANSWERED FROM `cc66.49`'s OWN FILE AND GATED ON IT RATHER THAN RECALLED.** *Its fit abscissa is `Q2 = QC ** 2` with `QC` the centres of **all seven** bands, $q = 1.20$ to $5.40$. **Band 1 is in the flatness measurement.*** ⇒ *So the disposal is **not** circular on range, and the error you were looking for is not the one that is there.*
+
+**ⓑ THE ONE THAT IS THERE: THE FLATNESS WAS MEASURED AS A TREND.** *$\lvert\text{slope}\times\langle q^2\rangle\rvert/\lvert\text{intercept}\rvert$ from a line in $q^2$. ⛔ **A step is badly fitted by a line and shows up in the RESIDUAL, which that statistic never looked at.** The JOINT reads $0.004$ on it — "the flattest thing this sector has measured", my own words — while leaving $\mathbf{61\%}$ of its own range unexplained by that same line.*
+
+⇒ *** SO "A FLAT CANDIDATE'S STEP RATIO IS EXACTLY ONE, BY CONSTRUCTION AND WITHOUT A NEW NUMBER" WAS NEVER ENTAILED BY WHAT WAS MEASURED. *** *It needed a number. Here it is.*
+
+**ⓒ RE-SCORED ON BAND 1'S DEPARTURE FROM ITS OWN BANDS 2–7 TREND — AND ACROSS FOUR TREND BASES, WITH NONE CHOSEN.**
+
+| channel | $v\sim q$ | $v\sim q^2$ | $\ln v\sim q$ | $\ln v\sim q^2$ | verdict |
+|---|---|---|---|---|---|
+| window weighting | $+0.449$ | $+0.531$ | $+0.468$ | $+0.560$ | **steps UP — the wrong sign** |
+| term mix | $-0.385$ | $-0.358$ | $-0.378$ | $-0.350$ | **steps DOWN, $63\%$ of the excess's** |
+| **JOINT, the realised pair** | $-0.266$ | $-0.233$ | $-0.259$ | $-0.225$ | down, $\mathbf{42\%}$, $2\sigma$ on three of four |
+| measured excess | $-0.566$ | $-0.598$ | $-0.575$ | $-0.601$ | the step itself |
+| projection width | $+0.282$ | $-0.346$ | $-0.295$ | $-0.446$ | **flips sign ⇒ no step** |
+
+⇒ *** `cc66.57`'s ⓷ IS WITHDRAWN IN PART. NEITHER CHANNEL IS FLAT ON A STEP STATISTIC, AND THE LIST IS **NOT** EXHAUSTED. *** *One channel pushes the **wrong** way; the other pushes the right way at $63\%$; and the pair **as actually composed**, one spectrum with both coefficients at the sizes their own profiles solve, carries $\mathbf{42\%}$ of the step.* ⇒ **"No candidate produces the step" becomes "no candidate produces it ALONE, and the two channels between them carry a minority of it."** *The step has a partial account rather than none — a minority share, which is what the Doppler turned out to be too.*
+
+⌗ **AND THE PROJECTION WIDTH'S DISPOSAL STANDS, WHICH IS THE ONE THING IN `cc66.57`'s ⓷ THAT SURVIVES INTACT — AND THE BASIS TABLE IS WHAT SHOWS WHY.** *That channel is linear in $q$ to $2.6\%$ of its range, so a **log** basis manufactures a step for it and it **flips sign** across the family. `cc66.57` scored it on a residual from a straight line in $q$. ⇒ **Of the four disposals, the one done on a residual is the one that holds, and the two done on a trend are the two that fail.** That is the whole lesson in one line.*
+
+---
+
+## ⛭⛭⛭ ⓷ AND THE DECOMPOSITION IS DECISIVE, AND IT IS THE "BOTH ARMS" ROW — WITH A TWIST YOUR TABLE DID NOT HAVE
+
+*Each arm's own contrast against its **own** bands 2–7 trend, no reference to the other arm, on all four bases and on **both** the windowed and the window-free contrast:*
+
+| | control | arm | the arm, relative |
+|---|---|---|---|
+| windowed, four bases | $+0.303$ … $+0.404$ | $+0.268$ … $+0.360$ | $\mathbf{11.0}$–$\mathbf{11.5\%}$ shallower |
+| window-free, four bases | $+0.364$ … $+0.435$ | $+0.334$ … $+0.389$ | $\mathbf{8.2}$–$\mathbf{10.4\%}$ shallower |
+
+⇒ *** BOTH ARMS STEP, IN THE SAME DIRECTION, BY TENS OF PER CENT, ON EVERY BASIS AND ON BOTH STATISTICS — AND THE ARM IS **ALWAYS** THE SHALLOWER, BY ABOUT ELEVEN PER CENT AND NO MORE. ***
+
+⇒ *** SO ABOUT NINE TENTHS OF THE STEP IS COMMON TO THE TWO ARMS AND CANCELS IN THE RATIO. THE EXCESS'S STEP IS THE TENTH THAT DOES NOT. ***
+
+⌗ *That is your "both arms" row — **the step belongs to the acoustic physics the two share** — and it pays a debt without a new number: it explains why `cc66.57` found the location at fixed $q$ on **both** arms. I reported that as a caveat. It was a clue.*
+
+### ⚠ AND THE CAUTION IS MINE, NOT YOURS, AND I WOULD RATHER STATE IT THAN HAVE YOU FIND IT
+
+*A small residual of two large common features is **exactly** where a nearly-common systematic would sit. ⛔ **I am not saying the step is an artefact** — it is $7.2$–$7.7\sigma$ against the ratio's own bands 2–7 scatter, which is much smoother than either spectrum's, and that is why the residual is readable at all.* ⇒ *I am saying that **the next reading of the step should be differential by construction** rather than a difference of two large numbers. If the row is going to be built on this feature, it should be built on an estimator that never forms the two big steps in the first place.*
+
+---
+
+## ⛔ WHAT ⓸ HELD TO, AND THE DISCIPLINE THIS ONE ADDS
+
+*No new candidate. No envelope chosen. **No basis chosen** — four are reported and a departure counts only if it survives all four. No mechanism proposed: a step at a scale is a signature to be explained, and that holds whether it is a step or an onset. No corpus edits — routed for you to place.*
+
+* ⚠ ***A TREND STATISTIC CANNOT EXCLUDE A STEP.*** *A small slope says nothing about a residual. Two of `cc66.57`'s four disposals rested on that non-sequitur, and both of them fail.*
+* ⚠ ***A RESIDUAL-AGAINST-TREND STATISTIC NEEDS A BASIS, AND THE BASIS IS A CHOICE — SO DO NOT CHOOSE IT.*** *The projection width taught me this inside this revision: my first pass fitted logs in $q^2$ and read a $-5.19\sigma$ step on a channel that is linear in $q$. **I nearly landed a manufactured step while withdrawing someone else's unearned flatness.*** ⇒ *Fourth revision running on "do not choose — name the family", and the first one where it caught me rather than tidied me.*
+* ⚠ ***COUNT THE DATA BEFORE CALLING A READING SHARP.*** *"Envelope-free" is a claim about bias, not about resolution.*
+
+## WHAT IS ON THE BRANCH
+
+Receipt `P15_the_window_free_reading_cannot_resolve_the_first_cycle_the_flatness_was_a_trend_and_nine_tenths_of_the_step_is_common_to_both_arms.py`, **34 gates, `GATES: ALL PASS`** in about a second. `r7011_directions/PREDICTION.md` committed before `the_first_cycle.py`, in separate commits. INDEX row, `PO13_WORKING_STATE`, appendices regenerated. **No corpus edits.**
+
+⌗ **And one for you to place if you want it:** the frontier row's question was *"what turns on at the second acoustic peak?"* ⇒ On ⓷ it should now read **"what makes the first acoustic cycle's contrast stand above its own trend in BOTH cosmologies, and what makes the arm's version of that eleven per cent shallower?"** — two questions where there was one, and the second is the one the excess actually sees.
