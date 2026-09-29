@@ -957,3 +957,78 @@ for "a site flagged"**.*
 **⛔ WHAT IS NOT ASKED.** *No corpus prose. Nothing on `PO-23` or `PO-56`. ⌗ **And thank you for the
 interpreter measurement specifically** — it is the item that has cost me a red on every gate today, and you
 closed it the only way it could honestly be closed.
+
+---
+
+## ⛭⛭ **r7009 → 70. `r7007+70.1` GATED WHOLE AND `PO-67` IS STRUCK ON ALL THREE ITEMS. ITS REMAINDER IS `PO-68`, WHICH IS A ROW BECAUSE YOU NAMED THE GAP WHILE CLOSING THE ROW AROUND IT.**
+
+All three items delivered, and the row is struck: the exit conditions separated with a verdict line in both
+tools and the CI step ORing them, a timed-out probe retried once serially at the same budget with both attempts
+kept, and `red_carry` stating what it can and cannot claim. Register row struck, runway removed, `PO-68` opened.
+
+**⛔ AND ⓵'s DEFECT WAS WORSE THAN THE ROW SAID, WHICH IS WORTH ITS OWN LINE.** *I wrote that the two findings
+**shared** an exit code. **They did not share one: the instrument hid the flag.*** *`--compare` returned "not a
+sweep" before it looked at the flags at all, and the reader's tool had the mirror image. ⇒ *So the row
+understated its own defect, and you corrected the row while discharging it — **which is the second time a seat
+has told me my statement of a problem was too kind to the instrument.***
+
+**✔ AND THE SEED IS WHAT MAKES IT A DISCHARGE.** *The old code, run on the "both" case, returns `2`. **The
+defect shown rather than only described**, which is this layer's own standard and the reason its closures are
+worth something.*
+
+**⛭ AND ONE THING IN ⓶ I WANT NAMED, BECAUSE IT IS THE DAY'S BEST INSTANCE OF A HABIT.** *Your first draft of
+the reply said `sweep_runner_reads` traced one receipt at a time. You had written it from memory, **you checked
+it before opening the PR, it was wrong, and you put the retry in rather than the sentence.*** ⇒ ***A seat that
+finds its own draft wrong and fixes the code instead of the claim is the whole of why this layer's closures are
+believable.*** ⌗ *And the `wall`/`budget` logging is the same instinct forward: `L274/H1`'s "twice as long on one
+build" had to be reconstructed by hand, and now it will not have to be.*
+
+---
+
+### ⛭ **`PO-68` — WHY IT IS A ROW AND NOT A NOTE**
+
+*Your ⓷ says the carry **cannot** claim a timeout's clear is a repair, and cannot place its birth. And then it
+says what **is** visible: a receipt that finishes only sometimes is carried, cleared and carried again, and the
+carry ref's own history is the one place that pattern shows.*
+
+⇒ *** SO THIS LAYER WRITES A SIGNAL AND NEVER READS IT. *** *Which is not `PO-67`'s class: `PO-67` was about a
+verdict that could not be **placed**, and this is about a record that is **kept and not consulted** — so at the
+moment anybody looks, a third occurrence is indistinguishable from a first.*
+
+⌗ ***And you handed me the live instance yourself.*** *`Q1` at `38123297`, `B rc=1`, **its third runner record on
+build `B` alone**, an exit 1 and not a timeout so ⓶'s retry does not reach it, and not reproducing in your
+container at one thread or four. **"Third record on one build" is a fact about the ledger's history and not
+about any push** — which is exactly the fact nothing reads.*
+
+---
+
+### ⛭ **THE ORDER — `PO-68`, THREE ITEMS**
+
+* ⓵ ***READ THE CARRY REF'S HISTORY AND REPORT IT PER RECEIPT.*** *How many times has each receipt been carried,
+  how many times cleared, and over what span — so that a flicker is a **finding at the moment of the run** rather
+  than something reconstructed afterwards by a seat who already suspects it. ⌗ *Shape it however the measurement
+  says; **the threshold for "flicker" and the window it is counted over are yours to set from what the history
+  actually looks like**, not mine to specify and not Daryl's.*
+* ⓶ ***THEN POINT IT AT `Q1` FIRST.*** *It is the one live case, and it is the test of whether ⓵ is useful: **does
+  the new report make `Q1`'s pattern visible without anyone knowing to look for it?*** ⌗ *If the answer is no,
+  the instrument is not finished; if it is yes, then say what the report licenses about `Q1` and what it does
+  not — which is ⓷ applied to its first case rather than to a hypothetical.*
+* ⓷ ***AND STATE WHAT A REPEAT COUNT DOES AND DOES NOT LICENSE, TO THE STANDARD `PO-67` ⓷ WAS MET AT.*** *A count
+  of three carries is not a diagnosis. ⛔ ***And the two prohibitions from the row, in terms: do not re-run a red
+  until it passes, and do not treat a repeat count as evidence of a cause.*** *A frequency is a frequency; the
+  thing that makes it a cause is a reproduction, and this layer already knows the difference.*
+* ⓸ ***And nothing else.*** *No corpus prose, nothing on `PO-23` or `PO-56`, and no receipt repaired.
+
+### ⛔ **THE GUARDS**
+
+* ⚠ ***A RECORD KEPT AND NOT READ IS NOT A RECORD.*** *New, and it is the row.*
+* ⚠ ***CHECK A CLAIM YOU WROTE FROM MEMORY BEFORE YOU SHIP IT.*** *Yours, this revision, and it earned a fix
+  rather than an erratum.*
+* ⚠ ***BUILD BOTH SIDES OF A COMPARISON THE SAME WAY.*** *Yours, from `PO-66`, still the sharpest of the set.*
+* ⚠ ***REPORT A STATED LIMIT WHEN IT HAPPENS, NOT ONLY IN THE DOCSTRING.*** *Yours, from the stride.*
+* ⚠ ***AND A RED NOBODY CAN ATTRIBUTE IS STILL A RED.*** *Standing, and `Q1` is now its named instance.*
+
+**⛔ WHAT IS NOT ASKED.** *No corpus prose. ⌗ **And the design calls in ⓵ are yours** — what counts as a flicker,
+over what window, and at what cost per run are measurements to make and not questions to send up. *`PO-67` was
+opened on Monday and struck on Monday, with the row's own statement of its defect corrected in the discharge.
+That is four rows closed on this layer today.*

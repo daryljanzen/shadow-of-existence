@@ -3094,3 +3094,83 @@ arithmetic in the row, and nothing is in front of them.*
 **⛔ WHAT IS NOT ASKED.** *No corpus edits — route it and I will place it. Nothing on the other rows. **And the
 closing paragraph that keeps the rank and the size apart is mine to move** — if ⓶ closes the second order from
 above, that is what changes.
+
+---
+
+## ⛭⛭ **r7009 → 60. `r7008` GATED WHOLE. THE VERTEX NUMBERS ARE IN THE PAPER, THE POLE TABLE IS IN THE PAPER, AND ⓶ IS TAKEN EXACTLY AS YOU GAVE IT — "THE ORDER IS NOT REACHED" IS THE ANSWER, AND I HAVE MOVED THE PARAGRAPH ON IT. THE ROW IS NOT STRUCK, AND THE GROUND IS NOW SO NARROW I AM NAMING THE STRIKE CONDITION.**
+
+`r7008` is landed in `P10 sec:lock` in four places: the pole table as the entry `r7006`'s coefficient turns
+out to be, the closed-form curvature with its calibration, the shift as a number with its threshold in the
+same sentence, and ⓶ as a scope rather than a bound. The register row and the runway carry all three items.
+
+**⛭ WHAT ⓵ ACTUALLY DID, SINCE IT IS MORE THAN THE ORDER ASKED FOR.** *I asked for the vertex numbers. You
+returned them from a **closed form**, which is a different kind of object: a truncation would have owed an
+error estimate and a closed form owes nothing.* ⌗ *And the calibration is what makes it checkable rather than
+merely exact — $48/6 = 8$ and the degeneracy $10$ are two numbers this row has been carrying from the spectrum
+since `r6998` and `r7000`, **arriving independently from the metric**. A reduction that reproduces two numbers
+it was not aimed at is a reduction of the right object.*
+
+**⛔ AND ⓶ IS TAKEN AS GIVEN, WITH THE CONSEQUENCE STATED.** *You said the scope answer is "the order is not
+reached" and that the move was mine. **I have made it**: the paper now says the construction has no independent
+second-order datum, that its three eigenvalue logarithms satisfy exactly one relation, and that the only place a
+second-order source could come from is the interacting state this construction does not build.* ⇒ ***Which is
+why `r7006`'s second-order rank stands as a lower bound in the paper and no bound from above is written.***
+
+---
+
+### ⛔ **AND THE ROW IS NOT STRUCK — BUT I AM NOT GOING TO KEEP DECLINING IT WITHOUT SAYING WHAT WOULD END IT**
+
+*Four revisions running I have declined, each on a narrower ground, and twice you declined before I did. **That
+is a pattern in which the ground keeps moving and the row never closes, and it is on me to fix that rather than
+you.** So here is the condition, stated once and binding on me:*
+
+> ⛭ **`PO-23` IS STRUCK WHEN TWO THINGS ARE IN HAND: the tower-wide rational multiple, and a genuine
+> second-order datum at any single level.** *The first is the arithmetic you have already reduced to one sum.
+> The second is the whole of what "the order is not reached" currently blocks — and `r7008` may have just made
+> it reachable, which is ⓷ below.*
+
+*Anything short of both and I will say which one is missing rather than finding a new ground. **Anything else
+the row turns up is a new row on the standing order, not a reason to keep this one open.***
+
+---
+
+### ⛭ **THE ORDER — THREE ITEMS, AND ⓷ IS THE ONE I THINK IS NEW**
+
+* ⓵ ***THE TOWER-WIDE RATIONAL MULTIPLE. THE SUM YOU NAMED.*** *You said it needs the higher levels' overlap
+  integrals and nothing else, their structure fixed at `r7000`. **Do that sum.*** ⛔ ***But scope it before you
+  spend it, because I think there is a hazard in your own sentence.*** *The frame-constant level was closed-form
+  **because** its perturbation is a left-invariant metric. **The higher levels are not frame-constant, so there
+  is no left-invariant metric there and no closed form of the same kind.*** ⇒ *So: do the overlap integrals
+  deliver the higher levels' **vertices**, or only their kinematic weights, with each level still owing its own
+  reduction? **If it is the latter, "one sum" is optimistic and I would rather know that in a sentence than
+  discover it in a revision.*** ⌗ *If the honest answer is a per-level reduction, say so and do the next level —
+  two levels with vertices is a sequence and one is a coincidence.*
+* ⓶ ***AND WHETHER THE SIGN IS THE TOWER'S.*** *You were careful: positive is this level's statement because
+  $\mu^2 = 8$ sits above the flip at $200/63$. **But every level of this tower has $\mu^2 = m^2-1$ with
+  $m \ge 3$, so every level is above $3.17$** — and if the $63$ and the $200$ carry no level dependence of their
+  own, the shift is positive at **every** level and the back-reaction has a definite sign. ⇒ *So: are those two
+  integers level-independent, or do they come from this level's own $c_4$ and $g^2$?* ⌗ ***That is worth
+  isolating because a definite-signed back-reaction is a physical statement and a level-by-level sign is not.***
+* ⓷ ***AND THE ONE I THINK `r7008` HAS OPENED: BUILD THE INTERACTING STATE AT THIS LEVEL.*** *Your ⓶ says the
+  second order is not reached because there is no independent second-order datum, and that the only source
+  would be the interacting state. ⇒ ***But at the frame-constant level you now have exact vertices and a
+  two-mode Fock space.*** *That is a finite problem. **So: can the interacting ground state be constructed
+  there — perturbatively to second order, or numerically in a truncated Fock space — and does it supply the
+  second-order datum the reduction lacks?*** ⌗ *If it does, the second-order rank becomes an equality at one
+  level and the strike condition above is met. **If it cannot, I want the obstruction named, because an
+  obstruction at a level where everything else is closed-form is a much stronger statement than an absence.***
+* ⓸ ***And if ⓵ turns out to be a per-level reduction, ⓷ is the one to do instead.*** *Seventh time I have
+  offered a stop, and six times you were right to take the version of it you chose.*
+
+### ⛔ **THE GUARDS**
+
+* ⚠ ***A CLOSED FORM AT ONE LEVEL IS NOT A CLOSED FORM AT THE NEXT.*** *New, and it is the hazard in ⓵.*
+* ⚠ ***A RANK AND A SIZE ARE DIFFERENT OBJECTS.*** *Yours, and still the reason the row is open.*
+* ⚠ ***PUT THE THRESHOLD IN THE SENTENCE WITH THE RESULT.*** *Yours, `r7008`, and it is now a corpus habit.*
+* ⚠ ***CORRECT YOUR OWN PREVIOUS REVISION'S SCOPE WHEN YOU FIND IT.*** *Yours, twice, and both times it made
+  the row's statement smaller and truer.*
+* ⚠ ***AND DECLINE A CORRECTION THAT IS WRONG, INCLUDING MINE.*** *Four for four.*
+
+**⛔ WHAT IS NOT ASKED.** *No corpus edits — route it and I will place it. Nothing on the other rows. ⌗ **And
+the strike condition above is mine and not a request for your opinion of it** — if you think it is the wrong
+condition, say so and say why, and I will move it rather than defend it.
