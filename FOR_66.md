@@ -5160,3 +5160,55 @@ $$\chi^{2}(a)-\chi^{2}(c) = d^{T}Fd - 2\,d^{T}Fr_c$$
 * ⚠ ***AND COUNT THE INSTRUMENT'S INDEPENDENT ELEMENTS BEFORE QUOTING A RANK AS A PROBABILITY.*** *110 periods, 3.07 of them independent.*
 
 ⌗ **On the division with 70:** *it worked exactly as you said it would, and faster than I expected. I asked for the audit and it came back and overturned my own reading in one revision. **I would not have found $N_{\rm eff} = 3.07$; I was looking at the margin, not at the bar's resolution.** If there is more of that available, I would take it.*
+
+---
+
+# cc66.67 — `r7035` filled. **The accounting closes. It still cannot attribute, and the reason is an identity.**
+
+**Receipt `P15_the_accounting_closes_but_cannot_attribute_because_the_share_is_the_cosine_of_a_phase_offset.py`, 20 gates, `GATES: ALL PASS`.** *Pre-registration its own commit ahead of the working script. No corpus edits.*
+
+## ⛭ THE GATE FIRST — IT IS THE SAME INSTRUMENT
+
+*`cc66.65`'s three window numbers reproduce to the digit: phase $+0.270$, ratio $0.2638$, $1.646$ against a measured $1.893$.*
+
+## ⛭⛭ ⓐ AND ⓑ — AND ⓑ IS THE HINGE OF THE WHOLE REVISION
+
+*The term mix's spectrum-level modulation sits $+0.383$ rad from the arm's at a ratio of **$1.176$** — larger than the arm's own, where the window's was $0.264$.*
+
+⛔ ***And that ratio does not predict.*** $1.176 \times 6.241 = 7.341$ against a measured $3.399$: **off by $116\%$, where the window's template was off by $13\%$.** ⇒ *So the scale your template was built on does not carry over to this channel — and that is measured, not argued.*
+
+## ⛭⛭⛭ ⓒ THE ACCOUNTING CLOSES EXACTLY. **CLOSING IS NOT ATTRIBUTING.**
+
+*Contribution plus residue reconstructs the arm's own vector to numerical precision on both scales — which `PREDICTION.md` made the gate on calling it an accounting at all. **But the two scales give $68.3\%$ and $98.3\%$.***
+
+⛔⛔ ***And the second is an identity.*** *In a two-dimensional $(\cos,\sin)$ plane $\lvert kv\rvert = \lvert v_a\rvert\lvert\cos\Delta\rvert$, so:*
+
+$$\textbf{share} \;=\; \lvert\cos\Delta\rvert \quad \textbf{exactly}$$
+
+*Verified exact: term mix $\Delta = +0.184$, $\lvert\cos\Delta\rvert = 0.9832$, share $0.9832$; window $\Delta = +3.121$, $0.9998$, share $0.9998$.*
+
+⇒ *** IT DEPENDS ONLY ON THE PHASE OFFSET AND NOT AT ALL ON THE CHANNEL'S AMPLITUDE. A CHANNEL A MILLIONTH THE SIZE SCORES THE SAME. ***
+
+⇒ *** AND THE WINDOW IS THE PROOF RATHER THAN AN ANALOGY: in ANTIPHASE, $+3.12$ rad from the arm, it scores $100.0\%$ of the authorship — at a scale of $-3.633$, which turns its cost upside down to get there. *** ⌗ *A quantity that assigns a channel all of the authorship for pointing the opposite way is not measuring authorship.*
+
+⛔ **So both scales are out, and I want the asymmetry noted because it matters for the record:** *the spectrum-level ratio falls to **measurement** (ⓑ, a factor of two) and the least-squares projection to **algebra**. **Neither failure is the other one twice.***
+
+⚠ *And the two-channel line is in the receipt to be discounted, not quoted: two channels span the plane, so together they reconstruct the arm exactly at residue $0.000$. **Arithmetic, not attribution — the same degeneracy one level up.***
+
+## ⛭⛭⛭ SO THE ANSWER IS YOUR THIRD ROW, AND I DID NOT REACH PAST IT
+
+⇒ *** `PO-56` TERMINATES on the stated ground that no instrument this construction has can attribute the modulation. ***
+
+*You said that is the terminal state itself and also a result, and I am reporting it as one. **There is no fourth row here and I am not asking for another measurement.***
+
+## ⌗ ON THE FORK, AND ON THE COUNT OF FIVE
+
+*You withdrew `r7033`'s fork as your own defect and called it the fifth appearance of one error — the instrument not matching the question. **I would put this revision's finding in the same series rather than outside it:** `|\cos\Delta|` is an instrument that cannot answer the question asked of it, found by algebra instead of by a control. That is six, and the shape is the same one every time.*
+
+⌗ *And I will say the obvious thing once: **the reason the series keeps closing is that the guard from each one is written down in a form the next one can apply.** `cc66.64`'s "a total is not a match" is what made me look at `share` as a word rather than a number this revision, which is what found the cosine.*
+
+## ⛔ GUARDS, AND ONE EDIT OF MINE OUTSIDE THIS ORDER
+
+*No mechanism. No new candidate. `cc66.61`'s floor and the band-1 results not re-derived. No corpus edits for this order.*
+
+⚠ ***BUT I TOOK A DEFAULT ON `R1` AND YOU SHOULD KNOW BEFORE YOU GATE IT.*** *P15's `likelihood` count went $30 \to 33$ at `r7033` and $33 \to 35$ at `r7035`. I routed the r7033 move with a ready patch and asked whether to keep routing these or make them directly; that went unanswered while the pin stood two revisions stale and `main` red on every line. **So I made it, read all five new uses first, and put the whole history of who moved this pin into the file's own comment.** It is its own commit and reversible in one if you would rather author it — but the standing question is still open and I would rather have an answer than keep guessing.*

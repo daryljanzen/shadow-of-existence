@@ -6269,3 +6269,62 @@ positions", so the peak-only reading would have been a dodge.* ⇒ ***70's factu
 **The qualifier:** `anchored()` returns $-c_1/2c_0$, a vertex **position**, never a height. *So the claim
 survives in substance but was carrying an implication it had not earned — that the instrument does not reach
 band 1 at all.* ⇒ ***It LOCATES inside band 1 and MEASURES no height there.***
+
+## cc66.67 — the accounting: it closes, and it cannot attribute
+
+**Order `r7035`.** *`r7033`'s fork withdrawn by 66 as its own defect — a detection test asked of an authorship
+question. Pre-registration its own commit ahead of the working script.*
+
+### Gate — `cc66.65`'s window numbers reproduce to the digit
+
+| | measured now | `cc66.65` |
+|---|---|---|
+| phase offset | +0.270 rad | +0.27 |
+| amplitude ratio | 0.2638 | 0.264 |
+| prediction vs measured | 1.646 vs 1.893 | 1.646 vs 1.893 |
+
+### ⓐ and ⓑ — the ratio, and the hinge
+
+| channel | spectrum-level phase − arm | ratio | predicted | measured | error |
+|---|---|---|---|---|---|
+| window | +0.27 | 0.264 | 1.646 | 1.893 | **13%** |
+| **term mix** | **+0.383** | **1.176** | **7.341** | **3.399** | **116%** |
+
+⇒ ***The scale `r7035`'s template was built on does not carry over to this channel.***
+
+### ⓒ — the accounting closes, on both scales
+
+| scale | $k$ | contribution | residue | share | closes? |
+|---|---|---|---|---|---|
+| spectrum-level ratio | 1.176 | 4.985 | 2.570 | **68.3%** | exact |
+| least-squares projection | 1.694 | 7.181 | 1.335 | **98.3%** | exact |
+
+*Naive amplitude ratio 58.0% at a phase offset of +0.18 rad — the gap between naive and vector is the phase
+doing work, and it is reported rather than hidden.*
+
+### ⛔ And the second scale is an identity
+
+In a two-dimensional $(\cos,\sin)$ plane, $k = (v_a\!\cdot\!v)/(v\!\cdot\!v)$ gives
+$|kv| = |v_a\!\cdot\!v|/|v| = |v_a|\,|\cos\Delta|$, so
+
+$$\textbf{share} = |\cos\Delta| \quad \textbf{exactly}$$
+
+| channel | $\Delta$ | $\lvert\cos\Delta\rvert$ | measured share | $k$ |
+|---|---|---|---|---|
+| term mix | +0.184 | 0.9832 | **0.9832** | +1.694 |
+| **window** | **+3.121** | **0.9998** | **0.9998** | **−3.633** |
+
+⇒ ***It depends only on the phase offset and not at all on the channel's amplitude.*** ⇒ ***And the window is
+the proof: in antiphase it scores 100.0% of the authorship, at a negative scale that turns its cost upside
+down to get there.***
+
+**So both scales are out, each for its own reason and neither failure the other's:** the spectrum-level ratio
+by **measurement** (ⓑ, a factor of two), the least-squares projection by **algebra**.
+
+⚠ *Two channels together span the plane and reconstruct the arm exactly, residue 0.000 — arithmetic, not
+attribution, and printed to be discounted.*
+
+### ⇒ The third row
+
+***`PO-56` TERMINATES on the stated ground that no instrument this construction has can attribute the
+modulation.*** *`r7035` calls that the terminal state itself and also a result. No fourth row was reached for.*
