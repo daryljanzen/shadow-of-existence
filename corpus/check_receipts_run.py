@@ -227,7 +227,12 @@ def main():
         print('     no RESULT was, which is a different thing from green. **  Re-run the suite.')
         return 1
     print(f'  the verdict covers all {nreg} registered receipt(s)')
-    failed = re.findall(r'\[FAIL\] receipts/\S+/(\S+\.py)', res)
+    # ⛭ r7019 (70.1): anchored at the runner's own four-space indent, as the verdict line above is anchored
+    #   at its two.  A timed-out receipt's kept output now prints under its `[slow]` line (indented eight),
+    #   and a receipt that runs the runner (G50) prints `[FAIL] receipts/...` INSIDE that output.
+    #   ** Calibrated: on the 165 `gates` suite logs of 09-26..09-29 the anchored and unanchored patterns
+    #   return the same 440 FAIL and 19 slow matches, log for log. **
+    failed = re.findall(r'(?m)^    \[FAIL\] receipts/\S+/(\S+\.py)', res)
     # ** r3995: THE EXEMPTION IS CONDITIONAL ON THE MODULE BEING ABSENT, not on the name. **
     #   It was unconditional, so a receipt on this list was filed ENVIRONMENT wherever it
     #   failed -- INCLUDING IN CI, WHICH INSTALLS camb AND pynucastro (gates.yml:117).  A real
@@ -278,7 +283,7 @@ def main():
     #   PART 3 of 8: not a cap problem, A RECEIPT NOBODY HAS WATCHED COMPLETE -- while it is
     #   registered PASS and carries PO-24's step-one result.  ** Registered and runs are not
     #   the same claim. **
-    slowlines = re.findall(r'\[slow\] (\S+)\s*--\s*([^\n]*)', res)
+    slowlines = re.findall(r'(?m)^    \[slow\] (\S+)\s*--\s*([^\n]*)', res)   # anchored, r7019 (above)
     if slowlines:
         print(f'    ⛔ {len(slowlines)} receipt(s) NEVER FINISHED -- registered, never watched to completion:')
         for pth, why in slowlines:

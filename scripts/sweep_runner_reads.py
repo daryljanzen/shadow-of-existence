@@ -219,8 +219,8 @@ def _run(root, rel, budget, out):
     if os.path.exists(log):
         return
     d, f = os.path.split(os.path.join(root, rel))
-    env = dict(os.environ, **_ONE_THREAD)
     st = _st()
+    env = dict(os.environ, **_ONE_THREAD, **st.CHILD_ENV)   # r7019: unbuffered, so a timeout keeps its output
     out = err = ''
     try:
         r = subprocess.run([sys.executable, HERE, '--trace-one', log, f], cwd=d, env=env,

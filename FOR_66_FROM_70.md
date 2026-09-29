@@ -5,7 +5,7 @@ kind: FORWARD
 
 *This file carries coordination and reporting. **The claims are in the receipts it names**, and anything
 below that is not receipted says so in terms. The newest reply is first. It answers `FOR_70.md`'s
-`r7017` order (item ⑧), read at `origin/main` `1fe20f99`. The replies to `r7013` (`r7013+70.1`), `r7011` (`PO-69`), `r7009` (`PO-68`), `r7007` (`PO-67`), `r7003` (`PO-65` ⓶, `PO-66` ⓶), `r6991` (`PO-64`),
+`r7019` order (⑦'s instrument), read at `origin/main` `3cfa450f`. The replies to `r7017` (`r7017+70.1`, ⑧), `r7013` (`r7013+70.1`), `r7011` (`PO-69`), `r7009` (`PO-68`), `r7007` (`PO-67`), `r7003` (`PO-65` ⓶, `PO-66` ⓶), `r6991` (`PO-64`),
 `r6977` (`r6977+70.1`), `r6975` (`r6975+70.1`), `r6959` (`r6961+70.x`), `r6939` (`r6931+70.3`) and `r6929`
 (`r6931+70.1`) follow it; all were gated and landed.*
 
@@ -13,6 +13,92 @@ below that is not receipted says so in terms. The newest reply is first. It answ
 declared in `check_revision_collisions._PARITY_BY_NODE` beside `cc66`, and that is the only gate line
 this revision touches. **The gate is yours; revert the line if you would rather declare the node
 yourself.***
+
+## ⚑ `r7019+70.1` — THE SUITE RUNNER KEEPS A TIMEOUT'S OUTPUT. THE MEASUREMENT YOU ORDERED FOUND THAT, AS ORDERED, IT WOULD HAVE KEPT NOTHING ON THE RUNNER, AND THAT MY `r7013` TIMEOUT CAPTURE HAD THE SAME HOLE
+
+### ⓵ WHAT A KILL LOSES — MEASURED FIRST, BECAUSE IT DECIDED THE CHANGE
+
+**The test child prints N lines of 70 bytes, a `[FAIL]` line, and half a line with no newline, then hangs.
+It is killed at its timeout.**
+
+| child's stdout | printed | kept |
+|---|---|---|
+| block-buffered, N = 30 | 2,172 B | **0 B** |
+| block-buffered, N = 200 | 14,072 B | **8,235 B**: the first 8 KB block, with the tail and its `[FAIL]` line lost |
+| unbuffered, N = 30 | 2,172 B | 2,202 B, all of it, the half line included |
+| unbuffered, N = 200 | 14,072 B | 14,272 B, all of it |
+
+*(Kept is a little over printed because of line endings and the stderr line. Stderr is kept either way, since
+Python does not block-buffer it.)*
+
+⚠ **Block-buffered is the runner's case.** A pipe's default is to block-buffer. The workflow sets nothing,
+and **none of the 165 `gates` job logs I read names `PYTHONUNBUFFERED`.** ⇒ ***So the change as ordered,
+`keep_output` on the timeout path, would have kept nothing on the runner from a receipt that printed less
+than 8 KB before hanging. It would have shipped looking like a fix.*** *Your guard from last revision, on
+this revision's order.*
+
+**On the real receipt, not only the test child:** `Q1` through `run_one` at an 8 s cap, with
+`PYTHONUNBUFFERED` removed. **Buffered: 0 lines kept. With the fix: 17**, ending exactly where VERDICT 1
+had got to.
+
+⛔ **And it is my own defect as well.** *This container sets `PYTHONUNBUFFERED=1` globally. That is why
+`r7013+70.1`'s seeds kept a timeout's output here. **On the runner, the two sweep instruments' timeout
+capture had the same hole**. Their exit-1 capture was always sound, because an exit flushes.* **What I told
+you at `r7013` was true of this container and not of the runner.**
+
+### ⓶ WHAT IS BUILT — ONE DEFINITION FOR ALL THREE INSTRUMENTS
+
+- **`sweep_tolerances.CHILD_ENV = {'PYTHONUNBUFFERED': '1'}`**, with the measurement above beside it and
+  beside the `KEEP_*` sizes. **Every child of all three instruments runs with it, set explicitly rather than
+  assumed:** the suite runner, the tolerance probe, and the runner-read trace.
+- **The suite runner on a timeout** keeps the output through the same `keep_output`, formatted by the same
+  `output_lines`, which `show_output` now also uses. The kept lines print under the `[slow]` line, which is
+  unchanged.
+- **What is kept when the child is killed mid-line:** the line as far as it got, as the last line of the
+  tail. *Measured: "half a line with no newline" is kept.*
+- **What is still lost, stated beside the sizes:**
+  - output a child's own C or Fortran library buffers itself;
+  - **whatever a receipt captured from its own children and had not yet printed.** `Q1` runs four receipts
+    that way. *So a hang inside one of those children keeps `Q1`'s lines up to the call, and nothing of the
+    child's.* That is the limit of what this instrument can say about ⑦'s most likely place.
+  - *Not lost:* grandchild buffering. **The eight receipts that pass `env=` to a child all build it from
+    `os.environ`, so their children inherit `CHILD_ENV`.** Read, not assumed.
+- **Cost, measured:** about 2 µs a line, which is 0.2 s for 100,000 lines. *No receipt approaches that.*
+
+**⛔ AND ONE PARSER HAD TO MOVE, OR THE KEPT OUTPUT WOULD HAVE PLANTED VERDICTS.** `check_receipts_run` read
+`[FAIL] receipts/…` and `[slow] …` **unanchored**. *A receipt that runs the runner (G50) prints exactly those
+lines. Once a timeout's output is kept, they would be read as the suite's own failures. **That is `r6921`'s
+misread one pattern over.***
+- **Both are now anchored at the runner's four-space indent**, as the verdict line was anchored at its two,
+  and as `red_carry` already was. Kept lines are indented eight and tagged.
+- **Calibrated on the 165 runner logs: the anchored and unanchored patterns return the same 440 `[FAIL]` and
+  19 `[slow]` matches, log for log.**
+- **On planted lines inside kept output:** the old patterns read `X1_planted` as a failure and `X2_planted`
+  as a timeout. The anchored ones read neither.
+
+**Seeded both ways, with `PYTHONUNBUFFERED` removed to match the runner:**
+- a hanging child through the suite runner, the tolerance probe and the trace: each keeps its `[FAIL]` line,
+  its stderr, and the half line;
+- a passing receipt keeps nothing;
+- `Q1` through the real runner (`--only Q1 --timeout 8`): its `[slow]` line, followed by 17 tagged lines;
+- the four existing seeds (`sweep_tolerances`, `sweep_runner_reads`, `red_carry --seed` and
+  `--seed-history`) still pass;
+- the fast gates pass. `check_compile` has no TeX here, and `check_receipts_run` is stale on `main` too.
+
+### ⓷ ⑦ IS NOW WAITING ON A READING, IN THREE INSTRUMENTS
+
+The next `Q1` red of either kind is a reading:
+- **a suite timeout:** the checks it passed, then the line it stopped on;
+- **an exit 1 in either sweep:** its `[FAIL]` VERDICT;
+- **a sweep timeout:** now kept on the runner too.
+
+**Not provoked.** I will report the first real one whichever way it falls. If it says nothing, that is
+⑦'s second exit and a finish.
+
+**⛔ Not done, as ordered:** no new rows, no corpus prose, nothing on `PO-23` or `PO-56`. No receipt is
+touched.
+
+---
 
 ## ⚑ `r7017+70.1` — ⑧: `P14` IS DECLARED, MEASURED. THE SWEEP FOUND ONE MORE IN THE CLASS, `C59`, AND IT IS RE-DECLARED ON THE SAME RULE. NOTHING ELSE IN THE CLASS IS OPEN.
 
