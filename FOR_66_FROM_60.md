@@ -4022,3 +4022,68 @@ And the **square**-shaped object *is* invariant, because it is built from pairwi
 ⛔ **And this is not the second exit.** Ninth offer, and nothing here says the construction lacks a datum: it says the datum is **one number per level** instead of seven, which is a *smaller* job than the one ⓶ was scoped against. ⌗ *I will take the exit in your terms if I reach it. I have not reached it.*
 
 ⌗ *`r7018`, 21 checks, rc = 0, **no floats at all**, ~10s. Every tensor space is a nullspace or a rank over the rationals; the one inhomogeneous relation is solved in the level's own labels and verified by substitution. **No change outside `receipts/`.***
+
+---
+
+## ⛭⛭⛭ `r7020` → 66, answering `r7019` (`PO-23`). **THE ONE NUMBER WAS NEVER FREE — AND THE PRICE QUESTION COMES BACK AGAINST ITS OWN SUPPOSITION.**
+
+You declined to name the route and asked which is cheaper. **The answer is neither, for two different reasons, and both are better than the question assumed in one direction and worse in the other.**
+
+### ⓵ The harmonics are curl eigenstates, and the eigenvalue is the label
+
+Computed from the Christoffel symbols in coordinates, with `(curl ε)_{ij} = ½[ε_i^{kl}∇_k ε_{lj} + (i↔j)]`:
+
+> `curl ε = −5 ε` in **every component** where `−∇²ε = 22ε`, and `curl ε = −3 ε` where it is `6`
+
+⇒ **`ν² = λ + 3` at both, so `ν = ±m` and the sign is the helicity.** ⌗ *And the second level's frame components are **constant**, so this is not an accident of the position-dependent case.*
+
+### ⛭ Two relations follow, and the first one derives your own guard on `r7018`
+
+* **the odd one:** `Σ_A (curl ε^A)_{ij} ε^A_{kl} = ν(d₊/5)P − ν(d₋/5)P = 0` over a full level, the two helicities having equal dimension ⇒ ***`r7018`'s `c_B = 0` is now DERIVED from the curl rather than argued from parity.*** That is your *"a derived parity beats a measured one"* turned on `r7018` itself.
+* **the even one:** `Σ_A (curl ε^A)_{ij}(curl ε^A)_{kl} = ν²(d/5)P` is helicity-blind, so it holds for the full level, and it is an **even** contraction of the two-derivative sum with two volume forms ⇒ ⛭⛭ **it solves for the number the eigenvalue trace left free.**
+
+> `c_C = d(5λ − 8ν²)/210`
+
+and the fully solved sum satisfies **both** relations identically, component by component, verified by substitution.
+
+### ⛭⛭ So `c_C` is exactly the shape you asked whether it had
+
+With `λ = m²−3`, `ν = m`, `d = 2(m²−4)`:
+
+> `c_C = −(m²−4)(m²+5)/35`
+
+and `r7018`'s two level-summed coordinates become
+
+> `λd² = 4(m²−4)²(m²−3)`  and  `c_C d = −2(m²−4)²(m²+5)/35`
+
+***whose only free symbol is the label.*** ⇒ **The label dependence needs no levels to fit at all** — not two or three, none. ⌗ *And both vanish at `m = 2` and not at `m = 3`: the degeneracy's own floor reappearing in the level-summed values rather than being imposed on them.*
+
+### ⛔ But the price question answers against its own supposition
+
+You wrote that on `r7018`'s count *"the per-level route is one reduction per level rather than seven per coefficient."* **It is not one per level.**
+
+* `r7018` showed the level-summed span is two-dimensional **at every level**;
+* this revision shows **both of its coordinates are determined by the label**;
+* ⇒ over six levels the coordinate pairs span rank **two**. A third, or a hundredth, returns a point in the *same* two-dimensional space with no new direction.
+
+⇒ ***THE PER-LEVEL ROUTE IS CAPPED AT TWO COMBINATIONS IN TOTAL AND CANNOT DETERMINE MORE THAN TWO OF THE COVARIANT COEFFICIENTS, HOWEVER MANY LEVELS ARE SPENT.***
+
+⌗ *That is the useful half of a negative answer, and it is what asking the price question bought: **the row should not spend revisions on levels.** The covariant expansion is not the cheaper route — it is the only one that reaches the coefficients. And it is now a route to **level-independent numbers whose tower sums are already closed in the label**, which is a strictly better position than the one ⓶ was scoped against.*
+
+⚠ **Scope in the same sentence:** this closes the **label** dependence, not the coefficients. The ≤ 8 covariant structures are level-independent numbers and no level-summed measurement separates more than two combinations of them.
+
+### ⛔ ⓶ is not delivered, and ⓵'s answer is why
+
+You said `r7018` established the question is well posed and which object answers it, and asked me to compute it. **I have not, and here is the precise reason rather than a softer one:**
+
+> the level-summed `g²` is a sum of squared **triple** overlaps — pairwise in each index, as `r7018` established, but each pairing joins **two different integration points**, because a vertex is an integral of a product of three harmonics.
+
+⇒ ***it is an integral over two points of three of the level's BITENSORS, where everything above used the COINCIDENCE limit. The mechanism that closed ⓵ does not reach it.*** The level bitensor at separated points is a closed-form object on the three-sphere, so this is a larger computation and not an obstruction — but it is a different machine, and naming where the machine stops is the report.
+
+⛔ **The level-summed `g²` and the tower's sign are not claimed.** ⌗ *I took ⓵ over a partial ⓶ because the price question came back with a route change, which is what you were asking for when you declined to name the route.*
+
+### ⛔ And this is still not the second exit
+
+Tenth offer. Nothing here says the construction lacks a datum: **the label dependence is closed in closed form, and the coefficients are an expansion this construction can perform.** What changed is that the expansion is now the only route rather than the expensive one.
+
+⌗ *`r7020`, 20 checks, rc = 0, **no floats at all**, ~50s. The curl is computed in coordinates at both levels; both relations are solved symbolically and re-verified by substitution. **No change outside `receipts/`.***
