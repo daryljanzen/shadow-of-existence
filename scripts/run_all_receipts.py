@@ -129,7 +129,18 @@ SLOW = (
 #   The global cap stays where it is; this buys the one receipt that needs it the room to finish,
 #   and the number is the measurement plus headroom rather than a round figure chosen to feel safe.
 LONG = {
-    'C59_the_control_reproduces_camb_and_the_height_defect_was_k_truncation.py': 1800,  # measured 1302s
+    # ⛭ RE-DECLARED r7017+70.1 (70), 1800 -> 2100, on ⑧'s sweep of the class.  This entry was
+    # "measurement plus headroom" and predates the 1.7x rule every entry below uses.  It is the ONE
+    # declaration whose number sits below its own rule's product: 1302 x 1.7 = 2213.
+    #   ** MEASURED AGAIN, ALONE, ONE THREAD, NOTHING ELSE RUNNING: 1155s, exit 0. **  The file is
+    #   unchanged since `2adddf6c`.  The `gates` logs from 09-26 to 09-29 give 96 readings, and they
+    #   reach it on the runner: 743-1697s, median 1326s, and 33 of the 96 above 1500s.  ** 1697s is
+    #   94 per cent of 1800 **, which is the undeclared-margin class one level up: a budget that holds
+    #   today and reports SLOW on the first slower runner.
+    #   ⌗ *The rule, and nothing else: 1155 x 1.7 = 1964 -> 2100, the next 300s step, as 1736 -> 1800
+    #     and 711 -> 900 were.  The runner's own worst reading, 1697/1155 = 1.47x, sits inside the
+    #     1.7x, so C63's spread holds for this file and no file-specific spread is needed.*
+    'C59_the_control_reproduces_camb_and_the_height_defect_was_k_truncation.py': 2100,  # measured 1302s; re-measured 1155s alone, one thread (r7017+70.1)
     # ⛭ ADDED r4564 (60).  `C63` drives the two-arm instrument as a SUBPROCESS ten times -- eight for
     # the source-term matrix (both arms x baseline/NOISW/DPSRC/SWSRC) and two for the damping
     # exclusion -- and every one of the ten is load-bearing: the claim is that NO single term carries
@@ -214,6 +225,26 @@ LONG = {
     #     the measured figure times that spread, rounded up (366 -> 622 -> 900), and declared because
     #     `SLOW` is not a pass and a verdict that depends on the load is not a verdict.*
     'P10_the_algebraic_quartic_is_settled_by_the_frame_constant_level_at_every_level_and_the_remainder_is_the_derivative_sectors_eight.py': 900,  # measured 366s alone
+    # ⛭ ADDED r7017+70.1 (70), on the RUNNER'S OWN READINGS of this file, because the rule above
+    # would NOT have declared it.  Routed to node 70 at `r6993` as the plain undeclared-margin class,
+    # with the remedy stated, and left undeclared until now.  ** MEASURED, ALONE, ONE THREAD, NOTHING
+    # ELSE RUNNING: 308s, 48 checks, exit 0. **  The file is unchanged since `5e4be2fd`, so every
+    # reading below is of this same receipt.
+    #   ⇒ *By the rule the entries above were set by, 308 x 1.7 = 524, which is INSIDE the cap, so it
+    #     would stay undeclared.  The runner disagrees.*  The scoped-suite logs of the `gates` runs from
+    #     09-26 to 09-29 were read: 158 `scope-suite` logs and 7 `heavy` logs.  They show this receipt
+    #     33 times:  ** 28 passes at 214-584s, and 5 OVER THE 600s CAP, all on 09-28 pushes. **
+    #     *(A pass is printed only when it is among its run's five slowest, so 33 is the number of
+    #     readings, not the number of runs.)*
+    #   ⌗ *So this file's own contention spread is at least 584/308 = 1.9x on a pass and above
+    #     600/308 = 1.95x on each of the five overruns, where the cap cut the reading short.  That is
+    #     worse than C63's 1.7x.  It is measured, NOT explained, and no cause is claimed for it.*  So
+    #     the rule is kept and this file's spread is used in place of C63's.  The number is the same
+    #     step the four 900s entries took: 900s holds a spread of 2.9x against the 308s standalone
+    #     figure, and 1.5x against the worst reading that passed.
+    #   ⛔ *Not by lifting the global cap: that would hide every other undeclared margin behind this
+    #     one.*
+    'P14_the_constituent_count_is_conserved_on_every_static_member_and_the_twist_alone_violates_it.py': 900,  # measured 308s alone; runner 214-584s, 5 over 600s
 }
 # ⌗ ** AND ONE OBSERVATION RECORDED RATHER THAN EXPLAINED, r4564. **  In the run that first showed
 # `C63` at 525s, `Q1_a_stated_tolerance_is_a_request_and_the_corpus_answers_it.py` hit the 600s cap --
