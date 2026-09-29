@@ -26,7 +26,7 @@ one: a list that grows whenever something worthwhile appears is a cadence again.
 | **④** | **Every instrument's exit conditions distinguish its own findings**, so a reader who trusts an exit code learns the right one. | ✔ *done — `PO-67`* |
 | **⑤** | **A receipt whose verdict differs between trees that agree on everything it reads is detected and named**, at the moment of the run. | ✔ *done — `PO-68`, and the finding is a contradiction rather than a count* |
 | **⑥** | **Every stated limit of the layer is written at the site where it acts**, not left implied by an exclusion in a table. | ✔ *done — and it is the layer's own habit rather than a rule imposed on it* |
-| **⑦** | **No receipt carries an unexplained red.** | ⛭ ***ARMED IN THREE INSTRUMENTS, on the runner and not only in a container; waiting on a reading*** |
+| **⑦** | **No receipt carries an unexplained red.** | ⛭ ***READ. The red has a named mechanism; two measurements with known discharges stand between it and closed*** |
 | **⑧** | **No receipt carries a red whose remedy is known and unapplied.** | ✔ ***DONE r7019 — two instances found and discharged, the class swept on the runner's own readings*** |
 
 **✔ ⑧ IS DONE, AND IT IS DONE ON THE INSTRUMENT THAT COULD SEE THE CLASS RATHER THAN THE ONE THAT WAS TO
@@ -49,28 +49,26 @@ together add at most 600 s to a critical path whose worst observed wall is 2961 
 stated was read back: one belongs to another seat, one was routed as an observation with no remedy stated, and
 one is already applied. **None is left unapplied.***
 
-**⛭ ⑦ IS ARMED IN ALL THREE INSTRUMENTS, AND WHAT IT TOOK WAS A MEASUREMENT THAT DEFEATED TWO EARLIER
-CHANGES — ONE OF THEM ALREADY LANDED.** *The suite runner now keeps a timeout's output. But the change as
-ordered would have kept **nothing** on the runner: a pipe block-buffers by default, the workflow sets no
-unbuffered flag, and none of the 165 job logs read names one — **so a child killed at its budget having
-printed less than one block loses all of it**. Measured on a test child: 2,172 bytes printed and **0 kept**
-block-buffered, all of it kept unbuffered; and on the real receipt, 0 lines against 17.* ⇒ ***And the same
-hole was already in the two sweep instruments' timeout capture, shipped at the revision that added it*** —
-*it passed its seeds only because this container sets the unbuffered flag globally and the runner does not.
-Their exit-1 capture was always sound, an exit flushing what a kill does not.*
+**⛭⛭ ⑦ HAS ITS FIRST REAL READING, AND IT NAMES THE PLACE.** *The occurrence arrived unprovoked, on the very
+commit that armed the capture, and was carried by the ledger with nothing re-run. **`Q1`'s exit code was a
+timeout one level down**: its own six-hundred-second limit on its tightened re-run of a sample child, raised
+as an uncaught exception so the receipt died in a traceback rather than reporting a verdict. The kept stdout
+agrees line for line — the checks before it passed, the child passed at its own tolerances, and the run stops
+at that child under the tightening.* ⇒ *** SO THE RECORD'S "EXIT 1, NEVER A TIMEOUT" WAS TRUE OF THE EXIT CODE
+AND FALSE OF THE EVENT, AND EVERY EARLIER RED OF THIS RECEIPT MAY BE THE SAME THING. *** ⌗ *And it is what
+explains the ledger's contradiction pairs, which a run-time event produces and a tree defect cannot —
+consistency rather than proof, and reported as that.*
 
-**✔ SO EVERY CHILD OF ALL THREE INSTRUMENTS NOW RUNS UNBUFFERED, SET EXPLICITLY AND FROM ONE DEFINITION**,
-*with what a kill truncates measured — the line as far as it got — and what is still lost written beside the
-sizes: a child's own C or Fortran buffering, and whatever a receipt captured from its own children and had
-not yet printed. ⌗ **That last is `Q1`'s case and it is named as the limit of what this instrument can say
-about ⑦'s most likely place.** And grandchild buffering is not lost: the eight receipts that pass an
-environment to a child build it from the inherited one, read rather than assumed.*
+**⛔ WHAT THE READING DOES NOT SETTLE, AND WHAT STANDS BETWEEN IT AND ⑦ CLOSING.** *Why that run was slow is
+one reading, and a tightened solve that genuinely needs the time and plain contention both fit it. And the ten
+suite timeouts are consistent with the same event and none has been read. ⇒ *So two things are owed, **both
+with known discharges and therefore orders rather than rows**: the tightened child timed alone at one and at
+four threads, which separates the two causes; and the receipt reporting a sample child's timeout as a named
+verdict instead of dying in a traceback.* ⌗ *A receipt that cannot say which of its own checks it failed to run
+is this layer's own founding class, one level in.*
 
-**⛔ AND ONE PARSER HAD TO MOVE, OR THE KEPT OUTPUT WOULD HAVE PLANTED VERDICTS.** *The receipt-run check read
-its failure and slow patterns **unanchored**, and a receipt that runs the runner prints exactly those lines —
-so once a timeout's output is kept, they would be read as the suite's own. **Both are now anchored at the
-runner's own indent, calibrated across the 165 logs to return the same matches log for log, and planted lines
-inside kept output read as neither.***
+⌗ **And nothing else is owed on the layer**, to the list's own bar, beyond what this reading opens: *the
+instruments did their job on the first real event — it was kept, printed where it survives, carried, and read.*
 
 ⇒ ***⑦ still closes either way***: *a named failing check, a timeout traceback, or — if it recurs and says
 neither — a red not reachable from any tree this corpus controls, written at the receipt as a stated limit,
@@ -279,7 +277,7 @@ corpus in `PO13_WORKING_STATE.md`.*
 
 <!-- GRAIN-CURRENCY:BEGIN -->
 
-## ⌗⌗⌗ CURRENCY — **GENERATED** by `scripts/regen_grain_currency.py`, baseline r2417, register front r7023
+## ⌗⌗⌗ CURRENCY — **GENERATED** by `scripts/regen_grain_currency.py`, baseline r2417, register front r7025
 
 > ⚠ **THE BODY BELOW STOPS AT THE BASELINE. This head is the list of what has moved since, and it is REGENERATED rather than written** — *because these documents go stale every ~20 revisions by construction, and paying that by hand is a debt that recurs rather than a defect that closes.*
 >
