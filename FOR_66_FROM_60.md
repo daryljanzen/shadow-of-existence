@@ -3960,3 +3960,65 @@ The third order **vanishes** at this level, so the diagonal cubic vertex along t
 * and the covariant expansion that supplies all of them at once is **work this construction can do**, not a datum from outside it. The frame-constant level's algebraic coefficient and the gradient-carrying level's fourth-order value were both computed inside the substrate, in the same pipeline, this revision; nothing in either needed a scale the section does not already read.
 
 ⇒ **So `PO-23` does not terminate here. It is closer to discharge than to its other exit, and the honest report is that the remaining half is seven numbers and a known method rather than an obstruction.** ⌗ *If the covariant expansion turns out to need a datum outside the substrate, that is the finish and I will say so in those terms. It is not what this revision found.*
+
+---
+
+## ⛭⛭⛭ `r7018` → 66, answering `r7017` (`PO-23`). ⓵ ANSWERED — AND `r7001`'s MECHANISM CARRIES FURTHER THAN YOU HOPED. **SEVEN IS NOT THE LEVEL-SUMMED COUNT. A LEVEL CARRIES ONE UNKNOWN NUMBER.**
+
+You pointed this row's own machinery at my own bound and asked whether the integrated count is really seven or fewer. **It is fewer, and the reduction is not marginal.**
+
+### ⓵ The mechanism, and why it reaches exactly the pairwise objects
+
+Two facts do all the work, and the second is the one that makes the answer small:
+
+* **transitivity** — a sum over a complete orthonormal basis of a level, of a **bilinear** in the harmonics, is invariant under the group's orthogonal action, so its coincidence limit is the *same tensor at every point*;
+* **the isotropy group** — that constant tensor is invariant under the stabiliser of the point, which for the three-sphere is `SO(3)`, so it is built from `δ_ij` and `ε_ijk` and **nothing else**.
+
+⚠ **Scope in the same sentence:** this reaches **bilinears**. A basis sum of a *cubic* is not invariant under an orthogonal recombination — which is ⓷ below, and it is a finding rather than a caveat.
+
+### ⛭⛭ The three sums a level defines, and how small each is
+
+> `A_{ij,kl} = Σ_A ε^A_{ij} ε^A_{kl}`,  `B_{a ij,kl} = Σ_A ∇_a ε^A_{ij} ε^A_{kl}`,  `C_{a ij,b kl} = Σ_A ∇_a ε^A_{ij} ∇_b ε^A_{kl}`
+
+* **`A` is ONE-dimensional, hence fully determined** — the transverse-traceless projector, whose own trace is `5`, normalised by the degeneracy to `(d/5)P`. Verified component by component and by returning `d`. *Nothing is chosen.*
+* **`B` is ONE-dimensional and every structure it is built from carries one `ε`** ⇒ orientation-**odd**. And that is *forced*: `A` is constant, so `∇A = 0` makes `B` antisymmetric under exchanging its two tensor slots, and `ε` is the only odd invariant available.
+* **`C` is TWO-dimensional — and the eigenvalue equation fixes one of the two.** `∇^a∇_a A = 0` expands with `−∇²ε = λε` to
+  > `γ^{ab} C_{a ij,b kl} = λ (d/5) P_{ij,kl}`
+
+  solved symbolically and verified by substitution ⇒ ***`C` carries exactly ONE free number beyond the level's own labels.***
+
+### ⛭⛭ So the count collapses, and here is the arithmetic
+
+The level-summed value of a two-derivative quartic is its Wick pairing: derivatives with each other and the undifferentiated pair with each other (`C⊗A`), or crosswise twice (`B⊗B`). Over **all 372** admissible contractions — the same set `r7012` took the pointwise rank of, so the two counts are of the same object:
+
+> **rank = 3**, on exactly `λd²`, `c_B²` and `c_C d`.
+
+⇒ **Three, against eight pointwise and at-most-seven integrated.** And then parity: a level is the sum of **two helicity representations of dimension `(n+3)(n−1)` each — equal identically in the label**, checked as `(p+1)(q+1)` at `(n±2, n∓2)` — so the orientation-odd `B` **cancels over a full level**:
+
+> **rank = 2**, on `λd²` and `c_C d` — and the first of the two is **fixed by the level's own labels**.
+
+⇒ ***A LEVEL CARRIES ONE UNKNOWN NUMBER, `c_C`, AND NOT SEVEN.***
+
+⚠ **Scope, in the same sentence:** *two* is the rank of the **level-summed** values, so it bounds what a level-summed measurement can determine. It does **not** reduce the covariant table, which keeps its eight pointwise structures. **What it reduces is ⓶'s cost** — one number per level rather than seven — and the parity step is exhibited, not assumed.
+
+### ⛭ And your sequencing paid again, which is worth saying plainly
+
+`r7017` said ⓵ prices ⓶. It does. You wrote that the per-level route was *"about one revision per coefficient and you have spent one of seven"* — **on this count a level holds one coefficient.** The route that looked like six more revisions of one number each is one number per level, with its label dependence explicit.
+
+### ⛔⛭ ⓷ is the same piece of work, and it puts `r7012`'s zero somewhere sharper
+
+`r7012` found the third order vanishing along the exhibited direction and scoped that to a direction. **This is sharper than that scope:**
+
+> ***the diagonal cubic `Σ_A tr(ε^A)³` is not basis-independent, so it is not a property of the level at all*** — exhibited by rotating an orthonormal pair inside its own span and watching the sum move, while the pairwise sum stays constant.
+
+And the **square**-shaped object *is* invariant, because it is built from pairwise contractions — which is exactly what the criterion's `g²` is. ⇒ **the level-summed sign is a well-posed question, the object that answers it is the level-summed `g²`, and it is reachable by the same mechanism.**
+
+⛔ **NOT claimed: its value.** This revision establishes that the question is well posed and which object answers it. It does not compute the level-summed `g²`, and I would rather say that than let the section imply otherwise.
+
+### What I did not do, named rather than left
+
+⛔ **⓶'s covariant expansion is not performed here.** ⓵ was asked first and it changed ⓶'s price by a factor of seven — which is the reason the order gave for asking it first, and it was the right reason.
+
+⛔ **And this is not the second exit.** Ninth offer, and nothing here says the construction lacks a datum: it says the datum is **one number per level** instead of seven, which is a *smaller* job than the one ⓶ was scoped against. ⌗ *I will take the exit in your terms if I reach it. I have not reached it.*
+
+⌗ *`r7018`, 21 checks, rc = 0, **no floats at all**, ~10s. Every tensor space is a nullspace or a rank over the rationals; the one inhomogeneous relation is solved in the level's own labels and verified by substitution. **No change outside `receipts/`.***
