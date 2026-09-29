@@ -40,12 +40,13 @@ receipt was also run at four pushes outside its scope, and **0 of 48 disagreed**
 | tolerance | `P10_the_commutator_bound…` | 54 | 51 (94%) | 184 s |
 | tolerance | `P10_no_state…` | 38 | 37 (97%) | 2,542 s |
 | tolerance | `P10_the_operator_is_second_order…` | 30 | 29 (97%) | 0 s |
-| suite | `L273/C1` | *pending: the stride-1 re-run is in flight* | | |
+| suite | `L273/C1` (stride 1, last 30 pushes) | 3 | 2 (67%) | 256 s |
 
-- ⇒ ***Of 525 receipt-pushes that were red (the eleven rows above), 356 (68%) were silent: the scoped job at
-  that push said nothing about a receipt that was red.*** *The tolerance class is the sharpest, at 67–97%: its scopes are
+- ⇒ ***Of 528 receipt-pushes that were red, 358 (68%) were silent: the scoped job at that push said nothing
+  about a receipt that was red.*** *Every one of the twelve was silent on most of its red pushes; the lowest
+  is `V1` at 49%.* *The tolerance class is the sharpest, at 67–97%: its scopes are
   small (2 to 32 pushes out of 400 for these four), so a red there is asked about again almost never.*
-- **What carrying all of it would have cost: 4,427 s over 400 pushes, about 11 s per push.** Most of that
+- **What carrying all of it would have cost: 4,683 s over 400 pushes, about 12 s per push.** Most of that
   is one receipt (`P10_no_state…`, 2,542 s: 23 s per run × 3 builds × 37 pushes).
 - ⌗ *`L257/V1`'s 230 is two stretches, both real. From `e7622a35` (`r6713`) check ⓹ᵇ failed on four stale
   WARNs, and from `bf41d7e5` check ⓵ᵈ failed on one unverdicted row. I re-ran both starting pushes by hand to
