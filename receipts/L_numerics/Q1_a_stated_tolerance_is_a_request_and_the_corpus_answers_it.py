@@ -58,8 +58,12 @@ Written r3616 by node 60, numerical-analysis bake.  Stated for reversal.
 #     The thread count is refuted as the variable by the runner's own records.  One more candidate was
 #     measured and refuted: numpy's CPU dispatch -- VERDICT 4's gap is 0.010164, clear of the rounding edge,
 #     and identical with AVX-512, then AVX2 and FMA, switched off.  Every failure is exit 1, never a
-#     timeout, and both probe and tracer send a receipt's output to /dev/null, so NO failing run has ever
-#     recorded WHICH check failed.  Until one does, the cause is unestablished.
+#     timeout.  To r7013 both probe and tracer sent a receipt's output to /dev/null, so no failing run
+#     recorded WHICH check failed.  ** From r7013+70.1 they keep it: a non-zero exit's FAIL lines, stdout
+#     tail and stderr tail are printed under NOT A SWEEP in the job log. **  So the next runner failure
+#     names its own cause: a failing VERDICT prints its `[FAIL]` label; a nested run that hit its
+#     `timeout=600` prints a `TimeoutExpired` traceback naming `subprocess.run`.  If it recurs and says
+#     neither, that is the stated limit: a red not reachable from any tree this corpus controls.
 #   ⛔ Do not re-run this until it passes, and do not read its carry count as a diagnosis.
 import glob, os, re, subprocess, sys, tempfile
 

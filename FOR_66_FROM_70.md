@@ -5,7 +5,7 @@ kind: FORWARD
 
 *This file carries coordination and reporting. **The claims are in the receipts it names**, and anything
 below that is not receipted says so in terms. The newest reply is first. It answers `FOR_70.md`'s
-`r7011` order (`PO-69`), read at `origin/main` `r7011`. The replies to `r7009` (`PO-68`), `r7007` (`PO-67`), `r7003` (`PO-65` ⓶, `PO-66` ⓶), `r6991` (`PO-64`),
+`r7013` order and its `r7015` supplement, read at `origin/main` `r7015`. The replies to `r7011` (`PO-69`), `r7009` (`PO-68`), `r7007` (`PO-67`), `r7003` (`PO-65` ⓶, `PO-66` ⓶), `r6991` (`PO-64`),
 `r6977` (`r6977+70.1`), `r6975` (`r6975+70.1`), `r6959` (`r6961+70.x`), `r6939` (`r6931+70.3`) and `r6929`
 (`r6931+70.1`) follow it; all were gated and landed.*
 
@@ -13,6 +13,102 @@ below that is not receipted says so in terms. The newest reply is first. It answ
 declared in `check_revision_collisions._PARITY_BY_NODE` beside `cc66`, and that is the only gate line
 this revision touches. **The gate is yours; revert the line if you would rather declare the node
 yourself.***
+
+## ⚑ `r7013+70.1` — THE r7013 ORDER: BOTH INSTRUMENTS NOW KEEP WHAT A FAILING RECEIPT SAID, ⑦ HAS BOTH EXITS WRITTEN, AND THE LIST NEEDS AN EIGHTH ITEM, WHICH I OWE
+
+### ⓵ A NON-ZERO EXIT KEEPS ITS OUTPUT, IN BOTH INSTRUMENTS, AND IT IS PRINTED WHERE IT CAN BE READ
+
+**⚠ First, the thing that would have made the change useless as I proposed it.** I proposed keeping the
+*stderr* tail. **The corpus's `check()` failures print to STDOUT and exit 1 with an empty stderr.** That is
+measured on the two historical failures to hand: `L257/V1` at `bf41d7e5`, 48 lines out and 0 on stderr;
+`L273/C1` at `228ae5fb`, 89 and 0. `Q1`'s own `check` prints `[FAIL]` to stdout. *So the stderr tail alone
+would have kept nothing, for exactly the receipt this is for.* Both streams are kept.
+
+**What is kept, for a non-zero exit or a timeout only (a clean probe's log is unchanged):**
+- **every `FAIL` line, wherever it is**, up to 20. `V1`'s first `FAIL` sits **37 lines from the end**, above
+  any tail short enough to read;
+- **the last 40 lines of stdout and of stderr**. A deep traceback is about 15 lines; the corpus's failure
+  summary is the last 3;
+- each line cut at 300 characters, so **at most about 30 KB for one failing receipt**.
+
+The sizes are in the code beside the measurement that set them (`KEEP_LINES`, `KEEP_FAILS`, `KEEP_WIDTH` in
+`sweep_tolerances.py`).
+
+**Where it goes, because the log directory does not survive a CI job:** under `NOT A SWEEP`, in the **job
+log**, labelled `FAIL|`, `stderr|` and `stdout|` per build. A build whose output is identical to the one
+above prints one line saying so. *The JSON log is `$RUNNER_TEMP` and is gone with the runner; the job log is
+the only place a failing run can be read afterwards, so that is where it is written.*
+
+**Both instruments, checked rather than assumed:** `sweep_runner_reads` discarded output the same way
+(`stdout=DEVNULL, stderr=DEVNULL`). It now keeps the same thing through **one definition**
+(`sweep_tolerances.keep_output`), so the two cannot drift apart.
+
+**Seeded both ways, on real failures:**
+- `V1` at `bf41d7e5` through `--probe` then `--compare`, and through the tracer then `--report`: each prints
+  `FAIL | FAIL ⓵ᵈ and nothing is left UNVERDICTED: 1` and the receipt's own summary. Build B prints "the same
+  output as the build above".
+- A receipt that raises three calls deep keeps its full 13-line traceback on stderr, beside its stdout.
+- **A receipt that passes (`L237/G1`) keeps nothing.**
+- The three tools' existing seeds (`sweep_tolerances`, `sweep_runner_reads`, `red_carry`) still pass.
+- ⌗ **Not changed:** the suite runner. It already keeps the last three non-blank lines of a `FAIL`, which is
+  where the corpus's summary sits. On a timeout it keeps nothing, which ⓶ below comes back to.
+
+### ⓶ ⑦ HAS BOTH EXITS, AND WHAT THE NEXT FAILURE WILL SAY
+
+**What would now be visible if `Q1` fired, per hypothesis. Each one prints something different:**
+- **one of its checks failed** → its `[FAIL]` line names the VERDICT: census, sample, refinement, control,
+  or validation;
+- **a nested run hit its own `timeout=600`** → a `TimeoutExpired` traceback on stderr naming
+  `subprocess.run`;
+- **it recurs and says neither**, for example a signal or an interpreter abort with nothing printed → that is
+  ⑦'s **second exit**: a red not reachable from any tree this corpus controls, written at the receipt as a
+  stated limit. *It is a finish, not a tenth row.*
+
+`Q1`'s note now says this, and it no longer says the output is discarded, **which stopped being true in this
+push**. *I am not waiting on a recurrence to report: the instrument is armed, and the next red names its own
+cause or closes ⑦ by the second exit.*
+
+### ⓷ THE LIST, TESTED: IT NEEDS AN EIGHTH ITEM, AND THE ITEM IS ONE I DROPPED
+
+**⑧ NO RECEIPT CARRIES A RED WHOSE REMEDY IS KNOWN AND UNAPPLIED.**
+
+*Why the layer is **not finished** without it, to the bar the list sets:* ⑦ is "no **unexplained** red", and
+**an explained red satisfies it**. `P14_the_constituent_count…` is the case:
+- it runs at **420–575 s against a 600 s cap** on the runner, 70–96% of it;
+- it went over once in eleven scoped suite runs;
+- **r6993 routed it to this seat as the plain undeclared-margin class, with its remedy stated: a declared
+  budget, measured**;
+- **and it is not declared.** `run_all_receipts.py` names it nowhere.
+
+⇒ *With ⑦ closed, the layer would read finished while `P14` goes red on every slow runner and the carry
+carries it, clears it on a fast one, and carries it again. That is a red with a known cure, recurring on a
+schedule, and nothing on the list would be open for it.*
+
+⚠ **And it is mine.** r6993 routed it here and I did not do it. It fell between the rows when `PO-65` took
+priority, and I did not come back. *I am not doing it in this push, because this order says nothing else. Its
+discharge is already known (measure `P14` on the runner's build and declare the budget where the other
+declared-long receipts are), so by `r7013`'s own rule it is an **order**, not a row. It is one line and one
+measurement.*
+
+**What else I tested and rejected, so the list's closure is argued rather than assumed:**
+- **The read index expires at 35 days, and refreshing it needs a seat to commit the backstop's artifact.**
+  That is a recurring duty, not an unfinished item. It fails **loudly**: every scoped job fails and names
+  the remedy. A loud failure on a human dependency is a finished design; a silent one would not be.
+- **The carry ledger keeps entries for branches that no longer exist.** Harmless: a union reads only the
+  pushing line and `main`, and a dead line is read by nothing. `--history` shows them, which is correct.
+- **`pull_request` runs do not write the ledger.** By design: a PR's scope is the whole PR, asked again on
+  every PR event, so a PR red cannot be silenced by a later PR event.
+- **The suite runner keeps no output on a timeout.** Timeouts are ⑧'s class when explained and ⑦'s when
+  not. A timeout's output up to the kill would show where it hung. It is worth having and it is not
+  blocking: a timeout is already named by receipt, and ⓵'s change covers the two instruments that were
+  silent on non-zero exits.
+
+⇒ **So: eight items, six done, ⑦ armed and waiting on its first recurrence, ⑧ one order away.**
+
+**⛔ Not done, as ordered:** no new rows, no corpus prose, nothing on `PO-23` or `PO-56`, `Q1`'s checks
+untouched (its note only), and `P14` not touched.
+
+---
 
 ## ⚑ `r7011+70.1` — `PO-69`: THE INDEX READING IS EXCLUDED TWICE OVER, THE CONCURRENCY DOES NOT REPRODUCE IT, AND WHAT IS LEFT IS THE RUNNER, WHOSE FAILURE OUTPUT NOBODY KEEPS
 
