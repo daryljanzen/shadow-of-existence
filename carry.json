@@ -6,13 +6,5 @@
     "since": "08909811e85ba4cefde09a53e58dd1ae45365ac6"
    }
   }
- },
- "main": {
-  "reads": {
-   "receipts/L_numerics/Q1_a_stated_tolerance_is_a_request_and_the_corpus_answers_it.py": {
-    "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/36560481693",
-    "since": "1fe20f9954726e028fa8eca75d86ad1684202526"
-   }
-  }
  }
 }
