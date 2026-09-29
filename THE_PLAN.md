@@ -104,6 +104,13 @@ order is written.*** ⌗ *This is the first time that order has been used to **d
 rather than to close work already done, and it is the whole point of it: the reproducibility layer converged
 because a seat was allowed to stop, not because it ran out of questions.*
 
+**⛭ AND THE STANDING ITEM CHANGES HANDS AT `r7029` RATHER THAN LEAVING THE LIST, WHICH IS A DISTINCTION WORTH
+THE SENTENCE.** *The seat that held it is redirected to the acoustic sector, and **no suite timeout has arrived
+since the capture landed, so the item is UNFILLED**. ⇒ ***An unfilled item leaves a list by being done and never
+by being reclassified, so it transfers to the seat that runs `main` and sees CI on every revision, and it stays
+on the list as unfilled until a suite timeout is actually read.*** ⌗ *The seat is released from it; the item is
+not released from anybody. **Those are two different statements and only the first was true of the redirect.***
+
 **⛭⛭⛭ SO THE LIST IS COMPLETE — EIGHT OF EIGHT.** *And what "complete" means is exactly what the list says and
 nothing more: **the eight things this layer set itself are done**, two of them ending in stated limits rather
 than repairs. *It is not a claim that nothing will ever go wrong here; it is the claim that the layer has no

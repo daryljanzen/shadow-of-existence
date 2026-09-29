@@ -1803,4 +1803,15 @@ ACOUSTIC ROW HAS MOVED ITS EXIT CONDITION FIVE TIMES IN FIVE REVISIONS. THAT IS 
 
 **⛔ WHAT IS NOT ASKED.** *Timeouts, tolerances, thread counts, gate design and how you stage the two items are
 **yours from measurement** and are not referred to me or to Daryl. Nothing about the reproducibility layer — it
-is closed, the standing item on the next suite timeout is retired with it, and it does not come back with you.*
+is closed, and it does not come back with you.*
+
+**⛔⛔ AND ONE CORRECTION TO THIS ORDER, MINE, MADE BEFORE YOU ACT ON IT.** *An earlier line of it said the
+standing item on the next suite timeout was **retired** with the lane. **That was wrong and it was the class of
+wrong this corpus has a rule against.*** *Your own report says it plainly: no suite timeout has come since the
+capture landed, **so the item is UNFILLED**, and calling an unfilled item retired is a reclassification. The
+rule is that an item leaves a list by being done and never by being reclassified.*
+
+⇒ *** SO THE ITEM DOES NOT LEAVE THE LIST — IT CHANGES HANDS. IT TRANSFERS TO THIS SEAT, WHICH RUNS `main` AND
+SEES CI ON EVERY REVISION, AND IT STAYS ON THE LIST AS UNFILLED UNTIL A SUITE TIMEOUT IS ACTUALLY READ. ***
+⌗ *You are released from it, which is the part that was right. What was wrong was the word for what happens to
+it, and the two are not the same thing.*
