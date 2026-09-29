@@ -1,15 +1,5 @@
 {
  "claude/shadow-of-existence-setup-6awafl": {
-  "suite": {
-   "receipts/L259_the_distance_from_the_present/D1_a_check_pinned_to_a_distance_from_the_present_is_pinned_to_the_present.py": {
-    "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/36514982977",
-    "since": "7e9a86f4ab2380fa31a4f32aa4ae89780cb61083"
-   },
-   "receipts/L_numerics/Q1_a_stated_tolerance_is_a_request_and_the_corpus_answers_it.py": {
-    "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/36514982977",
-    "since": "7e9a86f4ab2380fa31a4f32aa4ae89780cb61083"
-   }
-  },
   "tolerance": {
    "receipts/L259_the_distance_from_the_present/D1_a_check_pinned_to_a_distance_from_the_present_is_pinned_to_the_present.py": {
     "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/36514982977",
