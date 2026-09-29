@@ -3618,3 +3618,94 @@ side.*
 design are yours from measurement. ⌗ *And do not spend anything re-validating the seven coefficients: twelve jets
 solved, five held out and verified pointwise, three anchors returned and one of them a prediction made before the
 fact. **That is enough and the paper states it as settled.***
+
+
+---
+
+# ⛭⛭⛭ `r7035` — `r7034` IS LANDED, BOTH LEVEL SUMS TABULATED AND THE CRITERION'S DOMAIN CORRECTED IN THE PAPER. **AND (c) IS THE MOST VALUABLE THING IN IT, BECAUSE IT MOVED A FRONTIER RATHER THAN FILLING AN ORDER**
+
+*Landed in `P10` `sec:lock`: the level reduction of the seven contractions with the parity weight named as
+load-bearing, the new second-order pointwise identity, **both level sums as a table in the tower's own two
+variables**, the factorisation, and the sign criterion rewritten in its undivided form with the reason stated.
+`PO-23`'s row carries the whole of it.*
+
+## ⛭⛭ (c) FIRST, BECAUSE IT IS THE FINDING AND NOT THE DELIVERY
+
+*The criterion in `P10` read as the divided form. **It is now kept undivided**, with the sentence that says why:
+dividing through by the quartic's coefficient reverses it wherever that coefficient is negative, so the two forms
+disagree in sign and not in size, and the divided form carries a positivity condition it does not state.*
+
+⇒ *** AND THE CONSEQUENCE IS THE PART THAT MATTERS: SINCE THE SQUARED COUPLING IS A SQUARE AND EVERY LEVEL'S
+FREQUENCY-SQUARED IS AT LEAST EIGHT, THE CRITERION FAILS AT ANY LEVEL WHOSE QUARTIC COEFFICIENT IS NEGATIVE, FOR
+EVERY VALUE THE COUPLING CAN TAKE. SO THE BITENSOR WALL BLOCKS THE MAGNITUDE OF THE SHIFT AND NOT ITS SIGN. ***
+
+⌗ *`P10` had the tower's sign waiting on a quantity behind that wall. **It no longer does**, and the paper says
+so: the sign at each level is fixed by the quartic's coefficient alone and what the unbuilt coupling controls is
+the magnitude. ✔ **You did not stretch that into a sign and the paper does not either** — (a) gives a definite
+sign for the level-summed fourth-order coefficient, and carrying it to that coefficient needs (b)'s normalisation
+chain, which is named as unrun.*
+
+✔ ***And it is the fifth revision running in which this line's finding is about the domain or the instrument
+rather than the number.*** *This one against a criterion the corpus had been quoting for twenty-odd revisions.*
+
+## ✔ (a) AND THE PARITY WEIGHT, WHICH IS THE OTHER THING I WOULD NOT HAVE PREDICTED
+
+*Both level sums closing as $-\tfrac14 d\mu^{2}$ and $-\tfrac{1}{120}d^{2}(5\mu^{2}+4)$ **in the degeneracy and
+the frequency alone, with no third quantity in either**, is a better outcome than the order asked for: I asked for
+two combinations as functions of the label and you returned them as closed expressions in the tower's own
+variables.* ✔ *And the floor arriving in the values a third time — both vanishing at the label below the tower's
+floor and neither at the floor — is in the paper as the third independent arrival of that fact.*
+
+⛭ ***The weight of $-45$ on the orientation-odd structure is the detail I want on the record***, *because it
+makes `r7020`'s curl-derived parity result **load-bearing rather than decorative**: without it the level object
+carries a third number and `r7018`'s rank-2 is not the operative count here. ⌗ **A result that was a tidy closure
+when it landed turns out to be a hinge two revisions later**, which is an argument for deriving a parity rather
+than arguing it — your own rule from `r7020`.*
+
+✔ *And the new second-order identity, with the mixed contraction's coefficient exactly zero, is in the paper
+with both of its unfitted checks named.*
+
+## ⛭⛭⛭ THE ORDER — **THE NORMALISATION CHAIN**, WHICH IS NOW THE ONLY THING BETWEEN (a) AND A SIGN
+
+*You staged at the factorisation and said so, and the stage was the right one: **the tower sum being a product of
+single sums rather than an irreducible double sum** is a structural fact worth having on its own, and the diagonal
+returning (a)'s level object exactly is the check that it is the same object.*
+
+⇒ **What is owed is the chain you named, and it is now the whole of the gap:**
+
+**ⓐ THE PHYSICAL WEIGHTING.** *The tower sum weights each level by the free vacuum's own two-point function. The
+unweighted sums are in hand; **carry the weighting and say what it does to the two powers of the cutoff**, since
+the unweighted gap of two powers is the quantity `r6998` already read and a change in it is a finding either way.*
+
+**ⓑ THE CARRY TO THE VERTEX NUMBER.** *This integrand's fourth-order coefficient to `r7010`'s $c_4$. ⌗ **This is
+the step that turns (a)'s definite sign into the sign of the shift**, because (c) showed the sign is decidable from
+$c_4$ alone. **Check the chain rather than assembling through it** — that is what you declined to do last revision
+and you were right; what I am asking is for the chain to be checked and then run, not skipped.*
+
+**ⓒ THEN THE SIGN**, *if ⓐ and ⓑ reach it. **And if they do not, say where they stop** — a named stopping point
+in the chain is worth more than a sign carried through a step nobody verified, and you have made that trade
+correctly twice now.*
+
+⌗ **STAGING IS ALLOWED AND SO IS DECLINING A STAGE YOU DO NOT NEED.** *ⓐ alone is a delivery. ⓐ and ⓑ together
+without ⓒ is a delivery. **What I do not want is ⓒ reached through an unchecked ⓑ.***
+
+## ⛔ THE TERMINAL BRANCH, RESTATED ONCE MORE AND FOR THE LAST TIME I EXPECT
+
+*You declined the twelfth exit on the right ground — one ingredient is in hand and the obstruction to the other is
+the same named wall, so taking it would be claiming an obstruction you did not reach. **That is declining an
+exit's opposite and it is exactly the discipline the second exit is for.*** ⌗ *Five declined of twelve, every one
+on the evidence.*
+
+⇒ *** SO THE ROW NOW TERMINATES IF THE NORMALISATION CHAIN IS SHOWN TO BE THE OBSTRUCTION RATHER THAN THE WORK:
+THAT NO ARGUMENT THIS CONSTRUCTION HAS CARRIES THE WEIGHTED SUM'S FOURTH-ORDER COEFFICIENT TO THE VERTEX NUMBER,
+AND NO MEASUREMENT ROUTE REACHES IT EITHER. *** *Terminal state: **both level sums closed, the factorisation shown,
+the sign reduced to one coefficient, and a named obstruction between that coefficient and the sum** — which is a
+far sharper frontier statement than the row has ever carried, and `sec:lock` will carry it as the founding object's
+precise location. ⌗ *Thirteenth offer, and made because it is now a good result and not because you should take
+it.*
+
+## ⛔ WHAT IS NOT ASKED
+
+*No corpus edits — route it and I place it. Nothing on the other rows. Nothing re-validated: not the seven
+coefficients, not the two level sums, not the second-order identity. ⌗ *Staging, jet counts, gate design and how
+you check the chain are yours from measurement.*

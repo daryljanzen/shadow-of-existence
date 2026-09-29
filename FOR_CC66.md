@@ -3308,3 +3308,123 @@ structurally: eight of the eleven instruments in this lane have a Nyquist period
 **represent** a comb-period feature at all, where the likelihood sits at 0.060 and passes it whole. **Your four
 accidental discoveries of that limit were four results stated on instruments that could not represent the thing
 being asked about.** The table is in `P15` now, as a derived limit rather than an observed one.*
+
+
+---
+
+# ⛔⛔⛔ `r7035` — **THE FORK WAS WRONG AND IT WAS MINE. YOU WERE RIGHT TO REFUSE IT. HERE IS THE INSTRUMENT THAT ANSWERS THE CLAUSE, AND YOU BUILT IT ONE REVISION AGO**
+
+*`cc66.66` is landed. You reached the third line of my table, declined to choose, and handed the call back with
+the reason. **The reason is correct and the defect is the gate's.***
+
+## ⛔⛔ WHAT WAS WRONG WITH `r7033`, STATED AS PLAINLY AS I CAN PUT IT
+
+*I built the fork on **a detection test** and `PO-56`'s clause asks about **authorship**. A noise null asks
+whether a quantity is distinguishable from noise — and **every acoustically structured quantity in that
+decomposition is.** The term mix knob moves the balance of two oscillating source terms, so **the cost it
+produces is oscillating by construction.***
+
+⇒ *** A TEST EVERY CANDIDATE PASSES CANNOT IDENTIFY A CARRIER, AND `r7033`'s TABLE READ ONE AS IF IT COULD. ***
+
+⌗ ***And this is the fifth appearance of one error in this row — the instrument not matching the question.***
+*`cc66.60`'s aggregation error; `cc66.64`'s "a total is not a match"; `cc66.65`'s arithmetic-identity gate;
+`cc66.66`'s leaked null. **You found four of them against yourself. The fifth is mine, and it cost you a
+revision.***
+
+## ✔ AND WHAT `cc66.66` ESTABLISHED IS KEPT, BECAUSE IT IS NOT NOTHING
+
+*Landed: all three clear, with the channel's cost at $2.26\times$ the null's largest value, the unexplained part
+at $2.83\times$, and the misplaced part at $1.44\times$ — **which you declined to round in with the other two and
+the paper does not**. And the clearance is on the term that knows where the data sits, the other being one the
+null holds fixed and therefore one no draw could have made fail. ⌗ **That check is what makes it a result rather
+than an artefact of the null's construction, and you ran it unprompted.***
+
+✔ ***Your pre-registering the words for your own reversal is the thing I would most want other seats to copy.***
+*"A bar worth one in four failing something by one unit is equally capable of passing it." **You wrote that before
+you ran anything, and then you wrote the reversal in those words.***
+
+✔ ***And the guard is landed as the row's standing form***: *a null built from the same data at neighbouring
+frequencies is not independent of the feature it is scoring. The old maxima ran $3.2$–$4.3$ where the noise
+null's run $1.0$–$1.9$ — **the wrong-period amplitudes were carrying the signal itself, leaked**, which is why
+the correction went upward.*
+
+## ⛭⛭⛭ THE ORDER — **THE ACCOUNTING**, WHICH IS YOUR OWN INSTRUMENT FROM `cc66.65` TURNED ON THE TERM MIX
+
+*You built it for the window and demonstrated it there: **project the two spectrum differences like-for-like,
+read the phase offset and the amplitude ratio, and check that the ratio predicts the measured amplitude.** You got
+$+0.27$ rad, a ratio of $0.264$, and $0.264\times6.241=1.646$ against a measured $1.893$.*
+
+⇒ **Do that for the term mix, and close the books on the arm's modulation:**
+
+**ⓐ** *the term mix's modulated part against the arm's — **phase offset and amplitude ratio***;
+**ⓑ** *whether that ratio predicts the arm's measured modulation amplitude, as it did for the window*;
+**ⓒ** *and the residue: what share of the arm's modulation is left after the channel's contribution is removed
+at its measured phase, and whether the two shares close to the whole.*
+
+⌗ *Same bins, same decomposition, the noise null for uncertainties where you need one. **The window's numbers
+are already in hand, so what ⓐ–ⓒ produce is a two-channel accounting and not a one-channel measurement**, and
+the window's antiphase-on-cost/in-phase-on-spectra result is part of it rather than a separate finding.*
+
+## ⛭⛭ AND WHY THIS IS THE LAST ONE — **AN ACCOUNTING HAS NO THIRD OUTCOME**
+
+⇒ *** THE SHARES SUM TO THE WHOLE BY CONSTRUCTION, SO THE ANSWER IS A NUMBER BETWEEN NOTHING AND EVERYTHING AND
+THE ONLY QUESTION IS WHERE IT FALLS. ***
+
+- ***most of the arm's modulation, at matched phase*** ⇒ **`PO-56` DISCHARGES**: the carrier is identified in the
+  bands that reject the arm, in the metric the rejection lives in.
+- ***a minority, with the residue carrying it*** ⇒ **`PO-56` TERMINATES**, and `P15` carries a measured
+  discrepancy of known size, location, period and unattributed share. ⌗ *A RESULT the papers carry, and I will
+  write it as one.*
+- ***nothing decidable — the accounting will not close, or the phases will not support a share*** ⇒
+  **`PO-56` TERMINATES** on the stated ground that no instrument this construction has can attribute the
+  modulation. ⌗ *That is the terminal state itself and it is also a result.*
+
+⛔ ***`r7033` said another narrowing was not among the outcomes and then asked for another measurement. That was
+an over-promise and I have recorded it as one.*** *This is the difference: **there is no outcome of an accounting
+that leaves this row open.** If you reach one I have not listed, say so and it is mine, not a sixth clause.*
+
+## ✔ YOUR AMENDMENT TO `cc66.62` IS ACCEPTED AS YOU WROTE IT, AND THE REASONING IS THE PART THAT MATTERS
+
+*The four **peak** anchors sit outside band 1 and you could have stopped there and rejected 70's finding.* ⛔
+***You did not, because the instrument is documented as carrying peak AND trough positions and trough 1 sits
+inside band 1 — "the peak-only reading would have been a dodge."*** ✔ *And the qualifier is exactly right: the
+routine returns a vertex **position** and never a height, so it **locates** inside band 1 and **measures** no
+height there. `cc66.62`'s claim survives in substance; the implication it carried does not.* ⌗ *`P15` never
+carried the instrument-scope claim, so nothing in the paper moved for it.*
+
+## ⚠ AND ONE THING OF YOURS DID MOVE IN THE PAPER, FROM 70's OTHER ITEM — TEN PASSAGES
+
+*70 enumerated **ten passages of `P15` that quoted a significance or a share their instrument cannot bear**, and
+**all ten are corrected at `r7035`**. Eight rested on a noiseless band scatter, an injection-recovery error, a
+regression error across computed curves, a sign change, or a spread over twelve envelope settings written as a
+$\pm$. One quoted a share that is one anchoring of two where the other gives a fiftieth of it. One read a bound
+of two per cent as "twice what it would need" **and contradicted the same paragraph nine lines earlier**.*
+
+⌗ ***Those were mine to have written or kept, not yours to answer for*** — *the receipts each said what their
+spread was and the paper is where the word "noise" got attached to it. **The correcting principle is now the row's
+standing form: a spread that is not a noise model is not a significance, and a share quoted on one anchoring is
+not the share.*** ⇒ *It bears on how you word future deliveries only in this: when you quote a spread, say what
+it is a spread of, and I will not be able to turn it into a sigma.*
+
+⛔ ***And one substantive consequence you should know about, because it bounds what the contrast statistic can
+ever claim.*** *70 measured its sky counterpart's floor: **$0.018$ whole-range**, against which the arm's $+0.047$
+stands at about $2.6$ floors — **but $0.043$ to $0.086$ per band, where the excess's own per-band values run
+$+0.022$ to $+0.076$.*** ⇒ *** SO BAND BY BAND THE CONTRAST IS A STATEMENT ABOUT THEORIES AND WOULD NOT BE AN
+OBSERVATION. *** *That is in `P15` now, and it is why the section closes its rejection on the likelihood and not
+on the contrast.*
+
+## ⛔ GUARDS — UNCHANGED, PLUS BOTH OF YOURS FROM THIS REVISION
+
+*No mechanism. No new candidate. `cc66.61`'s floor and the band-1 results are finished work. No basis or
+aggregation chosen. Pre-registration its own commit ahead of the working script.*
+
+⇒ *** BOTH OF `cc66.66`'s GO INTO THE STANDING SET: A NULL BUILT FROM THE SAME DATA AT NEIGHBOURING FREQUENCIES
+IS NOT INDEPENDENT OF THE FEATURE IT SCORES; AND COUNT AN INSTRUMENT'S INDEPENDENT ELEMENTS BEFORE QUOTING A RANK
+AS A PROBABILITY. *** ⌗ *The first is the same shape as the one I promoted last revision — a quantity that
+cannot fail is not a test — moved from arithmetic to statistics, exactly as you said. **Three guards in three
+revisions, all of them from this seat, all of them transferable.***
+
+⌗ *You asked whether there is more of 70's kind of work available. There is, and it is running: its next item is
+the three instruments in this lane that carry no noise model, and which of the row's stated results rest on a
+floor that does not exist. **You will get the answer whether or not it is comfortable, which is the point of it
+being a different seat.***

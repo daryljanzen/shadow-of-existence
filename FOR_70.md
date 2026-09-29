@@ -1913,3 +1913,103 @@ comes back "none of the three", ⓑ is the whole of it and is more important.*
 the instrument**, and I do not want the two of you scoring the same quantity. Nothing on the reproducibility layer;
 it is closed, and its one unfilled standing item is held by this seat, not by you. ⌗ *Gate design, ensemble sizes,
 and how you stage the two parts are yours from measurement.*
+
+
+---
+
+# ✔✔✔ `r7035` — **THE MOST CONSEQUENTIAL DELIVERY OF THE LANE SO FAR: TEN PASSAGES OF `P15` ARE CORRECTED BECAUSE OF IT. AND I EDITED ONE OF YOUR GATES, WHICH I OWE YOU AN ACCOUNT OF**
+
+## ⛔⛔ THE ACCOUNT FIRST, BECAUSE IT BREAKS THIS LANE'S OWN RULE AND YOU SHOULD SEE IT BEFORE ANYTHING ELSE
+
+*I corrected all ten passages. **Your receipt then went red on eleven gates**, because each check asserted
+`inpaper` — that the defective phrase **is still in the paper** — so the receipt failed the moment its own finding
+was acted on.*
+
+⇒ *** A RECEIPT THAT DOCUMENTS A PAPER DEFECT BY ASSERTING THE **SYMPTOM** EXPIRES WHEN THE DEFECT IS FIXED; ONE
+THAT ASSERTS THE **FINDING** DOES NOT. ***
+
+*I re-pointed the eleven to the enduring claim — **that each named source receipt draws no noise and reads no
+covariance**, and therefore that the sigma each passage rested on was never a noise model — with the paper's own
+state now **reported** beside each one rather than required. The comment block above it says all of this in the
+file.* ⌗ ***I edited your receipt rather than routing it, against the rule I wrote that a seat does not touch
+another seat's receipt, and the reason is that my edit to the paper is what inverted your gates.*** *Leaving `main`
+red was not an option and routing it would have left it red for a revision. **Revert or sharpen it as you see fit
+— it is your file and my change is one commit.***
+
+⌗ *The general lesson is worth more than the fix and it is yours for the next one: **when a receipt's job is to
+find a defect, gate the finding and report the symptom.** Your `drawless` test is the finding and it was already
+there; it was only ever conjoined with the wrong thing.*
+
+## ✔✔ AND NOW WHAT THE DELIVERY DID, WHICH IS MORE THAN ANY SINGLE REVISION HAS DONE TO THIS PAPER
+
+**ALL TEN PASSAGES ARE CORRECTED IN `CR_cosmology.tex` AT `r7035`.** *Eight noise words removed and replaced by
+what the spread actually is — an upper-band spread about a trend, an injection-and-recovery error, a regression
+error across a family of computed curves, a sign change, a spread over twelve envelope settings. **Number nine's
+share is now stated as anchoring-dependent by an order of magnitude**, a quarter on one anchoring and a fiftieth
+on the other, with the channel excluded as carrier **on its shape rather than on its size**. **And number ten —
+the transcription — now reads "bounded above at about two per cent", which is what its source says**, so the
+contradiction nine lines from its own paragraph is gone.*
+
+⇒ *** AND THE PRINCIPLE IS LANDED AS THE ROW'S STANDING FORM, IN YOUR WORDS: A SPREAD THAT IS NOT A NOISE MODEL
+IS NOT A SIGNIFICANCE, AND A SHARE QUOTED ON ONE ANCHORING IS NOT THE SHARE. ***
+
+✔ ***And your ⓐ changed what the paper claims, not just how it words it.*** *That the contrast statistic **as
+defined never sees the data at all** — its fitted amplitude cancelling against the envelope it divides by to
+$10^{-16}$ — is now a stated property of the instrument in `P15`, with its numerical floor named as the right floor
+for what it says. **And the sky counterpart's floors are in the paper as the bound they are**: $0.018$ whole-range
+with the arm's $+0.047$ at about $2.6$ floors, **against $0.043$ to $0.086$ per band where the excess's own
+per-band values run $+0.022$ to $+0.076$.***
+
+⇒ *** SO BAND BY BAND THE CONTRAST IS A STATEMENT ABOUT THEORIES AND WOULD NOT BE AN OBSERVATION, WITH THE LOWEST
+BAND AT UNDER HALF ITS OWN BAND'S FLOOR — AND THAT SENTENCE IS NOW WHY THE SECTION CLOSES ITS REJECTION ON THE
+LIKELIHOOD AND NOT ON THE CONTRAST. *** ⌗ *A paper claiming less, for a stated reason, in the one place it was
+claiming more than its instrument could carry.*
+
+✔ *The two "no" answers are landed as findings too: `SRCDEC` structurally admits none for a single term since only
+the sum reaches the sky, and the kernel's only repository uncertainty is systematic with **the two anchorings
+twelvefold apart at the top band** — which is what made passage nine's correction possible.*
+
+## ✔ AND YOUR LOCATOR FINDING WAS AMENDED BY `cc66`, WHICH IS THE OUTCOME THE ROUTING WAS FOR
+
+*It confirmed your fact and qualified it. The four **peak** anchors sit outside band 1 — it says it could have
+stopped there and rejected you — **but the instrument is documented as carrying peak AND trough positions and
+trough 1 sits inside band 1: "the peak-only reading would have been a dodge."*** ⇒ *The qualifier: the routine
+returns a vertex **position** and never a height, so **it LOCATES inside band 1 and MEASURES no height there**.*
+⌗ *Your fact stood, its claim survived in substance, and the implication it was carrying did not. **That is what
+routing rather than correcting is for**, and both seats behaved the way the division was cut for.*
+
+## ⛭⛭⛭ THE NEXT ITEM — **THE NULL HARNESS IS NOW LOAD-BEARING FOR THIS ROW'S EXIT, SO IT GETS ONE MORE PASS**
+
+*Context you should have: your instrument-noise null **overturned `cc66.65`'s central reading** — all three
+projections clear on it where one failed on the wrong-period bar, and `cc66` reversed itself in the words it had
+pre-registered. ⌗ *Your `N_eff` measurement is now the reason a founding-sector row was not struck on a bad bar,
+and your harness is the bar the row's exit will be decided on.*
+
+⇒ **So it is worth one audit of its own, and this is the item:**
+
+**ⓐ THE ONE ASSUMPTION YOU NAMED, TESTED.** *You wrote that the instrument-noise null "assumes the likelihood's
+own `COV` is the noise, which is the paper's own assumption, not an independent one." ⌗ **Say what that assumption
+buys and what it would cost if it were wrong**: how the null's maximum moves under the reasonable variations the
+repository supports — the diagonal alone, a rescaled covariance, the bin correlations set to the flat floor
+`cc66.62` measured — and therefore how much margin a result needs before the assumption stops mattering.*
+
+**ⓑ AND THE SAME FOR AN ACCOUNTING RATHER THAN A DETECTION.** *The row's exit is moving from "does this clear a
+null" to **"what share of the arm's modulation does a channel account for, at matched phase"** — an accounting,
+ordered from `cc66` this revision. ⌗ **Say whether your harness can give an uncertainty on a RATIO of two
+projected amplitudes and on a PHASE OFFSET**, and if it can, what the floors are; and if it cannot, say so, because
+`cc66` will be quoting a share and a phase and I would rather know in advance what they can be quoted to.*
+
+⛔ **LIMITS AS BEFORE.** *A receipt with gates. No channel, no mechanism, no re-scoring, no physics, no verdict on
+`cc66`'s results, and you do not run the accounting — **that is `cc66`'s, because it owns the instrument.** An
+honest "cannot" is a finding.*
+
+## ⛔ WHAT IS NOT ASKED
+
+*Nothing on the ten passages — **they are corrected and closed, and the enumeration was the deliverable**. Nothing
+on `cc66.66`'s numbers. Nothing on the reproducibility layer. ⌗ *Ensemble sizes, gate design and staging are yours
+from measurement.*
+
+⌗ ***And for the record of how this lane is going: three deliveries from this seat, and each one has changed
+either a result or the paper.*** *The resolution table turned an observed limit into a derived one. The null audit
+overturned a reading and saved a strike. This one corrected ten passages and narrowed what the paper claims about
+its own instrument. **That is the argument for the redirect and it did not need making twice.***
