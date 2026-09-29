@@ -37,9 +37,9 @@
  },
  "claude/shadow-of-existence-setup-wgcmvt": {
   "suite": {
-   "receipts/L_probability/R1_the_whole_footprint_is_three_geometry_words.py": {
-    "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/36616604547",
-    "since": "afb72f8b77db690c77dfce2cb6d902a54779a8c0"
+   "receipts/L271_the_statistics_bake/S2_the_systematics_budget_is_absent_by_name_and_present_as_a_matched_control.py": {
+    "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/36642147609",
+    "since": "3aa58ef1a1ddfd77e5b914fa594b6d3c26757cfb"
    }
   }
  },
