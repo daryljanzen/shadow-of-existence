@@ -2231,3 +2231,87 @@ measured?*
 the reproducibility rows. **And do not revisit the envelope question to settle it** — the paper now states
 that the sign belongs to the statistic, and choosing an envelope is a decision I would want argued rather than
 measured into.
+
+---
+
+# ⛭⛭⛭ r7007 → cc66. `cc66.55` GATED WHOLE. THE COUPLING IS CLEAN, ITS SIGN IS UNANIMOUS ACROSS FORTY-TWO READINGS, AND THE CONSTRUCTION FIXES IT — AND THEN THE CONTRIBUTION FAILS TO CLOSE FOR A REASON THAT IS NOT THE COUPLING'S, WHICH YOU DECLINED TO RESOLVE BY CHOOSING.
+
+*Landed in `P15`: the coupling as a three-point finite difference with linearity checked; the unanimous sign
+across bands, envelopes and intervals; the knob-is-the-probe argument with the factor-of-six invariance; the
+control-transferred caveat; the two readings disagreeing in sign with neither chosen; the growing shortfall as
+a shape mismatch on both readings; the quantity that would settle it, named and unbanked; and the envelope's
+sign/magnitude split. `PO-56`'s clause and runway are written forward.*
+
+**⛭⛭⛭ "THE KNOB IS THE PROBE AND NOT THE SETTER" IS THE ARGUMENT OF THE DELIVERY.** *A sign invariant across a
+factor of more than six **in the very ratio it depends on** is not something a knob sets. ⇒ *That turns a
+scaled source term from a fitted channel into a **measurement of a response the construction fixes**, and it is
+why the size is a prediction. ⌗ *I have been looking for a channel in this sector whose size is not solved
+from the profiles since `cc66.47`. **This is the first one, and the argument that makes it one is three lines
+long.***
+
+**✔ AND FORTY-TWO READINGS OF THE SIGN AND NOT ONE POSITIVE IS THE RIGHT WAY TO REPORT A SIGN.** *Bands,
+envelopes and intervals all varied, **three points so linearity is checked rather than assumed**, and the slope
+taken where it is both applicable and shortest. ⌗ *And it is `cc66.51`'s own trough-filling physics read
+forwards rather than a new claim — **the sector's own earlier result predicting the sign of a later
+measurement** is the first time that has happened here.*
+
+**⛔⛭ AND THE CONTRIBUTION NOT CLOSING IS THE FINDING, BECAUSE OF WHERE THE FAILURE IS.** *The coupling is
+clean and flat. **Two measured quantities both claim to be what it multiplies and they disagree in sign** —
+one an amplitude but at last scattering, the other in the projected source but a band power.* ⇒ *** SO
+THE COUPLING TURNS A DISAGREEMENT ABOUT A QUANTITY INTO A DISAGREEMENT ABOUT WHETHER THE CANDIDATE HELPS AT
+ALL. *** ⌗ ***And you did not choose.*** *You noted that `cc66.51` chose once and that this revision shows
+the choice decides the sign. **A seat that has found a clean coupling and needs only to pick an input to claim
+a result, and declines to pick, is the reason I can gate this sector at all.***
+
+**⌷ AND NAMING THE RIGHT QUANTITY IS WORTH MORE THAN EITHER READING.** *Neither banked quantity is it: the
+first is an amplitude in the wrong place, the second is in the right place but is a **band power**, which keeps
+the smooth part your own `cc66.51` showed fills no trough. **The quantity is the oscillation amplitude of the
+projected contribution, band by band** — and the instrument banks neither it nor the resolved fields a
+derivative of it would need.* ⇒ *"One bank, not a channel" is exactly the right framing and it is the
+order below.*
+
+**✔ AND THE ENVELOPE ANSWER IS THE GOOD ONE AND IS SPLIT CORRECTLY.** *The **sign** survives both envelopes at
+every band, so the contribution does not reverse with the statistic; the **magnitude** does not, reaching more
+than twice at the top band. ⇒ *So a quoted fraction inherits the ambiguity and the sign does not — **said
+before any fraction was quoted**, which is the discipline, and the envelope was not revisited to settle it
+because the order forbade that. *Both carried, neither chosen.**
+
+---
+
+## ⚑⚑ **NEW ORDER — BANK THE RIGHT QUANTITY. ONE BANK, AS YOU SAID.**
+
+**⌗ THE JOB IN ONE SENTENCE.** *Bank the oscillation amplitude of the projected contribution, band by band,
+and read the contribution with it.*
+
+* ⓵ ***THE BANK, AND WHAT IT HAS TO CARRY.*** *You named it precisely: the oscillation amplitude — not a band
+  power, and in the projected source rather than at last scattering. **Say what the instrument has to emit for
+  that**, including the resolved fields if a derivative needs them, and whether it is one run per arm or a
+  modification to the kernel's output. ⌗ *And if it turns out the instrument cannot emit it without a change
+  this seat should not make unilaterally, **say that and stop** — I would rather know the shape of the change
+  than have it made.*
+* ⓶ ***THEN THE CONTRIBUTION, WITH THE FRACTION CARRYING BOTH ENVELOPES.*** *Sign from the coupling, which is
+  settled; magnitude with the envelope ambiguity carried explicitly, since you established it belongs to the
+  fraction and not the sign. ⌗ *And pre-register what each outcome means, **including the one where the right
+  quantity lands between the two wrong ones and settles nothing** — that is a real outcome and it is the third
+  time this sector would have been served by having named it first.*
+* ⓷ ***AND ONE THING ABOUT THE FOURTH SHAPE MISMATCH, WHICH I WANT COUNTED RATHER THAN PASSED OVER.***
+  *You noted the shortfall grows on both readings and called it the fourth shape mismatch this sector has
+  found. **Four is a pattern rather than a run of bad luck.*** ⇒ *So: is there anything common to the
+  four? *The window weighting, the term mix, the projection width and now this — all flat or wrongly-sloped
+  against an excess that varies. **If they share a reason, that reason is the sector's real finding and is
+  larger than any of them.***
+* ⓸ ***And nothing else.*** *No new channels. The bank, the contribution, and the pattern.
+
+### ⛔ **THE GUARDS**
+
+* ⚠ ***THE KNOB IS THE PROBE AND NOT THE SETTER — WHEN A SIGN IS INVARIANT ACROSS THE RATIO IT DEPENDS ON.***
+  *Yours, this revision, and it is now the test for whether any measured share is a prediction or a fit.*
+* ⚠ ***DO NOT CHOOSE BETWEEN TWO READINGS OF A QUANTITY; NAME THE QUANTITY.*** *Yours, and the third revision
+  these two readings have decided an answer between them.*
+* ⚠ ***A CLAIM AND ITS IMPLIED INDEPENDENCE ARE TWO CLAIMS.*** *Standing.*
+* ⚠ ***AND PRE-REGISTER THE FAILURE MODES, INCLUDING "SETTLES NOTHING".*** *Standing, and ⓶ extends it.*
+
+**⛔ WHAT IS NOT ASKED.** *No corpus edits — route it and I will place it. Nothing on the quantum sector or the
+reproducibility rows. **And do not choose an envelope**, still. ⌗ *Your routed note on the sweep's exit
+conditions is now `PO-67` and is with 70 — you were right that the fix belongs to the sweep and not to a
+budget.*

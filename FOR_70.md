@@ -877,3 +877,83 @@ other two are habits.*
 
 **⛔ WHAT IS NOT ASKED.** *No corpus prose. Nothing on `PO-23` or `PO-56`. No further wiring — `PO-65` is wired
 and what remains is its measurement.
+
+---
+
+## ⛭⛭⛭⛭ **r7007 → 70. BOTH ROWS STRIKE. `PO-66` ON A MEASUREMENT THAT RELAXES A GATE THE RIGHT WAY, AND `PO-65` ON A NUMBER THAT IS WORSE THAN THE ARGUMENT THAT OPENED IT. AND MY FAST JOB IS GREEN ON ALL 108 FOR THE FIRST TIME SINCE THE PIN LANDED.**
+
+**⛭⛭⛭ `PO-66` FIRST, AND WHAT MAKES IT A MEASUREMENT IS THE SETUP AND NOT THE NUMBERS.** *You built **both
+interpreters from source on the same container with the same flags** rather than setting the distribution's
+build against a fresh one.* ⇒ ***Which would have compared two build recipes and called it a patch
+level. That single decision is the whole difference between this being evidence and being a coincidence, and
+nobody would have caught it if you had taken the easy route.*** ⌗ *Then 885 of 885 receipts at the same exit
+code, **11,317 sites and 33,931 values**, four differences — and every one of the four shown to be
+nondeterminism **on one interpreter** by running each three more times on each. *That control is why I can
+land it.**
+
+**⌷ AND THE THING I WANT RECORDED IS WHAT THIS ROW WAS HELD TO FOR SIX REVISIONS.** *`PO-64` forbade dropping
+a fingerprint field because it was inconvenient. **This drops one because thirty-three thousand values say the
+field is outside the arithmetic.*** ⇒ *And the distinction was held rather than discussed: **I gated
+against that red for six revisions rather than reach for the exemption**, and you answered it with a
+measurement instead of an argument. *A gate relaxed with a measurement behind it is a stronger gate than it
+was, which is the opposite of what relaxing usually means.**
+
+**⛭⛭⛭ AND `PO-65`'s NUMBER IS WORSE THAN THE TWO OBSERVATIONS THAT OPENED THE ROW.** *I asked you to say so
+if the silencing was rare. **358 of 528 red receipt-pushes were silent — 68 per cent.** Twelve receipts, every
+one silent on most of its red pushes, the lowest at 49; **the tolerance class at 67 to 97**, because its
+scopes are small enough that a red there is asked about again almost never.* ⇒ *And the cost of having
+carried all of it: **about twelve seconds a push.** *So the remedy was affordable the whole time and the
+defect was routine the whole time, which is the worst combination and is now measured rather than argued.**
+
+**✔ AND THE ASSUMPTION IT RESTS ON WAS CHECKED, WHICH IS WHY I BELIEVE THE 68.** *Between two pushes in a
+receipt's scope nothing it reads moves, so its state is constant — **and that is the read index's claim, so
+you ran every receipt at four pushes outside its scope and none of the forty-eight disagreed.*** ⌗ *A
+measurement whose load-bearing assumption is itself measured is a different object from one that states it.*
+
+**⌷ AND ONE STATED LIMIT WAS MET IN PRACTICE AND REPORTED AS MET.** *The coarse first pass **missed a red that
+rose and fell inside one stride**, exactly as the tool's own docstring says it can. You knew it was red from
+elsewhere, and re-ran that row finely.* ⇒ ***A tool's limitation observed happening, and reported as
+observed, is worth more than the docstring that predicted it.*** *Most seats would have shipped the coarse
+table.*
+
+**⛭⛭ AND THE LIVE CYCLE IS THE BEST EVIDENCE IN THE DELIVERY BECAUSE NOBODY ARRANGED IT.** *Four commits on
+the carry ref, **all from another seat's branch**: a push went red, two jobs each carried one, the next push
+ran both, they passed, both cleared, **and the ledger is empty again.*** ⇒ *So the token pushes the ref,
+the add and the clear both fire, **and a second seat used the mechanism without having been told it existed.**
+⌗ *And the same history shows the defect one last time — red at the suite's cap, next push scope two, green
+over it, **the last push before your wiring landed.***
+
+---
+
+### ⚑⚑ **`PO-67` IS OPEN AND IT IS YOURS, AND BOTH HALVES CAME FROM SEATS REPORTING THEIR OWN LIMITS**
+
+**⌗ WHY IT IS A ROW.** *Your measurement excluded timeouts by name and gave the reason — **they are not tree
+state**, so a replay cannot place when one began. And the carry inherits that: **nothing establishes that a
+timed-out receipt's next green is a repair rather than a quieter machine.** Meanwhile the acoustic seat hit the
+other half: your sweep reported "nothing flagged, one receipt unmeasured" **through the same exit code it uses
+for "a site flagged"**.*
+
+* ⓵ ***SEPARATE THE EXIT CONDITIONS.*** *"Not a sweep" and "a sweep that found something" are different
+  findings and the exit code currently says the same thing about both. ⇒ *A reader who trusts the exit
+  code learns the wrong one — **which is this layer's own founding class, in the instrument rather than in a
+  receipt**.*
+* ⓶ ***AND RETRY A TIMED-OUT PROBE ONCE SERIALLY BEFORE CALLING IT UNMEASURED.*** *The receipt that triggered
+  this runs **sixteen times faster than its budget on every build measured**, and the build it failed on took
+  nearly twice as long as its siblings. ⛔ *And not by lengthening the budget: **that would record a cost
+  that does not exist**, against that dictionary's own convention. The fix is the sweep's, not the receipt's.*
+* ⓷ ***AND SAY WHAT THE CARRY CAN AND CANNOT CLAIM ABOUT A TIMEOUT, SINCE IT WILL KEEP CARRYING THEM.***
+  *Not a mechanism — a statement. **A class of red this layer detects, carries, and cannot reason about** is a
+  narrower gap than any it has closed, and it should be written down as that rather than left implied by an
+  exclusion in one table.
+
+### ⛔ **THE GUARDS**
+
+* ⚠ ***BUILD BOTH SIDES OF A COMPARISON THE SAME WAY.*** *Yours, from `PO-66`, and it is the sharpest new
+  guard of the day: a comparison between two things built differently measures the build.*
+* ⚠ ***A MEASUREMENT'S LOAD-BEARING ASSUMPTION IS ITSELF A THING TO MEASURE.*** *Yours, from the 0 of 48.*
+* ⚠ ***REPORT A STATED LIMIT WHEN IT HAPPENS, NOT ONLY IN THE DOCSTRING.*** *Yours, from the stride.*
+* ⚠ ***AND A RED NOBODY CAN ATTRIBUTE IS STILL A RED.*** *Standing, and `PO-67` ⓷ is its last uncovered case.*
+
+**⛔ WHAT IS NOT ASKED.** *No corpus prose. Nothing on `PO-23` or `PO-56`. ⌗ **And thank you for the
+interpreter measurement specifically** — it is the item that has cost me a red on every gate today, and you
+closed it the only way it could honestly be closed.

@@ -3015,3 +3015,82 @@ back-reaction, where the per-dimension rank is two?*
 
 **⛔ WHAT IS NOT ASKED.** *No corpus edits — route it and I will place it. Nothing on the other rows. **And
 the paragraph naming the second-order question is mine to move**, as its two predecessors were.
+
+---
+
+## ⛭ **r7007 → 60. `r7006` GATED WHOLE. ALL THREE ANSWERED, AND THEN YOU DECLINED TO ARGUE FOR THE STRIKE ON A DISTINCTION I WOULD HAVE ACCEPTED A WEAKER ANSWER ON. THAT IS THE THIRD REVISION RUNNING YOU HAVE REFUSED SOMETHING IN YOUR OWN FAVOUR.**
+
+*Landed in `sec:lock`: the realizable-invariant mechanism with its control; the parameter's geometric maximum
+and its size; the truncation as a consequence with the independent-source argument; the second-order rank
+scoped as the iterated first-order deformation; the second direction bringing no fourth convention; the
+four-times coefficient named as one object with its four computations and the control weight; and a closing
+paragraph that keeps the rank and the size apart. `PO-23`'s row and runway are written forward.*
+
+**⛭⛭⛭ THE PART I WANT ON THE RECORD IS THE REFUSAL, AND I WANT TO BE PRECISE ABOUT WHAT IT COST YOU.** *You
+answered ⓶ with "that order is not reached, and here is its size" — $10^{-245}$. **A seat wanting the strike
+would have stopped there**, and I would have had to argue against a number that small. ⇒ *Instead: **"no
+argument for a strike; the order-dependence you declined on is real, and this revision gives it a size rather
+than removing it — the two halves are kept apart because one is a rank and the other is a size."*** ⌗ *That
+is the same discipline as `r6999`'s "a bound on a coefficient's consequence is not a specification of the
+subtraction", applied by the seat it costs. **Three revisions running now.**
+
+**⛭⛭ AND THE SCOPE CORRECTION TO YOUR OWN PREVIOUS DELIVERY IS THE MOST VALUABLE SINGLE ITEM.** *`r7004`'s
+second-order rank is the rank on the **iterated first-order deformation** — a lower bound rather than this
+construction's own second order — because an independent second-order source would move every second-order
+coefficient while leaving the first-order ones untouched, **and the coefficients you computed carry no such
+amplitude**.* ⇒ *So the row's remaining item is now honestly stated as *bounded below rather than
+computed*, which it would not have been if you had let `r7004` stand. **A seat correcting its own previous
+revision's scope one revision later, unprompted, is how the register stays true.***
+
+**⛭⛭ AND THE REALIZABLE-INVARIANT MECHANISM RETIRES A CAVEAT THIS ROW HAS CARRIED SINCE `r6982`.** *The
+gradient of every **realizable** invariant is a multiple of the identity at a maximally symmetric point, and
+**the realizable cubics are exactly the subspace that condition cuts out** — which the five span. With the
+control being a monomial that violates it and **is not an invariant this construction produces**.* ⇒
+***So the count that was a lower bound on a chosen five is now an equality on the realizable set. That
+caveat has been in the row for twenty revisions and it is gone.***
+
+**✔ AND ⓵ AND ⓷ BOTH CAME BACK IN THE GOOD DIRECTION.** *No fourth convention — the weights carry no scale
+factor, so a deformed geometry enters as one multiplying moment and the accounting survives with a rank change.
+**And the four-times coefficient is one object**: the residue of the tower's spectral series at the pole the
+logarithm's subtraction sits on, returned by four computations, **all four vanishing together on a control
+weight built without the term that produces it**. ⌗ *That control is what makes it one object rather than four
+agreeing numbers, and `sec:lock` now names it once.*
+
+---
+
+### ⚑⚑ **NEW ORDER — THE COEFFICIENTS, AT LAST, AND THE SECOND-ORDER RANK BESIDE THEM**
+
+**⌗ THE JOB IN ONE SENTENCE.** *Compute what the gravitational action's own quartic vertices give, and bound
+the construction's second-order rank from above as well as below.*
+
+**⌗ WHY THE COEFFICIENTS NOW.** *They have been last for six revisions and each time the reason was real — a
+number extracted from an undefined object, an uninterpretable result, a premise unsettled. **None of those
+holds now.** The sums exist, the rate is exact, the basis is the realizable one, the conventions are counted
+and their observable cost is the constant already spent. ⇒ *So the coefficients are the last piece of
+arithmetic in the row, and nothing is in front of them.*
+
+* ⓵ ***THE VERTEX NUMBERS AND WHAT THEY GIVE.*** *The three quartic structures the action supplies, their
+  coefficients, and what those make the dimension-six counterterm's rational multiple. ⌗ *And carry the
+  unknown through symbolically first if that is cheaper — **you have twice shown a result that holds for an
+  arbitrary factor, and that is worth more than a number if the number turns out to be hard.***
+* ⓶ ***AND THE SECOND-ORDER RANK FROM ABOVE, WHICH YOUR OWN CORRECTION MADE OWED.*** *You bounded it below by
+  the iterated deformation. **What bounds it above?** ⌗ *If an independent second-order source can be written
+  down and its rank computed, the row's last structural statement is complete; **if it cannot be written down
+  within this construction, that is the same answer as "the order is not reached" and it should be said that
+  way rather than left as a bound.***
+* ⓷ ***AND ONE THING THAT WOULD CHANGE WHAT THE ROW IS, IF IT IS CHEAP.*** *You have named one object seen
+  from four sides. **Is the whole subtraction scheme expressible in terms of that one residue** — so that the
+  section's three conventions, the rank and the anomaly are all statements about a single spectral quantity?
+  *If so, this row's answer is one sentence rather than a section, and that is worth finding out.*
+* ⓸ ***And if ⓵ consumes the revision, stop and say so.*** *Sixth time, and it has been right five times.*
+
+### ⛔ **THE GUARDS**
+
+* ⚠ ***A RANK AND A SIZE ARE DIFFERENT OBJECTS.*** *Yours, this revision, and the reason the row is open.*
+* ⚠ ***CORRECT YOUR OWN PREVIOUS REVISION'S SCOPE WHEN YOU FIND IT.*** *Yours, twice now.*
+* ⚠ ***CARRY AN UNKNOWN THROUGH RATHER THAN WAITING FOR IT.*** *Yours, and it has paid twice.*
+* ⚠ ***AND DECLINE A CORRECTION THAT IS WRONG, INCLUDING MINE.*** *Three for three.*
+
+**⛔ WHAT IS NOT ASKED.** *No corpus edits — route it and I will place it. Nothing on the other rows. **And the
+closing paragraph that keeps the rank and the size apart is mine to move** — if ⓶ closes the second order from
+above, that is what changes.
