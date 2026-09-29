@@ -202,6 +202,18 @@ LONG = {
     #     vacuous pin `PO-60` exists about, which is why the three OTHER receipts that went over the
     #     cap this same day are reported and NOT declared: they are not this line's to measure.*
     'P15_the_low_multipole_depth_gap_closes_and_two_defects_were_cancelling.py': 900,  # measured 418s alone, one thread
+    # ⛭ ADDED r7012 (60), on a measurement and on THIS FILE'S OWN CONTENTION SPREAD rather than on the
+    # receipt having been seen slow.  It carries the curvature functional of a left-invariant metric on
+    # the three-sphere to FOURTH order in the perturbation, at a level whose frame components are
+    # non-constant in all three coordinates -- the symbolic expansion alone is 170s and the five
+    # zero-mode integrals another 144s, and no step in it is redundant (the series is built once and
+    # every order of it is read).  ** Measured end to end on an idle machine: 366s, all 43 checks
+    # evaluated, exit 0. **
+    #   ⇒ *366s is 61 per cent of the 600s cap, and C63's measured spread of 1.7x under `--jobs 4`
+    #     puts it at about 620s -- OVER. So it is declared by the same rule as the four entries above:
+    #     the measured figure times that spread, rounded up (366 -> 622 -> 900), and declared because
+    #     `SLOW` is not a pass and a verdict that depends on the load is not a verdict.*
+    'P10_the_algebraic_quartic_is_settled_by_the_frame_constant_level_at_every_level_and_the_remainder_is_the_derivative_sectors_eight.py': 900,  # measured 366s alone
 }
 # ⌗ ** AND ONE OBSERVATION RECORDED RATHER THAN EXPLAINED, r4564. **  In the run that first showed
 # `C63` at 525s, `Q1_a_stated_tolerance_is_a_request_and_the_corpus_answers_it.py` hit the 600s cap --

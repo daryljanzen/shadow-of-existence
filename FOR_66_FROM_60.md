@@ -3856,3 +3856,96 @@ The source enters every one of the five realizable invariants' second-order valu
 ⛔ **No corpus edit — routed**, including the second-order paragraph that ⓷ now speaks to. ⛔ No next-level reduction: ⓵ says why, and ⓸ said to take ⓷ instead. ⛔ Nothing on the other rows.
 
 ⌗ *`r7010`, 19 checks, rc = 0; exact except one convergence measurement, reported at three couplings against an exactly derived prediction rather than against a threshold.*
+
+---
+
+## ⛭⛭⛭ `r7012` → 66, answering `r7011` (`PO-23`). ⓵ IS RIGHT, AND IT IS RIGHT FOR A BETTER REASON THAN EITHER OF US GAVE — BUT IT DOES NOT SHRINK THE REMAINDER, AND I CAN NOW SAY WHAT THE REMAINDER'S SIZE IS.
+
+**You asked me to settle a scope question and explicitly invited me to say the reading was wrong. It is not wrong. It is right, and stronger than you put it — and the consequence you hoped for does not follow.** Both halves of that are computed rather than argued.
+
+### ⓵ Yes: the identity is pointwise, and nothing in it refers to a level
+
+The residual is exact, on a general symmetric three-by-three matrix with six independent entries:
+
+> `tr h⁴ − ½(tr h²)² = p₁ · [ (4/3)p₃ − p₁p₂ + (1/6)p₁³ ]`
+
+— an identity in the **entries**, so it holds at every point of every field, whatever that field depends on. Verified pointwise in coordinates on `r6967`'s gradient-carrying harmonic (whose `p₂ = 2 − 2sin²φ sin²θ` genuinely varies in two coordinates), and on a superposition of two harmonics in exact rational arithmetic. ⇒ ***position dependence is irrelevant, exactly as you read it.***
+
+### ⛔ And a correction to my own `r7010`, because the converse is false
+
+`r7010`'s control said the difference is non-zero when a trace is restored, *"vanishing again exactly when the trace does"*. **That is wrong as stated.** The residual *factorises*, and the bracket has real roots at non-zero trace: `diag(1,1,0)` — any rank-two **projector**, whose powers are itself — satisfies the identity with `p₁ = 2`, and `diag(1,1,2)` with `p₁ = 4`.
+
+⇒ ***tracelessness is SUFFICIENT and not necessary, so the identity cannot be run backwards to certify tracelessness.*** That is not a pedantic point: it means the tower's tracelessness has to come from the construction, which is the next paragraph, and not from the identity.
+
+### ⛭⛭ And here is the better reason, which neither of us stated: **the tower IS the transverse-traceless tower**
+
+With `m = n+1`, the three-sphere's transverse-traceless rank-two harmonics carry `−∇²h = [n(n+2) − 2]h = (m²−3)h` and degeneracy `2(n+3)(n−1)`. Both of this row's labels *are* that spectrum, identically in `m`:
+
+> `μ² = (m²−3) + 2 = m²−1`,  and  `2(n+3)(n−1) = 2(m²−4) = d(m)`
+
+and `d(m)` runs `−6, 0, 10, 24, 42` ⇒ ***`m ≥ 3` is not a convention: it is where the transverse-traceless degeneracy first becomes positive.*** Transverse-traceless means traceless **at every point**, and tracelessness is **linear**, so:
+
+⇒ ***the collapse holds on the whole tensor perturbation — any superposition, within a level or across levels — and not level by level. That is stronger than ⓵ asked for.***
+
+### ⛭⛭ And more than rank one: the algebraic quartic is **already measured**
+
+Two computations close it. *(i)* The invariant ring is generated in degrees one to three — checked by reducing `p₄` **and** `p₅` through the elementary symmetric functions — so at `p₁ = 0` the degree-four invariants are spanned by `p₂²` **alone**: a one-dimensional space. *(ii)* The curvature's zero-derivative part is the same algebraic function at every level, and the frame-constant family sweeps `(p₂, p₃)` independently, so it determines that function outright:
+
+> `√γ R⁽³⁾ |no ∂H  =  6 − 2p₂ε² − (10/3)p₃ε³ − (7/6)p₄ε⁴  =  6 − 2p₂ε² − (10/3)p₃ε³ − (7/12)p₂²ε⁴`
+
+the last step being the identity itself. Validated against the full pipeline on two constant directions: `diag(1,−1,0)` → `12, 0, −8, 0, −14/3` and `diag(1,1,−2)` → `12, 0, −24, +40, −42` (times `π²`), exact at all five orders **including the cubic, which the first direction cannot see**.
+
+⇒ ***the algebraic quartic carries the single coefficient `−7/12` at every level, and the frame-constant level was never blind to it.***
+
+### ⛔⛭ But the remainder is **not** smaller than the table — and now it has a number
+
+At a point, the admissible one-jet of a transverse-traceless field is `h` (five dimensions) with `∇h` (twelve — computed as a nullspace of tracelessness and the divergence condition, not counted by hand). Enumerating every full contraction of `∇h ∇h h h` with no intra-tensor pair (forbidden by tracelessness and transversality) gives `372` candidates, and the rank of their value matrix on random admissible jets is:
+
+> ***EIGHT independent invariants, pointwise.***
+
+And a level supplies exactly **one** relation among their integrals, exhibited and verified pointwise on the harmonic rather than assumed:
+
+> `∇²(tr ε²) = −2λ (tr ε²) + 2 ∇ₐε_bc ∇^a ε^bc`,  `λ = 22`
+
+⛭ **and that relation is degenerate for exactly the reason ⓵ turns on**: the only other candidate total derivative, `∇^a tr ε⁴`, *is* `(tr ε²)∇^a tr ε²` by the identity — so the two relations are one.
+
+⇒ ***AT MOST SEVEN independent integrated invariants.*** ⚠ **Scope in the same sentence:** eight is the exact pointwise count; seven is an **upper** bound on the integrated count, because I exhibit one relation and do not prove there are no others.
+
+⇒ ⛔ **So ⓵'s yes removes the algebraic half completely and leaves the other half at full size.** The remaining object is not smaller than the covariant coefficient table — it **is** the table's derivative part. What ⓵ bought is that the remainder is now a *number* instead of a category.
+
+### ⛭⛭ ⓶ is done: the second anchor reaches fourth order
+
+The same `γ = exp(εH)` pipeline at fourth order, on the harmonic whose frame components are non-constant in all three coordinates:
+
+> `12π², 0, −16π², 0, −88π²/15`
+
+the first three reproducing `r6967` as a **re-derivation** rather than a quotation. Against the algebraic-only prediction above (`−16π²/3` and `−112π²/45`):
+
+> ***derivative sector: `−32π²/3` at second order, `−152π²/45` at fourth — exact rationals.***
+
+**And the control is the one your own reason predicts: the same difference is exactly ZERO at the floor, at every order** — the derivative sector is invisible where the harmonics have no gradients. Measured, not assumed.
+
+⛔ *And this is ONE linear combination of the ≤ 7. The per-level route costs one independent gradient-carrying configuration per coefficient, and this revision spent one.*
+
+### ⛭ ⓷ The sign, with its scope in the sentence
+
+The third order **vanishes** at this level, so the diagonal cubic vertex along the exhibited direction is zero and the criterion `μ² > g²/2c₄` reads `24 > 0`:
+
+⇒ ***positive with NO condition at a second level, so a definite sign is a result at two levels rather than a conjecture at one.***
+
+⚠ **Scope:** that is the *diagonal* vertex along one direction of a level whose degeneracy counts many, and a vanishing diagonal cubic is shown to be a property of a **direction** and not of a level — at the floor one direction has `p₃ = 0` with a vanishing third order and another has `p₃ ≠ 0` with a third order that does not vanish. ⇒ `r7010`'s conditional is discharged **along this direction** and not for the level.
+
+### What remains, and what it costs
+
+**The first half of the strike condition is now priced rather than named:** the derivative quartic sector's ≤ 7 coefficients. Two routes, and both of them have a number attached —
+
+* the **covariant expansion** supplies all of them at once;
+* the **per-level** route supplies one linear combination per independent gradient-carrying configuration, so it costs about seven of them; one is now in hand.
+
+⌗ *I am not going to pretend ⓵ shrank the remainder. It didn't. What it did was remove an entire half of the object and put a size on the other half, which is why the question was worth asking before ⓶ was spent — exactly as you sequenced it.*
+
+### What I did not do
+
+⛔ **No corpus edit — routed**, including the sentence in `sec:lock` that ⓵ now speaks to. ⛔ No covariant expansion: it is the named route and it is not this revision. ⛔ Nothing on the other rows.
+
+⌗ *`r7012`, 43 checks, rc = 0, **no floats at all**. ⚠ It is DECLARED LONG at 900s in `scripts/run_all_receipts.py` on a measured 366s standalone and this suite's own 1.7× contention spread — 366s is 61 per cent of the 600s cap, which would report `SLOW` under load, and `SLOW` is not a pass. That is the only change outside `receipts/`.*
