@@ -4611,3 +4611,105 @@ Receipt `P15_the_window_free_reading_cannot_resolve_the_first_cycle_the_flatness
 Receipt `P15_the_step_survives_a_differential_estimator_and_no_single_bilinear_term_carries_the_shared_step_though_the_doppler_leads_it.py`, **28 gates, `GATES: ALL PASS`** in a third of a second. Pre-registration and working script in separate earlier commits. INDEX row, `PO13_WORKING_STATE`, appendices regenerated. **No corpus edits.**
 
 ⌗ **And one thing for you to place, since ⓵ settles what the row is built on:** the frontier row's estimator should now be the differential one, and `PO-56`'s corrected terminal clause gets easier to state on it — *"no quantity this construction fixes produces the step"* is a claim about $\operatorname{std}(o_a-o_c)$, where the nine tenths never enters, rather than about a ratio of two contrasts where it enters and cancels.
+
+# ⛭⛭⛭ cc66.60 — `r7017` FILLED: THE SURVIVING STEP IS **AMPLITUDE AND NOT PHASE**, SO THE ROW IS **NOT** REFRAMED; **THE SHARES DO NOT SURVIVE THE CHANGE OF DENOMINATOR** AND ONE CHANNEL REVERSES SIGN; AND **THE STEP DOES NOT COMPOSE THE WAY THE CONTRAST DOES**
+
+*`r7017` filled. ⌗ **Path provenance:** hierarchy path throughout — banks `r6941_fine_{lcdm,cr}`, `r6959_nswap_lcdm`, `r6975_mix_lcdm`, `r6983_joint_lcdm`, `r6959_eta_cr`'s band edges. **Nothing solved, nothing run.** No corpus edits.*
+
+⚑ **Pre-registration as its own commit again**: `bdcae87a` before `72352f38`. *And it tabled **phase** first, which was the right way round — because the hazard that actually fired is the one it named, and it fired on the item that would have reframed the row.*
+
+---
+
+## ⛭⛭⛭ ⓵ AMPLITUDE. AND THE SEPARATION IS AN **IDENTITY**, NOT A FIT
+
+*With $o_c = A_c\cos\psi$, $o_a = A_a\cos(\psi+\Delta)$, $r = A_a/A_c$:*
+
+$$\operatorname{std}(o_a-o_c) \;=\; \tfrac{A_c}{\sqrt2}\sqrt{\,r^2 - 2r\cos\Delta + 1\,},\qquad
+\text{amplitude-only } \tfrac{A_c}{\sqrt2}\lvert r-1\rvert,\qquad
+\text{phase-only } \tfrac{A_c}{\sqrt2}\,2\lvert\sin(\Delta/2)\rvert.$$
+
+⇒ *** THE CLOSED FORM REPRODUCES THE DIFFERENCE'S OWN MEASURED COMB AMPLITUDE TO $0.00$ PER CENT POINTWISE. *** *It is algebra, not a model, so the licence gate passes exactly and the separation below is **exact rather than fitted**.*
+
+| quantity | band-1 departure, four bases, none chosen | verdict |
+|---|---|---|
+| BOTH — the surviving step | $-0.204$ … $-0.236$ | **STEP** |
+| **AMPLITUDE only** | $-0.227$ … $-0.260$ | **STEP** |
+| PHASE only | $+0.570$ … $+0.796$ | step, **opposite sign** |
+| raw band std (`cc66.59`'s route) | $-0.450$ … $-0.454$ | **STEP** |
+
+*The amplitude term tracks the full statistic to within a quarter of its size; at band 1 it supplies $0.958$ of it against phase's $0.284$.*
+
+⇒ *** SO THE FIRST ACOUSTIC CYCLE IS **WEAKENED** IN THIS COSMOLOGY, NOT **DISPLACED**. THE ROW IS NOT REFRAMED AND `P15` KEEPS IT. ***
+
+### ⚠ BUT THE PHASE CHANNEL IS **UNRESOLVED**, NOT MERELY SMALL — AND THE HAZARD I PRE-REGISTERED IS THE ONE THAT FIRED
+
+| window half-width | amplitude step | phase step |
+|---|---|---|
+| $0.55$ | $-0.105$ … $-0.126$ | $+2.93$ … $+3.55$ |
+| $0.75$ | $-0.227$ … $-0.260$ | $+0.57$ … $+0.80$ |
+| $0.95$ | $-0.296$ … $-0.342$ | $-0.41$ … $-0.50$ |
+
+⇒ **The phase term changes SIGN across the widths. The amplitude term does not.** *And the reason is size rather than statistics: the relative phase is $\mathbf{0.0068}$ **rad** — $0.39$ degrees — against a relative amplitude of $0.0554$.* ⛔ ***The phase channel sits at the estimator's own resolution and the amplitude channel does not.***
+
+⇒ *** SO THE HONEST ANSWER IS: **AMPLITUDE ON THE SIGN, INSEPARABLE ON THE SHARE.** *** *Your table's fourth row, and I am taking it rather than rounding to the third.* ⌗ **And what would separate them, since you asked for that rather than a shrug:** *a phase read **against the comb itself** over a long lever arm in $q$ — the accumulated phase against $q$, whose slope is measurable to a part in $10^3$ over five periods — rather than a local cos/sin fit in a window one period wide, where amplitude and phase are degenerate by construction.*
+
+### ⚠⚠ AND A CORRECTION TO `cc66.59`, WHICH THIS DECOMPOSITION FORCED AND WHICH I WOULD NOT HAVE FOUND WITHOUT IT
+
+*A band spans $0.70$ in $q$. The comb period is $1.00$.* ⇒ *** A RAW BAND `std` THEREFORE SAMPLES **LESS THAN ONE FULL CYCLE**, AND IS PHASE-DEPENDENT BY CONSTRUCTION *** — *the held-period amplitude is not.*
+
+| | band 1 | ratio to the held-period reading |
+|---|---|---|
+| raw band std of $o_a-o_c$ | $0.00478$ | — |
+| held-period amplitude$/\sqrt2$ | $0.00653$ | $1.367$ |
+
+⇒ **The step survives on BOTH aggregations** — $-0.45$ raw, $-0.22$ held-period — *and neither is chosen.* ⌗ *But `cc66.59` quoted the larger of the two without knowing it was the phase-dependent one, and that is now on the record.*
+
+---
+
+## ⛭⛭⛭ ⓶ AND THE SHARES DO NOT SURVIVE. THIS IS THE ROW YOU TABLED AND IT IS THE STRONGEST OF THE THREE
+
+*Each knob read where the CR-specific tenth actually lives — its **own** $\operatorname{std}(o_{\rm knob}-o_{\rm lcdm})$ — against the arm's:*
+
+| channel | on the ratio-of-contrasts | on the **differential** | sign vs the arm |
+|---|---|---|---|
+| window weighting | wrong sign | $+1.05$ … $+1.32$, **a step** | ⛔ **OPPOSITE** |
+| term mix | $\mathbf{63\%}$ | $-0.11$ … $-0.21$, **no longer a step** | same |
+| **JOINT**, the realised pair | $\mathbf{42\%}$ | $-0.07$ … $+0.03$, **sign flips, zero within its scatter** | — |
+
+⇒ *** A CHANNEL THAT ACCOUNTS FOR TWO FIFTHS OF A MOSTLY-SHARED QUANTITY ACCOUNTS FOR **NOTHING** OF THE PART THAT IS THIS COSMOLOGY'S. THE ROW'S CANDIDATE ACCOUNTING WAS SCORED AGAINST THE WRONG OBJECT. ***
+
+⚠ **And I want the weaker word, not the stronger one:** *the term mix and the pair are **not resolved** on this estimator — they are not **excluded**. That is what the scatter supports and it is a different claim.*
+
+---
+
+## ⛔⛔ ⓷ AND THE STEP DOES NOT COMPOSE THE WAY THE CONTRAST DOES — WHICH IS YOUR "WORTH MORE THAN THE SHARE" ROW
+
+*`cc66.49` measured the **contrast** composing **multiplicatively**: the product in 7 of 7 bands, the sum in 0 of 7. On the **step**, from the two singles' departures $d_w = +1.184$ and $d_m = -0.156$:*
+
+| rule | predicts | residual, in the joint's own scatters |
+|---|---|---|
+| product $(1+d_w)(1+d_m)-1$ | $+0.843$ | $6.1\times$ |
+| sum $d_w + d_m$ | $+1.028$ | $7.4\times$ |
+| quadrature | $+1.195$ | $8.6\times$ |
+
+*against a **measured** joint of $\mathbf{-0.014}$.*
+
+⇒ *** NO RULE FITS. ALL THREE PREDICT A LARGE **POSITIVE** DEPARTURE WHERE THE REALISED PAIR MEASURES **ZERO**. *** ⌗ ***The two knobs very nearly CANCEL on the step where they MULTIPLY on the contrast.*** *That is a property of the step and not of the knobs, and you were right that it is worth more than the share would have been.*
+
+⌗ **And the residuals are in departure units against that scatter, not as a percentage** — *the joint's departure is consistent with zero, and a percentage of a near-zero measurement is not a share. **That is this line's own denominator guard, turned on itself.***
+
+---
+
+## ⛔ ⓸, AND THE DISCIPLINE
+
+*No envelope, basis, abscissa **or aggregation** chosen. No new candidate. **No mechanism** — "the first acoustic cycle is weaker in this cosmology" is a signature and I will not say what weakens it. No corpus edits.*
+
+* ⚠ ***A BAND NARROWER THAN THE PERIOD IT MEASURES MAKES ITS OWN STATISTIC PHASE-DEPENDENT.*** *New, mine, and it corrects my own previous revision.*
+* ⚠ ***AN IDENTITY IS NOT A FIT, AND SAYING WHICH YOU HAVE IS THE GATE.*** *The $0.00$ per cent is algebra reproducing itself; that is why the separation is exact.*
+* ⚠ ***A PERCENTAGE OF A NEAR-ZERO MEASUREMENT IS NOT A SHARE.*** *Yours about denominators, applied where it bit me.*
+
+## WHAT IS ON THE BRANCH
+
+Receipt `P15_the_surviving_step_is_amplitude_and_not_phase_and_the_candidate_shares_do_not_survive_the_change_of_denominator.py`, **23 gates, `GATES: ALL PASS`** in half a second. Pre-registration and working script in separate earlier commits. INDEX row, `PO13_WORKING_STATE`, appendices regenerated. **No corpus edits.**
+
+⌗ **For you to place if you want it:** ⓶ says every share the row has quoted was measured against the shared nine tenths. *If `PO-56`'s terminal clause is to be stated on the differential estimator, as you said in the register, then **the candidate list has never actually been scored against it** — ⓶ is the first scoring, and on it the list is not four partial accounts but one channel of the wrong sign and two that do not resolve.*
