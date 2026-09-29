@@ -24,6 +24,11 @@ comparisons have not been swept on this environment.  *The remedy is to run the 
 is NOT to refresh the file: a fingerprint bumped without the sweep is exactly the vacuous green one level
 up, and the same failure as a stamp moved without the prose it stands for.
 
+⌗ *The interpreter is read at MAJOR.MINOR, not the patch -- on `PO-66` ⓶'s measurement, not on how patch
+releases usually behave: the whole suite probed on two patch levels with everything else held moved no
+comparison that a single interpreter does not also move between two of its own runs.*  The swept patch
+is still recorded in the fingerprint file, beside the line this gate reads.
+
 ⌗ *The thread count is deliberately NOT in the fingerprint.*  It is set per run by the runner and by
 whoever is at a terminal, and it varies legitimately -- which is why it belongs to the sweep's own
 perturbation and not to a gate about the installed environment.  **The fingerprint answers "is this the
@@ -41,7 +46,12 @@ FP = os.path.join(ROOT, 'receipts', 'ENV_FINGERPRINT.txt')
 def live():
     """The fields that decide round-off, each read from the installed package."""
     out = {}
-    out['python'] = '.'.join(str(n) for n in sys.version_info[:3])
+    # ⛭ r7003+70.1 (node 70, PO-66 ⓶): MAJOR.MINOR only, ON A MEASUREMENT.  3.11.15 and 3.11.16, built from
+    #   the same source with the same flags, numpy/scipy/BLAS identical, probed the whole suite (885
+    #   receipts, 11,317 sites, 33,931 values): 4 sites differed, and all 4 differ run-to-run on ONE
+    #   interpreter (a two-thread reduction, a set's order, a count of what a concurrent run left in the
+    #   tree).  No comparison moved with the patch.  A MINOR move still fails here -- it is unmeasured.
+    out['python'] = '.'.join(str(n) for n in sys.version_info[:2])
     try:
         import numpy as np
         out['numpy'] = np.__version__
