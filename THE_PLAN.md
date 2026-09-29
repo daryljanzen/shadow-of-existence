@@ -14,7 +14,7 @@ destination cannot tell progress from motion.* ⇒ ***A lane is finished when a 
 lane without such a list is a lane that cannot finish.*** ⌗ *`STANDING ORDER r7013` stops the chain; this list
 is what the chain was supposed to be walking toward.*
 
-**⛔ AND THE LIST IS CLOSED.** *Adding an item requires saying **why the layer was not finished without it** —
+**⛔ AND THE LIST IS CLOSED, AND IT WAS TESTED BY THE SEAT THAT OWNS THE LAYER RATHER THAN DECLARED COMPLETE FROM THE GATE.** *Adding an item requires saying **why the layer was not finished without it** —
 not why the item is worth doing. Plenty of worthwhile things are not on it, and that is the point of having
 one: a list that grows whenever something worthwhile appears is a cadence again.*
 
@@ -26,19 +26,38 @@ one: a list that grows whenever something worthwhile appears is a cadence again.
 | **④** | **Every instrument's exit conditions distinguish its own findings**, so a reader who trusts an exit code learns the right one. | ✔ *done — `PO-67`* |
 | **⑤** | **A receipt whose verdict differs between trees that agree on everything it reads is detected and named**, at the moment of the run. | ✔ *done — `PO-68`, and the finding is a contradiction rather than a count* |
 | **⑥** | **Every stated limit of the layer is written at the site where it acts**, not left implied by an exclusion in a table. | ✔ *done — and it is the layer's own habit rather than a rule imposed on it* |
-| **⑦** | **No receipt carries an unexplained red.** | ⛔ ***OPEN — `Q1`, and one named blocker*** |
+| **⑦** | **No receipt carries an unexplained red.** | ⛭ ***ARMED — the instrument now keeps what a failing receipt said; waiting on the first recurrence*** |
+| **⑧** | **No receipt carries a red whose remedy is known and unapplied.** | ⛔ ***OPEN — `P14_the_constituent_count…`, one order away*** |
 
-**⛔ ⑦ IS THE WHOLE OF WHAT IS LEFT, AND ITS BLOCKER IS ONE LINE OF CODE.** *`Q1`'s verdict is **proved** not to
-come from the tree — the same commit, two lines, one red and one green — the index has been audited and misses
-nothing that can move it, and the concurrency does not reproduce it. What remains is the runner, and **the
-probe sends a receipt's output to `/dev/null`, so no failing run has ever recorded why it exited 1**.* ⇒ ***The
-one observation that would settle ⑦ is being discarded by the instrument, and keeping the tail of a non-zero
-exit's stderr is the change.***
+**⛭ ⑦ IS ARMED, AND THE CHANGE THAT ARMED IT WAS NOT THE CHANGE THIS DOCUMENT ASKED FOR.** *`Q1`'s verdict is
+**proved** not to come from the tree — the same commit, two lines, one red and one green — the index has been
+audited and misses nothing that can move it, the concurrency does not reproduce it, the per-CPU dispatch is
+refuted bit-identically, and the build-B pattern is refuted by two further runner records at one thread.
+**What remained was that no failing run had ever recorded why it exited 1.*** ⌗ *The order named the stderr
+tail; **the corpus's own check failures print to STDOUT and exit with an empty stderr**, so that change would
+have kept nothing for exactly the receipt it was for. Both streams are kept now, with every failure line and a
+bounded tail, in the job log because the log directory does not survive the runner, through one definition
+shared by both instruments so they cannot drift.*
 
-**⌗ AND THEN THE LAYER IS DONE, INCLUDING IN THE CASE WHERE `Q1` IS NEVER EXPLAINED.** *If the kept output
-explains it, ⑦ closes by repair. If it does not, ⑦ closes by the second exit: **a red whose cause is
-established as unreachable from any tree this corpus controls is a stated limit, written at the receipt**, and
-that is a finished outcome. ⛔ *What ⑦ may not become is a tenth row.*
+⇒ ***So ⑦ closes on the next recurrence either way***: *a named failing check, or a timeout traceback, or —
+if it recurs and says neither — **a red not reachable from any tree this corpus controls, written at the
+receipt as a stated limit, which is the second exit and a finish.***
+
+**⛔ ⑧ IS OWED, AND IT IS THE ITEM THIS LIST WAS MISSING.** *The seat that owns the layer was asked to test the
+list against its own bar — why the layer would **not be finished** without an item — and it returned one,
+naming a debt of its own: `P14_the_constituent_count…` runs at 420–575 s against a 600 s cap, went over once
+in the seven scoped runs whose logs show it, **and was routed at `r6993` with its remedy already stated — a
+declared budget, measured — and never declared.*** ⇒ ***With ⑦ closed the layer would read finished while that
+receipt goes red on every slow runner, the carry carries it, a fast runner clears it, and nothing on this list
+would be open for it.*** ⌗ *Its discharge is known, so by `STANDING ORDER r7013` it is an **order** and not a
+row: one measurement and one line.*
+
+**⌗ AND THE CLOSURE IS ARGUED RATHER THAN ASSUMED.** *Four further candidates were tested against the bar and
+rejected with reasons: the read index's expiry is a recurring duty that **fails loudly** and names its own
+remedy, which is a finished design; the carry ledger's entries for dead branches are read by nothing; pull-
+request runs not writing the ledger is by design, a PR's scope being asked again on every event; and the suite
+runner keeping no output on a timeout is worth having and not blocking, a timeout already being named by
+receipt.*
 
 **⌗ AND THE SAME IS OWED BY ANY LANE THAT RUNS LONG.** *This is the first completion criterion in the corpus
 and it should not be the last; a lane that cannot write one has not yet worked out what it is for.*
@@ -243,7 +262,7 @@ corpus in `PO13_WORKING_STATE.md`.*
 
 <!-- GRAIN-CURRENCY:BEGIN -->
 
-## ⌗⌗⌗ CURRENCY — **GENERATED** by `scripts/regen_grain_currency.py`, baseline r2417, register front r7015
+## ⌗⌗⌗ CURRENCY — **GENERATED** by `scripts/regen_grain_currency.py`, baseline r2417, register front r7017
 
 > ⚠ **THE BODY BELOW STOPS AT THE BASELINE. This head is the list of what has moved since, and it is REGENERATED rather than written** — *because these documents go stale every ~20 revisions by construction, and paying that by hand is a debt that recurs rather than a defect that closes.*
 >
