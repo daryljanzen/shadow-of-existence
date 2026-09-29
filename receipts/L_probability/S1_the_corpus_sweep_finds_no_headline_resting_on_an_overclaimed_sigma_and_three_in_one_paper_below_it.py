@@ -100,7 +100,7 @@ def body(path):
 
 
 PAPERS = sorted(os.path.basename(p) for p in glob.glob(os.path.join(CORPUS, '*.tex'))
-                if not os.path.basename(p).startswith('appendix_'))
+                if not os.path.basename(p).startswith(('appendix_receipts', 'appendix_')))
 BODY = {p: body(os.path.join(CORPUS, p)) for p in PAPERS}
 FLAT = {p: ' '.join(t.split()) for p, t in BODY.items()}
 STAT = (r'\$\s*[\d.]+\s*(?:\\,|\\;|~)?\s*\\sigma\s*\$|several[- ]\$?\\sigma|\bstandard deviations?\b|'
