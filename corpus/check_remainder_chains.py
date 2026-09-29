@@ -40,6 +40,18 @@ residual uncertainty of an instrument is another instrument question.*
     ⌗ *The prose already in the seven rows stays as it is; the marker is added beside it.  A gate that
     demanded a rewrite of seven rows' prose would have been a gate nobody ran.*
 
+  ③ AND EXACTLY ONE OF THEM IS THE LIVE ONE, SAID SO.  ⛔ *This half exists because ② was not enough and
+    the gap is this seat's own.*  `THE_REGISTER` is **append-forward**, so an amended exit condition
+    appends and never supersedes: a reader coming down a row meets the OLDEST clause first with nothing
+    to tell it from the current one.  Measured at `r7027`: **`PO-56` carried FIVE terminal clauses and
+    EIGHT discharge clauses**, set across five revisions of one day, each right when it was made and only
+    the last of them live.  ⇒ ** AND ② REPORTED THE ROW GREEN THROUGHOUT, BECAUSE IT CHECKED THAT A CLAUSE
+    WAS *PRESENT* AND THE QUESTION IS WHICH ONE IS *CURRENT*. **  ⌗ *Which is this corpus's most frequent
+    defect arriving in the gate built to stop the previous one: a check run on one property, licensing a
+    conclusion about another.*  So every open row carries exactly one `⛭ THE LIVE CLAUSE` block, and the
+    clause count above it is printed rather than hidden --- the history stays, and the reader is told where
+    the row actually stands.
+
 ⛔ WHAT THIS GATE DOES NOT DO, STATED RATHER THAN LEFT TO BE ASSUMED.
 
   * It does not judge whether a terminal clause is a GOOD one.  It checks that one was written, which is
@@ -67,6 +79,8 @@ ROW = re.compile(r'\| (~~)?\*\*((?:PO|L|C)-?\d+)\*\*')
 PARENT = re.compile(r"OPENED r\d+ \([^)]*\) AS `?((?:PO|L|C)-\d+)`?'?s?\s+(?:LIVE\s+)?REMAINDER", re.I)
 DISCHARGE = re.compile(r'WHAT WOULD DISCHARGE IT', re.I)
 TERMINAL = re.compile(r'OR TERMINATES IF:', re.I)
+#: ⛭ The one block that says where the row stands NOW.  Exactly one per open row.
+LIVE = re.compile(r'THE LIVE CLAUSE', re.I)
 
 
 def read_rows(text):
@@ -82,6 +96,9 @@ def read_rows(text):
             'parent': p.group(1) if p else None,
             'discharge': bool(DISCHARGE.search(line)),
             'terminal': bool(TERMINAL.search(line)),
+            'n_terminal': len(TERMINAL.findall(line)),
+            'n_discharge': len(DISCHARGE.findall(line)),
+            'live': len(LIVE.findall(line)),
         }
     return out
 
@@ -128,8 +145,14 @@ def main():
     missing = [(r, rows[r]['discharge'], rows[r]['terminal'])
                for r in live if not (rows[r]['discharge'] and rows[r]['terminal'])]
     print('    live rows carrying BOTH exits: %d of %d' % (len(live) - len(missing), len(live)))
+    print()
+    print('    clause counts per open row -- an exit that moved leaves its predecessors behind:')
+    for r in live:
+        print('      %-7s  %d discharge, %d terminal, %d live-clause block(s)'
+              % (r, rows[r]['n_discharge'], rows[r]['n_terminal'], rows[r]['live']))
+    unlive = [(r, rows[r]['live']) for r in live if rows[r]['live'] != 1]
 
-    if not deep and not missing:
+    if not deep and not missing and not unlive:
         print()
         print('    no live chain runs past depth %d, and every open row states how it ends' % MAX_DEPTH)
         print('    both by succeeding and without succeeding.')
@@ -159,6 +182,21 @@ def main():
         print()
         print('     ⌗ *Terminate the chain by ② or ③.  Opening one more row is the move this gate')
         print('       exists to refuse, and the depth above is the evidence that it has become a habit.*')
+        rc = 1
+
+    if unlive:
+        print()
+        print('  ⛔ %d OPEN ROW(S) DO NOT SAY WHICH CLAUSE IS LIVE.' % len(unlive))
+        print()
+        for rid, n in unlive:
+            what = 'none' if n == 0 else '%d of them' % n
+            print('     [FAIL] %-7s has %s -- exactly one `⛭ THE LIVE CLAUSE` block is required'
+                  % (rid, what))
+        print()
+        print('     This file is append-forward, so an amended exit APPENDS: the oldest clause is the')
+        print('     one a reader meets first.  The block says which is current, and the counts above')
+        print('     say how far the exit has moved.  ⌗ *PO-56 reached five terminal clauses before')
+        print('     anybody counted, and the presence check reported it green the whole way.*')
         rc = 1
 
     if missing:

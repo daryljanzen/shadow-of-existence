@@ -58,7 +58,11 @@ Written r3616 by node 60, numerical-analysis bake.  Stated for reversal.
 #     The thread count is refuted as the variable by the runner's own records.  One more candidate was
 #     measured and refuted: numpy's CPU dispatch -- VERDICT 4's gap is 0.010164, clear of the rounding edge,
 #     and identical with AVX-512, then AVX2 and FMA, switched off.  Every failure is exit 1, never a
-#     timeout.  To r7013 both probe and tracer sent a receipt's output to /dev/null, so no failing run
+#     timeout.  ⛔ CORRECTED r7025+70.1: TRUE OF THE EXIT CODE, FALSE OF THE EVENT.  The first failure whose
+#     output was kept (run 36568172549, build B) exited 1 BECAUSE of a timeout -- this receipt's own
+#     `timeout=600` on the tightened `P16_the_scalar_monodromy`, raised as an uncaught `TimeoutExpired`.  A
+#     timeout inside a receipt is invisible to every timeout outside it.  (The earlier exit-1s were never
+#     read, so which of them were the same event is not known.)  It is now caught and named: see `run()`.  To r7013 both probe and tracer sent a receipt's output to /dev/null, so no failing run
 #     recorded WHICH check failed.  ** From r7013+70.1 they keep it: a non-zero exit's FAIL lines, stdout
 #     tail and stderr tail are printed under NOT A SWEEP in the job log. **  So the next runner failure
 #     names its own cause: a failing VERDICT prints its `[FAIL]` label; a nested run that hit its
@@ -69,7 +73,9 @@ import glob, os, re, subprocess, sys, tempfile
 
 ROOT = os.path.abspath(os.path.join(os.path.dirname(os.path.abspath(__file__)), '..', '..'))
 FAIL = []
+CHECKS = []
 def check(label, got, want):
+    CHECKS.append(label)
     ok = got == want
     print(f"    [{'ok' if ok else 'FAIL'}]  {label}   got={got!r} want={want!r}")
     if not ok:
@@ -127,6 +133,16 @@ except Exception:
 
 NUM = re.compile(r'-?\d+\.\d+(?:[eE][-+]?\d+)?')
 
+# ⛭ r7025+70.1 (node 70, on 66's order): A SAMPLE CHILD THAT RUNS PAST THIS RECEIPT'S OWN LIMIT IS NAMED, NOT
+#   DIED ON.  Until now a `TimeoutExpired` here escaped as a traceback and exit 1: the first runner failure ever
+#   read (run 36568172549, build B) was exactly that, on the TIGHTENED `P16_the_scalar_monodromy`, and nothing
+#   in this receipt's own output said which of its checks it could not run.  ** A receipt that cannot say which
+#   of its checks it could not run is the not-a-sweep class one level in. **  Now the child's return code
+#   reads 'TIMEOUT', a line names the sample and whether it was tightened, the verdict that consumes it fails
+#   BY NAME, and every other verdict still runs -- so the count of checks that did run stays visible.
+INNER = 600   # this receipt's own limit on one sample child
+
+
 def run(path, tighten):
     env = dict(os.environ)
     with tempfile.TemporaryDirectory() as d:
@@ -134,8 +150,14 @@ def run(path, tighten):
             open(os.path.join(d, 'usercustomize.py'), 'w').write(SHIM)
             env['PYTHONPATH'] = d + os.pathsep + env.get('PYTHONPATH', '')
             env['PYTHONSTARTUP'] = ''
-        r = subprocess.run([sys.executable, path], capture_output=True, text=True,
-                           env=env, timeout=600)
+        try:
+            r = subprocess.run([sys.executable, path], capture_output=True, text=True,
+                               env=env, timeout=INNER)
+        except subprocess.TimeoutExpired as e:
+            txt = lambda b: b.decode('utf-8', 'replace') if isinstance(b, bytes) else (b or '')
+            print(f"    ⛔ TIMEOUT: {os.path.basename(path)}{' at 100x tighter tolerance' if tighten else ''} "
+                  f"ran past this receipt's own {INNER}s limit on one sample child -- NOT RUN to a verdict")
+            r = subprocess.CompletedProcess(e.cmd, 'TIMEOUT', txt(e.stdout), txt(e.stderr))
     return r
 
 def numbers(text):
@@ -171,7 +193,8 @@ for rel in SAMPLE:
     a, b = numbers(base[rel].stdout), numbers(r2.stdout)
     name = rel.split('/')[-1]
     same = sum(1 for x, y in zip(a, b) if x == y)
-    print(f"    {name:<58} rc={r2.returncode}  {same}/{len(a)} printed numbers unchanged")
+    print(f"    {name:<58} rc={r2.returncode}  {same}/{len(a)} printed numbers unchanged"
+          + ("  (of a PARTIAL output, cut at the limit)" if r2.returncode == 'TIMEOUT' else ''))
     survived.append(r2.returncode)
 check("EVERY sampled receipt still passes its own assertions at 100x tighter tolerance",
       survived, [0] * len(SAMPLE))
@@ -197,7 +220,7 @@ print(f"    tight : {c2.stdout.strip()}")
 check("the control ran both ways", (c1.returncode, c2.returncode), (0, 0))
 # ** PIN THE MEASURED GAP, NOT `!=` AGAINST True. **  Fourth `expr == True` in four fields --
 #   I5/I7 at r3608, D1 at r3610, T1 at r3614, here.  *** Four is not four accidents. ***
-gap = round(abs(n1[0] - n2[0]), 3)
+gap = round(abs(n1[0] - n2[0]), 3) if n1 and n2 else None   # None: a side was NOT RUN (r7025+70.1)
 print(f"    the loose integration is off by {gap} in the endpoint")
 check("the harness detects a gap of 0.010", gap, 0.010)
 print("    *** The patch applies and the comparator sees.  Verdict 3 is a measurement. ***")
@@ -221,7 +244,7 @@ print("      what the word 'validated' is doing and exactly what the sentence do
 
 print("\n" + "=" * 78)
 if FAIL:
-    print(f"  VERDICT: {len(FAIL)} CHECK(S) FAILED")
+    print(f"  VERDICT: {len(FAIL)} CHECK(S) FAILED, of {len(CHECKS)} run")
     for f in FAIL:
         print("   ", f)
     raise SystemExit(1)
