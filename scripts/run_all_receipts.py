@@ -225,6 +225,7 @@ LONG = {
     #     the measured figure times that spread, rounded up (366 -> 622 -> 900), and declared because
     #     `SLOW` is not a pass and a verdict that depends on the load is not a verdict.*
     'P10_the_algebraic_quartic_is_settled_by_the_frame_constant_level_at_every_level_and_the_remainder_is_the_derivative_sectors_eight.py': 900,  # measured 366s alone
+    'P10_the_covariant_quartic_is_seven_rationals_carried_by_an_identity_and_no_measurement_route_reaches_them.py': 1500,  # measured 693s alone, one thread (r7032)
     # ⛭ ADDED r7017+70.1 (70), on the RUNNER'S OWN READINGS of this file, because the rule above
     # would NOT have declared it.  Routed to node 70 at `r6993` as the plain undeclared-margin class,
     # with the remedy stated, and left undeclared until now.  ** MEASURED, ALONE, ONE THREAD, NOTHING
