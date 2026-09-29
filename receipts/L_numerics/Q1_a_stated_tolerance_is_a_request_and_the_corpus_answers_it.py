@@ -52,9 +52,14 @@ Written r3616 by node 60, numerical-analysis bake.  Stated for reversal.
 #     build-B pass was not slower than the branch's.  Build B, main's own 154 co-scheduled receipts as
 #     load, on a two-core container: 3 of 3 alone and 3 of 3 under that load exit 0, in 29-41 s.  The
 #     concurrency does not reproduce it here.  ** A non-reproduction is not an absence. **
-#   * WHAT IS LEFT.  The runner itself, which a seat cannot vary.  Every runner failure whose log was read
-#     (four, to r7011) is build B, exit 1, never a timeout -- and the probe sends a receipt's output to /dev/null, so no failing run
-#     has ever recorded WHY it exited 1.  Until one does, the cause is unestablished.
+#   * WHAT IS LEFT.  The runner itself, which a seat cannot vary.  ⛔ And NOT "build B": the first four
+#     runner failures read were all build B, exit 1 -- and the next two, on this note's own push (b460eec0,
+#     79b325da), were build A (one thread) in the tolerance probe and the single-threaded runner-read trace.
+#     The thread count is refuted as the variable by the runner's own records.  One more candidate was
+#     measured and refuted: numpy's CPU dispatch -- VERDICT 4's gap is 0.010164, clear of the rounding edge,
+#     and identical with AVX-512, then AVX2 and FMA, switched off.  Every failure is exit 1, never a
+#     timeout, and both probe and tracer send a receipt's output to /dev/null, so NO failing run has ever
+#     recorded WHICH check failed.  Until one does, the cause is unestablished.
 #   ⛔ Do not re-run this until it passes, and do not read its carry count as a diagnosis.
 import glob, os, re, subprocess, sys, tempfile
 
