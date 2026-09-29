@@ -220,15 +220,33 @@ def _run(root, rel, budget, out):
         return
     d, f = os.path.split(os.path.join(root, rel))
     env = dict(os.environ, **_ONE_THREAD)
+    st = _st()
+    out = err = ''
     try:
-        subprocess.run([sys.executable, HERE, '--trace-one', log, f], cwd=d, env=env,
-                       stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL, timeout=budget)
-    except subprocess.TimeoutExpired:
-        pass
+        r = subprocess.run([sys.executable, HERE, '--trace-one', log, f], cwd=d, env=env,
+                           capture_output=True, text=True, errors='replace', timeout=budget)
+        out, err = r.stdout, r.stderr
+    except subprocess.TimeoutExpired as e:
+        out, err = st._text(e.stdout), st._text(e.stderr)
     if not os.path.exists(log):
         with open(log, 'w') as fh:
             json.dump({'receipt': os.path.join(root, rel), 'rc': None, 'events': [],
                        'timeout': True}, fh)
+    # ⛭ r7013+70.1: a receipt that did not exit 0 keeps what it said -- the same rule and the same sizes as
+    #   the tolerance probe (`sweep_tolerances.keep_output`, where the sizes are measured), one definition.
+    d_ = json.load(open(log))
+    if d_.get('rc') != 0:
+        d_['output'] = st.keep_output(out, err)
+        with open(log, 'w') as fh:
+            json.dump(d_, fh)
+
+
+def _st():
+    import importlib.util
+    spec = importlib.util.spec_from_file_location('sweep_tolerances', os.path.join(os.path.dirname(HERE), 'sweep_tolerances.py'))
+    m = importlib.util.module_from_spec(spec)
+    spec.loader.exec_module(m)
+    return m
 
 
 def sweep(root, out, jobs, only=None):
@@ -320,8 +338,12 @@ def report(out, root):
     if red or timeouts:
         print(f'  ⛔ NOT A SWEEP OF {len(red) + len(timeouts)} RECEIPT(S): red or over budget under the trace, so '
               f'their reads past the failure were never made.')
+        st = _st()
         for rel in red + timeouts:
             print(f'      {rel}')
+            lg = os.path.join(out, rel.replace('/', '_') + '.json')
+            if os.path.exists(lg):
+                st.show_output(json.load(open(lg)))
     rc = (1 if flagged else 0) | (2 if (red or timeouts) else 0)
     print(f'  VERDICT: ' + {0: 'CLEAN', 1: 'FLAGGED -- a relative read resolved to nothing',
                             2: 'NOT A SWEEP -- nothing flagged, but a receipt was not traced to its end',

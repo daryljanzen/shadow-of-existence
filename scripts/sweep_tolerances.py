@@ -464,15 +464,53 @@ def _run(root, rel, budget, out, env_extra):
     d, f = os.path.split(os.path.join(root, rel))
     env = dict(os.environ, NODE='ci', **env_extra)
     t0 = time.time()
+    out = err = ''
     try:
-        subprocess.run([sys.executable, HERE, '--probe-one', log, f], cwd=d, env=env,
-                       stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL, timeout=budget)
-    except subprocess.TimeoutExpired:
-        pass
+        r = subprocess.run([sys.executable, HERE, '--probe-one', log, f], cwd=d, env=env,
+                           capture_output=True, text=True, errors='replace', timeout=budget)
+        out, err = r.stdout, r.stderr
+    except subprocess.TimeoutExpired as e:
+        out, err = _text(e.stdout), _text(e.stderr)
     if not os.path.exists(log):
         with open(log, 'w') as fh:
             json.dump({'receipt': rel, 'rc': None, 'sites': {}, 'timeout': True}, fh)
     _annotate(log, wall=round(time.time() - t0, 1), budget=budget)
+    if json.load(open(log)).get('rc') != 0:
+        _annotate(log, output=keep_output(out, err))
+
+
+# ⛭ r7013+70.1 (PO-69 -> r7013 ⓵): A RECEIPT THAT DID NOT EXIT 0 KEEPS WHAT IT SAID.  Until now its output went
+#   to /dev/null, so no failing run had ever recorded WHICH check failed -- `Q1` failed on the runner six
+#   times and not one run said why.  Kept only for a non-zero exit or a timeout, so a log of 155 clean probes
+#   is unchanged.  The size is from what failing receipts actually emit (measured r7013+70.1): the corpus's
+#   `check()` failures go to STDOUT with an empty stderr (`L257/V1` at bf41d7e5: 48 lines, its first FAIL 37
+#   from the end, the summary in the last 3; `L273/C1` at 228ae5fb: 89 lines, FAIL 8 from the end), and a
+#   deep traceback is ~15 lines on stderr.  So: the last KEEP_LINES of EACH stream, every FAIL line wherever
+#   it is (up to KEEP_FAILS), each line cut at KEEP_WIDTH -- at most ~30 KB for one failing receipt.
+KEEP_LINES, KEEP_FAILS, KEEP_WIDTH = 40, 20, 300
+_FAIL = re.compile(r'\bFAIL')
+
+
+def _text(b):
+    return b.decode('utf-8', 'replace') if isinstance(b, bytes) else (b or '')
+
+
+def keep_output(out, err):
+    cut = lambda ls: [l[:KEEP_WIDTH] for l in ls]
+    lo, le = (out or '').rstrip('\n').split('\n'), (err or '').rstrip('\n').split('\n')
+    return {'fail_lines': cut([l for l in lo if _FAIL.search(l)][:KEEP_FAILS]),
+            'stdout_tail': cut(lo[-KEEP_LINES:]) if out else [],
+            'stderr_tail': cut(le[-KEEP_LINES:]) if err else []}
+
+
+def show_output(d, indent='        '):
+    """what a kept output says, for the job log -- the log directory itself is gone after a CI job"""
+    o = (d or {}).get('output')
+    if not o:
+        return
+    for tag, key in (('FAIL', 'fail_lines'), ('stderr', 'stderr_tail'), ('stdout', 'stdout_tail')):
+        for l in o.get(key, []):
+            print(f'{indent}{tag:6}| {l}')
 
 
 def _annotate(log, **kw):
@@ -655,6 +693,7 @@ def main():
         return 0
     if a.compare:
         rows = compare(*a.compare)
+        dir_a, dir_b = a.compare
         unswept = not_swept(*a.compare)
         flags = [r for r in rows if r['kind'] in ('FLAG', 'FLIP')]
         judged, lapsed = split_judged(flags, a.judged, os.path.abspath(a.root))
@@ -675,6 +714,18 @@ def main():
                   f'none of their comparisons was measured -- "0 flagged" says nothing about them.')
             for rec, why in unswept:
                 print(f'      {why:28} {rec}')
+                shown = None
+                for tag, dd in (('A', dir_a), ('B', dir_b)):
+                    pth = os.path.join(dd, rec + '.json')
+                    if os.path.exists(pth):
+                        o = json.load(open(pth))
+                        if o.get('output'):
+                            if o['output'] == shown:
+                                print(f'        -- build {tag}: the same output as the build above')
+                                continue
+                            print(f'        -- build {tag}, what it said:')
+                            show_output(o)
+                            shown = o['output']
         # ⛭ r7007+70.1 (PO-67 ⓵): TWO FINDINGS, TWO BITS.  This returned 2 for "not a sweep" BEFORE looking at
         #   the flags, so a run with both reported only the first -- and CI collapsed both to 1 anyway.  A
         #   reader of the exit code learned "something flagged" from a run that flagged nothing, or "not a
