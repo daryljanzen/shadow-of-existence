@@ -5788,3 +5788,59 @@ On **every** one of the four bases and on **both** the windowed and the window-f
 ⚠ ***A TREND STATISTIC CANNOT EXCLUDE A STEP.*** A small slope says nothing about a residual, and two of `cc66.57`'s four disposals rested on exactly that non-sequitur.
 ⚠ ***A RESIDUAL-AGAINST-TREND STATISTIC NEEDS A BASIS, AND THE BASIS IS A CHOICE — SO DO NOT CHOOSE IT.*** The projection width is linear in $q$; a log basis manufactures a step for it. Four bases are reported; a departure counts only if it survives all four. *Fourth revision running on "do not choose — name the family".*
 ⚠ ***COUNT THE DATA BEFORE CALLING A READING SHARP.*** "Envelope-free" is a statement about bias, not about resolution, and the reading with the least bias here had one datum where it mattered.
+
+## ⛭⛭⛭ `cc66.59` — `r7015` FILLED: THE STEP **SURVIVES** THE DIFFERENTIAL ESTIMATOR; **NO SINGLE BILINEAR TERM** CARRIES THE SHARED STEP; AND THE $42\%$ IS $42\%$ OF THE **EXCESS'S** STEP
+
+**Receipt** `receipts/P15_CR_cosmology/P15_the_step_survives_a_differential_estimator_and_no_single_bilinear_term_carries_the_shared_step_though_the_doppler_leads_it.py` — **28 gates, `GATES: ALL PASS`**, 0.3 s. Pre-registration `computations/beyond_the_wall/r7015_directions/PREDICTION.md` is its own commit ahead of the working script `the_differential.py`. Nothing solved, nothing run, no corpus edits.
+
+### ⓵ THE STEP SURVIVES AN ESTIMATOR IN WHICH THE TWO LARGE COMMON STEPS ARE NEVER FORMED
+
+Writing each arm as $\mathcal D = E(1+o)$: the present route forms $\operatorname{std}(o_a)$ and $\operatorname{std}(o_c)$ and divides; the ordered route forms $R = \mathcal D_a/\mathcal D_c \approx (E_a/E_c)(1+o_a-o_c)$ and takes the contrast of **that**, so it reads $\operatorname{std}(o_a-o_c)$ — **the common oscillation divides out before any width is taken.**
+
+| reading | band-1 departure, four bases | significance |
+|---|---|---|
+| per common $\ell$ | $-0.374$ … $-0.387$ | $3.5$–$3.6\sigma$ |
+| per common $q$ | $-0.382$ … $-0.383$ | $3.2$–$3.3\sigma$ |
+| *(present route, for scale)* | $-0.566$ … $-0.601$ | $7.2$–$7.7\sigma$ |
+
+⇒ ***Same sign on all four trend bases and both abscissas, at about $65\%$ of the present route's fractional size. SO THE TENTH THAT FAILED TO CANCEL IS NOT THE RESIDUAL OF TWO LARGE NUMBERS.*** The costliest pre-registered outcome does not fire, and the estimator is the one the row should be built on.
+
+⌷ The conditioning hazard named in the pre-registration does not fire either — the control never falls below $0.67$ of its band median, the first acoustic trough inside band 1 included. And the **smoothed-divisor control** turns the departure *positive*, back toward the arms' own $+0.3$: **it is the differencing, not the division, that produces the negative step.**
+
+⚠ **What the new estimator is not**, named in the pre-registration rather than after: $\operatorname{std}(o_a-o_c)$ is sensitive to a **phase** difference as well as an amplitude one. A null on it would have been strong; a signal on it does not by itself say "amplitude", and its absolute size carries no expectation — only the step is compared.
+
+### ⓶ NO SINGLE TERM CARRIES THE SHARED STEP — IT IS A PROPERTY OF THE SUM
+
+The licence check comes first, as pre-registered: the 238-multipole `SRCDEC` total reproduces the 1900-multipole step to better than $0.006$ in departure on **both** arms. Then removing each term in turn, **the fractional losses sum to $182\%$** — far more than one, so the step is not additive across terms. **That is the pre-registered null on the naming.**
+
+⛭⛭ **But the leverage is not flat**, and that is what the null leaves standing:
+
+| term | share of the step | share of the oscillation | leverage |
+|---|---|---|---|
+| `sw*dp` | $+29.1\%$ | $5.2\%$ | $\mathbf{5.59\times}$ |
+| `dp*dp` | $+46.2\%$ | $12.2\%$ | $\mathbf{3.80\times}$ |
+| `sw*isw` | $+39.3\%$ | $31.8\%$ | $1.23\times$ |
+| `sw*sw` | $+63.4\%$ | $88.1\%$ | $0.72\times$ |
+| `dp*isw` | $-12.1\%$ | $13.3\%$ | $-0.91\times$ |
+| `isw*isw` | $-9.6\%$ | $4.6\%$ | $-2.07\times$ |
+
+⇒ **A step-weighted reading of the bilinear decomposition is led by the Doppler where an amplitude-weighted one is led by the monopole.**
+
+⚠ `dp*isw` is the named exception — a Doppler-bearing term with *negative* leverage — and `isw*isw` sits lower still, so the ordering is **not** Doppler-versus-not, and the claim is "the two highest-leverage terms are Doppler", not "every Doppler term leads". **And leverage is not authorship**: the non-additivity is the reason it is not.
+
+### ⓷ THE $42\%$ IS $42\%$ OF THE EXCESS'S STEP
+
+`cc66.58`'s share function divided every channel's departure by the departure of `MEAS - 1.0` — the **excess's own response** — which is read off that file and gated on it. That is the only comparison a channel admits: a channel response and the excess are both ratios to the *same* control. ⇒ **So it is the large reading: the pair accounts for two fifths of the step the excess actually has, not of the shared step most of which cancels.**
+
+⌗ And the two normalisations are **one departure under two denominators**, $-0.0323$ in excess units:
+
+* $-0.601$ of the excess's own extrapolated size — *what the $42\%$ is against*;
+* $-0.100$ of the control's contrast departure — *where the "nine tenths" comes from*.
+
+Provable rather than asserted: the arms' own log-departures differ by $-0.0308$, which is that same number to $4.6$ per cent.
+
+### THE DISCIPLINE THIS REVISION ADDS
+
+⚠ ***A DIFFERENTIAL ESTIMATOR IS A DIFFERENT QUANTITY, NOT A CLEANER VERSION OF THE SAME ONE.*** $\operatorname{std}(o_a-o_c)$ and $\operatorname{std}(o_a)/\operatorname{std}(o_c)$ differ in what they are blind to; only the step may be compared between them, and the absolute sizes may not.
+⚠ ***A SHARE NEEDS A DENOMINATOR NAMED IN THE SAME BREATH.*** ⓷ exists because `cc66.58` quoted $42\%$ without one, and the two available denominators differ by an order of magnitude on the same departure.
+⚠ ***LEVERAGE IS NOT AUTHORSHIP.*** When removal losses sum to $182\%$, no term "carries" the feature, and a per-term ranking may be reported only as a ranking.

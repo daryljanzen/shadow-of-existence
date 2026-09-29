@@ -4513,3 +4513,101 @@ written before the measurement. Working script `r7009_directions/the_step.py`. I
 Receipt `P15_the_window_free_reading_cannot_resolve_the_first_cycle_the_flatness_was_a_trend_and_nine_tenths_of_the_step_is_common_to_both_arms.py`, **34 gates, `GATES: ALL PASS`** in about a second. `r7011_directions/PREDICTION.md` committed before `the_first_cycle.py`, in separate commits. INDEX row, `PO13_WORKING_STATE`, appendices regenerated. **No corpus edits.**
 
 ⌗ **And one for you to place if you want it:** the frontier row's question was *"what turns on at the second acoustic peak?"* ⇒ On ⓷ it should now read **"what makes the first acoustic cycle's contrast stand above its own trend in BOTH cosmologies, and what makes the arm's version of that eleven per cent shallower?"** — two questions where there was one, and the second is the one the excess actually sees.
+
+# ⛭⛭⛭ cc66.59 — `r7015` FILLED: **THE STEP SURVIVES THE DIFFERENTIAL ESTIMATOR**, SO THE TENTH IS NOT THE RESIDUAL OF TWO LARGE NUMBERS; **NO SINGLE BILINEAR TERM CARRIES THE SHARED STEP** AND ⓶ IS A NULL ON THE NAMING, THOUGH THE TWO HIGHEST-LEVERAGE TERMS ARE BOTH DOPPLER; AND THE $42$ PER CENT IS $42$ PER CENT OF THE **EXCESS'S** STEP — THE LARGE READING
+
+*`r7015` filled. ⌗ **Path provenance:** every model number below is the **hierarchy** path — banks `r6941_fine_{lcdm,cr}`, `r6915_pairs_{lcdm,cr}`, and `r6959_eta_cr`'s band edges. **Nothing is solved and nothing is run.** No corpus edits.*
+
+⚑ **PRE-REGISTRATION AS ITS OWN COMMIT AGAIN**: `6142efc8` is `PREDICTION.md`, `12cbba5d` is `the_differential.py`. *And it tables first the outcome that **ends the row's present object**, because on ⓵ that was genuinely on the table.*
+
+---
+
+## ⛭⛭⛭ ⓵ IT SURVIVES. AND I WANT TO PUT THE ALGEBRA FIRST, BECAUSE IT IS WHY YOUR ORDER WAS THE RIGHT ONE
+
+*Write each arm as envelope times oscillation, $\mathcal D = E(1+o)$.*
+
+| | what it forms | what it reads |
+|---|---|---|
+| the present route | $\operatorname{std}(o_a)$ and $\operatorname{std}(o_c)$, then divides | $\operatorname{std}(o_a)/\operatorname{std}(o_c) - 1$ |
+| **your ordered route** | $R = \mathcal D_a/\mathcal D_c \approx (E_a/E_c)(1 + o_a - o_c)$, then one contrast | $\mathbf{\operatorname{std}(o_a - o_c)}$ |
+
+⇒ *** THE COMMON OSCILLATION DIVIDES OUT BEFORE ANY WIDTH IS TAKEN. *** *That is not a cleaner version of the same statistic — it is a different one, and the difference is exactly the thing you asked for.*
+
+| reading | band-1 departure, four bases, none chosen | significance |
+|---|---|---|
+| per common $\ell$ — your literal words | $-0.374$ … $-0.387$ | $3.5$–$3.6\sigma$ |
+| per common $q$ — what aligns the peaks | $-0.382$ … $-0.383$ | $3.2$–$3.3\sigma$ |
+| *(the present route, for scale)* | $-0.566$ … $-0.601$ | $7.2$–$7.7\sigma$ |
+
+⇒ *** SAME SIGN ON ALL FOUR TREND BASES AND ON BOTH ABSCISSAS, AT ABOUT TWO THIRDS OF THE PRESENT ROUTE'S FRACTIONAL SIZE. THE TENTH THAT FAILED TO CANCEL IS NOT THE RESIDUAL OF TWO LARGE NUMBERS — IT EXISTS IN AN ESTIMATOR IN WHICH THE TWO LARGE NUMBERS ARE NEVER FORMED. ***
+
+⌗ *The abscissa is a new degree of freedom this estimator introduces — the arms differ in $\ell_A$ by $0.085$ per cent, so per-multipole and per-$q$ are not the same pairing — so **it is not chosen either**. They agree to within a fiftieth, which is the pre-registration's middle row not firing.*
+
+### ⌷ AND THE TWO HAZARDS I NAMED BEFORE LOOKING, ONE OF WHICH TURNED INTO A CONFIRMATION
+
+* **The conditioning does not fire.** *The ratio divides by the control, which passes through its own troughs, and the first acoustic trough sits at $q \approx 1.36$ — inside the band under test. **The control never falls below $0.67$ of its band median anywhere**, so no band divides by a near-zero.*
+* ⛭⛭ **And the smoothed-divisor control did better than pass.** *Divide by a **smoothed** control instead of a raw one and the differencing is removed — and the departure goes **positive**, $+0.07$ to $+0.19$, back toward the arms' own $+0.3$.* ⇒ *** SO IT IS THE DIFFERENCING, AND NOT THE DIVISION, THAT PRODUCES THE NEGATIVE STEP. *** *I had that down as a stability check. It turned out to be the mechanism shown directly.*
+
+### ⚠ AND WHAT THE NEW ESTIMATOR IS NOT, WHICH IS IN THE PRE-REGISTRATION AND NOT HERE
+
+*$\operatorname{std}(o_a - o_c)$ is sensitive to a **phase** difference between the arms as well as an amplitude one, where the amplitude ratio is blind to phase.* ⇒ *So **a null on it would have been strong evidence against a differential feature; a signal on it does not by itself say "amplitude."** Its absolute size therefore carries no expectation and I do not compare it with the old excess's — **only the step.** I would rather say that now than when someone asks why the two numbers differ.*
+
+---
+
+## ⛔⛔ ⓶ A NULL ON THE NAMING — AND I THINK THE NULL IS WORTH MORE THAN THE NAMING WOULD HAVE BEEN
+
+**THE LICENCE CHECK FIRST, AS THE PRE-REGISTRATION REQUIRED.** *The 238-multipole `SRCDEC` total reproduces the 1900-multipole step to better than $0.006$ in departure **on both arms**. Without that, no per-term number is licensed, and I put the condition in the file before the reading.*
+
+**THEN THE DECISIVE TEST, WHICH IS NOT THE ONE THAT FIRST SUGGESTED ITSELF.** *Per-term contrasts showed `dp*dp` with a departure the same size as the total's, and I nearly reported that as the carrier. **That is the unearned inference your own ⓶ punished last revision** — a matching size is not authorship. So: remove each term from the total and ask whether the step goes with it.*
+
+⇒ *** THE FRACTIONAL LOSSES SUM TO $182$ PER CENT. *** *The step is **not additive** across the terms. No single term carries it; it is a property of the **sum**. That is the third row of my own table and I report it as a null.*
+
+**⛭⛭ BUT THE LEVERAGE IS NOT FLAT, AND THAT IS WHAT THE NULL LEAVES STANDING** — each term's share of the **step** against its share of the **oscillation**:
+
+| term | of the step | of the oscillation | leverage |
+|---|---|---|---|
+| `sw*dp` | $+29.1\%$ | $5.2\%$ | $\mathbf{5.59\times}$ |
+| `dp*dp` | $+46.2\%$ | $12.2\%$ | $\mathbf{3.80\times}$ |
+| `sw*isw` | $+39.3\%$ | $31.8\%$ | $1.23\times$ |
+| `sw*sw` | $+63.4\%$ | $88.1\%$ | $0.72\times$ |
+| `dp*isw` | $-12.1\%$ | $13.3\%$ | $-0.91\times$ |
+| `isw*isw` | $-9.6\%$ | $4.6\%$ | $-2.07\times$ |
+
+⇒ *** A STEP-WEIGHTED READING OF THE BILINEAR DECOMPOSITION IS LED BY THE DOPPLER WHERE AN AMPLITUDE-WEIGHTED ONE IS LED BY THE MONOPOLE. *** *The monopole is $88$ per cent of the oscillation and carries the step at $0.72$ times its weight; the Doppler autocorrelation is $12$ per cent of it and carries it at $3.80$.*
+
+⚠ **AND THE EXCEPTION IS NAMED RATHER THAN DROPPED, because it breaks the tidy version.** *`dp*isw` carries a Doppler factor and its leverage is **negative**; and `isw*isw` at $-2.07\times$ sits **lower still**. ⇒ *So this is "the two highest-leverage terms are Doppler" and **not** "every Doppler term leads", and **the ordering is not Doppler-versus-not**.* ⛔ *And leverage is **not authorship** — the $182$ per cent is precisely the reason it is not.*
+
+⌗ *So your framing survives in a weaker and, I think, more useful form: **the residual tenth is not a difference between two mysteries, but the shared step is not one named quantity either.** What it is is a sum whose step-weighting points at a sector.*
+
+---
+
+## ⛭ ⓷ IT IS THE EXCESS'S STEP. THE LARGE READING
+
+*Answered from `cc66.58`'s own file and gated on it rather than recalled: its share function divides every channel's departure by `DEP['measured excess']`, and that entry is the departure of `MEAS - 1.0` — **the excess's own response**.*
+
+⇒ *** THE $42$ PER CENT IS $42$ PER CENT OF THE **EXCESS'S** STEP, NOT OF THE SHARED STEP. *** *And that is the only comparison a channel admits: a channel response is $\operatorname{band\,std}(\text{knob})/\operatorname{band\,std}(\text{control})$ and the excess is $\operatorname{band\,std}(\text{arm})/\operatorname{band\,std}(\text{control})$ — **both ratios to the same control, in the same units.** So the pair accounts for two fifths of the step the excess actually has.*
+
+**AND BECAUSE YOUR GUARD IS RIGHT THAT THIS IS WHERE CONFUSION LIVES, HERE ARE THE TWO NORMALISATIONS OF THE *SAME* DEPARTURE SIDE BY SIDE.** *There is one number: band 1's excess is $+0.0215$ where its own bands 2–7 trend predicts $+0.0538$, so the departure is $\mathbf{-0.0323}$ in excess units.*
+
+| denominator | value | where it appears |
+|---|---|---|
+| the excess's own extrapolated size | $\mathbf{-0.601}$ | what `cc66.58`'s channel table — and its $42\%$ — is against |
+| the control's contrast departure | $\mathbf{-0.100}$ | where the "nine tenths" comes from |
+
+⌗ **And that they are one departure is provable rather than asserted**: *the arms' own log-departures differ by $-0.0308$, which **is** the $-0.0323$ to $4.6$ per cent.* ⇒ *Two denominators for one number, differing by a factor of six, which is exactly why you were right to ask instead of inferring.*
+
+---
+
+## ⛔ ⓸, AND THE DISCIPLINE
+
+*No envelope chosen. No trend basis chosen. **No abscissa chosen** — the new degree of freedom gets the same treatment. No new candidate. No mechanism proposed. No corpus edits.*
+
+* ⚠ ***A DIFFERENTIAL ESTIMATOR IS A DIFFERENT QUANTITY, NOT A CLEANER VERSION OF THE SAME ONE.*** *They differ in what they are blind to, so only the step may be compared between them and never the absolute sizes.*
+* ⚠ ***A SHARE NEEDS ITS DENOMINATOR NAMED IN THE SAME BREATH.*** *Yours, and ⓷ exists because I quoted $42$ per cent without one. Two available denominators, a factor of six apart, on one number.*
+* ⚠ ***LEVERAGE IS NOT AUTHORSHIP.*** *When the removal losses sum to $182$ per cent, nothing "carries" the feature and a per-term ranking may be reported only as a ranking.*
+
+## WHAT IS ON THE BRANCH
+
+Receipt `P15_the_step_survives_a_differential_estimator_and_no_single_bilinear_term_carries_the_shared_step_though_the_doppler_leads_it.py`, **28 gates, `GATES: ALL PASS`** in a third of a second. Pre-registration and working script in separate earlier commits. INDEX row, `PO13_WORKING_STATE`, appendices regenerated. **No corpus edits.**
+
+⌗ **And one thing for you to place, since ⓵ settles what the row is built on:** the frontier row's estimator should now be the differential one, and `PO-56`'s corrected terminal clause gets easier to state on it — *"no quantity this construction fixes produces the step"* is a claim about $\operatorname{std}(o_a-o_c)$, where the nine tenths never enters, rather than about a ratio of two contrasts where it enters and cancels.
