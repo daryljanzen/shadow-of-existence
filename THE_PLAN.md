@@ -26,7 +26,7 @@ one: a list that grows whenever something worthwhile appears is a cadence again.
 | **④** | **Every instrument's exit conditions distinguish its own findings**, so a reader who trusts an exit code learns the right one. | ✔ *done — `PO-67`* |
 | **⑤** | **A receipt whose verdict differs between trees that agree on everything it reads is detected and named**, at the moment of the run. | ✔ *done — `PO-68`, and the finding is a contradiction rather than a count* |
 | **⑥** | **Every stated limit of the layer is written at the site where it acts**, not left implied by an exclusion in a table. | ✔ *done — and it is the layer's own habit rather than a rule imposed on it* |
-| **⑦** | **No receipt carries an unexplained red.** | ⛔ ***OPEN — `Q1`, ten recorded suite timeouts, and one instrument still silent on a timeout*** |
+| **⑦** | **No receipt carries an unexplained red.** | ⛭ ***ARMED IN THREE INSTRUMENTS, on the runner and not only in a container; waiting on a reading*** |
 | **⑧** | **No receipt carries a red whose remedy is known and unapplied.** | ✔ ***DONE r7019 — two instances found and discharged, the class swept on the runner's own readings*** |
 
 **✔ ⑧ IS DONE, AND IT IS DONE ON THE INSTRUMENT THAT COULD SEE THE CLASS RATHER THAN THE ONE THAT WAS TO
@@ -49,14 +49,28 @@ together add at most 600 s to a critical path whose worst observed wall is 2961 
 stated was read back: one belongs to another seat, one was routed as an observation with no remedy stated, and
 one is already applied. **None is left unapplied.***
 
-**⛔ ⑦ IS OPEN AND ITS BLOCKER HAS MOVED, WHICH THE SWEEP IS WHAT FOUND.** *The two sweep instruments now keep
-what a failing receipt said — both streams, because the corpus's own check failures print to stdout and exit
-with an empty stderr, so the stderr tail alone would have kept nothing for exactly the receipt it was for. ⇒
-**But the same logs show `Q1` over the suite's cap in ten runs, where every failure previously on the record
-was an exit code and never a timeout — and the suite runner keeps nothing on a timeout.*** ⌗ *So ⑦'s
-instrument is armed in two places and silent in the third, and the third is where ten recorded reds now sit.
-**Two of the ten had no long co-runner at all**, so the first suspect does not cover them; that is a count, and
-a count is not a cause.*
+**⛭ ⑦ IS ARMED IN ALL THREE INSTRUMENTS, AND WHAT IT TOOK WAS A MEASUREMENT THAT DEFEATED TWO EARLIER
+CHANGES — ONE OF THEM ALREADY LANDED.** *The suite runner now keeps a timeout's output. But the change as
+ordered would have kept **nothing** on the runner: a pipe block-buffers by default, the workflow sets no
+unbuffered flag, and none of the 165 job logs read names one — **so a child killed at its budget having
+printed less than one block loses all of it**. Measured on a test child: 2,172 bytes printed and **0 kept**
+block-buffered, all of it kept unbuffered; and on the real receipt, 0 lines against 17.* ⇒ ***And the same
+hole was already in the two sweep instruments' timeout capture, shipped at the revision that added it*** —
+*it passed its seeds only because this container sets the unbuffered flag globally and the runner does not.
+Their exit-1 capture was always sound, an exit flushing what a kill does not.*
+
+**✔ SO EVERY CHILD OF ALL THREE INSTRUMENTS NOW RUNS UNBUFFERED, SET EXPLICITLY AND FROM ONE DEFINITION**,
+*with what a kill truncates measured — the line as far as it got — and what is still lost written beside the
+sizes: a child's own C or Fortran buffering, and whatever a receipt captured from its own children and had
+not yet printed. ⌗ **That last is `Q1`'s case and it is named as the limit of what this instrument can say
+about ⑦'s most likely place.** And grandchild buffering is not lost: the eight receipts that pass an
+environment to a child build it from the inherited one, read rather than assumed.*
+
+**⛔ AND ONE PARSER HAD TO MOVE, OR THE KEPT OUTPUT WOULD HAVE PLANTED VERDICTS.** *The receipt-run check read
+its failure and slow patterns **unanchored**, and a receipt that runs the runner prints exactly those lines —
+so once a timeout's output is kept, they would be read as the suite's own. **Both are now anchored at the
+runner's own indent, calibrated across the 165 logs to return the same matches log for log, and planted lines
+inside kept output read as neither.***
 
 ⇒ ***⑦ still closes either way***: *a named failing check, a timeout traceback, or — if it recurs and says
 neither — a red not reachable from any tree this corpus controls, written at the receipt as a stated limit,
@@ -265,7 +279,7 @@ corpus in `PO13_WORKING_STATE.md`.*
 
 <!-- GRAIN-CURRENCY:BEGIN -->
 
-## ⌗⌗⌗ CURRENCY — **GENERATED** by `scripts/regen_grain_currency.py`, baseline r2417, register front r7019
+## ⌗⌗⌗ CURRENCY — **GENERATED** by `scripts/regen_grain_currency.py`, baseline r2417, register front r7021
 
 > ⚠ **THE BODY BELOW STOPS AT THE BASELINE. This head is the list of what has moved since, and it is REGENERATED rather than written** — *because these documents go stale every ~20 revisions by construction, and paying that by hand is a debt that recurs rather than a defect that closes.*
 >
