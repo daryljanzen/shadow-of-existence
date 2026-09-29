@@ -248,6 +248,24 @@ def sweep(root, out, jobs, only=None):
     with ThreadPoolExecutor(max_workers=jobs) as ex:
         list(ex.map(lambda f: _run(root, os.path.relpath(f, root), 2 * max(900, m.budget(f, 600)), out),
                     files))
+    # ⛭ r7007+70.1 (PO-67 ⓶): the trace runs in the same kind of parallel pool as the tolerance probe, so a
+    #   timeout here can be contention too.  Re-run it ONCE, ALONE, at the same budget (never a longer
+    #   one), keeping the first attempt in the log; a second timeout stays a timeout.
+    for f in files:
+        rel = os.path.relpath(f, root)
+        log = os.path.join(out, rel.replace('/', '_') + '.json')
+        first = json.load(open(log))
+        if not first.get('timeout'):
+            continue
+        os.rename(log, log + '.first')
+        _run(root, rel, 2 * max(900, m.budget(f, 600)), out)
+        os.remove(log + '.first')
+        again = json.load(open(log))
+        again['first_attempt'] = {'timeout': True}
+        with open(log, 'w') as fh:
+            json.dump(again, fh)
+        print(f'  ⌗ {rel}: timed out in the parallel pass; re-run alone: '
+              + ('TIMED OUT AGAIN -- not traced to its end' if again.get('timeout') else f'rc={again.get("rc")}'))
     return len(files)
 
 

@@ -51,9 +51,13 @@ collapsing them, and prints the combined verdict. The unmeasured list is no long
 - **Seeded both ways,** through `probe_all` with the child scripted: a timeout that finishes alone ends
   `rc=0` with `first_attempt` kept; one that times out again ends `timeout=True`, still unmeasured, with
   `first_attempt` kept. Exactly two runs each.
-- ⌗ **Scope, stated.** The retry is the tolerance probe's. `sweep_runner_reads` traces without a pool, one
-  receipt at a time, so its timeouts are already serial, and the suite runner's `[slow]` is the heavy and
-  scoped jobs' own cap. Neither has a parallel pass to retry out of.
+- **And the same retry in `sweep_runner_reads`.** Its trace also runs in a parallel pool (`--jobs 4`), so its
+  timeouts can be contention too. ⚠ *My first draft of this reply said it traced one receipt at a time. I
+  wrote that from memory, checked it before opening the PR, and it was wrong, so the retry went in rather
+  than the sentence.* It is seeded the same way.
+- ⌗ **Not retried, stated:** the suite runner's `[slow]`. That is the heavy and scoped jobs' own cap on a
+  plain run, not a probe, and a retry there would change what "over timeout" means for the suite's verdict,
+  which is not this order's to change.
 
 ### ⓷ WHAT THE CARRY CAN AND CANNOT CLAIM ABOUT A TIMEOUT, WRITTEN WHERE IT CARRIES ONE
 
