@@ -3264,3 +3264,47 @@ cheap to settle and it changes what the rest of the row costs.*
 **⛔ WHAT IS NOT ASKED.** *No corpus edits — route it and I will place it. Nothing on the other rows. ⌗ **And the
 strike condition does not move**: the row strikes when the tower-wide multiple is in hand, and ⓵–⓷ are the route
 to it rather than a substitute for it.
+
+---
+
+## ⛭ **r7013 → 60. A SUPPLEMENT AND NOT A NEW ORDER — `r7011`'s THREE ITEMS STAND UNCHANGED. `PO-23` NOW HAS A SECOND EXIT, AND IT CHANGES WHAT A NEGATIVE ANSWER TO ⓵ IS WORTH.**
+
+*Nothing here supersedes the `r7011` order. This is one thing you should know before you spend ⓵.*
+
+**⌗ WHAT CHANGED, AND WHY.** *Daryl's instruction this revision is that this work converge to a finished state
+rather than run as a Zeno sequence, and the measurement backs him: **7 of 58 register rows carry a second exit**
+— a stated way to finish WITHOUT delivering the object — and the rows that have one terminate while the rows
+that have one exit chain. `PO-47` was struck **because its stopping rule fired**, not because anybody delivered
+what it asked for.* ⇒ ***A row that can only finish by succeeding turns every failure-to-deliver into a narrower
+row.*** *`STANDING ORDER r7013` fixes it, and `check_remainder_chains` now requires both exits on every open
+row.*
+
+**⛭⛭ SO `PO-23` NOW READS, IN THE REGISTER:**
+
+> **WHAT WOULD DISCHARGE IT:** *the tower-wide rational multiple in hand — the covariant quartic's coefficient
+> table or a reduction per level — **together with a genuine second-order datum at a level, which `r7010`
+> banked.***
+>
+> ***OR TERMINATES IF:*** *it is demonstrated that no argument available to this construction supplies the
+> quartic's remaining coefficients — that they need a datum outside the substrate's single scale and the one
+> number the section reads from the world.* ⇒ ***In which case the terminal state is a fully specified scheme
+> with uncomputed arithmetic in it, and that is a result the paper carries rather than a row it keeps.***
+
+**⛭ AND HERE IS WHY IT MATTERS FOR ⓵ SPECIFICALLY.** *You are being asked whether the algebraic quartic sector
+is rank one at every level, and whether the gradient-carrying second anchor goes to fourth order. **If the
+honest answer is that it does not — that the coefficients need a covariant expansion this construction has no
+route to — that is now a FINISH and not a failure.*** ⌗ *The machinery for saying it is already in `sec:lock`:
+the count of dimensionless constants spent, which stands at one. **An undetermined coefficient inside a
+specified scheme is an entry in that count**, and this row has spent four revisions establishing that the scheme
+IS specified — three subtractions, an exact rate, a rank sequence, three conventions costing one constant, the
+whole scheme as one series' pole data, and now a second order reached with its rank an equality.*
+
+⇒ *** SO DO NOT NARROW TOWARD DELIVERY ALONE. IF ⓵ OR ⓶ HITS AN OBSTRUCTION, THE OBSTRUCTION IS THE OTHER EXIT
+AND IT IS WORTH AS MUCH AS THE NUMBER. ***
+
+⌗ *I am telling you this because the last four revisions have all been aimed at delivery, and I would rather you
+recognise a terminal obstruction when you hit one than route it back to me as a narrower question. **A narrower
+question is what this row does not need any more.***
+
+**⛔ NOTHING ELSE IS ASKED.** *`r7011` ⓵–⓸ stand exactly as written, including that ⓵ may be answered by telling
+me my reading of your identity is too wide.*

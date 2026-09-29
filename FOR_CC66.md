@@ -2495,3 +2495,45 @@ a narrower object to hunt.*
 **⛔ WHAT IS NOT ASKED.** *No corpus edits — route it and I will place it. Nothing on the quantum sector or the
 reproducibility rows. ⌗ *And `PO-68` was opened and struck inside one revision by 70, on an instrument that finds
 contradictions rather than counts; its remainder is `PO-69` and it is about a single receipt.*
+
+---
+
+## ⛭ **r7013 → cc66. A SUPPLEMENT AND NOT A NEW ORDER — `r7011`'s THREE ITEMS STAND UNCHANGED. `PO-56` NOW HAS A SECOND EXIT, AND `cc66.57` HAS ALREADY DONE MOST OF THE WORK TOWARD IT.**
+
+*Nothing here supersedes the `r7011` order. This is one thing you should know before you spend ⓵.*
+
+**⌗ WHAT CHANGED, AND WHY.** *Daryl's instruction this revision is that this work converge to a finished state
+rather than run as a Zeno sequence. The measurement backs him: **7 of 58 register rows carry a second exit** — a
+stated way to finish WITHOUT delivering the object — and the rows that have one terminate while the rows that
+have one exit chain indefinitely. `PO-47`, which is this sector's own ancestor, was struck **because its
+stopping rule fired**: the sky cannot tell the two models apart there, and nobody delivered what it asked for.*
+⇒ ***A row that can only finish by succeeding turns every failure-to-deliver into a narrower row.***
+*`STANDING ORDER r7013` fixes that, and `check_remainder_chains` now requires both exits on every open row.*
+
+**⛭⛭ SO `PO-56` NOW READS, IN THE REGISTER:**
+
+> **WHAT WOULD DISCHARGE IT:** *the carrier of the contrast excess identified — something this construction
+> fixes that produces a **step at the second acoustic peak**, which is now the feature rather than a trend
+> across bands.*
+>
+> ***OR TERMINATES IF:*** *it is demonstrated that no quantity this construction fixes can produce that step.*
+> ⇒ ***In which case the terminal state is a measured discrepancy of known size, known location and closed
+> candidate list, which `P15` carries as a residual with its size stated — not a sector still looking.***
+
+**⛭⛭ AND YOU ARE CLOSER TO THAT EXIT THAN TO THE OTHER ONE, WHICH IS WORTH SAYING PLAINLY.** *`cc66.57` closed
+the candidate list against the right feature: four candidates, every one evaluable on the step, none producing
+it. **The size is measured, the location is measured to 0.9 per cent, the sharpness is measured, and the list is
+closed.*** ⇒ *That is most of a terminal state already — what is missing is only the demonstration that the list
+was the **whole** list, rather than the four that happened to be in hand.*
+
+⌗ ***So if `r7011`'s ⓵ says the excess is simply absent below the second peak, and ⓷ says the step lives in a
+place no quantity this construction fixes can reach, you are not failing to find a carrier — you are finishing
+the row on its second exit, and `P15` already has the shape to carry it.***
+
+⛔ ***What the second exit is NOT is permission to stop looking.*** *It is reached by a demonstration, exactly
+like the first, and "we tried four and none worked" is not one. **The difference between a closed list and an
+exhausted one is an argument about why no fifth exists**, and that argument is the terminal exit's actual
+content.
+
+**⛔ NOTHING ELSE IS ASKED.** *`r7011` ⓵–⓸ stand exactly as written — the zero test, the flatness-range question,
+and where the step lives — and no envelope is chosen.*
