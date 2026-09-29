@@ -4213,3 +4213,39 @@ The unweighted sums to a cutoff then read
 The exit asks for the assembly shown unreachable the way the coefficients would have been unreachable by measurement. **It is not.** One of the assembly's two ingredients is now in hand in closed form in the tower's own variables, and the obstruction to the other is the same named wall rather than a new one. ⇒ *That is a smaller gap than the exit describes, and taking it would be declining an exit's opposite — claiming an obstruction I did not reach.* ⌗ *Five declined on the evidence, of twelve.*
 
 ⛔ **Nothing was spent re-validating the seven coefficients**, as you required; they are used and not re-checked. No corpus edits, nothing on the other rows.
+
+## ⛭⛭⛭ `r7036` → 66, answering `r7035` (`PO-23`). **(a) THE WEIGHTING IS CARRIED AND THE TWO-POWER GAP SURVIVES IT UNTOUCHED. (b) I CHECKED THE CHAIN RATHER THAN RUNNING IT — AND IT STOPS AT A SIGN-CARRYING STEP THE CORPUS HAS NEVER WRITTEN DOWN. (c) IS NOT REACHED, DELIBERATELY.**
+
+### (a) The weighting, and it is bounded rather than fitted
+
+The free vacuum puts one factor `1/μ_m` on each propagator — one for the quadratic form, two for the quartic, on `r7034`'s factorisation. **But `1/√(m²−1)` has no closed-form sum**, and I did not want to hand you a fitted rate. So the leading terms are **sandwiched**: `m−1 < √(m²−1) < m`, shown on the squares so no root is ever compared, and both bounds are exactly summable.
+
+> **weighted second order: `M⁴` at `−1/8`** · **weighted fourth order: `M⁶` at `−1/48`**
+
+with the lower and upper bounds returning **the same leading power and the same leading coefficient** in every one of the four sums involved.
+
+⇒ ⛭⛭ **The gap is 2 powers weighted, and was 2 unweighted. The weighting moves both ends by the same amount and changes nothing about the quantity `r6998` read.** *That is the finding either way you asked for, and it came back "no change", which is the less interesting of the two answers and is the one that is true.*
+
+⌗ **And there is a control in it I did not design:** the weighted second order lands on the **fourth** power, which is the free tower's quartic — exactly what `r6998` read there independently. So the weighting is the tower's own and not one chosen here. Both weighted leading coefficients are negative, as every level's value is.
+
+### (b) I checked the chain. It has four steps, and one of them carries a sign.
+
+> **1.** the level sum to a per-**mode** coefficient · **2.** the Wick combinatorics (the level sum already performed the pairings — the two counts must not be applied twice) · **3.** the **action-to-Hamiltonian** passage with its `1/2κ` — **SIGN-CARRYING** · **4.** the mode normalisation and its powers of `a`
+
+⛭⛭⛭ **And step 3 is not a hypothetical gap, because the two banked numbers it sits between DISAGREE IN SIGN AT THE SAME LEVEL.** `r7010`'s own code sets `c₄ = 14κ/3V`, **positive**; its "this level" is `m = 3` by its own `μ² = m²−1 ≥ 8`; and `r7034`'s closed form gives the level-summed fourth-order coefficient there as **`−110π²/3`, negative.**
+
+⇒ ***So the sign-carrying step is not optional bookkeeping. Until it is pinned, `c₄`'s sign is NOT determined by the level sum's — and (c) turns on exactly that sign.***
+
+⚠ **And I am not claiming either number is wrong.** A Hamiltonian vertex coefficient and an action integrand's coefficient differing in sign is precisely what the unwritten step is *for*. **The finding is that the step is load-bearing and absent**, not that a result is in error. ⌗ *Which is the distinction your own guard has been asking for five revisions running, and this time it applies to a step rather than a domain.*
+
+### (c) Not reached, and the stopping point is step 3 rather than "the chain"
+
+You said a named stopping point in the chain is worth more than a sign carried through a step nobody verified. **It is step 3.** I have the criterion in the form `r7034` left it, I have a definite sign for the level-summed coefficient at every level, and the only thing between them is the one passage nobody has written down. ⇒ *Taking (c) here would be taking it through that passage on the assumption that it does not flip — which is the trade you told me twice not to make.*
+
+### ⛔ THE THIRTEENTH EXIT IS NOT TAKEN, and the reason is the opposite of last time's
+
+The exit asks for the chain shown to be **the obstruction rather than the work**. **What I found is a step nobody wrote down — and that is work.** Naming which of the four steps it is makes the gap *smaller* than the exit describes, not larger: it is one passage with a `1/2κ` and a sign in it, on an object both of whose ends are now in closed form.
+
+⌗ *Six declined of thirteen, every one on the evidence.*
+
+⛔ **Nothing re-validated**, as you required: not the seven coefficients, not the two level sums, not the second-order identity. No corpus edits, nothing on the other rows.
