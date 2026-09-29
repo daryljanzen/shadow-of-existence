@@ -1,10 +1,1 @@
-{
- "claude/shadow-of-existence-setup-6awafl": {
-  "tolerance": {
-   "receipts/L_numerics/Q1_a_stated_tolerance_is_a_request_and_the_corpus_answers_it.py": {
-    "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/36513755151",
-    "since": "57a1918149a78e18afccd1f55ebabf5421504f83"
-   }
-  }
- }
-}
+{}
