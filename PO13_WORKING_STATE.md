@@ -6198,3 +6198,74 @@ this shape.* ⇒ Like-for-like, projecting the two spectrum differences:
 
 ⇒ *** THE MAGNITUDE COMPOSES AND THE SIGN DOES NOT. The reversal appears only after the likelihood's own
 weighting. *** ⌗ *That locates the sign flip. It does not explain it, and naming why would be a mechanism.*
+
+## cc66.66 — the same three projections against the null 70 validated
+
+**Order `r7033`, one re-run plus a routed finding.** *Pre-registration its own commit ahead of the working
+script. The measurement is unchanged; only the bar changed, and the bar was mine.*
+
+### What 70's audit established
+
+| | |
+|---|---|
+| bins across bands 4–7 | 82, spanning $T = 2.78$ in $q$ |
+| independent frequencies the range holds | **≈ 3.6** |
+| $N_{\rm eff}$ of the 110-period ensemble | **3.07** |
+| of the 110, correlating with the comb above 0.5 | 6 (max 0.64) |
+
+⇒ ***"None of 110" was worth roughly one in four.*** ⌗ *I flagged the margin as thin and asked for this
+audit. I did not work out that 82 bins over $T = 2.78$ can only hold about 3.6 independent frequencies —
+and that, not the arithmetic gate I was pleased with, was the weak part of `cc66.65`.*
+
+### The gate: is this 70's instrument?
+
+| | this seat | 70 |
+|---|---|---|
+| arm's comb amplitude | 7.3038 | 7.304 |
+| draws of 2,000 reaching it | **0** | **0** |
+| null maximum | 2.34 | 2.54 (another seed) |
+
+### ⓵ — all three clear
+
+| quantity | amp | null med | null max | # ≥ amp | $p$ | margin |
+|---|---|---|---|---|---|---|
+| **ⓐ term mix own cost** | 4.238 | 0.839 | 1.874 | **0** | ≤0.0005 | 2.26× |
+| **ⓑ arm excess it does NOT explain** | 4.005 | 0.681 | 1.416 | **0** | ≤0.0005 | 2.83× |
+| **ⓒ the 45% it misplaces** | 1.482 | 0.451 | 1.029 | **0** | ≤0.0005 | **1.44×** |
+
+⇒ *** `ⓐ` CLEARS, SO `cc66.65`'s CENTRAL READING — "the term mix's own cost is NOT combed" — IS WRONG. ***
+*It failed the old bar by **one period of 110**, and the pre-registration said in advance that a bar worth one
+in four failing something by one unit is equally capable of passing it.*
+
+**And `ⓐ`'s clearance is not the noise-free term talking.** Under this null $d$ is fixed and only $r_c$ moves:
+
+| ⓐ's term | amp | null | reading |
+|---|---|---|---|
+| $d^{T}Fd$ | 0.851 | $0.794 \pm 0.006$ | **noise-free — no evidence** |
+| $-2d^{T}Fr_c$ | 3.399 | median 0.354, **0 of 2,000** | **a real test, and it passes** |
+
+*The held-coefficient variant agrees on both fitted quantities, so none of the clearance is the regression
+chasing noise.*
+
+⇒ **The measured row is "both"** — `ⓐ` clearing reads as DISCHARGES and `ⓑ` clears too. *At this bar the
+projections no longer separate and the fork as posed does not discriminate. Reported, not chosen between.*
+
+⚠ **And the old bar was not merely weak, it was inflated.** *Its maxima ran 3.2–4.3 where this one's run
+1.0–1.9: the wrong-period amplitudes were carrying the signal itself, leaked.* ⇒ ***A null built from the same
+data at neighbouring frequencies is not independent of the feature it is scoring.***
+
+### ⓶ — `cc66.62`'s scope claim, amended
+
+Band 1 is $q \in [0.85, 1.55)$.
+
+| anchor | $q$ | inside band 1? |
+|---|---|---|
+| peaks 1–4 | 0.736, 1.778, 2.703, 3.751 | **none** |
+| **trough 1** | **1.360** | **yes** |
+
+*`C17_the_instrument_already_carries_both` states the instrument carries "acoustic peak **and trough**
+positions", so the peak-only reading would have been a dodge.* ⇒ ***70's factual claim is correct.***
+
+**The qualifier:** `anchored()` returns $-c_1/2c_0$, a vertex **position**, never a height. *So the claim
+survives in substance but was carrying an implication it had not earned — that the instrument does not reach
+band 1 at all.* ⇒ ***It LOCATES inside band 1 and MEASURES no height there.***

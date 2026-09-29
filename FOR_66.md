@@ -5105,3 +5105,58 @@ $$\chi^{2}(a)-\chi^{2}(c) = d^{T}Fd - 2\,d^{T}Fr_c$$
 * ⚠ ***AND THE INSTRUMENT MUST MATCH THE QUESTION'S GRAIN*** — *`cc66.60`'s error, met again at ⓷ and named rather than repeated.*
 
 ⌗ **On 70 joining:** *the division reads right and I am not asking for it to be re-cut. A standing resolution table is the correct answer to a limit I found four times in four disguises — and I would rather the null be audited by a seat that did not build it, **particularly now**, when the margin is one period out of 110 and the clause turns on it.*
+
+---
+
+# cc66.66 — `r7033` filled. **All three clear, and `cc66.65`'s central reading was wrong.**
+
+**Receipt `P15_all_three_projections_clear_the_instrument_noise_null_so_the_term_mixs_cost_is_combed_after_all.py`, 22 gates, `GATES: ALL PASS`.** *Pre-registration its own commit ahead of the working script. No corpus edits.*
+
+## ⛔⛔ THE HEADLINE IS A CORRECTION TO ME, AND I PRE-REGISTERED THE WORDS FOR IT
+
+***`ⓐ` — the term mix's own cost — CLEARS. `cc66.65` said it did not, and `cc66.65` was wrong.***
+
+*It failed the old bar by **one period out of 110**. My `PREDICTION.md` said, before I ran anything: "a bar worth one in four failing something by one unit is equally capable of passing it. If `ⓐ` clears the noise null, `cc66.65`'s reading was wrong in the direction I did not flag, and I will say that in those words." ⇒ **It cleared, and those are the words.***
+
+⌗ ***And the thing I want on the record is which part of `cc66.65` was weak.*** *It was not the arithmetic gate I was pleased with — that still stands and you have promoted it. **It was the bar, and the bar was mine.** I flagged the margin as thin and asked for your audit; I did not work out that 82 bins over $T = 2.78$ can hold only about 3.6 independent frequencies, which is the fact that decides it. 70 did.*
+
+## ⛭ THE GATE FIRST — IT IS 70's INSTRUMENT AND NOT MY READING OF IT
+
+*I copied 70's `shape_fit`, `detrend`, `amp` and `terms` rather than re-deriving them, and reproduced the arm before anything rested on it: **7.3038, 0 of 2,000, null max 2.34** against 70's 0 and 2.54 on another seed.*
+
+## ⛭⛭⛭ ⓵ AND ALL THREE CLEAR, WITH NONE OF 2,000 DRAWS REACHING ANY OF THEM
+
+| quantity | amp | null max | # ≥ amp | margin |
+|---|---|---|---|---|
+| **ⓐ term mix own cost** | 4.238 | 1.874 | **0** | 2.26× |
+| **ⓑ arm excess it does NOT explain** | 4.005 | 1.416 | **0** | 2.83× |
+| **ⓒ the 45% it misplaces** | 1.482 | 1.029 | **0** | **1.44×** |
+
+⚠ *`ⓒ`'s margin is 1.44× and I have not rounded it into the same sentence as the other two.*
+
+⛔ ***And `ⓐ`'s clearance is not the noise-free term talking*** — *which is the check that makes it a result rather than an artefact of your null's construction. Under this null $d$ is fixed and only $r_c$ moves, so $d^{T}Fd$ **cannot fail**. Measured: `ⓐ`'s quadratic term is $0.851$ against $0.794 \pm 0.006$, **reported as no evidence**; its cross term is $3.399$ against a null median of $0.354$, **0 of 2,000**.* ⇒ ***`ⓐ` clears on the term that knows where the data sits.***
+
+*The held-coefficient variant agrees on both fitted quantities, so none of the clearance is the regression chasing noise — which the pre-registration required before any exit.*
+
+## ⛭⛭ SO THE MEASURED ROW IS "BOTH", AND I AM NOT CHOOSING BETWEEN THEM
+
+*`ⓐ` clearing reads as DISCHARGES on your table; `ⓑ` clears too, which is the terminating row's condition half-met.* ⇒ ***At this bar the projections no longer separate. The fork as posed does not discriminate, and that is the finding rather than a failure to deliver one.*** *It is your third line and it is yours to place.*
+
+## ⚠ AND THE OLD BAR WAS NOT MERELY WEAK — IT WAS INFLATED
+
+*Its maxima ran $3.2$–$4.3$ where this one's run $1.0$–$1.9$.* ⇒ ***The wrong-period amplitudes were carrying the signal itself, leaked*** — *which is the general form of the mistake and worth stating as one:* **a null built from the same data at neighbouring frequencies is not independent of the feature it is scoring.** ⌗ *That is why the correction went in the direction it did: the old bar was too high, not too low.*
+
+## ⛭⛭ ⓶ 70's ROUTED FINDING — **AMENDED, AND 70 IS RIGHT ON THE FACT**
+
+*The locator's four **peak** anchors sit at $q = 0.736$, $1.778$, $2.703$, $3.751$ — **none inside band 1**. I could have stopped there and rejected it.* ⛔ ***But `C17_the_instrument_already_carries_both` says the instrument carries "acoustic peak AND TROUGH positions", and trough 1 sits at $q = 1.360$, inside band 1. The peak-only reading would have been a dodge.***
+
+⇒ **The qualifier:** *`anchored()` returns $-c_1/2c_0$, a vertex **position**, and never a height. So `cc66.62`'s claim survives in substance — but it was carrying an implication it had not earned, that the instrument does not reach band 1 at all.* ***It LOCATES inside band 1 and MEASURES no height there.***
+
+## ⛔ ⓷, AND THE GUARDS
+
+*No mechanism. No new candidate. `cc66.61`'s floor and the band-1 results not re-derived. No basis or aggregation chosen. No corpus edits.*
+
+* ⚠ ***A NULL BUILT FROM THE SAME DATA AT NEIGHBOURING FREQUENCIES IS NOT INDEPENDENT OF THE FEATURE IT IS SCORING.*** *New, and it is this revision's whole lesson. It is the same shape as the guard you promoted — a quantity that cannot fail is not a test — moved from arithmetic to statistics.*
+* ⚠ ***AND COUNT THE INSTRUMENT'S INDEPENDENT ELEMENTS BEFORE QUOTING A RANK AS A PROBABILITY.*** *110 periods, 3.07 of them independent.*
+
+⌗ **On the division with 70:** *it worked exactly as you said it would, and faster than I expected. I asked for the audit and it came back and overturned my own reading in one revision. **I would not have found $N_{\rm eff} = 3.07$; I was looking at the margin, not at the bar's resolution.** If there is more of that available, I would take it.*
