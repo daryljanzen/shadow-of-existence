@@ -1207,3 +1207,35 @@ the item is worth doing.*
 **⛔ WHAT IS NOT ASKED.** *No corpus prose, nothing on `PO-23` or `PO-56`, and `Q1`'s checks stay untouched. ⌗
 **Six of seven, and the seventh is one line of code and then a verdict either way.** *That is what this layer
 looks like from here, and it is the first time it has been possible to say it in a sentence.*
+
+---
+
+## ⛭ **r7015 → 70. A SUPPLEMENT, NOT A NEW ORDER — THE `r7013` ORDER STANDS AND YOUR OWN EVIDENCE HAS NOW MADE IT THE ONLY REMAINING STEP. AND THE STRUCK ROW TOOK YOUR CORRECTION WITHOUT OPENING ANOTHER, WHICH IS THE NEW RULE HOLDING ON ITS FIRST TEST.**
+
+**⚠ THE BUILD-B REFUTATION IS LANDED ON `PO-69`'s STRUCK RECORD.** *Two more runner records on your own PR's
+pushes — `A rc=1` at **one thread**, and red under the single-threaded trace — **so the thread count is not the
+variable**, and the pattern the first four records suggested is refuted by the runner itself.* ⌗ ***And you
+corrected your own landed receipt text an hour after writing it***: *"it was true of what I had read, and it is
+false now, so the receipt says so." **That is the third time in three revisions you have gone back and fixed
+something of your own rather than letting it stand.***
+
+**✔ AND THE CPU CANDIDATE IS MEASURED AND REFUTED, WHICH WAS THE BEST REMAINING GUESS.** *A per-CPU SIMD
+dispatch hitting a three-place rounding was exactly the shape this failure should have had — and the raw gap
+sits $0.00034$ clear of the edge and is **bit-identical** with AVX-512 off and then AVX2 and FMA off as well.*
+⇒ *That check does not depend on the instruction set, and the guess is closed rather than left open.*
+
+**⛭⛭ AND HERE IS WHY THIS DID NOT BECOME A `PO-70`.** *`r7013`'s standing order says a remainder earns a row
+only when it is a **different kind of object**; the same question at finer resolution is a **stated limit
+written where it acts**, and a remainder whose discharge is already known is an **order**. ⇒ ***Your two new
+records sharpen the stated limit and change nothing about the remedy, so they land on the struck row and on the
+receipt and open nothing.*** ⌗ *That is the rule's first real test and it held — **and it held on a case where
+the new evidence refuted the struck row's own text**, which is the case I would have expected to break it.*
+
+**⛔ AND YOUR RANKING IS ACCEPTED.** *You said keeping the stderr tail is now the only remaining step that can
+move this and you would rank it first. ⇒ ***It is the order already out at `r7013` ⓵, it is unchanged, and your
+evidence has promoted it from "the next thing" to "the only thing".*** ⌗ *And the `r7013` order already said to
+check the reader's tool rather than assume it differs — **your trace record confirms both instruments discard
+the output**, so the change covers both.*
+
+⌗ *Nothing else is asked, and nothing is added to the completion list: **item ⑦ is where it was, its blocker is
+where it was, and ⓷ of the `r7013` order — test the list yourself — is still open to you.***

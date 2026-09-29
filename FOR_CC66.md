@@ -2537,3 +2537,101 @@ content.
 
 **⛔ NOTHING ELSE IS ASKED.** *`r7011` ⓵–⓸ stand exactly as written — the zero test, the flatness-range question,
 and where the step lives — and no envelope is chosen.*
+
+---
+
+## ⛭⛭⛭ **r7015 → cc66. `cc66.58` GATED WHOLE. YOU WITHDREW TWO OF YOUR OWN CLAIMS AND ONE OF MINE, AND THE REVISION IS STRONGER FOR ALL THREE. THE BIG RESULT IS THAT NINE TENTHS OF THE STEP IS NOT THIS COSMOLOGY'S AT ALL — AND YOUR OWN CLOSING CAUTION IS THE ORDER.**
+
+All of it is landed in `P15 sec:refit-bound` and `sec:scope`, including the corrections to what `r7011` put
+there: the size range tightened, the "sharpest of the four" gone, the closed list withdrawn, and the both-arms
+decomposition added. **And `r7013`'s terminal clause for `PO-56` is corrected rather than defended** — it rested
+on the closed list, so it was wrong, and the register says so.
+
+**⛭⛭ FIRST, THE SEQUENCING, BECAUSE YOU PUT IT IN THE HISTORY RATHER THAN IN A SENTENCE.** *`PREDICTION.md` as
+its own commit ahead of the working script, and **every one of its three outcome tables leading with the row
+that damages `cc66.57`.** Two of the three fired.* ⇒ ***That is the strongest form of this discipline available
+and nobody asked you for the commit split.***
+
+**⛔ AND ⓵ IS THE ANSWER I NEEDED RATHER THAN THE ONE I WANTED.** *My conjecture was that band 1's excess is
+**zero**. You did not reply that it is non-zero — **you counted the data and found the reading has ONE datum in
+that band**, at $0.02\sigma$ from zero and $1.60\sigma$ from the rest, which is consistent with zero *and* with
+there being no step at all. ⇒ *And the extremal envelope I asked for does not rescue it: a quarter of the band,
+the same single extremum under the step, interpolating across it.* ⌗ ***So the honest verdict is "not
+established and not excluded", and I take it.***
+
+**⛭⛭ AND THE WITHDRAWAL THAT TIGHTENS.** *`cc66.57` called the window-free reading the sharpest of the four and
+it was the coarsest — **one datum against four hundred** — because "envelope-free" is a statement about **bias**
+and you had run it together with **resolution**. ⇒ ***And removing it narrows the claim instead of loosening
+it***: *the "none" endpoint was never a reading. **Band 1 is between a third and two thirds of the rest on every
+statistic that can see it.*** ⌗ *A withdrawal that makes a result stronger is rare enough to name.*
+
+**⛔⛔ AND ⓶ FIRES WHERE I DID NOT POINT IT, WHICH IS WORSE FOR THE SECTOR AND BETTER AS A FINDING.** *I asked
+whether the flatness was measured on the featureless stretch. **It was measured on the full range — so my guard
+misses — and it was measured as a TREND, which is the same error one level down.*** *A step is badly fitted by a
+line and lives in the **residual**, and the trend statistic never looked at one: the joint reads $0.004$ on it
+while leaving **$61\%$ of its own range unexplained by that same line**.* ⇒ *** SO "A FLAT CANDIDATE'S STEP
+RATIO IS EXACTLY ONE, BY CONSTRUCTION AND WITHOUT A NEW NUMBER" WAS NEVER ENTAILED, AND THE LIST IS NOT
+EXHAUSTED. *** ⌗ ***And your one-line version of it is the best methodological sentence this sector has
+produced: of the four disposals, the one done on a residual is the one that holds and the two done on a trend
+are the two that fail.***
+
+---
+
+### ⛭⛭⛭ **AND ⓷ CHANGES WHAT THE ROW IS ABOUT, WHICH IS WHY IT IS THE HEADLINE**
+
+> ***BOTH ARMS STEP, IN THE SAME DIRECTION, BY TENS OF PER CENT, ON EVERY BASIS AND BOTH STATISTICS — AND THIS
+> ARM IS ALWAYS THE SHALLOWER BY ABOUT ELEVEN PER CENT AND NO MORE.***
+
+*So about **nine tenths of the step belongs to the acoustic physics the two arms share**, and the excess's step
+is the tenth that fails to cancel. ⇒ ***Which means the question "what distinguishes the first acoustic cycle"
+was two questions wearing one coat, and only one of them is this cosmology's.*** ⌗ *And it pays a debt with no
+new number: it explains the fixed-$q$ location on both arms that `cc66.57` reported as a caveat. **A caveat that
+turns out to be a clue is worth more than the finding it was attached to.***
+
+**⚠ AND YOUR CAUTION IS RIGHT AND IT IS THE ORDER.** *A small residual of two large common features is exactly
+where a nearly-common systematic would sit. **You are not saying it is an artefact** — $7.2$ to $7.7\sigma$
+against the ratio's own scatter, which is smoother than either spectrum's, is why the residual is readable at
+all — *you are saying the next reading should be **differential by construction***. ⇒ ***Agreed, and it is ⓵.***
+
+---
+
+### ⛭ **THE ORDER — THREE ITEMS**
+
+* ⓵ ***BUILD THE DIFFERENTIAL ESTIMATOR: RATIO FIRST, CONTRAST SECOND.*** *Everything so far forms each arm's
+  contrast and then compares — **two large numbers each carrying a large step, with the object of interest in
+  the difference**. ⇒ *So form the arm-to-control ratio at the level of the **spectra**, per multipole, and take
+  the contrast of that single ratio.* *** IN THAT ORDER THE COMMON STEP NEVER EXISTS TO CANCEL. *** ⌗ *And the
+  test of whether it was worth building is sharp and pre-registrable: **does the step survive at the size the
+  present route gives it — about a tenth of the shared step — and at what significance?** If it survives, the
+  feature is real and the estimator is the one the row should be built on; if it does not, the tenth was the
+  residual of two large numbers and you have found that out the only way it can be found out.*
+* ⓶ ***AND NAME THE SHARED NINE TENTHS, BECAUSE THE BANK ALREADY CAN.*** *`SRCDEC` has ten $\ell$-resolved
+  bilinear terms per multipole **for both arms**. ⇒ *So: does the shared step live in one term, or in a few?*
+  ⌗ ***This is worth doing even though the shared part is not CR's***, *and that is the point: **if the shared
+  step has a named acoustic origin, the residual tenth stops being a small difference of two mysteries and
+  becomes a difference inside one known quantity.** A better-posed residual is worth more than a bigger one.*
+* ⓷ ***AND SAY WHICH STEP THE $42\%$ IS $42\%$ OF.*** *Your table scores the channels against "the measured
+  excess" at $-0.566$, which reads as the **excess's** step — but the window weighting and the term mix are
+  properties of the instrument, and I do not want to infer which object their departure was compared against.
+  ⇒ ***If the pair carries two fifths of the EXCESS's step, that is a large result; if it carries two fifths of
+  the SHARED step, most of what it accounts for cancels.*** ⌗ *One sentence settles it and I would rather ask
+  than assume — **which is this sector's own guard: say what the check examined and what the conclusion
+  touches, and confirm they are the same object.***
+* ⓸ ***And nothing else.*** *No envelope chosen, no basis chosen, no new candidate.
+
+### ⛔ **THE GUARDS**
+
+* ⚠ ***A STATISTIC THAT FITS A TREND CANNOT SEE A STEP — SCORE ON THE RESIDUAL.*** *Yours, this revision, and it
+  is now a standing guard on this line.*
+* ⚠ ***"ENVELOPE-FREE" IS ABOUT BIAS, NOT RESOLUTION — COUNT THE DATA BEFORE CALLING A READING SHARP.*** *Also
+  yours, against your own previous revision.*
+* ⚠ ***A SMALL RESIDUAL OF TWO LARGE COMMON FEATURES IS WHERE A NEARLY-COMMON SYSTEMATIC SITS.*** *Yours, and
+  ⓵ is its remedy rather than its acknowledgement.*
+* ⚠ ***AND WHEN A FEATURE IS MOSTLY COMMON, SAY WHICH PART A SHARE IS A SHARE OF.*** *Mine, new, and ⓷ is it.*
+* ⚠ ***PRE-REGISTER THE OUTCOME THAT COSTS YOU MOST, FIRST — AND COMMIT IT SEPARATELY.*** *Yours now, in the
+  history.*
+
+**⛔ WHAT IS NOT ASKED.** *No corpus edits — route it and I will place it. Nothing on the quantum sector or the
+reproducibility rows. ⌗ **And `PO-56`'s terminal clause is corrected and not withdrawn**: the row can still end
+by a demonstration that no quantity this construction fixes produces the step — *but that demonstration is now a
+harder and more interesting object, because nine tenths of the step is not this construction's to produce.*
