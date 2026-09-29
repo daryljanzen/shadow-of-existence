@@ -248,6 +248,24 @@ def sweep(root, out, jobs, only=None):
     with ThreadPoolExecutor(max_workers=jobs) as ex:
         list(ex.map(lambda f: _run(root, os.path.relpath(f, root), 2 * max(900, m.budget(f, 600)), out),
                     files))
+    # ⛭ r7007+70.1 (PO-67 ⓶): the trace runs in the same kind of parallel pool as the tolerance probe, so a
+    #   timeout here can be contention too.  Re-run it ONCE, ALONE, at the same budget (never a longer
+    #   one), keeping the first attempt in the log; a second timeout stays a timeout.
+    for f in files:
+        rel = os.path.relpath(f, root)
+        log = os.path.join(out, rel.replace('/', '_') + '.json')
+        first = json.load(open(log))
+        if not first.get('timeout'):
+            continue
+        os.rename(log, log + '.first')
+        _run(root, rel, 2 * max(900, m.budget(f, 600)), out)
+        os.remove(log + '.first')
+        again = json.load(open(log))
+        again['first_attempt'] = {'timeout': True}
+        with open(log, 'w') as fh:
+            json.dump(again, fh)
+        print(f'  ⌗ {rel}: timed out in the parallel pass; re-run alone: '
+              + ('TIMED OUT AGAIN -- not traced to its end' if again.get('timeout') else f'rc={again.get("rc")}'))
     return len(files)
 
 
@@ -294,18 +312,21 @@ def report(out, root):
     for rel in timeouts:
         print(f'  ⚠ timeout  {rel}')
     print()
-    if flagged:
-        return 1
     # ⛔ r6977+70.1: a receipt that did not run to exit 0 was not traced to its end, so "FLAGGED 0" says
     #   nothing about the reads it never reached -- the first backstop dispatch ran without numpy and every
     #   receipt died on import.  Not a clean sweep: exit 2, naming them.
+    # ⛭ r7007+70.1 (PO-67 ⓵): and it returned 1 on a flag BEFORE looking for them, so a run with both hid
+    #   the unmeasured half.  Two findings, two bits: 1 = FLAGGED, 2 = NOT A SWEEP, 3 = both.
     if red or timeouts:
         print(f'  ⛔ NOT A SWEEP OF {len(red) + len(timeouts)} RECEIPT(S): red or over budget under the trace, so '
               f'their reads past the failure were never made.')
-        for rel in (red + timeouts)[:12]:
+        for rel in red + timeouts:
             print(f'      {rel}')
-        return 2
-    return 0
+    rc = (1 if flagged else 0) | (2 if (red or timeouts) else 0)
+    print(f'  VERDICT: ' + {0: 'CLEAN', 1: 'FLAGGED -- a relative read resolved to nothing',
+                            2: 'NOT A SWEEP -- nothing flagged, but a receipt was not traced to its end',
+                            3: 'FLAGGED AND NOT A SWEEP'}[rc])
+    return rc
 
 
 # ------------------------------------------------------------------------------------ seeding

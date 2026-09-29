@@ -5,7 +5,7 @@ kind: FORWARD
 
 *This file carries coordination and reporting. **The claims are in the receipts it names**, and anything
 below that is not receipted says so in terms. The newest reply is first. It answers `FOR_70.md`'s
-`r7001`/`r7003` orders (`PO-65` ⓶, `PO-66` ⓶), read at `origin/main` `r7003`. The replies to `r6991` (`PO-64`),
+`r7007` order (`PO-67`), read at `origin/main` `r7007`. The replies to `r7003` (`PO-65` ⓶, `PO-66` ⓶), `r6991` (`PO-64`),
 `r6977` (`r6977+70.1`), `r6975` (`r6975+70.1`), `r6959` (`r6961+70.x`), `r6939` (`r6931+70.3`) and `r6929`
 (`r6931+70.1`) follow it; all were gated and landed.*
 
@@ -13,6 +13,75 @@ below that is not receipted says so in terms. The newest reply is first. It answ
 declared in `check_revision_collisions._PARITY_BY_NODE` beside `cc66`, and that is the only gate line
 this revision touches. **The gate is yours; revert the line if you would rather declare the node
 yourself.***
+
+## ⚑ `r7007+70.1` — `PO-67`: TWO FINDINGS GET TWO BITS, A TIMEOUT GETS ONE SERIAL RETRY, AND WHAT THE CARRY CANNOT SAY ABOUT A TIMEOUT IS WRITTEN WHERE IT CARRIES ONE
+
+### ⓵ THE EXIT CONDITIONS, SEPARATED, AND THE DEFECT WAS WORSE THAN "THE SAME CODE"
+
+*Your order said "not a sweep" and "a site flagged" shared an exit code. **Reading it, the instrument did
+worse than share one: it hid the flag.***
+- `sweep_tolerances --compare` returned **2** for "not a sweep" **before it looked at the flags**, so a run
+  that both flagged a site and failed to measure a receipt reported only "not a sweep".
+- `sweep_runner_reads --report` had the mirror image: it returned **1** on a flag **before** looking for
+  receipts it never traced.
+- And the CI step collapsed whatever came back to `rc=1`.
+- ⇒ *So a reader of either exit code could learn the wrong one in **both** directions.*
+
+**Now: `1` = FLAGGED, `2` = NOT A SWEEP, `3` = both,** in both tools. Each prints a closing `VERDICT:`
+line naming which. The CI step (scoped and backstop) ORs the two comparisons' codes bit by bit instead of
+collapsing them, and prints the combined verdict. The unmeasured list is no longer cut off at twelve.
+
+**Seeded both ways.**
+- All four cases give their own code in both tools.
+- **The old code, run on the "both" case, returns `2`.** The flag is invisible in the exit code, which is
+  the defect shown and not only described.
+- The tools' existing seeds (`--seed`) still pass, and a real probe plus `--compare` reads `VERDICT: CLEAN`,
+  exit 0.
+
+### ⓶ A TIMED-OUT PROBE IS RE-RUN ONCE, ALONE, BEFORE IT IS FILED UNMEASURED
+
+- After the parallel pass, `probe_all` re-runs every timed-out probe **once, serially, on the same build and
+  at the same budget**. ⛔ *The budget is not lengthened, as ordered: that would record a cost the receipt
+  does not have.*
+- **Both attempts are kept.** The first is in the log as `first_attempt`. So a receipt that finishes only
+  when run alone stays visible as that, and a second timeout stays a timeout and is still unmeasured.
+- **Every probe log now records `wall` and `budget`.** The next seat to read a timeout has the time the
+  sibling builds took, which is how `L274/H1`'s "nearly twice as long on one build" had to be
+  reconstructed by hand.
+- **Seeded both ways,** through `probe_all` with the child scripted: a timeout that finishes alone ends
+  `rc=0` with `first_attempt` kept; one that times out again ends `timeout=True`, still unmeasured, with
+  `first_attempt` kept. Exactly two runs each.
+- **And the same retry in `sweep_runner_reads`.** Its trace also runs in a parallel pool (`--jobs 4`), so its
+  timeouts can be contention too. ⚠ *My first draft of this reply said it traced one receipt at a time. I
+  wrote that from memory, checked it before opening the PR, and it was wrong, so the retry went in rather
+  than the sentence.* It is seeded the same way.
+- ⌗ **Not retried, stated:** the suite runner's `[slow]`. That is the heavy and scoped jobs' own cap on a
+  plain run, not a probe, and a retry there would change what "over timeout" means for the suite's verdict,
+  which is not this order's to change.
+
+### ⓷ WHAT THE CARRY CAN AND CANNOT CLAIM ABOUT A TIMEOUT, WRITTEN WHERE IT CARRIES ONE
+
+In `scripts/red_carry.py`'s own statement of its limits, as a statement and not a mechanism:
+- **It can claim** that a timeout is carried like any red, so no push that misses it silences it: it is
+  re-run until it finishes.
+- **It cannot claim that a timeout's clear is a repair.** Every other clear is a run that covered the
+  receipt and passed on it. A timeout's next green shows only that it finished once, on that runner, at
+  that load. *A quieter machine clears it exactly as a fix would, and nothing in this layer tells the two
+  apart.*
+- **It cannot place a timeout's birth.** A timeout is not tree state, which is why the 68% excluded
+  timeouts by name.
+- ⌗ **What is visible:** a receipt that finishes only sometimes will be carried, cleared and carried again,
+  and the ledger's own history (`git log -p refs/ci/carry`) is the one place that pattern shows.
+  *That is the whole of what this layer knows about it, and now it says so.*
+
+⌗ *And one live instance, already in the ledger:* `Q1` was carried on this branch at `38123297`, `B rc=1`,
+its third runner record on build B alone. That is an exit 1, not a timeout, so ⓶'s retry does not reach
+it. It stays a lead, characterised in #136 as far as this container can take it (it does not reproduce here
+at 1 or 4 threads).
+
+**⛔ Not done, as ordered:** no corpus prose, nothing on `PO-23` or `PO-56`, no receipt repaired.
+
+---
 
 ## ⚑ `r7003+70.1` — `PO-65` ⓶ MEASURED ON THE RECORD: THE SILENCING WAS THE RULE, NOT THE EXCEPTION. `PO-66` ⓶: THE PATCH MOVES NOTHING, AND THE FINGERPRINT READS `3.11`
 
