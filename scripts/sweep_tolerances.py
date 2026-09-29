@@ -462,7 +462,7 @@ def _run(root, rel, budget, out, env_extra):
     if os.path.exists(log):
         return
     d, f = os.path.split(os.path.join(root, rel))
-    env = dict(os.environ, NODE='ci', **env_extra)
+    env = dict(os.environ, NODE='ci', **CHILD_ENV, **env_extra)
     t0 = time.time()
     out = err = ''
     try:
@@ -489,6 +489,21 @@ def _run(root, rel, budget, out, env_extra):
 #   it is (up to KEEP_FAILS), each line cut at KEEP_WIDTH -- at most ~30 KB for one failing receipt.
 KEEP_LINES, KEEP_FAILS, KEEP_WIDTH = 40, 20, 300
 _FAIL = re.compile(r'\bFAIL')
+# ⛭ r7019 (70.1) ⓵: A TIMEOUT IS CUT AT THE KILL, NOT AT AN EXIT, AND WHAT WAS NOT FLUSHED IS GONE.  Measured with
+#   a child that prints N lines of 70 bytes, a `[FAIL]` line and half a line, then hangs, killed at its timeout:
+#     block-buffered (a pipe's default, and the runner's: no job log of 165 read names PYTHONUNBUFFERED)
+#       2,172 bytes printed -> 0 kept.   14,072 printed -> 8,235 kept, the tail and its `[FAIL]` line lost.
+#     unbuffered
+#       2,172 -> 2,202 kept.  14,072 -> 14,272 kept, the half line included.  Stderr kept either way.
+#   ** So on the runner, keeping a timeout's output kept nothing that had not filled an 8 KB block. **  This
+#   container sets PYTHONUNBUFFERED=1 globally, which is why r7013+70.1's seeds did not see it.  Every child
+#   of all three instruments therefore runs with CHILD_ENV, set explicitly rather than assumed.  A line
+#   cut at the kill is kept as the last line of the tail, as far as it got.  ⌗ Cost, measured: about 2 us
+#   a line, 0.2 s for 100,000 lines.  ⛔ Still lost: output a child's own C or Fortran library buffers
+#   itself, and whatever a receipt CAPTURED from its own children and had not yet printed -- `Q1` runs four
+#   receipts that way, so a hang inside one of them keeps `Q1`'s lines up to the call and not the child's.
+#   (The eight receipts that pass `env=` to a child all build it from os.environ, so they inherit this.)
+CHILD_ENV = {'PYTHONUNBUFFERED': '1'}
 
 
 def _text(b):
@@ -503,14 +518,16 @@ def keep_output(out, err):
             'stderr_tail': cut(le[-KEEP_LINES:]) if err else []}
 
 
+def output_lines(o, indent='        '):
+    """a kept output as job-log lines, tagged and indented past any verdict line an instrument prints"""
+    return [f'{indent}{tag:6}| {l}' for tag, key in (('FAIL', 'fail_lines'), ('stderr', 'stderr_tail'),
+                                                   ('stdout', 'stdout_tail')) for l in (o or {}).get(key, [])]
+
+
 def show_output(d, indent='        '):
     """what a kept output says, for the job log -- the log directory itself is gone after a CI job"""
-    o = (d or {}).get('output')
-    if not o:
-        return
-    for tag, key in (('FAIL', 'fail_lines'), ('stderr', 'stderr_tail'), ('stdout', 'stdout_tail')):
-        for l in o.get(key, []):
-            print(f'{indent}{tag:6}| {l}')
+    for l in output_lines((d or {}).get('output'), indent):
+        print(l)
 
 
 def _annotate(log, **kw):

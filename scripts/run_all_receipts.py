@@ -358,20 +358,41 @@ def budget(path, default):
     return LONG.get(os.path.basename(path), default)
 
 
+# ⛭ r7019 (70.1) ⓵: A RECEIPT KILLED AT ITS BUDGET KEEPS WHAT IT SAID BEFORE THE KILL.  Until now `SLOW`
+#   carried only "exceeded Ns", so `Q1`'s ten suite timeouts (09-28/09-29) recorded nothing of where each one
+#   had got to.  ** The same rule, sizes and child environment as the two sweep instruments, through ONE
+#   definition (`sweep_tolerances`: `keep_output`, `output_lines`, `CHILD_ENV`), so the three cannot drift. **
+#   ⚠ The child is UNBUFFERED because a timeout is cut at the kill and not at an exit: block-buffered, a
+#   receipt that printed 2 KB and hung kept nothing (measured, and beside `CHILD_ENV`).
+#   ⌗ The kept lines print under the `[slow]` line, tagged and indented eight spaces, so no parser of this
+#   output can read one as the runner's own `[FAIL]`/`[slow]` line (four spaces, anchored in
+#   `check_receipts_run` and `red_carry`).
+def _st():
+    import importlib.util
+    spec = importlib.util.spec_from_file_location('sweep_tolerances', os.path.join(HERE, 'sweep_tolerances.py'))
+    m = importlib.util.module_from_spec(spec)
+    spec.loader.exec_module(m)
+    return m
+
+
+_ST = _st()
+
+
 def run_one(path, timeout):
     d, b = os.path.dirname(path), os.path.basename(path)
     t0 = time.time()
     try:
         r = subprocess.run([sys.executable, b], cwd=d, capture_output=True,
                            text=True, errors='replace', timeout=timeout,
-                           env=dict(os.environ, **_ONE_THREAD))
+                           env=dict(os.environ, **_ONE_THREAD, **_ST.CHILD_ENV))
         dt = time.time() - t0
         if r.returncode == 0:
             return ('PASS', path, dt, '')
         tail = [l for l in (r.stdout + r.stderr).split('\n') if l.strip()][-3:]
         return ('FAIL', path, dt, ' / '.join(tail)[:300])
-    except subprocess.TimeoutExpired:
-        return ('SLOW', path, time.time() - t0, f'exceeded {timeout}s')
+    except subprocess.TimeoutExpired as e:
+        kept = _ST.output_lines(_ST.keep_output(_ST._text(e.stdout), _ST._text(e.stderr)))
+        return ('SLOW', path, time.time() - t0, '\n'.join([f'exceeded {timeout}s'] + kept))
     except Exception as e:                                     # noqa: BLE001
         return ('FAIL', path, time.time() - t0, f'{type(e).__name__}: {e}'[:300])
 
@@ -598,7 +619,10 @@ def main():
         print(f"    [FAIL] {os.path.relpath(p, ROOT)}  ({dt:.0f}s)")
         print(f"           {msg}")
     for st, p, dt, msg in sorted(slow, key=lambda r: r[1]):
-        print(f"    [slow] {os.path.relpath(p, ROOT)}  -- {msg}")
+        first, *kept = msg.split('\n')
+        print(f"    [slow] {os.path.relpath(p, ROOT)}  -- {first}")
+        for l in kept:
+            print(l)
     print()
     _wall = sum(v[0] for v in cache.invs.values()) if a.resume else time.time() - t0
     _measured = [k for k, v in cache.invs.items() if v[1]]
