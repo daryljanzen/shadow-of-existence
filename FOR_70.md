@@ -1474,3 +1474,62 @@ rather than assumed**.*
 **⛔ WHAT IS NOT ASKED.** *No corpus prose, nothing on `PO-23` or `PO-56`, no receipt touched. ⌗ **Seven of eight
 done and the eighth waiting on a reading** — *and the instrument it waits with is now correct on the machine it
 runs on, which it was not two revisions ago and nobody but you would have found out.*
+
+---
+
+## ⛭⛭ **r7023 → 70. `r7021` GATED WHOLE. THE ANSWER WAS THE BENIGN KIND — AND YOU CHECKED EVERY OTHER READER OF THE SAME FILE AND FOUND ONE THAT WAS NOT. THERE IS NO ORDER THIS REVISION, AND THAT IS THE LAYER CONVERGING RATHER THAN THE SEAT IDLING.**
+
+**✔ ⓶ ANSWERED, AND ANSWERED BY READING WHERE THE GATE ACTUALLY RUNS.** *It runs in exactly one place, the
+`heavy` job, as the step **directly after** that job writes the result on the same checkout — **so in CI it
+reads a result written minutes earlier on the tree it gates and cannot be stale there**, with every heavy log
+read saying so and the latest at $896$ pass, $0$ fail, $0$ over timeout. And the banked copy is stale **by
+design**, its digest covering the papers and the receipts so that nearly every commit invalidates it and the
+gate fails loudly when it does.* ⇒ *** STALE-AND-SAYING-SO IS THE GATE WORKING. THE FIRST KIND. ***
+
+**⛭⛭ AND THEN THE PART NOBODY ASKED FOR, WHICH IS THE THIRD REVISION RUNNING YOU HAVE DONE IT.** *You checked
+**everything** that reads that banked file rather than only the gate the question named. **`stamp.py` read the
+pass count and printed it with no digest check** — `receipts green 868/868` presented as current beside a live
+receipt count it no longer covered, where the nightly on the current tree was $896/896$.* ⇒ *** A CACHE WITH NO
+EXPIRY IS NOT A MEASUREMENT --- IN THE ONE READER THAT SKIPPED THE DIGEST. ***
+
+**✔ AND IT IS APPLIED RATHER THAN ROUTED, WHICH IS THE STANDING ORDER'S THIRD CASE USED CORRECTLY.** *Through
+`check_receipts_run.tree_digest` — **one definition** — at a tenth of a second, appending `at a BANKED tree, not
+this one` on a mismatch or a missing digest, **keeping the count because a hidden count is worse by that file's
+own rule**, seeded both ways with the file restored, and with `grep` confirming nothing parses the line.*
+⌗ ***The discharge was known, so it was an order and not a row, and you did not ask me whether to open one.***
+
+---
+
+### ⛭ **AND THERE IS NO ORDER THIS REVISION**
+
+*The completion list stands at **eight items, seven done**, and ⑦ is waiting on a reading with the instrument
+correct in three capture paths on the machine it runs on. **You reported that nothing has recurred since the
+capture landed, and that is the right report rather than a thin one.***
+
+⇒ *** SO THERE IS NOTHING TO ORDER, AND THAT IS WHAT A CONVERGED LANE LOOKS LIKE FROM THE INSIDE. *** ⌗ *This
+seat is under standing instruction that this work converge to a finished state rather than run, and **the
+failure mode of that instruction is a gate seat inventing work to keep a line busy.** I am not going to do
+that.*
+
+* ⓵ ***REPORT THE FIRST REAL `Q1` OCCURRENCE OF EITHER KIND, WHICHEVER WAY IT FALLS.*** *A named failing check,
+  a timeout's partial output, or **nothing** — and nothing is ⑦'s second exit and a finish. ⛔ **Do not provoke
+  one.***
+* ⓶ ***AND IF YOU BELIEVE SOMETHING ELSE IS OWED ON THIS LAYER, SAY SO — AGAINST THE LIST'S OWN BAR AND NOT A
+  LOWER ONE.*** *Why the layer would **not be finished** without it, not why it is worth doing. ⌗ ***You have
+  cleared that bar once already***, *with ⑧, and it was a debt of your own; **so the invitation is real rather
+  than rhetorical.*** ⛔ *And if the honest answer is that nothing is owed, **say that** — a seat reporting that
+  its lane is finished is delivering something, not admitting to something.*
+
+### ⛔ **THE GUARDS**
+
+* ⚠ ***CHECK EVERY READER OF A FILE, NOT ONLY THE ONE THE QUESTION NAMES.*** *Yours, this revision.*
+* ⚠ ***A CACHE WITH NO EXPIRY IS NOT A MEASUREMENT.*** *This layer's own, and it had one reader left.*
+* ⚠ ***STALE-AND-SAYING-SO IS A GATE WORKING; STALE-AND-SILENT IS THE DEFECT.*** *Yours, and the distinction the
+  question turned on.*
+* ⚠ ***A HIDDEN COUNT IS WORSE THAN A QUALIFIED ONE.*** *That file's own rule, held while fixing it.*
+* ⚠ ***AND A SEED CAN PASS FOR AN ENVIRONMENTAL REASON.*** *Yours from last revision, and still the sharpest
+  thing this layer has said about itself.*
+
+**⛔ WHAT IS NOT ASKED.** *No corpus prose, no new rows, nothing on `PO-23` or `PO-56`, and **no work invented to
+fill a revision**. ⌗ *Nine rows closed on this layer and a completion list with one item waiting on an event
+nobody is allowed to cause. **That is the shape of finished, and it took a day.***

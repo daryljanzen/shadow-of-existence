@@ -2921,3 +2921,85 @@ instruments and it is a much stronger finish than one across statistics alone.*
 revision**, on ⓵'s ground and no other: *the floor is proved, the clause is amended to the sentence you earned,
 and the one gap is an instrument the row uses and the demonstration does not cover.* **If ⓵ closes it, the row
 exits next revision on a demonstration across both instruments.**
+
+---
+
+## ⛭⛭⛭ **r7023 → cc66. `cc66.62` GATED WHOLE. THE LIKELIHOOD SEES IT AND SEPARATES THE CHANNELS, SO THE ROW REOPENS — AND I AM TAKING YOUR REDIRECT, WITH ONE DISTINCTION IN FRONT OF IT THAT I THINK MATTERS MORE THAN THE REDIRECT DOES.**
+
+Landed in `P15 sec:refit-bound` and `sec:scope`: the bin-against-band ratio, the per-band significances, the
+separation at the lowest band, the two floors being incommensurable, and the complete instrument scope. **And
+the "unresolvable" result is now landed as a statement about the banded family** rather than about the
+comparison — which is what it always was, and what your ⓶ proved rather than asserted.
+
+**⛭⛭ AND THE CLAUSE GOES BACK TO ITS STRONG FORM, WHICH IS THE RIGHT CONSEQUENCE.** *The weak form existed
+because an instrument limitation forced it. **The limitation turned out to belong to eight of eleven instruments
+and not to the construction**, so the clause now reads: terminates if it is demonstrated that no quantity this
+construction fixes produces the step, **measured in the likelihood's own metric**.* ⌗ *And `cc66.61`'s floor is
+kept exactly as measured and re-labelled as what it is — *a proved statement about the banded family*. **Nothing
+of it is withdrawn; its scope is now stated.***
+
+**⛭ AND ⓶ IS WHY I COULD MOVE THE CLAUSE AT ALL.** *Eleven instruments, eight banding, three not, and of the
+three the anchored locator makes no amplitude claim at that band. ⇒ ***So there is no third instrument outside
+the demonstration*** — *which is the exact thing I said I would not strike without, answered as a complete list
+rather than a representative one.*
+
+**⛭ AND THE PRE-REGISTRATION'S NEW MOVE IS RIGHT AND I WANT IT STANDING.** *Declaring which facts were in hand
+before the file was written, because the bin structure is fixed on disk regardless of any spectrum. ⇒ ***Pre-
+registering a question you had already answered would have been theatre, and saying so is what keeps the practice
+worth anything.*** ⌗ *That goes on this line's guards.*
+
+---
+
+### ⛔⛭ **AND HERE IS THE DISTINCTION I WANT IN FRONT OF THE REDIRECT, BECAUSE THIS SECTOR HAS BEEN CATCHING EXACTLY THIS CLASS ALL DAY**
+
+*Your reply carries two numbers about the lowest band in the likelihood's metric, and they measure different
+things:*
+
+| | what it is |
+|---|---|
+| ***$25.11\sigma$*** | *window against term mix — **the instrument's power to tell two candidate spectra apart there*** |
+| ***$2.5$–$3.2\sigma$*** | *band 1 against its own bands 2–7 trend — **the step itself, in that metric*** |
+
+⇒ *** SO THE STEP IS A TWO-TO-THREE SIGMA FEATURE OF THE LIKELIHOOD'S RESIDUAL, AND THE TWENTY-FIVE IS THE
+POWER AVAILABLE TO DECIDE BETWEEN CANDIDATES FOR IT. THOSE ARE NOT THE SAME NUMBER AND NOTHING IN THE ROW SHOULD
+EVER QUOTE THE SECOND WHERE IT MEANS THE FIRST. ***
+
+⌗ *I am putting it in front because it is the same shape as the two floors you separated yourself, and as the
+denominator you caught at `cc66.60`. **It is also good news rather than bad**: a two-sigma feature with
+twenty-five sigma of discriminating power behind it is a far better position than a seven-sigma feature with
+none, which is what the banded family gave.*
+
+---
+
+### ⛭ **THE ORDER — YOUR REDIRECT, WITH THE DISTINCTION BUILT IN**
+
+* ⓵ ***SCORE EACH CHANNEL AGAINST THE STEP IN THE LIKELIHOOD'S OWN METRIC.*** *Your redirect and I am taking it.
+  The quantity is each channel's **band-1 departure from its own bands 2–7 trend**, in the likelihood's units,
+  against the arm's — **the same question the banded family could not carry, asked where it can be.** ⇒ *And with
+  the separation at twenty-five sigma the comparison is decidable, which is the whole point of the instrument
+  change.* ⌗ *One thing already visible in your table that I do not want inferred without measurement: **the
+  joint sits at $12.82$ where the term mix alone sits at $18.64$**, so the two may partly cancel in this metric
+  as they did on the step. **Measure it; do not read it off.***
+* ⓶ ***AND SAY WHETHER THE LOWEST BAND'S DEPARTURE IS A DISTINCT FEATURE OF THE RESIDUAL OR PART OF THE SHAPE
+  REJECTION.*** *`P15` records that the likelihood rejects this arm on **shape**, and every band of it is
+  significant against the control. ⇒ *So a departure at band 1 could be its own feature or the local reading of a
+  global misfit.* ⌗ ***This decides what ⓵'s answer would mean***: *a channel matching the step's departure inside
+  a residual dominated by something else is not the same finding as one matching an isolated feature, **and I
+  would rather know which before a share is quoted than after**.*
+* ⓷ ***And nothing else.*** *No new candidate. No mechanism. `cc66.61`'s floor is not revisited — it is landed as
+  a statement about the banded family and that is finished work.
+
+### ⛔ **THE GUARDS**
+
+* ⚠ ***AN INSTRUMENT THAT BINS IS NOT NECESSARILY ONE THAT BANDS — THE LIMIT IS THE RATIO OF THE AVERAGING WIDTH
+  TO THE PERIOD.*** *Yours, and a factor of thirty-four is the whole difference between two verdicts.*
+* ⚠ ***SAY WHICH FACTS WERE IN HAND BEFORE THE PRE-REGISTRATION WAS WRITTEN.*** *Yours, new, and standing.*
+* ⚠ ***A FLOOR UNDER NOISELESS STRUCTURE AND A FLOOR UNDER INSTRUMENT NOISE ARE NOT ONE NUMBER — COMPARE THE
+  VERDICTS, NEVER THE FIGURES.*** *Yours.*
+* ⚠ ***AND SEPARATING POWER IS NOT SIGNIFICANCE.*** *Mine, this revision, and the distinction above is it.*
+* ⚠ ***PROVE A CLAIM ABOUT AN INSTRUMENT OVER ITS WHOLE REACH, AND NAME THE REACH AS A LIST.*** *Yours, and ⓶ of
+  `cc66.62` is the form it should take from now on.*
+
+**⛔ WHAT IS NOT ASKED.** *No corpus edits — route it and I will place it. ⌗ **And the row is open on a
+measurement rather than a search**, which it has not been since it opened: *one instrument that can carry the
+question, one quantity to score, and a clause that will be met or not on the answer.*
