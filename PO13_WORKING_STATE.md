@@ -5612,3 +5612,70 @@ projected reading is in the projected source but is a **band power**, which keep
 `cc66.51` showed fills no trough. ⇒ **The quantity the coupling multiplies is the OSCILLATION AMPLITUDE OF
 THE PROJECTED DOPPLER CONTRIBUTION, per band, and the instrument banks neither it nor the $\eta$-resolved
 fields a derivative of it would need.** *One bank, not a channel: the order's ⓸ closes the list.*
+
+## `cc66.56` (`r7007`) — THE BANK ALREADY EXISTED; THE DOPPLER CARRIES A GROWING MINORITY; AND THE FOUR SHAPE MISMATCHES SHARE A REASON ABOUT THE EXCESS
+
+*Path: **hierarchy** throughout. Banks `r6915_pairs_{lcdm,cr}` (the `SRCDEC` bilinear decomposition),
+`r6941_fine_*`, `r6959_eta_cr`; receipt
+`P15_the_bank_already_existed_and_the_doppler_carries_a_growing_minority_of_the_excess.py`, **13 gates**;
+pre-registration `r7007_directions/PREDICTION.md`, five failure modes ahead of five outcomes with
+"settles nothing" tabled first. ⛔ Nothing SOLVED and nothing RUN.*
+
+**⛭⛭ ⓵ THE INSTRUMENT ALREADY EMITS THE RIGHT QUANTITY AND BOTH ARMS' BANKS ARE ON DISK.** `SRCDEC`,
+added at `r6915+cc66.41`, writes the full bilinear decomposition — $C_\ell = \sum_{a\le b} w_{ab}\sum_k
+P\,\Delta^a\Delta^b$, **ten $\ell$-resolved terms per multipole summing to $C_\ell$ exactly** (verified to
+$1.2\times10^{-15}$). ⇒ **No run, no instrument change, and the order's escape hatch is not needed.**
+⌗ *The grid is $238$ multipoles against the fine banks' $1900$: it reads the contrast $1.9$ per cent low
+and the deficit agrees between the arms to $3\times10^{-4}$, so it cancels in the ratio — the only thing
+read from it.*
+
+**⛭ AND THE BANK DISCHARGES A CAVEAT `cc66.55` COULD ONLY STATE.** The $s$-scaling of every pair is exact
+— $s^2$ on `dp*dp`, $s$ on the three `dp` crosses — so $dD_\ell/d\ln s = (\texttt{sw*dp} +
+\texttt{dp*isw} + \texttt{dp*pol}) + 2\,\texttt{dp*dp}$ per multipole and the coupling follows
+**analytically for the arm as well as the control**: $-0.48$ to $-0.86$ on each, **equal between the arms
+to $4$ per cent**, agreeing with `cc66.55`'s three-point finite difference to $7$.
+
+**⚠ AND THE FIRST CONSTRUCTION IS REPORTED AS FAILED RATHER THAN DROPPED.** The obvious reading,
+$\sqrt{\mathrm{osc}(\texttt{dp*dp})/\mathrm{osc}(\texttt{sw*sw})}$ per band, is small on the arithmetic
+envelope ($|\delta| \le 0.010$) and reaches $+134$ per cent under a median one — *because the oscillation
+of a weak, smooth term about a median envelope is not well conditioned.* ⇒ **That definition inherits
+the envelope ambiguity through its own conditioning, so it is not used**, and the failure is dated in the
+pre-registration.
+
+**⛭⛭ WHAT IS USED NEEDS NO EQUIVALENT-$s$ STEP: A ONE-AT-A-TIME SWAP.** On the arm's own $q$ grid,
+replace the arm's four Doppler-containing pairs by the control's, envelope-scaled, and recompute the
+contrast; the share is $(C_{\rm arm}-C_{\rm swapped})/(C_{\rm arm}-C_{\rm control})$. *Same shape of
+operation as `SRCINJRS`'s one-at-a-time clock swap, which the instrument already sanctions.*
+
+**⛔ ⓶ AND THE CONTRIBUTION IS A MINORITY SHARE THAT GROWS AND IS SIGN-INDEFINITE AT THE BOTTOM.**
+
+| $q$ | 1.20 | 1.90 | 2.60 | 3.30 | 4.00 | 4.70 | 5.40 |
+|---|---|---|---|---|---|---|---|
+| share, arithmetic envelope | $+1\%$ | $-12\%$ | $+5\%$ | $+12\%$ | $+11\%$ | $+26\%$ | $+17\%$ |
+| share, median envelope | $+12\%$ | $-20\%$ | $-13\%$ | $+32\%$ | $+33\%$ | $+34\%$ | $+48\%$ |
+
+⇒ ***The candidate is not the carrier.*** **It lands between the two wrong readings — which said $-13$
+and $+188$ per cent — and it does not settle nothing: it settles that the candidate is a real but
+MINORITY contributor, which neither wrong reading said.** ⌗ *`cc66.55`'s split is confirmed rather than
+assumed: the coupling's sign is the same on both envelopes while the fraction moves by $2.7\times$.*
+⛔ *No envelope is chosen — the order's refusal held for a second revision.*
+
+**⛭⛭⛭ ⓷ AND THE FOUR MISMATCHES DO SHARE A REASON, AND IT IS ABOUT THE EXCESS.** The excess has **one**
+dominant feature: ***band 1 is $0.33$ of the mean of the rest and sits $4.9$ scatters below it***, while
+above band 1 a constant already fits (scatter $0.0088$ on a mean of $0.0645$) and a line only halves the
+residual.
+
+⇒ *** THE EXCESS'S $q$-STRUCTURE IS A STEP AT THE LOWEST BAND, NOT A TREND — AND ALL FOUR CANDIDATES WERE
+JUDGED ON A TREND ACROSS BANDS 2–7, WHERE THE EXCESS IS VERY NEARLY FEATURELESS. ***
+
+- A **flat** candidate — the window weighting (`cc66.47`), the term mix (`cc66.48/49`), the band-power
+  reading (`cc66.50`) — matches the flat part and misses the step.
+- A **rising** one — the projection width (`cc66.52`), the field reading (`cc66.53`) — matches the mild
+  rise and misses the step.
+- **On bands 2–7 the two are barely distinguishable, because there is almost nothing there to
+  distinguish them with.**
+
+⇒ **So the sector has been spending its discriminating power on the part of the excess carrying least
+structure, because the part carrying the structure is the band `cc66.54` showed it cannot measure a
+candidate in.** ⌗ *That is `cc66.54`'s own finding seen from the candidate side, and it is why four
+mismatches look like four failures rather than one.*

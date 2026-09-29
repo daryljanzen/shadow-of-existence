@@ -4286,3 +4286,74 @@ case. Working script `r7005_directions/coupling.py`. INDEX row, `PO13_WORKING_ST
 regenerated.
 
 ⛔ **No corpus edits** — your ⛔.
+
+---
+
+# ⛭⛭⛭ cc66.56 — `r7007` FILLED: THE BANK ALREADY EXISTED SO THERE IS NO CHANGE TO MAKE; THE ARM'S COUPLING IS NOW MEASURED RATHER THAN TRANSFERRED; THE DOPPLER CARRIES A **GROWING MINORITY**; AND THE FOUR MISMATCHES SHARE A REASON THAT IS ABOUT THE **EXCESS**
+
+**⛭⛭ ⓵ THE BEST ANSWER TO YOUR ⓵ IS THAT NOTHING HAS TO BE EMITTED.** *`SRCDEC` — which this line added
+at `r6915+cc66.41` — already writes the full bilinear decomposition: ten $\ell$-resolved terms per
+multipole summing to $C_\ell$ exactly, verified here to $1.2\times10^{-15}$. And `r6915_pairs_{lcdm,cr}`
+are on disk for both arms.* ⇒ **No run, no instrument change, and your escape hatch is not needed.**
+⌗ *The grid is $238$ multipoles against $1900$: it reads the contrast $1.9$ per cent low and the deficit
+agrees between the arms to $3\times10^{-4}$, so it cancels in the ratio — checked, not assumed.*
+
+**⛭ AND THE BANK PAYS A DEBT FROM LAST REVISION.** The $s$-scaling of every pair is exact, so
+$dD_\ell/d\ln s$ is exact per multipole and **the coupling follows analytically for the ARM as well as the
+control**: $-0.48$ to $-0.86$ on each, **equal between the arms to $4$ per cent**, and agreeing with
+`cc66.55`'s three-point finite difference to $7$. ⇒ ***The control-transferred caveat is discharged.***
+
+**⚠ AND ONE CONSTRUCTION FAILED AND IS REPORTED AS FAILED.** The obvious reading of the quantity —
+$\sqrt{\mathrm{osc}(\texttt{dp*dp})/\mathrm{osc}(\texttt{sw*sw})}$ — is small on the arithmetic envelope
+and reaches $+134$ per cent under a median one, *because the oscillation of a weak, smooth term about a
+median envelope is not well conditioned.* ⇒ **It inherits the envelope ambiguity through its own
+conditioning, so I did not use it, and I have dated the failure in the pre-registration rather than
+quoting its arithmetic number.**
+
+**⛭⛭ WHAT I USED INSTEAD NEEDS NO EQUIVALENT-$s$ STEP AT ALL: A ONE-AT-A-TIME SWAP.** The arm's four
+Doppler-containing pairs replaced by the control's, envelope-scaled, on the arm's own $q$ grid; the share
+is $(C_{\rm arm}-C_{\rm swapped})/(C_{\rm arm}-C_{\rm control})$. *Same shape of operation as
+`SRCINJRS`'s clock swap, which the instrument already sanctions — and no coupling-times-input product in
+it.*
+
+**⛔ ⓶ AND THE CONTRIBUTION IS A MINORITY SHARE THAT GROWS AND IS SIGN-INDEFINITE AT THE BOTTOM.**
+
+| $q$ | 1.20 | 1.90 | 2.60 | 3.30 | 4.00 | 4.70 | 5.40 |
+|---|---|---|---|---|---|---|---|
+| arithmetic envelope | $+1\%$ | $-12\%$ | $+5\%$ | $+12\%$ | $+11\%$ | $+26\%$ | $+17\%$ |
+| median envelope | $+12\%$ | $-20\%$ | $-13\%$ | $+32\%$ | $+33\%$ | $+34\%$ | $+48\%$ |
+
+⇒ ***The candidate is not the carrier.*** **It lands between the two wrong readings — $-13$ and $+188$
+per cent — which is the outcome you told me to table first; and it does not settle nothing.** *It settles
+that the candidate is a real but minority contributor, which neither wrong reading said.* ⌗ *Your
+`cc66.55` split is confirmed rather than assumed: the coupling's sign is identical on both envelopes while
+the fraction moves by $2.7\times$.* ⛔ *No envelope chosen — second revision running.*
+
+**⛭⛭⛭ ⓷ AND YES, THE FOUR SHARE A REASON — AND IT IS NOT ABOUT THE CANDIDATES.** *The excess has one
+dominant feature:* ***band 1 is $0.33$ of the mean of the rest and sits $4.9$ scatters below it***, *while
+above band 1 a constant already fits (scatter $0.0088$ on a mean of $0.0645$) and a line only halves the
+residual.*
+
+⇒ *** THE EXCESS'S $q$-STRUCTURE IS A STEP AT THE LOWEST BAND, NOT A TREND — AND ALL FOUR CANDIDATES WERE
+JUDGED ON A TREND ACROSS BANDS 2–7, WHERE THE EXCESS IS VERY NEARLY FEATURELESS. *** A flat candidate
+(the window weighting, the term mix, the band-power reading) matches the flat part and misses the step; a
+rising one (the projection width, the field reading) matches the mild rise and misses the step; **and
+there the two are barely distinguishable, because there is almost nothing there to distinguish them
+with.**
+
+⇒ ** So the sector has been spending its discriminating power on the part of the excess carrying least
+structure — because the part carrying the structure is the band `cc66.54` showed it cannot measure a
+candidate in. ** ⌗ *That is `cc66.54`'s own finding seen from the candidate side rather than the
+target's, and it is why four mismatches look like four failures rather than one.* **If you want one
+sentence for the paper: the sector's real finding is that its statistic's discriminating power and the
+excess's structure live in different bands.**
+
+## What is on the branch
+
+Receipt `P15_the_bank_already_existed_and_the_doppler_carries_a_growing_minority_of_the_excess.py` —
+**13 gates**, `GATES: ALL PASS`, under a second. Pre-registration `r7007_directions/PREDICTION.md`, five
+failure modes ahead of five outcomes with "settles nothing" tabled first and the failed construction
+dated. Working script `r7007_directions/the_bank.py`. INDEX row, `PO13_WORKING_STATE`, appendices
+regenerated.
+
+⛔ **No corpus edits** — your ⛔. ⌗ *And thank you for `PO-67`; you read the sweep note the way I meant it.*
