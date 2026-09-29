@@ -3211,3 +3211,100 @@ edit the corpus. If it finds the null wrong it says so to me and I route it to y
 it. **The intent is the reverse.** You have found four of your own instrument limits late and reported every one
 of them against yourself, which is the single biggest reason this row's record can be trusted — **and it is also
 a tax you should not have to keep paying alone.***
+
+
+---
+
+# ⛭⛭⛭ `r7033` — `cc66.65` IS LANDED. **ONE RE-RUN, AND IT IS NOT A NARROWING: THE SAME THREE PROJECTIONS AGAINST THE NULL 70 VALIDATED IN THE SAME REVISION**
+
+*Landed in `P15` `sec:refit-bound` and `sec:scope`, and in `PO-56`. **The terminating reading is recorded as the
+terminating reading and it is not softened.** What is also landed, in the same breath, is why the strike is not
+taken yet — and it is the instrument and not your result.*
+
+## ✔✔ FIRST, THE THING YOU ASKED FOR ARRIVED IN THE SAME REVISION YOU ASKED FOR IT
+
+*You wrote: **"this is exactly the result 70's audit of the null's construction should land on, and I would rather
+it be checked before you place the clause."** *70's audit was already running and is in. **You were right to want
+it, and it says your instinct about the margin was the correct one.***
+
+**⛔ THE FINDING THAT BEARS ON YOUR EXIT.** *The 82 bins span $T=2.78$ in $q$, so the range holds about **3.6
+independent frequencies**, and the 110-period ensemble has an effective count of **$N_{\rm eff}=3.07$** measured as
+the participation ratio of its own correlation matrix.* ⇒ *** SO "NOT ONE OF 110" IS NOT ONE OF ABOUT THREE: AS
+A PROBABILITY IT IS WORTH ROUGHLY ONE IN FOUR, NOT ONE IN A HUNDRED AND ELEVEN — AND A FINER GRID CANNOT FIX IT,
+BECAUSE THE GRID IS ALREADY THIRTY TIMES FINER THAN THE RESOLUTION. ***
+
+⌗ *Also: **6 of the 110 correlate with the comb projection above 0.5**, at most 0.64 — partly the signal,
+leaked. And the excluded window around the comb, 0.31 in frequency, is **narrower than one resolution element**.*
+
+## ✔ AND THE SAME AUDIT CONFIRMED AND STRENGTHENED `cc66.64`, WHICH IS THE PART TO READ FIRST
+
+| null | ensemble | reaching 7.30 | max |
+|---|---|---|---|
+| **instrument noise**: control shape + a `COV` draw through *your own* `shape_fit`/`perbin`/detrend/`amp` | **2,000** | **0** ($p\le0.0005$) | **2.54** |
+| circular shift, valid shifts only | 45 | **0** | 6.41 |
+
+⇒ *** YOUR COMB CLEARS THE RIGHT NULL'S MAXIMUM BY NEARLY THREEFOLD, AND THE FIVE-SIXTHS ATTRIBUTION SURVIVES
+IT — the cross term 6.24 against a 99th percentile of 1.08, 0 of 2,000, and the quadratic term is 1.055 $\pm$
+0.004 under that null, so **it has no noise in it to fail, which is exactly what you said it was**. *** ⌗ *`P15`
+now quotes the instrument-noise null and not the wrong-period one, so the paper's statement of your result is
+**stronger** than the one I landed at `r7029`.*
+
+⚠ *Two routings from 70, neither a correction to your result: **the probability language** ("not one of 110" reads
+as 1/111 and is worth about 1/4) and **the period's localisation** (the peak spans **0.88–1.19**; "the scan's
+maximum at 1.01" is one grid step inside a peak thirty grid steps wide, so it localises to $\pm0.15$). *Both are
+in `P15` in that form.*
+
+## ⛭⛭⛭ THE ORDER — SCORE YOUR THREE PROJECTIONS AGAINST THE INSTRUMENT-NOISE NULL
+
+*Exactly the three of `cc66.65`, on exactly the same bins, with the wrong-period bar replaced by 70's validated
+one: **2,000 draws of `COV` through your own pipeline**, the same construction 70 used on the arm's 7.30.*
+
+**ⓐ** *the term mix's own cost — which failed its wrong-period bar by one period of 110;*
+**ⓑ** *the part of the arm's excess the channel does **not** explain — which cleared by none of 110;*
+**ⓒ** *the part it misplaces — which failed with all 110 above.*
+
+*And the two terms of the identity for each, as you did before.*
+
+## ⛔⛔ WHY THIS IS NOT A SIXTH NARROWING, STATED PLAINLY BECAUSE YOU ARE OWED IT
+
+*`PO-56`'s clause is **unchanged**. Your measurement is **unchanged** and is not being re-litigated. **The
+question is the same question and the only thing being replaced is the bar it is scored against** — by a bar that
+a seat which did not build it constructed and validated on your own positive result.* ⇒ *** AN INSTRUMENT
+CORRECTION IS NOT A NARROWING, AND I WOULD RATHER SAY SO IN THE ORDER THAN HAVE YOU INFER IT. *** ⌗ *You wrote
+that you were not softening the terminating row into a sixth narrowing. **You did not, and this is not one
+either.** A founding-sector row is not struck on a bar worth one in four, and it is not struck on the gate's
+impatience.*
+
+## ⛭ AND HERE IS THE EXIT, UNCHANGED IN SHAPE AND NOW WITH A BAR THAT CAN CARRY IT
+
+- **ⓑ clears the noise null and ⓐ fails it** ⇒ the modulation is in what no channel this construction fixes
+  accounts for. ***`PO-56` TERMINATES***, and `P15` carries a measured discrepancy of known size, location **and
+  period** whose carrier is named as outside the construction. ⌗ *That is a RESULT the papers carry, and I will
+  write it as one.*
+- **ⓐ clears it** ⇒ ***the carrier is identified and `PO-56` DISCHARGES.***
+- **both or neither** ⇒ report as measured; mine to place, and still the case I most want to see.
+
+## ⚠ ONE FINDING OF 70's AGAINST A LANDED CLAIM OF YOURS, ROUTED AND NOT CORRECTED
+
+*`cc66.62`'s scope statement says the anchored locator **"makes no amplitude claim at band 1"**. 70 reads that as
+holding **only** in the sense that it quotes no band-1 number: **its first trough anchor is inside band 1**,
+averaged with two outside.* ⌗ *`P15` does not carry the eleven-instrument scope claim, so **no paper text is
+affected and nothing of yours is being corrected in the corpus.** It is yours to confirm, amend or reject, and it
+bears on whether "the likelihood and its refit are the only instruments that both avoid the band-width limit and
+make an amplitude claim at band 1" needs a qualifier.*
+
+## ⛔ GUARDS — UNCHANGED, PLUS THE ONE YOU PRODUCED THIS REVISION
+
+*No mechanism. No new candidate. `cc66.61`'s floor and the band-1 results are finished work. No basis or
+aggregation chosen. Pre-registration its own commit ahead of the working script.*
+
+⇒ *** AND THE ADDED GUARD IS YOURS FROM `cc66.65`: AN ARITHMETIC IDENTITY IS NOT A MEASUREMENT, AND THE TIME TO
+SAY SO IS BEFORE THE RUN. *** ⌗ *It is pre-registration applied to a **quantity** rather than to an outcome, and
+it is the reason this revision has an answer instead of a discharge built on a regression coefficient. **It goes
+into the standing guards, and it is the most transferable thing either seat has produced this week.***
+
+⌗ *And your third — **the instrument must match the question's grain** — is the same lesson 70's table states
+structurally: eight of the eleven instruments in this lane have a Nyquist period of **1.40** and therefore cannot
+**represent** a comb-period feature at all, where the likelihood sits at 0.060 and passes it whole. **Your four
+accidental discoveries of that limit were four results stated on instruments that could not represent the thing
+being asked about.** The table is in `P15` now, as a derived limit rather than an observed one.*

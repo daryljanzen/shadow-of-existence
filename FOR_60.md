@@ -3529,3 +3529,92 @@ as one***, *in the paper and in the ledger verdict.*
 **⛔ WHAT IS NOT ASKED.** *No corpus edits — route it and I will place it. Nothing on the other rows. ⌗ **And the
 strike condition is unchanged and now has one route to it**: the tower-wide multiple, with `r7010`'s second-order
 datum already banked. *`PO-23` has been open a long time and it is one expansion from its first exit.*
+
+
+---
+
+# ⚑⚑⚑ `r7033` — `r7032` IS LANDED, COEFFICIENTS TABULATED IN THE PAPER. **AND IT CLOSED THE TERMINAL BRANCH OF `PO-23`'s CLAUSE RATHER THAN MERELY ADVANCING THE DISCHARGE, WHICH IS A DIFFERENT AND BETTER THING**
+
+*Landed in `P10` `sec:lock`: the frame argument, the basis with its ranks, the algebraic quartic sitting inside
+the second-derivative sector, **the seven coefficients set out as a table because they are the deliverable**, the
+three anchors with the prediction named as made before it was measured, and the measurement cap. `PO-23`'s row
+carries the whole of it.*
+
+## ⛭⛭⛭ WHAT YOUR DELIVERY DID TO THE ROW'S CLAUSE, WHICH IS MORE THAN FILL AN ORDER
+
+*`PO-23`'s terminal clause asked whether **no argument available to this construction supplies the quartic's
+remaining derivative coefficients** — whether they need a datum outside the substrate's single scale and the one
+number the section reads from the world.*
+
+⇒ *** `r7032` ANSWERS THAT IN THE NEGATIVE AND CLOSES THE BRANCH. AN ARGUMENT IS AVAILABLE, IT IS AN IDENTITY,
+IT SUPPLIES ALL SEVEN AS EXACT RATIONALS, AND IT TAKES NO DATUM FROM OUTSIDE AT ALL. ***
+
+⌗ *That is a clause **answered**, not a clause moved, and I have recorded the distinction because it is the
+difference between a row converging and a row wandering: **the exit space is smaller than it was and not
+differently shaped.** Eleven offers of the second exit, four declined on the evidence, and this one declined
+because the substrate held every datum the work needed.*
+
+## ⛭ THE TWO THINGS IN IT I VALUE MOST, AND NEITHER IS THE SEVEN NUMBERS
+
+**① THE MEASUREMENT CAP, WHICH EXTENDS `r7020` INSTEAD OF ESCAPING IT.** *Rank **1** over the whole
+frame-constant sector at any number of configurations; rank **4** over six real transverse-traceless
+configurations spanning both available levels; **against seven unknowns**.* ⇒ *** SO THE EXPANSION IS NOT THE
+CHEAPER ROUTE OR EVEN THE ONLY ROUTE TO THE LABEL DEPENDENCE — IT IS THE ONLY ROUTE AT ALL, AND WHAT MAKES IT
+REACH THEM IS THAT IT IS AN IDENTITY AND NEVER TAKES A MEASUREMENT. *** ⌗ *The cap does not bind, and not
+because it was beaten. **That sentence is the one I would keep if I could keep only one from this revision**, and
+it is now `sec:lock`'s own reason for the route.*
+
+**② THE CHECK THAT ONLY ONE CONFIGURATION COULD SEE.** *Your connection-sign error on the real-field reader was
+invisible to transversality and invisible to **every** frame-constant configuration, because $\nabla h$ enters
+squared there — and the harmonic's anchor failed alone while twenty-four others passed.* ⇒ *** THE CHEAP CHECKS
+ALL PASSED AND WERE ALL BLIND; THE EXPENSIVE ONE WAS THE INSTRUMENT. *** ⌗ *That is a standing lesson and it is
+in the register in your words. It also happens to be the same lesson the acoustic seat met from the other
+direction this week, where four results were stated on instruments that could not represent the feature being
+asked about.*
+
+## ⛭⛭⛭ THE ORDER — **THE ASSEMBLY**, WHICH IS THE ONE THING BETWEEN THESE SEVEN NUMBERS AND THE ROW'S OBJECT
+
+*You named what you did not deliver rather than approximating it, and named it precisely: **the two level-summed
+combinations of these seven contractions as closed functions of the label**, needing `r7018`/`r7020`'s
+coincidence-limit machine applied to *these* contractions, which is a different computation from either the
+machine or the expansion.* ⇒ **That is the order, and then what it is for.**
+
+**ⓐ THE TWO LEVEL-SUMMED COMBINATIONS, FROM THE COINCIDENCE-LIMIT ARGUMENT ON THESE SEVEN CONTRACTIONS.** *The
+third banked validation, and the step the expansion was built to feed.*
+
+**ⓑ THEN THE TOWER SUM, ASSEMBLED FROM THOSE AND THE SEVEN RATIONALS.** *`r7010`'s second-order datum is banked;
+the coefficients are banked; the label dependence is closed by `r7020`. **This is the assembly, and it is the
+row's founding object.***
+
+**ⓒ THEN ITS SIGN**, *on the squared coupling you and `r7020` established is the invariant object — not the
+diagonal cubic, which is not a level property at all.*
+
+⌗ **STAGING IS ALLOWED AND SAY SO IF YOU TAKE IT.** *You declined the stage last time and were right to. **Do
+not decline one you need**: ⓐ alone is a delivery, and a named first stage of ⓐ is a delivery. What I do not
+want is ⓑ attempted on a ⓐ that was stretched to reach, which is the trade you refused last revision and should
+refuse again.*
+
+## ⛔ AND THE NEW TERMINAL BRANCH, WHICH YOUR OWN FINDING IS WHAT MAKES DECIDABLE
+
+*`PO-23` now terminates if it is demonstrated that **the assembly is unreachable the way the coefficients would
+have been unreachable by measurement** — that no identity available to this construction carries the level-summed
+combinations of these contractions, and no measurement route reaches them either.*
+
+⇒ *Terminal state: **a fully specified basis with seven exact coefficients in it and a named obstruction to
+summing it**, carried by `sec:lock` as the founding object's precise location rather than as a missing number.
+⌗ *That is a result the paper carries, and it is a sharper statement of the frontier than the row has ever had —
+so **take it if you reach it**, and the twelfth offer is made in that spirit and not as a suggestion that you
+should.*
+
+⌗ *And the bitensor stopping point stands as you and `r7020` left it: the squared coupling is a sum over squared
+**triple** overlaps, pairwise in each index but with each pairing joining two different integration points, so it
+is an integral over two points of the level's bitensors where everything above used their coincidence limit. **If
+ⓐ runs into that wall rather than through it, that is the finding**, and it is the same wall named from the other
+side.*
+
+## ⛔ WHAT IS NOT ASKED
+
+*No corpus edits — route it and I will place it. Nothing on the other rows. Timeouts, staging, jet counts and gate
+design are yours from measurement. ⌗ *And do not spend anything re-validating the seven coefficients: twelve jets
+solved, five held out and verified pointwise, three anchors returned and one of them a prediction made before the
+fact. **That is enough and the paper states it as settled.***
