@@ -3808,3 +3808,51 @@ It cannot be written down here, so I am saying it as *"the order is not reached"
 ⛔ **No corpus edit — routed**, including the closing paragraph that keeps the rank and the size apart: ⓶ speaks to it and it is yours to move. ⛔ Nothing on the other rows.
 
 ⌗ *`r7008`, 29 checks, rc = 0, **no floats at all** — a derived reduction, a closed-form curvature, exact Taylor coefficients, an exact Fock-space computation, and rational residues throughout.*
+
+---
+
+## ⚑ `r7010` — **THE INTERACTING STATE SUPPLIES THE SECOND-ORDER DATUM AND THE RANK CLOSES AT THIS LEVEL. ⛔ AND YOUR HAZARD IN ⓵ IS REAL: "ONE SUM" WAS MY SENTENCE AND I WITHDRAW IT.**
+
+Answers your `r7009` order. ⓵'s scope first, because it decides the revision — and it decides it the way you suspected.
+
+### ⓵ The hazard is real, and provably so
+
+> On a **traceless** three-by-three matrix the two algebraic quartic structures are identically proportional: `tr h⁴ = ½(tr h²)²`, **exactly**.
+
+The control confirms tracelessness is what does it — restore a trace and the difference is non-zero, vanishing again exactly when the trace does — and in Misner variables both are isotropic (`6(β₊²+β₋²)` and `18(β₊²+β₋²)²`), which is *why* `r7008`'s quartic came out carrying a single number.
+
+⇒ ***So the frame-constant level fixes exactly ONE linear combination of the quartic's two algebraic coefficients. The overlap integrals give the higher levels' kinematics; their vertices need the covariant quartic's coefficient table or a reduction per level.*** **"It needs the higher levels' overlap integrals and nothing else" was my sentence in `r7008`, and it was optimistic.** Per your ⓸, ⓷ instead.
+
+### ⓶ And the sign is not the tower's
+
+The criterion is exact and carries no level label **in form**: the shift is positive iff `μ² > g²/2c₄`. But at this level's own vertex numbers that ratio is exactly `200/63` — which is where `r7008`'s threshold came from.
+
+⇒ **the two integers are built from this level's `c₄` and `g²` and move with them.** Every level has `μ² = m² − 1 ≥ 8 > 200/63`, so a definite-signed back-reaction follows **if** `g²/2c₄` stays below `8` as the level rises — and that is exactly what ⓵'s hazard leaves unknown. *The form of the criterion is the result; the tower's sign is not.*
+
+### ⛭⛭ ⓷ And the interacting state is constructible here — and it does supply the datum
+
+* **perturbatively:** the **cubic's** first-order correction to the field variance is **exactly zero** by parity (it reaches only odd states where the variance reaches even ones), and the **quartic's** is `−2λ₄`, linear in the coupling and vanishing with it ⇒ ***the interacting ground state's variance differs from the free one at first order in the coupling, which is precisely the datum the reduction lacked***;
+* **numerically:** the truncated two-mode Hamiltonian's lowest eigenvalue tracks `2λ₄ − λ₃²` at three couplings, the residual falling by `3.63` and `3.79` per halving against the predicted `4`; and the state's own variance reads `0.4906` against the predicted `0.4900`, differing from the free `0.5` by more than twice the discrepancy — **so the shift is resolved, not inferred**;
+* **and the bridge to the geometry is computed rather than asserted:** in physical units the correction is `−2c₄ℏ²/(a⁴μ⁴)`, and the second-order density it carries falls as the **sixth** power of the scale factor ⇒ ***the genuine second-order source's power is determined by the computation rather than chosen.***
+
+### ⛭⛭ And then the rank closes
+
+The source enters every one of the five realizable invariants' second-order values where the iterated deformation carries none of it — and **the rank is two either way.** The reason is your own gradient theorem from `r7006`:
+
+> across all five invariants the source's contribution is exactly **−2 times the first-order pattern** — the same direction in invariant space — so **it adds a function and not a direction.**
+
+⇒ ***THE LOWER BOUND `r7004` GAVE AND `r7006` SCOPED IS ATTAINED: the second-order value rank at this level is an EQUALITY, and no bound from above is missing.*** **That is the second half of your strike condition, met at one level.**
+
+⚠ **Scope in the same sentence:** the equality is at the frame-constant level, where the vertices are exact and the state is finite-dimensional; and the numerical state is the perturbative (metastable) one — a cubic potential is unbounded below, so the diagonalisation is meaningful exactly where it agrees with perturbation theory, which is what the three-coupling residual establishes.
+
+### What remains, and on the strike condition
+
+**The first half is missing and I am naming it rather than estimating it:** the tower-wide rational multiple is *not* one sum — it is the covariant quartic's coefficient table, or a reduction per level. That is my `r7008` sentence being corrected, not a new ground.
+
+⌗ *And on the condition itself, which you said is yours: it looks right to me and I am not arguing with it. Only its first half is a larger object than my own sentence implied.*
+
+### What I did not do
+
+⛔ **No corpus edit — routed**, including the second-order paragraph that ⓷ now speaks to. ⛔ No next-level reduction: ⓵ says why, and ⓸ said to take ⓷ instead. ⛔ Nothing on the other rows.
+
+⌗ *`r7010`, 19 checks, rc = 0; exact except one convergence measurement, reported at three couplings against an exactly derived prediction rather than against a threshold.*
