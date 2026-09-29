@@ -26,38 +26,41 @@ one: a list that grows whenever something worthwhile appears is a cadence again.
 | **④** | **Every instrument's exit conditions distinguish its own findings**, so a reader who trusts an exit code learns the right one. | ✔ *done — `PO-67`* |
 | **⑤** | **A receipt whose verdict differs between trees that agree on everything it reads is detected and named**, at the moment of the run. | ✔ *done — `PO-68`, and the finding is a contradiction rather than a count* |
 | **⑥** | **Every stated limit of the layer is written at the site where it acts**, not left implied by an exclusion in a table. | ✔ *done — and it is the layer's own habit rather than a rule imposed on it* |
-| **⑦** | **No receipt carries an unexplained red.** | ⛭ ***ARMED — the instrument now keeps what a failing receipt said; waiting on the first recurrence*** |
-| **⑧** | **No receipt carries a red whose remedy is known and unapplied.** | ⛔ ***OPEN — `P14_the_constituent_count…`, one order away*** |
+| **⑦** | **No receipt carries an unexplained red.** | ⛔ ***OPEN — `Q1`, ten recorded suite timeouts, and one instrument still silent on a timeout*** |
+| **⑧** | **No receipt carries a red whose remedy is known and unapplied.** | ✔ ***DONE r7019 — two instances found and discharged, the class swept on the runner's own readings*** |
 
-**⛭ ⑦ IS ARMED, AND THE CHANGE THAT ARMED IT WAS NOT THE CHANGE THIS DOCUMENT ASKED FOR.** *`Q1`'s verdict is
-**proved** not to come from the tree — the same commit, two lines, one red and one green — the index has been
-audited and misses nothing that can move it, the concurrency does not reproduce it, the per-CPU dispatch is
-refuted bit-identically, and the build-B pattern is refuted by two further runner records at one thread.
-**What remained was that no failing run had ever recorded why it exited 1.*** ⌗ *The order named the stderr
-tail; **the corpus's own check failures print to STDOUT and exit with an empty stderr**, so that change would
-have kept nothing for exactly the receipt it was for. Both streams are kept now, with every failure line and a
-bounded tail, in the job log because the log directory does not survive the runner, through one definition
-shared by both instruments so they cannot drift.*
+**✔ ⑧ IS DONE, AND IT IS DONE ON THE INSTRUMENT THAT COULD SEE THE CLASS RATHER THAN THE ONE THAT WAS TO
+HAND.** *`P14_the_constituent_count…` is declared at 900 s. **The rule the other entries use would not have
+declared it** — 308 s alone times the suite's measured 1.7 contention spread is 524 s, inside the cap — so the
+runner was read instead: 33 readings across 165 job logs, 28 passes from 214 to 584 s and **five over the 600 s
+cap**, giving this file its own spread of at least 1.9 and measured rather than explained. ⌗ *And the first
+screen, built on the read index's traced times, **could not have caught it**, because `P14`'s traced time is
+well under what the runner measures — **a screen built on the figure that hid the defect is not a sweep for
+it**.*
 
-⇒ ***So ⑦ closes on the next recurrence either way***: *a named failing check, or a timeout traceback, or —
-if it recurs and says neither — **a red not reachable from any tree this corpus controls, written at the
-receipt as a stated limit, which is the second exit and a finish.***
+**⛭ AND THE SWEEP FOUND A SECOND INSTANCE ONE LEVEL UP.** *`C59` is declared, and its number **sits below its
+own rule's product**: its entry predates the 1.7 rule, its worst runner reading is 94 per cent of its budget,
+and 33 of its 96 readings are above five sixths of it. **Re-measured at 1155 s alone and re-declared at 2100 s
+on the rule and nothing else.** ⇒ *That is the undeclared-margin class one level up: a budget that holds today
+and reports over-time on the first slower runner.* ⌗ *The global cap is untouched, and both new allowances
+together add at most 600 s to a critical path whose worst observed wall is 2961 s against a 4500 s job.*
 
-**⛔ ⑧ IS OWED, AND IT IS THE ITEM THIS LIST WAS MISSING.** *The seat that owns the layer was asked to test the
-list against its own bar — why the layer would **not be finished** without an item — and it returned one,
-naming a debt of its own: `P14_the_constituent_count…` runs at 420–575 s against a 600 s cap, went over once
-in the seven scoped runs whose logs show it, **and was routed at `r6993` with its remedy already stated — a
-declared budget, measured — and never declared.*** ⇒ ***With ⑦ closed the layer would read finished while that
-receipt goes red on every slow runner, the carry carries it, a fast runner clears it, and nothing on this list
-would be open for it.*** ⌗ *Its discharge is known, so by `STANDING ORDER r7013` it is an **order** and not a
-row: one measurement and one line.*
+**⌗ AND THE CLASS IS CLOSED, CHECKED RATHER THAN ASSERTED.** *Every red routed to that seat with a remedy
+stated was read back: one belongs to another seat, one was routed as an observation with no remedy stated, and
+one is already applied. **None is left unapplied.***
 
-**⌗ AND THE CLOSURE IS ARGUED RATHER THAN ASSUMED.** *Four further candidates were tested against the bar and
-rejected with reasons: the read index's expiry is a recurring duty that **fails loudly** and names its own
-remedy, which is a finished design; the carry ledger's entries for dead branches are read by nothing; pull-
-request runs not writing the ledger is by design, a PR's scope being asked again on every event; and the suite
-runner keeping no output on a timeout is worth having and not blocking, a timeout already being named by
-receipt.*
+**⛔ ⑦ IS OPEN AND ITS BLOCKER HAS MOVED, WHICH THE SWEEP IS WHAT FOUND.** *The two sweep instruments now keep
+what a failing receipt said — both streams, because the corpus's own check failures print to stdout and exit
+with an empty stderr, so the stderr tail alone would have kept nothing for exactly the receipt it was for. ⇒
+**But the same logs show `Q1` over the suite's cap in ten runs, where every failure previously on the record
+was an exit code and never a timeout — and the suite runner keeps nothing on a timeout.*** ⌗ *So ⑦'s
+instrument is armed in two places and silent in the third, and the third is where ten recorded reds now sit.
+**Two of the ten had no long co-runner at all**, so the first suspect does not cover them; that is a count, and
+a count is not a cause.*
+
+⇒ ***⑦ still closes either way***: *a named failing check, a timeout traceback, or — if it recurs and says
+neither — a red not reachable from any tree this corpus controls, written at the receipt as a stated limit,
+which is the second exit and a finish.*
 
 **⌗ AND THE SAME IS OWED BY ANY LANE THAT RUNS LONG.** *This is the first completion criterion in the corpus
 and it should not be the last; a lane that cannot write one has not yet worked out what it is for.*
@@ -262,7 +265,7 @@ corpus in `PO13_WORKING_STATE.md`.*
 
 <!-- GRAIN-CURRENCY:BEGIN -->
 
-## ⌗⌗⌗ CURRENCY — **GENERATED** by `scripts/regen_grain_currency.py`, baseline r2417, register front r7017
+## ⌗⌗⌗ CURRENCY — **GENERATED** by `scripts/regen_grain_currency.py`, baseline r2417, register front r7019
 
 > ⚠ **THE BODY BELOW STOPS AT THE BASELINE. This head is the list of what has moved since, and it is REGENERATED rather than written** — *because these documents go stale every ~20 revisions by construction, and paying that by hand is a debt that recurs rather than a defect that closes.*
 >
