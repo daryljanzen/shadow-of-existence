@@ -206,8 +206,10 @@ print(f"      *The monopole `sw*sw` is {KILL['sw*sw'][1]:.0%} of the oscillation
       f"{DROP['sw*sw'] / KILL['sw*sw'][1]:.2f}x its weight; the Doppler autocorrelation is "
       f"{KILL['dp*dp'][1]:.0%} of it and carries it at {DROP['dp*dp'] / KILL['dp*dp'][1]:.2f}x.*")
 print(f"      ⚠ *AND THE EXCEPTION IS NAMED RATHER THAN DROPPED: `dp*isw` carries a Doppler factor and sits at "
-      f"{DROP['dp*isw'] / KILL['dp*isw'][1]:+.2f}x, BELOW the non-Doppler terms -- so this is \"the two "
-      f"highest-leverage terms are Doppler\", NOT \"every Doppler term leads\".*")
+      f"{DROP['dp*isw'] / KILL['dp*isw'][1]:+.2f}x -- NEGATIVE -- so this is \"the two "
+      f"highest-leverage terms are Doppler\", NOT \"every Doppler term leads\"; and `isw*isw` at "
+      f"{min(r for r, n in LEV if 'dp' not in n):+.2f}x "
+      f"sits lower still, so the ordering is not Doppler-versus-not.*")
 print('    ⌗ ** SO ⓶ IS A NULL ON "ONE TERM" AND A NAMING ON "WHICH SECTOR": the shared step is a property '
       'of the sum, and within the sum the two highest-leverage terms both carry a Doppler factor. **')
 print('      ⚠ *Not claimed: that the Doppler PRODUCES the shared step -- leverage is not authorship, and the '
