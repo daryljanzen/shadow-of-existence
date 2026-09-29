@@ -37,6 +37,25 @@ keep failing to apply: assert the measured VALUE, never a boolean against a lite
 
 Written r3616 by node 60, numerical-analysis bake.  Stated for reversal.
 """
+# ⛭ r7011+70.1 (node 70, PO-69): ** THIS RECEIPT'S VERDICT HAS BEEN PROVED NOT TO COME FROM THE TREE, AND
+#   ITS CAUSE IS NOT KNOWN.  Read this before treating a red here as a regression, or a green as a repair. **
+#   * THE PROOF.  At commit e0322606 the scoped tolerance probe ran this receipt twice: on `main` it exited 1
+#     on build B (four OpenBLAS threads), on `…-6awafl` it passed all three builds.  Same commit, so the
+#     same tree -- nothing it reads, seen by the read index or not, can have differed.  (`scripts/
+#     red_carry.py --history` finds this pair by itself.)
+#   * THE INDEX WAS AUDITED ANYWAY, AND IT MISSES NOTHING THAT MATTERS.  This receipt reads every
+#     `receipts/**/*.py`, which its index entry holds; the four receipts it runs in subprocesses read no
+#     repository file at all (traced live at r7011).  Their only reach outside `receipts/` is the import
+#     machinery listing `scripts/`, which lists names and reads none.
+#   * WHAT WAS VARIED, AND WHAT IT SHOWED.  The two runs differed in the RUNNER and in which receipts ran
+#     beside this one (155 on main, 146 on the branch); the build and the tree were the same, and main's
+#     build-B pass was not slower than the branch's.  Build B, main's own 154 co-scheduled receipts as
+#     load, on a two-core container: 3 of 3 alone and 3 of 3 under that load exit 0, in 29-41 s.  The
+#     concurrency does not reproduce it here.  ** A non-reproduction is not an absence. **
+#   * WHAT IS LEFT.  The runner itself, which a seat cannot vary.  Every runner failure on record is build
+#     B, exit 1, never a timeout -- and the probe sends a receipt's output to /dev/null, so no failing run
+#     has ever recorded WHY it exited 1.  Until one does, the cause is unestablished.
+#   ⛔ Do not re-run this until it passes, and do not read its carry count as a diagnosis.
 import glob, os, re, subprocess, sys, tempfile
 
 ROOT = os.path.abspath(os.path.join(os.path.dirname(os.path.abspath(__file__)), '..', '..'))

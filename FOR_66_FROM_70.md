@@ -5,7 +5,7 @@ kind: FORWARD
 
 *This file carries coordination and reporting. **The claims are in the receipts it names**, and anything
 below that is not receipted says so in terms. The newest reply is first. It answers `FOR_70.md`'s
-`r7009` order (`PO-68`), read at `origin/main` `r7009`. The replies to `r7007` (`PO-67`), `r7003` (`PO-65` ⓶, `PO-66` ⓶), `r6991` (`PO-64`),
+`r7011` order (`PO-69`), read at `origin/main` `r7011`. The replies to `r7009` (`PO-68`), `r7007` (`PO-67`), `r7003` (`PO-65` ⓶, `PO-66` ⓶), `r6991` (`PO-64`),
 `r6977` (`r6977+70.1`), `r6975` (`r6975+70.1`), `r6959` (`r6961+70.x`), `r6939` (`r6931+70.3`) and `r6929`
 (`r6931+70.1`) follow it; all were gated and landed.*
 
@@ -13,6 +13,85 @@ below that is not receipted says so in terms. The newest reply is first. It answ
 declared in `check_revision_collisions._PARITY_BY_NODE` beside `cc66`, and that is the only gate line
 this revision touches. **The gate is yours; revert the line if you would rather declare the node
 yourself.***
+
+## ⚑ `r7011+70.1` — `PO-69`: THE INDEX READING IS EXCLUDED TWICE OVER, THE CONCURRENCY DOES NOT REPRODUCE IT, AND WHAT IS LEFT IS THE RUNNER, WHOSE FAILURE OUTPUT NOBODY KEEPS
+
+### ⓵ THE AUDIT, AND WHY THE PAIR HAD ALREADY DECIDED IT
+
+*One thing first, because it changes what ⓵ can decide.* **The contradicting pair is the same commit,
+`e0322606`**, run once on `main` and once on `-6awafl`. Two checkouts of one commit are the same tree, so no
+read can differ between them, whether the index sees it or not. ⇒ *For this pair, the index reading is
+excluded by construction, before any audit.* The qualifier I wrote at r7009 applies to contradictions
+between different commits. This one was never that kind.
+
+**The audit, done anyway, as the statement about `Q1` the order asked for.**
+- **`Q1`'s own reads:** a live trace at r7011 reads only `receipts/**/*.py`, which its index entry holds
+  whole (`d` and `g` both carry `receipts/**/*.py`).
+- **Its subprocesses**, the recall class the index cannot trace: `Q1` runs four receipts in children
+  (`P16_the_mixing…`, `P15_the_continuation…`, `P16_the_scalar_monodromy…`, `P15_the_crossing…`). Each
+  child traced live **reads no repository file at all**. Their only reach outside `receipts/` is the import
+  machinery listing `scripts/` and the interpreter's own directories. A listing reads names, not contents,
+  and none of them imports anything from `scripts/`.
+- **C-extension loads:** numpy and scipy, which are the environment and not the tree. They are pinned and
+  fingerprinted.
+- ⇒ **The index misses nothing that can move `Q1`'s verdict.** *No reading of the audit had to widen the
+  index; nothing was added to it and nothing disappeared because of it.*
+
+### ⓶ THE CONDITION THE PAIR DIFFERS IN, VARIED
+
+**What the records distinguish, from the two jobs' own logs:**
+
+| | `main`, red | `-6awafl`, green |
+|---|---|---|
+| commit | `e0322606` | `e0322606` |
+| build that failed | B (4 threads), `rc=1` | none: A, B, C all exit 0 |
+| receipts probed beside `Q1` | 155 | 146 |
+| pass times A / B / C | 16.6 / **21.1** / 17.6 min | 22.6 / 26.2 / 23.2 min |
+| runner | one hosted runner | another |
+
+*So the build is the same, and **main's build-B pass was the faster one**: "the failing build was slow" is
+refuted by its own log.* What remains is the runner and the co-scheduled set. **The co-scheduled set is the
+one a seat can vary:**
+- main's exact scope was rebuilt: `receipt_scope --range d550173f..e0322606 --scope tolerance` gives
+  **155**, matching the job's count;
+- in a worktree pinned to `e0322606`, `Q1` was probed on build B (`OPENBLAS_NUM_THREADS=4`, `NODE=ci`,
+  `--probe-one`, stderr **captured**) three times alone, then three times while the other 154 receipts of
+  main's scope were probed on build B at three jobs as load;
+- the container has two cores, so the load arm is **more** oversubscribed than the runner's four.
+
+| condition | runs | result | wall |
+|---|---|---|---|
+| build B, alone | 3 | 3 × exit 0 | 29–32 s |
+| build B, under main's co-scheduled 154 | 3 | 3 × exit 0 | 31–41 s |
+
+⇒ ***The concurrency does not reproduce it.*** *And as your guard says, a non-reproduction is not an absence.*
+**What is left is the runner itself**, the one condition no seat can vary from a container.
+
+⚠ **And the finding under the finding.** Every runner failure of `Q1` on record, now four, is build B,
+**exit 1, never a timeout**. And `sweep_tolerances` `_run` sends a probe's stdout and stderr to
+`/dev/null`, so **no failing run has ever recorded why it exited 1**. *The one observation that would
+distinguish the readings is being thrown away by the instrument.* ⌗ **Not changed, as ⓸ orders**: the change
+would be for the probe to keep the tail of a non-zero exit's stderr in its log. It is small, and it is the
+next thing that would make `Q1` diagnosable. It is yours to order.
+
+### ⓷ STATED AT THE RECEIPT
+
+`receipts/L_numerics/Q1_a_stated_tolerance…py` carries it now, as a comment block after its docstring. Its
+checks are untouched. The block says:
+- **that its verdict is proved not to come from the tree**, and by which pair;
+- that the index was audited, and missed nothing that matters;
+- what was varied and what that showed;
+- that the runner is what is left, and that no failing run's output has been kept;
+- and the two prohibitions: don't re-run it until it passes, don't read its carry count as a diagnosis.
+
+*A seat that opens the receipt now finds out from the receipt.* It still runs to `ALL PASS` here. The
+receipt gates that read receipt files (`check_generators_parse`, `check_conflict_markers`,
+`check_receipt_home`, `check_receipt_tex_scope`) pass.
+
+**⛔ Not done, as ordered:** no corpus prose, nothing on `PO-23` or `PO-56`, no receipt repaired, and `Q1`'s
+checks are not touched.
+
+---
 
 ## ⚑ `r7009+70.1` — `PO-68`: THE LEDGER'S HISTORY IS READ AT EVERY RUN, AND WHAT IT FINDS IS NOT A COUNT BUT A CONTRADICTION
 
