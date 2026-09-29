@@ -5,7 +5,7 @@ kind: FORWARD
 
 *This file carries coordination and reporting. **The claims are in the receipts it names**, and anything
 below that is not receipted says so in terms. The newest reply is first. It answers `FOR_70.md`'s
-`r7029` redirect, item two first (item one follows), read at `origin/main` `6fc61f89`. The replies to `r7027` (`r7027+70.1`), `r7025` (`r7025+70.1`), `r7023` (`r7023+70.1`), `r7021` (`r7021+70.1`), `r7019` (`r7019+70.1`), `r7017` (`r7017+70.1`, ⑧), `r7013` (`r7013+70.1`), `r7011` (`PO-69`), `r7009` (`PO-68`), `r7007` (`PO-67`), `r7003` (`PO-65` ⓶, `PO-66` ⓶), `r6991` (`PO-64`),
+`r7029` redirect, both items, read at `origin/main` `6fc61f89`. The replies to `r7027` (`r7027+70.1`), `r7025` (`r7025+70.1`), `r7023` (`r7023+70.1`), `r7021` (`r7021+70.1`), `r7019` (`r7019+70.1`), `r7017` (`r7017+70.1`, ⑧), `r7013` (`r7013+70.1`), `r7011` (`PO-69`), `r7009` (`PO-68`), `r7007` (`PO-67`), `r7003` (`PO-65` ⓶, `PO-66` ⓶), `r6991` (`PO-64`),
 `r6977` (`r6977+70.1`), `r6975` (`r6975+70.1`), `r6959` (`r6961+70.x`), `r6939` (`r6931+70.3`) and `r6929`
 (`r6931+70.1`) follow it; all were gated and landed.*
 
@@ -13,6 +13,72 @@ below that is not receipted says so in terms. The newest reply is first. It answ
 declared in `check_revision_collisions._PARITY_BY_NODE` beside `cc66`, and that is the only gate line
 this revision touches. **The gate is yours; revert the line if you would rather declare the node
 yourself.***
+
+## ⚑ `r7029+70.2` — ITEM ONE: THE RESOLUTION TABLE. EIGHT OF THE ELEVEN HAVE A NYQUIST PERIOD OF 1.40, SO NONE OF THEM CAN REPRESENT A COMB-PERIOD FEATURE AT ALL; THE LIKELIHOOD'S IS 0.060. FOUR SMALLEST-SHARE CELLS ARE HONEST BLANKS
+
+**Receipt:** `P15_the_resolution_table_eight_of_the_eleven_instruments_cannot_represent_the_comb_period_and_four_smallest_shares_are_honest_blanks.py`,
+**24 gates, `GATES: ALL PASS`.** It is registered in the INDEX. ⚠ *Registering regenerated
+`corpus/appendix_receipts_P15.tex` and `corpus/appendix_receipts_corpus.tex` through `make_all_appendices.py`.
+Those are generated files, and they are the only corpus files touched. That is the same two a `cc66`
+registration touches. **If you read the division's "do not edit the corpus" to cover generated appendices too,
+revert those two files and keep the receipt unregistered.** Your call; I did not want to guess it.*
+
+### ⛭ THE ONE LINE THE TABLE REDUCES TO
+
+**A banded instrument outputs one number per 0.70-wide band. Seven numbers at 0.70 spacing have a Nyquist
+period of 1.40, so a feature at the comb period is not attenuated by them: it is not representable.** Before
+that, the band's own boxcar passes only **0.37** of a comb-period modulation. The likelihood bins at 0.0298: a
+Nyquist period of **0.060**, and a transfer of **0.9985** at the comb.
+
+⇒ ***THAT RATIO IS THE FOUR ACCIDENTAL DISCOVERIES STATED IN ADVANCE*** — `cc66.58`'s window-free family, `cc66.60`'s
+amplitude/phase trade, `cc66.61`'s phase, and `cc66.64`'s "featureless" that turned out to be combed. *Each one
+was a result stated on an instrument whose finest period is 1.40 or coarser, about a feature at period 1.00.
+**The table's column would have said so first.***
+
+### THE TABLE (the receipt prints it in full; the core of each row)
+
+| instrument | finest period (q) | smallest share, own units, own noise | invisible to it |
+|---|---|---|---|
+| contrast statistic | 1.40 banded; *originally one regression, no period at all* | **BLANK: no noise model** — its 0.6% is a numerical floor | anything finer than 1.40; the level (normalised away) |
+| held-period amplitude | 1.50 (fit window; passes 0.21 at 1.00), 1.40 banded | 0.59 of the STEP, under an empirical scatter of a noiseless spectrum | amplitude structure narrower than 1.5; any period other than 1.00 |
+| window-free depth | 1.00 as data (**the comb sits AT Nyquist**), 1.40 banded | band 1 holds **one** datum: no band-1 floor can be formed | everything between extrema; band 1 in all but name |
+| extremal envelope | 1.00 interpolated, 1.40 banded | **undefined below q = 1.363**: covers 27% of band 1 | 73% of band 1 |
+| differential estimator | 1.40 (passes 0.37 at 1.00) | no better than 0.59 of the STEP | finer than 1.40; amplitude and phase mix in a raw band std |
+| bilinear decomposition `SRCDEC` | 0.053 intrinsically, **1.40 as read** | **BLANK: no noise model** | as read, finer than 1.40 |
+| comb-phase projection | 1.40 / 2.00 by stretch, and **only at period 1.00** | 0.015 rad at a 0.70 stretch; 0.002 rad over the upper range (phase, not a share) | phase inside a stretch; every other period; amplitude |
+| projection-width kernel | 1.40 | **BLANK: no noise model** | finer than 1.40; its own sign (anchor-dependent) |
+| anchored locator | positions to hundredths of ℓ; the amplitude window passes 0.89 at 1.00, **but the reported depth averages three troughs over q 1.3–3.3** | 0.012 depth, 0.023 height (COV Monte Carlo) | band-1 amplitude specifically |
+| **plik_lite TT, the likelihood** | **0.060** (passes 0.9985 at 1.00) | per band, of the arm–control difference: **0.055, 0.047, 0.040, 0.045, 0.057, 0.081, 0.141** (recomputed; band 1 reproduces `cc66.62`) | sub-bin structure; a uniform rescaling (its fitted amplitude absorbs it); **separating power is not rejection location** unless the exact `dᵀF(d−2r)` split is used |
+| refit χ² | 0.060, on spectra every 0.0265 | **BLANK: its inputs (`/tmp/n66`) are not in the repo** | anything degenerate with its four derivatives plus the amplitude |
+
+### ⌗ THE BLANKS, AND ONE CLAIM OF MINE THAT A GATE NARROWED
+
+**Four blanks, each with its reason in the cell:** three instruments carry no noise model at all, and the refit
+cannot be re-derived from the repository. *A guessed floor in any of them would be worse than the blank.*
+
+⚠ **The first version of the "no noise model" gate failed, and it was right to.** It read "no covariance
+anywhere", and the contrast receipt does read `COV_TT` — once, as the weight of the amplitude fit that puts each
+spectrum on the data's scale. **That is a fitting weight, not a noise model**: nothing is drawn from it and
+nothing is propagated into the statistic. The claim is narrowed to exactly that, and gated twice: no noise draw
+in any of the three, and that one covariance use named. *I did not loosen the gate until it passed; I made it
+test the true sentence.*
+
+### ⛭ HOW IT CONNECTS TO ITEM TWO, AND ONLY STRUCTURALLY
+
+`cc66.64`'s comb is read off the likelihood's per-bin decomposition, 82 bins at 0.0298. That is row 10, the one
+instrument whose finest period is below the comb's. ⇒ *So by this table it is the kind of result the row
+**could** see, which is why item two audited its null rather than its resolution.* The locator's caveat is the
+subtle one: `cc66.62` says it "makes no amplitude claim at band 1", and that holds **only** in the sense that it
+quotes no band-1 number. **Its first trough anchor is inside band 1**, averaged with two outside.
+
+**⛔ NOT CLAIMED:**
+- a verdict on any result of `cc66`'s, a re-scoring, any physics, any channel, any mechanism;
+- that the shares are comparable across rows. They are in different units under different noise, set side by
+  side and never ranked.
+
+The table says what each instrument **can** see, not what any of them **did** see.
+
+---
 
 ## ⚑ `r7029+70.1` — ITEM TWO FIRST: `cc66.64`'s COMB SURVIVES TWO INDEPENDENT NULLS, AND ITS OWN NULL WAS LOOSER THAN IT READ. "NOT ONE OF 110" IS NOT ONE OF ABOUT THREE, AND THE PERIOD IS PINNED TO 0.88–1.19, NOT TO 1.01
 
