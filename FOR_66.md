@@ -4897,3 +4897,91 @@ Receipt `P15_no_statistic_this_construction_can_build_resolves_the_two_channels_
 Receipt `P15_the_likelihood_sees_the_step_and_separates_the_two_channels_so_the_demonstration_does_not_cover_it.py`, **19 gates, `GATES: ALL PASS`**. Pre-registration and working script in separate earlier commits. INDEX row, `PO13_WORKING_STATE`, appendices regenerated. **No corpus edits.**
 
 ⌗ **And the one thing I will not decide, since it is the clause again:** *the row reopens, but **on what**. ⓵ⓒ says the likelihood can tell the two channels apart at band 1 — that is **resolving power**, not authorship. ⇒ *The measurement now available and never made is the one that uses it: **score each channel against the step in the likelihood's own metric**, which is a different question from every share this row has quoted, because it is the first instrument that can actually carry it. **That is a redirect and it is yours.***
+
+# ⛭⛭⛭ cc66.63 — `r7023` FILLED: ⓶ FIRST, AND IT IS **NEITHER** OF YOUR TWO ROWS — BAND 1 CARRIES **UNDER ONE PER CENT** OF THE LIKELIHOOD'S EXCESS AND **CHANGES SIGN** UNDER SHAPE ABSORPTION; **THAT FORCES A CORRECTION TO `cc66.62` WHICH IS MINE**; AND IN THE METRIC THE STEP DOES LIVE IN, **ALL THREE CHANNELS DEPART THE ARM'S WAY**
+
+*`r7023` filled. ⌗ **Path provenance:** hierarchy path throughout, plus `plik_lite` TT through the corpus's own `chi2_of_spectrum`. **Nothing solved, nothing run.** No corpus edits.*
+
+⚑ **Pre-registration as its own commit**: `7c583dd6` before `1b8dbdea`. *And it takes your distinction as **the file's vocabulary** rather than acknowledging it — a table fixing which term means which number, and a commitment that **no quantity divides a separating power by a significance**. ⌗ It also states that ⓶ is asked **first** though numbered second, so the file's structure carries your point instead of a sentence.*
+
+---
+
+## ⛔⛔ ⓶ FIRST. AND THE ANSWER IS NEITHER OF THE TWO YOU TABLED
+
+| $n$ free coefficients in $\ln\ell$ | total excess | **b1** | b2 | b3 | b4 | b5 | b6 | b7 |
+|---|---|---|---|---|---|---|---|---|
+| $1$ — *the single amplitude the likelihood fits* | $322.0$ | $\mathbf{+2.6}$ | $12.3$ | $26.0$ | $67.5$ | $77.7$ | $61.2$ | $39.8$ |
+| $2$ | $317.6$ | $\mathbf{-0.5}$ | $16.4$ | $22.8$ | $75.2$ | $79.0$ | $64.1$ | $41.5$ |
+| $3$ | $327.4$ | $\mathbf{+0.3}$ | $16.2$ | $20.7$ | $72.9$ | $74.3$ | $66.4$ | $38.8$ |
+| $4$ | $314.8$ | $\mathbf{+6.6}$ | $12.4$ | $25.1$ | $69.4$ | $81.4$ | $63.6$ | $41.7$ |
+
+*Band 1 contributes $2.6$ of the $287$ the seven bands sum to — $\mathbf{0.9}$ **per cent** — against a total excess of $322$ over all covered bins. **And it changes sign** as smooth global shape is absorbed, where bands 2–7 hold to within a few per cent.*
+
+⇒ *** SO BAND 1'S DEPARTURE IS **NOT** A DISTINCT FEATURE OF THE RESIDUAL, AND IT IS **NOT** THE SHAPE REJECTION READ LOCALLY EITHER — BECAUSE THE SHAPE REJECTION IS BARELY PRESENT THERE AT ALL. *** *It lives at bands 4–7, which carry $86$ per cent of the per-band excess.*
+
+⌗ *Your ⓶ assumed the departure was one of those two things. It is a third: **the likelihood rejects this arm decisively and does so somewhere else entirely.***
+
+---
+
+## ⛔⛔ AND THAT FORCES A CORRECTION TO `cc66.62`. IT IS MINE AND IT IS THE CLASS YOU NAMED
+
+*`cc66.62` ⓵ⓑ was headed* **"THE STEP IS A LOCALISED CONTRIBUTION TO ITS EXCESS"** *and then reported band 1's* ***separating power*** *— $36.4\sigma$ against a trend predicting $53$–$71$.*
+
+⇒ ** THE NUMBER WAS RIGHT AND THE LABEL WAS WRONG. **
+
+| | |
+|---|---|
+| what I measured | band 1's **separating power** — how well the data could tell the two models apart there |
+| what I called it | a contribution to the likelihood's **excess** — $\chi^2(\text{arm}) - \chi^2(\text{control})$ |
+| what the excess at band 1 actually is | $\mathbf{0.9}$ **per cent**, sign-unstable |
+
+⛔ ***The likelihood does see a band-1 departure, in its power to tell models apart. It does not carry a band-1 excess. Those are different sentences and I ran them together*** — *one revision after you drew the distinction, and one before it bit. You put it in front of the order; it belonged in front of my last one.*
+
+---
+
+## ⛭⛭⛭ ⓵ AND IN THE METRIC THE STEP ACTUALLY LIVES IN, ALL THREE CHANNELS DEPART THE ARM'S WAY
+
+*Given ⓶, the step is a feature of the **separating power** and not of the residual excess, so that is where each channel is scored. Every number is a significance; every share is a ratio of two of them.*
+
+| | $v\sim q$ | $v\sim q^2$ | $\ln v\sim q$ | $\ln v\sim q^2$ | share of the arm's | its own significance |
+|---|---|---|---|---|---|---|
+| **window** | $-0.493$ | $-0.448$ | $-0.584$ | $-0.514$ | $\mathbf{1.31}$ | $2.7$–$3.6\sigma$ |
+| **term mix** | $-0.325$ | $-0.244$ | $-0.459$ | $-0.336$ | $0.86$ | $2.2$–$2.4\sigma$ |
+| **JOINT** | $-0.206$ | $-0.100$ | $-0.343$ | $-0.184$ | $0.51$ | $0.6$–$1.9\sigma$ |
+| *the ARM* | $-0.373$ | $-0.311$ | $-0.489$ | $-0.394$ | $1.00$ | $2.5$–$3.2\sigma$ |
+
+⇒ *** THE FIRST TIME THIS ROW HAS HAD CANDIDATES THAT DEPART THE SAME WAY AS THE ARM ON AN INSTRUMENT THAT CAN CARRY THE QUESTION. ***
+
+⚠ **And the window channel reverses its verdict between instruments.** *It went the **wrong** way on the differential estimator; here it goes the right way and **over-delivers** at $1.31$.* ⌗ *I am reporting that as a difference between instruments rather than smoothing it into a story — it is the same channel and the two readings disagree.*
+
+**AND THE CANCELLATION YOU FLAGGED IS MEASURED, NOT READ OFF THE $12.82$-AGAINST-$18.64$:**
+
+| rule | predicts | residual |
+|---|---|---|
+| product | $-0.677$ | $2.8$ of the joint's own |
+| sum | $-0.851$ | $3.9$ |
+| quadrature | $-0.613$ | $2.4$ |
+
+*against a measured $\mathbf{-0.208}$.* ⇒ ** NO RULE FITS: the realised pair delivers $34$ per cent of the closest. ** *The two knobs partly cancel here as they did on the differential estimator — so that is now twice, on two instruments, and it is beginning to look like a property rather than a coincidence.*
+
+---
+
+## ⚠⚠ AND WHAT ⓶ DOES TO ⓵, WHICH IS WHY I RAN IT FIRST
+
+*Those shares are shares of a **separating-power** departure. And ⓶ says that feature carries **one per cent of the likelihood's excess**.*
+
+⇒ *** SO THIS IS NOT YET "A CANDIDATE PRODUCES THE STEP" IN THE SENSE `PO-56`'s STRONG CLAUSE NEEDS. *** *It is a real match, in a real metric, and it is **the wrong metric for the clause**.* ⌗ *I would rather say that in the same breath as the shares than have them quoted without it — which is the whole lesson of the correction above.*
+
+## ⛔ ⓷, AND THE DISCIPLINE
+
+*No new candidate. No mechanism. `cc66.61`'s floor is not revisited — it is landed as a statement about the banded family and that is finished work. No basis or aggregation chosen. No corpus edits.*
+
+* ⚠ ***A LABEL IS A CLAIM.*** *`cc66.62`'s number was right and its heading named a different quantity. That is a correction, not a rewording.*
+* ⚠ ***WHEN ONE ITEM DECIDES WHAT ANOTHER MEANS, RUN IT FIRST AND SAY SO IN THE FILE'S STRUCTURE.***
+* ⚠ ***A DEPARTURE THAT CHANGES SIGN AS NUISANCE FREEDOM IS ADDED IS NOT A FEATURE OF THE RESIDUAL*** — *and the control is the rate against the other bands, because more freedom always shrinks a residual.*
+
+## WHAT IS ON THE BRANCH
+
+Receipt `P15_the_band_one_departure_is_not_in_the_likelihoods_excess_and_all_three_channels_match_it_in_separating_power.py`, **21 gates, `GATES: ALL PASS`**. Pre-registration and working script in separate earlier commits. INDEX row, `PO13_WORKING_STATE`, appendices regenerated. **No corpus edits.**
+
+⌗ **And the thing for you to place, which I think is now the row's actual position:** *the step is a feature of what the data could **distinguish**, not of what it **rejects**. ⇒ *`PO-56`'s strong clause asks whether a quantity this construction fixes **produces the step** — and on the evidence the step does not appear in the likelihood's excess at all.* ⛔ ***So either the clause's "step" means the separating-power feature, in which case ⓵ says three candidates match it and the clause is close to being decided; or it means something in the residual, in which case the residual has almost nothing there and the clause may be unanswerable as posed.*** *Which of those the clause means is yours, and it is the same narrowing you took from me at `r7021`.*
