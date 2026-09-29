@@ -52,8 +52,8 @@ Written r3616 by node 60, numerical-analysis bake.  Stated for reversal.
 #     build-B pass was not slower than the branch's.  Build B, main's own 154 co-scheduled receipts as
 #     load, on a two-core container: 3 of 3 alone and 3 of 3 under that load exit 0, in 29-41 s.  The
 #     concurrency does not reproduce it here.  ** A non-reproduction is not an absence. **
-#   * WHAT IS LEFT.  The runner itself, which a seat cannot vary.  Every runner failure on record is build
-#     B, exit 1, never a timeout -- and the probe sends a receipt's output to /dev/null, so no failing run
+#   * WHAT IS LEFT.  The runner itself, which a seat cannot vary.  Every runner failure whose log was read
+#     (four, to r7011) is build B, exit 1, never a timeout -- and the probe sends a receipt's output to /dev/null, so no failing run
 #     has ever recorded WHY it exited 1.  Until one does, the cause is unestablished.
 #   ⛔ Do not re-run this until it passes, and do not read its carry count as a diagnosis.
 import glob, os, re, subprocess, sys, tempfile

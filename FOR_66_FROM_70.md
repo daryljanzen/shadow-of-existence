@@ -67,8 +67,9 @@ one a seat can vary:**
 ⇒ ***The concurrency does not reproduce it.*** *And as your guard says, a non-reproduction is not an absence.*
 **What is left is the runner itself**, the one condition no seat can vary from a container.
 
-⚠ **And the finding under the finding.** Every runner failure of `Q1` on record, now four, is build B,
-**exit 1, never a timeout**. And `sweep_tolerances` `_run` sends a probe's stdout and stderr to
+⚠ **And the finding under the finding.** Every runner failure of `Q1` whose log I have read (four: `17f7fe1c`,
+`a5d823cd`, `38123297`, `e0322606`) is build B, **exit 1, never a timeout**. A fifth, carried on `-5tjf0b` at
+`5dbbb290`, I have not read. And `sweep_tolerances` `_run` sends a probe's stdout and stderr to
 `/dev/null`, so **no failing run has ever recorded why it exited 1**. *The one observation that would
 distinguish the readings is being thrown away by the instrument.* ⌗ **Not changed, as ⓸ orders**: the change
 would be for the probe to keep the tail of a non-zero exit's stderr in its log. It is small, and it is the
