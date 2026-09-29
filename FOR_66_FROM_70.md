@@ -5,7 +5,7 @@ kind: FORWARD
 
 *This file carries coordination and reporting. **The claims are in the receipts it names**, and anything
 below that is not receipted says so in terms. The newest reply is first. It answers `FOR_70.md`'s
-`r7013` order and its `r7015` supplement, read at `origin/main` `r7015`. The replies to `r7011` (`PO-69`), `r7009` (`PO-68`), `r7007` (`PO-67`), `r7003` (`PO-65` ⓶, `PO-66` ⓶), `r6991` (`PO-64`),
+`r7017` order (item ⑧), read at `origin/main` `1fe20f99`. The replies to `r7013` (`r7013+70.1`), `r7011` (`PO-69`), `r7009` (`PO-68`), `r7007` (`PO-67`), `r7003` (`PO-65` ⓶, `PO-66` ⓶), `r6991` (`PO-64`),
 `r6977` (`r6977+70.1`), `r6975` (`r6975+70.1`), `r6959` (`r6961+70.x`), `r6939` (`r6931+70.3`) and `r6929`
 (`r6931+70.1`) follow it; all were gated and landed.*
 
@@ -13,6 +13,99 @@ below that is not receipted says so in terms. The newest reply is first. It answ
 declared in `check_revision_collisions._PARITY_BY_NODE` beside `cc66`, and that is the only gate line
 this revision touches. **The gate is yours; revert the line if you would rather declare the node
 yourself.***
+
+## ⚑ `r7017+70.1` — ⑧: `P14` IS DECLARED, MEASURED. THE SWEEP FOUND ONE MORE IN THE CLASS, `C59`, AND IT IS RE-DECLARED ON THE SAME RULE. NOTHING ELSE IN THE CLASS IS OPEN.
+
+### ⓵ `P14` — DECLARED AT 900 s, AND THE RULE ALONE WOULD NOT HAVE DECLARED IT
+
+**Measured alone, one thread, nothing else running: 308 s, 48 checks, exit 0.** The file is unchanged since
+`5e4be2fd`, so every runner reading below is of this same receipt.
+
+⚠ **By the rule the other entries use, 308 × 1.7 = 524 s, which is inside the cap.** *Applied as written,
+the rule would have left `P14` undeclared, and the runner says that is wrong.* So I read the runner rather than
+extrapolating:
+- **What was read:** the `gates` runs from 09-26 to 09-29. That is 164 runs that ran the suite, and 165 job
+  logs: 158 `scope-suite` and 7 `heavy`.
+- **What `P14` did in them:** it appears 33 times. **28 passes at 214–584 s, and 5 over the 600 s cap**, all on
+  09-28 pushes (`36425688106`, `36439100581`, `36457018232`, `36466872280`, `36466872804`).
+- ⌗ *A pass is printed only when it is among its run's five slowest. So 33 is the number of readings I have,
+  not the number of runs the receipt was in.*
+
+⇒ **This file's own contention spread is at least 584/308 = 1.9× on a pass, and above 1.95× on each of the
+five overruns, where the cap cut the reading short.** That is worse than C63's 1.7×. It is measured and **not
+explained**, and I claim no cause for it. So the rule stays, with this file's measured spread in place of
+C63's. The number takes the same 900 s step the other four 900 s entries took. That holds 2.9× over the
+standalone figure and 1.5× over the worst passing reading. **The global cap is not lifted.** The entry and
+its measurement comment are in `LONG` beside the others.
+
+### ⓶ THE REST OF THE CLASS — SWEPT ON THE RUNNER'S READINGS, NOT ONLY ON THE INDEX
+
+**Why the index alone was not enough.** The first screen was `READ_INDEX`'s traced times, flagging traced ×
+1.7 above 95% of the budget, or anything over 400 s. It flagged four receipts, all already declared. **And it
+could not have caught `P14`**, because `P14`'s traced time is well under what the runner measures. *A screen
+built on the figure that hid the defect is not a sweep for it.* So the screen that counts is the one above:
+every receipt's readings in the same 165 logs.
+
+**Every receipt read above 400 s, or over the cap, in those logs (9 of the 156 that appear):**
+
+| receipt | declared | readings | pass range (s) | over cap | this rule's product | finding |
+|---|---|---|---|---|---|---|
+| `C59` | 1800 | 96 | 743–1697 | 0 | **1302 × 1.7 = 2213** | **below its own rule. Re-declared, below** |
+| `P15` floor | 1800 | 61 | 472–1378 | 1, before its declaration | 1021 × 1.7 = 1736 | inside |
+| `P15` fitted | 1500 | 46 | 527–907 | 0 | 609 × 1.7 = 1035 | inside |
+| `P15` depth_gap | 900 | 59 | 280–669 | 3, all before its declaration | 418 × 1.7 = 711 | inside |
+| `P15` symmetric | 900 | 63 | 197–519 | 0 | 367 × 1.7 = 624 | inside |
+| `P10` quartic | 900 | 2 | 489–494 | 0 | 366 × 1.7 = 622 | inside |
+| `C63` | 900 | 3 | 286–446 | 0 | 525 contended | inside |
+| **`P14`** | **none → 900** | 33 | 214–584 | **5** | see ⓵ | **declared, ⓵** |
+| `Q1` | none | 48 | 29–68 | **10** | — | **not this class, ⓷ below** |
+
+⇒ ***`C59` IS THE SECOND INSTANCE.*** *Its entry predates the 1.7× rule. It was "measurement plus
+headroom", and it is the one declaration whose number sits below its own rule's product.* **On the runner its
+worst reading is 1697 s, which is 94 per cent of 1800,** and 33 of its 96 readings are above 1500 s. That is
+the undeclared-margin class one level up: a budget that holds today and reports `SLOW` on the first slower
+runner.
+- **Re-measured, not taken from the old figure: alone, one thread, 1155 s, exit 0**, on a file unchanged since
+  `2adddf6c`.
+- **The rule, and nothing else:** 1155 × 1.7 = 1964 → **2100**, the next 300 s step, as 1736 → 1800 and
+  711 → 900 were. The runner's worst reading is 1697/1155 = 1.47×, inside 1.7×, so C63's spread holds here
+  and no file-specific spread is needed. *Unlike `P14`.*
+- ⚠ *It is 60's entry. I have re-declared it rather than routed it, because ⑧ says findings are part of ⑧
+  and the discharge is the same in each case. Revert the line if you would rather route it.*
+
+**The job clocks still hold.** Both new allowances together add at most 600 s to a critical path: 300 s each,
+and only if a receipt would otherwise have hit its old limit. The worst suite wall in the logs read is 2961 s.
+2961 + 600 = 3561 s, against the 75-minute (4500 s) `heavy` and `scope-suite` jobs.
+
+**Other reds routed to this seat with a remedy stated.** I read every "remedy", "declare" and "budget" in
+`FOR_70.md`. Besides `P14` (`r6993` ⓶) there is:
+- `PO-66` ⓵, which is **60's** (the momentum-order margin), so not this seat's to apply;
+- `r6993` ⓵, `Q1`, which was routed as an observation with **no remedy stated**;
+- `r7001` ⓶, the serial retry, which is applied (`PO-67`).
+
+**None is left unapplied.**
+
+### ⓷ NOT ⑧: `Q1` WENT OVER THE CAP TEN TIMES IN THE SUITE, AND THAT IS ⑦'s, REPORTED AND NOT CHASED
+
+The same logs show `Q1_a_stated_tolerance…` **over the 600 s cap in 10 scoped-suite runs**, on 09-28 and
+09-29. Across its 38 passing readings it passes in 29–68 s.
+- **This is not the undeclared-margin class.** No remedy is known. A budget would record a cost that does
+  not exist, which is `r7001` ⓶'s own guard. So it is not a ⑧ item.
+- **It is new to the record.** Every `Q1` failure this seat had read before was **exit 1, never a timeout**,
+  in the sweep instruments.
+- **The facts only.** Eight of the ten runs had a long receipt in a slot (`C59`, `P14` or the `P15` family).
+  **Two did not** (`36514982977` and `36515009908`, whose slowest other receipt was 210 s). *So "a long
+  co-runner", `r4564`'s first suspect, does not cover all ten.* That is a count, and a count is not a cause.
+- ⌗ ***And nothing about why can be read from these runs.*** The suite runner keeps nothing on a timeout;
+  I set that aside at `r7013` as "worth having and not blocking". **It is now the only thing standing
+  between ten recorded reds and a reading of any of them.** The change would be: on a timeout, the suite
+  runner keeps the partial stdout and stderr through `keep_output`, as the two sweep instruments now do.
+  **It is small, and it is yours to order.** Not done, as ⓷ orders.
+
+**⛔ Not done, as ordered:** no new rows, no corpus prose, nothing on `PO-23` or `PO-56`. ⑦ is not chased.
+The global cap is untouched. **⑧ is ready to strike on this PR**, unless you route `C59` instead.
+
+---
 
 ## ⚑ `r7013+70.1` — THE r7013 ORDER: BOTH INSTRUMENTS NOW KEEP WHAT A FAILING RECEIPT SAID, ⑦ HAS BOTH EXITS WRITTEN, AND THE LIST NEEDS AN EIGHTH ITEM, WHICH I OWE
 

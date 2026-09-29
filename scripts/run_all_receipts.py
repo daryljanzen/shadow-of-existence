@@ -129,7 +129,18 @@ SLOW = (
 #   The global cap stays where it is; this buys the one receipt that needs it the room to finish,
 #   and the number is the measurement plus headroom rather than a round figure chosen to feel safe.
 LONG = {
-    'C59_the_control_reproduces_camb_and_the_height_defect_was_k_truncation.py': 1800,  # measured 1302s
+    # ⛭ RE-DECLARED r7017+70.1 (70), 1800 -> 2100, on ⑧'s sweep of the class.  This entry was
+    # "measurement plus headroom" and predates the 1.7x rule every entry below uses.  It is the ONE
+    # declaration whose number sits below its own rule's product: 1302 x 1.7 = 2213.
+    #   ** MEASURED AGAIN, ALONE, ONE THREAD, NOTHING ELSE RUNNING: 1155s, exit 0. **  The file is
+    #   unchanged since `2adddf6c`.  The `gates` logs from 09-26 to 09-29 give 96 readings, and they
+    #   reach it on the runner: 743-1697s, median 1326s, and 33 of the 96 above 1500s.  ** 1697s is
+    #   94 per cent of 1800 **, which is the undeclared-margin class one level up: a budget that holds
+    #   today and reports SLOW on the first slower runner.
+    #   ⌗ *The rule, and nothing else: 1155 x 1.7 = 1964 -> 2100, the next 300s step, as 1736 -> 1800
+    #     and 711 -> 900 were.  The runner's own worst reading, 1697/1155 = 1.47x, sits inside the
+    #     1.7x, so C63's spread holds for this file and no file-specific spread is needed.*
+    'C59_the_control_reproduces_camb_and_the_height_defect_was_k_truncation.py': 2100,  # measured 1302s; re-measured 1155s alone, one thread (r7017+70.1)
     # ⛭ ADDED r4564 (60).  `C63` drives the two-arm instrument as a SUBPROCESS ten times -- eight for
     # the source-term matrix (both arms x baseline/NOISW/DPSRC/SWSRC) and two for the damping
     # exclusion -- and every one of the ten is load-bearing: the claim is that NO single term carries
