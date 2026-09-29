@@ -4713,3 +4713,99 @@ $$\operatorname{std}(o_a-o_c) \;=\; \tfrac{A_c}{\sqrt2}\sqrt{\,r^2 - 2r\cos\Delt
 Receipt `P15_the_surviving_step_is_amplitude_and_not_phase_and_the_candidate_shares_do_not_survive_the_change_of_denominator.py`, **23 gates, `GATES: ALL PASS`** in half a second. Pre-registration and working script in separate earlier commits. INDEX row, `PO13_WORKING_STATE`, appendices regenerated. **No corpus edits.**
 
 ⌗ **For you to place if you want it:** ⓶ says every share the row has quoted was measured against the shared nine tenths. *If `PO-56`'s terminal clause is to be stated on the differential estimator, as you said in the register, then **the candidate list has never actually been scored against it** — ⓶ is the first scoring, and on it the list is not four partial accounts but one channel of the wrong sign and two that do not resolve.*
+
+# ⛭⛭⛭ cc66.61 — `r7019` FILLED: **NO STATISTIC THIS CONSTRUCTION CAN BUILD RESOLVES THE TWO CHANNELS** — WHICH IS YOUR TERMINAL CONDITION, ARRIVING WITH A NUMBER; THE **PHASE STEP DIES ON A MATCHED-WIDTH CONTROL** SO THE AMPLITUDE VERDICT IS COMPLETE; AND THE CANCELLATION IS **AGGREGATION-DEPENDENT**, SO ⓷ INHERITS ⓵'s ANSWER
+
+*`r7019` filled. ⌗ **Path provenance:** hierarchy path throughout — `r6941_fine_{lcdm,cr}`, `r6959_nswap_lcdm`, `r6975_mix_lcdm`, `r6983_joint_lcdm`, `r6959_eta_cr`'s band edges. **Nothing solved, nothing run.** No corpus edits.*
+
+⚑ **Pre-registration as its own commit**: `ac2a5025` before `5dd68e0b`. *It defines the resolving ratio before computing it, names four routes to a smaller scatter and commits to testing each, **names in advance the one it expects most from**, and names ⓵'s own abuse hazard before meeting it. **Both of those last two mattered: the named favourite failed, and the hazard fired.***
+
+---
+
+## ⛭⛭⛭ ⓵ THE FLOOR DOES NOT MOVE, AND I THINK THAT IS THE ANSWER YOU WANTED RATHER THAN THE ONE YOU HOPED FOR
+
+**THE QUANTITY, DEFINED BEFORE IT WAS COMPUTED.** *A channel is decided when its band-1 departure exceeds twice its own bands 2–7 scatter. So the **minimum resolvable share** is $f_{\min} = 2\sigma/\lvert d_{\rm arm}\rvert$ — the smallest fraction of the step a channel could carry and still be decided.*
+
+| route | $\lvert d_{\rm arm}\rvert$ | $\sigma$ | $f_{\min}$ |
+|---|---|---|---|
+| raw, 7 bands, per common $q$ | $0.4525$ | $0.1473$ | $0.65$ |
+| held-period, 7 bands, per common $q$ | $0.2201$ | $0.0696$ | $0.63$ |
+| raw / held, per common $\ell$ | $0.4522$ / $0.2199$ | $0.1473$ / $0.0695$ | $0.65$ / $0.63$ |
+| raw / held, **8 bands out to $q = 6.45$** | $0.4404$ / $0.2440$ | $0.1369$ / $0.0724$ | $0.62$ / $\mathbf{0.59}$ |
+| held, 12 finer bands, same range | $0.2224$ | $0.0835$ | $0.75$ |
+
+⇒ *** THE TERM MIX CARRIES $0.35$ OF THE STEP AND THE REALISED PAIR $0.03$, AGAINST A FLOOR OF $0.59$. THEY CANNOT BE RESOLVED BY ANY STATISTIC THIS CONSTRUCTION CAN BUILD. ***
+
+### ⌗ AND THE REASON IS THE ONE THING I NAMED IN ADVANCE AND GOT WRONG
+
+*I wrote that the held-period aggregation was the candidate I expected most from, and said so **before** measuring so that it would count either way.*
+
+⇒ ** IT LOWERS $\sigma$ BY $2.12\times$ — EXACTLY THE REDUCTION PREDICTED — AND LOWERS THE **SIGNAL** BY $2.06\times$ AT THE SAME TIME. ** *$f_{\min}$ moves from $0.65$ to $0.63$.* ⌗ ***A reduction in scatter is only a gain if the signal does not fall with it, and here it falls by the same factor.*** *That is the mechanism I predicted and the consequence I did not.*
+
+### ⛔ AND THE ABUSE HAZARD FIRED BEFORE ANY POWER CLAIM COULD BE MADE
+
+*I pre-registered that a power calculation invites choosing the aggregation with the smallest scatter and quoting a departure measured on another. It is worse than that:*
+
+| channel | raw | held | |
+|---|---|---|---|
+| window | $+1.1843$ | $+1.1843$ | same sign |
+| term mix | $-0.1564$ | $+0.0781$ | ⛔ **SIGN FLIPS** |
+| JOINT | $-0.0139$ | $+0.1824$ | ⛔ **SIGN FLIPS** |
+
+⇒ ** SO MORE POWER WOULD NOT DECIDE THEM. THEIR DEPARTURES ARE AGGREGATION-DEPENDENT AND NOT ESTABLISHED AT ALL. ** *Only the window channel keeps its sign on all eight readings.*
+
+⌗ **Which is the shape of your terminal exit and I want to state it precisely rather than claim it:** *a candidate list whose members carry shares below the floor of every statistic this construction can build, **and whose measured departures do not even hold their sign across two legitimate aggregations of the same statistic**. ⛔ *That is a demonstration about the instrument. It is **not** a demonstration that the channels do not produce the step — and I am keeping the weaker word again.*
+
+---
+
+## ⛭⛭⛭ ⓶ THE PHASE IS RESOLVED WHERE IT IS NOT NEEDED AND NOT WHERE IT IS
+
+*Your prescription, executed: the comb phase projected over a long stretch rather than fitted locally.*
+
+| | $\Delta = \varphi_a - \varphi_c$ |
+|---|---|
+| upper range, $4$ disjoint **full-period** stretches | $+0.007368 \pm 0.000974$ rad — $+0.42°$, a $\mathbf{7.6\sigma}$ determination |
+| the whole upper range as **one** stretch of $4.2$ periods | $+0.007541$ rad — *agreeing* |
+| **band 1**, which is $0.70$ of a period | $-0.002440$ rad |
+
+*On that yardstick band 1 is $5.03$ scatters out, and for about a minute this looked like your second row — the estimator not measuring what `cc66.60` assumed.*
+
+### ⛔ BUT THAT YARDSTICK IS WRONG, AND THE CONTROL IS WHAT THE COMPARISON NEEDED
+
+*Band 1 is $0.70$ of a period. **A projection over a non-integer number of periods leaks the baseline into $C$ and $S$**, so a narrow stretch is both noisier **and** biased. The only licensed comparison is against stretches of the same width.*
+
+| matched-width control, $6$ stretches of $0.70$ across the upper range | scatter $0.007264$ rad — **$3.7\times$ the full-period scatter** |
+|---|---|
+
+⇒ *** BAND 1 SITS $1.52$ SCATTERS OUT, NOT $5.03$. THE PHASE STEP IS NOT RESOLVED, AND `cc66.60`'s AMPLITUDE VERDICT STANDS AS THE COMPLETE ONE RATHER THAN THE SIGN-ONLY ONE. ***
+
+⌗ *The method reaches a $13$ per cent measurement over five periods and **cannot bring it to the one band that needs it**, because that band is narrower than the period the method needs.* ⇒ ***That is the same structural limit in a third disguise*** — *`cc66.58` met it on the window-free family, `cc66.60` on the amplitude/phase trade-off, and it is here on the phase.* **Band 1 is narrower than every period this construction measures with, and that is now three revisions' worth of evidence that it is a property of the band and not of the method.**
+
+---
+
+## ⛔⛔ ⓷ AND THE CANCELLATION RETURNS NO WORD, WHICH IS THE THIRD ROW I TABLED
+
+*The joint's departure over its own scatter, four bases each:*
+
+| aggregation | four bases | consistent with zero? |
+|---|---|---|
+| raw | $0.24$, $0.37$, $0.54$, $0.24$ | ✔ **on all four** |
+| held-period | $4.16$, $4.20$, $4.52$, $4.98$ | ⛔ **on none** |
+
+⇒ ** THE CANCELLATION IS NEITHER EXACT NOR APPROXIMATE — IT IS AGGREGATION-DEPENDENT. ** *So ⓷ **inherits ⓵'s answer rather than choosing a word**, which is the possibility the pre-registration named before measuring, and the constraint-versus-coincidence question cannot be settled here.* ⌗ *What it would be cancelling between is large either way — the two singles sum to $+0.895$ raw and $+1.149$ held — so this is not two small numbers agreeing to vanish.*
+
+---
+
+## ⛔ ⓸, AND THE DISCIPLINE
+
+*No envelope, basis, abscissa or aggregation chosen. No new candidate. No mechanism. No corpus edits.*
+
+* ⚠ ***A REDUCTION IN SCATTER IS ONLY A GAIN IF THE SIGNAL DOES NOT FALL WITH IT.*** *New, and it is why ⓵ is a floor rather than a to-do list.*
+* ⚠ ***A NARROW-WINDOW MEASUREMENT NEEDS A MATCHED-WIDTH CONTROL, NOT THE WIDE-WINDOW ERROR BAR.*** *It turned $5.03\sigma$ into $1.52\sigma$, and the difference is the whole of ⓶.*
+* ⚠ ***"UNRESOLVABLE" IS A CLAIM ABOUT THE INSTRUMENT AND MUST BE PROVED OVER ITS WHOLE REACH*** — *every route banked, not the one to hand.*
+
+## WHAT IS ON THE BRANCH
+
+Receipt `P15_no_statistic_this_construction_can_build_resolves_the_two_channels_and_the_phase_step_dies_on_a_matched_width_control.py`, **22 gates, `GATES: ALL PASS`**. Pre-registration and working script in separate earlier commits. INDEX row, `PO13_WORKING_STATE`, appendices regenerated. **No corpus edits.**
+
+⌗ **For you to place, and it is the one thing I would not decide myself:** *⓵ gives `PO-56` its terminal condition **as a measurement** — a floor of $0.59$ against carried shares of $0.35$ and $0.03$. ⛔ But the honest form of the clause is narrower than "no quantity this construction fixes produces the step": what is demonstrated is that **no statistic this construction can build could tell whether they do**. ⇒ *Those are different sentences and only the second is earned. If `PO-56` is to exit on this, it should exit on the second.*
