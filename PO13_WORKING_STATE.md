@@ -5679,3 +5679,64 @@ JUDGED ON A TREND ACROSS BANDS 2–7, WHERE THE EXCESS IS VERY NEARLY FEATURELES
 structure, because the part carrying the structure is the band `cc66.54` showed it cannot measure a
 candidate in.** ⌗ *That is `cc66.54`'s own finding seen from the candidate side, and it is why four
 mismatches look like four failures rather than one.*
+
+## `cc66.57` (`r7009`) — THE STEP IS THE EXCESS'S OWN, IT SITS AT THE SECOND ACOUSTIC PEAK, AND NONE OF THE FOUR CANDIDATES PRODUCES IT
+
+*Path: **hierarchy** throughout. Banks `r6941_fine_*`, `r6915_pairs_*`, `r6897_fields`, `r6959_eta_cr`;
+receipt `P15_the_step_is_the_excesss_own_and_it_sits_at_the_second_acoustic_peak_and_none_of_the_four_produces_it.py`,
+**12 gates**; pre-registration `r7009_directions/PREDICTION.md`, **written before any of ⓵ was computed**,
+on the order's explicit sequencing. ⛔ Nothing SOLVED, nothing RUN.*
+
+**⛭⛭ THE SEQUENCING WAS HONOURED, AND IT IS CHECKED RATHER THAN CLAIMED.** The pre-registration says in
+terms that nothing in ⓵ had been computed when it was written, names the step's definition before use —
+*band 1's excess over the mean of bands 2–7* — and **tables first the outcome that withdraws `cc66.56`'s
+⓷**, which `r7009` had already landed in two sections. ⌗ *The three previous revisions each had to record
+that their outcome tables followed their measurements; this one does not.*
+
+**⛭⛭⛭ ⓵ THE STEP IS THE EXCESS'S AND NOT THE ESTIMATOR'S.**
+
+| reading | band 1 | step ratio |
+|---|---|---|
+| running arithmetic mean | $+0.0215$ | $0.333$ |
+| running median | $+0.0407$ | $0.391$ |
+| local quadratic (Savitzky–Golay) — *a third envelope, different in kind* | $+0.0405$ | $0.633$ |
+| **peak-to-trough depth per cycle — no envelope at all** | $-0.0017$ | $-0.025$ |
+
+⇒ **Never near one on any of them.** *And the envelope-free reading is the sharpest: band 1's excess is
+indistinguishable from zero against a bands 2–7 mean of $+0.0654$; it carries only one acoustic cycle per
+band, so it is coarse, and that is stated.*
+
+**⌷ AND THE EDGE HAZARD IS RULED OUT THE RIGHT WAY ROUND, which is what makes it ruled out.** Band 1's
+envelope comes within $0.018$ in $q$ — about five multipoles — of truncating. But moving the band's lower
+edge **up**, away from the hazard, makes it read $+0.0215 \to +0.0239 \to +0.0282 \to +0.0361$:
+**higher, where a truncation artefact would have to make it read lower.**
+
+⚠ *Its **size** is reading-dependent, so the step is quoted as **"band 1 between none and two thirds of the
+rest"**, not as a number.* ⛔ *No envelope is chosen — a third was added, which is what the order asked.*
+
+**⛭⛭⛭ ⓶ AND IT SITS AT THE SECOND ACOUSTIC PEAK.** The half-rise point of the excess, in sliding windows
+at three widths, is $q = 1.789,\,1.788,\,1.805$ — **$1.794 \pm 0.008$** — against the second acoustic peak
+at $q = 1.7775$ (control) and $1.7760$ (arm): ***a match to $0.9$ per cent***, where the nearest other
+scale the construction fixes — the monopole's second turning point at $1.915$ — is **seven** per cent away
+and $q=2$ is twelve. ⌗ The plateaux are $0.026$ below and $0.053$ above on all three widths: **a factor of
+$2.0$, reached within about a tenth of a comb period — sharper than the narrowest window that found it.**
+
+⇒ *** THE EXCESS IS ONE SIZE IN THE FIRST ACOUSTIC CYCLE AND TWICE THAT IN EVERY CYCLE ABOVE IT. ***
+⛔ **Not claimed: that this is a mechanism.** *A step at a scale is a signature to be explained — which is
+what the pre-registration said would not be claimed.* ⌗ *And the peaks sit at fixed $q$ on both arms, so
+what the step says is that the **first acoustic cycle** differs, not that an arm-specific scale sits there.*
+
+**⛔⛔ ⓷ AND ALL FOUR CANDIDATES CAN BE SCORED ON THE STEP, AND NONE OF THEM PRODUCES IT.**
+
+- the **window weighting** (`cc66.47`) and the **term mix** (`cc66.48/49`): both measured **flat in $q$** —
+  and a flat candidate's step ratio is exactly one, *by construction and without a new number*;
+- the **projection width** (`cc66.52`), kernel-class and reachable at band 1: fitted by a **straight line
+  in $q$ to $2.6$ per cent of its own range** — linear, so no step;
+- the **Doppler**, by the swap route that reaches band 1 (`cc66.56`): $-0.0016$ to $+0.0014$ in sliding
+  half-period windows, with means $-0.0001$ below the step and $-0.0002$ above — **noise at the step's
+  resolution and no transition at all.**
+
+⇒ *** NOT the identifiability floor closing over the list — every one of the four WAS evaluable — but the
+list EXHAUSTED against the right feature, for the first time. *** ⌗ *So the row's question is now: **what
+turns on at the second acoustic peak?** Narrower than the question this sector has asked for six
+revisions, and not a channel.*
