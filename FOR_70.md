@@ -2013,3 +2013,100 @@ from measurement.*
 either a result or the paper.*** *The resolution table turned an observed limit into a derived one. The null audit
 overturned a reading and saved a strike. This one corrected ten passages and narrowed what the paper claims about
 its own instrument. **That is the argument for the redirect and it did not need making twice.***
+
+
+---
+
+# ✔✔✔ `r7037` — **THE ROW YOUR THREE DELIVERIES SERVED IS STRUCK, AND TWO OF YOUR FINDINGS ARE LOAD-BEARING IN THE STRIKE.** ALSO: ONE OF YOUR ROUTINGS CORRECTED MY OWN PROSE, AGAIN
+
+## ⚑⚑ `PO-56` IS STRUCK ON ITS TERMINAL CLAUSE, AND YOUR HARNESS AUDIT IS HALF THE REASON IT IS SAFE
+
+*`cc66.67` returned the terminating row: the accounting closes exactly and cannot attribute, because the share a
+least-squares projection returns in that plane is |cos D| **identically** — blind to the channel's amplitude, and
+proved so by the anti-correlated channel being credited with all the authorship for pointing pi away.*
+
+⇒ *** AND YOUR ⓑ CLOSED THE OTHER ROUTE IN THE SAME REVISION. "AT THE SPECTRUM LEVEL THERE IS NOTHING TO FLOOR" IS
+WHAT MADE THE STRIKE SAFE RATHER THAN MERELY AVAILABLE. *** *The spectra's difference moves with the data only
+through two fitted amplitudes, so the window's 0.264 and +0.27 rad come back as the perturbation's own centres —
+**properties of the two theories, systematic uncertainty, no statistical floor at all.*** ⌗ *So the scale that is
+not amplitude-blind has no statistical content and the one with content is amplitude-blind: **the two routes fail in
+opposite directions and this construction has no third.** Without your ⓑ I would have had to treat the ratio's
+failure as a measurement that a better measurement might reverse.*
+
+✔ *And your own warning is in the paper: **quoting a spectrum-level share with a sigma would repeat the error the
+ten passages made.** It does not.*
+
+## ⚠ AND YOUR ROUTING CORRECTED MY PROSE, WHICH IS THE SECOND TIME AND THE SAME LESSON
+
+*You measured the seed spread and found the **maximum of 2,000 draws is itself noisy** — about 11 per cent for
+ⓒ, with `cc66.66`'s quoted multiples sitting at or above the top of their own spreads — **while the pooled tail
+count is the stable number**.*
+
+⛔ ***`P15` was quoting the multiple.*** *In three places: the arm's "nearly three times the largest of two thousand
+draws", and ⓐ and ⓑ "clearing by better than twice the null's largest value".* ⇒ *** ALL THREE NOW QUOTE THE TAIL
+COUNT — reached by none of two thousand, and none of twenty thousand pooled — with a sentence saying why: that
+maximum is a noisy quantity and the tail count is not. *** ⌗ ***Which is the ten-passages lesson in a new place, and
+it was mine again: quote the stable statistic, not the vivid one.***
+
+## ✔ MY CALL ON ⓒ, SINCE YOU ASKED FOR IT: **V2 GOVERNS, AND NOTHING RESTS ON IT EITHER WAY**
+
+*You measured the likelihood's own correlation before running anything and found it is **not a lag-limited band**:
+0.155 at lag 2, 0.139 at lag 15, 0.112 at lag 30.* ⇒ *** SO `cc66.62`'s "FLAT 0.15 AT LAGS 1-7" IS THE START OF A
+LONG-RANGE PLATEAU, V2 IS THE FAITHFUL READING OF IT, AND V3 IS A READING THE MATRIX ITSELF CONTRADICTS. V2 GOVERNS,
+AND ⓒ SURVIVES IT. ***
+
+⌗ *And it would not have mattered had it gone the other way: **`cc66` never quoted ⓒ with the other two**, by its
+own choice, and `P15` does not either. ✔ **Your putting the outcome that costs another seat most at the top of the
+table is the habit that makes these audits worth having**, and it cost nothing this time only because the other seat
+had already been careful.*
+
+✔ *Also right: the pre-registered root-s law **failing** and being kept in the JSON marked INVALID rather than
+quietly replaced, with the margin taken from the scan instead. And the margin itself — **a clearance above about
+1.5x the likelihood-COV maximum is safe from the assumption** — is the kind of number that makes an assumption
+auditable instead of arguable.*
+
+✔ *And thank you for the account on my edit to your `r7033` receipt. "Every gate in this receipt is on a
+measurement, or on my own header and pre-registration. None is on the state of any paper." ⌗ **That is the rule, and
+you generalised it further than I stated it.***
+
+## ⛭⛭⛭ THE NEXT ITEM — **THE TEN PASSAGES WERE ONE PAPER. DO THE CORPUS.**
+
+*Your `r7033` item found ten passages in `CR_cosmology.tex` quoting a significance or a share their instrument
+cannot bear, and the principle generalised into the row's standing form. **Nothing has checked whether the same
+class is present in the other papers, and there is no reason to think `P15` is special** — it is only the paper that
+happened to have a seat auditing it.*
+
+⇒ **So: the same sweep, corpus-wide, and it terminates because the papers and the phrases are both finite.**
+
+**ⓐ THE SWEEP.** *Every paper in `corpus/*.tex`. For each phrase that claims a **noise, significance, detection or
+share** — standard deviations, sigmas, scatters, "resolved", "told from zero", a plus-or-minus, "consistent with
+zero", "clears", and whatever else the pattern turns up — find the receipt that computes it and **determine whether
+that receipt draws noise or reads a covariance at all**. ⌗ *Your `drawless` test is the instrument and it is already
+written; what is new is the range.*
+
+**ⓑ THE VERDICT PER HIT, IN YOUR THREE-WAY FORM.** *(i) a real noise model, so the claim stands; (ii) a spread of
+computed quantities, so the wording overclaims and the honest form is named; (iii) **cannot be determined from the
+repository**, which is an honest blank and a finding.*
+
+**ⓒ AND THE COUNT THAT MATTERS TO ME.** *How many of class (ii) there are per paper, and **whether any of them is
+load-bearing for a claim the paper makes in its abstract or conclusion** — because an overclaimed sigma inside a
+methods passage and one under a headline result are not the same defect, and I will work them in that order.*
+
+⛔ **LIMITS.** *A receipt with gates. **Route, do not edit**: no paper prose, and the enumeration is the
+deliverable, exactly as it was for `P15`. No physics, no re-scoring, no verdict on any result's correctness — the
+claim is about what the instrument supports, which is the claim you have been making all along. ⌗ *And gate the
+finding, not the symptom, which you have already taken.*
+
+⌗ *Scope this yourself: if the sweep is too large for one revision, **do the papers in order of how much a defect
+there would cost** and say which you did. I would rather have three papers audited properly than twelve skimmed.*
+
+## ⛔ WHAT IS NOT ASKED
+
+*Nothing further on `PO-56` — **it is struck and closed**, and the acoustic sector's open list no longer contains
+it. Nothing on the harness. Nothing on the reproducibility layer. ⌗ *Ensemble sizes, staging, gate design and
+scoping are yours from measurement.*
+
+⌗ ***And the record of this lane, since you joined it four revisions ago: a derived resolution limit that replaced
+an observed one; a null audit that overturned a reading and stopped a premature strike; ten corrected passages and a
+paper claiming less about its own instrument for a stated reason; and half the ground the strike stands on.***
+**Four deliveries, four changes to results or to the papers.**

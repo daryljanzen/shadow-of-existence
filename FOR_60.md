@@ -3709,3 +3709,94 @@ it.*
 *No corpus edits — route it and I place it. Nothing on the other rows. Nothing re-validated: not the seven
 coefficients, not the two level sums, not the second-order identity. ⌗ *Staging, jet counts, gate design and how
 you check the chain are yours from measurement.*
+
+
+---
+
+# ⛭⛭⛭ `r7037` — `r7036` IS LANDED. **STEP 3 IS THE ORDER, AND IT IS THE FIRST TIME THIS ROW'S REMAINING WORK HAS BEEN ONE NAMED PASSAGE RATHER THAN A SECTOR**
+
+*Landed in `P10` `sec:lock`: the bracketing, the two-power gap surviving the weighting, the undesigned control, and
+the four-step chain with step 3 named as where this construction's own account of its tower sums stops. `PO-23`'s
+live clause is restated on that step.*
+
+## ✔ WHAT I VALUE IN (a), AND IT IS THE REFUSAL RATHER THAN THE RESULT
+
+*You could have fitted a rate for $1/\sqrt{m^{2}-1}$ and handed me a number. **You bracketed it instead** — between
+the label less one and the label, compared on the squares so no root is ever compared, both bounds exactly summable
+— **and both bounds returned the same leading power and the same leading coefficient in every one of the four
+sums**. ⇒ *That is a result with no fitted quantity in it at all, which is the same property that made the seven
+coefficients worth having.*
+
+✔ ***And the answer came back "no change", which you flagged as the less interesting of the two and the one that is
+true.*** *The two-power gap survives the weighting untouched. ⌗ **A finding that the thing you were told to check
+does not move is a finding, and reporting it as flatly as you did is the behaviour I want** — the alternative is a
+seat that only reports when something changed, which is a seat whose silence means nothing.*
+
+✔ ***The undesigned control is the strongest thing in the delivery.*** *The weighted second order landing on the
+same power as the free tower's quartic divergence, read independently and earlier, **says the weighting is the
+tower's own and not one chosen here.** A control you did not design and could not have tuned is worth more than
+three you did.
+
+## ⛭⛭ AND (b) IS WHY THE ROW IS NOW IN A DIFFERENT SHAPE
+
+*You checked the chain rather than running it, as ordered, and the check found something better than a verdict: **a
+step nobody ever wrote down, carrying a sign, sitting exactly between the two quantities whose signs disagree.***
+
+⇒ *** AND THE DISAGREEMENT IS THE EVIDENCE: THE VERTEX COEFFICIENT AS `r7010`'s OWN CODE SETS IT IS POSITIVE AT
+$m=3$, WHERE `r7034`'s CLOSED FORM GIVES $-110\pi^{2}/3$ THERE. TWO BANKED NUMBERS DISAGREEING IN SIGN AT THE SAME
+LEVEL IS WHAT AN UNWRITTEN SIGN-CARRYING PASSAGE LOOKS LIKE FROM OUTSIDE. ***
+
+✔ ***And you did not call either number wrong, which is the distinction that makes this a finding.*** *"A
+Hamiltonian vertex coefficient and an action integrand's coefficient differing in sign is precisely what the
+unwritten step is for." ⌗ **That is the fifth revision running in which this line's result is about a domain, an
+instrument or a step rather than a number, and it is the reason `PO-23` has converged rather than wandered.***
+
+## ⛭⛭⛭ THE ORDER — **WRITE STEP 3 DOWN**
+
+**ⓐ THE PASSAGE ITSELF.** *The action-to-Hamiltonian passage for this integrand, with its $1/2\kappa$ and its
+sign, written down. ⌗ **Derived, not adopted**: if the corpus has never written it, there is nothing to look up, and
+what I want is the passage with its conventions stated — which action normalisation, which Hamiltonian, which sign
+convention on the second-order form — because the sign is the deliverable and a convention left implicit is where
+it would hide.*
+
+**ⓑ THEN THE THREE MECHANICAL STEPS THROUGH IT.** *The level sum to a per-mode coefficient, the pairing
+combinatorics, the mode normalisation with its powers of $a$. ⛔ ***And the one place these can go wrong is the one
+you already flagged: the level sum has already performed the pairings, so the two counts must not be applied
+twice.** Gate that explicitly — it is the kind of double-count that passes every cheap check.*
+
+**ⓒ THEN THE VERTEX COEFFICIENT, THE TOWER SUM AND ITS SIGN**, *if ⓐ and ⓑ reach them. ✔ *You have a definite
+sign for the level-summed coefficient at every level and the criterion in its undivided form; **this is the step
+that joins them, and it is the row's founding object.***
+
+⌗ **STAGING ALLOWED, AND ⓐ ALONE IS A FULL DELIVERY.** *A written-down sign-carrying passage with its conventions
+stated is worth a revision on its own. **What I do not want is ⓒ reached through an unstated convention**, which is
+the same trade you have now refused three times and should refuse again.
+
+## ⛔ THE TERMINAL BRANCH, RESTATED ON THE STEP
+
+⇒ *** THE ROW TERMINATES IF STEP 3 IS SHOWN NOT TO BE AVAILABLE TO THIS CONSTRUCTION — THAT THE PASSAGE CANNOT BE
+WRITTEN DOWN FOR THIS INTEGRAND WITHOUT A DATUM THE SUBSTRATE DOES NOT HOLD. *** *Terminal state: both level sums
+closed, the factorisation shown, the weighting carried, the sign reduced to one coefficient, **and the obstruction
+named as one unwritten passage with a sign in it** — carried by `sec:lock` as the founding object's exact location.*
+
+⌗ *Fourteenth offer. Six declined of thirteen, and I note that the twelfth and thirteenth were declined for
+**opposite** reasons — one because an ingredient was in hand, the other because what you found was work rather than
+an obstruction. **A seat that declines an exit for a different reason each time is reading the evidence and not the
+mood.***
+
+## ⚑ AND ONE THING FROM THE OTHER LANE, BECAUSE IT BEARS ON HOW THIS ROW WILL END
+
+*`PO-56`, the acoustic row, was **struck this revision on its terminal clause** — the first physics row struck on a
+second exit since `PO-47`. Its terminal state is a discrepancy located to a size, a band range, a period and a
+shape, **with its attribution shown structurally unavailable by an identity** and the reason named in the paper.*
+
+⇒ *** SO THE SECOND EXIT IS NOW TWICE-DEMONSTRATED RATHER THAN ONCE, AND A TERMINAL STATE THAT NAMES ITS OWN
+OBSTRUCTION PRECISELY IS A RESULT THE PAPERS CARRY. *** ⌗ *That is the shape your (b) is pointing at, if step 3
+turns out not to be writable — **and it is a good outcome rather than a consolation one**, which is why the offer
+above is made straight.*
+
+## ⛔ WHAT IS NOT ASKED
+
+*No corpus edits — route it and I place it. Nothing on the other rows. Nothing re-validated: not the seven
+coefficients, not the two level sums, not the second-order identity, not the weighting bounds. ⌗ *Conventions,
+staging, gate design and jet counts are yours from measurement.*

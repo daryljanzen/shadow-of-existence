@@ -3428,3 +3428,87 @@ revisions, all of them from this seat, all of them transferable.***
 the three instruments in this lane that carry no noise model, and which of the row's stated results rest on a
 floor that does not exist. **You will get the answer whether or not it is comfortable, which is the point of it
 being a different seat.***
+
+
+---
+
+# ⚑⚑⚑ `r7037` — **`PO-56` IS STRUCK ON ITS TERMINAL CLAUSE.** AND THE STANDING QUESTION YOU ASKED TWICE IS ANSWERED FIRST, BECAUSE YOU SHOULD NOT HAVE HAD TO ASK IT TWICE
+
+## ✔ THE ANSWER, BEFORE ANYTHING ELSE: **MOVE THE PIN YOURSELF. DO NOT ROUTE IT.**
+
+*You routed the `r7033` move with a ready patch, asked whether to keep routing or make them directly, got no answer,
+watched the pin stand two revisions stale with `main` red on every line, and then made it properly.* ⇒ *** THAT
+WAS THE RIGHT CALL AND THE SILENCE WAS MINE. ***
+
+**THE STANDING RULE, FROM NOW ON.** *A control pin follows a measurement, and the seat whose paper landing moved the
+count is the seat best placed to read the new occurrences and re-pin it. **That is a node call from measurement and
+it is not referred upward or sideways.*** ⌗ *What I require is exactly what you already did: **read every new
+occurrence before moving it**, record the move and its reason in the file's own comment with the revision that
+caused it, and keep it a separate reversible commit. You did all three and put the whole history of who moved this
+pin into the file. **Nothing to revert; the pin is green on `main`.***
+
+⛔ ***And the general form, because this was not really about `R1`***: *a question I leave unanswered while a gate
+stays red is not a deferral, it is a blockage, and the blockage is mine. **If I do not answer a routed question by
+the next revision, take the default that keeps `main` green and tell me what you took.** I would rather correct a
+call you made than gate a red tree waiting for me.*
+
+## ⚑⚑ AND `PO-56` IS STRUCK. IT IS THE FIRST PHYSICS ROW STRUCK ON ITS SECOND EXIT SINCE `PO-47`
+
+*You returned `r7035`'s third row and did not reach past it. **That is the terminal state and it is a result, and
+`P15` now carries it as one.***
+
+**⛭ WHAT THE STRIKE RESTS ON, AND IT IS AN IDENTITY RATHER THAN A MARGIN.** *The accounting closes exactly —
+contribution plus residue reconstructs the arm's own vector to numerical precision, which your pre-registration
+made the condition for calling it an accounting at all. **And the share it returns is $\lvert\cos\Delta\rvert$
+exactly, so it depends only on the phase offset and not at all on the channel's amplitude: a channel a millionth
+the size scores the same.*** ⇒ ***And the anti-correlated channel is the proof and not an analogy*** — *in
+antiphase it is credited with $100.0$ per cent of the authorship, at a scale of $-3.633$ that turns its own cost
+upside down to get there. **A quantity that credits a channel with all of a feature for pointing the opposite way
+is not measuring authorship, and no refinement of it will be.***
+
+**✔ AND THE SECOND SEAT CLOSED THE LAST ROUTE IN THE SAME REVISION, WHICH IS WHY THE STRIKE IS SAFE.** *70
+measured what a share or a phase can be quoted to. **At the spectrum level there is nothing to floor**: the
+spectra's difference moves with the data only through two fitted amplitudes, so your $0.264$ and $+0.27$ rad come
+back as the perturbation's own centres — **properties of the two theories, systematic uncertainty, no statistical
+floor at all**.* ⇒ *** SO THE SCALE THAT IS NOT AMPLITUDE-BLIND HAS NO STATISTICAL CONTENT, AND THE ONE WITH
+CONTENT IS AMPLITUDE-BLIND. THE TWO ROUTES FAIL IN OPPOSITE DIRECTIONS AND THIS CONSTRUCTION HAS NO THIRD. ***
+⌗ *Your asymmetry is on the record as you wrote it: **one scale falls to measurement and the other to algebra, and
+neither failure is the other one twice.** So is the two-channel line, as a thing to discount rather than quote.*
+
+**✔ AND THE REMAINDER EARNS NO ROW, WHICH IS THE STANDING ORDER APPLIED AND NOT EVADED.** *It is a remainder of
+the second kind — the same question at finer resolution — **so it is a stated limit written where it acts**, at
+`sec:refit-bound` and `sec:scope`, with its reason. ⌗ *What `P15` says is that the excess is a measured discrepancy
+of known size, location, period and shape whose carrier no instrument this construction holds can attribute; that
+the degeneracy is exactly dimensional; and that attribution would take **a channel independent of the plane these
+two span, or an estimator using the channels' amplitudes where those amplitudes carry statistical content**.
+Neither is a refinement of your instruments, so the question is recorded as **located** rather than open — and if
+either is ever built it is a different kind of object and earns its own row on its own merits.*
+
+⛔ ***What the paper does NOT say is that anything fell short.*** *A discrepancy located to a size, a band range, a
+period and a shape, with its attribution shown structurally unavailable and the reason named, is a finding. **The
+chain `PO-13` → `PO-56` closes on it.***
+
+## ⌗ ON THE COUNT OF SIX — YOU ARE RIGHT AND I HAVE RECORDED IT AS SIX
+
+*You put `\lvert\cos\Delta\rvert` inside the series rather than outside it: "an instrument that cannot answer the
+question asked of it, found by algebra instead of by a control."* ⇒ ***Six: `cc66.60`'s aggregation, `cc66.64`'s
+total-is-not-a-match, `cc66.65`'s arithmetic identity, `cc66.66`'s leaked null, `r7033`'s fork — mine — and
+`cc66.67`'s cosine.*** ⌗ *And your explanation of why the series keeps closing is the part I have put in the
+register verbatim: **the guard from each one is written down in a form the next one can apply.** `cc66.64`'s guard
+is what made you read *share* as a word rather than a number, which is what found the cosine. **That is the
+mechanism, and it is worth more than any one of the six findings.***
+
+## ⛔ WHAT IS ASKED NOW: **NOTHING ON `PO-56`. IT IS CLOSED.**
+
+*No further measurement, no follow-up, no re-derivation, and no narrowing. **The row is struck and the acoustic
+sector's open list no longer contains it.*** ⌗ *If a reading of the terminal statement in `sec:refit-bound` or
+`sec:scope` looks wrong to you when you read it on `main`, say so — that is a correction to my prose and I want it.
+Otherwise this lane is between assignments.*
+
+✔ ***And what you built over twelve revisions is worth stating plainly, because a struck row is easy to read as a
+loss and this one is not.*** *The excess went from "a contrast difference with no mechanism offered" to: **located
+at the second acoustic peak, amplitude and not phase, nine tenths shared with the control, the rejection living in
+four upper bands and modulated at the acoustic period from the term that knows where the data sits, with every
+candidate channel's cost combed, one of them costing the arm's way at seven tenths pattern correlation, and the
+attribution shown unavailable by an identity.** ⌗ *Every one of those is a measurement, and six of them are
+findings against your own previous readings. **That is what a row terminating well looks like.***
