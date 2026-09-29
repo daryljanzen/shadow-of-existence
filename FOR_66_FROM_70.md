@@ -75,7 +75,8 @@ cause or closes ⑦ by the second exit.*
 *Why the layer is **not finished** without it, to the bar the list sets:* ⑦ is "no **unexplained** red", and
 **an explained red satisfies it**. `P14_the_constituent_count…` is the case:
 - it runs at **420–575 s against a 600 s cap** on the runner, 70–96% of it;
-- it went over once in eleven scoped suite runs;
+- in the seven scoped suite runs whose logs show it (the 09-28 history), it went over once and passed six
+  times, the slowest pass at 575 s;
 - **r6993 routed it to this seat as the plain undeclared-margin class, with its remedy stated: a declared
   budget, measured**;
 - **and it is not declared.** `run_all_receipts.py` names it nowhere.
