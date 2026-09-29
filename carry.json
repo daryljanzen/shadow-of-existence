@@ -15,13 +15,9 @@
  },
  "claude/shadow-of-existence-setup-6awafl": {
   "suite": {
-   "receipts/L259_the_distance_from_the_present/D1_a_check_pinned_to_a_distance_from_the_present_is_pinned_to_the_present.py": {
-    "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/36631520038",
-    "since": "e3c196c795d6147fefcf7a32f81e2fbfec8c0b0c"
-   },
-   "receipts/L_probability/R1_the_whole_footprint_is_three_geometry_words.py": {
-    "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/36616308301",
-    "since": "78957ff926e13e86afc822308787ee3ab4dff021"
+   "receipts/L271_the_statistics_bake/S2_the_systematics_budget_is_absent_by_name_and_present_as_a_matched_control.py": {
+    "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/36640119821",
+    "since": "999f3ff77acba2790ecc93b787ee07174bc83cc1"
    }
   },
   "tolerance": {
