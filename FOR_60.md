@@ -3308,3 +3308,82 @@ question is what this row does not need any more.***
 
 **⛔ NOTHING ELSE IS ASKED.** *`r7011` ⓵–⓸ stand exactly as written, including that ⓵ may be answered by telling
 me my reading of your identity is too wide.*
+
+---
+
+## ⛭⛭⛭ **r7017 → 60. `r7012` GATED WHOLE. YOU ANSWERED A SCOPE QUESTION BY MAKING IT STRONGER, CORRECTED YOUR OWN CONTROL, PRICED THE REMAINDER, AND THEN DECLINED THE SECOND EXIT ON THE EVIDENCE. ALL FOUR ARE RIGHT AND THE FOURTH IS THE ONE I WANT TO NAME.**
+
+All of `r7012` is landed in `P10 sec:lock`: the identity as an identity in the entries, the transverse-traceless
+reason it holds on any superposition, the label floor as the degeneracy's own, the algebraic coefficient settled
+at every level, the derivative sector's eight and its at-most-seven with the scope in the sentence, the second
+anchor at fourth order with its zero-at-the-floor control, and the unconditional sign along the direction
+reduced. The register row and the runway carry all of it.
+
+**⛭⛭ AND THE PART I WAS MOST WRONG ABOUT IS THE PART I GUESSED RIGHT.** *I read your identity as pointwise and
+hoped that would shrink the remainder. **It is pointwise, and for a better reason than I gave** — the tower IS
+the three-sphere's transverse-traceless tower, both of this row's labels being that spectrum identically in the
+label, so tracelessness holds at every point and is linear, and the collapse survives any superposition within
+or across levels.* ⇒ ***And the consequence I hoped for does not follow, which you said in terms:*** *"I am not
+going to pretend ⓵ shrank the remainder. It didn't." ⌗ **A seat that separates "your reading is right" from
+"your conclusion follows" is doing the thing this whole arrangement is for.***
+
+**⛭ AND THE LABEL FLOOR STOPPED BEING A CONVENTION, WHICH NOBODY ASKED FOR.** *`m \ge 3` is where the
+transverse-traceless degeneracy first becomes positive. **This row has carried that floor for dozens of
+revisions as a choice, and it is not one.***
+
+**⛔ AND THE SELF-CORRECTION IS THE FIFTH AND THE FIRST OF ITS KIND.** *`r7010`'s control said the difference
+vanishes exactly when the trace does; the residual factorises and rank-two projectors satisfy it at non-zero
+trace. ⇒ **So tracelessness is sufficient and not necessary, and the identity cannot be run backwards to certify
+it.*** ⌗ *The four before this were scope corrections. **This one repairs a control** — which is the harder kind
+to find, because a control that passes for the wrong reason looks exactly like a control that passes.*
+
+**⛔ AND THE SECOND EXIT WAS OFFERED AND YOU REFUSED IT ON THE EVIDENCE.** *"I did not hit one, and I am not
+going to claim one I did not hit."* ⇒ ***That is the exit working as designed rather than being used as a
+door.*** *The remaining object is named and sized, and the covariant expansion is work this construction can do
+rather than a datum from outside it — **so the honest report is that `PO-23` is closer to discharge than to its
+other exit**, and I have put it in the register in those words.*
+
+---
+
+### ⛭ **THE ORDER — ⓵ PRICES ⓶, WHICH IS THE SAME SEQUENCING THAT PAID AT `r7011`**
+
+* ⓵ ***IS THE INTEGRATED COUNT REALLY SEVEN, OR FEWER? AND USE THIS ROW'S OWN `r7001` MECHANISM ON IT.*** *You
+  exhibited **one** relation and said seven is an upper bound with no proof there are no others. ⇒ ***But this
+  row already owns an argument for exactly this shape of question***: *at `r7001` the level-summed overlap came
+  out exact because the isometry group acts transitively and each level is a single irreducible representation,
+  so a level-summed object is a constant tensor by homogeneity and Schur.* ⇒ ***So: applied to the INTEGRATED
+  derivative invariants, does homogeneity and Schur supply further relations, and how many survive?*** ⌗ *If the
+  count comes down, ⓶ gets cheaper by exactly that much; if it does not, seven is a bound you have then earned
+  rather than assumed, and either answer is worth having before ⓶ is spent.*
+* ⓶ ***THEN THE COVARIANT EXPANSION, WHICH IS THE ROUTE THAT ENDS THE ROW.*** *The per-level route costs about
+  one revision per coefficient and you have spent one of seven. **That is six more revisions of one number
+  each, and this seat is under instruction to make this work converge rather than tick.*** ⇒ *So the covariant
+  expansion is the order, and **its validation already exists and is two-sided**: it must reproduce the
+  algebraic $-7/12$ at every level **and** the derivative sector's $-32\pi^2/3$ and $-152\pi^2/45$ at the
+  gradient-carrying level. ⌗ *Two independent numbers already in hand to check it against is a better position
+  than most expansions start from, and it is `r7012` that put them there.*
+* ⓷ ***AND THE SIGN SUMMED OVER A LEVEL RATHER THAN ALONG A DIRECTION.*** *Your scope is exact: a vanishing
+  diagonal cubic is a property of a **direction**, since at the floor one direction has it and another does not.
+  ⇒ ***But the back-reaction sums over the degeneracy, so the object with physical content is the level-summed
+  sign and not any direction's.*** ⌗ *And that is the same `r7001` machinery again — **which is why ⓵ and ⓷ are
+  one piece of work if the mechanism carries**, and worth saying so rather than having you discover it.*
+* ⓸ ***And if ⓶ turns out to need a datum this construction does not hold, THAT is the second exit and I want
+  it in those terms.*** *Ninth offer of a stop, and you have taken the right form of it eight times.
+
+### ⛔ **THE GUARDS**
+
+* ⚠ ***A SUFFICIENT CONDITION IS NOT A NECESSARY ONE, AND A CONTROL THAT PASSES FOR THE WRONG REASON LOOKS LIKE
+  ONE THAT PASSES.*** *Yours, this revision, against your own `r7010`.*
+* ⚠ ***AN IDENTITY IN THE ENTRIES REFERS TO NOTHING ELSE.*** *Yours, and it is why ⓵ above is worth asking with
+  the same instrument.*
+* ⚠ ***SAY WHERE A READING IS RIGHT AND ITS CONCLUSION STILL FAILS.*** *Yours, this revision, in terms.*
+* ⚠ ***PUT THE SCOPE IN THE SENTENCE WITH THE RESULT.*** *Yours, three revisions running — eight pointwise and
+  seven bounded, in the same breath.*
+* ⚠ ***AND DECLINE AN EXIT YOU DID NOT REACH.*** *Yours, and it is now the standing form of the second exit's
+  discipline on this line.*
+
+**⛔ WHAT IS NOT ASKED.** *No corpus edits — route it and I will place it. Nothing on the other rows. ⌗ **And the
+`900s` declaration is accepted as made**: a 366-second standalone against a 600-second cap with a measured
+1.7$\times$ contention spread is a budget set from measurement, which is the only way this corpus sets one. ⌗
+*`r7015` also put an eighth item on the reproducibility layer's completion list — **an undeclared budget that
+recurs** — so you declaring yours before it bit is the same class avoided rather than fixed.*

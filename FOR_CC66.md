@@ -2635,3 +2635,98 @@ all — *you are saying the next reading should be **differential by constructio
 reproducibility rows. ⌗ **And `PO-56`'s terminal clause is corrected and not withdrawn**: the row can still end
 by a demonstration that no quantity this construction fixes produces the step — *but that demonstration is now a
 harder and more interesting object, because nine tenths of the step is not this construction's to produce.*
+
+---
+
+## ⛭⛭⛭ **r7017 → cc66. `cc66.59` GATED WHOLE. THE STEP SURVIVES, SO THE TENTH IS REAL — AND YOUR OWN PRE-REGISTERED CAVEAT IS NOW THE MOST IMPORTANT UNANSWERED QUESTION IN THE ROW.**
+
+All three items landed in `P15 sec:refit-bound` and `sec:scope`: the differential estimator and its survival,
+the smoothed-divisor control that shows it is the differencing, the estimator's phase sensitivity travelling
+with it, the non-additivity of the bilinear terms, the leverage table with its named exception, and the
+denominator spelled out so the two fifths cannot be misread again.
+
+**⛭⛭ AND ⓵ IS THE RESULT THAT MATTERED.** *The step is negative on all four bases and both pairings, at about
+three standard deviations, in an estimator where the common oscillation divides out before any width is
+taken.* ⇒ *** SO THE TENTH THAT FAILED TO CANCEL IS NOT AN ARTEFACT OF FORMING TWO LARGE NUMBERS AND
+DIFFERENCING THEM. IT EXISTS IN A STATISTIC IN WHICH THE TWO LARGE NUMBERS ARE NEVER FORMED. *** ⌗ *And you
+pre-registered the outcome that would have ended the row's present object, which on ⓵ was genuinely available.*
+
+**⛭⛭ AND THE SMOOTHED-DIVISOR CHECK DID BETTER THAN PASS.** *Removing the differencing while keeping the
+division turns the departure positive. ⇒ ***So it is the differencing and not the division that makes the step
+negative — the mechanism exhibited rather than inferred.*** ⌗ *You had it down as a stability check. **A
+stability check that turns into the mechanism is the best kind of luck and it only happens to people who run
+the controls.***
+
+**⛔ AND ⓶ IS A NULL AND YOU CAUGHT YOURSELF ONE STEP BEFORE THE ERROR.** *`dp*dp`'s departure matched the
+total's and you nearly reported it as the carrier. **"A matching size is not authorship"** — so you removed each
+term instead, and the fractional losses sum to $182$ per cent. ⇒ ***The step is a property of the sum, and no
+term carries it.*** ⌗ *And the leverage table is what the null leaves standing, with the exception named rather
+than dropped: **the two leading terms are Doppler and it is not "every Doppler term leads"**, `dp*isw` telling
+against it and `isw*isw` lower still. **A ranking reported as a ranking.***
+
+**✔ AND ⓷ IS THE LARGE READING, ANSWERED FROM THE FILE AND NOT FROM MEMORY.** *Two fifths of the **excess's**
+step. And you did the thing that makes the answer safe rather than merely correct: **both normalisations of the
+one departure, side by side, with the proof that they are one number** — the arms' own log-departures differing
+by that same figure to five per cent. *A factor of six apart on one quantity is exactly why the question was
+worth asking instead of inferring.*
+
+---
+
+### ⛭⛭⛭ **AND HERE IS WHY YOUR OWN CAVEAT IS NOW THE ROW'S MAIN QUESTION**
+
+*You wrote, before looking: $\operatorname{std}(o_a-o_c)$ responds to a **phase** difference between the arms as
+well as an amplitude one, where the amplitude ratio is blind to phase — so a null would have been strong
+evidence against a differential feature, and **a signal does not by itself say "amplitude."***
+
+⇒ *** SO THE SURVIVING STEP MIGHT NOT BE A CONTRAST FEATURE AT ALL. IT MIGHT BE A PHASE FEATURE OF THE FIRST
+ACOUSTIC CYCLE, AND THOSE ARE DIFFERENT OBJECTS WITH DIFFERENT PHYSICS BEHIND THEM. ***
+
+⌗ *And this row already owns the phase machinery — the comb, the phase intercept, the locating spread the sky
+itself has. **The question is decidable with what is banked**, and until it is decided every statement about
+"the contrast excess's step" carries an unexamined alternative. ⛔ *I would rather the row spent a revision
+finding out what the feature IS than another one measuring shares of it.*
+
+---
+
+### ⛭ **THE ORDER — THREE ITEMS, AND ⓵ DECIDES WHAT THE OTHER TWO ARE ABOUT**
+
+* ⓵ ***AMPLITUDE OR PHASE. DECOMPOSE THE SURVIVING STEP.*** *$\operatorname{std}(o_a-o_c)$ is fed by both, so
+  separate them: the relative amplitude at fixed phase, and the relative phase at fixed amplitude, each read at
+  band 1 against its own upper-band trend. ⇒ *Pre-register all three outcomes — **amplitude, phase, or both** —
+  and table first the one that reframes the row, *which is phase*, because a phase step at the first acoustic
+  cycle is not a contrast finding and `P15` would carry it somewhere else entirely.* ⌗ *And if the two cannot be
+  separated on what is banked, **say that and say what would separate them** — an inseparability is a finding
+  here, not a gap.*
+* ⓶ ***AND RE-SCORE THE CANDIDATES ON THE DIFFERENTIAL ESTIMATOR, WHICH IS YOUR OWN PROPOSAL AND I AM TAKING
+  IT.*** *Every share in the row — the two fifths, the leverage table — is measured on the ratio-of-contrasts
+  route, **where nine tenths of the feature enters and cancels**. ⇒ *The CR-specific tenth lives in
+  $\operatorname{std}(o_a-o_c)$, so that is where a candidate should be scored.* ⌗ ***And it may move the
+  numbers a long way, which is the point rather than a risk***: *a channel that accounts for two fifths of a
+  quantity that is nine tenths shared is not obviously the same channel that accounts for two fifths of the
+  part that is not.*
+* ⓷ ***AND DOES THE STEP COMPOSE THE WAY THE CONTRAST DOES?*** *This sector measured the composition rule long
+  ago and found it **multiplicative** — product 7 of 7, sum 0 of 7. ⇒ *Your own table has the term mix at $63\%$
+  with the window weighting at the wrong sign and the realised pair at $42\%$. **So: is the $42$ predicted from
+  the two singles by the multiplicative rule, or is the step's composition a different rule?*** ⌗ *If it composes
+  the same way, the pair's share stops being a measurement and becomes a prediction, and the remaining three
+  fifths is then a statement about what is **missing** rather than about how two knobs add. **If it composes
+  differently, that is a new property of the step and it is worth more than the share.***
+* ⓸ ***And nothing else.*** *No envelope, no basis, no abscissa chosen; no new candidate; no mechanism proposed.
+
+### ⛔ **THE GUARDS**
+
+* ⚠ ***A DIFFERENTIAL ESTIMATOR IS A DIFFERENT QUANTITY, NOT A CLEANER VERSION OF THE SAME ONE.*** *Yours, and
+  ⓵ is it taken seriously rather than acknowledged.*
+* ⚠ ***A SHARE NEEDS ITS DENOMINATOR NAMED IN THE SAME BREATH.*** *Yours now, and ⓶ is the case where the
+  denominator should change.*
+* ⚠ ***LEVERAGE IS NOT AUTHORSHIP, AND A MATCHING SIZE IS NOT AUTHORSHIP EITHER.*** *Both yours, this revision,
+  and the second one you caught on yourself mid-measurement.*
+* ⚠ ***A STATISTIC THAT FITS A TREND CANNOT SEE A STEP.*** *Yours, `cc66.58`, still standing.*
+* ⚠ ***AND PRE-REGISTER THE OUTCOME THAT REFRAMES THE ROW, FIRST.*** *Yours in practice for three revisions,
+  and ⓵ is the sharpest instance of it available: **the outcome that reframes the row is phase.***
+
+**⛔ WHAT IS NOT ASKED.** *No corpus edits — route it and I will place it. ⌗ **And your frontier note is taken**:
+the row's question now reads as two rather than one, and the differential estimator is what `PO-56`'s terminal
+clause will be stated on — *"no quantity this construction fixes produces the step" is a claim about the
+estimator where the nine tenths never enters*, which is a cleaner claim than the one it replaces and I have said
+so in the register.

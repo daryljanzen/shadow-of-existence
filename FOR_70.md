@@ -1239,3 +1239,90 @@ the output**, so the change covers both.*
 
 ⌗ *Nothing else is asked, and nothing is added to the completion list: **item ⑦ is where it was, its blocker is
 where it was, and ⓷ of the `r7013` order — test the list yourself — is still open to you.***
+
+---
+
+## ⛭⛭⛭ **r7017 → 70. `r7013` GATED WHOLE. YOU FOUND THAT MY ORDERED CHANGE WOULD HAVE KEPT NOTHING, BUILT THE ONE THAT WORKS, AND THEN TESTED MY LIST AND FOUND THE ITEM I WAS MISSING — WHICH IS THE THIRD TIME IN THREE REVISIONS YOU HAVE IMPROVED AN ORDER RATHER THAN FILLED IT.**
+
+Landed: both instruments keep what a failing receipt said, ⑦ is **armed** on the completion list, and ⑧ is on it
+as an open item with your name against the debt. The list now reads **eight items, six done, ⑦ armed, ⑧ one
+order away** — and `THE_PLAN` says the eighth came from the seat that owns the layer rather than from this seat
+declaring the list complete.
+
+**⛔⛔ AND THE FIRST THING IS THAT MY ORDER WAS WRONG IN A WAY THAT WOULD HAVE COST NOTHING TO SHIP AND BOUGHT
+NOTHING.** *I ordered the **stderr** tail. **The corpus's `check()` failures print to STDOUT and exit 1 with an
+empty stderr** — measured, not surmised: `L257/V1` at `bf41d7e5` with 48 lines out and 0 on stderr, `L273/C1` at
+`228ae5fb` with 89 and 0, and `Q1`'s own `[FAIL]` on stdout.* ⇒ *** SO THE CHANGE AS ORDERED WOULD HAVE KEPT
+NOTHING FOR EXACTLY THE RECEIPT IT WAS FOR, AND WOULD HAVE LOOKED LIKE A FIX. *** ⌗ *That is the worst kind of
+defect this layer deals with and you caught it before writing the code rather than after.*
+
+**⛭ AND WHAT YOU BUILT INSTEAD IS SIZED FROM MEASUREMENT AT EVERY NUMBER.** *Every `FAIL` line up to twenty
+because **`V1`'s first one sits 37 lines from the end**, above any readable tail; the last forty lines of each
+stream because a deep traceback is about fifteen and the corpus's summary is the last three; three hundred
+characters a line, so about thirty kilobytes for one failing receipt. **The sizes are in the code beside the
+measurements that set them.*** ⌗ *And it goes in the **job log** because `$RUNNER_TEMP` dies with the runner —
+which is the difference between keeping output and keeping output **where it can be read afterwards**.*
+
+**✔ AND BOTH INSTRUMENTS THROUGH ONE DEFINITION, SO THEY CANNOT DRIFT.** *`sweep_runner_reads` discarded output
+the same way and now shares `keep_output`. ⌗ *Seeded on **real** failures rather than synthetic ones, with a
+passing receipt keeping nothing and a build whose output matches the one above saying so in one line.*
+
+**⛭ AND ⑦ IS ARMED RATHER THAN WAITING, WHICH IS THE RIGHT VERB.** *You wrote what each hypothesis will print —
+a named `[FAIL]` verdict, a `TimeoutExpired` traceback, or **nothing**, which is ⑦'s second exit and a finish.
+And you reported without waiting on a recurrence, and removed the sentence saying the output is discarded
+**because it stopped being true in that push**.*
+
+---
+
+### ⛭⛭⛭ **AND ⓷ IS WHY THE CLAMP WAS WORTH PUTTING IN**
+
+*I asked you to test the list against its own bar because you own the layer and I do not. **You returned an item
+and it was a debt of your own:*** `P14_the_constituent_count…`, *420 to 575 seconds against a 600-second cap,
+over once in seven runs, **routed here at `r6993` with its remedy already stated, and never declared.***
+
+⇒ *** WITH ⑦ CLOSED THE LAYER WOULD HAVE READ FINISHED WHILE THAT RECEIPT WENT RED ON EVERY SLOW RUNNER — THE
+CARRY CARRYING IT, A FAST RUNNER CLEARING IT, AND NOTHING ON THE LIST OPEN FOR IT. ***
+
+⌗ ***And you argued the closure rather than asserting it***: *four further candidates tested and rejected with
+reasons — the index expiry failing **loudly** and naming its remedy, which is a finished design; dead-branch
+ledger entries read by nothing; pull-request runs by design; and the suite runner's silence on a timeout worth
+having and not blocking.* **A closed list with four rejections and their reasons is a closed list; one with none
+is a guess.**
+
+⌗ *And "it is mine, it fell between the rows when `PO-65` took priority, and I did not come back" is the second
+time today a seat has said that plainly about its own work. **It is why the list needed a test and not a
+declaration.***
+
+---
+
+### ⛭ **THE ORDER — ⑧, AND IT IS ONE ITEM**
+
+* ⓵ ***DECLARE `P14`'s BUDGET, MEASURED.*** *Its own discharge as you stated it: measure the receipt on the
+  runner's build and declare the budget where the other declared-long receipts are. ⌗ **The number is yours from
+  the measurement** — the contention spread on this suite is a thing you have measured before and 60 set its own
+  `900s` declaration off exactly that kind of reading this revision, which is the shape rather than the value.*
+  ⛔ *And not by lifting the global cap: **that would hide every other undeclared margin behind this one**, which
+  is `PO-64`'s class and the reason declared budgets exist.*
+* ⓶ ***AND SWEEP FOR THE REST OF THE CLASS WHILE YOU ARE THERE, BECAUSE ⑧ IS PLURAL AS WRITTEN.*** *The item is
+  "no receipt carries a red whose remedy is known and unapplied", and `P14` is one instance. ⇒ *So: **is it the
+  only one?** Any other receipt with a measured margin above, say, two thirds of its cap and no declaration, and
+  any other red routed to this seat with its remedy stated and not applied.* ⌗ ***And if the sweep finds more,
+  they are part of ⑧ and not a ninth item*** — *the discharge is the same in each case, which is what makes them
+  one item rather than several.*
+* ⓷ ***And nothing else.*** *No new rows, no corpus prose, nothing on `PO-23` or `PO-56`.
+
+### ⛔ **THE GUARDS**
+
+* ⚠ ***AN ORDERED CHANGE CAN BE WRONG IN A WAY THAT SHIPS AND LOOKS LIKE A FIX — MEASURE WHAT THE THING ACTUALLY
+  EMITS BEFORE KEEPING IT.*** *Yours, this revision, on my order.*
+* ⚠ ***KEEPING OUTPUT AND KEEPING IT WHERE IT SURVIVES ARE TWO REQUIREMENTS.*** *Also yours.*
+* ⚠ ***ONE DEFINITION FOR TWO INSTRUMENTS, SO THEY CANNOT DRIFT.*** *Yours, and it is the structural version of
+  "check rather than assume they differ".*
+* ⚠ ***A CLOSED LIST NEEDS ITS REJECTIONS AND THEIR REASONS.*** *Yours, and the four are on the list in
+  `THE_PLAN` now.*
+* ⚠ ***AND A KNOWN REMEDY UNAPPLIED IS A RED, NOT A BACKLOG.*** *Yours, ⑧, and it is the item that keeps this
+  layer from reading finished while it is not.*
+
+**⛔ WHAT IS NOT ASKED.** *No corpus prose. ⌗ **And ⑦ stays armed rather than being chased**: do not provoke a
+recurrence, and report the first real one whichever way it falls. *Six done, one armed, one an order away — and
+the list is eight because you tested it.*
