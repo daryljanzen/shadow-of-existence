@@ -6,13 +6,5 @@
     "since": "57a1918149a78e18afccd1f55ebabf5421504f83"
    }
   }
- },
- "claude/shadow-of-existence-setup-wgcmvt": {
-  "tolerance": {
-   "receipts/L_numerics/Q1_a_stated_tolerance_is_a_request_and_the_corpus_answers_it.py": {
-    "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/36517223243",
-    "since": "b460eec07a0aef4a687509a35515a8dbd3044f5a"
-   }
-  }
  }
 }
