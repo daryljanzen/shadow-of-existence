@@ -5212,3 +5212,45 @@ $$\textbf{share} \;=\; \lvert\cos\Delta\rvert \quad \textbf{exactly}$$
 *No mechanism. No new candidate. `cc66.61`'s floor and the band-1 results not re-derived. No corpus edits for this order.*
 
 ⚠ ***BUT I TOOK A DEFAULT ON `R1` AND YOU SHOULD KNOW BEFORE YOU GATE IT.*** *P15's `likelihood` count went $30 \to 33$ at `r7033` and $33 \to 35$ at `r7035`. I routed the r7033 move with a ready patch and asked whether to keep routing these or make them directly; that went unanswered while the pin stood two revisions stale and `main` red on every line. **So I made it, read all five new uses first, and put the whole history of who moved this pin into the file's own comment.** It is its own commit and reversible in one if you would rather author it — but the standing question is still open and I would rather have an answer than keep guessing.*
+
+---
+
+# cc66.68 — **the standing rule is taken, and I read the terminal prose as you asked. Two corrections, and the first is mine.**
+
+*`PO-56` is struck and I am not reopening it. Nothing below is a measurement: every number here is already banked in `cc66.65`–`cc66.67`, re-read against your prose because you asked for exactly that.*
+
+## ✔ THE STANDING RULE IS TAKEN, AND SO IS THE GENERAL FORM
+
+*"Move the pin yourself, do not route it." **Taken.*** *And the general form — **if a routed question goes unanswered by the next revision, take the default that keeps `main` green and tell you what I took** — is the more useful half and I will apply it without asking again.*
+
+## ⛔⛔ CORRECTION 1 — **"to within a fiftieth of a radian" IS NOT TRUE, AND THE ERROR STARTED IN MY RECEIPT**
+
+*`sec:refit-bound` says the anti-correlated channel's cost projects "with a phase $\pi$ from the arm's **to within a fiftieth of a radian**".*
+
+**The measured deviation is $0.0206$ rad. A fiftieth is $0.0200$. It is a forty-ninth, not a fiftieth — the claim is a hair tighter than the number supports.**
+
+⌗ ***And the propagation is mine, not yours.*** *`cc66.65`'s own header wrote "$\pi$ to within $\mathbf{0.02}$" — I rounded $0.0206$ down to two digits, and you then read my rounded figure as a bound and turned it into a fraction. **The paper is where it became a bound; the rounding was already in my receipt.***
+
+⇒ **Proposed wording:** *"to within a fiftieth of a radian" → **"to within about a fiftieth of a radian"**, or exactly: **"to $0.021$ rad of $\pi$"**.* ⌗ *I would take the second: this row has spent two revisions learning that a bound and an approximation are different claims.*
+
+## ⚠ CORRECTION 2 — **"a quarter of a radian apart" IS AMBIGUOUS, AND ONE READING IS WRONG**
+
+*The sentence: "**the two channels' modulations in the spectra themselves are in phase, a quarter of a radian apart**".*
+
+*In this row's vocabulary "the two channels" means the window weighting and the term mix — **and those two are $0.113$ rad apart, an eighth, not a quarter**. The quarter ($0.270$) is the **window against the arm**, and the arm is not a channel.*
+
+| pair | measured | reads as |
+|---|---|---|
+| window vs **arm** | $+0.270$ rad | **a quarter** ✔ |
+| window vs **term mix** | $-0.113$ rad | an eighth |
+| term mix vs **arm** | $+0.383$ rad | more than a third |
+
+⇒ **Proposed wording:** *"**each a quarter to a third of a radian from the arm's**", which is true of both and names what they are being compared to.* ⌗ *As written, the number is right only under the reading that calls the arm a channel.*
+
+## ⌗ AND THE SEVENTH, WHICH IS ABOUT THE PIPELINE RATHER THAN AN INSTRUMENT
+
+*Six were instruments not matching their question. **This one is a rounded figure becoming a bound** — the receipt said $0.02$, the paper said "a fiftieth", and nothing in between was wrong on its own terms.*
+
+⇒ *** A ROUNDED NUMBER IN A RECEIPT IS AN INVITATION TO A BOUND IN PROSE, SO QUOTE THE UNROUNDED VALUE OR WRITE IT AS AN INEQUALITY. *** ⌗ *That is the same shape as 70's "a spread that is not a noise model is not a significance" — **the receipt's own honesty about a number does not survive being restated one level up unless the receipt makes restating it safe.** It is mine to carry: I write the numbers these sentences are built from.*
+
+⛔ *Nothing else. No measurement, no new receipt, no reopening of `PO-56` — the row is closed and this is a correction to prose, which is what you asked for.*
