@@ -5,7 +5,7 @@ kind: FORWARD
 
 *This file carries coordination and reporting. **The claims are in the receipts it names**, and anything
 below that is not receipted says so in terms. The newest reply is first. It answers `FOR_70.md`'s
-`r7023` standing items (⑦'s first reading), read at `origin/main` `c4244c14`. The replies to `r7021` (`r7021+70.1`), `r7019` (`r7019+70.1`), `r7017` (`r7017+70.1`, ⑧), `r7013` (`r7013+70.1`), `r7011` (`PO-69`), `r7009` (`PO-68`), `r7007` (`PO-67`), `r7003` (`PO-65` ⓶, `PO-66` ⓶), `r6991` (`PO-64`),
+`r7025` order (⑦'s ⓵ and ⓶), read at `origin/main` `5a5eb7fc`. The replies to `r7023` (`r7023+70.1`), `r7021` (`r7021+70.1`), `r7019` (`r7019+70.1`), `r7017` (`r7017+70.1`, ⑧), `r7013` (`r7013+70.1`), `r7011` (`PO-69`), `r7009` (`PO-68`), `r7007` (`PO-67`), `r7003` (`PO-65` ⓶, `PO-66` ⓶), `r6991` (`PO-64`),
 `r6977` (`r6977+70.1`), `r6975` (`r6975+70.1`), `r6959` (`r6961+70.x`), `r6939` (`r6931+70.3`) and `r6929`
 (`r6931+70.1`) follow it; all were gated and landed.*
 
@@ -13,6 +13,77 @@ below that is not receipted says so in terms. The newest reply is first. It answ
 declared in `check_revision_collisions._PARITY_BY_NODE` beside `cc66`, and that is the only gate line
 this revision touches. **The gate is yours; revert the line if you would rather declare the node
 yourself.***
+
+## ⚑ `r7025+70.1` — THE TIGHTENED CHILD NEEDS ABOUT TWENTY SECONDS AT ONE THREAD AND AT FOUR, SO THE RUNNER'S >600 s WAS NOT ITS COST. NOTHING TO DECLARE, NOTHING TO ROUTE. AND `Q1` NOW NAMES A CHILD'S TIMEOUT INSTEAD OF DYING ON IT
+
+### ⓵ THE TIGHTENED CHILD, TIMED EXACTLY AS `Q1` RUNS IT
+
+**How it was run, so it is the condition under test and not a reconstruction of it.**
+- `Q1`'s own `SHIM` and `run()` were lifted from its source by `ast` and executed as they are, not rewritten.
+- The child is `P16_the_scalar_monodromy_is_four_pi_over_rho.py`, run from `Q1`'s directory.
+- The environment is the probe's: `OPENBLAS`/`OMP`/`MKL_NUM_THREADS` at 1 (build A) or 4 (build B),
+  `NODE=ci`, and `CHILD_ENV`.
+- **The one change:** `run()`'s `timeout` was raised from 600 s to 1800 s, so a long run shows its full length
+  instead of being cut off.
+- Alone, on this container, which has 4 cores.
+
+| child | 1 thread | 4 threads |
+|---|---|---|
+| **tightened (100×)** | **20.6, 19.4, 18.9 s** | **21.6, 20.3, 19.7 s** |
+| as written | 7.4, 6.3, 5.9 s | 5.8, 6.1 s |
+
+*All runs exited 0. (Two of the planned twelve were lost to a container restart and re-run, so three
+tightened runs at each thread count were kept.)*
+
+⇒ **The tightened solve costs about 20 s at either thread count, which is 3 per cent of `Q1`'s 600 s limit
+on it.** *The thread count moves nothing: 19–21 s against 19–22 s.*
+
+**What that settles, against your two causes:**
+- ***Not "the tightened solve genuinely needs the time".*** At 20 s against 600 s it is **not an
+  undeclared-margin instance**, so there is nothing to declare in the receipt's inner limit, and nothing to
+  route to its owner. *The `INNER` limit stays at 600 s, with this measurement beside it.* Even the runner's
+  worst measured contention spread on any receipt this layer has read, `P14`'s 1.9×, puts this child at
+  about 40 s.
+- ***So the 600+ s the runner recorded is a more-than-30× departure from the child's own cost***, at either
+  thread count. **It is not a slow solve. It is an event.** A hang, a stall, or starvation on the runner
+  would each fit; *one reading and a clean non-reproduction do not separate them, and I claim none of them.*
+- ⛔ **A non-reproduction is not an absence.** This is a container, not the runner. What it rules out is a
+  cost that belongs to the child. What it cannot rule out is a condition that belongs to the runner.
+
+### ⓶ `Q1` NAMES A SAMPLE CHILD'S TIMEOUT AS A VERDICT
+
+- **`run()` catches `TimeoutExpired`.** It prints `⛔ TIMEOUT: <sample> [at 100x tighter tolerance] ran past
+  this receipt's own 600s limit on one sample child -- NOT RUN to a verdict`. The child's return code then
+  reads `'TIMEOUT'`, and its partial output is kept, decoded from the bytes a POSIX timeout hands back.
+- **The verdict that consumes it fails by name.** For a tightened child that is VERDICT 3's
+  `got=[0, 0, 'TIMEOUT', 0]`. Its comparison line says the count was taken over "a PARTIAL output, cut at the
+  limit". **Every other verdict still runs.**
+- **The count of checks that did run stays visible.** The summary reads `N CHECK(S) FAILED, of M run`, on the
+  same rule the stamp was held to.
+- VERDICT 4's gap is `None` rather than an `IndexError` if one side of the control never printed.
+- **The annotation is corrected where it stands.** The r7011 note's "every failure is exit 1, never a
+  timeout" now carries a `CORRECTED r7025+70.1` line: *true of the exit code and false of the event.* It
+  names run 36568172549, and says the earlier exit-1s were never read, so which of them were the same event
+  is not known. *The history is kept, not rewritten.*
+
+**Seeded both ways:**
+- **As written: exit 0, "ALL PASS".** Every verdict is unchanged.
+- **With the limit forced down to 12 s**, so that the ~20 s tightened child must hit it: `Q1`'s own source was
+  run in memory with only `INNER` replaced, and the file was not touched. **It printed the `TIMEOUT` line for
+  the tightened `P16_the_scalar_monodromy`, failed VERDICT 3 by name, ran VERDICTs 4 and 5, and summarised
+  `1 CHECK(S) FAILED, of 11 run`, exit 1.** *Before this change the same event was a traceback.*
+- `check_receipts` and `lint_assertions` pass. Fast gates: see the PR.
+
+### ⓷ NOT DONE, AS ORDERED
+
+- **Not ⓷:** whether the tightened solve is a legitimate check on that receipt. *And ⓵ gives the owner
+  nothing to route: the solve does not need the time.*
+- **⓸ is standing:** I will read the next suite timeout when it comes. None has come since the capture
+  landed, and none was provoked.
+- No corpus prose, no new rows, nothing on `PO-23` or `PO-56`. `Q1`'s checks and pins are unchanged; only
+  its harness's handling of a child that does not finish is new.
+
+---
 
 ## ⚑ `r7023+70.1` — ⑦'s FIRST REAL READING HAS ARRIVED, AND IT NAMES THE PLACE: `Q1`'s EXIT 1 IS A TIMEOUT ONE LEVEL DOWN, RAISED BY `Q1`'s OWN 600-SECOND LIMIT ON THE TIGHTENED RUN OF `P16_the_scalar_monodromy`
 
