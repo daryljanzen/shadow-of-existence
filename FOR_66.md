@@ -5254,3 +5254,31 @@ $$\textbf{share} \;=\; \lvert\cos\Delta\rvert \quad \textbf{exactly}$$
 ⇒ *** A ROUNDED NUMBER IN A RECEIPT IS AN INVITATION TO A BOUND IN PROSE, SO QUOTE THE UNROUNDED VALUE OR WRITE IT AS AN INEQUALITY. *** ⌗ *That is the same shape as 70's "a spread that is not a noise model is not a significance" — **the receipt's own honesty about a number does not survive being restated one level up unless the receipt makes restating it safe.** It is mine to carry: I write the numbers these sentences are built from.*
 
 ⛔ *Nothing else. No measurement, no new receipt, no reopening of `PO-56` — the row is closed and this is a correction to prose, which is what you asked for.*
+
+## ⛔⛔ AND A THIRD, WHICH IS RED ON `main` NOW — `S2`'s ABSENCE CLAIM, BROKEN BY `r7037`'s OWN LANDING
+
+*`receipts/L271_the_statistics_bake/S2_the_systematics_budget_is_absent_by_name_and_present_as_a_matched_control.py` is red. It is not `#172`'s: **that branch's entire diff is `FOR_66.md`**, and `S2` is byte-identical to `main`'s.*
+
+| revision | commit | `systematic uncertainty` in P15 |
+|---|---|---|
+| r7035 | `8617f62b` | **0** |
+| **r7037** | **`b30dce9f`** | **1** |
+
+⇒ ***And the one occurrence is the sentence writing up `cc66.67`***: *"a share or a phase read at that level is a property of the two theories with a **systematic uncertainty** and no statistical floor at all."*
+
+## ⛭ THE READING, WHICH IS WHY I THINK THE CLAIM AND NOT THE PROSE SHOULD MOVE
+
+*`S2` asserts the corpus **takes** a systematics budget by matched-procedure differencing **without ever naming it** — "the absence is real and it is TOTAL", `systematic uncertainty` ×0 across seventeen paper bodies.*
+
+⇒ *** THE NEW OCCURRENCE IS A CORRECT USE, NOT A SLIP. *** *The sentence says a spectrum-level share carries a systematic uncertainty and no statistical floor — which is exactly what it is, and is the precise thing 70's audit established. **The absence broke because the paper got more precise, not less.***
+
+⌗ *So `S2`'s headline needs its first clause qualified rather than its finding withdrawn: **"absent by name" is now "named once, correctly, and nowhere used as a budget"** — which leaves the bake's actual result (a method present under no name) standing, and arguably strengthens it.*
+
+## ⛔ AND WHY I AM ROUTING THIS ONE AFTER YOU TOLD ME TO STOP ROUTING — THE DISTINCTION IS THE POINT
+
+*You told me to move a control pin myself and not refer it. **I am not treating this as one, and here is the line I am drawing:***
+
+* ***`R1` is a COUNT PIN following a measurement.*** *The claim is "the control word is findable"; the number is bookkeeping. Reading the new occurrences and re-pinning is **maintenance** — mine, and I will keep doing it without asking.*
+* ***`S2`'s ⓵ is an ABSENCE CLAIM about what the corpus asserts of itself.*** *Amending it changes a finding, and there are at least two defensible amendments — qualify the count, or narrow the scope to "never as a budget". **Picking one silently is an adjudication, not maintenance.*** ⌗ *And it has a second resolution entirely in your hands: reword the sentence.*
+
+⇒ **So: proposed amendment above, ready to apply. If you would rather I just make it, say so and I will — but I did not want to widen "move the pin yourself" into "rewrite another bake's finding" on my own reading of it.** ⌗ *If that line is in the wrong place, tell me where you want it and I will hold it there.*
