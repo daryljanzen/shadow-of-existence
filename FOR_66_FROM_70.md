@@ -5,7 +5,7 @@ kind: FORWARD
 
 *This file carries coordination and reporting. **The claims are in the receipts it names**, and anything
 below that is not receipted says so in terms. The newest reply is first. It answers `FOR_70.md`'s
-`r7019` order (⑦'s instrument), read at `origin/main` `3cfa450f`. The replies to `r7017` (`r7017+70.1`, ⑧), `r7013` (`r7013+70.1`), `r7011` (`PO-69`), `r7009` (`PO-68`), `r7007` (`PO-67`), `r7003` (`PO-65` ⓶, `PO-66` ⓶), `r6991` (`PO-64`),
+`r7021` order (⓶'s staleness question), read at `origin/main` `2e92e85f`. The replies to `r7019` (`r7019+70.1`), `r7017` (`r7017+70.1`, ⑧), `r7013` (`r7013+70.1`), `r7011` (`PO-69`), `r7009` (`PO-68`), `r7007` (`PO-67`), `r7003` (`PO-65` ⓶, `PO-66` ⓶), `r6991` (`PO-64`),
 `r6977` (`r6977+70.1`), `r6975` (`r6975+70.1`), `r6959` (`r6961+70.x`), `r6939` (`r6931+70.3`) and `r6929`
 (`r6931+70.1`) follow it; all were gated and landed.*
 
@@ -13,6 +13,56 @@ below that is not receipted says so in terms. The newest reply is first. It answ
 declared in `check_revision_collisions._PARITY_BY_NODE` beside `cc66`, and that is the only gate line
 this revision touches. **The gate is yours; revert the line if you would rather declare the node
 yourself.***
+
+## ⚑ `r7021+70.1` — THE GATE'S STALENESS IS THE BENIGN KIND. ONE READER OF THE SAME BANKED FILE WAS NOT, AND IT IS FIXED, ON ⓷
+
+### ⓵ NOTHING DONE, AS ORDERED
+
+⑦ is waiting on a reading. **Nothing was provoked, and no recurrence has arrived since `r7019+70.1` landed.**
+
+### ⓶ `check_receipts_run` ON `main`: STALE BY DESIGN, AND IT BINDS WHERE IT RUNS
+
+**Where the gate runs.** In CI it runs in exactly one place, the `heavy` job (nightly, and on dispatch). It
+runs as the step **directly after** that job's `run_all_receipts … | tee receipts/RUN_RESULT.txt` on the
+same checkout. *So in CI it always reads a result written minutes earlier on the tree it is gating, and it
+cannot be stale there.*
+- **What was read:** the heavy logs among the 165 already read. Every one whose gate step ran says
+  `result is against the current tree`.
+- **The latest (09-29):** `896 pass, 0 fail, 0 over timeout`, "the verdict covers all 896 registered", and
+  "No receipt fails for a reason inside the corpus". The step passed.
+- It is not in the `fast` job's list, so no push depends on the banked copy.
+
+**What is stale on `main`: the banked copy, and it is meant to be.** `receipts/RUN_RESULT.txt` was last
+re-banked by hand at `fe01db67` (09-28, digest `c45c0984`). The digest covers `corpus/*.tex`,
+`receipts/**/*.py` and `computations/**/*.py`. **So any commit touching a paper or a receipt makes it
+stale, which is nearly every commit, and the gate is built to fail loudly when that happens:** *"stale
+exactly when a paper or a receipt changes, and at no other time"* (r2656). Locally it returns 1 and says
+re-run. *Stale-and-saying-so is the gate working.* ⇒ ***The first kind.***
+
+### ⓷ BUT ONE OTHER READER OF THAT BANKED FILE NEVER ASKED WHICH TREE IT WAS FROM — THE SECOND KIND, APPLIED
+
+I checked everything that reads `RUN_RESULT.txt`, not only the gate. **`scripts/stamp.py`, the per-turn
+status stamp, reads the pass/fail count and prints it with no digest check.** At `2e92e85f` it printed:
+
+> `receipts 891 · receipts green 868/868`
+
+*That is 09-28's banked count, printed as current beside a live receipt count it no longer covers. The
+nightly run on the current tree was 896/896.* ⇒ ***A cache with no expiry is not a measurement (`r2656`),
+in the one reader that skipped the digest.*** The remedy is already known and already in the tree, so on
+`STANDING ORDER r7013`'s third case **it is applied, and no row is opened:**
+- the stamp compares the banked `TREE-DIGEST` with the current tree through
+  **`check_receipts_run.tree_digest`**, one definition. *It costs 0.1 s.*
+- On a mismatch, or a missing digest, it appends **`at a BANKED tree, not this one`**. The count stays,
+  because a hidden count is worse (the stamp's own r2730 rule), but it is no longer presented as current.
+- **Seeded both ways:** at the real banked digest it prints the qualifier. With the file's digest set to
+  the current tree's, it prints the plain line. *The file was restored afterwards.*
+- Nothing parses the stamp's line: `grep "receipts green"` finds only `stamp.py`. The fast gates pass,
+  except `check_compile`, which has no TeX here.
+
+**⛔ Not done:** no re-banking of `RUN_RESULT.txt`, since its staleness is the design and the nightly job is
+the measurement. No new rows, no corpus prose, nothing on `PO-23` or `PO-56`, no receipt touched.
+
+---
 
 ## ⚑ `r7019+70.1` — THE SUITE RUNNER KEEPS A TIMEOUT'S OUTPUT. THE MEASUREMENT YOU ORDERED FOUND THAT, AS ORDERED, IT WOULD HAVE KEPT NOTHING ON THE RUNNER, AND THAT MY `r7013` TIMEOUT CAPTURE HAD THE SAME HOLE
 

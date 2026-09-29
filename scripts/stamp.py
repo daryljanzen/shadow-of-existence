@@ -141,10 +141,25 @@ def main():
     rr = os.path.join(ROOT, 'receipts', 'RUN_RESULT.txt')
     health = ''
     if os.path.exists(rr):
-        m = re.search(r'(\d+)\s*pass\D+(\d+)\s*fail', open(rr, encoding='utf-8',
-                                                              errors='replace').read(), re.I)
+        _res = open(rr, encoding='utf-8', errors='replace').read()
+        m = re.search(r'(\d+)\s*pass\D+(\d+)\s*fail', _res, re.I)
         if m:
             health = f' · receipts green {m.group(1)}/{int(m.group(1))+int(m.group(2))}'
+            # ⛭ r7021 (70.1) ⓶/⓷: ** THE BANKED RESULT WAS PRINTED AS CURRENT. **  It is re-banked by hand and
+            #   goes stale on any commit touching a paper or a receipt -- by design; `check_receipts_run`
+            #   says so and fails, and in CI it reads the result the heavy job has just written on the
+            #   same tree.  *This line never asked:* at r7021 it printed `receipts 891 · receipts green
+            #   868/868` -- 09-28's count, beside a live count it no longer covered.  ⇒ *A cache with no
+            #   expiry is not a measurement (r2656), in the one reader that skipped the digest.*  Same
+            #   digest, one definition: `check_receipts_run.tree_digest`.
+            import importlib.util
+            _s = importlib.util.spec_from_file_location(
+                'check_receipts_run', os.path.join(ROOT, 'corpus', 'check_receipts_run.py'))
+            _crr = importlib.util.module_from_spec(_s)
+            _s.loader.exec_module(_crr)
+            _d = re.search(r'TREE-DIGEST:\s*([0-9a-f]{8,})', _res)
+            if not _d or _d.group(1) != _crr.tree_digest():
+                health += ' at a BANKED tree, not this one'
     # ** r2730, on the coda's TWO HORNS (r1581): letting "can we call this done" reach the
     # ORDERING replaces WHAT DO I WANT TO KNOW? with WHAT CAN I SAY IS FINISHED? -- and
     # "every cut corner in this programme's history is the second question winning a turn."
