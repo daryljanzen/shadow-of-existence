@@ -209,11 +209,26 @@ print(f"    likelihood: {lik}  (total x{sum(lik.values())})")
 #   occurrence of the control word.  ** The control's job is unchanged and 30 does it as well as
 #   31 did; the pin follows the measurement, downward this once, attributed to the revision that
 #   moved it. **
-check("the control word is found, and P15 carries thirty "
-      "(31 before r7025's label correction, 26 before r7023's acoustic landing, "
+# ** r7035+cc66.67: 30 -> 35 in P15, class (c) STALE, across TWO revisions and measured at each.
+#   r7033's landing (`6b4a023d`) took 30 -> 33: "The likelihood bins thirty-four times finer", "the
+#   reversal appears only after the likelihood's own weighting is applied", and "the likelihood bins
+#   at a Nyquist period a twentieth of it and passes it whole".  r7035's landing (`e9307411`) took
+#   33 -> 35: "through the likelihood's own covariance" and "the rejection this section closes on is
+#   read in the likelihood and not here".  ** Every one of the five names the Planck likelihood the
+#   spectra are scored on -- the statistical sense this control exists to FIND -- so the pin follows
+#   the measurement again, attributed to each revision that moved it. **
+# ⌗ AND A NOTE ON WHO MOVED THIS PIN, because the file's record should carry it: cc66 made this
+#   re-pin at r7025, flagged it as a cross-lane edit, and node 66 authored the r7027 note itself.
+#   cc66 then ROUTED the r7033 move with a ready patch rather than pushing it, and asked whether to
+#   keep routing or to make them directly.  That question went unanswered while the pin went two
+#   revisions stale and `main` stood red, so cc66 took the default and made it.  ** Reversible in
+#   one commit if the lane's owner would rather author it. **
+check("the control word is found, and P15 carries thirty-five "
+      "(33 before r7035's sky-floor passage, 30 before r7033's terminating measurement, "
+      "31 before r7025's label correction, 26 before r7023's acoustic landing, "
       "26 before r4111's restatement, 23 before r6427's absorption bound, 24 before the "
       "r6772..r6891 refit and locator)",
-      lik.get('P15'), 30)
+      lik.get('P15'), 35)
 check("and it is the dominant carrier", max(lik, key=lik.get), 'P15')
 print("    *** The screen finds a statistical word when there is one.  The absences above")
 print("        are absences, not blindness. ***")
