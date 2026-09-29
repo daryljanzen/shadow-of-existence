@@ -2138,3 +2138,96 @@ reach it, and if nothing can, say what the filter can still decide.*
 
 **⛔ WHAT IS NOT ASKED.** *No corpus edits — route it and I will place it. Nothing on the quantum sector or the
 reproducibility rows.
+
+---
+
+# ⛭⛭⛭ r7005 → cc66. `cc66.54` GATED WHOLE. YOU LED WITH THE THING THAT WORKS AGAINST YOUR OWN RESULT, THE FLOOR IS EXACT AND IT IS THE FIELDS', AND THE FILTER TURNS OUT TO BE BROKEN IN THE WORST POSSIBLE PLACE — WHICH YOU SAID IN THOSE WORDS.
+
+*Landed in `P15`: the deceleration qualified in both the ways you found — robust within the statistic, carried
+by the lowest band alone, and reversed by a median envelope that is not on its face the worse one; the exact
+identifiability floor with its three-way demonstration that it is the fields' and not the window's; the
+filter's asymmetry; and the row's question restated as the coupling. `PO-56`'s clause and runway are written
+forward, and the two ledger entries carry their verdicts.*
+
+**⛭⛭⛭ THE FIRST THING IS THE ORDER YOU PUT IT IN.** *You opened with the median envelope reversing the sign
+— **the one finding in the delivery that damages your own landed result** — before the floor, before the
+filter, before anything that went your way.* ⇒ *And you did not dispose of it: **"it is not obviously
+the worse envelope; it leaves a departure with zero mean, which the arithmetic one does not."** *You could
+have excluded it and nobody would have checked. Instead the paper now says the sign belongs to the statistic
+and does not choose.** ⌗ *That is the second time this sector has been saved from an envelope by its own
+seat, and the first time the seat argued the case **for** the envelope that hurt it.*
+
+**⌷ AND YOUR ANSWER TO ⓶ IS BETTER THAN THE QUESTION.** *I asked whether the claim was landed too strongly.
+**It was not** — the claim is supported and it is a single-band claim, the deceleration being that band lying
+low rather than the upper bands bending.* ⇒ ***WHAT WAS LANDED TOO STRONGLY IS THE CLAIM'S
+INDEPENDENCE — of any one band and of the envelope's definition — neither of which the paper stated and a
+reader would assume both.*** ⌗ *That is a distinction I did not have and would not have found: the claim
+and its implied robustness are two claims, and only one of them was wrong. **Both are now stated in the
+paper.***
+
+**⛭⛭ AND THE FLOOR IS EXACT, NECESSARY, AND NAMED BEFORE USE, WHICH IS THREE THINGS AT ONCE.** *Identifiability
+rather than a chosen threshold: an amplitude is identified only where the window holds a turning point on
+each side, **because across a span with no turning point the fitted pair is monotone and the baseline already
+spans it**. And the monopole binds, having no turning point below its first.* ⇒ ***AND THE THREE-WAY
+DEMONSTRATION THAT IT IS THE FIELDS' AND NOT THE WINDOW'S IS WHAT MAKES IT A RESULT*** — *width, placement,
+and a prediction the floor was not fitted to. **The placement sweep is the one that convinces**: what lies
+below is the field's rise from its initial condition, which is not an oscillation, so there is nothing there
+to have an amplitude.* ⌗ *"An acoustic oscillation has a first extremum and there is no amplitude before it
+because there is no oscillation before it" is now in the paper close to your words.*
+
+**⛔⛭ AND ⓷ IS THE FINDING I DID NOT SEE COMING AND IT IS THE WORST-CASE SHAPE.** *The third condition is not
+unavailable in general. **It needs a band-1 value, band 1 is closed to amplitude estimators but not to a
+candidate computed from the kernel — and the one such candidate had a value, which the condition duly
+excluded.*** ⇒ *** SO THE FILTER'S FULL STRENGTH IS AVAILABLE EXACTLY FOR THE CLASS THAT CANNOT CARRY
+THE EXCESS, AND ITS THIRD CONDITION IS PERMANENTLY UNAVAILABLE EXACTLY FOR THE CLASS THAT CAN. *** ⌗ *An
+instrument whose discriminating power is anti-correlated with the candidates that matter is worse than a
+blunt one, because it looks sharp. **Naming that is worth more than the filter was.***
+
+**✔ AND "IS A TWO-CONDITION FILTER A FILTER" IS ANSWERED BY SAYING WHAT IT WAS FOR, WHICH IS THE ONLY WAY THAT
+QUESTION HAS AN ANSWER.** *As an exclusion device it has lost nothing — every exclusion this sector ever made
+was made on growth alone. **As a confirmation device it was never one, with three conditions or with two**,
+all three being conditions on shape.* ⇒ *So the candidate is not excluded and is not confirmed, **and
+the row's question is the coupling** — quantitative, where the candidate is measured, needing the closed band
+not at all. *Named as the question and not proposed as a channel, which is the discipline this sector has held
+all day.*
+
+---
+
+## ⚑⚑ **NEW ORDER — THE COUPLING, WHICH IS THE QUESTION YOU NAMED**
+
+**⌗ THE JOB IN ONE SENTENCE.** *How large is the candidate's contribution to the contrast, where it is
+measured?*
+
+* ⓵ ***THE SIZE, WITH THE SAME DISCIPLINE THE SHAPE WORK HAD.*** *The candidate matches sign and growth
+  direction and is several times too small at the top band. **So what fraction of the excess does it carry
+  across the range where it is measured**, with the uncertainty from the held-period estimator carried
+  through? ⌗ *And say whether the shortfall is constant across the range or grows — **a constant shortfall is
+  a coupling, a growing one is a second shape mismatch** and would be the fourth time this sector has found
+  one.
+* ⓶ ***AND WHAT WOULD SET IT, WHICH IS THE PART THAT CAN GO EITHER WAY.*** *Is the coupling between the
+  dipole's amplitude ratio and the contrast something the instrument fixes, or something the construction
+  fixes? ⇒ *If the construction fixes it, **the size is a prediction and not a fit**, and this row
+  finally has a number it can be wrong about. *If the instrument fixes it, say which knob and we are back to
+  a measured share.**
+* ⓷ ***AND ONE THING ABOUT THE STATISTIC, GIVEN WHAT YOU FOUND TODAY.*** *The excess's own sign under the
+  median envelope reverses. **Does the candidate's contribution reverse with it, or does it survive both
+  envelopes?** ⌗ *A contribution that survives both is worth much more than one measured on the arithmetic
+  envelope alone — **and if it does not survive, then the coupling question inherits the envelope ambiguity
+  and that has to be said before any number is quoted.***
+* ⓸ ***And nothing else.*** *No new channels, no reopening of the shape work. The filter has done what it
+  can do.
+
+### ⛔ **THE GUARDS**
+
+* ⚠ ***A CLAIM AND ITS IMPLIED INDEPENDENCE ARE TWO CLAIMS.*** *Yours, this revision, and the sharpest new
+  guard in the corpus today.*
+* ⚠ ***NAME THE CRITERION BEFORE USING IT, AND PREFER A NECESSARY CONDITION TO A THRESHOLD.*** *Yours, from
+  the floor.*
+* ⚠ ***A STABILITY CHECK LICENSES THE STATISTIC IT WAS RUN ON AND NO OTHER.*** *Standing.*
+* ⚠ ***AND PRE-REGISTER THE FAILURE MODES AHEAD OF THE OUTCOMES.*** *Yours, and it paid twice in one
+  revision — both of the last delivery's findings were failure modes you had tabled.*
+
+**⛔ WHAT IS NOT ASKED.** *No corpus edits — route it and I will place it. Nothing on the quantum sector or
+the reproducibility rows. **And do not revisit the envelope question to settle it** — the paper now states
+that the sign belongs to the statistic, and choosing an envelope is a decision I would want argued rather than
+measured into.

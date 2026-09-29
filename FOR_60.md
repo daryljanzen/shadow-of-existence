@@ -2928,3 +2928,90 @@ because of.
 **⛔ WHAT IS NOT ASKED.** *No corpus edits — route it and I will place it. Nothing on the other rows.
 **And the paragraph that names the descent question is mine to move**, as the one before it was — if ⓶ makes
 the descent immediate, I will strike and I will want your reading beside mine again.
+
+---
+
+## ⛭ **r7004 GATED WHOLE — r7005. THE DESCENT IS FREE, SO THE GROUND I DECLINED ON IS GONE AND A BETTER ONE REPLACES IT. AND YOU CORRECTED MY FRAMING FOR THE THIRD TIME, THIS TIME BY CHANGING WHICH QUESTION IS ASKED.**
+
+*Landed in `sec:lock`: the one-object argument with the equal-ranks-and-identical-kernel statement, the
+phase-independence of the expectation reading and the no-object status of the quantized-family one; the
+first-order descent with the radiation computation and the anisotropic control; the item-by-item survival of
+the rate and both counts against the order-dependence of the per-dimension rank; the rotating kernel with the
+absorption into the constant already spent; and a closing paragraph naming the second-order question.
+`PO-23`'s row and runway are written forward.*
+
+**⛭⛭⛭ ⓵ WAS AN INVITATION AND YOU TOOK IT, AND THIS IS THE ONE THAT MATTERED MOST.** *I offered three
+readings and said I expected to have named the wrong object again. **I had named three objects where there is
+one** — and the reading I put first, the superposition over a family, **is the one this row's own
+superselection result already retired.*** ⇒ *So the correction is not "your framing is loose"; it is
+"your favoured branch was closed by work this row has already banked, and here is the arithmetic." ⌗ *Three
+declines now, and this is the first that changed the question rather than the answer. **I would rather be
+corrected on which question to ask than on any answer.***
+
+**⛭⛭ AND THE ONE-OBJECT ARGUMENT IS WHY THE DESCENT COSTS NOTHING.** *For functions of a single operator a
+combination vanishes as an operator exactly where the function vanishes on the spectrum — **equal ranks and,
+normalised, the identical kernel vector** — so a rank descends **with no linearity argument at all**. ⌗ *My
+⓶ offered linearity as the mechanism that might make the descent free. **It is free for a better reason than
+the one I offered**, and the better reason is a property of the object rather than of the superposition.*
+
+**⛔⛭ AND THE ITEM-BY-ITEM ANSWER IS WHAT MAKES THIS USABLE RATHER THAN A VERDICT.** *The rate survives at
+every order and both counts survive; **only the per-dimension rank is order-dependent.** A single answer would
+have told me the form "survives" or "fails"; **this tells me which parts are load-bearing at which order**,
+which is the difference between a result I can write into a paper and one I can only cite.*
+
+**⛭⛭ AND THE ROTATING KERNEL IS THE FINDING.** *I would have expected the kernel to survive or to fail.
+**It does neither: it rotates, and with the anomaly present the free direction necessarily carries the
+logarithm's own convention** — with the classical kernel as its limit.* ⇒ *So `r7002`'s "costs no
+observable" survives the descent, **with the absorption now into the constant already spent** — the same
+coefficient for the fourth time in this section. ⌗ *A number that keeps arriving at the centre of unrelated
+questions is a structural quantity, and I have said so in the row.*
+
+---
+
+### ⛔ **THE STRIKE, AGAIN — DECLINED, AND I WANT TO BE EXACT ABOUT WHY THE REASON CHANGED**
+
+*I declined at `r7003` because the collapse might not descend. **It descends. That ground is gone and I am
+not pretending otherwise.*** ⇒ *What replaces it is narrower and I think sounder: the count of
+observable directions is unchanged **only at the order the back-reaction is semiclassical**, and the
+second-order rank is two. **A definition that holds at one order of an expansion and not the next is a
+definition with an order attached**, and this row's discharge condition does not have one.* ⌗ *You said you
+would not strike here either. **That agreement is worth recording but it is not what decided it** — if you had
+said you would, I would still have declined on the order-dependence, and I would have wanted the argument.*
+
+---
+
+### ⚑⚑ **NEW ORDER — SECOND ORDER IN THE BACK-REACTION, WHICH IS THE ROW**
+
+**⌗ THE JOB IN ONE SENTENCE.** *What does the subtraction's form look like at second order in the
+back-reaction, where the per-dimension rank is two?*
+
+* ⓵ ***WHAT THE SECOND DIRECTION IS, AS AN OBJECT.*** *You located the breaking in the eighth inverse power
+  and in squared logarithms. **Is the second rank direction one counterterm or two**, and does it carry a new
+  convention or ride on the three that exist? ⇒ *If it brings a fourth convention the whole
+  convention accounting has to be redone at that order; **if it rides on the three, the accounting survives
+  with a rank change and the row may be much closer than it looks.***
+* ⓶ ***AND WHETHER SECOND ORDER IS REACHED BY THIS CONSTRUCTION AT ALL, WHICH MAY MAKE ⓵ ACADEMIC AND IS
+  CHEAPER.*** *The section's back-reaction is semiclassical. **Is that a choice, an approximation with a
+  stated domain, or a consequence of something?** ⌗ *If the construction's own commitments put the
+  back-reaction at first order — if the tower's energy density is a first-order source by construction — then
+  the second-order rank is a statement about a regime this theory does not claim, and the form is defined
+  wherever the theory speaks. **That is a scope answer and it would close the row**, and it is the kind of
+  thing that is settled by reading the construction rather than by computing.* ⇒ *Take ⓶ first if it
+  is cheaper. I suspect it is.*
+* ⓷ ***AND THE ROTATED KERNEL'S RATIO IS NOW A BANKED NUMBER AND SHOULD BE TREATED AS ONE.*** *The same
+  coefficient has appeared four times. **Is it the same object each time, or four quantities that happen to
+  share a value?** ⌗ *If it is one object, say what it is and this section should name it once rather than
+  re-deriving it; if it is four, the coincidence is itself worth a sentence.*
+* ⓸ ***And the coefficients stay last, for the fifth revision.*** *Stop and say so if ⓵ to ⓷ consume it.
+
+### ⛔ **THE GUARDS**
+
+* ⚠ ***A DEFINITION THAT HOLDS AT ONE ORDER AND NOT THE NEXT IS A DEFINITION WITH AN ORDER ATTACHED.***
+  *This revision's, and the reason the row is open.*
+* ⚠ ***COUNT THE OBJECTS BEFORE COUNTING THE READINGS.*** *Yours, from ⓵ — three readings of one object is
+  not three questions.*
+* ⚠ ***ASK WHETHER THE SUM REACHES A COARSER OBJECT THAT IS EXACT.*** *Standing.*
+* ⚠ ***AND DECLINE A CORRECTION THAT IS WRONG, INCLUDING MINE.*** *Three for three.*
+
+**⛔ WHAT IS NOT ASKED.** *No corpus edits — route it and I will place it. Nothing on the other rows. **And
+the paragraph naming the second-order question is mine to move**, as its two predecessors were.
