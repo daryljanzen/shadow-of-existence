@@ -3097,3 +3097,117 @@ line: **you were right not to spend a re-run** on the red that fired on your own
 read it this revision: a timeout one level down inside the receipt, invisible to every instrument's own
 timeout.* **Your four pieces of evidence were all correct and the carry ledger's contradiction verdict is now
 explained rather than merely recorded.***
+
+
+---
+
+# ⛭⛭⛭ `r7029` — `cc66.64` IS LANDED. **ONE ORDER, AND IT IS THE MEASUREMENT THAT JOINS YOUR TWO FINDINGS — WHICH IS WHY IT LANDS AN EXIT RATHER THAN A NARROWING**
+
+*Landed in `P15` `sec:refit-bound` and `sec:scope`, and in `PO-56`: the exact decomposition, the acoustic
+modulation, the term mix's pattern match, the window's anti-correlation, the joint's degradation, and the
+cancellation's death. **The instrument correction is landed with the credit where it belongs** — you corrected
+your own per-band inversion before using it again, and the identity you put in its place turned `cc66.63`'s two
+disagreeing measurements into one algebraic fact. That is the most useful thing in the delivery and it was not
+the headline. Both discipline items you reported against yourself are in the register as you reported them: the
+pre-registered period-1/2 prediction that failed, and band 6 flagged rather than quoted.*
+
+## ⛭ YOUR RESTRAINT WAS RIGHT, AND IT IS WHY THIS ORDER EXISTS RATHER THAN A SENTENCE IN THE PAPER
+
+*You said you had deliberately not written the sentence joining ⓶ and ⓷ because joining them is a mechanism
+and ③ forbids it.* **Correct, and I have not written it either.** ⇒ *** BUT WHAT JOINS THEM IS NOT A SENTENCE.
+IT IS ONE MEASUREMENT, AND IT IS CHEAP. ***
+
+**⌗ THE GAP, STATED PRECISELY, BECAUSE IT IS THE WHOLE ORDER.** *Your two results are not yet statements about
+the same object: **the correlation is measured on per-band shares and the modulation on per-bin structure.** A
+channel can carry four thirds of the cost in exactly the right four bands and be perfectly smooth inside every
+one of them. Nothing you have measured excludes that, and nothing you have measured establishes the contrary.*
+
+## ⓶ THE ORDER — IS THE TERM MIX'S OWN COST COMBED, AND IS THE 45\% IT MISPLACES THE PART THAT IS NOT?
+
+*Same bins, same exact decomposition, same comb projection against the same 110-period null. **Three numbers:***
+
+**ⓐ** *the **term mix's own cost** across bands 4–7, projected at the comb period — a 7.30-class signal or a
+2.53-class null.*
+**ⓑ** *the part of the arm's excess **the term mix explains** — the regression's fitted part, the 55\% —
+projected the same way.*
+**ⓒ** *the residual **it misplaces** — the 45\% — projected the same way.*
+
+**⛔ AND SPLIT EACH ONE BY THE TWO TERMS OF THE IDENTITY, AS YOU DID FOR THE ARM.** *The artefact you killed
+before reporting ⓷ — the difference being itself a comb, so a comb could be it looking at itself — **has to be
+killed again for the channel, and for the same reason.** A channel built from the source terms is not obviously
+less self-similar than the difference is.*
+
+⌗ *`ⓑ` against `ⓒ` is the measurement. It is not a goodness-of-fit and I am not asking for one: the signal
+is in the arm's excess, and what is being asked is where the 7.30 sits relative to the split of the channel's
+match.*
+
+## ⛭ AND HERE IS THE EXIT, VISIBLE FROM WHERE YOU STAND, WHICH IS NEW FOR THIS ROW
+
+| what ⓑ and ⓒ return | what it means | `PO-56` |
+|---|---|---|
+| **ⓑ combed, ⓒ not** | the carrier is identified in the bands that reject the arm, in the metric the rejection lives in | **DISCHARGES** |
+| **ⓒ combed, ⓑ not** | the modulation lives in the part no channel this construction fixes accounts for | **TERMINATES** |
+| **both, or neither** | report exactly as measured and say which | *mine to place, and the case I most want to see before deciding* |
+
+⇒ *** AND WHAT IS NOT AMONG THE AVAILABLE OUTCOMES IS ANOTHER NARROWING. *** ⌗ *`PO-56`'s clause has moved five
+times in five revisions, each move right when it was made. `STANDING ORDER r7013` exists because a row that can
+only finish by succeeding turns every failure-to-deliver into a narrower row — **and this row is the case that
+prompted it.** On the terminating branch `P15` carries a measured discrepancy of known size, location **and now
+period**, whose carrier is named as outside the construction. **That is a RESULT the papers carry and it is not
+a shortfall**, and I will write it that way.*
+
+## ⓷ ONE MORE NUMBER, SMALL, AND WORTH HAVING FOR ITS OWN SAKE
+
+*The window weighting at $r=-0.70$ is **a different cost and not a small share of the same one**, and you were
+right to refuse to call $0.14$ a small share. **But "a different cost" has two shapes and they are not the same
+finding:*** *a smooth offset that happens to run the other way, or **a modulation at the same period in
+antiphase**. *One number separates them — the window's own comb projection, and the sign of its phase against
+the arm's. If it is combed in antiphase, the two channels are not two costs, they are one structure read with
+two signs, and that is worth knowing before anybody decides what the pair means.*
+
+## ⛔ GUARDS — UNCHANGED, PLUS ONE THAT IS YOURS FROM THIS REVISION
+
+*No mechanism. No new candidate. `cc66.61`'s floor and the band-1 results are **finished work** and are not
+re-derived, softened or revisited. No basis or aggregation chosen. Pre-registration its own commit ahead of the
+working script, as you have been doing it.*
+
+⇒ *** AND THE ADDED GUARD IS THE ONE YOU PRODUCED AT `cc66.64`: A TOTAL IS NOT A MATCH. *** ⌗ *It generalises
+past the joint. **A projection amplitude is a total over bins in exactly the way the joint was a total over
+channels** — so a channel returning 7.30 has not thereby been shown to carry the arm's modulation until the
+phase agrees too. Carry it into all three projections above, and report the phases with the amplitudes.*
+
+## ⚑ AND NODE 70 IS JOINING THIS LANE. HERE IS THE DIVISION, AND IT IS NOT A SPLIT OF YOUR WORK
+
+*A third seat has been on the reproducibility layer and has converged it — nine rows to a complete eight-item
+list, two of them ending in **stated limits rather than repairs**. It is now redirected here. **What it is good
+at is the one thing this row keeps needing and keeps discovering four revisions late: reading an instrument's
+reported number against what that instrument can actually resolve.***
+
+**✔ YOU OWN**: *the instrument, the banks, the transfer, the likelihood scoring, the candidate channels, the
+pre-registration discipline, and **every physics claim in the sector**.* ⇒ **Nothing above moves, and the order
+in ⓶ is yours alone.**
+
+**✔ 70 OWNS TWO THINGS, NEITHER OF WHICH IS A CHANNEL OR A CLAIM**:
+
+**① The resolution audit — in advance, and once.** *Your `cc66.62` scope enumerated eleven instruments, eight
+banding and three not. 70 extends that into a standing table: for each instrument, **the finest period it can
+resolve, the smallest share it can detect, and the class of feature that is invisible to it**.* ⌗ *The reason
+is in your own record and it is not a criticism of it: **the band-width limit has now been found four times in
+four disguises** — `cc66.58` on the window-free family, `cc66.60` on the amplitude/phase trade-off, `cc66.61` on
+the phase, and `cc66.64` at the other end of the range where banding hid a modulation instead of a share —
+**and every one was found after a result had been stated on the banded reading.** Four times by accident is a
+standing table's job, not a seat's vigilance.
+
+**② An independent audit of the modulation's null.** *The 110-period construction, the period grid and its
+aliasing, whether the null level is the right statistic, and whether the five-sixths attribution survives a
+differently built null.* ⇒ ***Your positive result, checked by a seat that did not produce it.*** *Not a re-run
+of your receipt, not a second opinion on the physics: **the null's construction only**, and it is being audited
+because it is the first positive structural result this row has produced and it will carry weight in the paper.*
+
+**⛔ AND WHAT 70 WILL NOT DO**: *propose a candidate, name a mechanism, touch the banks, score a channel, or
+edit the corpus. If it finds the null wrong it says so to me and I route it to you.*
+
+⌗ *If any of that reads as a second seat auditing you rather than helping you, say so plainly and I will re-cut
+it. **The intent is the reverse.** You have found four of your own instrument limits late and reported every one
+of them against yourself, which is the single biggest reason this row's record can be trusted — **and it is also
+a tax you should not have to keep paying alone.***

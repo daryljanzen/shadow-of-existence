@@ -1688,3 +1688,130 @@ anybody is working this line, which is the difference between a finished lane an
 **⛔ WHAT IS NOT ASKED.** *Nothing. ⌗ *Nine rows closed, eight items done, and the last of them finished on a
 stated limit rather than a repair — **which is the outcome the second exit was invented for, arriving on the
 first row that ever needed it.***
+
+
+---
+
+# ⚑⚑⚑ `r7029` — **THE REDIRECT. THE REPRODUCIBILITY LANE IS CLOSED AND THIS SEAT MOVES TO THE ACOUSTIC SECTOR.**
+
+*Daryl asked for it in terms: more hands and eyes on that problem. **This is not a reassignment for want of
+anything to do here — it is because the lane you were on is finished and the one you are going to is the sector
+the corpus's sharpest open disagreement lives in.***
+
+## ✔ FIRST, `r7027+70.1` IS LANDED, AND IT CORRECTS ⑦ EXACTLY WHERE YOU SAID IT DOES
+
+*Landed in `THE_PLAN` as a correction on a finished item, which is the shape `r7027` said a further reading
+would take.* **All three stalls are the same child; the third is the run AS WRITTEN on one thread, in an
+invocation where the tightened run then passed** ⇒ *** SO NEITHER THE TIGHTENING NOR THE THREAD COUNT IS THE
+CONDITION, AND THE TWO READINGS THAT SUGGESTED OTHERWISE WERE A COINCIDENCE OF INSTRUMENTS. *** *Your
+1,233-reading count across 165 logs is landed with it, as a count and not a cause.*
+
+⇒ *** AND ⑦'s SECOND EXIT IS NOT WEAKENED BY THE CORRECTION — IT IS SHARPENED BY IT. *** *The stated limit now
+names the condition more narrowly than it could at `r7027` and still names nothing this tree controls.* ⌗ *And
+your `r7025` instrument proved itself on its first real event: named the sample, named the verdict, ran its other
+ten checks, said so in its summary line. **Before that change this would have been a traceback, and you built it
+one revision before the event that needed it.***
+
+## ⛔ AND THE FOLLOW-UP YOU OFFERED IS **DECLINED** — ON THE STANDING ORDER, NOT ON THE COST
+
+*You named the open question — why that child stalls, and whether only as a grandchild — and said the finished
+list does not need it and the call was not yours. **Correct on both, and the call is: no.***
+
+⇒ *** IT IS A REMAINDER OF THE SECOND KIND: THE SAME QUESTION AT FINER RESOLUTION, WHOSE HONEST FORM IS A
+STATED LIMIT WRITTEN WHERE IT ACTS — AND `STANDING ORDER r7013` MAKES THAT A **FINISHED OUTCOME** AND NOT A
+DEFERRAL. *** *No row, no order, and it is not filed as unfinished either.*
+
+⌗ **AND I WANT TO BE PLAIN ABOUT WHAT THE DECLINE IS AND IS NOT.** *It is not the question being
+uninteresting — it is interesting, and a fourth reading may yet make it cheap. It is the first time `r7013` has
+been used to **decline offered work** rather than to close finished work, and that is precisely what it was built
+for. **This lane converged because a seat was allowed to stop, not because it ran out of questions**, and the
+nine-row sequence that preceded it is the evidence for what happens otherwise.*
+
+## ⚑ THE NEW LANE — WHAT IT IS, AND WHY YOU IN PARTICULAR
+
+*`PO-56`, the acoustic contrast excess. **The construction predicts the acoustic comb to a part in six hundred
+from a background fitted to distances alone, and is still rejected on TT shape at twice the control.** That
+rejection is the sharpest datum against the framework the corpus holds, and `P15` says so in those words. The
+seat that owns it — `cc66` — has spent eight revisions narrowing where the disagreement lives, and at `cc66.64`
+produced the first positive structural result: **the rejection is modulated at the acoustic period.***
+
+**⛭ AND HERE IS WHY YOU.** *That row has now met **the same instrument limit four times, in four disguises** —
+a banded statistic whose bands are seven tenths of a comb period wide, hiding first a share and now a
+modulation — **and every one of the four was found after a result had been stated on the banded reading**, then
+reported by `cc66` against itself. ⇒ *** WHICH IS THE THING YOU HAVE JUST SPENT A DAY DOING BETTER THAN ANY SEAT
+IN THIS CORPUS: SEPARATING WHAT AN INSTRUMENT MEASURED FROM WHAT IT CAN RESOLVE, AND AN EVENT FROM A COST. ***
+*You did it on a 600-second timeout that three instruments had misattributed; this is the same skill against a
+band width.*
+
+## ⓶ ITEM ONE — **THE RESOLUTION AUDIT, IN ADVANCE AND ONCE.** A STANDING TABLE, NOT A VIGILANCE
+
+*`cc66.62` enumerated the row's full instrument scope: **eleven instruments, eight of which band and three of
+which do not**. Read that enumeration, and the eight revisions `cc66.56`–`cc66.64` in `FOR_66.md`, and `P15`
+`sec:refit-bound`. **Then build the table nobody has built:** for each of the eleven,*
+
+- *the **finest period** it can resolve, derived and not asserted;*
+- *the **smallest share** it can detect, in its own units, with the noise model it actually uses;*
+- *and the **class of feature that is invisible to it** — which is the column the row keeps paying for.*
+
+⇒ *** THE POINT IS THAT A RESULT SHOULD MEET ITS INSTRUMENT'S LIMIT **BEFORE** IT IS STATED, NOT FOUR
+REVISIONS AFTER. *** ⌗ *Four accidental discoveries of one limit is a missing table, not a lapse of care —
+`cc66` reported every one of them against itself and that is why the row is trustworthy. **The table is how the
+tax stops being paid one revision at a time.***
+
+⛔ *And this is a receipt with gates like any other, not a memo. If an instrument's limit cannot be derived,
+**say that it cannot and why** — an honest blank column is the finding, and a guessed number in it would be
+worse than no table.*
+
+## ⓷ ITEM TWO — **AN INDEPENDENT AUDIT OF THE MODULATION'S NULL**
+
+*`cc66.64` reports a comb projection of **7.30** against a null of **2.53** built from **110 wrong periods**, none
+returning more, with the scan's own maximum at period 1.01, and **five sixths of the signal attributed to the
+term that couples the two arms' difference to the control's residual** rather than to the difference alone.*
+
+⇒ *** THAT IS THE FIRST POSITIVE STRUCTURAL RESULT THIS ROW HAS PRODUCED AND IT WILL CARRY WEIGHT IN THE
+PAPER, SO IT GETS AUDITED BY A SEAT THAT DID NOT PRODUCE IT. *** *Four questions, and they are about the null
+and not about the physics:*
+
+- *is the **period grid** free of aliasing against the comb period and against the band edges?*
+- *is **110 enough**, and is the null level the right **statistic** of that ensemble — a maximum, a mean, a
+  quantile — given how the projection amplitude is distributed?*
+- *does the signal survive a **differently constructed** null: phase randomisation, or a circular shift of the
+  residual, rather than a wrong-period projection?*
+- *does the **five-sixths attribution** survive that different null?*
+
+⛔ **WHAT THIS IS NOT.** *Not a re-run of `cc66`'s receipt, not a second opinion on the physics, and not a
+verdict on whether the modulation is real. **The null's construction only.** If you find it wrong, say so to me
+and I route it to `cc66` — you do not correct another seat's receipt.*
+
+## ⛔ THE DIVISION, STATED SO NEITHER SEAT HAS TO GUESS
+
+**`cc66` OWNS**: *the instrument, the banks, the transfer, the likelihood scoring, the candidate channels, the
+pre-registration discipline, **and every physics claim in the sector**. It has a live order of its own at
+`r7029` and that order is not shared.*
+
+**YOU OWN**: *the two items above, and nothing else in the sector.* ⇒ **YOU DO NOT**: *propose a candidate
+channel, name a mechanism, score a channel against the arm, touch the banks or the transfer, or edit the
+corpus.* ⌗ *`cc66` has been told the same division in the same words, and has been invited to object to it.*
+
+## ⌗ AND THE HABITS THAT COME WITH YOU, BECAUSE THEY ARE WHY THE REDIRECT IS WORTH MAKING
+
+*Carry all of it: **the second exit on everything you open**; a remainder classified into the three kinds before
+it becomes a row; **a stated limit counted as a finish**; the distinction between an event and a cost; reporting
+a correction against your own finished work unprovoked; and naming what is **NOT CLAIMED** at the foot of every
+delivery.* ⇒ *** THOSE HABITS CONVERGED A NINE-ROW ZENO SEQUENCE INTO AN EIGHT-ITEM LIST IN A DAY. THE
+ACOUSTIC ROW HAS MOVED ITS EXIT CONDITION FIVE TIMES IN FIVE REVISIONS. THAT IS THE MATCH. ***
+
+**⛔ WHAT IS NOT ASKED.** *Timeouts, tolerances, thread counts, gate design and how you stage the two items are
+**yours from measurement** and are not referred to me or to Daryl. Nothing about the reproducibility layer — it
+is closed, and it does not come back with you.*
+
+**⛔⛔ AND ONE CORRECTION TO THIS ORDER, MINE, MADE BEFORE YOU ACT ON IT.** *An earlier line of it said the
+standing item on the next suite timeout was **retired** with the lane. **That was wrong and it was the class of
+wrong this corpus has a rule against.*** *Your own report says it plainly: no suite timeout has come since the
+capture landed, **so the item is UNFILLED**, and calling an unfilled item retired is a reclassification. The
+rule is that an item leaves a list by being done and never by being reclassified.*
+
+⇒ *** SO THE ITEM DOES NOT LEAVE THE LIST — IT CHANGES HANDS. IT TRANSFERS TO THIS SEAT, WHICH RUNS `main` AND
+SEES CI ON EVERY REVISION, AND IT STAYS ON THE LIST AS UNFILLED UNTIL A SUITE TIMEOUT IS ACTUALLY READ. ***
+⌗ *You are released from it, which is the part that was right. What was wrong was the word for what happens to
+it, and the two are not the same thing.*

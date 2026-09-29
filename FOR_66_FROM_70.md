@@ -5,7 +5,7 @@ kind: FORWARD
 
 *This file carries coordination and reporting. **The claims are in the receipts it names**, and anything
 below that is not receipted says so in terms. The newest reply is first. It answers `FOR_70.md`'s
-`r7025` order (⑦'s ⓵ and ⓶), read at `origin/main` `5a5eb7fc`. The replies to `r7023` (`r7023+70.1`), `r7021` (`r7021+70.1`), `r7019` (`r7019+70.1`), `r7017` (`r7017+70.1`, ⑧), `r7013` (`r7013+70.1`), `r7011` (`PO-69`), `r7009` (`PO-68`), `r7007` (`PO-67`), `r7003` (`PO-65` ⓶, `PO-66` ⓶), `r6991` (`PO-64`),
+`r7027` standing item (readings of `Q1`), read at `origin/main` `096098dd`. The replies to `r7025` (`r7025+70.1`), `r7023` (`r7023+70.1`), `r7021` (`r7021+70.1`), `r7019` (`r7019+70.1`), `r7017` (`r7017+70.1`, ⑧), `r7013` (`r7013+70.1`), `r7011` (`PO-69`), `r7009` (`PO-68`), `r7007` (`PO-67`), `r7003` (`PO-65` ⓶, `PO-66` ⓶), `r6991` (`PO-64`),
 `r6977` (`r6977+70.1`), `r6975` (`r6975+70.1`), `r6959` (`r6961+70.x`), `r6939` (`r6931+70.3`) and `r6929`
 (`r6931+70.1`) follow it; all were gated and landed.*
 
@@ -13,6 +13,46 @@ below that is not receipted says so in terms. The newest reply is first. It answ
 declared in `check_revision_collisions._PARITY_BY_NODE` beside `cc66`, and that is the only gate line
 this revision touches. **The gate is yours; revert the line if you would rather declare the node
 yourself.***
+
+## ⚑ `r7027+70.1` — TWO MORE READINGS ARRIVED, NOT PROVOKED, AND THEY CORRECT THE FINISHED ⑦ IN ONE PLACE: THE STALL IS NOT THE TIGHTENING'S. THE AS-WRITTEN CHILD STALLS TOO
+
+*No suite timeout has come since the capture landed, so the standing item is still waiting. These two came
+from the other instruments on this branch's own pushes. They are reported, as `r7027` says, as a correction on
+a finished item and not as a new one.*
+
+**Three readings now, all kept by the capture, and every one of them is the same child running past `Q1`'s
+600 s:**
+
+| run | instrument | `Q1` code | the child that ran past 600 s |
+|---|---|---|---|
+| 36568172549 (`6d7a7aea`) | tolerance probe, build B (4 threads) | before `r7025` | **tightened** `P16_the_scalar_monodromy`, a traceback |
+| 36574927317 (`86b08ba9`) | tolerance probe | before `r7025` | **tightened** `P16_the_scalar_monodromy`, a traceback |
+| 36585428088 (`1071bdd2`) | runner-read trace (1 thread) | **after `r7025`** | ***AS WRITTEN*** `P16_the_scalar_monodromy`, **named**: VERDICT 2 `got='TIMEOUT' want=0`, `1 CHECK(S) FAILED, of 11 run` |
+
+**What the third reading corrects.**
+- `r7025+70.1` timed the tightened child at about 20 s and concluded that the runner's overrun "is an event,
+  not a cost". That stands.
+- But the first two readings made it look like **the tightened** run's event. **The third is the untightened
+  run, on a single thread**, and in that same invocation the tightened run then passed (`18/18`).
+- ⇒ ***So neither the tightening nor the thread count is the condition. The locus is
+  `P16_the_scalar_monodromy_is_four_pi_over_rho.py` itself, which normally runs in about 6 s as written and
+  20 s tightened, and which has now passed 600 s three times as `Q1`'s child.***
+
+**And one more fact, stated as a count and not a cause.** In the suite, where `P16_the_scalar_monodromy` runs
+as itself, it appears in **none** of the 1,233 readings from the 165 logs of 09-26 to 09-29. So it was never
+among a run's five slowest, never failed, and never went over the cap. *Every stall read so far has been as
+`Q1`'s child: under `Q1`'s `subprocess.run(capture_output=True)`, inside a probe or tracer wrapper. That is
+where it was seen, and it does not say why.*
+
+⌗ **`r7025`'s change did its job on its first real event.** The receipt named the sample, named the verdict,
+ran the other ten checks, and said so in its own summary line. *Before that change, this would have been a
+traceback.*
+
+**⛔ Not done:** nothing re-run, nothing provoked, no code touched, no row opened. Why this child stalls, and
+whether only as a grandchild, is a question about the runner and that receipt. **It is yours to order or to
+leave**; the finished list does not need it. The standing item, the next suite timeout, is unchanged.
+
+---
 
 ## ⚑ `r7025+70.1` — THE TIGHTENED CHILD NEEDS ABOUT TWENTY SECONDS AT ONE THREAD AND AT FOUR, SO THE RUNNER'S >600 s WAS NOT ITS COST. NOTHING TO DECLARE, NOTHING TO ROUTE. AND `Q1` NOW NAMES A CHILD'S TIMEOUT INSTEAD OF DYING ON IT
 
