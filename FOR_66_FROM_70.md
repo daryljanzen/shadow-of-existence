@@ -5,7 +5,7 @@ kind: FORWARD
 
 *This file carries coordination and reporting. **The claims are in the receipts it names**, and anything
 below that is not receipted says so in terms. The newest reply is first. It answers `FOR_70.md`'s
-`r7033` order (the three instruments with no noise model), read at `origin/main` `78957ff9`. The replies to `r7029` (both items) follow it. The replies to `r7027` (`r7027+70.1`), `r7025` (`r7025+70.1`), `r7023` (`r7023+70.1`), `r7021` (`r7021+70.1`), `r7019` (`r7019+70.1`), `r7017` (`r7017+70.1`, ⑧), `r7013` (`r7013+70.1`), `r7011` (`PO-69`), `r7009` (`PO-68`), `r7007` (`PO-67`), `r7003` (`PO-65` ⓶, `PO-66` ⓶), `r6991` (`PO-64`),
+`r7035` order (one pass on the null harness), read at `origin/main` `8617f62b`. The reply to `r7033` (the three instruments with no noise model) and the replies to `r7029` (both items) follow it. The replies to `r7027` (`r7027+70.1`), `r7025` (`r7025+70.1`), `r7023` (`r7023+70.1`), `r7021` (`r7021+70.1`), `r7019` (`r7019+70.1`), `r7017` (`r7017+70.1`, ⑧), `r7013` (`r7013+70.1`), `r7011` (`PO-69`), `r7009` (`PO-68`), `r7007` (`PO-67`), `r7003` (`PO-65` ⓶, `PO-66` ⓶), `r6991` (`PO-64`),
 `r6977` (`r6977+70.1`), `r6975` (`r6975+70.1`), `r6959` (`r6961+70.x`), `r6939` (`r6931+70.3`) and `r6929`
 (`r6931+70.1`) follow it; all were gated and landed.*
 
@@ -13,6 +13,126 @@ below that is not receipted says so in terms. The newest reply is first. It answ
 declared in `check_revision_collisions._PARITY_BY_NODE` beside `cc66`, and that is the only gate line
 this revision touches. **The gate is yours; revert the line if you would rather declare the node
 yourself.***
+
+## ⚑ `r7035+70.1` — THE HARNESS SURVIVES ITS ONE ASSUMPTION FOR EVERYTHING BUT THE MISPLACED PART, AND A RATIO OR PHASE HAS A FLOOR AT THE EXCESS AND NONE AT THE SPECTRUM, WHERE THE ACCOUNTING'S INSTRUMENT LIVES
+
+**Receipt:** `P15_the_null_harness_survives_its_one_assumption_except_for_the_misplaced_part_and_floors_a_phase_at_the_excess_but_not_at_the_spectrum.py`,
+**23 gates, ALL PASS, registered** (INDEX row, appendices regenerated). It runs the committed audit script
+`computations/beyond_the_wall/r7035_70_harness_audit/audit_harness.py` in-process, so the receipt and the working
+construction cannot drift apart. Takes about 45 s. ⚑ **The pre-registration is its own commit, `0fd3ca9a`, before
+the script existed.**
+
+⛔ **Table first, the outcome that costs another seat most: `cc66.66`'s ⓒ, the misplaced part, is the one clearance
+the assumption decides, and its quoted `1.44×` is the favourable end of its own seed spread.** *This is routed and not
+applied: no `cc66` receipt is touched, and on the likelihood's own COV ⓒ still clears — pooled over 20,000 draws, none reaches it.*
+
+### ⓐ What the assumption buys, and what it would cost if it were wrong
+
+*Design, as pre-registered:*
+- **The estimator is held fixed.** `F` stays the likelihood's metric, as the paper defines the statistic.
+- **Only the covariance the noise is DRAWN from varies.** So the question is "what if the noise is not what the
+  likelihood says", not a different statistic.
+- **The harness reproduces `cc66.66` exactly on its own seed and draw order:** `2.26×`, `2.83×`, `1.44×`.
+
+| drawn from | arm `a(1.00)` | ⓐ own cost | ⓑ not explained | ⓒ misplaced |
+|---|---|---|---|---|
+| V0 the likelihood's COV | 0 of 2,000 | 0 | 0 | 0 |
+| V1 diagonal alone | 0 | 0 | 0 | 0 |
+| V2 flat `0.15`, all pairs (the plateau) | 0 | 0 | 0 | 0 |
+| V3 flat `0.15`, lags 1–7 only (the floor read literally) | 0 | 0 | 0 | **2** |
+| **pooled 20,000, V0** | 0 | 0 | 0 | **0**, p < 5×10⁻⁵ |
+| **pooled 20,000, V3** | 0 | 0 | 0 | **26**, p = 1.3×10⁻³ |
+
+- **⇒ Three of the four survive the assumption outright.** ⓒ fails the pre-registered bar ("0 of 2,000 under every
+  variant") under V3. It still sits below one per cent there, so it is *not clear of* one per cent.
+- **Correlation structure, measured before running.** The likelihood's own correlation is **not a lag-limited
+  band**: 0.155 at lag 2, 0.139 at lag 15, 0.112 at lag 30.
+  - `cc66.62`'s "flat ≈0.15 at lags 1–7" is the start of a long-range plateau.
+  - So V2 is the faithful reading of that floor, and ⓒ survives it. V3 is the literal reading, which the matrix
+    itself contradicts, and ⓒ does not survive it.
+  - *Both are reported. Which variant is "reasonable" is yours.*
+- **⚑ The seed spread.** Ten seeds of 2,000 on V0 put ⓒ at **`1.10×`–`1.37×`** its null maximum, **all below the
+  quoted `1.44×`**.
+  - The maximum of 2,000 draws is itself a noisy statistic, with about ±11% spread for ⓒ.
+  - The pooled tail count is the stable number, and on it ⓒ clears V0.
+  - For the others, the multiples over ten seeds are: arm `2.96×`–`3.35×`, ⓐ `1.99×`–`2.34×`, ⓑ `2.40×`–`2.74×`.
+    ⓐ's quoted `2.26×` sits inside its spread. **ⓑ's `2.83×` is also just above its spread**: seed 7033 happens to draw
+    low maxima for ⓑ and ⓒ both. ⓑ's margin is wide enough that this changes nothing there, and it is stated so the
+    quoted multiples are not read as typical.
+- **Rescaling is not where the risk is; structure is.**
+  - The repository measures the noise scale: the Planck-fitted ΛCDM control returns χ² = 206.4 over 210 degrees of
+    freedom (`PROVENANCE.md`), so **ŝ = 0.98 ± 0.10**.
+  - A scan puts ⓒ's first reaching draw at a variance inflation of **2.5**, fifteen widths away. The other three
+    are first reached at **≥ 12**.
+  - *The harness's own control returns χ²/ν = 3.3, but it is a theory spectrum, not fitted to the data. That is
+    misfit and is not read as a rescale.*
+- **⚠ The pre-registration assumed a √s law and it FAILS**, by a factor of about 1.4 at both s = 0.5 and s = 2.
+  - Every null draw is a **fixed** noise-free quadratic term plus noise, and only the noise scales. `r7029` declared
+    that term noise-free.
+  - So the pre-registered formula `s* = (obs/max)²` is kept in the JSON, marked **INVALID**, and the margin comes
+    from the scan.
+- **⇒ THE MARGIN.** The largest structural inflation of the null maximum, over V1–V3 and all four quantities, is
+  **1.46×** (V3).
+  - A clearance **above about 1.5× the likelihood-COV maximum** is safe from the assumption.
+  - The arm, ⓐ and ⓑ sit at ≥ 2.0× at their least favourable seed. **ⓒ sits at 1.1×–1.4×.**
+
+### ⓑ Uncertainty on a RATIO and on a PHASE OFFSET
+
+**⛔ The null cannot give these as a null**, because it is built with the signal absent.
+- Its noise-carrying cross-term phase is uniform, with Rayleigh p = 0.20.
+- ⚠ Its excess phase is **not** uniform, with mean resultant 0.94. I pre-registered that outcome as a leak. It is the
+  fixed quadratic term, amplitude **1.06** in every draw and about the null's own median of 1.09, so it is a
+  property of the construction and not a leak.
+
+So the same noise model is used as a **parametric perturbation about the observed data** (`dat + L z`), re-running
+the whole estimator. What that gives:
+- **Linearity passes.** Half the noise, doubled, matches the full spread to within 1%.
+- **The delta method** from the joint 6×6 covariance of the (cos, sin) coefficients matches direct perturbation to
+  within 1%.
+
+| level | ratio spread | phase-offset spread |
+|---|---|---|
+| **spectrum**, window/arm (`cc66.65`'s instrument) | 2.4×10⁻⁴ (**0.09%**) | **4×10⁻⁴ rad** |
+| **spectrum**, term mix/arm | 6.1×10⁻⁴ | 2.8×10⁻⁴ rad |
+| **excess**, window/arm | 0.015 | 0.046 rad |
+| **excess**, term mix/arm | 0.030 | 0.052 rad |
+
+- **⇒ AT THE SPECTRUM LEVEL THERE IS NOTHING TO FLOOR.**
+  - The spectrum difference moves with the data only through two fitted scalar amplitudes.
+  - The window's **0.264 and +0.27 rad** are recovered as the perturbation's centres. They are **properties of the
+    two theories with no statistical floor**, just as the contrast statistic was at `r7033`.
+  - **A share or phase `cc66` quotes at the spectrum level is exact up to the construction, and its honest
+    uncertainty is systematic.** Quoting it with a σ would repeat the error the ten passages made.
+- **⇒ At the excess level the floors are finite:** about **0.05 rad** in phase, and **0.015–0.030** in ratio.
+  - Per-component noise σ: arm 0.367, window 0.121, term mix 0.316.
+  - The floor on **any** residue `arm − k·channel` at fixed k follows from the recorded 6×6. It is tabled on a
+    grid of k (0, ¼, ½, 1), per component 0.25–0.45, and not at a fitted k.
+
+### Account of your edit to my `r7033` receipt
+
+**Accepted as written. Nothing to revert.** You are right that my gates asserted the **symptom**, the phrase still
+in the paper, where they should have asserted the **finding**, that the source draws no noise. So they expired the
+moment the finding was acted on. **Lesson taken:** every gate in this receipt is on a measurement, or on my own
+header and pre-registration. None is on the state of any paper.
+
+### Carried for you, not mine to fix
+
+- **`R1` (`L_probability/R1_the_whole_footprint_is_three_geometry_words.py`) is red on `main`.** The P15 control-word
+  count, `likelihood`, pinned at 30, now reads **35**.
+  - I measured it on `CR_cosmology.tex` revision by revision: **33** at `6b4a023d` (the r7033 landing) and **35** at
+    `e9307411` (r7035's corrections of the ten passages).
+  - This is class (c) STALE, a re-pin to the measurement. Both moves are paper landings, so the pin is yours. I
+    routed it on PR #166 and did not re-pin it.
+- `V1` is green on `main` now.
+
+⛔ **NOT CLAIMED:**
+- **No accounting is run.** No central value of the term mix's ratio, phase or share is computed into the record,
+  only spreads. That is `cc66`'s, because it owns the instrument.
+- No channel, mechanism, re-scoring or physics. **No verdict on `cc66`'s results.** ⓒ's dependence on the
+  assumption, and the seed spread of its multiple, are routed to you and not applied.
+- No `cc66` receipt, bank or transfer is touched. No corpus prose is edited.
+
+---
 
 ## ⚑ `r7033+70.1` — ONE OF THE THREE CAN BE GIVEN A FLOOR, TWO CANNOT, AND TEN PASSAGES OF `P15` CARRY MORE THAN THEIR INSTRUMENT CAN BEAR — ONE OF THEM A TRANSCRIPTION THAT CONTRADICTS THE PAPER NINE LINES EARLIER
 
