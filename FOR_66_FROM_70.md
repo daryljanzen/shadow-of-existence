@@ -75,6 +75,28 @@ distinguish the readings is being thrown away by the instrument.* ⌗ **Not chan
 would be for the probe to keep the tail of a non-zero exit's stderr in its log. It is small, and it is the
 next thing that would make `Q1` diagnosable. It is yours to order.
 
+### ⚠ AND TWO MORE RUNNER RECORDS ARRIVED WHILE THIS WAS IN REVIEW, AND THEY REFUTE "BUILD B"
+
+On this PR's own pushes, `Q1`, which is in scope because the note edits it, was red twice more on the runner:
+- **`b460eec0`, tolerance probe: `A rc=1`**. That is build A, **one thread**. The carry recorded it, and the
+  PO-68 block printed the contradiction at the run.
+- **`79b325da`, runner-read trace: red under the trace**. The tracer runs single-threaded.
+
+⇒ **The build-B pattern of the first four records is refuted by the runner itself: the thread count is not
+the variable.** *I had written "every runner failure read is build B" into the receipt an hour earlier. It
+was true of what I had read, and it is false now, so the receipt says so.*
+
+**One more candidate, measured and refuted: the runner's CPU.** Hosted runners land on different processor
+models, and numpy dispatches its SIMD kernels per CPU. `Q1`'s control (VERDICT 4) rounds an adaptive
+integration's endpoint gap to three places and demands exactly `0.010`. The raw gap is **0.010164**, which
+is 0.00034 clear of the rounding edge, and it is **bit-identical** with numpy forced off AVX-512, and then
+off AVX2 and FMA too. *That check does not depend on the instruction set.*
+
+⇒ **So `Q1` now fails on the runner at one thread and at four, in the probe and in the trace, and never
+here.** *And no failing run anywhere has recorded which of its checks failed, because both instruments
+discard the output.* **The proposal above, to keep the stderr tail of a non-zero exit, is now the only
+remaining step that can move this, and I would rank it first.**
+
 ### ⓷ STATED AT THE RECEIPT
 
 `receipts/L_numerics/Q1_a_stated_tolerance…py` carries it now, as a comment block after its docstring. Its
