@@ -5,6 +5,46 @@ current: r6921
 job: The programme's work, route and destination — the lanes, the per-turn operating layer, the four-step state advance
 ---
 
+## ⛭⛭⛭ THE REPRODUCIBILITY LAYER'S COMPLETION CRITERION — *what FINISHED looks like, as a finite list (opened r7013, on Daryl's instruction that this work converge rather than run)*
+
+**⌗ WHY THIS EXISTS.** *That layer has closed nine rows and each has opened a successor: `PO-59`, `PO-60`,
+`PO-62`, `PO-64`, `PO-65`, `PO-66`, `PO-67`, `PO-68`, `PO-69`. **Every closure has been real and every
+successor has been narrower**, and the sequence still had no end in it, because a lane with a cadence and no
+destination cannot tell progress from motion.* ⇒ ***A lane is finished when a stated list is complete, and a
+lane without such a list is a lane that cannot finish.*** ⌗ *`STANDING ORDER r7013` stops the chain; this list
+is what the chain was supposed to be walking toward.*
+
+**⛔ AND THE LIST IS CLOSED.** *Adding an item requires saying **why the layer was not finished without it** —
+not why the item is worth doing. Plenty of worthwhile things are not on it, and that is the point of having
+one: a list that grows whenever something worthwhile appears is a cadence again.*
+
+| | what must be true | state |
+|---|---|---|
+| **①** | **Every receipt in the corpus runs, and its verdict is recorded where a later reader finds it.** | ✔ *done* |
+| **②** | **No red is silenced by a later push.** *A scoped verdict is about its push; the carry ledger holds a red until a run actually covers the receipt.* | ✔ *done — `PO-62`, `PO-65`* |
+| **③** | **The environment is pinned, and every field of the fingerprint is measured to be inside or outside the corpus's arithmetic.** *Not assumed either way.* | ✔ *done — `PO-64`, `PO-66`; 885 receipts, 33,931 values* |
+| **④** | **Every instrument's exit conditions distinguish its own findings**, so a reader who trusts an exit code learns the right one. | ✔ *done — `PO-67`* |
+| **⑤** | **A receipt whose verdict differs between trees that agree on everything it reads is detected and named**, at the moment of the run. | ✔ *done — `PO-68`, and the finding is a contradiction rather than a count* |
+| **⑥** | **Every stated limit of the layer is written at the site where it acts**, not left implied by an exclusion in a table. | ✔ *done — and it is the layer's own habit rather than a rule imposed on it* |
+| **⑦** | **No receipt carries an unexplained red.** | ⛔ ***OPEN — `Q1`, and one named blocker*** |
+
+**⛔ ⑦ IS THE WHOLE OF WHAT IS LEFT, AND ITS BLOCKER IS ONE LINE OF CODE.** *`Q1`'s verdict is **proved** not to
+come from the tree — the same commit, two lines, one red and one green — the index has been audited and misses
+nothing that can move it, and the concurrency does not reproduce it. What remains is the runner, and **the
+probe sends a receipt's output to `/dev/null`, so no failing run has ever recorded why it exited 1**.* ⇒ ***The
+one observation that would settle ⑦ is being discarded by the instrument, and keeping the tail of a non-zero
+exit's stderr is the change.***
+
+**⌗ AND THEN THE LAYER IS DONE, INCLUDING IN THE CASE WHERE `Q1` IS NEVER EXPLAINED.** *If the kept output
+explains it, ⑦ closes by repair. If it does not, ⑦ closes by the second exit: **a red whose cause is
+established as unreachable from any tree this corpus controls is a stated limit, written at the receipt**, and
+that is a finished outcome. ⛔ *What ⑦ may not become is a tenth row.*
+
+**⌗ AND THE SAME IS OWED BY ANY LANE THAT RUNS LONG.** *This is the first completion criterion in the corpus
+and it should not be the last; a lane that cannot write one has not yet worked out what it is for.*
+
+
+
 ## ★★★ ARC 18 · THE SYNTHESIS PAPER — the corpus read whole, and written as one results paper (opened r4009, Daryl)
 
 **⌗ WHAT IT IS.** *A results paper that synthesises everything the corpus delivers and connects it to the whole
@@ -203,12 +243,12 @@ corpus in `PO13_WORKING_STATE.md`.*
 
 <!-- GRAIN-CURRENCY:BEGIN -->
 
-## ⌗⌗⌗ CURRENCY — **GENERATED** by `scripts/regen_grain_currency.py`, baseline r2417, register front r7011
+## ⌗⌗⌗ CURRENCY — **GENERATED** by `scripts/regen_grain_currency.py`, baseline r2417, register front r7013
 
 > ⚠ **THE BODY BELOW STOPS AT THE BASELINE. This head is the list of what has moved since, and it is REGENERATED rather than written** — *because these documents go stale every ~20 revisions by construction, and paying that by hand is a debt that recurs rather than a defect that closes.*
 >
-> **⌗ NOT COVERED — STRUCK since r2417 (209 rows):**
-> `L-150` `L-174` `L-175` `L-176` `L-177` `L-178` `L-179` `L-180` `L-181` `L-182` `L-183` `L-184` `L-185` `L-186` `L-187` `L-188` `L-189` `L-190` `L-191` `L-192` `L-193` `L-194` `L-195` `L-196` `L-197` `L-198` `L-199` `L-200` `L-201` `L-203` `L-204` `L-206` `L-207` `L-210` `L-211` `L-213` `L-214` `L-215` `L-216` `L-217` `L-219` `L-220` `L-222` `L-223` `L-224` `L-225` `L-226` `L-227` `L-228` `L-229` `L-231` `L-232` `L-233` `L-234` `L-235` `L-236` `L-237` `L-238` `L-239` `L-241` `L-243` `L-244` `L-246` `L-247` `L-248` `L-249` `L-250` `L-251` `L-252` `L-253` `L-254` `L-255` `L-256` `L-257` `L-258` `L-259` `L-260` `L-261` `L-262` `L-263` `L-264` `L-265` `L-266` `L-267` `L-268` `L-269` `L-270` `L-271` `L-272` `L-273` `L-274` `L-275` `L-276` `L-277` `L-278` `L-279` `L-280` `L-281` `L-282` `L-283` `L-500` `L-501` `L-502` `L-503` `L-504` `L-505` `L-506` `L-507` `L-508` `L-509` `L-510` `L-511` `L-512` `L-513` `L-514` `L-515` `L-516` `L-517` `L-518` `L-520` `L-521` `L-522` `L-523` `L-535` `L-536` `L-537` `L-538` `L-539` `L-540` `L-800` `L-801` `L-802` `L-803` `L-804` `L-805` `L-806` `L-807` `L-808` `L-809` `L-810` `L-811` `L-812` `L-813` `L-814` `L-815` `L-816` `L-818` `L-819` `L-820` `L-821` `L-822` `L-823` `L-824` `L-826` `L-827` `L-828` `L-829` `L-830` `PO-10` `PO-13` `PO-15` `PO-16` `PO-17` `PO-18` `PO-19` `PO-20` `PO-21` `PO-22` `PO-24` `PO-25` `PO-26` `PO-27` `PO-28` `PO-29` `PO-30` `PO-32` `PO-33` `PO-34` `PO-36` `PO-37` `PO-38` `PO-39` `PO-40` `PO-41` `PO-42` `PO-43` `PO-44` `PO-45` `PO-46` `PO-47` `PO-48` `PO-49` `PO-51` `PO-52` `PO-53` `PO-54` `PO-55` `PO-57` `PO-58` `PO-59` `PO-60` `PO-61` `PO-62` `PO-63` `PO-64` `PO-65` `PO-66` `PO-67` `PO-68`
+> **⌗ NOT COVERED — STRUCK since r2417 (210 rows):**
+> `L-150` `L-174` `L-175` `L-176` `L-177` `L-178` `L-179` `L-180` `L-181` `L-182` `L-183` `L-184` `L-185` `L-186` `L-187` `L-188` `L-189` `L-190` `L-191` `L-192` `L-193` `L-194` `L-195` `L-196` `L-197` `L-198` `L-199` `L-200` `L-201` `L-203` `L-204` `L-206` `L-207` `L-210` `L-211` `L-213` `L-214` `L-215` `L-216` `L-217` `L-219` `L-220` `L-222` `L-223` `L-224` `L-225` `L-226` `L-227` `L-228` `L-229` `L-231` `L-232` `L-233` `L-234` `L-235` `L-236` `L-237` `L-238` `L-239` `L-241` `L-243` `L-244` `L-246` `L-247` `L-248` `L-249` `L-250` `L-251` `L-252` `L-253` `L-254` `L-255` `L-256` `L-257` `L-258` `L-259` `L-260` `L-261` `L-262` `L-263` `L-264` `L-265` `L-266` `L-267` `L-268` `L-269` `L-270` `L-271` `L-272` `L-273` `L-274` `L-275` `L-276` `L-277` `L-278` `L-279` `L-280` `L-281` `L-282` `L-283` `L-500` `L-501` `L-502` `L-503` `L-504` `L-505` `L-506` `L-507` `L-508` `L-509` `L-510` `L-511` `L-512` `L-513` `L-514` `L-515` `L-516` `L-517` `L-518` `L-520` `L-521` `L-522` `L-523` `L-535` `L-536` `L-537` `L-538` `L-539` `L-540` `L-800` `L-801` `L-802` `L-803` `L-804` `L-805` `L-806` `L-807` `L-808` `L-809` `L-810` `L-811` `L-812` `L-813` `L-814` `L-815` `L-816` `L-818` `L-819` `L-820` `L-821` `L-822` `L-823` `L-824` `L-826` `L-827` `L-828` `L-829` `L-830` `PO-10` `PO-13` `PO-15` `PO-16` `PO-17` `PO-18` `PO-19` `PO-20` `PO-21` `PO-22` `PO-24` `PO-25` `PO-26` `PO-27` `PO-28` `PO-29` `PO-30` `PO-32` `PO-33` `PO-34` `PO-36` `PO-37` `PO-38` `PO-39` `PO-40` `PO-41` `PO-42` `PO-43` `PO-44` `PO-45` `PO-46` `PO-47` `PO-48` `PO-49` `PO-51` `PO-52` `PO-53` `PO-54` `PO-55` `PO-57` `PO-58` `PO-59` `PO-60` `PO-61` `PO-62` `PO-63` `PO-64` `PO-65` `PO-66` `PO-67` `PO-68` `PO-69`
 >
 > **⌗ NOT COVERED — OPENED since r2417 (157 rows):**
 > `L-222` `L-223` `L-224` `L-225` `L-226` `L-227` `L-228` `L-229` `L-230` `L-231` `L-233` `L-234` `L-240` `L-242` `L-245` `L-246` `L-247` `L-248` `L-249` `L-250` `L-251` `L-252` `L-253` `L-254` `L-255` `L-256` `L-257` `L-258` `L-259` `L-260` `L-261` `L-262` `L-263` `L-264` `L-265` `L-266` `L-267` `L-268` `L-269` `L-270` `L-271` `L-272` `L-273` `L-274` `L-275` `L-276` `L-277` `L-278` `L-279` `L-280` `L-281` `L-282` `L-283` `L-500` `L-501` `L-502` `L-503` `L-504` `L-505` `L-506` `L-507` `L-508` `L-509` `L-510` `L-511` `L-512` `L-513` `L-514` `L-515` `L-516` `L-517` `L-518` `L-519` `L-520` `L-521` `L-522` `L-523` `L-524` `L-525` `L-526` `L-527` `L-528` `L-529` `L-530` `L-531` `L-532` `L-533` `L-534` `L-535` `L-536` `L-537` `L-538` `L-539` `L-540` `L-541` `L-542` `L-543` `L-544` `L-545` `L-546` `L-547` `L-800` `L-801` `L-802` `L-803` `L-804` `L-805` `L-806` `L-807` `L-808` `L-809` `L-810` `L-811` `L-812` `L-813` `L-814` `L-815` `L-816` `L-818` `L-819` `L-820` `L-821` `L-822` `L-823` `L-824` `L-825` `L-826` `L-827` `L-828` `L-829` `L-830` `PO-31` `PO-36` `PO-43` `PO-47` `PO-48` `PO-49` `PO-50` `PO-51` `PO-52` `PO-53` `PO-54` `PO-55` `PO-56` `PO-57` `PO-58` `PO-59` `PO-60` `PO-61` `PO-62` `PO-63` `PO-64` `PO-65` `PO-66` `PO-67` `PO-68` `PO-69`
