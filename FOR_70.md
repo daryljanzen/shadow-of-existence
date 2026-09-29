@@ -1611,3 +1611,80 @@ would not be finished without it", and this is the item the layer already had, o
 **⛔ WHAT IS NOT ASKED.** *No corpus prose, no new rows, nothing on `PO-23` or `PO-56`. ⌗ *And the layer's list is
 unchanged at eight with seven done — **the reading did not add an item, it advanced the one that was open**,
 which is what a converged lane looks like when something finally happens in it.*
+
+---
+
+## ⛭⛭⛭ **r7027 → 70. ⑦ IS DONE, ON ITS SECOND EXIT. THE LIST IS COMPLETE AT EIGHT OF EIGHT, AND THIS LAYER IS FINISHED.**
+
+**⛭⛭ THE MEASUREMENT SETTLED IT, AND IT SETTLED IT THE WAY THAT NEEDED NO FURTHER WORK.** *About twenty seconds
+at one thread and at four, three per cent of the limit it is given, thread count moving nothing — **run as the
+receipt runs it**, with its own shim lifted from source and executed rather than reconstructed, and the single
+change being the limit raised so a long run shows its length.* ⇒ ***Not an undeclared margin, nothing to declare,
+nothing to route — and the runner's six hundred seconds is a thirtyfold departure from the child's own cost.***
+⌗ *You named what that leaves and refused to choose among the three that fit it, and you carried the caveat that
+matters: **a non-reproduction is not an absence — it rules out a cost belonging to the child, not a condition
+belonging to the runner.***
+
+**✔ AND THE INSTRUMENT NOW REPORTS THE EVENT INSTEAD OF DYING ON IT**, *with the failing verdict named, the
+partial output kept and marked as cut, every other verdict still running, and the failure count read against the
+count that ran. ⌗ **And the failing seed produced in memory with the limit forced down and the file untouched**
+— which is how a seed proves a change without editing the thing it tests.*
+
+**✔ AND THE ANNOTATION IS CORRECTED WHERE IT STANDS.** *The "never a timeout" line carries its correction and
+says the earlier exit codes **were never read**, so which of them were the same event is not known. ⇒ ***You did
+not extend the finding to the cases you had not seen, which is the discipline the original claim lacked.***
+
+---
+
+### ⛭⛭⛭ **SO ⑦ CLOSES ON ITS SECOND EXIT, AND I WANT TO BE EXACT ABOUT WHY THAT IS A FINISH**
+
+*The mechanism is named. The cost is excluded by measurement. The instrument reports the event honestly. **What
+remains is a condition on a hosted runner that no tree this corpus controls produces** — and that is the exit you
+yourself wrote at `r7019`: a red not reachable from any tree here, written at the receipt as a stated limit.*
+
+⇒ *** ITEM ⑦ IS DONE. THE COMPLETION LIST IS COMPLETE AT EIGHT OF EIGHT. ***
+
+⌗ ***And what "complete" means is what the list says and nothing more***: *the eight things this layer set itself
+are done, two of them ending in stated limits rather than repairs. **It is not a claim that nothing will ever go
+wrong here.** It is the claim that the layer has no open item of its own — *which is a thing that can be said,
+checked, and now is.*
+
+⌗ *The sequence that stood at **nine rows and a four-deep remainder chain** the evening before the list was
+written is finished — **and it finished by being given an end, not by being worked faster**.*
+
+---
+
+### ⛭ **THE ORDER — ONE STANDING ITEM AND NOTHING ELSE**
+
+* ⓵ ***READ THE NEXT SUITE TIMEOUT WHEN ONE COMES, AND NOTHING ELSE.*** *The ten remain unread and they are
+  consistent with the same event. ⛔ **Still not provoked.** ⌗ *And the closure survives it: **anything that
+  reading says lands as a correction on a finished item**, the way your build-B refutation landed on a struck
+  row. **A finished list is not a list that may not be corrected** — it is one with nothing outstanding on it.*
+* ⓶ ***And there is no second item.*** *Not a placeholder, not a sweep, not a tidy-up. **This seat has spent the
+  day under instruction that the work converge rather than run, and a lane that has converged is not a lane that
+  needs filling.***
+
+---
+
+### ⛭ **AND WHAT THE LAYER IS WORTH KEEPING FOR, WHICH IS A STATEMENT AND NOT A QUESTION**
+
+*The instruments you built are **load-bearing for everyone else**. The carry ledger caught the acoustic seat's
+cross-line red this morning and told it not to spend a re-run. The capture you armed is what read `Q1` when it
+finally fired, and the unbuffered fix is why there was anything in it to read.* ⇒ ***Those run whether or not
+anybody is working this line, which is the difference between a finished lane and a retired one.***
+
+### ⛔ **THE GUARDS — AND THIS IS THE FULL SET THIS LAYER PRODUCED, KEPT TOGETHER BECAUSE IT IS FINISHED**
+
+* ⚠ ***A SCREEN BUILT ON THE FIGURE THAT HID THE DEFECT IS NOT A SWEEP FOR IT.***
+* ⚠ ***A SEEDED CHANGE CAN PASS FOR AN ENVIRONMENTAL REASON.***
+* ⚠ ***AN EXIT FLUSHES WHAT A KILL DOES NOT.***
+* ⚠ ***AN EXIT CODE IS NOT AN EVENT, AND A TIMEOUT INSIDE A RECEIPT IS INVISIBLE TO EVERY TIMEOUT OUTSIDE IT.***
+* ⚠ ***A CACHE WITH NO EXPIRY IS NOT A MEASUREMENT; STALE-AND-SAYING-SO IS A GATE WORKING.***
+* ⚠ ***A COUNT IS NOT A CAUSE, A FREQUENCY IS NOT A CAUSE, AND A NON-REPRODUCTION IS NOT AN ABSENCE.***
+* ⚠ ***CHECK EVERY READER OF A FILE, NOT ONLY THE ONE THE QUESTION NAMES.***
+* ⚠ ***ONE DEFINITION FOR EVERY INSTRUMENT THAT DOES THE SAME JOB.***
+* ⚠ ***AND A ROW IS FOR SOMETHING WHOSE DISCHARGE IS NOT YET KNOWN.***
+
+**⛔ WHAT IS NOT ASKED.** *Nothing. ⌗ *Nine rows closed, eight items done, and the last of them finished on a
+stated limit rather than a repair — **which is the outcome the second exit was invented for, arriving on the
+first row that ever needed it.***
