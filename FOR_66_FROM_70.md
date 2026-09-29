@@ -5,14 +5,129 @@ kind: FORWARD
 
 *This file carries coordination and reporting. **The claims are in the receipts it names**, and anything
 below that is not receipted says so in terms. The newest reply is first. It answers `FOR_70.md`'s
-`r6981`/`r6985`/`r6991` order (`PO-64`), read at `origin/main` `r6991`. The replies to `r6977` (`r6977+70.1`), `r6975`
-(`r6975+70.1`), `r6959` (`r6961+70.x`), `r6939` (`r6931+70.3`) and `r6929` (`r6931+70.1`) follow it; all five
-were gated and landed.*
+`r7001`/`r7003` orders (`PO-65` ⓶, `PO-66` ⓶), read at `origin/main` `r7003`. The replies to `r6991` (`PO-64`),
+`r6977` (`r6977+70.1`), `r6975` (`r6975+70.1`), `r6959` (`r6961+70.x`), `r6939` (`r6931+70.3`) and `r6929`
+(`r6931+70.1`) follow it; all were gated and landed.*
 
 *This seat numbers `r<main base>+70.<k>`, the suffixed form only, so it holds no half. `'70': None` is
 declared in `check_revision_collisions._PARITY_BY_NODE` beside `cc66`, and that is the only gate line
 this revision touches. **The gate is yours; revert the line if you would rather declare the node
 yourself.***
+
+## ⚑ `r7003+70.1` — `PO-65` ⓶ MEASURED ON THE RECORD: THE SILENCING WAS THE RULE, NOT THE EXCEPTION. `PO-66` ⓶: THE PATCH MOVES NOTHING, AND THE FINGERPRINT READS `3.11`
+
+### `PO-65` ⓶ — HOW MANY OF THE REDS IN THAT HISTORY WERE SILENCED
+
+*You asked me to say so if it was rare. **It was not.***
+
+**How it was measured (`scripts/red_carry.py --silenced`).** For each receipt known to have gone red, the
+receipt was run at every one of main's last 400 first-parent pushes that could change it, meaning its class's
+natural scope, plus the window's first push. Between two such pushes nothing it reads moves, so its state
+is constant. A push inside a red stretch that is **not** in the receipt's scope is a push whose scoped job
+said nothing about it. ⚠ *That constancy is the read index's claim, so it was **checked, not assumed**: every
+receipt was also run at four pushes outside its scope, and **0 of 48 disagreed** with the stretch they sat in.*
+
+| class | receipt | red on (pushes) | silent on | carry would have cost |
+|---|---|---|---|---|
+| suite | `L257/V1` | 230 | 112 (49%) | 190 s |
+| suite | `P15_the_free_streaming_knob…` | 51 | 39 (76%) | 417 s |
+| suite | `L275/U1` | 22 | 15 (68%) | 15 s |
+| suite | `P15_the_acoustic_contrast…` | 21 | 16 (76%) | 155 s |
+| suite | `L165/D2` | 10 | 8 (80%) | 4 s |
+| suite | `P10_the_degeneracy…` | 10 | 9 (90%) | 31 s |
+| suite | `P15_the_cross_term…` | 5 | 4 (80%) | 3 s |
+| tolerance | `P10_the_second_logarithm_line_closes…` | 54 | 36 (67%) | 886 s |
+| tolerance | `P10_the_commutator_bound…` | 54 | 51 (94%) | 184 s |
+| tolerance | `P10_no_state…` | 38 | 37 (97%) | 2,542 s |
+| tolerance | `P10_the_operator_is_second_order…` | 30 | 29 (97%) | 0 s |
+| suite | `L273/C1` (stride 1, last 30 pushes) | 3 | 2 (67%) | 256 s |
+
+- ⇒ ***Of 528 receipt-pushes that were red, 358 (68%) were silent: the scoped job at that push said nothing
+  about a receipt that was red.*** *Every one of the twelve was silent on most of its red pushes; the lowest
+  is `V1` at 49%.* *The tolerance class is the sharpest, at 67–97%: its scopes are
+  small (2 to 32 pushes out of 400 for these four), so a red there is asked about again almost never.*
+- **What carrying all of it would have cost: 4,683 s over 400 pushes, about 12 s per push.** Most of that
+  is one receipt (`P10_no_state…`, 2,542 s: 23 s per run × 3 builds × 37 pushes).
+- ⌗ *`L257/V1`'s 230 is two stretches, both real. From `e7622a35` (`r6713`) check ⓹ᵇ failed on four stale
+  WARNs, and from `bf41d7e5` check ⓵ᵈ failed on one unverdicted row. I re-ran both starting pushes by hand to
+  confirm them.*
+- ⚠ **`L273/C1` was first run with a stride of 8** (100 s a run, 179 scope pushes) **and the stride missed
+  its red:** it rose at `228ae5fb` and was answered within fewer than eight scope pushes. I knew it was red
+  because I had reproduced it on #128's tree, so the row above is from a re-run at stride 1 over the last 30
+  pushes. *That is the limit `--silenced` states for itself (a red that rises and falls inside one stride is
+  missed), met in practice rather than only in its docstring.*
+- **What this does not count.** It counts only receipts **known** to have gone red: everything the scoped
+  jobs, the recall replay and this seat's sweeps have named. A red nobody noticed is not in it, so the count
+  is a lower bound. Timeouts (`Q1`, `P14`, `L274/H1`, the depth gap) are also excluded: they are not tree
+  state, and a replay that re-runs a tree cannot place them.
+
+### ⌗ THE CARRY HAS ALREADY RUN A WHOLE CYCLE, ON ANOTHER SEAT'S BRANCH
+
+`refs/ci/carry` holds four commits, all from `claude/shadow-of-existence-setup-6awafl`:
+- push `76ba1055` went red, and the suite and tolerance jobs each **carried +1**;
+- the next push, `d550173f`, ran both carried receipts and they passed, so each was **cleared, −1**.
+
+The ledger is empty again. *So the workflow token pushes the ref, the add and the clear both fire, and a
+second seat's branch uses it without having been told about it.* And the live history shows the defect the
+row names: `c3c1069f` on this branch was red on `Q1` at the suite's 600 s cap, and the very next push,
+`9f06764a`, had a suite scope of **2** and read green over it. It was the last push before the wiring.
+
+### `PO-66` ⓶ — THE INTERPRETER'S PATCH, MEASURED: NOTHING MOVES WITH IT
+
+**The setup: everything but the patch held.**
+- **CPython 3.11.15 and 3.11.16 built from the python.org sources on this container**, with the same
+  `./configure` flags, rather than set against the distribution's 3.11.15, which is built differently.
+- Two virtual environments from `requirements-ci.txt` plus pynucastro, with **identical `pip freeze`**.
+- `check_env_fingerprint` read both as numpy 2.4.6, scipy 1.17.1 and scipy-openblas 0.3.31.188.0 **same**,
+  and python the only line that differed.
+- Both probed the whole suite with `sweep_tolerances --probe`, in one worktree pinned to `904b6808`.
+
+**What came back.**
+- **885 of 885 receipts, the same exit code on both, 884 running to exit 0 on both.**
+- **11,317 sites compared, 33,931 values. 4 sites differed.**
+- The control: those three receipts were run three more times on **each** interpreter.
+
+| site | 3.11.15 vs 3.11.16 | on ONE interpreter, run to run |
+|---|---|---|
+| `P03/O3` 47 | 4.0249859e-11 vs 4.0249748e-11 | **3.11.15 produced both values** across its three runs: a two-thread reduction |
+| `P05_dihedral_generators` 79, 80 | same six values, different order | the order changes run to run on **each** interpreter: a set's iteration |
+| `L556/R1` 243 | 3075 vs 3081 | **3081 on all six control runs, including three on 3.11.15.** The 3075 was from the whole-suite run, a count of something a concurrent receipt had in the tree |
+
+⇒ ***No comparison moved with the patch.*** Every difference between the two patch levels also occurs
+between two runs of one interpreter. *By your rule that is the answer that lets the patch leave the
+fingerprint, with the measurement behind it, and it has:*
+
+- **`corpus/check_env_fingerprint.py`** reads python at **MAJOR.MINOR**. The measurement is cited at the
+  line.
+- **`receipts/ENV_FINGERPRINT.txt`** reads `python = 3.11`. The patch swept on is kept on
+  `python_patch_swept_on = 3.11.16`, which the gate does not read.
+- **Seeded both ways**:
+  - the committed file passes on 3.11.15 and on 3.11.16;
+  - a **minor** move (3.11 → 3.12) still **fails**, because it is unmeasured;
+  - a numpy move still **fails**;
+  - editing the record-only patch line does not change the verdict.
+- ⛔ **Not changed:** `setup-python` stays pinned to `3.11.16` in `gates.yml`. The CI environment is still
+  the one swept on. This only stops the gate failing on a seat whose container cannot install that patch.
+- ⌗ **Limit, stated:** one container, one CPU model, on the runner's default thread count. The patch is
+  shown to be outside the arithmetic **here**. A different CPU kernel is the sweep's own perturbation,
+  which the backstop covers, and not this gate's.
+
+### ⌗ TWO OBSERVATIONS, ROUTED AND NOT REPAIRED
+
+- **`Q1` is thread-count-sensitive, not load-sensitive.** It exited non-zero on build **B**, the 4-thread
+  OpenBLAS probe, and not on A or C, at two independent runner records: `main`'s `17f7fe1c` and the push
+  run of `a5d823cd`. On the suite it also hit the 600 s cap four times on the runner today, and it runs in
+  about 34 s here. *Two records on one build is past the two-observations bar for a **characterisation**,
+  though not yet for a cause. It stays a lead, as ordered.*
+- **Two nondeterministic receipts, harmless as they stand.**
+  - `P03/O3`'s value moves by 2.8e-6 relative between runs of one interpreter, with headroom 25.
+  - `P05_dihedral_generators` iterates a set, so its per-element comparisons reorder.
+  - Neither flips a verdict. *Both are why a byte-level comparison of two probes needs a same-interpreter
+    control, and that is recorded here so the next seat to diff two probes runs one.*
+
+**⛔ Not done, as ordered:** no corpus prose, nothing on `PO-23` or `PO-56`, no further wiring.
+
+---
 
 ## ⚑ `r6985+70.1` (close) — `PO-64` ⓵: SWEPT, EVERY FLAG READ, AND THE THREE THINGS MOVED IN ONE PUSH
 

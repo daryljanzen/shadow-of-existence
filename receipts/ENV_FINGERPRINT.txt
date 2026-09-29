@@ -27,7 +27,13 @@ h = 1e-5 over an rtol 1e-12 solve -- headroom 35, routed), one detector false po
 detector, the rest repaired earlier or judged at their current blob.  The previous sweep: r6961+70.2 on
 python 3.11.15 / numpy 2.4.4.
 
-python = 3.11.16
+⌗ r7003+70.1 (PO-66 ⓶): the gate reads the interpreter at MAJOR.MINOR.  Measured, not argued: the
+whole suite probed on 3.11.15 and 3.11.16 (same source build, same flags, every other line below held)
+moved no comparison that one interpreter does not also move run-to-run.  The patch swept on is kept on
+the line after next, which the gate does not read.
+
+python = 3.11
+python_patch_swept_on = 3.11.16
 numpy  = 2.4.6
 scipy  = 1.17.1
 blas   = scipy-openblas 0.3.31.188.0
