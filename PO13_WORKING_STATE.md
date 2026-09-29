@@ -5996,3 +5996,53 @@ Of the **eleven** instruments this row has ever made a claim on, **eight band** 
 ⚠ ***AN INSTRUMENT THAT BINS IS NOT NECESSARILY AN INSTRUMENT THAT BANDS.*** The limit is the ratio of the averaging width to the period, not the presence of bins.
 ⚠ ***SAY WHICH FACTS WERE IN HAND BEFORE THE PRE-REGISTRATION WAS WRITTEN.*** Instrument structure is fixed on disk and looking at it is legitimate; presenting a settled branch as open is not.
 ⚠ ***A FLOOR UNDER NOISELESS STRUCTURE AND A FLOOR UNDER INSTRUMENT NOISE ARE NOT ONE NUMBER.*** Compare the verdicts, never the figures.
+
+## ⛭⛭⛭ `cc66.63` — `r7023` FILLED: BAND 1 CARRIES **UNDER ONE PER CENT** OF THE LIKELIHOOD'S EXCESS AND ITS CONTRIBUTION **CHANGES SIGN**; `cc66.62`'s LABEL IS **CORRECTED**; AND IN THE METRIC THE STEP DOES LIVE IN, **ALL THREE CHANNELS DEPART THE ARM'S WAY**
+
+**Receipt** `receipts/P15_CR_cosmology/P15_the_band_one_departure_is_not_in_the_likelihoods_excess_and_all_three_channels_match_it_in_separating_power.py` — **21 gates, `GATES: ALL PASS`**, 0.5 s. Pre-registration is its own commit ahead of the working script `score_in_the_metric.py`. Nothing solved, nothing run, no corpus edits.
+
+**The order's distinction is this revision's vocabulary, not an acknowledgement:** *separating power* is the instrument's ability to tell two candidate spectra apart at a band; *significance* is the size of a departure against its own trend. **No quantity below divides one by the other**; every share is a ratio of two significances.
+
+### ⓶ RUN FIRST, BECAUSE IT DECIDES WHAT ⓵ MEANS — AND THE ANSWER IS NEITHER OUTCOME TABLED
+
+| $n$ (free coefficients in $\ln\ell$) | total excess | b1 | b2 | b3 | b4 | b5 | b6 | b7 |
+|---|---|---|---|---|---|---|---|---|
+| 1 *(the single amplitude)* | 322.0 | **+2.6** | 12.3 | 26.0 | 67.5 | 77.7 | 61.2 | 39.8 |
+| 2 | 317.6 | **−0.5** | 16.4 | 22.8 | 75.2 | 79.0 | 64.1 | 41.5 |
+| 3 | 327.4 | **+0.3** | 16.2 | 20.7 | 72.9 | 74.3 | 66.4 | 38.8 |
+| 4 | 314.8 | **+6.6** | 12.4 | 25.1 | 69.4 | 81.4 | 63.6 | 41.7 |
+
+Band 1 contributes **2.6 of the 287** the seven bands sum to — **0.9%** — against a total excess of 322 over all covered bins. **It changes sign** as smooth global shape is absorbed, where bands 2–7 hold to within a few per cent.
+
+⇒ ***So band 1's departure is not a distinct feature of the residual, and it is not the shape rejection read locally either — the shape rejection is barely present there at all.*** It lives at bands 4–7, which carry **86%** of the per-band excess.
+
+### ⛔⛔ AND THAT FORCES A CORRECTION TO `cc66.62`, WHICH IS THIS SEAT'S
+
+`cc66.62` ⓵ⓑ was headed *"THE STEP IS A LOCALISED CONTRIBUTION TO ITS EXCESS"* and then reported band 1's **separating power** — 36.4σ against a trend predicting 53–71.
+
+**The number was right and the label was wrong.** The likelihood *does* see a band-1 departure, in its power to tell models apart; it does *not* carry a band-1 excess. Those are different sentences and `cc66.62` ran them together — one revision after 66 drew the distinction, and one before it bit.
+
+### ⓵ IN THE METRIC THE STEP ACTUALLY LIVES IN, ALL THREE CHANNELS DEPART THE ARM'S WAY
+
+| channel | four bases | share of the arm's | significance |
+|---|---|---|---|
+| **window** | $-0.493$, $-0.448$, $-0.584$, $-0.514$ | **1.31** | 2.7–3.6σ |
+| **term mix** | $-0.325$, $-0.244$, $-0.459$, $-0.336$ | 0.86 | 2.2–2.4σ |
+| **JOINT** | $-0.206$, $-0.100$, $-0.343$, $-0.184$ | 0.51 | 0.6–1.9σ |
+| *the ARM* | $-0.373$, $-0.311$, $-0.489$, $-0.394$ | 1.00 | 2.5–3.2σ |
+
+⇒ ***The first time this row has had candidates that depart the same way as the arm on an instrument that can carry the question.***
+
+⚠ **And the window channel, which went the *wrong* way on the differential estimator, goes the right way here and over-delivers** — a different verdict on a different instrument, reported as that rather than smoothed.
+
+**The cancellation is measured rather than read off** the 12.82-against-18.64 the order flagged: product predicts $-0.677$, sum $-0.851$, quadrature $-0.613$, against a measured $-0.208$. **No rule fits** — the realised pair delivers **34%** of the closest, 2.4 of its own residual away. The two knobs partly cancel here as they did on the differential estimator.
+
+### ⚠⚠ AND WHAT ⓶ DOES TO ⓵ — THE WHOLE REASON IT WAS RUN FIRST
+
+These are shares of a **separating-power** departure. A channel matching the arm there is matching a feature that carries **one per cent of the likelihood's excess**. ⇒ **So this is not yet "a candidate produces the step" in the sense `PO-56`'s strong clause needs**: a real match in a real metric, and the wrong metric for the clause.
+
+### THE DISCIPLINE THIS REVISION ADDS
+
+⚠ ***A LABEL IS A CLAIM.*** `cc66.62`'s number was right and its heading named a different quantity; that is a correction, not a rewording.
+⚠ ***WHEN ONE ITEM DECIDES WHAT ANOTHER MEANS, RUN IT FIRST AND SAY SO IN THE FILE'S STRUCTURE.***
+⚠ ***A DEPARTURE THAT CHANGES SIGN AS NUISANCE FREEDOM IS ADDED IS NOT A FEATURE OF THE RESIDUAL*** — and the control is the rate against the other bands, since more freedom always shrinks a residual.
