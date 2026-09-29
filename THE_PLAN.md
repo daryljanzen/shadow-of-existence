@@ -26,7 +26,7 @@ one: a list that grows whenever something worthwhile appears is a cadence again.
 | **④** | **Every instrument's exit conditions distinguish its own findings**, so a reader who trusts an exit code learns the right one. | ✔ *done — `PO-67`* |
 | **⑤** | **A receipt whose verdict differs between trees that agree on everything it reads is detected and named**, at the moment of the run. | ✔ *done — `PO-68`, and the finding is a contradiction rather than a count* |
 | **⑥** | **Every stated limit of the layer is written at the site where it acts**, not left implied by an exclusion in a table. | ✔ *done — and it is the layer's own habit rather than a rule imposed on it* |
-| **⑦** | **No receipt carries an unexplained red.** | ⛭ ***READ. The red has a named mechanism; two measurements with known discharges stand between it and closed*** |
+| **⑦** | **No receipt carries an unexplained red.** | ✔ ***DONE r7027 — on the second exit: the mechanism named, the cost excluded by measurement, and the residual a runner-side condition no tree here controls*** |
 | **⑧** | **No receipt carries a red whose remedy is known and unapplied.** | ✔ ***DONE r7019 — two instances found and discharged, the class swept on the runner's own readings*** |
 
 **✔ ⑧ IS DONE, AND IT IS DONE ON THE INSTRUMENT THAT COULD SEE THE CLASS RATHER THAN THE ONE THAT WAS TO
@@ -49,30 +49,41 @@ together add at most 600 s to a critical path whose worst observed wall is 2961 
 stated was read back: one belongs to another seat, one was routed as an observation with no remedy stated, and
 one is already applied. **None is left unapplied.***
 
-**⛭⛭ ⑦ HAS ITS FIRST REAL READING, AND IT NAMES THE PLACE.** *The occurrence arrived unprovoked, on the very
-commit that armed the capture, and was carried by the ledger with nothing re-run. **`Q1`'s exit code was a
-timeout one level down**: its own six-hundred-second limit on its tightened re-run of a sample child, raised
-as an uncaught exception so the receipt died in a traceback rather than reporting a verdict. The kept stdout
-agrees line for line — the checks before it passed, the child passed at its own tolerances, and the run stops
-at that child under the tightening.* ⇒ *** SO THE RECORD'S "EXIT 1, NEVER A TIMEOUT" WAS TRUE OF THE EXIT CODE
-AND FALSE OF THE EVENT, AND EVERY EARLIER RED OF THIS RECEIPT MAY BE THE SAME THING. *** ⌗ *And it is what
-explains the ledger's contradiction pairs, which a run-time event produces and a tree defect cannot —
-consistency rather than proof, and reported as that.*
+**✔ ⑦ IS DONE, ON ITS SECOND EXIT, AND THE LIST IS COMPLETE.** *The reading arrived unprovoked and named the
+place: the receipt's exit code was a **timeout one level down**, its own limit on a tightened re-run of a
+sample child, raised uncaught so the receipt died in a traceback rather than reporting a verdict.* ⇒ ***So the
+record's "exit 1, never a timeout" was true of the exit code and false of the event***, *and it is what
+explains the ledger's contradiction pairs, which a run-time event produces and a tree defect cannot.*
 
-**⛔ WHAT THE READING DOES NOT SETTLE, AND WHAT STANDS BETWEEN IT AND ⑦ CLOSING.** *Why that run was slow is
-one reading, and a tightened solve that genuinely needs the time and plain contention both fit it. And the ten
-suite timeouts are consistent with the same event and none has been read. ⇒ *So two things are owed, **both
-with known discharges and therefore orders rather than rows**: the tightened child timed alone at one and at
-four threads, which separates the two causes; and the receipt reporting a sample child's timeout as a named
-verdict instead of dying in a traceback.* ⌗ *A receipt that cannot say which of its own checks it failed to run
-is this layer's own founding class, one level in.*
+**⛭ AND THE TWO CAUSES THAT BOTH FITTED ONE READING WERE SEPARATED BY MEASUREMENT.** *Timed exactly as the
+receipt runs it — its own shim lifted from its source and executed rather than rewritten, in the probe's
+environment, with only the limit raised so a long run shows its length — **the tightened child costs about
+twenty seconds at one thread and at four**, which is three per cent of the limit it is given, and the thread
+count moves nothing.* ⇒ *** SO IT IS NOT AN UNDECLARED MARGIN: THERE IS NOTHING TO DECLARE AND NOTHING TO
+ROUTE, AND THE RUNNER'S SIX HUNDRED SECONDS IS A THIRTYFOLD DEPARTURE FROM THE CHILD'S OWN COST. IT IS NOT A
+SLOW SOLVE. IT IS AN EVENT. *** ⌗ *A hang, a stall or starvation each fit it, one reading and a clean
+non-reproduction separate none of them, and none is claimed. **What the measurement rules out is a cost
+belonging to the child; what it cannot rule out is a condition belonging to the runner.***
 
-⌗ **And nothing else is owed on the layer**, to the list's own bar, beyond what this reading opens: *the
-instruments did their job on the first real event — it was kept, printed where it survives, carried, and read.*
+**✔ AND THE INSTRUMENT NOW REPORTS THE EVENT INSTEAD OF DYING ON IT.** *A sample child's timeout is caught and
+named — which sample, at which tolerance, against which limit — the verdict that consumes it fails **by name**
+with its partial output kept, every other verdict still runs, and the count of checks that did run stays
+visible. *Seeded both ways, the failing seed produced in memory with the limit forced down and the file
+untouched.* ⌗ *And the receipt's own annotation is **corrected where it stands** rather than rewritten, with
+the earlier exit codes marked as never having been read.*
 
-⇒ ***⑦ still closes either way***: *a named failing check, a timeout traceback, or — if it recurs and says
-neither — a red not reachable from any tree this corpus controls, written at the receipt as a stated limit,
-which is the second exit and a finish.*
+⇒ *** SO THE RESIDUAL IS A CONDITION ON A HOSTED RUNNER THAT NO TREE THIS CORPUS CONTROLS PRODUCES, WRITTEN AT
+THE RECEIPT AS A STATED LIMIT --- WHICH IS ⑦'s SECOND EXIT AND A FINISH. *** ⌗ *And the standing item survives
+the closure rather than reopening it: **the next suite timeout is read when it comes**, and if it says
+something else that lands as a correction on a finished item, the way the build-B refutation landed on a struck
+row.*
+
+**⛭⛭⛭ SO THE LIST IS COMPLETE — EIGHT OF EIGHT.** *And what "complete" means is exactly what the list says and
+nothing more: **the eight things this layer set itself are done**, two of them ending in stated limits rather
+than repairs. *It is not a claim that nothing will ever go wrong here; it is the claim that the layer has no
+open item of its own.* ⌗ *The sequence that stood at nine rows and a four-deep remainder chain the evening
+before this list was written is finished, and it finished by being given an end rather than by being worked
+faster.*
 
 **⌗ AND THE SAME IS OWED BY ANY LANE THAT RUNS LONG.** *This is the first completion criterion in the corpus
 and it should not be the last; a lane that cannot write one has not yet worked out what it is for.*
@@ -277,7 +288,7 @@ corpus in `PO13_WORKING_STATE.md`.*
 
 <!-- GRAIN-CURRENCY:BEGIN -->
 
-## ⌗⌗⌗ CURRENCY — **GENERATED** by `scripts/regen_grain_currency.py`, baseline r2417, register front r7025
+## ⌗⌗⌗ CURRENCY — **GENERATED** by `scripts/regen_grain_currency.py`, baseline r2417, register front r7027
 
 > ⚠ **THE BODY BELOW STOPS AT THE BASELINE. This head is the list of what has moved since, and it is REGENERATED rather than written** — *because these documents go stale every ~20 revisions by construction, and paying that by hand is a debt that recurs rather than a defect that closes.*
 >
