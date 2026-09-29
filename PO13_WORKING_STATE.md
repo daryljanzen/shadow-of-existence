@@ -5478,3 +5478,78 @@ where the passage lives is the chat seat's call.*
 **⛔ ⓸ NOTHING ELSE.** No new channels. *The polarisation note in `r7001_directions/independent.py` is a
 statement about what this instrument does not carry — it banks polarisation only as its contribution to
 the temperature decomposition, not as an E-mode spectrum — and is not a proposal.*
+
+## `cc66.54` (`r7003`) — THE LOWEST BAND IS CLOSED BY THE FIELDS AT AN EXACT FLOOR; THE DECELERATION IS CARRIED BY THAT BAND ALONE AND BY THIS ENVELOPE; AND THE FILTER'S THIRD CONDITION IS UNAVAILABLE EXACTLY WHERE IT IS NEEDED
+
+*Path: **hierarchy** throughout. Banks `r6897_fields`, `r6941_fine_*`, `r6959_eta_cr`; receipt
+`P15_the_lowest_band_is_closed_by_the_fields_and_the_excess_deceleration_is_carried_by_it_alone.py`,
+**19 gates**; pre-registration `r7003_directions/PREDICTION.md`, **failure modes tabled ahead of
+outcomes**. ⛔ Nothing SOLVED.*
+
+**⛭⛭⛭ ⓵ THE BAND IS CLOSED BY THE FIELDS, AND THE FLOOR IS EXACT.** The criterion is named before use and
+is a necessary condition from identifiability, not a chosen threshold: *an oscillation amplitude at $q_0$
+is identified only if the fitting window holds a **turning point** of the field on each side of $q_0$* —
+because over a span carrying no turning point the held-period $\cos/\sin$ pair is monotone in $q$, and a
+monotone function over a short span is what the baseline polynomial already spans.
+
+- The monopole's turning points are $q = 0.996,\,1.915,\,2.912,\dots$ with **none below the first**: the
+  first excursion is one-sided. ⇒ floor $= 1.4553$ (control), $1.4533$ (arm).
+- The dipole's floor is $0.9618$, so **the monopole binds** — the reach of a *ratio* of the two
+  amplitudes is set by the field whose first excursion starts later.
+- ⇒ ***Band 1, $q \in [0.85,\,1.55]$, lies $86.5$ per cent below the floor. Bands 2–7 lie entirely above
+  it.***
+
+**⌷ AND IT IS NOT THE WINDOW, SHOWN THREE WAYS.** *Width*: the same eight window widths at identical
+conditioning spread $0.0039$ at $q_0 = 1.90$ and $0.0164$ at $q_0 = 1.20$, with a sign change.
+*Placement*: sweeping the left edge with the right held, the departure is **negative for every window
+that opens past the monopole's first turning point and positive for every one that stays above it** —
+what lies below is the field's rise from its initial condition, which is not an acoustic oscillation.
+*Prediction*: **every centre below the floor spreads by more than every centre above it** ($0.0164$
+against $0.0126$), which the floor was not fitted to.
+
+⇒ *** NO ESTIMATOR OF AN OSCILLATION AMPLITUDE CAN REACH INSIDE THE FIRST EXCURSION. An acoustic
+oscillation has a first extremum and there is no amplitude before it because there is no oscillation
+before it. ***
+
+**⛭⛭ ⓶ THE TARGET'S OWN CURVATURE, IN THREE PARTS — AND THE THIRD GOES AGAINST THIS SEAT'S RESULT.**
+
+- **(a) Robust within the statistic as defined.** Moving the envelope width ($0.8$–$1.2$), the band edges
+  ($\pm0.05$) and the sampling: the curvature is **negative in all six variants**, $-0.00377$ to
+  $-0.00291$, with band 1 stable at $+0.0201$ to $+0.0240$. *"The excess decelerates" is not a fragile
+  number.*
+- **(b) And carried by band 1 alone.** With band 1 dropped the curvature runs $-0.00121$ to $+0.00031$:
+  **its sign is not determined.** ⇒ ***The deceleration is the lowest band being low, not the upper bands
+  bending*** — and that band is the one ⓵ closes.
+- **(c) ⚠⚠ And NOT robust to the envelope's DEFINITION.** A running **median** envelope — same window,
+  same bands, everything else unchanged — ***reverses the curvature to $+0.00504$***. That is a different
+  statistic, and the difference is measured (its envelope absorbs about half the top band's oscillation
+  on both arms, $0.0962 \to 0.0441$ control and $0.1035 \to 0.0525$ arm, so its ratios are formed on a
+  much smaller residual). ⛔ **But it is not obviously the worse envelope** — it leaves a departure with
+  zero mean, which the arithmetic one does not — *so the honest reading is that the sign belongs to the
+  statistic rather than to the excess.*
+
+⇒ **`P15` may say the excess decelerates and owes two qualifications in the same breath: that the
+deceleration is carried by the lowest band, and that it is a property of this envelope.** ⌗ *What was
+landed too strongly is not the claim but its **independence** — of any one band, and of the envelope's
+definition — which nothing in the paper says and a reader would assume.*
+
+**⛔⛔ ⓷ AND THE THIRD CONDITION IS NOT UNAVAILABLE IN GENERAL, WHICH IS WORSE THAN IF IT WERE.** It needs
+a band-1 value. Band 1 is closed to *oscillation-amplitude* estimators — **not** to a candidate computed
+from the kernel: `cc66.52`'s projection-width channel had a band-1 value ($+0.00343$) and the filter
+**excluded it on curvature**. ⇒ *** THE FILTER'S FULL STRENGTH IS AVAILABLE EXACTLY FOR THE CLASS THAT
+CANNOT CARRY THE EXCESS, AND ITS THIRD CONDITION IS PERMANENTLY UNAVAILABLE EXACTLY FOR THE CLASS THAT
+CAN *** — since `cc66.51` settled on physics that what fills a trough is an oscillation amplitude.
+
+**⌗ AND IS A TWO-CONDITION FILTER A FILTER? SEPARATELY, BECAUSE THE ANSWERS DIFFER.**
+
+- **As an exclusion device, yes, and it has lost nothing.** Sign and growth are each necessary on a
+  carrier, and the exclusions already made were made on growth alone.
+- **As a confirmation device, no — and it never was one, not with three either.** All three conditions
+  are conditions on the *shape* of a departure in $q$, and a shape match does not fix a size: **measured
+  here, the candidate matches the target in sign and in direction of growth while being $5.3$ times
+  smaller at the top band.**
+- ⇒ *So the candidate's passing two is worth exactly what passing three would have been — it is **not
+  excluded** — and the row's remaining question is the **coupling**: how much band contrast a
+  dipole-to-monopole amplitude ratio of a given size actually produces. That is quantitative, lives on
+  $q \ge 1.90$ where the candidate **is** measured, and needs band 1 not at all.* ⛔ **Named as the
+  question, not proposed as a channel: the order's ⓸ closes the list.**

@@ -4116,3 +4116,81 @@ appendices regenerated.
 ⛔ **No corpus edits** — your ⛔. Nothing on the quantum sector or the reproducibility rows. ⌗ *And
 `cc66.51`'s curvature sentence is the one thing in `P15` that this revision contradicts; the correction
 is routed rather than applied.*
+
+---
+
+# ⛭⛭⛭ cc66.54 — `r7003` FILLED: THE BAND IS CLOSED BY THE FIELDS AT AN EXACT FLOOR; THE DECELERATION IS ROBUST, IS CARRIED BY THAT BAND ALONE, AND **IS NOT ROBUST TO THE ENVELOPE'S DEFINITION**; AND THE THIRD CONDITION IS UNAVAILABLE EXACTLY WHERE IT IS NEEDED
+
+**⚠⚠ TAKE ⓒ OF ⓶ FIRST, BECAUSE IT IS THE ONE THING HERE THAT WORKS AGAINST MY OWN RESULT AND AGAINST
+THE PAPER.** *You asked whether the target's curvature is robust enough to carry the claim. Within the
+statistic as defined it is — negative in all six variants that move the envelope width, the band edges
+and the sampling, $-0.00377$ to $-0.00291$.* ⛔ **But a running MEDIAN envelope — same window, same bands,
+everything else unchanged — reverses it to $+0.00504$.** ⌗ *That is a different statistic, and the
+difference is measured: its envelope absorbs about half the top band's oscillation on both arms, so its
+ratios are formed on a much smaller residual.* ⚠ **It is not obviously the worse envelope, though — it
+leaves a departure with zero mean, which the arithmetic one does not.** ⇒ ***So the honest reading is
+that the sign belongs to the statistic and not to the excess, and `P15` does not currently say which.***
+
+**⛭⛭⛭ ⓵ THE BAND IS CLOSED BY THE FIELDS, AND THE FLOOR IS EXACT.** *The criterion is named before it is
+applied and is a necessary condition from identifiability rather than a threshold I chose:* **an
+oscillation amplitude at $q_0$ is identified only if the window holds a turning point on each side of
+$q_0$** — because over a span with no turning point the held-period pair is monotone in $q$, and a
+monotone function over a short span is what the baseline polynomial already spans.
+
+- The monopole's turning points are $0.996,\,1.915,\,2.912,\dots$ **with none below the first** — the
+  first excursion is one-sided — so the floor is $q = 1.4553$; the dipole's is $0.9618$, so **the
+  monopole binds.**
+- ⇒ ***Band 1 lies $86.5$ per cent below that floor, and every other band lies entirely above it.***
+
+**⌷ AND IT IS NOT THE WINDOW, WHICH IS THE PART OF YOUR QUESTION THAT NEEDED ANSWERING SEPARATELY.**
+*Width*: the same eight widths at identical conditioning spread $0.0039$ at $q_0=1.90$ and $0.0164$ at
+$1.20$, with a sign change. *Placement*: sweeping the left edge with the right held, the departure is
+**negative for every window that opens past the monopole's first turning point and positive for every one
+that stays above it** — what lies below is the field's rise from its initial condition, *which is not an
+acoustic oscillation at all*. *Prediction*: **every centre below the floor spreads by more than every
+centre above it**, and the floor was not fitted to that.
+
+⇒ *** SO, AS THE STRUCTURAL STATEMENT YOU ASKED FOR IF IT CAME OUT THIS WAY: NO ESTIMATOR OF AN
+OSCILLATION AMPLITUDE CAN REACH INSIDE THE FIRST EXCURSION. An acoustic oscillation has a first extremum
+and there is no amplitude before it because there is no oscillation before it. ***
+
+**⛔ ⓶ ⓐ AND ⓑ — THE CLAIM IS SUPPORTED AND IT IS A SINGLE-BAND CLAIM.** Band 1's own value is stable
+($+0.0201$ to $+0.0240$), and **with band 1 dropped the curvature's sign is not determined** ($-0.00121$
+to $+0.00031$). ⇒ ***The deceleration is the lowest band being low, not the upper bands bending*** — and
+that is the band ⓵ closes. ⌗ *So: not "you landed it too strongly". **What was landed too strongly is the
+claim's independence** — of any one band, and (per ⓒ) of the envelope's definition. Neither is stated in
+the paper and a reader would assume both.*
+
+**⛔⛭ ⓷ AND THE THIRD CONDITION IS NOT UNAVAILABLE IN GENERAL, WHICH IS WORSE NEWS THAN IF IT WERE.** It
+needs a band-1 value, and band 1 is closed to *amplitude* estimators but **not** to a candidate computed
+from the kernel: `cc66.52`'s projection width had one ($+0.00343$) and the filter **excluded it on
+curvature**. ⇒ *** THE FILTER'S FULL STRENGTH IS AVAILABLE EXACTLY FOR THE CLASS THAT CANNOT CARRY THE
+EXCESS, AND ITS THIRD CONDITION IS PERMANENTLY UNAVAILABLE EXACTLY FOR THE CLASS THAT CAN *** — since
+`cc66.51` settled on physics that what fills a trough is an oscillation amplitude.
+
+**⌗ AND YOUR QUESTION — IS A TWO-CONDITION FILTER A FILTER? — SPLITS, AND I WOULD RATHER GIVE YOU BOTH
+HALVES THAN A VERDICT.**
+
+- **As an exclusion device: yes, and it has lost nothing.** Each remaining condition is necessary on a
+  carrier, and every exclusion already made was made on growth alone.
+- **As a confirmation device: no — and it never was one, not with three either.** All three conditions
+  are conditions on the *shape* of a departure in $q$, and a shape match does not fix a size: **the
+  candidate matches sign and growth direction while being $5.3$ times smaller at the top band.**
+- ⇒ ***So the candidate's passing two is worth exactly what passing three would have been: it is not
+  excluded. The missing condition costs less than it looks, and the row's remaining question is the
+  COUPLING*** — how much band contrast a dipole-to-monopole amplitude ratio of a given size actually
+  produces, through the projection this instrument already computes. *It lives on $q \ge 1.90$ where the
+  candidate is measured and needs band 1 not at all.* ⛔ **Named as the question, not proposed: your ⓸
+  closes the list and this is not an addition to it.**
+
+## What is on the branch
+
+Receipt `P15_the_lowest_band_is_closed_by_the_fields_and_the_excess_deceleration_is_carried_by_it_alone.py`
+— **19 gates**, `GATES: ALL PASS`, under $3$ s. Pre-registration `r7003_directions/PREDICTION.md` with
+**the failure modes tabled ahead of the outcomes**, on your new guard. Working scripts
+`first_excursion.py` (⓵), `target_curvature.py` (⓶), `what_remains.py` (⓷). INDEX row,
+`PO13_WORKING_STATE`, appendices regenerated.
+
+⛔ **No corpus edits** — your ⛔. ⌗ *Two things in `P15` this revision bears on and does not touch: the
+deceleration sentence needs the two qualifications above, and the `PO-56` runway should lose the third
+condition for the amplitude class rather than keep carrying it as owed.*
