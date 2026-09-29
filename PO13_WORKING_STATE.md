@@ -5946,3 +5946,53 @@ The joint's departure over its own scatter, four bases each: **raw** $0.24$–$0
 ⚠ ***A REDUCTION IN SCATTER IS ONLY A GAIN IF THE SIGNAL DOES NOT FALL WITH IT.*** The held-period aggregation halves both; $f_{\min}$ is the invariant and it does not move.
 ⚠ ***A NARROW-WINDOW MEASUREMENT NEEDS A MATCHED-WIDTH CONTROL, NOT THE WIDE-WINDOW ERROR BAR.*** It turned $5.03\sigma$ into $1.52\sigma$ here, and the difference is the whole finding.
 ⚠ ***"UNRESOLVABLE" IS A STATEMENT ABOUT THE INSTRUMENT AND MUST BE PROVED OVER ITS WHOLE REACH*** — every route banked, not the one to hand.
+
+## ⛭⛭⛭ `cc66.62` — `r7021` FILLED: THE LIKELIHOOD **SEES THE STEP AND SEPARATES THE TWO CHANNELS**, SO THE DEMONSTRATION DOES NOT COVER IT AND `PO-56`'s AMENDED CLAUSE IS **NOT MET**
+
+**Receipt** `receipts/P15_CR_cosmology/P15_the_likelihood_sees_the_step_and_separates_the_two_channels_so_the_demonstration_does_not_cover_it.py` — **19 gates, `GATES: ALL PASS`**, 0.5 s. Pre-registration is its own commit ahead of the working script `does_the_likelihood_see_it.py`. Nothing solved, nothing run, no corpus edits.
+
+### ⓵ⓐ THE LIKELIHOOD IS NOT A BANDED STATISTIC IN DISGUISE
+
+`plik_lite` TT bins at a median $0.0298$ in $q$ — **one thirty-fourth of a comb period** — with **24 bins inside band 1**, and its bin-to-bin correlation is a flat $\approx 0.15$ floor rather than a coupling that grows over a period. *It bins; it does not **band**, in the sense that defeats every statistic in the demonstration.*
+
+⌗ That structure was inspected **before** the pre-registration was written — bin edges, widths and covariance are properties of the instrument fixed on disk regardless of any spectrum — and the pre-registration says so and declares the branch settled rather than tabling it as if open.
+
+### ⓵ⓑ THE STEP IS A LOCALISED CONTRIBUTION TO ITS EXCESS
+
+| band | 1 | 2 | 3 | 4 | 5 | 6 | 7 |
+|---|---|---|---|---|---|---|---|
+| σ of arm-vs-control from that band alone | **36.4** | 42.8 | 49.8 | 44.6 | 35.1 | 24.6 | 14.2 |
+
+Whole covered range together: $98.9\sigma$. Band 1 against its own bands 2–7 trend: $-0.311$ … $-0.489$ across the four bases, at $2.5$–$3.2\sigma$ of its own residual. The trend predicts $53$–$71\sigma$ at band 1 where the likelihood delivers $36.4$.
+
+⇒ **The same sign as every other instrument in this row — and the first per-band number in it that carries the instrument's own noise rather than an empirical scatter across a noiseless theory spectrum.**
+
+### ⓵ⓒ AND IT SEPARATES THE TWO CHANNELS AT BAND 1
+
+| | σ at band 1 |
+|---|---|
+| window vs control | 6.61 |
+| term mix vs control | 18.64 |
+| JOINT vs control | 12.82 |
+| the ARM vs control (the target) | 36.37 |
+| **window vs term mix** | **25.11** |
+
+⇒ ***So `cc66.61`'s demonstration covers the statistic family and not the instrument the paper runs beside it. `PO-56`'s amended clause is NOT met, and the row has a measurement to make rather than an exit to take.***
+
+⚠ **The two floors are in different units**, which the pre-registration required be said before the numbers were in hand: the likelihood's smallest detectable share at band 1 is $0.055$ of the band-1 **difference** under *real instrument noise*; `cc66.61`'s $0.59$ is a share of the **step** under an *empirical scatter of a noiseless spectrum*. **Neither bounds the other.** The legitimate comparison is the one the order asked for: the statistic family cannot separate the channels at band 1; the likelihood separates them at 25σ.
+
+### ⓶ THE SCOPE STATEMENT THE CLAUSE NEEDS
+
+Of the **eleven** instruments this row has ever made a claim on, **eight band** at $0.70$ of a comb period — the contrast statistic, the held-period amplitude, the window-free depth, the extremal envelope, the differential estimator, the bilinear decomposition read through the band statistic, the comb-phase projection, and the projection-width kernel. **Three do not:**
+
+* the **anchored peak/trough locator** (`cc66.45/46`) — does not band, but makes **no amplitude claim at band 1**: it locates peaks;
+* **`plik_lite` TT**, the likelihood;
+* the **refit $\chi^2$ and its derivative grid**, which use the same bins.
+
+⇒ **So the likelihood and its refit are the only instruments in this row that both avoid the band-width limit *and* make an amplitude claim at band 1** — which is why ⓵ was the right question, and why there is no third instrument outside the demonstration.
+
+### THE DISCIPLINE THIS REVISION ADDS
+
+⚠ ***AN INSTRUMENT THAT BINS IS NOT NECESSARILY AN INSTRUMENT THAT BANDS.*** The limit is the ratio of the averaging width to the period, not the presence of bins.
+⚠ ***SAY WHICH FACTS WERE IN HAND BEFORE THE PRE-REGISTRATION WAS WRITTEN.*** Instrument structure is fixed on disk and looking at it is legitimate; presenting a settled branch as open is not.
+⚠ ***A FLOOR UNDER NOISELESS STRUCTURE AND A FLOOR UNDER INSTRUMENT NOISE ARE NOT ONE NUMBER.*** Compare the verdicts, never the figures.
