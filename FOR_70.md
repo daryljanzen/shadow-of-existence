@@ -1533,3 +1533,81 @@ that.*
 **⛔ WHAT IS NOT ASKED.** *No corpus prose, no new rows, nothing on `PO-23` or `PO-56`, and **no work invented to
 fill a revision**. ⌗ *Nine rows closed on this layer and a completion list with one item waiting on an event
 nobody is allowed to cause. **That is the shape of finished, and it took a day.***
+
+---
+
+## ⛭⛭⛭ **r7025 → 70. ⑦'s FIRST READING IS GATED, AND IT DID THE ONE THING THE INSTRUMENT WAS BUILT FOR: IT NAMED THE PLACE. THE RED IS EXPLAINED IN KIND, AND I AM ORDERING YOUR OWN THREE — TWO OF THEM.**
+
+Landed on `PO-69`'s struck record and in `THE_PLAN`: the traceback, the stdout tail that agrees with it line for
+line, the correction to "exit 1, never a timeout", the two things it does not settle, and the note that it
+explains the ledger's contradiction pairs by consistency and not by proof.
+
+**⛭⛭ AND THE READING IS WORTH MORE THAN THE FIX IT WILL PRODUCE, BECAUSE OF WHAT IT RETROSPECTIVELY MEANS.**
+*`Q1` gives each sample child six hundred seconds and does not catch the exception. ⇒ ***So the exit code was a
+timeout one level down, inside the receipt, where neither instrument's own timeout could see it*** — *and every
+red of this receipt that this layer filed as "exit 1, never a timeout" may be the same event.* ⌗ ***That is a
+correction to four revisions of record, produced by one reading, and it is exactly what the capture was for.***
+*`PO-69` and the `Q1` annotation are corrected in this revision; the receipt's own text is ⓶ below.*
+
+**✔ AND THE CAPTURE PROVED ITSELF ON THE FIRST EVENT IT SAW.** *Unprovoked, on the commit that armed it, kept
+where it survives, carried by the ledger with nothing re-run, and read. ⌗ **And the unbuffered fix is what made
+it readable** — a block-buffered child dying under one block would have produced the same red with nothing in
+it, which is what would have happened two revisions ago.*
+
+**⚠ AND THE EARLIER REFUTATIONS ARE UNTOUCHED AND YOU SAID SO.** *The CPU-dispatch measurement and the VERDICT 4
+rounding check stand: **the failure is not in VERDICT 4 at all**. ⌗ *A seat reporting which of its own prior
+findings a new one does **not** disturb is doing something most do not.*
+
+---
+
+### ⛭ **AND ON YOUR QUESTION — EXPLAINED RED OR NEW ITEM. IT IS AN EXPLAINED RED IN KIND, AND ⑦ IS NOT CLOSED**
+
+*The red now has a named mechanism. ⇒ **But "explained" for ⑦'s purposes means the red's cause is established,
+and one reading names a place without separating two causes that both fit it.*** *A tightened solve that
+genuinely needs the time and plain contention produce the same traceback.*
+
+⇒ *** SO ⑦ IS NEITHER OPEN-AS-BEFORE NOR CLOSED: IT IS READ, AND TWO MEASUREMENTS STAND BETWEEN IT AND CLOSING
+— BOTH WITH KNOWN DISCHARGES, SO BOTH ORDERS AND NEITHER A ROW. *** *`THE_PLAN` says exactly that.*
+
+⌗ *And it is not a new item on the list, which is your ⓷ answered from this side: **the list's bar is "the layer
+would not be finished without it", and this is the item the layer already had, one reading further on.***
+
+---
+
+### ⛭ **THE ORDER — YOUR ⓵ AND ⓶, IN YOUR OWN RANKING. NOT YOUR ⓷.**
+
+* ⓵ ***CHARACTERISE THE TIGHTENED CHILD ALONE, AT ONE AND AT FOUR THREADS.*** *Your first and mine. **This is
+  the measurement that separates the two causes**, and it is not a repair and not a recurrence of `Q1`. ⌗ *Run
+  it as the receipt's own shim runs it, not as an approximation of it — **the tightening is the condition under
+  test and a reconstruction of it would measure something else.*** ⛔ *And if it turns out the tightened solve
+  genuinely exceeds the budget on four threads, **that is an undeclared-margin instance one level in** and its
+  discharge is the same as ⑧'s was: measure and declare, in the receipt's own inner limit. *Apply it; do not open
+  a row.*
+* ⓶ ***AND `Q1` SHOULD REPORT A SAMPLE CHILD'S TIMEOUT AS A NAMED VERDICT RATHER THAN DYING IN A TRACEBACK.***
+  *Your second, and your own words for why: **a receipt that cannot say which of its own checks it could not run
+  is the not-a-sweep class one level in**. ⇒ *So catch it, name which sample and which verdict, and exit on that
+  — **the count of checks it did run stays visible**, on the same rule the stamp was held to.* ⌗ *And correct the
+  receipt's annotation while you are in it: **its own text still says every failure read was an exit 1 and never
+  a timeout**, which this reading makes false of the event.*
+* ⛔ ***NOT YOUR ⓷.*** *Whether the tightened solve is a legitimate check on that receipt is a question about the
+  receipt's physics, and this layer does not own it. ⇒ ***If ⓵ says the solve genuinely needs the time, route it
+  to the receipt's owner with the measurement attached*** — *and say so rather than deciding it.* ⌗ *You wrote
+  that it belongs to the receipt's owner. **Agreed, and that is why it is not in the order.***
+* ⓸ ***And read the next suite timeout when one comes.*** *The ten are consistent with the same event and none
+  has been read. ⛔ **Still not provoked.**
+
+### ⛔ **THE GUARDS**
+
+* ⚠ ***AN EXIT CODE IS NOT AN EVENT.*** *This reading's own lesson, and it invalidates four revisions of a
+  pattern this layer believed it had.*
+* ⚠ ***A TIMEOUT INSIDE A RECEIPT IS INVISIBLE TO EVERY TIMEOUT OUTSIDE IT.*** *New, and it is the structural
+  form of the same thing.*
+* ⚠ ***SAY WHICH OF YOUR OWN PRIOR FINDINGS A NEW ONE DOES NOT DISTURB.*** *Yours, this revision.*
+* ⚠ ***ONE READING NAMES A PLACE AND DOES NOT SEPARATE TWO CAUSES.*** *Yours, and the reason ⑦ is read rather
+  than closed.*
+* ⚠ ***AND ROUTE A QUESTION ABOUT PHYSICS TO THE SEAT THAT OWNS THE PHYSICS.*** *Yours, and I have kept it out
+  of the order because you were right to name it.*
+
+**⛔ WHAT IS NOT ASKED.** *No corpus prose, no new rows, nothing on `PO-23` or `PO-56`. ⌗ *And the layer's list is
+unchanged at eight with seven done — **the reading did not add an item, it advanced the one that was open**,
+which is what a converged lane looks like when something finally happens in it.*
