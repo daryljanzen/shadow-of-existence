@@ -1032,3 +1032,77 @@ about any push** — which is exactly the fact nothing reads.*
 over what window, and at what cost per run are measurements to make and not questions to send up. *`PO-67` was
 opened on Monday and struck on Monday, with the row's own statement of its defect corrected in the discharge.
 That is four rows closed on this layer today.*
+
+---
+
+## ⛭⛭⛭ **r7011 → 70. `r7009+70.1` GATED WHOLE AND `PO-68` IS STRUCK IN THE SAME REVISION IT WAS OPENED. I ORDERED A COUNT AND YOU BUILT A PROOF, AND THE DIFFERENCE IS THE WHOLE VALUE OF THE REVISION. ITS REMAINDER IS `PO-69`, WHICH IS THE FIRST ROW ON THIS LAYER ABOUT A SINGLE RECEIPT.**
+
+Row struck on all three items, runway removed, `PO-69` opened and carrying `Q1`.
+
+**⛭⛭⛭ AND I WANT TO BE EXACT ABOUT WHAT YOU DID WITH THE LATITUDE, BECAUSE IT WAS THE RIGHT USE OF IT.** *I left
+the flicker threshold and the window to you, to set from what the history looked like. **You read the history and
+reported that a count is the wrong instrument** — with `D1` as the worked refutation: it flickers harder than
+`Q1` by any count and is not flickering at all, every flip coinciding with a change to something it reads.*
+⇒ *** SO THE FINDING IS A CONTRADICTION AND NOT A FREQUENCY, ONE IS ENOUGH, AND THERE IS NO THRESHOLD TO TUNE.
+*** ⌗ ***A design call handed down and returned as "the design is wrong" is worth more than any threshold I would
+have named***, *and it is the second time this layer has answered an order by replacing its instrument rather
+than filling it.*
+
+**✔ AND IT NAMES `Q1` UNPROMPTED, IN THE SHARPEST FORM THE TEST HAS.** *Same commit, two lines, one red and one
+green, nothing it reads differing. ⇒ *That is not a lead any more; it is a **proof** about that receipt's
+verdict — bounded by exactly one qualifier, which is the row below.*
+
+**⛭ AND `D1` IS DOING MORE WORK THAN ITS LINE SUGGESTS.** *Without it the instrument would have shipped with a
+count beside the contradiction and somebody would eventually have read the count. **A negative control that
+refutes the instrument you were asked to build is the strongest thing a measurement can return**, and it is the
+reason ⓷'s "a count licenses nothing about cause, and not even flakiness" is a measured statement rather than a
+caution.*
+
+---
+
+### ⛭ **`PO-69` — WHY THE QUALIFIER IS THE ROW**
+
+*Your own sentence: a contradiction licenses exactly one thing, that the verdict did not come from the tree **as
+the read index sees the tree** — and the index's stated recall limits, a C-extension load and a subprocess the
+source does not name, **can produce one too**.*
+
+⇒ *** SO THE SAME EVIDENCE SUPPORTS TWO READINGS AND THIS LAYER CANNOT SEPARATE THEM. *** *Either `Q1`'s verdict
+depends on something outside the tree — runner, threads, load, nondeterminism inside the receipt — **or it depends
+on something in the tree the index does not see**. ⌗ *You said the caveat is load-bearing. `PO-69` is the load,
+and it is a row rather than a note because the two readings have different remedies and the observations beside
+it are evidence for neither: three records on build `B` and no reproduction at one or four threads are what
+**both** readings predict.*
+
+---
+
+### ⛭ **THE ORDER — `PO-69`, AND I WOULD DO ⓵ FIRST BUT THE SEQUENCING IS YOURS**
+
+* ⓵ ***AUDIT THE READ INDEX'S RECALL AGAINST `Q1`'s ACTUAL IMPORTS AND SUBPROCESSES.*** *This is the cheap half
+  and it is decisive in one direction: **if the index misses something `Q1` reads, the contradiction is the
+  index's and the finding is about the index**; if it misses nothing, the contradiction stands and the cause is
+  outside the tree. ⌗ *Your own two named recall classes are where to look first, and the audit is a statement
+  about `Q1` specifically rather than about the index in general — which is the narrower and more useful object.*
+* ⓶ ***AND IF ⓵ COMES BACK CLEAN, RUN `Q1` UNDER THE CONDITIONS THE CONTRADICTING PAIR DIFFERS IN.*** *The pair
+  is the same commit on two lines, so the difference is the runner, the load, or the concurrency — **whichever of
+  those the records actually distinguish**. ⛔ *And not a re-run until it agrees with itself: **the run is to vary
+  one named condition and report what happens, not to obtain a green**.*
+* ⓷ ***AND WHICHEVER WAY IT FALLS, STATE IT AT THE RECEIPT AND NOT ONLY IN THE ROW.*** *`Q1` is the object; a
+  seat that opens it should find out from the receipt that its verdict has been proved not to come from the tree,
+  and under which of the two readings. ⌗ *That is `PO-67` ⓷'s standard applied to a receipt rather than to a
+  tool.*
+* ⓸ ***And nothing else.*** *No corpus prose, nothing on `PO-23` or `PO-56`, and no other receipt repaired.
+
+### ⛔ **THE GUARDS**
+
+* ⚠ ***A CONTRADICTION THAT GOES AWAY BECAUSE THE INDEX GOT BIGGER IS A DIFFERENT FINDING AND MUST BE REPORTED AS
+  ONE.*** *From the row, and it is the one thing ⓵ could get wrong: widening the index until the contradiction
+  disappears answers a different question than auditing whether it was ever complete.*
+* ⚠ ***A COUNT LICENSES NOTHING ABOUT CAUSE, AND NOT EVEN FLAKINESS.*** *Yours, this revision, measured on `D1`.*
+* ⚠ ***A FREQUENCY IS NOT A CAUSE AND A NON-REPRODUCTION IS NOT AN ABSENCE.*** *Standing, and `Q1` carries both.*
+* ⚠ ***BUILD BOTH SIDES OF A COMPARISON THE SAME WAY.*** *Yours, from `PO-66`.*
+* ⚠ ***AND IF AN ORDER'S INSTRUMENT IS THE WRONG INSTRUMENT, SAY SO AND BUILD THE RIGHT ONE.*** *Yours, this
+  revision, and it is now a standing guard on this line rather than an episode.*
+
+**⛔ WHAT IS NOT ASKED.** *No corpus prose. ⌗ **And the design calls in ⓵ and ⓶ are yours** — what counts as an
+audit of recall, and which condition the pair actually differs in, are measurements to make and not questions to
+send up. *Five rows closed on this layer today, and the last of them was opened and struck inside one revision.*

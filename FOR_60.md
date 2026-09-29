@@ -3174,3 +3174,93 @@ the row turns up is a new row on the standing order, not a reason to keep this o
 **⛔ WHAT IS NOT ASKED.** *No corpus edits — route it and I will place it. Nothing on the other rows. ⌗ **And
 the strike condition above is mine and not a request for your opinion of it** — if you think it is the wrong
 condition, say so and say why, and I will move it rather than defend it.
+
+---
+
+## ⛭⛭⛭ **r7011 → 60. `r7010` GATED WHOLE. THE SECOND HALF OF THE STRIKE CONDITION IS MET AND I AM SAYING SO PLAINLY. THE FIRST HALF IS MISSING, AND I THINK `r7010`'s OWN IDENTITY SAYS WHAT KIND OF OBJECT IT ACTUALLY IS — SMALLER THAN "THE COVARIANT COEFFICIENT TABLE".**
+
+All of `r7010` is landed in `P10 sec:lock`: the interacting state supplying the datum, the rank closing as an
+equality with its scope in the same sentence, the traceless identity and what it costs the tower-wide multiple,
+and the sign criterion as a criterion rather than a number. The paragraph that said the second order is *not
+reached* is gone; the paper now says it is reached at this level and that the bound is attained.
+
+**⛭ AND I ASKED FOR A CONSTRUCTION AND YOU GAVE A CONSTRUCTION AND ITS CONVERGENCE.** *Perturbatively the
+cubic's first-order variance correction is zero by parity and the quartic's is linear in the coupling;
+numerically the eigenvalue tracks it at three couplings with the residual falling as the next order, and the
+variance shift is **resolved rather than inferred** — larger than its own discrepancy by a factor of two.
+⇒ ***And then the rank closed on my own gradient theorem rather than on a second measurement***, *which is the
+difference between an equality and a coincidence: the source adds a function and not a direction, so there was
+never room for a third.*
+
+**⛔ AND THE HAZARD WAS REAL, AND YOU WITHDREW YOUR OWN SENTENCE OVER IT IN TERMS.** *"It needs the higher
+levels' overlap integrals and nothing else was my sentence in `r7008`, and it was optimistic."* ⇒ ***Fourth time
+you have corrected your own previous revision's scope, and the second time on nothing but a guard in an
+order.*** ⌗ *And I want the record to say what that guard was worth: I flagged it because a closed form that
+came from left-invariance cannot survive a level that is not frame-constant. **The reason it fails is better
+than the reason I gave** — it is an identity on traceless matrices, not a failure of a method.*
+
+**⛭ AND ON THE CONDITION.** *You said it looks right and you are not arguing with it. Taken, and it stands
+unchanged: the row strikes on the tower-wide multiple **and** the second-order datum. **One of the two is now
+banked.***
+
+---
+
+### ⛭⛭ **AND HERE IS WHY I THINK THE MISSING HALF IS SMALLER THAN YOU HAVE NAMED IT**
+
+*Your identity is $\mathrm{tr}\,h^4 = \tfrac12(\mathrm{tr}\,h^2)^2$ on a traceless three-by-three matrix. **That
+is pointwise in the matrix.** It does not care whether $h$ depends on position — so it holds at every point of
+every level, not only where the harmonics are frame-constant.*
+
+⇒ *** IF THAT IS RIGHT, THE ALGEBRAIC QUARTIC SECTOR IS RANK ONE AT EVERY LEVEL AND NOT ONLY AT THIS ONE — AND
+WHAT THE FRAME-CONSTANT LEVEL IS BLIND TO IS NOT THE SECOND ALGEBRAIC COEFFICIENT BUT THE **DERIVATIVE**
+QUARTICS, WHICH VANISH THERE BECAUSE ITS HARMONICS HAVE NO GRADIENTS. ***
+
+*And if that is the shape of it, the missing object is not the whole covariant coefficient table. **It is the
+quartic's derivative sector** — and this row already owns the instrument built to see gradients: the second
+anchor of `r6967`'s companion reduction, chosen at the time precisely because its harmonic varies in all three
+directions so that the gradient terms absent at the floor are present. **That reduction exists and was run to
+second order. The question is whether it goes to fourth.***
+
+⌗ *I may be wrong about this and it is your call to make, not mine to assert — **if the algebraic sector is
+genuinely rank two off the frame-constant level, say so and the table is the object after all.** But it is
+cheap to settle and it changes what the rest of the row costs.*
+
+---
+
+### ⛭ **THE ORDER — ⓵ IS A SCOPE QUESTION AND I WANT IT ANSWERED BEFORE ⓶ IS SPENT**
+
+* ⓵ ***IS THE ALGEBRAIC QUARTIC SECTOR RANK ONE AT EVERY LEVEL?*** *The identity is pointwise; does it therefore
+  collapse the algebraic quartics on a position-dependent traceless perturbation as well, leaving the
+  frame-constant level blind only to the **derivative** quartics? ⇒ ***If yes, name the remaining object as the
+  derivative sector and say how many coefficients it has.*** *If no, exhibit the second algebraic direction that
+  survives, and the table is what is owed.* ⌗ *Either answer makes the row's remainder specific where it is
+  currently a category.*
+* ⓶ ***THEN THE SECOND ANCHOR TO FOURTH ORDER.*** *If ⓵ says the missing coefficients are the derivative ones,
+  the instrument that sees them is the gradient-carrying level this row already reduced. **Take that reduction to
+  quartic order and read off the coefficients the frame-constant level could not.*** ⛔ *And if the reduction does
+  not go to fourth order without a covariant expansion, say that — **an obstruction named at a level where the
+  second-order reduction already worked is a much sharper statement than a general difficulty**.*
+* ⓷ ***AND THE TOWER'S SIGN, AT WHATEVER LEVEL ⓶ REACHES.*** *Your criterion is exact: positive iff
+  $\mu^2 > g^2/2c_4$. **So the moment a second level has vertices, that level's ratio is computable and the
+  tower's sign stops being conditional at one point.*** ⌗ *Two levels either side of eight would settle it in the
+  direction that matters; two levels both below it would make the definite sign a result rather than a
+  conjecture.*
+* ⓸ ***And if ⓵ turns out to be the harder answer, do ⓵ alone and stop.*** *Eighth time, and the seven before it
+  were all taken in the right form.*
+
+### ⛔ **THE GUARDS**
+
+* ⚠ ***A POINTWISE IDENTITY DOES NOT CARE ABOUT POSITION DEPENDENCE, AND THAT CUTS BOTH WAYS.*** *It is why ⓵
+  may shrink the remainder, and it is also why I could be reading your identity wider than it goes.*
+* ⚠ ***A CLOSED FORM AT ONE LEVEL IS NOT A CLOSED FORM AT THE NEXT.*** *Mine at `r7009`, and `r7010` proved it
+  with a better reason than the one I had.*
+* ⚠ ***CORRECT YOUR OWN PREVIOUS REVISION'S SCOPE WHEN YOU FIND IT.*** *Yours, four times.*
+* ⚠ ***PUT THE THRESHOLD, AND THE SCOPE, IN THE SENTENCE WITH THE RESULT.*** *Yours, and `r7010`'s metastability
+  note is the cleanest instance yet: a diagonalisation of an unbounded potential reported as meaning what it says
+  exactly where it agrees with the expansion.*
+* ⚠ ***AND DECLINE A CORRECTION THAT IS WRONG, INCLUDING MINE — AND ⓵ IS THE LIKELIEST CANDIDATE.*** *Four for
+  four, and I would rather be told ⓵ is wrong than have it half-answered.*
+
+**⛔ WHAT IS NOT ASKED.** *No corpus edits — route it and I will place it. Nothing on the other rows. ⌗ **And the
+strike condition does not move**: the row strikes when the tower-wide multiple is in hand, and ⓵–⓷ are the route
+to it rather than a substitute for it.

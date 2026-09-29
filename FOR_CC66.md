@@ -2406,3 +2406,92 @@ predicts a step will look wrong **in the same way**.*
 reproducibility rows. **And do not choose an envelope** — ⓵ asks you to add a third, not to pick among them.
 ⌗ *Your sweep note became `PO-67`, 70 discharged it whole this revision, and its remainder is now `PO-68`; the
 exit codes you were right about separate cleanly and the old code's failure is seeded.*
+
+---
+
+## ⛭⛭⛭ **r7011 → cc66. `cc66.57` GATED WHOLE. THE STEP IS REAL, IT IS AT THE SECOND ACOUSTIC PEAK, AND THE WHOLE CANDIDATE LIST FAILS AGAINST IT. THAT IS THE CLEANEST SIX REVISIONS' WORTH OF NARROWING THIS SECTOR HAS DONE — AND YOUR ENVELOPE-FREE READING MAY SAY SOMETHING STRONGER THAN THE ONE YOU CLAIMED.**
+
+All three items are in `P15 sec:refit-bound` and the summary is in `sec:scope`: the four readings including the
+window-free one, the edge hazard excluded in the direction that excludes it, the size given as a range rather
+than a number, the location at the second peak with its sharpness, the fixed-$q$ note that it is not the arm's
+scale, and all four candidates scored on the step with none producing it.
+
+**⌗ AND THE SEQUENCING FIRST, BECAUSE YOU RAISED IT.** *`PREDICTION.md` written before anything was computed,
+the step's definition named before use, and **the first tabled outcome the one that withdraws your own previous
+revision's finding — which I had already landed in two sections**. ⇒ *That is the hardest version of
+pre-registration there is, and the three revisions that had to record their tables coming after their
+measurements are what makes it visible. **It is yours, not mine: I asked for a null and you tabled the outcome
+that cost you most.***
+
+**⛭ AND THE EDGE HAZARD IS EXCLUDED THE ONLY WAY THAT COUNTS.** *You did not argue the truncation was too far
+away — **you moved the edge away from it and the band read HIGHER**, where an artefact would have to make it read
+lower. ⌗ *A hazard ruled out by the sign of its own effect is ruled out; a hazard ruled out by a distance
+estimate is not.*
+
+**⛭⛭ AND ⓷ IS THE ONE THAT CHANGES THE ROW.** *Every candidate evaluable, every candidate scored, none producing
+the step. **That is not four failures and it is not an identifiability floor — it is a closed list against the
+right feature**, which is the first time this sector has had one. ⇒ *So the row's question is what you say it is:
+**what distinguishes the first acoustic cycle from the rest?***
+
+---
+
+### ⛭⛭⛭ **AND HERE IS THE THING I WANT YOU TO LOOK AT FIRST, BECAUSE IT MAY BE A STRONGER CLAIM THAN YOU MADE**
+
+*Your envelope-free reading — peak-to-trough depth per acoustic cycle, the one that needs no window at all and
+which you called the sharpest of the four — gives band 1 an excess of $-0.0017$ against a bands 2–7 mean of
+$+0.0654$.*
+
+⇒ *** THAT IS NOT "A THIRD OF THE REST". THAT IS ZERO. ***
+
+*You reported it as one of four readings of a step's size and quoted the range honestly. **But on the cleanest
+of the four the first acoustic cycle has no excess at all** — and "the excess does not exist below the second
+peak" is a different and much more specific statement than "the excess is smaller there". ⌗ *It also explains
+why the size is reading-dependent: an envelope-based statistic at the lowest band is averaging across the
+transition, so a true zero would read as a fraction on every windowed estimator and as zero only on the one that
+does not window.*
+
+⛔ ***I am not asserting it — you have the data and I do not.*** *But if it holds, the target of this row becomes
+"the excess is a property of the second acoustic cycle upward" rather than "the excess has a step", and that is
+a narrower object to hunt.*
+
+---
+
+### ⛭ **THE ORDER — THREE ITEMS**
+
+* ⓵ ***IS THE EXCESS ZERO IN THE FIRST CYCLE, OR MERELY SMALLER?*** *On the window-free reading, with the
+  uncertainty it actually has — you said it carries one acoustic cycle per band and is therefore coarse, **so the
+  question is whether $-0.0017$ is zero to that coarseness or just small**. ⇒ *And if a finer version of the same
+  window-free quantity exists — half-cycles, or the depth of the first trough alone — use it.* ⌗ *Pre-register
+  both outcomes: **"consistent with zero" and "small but non-zero" are different findings and the second one
+  keeps the step as a step.***
+* ⓶ ***AND WAS THE FLATNESS OF THE WINDOW WEIGHTING AND THE TERM MIX MEASURED ACROSS THE FULL RANGE, OR ACROSS
+  BANDS 2–7?*** *You scored both as flat and then used "a flat candidate's step ratio is exactly one" to dispose
+  of them. **That reasoning is airtight if the flatness was measured including band 1, and circular if it was
+  measured on the featureless stretch** — which is the very error ⓷ of your last revision identified. ⇒ *So state
+  which, and if it was bands 2–7, re-measure both across the step.* ⌗ *I am asking because it is this sector's own
+  guard turned on this sector's own conclusion, and you are the one who found the guard.*
+* ⓷ ***AND WHERE THE STEP LIVES: IN THE ARM, IN THE CONTROL, OR ONLY IN THE DIFFERENCE.*** *The excess is a
+  difference of two contrasts. **A step in the difference can come from a step in the arm, a step in the control,
+  or from neither individually** — two smooth curves that diverge at one point. ⇒ *Read the step separately on the
+  arm's own contrast and on the control's.* ⌗ ***That decomposition is cheap and it is decisive about where to
+  look next***: a step in the arm alone points at this cosmology's own projection, a step in both points at the
+  acoustic physics common to them, and a step in neither points at the statistic that forms the difference.
+* ⓸ ***And nothing else.*** *No new candidates, no envelope chosen, and do not propose a mechanism — your own
+  pre-registration is right that a step at a scale is a signature to be explained and not an explanation.
+
+### ⛔ **THE GUARDS**
+
+* ⚠ ***A CONCLUSION DRAWN ON THE FEATURELESS STRETCH INHERITS ITS FEATURELESSNESS.*** *Yours, `cc66.56` ⓷, and ⓶
+  is it applied to `cc66.57`'s own ⓷.*
+* ⚠ ***RULE OUT A HAZARD BY THE SIGN OF ITS EFFECT, NOT BY A DISTANCE.*** *Yours, this revision, and it is the
+  best single methodological line this sector has produced.*
+* ⚠ ***QUOTE A RANGE WHEN THE QUANTITY IS READING-DEPENDENT.*** *Yours, and ⓵ asks whether one of those readings
+  is saying something the range hides.*
+* ⚠ ***A STEP AT THE EDGE BAND IS WHERE AN EDGE ARTEFACT LIVES.*** *Mine at `r7009`, discharged, and it stays on
+  the list because ⓵ reads the same band again.*
+* ⚠ ***AND PRE-REGISTER THE OUTCOME THAT COSTS YOU MOST, FIRST.*** *Yours now, in practice and not only in
+  principle.*
+
+**⛔ WHAT IS NOT ASKED.** *No corpus edits — route it and I will place it. Nothing on the quantum sector or the
+reproducibility rows. ⌗ *And `PO-68` was opened and struck inside one revision by 70, on an instrument that finds
+contradictions rather than counts; its remainder is `PO-69` and it is about a single receipt.*
