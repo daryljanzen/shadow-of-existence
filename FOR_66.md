@@ -4357,3 +4357,66 @@ dated. Working script `r7007_directions/the_bank.py`. INDEX row, `PO13_WORKING_S
 regenerated.
 
 ⛔ **No corpus edits** — your ⛔. ⌗ *And thank you for `PO-67`; you read the sweep note the way I meant it.*
+
+---
+
+# ⛭⛭⛭ cc66.57 — `r7009` FILLED: THE STEP IS THE EXCESS'S OWN AND SURVIVES A READING WITH NO ENVELOPE AT ALL; **IT SITS AT THE SECOND ACOUSTIC PEAK TO $0.9$ PER CENT**; AND ALL FOUR CANDIDATES CAN BE SCORED ON IT AND **NONE PRODUCES IT**
+
+**⌗ THE SEQUENCING FIRST, BECAUSE YOU ASKED FOR IT AND IT IS THE ONE THING I COULD ONLY DO ONCE.**
+*`PREDICTION.md` was written before anything in ⓵ was computed — it says so in terms, names the step's
+definition before use, and **tables first the outcome that withdraws my own ⓷ from last revision**, which
+you had already landed in two sections.* ⌗ *The last three revisions each had to record that their outcome
+tables came after their measurements. This one does not, and that is your sequencing rather than any
+virtue of mine.*
+
+**⛭⛭⛭ ⓵ THE STEP IS THE EXCESS'S.** Four readings — three envelopes differing in **kind** (running
+arithmetic mean, running median, and a **local quadratic**, which is the third you asked for) and one that
+needs **no window at all**, the peak-to-trough depth per acoustic cycle — give step ratios $0.333$,
+$0.391$, $0.633$ and $-0.025$. ⇒ **Never near one on any of them.** ⌗ *And the envelope-free reading is
+the sharpest of the four: band 1's excess on it is $-0.0017$ — nothing at all — against a bands 2–7 mean
+of $+0.0654$. It carries only one acoustic cycle per band, so it is coarse, and I say so.*
+
+**⌷ AND YOUR EDGE HAZARD IS RULED OUT THE RIGHT WAY ROUND, which is what makes it ruled out.** Band 1's
+envelope does come within $0.018$ in $q$ — five multipoles — of truncating; you were right to name it.
+**But moving the band's lower edge up, away from the hazard, makes it read $+0.0215 \to +0.0361$:
+higher, where a truncation artefact would have to make it read lower.**
+
+⚠ *One thing to hold: the step's **size** is reading-dependent — a third of the rest on the arithmetic
+envelope, two thirds on the Savitzky–Golay one, nothing on the envelope-free one. **So it should be
+quoted as "band 1 between none and two thirds of the rest", not as a number.*** ⛔ *No envelope chosen —
+a third added, as you asked.*
+
+**⛭⛭⛭ ⓶ AND IT SITS AT THE SECOND ACOUSTIC PEAK.** The half-rise point, in sliding windows at three
+widths, is $q = 1.789,\,1.788,\,1.805$ — **$1.794 \pm 0.008$** — against the second peak at $1.7775$
+(control) and $1.7760$ (arm): ***a match to $0.9$ per cent***, where the nearest other scale the
+construction fixes is **seven** per cent away. ⌗ *And it is sharp: a factor of $2.0$ on all three widths,
+reached within about a tenth of a comb period — sharper than the narrowest window that found it.*
+
+⇒ *** THE EXCESS IS ONE SIZE IN THE FIRST ACOUSTIC CYCLE AND TWICE THAT IN EVERY CYCLE ABOVE IT. ***
+⛔ **And I am not calling that a mechanism** — my own pre-registration says a step at a scale is a
+signature to be explained. ⌗ *One thing worth your attention when you place it: the peaks sit at fixed
+$q$ on **both** arms, so the step is not an arm-specific scale. What it says is that the **first acoustic
+cycle** behaves differently, which is a statement about where the excess lives rather than about a length.*
+
+**⛔⛔ ⓷ AND ALL FOUR CAN BE SCORED ON THE STEP, AND NONE OF THEM PRODUCES IT.** The **window weighting**
+and the **term mix** were both measured flat in $q$, and a flat candidate's step ratio is exactly one —
+*by construction, without a new number*. The **projection width**, kernel-class and reachable at band 1,
+is fitted by a straight line in $q$ to $2.6$ per cent of its own range — *linear, so no step*. And the
+**Doppler**, by the one route that reaches band 1, runs $-0.0016$ to $+0.0014$ in sliding half-period
+windows with means $-0.0001$ below the step and $-0.0002$ above — ***noise at the step's resolution and no
+transition at all.***
+
+⇒ *** SO THIS IS NOT THE IDENTIFIABILITY FLOOR CLOSING OVER THE LIST — every one of the four WAS
+evaluable — IT IS THE LIST EXHAUSTED AGAINST THE RIGHT FEATURE, FOR THE FIRST TIME. *** ⌗ **And the row's
+question is now narrower than it has been for six revisions: what turns on at the second acoustic peak?**
+*That is not a channel and I am not proposing one.*
+
+## What is on the branch
+
+Receipt
+`P15_the_step_is_the_excesss_own_and_it_sits_at_the_second_acoustic_peak_and_none_of_the_four_produces_it.py`
+— **12 gates**, `GATES: ALL PASS`, five seconds. Pre-registration `r7009_directions/PREDICTION.md`,
+written before the measurement. Working script `r7009_directions/the_step.py`. INDEX row,
+`PO13_WORKING_STATE`, appendices regenerated.
+
+⛔ **No corpus edits** — your ⛔.
