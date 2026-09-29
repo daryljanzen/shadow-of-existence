@@ -5740,3 +5740,51 @@ what the step says is that the **first acoustic cycle** differs, not that an arm
 list EXHAUSTED against the right feature, for the first time. *** ⌗ *So the row's question is now: **what
 turns on at the second acoustic peak?** Narrower than the question this sector has asked for six
 revisions, and not a channel.*
+
+## ⛭⛭⛭ `cc66.58` — `r7011` FILLED: THE WINDOW-FREE READING CANNOT RESOLVE THE FIRST CYCLE, THE FLATNESS WAS A **TREND**, AND NINE TENTHS OF THE STEP IS **COMMON TO BOTH ARMS**
+
+**Receipt** `receipts/P15_CR_cosmology/P15_the_window_free_reading_cannot_resolve_the_first_cycle_the_flatness_was_a_trend_and_nine_tenths_of_the_step_is_common_to_both_arms.py` — **34 gates, `GATES: ALL PASS`**, 1.1 s. Pre-registration `computations/beyond_the_wall/r7011_directions/PREDICTION.md` committed *before* the working script `the_first_cycle.py` was run, in separate commits. Nothing solved, nothing run, no corpus edits.
+
+### ⓵ THE WINDOW-FREE FAMILY HAS ONE DATUM BELOW THE STEP, SO IT CANNOT ANSWER — AND THAT IS THE ANSWER
+
+Its band 1 rests on **exactly one half-cycle transition**, because the first locatable extremum pair sits at $q = 1.363$ and the step is at $1.794$. So $-0.0008$ is $0.02\sigma$ from **zero** *and* $1.60\sigma$ from the bands 2–7 mean: consistent with both, informative about neither. The uncertainty is not asserted — it is the per-transition scatter $0.0456$ over the ten data in bands 2–7.
+
+No finer member escapes it. The **extremal envelope** — successive maxima and successive minima interpolated separately, no running window anywhere — covers only $27\%$ of band 1, rests on the same single extremum, and interpolates *across* the step, so its $+0.0245$ is biased **toward** the above-step value. Three settings of the extremum finder give the same below/above ratio $0.338$ to six decimals.
+
+⇒ **The answer comes from the statistics that do resolve band 1, and there the excess is $+0.0215$** over the full band $q = 0.85$–$1.55$, including the $73\%$ of it the window-free family cannot reach. **"Small but non-zero" is the supported row; the step stays a step rather than becoming an onset.**
+
+⛔ **`cc66.57`'s "the sharpest of the four" is WITHDRAWN — it was the coarsest**, by one datum against four hundred. Its "none" endpoint goes with it, **as unresolved rather than as a reading**, which *tightens* the size: $0.333$, $0.391$, $0.633$ windowed and $0.338$ on the extremal envelope — band 1 between a third and two thirds of the rest.
+
+### ⓶ THE RANGE WAS FULL; THE STATISTIC WAS A TREND; AND NEITHER CHANNEL IS FLAT
+
+**(a)** `cc66.49`'s fit abscissa is `Q2 = QC ** 2` over the centres of **all seven bands** — read off that receipt's own file and gated on it. So band 1 *is* in the flatness measurement and **the disposal is not circular on range**; the order's first reading of the hazard does not fire.
+
+**(b) But the statistic is a trend, and that is the half this seat owns.** $\lvert\text{slope}\times\langle q^2\rangle\rvert/\lvert\text{intercept}\rvert$ cannot exclude a step, which lives in the **residual** — the JOINT reads $0.004$ on that statistic while leaving $61\%$ of its own range unexplained by that line.
+
+**(c) Re-scored on band 1's departure from its own bands 2–7 trend, across four trend bases with none chosen:**
+
+| channel | $v\sim q$ | $v\sim q^2$ | $\ln v\sim q$ | $\ln v\sim q^2$ | verdict |
+|---|---|---|---|---|---|
+| window | $+0.449$ | $+0.531$ | $+0.468$ | $+0.560$ | **steps UP** — wrong sign |
+| term mix | $-0.385$ | $-0.358$ | $-0.378$ | $-0.350$ | **steps DOWN**, $63\%$ of the excess's |
+| JOINT (realised pair) | $-0.266$ | $-0.233$ | $-0.259$ | $-0.225$ | down, $42\%$, $2\sigma$ on three bases |
+| measured excess | $-0.566$ | $-0.598$ | $-0.575$ | $-0.601$ | the step itself |
+| projection width | $+0.282$ | $-0.346$ | $-0.295$ | $-0.446$ | **flips sign** ⇒ no step |
+
+⇒ ***`cc66.57`'s ⓷ is withdrawn in part and THE LIST IS NOT EXHAUSTED.*** Its sentence *"a flat candidate's step ratio is exactly one, by construction and without a new number"* was never earned. The step has a **partial account** — a minority share, as the Doppler turned out to be — rather than none.
+
+⌗ **The projection width's disposal stands, and the basis table is what shows why**: that channel is linear in $q$ to $2.6\%$ of its range, so a log basis *manufactures* a step for it and it flips sign across the family. `cc66.57` scored that one on a residual from a straight line in $q$ — the sound one of the four.
+
+### ⓷ BOTH ARMS STEP, NEARLY EQUALLY, AND THE EXCESS'S STEP IS THE PART THAT FAILS TO CANCEL
+
+On **every** one of the four bases and on **both** the windowed and the window-free contrast: the control departs from its own bands 2–7 trend by $+30$ to $+44$ per cent at band 1, the arm by $+27$ to $+39$, **the arm always the shallower — by some eleven per cent of the step and no more**.
+
+⇒ ***So of a step worth tens of per cent in each spectrum, about nine tenths is COMMON to the two arms and cancels in the ratio; the excess's step is the tenth that does not.*** That is the pre-registration's "both arms" row: the step belongs to the acoustic physics the two share, and it explains — without a new number — why `cc66.57` found the location at fixed $q$ on **both** arms.
+
+⚠ **And the caution is this seat's, not the order's:** a small residual of two large common features is exactly where a *nearly*-common systematic would sit. That does not make the step an artefact. It does mean **the next reading of it should be differential by construction** rather than a difference of two large numbers.
+
+### THE DISCIPLINE THIS REVISION ADDS
+
+⚠ ***A TREND STATISTIC CANNOT EXCLUDE A STEP.*** A small slope says nothing about a residual, and two of `cc66.57`'s four disposals rested on exactly that non-sequitur.
+⚠ ***A RESIDUAL-AGAINST-TREND STATISTIC NEEDS A BASIS, AND THE BASIS IS A CHOICE — SO DO NOT CHOOSE IT.*** The projection width is linear in $q$; a log basis manufactures a step for it. Four bases are reported; a departure counts only if it survives all four. *Fourth revision running on "do not choose — name the family".*
+⚠ ***COUNT THE DATA BEFORE CALLING A READING SHARP.*** "Envelope-free" is a statement about bias, not about resolution, and the reading with the least bias here had one datum where it mattered.

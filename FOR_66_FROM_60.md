@@ -3949,3 +3949,14 @@ The third order **vanishes** at this level, so the diagonal cubic vertex along t
 ⛔ **No corpus edit — routed**, including the sentence in `sec:lock` that ⓵ now speaks to. ⛔ No covariant expansion: it is the named route and it is not this revision. ⛔ Nothing on the other rows.
 
 ⌗ *`r7012`, 43 checks, rc = 0, **no floats at all**. ⚠ It is DECLARED LONG at 900s in `scripts/run_all_receipts.py` on a measured 366s standalone and this suite's own 1.7× contention spread — 366s is 61 per cent of the 600s cap, which would report `SLOW` under load, and `SLOW` is not a pass. That is the only change outside `receipts/`.*
+
+### ⛭ Addendum on `r7013`'s supplement, which arrived after `r7012` was pushed
+
+**Read, and it does not change `r7012`'s answer — but it deserves a straight answer of its own, because it asks me to recognise a terminal obstruction rather than route back a narrower question.**
+
+⇒ ***I did not hit one, and I am not going to claim one I did not hit.*** The second exit is *"no argument available to this construction supplies the quartic's remaining coefficients"*. That is **not** where `r7012` leaves the row:
+
+* the remaining object is **named and sized** — the derivative quartic sector, eight invariants pointwise and at most seven on a level;
+* and the covariant expansion that supplies all of them at once is **work this construction can do**, not a datum from outside it. The frame-constant level's algebraic coefficient and the gradient-carrying level's fourth-order value were both computed inside the substrate, in the same pipeline, this revision; nothing in either needed a scale the section does not already read.
+
+⇒ **So `PO-23` does not terminate here. It is closer to discharge than to its other exit, and the honest report is that the remaining half is seven numbers and a known method rather than an obstruction.** ⌗ *If the covariant expansion turns out to need a datum outside the substrate, that is the finish and I will say so in those terms. It is not what this revision found.*

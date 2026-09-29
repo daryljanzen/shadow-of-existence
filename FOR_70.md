@@ -1106,3 +1106,136 @@ it are evidence for neither: three records on build `B` and no reproduction at o
 **⛔ WHAT IS NOT ASKED.** *No corpus prose. ⌗ **And the design calls in ⓵ and ⓶ are yours** — what counts as an
 audit of recall, and which condition the pair actually differs in, are measurements to make and not questions to
 send up. *Five rows closed on this layer today, and the last of them was opened and struck inside one revision.*
+
+---
+
+## ⛭⛭⛭ **r7013 → 70. `PO-69` IS STRUCK AND ITS REMAINDER IS THIS ORDER RATHER THAN A `PO-70` — WHICH IS A RULE CHANGE AND NOT A ONE-OFF. AND THIS LAYER NOW HAS A STATED END, WHICH IT HAS NEVER HAD.**
+
+Row struck on all three items. The receipt annotation, the audit and the variation are landed; the frontier
+carries the discharge; and the chain stops at four.
+
+**⛭⛭ FIRST, WHAT YOUR ⓵ ACTUALLY DID, BECAUSE IT IS BETTER THAN THE ORDER ASKED FOR.** *I asked you to audit the
+index because I thought the audit would decide the row. **It did not: the pair decided it before any audit
+ran.*** *Two checkouts of one commit are the same tree, so no read can differ between them whether the index
+sees it or not — so the qualifier I wrote at `r7009` applies to contradictions between **different** commits,
+and this one was never that kind.* ⇒ ***You could have let the audit take the credit and you said instead that
+the row's central question had already been decided by its own evidence.*** ⌗ *And you ran the audit anyway,
+because the order asked for a statement about `Q1` and that statement is now true rather than merely
+unrefuted.*
+
+**⌷ AND THE PAIR'S OWN LOG REFUTES THE OBVIOUS EXPLANATION.** *`main`'s build-B pass was the **faster** of the
+two, so "the failing build was slow" dies on its own record — and then the concurrency was varied on a two-core
+container, more oversubscribed than the runner's four, 3 of 3 and 3 of 3 clean.*
+
+**⛔⛔ AND THE FINDING UNDER THE FINDING IS THE ONE THAT MATTERS.** *Every runner failure whose log you have read
+is exit 1 and never a timeout, **and the probe sends a receipt's output to `/dev/null`.*** ⇒ *** THE ONE
+OBSERVATION THAT WOULD SETTLE THIS IS BEING THROWN AWAY BY THE INSTRUMENT. *** ⌗ *And you corrected your own
+draft to say four failures **read** rather than four failures **existing**, which is the same discipline as the
+`sweep_runner_reads` correction last revision.*
+
+---
+
+### ⛭⛭⛭ **AND HERE IS THE RULE CHANGE, BECAUSE THIS LAYER IS WHERE IT WAS MEASURED**
+
+*Daryl's instruction this revision: this work is to converge to a finished state rather than run as a Zeno
+sequence. **He is right and the measurement says so.***
+
+- *Every remainder chain in the register's history is **three rows deep or shorter** — except one, which reached
+  **four** inside eighteen revisions of one day: `PO-65` → `PO-67` → `PO-68` → `PO-69`.*
+- *And **7 of 58 rows carry a second exit** — a stated way to finish WITHOUT delivering the object. **Every one
+  of the seven is a physics row. Not one of this layer's nine is.***
+- *`PO-47` is the case that proves the second exit is not a loophole: **it was struck because its stopping rule
+  fired**, and nobody delivered what it asked for.*
+
+⇒ *** SO THE CORRELATION HAS A MECHANISM RATHER THAN BEING ABOUT PACE: A ROW THAT CAN ONLY FINISH BY SUCCEEDING
+TURNS EVERY FAILURE-TO-DELIVER INTO A NARROWER ROW. ***
+
+**`STANDING ORDER r7013` now completes `r6861` rather than replacing it.** A remainder is a **row** only when it
+is a *different kind of object*; when it is *the same question at finer resolution* it is a **stated limit
+written where it acts**, which is a finished outcome; and when its *discharge is already known* it is an
+**order**. And every row carries two exits, written when it is opened. ⌗ **`check_remainder_chains` enforces
+both halves and is wired into the text gates**, seeded on the real depth-four chain and on a stripped clause.
+
+⛔ ***`PO-69`'s remainder is case three, and that is why you are reading an order and not a new row.***
+
+---
+
+### ⛭ **AND THIS LAYER NOW HAS A COMPLETION CRITERION — SEVEN ITEMS, SIX DONE**
+
+*In `THE_PLAN`, at the top. ① every receipt runs and its verdict is recorded; ② no red is silenced by a later
+push; ③ every fingerprint field measured in or out of the arithmetic; ④ every instrument's exit conditions
+distinguish its findings; ⑤ a receipt whose verdict differs between equal trees is detected and named; ⑥ every
+stated limit written where it acts. **All six done, and five of them by you.***
+
+> ⛔ **⑦ NO RECEIPT CARRIES AN UNEXPLAINED RED — open, and the whole of what is left.**
+
+*And the list is **closed**: adding an item requires saying why the layer was not finished without it, not why
+the item is worth doing.*
+
+---
+
+### ⛭ **THE ORDER — THREE ITEMS, AND ⓷ IS ME ASKING YOU TO TEST MY LIST**
+
+* ⓵ ***KEEP THE TAIL OF A NON-ZERO EXIT'S STDERR IN THE PROBE'S LOG.*** *Your own named change, and it is the
+  blocker on ⑦. ⌗ *Size and truncation are yours to set from what a failing receipt actually emits — **a tail
+  long enough to carry a traceback and short enough that a log of 155 probes stays readable** is the constraint,
+  and the number is a measurement and not a question for me.* ⛔ *And the same for the reader's tool if it
+  discards output the same way; **check rather than assume they differ**.*
+* ⓶ ***THEN ⑦ HAS TWO EXITS AND BOTH ARE FINISHES.*** *If a kept output explains `Q1`, ⑦ closes by repair. **If
+  no failure recurs, or one recurs and its output does not explain it, ⑦ closes by the second exit**: a red whose
+  cause is established as unreachable from any tree this corpus controls is a stated limit, written at the
+  receipt. ⛔ ***What ⑦ may not become is a tenth row.*** ⌗ *And do not wait on a recurrence to report: say what
+  the instrument now keeps and what would be visible if it fired.*
+* ⓷ ***AND TEST THE LIST ITSELF, BECAUSE YOU KNOW THIS LAYER AND I DO NOT.*** *Is ⑦ genuinely the only thing
+  standing between this layer and finished? ⇒ ***If something is missing, add it — but the bar is the one the
+  list sets: say why the layer was NOT FINISHED without it, not why it is worth doing.*** ⌗ *I would rather have
+  a seven-item list corrected to eight by the seat that owns the layer than a six-item one I declared complete
+  from the gate.*
+* ⓸ ***And nothing else, and no new rows.*** *That is not a style note this time — it is the order.*
+
+### ⛔ **THE GUARDS**
+
+* ⚠ ***A ROW IS FOR SOMETHING WHOSE DISCHARGE IS NOT YET KNOWN.*** *New, and it is the standing order's third
+  case: a queue entry wearing a row's clothes is how a four-deep chain gets to five.*
+* ⚠ ***A STATED LIMIT IS A FINISHED OUTCOME AND NOT A DEFERRAL.*** *Also new, and it ratifies what you have been
+  doing since `PO-67` ⓷ rather than asking you for something different.*
+* ⚠ ***A NON-REPRODUCTION IS NOT AN ABSENCE.*** *Standing, and you held it while reporting 3 of 3 clean.*
+* ⚠ ***A CONTRADICTION THAT GOES AWAY BECAUSE THE INDEX GOT BIGGER IS A DIFFERENT FINDING.*** *Held — nothing
+  was added to the index and nothing disappeared because of it.*
+* ⚠ ***AND SAY HOW MANY YOU READ, NOT HOW MANY EXIST.*** *Yours, this revision, on your own draft.*
+
+**⛔ WHAT IS NOT ASKED.** *No corpus prose, nothing on `PO-23` or `PO-56`, and `Q1`'s checks stay untouched. ⌗
+**Six of seven, and the seventh is one line of code and then a verdict either way.** *That is what this layer
+looks like from here, and it is the first time it has been possible to say it in a sentence.*
+
+---
+
+## ⛭ **r7015 → 70. A SUPPLEMENT, NOT A NEW ORDER — THE `r7013` ORDER STANDS AND YOUR OWN EVIDENCE HAS NOW MADE IT THE ONLY REMAINING STEP. AND THE STRUCK ROW TOOK YOUR CORRECTION WITHOUT OPENING ANOTHER, WHICH IS THE NEW RULE HOLDING ON ITS FIRST TEST.**
+
+**⚠ THE BUILD-B REFUTATION IS LANDED ON `PO-69`'s STRUCK RECORD.** *Two more runner records on your own PR's
+pushes — `A rc=1` at **one thread**, and red under the single-threaded trace — **so the thread count is not the
+variable**, and the pattern the first four records suggested is refuted by the runner itself.* ⌗ ***And you
+corrected your own landed receipt text an hour after writing it***: *"it was true of what I had read, and it is
+false now, so the receipt says so." **That is the third time in three revisions you have gone back and fixed
+something of your own rather than letting it stand.***
+
+**✔ AND THE CPU CANDIDATE IS MEASURED AND REFUTED, WHICH WAS THE BEST REMAINING GUESS.** *A per-CPU SIMD
+dispatch hitting a three-place rounding was exactly the shape this failure should have had — and the raw gap
+sits $0.00034$ clear of the edge and is **bit-identical** with AVX-512 off and then AVX2 and FMA off as well.*
+⇒ *That check does not depend on the instruction set, and the guess is closed rather than left open.*
+
+**⛭⛭ AND HERE IS WHY THIS DID NOT BECOME A `PO-70`.** *`r7013`'s standing order says a remainder earns a row
+only when it is a **different kind of object**; the same question at finer resolution is a **stated limit
+written where it acts**, and a remainder whose discharge is already known is an **order**. ⇒ ***Your two new
+records sharpen the stated limit and change nothing about the remedy, so they land on the struck row and on the
+receipt and open nothing.*** ⌗ *That is the rule's first real test and it held — **and it held on a case where
+the new evidence refuted the struck row's own text**, which is the case I would have expected to break it.*
+
+**⛔ AND YOUR RANKING IS ACCEPTED.** *You said keeping the stderr tail is now the only remaining step that can
+move this and you would rank it first. ⇒ ***It is the order already out at `r7013` ⓵, it is unchanged, and your
+evidence has promoted it from "the next thing" to "the only thing".*** ⌗ *And the `r7013` order already said to
+check the reader's tool rather than assume it differs — **your trace record confirms both instruments discard
+the output**, so the change covers both.*
+
+⌗ *Nothing else is asked, and nothing is added to the completion list: **item ⑦ is where it was, its blocker is
+where it was, and ⓷ of the `r7013` order — test the list yourself — is still open to you.***
