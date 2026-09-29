@@ -5899,3 +5899,50 @@ against a **measured** $-0.014$. ⇒ **No rule fits.** All three predict a large
 ⚠ ***A BAND NARROWER THAN THE PERIOD IT MEASURES MAKES ITS OWN STATISTIC PHASE-DEPENDENT.*** Bands are $0.70$ of a comb period, so a band `std` samples an incomplete cycle; the held-period amplitude does not.
 ⚠ ***AN IDENTITY IS NOT A FIT, AND SAYING WHICH ONE YOU HAVE IS THE GATE.*** The decomposition reproduces the measured quantity to $0.00\%$ because it is algebra, and that is why the separation is exact rather than modelled.
 ⚠ ***A PERCENTAGE OF A NEAR-ZERO MEASUREMENT IS NOT A SHARE.*** When the denominator is consistent with zero, quote the residual in the measured units against the scatter.
+
+## ⛭⛭⛭ `cc66.61` — `r7019` FILLED: **NO STATISTIC THIS CONSTRUCTION CAN BUILD** RESOLVES THE TWO CHANNELS; THE PHASE STEP **DIES ON A MATCHED-WIDTH CONTROL**; AND THE CANCELLATION IS **AGGREGATION-DEPENDENT**
+
+**Receipt** `receipts/P15_CR_cosmology/P15_no_statistic_this_construction_can_build_resolves_the_two_channels_and_the_phase_step_dies_on_a_matched_width_control.py` — **22 gates, `GATES: ALL PASS`**, 0.7 s. Pre-registration is its own commit ahead of the working script `resolving_power.py`. Nothing solved, nothing run, no corpus edits.
+
+### ⓵ THE FLOOR DOES NOT MOVE — AND THAT IS `PO-56`'s TERMINAL CONDITION
+
+The **minimum resolvable share** $f_{\min} = 2\sigma/\lvert d_{\rm arm}\rvert$ is the smallest fraction of the step a channel could carry and still be decided.
+
+| route | $\lvert d_{\rm arm}\rvert$ | $\sigma$ | $f_{\min}$ |
+|---|---|---|---|
+| raw, 7 bands, per common $q$ | 0.4525 | 0.1473 | 0.65 |
+| held, 7 bands, per common $q$ | 0.2201 | 0.0696 | **0.63** |
+| raw / held, per common $\ell$ | 0.4522 / 0.2199 | 0.1473 / 0.0695 | 0.65 / 0.63 |
+| raw / held, 8 bands to $q = 6.45$ | 0.4404 / 0.2440 | 0.1369 / 0.0724 | 0.62 / **0.59** |
+| raw / held, 12 finer bands | — / 0.2224 | — / 0.0835 | — / 0.75 |
+
+⇒ ***The term mix carries $0.35$ of the step and the realised pair $0.03$, against a floor of $0.59$. They cannot be resolved by any statistic this construction can build.***
+
+⌗ **And the reason is what the pre-registration did not expect.** The held-period aggregation lowers $\sigma$ by $2.12\times$ *exactly as predicted* — **and lowers the signal by $2.06\times$ at the same time**. $f_{\min}$ moves only $0.65 \to 0.63$. *The candidate named in advance as the one expected to help most does not help.*
+
+⛔ **And the pre-registered abuse hazard fires before any power claim can be made:** the term mix and the realised pair **change sign** between the two aggregations, so their departures are not established at all. Only the window channel keeps its sign on all eight readings.
+
+### ⓶ THE PHASE IS RESOLVED WHERE IT IS NOT NEEDED AND NOT WHERE IT IS
+
+| | value |
+|---|---|
+| upper range, 4 full-period stretches | $+0.007368 \pm 0.000974$ rad ($+0.42°$, $7.6\sigma$) |
+| whole upper range as one stretch | $+0.007541$ rad |
+| band 1 ($0.70$ of a period) | $-0.002440$ rad |
+| matched-width control, 6 stretches of $0.70$ | mean $+0.008575$, scatter $0.007264$ — **$3.7\times$ larger** |
+
+On the full-period yardstick band 1 is $5.03$ scatters out. ⛔ **But that yardstick is wrong**: a projection over a *non-integer* number of periods leaks the baseline into $C$ and $S$, so a narrow stretch is both noisier *and* biased.
+
+⇒ ***Band 1 sits $1.52$ scatters out, not $5.03$. The phase step is NOT resolved, and `cc66.60`'s amplitude verdict stands as the complete one rather than the sign-only one.***
+
+⌗ The method reaches a $13\%$ measurement over five periods and cannot bring it to the one band that needs it — **the same structural limit in a third disguise**, after `cc66.58`'s window-free family and `cc66.60`'s trade-off.
+
+### ⓷ THE CANCELLATION IS AGGREGATION-DEPENDENT
+
+The joint's departure over its own scatter, four bases each: **raw** $0.24$–$0.54\sigma$ (consistent with zero on all four); **held** $4.16$–$4.98\sigma$ (on none). ⇒ **So ⓷ inherits ⓵'s answer rather than choosing a word** — the third possibility the pre-registration named — and constraint-versus-coincidence cannot be settled here. What it would be cancelling between is large either way: the two singles sum to $+0.895$ (raw) and $+1.149$ (held).
+
+### THE DISCIPLINE THIS REVISION ADDS
+
+⚠ ***A REDUCTION IN SCATTER IS ONLY A GAIN IF THE SIGNAL DOES NOT FALL WITH IT.*** The held-period aggregation halves both; $f_{\min}$ is the invariant and it does not move.
+⚠ ***A NARROW-WINDOW MEASUREMENT NEEDS A MATCHED-WIDTH CONTROL, NOT THE WIDE-WINDOW ERROR BAR.*** It turned $5.03\sigma$ into $1.52\sigma$ here, and the difference is the whole finding.
+⚠ ***"UNRESOLVABLE" IS A STATEMENT ABOUT THE INSTRUMENT AND MUST BE PROVED OVER ITS WHOLE REACH*** — every route banked, not the one to hand.
