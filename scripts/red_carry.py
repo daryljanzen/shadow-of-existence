@@ -64,16 +64,38 @@ these greens) on top.  Two jobs disagreeing about one receipt: red wins.
     place that pattern is visible is the ledger's own history (`git log -p refs/ci/carry`): the same
     receipt added and cleared on successive pushes.  That is the whole of what this layer knows about it.
 
+** ⛭ r7009+70.1 (PO-68): AND NOW THAT HISTORY IS READ -- AT EVERY RUN, AND BY `--history`. **  Every union
+  and every record prints, for each receipt it carries or finds red, what the ledger has recorded about it
+  before: carried n times, cleared m, on which lines, over what span -- and any CONTRADICTION: two runs of
+  the same class that gave it opposite verdicts on trees that agree on everything it reads (the diff
+  between the two pushed trees is outside its scope; the same commit on two lines is the sharpest case).
+  WHAT EACH LICENSES, IN TERMS:
+  * ** a COUNT licenses nothing about cause, and not even flakiness. **  A receipt carried and cleared
+    three times may have been broken and repaired three times: at r7009 `D1` on one line repeats 3/3 and
+    every flip coincides with a change to something it reads.  A frequency is a frequency.
+  * ** a CONTRADICTION licenses exactly one thing: that verdict did not come from the tree -- as the read
+    index sees the tree. **  It does not say what it came from: the runner, the thread count, the load,
+    nondeterminism in the receipt, or a read the index cannot see (a C-extension load, a subprocess the
+    source does not name -- the index's stated recall limits).  One contradiction is enough to establish
+    that much, so there is no threshold to tune; more of them add nothing to it.
+  * ⛔ ** and the two prohibitions: never re-run a red until it passes, and never treat a count or a
+    contradiction as evidence of a cause. **  A cause is established by a reproduction, and nothing here
+    reproduces anything.
+  * ⌗ A pair whose pushed trees can no longer be fetched is UNCHECKABLE and is printed as that, never
+    counted either way.
+
 Usage:
     python3 scripts/red_carry.py --union CLASS --list SCOPE          # add what is carried; rewrites SCOPE
     python3 scripts/red_carry.py --record CLASS --list SCOPE --outcome O [--suite-log F | --tol-dirs A B C
                                  | --trace DIR]                      # write this push's verdict
     python3 scripts/red_carry.py --show                              # print the ledger
+    python3 scripts/red_carry.py --history [--receipt SUBSTR]        # PO-68: per receipt, and its contradictions
     python3 scripts/red_carry.py --replay N                          # PO-65 ⓶: what carrying costs
     python3 scripts/red_carry.py --seed                              # PO-65 ⓷: both ways, on a real remote
     python3 scripts/red_carry.py --silenced FILE --work DIR          # PO-65 ⓶: the reds of the record, silenced
 """
 import argparse
+import collections
 import datetime
 import importlib.util
 import json
@@ -245,6 +267,10 @@ def do_union(root, which, path, remote):
         e = carry[r]
         print(f'    carried since {e["since"][:10]} on {e["line"]}: {r}'
               + ('  (NOT REGISTERED here -- cannot run)' if r in absent else ''), file=sys.stderr)
+    if carry and tip:
+        print(f'  ⌗ PO-68: what the ledger has recorded about these before, read at the run:', file=sys.stderr)
+        print_history([h for h in history_lines(root, events(root), set(carry)) if h['which'] == which],
+                      stream=sys.stderr, indent='    ')
     return 0
 
 
@@ -280,6 +306,10 @@ def do_record(root, which, path, outcome, evidence, remote):
                         ('- UNREGISTERED, leaves by name', removed)):
             for r in xs:
                 print(f'    {tag}: {r}', file=sys.stderr)
+        if added or kept:
+            print(f'  ⌗ PO-68: the ledger\'s history for what is red here, read at the run:', file=sys.stderr)
+            print_history([h for h in history_lines(root, events(root), set(added) | set(kept))
+                           if h['which'] == which], stream=sys.stderr, indent='    ')
         if not (added or cleared or removed):
             return 0
         msg = (f'{which} @ {branch} {sha[:10]}: +{len(added)} -{len(cleared)} ={len(kept)}'
@@ -289,6 +319,95 @@ def do_record(root, which, path, outcome, evidence, remote):
             return 0
         print('  red_carry: another job moved the ledger first -- re-reading and re-applying', file=sys.stderr)
     raise SystemExit(f'red_carry: could not write {REF} in {TRIES} tries')
+
+
+# ------------------------------------------------------------------------------------ PO-68: read the record
+def events(root, ref=REF):
+    """every change the ledger ever recorded, oldest first: (time, '+'|'-', line, class, receipt, sha).
+    '+' is a run that found the receipt red and carried it; '-' a run that covered it and passed.  Derived
+    from the JSON of each ledger commit against its parent (not from the messages), and the pushed sha from
+    the message's first line, which every write puts there."""
+    shas = git(root, 'rev-list', '--reverse', ref).stdout.split()
+    prev, out = set(), []
+    for s in shas:
+        t, subj = git(root, 'show', '-s', '--format=%ct%x00%s', s).stdout.strip().split('\x00', 1)
+        L = json.loads(git(root, 'show', f'{s}:carry.json').stdout or '{}')
+        cur = {(b, c, r) for b, v in L.items() for c, x in v.items() for r in x}
+        m = re.match(r'\S+ @ \S+ ([0-9a-f]{7,40})', subj)
+        sha = m.group(1) if m else ''
+        for k in sorted(cur - prev):
+            out.append((int(t), '+', *k, sha))
+        for k in sorted(prev - cur):
+            out.append((int(t), '-', *k, sha))
+        prev = cur
+    return out
+
+
+def contradictions(root, evs, rec, which, idx=None):
+    """PO-68: two runs of the SAME CLASS that gave this receipt OPPOSITE verdicts on trees that agree on
+    everything it reads -- the diff between the two pushed trees is outside its scope.  One is enough: the
+    verdict then did not come from the tree.  A pair whose trees cannot both be found is UNCHECKABLE and
+    said to be, never counted either way."""
+    rs = _mod('receipt_scope')
+    if idx is None:
+        idx = rs.load(root)[0]
+    full = {}
+
+    def resolve(s):
+        if s not in full:
+            r = git(root, 'rev-parse', '--verify', '--quiet', s + '^{commit}')
+            full[s] = r.stdout.strip() if r.returncode == 0 else None
+        return full[s]
+
+    reds = [e for e in evs if e[1] == '+' and e[3] == which and e[4] == rec]
+    greens = [e for e in evs if e[1] == '-' and e[3] == which and e[4] == rec]
+    found, unchk = [], 0
+    for r in reds:
+        for g_ in greens:
+            a, b = resolve(r[5]), resolve(g_[5])
+            if not (a and b):
+                unchk += 1
+                continue
+            if a == b or rec not in rs.scope(idx, *rs.diff(root, f'{a}..{b}'), which):
+                found.append((r, g_))
+    return found, unchk
+
+
+def history_lines(root, evs, recs=None, idx=None):
+    """per receipt and class: carried n times, cleared m, on which lines, over what span -- and the
+    contradictions, which are the finding.  `recs` limits it to those receipts (the run-time use)."""
+    by = collections.defaultdict(list)
+    for e in evs:
+        if recs is None or e[4] in recs:
+            by[(e[4], e[3])].append(e)
+    out = []
+    for (rec, which), es in sorted(by.items()):
+        n_add = sum(1 for e in es if e[1] == '+')
+        n_clr = sum(1 for e in es if e[1] == '-')
+        lines = sorted({e[2] for e in es})
+        span = (es[-1][0] - es[0][0]) / 3600
+        cx, unchk = contradictions(root, evs, rec, which, idx) if n_add and n_clr else ([], 0)
+        out.append(dict(rec=rec, which=which, carried=n_add, cleared=n_clr, lines=lines, span=span,
+                        contra=cx, unchecked=unchk))
+    return out
+
+
+def print_history(rows, stream=sys.stdout, indent='  '):
+    for h in rows:
+        tag = ('⚠ CONTRADICTED' if h['contra'] else
+               ('repeated' if h['carried'] > 1 else 'once'))
+        print(f'{indent}{tag:15} {h["which"]:9} {os.path.basename(h["rec"])[:70]}\n'
+              f'{indent}                carried {h["carried"]}, cleared {h["cleared"]}, on {len(h["lines"])} line(s) '
+              f'over {h["span"]:.1f} h: {", ".join(l.replace("claude/shadow-of-existence-setup-", "…") for l in h["lines"])}',
+              file=stream)
+        for r, g_ in h['contra'][:3]:
+            print(f'{indent}                red at {r[5][:10]} on {r[2]}, green at {g_[5][:10]} on {g_[2]} -- '
+                  f'nothing it reads differs between the two', file=stream)
+        if len(h['contra']) > 3:
+            print(f'{indent}                ... and {len(h["contra"]) - 3} more such pair(s)', file=stream)
+        if h['unchecked']:
+            print(f'{indent}                {h["unchecked"]} pair(s) UNCHECKABLE: a pushed tree is no longer '
+                  f'fetchable', file=stream)
 
 
 # ------------------------------------------------------------------------------------ PO-65 ⓶: the cost
@@ -523,6 +642,55 @@ def seed():
     return 0 if ok else 1
 
 
+def seed_history():
+    """PO-68, both ways, through the REAL tracer and index (receipt_scope's own machinery): a receipt that
+    reads `a.tex` is red at X and green at Y.  If Y changed only an unread file, the verdicts CONTRADICT
+    (nothing it reads differs); if Y changed `a.tex`, they do not (the tree moved under it)."""
+    rs = _mod('receipt_scope')
+    srr = _mod('sweep_runner_reads')
+    tmp = tempfile.mkdtemp(prefix='po68_seed_')
+    res = {}
+    try:
+        g = lambda *a: subprocess.run(['git', *a], cwd=tmp, capture_output=True, text=True)
+        g('init', '-q'); g('config', 'user.email', 's@x'); g('config', 'user.name', 's')
+        os.makedirs(os.path.join(tmp, 'receipts', 'S'))
+        os.makedirs(os.path.join(tmp, 'corpus'))
+        open(os.path.join(tmp, 'corpus', 'a.tex'), 'w').write('a')
+        open(os.path.join(tmp, 'corpus', 'b.tex'), 'w').write('b')
+        rec = 'receipts/S/R1.py'
+        open(os.path.join(tmp, rec), 'w').write(
+            "import os\nROOT = os.path.abspath(os.path.join(os.path.dirname(__file__), '..', '..'))\n"
+            "open(os.path.join(ROOT, 'corpus', 'a.tex')).read()\n")
+        g('add', '-A'); g('commit', '-qm', 'X')
+        X = g('rev-parse', 'HEAD').stdout.strip()
+        trace = os.path.join(tmp, '.trace'); os.makedirs(trace)
+        srr._run(tmp, rec, 60, trace)
+        rs.emit(trace, tmp, os.path.join(tmp, '.index.json'))
+        idx = rs.load(tmp, os.path.join(tmp, '.index.json'), regs=[rec])[0]
+        open(os.path.join(tmp, 'corpus', 'b.tex'), 'a').write('x'); g('commit', '-qam', 'Y: unread file')
+        Y = g('rev-parse', 'HEAD').stdout.strip()
+        open(os.path.join(tmp, 'corpus', 'a.tex'), 'a').write('x'); g('commit', '-qam', 'Z: read file')
+        Z = g('rev-parse', 'HEAD').stdout.strip()
+        ev = lambda op, sha, line='main': (0, op, line, 'suite', rec, sha)
+        c, u = contradictions(tmp, [ev('+', X), ev('-', Y, 'b')], rec, 'suite', idx)
+        res['red at X, green at Y (only an UNREAD file moved): CONTRADICTED'] = len(c) == 1
+        c, u = contradictions(tmp, [ev('+', X), ev('-', Z, 'b')], rec, 'suite', idx)
+        res['red at X, green at Z (a READ file moved): not contradicted'] = len(c) == 0 and u == 0
+        c, u = contradictions(tmp, [ev('+', X), ev('-', X, 'b')], rec, 'suite', idx)
+        res['red and green at the SAME commit on two lines: CONTRADICTED'] = len(c) == 1
+        c, u = contradictions(tmp, [ev('+', X), ev('-', 'deadbeefdeadbeef')], rec, 'suite', idx)
+        res['a pushed tree that is gone: UNCHECKABLE, counted neither way'] = len(c) == 0 and u == 1
+        c, u = contradictions(tmp, [ev('+', X), (0, '-', 'b', 'tolerance', rec, Y)], rec, 'suite', idx)
+        res['a green in ANOTHER class does not contradict'] = len(c) == 0
+    finally:
+        shutil.rmtree(tmp, ignore_errors=True)
+    for k, v in res.items():
+        print(f'    [{"ok" if v else "FAIL"}]  {k}')
+    ok = all(res.values())
+    print(f'\n  contradicted exactly when nothing the receipt reads differs: {ok}')
+    return 0 if ok else 1
+
+
 # ------------------------------------------------------------------------------------ main
 def main():
     ap = argparse.ArgumentParser()
@@ -536,13 +704,19 @@ def main():
     ap.add_argument('--tol-dirs', nargs='+')
     ap.add_argument('--trace')
     ap.add_argument('--show', action='store_true')
+    ap.add_argument('--history', action='store_true', help='PO-68: the ledger history per receipt')
+    ap.add_argument('--receipt', action='append', help='with --history: only these receipts (substring)')
     ap.add_argument('--replay', type=int, metavar='N')
     ap.add_argument('--index')
     ap.add_argument('--seed', action='store_true')
+    ap.add_argument('--seed-history', action='store_true')
     ap.add_argument('--silenced', metavar='FILE', help='lines of: CLASS RECEIPT [STRIDE]')
     ap.add_argument('--work', help='with --silenced: a scratch worktree path')
     a = ap.parse_args()
     root = os.path.abspath(a.root)
+    if a.seed_history:
+        print('\n  red_carry --seed-history: is a pair contradicted exactly when nothing the receipt reads differs?\n')
+        return seed_history()
     if a.seed:
         print('\n  red_carry --seed: is a red carried until a run covers it and passes, and only then cleared?\n')
         return seed()
@@ -553,6 +727,20 @@ def main():
         return 0
     if a.replay:
         replay(root, a.replay, a.index)
+        return 0
+    if a.history:
+        fetch(root, a.remote)
+        evs = events(root)
+        recs = None
+        if a.receipt:
+            recs = {e[4] for e in evs if any(s in e[4] for s in a.receipt)}
+        rows = history_lines(root, evs, recs)
+        print(f'\n  {REF}: {len(git(root, "rev-list", REF).stdout.split())} write(s), {len(evs)} change(s), '
+              f'{len({e[4] for e in evs})} receipt(s) ever carried\n')
+        print_history(rows)
+        n = sum(1 for h in rows if h['contra'])
+        print(f'\n  {n} receipt/class pair(s) CONTRADICTED: red and green on trees that agree on everything '
+              f'the receipt reads.  (What that licenses, and what it does not, is in this file\'s docstring.)')
         return 0
     if a.show:
         ledger, tip = fetch(root, a.remote)

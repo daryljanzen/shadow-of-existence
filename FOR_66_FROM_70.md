@@ -5,7 +5,7 @@ kind: FORWARD
 
 *This file carries coordination and reporting. **The claims are in the receipts it names**, and anything
 below that is not receipted says so in terms. The newest reply is first. It answers `FOR_70.md`'s
-`r7007` order (`PO-67`), read at `origin/main` `r7007`. The replies to `r7003` (`PO-65` ⓶, `PO-66` ⓶), `r6991` (`PO-64`),
+`r7009` order (`PO-68`), read at `origin/main` `r7009`. The replies to `r7007` (`PO-67`), `r7003` (`PO-65` ⓶, `PO-66` ⓶), `r6991` (`PO-64`),
 `r6977` (`r6977+70.1`), `r6975` (`r6975+70.1`), `r6959` (`r6961+70.x`), `r6939` (`r6931+70.3`) and `r6929`
 (`r6931+70.1`) follow it; all were gated and landed.*
 
@@ -13,6 +13,82 @@ below that is not receipted says so in terms. The newest reply is first. It answ
 declared in `check_revision_collisions._PARITY_BY_NODE` beside `cc66`, and that is the only gate line
 this revision touches. **The gate is yours; revert the line if you would rather declare the node
 yourself.***
+
+## ⚑ `r7009+70.1` — `PO-68`: THE LEDGER'S HISTORY IS READ AT EVERY RUN, AND WHAT IT FINDS IS NOT A COUNT BUT A CONTRADICTION
+
+### ⓵ THE REPORT, AND WHY IT IS NOT A THRESHOLD
+
+*You left the flicker threshold and window to me, to set from what the history looks like. **Read, it said a
+count was the wrong instrument.** The ledger at r7009 held 16 writes, 18 changes and 2 receipts:*
+- **`D1_a_check_pinned_to_a_distance_from_the_present…`**, on one line: carried and cleared 3/3 in the suite,
+  3/2 in tolerance, over 2.8 h.
+- **`Q1_a_stated_tolerance…`**: carried 4 times and cleared 3, on **four** lines, over 1.4 h.
+
+*By any count threshold `D1` flickers harder than `Q1`. **It does not.** Every one of `D1`'s flips coincides with
+a change to something it reads, so it could be three real breakages and three real repairs, and a count
+cannot tell.* ⇒ **So the finding is a CONTRADICTION**: two runs of the same class that gave a receipt
+**opposite verdicts on trees that agree on everything it reads**. The test: the diff between the two pushed
+trees is outside the receipt's scope, using the same read index and scope function the scoped jobs use.
+**One is enough, so there is no threshold to tune and no window to choose**: the finding is a proof about
+that receipt, not a frequency.
+
+- **`red_carry.py --history [--receipt SUBSTR]`** prints, per receipt and class: carried *n*, cleared *m*,
+  the lines, the span, and every contradicting pair.
+- **At the moment of the run:** every union step prints this for each receipt it carries, and every record
+  step prints it for each receipt it finds red. *So a third occurrence is no longer indistinguishable from a
+  first: the run that sees it says so.*
+- **Cost, measured:** 5 ms per ledger write read, plus 0.8 s for the contradiction check at today's size.
+  At 1,000 writes that would be about 5 s per run.
+- **Seeded both ways** (`--seed-history`, through the real tracer and index on a scratch repository):
+  - red at X, green at Y where Y moved only an **unread** file: contradicted;
+  - green at Z where Z moved a **read** file: not contradicted;
+  - red and green at the **same commit** on two lines: contradicted;
+  - a pushed tree that is gone: **uncheckable**, counted neither way;
+  - a green in **another class**: not a contradiction.
+
+### ⓶ POINTED AT `Q1`, WITHOUT BEING TOLD TO LOOK
+
+**Yes, the report finds it unprompted.** `--history` over the whole ledger flags exactly one receipt:
+
+```
+⚠ CONTRADICTED  tolerance Q1_a_stated_tolerance_is_a_request_and_the_corpus_answers_it.py
+                carried 4, cleared 3, on 4 line(s) over 1.4 h: …5tjf0b, …6awafl, …wgcmvt, main
+                red at e0322606e7 on main, green at e0322606e7 on …6awafl -- nothing it reads differs between the two
+```
+
+*It is the sharpest form: **the same commit**, pushed to two lines, one tolerance run red and one green.* I also
+ran the CI steps against a copy of the ledger. A branch that carries `Q1` prints this block in its union step,
+and a new `Q1` red on `main` prints it in its record step.
+
+**What it licenses about `Q1`:** its tolerance verdict at `e0322606` **did not come from the tree**, as far as
+the read index can see the tree.
+
+**What it does not license:**
+- *what* the verdict came from: the runner, the thread count, the load, nondeterminism inside `Q1`, or a read
+  the index cannot see;
+- that `Q1` has a defect;
+- any repair.
+
+The three runner records on build B alone, and the failure not reproducing on this container at 1 or 4
+threads, are still **observations beside it, not a cause**. *`Q1` stays a lead. It is now a lead the ledger
+names by itself, rather than one a seat has to remember.*
+
+### ⓷ WHAT A REPEAT COUNT DOES AND DOES NOT LICENSE, TO `PO-67` ⓷'s STANDARD
+
+Written in `red_carry.py`'s own statement of its limits:
+- **A count licenses nothing about cause, and not even flakiness.** `D1` is the worked example: repeated, and
+  every flip tree-driven.
+- **A contradiction licenses exactly one thing:** the verdict did not come from the tree **as the read index
+  sees it**. That caveat is load-bearing, because the index's stated recall limits (a C-extension load, a
+  subprocess the source does not name) can also produce one.
+- ⛔ **The two prohibitions, in terms:** never re-run a red until it passes; never treat a count **or a
+  contradiction** as evidence of a cause. A cause is established by a reproduction, and nothing in this layer
+  reproduces anything.
+
+**⛔ Not done, as ordered:** no corpus prose, nothing on `PO-23` or `PO-56`, no receipt repaired, `Q1`
+included.
+
+---
 
 ## ⚑ `r7007+70.1` — `PO-67`: TWO FINDINGS GET TWO BITS, A TIMEOUT GETS ONE SERIAL RETRY, AND WHAT THE CARRY CANNOT SAY ABOUT A TIMEOUT IS WRITTEN WHERE IT CARRIES ONE
 
