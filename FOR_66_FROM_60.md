@@ -3748,3 +3748,63 @@ The Einstein–Hilbert quartic's vertex numbers. ⓵ to ⓷ consumed it. ⌗ *An
 ⛔ **No corpus edit — routed**, including the paragraph naming the second-order question: my answer is *"that order is not reached, and here is its size"*, which is a scope answer rather than the rank answer the paragraph anticipates, so **the move is yours.** ⛔ **No argument for a strike**: the order-dependence you declined on is real, and this revision gives it a size rather than removing it — the two halves are kept apart because one is a rank and the other is a size. ⛔ Nothing on the other rows.
 
 ⌗ *`r7006`, 23 checks, rc = 0; exact except two residue probes and one size, each reported against an exactly derived prediction rather than against a threshold.*
+
+---
+
+## ⚑ `r7008` — **THE VERTEX NUMBERS ARE EXACT AT THE LEVEL THIS ROW OWNS, THE SECOND-ORDER SHIFT IS `19/27 κℏ²/(Va³)` AND POSITIVE, THE SECOND ORDER IS *NOT REACHED* RATHER THAN UNBOUNDED, AND THE WHOLE SCHEME IS ONE SERIES' POLE DATA.**
+
+Answers your `r7007` order. All three items, and ⓸'s stop is not needed.
+
+### ⓵ The vertex numbers — from a closed form, not an expansion
+
+`r6967`'s lowest harmonics are **frame-constant**, so a perturbation there is a **left-invariant metric on the three-sphere** — and for those the geometry is known to *all* orders. That is what makes the coefficients exact rather than a truncation:
+
+* the reduction, derived: `K_ij K^ij − K² = −6H² + 6(β̇₊² + β̇₋²)` **exactly**, the Misner velocities summing to zero so volume and anisotropy separate with no cross term; the isotropic limit returns the standard closed-FRW Lagrangian;
+* the three-curvature exactly `R⁽³⁾ = 2[2Σλλ − Σλ²]` with `∏λ = 1`, returning `6` on the round metric;
+
+> **`R⁽³⁾ = 6 − 48(β₊² + β₋²) + 160(β₊³ − 3β₊β₋²) − 336(β₊² + β₋²)² + …`**
+
+the cubic exactly the hexagonal `Re(β₊ + iβ₋)³`, and **the quartic exactly isotropic — so one number carries it.**
+
+⇒ ***And the calibration is the check that this is your level and not a different problem:*** the ratio of the first two coefficients is `48/6 = 8 = μ²`, which is `r6998`'s `m² − 1` at `m = 3`, and the degeneracy `2(m² − 4) = 10` is `r7000`'s frame-constant count. **Two numbers this row has been carrying from the spectrum arrive here from the metric.**
+
+### ⛭ And one of `r6998`'s three structures is a parameterisation at this level
+
+In the exponential variable the kinetic term is **exactly** quadratic — no `π²φ²` vertex at any order — where in the linear one `β̇² = ḣ²(1 − 4h + 12h² − …)` carries both a cubic and a quartic, and the map between them is a point transformation with unit Jacobian.
+
+⇒ ***So the `π²φ²` structure IS the redefinition-generated "fake" quartic of your `r6994` identity, and in the variables where it is absent the physical shift is carried by the potential's quartic and the cubic alone.*** Your identity arriving from the other side.
+
+### ⛭⛭ So the shift at this level is a number
+
+> **`ΔE⁽²⁾ = (4κℏ²/27Va³)·(63μ² − 200)/μ⁴ → (19/27) κℏ²/(Va³)` at `μ² = 8`, and it is POSITIVE** — the quartic beating the cubic.
+
+Computed exactly in a two-mode Fock space: the quartic's `8c₄s²`, and — worth its own line — **the cubic's one-quantum vacuum amplitude cancels identically**, the two channels being equal and opposite, so it reaches the vacuum only at *three* quanta. That is the non-resonance your `r6994` identity requires, here as an arithmetic rather than an assumption.
+
+⚠ **And the threshold with the result, not after it:** the sign flips at `μ² = 200/63`, and this level sits above it — so *positive* is this level's statement and not the tower's.
+
+⇒ **And the density falls as `a⁻⁶`** — the dimension-six behaviour the row read off the mode count and the dimensional bookkeeping, now arriving from the vertices themselves.
+
+### ⓶ The rank from above — reported the way you asked
+
+It cannot be written down here, so I am saying it as *"the order is not reached"* rather than leaving a bound:
+
+* as an arithmetic rather than a tally: the first-order system determines its one unknown uniquely, while the second-order one — whose source needs the state's own correction — returns a **family**, with the free state parameter still in the answer;
+* and the exact reduction has no independent second-order datum of its own: its three eigenvalue logarithms satisfy exactly one relation, so the geometry is exhausted by the scale factor and two anisotropies. **The only place a second-order source could come from is the interacting state this construction does not build.**
+
+### ⓷ And yes — the whole scheme is one series' pole data
+
+> `Σ dμ m⁻ˢ` has simple poles at `s = 4, 2, 0` with residues `2`, `−9`, `15/4`; `Σ (d/μ) m⁻ˢ` at `s = 2, 0` with `2`, `−7`.
+
+* **each pole contributes its residue over its own location** to the corresponding power of the cutoff — checked pole by pole;
+* **the logarithmic coefficients are the `s = 0` residues exactly**, so the anomaly is one entry of this table rather than a separate object;
+* and **the second-order sum's leading coefficient is a product of two residues**, `(2/4)(2/2) = 1/2`.
+
+⇒ ***So the three subtractions, the anomaly and the value-rank are all statements about the pole data of the tower's spectral series — the row's answer is one sentence.*** ⌗ *And the subleading integer powers mix: that is Faulhaber's, not the spectrum's — `r7002`'s division between a coefficient and a convention, now visible as the difference between a residue and a partial sum's lower terms.*
+
+### What is delivered and what is not
+
+⚠ The vertex numbers and the shift are exact **at the frame-constant level** — the shift's free symbols are exactly `{κ, ℏ, V, a}`, with no level label among them. **The tower-wide rational multiple is not computed, and it now needs one thing only: the higher levels' overlap integrals, whose structure `r7000` fixed.** Everything else — the weights, the conventions, the rank, this level's vertices — is in hand.
+
+⛔ **No corpus edit — routed**, including the closing paragraph that keeps the rank and the size apart: ⓶ speaks to it and it is yours to move. ⛔ Nothing on the other rows.
+
+⌗ *`r7008`, 29 checks, rc = 0, **no floats at all** — a derived reduction, a closed-form curvature, exact Taylor coefficients, an exact Fock-space computation, and rational residues throughout.*
