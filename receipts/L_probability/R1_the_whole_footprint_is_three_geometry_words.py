@@ -190,10 +190,21 @@ print(f"    likelihood: {lik}  (total x{sum(lik.values())})")
 #   propagated", twice; r6891 (`a468912a`) +1 (26) -- "Running one locator over the binned
 #   likelihood".  ** Every addition describes the Planck likelihood the spectrum is scored on:
 #   genuine uses of the control word, attributed and re-pinned in this file's idiom. **
-check("the control word is found, and P15 carries twenty-six "
+# ** r7023+cc66.63: 26 -> 31 in P15, class (c) STALE -- the control's job (FIND a statistical
+#   word) is unchanged and 31 does it as well as 26 did.  The move is ONE revision, not a drift:
+#   26 held unbroken from r6931 (`d8b21e1f`) through r7017 (`41c3f966`), r7019 (`244dc67b`) and
+#   r7021 (`3dce39e5`); r7023's paper landing (`f087995d`) took it 26 -> 31 in a single step.
+#   All five are the acoustic section stating what the comparison is scored against: "the
+#   likelihood these spectra are confronted with does not share it"; "available in the
+#   likelihood's own metric"; "the likelihood separates them"; "the likelihood and the refit
+#   built on its bins"; "the likelihood these spectra are confronted with bins at a
+#   thirty-fourth of a comb period".  ** Every one names the Planck likelihood the spectrum is
+#   scored on -- the same statistical sense the control exists to find -- so the pin follows the
+#   measurement again, attributed to the revision that moved it. **
+check("the control word is found, and P15 carries thirty-one "
       "(26 before r4111's restatement, 23 before r6427's absorption bound, 24 before the "
-      "r6772..r6891 refit and locator)",
-      lik.get('P15'), 26)
+      "r6772..r6891 refit and locator, 26 before r7023's acoustic landing)",
+      lik.get('P15'), 31)
 check("and it is the dominant carrier", max(lik, key=lik.get), 'P15')
 print("    *** The screen finds a statistical word when there is one.  The absences above")
 print("        are absences, not blindness. ***")
