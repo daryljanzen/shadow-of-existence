@@ -4809,3 +4809,91 @@ Receipt `P15_the_surviving_step_is_amplitude_and_not_phase_and_the_candidate_sha
 Receipt `P15_no_statistic_this_construction_can_build_resolves_the_two_channels_and_the_phase_step_dies_on_a_matched_width_control.py`, **22 gates, `GATES: ALL PASS`**. Pre-registration and working script in separate earlier commits. INDEX row, `PO13_WORKING_STATE`, appendices regenerated. **No corpus edits.**
 
 ⌗ **For you to place, and it is the one thing I would not decide myself:** *⓵ gives `PO-56` its terminal condition **as a measurement** — a floor of $0.59$ against carried shares of $0.35$ and $0.03$. ⛔ But the honest form of the clause is narrower than "no quantity this construction fixes produces the step": what is demonstrated is that **no statistic this construction can build could tell whether they do**. ⇒ *Those are different sentences and only the second is earned. If `PO-56` is to exit on this, it should exit on the second.*
+
+# ⛭⛭⛭ cc66.62 — `r7021` FILLED: **THE LIKELIHOOD SEES THE STEP AND SEPARATES THE TWO CHANNELS AT TWENTY-FIVE SIGMA.** THE DEMONSTRATION COVERS THE STATISTIC FAMILY AND NOT THE INSTRUMENT THE PAPER RUNS BESIDE IT, SO **`PO-56`'s AMENDED CLAUSE IS NOT MET AND THE ROW REOPENS**
+
+*`r7021` filled. ⌗ **Path provenance:** hierarchy path throughout, plus `plik_lite` TT read through the corpus's own `chi2_of_spectrum`. **Nothing solved, nothing run.** No corpus edits.*
+
+⚑ **Pre-registration as its own commit**: `4daa9291` before `b40eab00`. ⛔ *And it does something I have not had to do before, which I want to flag rather than bury: **it opens by saying which facts were already in hand when it was written.** I had inspected the likelihood's bin structure — edges, widths, covariance — before writing it, because those are properties of the instrument fixed on disk regardless of any spectrum. ⇒ *So the first branch of your ⓵ was **already settled** when I wrote the file, and I declared it settled rather than tabling it as though it were open.* ⌗ *Pre-registering a question I had already answered would have been theatre.*
+
+---
+
+## ⛭⛭ ⓵ⓐ IT IS NOT A BANDED STATISTIC IN DISGUISE — AND THE MARGIN IS NOT CLOSE
+
+| | |
+|---|---|
+| `plik_lite` TT bin width, median | $\mathbf{0.0298}$ in $q$ — **one thirty-fourth of a comb period** |
+| bins inside band 1 | $\mathbf{24}$ |
+| bin-to-bin correlation, lags 1–7 | a flat $\approx 0.15$ floor, **not** a coupling growing over a period |
+
+⇒ ** IT BINS. IT DOES NOT **BAND**. ** *And it does not inherit the width limit through its covariance either — that was the other way your ⓵ allowed the answer to arrive, and it does not arrive that way.*
+
+## ⛭⛭ ⓵ⓑ AND THE STEP IS A LOCALISED CONTRIBUTION TO ITS EXCESS
+
+| band | 1 | 2 | 3 | 4 | 5 | 6 | 7 |
+|---|---|---|---|---|---|---|---|
+| $\sigma$ of arm-vs-control **from that band's bins alone** | $\mathbf{36.4}$ | $42.8$ | $49.8$ | $44.6$ | $35.1$ | $24.6$ | $14.2$ |
+
+*The whole covered range together is $98.9\sigma$. Band 1 against its own bands 2–7 trend: $-0.311$ to $-0.489$ on the four bases, at $2.5$–$3.2\sigma$ of its own residual — **the trend predicts $53$–$71\sigma$ at band 1 and the likelihood delivers $36.4$**.*
+
+⇒ *** THE SAME SIGN AS EVERY OTHER INSTRUMENT IN THIS ROW *** — *and this is the first per-band number in the row whose uncertainty is **the instrument's own noise** rather than an empirical scatter across a noiseless theory spectrum.*
+
+## ⛔⛔ ⓵ⓒ AND IT SEPARATES THE TWO CHANNELS AT BAND 1, WHICH IS THE THING NO STATISTIC HERE CAN DO
+
+| at band 1 | $\sigma$ |
+|---|---|
+| window vs control | $6.61$ |
+| term mix vs control | $18.64$ |
+| JOINT vs control | $12.82$ |
+| the ARM vs control — *the target* | $36.37$ |
+| ** window vs term mix ** | $\mathbf{25.11}$ |
+
+⇒ *** SO THE DEMONSTRATION OF `cc66.61` COVERS THE STATISTIC FAMILY AND NOT THE INSTRUMENT THE PAPER RUNS BESIDE IT. `PO-56`'s AMENDED CLAUSE IS **NOT** MET. THE ROW HAS A MEASUREMENT TO MAKE RATHER THAN AN EXIT TO TAKE. ***
+
+⌗ **You asked rather than struck, and that was right.** *The exit would have been taken on a demonstration with a live instrument outside it.*
+
+### ⚠ AND THE TWO FLOORS ARE NOT ONE NUMBER, WHICH I WROTE DOWN BEFORE I HAD EITHER
+
+*The likelihood's smallest detectable share at band 1 is $\mathbf{0.055}$ — of the band-1 **difference**, under **real instrument noise**. `cc66.61`'s floor is $\mathbf{0.59}$ — of the **step**, under an **empirical scatter of a noiseless spectrum**.*
+
+⛔ ***They are shares of different quantities under different kinds of uncertainty. Neither bounds the other, and a ratio of them means nothing.*** ⇒ *The comparison that IS legitimate is the one your order asked for, and it does not need either number:* ** the statistic family cannot separate the channels at band 1; the likelihood separates them at twenty-five sigma. **
+
+---
+
+## ⛭ ⓶ THE SCOPE STATEMENT, COMPLETE RATHER THAN REPRESENTATIVE
+
+*Every instrument this row has ever made a claim on:*
+
+| instrument | first used | bands? | averages over |
+|---|---|---|---|
+| the contrast statistic | `r6911+cc66.40` | **BANDS** | $0.70$ of a period, 7 bands |
+| the held-period amplitude | `cc66.60` | **BANDS** | the same $0.70$ bands |
+| the window-free peak-to-trough depth | `cc66.57` | **BANDS** | $0.70$ bands, 1 datum in band 1 |
+| the extremal envelope | `cc66.58` | **BANDS** | $0.70$ bands, 27% of band 1 |
+| the differential estimator | `cc66.59` | **BANDS** | $0.70$ bands; the row is built on it |
+| the bilinear decomposition `SRCDEC` | `r6915+cc66.41` | **BANDS** | per-multipole, read through the band statistic |
+| the comb-phase projection | `cc66.61` | **BANDS** | stretches of $1.00$ or $0.70$ — bands by another name |
+| the projection-width kernel | `cc66.52` | **BANDS** | evaluated band by band |
+| the anchored peak/trough locator | `cc66.45/46` | *does NOT band* | $\pm 40$ in $\ell$ = $0.13$ of a period |
+| **`plik_lite` TT, the likelihood** | `PO13` / `chi2_of_spectrum` | ***bins but does NOT band*** | one thirty-fourth of a period |
+| **the refit $\chi^2$ and its derivative grid** | `r6788+cc66.18` | ***bins but does NOT band*** | the same bins |
+
+⇒ ** EIGHT OF ELEVEN BAND. THREE DO NOT. ** *And of those three the anchored locator makes **no amplitude claim at band 1** — it locates peaks.*
+
+⇒ *** SO THE LIKELIHOOD AND THE REFIT THAT USES ITS BINS ARE THE ONLY INSTRUMENTS IN THIS ROW THAT BOTH AVOID THE BAND-WIDTH LIMIT AND MAKE AN AMPLITUDE CLAIM AT BAND 1. *** ⌗ *Which is why your ⓵ was the right question and why there is **no third instrument outside the demonstration** — the thing you said you did not want to strike on.*
+
+---
+
+## ⛔ ⓷, AND THE DISCIPLINE
+
+*`cc66.61`'s floor is not revisited, softened or re-derived — it stands exactly as measured over the statistic family, as your order said. No envelope, basis, abscissa or aggregation chosen. No new candidate. No mechanism. No corpus edits.*
+
+* ⚠ ***AN INSTRUMENT THAT BINS IS NOT NECESSARILY AN INSTRUMENT THAT BANDS.*** *The limit is the ratio of the averaging width to the period, not the presence of bins — and a factor of thirty-four is the whole difference between the two verdicts in this revision.*
+* ⚠ ***SAY WHICH FACTS WERE IN HAND BEFORE THE PRE-REGISTRATION WAS WRITTEN.*** *Instrument structure is fixed on disk and looking at it first is legitimate; presenting an already-settled branch as open is not.*
+* ⚠ ***A FLOOR UNDER NOISELESS STRUCTURE AND A FLOOR UNDER INSTRUMENT NOISE ARE NOT ONE NUMBER.*** *Compare the verdicts, never the figures.*
+
+## WHAT IS ON THE BRANCH
+
+Receipt `P15_the_likelihood_sees_the_step_and_separates_the_two_channels_so_the_demonstration_does_not_cover_it.py`, **19 gates, `GATES: ALL PASS`**. Pre-registration and working script in separate earlier commits. INDEX row, `PO13_WORKING_STATE`, appendices regenerated. **No corpus edits.**
+
+⌗ **And the one thing I will not decide, since it is the clause again:** *the row reopens, but **on what**. ⓵ⓒ says the likelihood can tell the two channels apart at band 1 — that is **resolving power**, not authorship. ⇒ *The measurement now available and never made is the one that uses it: **score each channel against the step in the likelihood's own metric**, which is a different question from every share this row has quoted, because it is the first instrument that can actually carry it. **That is a redirect and it is yours.***
