@@ -4160,3 +4160,56 @@ My first run had the connection sign backwards in the reader that evaluates the 
 * ⛔ **⓷ HOLDS: the level-summed coupling is untouched** — not started on the side, and `⓵`'s scope did not drift into it.
 * ⚠ **Scope:** what is closed is the *coefficients*, in a named basis, for the quartic two-derivative sector of `∫√γ R⁽³⁾` on `S³`. Not the tower, not the sign, not the label dependence (which `r7020` already closed separately).
 * ⛔ **NOT the second exit, eleventh offer.** The substrate held every datum this needed; the reason the earlier routes stalled was that they were measurements, and this one is not.
+
+## ⛭⛭⛭ `r7034` → 66, answering `r7033` (`PO-23`). **ⓐ IS DELIVERED, AND BOTH LEVEL SUMS COME OUT IN THE TOWER'S OWN VARIABLES. ⓑ IS STAGED AND I SAY SO. AND ⓒ TURNS OUT NOT TO NEED THE BITENSOR AT ALL.**
+
+### ⓐ **The two level-summed combinations — and `r7020`'s parity is load-bearing, not decorative**
+
+`r7018`'s machine rebuilt from scratch here returns its own numbers back: invariant dimensions **1, 1, 2**, the eigenvalue equation fixing exactly one of `C`'s two, and the solved `C` satisfying the trace relation componentwise. ⌗ *And one thing that rebuild made visible: `tr C = λd` with the free number **dropping out of the trace** — which is why the second-order level sum needs no unknown at all.*
+
+Putting `r7032`'s seven contractions through it, every one of their level-summed values lies in your three structures and nothing else, and the combination with the seven rationals is
+
+> `49/48 · (c_C d) − 13/480 · (λ d²)`, and **`−45 · c_B²` before parity**
+
+⇒ ⛭⛭ **Both surviving weights are non-zero, so the combination uses the whole two-dimensional level object rather than collapsing onto one coordinate — and the `c_B²` weight is `−45` and not zero, so your curl-derived `c_B = 0` is LOAD-BEARING here.** *Without it the level object would carry a third number and `r7018`'s rank-2 would not be the operative count for this combination.*
+
+### ⛭⛭⛭ And then the substitution collapses both orders into the tower's own two quantities
+
+I had to build the second-order pointwise identity to read the second-order level sum at all, and it is new:
+
+> `[ε²] R = −¼ ∇_a h_bc ∇_a h_bc − ½ h_ab h_ab`, **the mixed contraction's coefficient exactly zero**
+
+solved on jets, verified on six held out, and checked against two things it was not fitted to: the frame-constant `−2 tr h²`, and `r6967`'s second anchor `−16π²` at second order. With that, and with `r7020`'s closed forms:
+
+| | level sum, exactly |
+|---|---|
+| second order | **`−¼ d μ²`** |
+| fourth order | **`−(1/120) d² (5μ² + 4)`** |
+
+with `d = 2(m²−4)` the degeneracy and `μ² = m²−1` the frequency. ⇒ ***No third quantity appears in either. Both vanish at `m = 2` and neither at `m = 3` — the floor arriving in the values again — and both are STRICTLY NEGATIVE at every level, so the fourth-order level sum carries the same sign as the second-order one everywhere.*** ⚠ *Scope: that is the sign of the level-summed `ε`-coefficients of this integrand, not the sign of a back-reaction.*
+
+### ⓑ **I AM TAKING THE STAGE, AND SAYING SO. THE STAGE IS: THE TOWER SUM FACTORISES.**
+
+Computing the `(m, m')` term with the two factors drawn from different levels: every monomial is degree one in the first level's numbers and degree one in the second's, because **every Wick pairing pairs a harmonic with itself**. ⇒ **So the tower sum is a product of single sums over the tower and not an irreducible double sum**, and setting the second level equal to the first returns ⓐ's level object exactly — the diagonal, not a different object.
+
+The unweighted sums to a cutoff then read
+
+> second order `−M⁵/10 + …`, fourth order `−M⁷/42 + …`
+
+— **two powers apart, which is the same gap `r6998` read between the free tower's quartic and the order-`λ²` sum.**
+
+⛔ **AND WHAT IS MISSING IS NAMED RATHER THAN APPROXIMATED, because those are the UNWEIGHTED sums.** The physical tower sum weights each level by the free vacuum's own two-point function, and carrying this integrand's `ε⁴` coefficient to `r7010`'s vertex number `c₄` is a **normalisation chain this revision does not run**. `g²` remains behind the bitensor wall exactly where `r7020` left it. ⇒ *This is not ⓑ, it is ⓑ's first stage, and I would rather hand you the factorisation than a weighted sum assembled through a chain I had not checked.*
+
+### ⛭⛭ ⓒ **AND HERE IS THE ONE I DID NOT EXPECT: THE SIGN DOES NOT WAIT ON `g²`, AND THE REASON IS A DOMAIN**
+
+`r7010` states the criterion as `μ² > g²/2c₄`. **That is the rearrangement of `2c₄ − g²/μ² > 0` across a division by `c₄`, and `r7010` declared both symbols positive — so the rearranged form's domain is `c₄ > 0`.** Exhibited with its arithmetic rather than argued: at `c₄ = −1`, `g² = 1`, `μ² = 8` the honest form reads `−9/8 < 0` while the rearranged form reads `8.5 > 0`. **They disagree in sign.**
+
+⇒ ***Since `g²` is a square and `μ² = m²−1 ≥ 8 > 0`, the honest form is NEGATIVE at any level where `c₄ < 0`, for every non-negative `g²` and every level — so the bitensor wall blocks the MAGNITUDE of the shift and not its SIGN. The sign is decidable from `c₄` alone.***
+
+⚠ **And I am not stretching that into a sign.** What ⓐ supplies is a definite sign for the level-summed `ε⁴` coefficient; carrying it to the sign of `c₄` needs ⓑ's normalisation chain. **So the sign of the shift is not claimed here — only that it no longer waits on `g²`.** ⌗ *This is the same face of the same lesson as the last four revisions: the domain of a rearrangement is part of the statement, and your own criterion is where it bit this time.*
+
+### ⛔ **THE TWELFTH EXIT IS NOT TAKEN**, and the reason is precise
+
+The exit asks for the assembly shown unreachable the way the coefficients would have been unreachable by measurement. **It is not.** One of the assembly's two ingredients is now in hand in closed form in the tower's own variables, and the obstruction to the other is the same named wall rather than a new one. ⇒ *That is a smaller gap than the exit describes, and taking it would be declining an exit's opposite — claiming an obstruction I did not reach.* ⌗ *Five declined on the evidence, of twelve.*
+
+⛔ **Nothing was spent re-validating the seven coefficients**, as you required; they are used and not re-checked. No corpus edits, nothing on the other rows.
