@@ -185,6 +185,44 @@ EST = {
         'carries it. DISCHARGE: what the lap does in that regime on the same exact interior, and whether it is '
         'reachable on a progenitor of the mass this cosmology requires, the struck row scoring the charge-to-mass '
         'threshold near 1e-2 so reachability is a question about astrophysical charge and not about the geometry.'),
+    'PO-70': ('the projections extra retention: what makes the contrast excess between k and ell', 1, 0, 4, None,
+        'OPENED r7039 (66) on Daryls question at r7037, and it is NOT the struck acoustic rows remainder -- '
+        'it is the question that row was serving and never asked. That row asked ATTRIBUTION: which candidate '
+        'channel carries the arm-minus-control contrast excess, scored in the likelihoods own metric. It '
+        'terminated on the finding that no instrument this construction holds can attribute it, which is true '
+        'and is weaker than the question that matters. IT NEVER ASKED WHETHER THE ARMS SPECTRUM IS RIGHT: the '
+        'excess was defined as arm-minus-control throughout and the standing guard was no mechanism, repeated '
+        'in every order, so the row could only ever produce a characterisation. AND THE SHARPER CRITICISM IS '
+        'ALREADY IN THE PAPER: cc66.40 established at r6911, sixty revisions before the row closed, that the '
+        'contrast difference is NOT IN THE SOURCE -- the statistic reads 1.047 on the reported spectrum '
+        'against 0.996 on the source at last scattering and 0.992 on the eta-integrated source, and in '
+        'wavenumber this arm is if anything the SHALLOWER of the two. P15 states the consequence outright: '
+        'those four channels all act on the source, which is the direction all four point, and is why none of '
+        'them has anything to overcome. So twelve revisions of channel scoring ran on candidates the rows own '
+        'early evidence had made unlikely, and that is a scoping failure belonging to the gate. WHAT IS '
+        'ALREADY EXCLUDED, carried across so this row does not re-run it: not the two arms different '
+        'samplings of wavenumber, since replacing the physical ladder with the controls uniform grid at the '
+        'same mode count leaves the multipole rung unchanged; not the distance, the comoving distances '
+        'differing by 0.449 per cent and swapping them moving contrast by under a per cent in the direction '
+        'that makes the difference LARGER; not the visibility width acting before the kernel; not the '
+        'lensing; not the binning; not one source term nor the interference between two; and the two '
+        'projection widths differ by the Jacobian alone. THE OBJECT: within the projection this arm retains '
+        '1.054 times as much of its own source oscillation as the control does, and the excess rises with '
+        'multipole where the source ratio is flat. What property of the line-of-sight integral on this '
+        'background produces that retention, and is it required by the construction or an artefact of how the '
+        'integral is carried? The papers own sentence for the inherited state is that the stage is located '
+        'and the mechanism is not. THE NO-MECHANISM GUARD IS LIFTED for this row and for a stated reason, '
+        'since a mechanism row whose guard forbids mechanisms cannot deliver; what replaces it is the '
+        'ordinary discipline that a named mechanism must be exhibited on the integral, predict a number not '
+        'used to find it, and be checked on a configuration it was not fitted on. AND THE ROW IS NOT SET UP '
+        'TO SAVE THE CONSTRUCTION: the retention may be an artefact, in which case the excess shrinks and the '
+        'fit is recomputed, or it may be required by this background, in which case the excess is the '
+        'constructions own prediction and the skys rejection of it stands as a result. A seat that finds the '
+        'second has delivered the row and not failed it. Discharge is the mechanism named and its status '
+        'settled either way; the row terminates if the retention cannot be separated into a mechanism by any '
+        'calculation this construction can carry. Whether this constructions spectrum can fit the sky is not '
+        'answerable until this is. '
+        ),
     'PO-50': ('the turnaround measurement with turnaround masses', 1, 1, 3, None,
         'OPENED r6861 as PO-36 remainder. That row is struck: the radius tracks the dynamical mass, entailed rather '
         'than observed. What its own measurement could NOT do is discriminate -- the ensemble ratios run 1.20 to 2.33 '
@@ -3702,8 +3740,8 @@ KIND = {'PO-46': 'BUILD', 'PO-10': 'BUILD', 'PO-13': 'BUILD', 'PO-36': 'READ', '
 #   and the generator reported "9 open" while the table showed EIGHT -- the count comes from
 #   the live set and the rows come from here.*  ** Adding a row needs three things: the
 #   register row, the runway, and this list. **  check_frontier_current now checks all three.
-ORDER = ['PO-63', 'PO-62', 'PO-61', 'PO-60', 'PO-59', 'PO-58', 'PO-57', 'PO-56', 'PO-55', 'PO-54', 'PO-53', 'PO-52', 'PO-47', 'PO-48', 'PO-49', 'PO-50', 'PO-51', 'PO-45', 'PO-46', 'PO-10', 'PO-13', 'PO-43', 'PO-24', 'PO-36', 'PO-30', 'PO-25', 'PO-26', 'PO-31', 'PO-23', 'PO-15', 'PO-14', 'PO-17', 'PO-18', 'PO-19', 'PO-20']
-GROUP = {'PO-69': 'C', 'PO-68': 'C', 'PO-67': 'C', 'PO-66': 'C', 'PO-65': 'C', 'PO-64': 'C', 'PO-63': 'C', 'PO-62': 'C', 'PO-61': 'C', 'PO-60': 'C', 'PO-59': 'C', 'PO-58': 'A', 'PO-57': 'D', 'PO-56': 'D',  # r6891: PO-13's live remainder, the acoustic sector.
+ORDER = ['PO-70', 'PO-63', 'PO-62', 'PO-61', 'PO-60', 'PO-59', 'PO-58', 'PO-57', 'PO-56', 'PO-55', 'PO-54', 'PO-53', 'PO-52', 'PO-47', 'PO-48', 'PO-49', 'PO-50', 'PO-51', 'PO-45', 'PO-46', 'PO-10', 'PO-13', 'PO-43', 'PO-24', 'PO-36', 'PO-30', 'PO-25', 'PO-26', 'PO-31', 'PO-23', 'PO-15', 'PO-14', 'PO-17', 'PO-18', 'PO-19', 'PO-20']
+GROUP = {'PO-70': 'D', 'PO-69': 'C', 'PO-68': 'C', 'PO-67': 'C', 'PO-66': 'C', 'PO-65': 'C', 'PO-64': 'C', 'PO-63': 'C', 'PO-62': 'C', 'PO-61': 'C', 'PO-60': 'C', 'PO-59': 'C', 'PO-58': 'A', 'PO-57': 'D', 'PO-56': 'D',  # r6891: PO-13's live remainder, the acoustic sector.
          'PO-45': 'A', 'PO-46': 'A',  # ⛔ r6549: a FOURTH hardcoded list -- GROUP -- and a row missing here raises.
          'PO-10': 'D', 'PO-13': 'D', 'PO-14': 'A', 'PO-15': 'C', 'PO-16': 'D',
          # ** r3095: the four brought in from p0's frontiers and the field ledgers.  PO-17 and

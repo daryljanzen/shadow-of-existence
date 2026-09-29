@@ -3512,3 +3512,95 @@ four upper bands and modulated at the acoustic period from the term that knows w
 candidate channel's cost combed, one of them costing the arm's way at seven tenths pattern correlation, and the
 attribution shown unavailable by an identity.** ⌗ *Every one of those is a measurement, and six of them are
 findings against your own previous readings. **That is what a row terminating well looks like.***
+
+
+---
+
+# ⚑⚑⚑ `r7039` — **`PO-70` IS OPEN, THE `NO MECHANISM` GUARD IS LIFTED, AND THE REASON BOTH THINGS HAPPENED IS A SCOPING FAILURE OF MINE THAT YOUR OWN EVIDENCE FLAGGED SIXTY REVISIONS AGO**
+
+*Daryl asked the question at `r7037` that neither of us asked for twelve revisions: **what is actually driving the
+excess amplitude, is the instrument supposed to carry it, and what would it take for this arm to fit the sky.** He
+is right that it is the question `PO-56` was serving, and right that `PO-56` could not reach it.*
+
+## ⛔⛔ THE FAILURE FIRST, BECAUSE IT IS MINE AND YOU WORKED INSIDE IT
+
+*`PO-56`'s clause was **attribution**: which candidate channel carries the arm-minus-control excess. It terminated
+correctly on its own terms. **But the excess was defined as arm-minus-control throughout, and the standing guard
+was `no mechanism`, in every order I wrote** — so the row could only ever produce a characterisation. *It never
+asked whether the arm's spectrum is right.*
+
+⛔ ***And the sharper version, which is in your own record and in the paper's own words.*** *`cc66.40` established
+at `r6911` — **sixty revisions before the row closed** — that the contrast difference is **not in the source**:
+$1.047$ on the projected spectrum against $0.996$ at last scattering and $0.992$ on the $\eta$-integrated source,
+**and in wavenumber this arm's relative oscillation is if anything the shallower of the two**.* ⇒ *** AND `P15`
+SAYS THE CONSEQUENCE OUTRIGHT: "THOSE FOUR CHANNELS ALL ACT ON THE SOURCE... WHICH IS THE DIRECTION ALL FOUR
+CHANNELS POINT, AND IS WHY NONE OF THEM HAS ANYTHING TO OVERCOME." ***
+
+⌗ *So the last twelve revisions scored source-side candidates against a difference the row had already shown was
+not in the source. **You measured what you were asked to measure and measured it well; the candidate list was
+mine, and the register said it was pointing the wrong way the whole time.***
+
+## ✔ WHAT THAT DOES **NOT** MEAN, SO YOU DO NOT READ IT AS TWELVE WASTED REVISIONS
+
+*The instrument hypotheses are **excluded**, and that is what makes the new row start well advanced instead of from
+nothing: **not the wavenumber sampling** (this arm's physical ladder swapped for the control's uniform grid at the
+same mode count leaves the multipole rung unchanged), **not the distance** ($0.449$ per cent apart, and swapping
+them moves contrast by under a per cent **in the direction that makes the difference larger**), **not the
+visibility width before the kernel**, **not the lensing**, **not the binning**, **not one source term nor the
+interference between two** — and the two projection widths differ **by the Jacobian alone**.* ⇒ ***A row that
+begins with six mechanisms excluded by direct substitution begins where this one does because of that work.***
+
+## ⛭⛭⛭ `PO-70`, AND THE OBJECT IS AS NARROW AS THE EVIDENCE ALLOWS
+
+> **Within the projection this arm retains $1.054$ times as much of its own source oscillation as the control
+> does, and the excess rises with multipole where the source ratio is flat. What property of
+> $\Delta_\ell(k)=\int S\,j_\ell(k(\eta_0-\eta))\,d\eta$ on this background produces that retention — and is it
+> required by the construction, or an artefact of how the integral is carried?**
+
+⌗ *`P15`'s own sentence for the state you are inheriting is **"the stage is located and the mechanism is not"**.*
+
+## ⛭⛭ **THE `NO MECHANISM` GUARD IS LIFTED FOR THIS ROW.** EXPLICITLY, AND WITH WHAT REPLACES IT
+
+*A mechanism row whose guard forbids mechanisms cannot deliver. **That guard was right for `PO-56` and it is wrong
+here, and I am withdrawing it rather than leaving you to infer that.***
+
+⇒ **What replaces it is not licence, it is the ordinary discipline you already run**: *a named mechanism must be
+**exhibited on the integral**, must **predict a number that was not used to find it**, and must be **checked on a
+configuration it was not fitted on**. That is how every anchor in the substrate row has been carried, and it is the
+standard here.* ⌗ *Pre-registration stays. The guards on floors, aggregation and finished work stay.*
+
+## ⛔⛔ AND THE ROW IS **NOT** SET UP TO SAVE THE CONSTRUCTION, WHICH IS THE FAILURE MODE IT WOULD BE EASIEST TO FALL INTO
+
+*Both outcomes are live and the clause is written so either can be reached:*
+
+- ***the retention is an artefact of how the integral is carried*** ⇒ *it is corrected, **the spectrum and the
+  likelihood comparison are recomputed**, and the sector's numbers move.*
+- ***the retention is required by this background*** ⇒ *the excess is **this cosmology's own prediction**, and the
+  sky's rejection of it stands as a result about the construction rather than about the instrument.*
+
+⇒ *** THE ROW MUST NOT PREFER THE FIRST. A SEAT THAT FINDS THE SECOND HAS DELIVERED THE ROW AND NOT FAILED IT,
+AND I WILL WRITE IT UP THAT WAY. *** ⌗ *If at any point the work starts to feel like looking for the bug that
+rescues the fit, say so and I will re-cut the order. **That is the specific way this row could go wrong.***
+
+## ⌗ WHERE I WOULD START, OFFERED AS A READING AND NOT AS THE ANSWER
+
+*The retention of an oscillation through that integral is set by how much the kernel smears in conformal time
+against the oscillation's own period there. **So the quantities I would look at first are the ones that change
+that ratio without changing the source**: the conformal-time duration of last scattering on this background
+measured against the acoustic period at the same wavenumber, and the mapping from $\eta$ to the kernel's argument
+— rather than the visibility's width in $z$, which is already excluded.* ⛔ ***This is a reading and you are not
+bound by it.*** *Radiation carries no term in this background's expansion law, so the $\eta$–$a$ relation differs
+from the control's by construction, and whether that difference is the retention is exactly the question rather
+than my answer to it.*
+
+## ⛔ WHAT IS NOT ASKED
+
+*Nothing on `PO-56` — it is struck and its characterisation is the input here, not something to re-derive. **Do not
+re-run the six excluded mechanisms**; they are carried across in the row. No new statistics for their own sake: the
+row wants a mechanism on the integral, and the measuring apparatus you built is already sufficient to test one.
+⌗ *Staging, pre-registration form, gate design and how you approach the integral are yours from measurement.*
+
+✔ ***And the thing worth saying plainly: whether this construction's spectrum can fit the sky is not answerable
+until this row is.*** *If the retention is required, $1.57$ times the control's distance after refit is what CR
+predicts and the sector's verdict is settled against it. If it is an artefact, the comparison has not yet been
+made. **Nobody knows which, and `PO-56` was never able to tell.**
