@@ -92,6 +92,7 @@ import shutil
 import subprocess
 import sys
 import tempfile
+import time
 from fractions import Fraction
 
 HERE = os.path.abspath(__file__)
@@ -462,6 +463,7 @@ def _run(root, rel, budget, out, env_extra):
         return
     d, f = os.path.split(os.path.join(root, rel))
     env = dict(os.environ, NODE='ci', **env_extra)
+    t0 = time.time()
     try:
         subprocess.run([sys.executable, HERE, '--probe-one', log, f], cwd=d, env=env,
                        stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL, timeout=budget)
@@ -470,6 +472,14 @@ def _run(root, rel, budget, out, env_extra):
     if not os.path.exists(log):
         with open(log, 'w') as fh:
             json.dump({'receipt': rel, 'rc': None, 'sites': {}, 'timeout': True}, fh)
+    _annotate(log, wall=round(time.time() - t0, 1), budget=budget)
+
+
+def _annotate(log, **kw):
+    d = json.load(open(log))
+    d.update(kw)
+    with open(log, 'w') as fh:
+        json.dump(d, fh)
 
 
 def probe_all(root, out, jobs, env_extra, only=None):
@@ -489,6 +499,26 @@ def probe_all(root, out, jobs, env_extra, only=None):
     with ThreadPoolExecutor(max_workers=jobs) as ex:
         list(ex.map(lambda f: _run(root, os.path.relpath(f, root), 2 * max(900, m.budget(f, 600)),
                                    out, env_extra), files))
+    # ⛭ r7007+70.1 (PO-67 ⓶): A TIMEOUT UNDER CONTENTION IS NOT YET "UNMEASURED".  `L274/H1` runs sixteen
+    #   times inside its budget on every build measured, and timed out on the one build whose parallel pass
+    #   took nearly twice as long as its siblings'.  So a probe that timed out is re-run ONCE, ALONE, on
+    #   the same build, before it is filed unmeasured.  ⛔ Not by lengthening the budget: that would record
+    #   a cost the receipt does not have.  Both attempts are kept in the log (`first_attempt`), so a
+    #   receipt that only finishes serially is visible as that, and a second timeout stays a timeout.
+    for f in files:
+        rel = os.path.relpath(f, root)
+        log = os.path.join(out, rel.replace('/', '_') + '.json')
+        first = json.load(open(log))
+        if not first.get('timeout'):
+            continue
+        os.rename(log, log + '.first')
+        _run(root, rel, 2 * max(900, m.budget(f, 600)), out, env_extra)
+        os.remove(log + '.first')
+        again = json.load(open(log))
+        print(f'  ⌗ {rel}: timed out at {first.get("wall")}s in the parallel pass; re-run alone: '
+              + ('TIMED OUT AGAIN -- unmeasured' if again.get('timeout') else
+                 f'rc={again.get("rc")} in {again.get("wall")}s'))
+        _annotate(log, first_attempt={k: first.get(k) for k in ('rc', 'timeout', 'wall', 'budget')})
     return len(files)
 
 
@@ -500,6 +530,10 @@ def probe_all(root, out, jobs, env_extra, only=None):
 #   receipt changes, the judgement LAPSES and the flag counts again until someone reads it. **  A FLIP is
 #   never judged away: a check that passes on one build and fails on another is the class itself.
 JUDGED = os.path.join('receipts', 'TOLERANCE_JUDGED.json')
+VERDICT = {0: 'CLEAN -- every receipt measured on both builds, no site flagged',
+           1: 'FLAGGED -- a site moved between builds (every receipt was measured)',
+           2: 'NOT A SWEEP -- no site flagged, but a receipt was not measured on both builds',
+           3: 'FLAGGED AND NOT A SWEEP -- a site moved, AND a receipt was not measured'}
 
 
 def split_judged(flags, path, root):
@@ -639,12 +673,16 @@ def main():
         if unswept:
             print(f'\n  ⛔ NOT A SWEEP OF {len(unswept)} RECEIPT(S): they did not run to exit 0 on both builds, so '
                   f'none of their comparisons was measured -- "0 flagged" says nothing about them.')
-            for rec, why in unswept[:12]:
+            for rec, why in unswept:
                 print(f'      {why:28} {rec}')
-            if len(unswept) > 12:
-                print(f'      ... and {len(unswept) - 12} more')
-            return 2
-        return 1 if flags else 0
+        # ⛭ r7007+70.1 (PO-67 ⓵): TWO FINDINGS, TWO BITS.  This returned 2 for "not a sweep" BEFORE looking at
+        #   the flags, so a run with both reported only the first -- and CI collapsed both to 1 anyway.  A
+        #   reader of the exit code learned "something flagged" from a run that flagged nothing, or "not a
+        #   sweep" from one that flagged a site: this layer's founding class, in the instrument.
+        #   1 = a site FLAGGED or FLIPPED;  2 = a receipt UNMEASURED;  3 = both.  The last line says which.
+        rc = (1 if flags else 0) | (2 if unswept else 0)
+        print(f'\n  VERDICT: {VERDICT[rc]}')
+        return rc
     ap.print_help()
     return 2
 

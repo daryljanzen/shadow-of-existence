@@ -227,9 +227,17 @@ jobs:
           python3 scripts/sweep_tolerances.py --probe "$T/tA"
           python3 scripts/sweep_tolerances.py --probe "$T/tB" --threads 4
           python3 scripts/sweep_tolerances.py --probe "$T/tC" --threads 2 --coretype Prescott
+          # ⌗ PO-67 ⓵: the two comparisons' findings are OR-ed bit by bit, not collapsed to 1 --
+          #   1 = a site flagged, 2 = a receipt unmeasured, 3 = both; the line below says which.
           rc=0
-          python3 scripts/sweep_tolerances.py --compare "$T/tA" "$T/tB" || rc=1
-          python3 scripts/sweep_tolerances.py --compare "$T/tA" "$T/tC" || rc=1
+          python3 scripts/sweep_tolerances.py --compare "$T/tA" "$T/tB" || rc=$(( rc | $? ))
+          python3 scripts/sweep_tolerances.py --compare "$T/tA" "$T/tC" || rc=$(( rc | $? ))
+          case $rc in
+            0) echo "  VERDICT (both comparisons): CLEAN" ;;
+            1) echo "  VERDICT (both comparisons): FLAGGED -- every receipt was measured" ;;
+            2) echo "  VERDICT (both comparisons): NOT A SWEEP -- nothing flagged, a receipt unmeasured" ;;
+            *) echo "  VERDICT (both comparisons): FLAGGED AND NOT A SWEEP" ;;
+          esac
           exit $rc
 
   # ===================================================================================================
@@ -386,9 +394,17 @@ jobs:
           python3 scripts/sweep_tolerances.py --probe "$T/tA" --from "$L"
           python3 scripts/sweep_tolerances.py --probe "$T/tB" --from "$L" --threads 4
           python3 scripts/sweep_tolerances.py --probe "$T/tC" --from "$L" --threads 2 --coretype Prescott
+          # ⌗ PO-67 ⓵: the two comparisons' findings are OR-ed bit by bit, not collapsed to 1 --
+          #   1 = a site flagged, 2 = a receipt unmeasured, 3 = both; the line below says which.
           rc=0
-          python3 scripts/sweep_tolerances.py --compare "$T/tA" "$T/tB" || rc=1
-          python3 scripts/sweep_tolerances.py --compare "$T/tA" "$T/tC" || rc=1
+          python3 scripts/sweep_tolerances.py --compare "$T/tA" "$T/tB" || rc=$(( rc | $? ))
+          python3 scripts/sweep_tolerances.py --compare "$T/tA" "$T/tC" || rc=$(( rc | $? ))
+          case $rc in
+            0) echo "  VERDICT (both comparisons): CLEAN" ;;
+            1) echo "  VERDICT (both comparisons): FLAGGED -- every receipt was measured" ;;
+            2) echo "  VERDICT (both comparisons): NOT A SWEEP -- nothing flagged, a receipt unmeasured" ;;
+            *) echo "  VERDICT (both comparisons): FLAGGED AND NOT A SWEEP" ;;
+          esac
           exit $rc
 
       # ⛭ PO-65: whatever happened above, write it down.  A receipt this run covered and passed leaves

@@ -51,6 +51,19 @@ these greens) on top.  Two jobs disagreeing about one receipt: red wins.
   * A pull request from a FORK gets a read-only token, so its runs cannot write; nothing here uses forks.
   * The ENVIRONMENT is still not in any diff -- `check_env_fingerprint` and the backstop hold that half.
 
+** ⛭ r7007+70.1 (PO-67 ⓷): A TIMEOUT IS A RED THIS LAYER DETECTS, CARRIES, AND CANNOT REASON ABOUT. **
+  A receipt over its budget -- the suite's `[slow]`, a tolerance probe that timed out (after its one serial
+  retry), a trace over budget -- is carried exactly like any other red, so no push that misses it can
+  silence it: it is re-run until it finishes.  That much the carry guarantees.  What it CANNOT claim:
+  * ** that a timeout's clear is a repair. **  Every other clear is a run that covered the receipt and
+    passed on it.  A timeout's next green shows only that it finished once, on that runner, at that load;
+    a quieter machine clears it exactly as a fix would, and nothing here tells the two apart.
+  * ** when it began. **  A timeout is not tree state, so `--silenced`, which re-runs trees, cannot place
+    its birth -- the PO-65 ⓶ count excludes timeouts by name for that reason.
+  * ⌗ A receipt that finishes only sometimes will be carried and cleared, and carried again.  The one
+    place that pattern is visible is the ledger's own history (`git log -p refs/ci/carry`): the same
+    receipt added and cleared on successive pushes.  That is the whole of what this layer knows about it.
+
 Usage:
     python3 scripts/red_carry.py --union CLASS --list SCOPE          # add what is carried; rewrites SCOPE
     python3 scripts/red_carry.py --record CLASS --list SCOPE --outcome O [--suite-log F | --tol-dirs A B C
