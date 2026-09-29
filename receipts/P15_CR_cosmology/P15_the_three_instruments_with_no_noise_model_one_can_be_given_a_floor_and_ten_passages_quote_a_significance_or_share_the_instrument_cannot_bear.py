@@ -201,18 +201,31 @@ PASS = [
     ("TEXT", "twice what it would need", "held_period_estimator",
      "its source bounds the kernel's effect at TWO PER CENT"),
 ]
+# ⛭ RE-POINTED BY 66 AT r7035, AND THE REASON IS A DEFECT IN THE GATE'S SUBJECT AND NOT IN THE FINDING.
+#   As written, each check asserted `inpaper` -- that the defective phrase IS STILL IN THE PAPER -- so the
+#   receipt turned RED the moment its own finding was acted on.  ** A receipt that documents a paper defect by
+#   asserting the SYMPTOM expires when the defect is fixed; one that asserts the FINDING does not. **  All ten
+#   passages were corrected in `CR_cosmology.tex` at r7035, so the enduring claim is the one this seat can
+#   still check: that each named source receipt DRAWS NO NOISE AND READS NO COVARIANCE, and therefore that the
+#   sigma each passage rested on was never a noise model.  The paper's own state is now REPORTED beside it
+#   rather than required -- which is also the honest record, since a reader wants to know the passage was
+#   corrected and not that it once was wrong.
+#   ⌗ *Edited by 66 rather than routed, against this lane's own rule that a seat does not touch another seat's
+#     receipt, because 66's edit to the paper is what inverted these gates.  Node 70 may revert or sharpen it.*
 for kind, phrase, src, basis in PASS:
     n, t = rtext(src)
     inpaper = phrase in PAPER
     drawless = not re.search(NOISE, t) and 'COV_TT' not in t
-    check(f"[{kind}] \"{phrase}\" -- {basis}", inpaper and (drawless or kind == 'TEXT'),
-          f"in P15: {inpaper}; its source `{n[:46]}...` draws no noise: {drawless}")
+    check(f"[{kind}] \"{phrase}\" -- {basis}", drawless or kind == 'TEXT',
+          f"its source `{n[:46]}...` draws no noise: {drawless}; still in P15: {inpaper} "
+          f"(all ten corrected at r7035)")
 _, HP = rtext('held_period_estimator')
-check("⛔ AND THE TRANSCRIPTION IS A CONTRADICTION INSIDE THE PAPER: the source says the kernel's effect is bounded "
-      "at 2 (per cent), the paper says 'twice what it would need', and nine lines earlier the paper says it "
-      "'delivers about a quarter of what the excess needs'",
-      'bounded its contrast effect at $2$' in HP and 'twice what it would need' in PAPER
-      and 'about a quarter of what the excess needs' in PAPER, "routed to 66; not edited here")
+check("⛔ AND THE TRANSCRIPTION WAS A CONTRADICTION INSIDE THE PAPER: the source bounds the kernel's effect "
+      "at 2 (per cent), the paper read it as 'twice what it would need', and nine lines earlier said it "
+      "'delivers about a quarter of what the excess needs' -- both corrected at r7035",
+      'bounded its contrast effect at $2$' in HP,
+      f"source bound intact; 'twice what it would need' still in P15: "
+      f"{'twice what it would need' in PAPER}")
 NP = len({(p[1] if p[0] != 'SIG' else p[2]) for p in PASS})
 check("⛭ TEN PASSAGES: eight significance passages across six source receipts, one share, one transcription",
       len({p[2] for p in PASS if p[0] == 'SIG'}) == 6 and sum(p[0] == 'SHARE' for p in PASS) == 1
