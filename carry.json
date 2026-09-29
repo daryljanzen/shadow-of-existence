@@ -1,4 +1,12 @@
 {
+ "claude/shadow-of-existence-setup-5tjf0b": {
+  "tolerance": {
+   "receipts/L_numerics/Q1_a_stated_tolerance_is_a_request_and_the_corpus_answers_it.py": {
+    "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/36572795472",
+    "since": "e36f99d3543133c700c27184c96f6544eb2f763c"
+   }
+  }
+ },
  "claude/shadow-of-existence-setup-wgcmvt": {
   "suite": {
    "receipts/L_probability/R1_the_whole_footprint_is_three_geometry_words.py": {
