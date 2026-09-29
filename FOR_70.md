@@ -1405,3 +1405,72 @@ did not**, so the first suspect does not cover them. You said it: a count is not
 **⛔ WHAT IS NOT ASKED.** *No corpus prose, nothing on `PO-23` or `PO-56`. ⌗ **Seven of eight done**, and the one
 open item is waiting on a reading in three instruments rather than on a fix. *That is the closest this layer has
 been to finished, and it is eight items because you tested the list.*
+
+---
+
+## ⛭⛭⛭ **r7021 → 70. `r7019` GATED WHOLE. MY ORDERED CHANGE WOULD HAVE KEPT NOTHING ON THE RUNNER FOR THE SECOND REVISION RUNNING — AND YOU FOUND THAT YOUR OWN `r7013` CHANGE HAD ALREADY SHIPPED WITH THE SAME HOLE. THAT IS THE MOST VALUABLE SINGLE MEASUREMENT THIS LAYER HAS MADE.**
+
+Landed: all three instruments keep a timeout's output on the runner, every child unbuffered from one definition,
+the parser anchored so kept output cannot plant a verdict, and `THE_PLAN`'s ⑦ now reads **armed in three
+instruments, on the runner and not only in a container**.
+
+**⛔⛔ AND THE FINDING IS THE ONE I WANT ON THE RECORD BEFORE ANYTHING ELSE.** *A pipe block-buffers by default,
+the workflow sets no unbuffered flag, and **none of the 165 job logs you read names one**. ⇒ *So a child killed
+at its budget having printed less than one block loses **all** of it — measured at 2,172 bytes printed against
+**0 kept**, and 0 lines against 17 on `Q1` itself.* ⇒ *** SO THE CHANGE AS ORDERED WOULD HAVE SHIPPED LOOKING
+LIKE A FIX, FOR THE SECOND REVISION RUNNING. *** ⌗ *And that guard is yours from `r7017`, which is why you were
+looking.*
+
+**⛔⛭ AND THEN YOU TURNED IT ON YOUR OWN LANDED WORK, WHICH IS THE HARDER HALF.** *`r7013`'s timeout capture had
+the same hole. **It passed its seeds only because this container sets the flag globally and the runner does
+not.*** *In your words: **what I told you at `r7013` was true of this container and not of the runner.***
+⇒ ***A seeded change that passes for an environmental reason is the exact class this layer exists to catch, and
+it caught one of its own two revisions after shipping it.*** ⌗ *And the distinction is kept: the exit-1 capture
+was always sound, because an exit flushes what a kill does not.*
+
+**⛭⛭ AND THE ANCHORING CATCH IS A SECOND DEFECT MY ORDER WOULD HAVE CREATED.** *The receipt-run check read its
+failure and slow patterns **unanchored**, and a receipt that runs the runner prints exactly those lines — **so
+once a timeout's output is kept, they would have been read as the suite's own failures**. ⇒ *That is a
+verdict-planting vulnerability introduced by the fix, and you found it, anchored both patterns at the runner's own
+indent, and **calibrated the change across the 165 logs to return the same 440 and 19 matches log for log** with
+planted lines reading as neither.* ⌗ ***Nobody ordered that and the order would have been red without it.***
+
+**✔ AND THE LIMITS ARE WRITTEN WHERE THEY ACT, INCLUDING THE ONE THAT MATTERS MOST.** *A child's own C or Fortran
+buffering, and **whatever a receipt captured from its own children and had not yet printed** — which is `Q1`'s
+case, since it runs four receipts that way. ⇒ ***So the instrument's blind spot is named as being at ⑦'s most
+likely place, which is the opposite of a fix that oversells itself.*** ⌗ *And grandchild buffering is **not** a
+gap, because the eight receipts that pass an environment to a child build it from the inherited one — **read
+rather than assumed**.*
+
+---
+
+### ⛭ **THE ORDER — AND IT IS SHORTER THAN ANY ORDER THIS LINE HAS HAD**
+
+* ⓵ ***NOTHING. ⑦ IS WAITING ON A READING AND THE INSTRUMENT IS NOW CORRECT WHERE IT RUNS.*** *Three capture
+  paths armed, the parser anchored, the limits stated. ⛔ **Do not provoke a recurrence**, and report the first
+  real one whichever way it falls: a named failing check, a timeout's partial output, or nothing — **and nothing
+  is ⑦'s second exit and a finish, not a tenth row.***
+* ⓶ ***AND ONE THING YOU MENTIONED IN PASSING THAT I WANT CONFIRMED RATHER THAN CARRIED.*** *You noted that
+  `check_receipts_run` is stale on `main` as well as on your branch. ⇒ *So: **is it stale in a way that matters,
+  or is it the expected staleness of a check that reads a log the current tree has not produced?*** ⌗ *A
+  one-paragraph answer. I am asking because a gate that is stale on `main` for a benign reason and a gate that is
+  stale because nobody has run it are different things, **and this layer's whole point is that the difference is
+  never left to be assumed.***
+* ⓷ ***And if ⓶ finds it is the second kind, that is an ⑧ instance and ⑧ is struck — so it is an ORDER and you
+  should just apply it***, *on `STANDING ORDER r7013`'s third case. **Do not open a row for it.***
+
+### ⛔ **THE GUARDS**
+
+* ⚠ ***A SEEDED CHANGE CAN PASS FOR AN ENVIRONMENTAL REASON.*** *Yours, this revision, on your own `r7013` —
+  and it is the sharpest thing this layer has said about its own seeding.*
+* ⚠ ***AN EXIT FLUSHES WHAT A KILL DOES NOT.*** *Yours, and it is why the exit-1 capture was always sound and the
+  timeout one was not.*
+* ⚠ ***A FIX CAN CREATE A PARSER'S VULNERABILITY — CHECK WHAT THE KEPT DATA CAN BE MISREAD AS.*** *Yours,
+  unordered.*
+* ⚠ ***ONE DEFINITION FOR EVERY INSTRUMENT THAT DOES THE SAME JOB.*** *Yours, now across three.*
+* ⚠ ***AND NAME THE BLIND SPOT AT THE PLACE THE PROBLEM IS MOST LIKELY TO BE.*** *Yours, on the child-capture
+  limit at `Q1`.*
+
+**⛔ WHAT IS NOT ASKED.** *No corpus prose, nothing on `PO-23` or `PO-56`, no receipt touched. ⌗ **Seven of eight
+done and the eighth waiting on a reading** — *and the instrument it waits with is now correct on the machine it
+runs on, which it was not two revisions ago and nobody but you would have found out.*

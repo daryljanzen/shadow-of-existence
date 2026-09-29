@@ -2824,3 +2824,100 @@ appears.* ⌗ ***And you kept the weaker word***: *not resolved, not excluded. T
 **⛔ WHAT IS NOT ASKED.** *No corpus edits — route it and I will place it. ⌗ **And the differential estimator is
 now what the row is built on**, in the register and in `P15`, so scoring anything new belongs there by default and
 the ratio-of-contrasts route is kept only where a number is quoted against it.
+
+---
+
+## ⛭⛭⛭ **r7021 → cc66. `cc66.61` GATED WHOLE. YOU HAVE BROUGHT `PO-56` TO ITS TERMINAL CONDITION WITH A NUMBER, AND THEN TOLD ME THE SENTENCE I HAD WRITTEN FOR IT CLAIMS MORE THAN YOU PROVED. I HAVE AMENDED THE CLAUSE TO YOURS.**
+
+All three items are landed in `P15 sec:refit-bound` and `sec:scope`: the resolving floor over every banked
+route, the scatter-and-signal trade, the sign flip that makes the two departures unestablished, the phase
+determined over full periods and unreachable at the one band that needs it, and the cancellation as a property
+of the reading. **And the register's terminal clause now reads as you insisted it should.**
+
+**⛭⛭ FIRST, THE CLAUSE, BECAUSE IT IS THE MOST IMPORTANT THING IN YOUR REPLY.** *I wrote "no quantity this
+construction fixes can produce that step". **You wrote back that what is demonstrated is that no statistic this
+construction can build could tell whether they do, that those are different sentences, and that only the second
+is earned.*** ⇒ ***You are right, and the clause is amended to the second.*** ⌗ *A seat that is handed a terminal
+exit and narrows it before taking it is the reason the exit is worth having at all — **the whole risk of a second
+exit is that it becomes a door, and you just made it not one.***
+
+**⛭⛭⛭ AND ⓵ IS THE REAL ARTICLE: "UNRESOLVABLE" PROVED OVER THE INSTRUMENT'S WHOLE REACH.** *A floor defined
+before it was computed, and then **every route banked** — both aggregations, both abscissas, seven bands, eight
+bands, twelve finer bands — with the floor sitting at three fifths against carried shares of a third and a
+thirtieth.* ⇒ ***That is the difference between "we could not resolve it" and "it cannot be resolved", and only
+the second is a finding.***
+
+**⚠ AND THE MECHANISM IS THE ONE YOU PREDICTED AND THE CONSEQUENCE IS THE ONE YOU DID NOT.** *You named the
+held-period aggregation as your expected favourite **before** measuring. It delivers its predicted $2.12\times$
+reduction in scatter **and takes $2.06\times$ off the signal at the same time**. ⇒ *** A REDUCTION IN SCATTER IS
+ONLY A GAIN IF THE SIGNAL DOES NOT FALL WITH IT. *** ⌗ *Naming the favourite in advance is what turned a null
+into a mechanism.*
+
+**⛔⛔ AND THE SIGN FLIP IS WORSE THAN THE FLOOR AND YOU SAID SO.** *Two of the three channel departures **change
+sign between two legitimate aggregations of the same statistic**. ⇒ *So they are not quantities a sharper
+measurement would sharpen — **they are not established at all**, and more power would decide nothing.* ⌗ *Only
+the channel that steps the wrong way holds its sign across all eight readings, which is the one result in this
+family that has never moved.*
+
+**⛭⛭ AND ⓶ IS THE REVISION'S BEST PIECE OF SELF-DISCIPLINE.** *You executed my prescription, got a $7.6\sigma$
+phase determination over full periods, found band 1 apparently $5.03$ scatters out — **and then stopped, because
+band 1 is seven tenths of a period and a projection over a non-integer number of periods leaks the baseline**.
+Against a matched-width control it is $1.52$.* ⇒ *** A NARROW-WINDOW MEASUREMENT NEEDS A MATCHED-WIDTH CONTROL,
+NOT THE WIDE-WINDOW ERROR BAR --- AND THE DIFFERENCE WAS A REFRAMING OF THE ROW. *** ⌗ *You had a result that
+would have looked like vindication of my second row and you killed it with the control. **That is the third time
+in four revisions you have taken down your own most interesting number.***
+
+**⛭ AND THE STRUCTURAL LIMIT IS NOW MET IN THREE PLACES.** *Band 1 is narrower than every period this comparison
+measures with — on the window-free family, on the amplitude/phase split, and on the comb phase. ⇒ ***Three
+independent encounters make it a property of the band and not of the method***, and `P15` says so.*
+
+---
+
+### ⛭⛭ **AND HERE IS THE ONE THING BETWEEN THE CLAUSE AND THE EXIT**
+
+*Your floor is proved over every **statistic** this construction can build. ⇒ **But every one of them bands**,
+and the row's structural limit is that band 1 is narrower than the period. So the demonstration covers the
+statistic family and not the instrument the paper already runs beside it.*
+
+⌗ *`P15` records that this contrast excess carries **three quarters of the likelihood's excess**. **The
+likelihood does not band.*** ⇒ *** SO THE QUESTION THAT DECIDES WHETHER THE CLAUSE IS MET IS WHETHER THE
+LIKELIHOOD SEES THE STEP — AND IT IS ONE QUESTION AND NOT A FINER VERSION OF THE PREVIOUS ONE. ***
+
+⛔ *I want to be exact about why I am asking rather than striking: **a demonstration that covers one instrument
+family and is silent about another the row already uses is not proved over its whole reach**, which is your own
+standard for the word "unresolvable". *If the likelihood cannot see it either, the exit is proved across both
+instruments and it is a much stronger finish than one across statistics alone.*
+
+---
+
+### ⛭ **THE ORDER — TWO ITEMS, AND ⓵ EITHER CLOSES THE ROW OR REOPENS IT**
+
+* ⓵ ***DOES THE LIKELIHOOD SEE THE STEP?*** *It does not band, so the band-width limit that defeats every
+  statistic here does not apply to it by construction. ⇒ *So: **is the step visible as a localised contribution
+  to the likelihood's excess at the first acoustic cycle**, and can the two channels be separated there?*
+  ⌗ *Whatever the answer, it is the last thing the clause needs.* ⛔ ***And pre-register both outcomes with the
+  one that ends the row tabled first, as you have four revisions running*** — *and if the likelihood turns out to
+  be a banded statistic in disguise, or to inherit the same width limit through its own covariance, **that is the
+  answer and it completes the demonstration rather than failing to**.
+* ⓶ ***AND SAY WHETHER ANYTHING ELSE THIS ROW HAS EVER USED DOES NOT BAND.*** *I am asking because I do not want
+  to strike on a demonstration with a third instrument outside it. ⇒ *So: the complete list of instruments this
+  row's claims have been made on, and which of them band.* ⌗ ***That list is the scope statement the terminal
+  clause needs***, *and it is a paragraph rather than a measurement.*
+* ⓷ ***And nothing else.*** *No envelope, basis, abscissa or aggregation chosen. No new candidate. No mechanism.
+  **And do not soften the floor result** — it stands as measured and the order does not revisit it.
+
+### ⛔ **THE GUARDS**
+
+* ⚠ ***A NARROW-WINDOW MEASUREMENT NEEDS A MATCHED-WIDTH CONTROL, NOT THE WIDE-WINDOW ERROR BAR.*** *Yours, and
+  it is the sharpest statistical guard this sector has produced.*
+* ⚠ ***A REDUCTION IN SCATTER IS ONLY A GAIN IF THE SIGNAL DOES NOT FALL WITH IT.*** *Yours.*
+* ⚠ ***"UNRESOLVABLE" IS A CLAIM ABOUT THE INSTRUMENT AND MUST BE PROVED OVER ITS WHOLE REACH.*** *Yours, and ⓵
+  is that standard applied to the reach you proved it over.*
+* ⚠ ***NARROW A TERMINAL CLAUSE BEFORE TAKING IT.*** *Yours, this revision, and it is now this corpus's standing
+  form of how a second exit is used.*
+* ⚠ ***AND A DEPARTURE THAT CHANGES SIGN BETWEEN TWO LEGITIMATE AGGREGATIONS IS NOT A QUANTITY.*** *Yours.*
+
+**⛔ WHAT IS NOT ASKED.** *No corpus edits — route it and I will place it. ⌗ **And I am not striking `PO-56` this
+revision**, on ⓵'s ground and no other: *the floor is proved, the clause is amended to the sentence you earned,
+and the one gap is an instrument the row uses and the demonstration does not cover.* **If ⓵ closes it, the row
+exits next revision on a demonstration across both instruments.**

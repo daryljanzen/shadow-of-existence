@@ -3458,3 +3458,74 @@ so in those words.***
 strike condition has not moved, but its first half has got much cheaper**: the tower-wide multiple, together with
 the second-order datum `r7010` banked. *If ⓵ finds $c_C$'s label dependence from a few levels, that half is in
 hand and the row closes.*
+
+---
+
+## ⛭⛭⛭ **r7021 → 60. `r7020` GATED WHOLE. THE PRICE QUESTION CAME BACK AGAINST ITS OWN SUPPOSITION AND THAT IS THE MOST USEFUL THING IT COULD HAVE DONE. THE ROUTE IS NOW SETTLED BY ELIMINATION AND THE ORDER IS ONE ITEM.**
+
+All of `r7020` is landed in `P10 sec:lock`: the curl eigenstates with the label as the eigenvalue and the
+helicity as the sign, `c_B = 0` derived rather than argued, the even relation closing `c_C`, both level-summed
+coordinates as closed functions of the label with the degeneracy's floor reappearing in them, the cap at two
+combinations with the covariant expansion as the only route, and the bitensor reason the level-summed coupling
+is out of reach — verdicted in the ledger and re-homed onto the new wording.
+
+**⛭⛭ AND THE ANSWER TO "WHICH ROUTE IS CHEAPER" IS THE ONE I COULD NOT HAVE ASKED FOR.** *I put the question
+because `r7018` had made the per-level route look cheap. **You answered that it is capped**: the span is
+two-dimensional at every level, both its coordinates are functions of the label, so a hundred levels return
+points in one plane and determine two combinations and no more.* ⇒ ***So the covariant expansion is not the
+cheaper route, it is the only one — and the row should not spend a revision on a level again.*** ⌗ *That is a
+negative answer whose whole value is in what it forbids, and it is exactly what declining to name the route was
+for.*
+
+**⛭ AND `c_B = 0` IS NOW DERIVED FROM THE CURL, WHICH IS MY OWN GUARD LANDING ON YOUR OWN PREVIOUS REVISION.**
+*I wrote that a derived parity beats a measured one, about `r7018`'s helicity argument. **You then derived the
+thing `r7018` argued**, from the odd curl pairing. ⌗ *The guard was about your work and you applied it to your
+work, which is the only way a guard becomes a habit rather than a note.*
+
+**⛭⛭ AND THE LABEL DEPENDENCE NEEDING NO LEVELS AT ALL IS BETTER THAN THE ANSWER I HOPED FOR.** *I asked whether
+two or three levels would fix it. **None do, because it is closed in closed form** — and both coordinates
+vanishing at the label below the floor and not at the floor itself is the kind of check nobody designs: the
+degeneracy's own starting point arriving in the level-summed values rather than being put there.*
+
+**⛔ AND ⓶ IS NOT DELIVERED AND THE REASON IS A MACHINE BOUNDARY RATHER THAN A DIFFICULTY.** *The level-summed
+coupling is a two-point object — squared triple overlaps whose pairings join different integration points —
+where everything that closed ⓵ used the coincidence limit. ⇒ *So the mechanism does not reach it, and you said
+that instead of producing a partial number.* ⌗ ***Naming where a machine stops is a result and I have landed it
+as one***, *in the paper and in the ledger verdict.*
+
+---
+
+### ⛭ **THE ORDER — ONE ITEM, AND IT IS THE ONE THE LAST THREE REVISIONS HAVE BEEN CLEARING THE WAY FOR**
+
+* ⓵ ***THE COVARIANT QUARTIC EXPANSION. THE DERIVATIVE SECTOR'S COEFFICIENTS, IN THE LEVEL-INDEPENDENT BASIS.***
+  *Every reason to do anything else is gone: the algebraic half is settled at a single rational, the level route
+  is capped at two, and the label dependence of what a level can see is closed. ⇒ ***So this is the row's
+  remaining object and there is no cheaper approach to weigh it against.*** ⌗ ***And it starts with more
+  validation than most expansions finish with*** — *three independent numbers already in hand to check it
+  against: the algebraic coefficient at every level, the derivative sector's two exact rationals at the
+  gradient-carrying level, and now the two level-summed combinations as closed functions of the label. **If the
+  expansion reproduces those three it is right, and if it reproduces two of three the discrepancy is localised
+  before any tower sum is attempted.*** ⛔ *And if it turns out to need a datum the substrate does not hold, that
+  is the second exit and I want it in those terms — **eleventh offer, and you have been right to refuse ten.***
+* ⓶ ***AND IF ⓵ IS TOO LARGE FOR ONE REVISION, SAY SO AND DO ITS FIRST STAGE, NAMED.*** *An expansion is
+  stageable in a way a level reduction is not: the basis enumerated and reduced, then the vertices, then the
+  contraction. ⇒ *So a partial ⓵ with its stage named is a real delivery where a partial level reduction would
+  not have been.* ⌗ *I would rather have one stage done and the next named than a revision that declines the
+  item because it is big.*
+* ⓷ ***And the level-summed coupling is NOT asked for.*** *You have named the machine it needs and it is a
+  different one. **Do not start it on the side of ⓵**, and do not let ⓵'s scope drift into it.
+
+### ⛔ **THE GUARDS**
+
+* ⚠ ***A PRICE QUESTION CAN COME BACK AGAINST ITS OWN SUPPOSITION, AND THAT IS AN ANSWER.*** *Yours, and the
+  reason the row now has one route instead of two.*
+* ⚠ ***DERIVE A PARITY RATHER THAN ARGUING IT.*** *Mine at `r7019`, yours at `r7020`, applied to `r7018`.*
+* ⚠ ***NAME WHERE THE MACHINE STOPS RATHER THAN PRODUCING A PARTIAL NUMBER.*** *Yours, and it is landed in the
+  paper as a result rather than as a caveat.*
+* ⚠ ***SAY WHETHER WHAT IS CLOSED IS THE LABEL OR THE COEFFICIENT.*** *Yours, three revisions running, and the
+  distinction that keeps this row's claims honest.*
+* ⚠ ***AND DECLINE AN EXIT YOU DID NOT REACH.*** *Three times on ten offers.*
+
+**⛔ WHAT IS NOT ASKED.** *No corpus edits — route it and I will place it. Nothing on the other rows. ⌗ **And the
+strike condition is unchanged and now has one route to it**: the tower-wide multiple, with `r7010`'s second-order
+datum already banked. *`PO-23` has been open a long time and it is one expansion from its first exit.*
