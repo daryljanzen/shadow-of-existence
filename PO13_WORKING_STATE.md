@@ -6126,3 +6126,75 @@ like a property.* **On the excess: singles sum to 1.4965, the realised pair give
 
 ⚠ *Band 6 is where the arm is cheapest (14.6 against 80, 80, 123), so every channel's share there
 has a small denominator and it is never quoted alone.*
+
+## cc66.65 — the measurement that joins cc66.64's two findings
+
+**Order `r7029`, one item plus a small one.** *Pre-registration its own commit ahead of the working script.*
+
+### The gap, and why ⓑ could not answer it
+
+`cc66.64` measured the **correlation on per-band shares** and the **modulation on per-bin structure**. Those
+were not yet statements about the same object: a channel can carry the cost in exactly the right four bands
+and be smooth inside every one of them.
+
+⛔ **And `ⓑ` cannot close it, which the pre-registration stated before the run.** A one-coefficient
+regression's fitted part is a scalar multiple of one of its inputs, in either orientation:
+
+| orientation | fitted part | predicted amp | measured |
+|---|---|---|---|
+| A — channel on arm (`cc66.64`'s) | $\beta\,e_{\rm arm}$ | $0.7435 \times 7.304 = 5.4304$ | **5.4304** |
+| B — arm on channel | $\gamma\,e_{k}$ | $0.8033 \times 4.238 = 3.4044$ | **3.4044** |
+
+⇒ ***Both exact to the digit, so `ⓑ` carries nothing its input did not — and since `ⓑ` is $\gamma \times$
+`ⓐ`, the order's fork collapses to one question: is the term mix's own cost combed?***
+
+### ⓶ — it is not, and the modulation survives where no channel accounts for it
+
+| quantity | amp | null μ | null max | # of 110 over | phase − arm |
+|---|---|---|---|---|---|
+| the ARM excess (reference) | 7.304 | 2.528 | 5.561 | 0 | +0.00 |
+| **ⓐ term mix own cost** | **4.238** | 2.030 | 4.297 | **1** | — |
+| ⓒ A: the 45% it misplaces | 1.482 | 2.793 | 3.188 | **110** | — |
+| **ⓒ B: what it does NOT explain** | **4.005** | 3.034 | 3.889 | **0** | **−0.16** |
+
+⇒ *** `ⓒ` COMBED AND `ⓑ` NOT — `PO-56`'s TERMINATING ROW. ***
+
+⚠ **The one reading that says DISCHARGES is orientation A taken literally** — its `ⓑ` is $\beta \times$ the
+arm's own 7.30 and its `ⓒ` is a different object. *That exit rests entirely on the amplitude gated as
+arithmetic in advance. Strip it and both orientations say the same thing.*
+
+⛔ **Not decisive and not reported as decisive.** *`ⓐ` fails by one period of 110; `ⓒ` clears by a comparable
+margin; the bar is a null **maximum** over correlated periods and is deliberately conservative.*
+
+### The self-similarity artefact, killed again for the channel
+
+| | amp | null max | clears |
+|---|---|---|---|
+| arm $d^{T}Fd$ | 1.083 | 0.856 | yes |
+| arm $-2d^{T}Fr_c$ | 6.241 | 4.791 | yes |
+| term mix $d^{T}Fd$ | 0.851 | 0.907 | **no** |
+| term mix $-2d^{T}Fr_c$ | 3.399 | 3.728 | **no** |
+
+*The channel is combed in neither term, so there is no "channel looking at itself" to discount.*
+
+### ⓷ — the window is combed in antiphase, but not one structure with two signs
+
+**Own cost 2.010 against a null max of 1.711, none of 110 above, at +3.12 rad from the arm's — π to within
+0.02.** *So not a smooth offset: a modulation at the same period, opposed.*
+
+⛔ **The blunt test of "one structure, two signs" fails:** $\alpha = -0.0587$ with the residual keeping 98% of
+the window's power; the amplitudes that follow miss by a factor of five.
+
+⌗ *But that is the **wrong instrument** — a ratio over whole vectors asks whether the window **is** the arm
+scaled, where the question is about each one's **modulated part**. `cc66.60`'s aggregation error had exactly
+this shape.* ⇒ Like-for-like, projecting the two spectrum differences:
+
+| | amp | null max | # over | phase − arm |
+|---|---|---|---|---|
+| $d_{\rm arm}$ | 5.491e−05 | 4.542e−05 | 0 | +0.00 |
+| $d_{\rm window}$ | 1.448e−05 | 1.221e−05 | 0 | **+0.27** |
+
+**In phase, at a ratio of 0.264 — and $0.264 \times 6.241 = 1.646$ against a measured 1.893.**
+
+⇒ *** THE MAGNITUDE COMPOSES AND THE SIGN DOES NOT. The reversal appears only after the likelihood's own
+weighting. *** ⌗ *That locates the sign flip. It does not explain it, and naming why would be a mechanism.*
