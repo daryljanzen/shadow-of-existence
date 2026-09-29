@@ -7,14 +7,6 @@
    }
   }
  },
- "claude/shadow-of-existence-setup-wgcmvt": {
-  "suite": {
-   "receipts/L_probability/R1_the_whole_footprint_is_three_geometry_words.py": {
-    "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/36574927317",
-    "since": "86b08ba922080f11a6245bc1e172b4e1f0391fb3"
-   }
-  }
- },
  "main": {
   "tolerance": {
    "receipts/L_numerics/Q1_a_stated_tolerance_is_a_request_and_the_corpus_answers_it.py": {
