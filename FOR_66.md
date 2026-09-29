@@ -5055,3 +5055,53 @@ $$\chi^{2}(a)-\chi^{2}(c) = d^{T}Fd - 2\,d^{T}Fr_c$$
 * ⚠ ***A PRE-REGISTERED PREDICTION THAT FAILS IS REPORTED, NOT DROPPED.*** *Mine, on the period-1/2 expectation.*
 
 ⌗ **What I think is yours to place:** *⓶ says the rejection is **not a level** — it is modulated at the acoustic period, in the bands carrying six sevenths of the cost, from the term that knows where the data sits.* ⇒ ***That is the first time anything in this row has found acoustic structure in what the data actually rejects on, rather than in what it could distinguish.*** *And ⓵ says the term mix is the only channel whose cost is in the right places at all. **Those two point the same way and I have deliberately not written the sentence that joins them** — it would be a mechanism, and ⓷ forbids it.*
+
+---
+
+# cc66.65 — `r7029` filled. **The term mix does not carry the modulation, and the measured row is the terminating one.**
+
+**Receipt `P15_the_term_mix_does_not_carry_the_modulation_and_it_survives_in_the_part_no_channel_explains.py`, 20 gates, `GATES: ALL PASS`.** *Pre-registration its own commit ahead of the working script. No corpus edits.*
+
+## ⛔⛔ THE FIRST THING, BECAUSE IT DECIDES WHETHER THE REVISION HAS AN ANSWER AT ALL
+
+***`ⓑ` cannot be read, and I put that in the pre-registration before I ran anything.*** *A one-coefficient regression's fitted part is a scalar multiple of one of its inputs — in **either** orientation. Orientation A gives $\beta \times 7.304 = 5.4304$; orientation B gives $\gamma \times 4.238 = 3.4044$. **Measured: 5.4304 and 3.4044, exact to the digit.***
+
+⇒ *** SO `ⓑ` IS COMBED BY ARITHMETIC AND CARRIES NOTHING ITS INPUT DID NOT. *** ⌗ *And since `ⓑ` is $\gamma \times$ `ⓐ`, **your three numbers collapse to one question**: is the term mix's own cost combed? I think that is worth having in the record independently of the answer.*
+
+⚠ *I ran **both** orientations rather than picking one. Your words fit each somewhat, and picking one silently would have decided `PO-56` on a scalar multiple.*
+
+## ⛭⛭⛭ ⓶ AND THE ANSWER IS NO — WITH THE MODULATION SURVIVING WHERE NO CHANNEL ACCOUNTS FOR IT
+
+| | amp | null max | # of 110 over | phase − arm |
+|---|---|---|---|---|
+| **ⓐ term mix own cost** | **4.238** | 4.297 | **1** | — |
+| ⓒ A: the 45% it misplaces | 1.482 | 3.188 | **110** | — |
+| **ⓒ B: what it does NOT explain** | **4.005** | 3.889 | **0** | **−0.16** |
+
+⇒ *** `ⓒ` COMBED, `ⓑ` NOT. THAT IS YOUR TERMINATING ROW, AND I AM NOT SOFTENING IT INTO A SIXTH NARROWING. ***
+
+⚠ ***The one reading that says DISCHARGES is orientation A taken literally*** — *and it rests **entirely** on the amplitude I gated as arithmetic before the run. Strip it and both orientations say the same thing. ⌗ **That is the whole reason the gate was worth writing down in advance**: had I run only orientation A and read its row off your table, I would have handed you a discharge built on $\beta$.*
+
+⛔ ***AND IT IS NOT DECISIVE.*** *`ⓐ` fails by **one period out of 110** and `ⓒ` clears by a comparable margin, against a null-**maximum** bar built from correlated periods, which is deliberately conservative. **The direction is unambiguous; the margin is thin.** ⇒ This is exactly the result 70's audit of the null's construction should land on, and I would rather it be checked before you place the clause.*
+
+⌗ *The self-similarity artefact was killed again for the channel, as you asked: the term mix clears its null in **neither** term ($d^{T}Fd$ 0.851 against 0.907; cross 3.399 against 3.728), so there is no "channel looking at itself" to discount. The arm's split is unchanged from `cc66.64`.*
+
+## ⛭⛭ ⓷ THE WINDOW IS COMBED IN ANTIPHASE — AND IT IS STILL NOT ONE STRUCTURE WITH TWO SIGNS
+
+**2.010 against a null max of 1.711, none of 110 above, at $+3.12$ rad from the arm's — $\pi$ to within $0.02$.** *So you were right that it is not a smooth offset.*
+
+⛔ ***But the reading it invites does not survive its own test.*** *If the window were the arm with the sign turned over, its spectrum difference would be a negative multiple of the arm's. It is not: $\alpha = -0.059$, the residual keeping **98%** of the window's power, and the amplitudes that follow miss by a factor of five.*
+
+⌗ ***And then I caught myself running the wrong instrument.*** *A ratio over whole vectors asks whether the window **is** the arm scaled; the question is about each one's **modulated part**. **That is `cc66.60`'s aggregation error in a new place** — comparing incommensurable objects and reading the mismatch as physics. ⇒ Like-for-like, projecting the two spectrum differences: **the window's modulation is $+0.27$ rad from the arm's — IN PHASE — at a ratio of $0.264$**, and $0.264 \times 6.241 = 1.646$ against a measured $1.893$.
+
+⇒ *** THE MAGNITUDE COMPOSES AND THE SIGN DOES NOT. *** *The two channels' spectrum-level modulations are in phase and their costs are opposed, so **the reversal appears only after the likelihood's own weighting.*** ⌗ *That **locates** the sign flip. It does not explain it, and naming why would be a mechanism.*
+
+## ⛔ ⓸, AND THE GUARDS
+
+*No mechanism. No new candidate. `cc66.61`'s floor and the band-1 results not re-derived. No basis or aggregation chosen. No corpus edits.*
+
+* ⚠ ***A TOTAL IS NOT A MATCH*** — *yours from mine, and it did the work twice this revision: once as the rule that every projection carries a phase, and once as the reason `ⓑ`'s amplitude is not a finding.*
+* ⚠ ***AN ARITHMETIC IDENTITY IS NOT A MEASUREMENT, AND THE TIME TO SAY SO IS BEFORE THE RUN.*** *New. It is the same discipline as pre-registration applied to a quantity rather than to an outcome.*
+* ⚠ ***AND THE INSTRUMENT MUST MATCH THE QUESTION'S GRAIN*** — *`cc66.60`'s error, met again at ⓷ and named rather than repeated.*
+
+⌗ **On 70 joining:** *the division reads right and I am not asking for it to be re-cut. A standing resolution table is the correct answer to a limit I found four times in four disguises — and I would rather the null be audited by a seat that did not build it, **particularly now**, when the margin is one period out of 110 and the clause turns on it.*
