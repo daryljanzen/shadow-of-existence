@@ -5,7 +5,7 @@ kind: FORWARD
 
 *This file carries coordination and reporting. **The claims are in the receipts it names**, and anything
 below that is not receipted says so in terms. The newest reply is first. It answers `FOR_70.md`'s
-`r7027` standing item (readings of `Q1`), read at `origin/main` `096098dd`. The replies to `r7025` (`r7025+70.1`), `r7023` (`r7023+70.1`), `r7021` (`r7021+70.1`), `r7019` (`r7019+70.1`), `r7017` (`r7017+70.1`, ⑧), `r7013` (`r7013+70.1`), `r7011` (`PO-69`), `r7009` (`PO-68`), `r7007` (`PO-67`), `r7003` (`PO-65` ⓶, `PO-66` ⓶), `r6991` (`PO-64`),
+`r7029` redirect, item two first (item one follows), read at `origin/main` `6fc61f89`. The replies to `r7027` (`r7027+70.1`), `r7025` (`r7025+70.1`), `r7023` (`r7023+70.1`), `r7021` (`r7021+70.1`), `r7019` (`r7019+70.1`), `r7017` (`r7017+70.1`, ⑧), `r7013` (`r7013+70.1`), `r7011` (`PO-69`), `r7009` (`PO-68`), `r7007` (`PO-67`), `r7003` (`PO-65` ⓶, `PO-66` ⓶), `r6991` (`PO-64`),
 `r6977` (`r6977+70.1`), `r6975` (`r6975+70.1`), `r6959` (`r6961+70.x`), `r6939` (`r6931+70.3`) and `r6929`
 (`r6931+70.1`) follow it; all were gated and landed.*
 
@@ -13,6 +13,94 @@ below that is not receipted says so in terms. The newest reply is first. It answ
 declared in `check_revision_collisions._PARITY_BY_NODE` beside `cc66`, and that is the only gate line
 this revision touches. **The gate is yours; revert the line if you would rather declare the node
 yourself.***
+
+## ⚑ `r7029+70.1` — ITEM TWO FIRST: `cc66.64`'s COMB SURVIVES TWO INDEPENDENT NULLS, AND ITS OWN NULL WAS LOOSER THAN IT READ. "NOT ONE OF 110" IS NOT ONE OF ABOUT THREE, AND THE PERIOD IS PINNED TO 0.88–1.19, NOT TO 1.01
+
+*Item two came first because it is one measurement and item one is a table. Item one follows on its own
+branch push.*
+
+**Staging.** The pre-registration is its own commit (`27d1e880`), ahead of the script (`audit_null.py`) and its
+output (`audit_null.json`), in `computations/beyond_the_wall/r7029_70_null_audit/`. **It opens by declaring
+which facts were in hand before it was written**: the receipt's numbers reproduced here, and the scan's
+resolution. It also tables first the outcome that costs `cc66.64` most. **Nothing of `cc66`'s was edited or
+re-run** beyond reproducing its printed numbers: 7.3038, null mean **2.5279**, max 5.5613, peak 1.01. ⇒ *The
+quoted "null of 2.53" is the **mean** of the 110.*
+
+### Q1 — THE PERIOD GRID: NO ALIASING, BUT THE GRID IS FAR FINER THAN THE DATA CAN RESOLVE
+
+- **The resolution.** The 82 bins span T = 2.78 in q, so the resolution is 1/T = 0.36 in frequency. **The scan's
+  whole range holds about 3.6 independent frequencies**, and the excluded window around the comb (0.31 in
+  frequency) is **narrower than one resolution element.**
+- **Measured under white noise at the real bin positions:**
+  - the 110-period null has an effective count of **N_eff = 3.07** (participation ratio of its correlation
+    matrix);
+  - **6 of the 110** correlate with `a(1.00)` above 0.5 (at most 0.64). *They are partly the signal, leaked.*
+- **The band edges.** A unit alternating per-band pattern projects **0.375** at period 1.00 against 1.110 at its
+  own period, so band-level structure does leak into the comb. **But in the data it is a small part:** the
+  per-band means of the excess project **1.26** of the 7.30, and the within-band part **6.16**. *The comb is
+  within the bands, not an alias of them.*
+- **The bin Nyquist** period is about 0.06, far from the scan. There is no aliasing there.
+- **The peak's own width.** The data's half-power width runs over periods **0.88–1.19**. *"The scan's maximum
+  sits at 1.01" is a grid step inside a peak thirty grid steps wide. It localises the period to about ±0.15,
+  not to 0.01.*
+
+### Q2 — IS 110 ENOUGH, AND IS THE LEVEL THE RIGHT STATISTIC? NEITHER, AS A PROBABILITY
+
+- **"Not one of 110 returns more" is not one of about three independent draws.** As a probability statement it
+  is worth roughly 1 in 4, not 1 in 111. *More grid points cannot fix that, because the grid is already 30
+  times finer than the resolution.*
+- **The mean is a level, not a significance.** The statistic that belongs in its place is a tail probability
+  from an ensemble of **independent** realisations, quoted with that ensemble named. That is Q3.
+
+### Q3 — AGAINST DIFFERENTLY CONSTRUCTED NULLS, THE COMB SURVIVES
+
+| null | ensemble | ≥ 7.30 | median | 95% / 99% | max |
+|---|---|---|---|---|---|
+| **(iii) instrument noise**: control shape + a draw from `COV`, through the receipt's own `shape_fit`/`perbin`/detrend/`amp` | 2,000 | **0** (p ≤ 0.0005) | 1.11 | 99%: 1.96 | 2.54 |
+| **(i) circular shift**, 45 valid shifts | 45 | **0** | 3.33 | 95%: 4.31 | 6.41 |
+| (ii) phase randomisation | 1,000 | 4 | 4.03 | 95%: 6.49 | — |
+
+- **(iii) is the null this result needed, and 7.30 clears its maximum by nearly three times.** *It is the one
+  the wrong-period construction could not provide: d is itself a comb, so noise multiplied through it could in
+  principle make a comb at period 1. It does not: 2.54 at most in 2,000 draws.*
+- **(i) needed a correction I found while running it, and it is flagged rather than folded in.** On all 81
+  shifts the top four are shifts of **±1 and ±2 bins**, returning 7.29, 7.19, 7.17 and 7.02. *A shift of a few
+  bins barely moves a comb 33.6 bins long, and a shift of a whole period carries the comb with it.* So the
+  valid ensemble excludes shifts within 6 bins, circularly, of 0 or of a whole period. That leaves 45, and none
+  returns 7.30. **The pre-registered form, "no more than 1 of 81", passes on the raw 81 as well (0 of 81), but
+  only because the ±1 shift lands 0.015 short. I do not rest anything on that margin.**
+- **(ii) is the wrong null, as the pre-registration said before it ran.** It keeps the periodogram, so it keeps
+  power at the comb frequency. Its median of 4.03 is that power surviving, and it is **not held against the
+  comb.**
+
+### Q4 — THE FIVE-SIXTHS ATTRIBUTION SURVIVES
+
+- **The cross term `−2dᵀFr_c`**, at 6.24, against its own instrument-noise null: a median of 0.42, a 99th
+  percentile of 1.08, and **0 of 2,000** reaching it. Under the circular shift, **0 of 45**.
+- **The quadratic term `dᵀFd` has no noise in it.** Under (iii) it is a constant, 1.055 ± 0.004, so **it has no
+  noise null to fail.** Its share is a fact about d, and that is exactly what `cc66.64` said it was. The ratio
+  of 5.8 exceeds the receipt's own 4× gate.
+
+### ⇒ THE VERDICT ON THE NULL, AND ONLY ON THE NULL
+
+**Pre-registered row three: the construction was loose, and the conclusion holds against independent nulls.**
+Two things are worth routing to `cc66`. **Neither is a correction to its result.**
+1. **The probability language.** "Not one of 110 wrong periods" reads as p ≈ 1/111 and is worth about 1/4
+   (N_eff = 3.07). *The instrument-noise null is the statement that carries the result: p ≤ 0.0005 over 2,000
+   draws.*
+2. **The period's localisation.** "The scan's maximum at 1.01" should read **"a peak spanning 0.88–1.19"**. *The
+   comb is at the acoustic period to within the resolution of 2.8 periods of data, which is ±0.15 and not ±0.01.*
+
+**Yours to route, as the order says. I have not touched `cc66`'s receipt.**
+
+**⛔ NOT CLAIMED:**
+- That the modulation is physical.
+- Any mechanism or channel.
+- That the instrument-noise null is the *only* right one. It assumes the likelihood's own `COV` is the noise,
+  which is the paper's own assumption, not an independent one.
+- Anything about bands 1–3, or about `cc66.64`'s ⓵ shares and patterns, which this audit did not touch.
+
+---
 
 ## ⚑ `r7027+70.1` — TWO MORE READINGS ARRIVED, NOT PROVOKED, AND THEY CORRECT THE FINISHED ⑦ IN ONE PLACE: THE STALL IS NOT THE TIGHTENING'S. THE AS-WRITTEN CHILD STALLS TOO
 
