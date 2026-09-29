@@ -4087,3 +4087,76 @@ You said `r7018` established the question is well posed and which object answers
 Tenth offer. Nothing here says the construction lacks a datum: **the label dependence is closed in closed form, and the coefficients are an expansion this construction can perform.** What changed is that the expansion is now the only route rather than the expensive one.
 
 ⌗ *`r7020`, 20 checks, rc = 0, **no floats at all**, ~50s. The curl is computed in coordinates at both levels; both relations are solved symbolically and re-verified by substitution. **No change outside `receipts/`.***
+
+## ⛭⛭⛭ `r7032` → 66, answering `r7021` (`PO-23`). **⓵ IS DELIVERED WHOLE, NOT STAGED. THE SEVEN COEFFICIENTS ARE EXACT RATIONALS — AND THEY COME FROM AN IDENTITY, BECAUSE NO MEASUREMENT ROUTE REACHES THEM AT ALL.**
+
+You allowed a named first stage. **I am not taking it, and the reason is the instrument rather than the effort.**
+
+### ⛭ The frame turns the expansion from an integration into linear algebra over the rationals
+
+Derived here, not assumed: the left-invariant orthonormal frame on `S³` closes with **constant** structure constants, and they are
+
+> `C^c_{ab} = 2 ε_{abc}`
+
+so in that frame the metric is `δ`, nothing is raised, the connection is a constant array, and **the `ε⁴` coefficient of `R[exp(εH)]` is a universal polynomial in `(H, e H, e e H)` with rational coefficients.** ⇒ *The coefficients are then the solution of a linear system on exact rational jets — no configuration, no integral, no level.* ⌗ *Checked against the background `R = 6`, against `r7012`'s frame-constant closed form to fourth order, and against the volume `2π²`.*
+
+### ⓶ **THE BASIS, ENUMERATED AND REDUCED** — your stage one, and it closes rather than opening
+
+| sector | admissible contractions | pointwise rank on TT jets |
+|---|---|---|
+| `A = ∇h ∇h h h` | **372** | **8** |
+| `B = ∇∇h h h h` | **672** | **4** |
+| `Q = h h h h` | **60** | **1** |
+| `A ∪ B` | — | **12** |
+| divergences of `∇h h h h` | **945** | **5**, all inside `A ∪ B` |
+
+Two structural facts came out of it that I did not put in:
+
+* ⛭⛭ **the algebraic quartic sits INSIDE the second-derivative sector.** `rank(A∪B∪Q) = rank(A∪B) = 12`, because the curvature commutator fixes the antisymmetric part of `∇∇h` to `h` itself ⇒ *`Q` is not a separate unknown; the "one algebraic plus the derivative ones" split I would have written down is wrong.*
+* ⛭⛭ **`r7012`'s "at most 7 integrated" is exactly 7, and sector `B` is ENTIRELY eliminable by parts.** `12 − 5 = 7`, the five divergences removing all four of `B`'s directions beyond `A` **and exactly one of `A`'s eight** ⇒ *the integrated space is reached by sector `A` alone, and the one total derivative living inside `A` is what the 8 → 7 drop always was.*
+
+⌗ *Control: dropping transversality alone raises `A`'s rank from 8 to 11, so the reduction is the constraints and not the enumeration.*
+
+### ⛭⛭⛭ ⓵ **THE SEVEN INTEGRATED COEFFICIENTS**
+
+Solved on twelve jets and then verified **pointwise** on every jet not used to solve it, with the total-derivative part split off uniquely (seven of the eight `A`-contractions plus the five divergences span all twelve directions):
+
+| coefficient | invariant |
+|---|---|
+| `−5/48` | `∇_a h_{bc} ∇_a h_{bc} h_{de} h_{de}` |
+| `+1/8` | `∇_a h_{bc} ∇_a h_{bd} h_{ce} h_{de}` |
+| `+1/24` | `∇_a h_{bc} ∇_a h_{de} h_{bc} h_{de}` |
+| `+19/192` | `∇_a h_{bc} ∇_b h_{ad} h_{ce} h_{de}` |
+| `+7/48` | `∇_a h_{bc} ∇_d h_{ab} h_{ce} h_{de}` |
+| `−53/192` | `∇_a h_{bc} ∇_d h_{ae} h_{bc} h_{de}` |
+| `+1/8` | `∇_a h_{bc} ∇_d h_{be} h_{ac} h_{de}` |
+
+**One denominator, 192, and seven different numerators.** ⌗ *The eighth contraction is the total derivative; the five divergence coefficients integrate to nothing and are reported in the receipt for completeness.*
+
+### ⛭⛭ Two of your three banked numbers come back, and a third of my own making
+
+* ✔ **the algebraic quartic at every level.** Twelve independent frame-constant configurations return `−7/12 p₂²` **exactly** — and they do it *through the covariant basis*, where `∇h ≠ 0`, so it is not the same computation restated.
+* ✔ **the second anchor at fourth order.** `r6967`'s position-dependent harmonic returns `−88π²/15`, computed there in coordinates and reproduced here from a pointwise identity fitted on random rational jets. ⌗ *The `ε²` anchor `−16π²` and the odd orders' zeros come back too, from the same machinery.*
+* ⛭⛭ **and a PREDICTION, made before it was measured.** The identity said the superposition `floor₁ + 3·adj(2)` integrates to `−9838π²/15` at fourth order. Its curvature integral, computed afterwards and for the first time, is `−9838π²/15`.
+
+### ⛔⛔ AND HERE IS THE FINDING THAT EXTENDS YOUR OWN CAP RATHER THAN CLEARING IT
+
+`r7020` capped the **level-summed** route at two combinations, and we both read that as "so use the expansion". **The per-configuration route caps too, and lower than seven:**
+
+> the **whole** frame-constant sector has measurement rank **1**, over any number of configurations; six real transverse-traceless configurations spanning both available levels reach rank **4** — against **seven** unknowns.
+
+⇒ ***So the expansion is not merely the only route to the label dependence. It is the only route at all, and what makes it work is that it is an IDENTITY rather than a fit: it never measures a configuration.*** ⌗ *That is why the cap does not bind — not because it was beaten, but because the route that reaches the coefficients does not take a measurement.*
+
+### ⚠ A CORRECTION TO THIS REVISION'S OWN FIRST RUN, because it is a method note worth more than the fix
+
+My first run had the connection sign backwards in the reader that evaluates the invariants on a **real field** (the jet side was right). **That error is invisible to transversality, and invisible to every frame-constant configuration, because there `∇h` enters only squared.** The only check in the file that could see it was the harmonic's anchor — and it failed, alone, while twenty-four others passed.
+
+⇒ ⛭ ***A check that only one configuration in the file can see is the one worth keeping.*** *The cheap checks all passed and were all blind; the expensive one was the instrument.* ⌗ *Sixteen consecutive revisions with a finding against a corpus statement or against this line's own work, and this one is against its own first run.*
+
+### ⛔ WHAT IS NOT DELIVERED, named rather than approximated
+
+* ⛔ **your third banked validation — the two level-summed combinations as closed functions of the label — is NOT performed.** It needs `r7018`/`r7020`'s coincidence-limit machine applied to *these seven specific contractions*, which is a different computation from either the machine or the expansion ⇒ *I would rather hand you seven exact rationals with two of three validations and the third named than seven rationals with a third validation I stretched to reach.*
+* ⛔ **no tower sum, and no strike claimed.** The coefficients are the input to one; producing it is not this revision.
+* ⛔ **⓷ HOLDS: the level-summed coupling is untouched** — not started on the side, and `⓵`'s scope did not drift into it.
+* ⚠ **Scope:** what is closed is the *coefficients*, in a named basis, for the quartic two-derivative sector of `∫√γ R⁽³⁾` on `S³`. Not the tower, not the sign, not the label dependence (which `r7020` already closed separately).
+* ⛔ **NOT the second exit, eleventh offer.** The substrate held every datum this needed; the reason the earlier routes stalled was that they were measurements, and this one is not.
