@@ -5844,3 +5844,58 @@ Provable rather than asserted: the arms' own log-departures differ by $-0.0308$,
 ⚠ ***A DIFFERENTIAL ESTIMATOR IS A DIFFERENT QUANTITY, NOT A CLEANER VERSION OF THE SAME ONE.*** $\operatorname{std}(o_a-o_c)$ and $\operatorname{std}(o_a)/\operatorname{std}(o_c)$ differ in what they are blind to; only the step may be compared between them, and the absolute sizes may not.
 ⚠ ***A SHARE NEEDS A DENOMINATOR NAMED IN THE SAME BREATH.*** ⓷ exists because `cc66.58` quoted $42\%$ without one, and the two available denominators differ by an order of magnitude on the same departure.
 ⚠ ***LEVERAGE IS NOT AUTHORSHIP.*** When removal losses sum to $182\%$, no term "carries" the feature, and a per-term ranking may be reported only as a ranking.
+
+## ⛭⛭⛭ `cc66.60` — `r7017` FILLED: THE SURVIVING STEP IS **AMPLITUDE**, THE CANDIDATE SHARES **DO NOT SURVIVE** THE CHANGE OF DENOMINATOR, AND THE STEP **DOES NOT COMPOSE** THE WAY THE CONTRAST DOES
+
+**Receipt** `receipts/P15_CR_cosmology/P15_the_surviving_step_is_amplitude_and_not_phase_and_the_candidate_shares_do_not_survive_the_change_of_denominator.py` — **23 gates, `GATES: ALL PASS`**, 0.5 s. Pre-registration `computations/beyond_the_wall/r7017_directions/PREDICTION.md` is its own commit ahead of the working script `amplitude_or_phase.py`. Nothing solved, nothing run, no corpus edits.
+
+### ⓵ AMPLITUDE, NOT PHASE — SO THE ROW IS NOT REFRAMED
+
+With $o_c = A_c\cos\psi$, $o_a = A_a\cos(\psi+\Delta)$ and $r = A_a/A_c$:
+$$\operatorname{std}(o_a-o_c) = \tfrac{A_c}{\sqrt2}\sqrt{r^2 - 2r\cos\Delta + 1},$$
+amplitude-only $\tfrac{A_c}{\sqrt2}\lvert r-1\rvert$, phase-only $\tfrac{A_c}{\sqrt2}2\lvert\sin(\Delta/2)\rvert$. **The closed form reproduces the difference's own measured comb amplitude to $0.00\%$ pointwise** — the decomposition is an *identity*, so the licence gate passes exactly.
+
+| quantity | band-1 departure, four bases | verdict |
+|---|---|---|
+| BOTH (the surviving step) | $-0.204$ … $-0.236$ | **STEP** |
+| **AMPLITUDE only** | $-0.227$ … $-0.260$ | **STEP** |
+| PHASE only | $+0.570$ … $+0.796$ | step, *opposite sign* |
+| raw band std (`cc66.59`) | $-0.450$ … $-0.454$ | **STEP** |
+
+At band 1 the amplitude limit supplies $0.958$ of the statistic against phase's $0.284$. ⇒ ***The surviving step is a WEAKENING of the first acoustic cycle, not a DISPLACEMENT of it.***
+
+⚠ **But the phase channel is unresolved, not merely small — the pre-registered trade-off fires.** Its departure runs $+3.54$, $+0.66$, $-0.46$ across window half-widths $0.55/0.75/0.95$ and **changes sign**, where the amplitude term's sign does not move. The reason is size: the relative phase is $0.0068$ rad ($0.39°$) against a relative amplitude of $0.0554$. ⇒ **Amplitude on the sign, inseparable on the share** — and what would separate them is a phase read against the comb itself over a longer lever arm in $q$, not a local fit in a window one period wide.
+
+⚠⚠ **A CORRECTION TO `cc66.59` THAT THIS FORCED.** A band spans $0.70$ in $q$ against a comb period of $1.00$, so **a raw band `std` samples less than one full cycle and is phase-dependent by construction**. The step is $-0.45$ on that route and $-0.22$ on the phase-insensitive held-period one. **Both carried, neither chosen; the step survives on both**, and `cc66.59`'s size is the larger of the two.
+
+### ⓶ THE SHARES DO NOT SURVIVE THE CHANGE OF DENOMINATOR
+
+Each knob read as its own $\operatorname{std}(o_{\rm knob}-o_{\rm lcdm})$, against the arm's:
+
+| channel | on the ratio-of-contrasts | on the DIFFERENTIAL | sign vs the arm |
+|---|---|---|---|
+| window weighting | wrong sign | $+1.05$ … $+1.32$ | **OPPOSITE** |
+| term mix | $63\%$ | **no longer a step** | same |
+| JOINT (realised pair) | $42\%$ | **zero within its scatter**, sign flips | — |
+
+⇒ ***A channel that accounts for two fifths of a mostly-shared quantity accounts for nothing of the part that is this cosmology's. The row's candidate accounting was scored against the wrong object.***
+
+### ⓷ THE STEP DOES NOT COMPOSE THE WAY THE CONTRAST DOES
+
+`cc66.49` measured the **contrast** composing multiplicatively — product 7 of 7, sum 0 of 7. On the **step**:
+
+| rule | predicts | residual |
+|---|---|---|
+| product $(1+d_w)(1+d_m)-1$ | $+0.843$ | $6.1\times$ the joint's scatter |
+| sum $d_w + d_m$ | $+1.028$ | $7.4\times$ |
+| quadrature | $+1.195$ | $8.6\times$ |
+
+against a **measured** $-0.014$. ⇒ **No rule fits.** All three predict a large positive departure where the realised pair measures zero. ***The two knobs very nearly cancel on the step where they multiply on the contrast*** — a new property of the step.
+
+⌗ Residuals are in departure units against the joint's own scatter, **not** as a percentage: its departure is consistent with zero, and a percentage of a near-zero measurement would be meaningless — this line's own denominator guard turned on itself.
+
+### THE DISCIPLINE THIS REVISION ADDS
+
+⚠ ***A BAND NARROWER THAN THE PERIOD IT MEASURES MAKES ITS OWN STATISTIC PHASE-DEPENDENT.*** Bands are $0.70$ of a comb period, so a band `std` samples an incomplete cycle; the held-period amplitude does not.
+⚠ ***AN IDENTITY IS NOT A FIT, AND SAYING WHICH ONE YOU HAVE IS THE GATE.*** The decomposition reproduces the measured quantity to $0.00\%$ because it is algebra, and that is why the separation is exact rather than modelled.
+⚠ ***A PERCENTAGE OF A NEAR-ZERO MEASUREMENT IS NOT A SHARE.*** When the denominator is consistent with zero, quote the residual in the measured units against the scatter.
