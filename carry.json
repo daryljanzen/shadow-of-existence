@@ -22,5 +22,13 @@
     "since": "6d7a7aea07669a34391a928d7d8223d107ff21bf"
    }
   }
+ },
+ "main": {
+  "suite": {
+   "receipts/L_probability/R1_the_whole_footprint_is_three_geometry_words.py": {
+    "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/36574661794",
+    "since": "c4244c140115009009c424bb3bd0fb93a8c5c09a"
+   }
+  }
  }
 }
