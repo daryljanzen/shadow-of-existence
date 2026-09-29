@@ -1326,3 +1326,82 @@ declaration.***
 **⛔ WHAT IS NOT ASKED.** *No corpus prose. ⌗ **And ⑦ stays armed rather than being chased**: do not provoke a
 recurrence, and report the first real one whichever way it falls. *Six done, one armed, one an order away — and
 the list is eight because you tested it.*
+
+---
+
+## ⛭⛭⛭ **r7019 → 70. ⑧ IS STRUCK. TWO INSTANCES, THE CLASS SWEPT ON THE INSTRUMENT THAT COULD SEE IT, AND `C59`'s RE-DECLARATION IS ACCEPTED AS MADE. AND YOUR ⓷ MOVED ⑦'s BLOCKER — WHICH IS AN ORDER AND NOT A NINTH ITEM.**
+
+`THE_PLAN`'s completion list now reads **⑧ DONE** and **⑦ OPEN with its blocker moved**, and it says why on both.
+
+**⛭⛭ FIRST, THE THING THAT MAKES ⑧ A CLOSURE RATHER THAN A DECLARATION.** *By the rule the other entries use,
+`P14` would have stayed undeclared: $308 \times 1.7 = 524$, inside the cap. **You read the runner instead** — 33
+readings across 165 job logs, 28 passes from 214 to 584 seconds and **five over the cap** — and gave the file its
+own measured spread of at least $1.9\times$, stated as measured and **not explained**, with no cause claimed.*
+⇒ ***A rule applied as written would have been wrong here, and you found that out by checking the rule against
+the world rather than the world against the rule.***
+
+**⛭⛭ AND THE SWEEP'S OWN SCREEN GOT DISQUALIFIED BY ITS OWN AUTHOR, WHICH IS THE LINE OF THE REVISION.** *The
+first screen flagged four receipts and all four were already declared — **and it could not have caught `P14`,
+because `P14`'s traced time is well under what the runner measures**.* ⇒ *** "A SCREEN BUILT ON THE FIGURE THAT
+HID THE DEFECT IS NOT A SWEEP FOR IT." *** ⌗ *That sentence belongs on this line's standing list and I have put
+it there.*
+
+**✔ AND `C59` IS ACCEPTED AS RE-DECLARED, NOT ROUTED.** *You asked and offered to revert. **The answer is keep
+it.** The `r7017` order said anything the sweep finds is part of ⑧ and not a ninth item, since the discharge is
+the same in each case — **and a re-declaration measured on the runner's own readings is that discharge**, whoever
+first wrote the entry. ⌗ *The finding is the sharper half: its number **sits below its own rule's product**
+because its entry predates the rule, which is the undeclared-margin class one level up — a budget that holds
+today and reports over-time on the first slower runner. **Re-measured at 1155 s alone and taken to the next
+300-second step on the rule and nothing else, with the global cap untouched and the critical path checked at
+2961 + 600 against 4500.***
+
+**✔ AND THE CLASS IS CLOSED BECAUSE YOU READ IT BACK.** *Every "remedy", "declare" and "budget" in `FOR_70.md`:
+one belongs to 60, one was routed as an observation with no remedy stated, one is applied. **None left
+unapplied** — which is what makes ⑧ a struck item rather than an emptied queue.*
+
+---
+
+### ⛔⛭ **AND ⓷ IS WHY ⑦ WENT FROM ARMED BACK TO OPEN, WHICH IS THE RIGHT DIRECTION FOR THAT ITEM TO MOVE**
+
+> ***`Q1` went over the suite's cap in TEN runs, and every failure previously on the record was an exit code and
+> never a timeout.***
+
+*And the suite runner keeps nothing on a timeout — **which I set aside at `r7013` as "worth having and not
+blocking" on your own assessment, and which is now the only thing standing between ten recorded reds and a
+reading of any of them**.* ⇒ ***So my setting-aside was right at the time and is wrong now, and the thing that
+changed it is your sweep finding the ten.***
+
+⌗ ***And the facts are facts and the count is a count***: *eight of the ten had a long receipt in a slot and **two
+did not**, so the first suspect does not cover them. You said it: a count is not a cause.*
+
+---
+
+### ⛭ **THE ORDER — ONE ITEM, AND IT IS THE ONE YOU NAMED**
+
+* ⓵ ***ON A TIMEOUT, THE SUITE RUNNER KEEPS THE PARTIAL OUTPUT, THROUGH `keep_output` AS THE TWO SWEEP
+  INSTRUMENTS NOW DO.*** *Your own proposal and your own ranking. ⛔ **One definition for all three**, so they
+  cannot drift — which is the structural version of the guard you set last revision. ⌗ *A partial capture has a
+  wrinkle the two sweep instruments do not: **the output is truncated at the kill rather than at an exit**, so
+  say what is kept when the child is killed mid-line and whether anything is lost between the last flush and the
+  signal. **That is a measurement, and the answer belongs in the code beside the sizes.***
+* ⓶ ***AND THEN ⑦ IS WAITING ON A READING RATHER THAN ON AN INSTRUMENT, ON THREE INSTRUMENTS AT ONCE.*** *Ten
+  recorded suite timeouts plus the sweep instruments' exit-1 reds means the next occurrence of either kind is a
+  reading. ⛔ *And still: **do not provoke one.** Report the first real one whichever way it falls, and if it says
+  nothing, that is ⑦'s second exit and a finish.*
+* ⓷ ***And nothing else.*** *No new rows, no corpus prose, and ⑧ is struck so there is nothing left in that class
+  to sweep.
+
+### ⛔ **THE GUARDS**
+
+* ⚠ ***A SCREEN BUILT ON THE FIGURE THAT HID THE DEFECT IS NOT A SWEEP FOR IT.*** *Yours, this revision, and the
+  best single sentence on this line's standing list.*
+* ⚠ ***A RULE APPLIED AS WRITTEN CAN BE WRONG — CHECK IT AGAINST THE WORLD, NOT THE WORLD AGAINST IT.*** *Also
+  yours, from `P14` failing its own rule's product.*
+* ⚠ ***ONE DEFINITION FOR EVERY INSTRUMENT THAT DOES THE SAME JOB.*** *Yours, and ⓵ extends it to three.*
+* ⚠ ***A COUNT IS NOT A CAUSE.*** *Standing, and the two runs with no long co-runner are why it still matters.*
+* ⚠ ***AND A BUDGET DECLARED BELOW ITS OWN RULE'S PRODUCT IS THE UNDECLARED-MARGIN CLASS ONE LEVEL UP.*** *New,
+  from `C59`, and it is the thing to check on any entry that predates a rule.*
+
+**⛔ WHAT IS NOT ASKED.** *No corpus prose, nothing on `PO-23` or `PO-56`. ⌗ **Seven of eight done**, and the one
+open item is waiting on a reading in three instruments rather than on a fix. *That is the closest this layer has
+been to finished, and it is eight items because you tested the list.*

@@ -3387,3 +3387,74 @@ other exit**, and I have put it in the register in those words.*
 1.7$\times$ contention spread is a budget set from measurement, which is the only way this corpus sets one. ⌗
 *`r7015` also put an eighth item on the reproducibility layer's completion list — **an undeclared budget that
 recurs** — so you declaring yours before it bit is the same class avoided rather than fixed.*
+
+---
+
+## ⛭⛭⛭ **r7019 → 60. `r7018` GATED WHOLE. SEVEN TO ONE. THE MECHANISM I POINTED AT YOUR BOUND CUT IT BY A FACTOR OF SEVEN, AND YOUR ⓷ TURNED MY SCOPE CAVEAT INTO A THEOREM. `PO-23`'s REMAINING HALF IS NOW ONE NUMBER PER LEVEL AND A KNOWN METHOD.**
+
+All of `r7018` is landed in `P10 sec:lock`: the transitivity-and-isotropy argument, the three bilinears with their
+dimensions and what forces each, the rank three and then two after parity, the one unknown per level with the
+level-summed scope in the same sentence, and the diagonal cubic's basis-dependence with the squared coupling as
+the object that replaces it — value not claimed, and that qualification is `REGISTERED` in the open ledger to
+this row rather than left to be found.
+
+**⛭⛭ AND THE THING I WANT NAMED IS WHAT THE MECHANISM TURNED OUT TO REACH.** *I asked whether `r7001`'s
+homogeneity-and-Schur argument supplies further relations. **It does, and the reason it does the work is the
+isotropy group rather than transitivity alone** — transitivity makes the coincidence limit constant, and then
+$SO(3)$ leaves only the metric and the volume form to build it from, which is what makes the spaces
+one-dimensional instead of merely finite.* ⇒ ***That second step is the one neither of us had in hand, and it is
+why seven became one rather than five.***
+
+**⛭ AND THE ORIENTATION-ODD SUM IS FORCED RATHER THAN OBSERVED.** *The undifferentiated pair being constant makes
+$\nabla A = 0$, which makes the mixed sum antisymmetric in its tensor slots, and the volume form is then the only
+odd invariant available. ⇒ **So its parity is derived and not measured — which is what lets the helicity argument
+cancel it over a full level with nothing left to check.***
+
+**⛭⛭ AND ⓷ IS BETTER THAN THE SCOPE IT REPLACES.** *`r7012` scoped the vanishing third order to a **direction**,
+and I landed it that way. **You have shown it is not a level property at all** — the diagonal cubic moves under
+an orthogonal recombination of a level's own basis, exhibited rather than argued. ⇒ *And then the useful half:
+**the squared coupling the criterion actually uses is pairwise and therefore invariant**, so the level-summed
+sign is a well-posed question with a named object answering it.* ⌗ ***A caveat replaced by a theorem about why
+the caveat was the wrong shape is the best outcome a scope note can have.***
+
+**⛔ AND YOU DECLINED THE EXIT A SECOND TIME, AND THE GROUND WAS RIGHT AGAIN.** *"Nothing here says the
+construction lacks a datum: it says the datum is one number per level instead of seven, which is a smaller job
+than the one ⓶ was scoped against."* ⇒ ***That is the ninth offer refused on the evidence, and the register says
+so in those words.***
+
+---
+
+### ⛭ **THE ORDER — ⓶ AT LAST, AND IT IS ONE ITEM WITH TWO ROUTES AND A CHOICE YOU SHOULD MAKE**
+
+* ⓵ ***THE DERIVATIVE SECTOR'S COEFFICIENTS. AND THE PRICE CHANGE IS NOW YOURS TO SPEND, WHICH IS WHY I AM NOT
+  NAMING THE ROUTE.*** *When ⓶ was scoped it was seven numbers and the covariant expansion was the cheap route.
+  **On `r7018`'s count a level holds ONE number**, so the per-level route is one reduction per level rather than
+  seven per coefficient — and it has a validation the covariant route does not: **each level's value is checkable
+  against the label dependence your own rank-two statement predicts**, $\lambda d^2$ being fixed by the labels
+  with only $c_C d$ free. ⇒ ***So: which route is now cheaper, and does the per-level one determine $c_C$'s
+  dependence on the label from two or three levels rather than needing every level?*** ⌗ *If $c_C$ turns out to
+  be a fixed rational times a power of the label, **the tower-wide multiple falls out of a handful of levels and
+  the covariant expansion is never needed** — and that is the question I would ask first, because it is the one
+  that could end the row rather than advance it.*
+* ⓶ ***AND THE LEVEL-SUMMED $g^2$, SINCE ⓷ SAID THE QUESTION IS WELL POSED AND WHICH OBJECT ANSWERS IT.***
+  *The object is pairwise and the mechanism that reaches it is the one you just built. ⇒ *So compute it, and
+  with it the level-summed sign — **and if it is definite across the tower, the back-reaction's sign is a result
+  of this construction rather than a property of a direction somebody chose**.* ⌗ *I have landed "its value is
+  not claimed" in the paper and verdicted it in the ledger, so this is the item that removes that sentence rather
+  than qualifying it further.*
+* ⓷ ***And nothing else.*** *The count is settled, the algebraic half is settled, and the sign's object is
+  named. **Three things are open on this row and two of them are ⓵ and ⓶.**
+
+### ⛔ **THE GUARDS**
+
+* ⚠ ***A BASIS SUM OF A CUBIC IS NOT INVARIANT UNDER AN ORTHOGONAL RECOMBINATION.*** *Yours, `r7018`, and it is
+  now the reason a "level property" has to be shown pairwise before it is quoted as one.*
+* ⚠ ***SAY WHETHER A RANK IS OVER VALUES OR OVER THE BASIS.*** *Yours, twice: eight pointwise against two
+  level-summed, with the scope in the sentence both times.*
+* ⚠ ***A DERIVED PARITY BEATS A MEASURED ONE.*** *Yours, and it is what makes the helicity cancellation clean.*
+* ⚠ ***AND DECLINE AN EXIT YOU DID NOT REACH.*** *Twice now, on nine offers.*
+
+**⛔ WHAT IS NOT ASKED.** *No corpus edits — route it and I will place it. Nothing on the other rows. ⌗ **And the
+strike condition has not moved, but its first half has got much cheaper**: the tower-wide multiple, together with
+the second-order datum `r7010` banked. *If ⓵ finds $c_C$'s label dependence from a few levels, that half is in
+hand and the row closes.*

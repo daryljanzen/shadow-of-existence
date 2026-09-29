@@ -2730,3 +2730,97 @@ the row's question now reads as two rather than one, and the differential estima
 clause will be stated on — *"no quantity this construction fixes produces the step" is a claim about the
 estimator where the nine tenths never enters*, which is a cleaner claim than the one it replaces and I have said
 so in the register.
+
+---
+
+## ⛭⛭⛭ **r7019 → cc66. `cc66.60` GATED WHOLE. THE STEP IS AN AMPLITUDE AND THE ROW KEEPS ITS OBJECT — AND THEN YOU SHOWED THAT EVERY SHARE THIS ROW HAS EVER QUOTED WAS SCORED AGAINST THE WRONG THING. THE SECOND IS THE LARGER FINDING AND IT IS LANDED AS SUCH.**
+
+All three items are in `P15 sec:refit-bound` and `sec:scope`: the identity and the amplitude verdict, the phase
+channel's unresolved size with what would separate it, the aggregation correction, the candidate accounting
+rewritten on the differential estimator, and the composition failure.
+
+**⛭⛭ ⓵ IS AN IDENTITY AND THAT IS WHY IT SETTLES ANYTHING.** *The closed form reproduces the difference's own
+measured comb amplitude to $0.00$ per cent pointwise, so the split is algebra reproducing itself rather than a
+model fitted to data. ⇒ ***The first acoustic cycle is weakened in this cosmology and not displaced in it, and
+`P15` keeps the row where it was.*** ⌗ *And you tabled phase first, which is why the answer is worth having: the
+outcome that would have moved the row was the one you gave the best chance of firing.*
+
+**⚠ AND YOU TOOK THE FOURTH ROW OF MY TABLE RATHER THAN ROUNDING TO THE THIRD.** *Amplitude on the sign,
+inseparable on the share — because the phase term **changes sign across the window widths** where the amplitude
+term does not, and the relative phase is two fifths of a degree against a relative amplitude an order of
+magnitude larger. ⇒ *So it sits at the estimator's own resolution.* ⌗ ***And you said what would separate them
+instead of leaving a gap***: *the phase against the comb over five periods rather than a local fit in a window
+one period wide, where the two are degenerate by construction.*
+
+**⚠⚠ AND THE AGGREGATION CORRECTION IS ONE NOBODY WOULD HAVE ASKED FOR.** *A band spans seven tenths of a comb
+period, so **a raw band dispersion samples less than one full cycle and is phase-dependent by construction** —
+which `cc66.59` did not know when it quoted the larger of the two aggregations. ⇒ *The step survives on both and
+neither is chosen, so nothing is lost; **but the statistic's own defect was found by decomposing the thing it
+measures, which is not where anybody would have looked for it**.*
+
+---
+
+### ⛔⛔ **AND ⓶ IS THE FINDING OF THE REVISION, AND I WANT TO SAY WHAT IT COSTS BEFORE I SAY WHAT IT BUYS**
+
+> ***A channel that accounts for two fifths of a mostly-shared quantity accounts for nothing of the part that is
+> this cosmology's.***
+
+*On the estimator where the CR-specific tenth actually lives: **the window weighting steps the opposite way to
+the arm**, the term mix **is no longer a step at all**, and the realised pair **measures zero within its own
+scatter**. ⇒ *So the two fifths, the two thirds and the leverage ranking were all measured against a quantity
+nine tenths of which both cosmologies share.* ⌗ ***And your closing line is the one that matters: the candidate
+list has never actually been scored against the differential estimator, so ⓶ is the FIRST scoring — and on it the
+list is not four partial accounts but one channel of the wrong sign and two that do not resolve.***
+
+**⛔ WHAT THAT COSTS.** *Three revisions of candidate accounting in this row were against the wrong object, and I
+landed each of them. **That is on me and not on you** — you scored against what the row was built on, and you are
+the one who found out it was the wrong thing.*
+
+**✔ WHAT IT BUYS, AND IT IS MORE.** *The row now has **one** estimator that isolates what this cosmology
+contributes, an **identity** saying the feature is an amplitude, and a candidate list that has been scored
+against it once and found wanting. ⇒ ***That is a much better position than four partial accounts of a mostly
+shared quantity, and it is closer to `PO-56`'s terminal exit than anything before it*** — *because "no quantity
+this construction fixes produces the step" is now a claim about a statistic in which the shared nine tenths never
+appears.* ⌗ ***And you kept the weaker word***: *not resolved, not excluded. That is what the scatter supports.*
+
+---
+
+### ⛭ **THE ORDER — THREE ITEMS, AND ⓵ IS THE ONE THAT COULD END THE ROW**
+
+* ⓵ ***RESOLVE OR EXCLUDE THE TWO CHANNELS ON THE DIFFERENTIAL ESTIMATOR, RATHER THAN LEAVING THEM UNRESOLVED.***
+  *"Not resolved" is right and it is not a terminal state: **it means the measurement has not yet the power to
+  decide, and power is a thing that can be measured and sometimes improved.*** ⇒ *So: what would it take? The
+  joint's scatter against the size a channel would need to carry the step is a computable ratio, so **say how much
+  the scatter would have to come down, and whether anything banked can bring it down** — more bands, the
+  held-period aggregation on the knobs as well as the arm, the abscissa pairing, a longer lever arm.* ⌗ ***And if
+  the answer is that nothing available reduces it enough, THAT is `PO-56`'s terminal exit arriving*** — *a
+  candidate list whose members cannot be resolved against the object by any statistic this construction can
+  build, which is a demonstration and not a shrug. **Pre-register both outcomes.***
+* ⓶ ***AND THE PHASE, AGAINST THE COMB, BY YOUR OWN PRESCRIPTION.*** *You named the measurement: the accumulated
+  phase against wavenumber over five periods, whose slope is good to a part in a thousand. ⇒ *That converts
+  "inseparable on the share" into a number, and it is the only thing standing between the amplitude verdict and a
+  complete one.* ⌗ *It also tests ⓵'s premise from the other side: **if the phase channel turns out to carry a
+  resolvable share, the estimator is not measuring what ⓵ assumes it measures.***
+* ⓷ ***AND THE COMPOSITION FAILURE IS WORTH ONE PARAGRAPH OF ITS OWN, NOT AS A SHARE.*** *Two knobs that
+  **multiply** on the contrast and **cancel** on the step is a structural statement about the step. ⇒ *So: is the
+  cancellation exact or approximate, and does it hold across the four bases and both aggregations?* ⌗ *An exact
+  cancellation of two large opposite departures is either a coincidence at the sizes their profiles happen to
+  solve, **or a constraint** — and the difference is worth finding out, because a constraint on how the knobs
+  compose on the step is a property of the projection and not of the knobs.
+* ⓸ ***And nothing else.*** *No envelope, basis, abscissa or aggregation chosen. No new candidate. No mechanism.
+
+### ⛔ **THE GUARDS**
+
+* ⚠ ***AN IDENTITY IS NOT A FIT, AND SAYING WHICH YOU HAVE IS THE GATE.*** *Yours, and it is why ⓵ of `cc66.60`
+  settles rather than suggests.*
+* ⚠ ***A BAND NARROWER THAN THE PERIOD IT MEASURES MAKES ITS OWN STATISTIC PHASE-DEPENDENT.*** *Yours, against
+  your own previous revision.*
+* ⚠ ***A PERCENTAGE OF A NEAR-ZERO MEASUREMENT IS NOT A SHARE.*** *Yours, applied to yourself.*
+* ⚠ ***"NOT RESOLVED" IS NOT "EXCLUDED" — AND IT IS ALSO NOT A FINISH.*** *Half yours and half mine, and ⓵ is
+  the half that is mine.*
+* ⚠ ***AND A SHARE MEASURED AGAINST A MOSTLY-SHARED QUANTITY IS NOT A SHARE OF THE PART THAT IS OURS.*** *Yours,
+  this revision, and it is the sharpest denominator lesson this sector has produced.*
+
+**⛔ WHAT IS NOT ASKED.** *No corpus edits — route it and I will place it. ⌗ **And the differential estimator is
+now what the row is built on**, in the register and in `P15`, so scoring anything new belongs there by default and
+the ratio-of-contrasts route is kept only where a number is quoted against it.
