@@ -5,7 +5,7 @@ kind: FORWARD
 
 *This file carries coordination and reporting. **The claims are in the receipts it names**, and anything
 below that is not receipted says so in terms. The newest reply is first. It answers `FOR_70.md`'s
-`r7021` order (⓶'s staleness question), read at `origin/main` `2e92e85f`. The replies to `r7019` (`r7019+70.1`), `r7017` (`r7017+70.1`, ⑧), `r7013` (`r7013+70.1`), `r7011` (`PO-69`), `r7009` (`PO-68`), `r7007` (`PO-67`), `r7003` (`PO-65` ⓶, `PO-66` ⓶), `r6991` (`PO-64`),
+`r7023` standing items (⑦'s first reading), read at `origin/main` `c4244c14`. The replies to `r7021` (`r7021+70.1`), `r7019` (`r7019+70.1`), `r7017` (`r7017+70.1`, ⑧), `r7013` (`r7013+70.1`), `r7011` (`PO-69`), `r7009` (`PO-68`), `r7007` (`PO-67`), `r7003` (`PO-65` ⓶, `PO-66` ⓶), `r6991` (`PO-64`),
 `r6977` (`r6977+70.1`), `r6975` (`r6975+70.1`), `r6959` (`r6961+70.x`), `r6939` (`r6931+70.3`) and `r6929`
 (`r6931+70.1`) follow it; all were gated and landed.*
 
@@ -13,6 +13,82 @@ below that is not receipted says so in terms. The newest reply is first. It answ
 declared in `check_revision_collisions._PARITY_BY_NODE` beside `cc66`, and that is the only gate line
 this revision touches. **The gate is yours; revert the line if you would rather declare the node
 yourself.***
+
+## ⚑ `r7023+70.1` — ⑦'s FIRST REAL READING HAS ARRIVED, AND IT NAMES THE PLACE: `Q1`'s EXIT 1 IS A TIMEOUT ONE LEVEL DOWN, RAISED BY `Q1`'s OWN 600-SECOND LIMIT ON THE TIGHTENED RUN OF `P16_the_scalar_monodromy`
+
+### ⓵ THE OCCURRENCE, AS IT FELL — NOT PROVOKED
+
+**Where:** the tolerance job of push run `36568172549`, on `6d7a7aea`. That is `r7019+70.1`'s own commit, so
+the capture was live. `Q1` was in scope because that push edited the sweep instruments. The carry ledger
+recorded it at 13:22:58 (`+1 carried`), and nothing was re-run.
+
+**What it said, kept in the job log under NOT A SWEEP.** Build A and build C passed. **Build B
+(`--threads 4`) exited 1**, and its stderr kept this traceback:
+
+```
+Q1_a_stated_tolerance…py, line 170, in <module>
+    r2 = run(p_, tighten=True)
+Q1_a_stated_tolerance…py, line 137, in run
+    r = subprocess.run([sys.executable, path], capture_output=True, text=True,
+…
+subprocess.TimeoutExpired: Command '[…python3', '…/P16_cosmogenesis_paper/P16_the_scalar_monodromy_is_four_pi_over_rho.py']' timed out after 600 seconds
+```
+
+The stdout tail agrees with it line for line:
+- VERDICT 1 passed.
+- **VERDICT 2 passed all four samples**, `P16_the_scalar_monodromy` included, at its own tolerances.
+- VERDICT 3 printed the first two refinements (20/20 and 12/12 numbers unchanged) and **stops before the
+  third, which is `P16_the_scalar_monodromy` at 100× tighter tolerance.**
+
+### ⓶ WHAT THIS READING ESTABLISHES, AND WHAT IT DOES NOT
+
+**Established, for this occurrence:**
+- **No check of `Q1`'s failed, and it did not fail on arithmetic.** `Q1`'s `run()` gives each sample child
+  `timeout=600` and does not catch `TimeoutExpired`. So when the tightened child ran past 600 s, `Q1` died with
+  a traceback and exit 1.
+- ⇒ ***The record's "exit 1, never a timeout" was true of the exit code and false of the event.*** *It was a
+  timeout one level down, inside the receipt, where neither instrument's own timeout could see it.* ⌗ *The
+  CPU-dispatch refutation and the VERDICT 4 rounding check (`r7013`) stand: the failure is not in VERDICT 4 at
+  all.*
+- **The child is `P16_the_scalar_monodromy_is_four_pi_over_rho.py`** (unchanged since `9474825e`), running
+  under `Q1`'s tightening shim, on a build with 4 BLAS threads.
+- **Its usual cost is small.** All of `Q1` runs in 29–68 s on the runner and 35 s here, and those totals
+  include this child's tightened run. *So on this build, one run of it took more than ten times `Q1`'s whole
+  usual budget.*
+
+**Not established, and not claimed:**
+- **Why that run was slow.** This is one reading, and a count is not a cause. *A step-size collapse at the
+  tightened tolerance on 4-thread arithmetic would fit; so would contention. Nothing here separates them.*
+- **Whether the ten suite timeouts are the same event.** They fit it: an inner child allowed 600 s puts `Q1`
+  over its own 600 s cap. **But none of them has been read yet.** The suite's capture now keeps a timeout's
+  partial output, so the next one will say.
+- ⌗ *Consistent with the ledger's `CONTRADICTED` pairs (red and green on trees that agree on everything `Q1`
+  reads), which a run-time event produces and a tree defect cannot. That is consistency, not proof.*
+
+**What would come next, and it is yours to order, not mine to start.** ⛔ *Not done:* no re-run, no timing of
+the tightened child, and no change to `Q1`, to its 600 s inner limit, or to the shim. Three candidates, in
+the order I would rank them:
+1. **Characterise the tightened `P16_the_scalar_monodromy` run, alone, at 1 and 4 threads.** This is a
+   measurement. It is not a repair and not a recurrence of `Q1`.
+2. **`Q1` should report a sample child's timeout as a named verdict** rather than dying in a traceback. *A
+   receipt that cannot say which of its own checks it could not run is the NOT-A-SWEEP class one level in.*
+3. Only after 1: **whether the tightened solve is a legitimate check at all** on that receipt.
+   *That belongs to the receipt's owner.*
+
+⇒ **So ⑦ has left "waiting on a reading". Its first exit has fired: the reading names a place, and that place
+is a sample child's tightened run and not any of `Q1`'s own checks.** Whether that makes ⑦ an explained red
+or a new item is your call.
+
+### ⓷ ⓶ OF THE ORDER — IS ANYTHING ELSE OWED ON THIS LAYER?
+
+**Against the list's own bar, "the layer would not be finished without it": nothing, beyond what this reading
+opens.** The instruments did their job on the first real event. It was kept, printed where it survives,
+carried by the ledger, and read here. *The only open thing is what the reading found, and that is ⑦'s.*
+
+**⛔ Not done, as ordered:** nothing provoked, no receipt touched, no new row, no corpus prose, nothing on
+`PO-23` or `PO-56`.
+
+---
 
 ## ⚑ `r7021+70.1` — THE GATE'S STALENESS IS THE BENIGN KIND. ONE READER OF THE SAME BANKED FILE WAS NOT, AND IT IS FIXED, ON ⓷
 
