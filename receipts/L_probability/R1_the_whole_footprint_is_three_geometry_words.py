@@ -201,10 +201,21 @@ print(f"    likelihood: {lik}  (total x{sum(lik.values())})")
 #   thirty-fourth of a comb period".  ** Every one names the Planck likelihood the spectrum is
 #   scored on -- the same statistical sense the control exists to find -- so the pin follows the
 #   measurement again, attributed to the revision that moved it. **
-check("the control word is found, and P15 carries thirty-one "
+# ** r7025+cc66.64: 31 -> 30 in P15, class (c) STALE, and it is the SAME PASSAGE moving a second
+#   time rather than a new site.  r7025's paper landing (`8a725ca0`) rewrote the acoustic
+#   section's verdict paragraph: -3 ("available in the likelihood's own metric"; "the likelihood
+#   separates them"; "the likelihood and the refit built on its bins"), +2 ("the banded family
+#   cannot separate the channels there and the likelihood separates them"; "in the likelihood's
+#   units"), net -1.  ** Every one removed and every one added is the Planck likelihood the
+#   spectra are scored on, so the sense is unchanged across the rewrite and only the wording
+#   moved.  Two revisions running, which is the acoustic section being written, not the control
+#   drifting -- and the pin follows the measurement each time rather than being widened to a
+#   range, because a range would stop the check firing. **
+check("the control word is found, and P15 carries thirty "
       "(26 before r4111's restatement, 23 before r6427's absorption bound, 24 before the "
-      "r6772..r6891 refit and locator, 26 before r7023's acoustic landing)",
-      lik.get('P15'), 31)
+      "r6772..r6891 refit and locator, 26 before r7023's acoustic landing, 31 before r7025's "
+      "rewrite of the same paragraph)",
+      lik.get('P15'), 30)
 check("and it is the dominant carrier", max(lik, key=lik.get), 'P15')
 print("    *** The screen finds a statistical word when there is one.  The absences above")
 print("        are absences, not blindness. ***")

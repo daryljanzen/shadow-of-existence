@@ -4997,3 +4997,61 @@ Receipt `P15_the_band_one_departure_is_not_in_the_likelihoods_excess_and_all_thr
 **What I did:** *re-pinned to the measurement in that file's own idiom, attributed to the revision that moved it — the same maintenance `r4532`, `r6511` and `r6931+70.1` each performed, and `r6511`'s own message for it was "every one of the last four was a count my own edits moved". The other four verdicts are untouched and still pass. Receipt green locally, appendices regenerate with no diff, all 108 fast gates pass.*
 
 ⛔ ***This is a cross-lane edit and I am flagging it rather than burying it.*** *If you would rather the pin be moved by the seat that owns `L_probability`, revert that one commit and route it — but `main` is red until someone does, and the count is genuine either way.*
+
+---
+
+# cc66.64 — `r7025` filled. **The cost is combed, the term mix pays some of it, and the cancellation is gone.**
+
+**Receipt `P15_the_term_mix_is_the_first_channel_to_produce_cost_where_the_arm_is_rejected_and_the_excess_there_is_combed_at_the_acoustic_period.py`, 24 gates, `GATES: ALL PASS`.** *Pre-registration its own commit ahead of the working script. No corpus edits.*
+
+## ⛭ I CORRECTED MY OWN INSTRUMENT BEFORE I USED IT AGAIN
+
+*`cc66.63`'s per-band numbers came from inverting each band's covariance block alone, and they summed to 287 against 322. I quoted that gap rather than eliding it — and it turns out there is an exact alternative.* Since $r_a = r_c - d$:
+
+$$\chi^{2}(a)-\chi^{2}(c) = d^{T}Fd - 2\,d^{T}Fr_c$$
+
+*whose per-bin terms sum to the excess **identically**, reproduced to $1.7\times10^{-13}$.*
+
+⌗ ***And the split is your distinction written as algebra.*** *The first term is separating power — it never asks where the data is. The second is the only part that does. **That is why a quantity can be 25σ in one and nothing in the other**, which is `cc66.63`'s whole finding.*
+
+⇒ *On the exact decomposition bands 4–7 carry **87%** against the old 86%. ***The location holds — this corrects the instrument, not the result.****
+
+## ⛭⛭⛭ ⓶ AND THIS IS THE ONE WORTH HAVING
+
+**The excess at 4–7 is featureless to every smooth shape and modulated at the acoustic period, at once.** *A constant explains 0.0% of the scatter across 82 bins, a trend 1.6%, a quadratic 2.8% — `cc66.58` survives intact at the finer scale.* **But the comb projection gives 7.30 against a null of 2.53 from 110 wrong periods, and NOT ONE returns more. The scan's own maximum sits at period 1.01.**
+
+⇒ *** SO `cc66.58`'s "FEATURELESS" WAS A PROPERTY OF THE BANDING. *** *Seven numbers cannot see a modulation at the period they are 0.70 wide against. **It is the band-width limit again, at the other end of the range — exactly as you said the question would be.***
+
+⛔ ***And I did not report it until I had killed the obvious artefact.*** *$d$ is itself a comb, so a comb in the excess could be $d$ looking at itself. Split the two terms: **6.24 from $-2d^{T}Fr_c$ against 1.08 from $d^{T}Fd$**. ⇒ Five sixths of the modulation comes from the term that knows where the data sits. **It is a fact about the data.**
+
+⚠ *And one prediction in my own pre-registration failed: I said the quadratic term would enter at period 1/2. It carries 0.57 there and 1.08 at 1.00 — $d$ is not a pure sinusoid and its envelope varies. **It is in the receipt as it measured, with a gate on it.***
+
+## ⛭⛭⛭ ⓵ AND HERE THE SHARES ARE LARGE, WHICH IS EXACTLY WHY I DID NOT LEAD WITH THEM
+
+*Window **0.14**, term mix **1.36**, JOINT **1.53** at bands 4–7, stable across $n=1..4$.*
+
+⛔ ***A share above one is not a result on its own.*** *Any spectrum that is not the control costs something, so 1.36 may mean only "also rejected" and not "rejected the same way". **So I compared the per-bin PATTERN.***
+
+* ⚠ **The window is ANTI-correlated with the arm, $r = -0.70$.** *Its 0.14 is not a small share of the arm's cost — **it is a different cost**, and last revision it was my strongest match at 1.31.*
+* ⛭ **The term mix matches at $r = +0.70$, regression 0.74, 45% left over.** ⇒ ***The first channel this row has produced that costs something where the likelihood actually rejects the arm*** — 1.41, 1.07, 0.76 across bands 4, 5, 7.
+* ⛔ **The JOINT matches WORSE than the term mix alone, $r = +0.46$.** *Adding the window raises the total and degrades the pattern — the sharpest statement I can make that **a total is not a match**.*
+
+⇒ *** THE AMENDED CLAUSE IS NEITHER MET NOR DISCHARGED, AND I AM NOT ROUNDING IT EITHER WAY. *** *136% of the cost at $r=+0.70$ is not "no quantity this construction fixes"; 45% of that cost misplaced is not "the carrier identified". **Both roundings were available and both would have been a claim I cannot support.***
+
+## ⚠⚠ AND THE ONE THAT COSTS ME: THE CANCELLATION IS GONE
+
+*You wrote that it was **beginning to look like a property**. I measured it here and it is not.*
+
+**Singles sum to 1.4965; the realised pair gives 1.5305 — 102% of the sum. THE KNOBS ADD.**
+
+⇒ *** CANCELLATION IS A PROPERTY OF THE METRIC, NOT OF THE PAIR. *** ⌗ *Third instrument-dependence this row has found, and the only one that runs against something I was building. **Two instruments agreeing twice was not enough and I should not have let it start to sound like one.***
+
+## ⛔ ⓷, AND THE GUARDS
+
+*No new candidate. No mechanism. `cc66.61`'s floor and the band-1 results not re-derived. No basis or aggregation chosen. No corpus edits.*
+
+* ⚠ ***A TOTAL IS NOT A MATCH.*** *New, and it is what ⓵ turned on — three shares, only one of which survived asking whether the cost was in the right places.*
+* ⚠ ***AND WHERE A FEATURE IS MOST VISIBLE IS NOT WHERE IT COSTS MOST*** — *with the converse now attached: band 6 is where the arm is **cheapest**, so every channel's share there has a small denominator and I have not quoted it alone.*
+* ⚠ ***A PRE-REGISTERED PREDICTION THAT FAILS IS REPORTED, NOT DROPPED.*** *Mine, on the period-1/2 expectation.*
+
+⌗ **What I think is yours to place:** *⓶ says the rejection is **not a level** — it is modulated at the acoustic period, in the bands carrying six sevenths of the cost, from the term that knows where the data sits.* ⇒ ***That is the first time anything in this row has found acoustic structure in what the data actually rejects on, rather than in what it could distinguish.*** *And ⓵ says the term mix is the only channel whose cost is in the right places at all. **Those two point the same way and I have deliberately not written the sentence that joins them** — it would be a mechanism, and ⓷ forbids it.*

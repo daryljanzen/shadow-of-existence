@@ -6046,3 +6046,83 @@ These are shares of a **separating-power** departure. A channel matching the arm
 ⚠ ***A LABEL IS A CLAIM.*** `cc66.62`'s number was right and its heading named a different quantity; that is a correction, not a rewording.
 ⚠ ***WHEN ONE ITEM DECIDES WHAT ANOTHER MEANS, RUN IT FIRST AND SAY SO IN THE FILE'S STRUCTURE.***
 ⚠ ***A DEPARTURE THAT CHANGES SIGN AS NUISANCE FREEDOM IS ADDED IS NOT A FEATURE OF THE RESIDUAL*** — and the control is the rate against the other bands, since more freedom always shrinks a residual.
+
+## cc66.64 — the cost at bands 4–7: what accounts for it, and has it any structure
+
+**Order `r7025`, two items.** *Pre-registration its own commit ahead of the working script.*
+
+### The estimator, corrected first
+
+`cc66.63` read per-band excess by inverting each band's covariance block alone; its contributions
+summed to **287 against a total of 322**. Since $r_a = r_c - d$,
+
+$$\chi^{2}(a)-\chi^{2}(c) \;=\; d^{T}Fd \;-\; 2\,d^{T}Fr_c$$
+
+whose per-bin terms sum to the excess **identically** — reproduced to $1.7\times10^{-13}$.
+
+⌗ *The split is not bookkeeping. The first term is the separating power; the second is the only
+part that knows where the data sits. **`cc66.63`'s finding is that algebra.***
+
+| | bands 4–7 share of the banded excess |
+|---|---|
+| exact decomposition | **87%** |
+| `cc66.63` block-inverted | 86% |
+
+⇒ ***The location holds. This corrects the instrument, not the result.***
+
+### ⓶ — featureless and combed at once
+
+82 bins across bands 4–7, median spacing 0.0298 in $q$ against a comb period of 1.00.
+
+| tested against | scatter explained |
+|---|---|
+| a constant | **+0.0%** |
+| a trend in $\ln q$ | +1.6% |
+| a quadratic in $\ln q$ | +2.8% |
+
+*`cc66.58`'s verdict survives every smooth shape at the finer scale.* **But the acoustic-comb
+projection gives 7.30 against a null of 2.53 built from 110 wrong periods — not one of which
+returns more — and the scan's own maximum sits at period 1.01.**
+
+⇒ ***So `cc66.58`'s "featureless" was a property of the BANDING.*** *Seven numbers cannot see a
+modulation at the period they are 0.70 wide against; 82 bins at a thirty-fourth of it can.*
+
+⛔ **And the control that makes it a result.** *$d$ is itself a comb, so a comb in the excess could
+be an artefact of the model difference.* Split: **6.24 in $-2d^{T}Fr_c$ against 1.08 in $d^{T}Fd$**
+— five sixths from the term that knows where the data sits. ⇒ ***A fact about the data.***
+
+⚠ *And the prediction that the quadratic term would enter at period 1/2 did **not** hold cleanly —
+0.57 there against 1.08 at 1.00. $d$ is not a pure sinusoid and its envelope varies. Reported as it
+measured.*
+
+### ⓵ — the shares, and the control they were uninterpretable without
+
+| channel | share 4–7 | across $n=1..4$ | corr with arm | regression | left over |
+|---|---|---|---|---|---|
+| window | 0.14 | 0.13–0.18 | **−0.70** | −0.12 | — |
+| term mix | **1.36** | 1.28–1.42 | **+0.70** | 0.74 | **45%** |
+| JOINT | 1.53 | 1.47–1.63 | +0.46 | 0.62 | 59% |
+
+⛔ *Any spectrum that is not the control costs something, so a share above one may mean only "also
+rejected" and not "rejected the same way." **The per-bin pattern is what decides.***
+
+* **The window is ANTI-correlated with the arm.** *Its 0.14 is not a small share of the arm's cost
+  — it is a different cost.*
+* **The term mix is the first channel this row has produced that costs something where the
+  likelihood actually rejects the arm** — 1.41, 1.07, 0.76 across bands 4, 5, 7.
+* **The JOINT matches worse than the term mix alone.** *Adding the window raises the total and
+  degrades the pattern — the sharpest statement available that a total is not a match.*
+
+⇒ ***THE AMENDED CLAUSE IS NEITHER MET NOR DISCHARGED, AND IS NOT ROUNDED EITHER WAY.*** *A channel
+producing 136% of the cost at $r=+0.70$ is not "no quantity"; a channel misplacing 45% of its cost
+is not "the carrier identified."*
+
+### ⚠⚠ And the cancellation is absent, which goes against this row's story
+
+*Twice elsewhere the pair delivered a fraction of its singles, and it was called beginning to look
+like a property.* **On the excess: singles sum to 1.4965, the realised pair gives 1.5305 — 102%.**
+
+⇒ ***THE KNOBS ADD HERE. CANCELLATION IS A PROPERTY OF THE METRIC, NOT OF THE PAIR.***
+
+⚠ *Band 6 is where the arm is cheapest (14.6 against 80, 80, 123), so every channel's share there
+has a small denominator and it is never quoted alone.*
