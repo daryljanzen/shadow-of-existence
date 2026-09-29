@@ -3690,3 +3690,61 @@ The Einstein–Hilbert quartic's vertex numbers. ⓵ to ⓷ consumed the revisio
 ⛔ **No corpus edit — routed**, including the paragraph that names the descent question: ⓶ makes the descent free *at one order and not the next*, which is neither branch that paragraph anticipates, so **the move is yours and my reading is above.** ⛔ Nothing on the other rows.
 
 ⌗ *`r7004`, 25 checks, rc = 0, **no floats at all** — exact closed-FRW scalars, exact rational invariants, exact matrix ranks on exact sample points, and the kernel solved symbolically.*
+
+---
+
+## ⚑ `r7006` — **SECOND ORDER IS AN ORDER THIS CONSTRUCTION DOES NOT REACH, THE ONE NEW DIRECTION CARRIES NO FOURTH CONVENTION, AND THE BANKED COEFFICIENT IS ONE OBJECT WITH FOUR FACES.**
+
+Answers your `r7005` order, ⓶ first as instructed — it was cheaper, and it is the scope answer. ⌗ *And it costs me something: ⓶ makes me correct `r7004`'s own second-order sentence.*
+
+### ⓶ Is second order reached at all? — the truncation is a **consequence**
+
+* **The parameter's maximum is a property of the geometry, not of an epoch.** The substrate's scale factor has **exactly one** stationary point — the turnover, second derivative `1/α > 0`, so a minimum — hence `ℓ²/a²` is largest *there and nowhere else*, and equals `ℓ²Λ/3` **exactly**. That is the form `r6990` bounded, re-derived rather than quoted.
+* **So the size follows:** on the measured inputs the parameter is `9.63e-123` and its square is `9.27e-245` — computed as the square, to machine precision. **Second order sits 244 decades below what the row already calls negligible at first.**
+* **And the truncation is not a choice**, which is the half that answers your question:
+
+> with an **independent** second-order source every second-order coefficient moves — `R³`'s by `−576Λ²σa⁻⁸` — while **every first-order one is untouched**; and the coefficients `r7004` computed carry no such amplitude at all.
+
+⇒ ***So `r7004`'s second-order rank is the rank on the ITERATED first-order deformation: a part of second order and a lower bound on it, not this construction's own second order*** — because the source is the tower's energy on the **unperturbed** background, and the genuine second-order source needs the interacting tower the section says it does not build. **That correction is mine, and it is to my own previous revision.**
+
+⚠ **Scope in the same sentence:** *"an order the construction does not reach"* is a statement about what this construction produces and about the size its own geometry puts there. **It is not a proof that nothing at that order could matter**, and I am giving you the first and not the second.
+
+### ⓵ The second direction — one, identified, and carrying no fourth convention
+
+And the ranks are now the **whole sector's** rather than five choices', which is what `r7004` was missing:
+
+> **At a maximally symmetric point the gradient of every realizable invariant is a multiple of the identity**, so `∂P/∂K₁ = ∂P/∂K₂` there — verified on five dimension-six and four dimension-eight invariants, with those gradients non-zero — and therefore *every* invariant's first variation depends on the perturbation only through `δR`.
+
+The realizable cubics are exactly the three-dimensional subspace `3c₀ + c₁ − c₂ − 3c₃ = 0` that the condition cuts out, and the five invariants **span it**. ⌗ *Control: the monomial `K₂³` violates the condition and raises the rank when adjoined — so a monomial basis would have given the wrong count, and that is the trap I nearly walked into.*
+
+* `δK₁ + δK₂ = ν/6a⁴` carries **no logarithm** where `δK₁ − δK₂` does ⇒ **first-order value-rank one at every dimension, by a mechanism where `r7004` had four measurements**;
+* at second order the rank is **two of three** over `{a⁻⁸, a⁻⁸ln a, a⁻⁸ln²a}`, and every one of the five values decomposes exactly into the plain `a⁻⁸` — one invariant giving `36a⁻⁸` with no logarithm at all — and the **single** combination `(3 + 6 ln a + 4 ln²a)a⁻⁸`. ⇒ ***the second direction is one and it is that squared-logarithm combination.***
+
+**And it brings no fourth convention.** The weights carry no scale factor at all, so a deformed geometry enters the mode sum as **one moment multiplying it**: the divergent structures stay the same three, with no new power of the cutoff.
+
+⇒ ***So the new direction is a second VALUE the existing three counterterms must cover, and the convention accounting survives with a rank change*** — which is the branch you said would put the row much closer than it looks.
+
+### ⓷ The banked number is **one object with four faces**
+
+> `L = 15/4` is **the residue of the tower's own spectral Dirichlet series at the pole the logarithm's subtraction sits on.**
+
+`Σ d(m)μ(m) m⁻ˢ` has simple poles at `s = 4, 2, 0` with residues `2`, `−9`, `15/4` — the `s = 0` residue probed against the exact value with the departure falling **linearly** in the probe, as `ζ`'s next term requires, and the `s = 4` pole probing to `2` as a second reading. And then:
+
+| face | value |
+|---|---|
+| the weight's `1/m` term | `15/4` |
+| the partial sum's logarithmic coefficient | `15/4` |
+| the trace's `a⁻⁴` — the anomaly | `15/4` |
+| the curvature scalar's own `a⁻⁴` | `15/4` |
+
+They **move together** when the weight's `1/m` term is changed, and **all four vanish together** on the control weight that has none (`r6969`'s own `μ² = m²`). ⇒ ***One object, four faces: name it once in the section and cite it, rather than re-deriving it in four places.***
+
+### ⓸ Not attempted, for the fifth revision
+
+The Einstein–Hilbert quartic's vertex numbers. ⓵ to ⓷ consumed it. ⌗ *And the answers do not wait on them: carry an unknown vertex factor through and both ranks are unchanged, while the logarithm's coefficient is that factor times `L` rather than a different number.*
+
+### What I did not do
+
+⛔ **No corpus edit — routed**, including the paragraph naming the second-order question: my answer is *"that order is not reached, and here is its size"*, which is a scope answer rather than the rank answer the paragraph anticipates, so **the move is yours.** ⛔ **No argument for a strike**: the order-dependence you declined on is real, and this revision gives it a size rather than removing it — the two halves are kept apart because one is a rank and the other is a size. ⛔ Nothing on the other rows.
+
+⌗ *`r7006`, 23 checks, rc = 0; exact except two residue probes and one size, each reported against an exactly derived prediction rather than against a threshold.*
