@@ -20,7 +20,53 @@ import re
 
 import numpy as np
 
-W = 250
+W = 250                     # the DEFAULT width, and the width every slice banked before r7051 used
+
+
+def slice_range(log, lo):
+    """a slice's OWN declared k-range, read from its log -- `W` is only the fallback.
+
+    ⛔ ** THE FIRST VERSION ASSUMED THE TILING INSTEAD OF READING IT. **  It built the expected offsets as
+    `range(0, n, W)` from a single module-level `W`, so a configuration sliced at any other width read as
+    incomplete forever -- and a configuration whose width CHANGED between runs would have read as complete
+    off a set that does not tile.  *That is this stretch's own common thread for the fourth time: a claim
+    about a set made without reading the set.*
+      ⇒ The launcher now writes `__SLICE__ lo:hi` into each slice's log, so a slice states its own extent
+      and the fold CHECKS the union rather than predicting it.  Slices banked before that line existed
+      report no range, and for those -- and only those -- the historical 250 is assumed, which is what they
+      were actually run at.
+    """
+    try:
+        with open(log, encoding='utf-8', errors='replace') as f:
+            m = re.search(r'__SLICE__ (\d+):(\d+)', f.read())
+        if m:
+            return int(m.group(1)), int(m.group(2))
+    except OSError:
+        pass
+    return lo, lo + W
+
+
+def tiling(outdir, tag, n):
+    """the slices present, and whether their declared ranges cover [0, n) exactly -- or None"""
+    got = []
+    for f in sorted(glob.glob(os.path.join(outdir, f'{tag}_k*.npz'))):
+        m = re.search(r'_k(\d+)\.npz$', os.path.basename(f))
+        if not m:
+            continue
+        lo = int(m.group(1))
+        log = os.path.join(outdir, f'{tag}_k{lo}.log')
+        if not _done(log):
+            continue
+        got.append(slice_range(log, lo) + (f,))
+    got.sort()
+    if not got or got[0][0] != 0:
+        return None
+    end = 0
+    for lo, hi, _f in got:
+        if lo != end:                    # a gap, or an overlap that would double-count
+            return None
+        end = hi
+    return got if end >= n else None
 
 
 def _done(log):
@@ -51,13 +97,10 @@ def load(outdir, tag):
     n = modes_from_log(k0log)
     if n is None or not _done(k0log):
         return None
-    want = list(range(0, n, W))
-    parts = []
-    for i in want:
-        f = os.path.join(outdir, f'{tag}_k{i}.npz')
-        if not (os.path.exists(f) and _done(os.path.join(outdir, f'{tag}_k{i}.log'))):
-            return None
-        parts.append(np.load(f))
+    got = tiling(outdir, tag, n)
+    if got is None:
+        return None
+    parts = [np.load(f) for _lo, _hi, f in got]
     ls = parts[0]['ls']
     for p in parts:
         if not np.array_equal(p['ls'], ls):
@@ -74,11 +117,15 @@ def status(outdir, tag):
         return 'complete (unsliced)'
     if n is None:
         return 'not started'
-    want = list(range(0, n, W))
-    have = sum(1 for i in want
-               if os.path.exists(os.path.join(outdir, f'{tag}_k{i}.npz'))
-               and _done(os.path.join(outdir, f'{tag}_k{i}.log')))
-    return f'{have}/{len(want)} slices'
+    # ⌗ the DENOMINATOR is still predicted from the default width, because a configuration's remaining
+    # slices have not been run and so have declared no ranges yet -- but the NUMERATOR counts what is
+    # actually banked and done.  *A partial read may therefore show a count against a width the
+    # configuration will not finish at; `load()` is the authority and it reads the ranges.*
+    done = [r for r in (tiling(outdir, tag, n) or [])]
+    have = len(done) if done else sum(
+        1 for f in glob.glob(os.path.join(outdir, f'{tag}_k*.npz'))
+        if _done(f[:-4] + '.log'))
+    return f'{have}/{len(range(0, n, W))} slices'
 
 
 if __name__ == '__main__':

@@ -40,7 +40,15 @@ W=250
 run () { out=$1; tag=$2; shift 2
   [ -s "$out/$tag.log" ] && grep -q '^__DONE__' "$out/$tag.log" && { echo "  skip $tag"; return 0; }
   env HIER=1 "$@" SAVE=$out/$tag.npz python3 -u ACOUSTIC_two_arm.py > $out/$tag.log 2>&1
-  echo "__DONE__ rc=$?" >> $out/$tag.log; echo "  done $tag $(date -u +%H:%M:%S)"; }
+  rc=$?
+  # ⛭ ** A SLICE DECLARES ITS OWN EXTENT, so the fold can CHECK the tiling instead of predicting it. **
+  # *`fold.py` used to build the expected offsets from a single module-level width, which means a
+  # configuration sliced at any other width reads as incomplete forever -- and one whose width CHANGED
+  # would read as complete off a set that does not tile.  The width is a property of the run, so the run
+  # is what should state it.*  ⌗ Slices banked before this line carry no range and the fold assumes the
+  # historical 250 for those only, which is what they were run at.
+  for _a in "$@"; do case "$_a" in KSLICE=*) echo "__SLICE__ ${_a#KSLICE=}" >> $out/$tag.log;; esac; done
+  echo "__DONE__ rc=$rc" >> $out/$tag.log; echo "  done $tag $(date -u +%H:%M:%S)"; }
 export -f run; export D
 SET=(
   "base    " "kfac26  KFAC=2.6" "kfac32  KFAC=3.2" "nlos1120 NLOS=1120"
