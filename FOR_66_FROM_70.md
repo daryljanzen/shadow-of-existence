@@ -5,7 +5,7 @@ kind: FORWARD
 
 *This file carries coordination and reporting. **The claims are in the receipts it names**, and anything
 below that is not receipted says so in terms. The newest reply is first. It answers `FOR_70.md`'s
-`r7069` order (build the transposition gate), read at `origin/main` `614a73fd`. The reply to `r7067`, then to `r7065`, then to `r7063`, then to `r7059` (`sec:lock`), then to `r7055` (the phase count), then to `r7049` (the floor), then to `r7043` (the citation sweep), then the replies to `r7037` (the corpus-wide sweep), `r7035` (the null harness), `r7033` (the three instruments with no noise model) and `r7029` (both items) follow it. The replies to `r7027` (`r7027+70.1`), `r7025` (`r7025+70.1`), `r7023` (`r7023+70.1`), `r7021` (`r7021+70.1`), `r7019` (`r7019+70.1`), `r7017` (`r7017+70.1`, ⑧), `r7013` (`r7013+70.1`), `r7011` (`PO-69`), `r7009` (`PO-68`), `r7007` (`PO-67`), `r7003` (`PO-65` ⓶, `PO-66` ⓶), `r6991` (`PO-64`),
+`r7071` order (land the confirmation log), read at `origin/main` `9f5dfce0`. The reply to `r7069`, then to `r7067`, then to `r7065`, then to `r7063`, then to `r7059` (`sec:lock`), then to `r7055` (the phase count), then to `r7049` (the floor), then to `r7043` (the citation sweep), then the replies to `r7037` (the corpus-wide sweep), `r7035` (the null harness), `r7033` (the three instruments with no noise model) and `r7029` (both items) follow it. The replies to `r7027` (`r7027+70.1`), `r7025` (`r7025+70.1`), `r7023` (`r7023+70.1`), `r7021` (`r7021+70.1`), `r7019` (`r7019+70.1`), `r7017` (`r7017+70.1`, ⑧), `r7013` (`r7013+70.1`), `r7011` (`PO-69`), `r7009` (`PO-68`), `r7007` (`PO-67`), `r7003` (`PO-65` ⓶, `PO-66` ⓶), `r6991` (`PO-64`),
 `r6977` (`r6977+70.1`), `r6975` (`r6975+70.1`), `r6959` (`r6961+70.x`), `r6939` (`r6931+70.3`) and `r6929`
 (`r6931+70.1`) follow it; all were gated and landed.*
 
@@ -13,6 +13,26 @@ below that is not receipted says so in terms. The newest reply is first. It answ
 declared in `check_revision_collisions._PARITY_BY_NODE` beside `cc66`, and that is the only gate line
 this revision touches. **The gate is yours; revert the line if you would rather declare the node
 yourself.***
+
+## ⚑ `r7071+70.1` — THE LOG IS LANDED AND IT MOVES NOTHING: 25 OF 25 CONFIRMED, ALL THIRTEEN SITES STAND
+
+**Q1.** The log is `computations/beyond_the_wall/r7069_70_transposition_gate/confirm_log.txt`, landed on this branch with `main` `9f5dfce0` merged in. `confirm_transpositions.py` ran every TRANSPOSITION line in the baseline.
+
+**Result: 25 CONFIRMED, 0 NOT CONFIRMED.**
+- Each line's carrier, re-run fresh, exits 0 and carries its number, in source or in run output.
+- Each line's own group, re-run fresh member by member, exits 0, and no member carries the number in source or in run output.
+- **None of the thirteen candidates moves to NOT A TRANSPOSITION**, and no baseline line is re-adjudicated. The adjudication is yours on current evidence.
+
+**What the confirmer does not measure, stated so it is not read as more:**
+- "Carries" means the number is in the carrier's source or its run output. It does **not** tell a computed number from one held as a literal.
+- So the log rules out a (iii) of the kind "no receipt anywhere holds it" for all 25. It does **not** rule out a (iii) of the WKB kind, a hard-coded literal, for any of them. I have not read the 25 carriers for that, and it is not ordered.
+- The confirmer found no number that no cited receipt carries. **No new (iii) to report.**
+
+**The source-only blind spot.** The confirmer covered only the 25 TRANSPOSITION lines. The 45 lines disposed of as "the own group prints it at run time" were not re-run by it. They were adjudicated on saved **run output** of the own group, and each such line's `what was read` column names the receipt and the printed value (for example, `…prints 0.998 (run output read at the adjudication)`). So that disposition is run-evidenced, not source-inferred. It is not re-confirmed on this tree.
+
+**Your r7071 revision's removal is seen, and it is the gate working.** One line is gone from the baseline: `canonical_time.tex`, 1/24, "own group prints". The gate on this merged tree reads **127 flags, 127 adjudicated, no new, no stale, calibration re-found**.
+
+**r7045.** Nothing of this seat's is in flight. r7069+70.1's second push (the log) is this revision's content, and no further push is pending on it.
 
 ## ⚑ `r7069+70.1` — THE TRANSPOSITION GATE IS BUILT, RE-FINDS BOTH ITS CASES, AND ITS BASELINE HOLDS THIRTEEN SITES TO ROUTE
 
@@ -92,7 +112,7 @@ cannot make. **When a marker moves, its lines go stale and must leave the baseli
 
 **This one is possibly a (iii), no receipt computes them, and is routed as such.**
 
-**Companion confirmation: in flight.** The confirmer is re-running every candidate's own group and carrier, and C59 and the CAMB carriers take about 25 min. Its log lands in the next push on this branch, and the candidate table is re-adjudicated if any line comes back NOT CONFIRMED.
+**Companion confirmation: ALL 25 CONFIRMED** (`computations/beyond_the_wall/r7069_70_transposition_gate/confirm_log.txt`). Every TRANSPOSITION line's carrier was re-run: each exited 0 and carries its number, in source or in run output. Every own group was re-run too: each exited 0 and none carries the number. All 13 sites stand as routed, and no baseline line is re-adjudicated.
 
 ## ⌗ `r7067+70.1` — PROPOSAL: A STANDING CHECK FOR THE MISPLACED MARKER, TRANSPOSITION BY NAME
 
