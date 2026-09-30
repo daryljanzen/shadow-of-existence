@@ -78,7 +78,7 @@ def receipt_text(name, outdir):
         m = re.search(r'rc=(\d+)\s*$', ot)
         rc = int(m.group(1)) if m else None
         t += '\n' + ot
-    return t, rc
+    return t.replace('\u2212', '-'), rc   # a Unicode minus is a minus
 
 
 def num_pool(t):
@@ -98,7 +98,7 @@ def matches(tok, pool_vals):
     d = len(tok.split('.')[1]) if '.' in tok else 0
     for y in pool_vals:
         if d == 0:
-            if y == x:
+            if abs(y) < 1e15 and round(abs(y)) == abs(x):
                 return True
         elif round(abs(y), d) == round(abs(x), d):
             return True
@@ -141,15 +141,33 @@ def main(outdir):
             ln = t[:m.start()].count('\n') + 1
             sec = section_of(lines, ln)
             nums = numbers(claim)
+            # a group citation: markers separated only by whitespace/punctuation cite the claim jointly
+            group = [name]
+            j = m.end()
+            for m2 in re.finditer(r'\\rcpt\{([^}]*)\}', t[m.end():]):
+                gap = t[j:m.end() + m2.start()]
+                if re.fullmatch(r'[\s,;.~]*', gap):
+                    group.append(m2.group(1))
+                    j = m.end() + m2.end()
+                else:
+                    break
+            k = m.start()
+            while True:
+                pm = re.search(r'\\rcpt\{([^}]*)\}[\s,;.~]*$', t[:k])
+                if not pm:
+                    break
+                group.append(pm.group(1))
+                k = pm.start()
             vals, rc = pool_of(name)
-            found = {n: matches(n, vals) for n in nums}
+            gvals = set().union(*(pool_of(g)[0] for g in group))
+            found = {n: matches(n, gvals) for n in nums}
             elsewhere = {}
             for n, ok in found.items():
                 if not ok:
-                    hits = [o for o in ALL if o != name and matches(n, pool_of(o)[0])]
+                    hits = [o for o in ALL if o not in group and matches(n, pool_of(o)[0])]
                     elsewhere[n] = hits[:5] + (['…'] if len(hits) > 5 else [])
             rows.append(dict(paper=f, line=ln, section=sec, headline=(sec == 'abstract' or is_conclusion(sec)),
-                             receipt=name, rc=rc, claim=' '.join(claim.split())[-900:], numbers=nums,
+                             receipt=name, group=group, rc=rc, claim=' '.join(claim.split())[-900:], numbers=nums,
                              found=found, elsewhere=elsewhere,
                              tracer=('qualitative' if not nums else 'i' if all(found.values())
                                      else 'ii?' if all(elsewhere.get(n) for n, ok in found.items() if not ok)
