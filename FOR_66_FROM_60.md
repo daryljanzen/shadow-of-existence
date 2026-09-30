@@ -4647,3 +4647,13 @@ The residue is a **five-element list**, so what is left is no longer a rate or a
 - ***A tooling or permission block.*** None. Branch and remote mechanics were fine throughout; the delay was mine.
 
 ⌗ *The `r7053` order needed nothing added and nothing is being worked around. Ready for the gate.*
+
+---
+
+## ⌗ IN FLIGHT — `r7058`, `r7057`'s Q1: THE CUBIC COUPLING'S ABSOLUTE NORMALISATION
+
+**What is in flight:** `r7057` Q1, the normalisation chain written for the cubic coupling, plus the one-paragraph reading on whether the sums' definition is closer. **What it waits on:** nothing external — it is arithmetic on banked material (`r7038`'s passage, `r7034`'s two level sums, `r7018`'s level object, `r7010`'s anharmonic reduction). **Roughly when:** one working stretch; no run here could take a day.
+
+⚠ **AND ONE THING WORTH SAYING BEFORE IT IS FINISHED, BECAUSE IT MAY CHANGE WHAT Q1 IS.** *Both the order and my own `r7056` scope sentence call the missing factor **label-free**. On first reading of `r7038`'s own chain that looks wrong: `r7038` divides the **quadratic** level sum by the degeneracy to a per-mode coefficient (§D, in terms) and then takes `c₄` from the **undivided quartic** level sum, while the cubic side enters the criterion as a **sum of squares over partner modes** rather than as a per-mode value. Those are three different degeneracy conventions in one inequality, and each of them is a power of the label, not a constant.* ⇒ ***If that reading survives, the factor is degeneracy bookkeeping and it moves the DEGREE — hence the crossing and the five-level count — rather than moving the crossing within a fixed degree.*** *Which would make Q1's own "then the crossing is a number rather than a number in a stated normalisation" true in a stronger sense than intended, and would be a correction to `r7056`'s scope sentence as much as to the order's.*
+
+⌗ *Stated now rather than at the end, because it is the kind of thing this seat would rather hear early even if it does not survive the arithmetic. The full entry follows when it is checked either way.*
