@@ -185,6 +185,31 @@ EST = {
         'carries it. DISCHARGE: what the lap does in that regime on the same exact interior, and whether it is '
         'reachable on a progenitor of the mass this cosmology requires, the struck row scoring the charge-to-mass '
         'threshold near 1e-2 so reachability is a question about astrophysical charge and not about the geometry.'),
+    'PO-71': ('the dimension-six counterterms invariant: the coefficient is computed and what it is the coefficient of is unnamed', 1, 0, 3, None,
+        'OPENED r7079 (66) on 60s reading, and r7074 is what made it live. sec:lock names the invariant at '
+        'dimension four -- the curvature-squared ones, the free towers own counterterm -- and names none at '
+        'dimension six. While the coefficient there vanished it did not have to: r7068s warrant for needing '
+        'no representative was exactly that, a zero coefficient being zero for every scalar at that dimension '
+        'so the entry is well defined without any choice of representative. r7074 computes a NON-ZERO '
+        'coefficient there and removes that warrant, so a coefficient that does not vanish is the coefficient '
+        'of something and the something is unnamed. AND THIS IS A REMAINDER THE STRIKE DID NOT SEE, recorded '
+        'at this seats expense: r7077 struck the mode-sums row on the test r7073 set, listed r7074s three '
+        'remainders and ruled all three finer-resolution or ordinary bookkeeping. There was a fourth, and 60 '
+        'found it on reading the strike rather than the gate on making it. The strike stands -- that rows '
+        'object was the ultraviolet definition of the mode sums, answered and receipted, and a new object '
+        'earns its own row rather than reopening a closed one, which is STANDING ORDER r7013 working as '
+        'written. What was wrong was the claim that nothing new in kind was opened, not the strike. AND THE '
+        'ROW OPENS WITH ITS CONSTRAINT IN HAND, which is why it is cheap: sec:locks own count is five scalars '
+        'pointwise independent on a general scale factor and rank one on the one-parameter family, so the '
+        'representative is FORCED up to normalisation and what is missing is one normalisation matched to a '
+        'residue that now exists. Not a search over a basis; a single matching against a number the corpus '
+        'holds. ONE PRECONDITION, named by 60 as its own: the residues VALUE rests on the assembly as r7060 '
+        'filed it while the poles EXISTENCE needs only an integer power of the squared frequency, so a '
+        'normalisation inherits that factor and the assembly should be re-derived before the invariant is '
+        'pinned to a number. That ordering is part of the row. WHAT THE ROW IS NOT: not the renormalised '
+        'value, which sec:lock declines separately and which a scheme assigns; and not fourth order, which is '
+        'ordinary order-by-order bookkeeping. It is the same orders entry left unfinished. '
+        ),
     'PO-70': ('the projections extra retention: what makes the contrast excess between k and ell', 1, 0, 4, None,
         'OPENED r7039 (66) on Daryls question at r7037, and it is NOT the struck acoustic rows remainder -- '
         'it is the question that row was serving and never asked. That row asked ATTRIBUTION: which candidate '
@@ -633,6 +658,15 @@ EST = {
         'it is a widening and not the order, and the bounded item survives it. Re-ordered r7077 with the test '
         'named rather than the class: perturb the carriers inputs and see whether the number moves, the '
         'calibration pair staying available inside the set. '
+        'AND 70s --all SWEEP CLOSES WITH NO NEW FINDING, r7079: 40 of 40 own-prints lines CONFIRM on a fresh '
+        'run, and the NOTHING-PRINTS list holds 9 lines that are all external datums, configuration values, a '
+        'coincidence and the proof-algebra site -- every one held in source, which is correct for a measured '
+        'value or a proofs own step. So no number in the flagged set is stated by the prose and carried by '
+        'nothing. 70 also found and fixed a defect in its own matcher, which read no mantissa of e-notation, '
+        'and committed the re-check; its pre-registered prediction that one to three restatement lines would '
+        'print nowhere came out at zero, wrong in the safe direction and reported as such. The derive-or-hold '
+        'question stays open and re-ordered with the test named: perturb the carriers inputs and see whether '
+        'the number moves. '
         ),
     'PO-50': ('the turnaround measurement with turnaround masses', 1, 1, 3, None,
         'OPENED r6861 as PO-36 remainder. That row is struck: the radius tracks the dynamical mass, entailed rather '
@@ -4622,8 +4656,8 @@ KIND = {'PO-46': 'BUILD', 'PO-10': 'BUILD', 'PO-13': 'BUILD', 'PO-36': 'READ', '
 #   and the generator reported "9 open" while the table showed EIGHT -- the count comes from
 #   the live set and the rows come from here.*  ** Adding a row needs three things: the
 #   register row, the runway, and this list. **  check_frontier_current now checks all three.
-ORDER = ['PO-70', 'PO-63', 'PO-62', 'PO-61', 'PO-60', 'PO-59', 'PO-58', 'PO-57', 'PO-56', 'PO-55', 'PO-54', 'PO-53', 'PO-52', 'PO-47', 'PO-48', 'PO-49', 'PO-50', 'PO-51', 'PO-45', 'PO-46', 'PO-10', 'PO-13', 'PO-43', 'PO-24', 'PO-36', 'PO-30', 'PO-25', 'PO-26', 'PO-31', 'PO-23', 'PO-15', 'PO-14', 'PO-17', 'PO-18', 'PO-19', 'PO-20']
-GROUP = {'PO-70': 'D', 'PO-69': 'C', 'PO-68': 'C', 'PO-67': 'C', 'PO-66': 'C', 'PO-65': 'C', 'PO-64': 'C', 'PO-63': 'C', 'PO-62': 'C', 'PO-61': 'C', 'PO-60': 'C', 'PO-59': 'C', 'PO-58': 'A', 'PO-57': 'D', 'PO-56': 'D',  # r6891: PO-13's live remainder, the acoustic sector.
+ORDER = ['PO-71', 'PO-70', 'PO-63', 'PO-62', 'PO-61', 'PO-60', 'PO-59', 'PO-58', 'PO-57', 'PO-56', 'PO-55', 'PO-54', 'PO-53', 'PO-52', 'PO-47', 'PO-48', 'PO-49', 'PO-50', 'PO-51', 'PO-45', 'PO-46', 'PO-10', 'PO-13', 'PO-43', 'PO-24', 'PO-36', 'PO-30', 'PO-25', 'PO-26', 'PO-31', 'PO-23', 'PO-15', 'PO-14', 'PO-17', 'PO-18', 'PO-19', 'PO-20']
+GROUP = {'PO-71': 'C', 'PO-70': 'D', 'PO-69': 'C', 'PO-68': 'C', 'PO-67': 'C', 'PO-66': 'C', 'PO-65': 'C', 'PO-64': 'C', 'PO-63': 'C', 'PO-62': 'C', 'PO-61': 'C', 'PO-60': 'C', 'PO-59': 'C', 'PO-58': 'A', 'PO-57': 'D', 'PO-56': 'D',  # r6891: PO-13's live remainder, the acoustic sector.
          'PO-45': 'A', 'PO-46': 'A',  # ⛔ r6549: a FOURTH hardcoded list -- GROUP -- and a row missing here raises.
          'PO-10': 'D', 'PO-13': 'D', 'PO-14': 'A', 'PO-15': 'C', 'PO-16': 'D',
          # ** r3095: the four brought in from p0's frontiers and the field ledgers.  PO-17 and
