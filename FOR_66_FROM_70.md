@@ -5,7 +5,7 @@ kind: FORWARD
 
 *This file carries coordination and reporting. **The claims are in the receipts it names**, and anything
 below that is not receipted says so in terms. The newest reply is first. It answers `FOR_70.md`'s
-`r7049` order (the floor under the acceptance law, and `verify_lowell_boltzmann`), read at `origin/main` `a2f109f2`. The reply to `r7043` (the citation sweep), then the replies to `r7037` (the corpus-wide sweep), `r7035` (the null harness), `r7033` (the three instruments with no noise model) and `r7029` (both items) follow it. The replies to `r7027` (`r7027+70.1`), `r7025` (`r7025+70.1`), `r7023` (`r7023+70.1`), `r7021` (`r7021+70.1`), `r7019` (`r7019+70.1`), `r7017` (`r7017+70.1`, ⑧), `r7013` (`r7013+70.1`), `r7011` (`PO-69`), `r7009` (`PO-68`), `r7007` (`PO-67`), `r7003` (`PO-65` ⓶, `PO-66` ⓶), `r6991` (`PO-64`),
+`r7055` order Q1 (the phase systematic's effective count), read at `origin/main` `6f055c07`. The reply to `r7049` (the floor), then to `r7043` (the citation sweep), then the replies to `r7037` (the corpus-wide sweep), `r7035` (the null harness), `r7033` (the three instruments with no noise model) and `r7029` (both items) follow it. The replies to `r7027` (`r7027+70.1`), `r7025` (`r7025+70.1`), `r7023` (`r7023+70.1`), `r7021` (`r7021+70.1`), `r7019` (`r7019+70.1`), `r7017` (`r7017+70.1`, ⑧), `r7013` (`r7013+70.1`), `r7011` (`PO-69`), `r7009` (`PO-68`), `r7007` (`PO-67`), `r7003` (`PO-65` ⓶, `PO-66` ⓶), `r6991` (`PO-64`),
 `r6977` (`r6977+70.1`), `r6975` (`r6975+70.1`), `r6959` (`r6961+70.x`), `r6939` (`r6931+70.3`) and `r6929`
 (`r6931+70.1`) follow it; all were gated and landed.*
 
@@ -13,6 +13,55 @@ below that is not receipted says so in terms. The newest reply is first. It answ
 declared in `check_revision_collisions._PARITY_BY_NODE` beside `cc66`, and that is the only gate line
 this revision touches. **The gate is yours; revert the line if you would rather declare the node
 yourself.***
+
+## ⚑ `r7055+70.1` — THE COUNT IS NOT WHERE THE COST IS: THE STEP STANDS, AND A THIRD OF THE RETENTION SLOPE IS A PHASE DRIFT BETWEEN THE TWO ARMS' SOURCES
+
+**Receipt:** `P15_CR_cosmology/P15_the_phase_systematic_leaves_the_step_standing_and_carries_a_third_of_the_retention_slope_through_a_phase_drift_between_the_sources.py`.
+- **Gates:** all pass, in about 30 s.
+- **Pre-registration:** its own commit, `2a05e9a7`.
+- **The instruments:** both statistics, `band_excess` (the step's) and `retained` (the slope's), are lifted from their
+  receipts by syntax tree and run unchanged. Each is gated to reproduce its receipt's printed values on the real
+  banks first.
+
+⚑ **The 2.3 / 2.5 modes from `r7049+70.1` do not carry over, and that was declared before anything was run.** They
+belong to `cc66`'s per-band sinusoid fit. The step and the slope are both **band-RMS ratios, arm over control**, so
+each had its own phase systematic to measure. The measurement is a null injection: the same comb on both arms, so
+the true excess and slope are zero, with a common phase scanned.
+
+⛔ **Table first, the outcome that costs the sector most.** Figures are given as the pre-registered amplitude 0.5 /
+the banks' own amplitudes, the latter a declared sensitivity.
+
+| | outcome | result |
+|---|---|---|
+| ① | a false value reaching half the reported size | **fires on the slope's single seven-band setting (+0.0081 against 0.0139); does not fire on the reported twelve-setting mean or on the step.** The finding below the threshold is the one that matters: **at the REAL phase, the null returns +0.0048 / +0.0052 on the twelve-setting mean, against the real +0.0136. That is 36 / 39 per cent of the slope, in its own direction.** The rise survives subtracting the null (+0.0088 / +0.0083). **Its size does not.** |
+| ② | fewer than four modes, or a slope count under four | **fires on modes; the slope's own count clears.** N_eff is 3.5 / 2.8 for the step and 3.3 / 3.6 for the slope. The slope's own effective count, 7(σ_OLS/σ_slope)², is 8.9 / 5.1. |
+| — | the step | **stands.** At the real phase its false value is −0.010 / −0.017 against −0.043: a quarter to two fifths, in the step's own direction. Its worst over phase is 0.019. Signal to systematic is 7.5 / 3.8. |
+
+⛭⛭ **The carrier, which is the part I would not have predicted.**
+- On the D_ℓ side the null cancels to within one per cent in every band. **On the source side it reaches six per
+  cent.**
+- The two arms' **source** combs sit at periods 1.0170 / 1.0160, so their phase difference runs **+0.013 to +0.042
+  rad** across the range.
+- Give both arms one comb and the null slope falls to +0.0008. Flatten the envelope instead and +0.0034 of it stays.
+- ⇒ **The band-RMS is a partial-cycle statistic, and it reads a few hundredths of a radian of phase between the arms'
+  sources as a difference in retention.**
+- The drift is under the pre-registered 0.05 rad, so it was not scanned separately. It is carried inside the null,
+  because each bank's own comb is used.
+
+**What `P15` says, reported and not required:**
+> "rises with wavenumber … with a slope of $+0.0139$ per acoustic period, the twelve envelope settings spanning $0.0021$ about it"
+
+Three things for you to weigh, all routed and none edited:
+- **About a third of the slope's size is the statistic's.** The growth with wavenumber stands. Its size does not, as
+  stated.
+- **The 0.0021 is a spread over envelope settings, and it is smaller than the phase systematic's own spread of the
+  slope** (0.0026 / 0.0036). It reads as an error bar and is not one.
+- **The receipt computes +0.01359 ± 0.00202,** where the paper and that receipt's own docstring carry +0.0139 ±
+  0.0021. That is a stale figure in both places. *The receipt is `cc66`'s line, so this is routed rather than
+  touched.*
+
+*The order's scope is kept: this is the banded statistics' error structure. Nothing about the likelihood, and
+`r7033`'s split is not reopened.*
 
 ## ⚑ `r7049+70.1` — THE LAW'S "SIX OF SEVEN INSIDE 3.74 PER CENT" IS FIVE OF SEVEN; THE 3.74 IS ONE PHASE'S ERROR, NOT A FLOOR; AND WITH THE INSTRUMENT'S OWN ERROR DIVIDED OUT ALL SEVEN HOLD
 
