@@ -45,25 +45,34 @@ printf '%s\n' \
 
 # the settings, each varied ALONE with the others at their reported values.  `base` is the reported
 # configuration and is the sequence's first point on every axis.
+# ⛭⛭ ** THE ORDER OF THIS LIST IS PART OF THE DESIGN, NOT AN ACCIDENT OF NESTING. **
+# *A first version looped injection-outermost, which finishes every setting of `fixed` before the first
+# `sweepown` run -- so a job read halfway has one injection complete and the one the order actually
+# NAMES (the sweeping $1.0659$) entirely absent.*  ⇒ ** Settings are outermost and both injections and
+# both arms run together at each, so a partial read is a partial SEQUENCE and never a partial pair. **
+#   ⌗ *And the settings are ordered so the first eight complete a THREE-POINT sequence on every axis the
+#   order names; the fourth points (`kfac40`, `nlosw12`) and the axis expected to be inert on the arm
+#   (`nk15`, `nk20`) come last.  A three-point sequence can show a turnover and a two-point one cannot,
+#   so three points on every axis is worth more than four on one.*
 SET=(
   "base    "
   "kfac26  KFAC=2.6"
   "kfac32  KFAC=3.2"
-  "kfac40  KFAC=4.0"
-  "nk15    NK=1274"
-  "nk20    NK=1698"
   "nlos1120 NLOS=1120"
   "nlos2240 NLOS=2240"
   "nlosw9  NLOSW=9.0"
-  "nlosw12 NLOSW=12.0"
   "nlosf90 NLOSF=0.90"
   "lstep4  LSTEP=4"
+  "nlosw12 NLOSW=12.0"
+  "kfac40  KFAC=4.0"
+  "nk15    NK=1274"
+  "nk20    NK=1698"
 )
 LIST=""
-for inj in "fixed SRCINJ=fixed" "sweepown SRCINJ=sweep SRCINJRS=own"; do
-  set -- $inj; iname=$1; shift; ienv="$*"
-  for s in "${SET[@]}"; do
-    set -- $s; sname=$1; shift; senv="$*"
+for s in "${SET[@]}"; do
+  set -- $s; sname=$1; shift; senv="$*"
+  for inj in "fixed SRCINJ=fixed" "sweepown SRCINJ=sweep SRCINJRS=own"; do
+    set -- $inj; iname=$1; shift; ienv="$*"
     LIST="$LIST
 $D/inj inj_${iname}_lcdm_${sname} $LCDM LSTEP=8 LMAXL=2000 $ienv $senv"
     LIST="$LIST
