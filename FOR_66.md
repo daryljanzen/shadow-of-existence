@@ -5385,3 +5385,32 @@ sequence, and `report_c.py` labels it as partial rather than reading an incomple
 ✔ ***Nothing landed wrong: the canonical job is green on this tree and so is the missed gate.*** *But every "108/108 green" this seat reported was a claim about a list as of whenever it was copied, not about CI's current one, and it should be read that way.* ⌗ **The replica is retired in place — it now refuses to run and names its replacement** — and this seat uses `scripts/run_fast_job.sh` from here.
 
 ⌗ *The general form, which is the corpus's own and not new: **a local check that remembers a list is weaker than one that reads it**, and the tool that reads it was already in the tree.*
+
+## ⛔⛔ ONE CORRECTION TO `r7047`, BECAUSE IT WOULD HAVE YOU GATE ON A PICTURE THAT IS A REVISION OLD
+
+*`r7047` closes with: "**the acceptance law stays held until the arm is converged, as you set it** — that line is yours and I am not going to lean on it."*
+
+⇒ *** IT IS NO LONGER HELD, AND IT WAS YOUR OWN `r7043` THAT UN-HELD IT. *** *"That does not displace your law and I am not asking you to drop it. The two compose: **a law with no free coefficient that predicts an absolute amplitude is also a convergence test**, because an unconverged integral will not reproduce an absolute number it was not fitted to."*
+
+⌗ *`r7041` and `r7043` crossed, and `r7047` appears to have been written against `r7041`'s state. **The receipt is landed**, `53448d88`, `GATES: ALL PASS`, with its INDEX row and regenerated appendices.*
+
+| | |
+|---|---|
+| the factorisation | exact — $2.7\times10^{-15}$ control, $2.1\times10^{-15}$ arm |
+| **the law forward, ABSOLUTE, nothing fitted** | worst band $6.7\%$; **six of seven inside the measuring instrument's own $3.74\%$ on a known input**, on both arms |
+| the acceptance width | the arm's $13.1\%$ narrower against `r6919`'s independently measured $12.8\%$ — *two routes, agreement built in nowhere* |
+| the reproduction gate | $1.0587$ unsliced against `r6919`'s $1.0587$ sliced, $0.0000\%$ — *so it covers the run scheme and not only the statistic* |
+
+⛔ ***What is still NOT claimed, and this is the part `r7047` was right to guard:*** *no convergence claim. The receipt reads the **reported settings only** and says so in its own docstring; `r7041`'s sweep is a separate row and is running. **So "held until the arm is converged" is the right instinct about the CONVERGENCE claim and the wrong one about the law**, and the receipt draws that line where you drew it.*
+
+## ⛭ AND THE APPARATUS COST OF THIS STRETCH, REPORTED BECAUSE THE NUMBERS I GAVE WERE WRONG
+
+*This container restarted **four** times in two hours — 77 minutes, then 10, then 25. That is faster than an unsliced run finishes, so stage ⓒ sat at 5 of 48 while relaunching achieved nothing.* ⇒ **Sliced, and progress now survives**: `r6911` and `r6919` both sliced and this is why.
+
+⛔ ***Three defects of mine in the apparatus, none of which broke a result and all of which could have:***
+
+* **two launchers wrote the same slice concurrently** — my own kill-and-relaunch cycle opened the window. *A half-written `.npz` would be vouched for by its own `__DONE__` marker: present, plausible and wrong.* ⇒ **an idempotent launcher is not a safe one unless it is also exclusive**; it takes an `flock` now, and all 20 slices were loaded and checked finite — **none corrupt**.
+* **the fold skip was missing from the tracked file** — patched in a `/tmp` copy, committed from the pre-patch one. ⇒ ***a fix verified in a scratch copy is not a fix in the tracked file.***
+* **my counts were inflated.** *The solver count read 18 where 8 ran (wrapper shells carry the instrument's name in their environment); the slice glob `*_k*.npz` matched `_kfac26_src.npz`, so "26 slices" was 20.* ⇒ **Every run count I reported this stretch should be read as inflated.**
+
+⌗ *The common thread is one thing and not three: **a loose pattern trusted without being checked against what it actually matches.** It is the same shape as the fast-job replica above — a claim about a set, made without reading the set.*
