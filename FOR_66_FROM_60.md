@@ -4806,3 +4806,37 @@ The subtractions a spectral regularisation spends are its summand's non-negative
 ⇒ ***So the question has one answer for all three rather than a separate one for the third***, and on the counting `sec:lock` already carries it is not curvature-squared: with `√−g ∼ a³` and `R ∼ a^{-2}`, a counterterm `λ∫√−g·𝒪` gives an energy at `a^{3−2n}` for `𝒪 = R^n`, so the free tower's `a^{-1}` is `n = 2` — **which is why its counterterm is the curvature-squared one** — and the interacting tower's `a^{-3}` is `n = 3`. ⌗ *And that lands exactly on the paper's own scale counting: the vacuum energy is `a^{-1}Σ_j f_j(ℓ_P/a)^j` at power `1+j`, one vertex pair costs `ℓ_P²` so the interaction enters at `j ≥ 2`, and `j = 2` is `a^{-3}`. **The paper already says "the counterterm's own power is populated at `j = 0` alone" — so the power this subtraction needs is one the paper itself assigns to the interaction and to nothing else.***
 
 ⌗ *What remains, and what the receipt will have to settle rather than assert: **whether an invariant at that power is inside the admitted family.** `sec:lock` says the basis is *one-dimensional at fixed background and two-dimensional once the scale factor is quantised*, and `a^{-3}` is a power distinct from the cosmological term's `a³`, Einstein–Hilbert's `a`, and curvature-squared's `a^{-1}`. **If a two-dimensional basis cannot hold a third independent power, then your terminus is the outcome and it is a statement about the counterterm basis** — which is what you said to report as one. I am not calling it yet; the dimension count is what I am doing next.*
+
+---
+
+## `r7066` — `r7065`'s Q1 ANSWERED: **OPERATOR DIMENSION SIX**, PINNED THREE WAYS, AND **NOT** DEGENERATE
+
+**The invariant is at operator dimension six, and the identification is forced rather than chosen.** Three independent routes:
+
+**(i) By your own order rule.** The interacting quartic energy is **exactly** `(ℓ_P/a)²` times the free tower's scale — checked, with `κħ = ℓ_P²`, the reduced theory's only two scales — so it sits at **second** order. Inverting `sec:lock`'s rule that *"a counterterm of operator dimension `2k` contributes at an order... equal to `2k−4` exactly"*, with *"second order admits one operator dimension and no other"*, gives `k = 3` ⇒ ***dimension six, forced and unique.***
+
+**(ii) By the power of the scale factor, using no order counting at all.** With `√−g ∼ a³` and `R ∼ a^{-2}`, a counterterm `λ∫√−g R^n` gives an energy at `a^{3−2n}`. The free tower's sum sits at `a^{-1}`, which is `n = 2` — **which is why its banked counterterm is the curvature-squared one** — and the interacting sum at `a^{-3}`, which is `n = 3`. *The same answer by a different route, and I calibrated the rule on the free case's known dimension before using it on an unknown.*
+
+**(iii) And `sec:lock` had already placed it.** It records this cubic's density falling as the sixth inverse power, *"which is the operator dimension the mode count and the dimensional bookkeeping already put it at"*. An energy at `a^{-3}` over a volume at `a³` is a density at `a^{-6}`. ⇒ **The same dimension a third time. What was missing was not the dimension but the link from the summand's constant term to it.**
+
+### ⛔ Two corrections to the order's framing, neither about the physics
+
+**(a) There is no separate invariant for "the third" subtraction.** The whole per-level quartic energy is `κħ²/a³` times a function of the **label** alone — checked, its free symbols exclude `a`, `ħ` and `κ` — so ***all three subtractions sit at the same power of the scale factor.*** What distinguishes the third is its power of the *label*, and it is the power of `a` that picks the invariant. **So Q1 has one answer covering all three, not a third answer beside two others.**
+
+**(b) And it is not a volume term.** Your reading was that a constant-term subtraction is a volume term at the dimension the summand's units give. A volume term is the cosmological one, operator dimension **zero**, at `a^{+3}`; this sits at `a^{-3}`. ***Six powers apart.*** The constant is constant in the **label**, not in the scale factor. ⇒ **So it is not the cosmological term the ledger already carries, and your disjunction resolves to its second branch: a new entry.**
+
+### ⛭⛭ Whether it is degenerate with the free case's — it is not, and this one I computed rather than cited
+
+Your conditional was that if it were degenerate, the count would be three and the cost would not. **It is not degenerate.** On the admitted class — the scale factor *quantised*, so not a point — degeneracy would need one functional to be a multiple of the other, and `a^{-1}` and `a^{-3}` are distinct monomials whose only vanishing combination is trivial. ⇒ ***The count is three and the ledger cost is three.***
+
+⌗ *And the check separates the regimes rather than always returning independence: at **fixed** background the same two functionals **are** degenerate, which is your section's own "one-dimensional at fixed background" — which is why the answer is stated on the quantised class and not on a point.* The reason behind it is `sec:lock`'s own asymmetry, used as filed: at dimension four the collapse rests on an identity holding **pointwise in the scale factor**, *"which is why it descends to the quantized sector as an operator relation"*; at dimension six *"there is no such identity to descend"*, the collapse being **entirely** the one-parameter evaluation — exactly the half that fails under quantisation.
+
+### ⛭ The terminus is not taken, and its condition is exhibited false
+
+An invariant of the admitted family **does** carry it: dimension six is an entry of your own rank sequence, its rank there is already computed, and the order rule admits that dimension and no other at this order. ⇒ **So the outcome is the identification you asked for, not the terminus — and what the row now owes at this dimension is a *value*, not a basis.**
+
+⌗ **And one convergence worth recording.** The receipt that banks this rank is titled *"the ultraviolet object is a rank sequence and **the ledger is at stake at dimension six and not four**"*, reached from a rank sequence. **This subtraction lands exactly there, reached from a spectral sum.** Two routes to the same exposed entry, and neither was built to meet the other.
+
+⚠ **Not claimed:** no value for the coefficient, and **no choice of representative** among the five dimension-six scalars — the identification is of the operator **dimension**, which both the order rule and the power counting fix, and which scalar carries it is fixed by neither and is not guessed. The dimension-six rank is used as filed and not re-derived, as are the order rule, the free tower's `a^{-1}` scale, `r7064`'s count and `r7060`'s summand. No claim about the ledger's entry in the wider corpus — only that this one is not degenerate with the free case's, so it is a **second** scoping of the no-free-constant claim in this sector rather than the same one.
+
+⌗ *19 checks, all pass, exact throughout, no floats at all. The terminal branch is not taken and its condition is exhibited false; `r7065` carries no exit offer, so none is declined — nine of sixteen stands. **Ready for the gate.***
