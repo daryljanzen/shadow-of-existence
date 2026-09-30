@@ -6328,3 +6328,75 @@ attribution, and printed to be discounted.*
 
 ***`PO-56` TERMINATES on the stated ground that no instrument this construction has can attribute the
 modulation.*** *`r7035` calls that the terminal state itself and also a result. No fourth row was reached for.*
+
+## cc66.70 — the acceptance: what moves it, what cannot move it, and how far it moves
+
+*Measurements only. The law itself is `cc66.70`'s first receipt; this is the convergence side of it, taken up
+because `r7049` observed that $A_\ell$ is a sharper probe than the height ratios **and** that it had become
+free — `GRIDSAVE` writes the background $A_\ell$ needs in $1.45$ s per configuration without computing a
+spectrum at all. Receipt:
+`P15_CR_cosmology/P15_the_acceptance_does_not_move_under_refinement_and_three_of_the_twelve_axes_could_not_have_moved_it.py`,
+`GATES: ALL PASS`, $347$ s.*
+
+### ⛭ WHAT MOVES $A_\ell$, AND BY HOW MUCH — WORST SINGLE MULTIPOLE, NOT THE MEAN
+
+*Nine of the twelve axis-arm pairs move at least one input $A_\ell$ is built from. Against `r6911`'s
+$0.6\%$ floor, measured on a known injected contrast:*
+
+| axis | arm `cr` | control `lcdm` | points |
+|---|---|---|---|
+| $k_{\max}$ via `KFAC` ($2.0\to4.0$) | $0.00001\%$ — $41163\times$ inside | $0.00007\%$ — $8343\times$ | four |
+| the mode count `NK` | ⛔ **inert by construction** | $0.00000\%$ — $3083418\times$ | three |
+| the $\eta$ resolution `NLOS` ($560\to2240$) | $0.00076\%$ — $786\times$ | $0.00137\%$ — $437\times$ | three |
+| the $\eta$ half-width `NLOSW` ($6\to12$) | $0.00081\%$ — $739\times$ | $0.00147\%$ — $409\times$ | three |
+| the $\eta$ split `NLOSF` | $0.00454\%$ — $132\times$ | $0.00817\%$ — $73\times$ | **two** |
+| the reported $\ell$ grid `LSTEP` | ⛔ **inert by construction** | ⛔ **inert by construction** | two |
+
+⇒ ***The largest excursion anywhere among the nine is $0.00817\%$, inside the floor by $73\times$.*** *The
+**worst single multipole** is quoted throughout and not the mean over the range, because a mean can hide a
+moving tail; the mean is $0.0000\%$ to four places on every axis and would have been the weaker claim.*
+  ⚠ *`NLOSF` is a **two-point** axis and is not reported as converged: a two-point axis cannot turn over.
+  The three-point and four-point axes are monotone at the $10^{-7}$ level, so the pre-registered verdict
+  printed beside each of them is "inside the floor but the sequence has NOT turned over" — carried unaltered,
+  and not loosened after the numbers were in.*
+
+### ⛔ WHAT CANNOT MOVE IT — THREE OF TWELVE, AND THEY ARE TWO DIFFERENT THINGS
+
+*`A_\ell` is built from the background alone — $\mathrm{vis}(\eta)$, $x_0(\eta)$, $k$, $\mathrm dk$,
+$r_s^{*}$. An axis leaving all of those byte-identical cannot move it.*
+
+**① `NK` on the arm.** *The arm's ladder is $\sqrt{L(L+2)}\,$stretch out to `KMAXL` and `NK` is only a
+decimation cap never reached:* $1452$ modes at `base`, `nk15` and `nk20` alike, with `k`, `dk`, `eta`, `x0`
+and `vis` equal under `np.array_equal` and under sha256. **Confirmed at the spectrum, not only at the grid:**
+`real_cr_nk15_k0` and `real_cr_nk20_k0` against `real_cr_base_k0` at $\max|D_\ell| = 0.000\mathrm{e}{+}00$
+with an identical $\ell$ list, and both injection forms equal on every array.
+  ⛭ *And **the control moves** — $2547 \to 3822 \to 5094$ modes, $\max|D_\ell(\texttt{nk15}) -
+  D_\ell(\texttt{nk20})| = 1.71\times10^{-1}$ — which is what makes the arm's silence a reading rather than
+  a broken test.*
+
+**② `LSTEP` on both arms.** *$A_\ell$ is read at the **same multipoles at every setting** by construction, so
+the reported $\ell$ grid cannot enter it at all.* ⌗ *This one is a property of the **question**, not of the
+arm — and it is the half that shows the test had to be general: a list of known-inert knobs would not have
+contained it.*
+
+### ⛭ THE NARROWING, AT EVERY SETTING, AGAINST AN INDEPENDENT ROUTE
+
+| | |
+|---|---|
+| acceptance span, control | $5.1353$ ($5.1353$–$5.1360$ across twelve settings) |
+| acceptance span, arm | $4.4663$ ($4.4663$–$4.4670$) |
+| **arm narrower by** | $\mathbf{13.03\%}$ at **all twelve**, spread $0.0048$ percentage points |
+| `r6919`'s independent $\mathrm dr_s/\mathrm d\chi$ reading | $12.8\%$ — $0.23$ pp apart |
+
+⇒ *`r6919` reached $12.8\%$ by a route that computes no acceptance at all. The quantity the law's absolute
+prediction rides on is therefore **stable across every numerical setting in the sweep** and agrees with an
+independent measurement of the same physical narrowing.*
+
+### ⛔ WHAT THIS IS NOT
+
+***It is not `r7041`'s sweep and does not substitute for it.*** *The sweep asks what the **retention** and the
+peak heights do, measured on spectra; this asks what the kernel's $k$-acceptance does, computed from the
+background. **A converged acceptance with an unconverged retention would itself be a finding**, which is why
+the two are reported apart — as this seat's own pre-registration required before either was read.* ⛔ *Nine
+of twelve inside the floor is **not the row's convergence verdict**. And nothing here says which cosmology
+is right.*

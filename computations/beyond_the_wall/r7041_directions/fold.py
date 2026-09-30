@@ -20,7 +20,92 @@ import re
 
 import numpy as np
 
-W = 250
+W = 250                     # the DEFAULT width, and the width every slice banked before r7051 used
+
+
+def slice_range(log, lo):
+    """a slice's OWN declared k-range, read from its log -- `W` is only the fallback.
+
+    ⛔ ** THE FIRST VERSION ASSUMED THE TILING INSTEAD OF READING IT. **  It built the expected offsets as
+    `range(0, n, W)` from a single module-level `W`, so a configuration sliced at any other width read as
+    incomplete forever -- and a configuration whose width CHANGED between runs would have read as complete
+    off a set that does not tile.  *That is this stretch's own common thread for the fourth time: a claim
+    about a set made without reading the set.*
+      ⇒ The launcher now writes `__SLICE__ lo:hi` into each slice's log, so a slice states its own extent
+      and the fold CHECKS the union rather than predicting it.  Slices banked before that line existed
+      report no range, and for those -- and only those -- the historical 250 is assumed, which is what they
+      were actually run at.
+    """
+    try:
+        with open(log, encoding='utf-8', errors='replace') as f:
+            m = re.search(r'__SLICE__ (\d+):(\d+)', f.read())
+        if m:
+            return int(m.group(1)), int(m.group(2))
+    except OSError:
+        pass
+    return lo, lo + W
+
+
+def covered_to(outdir, tag):
+    """the first k-index NOT yet covered by a banked, done slice -- walking abutting ranges from 0.
+
+    ⛭ ** THIS IS WHAT LETS A CONFIGURATION CHANGE SLICE WIDTH WITHOUT DISCARDING ANYTHING. **  Because the
+    fold checks the UNION of declared ranges rather than a uniform width, new narrower slices may simply
+    ABUT the ones already banked: `0:250`, `250:500`, then `500:562`, `562:624`, ... still tiles `[0, n)`
+    exactly, with no gap and no overlap.  *Without the range-reading fold this would have meant re-running
+    every banked slice of the configuration at the new width.*
+    """
+    got = []
+    for f in sorted(glob.glob(os.path.join(outdir, f'{tag}_k*.npz'))):
+        m = re.search(r'_k(\d+)\.npz$', os.path.basename(f))
+        if not m:
+            continue
+        lo = int(m.group(1))
+        if _done(os.path.join(outdir, f'{tag}_k{lo}.log')):
+            got.append(slice_range(os.path.join(outdir, f'{tag}_k{lo}.log'), lo))
+    end = 0
+    for lo, hi in sorted(got):
+        if lo == end:
+            end = hi
+        elif lo > end:
+            break                        # a gap: everything past it must still be run
+    return end
+
+
+def tiling(outdir, tag, n):
+    """the slices present, and whether their declared ranges cover [0, n) exactly -- or None"""
+    got = []
+    for f in sorted(glob.glob(os.path.join(outdir, f'{tag}_k*.npz'))):
+        m = re.search(r'_k(\d+)\.npz$', os.path.basename(f))
+        if not m:
+            continue
+        lo = int(m.group(1))
+        log = os.path.join(outdir, f'{tag}_k{lo}.log')
+        if not _done(log):
+            continue
+        got.append(slice_range(log, lo) + (f,))
+    got.sort()
+    if not got or got[0][0] != 0:
+        return None
+    # ⛔ ** A CONFIGURATION THAT CHANGED WIDTH CAN CARRY A STRAY SLICE FROM THE OLD SCHEME, and the first
+    #   version of this walk was defeated by one. **  *`inj_fixed_lcdm_nlos2240` is tiled `0:250 ... 1500:1750`
+    #   at the old width, then `1750:1812 ... ` at the new one -- and it ALSO holds a `2500:2750` banked before
+    #   the change.  Once the narrow slices reach `2494:2556` that stray no longer abuts anything, so a walk
+    #   that refuses every non-abutting slice refuses the whole configuration forever.*
+    #     ⇒ ** The walk now STOPS once [0, n) is covered and returns only the slices it used. **  A slice past
+    #     the end is not part of the sum, which is both the right answer and the one that cannot double-count
+    #     the overlap.  *Refusing was safe -- it never summed a bad set -- but safe and stuck is still stuck.*
+    used, end = [], 0
+    for lo, hi, f in got:
+        if end >= n:
+            break                        # already covered: anything further is not part of the sum
+        if hi <= end:
+            continue                     # wholly redundant with what is already covered
+        if lo != end:                    # a real gap, or a partial overlap that cannot be resolved
+            return None
+        used.append((lo, hi, f))
+        end = hi
+    return used if end >= n else None
 
 
 def _done(log):
@@ -51,13 +136,10 @@ def load(outdir, tag):
     n = modes_from_log(k0log)
     if n is None or not _done(k0log):
         return None
-    want = list(range(0, n, W))
-    parts = []
-    for i in want:
-        f = os.path.join(outdir, f'{tag}_k{i}.npz')
-        if not (os.path.exists(f) and _done(os.path.join(outdir, f'{tag}_k{i}.log'))):
-            return None
-        parts.append(np.load(f))
+    got = tiling(outdir, tag, n)
+    if got is None:
+        return None
+    parts = [np.load(f) for _lo, _hi, f in got]
     ls = parts[0]['ls']
     for p in parts:
         if not np.array_equal(p['ls'], ls):
@@ -74,11 +156,15 @@ def status(outdir, tag):
         return 'complete (unsliced)'
     if n is None:
         return 'not started'
-    want = list(range(0, n, W))
-    have = sum(1 for i in want
-               if os.path.exists(os.path.join(outdir, f'{tag}_k{i}.npz'))
-               and _done(os.path.join(outdir, f'{tag}_k{i}.log')))
-    return f'{have}/{len(want)} slices'
+    # ⌗ the DENOMINATOR is still predicted from the default width, because a configuration's remaining
+    # slices have not been run and so have declared no ranges yet -- but the NUMERATOR counts what is
+    # actually banked and done.  *A partial read may therefore show a count against a width the
+    # configuration will not finish at; `load()` is the authority and it reads the ranges.*
+    done = [r for r in (tiling(outdir, tag, n) or [])]
+    have = len(done) if done else sum(
+        1 for f in glob.glob(os.path.join(outdir, f'{tag}_k*.npz'))
+        if _done(f[:-4] + '.log'))
+    return f'{have}/{len(range(0, n, W))} slices'
 
 
 if __name__ == '__main__':

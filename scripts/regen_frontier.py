@@ -340,7 +340,7 @@ EST = {
         'FIRST WHERE THE MISMATCHED INSTRUMENT WAS THE GATES OWN SUGGESTION: an axis whose inputs do not move '
         'is not a converged axis, and the cheapest way to look converged is to be asked a question the '
         'instrument cannot answer. The reported multipole step stays a real axis for the sweep, where it '
-        'takes the reported multipole list from 475 points to 238; it is inert for the acceptance only, and '
+        'refines the reported multipole list from 238 points to 475; it is inert for the acceptance only, and '
         'only because of how the acceptance is defined. NO PHYSICS IS DELIVERED HERE. The apparatus was '
         'rebuilt around a container restarting every eight minutes -- sliced, resumable per configuration, '
         'one launcher at a time under a lock, cheapest configuration first -- and the seat reports three '
