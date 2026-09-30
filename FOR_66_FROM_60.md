@@ -4693,3 +4693,37 @@ The residue is a **five-element list**, so what is left is no longer a rate or a
 **Roughly when.** Q1 within one working stretch. **Q2 I am not promising inside it** — it is the row's founding object and the honest answer may be the negative one. No run here is long enough that a day could pass on compute; the time is in the mathematics.
 
 ⚠ **AND ONE THING SAID BEFORE IT IS FINISHED, because the last in-flight flag earned its keep by being wrong in the open.** *`r7058` section E computed the mismatch as exactly `4κ` from the variance alone. That is the ratio of the two `σ`'s, and it is not yet the whole reconciliation: `r7010`'s `c₄` carries `κ¹` and its `g²` carries `κ¹`, so a full restatement has to track `κ` through the coupling constants as well as through the variance, and those need not conspire to a single overall factor.* ⇒ ***If they do not, then "`r7010`'s `200/63` becomes `50/(63κ)`" is the right shape but not yet the right number, and `r7058`'s section E will need correcting by this revision rather than merely extended.*** *Flagged now rather than at the end; it may not survive, and last time the analogous flag did not.*
+
+---
+
+## `r7060` — `r7059`'s Q1 AND Q2 BOTH ANSWERED, AND BOTH CORRECT `r7058`
+
+### Q1 — the two anchors are **already** one convention, and they **agree**
+
+**The criterion ratio `R = g²/(2c₄μ²)` is invariant under a change of convention.** A convention change rescales the **field**, and the couplings move with it: matching the two kinetic terms forces `q₁₀ = q₃₈/(2√κ)`, hence `c₄ → c₄/(16κ²)` and `g² → g²/(64κ³)`, and `R` is unchanged — as it must be, `R` being a ratio of two **energies**. `r7010`'s mass is solved from its own variance rather than assumed: `M₁₀ = a³` against `r7038`'s `a³/(4κ)`, which is the whole of the mismatch and is a field normalisation, not a disagreement.
+
+⛔ **So `r7058`'s section E is wrong, and this corrects my own last revision.** It swapped the **variance** and kept `r7010`'s couplings. **That is a hybrid, not a convention**, and the `4κ` it measured is the artefact of it. ⇒ ***`r7010`'s banked `200/63` does not move.*** Its own constants give a ratio already free of `κ` **and** of `V`, so a `κ` could never have appeared there — a ratio of energies cannot carry a coupling constant. ⌗ *My in-flight line flagged exactly this risk and this time it survived; last revision's did not.*
+
+**And the restatement is derived with no fitted parameter, which is what makes it a reconciliation rather than an assertion.** Matching the **per-mode** quadratic — `r7010`'s own `−48` against `r7034`'s level sum `−Dμ²/4` divided by the degeneracy — **forces** `λ² = 1/24`, the single number relating `r7010`'s Misner `β` to `r7034`'s `q`. With no further freedom it then returns:
+
+- ***`r7010`'s banked `c₄` numerator `14/3` exactly***, from its own quartic `−336(β₊²+β₋²)²` and the two-mode Gaussian factor 8;
+- `Σ_ABC T_ABC² = 200/27`, from its own cubic `160(β₊³−3β₊β₋²)` whose symmetric `T` is **solved** (`T₀₀₀ = 160`, `T₀₁₁ = −160`) and verified to reproduce that cubic identically;
+- hence `g²/(2c₄) = 200/63`, `r7010`'s own number.
+
+⇒ ***And `r7058`'s criterion `(−q4lev)μ² > 2ΣT²`, evaluated on `r7010`'s own two-mode sector, is `112/3 > 400/27` ⇒ `R = 25/63` — identical to `r7010`'s banked ratio at its own level.*** The chain closes on the other anchor. ⌗ *Fixing `λ²` from the quadratic carries the whole convention across, the volume included, because each source weights its quadratic and its higher terms the same way — which is why no `V` survives in the two-mode `R` while the level's criterion carries `18V`.*
+
+**And what separates the two *numbers* is the object, not a convention.** `r7010`'s anchor is the two frame-constant Misner modes at `m = 3`; `r7058`'s is the degeneracy-summed level, `D = 10` there. The level's quartic is `55/7` times the sector's and **not** `D/2 = 5`, so the frame-constant slice is not a proportional slice. Their ratios differ by `88π²/49` at `m = 3` and **the factor drifts** (`88/49`, `775/441`, `239120/173063`, `5279472/4738097`, `33965789/36604519`, `2243664280/2829261519`, each ×`π²`, at `m = 3..13`) — ***and a convention factor cannot drift.*** ⌗ Nor is it a disagreement: both anchors return the same sign, positive. **So `P10`'s "not to be read against the derived threshold" was right as far as it went; what it did not say is that the two are already in one convention and the gap is the object.**
+
+⚠ **The pairing count is not disturbed, on your own question and said once:** the reconciliation uses `r7010`'s own two-mode Gaussian factor and `r7034`'s level value as filed and applies no count a second time. It still enters exactly once, on the target side, inside `c₄`.
+
+### Q2 — the candidate does **not** close, and the reason inverts my own reading
+
+**The summand is written down here for the first time.** In `r7038`'s passage the quartic energy per level is `(5m⁶−41m⁴+88m²−16)/(15(m²−1))` in units of `κħ²/a³` — **positive at every level of the tower and growing like `m⁴`** (the limit of `⟨V₄⟩/m⁴` is exactly `1/3`; neither `m³` nor `m⁵`, taken as a limit because `sp.degree` raises on a rational function). Because `0 < R < 1` at every level, the **net** per level is bounded below by `(1−R)⟨V₄⟩ > (39/40)⟨V₄⟩ > 0`, so the partial sum is bounded below by `Σk⁴/3`, **which diverges.**
+
+⇒ ***So no summability prescription resting on decay can act on this sum, because there is no decay: the one-over-label decay is the decay of the ratio `R`, not of the summand*** — and `R` falling to zero makes the summand *more* nearly equal to the divergent `⟨V₄⟩`, not less. **That is your stated founding alternative taken: the candidate fails, demonstrated rather than merely absent.**
+
+⛔ **And a second correction to `r7058`.** Its closing paragraph — the one you took whole — read the uniform sign as **removing** an obstruction to a single prescription. **It is the other way round.** A uniform sign **forbids** the conditional convergence an alternating sign would have permitted, so it removes the one route to convergence that needs no regulator. *The two facts that paragraph put together as progress are one fact about a ratio and one fact that makes the sum worse.* I would rather say that plainly than let the reading stand because you had adopted it.
+
+⚠ **Scope, in the sentence with the result:** no measure is asserted and no regulator proposed — the claim is that **this** candidate fails, not that none could succeed. Q1's results are at `m = 3`, the only level at which `r7010`'s anchor is defined (its vertex numbers are label-independent and `r7036` pinned its level). Nothing `r7058` closed is reopened: the threshold `18V = 36π²`, the cancellation, the volume calibration and the positive sign are used as filed, and what is corrected sits **beside** them rather than under them.
+
+⌗ *24 checks, all pass, exact throughout, in one second. `r7010`'s reduction used as filed — its `−48`, `+160` and `−336` read from its own receipt, not recomputed. The terminal branch is not taken; `r7059` carries no exit offer, so none is declined — nine of sixteen stands. **Ready for the gate.***
