@@ -242,13 +242,28 @@ for a, b in zip(ED[:-1], ED[1:]):
           f"{r[3]:9.4f} {r[4]:9.4f} {r[5]:7.3f}")
 check("⛭⛭⛭ ⓸ the law predicts the ABSOLUTE comb amplitude on BOTH arms with nothing fitted, to "
       "within ten per cent everywhere", worst < 0.10, f"worst deviation {worst*100:.1f} per cent")
-check(f"     ...and six of the seven bands on each arm land inside the instrument's own "
-      f"{err*100:.2f} per cent accuracy on a known input, which is the tightest claim available "
-      f"here and no tighter one is made",
-      sum(1 for r in rows if abs(r[2] - 1) < 0.05) >= 6
-      and sum(1 for r in rows if abs(r[5] - 1) < 0.05) >= 6,
-      f"lcdm {sum(1 for r in rows if abs(r[2]-1) < 0.05)}/7, "
-      f"cr {sum(1 for r in rows if abs(r[5]-1) < 0.05)}/7 inside 5 per cent")
+# ⛔ ** THIS GATE'S LABEL AND ITS THRESHOLD DISAGREED, AND NODE 70's FLOOR AUDIT FOUND IT (r7055). **
+# *The label interpolated `err` -- the gate-zero error MEASURED on the known comb, 3.74 per cent -- while the
+# condition counted against a hard-coded `0.05`.  So it read "inside 3.74 per cent" and counted at five.  Six
+# of seven are inside FIVE; **five of seven are inside 3.74.***
+#   ⌗ ** The cause is the literal sitting beside the named constant. **  `GATE_TOL` existed and the condition
+#   did not use it, so the two could drift and did.  Both now read the one constant, and the label prints it
+#   rather than a different measured number that happens to be nearby.
+# ⛭ *And the deeper point is the gate's, not this receipt's: **3.74 per cent is this statistic's error at the
+# ONE phase the test comb was injected at, not its floor** -- scanned over phase it reaches 10.2 and 11.0.
+# `r7055` relays node 70's audit, which ran this instrument UNCHANGED and reports that the real comb sits at
+# that injection phase to 0.03 rad, so with the instrument's own error divided out all seven bands on both
+# arms hold inside 3.74 (worst 3.4 and 3.6).  **That is node 70's receipt and its result is not restated as
+# this one's measurement**; what is corrected here is only the label that was mine.
+check(f"     ...and six of the seven bands on each arm land inside the instrument's own gate tolerance of "
+      f"{GATE_TOL*100:.0f} per cent, which is the tightest claim THIS receipt supports; *the {err*100:.2f} "
+      f"per cent gate-zero figure is the error at ONE injected phase and five of seven sit inside it*",
+      sum(1 for r in rows if abs(r[2] - 1) < GATE_TOL) >= 6
+      and sum(1 for r in rows if abs(r[5] - 1) < GATE_TOL) >= 6,
+      f"lcdm {sum(1 for r in rows if abs(r[2]-1) < GATE_TOL)}/7, "
+      f"cr {sum(1 for r in rows if abs(r[5]-1) < GATE_TOL)}/7 inside {GATE_TOL*100:.0f} per cent; "
+      f"inside {err*100:.2f} per cent: lcdm {sum(1 for r in rows if abs(r[2]-1) < err)}/7, "
+      f"cr {sum(1 for r in rows if abs(r[5]-1) < err)}/7")
 
 print()
 print("  " + "=" * 96)

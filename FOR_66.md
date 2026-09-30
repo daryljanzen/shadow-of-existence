@@ -5350,6 +5350,47 @@ PINNED = {'systematic uncertainty': 1}
 
 ---
 
+## ⛭ `r7055` — THE GATE'S LABEL IS FIXED, AND ITS CAUSE WAS A LITERAL BESIDE A NAMED CONSTANT
+
+*Taken and done in the one file it touches, with no instrument re-run, as `r7055` asked.* **And node 70's
+reading is confirmed by my own receipt, which now prints both counts:**
+
+```
+lcdm 6/7, cr 6/7 inside 5 per cent;  inside 3.74 per cent: lcdm 5/7, cr 5/7
+```
+
+`GATES: ALL PASS`, 104 s. *So `70`'s "five, not six, at the quoted floor" reproduces on this instrument
+unchanged — which is the right way for me to confirm it, since it is their measurement and not mine.*
+
+### ⛔ THE CAUSE, WHICH IS WORTH MORE THAN THE FIX
+
+*The label interpolated `err` — the gate-zero error measured on the known comb, $3.74$ per cent — while the
+condition counted against a **hard-coded `0.05`**. `GATE_TOL = 0.05` existed six lines up and the condition
+did not use it.*
+  ⇒ ***A literal sitting beside the constant it duplicates is two numbers that can drift, and these did.***
+  *Both now read `GATE_TOL`, and the label prints that constant rather than a different measured number that
+  happened to be nearby. ⌗ It is the same shape as the fold predicting the tiling and the fast-job replica
+  remembering a list: **the label was a copy of a threshold rather than a reading of it.** Seventh instance.*
+
+### ✔ WHAT I HAVE NOT DONE, DELIBERATELY
+
+⛔ *I have **not** restated `70`'s floor result as this receipt's measurement.* The phase scan reaching $10.2$
+and $11.0$ per cent, the $0.03$ rad coincidence, and all seven holding inside $3.74$ with the instrument's own
+error divided out are **their receipt's**, and mine points at it rather than absorbing it. ⛔ *And I re-ran
+nothing but the receipt itself — no instrument run, per your instruction.*
+
+⌗ *Your sentence about the two arms being **one** test rather than two, correlating at $0.998$: noted, and I
+record that it lands against the presentation rather than the law. **You are right that my receipt never
+claimed two confirmations** — but it also never said they were one, and a receipt that reports both arms
+without saying how correlated they are is an invitation to read them as independent. *If the sweep's report
+touches the two-arm comparison I will state the correlation beside it rather than leave the inference open.**
+
+### ⌗ AND THE FIGURE WAS IN TWO OF MY OWN FILES BESIDES THE GATE
+
+*`receipts/INDEX.md`'s row and this reply file both carried "six of seven inside the instrument's own
+$3.74\%$". **Both corrected**, by the rule `r7053` settled: a figure I supplied is mine to fix wherever it was
+quoted. The register's and the paper's copies are yours, and `r7055` says they are already withdrawn there.*
+
 ## ⛭ `r7053` — THE SCHEDULE FIGURES YOU QUOTED ARE MINE AND THEY ARE NOW WRONG. TWO DEFECTS SINCE.
 
 *`r7053` reads the sweep as "$557$ of $669$ slices, $22$ to $27$ an hour, so twenty-one hours of compute".
@@ -5561,7 +5602,7 @@ sequence, and `report_c.py` labels it as partial rather than reading an incomple
 | | |
 |---|---|
 | the factorisation | exact — $2.7\times10^{-15}$ control, $2.1\times10^{-15}$ arm |
-| **the law forward, ABSOLUTE, nothing fitted** | worst band $6.7\%$; **six of seven inside the measuring instrument's own $3.74\%$ on a known input**, on both arms |
+| **the law forward, ABSOLUTE, nothing fitted** | worst band $6.7\%$; **six of seven inside the instrument's gate tolerance of $5\%$**, on both arms --- ⚠ *corrected at `r7055`: FIVE of seven sit inside the $3.74\%$ figure, which is the error at ONE injected phase and not a floor* |
 | the acceptance width | the arm's $13.1\%$ narrower against `r6919`'s independently measured $12.8\%$ — *two routes, agreement built in nowhere* |
 | the reproduction gate | $1.0587$ unsliced against `r6919`'s $1.0587$ sliced, $0.0000\%$ — *so it covers the run scheme and not only the statistic* |
 
