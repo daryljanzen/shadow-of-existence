@@ -90,7 +90,8 @@ def main():
     print(__doc__)
     print("=" * 104)
     out = {}
-    for arm in ('lcdm', 'cr'):
+    # ⌗ the arm with fewer modes first, same reasoning as the per-setting ordering below
+    for arm in ('cr', 'lcdm'):
         b = os.path.join(D, f'g_{arm}_base.npz')
         if not os.path.exists(b):
             print(f"  ⛔ {arm}: the base grid is missing, so no sequence has a first point.")
@@ -100,7 +101,18 @@ def main():
         ls = np.unique(np.round(np.linspace(LO, HI, NL) * lA).astype(int))
         # ⌗ plain ints, not numpy scalars: `list(ls)` prints `[np.int64(256), ...]` and buries the numbers
         print(f"  {arm}: l_A = {lA:.2f}; reading A_l at l = {[int(x) for x in ls]}")
-        for tag in sorted({t for v in SEQ.values() for t in v}):
+        # ⌗ ** CHEAPEST CONFIGURATION FIRST, because the windows between restarts are about eight minutes. **
+        # *Cost goes as (modes x eta points), and `kfac40`/`nk20` carry 5094 modes against `base`'s 2547
+        # while `nlos2240` carries four times the eta points.  Ordering by that product means more
+        # configurations land per window; the cache makes the order affect the RATE and never the result.*
+        def _cost(t):
+            g = os.path.join(D, f'g_{arm}_{t}.npz')
+            if not os.path.exists(g):
+                return float('inf')
+            d = np.load(g)
+            return int(d['n_modes']) * int(d['nlos'])
+
+        for tag in sorted({t for v in SEQ.values() for t in v}, key=_cost):
             r = cached(arm, tag, ls)
             if r is not None:
                 out[(arm, tag)] = r
