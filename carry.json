@@ -4,6 +4,10 @@
    "receipts/L259_the_distance_from_the_present/D1_a_check_pinned_to_a_distance_from_the_present_is_pinned_to_the_present.py": {
     "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/36753406652",
     "since": "f5d18cfc369d7b07467a39aeb77f03d0b15921d9"
+   },
+   "receipts/L_numerics/Q1_a_stated_tolerance_is_a_request_and_the_corpus_answers_it.py": {
+    "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/36780627216",
+    "since": "ee09d134211af3d880b55a8e86d833c84d6dddfa"
    }
   },
   "tolerance": {
