@@ -1,0 +1,104 @@
+held           CR_cosmology.tex           301.76     not a transposition -- external datum                      own prints: none; carrier prints: False
+held           CR_cosmology.tex           1088       not a transposition -- external datum                      own prints: none; carrier prints: False
+held           CR_cosmology.tex           2.57       not a transposition -- the carrier restates                own prints: none; carrier prints: True
+held           CR_cosmology.tex           1091       not a transposition -- the carrier restates                own prints: none; carrier prints: True
+held           CR_cosmology.tex           1091       not a transposition -- the carrier restates                own prints: none; carrier prints: True
+held           CR_cosmology.tex           301.7      not a transposition -- external datum                      own prints: none; carrier prints: True
+held           CR_cosmology.tex           301.7      not a transposition -- external datum                      own prints: none; carrier prints: True
+held           CR_cosmology.tex           301.7      not a transposition -- external datum                      own prints: none; carrier prints: False
+held           CR_cosmology.tex           301.7      not a transposition -- external datum                      own prints: none; carrier prints: False
+CONFIRMED      CR_cosmology.tex           1.58       not a transposition -- the own group prints it at run time own prints: ['P15_the_full_range_refit_holds_the_background_and_the_phase_residual_was_quantised']
+CONFIRMED      CR_cosmology.tex           1.58       not a transposition -- the own group prints it at run time own prints: ['P15_the_full_range_refit_holds_the_background_and_the_phase_residual_was_quantised']
+CONFIRMED      CR_cosmology.tex           0.2405     not a transposition -- the own group prints it at run time own prints: ['P15_at_its_own_preferred_H0_the_crossing_arm_predicts_the_acoustic_comb_with_no_fitted_number']
+held           CR_cosmology.tex           133        not a transposition -- configuration value                 own prints: none; carrier prints: True
+held           CR_cosmology.tex           133        not a transposition -- configuration value                 own prints: none; carrier prints: True
+held           CR_cosmology.tex           133        not a transposition -- configuration value                 own prints: none; carrier prints: True
+held           CR_cosmology.tex           133        not a transposition -- configuration value                 own prints: none; carrier prints: True
+held           CR_cosmology.tex           2.10       not a transposition -- configuration value                 own prints: none; carrier prints: True
+held           CR_cosmology.tex           2.10       not a transposition -- configuration value                 own prints: none; carrier prints: True
+held           CR_cosmology.tex           2.10       not a transposition -- configuration value                 own prints: none; carrier prints: True
+held           CR_cosmology.tex           0.0467     not a transposition -- the carrier holds it as an input    own prints: none; carrier prints: True
+CONFIRMED      CR_cosmology.tex           2.200      not a transposition -- the own group prints it at run time own prints: ['P15_two_arm_control_and_guard']
+CONFIRMED      CR_cosmology.tex           0.359      not a transposition -- the own group prints it at run time own prints: ['P15_the_low_multipole_depth_gap_closes_and_two_defects_were_cancelling']
+CONFIRMED      CR_cosmology.tex           0.359      not a transposition -- the own group prints it at run time own prints: ['P15_the_low_multipole_depth_gap_closes_and_two_defects_were_cancelling']
+CONFIRMED      CR_cosmology.tex           0.435      not a transposition -- the own group prints it at run time own prints: ['P15_the_low_multipole_depth_gap_closes_and_two_defects_were_cancelling']
+CONFIRMED      CR_cosmology.tex           0.435      not a transposition -- the own group prints it at run time own prints: ['P15_the_low_multipole_depth_gap_closes_and_two_defects_were_cancelling']
+CONFIRMED      CR_cosmology.tex           0.487      not a transposition -- the own group prints it at run time own prints: ['P15_the_low_multipole_depth_gap_closes_and_two_defects_were_cancelling']
+CONFIRMED      CR_cosmology.tex           0.487      not a transposition -- the own group prints it at run time own prints: ['P15_the_low_multipole_depth_gap_closes_and_two_defects_were_cancelling']
+CONFIRMED      CR_cosmology.tex           0.666      not a transposition -- the own group prints it at run time own prints: ['P15_the_low_multipole_depth_gap_closes_and_two_defects_were_cancelling']
+CONFIRMED      CR_cosmology.tex           0.666      not a transposition -- the own group prints it at run time own prints: ['P15_the_low_multipole_depth_gap_closes_and_two_defects_were_cancelling']
+CONFIRMED      CR_cosmology.tex           0.359      not a transposition -- the own group prints it at run time own prints: ['P15_the_low_multipole_floor_moves_with_no_background_and_the_factor_two_is_the_late_isw']
+CONFIRMED      CR_cosmology.tex           0.359      not a transposition -- the own group prints it at run time own prints: ['P15_the_low_multipole_floor_moves_with_no_background_and_the_factor_two_is_the_late_isw']
+CONFIRMED      CR_cosmology.tex           0.435      not a transposition -- the own group prints it at run time own prints: ['P15_the_low_multipole_floor_moves_with_no_background_and_the_factor_two_is_the_late_isw']
+CONFIRMED      CR_cosmology.tex           0.435      not a transposition -- the own group prints it at run time own prints: ['P15_the_low_multipole_floor_moves_with_no_background_and_the_factor_two_is_the_late_isw']
+CONFIRMED      CR_cosmology.tex           0.487      not a transposition -- the own group prints it at run time own prints: ['P15_the_low_multipole_floor_moves_with_no_background_and_the_factor_two_is_the_late_isw']
+CONFIRMED      CR_cosmology.tex           0.487      not a transposition -- the own group prints it at run time own prints: ['P15_the_low_multipole_floor_moves_with_no_background_and_the_factor_two_is_the_late_isw']
+CONFIRMED      CR_cosmology.tex           0.666      not a transposition -- the own group prints it at run time own prints: ['P15_the_low_multipole_floor_moves_with_no_background_and_the_factor_two_is_the_late_isw']
+CONFIRMED      CR_cosmology.tex           0.666      not a transposition -- the own group prints it at run time own prints: ['P15_the_low_multipole_floor_moves_with_no_background_and_the_factor_two_is_the_late_isw']
+CONFIRMED      CR_cosmology.tex           0.911      not a transposition -- the own group prints it at run time own prints: ['P15_the_low_multipole_floor_moves_with_no_background_and_the_factor_two_is_the_late_isw']
+CONFIRMED      CR_cosmology.tex           0.983      not a transposition -- the own group prints it at run time own prints: ['P15_the_low_multipole_floor_moves_with_no_background_and_the_factor_two_is_the_late_isw']
+CONFIRMED      CR_cosmology.tex           0.983      not a transposition -- the own group prints it at run time own prints: ['P15_the_low_multipole_floor_moves_with_no_background_and_the_factor_two_is_the_late_isw']
+CONFIRMED      CR_cosmology.tex           0.998      not a transposition -- the own group prints it at run time own prints: ['P15_the_low_multipole_floor_moves_with_no_background_and_the_factor_two_is_the_late_isw']
+CONFIRMED      CR_cosmology.tex           0.998      not a transposition -- the own group prints it at run time own prints: ['P15_the_low_multipole_floor_moves_with_no_background_and_the_factor_two_is_the_late_isw']
+CONFIRMED      CR_cosmology.tex           0.998      not a transposition -- the own group prints it at run time own prints: ['P15_the_low_multipole_floor_moves_with_no_background_and_the_factor_two_is_the_late_isw']
+CONFIRMED      CR_cosmology.tex           0.998      not a transposition -- the own group prints it at run time own prints: ['P15_the_low_multipole_floor_moves_with_no_background_and_the_factor_two_is_the_late_isw']
+CONFIRMED      CR_cosmology.tex           0.998      not a transposition -- the own group prints it at run time own prints: ['P15_the_low_multipole_floor_moves_with_no_background_and_the_factor_two_is_the_late_isw']
+CONFIRMED      CR_cosmology.tex           0.998      not a transposition -- the own group prints it at run time own prints: ['P15_the_low_multipole_floor_moves_with_no_background_and_the_factor_two_is_the_late_isw']
+CONFIRMED      CR_cosmology.tex           0.998      not a transposition -- the own group prints it at run time own prints: ['P15_the_low_multipole_floor_moves_with_no_background_and_the_factor_two_is_the_late_isw']
+CONFIRMED      CR_cosmology.tex           0.998      not a transposition -- the own group prints it at run time own prints: ['P15_the_low_multipole_floor_moves_with_no_background_and_the_factor_two_is_the_late_isw']
+held           CR_cosmology.tex           2.264      not a transposition -- the carrier restates                own prints: none; carrier prints: True
+held           CR_cosmology.tex           2.298      not a transposition -- the carrier restates                own prints: none; carrier prints: True
+held           CR_cosmology.tex           68.6       not a transposition -- external datum                      own prints: none; carrier prints: True
+CONFIRMED      CR_cosmology.tex           0.855      not a transposition -- the own group prints it at run time own prints: ['P15_the_shared_fraction_does_not_mean_what_i_said_and_the_peak_trough_pattern_is_the_arms_alone']
+held           CR_cosmology.tex           228        not a transposition -- coincidence                         own prints: none; carrier prints: True
+held           CR_cosmology.tex           276.0      not a transposition -- the carrier holds it as an input    own prints: none; carrier prints: True
+held           CR_cosmology.tex           0.359      not a transposition -- the carrier restates                own prints: none; carrier prints: True
+held           CR_cosmology.tex           0.359      not a transposition -- the carrier restates                own prints: none; carrier prints: True
+held           CR_cosmology.tex           0.435      not a transposition -- the carrier restates                own prints: none; carrier prints: True
+held           CR_cosmology.tex           0.435      not a transposition -- the carrier restates                own prints: none; carrier prints: True
+held           CR_cosmology.tex           0.487      not a transposition -- the carrier restates                own prints: none; carrier prints: True
+held           CR_cosmology.tex           0.487      not a transposition -- the carrier restates                own prints: none; carrier prints: True
+held           CR_cosmology.tex           0.666      not a transposition -- the carrier restates                own prints: none; carrier prints: True
+held           CR_cosmology.tex           0.666      not a transposition -- the carrier restates                own prints: none; carrier prints: True
+held           CR_cosmology.tex           0.685      not a transposition -- external datum                      own prints: none; carrier prints: False
+held           CR_cosmology.tex           10.8       intentional -- the paper cites the deriving SECTION        own prints: none; carrier prints: True
+held           SdS-slicing-curve_v2.tex   -3/4       intentional -- a proof's algebra belongs to its propositio own prints: none; carrier prints: False
+held           SdS-slicing-curve_v2.tex   -3/4       not a transposition -- coincidence                         own prints: none; carrier prints: False
+CONFIRMED      canonical_time.tex         3.3387     not a transposition -- the own group prints it at run time own prints: ['LIFT_adiabatic_correction']
+CONFIRMED      canonical_time.tex         1/24       not a transposition -- the own group prints it at run time own prints: ['P10_the_covariant_quartic_is_seven_rationals_carried_by_an_identity_and_no_measurement_route_reaches_them']
+CONFIRMED      canonical_time.tex         1/8        not a transposition -- the own group prints it at run time own prints: ['P10_the_covariant_quartic_is_seven_rationals_carried_by_an_identity_and_no_measurement_route_reaches_them']
+CONFIRMED      canonical_time.tex         1/8        not a transposition -- the own group prints it at run time own prints: ['P10_the_covariant_quartic_is_seven_rationals_carried_by_an_identity_and_no_measurement_route_reaches_them']
+CONFIRMED      canonical_time.tex         19/192     not a transposition -- the own group prints it at run time own prints: ['P10_the_covariant_quartic_is_seven_rationals_carried_by_an_identity_and_no_measurement_route_reaches_them']
+CONFIRMED      canonical_time.tex         7/48       not a transposition -- the own group prints it at run time own prints: ['P10_the_covariant_quartic_is_seven_rationals_carried_by_an_identity_and_no_measurement_route_reaches_them']
+held           cosmogenesis_paper.tex     2.5671     intentional -- the prose names the computing receipt inlin own prints: none; carrier prints: False
+held           cosmogenesis_paper.tex     4.4611     intentional -- the prose names the computing receipt inlin own prints: none; carrier prints: False
+held           cosmogenesis_paper.tex     6.14       not a transposition -- external datum                      own prints: none; carrier prints: True
+held           cosmogenesis_paper.tex     1.4904     not a transposition -- configuration value                 own prints: none; carrier prints: True
+held           cosmogenesis_paper.tex     4.17       not a transposition -- configuration value                 own prints: none; carrier prints: False
+held           cosmogenesis_paper.tex     4.17       not a transposition -- configuration value                 own prints: none; carrier prints: False
+held           cosmogenesis_paper.tex     1.66       not a transposition -- external datum                      own prints: none; carrier prints: False
+CONFIRMED      cosmogenesis_paper.tex     0.247      not a transposition -- the own group prints it at run time own prints: ['P16_theory_error_and_likelihood']
+CONFIRMED      cosmogenesis_paper.tex     0.247      not a transposition -- the own group prints it at run time own prints: ['P16_theory_error_and_likelihood']
+held           cosmogenesis_paper.tex     2.53       not a transposition -- external datum                      own prints: none; carrier prints: False
+held           cosmogenesis_paper.tex     2.99       not a transposition -- external datum                      own prints: none; carrier prints: True
+held           matter_sector_paper.tex    1/16       not a transposition -- external datum                      own prints: none; carrier prints: True
+held           matter_sector_paper.tex    192        not a transposition -- external datum                      own prints: none; carrier prints: True
+
+40 "own prints" line(s): 40 CONFIRMED, 0 NOT CONFIRMED
+
+NOTHING PRINTS -- no fresh run of the own group or the carrier carries the number: 13
+  CR_cosmology.tex           301.76     not a transposition -- external datum                      carrier holds in source: True; own holds in source: none | carrier H0_acoustic_angle_and_seam
+  CR_cosmology.tex           1088       not a transposition -- external datum                      carrier holds in source: True; own holds in source: none | carrier P15_the_damping_signature_error_budget_and_the_convention_do
+  CR_cosmology.tex           301.7      not a transposition -- external datum                      carrier holds in source: True; own holds in source: none | carrier P15_the_line_of_sight_transfer
+  CR_cosmology.tex           301.7      not a transposition -- external datum                      carrier holds in source: True; own holds in source: none | carrier P15_two_arm_control_and_guard
+  CR_cosmology.tex           0.685      not a transposition -- external datum                      carrier holds in source: True; own holds in source: none | carrier P15_verify_doppler_lowell
+  SdS-slicing-curve_v2.tex   -3/4       intentional -- a proof's algebra belongs to its propositio carrier holds in source: True; own holds in source: none | carrier P03_triple_angle_gnomonic
+  SdS-slicing-curve_v2.tex   -3/4       not a transposition -- coincidence                         carrier holds in source: True; own holds in source: none | carrier P03_triple_angle_gnomonic
+  cosmogenesis_paper.tex     2.5671     intentional -- the prose names the computing receipt inlin carrier holds in source: True; own holds in source: none | carrier P16_validate_bbn
+  cosmogenesis_paper.tex     4.4611     intentional -- the prose names the computing receipt inlin carrier holds in source: True; own holds in source: none | carrier P16_validate_bbn
+  cosmogenesis_paper.tex     4.17       not a transposition -- configuration value                 carrier holds in source: True; own holds in source: none | carrier P15_the_transfers_running_is_a_function_of_one_variable_so_t
+  cosmogenesis_paper.tex     4.17       not a transposition -- configuration value                 carrier holds in source: True; own holds in source: none | carrier P16_the_leading_order_interior_is_adequate
+  cosmogenesis_paper.tex     1.66       not a transposition -- external datum                      carrier holds in source: True; own holds in source: none | carrier P16_cooling_leg_reduction
+  cosmogenesis_paper.tex     2.53       not a transposition -- external datum                      carrier holds in source: True; own holds in source: none | carrier P16_validate_bbn
+
+UNMEASURED (timeout): 0
