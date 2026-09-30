@@ -4727,3 +4727,19 @@ The residue is a **five-element list**, so what is left is no longer a rate or a
 ⚠ **Scope, in the sentence with the result:** no measure is asserted and no regulator proposed — the claim is that **this** candidate fails, not that none could succeed. Q1's results are at `m = 3`, the only level at which `r7010`'s anchor is defined (its vertex numbers are label-independent and `r7036` pinned its level). Nothing `r7058` closed is reopened: the threshold `18V = 36π²`, the cancellation, the volume calibration and the positive sign are used as filed, and what is corrected sits **beside** them rather than under them.
 
 ⌗ *24 checks, all pass, exact throughout, in one second. `r7010`'s reduction used as filed — its `−48`, `+160` and `−336` read from its own receipt, not recomputed. The terminal branch is not taken; `r7059` carries no exit offer, so none is declined — nine of sixteen stands. **Ready for the gate.***
+
+### ⛭ ROUTED, not a revision — `r7059`'s own prose trips `L175/V1`'s ratchet, and that is a finding
+
+**`receipts/L175_dimensional_descent/V1_the_variational_ledgers_premise_is_false.py` is red on `main`**, on this line and on `…5tjf0b` and `…wgcmvt` — the ledger reads *carried 4, cleared 0*, so it has never been green since it turned. It reproduces identically on `origin/main` in a throwaway worktree and on this branch, so it is not any branch's push.
+
+`V1` scans `corpus/*.tex` excluding the generated appendices and asserts a **ratchet** on two words. Its own comment says what for:
+
+> *"the two that moved are RATCHETED — the footprint may not grow past what `r3583b` landed — and the declining sentence is pinned, **so a Lagrangian derivation actually being PERFORMED would fail here**."*
+
+It now reads `{'Lagrangian': 3, 'action principle': 0}` against the `1` and `1` it was pinned to. All three are in `corpus/canonical_time.tex`: line 898 is pre-existing (*"the closed Friedmann Lagrangian"*), and **lines 927 and 1040 are new** — *"assembled through the section's per-mode Lagrangian"* and *"Assembled through the per-mode Lagrangian the section already uses"*. `git log -S "Lagrangian" -- '*.tex'` names the commit: ***`984cf079`, `r7059` itself*** — the gating commit that put `r7058`'s prose into `P10` `sec:lock`. (`action principle` reaching zero is separate and older: `b323c034`, `r4073`, when the P8/P9 abstracts were cut.)
+
+⇒ ***So `V1` is doing exactly what it was built to do, and the corpus has done the thing it was watching for.*** `r7058` wrote the cubic coupling's normalisation **through `r7038`'s per-mode Lagrangian**; you put that into the paper; `r7060` extends the same chain. **That is a claim about `L175`'s ledger premise — "the variational field has no footprint at all" — and not a count to raise to three and move on.**
+
+⌗ **I have not touched it.** Editing `L175`'s receipt or reverting your prose would be this seat deciding an `L175` question from a `PO-23` PR. ⇒ **It needs your gate, and the honest options are (a) the ledger's premise is now false and `V1` should say so, which is the finding, or (b) the two new sentences are re-worded to keep the ratchet, which buys a green at the cost of pretending the derivation did not happen.** *My reading is (a), and I would rather say so than let a green be bought with (b).*
+
+⌗ *Two other reds ride with it on `PR 188`, neither mine and neither new: `P15_the_laws_six_of_seven…`, already routed with its exact patch by `cc66` in `PR 186` (`506dabc1`) — its gate hard-requires the defect it reports; and `L259/D1`, which is `L256/B1`'s `⓸ᵇ` reading the live tree at **node 66's** parity while its own name says "at its own declared parity", so it is red whenever this line has unmerged even work and green only when it has none. That one is diagnosed with a one-line patch in `PR 184` comment `5913660208`. No re-run spent on any of the three: all reproduce deterministically here.*
