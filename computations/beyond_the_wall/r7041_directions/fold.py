@@ -22,6 +22,38 @@ import numpy as np
 
 W = 250                     # the DEFAULT width, and the width every slice banked before r7051 used
 
+# ⛭ THE WIDTH POLICY LIVES HERE from this revision, because `next_slices` imports this module and not the
+#   other way round, and because the count below needs it.  `W` above stays exactly what it says it is: the
+#   fallback for a slice that declared no range, which is history and does not move.
+GRID = '/tmp/n66/r7041/grid'
+BASE_W = 100                # was 250: a slice must finish inside a container window or it is redone from nothing
+BASE_NLOS = 560
+MIN_W = 40
+LSTEP_ELL = {'lstep4': 475}      # tag -> reported l count; everything else runs the base LSTEP=8
+BASE_ELL = 238
+
+
+def arm_cfg(tag):
+    """`inj_sweepown_lcdm_nlosf90` -> ('lcdm', 'nlosf90'); None when the tag carries no arm"""
+    parts = tag.split('_')
+    for i, p in enumerate(parts):
+        if p in ('cr', 'lcdm') and i + 1 < len(parts):
+            return p, '_'.join(parts[i + 1:])
+    return None, None
+
+
+def width_for(arm, tag):
+    """equal-cost width for this configuration, or the default when no grid was banked for it"""
+    w = BASE_W * BASE_ELL / LSTEP_ELL.get(tag, BASE_ELL)
+    g = os.path.join(GRID, f'g_{arm}_{tag}.npz')
+    if not os.path.exists(g):
+        return max(MIN_W, int(round(w)))
+    try:
+        nlos = int(np.load(g)['nlos'])
+    except Exception:
+        return max(MIN_W, int(round(w)))
+    return max(MIN_W, int(round(w * BASE_NLOS / nlos)))
+
 
 def slice_range(log, lo):
     """a slice's OWN declared k-range, read from its log -- `W` is only the fallback.
@@ -87,25 +119,48 @@ def tiling(outdir, tag, n):
     got.sort()
     if not got or got[0][0] != 0:
         return None
-    # ⛔ ** A CONFIGURATION THAT CHANGED WIDTH CAN CARRY A STRAY SLICE FROM THE OLD SCHEME, and the first
-    #   version of this walk was defeated by one. **  *`inj_fixed_lcdm_nlos2240` is tiled `0:250 ... 1500:1750`
-    #   at the old width, then `1750:1812 ... ` at the new one -- and it ALSO holds a `2500:2750` banked before
-    #   the change.  Once the narrow slices reach `2494:2556` that stray no longer abuts anything, so a walk
-    #   that refuses every non-abutting slice refuses the whole configuration forever.*
-    #     ⇒ ** The walk now STOPS once [0, n) is covered and returns only the slices it used. **  A slice past
-    #     the end is not part of the sum, which is both the right answer and the one that cannot double-count
-    #     the overlap.  *Refusing was safe -- it never summed a bad set -- but safe and stuck is still stuck.*
-    used, end = [], 0
+    # ⛔ ** THIS IS A SEARCH, NOT A WALK, AND IT IS EXACT. **  *A configuration that changed width carries
+    #   strays from the old scheme, and a greedy scan over them was defeated twice.*  r7051 refused every
+    #   non-abutting slice, so one `2500:2750` banked before a width change made `inj_fixed_lcdm_nlos2240`
+    #   unfoldable forever.  Skipping a stray fixed that, and then `inj_fixed_cr_nlos2240` -- tiled exactly by
+    #   `0:62 ... 1426:1488` over n=1452, plus a legacy undeclared slice falling back to `250:500` -- still read
+    #   as incomplete, because that stray sorts BETWEEN `248:310` and `310:372`.
+    #     ⌷ And no scan order fixes it.  Preferring the SHORTER range at a given `lo` strands
+    #     `{0:62, 62:124, 0:250, 250:500}`, whose valid tiling is `{0:250, 250:500}`; preferring the LONGER one
+    #     strands `{0:50, 50:80, 80:150, 0:100}`, whose valid tiling is the three short ones.  *Greedy is simply
+    #     the wrong shape: whether a slice belongs depends on what can follow it.*
+    #   ⇒ ** So the reachable ends are searched, breadth-first, and a tiling is returned only when one
+    #   ABUTS exactly from 0 to at least `n`. **  Overlaps are never summed, because only `lo == end` can
+    #   extend a partial tiling -- so the safety r7051 wanted is structural here rather than conservative, and
+    #   "safe and stuck" is gone with it.  *Slices number tens per configuration, so the search is free.*
+    nxt = {}
     for lo, hi, f in got:
-        if end >= n:
-            break                        # already covered: anything further is not part of the sum
-        if hi <= end:
-            continue                     # wholly redundant with what is already covered
-        if lo != end:                    # a real gap, or a partial overlap that cannot be resolved
-            return None
-        used.append((lo, hi, f))
-        end = hi
-    return used if end >= n else None
+        nxt.setdefault(lo, []).append((hi, f))
+    seen, frontier = {0: None}, [0]
+    goal = None
+    while frontier and goal is None:
+        nf = []
+        for e in frontier:
+            for hi, f in nxt.get(e, ()):
+                if hi <= e or hi in seen:
+                    continue             # no progress, or this end is already reachable more cheaply
+                seen[hi] = (e, hi, f)
+                if hi >= n:
+                    goal = hi
+                    break
+                nf.append(hi)
+            if goal is not None:
+                break
+        frontier = nf
+    if goal is None:
+        return None                      # no set of declared ranges abuts from 0 to n: a real gap
+    used, at = [], goal
+    while seen[at] is not None:
+        prev, hi, f = seen[at]
+        used.append((prev, hi, f))
+        at = prev
+    used.reverse()
+    return used
 
 
 def _done(log):
@@ -156,15 +211,23 @@ def status(outdir, tag):
         return 'complete (unsliced)'
     if n is None:
         return 'not started'
-    # ⌗ the DENOMINATOR is still predicted from the default width, because a configuration's remaining
-    # slices have not been run and so have declared no ranges yet -- but the NUMERATOR counts what is
-    # actually banked and done.  *A partial read may therefore show a count against a width the
-    # configuration will not finish at; `load()` is the authority and it reads the ranges.*
+    # ⛭ THE DENOMINATOR USED TO BE PREDICTED FROM `W`, the default width, while the widths have been
+    # per-configuration since r7051.  The comment here said so -- and then this seat summed the column and
+    # reported it as progress anyway, which made `inj_fixed_cr_nlos2240` read `25/6` and made every total
+    # quoted from it wrong.  ** A documented approximation is still wrong when it is read as a count. **
+    # So it now predicts at the configuration's OWN width, the same `width_for` the launcher queues from.
+    # *The NUMERATOR still counts what is banked and done, and `load()` remains the authority on coverage.*
     done = [r for r in (tiling(outdir, tag, n) or [])]
     have = len(done) if done else sum(
         1 for f in glob.glob(os.path.join(outdir, f'{tag}_k*.npz'))
         if _done(f[:-4] + '.log'))
-    return f'{have}/{len(range(0, n, W))} slices'
+    # ⛔ AND THE FRACTION IS REPORTED IN MODES, NOT SLICES.  Counting banked slices against a slice count
+    # is incommensurable the moment a width changes: 250-wide slices measured against a 100-wide denominator
+    # made a COMPLETE configuration read `6/30`, and against the old fixed denominator made another read
+    # `25/6`.  ** Modes are width-independent, so they are what a progress fraction can honestly be made of **
+    # -- and `covered_to` already measures exactly that, by the same walk `tiling` verifies.
+    covered = min(covered_to(outdir, tag), n)   # the last slice may overhang `n`; that is not extra coverage
+    return f'{covered}/{n} modes, {have} slice(s)'
 
 
 if __name__ == '__main__':
