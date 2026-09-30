@@ -48,6 +48,14 @@ SET=(
   "nlosw12 NLOSW=12.0" "kfac40  KFAC=4.0" "nk15    NK=1274" "nk20    NK=1698"
 )
 # the configuration table: outdir | tag | env  -- settings outermost so a partial read is a partial SEQUENCE
+# ⛭⛭ ** EVERY INJECTION SLICE BEFORE ANY REAL-ARM SLICE, AND THAT IS A MEASURED DECISION. **
+# *A first version interleaved them per setting.  An injection slice skips the solver and costs 40 s to 2
+# min; a REAL slice carries the solver and costs several minutes.  Interleaved, the cheap stage ⓒ work
+# queued behind expensive stage ⓐ work -- measured: one 25-minute window produced 6 completed slices,
+# because four real slices held the four cores for most of it.*
+#   ⇒ ** Stage ⓒ is the order's own sharpest handle AND the cheap one, so it finishes first. **  With this
+#   container restarting every 10 to 25 minutes, the thing that matters is that SOMETHING completes and can
+#   be reported, not that everything advances evenly.
 CFG=""
 for s in "${SET[@]}"; do
   set -- $s; sn=$1; shift; se="$*"
@@ -57,6 +65,9 @@ for s in "${SET[@]}"; do
 $D/inj|inj_${in}_lcdm_${sn}|$LCDM LSTEP=8 LMAXL=2000 $ie $se
 $D/inj|inj_${in}_cr_${sn}|$CR LSTEP=8 LMAXL=2000 $ie $se"
   done
+done
+for s in "${SET[@]}"; do
+  set -- $s; sn=$1; shift; se="$*"
   CFG="$CFG
 $D/real|real_lcdm_${sn}|$LCDM LSTEP=8 LMAXL=2000 $se SRCSAVE=$D/real/real_lcdm_${sn}_src.npz
 $D/real|real_cr_${sn}|$CR LSTEP=8 LMAXL=2000 $se SRCSAVE=$D/real/real_cr_${sn}_src.npz"
