@@ -1100,6 +1100,12 @@ _SRCTNRM = os.environ.get('SRCTAPERNORM', '0') == '1'
 _SRCB = []
 _SRCE_B = []      # one (n_eta, n_band) block per k-batch; the band sum over k is exact, so these add
 _SRCD_B = []      # one (n_ls, 10) block per k-batch; C_l is a SUM over k, so these add exactly
+# ⛭⛭ ** DLKSAVE: Delta_l(k), THE TRANSFER, r7039+cc66.69 -- see the write site in `_project`. **
+# *These blocks CONCATENATE along k rather than adding, because the transfer is indexed by (l, k) and
+# a k-batch carries a disjoint set of k.  ⌗ That is the one structural difference from the two banks
+# above and it is why this is a separate accumulator rather than another key in theirs.*
+_DLK = os.environ.get('DLKSAVE')
+_DLK_B = []
 # ⛔⛭⛭ ** AND r6889+cc66.36: THEY REACHED ONE PATH OF THREE, WHICH IS THE SHADOW AGAIN. **
 # *r4558 placed these beside `_ISW` and calibrated them -- on `los_spectrum`.  ** The HIERARCHY path
 # builds its own source at the foot of `los_hier` and the LOW-ELL path builds a third at the foot of
@@ -1546,6 +1552,27 @@ def hier_run(kk, EE, L_A_, D_M_, R_S_):
                            / np.abs(Cl * ls * (ls + 1))))
         print(f"  SRCDEC: {len(ls)} multipoles x 10 term pairs; the pairs close on D_l to "
               f"{_cl:.3e} relative -> {_SRCD}")
+    if _DLK:
+        # ** the k axis is CONCATENATED, in the batch order, and the receipt gates that the saved
+        # transfer reproduces `Cl` by its own definition -- sum(P * Dlk^2) over the whole axis. **
+        _kk = np.concatenate([d['k'] for d in _DLK_B])
+        _PP = np.concatenate([d['P'] for d in _DLK_B])
+        _DD = np.concatenate([d['Dlk'] for d in _DLK_B], axis=1)
+        # ⌗ *Scaled by the LARGEST `Cl` and not by each one: this transfer's `Cl` passes through zero
+        # wherever the injected comb does, and a per-element relative error there is a division by a
+        # number the integral is entitled to make arbitrarily small.  ** The absolute residual against
+        # the spectrum's own scale is the honest closure and it is what is printed. ***
+        _cl = float(np.max(np.abs((_PP[None, :] * _DD ** 2).sum(axis=1) - Cl)) / np.max(np.abs(Cl)))
+        np.savez(_DLK, ls=ls, k=_kk, P=_PP, Dlk=_DD, Cl=Cl, closes=_cl,
+                 eta=_DLK_B[0]['eta'], x0=_DLK_B[0]['x0'], vis=_DLK_B[0]['vis'],
+                 rs_leaf=_DLK_B[0]['rs_leaf'], rs_stack=_DLK_B[0]['rs_stack'],
+                 jac=_DLK_B[0]['jac'], arm=ARM, r_s=R_S, D_M=D_M, l_A=L_A, ns=NS,
+                 eta_ls=ETA_LS, eta_ls_w=ETA_LS_W, sliced=bool(_ksl), n_modes=len(kk),
+                 inj=str(_SRCI), inj_rs=_SRCIRS, inj_vis=str(_SRCIV), inj_ph=_SRCIP,
+                 nlos=len(_DLK_B[0]['eta']), nlosw=float(os.environ.get('NLOSW', '6.0')),
+                 nlosf=float(os.environ.get('NLOSF', '0.75')))
+        print(f"  DLKSAVE: the transfer Delta_l(k), {_DD.shape[0]} multipoles x {_DD.shape[1]} "
+              f"modes, closing on C_l to {_cl:.3e} relative -> {_DLK}")
     Dl = Cl * ls * (ls + 1)
     return ls, Dl
 
@@ -1697,9 +1724,22 @@ def _project(kb, ee, Y, ls, x0, e_sw):
         _SRCE_B.append(_reg)
     out = np.empty(len(ls))
     _dec = np.zeros((len(ls), 10)) if _SRCD else None
+    # ⛭⛭⛭ ** DLKSAVE -- Delta_l(k) ITSELF, r7039+cc66.69.  `PO-70` ASKS ABOUT THIS OBJECT AND UNTIL
+    # NOW THE INSTRUMENT ONLY EVER REPORTED ITS k-SUM. **
+    # *Every earlier save is downstream of `np.sum(P * ... ** 2)`: `SRCSAVE` is the source before the
+    # kernel, `SRCDEC` the k-summed bilinear pairs, `SRCETA` the source's eta-weight.  None of them is
+    # the transfer.  The order's question -- what property of the integral produces the retention --
+    # is a question about how `Delta_l(k)` varies WITH k at fixed l, which is exactly what the sum
+    # destroys.*
+    #   ⌗ ** Output only: unset, this branch does not execute and the run is bit-identical. **  It is
+    #   the same discipline as `SRCSAVE`/`SRCETA` and is gated the same way.
+    _dlk = np.empty((len(ls), len(kb))) if _DLK else None
     for j, l in enumerate(ls):
         J = spherical_jn(int(l), kb[None, :] * x0[:, None])
-        out[j] = np.sum(P * np.trapezoid(S * J, ee, axis=0) ** 2)
+        _tr = np.trapezoid(S * J, ee, axis=0)
+        out[j] = np.sum(P * _tr ** 2)
+        if _DLK:
+            _dlk[j] = _tr
         if _SRCD:
             # ** the four TRANSFERS, one per source term, off the SAME `J`. **  The source terms add
             # and the transfer is linear in the source, so these add to the full transfer exactly;
@@ -1712,6 +1752,12 @@ def _project(kb, ee, Y, ls, x0, e_sw):
                     _c += 1
     if _SRCD:
         _SRCD_B.append(_dec)
+    if _DLK:
+        _DLK_B.append(dict(ls=np.asarray(ls), k=kb.copy(), P=P.copy(), Dlk=_dlk,
+                           eta=ee.copy(), x0=x0.copy(), vis=np.asarray(vis_of(ee), float),
+                           rs_leaf=np.asarray(rs_leaf_of(ee), float),
+                           rs_stack=np.asarray(rs_stack_of(ee), float),
+                           jac=np.asarray(Jac_of(ee), float)))
     return out
 
 
@@ -1786,10 +1832,21 @@ def main():
         # points; past it only the ISW survives and it is smooth. **  A single uniform grid over
         # eta = 54-4000 spent most of its samples where the source is identically zero.
         n_los = int(os.environ.get('NLOS', '560'))
-        e_lo = max(ETA_ON + 1e-6, ETA_LS - 6.0 * ETA_LS_W)
-        e_hi = ETA_LS + 6.0 * ETA_LS_W
-        EE = np.concatenate([np.linspace(e_lo, e_hi, int(0.75 * n_los), endpoint=False),
-                             np.linspace(e_hi, ETA_END, n_los - int(0.75 * n_los))])
+        # ⛭⛭ ** NLOSW AND NLOSF -- THE TWO QUADRATURE CHOICES THIS GRID MAKES, EXPOSED r7039+cc66.69. **
+        # *`NLOS` was already a knob; the half-width in FWHM and the split of points between the two
+        # scales were literals.  `PO-70` asks whether the retention of an oscillation through
+        # `_project` is set by the source's own extent or by the extent of the grid the integral is
+        # carried on -- and that question cannot be asked of a literal.*
+        #   ⌗ ** Defaults reproduce the literals exactly: 6.0 and 0.75. **  `float('6.0') * ETA_LS_W`
+        #   and `6.0 * ETA_LS_W` are the same product of the same two doubles, so unset these are
+        #   bit-identical and not merely close -- which is the standing no-op discipline and is gated
+        #   in the receipt against a run with neither name in the environment.
+        _nw = float(os.environ.get('NLOSW', '6.0'))
+        _nf = float(os.environ.get('NLOSF', '0.75'))
+        e_lo = max(ETA_ON + 1e-6, ETA_LS - _nw * ETA_LS_W)
+        e_hi = ETA_LS + _nw * ETA_LS_W
+        EE = np.concatenate([np.linspace(e_lo, e_hi, int(_nf * n_los), endpoint=False),
+                             np.linspace(e_hi, ETA_END, n_los - int(_nf * n_los))])
         if not alias_gate(kk):
             return 1
         if os.environ.get('HIER', '0') == '1':
