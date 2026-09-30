@@ -1,12 +1,4 @@
 {
- "claude/shadow-of-existence-setup-5tjf0b": {
-  "suite": {
-   "receipts/L175_dimensional_descent/V1_the_variational_ledgers_premise_is_false.py": {
-    "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/36733840815",
-    "since": "37761b7297d1d0e44195f9bec4a3c0b8cd661aca"
-   }
-  }
- },
  "claude/shadow-of-existence-setup-6awafl": {
   "suite": {
    "receipts/L175_dimensional_descent/V1_the_variational_ledgers_premise_is_false.py": {
