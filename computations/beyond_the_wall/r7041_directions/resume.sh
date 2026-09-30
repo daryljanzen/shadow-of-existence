@@ -13,8 +13,8 @@ echo "=== $(date -u) solvers live at start: $(live)"
 until [ "$(live)" -eq 0 ]; do sleep 30; done
 echo "=== $(date -u) thin fold"
 python3 computations/beyond_the_wall/r7041_directions/bank_thin.py
-echo "=== $(date -u) stage c"
-bash computations/beyond_the_wall/r7041_directions/launch_c.sh
-echo "=== $(date -u) stage a"
-bash computations/beyond_the_wall/r7041_directions/launch_a.sh
+# ⛭ ONE SLICED LAUNCHER FOR BOTH STAGES, replacing `launch_c.sh` and `launch_a.sh`: this container
+# restarts faster than an unsliced run finishes, so the unit of work has to be the slice.
+echo "=== $(date -u) stages c and a, sliced"
+bash computations/beyond_the_wall/r7041_directions/launch_sliced.sh
 echo "=== $(date -u) ALL COMPLETE"
