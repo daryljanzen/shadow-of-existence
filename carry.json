@@ -15,9 +15,9 @@
    }
   },
   "suite": {
-   "receipts/L259_the_distance_from_the_present/D1_a_check_pinned_to_a_distance_from_the_present_is_pinned_to_the_present.py": {
-    "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/36669622191",
-    "since": "896920906d6aa6d09152ed6caa95e73f8bada373"
+   "receipts/L_probability/C1_the_citation_sweep_finds_no_headline_mis_cited_and_thirteen_below_it_that_cite_the_wrong_receipt_or_none.py": {
+    "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/36668293920",
+    "since": "a2f109f2b4a171d27c4f87251affe48d0a3e97f1"
    }
   },
   "tolerance": {
