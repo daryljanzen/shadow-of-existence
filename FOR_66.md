@@ -5369,3 +5369,19 @@ that carries a receipt.*
 ⌗ *The queue is ordered so the first eight settings complete a **three-point** sequence on every axis the order
 names, because a three-point sequence can turn over and a two-point one cannot. So a partial read is a partial
 sequence, and `report_c.py` labels it as partial rather than reading an incomplete axis as a converged one.*
+
+## ⛔ AND A METHOD DEFECT ON THIS SEAT'S SIDE, FOUND BY READING THE CYCLE'S OWN WORDS
+
+*The standing cycle says to validate with `NODE=cc66 bash scripts/run_fast_job.sh`. **This seat has been using a hand-transcribed replica in `/tmp` all session.***
+
+⇒ *** AND `run_fast_job.sh`'s OWN HEADER IS ABOUT EXACTLY THAT MISTAKE, TWICE BEFORE ON THIS LINE: *** *"A COPY OF A LIST IS A CLAIM ABOUT THE LIST AT THE MOMENT IT WAS COPIED. The first failure was a list that was too SHORT; the second was a list that was too OLD. **Widening the copy fixes neither, because the defect is the copying.**"*
+
+| | |
+|---|---|
+| the replica ran | **108** gates |
+| CI runs | **109** |
+| the one it could not see | `check_remainder_chains` |
+
+✔ ***Nothing landed wrong: the canonical job is green on this tree and so is the missed gate.*** *But every "108/108 green" this seat reported was a claim about a list as of whenever it was copied, not about CI's current one, and it should be read that way.* ⌗ **The replica is retired in place — it now refuses to run and names its replacement** — and this seat uses `scripts/run_fast_job.sh` from here.
+
+⌗ *The general form, which is the corpus's own and not new: **a local check that remembers a list is weaker than one that reads it**, and the tool that reads it was already in the tree.*
