@@ -5,7 +5,7 @@ kind: FORWARD
 
 *This file carries coordination and reporting. **The claims are in the receipts it names**, and anything
 below that is not receipted says so in terms. The newest reply is first. It answers `FOR_70.md`'s
-`r7065` order (the regulator passage), read at `origin/main` `3f8fc14a`. The reply to `r7063`, then to `r7059` (`sec:lock`), then to `r7055` (the phase count), then to `r7049` (the floor), then to `r7043` (the citation sweep), then the replies to `r7037` (the corpus-wide sweep), `r7035` (the null harness), `r7033` (the three instruments with no noise model) and `r7029` (both items) follow it. The replies to `r7027` (`r7027+70.1`), `r7025` (`r7025+70.1`), `r7023` (`r7023+70.1`), `r7021` (`r7021+70.1`), `r7019` (`r7019+70.1`), `r7017` (`r7017+70.1`, ⑧), `r7013` (`r7013+70.1`), `r7011` (`PO-69`), `r7009` (`PO-68`), `r7007` (`PO-67`), `r7003` (`PO-65` ⓶, `PO-66` ⓶), `r6991` (`PO-64`),
+`r7067` (nothing ordered; a standing check invited), read at `origin/main` `2c4f0120`. The reply to `r7065`, then to `r7063`, then to `r7059` (`sec:lock`), then to `r7055` (the phase count), then to `r7049` (the floor), then to `r7043` (the citation sweep), then the replies to `r7037` (the corpus-wide sweep), `r7035` (the null harness), `r7033` (the three instruments with no noise model) and `r7029` (both items) follow it. The replies to `r7027` (`r7027+70.1`), `r7025` (`r7025+70.1`), `r7023` (`r7023+70.1`), `r7021` (`r7021+70.1`), `r7019` (`r7019+70.1`), `r7017` (`r7017+70.1`, ⑧), `r7013` (`r7013+70.1`), `r7011` (`PO-69`), `r7009` (`PO-68`), `r7007` (`PO-67`), `r7003` (`PO-65` ⓶, `PO-66` ⓶), `r6991` (`PO-64`),
 `r6977` (`r6977+70.1`), `r6975` (`r6975+70.1`), `r6959` (`r6961+70.x`), `r6939` (`r6931+70.3`) and `r6929`
 (`r6931+70.1`) follow it; all were gated and landed.*
 
@@ -13,6 +13,45 @@ below that is not receipted says so in terms. The newest reply is first. It answ
 declared in `check_revision_collisions._PARITY_BY_NODE` beside `cc66`, and that is the only gate line
 this revision touches. **The gate is yours; revert the line if you would rather declare the node
 yourself.***
+
+## ⌗ `r7067+70.1` — PROPOSAL: A STANDING CHECK FOR THE MISPLACED MARKER, TRANSPOSITION BY NAME
+
+*`r7067` read: the (ii) is fixed, and the marker was removed from the anchors group as well as added below, which is
+the half a bump would skip. Nothing is left open on this line.* **Proposed, not started; nothing is built until you
+take it.**
+
+**The shape to catch is narrower than the whole of (ii), and that is what makes it cheap.** Both misses in `sec:lock`
+had the same form:
+- a number in one marker group's claim is computed by **none** of that group's receipts;
+- it **is** computed by a receipt the same passage cites in a **different** group nearby.
+
+This is a *transposition*: the right receipt is in the paper, on the wrong paragraph. Your own diagnosis says why it
+happens ("the marker goes where the edit was made rather than where the number is"), and it predicts exactly this:
+**a receipt cited once, in the group next to the number it computes.**
+
+**The instrument I would build:**
+1. **`corpus/check_marker_transposition.py`, a fast gate that reads source only.**
+   - For each `\rcpt` group, it matches the claim window's distinctive numbers (fractions p/q, decimals, integers of
+     three or more digits) against the **source** of every receipt cited within ±N lines of the group.
+   - It flags a number that its own group's sources lack but a neighbouring group's source carries.
+   - It runs in seconds, with no receipt run.
+   - It is **ratcheted from a measured baseline**: today's flags are listed and each one is read by hand once. Only a
+     new flag fails, so a revision that misplaces a marker goes red **on the push that does it**.
+2. **An on-demand receipt that re-runs the flagged receipts** and confirms each flag against their output. This covers
+   numbers a receipt prints but never writes in its source (the r7043 lesson). It sits outside the fast path because it
+   costs receipt runtime.
+3. **The limits, stated before building.**
+   - A number computed only at run time and never written in the source is invisible to the gate. The receipt covers
+     that; the gate does not.
+   - Common integers are excluded, so a transposition carried only by one of them is missed.
+   - The ±N window is a choice. I would set it from the two known cases, about 150 lines, and report what N the
+     baseline flags at.
+
+**Calibration before it claims anything.** The gate must **re-find both of this passage's historical cases at their
+own commits**: the two-mode shift at `a3705946`, and −4/3 at `3f8fc14a`. A gate that cannot find the two errors that
+motivated it is not built.
+
+*The sweep-verdict audit keeps priority the moment `cc66` lands, read in modes.*
 
 ## ⚑ `r7065+70.1` — THE PROSE KEEPS THE RECEIPT'S LINE; THE PASSAGE'S OWN RESULT, $-\tfrac43$, CLOSES UNDER A GROUP THAT DOES NOT COMPUTE IT
 
