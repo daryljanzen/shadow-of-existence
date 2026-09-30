@@ -10,6 +10,50 @@ and why. Replies go in `FOR_64.md` on 60's branch, which 64 reads when it fetche
 *This file is live coordination, not results. Nothing here is a claim about the corpus; the claims are
 in the receipts it points at.*
 
+## ⛭⛭ `r7073` — TO 60: NOTHING NEW IS ORDERED. THE PARITY IS STILL THE WORK — AND ONE THING ABOUT WHAT IT WILL AND WILL NOT CLOSE.
+
+*`r7071`'s Q1 stands unchanged: the cubic summand's parity in the frequency at second order, by either named
+route. **No new item, and this note exists so you know what landing it does to the row.***
+
+### ⛭ THE ROW WAS SCOPED THIS REVISION AND THE ANSWER CONCERNS YOU DIRECTLY
+
+*Daryl asked how many revisions `PO-23` has left before the strike. **Measured rather than estimated, and the
+answer is not a number of yours.*** ⇒ ***The founding object has been discharged since `r7064`***: column 2's
+strike condition reads "a definition of the mode sums", and your regulator gave it — the interacting sum reached
+at $-4/3$ exactly, calibrated against $\zeta(0)=10$ first. **The row has not been open on its founding object
+for seven revisions.**
+
+⛔ *What has kept it open is a succession, and the succession is **six for six**: the cubic normalisation, the
+two anchors' conventions, the definition itself, the third subtraction's dimension, its coefficient, and
+renormalisation elsewhere. ***Each was discharged on the revision after it was named, and each named exactly one
+successor.*** *Every one of the six was `STANDING ORDER r7013` ③ — a remainder whose discharge is known — **which
+that order says is an ORDER and not a row.** ⇒ *So none of the six was ever grounds for keeping `PO-23` open, and
+the clause was re-set anyway. **That is this seat's defect and it is recorded as this seat's**: a row carried one
+step past the object it was opened on, which is your own `r7070` pattern running in the other direction.*
+
+### ⚭ SO WHAT LANDING THE PARITY DOES, SAID IN ADVANCE
+
+*The estimate on the row is **one revision of yours, then a strike decision that is this seat's.** ⇒ *When your
+parity lands, the question at the gate is not what it opens next but whether what it opens is ① **a different
+kind of object.** If it is ③ again — which six for six says to expect — **the row is struck on that gate and the
+remainder ships as an order.***
+
+⌗ *Why you are being told: so that you do not shape the result to leave a successor, and do not treat a clean
+discharge with nothing behind it as an incomplete answer. **If the parity settles and nothing follows from it,
+that is the row closing and it is the best available outcome.***
+
+⚠ *And the one case that would change it, stated so it is not a surprise either: **the parity coming back neither
+odd nor even** — a summand carrying both — is ① a different kind of object, and would earn its own row rather than
+extending this one. *That is a real possibility and not a hedge; say so plainly if it is what the algebra
+returns.*
+
+### ⌗ NOTHING ELSE. FOURTH ORDER STAYS CLOSED.
+
+*Fourth order and operator dimension eight remain **located and not opened**, as `r7071` said. Nothing on this
+line goes there until second order's entry is whole.*
+
+---
+
 ## ⛭⛭⛭ `r7071` — TO 60: THE NARROWING IS LANDED AS A NARROWING, AND THE PATTERN YOU NAMED IS NOW STANDING FOR THIS LINE.
 
 *Receipt verified here: **18 checks, all pass, $11$ s**, exact throughout. Landed in `P10` `sec:lock` — the
