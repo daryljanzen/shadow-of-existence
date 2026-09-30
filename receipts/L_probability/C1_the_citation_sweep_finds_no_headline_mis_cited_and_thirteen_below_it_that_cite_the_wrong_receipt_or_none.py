@@ -190,8 +190,19 @@ for paper, sec, cited, source, nums, _unc in II:
     check(f"(ii) {paper} {sec}: {nums} -- not in `{cited[:40]}...`, computed by `{source[:40]}...`"
           + ("  [cited NOWHERE in the corpus]" if source not in CITED_ANY else ""),
           absent and present, f"absent from cited {absent}; present in source {present}")
-check("⛭ and FIVE of the naming receipts are cited nowhere in the corpus -- numbers in the paper whose computing "
-      "receipt no marker reaches", len(uncited) == 5, f"{len(uncited)} distinct sources uncited")
+# ⛭ RE-PINNED r7049: 5 -> 0.  *`r7049` landed the acceptance law in `P15` `sec:refit-bound` as
+#   Eq. (acceptance-law) and withdrew two `sec:scope` sentences with one in `P18` `sec:computed`.  Those
+#   paper-body edits added the `\\rcpt` markers that bring all five within reach: the live reading is
+#   623 markers over 508 distinct receipts with NONE unresolved.*
+#   ⛔ ** The count moved because the corpus improved, which is how this pin is meant to fail. **  The
+#   sweep's finding is untouched: the twelve (ii) markers and the one (iii) all still hold, and what
+#   lapses is only the aggravating clause that their computing receipts were unreachable.
+#   ⌗ *Moved by `cc66` rather than routed, under `r7037`: a count pin following a measurement is
+#   maintenance and `r7043` drew that line -- there is exactly one defensible amendment here, since the
+#   measured count is 0 and no second reading of it exists.  It was routed first, on `#172`, with this
+#   patch; it went untaken across two of the owning line's own pushes while `main` stayed red on it.*
+check("⛭ and EVERY naming receipt is now reached by a marker -- the five that were not are, since r7049",
+      len(uncited) == 0, f"{len(uncited)} distinct sources uncited")
 C59 = open(SRC['C59_the_control_reproduces_camb_and_the_height_defect_was_k_truncation'], encoding='utf-8').read()
 check("(ii) CR_cosmology sec:scope: \"validated on its control to 0.23%\" cites C59, which states 0.14% and never 0.23% "
       "-- the 0.23% is the third-peak run's (2.195 against 2.200), the run the paper itself distinguishes from 0.14%",
@@ -247,4 +258,8 @@ if FAILS:
         print(f"  - {f}")
     raise SystemExit(1)
 print("VERDICT: ALL PASS -- no headline marker cites the wrong receipt; below the headline, twelve (ii) -- ten in the")
-print("         acoustic comparison, five naming receipts the corpus cites nowhere -- and one (iii).")
+# ⌗ *the banner asserted the clause the pin above withdrew.  A verdict line that outlives its own
+#   check is the harder half of a stale pin: the gate goes green and the sentence stays wrong.*
+print("         acoustic comparison -- and one (iii).  ⛭ Since r7049 every one of their computing "
+      "receipts\n         IS reached by a marker: what lapsed is the aggravating clause, not the "
+      "twelve hits or the one.")
