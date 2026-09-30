@@ -4409,3 +4409,62 @@ It asks that the constant **require** the two-point value, on the strength of my
 **The spin-two coupling's factor**, and with it the constant itself. *It is one Clebsch–Gordan contraction between the frame's spin-two basis and the level's right index — finite, algebraic, same-level, and now the only thing between the rate statement and an actual number at a named odd level.* **That is where I would go next, and on the evidence of this revision it is reachable.**
 
 ⛔ **Nothing re-validated**: not the seven coefficients, not the two level sums, not the second-order identity, not the weighting bounds, not step 3, and **not `r7044`'s channel count or representation identification — both used and cited**. Nothing on the other rows.
+
+
+---
+
+# ✔✔ `r7050` — **Q1 HAS A NUMBER: THE RESIDUE IS THE ODD LEVELS BELOW `96√2·K`. AND YOUR Q1's SUPPOSITION IS THE ONE THING IN IT THAT DOES NOT HOLD.**
+
+*Receipt: `P10_the_odd_residue_is_the_levels_below_a_crossing_linear_in_one_constant_and_a_count_bounds_terms_not_sizes.py` — **16 gates, `GATES: ALL PASS`**, 16 s. One push. No corpus edits outside `receipts/INDEX.md` and its regenerated appendices. **Every number below states its convention in the sentence with it, as you required.***
+
+## Q1 — THE RATIO, AND WHERE IT CROSSES ONE
+
+**In the level-sum convention**, exactly:
+
+```
+ratio = 60·K·n·√(2m²−8)·(m²−3)² / (5m⁶ − 26m⁴ + 25m² − 4)     →     12√2·K·n / m
+```
+
+with `K` the vertex's own **`m`-independent** constant and `n ≤ 8` your channel count.
+
+> ⇒ **The crossing exists and is LINEAR in `K`: `m₀ ≤ 96√2·K`.** At `K = 1` and the cap `n = 8` it is located by an **exact rational comparison** at **`m = 136`** — so the residue there is the **odd levels `m ≤ 135`**, with `m = 135` above one and `m = 136` below it, both exhibited.
+
+## ⛔ BUT THE CHANNEL COUNT ALONE DOES NOT REACH IT — AND THAT IS A CORRECTION TO YOUR Q1
+
+*Your Q1 says "a constant in front of it that the `≤8` channel count bounds."* ***A count bounds the number of terms and not the size of one.*** Eight channels of coefficient size `S` contribute `8S²` to a sum of squares, **unbounded in `S` at every fixed count** — exhibited as arithmetic. **The count fixes `n` and leaves `K`, and the crossing depends on their product.**
+
+## ⇒ SO Q1 DOES NOT RETURN "UNBOUNDED", AND THE STOP CONDITION DOES NOT FIRE
+
+**What is missing is `K`'s value, not its finiteness** — `K` is `m`-independent, so the residue is finite for every finite `K`. ⇒ ***Q1 returns a list as a function of one number, and it reduces to Q2 quantitatively: the residue's size is linear in exactly the factor Q2 asks for, so Q2 landing turns the quantifier into a list and — by the count-versus-size point above — nothing else will.***
+
+## Q2 — THE FACTOR'S FEASIBILITY IS ESTABLISHED, AND ITS VALUE IS NOT COMPUTED
+
+*The feasibility was the part in doubt, and it is settled by solving rather than positing:*
+
+> **The frame derivative satisfies `e_c D = D·M_c` for an `M_c` of the level's own size, in every one of the three directions — so a derivative does not leave the level** — and **the three solved matrices close under commutators, so what a derivative inserts is a spin-one operator: one extra Clebsch–Gordan coupling and nothing more.**
+
+⇒ **With `r7048`'s `3j` orthogonality for the undifferentiated part, the whole same-level vertex — algebraic and derivative terms alike — is finite recoupling data rather than an integral.** *At `r7047` I said this object was reachable; this converts that expectation into a structural fact.*
+
+⌗ *Control reported rather than hidden: of the three directions only the invariant one returns a **constant** `M`. That is the coordinate frame's doing, not a failure — the claim that carries is that `M` exists and is of the level's size, which holds in all three.*
+
+## ⛔ Q3 IS NOT REACHED
+
+No constant at any odd level and no sign at any odd level, because Q2's value is not computed. ⚠ **And the `m = 136` figure is the crossing *at* `K = 1`; it is not a claim that `K = 1`.**
+
+## ⚠ YOUR TWO CALIBRATIONS
+
+**The convention:** every degree, ratio and crossing above is **level-sum**. The **per-mode** convention moves both degrees down by one — seven to five, eight to six — which is exactly why a bare exponent is not a statement. Both stated and checked.
+
+**The pairing count:** honoured by **not spending it** — this revision re-assembles no vacuum expectation, so step 2's count is applied neither once nor twice. And a second application would move the crossing from **136 to 408**, exhibited rather than asserted, so it is not harmless.
+
+⌗ *And a correction inside this revision: the Q3 scope gate first failed because it tested `sp.Symbol("K")` against an expression holding `sp.Symbol("K", positive=True)` — **different objects in sympy**, so a membership test was false about a symbol plainly present. The gate now tests the declared object and, as a control, that the undeclared one is absent.*
+
+## ⌗ NO EXIT IS DECLINED, BECAUSE NONE IS OFFERED
+
+**The first of sixteen orders to carry no exit offer.** Nine declined of sixteen stands unchanged.
+
+## ⇒ WHAT REMAINS
+
+**`K` itself** — the recoupling factor, now known to be a finite algebraic sum over `3j`/`6j`/`9j` data with one spin-one insertion per derivative, and the single number between the rate statement and a list. *That is the whole open part of the odd half.*
+
+⛔ **Nothing re-validated**: not `r7048`'s law or its two routes, not `r7044`'s channel count or selection rule, not the level sums, not step 3. Nothing on the other rows.
