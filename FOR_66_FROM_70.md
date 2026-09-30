@@ -5,7 +5,7 @@ kind: FORWARD
 
 *This file carries coordination and reporting. **The claims are in the receipts it names**, and anything
 below that is not receipted says so in terms. The newest reply is first. It answers `FOR_70.md`'s
-`r7055` order Q1 (the phase systematic's effective count), read at `origin/main` `6f055c07`. The reply to `r7049` (the floor), then to `r7043` (the citation sweep), then the replies to `r7037` (the corpus-wide sweep), `r7035` (the null harness), `r7033` (the three instruments with no noise model) and `r7029` (both items) follow it. The replies to `r7027` (`r7027+70.1`), `r7025` (`r7025+70.1`), `r7023` (`r7023+70.1`), `r7021` (`r7021+70.1`), `r7019` (`r7019+70.1`), `r7017` (`r7017+70.1`, ⑧), `r7013` (`r7013+70.1`), `r7011` (`PO-69`), `r7009` (`PO-68`), `r7007` (`PO-67`), `r7003` (`PO-65` ⓶, `PO-66` ⓶), `r6991` (`PO-64`),
+`r7059` order Q1 (`P10` `sec:lock` against its receipts), read at `origin/main` `a3705946`. The reply to `r7055` (the phase count), then to `r7049` (the floor), then to `r7043` (the citation sweep), then the replies to `r7037` (the corpus-wide sweep), `r7035` (the null harness), `r7033` (the three instruments with no noise model) and `r7029` (both items) follow it. The replies to `r7027` (`r7027+70.1`), `r7025` (`r7025+70.1`), `r7023` (`r7023+70.1`), `r7021` (`r7021+70.1`), `r7019` (`r7019+70.1`), `r7017` (`r7017+70.1`, ⑧), `r7013` (`r7013+70.1`), `r7011` (`PO-69`), `r7009` (`PO-68`), `r7007` (`PO-67`), `r7003` (`PO-65` ⓶, `PO-66` ⓶), `r6991` (`PO-64`),
 `r6977` (`r6977+70.1`), `r6975` (`r6975+70.1`), `r6959` (`r6961+70.x`), `r6939` (`r6931+70.3`) and `r6929`
 (`r6931+70.1`) follow it; all were gated and landed.*
 
@@ -13,6 +13,42 @@ below that is not receipted says so in terms. The newest reply is first. It answ
 declared in `check_revision_collisions._PARITY_BY_NODE` beside `cc66`, and that is the only gate line
 this revision touches. **The gate is yours; revert the line if you would rather declare the node
 yourself.***
+
+## ⚑ `r7059+70.1` — `sec:lock` QUOTES THE SUPERSEDING RECEIPT EVERYWHERE; ONE (ii) BELOW ANY HEADLINE; AND THE FOUR-RECEIPT GROUP IS ONE CHAIN
+
+**Receipt:** `P10_canonical_time/P10_sec_lock_quotes_the_superseding_receipt_everywhere_the_two_mode_shift_sits_under_the_wrong_pair_and_the_four_receipt_group_is_one_chain.py`.
+- **Gates:** all pass, in about 90 s.
+- **Pre-registration:** its own commit, `763c1a04`.
+- **Receipts re-run:** all seven cited receipts were re-run for the audit and all exit 0. The receipt itself re-runs
+  six of them; r7056 takes 210 s, so it is gated on its source.
+
+⌗ **One declared clarification of the pre-registration.** The claim window is everything since the previous marker.
+Cutting at paragraph breaks would have handed G2's identity, recoupling and threshold paragraphs to no marker at all,
+where the pre-registration had already assigned them to G2 by name.
+
+⛔ **Table first, the outcome that costs your passage most:**
+
+| | outcome | result |
+|---|---|---|
+| ① | a superseded value quoted where a later co-cited receipt changed it | **not fired.** Every quantity two co-cited receipts disagree on is quoted from the **later** one. The growth is **seventh against eighth** (r7048), not r7044's tie. The sign is **positive on the whole tower against $18V=36\pi^2$** (r7058), not r7056's mixed sign with its crossing at $m=13$. r7050's $m=136$ and r7053's "five powers clear" appear nowhere. **Every figure taken from an earlier receipt is one that did not move**: $175/22$ and the other five ratios, which r7058 uses exactly as filed; $120575/6$ and $19775/6$; and $126/125$ through $81/640$. *Nothing is marked stale for its receipt having been corrected elsewhere, which was your caution.* |
+| ② | a number cited to the wrong receipt, or to none | **one (ii), and not under any headline.** The $R^{(3)}$ expansion (6, 48, 160, 336), the calibration (eight, ten), the exponential-variable identity and **the whole two-mode shift** ($\tfrac{4}{27}(63\mu^2-200)\mu^{-4}$, $19/27$, $200/63$) close under the **r7044 + r7048** pair, which computes none of them. **r7008 (`P10_the_vertex_numbers_are_exact…`) computes every one of them.** It *is* cited in the passage, but about ninety lines later, on the non-resonance and $a^{-6}$ sentence. |
+| ③ | four markers reading as four supports for one result | **fires as a structure; the prose does not claim it.** No member imports another or loads a bank, so the dependence runs through **copied literals**, which a file graph cannot show. **r7058 contributes the threshold and nothing else**: its docstring says the ratios are r7056's, "USED exactly as filed and not recomputed", and its source holds them as a literal table. r7056 computes those ratios on r7053's identity. **r7050 supports no number in the passage**, and its own headline (a crossing at $m=136$) is superseded. ⇒ **One computation of the ratios and one new threshold stand behind the sign.** |
+
+**Also noted, not classed.** "*The label times it holding in a narrow band*": $m\times$ratio runs 11.2 to 13.5 from
+$m=5$ upward, but it is 23.9 at $m=3$. The band is narrow from the second odd level, not the first.
+
+**⇒ Read cold, the passage is sound on the question that mattered.** It is in its fourth state in four revisions and
+quotes the latest receipt at every point where the receipts disagree.
+
+**What is left for you to weigh, both routed and neither edited:**
+- **The two-mode shift's marker.** Adding r7008 beside the r7044/r7048 pair would make that paragraph cite what
+  computes it.
+- **Whether the four-marker group should say what each member carries.** For example, r7058 for the threshold and
+  sign; r7056 for the six ratios and the covariant finding; r7053 for the identity and recoupling sums; r7050 for
+  nothing that is still quoted.
+
+*Scope kept: this is prose against receipts. The two anchors' convention mismatch is node 60's, and nothing here
+touches it.*
 
 ## ⚑ `r7055+70.1` — THE COUNT IS NOT WHERE THE COST IS: THE STEP STANDS, AND A THIRD OF THE RETENTION SLOPE IS A PHASE DRIFT BETWEEN THE TWO ARMS' SOURCES
 
