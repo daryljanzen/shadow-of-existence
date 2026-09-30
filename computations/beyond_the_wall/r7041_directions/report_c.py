@@ -17,7 +17,8 @@ INJ = ['fixed', 'sweepown']
 # the sequences, each an axis refined in one direction -- `base` is every sequence's first point
 SEQ = {'k_max via KFAC (upward only; the guard refuses downward)':
        ['base', 'kfac26', 'kfac32', 'kfac40'],
-       'the mode count NK': ['base', 'nk15', 'nk20'],
+       "the mode count NK -- the CONTROL carries this axis alone; on the arm NK is inert by "
+       "construction and `base` stands in for it as an identity (see INERT)": ['base', 'nk15', 'nk20'],
        'the eta resolution NLOS': ['base', 'nlos1120', 'nlos2240'],
        'the eta half-width NLOSW': ['base', 'nlosw9', 'nlosw12'],
        'the eta split NLOSF': ['base', 'nlosf90'],
@@ -39,7 +40,34 @@ def osc(x, y, win=1.0):
     return (y - e) / e
 
 
+GRID = '/tmp/n66/r7041/grid'
+# ⛔⛭ ** THE ARM'S `NK` IS INERT BY CONSTRUCTION, AND THIS IS THE ONE SUBSTITUTION IN THE REPORT. **
+# *On the arm the k ladder is `sqrt(L(L+2))*stretch` out to `KMAXL` and `NK` is only a decimation cap that
+# is never reached, so `nk15` and `nk20` are the SAME COMPUTATION as `base`: `GRIDSAVE` writes 1452 modes in
+# all three with `k` and `eta` byte-identical, and the banked slices agree at `max|Dl| = 0.000e+00`.  On the
+# control `NK` takes 2547 modes to 3822 to 5094 and the spectra differ outright -- so the NK sequence is a
+# real axis, and what moves along it is the CONTROL alone.*
+#   ⇒ ** So the arm's `nk15` / `nk20` runs are not queued and `base` stands in for them -- NOT as an
+#   approximation but as an identity.  ⛔ AND THE IDENTITY IS CHECKED HERE RATHER THAN ASSUMED: ** if the
+#   grid files do not show `k` and `eta` equal, the substitution REFUSES and the sequence reads as absent.
+#   *`r7041+cc66.60`'s gate zero is the pattern: a claim the code depends on is a claim the code tests.*
+INERT = {('cr', 'nk15'), ('cr', 'nk20')}
+
+
+def grid_identical(arm, s, base='base'):
+    """the whole of the substitution's warrant, read off the setup and not argued"""
+    try:
+        a = np.load(f'{GRID}/g_{arm}_{s}.npz'); b = np.load(f'{GRID}/g_{arm}_{base}.npz')
+    except Exception:
+        return False
+    return all(np.array_equal(a[q], b[q]) for q in ('k', 'eta', 'vis', 'x0', 'dk'))
+
+
 def load(inj, arm, s):
+    if (arm, s) in INERT:
+        if not grid_identical(arm, s):
+            return None                     # ⛔ the warrant failed: read nothing rather than base
+        s = 'base'
     f = f'{D}/inj_{inj}_{arm}_{s}.npz'
     if not os.path.exists(f):
         return None
