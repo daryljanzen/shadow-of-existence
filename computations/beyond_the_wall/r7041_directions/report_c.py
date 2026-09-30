@@ -2,8 +2,19 @@
 
 ** NOTHING HERE IS A SPECTRUM OF THE MODEL. **  Every run is the projection's transfer of a KNOWN
 analytic oscillation (`SRCINJ`), so no number here may be compared with a banked spectrum or with the
-sky.  What is measured is whether the arm-to-control ratio of the retained oscillation MOVES when a
-numerical setting is refined -- and the statistic is `r6911+cc66.40`'s and `r6919+cc66.42`'s, unchanged.
+sky.  What is measured is whether the arm-to-control **BAND-RMS RATIO** MOVES when a numerical setting is
+refined -- and the statistic is `r6911+cc66.40`'s and `r6919+cc66.42`'s, unchanged.
+
+⛔ ** AND IT IS NAMED THE BAND-RMS RATIO HERE, NOT "THE RETENTION", ON r7057. **  *Node 70's phase
+systematic found that about a THIRD of the reported `+0.0139` per acoustic period is a phase drift between
+the two arms' SOURCE combs -- periods 1.0170 and 1.0160, drifting 0.013 to 0.042 rad across the range --
+which a band root-mean-square over seven tenths of a period reads as retention.  **The rise survives; two
+thirds of its size does.***
+  ⇒ *Nothing in this sweep changes and nothing is re-run: the convergence question is whether the number
+  stops moving with the NUMERICAL SETTINGS, and that is unaffected by what fraction of the number is drift.
+  ** What would be affected is the sentence written about it afterwards -- so this reader names its quantity
+  for what it is and leaves no room to read "converged band-RMS ratio" as "converged retention". **
+  ⌗ *Same correction as the gate label and the inert axes: make the name read what the thing is.*
 """
 import os, sys
 import numpy as np
@@ -76,7 +87,7 @@ def load(inj, arm, s):
 
 
 def ratio(inj, s, lo=LO, hi=HI):
-    """r6919's own arm-to-control statistic on the retained oscillation"""
+    """r6919's own arm-to-control band-RMS statistic -- NOT purely retention; see the header on r7057"""
     a = load(inj, 'cr', s); b = load(inj, 'lcdm', s)
     if a is None or b is None:
         return None
