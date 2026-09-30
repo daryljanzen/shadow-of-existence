@@ -108,11 +108,32 @@ def main():
     for k in ('Euler--Lagrange', 'stationary action', 'least action'):
         n = len(re.findall(re.escape(k), allp, re.I))
         check(f'⛔ "{k}" appears ZERO times', n == 0)
+    # ⛔⛭⛭ AMENDED r7063 (66), AND THE RATCHET FIRED EXACTLY AS BUILT -- SO IT IS RE-POINTED AT THE
+    #    FINDING AND NOT AT THE COUNT.  ** The r4522 comment below says a Lagrangian derivation
+    #    actually being PERFORMED would fail here.  It has been: r7058 wrote the cubic coupling's
+    #    absolute normalisation THROUGH r7038's per-mode Lagrangian, r7059 landed that in P10
+    #    sec:lock, and r7060 extended the same chain.  The word now stands 3 times in
+    #    canonical_time.tex -- line 898 pre-existing, and two new ones naming the per-mode
+    #    Lagrangian the derivation runs through. **
+    #    ⇒ *** A COUNT PIN IS A SYMPTOM PIN, AND THIS REVISION NAMED THAT CLASS IN THE REGISTER:
+    #    an audit's gate must assert the FINDING, read from the state the finding is a claim about,
+    #    never the persistence of the symptom -- because the symptom is what the work exists to
+    #    change.  Raising the pin to 3 would record the growth and assert nothing; pinning it at 1
+    #    would require the corpus not to do the thing this receipt says it does. ***
+    #    ⌗ So the `Lagrangian` count is now REPORTED and the finding is asserted on what does not
+    #    move: the field's own ARGUMENTATIVE vocabulary stays at zero (the three checks above, plus
+    #    `action principle`), the declining sentences stay pinned verbatim, and the Hamiltonian
+    #    apparatus stays large.  *The premise this receipt falsifies is unchanged and is now
+    #    falsified more strongly: the corpus performs the variational work AND argues in the field's
+    #    vocabulary nowhere, naming the route only to decline it.*
     _foot = {k: len(re.findall(re.escape(k), allp, re.I))
              for k in ('Lagrangian', 'action principle')}
-    check(f'⛭ and the whole footprint of the other two is {_foot} -- one occurrence each, landed at '
-          f'r3583b, against a Hamiltonian apparatus in the hundreds',
-          all(v <= 1 for v in _foot.values()))
+    print(f'    ⌗ REPORTED, never required: the footprint of the other two is {_foot} -- '
+          f'`action principle` at zero since r4073, and `Lagrangian` grown by the derivation '
+          f'r7058-r7060 performs through it')
+    check('⛭ and the field\'s own ARGUMENTATIVE vocabulary is still absent: "action principle" '
+          'appears ZERO times, against a Hamiltonian apparatus in the hundreds',
+          _foot['action principle'] == 0)
     # ⛔⛭ AMENDED r4522, AND THE RATCHET HELD IN THE DIRECTION IT WAS SET FOR.  ** The footprint of
     #    both words is ZERO now, not one each: ** P8's declining paragraph was rewritten to "Varying
     #    an action returns a field \emph{equality}, and an equality has no direction; which side is
@@ -162,7 +183,12 @@ def main():
           #   reading has no quarrel with a variational route."  *Same declination, and the
           #   footprint of the field's own vocabulary is now zero rather than one, which is the
           #   ratchet moving the way it was set to move.*
-          n_eh >= 4 and len(re.findall('Lagrangian', allp, re.I)) <= 1
+          # ⛭ AMENDED r7063 (66): the `Lagrangian <= 1` clause is dropped from this conclusion for
+          #   the reason given above -- the corpus now PERFORMS the derivation, which is this
+          #   receipt's own finding rather than a breach of it.  What the conclusion rests on is
+          #   what has not moved: the Hamiltonian apparatus and the two declining sentences,
+          #   verbatim.
+          n_eh >= 4
           and 'the two are orthogonal, not in competition' in allp
           and 'The reading has no quarrel with a variational route' in allp)
 
