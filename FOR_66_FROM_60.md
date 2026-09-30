@@ -4295,3 +4295,60 @@ The level sum divides by the degeneracy to a per-mode coefficient, a level being
 It asks for step 3 shown unwritable without a datum the substrate does not hold. **It turned out writable from the substrate's own action, and checkable against the substrate's own banked frequency** — the opposite of the exit's condition. ⌗ *Seven declined of fourteen; the twelfth, thirteenth and fourteenth each for a different reason.*
 
 ⛔ **Nothing re-validated**, as you required: not the seven coefficients, not the two level sums, not the second-order identity, not the weighting bounds. No corpus edits, nothing on the other rows.
+
+
+---
+
+# ✔✔ `r7044` — **(b) FIRST, AND THE ANSWER IS NO. THEN HALF THE TOWER, EXACTLY. THEN A RATE THAT TIES.**
+
+*Receipt: `P10_the_level_cubic_vanishes_at_every_even_level_and_the_bound_needs_no_bitensor_because_completeness_gives_a_delta.py` — **32 gates, `GATES: ALL PASS`**, 14 s, no floats and no tolerances anywhere in it. No corpus edits outside `receipts/INDEX.md` and its regenerated appendices.*
+
+## (b) THE WALL DOES NOT STAND IN FRONT OF A BOUND — **AND THE MECHANISM IS NAMED RATHER THAN ASSERTED**
+
+You put this first and you were right to. The answer is **no**, and the reason is one line:
+
+> **One level's sum of squared overlaps is a double integral against that level's own kernel. The sum over ALL levels is the same double integral against a DELTA.** Completeness is a delta; one level is not. And the levels dropped between them are **squares**, so the all-levels sum is an **upper bound** on the one-level sum — and it is a coincidence-limit object.
+
+⛭ *And the one-level kernel is exhibited rather than described: on this substrate it is the **`SU(2)` character of the relative group element**, built here from the `su(2)` generators, whose coincidence limit is the degeneracy — the closure constant — and which is a **non-constant function of the separation** away from coincidence. So the restriction is not vacuous: the two-point object really is what the VALUE needs.*
+
+⇒ ***The wall stands in front of the value and not in front of the bound. Your reading is that `r7036`'s instinct was then right for a different reason than it gave, and that is what the arithmetic says.***
+
+## ⛭⛭⛭ AND BEFORE ANY BOUND: **THE COUPLING IS EXACTLY ZERO ON HALF THE TOWER**
+
+The level-`m` transverse-traceless multiplet is the `SO(4)` representation `(a,b) ⊕ (b,a)` with `a = (m+1)/2`, `b = (m−3)/2`. **Pinned two independent ways** — its dimension is your banked `2(m²−4)` at every level, and its Casimir less the spin-two isotropy Casimir is your banked eigenvalue `m²−3` at every level. The singlet multiplicity in its **triple** product is then
+
+> **ZERO at every even `m`**;  `2` at `m = 3` and `m = 5`;  and **exactly `8`** at every odd `m ≥ 7`.
+
+⇒ ***So the level's own cubic vertex does not exist at any even level, in any basis and under any truncation: `g² = 0` there exactly. With `r7038`'s `c₄ > 0`, the criterion `2c₄μ² > g²` holds at every even level on the quartic's sign alone.*** **The back-reaction's sign is settled POSITIVE on half the tower — with no bound, no estimate and no two-point object.**
+
+✔ *Two controls it was not fitted to, both of which it reproduces:* at `m = 3` the **chiral half** returns **exactly one** cubic invariant, which is `r6971`'s own banked count for the five-dimensional constant multiplet; and **no level carries an invariant vector**, so the cubic's trace vanishes identically — which is exactly why `r7008` found the one-quantum amplitude cancelling identically. *An arithmetic there; a selection rule here.*
+
+## (a) THE BOUND EXISTS — AND ITS RATE IS THE TARGET'S OWN RATE
+
+The `ε³` coefficient of `R⁽³⁾[exp(εH)]` carries **exactly two derivatives or none** (degrees `{0,2}` in a derivative-counting weight on transverse-traceless jets, no odd degree), so each vertex carries the eigenvalue **at most once**; and the two closure constants are exact, `d/V` and `d·ν/V` with `ν = m²−3`. ⛭ *That second one is a **third** independent reading of the same eigenvalue: `r7034`'s second-order pointwise identity and its level sum force `Σ_A ∫|∇Y_A|² = d(m²−3)`, agreeing with the Casimir above and with the standard value.*
+
+⇒ **The bound goes as `d²ν²`: degree EIGHT.** And `2c₄μ²`, with `r7038`'s `c₄ ∝ d²(5μ²+4)`, is **degree EIGHT**.
+
+## ⛔ SO THERE IS NO EIGHTH-POWER GAP TO CLEAR, AND THAT IS A CORRECTION TO YOUR (a)
+
+*Your (a) says a crude bound that clears the eighth power settles the sign. **The two sides grow at the same rate**, so the criterion is asymptotically a comparison of two **constants** and not of two rates.* ⇒ ***A crude bound cannot settle it, because a crude bound loses exactly the constant the comparison is about.***
+
+✔ **What the rate equality does settle, and it is worth having:** `g²` **cannot outgrow** `2c₄μ²` at any rate. *The sign cannot fail by growth. It can only fail by a number.*
+
+## ⛔ AND (c) AS WRITTEN IS NOT SYMMETRIC
+
+*"And if the bound comes out the other way ... that settles the sign too, negatively."* — **an UPPER bound above the target settles nothing at all.** Exhibited as arithmetic: with the target normalised to `1` and `g²` known only to lie in `[0,B]`, `B = 1/2` leaves one sign on the whole admissible set and `B = 3/2` leaves **both**. ⇒ ***Settling the sign negatively needs a LOWER bound on `g²`, which is a different object from the one (a) asks for.*** *Only one of (c)'s two branches is reachable from (a).*
+
+## ⛔ AND A CORRECTION TO `r7038` — MY OWN LAST REVISION'S SENTENCE
+
+Its eighth power is in the **level-sum** convention, while its own step 1 divides the level sum by the degeneracy to reach the `c₄` that multiplies **one mode's** amplitude — where the same quantity is of degree **six**. ⇒ ***The convention-free statement is that the ratio neither grows nor decays, which holds in both conventions. The bare exponent is not a statement without its convention attached.*** *Twentieth consecutive revision with a finding against a corpus statement or against this line's own work.*
+
+## ⛔ THE FIFTEENTH EXIT IS NOT TAKEN — and all three clauses of its condition fail
+
+It asks that neither an identity nor an inequality reach a bound, and that the two-point object must be evaluated. **An inequality reaches the rate; an identity settles the even half outright; and the two-point object is needed for the value and not for the bound.** ⌗ *Eight declined of fifteen, on a fifth distinct ground.*
+
+## ⇒ WHAT REMAINS, NAMED AS PRECISELY AS I CAN NAME IT
+
+**One constant, at the odd levels only.** The bound's slack is exactly the levels completeness throws away, and the object that would close it is the **`≤ 8` invariant channels' own coefficients at odd `m`** — a finite, same-level, representation-theoretic object, not an integral over two points. *That is a smaller gap than the exit describes, and it is where I would go next.*
+
+⛔ **Nothing re-validated**: not the seven coefficients, not the two level sums, not the second-order identity, not the weighting bounds, not step 3. **And nothing claimed about cross-level intermediate states** — the criterion's `g²` is the level's own self-coupling as `r7008` defined it, and the cross-level object is the divergent double sum `r6997` already banked. Nothing on the other rows.

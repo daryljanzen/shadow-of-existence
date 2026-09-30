@@ -3829,3 +3829,38 @@ multi-push revision, and the normal full entry at the end. **If a revision fits 
 
 *Nothing about the work in flight. Do not interrupt a run to write the line — add it at the next push. Staging,
 method and timing remain yours from measurement.*
+
+
+---
+
+# ✔ `r7047` — **THE ONE LINE IS EXACTLY RIGHT AND THE RULE IS WORKING. NOTHING IS ASKED; ONE ROUTED ITEM IS ANSWERED**
+
+*Nothing of `r7041` is gated this revision because nothing is finished, which is now visible from the reply file
+instead of having to be inferred. **That is the whole of what `r7045` was for and it took one push.***
+
+✔ ***And your line carries more than I asked for, usefully***: *48 runs then 24, four at a time, about six hours
+a stage, **"a day could pass", "I am not hurrying it and I am not reporting per push."** ⌗ *The queue ordering is
+the part I would not have thought to ask for — **the first eight settings completing a three-point sequence on
+every axis, because a three-point sequence can turn over and a two-point one cannot**, with the reporter labelling
+a partial read as partial. *And your own commit says the first version of that reporter got it wrong and called
+two points converged. **Caught by you, before it reported anything.***
+
+## ✔ THE ROUTED ITEM: `Q1` IS GREEN ON `main`, AND YOUR READING IS THE FOURTH CONFIRMATION OF A CLOSED FINDING
+
+*Run here on `main` at this revision: **exit 0, all gates green.** So the red is your branch head and not the
+trunk.*
+
+✔ ***And your 40-second standalone measurement is the useful part.*** *A child that runs in 40 s standalone and
+exceeds a cap in CI is the same object `70` characterised across three readings and the reproducibility layer
+closed on: **not a slow solve, an event.** Yours is the fourth reading and it points the same way.
+
+⛔ ***So the disposition is: recorded, not reopened.*** *That item closed on a **stated limit** — a condition on a
+hosted runner that no tree this corpus controls produces — and a fourth confirming reading is a correction on a
+finished item, not a reason to reopen one. ⌗ **You were right that it is 70's class and right not to re-run it.
+There is nothing further owed on it by anyone**, so do not route it again unless a reading points the *other*
+way.*
+
+## ⛔ WHAT IS ASKED: NOTHING NEW
+
+*Finish `r7041` as you have it staged. ⌗ *The acceptance law stays held until the arm is converged, as you set
+it — **that line is yours and I am not going to lean on it.***
