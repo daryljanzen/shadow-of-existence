@@ -1565,8 +1565,10 @@ def hier_run(kk, EE, L_A_, D_M_, R_S_):
         _cl = float(np.max(np.abs((_PP[None, :] * _DD ** 2).sum(axis=1) - Cl)) / np.max(np.abs(Cl)))
         np.savez(_DLK, ls=ls, k=_kk, P=_PP, Dlk=_DD, Cl=Cl, closes=_cl,
                  eta=_DLK_B[0]['eta'], x0=_DLK_B[0]['x0'], vis=_DLK_B[0]['vis'],
-                 rs_leaf=_DLK_B[0]['rs_leaf'], rs_stack=_DLK_B[0]['rs_stack'],
-                 jac=_DLK_B[0]['jac'], arm=ARM, r_s=R_S, D_M=D_M, l_A=L_A, ns=NS,
+                 rs_leaf=np.asarray(rs_leaf_of(EE), float),
+                 rs_stack=np.asarray(rs_stack_of(EE), float),
+                 jac=np.asarray(Jac_of(EE), float),
+                 arm=ARM, r_s=R_S, D_M=D_M, l_A=L_A, ns=NS,
                  eta_ls=ETA_LS, eta_ls_w=ETA_LS_W, sliced=bool(_ksl), n_modes=len(kk),
                  inj=str(_SRCI), inj_rs=_SRCIRS, inj_vis=str(_SRCIV), inj_ph=_SRCIP,
                  nlos=len(_DLK_B[0]['eta']), nlosw=float(os.environ.get('NLOSW', '6.0')),
@@ -1753,11 +1755,17 @@ def _project(kb, ee, Y, ls, x0, e_sw):
     if _SRCD:
         _SRCD_B.append(_dec)
     if _DLK:
+        # ⛔ ** THE TWO CLOCKS ARE DELIBERATELY NOT READ HERE, AND THAT IS NOT A CONVENIENCE. **
+        # *`C60_the_hier_composition_defect_names_two_flags_its_own_tree_never_had` measures, as a
+        # standing claim about this file's TEXT, that neither projection carries `Jac_of` -- the clock
+        # asymmetry does not enter the projection.  A first version of this save recorded `Jac_of`,
+        # `rs_leaf_of` and `rs_stack_of` alongside the transfer and broke that claim on a REPORTING
+        # line, with the physics untouched.* ⇒ ** A quantity that is only being reported does not get
+        # to weaken a measured claim about where a quantity is read. **  They are gathered at the
+        # write site in `hier_run` instead, beside `SRCETA`'s, which is where the eta-side background
+        # already lives.
         _DLK_B.append(dict(ls=np.asarray(ls), k=kb.copy(), P=P.copy(), Dlk=_dlk,
-                           eta=ee.copy(), x0=x0.copy(), vis=np.asarray(vis_of(ee), float),
-                           rs_leaf=np.asarray(rs_leaf_of(ee), float),
-                           rs_stack=np.asarray(rs_stack_of(ee), float),
-                           jac=np.asarray(Jac_of(ee), float)))
+                           eta=ee.copy(), x0=x0.copy(), vis=np.asarray(vis_of(ee), float)))
     return out
 
 
