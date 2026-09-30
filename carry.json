@@ -5,12 +5,6 @@
     "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/36641049434",
     "since": "17ed270adc9c79bbbd01792f641394797a8030fe"
    }
-  },
-  "tolerance": {
-   "receipts/P10_canonical_time/P10_the_covariant_quartic_is_seven_rationals_carried_by_an_identity_and_no_measurement_route_reaches_them.py": {
-    "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/36618223335",
-    "since": "0c41d9b8f8f053a4aa9cf80daaaac4c8df1b6946"
-   }
   }
  },
  "claude/shadow-of-existence-setup-6awafl": {
