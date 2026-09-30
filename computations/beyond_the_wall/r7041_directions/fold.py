@@ -87,12 +87,25 @@ def tiling(outdir, tag, n):
     got.sort()
     if not got or got[0][0] != 0:
         return None
-    end = 0
-    for lo, hi, _f in got:
-        if lo != end:                    # a gap, or an overlap that would double-count
+    # ⛔ ** A CONFIGURATION THAT CHANGED WIDTH CAN CARRY A STRAY SLICE FROM THE OLD SCHEME, and the first
+    #   version of this walk was defeated by one. **  *`inj_fixed_lcdm_nlos2240` is tiled `0:250 ... 1500:1750`
+    #   at the old width, then `1750:1812 ... ` at the new one -- and it ALSO holds a `2500:2750` banked before
+    #   the change.  Once the narrow slices reach `2494:2556` that stray no longer abuts anything, so a walk
+    #   that refuses every non-abutting slice refuses the whole configuration forever.*
+    #     ⇒ ** The walk now STOPS once [0, n) is covered and returns only the slices it used. **  A slice past
+    #     the end is not part of the sum, which is both the right answer and the one that cannot double-count
+    #     the overlap.  *Refusing was safe -- it never summed a bad set -- but safe and stuck is still stuck.*
+    used, end = [], 0
+    for lo, hi, f in got:
+        if end >= n:
+            break                        # already covered: anything further is not part of the sum
+        if hi <= end:
+            continue                     # wholly redundant with what is already covered
+        if lo != end:                    # a real gap, or a partial overlap that cannot be resolved
             return None
+        used.append((lo, hi, f))
         end = hi
-    return got if end >= n else None
+    return used if end >= n else None
 
 
 def _done(log):
