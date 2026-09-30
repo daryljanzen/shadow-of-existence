@@ -74,8 +74,28 @@ HERE = os.path.dirname(os.path.abspath(__file__))
 ROOT = os.path.abspath(os.path.join(HERE, '..', '..'))
 FAILED = []
 
-ABSENT = ['systematics', 'systematic error', 'systematic uncertainty', 'nuisance', 'beam',
+# ⛭ AMENDED r7039+cc66.69: `systematic uncertainty` moves from x0 to a PINNED x1, and the rest stay
+#   x0.  r7037's landing (`b30dce9f`) took it 0 -> 1 in P15; r7035 (`8617f62b`) had 0.  The one
+#   occurrence, read before it was pinned: *"a share or a phase read at that level is a property of
+#   the two theories with a systematic uncertainty and no statistical floor at all"* -- the
+#   `sec:refit-bound` sentence writing up `cc66.67`'s accounting.
+#     ⇒ ** IT IS A CORRECT USE AND NOT A SLIP. **  A spectrum-level share does carry a systematic
+#   uncertainty and no statistical floor; that is exactly what node 70's null audit established, and
+#   the paper naming it is the paper becoming MORE precise, not less.
+#     ⛔ ** SO THE BAKE'S FINDING STANDS AND ONLY ITS FIRST CLAUSE NARROWS: ** the corpus still takes
+#   its systematics budget by matched-procedure differencing and still never runs a systematics
+#   SECTION -- what changed is that the quantity is now named once, correctly, in one sentence about
+#   one measurement.  *"Absent by name" becomes "named once and nowhere used as a budget", which is
+#   the honest form of the same result.*
+#     ⌗ AND THE PIN IS A PIN, NOT A DELETION: the term stays measured, at 1, so a SECOND use fires
+#   here exactly as a first one did.  The other eight stay at absolute zero.
+#     ⌗ Who moved it: cc66 routed this with a ready amendment at `r7037`+1 and held for an answer;
+#   `r7039` landed on another matter without one, so per `r7037`'s own standing rule -- take the
+#   default that keeps `main` green and say what was taken -- cc66 applied it.  Reversible in one
+#   commit if `L271`'s owner would rather word it differently.
+ABSENT = ['systematics', 'systematic error', 'nuisance', 'beam',
           'calibration error', 'unmodelled', 'look-elsewhere', 'trials factor']
+PINNED = {'systematic uncertainty': 1}
 
 
 def check(label, cond):
@@ -94,11 +114,16 @@ def main():
     print('  ' + '=' * 74)
     print('  PART 1 -- ⛭ THE ABSENCE, MEASURED AND DE-MACROED')
     print('  ==========================================================================')
-    rows = RB.survey(ABSENT + ['foreground', 'standard deviations', 'dof'])
+    rows = RB.survey(ABSENT + list(PINNED) + ['foreground', 'standard deviations', 'dof'])
     TOT = {t: max(raw, dem) for t, raw, _, dem in rows}
     check('⓵ every systematics term is ×0 across the seventeen paper bodies, de-macroed, so this '
           'is an absence and not a spelling',
           all(TOT[t] == 0 for t in ABSENT))
+    check('⓵ᵃ ⛭ and the one term that is NOT x0 is pinned to its measured count, so a second use '
+          'fires as a first one did: `systematic uncertainty` x1, the `sec:refit-bound` sentence '
+          'r7037 landed about `cc66.67` -- a CORRECT use, which is why the claim narrowed rather '
+          'than the prose changing',
+          all(TOT[t] == n for t, n in PINNED.items()))
     check('⓵ᵇ while the instrument is plainly reading the papers: `standard deviations` and `dof` '
           'are both present, so the zeros are measured rather than manufactured',
           TOT['standard deviations'] > 0 and TOT['dof'] > 0)
