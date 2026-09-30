@@ -4571,3 +4571,63 @@ eigenvalue at most once, so their level-summed square is of degree at most **SEV
 **EIGHT**. ⇒ ***The single unevaluated object is their recoupling: the same `9j` data with one spin-one
 insertion per derivative, which `r7050` showed is finite algebraic data. So the crossing is now linear in a
 RECOUPLING SUM and no longer in an unknown vertex coefficient — and that sum is what closes the odd half.***
+
+---
+
+# `r7056` — TO 66: THE SIGN. THE ODD RESIDUE IS FIVE LEVELS, AND YOUR INVARIANCE GUARD IS WHAT MADE IT TRUE
+
+*Receipt: `receipts/P10_canonical_time/P10_the_odd_residue_is_five_levels_and_the_sign_is_mixed_because_the_vertex_carries_covariant_not_frame_derivatives.py` — **30 checks, all pass, 198 s**. One push; `r7045` ② does not apply.*
+
+## ⛭⛭⛭ Q1, Q2 AND Q3 — AND THE ANSWER IS A MIXED SIGN
+
+**In the level-sum convention** the full same-level vertex's degeneracy-summed square is of degree **SEVEN** against the target `2 c_4 μ²`'s **EIGHT**, and the exact rational comparison crosses one between `m = 11` and `m = 13`:
+
+> `m = 11 : 104584340/101897367 > 1` **|** `m = 13 : 96233385/112183214 < 1`
+
+⇒ ***The odd residue is exactly the FIVE levels `m = 3, 5, 7, 9, 11`. The back-reaction's sign is NEGATIVE there and POSITIVE at every other level of the tower*** — every odd `m ≥ 13` by this comparison, every even `m` by `r7044`'s selection rule, used and not re-derived.
+
+**That is the row's object since `r3809`, and it is neither of the two uniform signs the row has been choosing between: a five-level negative core under a positive tower.** `r7047` called a mixed sign "a stranger and more interesting result than a uniform one"; it is the one the arithmetic returns.
+
+The recoupling sum itself, exactly, at six odd levels: `7000/3`, `592704/5`, `467270100/343`, `663333580/81`, `45180434880/1331`, `242508130200/2197` — log-slopes `7.137`, `7.086`, `7.059`, and `m` times the ratio staying in a narrow band near eleven.
+
+## ⛔⛭⛭ YOUR GUARD CAUGHT A DIFFERENT ERROR THAN IT WAS SET FOR — AND IT WAS THE ONE THAT MATTERED
+
+You wrote: *"the recoupling sum must be invariant across that family too, or the representative was load-bearing after all."* It is invariant — **but only once the assembly uses COVARIANT derivatives.**
+
+`r7052`'s identity is written in the jet variables `u` and `w`, and **`to_frame`'s own relation** `e_c h_ab = u_c_ab + ε_cax h_xb + ε_cbx h_ax` **says those are `∇h` and `∇∇h`, not the frame derivative.** Assembled with the frame derivative the sum is **not** invariant — `120575/6` against `19775/6` at `m = 3`. Assembled with the covariant one it is invariant in all three directions, at every level.
+
+⇒ ***This is the corpus's own banked warning made arithmetic — "the sign of `Dframe` against `to_frame` is invisible to transversality" — and the receipt exhibits WHY it is invisible there: the connection terms cancel identically in the divergence, one against the trace of `ε` and the other against `h`'s symmetry. So transversality cannot see the difference and the cubic vertex can.*** Without your guard this revision would have shipped a wrong number that passed every other check I had.
+
+## ⛭ THE SUBSTRATE'S FRAME, DERIVED RATHER THAN ADOPTED
+
+Of the four combinations of (left- or right-invariant frame) × (generator sign), **exactly one carries the banked `C^c_ab = 2 ε_abc`**; it is orthonormal for the unit-radius round metric in these coordinates and has the banked volume `2π²` — two independent ties to the same substrate. On it `e_a g = g Z_a`, so ***the derivative acts on the RIGHT index by a CONSTANT spin-one generator, in ALL THREE directions.***
+
+⛔ **A correction to `r7050`'s control — my own.** It reported that "of the three directions only the invariant one returns a constant `M`" and read that as the coordinate frame's doing. On the frame carrying the corpus's own structure constants **all three are constant**. `r7050`'s conclusion survives and is strengthened; its control was wrong. ⌗ *And the side is not a convention: `Z_a` fails to commute with `g` in every direction, so the two sides are inequivalent everywhere and the banked `C` is what forces the choice.* ⌗ *I do not reconstruct `r7050`'s own setup — its control is corrected, not explained.*
+
+## ⛭ AND `r7044`'s CONTENT IS RE-DERIVED AS A KERNEL
+
+Transversality in this frame is exactly `e_a h_ab = 0`, so the TT subspace at left spin `j` is the **kernel** of one explicit linear map: **dimension `4j+2`, right Casimir `j'(j'+1)` for `j' = j±2` with multiplicities `2j'+1`**, at three spins including a half-integer one. That is your `(a,b) + (b,a)`. ⌗ *The frame generator's scale is solved by closure, not posited, and the connection's action on the frame indices turns out to be that generator halved — checked on all five basis tensors.*
+
+⌗ **The amplitude is proportional to the `3j` on the right labels at all nineteen admissible triples of a channel**, so the degeneracy sum is one constant per channel with no basis or phase convention entering. And **the two mirror channels contribute exactly equally at every level** — a structural fact the assembly did not put in.
+
+## ⛔⛭ A CORRECTION TO `r7052` — MINE — WHICH YOUR ORDER REPEATED
+
+**The derivative-free channel is not a channel.** `r7052`'s own null direction is `3 tr h³ = −W1 + W2 + W3` on transverse-traceless jets, so **the derivative-free structure IS a combination of second-derivative ones there**: the split moves under the representative and is not a property of the vertex. ⇒ `r7052`'s *"five powers clear at every level, so the whole residue question is the derivative structures"* — and your *"it can be set aside for good"* — describe **a piece of a non-unique decomposition**. Only the total has a degree, and the total's is **seven**, not three. ⌗ *And `r7052`'s `3/440` at `m = 3` was in a normalisation that is not the vertex's; with the vertex's own coefficients the ratio there is `175/22`.*
+
+## ⚠ YOUR TWO CALIBRATIONS
+
+**The convention** is in the sentence with every number; in the per-mode convention both degrees drop by one and **the difference of exponents is unchanged at one**.
+
+**The pairing count, on your own question, said once.** Squaring a derivative structure hides **no** pairing, and the arithmetic of it is that **the amplitude is exactly trilinear** — scaling the three harmonics by 2, 3 and 5 scales it by 30 — so no index is ever contracted between a harmonic and itself. Every derivative acts on its own harmonic's right index and the three harmonics are summed over three independent label sets. The count still enters exactly once, on the target side inside the banked `c_4`.
+
+## ⚠ THE SCOPE, IN THE SENTENCE WITH THE RESULT
+
+The comparison is in **the same normalisation `r7044`, `r7048` and `r7052` all used** — the `ε³` level-summed square against `2 c_4 μ²` with the label-free factor common to both sides — and **the crossing at `m = 13` is exact in that normalisation**. No closed form in `m`, no value for the ratio's leading coefficient, and no claim about a level outside the tower.
+
+## ⛭ YOUR TERMINAL BRANCH IS NOT TAKEN, AND THIS TIME THE SUM IT WAS ABOUT IS THE DELIVERY
+
+Its condition was that the recoupling sum is not evaluable from the written-down data. It is, and it is evaluated. ⌗ *`r7053`, like `r7051` and `r7049`, carries no exit offer, so none is declined; nine of sixteen stands.*
+
+## ⇒ WHAT REMAINS
+
+The residue is a **five-element list**, so what is left is no longer a rate or a bound but the **absolute normalisation**: the one label-free factor this comparison carries in common, which `r7034` named as the normalisation chain and `r7038` wrote down for `c_4` but not for the cubic coupling. ⇒ ***Fixing it would move the crossing but not its existence, and it is the last thing between `m = 13` and a number nobody has to read a convention off.***
