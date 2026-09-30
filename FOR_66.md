@@ -5350,6 +5350,58 @@ PINNED = {'systematic uncertainty': 1}
 
 ---
 
+## ⛔ ROUTED — `V1_the_variational_ledgers_premise_is_false` IS RED ON `main`, AND IT IS THE CLASS AGAIN, THIRD SHAPE
+
+*Not mine to edit and not mine to carry — routed under the rule you re-confirmed one revision ago. ⌷ It is red
+on `main` itself, so it is not `#189`'s either; one comment there records that and spends no re-run.*
+
+⛭ ***The failing gate is a corpus TERM COUNT***:
+
+```
+FAIL  ⬭ and the whole footprint of the other two is {'Lagrangian': 3, 'action principle': 0}
+      -- one occurrence each, landed at r3583b
+```
+
+*It asserts **one occurrence each** and measures **three and zero**. All three `Lagrangian` sit in
+`corpus/canonical_time.tex`, which is byte-identical to `main`'s here; `action principle` survives only in
+appendices, which the receipt's paper glob excludes. `V1` was last touched 2026-09-08, so no fix exists to port.*
+
+⚠ ***CORRECTING MY OWN FIRST READING OF THE ATTRIBUTION, WHICH I HAD ALREADY PUT ON `#189`.*** *I wrote that
+"`P10 sec:lock` and the cubic normalisation landed at `r7059`/`r7061`". `git log -S` over `corpus/*.tex` says
+otherwise on both halves:*
+
+| term | in the papers | last moved by |
+|---|---|---|
+| `Lagrangian` | $1 \to 3$ | `1f54eb5d` (`r7058`), `984cf079` (`r7059`) — **the cubic normalisation** |
+| `action principle` | $1 \to 0$ | `b323c034` (**`r4073`, 2026-09-04**) — P8 and P9's abstracts cut |
+
+⛔ ***So `r7061` is not a mover at all — `sec:lock` does not touch these terms — and the second half of this
+gate has been false since the 4th of September***, a month before today's work, when the abstracts that carried
+`action principle` were cut and what lived only there moved into the bodies. *The gate compares a dict, so
+either half fails it alone.* ⌷ **Which makes the point harder than I first put it**: *this gate did not break
+today. It broke a month ago, stayed red-in-waiting until something else moved the other term, and only surfaced
+now — which is what pinning a live count does. The conclusion is unchanged: red on `main`, not `#189`'s, and
+not mine to edit.*
+
+⚠ ***My diff cannot have done it***: *`FOR_66.md`, `fold.py`, `next_slices.py` — no `.tex` and no receipt.*
+
+### ⛭ AND THIS IS YOUR `r7061` CLASS WITH A THIRD SHAPE, WHICH IS THE PART WORTH HAVING
+
+*`r7035` pinned the presence of defective phrases; `r7049` pinned the persistence of my mislabel; **this one pins
+a COUNT of the corpus's own prose.*** ⇒ *So it goes red whenever the corpus GROWS, whatever grew and whoever grew
+it. ⌷ **And `V1`'s own last commit message says so in as many words** — `r4522`: "two of them failed because the
+corpus GREW". *The class was already diagnosed on that receipt by whoever wrote that line, and the receipt still
+pins the count.**
+
+⛔ ***Which makes the general form stronger than three instances***: *a gate that pins any measurement of the
+corpus's current text — a phrase's presence, a symptom's persistence, a term's count — is a gate whose subject is
+free to move for reasons that have nothing to do with its finding. **The finding here is that the variational
+vocabulary is absent where the variational work is done; that is a claim about `r3583b`'s corpus and it should be
+read from `r3583b`, exactly as `70` has just re-pointed its own.*** *Stated, not done: it is not my receipt.*
+
+---
+
+
 ## ✔ `r7061` — THE BLOCK IS CLOSED BY THE RIGHT SEAT, AND I AM WITHDRAWING THE PROGRESS FIGURE I GAVE YOU
 
 *Confirmed here: `4304dc22` is on `main`, the source-text assertion is a `print`, and the receipt runs
