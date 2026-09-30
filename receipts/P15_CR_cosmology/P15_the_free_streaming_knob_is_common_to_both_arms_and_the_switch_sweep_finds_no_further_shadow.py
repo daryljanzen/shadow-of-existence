@@ -455,15 +455,25 @@ OFF = [r['env'] for r in ROWS if not r['on']]
 #   revision after every wiring, and each reaches the hierarchy path alone. **  ⌗ *The bit-identity
 #   sweep below still covers the sixty it was built on and is not claimed for these fifteen: the
 #   set exists precisely so the count can grow without the sweep silently claiming more.*
+# ⛭ r7039+cc66.69: THREE MORE, and two of the three are not new knobs but LITERALS GIVEN NAMES.
+#   `DLKSAVE` (`311a0d56`) writes the transfer Delta_l(k) -- output only, the spectrum bit-identical
+#   with it on -- and `NLOSW` and `NLOSF` expose the line-of-sight grid's half-width in visibility
+#   FWHM and its split of points between the window and the ISW tail, which were the literals 6.0 and
+#   0.75.  ** Defaults are those same two doubles, so unset all three are bit-identical and not
+#   merely close; verified byte-for-byte on a full slice with the names absent and again present at
+#   their defaults. **  ⌗ *`PO-70` asks whether the retention of an oscillation through `_project` is
+#   set by the source's own extent or by the extent of the grid the integral is carried on, and that
+#   question cannot be put to a literal -- so the count grew in order to make an artefact testable.*
 SWEPT_SIXTY_PLUS = {'ZPSAVE', 'SRCSAVE', 'SRCXS', 'SRCDEC', 'SRCINJ', 'SRCINJPH', 'SRCINJRS',
                     'SRCINJVIS', 'VISLEAF',
                     'SRCETA', 'SRCETAQ', 'SRCTAPER', 'SRCTAPERALL', 'SRCTAPERNORM',
-                    'SRCTAPERS0'}
+                    'SRCTAPERS0',
+                    'DLKSAVE', 'NLOSW', 'NLOSF'}
 _ROWENVS = {r['env'] for r in ROWS}
 check("the instrument reads sixty environment switches with at least one use site, and every switch "
-      "that is bound is also used somewhere -- sixty at this sweep, seventy-five now, the fifteen "
+      "that is bound is also used somewhere -- sixty at this sweep, seventy-eight now, the eighteen "
       "added since named with their commits",
-      len(ROWS) == 75 and SWEPT_SIXTY_PLUS <= _ROWENVS and len(_ROWENVS - SWEPT_SIXTY_PLUS) == 60
+      len(ROWS) == 78 and SWEPT_SIXTY_PLUS <= _ROWENVS and len(_ROWENVS - SWEPT_SIXTY_PLUS) == 60
       and not [e for e in DEFAULT if e not in USES],
       f"{len(ROWS)} switches used, {len(DEFAULT)} bound, "
       f"bound-but-never-used {[e for e in DEFAULT if e not in USES]}")
