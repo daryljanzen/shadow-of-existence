@@ -5282,3 +5282,68 @@ $$\textbf{share} \;=\; \lvert\cos\Delta\rvert \quad \textbf{exactly}$$
 * ***`S2`'s ⓵ is an ABSENCE CLAIM about what the corpus asserts of itself.*** *Amending it changes a finding, and there are at least two defensible amendments — qualify the count, or narrow the scope to "never as a budget". **Picking one silently is an adjudication, not maintenance.*** ⌗ *And it has a second resolution entirely in your hands: reword the sentence.*
 
 ⇒ **So: proposed amendment above, ready to apply. If you would rather I just make it, say so and I will — but I did not want to widen "move the pin yourself" into "rewrite another bake's finding" on my own reading of it.** ⌗ *If that line is in the wrong place, tell me where you want it and I will hold it there.*
+
+---
+
+# cc66.69 — `S2`'s amendment **applied**, and `PO-70` under way with a pre-registration that had to be corrected before it ran
+
+## ⛭ FIRST: THE `S2` DEFAULT IS TAKEN, AND THIS IS THE "TELL ME WHAT YOU TOOK"
+
+*`r7039` landed on `PO-70` without answering the routed question above, and your own standing rule says what to do then: **take the default that keeps `main` green and tell me what you took.*** ⇒ **Taken, as its own reversible commit, `f3eaa59d`.**
+
+*What was taken is the **narrower** of the two amendments I offered — a pin, not a rescope:*
+
+```python
+ABSENT = ['systematics', 'systematic error', 'nuisance', 'beam',
+          'calibration error', 'unmodelled', 'look-elsewhere', 'trials factor']
+PINNED = {'systematic uncertainty': 1}
+```
+
+| | |
+|---|---|
+| **⓵** | the eight remaining terms are still ×0 across the seventeen paper bodies, de-macroed — *the absence claim, untouched* |
+| **⓵ᵃ** | ⛭ **new** — `systematic uncertainty` pinned to its **measured** count of 1, the `sec:refit-bound` sentence, so a **second** use fires here exactly as a first one did |
+
+⇒ ***THE PIN IS A PIN AND NOT A DELETION.*** *The term stays measured. What is given up is only the word "total" in the first clause; the bake's finding — a systematics method present under no name — stands unchanged, and `S2`'s verdict line is untouched.*
+
+⌗ *I took the pin rather than the rescope because it is the one that **keeps the instrument live**. Rescoping to "never used as a budget" would have replaced a count with a judgement, and a judgement cannot fail a gate. **The receipt's comment carries the whole reason, the causing revision, and the fact that I applied it under your rule rather than on my own authority — so it reverses in one commit if you would rather word it differently.*** Receipt green, 22 gates; the 108-gate fast set green.
+
+## ⛔⛔ AND THE FIRST THING `PO-70` PRODUCED WAS A CORRECTION TO ITS OWN PRE-REGISTRATION, BEFORE ANYTHING RAN
+
+*I drafted `PREDICTION.md` with the **clock swap on the injection** as its central stage, citing the instrument's comment about the two clocks.* ⛔ ***That comment is the comment `cc66.42`'s own swap wrote at `r6919`. Going from that draft to a script would have re-derived finished work and reported it as new.***
+
+⌗ ***THE FAILURE WAS READING THE CODE'S COMMENTS INSTEAD OF THE REGISTER THEY CAME FROM***, *and it is this seat's eighth in the series. It cost a draft and not a revision, because pre-registration is what caught it: the correction sits at the **head** of the committed file (`fdf5f2d3`) rather than buried in a revision that then quietly overlaps `r6919`.*
+
+⇒ **New standing form, and it is the one I would keep:** ***a pre-registration is finished work in the same sense a receipt is, so it is written against the register and not against the code.*** *An instrument's comment records what a measurement found; it is not a statement that the measurement is still open.*
+
+## ⛭⛭⛭ AND SUBTRACTING `r6919` LEAVES A SHARPER ROW, BECAUSE `r6919`'s OWN NUMBERS HOLD A TENSION IT DID NOT RESOLVE
+
+*Two facts from your `cc66.42` table, neither used there to draw a conclusion:*
+
+* ⚑ ***The sound horizon accumulated ACROSS the visibility agrees between the arms to $0.08$ per cent*** — $17.3074$ against $17.2941$. *So if retention were what the plasma's phase sweep does across its own window, **the arms would agree and there would be nothing to explain.***
+* ⚑ ***A FIXED-phase injection — a standing oscillation, no rate at all — already carries $1.0587$ of the $1.0659$***, *and its $q$-slope $+0.01189$ **reproduces the real source's $+0.01167$ to two per cent** where the sweeping injection's $+0.02260$ is nearly double it.*
+
+⇒ *** SO THE SWEEP IS NOT THE DRIVER. WHAT DIFFERS IS THE $\chi$-EXTENT OF THE SOURCE'S SUPPORT — $38.042$ AGAINST $43.591$, $14.6$ PER CENT — AND THAT IS WHAT THE KERNEL READS. ***
+
+*You wrote one clause about this at `r6919` — "a **standing** oscillation already carries most of it; the kernel's own window does part of it" — and then the row went elsewhere. **`PO-70`'s claim is that it does essentially all of it, and a claim of that shape is a law or it is nothing.***
+
+### THE LAW, NAMED BEFORE IT WAS TESTED
+
+*For a standing oscillation the integral factorises exactly, $\Delta_\ell(k)=\cos(kr_s^{*})\,k^{(1-n_s)/2}G_\ell(k)$ with $G_\ell(k)=\int v\,j_\ell(k\chi)\,d\chi$ — **so the comb passes into $\Delta_\ell$ untouched and the only thing that can damp it is the sum over $k$ at fixed $\ell$.*** ⇒ **Retention is the comb averaged over the kernel's own $k$-acceptance, and that acceptance is narrowed by a wider $\chi$-window.**
+
+⌗ *And it has **no free coefficient**: the suppression is $A_\ell=\lvert\int W e^{2ikr_s^{*}}dk\rvert/\int W$ with $W=G_\ell^2\,dk/k$, so the law predicts the **absolute** oscillation amplitude and not only the arm-to-control ratio.*
+
+## ⛭⛭ WHAT IS PUSHED, AND WHAT THE ROW OWES
+
+| | |
+|---|---|
+| `f3eaa59d` | the `S2` amendment, its own reversible commit |
+| `eb301d28` | the pre-registration's first draft — **kept, so the correction has something to correct** |
+| `fdf5f2d3` | the corrected pre-registration, with the failure at its head |
+| `311a0d56` | the instrument: `NLOSW`, `NLOSF` and `DLKSAVE`, bit-identical unset, verified byte-for-byte |
+
+*`DLKSAVE` writes $\Delta_\ell(k)$ — **the transfer itself, which this instrument had never saved**: every earlier save sits downstream of the $k$-sum, which is precisely the operation the order's question is about.*
+
+⇒ **Owed, and running now:** *the artefact stage **first** (`NLOS`, `NLOSW`, `NLOSF`, on the $0.6$ per cent floor fixed in advance, because `M2` is the reading that rescues the fit); the acceptance measured off the saved transfer; the law used forward with no refitting; and the sweep's excess over the fixed injection accounted for or reported as unaccounted.*
+
+⌗ **On your standing invitation:** *it does not feel like looking for the bug that rescues the fit — it feels like the opposite, and I want that on the record **before** the numbers rather than after. The reading I have written down says the excess is the background's own, and the artefact stage is the one I ordered first precisely so that preference cannot do the work.*
