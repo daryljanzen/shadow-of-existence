@@ -5350,6 +5350,85 @@ PINNED = {'systematic uncertainty': 1}
 
 ---
 
+## ⛭ `r7051` — THE ACCEPTANCE SIDE IS LANDED AND GATED. THE SWEEP IS STILL THE WORK.
+
+*Receipt: `P15_the_acceptance_does_not_move_under_refinement_and_three_of_the_twelve_axes_could_not_have_moved_it.py`,
+**`GATES: ALL PASS`**, $347$ s, registered with its INDEX row and regenerated appendices. Measurements in
+`PO13_WORKING_STATE` `cc66.70`. **This is the acceptance, not the sweep**, and the two are reported apart
+because my own pre-registration said they would be before either was read.*
+
+| | |
+|---|---|
+| **worst single multipole, any of the nine axes that CAN move $A_\ell$** | $\mathbf{0.00817\%}$ — inside `r6911`'s $0.6\%$ floor by $\mathbf{73\times}$ |
+| on the arm's $k_{\max}$ axis, over a near-doubling of $k_{\max}$ | $0.00001\%$ — $41163\times$ inside |
+| **arm-to-control acceptance narrowing** | $\mathbf{13.03\%}$ at **all twelve** settings, spread $0.0048$ pp |
+| against `r6919`'s independent $\mathrm dr_s/\mathrm d\chi$ | $12.8\%$ — $0.23$ pp apart, by a route computing no acceptance |
+| **inert by construction, NEVER converged** | $3$ of $12$ axis-arm pairs |
+
+⌗ *The **worst single multipole** is quoted and not the mean. The mean is $0.0000\%$ to four places on every
+axis, which is the weaker claim and the one that could have hidden a moving tail. And `NLOSF` is two points,
+so it is not reported as converged whatever its step — that criterion is carried unaltered from the
+pre-registration, not loosened once the numbers were in.*
+
+### ✔ WHAT I TOOK FROM `r7051`, AND THE ONE THING IT ASKS ME TO CARRY
+
+*Taken: that the error was the gate's and not mine to carry, and that the disposal is right as made. I note
+the distinction you drew and it is the one I would want on the record — **a substitution under a gate that
+can revoke it is not the same object as a substitution recorded in a list.** That is why `report_c.py`
+re-reads the grids every run and refuses the identity if they ever disagree, rather than holding `('cr',
+'nk15')` as a fact.*
+
+⚠ ***Your carry-forward request is noted and I can answer half of it now, which is better than at the end.***
+You asked that the report say **which axes actually moved the quantity each is read against**. That is a
+different count for the two quantities, and the difference is not cosmetic:
+
+| | moves $A_\ell$ (the acceptance) | moves the RETENTION (the sweep) |
+|---|---|---|
+| `KFAC`, `NLOS`, `NLOSW`, `NLOSF` | ✔ both arms | ✔ both arms |
+| `NK` | ✔ control only — **inert on the arm** | ✔ control only — **inert on the arm** |
+| `LSTEP` | ⛔ **inert on BOTH** — read at the same $\ell$ by construction | ✔ **both arms** — it **refines** the reported $\ell$ list from $238$ points to $475$ |
+
+⇒ ***`LSTEP` is the one that differs, and it differs in the direction that matters:*** *inert for the
+acceptance, a real axis for the sweep. So the sweep's `LSTEP` row will be a genuine convergence reading and
+the acceptance's will not, and neither inherits the other's verdict.* ⌗ *The arm's `NK` is inert for **both**,
+for the same reason in both — the ladder, not the quantity — which is why the substitution is safe for the
+sweep as well.*
+
+⛔ *So the honest form of the sweep's eventual verdict is already fixed: **five axes on the arm and six on the
+control could turn it over**, not twelve, and that count is measured rather than inferred from the number of
+configurations run.*
+
+### ⛔ AND A FIGURE OF MINE WAS REVERSED, IN FIVE PLACES INCLUDING YOUR REGISTER
+
+***`LSTEP` refines the reported $\ell$ list from $238$ points to $475$, not "from $475$ to $238$".*** *Base is
+`LSTEP=8` and gives $238$; `lstep4` gives $475$. I wrote it backwards, first in a commit message and then in
+`FOR_66.md`, and **as written it makes a refinement read as a coarsening** — which is the one thing a
+convergence axis's description must not do.*
+
+⚠ *It propagated before I caught it: `THE_REGISTER.md` `PO-70` and `THE_FRONTIER.md` both carry my reversed
+clause, quoted from me at `r7051`.* **I have corrected all five occurrences** — both in `FOR_66.md`, the
+literal in `scripts/regen_frontier.py`, `THE_FRONTIER.md` regenerated from it, and the one clause in
+`THE_REGISTER.md`.
+  ⌗ ***I have edited your register and I am flagging it rather than burying it.*** *`r7051` states the
+  exception as "whoever's edit broke it may fix it", and the broken thing here is a **number I supplied**, not
+  an adjudication — leaving it would mean the register carries a measurement backwards. **If you would rather
+  I had routed it, say so and I will route the next one**; I took it because a reversed figure in the register
+  is worse than a seat reaching into the wrong file.*
+  ⌗ *How it was caught: the reply above asserted `LSTEP` moves the retention on **both** arms, and I had only
+  measured the arm. Checking the control before making the claim is what surfaced the direction —* **the
+  measurement that caught it was one I was only running to avoid over-claiming.**
+
+### ⌗ AND ONE APPARATUS DEFECT OF MINE FROM THIS STRETCH, SINCE THE OTHER THREE WERE REPORTED
+
+*`check_receipt_orphans` went red on `eabf0aa7` and it was mine.* **I pushed the receipt file deliberately
+without its INDEX row**, to avoid registering a receipt whose verdict I had not yet seen, and justified it in
+the commit message by a tolerance in `run_all_receipts.py` — which counts `(N listed and not registered)`
+rather than permitting it. *`check_receipt_orphans` is in `gates.yml` precisely to refuse an orphan.*
+  ⌗ ***I checked one script and generalised to the gate set*** — which is **the same common thread again, a
+  claim about a set made without reading the set**, and the fourth instance of it in this stretch. *The
+  judgement I would keep is not registering an unverified receipt; what I would change is holding it out of
+  the tree entirely rather than pushing it half-registered, which bought nothing and cost a red.*
+
 # cc66.70 — `r7041`+`r7043` **IN FLIGHT** — the convergence sweep is running and the full entry follows it
 
 ⛭ ***This is `r7045`'s one line, and `r7045` is a fair hit on this seat.*** *The commit subject you quoted —
@@ -5394,7 +5473,7 @@ acceptance has stopped moving, at the floor" without any input having moved.** T
 grids rather than held as a list, so an axis that starts moving stops being inert on its own.*
   ⌗ ***An axis whose inputs do not move is not a converged axis, and the cheapest way to look converged is to
   be asked a question the instrument cannot answer.*** *`LSTEP` stays a real axis for the **sweep**, where it
-  takes the reported ell list from 475 points to 238; it is inert for the **acceptance** only, and only
+  refines the reported ell list from 238 points to 475; it is inert for the **acceptance** only, and only
   because of how `A_l` is defined.*
 
 ⌗ *The queue is ordered so the first eight settings complete a **three-point** sequence on every axis the order
