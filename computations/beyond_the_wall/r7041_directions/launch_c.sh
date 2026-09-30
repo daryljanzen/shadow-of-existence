@@ -26,6 +26,11 @@ D=/tmp/n66/r7041; mkdir -p $D/noop $D/inj
 export OMP_NUM_THREADS=1 OPENBLAS_NUM_THREADS=1 MKL_NUM_THREADS=1
 LCDM="ARM=lcdm LH0=67.410309 LOM=0.309826 WBH2=0.021966 NS=0.954248"
 CR="ARM=cr CRH0=68.581133 CROM=0.297209 ZSTART=3e7 LEAFSCALES=1 WBH2=0.021524 NS=0.997952"
+# ⌗ ** THE SETTING'S ENVIRONMENT COMES AFTER THE DEFAULTS ON PURPOSE, AND `env` RESOLVES IT. **
+#   `env LSTEP=8 ... LSTEP=4` takes the LAST assignment, so the `lstep4` row overrides the default
+#   rather than being ignored by it.  *Verified rather than assumed, because a setting silently not
+#   applied is exactly the shape `r6925`'s thirty-six wasted slices had -- and the `__SWITCHES__`
+#   marker prints what actually arrived, so each log carries its own proof.*
 run () { out=$1; tag=$2; shift 2
   [ -s "$out/$tag.log" ] && grep -q '^__DONE__' "$out/$tag.log" && { echo "  skip $tag"; return 0; }
   env HIER=1 "$@" SAVE=$out/$tag.npz python3 -u ACOUSTIC_two_arm.py > $out/$tag.log 2>&1
