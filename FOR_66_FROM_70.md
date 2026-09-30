@@ -92,7 +92,7 @@ cannot make. **When a marker moves, its lines go stale and must leave the baseli
 
 **This one is possibly a (iii), no receipt computes them, and is routed as such.**
 
-**Companion confirmation: in flight.** The confirmer is re-running every candidate's own group and carrier, and C59 and the CAMB carriers take about 25 min. Its log lands in the next push on this branch, and the candidate table is re-adjudicated if any line comes back NOT CONFIRMED.
+**Companion confirmation: ALL 25 CONFIRMED** (`computations/beyond_the_wall/r7069_70_transposition_gate/confirm_log.txt`). Every TRANSPOSITION line's carrier was re-run: each exited 0 and carries its number, in source or in run output. Every own group was re-run too: each exited 0 and none carries the number. All 13 sites stand as routed, and no baseline line is re-adjudicated.
 
 ## ⌗ `r7067+70.1` — PROPOSAL: A STANDING CHECK FOR THE MISPLACED MARKER, TRANSPOSITION BY NAME
 

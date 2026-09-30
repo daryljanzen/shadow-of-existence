@@ -1,0 +1,27 @@
+CONFIRMED      CR_cosmology.tex           0.8852    carrier rc=0 carries=True  own rc=[0] carries=none  | P15_the_shear_coefficient_derived_not_remembered
+CONFIRMED      CR_cosmology.tex           1.0618    carrier rc=0 carries=True  own rc=[0] carries=none  | P15_the_shear_coefficient_derived_not_remembered
+CONFIRMED      CR_cosmology.tex           1.1996    carrier rc=0 carries=True  own rc=[0] carries=none  | P15_the_shear_coefficient_derived_not_remembered
+CONFIRMED      CR_cosmology.tex           6/5       carrier rc=0 carries=True  own rc=[0] carries=none  | P15_the_shear_coefficient_derived_not_remembered
+CONFIRMED      CR_cosmology.tex           3.32      carrier rc=0 carries=True  own rc=[0] carries=none  | P15_the_geometry_transmits_no_parameters
+CONFIRMED      CR_cosmology.tex           0.760     carrier rc=0 carries=True  own rc=[0] carries=none  | P15_the_model_difference_is_an_acoustic_contrast_difference_
+CONFIRMED      CR_cosmology.tex           1.43      carrier rc=0 carries=True  own rc=[0] carries=none  | P15_the_model_difference_is_an_acoustic_contrast_difference_
+CONFIRMED      CR_cosmology.tex           177.88    carrier rc=0 carries=True  own rc=[0] carries=none  | P15_the_model_difference_is_an_acoustic_contrast_difference_
+CONFIRMED      CR_cosmology.tex           27.82     carrier rc=0 carries=True  own rc=[0] carries=none  | P15_the_model_difference_is_an_acoustic_contrast_difference_
+CONFIRMED      CR_cosmology.tex           282.96    carrier rc=0 carries=True  own rc=[0] carries=none  | P15_the_model_difference_is_an_acoustic_contrast_difference_
+CONFIRMED      CR_cosmology.tex           77.26     carrier rc=0 carries=True  own rc=[0] carries=none  | P15_the_model_difference_is_an_acoustic_contrast_difference_
+CONFIRMED      CR_cosmology.tex           2.393     carrier rc=0 carries=True  own rc=[0, 0, 0] carries=none  | C59_the_control_reproduces_camb_and_the_height_defect_was_k_
+CONFIRMED      CR_cosmology.tex           2.721     carrier rc=0 carries=True  own rc=[0, 0, 0] carries=none  | C59_the_control_reproduces_camb_and_the_height_defect_was_k_
+CONFIRMED      CR_cosmology.tex           2400      carrier rc=0 carries=True  own rc=[0, 0, 0] carries=none  | C59_the_control_reproduces_camb_and_the_height_defect_was_k_
+CONFIRMED      CR_cosmology.tex           298.0     carrier rc=0 carries=True  own rc=[0] carries=none  | P15_at_its_own_preferred_H0_the_crossing_arm_predicts_the_ac
+CONFIRMED      CR_cosmology.tex           298.0     carrier rc=0 carries=True  own rc=[0] carries=none  | P15_the_third_peak_deficit_is_radiation_driving_and_both_rou
+CONFIRMED      CR_cosmology.tex           10.8      carrier rc=0 carries=True  own rc=[0] carries=none  | C8_diffusion_length
+CONFIRMED      SdS-slicing-curve_v2.tex   -3/4      carrier rc=0 carries=True  own rc=[0] carries=none  | P03_triple_angle_gnomonic
+CONFIRMED      cosmogenesis_paper.tex     7.06      carrier rc=0 carries=True  own rc=[0] carries=none  | P16_nariai_welds
+CONFIRMED      cosmogenesis_paper.tex     294       carrier rc=0 carries=True  own rc=[0] carries=none  | P16_the_adiabatic_premise_is_demanded_by_the_data_and_inheri
+CONFIRMED      cosmogenesis_paper.tex     2.5671    carrier rc=0 carries=True  own rc=[0] carries=none  | P16_validate_bbn
+CONFIRMED      cosmogenesis_paper.tex     4.4611    carrier rc=0 carries=True  own rc=[0] carries=none  | P16_validate_bbn
+CONFIRMED      cosmogenesis_paper.tex     3/8       carrier rc=0 carries=True  own rc=[0] carries=none  | P16_the_leading_order_interior_is_adequate
+CONFIRMED      geometric_core_paper.tex   3/8       carrier rc=0 carries=True  own rc=[0] carries=none  | T50_the_imaginary_route_to_the_horizon_radii_is_forced_and_t
+CONFIRMED      matter_sector_paper.tex    1/8       carrier rc=0 carries=True  own rc=[0] carries=none  | P14_dimension_from_flavour
+
+ALL CONFIRMED
