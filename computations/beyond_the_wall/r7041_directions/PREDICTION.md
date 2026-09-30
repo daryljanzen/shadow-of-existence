@@ -13,7 +13,7 @@ is known to be converged is a mechanism found in an unconverged integral.**
 
 | what was in flight | status under `r7041` |
 |---|---|
-| the acceptance law `M1`, and its forward predictions | ⛔ **HELD.** *It is a mechanism. Nothing from it is reported as a result and no stage of it is run further until ⓐ–ⓒ are answered.* |
+| the acceptance law `M1`, and its forward predictions | ⛭ **HELD at `r7041`, UN-HELD at `r7043` — see the amendment at the foot of this file.** |
 | `DLKSAVE` — the transfer $\Delta_\ell(k)$, saved for the first time | ✔ **KEPT, and it serves this order better than the last one**: truncation and under-sampling in $k$ are visible in the transfer and invisible in its $k$-sum, which is the only thing the instrument used to report. |
 | `NLOSW`, `NLOSF` — the $\eta$-grid's half-width and split, made names | ✔ **KEPT.** *These are exactly ⓐ's "$\eta$-sampling of the line-of-sight integral" and they were literals until this revision.* |
 | the injection runs already on disk (`NLOS`, `NLOSW`, `NLOSF`, both arms) | ✔ **KEPT as ⓒ data.** *The launcher is idempotent against the same paths, so the four completed slices are reused and not re-run.* |
@@ -139,3 +139,38 @@ raised **only** in convergence runs and no reported spectrum moves off $2.0$ on 
 * ⚠ ***AND A HELD STAGE IS NOT A QUIET ONE*** — *new, this revision's. Having built an apparatus for a
   withdrawn order, the risk is reporting its output anyway; `M1` is named as held in the reply so that its
   absence from the results is visible rather than assumed.*
+
+
+---
+
+# ⛭⛭⛭ AMENDMENT — `r7043` CROSSED WITH `r7041` AND THE TWO ORDERS **COMPOSE**
+
+**Added before any `r7041` result was read, and before the held analysis's output was opened.** *The hold
+above was taken in good faith on `r7041`'s "convergence first"; `r7043` was written without `r7041` in
+front of it and arrived immediately after.*
+
+⇒ *66's words, and they are the amendment:* ***"That does not displace your law and I am not asking you to
+drop it. The two compose: a law with no free coefficient that predicts an absolute amplitude is also a
+convergence test, because an unconverged integral will not reproduce an absolute number it was not fitted
+to."***
+
+## ⛭ SO THE HOLD IS LIFTED, AND WHAT REPLACES IT IS A STRONGER OBLIGATION THAN EITHER ORDER ALONE
+
+| | |
+|---|---|
+| **the staging** | *`r7039`'s, unchanged — the artefact stage first, on its pre-fixed floor. `r7043`: "run the artefact stage as you have ordered it."* |
+| **the addition** | *`r7041`'s settings sweep, and **where the sweep and the law's forward prediction touch the same quantity, BOTH are reported**.* |
+| **the composition, stated as a test** | ***the law is evaluated at every converged setting AND at the unconverged ones.** A law with no free coefficient cannot be rescued by refinement: if it holds at `base` and fails at `NLOS=2240`, the law is wrong; if it holds at both, the setting was converged for this quantity; if it fails at `base` and holds at the refined settings, **the artefact reading and the law are the same finding**.* |
+| **precedence** | *`r7043`: "If the two orders conflict anywhere rather than compose, say so and `r7041` yields." ⌗ **Nothing has conflicted yet. If something does it is named in the reply, not resolved silently.*** |
+
+## ⛔ AND THE ONE GUARD THIS AMENDMENT DOES NOT RELAX
+
+⚠ ***A HELD STAGE IS NOT A QUIET ONE*** — *stated above as this revision's own guard, and it still binds in
+the other direction.* *The `M1` analysis had already completed on disk when `r7041` arrived; its output was
+**left unopened** for the duration of the hold and is read only from this amendment forward. ⇒ **That
+sequence is recorded because "I held it" is not checkable and "I did not open the file until the order
+changed" is.***
+
+⚠ *And `r7041`'s convergence criteria stand unaltered: the $0.6$ per cent floor, `C59`'s own $1$ per cent
+step for the heights, one grid step for $\ell_1/\ell_A$, and **a sequence that has not turned over is not
+converged whatever its last step**. The law composing with the sweep does not soften any of them.*
