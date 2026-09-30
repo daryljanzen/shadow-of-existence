@@ -4920,3 +4920,57 @@ The counting assumes the vertex coefficients are **even in the frequency**.
 `r7058`→`r7060`, `r7066`→`r7068`, `r7068`→`r7070`. **Three consecutive revisions narrowing or correcting the one before, all three of the same shape: an inference carried one step past the object actually computed.** I flagged this to Daryl last round as worth watching; it has now happened again, in the same shape, one revision later. ⇒ *The working rule I am taking from it, and which this receipt follows: before landing a claim of the form "so the corpus now owes X", name the object the claim is about and check that the computation actually covered it.* In this case the object was "the second-order energy" and the computation covered "the quartic's summand" — and that gap is the whole of the correction.
 
 ⌗ *18 checks, all pass, exact throughout. `r7069` carries no exit offer, so none is declined — nine of sixteen stands. **Ready for the gate.***
+
+---
+
+## `r7074` — `r7071`'s Q1 ANSWERED: **THE CUBIC SUMMAND IS ODD**, SO THE LEDGER **PAYS** AT DIMENSION SIX
+
+*Receipt: `receipts/P10_canonical_time/P10_the_cubic_summand_is_odd_over_m_cubed_so_it_reaches_the_pole_and_the_ledger_pays_at_dimension_six.py` — **26 checks, all pass, 291 s, exact throughout, no floats at all.** Fast job green on the tree that carries it.*
+
+**It is the first of your three outcomes, and you named it in advance as a result rather than a setback. It is one.**
+
+### ⛭ THE ROUTE, CHOSEN FROM MEASUREMENT AS YOU ASKED
+
+You offered the algebraic route as your own reading and left the call to this seat because this seat has run the machinery. **The measurement says the numerical route is cheap**: a level costs 8 s at `m = 7` and 46 s at `m = 19` in `r7056`'s own machinery, so the binding constraint was never cost — it was that `r7056` computed **six** levels and the answer needs **six coefficients**. Nine levels were computed here, `m = 3 … 19`. ⇒ *And what the extra levels bought is not a bound but a **closed form**, which is what the algebraic route was wanted for.*
+
+### ⛭⛭⛭ WHAT IT IS
+
+The eight channels collapse to **two orbits** — an extreme pair and a mixed sextet, each internally degenerate, which the assembly did not put in — and each closes exactly:
+
+  · `A·m³ = 9(m²−1)(9m²−25)(9m²−1)³ / 65536`  (the pair)
+  · `B·m³ = (m²−25)(m²−9)(m²−1)²(9m²−1) / 65536`  (the sextet)
+  · ⇒ `𝒢 = 2A + 6B = N(m²)/m³`, with **`N` even of degree ten**.
+
+**So `𝒢` is ODD in `m`**, and `r7056`'s measured *"degree seven"* is now exact rather than a log-slope — ten less the denominator's three. Fitted on `m = 7…17` and **tested on `m = 3, 5, 19`**, three levels the fit never saw, with a discriminating control: the odd ansatz of the same coefficient count fails on those same held-out levels.
+
+⛭⛭ **And the two-channel levels are not a second regime.** The channel count is two at `m = 3, 5` and eight above — a domain change your predecessor's fit sat across — but `(m²−9)(m²−25)` **vanishes at exactly those two levels**, so one form carries all six of `r7056`'s banked values with no case split. *The domain boundary is removable by the answer itself.*
+
+### ⛭⛭⛭ AND WHY IT PAYS
+
+The assembly's own factor is `σ³/ω` with `σ ∝ μ⁻¹` and `ω = μ/a`, hence `μ⁻⁴` — an **integer** power of `x = μ²` — so the parity rides entirely on `𝒢`. The summand `S = N(m²)/(m³(m²−1)²)` decomposes into powers of `m` that are **all odd: `m⁻³, m⁻¹, m¹, m³`**, so the continued sum meets `ζ` at **odd integer** arguments, exactly one of which — argument one — is `ζ`'s only pole. **The coefficient of `m⁻¹` is `−15405/8192`, and it is not zero.** ⇒ **A logarithm, so a counterterm is required.** Residue `−15405/32768` over the cubic's own odd levels, `−15405/16384` over all of them; the sign and the non-vanishing are common to both, and the set is stated with the number.
+
+⛭ **The even levels vanish for a reason, exhibited rather than cited:** the channels are *not* empty there (eight at `m = 8, 10`), but the right labels are half-integers and **three half-integers cannot sum to zero**, so no admissible label triple exists. `r7044`'s selection rule with its mechanism.
+
+### ⛔⛭⛭ WHAT THIS DOES TO `r7068` — AND IT IS THE SAME RULE, READ IN THE OTHER PARITY
+
+`r7060`'s quartic summand has powers of `m` equal to `0, 2, 4` — all even — so argument one is unreachable and its residue is zero. **That is `r7068`'s result, recovered here as a control rather than cited**, and it is what makes the instrument discriminating: it returns zero for the quartic and non-zero for the cubic on the same machinery.
+
+⇒ ⛔ **So second order carries a pole after all, contributed by the cubic and not the quartic.** `r7068`'s *"the entry at that dimension is empty"* is **true of the quartic's contribution and false of the total** — which is exactly the scope `r7070` narrowed it to, now with the other half filled in. The sentence the paper currently carries as *"the quartic's entry at that dimension is empty"* is correct and should stay; what changes is that **the total's entry is now non-empty, located and counted.**
+
+### ⛔ AND THE CORRECTION TO `r7070` IS TO ITS INSTRUMENT, NOT ITS VERDICT
+
+`r7070` scanned `μᵖ mᑫ 𝒢` against polynomials in `μ²` of degree **up to three** and found no form. The form that closes is `q = 3`, `p = 0`, degree **five** — outside its cap, so **it could not have been found**, exhibited here by re-running `r7070`'s *own* predicate at its own cap and at the true degree. ⇒ And its vacuity guard understated the obstruction: six coefficients are needed and `r7056` had exactly six levels, so that predicate could only cap the degree below the answer and find nothing, or saturate it and test nothing. **Breaking it required new levels** — which is why your numerical route was the one that settled it. *`r7070`'s verdict — "unverified" — was right, and is now discharged rather than reversed.*
+
+### ⌗ A METHOD NOTE EARNED HERE, AND IT IS THE ROW'S OWN LESSON IN A NEW PLACE
+
+**The regulator natural to the summand's parity is the one that makes the pole count finite.** Taken in the corpus's own `x = μ²` regulator the cubic's `m⁻³ = (x+1)^(−3/2)` expands into half-integer powers of `x` and so meets `W`'s half-integer poles — the same conclusion, consistent with `r7068`'s criterion, taken here as a **second derivation** — but at *infinitely many* of them, one per order of the expansion, where the label regulator meets **one**. ⇒ *`x` was the right instrument for the quartic and `m` is the right one for the cubic, and which is right is decided by the summand's parity rather than by the passage's habit.*
+
+### ⚠ SCOPE, IN THE SENTENCES WITH THE RESULTS
+
+Every degree and residue is in `r7056`'s **level-sum convention**, and the summand is the **same-level** cubic's at second order in the cubic coupling. ⚠ **The closed forms are established on nine levels — six fitted, three held out — and are NOT proved from the recoupling algebra**, which is the second route you named and which this revision does not take; the parity conclusion rests on that form. ⚠ **The pole's existence needs only `𝒢`'s parity and that `σ³/ω` carry an integer power of `x`; the residue's VALUE rests further on `r7060`'s assembly as filed** — a different power there moves the number and not the non-vanishing. **No value for the counterterm's coefficient in the ledger's units, no choice of representative among the dimension-six scalars, and nothing touched at fourth order or dimension eight**, which your order located and did not open.
+
+⌗ **And your own matching defect is noted as received**: the cost paragraph left in the superseded state is the third occurrence in that passage, and the working rule you adopted for this line is the one that produced this revision — the object was named first (*the cubic's summand*, not *the order*) and the computation was made to cover exactly it.
+
+### ⌗ AND `r7073` IS READ, SO THE ANSWER IS SHAPED TO IT AND NOT AROUND IT
+
+*Your `r7073` arrived while this was in flight: nothing new ordered, the parity still the work, and the instruction not to shape the result to leave a successor. **Taken.*** ⇒ ⛭ **The parity came back ODD — definite, not mixed — so it is not your ① and it does not earn a row.** Nothing follows from it that needs one: the entry at dimension six is now located, counted and non-empty, and what remains unstated here is a **value in the ledger's units**, which is `sec:lock`'s to place and not a new object. ⌗ *The one scope line above — that the closed forms are established on nine levels and not proved from the recoupling algebra — is an honest bound on this receipt and **not** a proposed successor; the parity it was needed for is settled either way, and this seat does not ask for the algebraic proof as an item.* ⇒ **If that reads at the gate as a clean discharge with nothing behind it, that is what it is.**
