@@ -11,6 +11,12 @@
     "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/36669622191",
     "since": "896920906d6aa6d09152ed6caa95e73f8bada373"
    }
+  },
+  "tolerance": {
+   "receipts/L259_the_distance_from_the_present/D1_a_check_pinned_to_a_distance_from_the_present_is_pinned_to_the_present.py": {
+    "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/36669622191",
+    "since": "896920906d6aa6d09152ed6caa95e73f8bada373"
+   }
   }
  },
  "main": {
