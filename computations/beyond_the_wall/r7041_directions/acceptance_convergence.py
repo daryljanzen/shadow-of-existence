@@ -39,6 +39,37 @@ SEQ = {'k_max via KFAC (upward only; the guard refuses downward)':
        'the reported ell grid LSTEP': ['base', 'lstep4']}
 
 
+# ⛔⛭ ** AN AXIS WHOSE INPUTS DO NOT MOVE IS NOT A CONVERGED AXIS, AND THIS READER WOULD HAVE SAID IT WAS. **
+# *`A_l` is built from the background alone -- `vis`, `x0`, `k`, `dk`, `r_s*`.  So an axis that leaves all of
+# those untouched CANNOT move `A_l`, and its sequence reads `base=X  s1=X  s2=X`: step 0.0000%, three points,
+# `mono` false, and the verdict falls through to "the acceptance has stopped moving, at the floor".*
+#   ⇒ ** That is a statement about the INPUT, not about convergence, and there are two such axes here: **
+#   ① `NK` on the arm, where the ladder is `sqrt(L(L+2))*stretch` out to `KMAXL` and `NK` is only a
+#     decimation cap never reached -- 1452 modes at `base`, `nk15` and `nk20` alike;
+#   ② `LSTEP` on BOTH arms, because `A_l` is read at the SAME multipoles at every setting by construction,
+#     so the reported ell grid cannot enter it at all.
+# ⌗ *** So the test is made general and read off the inputs rather than listed: an axis is INERT for an arm
+#   when every configuration in it carries grid inputs byte-identical to `base`.  A list would have to be
+#   remembered; this is measured, and it is the same lesson `run_fast_job.sh` teaches about reading a list
+#   instead of copying one.***
+_GKEYS = ('k', 'dk', 'eta', 'x0', 'vis')
+
+
+def inert_axis(arm, seq):
+    """does this axis move ANY input A_l is built from?  measured, so no list has to be remembered"""
+    try:
+        b = np.load(os.path.join(D, f'g_{arm}_{seq[0]}.npz'))
+        for t in seq[1:]:
+            d = np.load(os.path.join(D, f'g_{arm}_{t}.npz'))
+            if not all(np.array_equal(d[q], b[q]) for q in _GKEYS):
+                return False
+            if float(d['r_s']) != float(b['r_s']):
+                return False
+    except Exception:
+        return False           # a grid not on disk is unread, never inert
+    return True
+
+
 def acceptance(f, ls):
     """A_l and the acceptance width, from the background alone"""
     d = np.load(f)
@@ -130,6 +161,15 @@ def main():
             step = abs(have[-1][1] - have[-2][1]) / abs(have[-2][1])
             mono = all((have[j + 1][1] - have[j][1]) * (have[1][1] - have[0][1]) > 0
                        for j in range(len(have) - 1))
+            if inert_axis(arm, [t for t, *_ in have]):
+                print(f"    {name}")
+                print(f"      {txt}")
+                print(f"      ⛔ INERT BY CONSTRUCTION, NOT CONVERGED -- every input A_l is built from is "
+                      f"byte-identical\n         across this axis on `{arm}`, so A_l could not have moved "
+                      f"and its not moving says nothing.")
+                print(f"      modes: {', '.join(str(n) for _, _, _, n, _ in have)}   "
+                      f"eta points: {', '.join(str(n) for _, _, _, _, n in have)}")
+                continue
             verdict = ("⛔ MOVING -- last step above the floor" if step > FLOOR else
                        "⌗ two points only -- inside the floor, but a two-point axis cannot turn over"
                        if len(have) < 3 else
