@@ -23,19 +23,20 @@ import numpy as np
 
 import fold
 
-BASE_W = 250
-BASE_NLOS = 560
-MIN_W = 40
-GRID = '/tmp/n66/r7041/grid'
-
-
-def width_for(arm, tag):
-    """equal-cost width for this configuration, or the default when no grid was banked for it"""
-    g = os.path.join(GRID, f'g_{arm}_{tag}.npz')
-    if not os.path.exists(g):
-        return BASE_W
-    nlos = int(np.load(g)['nlos'])
-    return max(MIN_W, int(round(BASE_W * BASE_NLOS / nlos)))
+# ⛭ THE WIDTH POLICY MOVED INTO `fold` this revision, so the launcher and the count read ONE definition
+#   instead of two that can drift.  ** MEASURED, and why it narrowed from 250 to 100: the container is
+#   reclaimed shortly after this seat goes idle, and a slice that does not finish inside that window is
+#   killed and redone from nothing. **  Between 14:48 and 15:14, with this seat working continuously, 14
+#   slices landed; in the 16 quiet minutes after, 2 did.  With `SRCINJ` injected the solver is SKIPPED, so a
+#   slice costs the projection integral alone -- linear in (modes) x (reported l count) over a few seconds of
+#   setup -- so narrowing it shortens it very nearly proportionally.
+#   ⛔ And the equal-cost claim was only half true: it divided by `nlos` alone, but `LSTEP=4` reports 475
+#   multipoles where the base 8 reports 238, so an `lstep4` slice cost twice what the same width cost
+#   elsewhere.  That is corrected in `fold.width_for`.
+#   ⌷ Nothing banked is discarded: `fold` reads each slice's OWN declared `__SLICE__ lo:hi` and `covered_to`
+#   walks abutting ranges, so narrow slices abut the wide ones already there and the tiling gate still
+#   verifies the union.
+width_for = fold.width_for
 
 
 def main():
