@@ -4876,3 +4876,47 @@ A hypothetical **odd** power of `μ` in the summand **does** produce a pole at t
 ⚠ **Not claimed:** that the interacting sum needs no renormalisation *at all* — only that it spends no **free constant** at dimension six, which is what a pole at the physical point would have cost. No representative chosen or defended. No claim about the ledger's entries outside this sector.
 
 ⌗ *18 checks, all pass, exact throughout, no floats at all. The terminus is not taken and its condition is exhibited false — the coefficient is computable from the construction's own data, with no new object, and its value is zero. `r7067` carries no exit offer, so none is declined — nine of sixteen stands. **Ready for the gate.***
+
+---
+
+## `r7070` — `r7069`'s Q1: **STRUCTURAL IN SHAPE, ORDER-BY-ORDER IN CONCLUSION** — and it narrows `r7068`
+
+### The counting is an identity, and the parity does not depend on how an order is assembled
+
+A contribution from `N` vertices of total degree `P` carries `σ^{P/2}` and `N−1` energy denominators, so its frequency power is `−P/2 − (N−1)`. With the order's own bookkeeping `j = Σ(p_i − 2) = P − 2N` that becomes
+
+> ***`1 − j/2 − 2N`, whose `N`-dependence is exactly `−2N`***
+
+— **even, so it cannot change the parity. The parity is a function of the order alone.** Checked on four different assemblies of one order (one sextic, two quartics, cubic-plus-quintic, four cubics), each computed separately and each returning the same parity. ⛭ *And the rule reproduces the known case rather than being fitted to it: at `j = 0` — the free tower, no vertices — the power is `+1`, odd, which is the half-integer argument that gives your banked `15/4`.*
+
+### But it is **not exhaustive**: the parity alternates, so the answer is your second branch
+
+| order `j` | frequency power | parity | pole? | dimension |
+|---|---|---|---|---|
+| 0 | `+1` | odd | **yes** (the free tower) | 4 |
+| 2 | `0` | even | no (this arc) | 6 |
+| **4** | `−1` | **odd** | **YES** | **8** |
+| 6 | `−2` | even | no | 10 |
+
+⇒ ***So the corpus carries "no free constant at second order" and not "no free constant."*** That is the distinction you asked to be drawn, resolved against the general statement. **And the terminus is not taken:** the parity follows from the vertex-counting bookkeeping and the perturbative scaling, **not from the value of any higher vertex** — so the question was posable without the higher orders being constructed at all.
+
+The order rule inverts to `2k = j + 4` with exactly **one** solution per order, so **fourth order is operator dimension eight** — which `r6999` had already asked about.
+
+### ⛔ And checking the counting's own premise narrows `r7068` — my last revision
+
+The counting assumes the vertex coefficients are **even in the frequency**.
+
+- **For the quartic it is verified here:** `r7060`'s summand is a function of `m²` alone — `(5y³−41y²+88y−16)/(15(y−1))` in `y = m²`, checked free of `m` — so it is even in `μ`, and it is the summand `r7064` regularised and `r7068` found no pole in.
+- **For the cubic it is *not* verified, and the cubic sits at the same order `j = 2`.** `r7056`'s recoupling sum grows at degree **seven** in `m` (log-slopes `7.137`, `7.086`, `7.059`), and **an even function of `μ` has only even degree in `m`** — so degree seven is inconsistent with evenness on its face. And a 324-form scan of `μ^p m^q 𝒢` against polynomials in `μ²` (`p, q ∈ [−4,4]`, degrees ≤ 3), fitted on four of the six banked levels and **tested on the other two**, closes for **no form at all**.
+
+⇒ ***So `r7068`'s zero is established for the quartic's contribution and not for the total second-order energy.*** If the cubic's summand is odd in `μ` it carries a pole at `j = 2`, and **the ledger pays at dimension six after all.**
+
+⌗ *This narrows `r7068` rather than reversing it: its residue machinery, its calibration on your `15/4` and its discriminating control all stand, and its conclusion stands for the summand it regularised.* **What was over-claimed is the step from "the quartic's summand has no pole" to "the interacting sum spends nothing at dimension six."**
+
+⚠ **I am not claiming the cubic's summand is odd** — only that its evenness is unverified and the banked data does not settle it. Six values cannot fix a degree-seven polynomial's eight coefficients, so no four-point fit could have been trusted even had one closed. **The way to close it is named and not attempted here:** run `r7056`'s own machinery at enough further odd levels, or read the sum's parity off the recoupling algebra directly.
+
+### ⚠ And the pattern, recorded as one thing rather than three
+
+`r7058`→`r7060`, `r7066`→`r7068`, `r7068`→`r7070`. **Three consecutive revisions narrowing or correcting the one before, all three of the same shape: an inference carried one step past the object actually computed.** I flagged this to Daryl last round as worth watching; it has now happened again, in the same shape, one revision later. ⇒ *The working rule I am taking from it, and which this receipt follows: before landing a claim of the form "so the corpus now owes X", name the object the claim is about and check that the computation actually covered it.* In this case the object was "the second-order energy" and the computation covered "the quartic's summand" — and that gap is the whole of the correction.
+
+⌗ *18 checks, all pass, exact throughout. `r7069` carries no exit offer, so none is declined — nine of sixteen stands. **Ready for the gate.***
