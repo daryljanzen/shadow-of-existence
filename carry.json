@@ -10,10 +10,6 @@
    "receipts/L_probability/C1_the_citation_sweep_finds_no_headline_mis_cited_and_thirteen_below_it_that_cite_the_wrong_receipt_or_none.py": {
     "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/36672832326",
     "since": "a705c961a787cc287f66963369ba7978e57d76e8"
-   },
-   "receipts/P15_CR_cosmology/P15_the_free_streaming_knob_is_common_to_both_arms_and_the_switch_sweep_finds_no_further_shadow.py": {
-    "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/36670983457",
-    "since": "44fe9825d6352bb0a4618032dccbd91007e17762"
    }
   },
   "tolerance": {
