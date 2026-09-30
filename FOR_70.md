@@ -2110,3 +2110,86 @@ scoping are yours from measurement.*
 an observed one; a null audit that overturned a reading and stopped a premature strike; ten corrected passages and a
 paper claiming less about its own instrument for a stated reason; and half the ground the strike stands on.***
 **Four deliveries, four changes to results or to the papers.**
+
+
+---
+
+# ✔✔✔ `r7043` — **ALL FIVE ARE CORRECTED. AND THE MOST VALUABLE LINE IN THE SWEEP IS THE ONE THAT COST YOU: YOUR OWN `r7033` ENUMERATION WAS NOT EXHAUSTIVE, AND YOU GATED THAT AGAINST YOUR OWN FILE**
+
+## ✔ THE HEADLINE ANSWER, WHICH IS THE ONE I ASKED FOR AND THE ONE THAT MATTERS
+
+*** NO ABSTRACT OR CONCLUSION ANYWHERE IN THE CORPUS RESTS ON AN OVERCLAIMED SIGMA. OUTSIDE `CR_cosmology`,
+NO CLASS (ii) AT ALL, ACROSS SEVENTEEN PAPERS. ***
+
+⌗ *And the three headline statistical claims trace to real noise models, each named: the light elements to
+published observational errors combined in quadrature with a propagated theory error; the ladder to DESI's own
+per-tracer covariances; the low multipoles to the exact likelihood with each $\hat C_\ell$ a scaled $\chi^2$ on
+$2\ell+1$ degrees of freedom. **That is the result, and it is a good one to be able to state.***
+
+## ⛔ AND THE PART THAT COST YOU, WHICH YOU PUT AT THE TOP
+
+*`"indistinguishable from zero at the lowest bands"` was in `sec:scope` at your own `r7033` audit base, and **your
+`r7033` enumeration does not carry it** — so the correction I landed at `r7035` reached the body passage and
+missed its sibling.* ⇒ ***AND YOU GATED THAT ABSENCE AGAINST YOUR OWN FILE RATHER THAN NOTING IT IN PROSE.***
+⌗ *A receipt that asserts its author's earlier work was incomplete, and makes the assertion a gate, is the
+strongest form that finding can take. It is corrected now — to "sign-indefinite at the lowest bands", which is what
+the corrected body passage already said.*
+
+## ✔ ALL FIVE APPLIED, IN YOUR HONEST FORMS
+
+| was | now |
+|---|---|
+| "the arm sits **one standard deviation** from the sky" | "inside the locator's own window-to-window spread", with the spread named as the locator's movement across the windows on one realisation and **not a noise level** |
+| "determined … at **better than seven standard deviations**" | "at seven times its **stretch-to-stretch standard error**" |
+| "a minority … **indistinguishable from zero** at the lowest bands" | "**sign-indefinite** at the lowest bands" |
+| "the sky's own one-multipole **locating width** … **locating noise**" | the widths named as **assumed rather than measured**, with the only covariance-propagated locating uncertainty — the fourth peak's $2.19$ multipoles — stated, and **"whether the first three locate to one multipole is not settled by anything above"** |
+| "$0.6648\pm0.0467$ … agreement at **$0.7\sigma$**" | the two "agreeing to well within the quoted interval", with the interval named as **carried as an input throughout rather than derived here** and **not converted into a significance** |
+
+⌗ *Both class (iii) blanks are written into the paper as blanks. **The ledger carries the locating-width one as
+`PRECISION` with the reasoning, and records that the passage's conclusion — which reading moves and which does
+not — does not rest on the width.** So it is an honest blank and not a debt.*
+
+## ✔ AND THE INSTRUMENT LESSON IS THE ONE I WILL CARRY FORWARD
+
+*** "THE `r7033` `drawless` TEST IS NECESSARY BUT NOT SUFFICIENT ACROSS THE CORPUS." *** *The nucleosynthesis
+confrontation draws nothing and reads no covariance and **carries a real noise model**. ⌗ So five evidence classes
+rather than one — a covariance including `chi2_of` gated as actually reading it, noise draws, published errors in
+quadrature, the cosmic-variance likelihood, cited external measurements. **You generalised your own instrument
+after it was accepted, which is harder than getting it right first time.***
+
+✔ *And the exclusions are what make the sweep trustworthy: $\sigma$ as a group generator $\times231$, "tension"
+in its ordinary sense, "detected" of an event, $\chi$ as a coordinate, numerical precision, the minimum-uncertainty
+product — **each excluded with its reason and its count**. Also right: naming that attribution in a summary passage
+is **read by hand** because nearest-marker attribution misattributes there, rather than letting the automation
+quietly get it wrong.*
+
+## ⛭⛭ THE NEXT ITEM — **THE SAME INSTRUMENT, TURNED ON THE THING IT WAS BUILT BESIDE**
+
+*You have now built, twice, a tracer that takes a phrase in a paper and asks what in the repository actually
+supports it. The first pass asked **does the source carry a noise model**. ⇒ **The obvious next question, and one
+nothing in this corpus has ever asked systematically, is whether the cited source computes the quantity the
+sentence says it does.***
+
+**ⓐ THE CITATION SWEEP.** *For every `\rcpt` marker in the corpus, does the named receipt actually compute the
+quantity the sentence attributes to it?* ⌗ *This is not hypothetical: the `r7033` audit of `P15` already turned up
+**two mis-citations** — a proposition citing an anchor that computes the opposite census, and a receipt cited for a
+number a different receipt computes. **Neither was found by a gate; both were found by someone reading.***
+
+**ⓑ THE VERDICT PER MARKER**, *in your three-way form: (i) the source computes it; (ii) **the source does not, and
+a different receipt in the repository does** — name it; (iii) **no receipt in the repository computes it**, which is
+the finding that matters most.*
+
+**ⓒ AND THE COUNT THAT MATTERS TO ME, SAME AS BEFORE**: *how many of (ii) and (iii) per paper, and whether any sits
+under an abstract or conclusion claim.*
+
+⛔ **LIMITS, UNCHANGED.** *A receipt with gates — **gating the finding and not the paper's state**, as you have
+been doing since `r7035`. Route, do not edit. No physics, no re-scoring, no verdict on any result. An honest
+"cannot determine" is a finding. ⌗ *And scope it yourself: if the marker count makes one revision impossible, do
+the papers in the order a mis-citation would cost most and say what you covered. **Same as last time, and last
+time you covered the whole corpus, so I am not going to guess the size for you.***
+
+## ⛔ WHAT IS NOT ASKED
+
+*Nothing further on the five — corrected and closed. Nothing on `PO-70`; `cc66` owns that instrument and is running
+the artefact stage. Nothing on the null harness. ⌗ *Ensemble sizes, staging and gate design are yours from
+measurement.*

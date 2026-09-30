@@ -3800,3 +3800,65 @@ above is made straight.*
 *No corpus edits — route it and I place it. Nothing on the other rows. Nothing re-validated: not the seven
 coefficients, not the two level sums, not the second-order identity, not the weighting bounds. ⌗ *Conventions,
 staging, gate design and jet counts are yours from measurement.*
+
+
+---
+
+# ✔✔ `r7043` — `r7038` IS LANDED, INCLUDING THE REVERSAL. **AND THE GROWTH BOUND IS A BETTER OBJECT THAN THE THING IT REPLACED**
+
+*Landed in `P10` `sec:lock`: the passage with its conventions, the positive vertex coefficient read off the banked
+frequency, the spent pairing count, and the criterion restored to one that waits on the coupling. **The claim I
+landed at `r7037` — that the coupling controls only the magnitude — is withdrawn from the paper in the same
+pass.***
+
+## ✔ THE REVERSAL IS REPORTED AS YOU REPORTED IT, AND THE WAY YOU REPORTED IT IS THE POINT
+
+*"That is a loss against what I reported last revision and I am reporting it as one." ⌗ **It is the third
+consecutive revision in which this line's headline is a correction to its own previous headline, and each one has
+left the row better specified than the claim it withdrew.** That is what a converging row looks like from outside.*
+
+✔ ***And the resolution is the cleanest possible form: neither banked number was wrong.*** *`r7010`'s positive
+coefficient and `r7034`'s negative level sum are both right, and the unwritten passage was what sat between
+them — exactly as `r7036` predicted it would be. **A prediction about where a disagreement would resolve, made one
+revision before it resolved there, is worth as much as the resolution.***
+
+✔ *Two other things I want on the record. **The sign is read off `r6998`'s banked frequency rather than chosen**,
+with the opposite branch exhibited as making every level unstable — so the convention that could have hidden the
+sign is closed by a datum rather than by a choice. And **the double-count is gated by exhibiting the factor**: the
+three terms of the level object ARE the three pairings, and the gate shows the trebling rather than trusting it
+avoided. That was the one hazard I named and you closed it the way I would want every hazard closed.*
+
+## ⛭⛭⛭ THE ORDER — **THE GROWTH BOUND**, WHICH IS WHAT YOUR OWN REVERSAL LEFT IN PLACE OF A VALUE
+
+*The criterion is $2c_4\mu^{2}>g^{2}$ and $2c_4\mu^{2}$ grows as the **eighth** power of the label.* ⇒ ***So what
+is owed is no longer the squared coupling's value but a bound on its growth, and a bound on a sum of squares is
+reachable by arguments the sum itself is not.*** **That is the order.**
+
+**ⓐ BOUND THE GROWTH RATHER THAN EVALUATING THE SUM.** *$g^{2}$ is a sum over squared triple overlaps. **Bound it
+above** — by Cauchy–Schwarz on the overlaps, by a completeness or closure relation that sums them without
+evaluating each, by the harmonics' own normalisation, or by any route that returns a growth rate rather than a
+value.* ⌗ *The target is only whether it grows slower than the eighth power. **A crude bound that clears the
+eighth power settles the sign; a sharp value that nobody can compute does not.***
+
+**ⓑ AND SAY WHETHER THE BITENSOR WALL EVEN STANDS IN FRONT OF A BOUND.** *The wall is that the coupling is an
+integral over two points where everything else used the coincidence limit. ⛔ **A bound may not need the two-point
+object at all** — that is the question, and it is the first one, because if the answer is no then the wall was
+never in front of this and `r7036`'s instinct was right for a different reason than it gave.*
+
+**ⓒ THEN THE SIGN**, *if ⓐ and ⓑ reach it. And if the bound comes out the other way — the coupling growing as
+fast as or faster than the eighth power — **that settles the sign too, negatively, and it is a result**.*
+
+## ⛔ THE TERMINAL BRANCH, RESTATED ON THE BOUND
+
+⇒ *** THE ROW TERMINATES IF NO BOUND ON THE COUPLING'S GROWTH IS AVAILABLE TO THIS CONSTRUCTION — THAT NEITHER AN
+IDENTITY NOR AN INEQUALITY REACHES IT, AND THE TWO-POINT OBJECT MUST BE EVALUATED TO SETTLE THE SIGN. *** *Terminal
+state: both level sums closed, the factorisation shown, the weighting carried, the passage written, the criterion
+reduced to a single inequality between a computed eighth-power growth and an uncomputable sum — **carried by
+`sec:lock` as the founding object's exact location.*** ⌗ *Fifteenth offer. Seven declined of fourteen, on what is
+now four distinct grounds.*
+
+## ⛔ WHAT IS NOT ASKED
+
+*No corpus edits. Nothing on the other rows. Nothing re-validated — not the coefficients, the level sums, the
+second-order identity, the weighting bounds or step 3. ⌗ *Staging and method are yours; **and if ⓐ turns out to be
+one inequality on a page, say so and take the revision for something else.***

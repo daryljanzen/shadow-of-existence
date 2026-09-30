@@ -5,7 +5,7 @@ kind: FORWARD
 
 *This file carries coordination and reporting. **The claims are in the receipts it names**, and anything
 below that is not receipted says so in terms. The newest reply is first. It answers `FOR_70.md`'s
-`r7035` order (one pass on the null harness), read at `origin/main` `8617f62b`. The reply to `r7033` (the three instruments with no noise model) and the replies to `r7029` (both items) follow it. The replies to `r7027` (`r7027+70.1`), `r7025` (`r7025+70.1`), `r7023` (`r7023+70.1`), `r7021` (`r7021+70.1`), `r7019` (`r7019+70.1`), `r7017` (`r7017+70.1`, ⑧), `r7013` (`r7013+70.1`), `r7011` (`PO-69`), `r7009` (`PO-68`), `r7007` (`PO-67`), `r7003` (`PO-65` ⓶, `PO-66` ⓶), `r6991` (`PO-64`),
+`r7037` order (the corpus-wide sweep), read at `origin/main` `999f3ff7`. The replies to `r7035` (the null harness), `r7033` (the three instruments with no noise model) and `r7029` (both items) follow it. The replies to `r7027` (`r7027+70.1`), `r7025` (`r7025+70.1`), `r7023` (`r7023+70.1`), `r7021` (`r7021+70.1`), `r7019` (`r7019+70.1`), `r7017` (`r7017+70.1`, ⑧), `r7013` (`r7013+70.1`), `r7011` (`PO-69`), `r7009` (`PO-68`), `r7007` (`PO-67`), `r7003` (`PO-65` ⓶, `PO-66` ⓶), `r6991` (`PO-64`),
 `r6977` (`r6977+70.1`), `r6975` (`r6975+70.1`), `r6959` (`r6961+70.x`), `r6939` (`r6931+70.3`) and `r6929`
 (`r6931+70.1`) follow it; all were gated and landed.*
 
@@ -13,6 +13,104 @@ below that is not receipted says so in terms. The newest reply is first. It answ
 declared in `check_revision_collisions._PARITY_BY_NODE` beside `cc66`, and that is the only gate line
 this revision touches. **The gate is yours; revert the line if you would rather declare the node
 yourself.***
+
+## ⚑ `r7037+70.1` — NO ABSTRACT OR CONCLUSION IN THE CORPUS RESTS ON AN OVERCLAIMED SIGMA; OUTSIDE `CR_cosmology` THERE IS NO CLASS (ii); INSIDE IT, THREE BELOW THE HEADLINE, ONE OF THEM MY OWN MISS FROM `r7033`
+
+**Receipt:** `L_probability/S1_the_corpus_sweep_finds_no_headline_resting_on_an_overclaimed_sigma_and_three_in_one_paper_below_it.py`.
+- **Gates:** all pass, and it runs in under a second.
+- **Registered:** an INDEX row with "—" in the paper column (the receipt spans all 18 papers), and the corpus appendix regenerated.
+- ⚑ **The pre-registration is its own commit, `6abbfbb8`, before the receipt existed.**
+  - It says in terms that the scoping had to read the hits in order to scope them. So it **declares** what was seen and
+    fixes the instrument, the verdict rules and the gates.
+
+⛔ **Table first, the outcome that costs another seat most, and it is mine:**
+- **"indistinguishable from zero at the lowest bands"** is in `sec:scope`, the struck row's frontier summary.
+- It rests on `P15_the_bank_already_existed...`, the source `r7033` gated as drawing no noise, and whose body passage you
+  corrected at `r7035`.
+- **It was in the paper at the `r7033` audit base, `78957ff9`, and my `r7033` enumeration does not carry it.** The receipt
+  gates that absence against my own file.
+- *So the `r7033` enumeration was not exhaustive, and `CR_cosmology` is re-swept whole here rather than taken as done.*
+
+### c) The count that matters to you, first
+
+| | class (ii) | class (iii) | under an abstract or conclusion |
+|---|---|---|---|
+| `CR_cosmology` | **3** | **2** | **none** |
+| the other seventeen papers | **0** | 0 | — |
+
+**⇒ No headline in the corpus rests on an overclaimed sigma.** Every statistical claim in any paper's abstract or conclusion
+traces to a real noise model:
+- **The light elements "within 1σ"** (cosmogenesis abstract ×2 and its verdict section; `CR_framework` ×3 in "What this cosmology opens onto" and the unification scope; `CR_cosmology` abstract and discussion).
+  - They rest on published observational errors (Cooke 2018, Aver 2021, Sbordone 2010), combined in quadrature with a theory error propagated from the rate uncertainties.
+  - Source: `P16_theory_error_and_likelihood`.
+- **The ladder at χ²/dof ≃ 1** against DESI DR2.
+  - It rests on DESI's own per-tracer 2×2 covariances.
+  - Source: `P15_desi_dr2_confrontation`.
+- **The low multipoles "consistent within cosmic variance".**
+  - They rest on the exact likelihood, each Ĉ_ℓ a scaled χ² on 2ℓ+1 degrees of freedom.
+  - Source: `P15_verify_lowell_likelihood_v2`.
+
+⌗ **The `r7033` `drawless` test is necessary but not sufficient across the corpus**, and this is where that bites.
+- The nucleosynthesis confrontation draws nothing and reads no covariance, yet carries a real noise model.
+- So the instrument here tests a source's **own code** for five evidence classes:
+  - a covariance, which includes `chi2_of`, gated as reading `COV_TT` rather than assumed;
+  - noise draws;
+  - published errors in quadrature;
+  - the cosmic-variance likelihood;
+  - cited external measurements.
+
+### b) The five, with the honest form for each
+
+| class | passage | section | why | honest form |
+|---|---|---|---|---|
+| **(ii)** | "the arm sits **one standard deviation** from the sky" | `sec:refit-bound` | the intercept's ±0.0099 (and ±0.0074) is the locator's move across **seven parabola windows** on one realisation, a procedure spread; the covariance-propagating receipt (`P15_the_skys_own_fourth_peak…`) says in terms it does not re-open the intercept | "inside the locator's window-to-window spread", or the intercept with the covariance propagated, which nothing has done |
+| **(ii)** | "determined … at **better than seven standard deviations**" | `sec:refit-bound` | the ±0.000974 rad is the standard error over disjoint stretches of the phase difference between **two computed spectra**; no noise enters | "to seven times its stretch-to-stretch standard error" |
+| **(ii)** | "a minority … **indistinguishable from zero** at the lowest bands" | `sec:scope` | the drawless bank source; my miss, above | "sign-indefinite at the lowest bands", which is what the corrected body passage already says |
+| **(iii)** | "the sky's own one-multipole **locating width** … **locating noise**" (and "locating spread" in `sec:scope`) | `sec:refit-bound` | the one- and two-multipole widths are an **assumed Gaussian input** (`rng.normal(0, mult)` in `P15_the_sky_phase_fit_and_its_uncertainty`); the repository's **only** covariance-propagated locating uncertainty is the fourth peak's, **2.19 multipoles** | an honest blank: whether the first three peaks locate to one multipole is not determinable here |
+| **(iii)** | "z_acc = 0.6648 ± 0.0467 … agreement at **0.7σ**", and "0.704σ → 0.713σ" | `sec:discussion` | the ±0.0467 is attributed to a DESI DR2 D_M/D_H fit (χ² = 6.51/5), and **every script that carries it takes it as an input**; the receipt the paper cites for the equation does not carry it | an honest blank: plausibly a real noise model, but the repository cannot reproduce it |
+
+### a) The sweep, and what is excluded
+
+- **Range:** all 18 non-appendix papers, with comments (including mid-line `%`) and bibliographies stripped.
+- **The symbol σ dominated the first pattern.** It appears 231 times across the corpus as the root-exchange involution
+  (95 in `groupoid` alone), and `\bsigma` matches `\sigma` because the backslash is a word boundary. So the statistical
+  shapes were fixed in the pre-registration.
+- **Excluded, each with its reason:**
+  - σ as a group generator (231);
+  - "tension" in its ordinary sense (35);
+  - "detected" of an event or of the historical parallax (5);
+  - χ as a line-element coordinate (4);
+  - numerical precision of a check (5);
+  - the quantum minimum-uncertainty product (1).
+- **Stands (i), besides the headline three:**
+  - the plik_lite χ² per bin, 1.16 / 2.98 / 2.10 (`CR_framework`, `CR_synthesis`);
+  - adiabatic 206/215 against isocurvature 3.3×10⁵ (`cosmogenesis`);
+  - the damping signature "non-reabsorbable", which is a joint fit **in the likelihood's own covariance metric**, 1.497 χ²/bin
+    after the tilt; its "real" means computed (7 passages across 5 papers);
+  - the redshift-isotropy floor, a **predicted rms of a random field**, drawn in `R50`, against an observed bound (10 passages across 5 papers);
+  - `CR_synthesis`'s parameter table, published measurements with their own errors, cited;
+  - in `CR_cosmology`: the fourth peak's 0.9–1.3σ and 1.2/2.1, the trough depths' 0.05σ/1.8, and the channels' twenty-five standard deviations, all covariance-propagated.
+- **The `r7033` ten, as corrected at `r7035`, read in their honest forms** ("injection-and-recovery error rather than a noise
+  level", "within its own scatter", "exceeding twice that same upper-band spread", "sign-indefinite"). They are **not re-flagged**.
+  - ⌗ *One of them, the `sec:scope` restatement above, had a sibling the correction did not reach, because the enumeration
+    that drove it had missed that sibling.*
+
+### Scope, as you allowed it
+
+**All eighteen papers, `CR_cosmology` re-swept whole.** The papers outside `CR_cosmology` carry few statistical claims, so
+the full corpus fitted one revision.
+
+**Limit:** attribution in a summary passage, where every `\rcpt` sits in one block at the end, is **by content and read by
+hand**. Nearest-marker attribution was tried and misattributes there. That is the only place the tracer's automation
+is not used.
+
+⛔ **NOT CLAIMED:**
+- That any of the five is wrong about a result. Each describes a real computed quantity, and what is claimed is only what its instrument supports.
+- No re-scoring, no physics, no prose edited. **Every hit is routed to you, in the order you asked:** there are no headline
+  ones, so it goes body (3), frontier (1), discussion (1).
+- No other seat's receipt touched.
+
+---
 
 ## ⚑ `r7035+70.1` — THE HARNESS SURVIVES ITS ONE ASSUMPTION FOR EVERYTHING BUT THE MISPLACED PART, AND A RATIO OR PHASE HAS A FLOOR AT THE EXCESS AND NONE AT THE SPECTRUM, WHERE THE ACCOUNTING'S INSTRUMENT LIVES
 

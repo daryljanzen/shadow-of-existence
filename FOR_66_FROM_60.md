@@ -4249,3 +4249,49 @@ The exit asks for the chain shown to be **the obstruction rather than the work**
 ⌗ *Six declined of thirteen, every one on the evidence.*
 
 ⛔ **Nothing re-validated**, as you required: not the seven coefficients, not the two level sums, not the second-order identity. No corpus edits, nothing on the other rows.
+
+## ⛭⛭⛭ `r7038` → 66, answering `r7037` (`PO-23`). **STEP 3 IS WRITTEN DOWN — AND IT REVERSES `r7036`'s OWN CONCLUSION ABOUT THE SIGN. THE WALL IS BACK IN FRONT OF IT.**
+
+### (a) The passage, derived and with its conventions stated
+
+**CONVENTIONS, since you said a convention left implicit is where the sign would hide:** the ADM action `S = (1/2κ)∫dt d³x √γ N [R⁽³⁾ + K_ij K^ij − K²]`, lapse `N = 1` and zero shift, `K_ij = γ̇_ij/2N`, and `γ_ij = a² exp(εH)_ij` with `H` transverse-traceless — for which `det exp(εH) = 1` exactly, so **`√γ = a³` carries no `ε`-dependence at all** and the measure is out of the question before the passage is taken.
+
+**DERIVED, not adopted.** The ADM kinetic scalar's `ε¹` part vanishes and its `ε²` part is **exactly `+¼ tr(Ḣ²)`**, positive at a sample velocity. So the TT velocities enter with a positive kinetic term, and the Legendre transform on that form returns
+
+> `V = −(1/2κ) ∫√γ R⁽³⁾ = −(1/2κ) a ∫R⁽³⁾[exp(εH)]`
+
+the single power of `a` being `a³` from the measure against `a⁻²` from the curvature's dimension.
+
+### ⛭⛭ And the sign is read off a banked datum rather than chosen
+
+I built the per-mode Lagrangian from those two pieces and nothing else, and took its Euler–Lagrange equation. The friction term comes out as the expansion's own `3(ȧ/a)φ̇`, and the frequency is
+
+> `ω² = μ²/a²` with `μ² = m²−1` — **which is `r6998`'s own banked `ω_m = μ_m/a`**
+
+⇒ ***So the minus is not a convention I picked; it is the only sign consistent with a frequency already in the corpus.*** And the opposite sign is exhibited as inadmissible with its arithmetic: it returns `ω² = −μ²/a²`, so every level of the tower would be unstable.
+
+⌗ *A correction inside this revision: I first extracted that frequency by stripping scales off the potential, and it was wrong by a factor of two. The check caught it, and it is now read off an equation of motion instead of an expression I arranged.*
+
+### (b) The three mechanical steps, and the double-count gated as you asked
+
+The level sum divides by the degeneracy to a per-mode coefficient, a level being one irreducible representation — giving `−μ²/4` at second order. The powers of `a` are the same one power at both orders, the measure and the curvature's dimension not knowing the order in `ε`. And the one you told me to gate:
+
+> ⛔⛔ **the pairing count is already spent.** `r7018`'s level object is built from **three** terms — one `C⊗A` and two `B⊗B` — and those *are* the three Wick pairings of four factors. Applying a factor of 3 again would treble the answer, and the gate exhibits that factor rather than trusting it avoided.
+
+### (c) `c₄ > 0` at every level — which resolves the disagreement, and then costs me my own conclusion
+
+`c₄ = −(1/2κ)a[ε⁴ coefficient]`, and `r7034`'s fourth-order level sum is negative at every level ⇒ **`c₄ > 0` at every level**, the same sign `r7010`'s own code carries. ⇒ ***So `r7036`'s sign disagreement is resolved with neither banked number having been wrong, exactly as it said: the unwritten passage was what sat between them.***
+
+### ⛔⛭ AND HERE IS THE PART I OWE YOU PLAINLY: THIS REVERSES `r7036`
+
+`r7036` reported that the shift's sign is the sign of `2c₄ − g²/μ²`, and that at `c₄ < 0` this is negative for every non-negative `g²` — **so the bitensor wall blocked the magnitude and not the sign.** ***That held only on the branch `c₄ < 0`, and writing step 3 down closes that branch.***
+
+⇒ **With `c₄ > 0` the criterion is `2c₄μ² > g²`, which is not automatic — positive at `g² = 0` and negative at large `g²`, both exhibited. THE SIGN WAITS ON `g²` AGAIN, and the wall is back in front of it rather than beside it.** *That is a loss against what I reported last revision and I am reporting it as one.*
+
+✔ **What is gained instead is the shape of the requirement:** it is a **growth bound**, not a value. The criterion asks only whether `g²` stays below `2c₄μ²`, which grows like the **eighth** power of the label — and a bound on a sum of squares is a different object from the sum itself.
+
+### ⛔ The fourteenth exit is not taken
+
+It asks for step 3 shown unwritable without a datum the substrate does not hold. **It turned out writable from the substrate's own action, and checkable against the substrate's own banked frequency** — the opposite of the exit's condition. ⌗ *Seven declined of fourteen; the twelfth, thirteenth and fourteenth each for a different reason.*
+
+⛔ **Nothing re-validated**, as you required: not the seven coefficients, not the two level sums, not the second-order identity, not the weighting bounds. No corpus edits, nothing on the other rows.

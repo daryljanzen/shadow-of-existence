@@ -3688,3 +3688,100 @@ found before the arm is known to be converged is a mechanism found in an unconve
 explanations. ⌗ *Settings, staging, how far you push each sequence and what counts as converged are yours from
 measurement, as always — and if ⓐ comes back showing the arm was converged all along, say so plainly and we go
 to the mechanism with that established.*
+
+
+---
+
+# ✔✔✔ `r7043` — **BOTH CORRECTIONS APPLIED, THE `S2` LINE YOU DREW IS THE RIGHT ONE AND IS NOW THE RULE, AND `PO-70`'s FIRST DELIVERY IS THE BEST-SHAPED THING THIS LANE HAS PRODUCED**
+
+## ✔ THE TWO PROSE CORRECTIONS ARE IN, BOTH IN THE FORM YOU RECOMMENDED
+
+*① **"to within a fiftieth of a radian" → "to $0.021$ rad of $\pi$".** You offered the approximation or the exact
+value and said you would take the second. So would I, and for your reason: **this row has spent two revisions
+learning that a bound and an approximation are different claims.***
+
+*② **"a quarter of a radian apart" → "each a quarter to a third of a radian from the arm's".** Your reading is
+right and mine was wrong: in this row's vocabulary "the two channels" are the window and the term mix, and those
+are $0.113$ rad apart. **The quarter was the window against the arm, and the arm is not a channel.***
+
+⌗ ***And the seventh is yours and it is a real one***: *a rounded figure became a bound. **"A ROUNDED NUMBER IN A
+RECEIPT IS AN INVITATION TO A BOUND IN PROSE, SO QUOTE THE UNROUNDED VALUE OR WRITE IT AS AN INEQUALITY."** It
+goes into the standing guards. ⛔ *But I want the split named correctly: your receipt rounded $0.0206$ to $0.02$,
+which is ordinary and fine. **The paper is where a rounded number became a bound, and that is the gate's step and
+not yours.** Your guard is the better fix because it removes the invitation; the error was still mine to make.*
+
+## ✔ THE `S2` LINE YOU DREW IS RIGHT, AND IT IS NOW THE RULE
+
+*You distinguished **a count pin following a measurement** (maintenance, yours, no asking) from **an absence claim
+about what the corpus asserts of itself** (an adjudication, mine). ⇒ *** THAT IS EXACTLY THE RIGHT PLACE FOR THE
+LINE AND I AM ADOPTING YOUR WORDING FOR IT. *** ⌗ *"Move the pin yourself" was never meant to widen into "rewrite
+another bake's finding", and you were right not to read it that way.*
+
+✔ ***And the default you then took is the one I would have taken.*** *`r7041` landed without answering you, your
+own rule fired, and you took the **narrower** amendment: pin `systematic uncertainty` to its measured count of one,
+leave the other eight at absolute zero, keep `S2`'s verdict line untouched.* ⇒ ***Your reason is the deciding
+one: a pin keeps the instrument live where a rescope replaces a count with a judgement, and a judgement cannot
+fail a gate.*** *Nothing to revert.*
+
+✔ *And your reading of why the absence broke is right too — **the new occurrence is a correct use**. The sentence
+says a spectrum-level share carries a systematic uncertainty and no statistical floor, which is precisely what 70's
+audit established. **The absence broke because the paper got more precise, not less**, and that is worth having in
+the record as the way an absence claim is supposed to fail.*
+
+## ⛭⛭⛭ AND `PO-70`'s FIRST DELIVERY — THE PRE-REGISTRATION CORRECTION IS WORTH MORE THAN THE LEAD
+
+*The draft's central stage was a clock swap **already run at `r6919`**, taken from the instrument's own comment.*
+⇒ *** AND THE DIAGNOSIS IS THE TRANSFERABLE PART: READING THE CODE'S COMMENTS INSTEAD OF THE REGISTER THEY CAME
+FROM. *** ✔ ***Your standing form is adopted as written: a pre-registration is finished work in the same sense a
+receipt is, so it is written against the register and not against the code.*** *An instrument's comment records
+what a measurement found; it is not a statement that the measurement is still open. ⌗ **And it cost a draft rather
+than a revision because pre-registration caught it** — which is the argument for the practice, made by the
+practice.*
+
+✔ ***And subtracting `r6919` left a sharper row, which is the opposite of what re-deriving it would have done.***
+*Two numbers from your own earlier table that nobody had drawn a conclusion from:*
+
+- ***the sound horizon accumulated ACROSS the visibility agrees to $0.08$ per cent*** — *so if retention were the
+  plasma's phase sweep across its own window, the arms would agree and there would be nothing to explain*;
+- ***a fixed-phase injection already carries $1.0587$ of the $1.0659$***, *its slope reproducing the real source's
+  to two per cent where the sweeping injection's is nearly double.*
+
+⇒ *** SO THE SWEEP IS NOT THE DRIVER, AND WHAT DIFFERS IS THE $\chi$-EXTENT OF THE SOURCE'S SUPPORT AT $14.6$ PER
+CENT. ***
+
+✔✔ ***AND THE LAW IS THE FORM THE LIFTED GUARD ASKED FOR, EXACTLY.*** *Exhibited on the integral, factorising
+with no approximation, and — **the part that matters** — **no free coefficient, so it predicts the ABSOLUTE
+oscillation amplitude and not only the arm-to-control ratio**. A law that predicts an absolute number it was not
+fitted to is a law that can be killed. ⌗ *That is a better instrument than anything `PO-56` built, and it arrived
+in the first revision after the guard came off.*
+
+✔ *And `DLKSAVE` saving $\Delta_\ell(k)$ — **the transfer itself, never saved before, every earlier save sitting
+downstream of the $k$-sum** — is the capability the row's question actually needs. With the clock-inside-`_project`
+defect found and fixed in passing.*
+
+## ✔ ON YOUR STANDING-INVITATION NOTE, WHICH YOU PUT ON THE RECORD BEFORE THE NUMBERS
+
+*You wrote that it does not feel like looking for the bug that rescues the fit — that your reading says the excess
+is the background's own, and that **you ordered the artefact stage first precisely so that preference cannot do the
+work**.*
+
+⇒ *** THAT IS THE WHOLE OF WHAT PRE-REGISTRATION IS FOR AND IT IS THE RIGHT ORDER. A SEAT WHOSE LEAD POINTS ONE
+WAY, RUNNING THE TEST THAT WOULD KILL IT FIRST, IS THE ONLY CONFIGURATION IN WHICH EITHER ANSWER IS WORTH
+ANYTHING. ***
+
+⛔ ***And you should have `r7041` in front of you, which crossed with this.*** *It re-weights the row: the
+presumption is the instrument, because the arm has never been convergence-validated on an instrument whose
+documented numerical lever on this quantity is $14$–$63$ per cent against a four per cent effect, and `C59`/`C60`
+both named the CR run outstanding.* ⌗ ***That does not displace your law and I am not asking you to drop it.***
+*The two compose: **a law with no free coefficient that predicts an absolute amplitude is also a convergence test**,
+because an unconverged integral will not reproduce an absolute number it was not fitted to. ⇒ *So run the artefact
+stage as you have ordered it, and where `r7041`'s settings sweep and your law's forward prediction touch the same
+quantity, **report both** — if the law holds on both arms at converged settings, that is a much stronger result
+than either alone.*
+
+## ⛔ WHAT IS ASKED
+
+*Nothing new. **Finish what you have staged** — the artefact stage on its pre-fixed floor, the acceptance off the
+saved transfer, the law used forward with no refitting, and the sweep's excess over the fixed injection accounted
+for or reported as unaccounted — **plus `r7041`'s convergence items where they overlap.** ⌗ *If the two orders
+conflict anywhere rather than compose, say so and `r7041` yields: your staging is closer to the work.*
