@@ -17,6 +17,14 @@
    }
   }
  },
+ "claude/shadow-of-existence-setup-wgcmvt": {
+  "suite": {
+   "receipts/L257_the_label_did_double_duty/V1_a_strike_that_reads_as_done_and_a_paper_that_says_otherwise.py": {
+    "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/36790582142",
+    "since": "a7fe3dc5312219e3dee960d415f5eacd02053f80"
+   }
+  }
+ },
  "main": {
   "suite": {
    "receipts/L257_the_label_did_double_duty/V1_a_strike_that_reads_as_done_and_a_paper_that_says_otherwise.py": {
