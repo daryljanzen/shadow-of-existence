@@ -1,0 +1,106 @@
+"""r7041 ⓒ -- fold the injection convergence sequence and report it as a sequence.
+
+** NOTHING HERE IS A SPECTRUM OF THE MODEL. **  Every run is the projection's transfer of a KNOWN
+analytic oscillation (`SRCINJ`), so no number here may be compared with a banked spectrum or with the
+sky.  What is measured is whether the arm-to-control ratio of the retained oscillation MOVES when a
+numerical setting is refined -- and the statistic is `r6911+cc66.40`'s and `r6919+cc66.42`'s, unchanged.
+"""
+import os, sys
+import numpy as np
+
+D = '/tmp/n66/r7041/inj'
+LO, HI, NG = 0.85, 5.75, 1200
+ED = np.arange(0.85, 5.76, 0.7)
+SETS = ['base', 'kfac26', 'kfac32', 'kfac40', 'nk15', 'nk20',
+        'nlos1120', 'nlos2240', 'nlosw9', 'nlosw12', 'nlosf90', 'lstep4']
+INJ = ['fixed', 'sweepown']
+# the sequences, each an axis refined in one direction -- `base` is every sequence's first point
+SEQ = {'k_max via KFAC (upward only; the guard refuses downward)':
+       ['base', 'kfac26', 'kfac32', 'kfac40'],
+       'the mode count NK': ['base', 'nk15', 'nk20'],
+       'the eta resolution NLOS': ['base', 'nlos1120', 'nlos2240'],
+       'the eta half-width NLOSW': ['base', 'nlosw9', 'nlosw12'],
+       'the eta split NLOSF': ['base', 'nlosf90'],
+       'the reported ell grid LSTEP': ['base', 'lstep4']}
+FLOOR = 0.006      # r6911's, on a KNOWN injected contrast
+
+
+def env_a(x, y, win=1.0):
+    e = np.empty_like(y, dtype=float)
+    for j, v in enumerate(x):
+        m = (x >= v - win / 2) & (x <= v + win / 2)
+        e[j] = np.mean(y[m])
+    return e
+
+
+def osc(x, y, win=1.0):
+    y = np.asarray(y, float)
+    e = env_a(x, y, win)
+    return (y - e) / e
+
+
+def load(inj, arm, s):
+    f = f'{D}/inj_{inj}_{arm}_{s}.npz'
+    if not os.path.exists(f):
+        return None
+    d = np.load(f)
+    return d['ls'].astype(float) / float(d['l_A']), d['Dl']
+
+
+def ratio(inj, s, lo=LO, hi=HI):
+    """r6919's own arm-to-control statistic on the retained oscillation"""
+    a = load(inj, 'cr', s); b = load(inj, 'lcdm', s)
+    if a is None or b is None:
+        return None
+    x = np.linspace(lo, hi, NG)
+    A = np.interp(x, a[0], osc(*a)); B = np.interp(x, b[0], osc(*b))
+    return float(np.sum(A * B) / np.sum(B * B))
+
+
+def slope(inj, s):
+    a = load(inj, 'cr', s); b = load(inj, 'lcdm', s)
+    if a is None or b is None:
+        return None
+    xs = np.array([(p + q) / 2 for p, q in zip(ED[:-1], ED[1:])])
+    ys = np.array([ratio(inj, s, p, q) for p, q in zip(ED[:-1], ED[1:])])
+    return float(np.polyfit(xs, ys, 1)[0])
+
+
+print(__doc__)
+print("=" * 100)
+miss = [(i, a, s) for i in INJ for a in ('lcdm', 'cr') for s in SETS if load(i, a, s) is None]
+if miss:
+    print(f"  ⚠ {len(miss)} of {2*2*len(SETS)} runs not on disk yet -- this is a PARTIAL read and is")
+    print(f"    labelled as one.  missing: {[f'{i}/{a}/{s}' for i, a, s in miss][:8]}")
+print()
+for inj in INJ:
+    print("-" * 100)
+    print(f"  INJECTION `{inj}`   (r6919 banked: sweepown 1.0659 slope +0.02260, "
+          f"fixed 1.0587 slope +0.01189)")
+    print("-" * 100)
+    for name, seq in SEQ.items():
+        vals = [(s, ratio(inj, s), slope(inj, s)) for s in seq]
+        have = [v for v in vals if v[1] is not None]
+        if len(have) < 2:
+            print(f"    {name}: fewer than two points on disk -- not read")
+            continue
+        txt = "  ".join(f"{s}={r:.4f}" for s, r, _ in have)
+        step = abs(have[-1][1] - have[-2][1]) / abs(have[-2][1])
+        mono = all((have[j + 1][1] - have[j][1]) * (have[1][1] - have[0][1]) > 0
+                   for j in range(len(have) - 1))
+        # ⛔ ** TWO POINTS IS NOT A CONVERGED SEQUENCE AND THE FIRST VERSION OF THIS SAID IT WAS. **
+        # *The pre-registration fixed it in advance -- "a sequence that has not turned over is not
+        # converged whatever its last step" -- and monotonicity is UNDEFINED on two points, so the
+        # `mono` branch could not fire and a two-point axis fell through to "converged at the floor".*
+        #   ⌗ A two-point axis with a small step is the cheapest way to look converged without being
+        #   it: one refinement that happens to land close says nothing about where the sequence goes.
+        verdict = ("⛔ UNCONVERGED -- last step above the floor" if step > FLOOR else
+                   "⌗ TWO POINTS ONLY -- inside the floor, but a two-point axis cannot turn over "
+                   "and is not reported as converged" if len(have) < 3 else
+                   "⚠ step under the floor but the sequence has NOT turned over" if mono
+                   else "✔ converged at the floor")
+        print(f"    {name}")
+        print(f"      {txt}")
+        print(f"      last step {step*100:.3f}% against the {FLOOR*100:.1f}% floor   "
+              f"toward unity: {'yes' if abs(have[-1][1]-1) < abs(have[0][1]-1) else 'no'}   {verdict}")
+        print(f"      slope / unit q: " + ", ".join(f"{s}={sl:+.5f}" for s, _, sl in have))

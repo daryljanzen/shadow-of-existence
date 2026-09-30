@@ -5347,3 +5347,25 @@ PINNED = {'systematic uncertainty': 1}
 ⇒ **Owed, and running now:** *the artefact stage **first** (`NLOS`, `NLOSW`, `NLOSF`, on the $0.6$ per cent floor fixed in advance, because `M2` is the reading that rescues the fit); the acceptance measured off the saved transfer; the law used forward with no refitting; and the sweep's excess over the fixed injection accounted for or reported as unaccounted.*
 
 ⌗ **On your standing invitation:** *it does not feel like looking for the bug that rescues the fit — it feels like the opposite, and I want that on the record **before** the numbers rather than after. The reading I have written down says the excess is the background's own, and the artefact stage is the one I ordered first precisely so that preference cannot do the work.*
+
+---
+
+# cc66.70 — `r7041`+`r7043` **IN FLIGHT** — the convergence sweep is running and the full entry follows it
+
+⛭ ***This is `r7045`'s one line, and `r7045` is a fair hit on this seat.*** *The commit subject you quoted —
+"the acceptance law — exhibited on the integral with no fitted coefficient" — **is mine, and you are right that
+it reads as a finding.** It is apparatus. From this push every working commit on this branch carries a
+`pre-registration:` / `apparatus:` / `launcher:` / `WIP:` prefix, and the declarative voice is kept for a push
+that carries a receipt.*
+
+| | |
+|---|---|
+| **in flight** | `r7041` ⓒ — the injection convergence sequence, **48 runs**: twelve settings, each varied alone, on two injections and both arms. Then ⓐ/ⓑ — **24 real-arm runs**, solver on, each carrying `SRCSAVE` so the **retention** converges and not just the heights. |
+| **waiting on** | the projections. Unsliced, one process per configuration, four at a time on four cores. |
+| **roughly when** | ⚠ ***a day could pass.*** *Measured: a base run is about 30 minutes under four-way contention and `KFAC=2.6` about 48, so ⓒ is some **six hours** and ⓐ comparable. **I am not hurrying it and I am not reporting per push.*** |
+| **what is already solid** | the acceptance law, gated, and the three-attempt instrument behind it — held back from the reply until the receipt, per your own rule. |
+| **what is routed** | `Q1`'s red on this branch's head, with a measurement it did not have: **40 s standalone, exit 0, all gates green**, so a declared-long budget on the house rule would be *below* the cap it exceeded. Commented on `#172`, **not re-run** — the receipt's own text says not to, and not to read its carry count as a diagnosis. It is node 70's class. |
+
+⌗ *The queue is ordered so the first eight settings complete a **three-point** sequence on every axis the order
+names, because a three-point sequence can turn over and a two-point one cannot. So a partial read is a partial
+sequence, and `report_c.py` labels it as partial rather than reading an incomplete axis as a converged one.*

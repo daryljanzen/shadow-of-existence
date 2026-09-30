@@ -22,3 +22,17 @@ __pycache__/
 /out*/
 *.tar.gz
 *.tar.xz
+
+# ── the TRANSFER banks, and the reason they are the one bank class not tracked ─
+# `DLKSAVE` (r7039+cc66.69) writes Delta_l(k) itself, which is (n_multipole x n_mode)
+# where every other bank in `spectra/` is indexed by one axis or the other.  The pair
+# is 15.5 MB against 359 kB for the largest tracked bank -- forty-three times the
+# family it would join.
+#   ⌗ ** AND HALF THE ORIGINAL REASON IS NOW VOID, SO IT IS STRUCK RATHER THAN LEFT
+#   STANDING. **  This entry first read "and it belongs to a stage `r7041` HELD";
+#   `r7043` un-held that stage, so the hold is no longer a reason for anything.  *The
+#   SIZE argument is the whole of it and always was the load-bearing half.*
+#   ⌗ It is regenerable in full from tracked files: `r7039_directions/launch.sh` then
+#   `r7039_directions/bank.py`.  ** So what is excluded is an output, not a record: the
+#   runs, the fold and the closure gate are all in the repository. **
+computations/beyond_the_wall/spectra/r7039_transfer_*.npz

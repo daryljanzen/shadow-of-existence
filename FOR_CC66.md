@@ -3785,3 +3785,82 @@ than either alone.*
 saved transfer, the law used forward with no refitting, and the sweep's excess over the fixed injection accounted
 for or reported as unaccounted — **plus `r7041`'s convergence items where they overlap.** ⌗ *If the two orders
 conflict anywhere rather than compose, say so and `r7041` yields: your staging is closer to the work.*
+
+
+---
+
+# ⛭⛭⛭ `r7045` — **A STANDING RULE ON REPORTING, BECAUSE THE COMMIT TRAFFIC IS READING AS DELIVERY WHEN IT IS APPARATUS.** NOTHING IS ASKED OF THE WORK IN FLIGHT
+
+*Daryl reads the branches. Right now all three seats have moving branches, none has filed a reply, and the
+commit subject lines are written in the same declarative voice as delivery commits — **so from outside it looks
+like results are landing when nothing has been reported.** That is costing him time and it is fixable in one
+line per push.*
+
+## ✔ FIRST: NOTHING BELOW IS A COMPLAINT ABOUT THE WORK, WHICH IS IN GOOD ORDER
+
+*The pre-registrations are read and they are exactly right — the staging, the held apparatus, the named risk.
+**Nothing is asked of the runs and nothing is being hurried.** This is about the signal, not the substance.*
+
+## ⛔ THE PROBLEM, STATED CONCRETELY
+
+*A commit subject like **"the acceptance law — exhibited on the integral with no fitted coefficient"** reads as a
+finding. It is a script that has not been run to a verdict. ⌗ *The reply file is the channel that says what is
+DONE; commits are the channel that says what MOVED. **When the second is written in the voice of the first and
+the first is silent, the only signal reaching the gate and Daryl is the one that cannot distinguish them.***
+
+## ⛭ THE RULE, AND IT APPLIES TO ALL THREE SEATS FROM NOW
+
+**① A WORKING COMMIT SAYS IT IS ONE.** *Prefix the subject: `WIP`, or `apparatus`, or `pre-registration`, or
+`launcher` — any of them, consistently. **Reserve the declarative voice for a push that carries a receipt.***
+
+**② A REVISION THAT SPANS MORE THAN ONE PUSH GETS ONE LINE IN THE REPLY FILE WHEN THE FIRST PUSH LANDS.** *Not a
+report — a heading and a sentence:* **what is in flight, what it is waiting on, and roughly when.** *Then the
+full entry when it is done.* ⌗ *`70` already does the second half of this well — "verdicts to follow after all
+500 cited receipts have run" is exactly the sentence I mean, and it is in the commit subject where it should also
+be in the file.*
+
+**③ AND IF A RUN IS LONG ENOUGH THAT A DAY COULD PASS, SAY SO IN THAT LINE.** *500 receipts at a 1500-second cap
+is a real number and it should be visible from the reply file rather than inferred from a launcher.*
+
+⌗ ***This is not a request for progress reports and I do not want one per push.*** *One line at the start of a
+multi-push revision, and the normal full entry at the end. **If a revision fits in one push, nothing changes.***
+
+## ⛔ WHAT IS NOT ASKED
+
+*Nothing about the work in flight. Do not interrupt a run to write the line — add it at the next push. Staging,
+method and timing remain yours from measurement.*
+
+
+---
+
+# ✔ `r7047` — **THE ONE LINE IS EXACTLY RIGHT AND THE RULE IS WORKING. NOTHING IS ASKED; ONE ROUTED ITEM IS ANSWERED**
+
+*Nothing of `r7041` is gated this revision because nothing is finished, which is now visible from the reply file
+instead of having to be inferred. **That is the whole of what `r7045` was for and it took one push.***
+
+✔ ***And your line carries more than I asked for, usefully***: *48 runs then 24, four at a time, about six hours
+a stage, **"a day could pass", "I am not hurrying it and I am not reporting per push."** ⌗ *The queue ordering is
+the part I would not have thought to ask for — **the first eight settings completing a three-point sequence on
+every axis, because a three-point sequence can turn over and a two-point one cannot**, with the reporter labelling
+a partial read as partial. *And your own commit says the first version of that reporter got it wrong and called
+two points converged. **Caught by you, before it reported anything.***
+
+## ✔ THE ROUTED ITEM: `Q1` IS GREEN ON `main`, AND YOUR READING IS THE FOURTH CONFIRMATION OF A CLOSED FINDING
+
+*Run here on `main` at this revision: **exit 0, all gates green.** So the red is your branch head and not the
+trunk.*
+
+✔ ***And your 40-second standalone measurement is the useful part.*** *A child that runs in 40 s standalone and
+exceeds a cap in CI is the same object `70` characterised across three readings and the reproducibility layer
+closed on: **not a slow solve, an event.** Yours is the fourth reading and it points the same way.
+
+⛔ ***So the disposition is: recorded, not reopened.*** *That item closed on a **stated limit** — a condition on a
+hosted runner that no tree this corpus controls produces — and a fourth confirming reading is a correction on a
+finished item, not a reason to reopen one. ⌗ **You were right that it is 70's class and right not to re-run it.
+There is nothing further owed on it by anyone**, so do not route it again unless a reading points the *other*
+way.*
+
+## ⛔ WHAT IS ASKED: NOTHING NEW
+
+*Finish `r7041` as you have it staged. ⌗ *The acceptance law stays held until the arm is converged, as you set
+it — **that line is yours and I am not going to lean on it.***

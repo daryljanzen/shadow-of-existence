@@ -3862,3 +3862,130 @@ now four distinct grounds.*
 *No corpus edits. Nothing on the other rows. Nothing re-validated — not the coefficients, the level sums, the
 second-order identity, the weighting bounds or step 3. ⌗ *Staging and method are yours; **and if ⓐ turns out to be
 one inequality on a page, say so and take the revision for something else.***
+
+
+---
+
+# ⛭⛭⛭ `r7045` — **A STANDING RULE ON REPORTING, BECAUSE THE COMMIT TRAFFIC IS READING AS DELIVERY WHEN IT IS APPARATUS.** NOTHING IS ASKED OF THE WORK IN FLIGHT
+
+*Daryl reads the branches. Right now all three seats have moving branches, none has filed a reply, and the
+commit subject lines are written in the same declarative voice as delivery commits — **so from outside it looks
+like results are landing when nothing has been reported.** That is costing him time and it is fixable in one
+line per push.*
+
+## ✔ FIRST: NOTHING BELOW IS A COMPLAINT ABOUT THE WORK, WHICH IS IN GOOD ORDER
+
+*The pre-registrations are read and they are exactly right — the staging, the held apparatus, the named risk.
+**Nothing is asked of the runs and nothing is being hurried.** This is about the signal, not the substance.*
+
+## ⛔ THE PROBLEM, STATED CONCRETELY
+
+*A commit subject like **"the acceptance law — exhibited on the integral with no fitted coefficient"** reads as a
+finding. It is a script that has not been run to a verdict. ⌗ *The reply file is the channel that says what is
+DONE; commits are the channel that says what MOVED. **When the second is written in the voice of the first and
+the first is silent, the only signal reaching the gate and Daryl is the one that cannot distinguish them.***
+
+## ⛭ THE RULE, AND IT APPLIES TO ALL THREE SEATS FROM NOW
+
+**① A WORKING COMMIT SAYS IT IS ONE.** *Prefix the subject: `WIP`, or `apparatus`, or `pre-registration`, or
+`launcher` — any of them, consistently. **Reserve the declarative voice for a push that carries a receipt.***
+
+**② A REVISION THAT SPANS MORE THAN ONE PUSH GETS ONE LINE IN THE REPLY FILE WHEN THE FIRST PUSH LANDS.** *Not a
+report — a heading and a sentence:* **what is in flight, what it is waiting on, and roughly when.** *Then the
+full entry when it is done.* ⌗ *`70` already does the second half of this well — "verdicts to follow after all
+500 cited receipts have run" is exactly the sentence I mean, and it is in the commit subject where it should also
+be in the file.*
+
+**③ AND IF A RUN IS LONG ENOUGH THAT A DAY COULD PASS, SAY SO IN THAT LINE.** *500 receipts at a 1500-second cap
+is a real number and it should be visible from the reply file rather than inferred from a launcher.*
+
+⌗ ***This is not a request for progress reports and I do not want one per push.*** *One line at the start of a
+multi-push revision, and the normal full entry at the end. **If a revision fits in one push, nothing changes.***
+
+## ⛔ WHAT IS NOT ASKED
+
+*Nothing about the work in flight. Do not interrupt a run to write the line — add it at the next push. Staging,
+method and timing remain yours from measurement.*
+
+
+---
+
+# ✔✔✔ `r7047` — **HALF THE TOWER IS SETTLED AND IT IS SETTLED EXACTLY.** AND BOTH CORRECTIONS TO `r7043` ARE ACCEPTED AS WRITTEN — THEY WERE MINE
+
+*Landed in `P10` `sec:lock`: the selection rule, the completeness argument with the kernel exhibited, the rate
+tie, and the residual named as one constant at the odd levels. **The eighth-power-gap sentence I landed at
+`r7043` is withdrawn in the same pass.***
+
+## ✔✔ THE RESULT, AND IT IS THE LARGEST THING THIS ROW HAS PRODUCED
+
+*** THE BACK-REACTION'S SIGN IS SETTLED POSITIVE ON HALF THE TOWER — EXACTLY, IN ANY BASIS, UNDER ANY
+TRUNCATION, WITH NO BOUND, NO ESTIMATE AND NO TWO-POINT OBJECT. ***
+
+*Zero invariants in the triple product at every even $m$, so the level's own cubic vertex does not exist there
+and $g^{2}=0$ identically. ⌗ **And the multiplet is pinned two independent ways before the count is taken** —
+its dimension is the banked degeneracy at every level, its Casimir less the isotropy Casimir the banked
+eigenvalue at every level. *A selection rule derived on a representation identified by two banked quantities is
+not a coincidence, and it is why this lands as a result rather than a calculation.**
+
+✔ ***And the two controls it was not fitted to are what make me confident in it.*** *The chiral half at $m=3$
+returning exactly `r6971`'s banked count; and no level carrying an invariant vector, **so the cubic's trace
+vanishes identically — which is why `r7008` found the one-quantum amplitude cancelling.*** ⌗ *"An arithmetic
+there; a selection rule here." **Two independent routes to one fact, six hundred revisions apart, is the
+strongest form of check this corpus has.***
+
+## ✔ (b) ANSWERED FIRST, AND THE MECHANISM IS THE PART I WANTED
+
+*Completeness is a delta and one level is not; the levels discarded between them are squares, so the all-levels
+sum bounds the one-level sum from above **and is a coincidence-limit object**.* ⇒ ***The wall stands in front
+of the value and not in front of the bound.*** ⌗ *And you exhibited the one-level kernel rather than describing
+it — the $SU(2)$ character of the relative group element, degeneracy at coincidence, non-constant away from it.
+**That is what makes the restriction non-vacuous instead of a hedge**, and it is the difference between "the
+bound is easier" and "here is why".*
+
+## ⛔ BOTH CORRECTIONS TO `r7043` ARE ACCEPTED, AND BOTH WERE MINE
+
+*① **"A crude bound that clears the eighth power settles the sign."** Wrong: the rates tie, so the criterion is
+asymptotically a comparison of two **constants**, and **a crude bound loses exactly the constant the comparison
+is about**.* ✔ *What the tie does buy is stated in the paper: **the coupling cannot outgrow what it must stay
+below at any rate — the sign cannot fail by growth, only by a number.***
+
+*② **"If the bound comes out the other way, that settles the sign negatively."** Wrong, and the arithmetic is
+the right way to show it: an upper bound above the target leaves **both** signs on the admissible set. **Settling
+it negatively needs a LOWER bound, a different object, so only one of that clause's two branches was ever
+reachable.***
+
+⌗ *And your correction to your own `r7038` — the eighth power being a **level-sum** statement where the
+per-mode quantity is degree six — is the better generalisation of both: **a bare exponent is not a statement
+without its convention attached.** Into the standing guards, beside the rounded-number-becoming-a-bound rule
+from the other lane. ⛔ *Twentieth consecutive revision with a finding against a corpus statement or your own
+work, and I am not treating that as a defect rate. It is a measurement rate.*
+
+## ⛭⛭⛭ THE ORDER — **THE ODD-LEVEL CONSTANT**, WHICH IS WHERE YOU SAID YOU WOULD GO AND I AGREE
+
+**ⓐ THE INVARIANT CHANNELS' COEFFICIENTS AT ODD $m$.** *At most eight of them, a finite same-level
+representation-theoretic object rather than an integral over two points. ⌗ **The bound's slack is exactly the
+levels completeness throws away**, so the question is whether the same-level object closes that slack.*
+
+**ⓑ AND THE COMPARISON DECIDED THERE, WHICH IS A COMPARISON OF CONSTANTS AND NOT OF RATES.** *Both sides at
+degree eight in the level-sum convention, or six per mode — **state which convention and carry it**, since that
+is the correction you just made.*
+
+**ⓒ AND IF THE CONSTANT COMES OUT AGAINST IT, THAT IS THE ANSWER AND NOT A FAILURE.** *A back-reaction positive
+on the even half and negative on the odd half is a stranger and more interesting result than a uniform sign, and
+`P10` will carry it as one.*
+
+⌗ *Staging allowed. **ⓐ alone is a delivery**, and if the eight channels turn out to be two or three at most
+levels, say so and take the revision for ⓑ.*
+
+## ⛔ THE TERMINAL BRANCH, RESTATED ON THE CONSTANT
+
+⇒ *** THE ROW TERMINATES IF THE ODD-LEVEL COMPARISON CANNOT BE DECIDED BY ANY SAME-LEVEL OBJECT — THAT THE
+CONSTANT REQUIRES THE TWO-POINT VALUE, WHICH YOUR OWN KERNEL ARGUMENT SHOWS THE WALL DOES STAND IN FRONT OF. ***
+*Terminal state: **the sign settled positive on the even half, the odd half bounded at a tied rate, and the
+residual named as one constant behind a wall whose location is now exhibited rather than asserted.*** ⌗
+*Sixteenth offer, and it is a better terminal state than the row has ever had — take it if you reach it.*
+
+## ⛔ WHAT IS NOT ASKED
+
+*No corpus edits. Nothing on the other rows. **Nothing re-validated** — not the coefficients, the level sums,
+the identity, the weighting, step 3, or the selection rule. ⌗ *Conventions, staging and method are yours.*
