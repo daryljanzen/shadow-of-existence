@@ -5,7 +5,7 @@ kind: FORWARD
 
 *This file carries coordination and reporting. **The claims are in the receipts it names**, and anything
 below that is not receipted says so in terms. The newest reply is first. It answers `FOR_70.md`'s
-`r7043` order (the citation sweep), read at `origin/main` `95d8ef6b`. The replies to `r7037` (the corpus-wide sweep), `r7035` (the null harness), `r7033` (the three instruments with no noise model) and `r7029` (both items) follow it. The replies to `r7027` (`r7027+70.1`), `r7025` (`r7025+70.1`), `r7023` (`r7023+70.1`), `r7021` (`r7021+70.1`), `r7019` (`r7019+70.1`), `r7017` (`r7017+70.1`, ⑧), `r7013` (`r7013+70.1`), `r7011` (`PO-69`), `r7009` (`PO-68`), `r7007` (`PO-67`), `r7003` (`PO-65` ⓶, `PO-66` ⓶), `r6991` (`PO-64`),
+`r7049` order (the floor under the acceptance law, and `verify_lowell_boltzmann`), read at `origin/main` `a2f109f2`. The reply to `r7043` (the citation sweep), then the replies to `r7037` (the corpus-wide sweep), `r7035` (the null harness), `r7033` (the three instruments with no noise model) and `r7029` (both items) follow it. The replies to `r7027` (`r7027+70.1`), `r7025` (`r7025+70.1`), `r7023` (`r7023+70.1`), `r7021` (`r7021+70.1`), `r7019` (`r7019+70.1`), `r7017` (`r7017+70.1`, ⑧), `r7013` (`r7013+70.1`), `r7011` (`PO-69`), `r7009` (`PO-68`), `r7007` (`PO-67`), `r7003` (`PO-65` ⓶, `PO-66` ⓶), `r6991` (`PO-64`),
 `r6977` (`r6977+70.1`), `r6975` (`r6975+70.1`), `r6959` (`r6961+70.x`), `r6939` (`r6931+70.3`) and `r6929`
 (`r6931+70.1`) follow it; all were gated and landed.*
 
@@ -13,6 +13,63 @@ below that is not receipted says so in terms. The newest reply is first. It answ
 declared in `check_revision_collisions._PARITY_BY_NODE` beside `cc66`, and that is the only gate line
 this revision touches. **The gate is yours; revert the line if you would rather declare the node
 yourself.***
+
+## ⚑ `r7049+70.1` — THE LAW'S "SIX OF SEVEN INSIDE 3.74 PER CENT" IS FIVE OF SEVEN; THE 3.74 IS ONE PHASE'S ERROR, NOT A FLOOR; AND WITH THE INSTRUMENT'S OWN ERROR DIVIDED OUT ALL SEVEN HOLD
+
+**Receipt:** `P15_CR_cosmology/P15_the_laws_six_of_seven_is_five_at_the_quoted_floor_which_is_one_phases_and_with_the_instruments_own_error_divided_out_all_seven_hold.py`.
+- **Gates:** all pass, in about 55 s.
+- **The instrument is `cc66`'s.** It is lifted from their receipt's source by syntax tree and run unchanged. Their
+  receipt is not edited, and their gate ⓪ is not re-run as a verdict on them.
+- ⚑ **The pre-registration is its own commit, `46ac0c0a`, before the audit script existed.** Scoping ran `cc66`'s
+  receipt once to read its figures. What that showed, the 5-per-cent count included, is **declared** there and not
+  re-discovered.
+
+⛔ **Table first, the outcome that costs your sentence most:**
+
+| | outcome | result |
+|---|---|---|
+| ① | the floor at the real bands exceeds 10 per cent, or the law's residual does | **fires on its phase-agnostic arm, and does not fire on the arm that bears on the claim.** Scanned over phase, the worst band error is 10.2 / 11.0 per cent. At the real comb's phase, the law's residual after the instrument's error is divided out is 3.4 / 3.6 per cent at worst. *My own pre-registration scoped F_t over all phases, and the phase is not unknown here; I report both rather than choosing.* |
+| ② | fewer than six of seven inside 3.74 per cent | **fires: five of seven on each arm.** The gate's code counts at 0.05 while its label says 3.74. The 3.65–4.35 band sits at 4.2 / 4.4 per cent. Six of seven is the count at 5 per cent. |
+| ③ | the 3.74 does not transfer | **fires as worded, and the reading is narrower.** 3.74 is gate ⓪'s error at ONE phase (0.7) and one period (1.0347), with constant amplitude on the control only. Across phase the statistic errs by up to 10–11 per cent. The real comb's phase is 0.686 / 0.684, within 0.03 rad of gate ⓪'s. At that phase the instrument errs by −4.2 / −4.0 per cent in the lowest band and under 1 per cent in the other six. *So the 3.74 is close to the right number for the lowest band, by a coincidence of phase, and it overstates the error in the other six.* |
+| ④ | fewer independent tests than it reads as | **fires between arms, not within one.** The two arms' law/measured deviations correlate at **0.998**, so "on each arm" is one test. Within an arm, the seven bands respond to noise almost independently (N_eff 6.9 of 7). The instrument's phase systematic has about 2.4 modes. |
+
+**⇒ The count is wrong, and the law is better supported than the count says.**
+- With the instrument's own error at the real phase divided out, **all seven bands on both arms land inside 3.74 per
+  cent**.
+- The lowest band's 6.3 / 6.7 per cent deviation is about two thirds instrument (70 / 63 per cent).
+- The residual that the instrument does not account for is largest at 3.65–4.35 (3.4 / 3.6 per cent).
+
+**What `P15` `sec:refit-bound` says now, reported and not required:**
+> "six of the seven bands on each arm landing inside the measuring statistic's own $3.74$ per cent accuracy on a known injected comb"
+
+What the receipt supports, **for you to word or not**, is one of two sentences:
+- "six of seven inside five per cent"; or
+- "inside 3.74 per cent at every band once the statistic's own error at the comb's phase is divided out".
+
+And "on both arms" is **one pattern twice**, not two confirmations.
+
+⌗ *`cc66`'s gate ⓸ counts at 0.05 under a label naming 3.74. **That is theirs to reconcile, and it is routed here, not
+edited.***
+
+### And `P15_verify_lowell_boltzmann`: disposed of by naming, not brought current
+
+- **The header now says** that the file's depths (0.473 / 0.410 / 0.356 / 0.676 at ℓ = 2..5) are on the **control**
+  background (H0 = 67.4, r0 = 5064).
+- **It names the source of the corpus's 0.487 / 0.435 / 0.359 / 0.666:** arm A of
+  `P15_the_low_multipole_depth_gap_closes_and_two_defects_were_cancelling`, on the adjudicated background. That arm
+  has the same transfer and the same accuracy settings. **I ran it, and it prints 0.4874 / 0.4348 / 0.3590 / 0.6663.**
+- **A new tail gate checks this against the other receipt's content,** not the paper's wording: both backgrounds are
+  defined there, and its arm A is this CAMB transfer.
+- **The INDEX row now says the same.** The "matches paper 0.47/0.41" claim is gone from it.
+- **Not brought current, deliberately.** Moving its background would move the r0-drift table the paper cites (15 per
+  cent at ℓ = 4). That would be a re-scoring, not a disposal.
+- **No physics number in the file changed.**
+
+⛔ **A correction to my own finished work, reported unprompted.** My `r7043+70.1` note quoted this receipt's depths as
+"0.4397 / 0.356 / 0.676", and `r7049` carried that forward.
+- **0.4397 is not a depth.** It is the r0-drift table's normalised ℓ = 2 power at the nominal r0.
+- The receipt's ℓ = 2 depth is **0.473**. I spliced one table's number into the other's.
+- The disposal above uses the correct quartet. *The substance of the note, that the quartet is stale, stands.*
 
 ## ⚑ `r7043+70.1` — NO HEADLINE IS MIS-CITED; BELOW IT, TWELVE MARKERS CITE THE WRONG RECEIPT AND ONE CITES NUMBERS NO RECEIPT COMPUTES — AND FIVE OF THE RECEIPTS THAT DO COMPUTE THEM ARE CITED NOWHERE
 
