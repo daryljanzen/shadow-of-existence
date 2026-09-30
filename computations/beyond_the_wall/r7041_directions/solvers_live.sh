@@ -15,7 +15,13 @@
 live () {
   local n=0 p
   for p in /proc/[0-9]*; do
-    cat "$p/environ" 2>/dev/null | tr '\0' '\n' | grep -q 'ACOUSTIC_two_arm' && n=$((n + 1))
+    # ⌗ ** THE COMMAND LINE DECIDES, NOT ONLY THE ENVIRONMENT. **  A wrapper shell (`bash -c run ...`) and
+    # `xargs` both carry the instrument's name in their own environment, so an environment-only test counted
+    # 18 where 8 solvers were running.  *Harmless for the `== 0` relaunch trigger and wrong for every number
+    # it reported.*  The environment still gates it -- that is what distinguishes a solver from a grep -- and
+    # the command line is what makes the count a count of solvers.
+    cat "$p/environ" 2>/dev/null | tr '\0' '\n' | grep -q 'ACOUSTIC_two_arm' || continue
+    tr '\0' ' ' < "$p/cmdline" 2>/dev/null | grep -q 'ACOUSTIC_two_arm\.py' && n=$((n + 1))
   done
   echo "$n"
 }

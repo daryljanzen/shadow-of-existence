@@ -4409,3 +4409,165 @@ It asks that the constant **require** the two-point value, on the strength of my
 **The spin-two coupling's factor**, and with it the constant itself. *It is one Clebsch–Gordan contraction between the frame's spin-two basis and the level's right index — finite, algebraic, same-level, and now the only thing between the rate statement and an actual number at a named odd level.* **That is where I would go next, and on the evidence of this revision it is reachable.**
 
 ⛔ **Nothing re-validated**: not the seven coefficients, not the two level sums, not the second-order identity, not the weighting bounds, not step 3, and **not `r7044`'s channel count or representation identification — both used and cited**. Nothing on the other rows.
+
+
+---
+
+# ✔✔ `r7050` — **Q1 HAS A NUMBER: THE RESIDUE IS THE ODD LEVELS BELOW `96√2·K`. AND YOUR Q1's SUPPOSITION IS THE ONE THING IN IT THAT DOES NOT HOLD.**
+
+*Receipt: `P10_the_odd_residue_is_the_levels_below_a_crossing_linear_in_one_constant_and_a_count_bounds_terms_not_sizes.py` — **16 gates, `GATES: ALL PASS`**, 16 s. One push. No corpus edits outside `receipts/INDEX.md` and its regenerated appendices. **Every number below states its convention in the sentence with it, as you required.***
+
+## Q1 — THE RATIO, AND WHERE IT CROSSES ONE
+
+**In the level-sum convention**, exactly:
+
+```
+ratio = 60·K·n·√(2m²−8)·(m²−3)² / (5m⁶ − 26m⁴ + 25m² − 4)     →     12√2·K·n / m
+```
+
+with `K` the vertex's own **`m`-independent** constant and `n ≤ 8` your channel count.
+
+> ⇒ **The crossing exists and is LINEAR in `K`: `m₀ ≤ 96√2·K`.** At `K = 1` and the cap `n = 8` it is located by an **exact rational comparison** at **`m = 136`** — so the residue there is the **odd levels `m ≤ 135`**, with `m = 135` above one and `m = 136` below it, both exhibited.
+
+## ⛔ BUT THE CHANNEL COUNT ALONE DOES NOT REACH IT — AND THAT IS A CORRECTION TO YOUR Q1
+
+*Your Q1 says "a constant in front of it that the `≤8` channel count bounds."* ***A count bounds the number of terms and not the size of one.*** Eight channels of coefficient size `S` contribute `8S²` to a sum of squares, **unbounded in `S` at every fixed count** — exhibited as arithmetic. **The count fixes `n` and leaves `K`, and the crossing depends on their product.**
+
+## ⇒ SO Q1 DOES NOT RETURN "UNBOUNDED", AND THE STOP CONDITION DOES NOT FIRE
+
+**What is missing is `K`'s value, not its finiteness** — `K` is `m`-independent, so the residue is finite for every finite `K`. ⇒ ***Q1 returns a list as a function of one number, and it reduces to Q2 quantitatively: the residue's size is linear in exactly the factor Q2 asks for, so Q2 landing turns the quantifier into a list and — by the count-versus-size point above — nothing else will.***
+
+## Q2 — THE FACTOR'S FEASIBILITY IS ESTABLISHED, AND ITS VALUE IS NOT COMPUTED
+
+*The feasibility was the part in doubt, and it is settled by solving rather than positing:*
+
+> **The frame derivative satisfies `e_c D = D·M_c` for an `M_c` of the level's own size, in every one of the three directions — so a derivative does not leave the level** — and **the three solved matrices close under commutators, so what a derivative inserts is a spin-one operator: one extra Clebsch–Gordan coupling and nothing more.**
+
+⇒ **With `r7048`'s `3j` orthogonality for the undifferentiated part, the whole same-level vertex — algebraic and derivative terms alike — is finite recoupling data rather than an integral.** *At `r7047` I said this object was reachable; this converts that expectation into a structural fact.*
+
+⌗ *Control reported rather than hidden: of the three directions only the invariant one returns a **constant** `M`. That is the coordinate frame's doing, not a failure — the claim that carries is that `M` exists and is of the level's size, which holds in all three.*
+
+## ⛔ Q3 IS NOT REACHED
+
+No constant at any odd level and no sign at any odd level, because Q2's value is not computed. ⚠ **And the `m = 136` figure is the crossing *at* `K = 1`; it is not a claim that `K = 1`.**
+
+## ⚠ YOUR TWO CALIBRATIONS
+
+**The convention:** every degree, ratio and crossing above is **level-sum**. The **per-mode** convention moves both degrees down by one — seven to five, eight to six — which is exactly why a bare exponent is not a statement. Both stated and checked.
+
+**The pairing count:** honoured by **not spending it** — this revision re-assembles no vacuum expectation, so step 2's count is applied neither once nor twice. And a second application would move the crossing from **136 to 408**, exhibited rather than asserted, so it is not harmless.
+
+⌗ *And a correction inside this revision: the Q3 scope gate first failed because it tested `sp.Symbol("K")` against an expression holding `sp.Symbol("K", positive=True)` — **different objects in sympy**, so a membership test was false about a symbol plainly present. The gate now tests the declared object and, as a control, that the undeclared one is absent.*
+
+## ⌗ NO EXIT IS DECLINED, BECAUSE NONE IS OFFERED
+
+**The first of sixteen orders to carry no exit offer.** Nine declined of sixteen stands unchanged.
+
+## ⇒ WHAT REMAINS
+
+**`K` itself** — the recoupling factor, now known to be a finite algebraic sum over `3j`/`6j`/`9j` data with one spin-one insertion per derivative, and the single number between the rate statement and a list. *That is the whole open part of the odd half.*
+
+⛔ **Nothing re-validated**: not `r7048`'s law or its two routes, not `r7044`'s channel count or selection rule, not the level sums, not step 3. Nothing on the other rows.
+
+---
+
+# `r7052` — TO 66: `K` IS NOT ONE NUMBER, AND THE PREMISE WAS FALSE BY EXACTLY ONE OBJECT, WHICH IS NOW CLOSED
+
+*Receipt: `receipts/P10_canonical_time/P10_the_cubic_vertex_is_written_down_and_K_is_not_label_independent_so_the_algebraic_channel_is_five_powers_clear.py` — **29 checks, all pass, 45 s**. One push; `r7045` ② does not apply.*
+
+## ⛔ YOUR PREMISE, CHECKED FIRST
+
+*`r7051` says: "there is no integral, no limit and no coincidence limit left between here and the number."*
+**It was false by one object, and the object is not recoupling data.** `K` factorises as *(the `\varepsilon^{3}`
+pointwise coefficients)* × *(the recoupling)*. The second factor is the `3j`/`6j`/`9j` data you named. The
+first is the **cubic term of the curvature integrand on transverse-traceless jets** — the same kind of object
+as `r7034`'s `\varepsilon^{2}` identity and `r7032`'s quartic contractions, and the very link `r7034` named as
+missing in the normalisation chain. No amount of recoupling reaches it.
+
+⇒ **So I went and got it.** Solved on twelve random transverse-traceless jets and verified on **six held-out
+jets from a different seed**:
+
+> `[\varepsilon^{3}] R_{3}[e^{\varepsilon H}] = (1/6) tr h^{3} + (1/6) h_ab (e_a h_cd)(e_b h_cd) − (1/6) h_ab (e_c h_ad)(e_c h_bd) + (1/4) h_ab (e_c h_ad)(e_d h_bc) + (1/6) h_ab h_cd (e_a e_c h_bd)`
+
+with the fit's rank (six of nine) and its **three identities on transverse-traceless jets printed rather than
+hidden**, and the representative stated as a representative. Two controls: **no parity-odd cubic structure can
+exist at all** — three indices on the symbol, two on the derivatives, six on the tensors is **eleven**, and
+eleven cannot pair up, so that is a parity derived rather than argued; and at frame-constant `h` the identity
+**collapses to a single invariant**, which is `r6971`'s banked finding, recovered and not re-validated.
+
+## ⛔⛭ AND Q1's OWN WORD IS WRONG: `K` IS NOT LABEL-INDEPENDENT
+
+The recoupling half, computed exactly for the tower's own harmonics: the degeneracy-summed square of a
+same-level triple overlap is, per channel, `(2j'_1+1)(2j'_2+1)(2j'_3+1)` times **one `9j` squared** with rows
+`(j_1 j_2 j_3)`, `(2 2 2)`, `(j'_1 j'_2 j'_3)` — **exhibited by direct summation over every right label,
+projection and Clebsch–Gordan coefficient before any `9j` is named**, at four spin assignments including a
+vanishing control. Summed over the admissible channels:
+
+> `K_rec(3) = 126/125`, `K_rec(5) = 444/1715`, `K_rec(7) = 1441/7875`, `K_rec(11) = 14552/98865`, … **strictly
+> decreasing, maximum at `m = 3`.**
+
+⇒ **"The vertex's own `m`-independent constant" names something that does not exist.** ⌗ *And the part of that
+which could have moved the exponent is checked and does not: the dependence is `O(1/m^{2})` about a finite
+non-zero limit, identified as `81/640` from the exact tail — the scaled deviation `2.3371` at `m = 161` against
+`2.3366` at `m = 321` — so **the exponent is untouched**. Three revisions running have been bitten by an
+exponent; this is where that check belonged. **The limit is identified and checked, not derived**, and the
+sentence says so.*
+
+## ⛭⛭ Q2, FOR THE ALGEBRAIC CHANNEL: IT NEVER CROSSES, AND IT IS FIVE POWERS CLEAR
+
+**In the level-sum convention** the derivative-free part of the coupling is of degree **THREE** against the
+target `2 c_4 \mu^{2}`'s degree **EIGHT**. The exact rational comparison reads **`3/440` already at `m = 3`**
+and falls like the **fifth** power of the label (log-slopes `−5.097`, `−5.017`, `−5.003` across three
+brackets). ⇒ ***Nothing in the derivative-free part of the vertex can produce a crossing anywhere on the
+tower, so the whole residue question is the derivative structures and nothing else.*** ⌗ *With `r7010`'s banked
+anchor at the frame-constant level read as I read it, the anchored algebraic ratio is `50/63` at `m = 3`; the
+anchor-free statement is the five-power gap and it needs no anchor.*
+
+## ⛔ AND A SECOND CORRECTION, TO `r7048` — MY OWN
+
+**`r7048`'s `d = \sqrt{D}` is a leading-order stand-in and not the level's size.** A transverse-traceless level
+is `(a,b) + (b,a)` with `a \neq b`, so it is **not** of the form `(j,j)` and has no single `d`. The exact,
+**channel-independent** factor is the product of the three left with the three right dimensions, `(m^{2}-4)^{3}`.
+⇒ The law is exact in **rate** and off by a label-free factor in the **constant** — which is precisely the thing
+Q1 asks for, and the reason the algebraic channel's five-power gap was invisible before.
+
+⌗ **And `r7044`'s channel count is re-derived rather than re-validated**, out of the `9j` structure: the channels
+are the `2^{3}` assignments of the three harmonics to the level's two irreps, **six of the eight fail the
+triangle rule at `m = 3` and `m = 5`** (printed with the failing triple), and from `m = 7` up all eight are
+admissible and all eight non-zero. That is your "two at `m=3,5`, exactly eight at every odd `m \ge 7`", arriving
+as arithmetic out of a different object.
+
+## ⚠ YOUR TWO CALIBRATIONS
+
+**The convention** is in the sentence with every number, as before: every degree and ratio above is
+**level-sum**; in the per-mode convention both drop by one, and **the five-power gap is unchanged, because a
+convention shifts an exponent and not a difference of exponents**.
+
+**The pairing count, said once and explicitly, as you asked.** It enters this assembly **exactly once**, on the
+**target** side, already spent inside `r7038`'s `c_4` whose level object is `r7018`'s three terms — which *are*
+the three Wick pairings of four factors — and no further Wick factor is applied to it here. On the **coupling**
+side **no pairing count arises at all**: the object is a sum of squares over three *independently* summed
+degeneracy labels, with no harmonic contracted against itself anywhere in it. That is the hazard's live
+application you flagged, and it lands on one side only.
+
+## ⛭ YOUR TERMINAL BRANCH IS NOT TAKEN, ON YOUR OWN GROUND
+
+Its condition is that the assembly needs something the recoupling data does not hold. **It did** — the
+`\varepsilon^{3}` pointwise identity. But that object turned out to be writable from the substrate's own
+curvature on jets and checkable on held-out jets, so what the branch describes as a wall was one revision's
+work. ⌗ *`r7051`, like `r7049`, carries no exit offer, so none is declined; nine of sixteen stands.*
+
+## ⛔ WHAT IS NOT DELIVERED, NAMED
+
+**No single number `K`** — because `K_rec` is a *function*, and it is given exactly at every odd level rather
+than averaged into a constant. No crossing for the full vertex. No constant and no sign at any odd level. No
+closed form in `m`. **Q3 not reached.**
+
+## ⇒ WHAT REMAINS — ONE OBJECT, AND IT IS RECOUPLING DATA AGAIN
+
+The three derivative structures' coefficients are now written down (`1/6`, `−1/6`, `1/4`, and the `1/6` on the
+second-derivative structure). By `r7044`'s derivative count — used, not re-derived — each vertex carries the
+eigenvalue at most once, so their level-summed square is of degree at most **SEVEN** against the target's
+**EIGHT**. ⇒ ***The single unevaluated object is their recoupling: the same `9j` data with one spin-one
+insertion per derivative, which `r7050` showed is finite algebraic data. So the crossing is now linear in a
+RECOUPLING SUM and no longer in an unknown vertex coefficient — and that sum is what closes the odd half.***

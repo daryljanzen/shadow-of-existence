@@ -464,16 +464,22 @@ OFF = [r['env'] for r in ROWS if not r['on']]
 #   their defaults. **  ⌗ *`PO-70` asks whether the retention of an oscillation through `_project` is
 #   set by the source's own extent or by the extent of the grid the integral is carried on, and that
 #   question cannot be put to a literal -- so the count grew in order to make an artefact testable.*
+# ⛭ r7049+cc66.71: ONE MORE, and it is a save rather than a knob.  `GRIDSAVE` writes the acceptance law's
+#   own inputs -- the visibility, the kernel's argument, the k axis and its measure, and r_s* -- and RETURNS
+#   before any spectrum is computed.  ** 66 offered at `r7049` that A_l is a sharper convergence probe than
+#   the height ratios, with the caveat "if it costs a re-run, it is not worth one"; this makes it cost 1.45
+#   seconds instead. **  Off by default and bit-identical unset, verified on a full slice twice.
 SWEPT_SIXTY_PLUS = {'ZPSAVE', 'SRCSAVE', 'SRCXS', 'SRCDEC', 'SRCINJ', 'SRCINJPH', 'SRCINJRS',
                     'SRCINJVIS', 'VISLEAF',
                     'SRCETA', 'SRCETAQ', 'SRCTAPER', 'SRCTAPERALL', 'SRCTAPERNORM',
                     'SRCTAPERS0',
-                    'DLKSAVE', 'NLOSW', 'NLOSF'}
+                    'DLKSAVE', 'NLOSW', 'NLOSF',
+                    'GRIDSAVE'}
 _ROWENVS = {r['env'] for r in ROWS}
 check("the instrument reads sixty environment switches with at least one use site, and every switch "
-      "that is bound is also used somewhere -- sixty at this sweep, seventy-eight now, the eighteen "
+      "that is bound is also used somewhere -- sixty at this sweep, seventy-nine now, the nineteen "
       "added since named with their commits",
-      len(ROWS) == 78 and SWEPT_SIXTY_PLUS <= _ROWENVS and len(_ROWENVS - SWEPT_SIXTY_PLUS) == 60
+      len(ROWS) == 79 and SWEPT_SIXTY_PLUS <= _ROWENVS and len(_ROWENVS - SWEPT_SIXTY_PLUS) == 60
       and not [e for e in DEFAULT if e not in USES],
       f"{len(ROWS)} switches used, {len(DEFAULT)} bound, "
       f"bound-but-never-used {[e for e in DEFAULT if e not in USES]}")
