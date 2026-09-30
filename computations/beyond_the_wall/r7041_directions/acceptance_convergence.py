@@ -104,14 +104,14 @@ def cached(arm, tag, ls):
     f = os.path.join(CACHE, f'a_{arm}_{tag}.npz')
     if os.path.exists(f):
         d = np.load(f)
-        return float(d['Amean']), float(d['span']), int(d['nk']), int(d['nlos'])
+        return float(d['Amean']), float(d['span']), int(d['nk']), int(d['nlos']), d['A']
     g = os.path.join(D, f'g_{arm}_{tag}.npz')
     if not os.path.exists(g):
         return None
     A, wd, _, RS, nk, nlos = acceptance(g, ls)
     Am, sp = float(np.nanmean(A)), float(np.nanmean(2 * RS * wd))
     np.savez(f, Amean=Am, span=sp, nk=nk, nlos=nlos, A=A, wd=wd, ls=np.asarray(ls))
-    return Am, sp, nk, nlos
+    return Am, sp, nk, nlos, A
 
 
 def main():
@@ -157,7 +157,7 @@ def main():
             if len(have) < 2:
                 print(f"    {name}: fewer than two points -- not read")
                 continue
-            txt = "  ".join(f"{t}={a:.5f}" for t, a, _, _, _ in have)
+            txt = "  ".join(f"{t}={a:.5f}" for t, a, *_ in have)
             step = abs(have[-1][1] - have[-2][1]) / abs(have[-2][1])
             mono = all((have[j + 1][1] - have[j][1]) * (have[1][1] - have[0][1]) > 0
                        for j in range(len(have) - 1))
@@ -167,8 +167,8 @@ def main():
                 print(f"      ⛔ INERT BY CONSTRUCTION, NOT CONVERGED -- every input A_l is built from is "
                       f"byte-identical\n         across this axis on `{arm}`, so A_l could not have moved "
                       f"and its not moving says nothing.")
-                print(f"      modes: {', '.join(str(n) for _, _, _, n, _ in have)}   "
-                      f"eta points: {', '.join(str(n) for _, _, _, _, n in have)}")
+                print(f"      modes: {', '.join(str(v[3]) for v in have)}   "
+                      f"eta points: {', '.join(str(v[4]) for v in have)}")
                 continue
             verdict = ("⛔ MOVING -- last step above the floor" if step > FLOOR else
                        "⌗ two points only -- inside the floor, but a two-point axis cannot turn over"
@@ -178,8 +178,17 @@ def main():
             print(f"    {name}")
             print(f"      {txt}")
             print(f"      last step {step * 100:.4f}% against the {FLOOR * 100:.1f}% floor   {verdict}")
-            print(f"      modes: {', '.join(str(n) for _, _, _, n, _ in have)}   "
-                  f"eta points: {', '.join(str(n) for _, _, _, _, n in have)}")
+            # ⌗ ** THE MEAN IS THE WEAKER STATEMENT AND A MEAN CAN HIDE A MOVING TAIL. **  The sequence
+            # above is of `A_l` averaged over the reported range; this is the WORST single multipole on the
+            # axis.  *It is printed beside the pre-registered verdict and does not replace it: the criteria
+            # were fixed in advance and are not loosened after the numbers are in.*
+            _b = out[(arm, have[0][0])][4]
+            _w = max(float(np.max(np.abs(out[(arm, t)][4] - _b) / np.abs(_b))) for t, *_ in have[1:])
+            print(f"      worst SINGLE multipole on the axis: {_w * 100:.5f}%  "
+                  f"({'inside' if _w < FLOOR else 'OUTSIDE'} the floor by {FLOOR / _w:.0f}x)"
+                  if _w > 0 else "      worst SINGLE multipole on the axis: 0.00000% (exactly)")
+            print(f"      modes: {', '.join(str(v[3]) for v in have)}   "
+                  f"eta points: {', '.join(str(v[4]) for v in have)}")
         print()
     # the arm-to-control ratio of the acceptance width, which is what the law's prediction rides on
     print("-" * 104)
