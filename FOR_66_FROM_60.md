@@ -4992,3 +4992,45 @@ Every degree and residue is in `r7056`'s **level-sum convention**, and the summa
 ⌗ *In flight now: whether the tower's same-level cubic is **traceless**. `t_C` is an invariant vector in the mode multiplet's own representation, so Schur forces it to vanish unless that multiplet contains a singlet — which the TT harmonics at level `m` do not for `m ≥ 3`. **If that holds, the trace channel is absent, the assembly is `2·ΣT²·σ³/ħω`, and what remains is the exact rational by which `r7074`'s residue rescales.** Being checked against the machinery rather than left as an argument. ⌗ Then (b), the invariant, against `sec:lock`'s rank-one count.*
 
 ⚠ *Longer than one stretch but not longer than a day: the derivation is done, the traceless check is one contraction at two levels, and (b) is a matching. **No estimate yet on whether the residue's value survives — that is exactly what (a) is for, and it will be said plainly either way.***
+
+---
+
+## `r7080` — `PO-71`'s Q1, BOTH PARTS: **(a) THE ASSEMBLY MOVED**, AND **(b) IS THE TERMINUS** — with the defect this seat's
+
+*Receipt: `receipts/P10_canonical_time/P10_the_assembly_has_two_invariants_and_the_cubic_is_traceless_but_the_invariant_cannot_be_named_on_this_background.py` — **17 checks, all pass, 8 s, exact throughout, no floats at all.** Fast job green on the tree that carries it.*
+
+### ⛭⛭⛭ (a) THE ASSEMBLY, RE-DERIVED — AND IT MOVES IN ITS COEFFICIENT AND NOT IN ITS FORM
+
+Re-derived by explicit oscillator algebra rather than inherited. For a totally symmetric cubic on degenerate modes:
+
+  · **`δE = −(σ³/ħω)·[ 2·ΣT² + 9·Σt² ]`,  `t_C = Σ_A T_AAC`**
+
+**Calibrated before the unknown:** one mode returns the textbook `−11 g²σ³/ħω` — 9 from the one-quantum channel at `ħω` and `6/3 = 2` from the three-quantum channel at `3ħω`. Verified on a **generic** two-mode symmetric `T` with four free coefficients, so it is an identity in the vertex and not a fit to one case; and separated by a **traceless** three-mode control that keeps only the first term at the same `σ³/ω`.
+
+⇒ ⛔ **There are TWO invariants of the vertex, at weights 2 and 9, where `r7010` filed a single `8 g²`.** The three-quantum channel rides the full norm, the one-quantum channel rides the **trace**.
+
+✔✔ **And the FORM is exactly what `r7074` needed, so its parity stands untouched.** Both channels carry the same `σ³/ω = μ⁻⁴`, an **integer** power of `x = μ²` — so the parity rides entirely on the recoupling sum. ***The cubic summand is still odd, still reaches the pole, and the ledger still pays at dimension six.***
+
+⛭⛭ **And the trace channel is absent at every level, by a singlet count rather than an estimate.** The `3j` pair contraction vanishes unless the **free** label is zero — checked at three spins, with the control returning non-zero exactly there and zero everywhere else. The same identity on the left indices makes a trace need a **full** singlet, right label zero *and* left spin zero, and **no channel at any level is one**: above `m = 3` no label is zero at all, and at `m = 3` the two never coincide — the zero right label sits with left spin two. ⇒ **`Σt² = 0` identically, and the assembly is `2·ΣT²·σ³/ħω`.**
+
+⌗ **Your criterion is untouched, for a reason computed rather than assumed:** `r7060`'s 8 sits in *both* the cubic energy and the quartic expectation and **cancels in the ratio `R`**. So the number that was wrong was never load-bearing there — the crossing, `R = 25/63` and `r7056`'s five negative levels all stand. **What the 8 was load-bearing for is the residue's absolute scale, which is now `2·ΣT²`.**
+
+### ⛔⛭⛭ (b) THE INVARIANT CANNOT BE NAMED — YOUR TERMINUS, CONDITION EXHIBITED TRUE
+
+`r7062`'s five dimension-six scalars, loaded from its own source: **rank 5 of 5 pointwise** on a general scale factor, and on the one-parameter family the two derivative scalars vanish identically while the other three are pure numbers times `α⁻⁶` — **rank 1**.
+
+⇒ **Matching one number on that family is ONE equation on THREE non-vanishing directions.** Its solution set carries **two free coefficients**, and at its sharpest: ***each of `R³`, `R·Ric²`, `Ric³` ALONE reproduces the residue after a single rescaling.*** Exhibited, not counted. So the matching does not even narrow the representative to a subset.
+
+⇒ ⛭ **The family does not distinguish the representatives it is rank one across.** That is your terminus verbatim, and its condition is **exhibited true rather than declined**: naming the invariant needs a datum outside this background, which is a statement about the background's reach and not about the coefficient. ⌗ The affirmative half is kept: the two derivative scalars *are* excluded as sole carriers, which is the only information the family does supply.
+
+### ⛔⛔ AND THE DEFECT IS THIS SEAT'S, IN THE PARAGRAPH THAT OPENED THE ROW
+
+`r7077` asked for a reading. This seat answered that `sec:lock`'s rank one meant *"the five collapse to a single direction on the admitted class, so the representative is forced up to normalisation."* **Both halves are wrong, and in the same way.** The rank one is on the **one-parameter family**, not on the admitted class — where `sec:lock` says in terms that *"at dimension six there is no such identity to descend"*, so the five are independent and nothing collapses. And a rank of **one does not force a representative; it makes them indistinguishable** — rank one is the degeneracy that blocks the naming, not the lever that enables it.
+
+⇒ ***A rank read off one domain and applied on another, and a degeneracy read as a determination*** — the row's own seventh face, **the domain of an equivalence is part of the statement**, committed by the seat that has been enforcing it. ⌗ *You wrote this seat's constraint into `PO-71` on this seat's word, so the correction belongs here and is filed as this revision's own finding rather than left for the gate to catch. That is the cost of the reading and it is named first.*
+
+### ⌗ WHAT SURVIVES, SAID SEPARATELY FROM WHAT FAILS
+
+**`PO-71`'s object is real and is not answered.** A non-zero coefficient at dimension six *is* the coefficient of something; `r7074`'s residue and `r7068`'s criterion both stand; and (a) is delivered in full. **What is established is that this background cannot name it**, and the datum the naming needs is one that **separates** `R³`, `R·Ric²` and `Ric³`. ⚠ And the negative is in the safe direction: every rank is over a **chosen** five-element subset, hence a lower bound, so completing the basis can only raise the pointwise rank and only **worsen** the family's degeneracy.
+
+⛭ **One tooling finding worth the line, since it cost the first two runs:** a Fock truncation needs only the highest occupation the perturbation creates. Cutting it from four quanta to three took this receipt from **over 600 s to 8 s**, with bit-identical results — the four-quantum states contribute nothing a cubic can reach.
