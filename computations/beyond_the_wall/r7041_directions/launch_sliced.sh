@@ -73,6 +73,23 @@ $D/real|real_lcdm_${sn}|$LCDM LSTEP=8 LMAXL=2000 $se SRCSAVE=$D/real/real_lcdm_$
 $D/real|real_cr_${sn}|$CR LSTEP=8 LMAXL=2000 $se SRCSAVE=$D/real/real_cr_${sn}_src.npz"
 done
 CFG=$(printf '%s' "$CFG" | sed '/^$/d')
+# ⛔⛭ ** THE ARM'S `NK` AXIS IS NOT A CONVERGENCE AXIS, AND ITS RUNS ARE NOT QUEUED. **  Measured, not
+# argued, and the measurement is upstream of any spectrum: `GRIDSAVE` writes the k axis and the visibility
+# grid a configuration will use, and on the ARM `nk15` and `nk20` write a k axis **byte-identical to
+# `base`** -- 1452 modes in all three, `np.array_equal` true on `k` AND on `eta`.  *The reason is in the
+# instrument: on the arm the ladder is `sqrt(L(L+2))*stretch` out to `KMAXL` and `NK` is only a decimation
+# cap that is never reached.*
+#   ⇒ ** CONFIRMED AT THE SPECTRUM, on slices already banked: ** `real_cr_nk15_k0` and `real_cr_nk20_k0`
+#   against `real_cr_base_k0` give `max|Dl| = 0.000e+00`, identical `ls`, on all of `Dl, ls, r_s, l_A, D_M`;
+#   and `inj_fixed_cr` / `inj_sweepown_cr` at `nk15` vs `nk20` are equal on every array.
+#   ⇒ ** AND THE CONTROL MOVES, which is what makes the arm's silence a reading and not a broken test: **
+#   on `lcdm`, `NK` takes 2547 modes to 3822 to 5094 and the `nk15` / `nk20` spectra differ outright.
+# ⛔ *** SO THE ARM'S `NK` SEQUENCE WOULD HAVE BEEN THE SAME COMPUTATION THREE TIMES, and reporting it as
+#   "the arm does not move with NK, therefore converged in NK" would be vacuous -- the input never moved.
+#   That is the corpus's own recurring defect: an instrument not matching the question it is asked.***
+#   It is reported as INERT BY CONSTRUCTION, never as converged; the control's `NK` sequence stands and is
+#   the one that carries the question.  *The already-banked arm slices are kept as the evidence above.*
+CFG=$(printf '%s\n' "$CFG" | grep -vE '\|(inj_fixed|inj_sweepown|real)_cr_nk(15|20)\|')
 # ⛭ ** A CONFIGURATION ALREADY FINISHED UNSLICED IS HONOURED, NOT REDONE. **  Five configurations
 # completed under `launch_c.sh` before the restarts made that scheme unworkable, and an unsliced `.npz`
 # IS the sum its slices would produce -- so dropping them would discard about two and a half hours of

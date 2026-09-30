@@ -28,5 +28,16 @@ fi
 # ⛭ ONE SLICED LAUNCHER FOR BOTH STAGES, replacing `launch_c.sh` and `launch_a.sh`: this container
 # restarts faster than an unsliced run finishes, so the unit of work has to be the slice.
 echo "=== $(date -u) stages c and a, sliced"
-bash computations/beyond_the_wall/r7041_directions/launch_sliced.sh
+# ⛔⛭ ** THE LAUNCHER RUNS FROM A SNAPSHOT, AND THIS IS A DEFECT OF MINE CLOSED RATHER THAN A PRECAUTION. **
+# *`bash` reads a script AS IT EXECUTES it, by byte offset.  I edit these launchers while they are running --
+# that is how this revision has worked all along, because the windows between restarts are minutes -- and an
+# edit that inserts lines ABOVE the line bash has reached moves every later offset, so the next read resumes
+# mid-token and bash runs something nobody wrote.*
+#   ⇒ ** A snapshot decouples the two: the running instance reads a copy that no edit touches, and the next
+#   relaunch picks the edit up.  ** *It is the same shape as the fold-skip lesson one file over -- except
+#   there the scratch copy was the bug, and here it is the fix. The difference is which one is authoritative:
+#   the snapshot is taken FROM the tracked file every launch and is never edited.*
+RUN=/tmp/n66/r7041/.launch_snapshot.sh
+cp computations/beyond_the_wall/r7041_directions/launch_sliced.sh "$RUN"
+bash "$RUN"
 echo "=== $(date -u) ALL COMPLETE"

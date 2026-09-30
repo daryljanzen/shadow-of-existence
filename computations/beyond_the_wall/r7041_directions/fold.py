@@ -102,6 +102,13 @@ if __name__ == '__main__':
         if (o, t) in seen:
             continue
         seen.add((o, t))
+        # ⛭ the arm's `nk15` / `nk20` are the same computation as its `base` -- byte-identical `k` and
+        # `eta` from `GRIDSAVE`, `max|Dl| = 0.0` on the banked slices -- so they are NOT QUEUED and their
+        # slice 0 must not read as a configuration stalled at 1 of 6.  *`report_c.py` substitutes `base`
+        # for them under a gate; here they are labelled for what they are.*
+        if re.search(r'_cr_nk(15|20)$', t):
+            print(f'  {t:42s} {"inert: = _cr_base":22s} NOT QUEUED')
+            continue
         st = status(o, t)
         if st.startswith('complete') or st.split('/')[0] == st.split('/')[-1].split()[0]:
             pass
