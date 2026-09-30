@@ -4743,3 +4743,17 @@ It now reads `{'Lagrangian': 3, 'action principle': 0}` against the `1` and `1` 
 ⌗ **I have not touched it.** Editing `L175`'s receipt or reverting your prose would be this seat deciding an `L175` question from a `PO-23` PR. ⇒ **It needs your gate, and the honest options are (a) the ledger's premise is now false and `V1` should say so, which is the finding, or (b) the two new sentences are re-worded to keep the ratchet, which buys a green at the cost of pretending the derivation did not happen.** *My reading is (a), and I would rather say so than let a green be bought with (b).*
 
 ⌗ *Two other reds ride with it on `PR 188`, neither mine and neither new: `P15_the_laws_six_of_seven…`, already routed with its exact patch by `cc66` in `PR 186` (`506dabc1`) — its gate hard-requires the defect it reports; and `L259/D1`, which is `L256/B1`'s `⓸ᵇ` reading the live tree at **node 66's** parity while its own name says "at its own declared parity", so it is red whenever this line has unmerged even work and green only when it has none. That one is diagnosed with a one-line patch in `PR 184` comment `5913660208`. No re-run spent on any of the three: all reproduce deterministically here.*
+
+---
+
+## ⌗ IN FLIGHT — `r7064`, `r7063`'s Q1: WHETHER THE CONSTRUCTION'S OWN REGULATOR REACHES THE INTERACTING SUM
+
+**What is in flight.** `r7063` Q1 — whether the spectral zeta that regularises the free tower reaches the interacting summand `r7060` wrote down, and which of your three named outcomes it lands on. **What it waits on:** nothing external; it is exact arithmetic on the tower's own spectrum. **Roughly when:** one working stretch. No run here could take a day.
+
+⚠ **TWO THINGS SAID BEFORE IT IS FINISHED, because both are premises rather than results and you should have them early.**
+
+**① THE ORDER'S OWN PREMISE CARRIES A SUPERSEDED NUMBER.** *`r7063` names "the logarithmic coefficient `39/4`" as part of the free tower's banked answer. **`39/4` is the value at the OLD offset `μ² = m²−3`; `r6975` corrected it to `15/4`** when it re-pointed the frequency to `μ² = m²−1`, and that receipt says so in terms — "the log coefficient moves `39/4 → 15/4`". Confirmed here by expanding `d(m)μ(m)` at large `m`: the `1/m` coefficient is `15/4` exactly.* ⇒ *Nothing in Q1 turns on it — `ζ(0) = 10` is untouched, because at `s = 0` the offset cannot enter — but the order states the pre-`r6975` figure alongside a post-`r6975` `ζ(0)`, and the two are from different offsets.* ⌗ **This is the "check the order's own premise first" rule firing for the second time on this row.**
+
+**② AND THE FREE TOWER'S RECEIPT HAS A SIGN SLIP IN ITS OWN DOCSTRING, which my calibration caught rather than went looking for.** *It writes `Z(-1) = 5/2`. Its own `ζ(0) = 2Z(−1) − 6Z(0)` with `Z(0) = −5/2` then gives **20**, not the `10` it banks. **`Z(−1) = −5/2` is the value that returns `ζ(0) = 10`**, and that is what I compute independently from the terminating binomial expansion. ⇒ **The result is right and the line is not** — `ζ(0) = 10` stands, and I am not reopening it.*
+
+⌗ *Both are reported as flags now rather than at the end, on the record that the last two in-flight lines earned: `r7058`'s did not survive and `r7060`'s did. **Neither of these is a claim about the physics** — one is a citation of a superseded figure, the other a transcription — and I would rather you had them before the receipt than inside it.*
