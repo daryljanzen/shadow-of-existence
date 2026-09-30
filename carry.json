@@ -41,16 +41,6 @@
     "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/36640092736",
     "since": "999f3ff77acba2790ecc93b787ee07174bc83cc1"
    }
-  },
-  "tolerance": {
-   "receipts/L_numerics/Q1_a_stated_tolerance_is_a_request_and_the_corpus_answers_it.py": {
-    "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/36640092736",
-    "since": "999f3ff77acba2790ecc93b787ee07174bc83cc1"
-   },
-   "receipts/P10_canonical_time/P10_the_covariant_quartic_is_seven_rationals_carried_by_an_identity_and_no_measurement_route_reaches_them.py": {
-    "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/36640092736",
-    "since": "999f3ff77acba2790ecc93b787ee07174bc83cc1"
-   }
   }
  }
 }
