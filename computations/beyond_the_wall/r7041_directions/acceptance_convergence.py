@@ -58,6 +58,31 @@ def acceptance(f, ls):
     return A, wd, float(d['l_A']), RS, int(d['n_modes']), int(d['nlos'])
 
 
+CACHE = '/tmp/n66/r7041/acc_cache'
+
+
+def cached(arm, tag, ls):
+    """A_l per configuration, CACHED -- because this probe outlives no restart otherwise.
+
+    ** The first version computed all 24 configurations in one process and was killed twice by container
+    restarts, having written nothing. **  *That is the same defect the unsliced launcher had: a unit of work
+    longer than the window between restarts completes never.*  ⇒ One small file per configuration, skipped
+    when present, so the probe resumes exactly where it stopped.
+    """
+    os.makedirs(CACHE, exist_ok=True)
+    f = os.path.join(CACHE, f'a_{arm}_{tag}.npz')
+    if os.path.exists(f):
+        d = np.load(f)
+        return float(d['Amean']), float(d['span']), int(d['nk']), int(d['nlos'])
+    g = os.path.join(D, f'g_{arm}_{tag}.npz')
+    if not os.path.exists(g):
+        return None
+    A, wd, _, RS, nk, nlos = acceptance(g, ls)
+    Am, sp = float(np.nanmean(A)), float(np.nanmean(2 * RS * wd))
+    np.savez(f, Amean=Am, span=sp, nk=nk, nlos=nlos, A=A, wd=wd, ls=np.asarray(ls))
+    return Am, sp, nk, nlos
+
+
 def main():
     if not glob.glob(os.path.join(D, 'g_*.npz')):
         print(f"  ⛔ no grids in {D} -- run `r7041_directions/launch_grid.sh` first (about 72 s total).")
@@ -73,13 +98,12 @@ def main():
         lA = float(np.load(b)['l_A'])
         # ** the SAME multipoles at every setting **, so a difference is the setting's and not the grid's
         ls = np.unique(np.round(np.linspace(LO, HI, NL) * lA).astype(int))
-        print(f"  {arm}: l_A = {lA:.2f}; reading A_l at l = {list(ls)}")
+        # ⌗ plain ints, not numpy scalars: `list(ls)` prints `[np.int64(256), ...]` and buries the numbers
+        print(f"  {arm}: l_A = {lA:.2f}; reading A_l at l = {[int(x) for x in ls]}")
         for tag in sorted({t for v in SEQ.values() for t in v}):
-            f = os.path.join(D, f'g_{arm}_{tag}.npz')
-            if not os.path.exists(f):
-                continue
-            A, wd, _, RS, nk, nlos = acceptance(f, ls)
-            out[(arm, tag)] = (float(np.nanmean(A)), float(np.nanmean(2 * RS * wd)), nk, nlos)
+            r = cached(arm, tag, ls)
+            if r is not None:
+                out[(arm, tag)] = r
     print()
     for arm in ('lcdm', 'cr'):
         print("-" * 104)
