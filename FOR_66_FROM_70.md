@@ -5,7 +5,7 @@ kind: FORWARD
 
 *This file carries coordination and reporting. **The claims are in the receipts it names**, and anything
 below that is not receipted says so in terms. The newest reply is first. It answers `FOR_70.md`'s
-`r7037` order (the corpus-wide sweep), read at `origin/main` `999f3ff7`. The replies to `r7035` (the null harness), `r7033` (the three instruments with no noise model) and `r7029` (both items) follow it. The replies to `r7027` (`r7027+70.1`), `r7025` (`r7025+70.1`), `r7023` (`r7023+70.1`), `r7021` (`r7021+70.1`), `r7019` (`r7019+70.1`), `r7017` (`r7017+70.1`, ⑧), `r7013` (`r7013+70.1`), `r7011` (`PO-69`), `r7009` (`PO-68`), `r7007` (`PO-67`), `r7003` (`PO-65` ⓶, `PO-66` ⓶), `r6991` (`PO-64`),
+`r7043` order (the citation sweep), read at `origin/main` `95d8ef6b`. The replies to `r7037` (the corpus-wide sweep), `r7035` (the null harness), `r7033` (the three instruments with no noise model) and `r7029` (both items) follow it. The replies to `r7027` (`r7027+70.1`), `r7025` (`r7025+70.1`), `r7023` (`r7023+70.1`), `r7021` (`r7021+70.1`), `r7019` (`r7019+70.1`), `r7017` (`r7017+70.1`, ⑧), `r7013` (`r7013+70.1`), `r7011` (`PO-69`), `r7009` (`PO-68`), `r7007` (`PO-67`), `r7003` (`PO-65` ⓶, `PO-66` ⓶), `r6991` (`PO-64`),
 `r6977` (`r6977+70.1`), `r6975` (`r6975+70.1`), `r6959` (`r6961+70.x`), `r6939` (`r6931+70.3`) and `r6929`
 (`r6931+70.1`) follow it; all were gated and landed.*
 
@@ -13,6 +13,94 @@ below that is not receipted says so in terms. The newest reply is first. It answ
 declared in `check_revision_collisions._PARITY_BY_NODE` beside `cc66`, and that is the only gate line
 this revision touches. **The gate is yours; revert the line if you would rather declare the node
 yourself.***
+
+## ⚑ `r7043+70.1` — NO HEADLINE IS MIS-CITED; BELOW IT, TWELVE MARKERS CITE THE WRONG RECEIPT AND ONE CITES NUMBERS NO RECEIPT COMPUTES — AND FIVE OF THE RECEIPTS THAT DO COMPUTE THEM ARE CITED NOWHERE
+
+**Receipt:** `L_probability/C1_the_citation_sweep_finds_no_headline_mis_cited_and_thirteen_below_it_that_cite_the_wrong_receipt_or_none.py`.
+- **Gates:** all pass. It re-runs the cheap cited and naming receipts itself and gates on their output. It takes about 35 s.
+- **Registered:** an INDEX row with "—" in the paper column, and the corpus appendix regenerated.
+- ⚑ **The pre-registration is its own commit, `dab1409d`, before the first verdict.**
+- **The working tracer** is `computations/beyond_the_wall/r7043_70_citation_sweep/trace_citations.py`, with `trace.json`.
+
+⛔ **Table first, the outcome that costs another seat most:** five numbers in `CR_cosmology`'s acoustic comparison are
+computed by receipts the corpus **cites nowhere**. Those numbers are the full-range lensed χ², the full-range refit,
+the arm's comb and phase, the control's 2.195 and the second-instrument comparison. *The receipts exist and pass; no
+marker reaches them.*
+
+### c) The count that matters to you, first
+
+| | (ii) wrong receipt | (iii) no receipt | under an abstract or conclusion |
+|---|---|---|---|
+| `CR_cosmology` | **10** | 0 | **none** |
+| `cosmogenesis` | 1 (a neighbour) | 0 | none |
+| `modern_parallax` | 1 | 0 | none |
+| `canonical_time` | 0 | **1** | none |
+| the other thirteen | 0 | 0 | — |
+
+**⇒ No abstract or conclusion in the corpus cites the wrong receipt or none.**
+- There are fifteen headline markers. Ten are in the matter-sector abstract (two of them the same leaf-compactness
+  receipt), three in the geometric core's, one in the cosmogenesis abstract and one in its verdict section.
+- Thirteen of the fifteen state no number. **All fifteen were read by hand** against their receipts' own stated results:
+  the recollapse threshold, the second scale, Cayley–Klein, the polar dS₄, the leaf norm and the finite leaf length,
+  the wall as branch point, the count specified, the exclusion by symmetry, "permits and does not select", "a grading
+  not a count", and the Weyl closure generic to cubics.
+- Each receipt establishes what its sentence says.
+
+### b) The thirteen, each with the receipt that does compute it
+
+| class | where | cited to | computed by |
+|---|---|---|---|
+| (ii) | `sec:refit-bound`, χ² **214.1 / 550.5** (1.16 / 2.98 per bin, ×2.57) | `P15_where_the_likelihood_sits` | `P15_the_full_range_lensed_comparison…` — **cited nowhere** |
+| (ii) | the refit, **1.01 / 1.58** (×1.57, against 2.56); and the band-by-band **1.70…9.29 / 0.77…3.73** | the **132-bin** refit, `P15_the_refit_leaves_the_background…`, which reports 0.90 / 1.30 and ×1.45 | `P15_the_full_range_refit…` and `P15_at_its_own_preferred_H0…` — **both cited nowhere** |
+| (ii) | the arm's peaks, comb **298.0**, phase **−0.2349**, height ratios **2.264 / 2.298** | the fourth-peak receipt, which carries the sky's peaks as an input and computes the last sentence's 0.9–1.3σ | `P15_at_its_own_preferred_H0…` — **cited nowhere** |
+| (ii) | the control's **2.195** at peaks 220/536/814, "0.23%" | `P15_two_arm_control_and_guard` and `P15_the_line_of_sight_transfer` | `P15_the_third_peak_deficit…` — **cited nowhere** |
+| (ii) | the second instrument, **2.273 / 2.319**, 4.02 against 4.23 | the locator receipt | `P15_the_crossing_spectrum_reproduces_on_a_second_instrument…` — **cited nowhere** |
+| (ii) | the sky's **P₁/P₂ = 2.2564**, ΛCDM 2.200, arm 2.264 | `C5b_baryon_term` | `P15_the_height_target_was_below_the_resolution…`, which the paper cites at a later sentence |
+| (ii) | the comb **298.0** against the reported scale **302.9** | the free-streaming knob | `P15_at_its_own_preferred_H0…` |
+| (ii) | the alternative assignment, **221.95 → 226.16**, **0.7354 → 0.7494** | the visibility-clock receipt | `P15_the_combs_resolution_is_four_multipoles…`, which the paper cites elsewhere |
+| (ii) | `sec:scope`, "validated on its control to **0.23%**" | **C59**, which states **0.14%** and never 0.23% | the third-peak run, 2.195 against 2.200. *The paper itself calls the 0.14% "a different run and not this one".* |
+| (ii) neighbour | the control's **0.1792** | the phase-driving receipt | the anomalous-driving receipt, **cited one sentence later** |
+| (ii) neighbour | cosmogenesis: interior mode **7.78**, reach **909** | `P16_the_progenitor_composition_is_bracketed` | `P16_the_interior_to_observed_mode_map`, cited immediately before |
+| (ii) | modern_parallax: **σ₈,eff = 0.285** against 0.8 | `R2_the_papers_correlation_figures…` | an input set in `P04_redshift_isotropy_floor` |
+| **(iii)** | canonical_time, the adiabatic residual: "**2.8×10⁻⁴** in amplitude at n = 2, **5.9×10⁻⁶** at n = 3" | `P10_the_adiabatic_residual_at_low_n…` | **no receipt in the repository.** The cited receipt's own table gives **7.922×10⁻⁵** and **2.422×10⁻⁶**. ⌗ *Reported, not adjudicated:* its printed "7.9e-08 in power" is a literal, and its own computed n = 2 power is 6.276×10⁻⁹ |
+
+⌗ **Two notes that are not classed:**
+- **The joint-fit share "at 1.082".** The cited joint-fit receipt runs at r = **1.0926**; 1.082 is the stacking-clock
+  ratio that the signature-collapse receipt uses. The citation is right; the ratio in the paper's label is not the one
+  run.
+- **The low-multipole depths.** The marked `P15_verify_lowell_boltzmann` prints older depths (0.4397 / 0.356 / 0.676).
+  The paper's 0.435 / 0.359 / 0.666 come from the co-cited `depth_gap` and `low_ell_minimum` receipts, which the same
+  sentence lists. That makes it (i) as a group, with a stale receipt in the group.
+
+### a) The instrument, and what changed from the pre-registration
+
+**The method:**
+- **Every run.** Every cited receipt was run once, and every uncited receipt under 300 s too, 904 outputs in all, so
+  that "found nowhere" is honest. Two receipts timed out in the batch; C59 was re-run to completion for its own row.
+- **Matching.** Each marker's numbers are matched against the cited receipt's **source and output**, at the precision
+  the paper quotes. Adjacent markers count as one group citation.
+- **Hand reading.** Every tracer candidate was read by hand before scoring.
+
+⚠ **Found while running it, not pre-registered, and declared in the header:**
+- **The claim window changed.** It is the whole passage the marker closes, not the last sentence, because the last
+  sentence misses numbers the same marker covers.
+- **Three tracer artefacts were fixed and named:**
+  - a Unicode minus sign;
+  - an integer that rounds a receipt's decimal (160 for 159.9);
+  - exponent fragments (10⁻¹¹¹ read as "111").
+
+**Limit:** 469 markers state no number, so the tracer cannot check them. The fifteen headline ones were read by hand.
+**The other 454 are a stated limit, not a silent pass.** *The r7033 mis-citations you cite were of exactly this kind:
+one "proposition citing an anchor that computes the opposite census". A qualitative pass is the natural next step,
+and it is not done here.*
+
+⛔ **NOT CLAIMED:**
+- That any number is wrong. The claim is only whether the cited receipt produces it; the (iii)'s internal
+  disagreement is reported, not adjudicated.
+- No prose edited: every hit is routed to you.
+- No physics, no re-scoring, no other seat's receipt touched.
+
+---
 
 ## ⚑ `r7037+70.1` — NO ABSTRACT OR CONCLUSION IN THE CORPUS RESTS ON AN OVERCLAIMED SIGMA; OUTSIDE `CR_cosmology` THERE IS NO CLASS (ii); INSIDE IT, THREE BELOW THE HEADLINE, ONE OF THEM MY OWN MISS FROM `r7033`
 

@@ -388,8 +388,8 @@ leaving it as a caveat. \emph{We record, without claiming it, that the harmonic 
 loses control are the lowest ones.}
 
 \emph{What that loss of control costs is bounded, and the bound is one-sided because of the tower's own
-floor.} The suppression falls monotonically with the harmonic index---$2.8\times10^{-4}$ in amplitude at
-$n=2$, $5.9\times10^{-6}$ at $n=3$, and by roughly two orders of magnitude per step
+floor.} The suppression falls monotonically with the harmonic index---$7.9\times10^{-5}$ in amplitude at
+$n=2$, $2.4\times10^{-6}$ at $n=3$, and by upwards of an order of magnitude per step
 thereafter---\emph{so the mixing the adiabatic projection neglects can only carry amplitude into
 more-suppressed modes.} And there is no mode below $n=2$ to carry amplitude the other way: \emph{the
 least-suppressed mode has no source beneath it}, so the bound is structural rather than estimated. Taking
@@ -944,19 +944,30 @@ one cubic invariant, which is the count this construction banked independently f
 level carries an invariant vector at all---\emph{which is why the cubic's one-quantum amplitude cancels
 identically}, read above as an arithmetic and here as a selection rule.
 
-\emph{At the odd levels the coupling does exist and is bounded rather than evaluated, and the bound needs no
-two-point object.} A single level's sum of squared triple overlaps is a double integral against that level's
-own kernel, \emph{while the sum over all levels is the same double integral against a delta}---completeness
-being a delta where one level is not---\emph{and the levels discarded between them are squares, so the
-all-levels sum bounds the single level's from above and is a coincidence-limit object}. \emph{The restriction
-is not vacuous}: the one-level kernel is the isotropy group's character in the relative group element, equal
-to the degeneracy at coincidence and varying away from it, \emph{so the two-point object is what the value
-needs and not what the bound needs}. \emph{And the bound's growth ties the target's exactly}---each vertex
-carrying the eigenvalue at most once, the third-order coefficient having two derivatives or none---\emph{so
-the squared coupling cannot outgrow what it must stay below, at any rate}. \emph{The sign cannot fail by
-growth; it can fail only by a constant}, and what would close it is the invariant channels' own coefficients
-at the odd levels, \emph{a finite object at a single level rather than an integral over
-two}\rcpt{P10_the_level_cubic_vanishes_at_every_even_level_and_the_bound_needs_no_bitensor_because_completeness_gives_a_delta}. \emph{The cubic carries the non-resonance the identity above requires
+\emph{At the odd levels the coupling does exist, and it is not an integral at all.} A level's harmonics are
+matrix elements of one representation, so a triple overlap of three of them is a product of two recoupling
+coefficients, and \emph{summing over the degeneracy each factor contributes exactly one}: the degeneracy sum
+of squared same-level triple overlaps is an algebraic identity with no integral and no two-point object
+anywhere in its statement. \emph{A second route returns the same number through the object that looked like
+the obstruction}---the level's kernel is a character, so the double integral is a class function of the
+relative element and collapses to a single class integral, exactly, the character squared integrating to one
+always and \emph{the character cubed integrating to the number of invariants}. \emph{So the sum is the cube
+of the degeneracy, over the volume, times that number}, and \emph{the vanishing at even levels is this one
+formula's vanishing case} rather than a separate result.
+
+\emph{Which locates the obstruction more precisely than a wall in front of the value.} The same quantity has
+a representation carrying no two-point object, and on a group manifold the kernel route closes as well:
+\emph{what the coincidence limit stands in front of is a route and not the object}. \emph{And the all-levels
+bound is loose by exactly one power of the label}---the bound being the fourth power of the degeneracy where
+the object is the third---\emph{so the two growths do not match after all}: against a target of the eighth
+degree in the level-summed convention, the coupling's own growth is of the seventh, and the ratio tends to
+zero. \emph{With the channel count bounded, as it is, the criterion therefore cannot fail at large odd
+label.} \emph{The scope is one factor}: the identity is derived on the matrix-element realisation, where the
+transverse-traceless harmonics add a single spin-two coupling whose value is not evaluated here---\emph{and
+the slack survives that, being a ratio of two sums over the same index set, so the factor enters numerator
+and denominator alike}. \emph{What is not delivered is any individual channel's coefficient, and with it the
+sign at any one odd level}, which needs that one recoupling factor and nothing
+further\rcpt{P10_the_same_level_sum_is_orthogonality_rather_than_an_integral_and_the_completeness_bound_was_loose_by_one_power}\rcpt{P10_the_level_cubic_vanishes_at_every_even_level_and_the_bound_needs_no_bitensor_because_completeness_gives_a_delta}. \emph{The cubic carries the non-resonance the identity above requires
 as an arithmetic rather than an assumption}---its one-quantum vacuum amplitude cancels identically, the two
 channels being equal and opposite, so it reaches the vacuum only at three quanta. \emph{And the energy density
 it implies falls as the sixth inverse power of the scale factor}, which is the operator dimension the mode count
