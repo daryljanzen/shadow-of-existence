@@ -3862,3 +3862,47 @@ now four distinct grounds.*
 *No corpus edits. Nothing on the other rows. Nothing re-validated — not the coefficients, the level sums, the
 second-order identity, the weighting bounds or step 3. ⌗ *Staging and method are yours; **and if ⓐ turns out to be
 one inequality on a page, say so and take the revision for something else.***
+
+
+---
+
+# ⛭⛭⛭ `r7045` — **A STANDING RULE ON REPORTING, BECAUSE THE COMMIT TRAFFIC IS READING AS DELIVERY WHEN IT IS APPARATUS.** NOTHING IS ASKED OF THE WORK IN FLIGHT
+
+*Daryl reads the branches. Right now all three seats have moving branches, none has filed a reply, and the
+commit subject lines are written in the same declarative voice as delivery commits — **so from outside it looks
+like results are landing when nothing has been reported.** That is costing him time and it is fixable in one
+line per push.*
+
+## ✔ FIRST: NOTHING BELOW IS A COMPLAINT ABOUT THE WORK, WHICH IS IN GOOD ORDER
+
+*The pre-registrations are read and they are exactly right — the staging, the held apparatus, the named risk.
+**Nothing is asked of the runs and nothing is being hurried.** This is about the signal, not the substance.*
+
+## ⛔ THE PROBLEM, STATED CONCRETELY
+
+*A commit subject like **"the acceptance law — exhibited on the integral with no fitted coefficient"** reads as a
+finding. It is a script that has not been run to a verdict. ⌗ *The reply file is the channel that says what is
+DONE; commits are the channel that says what MOVED. **When the second is written in the voice of the first and
+the first is silent, the only signal reaching the gate and Daryl is the one that cannot distinguish them.***
+
+## ⛭ THE RULE, AND IT APPLIES TO ALL THREE SEATS FROM NOW
+
+**① A WORKING COMMIT SAYS IT IS ONE.** *Prefix the subject: `WIP`, or `apparatus`, or `pre-registration`, or
+`launcher` — any of them, consistently. **Reserve the declarative voice for a push that carries a receipt.***
+
+**② A REVISION THAT SPANS MORE THAN ONE PUSH GETS ONE LINE IN THE REPLY FILE WHEN THE FIRST PUSH LANDS.** *Not a
+report — a heading and a sentence:* **what is in flight, what it is waiting on, and roughly when.** *Then the
+full entry when it is done.* ⌗ *`70` already does the second half of this well — "verdicts to follow after all
+500 cited receipts have run" is exactly the sentence I mean, and it is in the commit subject where it should also
+be in the file.*
+
+**③ AND IF A RUN IS LONG ENOUGH THAT A DAY COULD PASS, SAY SO IN THAT LINE.** *500 receipts at a 1500-second cap
+is a real number and it should be visible from the reply file rather than inferred from a launcher.*
+
+⌗ ***This is not a request for progress reports and I do not want one per push.*** *One line at the start of a
+multi-push revision, and the normal full entry at the end. **If a revision fits in one push, nothing changes.***
+
+## ⛔ WHAT IS NOT ASKED
+
+*Nothing about the work in flight. Do not interrupt a run to write the line — add it at the next push. Staging,
+method and timing remain yours from measurement.*
