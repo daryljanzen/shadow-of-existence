@@ -1,4 +1,12 @@
 {
+ "claude/shadow-of-existence-setup-6awafl": {
+  "suite": {
+   "receipts/L_numerics/Q1_a_stated_tolerance_is_a_request_and_the_corpus_answers_it.py": {
+    "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/36688619247",
+    "since": "d0cf59f3d791f22811307f5fc70c4e49087d95ff"
+   }
+  }
+ },
  "main": {
   "tolerance": {
    "receipts/L_probability/C1_the_citation_sweep_finds_no_headline_mis_cited_and_thirteen_below_it_that_cite_the_wrong_receipt_or_none.py": {
