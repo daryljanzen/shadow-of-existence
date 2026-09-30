@@ -13,6 +13,14 @@ itself; every quantity the law is BUILT from is one-dimensional:
   * `A`, `dkw`             -- the law's OUTPUT, so a reader can see it without recomputing all of it
   * `Dlk` for `NSAMP` multipoles only -- enough to re-derive the factorisation and `A` from scratch
 
+⛔⛭ ** AND `A` IS BANKED ONCE PER ARM, NOT ONCE PER INJECTION, BECAUSE IT DOES NOT DEPEND ON THE
+   INJECTION. **  `A_l` is built from `vis`, `x0`, `k` and `r_s*` -- the window the kernel reads and the
+   comb's period -- and NOTHING in it refers to what was injected.  *A first version of this fold computed
+   it separately for `fixed` and `sweepown` and would have banked two keys holding identical arrays.*
+   ⇒ *** THAT IS AN ARITHMETIC IDENTITY DRESSED AS TWO MEASUREMENTS -- this row's own standing guard --
+   and it also cost twice the compute for nothing. ***  The receipt GATES the identity instead: the two
+   injections' window arrays are checked equal, so `A` must be, and one bank serves both.
+
 ⌗ ** The receipt RECOMPUTES G_l and A_l for the sampled multipoles from `vis`, `x0` and `k` and checks
 them against the banked `A`. **  So the banked law is gated by re-derivation and not taken on trust, and
 the cost is bounded by `NSAMP` rather than by the multipole grid.
@@ -46,18 +54,21 @@ def main():
             lA = float(d[f'l_A__{tag}'])
             dk = np.gradient(k)
             q = ls / lA
-            # the law, on every multipole, banked as its OUTPUT
-            A = np.full(len(ls), np.nan)
-            dkw = np.full(len(ls), np.nan)
-            for i, l in enumerate(ls):
-                J = spherical_jn(int(l), k[None, :] * x0[:, None])
-                G = np.trapezoid(v[:, None] * J, ee, axis=0)
-                W = G ** 2 * dk / k
-                s = W.sum()
-                if s > 0:
-                    A[i] = abs(np.sum(W * np.exp(2j * k * RS))) / s
-                    kb = np.sum(W * k) / s
-                    dkw[i] = 2 * np.sqrt(max(np.sum(W * (k - kb) ** 2) / s, 0.0))
+            # the law's output, computed ONCE for the arm -- see the note in the docstring
+            if tag == 'fixed':
+                A = np.full(len(ls), np.nan)
+                dkw = np.full(len(ls), np.nan)
+                for i, l in enumerate(ls):
+                    J = spherical_jn(int(l), k[None, :] * x0[:, None])
+                    G = np.trapezoid(v[:, None] * J, ee, axis=0)
+                    W = G ** 2 * dk / k
+                    sw = float(W.sum())
+                    if sw > 0:
+                        A[i] = abs(np.sum(W * np.exp(2j * k * RS))) / sw
+                        kb = np.sum(W * k) / sw
+                        dkw[i] = 2 * np.sqrt(max(np.sum(W * (k - kb) ** 2) / sw, 0.0))
+                out['A'] = A
+                out['dkw'] = dkw
             # ** the sampled multipoles are spread ACROSS the reported q range, not taken from one end,
             # so the factorisation gate cannot pass on a corner of the grid. **
             inr = np.where((q >= LO) & (q <= HI))[0]
@@ -70,8 +81,6 @@ def main():
             out[f'eta__{tag}'] = ee
             out[f'x0__{tag}'] = x0
             out[f'vis__{tag}'] = v
-            out[f'A__{tag}'] = A
-            out[f'dkw__{tag}'] = dkw
             out[f'samp__{tag}'] = samp
             out[f'Dlk_samp__{tag}'] = d[f'Dlk__{tag}'][samp]
             for qn in ('l_A', 'D_M', 'r_s', 'arm', 'ns', 'eta_ls', 'eta_ls_w',
