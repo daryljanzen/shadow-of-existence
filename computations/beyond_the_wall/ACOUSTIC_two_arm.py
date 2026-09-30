@@ -1857,6 +1857,30 @@ def main():
                              np.linspace(e_hi, ETA_END, n_los - int(_nf * n_los))])
         if not alias_gate(kk):
             return 1
+        # ⛭⛭⛭ ** GRIDSAVE -- THE GRIDS THE ACCEPTANCE LAW IS BUILT FROM, AND NOTHING ELSE.  r7049+cc66.71. **
+        # *`r7049` observed, without directing, that `A_l` is a sharper convergence probe than the height
+        # ratios: it is built from `W_l = G_l^2 dk/k` over the k grid, so truncating `k_max` truncates the
+        # window the law integrates over -- and `A_l` carries NO FITTED AMPLITUDE to absorb the truncation,
+        # where a height ratio does.*
+        #   ⇒ ** And `A_l` needs only the BACKGROUND: the visibility, the kernel's argument, the k axis and
+        #   its measure, and `r_s*`.  None of it needs the solver or the projection. **  So this save exits
+        #   before either, in seconds, and the acceptance convergence can be read WITHOUT the sweep -- which
+        #   is what makes the observation free rather than a re-run.  *`r7049`: "if it costs a re-run, it is
+        #   not worth one."*
+        #   ⌗ ** Output only, and it RETURNS: a run with `GRIDSAVE` set computes no spectrum and says so. **
+        #   Unset, this branch does not execute and the run is bit-identical.
+        if os.environ.get('GRIDSAVE'):
+            _gs = os.environ['GRIDSAVE']
+            _dk = np.gradient(kk)
+            np.savez(_gs, eta=EE, x0=eta_0 - EE, vis=np.asarray(vis_of(EE), float),
+                     k=kk, dk=_dk, P=kk ** (NS - 1) / kk * _dk, r_s=R_S, l_A=L_A, D_M=D_M,
+                     ns=NS, arm=ARM, eta_ls=ETA_LS, eta_ls_w=ETA_LS_W, n_modes=len(kk),
+                     nlos=len(EE), nlosw=float(os.environ.get('NLOSW', '6.0')),
+                     nlosf=float(os.environ.get('NLOSF', '0.75')),
+                     kfac=KFAC, nk=NK, eta_0=eta_0)
+            print(f"  GRIDSAVE: {len(EE)} conformal times x {len(kk)} modes -- the acceptance law's own "
+                  f"inputs, NO spectrum computed -> {_gs}")
+            return 0
         if os.environ.get('HIER', '0') == '1':
             ls, Dl = hier_run(kk, EE, L_A, D_M, R_S)
             if os.environ.get('SAVE'):
