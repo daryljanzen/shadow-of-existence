@@ -4352,3 +4352,60 @@ It asks that neither an identity nor an inequality reach a bound, and that the t
 **One constant, at the odd levels only.** The bound's slack is exactly the levels completeness throws away, and the object that would close it is the **`≤ 8` invariant channels' own coefficients at odd `m`** — a finite, same-level, representation-theoretic object, not an integral over two points. *That is a smaller gap than the exit describes, and it is where I would go next.*
 
 ⛔ **Nothing re-validated**: not the seven coefficients, not the two level sums, not the second-order identity, not the weighting bounds, not step 3. **And nothing claimed about cross-level intermediate states** — the criterion's `g²` is the level's own self-coupling as `r7008` defined it, and the cross-level object is the divergent double sum `r6997` already banked. Nothing on the other rows.
+
+
+---
+
+# ✔✔✔ `r7048` — **THE ODD-LEVEL CONSTANT IS NOT AN INTEGRAL. IT IS ORTHOGONALITY — AND YOUR SLACK WAS EXACTLY ONE POWER.**
+
+*Receipt: `P10_the_same_level_sum_is_orthogonality_rather_than_an_integral_and_the_completeness_bound_was_loose_by_one_power.py` — **19 gates, `GATES: ALL PASS`**, 1 s, no floats, no tolerances, and — after the correction below — no quadrature either. One push; no corpus edits outside `receipts/INDEX.md` and its regenerated appendices.*
+
+## (a) THE ANSWER TO "IS IT A SAME-LEVEL OBJECT" IS YES, AND IT IS STRONGER THAN THAT
+
+On this substrate a level's harmonics are **matrix elements of one representation**, so a triple overlap of three of them is a **product of two `3j` symbols** — *exhibited by direct symbolic integration over the group, not quoted* — and summed over the degeneracy **each factor contributes exactly one**.
+
+> **The degeneracy sum of squared same-level triple overlaps is an algebraic identity. No integral. No two-point object anywhere in the statement.**
+
+## ⛭⛭ AND A SECOND ROUTE, THROUGH THE VERY KERNEL I CALLED THE WALL, RETURNS THE SAME NUMBER
+
+The level kernel here is a **character**, so the double integral is a class function of the relative element alone and collapses to **one** class integral — exact by exponential orthogonality, with no quadrature: `∫χ² = 1` always, and **`∫χ³` is the singlet multiplicity**.
+
+> ⇒ **THE LAW: the same-level sum is `d³/V` times the number of cubic invariants.**
+
+✔ *And `r7044`'s even-level selection rule is this formula's **vanishing case** — half-integer spin, character cube integrating to zero. **Re-derived rather than re-validated**, and the two results are now one formula.*
+
+## ⛔ SO THE FIRST CORRECTION IS TO `r7044`, AND IT IS ABOUT WHERE A WALL IS
+
+*I reported that the wall stands in front of the **value** and not in front of a bound.* ***That was a property of one representation of the value, not of the value.*** The same quantity has a second representation carrying no two-point object; and the kernel representation closes here too, because on a group manifold the kernel is elementary.
+
+⇒ **The wall stands in front of a ROUTE and not in front of the OBJECT.**
+
+## ⛔⛭ AND THE SECOND CORRECTION IS THE ONE THAT MOVES THE ANSWER — YOUR SLACK WAS EXACTLY ONE POWER
+
+*My bound was the all-levels sum, `d⁴/V` in these variables — the degeneracy squared. The object is `d³/V`.*
+
+> **The slack is exactly `√D` — one power of the label.** *That is what "the levels completeness throws away" amounts to, computed rather than estimated.*
+
+⇒ ***So the rates do NOT tie.*** In the **level-sum convention**, as you asked to have named and carried: my bound sat at degree eight against the target's eight — the tie I reported — but **the coupling's own growth is degree SEVEN**. The ratio **tends to zero**.
+
+## ⇒ (b) AT THE LEVEL OF RATES, THE COMPARISON GOES THE COUPLING'S WAY
+
+**For a bounded channel count the criterion cannot fail at large odd label** — and the count is bounded, at your eight. *My own "the rates tie, so only a constant can decide it" was a statement about my bound and not about the coupling.*
+
+## ⚠ AND HERE IS THE SCOPE, WHICH IS THE LOAD-BEARING PART
+
+*The `d³` law is derived on the **matrix-element realisation** of a level. The transverse-traceless harmonics add **one spin-two coupling** on the right index — the content I pinned two ways last revision — and **that coupling's factor is not evaluated here.*** ✔ **What carries without it:** both routes, the selection rule as the vanishing case, and **the slack being one power — because the slack is a ratio of two sums over the *same* index set, so the factor enters numerator and denominator alike and cancels.**
+
+⛔ **What is NOT delivered, named:** no individual channel coefficient, **no constant**, and **no sign at any one odd level**. (b) is answered as a **rate**; (c) is not reached.
+
+⌗ *A correction inside this revision, reported as this row reports them: the overlap formula first came out at **half** its value, from integrating over the `2π` range while dividing by the `4π` normalisation. **The domain of a measure is part of the statement** — another face of this row's own standing lesson, and the check caught it.*
+
+## ⛔ THE SIXTEENTH EXIT IS NOT TAKEN — ITS CONDITION IS FALSIFIED, NOT MERELY UNMET
+
+It asks that the constant **require** the two-point value, on the strength of my own kernel argument. **It does not require it, and the two-point route is not even closed here.** ⌗ *Nine declined of sixteen, on a sixth distinct ground.*
+
+## ⇒ WHAT REMAINS, NAMED AS PRECISELY AS I CAN NAME IT
+
+**The spin-two coupling's factor**, and with it the constant itself. *It is one Clebsch–Gordan contraction between the frame's spin-two basis and the level's right index — finite, algebraic, same-level, and now the only thing between the rate statement and an actual number at a named odd level.* **That is where I would go next, and on the evidence of this revision it is reachable.**
+
+⛔ **Nothing re-validated**: not the seven coefficients, not the two level sums, not the second-order identity, not the weighting bounds, not step 3, and **not `r7044`'s channel count or representation identification — both used and cited**. Nothing on the other rows.
