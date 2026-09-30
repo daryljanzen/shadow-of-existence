@@ -1,4 +1,15 @@
 """
+** ⛔ ITS DEPTHS ARE SUPERSEDED, AND IT SAYS SO HERE (r7049+70). **  The quartet this file prints,
+   0.473 / 0.410 / 0.356 / 0.676 at ell = 2..5, is on the CONTROL background (H0 = 67.4, Omega_m = 0.315,
+   r0 = 5064).  The corpus quotes 0.487 / 0.435 / 0.359 / 0.666, on the ADJUDICATED
+   background (H0 = 68.60, Omega_m = 0.2973), and those are computed by ARM A of
+   `P15_the_low_multipole_depth_gap_closes_and_two_defects_were_cancelling` -- the same CAMB transfer and
+   the same discrete sum, on the other background.  Same minimum at ell = 4 and the same recovery.
+   ⇒ *What this file still carries for the corpus is its four-figure gate and its r0-drift table, and
+     neither is a depth quote.*  It is NOT brought current: moving its background would move the r0 table
+     the paper cites (15 per cent at ell = 4), which is a re-scoring and not a disposal.
+   ⌗ *Its printed depths, and the "matches the paper's 0.47/0.41" below, are its r1395 record.*
+
 P15_verify_lowell_boltzmann.py -- verifies the P15 sec:largescale/sec:scope EXACT low-ell depth via a genuine
   Boltzmann transfer. CR's temperature transfer telescopes to flat-LCDM's (flat projection D_M=D_C, zero
   differential floor), so the ONLY CR modification is the DISCRETE closed-S^3 source read through CAMB's exact
@@ -140,3 +151,26 @@ print("     SHAPE is stable -- the minimum stays at ell = 4 throughout -- but th
 print("     r0 systematic of the same order as the spread between the two Boltzmann arms. **")
 print("  *That is why this had to be run rather than printed: the printed claim was wrong in the")
 print("  only place it mattered.*")
+
+
+# =====================================================================
+# r7049+70: the supersession is gated on the superseding receipt's CONTENT, not on the paper's wording.
+import os as _os, re as _re
+_SUP = _os.path.join(_os.path.dirname(_os.path.abspath(__file__)),
+                     'P15_the_low_multipole_depth_gap_closes_and_two_defects_were_cancelling.py')
+_ss = open(_SUP, encoding='utf-8').read()
+print()
+print("=" * 72)
+print("SUPERSEDED DEPTHS -- named, r7049+70")
+print("=" * 72)
+_ok1 = bool(_re.search(r'CTL,\s*ADJ\s*=\s*\(67\.40,\s*0\.3150\),\s*\(68\.60,\s*0\.2973\)', _ss))
+_ok2 = 'def armA(' in _ss and 'lSampleBoost=50' in _ss
+_ok3 = abs(H0 - 67.4) < 1e-9 and abs(r0 - 5064.0) < 1e-9
+print(f"  [{'ok' if _ok3 else 'FAIL'}]  this file's depths are on the CONTROL background: H0 = {H0}, r0 = {r0}")
+print(f"  [{'ok' if _ok1 else 'FAIL'}]  the superseding receipt defines both backgrounds, control and adjudicated (68.60, 0.2973)")
+print(f"  [{'ok' if _ok2 else 'FAIL'}]  ...and its arm A is this file's CAMB transfer at this file's accuracy settings")
+assert _ok1 and _ok2 and _ok3, "the supersession named in the header no longer matches the receipts"
+print(f"  ** ell = 2..5 here: {d2:.3f} / {d3:.3f} / {ncr[4]/nc[4]:.3f} / {ncr[5]/nc[5]:.3f} on the control background.")
+print("     The corpus's 0.487 / 0.435 / 0.359 / 0.666 are arm A of")
+print("     `P15_the_low_multipole_depth_gap_closes_and_two_defects_were_cancelling`, on the adjudicated one. **")
+print("  *What this file carries for the corpus is the four-figure gate and the r0-drift table above.*")
