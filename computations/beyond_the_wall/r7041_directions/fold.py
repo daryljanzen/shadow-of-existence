@@ -46,6 +46,32 @@ def slice_range(log, lo):
     return lo, lo + W
 
 
+def covered_to(outdir, tag):
+    """the first k-index NOT yet covered by a banked, done slice -- walking abutting ranges from 0.
+
+    ⛭ ** THIS IS WHAT LETS A CONFIGURATION CHANGE SLICE WIDTH WITHOUT DISCARDING ANYTHING. **  Because the
+    fold checks the UNION of declared ranges rather than a uniform width, new narrower slices may simply
+    ABUT the ones already banked: `0:250`, `250:500`, then `500:562`, `562:624`, ... still tiles `[0, n)`
+    exactly, with no gap and no overlap.  *Without the range-reading fold this would have meant re-running
+    every banked slice of the configuration at the new width.*
+    """
+    got = []
+    for f in sorted(glob.glob(os.path.join(outdir, f'{tag}_k*.npz'))):
+        m = re.search(r'_k(\d+)\.npz$', os.path.basename(f))
+        if not m:
+            continue
+        lo = int(m.group(1))
+        if _done(os.path.join(outdir, f'{tag}_k{lo}.log')):
+            got.append(slice_range(os.path.join(outdir, f'{tag}_k{lo}.log'), lo))
+    end = 0
+    for lo, hi in sorted(got):
+        if lo == end:
+            end = hi
+        elif lo > end:
+            break                        # a gap: everything past it must still be run
+    return end
+
+
 def tiling(outdir, tag, n):
     """the slices present, and whether their declared ranges cover [0, n) exactly -- or None"""
     got = []

@@ -20,6 +20,8 @@
 #
 # ** IDEMPOTENT AND RESUMABLE at SLICE granularity, which is the whole point. **
 cd /home/user/shadow-of-existence/computations/beyond_the_wall || exit 1
+# ⌗ the snapshot runs from /tmp, so the helpers are addressed by their TRACKED location, not by $0
+HERE=/home/user/shadow-of-existence/computations/beyond_the_wall/r7041_directions
 # ⛔⛔ ** ONE LAUNCHER AT A TIME, AND THIS IS NOT A PRECAUTION -- IT HAPPENED. **
 # *Two instances of this script ran together at r7041+cc66.70, each with its own `xargs -P 4`, and both
 # picked up `inj_fixed_cr_nlos2240_k0`: TWO PROCESSES WRITING ONE `.npz`.  The cause was a kill-and-relaunch
@@ -37,8 +39,19 @@ export OMP_NUM_THREADS=1 OPENBLAS_NUM_THREADS=1 MKL_NUM_THREADS=1
 LCDM="ARM=lcdm LH0=67.410309 LOM=0.309826 WBH2=0.021966 NS=0.954248"
 CR="ARM=cr CRH0=68.581133 CROM=0.297209 ZSTART=3e7 LEAFSCALES=1 WBH2=0.021524 NS=0.997952"
 W=250
+# ⛔⛔ ** A SLICE IS DONE WHEN ITS OUTPUT EXISTS, NOT WHEN ITS LOG SAYS SO -- AND THIS ONE BIT HARD. **
+# *The first version wrote `__DONE__ rc=$?` unconditionally and skipped on that marker alone.  When a solver
+# was KILLED mid-run -- `rc=137`, SIGKILL, the memory pressure of four `nlos2240` slices on four cores -- the
+# launcher wrote `__DONE__ rc=137` over a slice that had produced NO `.npz`, and then skipped it forever.*
+#   ⇒ *** MEASURED: 16 slices were stuck exactly this way, every one of the 28 markers carrying rc=137. ***
+#   The launcher believed them finished while `fold.py` -- which requires the `.npz` -- counted them missing,
+#   so those configurations could never complete however long the sweep ran.  ** That is the disagreement
+#   `fold.py`'s docstring says must not exist, and it was in the launcher, not the fold. **
+#   ⌗ *A marker that records that a step was REACHED is not a record that it SUCCEEDED.*  The skip now needs
+#   the output, and a failed run leaves `__FAILED__` and no marker to skip on.
 run () { out=$1; tag=$2; shift 2
-  [ -s "$out/$tag.log" ] && grep -q '^__DONE__' "$out/$tag.log" && { echo "  skip $tag"; return 0; }
+  [ -s "$out/$tag.npz" ] && [ -s "$out/$tag.log" ] && grep -q '^__DONE__' "$out/$tag.log" \
+    && { echo "  skip $tag"; return 0; }
   env HIER=1 "$@" SAVE=$out/$tag.npz python3 -u ACOUSTIC_two_arm.py > $out/$tag.log 2>&1
   rc=$?
   # ⛭ ** A SLICE DECLARES ITS OWN EXTENT, so the fold can CHECK the tiling instead of predicting it. **
@@ -47,6 +60,11 @@ run () { out=$1; tag=$2; shift 2
   # would read as complete off a set that does not tile.  The width is a property of the run, so the run
   # is what should state it.*  ⌗ Slices banked before this line carry no range and the fold assumes the
   # historical 250 for those only, which is what they were run at.
+  if [ "$rc" -ne 0 ] || [ ! -s "$out/$tag.npz" ]; then
+    rm -f "$out/$tag.npz"
+    echo "__FAILED__ rc=$rc (no output banked; this slice will be retried)" >> $out/$tag.log
+    echo "  FAILED $tag rc=$rc $(date -u +%H:%M:%S)"; return 0
+  fi
   for _a in "$@"; do case "$_a" in KSLICE=*) echo "__SLICE__ ${_a#KSLICE=}" >> $out/$tag.log;; esac; done
   echo "__DONE__ rc=$rc" >> $out/$tag.log; echo "  done $tag $(date -u +%H:%M:%S)"; }
 export -f run; export D
@@ -114,18 +132,33 @@ CFG=$(printf '%s' "$KEEP" | sed '/^$/d')
 echo "  $DROP configuration(s) already complete unsliced and left alone"
 echo "--- PHASE 1: slice 0 of $(printf '%s\n' "$CFG" | wc -l) configurations, to read each mode count ---"
 printf '%s\n' "$CFG" | while IFS='|' read -r o t e; do
-  echo "$o ${t}_k0 $e KSLICE=0:$W"
+  # ⌗ phase 1 opens at the configuration's OWN width too, so an expensive configuration does not pay a
+  # 250-wide slice just to print its header.  *The width needs only `nlos`, which the grid already holds.*
+  _arm=lcdm; case "$t" in *_cr_*) _arm=cr;; esac
+  _w=$(python3 "$HERE/next_slices.py" --width "$_arm" "${t##*_}" 2>/dev/null || echo $W)
+  echo "$o ${t}_k0 $e KSLICE=0:$_w"
 done | xargs -P 4 -I{} bash -c 'run {}'
 echo "--- PHASE 2: the remaining slices, sized from what each slice-0 log reported ---"
+# ⛭⛭ ** THE REMAINING SLICES ARE ASKED FOR, NOT COMPUTED HERE, AND THEIR WIDTH IS PER CONFIGURATION. **
+# *This loop used to build `range(0, n, 250)` in bash, which is a SECOND definition of the tiling sitting
+# beside `fold.py`'s -- the copied-snippet defect that module exists to prevent.  `next_slices.py` answers
+# from `fold.py`'s own range reading, so there is one definition.*
+#   ⇒ ** And the width now matches the configuration's cost. **  A slice costs about `W x (eta points)`, so
+#   `nlos2240` gets 62 where `base` gets 250 -- measured need: `nlos2240` slices at 250 took 237 to 405 s,
+#   and when the restarts tightened to minutes, ONE slice landed in twenty-six minutes.  A unit of work
+#   longer than the window completes never, which is the same lesson that made this launcher sliced at all.
+#   ⌗ *Nothing banked is discarded: new narrow slices ABUT the wide ones already done, because the fold
+#   checks the union of declared ranges rather than assuming one width.*
 LIST=""
 while IFS='|' read -r o t e; do
-  n=$(grep -oE 'modes = [0-9]+' "$o/${t}_k0.log" 2>/dev/null | head -1 | grep -oE '[0-9]+')
-  [ -z "$n" ] && { echo "  ⚠ $t: slice 0 did not report a mode count -- its remaining slices are NOT queued"; continue; }
-  i=$W
-  while [ "$i" -lt "$n" ]; do
+  if ! grep -qE 'modes = [0-9]+' "$o/${t}_k0.log" 2>/dev/null; then
+    echo "  ⚠ $t: slice 0 did not report a mode count -- its remaining slices are NOT queued"; continue
+  fi
+  _arm=lcdm; case "$t" in *_cr_*) _arm=cr;; esac
+  _ct=${t##*_}
+  for r in $(python3 "$HERE/next_slices.py" "$o" "$t" "$_arm" "$_ct"); do
     LIST="$LIST
-$o ${t}_k$i $e KSLICE=$i:$((i+W))"
-    i=$((i+W))
+$o ${t}_k${r%%:*} $e KSLICE=$r"
   done
 done <<< "$CFG"
 printf '%s' "$LIST" | sed '/^$/d' | xargs -P 4 -I{} bash -c 'run {}'
