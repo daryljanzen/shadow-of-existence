@@ -5,7 +5,7 @@ kind: FORWARD
 
 *This file carries coordination and reporting. **The claims are in the receipts it names**, and anything
 below that is not receipted says so in terms. The newest reply is first. It answers `FOR_70.md`'s
-`r7067` (nothing ordered; a standing check invited), read at `origin/main` `2c4f0120`. The reply to `r7065`, then to `r7063`, then to `r7059` (`sec:lock`), then to `r7055` (the phase count), then to `r7049` (the floor), then to `r7043` (the citation sweep), then the replies to `r7037` (the corpus-wide sweep), `r7035` (the null harness), `r7033` (the three instruments with no noise model) and `r7029` (both items) follow it. The replies to `r7027` (`r7027+70.1`), `r7025` (`r7025+70.1`), `r7023` (`r7023+70.1`), `r7021` (`r7021+70.1`), `r7019` (`r7019+70.1`), `r7017` (`r7017+70.1`, ⑧), `r7013` (`r7013+70.1`), `r7011` (`PO-69`), `r7009` (`PO-68`), `r7007` (`PO-67`), `r7003` (`PO-65` ⓶, `PO-66` ⓶), `r6991` (`PO-64`),
+`r7069` order (build the transposition gate), read at `origin/main` `614a73fd`. The reply to `r7067`, then to `r7065`, then to `r7063`, then to `r7059` (`sec:lock`), then to `r7055` (the phase count), then to `r7049` (the floor), then to `r7043` (the citation sweep), then the replies to `r7037` (the corpus-wide sweep), `r7035` (the null harness), `r7033` (the three instruments with no noise model) and `r7029` (both items) follow it. The replies to `r7027` (`r7027+70.1`), `r7025` (`r7025+70.1`), `r7023` (`r7023+70.1`), `r7021` (`r7021+70.1`), `r7019` (`r7019+70.1`), `r7017` (`r7017+70.1`, ⑧), `r7013` (`r7013+70.1`), `r7011` (`PO-69`), `r7009` (`PO-68`), `r7007` (`PO-67`), `r7003` (`PO-65` ⓶, `PO-66` ⓶), `r6991` (`PO-64`),
 `r6977` (`r6977+70.1`), `r6975` (`r6975+70.1`), `r6959` (`r6961+70.x`), `r6939` (`r6931+70.3`) and `r6929`
 (`r6931+70.1`) follow it; all were gated and landed.*
 
@@ -13,6 +13,86 @@ below that is not receipted says so in terms. The newest reply is first. It answ
 declared in `check_revision_collisions._PARITY_BY_NODE` beside `cc66`, and that is the only gate line
 this revision touches. **The gate is yours; revert the line if you would rather declare the node
 yourself.***
+
+## ⚑ `r7069+70.1` — THE TRANSPOSITION GATE IS BUILT, RE-FINDS BOTH ITS CASES, AND ITS BASELINE HOLDS THIRTEEN SITES TO ROUTE
+
+**What was built:**
+- **The gate:** `corpus/check_marker_transposition.py`, registered in the fast CI list and run in about 40 s.
+- **The baseline:** `corpus/marker_transposition_baseline.tsv`, with **128 adjudicated flags**.
+- **The companion:** `computations/beyond_the_wall/r7069_70_transposition_gate/confirm_transpositions.py`, run on
+  demand, with its log committed beside it.
+- **Pre-registration:** its own commit, `4eae0867`.
+
+**Calibration, as a condition of passing.** Every run re-finds both motivating cases at their own commits via
+`git show`:
+- `200/63` and `19/27` at `a3705946`, where the carrier (r7008) is 93 lines away;
+- `−4/3` at `3f8fc14a`, where the carrier (r7065) is 158 lines away.
+
+**Window: ±200 lines**, the largest calibration distance plus a margin. **Both fail paths are proven:**
+- deleting a baseline line fails the gate as NEW;
+- a fixture line whose flag does not fire fails it as STALE ("remove it").
+
+**Your addition is how the baseline works.** Every line records the verdict and what was read, and a fixed site
+cannot stay behind: a stale line turns the gate red.
+
+⚑ **Two declared deviations from the pre-registration, each set from the calibration and printed on every run:**
+- **Rarity.** A number carried by more than 12 receipt sources is not distinctive. The calibration numbers are
+  carried by 3, 8 and 8; 1/2, 2/3 and 120 by 200 or more.
+- **Quotation.** A carrier's lines that quote a paper (`$`, `TEX`, LaTeX) are ignored, because a pin that quotes the
+  paper's number computes nothing.
+
+Before these two filters there were 834 flags; after them, 128. **A two-number rule was tried and rejected, because
+it misses −4/3**: at `3f8fc14a` the paper states only one number from r7065. *A cut that would have failed the
+calibration was not made.*
+
+⛔ **Table first, the outcome that costs your seat most: ② fires.** Thirteen sites are transposition candidates.
+- At each one, the receipt that computes the number is **in the paper**, cited in **another paragraph**.
+- None of the receipts closing the sentence carries the number, **in source or in a fresh run of each own-group
+  receipt**.
+
+| paper | the number(s) | closes under | computed by (cited at) |
+|---|---|---|---|
+| P15 | 1.1996 against 6/5; 0.8852, 1.0618 | `H0_acoustic_angle_and_seam` | `P15_the_shear_coefficient_derived_not_remembered` (l.691) |
+| P15 | χ² = 282.96 = 177.88 + 27.82 + 77.26; −0.760; 1.43 | `P15_the_contrast_excess_is_symmetric…` | `P15_the_model_difference_is_an_acoustic_contrast…` (l.968) |
+| P15 | height ratio 2.721 at cutoff 900 → 2.393 at 2400 | LOS + third-peak + two-arm | `C59_the_control_reproduces_camb…` (l.742) |
+| P15 | the computed comb 298.0 | `P15_two_arm_control_and_guard` | `P15_at_its_own_preferred_H0…` (l.785) and the third-peak receipt |
+| P15 | 10.8% of the gap into the diffusion length | `Q1_a_stated_tolerance…` | `C8_diffusion_length` (l.529) |
+| P15 | \|Δη\| = 3.32α, fixed by Λ alone | `P15_the_collapse_leg_is_scale_invariant` | `P15_the_geometry_transmits_no_parameters` (l.2031) |
+| P16 | the crossing at 7.06 Gyr | `CROSSING_no_made_asymmetry` | `P16_nariai_welds` (l.269) |
+| P16 | isocurvature ℓ₁ = 294 | `P15_the_transfers_running…` | `P16_the_adiabatic_premise_is_demanded…` (l.614) |
+| P16 | REACLIB D/H 2.5671e-5, ⁷Li/H 4.4611e-10 | `P16_CR_makes_no_Neff_prediction…` | `P16_validate_bbn` (l.704) |
+| P16 | Σ = (3/8)M²\|σ\|³h | `P16_theory_error_and_likelihood` | `P16_the_leading_order_interior_is_adequate` (l.654) |
+| P03 | r₀ − r₀³ = (ϱ − ¾ϱ³) sin w + … | `P03_dimension_collapse` | `P03_triple_angle_gnomonic` (l.559) |
+| P17 | reducibility at 2M = 3/8 | `P17_power_of_a_point` | `T50_the_imaginary_route…` (l.724) |
+| P14 | 2M = (1/8)(1 − cos 4w) at D = 5 | `P14_odd_D_contains_its_own_image` | `P14_dimension_from_flavour` (l.661) |
+
+*These are **candidates**, and the call is yours.* A paragraph may cite the receipt for its argument and rely on a
+number restated from the one cited earlier; that is not a mis-citation, and it is exactly the judgement the gate
+cannot make. **When a marker moves, its lines go stale and must leave the baseline.** A site you judge
+**intentional** is re-adjudicated in the baseline instead, with your reason.
+
+**The other 103 flags are adjudicated as not transpositions, each with its reason:**
+
+| verdict | lines |
+|---|---|
+| the own group prints it at run time (source-only blind spot) | 46 |
+| the carrier restates it | 19 |
+| external datum (the sky's values, Planck, Ω_Λ, 1/16πG, group orders) | 16 |
+| configuration value | 10 |
+| the carrier holds a copied table | 5 |
+| coincidence | 4 |
+| the carrier holds it as an input, or it is used as an input | 3 |
+
+⌗ **One side note, outside the gate's shape.** P15's exact/WKB ratios (0.926, 0.913, 0.901, 0.891, 0.889 at
+ℓ = 2, 3, 5, 15, 40):
+- they close under `P15_verify_geometry`, and its fresh run does not print them;
+- the only carrier found is a **hard-coded dict** in `P15_the_low_ell_minimum_is_at_ell_four`;
+- `storyboard_receipts/SP_S5_the_wkb_residual_is_an_offset` carries 0.926, but I have not confirmed that it computes
+  them.
+
+**This one is possibly a (iii), no receipt computes them, and is routed as such.**
+
+**Companion confirmation: in flight.** The confirmer is re-running every candidate's own group and carrier, and C59 and the CAMB carriers take about 25 min. Its log lands in the next push on this branch, and the candidate table is re-adjudicated if any line comes back NOT CONFIRMED.
 
 ## ⌗ `r7067+70.1` — PROPOSAL: A STANDING CHECK FOR THE MISPLACED MARKER, TRANSPOSITION BY NAME
 
