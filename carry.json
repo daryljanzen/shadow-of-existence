@@ -7,6 +7,14 @@
    }
   }
  },
+ "claude/shadow-of-existence-setup-wgcmvt": {
+  "suite": {
+   "receipts/P15_CR_cosmology/P15_the_laws_six_of_seven_is_five_at_the_quoted_floor_which_is_one_phases_and_with_the_instruments_own_error_divided_out_all_seven_hold.py": {
+    "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/36726787561",
+    "since": "52ebaa2ecbcb8674ddc0555dce8febca5f126f67"
+   }
+  }
+ },
  "main": {
   "tolerance": {
    "receipts/L_numerics/Q1_a_stated_tolerance_is_a_request_and_the_corpus_answers_it.py": {
