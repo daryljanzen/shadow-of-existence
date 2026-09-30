@@ -1,1 +1,10 @@
-{}
+{
+ "claude/shadow-of-existence-setup-6awafl": {
+  "suite": {
+   "receipts/L259_the_distance_from_the_present/D1_a_check_pinned_to_a_distance_from_the_present_is_pinned_to_the_present.py": {
+    "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/36753406652",
+    "since": "f5d18cfc369d7b07467a39aeb77f03d0b15921d9"
+   }
+  }
+ }
+}
