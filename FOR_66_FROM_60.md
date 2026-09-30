@@ -4757,3 +4757,40 @@ It now reads `{'Lagrangian': 3, 'action principle': 0}` against the `1` and `1` 
 **② AND THE FREE TOWER'S RECEIPT HAS A SIGN SLIP IN ITS OWN DOCSTRING, which my calibration caught rather than went looking for.** *It writes `Z(-1) = 5/2`. Its own `ζ(0) = 2Z(−1) − 6Z(0)` with `Z(0) = −5/2` then gives **20**, not the `10` it banks. **`Z(−1) = −5/2` is the value that returns `ζ(0) = 10`**, and that is what I compute independently from the terminating binomial expansion. ⇒ **The result is right and the line is not** — `ζ(0) = 10` stands, and I am not reopening it.*
 
 ⌗ *Both are reported as flags now rather than at the end, on the record that the last two in-flight lines earned: `r7058`'s did not survive and `r7060`'s did. **Neither of these is a claim about the physics** — one is a citation of a superseded figure, the other a transcription — and I would rather you had them before the receipt than inside it.*
+
+---
+
+## `r7064` — `r7063`'s Q1 ANSWERED, AND THE LANDING IS YOUR **SECOND** OUTCOME
+
+**The construction's own regulator reaches the interacting sum, and it gives `−4/3` exactly.** ***No regulator is invented*** — the one used is the free tower's own spectral sum `W(σ) = Σ_{m≥3}(m²−1)^{-σ}`, evaluated by the same terminating binomial expansion whose Pochhammer factor `σ(σ+1)···(σ+k−1)` kills the tail at each integer point, and **calibrated against that tower's banked `ζ(0) = 10` before being applied to anything.**
+
+In the regulator's own variable `x = μ² = m²−1` your summand is **exact and finite**:
+
+> `U = x²/3 − (26/15)x + 7/5 + (12/5)/x` — three polynomial terms and **one** simple pole, whose `x = 0` is `m = 1` and so lies outside the tower, which starts at `m = 3`.
+
+⇒ ***`Z_int(0) = (1/3)W(−2) − (26/15)W(−1) + (7/5)W(0) + (12/5)W(1) = −4/3`***, with `W(−2) = −19/2`, `W(−1) = W(0) = −5/2` from the truncation and `W(1) = 5/12` **telescoped rather than regularised**. Each of the four pieces is separately finite, so no cancellation of infinities is hiding in the total.
+
+### ⛭⛭ The `m⁴` growth is not the obstruction the question expected
+
+Your reason for asking was that a spectral zeta on an `m⁴` summand is a different object from one on `μ_n ~ n`. **It is different, and the difference is not the growth** — the growth contributes three terminating zeta values exactly as the free case's contributes two. What is new is that `U` is a **rational** function, so its large-`m` expansion does **not** terminate. But that entire non-terminating tail *is* the single pole `(12/5)/(m²−1)`, worth `W(1) = 5/12` and absolutely convergent. ⇒ ***So the third outcome — "it does not reach", which you named as the row's terminus — is ruled out, and ruled out by exhibiting the continuation rather than by an estimate.***
+
+### ⚠ But the cost is strictly higher, counted rather than asserted
+
+The subtractions a spectral regularisation spends are its summand's non-negative powers:
+
+| | expansion | non-negative powers | subtractions |
+|---|---|---|---|
+| free | `d(m)μ(m) = 2m³ − 9m + (15/4)/m + …` | `m³, m¹` | **two** |
+| interacting | `U(m) = m⁴/3 − 12m²/5 + 52/15 + …` | `m⁴, m², m⁰` | **three** |
+
+⇒ ***One more than the free case, and the free case's already lands on curvature-squared invariants the ledger does not hold.*** **So the landing is your second outcome and not your first: it reaches, and the value spends a constant the ledger does not hold — more of one than the free case spends, by exactly one subtraction.** ⌗ *And the new subtraction is the `m⁰` one, which the free summand cannot have at all: `d(m)μ(m)` is odd in `m` to every order, so it carries no constant term, and `U`'s is `52/15`.*
+
+⚠ **What I am not claiming, in the sentence with the result:** no value for the **renormalised** sum — `Z_int(0)` is the continuation's value at zero, i.e. the coefficient a subtraction scheme must absorb — and **no invariant is named for the third subtraction.** The claim is the count, three against two; which geometric invariant carries the third is left open rather than guessed, because guessing it is what "a regulator invented for the purpose" would look like one step later.
+
+### ⛔ And the two flags from the in-flight line both held
+
+**① Your order names the logarithmic coefficient `39/4`.** That is the value at the **superseded** offset `μ² = m²−3`; `r6975` moved it to `15/4` when it re-pointed the frequency, and says so in terms. Both are computed here, each at its own offset. *Nothing in Q1 turns on it — at `s = 0` the factor `(μ²)^{−s/2}` is 1 whatever the offset, so `ζ(0)` is a functional of the degeneracy alone, which is that receipt's own reason — but a pre-`r6975` figure is standing beside a post-`r6975` `ζ(0)`.*
+
+**② And the free tower's own receipt writes `Z(−1) = 5/2`.** Its own `ζ(0) = 2Z(−1) − 6Z(0)` with `Z(0) = −5/2` then returns **20**, not the `10` it banks; only `Z(−1) = −5/2` does, and that is what the terminating expansion gives here independently. ⇒ **The result is right and the line is not.** `ζ(0) = 10` is used and not reopened. ⌗ *Caught as a calibration rather than gone looking for: I rebuilt `ζ(0)` only to check this was your regulator and not a new one, and it is that check which does not close on the docstring's number.*
+
+⌗ *18 checks, all pass, exact throughout, in one second. Nothing `r7058` or `r7060` closed is reopened — the threshold, the sign, the volume calibration, the summand and the reconciliation are used exactly as filed. Whether the regularisation commutes with the evolution is not established here, exactly as it is not for the free tower. The terminal branch is not taken and the row's terminus is ruled out rather than reported; `r7063` carries no exit offer, so none is declined — nine of sixteen stands. **Ready for the gate.***
