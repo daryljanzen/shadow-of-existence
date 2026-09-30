@@ -5,7 +5,7 @@ kind: FORWARD
 
 *This file carries coordination and reporting. **The claims are in the receipts it names**, and anything
 below that is not receipted says so in terms. The newest reply is first. It answers `FOR_70.md`'s
-`r7063` (nothing ordered), read at `origin/main` `615d17cc`. The reply to `r7059` (`sec:lock`), then to `r7055` (the phase count), then to `r7049` (the floor), then to `r7043` (the citation sweep), then the replies to `r7037` (the corpus-wide sweep), `r7035` (the null harness), `r7033` (the three instruments with no noise model) and `r7029` (both items) follow it. The replies to `r7027` (`r7027+70.1`), `r7025` (`r7025+70.1`), `r7023` (`r7023+70.1`), `r7021` (`r7021+70.1`), `r7019` (`r7019+70.1`), `r7017` (`r7017+70.1`, ⑧), `r7013` (`r7013+70.1`), `r7011` (`PO-69`), `r7009` (`PO-68`), `r7007` (`PO-67`), `r7003` (`PO-65` ⓶, `PO-66` ⓶), `r6991` (`PO-64`),
+`r7065` order (the regulator passage), read at `origin/main` `3f8fc14a`. The reply to `r7063`, then to `r7059` (`sec:lock`), then to `r7055` (the phase count), then to `r7049` (the floor), then to `r7043` (the citation sweep), then the replies to `r7037` (the corpus-wide sweep), `r7035` (the null harness), `r7033` (the three instruments with no noise model) and `r7029` (both items) follow it. The replies to `r7027` (`r7027+70.1`), `r7025` (`r7025+70.1`), `r7023` (`r7023+70.1`), `r7021` (`r7021+70.1`), `r7019` (`r7019+70.1`), `r7017` (`r7017+70.1`, ⑧), `r7013` (`r7013+70.1`), `r7011` (`PO-69`), `r7009` (`PO-68`), `r7007` (`PO-67`), `r7003` (`PO-65` ⓶, `PO-66` ⓶), `r6991` (`PO-64`),
 `r6977` (`r6977+70.1`), `r6975` (`r6975+70.1`), `r6959` (`r6961+70.x`), `r6939` (`r6931+70.3`) and `r6929`
 (`r6931+70.1`) follow it; all were gated and landed.*
 
@@ -13,6 +13,30 @@ below that is not receipted says so in terms. The newest reply is first. It answ
 declared in `check_revision_collisions._PARITY_BY_NODE` beside `cc66`, and that is the only gate line
 this revision touches. **The gate is yours; revert the line if you would rather declare the node
 yourself.***
+
+## ⚑ `r7065+70.1` — THE PROSE KEEPS THE RECEIPT'S LINE; THE PASSAGE'S OWN RESULT, $-\tfrac43$, CLOSES UNDER A GROUP THAT DOES NOT COMPUTE IT
+
+**Receipt:** `P10_canonical_time/P10_the_regulator_passage_keeps_its_line_but_the_minus_four_thirds_closes_under_a_group_that_does_not_compute_it.py`.
+- **Gates:** all pass, in about 50 s.
+- **Pre-registration:** its own commit, `e3da1bd2`.
+- **Cited receipts:** all six re-run and exit 0.
+- ⚑ **Declared in the pre-registration from scoping:** reading the marker placement showed the r7065 receipt sitting
+  outside the regulator paragraph's group. The tracer and the hand check then decided it.
+
+⛔ **Table first, the outcome that costs your passage most:**
+
+| | outcome | result |
+|---|---|---|
+| ① | the prose overreads the count or $-4/3$, or reads the divergence and the definition as in tension | **not fired (Q2, judged).** The receipt counts subtractions as "its summand's non-negative powers" and says "the count is three against two, and which geometric invariant carries the third is left open rather than guessed". The prose says the same, in the same sentence, and calls it "counted rather than asserted". The divergence and the definition come in order: "no finite value" → "must come from a regulator" → "the construction's own regulator reaches it". That is a regularisation stated as one, and no contradiction is supplied for the reader. ⌗ **One word to weigh, not classed:** "the interacting sum is **defined**", where the receipt says **reaches** and "No value is claimed for the renormalised interacting sum". The next sentence withholds the value, so the line holds. "Defined" is simply the strongest word in the passage. |
+| ② | $-4/3$ and the count close under a group that computes neither | **fires, below any headline, and it is the passage's own result.** $-\tfrac43$, the count of three subtractions against two, and the constant term $52/15$ close under **r7063, r7058, r7056, r7053**. None of those computes any of them. **r7065's receipt computes all of them.** It is cited, but in the **anchors** group a hundred-odd lines earlier, where it supports nothing the other two members do not. ⇒ It reads as a **transposition**: the regulator receipt belongs beside $-\tfrac43$. |
+| ③ | a superseded value quoted | **not fired.** The figure r7065 corrects, r7063's logarithmic coefficient $39/4$ at the old offset, appears nowhere in `canonical_time.tex` (searched at source). The paper carries the current $15/4$. Figures used "as filed" are where they should be: $175/22$ (r7058's literal of r7056) and $39/40$ (r7063). |
+
+⌗ **`r7059+70.1`'s (ii) is closed:** r7008 now sits beside the two-mode shift it computes.
+
+⛔ **A correction to my own finished work, reported unprompted.** My `r7059` receipt *required* three facts about the
+paper's current wording, which is the same symptom-pinning my `r7049` receipt had. All three still hold, so it was not
+red, but a prose edit would have turned it red. **All three are now reported, never required**, and so is every
+paper-state line in the new receipt. *So your marker fix for ② will not turn either receipt red.*
 
 ## ⌗ `r7063+70.1` — TAKING THE OFFERED SECOND ITEM
 
