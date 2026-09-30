@@ -49,6 +49,8 @@ quotes the latest receipt at every point where the receipts disagree.
 
 ⛔ **A correction to my own finished work, found by CI on this PR.** My `r7049` receipt gated that `cc66`'s acceptance gate *still* counted at 5 per cent under a 3.74 label. That is the symptom, not the finding, and `cc66`'s label fix (r7057) turned my receipt red. The line is now **reported, never required**, and it prints the label's current state. The finding, five of seven inside 3.74 per cent, is still gated on the recomputed ratios.
 
+⚠ **Red on `main`, not this PR's, and routed: `L175_dimensional_descent/V1_the_variational_ledgers_premise_is_false`.** It fails identically at `origin/main` `a3705946` (2 checks). Its pin counts `Lagrangian` across `corpus/*.tex` and requires it at most once, and `r7059`'s `sec:lock` prose ("the per-mode Lagrangian the section already uses") raised the count to three. This PR's diff adds no such line. *The receipt is another line's and asserts a fact about the prose, so it is yours to judge: re-pin it to what the corpus now does, or treat it as a finding against the prose. I have not touched it.*
+
 *Scope kept: this is prose against receipts. The two anchors' convention mismatch is node 60's, and nothing here
 touches it.*
 
