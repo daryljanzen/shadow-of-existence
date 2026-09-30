@@ -44,3 +44,18 @@ A fourth control is `P15_the_exact_transmission_ratios_are_recomputed_and_the_of
 - The four intentional sites are run because they are among the 25, and **not re-adjudicated**.
 - The 45 "own prints" lines are out of scope.
 - The scratch copies are made outside `receipts/`, and no receipt is edited.
+
+---
+
+## ⚠ DECLARED AFTER THE FIRST CALIBRATION RUN, BEFORE ANY OF THE 25 WAS RUN
+
+*The first calibration run **failed** on two of the four controls, so by the condition above the instrument was not built. I traced both failures to defects in the instrument, not in the receipts, and made three changes. **They were made after seeing the controls, and they are declared as such.** The 25 were not run until the calibration held.*
+
+1. **A pin in a dependency is not a held value.** `P16_validate_bbn` came out INCONCLUSIVE because `bbn_network.py` holds 2.5671. But it holds it on an `assert … / 2.5671e-05 - 1) < 0.01` line, which is a pin. The dependency check now counts only definitions, not comments and not assert, `check(`, `report(` or `ok &=` lines.
+2. **Accumulator-style checks.** A receipt whose `check()` gathers failures and exits at the end leaves no traceback line at the literal. DERIVED-AND-PINNED now also applies when the sentinel run prints a **new** failure line, one absent from the baseline output, that carries a sentinel value. For example, the exact-transmission control prints `[FAIL] ell = 2: ratio 0.9255 reproduces the paragraph's 1.379`. That control is now DERIVED-AND-PINNED, which is correct.
+3. **A second, last-digit sentinel.** Under the 37% sentinel, `P15_the_low_ell_minimum`'s held dict fails `assert spread < 0.05`, a check of the held values against each other. The test now also changes the literal by one unit in its last place, which is the paper's own precision. There is one new class:
+   - **HELD-BUT-CONSTRAINED**: the last-digit change exits 0 with the number gone, and only the large change fails, at a check away from the literal. The number is written in. Something fails if it is grossly wrong, but nothing fails if it is wrong at the precision the paper states.
+   - The held controls accept HELD or HELD-BUT-CONSTRAINED. The low-ℓ dict lands in the new class; `nariai_welds` stays HELD.
+   - Fractions have no last place, so the large run stands alone for them.
+
+**The rerun of the calibration:** 2.5671 DERIVED, 4.4611 DERIVED, low-ℓ dict HELD-BUT-CONSTRAINED, 7.06 HELD, and the exact-transmission control DERIVED-AND-PINNED. **All the conditions hold.**
