@@ -159,8 +159,10 @@ check("⛭ ② inside the QUOTED 3.74 per cent: FIVE of seven on each arm, not s
       n374 == {'lcdm': 5, 'cr': 5}, f"lcdm {n374['lcdm']}/7, cr {n374['cr']}/7")
 check("     ...and six of seven is the count at 5 per cent, which is the threshold the gate's code uses",
       n5 == {'lcdm': 6, 'cr': 6}, f"lcdm {n5['lcdm']}/7, cr {n5['cr']}/7")
-check("     the gate counts at 5 per cent while its label names 3.74 -- read from its source",
-      'abs(r[2] - 1) < 0.05' in src and 'accuracy on a known input' in src)
+_mislabel = 'abs(r[2] - 1) < 0.05' in src and 'accuracy on a known input' in src
+print("    ⌗ REPORTED, never required: the gate's label against its count, in `cc66`'s source now -- "
+      + ("still counting at 5 per cent under the 3.74 label" if _mislabel
+         else "the label no longer names 3.74 against a 5 per cent count (corrected there)"))
 
 print()
 print("  " + "=" * 96)
