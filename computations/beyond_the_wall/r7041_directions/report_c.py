@@ -88,8 +88,16 @@ for inj in INJ:
         step = abs(have[-1][1] - have[-2][1]) / abs(have[-2][1])
         mono = all((have[j + 1][1] - have[j][1]) * (have[1][1] - have[0][1]) > 0
                    for j in range(len(have) - 1))
+        # ⛔ ** TWO POINTS IS NOT A CONVERGED SEQUENCE AND THE FIRST VERSION OF THIS SAID IT WAS. **
+        # *The pre-registration fixed it in advance -- "a sequence that has not turned over is not
+        # converged whatever its last step" -- and monotonicity is UNDEFINED on two points, so the
+        # `mono` branch could not fire and a two-point axis fell through to "converged at the floor".*
+        #   ⌗ A two-point axis with a small step is the cheapest way to look converged without being
+        #   it: one refinement that happens to land close says nothing about where the sequence goes.
         verdict = ("⛔ UNCONVERGED -- last step above the floor" if step > FLOOR else
-                   "⚠ step under the floor but the sequence has NOT turned over" if mono and len(have) > 2
+                   "⌗ TWO POINTS ONLY -- inside the floor, but a two-point axis cannot turn over "
+                   "and is not reported as converged" if len(have) < 3 else
+                   "⚠ step under the floor but the sequence has NOT turned over" if mono
                    else "✔ converged at the floor")
         print(f"    {name}")
         print(f"      {txt}")
