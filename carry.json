@@ -20,12 +20,6 @@
   }
  },
  "claude/shadow-of-existence-setup-wgcmvt": {
-  "suite": {
-   "receipts/L271_the_statistics_bake/S2_the_systematics_budget_is_absent_by_name_and_present_as_a_matched_control.py": {
-    "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/36642147609",
-    "since": "3aa58ef1a1ddfd77e5b914fa594b6d3c26757cfb"
-   }
-  },
   "tolerance": {
    "receipts/L_numerics/Q1_a_stated_tolerance_is_a_request_and_the_corpus_answers_it.py": {
     "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/36642147609",
