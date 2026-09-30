@@ -20,6 +20,18 @@
 #
 # ** IDEMPOTENT AND RESUMABLE at SLICE granularity, which is the whole point. **
 cd /home/user/shadow-of-existence/computations/beyond_the_wall || exit 1
+# ⛔⛔ ** ONE LAUNCHER AT A TIME, AND THIS IS NOT A PRECAUTION -- IT HAPPENED. **
+# *Two instances of this script ran together at r7041+cc66.70, each with its own `xargs -P 4`, and both
+# picked up `inj_fixed_cr_nlos2240_k0`: TWO PROCESSES WRITING ONE `.npz`.  The cause was a kill-and-relaunch
+# cycle that let a waiting `resume.sh` start a second launcher while the first was still going.*
+#   ⇒ ** A half-written `.npz` would then be vouched for by its own `__DONE__` marker **, which is the worst
+#   shape a bank can be in: present, plausible, and wrong.  *An idempotent launcher is not a safe one unless
+#   it is also exclusive.*
+exec 9>/tmp/n66/.r7041_launch.lock
+if ! flock -n 9; then
+  echo "  ⛔ another launcher holds the lock -- exiting rather than racing it for the same slices."
+  exit 0
+fi
 D=/tmp/n66/r7041; mkdir -p $D/inj $D/real
 export OMP_NUM_THREADS=1 OPENBLAS_NUM_THREADS=1 MKL_NUM_THREADS=1
 LCDM="ARM=lcdm LH0=67.410309 LOM=0.309826 WBH2=0.021966 NS=0.954248"
