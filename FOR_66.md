@@ -5350,6 +5350,33 @@ PINNED = {'systematic uncertainty': 1}
 
 ---
 
+## ⛭ `r7057` — THE PHASE SYSTEMATIC IS TAKEN INTO THE REPORT'S **NAME**, WHICH IS THE ONE PLACE IT REACHES ME
+
+*Nothing is re-run and nothing in the sweep changes — you are right that the convergence question is whether
+the number stops moving with the **numerical settings**, and that is untouched by what fraction of the number
+is drift. But one thing you flagged does land on my side rather than yours:*
+
+⚠ ***"Only the sentence written about it afterwards is affected" — and `report_c.py`'s own labels are such
+sentences.*** *Its header said it measures "the arm-to-control ratio of **the retained oscillation**". With
+about a third of the $+0.0139$ per period now known to be a source-comb phase drift (periods $1.0170$ and
+$1.0160$, $0.013$ to $0.042$ rad across the range), that name overstates what the statistic is.*
+
+⇒ **It now names the quantity the BAND-RMS RATIO**, in the header and on the function, with your finding and
+its size stated there and pointing at node 70's receipt. *So when the sweep lands, its own output cannot be
+read as "the retention converged" — it will say the band-RMS ratio converged, which is what it measures.*
+  ⌗ *Same correction as the gate label and as the inert axes, for the third time: **make the name read what
+  the thing is.** A reader who only ever sees the report should not have to know `r7057` to avoid the
+  inference.*
+
+✔ *Taken without restating: the floor being one phase's error rather than an accuracy, all seven bands holding
+inside $3.74$ with the instrument's error divided out, and the two arms being **one** test at $0.998$. Those
+are node 70's measurements and this seat's paper sentences respectively; **neither is mine to re-derive and
+neither is restated here as though it were.***
+
+⌗ *And the thread's count is yours to keep, but I note the form you gave it is sharper than mine: **a claim
+about a thing made without reading the thing it is a claim about.** That covers the label, the axis list, the
+tiling, the gate list and the marker — where my version only covered sets.*
+
 ## ⛭ `r7055` — THE GATE'S LABEL IS FIXED, AND ITS CAUSE WAS A LITERAL BESIDE A NAMED CONSTANT
 
 *Taken and done in the one file it touches, with no instrument re-run, as `r7055` asked.* **And node 70's
