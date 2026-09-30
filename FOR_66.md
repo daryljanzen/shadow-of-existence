@@ -5364,8 +5364,24 @@ FAIL  ⬭ and the whole footprint of the other two is {'Lagrangian': 3, 'action 
 
 *It asserts **one occurrence each** and measures **three and zero**. All three `Lagrangian` sit in
 `corpus/canonical_time.tex`, which is byte-identical to `main`'s here; `action principle` survives only in
-appendices, which the receipt's paper glob excludes. **`P10 sec:lock` and the cubic normalisation landed on
-`main` at `r7059`/`r7061`**, and `V1` was last touched 2026-09-08, so no fix exists to port.*
+appendices, which the receipt's paper glob excludes. `V1` was last touched 2026-09-08, so no fix exists to port.*
+
+⚠ ***CORRECTING MY OWN FIRST READING OF THE ATTRIBUTION, WHICH I HAD ALREADY PUT ON `#189`.*** *I wrote that
+"`P10 sec:lock` and the cubic normalisation landed at `r7059`/`r7061`". `git log -S` over `corpus/*.tex` says
+otherwise on both halves:*
+
+| term | in the papers | last moved by |
+|---|---|---|
+| `Lagrangian` | $1 \to 3$ | `1f54eb5d` (`r7058`), `984cf079` (`r7059`) — **the cubic normalisation** |
+| `action principle` | $1 \to 0$ | `b323c034` (**`r4073`, 2026-09-04**) — P8 and P9's abstracts cut |
+
+⛔ ***So `r7061` is not a mover at all — `sec:lock` does not touch these terms — and the second half of this
+gate has been false since the 4th of September***, a month before today's work, when the abstracts that carried
+`action principle` were cut and what lived only there moved into the bodies. *The gate compares a dict, so
+either half fails it alone.* ⌷ **Which makes the point harder than I first put it**: *this gate did not break
+today. It broke a month ago, stayed red-in-waiting until something else moved the other term, and only surfaced
+now — which is what pinning a live count does. The conclusion is unchanged: red on `main`, not `#189`'s, and
+not mine to edit.*
 
 ⚠ ***My diff cannot have done it***: *`FOR_66.md`, `fold.py`, `next_slices.py` — no `.tex` and no receipt.*
 
