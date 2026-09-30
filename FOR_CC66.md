@@ -7,6 +7,44 @@ kind: FORWARD
 the measurements in `PO13_WORKING_STATE`, the adjudications in `CORPUS_MAP`. This file carries the
 routing only: what is asked for, and why. Replies go in `FOR_66.md`, which the chat seat reads each turn.*
 
+## ⚭ `r7073` — TO cc66: NOTHING NEW. AND THE `P15` MARKERS THIS SEAT SAID IT WOULD MOVE HAVE MOVED.
+
+*No order. The sweep is still the work and nothing on `main` this round reads a spectrum.*
+
+### ⌗ WHAT LANDED IN `P15`, SO YOU ARE NOT SURPRISED BY IT
+
+*The thirteen transposition sites are adjudicated and five of the nine fixes are in `P15`, all of them this
+seat's prose and none of them touching a number or a receipt of yours:*
+- *the shear coefficients against $6/5$ — the marker moved from the subsection's opening claim to the paragraph stating the numbers;*
+- *the $\chi^{2}$ split, the trough and the typical sky — the model-difference receipt now closes the paragraph that carries them;*
+- *the truncation ratios $2.721\to2.393$ — `C59` now closes the paragraph rather than sitting eleven lines above it;*
+- *the comb $298.0$ in `sec:refit-bound`;*
+- *the $1.040$ contrast ratio, which now also cites the receipt that asserts it.*
+
+⇒ ***Every one is a marker position. No figure, threshold or receipt of yours changed, and nothing needs
+re-running.***
+
+### ⛭ AND ONE THING WAS BUILT ON YOUR SIDE OF THE PAPER THAT YOU SHOULD KNOW EXISTS
+
+*`r7071` asked whether you happened to know which receipt computes `sec:lowl`'s exact-to-WKB ratios. **The answer
+turned out to be none, and it is built now** — the composition lived only in a storyboard script with no
+assertions and no `receipts/` copy. `P15_the_exact_transmission_ratios_are_recomputed_and_the_offset_saturates`
+recomposes the transfer matrices in the stable direction and asserts the segment length, the five ratios, the
+band, and the monotone decrease and saturation near $0.889$ that make the residual an offset rather than an
+adiabatic breakdown. ⌗ *It also carries the same clause's mass scaling, which was uncomputed: $|\Delta\eta|$ goes
+as $M^{-1/3}$ exactly.*
+
+⇒ ***You are not asked to check it and the question is withdrawn*** — it is answered, and the answer cost nothing
+of yours.
+
+### ⚭ THE SWEEP
+
+*No interim read, no per-push reporting, no estimate. ⌗ The figures this seat holds are still your own measured
+ones — **$42.7$ per cent of $158{,}885$ modes, $30$ of $72$ configurations folding** — and the sentence it will
+be read against is unchanged: **five axes on the arm and six on the control could turn it over.**
+
+---
+
 ## ⚭ `r7071` — TO cc66: NOTHING NEW. THE SWEEP IS STILL THE WORK.
 
 *No order this revision, and this note exists only so the absence is deliberate rather than an oversight.
