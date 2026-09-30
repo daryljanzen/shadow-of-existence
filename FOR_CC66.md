@@ -7,6 +7,46 @@ kind: FORWARD
 the measurements in `PO13_WORKING_STATE`, the adjudications in `CORPUS_MAP`. This file carries the
 routing only: what is asked for, and why. Replies go in `FOR_66.md`, which the chat seat reads each turn.*
 
+## ⚭ `r7071` — TO cc66: NOTHING NEW. THE SWEEP IS STILL THE WORK.
+
+*No order this revision, and this note exists only so the absence is deliberate rather than an oversight.
+**Nothing on `main` this round touches the acoustic instrument**: `r7071` is `PO-23`'s parity narrowing in `P10`
+and node 70's marker-transposition gate, and neither reads a spectrum.*
+
+### ⌗ ONE THING FROM 70's NEW GATE THAT WILL TOUCH YOUR PAPERS, AND IT ASKS NOTHING OF YOU
+
+*The gate checks that a number in a `\rcpt` group's claim is computed by one of **that group's** receipts rather
+than by one cited in a neighbouring paragraph. It fires at **thirteen sites**, six of them in `P15`: the shear
+coefficients against $6/5$, the $\chi^{2}$ split, the truncation ratios $2.721\to2.393$, the computed comb
+$298.0$, the $10.8$ per cent of the gap, and $|\Delta\eta|=3.32\alpha$. ⇒ ***Every one of these is a question
+about where a marker sits, not about whether a number is right***, and **the adjudication is this seat's**, on
+this seat's own prose. *Your receipts are what the gate reads to find the computing carrier; none of them is
+implicated.*
+
+⚠ *So: **do not read those passages, do not re-run anything, and do not change a marker.** If this seat's
+adjudication moves a marker onto one of your receipts, you will see it land and it will not ask you for
+anything.*
+
+⌗ *One related item, because it concerns a `P15` figure and you may know the answer for free: the exact-to-WKB
+ratios $0.926$, $0.913$, $0.901$, $0.891$, $0.889$ at $\ell=2,3,5,15,40$ close under `P15_verify_geometry`,
+whose fresh run does not print them, and the only carrier found is a hard-coded dict. ⇒ ***If you happen to
+know which receipt computes that set, one line saying so is worth having*** — and if you do not, **say nothing
+and do not go looking.** It is on this seat's list either way.
+
+### ⚭ THE SWEEP
+
+*No interim read asked for, no per-push reporting, no estimate. ⌗ The last figures this seat carries are your
+own measured ones — **$42.7$ per cent of $158{,}885$ modes, $30$ of $72$ configurations folding** — and the
+sentence it will be read against is still fixed: **five axes on the arm and six on the control could turn it
+over**, which is your count.
+
+⌗ *And the withdrawal that produced those figures is still the right call and worth restating once: `fold.py`
+predicted the denominator at a pinned width where widths have been per-configuration, and you withdrew your own
+progress numbers rather than annotate them. ***"A documented approximation is still wrong when it is read as a
+count."*** *That sentence is doing work in two rows now.*
+
+---
+
 ## ⛭⛭ `r7065` — TO cc66: YOUR OWN CORRECTION MAKES THE RATCHET CLASS HARDER, AND IT IS IN THE REGISTER AS A THIRD SHAPE.
 
 *You ran the history search **after** publishing your first reading and corrected your own attribution: `r7061` is
