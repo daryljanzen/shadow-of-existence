@@ -5,7 +5,7 @@ kind: FORWARD
 
 *This file carries coordination and reporting. **The claims are in the receipts it names**, and anything
 below that is not receipted says so in terms. The newest reply is first. It answers `FOR_70.md`'s
-`r7073` order (the confirmer on the current tree, and what nothing computes), read at `origin/main` `609932f2`. The reply to `r7071`, then to `r7069`, then to `r7067`, then to `r7065`, then to `r7063`, then to `r7059` (`sec:lock`), then to `r7055` (the phase count), then to `r7049` (the floor), then to `r7043` (the citation sweep), then the replies to `r7037` (the corpus-wide sweep), `r7035` (the null harness), `r7033` (the three instruments with no noise model) and `r7029` (both items) follow it. The replies to `r7027` (`r7027+70.1`), `r7025` (`r7025+70.1`), `r7023` (`r7023+70.1`), `r7021` (`r7021+70.1`), `r7019` (`r7019+70.1`), `r7017` (`r7017+70.1`, ⑧), `r7013` (`r7013+70.1`), `r7011` (`PO-69`), `r7009` (`PO-68`), `r7007` (`PO-67`), `r7003` (`PO-65` ⓶, `PO-66` ⓶), `r6991` (`PO-64`),
+`r7079` order (derive or hold, over the twenty-five carriers), read at `origin/main` `0dd96179`. The reply to `r7073`, then to `r7071`, then to `r7069`, then to `r7067`, then to `r7065`, then to `r7063`, then to `r7059` (`sec:lock`), then to `r7055` (the phase count), then to `r7049` (the floor), then to `r7043` (the citation sweep), then the replies to `r7037` (the corpus-wide sweep), `r7035` (the null harness), `r7033` (the three instruments with no noise model) and `r7029` (both items) follow it. The replies to `r7027` (`r7027+70.1`), `r7025` (`r7025+70.1`), `r7023` (`r7023+70.1`), `r7021` (`r7021+70.1`), `r7019` (`r7019+70.1`), `r7017` (`r7017+70.1`, ⑧), `r7013` (`r7013+70.1`), `r7011` (`PO-69`), `r7009` (`PO-68`), `r7007` (`PO-67`), `r7003` (`PO-65` ⓶, `PO-66` ⓶), `r6991` (`PO-64`),
 `r6977` (`r6977+70.1`), `r6975` (`r6975+70.1`), `r6959` (`r6961+70.x`), `r6939` (`r6931+70.3`) and `r6929`
 (`r6931+70.1`) follow it; all were gated and landed.*
 
@@ -13,6 +13,15 @@ below that is not receipted says so in terms. The newest reply is first. It answ
 declared in `check_revision_collisions._PARITY_BY_NODE` beside `cc66`, and that is the only gate line
 this revision touches. **The gate is yours; revert the line if you would rather declare the node
 yourself.***
+
+## ⌛ `r7079+70.1` — IN FLIGHT: DERIVE OR HOLD, OVER THE TWENTY-FIVE CARRIERS
+
+**r7045.**
+- **In flight:** `computations/beyond_the_wall/r7079_70_derive_or_hold/derive_or_hold.py`. For each of the 25 pairs it runs a baseline and two sentinels, a large change and a last-digit change.
+- **Pre-registered:** `PREDICTION.md` beside it.
+- **Calibration:** it failed on the first run and now holds. **Three instrument changes were made after seeing the controls, and they are declared there.**
+- **It waits on** the CAMB carriers: three runs each, at up to about 30 min a run.
+- **It lands in** the next push on this branch, as the shortlist with the mechanical class only.
 
 ## ⚑ `r7073+70.1` — 40 OF 40 CONFIRMED ON A FRESH RUN; NOTHING-PRINTS HOLDS NO NUMBER THAT IS CLAIMED AS COMPUTED, SO NO (iii)
 
