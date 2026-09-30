@@ -63,6 +63,11 @@ def check(name, cond, got=None):
         FAILS.append(name)
 
 
+def report(name, cond, got=None):
+    """paper state at the audit: REPORTED, never required -- a correction by 66 must not turn this red"""
+    print(f"    [{'as found' if cond else 'CHANGED since the audit'}]  {name}" + (f"   {got}" if got is not None else ""))
+
+
 HERE = os.path.dirname(os.path.abspath(__file__))
 ROOT = os.path.dirname(os.path.dirname(HERE))
 N = {
@@ -109,7 +114,7 @@ for lab, pat in PAT.items():
     g1 = [k for k in G1 if carries(k, pat)]
     check(f"{lab}: computed by r7008 and by NEITHER member of G1, the pair it closes under",
           carries('r7008', pat) and not g1, f"G1 carries: {g1 or 'none'}")
-check("     ...and r7008 IS cited in the passage, on the non-resonance and a^-6 sentence ninety lines on",
+report("     ...and r7008 IS cited in the passage, on the non-resonance and a^-6 sentence ninety lines on",
       '\\rcpt{' + N['r7008'] + '}' in tex)
 
 print()
@@ -118,12 +123,12 @@ print("  ① QUANTITIES THE CO-CITED RECEIPTS DISAGREE ON -- the paper is checke
 print("  " + "=" * 96)
 check("the growth: r7044 has the bound at degree EIGHT against eight, r7048 corrects it by exactly one power",
       carries('r7044', r'degree EIGHT') and carries('r7048', r'loose by|one factor of d'))
-check("     ...and the paper quotes r7048's: seventh against eighth",
+report("     ...and the paper quotes r7048's: seventh against eighth",
       'the coupling\'s own growth is of the seventh' in flat)
 check("the sign: r7056 has it MIXED below a crossing at m = 13, and r7058 corrects that to POSITIVE on the whole "
       "tower against 18V = 36 pi^2", carries('r7056', r'MIXED|mixed') and carries('r7058', r'RESIDUE IS EMPTY')
       and carries('r7058', r'36 pi\^2|36\*pi\*\*2'))
-check("     ...and the paper quotes r7058's threshold and sign, and neither r7056's crossing nor r7050's m = 136",
+report("     ...and the paper quotes r7058's threshold and sign, and neither r7056's crossing nor r7050's m = 136",
       '$18V=36\\pi^{2}$' in flat and 'positive on the whole tower' in flat
       and not re.search(r'm=13\b|m = 13|136', flat[flat.find('The shift at this level'):
                                                        flat.find('supplies the second-order datum')]))
