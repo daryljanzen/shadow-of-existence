@@ -5361,10 +5361,41 @@ that carries a receipt.*
 | | |
 |---|---|
 | **in flight** | `r7041` ⓒ — the injection convergence sequence, **48 runs**: twelve settings, each varied alone, on two injections and both arms. Then ⓐ/ⓑ — **24 real-arm runs**, solver on, each carrying `SRCSAVE` so the **retention** converges and not just the heights. |
-| **waiting on** | the projections. Unsliced, one process per configuration, four at a time on four cores. |
-| **roughly when** | ⚠ ***a day could pass.*** *Measured: a base run is about 30 minutes under four-way contention and `KFAC=2.6` about 48, so ⓒ is some **six hours** and ⓐ comparable. **I am not hurrying it and I am not reporting per push.*** |
+| **waiting on** | the projections. **Sliced at `KSLICE` width 250, four at a time on four cores** — unsliced made every run an all-or-nothing 28-minute unit and this container restarts every 8 to 25 minutes, so the unit of work had to become the slice. Idempotent at slice granularity, `flock`ed to one launcher, and run from a snapshot of itself. |
+| **roughly when** | ⚠ ***a day could pass, and on the measured rate more than one.*** *Measured over the last two hours rather than estimated: **22 to 27 slices an hour**, with **557 of 669 slices still to run** — so about **21 hours of compute**, and more in wall clock because the restart gaps are dead time. **I am not hurrying it and I am not reporting per push.*** |
 | **what is already solid** | the acceptance law, gated, and the three-attempt instrument behind it — held back from the reply until the receipt, per your own rule. |
 | **what is routed** | `Q1`'s red on this branch's head, with a measurement it did not have: **40 s standalone, exit 0, all gates green**, so a declared-long budget on the house rule would be *below* the cap it exceeded. Commented on `#172`, **not re-run** — the receipt's own text says not to, and not to read its carry count as a diagnosis. It is node 70's class. |
+
+## ⛔⛭ THE SWEEP LOST SIX CONFIGURATIONS AND KEPT THE READING THEY WOULD HAVE SPOILED
+
+*This is the only change to `r7041`'s staged design, and it is a node call from measurement — taken here
+rather than routed.* **On the arm, `NK` is not a convergence axis at all.**
+
+*`GRIDSAVE` settles it upstream of any spectrum: on the arm, `nk15` and `nk20` write a k axis and a visibility
+grid **byte-identical to `base`** — 1452 modes in all three, `np.array_equal` true on `k`, `dk`, `eta`, `x0`,
+`vis`. The reason is in the instrument and not in the setting: on the arm the ladder is `sqrt(L(L+2))*stretch`
+out to `KMAXL`, and `NK` is only a decimation cap that is never reached.*
+
+⛭ **CONFIRMED AT THE SPECTRUM, so nothing is taken on the grid's word alone:** `real_cr_nk15_k0` and
+`real_cr_nk20_k0` against `real_cr_base_k0` give `max|Dl| = 0.000e+00` with an identical `ls`, and both
+injection forms agree on every array. ⛭ **AND THE CONTROL MOVES — 2547 modes to 3822 to 5094, spectra
+differing outright —** which is what makes the arm's silence a reading rather than a broken test.
+
+⛔ ***SO "THE ARM DOES NOT MOVE WITH NK, THEREFORE IT IS CONVERGED IN NK" WOULD HAVE BEEN VACUOUS: the input
+never moved.*** *It is recorded as **inert by construction**, never as converged; the control's `NK` sequence
+stands and is the one that carries the question. The arm's six `NK` configurations are not queued — 588 slices
+to 557 — and `report_c.py` substitutes the arm's `base` for them **as an identity, under a gate that re-reads
+the grids and refuses the substitution if they ever disagree.**
+
+⌗ *And the general form caught a second one, in the reader that was about to print it: `A_l` is built from the
+background alone, so **`LSTEP` cannot move the acceptance on either arm** — the probe reads `A_l` at the same
+multipoles at every setting by construction. **Three of twelve axis-arm pairs were on course to print "✔ the
+acceptance has stopped moving, at the floor" without any input having moved.** The test is now read off the
+grids rather than held as a list, so an axis that starts moving stops being inert on its own.*
+  ⌗ ***An axis whose inputs do not move is not a converged axis, and the cheapest way to look converged is to
+  be asked a question the instrument cannot answer.*** *`LSTEP` stays a real axis for the **sweep**, where it
+  takes the reported ell list from 475 points to 238; it is inert for the **acceptance** only, and only
+  because of how `A_l` is defined.*
 
 ⌗ *The queue is ordered so the first eight settings complete a **three-point** sequence on every axis the order
 names, because a three-point sequence can turn over and a two-point one cannot. So a partial read is a partial
