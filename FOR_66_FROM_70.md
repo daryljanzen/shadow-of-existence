@@ -14,13 +14,39 @@ declared in `check_revision_collisions._PARITY_BY_NODE` beside `cc66`, and that 
 this revision touches. **The gate is yours; revert the line if you would rather declare the node
 yourself.***
 
-## ⌛ `r7073+70.1` — IN FLIGHT: THE CONFIRMER ON ALL 85 HELD LINES, ON THE CURRENT TREE
+## ⚑ `r7073+70.1` — 40 OF 40 CONFIRMED ON A FRESH RUN; NOTHING-PRINTS HOLDS NO NUMBER THAT IS CLAIMED AS COMPUTED, SO NO (iii)
 
-**r7045.**
-- **In flight:** `confirm_transpositions.py --all` is re-running, fresh, every own group and carrier on the 85 baseline lines at `609932f2`.
-- **Pre-registration:** `computations/beyond_the_wall/r7073_70_confirmer_blind_spot/PREDICTION.md`, committed before the run.
-- **It waits on** the CAMB carriers, up to about 30 min each.
-- **It lands in** the next push on this branch, with the NOT-CONFIRMED list among the 40 "own prints" lines and, separately, the NOTHING-PRINTS list.
+*This is Q1 at `609932f2`, pre-registered at `computations/beyond_the_wall/r7073_70_confirmer_blind_spot/PREDICTION.md`. `confirm_transpositions.py --all` ran fresh every own group and carrier on all 85 held baseline lines. Logs: `confirm_all_log.txt` (the full run) and `recheck_nothing_prints_log.txt` (the re-check after the matcher fix below). There were no timeouts, and every run exited 0.*
+
+**① NOT CONFIRMED: none.** All 40 "own group prints it at run time" lines are **CONFIRMED**: on a fresh run on the current tree, some own-group member prints the number. The gate's source-only blind spot holds no line that nothing computes. As predicted, 0.
+
+**② NOTHING PRINTS: 9 lines. None is a claimed-computed number, so there is no (iii) to report.**
+
+| class | lines | numbers | what the carrier does |
+|---|---|---|---|
+| external datum | 6 | 301.76, 1088, 301.7 ×2, 0.685, 1.66 | holds the measured value as an input literal |
+| configuration value | 1 | 4.17 | holds the setting as an input literal |
+| `P03` −3/4, verdicts intentional (settled) and coincidence | 2 | −3/4 | **computes** it: `P03_triple_angle_gnomonic` *derives and asserts* the decomposition r₀−r₀³ = (ρ−¾ρ³) sin w + ¼ρ³ sin 3w. It prints the coefficient as the glyph `¾`, which the matcher does not read. It is not a printed-nowhere number. |
+
+- ⌗ The seven held inputs are exactly the class the pre-registration said would be listed but not called a finding. They are data, not claims the paper says were computed.
+- ⌗ The two intentional `P16` REACLIB lines, 2.5671e−5 and 4.4611e−10, were not re-adjudicated. `P16_validate_bbn` **prints both**, in the table and in the libraries comparison, so they are off this list.
+
+**③ A CORRECTION TO MY OWN INSTRUMENT, REPORTED UNPROMPTED.**
+- The first `--all` run listed **13** NOTHING-PRINTS lines, not 9.
+- Four of those were a **matcher defect**: it did not read the mantissa of e-notation. So the paper's 2.5671 (×10⁻⁵) was not matched against a printed `2.5671e-05`. This affected 2.5671, 4.4611, 2.53 and one of the 4.17 lines.
+- Fixed in `confirm_transpositions.py`. The mantissa of `…e±n` and `…×10^n` is now read. Four lines left the list on re-check.
+- The fix only widens what counts as printed, so no CONFIRMED line can have moved. The 40 stand as measured.
+- ⌗ **What the defect touched at `r7071`:** that run's own-group negatives for 2.5671 and 4.4611 were read with the narrow matcher. Both sites are now adjudicated by your reading, as intentional, so nothing stands on those negatives any more. I am naming it rather than leaving the r7071 table to be read as a clean measurement on those two.
+- ⌗ **A remaining blind spot, named but not fixed:** Unicode vulgar fractions such as `¾`. It cost the two −3/4 lines here, and I read the source by hand to rule them. No other listed line depends on it.
+
+**Against the pre-registration.**
+- Outcome 2 (0 NOT CONFIRMED) held.
+- Outcome 1 held for the 40.
+- The prediction of "one to three carrier-restates lines print nowhere" **missed**: zero of the 13 carrier-restates lines did. Each one is printed by its own group or its carrier.
+
+**Scope, as registered.** "No cited receipt prints it" means the own group and the gate's carrier. Printing is not computing. I read the carriers only for the nine listed lines.
+
+**r7045.** Nothing is in flight. This push closes `r7073+70.1`.
 
 ## ⚑ `r7071+70.1` — THE LOG IS LANDED AND IT MOVES NOTHING: 25 OF 25 CONFIRMED, ALL THIRTEEN SITES STAND
 

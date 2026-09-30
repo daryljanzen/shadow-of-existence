@@ -1,0 +1,30 @@
+held           CR_cosmology.tex           301.76     not a transposition -- external datum                      own prints: none; carrier prints: False
+held           CR_cosmology.tex           1088       not a transposition -- external datum                      own prints: none; carrier prints: False
+held           CR_cosmology.tex           301.7      not a transposition -- external datum                      own prints: none; carrier prints: True
+held           CR_cosmology.tex           301.7      not a transposition -- external datum                      own prints: none; carrier prints: True
+held           CR_cosmology.tex           301.7      not a transposition -- external datum                      own prints: none; carrier prints: False
+held           CR_cosmology.tex           301.7      not a transposition -- external datum                      own prints: none; carrier prints: False
+held           CR_cosmology.tex           0.685      not a transposition -- external datum                      own prints: none; carrier prints: False
+held           SdS-slicing-curve_v2.tex   -3/4       intentional -- a proof's algebra belongs to its propositio own prints: none; carrier prints: False
+held           SdS-slicing-curve_v2.tex   -3/4       not a transposition -- coincidence                         own prints: none; carrier prints: False
+held           cosmogenesis_paper.tex     2.5671     intentional -- the prose names the computing receipt inlin own prints: none; carrier prints: True
+held           cosmogenesis_paper.tex     4.4611     intentional -- the prose names the computing receipt inlin own prints: none; carrier prints: True
+held           cosmogenesis_paper.tex     4.17       not a transposition -- configuration value                 own prints: none; carrier prints: True
+held           cosmogenesis_paper.tex     4.17       not a transposition -- configuration value                 own prints: none; carrier prints: False
+held           cosmogenesis_paper.tex     1.66       not a transposition -- external datum                      own prints: none; carrier prints: False
+held           cosmogenesis_paper.tex     2.53       not a transposition -- external datum                      own prints: ['P16_theory_error_and_likelihood']; carrier prints: True
+
+0 "own prints" line(s): 0 CONFIRMED, 0 NOT CONFIRMED
+
+NOTHING PRINTS -- no fresh run of the own group or the carrier carries the number: 9
+  CR_cosmology.tex           301.76     not a transposition -- external datum                      carrier holds in source: True; own holds in source: none | carrier H0_acoustic_angle_and_seam
+  CR_cosmology.tex           1088       not a transposition -- external datum                      carrier holds in source: True; own holds in source: none | carrier P15_the_damping_signature_error_budget_and_the_convention_do
+  CR_cosmology.tex           301.7      not a transposition -- external datum                      carrier holds in source: True; own holds in source: none | carrier P15_the_line_of_sight_transfer
+  CR_cosmology.tex           301.7      not a transposition -- external datum                      carrier holds in source: True; own holds in source: none | carrier P15_two_arm_control_and_guard
+  CR_cosmology.tex           0.685      not a transposition -- external datum                      carrier holds in source: True; own holds in source: none | carrier P15_verify_doppler_lowell
+  SdS-slicing-curve_v2.tex   -3/4       intentional -- a proof's algebra belongs to its propositio carrier holds in source: True; own holds in source: none | carrier P03_triple_angle_gnomonic
+  SdS-slicing-curve_v2.tex   -3/4       not a transposition -- coincidence                         carrier holds in source: True; own holds in source: none | carrier P03_triple_angle_gnomonic
+  cosmogenesis_paper.tex     4.17       not a transposition -- configuration value                 carrier holds in source: True; own holds in source: none | carrier P16_the_leading_order_interior_is_adequate
+  cosmogenesis_paper.tex     1.66       not a transposition -- external datum                      carrier holds in source: True; own holds in source: none | carrier P16_cooling_leg_reduction
+
+UNMEASURED (timeout): 0

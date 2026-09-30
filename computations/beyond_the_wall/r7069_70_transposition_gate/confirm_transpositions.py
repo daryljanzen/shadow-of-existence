@@ -14,7 +14,7 @@ where neither the own group's nor the carrier's fresh output carries it is liste
 a finding about receipts, not markers.  "Cited" means the own group and the gate's carrier only, and
 printing is not computing (a printed literal counts as printed).  A timeout is UNMEASURED, never "absent".
 
-Usage:  python3 confirm_transpositions.py [--jobs N] [--all]
+Usage:  python3 confirm_transpositions.py [--jobs N] [--all] [--only paper:number,...]
 """
 import glob
 import os
@@ -53,6 +53,9 @@ def out_carries(txt, tok):
         vals = [float(x) for x in re.findall(r'-?\d+\.\d+|-?\d+', txt) if len(x) < 30]
         return G.carries(txt, tok) or any(abs(v - val) < 1e-9 for v in vals)
     vals = set()
+    # r7073: a paper's 2.5671 (x10^-5) is printed as 2.5671e-05 -- read the mantissa too
+    for m in re.findall(r'(-?\d+(?:\.\d+)?)\s*(?:[eE][-+]?\d+|[x×]\s*10\^?\{?[-+]?\d+)', txt):
+        vals.add(float(m))
     for s in T.num_pool(txt):
         try:
             vals.add(float(s))
@@ -104,6 +107,9 @@ def main():
     jobs = int(sys.argv[sys.argv.index('--jobs') + 1]) if '--jobs' in sys.argv else 4
     lines = [l.rstrip('\n').split('\t') for l in open(G.BASE, encoding='utf-8')
              if l.strip() and not l.startswith('#')]
+    if '--only' in sys.argv:      # re-check named lines: --only paper:number,paper:number,...
+        want = {tuple(x.split(':', 1)) for x in sys.argv[sys.argv.index('--only') + 1].split(',')}
+        lines = [l for l in lines if (l[0], l[2]) in want]
     if '--all' in sys.argv:
         return all_lines(lines, jobs)
     cands = [l for l in lines if l[4].startswith('TRANSPOSITION')]
