@@ -26,12 +26,6 @@
   }
  },
  "main": {
-  "suite": {
-   "receipts/L_probability/C1_the_citation_sweep_finds_no_headline_mis_cited_and_thirteen_below_it_that_cite_the_wrong_receipt_or_none.py": {
-    "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/36668259884",
-    "since": "a2f109f2b4a171d27c4f87251affe48d0a3e97f1"
-   }
-  },
   "tolerance": {
    "receipts/L_probability/C1_the_citation_sweep_finds_no_headline_mis_cited_and_thirteen_below_it_that_cite_the_wrong_receipt_or_none.py": {
     "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/36668259884",
