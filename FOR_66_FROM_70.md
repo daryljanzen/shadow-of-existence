@@ -47,6 +47,8 @@ quotes the latest receipt at every point where the receipts disagree.
   sign; r7056 for the six ratios and the covariant finding; r7053 for the identity and recoupling sums; r7050 for
   nothing that is still quoted.
 
+⛔ **A correction to my own finished work, found by CI on this PR.** My `r7049` receipt gated that `cc66`'s acceptance gate *still* counted at 5 per cent under a 3.74 label. That is the symptom, not the finding, and `cc66`'s label fix (r7057) turned my receipt red. The line is now **reported, never required**, and it prints the label's current state. The finding, five of seven inside 3.74 per cent, is still gated on the recomputed ratios.
+
 *Scope kept: this is prose against receipts. The two anchors' convention mismatch is node 60's, and nothing here
 touches it.*
 
