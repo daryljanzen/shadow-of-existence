@@ -8,7 +8,13 @@ A transposition is confirmed when the carrier's output or source carries the num
 output does.  Not a registered receipt: the carriers include CAMB runs of up to ~25 minutes, so it is run
 by hand and its log is committed beside it (confirm_log.txt).
 
-Usage:  python3 confirm_transpositions.py [--jobs N]
+--all (r7073): every held line, not only candidates.  A line whose verdict is "the own group prints it
+at run time" is CONFIRMED when some own member's fresh output carries the number.  Separately, any line
+where neither the own group's nor the carrier's fresh output carries it is listed as NOTHING PRINTS --
+a finding about receipts, not markers.  "Cited" means the own group and the gate's carrier only, and
+printing is not computing (a printed literal counts as printed).  A timeout is UNMEASURED, never "absent".
+
+Usage:  python3 confirm_transpositions.py [--jobs N] [--all]
 """
 import glob
 import os
@@ -55,10 +61,51 @@ def out_carries(txt, tok):
     return T.matches(tok, vals)
 
 
+def all_lines(lines, jobs):
+    names = sorted({n for l in lines for n in l[1].split('+') + [l[3]]})
+    with ThreadPoolExecutor(jobs) as ex:
+        outs = dict(zip(names, ex.map(run, names)))
+    notconf, nothing, unmeasured, n_own = [], [], [], 0
+    for paper, own, tok, car, verdict, *_ in lines:
+        mem = own.split('+') + [car]
+        if any(outs[n][0] == 'timeout' for n in mem):
+            unmeasured.append((paper, tok, verdict, [n for n in mem if outs[n][0] == 'timeout']))
+            continue
+        own_hits = [n for n in own.split('+') if out_carries(outs[n][1], tok)]
+        car_print = out_carries(outs[car][1], tok)
+        car_holds = G.carries(G.unquoted(open(IDX[car]).read()), tok)
+        own_holds = [n for n in own.split('+') if G.carries(G.unquoted(open(IDX[n]).read()), tok)]
+        rcs = {n: outs[n][0] for n in mem if outs[n][0] != 0}
+        tag = f'{paper:26s} {tok:10s} {verdict[:58]:58s}'
+        if verdict.endswith('prints it at run time'):
+            n_own += 1
+            if not own_hits:
+                notconf.append(tag)
+            print(f'{"CONFIRMED" if own_hits else "NOT CONFIRMED":14s} {tag} own prints: {own_hits or "none"}'
+                  + (f'  rc!=0 {rcs}' if rcs else ''))
+        else:
+            print(f'{"held":14s} {tag} own prints: {own_hits or "none"}; carrier prints: {car_print}'
+                  + (f'  rc!=0 {rcs}' if rcs else ''))
+        if not own_hits and not car_print:
+            nothing.append(f'{tag} carrier holds in source: {car_holds}; own holds in source: {own_holds or "none"}'
+                           f' | carrier {car[:60]}')
+    print(f'\n{n_own} "own prints" line(s): {n_own - len(notconf)} CONFIRMED, {len(notconf)} NOT CONFIRMED')
+    for t in notconf:
+        print(f'  NOT CONFIRMED  {t}')
+    print(f'\nNOTHING PRINTS -- no fresh run of the own group or the carrier carries the number: {len(nothing)}')
+    for t in nothing:
+        print(f'  {t}')
+    print(f'\nUNMEASURED (timeout): {len(unmeasured)}')
+    for t in unmeasured:
+        print(f'  {t}')
+
+
 def main():
     jobs = int(sys.argv[sys.argv.index('--jobs') + 1]) if '--jobs' in sys.argv else 4
     lines = [l.rstrip('\n').split('\t') for l in open(G.BASE, encoding='utf-8')
              if l.strip() and not l.startswith('#')]
+    if '--all' in sys.argv:
+        return all_lines(lines, jobs)
     cands = [l for l in lines if l[4].startswith('TRANSPOSITION')]
     names = sorted({n for l in cands for n in l[1].split('+') + [l[3]]})
     with ThreadPoolExecutor(jobs) as ex:
