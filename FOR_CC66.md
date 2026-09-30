@@ -3604,3 +3604,87 @@ row wants a mechanism on the integral, and the measuring apparatus you built is 
 until this row is.*** *If the retention is required, $1.57$ times the control's distance after refit is what CR
 predicts and the sector's verdict is settled against it. If it is an artefact, the comparison has not yet been
 made. **Nobody knows which, and `PO-56` was never able to tell.**
+
+
+---
+
+# ⛔⛔⛔ `r7041` — **`r7039`'s ORDER IS WITHDRAWN AND REPLACED. THE FORK WAS A MANUFACTURED BALANCE AND THE EVIDENCE DOES NOT SUPPORT IT. DO THE VALIDATION THAT WAS NAMED OUTSTANDING AND NEVER DONE.**
+
+*Daryl called the two co-equal branches in `r7039` what they were. He is right. **Do not start a mechanism hunt.
+Start here.***
+
+## ⛭⛭⛭ THE THREE FACTS THAT PUT THE PRESUMPTION ON THE INSTRUMENT
+
+**① THE INSTRUMENT'S CONTRAST MOVES BY AN ORDER OF MAGNITUDE MORE UNDER ITS OWN SETTINGS THAN THE EFFECT WE ARE
+DISCUSSING.** *`C59`, holding the reported multipole grid fixed and moving only $k_{\max}$:*
+
+| $k_{\max}$ ($\ell$-equiv) | $P_1/P_2$ | $P_1/P_3$ |
+|---|---|---|
+| 900 | 2.721 | 4.497 |
+| 1300 | 2.446 | 2.974 |
+| 1800 | 2.399 | 2.791 |
+| **2400 (converged)** | **2.393** | **2.768** |
+
+⇒ ***About 14 per cent in $P_1/P_2$ and 63 per cent in $P_1/P_3$ over a 2.7-fold change in one numerical
+setting. The excess this row is about is FOUR PER CENT.***
+
+**② THAT CONVERGENCE WAS ESTABLISHED ON THE CONTROL.** *`C59`'s own scope, verbatim: **"No CR number is computed
+here at all"**, and **"What is established is that its control works."** It pinned `ARM=lcdm` in every run.*
+
+**③ AND THE CR RUN WAS NAMED AS OUTSTANDING AND NOBODY DID IT.** *`C59` deferred it on a defect live only on the
+CR arm. `C60` discharged that deferral — and then stated its own scope: **"It does NOT establish that the HIER
+path is correct, and it produces no CR number, no peak position and no height ratio"**, with gate order **1, 2 and
+4 — validating $\Pi$ on the control, the `PISRC` subtraction, and THE CR RUN — "remain to be done."***
+
+⇒ *** SO THE ARM HAS NEVER BEEN CONVERGENCE-VALIDATED, ON AN INSTRUMENT WITH A DOCUMENTED 14-TO-63 PER CENT
+NUMERICAL LEVER ON EXACTLY THIS QUANTITY. THAT IS NOT A HYPOTHESIS, IT IS A GAP IN THE RECORD. ***
+
+⛔ *And the one receipt that looks like a counter-example is not one. `L822/S1` found a CR residual "unresponsive
+to $L_{\max}$" — **on the `c54.178` pair, peaks at $172/404/636$ against the sky's $220/540/810$, $\chi^2/$dof
+$\simeq280$.** A comb compressed by more than forty per cent, superseded three times over. **It says nothing about
+the current arm.***
+
+## ⛭⛭⛭ THE ORDER — **THE MIRROR OF `C59`, ON THE CR ARM**
+
+**ⓐ CONVERGENCE OF THE CURRENT ARM IN EVERY SETTING `C59` MOVED, AND ON ITS OWN BACKGROUND.** *$k_{\max}$ through
+`KFAC`, the mode count `NK`, the $\eta$-sampling of the line-of-sight integral, and the reported $\ell$ grid —
+each varied alone, with the others held, **on the arm**, reporting the contrast statistic and the height ratios at
+each setting.* ⌗ ***The quantity to converge is the one this row is about: the arm-to-control retention, not just
+the peak heights.** `C59` converged heights; nobody has converged the retention.*
+
+**ⓑ AND THE ASYMMETRY TEST, WHICH IS THE POINT.** *Every setting is nominally shared, but the arm runs on a
+different background — the $\eta$–$a$ relation differs by construction, radiation carrying no term in the
+expansion law, and $D_M$ differs by $0.449$ per cent. **So a setting converged on the control is not thereby
+converged on the arm.*** ⇒ ***Report, for each setting, the arm's converged value against the control's at the
+SAME setting, and say whether the two arms reach convergence at the same place.** If they do not, the retention
+measured at a shared setting is comparing a converged spectrum with an unconverged one.*
+
+**ⓒ AND THE DIRECT TEST OF THE RETENTION ITSELF.** *The identical-source result — a pure oscillation through each
+arm's own kernel, visibility and grid, giving $1.066$, **exceeding the real $1.047$** — is the cleanest handle in
+the row: no physics in the input at all. **Re-run it as a convergence sequence.** If $1.066$ walks toward unity as
+the settings refine, the retention is the integrator's and the row is answered.*
+
+**ⓓ AND `r3512`'s GATE ORDER 1, 2 AND 4**, *named outstanding at `C60` and still outstanding: validating $\Pi$ on
+the control, the `PISRC` subtraction, and the CR run.*
+
+## ⛔ WHAT I GOT WRONG AND WHAT REPLACES IT
+
+*`r7039` said both outcomes were live and told you not to prefer either. **The second half of that was right and
+the first half was not.*** *An arm whose source oscillation is the **shallower** of the two, projected through an
+integrator with that numerical lever and no convergence demonstration on its own background, does not get its four
+per cent charged to physics on the evidence in hand.*
+
+⇒ *** THE PRESUMPTION IS THE INSTRUMENT. THE OTHER OUTCOME IS THE ONE TO BE SHOWN, NOT THE ONE TO BE BALANCED
+AGAINST. *** ⌗ *What survives from `r7039`: **if the arm converges and the retention survives, that is the finding
+and I will write it up as one.** That is a real exit and it stays. What is withdrawn is treating it as equally
+likely before the arm has been converged at all.*
+
+⛔ *And the guard on mechanisms stays lifted — but **the order of work is fixed**: convergence first. *A mechanism
+found before the arm is known to be converged is a mechanism found in an unconverged integral.**
+
+## ⌗ WHAT IS NOT ASKED
+
+*No mechanism hunt yet. No new statistics — the measuring apparatus is sufficient. Do not re-run the six excluded
+explanations. ⌗ *Settings, staging, how far you push each sequence and what counts as converged are yours from
+measurement, as always — and if ⓐ comes back showing the arm was converged all along, say so plainly and we go
+to the mechanism with that established.*
