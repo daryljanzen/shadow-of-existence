@@ -4840,3 +4840,39 @@ An invariant of the admitted family **does** carry it: dimension six is an entry
 ⚠ **Not claimed:** no value for the coefficient, and **no choice of representative** among the five dimension-six scalars — the identification is of the operator **dimension**, which both the order rule and the power counting fix, and which scalar carries it is fixed by neither and is not guessed. The dimension-six rank is used as filed and not re-derived, as are the order rule, the free tower's `a^{-1}` scale, `r7064`'s count and `r7060`'s summand. No claim about the ledger's entry in the wider corpus — only that this one is not degenerate with the free case's, so it is a **second** scoping of the no-free-constant claim in this sector rather than the same one.
 
 ⌗ *19 checks, all pass, exact throughout, no floats at all. The terminal branch is not taken and its condition is exhibited false; `r7065` carries no exit offer, so none is declined — nine of sixteen stands. **Ready for the gate.***
+
+---
+
+## `r7068` — `r7067`'s Q1 ANSWERED: **THE COEFFICIENT IS ZERO**, AND THE LEDGER SPENDS NOTHING AT DIMENSION SIX
+
+**The coefficient is zero, and it is zero by a selection rule rather than by cancellation.**
+
+Your own criterion for a counterterm is a **logarithm** — the free tower needs one because its spectral function has a **pole** at the physical point. And `W(σ) = Σ_{m≥3}(μ²)^{-σ}` has poles **only** at half-integer `σ = 1/2 − k`, because `ζ`'s single pole at argument one is reached at `2σ + 2k = 1`. ⇒ ***A half-integer argument is reached only by an odd power of `μ`.*** The free weight `d(m)μ(m)` carries one and hits a pole; **the interacting summand is a rational function of `μ²` — even in `μ` — and misses every one.** At `s = 0` all four `W` arguments are **integers**, where `W` is regular, so **each term's residue vanishes separately** rather than four summing to nothing.
+
+⇒ ***No pole, no logarithm, no renormalisation-scale dependence — and nothing for a counterterm to absorb.***
+
+### ⛭ The machinery is calibrated against your own banked number before being used on an unknown one
+
+The same residue formula, applied to the free tower's weight at *its* physical point `s = −1`, returns `2·2·(3/16) + (−6)·2·(−1/4) = 15/4` — **`r6975`'s banked logarithmic coefficient**, rebuilt from the Pochhammer coefficients and nothing else. *So the conclusion rests on a residue calculation that reproduces the row's own known answer first.*
+
+### ⛭ And the test discriminates
+
+A hypothetical **odd** power of `μ` in the summand **does** produce a pole at the same physical point — residue `−1/4` for `μ`, `3/16` for `μ³`. ⇒ **So the zero is a property of the summand's parity and not of the instrument**, and the control returns the affirmative when the affirmative is true rather than being a null that merely fails to fire.
+
+### Your two sub-questions, in your own terms
+
+**Is the representative fixed by this route?** **No — and it does not need to be.** A zero coefficient is zero for every one of the dimension-six scalars, so it is representative-independent *completely* rather than approximately. ⇒ ***The ledger entry is well defined without the choice*** — which is the condition you named for it being so, met in the strongest available way.
+
+**What does the entry cost in the ledger's own terms?** ***Neither of your two branches.*** Not two dimensionless constants in this sector, and not one constant at two dimensions: **one constant at one dimension, exactly as before — the free tower's, at dimension four.** The interacting sum contributes a definite finite number and no free constant, so the no-free-constant statement in this sector reads exactly as it did before `r7064`.
+
+### ⛔ And this corrects `r7066` — my own last revision
+
+`r7066` wrote that *"the subtractions a spectral regularisation spends are its summand's non-negative powers"* and concluded **"the count is three AND the ledger cost is three."** ⇒ ***The count of three stands as a fact about the summand; the cost claim does not.*** Counting non-negative powers is the **cutoff's** subtraction count, and a cutoff's subtractions are **traded for the analytic continuation rather than paid**. The ledger's exposure is the **pole** — which is precisely why the free tower's own receipt ties its counterterm to the logarithm and not to a power count.
+
+⌗ *`r7066`'s other results stand and are not reopened: the three routes to dimension six, the not-a-volume-term correction, and the non-degeneracy with its regime-separating control.* **What falls is one inference — from three subtractions to three ledger entries — and the dimension it was drawn at is still the right dimension. The entry there is identified and *empty*.**
+
+⌗ **And this is the second time in three revisions that a cost or a sign I landed has been corrected by the next one.** I would rather say that plainly than let the pattern go unremarked: both times the error was an inference drawn one step past what the arithmetic supported, and both times the arithmetic that caught it was cheap. The in-flight flags are catching the ones I see coming; this one I did not see coming until I asked where the pole was.
+
+⚠ **Not claimed:** that the interacting sum needs no renormalisation *at all* — only that it spends no **free constant** at dimension six, which is what a pole at the physical point would have cost. No representative chosen or defended. No claim about the ledger's entries outside this sector.
+
+⌗ *18 checks, all pass, exact throughout, no floats at all. The terminus is not taken and its condition is exhibited false — the coefficient is computable from the construction's own data, with no new object, and its value is zero. `r7067` carries no exit offer, so none is declined — nine of sixteen stands. **Ready for the gate.***
