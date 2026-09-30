@@ -5350,6 +5350,73 @@ PINNED = {'systematic uncertainty': 1}
 
 ---
 
+## ⛔⛔ `main` IS RED AND THE CAUSE IS MY OWN FIX — **70's GATE REQUIRES THE DEFECT IT REPORTS.** I AM BLOCKED FROM THE ONE-LINE FIX
+
+*Not routed for a decision — routed because I am **blocked by a permission boundary**, and the work is done
+and transferable. `r7049+70.1`'s receipt*
+`P15_the_laws_six_of_seven_is_five_at_the_quoted_floor_which_is_one_phases_and_with_the_instruments_own_error_divided_out_all_seven_hold.py`
+*is red on `main`, `…6awafl` and `…wgcmvt`: the ledger reads **carried 3, cleared 0** — it has never been green.*
+
+⚠ ***The cause is `fbd3f575`, my r7055 commit.*** *I ran it here: **exactly one gate of its many fails**, and
+every finding it makes still passes, ② included (`lcdm 5/7, cr 5/7` inside 3.74; `6/7` inside 5).*
+
+```
+[FAIL]       the gate counts at 5 per cent while its label names 3.74 -- read from its source
+```
+
+*That gate is a **source-text** assertion on my receipt:*
+
+```python
+check("     the gate counts at 5 per cent while its label names 3.74 -- read from its source",
+      'abs(r[2] - 1) < 0.05' in src and 'accuracy on a known input' in src)
+```
+
+*Both strings were present at `6d5c269e^`, when 70 wrote it. **Both are gone now, because r7055 — which you
+relayed to me from 70's own ② — replaced that literal with `GATE_TOL`.** Verified with `git log -S`: the
+commit that removed them is `fbd3f575`.*
+
+⛔ ***So the gate hard-requires the persistence of the defect it reports, and acting on the finding is what
+falsifies the gate.*** *It is the same family as the three I caught this revision, in its sharpest form yet:
+r7057's **"a claim about a thing made without reading the thing it is a claim about"** — here, a claim that
+cannot survive being acted upon.* ⌷ ***And 70 already had the right instinct one section further down***: *the
+prose check is headed* "THE PAPER'S WORDING — REPORTED, NEVER REQUIRED" *and only **prints** whether the
+clause is still there. The source check did not get the same treatment. That asymmetry is the whole defect.*
+
+## ⛔ WHY YOU ARE READING THIS INSTEAD OF A GREEN `main`
+
+*I wrote the fix and **the tool refused it: `[Modify Shared Resources]`** — it is another node's receipt. I did
+not route around the refusal, so the patch below is unapplied. **It is one gate, it weakens nothing, and it
+needs whoever owns that file (70, or you on its behalf) to apply it or tell me to.***
+
+*The fix reads the audit's claim from the state it is a claim about, and checks the tree for the **fix**
+rather than for the defect — so it records the closure too and cannot go stale a second time. Add
+`import subprocess`, then replace the two lines above with:*
+
+```python
+FIXED_AT = 'fbd3f575'      # r7055, the commit that closed it; its parent is the last state that had it
+_was = subprocess.run(['git', 'show', f'{FIXED_AT}^:{os.path.relpath(LAW, ROOT)}'],
+                      cwd=ROOT, capture_output=True, text=True)
+was = _was.stdout if _was.returncode == 0 else ''
+check("     the gate counted at 5 per cent while its label named 3.74, in the last source that carried it",
+      'abs(r[2] - 1) < 0.05' in was and 'accuracy on a known input' in was,
+      f"read at {FIXED_AT}^" if was else
+      "⛔ UNREAD: that blob is unreachable here, so this is NOT a measurement")
+check("     ...and the tree now reads ONE named constant for both, so the defect is CLOSED, not carried",
+      'abs(r[2] - 1) < 0.05' not in src and 'GATE_TOL' in src, f"closed at {FIXED_AT}")
+```
+
+⌷ *Safe in CI: the LaTeX `compile` job is the only shallow checkout and it runs no receipts — all six
+receipt-running checkouts are `fetch-depth: 0`. The docstring's ② also says "The gate counts at 5 per cent,
+and its **label names 3.74**" in the present tense, which is now false; it wants one line saying the split is
+closed at `fbd3f575` and that **the count itself is unchanged and still five**, which is 70's actual finding.*
+
+⚠ ***What I did NOT do***: *I did not touch 70's receipt, did not weaken or skip a gate, and did not revert
+r7055 — the r7055 fix is correct and was asked for. **The one thing I will not do to clear a red is put a
+defect back.***
+
+---
+
+
 ## ⛭ `r7057` — THE PHASE SYSTEMATIC IS TAKEN INTO THE REPORT'S **NAME**, WHICH IS THE ONE PLACE IT REACHES ME
 
 *Nothing is re-run and nothing in the sweep changes — you are right that the convergence question is whether
