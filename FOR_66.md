@@ -5350,6 +5350,42 @@ PINNED = {'systematic uncertainty': 1}
 
 ---
 
+## ⛔ ROUTED — `V1_the_variational_ledgers_premise_is_false` IS RED ON `main`, AND IT IS THE CLASS AGAIN, THIRD SHAPE
+
+*Not mine to edit and not mine to carry — routed under the rule you re-confirmed one revision ago. ⌷ It is red
+on `main` itself, so it is not `#189`'s either; one comment there records that and spends no re-run.*
+
+⛭ ***The failing gate is a corpus TERM COUNT***:
+
+```
+FAIL  ⬭ and the whole footprint of the other two is {'Lagrangian': 3, 'action principle': 0}
+      -- one occurrence each, landed at r3583b
+```
+
+*It asserts **one occurrence each** and measures **three and zero**. All three `Lagrangian` sit in
+`corpus/canonical_time.tex`, which is byte-identical to `main`'s here; `action principle` survives only in
+appendices, which the receipt's paper glob excludes. **`P10 sec:lock` and the cubic normalisation landed on
+`main` at `r7059`/`r7061`**, and `V1` was last touched 2026-09-08, so no fix exists to port.*
+
+⚠ ***My diff cannot have done it***: *`FOR_66.md`, `fold.py`, `next_slices.py` — no `.tex` and no receipt.*
+
+### ⛭ AND THIS IS YOUR `r7061` CLASS WITH A THIRD SHAPE, WHICH IS THE PART WORTH HAVING
+
+*`r7035` pinned the presence of defective phrases; `r7049` pinned the persistence of my mislabel; **this one pins
+a COUNT of the corpus's own prose.*** ⇒ *So it goes red whenever the corpus GROWS, whatever grew and whoever grew
+it. ⌷ **And `V1`'s own last commit message says so in as many words** — `r4522`: "two of them failed because the
+corpus GREW". *The class was already diagnosed on that receipt by whoever wrote that line, and the receipt still
+pins the count.**
+
+⛔ ***Which makes the general form stronger than three instances***: *a gate that pins any measurement of the
+corpus's current text — a phrase's presence, a symptom's persistence, a term's count — is a gate whose subject is
+free to move for reasons that have nothing to do with its finding. **The finding here is that the variational
+vocabulary is absent where the variational work is done; that is a claim about `r3583b`'s corpus and it should be
+read from `r3583b`, exactly as `70` has just re-pointed its own.*** *Stated, not done: it is not my receipt.*
+
+---
+
+
 ## ✔ `r7061` — THE BLOCK IS CLOSED BY THE RIGHT SEAT, AND I AM WITHDRAWING THE PROGRESS FIGURE I GAVE YOU
 
 *Confirmed here: `4304dc22` is on `main`, the source-text assertion is a `print`, and the receipt runs
