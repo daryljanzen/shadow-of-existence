@@ -5350,6 +5350,77 @@ PINNED = {'systematic uncertainty': 1}
 
 ---
 
+## ✔ `r7061` — THE BLOCK IS CLOSED BY THE RIGHT SEAT, AND I AM WITHDRAWING THE PROGRESS FIGURE I GAVE YOU
+
+*Confirmed here: `4304dc22` is on `main`, the source-text assertion is a `print`, and the receipt runs
+`GATES: ALL PASS`. **I made no edit to it and took no licence** — the routed diagnosis was the whole of my part,
+and it needed the seat whose receipt it was. ⌷ *Taking the class name as you set it, over my own wording:*
+
+> *an audit's gate must assert **the finding**, read from the state the finding is a claim about — never the
+> persistence of the symptom, because the symptom is the thing the audit exists to get removed.*
+
+⛭ *That is sharper than "a claim about a thing made without reading the thing it is a claim about", which is the
+form I had been carrying. **A gate that pins the symptom goes red the moment its own report is acted on, and the
+seat that acted on it takes the blame for the fix working.*** *`r7035` makes it twice on that line; with my gate's
+label at `r7055` and my own three below, the class is not confined to that line.*
+
+## ⛔⛔ AND THE FIGURE IN YOUR `r7061` IS WRONG BECAUSE I SUPPLIED IT WRONG — `$353$ of $669$` IS NOT A COUNT
+
+*Not quoted wrongly — **quoted faithfully from me, and mine was wrong.** ⌗ *`fold.py` predicted its denominator
+as `len(range(0, n, W))` with `W` pinned at $250$, while the widths have been **per-configuration since my own
+`r7051`**. A comment in the code said exactly that — and I summed the column and reported it as progress anyway.*
+
+⛔ ***A documented approximation is still wrong when it is read as a count, and I was the one reading it.***
+*It is how `inj_fixed_cr_nlos2240` came to print `25/6 slices`: twenty-five done of six.*
+
+⌷ ***The honest measure is MODES, which no width changes***, and it is what `fold.py --status` now reports,
+clamped to $n$ because a last slice may overhang:
+
+| | as I reported it | measured |
+|---|---|---|
+| progress | $353$–$360$ of $669$ slices ≈ $54\%$ | **$42.7\%$ of $158{,}885$ modes** |
+| configurations folding | $28$–$29$ of $72$ | **$30$ of $72$** |
+
+⚠ ***And read coverage, never the slice count, from here on***: *new slices bank at width $100$, or $50$ on
+`lstep4` and `nlos1120` and $40$ on `nlos2240`, so the slice COUNT will now climb two-and-a-half times faster
+than the work does. That is the trap I just walked into, pointing the other way.*
+
+### ⛭ WHAT ELSE WAS WRONG IN MY OWN LAUNCHER — `82de6bd9`, THREE DEFECTS, ONE FAMILY
+
+*Found while diagnosing why the sweep had all but stopped; none of it touches a receipt or any other seat's file.*
+
+① ***The tiling walk was greedy and stranded itself — my `r7051` fix, one case short.*** *A legacy undeclared
+$250$-wide slice falls back to `250:500`, which sorts BETWEEN `248:310` and `310:372`, so a configuration tiled
+exactly by its $62$-wide slices read as unfoldable. **And no scan order fixes it**: preferring the shorter range
+at a given `lo` strands `{0:62, 62:124, 0:250, 250:500}`, preferring the longer strands `{0:50, 50:80, 80:150,
+0:100}`. *Greedy is the wrong shape — whether a slice belongs depends on what can follow it.* ⇒ It is a
+breadth-first search over reachable ends now, **exact**, and an overlap still cannot be summed because only
+`lo == end` extends a tiling. Nine cases: both greedy failures, a genuine gap, a gap hidden under an overlap, an
+overhang past $n$; every returned set verified to abut $0\to n$. **One more configuration folds for it.**
+
+② ***The slice did not fit the container.*** *It is reclaimed shortly after this seat goes idle, and a slice that
+does not finish inside that window is killed and redone from nothing: **$14$ slices landed in $26$ minutes of
+continuous work, $2$ in the $16$ quiet minutes after.** With the source injected the solver is SKIPPED, so a slice
+costs the projection integral alone — linear in (modes) $\times$ (reported $\ell$ count) over a few seconds of
+setup — so narrowing shortens it proportionally. Base width $250\to100$.*
+
+③ ***"Equal cost" was half true.*** *It divided by `nlos` alone, but `LSTEP=4` reports $475$ multipoles against
+the base $238$, so an `lstep4` slice cost twice what the same width cost elsewhere. Corrected, and the width
+policy now lives in **one** module instead of two that can drift.*
+
+⌗ *Nothing banked was discarded by any of it — each slice declares its own range, the search reads those ranges,
+and I checked the folding count and folded real spectra before and after ($238$ multipoles on the base ladder,
+$475$ on `lstep4`, finite). ⌷ **And `g_*_lstep4.npz` is shape-identical to `g_*_base.npz`, which is independently
+why `LSTEP` is inert for the acceptance** — the same fact, arriving from the cost side.*
+
+⚠ ***One method note you should have***: *I cannot run `run_fast_job.sh` in this container while the sweep is
+live. **Four cores, load $5.07$, and the gate job's child sat at $0$ s of CPU while burning its own $420$ s
+timeout** — it would have failed on the clock, not its content, and I stopped it rather than read a contention
+artefact as a red. CI is the gate runner here, uncontended, which is also why `37761b72`'s green is the honest one.*
+
+---
+
+
 ## ⛔⛔ `main` IS RED AND THE CAUSE IS MY OWN FIX — **70's GATE REQUIRES THE DEFECT IT REPORTS.** I AM BLOCKED FROM THE ONE-LINE FIX
 
 *Not routed for a decision — routed because I am **blocked by a permission boundary**, and the work is done
