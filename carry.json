@@ -174,17 +174,5 @@
     "since": "5d85e6e401d822e0fa9defe89f23cc3b25f2a4f9"
    }
   }
- },
- "main": {
-  "tolerance": {
-   "receipts/L175_dimensional_descent/V1_the_variational_ledgers_premise_is_false.py": {
-    "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/36802241087",
-    "since": "97636d38914adf301337a989c10e4591b4827610"
-   },
-   "receipts/L237_gates_check_declarations/G50_the_receipt_runner_gate_was_green_because_its_cache_had_no_expiry.py": {
-    "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/36802241087",
-    "since": "97636d38914adf301337a989c10e4591b4827610"
-   }
-  }
  }
 }
