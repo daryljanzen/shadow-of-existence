@@ -5375,3 +5375,69 @@ whose Ricci scalar is `2/r_c²` **with a zero Ricci eigenvalue along `χ`**. ⇒
 
 1. *The first draft took the **numerically unstable** root of the `S³` quadratic — `(v ± s)/(v²−1)`, which divides by zero where the chart crosses `v = 1` — and reported `2.8×10⁻⁵` on an identity. The same root as `(1−A)/(v+s)` gives `2.2×10⁻¹⁶`.* ⚠ *A `10⁻⁵` residual on an identity has the shape of a real defect and must not be allowed to look like one.*
 2. *The first draft of the two **scope** gates read **this file's own source** for forbidden names and found them in its own expressions, so neither could ever pass.* ⛔ ***That is the second time this line has written a check that tests its own spelling.*** *The scope claim is about which files the receipt opened, so it is now read from that.*
+
+---
+
+## ⛭⛭⛭ `r7104` — `PO-72` `Q1`: **IT FALLS ON THE TERMINAL EXIT. THE CONSTRUCTION FIXES NO CLOSED-LAYER RADIUS, AND THE OBSTRUCTION IS AN IDENTITY — THE NARIAI MASS CLOSES EXACTLY THE ROUTE THAT FIXES THE RADIUS IN DE SITTER. THE ONE LENGTH ANYTHING HERE FIXES IS `α`, AND IT IS NOT `r₀`.**
+
+*Receipt: `receipts/P15_CR_cosmology/P15_the_construction_fixes_no_closed_layer_radius_because_the_nariai_mass_closes_the_route_that_fixes_it_in_de_sitter_and_the_one_radius_it_does_fix_is_alpha.py` — **19 checks, all pass, 1.4 s.** The only file it opens is the paper. No transfer, no spectrum, no likelihood; your three-grid table untouched; the corrected attribution left exactly as you wrote it.*
+
+⌗ *Calibrated first, and this time the calibration is load-bearing: `r_s` is confirmed at the Nariai value `2α/3√3` on both backgrounds **before** anything turns on it, because the whole finding turns on that number not being zero.*
+
+### ⛭⛭⛭ THE OBSTRUCTION, IN ONE LINE — and it is an identity, not a search
+
+An `S³` slice coincides with a **time-symmetric** one exactly when the metric function is itself `1 − r²/a²`. And
+
+> `f(r) − (1 − r²/a²)  =  − r_s/r  −  r²/α²  +  r²/a²`
+
+carries coefficient **`−r_s`** on `1/r` and **`(a⁻² − α⁻²)`** on `r²`. ⇒ **It vanishes for all `r` only if `r_s = 0` AND `a = α` — two independent conditions.** And `eq:amplitude` pins `r_s` at the Nariai value.
+
+⇒ *** **THE MASS THAT FIXES THE RATE IS EXACTLY WHAT UNFIXES THE CLOSED LAYER'S RADIUS.** One choice, read on two of its consequences. *** ⌗ *That is why "an `S³` of any radius is constructible" came out of `r7102` the way it did: the family is free precisely because the condition that would pick a member is obstructed by `r_s`.*
+
+### ⌗ AND THE CONTROL RETURNS THE AFFIRMATIVE, ANALYTICALLY — which is what makes this a measurement
+
+*In pure de Sitter the same machinery **finds** the radius, in closed form: at `a = α` the auxiliary root `s ≡ 0`, `T′ = αr/(r²−α²)`, the normal's radial part `n^r ≡ 0`, and therefore `K ≡ 0` — **the throat IS the unique maximal `S³`** — while `a = 0.7α` and `1.4α` give `K` neither zero nor constant.* ⇒ *So "no fixed radius" is a property of **this** geometry and not of the method. You asked for a derivation; this is the control that stops the null being an absence.*
+
+### ⇒ ALL FOUR CANDIDATE FIXINGS FALL, AND TWO OF THEM FALL BACK ONTO THE FLAT SLICING
+
+| condition | what it does to the one-parameter `S³` family |
+|---|---|
+| **orthogonality to the fundamental congruence** | **excludes all** — `u_μ = −dτ` *exactly* in the PG chart, so the congruence's unique orthogonal foliation is the constant-`τ` one |
+| **constant cosmic epoch** | **excludes all** — that surface is `R × S²` (`r7102`, recomputed here from the metric rather than recalled) |
+| **time symmetry / maximality** | **excludes all** — by the identity above |
+| **constant mean curvature** | **selects `a → ∞`**, i.e. the flat slice again (`A → 1`, `T′ → 0`); gap scanned over three decades in `a`, nowhere zero at finite radius |
+
+⌗ *And even the flat slice is CMC only in de Sitter: `dK_flat/dr = 9α³r_s²/4r^{5/2}(α²r_s+r³)^{3/2}`, so **the whole `r`-dependence is `r_s²`**, and at `r_s = 0` it is `K = −3/α` identically.*
+
+⌗⌗ *One thing worth having explicitly, since it came out of the first row of that table: `u_μ = −dτ` means **the congruence IS hypersurface-orthogonal** — to the DISTANCE slicing. What it is not orthogonal to is the cosmological layer. That is the precise content of "keeps FLRW's (i) and drops (ii)", and it also says why orthogonality cannot be spent twice.*
+
+### ⛭⛭ WHAT *IS* FIXED, AND IT IS NOT `r₀`
+
+The closed reading's own curvature radius — the one `Ω_k = −Ω_Λ` returns — is
+
+> `c / (H₀ √Ω_Λ)  =  (c/H₀) √(1 + 2/x₀³)  =  α  =  √(3/Λ)`
+
+an **identity** in the construction's own parameterisation: symbolic residual zero, and `2×10⁻¹⁶` on both backgrounds. ⇒ **So the closed readout does fix a length, and it is the substrate's throat.** But
+
+> `α / r₀  =  √3 / x₀  =  1.0320`
+
+⇒ ***it is not the radius the floor is built on.*** *A second, independent reason the attribution could not have been right: even the readout does not return `r₀`.*
+
+### ⇒ WHICH WAY IT FALLS, SINCE YOU ASKED PLAINLY: **RE-DERIVED, NOT WITHDRAWN — BUT NOT AS A PAIR OF SLICINGS**
+
+- *the **flat** reading is a genuine slicing: constant `τ`, Riemann identically zero, so `Ω_k = 0` in the redshift–distance relation (`prop:flat`, re-derived here, and this receipt **confirms** it rather than touching it);*
+- *the **closed** reading is a readout, and `|Ω_k| = Ω_Λ` **is** the statement that its curvature radius is `√(3/Λ)` — one `Λ`, read once as a slicing and once as a length.*
+
+⇒ *** So the plural in "one `Λ` read on two slicings" is **withdrawn**, and the identity is **re-derived** as *one slicing and one invariant length*. The content that mattered — that `Ω_k` is not a free parameter, because its magnitude is forced to `Ω_Λ` — stands exactly, and no number moves. *** ⌗ *I did not try to save the sentence; the pair simply is not there, and what replaces it is stronger because `α = √(3/Λ)` is an identity rather than a correspondence.*
+
+### ⌗⌗ AND THE COST, ON THE RECORD BEFORE IT IS PAID — BOTH WAYS, NEITHER APPLIED
+
+⓵ *If the source spectrum rides the **one fixed closed radius**, it rides `α`: the stretch goes `2.7737 → 2.6876` and the floor's location `ℓ₂ = 7.845 → 7.602`, **−3.10 per cent**.*
+
+⓶ *If it rides the **slicing that is fixed** — the `R × S²` layer, Riemannian at the present epoch with `v² − 1 = 0.336` — then `χ` runs over all of `R` (`τ̃` constant with `τ = τ̃ − χ` free), the Laplacian along it has continuous spectrum reaching zero, and **there is no gap, hence no lowest mode, hence no floor at all**.*
+
+⇒ ⚠ *** Two different answers, and **choosing between them is yours, not mine**: `Q1` asked for the slicing and the radius. I am reporting both so that whichever way you close `PO-72`, the cost is on the record before it is paid — and so that nobody discovers the second one after the first has been written into the paper. ***
+
+### ⌗ YOUR DESIGN RULE, APPLIED RATHER THAN NODDED AT
+
+*You re-pointed two of my checks because they pinned the defect's presence in another lane's prose and went red the moment you acted on the finding. Taken, and taken as a rule rather than as a correction:* **no gate in this receipt asserts the presence of the paper's open question, which this receipt's own answer is meant to close.** *The two sentences — "Which slicing carries the closed reading is open" and "the pair of slicings that realises it geometrically is not yet named" — are **located and printed**, not gated. Every gate reads the geometry. The one corpus string any gate does read is `prop:flat`'s conclusion, which this receipt confirms.*
