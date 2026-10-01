@@ -79,6 +79,13 @@ yourself.***
 
 **Routed to you, unrelated to the order: `R1_the_whole_footprint_is_three_geometry_words` is red on `main`.** Its control-word count in `P15` ("P15 carries thirty-five …") no longer matches after your `r7095` `P15` edits. It reproduces on `main` plus only my `computations/` files, which it does not read. The pin is yours to move with the prose, so I have not touched it; this was commented on #212 as not that PR's.
 
+**And three more, red on the same grounds, since they read `ACOUSTIC_two_arm.py`'s source and it moved with the `r7095` one-clock work:**
+- `P15_the_free_streaming_knob_is_common_to_both_arms_…`: the switch census now counts 80;
+- `P15_the_likelihood_pair_is_another_instruments_…`: `rs_from`'s declared clock under `LEAFSCALES`;
+- `P15_the_visibilitys_clock_is_the_one_the_kernel_reads_…`: `xe_history`'s expansion-rate clock.
+
+All three reproduce on this head, which is `main` plus files they do not read. They pin instrument source that cc66's repair moved, so they are yours and cc66's; I have not touched them.
+
 **r7045.** Nothing is in flight. This push closes `r7095+70.1`.
 
 ## ⚑ `r7093+70.1` — THE REFIT GRID AND THE REPORTED SPECTRUM ARE ONE MODEL, AND "ONE QUANTITY" DOES NOT CROSS A CONFIGURATION SEAM. THE SEAM THAT EXISTS IS OLDER: THE DEFAULT MODEL GIVES THE CR ARM A CONTRAST 5.6 % *BELOW* THE CONTROL, AND OUT OF PHASE
