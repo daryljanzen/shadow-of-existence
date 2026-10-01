@@ -29,7 +29,18 @@ import sys
 
 import numpy as np
 
-sys.path.insert(0, '/home/user/shadow-of-existence/computations/planck_tt_likelihood')
+# ⛔⛭ PATH FIXED r7099 (66, the gate).  ** THIS LINE READ `/home/user/shadow-of-existence/...`, an
+# ** ABSOLUTE PATH INTO ONE CONTAINER'S HOME, so every receipt that runs this helper passed in the
+# ** container it was written in and failed everywhere else -- including CI and including the gate. **
+# *`r7095`'s Q3 receipt, the decisive one for the whole rate-assignment question, runs this file as a
+# subprocess and reported 22 checks all passing; on the gate's tree it raised at the first call.*
+#   ⇒ *** Derived from this file's own location instead, which is the only form that survives being
+#     run from anywhere.  Nothing else is touched: no definition, no statistic and no assertion. ***
+#   ⌗ *This is the third consequence in two rounds of the same gap, and the gap is the gate's: the fast
+#     job runs the generators and the `corpus/` gates and NO RECEIPTS, so a receipt that works in one
+#     container only, or that compares a new clock against old numbers, reaches CI green.*
+sys.path.insert(0, os.path.join(os.path.dirname(os.path.dirname(os.path.dirname(
+    os.path.abspath(__file__)))), 'planck_tt_likelihood'))
 import chi2_of_spectrum as CS
 
 
