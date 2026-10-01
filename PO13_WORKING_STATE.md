@@ -6400,3 +6400,66 @@ background. **A converged acceptance with an unconverged retention would itself 
 the two are reported apart — as this seat's own pre-registration required before either was read.* ⛔ *Nine
 of twelve inside the floor is **not the row's convergence verdict**. And nothing here says which cosmology
 is right.*
+
+## cc66.72 — the sweep at full coverage: nothing moves it, and eleven of twelve readings are still not converged
+
+**`r7041`'s convergence sweep finished at 10:53 on 2026-10-01: $158{,}885$ of $158{,}885$ modes, $66$ of $72$
+configurations folding to a complete spectrum.** Two injection schemes (`fixed`, `sweepown`) $\times$ two arms
+(`cr`, `lcdm`) $\times$ twelve settings $= 48$ runs, every one read.
+
+| | |
+|---|---|
+| `fixed` band-RMS ratio | $1.0587$ at **every** setting of **every** axis |
+| `sweepown` band-RMS ratio | $1.0659$–$1.0660$ |
+| worst last step, all twelve readings | $\mathbf{0.008\%}$ against the pre-registered floor of $0.6\%$ — a factor of $73$ inside |
+| `r6919`'s banked base points | $1.0587/{+}0.01189$ and $1.0659/{+}0.02260$ — **reproduced exactly** |
+| readings reportable as **converged** | $\mathbf{1 \text{ of } 12}$ — `sweepown`/`NLOSW` only |
+| the other eleven | seven *not turned over*, four *two points only* |
+
+⛔ **STABILITY IS NOT CONVERGENCE AND ONLY THE FIRST IS CLAIMED.** The pre-registration: *a sequence that has not
+turned over is not converged whatever its last step*, and monotonicity is undefined on two points. `sweepown`'s
+`NLOSW` is the only sequence that reverses — $1.0659425 \to 1.0659377 \to 1.0659385$ — so it alone can be read as
+having turned over. *A small last step is the cheapest way to look converged without being it.*
+
+### ⛭ five axes on the arm, six on the control — and the run log is the evidence
+
+`NK` is inert on the arm **by construction** (ladder $\sqrt{L(L+2)}\,$stretch to `KMAXL`, `NK` a decimation cap
+never reached; byte-identical $k$ and $\eta$, $\max|D_\ell| = 0$), so its six arm configurations read
+`inert: = _cr_base  NOT QUEUED` and never started; on the control it carries $2547 \to 3822 \to 5094$ modes.
+`LSTEP` is the mirror: **real** for the sweep ($238 \to 475$ reported $\ell$) and **inert for the acceptance** on
+both arms, as `cc66.70` ② recorded.
+  ⌗ *The last two configurations in the sweep to finish were `real_lcdm_nk15` and `real_lcdm_nk20` — `NK` on the
+  **control**. The asymmetry the verdict is gated against is in what the launcher queued.*
+
+⚠ **The terminal state is $66$ of $72$, never $72$ of $72$** — $66$ queued plus the six inert. *A completion test
+of "$72$ of $72$" cannot be met by this apparatus; coverage per cent is the clean criterion, since an inert row
+carries no mode count and enters neither side of the sum.*
+
+### ⛔ three instruments that answered with less state than their question needed
+
+① **`report_c.py` opened whole-run `.npz` only.** Five configurations finished unsliced; sixty-one are tiled on
+`KSLICE`. At **full** coverage the reader therefore called $39$ of $48$ runs *"not on disk yet"* and read two
+points of one axis — a partial read of a complete sweep. It now loads through `fold.load`, the one authority on
+both forms.
+② **The receipt's fallback table, banked at $4$ dp, reported eight of twelve converged against the live path's
+one** — the rule tests the **signs** of the steps, and points identical to $4$ dp round to differences of zero,
+which read as a turn. Banked at full precision instead.
+③ **The completion test itself** — see above. *Three in one revision, all the same shape.*
+
+### ⌗ what it cost, and the apparatus findings
+
+The container was reclaimed at essentially **every cycle for $\sim 11$ hours**, each reclaim killing **four
+in-flight slices** redone from nothing; only the launcher's idempotence preserved what was banked. Slice width was
+cut to **$100$ modes** so a slice can finish inside a container window. **This box has four cores**, so
+`run_fast_job.sh` must never run while four solvers are live: its child gets $0$ s of CPU and fails on its own
+$420$ s clock rather than on its content. *The three fold defects at `82de6bd9` are the standing record.*
+
+### ⛔ WHAT THIS IS NOT
+
+***Nothing here is a spectrum of the model*** — every run is the projection's transfer of a **known** analytic
+oscillation (`SRCINJ`), comparable with neither a banked spectrum nor the sky. ***And the quantity is the
+BAND-RMS RATIO, not "the retention"*** (`r7057`/`r7059`/`r7061`): about a **third** of the reported $+0.0139$ per
+acoustic period is a phase drift between the two arms' *source* combs, which a band root-mean-square reads as
+retention — *the rise survives; two thirds of its size does.* ***It is not `cc66.70`'s acceptance row*** — that
+computes the kernel's $k$-acceptance from the background, this measures spectra. ⛭ *Node 70 audits first where
+the verdict is read off a banded statistic, which this is. And nothing here says which cosmology is right.*

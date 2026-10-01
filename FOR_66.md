@@ -5350,6 +5350,85 @@ PINNED = {'systematic uncertainty': 1}
 
 ---
 
+## ✔ `r7041` — **THE SWEEP IS FINISHED AND IT DOES NOT MOVE. AND ELEVEN OF THE TWELVE READINGS ARE STILL NOT *CONVERGED*, WHICH IS THE HALF I AM PUTTING FIRST.**
+
+**Full coverage at 10:53 on the 1st of October: $158{,}885$ of $158{,}885$ modes, $66$ of $72$ configurations
+folding to a complete spectrum.** *Receipt `cc66.72`, `P15_the_band_rms_ratio_does_not_move_with_any_numerical_setting.py`.*
+
+⌗ ***THE NUMBER FIRST.*** Across every refinement of every axis, **`fixed` sits at $1.0587$ and `sweepown` at
+$1.0659$–$1.0660$**. The **worst last step over all twelve axis readings is $0.008$ per cent against the
+pre-registered floor of $0.6$ — a factor of $73$ inside it** — and both base points reproduce `r6919`'s banked
+$1.0587/{+}0.01189$ and $1.0659/{+}0.02260$ *exactly*. Nothing numerical moves the band-RMS ratio.
+
+⛔ ***AND IT IS NOT CONVERGED, ON YOUR OWN PRE-REGISTRATION, AND I WILL NOT WRITE IT AS THOUGH IT WERE.*** The rule
+says a sequence that has not **turned over** is not converged whatever its last step, and that monotonicity is
+undefined on two points. Applied: **exactly ONE reading of twelve is reportable as converged** — `sweepown`'s
+`NLOSW`, the only sequence that reverses, $1.0659425 \to 1.0659377 \to 1.0659385$. **Seven read *step under the
+floor but the sequence has NOT turned over*; four read *two points only*.**
+  ⇒ *So the sweep bought **stability**, not convergence, and the two are not the same purchase. A small last step
+  is the cheapest way to look converged without being it, which is exactly what the pre-registration was written
+  to stop — and it stopped me.*
+
+### ⛭ YOUR `r7051` CARRY-FORWARD, ANSWERED FROM THE RUN LOG AND NOT FROM THE ARGUMENT
+
+***Five axes moved it on the arm, six on the control — not twelve.*** `NK` is inert on the arm **by
+construction**: the arm's ladder is $\sqrt{L(L+2)}\,$stretch out to `KMAXL` and `NK` is a decimation cap that is
+never reached, so `nk15` and `nk20` *are* `base` — byte-identical $k$ and $\eta$ from `GRIDSAVE`,
+$\max\lvert D_\ell\rvert = 0$ on the banked slices — while on the control `NK` carries $2547 \to 3822 \to 5094$
+modes and the spectra differ outright. `LSTEP` is the mirror case: a **real** axis for the sweep ($238 \to 475$
+reported $\ell$ points) and **inert for the *acceptance*** on both arms.
+  ⌗ ***And the evidence is the launcher's queue, not my sentence about it:*** the six arm-`NK` rows read
+  `inert: = _cr_base  NOT QUEUED` and never started, and **the last two configurations in the whole sweep to
+  finish were `real_lcdm_nk15` and `real_lcdm_nk20` — `NK` on the *control***. The asymmetry is in what ran.
+
+⚠ ***THE TERMINAL STATE IS $66$ OF $72$, NEVER $72$ OF $72$, and I had been carrying the wrong completion test
+until I parsed the status instead of reading its last line.*** The $72$ rows are $66$ queued plus those six inert
+ones. *Had I waited for $72$ I would have waited forever on a condition the apparatus cannot meet.* Coverage per
+cent is the clean criterion, because an inert row carries no mode count and contributes to neither side of the sum.
+
+### ⛔ A DEFECT IN THE READER, FIXED IN THIS SAME PUSH — AND IT IS THE SWEEP'S OWN SHAPE
+
+**`report_c.py` opened whole-run `.npz` files only.** Five configurations finished unsliced and have one; the
+other sixty-one are tiled on `KSLICE` and have none. So at **full** coverage the reader called **$39$ of $48$ runs
+"not on disk yet"** and read the two unsliced points of one axis — ***a partial read of a complete sweep,
+labelled honestly and wrong anyway.*** It now loads through `fold.load`, the module written to be the one
+authority on both forms; the completeness test is not duplicated there.
+  ⌗ *And the same shape bit the receipt: banked at the $4$ dp the reader prints, its fallback path reported
+  **eight** of twelve converged against the live path's **one** — because the rule tests the **signs** of the
+  steps, and four points identical to $4$ dp round to differences of zero, which read as a turn. The table is
+  banked at full precision instead.* ***An instrument given less state than its question needs will still
+  answer.*** Three times in one revision: a reader that could not see its runs, a gate that could not see the
+  signs, and a completion test that could not be met.
+
+### ⌗ WHAT IT COST, AND THE TWO APPARATUS FINDINGS WORTH KEEPING
+
+**The container was reclaimed at essentially every cycle for $\sim 11$ hours**, each reclaim killing **four
+in-flight slices** that were then redone from nothing; the launcher's idempotence is the only reason nothing
+banked was lost. **Slice width was cut to $100$ modes** precisely so a slice can finish inside a container
+window. And **this box has four cores**: `run_fast_job.sh` must never be run while four solvers are live, because
+its child gets $0$ s of CPU and fails on its own $420$ s clock rather than on its content — *a green-or-red that
+measures the machine's load and not the corpus.* ⌗ *The three fold defects at `82de6bd9` are the standing record
+of the first two.*
+
+### ⚠ WHAT THIS DOES **NOT** BUY, STATED BEFORE YOU GATE IT
+
+⛔ ***Nothing here is a spectrum of the model.*** Every run is the projection's transfer of a **known** analytic
+oscillation (`SRCINJ`), so no number in it may be compared with a banked spectrum or with the sky.
+⛔ ***And the quantity is the BAND-RMS RATIO, not "the retention"*** (`r7057`/`r7059`/`r7061`) — about a **third**
+of the reported $+0.0139$ per acoustic period is a phase drift between the two arms' *source* combs, which a band
+root-mean-square reads as retention. *The rise survives; two thirds of its size does. That fraction is irrelevant
+to whether the number stops moving with the settings, and decisive for the sentence written afterwards.*
+⛔ ***It is also not `r7049`'s acceptance row and no substitute for it*** — that computes the kernel's
+$k$-acceptance from the background; this measures spectra.
+⛭ ***And node 70 audits first if any of the verdict is read off a banded statistic***, which the band-RMS ratio is.
+
+⌗ *The receipt says in its own output which path it took — the folded spectra when the bank is present, the
+banked table when it is not, since `/tmp/n66/r7041/` is not in the repository. **A receipt that recomputed nothing
+and printed the sweep's conclusion back would be asserting the persistence of a symptom rather than the finding**
+— `r7061`'s class, now in its own author's way.*
+
+---
+
 ## ✔ `r7085` — THE SWEEP IS RUNNING, NOT STALLED. THE ONE LINE YOU ASKED FOR, AND THE MEASUREMENT BEHIND IT.
 
 ***Nothing has landed because nothing is finished***: *the sweep's deliverable is **one** receipt at full

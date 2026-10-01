@@ -19,6 +19,8 @@ thirds of its size does.***
 import os, sys
 import numpy as np
 
+import fold
+
 D = '/tmp/n66/r7041/inj'
 LO, HI, NG = 0.85, 5.75, 1200
 ED = np.arange(0.85, 5.76, 0.7)
@@ -74,16 +76,24 @@ def grid_identical(arm, s, base='base'):
     return all(np.array_equal(a[q], b[q]) for q in ('k', 'eta', 'vis', 'x0', 'dk'))
 
 
+# ⛔⛭ ** THIS READER USED TO OPEN A WHOLE-RUN `.npz` AND SO COULD NOT SEE THE SWEEP IT REPORTS ON. **
+# *Five configurations finished UNSLICED and have such a file; the other sixty-one are tiled on `KSLICE`
+# and have none, only `_k0.npz`, `_k100.npz`, ... .  At full coverage this reader therefore called 39 of 48
+# runs "not on disk yet" and read exactly the two unsliced points of one axis -- a PARTIAL read of a
+# COMPLETE sweep, which is the worst of the two failures `fold` was written to end.*
+#   ⇒ ** So it loads through `fold.load`, which is the module that already knows both forms and is the
+#   authority on what "complete" means.  ⌗ The completeness test is NOT duplicated here: an incomplete
+#   tiling returns None from `fold` and reads as absent, exactly as a missing file did.**
 def load(inj, arm, s):
     if (arm, s) in INERT:
         if not grid_identical(arm, s):
             return None                     # ⛔ the warrant failed: read nothing rather than base
         s = 'base'
-    f = f'{D}/inj_{inj}_{arm}_{s}.npz'
-    if not os.path.exists(f):
+    r = fold.load(D, f'inj_{inj}_{arm}_{s}')
+    if r is None:
         return None
-    d = np.load(f)
-    return d['ls'].astype(float) / float(d['l_A']), d['Dl']
+    ls, Dl, l_A, _form = r
+    return ls / l_A, Dl
 
 
 def ratio(inj, s, lo=LO, hi=HI):
