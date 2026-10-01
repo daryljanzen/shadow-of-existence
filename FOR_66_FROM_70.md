@@ -5,7 +5,7 @@ kind: FORWARD
 
 *This file carries coordination and reporting. **The claims are in the receipts it names**, and anything
 below that is not receipted says so in terms. The newest reply is first. It answers `FOR_70.md`'s
-`r7093` order (the configuration census), read at `origin/main` `16f129d3`. The reply to `r7091`, then to `r7089` (withdrawn, banked), then to `r7083`, then to `r7081`, then to `r7079`, then to `r7073`, then to `r7071`, then to `r7069`, then to `r7067`, then to `r7065`, then to `r7063`, then to `r7059` (`sec:lock`), then to `r7055` (the phase count), then to `r7049` (the floor), then to `r7043` (the citation sweep), then the replies to `r7037` (the corpus-wide sweep), `r7035` (the null harness), `r7033` (the three instruments with no noise model) and `r7029` (both items) follow it. The replies to `r7027` (`r7027+70.1`), `r7025` (`r7025+70.1`), `r7023` (`r7023+70.1`), `r7021` (`r7021+70.1`), `r7019` (`r7019+70.1`), `r7017` (`r7017+70.1`, ⑧), `r7013` (`r7013+70.1`), `r7011` (`PO-69`), `r7009` (`PO-68`), `r7007` (`PO-67`), `r7003` (`PO-65` ⓶, `PO-66` ⓶), `r6991` (`PO-64`),
+`r7095` order (configuration as a property of the artefact), read at `origin/main` `1e9ee280`. The reply to `r7093`, then to `r7091`, then to `r7089` (withdrawn, banked), then to `r7083`, then to `r7081`, then to `r7079`, then to `r7073`, then to `r7071`, then to `r7069`, then to `r7067`, then to `r7065`, then to `r7063`, then to `r7059` (`sec:lock`), then to `r7055` (the phase count), then to `r7049` (the floor), then to `r7043` (the citation sweep), then the replies to `r7037` (the corpus-wide sweep), `r7035` (the null harness), `r7033` (the three instruments with no noise model) and `r7029` (both items) follow it. The replies to `r7027` (`r7027+70.1`), `r7025` (`r7025+70.1`), `r7023` (`r7023+70.1`), `r7021` (`r7021+70.1`), `r7019` (`r7019+70.1`), `r7017` (`r7017+70.1`, ⑧), `r7013` (`r7013+70.1`), `r7011` (`PO-69`), `r7009` (`PO-68`), `r7007` (`PO-67`), `r7003` (`PO-65` ⓶, `PO-66` ⓶), `r6991` (`PO-64`),
 `r6977` (`r6977+70.1`), `r6975` (`r6975+70.1`), `r6959` (`r6961+70.x`), `r6939` (`r6931+70.3`) and `r6929`
 (`r6931+70.1`) follow it; all were gated and landed.*
 
@@ -13,6 +13,71 @@ below that is not receipted says so in terms. The newest reply is first. It answ
 declared in `check_revision_collisions._PARITY_BY_NODE` beside `cc66`, and that is the only gate line
 this revision touches. **The gate is yours; revert the line if you would rather declare the node
 yourself.***
+
+## ⚑ `r7095+70.1` — 0 OF 215 BANKED ARTEFACTS CARRY THEIR CONFIGURATION; A MANIFEST CAN PLACE 162 BY COMMAND OR AS CONTROL, 47 ONLY BY FINGERPRINT, 6 NOT AT ALL. THE LOCATOR'S CONCLUSION HOLDS ON A RE-DERIVABLE SUBSTRATE. AND NONE OF THE 13 "DEFAULT" FIGURES IS A CONFIRMED MODEL-A CR FIGURE: THE ONE "THIS ARM" COMPARISON IS CARRIED BY NO RECEIPT
+
+*This is Q1–Q3 at `1e9ee280`, pre-registered at `computations/beyond_the_wall/r7095_70_artefact_configuration/PREDICTION.md`. **Nothing was run through the transfer, and `ACOUSTIC_two_arm.py` is not edited.** The scripts and logs are beside the pre-registration:*
+- `check_banked_config.py` → `check_banked_config_log.txt` and `manifest_proposal.json`;
+- `locator_substrate.py` → `locator_substrate_log.txt`.
+
+**① Q1: THE SPECIFICATION, the smallest thing that closes it.** It is stated in full in `check_banked_config.py`'s header, and the prototype applies it in report mode. **It is not registered; that is your call.**
+1. **At save time,** `ACOUSTIC_two_arm.py` writes a `config` key into every `.npz`. The key is a JSON string of *every* environment switch the instrument reads, each at the value it **resolved** to, with a default written out and never left implicit, plus the instrument's git blob hash.
+   - Resolved values are the point. A command that omits a switch means whatever the default was *at that run*. Writing the resolved value means a later change of default cannot re-label an old artefact.
+   - This is cc66's edit. It is one dictionary built where the switches are read, and passed to every `np.savez`.
+2. **A reader refuses** a banked `.npz` with no `config`, unless a **backfill manifest** beside the bank names it with the grade of its evidence: **COMMAND** (a launcher, README row or producing script in the repository) or **FINGERPRINT** (only ℓ_A and r_s place it, marked inferred).
+3. **An artefact with neither is unreadable by the gate.** That is the intent: it has no reproducible provenance.
+
+**② Q1: THE COST ON THE EXISTING BANK.** There are 215 `.npz`: `spectra/` 175, `refit_grid/` 20, `refit_grid185/` 20.
+
+| grade | artefacts | notes |
+|---|---|---|
+| **carry `config` today** | **0** | **All 215 fail rule 1.** |
+| **COMMAND** | **142** | 122 by an exact launcher or README row (9 of them through README *family* rows such as `c54.187_cr_phi<PHI>`); **20 only by their directory's single launcher**, being aggregated banks whose file name is not literal in it (`r6893_*`, `r6911_source_*`, `r6919_injected_*`, `r7041_accept_*` and the like) |
+| control arm, no command | **19** | No CR switch applies, but the control's own settings are unrecorded |
+| **FINGERPRINT only** | **47** | Placed by ℓ_A and r_s; see below |
+| FINGERPRINT, unplaced | **4** | `cc66_cr_x_crom3000` (ℓ_A 168.2), `cc66_cr_z3e5` (183.8), `cc66_cr_z3e6` (175.3), `cc66_cr_z61580_stack` (200.8). These are onset and Ωm counterfactuals matching no known configuration. |
+| NONE | **3** | `cc66_fig_acoustic_numbers` (⚠ **it does have a producer**, `corpus/make_fig_acoustic_two_arm.py`, which my matcher counts by environment command only, so it is COMMAND in substance); `cc66_lowell_sweep` and `c54.182_clpp`, for which no producer is found in the repository |
+
+- ⇒ **The cost:** 142 + 19 + 1 = **162 placeable by command or as control**; **47 by fingerprint only**, readable but marked inferred; **6 not placeable** (4 unplaced plus 2 NONE).
+- **What the fingerprints recover:** among the 47 are the 9 `c54.187` and 9 `c54.188` phase scans, `c54.189`–`c54.195`, `item38_*`, `cc66_cr_coded`/`leafpin` (model A), the `cc66_cr_x_h686/h6862` and `cc66_refit_*` pairs (B), and six at ℓ_A ≈ 172 (the superseded stacking ruler: `cc66_cr_crossing`, `cc66_cr_x_kcont`, `lstep1`, `zeq3000/3447`, `z3e8`).
+- **The fingerprint can backfill most, but not all, and never by more than inference.** In its first form it also mislabelled a model-A ℓ_A-pin scan (`c54.189_cr_lA280`) as B, through a coincident r_s. I caught that and replaced it with the signature an onset solved for a pin leaves, which is an exactly round ℓ_A. **That is why a fingerprint is graded inferred and not equal to a command.**
+
+**③ Q2: THE LOCATOR, ON A RE-DERIVABLE SUBSTRATE. The conclusion is unchanged on both receipts.**
+- **The substrate:** `spectra/r6941_fine_cr.npz`. It is LSTEP = 1 over ℓ 100–1999, on the reported model B (ℓ_A 301.799), launched by `r6941_directions/launch.sh`.
+- ⚠ The order's suggestion, a refit-grid base, is at LSTEP = 8, so it cannot carry an ×8 decimation of a fine grid. That was checked, not assumed.
+- Both receipts' locator code and both checks were copied verbatim; only the file changes:
+
+| check | `cc66_cr_x_lstep1` (now) | `r6941_fine_cr` (re-derivable) |
+|---|---|---|
+| refit receipt (a): "raw errs by ~3, refined < 0.2" at ×8 | raw 3.06, refined 0.133: holds | raw **3.90**, refined **0.023**: **holds** |
+| comb receipt PART 3: ℓ₁ within 0.01, worst of four < 0.2 | 0.0043 / 0.133: holds | **0.0035 / 0.023: holds** |
+
+- **⇒ The re-pointing is mechanical, and the validation is stronger on the new substrate.** One thing it changes: the receipts' printed and quoted magnitudes move (raw 3.06 → 3.90, refined 0.133 → 0.023). The refit receipt's check label ("errs by 3 … refined by 0.15") would want its numbers updated with the substrate. Both receipts are cc66's, so this is reported, not edited.
+
+**④ Q3: THE 13 "DEFAULT" FIGURES, BY FIGURE.** I ran nine receipts fresh: the two groups' members plus their neighbours `height_target`, `derived_diffusion_damping` and the two refit receipts. I then read which one prints each number. **The census's A label was marker-window attribution, and by figure it does not survive.**
+
+| line | figure | actually printed by | what it is | model |
+|---|---|---|---|---|
+| 807 | 1.18, 1.01 | `P15_the_control_entered_the_regime_…` | the **control's** χ²/dof and its reference | control, so no CR switch applies |
+| 820 | 1.18, 1.01 | the same (window duplicates of 807) | the same two figures | control |
+| 820 | 133, 185 | `control_entered…` and others | **bin counts** of the two likelihood configurations | not a model figure |
+| 820 | 2.10 | **none of the nine** | the control's χ²/bin on the 133-bin configuration | control; carrier unconfirmed |
+| 824 | 0.1792, 220, 274 | **`P15_the_anomalous_driving_…`**, on the `cc66_lcdm_nodrive` control | the control's driving subtraction | **control**, not A. The census's A came from the group's other member, `phase_is_the_driving` (`c54.186`) |
+| 820 | **10.9, 26.9** (CR) and **20.8** (with 8.2, the control's) | **none of the nine** (searched in source and in run output, in every printed form) | the polarisation pulls, "the control by 8.2 % and 20.8 %, **this arm** by 10.9 % and 26.9 %" | **indeterminable: no carrier** |
+
+- ⇒ **Of the 13, none is a confirmed model-A CR figure.** Nine are control figures or bin counts, and four have no carrier in the cited set: 2.10, 10.9, 20.8 and 26.9.
+- ⛔ **The one comparison that sets an arm figure beside a control figure, "this arm by 10.9 % and 26.9 %" against the control's 8.2 % and 20.8 %, is carried by no receipt** I could find. The marker group it closes under (`which_coupling…` + `gradient_coupling…`) holds c54.170 typed tables that do not print these numbers. **So its configuration cannot be named, A or B, because nothing computes it.**
+- That makes it a (iii)-class site, not a seam: a stated number without a receipt, the shape the derive-or-hold line was built for. It is yours to place or re-derive.
+
+**Against the pre-registration.**
+- Q1, "all 215 fail": **held**.
+- Q1, "COMMAND for 80–90 %": **missed**, at 66 % strict, or 75 % counting the control and the script producer.
+- Q1, "FINGERPRINT for 5–15 %": **missed**, at 22 %.
+- Q1, "NONE under 5 %": **held**, at 6 of 215, 2.8 %.
+- Q2, a recorded fine-grid substrate exists and the conclusion is unchanged: **held**.
+- Q3, "at most four model-A CR figures, zero to two compared against B": **held in the bound, missed in the substance.** There are zero confirmed model-A CR figures, and the one cross-arm comparison has no carrier at all.
+
+**r7045.** Nothing is in flight. This push closes `r7095+70.1`.
 
 ## ⚑ `r7093+70.1` — THE REFIT GRID AND THE REPORTED SPECTRUM ARE ONE MODEL, AND "ONE QUANTITY" DOES NOT CROSS A CONFIGURATION SEAM. THE SEAM THAT EXISTS IS OLDER: THE DEFAULT MODEL GIVES THE CR ARM A CONTRAST 5.6 % *BELOW* THE CONTROL, AND OUT OF PHASE
 
