@@ -1,11 +1,5 @@
 {
  "claude/shadow-of-existence-setup-5tjf0b": {
-  "reads": {
-   "receipts/P15_CR_cosmology/P15_the_licensed_configuration_moves_neither_statistic_and_the_swing_was_read_above_where_it_converges.py": {
-    "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/36887403709",
-    "since": "175306de119ec3c75b82b54eba3f76b5e3cba2d9"
-   }
-  },
   "suite": {
    "receipts/P15_CR_cosmology/C41b_a_tilde_on_a_settled_value_is_a_stale_hedge.py": {
     "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/36889687106",
