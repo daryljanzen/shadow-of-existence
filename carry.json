@@ -28,6 +28,12 @@
   }
  },
  "main": {
+  "suite": {
+   "receipts/L_probability/R1_the_whole_footprint_is_three_geometry_words.py": {
+    "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/36868528870",
+    "since": "16f129d3f66666f2b51591b840f378ee6b76988a"
+   }
+  },
   "tolerance": {
    "receipts/L_numerics/Q1_a_stated_tolerance_is_a_request_and_the_corpus_answers_it.py": {
     "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/36856022588",
