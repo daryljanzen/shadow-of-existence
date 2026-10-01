@@ -150,7 +150,25 @@ REGISTRY = [
      r'|the transfer is unity'
      r'|cosmogenesis is not a chain'
      r'|the chain is excluded'
-     r'|the comb (?:is|as) a prediction'
+     # ⛔⛭ r7091 (66).  ** `the comb (?:is|as) a prediction` STOOD HERE AND IS REMOVED, because it
+     #   does not name its own subject and the corpus has TWO COMBS. **  The withdrawn apparatus's
+     #   comb is the 420-mode comb read off the per-cycle map; the ACOUSTIC comb is the CMB's
+     #   $\ell_A$ harmonic series, a different object in a different sector, and whether IT is a
+     #   prediction or a fitted pin is a live question this revision put to two seats.  The
+     #   alternative fired for the first time in 4,600 revisions on those two order lines, and
+     #   neither asserts anything about a periodic map.
+     #   ⌗ ** AND IT HAD NO KNOWN-POSITIVE. **  All five of this label's registered positives are
+     #   carried by the alternatives that DO name the apparatus -- $|\lambda|=1$, the per-cycle map,
+     #   a complete cycle with a branch point at each end, propagating across a full cycle, the
+     #   cyclic structure of the excursion.  The withdrawn text never used this phrase: it appears
+     #   nowhere in any document in the repository's history before this revision's orders.
+     #   ⇒ *** A pattern alternative that has never fired on the claim, and whose first firing in
+     #     4,600 revisions is on another sector's object of the same name, is not an instrument --
+     #     it is a vocabulary collision waiting for a subject. ***  This is the SAME correction
+     #     already recorded one entry above, where "a function of $\hat a$ alone" fired four times
+     #     on files that narrated the reasoning; there the false hits were a CONSEQUENCE quoted
+     #     while reasoning, and here they are a NOUN the two sectors share.  *The pattern must name
+     #     the claim's own object, not a sentence the claim could have been written in.*
      r'|a complete cycle with a branch point at each end'
      r'|across a full cycle'
      r'|the cyclic structure of the excursion'

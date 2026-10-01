@@ -95,6 +95,24 @@ _UNI={'§':r'\S{}','°':r'\ensuremath{^\circ}','¹':r'\textsuperscript{1}','²':
 #     either is ever partial again -- which is the difference between a fix and a fix that holds. **
 _CIRCLED = {chr(0x24F5 + _i): '(' + str(_i + 1) + ')' for _i in range(10)}    # ⓵..⓾
 _CIRCLED.update({chr(0x2460 + _i): '(' + str(_i + 1) + ')' for _i in range(20)})  # ①..⑳
+# ⛔⛭ EXTENDED r7091 (66): ** THE SAME PARTIAL-FAMILY FAILURE AGAIN, ONE SLOT EARLIER THAN EITHER
+# ** RANGE BEGINS.  Both generations above start at ONE, and Unicode puts the circled ZERO outside
+# ** the run of digits in each case -- `⓪` at `U+24EA`, below `①`, and `⓿` at `U+24FF`, above `⓾`.
+# *An INDEX row labelling a receipt's check `⓪` -- which this revision's does, for the check that
+# reads the grid's own configuration BEFORE the grid is used -- refused to generate
+# `appendix_receipts_corpus.tex` at all, exactly as `⓺ᶜ` did at `L-262` and the script capitals at
+# `L-267`.*
+#   ⇒ *** A FAMILY GENERATED FROM ITS SECOND MEMBER IS STILL A PARTIAL TABLE, and `r3144`'s own
+#       lesson -- cover the family, generated, not the glyph that was used -- was itself written
+#       from `range(10)` and `range(20)` starting at one.  The repair is the lesson applied to the
+#       repair. ***  ⌗ *And a receipt numbering a check from zero is not a quirk: it is the form for
+#       a check that establishes what the later checks are ABOUT, which is why the glyph will recur.*
+_CIRCLED[chr(0x24EA)] = '(0)'          # ⓪ -- the ①..⑳ family's zero, in a different code point
+_CIRCLED[chr(0x24FF)] = '(0)'          # ⓿ -- the ⓵..⓾ family's zero, likewise
+_partial0 = [c for c in '⓪⓿①⓵' if c not in _CIRCLED]
+if _partial0:
+    raise SystemExit('make_receipt_appendix: the circled families are PARTIAL AT ZERO -- '
+                     + repr(_partial0))
 _SUPER = {'\u1d43': r'\textsuperscript{a}', '\u1d47': r'\textsuperscript{b}',
           '\u1d9c': r'\textsuperscript{c}', '\u1d48': r'\textsuperscript{d}',
           '\u1d49': r'\textsuperscript{e}', '\u1da0': r'\textsuperscript{f}',
