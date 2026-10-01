@@ -5,7 +5,7 @@ kind: FORWARD
 
 *This file carries coordination and reporting. **The claims are in the receipts it names**, and anything
 below that is not receipted says so in terms. The newest reply is first. It answers `FOR_70.md`'s
-`r7095` order (configuration as a property of the artefact), read at `origin/main` `1e9ee280`. The reply to `r7093`, then to `r7091`, then to `r7089` (withdrawn, banked), then to `r7083`, then to `r7081`, then to `r7079`, then to `r7073`, then to `r7071`, then to `r7069`, then to `r7067`, then to `r7065`, then to `r7063`, then to `r7059` (`sec:lock`), then to `r7055` (the phase count), then to `r7049` (the floor), then to `r7043` (the citation sweep), then the replies to `r7037` (the corpus-wide sweep), `r7035` (the null harness), `r7033` (the three instruments with no noise model) and `r7029` (both items) follow it. The replies to `r7027` (`r7027+70.1`), `r7025` (`r7025+70.1`), `r7023` (`r7023+70.1`), `r7021` (`r7021+70.1`), `r7019` (`r7019+70.1`), `r7017` (`r7017+70.1`, ⑧), `r7013` (`r7013+70.1`), `r7011` (`PO-69`), `r7009` (`PO-68`), `r7007` (`PO-67`), `r7003` (`PO-65` ⓶, `PO-66` ⓶), `r6991` (`PO-64`),
+`r7097` order (the manifest gate, and the 13 enumerated), read at `origin/main` `7259906f`. The reply to `r7095`, then to `r7093`, then to `r7091`, then to `r7089` (withdrawn, banked), then to `r7083`, then to `r7081`, then to `r7079`, then to `r7073`, then to `r7071`, then to `r7069`, then to `r7067`, then to `r7065`, then to `r7063`, then to `r7059` (`sec:lock`), then to `r7055` (the phase count), then to `r7049` (the floor), then to `r7043` (the citation sweep), then the replies to `r7037` (the corpus-wide sweep), `r7035` (the null harness), `r7033` (the three instruments with no noise model) and `r7029` (both items) follow it. The replies to `r7027` (`r7027+70.1`), `r7025` (`r7025+70.1`), `r7023` (`r7023+70.1`), `r7021` (`r7021+70.1`), `r7019` (`r7019+70.1`), `r7017` (`r7017+70.1`, ⑧), `r7013` (`r7013+70.1`), `r7011` (`PO-69`), `r7009` (`PO-68`), `r7007` (`PO-67`), `r7003` (`PO-65` ⓶, `PO-66` ⓶), `r6991` (`PO-64`),
 `r6977` (`r6977+70.1`), `r6975` (`r6975+70.1`), `r6959` (`r6961+70.x`), `r6939` (`r6931+70.3`) and `r6929`
 (`r6931+70.1`) follow it; all were gated and landed.*
 
@@ -13,6 +13,69 @@ below that is not receipted says so in terms. The newest reply is first. It answ
 declared in `check_revision_collisions._PARITY_BY_NODE` beside `cc66`, and that is the only gate line
 this revision touches. **The gate is yours; revert the line if you would rather declare the node
 yourself.***
+
+## ⚑ `r7097+70.1` — THE GATE IS BUILT AND REGISTERED AS A CONTENT-HASH RATCHET: GREEN ON THE 215, RED ON EACH OF FOUR PLANTED FAILURES. FOUR OF THE SIX UNPLACEABLES ARE READ BY NOTHING; TWO ARE LOAD-BEARING. AND THE 13, ENUMERATED
+
+*This is Q1 and Q2 at `7259906f`, pre-registered at `computations/beyond_the_wall/r7097_70_manifest_gate/PREDICTION.md`.*
+- **The gate:** `corpus/check_banked_config.py`, registered in the fast list, which is now **119 gates**.
+- **Its data:** `corpus/banked_config_manifest.json`.
+- **Fail paths:** `computations/beyond_the_wall/r7097_70_manifest_gate/test_fail_paths.py`, log beside it.
+- **Nothing was run through the transfer, and no banked file was edited.** The writing half, `config` at save time, is cc66's.
+
+**① Q1: THE RATCHET I CHOSE, AND WHY. A manifest of the existing 215, each pinned by the SHA-256 of its bytes.**
+- **Not a dated baseline.** Git keeps no mtime, and a commit date is the *last* touch, so a re-banked file would inherit an old date. It cannot tell new from rewritten.
+- **Not the fingerprint as a fallback.** It would admit any *new* artefact whose ℓ_A happens to fingerprint, re-opening the hole for exactly the class being closed. **So the fingerprint grades entries and never admits one.**
+- **Not name-only.** That is the symptom pin: it would pass a file regenerated in place with new bytes and still no switches.
+- ⇒ **The hash makes it a ratchet.** An entry admits *those bytes*, and the manifest **only shrinks**. The gate fails on:
+  - **NEW**: an `.npz` with no `config` and no entry;
+  - **REWRITTEN**: the hash has changed, so a re-banked artefact must carry `config`;
+  - **STALE**: the file is gone, or it now carries `config`. Remove the entry; this is the `r7069` rule that a fixed site must not stay behind as a permission;
+  - **MALFORMED**: `config` is not a JSON object carrying `ARM`, `LEAFSCALES`, `ZSTART`, `STACKPERT` and `VISLEAF`, each written out at its resolved value, at the top level or under `switches`.
+- **Why it is not the pin the order warns of:** the gate's subject is whether an artefact carries provenance, and each entry records *what is known of it*, not an assertion that the absence persists. Grades: **COMMAND 143** (with the figure-numbers file placed by its producer script), **CONTROL 19**, **FINGERPRINT 47** (labelled "a reconstruction, not a record"), **UNPLACEABLE 6**. Every entry carries its evidence line.
+- **Measured:**
+  - green on today's 215 in about 2 s;
+  - on scratch copies, symlinked with only the planted file changed, **7 of 7 cases behave as planted**: a clean copy passes; NEW, REWRITTEN, a removed file (STALE), a legacy file gaining `config` (STALE) and MALFORMED each fail with their own label; a new file carrying a good `config` passes.
+
+**② WHAT THE FINGERPRINT CAN AND CANNOT BACKFILL, AND MY JUDGEMENT ON THE SIX.**
+- **For the 47,** the fingerprint is the only evidence. Their manifest entries are reconstructions, and the manifest says so per entry. They are admissible to read but not to cite as a recorded configuration.
+- **The six, by reader.** I grepped every receipt, storyboard receipt and corpus script:
+
+| artefact | read by | what it is | my recommendation |
+|---|---|---|---|
+| `cc66_cr_x_crom3000`, `cc66_cr_z3e5`, `cc66_cr_z3e6`, `cc66_cr_z61580_stack` | **nothing** | CR onset and Ωm counterfactuals (ℓ_A 168–201) matching no known configuration | **mark UNPLACEABLE in perpetuity**, as the manifest now does. Retiring them loses the record for no gain; re-deriving them costs runs for nothing that reads them |
+| `cc66_lowell_sweep` | **`P15_the_low_multipole_depth_gap_closes_and_two_defects_were_cancelling`** (registered) and `corpus/make_fig_acoustic_two_arm.py` | a low-ℓ sweep whose *keys* name their own configurations (`FROZEN_control_KLO_0_1`, `DECOUPLED_adjudicated_…`), partly self-describing, with no producer in the repository | **re-derive** (cc66's queue), or write its producer into the repository. It is load-bearing for a registered receipt and a published figure |
+| `c54.182_clpp` | **`P15_the_residual_is_contrast_and_the_lensing_potential_is_derived`** (registered, PART B) | the lensing potential C_ℓ^φφ (`k`, `Phi`, exact and Limber), a `c54`-era derived product, no producer | **re-derive**, or re-point PART B onto a re-derivable lensing source. It is load-bearing, and its era predates `LEAFSCALES` |
+
+**③ Q2: THE 13, COMPLETE AND UNFILTERED, against `P15` as it stands at `7259906f`.**
+
+| # | figure | where | paragraph | what it is | beside a reported-model (B) figure in the same comparison? |
+|---|---|---|---|---|---|
+| 1 | 1.18 | l. 805 | "*And the truncation's removal is measured on the arm whose answer is known* …" | the control's χ²/dof, full range | **no**: it compares the control with its own reference |
+| 2 | 1.01 | l. 806 | same paragraph | the reference χ²/dof | **no** |
+| 3 | 1.18 | l. 816 | "*Two likelihood configurations are quoted in this section* …" | the same control figure, restated | **no**: it compares configurations, not arms |
+| 4 | 1.01 | l. 816 | same | the same reference | **no** |
+| 5 | 185 | l. 816 | same | a bin count | **no**: not a model figure |
+| 6 | 133 | l. 816 | same | a bin count | **no**: not a model figure |
+| 7 | 2.10 | l. 816 | same | the control's χ²/bin on 133 bins, **carried by none of the nine receipts run at `r7095`** | **no**, but it has no carrier |
+| 8 | 8.2 % | (was l. 810) | the polarisation-pull sentence | the control's pull | **WITHDRAWN at `r7097`** |
+| 9 | 20.8 % | (was l. 810) | same | the control's pull | **WITHDRAWN** |
+| 10 | 10.9 % | (was l. 811) | same | "this arm"'s pull | **WITHDRAWN** |
+| 11 | 26.9 % | (was l. 811) | same | "this arm"'s pull | **WITHDRAWN** |
+| 12 | 220 → 274 | l. 823 | "*Subtracting the driving is what measures it* …" | the control's first peak without driving | **no**: the control alone |
+| 13 | 0.1792 | l. 823 | same | the control's Δ(ℓ₁/ℓ_A) under driving subtraction | **yes**: it stands beside "this arm"'s **0.1717** (l. 826), which is **B** (`cc66_cr_x_h686_*`, `ZSTART=3e7 LEAFSCALES=1`). This is a **control-against-arm** comparison. The control has no CR switch, so it is not a configuration seam. It is listed because the order asked for the complete list. |
+
+- ⚠ **All 13 of the census's rows are here.** Its two rows "220" and "274" are one item (12). **Item 8 (8.2 %) was not a census row.** It is added because it was withdrawn together with its three pair-figures, and the list would read incomplete without it.
+- ⇒ **Open items left on the list:**
+  - **7 (2.10)**, which has no carrier;
+  - **13**, a control-against-B-arm pair, which is not a seam.
+- Items 8–11 have left by being fixed.
+
+**Against the pre-registration.**
+- Q1's ratchet, green on 215 and red on the planted cases: **held**.
+- "Most of the six are read by nothing": **held**, 4 of 6.
+- Q2: **held as predicted**. The pulls are withdrawn, 2.10 is still uncarried, and the only figure standing beside a B figure is the control's 0.1792 beside the arm's 0.1717.
+
+**r7045.** Nothing is in flight. This push closes `r7097+70.1`.
 
 ## ⚑ `r7095+70.1` — 0 OF 215 BANKED ARTEFACTS CARRY THEIR CONFIGURATION; A MANIFEST CAN PLACE 162 BY COMMAND OR AS CONTROL, 47 ONLY BY FINGERPRINT, 6 NOT AT ALL. THE LOCATOR'S CONCLUSION HOLDS ON A RE-DERIVABLE SUBSTRATE. AND NONE OF THE 13 "DEFAULT" FIGURES IS A CONFIRMED MODEL-A CR FIGURE: THE ONE "THIS ARM" COMPARISON IS CARRIED BY NO RECEIPT
 

@@ -1,0 +1,1080 @@
+{
+ "_what": "the banked .npz that predate corpus/check_banked_config.py (r7097, node 70), each pinned by the SHA-256 of its bytes. It only shrinks: an entry whose file is rewritten, removed, or gains `config` fails the gate until it is removed. Grades: COMMAND (a launcher, README row or producer script in the repository names it), CONTROL (control arm: no CR switch applies; its own settings may still be unrecorded), FINGERPRINT (placed only by l_A and r_s: a reconstruction, not a record), UNPLACEABLE (nothing in the repository places it). Built from computations/beyond_the_wall/r7095_70_artefact_configuration/manifest_proposal.json.",
+ "entries": {
+  "computations/beyond_the_wall/refit_grid/cr_H0m.npz": {
+   "evidence": "computations/beyond_the_wall/refit_grid/launch.sh: \"cr_H0m       ARM=cr CRH0=66.60 CROM=0.2973 ZSTART=3e7 LEAFSCALES=1\"",
+   "grade": "COMMAND",
+   "sha256": "e3921615b79f9db5016b2598de159ba88fe233577af241fc432a6f367ff38a02"
+  },
+  "computations/beyond_the_wall/refit_grid/cr_H0p.npz": {
+   "evidence": "computations/beyond_the_wall/refit_grid/launch.sh: \"cr_H0p       ARM=cr CRH0=70.60 CROM=0.2973 ZSTART=3e7 LEAFSCALES=1\"",
+   "grade": "COMMAND",
+   "sha256": "def2b004f820a8f2f8124d75e95234ac3b4cb410dfb868022b483db08ed9ee91"
+  },
+  "computations/beyond_the_wall/refit_grid/cr_NSm.npz": {
+   "evidence": "computations/beyond_the_wall/refit_grid/launch.sh: \"cr_NSm       ARM=cr CRH0=68.60 CROM=0.2973 ZSTART=3e7 LEAFSCALES=1 NS=0.945\"",
+   "grade": "COMMAND",
+   "sha256": "cc3544168636adb334c10b56b0aded2ffef37ae2a5cf5e47b40971b6ffc06ced"
+  },
+  "computations/beyond_the_wall/refit_grid/cr_NSp.npz": {
+   "evidence": "computations/beyond_the_wall/refit_grid/launch.sh: \"cr_NSp       ARM=cr CRH0=68.60 CROM=0.2973 ZSTART=3e7 LEAFSCALES=1 NS=0.985\"",
+   "grade": "COMMAND",
+   "sha256": "93cd4f354c70af20a8b74f30f5c23d033c1d3f7802a719a35c5b73ac23e4d48e"
+  },
+  "computations/beyond_the_wall/refit_grid/cr_OMm.npz": {
+   "evidence": "computations/beyond_the_wall/refit_grid/launch.sh: \"cr_OMm       ARM=cr CRH0=68.60 CROM=0.2823 ZSTART=3e7 LEAFSCALES=1\"",
+   "grade": "COMMAND",
+   "sha256": "49e691535cc2bd78eb5058a99840f23ad408f1f4b2789fcf9794158ec41b6fc0"
+  },
+  "computations/beyond_the_wall/refit_grid/cr_OMp.npz": {
+   "evidence": "computations/beyond_the_wall/refit_grid/launch.sh: \"cr_OMp       ARM=cr CRH0=68.60 CROM=0.3123 ZSTART=3e7 LEAFSCALES=1\"",
+   "grade": "COMMAND",
+   "sha256": "ca9527d6b2b23293347f65af65018ebac55e006c97bb05ae64e5dd775cce175d"
+  },
+  "computations/beyond_the_wall/refit_grid/cr_WBm.npz": {
+   "evidence": "computations/beyond_the_wall/refit_grid/launch.sh: \"cr_WBm       ARM=cr CRH0=68.60 CROM=0.2973 ZSTART=3e7 LEAFSCALES=1 WBH2=0.0216\"",
+   "grade": "COMMAND",
+   "sha256": "e0d11cd4186c7a87e37f94b00519ebb8d859ccbff43bd5aefba788a54b794512"
+  },
+  "computations/beyond_the_wall/refit_grid/cr_WBp.npz": {
+   "evidence": "computations/beyond_the_wall/refit_grid/launch.sh: \"cr_WBp       ARM=cr CRH0=68.60 CROM=0.2973 ZSTART=3e7 LEAFSCALES=1 WBH2=0.0232\"",
+   "grade": "COMMAND",
+   "sha256": "14a56cddbe4848aa1f822150e9d8a755aef0365fb536426c7fd3c7f0f2bbfc4f"
+  },
+  "computations/beyond_the_wall/refit_grid/cr_base.npz": {
+   "evidence": "computations/beyond_the_wall/refit_grid/launch.sh: \"cr_base      ARM=cr CRH0=68.60 CROM=0.2973 ZSTART=3e7 LEAFSCALES=1\"",
+   "grade": "COMMAND",
+   "sha256": "4a34a156a197e9601265057c6d2ffc4faf9dad6b6e1b110c91565a3b6364bbce"
+  },
+  "computations/beyond_the_wall/refit_grid/lcdm_H0m.npz": {
+   "evidence": "computations/beyond_the_wall/refit_grid/launch.sh: \"lcdm_H0m     ARM=lcdm LH0=65.40\"",
+   "grade": "COMMAND",
+   "sha256": "7926d3905b5b3c4b0d7797d542fd18a067caa5efd4a64a4c0ad4e53d18cbb6c3"
+  },
+  "computations/beyond_the_wall/refit_grid/lcdm_H0p.npz": {
+   "evidence": "computations/beyond_the_wall/refit_grid/launch.sh: \"lcdm_H0p     ARM=lcdm LH0=69.40\"",
+   "grade": "COMMAND",
+   "sha256": "3dc2d48c1d7946a5030c5f8f71394f11a4b0ca465edf6b304af68fd3bb8cc892"
+  },
+  "computations/beyond_the_wall/refit_grid/lcdm_NSm.npz": {
+   "evidence": "computations/beyond_the_wall/refit_grid/launch.sh: \"lcdm_NSm     ARM=lcdm NS=0.945\"",
+   "grade": "COMMAND",
+   "sha256": "8f0fc26422685aef2767dd8b3ba99836ad41197d2fbe189347d2d32053d00b24"
+  },
+  "computations/beyond_the_wall/refit_grid/lcdm_NSp.npz": {
+   "evidence": "computations/beyond_the_wall/refit_grid/launch.sh: \"lcdm_NSp     ARM=lcdm NS=0.985\"",
+   "grade": "COMMAND",
+   "sha256": "e67041054106ea48c4e54ddf9f3f1e37c08d815dcd0bcbfe78a9f175d7fcf02a"
+  },
+  "computations/beyond_the_wall/refit_grid/lcdm_OMm.npz": {
+   "evidence": "computations/beyond_the_wall/refit_grid/launch.sh: \"lcdm_OMm     ARM=lcdm LOM=0.3000\"",
+   "grade": "COMMAND",
+   "sha256": "12a00588b729db5d17989ef44f2bf03757ec1ade49d106bc6ca6b18c7a129ee3"
+  },
+  "computations/beyond_the_wall/refit_grid/lcdm_OMp.npz": {
+   "evidence": "computations/beyond_the_wall/refit_grid/launch.sh: \"lcdm_OMp     ARM=lcdm LOM=0.3300\"",
+   "grade": "COMMAND",
+   "sha256": "44b27f69136d3244ef8a5f638a9a03e5079ef037f46c409f2a9cbc2553aee694"
+  },
+  "computations/beyond_the_wall/refit_grid/lcdm_WBm.npz": {
+   "evidence": "computations/beyond_the_wall/refit_grid/launch.sh: \"lcdm_WBm     ARM=lcdm WBH2=0.0216\"",
+   "grade": "COMMAND",
+   "sha256": "8c3fab7f8eac621df68fb36253f772e6d0823f750160c34f4100d3a823196b93"
+  },
+  "computations/beyond_the_wall/refit_grid/lcdm_WBp.npz": {
+   "evidence": "computations/beyond_the_wall/refit_grid/launch.sh: \"lcdm_WBp     ARM=lcdm WBH2=0.0232\"",
+   "grade": "COMMAND",
+   "sha256": "7b6963fdeb521b0e98f1f0d5e49da59a14a5706dbe1c75d6ab3cc026716dc002"
+  },
+  "computations/beyond_the_wall/refit_grid/lcdm_base.npz": {
+   "evidence": "computations/beyond_the_wall/refit_grid/launch.sh: \"lcdm_base    ARM=lcdm\"",
+   "grade": "COMMAND",
+   "sha256": "ff119cc0fd8734b863b08f6f1b9a66f56d3604c8a9f20be3703eb1ff7aad2be9"
+  },
+  "computations/beyond_the_wall/refit_grid/verify_cr.npz": {
+   "evidence": "computations/beyond_the_wall/refit_grid185/verify.sh: \"verify_cr    ARM=cr CRH0=68.581133 CROM=0.297209 ZSTART=3e7 LEAFSCALES=1 WBH2=0.021524 NS=0.997952\" \\",
+   "grade": "COMMAND",
+   "sha256": "9accfada3f9a17d95465ec1cc364304d8a646aa0bd2191eb184e401a478922b5"
+  },
+  "computations/beyond_the_wall/refit_grid/verify_lcdm.npz": {
+   "evidence": "computations/beyond_the_wall/refit_grid185/verify.sh: \"verify_lcdm  ARM=lcdm LH0=67.410309 LOM=0.309826 WBH2=0.021966 NS=0.954248\" \\",
+   "grade": "COMMAND",
+   "sha256": "ab676169599cbc701d09a433337683ce817c0dacdf41cb4f03edd1d9527971b5"
+  },
+  "computations/beyond_the_wall/refit_grid185/cr_H0m.npz": {
+   "evidence": "computations/beyond_the_wall/refit_grid/launch.sh: \"cr_H0m       ARM=cr CRH0=66.60 CROM=0.2973 ZSTART=3e7 LEAFSCALES=1\"",
+   "grade": "COMMAND",
+   "sha256": "2ccfda07ccca0bc5630c8f40a01e0999911d2d747dd4e053eb34eb92dc3afe0d"
+  },
+  "computations/beyond_the_wall/refit_grid185/cr_H0p.npz": {
+   "evidence": "computations/beyond_the_wall/refit_grid/launch.sh: \"cr_H0p       ARM=cr CRH0=70.60 CROM=0.2973 ZSTART=3e7 LEAFSCALES=1\"",
+   "grade": "COMMAND",
+   "sha256": "6d45bb780ce153d7025fdb72db54e30646ca91598fff64370c7fca861af730ba"
+  },
+  "computations/beyond_the_wall/refit_grid185/cr_NSm.npz": {
+   "evidence": "computations/beyond_the_wall/refit_grid/launch.sh: \"cr_NSm       ARM=cr CRH0=68.60 CROM=0.2973 ZSTART=3e7 LEAFSCALES=1 NS=0.945\"",
+   "grade": "COMMAND",
+   "sha256": "1047558e021336899e7e95b335c4b3bc74728efc8c00e2ed6e093180b13aca93"
+  },
+  "computations/beyond_the_wall/refit_grid185/cr_NSp.npz": {
+   "evidence": "computations/beyond_the_wall/refit_grid/launch.sh: \"cr_NSp       ARM=cr CRH0=68.60 CROM=0.2973 ZSTART=3e7 LEAFSCALES=1 NS=0.985\"",
+   "grade": "COMMAND",
+   "sha256": "14069f2f66b86f3143715a61feac84a20340228cef949e222536830e65082d44"
+  },
+  "computations/beyond_the_wall/refit_grid185/cr_OMm.npz": {
+   "evidence": "computations/beyond_the_wall/refit_grid/launch.sh: \"cr_OMm       ARM=cr CRH0=68.60 CROM=0.2823 ZSTART=3e7 LEAFSCALES=1\"",
+   "grade": "COMMAND",
+   "sha256": "7de77991df624901bf089ceff09b0caa2e8afe95e12790c301bc1b137fcadc5b"
+  },
+  "computations/beyond_the_wall/refit_grid185/cr_OMp.npz": {
+   "evidence": "computations/beyond_the_wall/refit_grid/launch.sh: \"cr_OMp       ARM=cr CRH0=68.60 CROM=0.3123 ZSTART=3e7 LEAFSCALES=1\"",
+   "grade": "COMMAND",
+   "sha256": "072ed5fde0f4af4920aea343d3c84b1e92b9db0d4c7e32ce8333a7dcce718eef"
+  },
+  "computations/beyond_the_wall/refit_grid185/cr_WBm.npz": {
+   "evidence": "computations/beyond_the_wall/refit_grid/launch.sh: \"cr_WBm       ARM=cr CRH0=68.60 CROM=0.2973 ZSTART=3e7 LEAFSCALES=1 WBH2=0.0216\"",
+   "grade": "COMMAND",
+   "sha256": "619150966eb11e8dca9de2eeab2e4827c3d1870400321617c025576c5924d0bd"
+  },
+  "computations/beyond_the_wall/refit_grid185/cr_WBp.npz": {
+   "evidence": "computations/beyond_the_wall/refit_grid/launch.sh: \"cr_WBp       ARM=cr CRH0=68.60 CROM=0.2973 ZSTART=3e7 LEAFSCALES=1 WBH2=0.0232\"",
+   "grade": "COMMAND",
+   "sha256": "22ffd88f154058f0155232785a1cfe86beb8ade84b7df21234245516cb7f2b9a"
+  },
+  "computations/beyond_the_wall/refit_grid185/cr_base.npz": {
+   "evidence": "computations/beyond_the_wall/refit_grid/launch.sh: \"cr_base      ARM=cr CRH0=68.60 CROM=0.2973 ZSTART=3e7 LEAFSCALES=1\"",
+   "grade": "COMMAND",
+   "sha256": "6937d6a0e28e9e86f5847e744467b6dc4db60bf77f8675a8b1366d8ab0651a79"
+  },
+  "computations/beyond_the_wall/refit_grid185/lcdm_H0m.npz": {
+   "evidence": "computations/beyond_the_wall/refit_grid/launch.sh: \"lcdm_H0m     ARM=lcdm LH0=65.40\"",
+   "grade": "COMMAND",
+   "sha256": "c50171a87515a226a0270a42474924c6c072ce3c6722043ab542d2a02ba8a208"
+  },
+  "computations/beyond_the_wall/refit_grid185/lcdm_H0p.npz": {
+   "evidence": "computations/beyond_the_wall/refit_grid/launch.sh: \"lcdm_H0p     ARM=lcdm LH0=69.40\"",
+   "grade": "COMMAND",
+   "sha256": "2f5f40b7c7b72ca6f5589d9b1056311467d3ea7da4df3029ce3ba71bbea0e290"
+  },
+  "computations/beyond_the_wall/refit_grid185/lcdm_NSm.npz": {
+   "evidence": "computations/beyond_the_wall/refit_grid/launch.sh: \"lcdm_NSm     ARM=lcdm NS=0.945\"",
+   "grade": "COMMAND",
+   "sha256": "b0ac685ab9b7c257da9774a33fcae47bb2e283ca9445c31d3eb58c463d471be1"
+  },
+  "computations/beyond_the_wall/refit_grid185/lcdm_NSp.npz": {
+   "evidence": "computations/beyond_the_wall/refit_grid/launch.sh: \"lcdm_NSp     ARM=lcdm NS=0.985\"",
+   "grade": "COMMAND",
+   "sha256": "55f0e616f367d1559c8d81a50483d74bf5a4aee367b2081000e8af7da5b04e25"
+  },
+  "computations/beyond_the_wall/refit_grid185/lcdm_OMm.npz": {
+   "evidence": "computations/beyond_the_wall/refit_grid/launch.sh: \"lcdm_OMm     ARM=lcdm LOM=0.3000\"",
+   "grade": "COMMAND",
+   "sha256": "60f6caa17e52e71fb598b8b34ee627bdd985f981c12116c137508b66e5239c5c"
+  },
+  "computations/beyond_the_wall/refit_grid185/lcdm_OMp.npz": {
+   "evidence": "computations/beyond_the_wall/refit_grid/launch.sh: \"lcdm_OMp     ARM=lcdm LOM=0.3300\"",
+   "grade": "COMMAND",
+   "sha256": "005cda6bb5535da1f76b46abcd274f1cb006dd51c49d24992327333ce0f7c347"
+  },
+  "computations/beyond_the_wall/refit_grid185/lcdm_WBm.npz": {
+   "evidence": "computations/beyond_the_wall/refit_grid/launch.sh: \"lcdm_WBm     ARM=lcdm WBH2=0.0216\"",
+   "grade": "COMMAND",
+   "sha256": "2c33eb66bbac244960078faed60e03955b45378cb510ee7dd8dc8d6436c15c1b"
+  },
+  "computations/beyond_the_wall/refit_grid185/lcdm_WBp.npz": {
+   "evidence": "computations/beyond_the_wall/refit_grid/launch.sh: \"lcdm_WBp     ARM=lcdm WBH2=0.0232\"",
+   "grade": "COMMAND",
+   "sha256": "7f2844804da7fd0d54873b1efd8bcd0c91f073ba1246782e21d5b8b243cf3145"
+  },
+  "computations/beyond_the_wall/refit_grid185/lcdm_base.npz": {
+   "evidence": "computations/beyond_the_wall/refit_grid/launch.sh: \"lcdm_base    ARM=lcdm\"",
+   "grade": "COMMAND",
+   "sha256": "8888e6f31156407df35a8efadecbc4c0d18ed6bbfa9ea94818bc24414a6769e9"
+  },
+  "computations/beyond_the_wall/refit_grid185/verify_cr.npz": {
+   "evidence": "computations/beyond_the_wall/refit_grid185/verify.sh: \"verify_cr    ARM=cr CRH0=68.581133 CROM=0.297209 ZSTART=3e7 LEAFSCALES=1 WBH2=0.021524 NS=0.997952\" \\",
+   "grade": "COMMAND",
+   "sha256": "e9dea88789cb5ce6d19c26fedb040d52ba0b145f678412622842a1e5575acb13"
+  },
+  "computations/beyond_the_wall/refit_grid185/verify_lcdm.npz": {
+   "evidence": "computations/beyond_the_wall/refit_grid185/verify.sh: \"verify_lcdm  ARM=lcdm LH0=67.410309 LOM=0.309826 WBH2=0.021966 NS=0.954248\" \\",
+   "grade": "COMMAND",
+   "sha256": "dc2b3c2a34ea25eff2a465a5090cf60bd107b4e669c3bb2a0d550cc9728ff878"
+  },
+  "computations/beyond_the_wall/spectra/L814_cr_phipi_L2000.npz": {
+   "evidence": "spectra/README.md: | `L814_cr_phipi_L2000.npz` | r2674 (cc54, L-814) | **the same c54.178 CR-arm command with `CRPHI=3.14159265`** \u2014 the seam phase at the OTHER admissible value (\u03c6=\u03c0), the \u03c6=\u03c0 branch of PO-10's F3 pair. `HIER=1 BSPLIT=1 ARM=cr CRPHI=3.14159265 NK=600 LMAXL=2000 ETAEND=4000 KBATCH=300`, `l_A=301.6` (CR",
+   "grade": "COMMAND",
+   "sha256": "d77f66f79d716b82b45882df14962566324a19e655bcc44933ba0a661724472d"
+  },
+  "computations/beyond_the_wall/spectra/L820_cr_L2512.npz": {
+   "evidence": "spectra/README.md: | `L820_cr_L2512.npz` | r2674 (cc54, L-820 S2) | **the CR arm of the same extension \u2014 `ARM=cr LMAXL=2512 NK=800`** (physical ladder). *The overlap barely moves (280.1 \u2192 281.1/dof); with the damping tail CR is 260.1/dof \u2014 still overwhelmingly disfavoured. F3 = \u03c7\u00b2(CR)\u2212\u03c7\u00b2(LCDM) goes 50497 \u2192 51547 acros",
+   "grade": "COMMAND",
+   "sha256": "5b5bd6c099aa27c88de9aceafe48069bfbccdd4e95159d3e90ed4367b5c83f7a"
+  },
+  "computations/beyond_the_wall/spectra/L820_lcdm_L2512_nk800.npz": {
+   "evidence": "spectra/README.md: | `L820_lcdm_L2512_nk800.npz` | r2674 (cc54, L-820 S2) | **the extension C51 asks for \u2014 `HIER=1 BSPLIT=1 ARM=lcdm NK=800 LMAXL=2512 ETAEND=4000 KBATCH=300`** (302 multipoles to \u2113=2508, 6.0 pts/period). *Recovers the 30 damping-tail bins the `LMAXL=2000` arm drops. On the SAME 185 bins the control go",
+   "grade": "COMMAND",
+   "sha256": "faf2c173c178ae07703797c4d424297e71db5ce637562bd75024f817fd317a55"
+  },
+  "computations/beyond_the_wall/spectra/L820_lcdm_nk260_guardfail.npz": {
+   "evidence": "control arm (no CR switch applies)  [l_A 301.375, r_s 144.528]",
+   "grade": "CONTROL",
+   "sha256": "7834d16a0183e4151c7b78c789013e8d064c465c1c72287f2749addf34fd599c"
+  },
+  "computations/beyond_the_wall/spectra/L820_lcdm_nk600_reproduces_c54.178.npz": {
+   "evidence": "spectra/README.md: | `L820_lcdm_nk600_reproduces_c54.178.npz` | r2674 (cc54, L-820) | **the exact c54.178 lcdm command re-run on a 15 GB node \u2014 `HIER=1 BSPLIT=1 ARM=lcdm NK=600 LMAXL=2000 ETAEND=4000 KBATCH=300`** \u2014 reproducing `c54.178_lcdm.npz` **bit-for-bit** (max \\|\u0394Dl\\| = 8\u00d710\u207b\u00b9\u2076). *This is the provenance check f",
+   "grade": "COMMAND",
+   "sha256": "39298274c75d65d9395507ebcad33cc446408114630eae22fc91148d5a8d86fd"
+  },
+  "computations/beyond_the_wall/spectra/L824_lcdm_L3200_nk960.npz": {
+   "evidence": "spectra/README.md: | `L824_lcdm_L3200_nk960.npz` | r2674 (cc54, L-824) | **the THIRD convergence point OWED #496 asks for \u2014 `HIER=1 BSPLIT=1 ARM=lcdm NK=960 LMAXL=3200 ETAEND=4000 KBATCH=300`** (388 multipoles, 5.7 pts/Bessel period, k-spacing held at the L2000/L2512/L3000 value). *Reproduces `c54.186_lcdm_L3000` on t",
+   "grade": "COMMAND",
+   "sha256": "3892e90d9af23476a95bfe6444e6736069291d296fe323ffe7d29f14bad68afc"
+  },
+  "computations/beyond_the_wall/spectra/L830_cr_lat280.npz": {
+   "evidence": "spectra/README.md: | `L830_cr_lat280.npz` / `L830_cr_lat302.npz` / `L830_cr_lat320.npz` | r2803 (cc54, L-830) | **the pin test 56 routed \u2014 the CR arm at `LATARG = 280 / 301.6 / 320`** (`HIER=1 BSPLIT=1 ARM=cr NK=600 LMAXL=2000 ETAEND=4000 KBATCH=300 LATARG=<v>`), the runs 56's container OOM'd at projection. *Peaks tra",
+   "grade": "COMMAND",
+   "sha256": "09ee568f540825be8e64a01b81996dfe127a352b482332a5c6d9f0118e3e1875"
+  },
+  "computations/beyond_the_wall/spectra/L830_cr_lat302.npz": {
+   "evidence": "spectra/README.md: | `L830_cr_lat280.npz` / `L830_cr_lat302.npz` / `L830_cr_lat320.npz` | r2803 (cc54, L-830) | **the pin test 56 routed \u2014 the CR arm at `LATARG = 280 / 301.6 / 320`** (`HIER=1 BSPLIT=1 ARM=cr NK=600 LMAXL=2000 ETAEND=4000 KBATCH=300 LATARG=<v>`), the runs 56's container OOM'd at projection. *Peaks tra",
+   "grade": "COMMAND",
+   "sha256": "19661675b358152b522eb8929aef4ce504b2d26bf4f0210710c8ee6f00190bed"
+  },
+  "computations/beyond_the_wall/spectra/L830_cr_lat320.npz": {
+   "evidence": "spectra/README.md: | `L830_cr_lat280.npz` / `L830_cr_lat302.npz` / `L830_cr_lat320.npz` | r2803 (cc54, L-830) | **the pin test 56 routed \u2014 the CR arm at `LATARG = 280 / 301.6 / 320`** (`HIER=1 BSPLIT=1 ARM=cr NK=600 LMAXL=2000 ETAEND=4000 KBATCH=300 LATARG=<v>`), the runs 56's container OOM'd at projection. *Peaks tra",
+   "grade": "COMMAND",
+   "sha256": "374f7c70190001b8d1a1e15c3a935b588b0c391e8b22aafd42b9226c83df35bb"
+  },
+  "computations/beyond_the_wall/spectra/c54.175_cr.npz": {
+   "evidence": "spectra/README.md: | `c54.175_cr.npz` | r2376+c54.175 | `ARM=cr NK=600 LMAXL=2000 ETAEND=4000 SAVE=\u2026 python3 ACOUSTIC_two_arm.py` |",
+   "grade": "COMMAND",
+   "sha256": "41d0a0fd99aa1d632e2c11a99d004c9449c28afea89fe543ed5aa36fd5760b06"
+  },
+  "computations/beyond_the_wall/spectra/c54.175_lcdm.npz": {
+   "evidence": "spectra/README.md: | `c54.175_lcdm.npz` | r2376+c54.175 | `ARM=lcdm NK=600 LMAXL=2000 ETAEND=4000 SAVE=\u2026 python3 ACOUSTIC_two_arm.py` |",
+   "grade": "COMMAND",
+   "sha256": "f3421e845c2ae4c319d601a95923d0f038d67649df8f26e81241cd7b9d25f3f9"
+  },
+  "computations/beyond_the_wall/spectra/c54.177_cr.npz": {
+   "evidence": "spectra/README.md: | `c54.177_cr.npz` | r2376+c54.177 | same, with the DERIVED shear coefficient 16/15 |",
+   "grade": "COMMAND",
+   "sha256": "3e0890269da49f2a0bf49f35ece25666584fdd0a9fdc16e18a18752bdf8d0ea0"
+  },
+  "computations/beyond_the_wall/spectra/c54.177_lcdm.npz": {
+   "evidence": "spectra/README.md: | `c54.177_lcdm.npz` | r2376+c54.177 | same, with the DERIVED shear coefficient 16/15 |",
+   "grade": "COMMAND",
+   "sha256": "609297ef3499b404d39b9af01f5f5cb6ce87c44cf309270529f51c96b1548bce"
+  },
+  "computations/beyond_the_wall/spectra/c54.178_cr.npz": {
+   "evidence": "spectra/README.md: | `c54.178_cr.npz` | r2376+c54.178 | the same with `ARM=cr` |",
+   "grade": "COMMAND",
+   "sha256": "e7f41996dd2c840aa485edfa3804dd3a58bc32ac3630cdcc397a1a6cc979f651"
+  },
+  "computations/beyond_the_wall/spectra/c54.178_lcdm.npz": {
+   "evidence": "spectra/README.md: | `c54.178_lcdm.npz` | r2376+c54.178 | `HIER=1 BSPLIT=1 ARM=lcdm NK=600 LMAXL=2000 ETAEND=4000 KBATCH=300 SAVE=\u2026 ` |",
+   "grade": "COMMAND",
+   "sha256": "8518775b03e9510182dd8ebde953389ab012600e890b259edf5932705bc72948"
+  },
+  "computations/beyond_the_wall/spectra/c54.178_lcdm_noBsplit.npz": {
+   "evidence": "spectra/README.md: | `c54.178_lcdm_noBsplit.npz` | r2376+c54.178 | the same with `BSPLIT=0` \u2014 the baryons at the CDM's density |",
+   "grade": "COMMAND",
+   "sha256": "fe8d6fc02250fe82c208da26189becdeb161ea2e091bfc244b754255d2bf8d15"
+  },
+  "computations/beyond_the_wall/spectra/c54.178_lcdm_noPi.npz": {
+   "evidence": "spectra/README.md: | `c54.178_lcdm_noPi.npz` | r2376+c54.178 | the same with `PISRC=0` \u2014 the hierarchy WITHOUT the polarisation source terms, which is the control for what an envelope can and cannot supply |",
+   "grade": "COMMAND",
+   "sha256": "a53f7064623912710f82785a1fc801b4271c99a0a1857d3b8269f94779b05d4e"
+  },
+  "computations/beyond_the_wall/spectra/c54.182_clpp.npz": {
+   "evidence": "no command, producer script or l_A in the repository",
+   "grade": "UNPLACEABLE",
+   "sha256": "ea52f324124104a6ef5706859ee47f155ef2e6903d7809b3e8f57dbad1af56a6"
+  },
+  "computations/beyond_the_wall/spectra/c54.186_cr_KCONT.npz": {
+   "evidence": "spectra/README.md: | `c54.186_cr_KCONT.npz` | r2441+c54.186 | the same with `ARM=cr KCONT=1` \u2014 **the CR arm on a CONTINUUM k-grid instead of its discrete ladder, which is the check the alias gate asks for in its own waiver text and which had never been run against \u03c7\u00b2**. *1800 modes at 5.7 samples per Bessel period, ag",
+   "grade": "COMMAND",
+   "sha256": "ce8911552db8959af821e59d20f825fe03172499a35e442540477a938faa54bc"
+  },
+  "computations/beyond_the_wall/spectra/c54.186_cr_L3000.npz": {
+   "evidence": "spectra/README.md: | `c54.186_cr_L3000.npz` | r2441+c54.186 | the same with `ARM=cr` \u2014 **so that `L-147`'s `F3` compares two arms at the SAME wavenumber range**, which is the mistake `F3` exists to avoid. *The CR arm moves 298.9 \u2192 302.1 in \u03c7\u00b2/dof and \u2113\u2081/\u2113_A = 0.5703 for the eighth instrument state.*|",
+   "grade": "COMMAND",
+   "sha256": "efdf0899cce5bf0eacfbff24ef87039cca72cce81d125f3bf74ee111b1f12b9f"
+  },
+  "computations/beyond_the_wall/spectra/c54.186_lcdm_L3000.npz": {
+   "evidence": "spectra/README.md: | `c54.186_lcdm_L3000.npz` | r2441+c54.186 | `HIER=1 BSPLIT=1 ARM=lcdm NK=900 LMAXL=3000 ETAEND=4000 KBATCH=300 SAVE=\u2026` \u2014 **the wavenumber range opened, with the k-SPACING HELD FIXED** (NK scaled with LMAXL so the projection sampling is 5.7 per Bessel period in both). *Scored on the SAME 185 bins as",
+   "grade": "COMMAND",
+   "sha256": "3508245c9f56219db10fb201d6d4f18035572e1b3c0845d6fc2091a9777855eb"
+  },
+  "computations/beyond_the_wall/spectra/c54.187_cr_phi0.0.npz": {
+   "evidence": "spectra/README.md (family row): | `c54.187_cr_phi<PHI>.npz` (nine files) | r2441+c54.187 | `HIER=1 BSPLIT=1 ARM=cr CRPHI=<PHI> NK=300 LMAXL=1000 ETAEND=4000 KBATCH=300 LSTEP=4 SAVE=\u2026` \u2014 **the CR arm under the common phase its own seam datum leaves unspecified**, \u03c6 = 0 \u2026 \u03c0 in nine steps. *`CRPHI=0` is the instrument exactly as code",
+   "grade": "COMMAND",
+   "sha256": "a6c0be9d6a35d1cf94a7687a054e95c642ea18b17ac0a6ce8f6f6d57248271b1"
+  },
+  "computations/beyond_the_wall/spectra/c54.187_cr_phi0.3927.npz": {
+   "evidence": "spectra/README.md (family row): | `c54.187_cr_phi<PHI>.npz` (nine files) | r2441+c54.187 | `HIER=1 BSPLIT=1 ARM=cr CRPHI=<PHI> NK=300 LMAXL=1000 ETAEND=4000 KBATCH=300 LSTEP=4 SAVE=\u2026` \u2014 **the CR arm under the common phase its own seam datum leaves unspecified**, \u03c6 = 0 \u2026 \u03c0 in nine steps. *`CRPHI=0` is the instrument exactly as code",
+   "grade": "COMMAND",
+   "sha256": "a80ee95571311a1b5e03abd052ef2e68a3ca313be3eb14047adf1f3bdeb6ca72"
+  },
+  "computations/beyond_the_wall/spectra/c54.187_cr_phi0.7854.npz": {
+   "evidence": "spectra/README.md (family row): | `c54.187_cr_phi<PHI>.npz` (nine files) | r2441+c54.187 | `HIER=1 BSPLIT=1 ARM=cr CRPHI=<PHI> NK=300 LMAXL=1000 ETAEND=4000 KBATCH=300 LSTEP=4 SAVE=\u2026` \u2014 **the CR arm under the common phase its own seam datum leaves unspecified**, \u03c6 = 0 \u2026 \u03c0 in nine steps. *`CRPHI=0` is the instrument exactly as code",
+   "grade": "COMMAND",
+   "sha256": "77a3ba6f6c73667056edb16b016a41d9d7d10590db090f3a90e702df3f7debe8"
+  },
+  "computations/beyond_the_wall/spectra/c54.187_cr_phi1.1781.npz": {
+   "evidence": "spectra/README.md (family row): | `c54.187_cr_phi<PHI>.npz` (nine files) | r2441+c54.187 | `HIER=1 BSPLIT=1 ARM=cr CRPHI=<PHI> NK=300 LMAXL=1000 ETAEND=4000 KBATCH=300 LSTEP=4 SAVE=\u2026` \u2014 **the CR arm under the common phase its own seam datum leaves unspecified**, \u03c6 = 0 \u2026 \u03c0 in nine steps. *`CRPHI=0` is the instrument exactly as code",
+   "grade": "COMMAND",
+   "sha256": "47e09362664254d6b4ddb5ef0efdcc0c6a27a285d8886cfda1da328c4d77a4d0"
+  },
+  "computations/beyond_the_wall/spectra/c54.187_cr_phi1.5708.npz": {
+   "evidence": "spectra/README.md (family row): | `c54.187_cr_phi<PHI>.npz` (nine files) | r2441+c54.187 | `HIER=1 BSPLIT=1 ARM=cr CRPHI=<PHI> NK=300 LMAXL=1000 ETAEND=4000 KBATCH=300 LSTEP=4 SAVE=\u2026` \u2014 **the CR arm under the common phase its own seam datum leaves unspecified**, \u03c6 = 0 \u2026 \u03c0 in nine steps. *`CRPHI=0` is the instrument exactly as code",
+   "grade": "COMMAND",
+   "sha256": "8189e7b2e42cb486b2bdd58024810fdc2c49b7bac8768eef4a7e90dd26d363de"
+  },
+  "computations/beyond_the_wall/spectra/c54.187_cr_phi1.9635.npz": {
+   "evidence": "spectra/README.md (family row): | `c54.187_cr_phi<PHI>.npz` (nine files) | r2441+c54.187 | `HIER=1 BSPLIT=1 ARM=cr CRPHI=<PHI> NK=300 LMAXL=1000 ETAEND=4000 KBATCH=300 LSTEP=4 SAVE=\u2026` \u2014 **the CR arm under the common phase its own seam datum leaves unspecified**, \u03c6 = 0 \u2026 \u03c0 in nine steps. *`CRPHI=0` is the instrument exactly as code",
+   "grade": "COMMAND",
+   "sha256": "6150980a6af9e91fd8f2e3d0ac426a9a894ee37b039ccee772bd535e9011bee8"
+  },
+  "computations/beyond_the_wall/spectra/c54.187_cr_phi2.3562.npz": {
+   "evidence": "spectra/README.md (family row): | `c54.187_cr_phi<PHI>.npz` (nine files) | r2441+c54.187 | `HIER=1 BSPLIT=1 ARM=cr CRPHI=<PHI> NK=300 LMAXL=1000 ETAEND=4000 KBATCH=300 LSTEP=4 SAVE=\u2026` \u2014 **the CR arm under the common phase its own seam datum leaves unspecified**, \u03c6 = 0 \u2026 \u03c0 in nine steps. *`CRPHI=0` is the instrument exactly as code",
+   "grade": "COMMAND",
+   "sha256": "c1dfeab599407dd3006b59040c01eba84bb2601e36cacfb6752144183aec97ec"
+  },
+  "computations/beyond_the_wall/spectra/c54.187_cr_phi2.7489.npz": {
+   "evidence": "spectra/README.md (family row): | `c54.187_cr_phi<PHI>.npz` (nine files) | r2441+c54.187 | `HIER=1 BSPLIT=1 ARM=cr CRPHI=<PHI> NK=300 LMAXL=1000 ETAEND=4000 KBATCH=300 LSTEP=4 SAVE=\u2026` \u2014 **the CR arm under the common phase its own seam datum leaves unspecified**, \u03c6 = 0 \u2026 \u03c0 in nine steps. *`CRPHI=0` is the instrument exactly as code",
+   "grade": "COMMAND",
+   "sha256": "ddca804a19a70b881c6afee0af69842c15e35ec25ba59ea8e2ec53a950db9dff"
+  },
+  "computations/beyond_the_wall/spectra/c54.187_cr_phi3.1416.npz": {
+   "evidence": "spectra/README.md (family row): | `c54.187_cr_phi<PHI>.npz` (nine files) | r2441+c54.187 | `HIER=1 BSPLIT=1 ARM=cr CRPHI=<PHI> NK=300 LMAXL=1000 ETAEND=4000 KBATCH=300 LSTEP=4 SAVE=\u2026` \u2014 **the CR arm under the common phase its own seam datum leaves unspecified**, \u03c6 = 0 \u2026 \u03c0 in nine steps. *`CRPHI=0` is the instrument exactly as code",
+   "grade": "COMMAND",
+   "sha256": "4f27d0ac238c1631e7a0a6eba810ea3f9c38189d8e68f160e7d995e29b9979d8"
+  },
+  "computations/beyond_the_wall/spectra/c54.188_cr_seam_phi0.0.npz": {
+   "evidence": "A (default: stacking, onset solved for l_A = 301.6)  [arm cr, l_A 301.600, r_s 135.461]",
+   "grade": "FINGERPRINT",
+   "sha256": "3cbced1e2797b774fbb3f9abcac35c15c6d0f2eb667725db363f24a73495d06b"
+  },
+  "computations/beyond_the_wall/spectra/c54.188_cr_seam_phi0.3927.npz": {
+   "evidence": "A (default: stacking, onset solved for l_A = 301.6)  [arm cr, l_A 301.600, r_s 135.461]",
+   "grade": "FINGERPRINT",
+   "sha256": "a1ca4e2af5561029f4b981a0c3ae52a013ad25a9835466f1cc39b35ef6917b16"
+  },
+  "computations/beyond_the_wall/spectra/c54.188_cr_seam_phi0.7854.npz": {
+   "evidence": "A (default: stacking, onset solved for l_A = 301.6)  [arm cr, l_A 301.600, r_s 135.461]",
+   "grade": "FINGERPRINT",
+   "sha256": "fe3ab5e69cdc946c348a5f2c74b946def0d4b9dca0df99243253225436c59fd5"
+  },
+  "computations/beyond_the_wall/spectra/c54.188_cr_seam_phi1.1781.npz": {
+   "evidence": "A (default: stacking, onset solved for l_A = 301.6)  [arm cr, l_A 301.600, r_s 135.461]",
+   "grade": "FINGERPRINT",
+   "sha256": "1c9b2c900aa39a183c86d040b3e1e9b7d4d8ea94d34f8f2f5f6aeb738a32bd46"
+  },
+  "computations/beyond_the_wall/spectra/c54.188_cr_seam_phi1.5708.npz": {
+   "evidence": "A (default: stacking, onset solved for l_A = 301.6)  [arm cr, l_A 301.600, r_s 135.461]",
+   "grade": "FINGERPRINT",
+   "sha256": "6b19a38c480ad34d12cf4a646aa5f752b9aacef8d63362ba973e973b6354ae37"
+  },
+  "computations/beyond_the_wall/spectra/c54.188_cr_seam_phi1.9635.npz": {
+   "evidence": "A (default: stacking, onset solved for l_A = 301.6)  [arm cr, l_A 301.600, r_s 135.461]",
+   "grade": "FINGERPRINT",
+   "sha256": "73b5441dd7f800ce3985c52bbf189adc6930c57bf3632cd1958445d8d97348ab"
+  },
+  "computations/beyond_the_wall/spectra/c54.188_cr_seam_phi2.3562.npz": {
+   "evidence": "A (default: stacking, onset solved for l_A = 301.6)  [arm cr, l_A 301.600, r_s 135.461]",
+   "grade": "FINGERPRINT",
+   "sha256": "938bfe84a3988c997b06380519c96060df7aece3769c579dd5407876e70d6a00"
+  },
+  "computations/beyond_the_wall/spectra/c54.188_cr_seam_phi2.7489.npz": {
+   "evidence": "A (default: stacking, onset solved for l_A = 301.6)  [arm cr, l_A 301.600, r_s 135.461]",
+   "grade": "FINGERPRINT",
+   "sha256": "949113d2d0c98fc125403689b9a1728e15f18a7a055da574bbb8b022bf4d7e98"
+  },
+  "computations/beyond_the_wall/spectra/c54.188_cr_seam_phi3.1416.npz": {
+   "evidence": "A (default: stacking, onset solved for l_A = 301.6)  [arm cr, l_A 301.600, r_s 135.461]",
+   "grade": "FINGERPRINT",
+   "sha256": "c512cd1561e9318150133a15bc90246ff51928760143a56f5831ec0071973df0"
+  },
+  "computations/beyond_the_wall/spectra/c54.189_cr_lA260.npz": {
+   "evidence": "A-family (onset solved for a pinned l_A = LATARG)  [arm cr, l_A 260.000, r_s 157.135]",
+   "grade": "FINGERPRINT",
+   "sha256": "0bf1bcaaa6b9ce6e563675212738cef4064d0633aed43f486537b564aea22677"
+  },
+  "computations/beyond_the_wall/spectra/c54.189_cr_lA280.npz": {
+   "evidence": "A-family (onset solved for a pinned l_A = LATARG)  [arm cr, l_A 280.000, r_s 145.911]",
+   "grade": "FINGERPRINT",
+   "sha256": "44f5c5f93d783f3a93001a610140f20259e0cd4a3448c9598268b7586c535533"
+  },
+  "computations/beyond_the_wall/spectra/c54.189_cr_lA301.6.npz": {
+   "evidence": "A (default: stacking, onset solved for l_A = 301.6)  [arm cr, l_A 301.600, r_s 135.461]",
+   "grade": "FINGERPRINT",
+   "sha256": "a6c0be9d6a35d1cf94a7687a054e95c642ea18b17ac0a6ce8f6f6d57248271b1"
+  },
+  "computations/beyond_the_wall/spectra/c54.189_cr_lA320.npz": {
+   "evidence": "A-family (onset solved for a pinned l_A = LATARG)  [arm cr, l_A 320.000, r_s 127.672]",
+   "grade": "FINGERPRINT",
+   "sha256": "01f0d95d58184c1b145aabe22e288d6b3be9b6c831db4d7be8bf730e942f30e6"
+  },
+  "computations/beyond_the_wall/spectra/c54.189_cr_lA340.npz": {
+   "evidence": "A-family (onset solved for a pinned l_A = LATARG)  [arm cr, l_A 340.000, r_s 120.162]",
+   "grade": "FINGERPRINT",
+   "sha256": "60d75cfbc1993bad6ffddd311609612733f857334d3478ef406ee6a8355977eb"
+  },
+  "computations/beyond_the_wall/spectra/c54.191_cr_lA340_L3000.npz": {
+   "evidence": "A-family (onset solved for a pinned l_A = LATARG)  [arm cr, l_A 340.000, r_s 120.162]",
+   "grade": "FINGERPRINT",
+   "sha256": "072d3ebe56f48f8c411328584ba1215ccb3aeca800e3b95751d41e7b819bafe8"
+  },
+  "computations/beyond_the_wall/spectra/c54.191_cr_phipi_L3000.npz": {
+   "evidence": "A (default: stacking, onset solved for l_A = 301.6)  [arm cr, l_A 301.600, r_s 135.461]",
+   "grade": "FINGERPRINT",
+   "sha256": "96da83a7aeded8a49e2de7a99595c11dcfac4d291e1d9ac6f8ade90d579ed3a5"
+  },
+  "computations/beyond_the_wall/spectra/c54.193_cr_nodrive_L3000.npz": {
+   "evidence": "A (default: stacking, onset solved for l_A = 301.6)  [arm cr, l_A 301.600, r_s 135.461]",
+   "grade": "FINGERPRINT",
+   "sha256": "60ae0d4cf91979dff3c82c169c505763c48559a3f9482cf1a1169d015a7ef1d2"
+  },
+  "computations/beyond_the_wall/spectra/c54.193_lcdm_nodrive_L3000.npz": {
+   "evidence": "control arm (no CR switch applies)  [l_A 301.375, r_s 144.528]",
+   "grade": "CONTROL",
+   "sha256": "671959c7cff8fa1f980cd003421b75262530ae4da48269ce576c491a0d5288c5"
+  },
+  "computations/beyond_the_wall/spectra/c54.195_cr_phi0.7854_L3000.npz": {
+   "evidence": "A (default: stacking, onset solved for l_A = 301.6)  [arm cr, l_A 301.600, r_s 135.461]",
+   "grade": "FINGERPRINT",
+   "sha256": "35e0c58eac2a73c4967db9552b74f139b1d778d18566e7a85a55ee7fb821934a"
+  },
+  "computations/beyond_the_wall/spectra/c54.195_cr_phi1.5708_L3000.npz": {
+   "evidence": "A (default: stacking, onset solved for l_A = 301.6)  [arm cr, l_A 301.600, r_s 135.461]",
+   "grade": "FINGERPRINT",
+   "sha256": "cd653f7a09963d26cd807ad4fdb15bbe8bf0c5fe9e1eafe883a5a8767399ed5f"
+  },
+  "computations/beyond_the_wall/spectra/cc66_cr_coded.npz": {
+   "evidence": "A (default: stacking, onset solved for l_A = 301.6)  [arm cr, l_A 301.600, r_s 135.461]",
+   "grade": "FINGERPRINT",
+   "sha256": "34505c608682a43966c0712bf55920830a09f7c7d51e0663d2cd8ee24c84f36c"
+  },
+  "computations/beyond_the_wall/spectra/cc66_cr_crossing.npz": {
+   "evidence": "superseded stacking ruler (l_A ~ 172)  [arm cr, l_A 172.841, r_s 236.374]",
+   "grade": "FINGERPRINT",
+   "sha256": "4a24574d4a2d736a36b132f007e76ac36f445217f6e98bf4612cebb61a81ef70"
+  },
+  "computations/beyond_the_wall/spectra/cc66_cr_leafpin.npz": {
+   "evidence": "A (default: stacking, onset solved for l_A = 301.6)  [arm cr, l_A 301.600, r_s 135.461]",
+   "grade": "FINGERPRINT",
+   "sha256": "099f0baedc28fa1a8736df4064449a69a174e3bcd90598ca25fa95946d4a7f1b"
+  },
+  "computations/beyond_the_wall/spectra/cc66_cr_leafpin_fluid.npz": {
+   "evidence": "A (default: stacking, onset solved for l_A = 301.6)  [arm cr, l_A 301.600, r_s 135.461]",
+   "grade": "FINGERPRINT",
+   "sha256": "24c56fb2fd10a4b1c8527072e04d654e0b3cff60f8ec1b23e44da858dd3f4883"
+  },
+  "computations/beyond_the_wall/spectra/cc66_cr_x_crom3000.npz": {
+   "evidence": "no known configuration  [arm cr, l_A 168.238, r_s 270.736]",
+   "grade": "UNPLACEABLE",
+   "sha256": "c10ecb1c584644afa0b70f544c9d11249a7a63328df33e10d5ee3bf5687a2101"
+  },
+  "computations/beyond_the_wall/spectra/cc66_cr_x_crom3447.npz": {
+   "evidence": "superseded stacking ruler (l_A ~ 172)  [arm cr, l_A 170.606, r_s 252.579]",
+   "grade": "FINGERPRINT",
+   "sha256": "75b74166bd5559588d9398278329b182c73c82a6fcbabbe776412660a2bcaa75"
+  },
+  "computations/beyond_the_wall/spectra/cc66_cr_x_h6862_fluid.npz": {
+   "evidence": "B (LEAFSCALES=1 ZSTART=3e7)  [arm cr, l_A 302.844, r_s 145.307]",
+   "grade": "FINGERPRINT",
+   "sha256": "c7b6e3ac8f4800ba1b117f268c539253415c2c2d5862e772efb434ecaaa33611"
+  },
+  "computations/beyond_the_wall/spectra/cc66_cr_x_h6862_pol.npz": {
+   "evidence": "B (LEAFSCALES=1 ZSTART=3e7)  [arm cr, l_A 302.844, r_s 145.307]",
+   "grade": "FINGERPRINT",
+   "sha256": "494168c64c4eba45dbc53f685aef350800cca1e99889144a5be89522b2062aea"
+  },
+  "computations/beyond_the_wall/spectra/cc66_cr_x_h686_L2000.npz": {
+   "evidence": "B (LEAFSCALES=1 ZSTART=3e7)  [arm cr, l_A 302.889, r_s 145.328]",
+   "grade": "FINGERPRINT",
+   "sha256": "c01be97a0f7b6a8e193436ad760c645badab7e908fcbe060005987c2a82974c0"
+  },
+  "computations/beyond_the_wall/spectra/cc66_cr_x_h686_fluid.npz": {
+   "evidence": "B (LEAFSCALES=1 ZSTART=3e7)  [arm cr, l_A 302.889, r_s 145.328]",
+   "grade": "FINGERPRINT",
+   "sha256": "cdaec591cdbee8b7db9f6cf6b20c98c115a902c9cc99397fc62fe6da1583106a"
+  },
+  "computations/beyond_the_wall/spectra/cc66_cr_x_h686_nodrive_fluid.npz": {
+   "evidence": "B (LEAFSCALES=1 ZSTART=3e7)  [arm cr, l_A 302.889, r_s 145.328]",
+   "grade": "FINGERPRINT",
+   "sha256": "f63e391ae96ba16d50db948b71d846ef5a3a560c06c5e2649dc1bfd9e19174af"
+  },
+  "computations/beyond_the_wall/spectra/cc66_cr_x_h686_nodrive_pol.npz": {
+   "evidence": "B (LEAFSCALES=1 ZSTART=3e7)  [arm cr, l_A 302.889, r_s 145.328]",
+   "grade": "FINGERPRINT",
+   "sha256": "1c5c3b54b1b5ee86f5505559b27eb03795c3f72e9d52c718dcb9dd07cc1f1da0"
+  },
+  "computations/beyond_the_wall/spectra/cc66_cr_x_h686_pol.npz": {
+   "evidence": "B (LEAFSCALES=1 ZSTART=3e7)  [arm cr, l_A 302.889, r_s 145.328]",
+   "grade": "FINGERPRINT",
+   "sha256": "29e17a00aa31a8e17d81238bbeaf2cc77e05d7963dfb3e6c34587276e9bda0c1"
+  },
+  "computations/beyond_the_wall/spectra/cc66_cr_x_kcont.npz": {
+   "evidence": "superseded stacking ruler (l_A ~ 172)  [arm cr, l_A 172.841, r_s 236.374]",
+   "grade": "FINGERPRINT",
+   "sha256": "776f707b527d045fa0326c5f71429c540b40757697cf3a957c35e85c1d3f0edb"
+  },
+  "computations/beyond_the_wall/spectra/cc66_cr_x_lstep1.npz": {
+   "evidence": "superseded stacking ruler (l_A ~ 172)  [arm cr, l_A 172.841, r_s 236.374]",
+   "grade": "FINGERPRINT",
+   "sha256": "aeca241e1e04c4722600b14494676928cf0d0a314334c21be70696f0946e8fd6"
+  },
+  "computations/beyond_the_wall/spectra/cc66_cr_x_zeq3000.npz": {
+   "evidence": "superseded stacking ruler (l_A ~ 172)  [arm cr, l_A 172.841, r_s 236.374]",
+   "grade": "FINGERPRINT",
+   "sha256": "29ceaeab33cbb452c4b241226aa0acb67f9b7b0f8d2706d7966267e53f49f656"
+  },
+  "computations/beyond_the_wall/spectra/cc66_cr_x_zeq3447.npz": {
+   "evidence": "superseded stacking ruler (l_A ~ 172)  [arm cr, l_A 172.841, r_s 236.374]",
+   "grade": "FINGERPRINT",
+   "sha256": "4117cc6d035a6ca0ef32169f0a7aeb79fb80caf72b78735b3abb5cef9b209677"
+  },
+  "computations/beyond_the_wall/spectra/cc66_cr_z3e5.npz": {
+   "evidence": "no known configuration  [arm cr, l_A 183.777, r_s 222.307]",
+   "grade": "UNPLACEABLE",
+   "sha256": "ebe3d20d1fc350d9680542881f0a3840428415f272246d3ab14da8a71376064b"
+  },
+  "computations/beyond_the_wall/spectra/cc66_cr_z3e6.npz": {
+   "evidence": "no known configuration  [arm cr, l_A 175.349, r_s 232.993]",
+   "grade": "UNPLACEABLE",
+   "sha256": "8cece04aa4a57900c5da662a25065c5952907cb2a5f605f4cabd13c05a0201d5"
+  },
+  "computations/beyond_the_wall/spectra/cc66_cr_z3e8.npz": {
+   "evidence": "superseded stacking ruler (l_A ~ 172)  [arm cr, l_A 172.062, r_s 237.443]",
+   "grade": "FINGERPRINT",
+   "sha256": "0a3320608eae31198cda8dd8a9b299d3b2fd4e824b05f1f3f23794e14cb4c791"
+  },
+  "computations/beyond_the_wall/spectra/cc66_cr_z61580_stack.npz": {
+   "evidence": "no known configuration  [arm cr, l_A 200.772, r_s 203.490]",
+   "grade": "UNPLACEABLE",
+   "sha256": "ba1d036f37504a4ebf657aeef152d5db1713b3d7740381a4271b4522f6f28248"
+  },
+  "computations/beyond_the_wall/spectra/cc66_fig_acoustic_numbers.npz": {
+   "evidence": "producer script: corpus/make_fig_acoustic_two_arm.py (np.savez of numbers derived from cc66_r185_verify_{lcdm,cr}, configuration B)",
+   "grade": "COMMAND",
+   "sha256": "6ebdc2f6be1638e0486e436f861bd43dc92b39ad503c57c664216f86d48b88e1"
+  },
+  "computations/beyond_the_wall/spectra/cc66_lcdm.npz": {
+   "evidence": "control arm (no CR switch applies)  [l_A 301.375, r_s 144.528]",
+   "grade": "CONTROL",
+   "sha256": "c97c97a14afdf82f442e53b6e7f0eb5920a50bdbd953c3738ca04bf190ae21fc"
+  },
+  "computations/beyond_the_wall/spectra/cc66_lcdm_L2000.npz": {
+   "evidence": "control arm (no CR switch applies)  [l_A 301.375, r_s 144.528]",
+   "grade": "CONTROL",
+   "sha256": "6cecc223bb0e9c8ad49b949b330ec5545d01091846c07e71350c17d21ab4cce8"
+  },
+  "computations/beyond_the_wall/spectra/cc66_lcdm_fluid.npz": {
+   "evidence": "control arm (no CR switch applies)  [l_A 301.375, r_s 144.528]",
+   "grade": "CONTROL",
+   "sha256": "cde08343632808a1dfbe1768fb4aca705ea9e8fccadb8865fe58fa61856d0812"
+  },
+  "computations/beyond_the_wall/spectra/cc66_lcdm_nodrive_pol.npz": {
+   "evidence": "control arm (no CR switch applies)  [l_A 301.375, r_s 144.528]",
+   "grade": "CONTROL",
+   "sha256": "a2091a63fa862612131e810757f4787ca0b5f6738cecad79833a362a402f3d60"
+  },
+  "computations/beyond_the_wall/spectra/cc66_lowell_sweep.npz": {
+   "evidence": "no command, producer script or l_A in the repository",
+   "grade": "UNPLACEABLE",
+   "sha256": "3367e0fe309fc5c4e374d1772c079abbc0f8523291c421297b0364d2ede20391"
+  },
+  "computations/beyond_the_wall/spectra/cc66_r185_verify_cr.npz": {
+   "evidence": "B (LEAFSCALES=1 ZSTART=3e7)  [arm cr, l_A 301.799, r_s 145.911]",
+   "grade": "FINGERPRINT",
+   "sha256": "e9dea88789cb5ce6d19c26fedb040d52ba0b145f678412622842a1e5575acb13"
+  },
+  "computations/beyond_the_wall/spectra/cc66_r185_verify_lcdm.npz": {
+   "evidence": "control arm (no CR switch applies)  [l_A 301.543, r_s 145.382]",
+   "grade": "CONTROL",
+   "sha256": "dc2b3c2a34ea25eff2a465a5090cf60bd107b4e669c3bb2a0d550cc9728ff878"
+  },
+  "computations/beyond_the_wall/spectra/cc66_refit_cr_base.npz": {
+   "evidence": "B (LEAFSCALES=1 ZSTART=3e7)  [arm cr, l_A 302.889, r_s 145.328]",
+   "grade": "FINGERPRINT",
+   "sha256": "4a34a156a197e9601265057c6d2ffc4faf9dad6b6e1b110c91565a3b6364bbce"
+  },
+  "computations/beyond_the_wall/spectra/cc66_refit_lcdm_base.npz": {
+   "evidence": "control arm (no CR switch applies)  [l_A 301.375, r_s 144.528]",
+   "grade": "CONTROL",
+   "sha256": "ff119cc0fd8734b863b08f6f1b9a66f56d3604c8a9f20be3703eb1ff7aad2be9"
+  },
+  "computations/beyond_the_wall/spectra/cc66_refit_verify_cr.npz": {
+   "evidence": "B (LEAFSCALES=1 ZSTART=3e7)  [arm cr, l_A 302.052, r_s 145.833]",
+   "grade": "FINGERPRINT",
+   "sha256": "9accfada3f9a17d95465ec1cc364304d8a646aa0bd2191eb184e401a478922b5"
+  },
+  "computations/beyond_the_wall/spectra/cc66_refit_verify_lcdm.npz": {
+   "evidence": "control arm (no CR switch applies)  [l_A 301.646, r_s 145.404]",
+   "grade": "CONTROL",
+   "sha256": "ab676169599cbc701d09a433337683ce817c0dacdf41cb4f03edd1d9527971b5"
+  },
+  "computations/beyond_the_wall/spectra/item38_cr_phi0.0_prod.npz": {
+   "evidence": "A (default: stacking, onset solved for l_A = 301.6)  [arm cr, l_A 301.600, r_s 135.461]",
+   "grade": "FINGERPRINT",
+   "sha256": "e4ecb7fcbe0b8ec6d712d481366f0e9cd28599f89c9625a3e56bc4023689299c"
+  },
+  "computations/beyond_the_wall/spectra/item38_cr_phi1.5708_prod.npz": {
+   "evidence": "A (default: stacking, onset solved for l_A = 301.6)  [arm cr, l_A 301.600, r_s 135.461]",
+   "grade": "FINGERPRINT",
+   "sha256": "cd653f7a09963d26cd807ad4fdb15bbe8bf0c5fe9e1eafe883a5a8767399ed5f"
+  },
+  "computations/beyond_the_wall/spectra/item38_cr_phi3.1416_prod.npz": {
+   "evidence": "A (default: stacking, onset solved for l_A = 301.6)  [arm cr, l_A 301.600, r_s 135.461]",
+   "grade": "FINGERPRINT",
+   "sha256": "96da83a7aeded8a49e2de7a99595c11dcfac4d291e1d9ac6f8ade90d579ed3a5"
+  },
+  "computations/beyond_the_wall/spectra/lcdm_0.700.npz": {
+   "evidence": "control arm (no CR switch applies)  [l_A 301.375, r_s 144.528]",
+   "grade": "CONTROL",
+   "sha256": "d8cfcf5c02f41d803c5ff2d124e53993978185dc39573bcd58a1108b1e7fabbd"
+  },
+  "computations/beyond_the_wall/spectra/lcdm_0.800.npz": {
+   "evidence": "control arm (no CR switch applies)  [l_A 301.375, r_s 144.528]",
+   "grade": "CONTROL",
+   "sha256": "e7ca40f58f8764386b90f5cad9590ce160ea3f80fab167f9efa9fcb85746989d"
+  },
+  "computations/beyond_the_wall/spectra/lcdm_0.859.npz": {
+   "evidence": "control arm (no CR switch applies)  [l_A 301.375, r_s 144.528]",
+   "grade": "CONTROL",
+   "sha256": "22b9cf7c769f5a0225f0f4512be5b9fe5bb197c090ff98f4cf85b7b6cbf4dd8c"
+  },
+  "computations/beyond_the_wall/spectra/lcdm_0.900.npz": {
+   "evidence": "control arm (no CR switch applies)  [l_A 301.375, r_s 144.528]",
+   "grade": "CONTROL",
+   "sha256": "d7a21b003776a3694328d86f578a12275c8c2c840ce7be7ea0b823f8ddb0d4c0"
+  },
+  "computations/beyond_the_wall/spectra/lcdm_1.000.npz": {
+   "evidence": "control arm (no CR switch applies)  [l_A 301.375, r_s 144.528]",
+   "grade": "CONTROL",
+   "sha256": "0ee5737b01f01310b8f38bf00fa378fe9f7f5c94a7322fa61464877558eb1e6f"
+  },
+  "computations/beyond_the_wall/spectra/lcdm_1.100.npz": {
+   "evidence": "control arm (no CR switch applies)  [l_A 301.375, r_s 144.528]",
+   "grade": "CONTROL",
+   "sha256": "00168f225c20b27f0df3a053f80c21514dc02d0fd30e569233f3280ba3ac5085"
+  },
+  "computations/beyond_the_wall/spectra/lcdm_1.200.npz": {
+   "evidence": "control arm (no CR switch applies)  [l_A 301.375, r_s 144.528]",
+   "grade": "CONTROL",
+   "sha256": "b928f971510a8f85e3fe9812ee31ce127100545ac0f096468fa852c94ad7fcd0"
+  },
+  "computations/beyond_the_wall/spectra/lcdm_1.300.npz": {
+   "evidence": "control arm (no CR switch applies)  [l_A 301.375, r_s 144.528]",
+   "grade": "CONTROL",
+   "sha256": "f3dfb9988cf4f72a1c747354bf4721bca21ef49f972ea89ebc46b0c8d13c9d75"
+  },
+  "computations/beyond_the_wall/spectra/r4494_cr_leaf_ISWoff.npz": {
+   "evidence": "A (default: stacking, onset solved for l_A = 301.6)  [arm cr, l_A 301.600, r_s 135.461]",
+   "grade": "FINGERPRINT",
+   "sha256": "e4926fef3cf54febcb8c165117e6bf069da7ab7471c81d09348078a225383411"
+  },
+  "computations/beyond_the_wall/spectra/r4494_cr_leaf_ISWon.npz": {
+   "evidence": "A (default: stacking, onset solved for l_A = 301.6)  [arm cr, l_A 301.600, r_s 135.461]",
+   "grade": "FINGERPRINT",
+   "sha256": "81c1caff5252a021896fb3d0865b61cc28943fa954eb6b95b803f411740f0b2e"
+  },
+  "computations/beyond_the_wall/spectra/r4494_cr_stack_ISWoff.npz": {
+   "evidence": "A (default: stacking, onset solved for l_A = 301.6)  [arm cr, l_A 301.600, r_s 135.461]",
+   "grade": "FINGERPRINT",
+   "sha256": "9d9755d87daec194fdcc85fb5d431471476a94a2dd46f34139962c75729172cc"
+  },
+  "computations/beyond_the_wall/spectra/r4494_cr_stack_ISWon.npz": {
+   "evidence": "A (default: stacking, onset solved for l_A = 301.6)  [arm cr, l_A 301.600, r_s 135.461]",
+   "grade": "FINGERPRINT",
+   "sha256": "5f5516a9ed709de38de6abbc43e733b4c87b0bd474cf682c5cc7b1092f9ec652"
+  },
+  "computations/beyond_the_wall/spectra/r4494_lcdm_DAMPX1.000.npz": {
+   "evidence": "control arm (no CR switch applies)  [l_A 301.375, r_s 144.528]",
+   "grade": "CONTROL",
+   "sha256": "bf213cb52ea8d94daf32a85a964db18183fc542da3a02d4e2c5bfa6805dc1641"
+  },
+  "computations/beyond_the_wall/spectra/r4494_lcdm_DAMPX1.157.npz": {
+   "evidence": "control arm (no CR switch applies)  [l_A 301.375, r_s 144.528]",
+   "grade": "CONTROL",
+   "sha256": "6f8fa97b1b62771f9ec64093821c99a7cda0cae869e8ba52ea8908ce7d3eac38"
+  },
+  "computations/beyond_the_wall/spectra/r6784_cr_crossing_hier.npz": {
+   "evidence": "spectra/README.md: | `r6784_cr_crossing_hier.npz` | r6784 (node 60) | **the run `P15`'s crossing handover asks for, which `r6782` made reachable \u2014 `HIER=1 BSPLIT=1 ARM=cr NK=600 LMAXL=2000 ETAEND=4000 KBATCH=300 CRH0=68.62 CROM=0.2973 ZSTART=3e7 CRIC=branchpoint`.** *The banked `c54.178_cr` command with three knobs ch",
+   "grade": "COMMAND",
+   "sha256": "4feda5cd269b3907f5294a69a1cb120a6d2a6715e302550b2a13e47357e33c8a"
+  },
+  "computations/beyond_the_wall/spectra/r6784_cr_crossing_hier_noCRIC.npz": {
+   "evidence": "superseded stacking ruler (l_A ~ 172)  [arm cr, l_A 172.324, r_s 255.364]",
+   "grade": "FINGERPRINT",
+   "sha256": "4b34ae97fcd6b002a6561b7aefa6a3d116c965594f7742b0baac07b86c358108"
+  },
+  "computations/beyond_the_wall/spectra/r6784_cr_crossing_los.npz": {
+   "evidence": "spectra/README.md: | `r6784_cr_crossing_los.npz` | r6784 (node 60) | **the same configuration on the LINE-OF-SIGHT path \u2014 drop `HIER` and change nothing else.** *The run was specified on both instrument paths, so both are banked. Peaks 220/532/812/1124 \u2014 within one grid step of the hierarchy path's on every one, which",
+   "grade": "COMMAND",
+   "sha256": "a88c3b7941b038accb33596c111ee372595f4c29a50b37389421d942a59bc21d"
+  },
+  "computations/beyond_the_wall/spectra/r6794_cr_crossing_kcont_summed.npz": {
+   "evidence": "spectra/README.md: | `r6794_cr_crossing_kcont_summed.npz` | r6794 (node 60) | **the `KCONT=1` continuum check node 66 asked for, summed from SIX `KSLICE` runs because neither seat's container survives it whole** \u2014 `ARM=cr HIER=1 BSPLIT=1 NK=900 LMAXL=2000 ETAEND=4000 KBATCH=150 KCONT=1 CRH0=68.62 CROM=0.2973 ZSTART=3e",
+   "grade": "COMMAND",
+   "sha256": "45e14a6c0224aecce52371f9da6d56e919cf64955c1d01bfd1186e66bb3e672e"
+  },
+  "computations/beyond_the_wall/spectra/r6885_dp0_cr.npz": {
+   "evidence": "computations/beyond_the_wall/r6885_directions/launch.sh: dp0_cr in launch.sh",
+   "grade": "COMMAND",
+   "sha256": "e9dea88789cb5ce6d19c26fedb040d52ba0b145f678412622842a1e5575acb13"
+  },
+  "computations/beyond_the_wall/spectra/r6885_dp0_lcdm.npz": {
+   "evidence": "computations/beyond_the_wall/r6885_directions/launch.sh: dp0_lcdm in launch.sh",
+   "grade": "COMMAND",
+   "sha256": "dc2b3c2a34ea25eff2a465a5090cf60bd107b4e669c3bb2a0d550cc9728ff878"
+  },
+  "computations/beyond_the_wall/spectra/r6885_drc0_cr.npz": {
+   "evidence": "computations/beyond_the_wall/r6885_directions/launch.sh: drc0_cr in launch.sh",
+   "grade": "COMMAND",
+   "sha256": "b4f6d1dddc6e56eec037ff4b4768ddb7ee775283d01357a436ebfa2f28525c95"
+  },
+  "computations/beyond_the_wall/spectra/r6885_drc0_lcdm.npz": {
+   "evidence": "computations/beyond_the_wall/r6885_directions/launch.sh: drc0_lcdm in launch.sh",
+   "grade": "COMMAND",
+   "sha256": "264802cc702814e33ecb3355e17d57d62d487067d6f0fe5c5aadc5553a06a873"
+  },
+  "computations/beyond_the_wall/spectra/r6885_dre0_cr.npz": {
+   "evidence": "computations/beyond_the_wall/r6885_directions/launch.sh: dre0_cr in launch.sh",
+   "grade": "COMMAND",
+   "sha256": "a04d0ff673a408008f0d3f3191a32a3f38836ec10f221c3ce07560130fdb7aab"
+  },
+  "computations/beyond_the_wall/spectra/r6885_dre0_lcdm.npz": {
+   "evidence": "computations/beyond_the_wall/r6885_directions/launch.sh: dre0_lcdm in launch.sh",
+   "grade": "COMMAND",
+   "sha256": "0992d629c31c674f7f446224c113e190e7c05fac20bdb316e549e533040f997b"
+  },
+  "computations/beyond_the_wall/spectra/r6885_ln24_cr.npz": {
+   "evidence": "computations/beyond_the_wall/r6885_directions/launch.sh: ln24_cr in launch.sh",
+   "grade": "COMMAND",
+   "sha256": "4f33cda4461a8bcdf111820689cfeb4381b9878cc241ca6a700822198e47c249"
+  },
+  "computations/beyond_the_wall/spectra/r6885_ln24_lcdm.npz": {
+   "evidence": "computations/beyond_the_wall/r6885_directions/launch.sh: ln24_lcdm in launch.sh",
+   "grade": "COMMAND",
+   "sha256": "00911537d4a36b15ce4b26c39e110cf2c4a3c05166b64722a598d4e8f0762ebd"
+  },
+  "computations/beyond_the_wall/spectra/r6885_los_cr.npz": {
+   "evidence": "computations/beyond_the_wall/r6885_directions/launch2.sh: los_cr in launch2.sh",
+   "grade": "COMMAND",
+   "sha256": "1d052ced613dfb16c625ab169a2213f7675e7587663b5c66884fff709f3b3c39"
+  },
+  "computations/beyond_the_wall/spectra/r6885_los_lcdm.npz": {
+   "evidence": "computations/beyond_the_wall/r6885_directions/launch2.sh: los_lcdm in launch2.sh",
+   "grade": "COMMAND",
+   "sha256": "2d0a7bab48dbf102cf382d858509af7b62585365695461720988a47fe1bfc36d"
+  },
+  "computations/beyond_the_wall/spectra/r6885_losdp0_cr.npz": {
+   "evidence": "computations/beyond_the_wall/r6885_directions/launch2.sh: losdp0_cr in launch2.sh",
+   "grade": "COMMAND",
+   "sha256": "79da8bd69c1bf75213e670088f5f5069f27281bb6a2057335d7090f64cfd451d"
+  },
+  "computations/beyond_the_wall/spectra/r6885_losdp0_lcdm.npz": {
+   "evidence": "computations/beyond_the_wall/r6885_directions/launch2.sh: losdp0_lcdm in launch2.sh",
+   "grade": "COMMAND",
+   "sha256": "a4264648dfa7fc919d835755970dbe64083a31aa9679a836be1ea41c241552bf"
+  },
+  "computations/beyond_the_wall/spectra/r6885_lossw0_cr.npz": {
+   "evidence": "computations/beyond_the_wall/r6885_directions/launch2.sh: lossw0_cr in launch2.sh",
+   "grade": "COMMAND",
+   "sha256": "6a39b0a43b6b10889f5f0417227f89f90a3c99c98f98ee0ba7a4674662d30427"
+  },
+  "computations/beyond_the_wall/spectra/r6885_lossw0_lcdm.npz": {
+   "evidence": "computations/beyond_the_wall/r6885_directions/launch2.sh: lossw0_lcdm in launch2.sh",
+   "grade": "COMMAND",
+   "sha256": "d7f2981085166986a47a9ed6f04b5e1ed95a3b1f49de314e1060923bf3a183e9"
+  },
+  "computations/beyond_the_wall/spectra/r6885_noisw_cr.npz": {
+   "evidence": "computations/beyond_the_wall/r6885_directions/launch.sh: noisw_cr in launch.sh",
+   "grade": "COMMAND",
+   "sha256": "50bc7af0e43ffd25ab18c776815261753f9b3b8d1bea67327975ce13b7828087"
+  },
+  "computations/beyond_the_wall/spectra/r6885_noisw_lcdm.npz": {
+   "evidence": "computations/beyond_the_wall/r6885_directions/launch.sh: noisw_lcdm in launch.sh",
+   "grade": "COMMAND",
+   "sha256": "921f82dc5a18a5435754c3013284807db3f7807e0e10e05205b1101bca7b058b"
+  },
+  "computations/beyond_the_wall/spectra/r6889_hdp0_cr.npz": {
+   "evidence": "computations/beyond_the_wall/r6889_directions/launch.sh: hdp0_cr in launch.sh",
+   "grade": "COMMAND",
+   "sha256": "8726b34c8e93fa66b9b56706580b478151d853203e0bba9114392b88635a1873"
+  },
+  "computations/beyond_the_wall/spectra/r6889_hdp0_lcdm.npz": {
+   "evidence": "computations/beyond_the_wall/r6889_directions/launch.sh: hdp0_lcdm in launch.sh",
+   "grade": "COMMAND",
+   "sha256": "aa011665b998d30dcdb46a07450ea2ad3943f06d6f70568d87b7f711c392aa84"
+  },
+  "computations/beyond_the_wall/spectra/r6889_hsw0_cr.npz": {
+   "evidence": "computations/beyond_the_wall/r6889_directions/launch.sh: hsw0_cr in launch.sh",
+   "grade": "COMMAND",
+   "sha256": "a4a5460ba1d218d30bb28c0d25fd4b52634d616e43117a3babb683f9a3825345"
+  },
+  "computations/beyond_the_wall/spectra/r6889_hsw0_lcdm.npz": {
+   "evidence": "computations/beyond_the_wall/r6889_directions/launch.sh: hsw0_lcdm in launch.sh",
+   "grade": "COMMAND",
+   "sha256": "7b000260e7102a01e8229ac5d08aaa7f800799fe1b9a983ac3c3ea1672d4a75f"
+  },
+  "computations/beyond_the_wall/spectra/r6889_noop_cr.npz": {
+   "evidence": "computations/beyond_the_wall/r6889_directions/launch.sh: noop_cr in launch.sh",
+   "grade": "COMMAND",
+   "sha256": "e9dea88789cb5ce6d19c26fedb040d52ba0b145f678412622842a1e5575acb13"
+  },
+  "computations/beyond_the_wall/spectra/r6889_noop_lcdm.npz": {
+   "evidence": "computations/beyond_the_wall/r6889_directions/launch.sh: noop_lcdm in launch.sh",
+   "grade": "COMMAND",
+   "sha256": "dc2b3c2a34ea25eff2a465a5090cf60bd107b4e669c3bb2a0d550cc9728ff878"
+  },
+  "computations/beyond_the_wall/spectra/r6889_nufs0_cr.npz": {
+   "evidence": "computations/beyond_the_wall/r6889_directions/launch.sh: nufs0_cr in launch.sh",
+   "grade": "COMMAND",
+   "sha256": "b30b865ec8a5bc96eaf95de1615cefcd922919dafe9148de275dbbeaca60e921"
+  },
+  "computations/beyond_the_wall/spectra/r6889_nufs0_lcdm.npz": {
+   "evidence": "computations/beyond_the_wall/r6889_directions/launch.sh: nufs0_lcdm in launch.sh",
+   "grade": "COMMAND",
+   "sha256": "23de1e52ae8ec027e8e47fdd4200bdb4d3f29118bb246457138dbaa3c208cdc9"
+  },
+  "computations/beyond_the_wall/spectra/r6893_fine_grid_cr.npz": {
+   "evidence": "computations/beyond_the_wall/r6893_directions/step0b.sh: the directory launcher (output name not literal)",
+   "grade": "COMMAND",
+   "sha256": "9e67a0ee557a279ea1dd60cc3b0620238dc20a56c46e9855127cb971d8e31a65"
+  },
+  "computations/beyond_the_wall/spectra/r6893_fine_grid_lcdm.npz": {
+   "evidence": "computations/beyond_the_wall/r6893_directions/step0b.sh: the directory launcher (output name not literal)",
+   "grade": "COMMAND",
+   "sha256": "bb0d05144b32f57e98ff0bbeca11f3538416731d83dc61533ab9717f0687e9df"
+  },
+  "computations/beyond_the_wall/spectra/r6893_full_reach_nulls_lcdm.npz": {
+   "evidence": "computations/beyond_the_wall/r6893_directions/step0b.sh: the directory launcher (output name not literal)",
+   "grade": "COMMAND",
+   "sha256": "b8ba65e914293c3509f3244af1e7c246c3a3543ed8eecc6136cc16d034c6fb11"
+  },
+  "computations/beyond_the_wall/spectra/r6893_slice_check.npz": {
+   "evidence": "computations/beyond_the_wall/r6893_directions/step0b.sh: the directory launcher (output name not literal)",
+   "grade": "COMMAND",
+   "sha256": "abad97b31ee10e882ea5232965e2d947b31aa7ad1f46b371924aa5a6601acb7a"
+  },
+  "computations/beyond_the_wall/spectra/r6893_switch_screen_cr.npz": {
+   "evidence": "computations/beyond_the_wall/r6893_directions/step0b.sh: the directory launcher (output name not literal)",
+   "grade": "COMMAND",
+   "sha256": "cd522810ae096a585c54700421aaeafec01d3dc4fb47150a6b2e754c4be33fe7"
+  },
+  "computations/beyond_the_wall/spectra/r6893_switch_screen_lcdm.npz": {
+   "evidence": "computations/beyond_the_wall/r6893_directions/step0b.sh: the directory launcher (output name not literal)",
+   "grade": "COMMAND",
+   "sha256": "302394472c1fef4b2fd086846309de1b21dee48f514553955f9f48a0fc706e00"
+  },
+  "computations/beyond_the_wall/spectra/r6897_fields.npz": {
+   "evidence": "computations/beyond_the_wall/r6897_directions/launch.sh: fields in launch.sh",
+   "grade": "COMMAND",
+   "sha256": "3f31d9828f0027a61fa2c55eb2dea97a797597ff8237c8bbe6e8dd19fc836727"
+  },
+  "computations/beyond_the_wall/spectra/r6897_noop.npz": {
+   "evidence": "computations/beyond_the_wall/r6897_directions/launch.sh: noop in launch.sh",
+   "grade": "COMMAND",
+   "sha256": "777ed51fd38e0d31e80f591cf50a39acee923054de74bfe38c1547cd88857115"
+  },
+  "computations/beyond_the_wall/spectra/r6897_wb_response_lcdm.npz": {
+   "evidence": "computations/beyond_the_wall/r6897_directions/launch.sh: the directory launcher (output name not literal)",
+   "grade": "COMMAND",
+   "sha256": "75f47238fe242a5ea9c02afa47eccc666114e9cd6c7c40c4f4b57f0516aaf194"
+  },
+  "computations/beyond_the_wall/spectra/r6911_noop.npz": {
+   "evidence": "computations/beyond_the_wall/r6911_directions/launch.sh: noop in launch.sh",
+   "grade": "COMMAND",
+   "sha256": "1e31199ab9bb9b1b363c43bf2959c315cb81baab0d479e79d8eb8d98ba9d0c37"
+  },
+  "computations/beyond_the_wall/spectra/r6911_source_cr.npz": {
+   "evidence": "computations/beyond_the_wall/r6911_directions/launch.sh: the directory launcher (output name not literal)",
+   "grade": "COMMAND",
+   "sha256": "228ab07b3d9937487f5a91d0abceb8fb9615c6678bd59687d267786a6616e909"
+  },
+  "computations/beyond_the_wall/spectra/r6911_source_cr_kcont.npz": {
+   "evidence": "spectra/README.md: | `r6911_source_cr_kcont.npz` | the arm again with `KCONT=1` \u2014 the uniform continuum sampling at $2547$ modes, the control's own count \u2014 everything else the adjudicated minimum | \u26d4 **the one artefact that could have produced the whole answer.** The arms' $k$ grids are not the same *kind* of grid (th",
+   "grade": "COMMAND",
+   "sha256": "ffc09dd7c31a44363dffa8fa2d76ff06cc5c4e59393b1a14cdb4158c47273335"
+  },
+  "computations/beyond_the_wall/spectra/r6911_source_lcdm.npz": {
+   "evidence": "computations/beyond_the_wall/r6911_directions/launch.sh: the directory launcher (output name not literal)",
+   "grade": "COMMAND",
+   "sha256": "4cd41f14714e5919df5aed168074415851f4d6059667c64887d0404772339b2b"
+  },
+  "computations/beyond_the_wall/spectra/r6915_noop.npz": {
+   "evidence": "computations/beyond_the_wall/r6915_directions/launch.sh: noop in launch.sh",
+   "grade": "COMMAND",
+   "sha256": "90a21edeba0ce54063c1d47bb2c352e409a9be6e30ea7472e53077f78d7b92f7"
+  },
+  "computations/beyond_the_wall/spectra/r6915_pairs_cr.npz": {
+   "evidence": "computations/beyond_the_wall/r6915_directions/launch.sh: the directory launcher (output name not literal)",
+   "grade": "COMMAND",
+   "sha256": "a11f78dbb98cc9d4ec1fdcd30264af8cfec5f157d0a9f432bb299dd8c26f2f53"
+  },
+  "computations/beyond_the_wall/spectra/r6915_pairs_lcdm.npz": {
+   "evidence": "computations/beyond_the_wall/r6915_directions/launch.sh: the directory launcher (output name not literal)",
+   "grade": "COMMAND",
+   "sha256": "c4809e1b4a743ddb3fcc51b7fa768c9edbb2095b2979324ab7d81b1e9d488bda"
+  },
+  "computations/beyond_the_wall/spectra/r6919_geometry.npz": {
+   "evidence": "computations/beyond_the_wall/r6919_directions/launch.sh: geometry in launch.sh",
+   "grade": "COMMAND",
+   "sha256": "776fdbd332b824db235b19e667a78a271524134771ddfde1a5a18985458c69b1"
+  },
+  "computations/beyond_the_wall/spectra/r6919_injected_cr.npz": {
+   "evidence": "computations/beyond_the_wall/r6919_directions/launch.sh: the directory launcher (output name not literal)",
+   "grade": "COMMAND",
+   "sha256": "5c5c8b7a5d8dc9e05ba97f20d3061c28a28029609f7758723d3358aee75de310"
+  },
+  "computations/beyond_the_wall/spectra/r6919_injected_lcdm.npz": {
+   "evidence": "computations/beyond_the_wall/r6919_directions/launch.sh: the directory launcher (output name not literal)",
+   "grade": "COMMAND",
+   "sha256": "7a8f11897b83a0b24df691d2f08491d76fe5dc0ec02ba27b3b06f0ba1cc5bc00"
+  },
+  "computations/beyond_the_wall/spectra/r6919_noop.npz": {
+   "evidence": "computations/beyond_the_wall/r6919_directions/launch.sh: noop in launch.sh",
+   "grade": "COMMAND",
+   "sha256": "90a21edeba0ce54063c1d47bb2c352e409a9be6e30ea7472e53077f78d7b92f7"
+  },
+  "computations/beyond_the_wall/spectra/r6925_geometry.npz": {
+   "evidence": "spectra/README.md: | `r6925_geometry.npz` | per arm and per assignment: $\\eta_{\\rm LS}$, the FWHM, $\\mathrm dr_s$ across it, $\\mathrm d\\chi$, their ratio, $r_D$, $r_s$, $\\ell_A$, $D_M$ | \u2691 **the decisive number**: $\\mathrm dr_s/\\mathrm d\\chi$ goes $0.396733\\to0.396957$ on the arm, so $12.8\\%$ lower becomes $12.7\\%$ \u2014 ",
+   "grade": "COMMAND",
+   "sha256": "8abbf6b19a3948d5f0c8896a03ad5470623c76231e33d7d0822a450e4c0afac3"
+  },
+  "computations/beyond_the_wall/spectra/r6925_noop.npz": {
+   "evidence": "computations/beyond_the_wall/r6925_directions/launch.sh: noop in launch.sh",
+   "grade": "COMMAND",
+   "sha256": "7b6dc004eed8b649c3fbf454ceeddb93c60ee26568de5c5a06b11cbfc3fa1090"
+  },
+  "computations/beyond_the_wall/spectra/r6925_visleaf_cr.npz": {
+   "evidence": "computations/beyond_the_wall/r6925_directions/launch.sh: the directory launcher (output name not literal)",
+   "grade": "COMMAND",
+   "sha256": "e35616252e4ac98a7c5da6313921e35e2fb8cf6c3219356aa631d19283f4b421"
+  },
+  "computations/beyond_the_wall/spectra/r6925_visleaf_lcdm.npz": {
+   "evidence": "computations/beyond_the_wall/r6925_directions/launch.sh: the directory launcher (output name not literal)",
+   "grade": "COMMAND",
+   "sha256": "d33ef40abff8e178b675b76373ca7c485ecff0823c8d0f207a7b78edc51296d1"
+  },
+  "computations/beyond_the_wall/spectra/r6929_geometry.npz": {
+   "evidence": "computations/beyond_the_wall/r6929_directions/launch.sh: geometry in launch.sh",
+   "grade": "COMMAND",
+   "sha256": "47ac391156b9d4f8d66be4fb649146e5512906fac35edf2f98ef84578cfd1d60"
+  },
+  "computations/beyond_the_wall/spectra/r6929_noop.npz": {
+   "evidence": "computations/beyond_the_wall/r6929_directions/launch.sh: noop in launch.sh",
+   "grade": "COMMAND",
+   "sha256": "019a239dce5bbf4ea511d67f94b8c84ef834da053e53dc870a911b392d3537d9"
+  },
+  "computations/beyond_the_wall/spectra/r6929_scan_cr.npz": {
+   "evidence": "computations/beyond_the_wall/r6929_directions/launch.sh: the directory launcher (output name not literal)",
+   "grade": "COMMAND",
+   "sha256": "711cff92073b82bfd3d15a29f72e50a3f263c163a4b9f58853965ee8fc90b23f"
+  },
+  "computations/beyond_the_wall/spectra/r6941_fine_cr.npz": {
+   "evidence": "computations/beyond_the_wall/r6941_directions/launch.sh: fine_cr in launch.sh",
+   "grade": "COMMAND",
+   "sha256": "9cb76d0b1fbb3051c04a61a54af0b9c854ff350e33ef2929e55b32816c3f8f79"
+  },
+  "computations/beyond_the_wall/spectra/r6941_fine_cr_visleaf.npz": {
+   "evidence": "spectra/README.md: | `r6941_fine_cr_visleaf.npz` | the arm's `VISLEAF=1` endpoint, real (`comb_f1`) and injected (`inj_f0`, `inj_f1`), at the same fine sampling | so `cc66.44`'s three-way separation is **measured** at $\\ell_2$, $\\ell_3$ and $\\ell_4$ rather than inherited from the coarse grid. \u26a0 the injected arrays are",
+   "grade": "COMMAND",
+   "sha256": "973d427abb76f7aaed88822f843cb366cd767de0be05cf04f9c10c5ec1dcab27"
+  },
+  "computations/beyond_the_wall/spectra/r6941_fine_lcdm.npz": {
+   "evidence": "computations/beyond_the_wall/r6941_directions/launch.sh: fine_lcdm in launch.sh",
+   "grade": "COMMAND",
+   "sha256": "f8031d46497b0311bca02c71748c5bbfc9be29a9529590946c6dec71792f1e75"
+  },
+  "computations/beyond_the_wall/spectra/r6959_big_lcdm.npz": {
+   "evidence": "computations/beyond_the_wall/r6959_directions/launch_c.sh: big_lcdm in launch_c.sh",
+   "grade": "COMMAND",
+   "sha256": "bbf41a9c096b2d6fae2194b42885073e5111d27eddd693594894e7799a0ba797"
+  },
+  "computations/beyond_the_wall/spectra/r6959_bigall_lcdm.npz": {
+   "evidence": "computations/beyond_the_wall/r6959_directions/launch_b.sh: bigall_lcdm in launch_b.sh",
+   "grade": "COMMAND",
+   "sha256": "cfd774874a20000872f90a7c24f1276c4ac9cb17438fe94a451470875aa01824"
+  },
+  "computations/beyond_the_wall/spectra/r6959_eta_cr.npz": {
+   "evidence": "computations/beyond_the_wall/r6959_directions/launch_a.sh: eta_cr in launch_a.sh",
+   "grade": "COMMAND",
+   "sha256": "aafd8f90b717d149af82387dda9937b081e5e8d17a2f1eeffd6514c6f4e3962f"
+  },
+  "computations/beyond_the_wall/spectra/r6959_eta_lcdm.npz": {
+   "evidence": "computations/beyond_the_wall/r6959_directions/launch_a.sh: eta_lcdm in launch_a.sh",
+   "grade": "COMMAND",
+   "sha256": "3d7b8a212c8911c5d57f9992e0d1b8bbf9fe656e731825b93d31bc9b1ef70a05"
+  },
+  "computations/beyond_the_wall/spectra/r6959_nbig_lcdm.npz": {
+   "evidence": "spectra/README.md: | `r6959_nswap_lcdm.npz`, `r6959_nbig_lcdm.npz` | \u24f5\u1d47, wiring three (`SRCTAPERNORM=1`): the same two coefficients with the window's **total weight held fixed**, so only its spread moves. \u2317 *These are the ones the report reads, and they land on wiring two to parts in ten thousand.* |",
+   "grade": "COMMAND",
+   "sha256": "57ccb6c1de66ee635811ef580bfbfc345c7fe16c0986435c7405eb10c1d3d104"
+  },
+  "computations/beyond_the_wall/spectra/r6959_nswap_lcdm.npz": {
+   "evidence": "spectra/README.md: | `r6959_nswap_lcdm.npz`, `r6959_nbig_lcdm.npz` | \u24f5\u1d47, wiring three (`SRCTAPERNORM=1`): the same two coefficients with the window's **total weight held fixed**, so only its spread moves. \u2317 *These are the ones the report reads, and they land on wiring two to parts in ten thousand.* |",
+   "grade": "COMMAND",
+   "sha256": "6d771a237ed7809e802f661200e91e6c395f7dbf64152f6e894a494ea1d1db65"
+  },
+  "computations/beyond_the_wall/spectra/r6959_swap_lcdm.npz": {
+   "evidence": "computations/beyond_the_wall/r6959_directions/launch_c.sh: swap_lcdm in launch_c.sh",
+   "grade": "COMMAND",
+   "sha256": "02677cf55c6f8706acd4511c4d52f58242cb83a1fe59c2b312b35ce03cab7545"
+  },
+  "computations/beyond_the_wall/spectra/r6959_swapall_lcdm.npz": {
+   "evidence": "computations/beyond_the_wall/r6959_directions/launch_b.sh: swapall_lcdm in launch_b.sh",
+   "grade": "COMMAND",
+   "sha256": "cbc88061c512e98e717d48f0ee5f585a7e81cec7609113414e0d0292ccbc1cd5"
+  },
+  "computations/beyond_the_wall/spectra/r6975_mix_lcdm.npz": {
+   "evidence": "computations/beyond_the_wall/r6975_directions/launch.sh: mix_lcdm in launch.sh",
+   "grade": "COMMAND",
+   "sha256": "55234024423ef03b456d4db3726a60e240546feceb68292f7668f59b87e9d6ca"
+  },
+  "computations/beyond_the_wall/spectra/r6975_mixb_lcdm.npz": {
+   "evidence": "spectra/README.md: | `r6975_mixb_lcdm.npz` | the same at `DPSRC = 0.60`, the second coefficient, so the response can be calibrated and inverted as `cc66.47`'s taper response was. |",
+   "grade": "COMMAND",
+   "sha256": "98cd8e3c8a85412cdc8d116f208caeb02ffa327acc689effd37b6153f7ccc10f"
+  },
+  "computations/beyond_the_wall/spectra/r6983_joint_lcdm.npz": {
+   "evidence": "computations/beyond_the_wall/r6983_directions/launch_fine.sh: joint_lcdm in launch_fine.sh",
+   "grade": "COMMAND",
+   "sha256": "d9047618dd1e738e7b5daad9c6255502c6dde54550f61fd1e51e92703a2c630c"
+  },
+  "computations/beyond_the_wall/spectra/r7041_accept_Al.npz": {
+   "evidence": "computations/beyond_the_wall/r7041_directions/solvers_live.sh: the directory launcher (output name not literal)",
+   "grade": "COMMAND",
+   "sha256": "60974670efe56df666b343bba063245d6853be36df4b8b289f62479b89869f66"
+  },
+  "computations/beyond_the_wall/spectra/r7041_accept_cr.npz": {
+   "evidence": "computations/beyond_the_wall/r7041_directions/resume.sh: accept_cr in resume.sh",
+   "grade": "COMMAND",
+   "sha256": "d0814be82206b424204d5cee4b0d0b21768d692d8a85a024caedf5eded13a022"
+  },
+  "computations/beyond_the_wall/spectra/r7041_accept_digest.npz": {
+   "evidence": "computations/beyond_the_wall/r7041_directions/solvers_live.sh: the directory launcher (output name not literal)",
+   "grade": "COMMAND",
+   "sha256": "957d6d6c2ae372e8cbc4456e413e818bd5f22cd6f3533cea2cef9ea65b1443d9"
+  },
+  "computations/beyond_the_wall/spectra/r7041_accept_lcdm.npz": {
+   "evidence": "computations/beyond_the_wall/r7041_directions/resume.sh: accept_lcdm in resume.sh",
+   "grade": "COMMAND",
+   "sha256": "5511fd644984a9f9892f07c595297ac332a5b0d11520c19514d800b301c8dd6c"
+  },
+  "computations/beyond_the_wall/spectra/r7041_accept_nk_slices.npz": {
+   "evidence": "computations/beyond_the_wall/r7041_directions/solvers_live.sh: the directory launcher (output name not literal)",
+   "grade": "COMMAND",
+   "sha256": "e5852a3f6525181e412efa7242c50b70fda489998924493f7d9b137656c9e812"
+  },
+  "computations/beyond_the_wall/spectra/r7041_accept_sample.npz": {
+   "evidence": "computations/beyond_the_wall/r7041_directions/solvers_live.sh: the directory launcher (output name not literal)",
+   "grade": "COMMAND",
+   "sha256": "9e7fb0a6aac1ce9640d1b0e3d79227be6f599518613e2790f2df3ebf7b4bb3e5"
+  }
+ }
+}
