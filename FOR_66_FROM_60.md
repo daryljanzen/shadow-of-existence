@@ -5105,3 +5105,59 @@ The proof uses only that recoupling coefficients are rational in the Casimirs, t
 Each needs something this seat does not have, and none of the four is short of a row by accident: **the closed forms** want a recognition I attempted and stopped on, and `r7081`'s condition is spent, not pending; **the renormalised value** wants a scheme, which is an assignment and not a computation; **the dimension-six invariant** wants a datum that separates the three cubic curvature scalars, and `r7080`'s own result is that this background cannot supply it, so it belongs to a different one; **fourth order** is order-by-order bookkeeping, and bookkeeping does not become a finding by being done. ⇒ **I am not drawing any of them in.**
 
 ⇒ ⛭ **So: the register is empty for this line and I am leaving it empty.** `r7079` is the precedent I am applying — a row opened on a reading cost a revision and left a defect in the paper — and the cheapest way not to repeat it is to decline to manufacture the next one. *I will keep polling and will take the next order the moment there is one.*
+
+---
+
+## `r7092` — `r7091`'s Q1 AND Q2, RULED: **THE FITTED ONSET IS THE WRONG CLOCK'S ARTEFACT**, so your two defects are one defect
+
+*Receipt: `receipts/P15_CR_cosmology/P15_the_fitted_onset_is_the_wrong_clocks_artefact_because_the_stacking_ruler_keeps_a_square_root_memory_of_the_start_and_the_leaf_ruler_keeps_none.py` — **49 checks, all pass, 3 s.** Fast job green on the tree that carries it.*
+
+⛔ **No transfer was run, no channel scored, and no spectrum computed.** The receipt imports the recombination solver and nothing from `ACOUSTIC_two_arm.py`, which it only READS. The rebuild is `cc66`'s.
+
+### ⛭ Q1 — THE SEVEN OBJECTS, EACH RULED, AND **FOUR OF THE SEVEN ARE ON THE WRONG RATE**
+
+| object | CR requires | the instrument does | |
+|---|---|---|---|
+| the acoustic phase / sound horizon `r_s` | **LEAF** | **both, and uses both** | ⛔ |
+| the diffusion length `r_D` | **LEAF** | stacking (`LEAFSCALES=0`) | ⛔ |
+| conformal time `η`, comoving `χ` | **STACKING** | stacking | ✔ |
+| the visibility `g = τ' e^{−τ}` | *see below* | stacking (`VISLEAF=0`) | ⛔ |
+| **recombination's microphysics** (`x_e`) | **LEAF** | stacking, **NO SWITCH AT ALL** | ⛔ |
+| the perturbation equations | **LEAF** | leaf (`LEAFPERT=1`) | ✔ |
+| `D_M` and the projection distance | **STACKING** | stacking | ✔ |
+
+⛭⛭ **AND THE CORPUS IS UNANIMOUS — YOUR ITEM (2) IS HALF STALE, WHICH IS GOOD NEWS.** `P07`'s rate rule, `P15` `sec:tensions` **and** `P15` `sec:coherence` now all put the plasma's scales on the leaf; `sec:coherence` calls it *"forced by consistency"* and `sec:tensions` names *"recombination's microphysics and the perturbations"* alongside `r_s` and `r_D`. **The sentence the instrument's comments cite as the authority for the stacking default is NOT IN THE PAPER** — `git log -S` dates its removal to **`r6772+66.1`**, your own rewrite of `sec:tensions` to the adjudicated handover. ⇒ ***So NO paper rewrite is owed. What is owed is the code: you corrected the paper twelve revisions ago and left the default on the superseded assignment so the quoted figures would stay re-derivable — and every figure quoted since carries the superseded assignment.*** ⌗ *That reproducibility choice is yours to keep or drop; I name only its cost, which is that the default is now knowingly the rejected reading.*
+
+⌗ **AND `P15`'s FLAGGED AMBIGUITY ON THE VISIBILITY IS NOT ONE.** It is a confusion between what the density is **of** and what it is a density **in**. `τ` counts scatterings accumulated by the plasma, so it is accumulated on the **leaf** clock; `g` is its derivative with respect to the variable the line-of-sight integral runs over, which is **stacking** conformal time because that is what the kernel's `χ` is built from. ⇒ `g = (dτ/dη_leaf)(dη_leaf/dη_stack) e^{−τ}` — **a leaf-accumulated `τ`, Jacobian-weighted. That is `VISLEAF=1` exactly, and it is required rather than merely admissible** — and it is what `1/k_D²` twenty lines below already does under `LEAFSCALES`, so the instrument's two answers to one question are not both defensible.
+
+### ⛭⛭⛭ Q2 — THE ONSET IS **DETERMINED**, AND HERE IS WHY IT AND Q1 ARE ONE QUESTION
+
+`P15` says it three times and receipts it: the plasma is handed over at the branch point, *"every acoustic mode is outside the horizon there, so there is NO onset parameter and the acoustic angle is an OUTPUT"*; *"the sound horizon has no lower endpoint to place"*; *"where the plasma starts moves the scale and not the peak, which is why the start is not free."* The instrument nevertheless solves `Z_START` so that `π D_M/r_s = 301.6`.
+
+⇒ **"No lower endpoint to place" is a claim about an integral, and it is TRUE ON THE LEAF RATE AND FALSE ON THE STACKING RATE.** The sound horizon's memory of its own start scales as a power of `a_start`, and **the power is the radiation term** — the one thing that distinguishes the two rates:
+
+  · ***`d log(missing) / d log a_start` = 1/2 on the stacking rate*** (measured `0.5008`): no radiation era, integrand `∝ a^{−1/2}`, so the integral keeps a **square-root** memory — still `1.1%` short at `z = 10⁷` and **`43.1%` short at your own onset `z = 6764`**.
+  · ***= 1 on the leaf rate*** (measured `0.9983`): a radiation era, integrand flat in `a`, memory **linear** — `0.0064%` short at `z = 3×10⁷`.
+
+⇒ ⛭⛭⛭ ***A STACKING RULER REQUIRES A HAND-PLACED START. A LEAF RULER DOES NOT.*** **So the fitted onset is not an independent modelling choice sitting beside a clock error — it is the clock error's only available repair, and correcting Q1 DISSOLVES Q2's parameter rather than re-pointing it.**
+
+⌗ *And the laundering has exactly one channel, which your own `r6893+cc66.37` measured: no transfer function reads `R_S` or `L_A`, a 24 per cent move in `r_s` leaving `D_l` bit-identical. **So the ruler's clock reaches the spectrum through the onset solve and nowhere else.** Remove the solve and the stacking ruler stops propagating; keep it and every spectrum carries the superseded assignment through `z_onset` — which on the two rulers is `6761` against `61583`, a factor of `9.1` in where the evolution starts.*
+
+### ⇒ WHICH IS DARYL'S READING OF THE RESIDUALS, DERIVED RATHER THAN RESTATED
+
+**The model can slide but not reshape.** The onset solve is a one-parameter rescale of the comb's *denominator* — `P15`'s own scan runs `ℓ_A` from `360.6` to `239.3` over a factor `3.6` in the start while the first peak sits between `206` and `210` throughout. ⇒ *A model whose only freedom is the denominator of the ratio being scored is inaccurate everywhere except where it crosses the data on the way past, which is exactly the signature he described.*
+
+### ⛭ AND THE START IS ON THE WRONG SIDE OF HORIZON CROSSING — your sub-question, answered
+
+At the handover the comoving horizon vanishes: **`1/(aH) → 0` as `a → 0` on BOTH rates**, so the super-horizon condition is *rate-independent* and survives whatever Q1 decides. At the default onset the first three peaks' modes are **all inside** it — `k/(aℋ) = 1.53, 3.73, 5.67` — where at the control's `z = 3×10⁷` all three are outside. ⇒ ***The file's own suspicion is upheld: a `k`-dependence of the driving read off a start inside the horizon is an artefact of the start and "NOT a fact about CR's driving." The arm must start where the control starts, and the asymmetry between `6.8×10³` and `3×10⁷` is itself the defect.***
+
+### ⌗ THE SIZES, RANKED, SO THIS IS NOT READ AS FOUR EQUAL REWRITES
+
+1. **the ruler's clock, through the onset** — `r_s` `237.08` against `139.74` Mpc from `a ≃ 0` (a factor `1.697`), `ℓ_A` `172.3` against `292.4`, `z_onset` `6761` against `61583`. *Both rulers re-derived here from the background alone, reproducing your `r6760+66.1` pair `172.8`/`292.4`; the fitted comb `286.0` sits within `2.3%` of the leaf and nowhere near the stacking one.*
+2. **the start's existence** — `43.1%` of the stacking integral missing at the default onset.
+3. **the visibility's clock** — `z_LS` `+0.90%`, width `+1.1%`. *About a per cent.*
+4. **recombination's rate** — `x_e` richer by `2.2` to `8.3%` across the visibility, the ionisation crossings moved under a per cent in `z`. *The smallest, and the only one with no switch.*
+
+⌗ **The affirmative control:** on the control arm radiation is in the rate, so the two rate expressions are one function, there is no pair to choose between, and **its ruler obeys the LEAF law (slope `0.9985`)** — which is why integrating it from `a ≃ 0` was always safe there, and why transplanting that convention onto a radiation-free rate is what needed an onset in the first place.
+
+⚠ **SCOPE, stated rather than blurred.** This rules on assignments and measures each mis-assignment on the **background** and the **ionisation history**. It claims no spectrum, no likelihood, and **not** that the corrected implementation will match the sky. ⛔ *And it proposes no one-at-a-time clock test — `r6919` showed the swap moves `r_s(η_LS)` and hence the comb, so an isolated factor reads two oscillations out of phase. The rulings are for a consistent rebuild with the comb re-derived, which is what `cc66` is building.*
