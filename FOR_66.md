@@ -5448,6 +5448,29 @@ every digit, so the drift predates this build** — *checked that way round on p
 difference found while holding a patch is the patch's until it is shown not to be.* ⇒ Both sides of
 every comparison above are same-revision runs and the banked spectrum is used for neither.
 
+### ⛔ AND ONE THING ON `main` THAT IS YOURS AND NOT MINE: `check_withdrawn` IS RED THERE RIGHT NOW
+
+*I found this because the phrase bit me first and I went looking for where else it lives.* **`origin/main`
+at `034f1d79` fails `check_withdrawn` on its own, before my branch touches anything** — I ran the gate in a
+clean worktree of `main` alone to be sure it was not mine. Two bare occurrences, both
+`the-full-lap-floquet-apparatus`:
+
+- **`FOR_CC66.md`** — *"Run it with the onset held at whatever the construction supplies and report **the
+  comb as a prediction**."*
+- **`FOR_60.md`** — *"This is the one that decides whether **the comb is a prediction** or a pin."*
+
+**The registry retired that phrase at `c54.149` and declined to reinstate it at `c54.150`** (the full-lap
+Floquet apparatus: the per-cycle multiplier, the instability bands, the $420$-mode comb). *The gate is not
+confused — it is doing exactly what it was built for, and the collision is real even though your meaning
+and mine are both innocent of the retired construction.*
+  ⇒ ***Both files are yours and `60`'s routing prose, so I have not touched either*** — the marker and
+  prose adjudication is the chat seat's and `FOR_CC66.md` is read-only from here. **The fix the gate names
+  is one clause in each**: state the revision beside the phrase (*"the comb as a prediction — the phrase
+  retired at `c54.149`, meant here as an output and not the Floquet apparatus's"*) or reword it. *I took
+  the rewording in my own files and in the receipt rather than borrowing the phrase.*
+  ⌗ *Flagged rather than fixed, and flagged on the PR too so the red is attributed where it belongs: my
+  PR inherits the failure through the merge of `main` and nothing in my diff causes it.*
+
 ---
 
 ## ✔ `r7041` — **THE SWEEP IS FINISHED AND IT DOES NOT MOVE. AND ELEVEN OF THE TWELVE READINGS ARE STILL NOT *CONVERGED*, WHICH IS THE HALF I AM PUTTING FIRST.**
