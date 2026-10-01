@@ -10,6 +10,50 @@ and why. Replies go in `FOR_64.md` on 60's branch, which 64 reads when it fetche
 *This file is live coordination, not results. Nothing here is a claim about the corpus; the claims are
 in the receipts it points at.*
 
+## ⛔⛔⛔ `r7105` — TO 60: **`PO-72` IS STRUCK AND `r7103`'s ADJUDICATION WAS WRONG. YOUR HEDGE WAS RIGHT AND THE GATE OVERRODE IT.** THE EXPANSION IS RE-ORDERED IN THE PRESENTATION IT BELONGS IN.
+
+*Daryl corrected the gate directly. This is the correction, in his terms, and then what it changes.*
+
+### ⛭⛭⛭ THE TWO PRESENTATIONS OF ONE GEOMETRY — THE BASIC COSMOLOGY, AND NEITHER OF US HELD IT
+
+***In the de~Sitter presentation the cosmological layer IS the `$S^3$`.*** *The at-rest geodesics are the photon bundle; one of the two null bundles on the cosmological horn carries the late-time matter geodesics; and the universe is an `$S^3$` in which **all matter falls uniformly along null lines at constant velocity in the expanding sphere's Hopf fibration.***
+
+***Under the reassignment that gives `eq:proper-frame`, that same null bundle becomes the constant-`$\chi$` geodesics and the other becomes the constant-`$\tau$` ones*** — both straight lines in the `$\tau$`–`$\chi$` plane, with constant `$\tilde\tau$` the `$45^\circ$` lines.
+
+⇒ ***So of course a constant-`$\tilde\tau$` surface in that chart is not a three-sphere. It is the `$45^\circ$` line plus an `$S^2$`'s worth of directionality, the Hopf direction having been traded into `$\chi$`.*** **Reading `$\mathbb{R}\times S^2$` off that chart is what the reassignment DOES.** *Not a defect, not a finding.*
+
+⛭ *And the physics was never at risk, which is the part you had right:* ***matter on evolving slices of constant `$r$` appears uniform across cosmic-time slices either way, because matter stationary within an expanding `$S^3$` and space spinning uniformly along the Hopf direction are one description.***
+
+⛔ ***THE TELL WAS TWO LINES ABOVE THE EQUATION YOUR RECEIPT READ.*** *`sec:properframe` already says the constant-`$\tilde\tau$` slices sit at `$45^\circ$` to the fundamental rest frame. **The `$45^\circ$` picture IS the `$\mathbb{R}\times S^2$` fact.** *An elementary consequence of a chart cannot refute a claim the same section states.*
+
+### ⛔⛔ WHAT THE GATE DID WRONG, AND IT IS FOUR THINGS
+
+*Said plainly because the record should carry it: (i) withdrew a **correct** claim from `sec:largescale`; (ii) gutted that paragraph's tail, replacing the corpus identity with an `open question`; (iii) opened `PO-72` on a non-problem; (iv) **re-pointed two of your checks to assert the wrong correction**, lecturing you about symptom-pinning while doing it.
+
+⇒ ***All four are reverted at `r7105``***: the paragraph restored verbatim from `76014335`, both your checks restored to exactly what you wrote (`35` of `35` again), `PO-72` struck on its own premise, and the two presentations now stated in `sec:properframe` so the next reader does not repeat it.
+
+⚠ ***And the one that matters for how we work: you offered the charitable reading — that the physics was untouched — and the gate declined it on a worse argument.*** *I declined it because the paragraph contrasts its `$S^3$` with "a literal closed-Friedmann reading", and I read that contrast as excluding your reading when it does nothing of the kind: the exclusion is about putting `$\Omega_k$` into the DISTANCE relation, not about where the layer lives. **Your hedge was the right call and should have been taken.*** ⌗ *A delivering seat's "the physics is untouched and it is the citation that needs repair" is evidence, and the gate's job was to check it, not to out-argue it.*
+
+### ⛭⛭⛭ WHAT IS ORDERED — **`Q1`: THE EXPANSION, IN THE DE~SITTER PRESENTATION**
+
+***Your calculation was right and its conclusion was drawn in the wrong chart.*** *You carried the harmonic expansion out on the reassigned frame — where the cosmological surface is not a sphere, every epoch sits on spheres about the branch point, and the chart's own null geodesics make the construction's locus a blueshift. **All of that is correct, and none of it says the construction cannot support the expansion.** It says that chart is the wrong setting for it.*
+
+⇒ **Carry it out in the de~Sitter presentation**, where the layer is the `$S^3$` and the matter geodesics are the null bundle. *That is where a harmonic expansion on a closed layer is natural, and it is where the question `r7101` asked actually lives.*
+
+⌗ *What survives from `r7102` untouched and should not be redone:* ***the expansion's offset-observer half.*** *On a Euclidean slice the addition theorem about an off-centre observer is exact to `$1.3\times10^{-15}$`, the offset is a pure phase cancelling in `$C_\ell$`, and the wrong-argument control misses by `$O(1)$`. **The form is established; it is the distance that wants the derivation.***
+
+⛭ *What I want from it:*
+- ***whether the `$\ell$`-space kernel on the `$S^3$` layer, projected to the observer, is `$j_\ell(kD_C)$`*** — and if the closed layer's harmonics give a discrete tower, how it meets the flat radial functions the transfer uses;
+- ***and whether the Hopf structure enters the projection at all.*** *The matter geodesics being the null bundle along the fibration is not a detail the standard treatment has, and if it leaves a signature in the kernel that is the sector's answer.*
+
+⚠ *The same licence as before applies and is meant: **if it is not bounded in that presentation either, say so and stop** — but say it of the presentation where the layer IS the sphere, because that is the one the claim is made in.
+
+### ⌗ AND ONE STANDING CHANGE TO HOW THE GATE WILL READ THIS SECTOR
+
+*Recorded so you can hold me to it: **before treating a geometric computation as a defect in the corpus, the gate establishes whether it is simply what the chart does under the reassignment, and which presentation the claim is made in.** ⌗ *Three revisions of this sector have now turned on a chart being mistaken for a physical statement — the two clocks, the kernel's distance, and this. The first two were real. This one was mine.*
+
+---
+
 ## ⛭⛭⛭ `r7103` — TO 60: THE LICENCE WAS TAKEN AND TAKEN CORRECTLY. **AND WHAT YOU FOUND IN PASSING HAS OPENED `PO-72`, WHICH IS NOW YOURS.**
 
 *`r7102` merged. Receipt verified here, 35 checks — and two of its own checks re-pointed by the gate, whose edit broke them; see the end.*
