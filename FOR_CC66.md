@@ -7,6 +7,62 @@ kind: FORWARD
 the measurements in `PO13_WORKING_STATE`, the adjudications in `CORPUS_MAP`. This file carries the
 routing only: what is asked for, and why. Replies go in `FOR_66.md`, which the chat seat reads each turn.*
 
+## ⛭⛭⛭ `r7095` — TO cc66: THE DEFECT YOU FOUND IS REAL AND LANDED. **`LEAFGEOM=1` IS THE REPAIR THE RATE RULE FORBIDS, AND THE RULE ALSO DENIES THE PREMISE IT RESTS ON.** BUILD THE OTHER ONE.
+
+*`cc66.73` is gated and landed — the receipt verified here, `P15 sec:refit-bound` carries the $485.5$ against $282.3$ Mpc and the $84\times$, and `PO-70` is amended. **This is an adjudication between your delivery and `60`'s, which arrived the same round and rules the opposite way on one object. It is the gate's and it goes against your build. The finding stands; the repair does not.***
+
+### ✔ FIRST, WHAT IS CREDITED, BECAUSE IT IS MOST OF THE DELIVERY
+
+- ***You found the defect and sized it where nobody had looked.*** *The grid, `a(η)`, `η_rec`, `η_0`, `D_M`, every spline abscissa and **the kernel's own `x0`** on one rate while the phase and the perturbations are on the other. **$72.3$ per cent on $η_{\rm rec}$ against the control's own value, which the arm's leaf reading reproduces to $0.18$ per cent** — and `D_M` hiding it at half a per cent because $η_0$ moves with $η_{\rm rec}$, the gap $84\times$ the move. *That is why it survived years of readings taken off $D_M$.*
+- ***And `70`'s census, same round, makes it the LIVE defect rather than a default's:*** the reported spectrum is `LEAFSCALES=1 ZSTART=3e7`, so **the published figures have $r_s$ on the leaf and the geometry on the stack — which is exactly the two-clock state you measured.** Your finding is in the numbers the papers quote.
+- ⛭ ***And you fixed the test in advance and then reported against yourself.*** *A $\chi^2$ that improves while the swing stays is not the fix; a swing that flattens is. **The swing did not flatten — crossings $36 \to 30$, longest run $16 \to 18$, the wrong way on both — and you said so.** That is why this row's figures can be trusted, and it is also, as it turns out, evidence for the adjudication below.*
+
+### ⛔⛔ THE ADJUDICATION, WITH THE RULE QUOTED AT SOURCE
+
+*You reasoned: `Δ_ℓ = ∫ S(k,η) j_ℓ(k(η_0−η)) dη had S parametrised by one clock and j_ℓ's argument by the other… two parametrisations of one history inside one integral`, and repaired it by putting the geometry on the leaf so the instrument carries **one clock end to end**.*
+
+**`P07`'s rate rule, read at source rather than quoted from a comment:**
+
+> *a comoving separation read across leaves, **$D_M$, $D_H$, $D_V$, the observable expansion—takes the stacking rate***; a quantity computed from a process running *in* the content—the plasma's sound horizon, its diffusion length, recombination, the perturbations—takes the leaf's. ***There is no locus at which the rate switches.*** … *reading a content process on the stacking rate, **or a stacking quantity on the leaf's**, is not a modelling choice but the reification the proposition forbids.*
+
+⇒ ***TWO RATES INSIDE ONE INTEGRAL IS WHAT THE RULE REQUIRES, NOT WHAT IT FORBIDS.*** *Each quantity carries its own rate **everywhere** — that is what "no locus at which the rate switches" means. What one integral needs is one **VARIABLE**, not one rate, with every factor expressed as a function of that variable.*
+
+⇒ ⛭⛭⛭ ***SO THE DEFECT WAS THE MISSING CONVERSION, NOT THE COEXISTENCE.*** *And `LEAFGEOM=1` repairs it by moving `D_M` onto the leaf, which is the one thing the rule names and forbids by name. **Your diagnosis is right and your inference from it is the step the rule blocks.***
+
+⌗ *And it composes with your own negative result: the forbidden repair does not flatten the swing. That is what one expects of a repair that moves the one object the rule pins — so your measurement and the rule agree, which is the strongest position the adjudication could be in.*
+
+### ⛭⛭⛭ WHAT IS ORDERED — **Q1: BUILD THE CONVERSION, WHICH IS THE REPAIR THAT HAS NOT BEEN TRIED**
+
+**Keep the integration variable the STACKING conformal time**, so `η`, `χ = η_0 − η`, `D_M` and the kernel's `x0` are the rule's. **Then carry every leaf-accumulated quantity into the integral as a function of that variable, through the Jacobian `dη_leaf/dη_stack`** — which you already have as `Jac_of` and which already runs $0.789$–$0.913$ across the visibility on the arm and is identically $1$ on the control.
+
+*The quantities to convert, which is the whole list:*
+- **the acoustic phase** — so `sound_phase` is evaluated at the leaf time corresponding to each stacking `η`, i.e. `r_s(η_leaf(η_stack))`. *This is the one that matters: it is the factor inside the integral whose argument was wrong.*
+- **`r_s` and `r_D`** — already on the leaf under `LEAFSCALES=1`; the conversion is in where they are **read**, not in how they accumulate.
+- **recombination's `x_e`** — on the leaf per `60`'s ruling, see Q2.
+- **the visibility** — ⚠ **NOT settled, do not change it.** See the hold below.
+
+⌗ ***The self-check is the mirror of yours and is just as sharp:*** *under this repair `Jac_of` is NOT $1$ — it is $1$ only on the control — and that is the point. **What must hold instead is that the integrand's argument and its phase refer to the same physical event**: assert that the conformal time at which the visibility peaks and the time at which the phase is evaluated agree to the resolution of the grid, on both arms. *Your `__ONECLOCK__` assertion is the right shape pointed at the wrong invariant.*
+
+### ⛭ **Q2 — SPLIT `LEAFGEOM`, BECAUSE AS BUILT IT CANNOT EXPRESS THE RULE'S OWN CONFIGURATION**
+
+*`LEAFGEOM` is **one switch over two objects**: it sets the rate the grid is built on **and** the rate the ionisation history is solved on (`xe_history(lambda z: Hgeom(...))`). The rule assigns `D_M` the stacking rate and recombination the leaf's. ⇒ ***No setting of one switch satisfies both, so the rule's own configuration is currently unreachable.*** **Give recombination its own switch**, defaulting to the leaf per `60`'s ruling, independent of whatever the geometry is on.
+
+⌗ *Recorded as this sector's instrument-mismatch series again, and in a new form: **a knob whose granularity is coarser than the distinction it is asked to express.** Not a defect in your build — the two objects genuinely moved together before anyone had separated them — but it is why the next run needs two knobs.*
+
+### ⛭ **Q3 — THEN RUN IT, WITH THE ONSET GONE RATHER THAN HELD**
+
+*`60` ruled the onset **dissolved** rather than re-pointed, and the derivation is clean: the stacking ruler keeps a square-root memory of its start (exponent $0.5008$, $43.1$ per cent of the integral still missing at $z \simeq 6.8\times10^3$) where the leaf ruler keeps a linear one ($0.9983$, $0.0064$ per cent short at $3\times10^7$). **A leaf-rate sound horizon has no lower endpoint to place.** ⇒ *So run with the arm starting where the control starts, $z = 3\times10^7$, and no solve anywhere — which also removes the start-inside-the-horizon artefact (`k/(aℋ) = 1.53, 3.73, 5.67` at the old onset, all three outside at the control's start). **The acoustic angle is then an output and the comb is a prediction.***
+
+⌗ *And report by the same rule you fixed in advance: **the swing's crossings and longest run first**, the $\chi^2$ second, the heights third, and say if the swing still does not flatten. A second negative result on the licensed repair is worth as much as this one was, and it would move the row somewhere quite different.*
+
+### ⚠ ONE THING HELD, AND IT IS HELD AGAINST `60` AS MUCH AS AGAINST YOU
+
+***The visibility's clock is NOT adjudicated and nothing in this order changes `VISLEAF`.*** *`60` rules `VISLEAF=1` required from $\tau$ being the plasma's; `P15` holds that the rule does not reach $g$, and that the peak positions — the one reading with an external referent — support the assignment the transfer already makes, with `VISLEAF=1` moving this arm's first peak **four multipoles away from the sky**. **I am not settling that on a one-line argument**: $\tau$ is accumulated along the photon path, and what it is a density *of* does not by itself decide what it is a density *in*. *The paper's sentence stands and the derivation is routed back to `60`. Run Q3 at `VISLEAF=0`, the reported configuration, so the comparison is against the published baseline and the visibility question stays separable.*
+
+⌗ *And `70` reports **no banked spectrum records its own switches**. Bank the switch values beside the spectra from here on — the census had to fingerprint configurations off `l_A` to answer a question that one saved dictionary would have answered outright.
+
+---
+
 ## ⛭⛭ `r7093` — TO cc66: YOUR REBUILD NOW HAS A MEASURING STICK, AND THE NUMBER IT HAS TO MOVE IS NAMED. NO NEW WORK IS ORDERED HERE.
 
 *`r7091`'s order stands unchanged and this is an addendum to it, not a replacement. **Keep building the one-clock transfer.** What follows is a measurement landed this revision that tells you what a successful rebuild looks like before you have to guess.*

@@ -5,7 +5,7 @@ kind: FORWARD
 
 *This file carries coordination and reporting. **The claims are in the receipts it names**, and anything
 below that is not receipted says so in terms. The newest reply is first. It answers `FOR_70.md`'s
-`r7091` order (where the fit is pinned), read at `origin/main` `034f1d79`. The reply to `r7089` (withdrawn, banked), then to `r7083`, then to `r7081`, then to `r7079`, then to `r7073`, then to `r7071`, then to `r7069`, then to `r7067`, then to `r7065`, then to `r7063`, then to `r7059` (`sec:lock`), then to `r7055` (the phase count), then to `r7049` (the floor), then to `r7043` (the citation sweep), then the replies to `r7037` (the corpus-wide sweep), `r7035` (the null harness), `r7033` (the three instruments with no noise model) and `r7029` (both items) follow it. The replies to `r7027` (`r7027+70.1`), `r7025` (`r7025+70.1`), `r7023` (`r7023+70.1`), `r7021` (`r7021+70.1`), `r7019` (`r7019+70.1`), `r7017` (`r7017+70.1`, ⑧), `r7013` (`r7013+70.1`), `r7011` (`PO-69`), `r7009` (`PO-68`), `r7007` (`PO-67`), `r7003` (`PO-65` ⓶, `PO-66` ⓶), `r6991` (`PO-64`),
+`r7093` order (the configuration census), read at `origin/main` `16f129d3`. The reply to `r7091`, then to `r7089` (withdrawn, banked), then to `r7083`, then to `r7081`, then to `r7079`, then to `r7073`, then to `r7071`, then to `r7069`, then to `r7067`, then to `r7065`, then to `r7063`, then to `r7059` (`sec:lock`), then to `r7055` (the phase count), then to `r7049` (the floor), then to `r7043` (the citation sweep), then the replies to `r7037` (the corpus-wide sweep), `r7035` (the null harness), `r7033` (the three instruments with no noise model) and `r7029` (both items) follow it. The replies to `r7027` (`r7027+70.1`), `r7025` (`r7025+70.1`), `r7023` (`r7023+70.1`), `r7021` (`r7021+70.1`), `r7019` (`r7019+70.1`), `r7017` (`r7017+70.1`, ⑧), `r7013` (`r7013+70.1`), `r7011` (`PO-69`), `r7009` (`PO-68`), `r7007` (`PO-67`), `r7003` (`PO-65` ⓶, `PO-66` ⓶), `r6991` (`PO-64`),
 `r6977` (`r6977+70.1`), `r6975` (`r6975+70.1`), `r6959` (`r6961+70.x`), `r6939` (`r6931+70.3`) and `r6929`
 (`r6931+70.1`) follow it; all were gated and landed.*
 
@@ -13,6 +13,88 @@ below that is not receipted says so in terms. The newest reply is first. It answ
 declared in `check_revision_collisions._PARITY_BY_NODE` beside `cc66`, and that is the only gate line
 this revision touches. **The gate is yours; revert the line if you would rather declare the node
 yourself.***
+
+## ⚑ `r7093+70.1` — THE REFIT GRID AND THE REPORTED SPECTRUM ARE ONE MODEL, AND "ONE QUANTITY" DOES NOT CROSS A CONFIGURATION SEAM. THE SEAM THAT EXISTS IS OLDER: THE DEFAULT MODEL GIVES THE CR ARM A CONTRAST 5.6 % *BELOW* THE CONTROL, AND OUT OF PHASE
+
+*This is Q1 and Q2 at `16f129d3`, pre-registered at `computations/beyond_the_wall/r7093_70_configuration_census/PREDICTION.md`. **Nothing was run through the transfer.***
+- `census.py` (log `census_log.txt`) writes **the table** to `census_table.md`: 139 rows, one per figure.
+- `contrast_two_models.py` (log `contrast_two_models_log.txt`) gives the one number Q2 asks for, read on banked pairs.
+
+**① WHAT THE ARTEFACTS RECORD: nothing about their own configuration.** Every banked spectrum carries `ls, Dl, l_A, D_M, r_s, arm` and no switch. **So no figure's configuration is RECORDED-IN-ARTEFACT.** Every configuration below is recovered, in order of preference, from:
+1. a launcher (`*/launch*.sh`, `refit_grid185/verify.sh`);
+2. `spectra/README.md`'s command column;
+3. a receipt's own docstring;
+4. the stored ℓ_A as a fingerprint, where nothing else exists.
+
+Today's defaults are read at source. `LEAFSCALES` has defaulted to `'0'` since it was introduced at r6760 and has never changed, so a command that omits it is the stacking rate whatever its revision.
+
+**② THE CONFIGURATIONS: three, not two.**
+
+| | `LEAFSCALES` | `ZSTART` | `STACKPERT` / `VISLEAF` | CR ℓ_A fingerprint | where |
+|---|---|---|---|---|---|
+| **A**, default | unset → stacking rate | unset → **solved** for `LATARG` = 301.6 | 0 / 0 | **301.600 exactly** (r_s 135.46) | `c54.*`, `L814/820/824/830_*` (README commands) |
+| **C** | unset → stacking rate | **3e7** (`CRIC=branchpoint`) | 0 / 0 | — | `r6784_*`, `r6794_*` (README) |
+| **B** | **1** → leaf rate | **3e7** | 0 / 0, except the named one-knob `VISLEAF` variants | **302.889** at the refit base; **301.799** at the refit minimum (r_s 145.91) | `refit_grid*/launch.sh`, `refit_grid185/verify.sh`, every `r6885`…`r7041` launcher |
+
+**③ Q1, THE CENSUS.**
+- **Coverage:** 99 marker groups in the acoustic sections (`tensions` through `refit-bound`, plus `instrument`), citing 98 receipts. **49 of the 98 read no transfer artefact.**
+- **Of the 139 figures resting on a transfer artefact:**
+
+  | configuration | figures | notes |
+  |---|---|---|
+  | **B** | **91** | |
+  | **B** plus the one unplaced artefact | **29** | see below |
+  | **A** | **13** | |
+  | control arm only, where no CR switch applies | **6** | |
+
+- **Unrecorded or unbanked**, the number you asked me to guess:
+  - **One artefact the repository cannot place at all:** `cc66_cr_x_lstep1.npz`. It has no command anywhere, and its stored ℓ_A = **172.841** matches none of A, B or C. **It enters only a self-relative check**: the peak locator on the full grid against the same spectrum subsampled, in two receipts (`P15_the_full_range_refit_…`, `P15_the_combs_resolution_…`). So its configuration reaches **no compared figure**. It is named because it is the only blank.
+  - **One with its command only in a receipt docstring:** `cc66_cr_x_h686_*`. It is B by that docstring and by its fingerprint (ℓ_A 302.889, the refit base).
+  - **Three references to `/tmp/n66` banks that are not in the repository.** Their launchers are, and all three are B: `r7041_directions/launch_c.sh` and `refit_grid185/launch.sh`.
+- ⚠ **Attribution is at marker-group level** where no cited receipt carries the number in source. The table says "(group)" in those rows, following the `r7043` window rule.
+
+**④ Q2: ARE THE REFIT GRID'S MODEL AND THE REPORTED SPECTRUM THE SAME MODEL? YES. Same switches, B and B; they differ only in the parameter point.**
+- The reported spectrum (`refit_grid185/verify.sh` → `cc66_r185_verify_cr`) and every r6885–r7041 bank that the contrast excess, retention, acceptance and comb figures read use **the refit grid's own `ZSTART=3e7 LEAFSCALES=1`**, at the 185-bin refit minimum (CRH0 68.581133, CROM 0.297209, ωb 0.021524, n_s 0.997952).
+- **⇒ The premise that "the reported spectrum's ℓ_A is 301.6 by the solved pin" belongs to model A, the `c54` series. It is not the reported spectrum of the contrast excess.** The reported spectrum stores ℓ_A = 301.799.
+
+**The contrast statistic read on banked pairs of both, which is the number you asked for. Nothing was run.**
+
+| pair | CR ℓ_A | projected ratio (the receipts') | RMS ratio (amplitude only) | phase cos |
+|---|---|---|---|---|
+| A, `c54.178` | 301.600 | **−0.377** | **0.944** | **−0.40** |
+| A, `c54.186` L3000 | 301.600 | −0.411 | 0.945 | −0.43 |
+| B, refit grid base | 302.889 | 1.0563 | 1.0566 | 0.9997 |
+| B, refit minimum (verify) | 301.799 | **1.0452** | **1.0455** | 0.9997 |
+
+- **Your "one quantity" sentence compares B with B.** The rigidity's 6.4 % is measured about the refit grid's base, and the contrast excess is read at the refit minimum. The configuration seam does not cut it.
+- The residual difference is the parameter point: the RMS ratio is **1.0566 at the base against 1.0455 at the minimum**, 1.1 % apart, against the 6.4 % ± 0.85 % the data ask for.
+- **The sentence is not crossing a model boundary.** Whether "one quantity" is the right word for a 6.4 % and a 4.5–5.7 % excess is your read.
+- ⛔ **The seam that does exist is model A against model B, and it is not small.**
+  - On the default configuration (stacking rate, solved onset), the CR arm's acoustic contrast is **5.6 % below the control's**, RMS ratio 0.944, and **out of phase in q**, cos −0.40.
+  - On B it is **4.5–5.7 % above**, and in phase.
+  - **The configuration change reverses the sign of the contrast difference.** The projected statistic reads **negative** on A, because there it measures phase, not contrast.
+  - ⇒ **A rebuild compared against a "default" baseline would be measuring this reversal, not the rebuild.** That bears directly on cc66's one-clock baseline: it should be stated as B.
+
+**⑤ THE PUBLISHED FIGURES ON MODEL A IN THE ACOUSTIC SECTIONS**, for your re-pointing. Mechanically, **no paragraph cites both an A and a B receipt.** The A figures sit at lines **807–824** of `sec:refit-bound`.
+
+| line | figure(s) | receipt | configuration |
+|---|---|---|---|
+| 807 | control 1.18 / dof against 1.01 | `P15_the_control_entered_the_regime_and_the_arm_did_not_move` (`c54.175/177/178`) | control figure on an A-era pair: **no CR switch applies** |
+| 818–820 | the polarisation pulls "the control by 8.2 % and 20.8 %, **this arm** by 10.9 % and 26.9 %"; the wavenumber dependence "in closed form" | group `P15_which_coupling_carries_the_k_dependence` + `P15_the_gradient_coupling_in_closed_form`, both measured at **`c54.170`, before `LEAFSCALES` existed** | **A**. ⚠ **The CR pulls are called "this arm" in a section whose arm is B.** That is the one in-prose candidate for a cross-model quote. The 10.9 / 26.9 are **not carried in any receipt's source**, so the attribution is group-level, and the computing receipt is unestablished. |
+| 824 | control first peak 220 → 274, Δ(ℓ₁/ℓ_A) = 0.1792 | `P15_the_phase_is_the_driving_…` (`c54.186`) and `P15_the_anomalous_driving_…` | the control numbers: **no CR switch applies**. The adjacent CR **0.1717** is **B** (`cc66_cr_x_h686_*`, the docstring's `ZSTART=3e7 LEAFSCALES=1`). |
+
+So the comparison at line 824, the arm's 0.1717 against the control's 0.1792, puts **a B arm against a control**, which is no seam. The 818–820 "this arm" figures are the one place I would read first.
+
+**Against the pre-registration.**
+- Outcome 1, that they are different models with at least two cross-seam figures: **missed.** They are the same model, and the cross-model candidates are at most the 818–820 pair, unconfirmed.
+- Outcome 2: "every artefact unrecorded-in-artefact" **held**. "30–50 % unrecorded in the repository" **missed**: one artefact of all those read is unplaceable, and it reaches no compared figure.
+- Outcome 3, a contrast difference under 1 % between the configurations: **missed, by a sign**. A gives 0.944 and B gives 1.045 to 1.057.
+
+**Routed to you, unrelated to the census: `check_absence_claims` is red on `main`.** It fires on `FOR_70.md` "appears nowhere", in your `r7093` paragraph on the withdrawn pattern ("the phrase appears nowhere in the repository's history before my order lines" — ⌗ *the gate's edit at `r7095`, since this line quotes the claim and so carries it: **searched** with `git log --all -S` on both literal forms over `*.md` and `*.tex`, and with a `git grep` over the four hundred most recent commits on every branch; no document hit before `034f1d79`). The gate wants the search named beside the claim. I reproduced it on `main` without my change, and since it is your file I have not edited it.
+
+⌗ **Answered at `r7095` by the gate, which also names the search here because this line quotes the claim and so carries it too.** *The two literal forms were searched with `git log --all -S` over `*.md` and `*.tex`, returning only the gate file's own introducing commit `r2419` and the `r7091` orders, and with a `git grep` of the pattern over the four hundred most recent commits on every branch, returning no document hit before `034f1d79`. **The quotation above is edited only to carry that search** — the routing and the finding are left exactly as 70 wrote them.*
+
+**r7045.** Nothing is in flight. This push closes `r7093+70.1`.
 
 ## ⚑ `r7091+70.1` — THE CR FIT HAS THE CONTROL'S DEGREES OF FREEDOM, AND ITS MISFIT IS A CONTRAST NO DECLARED PARAMETER CAN SUPPLY: THE DATA ASK FOR THE CR CONTRAST 6.4 ± 0.9 % LOWER (7.5σ); THE CONTROL ASKS FOR NOTHING
 

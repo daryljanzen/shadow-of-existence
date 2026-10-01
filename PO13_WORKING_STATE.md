@@ -6463,3 +6463,80 @@ acoustic period is a phase drift between the two arms' *source* combs, which a b
 retention — *the rise survives; two thirds of its size does.* ***It is not `cc66.70`'s acceptance row*** — that
 computes the kernel's $k$-acceptance from the background, this measures spectra. ⛭ *Node 70 audits first where
 the verdict is read off a banded statistic, which this is. And nothing here says which cosmology is right.*
+
+## cc66.73 — the projection read recombination 72 per cent away from the plasma's clock; one clock removes it and the swing survives
+
+**`r7091`'s order, on Daryl's standing frame: when the model does not match the measured spectrum the
+default hypothesis is that the MODEL does not faithfully implement what CR requires.** The defect is
+real, it is large, and it is measurable from the backgrounds alone.
+
+### ⛔ the defect, in closed form and with no spectrum
+
+The instrument built its conformal-time grid from the **stacking** rate `Hphys`, and with it `a(eta)`,
+$\eta_{\rm rec}$, $\eta_0$, $D_M$, `ETA_ON`, `ETA_END`, every spline's abscissa — and **the projection
+kernel's own argument $x_0=\eta_0-\eta$** — while the acoustic phase (`sound_phase`), the perturbations
+(`LEAFPERT`) and, under `LEAFSCALES=1`, the sound horizon all accumulate on the **leaf** rate.
+  ⇒ *So $\Delta_\ell=\int S(k,\eta)\,j_\ell(k(\eta_0-\eta))\,\mathrm d\eta$ carried $S$ in one
+  parametrisation of the history and $j_\ell$'s argument in another.*
+
+| at the arm's refit best fit | stacking clock | leaf clock |
+|---|---|---|
+| $\eta_{\rm rec}$ | $485.5$ Mpc | $282.3$ Mpc |
+| gap | | $\mathbf{41.8\%}$ |
+| against the **control's** own $\eta_{\rm rec}=281.8$ Mpc | $\mathbf{72.3\%}$ out | $0.18\%$ out |
+| $D_M=\eta_0-\eta_{\rm rec}$ | $14017$ Mpc | $13947$ Mpc ($-0.50\%$) |
+| visibility peak, $\eta$ | $485.99$ | $282.34$ |
+| visibility FWHM | $43.59$ Mpc | $38.38$ Mpc |
+| hierarchy handover, $\eta$ | $307.1$ | $136.8$ |
+
+⌗ **$D_M$ is what hid it.** $\eta_0$ moves with $\eta_{\rm rec}$ because radiation is negligible late,
+so the clocks agree there and the difference cancels in $D_M$: **the gap is $84\times$ the move in
+$D_M$.** *A reader watching $D_M$ calls a $42$ per cent inconsistency a half-per-cent effect.*
+
+### ⛭ `LEAFGEOM=1` — the one clock assignment that had no knob
+
+`LEAFPERT` moved the perturbation dynamics, `LEAFSCALES` the two scales, `PHASEONLY` the oscillator's
+phase; **the time variable itself was reachable by nothing.** `LEAFGEOM=1` builds the grid on `Hleaf`,
+so with `LEAFSCALES=1` and `LEAFPERT` every clock assignment is on the leaf. **The three consequences
+are asserted at run time and the run refuses a spectrum otherwise:** `max|Jac-1| = 0` exactly,
+`max|Phi2-1| = 0`, the two sound-horizon accumulators identical to $0$ Mpc.
+  ⌗ Default off and **byte-identical**; the arm's default output is bit-identical, and on the **control**
+  it is a provable no-op (`Hleaf` and `Hphys` character-identical there) **checked bit-level on the
+  reporting path** rather than from reading the source.
+  ⌗ *It does not collapse the arm onto the control: the arms differ three ways and this touches one —
+  the arm keeps the handover initial data and the discrete $k$ ladder.*
+
+### ⛭ the comb as an output and not a pinned input, onset held
+
+$\ell_1/\ell_A$: $0.7290 \to 0.7326$ against the sky's $0.7312$ — **from $0.0022$ out to $0.0014$ out, a
+factor $1.6$ closer, with nothing fitted to it** ($\ell_A$ $301.8\to300.3$; peaks $220,540,812,1132 \to
+220,532,812,1124$ against $220.6,538.1,809.8$). ⛔ *And the heights move away:* P1/P2 $2.142\to2.080$ and
+P1/P3 $2.173\to2.094$ against $2.217$ and $2.277$.
+
+### ⛔⛔ the residual's shape — scored by the order's rule, and it does not flatten
+
+| $\ell\le1040$, 104 bins | before | after |
+|---|---|---|
+| $\chi^2$, amplitude only | $266.7$ | $274.8$ ($+3.0\%$) |
+| longest run of one sign | $16$ bins | $35$ bins |
+| $\chi^2$, **+ a tilt** | $265.5$ | $\mathbf{215.0}$ ($\mathbf{-19.0\%}$) |
+| worst excursion | $6.10\sigma$ | $4.12\sigma$ |
+| rms residual | $1.59\sigma$ | $1.42\sigma$ |
+| crossings | $36$ | $30$ |
+| longest run | $16$ bins | $18$ bins |
+
+**The fixed-parameter comparison is a tilt artefact**: at the old parameters the residual runs positive
+unbroken from $\ell=100$ to $414$ and $\chi^2$ worsens, but the geometry moves $D_M$ and the visibility
+width, so the best-fit parameters move with it — allow an amplitude and a power-law tilt and $\chi^2$
+falls $19$ per cent. *The $35$-bin run was $n_s$ and not shape; the tilt the after wants is $-0.0324$
+against the before's $-0.0046$, a prediction for the refit.*
+  ⇒ ***And the swing still does not flatten: crossings $36\to30$, longest run $16\to18$ — the wrong
+  direction on both. By the order's own rule this is not the fix.*** **The clocks are not the swing.**
+
+⚠ **Not claimed:** the parameters are not refitted under the new geometry, so $-19$ per cent is a
+two-direction marginalisation ($n_s$ is not a pure tilt in $\ell$). A real refit on the one-clock
+geometry is a grid of runs and is not ordered.
+⚠ **Found in passing and not this revision's doing:** the refit's own verified minimum `verify_cr.npz`
+is no longer reproducible from the tree, $\max|\Delta D_\ell| = 7.14\times10^{-3}$; **the pre-patch code
+differs from it by the same amount to every digit**, so the drift predates this build. Both sides of
+every comparison above are same-revision runs.
