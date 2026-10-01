@@ -13,24 +13,6 @@
     "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/36925796534",
     "since": "37da529d9a0af3e7334ce799f83a416846c9aa8c"
    }
-  },
-  "tolerance": {
-   "receipts/L259_the_distance_from_the_present/D1_a_check_pinned_to_a_distance_from_the_present_is_pinned_to_the_present.py": {
-    "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/36868740199",
-    "since": "8efb6deb05b6d41bb42bbd9c37a769bf30bc8c6b"
-   },
-   "receipts/L_numerics/Q1_a_stated_tolerance_is_a_request_and_the_corpus_answers_it.py": {
-    "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/36902401443",
-    "since": "4dc010920f00788808865ecadfcc2682f0ff1eef"
-   },
-   "receipts/P15_CR_cosmology/P15_the_licensed_configuration_moves_neither_statistic_and_the_swing_was_read_above_where_it_converges.py": {
-    "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/36902401443",
-    "since": "4dc010920f00788808865ecadfcc2682f0ff1eef"
-   },
-   "receipts/P15_CR_cosmology/P15_the_low_multipole_floor_moves_with_no_background_and_the_factor_two_is_the_late_isw.py": {
-    "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/36902401443",
-    "since": "4dc010920f00788808865ecadfcc2682f0ff1eef"
-   }
   }
  },
  "claude/shadow-of-existence-setup-wgcmvt": {
