@@ -33,12 +33,6 @@
     "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/36868598289",
     "since": "16f129d3f66666f2b51591b840f378ee6b76988a"
    }
-  },
-  "tolerance": {
-   "receipts/L_numerics/Q1_a_stated_tolerance_is_a_request_and_the_corpus_answers_it.py": {
-    "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/36869609110",
-    "since": "7dc98cdf0137313209b4fdc712ed243b7ca774f1"
-   }
   }
  },
  "main": {
