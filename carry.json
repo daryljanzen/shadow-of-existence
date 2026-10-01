@@ -1,11 +1,5 @@
 {
  "claude/shadow-of-existence-setup-5tjf0b": {
-  "suite": {
-   "receipts/L257_the_label_did_double_duty/V1_a_strike_that_reads_as_done_and_a_paper_that_says_otherwise.py": {
-    "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/36790192166",
-    "since": "8478b319f5f4b7b13de09142179c9a595c2eb39c"
-   }
-  },
   "tolerance": {
    "receipts/L257_the_label_did_double_duty/V1_a_strike_that_reads_as_done_and_a_paper_that_says_otherwise.py": {
     "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/36791309245",
