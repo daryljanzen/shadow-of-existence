@@ -54,6 +54,7 @@ grep -rlE "$SEL" receipts/*/*.py 2>/dev/null | sort > "$LIST"
 N=$(wc -l < "$LIST" | tr -d ' ')
 # the CI-only dependency, excluded by name with the reason in the header above
 grep -v 'P16_the_window_is_crossed_twice' "$LIST" > "$LIST.f" && mv "$LIST.f" "$LIST"
+DEPN=$(( N - $(wc -l < "$LIST" | tr -d ' ') ))
 # ⌗ ** THE DECLARED-LONG SET IS READ OUT OF `run_all_receipts.py`'s OWN `LONG` TABLE, not listed here
 #   and not taken from `--quick`. **  *`--quick` filters a different set (`SLOW`) and leaves the longest
 #   receipts in, so the first writing of this script printed that they were excluded while they ran --
@@ -78,7 +79,8 @@ echo
 echo "  RUN-INSTRUMENT-RECEIPTS -- the set is DERIVED from the tree, never listed"
 echo "    selector: $SEL"
 echo "    $N registered receipt(s) read the acoustic instrument or its banked inputs"
-echo "    $((N - M)) excluded for a CI-only dependency (pynucastro), named in this file's header"
+echo "    $DEPN excluded for a CI-only dependency (pynucastro), named in this file's header"
+echo "    $(( N - M - DEPN )) excluded as DECLARED-LONG, which is a different cause and is counted apart"
 [ "$SKIPLONG" = "1" ] && echo "    and those are excluded here too (--all includes them); CI's heavy job runs them regardless"
 echo "    ⌗ this is the set a change to ACOUSTIC_two_arm.py can break, and the fast job reads none of it"
 echo

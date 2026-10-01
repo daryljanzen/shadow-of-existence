@@ -1,0 +1,9 @@
+  [ok]  clean copy of today's bank                   rc=0  
+  [ok]  a NEW .npz with no config                    rc=1  (NEW)
+  [ok]  a legacy file REWRITTEN in place             rc=1  (REWRITTEN)
+  [ok]  a legacy file removed (STALE entry)          rc=1  (STALE)
+  [ok]  a legacy file that gains config (STALE)      rc=1  (STALE)
+  [ok]  a new .npz with a MALFORMED config           rc=1  (MALFORMED)
+  [ok]  a new .npz carrying a good config            rc=0  
+
+  7 of 7 cases behave as planted

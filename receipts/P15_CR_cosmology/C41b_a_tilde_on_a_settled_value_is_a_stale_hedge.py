@@ -100,10 +100,27 @@ def main():
     #   required nine bare replacements in return.  The edit consolidated -- the figure is carried
     #   at five sites and has been for hundreds of revisions.  ** A replacement count is not a
     #   removal count. **  The removal is asserted below, at zero, which is the claim that matters.
+    # ⛔⛭⛭ RE-POINTED r7101 (66, the gate, on `cc66`'s proposal and this comment's own reasoning).
+    # ** THE POSITIVE SITE-COUNT IS WITHDRAWN AND THE REMOVAL IS WHAT IS GATED. **  *The check below
+    # asserted that `P15` carries the literal `$8.2\%$` at one site or more, and it went red at `r7097`
+    # when the gate withdrew four uncited polarisation figures from `sec:refit-bound`.*
+    #   ⇒ *** AND IT HAD BEEN PASSING ON A COINCIDENCE.  The last literal `8.2\%` in the paper was a
+    #     POLARISATION pull, not the damping-scale figure this receipt is about: the nine damping sites
+    #     its finding concerns had already been reworded away, and the count was satisfied by an
+    #     unrelated string. ***  *A gate kept green by a string it is not about is worse than a red one.*
+    # ⌗ ** AND THIS FILE'S OWN COMMENT, THREE LINES UP, ALREADY NAMED THE RIGHT CHECK: *a replacement
+    #   count is not a removal count; the removal is asserted below, at zero, which is the claim that
+    #   matters.* **  *The positive count was the half that could go stale and it did.*
+    #   ⇒ *Re-pointing it to whatever literal the paper carries today would be the same defect one
+    #     rewording later.  The finding is a HISTORICAL correction -- a settled value had been hedged
+    #     nine times and the hedge was removed -- and what must stay true forever is that no such hedge
+    #     comes back.  That is an absence, it is gated, and it does not move when the prose moves.*
     _n82 = len(re.findall(r'8\.2\\%', p15))
-    check(f'so P15 now carries $8.2\\%$ -- at {_n82} site(s) -- where it carried $\\{{\\sim\\}}8\\%$',
-          _n82 >= 1)
-    check('and no tilde-8% survives',
+    print(f'     ⌗ the literal $8.2\\%$ stands at {_n82} site(s) today -- REPORTED, not asserted, '
+          f'because the paper is entitled to reword a figure it computes')
+    check('the hedge this receipt removed has not returned: no tilde-8% survives anywhere in P15 -- '
+          'the absence is the finding and it is what is gated, the positive site-count having been '
+          'withdrawn once it was found to be satisfied by an unrelated string',
           len(re.findall(r'(\{\\sim\}|\\sim\s*)8\\%', p15)) == 0)
 
     # ⓷ while legitimately approximate tildes are untouched
