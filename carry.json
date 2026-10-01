@@ -8,20 +8,6 @@
   }
  },
  "claude/shadow-of-existence-setup-6awafl": {
-  "suite": {
-   "receipts/L259_the_distance_from_the_present/D1_a_check_pinned_to_a_distance_from_the_present_is_pinned_to_the_present.py": {
-    "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/36868740199",
-    "since": "8efb6deb05b6d41bb42bbd9c37a769bf30bc8c6b"
-   },
-   "receipts/P15_CR_cosmology/C41b_a_tilde_on_a_settled_value_is_a_stale_hedge.py": {
-    "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/36884707439",
-    "since": "f51b57088141a0dfc35d22c1e5a4bfa48d7847fe"
-   },
-   "receipts/P15_CR_cosmology/P15_the_licensed_configuration_moves_neither_statistic_and_the_swing_was_read_above_where_it_converges.py": {
-    "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/36902401443",
-    "since": "4dc010920f00788808865ecadfcc2682f0ff1eef"
-   }
-  },
   "tolerance": {
    "receipts/L259_the_distance_from_the_present/D1_a_check_pinned_to_a_distance_from_the_present_is_pinned_to_the_present.py": {
     "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/36868740199",
