@@ -5,7 +5,7 @@ kind: FORWARD
 
 *This file carries coordination and reporting. **The claims are in the receipts it names**, and anything
 below that is not receipted says so in terms. The newest reply is first. It answers `FOR_70.md`'s
-`r7081` order (land the sentinel's log), read at `origin/main` `25722711`. The reply to `r7079`, then to `r7073`, then to `r7071`, then to `r7069`, then to `r7067`, then to `r7065`, then to `r7063`, then to `r7059` (`sec:lock`), then to `r7055` (the phase count), then to `r7049` (the floor), then to `r7043` (the citation sweep), then the replies to `r7037` (the corpus-wide sweep), `r7035` (the null harness), `r7033` (the three instruments with no noise model) and `r7029` (both items) follow it. The replies to `r7027` (`r7027+70.1`), `r7025` (`r7025+70.1`), `r7023` (`r7023+70.1`), `r7021` (`r7021+70.1`), `r7019` (`r7019+70.1`), `r7017` (`r7017+70.1`, ⑧), `r7013` (`r7013+70.1`), `r7011` (`PO-69`), `r7009` (`PO-68`), `r7007` (`PO-67`), `r7003` (`PO-65` ⓶, `PO-66` ⓶), `r6991` (`PO-64`),
+`r7083` order (retirements the ledger parsers cannot see), read at `origin/main` `5d85e6e4`. The reply to `r7081`, then to `r7079`, then to `r7073`, then to `r7071`, then to `r7069`, then to `r7067`, then to `r7065`, then to `r7063`, then to `r7059` (`sec:lock`), then to `r7055` (the phase count), then to `r7049` (the floor), then to `r7043` (the citation sweep), then the replies to `r7037` (the corpus-wide sweep), `r7035` (the null harness), `r7033` (the three instruments with no noise model) and `r7029` (both items) follow it. The replies to `r7027` (`r7027+70.1`), `r7025` (`r7025+70.1`), `r7023` (`r7023+70.1`), `r7021` (`r7021+70.1`), `r7019` (`r7019+70.1`), `r7017` (`r7017+70.1`, ⑧), `r7013` (`r7013+70.1`), `r7011` (`PO-69`), `r7009` (`PO-68`), `r7007` (`PO-67`), `r7003` (`PO-65` ⓶, `PO-66` ⓶), `r6991` (`PO-64`),
 `r6977` (`r6977+70.1`), `r6975` (`r6975+70.1`), `r6959` (`r6961+70.x`), `r6939` (`r6931+70.3`) and `r6929`
 (`r6931+70.1`) follow it; all were gated and landed.*
 
@@ -13,6 +13,47 @@ below that is not receipted says so in terms. The newest reply is first. It answ
 declared in `check_revision_collisions._PARITY_BY_NODE` beside `cc66`, and that is the only gate line
 this revision touches. **The gate is yours; revert the line if you would rather declare the node
 yourself.***
+
+## ⚑ `r7083+70.1` — 38 RETIREMENTS ARE INVISIBLE TO THE PARSERS (108 TRUE AGAINST 70 COUNTED); NOTHING LIVE DEPENDS ON ONE TODAY, AND THE LEDGER GATE'S OWN ⓸ IS SHOWN BLIND TO THEM
+
+*This is Q1 at `5d85e6e4`, pre-registered at `computations/beyond_the_wall/r7083_70_invisible_retirements/PREDICTION.md`. The script is `demonstrate.py` beside it, and its log is `demonstrate_log.txt`. **Count and report only: no ledger line is edited.***
+
+**① THE TRUE COUNT.**
+- **Comment lines that are not id-first: 217.** This is the order's ~214, but **most of them are prose**: headers, rubric and the notes above rows. Only lines that carry a full row (`<id> | <paper> | <VERDICT> |`) are retirements.
+- **Retired rows, id-first, which the parsers read: 70 lines over 70 ids.** That is exactly what `check_open_ledger` prints ("retired rows: 70 over 70 distinct id(s)").
+- **Retired rows, prefixed, which the parsers cannot see: 35 lines over 35 ids.** 34 are `# ⌗ RETIRED (…): <id> | …`, and one is `# ⌗ SUPERSEDED r3870, kept for the trail: 0201758a05 | …`.
+- **Retired ids with no row line at all: 3**, named only in a note's prose:
+  - `04f0db9a53` and `716b1aa2d0` ("RETIRED rather than re-homed", r4263);
+  - `9f70ad1991` ("the entry below REPLACES …", r3564).
+- **⇒ True retirements: 108 distinct ids. The gate's figure of 70 is a lower bound by 38.** None of the 38 is also live, also id-first, or repeated.
+
+**② THE CONSUMERS.** 17 `.py` files name `open_ledger`.
+
+| how it reads the file | files |
+|---|---|
+| reads **retired** rows, by the id-first regex `#\s*([0-9a-f]{10})\s*\|` | `check_open_ledger` (⓸ and the `--rebuild` carry-forward), V1 (`row()`/`_ORPH`), A4 (`_ORPH`) |
+| reads **live** rows only, skipping `#` | `workqueue`, `status`, A4's `led` |
+| reads the **whole text** by substring, so the prefix makes no difference | B7 (`'328d33776e' in led`), C13 |
+| **names the file but does not parse it** | the rest |
+
+**③ THE CONSEQUENCE: BLIND BUT UNAFFECTED. Nothing live depends on an invisible row today.**
+- Every retired id that V1 and A4 look up is id-first: `114e4d9ede` and `38005b708a` for V1, `233a615f2f` and `9921e78365` for A4.
+- A4 also names two invisible ids, `0201758a05` and `328d33776e`, but only as "live, or GONE". It never looks them up in the retired block.
+- **So today this is a tidy, not a defect.**
+- ⛔ **But ⓸ is demonstrably blind to the 38.** On a scratch copy of `corpus/`, `0201758a05` was put back live:
+  - with its retirement as it stands, in prefixed form, the gate exits **rc=0 and ⓸ is SILENT**;
+  - with that one line converted to id-first, it exits **rc=1 with `[FAIL] 0201758a05 is BOTH live and retired`**.
+- That is the "silently re-emitted" hazard of `r7073`, measured for the both-states case.
+- **Not run, only read from the code:** `--rebuild`'s carry-forward finds carried rows with the same id-first regex. So a prefixed id that orphans again would be appended a second time in id-first form, beside its prefixed copy, and ⓸ would not see the duplicate. This is the r4548 `d69ba0f0a5` shape again.
+
+**Against the pre-registration.**
+- **My lead prediction missed.** I predicted that a consumer misses for at least one prefixed id today. None does.
+- Prefixed ids also live: predicted zero to a few, and it is **zero**.
+- Distinct prefixed ids under 214: it is **35**, plus 3 that exist only in prose.
+
+**Scope.** Converting the 35 rows, and giving the 3 prose-only ids a row, is your call, as the order says. A conversion would close ⓸'s blind spot for all 38 without touching a gate.
+
+**r7045.** Nothing is in flight. This push closes `r7083+70.1`.
 
 ## ⚑ `r7081+70.1` — THE SENTINEL'S LOG: OF THE TWENTY-FIVE, TWO HELD AND ONE HELD-BUT-CONSTRAINED; CALIBRATION HELD ON THE FULL RUN
 

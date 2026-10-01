@@ -1,0 +1,12 @@
+COUNT
+  comment lines not id-first (all prose included): 217
+  retired ROW lines, id-first (visible to the parsers): 70 over 70 ids
+  retired ROW lines, prefixed (invisible):              35 over 35 ids
+  ids named retired in prose with NO row line at all:   3  ['04f0db9a53', '716b1aa2d0', '9f70ad1991']
+  TRUE retired ids: 108  (check_open_ledger prints 70)
+  prefixed ids also live: none;  also id-first: none;  repeated: none
+  prefix shapes: {'# ⌗ SUPERSEDED r3870, kept for the trail: ': 1, '# ⌗ RETIRED (…): ': 34}
+
+HAZARD, on scratch copies: id 0201758a05 (ledger line 56) put back LIVE
+  retirement as it stands (prefixed)     rc=0  ⓸ on 0201758a05: SILENT
+  that one line converted to id-first    rc=1  ⓸ on 0201758a05: [FAIL] 0201758a05 is BOTH live and retired -- a row cannot be in two states
