@@ -1,0 +1,14 @@
+== cc66_cr_x_lstep1   (l_A 172.841, ell 100-1299, spacing 1)
+   refit (a)  x2: raw errs  0.94, refined 0.015
+   refit (a)  x4: raw errs  1.16, refined 0.095
+   refit (a)  x8: raw errs  3.06, refined 0.133
+   refit receipt's check  "raw errs by ~3, refined < 0.2": raw 3.06, refined 0.133 -> HOLDS
+   comb receipt's check  "l_1 to < 0.01, worst of four < 0.2": l_1 0.0043, worst 0.133 -> HOLDS
+      fine [215.059, 521.163, 787.931, 1094.922]   coarse [215.055, 521.187, 787.902, 1094.789]
+== r6941_fine_cr   (l_A 301.799, ell 100-1999, spacing 1)
+   refit (a)  x2: raw errs  0.60, refined 0.001
+   refit (a)  x4: raw errs  1.96, refined 0.007
+   refit (a)  x8: raw errs  3.90, refined 0.023
+   refit receipt's check  "raw errs by ~3, refined < 0.2": raw 3.90, refined 0.023 -> HOLDS
+   comb receipt's check  "l_1 to < 0.01, worst of four < 0.2": l_1 0.0035, worst 0.023 -> HOLDS
+      fine [221.956, 536.105, 815.398, 1130.531]   coarse [221.953, 536.114, 815.381, 1130.508]

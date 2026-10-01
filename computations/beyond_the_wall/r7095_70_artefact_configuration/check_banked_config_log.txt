@@ -1,0 +1,86 @@
+banked .npz in the repository: 215  (computations/beyond_the_wall/spectra, computations/beyond_the_wall/refit_grid, computations/beyond_the_wall/refit_grid185)
+carrying a config today (passing rule (1)): 0
+backfill grade for the rest:
+   142  COMMAND
+    19  CONTROL (no CR switch)
+    47  FINGERPRINT
+     4  FINGERPRINT (unplaced)
+     3  NONE
+     0  UNREADABLE
+
+the artefacts a manifest could NOT place by command:
+  CONTROL (no CR switch)   computations/beyond_the_wall/spectra/L820_lcdm_nk260_guardfail.npz     control arm (no CR switch applies)  [l_A 301.375, r_s 144.528]
+  NONE                     computations/beyond_the_wall/spectra/c54.182_clpp.npz                  
+  FINGERPRINT              computations/beyond_the_wall/spectra/c54.188_cr_seam_phi0.0.npz        A (default: stacking, onset solved for l_A = 301.6)  [arm cr, l_A 301.600, r_s 135.461]
+  FINGERPRINT              computations/beyond_the_wall/spectra/c54.188_cr_seam_phi0.3927.npz     A (default: stacking, onset solved for l_A = 301.6)  [arm cr, l_A 301.600, r_s 135.461]
+  FINGERPRINT              computations/beyond_the_wall/spectra/c54.188_cr_seam_phi0.7854.npz     A (default: stacking, onset solved for l_A = 301.6)  [arm cr, l_A 301.600, r_s 135.461]
+  FINGERPRINT              computations/beyond_the_wall/spectra/c54.188_cr_seam_phi1.1781.npz     A (default: stacking, onset solved for l_A = 301.6)  [arm cr, l_A 301.600, r_s 135.461]
+  FINGERPRINT              computations/beyond_the_wall/spectra/c54.188_cr_seam_phi1.5708.npz     A (default: stacking, onset solved for l_A = 301.6)  [arm cr, l_A 301.600, r_s 135.461]
+  FINGERPRINT              computations/beyond_the_wall/spectra/c54.188_cr_seam_phi1.9635.npz     A (default: stacking, onset solved for l_A = 301.6)  [arm cr, l_A 301.600, r_s 135.461]
+  FINGERPRINT              computations/beyond_the_wall/spectra/c54.188_cr_seam_phi2.3562.npz     A (default: stacking, onset solved for l_A = 301.6)  [arm cr, l_A 301.600, r_s 135.461]
+  FINGERPRINT              computations/beyond_the_wall/spectra/c54.188_cr_seam_phi2.7489.npz     A (default: stacking, onset solved for l_A = 301.6)  [arm cr, l_A 301.600, r_s 135.461]
+  FINGERPRINT              computations/beyond_the_wall/spectra/c54.188_cr_seam_phi3.1416.npz     A (default: stacking, onset solved for l_A = 301.6)  [arm cr, l_A 301.600, r_s 135.461]
+  FINGERPRINT              computations/beyond_the_wall/spectra/c54.189_cr_lA260.npz              A-family (onset solved for a pinned l_A = LATARG)  [arm cr, l_A 260.000, r_s 157.135]
+  FINGERPRINT              computations/beyond_the_wall/spectra/c54.189_cr_lA280.npz              A-family (onset solved for a pinned l_A = LATARG)  [arm cr, l_A 280.000, r_s 145.911]
+  FINGERPRINT              computations/beyond_the_wall/spectra/c54.189_cr_lA301.6.npz            A (default: stacking, onset solved for l_A = 301.6)  [arm cr, l_A 301.600, r_s 135.461]
+  FINGERPRINT              computations/beyond_the_wall/spectra/c54.189_cr_lA320.npz              A-family (onset solved for a pinned l_A = LATARG)  [arm cr, l_A 320.000, r_s 127.672]
+  FINGERPRINT              computations/beyond_the_wall/spectra/c54.189_cr_lA340.npz              A-family (onset solved for a pinned l_A = LATARG)  [arm cr, l_A 340.000, r_s 120.162]
+  FINGERPRINT              computations/beyond_the_wall/spectra/c54.191_cr_lA340_L3000.npz        A-family (onset solved for a pinned l_A = LATARG)  [arm cr, l_A 340.000, r_s 120.162]
+  FINGERPRINT              computations/beyond_the_wall/spectra/c54.191_cr_phipi_L3000.npz        A (default: stacking, onset solved for l_A = 301.6)  [arm cr, l_A 301.600, r_s 135.461]
+  FINGERPRINT              computations/beyond_the_wall/spectra/c54.193_cr_nodrive_L3000.npz      A (default: stacking, onset solved for l_A = 301.6)  [arm cr, l_A 301.600, r_s 135.461]
+  CONTROL (no CR switch)   computations/beyond_the_wall/spectra/c54.193_lcdm_nodrive_L3000.npz    control arm (no CR switch applies)  [l_A 301.375, r_s 144.528]
+  FINGERPRINT              computations/beyond_the_wall/spectra/c54.195_cr_phi0.7854_L3000.npz    A (default: stacking, onset solved for l_A = 301.6)  [arm cr, l_A 301.600, r_s 135.461]
+  FINGERPRINT              computations/beyond_the_wall/spectra/c54.195_cr_phi1.5708_L3000.npz    A (default: stacking, onset solved for l_A = 301.6)  [arm cr, l_A 301.600, r_s 135.461]
+  FINGERPRINT              computations/beyond_the_wall/spectra/cc66_cr_coded.npz                 A (default: stacking, onset solved for l_A = 301.6)  [arm cr, l_A 301.600, r_s 135.461]
+  FINGERPRINT              computations/beyond_the_wall/spectra/cc66_cr_crossing.npz              superseded stacking ruler (l_A ~ 172)  [arm cr, l_A 172.841, r_s 236.374]
+  FINGERPRINT              computations/beyond_the_wall/spectra/cc66_cr_leafpin.npz               A (default: stacking, onset solved for l_A = 301.6)  [arm cr, l_A 301.600, r_s 135.461]
+  FINGERPRINT              computations/beyond_the_wall/spectra/cc66_cr_leafpin_fluid.npz         A (default: stacking, onset solved for l_A = 301.6)  [arm cr, l_A 301.600, r_s 135.461]
+  FINGERPRINT (unplaced)   computations/beyond_the_wall/spectra/cc66_cr_x_crom3000.npz            no known configuration  [arm cr, l_A 168.238, r_s 270.736]
+  FINGERPRINT              computations/beyond_the_wall/spectra/cc66_cr_x_crom3447.npz            superseded stacking ruler (l_A ~ 172)  [arm cr, l_A 170.606, r_s 252.579]
+  FINGERPRINT              computations/beyond_the_wall/spectra/cc66_cr_x_h6862_fluid.npz         B (LEAFSCALES=1 ZSTART=3e7)  [arm cr, l_A 302.844, r_s 145.307]
+  FINGERPRINT              computations/beyond_the_wall/spectra/cc66_cr_x_h6862_pol.npz           B (LEAFSCALES=1 ZSTART=3e7)  [arm cr, l_A 302.844, r_s 145.307]
+  FINGERPRINT              computations/beyond_the_wall/spectra/cc66_cr_x_h686_L2000.npz          B (LEAFSCALES=1 ZSTART=3e7)  [arm cr, l_A 302.889, r_s 145.328]
+  FINGERPRINT              computations/beyond_the_wall/spectra/cc66_cr_x_h686_fluid.npz          B (LEAFSCALES=1 ZSTART=3e7)  [arm cr, l_A 302.889, r_s 145.328]
+  FINGERPRINT              computations/beyond_the_wall/spectra/cc66_cr_x_h686_nodrive_fluid.npz  B (LEAFSCALES=1 ZSTART=3e7)  [arm cr, l_A 302.889, r_s 145.328]
+  FINGERPRINT              computations/beyond_the_wall/spectra/cc66_cr_x_h686_nodrive_pol.npz    B (LEAFSCALES=1 ZSTART=3e7)  [arm cr, l_A 302.889, r_s 145.328]
+  FINGERPRINT              computations/beyond_the_wall/spectra/cc66_cr_x_h686_pol.npz            B (LEAFSCALES=1 ZSTART=3e7)  [arm cr, l_A 302.889, r_s 145.328]
+  FINGERPRINT              computations/beyond_the_wall/spectra/cc66_cr_x_kcont.npz               superseded stacking ruler (l_A ~ 172)  [arm cr, l_A 172.841, r_s 236.374]
+  FINGERPRINT              computations/beyond_the_wall/spectra/cc66_cr_x_lstep1.npz              superseded stacking ruler (l_A ~ 172)  [arm cr, l_A 172.841, r_s 236.374]
+  FINGERPRINT              computations/beyond_the_wall/spectra/cc66_cr_x_zeq3000.npz             superseded stacking ruler (l_A ~ 172)  [arm cr, l_A 172.841, r_s 236.374]
+  FINGERPRINT              computations/beyond_the_wall/spectra/cc66_cr_x_zeq3447.npz             superseded stacking ruler (l_A ~ 172)  [arm cr, l_A 172.841, r_s 236.374]
+  FINGERPRINT (unplaced)   computations/beyond_the_wall/spectra/cc66_cr_z3e5.npz                  no known configuration  [arm cr, l_A 183.777, r_s 222.307]
+  FINGERPRINT (unplaced)   computations/beyond_the_wall/spectra/cc66_cr_z3e6.npz                  no known configuration  [arm cr, l_A 175.349, r_s 232.993]
+  FINGERPRINT              computations/beyond_the_wall/spectra/cc66_cr_z3e8.npz                  superseded stacking ruler (l_A ~ 172)  [arm cr, l_A 172.062, r_s 237.443]
+  FINGERPRINT (unplaced)   computations/beyond_the_wall/spectra/cc66_cr_z61580_stack.npz          no known configuration  [arm cr, l_A 200.772, r_s 203.490]
+  NONE                     computations/beyond_the_wall/spectra/cc66_fig_acoustic_numbers.npz     
+  CONTROL (no CR switch)   computations/beyond_the_wall/spectra/cc66_lcdm.npz                     control arm (no CR switch applies)  [l_A 301.375, r_s 144.528]
+  CONTROL (no CR switch)   computations/beyond_the_wall/spectra/cc66_lcdm_L2000.npz               control arm (no CR switch applies)  [l_A 301.375, r_s 144.528]
+  CONTROL (no CR switch)   computations/beyond_the_wall/spectra/cc66_lcdm_fluid.npz               control arm (no CR switch applies)  [l_A 301.375, r_s 144.528]
+  CONTROL (no CR switch)   computations/beyond_the_wall/spectra/cc66_lcdm_nodrive_pol.npz         control arm (no CR switch applies)  [l_A 301.375, r_s 144.528]
+  NONE                     computations/beyond_the_wall/spectra/cc66_lowell_sweep.npz             
+  FINGERPRINT              computations/beyond_the_wall/spectra/cc66_r185_verify_cr.npz           B (LEAFSCALES=1 ZSTART=3e7)  [arm cr, l_A 301.799, r_s 145.911]
+  CONTROL (no CR switch)   computations/beyond_the_wall/spectra/cc66_r185_verify_lcdm.npz         control arm (no CR switch applies)  [l_A 301.543, r_s 145.382]
+  FINGERPRINT              computations/beyond_the_wall/spectra/cc66_refit_cr_base.npz            B (LEAFSCALES=1 ZSTART=3e7)  [arm cr, l_A 302.889, r_s 145.328]
+  CONTROL (no CR switch)   computations/beyond_the_wall/spectra/cc66_refit_lcdm_base.npz          control arm (no CR switch applies)  [l_A 301.375, r_s 144.528]
+  FINGERPRINT              computations/beyond_the_wall/spectra/cc66_refit_verify_cr.npz          B (LEAFSCALES=1 ZSTART=3e7)  [arm cr, l_A 302.052, r_s 145.833]
+  CONTROL (no CR switch)   computations/beyond_the_wall/spectra/cc66_refit_verify_lcdm.npz        control arm (no CR switch applies)  [l_A 301.646, r_s 145.404]
+  FINGERPRINT              computations/beyond_the_wall/spectra/item38_cr_phi0.0_prod.npz         A (default: stacking, onset solved for l_A = 301.6)  [arm cr, l_A 301.600, r_s 135.461]
+  FINGERPRINT              computations/beyond_the_wall/spectra/item38_cr_phi1.5708_prod.npz      A (default: stacking, onset solved for l_A = 301.6)  [arm cr, l_A 301.600, r_s 135.461]
+  FINGERPRINT              computations/beyond_the_wall/spectra/item38_cr_phi3.1416_prod.npz      A (default: stacking, onset solved for l_A = 301.6)  [arm cr, l_A 301.600, r_s 135.461]
+  CONTROL (no CR switch)   computations/beyond_the_wall/spectra/lcdm_0.700.npz                    control arm (no CR switch applies)  [l_A 301.375, r_s 144.528]
+  CONTROL (no CR switch)   computations/beyond_the_wall/spectra/lcdm_0.800.npz                    control arm (no CR switch applies)  [l_A 301.375, r_s 144.528]
+  CONTROL (no CR switch)   computations/beyond_the_wall/spectra/lcdm_0.859.npz                    control arm (no CR switch applies)  [l_A 301.375, r_s 144.528]
+  CONTROL (no CR switch)   computations/beyond_the_wall/spectra/lcdm_0.900.npz                    control arm (no CR switch applies)  [l_A 301.375, r_s 144.528]
+  CONTROL (no CR switch)   computations/beyond_the_wall/spectra/lcdm_1.000.npz                    control arm (no CR switch applies)  [l_A 301.375, r_s 144.528]
+  CONTROL (no CR switch)   computations/beyond_the_wall/spectra/lcdm_1.100.npz                    control arm (no CR switch applies)  [l_A 301.375, r_s 144.528]
+  CONTROL (no CR switch)   computations/beyond_the_wall/spectra/lcdm_1.200.npz                    control arm (no CR switch applies)  [l_A 301.375, r_s 144.528]
+  CONTROL (no CR switch)   computations/beyond_the_wall/spectra/lcdm_1.300.npz                    control arm (no CR switch applies)  [l_A 301.375, r_s 144.528]
+  FINGERPRINT              computations/beyond_the_wall/spectra/r4494_cr_leaf_ISWoff.npz          A (default: stacking, onset solved for l_A = 301.6)  [arm cr, l_A 301.600, r_s 135.461]
+  FINGERPRINT              computations/beyond_the_wall/spectra/r4494_cr_leaf_ISWon.npz           A (default: stacking, onset solved for l_A = 301.6)  [arm cr, l_A 301.600, r_s 135.461]
+  FINGERPRINT              computations/beyond_the_wall/spectra/r4494_cr_stack_ISWoff.npz         A (default: stacking, onset solved for l_A = 301.6)  [arm cr, l_A 301.600, r_s 135.461]
+  FINGERPRINT              computations/beyond_the_wall/spectra/r4494_cr_stack_ISWon.npz          A (default: stacking, onset solved for l_A = 301.6)  [arm cr, l_A 301.600, r_s 135.461]
+  CONTROL (no CR switch)   computations/beyond_the_wall/spectra/r4494_lcdm_DAMPX1.000.npz         control arm (no CR switch applies)  [l_A 301.375, r_s 144.528]
+  CONTROL (no CR switch)   computations/beyond_the_wall/spectra/r4494_lcdm_DAMPX1.157.npz         control arm (no CR switch applies)  [l_A 301.375, r_s 144.528]
+  FINGERPRINT              computations/beyond_the_wall/spectra/r6784_cr_crossing_hier_noCRIC.npz superseded stacking ruler (l_A ~ 172)  [arm cr, l_A 172.324, r_s 255.364]
+
+manifest_proposal.json written beside this file: 215 entries (a proposal; nothing in the bank is edited)
