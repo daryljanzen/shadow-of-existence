@@ -516,7 +516,25 @@ sys.path.insert(0, os.path.join(os.path.dirname(os.path.dirname(os.path.dirname(
 from RD_diffusion_direct import xe_history, n_H0_of, sigT, Mpc_m, xe_total       # noqa: E402
 
 _YP = 0.2454
-_zg, _xeg = xe_history(lambda z: Hgeom(1 / (1 + z)) * 1e3 / Mpc_m, OMBH2, _YP,
+# ⛭⛭⛭ ** LEAFREC: RECOMBINATION'S OWN RATE, SPLIT OUT OF `LEAFGEOM` AT r7095's ORDER. **
+# *`LEAFGEOM` was ONE switch over TWO objects -- the rate the conformal-time grid is built on AND the
+# rate the ionisation history is solved on, both reading `Hgeom`.  ** `P07`'s rate rule assigns them
+# OPPOSITELY: `D_M` is a comoving separation read across leaves and takes the STACKING rate, while
+# recombination is a process running IN the content and takes the LEAF's. **  ⇒ *So no setting of one
+# switch satisfied both, and the rule's own configuration was unreachable from this file.*
+#   ⌗ *`r7095` records that as this sector's instrument-mismatch series in a new form -- **a knob whose
+#   granularity is coarser than the distinction it is asked to express** -- and it is not a defect in
+#   the knob's author: the two objects genuinely moved together until someone separated them.*
+# ⛔⛔ ** AND THIS ONE CHANGES A DEFAULT, WHICH IS A FIRST FOR A CLOCK SWITCH IN THIS FILE. **
+# *`LEAFPERT`, `LEAFSCALES`, `PHASEONLY`, `VISLEAF` and `LEAFGEOM` are all default-off and
+# byte-identical unset.  `LEAFREC` defaults to **1**, the leaf, because `r7095` orders it on `60`'s
+# ruling that recombination's microphysics is the content's process.*  ⇒ ** So the instrument's default
+# output MOVES with this revision, and every banked spectrum taken before it was taken at `LEAFREC=0`.
+# `LEAFREC=0` is kept and is exactly the old behaviour, so nothing banked becomes unreproducible --
+# but it is no longer the default, and that is stated here rather than discovered. **
+LEAFREC = os.environ.get('LEAFREC', '1') == '1'
+Hrec = Hleaf if LEAFREC else Hgeom      # the rate RECOMBINATION is solved on -- the content's, by default
+_zg, _xeg = xe_history(lambda z: Hrec(1 / (1 + z)) * 1e3 / Mpc_m, OMBH2, _YP,
                        z_hi=3000.0, z_lo=80.0, n=6000)
 _nH0 = n_H0_of(OMBH2, _YP)
 

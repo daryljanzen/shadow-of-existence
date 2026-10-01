@@ -480,16 +480,23 @@ SWEPT_SIXTY_PLUS = {'ZPSAVE', 'SRCSAVE', 'SRCXS', 'SRCDEC', 'SRCINJ', 'SRCINJPH'
                     #   reached.  *It belongs in THIS set and not among the swept sixty, which is what
                     #   the arithmetic below is for: the sixty stay sixty and each later addition is
                     #   named.*
-                    'LEAFGEOM'}
+                    'LEAFGEOM',
+                    # ⛭ `LEAFREC` -- r7095+cc66.75, recombination's own rate, split out of `LEAFGEOM`
+                    #   because the rate rule assigns `D_M` and recombination OPPOSITELY and one knob
+                    #   could not express both.  ** The first clock switch in this file whose default is
+                    #   ON: it defaults to the leaf, so the instrument's default output moved with that
+                    #   revision.  `LEAFREC=0` is the old behaviour and is bit-identical. **
+                    'LEAFREC'}
 _ROWENVS = {r['env'] for r in ROWS}
 # ⛭ ** THE EIGHTIETH IS `LEAFGEOM`, r7091+cc66.73 ** -- the conformal-time grid and the comoving
 #   distance on the leaf rate, which was the one clock assignment in this instrument that no switch
 #   reached.  *Named here with its commit because that is this gate's own convention: the count is
 #   allowed to move and each mover has to be accounted for by name.*
 check("the instrument reads sixty environment switches with at least one use site, and every switch "
-      "that is bound is also used somewhere -- sixty at this sweep, EIGHTY now, the twenty "
-      "added since named with their commits (the eightieth is `LEAFGEOM`, r7091+cc66.73)",
-      len(ROWS) == 80 and SWEPT_SIXTY_PLUS <= _ROWENVS and len(_ROWENVS - SWEPT_SIXTY_PLUS) == 60
+      "that is bound is also used somewhere -- sixty at this sweep, EIGHTY-ONE now, the twenty-one "
+      "added since named with their commits (the eightieth is `LEAFGEOM`, r7091+cc66.73; the "
+      "eighty-first is `LEAFREC`, r7095+cc66.75)",
+      len(ROWS) == 81 and SWEPT_SIXTY_PLUS <= _ROWENVS and len(_ROWENVS - SWEPT_SIXTY_PLUS) == 60
       and not [e for e in DEFAULT if e not in USES],
       f"{len(ROWS)} switches used, {len(DEFAULT)} bound, "
       f"bound-but-never-used {[e for e in DEFAULT if e not in USES]}")
