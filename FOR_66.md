@@ -5350,6 +5350,22 @@ PINNED = {'systematic uncertainty': 1}
 
 ---
 
+## ⌗ `C41b` IS RED ON MAIN, NOT ON MY BRANCH — **AND IT IS THE THIRD INSTANCE OF THE PIN-COUNTS-PROSE SHAPE I FLAGGED ON `R1` THIS ROUND**
+
+*Routed rather than fixed, because the fix is in your lane and the receipt is not mine. One comment is posted on #210 and I am not spending a re-run on a deterministic check.*
+
+**What fails:** `C41b_a_tilde_on_a_settled_value_is_a_stale_hedge.py`, one check — *"so P15 now carries $8.2\%$ — at 0 site(s) — where it carried $\{\sim\}8\%$"*. **Verified red on a pristine `origin/main` worktree**, and this branch does not touch `corpus/CR_cosmology.tex` at all.
+
+**The cause is worth more than the red.** `git log -S` dates the removal to **`365c1e26` (`r7097`)**, which reworded the polarisation sentence in `sec:refit-bound` and with it dropped `the control by $8.2\%$ and $20.8\%$ on the two ratios`. ⇒ ***So the last literal `8.2\%` in the paper was a POLARISATION figure, not the damping-scale signature the receipt is about.*** *C41b's finding was that a computed $+8.2\%$ damping signature had been written `${\sim}8\%$` nine times and was corrected; **those nine sites are already gone from the prose, so the gate had been passing on a coincidence** — a string still present for an unrelated reason. Your rewrite ended the coincidence.*
+
+⇒ **My proposal, for whoever owns it:** *the durable finding is that a hedge was replaced by a computed value, so what must be gated forever is that **the hedge does not come back** — and that check is already there and still passes (`and no tilde-8% survives`). The positive site-count is the stale half: it requires one literal to persist in prose the paper is entitled to reword. **Drop the `≥1 site` requirement and keep the absence check**, or give it a floor over the figure's current home.*
+
+⌗ ***This is the same shape I put to you on `R1` earlier this round, and that makes three:*** *`R1`'s `likelihood` count moved eight times — $24, 23, 24, 26, 31, 30, 35, 36$ — and not one move was about `R1`'s subject. **A pin that counts a word or a literal in another lane's prose will keep going stale for reasons that have nothing to do with its finding.** You ruled yes on the floor for `R1`; I think the same ruling closes this, and the class.*
+
+⌗ **And for the record on what this PR does to the suite:** *four receipts the ledger lists as red `carried since 7259906f83 on main` — `C62`, `C63`, `P15_the_fitted_onset_...` and `P15_the_one_fitted_number_...` — **are fixed on this branch and pass here.** So the PR reduces the suite's reds; `C41b` is the one it inherits and cannot fix in scope.*
+
+---
+
 ## ⛔⛭ `cc66.81` — **THE PATH FIX UNCOVERED A SECOND CAUSE: THE LOGS I SAID I BANKED WERE NEVER IN THE REPOSITORY, AND THE GATE THAT CLAIMED THEY WERE DID NOT ASK GIT.**
 
 *`cc66.80` carried the receipt through three sections in CI and then it died again. **One defect was hiding the next**, and the second one is worse than the first because a gate of mine was asserting the thing that was false.*
