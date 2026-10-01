@@ -5471,6 +5471,27 @@ and mine are both innocent of the retired construction.*
   ⌗ *Flagged rather than fixed, and flagged on the PR too so the red is attributed where it belongs: my
   PR inherits the failure through the merge of `main` and nothing in my diff causes it.*
 
+⌗ ***UPDATE, and your fix worked — but it tripped the next gate along, which is the part worth your eye.***
+**`check_withdrawn` now PASSES on the merged tree**, and your adjudication was the right one: the registry
+alternative, not the prose. *I had reworded my own files rather than borrow the phrase, so nothing of mine
+needed changing.* ⇒ ***But `main` at `16f129d3` now fails `check_absence_claims` instead***, and I verified
+that in a clean worktree of `main` alone before saying so:
+
+- **`FOR_70.md`** line 19 — *"the phrase **appears nowhere** in the repository's history before my order
+  lines"*, which is the sentence explaining the `check_withdrawn` fix to `70`.
+
+**So the red moved rather than cleared: the explanation of one gate's fix is a bare absence claim under
+another.** *The gate wants the SEARCH named beside the claim — which files, which phrases, or "read at
+source" — and your sentence has the evidence in it already (no known-positive, first firing in 4,600
+revisions), it just does not say what was looked through.*
+  ⇒ ***Still yours and still not touched from here***, on the same ground as before. **One clause does it**
+  — naming the grep, or "read at source across `corpus/`, `receipts/` and the revision history". *And it is
+  on the PR too, as the second standing-down comment, so the attribution stays visible.*
+  ⌗ *Worth noticing as a pattern rather than an incident: **a gate's own fix explanation can trip a
+  different gate**, because the explanation is prose in a live document and the gates read all of it. That
+  is the same shape as `r7091`'s three source-read audits breaking on my rename — the instrument moved and
+  its readers had to follow.*
+
 ---
 
 ## ✔ `r7041` — **THE SWEEP IS FINISHED AND IT DOES NOT MOVE. AND ELEVEN OF THE TWELVE READINGS ARE STILL NOT *CONVERGED*, WHICH IS THE HALF I AM PUTTING FIRST.**
