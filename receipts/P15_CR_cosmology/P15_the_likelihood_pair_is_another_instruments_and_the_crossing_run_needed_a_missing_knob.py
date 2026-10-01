@@ -366,7 +366,10 @@ check("and the instrument's two sound horizons are now a DECLARED choice the pap
       "coincides with the phase accumulator \"which is what the adjudication asks for\", and P15 puts "
       "r_s on the leaf; the 172 re-read at r6788 as the radiation-free ruler",
       "LEAFSCALES = os.environ.get('LEAFSCALES', '0') == '1'" in INSTR
-      and 'H = Hleaf if LEAFSCALES else Hphys' in _RSF
+      # ⌗ `Hgeom` since `r7091+cc66.73`: the else branch is the GEOMETRY's rate, which IS `Hphys` at
+      #   the default and `Hleaf` under `LEAFGEOM=1`.  *A one-clock run cannot carry two sound horizons,
+      #   so the ruler follows the grid -- and the DECLARED choice this gate is about is unchanged.*
+      and 'H = Hleaf if LEAFSCALES else Hgeom' in _RSF
       and 'which is what the adjudication asks for' in _RSF
       and "the scales the plasma itself accumulates---$\\rs$ and $r_D$---take the leaf's" in _P15
       and os.path.exists(os.path.join(HERE, 'P15_the_crossing_spectrum_reproduces_on_a_second_'
@@ -374,7 +377,8 @@ check("and the instrument's two sound horizons are now a DECLARED choice the pap
 print("""
   ⚠ ** REPORTED, NOT RESOLVED, AND THE SCOPE LINE IS WHY. **  The body puts r_s on the LEAF rate,
     which carries radiation, while keeping D_M on the radiation-free stacking rate; `rs_from`
-    integrates against `Hphys`, which for this arm is the radiation-free rate.  ** The two are not
+    integrates against `Hgeom` -- `Hphys` at the default, which for this arm is the radiation-free
+    rate.  ** The two are not
     computing the same r_s. **  Which one the paper intends is a question about the paper, and this
     order does not reopen the handover resolution.  What is established is that no run of this
     instrument can confirm or refute the body's 298.0 until the convention is settled — so the

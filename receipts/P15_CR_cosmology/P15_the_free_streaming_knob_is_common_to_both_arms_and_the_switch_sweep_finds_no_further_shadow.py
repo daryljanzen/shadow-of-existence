@@ -474,12 +474,22 @@ SWEPT_SIXTY_PLUS = {'ZPSAVE', 'SRCSAVE', 'SRCXS', 'SRCDEC', 'SRCINJ', 'SRCINJPH'
                     'SRCETA', 'SRCETAQ', 'SRCTAPER', 'SRCTAPERALL', 'SRCTAPERNORM',
                     'SRCTAPERS0',
                     'DLKSAVE', 'NLOSW', 'NLOSF',
-                    'GRIDSAVE'}
+                    'GRIDSAVE',
+                    # ⛭ `LEAFGEOM` -- r7091+cc66.73, the conformal-time grid and the comoving distance
+                    #   on the leaf rate: the one clock assignment in this instrument that no switch
+                    #   reached.  *It belongs in THIS set and not among the swept sixty, which is what
+                    #   the arithmetic below is for: the sixty stay sixty and each later addition is
+                    #   named.*
+                    'LEAFGEOM'}
 _ROWENVS = {r['env'] for r in ROWS}
+# ⛭ ** THE EIGHTIETH IS `LEAFGEOM`, r7091+cc66.73 ** -- the conformal-time grid and the comoving
+#   distance on the leaf rate, which was the one clock assignment in this instrument that no switch
+#   reached.  *Named here with its commit because that is this gate's own convention: the count is
+#   allowed to move and each mover has to be accounted for by name.*
 check("the instrument reads sixty environment switches with at least one use site, and every switch "
-      "that is bound is also used somewhere -- sixty at this sweep, seventy-nine now, the nineteen "
-      "added since named with their commits",
-      len(ROWS) == 79 and SWEPT_SIXTY_PLUS <= _ROWENVS and len(_ROWENVS - SWEPT_SIXTY_PLUS) == 60
+      "that is bound is also used somewhere -- sixty at this sweep, EIGHTY now, the twenty "
+      "added since named with their commits (the eightieth is `LEAFGEOM`, r7091+cc66.73)",
+      len(ROWS) == 80 and SWEPT_SIXTY_PLUS <= _ROWENVS and len(_ROWENVS - SWEPT_SIXTY_PLUS) == 60
       and not [e for e in DEFAULT if e not in USES],
       f"{len(ROWS)} switches used, {len(DEFAULT)} bound, "
       f"bound-but-never-used {[e for e in DEFAULT if e not in USES]}")
