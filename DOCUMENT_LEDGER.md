@@ -140,7 +140,7 @@ sources: [chat]
 | `FOR_66.md` | FORWARD | (declared in frontmatter) | — | c54.178 |  |
 | `FOR_66_FROM_60.md` | FORWARD | (declared in frontmatter) | — | c54.186 |  |
 | `FOR_66_FROM_70.md` | FORWARD | (declared in frontmatter) | — | c54.223 |  |
-| `FOR_70.md` | FORWARD | (declared in frontmatter) | — | c54.149 |  |
+| `FOR_70.md` | FORWARD | (declared in frontmatter) | — | c54.170 |  |
 | `FOR_CC66.md` | FORWARD | (declared in frontmatter) | — | c54.178 |  |
 | `FUNCTIONAL_ANALYSIS_LEDGER.md` | FORWARD | The functional-analysis / unitarity field-bake ledger — the field that bounced, and the one routing fact it returned. Third of the four fields `L-272`'s re-survey left outstanding. `OWED` 622. | — | — |  |
 | `HARMONIC_ANALYSIS_LEDGER.md` | FORWARD | The harmonic-analysis field-bake ledger — what bit, what bounced, and the boundary. Second of the four fields `L-272`'s re-survey left outstanding. `OWED` 622. | — | — |  |
