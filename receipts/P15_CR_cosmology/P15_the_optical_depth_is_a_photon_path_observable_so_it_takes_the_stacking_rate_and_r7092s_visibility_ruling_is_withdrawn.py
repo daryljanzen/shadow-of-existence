@@ -89,9 +89,12 @@ ionisation history is the plasma's own chemistry integrated over its own duratio
 leaf's -- so `n_e` entering `tau'` must be the LEAF solution while `d tau` is accumulated on the
 stacking path.  ** That mixed object is what neither configuration computes. **  Measured here: it
 moves the visibility peak by `0.59` per cent in `z` and its width by `0.1` per cent, so the correction
-is real, small, and -- after `cc66.73` -- **not expressible in the instrument at all**: the ionisation
-history is now solved on the same variable the geometry grid uses, so leaf chemistry with a stacking
-path is the one combination no setting of `LEAFGEOM` reaches.
+is real and small -- and it is now ** IMPLEMENTED **: when this was first written the ionisation
+history rode the geometry's own variable, so leaf chemistry with a stacking path was the one
+combination no setting reached, and that was reported as a knob to split rather than a value to
+change.  *`cc66` split it in the same round -- `LEAFREC`, recombination's own rate, defaulting to the
+leaf -- so this receipt's gate asserts the invariant the ruling needs and not the absence that has
+since been closed.*
   ⌗ ** And the two corrections run OPPOSITE ways, which is worth one line: ** the withdrawn leaf
   measure moved last scattering to higher `z` and the surviving leaf chemistry moves it to lower.
   *So conflating them was not even conservative.*
@@ -289,15 +292,19 @@ gate("`P15` names recombination's MICROPHYSICS on the leaf side with `r_s` and `
 gate("and `sec:coherence` makes recombination's own expansion the leaf's -- \"Recombination is "
      "observable cosmology from the branch point onward\" with its expansion the leaf's",
      "Recombination is observable cosmology from the branch point onward" in body15)
-# ⛔ ** AND THE INSTRUMENT CANNOT EXPRESS THIS RULING, which is a finding and not a quibble. **
-# After `cc66.73` the ionisation history is solved on `Hgeom` -- the SAME variable the geometry grid
-# is built on -- so it is not independently assignable: it rides whatever rate the geometry uses, and
-# the ruling (leaf chemistry, stacking path) is the one combination no setting of `LEAFGEOM` makes.
-gate("⛔⛔ and the instrument CANNOT EXPRESS the ruling: the ionisation history is solved on `Hgeom`, "
-     "the same variable the geometry grid uses, so leaf chemistry with a stacking path is the one "
-     "combination no setting of `LEAFGEOM` reaches -- the chemistry has no rate of its own",
-     "xe_history(lambda z: Hgeom(1 / (1 + z)) * 1e3 / Mpc_m" in fsrc
-     and len(re.findall("xe_history" + chr(92) + "(lambda z: H", src)) == 1)
+# ⛭⛭ ** AND THE RULING IS IMPLEMENTED, WHICH IS WHY THIS GATE ASSERTS THE INVARIANT AND NOT THE
+# DEFECT. **  When this receipt was first written the ionisation history was solved on `Hgeom` -- the
+# same variable the geometry grid uses -- so leaf chemistry with a stacking path was the one
+# combination no setting reached, and that was reported as a knob to split rather than a value to
+# change.  `cc66` split it in the same round: `LEAFREC` is recombination's own rate, defaulting to the
+# leaf.  ⇒ *The gate therefore asserts what the ruling needs -- that the chemistry has a rate of its
+# own and that the default is the leaf -- rather than the absence that has since been closed.*
+gate("⛭⛭ and the ruling is IMPLEMENTED: `LEAFREC` gives recombination its own rate, independent of "
+     "the geometry's, and it DEFAULTS TO THE LEAF -- so the chemistry no longer rides whatever rate "
+     "the geometry grid uses, which is what this ruling needs and all it needs",
+     "LEAFREC = os.environ.get('LEAFREC', '1') == '1'" in fsrc
+     and "Hrec = Hleaf if LEAFREC else Hgeom" in fsrc
+     and "xe_history(lambda z: Hrec(1 / (1 + z)) * 1e3 / Mpc_m" in fsrc)
 
 
 sys.path.insert(0, os.path.join(ROOT, 'storyboard_receipts'))
