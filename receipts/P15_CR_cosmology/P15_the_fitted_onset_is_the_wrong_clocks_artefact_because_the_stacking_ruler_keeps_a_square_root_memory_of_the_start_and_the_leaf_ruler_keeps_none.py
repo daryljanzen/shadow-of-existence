@@ -228,12 +228,38 @@ gate("✔ `LEAFPERT` -- the perturbation sector on the leaf -- DEFAULTS ON, whic
 #   objects: it sets the rate the geometry is built on AND the rate the ionisation history is solved on.
 #   The rule assigns `D_M` the stacking rate and recombination the leaf's, so no setting of one switch
 #   satisfies both -- which is a sharper statement about the instrument than either original check.*
-gate("⛔ the ionisation history's rate is NOT INDEPENDENTLY ASSIGNABLE -- it is handed whatever rate "
-     "the geometry grid is built on, so it cannot be put on the leaf while the geometry stays on the "
-     "stacking rate, which is what the rate rule requires of the pair",
-     re.search(r"xe_history\(lambda z: Hgeom\(1 / \(1 \+ z\)\)", src) is not None
-     and not re.search(r"xe_history\(lambda z: Hleaf", src)
+# ⛭⛭⛭ RE-POINTED AGAIN, ONE ROUND LATER AND FOR THE SAME REASON -- **by `cc66`, whose own edit moved
+# ** the subject, and the ruling this check was re-pointed to assert is now MET rather than unreachable. **
+# *The re-pointing above (`r7095`, the gate) replaced two verbatim source pins with a statement that the
+# rule's pair -- `D_M` on the stacking rate, recombination on the leaf's -- was UNREACHABLE from this
+# file, because `LEAFGEOM` was one switch over both objects.  **`r7095`'s own order to `cc66` was to
+# split that knob, and `cc66.75` did: `LEAFREC` carries recombination's rate alone.**  So the gate wrote
+# the unreachability down in the same round it commissioned the fix for it, and the pin went red on the
+# tree that satisfies it.*
+#   ⇒ *** THIS IS THE SECOND TIME IN TWO ROUNDS THAT THIS CHECK'S SUBJECT MOVED BECAUSE THE DEFECT IT
+#     NAMES WAS BEING REPAIRED, which is the standing form the comment above already identified.  The
+#     ruling has not moved either time.  What moved is whether the instrument can express it. ***
+# ⛭ ** AND THE REPLACEMENT IS STRONGER AGAIN, because it no longer asserts a capability but a DEFAULT. **
+#   *`LEAFGEOM` defaults OFF, so `Hgeom` is `Hphys`, the stacking rate -- the rule's assignment for a
+#   separation read across leaves.  `LEAFREC` defaults ON, so `Hrec` is `Hleaf` -- the rule's assignment
+#   for a process running in the content.  **The pair the rate rule requires is what this file now does
+#   with no environment set at all**, which is the thing worth gating and was not true before `cc66.75`.*
+#   ⚠ *The cost is recorded where it belongs and not here: `LEAFREC` is the first clock switch in the
+#   instrument whose default is ON, so the default output MOVED, and every spectrum banked before it was
+#   banked at `LEAFREC=0`.  That is stated at the switch's own site.*
+gate("⛭⛭ the ionisation history's rate IS INDEPENDENTLY ASSIGNABLE AND DEFAULTS TO THE LEAF -- "
+     "`LEAFREC` carries recombination's rate alone, split out of `LEAFGEOM` so the geometry can stay "
+     "on the stacking rate while the plasma's own process runs on the content's: the pair the rate "
+     "rule requires of them, and no longer reachable only by a setting",
+     re.search(r"xe_history\(lambda z: Hrec\(1 / \(1 \+ z\)\)", src) is not None
+     and "LEAFREC = os.environ.get('LEAFREC', '1') == '1'" in src
+     and "Hrec = Hleaf if LEAFREC else Hgeom" in src
      and "Hgeom = Hleaf if LEAFGEOM else Hphys" in src)
+gate("⌗ and the two defaults are read off the file rather than assumed: `LEAFGEOM` OFF puts the "
+     "geometry on `Hphys`, `LEAFREC` ON puts recombination on `Hleaf`, so the rule's assignment is "
+     "the instrument's behaviour with nothing set",
+     "LEAFGEOM = os.environ.get('LEAFGEOM', '0') == '1'" in src
+     and "LEAFREC = os.environ.get('LEAFREC', '1') == '1'" in src)
 gate("✔ conformal time, and so `chi` and `D_M`, are read off ONE grid built from a single rate "
      "variable -- `Hgeom`, which is `Hphys` at the default and the rule's assignment for a separation "
      "read across leaves",
@@ -560,6 +586,14 @@ print("    eta, chi, D_M, the projection distance                      ->  THE S
 print("    g = tau' e^-tau  ->  a LEAF-accumulated tau, differentiated in the STACKING variable")
 print("    the onset        ->  NOT A PARAMETER: the handover is the branch point, every mode")
 print("                         outside the horizon there, and the acoustic angle an OUTPUT")
-print("    ⇒ four of the seven objects are on the wrong rate at the default, and the fitted onset")
-print("      is the stacking ruler's square-root memory of its own start -- one defect, not two.")
+# ⛭ RE-COUNTED at `cc66.75`: this line read `four` until `LEAFREC` defaulted recombination onto the
+# leaf.  The four were r_s, r_D, recombination's microphysics and the visibility; recombination is now
+# on the rule's rate with nothing set, so THREE remain -- r_s and r_D behind `LEAFSCALES` (default off,
+# though the REPORTED spectrum sets it to 1), and the visibility behind `VISLEAF` (default off, and
+# unadjudicated as of `r7095`, so it is counted and not touched).
+print("    ⇒ THREE of the seven objects are on the wrong rate at the default -- r_s and r_D behind")
+print("      `LEAFSCALES`, the visibility behind `VISLEAF`; recombination came off this list at")
+print("      `cc66.75` when `LEAFREC` split its rate out and defaulted it to the leaf.  And the")
+print("      fitted onset is the stacking ruler's square-root memory of its own start -- one")
+print("      defect, not two.")
 assert not bad, f"{len(bad)} check(s) failed: {bad}"
