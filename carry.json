@@ -37,21 +37,17 @@
     "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/36868740199",
     "since": "8efb6deb05b6d41bb42bbd9c37a769bf30bc8c6b"
    },
-   "receipts/P15_CR_cosmology/C62_the_diffusion_signature_is_a_wash_and_the_isw_is_not_what_it_turned_on.py": {
-    "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/36884707439",
-    "since": "f51b57088141a0dfc35d22c1e5a4bfa48d7847fe"
+   "receipts/L_numerics/Q1_a_stated_tolerance_is_a_request_and_the_corpus_answers_it.py": {
+    "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/36902401443",
+    "since": "4dc010920f00788808865ecadfcc2682f0ff1eef"
    },
-   "receipts/P15_CR_cosmology/C63_no_single_source_term_carries_the_undriven_split_and_the_first_probe_read_an_unwired_knob.py": {
-    "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/36884707439",
-    "since": "f51b57088141a0dfc35d22c1e5a4bfa48d7847fe"
+   "receipts/P15_CR_cosmology/P15_the_licensed_configuration_moves_neither_statistic_and_the_swing_was_read_above_where_it_converges.py": {
+    "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/36902401443",
+    "since": "4dc010920f00788808865ecadfcc2682f0ff1eef"
    },
-   "receipts/P15_CR_cosmology/P15_the_fitted_onset_is_the_wrong_clocks_artefact_because_the_stacking_ruler_keeps_a_square_root_memory_of_the_start_and_the_leaf_ruler_keeps_none.py": {
-    "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/36884707439",
-    "since": "f51b57088141a0dfc35d22c1e5a4bfa48d7847fe"
-   },
-   "receipts/P15_CR_cosmology/P15_the_one_fitted_number_moves_the_scale_and_not_the_peak.py": {
-    "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/36884707439",
-    "since": "f51b57088141a0dfc35d22c1e5a4bfa48d7847fe"
+   "receipts/P15_CR_cosmology/P15_the_low_multipole_floor_moves_with_no_background_and_the_factor_two_is_the_late_isw.py": {
+    "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/36902401443",
+    "since": "4dc010920f00788808865ecadfcc2682f0ff1eef"
    }
   }
  },
