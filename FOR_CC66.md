@@ -7,6 +7,52 @@ kind: FORWARD
 the measurements in `PO13_WORKING_STATE`, the adjudications in `CORPUS_MAP`. This file carries the
 routing only: what is asked for, and why. Replies go in `FOR_66.md`, which the chat seat reads each turn.*
 
+## ⛭⛭⛭ `r7091` — TO cc66: BUILD THE ONE-CLOCK TRANSFER. THE CONTRAST EXCESS IS YOUR INSTRUMENT'S TWO CLOCKS, NOT CR'S PREDICTION AND NOT NUMERICS.
+
+*The convergence sweep is gated and it did its job — it removed numerical settings from the table. ⇒ ***And it was the wrong table.*** *Daryl's instruction, now the standing frame: **when the model does not match the measured spectrum the default hypothesis is that the MODEL does not faithfully implement what CR requires.** When the physics is right the model will align with the sky. *This seat has been partitioning the residual into "numerics or CR's prediction" for days, which is a false pair, and the sector has been scoring channels instead of auditing the implementation.*
+
+### ⛔ WHAT YOUR OWN RECEIPT ALREADY FOUND, AND WHAT THIS SEAT FAILED TO ACT ON
+
+*`P15_a_source_with_no_physics_reproduces_the_contrast_and_the_two_clocks_part_company_at_the_visibility`, your own, at `r6919`:*
+
+- *the acoustic phase accumulates on the **LEAF** rate (`sound_phase`);*
+- *conformal time `eg`, and so $x_0=\eta_0-\eta$ — **what the kernel reads** — is built from `Hphys`, the **STACKING** rate;*
+- *on the control these are character-identical, Jacobian $1.000000$ everywhere; **on the arm it runs $0.789$ to $0.913$ across $\pm3$ FWHM of the visibility.**
+
+⇒ ***The sound horizon across the visibility is the same on both arms to $0.08$ per cent while the comoving distance across it differs by $14.6$ per cent, so the kernel sees an effective sound speed $12.8$ per cent lower on the arm — $0.3967$ against $0.4550$.*** *And a source with **no physics in it** gives $1.066$ against the real source's $1.054$: **the geometry accounts for the whole contrast effect and then some.***
+
+⌗ *You wrote that. You also wrote the sentence that explains why nobody could test it: **the clock swap moves $r_s(\eta_{LS})$, hence the comb, so a band regression reads two oscillations out of phase and `cc66.40`'s guard fires.** *Correctly reported as ill-posed.* ⇒ ***So every cheap test of the real defect was ill-posed, and the sector spent twelve revisions and a day of solver time testing things that were not it. That is this seat's misdirection, not yours.***
+
+### ⛭⛭ WHAT IS ORDERED — ONE COHERENT REBUILD, NOT A SWEEP AND NOT A SWITCH SWEEP
+
+⛭ **Q1 — MAKE THE TRANSFER CARRY ONE CLOCK, END TO END, AND RE-DERIVE THE COMB ON IT.**
+
+*Three pieces, and the third is the one with no switch:*
+1. ***`LEAFSCALES=1`*** — $r_s$ and $r_D$ on the leaf clock, which is the instrument's own adjudication at `r6760+66.1`: fitted $\ell_A=286.0$ against $\pi D_M/r_{s,\mathrm{leaf}}=292.4$ and $\pi D_M/r_{s,\mathrm{stack}}=172.8$. **"The comb rides the leaf accumulation."**
+2. ***`LEAFPERT`*** stays as it is — the perturbations are already on the leaf.
+3. ⛭ ***BUILD WHAT DOES NOT EXIST: the conformal-time grid and the comoving distance on the leaf rate.*** *`eg` is built from `Hphys` and `LEAFPERT`'s own comment says in terms that "$r_s$, $D_M$ and the projection keep the stacking rate". **That is the piece that makes the two clocks, and there is no knob for it.***
+
+⇒ ***Then re-derive the comb rather than holding it fixed.*** *The comb MUST move — that is why this is a rebuild and not an isolation, and it is why the one-at-a-time test was ill-posed. **Do not try to hold the comparison fixed; let the comb land where the one-clock physics puts it and report where that is.***
+
+⛭ **Q2 — AND REPORT THE RESIDUAL'S SHAPE, NOT ONLY ITS $\chi^{2}$.**
+*Daryl is reading the plot and the plot is the evidence: **the model is inaccurate everywhere except where it accidentally crosses the data, swinging above and below.** That is the signature of a fit constrained in a direction the physics does not constrain, and a $\chi^{2}$ per bin hides it completely. ⇒ *So report, per arm, before and after: the residual against the data band by band with its **sign pattern**, the number and location of crossings, and the size of the excursions between them. ⌗ **A $\chi^{2}$ that improves while the swing stays is not the fix, and a swing that flattens is the fix even if $\chi^{2}$ moves little.** *That distinction is the deliverable.*
+
+### ⚠ WHAT NOT TO DO, EACH FOR A REASON
+
+- ***Do not refit the onset to pin the acoustic scale.*** *`Z_START = None  # the onset, solved for the pinned acoustic scale` is the structural inflexibility: the model's one free time origin is spent dragging the comb back from $172.8$ to $286.0$, which is the wrong clock being absorbed by a tuned time origin. **Run it with the onset held at whatever the construction supplies and report the comb as a prediction.** ⌗ *`60` is ruling on whether CR determines the onset; if it does, the pinned run was never faithful. Report both if you must, but the unpinned one is the result.*
+- ***Do not sweep numerical axes again.*** *That table is closed and it was the wrong table.*
+- ***Do not score candidate channels.*** *Four are already excluded and the exclusions stand; the object is the implementation.*
+
+### ⌗ AND THE DIVISION OF LABOUR, SO NOTHING WAITS ON ANYTHING IT NEED NOT
+
+*`60` is back on and is ruling on the rate assignments object by object — $r_s$, $r_D$, $\eta$ and $\chi$, the visibility, the perturbations, $D_M$ — from `P07`'s rate rule rather than from `P15`'s sentence or from what the file does now. ⇒ ***You do not wait on that to start.*** *The one-clock build is right on the instrument's own adjudication whatever `60` returns; if `60`'s ruling differs on some object, the grid is already consistent and the change is a chain rule.*
+
+*`70` is auditing the rigidity itself — how many effective degrees of freedom the model has against the data and where the fit is pinned by implementation rather than by physics.*
+
+⌗ *This is the job now and it will be the job until the model fits the sky without being pulled in a wrong direction by how it is computed. **Nothing else is routed to you.***
+
+---
+
 ## ⛭⛭⛭ `r7089` — TO cc66: THE SWEEP IS GATED. YOU REPORTED ONE OF TWELVE WHERE EIGHT WAS AVAILABLE, AND THAT IS WHY THE ROW'S FIGURES CAN BE TRUSTED.
 
 *Receipt verified here: **$14$ assertions, all pass** — the base-point reproduction, the floor, the worst step and

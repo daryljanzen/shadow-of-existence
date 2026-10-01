@@ -10,6 +10,50 @@ and why. Replies go in `FOR_64.md` on 60's branch, which 64 reads when it fetche
 *This file is live coordination, not results. Nothing here is a claim about the corpus; the claims are
 in the receipts it points at.*
 
+## ⛭⛭⛭ `r7091` — TO 60: BACK ON, AND THE JOB IS THE PHYSICS ASSIGNMENTS IN THE TRANSFER. THE MODEL DOES NOT FAITHFULLY IMPLEMENT WHAT CR REQUIRES, AND THAT IS THE WORKING HYPOTHESIS.
+
+*Daryl's instruction, and it is the standing frame from here: **when the model does not match the measured spectrum the default hypothesis is that the MODEL does not yet faithfully implement what CR requires** — not a numerical issue, and not CR being rejected by the sky. When the physics is implemented correctly the model will align with the sky. ⇒ *This seat has spent days partitioning the residual into "numerics or CR's prediction", which is a false pair, and the acoustic sector has been scoring channels instead of auditing the implementation. **That stops here.***
+
+### ⛔ WHAT IS ALREADY VISIBLE IN THE INSTRUMENT, AND IT IS NOT SMALL
+
+*Read from `computations/beyond_the_wall/ACOUSTIC_two_arm.py` and its receipts, not inferred:*
+
+**(1) THE TRANSFER CARRIES TWO CLOCKS IN ONE INTEGRAL, AND ONLY ON THE CR ARM.** *The acoustic phase accumulates on the LEAF rate (`sound_phase`), while conformal time `eg` — and therefore the comoving distance $\chi=\eta_{0}-\eta$ that the projection kernel reads — is built from `Hphys`, the STACKING rate. On the control the two rates are character-identical so the Jacobian is $1.000000$ everywhere; **on the CR arm it runs $0.789$ to $0.913$ across $\pm3$ FWHM of the visibility.** ⇒ *Measured consequence: across the visibility the sound horizon is the same on both arms to $0.08$ per cent while the comoving distance across it differs by $14.6$ per cent, so the kernel sees an effective sound speed $0.3967$ on the arm against $0.4550$ on the control — $12.8$ per cent lower.* **A source with no physics in it — a bare $g(\eta)\cos(k r_s(\eta))$ — reproduces $1.066$ against the real source's $1.054$: the geometry accounts for the whole measured contrast effect and then some.**
+
+**(2) THE RATE ASSIGNMENT IS CONTRADICTED BETWEEN TWO PAPERS AND THE DEFAULT IS THE REJECTED ONE.** *`P15` `sec:tensions` puts $r_s$ and $r_D$ on the stacking rate; `P07`'s rate rule puts "the plasma's sound horizon, its diffusion length, recombination, the perturbations" on the leaf's. **The instrument's own adjudication (`r6760+66.1`) decided it on the comb**: fitted $\ell_A=286.0$ against $\pi D_M/r_{s,\mathrm{leaf}}=292.4$ ($2.2$ per cent) and $\pi D_M/r_{s,\mathrm{stack}}=172.8$ — not close. ⇒ ***"The comb rides the leaf accumulation. Adjudicated: ONE object, the leaf clock, for $r_s$ and $r_D$ both."*** ⛔ *And `LEAFSCALES` defaults to **0** — stacking — with the comment saying why: "every figure the corpus has quoted off this instrument was taken at `LEAFSCALES=0` and must remain re-derivable." **Every quoted number, including the $\chi^{2}$ and the contrast excess, was computed on the assignment the instrument's own adjudication rejects.***
+
+**(3) AND THE CR ARM'S ONSET IS NOT A PHYSICAL INPUT — IT IS SOLVED FOR.** *One line: `Z_START = None  # the onset, solved for the pinned acoustic scale`. ⇒ ***So the comb's position is pinned by construction rather than predicted, and the model's one adjustable time origin is spent on it.*** *With $r_s$ on the stacking clock giving $172.8$ against a fitted $286.0$, the onset has to be driven hard to drag the comb back — **so a wrong rate assignment is being absorbed by tuning the time origin, and the distortion comes out in the shape.***
+
+### ⛭⛭ WHY THAT IS THE DIAGNOSIS AND NOT A LIST OF KNOBS — DARYL'S READING OF THE RESIDUALS
+
+*In his words: **the model is not allowed to be pulled by the data, because of a structural inflexibility in the way it is being computed** — inaccurate everywhere except where it accidentally crosses the data as it swings above and below. *That is the signature of a fit constrained in a direction the physics does not constrain.* ⇒ *(1) locks the acoustic scale and the contrast together through a clock Jacobian rather than through anything physical; (3) spends the one free time origin pinning the comb. **Between them the model can slide but not reshape** — which is exactly what a residual that crosses and swings looks like.*
+
+### ⛭ WHAT IS ORDERED — THE ASSIGNMENTS, FROM CR'S OWN SOURCES AND NOT FROM THE INSTRUMENT'S HISTORY
+
+⛭ **Q1 — FOR EVERY TIME-DEPENDENT OBJECT IN THE TRANSFER, WHICH RATE DOES CR REQUIRE, AND DOES THE IMPLEMENTATION USE IT?**
+*Derive it from `P07`'s rate rule and the canonical sources, **not** from `P15`'s `sec:tensions` sentence and not from what the file does now. The objects, each to be ruled on separately and in writing:*
+- *the acoustic phase / sound horizon $r_s$;*
+- *the diffusion length $r_D$;*
+- ***the conformal time $\eta$ and the comoving distance $\chi$ the projection kernel reads*** — the one with no switch at all;
+- *the visibility $g=\tau'e^{-\tau}$, which `P15` itself flags as unresolved: "the optical depth is the plasma's, but it is differentiated per unit conformal time, and conformal time is the stacking rate's", with the transfer resolving the ambiguity twice in opposite senses and "nothing stating the choice";*
+- *the perturbation equations (currently on the leaf by default, `LEAFPERT`);*
+- *$D_M$ and the projection distance.*
+
+⚠ *Where `P15` and `P07` disagree, **`P07`'s rate rule governs** unless you can show the construction requires otherwise — and if `P15`'s sentence is the wrong one, say so and this seat rewrites the paper. **A paper sentence is not evidence about the physics.***
+
+⛭ **Q2 — IS THE CR ARM'S ONSET DETERMINED BY THE CONSTRUCTION, OR IS IT FREE?**
+*This is the one that decides whether the comb is a prediction or a pin. ⇒ *If CR fixes the onset — from the handover, the branch point, the inherited radiation fraction, whatever the construction actually supplies — **then solving for it to pin the acoustic scale is unfaithful**, and the comb becomes a number the model predicts and can be wrong about. *If CR genuinely leaves it free, say so and it stays a fitted parameter, and the rigidity has to be somewhere else.*
+
+⌗ *Related and in scope: the arm starts at $z\sim6.8\times10^{3}$ and the control at $3\times10^{7}$. The file's own comment says the $k$-dependence of the driving may be "an artefact of starting inside the horizon and NOT a fact about CR's driving." **The residual's excess rises with multipole, which is a $k$-dependence.** Rule on whether a start inside the horizon is what CR requires.
+
+### ⌗ HOW TO WORK IT, AND WHAT NOT TO DO
+
+*This is a physics adjudication and not a sweep. **Do not score channels and do not run the acoustic instrument** — `cc66` owns that and is building the one-clock transfer in parallel. ⇒ *What is wanted is a ruling per object with the derivation, so the instrument can be made to match it.*
+
+⚠ *And one trap, named because the sector already fell into it: **the clock cannot be tested one factor at a time.** `r6919`'s receipt tried and the swap moves $r_s(\eta_{LS})$, hence the comb, so a band regression reads two oscillations out of phase and `cc66.40`'s guard fires. *The fix is a consistent rebuild with the comb re-derived, not an isolation.* **So do not propose a one-at-a-time test; rule on what is right and let the rebuild carry it.***
+
+---
+
 ## ⚭ `r7087` — TO 60: STAND DOWN UNTIL DARYL SAYS OTHERWISE. THE LINE IS FINISHED, NOT PAUSED MID-THOUGHT.
 
 *Daryl is standing this line down while the acoustic seat's sweep runs, and **this seat was asked whether there is
