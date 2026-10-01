@@ -1,0 +1,32 @@
+__SWITCHES__ ARM=cr CRH0=68.60 CROM=0.2973 HIER=1 LEAFGEOM=1 LEAFSCALES=1 LMAXL=2000 LSTEP=8 SAVE=/tmp/n66/grid_oneclock/cr_base.npz ZSTART=3e7
+  __ONECLOCK__ LEAFGEOM=1: one clock end to end -- max|Jac-1| = 0.0e+00, max|rs_stack-rs_leaf| = 0.0e+00 Mpc
+  diffusion: r_D at the visibility peak = 7.12 Mpc  ->  l_D = 1958
+
+==============================================================================
+  ACOUSTIC TWO-ARM INSTRUMENT — ARM=cr   DRIVING=ON
+==============================================================================
+  rate: GEOMETRIC (L1)   H0=68.6  Om=0.2973
+  z_start = 3e+07   eta_start = 0.016   eta_rec = 282.3   eta_end = 1912
+  D_M = 13942 Mpc   r_s = 145.33 Mpc   l_A = pi D/r_s = 301.4   modes = 1452
+  visibility: peak at eta = 282.23 (z = 1090.2), FWHM = 38.36 Mpc   R = 3 rho_b/4 rho_g there = 0.62279   1+R = 1.62279
+  z_eq(leaf) = 3370.3   Omega_r = 8.818604e-05   rho_r/rho_m at the onset = 8898.69
+
+  projection reach: k_max = 3998/D_M against a reported l_max = 2000 -> ratio 2.00
+  projection sampling: dk = 1.973e-04, Bessel period 2pi/D = 4.507e-04, points per period = 2.3
+  ⌗ CR's ladder is DISCRETE and physical, so this is not aliasing — but it is only
+    not aliasing if the answer does not depend on it. Run KCONT=1 to check.
+  hierarchy: LG = 24, handover at tau' = 3.0/Mpc (eta = 139.0), where 4.2% of 1/k_D^2 has accumulated
+  so the envelope carries 4.2% of the damping and the multipoles carry 95.8% of it
+    modes 0-250 done
+    modes 250-500 done
+    modes 500-750 done
+    modes 750-1000 done
+    modes 1000-1250 done
+    modes 1250-1452 done
+  saved 238 multipoles to /tmp/n66/grid_oneclock/cr_base.npz
+  --------------------------------------------------------------------------
+  PEAKS (line-of-sight, HIERARCHY)   l_A = 301.4
+  --------------------------------------------------------------------------
+    peaks at l = [220, 540, 812, 1132]
+    l_1/l_A = 0.7300   P1/P2 = 2.199   P1/P3 = 2.213
+    sky: 220.6 / 538.1 / 809.8,  l_1/l_A = 0.7312,  P1/P2 = 2.217,  P1/P3 = 2.277

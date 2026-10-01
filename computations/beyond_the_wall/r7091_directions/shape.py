@@ -41,6 +41,13 @@ import numpy as np
 #     container only, or that compares a new clock against old numbers, reaches CI green.*
 sys.path.insert(0, os.path.join(os.path.dirname(os.path.dirname(os.path.dirname(
     os.path.abspath(__file__)))), 'planck_tt_likelihood'))
+#   ⚠ ** AND THE PATTERN IS NOT UNIQUE TO THIS FILE, which is `cc66`'s half of the finding and is kept
+#   here because the site is where it will be needed: ** roughly FORTY drivers and launchers under
+#   `computations/beyond_the_wall/` carry the same absolute root -- `refit_grid185/fit.py`,
+#   `PO13_score_likelihood.py`, `r6893_directions/bank.py`, most `launch.sh` and `pass*.sh`.
+#   *They are LATENT rather than broken: nothing registered reads them, so CI never runs them, and each
+#   becomes this failure the moment a receipt invokes one.*  ⇒ **Routed and not swept: a lint for an
+#   absolute container path in a tracked file closes the class once, and a forty-file edit does not.**
 import chi2_of_spectrum as CS
 
 

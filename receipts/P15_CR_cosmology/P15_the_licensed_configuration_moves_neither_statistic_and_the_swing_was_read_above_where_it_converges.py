@@ -48,6 +48,7 @@ longest run, and that all three agree below ell 800 -- which is the convergence 
 """
 import os
 import re
+import subprocess
 import sys
 
 import numpy as np
@@ -87,14 +88,22 @@ def shape(npz, lmax):
     """The swing statistics, via `r7091`'s own shape reader run as a subprocess so its definitions
     are not re-implemented here -- the mistake that would make a disagreement unattributable."""
     import subprocess
-    out = subprocess.run([sys.executable, os.path.join(BW, 'r7091_directions', 'shape.py'),
-                          npz, '--lmax', str(lmax), '--tilt'],
-                         capture_output=True, text=True, errors='replace').stdout
+    p = subprocess.run([sys.executable, os.path.join(BW, 'r7091_directions', 'shape.py'),
+                        npz, '--lmax', str(lmax), '--tilt'],
+                       capture_output=True, text=True, errors='replace')
+    out = p.stdout
     c = re.search(r'crossings at ell: (.*)', out)
     runs = re.findall(r'^\s+[+-]\s+(\d+)-(\d+)\s+(\d+)\s+([+-][\d.]+) s', out, re.M)
     ch = re.search(r'chi2/bin = ([\d.]+)', out)
     nb = re.search(r'over (\d+) bins', out)
-    assert c and runs and ch, f"shape.py gave no statistics for {npz} at lmax {lmax}"
+    # ⛭ THE SUBPROCESS'S OWN STDERR IS IN THE MESSAGE, added at `r7097+cc66.80` because its absence is
+    # what made the first failure of this assertion unreadable: `shape.py` carried an absolute path to
+    # one machine's filesystem, so on a CI runner it died before printing and this said only "gave no
+    # statistics".  ** An assertion about another process has to carry that process's complaint. **
+    assert c and runs and ch, (
+        f"shape.py gave no statistics for {npz} at lmax {lmax} -- exit {p.returncode}\n"
+        f"  its stderr: {p.stderr.strip()[-800:] or '(empty)'}\n"
+        f"  its stdout: {out.strip()[-400:] or '(empty)'}")
     lens = [int(r[2]) for r in runs]
     ext = [abs(float(r[3])) for r in runs]
     return dict(crossings=len(c.group(1).split()), longest=max(lens),
@@ -183,14 +192,24 @@ print(f"      LMAXL=1300  oneclock  crossings {_o['crossings']}  longest {_o['lo
 gate("⌗ `cc66.73`'s reported crossings 36 -> 30 and longest run 16 -> 18 REPRODUCE exactly on the "
      "`LMAXL=1300` pair it was measured from -- the earlier null was arithmetically right",
      (_b['crossings'], _o['crossings']) == (36, 30) and (_b['longest'], _o['longest']) == (16, 18))
+# ⛭⛭ r7099 Q1: THE TWO RUN LOGS ARE NOW TRACKED, so this reads them DIRECTLY again.
+# *`cc66.81` had transcribed their `projection reach:` lines into a `.txt` because `.gitignore` excluded
+# `*.log` -- a rule that lives in the file's **LaTeX build-output** section and was never meant for a
+# solver log.  `r7099` ordered the logs committed instead, which is better: **the instrument's own output
+# is the evidence, and a transcription is a second place for one fact to drift.**  The `.txt` is removed
+# and the exception is declared in `.gitignore` rather than force-added, so the next reader can see it.*
+#   ⌗ *The tracking gate in section G covers these two paths, so if the ignore rule ever reclaims them
+#   this receipt fails here instead of only on someone else's tree -- which is the whole lesson of
+#   `cc66.80` and `cc66.81`.*
 _reach = {}
 for nm, p in (('1300', os.path.join(L1300, 'cr_before.log')),
               ('2000', os.path.join(LICENSED, 'cr_base.log'))):
     _m = re.search(r'k_max = (\d+)/D_M against a reported l_max = (\d+) -> ratio ([\d.]+)',
                    open(p, errors='replace').read())
+    assert _m, f"the instrument's own reach line is not in {p}"
     _reach[nm] = (int(_m.group(1)), int(_m.group(2)), float(_m.group(3)))
     print(f"      LMAXL={nm}: k_max = {_reach[nm][0]}/D_M, reported l_max = {_reach[nm][1]}, "
-          f"ratio {_reach[nm][2]}")
+          f"ratio {_reach[nm][2]}   [read from the run's own tracked log]")
 gate("⛔ and the reason is the ceiling and not the arithmetic: both runs hold k_max = 2 l_max / D_M, "
      "so reading to ell 1040 is 80 per cent of the `LMAXL=1300` run's own reported ceiling against "
      "52 per cent of the `LMAXL=2000` run's",
@@ -281,8 +300,37 @@ gate("⌗ THE CONSISTENCY CHECK: the CONTROL's coefficient is unchanged across a
 # =====================================================================================
 head("G.  ⚠ THE SCOPE, AND WHAT THIS DOES NOT LICENSE")
 
-gate("no parameter is refitted and no onset pinned here: every spectrum is read from a banked file "
-     "tracked in this repository, and the three grids' own `switches` stamps are quoted above",
+# ⛭⛭ THIS GATE NOW CHECKS WHAT IT CLAIMS.  *It used to assert that every input was tracked in the
+# repository without asking git, and that claim was FALSE for two `.log` files while the gate passed --
+# `.gitignore` excludes `*.log`.  **A scope claim about provenance that does not consult the thing that
+# decides provenance is the defect this corpus keeps finding, and it was in my own scope section.***
+_INPUTS = [os.path.join(g, f'{a}_base.npz')
+           for g in (BANKED, LICENSED, ONECLOCK) for a in ('lcdm', 'cr')] + [
+    os.path.join(L1300, 'cr_before.npz'), os.path.join(L1300, 'cr_oneclock.npz'),
+    os.path.join(L1300, 'cr_before.log'), os.path.join(LICENSED, 'cr_base.log')]
+# ⌗ *And it degrades honestly rather than brittlely: inside a git checkout it asks about TRACKING,
+# which is the question that matters and the one that would have caught the `.log` files.  Unpacked
+# outside a checkout there is no tracking to ask about, so it falls back to EXISTENCE and SAYS which
+# question it answered -- a gate that cannot run should report that, not fail or pretend.*
+_isrepo = subprocess.run(['git', 'rev-parse', '--is-inside-work-tree'],
+                         cwd=ROOT, capture_output=True, text=True).stdout.strip() == 'true'
+if _isrepo:
+    _t = subprocess.run(['git', 'ls-files', '--error-unmatch'] + _INPUTS,
+                        cwd=ROOT, capture_output=True, text=True)
+    _missing = [os.path.relpath(p, ROOT) for p in _INPUTS
+                if os.path.relpath(p, ROOT) not in _t.stdout.split('\n')]
+    print(f"      provenance asked of `git ls-files`: {len(_INPUTS)} input(s), "
+          f"{len(_missing)} not tracked{'  ' + str(_missing) if _missing else ''}")
+    gate("⛭ EVERY FILE THIS RECEIPT READS IS TRACKED IN THE REPOSITORY, asked of `git ls-files` "
+         "rather than asserted -- so it cannot pass here on a file absent from CI's checkout",
+         _t.returncode == 0 and not _missing)
+else:
+    print("      ⌗ not inside a git checkout, so TRACKING cannot be asked; existence checked instead")
+    gate("⌗ every file this receipt reads is present (tracking not askable outside a checkout, and "
+         "that is reported rather than passed over)",
+         all(os.path.exists(p) for p in _INPUTS))
+gate("no parameter is refitted and no onset pinned here, and the three grids' own `switches` stamps "
+     "are quoted above",
      all('__SWITCHES__' in _sw[k] for k in _sw))
 gate("⛔ and `LEAFGEOM=1` is NOT reinstated by this receipt -- `r7095`'s ruling is the gate's and it "
      "stands.  What is reported is a CONFLICT between the rule's configuration and the sky, for the "

@@ -6576,3 +6576,67 @@ Below ell ≈ 800 all three are indistinguishable, so a reading taken there deci
 
 - `LEAFREC=1` moved the spectrum (max rel 6.5%) and left `l_A`, `D_M` and `r_s` **bit-identical** to the banked run — `r6893+cc66.37`'s diagnostics finding confirmed again on a switch built after it.
 - Its default being ON put three instrument-running receipts in conflict with numbers banked before the split. `C62`, `C63` and `P15_the_one_fitted_number_moves_the_scale_and_not_the_peak` now pin `LEAFREC=0` for the leg whose target predates it, with the reason in each file. `C62` measures the move rather than discarding it: recombination on its own rate takes the arm's diffusion scale from +7.55% to +8.37%, and the control's `r_D` is asserted bit-identical across the switch. Lifting those pins means re-measuring numbers `P15` quotes — routed to the gate, not done here.
+
+## cc66.79 — `r7097` Q3: the licensed rebuild leaves all three rigidity numbers where they were; the forbidden one reaches the control's floor
+
+**Receipt** `receipts/P15_CR_cosmology/P15_the_licensed_rebuild_leaves_all_three_rigidity_numbers_where_they_were_and_the_forbidden_one_puts_the_arm_on_the_controls_own_floor.py` — 13 checks, all pass. Measured through 70's own `rigidity.py` definitions (`build`, `W`, `STEP`, `stats`, `bestfit`), not re-implemented.
+
+`r7097` named the three figures before the grid existed. On the banked grid they return exactly: unreachable chi2 278.8 on the arm against the control's 186.0 at n−5=180, crossings 54 against noise's 88±10.
+
+| grid | arm | unreachable chi2 | crossings | longest run |
+|---|---|---|---|---|
+| all three | lcdm | 186.006575 | 87 | 8 |
+| banked `refit_grid185` | cr | 278.795150 | 54 | 33 |
+| **licensed** `LEAFREC=1`, `LEAFGEOM=0` | cr | **278.788424** | **54** | **33** |
+| forbidden `LEAFGEOM=1` | cr | **184.988550** | **91** | **8** |
+
+- **The licensed rebuild closes 0.007% of the 92.8 chi2 gap** and moves neither the crossings nor the longest run at all — on a rebuild that changed the spectrum by 6.5%.
+- **The forbidden one closes all of it**: chi2 below the control's own 186.01, crossings 91 against the control's 87, longest run 8 — exactly the control's.
+- The control's three numbers are identical across all three grids (its nine runs are the same nine files), which is the no-op saying what moved is the arm.
+
+**60's falsifier fires**, and it was written unprompted and before the run: a rebuild consistent on all four assignments supplies no contrast correction of the named sign and size, which it said in advance means the rate assignments are not where the contrast comes from. But the one assignment the rule *forbids* supplies all of it, so the conclusion is sharper than the falsifier's wording: **the contrast comes from the clock the geometry is read on — the one object `P07` pins to the stacking rate by name.**
+
+### The refit and the tilt prediction
+
+Four-parameter refit (Nelder-Mead, closed-form amplitude), arm rows: banked `NS +0.0288` (chi2 301.2), licensed `NS +0.0422` (297.9), forbidden `NS −0.0035` (186.7, matching the control's 186.3).
+
+The two-direction tilt `shape.py` fits and the refit's own `n_s` shift agree to better than 0.004 on all three grids at matched resolution, which is what licenses reading one as the other — checked rather than assumed. On that reading **`cc66.73`'s −0.0324 does not survive the resolution change**: it is that pair's own `LMAXL=1300` value, and the one-clock rebuild needs essentially no tilt. The banked default and the licensed configuration both want +0.03 to +0.04, so the tilt the fit reaches for is a property of the two-clock geometry rather than of the rebuild.
+
+### Q4 — both locator validations re-pointed onto a re-derivable substrate
+
+`cc66_cr_x_lstep1.npz` has no command anywhere in the repository and its comb is the superseded stacking ruler's (`l_A` 172.841). Both receipts now read `r6941_fine_cr.npz` — a launcher exists, `l_A` 301.799, ell 100–1999 at spacing 1 — and the check is **stricter** there, reproducing 70's measurement exactly:
+
+- `P15_the_full_range_refit_holds_the_background_and_the_phase_residual_was_quantised`: raw 3.90, refined 0.023 (was raw 3.06, refined 0.133).
+- `P15_the_combs_resolution_is_four_multipoles_and_the_skys_own_value_lies_outside_the_family`: `l_1` to 0.0035, worst of four 0.023 (was 0.0043 and 0.133).
+
+Thresholds unchanged; the INDEX row naming the old substrate is re-pointed too.
+
+### One flag
+
+`--grid DIR` was added to `rigidity.py`, which is 70's file, in its own existing `--mc` style. Unset it is the banked grid and the behaviour is byte-identical, so none of that driver's findings move. Additive only — no definition, baseline, step or statistic touched. Flagged rather than assumed.
+
+## cc66.80 — an absolute container path in `shape.py` made a passing receipt red in CI
+
+`cc66.78`'s receipt passed here (22/22) and failed in CI in 0 s with `shape.py gave no statistics`. `computations/beyond_the_wall/r7091_directions/shape.py` line 32 read:
+
+```python
+sys.path.insert(0, '/home/user/shadow-of-existence/computations/planck_tt_likelihood')
+```
+
+On a runner the checkout is at `/home/runner/work/...`, so `import chi2_of_spectrum` failed, the subprocess died before printing, and the receipt's assertion reported only the absence of statistics. Now derived from `__file__`. Verified by running the receipt from a relocated copy of the tree and confirming `chi2_of_spectrum` resolves inside that copy.
+
+Two findings beyond the one file:
+
+- **The pattern is systemic but latent.** Roughly forty drivers and launchers under `computations/beyond_the_wall/` hold the same absolute root, including `refit_grid185/fit.py`, `PO13_score_likelihood.py`, `r6893_directions/bank.py` and most `launch.sh` / `pass*.sh`. Nothing registered reads them, so CI never runs them — the failure appears the moment a receipt invokes one. Fixed here only; the class is routed to the gate, where a lint for an absolute container path in a tracked file would close it once.
+- **The assertion was its own defect.** An assertion about a subprocess that does not carry that subprocess's stderr turns a one-line ImportError into a mystery. It now reports exit code, stderr and stdout.
+
+## cc66.81 — the banked logs were never in the repository, and the scope gate that claimed otherwise now asks git
+
+The `shape.py` path fix (`cc66.80`) carried `cc66.78`'s receipt through three sections in CI and then it died again. Second cause, hidden behind the first: **`.gitignore` line 6 is `*.log`**, so the `.log` files copied beside the banked `.npz` grids were never committed. The receipt read two of them for each run's reported truncation ceiling — present here, absent in CI.
+
+- The four `projection reach:` lines are now banked verbatim in `computations/beyond_the_wall/r7095_directions/truncation_reach.txt`, a `.txt` and so not ignored — the corpus's own idiom for a banked log. The `.npz` grids were tracked all along and keep their `__SWITCHES__` stamps.
+- **And the receipt's own scope claim was false while it passed.** It asserted every number came from a file tracked in the repository without asking git: true of the spectra, false of those two logs. That gate now runs `git ls-files --error-unmatch` over all nine inputs and fails if any is untracked. Outside a checkout there is no tracking to ask about, so it falls back to existence and says which question it answered rather than failing or pretending.
+
+Verified by materialising the git index alone into a separate root (`git checkout-index --prefix`) and running both new receipts from the receipt's own directory — which is exactly what CI gives them. `cc66.78` 23/23, `cc66.79` 13/13.
+
+⌗ Three defects of one shape in a row, each hiding the next: an absolute path to this container; files excluded by `.gitignore`; and a provenance claim that did not consult the thing deciding provenance. The lesson worth keeping is the test, not the three fixes — **a receipt is only verified when it is run from a tree built from the index alone.**

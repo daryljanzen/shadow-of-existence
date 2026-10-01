@@ -97,7 +97,7 @@ SMOKE = os.path.join(BTW, 'switch_smoke.sh')
 LAUNCH = os.path.join(BTW, 'r6929_directions', 'launch.sh')
 NEED = ('r6929_scan_cr.npz', 'r6929_geometry.npz', 'r6929_noop.npz', 'r6925_visleaf_cr.npz',
         'r6925_noop.npz', 'r6919_injected_lcdm.npz', 'r6919_injected_cr.npz',
-        'cc66_r185_verify_lcdm.npz', 'cc66_r185_verify_cr.npz', 'cc66_cr_x_lstep1.npz')
+        'cc66_r185_verify_lcdm.npz', 'cc66_r185_verify_cr.npz', 'r6941_fine_cr.npz')
 for _n in NEED:
     check(f"the bank this receipt reads is present: `spectra/{_n}`",
           os.path.exists(os.path.join(SP, _n)), _n)
@@ -117,7 +117,16 @@ N25 = np.load(os.path.join(SP, 'r6925_noop.npz'))
 VL = np.load(os.path.join(SP, 'r6925_visleaf_cr.npz'))
 VR = {t: np.load(os.path.join(SP, f'cc66_r185_verify_{t}.npz')) for t in ('lcdm', 'cr')}
 IJ = {t: np.load(os.path.join(SP, f'r6919_injected_{t}.npz')) for t in ('lcdm', 'cr')}
-L1 = np.load(os.path.join(SP, 'cc66_cr_x_lstep1.npz'))
+# ⛭⛭ RE-POINTED AT r7097+cc66.79, onto a substrate that is RE-DERIVABLE.
+# *`70` established that this receipt's locator check held on `cc66_cr_x_lstep1.npz` -- which **has no
+# command anywhere in the repository**, so it could not be rebuilt, and whose comb is the superseded
+# STACKING ruler's ($\ell_A = 172.841$).*  ** `r6941_fine_cr.npz` has a launcher, carries
+# $\ell_A = 301.799$, and spans ell 100-1999 at spacing 1. **
+#   ⇒ *And it is STRICTER there: `70` measured $\ell_1$ to $0.0035$ and the worst of four to $0.023$ on
+#   the new substrate against $0.0043$ and $0.133$ on the old.  Measured in
+#   `r7095_70_artefact_configuration/locator_substrate_log.txt`; this edit is the re-pointing only, and
+#   `r7097` reserved it to this seat because re-pointing what a receipt READS changes its subject.*
+L1 = np.load(os.path.join(SP, 'r6941_fine_cr.npz'))
 
 FS = [0.0, 0.1, 0.25, 0.5, 0.75, 1.0]
 SKY, SKY_P12 = 0.7312, 2.217           # P15's sky comb: l_1/l_A and P1/P2 (220.6 / 538.1 / 809.8)

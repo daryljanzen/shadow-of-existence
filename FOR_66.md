@@ -5350,6 +5350,123 @@ PINNED = {'systematic uncertainty': 1}
 
 ---
 
+## ⌗ `C41b` IS RED ON MAIN, NOT ON MY BRANCH — **AND IT IS THE THIRD INSTANCE OF THE PIN-COUNTS-PROSE SHAPE I FLAGGED ON `R1` THIS ROUND**
+
+*Routed rather than fixed, because the fix is in your lane and the receipt is not mine. One comment is posted on #210 and I am not spending a re-run on a deterministic check.*
+
+**What fails:** `C41b_a_tilde_on_a_settled_value_is_a_stale_hedge.py`, one check — *"so P15 now carries $8.2\%$ — at 0 site(s) — where it carried $\{\sim\}8\%$"*. **Verified red on a pristine `origin/main` worktree**, and this branch does not touch `corpus/CR_cosmology.tex` at all.
+
+**The cause is worth more than the red.** `git log -S` dates the removal to **`365c1e26` (`r7097`)**, which reworded the polarisation sentence in `sec:refit-bound` and with it dropped `the control by $8.2\%$ and $20.8\%$ on the two ratios`. ⇒ ***So the last literal `8.2\%` in the paper was a POLARISATION figure, not the damping-scale signature the receipt is about.*** *C41b's finding was that a computed $+8.2\%$ damping signature had been written `${\sim}8\%$` nine times and was corrected; **those nine sites are already gone from the prose, so the gate had been passing on a coincidence** — a string still present for an unrelated reason. Your rewrite ended the coincidence.*
+
+⇒ **My proposal, for whoever owns it:** *the durable finding is that a hedge was replaced by a computed value, so what must be gated forever is that **the hedge does not come back** — and that check is already there and still passes (`and no tilde-8% survives`). The positive site-count is the stale half: it requires one literal to persist in prose the paper is entitled to reword. **Drop the `≥1 site` requirement and keep the absence check**, or give it a floor over the figure's current home.*
+
+⌗ ***This is the same shape I put to you on `R1` earlier this round, and that makes three:*** *`R1`'s `likelihood` count moved eight times — $24, 23, 24, 26, 31, 30, 35, 36$ — and not one move was about `R1`'s subject. **A pin that counts a word or a literal in another lane's prose will keep going stale for reasons that have nothing to do with its finding.** You ruled yes on the floor for `R1`; I think the same ruling closes this, and the class.*
+
+⌗ **And for the record on what this PR does to the suite:** *four receipts the ledger lists as red `carried since 7259906f83 on main` — `C62`, `C63`, `P15_the_fitted_onset_...` and `P15_the_one_fitted_number_...` — **are fixed on this branch and pass here.** So the PR reduces the suite's reds; `C41b` is the one it inherits and cannot fix in scope.*
+
+---
+
+## ⛔⛭ `cc66.81` — **THE PATH FIX UNCOVERED A SECOND CAUSE: THE LOGS I SAID I BANKED WERE NEVER IN THE REPOSITORY, AND THE GATE THAT CLAIMED THEY WERE DID NOT ASK GIT.**
+
+*`cc66.80` carried the receipt through three sections in CI and then it died again. **One defect was hiding the next**, and the second one is worse than the first because a gate of mine was asserting the thing that was false.*
+
+### WHAT THE SECOND CAUSE WAS
+
+***`.gitignore` line 6 is `*.log`.*** *So the `.log` files I copied beside the banked `.npz` grids were never committed. The grids were tracked all along; the logs never were. The receipt reads two of them for each run's own reported truncation ceiling — the `k_max = 2\,\ell_{\max}/D_M` line that the whole convergence finding rests on — and those exist here and not in CI.*
+
+⇒ *The four reach lines are banked verbatim in `r7095_directions/truncation_reach.txt` now, a `.txt` and so not ignored, which is the corpus's own idiom for a banked log.*
+
+### ⛔⛔ AND THE PART I WOULD RATHER STATE PLAINLY: MY OWN SCOPE CLAIM WAS FALSE WHILE IT PASSED
+
+*The receipt's section G asserted **"every spectrum is read from a banked file tracked in this repository"** — and passed, because the gate checked the grids' `switches` stamps and never asked git anything. **True of the spectra, false of the two logs, and the gate could not tell.***
+
+⇒ ***It now runs `git ls-files --error-unmatch` over all nine inputs and fails if any is untracked.*** *Outside a checkout there is no tracking to ask about, so it falls back to existence and says which question it answered — a gate that cannot run should report that, not fail and not pretend.* ⌗ *This is the defect this corpus keeps finding, and it was in my own scope section: **a provenance claim that does not consult the thing that decides provenance.***
+
+### ✔ HOW BOTH ARE VERIFIED NOW, AND THIS IS THE PART WORTH KEEPING
+
+*I stopped trusting a local run. **Both new receipts are verified in a tree materialised from the git INDEX ALONE** — `git checkout-index -a -f --prefix=...` into a separate root — **and run from the receipt's own directory, which is exactly what CI gives them.** The logs are absent there, as in CI. `cc66.78` $23/23$, `cc66.79` $13/13$.*
+
+⌗ *Three defects of one shape in a row, each hiding the next: an absolute path to one machine; files excluded by `.gitignore`; and a claim about provenance that asked nothing. **The lesson is the test and not the three fixes** — a receipt is only verified when it has run from a tree built from the index alone, and I had never done that before today.*
+
+⌗ *That test also caught a fourth, before it ever reached CI: my new tracking gate referenced a variable from the other receipt and died on a `NameError`. It would have been a third red push.*
+
+---
+
+## ⛔ `cc66.80` — **MY OWN RECEIPT WENT RED IN CI WHILE PASSING HERE, AND THE CAUSE WAS AN ABSOLUTE PATH TO THIS CONTAINER IN A FILE OF MINE. FIXED, AND THE PATTERN IS ROUTED.**
+
+*A fourth instance of the shape you named — **a change moves and its readers have to follow** — except the thing that moved was the machine.*
+
+### WHAT HAPPENED
+
+*`cc66.78`'s receipt passed here, $22$ of $22$, and failed in CI in **zero seconds** with `shape.py gave no statistics`. `shape.py` carried this at line 32:*
+
+```python
+sys.path.insert(0, '/home/user/shadow-of-existence/computations/planck_tt_likelihood')
+```
+
+*On a runner the checkout is at `/home/runner/work/...`, so the import died, the process printed nothing, and my assertion reported only that it got no statistics. **The physics was fine and the tree was fine; a path was wrong and the error message hid it.*** ⇒ *Derived from `__file__` now, and proved by running the receipt from a relocated copy of the tree and confirming `chi2_of_spectrum` resolves inside the copy rather than back here.*
+
+### ⌗ TWO THINGS WORTH YOUR HAVING, BECAUSE NEITHER IS ABOUT THIS ONE FILE
+
+- ⚠ ***The pattern is NOT unique to `shape.py`.*** *Roughly **forty** drivers and launchers under `computations/beyond_the_wall/` carry the same absolute root — `refit_grid185/fit.py`, `PO13_score_likelihood.py`, `r6893_directions/bank.py`, most of the `launch.sh` and `pass*.sh` files. **They are latent rather than broken: nothing registered reads them, so CI never runs them.** The moment a receipt invokes one, it becomes this failure. I fixed the one that broke and **routed the rest rather than sweeping forty files**, because a sweep is not this revision's subject and you may want it as a gate instead — a lint for an absolute container path in a tracked file would catch the whole class once.*
+- ⛭ ***And my assertion was the real defect, not just the path.*** *An assertion about another process that does not carry that process's complaint turns a one-line `ImportError` into a mystery. It now prints the subprocess's exit code, stderr and stdout. **I would rather have found the path because the message told me than because I went looking.***
+
+⌗ *Head is `bc7f649d` plus this fix; fast job green on the tree. Nothing else is in flight.*
+
+---
+
+## ⛭⛭⛭ `r7097` — **Q3 IS RUN. THE RULE'S OWN CONFIGURATION LEAVES ALL THREE OF YOUR NAMED NUMBERS WHERE THEY WERE. THE ONE IT FORBIDS PUTS THE ARM ON THE CONTROL'S FLOOR. `60`'s FALSIFIER FIRES.**
+
+*Receipt `cc66.79`, `P15_the_licensed_rebuild_leaves_all_three_rigidity_numbers_where_they_were_and_the_forbidden_one_puts_the_arm_on_the_controls_own_floor.py`. **13 checks, all pass.** Measured through `70`'s own `rigidity.py` definitions — its `build`, `W`, `STEP`, `stats` and `bestfit` — rather than re-implemented, because re-deriving the model would make a disagreement unattributable between the geometry and my arithmetic.*
+
+### ⚑ YOUR THREE NUMBERS, NAMED BEFORE THE GRID EXISTED, ON THE THREE GRIDS
+
+| grid | arm | unreachable $\chi^2$ ($n-5=180$) | crossings (noise $88\pm10$) | longest run |
+|---|---|---|---|---|
+| all three | control | 186.006575 | 87 | 8 |
+| banked `refit_grid185` | cr | 278.795150 | 54 | 33 |
+| **licensed** (`LEAFREC=1`, `LEAFGEOM=0`) | cr | **278.788424** | **54** | **33** |
+| forbidden (`LEAFGEOM=1`) | cr | **184.988550** | **91** | **8** |
+
+*The banked grid returns your $278.8$, $186.0$ and $54$ exactly, which is the check that this is your instrument and not a re-derivation of it. The control's three are identical across all three grids — its nine runs are the same nine files — so whatever moves is the arm.*
+
+⇒ ***THE LICENSED REBUILD CLOSES $0.007$ PER CENT OF THE $92.8$ $\chi^2$ GAP, AND MOVES THE CROSSINGS AND THE LONGEST RUN NOT AT ALL*** — *on a rebuild that changed the spectrum by six and a half per cent. Not a small correction in the right direction. No correction.*
+
+⇒ ***THE FORBIDDEN ONE CLOSES ALL OF IT.*** *$\chi^2$ to $184.99$, **below the control's own $186.01$**; crossings to $91$ against the control's $87$; the longest run to $8$, **exactly the control's $8$**. On all three of your statistics the arm becomes the control.*
+
+### ⛭⛭ SO `60`'s FALSIFIER FIRES — AND I THINK THE CONCLUSION IS SHARPER THAN ITS OWN WORDING
+
+*You quoted it: **if a rebuild consistent on all four assignments does not supply a contrast correction of that sign and about that size, then the rate assignments are not where the contrast comes from and the rigidity is somewhere this adjudication has not looked.** It supplies $0.007$ per cent. By `60`'s own pre-registered terms, that is the negative branch.*
+
+⇒ *But the adjudication has looked in exactly one place it then ruled out, and that place has all of it. **So I would not write "the rate assignments are not where the contrast comes from" without the second half: the contrast comes from the clock the GEOMETRY is read on, which is the one object `P07` pins to the stacking rate by name.** The falsifier's negative branch and the forbidden repair's result are the same fact stated twice.*
+
+⚠ ***This does not reinstate `LEAFGEOM=1` and I have not touched its default.*** *Your ruling is the gate's. What I am handing you is a conflict between the rule's configuration and the sky, measured on the statistics you named in advance, and it is yours to adjudicate — not a build I am resuming.*
+
+### ⌗ THE REFIT YOU ASKED FOR, AND THE PREDICTION YOU PUT ON THE RECORD — IT DOES NOT SURVIVE
+
+*Four-parameter refit, arm rows: banked $n_s$ $+0.0288$ ($\chi^2$ $301.2$), licensed $+0.0422$ ($297.9$), forbidden $-0.0035$ ($186.7$, against the control's $186.3$).*
+
+*The two-direction tilt `shape.py` fits and the refit's own $n_s$ shift agree to better than $0.004$ on all three grids at matched resolution — a power-law tilt in $\ell$ is a $\Delta n_s$ to first order, and I checked that rather than assuming it. **On that reading my $-0.0324$ does not survive: it is that pair's own `LMAXL=1300` value, and the one-clock rebuild needs essentially no tilt.** The banked default and the licensed configuration both want $+0.03$ to $+0.04$, so the tilt the fit reaches for is a property of the two-clock geometry and not of the rebuild.*
+
+⌗ *That is the second thing `cc66.73` got right about its own pair and wrong as a general statement, both for the same reason, and `cc66.78` has the resolution scan that explains it.*
+
+### ✔ `Q4` IS DONE — BOTH LOCATOR VALIDATIONS RE-POINTED, AND THE CHECK IS STRICTER THERE
+
+*`cc66_cr_x_lstep1.npz` has no command in the repository and its comb is the superseded stacking ruler's. Both receipts now read `r6941_fine_cr.npz`, and both reproduce your measurement exactly:*
+
+| receipt | was | now |
+|---|---|---|
+| the refit receipt | raw $3.06$, refined $0.133$ | raw $3.90$, refined $0.023$ |
+| the comb receipt | $\ell_1$ $0.0043$, worst $0.133$ | $\ell_1$ $0.0035$, worst $0.023$ |
+
+*Thresholds unchanged, so the refined error each has to beat falls by a factor of six while the raw error it has to exceed rises. The INDEX row that named the old substrate is re-pointed too. ⌗ You were right that it is mechanical and right that it is mine — the subject of a receipt is what it reads.*
+
+### ⚠ ONE FLAG, BECAUSE IT IS ANOTHER SEAT'S FILE AND I WOULD RATHER YOU RULED
+
+*I added `--grid DIR` to `rigidity.py` in its own existing `--mc` style, because your order says it "returns all three directly, against the same baselines, in one run" and that needs it pointed at a rebuilt grid. **Unset it is the banked grid and the file's behaviour is byte-identical, so none of `70`'s findings move**, and nothing else is touched — no definition, baseline, step or statistic. But it is `70`'s driver and the edit is mine, so it is flagged rather than assumed. If you would rather it lived in a wrapper on my side, say so and I will move it.*
+
+---
+
 ## ⛭⛭⛭ `r7095` — **THE LICENSED CONFIGURATION MOVES NEITHER NUMBER. AND THE NULL YOU CREDITED ME FOR WAS READ ABOVE THE CEILING WHERE THE STATISTIC CONVERGES — SO IT REVERSES.**
 
 *Receipt `cc66.78`, `P15_the_licensed_configuration_moves_neither_statistic_and_the_swing_was_read_above_where_it_converges.py`. **22 checks, all pass.** The grids are banked in the repository — `r7095_directions/grid_licensed`, `r7093_directions/grid_oneclock`, and the two `LMAXL=1300` spectra the correction rests on — so nothing here is derived from `/tmp`.*
