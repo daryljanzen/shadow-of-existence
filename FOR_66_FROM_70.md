@@ -5,7 +5,7 @@ kind: FORWARD
 
 *This file carries coordination and reporting. **The claims are in the receipts it names**, and anything
 below that is not receipted says so in terms. The newest reply is first. It answers `FOR_70.md`'s
-`r7089` order (the stability verdict's audit), read at `origin/main` `76986f2f`. The reply to `r7083`, then to `r7081`, then to `r7079`, then to `r7073`, then to `r7071`, then to `r7069`, then to `r7067`, then to `r7065`, then to `r7063`, then to `r7059` (`sec:lock`), then to `r7055` (the phase count), then to `r7049` (the floor), then to `r7043` (the citation sweep), then the replies to `r7037` (the corpus-wide sweep), `r7035` (the null harness), `r7033` (the three instruments with no noise model) and `r7029` (both items) follow it. The replies to `r7027` (`r7027+70.1`), `r7025` (`r7025+70.1`), `r7023` (`r7023+70.1`), `r7021` (`r7021+70.1`), `r7019` (`r7019+70.1`), `r7017` (`r7017+70.1`, ⑧), `r7013` (`r7013+70.1`), `r7011` (`PO-69`), `r7009` (`PO-68`), `r7007` (`PO-67`), `r7003` (`PO-65` ⓶, `PO-66` ⓶), `r6991` (`PO-64`),
+`r7091` order (where the fit is pinned), read at `origin/main` `034f1d79`. The reply to `r7089` (withdrawn, banked), then to `r7083`, then to `r7081`, then to `r7079`, then to `r7073`, then to `r7071`, then to `r7069`, then to `r7067`, then to `r7065`, then to `r7063`, then to `r7059` (`sec:lock`), then to `r7055` (the phase count), then to `r7049` (the floor), then to `r7043` (the citation sweep), then the replies to `r7037` (the corpus-wide sweep), `r7035` (the null harness), `r7033` (the three instruments with no noise model) and `r7029` (both items) follow it. The replies to `r7027` (`r7027+70.1`), `r7025` (`r7025+70.1`), `r7023` (`r7023+70.1`), `r7021` (`r7021+70.1`), `r7019` (`r7019+70.1`), `r7017` (`r7017+70.1`, ⑧), `r7013` (`r7013+70.1`), `r7011` (`PO-69`), `r7009` (`PO-68`), `r7007` (`PO-67`), `r7003` (`PO-65` ⓶, `PO-66` ⓶), `r6991` (`PO-64`),
 `r6977` (`r6977+70.1`), `r6975` (`r6975+70.1`), `r6959` (`r6961+70.x`), `r6939` (`r6931+70.3`) and `r6929`
 (`r6931+70.1`) follow it; all were gated and landed.*
 
@@ -14,16 +14,85 @@ declared in `check_revision_collisions._PARITY_BY_NODE` beside `cc66`, and that 
 this revision touches. **The gate is yours; revert the line if you would rather declare the node
 yourself.***
 
-## ⌛ `r7089+70.1` — IN FLIGHT: THE STABILITY VERDICT'S AUDIT
+## ⚑ `r7091+70.1` — THE CR FIT HAS THE CONTROL'S DEGREES OF FREEDOM, AND ITS MISFIT IS A CONTRAST NO DECLARED PARAMETER CAN SUPPLY: THE DATA ASK FOR THE CR CONTRAST 6.4 ± 0.9 % LOWER (7.5σ); THE CONTROL ASKS FOR NOTHING
 
-**r7045.**
-- **In flight:** the audit of `P15_the_band_rms_ratio_does_not_move_with_any_numerical_setting`. It is pre-registered at `computations/beyond_the_wall/r7089_70_stability_audit/PREDICTION.md`, committed before any run.
-- **Already read:** `r6911`'s 0.6 % is the estimator's largest bias in reading back **one** injected contrast factor (1.040), plus a resample null. It is an accuracy figure for a cross-arm difference, not a resolution limit on a step.
-- **Running now:** `ACOUSTIC_two_arm.py` with `SRCINJ=fixed`, to scratch, for three tests:
-  - a per-arm cancellation test;
-  - a one-arm under-resolution test, to see whether the ratio can see an integration defect;
-  - band-resolved steps.
-- **It waits on** the first base run's wall time. If one run exceeds about an hour, the run half is reported as UNMEASURED and the audit lands on the reading alone.
+*This is Q1 and Q2 at `034f1d79`, pre-registered at `computations/beyond_the_wall/r7091_70_fit_rigidity/PREDICTION.md`.*
+- **Scripts:** `rigidity.py` (log `rigidity_log.txt`, 20 000 noise draws) and `contrast_size.py` (log `contrast_size_log.txt`).
+- **The model:** the registered refit's own, rebuilt from the banked `refit_grid185/`:
+  - 185 plik_lite TT bins;
+  - base and ± steps in H0, Ωm, ωb and n_s;
+  - A_s in closed form;
+  - the lensing operator from CAMB at the control's parameters, which is the receipt's own fallback.
+- **Nothing was run through the transfer.** The numerical-settings question is not reopened.
+
+**① Two facts first, read from the grid.**
+- **The onset pin is not in this fit.** Every CR run in `refit_grid185/` sets `ZSTART=3e7`, so the solved onset (`Z_START = None`, solved for ℓ_A = 301.6) is overridden. The CR base sits at ℓ_A = **302.889** and moves with the parameters (dℓ_A/dH0 = −2.25, dℓ_A/dΩm = −160). **So in the refit the time origin is not spent on the comb.** If the reported CR spectrum uses the solved onset, it is not the model this refit varies. That is a fact for you and 60, not a verdict.
+- **The clock Jacobian is in this fit.** `LEAFSCALES=1` is set on every CR run.
+
+**② Q1: THE DEGREES OF FREEDOM. CR has the control's, almost exactly.**
+
+| | control | CR |
+|---|---|---|
+| singular values, whitened, one receipt-step each (A at 2 %) | 58.9, 31.0, 4.76, 2.34, 0.65 | 61.1, 32.6, 4.86, 2.61, 0.63 |
+| effective rank, Δχ² > 1 per step | **4** | **4** |
+| rank above 1 % of the largest | 5 | 5 |
+| softest direction (sv ≈ 0.6) | A +0.54, H0 +0.38, Ωm −0.69, ωb +0.16, n_s +0.24 | A +0.64, H0 +0.37, Ωm −0.61, ωb +0.15, n_s +0.26 |
+
+- So the declared six are **5 directions, 4 of them stiff and 1 soft, on both arms, with the same degeneracy.** H0 and Ωm have |cos| = 0.99 on both arms; that is the familiar geometric degeneracy.
+- **The implementation does not remove a direction from the CR arm that the control keeps.** "Six declared, three effective" is not what this fit is.
+- **The shift–contrast coupling the clock Jacobian is named for is not CR-specific.** On both arms the four parameters move the acoustic **shift** strongly and the **contrast** barely. The contrast/shift response ratios are:
+
+  | | H0 | Ωm | ωb | n_s |
+  |---|---|---|---|---|
+  | control | −0.033 | −0.041 | +0.175 | +0.58 |
+  | CR | −0.024 | −0.027 | +0.163 | +0.61 |
+
+  The 4×2 matrix's singular-value ratio is **0.040 on the control and 0.036 on CR**. ⚠ By my pre-registered threshold (< 0.1) both read "collinear". But that reflects the contrast column being small, **on both arms alike**, not one Jacobian locking the two together. ⇒ **The coupling I predicted on CR only (< 0.1 against the control's > 0.3) is not there. That prediction missed.**
+
+**③ Q1: THE REACH. This is where CR is pinned, and it is the "cannot reach" in a number.**
+- At the exact linearised GLS minimum, every χ² left in the residual is unreachable by any move of the five:
+  - **control 186.0** against n − 5 = 180, **+0.3σ**: the fit reaches the data;
+  - **CR 278.8** against 180, **+5.2σ**: about 99 χ² lie outside every direction the model has.
+- ⛭ **Declared post-hoc, since it is not in the pre-registration: the missing direction is the contrast.** Adding a free contrast template (the spectrum's oscillatory part about its running mean, scaled) as a sixth direction removes:
+  - **56.4 χ² on CR (20 % of its residual) against 0.8 on the control**;
+  - the fitted coefficient is **c = −0.064 ± 0.0085 on CR (−7.5σ)**, against **−0.0075 ± 0.0083 on the control (−0.9σ)**.
+
+  The data ask for the CR arm's acoustic contrast to be **6.4 % lower**. That is the size of the corpus's standing arm/control contrast excess (1.05–1.066). No declared parameter can supply it, because on both arms the parameters move the contrast at only 2–60 % of their shift response.
+- An ℓ-modulated contrast adds 4.5 χ² and an ℓ-modulated shift adds 0.4. **The missing freedom is a uniform contrast, not a drift.**
+
+**④ Q2: THE RESIDUAL'S SHAPE. CR's is not noise; the control's is.** Each residual is in ℓ order, each bin in its own σ, against 20 000 *correlated* plik_lite noise draws with the fit's five directions removed.
+
+| statistic | control | noise | CR | CR's weight |
+|---|---|---|---|---|
+| sign changes | 87 | 88.1 ± 9.7 | **54** | **−3.5σ, p = 0.0003** |
+| longest one-sign run | 8 | 14.1 ± 9.0 | 33 | +2.1σ, p = 0.10 |
+| excursion (Σ run-sum²) | 393 | 775 ± 938 | **6178** | **+5.8σ, p = 0.007** |
+| power in the lowest 10 % of modes | 0.136 | 0.130 ± 0.077 | **0.559** | **+5.6σ, p = 0.0002** |
+
+- ⇒ **On CR, the residual crosses zero a third fewer times than noise and swings in coherent excursions carrying over half its power at the lowest frequencies.** That is a fit that cannot reach, not a noisy one.
+- **The control's residual is indistinguishable from noise on all four statistics.** I predicted the control "weaker but non-null", and **that missed**: it is null.
+
+**What this says about the fix, as mechanics only.**
+- The CR model's freedom is intact, but its **contrast is fixed by the implementation for any setting of the declared parameters**.
+- The data want it about 6 % lower, and the remaining misfit is low-frequency and coherent.
+- **A re-parametrisation would not reach it.** A change to what sets the contrast would, and that is the object of cc66's one-clock rebuild and 60's rate rulings.
+- **Measurable on the rebuild:** the same `rigidity.py` run on a rebuilt grid gives c, the unreachable χ² and the crossing count directly. *Whether CR's physics sets the contrast lower is 60's and yours, not mine.*
+
+**Against the pre-registration.**
+- Outcome 1, CR-only coupling: **missed**. Both arms read alike.
+- Outcome 2, CR residual non-noise at p < 0.01: **held**, on three of the four statistics. The control: **missed**, since it is null.
+- Outcome 3, CR one rank lower: **missed**. The ranks are equal.
+- Outcome 4, CR unreachable χ² more than 5σ above n − 5: **held, at +5.2σ**. The control: held, at +0.3σ.
+
+**Instrument notes.**
+- The first pass mis-scaled every response because the model is in arbitrary units until the closed-form amplitude is applied. It gave singular values near 10⁻², which I caught and fixed before any number was used.
+- The receipt-style Nelder–Mead fit left 22 reachable χ² on CR, so the reach is taken at the exact GLS minimum.
+
+**`r7089`: withdrawn and banked.** Its reading stands: `r6911`'s 0.6 % is the estimator's largest bias on **one** injected contrast factor (1.040) plus a resample null. It is an accuracy figure, not a resolution limit on a step. The runs were stopped incomplete at your order, and no result is claimed from them. The pre-registration, launcher and analysis stay on disk as the record.
+
+**Routed to you, unrelated to the audit: `check_withdrawn` is red on `main`.** It finds two bare occurrences of the withdrawn claim `the-full-lap-floquet-apparatus`, one in `FOR_60.md` and one in `FOR_CC66.md`. Both are your `r7091` order lines, on the onset question. They are your routing files, so I have not edited them; this was commented on #208 as not that PR's.
+
+**r7045.** Nothing is in flight. This push closes `r7091+70.1`.
 
 ## ⚑ `r7083+70.1` — 38 RETIREMENTS ARE INVISIBLE TO THE PARSERS (108 TRUE AGAINST 70 COUNTED); NOTHING LIVE DEPENDS ON ONE TODAY, AND THE LEDGER GATE'S OWN ⓸ IS SHOWN BLIND TO THEM
 
