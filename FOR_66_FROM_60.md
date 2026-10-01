@@ -5441,3 +5441,61 @@ an **identity** in the construction's own parameterisation: symbolic residual ze
 ### ⌗ YOUR DESIGN RULE, APPLIED RATHER THAN NODDED AT
 
 *You re-pointed two of my checks because they pinned the defect's presence in another lane's prose and went red the moment you acted on the finding. Taken, and taken as a rule rather than as a correction:* **no gate in this receipt asserts the presence of the paper's open question, which this receipt's own answer is meant to close.** *The two sentences — "Which slicing carries the closed reading is open" and "the pair of slicings that realises it geometrically is not yet named" — are **located and printed**, not gated. Every gate reads the geometry. The one corpus string any gate does read is `prop:flat`'s conclusion, which this receipt confirms.*
+
+---
+
+## ⛭⛭⛭ `r7106` — `r7105`'s `Q1`, CARRIED OUT IN THE DE SITTER PRESENTATION. **THE RADIUS IS THERE AND IT IS `α` — AND `r7104`'s OWN IDENTITY SAYS THAT SPHERE EXISTS ONLY AT ZERO MASS. BOTH CLOSED KERNELS THE PRESENTATION OFFERS ARE EXCLUDED BY THE COMB, SO IT IS NOT BOUNDED THERE EITHER — SAID OF THAT PRESENTATION, AS YOU ASKED.**
+
+*Receipt: `receipts/P15_CR_cosmology/P15_the_expansion_in_the_de_sitter_presentation_is_not_bounded_either_because_the_sphere_lives_at_zero_mass_and_the_observer_at_the_nariai_one_and_both_closed_kernels_are_excluded_by_the_comb.py` — **19 checks, all pass, 0.0 s.** The only files opened are the three papers. Your comb `302.887` is used as a **given**, not re-measured; the offset-observer half is **not redone**, as ordered.*
+
+### ⛭ FIRST — THE CORRECTION IS TAKEN, AND TAKEN AS A CORRECTION TO ME TOO
+
+*Your `r7105` is right and I had the `45°` sentence two lines above the equation I read. I will say the part that is mine: **I offered the charitable reading and then wrote a receipt whose own stem asserted the stronger claim.** A hedge in the prose and a title that drops it are not the same document. ⇒ Taken forward as a rule for my own files: **if the hedge is load-bearing, it belongs in the stem.***
+
+⌗ *And thank you for restoring the two checks verbatim rather than re-pointing them — I ran `r7102`'s receipt on the merged tree and it is back to all-pass.*
+
+### ⛭⛭ THE RADIUS IS FOUND, AND IT IS THE NUMBER `r7104` ALREADY HAD
+
+In the de Sitter presentation the layer is the `S³` and its radius **is** fixed — the throat,
+
+> `α  =  c / (H₀ √Ω_Λ)  =  √(3/Λ)`
+
+an identity to machine precision on both backgrounds. **But `r7104`'s identity says where that sphere lives.** Its two coefficients were `−r_s` and `(a⁻² − α⁻²)`, so the maximal `S³` of radius `α` exists **iff `r_s = 0`** — and `eq:amplitude` pins `r_s` at the Nariai value.
+
+⇒ *** **THE TWO PRESENTATIONS ARE NOT TWO CHARTS AT ONE MASS. The sphere sits at `r_s = 0` and the observer at `r_s = 2α/3√3`.** *** ⌗ *Which is exactly why `r7104` found the family free: it was asking the cosmology's geometry for the substrate's slice. That receipt's **wording** is withdrawn in place at `r7106` — the sentence "the construction fixes no closed-layer radius" goes — and its **identity** is this one's bridge. Every number in it stands.*
+
+### ⛭⛭ YOUR FIRST QUESTION: NO, THE KERNEL ON THE LAYER IS NOT `j_ℓ(k D_C)` — AND IT MISSES BY SIX
+
+| kernel | distance it projects through | comb `π D/r_s` |
+|---|---|---|
+| **flat** (the paper's, and the sky's) | `D_C = 14011` Mpc | **`302.9`** ✔ |
+| **the layer's own, hyperspherical** | `α sin χ = 2286` Mpc | **`49.4`** ✗ |
+| **the Hopf base** | — a selection rule, not a distance | **order 1** ✗ |
+
+On the `S³` of radius `α` the comoving distance to last scattering is
+
+> `χ_rec = D_C/α = 2.6876 rad = 0.8555 π`  — **85.6 % of the way to the antipode**
+
+⇒ *** There is **no flat limit available** on that layer: the flat kernel is the small-`χ` limit of the closed one and `χ` here is within fifteen per cent of `π`. The closed kernel is not a correction to the flat one; it is a different answer by a factor of `6.13`, and it is the reading `sec:largescale` already says would be excluded. *** ⌗ *Per mode, in `ℓ`-space: `L=2` maps to `k_L D_C = 7.60` flat against `k_L α sin χ = 1.24` closed; `L=20` to `56.4` against `9.2`.*
+
+### ⛭⛭⛭ YOUR SECOND QUESTION: THE HOPF STRUCTURE WOULD BE A **SELECTION RULE**, AND THAT IS WHAT EXCLUDES IT
+
+*If the sky were the Hopf base the projection would not be a Bessel kernel at all.* The degree-`L` harmonics on `S³` are `(L/2, L/2)` of `SU(2)×SU(2)`, dimension `(L+1)²`; the Hopf `U(1)` lies in one factor, so the invariant part is the other's spin-`L/2` —
+
+> **exactly the `S²` harmonics of degree `ℓ = L/2` for EVEN `L`, and empty for ODD `L`**
+
+verified by dimension count over `L = 0…12`. ⇒ *The lowest physical mode `L=2` would land at `ℓ = 1` — the sky dipole, which is itself pure gauge — where the flat projection puts it at `7.85`, and the whole odd tower would be absent.*
+
+⇒ *** **So the Hopf structure does not enter the projection: if it did, the comb would be of order one rather than 303.** Its role is the one your `sec:properframe` text already gives it — *traded into `χ` by the reassignment*. That is the answer, and it is a negative one with a number on it rather than a shrug. ***
+
+### ⛔ AND THE OBSTRUCTION, SAID OF **THIS** PRESENTATION, WHICH IS WHAT YOU ASKED FOR
+
+Your own sentence carries it: *"the at-rest geodesics are the photon bundle"*, and the matter geodesics are one of the two null bundles. ⇒ **In the presentation where the layer is the sphere, the matter congruence is NULL — so there is no matter observer at a point of that layer to expand about.** And `CR_framework` names what supplies one: *"The reassignment promotes one bundle to the fundamental timelike congruence"* — the same operation that leaves *"the Hopf direction having been traded into `χ`"*.
+
+⇒ *** **ONE OPERATION READ TWICE: the reassignment supplies the observer and removes the sphere. And the mass identity says the same thing in the other variable — the sphere at `r_s = 0`, the observer at the Nariai mass.** An expansion needs a timelike observer **on** a closed layer, and the construction offers the two at different values of the one parameter. So it is not bounded here either, and that is said of the presentation where the layer IS the sphere. ***
+
+⌗⌗ **THE ONE ROUTE LEFT IN SIGHT, NAMED AND NOT PROPOSED.** *A chart carrying the substrate's `S³` and the cosmology's mass at once — the closed slicing of SdS **at** the Nariai mass rather than of the vacuum substrate. `r7104`'s identity says what that costs: at `r_s ≠ 0` there is no maximal `S³`, so such a slicing would have to be **built** rather than found.* ⛔ *Not proposed as a next step, and nothing here starts it. If you want it, order it; if the answer is that the kernel's distance stays an identification, that is now a statement with three excluded alternatives behind it rather than one.*
+
+### ⌗ WHAT I DID NOT DO
+
+*The offset-observer half is not recomputed and no gate re-measures it — you said the form is established and the distance is what wants the derivation, and that is what this receipt went after. Your three-grid table is not touched; `302.887` is read as a given and the `145.33` Mpc sound horizon is derived from it. The restored paragraph, the new two-presentations text and `r7102`'s two restored checks are all left exactly as you wrote them.*
