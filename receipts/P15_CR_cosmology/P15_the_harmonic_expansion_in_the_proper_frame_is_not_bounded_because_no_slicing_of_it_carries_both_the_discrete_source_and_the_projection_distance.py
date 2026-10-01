@@ -434,12 +434,27 @@ gate("⌗ and its area distance saturates at a finite value as the redshift dive
 
 # ================================================== F. the join
 head("F.  ⛭⛭⛭ (iv) THE JOIN: THE CONSTANT-COSMIC-TIME LAYER IS `R x S^2`, NOT AN `S^3`")
-gate("the paper locates the closed $S^3$ ON the constant-$\\tilde\\tau$ surfaces of the proper frame, "
-     "and reads $r_0$ off it twice -- once as the areal radius, once as the curvature radius",
+# ⛔⛭⛭ RE-POINTED r7103 (66, THE GATE, WHOSE OWN EDIT BROKE IT -- which is the exception the standing
+# ** rule names, and the reason is the sharpest instance of the class this sector has produced. **
+# *This check asserted that the paper LOCATES the closed $S^3$ on the constant-$\tilde\tau$ surfaces --
+# the very attribution this receipt's section (iv) refutes.  It therefore pinned the DEFECT'S PRESENCE in
+# another lane's prose, and it went red the moment the gate acted on the finding and corrected it.*
+#   ⇒ *** A CHECK THAT ASSERTS THE SYMPTOM PERSISTS IS GREEN ONLY WHILE ITS OWN FINDING IS UNADDRESSED.
+#     The finding here is a GEOMETRIC FACT -- the constant-$\tilde\tau$ surface is R x S^2 -- and that
+#     does not move when a paragraph is rewritten.  The paragraph was the symptom. ***
+#   ⌗ *This is the register's standing form, and the sector has now met it in a receipt of every seat's:
+#     the acoustic seat's, the substrate seat's, and twice in the gate's own re-points.  Here the subject
+#     moved because the receipt WORKED.*
+# ⛭ ** AND THE REPLACEMENT ASSERTS THE CORRECTED STATE, which is stronger: not that the paper still
+#   carries the attribution, but that it no longer does and that what replaced it is the measured fact. **
+gate("⛭⛭ the paper NO LONGER locates the closed $S^3$ on the constant-$\\tilde\\tau$ surfaces -- the "
+     "attribution this section refutes is gone from `sec:largescale`, and what stands in its place is "
+     "this receipt's own finding: the surface is $\\mathbb{R}\\times S^2$ and an $S^3$ of any radius is "
+     "available but chosen rather than fixed",
      "the \\emph{cosmological} layers are the closed $S^3$ of constant $\\tilde\\tau=\\tau+\\chi$"
-     in body15
-     and "with $r_0$ the present $S^3$ areal radius" in body15
-     and "the ratio of the flat projection distance to the curvature radius" in body15)
+     not in body15
+     and "that surface is $\\mathbb{R}\\times S^2$" in body15
+     and "its radius is chosen rather than fixed by the construction" in body15)
 _vv, _rc = sp.symbols('v r_c', positive=True)
 _chi = sp.Symbol('chi')
 _Ric_lay, _R_lay = ricci(sp.diag(_vv ** 2 - 1, _rc ** 2, _rc ** 2 * sp.sin(_th) ** 2),
@@ -497,10 +512,15 @@ gate("⇒ *** NO SINGLE SLICING OF THE PROPER FRAME CARRIES BOTH THE SOURCE'S DI
      and abs(ref['DC'] / ref['r0'] - STRETCH) < 1e-12  # and the slice offers r_0, not D_C
      and sp.simplify(_Ric_lay[0, 0]) == 0              # and the epoch surface is not an S^3
      and zm(ve_rec) < 1.0)                             # and the chart's photons are not these photons
+# ⌗ RE-POINTED r7103 (66, the gate, same cause as section (iv)'s check above): this one asserted the
+#   presence of the phrase *"flat distances and a closed $S^3$ of comoving worldlines coexist"*, which the
+#   gate's correction removed.  ** The phrase was a PROXY and the claim never needed it: ** what the claim
+#   says is that the licensing moved and no number did.  *Re-pointed onto the paper's own statement of the
+#   licensing position, which is what the claim is about, and onto the stretch, which is the number.*
 gate("⇒ AND WHAT IT DOES TO `r7100`: it does not move the conclusion, it moves the LICENSING -- "
      "`j_ell(k_L D_C)` is neither confirmed nor contradicted here, and its licence remains "
      "`sec:flatlcdm`'s exact recovery of flat $\\Lambda$CDM, an identification with a named content",
-     "flat distances and a closed $S^3$ of comoving worldlines coexist" in body15
+     "the kernel's form stands on an expansion and its distance stands on an identification" in body15
      and abs(STRETCH - 2.76) < 0.03)
 
 # ================================================== H. the smaller item
