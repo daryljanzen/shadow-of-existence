@@ -48,6 +48,7 @@ longest run, and that all three agree below ell 800 -- which is the convergence 
 """
 import os
 import re
+import subprocess
 import sys
 
 import numpy as np
@@ -191,14 +192,25 @@ print(f"      LMAXL=1300  oneclock  crossings {_o['crossings']}  longest {_o['lo
 gate("⌗ `cc66.73`'s reported crossings 36 -> 30 and longest run 16 -> 18 REPRODUCE exactly on the "
      "`LMAXL=1300` pair it was measured from -- the earlier null was arithmetically right",
      (_b['crossings'], _o['crossings']) == (36, 30) and (_b['longest'], _o['longest']) == (16, 18))
+# ⛔⛭ FIXED AT r7097+cc66.81: THIS READ TWO `.log` FILES, AND `.gitignore` LINE 6 IS `*.log`.
+# *The logs copied beside the banked `.npz` grids were therefore **never in the repository**.  They
+# existed where this was written, so it passed; in CI they do not, and the receipt died here -- after the
+# absolute-path fix had already carried it through three sections, which is how one defect hid a second.*
+#   ⇒ *** AND THE SCOPE CLAIM BELOW WAS WRONG WHILE IT SAID SO: it asserted every number came from a file
+#     tracked in this repository, which was true of the spectra and false of these two logs.  The gate in
+#     section G now CHECKS tracking with `git ls-files` instead of asserting it. ***
+# ⌗ *The reach lines are banked verbatim in `r7095_directions/truncation_reach.txt`, a `.txt` and so not
+# ignored, which is the corpus's own idiom for a banked log.  The grids keep their `__SWITCHES__` stamps.*
+_REACHFILE = os.path.join(BW, 'r7095_directions', 'truncation_reach.txt')
+_rtxt = open(_REACHFILE, errors='replace').read()
 _reach = {}
-for nm, p in (('1300', os.path.join(L1300, 'cr_before.log')),
-              ('2000', os.path.join(LICENSED, 'cr_base.log'))):
-    _m = re.search(r'k_max = (\d+)/D_M against a reported l_max = (\d+) -> ratio ([\d.]+)',
-                   open(p, errors='replace').read())
+for nm, tag in (('1300', 'lmaxl1300/cr_before'), ('2000', 'grid_licensed/cr_base')):
+    _blk = _rtxt.split(f'== r7095_directions/{tag}')[1]
+    _m = re.search(r'k_max = (\d+)/D_M against a reported l_max = (\d+) -> ratio ([\d.]+)', _blk)
+    assert _m, f"the banked reach line for {tag} is not in {_REACHFILE}"
     _reach[nm] = (int(_m.group(1)), int(_m.group(2)), float(_m.group(3)))
     print(f"      LMAXL={nm}: k_max = {_reach[nm][0]}/D_M, reported l_max = {_reach[nm][1]}, "
-          f"ratio {_reach[nm][2]}")
+          f"ratio {_reach[nm][2]}   [banked verbatim in truncation_reach.txt]")
 gate("⛔ and the reason is the ceiling and not the arithmetic: both runs hold k_max = 2 l_max / D_M, "
      "so reading to ell 1040 is 80 per cent of the `LMAXL=1300` run's own reported ceiling against "
      "52 per cent of the `LMAXL=2000` run's",
@@ -289,8 +301,36 @@ gate("⌗ THE CONSISTENCY CHECK: the CONTROL's coefficient is unchanged across a
 # =====================================================================================
 head("G.  ⚠ THE SCOPE, AND WHAT THIS DOES NOT LICENSE")
 
-gate("no parameter is refitted and no onset pinned here: every spectrum is read from a banked file "
-     "tracked in this repository, and the three grids' own `switches` stamps are quoted above",
+# ⛭⛭ THIS GATE NOW CHECKS WHAT IT CLAIMS.  *It used to assert that every input was tracked in the
+# repository without asking git, and that claim was FALSE for two `.log` files while the gate passed --
+# `.gitignore` excludes `*.log`.  **A scope claim about provenance that does not consult the thing that
+# decides provenance is the defect this corpus keeps finding, and it was in my own scope section.***
+_INPUTS = [os.path.join(g, f'{a}_base.npz')
+           for g in (BANKED, LICENSED, ONECLOCK) for a in ('lcdm', 'cr')] + [
+    os.path.join(L1300, 'cr_before.npz'), os.path.join(L1300, 'cr_oneclock.npz'), _REACHFILE]
+# ⌗ *And it degrades honestly rather than brittlely: inside a git checkout it asks about TRACKING,
+# which is the question that matters and the one that would have caught the `.log` files.  Unpacked
+# outside a checkout there is no tracking to ask about, so it falls back to EXISTENCE and SAYS which
+# question it answered -- a gate that cannot run should report that, not fail or pretend.*
+_isrepo = subprocess.run(['git', 'rev-parse', '--is-inside-work-tree'],
+                         cwd=ROOT, capture_output=True, text=True).stdout.strip() == 'true'
+if _isrepo:
+    _t = subprocess.run(['git', 'ls-files', '--error-unmatch'] + _INPUTS,
+                        cwd=ROOT, capture_output=True, text=True)
+    _missing = [os.path.relpath(p, ROOT) for p in _INPUTS
+                if os.path.relpath(p, ROOT) not in _t.stdout.split('\n')]
+    print(f"      provenance asked of `git ls-files`: {len(_INPUTS)} input(s), "
+          f"{len(_missing)} not tracked{'  ' + str(_missing) if _missing else ''}")
+    gate("⛭ EVERY FILE THIS RECEIPT READS IS TRACKED IN THE REPOSITORY, asked of `git ls-files` "
+         "rather than asserted -- so it cannot pass here on a file absent from CI's checkout",
+         _t.returncode == 0 and not _missing)
+else:
+    print("      ⌗ not inside a git checkout, so TRACKING cannot be asked; existence checked instead")
+    gate("⌗ every file this receipt reads is present (tracking not askable outside a checkout, and "
+         "that is reported rather than passed over)",
+         all(os.path.exists(p) for p in _INPUTS))
+gate("no parameter is refitted and no onset pinned here, and the three grids' own `switches` stamps "
+     "are quoted above",
      all('__SWITCHES__' in _sw[k] for k in _sw))
 gate("⛔ and `LEAFGEOM=1` is NOT reinstated by this receipt -- `r7095`'s ruling is the gate's and it "
      "stands.  What is reported is a CONFLICT between the rule's configuration and the sky, for the "

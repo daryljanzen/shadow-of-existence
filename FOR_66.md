@@ -5350,6 +5350,32 @@ PINNED = {'systematic uncertainty': 1}
 
 ---
 
+## ⛔⛭ `cc66.81` — **THE PATH FIX UNCOVERED A SECOND CAUSE: THE LOGS I SAID I BANKED WERE NEVER IN THE REPOSITORY, AND THE GATE THAT CLAIMED THEY WERE DID NOT ASK GIT.**
+
+*`cc66.80` carried the receipt through three sections in CI and then it died again. **One defect was hiding the next**, and the second one is worse than the first because a gate of mine was asserting the thing that was false.*
+
+### WHAT THE SECOND CAUSE WAS
+
+***`.gitignore` line 6 is `*.log`.*** *So the `.log` files I copied beside the banked `.npz` grids were never committed. The grids were tracked all along; the logs never were. The receipt reads two of them for each run's own reported truncation ceiling — the `k_max = 2\,\ell_{\max}/D_M` line that the whole convergence finding rests on — and those exist here and not in CI.*
+
+⇒ *The four reach lines are banked verbatim in `r7095_directions/truncation_reach.txt` now, a `.txt` and so not ignored, which is the corpus's own idiom for a banked log.*
+
+### ⛔⛔ AND THE PART I WOULD RATHER STATE PLAINLY: MY OWN SCOPE CLAIM WAS FALSE WHILE IT PASSED
+
+*The receipt's section G asserted **"every spectrum is read from a banked file tracked in this repository"** — and passed, because the gate checked the grids' `switches` stamps and never asked git anything. **True of the spectra, false of the two logs, and the gate could not tell.***
+
+⇒ ***It now runs `git ls-files --error-unmatch` over all nine inputs and fails if any is untracked.*** *Outside a checkout there is no tracking to ask about, so it falls back to existence and says which question it answered — a gate that cannot run should report that, not fail and not pretend.* ⌗ *This is the defect this corpus keeps finding, and it was in my own scope section: **a provenance claim that does not consult the thing that decides provenance.***
+
+### ✔ HOW BOTH ARE VERIFIED NOW, AND THIS IS THE PART WORTH KEEPING
+
+*I stopped trusting a local run. **Both new receipts are verified in a tree materialised from the git INDEX ALONE** — `git checkout-index -a -f --prefix=...` into a separate root — **and run from the receipt's own directory, which is exactly what CI gives them.** The logs are absent there, as in CI. `cc66.78` $23/23$, `cc66.79` $13/13$.*
+
+⌗ *Three defects of one shape in a row, each hiding the next: an absolute path to one machine; files excluded by `.gitignore`; and a claim about provenance that asked nothing. **The lesson is the test and not the three fixes** — a receipt is only verified when it has run from a tree built from the index alone, and I had never done that before today.*
+
+⌗ *That test also caught a fourth, before it ever reached CI: my new tracking gate referenced a variable from the other receipt and died on a `NameError`. It would have been a third red push.*
+
+---
+
 ## ⛔ `cc66.80` — **MY OWN RECEIPT WENT RED IN CI WHILE PASSING HERE, AND THE CAUSE WAS AN ABSOLUTE PATH TO THIS CONTAINER IN A FILE OF MINE. FIXED, AND THE PATTERN IS ROUTED.**
 
 *A fourth instance of the shape you named — **a change moves and its readers have to follow** — except the thing that moved was the machine.*

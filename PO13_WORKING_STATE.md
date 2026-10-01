@@ -6629,3 +6629,14 @@ Two findings beyond the one file:
 
 - **The pattern is systemic but latent.** Roughly forty drivers and launchers under `computations/beyond_the_wall/` hold the same absolute root, including `refit_grid185/fit.py`, `PO13_score_likelihood.py`, `r6893_directions/bank.py` and most `launch.sh` / `pass*.sh`. Nothing registered reads them, so CI never runs them — the failure appears the moment a receipt invokes one. Fixed here only; the class is routed to the gate, where a lint for an absolute container path in a tracked file would close it once.
 - **The assertion was its own defect.** An assertion about a subprocess that does not carry that subprocess's stderr turns a one-line ImportError into a mystery. It now reports exit code, stderr and stdout.
+
+## cc66.81 — the banked logs were never in the repository, and the scope gate that claimed otherwise now asks git
+
+The `shape.py` path fix (`cc66.80`) carried `cc66.78`'s receipt through three sections in CI and then it died again. Second cause, hidden behind the first: **`.gitignore` line 6 is `*.log`**, so the `.log` files copied beside the banked `.npz` grids were never committed. The receipt read two of them for each run's reported truncation ceiling — present here, absent in CI.
+
+- The four `projection reach:` lines are now banked verbatim in `computations/beyond_the_wall/r7095_directions/truncation_reach.txt`, a `.txt` and so not ignored — the corpus's own idiom for a banked log. The `.npz` grids were tracked all along and keep their `__SWITCHES__` stamps.
+- **And the receipt's own scope claim was false while it passed.** It asserted every number came from a file tracked in the repository without asking git: true of the spectra, false of those two logs. That gate now runs `git ls-files --error-unmatch` over all nine inputs and fails if any is untracked. Outside a checkout there is no tracking to ask about, so it falls back to existence and says which question it answered rather than failing or pretending.
+
+Verified by materialising the git index alone into a separate root (`git checkout-index --prefix`) and running both new receipts from the receipt's own directory — which is exactly what CI gives them. `cc66.78` 23/23, `cc66.79` 13/13.
+
+⌗ Three defects of one shape in a row, each hiding the next: an absolute path to this container; files excluded by `.gitignore`; and a provenance claim that did not consult the thing deciding provenance. The lesson worth keeping is the test, not the three fixes — **a receipt is only verified when it is run from a tree built from the index alone.**
