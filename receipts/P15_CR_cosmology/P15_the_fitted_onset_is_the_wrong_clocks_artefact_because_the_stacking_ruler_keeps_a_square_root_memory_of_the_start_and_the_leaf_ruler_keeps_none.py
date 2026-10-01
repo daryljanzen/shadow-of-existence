@@ -247,12 +247,21 @@ gate("✔ `LEAFPERT` -- the perturbation sector on the leaf -- DEFAULTS ON, whic
 #   objects: it sets the rate the geometry is built on AND the rate the ionisation history is solved on.
 #   The rule assigns `D_M` the stacking rate and recombination the leaf's, so no setting of one switch
 #   satisfies both -- which is a sharper statement about the instrument than either original check.*
-gate("⛔ the ionisation history's rate is NOT INDEPENDENTLY ASSIGNABLE -- it is handed whatever rate "
-     "the geometry grid is built on, so it cannot be put on the leaf while the geometry stays on the "
-     "stacking rate, which is what the rate rule requires of the pair",
-     re.search(r"xe_history\(lambda z: Hgeom\(1 / \(1 \+ z\)\)", src) is not None
-     and not re.search(r"xe_history\(lambda z: Hleaf", src)
-     and "Hgeom = Hleaf if LEAFGEOM else Hphys" in src)
+# ⛭⛭ ** THIS GATE IS RE-POINTED BECAUSE THE DEFECT IT NAMED HAS BEEN FIXED, which is the register's
+# own standing form met for the second time on this receipt. **  It read: *the ionisation history's
+# rate is NOT independently assignable -- it is handed whatever rate the geometry grid is built on, so
+# it cannot be put on the leaf while the geometry stays on the stacking rate.*  That was true when it
+# was written and was reported as a knob to SPLIT rather than a value to change; `cc66` split it at
+# `r7097` -- `LEAFREC`, recombination's own rate, defaulting to the leaf.
+#   ⇒ ** So the gate now asserts the INVARIANT the ruling needs -- that the chemistry has a rate of
+#   its own and that the default is the leaf -- and the ruling itself is untouched. **
+gate("⛭⛭ the ionisation history's rate is INDEPENDENTLY ASSIGNABLE and DEFAULTS TO THE LEAF: `LEAFREC` "
+     "splits recombination's rate out of the geometry's, which is exactly what this receipt asked for "
+     "when it reported the pair as inexpressible -- so the ruling is implemented and the gate asserts "
+     "that rather than the absence it first found",
+     "LEAFREC = os.environ.get('LEAFREC', '1') == '1'" in src
+     and "Hrec = Hleaf if LEAFREC else Hgeom" in src
+     and re.search(r"xe_history\(lambda z: Hrec\(1 / \(1 \+ z\)\)", src) is not None)
 gate("✔ conformal time, and so `chi` and `D_M`, are read off ONE grid built from a single rate "
      "variable -- `Hgeom`, which is `Hphys` at the default and the rule's assignment for a separation "
      "read across leaves",
