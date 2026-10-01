@@ -1,20 +1,4 @@
 {
- "claude/shadow-of-existence-setup-5tjf0b": {
-  "tolerance": {
-   "receipts/P15_CR_cosmology/P15_the_free_streaming_knob_is_common_to_both_arms_and_the_switch_sweep_finds_no_further_shadow.py": {
-    "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/36872337430",
-    "since": "439d736ce5ca7d395272a6217e48b6b0f2835fe0"
-   },
-   "receipts/P15_CR_cosmology/P15_the_likelihood_pair_is_another_instruments_and_the_crossing_run_needed_a_missing_knob.py": {
-    "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/36872337430",
-    "since": "439d736ce5ca7d395272a6217e48b6b0f2835fe0"
-   },
-   "receipts/P15_CR_cosmology/P15_the_visibilitys_clock_is_the_one_the_kernel_reads_and_the_comb_votes_against_the_alternative.py": {
-    "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/36872337430",
-    "since": "439d736ce5ca7d395272a6217e48b6b0f2835fe0"
-   }
-  }
- },
  "claude/shadow-of-existence-setup-6awafl": {
   "suite": {
    "receipts/L259_the_distance_from_the_present/D1_a_check_pinned_to_a_distance_from_the_present_is_pinned_to_the_present.py": {
