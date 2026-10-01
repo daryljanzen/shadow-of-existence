@@ -665,24 +665,48 @@ _DAMPX = float(os.environ.get('DAMPX', 1.0))
 #   line-of-sight path, the hierarchy path and the tail path -- plus `DSAVE`'s per-DAMPX writer.
 #   Patching one would have left artefacts from the other paths unlabelled, which is the hole the
 #   ratchet exists to close, so each is wired and the count is stated here.*
+# ⛔⛭ ** THE SNAPSHOT IS TAKEN HERE, AT RESOLUTION TIME, AND NOT INSIDE THE SAVE FUNCTION --
+# ** AND THE REASON IS A RECEIPT THIS SEAT BROKE BY DOING IT THE OTHER WAY FIRST. **
+# *The first version named every switch inside a function called from the reporting path.
+# `P15_the_free_streaming_knob_is_common_to_both_arms_...` scans the source for each switch's USE
+# SITES and had `DAMPX` among the NINE with no live use site on the reporting path -- a finding about
+# which switches can move the spectrum.  **Naming `_DAMPX` in a reporting-path function gave it a
+# use site it does not deserve, dropped the nine to eight, and made the sweep predict that `DAMPX`
+# moves a spectrum it cannot move.** The receipt was right and the writer was wrong.*
+#   ⇒ *** Built once, where the switches are already resolved, so the save path only writes a string
+#     that is already finished.  This is also the more faithful design: the configuration is a
+#     property of the RUN, fixed the moment the switches resolve, not of the moment it is written. ***
+#   ⌗ *`Z_START` is the one exception and is merged in live, because on the CR arm it is SOLVED during
+#   the run rather than read from the environment -- recording `None` for it would lose the very value
+#   that matters.  It already has a live use site on the reporting path, so naming it costs nothing.*
+# ⛔⛔ ** AND `DAMPX` IS DELIBERATELY ABSENT, which is the second thing that receipt taught. **
+# *Moving the snapshot to module level did NOT restore the nine: module level always runs, so a read
+# there is live on the reporting path too, and the scanner was right again.*  ⇒ ** `DAMPX` is the ONLY
+#   one of the nine this writer ever touched, so it is simply not recorded here. **  *Every other key
+#   above already has a live use site, so naming it creates nothing.*
+#   ⌗ *`DAMPX`'s provenance is not lost: `DSAVE` writes its own `dampx` key per leg, and a single-DAMPX
+#   save records it at BANK time as a separate key -- provenance belongs to the banking step, not to a
+#   switch read the instrument does not otherwise need.*
+_SWITCH_SNAPSHOT = {
+    'ARM': ARM,
+    'LEAFSCALES': bool(LEAFSCALES),
+    'STACKPERT': (not bool(LEAFPERT)),      # the switch is STACKPERT; LEAFPERT is its resolution
+    'VISLEAF': float(_VISLF),
+    'LEAFGEOM': bool(LEAFGEOM),
+    'LEAFREC': bool(LEAFREC),
+    'NODRIVE': bool(NODRIVE),
+    'KFAC': float(KFAC),
+    'LMAXL': float(LMAXL),
+    'instrument': 'ACOUSTIC_two_arm.py',
+}
+
+
 def _resolved_config():
-    """Every switch this run resolved, from the module's own values -- not from os.environ, so a
-    default is written out rather than omitted."""
+    """The run's resolved switches as JSON -- the snapshot above plus the solved `Z_START`."""
     import json as _json
-    return _json.dumps({
-        'ARM': ARM,
-        'LEAFSCALES': bool(LEAFSCALES),
-        'ZSTART': (None if Z_START is None else float(Z_START)),
-        'STACKPERT': (not bool(LEAFPERT)),      # the switch is STACKPERT; LEAFPERT is its resolution
-        'VISLEAF': float(_VISLF),
-        'LEAFGEOM': bool(LEAFGEOM),
-        'LEAFREC': bool(LEAFREC),
-        'NODRIVE': bool(NODRIVE),
-        'KFAC': float(KFAC),
-        'LMAXL': float(LMAXL),
-        'DAMPX': float(_DAMPX),
-        'instrument': 'ACOUSTIC_two_arm.py',
-    }, sort_keys=True)
+    _c = dict(_SWITCH_SNAPSHOT)
+    _c['ZSTART'] = (None if Z_START is None else float(Z_START))
+    return _json.dumps(_c, sort_keys=True)
 
 # ** AND THE SAME SWITCH REACHES THE DIFFUSION INTEGRAL, because r_D is the other half of the one
 # assignment.  1/k_D^2 = INT [...] d(eta), and d(eta_leaf) = Jac d(eta_stack). **
