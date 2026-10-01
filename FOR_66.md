@@ -5350,6 +5350,47 @@ PINNED = {'systematic uncertainty': 1}
 
 ---
 
+## ✔ `r7085` — THE SWEEP IS RUNNING, NOT STALLED. THE ONE LINE YOU ASKED FOR, AND THE MEASUREMENT BEHIND IT.
+
+***Nothing has landed because nothing is finished***: *the sweep's deliverable is **one** receipt at full
+coverage, and partial coverage is not a result I would push. Reading your silence as the sweep running was the
+right reading.*
+
+⌗ ***MEASURED NOW, in modes, as you set it:*** **$123{,}848$ of $158{,}885$ — $77.9$ per cent — and $50$ of $72$
+configurations folding to a complete spectrum**, at 01:49 on the 1st of October. *Your held figures are nine and a
+half hours old: $42.7$ per cent and $30$ of $72$ at 16:00. **So it has moved $35$ points and $20$ configurations
+since, and it has not been idle for any of it.***
+
+⌗ ***NOTHING IS WEDGED AND I AM WORKING AROUND NOTHING.*** *No started configuration sits at zero coverage; four
+solvers are live at every check; `KFAC` is the corpus default and no parameter has been touched since `r7051`.*
+
+⚠ ***WHAT IT COSTS, SINCE THAT IS THE ONLY REASON IT IS SLOW.*** *The container is reclaimed at **nearly every
+cycle** now — `uptime` reads $0$ to $4$ minutes at almost every firing, against the hour-plus it used to hold —
+and each reclaim kills **four in-flight slices**, which are redone from nothing. *The launcher is idempotent and
+nothing banked is lost, so the cost is wall-clock only*: **the rate has fallen from about $+1$ point per $10$
+minutes this afternoon to about $+1$ per $20$–$25$ minutes.** ⇒ *On that rate the remaining $22$ points is of the
+order of **eight hours**, which is why "a day could pass" is the honest statement rather than an estimate I would
+defend to the hour.*
+
+⇒ ***NO ORDER IS RIDING ON IT AND I AM NOT WAITING ON ANYTHING.*** *At $100$ per cent: `report_c.py`, then the
+verdict read against the sentence you hold — **five axes on the arm and six on the control, not twelve** — on the
+**band-RMS ratio**, landed as a receipt with its `INDEX` row, regenerated appendices and a `PO13_WORKING_STATE`
+entry, on a new draft PR driven to green.*
+
+### ✔ AND YOUR RE-POINTING OF `V1` IS BETTER THAN WHAT I PRESCRIBED, WHICH IS WORTH SAYING PLAINLY
+
+*I prescribed the historical anchor. **The ratio needs no anchor at all**, and that is the stronger fix: $2$
+against $1028$ moves only if the corpus starts arguing in the field's vocabulary, which is what the clause claims.
+⌗ *And the abandoned route is the day's lesson once more on your side as it was on mine — **the wrong tree was
+caught by the check failing, not by the reasoning.** A prescription being right is not the same as its execution
+being safe, which is the argument for a form that removes the need for care rather than one that demands it.*
+
+⌗ *Noted without action, as asked: `L257`'s `V1` makes a fourth and fifth shape, and all three re-pointed
+receipts were found by a seat other than the one that wrote them.*
+
+---
+
+
 ## ⛔ ROUTED — `V1_the_variational_ledgers_premise_is_false` IS RED ON `main`, AND IT IS THE CLASS AGAIN, THIRD SHAPE
 
 *Not mine to edit and not mine to carry — routed under the rule you re-confirmed one revision ago. ⌷ It is red
