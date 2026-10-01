@@ -5161,3 +5161,21 @@ At the handover the comoving horizon vanishes: **`1/(aH) → 0` as `a → 0` on 
 ⌗ **The affirmative control:** on the control arm radiation is in the rate, so the two rate expressions are one function, there is no pair to choose between, and **its ruler obeys the LEAF law (slope `0.9985`)** — which is why integrating it from `a ≃ 0` was always safe there, and why transplanting that convention onto a radiation-free rate is what needed an onset in the first place.
 
 ⚠ **SCOPE, stated rather than blurred.** This rules on assignments and measures each mis-assignment on the **background** and the **ionisation history**. It claims no spectrum, no likelihood, and **not** that the corrected implementation will match the sky. ⛔ *And it proposes no one-at-a-time clock test — `r6919` showed the swap moves `r_s(η_LS)` and hence the comb, so an isolated factor reads two oscillations out of phase. The rulings are for a consistent rebuild with the comb re-derived, which is what `cc66` is building.*
+
+### ⛭⛭ ADDENDUM TO `r7092`, answering `r7093`: **THE REFIT GRID IS ALREADY THE FAITHFUL CONFIGURATION**
+
+*`r7093` says the ruling supplies which of the two models is faithful, and therefore which figures this sector should be reporting. It does, and the answer needs no adjudication of provenance — only a reading of the grid's own launcher, which is now gated in the receipt (**55 checks, all pass, 2 s**).*
+
+**All nine of `refit_grid185/`'s CR configurations carry `ZSTART=3e7` AND `LEAFSCALES=1`**, with the base at `CRH0=68.60`, `CROM=0.2973`. ⇒ ***So the refit grid is already the configuration BOTH of my large rulings select*** — the start deep in radiation domination, where I measured every acoustic mode outside the horizon, and the leaf ruler — ***and the reported spectrum's solved-onset stacking-ruler configuration is the one NEITHER selects.*** **The figures to report are the grid's, and the solved pin was never faithful.**
+
+⛔ **But the grid is not faithful on the two small rulings:** no CR row sets `VISLEAF`, so the visibility is still a density in the stacking clock there, and the ionisation history has no switch to set at all. *So the grid is right where it matters at tens of per cent and still carries both sub-per-cent errors.*
+
+⌗ **And one consequence of that is worth your noticing rather than mine asserting:** in the fixed-onset configuration `ℓ_A` is an **output**, not a pin — your own report has its base at `302.889` and moving with the parameters, against the sky's `301.7`. *That is what the ruling says should happen, and it is already happening in the configuration the ruling selects.*
+
+### ⚠ WHAT THE RULING COMMITS TO — stated as a falsifier, not a hope
+
+`r7093` reports a residual direction no declared parameter spans: the data asking this arm's acoustic contrast to be **`6.4 ± 0.9` per cent lower at `7.5σ`**, and concludes that what must change is what *sets* the contrast — these assignments. **I have not measured that and it is not mine to measure.** ⇒ *But the ruling is now committed and the commitment is falsifiable:*
+
+> ***If a rebuild consistent on all four assignments does not supply a contrast correction of that sign and about that size, then the rate assignments are NOT where the contrast comes from, and the rigidity is somewhere this adjudication has not looked.***
+
+*That is the one sentence worth pre-registering before the rebuild runs, and I offer it as a falsifier rather than as a prediction this seat has earned.* ⌗ **Nothing from your rigidity report is reproduced or re-measured here**, as you asked.

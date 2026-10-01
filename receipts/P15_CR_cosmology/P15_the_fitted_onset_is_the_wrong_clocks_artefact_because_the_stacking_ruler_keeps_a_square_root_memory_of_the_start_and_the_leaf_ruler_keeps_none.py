@@ -117,6 +117,25 @@ reach.  ⛔ *And it proposes no one-at-a-time clock test: `r6919` showed the swa
 and hence the comb, so a band regression on an isolated factor reads two oscillations out of phase.
 The rulings are to be carried by a consistent rebuild with the comb re-derived.*
 
+⛭⛭ ** AND THE RULING SETTLES `r7093`'s PROVENANCE QUESTION WITHOUT ADJUDICATING IT. **  `r7093`
+reports from `70` that the refit grid overrides the solved onset, so the reported spectrum and the
+refit grid are two models.  *Reading the grid's own launcher: all nine CR configurations carry
+`ZSTART=3e7` AND `LEAFSCALES=1`, at the background the distance data fix.*  ⇒ *** THE REFIT GRID IS
+ALREADY THE CONFIGURATION BOTH LARGE RULINGS SELECT, and the reported spectrum's solved-onset
+stacking-ruler configuration is the one neither selects.  So the figures to report are the grid's and
+the solved pin was never faithful. ***  ⛔ *The grid is NOT faithful on the two small rulings: no CR
+row sets `VISLEAF`, and the ionisation history has no switch to set.*
+
+⌗ ** WHAT THIS RULING COMMITS TO, STATED AS A FALSIFIER RATHER THAN A HOPE. **  `r7093` reports a
+residual direction no declared parameter spans -- the data asking this arm's acoustic contrast to be
+$6.4\pm0.9$ per cent lower at $7.5\sigma$ -- and concludes that what must change is what SETS the
+contrast, which is these assignments.  *This receipt does not measure that and must not: it is the
+rebuild's.*  ⇒ ** But the ruling is now committed, and the commitment is falsifiable: if a rebuild
+consistent on all four assignments does not supply a contrast correction of that sign and about that
+size, then the rate assignments are NOT where the contrast comes from, and the rigidity is somewhere
+this adjudication has not looked. **  *That is the one sentence worth pre-registering before the
+rebuild runs, and it is offered as such rather than as a prediction this seat has earned.*
+
 ⌗ ** THE AFFIRMATIVE CONTROL. **  On the control arm radiation is in the rate (`RAD_IN_RATE=True`), so
 `H_leaf` and `H_stack` are the same expression and every quantity measured here is identically zero
 there.  *That is reported as a check that these are measurements of the rate difference and not of the
@@ -539,6 +558,36 @@ gate("⛔ and no one-at-a-time clock test is proposed -- `r6919` showed the swap
      "a consistent rebuild with the comb re-derived",
      "a band regression reads two oscillations out of phase" in open(
          os.path.join(ROOT, 'FOR_60.md'), encoding='utf-8').read())
+
+# ===================================================== K. the provenance consequence
+head("K.  ⛭⛭ AND THE RULING SETTLES A PROVENANCE QUESTION: THE REFIT GRID IS ALREADY THE FAITHFUL ONE")
+
+# ** `r7093` reports, from `70`, that the refit grid overrides the solved onset -- so the reported
+# spectrum and the refit grid are two models and this sector quotes figures from both.  The ruling
+# above says which is faithful; this section reads the grid's own launcher to say which that is. **
+LAUNCH = os.path.join(ROOT, 'computations', 'beyond_the_wall', 'refit_grid185', 'launch.sh')
+rows = [ln for ln in open(LAUNCH, encoding='utf-8').read().splitlines() if 'ARM=cr' in ln]
+gate(f"the refit grid carries {len(rows)} CR configurations, and EVERY ONE of them overrides the "
+     "solved onset with `ZSTART=3e7` -- the start deep in radiation domination at which this "
+     "receipt measured every acoustic mode OUTSIDE the horizon",
+     len(rows) == 9 and all('ZSTART=3e7' in ln for ln in rows))
+gate("⛭⛭ AND EVERY ONE OF THEM ALSO SETS `LEAFSCALES=1` -- the leaf ruler.  So the refit grid is "
+     "ALREADY the configuration both of this receipt's two large rulings select, and the reported "
+     "spectrum's solved-onset stacking-ruler configuration is the one neither selects",
+     all('LEAFSCALES=1' in ln for ln in rows))
+gate("⌗ and its BASE row sits at the background the distance data fix (CRH0=68.60, CROM=0.2973) "
+     "rather than at the instrument's own default H0 = 73, with every row setting both explicitly "
+     "because the others are its derivative directions",
+     any('cr_base' in ln and 'CRH0=68.60' in ln and 'CROM=0.2973' in ln for ln in rows)
+     and all('CRH0=' in ln and 'CROM=' in ln for ln in rows))
+gate("⛔ BUT NOT THE TWO SMALL ONES: no CR row sets `VISLEAF`, so the visibility is still a density "
+     "in the stacking clock there, and the ionisation history has no switch to set -- so the grid is "
+     "faithful on the rulings that matter at tens of per cent and still carries both of the "
+     "sub-per-cent ones", not any('VISLEAF' in ln for ln in rows))
+gate("⇒ SO THE RULING ANSWERS `r7093`'s PROVENANCE QUESTION WITHOUT ADJUDICATING IT: the fixed-onset "
+     "leaf-ruler configuration is the faithful one, which is the refit grid's; the figures to report "
+     "are its, and the solved pin was never faithful",
+     all('ZSTART=3e7' in ln and 'LEAFSCALES=1' in ln for ln in rows) and len(rows) == 9)
 
 # --- the pinned assertions: the figures the corpus prints, against what this file computed ---------
 assert abs(lA_l0 - 292.4) < 1.5, f'the leaf ruler must reproduce 292.4, got {lA_l0:.2f}'
