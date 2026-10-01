@@ -29,7 +29,20 @@ import sys
 
 import numpy as np
 
-sys.path.insert(0, '/home/user/shadow-of-existence/computations/planck_tt_likelihood')
+# ⛔⛭ FIXED AT r7097+cc66.80.  ** THIS LINE WAS AN ABSOLUTE PATH TO ONE MACHINE'S FILESYSTEM, and it
+# ** worked for as long as nothing but a hand-run in that container ever read this file. **
+# *`cc66.78` made a REGISTERED RECEIPT invoke `shape.py` as a subprocess, so for the first time it ran on
+# a CI runner, where the checkout is at `/home/runner/work/...`.  The import failed, the process died
+# before printing anything, and the receipt saw "no statistics" with no idea why -- a 0-second red on a
+# tree where the physics was fine.*
+#   ⇒ *Derived from `__file__` now, as the rest of the tree does.  ⚠ **The pattern is NOT unique to this
+#   file** -- roughly forty drivers and launchers under `computations/beyond_the_wall/` carry the same
+#   absolute root, including `refit_grid185/fit.py`.  They are latent rather than broken: nothing
+#   registered reads them, so CI never runs them.  **Fixed here only, and the pattern is routed rather
+#   than swept, because a sweep of forty files is not this revision's subject.***
+_HERE = os.path.dirname(os.path.abspath(__file__))
+_ROOT = os.path.abspath(os.path.join(_HERE, '..', '..', '..'))
+sys.path.insert(0, os.path.join(_ROOT, 'computations', 'planck_tt_likelihood'))
 import chi2_of_spectrum as CS
 
 

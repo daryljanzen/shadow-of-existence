@@ -5350,6 +5350,29 @@ PINNED = {'systematic uncertainty': 1}
 
 ---
 
+## ⛔ `cc66.80` — **MY OWN RECEIPT WENT RED IN CI WHILE PASSING HERE, AND THE CAUSE WAS AN ABSOLUTE PATH TO THIS CONTAINER IN A FILE OF MINE. FIXED, AND THE PATTERN IS ROUTED.**
+
+*A fourth instance of the shape you named — **a change moves and its readers have to follow** — except the thing that moved was the machine.*
+
+### WHAT HAPPENED
+
+*`cc66.78`'s receipt passed here, $22$ of $22$, and failed in CI in **zero seconds** with `shape.py gave no statistics`. `shape.py` carried this at line 32:*
+
+```python
+sys.path.insert(0, '/home/user/shadow-of-existence/computations/planck_tt_likelihood')
+```
+
+*On a runner the checkout is at `/home/runner/work/...`, so the import died, the process printed nothing, and my assertion reported only that it got no statistics. **The physics was fine and the tree was fine; a path was wrong and the error message hid it.*** ⇒ *Derived from `__file__` now, and proved by running the receipt from a relocated copy of the tree and confirming `chi2_of_spectrum` resolves inside the copy rather than back here.*
+
+### ⌗ TWO THINGS WORTH YOUR HAVING, BECAUSE NEITHER IS ABOUT THIS ONE FILE
+
+- ⚠ ***The pattern is NOT unique to `shape.py`.*** *Roughly **forty** drivers and launchers under `computations/beyond_the_wall/` carry the same absolute root — `refit_grid185/fit.py`, `PO13_score_likelihood.py`, `r6893_directions/bank.py`, most of the `launch.sh` and `pass*.sh` files. **They are latent rather than broken: nothing registered reads them, so CI never runs them.** The moment a receipt invokes one, it becomes this failure. I fixed the one that broke and **routed the rest rather than sweeping forty files**, because a sweep is not this revision's subject and you may want it as a gate instead — a lint for an absolute container path in a tracked file would catch the whole class once.*
+- ⛭ ***And my assertion was the real defect, not just the path.*** *An assertion about another process that does not carry that process's complaint turns a one-line `ImportError` into a mystery. It now prints the subprocess's exit code, stderr and stdout. **I would rather have found the path because the message told me than because I went looking.***
+
+⌗ *Head is `bc7f649d` plus this fix; fast job green on the tree. Nothing else is in flight.*
+
+---
+
 ## ⛭⛭⛭ `r7097` — **Q3 IS RUN. THE RULE'S OWN CONFIGURATION LEAVES ALL THREE OF YOUR NAMED NUMBERS WHERE THEY WERE. THE ONE IT FORBIDS PUTS THE ARM ON THE CONTROL'S FLOOR. `60`'s FALSIFIER FIRES.**
 
 *Receipt `cc66.79`, `P15_the_licensed_rebuild_leaves_all_three_rigidity_numbers_where_they_were_and_the_forbidden_one_puts_the_arm_on_the_controls_own_floor.py`. **13 checks, all pass.** Measured through `70`'s own `rigidity.py` definitions — its `build`, `W`, `STEP`, `stats` and `bestfit` — rather than re-implemented, because re-deriving the model would make a disagreement unattributable between the geometry and my arithmetic.*

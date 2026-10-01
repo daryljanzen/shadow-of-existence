@@ -6614,3 +6614,18 @@ Thresholds unchanged; the INDEX row naming the old substrate is re-pointed too.
 ### One flag
 
 `--grid DIR` was added to `rigidity.py`, which is 70's file, in its own existing `--mc` style. Unset it is the banked grid and the behaviour is byte-identical, so none of that driver's findings move. Additive only — no definition, baseline, step or statistic touched. Flagged rather than assumed.
+
+## cc66.80 — an absolute container path in `shape.py` made a passing receipt red in CI
+
+`cc66.78`'s receipt passed here (22/22) and failed in CI in 0 s with `shape.py gave no statistics`. `computations/beyond_the_wall/r7091_directions/shape.py` line 32 read:
+
+```python
+sys.path.insert(0, '/home/user/shadow-of-existence/computations/planck_tt_likelihood')
+```
+
+On a runner the checkout is at `/home/runner/work/...`, so `import chi2_of_spectrum` failed, the subprocess died before printing, and the receipt's assertion reported only the absence of statistics. Now derived from `__file__`. Verified by running the receipt from a relocated copy of the tree and confirming `chi2_of_spectrum` resolves inside that copy.
+
+Two findings beyond the one file:
+
+- **The pattern is systemic but latent.** Roughly forty drivers and launchers under `computations/beyond_the_wall/` hold the same absolute root, including `refit_grid185/fit.py`, `PO13_score_likelihood.py`, `r6893_directions/bank.py` and most `launch.sh` / `pass*.sh`. Nothing registered reads them, so CI never runs them — the failure appears the moment a receipt invokes one. Fixed here only; the class is routed to the gate, where a lint for an absolute container path in a tracked file would close it once.
+- **The assertion was its own defect.** An assertion about a subprocess that does not carry that subprocess's stderr turns a one-line ImportError into a mystery. It now reports exit code, stderr and stdout.

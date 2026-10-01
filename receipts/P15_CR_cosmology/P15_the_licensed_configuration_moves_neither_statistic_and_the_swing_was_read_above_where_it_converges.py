@@ -87,14 +87,22 @@ def shape(npz, lmax):
     """The swing statistics, via `r7091`'s own shape reader run as a subprocess so its definitions
     are not re-implemented here -- the mistake that would make a disagreement unattributable."""
     import subprocess
-    out = subprocess.run([sys.executable, os.path.join(BW, 'r7091_directions', 'shape.py'),
-                          npz, '--lmax', str(lmax), '--tilt'],
-                         capture_output=True, text=True, errors='replace').stdout
+    p = subprocess.run([sys.executable, os.path.join(BW, 'r7091_directions', 'shape.py'),
+                        npz, '--lmax', str(lmax), '--tilt'],
+                       capture_output=True, text=True, errors='replace')
+    out = p.stdout
     c = re.search(r'crossings at ell: (.*)', out)
     runs = re.findall(r'^\s+[+-]\s+(\d+)-(\d+)\s+(\d+)\s+([+-][\d.]+) s', out, re.M)
     ch = re.search(r'chi2/bin = ([\d.]+)', out)
     nb = re.search(r'over (\d+) bins', out)
-    assert c and runs and ch, f"shape.py gave no statistics for {npz} at lmax {lmax}"
+    # ⛭ THE SUBPROCESS'S OWN STDERR IS IN THE MESSAGE, added at `r7097+cc66.80` because its absence is
+    # what made the first failure of this assertion unreadable: `shape.py` carried an absolute path to
+    # one machine's filesystem, so on a CI runner it died before printing and this said only "gave no
+    # statistics".  ** An assertion about another process has to carry that process's complaint. **
+    assert c and runs and ch, (
+        f"shape.py gave no statistics for {npz} at lmax {lmax} -- exit {p.returncode}\n"
+        f"  its stderr: {p.stderr.strip()[-800:] or '(empty)'}\n"
+        f"  its stdout: {out.strip()[-400:] or '(empty)'}")
     lens = [int(r[2]) for r in runs]
     ext = [abs(float(r[3])) for r in runs]
     return dict(crossings=len(c.group(1).split()), longest=max(lens),
