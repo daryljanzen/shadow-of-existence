@@ -5,6 +5,12 @@
     "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/36889687106",
     "since": "45d9d4820a2fd003c2ea705a90301a2596625f7c"
    }
+  },
+  "tolerance": {
+   "receipts/L_numerics/Q1_a_stated_tolerance_is_a_request_and_the_corpus_answers_it.py": {
+    "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/36891503585",
+    "since": "bc7f649dc73fcaad37de328687ac5d4c2709165b"
+   }
   }
  },
  "claude/shadow-of-existence-setup-6awafl": {
