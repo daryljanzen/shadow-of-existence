@@ -5350,6 +5350,106 @@ PINNED = {'systematic uncertainty': 1}
 
 ---
 
+## ⛭⛭⛭ `r7091` — **THE PROJECTION WAS READING RECOMBINATION 72 PER CENT AWAY FROM WHERE THE PLASMA PUTS IT. THE ONE-CLOCK BUILD FIXES THAT. IT DOES NOT FLATTEN THE SWING, AND THAT IS THE HALF I AM PUTTING FIRST.**
+
+*Receipt `cc66.73`, `P15_the_projection_read_recombination_at_the_wrong_conformal_time_and_one_clock_moves_it_72_per_cent.py`. Your frame was right and the defect was there.*
+
+### ⛔ THE DEFECT, AND IT NEEDS NO SPECTRUM TO STATE — THE BACKGROUNDS ALONE GIVE IT
+
+**At the arm's refit best fit, recombination sits at $\eta_{\rm rec} = 485.5$ Mpc on the stacking clock
+and $282.3$ Mpc on the leaf clock — a gap of $41.8$ per cent.** And the number that says what that
+means is **the control's own $\eta_{\rm rec} = 281.8$ Mpc**: ⇒ ***the arm's LEAF reading sits $0.18$ per
+cent from the control's and its STACKING reading $72.3$ per cent away.*** *The same recombination, at
+the same redshift, and a $72$ per cent disagreement about when it happened — carried into the kernel's
+argument $x_0=\eta_0-\eta$ and nowhere else.*
+
+⌗ ***And $D_M$ hides it, which is why it survived.*** $D_M = \eta_0-\eta_{\rm rec}$ moves only
+$\mathbf{-0.50}$ **per cent** ($14017 \to 13947$ Mpc), because $\eta_0$ moves with $\eta_{\rm rec}$ —
+radiation is negligible late, so the clocks agree there. **The gap is $84\times$ the move in $D_M$.**
+*A reader watching $D_M$ calls a $42$ per cent inconsistency a half-per-cent effect, and that is
+exactly what has been happening.*
+
+### ⛭⛭ WHAT I BUILT — `LEAFGEOM`, THE ONE CLOCK ASSIGNMENT THAT HAD NO KNOB
+
+*`LEAFPERT` moved the perturbation dynamics, `LEAFSCALES` the two scales, `PHASEONLY` the oscillator's
+phase. **The time variable itself was reachable by nothing.*** `eg` was built from `Hphys`, and with it
+`a(\eta)`, $\eta_{\rm rec}$, $\eta_0$, $D_M$, `ETA_ON`, `ETA_END`, every spline's abscissa — and the
+kernel's own argument. **`LEAFGEOM=1` builds the grid on `Hleaf`, so with `LEAFSCALES=1` and `LEAFPERT`
+every clock assignment is on the leaf and none is left on the stack.**
+  ⇒ ***The three consequences are asserted by the instrument at run time, not argued:*** `max|Jac-1| =
+  0` **exactly**, `max|Phi2-1| = 0`, and the two sound-horizon accumulators identical to $0$ Mpc. *If
+  any fails the run refuses to report a spectrum — a geometry half-moved is worse than one not moved,
+  because its numbers look readable.*
+  ⌗ ***And it does NOT collapse the arm onto the control***, which I checked before reading anything
+  off it: the arms differ three ways and this touches one. **The arm keeps its own initial data — the
+  handover, $\hat\Theta$ flat in $k$ with a common phase and zero velocities — and its own DISCRETE
+  $k$ ladder.** Those are what make it the CR arm, and neither is a rate.
+  ⌗ **On the control it is a provable no-op** ($\texttt{Hleaf}$ and $\texttt{Hphys}$ are
+  character-identical there) **and I checked it bit-level on the reporting path, not from reading the
+  source.** Default off and byte-identical; the arm's default output is bit-identical too.
+
+### ⛭ THE COMB AS AN **OUTPUT** AND NOT A PINNED INPUT — ONSET HELD, NOTHING FITTED TO IT
+
+*Both runs hold `ZSTART=3e7`, so the one free time origin is not spent dragging the comb anywhere and
+the comb comes out rather than going in.*
+  ⌗ ***And a note on the wording, because it is a gate finding and it is the order's own phrase:*** *`r7091`
+  says "report the comb as a prediction", and **that exact phrase is registered as WITHDRAWN** —
+  `the-full-lap-floquet-apparatus`, struck at `c54.149` and not reinstated at `c54.150`. `check_withdrawn`
+  fired on it. **I mean something the retired apparatus did not: the comb as an OUTPUT of a held onset
+  rather than a pinned input**, so I have said that instead of borrowing the phrase. Worth knowing on
+  your side before the sentence reaches prose.* **$\ell_1/\ell_A$ goes $0.7290 \to 0.7326$ against the sky's $0.7312$ — from
+$0.0022$ out to $0.0014$ out, a factor $1.6$ closer, with nothing fitted to it.** $\ell_A$: $301.8 \to
+300.3$. Peaks $220, 540, 812, 1132 \to 220, 532, 812, 1124$ against the sky's $220.6, 538.1, 809.8$.
+  ⛔ ***And the heights move the other way: P1/P2 $2.142 \to 2.080$ and P1/P3 $2.173 \to 2.094$ against
+  the sky's $2.217$ and $2.277$.*** *Reported together because they disagree, and the disagreement is
+  the information.*
+
+### ⛔⛔ Q2 — THE RESIDUAL'S SHAPE, AND IT DOES NOT FLATTEN
+
+*Your rule, fixed before I read anything: a $\chi^2$ that improves while the swing stays is not the
+fix; a swing that flattens is the fix even if $\chi^2$ moves little. I built the reader to that rule —
+the per-bin residual in $\sigma$, its runs of one sign, the crossings, the excursions — and the
+verdict is the reader's, not mine.*
+
+| scored to $\ell\le1040$, 104 bins | before | after |
+|---|---|---|
+| $\chi^2$, amplitude only | $266.7$ | $274.8$ (**$+3.0\%$**) |
+| longest run of one sign | $16$ bins | **$35$ bins** |
+| $\chi^2$, **+ a tilt** | $265.5$ | $\mathbf{215.0}$ (**$-19.0\%$**) |
+| worst excursion, + tilt | $6.10\sigma$ | $\mathbf{4.12\sigma}$ |
+| rms residual, + tilt | $1.59\sigma$ | $1.42\sigma$ |
+| **crossings**, + tilt | $36$ | $\mathbf{30}$ |
+| **longest run**, + tilt | $16$ bins | $\mathbf{18}$ bins |
+
+⌗ ***The fixed-parameter read is a TILT ARTEFACT and I nearly filed it as the result.*** At the old
+parameters the residual runs positive unbroken from $\ell=100$ to $414$ — one $35$-bin excursion — and
+$\chi^2$ worsens. **But the geometry moves $D_M$ and the visibility's width in $\eta$, so the best-fit
+parameters move with it, and those are the OLD geometry's.** Allow the two directions a refit moves
+first — an amplitude and a power-law tilt — and $\chi^2$ falls $19$ per cent, the worst excursion by a
+third, the rms by a tenth. *The $35$-bin run was $n_s$, not shape. The tilt the after wants is
+$-0.0324$ against the before's $-0.0046$, which is a prediction for the refit.*
+
+⇒ ***AND THE SWING STILL DOES NOT FLATTEN. Crossings $36\to30$ and the longest run $16\to18$ — fewer
+crossings and longer runs, which is the wrong direction on both.*** **By your own rule this is not the
+fix.** *So: the implementation defect was real, it is large, it is removed and gated — and the
+alternating residual you are reading off the plot survives it. The clocks are not the swing.*
+
+⚠ ***What this does not buy, stated before you gate it.*** The parameters are **not** refitted under
+the new geometry, so the $-19$ per cent is a two-direction marginalisation and not a refit — n_s is not
+a pure tilt in $\ell$ and two directions are not four. **The honest next question is a real refit on the
+one-clock geometry, and that is a grid of runs, not a reading.** *It is not ordered and I have not
+started it; say if you want it and `70`'s rigidity audit may decide whether it is worth the solver time
+at all.*
+
+⚠ ***And one thing found in passing that is not mine.*** The refit's own **verified minimum**
+`verify_cr.npz` is no longer reproducible from the tree — a fresh run at its settings differs by
+$\max|\Delta D_\ell| = 7.14\times10^{-3}$. **The PRE-patch code differs from it by the same amount to
+every digit, so the drift predates this build** — *checked that way round on purpose, because a
+difference found while holding a patch is the patch's until it is shown not to be.* ⇒ Both sides of
+every comparison above are same-revision runs and the banked spectrum is used for neither.
+
+---
+
 ## ✔ `r7041` — **THE SWEEP IS FINISHED AND IT DOES NOT MOVE. AND ELEVEN OF THE TWELVE READINGS ARE STILL NOT *CONVERGED*, WHICH IS THE HALF I AM PUTTING FIRST.**
 
 **Full coverage at 10:53 on the 1st of October: $158{,}885$ of $158{,}885$ modes, $66$ of $72$ configurations
