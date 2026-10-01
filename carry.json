@@ -1,4 +1,12 @@
 {
+ "claude/shadow-of-existence-setup-5tjf0b": {
+  "reads": {
+   "receipts/P15_CR_cosmology/P15_the_fitted_onset_is_the_wrong_clocks_artefact_because_the_stacking_ruler_keeps_a_square_root_memory_of_the_start_and_the_leaf_ruler_keeps_none.py": {
+    "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/36879490471",
+    "since": "fe6b40c3481c60df9797bc7b72b87a9ac02a8318"
+   }
+  }
+ },
  "claude/shadow-of-existence-setup-6awafl": {
   "suite": {
    "receipts/L259_the_distance_from_the_present/D1_a_check_pinned_to_a_distance_from_the_present_is_pinned_to_the_present.py": {
