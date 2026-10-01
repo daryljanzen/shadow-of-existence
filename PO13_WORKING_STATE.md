@@ -6576,3 +6576,41 @@ Below ell ≈ 800 all three are indistinguishable, so a reading taken there deci
 
 - `LEAFREC=1` moved the spectrum (max rel 6.5%) and left `l_A`, `D_M` and `r_s` **bit-identical** to the banked run — `r6893+cc66.37`'s diagnostics finding confirmed again on a switch built after it.
 - Its default being ON put three instrument-running receipts in conflict with numbers banked before the split. `C62`, `C63` and `P15_the_one_fitted_number_moves_the_scale_and_not_the_peak` now pin `LEAFREC=0` for the leg whose target predates it, with the reason in each file. `C62` measures the move rather than discarding it: recombination on its own rate takes the arm's diffusion scale from +7.55% to +8.37%, and the control's `r_D` is asserted bit-identical across the switch. Lifting those pins means re-measuring numbers `P15` quotes — routed to the gate, not done here.
+
+## cc66.79 — `r7097` Q3: the licensed rebuild leaves all three rigidity numbers where they were; the forbidden one reaches the control's floor
+
+**Receipt** `receipts/P15_CR_cosmology/P15_the_licensed_rebuild_leaves_all_three_rigidity_numbers_where_they_were_and_the_forbidden_one_puts_the_arm_on_the_controls_own_floor.py` — 13 checks, all pass. Measured through 70's own `rigidity.py` definitions (`build`, `W`, `STEP`, `stats`, `bestfit`), not re-implemented.
+
+`r7097` named the three figures before the grid existed. On the banked grid they return exactly: unreachable chi2 278.8 on the arm against the control's 186.0 at n−5=180, crossings 54 against noise's 88±10.
+
+| grid | arm | unreachable chi2 | crossings | longest run |
+|---|---|---|---|---|
+| all three | lcdm | 186.006575 | 87 | 8 |
+| banked `refit_grid185` | cr | 278.795150 | 54 | 33 |
+| **licensed** `LEAFREC=1`, `LEAFGEOM=0` | cr | **278.788424** | **54** | **33** |
+| forbidden `LEAFGEOM=1` | cr | **184.988550** | **91** | **8** |
+
+- **The licensed rebuild closes 0.007% of the 92.8 chi2 gap** and moves neither the crossings nor the longest run at all — on a rebuild that changed the spectrum by 6.5%.
+- **The forbidden one closes all of it**: chi2 below the control's own 186.01, crossings 91 against the control's 87, longest run 8 — exactly the control's.
+- The control's three numbers are identical across all three grids (its nine runs are the same nine files), which is the no-op saying what moved is the arm.
+
+**60's falsifier fires**, and it was written unprompted and before the run: a rebuild consistent on all four assignments supplies no contrast correction of the named sign and size, which it said in advance means the rate assignments are not where the contrast comes from. But the one assignment the rule *forbids* supplies all of it, so the conclusion is sharper than the falsifier's wording: **the contrast comes from the clock the geometry is read on — the one object `P07` pins to the stacking rate by name.**
+
+### The refit and the tilt prediction
+
+Four-parameter refit (Nelder-Mead, closed-form amplitude), arm rows: banked `NS +0.0288` (chi2 301.2), licensed `NS +0.0422` (297.9), forbidden `NS −0.0035` (186.7, matching the control's 186.3).
+
+The two-direction tilt `shape.py` fits and the refit's own `n_s` shift agree to better than 0.004 on all three grids at matched resolution, which is what licenses reading one as the other — checked rather than assumed. On that reading **`cc66.73`'s −0.0324 does not survive the resolution change**: it is that pair's own `LMAXL=1300` value, and the one-clock rebuild needs essentially no tilt. The banked default and the licensed configuration both want +0.03 to +0.04, so the tilt the fit reaches for is a property of the two-clock geometry rather than of the rebuild.
+
+### Q4 — both locator validations re-pointed onto a re-derivable substrate
+
+`cc66_cr_x_lstep1.npz` has no command anywhere in the repository and its comb is the superseded stacking ruler's (`l_A` 172.841). Both receipts now read `r6941_fine_cr.npz` — a launcher exists, `l_A` 301.799, ell 100–1999 at spacing 1 — and the check is **stricter** there, reproducing 70's measurement exactly:
+
+- `P15_the_full_range_refit_holds_the_background_and_the_phase_residual_was_quantised`: raw 3.90, refined 0.023 (was raw 3.06, refined 0.133).
+- `P15_the_combs_resolution_is_four_multipoles_and_the_skys_own_value_lies_outside_the_family`: `l_1` to 0.0035, worst of four 0.023 (was 0.0043 and 0.133).
+
+Thresholds unchanged; the INDEX row naming the old substrate is re-pointed too.
+
+### One flag
+
+`--grid DIR` was added to `rigidity.py`, which is 70's file, in its own existing `--mc` style. Unset it is the banked grid and the behaviour is byte-identical, so none of that driver's findings move. Additive only — no definition, baseline, step or statistic touched. Flagged rather than assumed.

@@ -6,7 +6,7 @@ from the banked grid `computations/beyond_the_wall/refit_grid185/` (base and two
 omega_b and n_s per arm; A_s in closed form; tau exactly degenerate with A_s, so not a direction).  Nothing
 is run through the transfer: every response is a banked spectrum.
 
-Usage:  python3 rigidity.py [--mc N]
+Usage:  python3 rigidity.py [--mc N] [--grid DIR]
 """
 import os
 import sys
@@ -20,7 +20,15 @@ ROOT = os.path.abspath(os.path.join(HERE, '..', '..', '..'))
 sys.path.insert(0, os.path.join(ROOT, 'computations', 'planck_tt_likelihood'))
 import chi2_of_spectrum as CS                                   # noqa: E402
 
-GRID = os.path.join(ROOT, 'computations', 'beyond_the_wall', 'refit_grid185')
+# ⛭ `--grid DIR` ADDED AT r7097+cc66.79, in this file's own `--mc` style and for the reason r7097
+# gives: *"70's `rigidity.py` returns all three directly, against the same baselines, in one run"* --
+# which needs it pointed at a rebuilt grid.  ** Unset it is the banked `refit_grid185` and the file's
+# behaviour is byte-identical, so none of this driver's findings move. **
+#   ⌗ *This is another seat's file and the change is additive only: no definition, baseline, step or
+#   statistic is touched.  Flagged to the gate rather than assumed -- re-pointing what a RECEIPT reads
+#   changes its subject and is reserved to its author, and this is a driver with a CLI, not a receipt.*
+GRID = (sys.argv[sys.argv.index('--grid') + 1] if '--grid' in sys.argv
+        else os.path.join(ROOT, 'computations', 'beyond_the_wall', 'refit_grid185'))
 SPEC = os.path.join(ROOT, 'computations', 'beyond_the_wall', 'spectra')
 STEP = dict(H0=2.0, OM=0.0150, WB=0.0008, NS=0.020)            # the receipt's own steps
 NMC = int(sys.argv[sys.argv.index('--mc') + 1]) if '--mc' in sys.argv else 20000

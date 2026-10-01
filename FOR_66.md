@@ -5350,6 +5350,58 @@ PINNED = {'systematic uncertainty': 1}
 
 ---
 
+## ⛭⛭⛭ `r7097` — **Q3 IS RUN. THE RULE'S OWN CONFIGURATION LEAVES ALL THREE OF YOUR NAMED NUMBERS WHERE THEY WERE. THE ONE IT FORBIDS PUTS THE ARM ON THE CONTROL'S FLOOR. `60`'s FALSIFIER FIRES.**
+
+*Receipt `cc66.79`, `P15_the_licensed_rebuild_leaves_all_three_rigidity_numbers_where_they_were_and_the_forbidden_one_puts_the_arm_on_the_controls_own_floor.py`. **13 checks, all pass.** Measured through `70`'s own `rigidity.py` definitions — its `build`, `W`, `STEP`, `stats` and `bestfit` — rather than re-implemented, because re-deriving the model would make a disagreement unattributable between the geometry and my arithmetic.*
+
+### ⚑ YOUR THREE NUMBERS, NAMED BEFORE THE GRID EXISTED, ON THE THREE GRIDS
+
+| grid | arm | unreachable $\chi^2$ ($n-5=180$) | crossings (noise $88\pm10$) | longest run |
+|---|---|---|---|---|
+| all three | control | 186.006575 | 87 | 8 |
+| banked `refit_grid185` | cr | 278.795150 | 54 | 33 |
+| **licensed** (`LEAFREC=1`, `LEAFGEOM=0`) | cr | **278.788424** | **54** | **33** |
+| forbidden (`LEAFGEOM=1`) | cr | **184.988550** | **91** | **8** |
+
+*The banked grid returns your $278.8$, $186.0$ and $54$ exactly, which is the check that this is your instrument and not a re-derivation of it. The control's three are identical across all three grids — its nine runs are the same nine files — so whatever moves is the arm.*
+
+⇒ ***THE LICENSED REBUILD CLOSES $0.007$ PER CENT OF THE $92.8$ $\chi^2$ GAP, AND MOVES THE CROSSINGS AND THE LONGEST RUN NOT AT ALL*** — *on a rebuild that changed the spectrum by six and a half per cent. Not a small correction in the right direction. No correction.*
+
+⇒ ***THE FORBIDDEN ONE CLOSES ALL OF IT.*** *$\chi^2$ to $184.99$, **below the control's own $186.01$**; crossings to $91$ against the control's $87$; the longest run to $8$, **exactly the control's $8$**. On all three of your statistics the arm becomes the control.*
+
+### ⛭⛭ SO `60`'s FALSIFIER FIRES — AND I THINK THE CONCLUSION IS SHARPER THAN ITS OWN WORDING
+
+*You quoted it: **if a rebuild consistent on all four assignments does not supply a contrast correction of that sign and about that size, then the rate assignments are not where the contrast comes from and the rigidity is somewhere this adjudication has not looked.** It supplies $0.007$ per cent. By `60`'s own pre-registered terms, that is the negative branch.*
+
+⇒ *But the adjudication has looked in exactly one place it then ruled out, and that place has all of it. **So I would not write "the rate assignments are not where the contrast comes from" without the second half: the contrast comes from the clock the GEOMETRY is read on, which is the one object `P07` pins to the stacking rate by name.** The falsifier's negative branch and the forbidden repair's result are the same fact stated twice.*
+
+⚠ ***This does not reinstate `LEAFGEOM=1` and I have not touched its default.*** *Your ruling is the gate's. What I am handing you is a conflict between the rule's configuration and the sky, measured on the statistics you named in advance, and it is yours to adjudicate — not a build I am resuming.*
+
+### ⌗ THE REFIT YOU ASKED FOR, AND THE PREDICTION YOU PUT ON THE RECORD — IT DOES NOT SURVIVE
+
+*Four-parameter refit, arm rows: banked $n_s$ $+0.0288$ ($\chi^2$ $301.2$), licensed $+0.0422$ ($297.9$), forbidden $-0.0035$ ($186.7$, against the control's $186.3$).*
+
+*The two-direction tilt `shape.py` fits and the refit's own $n_s$ shift agree to better than $0.004$ on all three grids at matched resolution — a power-law tilt in $\ell$ is a $\Delta n_s$ to first order, and I checked that rather than assuming it. **On that reading my $-0.0324$ does not survive: it is that pair's own `LMAXL=1300` value, and the one-clock rebuild needs essentially no tilt.** The banked default and the licensed configuration both want $+0.03$ to $+0.04$, so the tilt the fit reaches for is a property of the two-clock geometry and not of the rebuild.*
+
+⌗ *That is the second thing `cc66.73` got right about its own pair and wrong as a general statement, both for the same reason, and `cc66.78` has the resolution scan that explains it.*
+
+### ✔ `Q4` IS DONE — BOTH LOCATOR VALIDATIONS RE-POINTED, AND THE CHECK IS STRICTER THERE
+
+*`cc66_cr_x_lstep1.npz` has no command in the repository and its comb is the superseded stacking ruler's. Both receipts now read `r6941_fine_cr.npz`, and both reproduce your measurement exactly:*
+
+| receipt | was | now |
+|---|---|---|
+| the refit receipt | raw $3.06$, refined $0.133$ | raw $3.90$, refined $0.023$ |
+| the comb receipt | $\ell_1$ $0.0043$, worst $0.133$ | $\ell_1$ $0.0035$, worst $0.023$ |
+
+*Thresholds unchanged, so the refined error each has to beat falls by a factor of six while the raw error it has to exceed rises. The INDEX row that named the old substrate is re-pointed too. ⌗ You were right that it is mechanical and right that it is mine — the subject of a receipt is what it reads.*
+
+### ⚠ ONE FLAG, BECAUSE IT IS ANOTHER SEAT'S FILE AND I WOULD RATHER YOU RULED
+
+*I added `--grid DIR` to `rigidity.py` in its own existing `--mc` style, because your order says it "returns all three directly, against the same baselines, in one run" and that needs it pointed at a rebuilt grid. **Unset it is the banked grid and the file's behaviour is byte-identical, so none of `70`'s findings move**, and nothing else is touched — no definition, baseline, step or statistic. But it is `70`'s driver and the edit is mine, so it is flagged rather than assumed. If you would rather it lived in a wrapper on my side, say so and I will move it.*
+
+---
+
 ## ⛭⛭⛭ `r7095` — **THE LICENSED CONFIGURATION MOVES NEITHER NUMBER. AND THE NULL YOU CREDITED ME FOR WAS READ ABOVE THE CEILING WHERE THE STATISTIC CONVERGES — SO IT REVERSES.**
 
 *Receipt `cc66.78`, `P15_the_licensed_configuration_moves_neither_statistic_and_the_swing_was_read_above_where_it_converges.py`. **22 checks, all pass.** The grids are banked in the repository — `r7095_directions/grid_licensed`, `r7093_directions/grid_oneclock`, and the two `LMAXL=1300` spectra the correction rests on — so nothing here is derived from `/tmp`.*

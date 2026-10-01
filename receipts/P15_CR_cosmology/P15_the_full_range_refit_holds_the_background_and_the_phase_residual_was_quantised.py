@@ -278,8 +278,21 @@ def peaks_sub(ls, Dl, n=4, order=3):
     return out
 
 
-print("  (a) ** THE REFINEMENT IS VALIDATED BEFORE IT IS USED, on the banked LSTEP=1 spectrum. **")
-_z1 = np.load(os.path.join(SPEC, 'cc66_cr_x_lstep1.npz'))
+# ⛭⛭ RE-POINTED AT r7097+cc66.79, onto a substrate that is RE-DERIVABLE.
+# *`70` established that this validation held on `cc66_cr_x_lstep1.npz` -- which **has no command
+# anywhere in the repository**, so the substrate could not be rebuilt, and whose comb is the superseded
+# STACKING ruler's ($\ell_A = 172.841$ against this cosmology's $301.8$).*  ** `r6941_fine_cr.npz` has a
+# launcher, carries $\ell_A = 301.799$ at configuration B, and spans ell 100-1999 at spacing 1 -- a
+# wider range at the same resolution. **
+#   ⇒ *And the check is STRICTER there, not looser: `70` measured raw $3.90$ and refined $0.023$ on the
+#   new substrate against raw $3.06$ and refined $0.133$ on the old, so the refined error it has to beat
+#   falls by a factor of six while the raw error it has to exceed rises.  Measured in
+#   `r7095_70_artefact_configuration/locator_substrate_log.txt`; this edit is the re-pointing only.*
+#   ⌗ *`r7097` left this to this seat although it is mechanical, because re-pointing what a receipt
+#   READS changes its subject and that is reserved to the receipt's author.  The threshold is unchanged.*
+print("  (a) ** THE REFINEMENT IS VALIDATED BEFORE IT IS USED, on a banked LSTEP=1 spectrum that has "
+      "a launcher and this cosmology's own comb. **")
+_z1 = np.load(os.path.join(SPEC, 'r6941_fine_cr.npz'))
 _l1 = np.asarray(_z1['ls'], float)
 _D1 = np.asarray(_z1['Dl'], float)
 _native = peaks_sub(_l1, _D1, order=20)
