@@ -80,5 +80,17 @@
     "since": "0e4a315817e9b71aa3d39b5e6ef7b7ca34e837d8"
    }
   }
+ },
+ "main": {
+  "tolerance": {
+   "receipts/L257_the_label_did_double_duty/V1_a_strike_that_reads_as_done_and_a_paper_that_says_otherwise.py": {
+    "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/36933878699",
+    "since": "936bb053edebe9ee864631cb8f02c682be7118e7"
+   },
+   "receipts/P15_CR_cosmology/P15_the_harmonic_expansion_in_the_proper_frame_is_not_bounded_because_no_slicing_of_it_carries_both_the_discrete_source_and_the_projection_distance.py": {
+    "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/36933878699",
+    "since": "936bb053edebe9ee864631cb8f02c682be7118e7"
+   }
+  }
  }
 }
