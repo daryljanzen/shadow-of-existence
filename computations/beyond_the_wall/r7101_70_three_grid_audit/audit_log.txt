@@ -1,0 +1,88 @@
+/home/user/shadow-of-existence/computations/beyond_the_wall/r7091_70_fit_rigidity/rigidity.py:227: RuntimeWarning: divide by zero encountered in scalar divide
+  z = (v - a.mean()) / a.std()
+
+====================================================================================================
+  (1) LIKE-FOR-LIKE, READ FROM THE ARTEFACTS
+====================================================================================================
+  control: 9 of 9 files byte-identical across all three grids
+  banked    ell samplings across its 18 files: 1 distinct; 100..1996
+  licensed  ell samplings across its 18 files: 1 distinct; 100..1996
+  forbidden ell samplings across its 18 files: 1 distinct; 100..1996
+  switches, licensed against forbidden, per CR step (keys differing):
+    cr_base  ['LEAFGEOM', 'LEAFREC']
+    cr_H0p   ['LEAFGEOM', 'LEAFREC']
+    cr_H0m   ['LEAFGEOM', 'LEAFREC']
+    cr_OMp   ['LEAFGEOM', 'LEAFREC']
+    cr_OMm   ['LEAFGEOM', 'LEAFREC']
+    cr_WBp   ['LEAFGEOM', 'LEAFREC']
+    cr_WBm   ['LEAFGEOM', 'LEAFREC']
+    cr_NSp   ['LEAFGEOM', 'LEAFREC']
+    cr_NSm   ['LEAFGEOM', 'LEAFREC']
+  => ONE switch pair throughout: {('LEAFGEOM', 'LEAFREC')}
+  the banked grid has no stamp; its launcher (refit_grid185/launch.sh) sets ZSTART=3e7 LEAFSCALES=1 and the
+  same parameter steps, and predates LEAFREC (so it ran at LEAFREC=0, the old behaviour).
+
+  rigidity.py run as a DRIVER on each grid (subprocess, --grid, --mc 2000), its own printed numbers:
+    banked    lcdm: chi2 186.0 crossings 87 longest 8   cr: chi2 278.8 crossings 54 longest 33
+    licensed  lcdm: chi2 186.0 crossings 87 longest 8   cr: chi2 278.8 crossings 54 longest 33
+    forbidden lcdm: chi2 186.0 crossings 87 longest 8   cr: chi2 185.0 crossings 91 longest 8
+
+  the same through the imported definitions (the receipt's own route), and the receipt's literals:
+    banked    lcdm chi2   186.0066 (receipt  186.007)  crossings  87 (87)  longest   8 (8)   REPRODUCED
+    banked    cr   chi2   278.7952 (receipt  278.795)  crossings  54 (54)  longest  33 (33)   REPRODUCED
+    licensed  lcdm chi2   186.0066 (receipt  186.007)  crossings  87 (87)  longest   8 (8)   REPRODUCED
+    licensed  cr   chi2   278.7884 (receipt  278.788)  crossings  54 (54)  longest  33 (33)   REPRODUCED
+    forbidden lcdm chi2   186.0066 (receipt  186.007)  crossings  87 (87)  longest   8 (8)   REPRODUCED
+    forbidden cr   chi2   184.9886 (receipt  184.989)  crossings  91 (91)  longest   8 (8)   REPRODUCED
+
+  the contrast coefficient c (contrast_size.py's model: five directions + contrast template, GLS):
+    banked    lcdm c = -0.0075 +- 0.0083   (-0.90 sigma)
+    banked    cr   c = -0.0636 +- 0.0085   (-7.51 sigma)
+    licensed  lcdm c = -0.0075 +- 0.0083   (-0.90 sigma)
+    licensed  cr   c = -0.0642 +- 0.0084   (-7.68 sigma)
+    forbidden lcdm c = -0.0075 +- 0.0083   (-0.90 sigma)
+    forbidden cr   c = -0.0069 +- 0.0083   (-0.83 sigma)
+
+====================================================================================================
+  (2) THE CEILING
+====================================================================================================
+  licensed  projection reach k_max*D_M = 3998 at l_max 2000 (ratio 2.00); D_M 14011.5;  l_D = 1868  -> l_max/l_D = 1.071
+  forbidden projection reach k_max*D_M = 3998 at l_max 2000 (ratio 2.00); D_M 13941.6;  l_D = 1958  -> l_max/l_D = 1.021
+  => k_max is held as a multiple of 1/D_M, so the projection reaches the same multipole on every arm;
+     the coupling "k_max fixed, D_M smaller" is not what the instrument does.
+
+  bins used: 185, ell 100..1996  (plik_lite bins above the spectra's 1996 are dropped)
+
+  the three statistics re-fitted on ell <= cut  (chi2 / n-5  crossings  longest), and the arm gap:
+      cut    n                   banked cr                 licensed cr                forbidden cr                   control   lic-forb dchi2
+      850   83      67.6/78     44    4        67.7/78     44    4        68.7/78     44    4      68.7   44    4          -1.0
+     1000  100      88.4/95     50    5        91.6/95     52    5        77.2/95     54    4      77.0   54    4         +14.4
+     1200  122     150.6/117    50   11       152.8/117    52   11       101.9/117    66    4     101.9   66    4         +51.0
+     1400  144     202.7/139    52   20       203.4/139    52   20       135.4/139    80    5     136.1   80    5         +67.9
+     1600  161     233.0/156    58   23       231.5/156    58   23       156.8/156    80    7     157.7   80    7         +74.7
+     1800  173     258.3/168    58   23       257.4/168    56   23       173.4/168    88    8     174.5   84    8         +84.0
+     1900  179     265.5/174    54   27       264.7/174    56   27       176.4/174    92    8     177.5   90    8         +88.3
+     1996  185     278.8/180    54   33       278.8/180    54   33       185.0/180    91    8     186.0   87    8         +93.8
+
+  the full-range gap, accumulated in ell (whitened residual, Cholesky ordered by bin):
+            band    n  licensed  forbidden  control  lic-forb  share of gap
+         (0,500]   44      43.3       34.5     34.5      +8.8          9.3%
+       (500,850]   39      56.8       36.7     37.2     +20.1         21.5%
+      (850,1200]   39      61.7       34.3     34.6     +27.4         29.2%
+     (1200,1500]   33      67.5       46.0     46.1     +21.6         23.0%
+     (1500,1800]   18      29.9       22.0     22.1      +7.9          8.4%
+     (1800,2000]   12      19.6       11.5     11.5      +8.0          8.6%
+
+====================================================================================================
+  (3) DOES ANYTHING IN THE BANKED SET POINT THE OTHER WAY
+====================================================================================================
+                     A0  refit chi2           lowfreq (driver)
+    banked     11678.0386       301.2   0.559 vs noise 0.129+-0.077 (+5.6s)
+    licensed   11878.5149       297.9   0.564 vs noise 0.129+-0.077 (+5.6s)
+    forbidden  10809.9390       186.7   0.127 vs noise 0.128+-0.076 (-0.0s)
+    control    11113.6546       186.3   0.136 vs noise 0.127+-0.077 (+0.1s)
+
+  peak structure printed by the instrument at each arm's base (line-of-sight, hierarchy):
+    licensed  peaks at l = [220, 532, 812, 1132]   l_1/l_A = 0.7263   P1/P2 = 2.283   P1/P3 = 2.311
+    forbidden peaks at l = [220, 540, 812, 1132]   l_1/l_A = 0.7300   P1/P2 = 2.199   P1/P3 = 2.213
+  (the control's base has no log banked beside the grids; its peak ratios are not compared here)
