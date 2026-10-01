@@ -5083,3 +5083,25 @@ Two routes, each named with the reason it stopped:
 ### ⚠ SCOPE
 
 The proof uses only that recoupling coefficients are rational in the Casimirs, that the list and each orbit are closed under `a ↔ b`, and the degeneracies' form — **so it holds at every level and is not a statement at the nine computed ones.** It proves the parity and **nothing else**: no closed form, no degree bound, no value. The fitted forms appear **only as a consistency check on the proof, never as evidence for it**, which is why the receipt computes the symmetry with free coefficients first.
+
+---
+
+## `r7083`'s QUESTION BACK — **NOTHING IS NEARER**, and I checked the one candidate before saying so
+
+⚠ *Nothing in this section is receipted and nothing in it is a claim about the corpus. The reading of the quartic sector below is a reading of what `sec:lock` **already states**, not a computation of mine.*
+
+**Answer: nothing in the substrate's quantum sector looks nearer to me than those four, and I am not proposing a row.** The line is idle and I agree that is the better state.
+
+### ⌗ BUT I DID NOT ANSWER IT REFLEXIVELY — `r7082` left one candidate worth a look, and it has no object
+
+`r7082`'s third step is a **count**, and the count is in the number of fields: every dimension factor is the label displaced by two, so under the reflection each one flips sign, and the degeneracy factor over `n` fields goes to `(−1)ⁿ` times the swapped channel's. ⇒ **At `n = 3` that is odd, which is the whole proof. At any EVEN point count the same arithmetic gives `+1`, hence an even weight** — and an even weight meets `ζ` at even arguments, away from the one pole. *Were there an even-point weight with the cubic's kind of channel dependence, that would say the dimension-six payment is specifically an odd-vertex effect, and it would cost almost nothing to establish.*
+
+⛔ **There is no such weight, and `sec:lock` is where I checked rather than guessing.** At the quartic the level-summed overlap is *"the product of the two degeneracies times a pure number"*, with *"the residual factor \[having\] no dependence on either label at all"*, *"the fall-off exponent zero where the reversing threshold was three"*, and *"the sixth power therefore exact rather than conditional"*. ⇒ **The reflection has nothing to act on there.** The cubic's parity rode on a channel-dependent coefficient in the label; the quartic's collapses to the degeneracy product, and that sector's placement is already exact rather than conditional. *So the candidate is not a cheap finding — it is a question whose object the corpus has already removed, and the right thing to do with it is say so here and not open it.*
+
+⌗ *And the neighbouring escape is closed too, from the other side and already in the paper:* `sec:lock` says in terms that *"no symmetry, parity or count of modes can remove"* the second-order term, *"the parity escape \[being\] closed by this section's own arithmetic"*. **A parity claim at that order would be a restatement, not a finding.**
+
+### ✔ AND ON THE FOUR, FOR THE RECORD — I READ THEM THE WAY YOU DO
+
+Each needs something this seat does not have, and none of the four is short of a row by accident: **the closed forms** want a recognition I attempted and stopped on, and `r7081`'s condition is spent, not pending; **the renormalised value** wants a scheme, which is an assignment and not a computation; **the dimension-six invariant** wants a datum that separates the three cubic curvature scalars, and `r7080`'s own result is that this background cannot supply it, so it belongs to a different one; **fourth order** is order-by-order bookkeeping, and bookkeeping does not become a finding by being done. ⇒ **I am not drawing any of them in.**
+
+⇒ ⛭ **So: the register is empty for this line and I am leaving it empty.** `r7079` is the precedent I am applying — a row opened on a reading cost a revision and left a defect in the paper — and the cheapest way not to repeat it is to decline to manufacture the next one. *I will keep polling and will take the next order the moment there is one.*
