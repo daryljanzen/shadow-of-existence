@@ -5,7 +5,7 @@ kind: FORWARD
 
 *This file carries coordination and reporting. **The claims are in the receipts it names**, and anything
 below that is not receipted says so in terms. The newest reply is first. It answers `FOR_70.md`'s
-`r7079` order (derive or hold, over the twenty-five carriers), read at `origin/main` `0dd96179`. The reply to `r7073`, then to `r7071`, then to `r7069`, then to `r7067`, then to `r7065`, then to `r7063`, then to `r7059` (`sec:lock`), then to `r7055` (the phase count), then to `r7049` (the floor), then to `r7043` (the citation sweep), then the replies to `r7037` (the corpus-wide sweep), `r7035` (the null harness), `r7033` (the three instruments with no noise model) and `r7029` (both items) follow it. The replies to `r7027` (`r7027+70.1`), `r7025` (`r7025+70.1`), `r7023` (`r7023+70.1`), `r7021` (`r7021+70.1`), `r7019` (`r7019+70.1`), `r7017` (`r7017+70.1`, ⑧), `r7013` (`r7013+70.1`), `r7011` (`PO-69`), `r7009` (`PO-68`), `r7007` (`PO-67`), `r7003` (`PO-65` ⓶, `PO-66` ⓶), `r6991` (`PO-64`),
+`r7081` order (land the sentinel's log), read at `origin/main` `25722711`. The reply to `r7079`, then to `r7073`, then to `r7071`, then to `r7069`, then to `r7067`, then to `r7065`, then to `r7063`, then to `r7059` (`sec:lock`), then to `r7055` (the phase count), then to `r7049` (the floor), then to `r7043` (the citation sweep), then the replies to `r7037` (the corpus-wide sweep), `r7035` (the null harness), `r7033` (the three instruments with no noise model) and `r7029` (both items) follow it. The replies to `r7027` (`r7027+70.1`), `r7025` (`r7025+70.1`), `r7023` (`r7023+70.1`), `r7021` (`r7021+70.1`), `r7019` (`r7019+70.1`), `r7017` (`r7017+70.1`, ⑧), `r7013` (`r7013+70.1`), `r7011` (`PO-69`), `r7009` (`PO-68`), `r7007` (`PO-67`), `r7003` (`PO-65` ⓶, `PO-66` ⓶), `r6991` (`PO-64`),
 `r6977` (`r6977+70.1`), `r6975` (`r6975+70.1`), `r6959` (`r6961+70.x`), `r6939` (`r6931+70.3`) and `r6929`
 (`r6931+70.1`) follow it; all were gated and landed.*
 
@@ -14,14 +14,41 @@ declared in `check_revision_collisions._PARITY_BY_NODE` beside `cc66`, and that 
 this revision touches. **The gate is yours; revert the line if you would rather declare the node
 yourself.***
 
-## ⌛ `r7079+70.1` — IN FLIGHT: DERIVE OR HOLD, OVER THE TWENTY-FIVE CARRIERS
+## ⚑ `r7081+70.1` — THE SENTINEL'S LOG: OF THE TWENTY-FIVE, TWO HELD AND ONE HELD-BUT-CONSTRAINED; CALIBRATION HELD ON THE FULL RUN
 
-**r7045.**
-- **In flight:** `computations/beyond_the_wall/r7079_70_derive_or_hold/derive_or_hold.py`. For each of the 25 pairs it runs a baseline and two sentinels, a large change and a last-digit change.
-- **Pre-registered:** `PREDICTION.md` beside it.
-- **Calibration:** it failed on the first run and now holds. **Three instrument changes were made after seeing the controls, and they are declared there.**
-- **It waits on** the CAMB carriers: three runs each, at up to about 30 min a run.
-- **It lands in** the next push on this branch, as the shortlist with the mechanical class only.
+*This is Q1, as pre-registered. The log is `computations/beyond_the_wall/r7079_70_derive_or_hold/derive_or_hold_log.txt`. Each pair had a fresh baseline run and two sentinel runs, a large change and a last-digit one; fractions had the large one only. There were no timeouts and no unmeasured lines. **The class below is mechanical. The read is yours.***
+
+**Calibration on the full run.** All four conditions held:
+- `validate_bbn` 2.5671 and 4.4611: DERIVED;
+- low-ℓ dict 0.926: HELD-BUT-CONSTRAINED;
+- `nariai_welds` 7.06: HELD;
+- reported control, the `r7073` exact-transmission receipt: DERIVED-AND-PINNED.
+
+**THE SHORTLIST: 3 of 25 not derived.**
+
+| class | paper | number | carrier | what the runs showed |
+|---|---|---|---|---|
+| **HELD** | `P16` | 7.06 | `P16_nariai_welds` | 3 literals, all in `print` narration. Both sentinels exit 0 with the number gone. *(This is the calibration case, and the site is already re-pointed to `P03_acceleration_is_slice_curvature` at `r7073`.)* |
+| **HELD** | `P16` | 3/8 | `P16_the_leading_order_interior_is_adequate` | 2 literals: the narration string `Sigma = (3/8) M^2 \|sigma\|^3 h` (l. 93), and the coefficient in `ratio = (3 / 8) * hv / 0.5` (l. 107). Under the change to 11/8, the receipt exits 0 and nothing fails. The coefficient is used, but no check depends on its value. |
+| **HELD-BUT-CONSTRAINED** | `P15` | 2400 | `C59_the_control_reproduces_camb_and_the_height_defect_was_k_truncation` | 9 literals; in the source it is the `k_max` loop setting, `for kml in (900, 2400)` (l. 196). The last-digit change, 2401, exits 0. The large change fails at `assert _dpos_max > 8.0` (l. 290), away from the literal. |
+
+- ⌗ **What I am not saying.** Whether either HELD number is presented in the paper as the construction's own result is your read. So is whether 2400 is a setting the prose reports. I have not read the passages.
+- **The other 22.**
+  - **DERIVED-AND-PINNED (1):** `P03_triple_angle_gnomonic` −3/4. The changed coefficient fails the asserted harmonic decomposition: `[FAIL] r0−r0³ = (rho−7/4rho³) sin w …`. This is one of the four intentional sites, settled and not reopened.
+  - **DERIVED (21):** the shear coefficients and 6/5, 3.32, the model-difference set, C59's 2.721 → 2.393, both 298.0 carriers, 10.8, 294, `validate_bbn`'s pair, and the two 3/8 and 1/8 carriers in `T50` and `P14`. Each prints its number with every literal of it removed, and no dependency defines it.
+
+**Against the pre-registration.**
+- HELD was predicted as "`nariai_welds` plus zero to two others". The result is **one other**, so that holds.
+- **The three carriers I named in advance were all wrong.** 3.32, 294 and 10.8 are all DERIVED. The held one is a carrier I did not name.
+- INCONCLUSIVE was predicted at one to four, and the result is **zero**, so that also missed. The dependency rule fired nowhere after the pin fix, and no run timed out.
+
+**Routed to you, unrelated to the sentinel: V1 is red on `main`.** `receipts/L257_the_label_did_double_duty/V1_a_strike_that_reads_as_done_and_a_paper_that_says_otherwise.py` fails two checks:
+- ⓵ᶜᐢ: exactly one live key, reading REGISTERED and naming PO-23;
+- ⓶: P07's sentence "the open item of the programme's quantum sector".
+
+It reproduces on `0dd96179` plus only my `computations/` files, and again on `main` at `25722711`. Both checks read state that `r7079`/`r7081`'s PO-23 and PO-71 revisions touched. It is your receipt against your paper state, so I have not touched it. It was commented on #201 as not that PR's.
+
+**r7045.** Nothing is in flight. This push closes `r7079+70.1`/`r7081`.
 
 ## ⚑ `r7073+70.1` — 40 OF 40 CONFIRMED ON A FRESH RUN; NOTHING-PRINTS HOLDS NO NUMBER THAT IS CLAIMED AS COMPUTED, SO NO (iii)
 

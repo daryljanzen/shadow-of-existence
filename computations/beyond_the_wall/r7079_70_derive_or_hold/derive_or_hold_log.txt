@@ -1,0 +1,133 @@
+25 carrier-number pair(s) from the r7069 confirm log, plus 5 control(s)
+
+DERIVED             control                    2.5671   P16_validate_bbn
+                      the number survives the removal of every literal of it
+                      {'baseline': (0, True), 'dependency holds': 'none', 'large': {'rc': 1, 'carries': True, 'replaced': 1}, 'last-digit': {'rc': 0, 'carries': True, 'replaced': 1}}
+DERIVED             control                    4.4611   P16_validate_bbn
+                      the number survives the removal of every literal of it
+                      {'baseline': (0, True), 'dependency holds': 'none', 'large': {'rc': 1, 'carries': True, 'replaced': 1}, 'last-digit': {'rc': 0, 'carries': True, 'replaced': 1}}
+HELD-BUT-CONSTRAINED control                    0.926    P15_the_low_ell_minimum_is_at_ell_four
+                      written in; a last-digit change passes, and only the large change fails, at a check away from the literal
+                      {'baseline': (0, True), 'dependency holds': 'none', 'large': {'rc': 1, 'carries': False, 'replaced': 2, 'pinned': None, 'fails at': 'line 278: assert spread < 0.05'}, 'last-digit': {'rc': 0, 'carries': False, 'replaced': 2}}
+HELD                control                    7.06     P16_nariai_welds
+                      exits 0 with the number gone: written in, and nothing fails if it is false
+                      {'baseline': (0, True), 'dependency holds': 'none', 'large': {'rc': 0, 'carries': False, 'replaced': 3}, 'last-digit': {'rc': 0, 'carries': False, 'replaced': 3}}
+DERIVED-AND-PINNED  control                    0.926    P15_the_exact_transmission_ratios_are_recomputed_and_the_offset_satura
+                      the replaced literal is checked against a computation, and fails
+                      {'baseline': (0, True), 'dependency holds': 'none', 'large': {'rc': 1, 'carries': False, 'replaced': 5, 'pinned': "new failure line: [FAIL] ell =  2: ratio 0.9255 reproduces the paragraph's 1.379", 'fails at': "[FAIL] ell =  2: ratio 0.9255 reproduces the paragraph's 1.379"}, 'last-digit': {'rc': 1, 'carries': False, 'replaced': 5, 'pinned': "new failure line: [FAIL] ell =  2: ratio 0.9255 reproduces the paragraph's 0.927", 'fails at': "[FAIL] ell =  2: ratio 0.9255 reproduces the paragraph's 0.927"}}
+DERIVED             CR_cosmology.tex           0.8852   P15_the_shear_coefficient_derived_not_remembered
+                      the number survives the removal of every literal of it
+                      {'baseline': (0, True), 'dependency holds': 'none', 'large': {'rc': 1, 'carries': True, 'replaced': 3}, 'last-digit': {'rc': 0, 'carries': True, 'replaced': 3}}
+DERIVED             CR_cosmology.tex           1.0618   P15_the_shear_coefficient_derived_not_remembered
+                      the number survives the removal of every literal of it
+                      {'baseline': (0, True), 'dependency holds': 'none', 'large': {'rc': 1, 'carries': True, 'replaced': 3}, 'last-digit': {'rc': 0, 'carries': True, 'replaced': 3}}
+DERIVED             CR_cosmology.tex           1.1996   P15_the_shear_coefficient_derived_not_remembered
+                      the number survives the removal of every literal of it
+                      {'baseline': (0, True), 'dependency holds': 'none', 'large': {'rc': 1, 'carries': True, 'replaced': 4}, 'last-digit': {'rc': 0, 'carries': True, 'replaced': 4}}
+DERIVED             CR_cosmology.tex           6/5      P15_the_shear_coefficient_derived_not_remembered
+                      the number survives the removal of every literal of it
+                      {'baseline': (0, True), 'dependency holds': 'none', 'large': {'rc': 1, 'carries': True, 'replaced': 11}}
+DERIVED             CR_cosmology.tex           3.32     P15_the_geometry_transmits_no_parameters
+                      the number survives the removal of every literal of it
+                      {'baseline': (0, True), 'dependency holds': 'none', 'large': {'rc': 1, 'carries': True, 'replaced': 2}, 'last-digit': {'rc': 0, 'carries': True, 'replaced': 2}}
+DERIVED             CR_cosmology.tex           0.760    P15_the_model_difference_is_an_acoustic_contrast_difference_and_it_is_
+                      the number survives the removal of every literal of it
+                      {'baseline': (0, True), 'dependency holds': 'none', 'large': {'rc': 0, 'carries': True, 'replaced': 2}, 'last-digit': {'rc': 0, 'carries': True, 'replaced': 2}}
+DERIVED             CR_cosmology.tex           1.43     P15_the_model_difference_is_an_acoustic_contrast_difference_and_it_is_
+                      the number survives the removal of every literal of it
+                      {'baseline': (0, True), 'dependency holds': 'none', 'large': {'rc': 0, 'carries': True, 'replaced': 1}, 'last-digit': {'rc': 0, 'carries': True, 'replaced': 1}}
+DERIVED             CR_cosmology.tex           177.88   P15_the_model_difference_is_an_acoustic_contrast_difference_and_it_is_
+                      the number survives the removal of every literal of it
+                      {'baseline': (0, True), 'dependency holds': 'none', 'large': {'rc': 0, 'carries': True, 'replaced': 1}, 'last-digit': {'rc': 0, 'carries': True, 'replaced': 1}}
+DERIVED             CR_cosmology.tex           27.82    P15_the_model_difference_is_an_acoustic_contrast_difference_and_it_is_
+                      the number survives the removal of every literal of it
+                      {'baseline': (0, True), 'dependency holds': 'none', 'large': {'rc': 0, 'carries': True, 'replaced': 1}, 'last-digit': {'rc': 0, 'carries': True, 'replaced': 1}}
+DERIVED             CR_cosmology.tex           282.96   P15_the_model_difference_is_an_acoustic_contrast_difference_and_it_is_
+                      the number survives the removal of every literal of it
+                      {'baseline': (0, True), 'dependency holds': 'none', 'large': {'rc': 0, 'carries': True, 'replaced': 1}, 'last-digit': {'rc': 0, 'carries': True, 'replaced': 1}}
+DERIVED             CR_cosmology.tex           77.26    P15_the_model_difference_is_an_acoustic_contrast_difference_and_it_is_
+                      not in the carrier source; printed by its arithmetic
+                      {'baseline': (0, True), 'dependency holds': 'none'}
+DERIVED             CR_cosmology.tex           2.393    C59_the_control_reproduces_camb_and_the_height_defect_was_k_truncation
+                      the number survives the removal of every literal of it
+                      {'baseline': (0, True), 'dependency holds': 'none', 'large': {'rc': 0, 'carries': True, 'replaced': 2}, 'last-digit': {'rc': 0, 'carries': True, 'replaced': 2}}
+DERIVED             CR_cosmology.tex           2.721    C59_the_control_reproduces_camb_and_the_height_defect_was_k_truncation
+                      the number survives the removal of every literal of it
+                      {'baseline': (0, True), 'dependency holds': 'none', 'large': {'rc': 1, 'carries': True, 'replaced': 10}, 'last-digit': {'rc': 0, 'carries': True, 'replaced': 10}}
+HELD-BUT-CONSTRAINED CR_cosmology.tex           2400     C59_the_control_reproduces_camb_and_the_height_defect_was_k_truncation
+                      written in; a last-digit change passes, and only the large change fails, at a check away from the literal
+                      {'baseline': (0, True), 'dependency holds': 'none', 'large': {'rc': 1, 'carries': False, 'replaced': 9, 'pinned': None, 'fails at': 'line 290: assert _dpos_max > 8.0, ("positions did NOT move -- the finding has changed", _dpos_max)'}, 'last-digit': {'rc': 0, 'carries': False, 'replaced': 9}}
+DERIVED             CR_cosmology.tex           298.0    P15_at_its_own_preferred_H0_the_crossing_arm_predicts_the_acoustic_com
+                      the number survives the removal of every literal of it
+                      {'baseline': (0, True), 'dependency holds': 'none', 'large': {'rc': 0, 'carries': True, 'replaced': 1}, 'last-digit': {'rc': 0, 'carries': True, 'replaced': 1}}
+DERIVED             CR_cosmology.tex           298.0    P15_the_third_peak_deficit_is_radiation_driving_and_both_routes_to_the
+                      the number survives the removal of every literal of it
+                      {'baseline': (0, True), 'dependency holds': 'none', 'large': {'rc': 0, 'carries': True, 'replaced': 1}, 'last-digit': {'rc': 0, 'carries': True, 'replaced': 1}}
+DERIVED             CR_cosmology.tex           10.8     C8_diffusion_length
+                      the number survives the removal of every literal of it
+                      {'baseline': (0, True), 'dependency holds': 'none', 'large': {'rc': 1, 'carries': True, 'replaced': 8}, 'last-digit': {'rc': 0, 'carries': True, 'replaced': 8}}
+DERIVED-AND-PINNED  SdS-slicing-curve_v2.tex   -3/4     P03_triple_angle_gnomonic
+                      the replaced literal is checked against a computation, and fails
+                      {'baseline': (0, True), 'dependency holds': 'none', 'large': {'rc': 1, 'carries': False, 'replaced': 8, 'pinned': 'new failure line: [FAIL] r0-r0³ = (rho-7/4rho³) sin w + ¼rho³ sin 3w  (harmonic decomposition, DERIVED)', 'fails at': 'line 56: assert ok, "a triple-angle / gnomonic check FAILED"'}}
+HELD                cosmogenesis_paper.tex     7.06     P16_nariai_welds
+                      exits 0 with the number gone: written in, and nothing fails if it is false
+                      {'baseline': (0, True), 'dependency holds': 'none', 'large': {'rc': 0, 'carries': False, 'replaced': 3}, 'last-digit': {'rc': 0, 'carries': False, 'replaced': 3}}
+DERIVED             cosmogenesis_paper.tex     294      P16_the_adiabatic_premise_is_demanded_by_the_data_and_inherited_by_the
+                      the number survives the removal of every literal of it
+                      {'baseline': (0, True), 'dependency holds': 'none', 'large': {'rc': 0, 'carries': True, 'replaced': 3}, 'last-digit': {'rc': 0, 'carries': True, 'replaced': 3}}
+DERIVED             cosmogenesis_paper.tex     2.5671   P16_validate_bbn
+                      the number survives the removal of every literal of it
+                      {'baseline': (0, True), 'dependency holds': 'none', 'large': {'rc': 1, 'carries': True, 'replaced': 1}, 'last-digit': {'rc': 0, 'carries': True, 'replaced': 1}}
+DERIVED             cosmogenesis_paper.tex     4.4611   P16_validate_bbn
+                      the number survives the removal of every literal of it
+                      {'baseline': (0, True), 'dependency holds': 'none', 'large': {'rc': 1, 'carries': True, 'replaced': 1}, 'last-digit': {'rc': 0, 'carries': True, 'replaced': 1}}
+HELD                cosmogenesis_paper.tex     3/8      P16_the_leading_order_interior_is_adequate
+                      exits 0 with the number gone: written in, and nothing fails if it is false
+                      {'baseline': (0, True), 'dependency holds': 'none', 'large': {'rc': 0, 'carries': False, 'replaced': 2}}
+DERIVED             geometric_core_paper.tex   3/8      T50_the_imaginary_route_to_the_horizon_radii_is_forced_and_two_members
+                      the number survives the removal of every literal of it
+                      {'baseline': (0, True), 'dependency holds': 'none', 'large': {'rc': 0, 'carries': True, 'replaced': 5}}
+DERIVED             matter_sector_paper.tex    1/8      P14_dimension_from_flavour
+                      the number survives the removal of every literal of it
+                      {'baseline': (0, True), 'dependency holds': 'none', 'large': {'rc': 1, 'carries': True, 'replaced': 1}}
+
+CALIBRATION (a condition of delivery):
+  [ok]  P16_validate_bbn 2.5671: DERIVED (want DERIVED or DERIVED-AND-PINNED)
+  [ok]  P16_validate_bbn 4.4611: DERIVED (want DERIVED or DERIVED-AND-PINNED)
+  [ok]  P15_the_low_ell_minimum_is_at_ell_four 0.926: HELD-BUT-CONSTRAINED (want HELD or HELD-BUT-CONSTRAINED)
+  [ok]  P16_nariai_welds 7.06: HELD (want HELD or HELD-BUT-CONSTRAINED)
+  [reported]  P15_the_exact_transmission_ratios_are_recomputed_and_the_off 0.926: DERIVED-AND-PINNED
+
+SHORTLIST over the twenty-five:
+  HELD                2
+      cosmogenesis_paper.tex     7.06     P16_nariai_welds
+      cosmogenesis_paper.tex     3/8      P16_the_leading_order_interior_is_adequate
+  HELD-BUT-CONSTRAINED 1
+      CR_cosmology.tex           2400     C59_the_control_reproduces_camb_and_the_height_defect_was_k_truncation
+  INCONCLUSIVE        0
+  DERIVED-AND-PINNED  1
+      SdS-slicing-curve_v2.tex   -3/4     P03_triple_angle_gnomonic
+  DERIVED             21
+      CR_cosmology.tex           0.8852   P15_the_shear_coefficient_derived_not_remembered
+      CR_cosmology.tex           1.0618   P15_the_shear_coefficient_derived_not_remembered
+      CR_cosmology.tex           1.1996   P15_the_shear_coefficient_derived_not_remembered
+      CR_cosmology.tex           6/5      P15_the_shear_coefficient_derived_not_remembered
+      CR_cosmology.tex           3.32     P15_the_geometry_transmits_no_parameters
+      CR_cosmology.tex           0.760    P15_the_model_difference_is_an_acoustic_contrast_difference_and_it_is_not_one_sk
+      CR_cosmology.tex           1.43     P15_the_model_difference_is_an_acoustic_contrast_difference_and_it_is_not_one_sk
+      CR_cosmology.tex           177.88   P15_the_model_difference_is_an_acoustic_contrast_difference_and_it_is_not_one_sk
+      CR_cosmology.tex           27.82    P15_the_model_difference_is_an_acoustic_contrast_difference_and_it_is_not_one_sk
+      CR_cosmology.tex           282.96   P15_the_model_difference_is_an_acoustic_contrast_difference_and_it_is_not_one_sk
+      CR_cosmology.tex           77.26    P15_the_model_difference_is_an_acoustic_contrast_difference_and_it_is_not_one_sk
+      CR_cosmology.tex           2.393    C59_the_control_reproduces_camb_and_the_height_defect_was_k_truncation
+      CR_cosmology.tex           2.721    C59_the_control_reproduces_camb_and_the_height_defect_was_k_truncation
+      CR_cosmology.tex           298.0    P15_at_its_own_preferred_H0_the_crossing_arm_predicts_the_acoustic_comb_with_no_
+      CR_cosmology.tex           298.0    P15_the_third_peak_deficit_is_radiation_driving_and_both_routes_to_the_equality_
+      CR_cosmology.tex           10.8     C8_diffusion_length
+      cosmogenesis_paper.tex     294      P16_the_adiabatic_premise_is_demanded_by_the_data_and_inherited_by_the_construct
+      cosmogenesis_paper.tex     2.5671   P16_validate_bbn
+      cosmogenesis_paper.tex     4.4611   P16_validate_bbn
+      geometric_core_paper.tex   3/8      T50_the_imaginary_route_to_the_horizon_radii_is_forced_and_two_members_escape_it
+      matter_sector_paper.tex    1/8      P14_dimension_from_flavour
+
+CALIBRATION HOLDS -- the instrument is built.
