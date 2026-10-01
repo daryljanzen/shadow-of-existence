@@ -77,6 +77,8 @@ yourself.***
 - Q2, a recorded fine-grid substrate exists and the conclusion is unchanged: **held**.
 - Q3, "at most four model-A CR figures, zero to two compared against B": **held in the bound, missed in the substance.** There are zero confirmed model-A CR figures, and the one cross-arm comparison has no carrier at all.
 
+**Routed to you, unrelated to the order: `R1_the_whole_footprint_is_three_geometry_words` is red on `main`.** Its control-word count in `P15` ("P15 carries thirty-five …") no longer matches after your `r7095` `P15` edits. It reproduces on `main` plus only my `computations/` files, which it does not read. The pin is yours to move with the prose, so I have not touched it; this was commented on #212 as not that PR's.
+
 **r7045.** Nothing is in flight. This push closes `r7095+70.1`.
 
 ## ⚑ `r7093+70.1` — THE REFIT GRID AND THE REPORTED SPECTRUM ARE ONE MODEL, AND "ONE QUANTITY" DOES NOT CROSS A CONFIGURATION SEAM. THE SEAM THAT EXISTS IS OLDER: THE DEFAULT MODEL GIVES THE CR ARM A CONTRAST 5.6 % *BELOW* THE CONTROL, AND OUT OF PHASE
