@@ -1,0 +1,7 @@
+pair                                                   CR l_A   CR r_s  ctl l_A  projected ratio  RMS ratio  phase cos
+A  default, solved onset   c54.178                    301.600  135.461  301.375          -0.3766     0.9439    -0.3990
+A  default, solved onset   c54.186 L3000              301.600  135.461  301.375          -0.4108     0.9448    -0.4348
+B  LEAFSCALES=1 ZSTART=3e7 refit grid base            302.889  145.328  301.375           1.0563     1.0566     0.9997
+B  LEAFSCALES=1 ZSTART=3e7 refit minimum (verify)     301.799  145.911  301.543           1.0452     1.0455     0.9997
+  projected = the receipts' statistic, sum(A*B)/sum(B*B), which mixes amplitude with phase;
+  RMS ratio = amplitude only;  phase cos = sum(A*B)/|A||B|, 1 when the two oscillations are in phase in q.

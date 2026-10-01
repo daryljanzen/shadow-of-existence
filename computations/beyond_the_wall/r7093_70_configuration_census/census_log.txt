@@ -1,0 +1,29 @@
+acoustic sections: tensions, envelope, envelope-consequence, diffusion-scale, isw, residual-decomposition, shear-coefficient, refit-bound, instrument
+marker groups in them: 99; distinct receipts cited: 98
+receipts by the CR configuration of what they read:
+   49  NONE
+   39  B
+    6  A
+    2  CONTROL
+    2  ?+B
+figures (numbers in a group claim) resting on a transfer artefact: 139; by configuration:
+   91  B
+   19  ?+B+B
+   13  A
+   10  ?+B
+    6  CONTROL
+artefacts whose command is not in a launcher or README, or which are not banked:
+  cc66_cr_x_h686_L2000                     B   command only in a receipt docstring (P15_the_anomalous_driving_..., `ARM=cr CRH0=68.60 CROM=0.2973 ZSTART=3e7 LEAFSCALES=1`); fingerprint l_A=302.889 = the refit grid base (B)   (read by P15_the_signature_collapses_at_the_adjudicated_ratio_and_the)
+  cc66_cr_x_lstep1                         ?   NO COMMAND in the repository; fingerprint l_A=172.841 matches none of A/B/C   (read by P15_the_full_range_refit_holds_the_background_and_the_phase_)
+  /tmp/n66/...                             B   launcher refit_grid185/launch.sh (B); the artefact is NOT IN THE REPOSITORY   (read by P15_the_resolution_table_eight_of_the_eleven_instruments_can)
+  /tmp/n66/r7041/                          B   launcher r7041_directions/launch_c.sh (B); the artefact is NOT IN THE REPOSITORY   (read by P15_the_band_rms_ratio_does_not_move_with_any_numerical_sett)
+  /tmp/n66/r7041/inj                       B   launcher r7041_directions/launch_c.sh (B); the artefact is NOT IN THE REPOSITORY   (read by P15_the_band_rms_ratio_does_not_move_with_any_numerical_sett)
+
+THE SEAM -- paragraphs citing receipts that rest on different CR configurations:
+  paragraph at lines 855-855: ?: P15_the_full_range_refit_holds_the_background_an; B: P15_the_full_range_refit_holds_the_background_an, P15_the_refit_leaves_the_background_where_the_di
+  paragraph at lines 1743-1743: ?: P15_the_combs_resolution_is_four_multipoles_and_; B: P15_the_combs_resolution_is_four_multipoles_and_, P15_the_visibilitys_clock_is_the_one_the_kernel_
+  paragraph at lines 1774-1774: ?: P15_the_combs_resolution_is_four_multipoles_and_; B: P15_the_combs_resolution_is_four_multipoles_and_
+
+receipts that themselves read more than one CR configuration:
+  ?+B    P15_the_full_range_refit_holds_the_background_and_the_phase_residual_was_quantised
+  ?+B    P15_the_combs_resolution_is_four_multipoles_and_the_skys_own_value_lies_outside_the_family
