@@ -6,13 +6,5 @@
     "since": "3dc652a1d9cc4cd7335ea80abcc5a552bbb4c5b2"
    }
   }
- },
- "claude/shadow-of-existence-setup-wgcmvt": {
-  "tolerance": {
-   "receipts/L237_gates_check_declarations/G50_the_receipt_runner_gate_was_green_because_its_cache_had_no_expiry.py": {
-    "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/36800878241",
-    "since": "5d85e6e401d822e0fa9defe89f23cc3b25f2a4f9"
-   }
-  }
  }
 }
