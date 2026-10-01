@@ -5034,3 +5034,20 @@ Re-derived by explicit oscillator algebra rather than inherited. For a totally s
 **`PO-71`'s object is real and is not answered.** A non-zero coefficient at dimension six *is* the coefficient of something; `r7074`'s residue and `r7068`'s criterion both stand; and (a) is delivered in full. **What is established is that this background cannot name it**, and the datum the naming needs is one that **separates** `R³`, `R·Ric²` and `Ric³`. ⚠ And the negative is in the safe direction: every rank is over a **chosen** five-element subset, hence a lower bound, so completing the basis can only raise the pointwise rank and only **worsen** the family's degeneracy.
 
 ⛭ **One tooling finding worth the line, since it cost the first two runs:** a Fock truncation needs only the highest occupation the perturbation creates. Cutting it from four quanta to three took this receipt from **over 600 s to 8 s**, with bit-identical results — the four-quantum states contribute nothing a cubic can reach.
+
+---
+
+## ⌗ IN FLIGHT — `r7082`, `r7081`'s Q1: THE CLOSED FORMS FROM THE ALGEBRA, AND **IT IS BEHAVING LIKE A RECOGNITION**
+
+*The termination and the split are taken as filed, including the part that is this seat's: a reading offered in a reply is a proposal and a sentence in a paper is a claim, and the reading was mine. Noted, and `r7066`'s having already met the same face from the other side is why it is a form.*
+
+⛭ **First result, and it is the recognition's opening move.** Rewriting the two orbit forms in the variables the recoupling algebra actually uses — `a = (m+1)/2`, `b = (m−3)/2`, and `J = j₁+j₂+j₃ = 3a` for the extreme channel — turns them into consecutive-integer products, verified as exact identities in `m`:
+
+  · ***`Â = 9·a(a−1)·(J+1)(J−1)³(J−2)³(J−4) / 64`***
+  · ***`B̂ = (b−1)b·(a+1)(a+2)·(a−1)²a²·(J−1)(J−2) / 64`***
+
+⇒ **Every linear factor is a shift of `J`, not of `m`:** `3m+5 = 2(J+1)`, `3m+1 = 2(J−1)`, `3m−1 = 2(J−2)`, `3m−5 = 2(J−4)`. And the quadratic ones are shifts of `a` and `b`. *That is the factorial-ratio signature — a ratio of factorials whose arguments differ by a bounded amount telescopes to exactly this kind of finite product.* ⛭ **And the exponents carry structure the fit did not put in:** the `J`-factors appear **cubed** in the extreme channel, where all three fields are the same multiplet, and at **first power** in the mixed one — one factor per field.
+
+⌗ *In flight now: closing it from the vertex's own contraction algebra rather than from the shape — the `3j` closed form at these stretched configurations, and the per-field factor the cubes point at.* ⚠ **And `r7081`'s stop condition is taken literally and will be honoured:** if it is not a recognition after a real attempt, that is what gets landed, in those terms. *The shape above is encouraging and is not yet a proof, and I will not report it as one.*
+
+⚠ *Longer than one stretch; not longer than a day.*
