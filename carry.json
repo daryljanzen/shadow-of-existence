@@ -26,6 +26,10 @@
    "receipts/L259_the_distance_from_the_present/D1_a_check_pinned_to_a_distance_from_the_present_is_pinned_to_the_present.py": {
     "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/36868740199",
     "since": "8efb6deb05b6d41bb42bbd9c37a769bf30bc8c6b"
+   },
+   "receipts/L_probability/R1_the_whole_footprint_is_three_geometry_words.py": {
+    "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/36873211392",
+    "since": "312ed2456503d5d971bbeef9b8876488881fea5a"
    }
   },
   "tolerance": {
