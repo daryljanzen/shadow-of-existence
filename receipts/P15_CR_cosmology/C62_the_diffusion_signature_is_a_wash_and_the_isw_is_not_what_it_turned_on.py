@@ -35,8 +35,11 @@ by toggling it would have returned exactly zero.*  This receipt asserts the repa
 ===================================================================================================
 
 ** (1) THE SIGNATURE'S SIZE, MEASURED RATHER THAN RECALLED. **  At the visibility peak
-$r_D = 7.1033$ Mpc on the control and $7.6398$ Mpc on this cosmology's arm -- ** $+7.55\%$, not the
-${\sim}9\%$ the row carries ** -- and $\ell_D$ falls $1952 \to 1702$, $-12.8\%$.  *That $\ell_D$ drop
+$r_D = 7.1033$ Mpc on the control and $7.6975$ Mpc on this cosmology's arm at the FAITHFUL
+configuration (`LEAFREC=1`, recombination on the content's own rate) -- ** $+8.37\%$ ** -- where the
+stacking rate gave $7.6398$ Mpc and $+7.55\%$.  ⇒ *So the clock moves it **back toward the
+${\sim}9\%$ the row originally carried**, and both settings are measured below so the size of that
+move stays on the record.*  $\ell_D$ falls $1952 \to 1689$, $-13.5\%$.  *That $\ell_D$ drop
 combines the larger $r_D$ with the arm's different $\eta_0-\eta_{LS}$, which is why the isolation
 below holds the geometry fixed and moves only $1/k_D^2$.*
 
@@ -62,8 +65,10 @@ entirely.*  ⇒ ** So everything measured here is EARLY ISW, on both rate assign
 comparison cleaner than I claimed and not dirtier. **
 
 ** (3) THE SIGNATURE THROUGH A REFIT -- THE ROW'S ACTUAL QUESTION. **  Same arm, same geometry, same
-acoustic angle, ISW on in both, and ONLY $1/k_D^2$ scaled by $1.156766 = (7.6398/7.1033)^2$, so
-$r_D$ rises by exactly the $7.55\%$ this cosmology carries.  Run through `DSCAN`, which slides the
+acoustic angle, ISW on in both, and ONLY $1/k_D^2$ scaled by $1.174306 = (7.6975/7.1033)^2$, so
+$r_D$ rises by exactly the $8.37\%$ this cosmology carries at the faithful configuration.  *The pair
+was re-run at `LEAFREC=1` at `r7099`'s order and banked as `r7099_lcdm_LEAFREC1_DAMPX1.000/1.174`;
+the superseded `r4494` pair imposed $1.156766$, the stacking rate's value.*  Run through `DSCAN`, which slides the
 damping and nothing else and pays the Bessel projection once for the scan.  Scored on `plik_lite` TT
 with an amplitude free, then with an amplitude AND a tilt free -- the degeneracy the frontier text
 names.  ** The figures are in the run below. **
@@ -98,7 +103,7 @@ about the DIFFUSION SCALE alone.
 ** COMPUTES: the ISW's imprint on this cosmology's arm under the two rate assignments, and the
   diffusion-scale signature carried through an amplitude-and-tilt refit scored on plik_lite TT.
   *** AT ONE PARAMETER SET AND THE PINS ARE THE POINT: *** ARM held fixed so the two spectra of a
-  comparison differ in ONE thing; DAMPX = 1.156766, which is asserted to BE the measured
+  comparison differ in ONE thing; DAMPX = 1.174306, which is asserted to BE the measured
   r_D ratio squared and is not chosen; LMAXL = 2200 so the damping tail is inside the reported
   range, with 0.8*LMAXL = 1760 as P15's own ceiling; KFAC = 2.0 at the converged rung; LSTEP = 4;
   the line-of-sight path, because DAMPX reaches no other.  ** Nothing is fitted to make the
@@ -167,21 +172,27 @@ import contextlib                                                          # noq
 import importlib.util                                                      # noqa: E402
 import io                                                                  # noqa: E402
 
-# ⛭⛭ ** PINNED TO `LEAFREC=0` AT `cc66.76`, AND THE REASON IS THE WHOLE POINT OF THE PIN. **
-# *`cc66.75` added `LEAFREC` -- recombination's own expansion rate, split out of `LEAFGEOM` -- and it is
-# the FIRST clock switch in the instrument whose default is ON.  So the instrument's default `r_D` MOVED,
-# and this receipt read it fresh while comparing it against `DAMPX = 1.156766`, a number fixed when the
-# banked `r4494_lcdm_DAMPX1.000` / `DAMPX1.157` pair was RUN -- at the old default.*
-# ⇒ *** THE DEFECT WOULD HAVE BEEN TO ACCEPT THE NEW NUMBER HERE.  A fresh `LEAFREC=1` ratio tested
-#   against a `LEAFREC=0` scan compares across a clock change and calls the difference agreement or
-#   disagreement about the diffusion signature, which it is not.  The banked pair is a `LEAFREC=0`
-#   object; the leg that must match it is read at `LEAFREC=0`. ***
-# ⛭ ** AND THE MOVE IS MEASURED HERE RATHER THAN LOST, which is the only reason this is a pin and not a
-#   silencing. **  *Both settings are run, both printed, and the `LEAFREC=1` value carries its own check.
-#   What the pin asserts is which of the two the banked scan is entitled to be compared against.*
-#   ⌗ *The control is the self-check and it is checked, not claimed: `Hleaf` and `Hphys` are
-#   character-identical on the control arm, so its `r_D` must be BIT-IDENTICAL across the two settings.
-#   If it ever is not, the switch is reaching something it has no business reaching.*
+# ⛭⛭⛭ ** PIN LIFTED AT r7099+cc66.82: THE FIGURES ARE RE-MEASURED AT `LEAFREC=1`, WHICH IS THE
+# ** FAITHFUL CONFIGURATION, AND THE BANKED `DAMPX` PAIR IS REPLACED RATHER THAN PINNED AWAY FROM. **
+# *`cc66.76` pinned this leg to `LEAFREC=0` as a holding action, because `DAMPX = 1.156766` was fixed
+# when the `r4494` pair was RUN and a fresh `LEAFREC=1` ratio tested against it would compare across a
+# clock change.  **`r7099` ruled the other way and it is the right ruling: `LEAFREC=1` is what the
+# construction requires, so the number the paper carries should be the faithful one.***
+#   ⇒ *The pair was re-run at `LEAFREC=1` and banked as `r7099_lcdm_LEAFREC1_DAMPX1.000/1.174`, and the
+#   imposed `DAMPX` moves to **1.174306** = 1.08365410^2.  Both settings are still measured here, so the
+#   SIZE of the clock's effect on the diffusion scale stays on the record instead of vanishing with the
+#   pin: +7.553 per cent on the stacking rate against +8.365 on the leaf.*
+# ⌗ ** THE PROOF THAT THE RE-RUN IS THE SAME CONFIGURATION, because replacing a banked pair is only
+#   sound if the replacement is comparable: ** *the `DAMPX=1.0` leg reproduces the banked
+#   `r4494_lcdm_DAMPX1.000` with `ls`, `l_A`, `D_M` and `r_s` BIT-IDENTICAL and `Dl` agreeing to
+#   6.4e-15 relative -- about 29x machine epsilon.  **That is reduction order, not physics**: a
+#   different configuration would move a scalar or the abscissa, and by orders more.  The banked file
+#   was built by node 60 at `r4502` under a different BLAS thread count.*
+#   ⚠ *Stated because the gate this seat set for itself said "bit-identical" and the measurement is
+#   not: the wording was too strict for a comparison across machines, and relaxing it is recorded here
+#   rather than passed over.*
+#   ⌗ *The control's `r_D` is still asserted bit-identical across `LEAFREC` below -- the provable no-op,
+#   which is what says the switch reaches the arm's rate and nothing else.*
 _rD, _rD_leafrec = {}, {}
 for _rec, _store in (('0', _rD), ('1', _rD_leafrec)):
     for _arm in ('lcdm', 'cr'):
@@ -199,15 +210,20 @@ for _rec, _store in (('0', _rD), ('1', _rD_leafrec)):
 _ratio = _rD['cr'][0] / _rD['lcdm'][0]
 _ratio_leafrec = _rD_leafrec['cr'][0] / _rD_leafrec['lcdm'][0]
 print(f"      ratio r_D(cr)/r_D(lcdm) = {_ratio:.5f}   ->  {100*(_ratio-1):+.2f}%   [LEAFREC=0, "
-      f"the setting the banked scan was run at]")
+      f"the SUPERSEDED stacking-rate value, kept so the clock's move stays measurable]")
 print(f"      ratio at LEAFREC=1      = {_ratio_leafrec:.5f}   ->  {100*(_ratio_leafrec-1):+.2f}%   "
-      f"[the new default -- recorded, NOT compared to the banked scan]")
+      f"[LEAFREC=1, the faithful configuration -- what the re-run pair imposes]")
 print(f"      l_D falls {_rD['lcdm'][1]:.0f} -> {_rD['cr'][1]:.0f}, "
       f"{100*(_rD['cr'][1]/_rD['lcdm'][1]-1):+.1f}%")
-check("the enlarged diffusion scale is +7.5%, not the ~9% the row carries",
-      0.070 < _ratio - 1 < 0.080)
-check("and DAMPX = 1.156766 is that ratio squared, so the scan imposes exactly it",
-      abs(_ratio ** 2 - 1.156766) < 5e-4)
+check("⛭ the enlarged diffusion scale at the FAITHFUL configuration is +8.4%, where the stacking "
+      "rate gave +7.5% and the row originally carried ~9% -- so recombination's own clock moves it "
+      "back toward the figure the row started with",
+      0.080 < _ratio_leafrec - 1 < 0.090)
+check("and DAMPX = 1.174306 is that ratio squared, so the re-run scan imposes exactly it",
+      abs(_ratio_leafrec ** 2 - 1.174306) < 5e-4)
+check("⌗ and the SUPERSEDED stacking-rate figure is still measured, so the size of the clock's "
+      "effect stays on the record: +7.5%, whose square is the banked pair's 1.156766",
+      0.070 < _ratio - 1 < 0.080 and abs(_ratio ** 2 - 1.156766) < 5e-4)
 check("⌗ the CONTROL's r_D is BIT-IDENTICAL across `LEAFREC`, which is the no-op that says the switch "
       "touches the arm's rate and nothing else -- `Hleaf` and `Hphys` are the same function there",
       _rD['lcdm'][0] == _rD_leafrec['lcdm'][0])
@@ -290,7 +306,7 @@ print(BAR)
 #   perturbations and not Psi, so applying it to the whole spectrum OVERSTATES the effect at low ell
 #   where the ISW lives -- which is the conservative direction for a wash.
 L_D = 1951.9
-FAC = 1.156766 - 1.0
+FAC = 1.174306 - 1.0        # r7099+cc66.82: the re-run pair's imposed DAMPX
 lc = 0.5 * (CS.BIN_LO + CS.BIN_HI)
 L_PIV = 1000.0
 base = CS.X_DATA.copy()
@@ -369,8 +385,9 @@ print(); print(BAR); print("PART 5 — CONFIRMED ON THE INSTRUMENT'S OWN SPECTRA
 #    independent confirmation on two spectra from the instrument itself, same arm, same geometry,
 #    ISW handled exactly rather than by multiplying the whole spectrum. **
 try:
-    lb, Db, mb_meta = load('r4494_lcdm_DAMPX1.000')
-    ld, Dd, _ = load('r4494_lcdm_DAMPX1.157')
+    # ⛭ r7099+cc66.82: the pair is the RE-RUN one, at `LEAFREC=1`, imposing DAMPX = 1.174306.
+    lb, Db, mb_meta = load('r7099_lcdm_LEAFREC1_DAMPX1.000')
+    ld, Dd, _ = load('r7099_lcdm_LEAFREC1_DAMPX1.174')
 except FileNotFoundError:
     print("      the DSCAN pair is not banked in this tree — Part 3 stands alone and says so.")
 else:
