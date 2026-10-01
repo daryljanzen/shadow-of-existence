@@ -5051,3 +5051,35 @@ Re-derived by explicit oscillator algebra rather than inherited. For a totally s
 ⌗ *In flight now: closing it from the vertex's own contraction algebra rather than from the shape — the `3j` closed form at these stretched configurations, and the per-field factor the cubes point at.* ⚠ **And `r7081`'s stop condition is taken literally and will be honoured:** if it is not a recognition after a real attempt, that is what gets landed, in those terms. *The shape above is encouraging and is not yet a proof, and I will not report it as one.*
 
 ⚠ *Longer than one stretch; not longer than a day.*
+
+---
+
+## `r7082` — `r7081`'s Q1 ANSWERED AS A **SPLIT**: the parity is PROVED, the closed forms are NOT, and the split is the delivery
+
+*Receipt: `receipts/P10_canonical_time/P10_the_parity_is_the_channel_lists_mirror_symmetry_so_it_is_proved_rather_than_fitted_but_the_closed_forms_are_not.py` — **18 checks, all pass, 0 s, exact throughout.** Fast job green on the tree that carries it.*
+
+**You asked for warrant rather than content. Warrant is what arrived — for the one fact that needed it.**
+
+### ⛭⛭⛭ THE PARITY IS A SYMMETRY OF THE CHANNEL LIST, IN THREE STEPS
+
+**(i)** `m → −m` is the **Casimir-preserving reflection `j → −j−1` applied to both labels, and it EXCHANGES them**: `a(−m) = −(b+1)` and `b(−m) = −(a+1)`, with the Casimir invariant both ways. **(ii)** The channel list is **closed** under the induced `a ↔ b` relabelling, **and so is each orbit** — the swap sends the `a`-count `k` to `3−k`, so `{0,3}` and `{1,2}` are exactly its blocks; *the orbits are the swap's own, not a grouping I put in*. **(iii)** The recoupling coefficient is **invariant** and the degeneracy factor is **odd**: every `2j+1` is `m±2` and `(−m)+2 = −(m−2)`, so `d_X(−m) = −d_{swap(X)}(m)` for all four shapes — with a control showing `2j+1` is *not* a function of the Casimirs and is therefore exactly where the sign comes from.
+
+⇒ **The term `d·|c|²` at `−m` is minus the swapped channel's at `m`, so an orbit closed under the swap has `S(−m) = −S(m)`. Every orbit sum is odd in `m`, hence so is the recoupling sum** — verified with the orbit coefficients left as **free symbols**, so it is the symmetry and not a property of any value. *No fit, no levels, no closed form used.*
+
+⛭⛭ **And it is unconditional — it does not use the mirror equality.** Give the two members of an orbit different coefficients and the oddness breaks; restore the swap-relation and it returns. So what the argument needs is the orbit's **closure**, which step (ii) proves — not your `r7056`'s observed equality. ⌗ **And that observation is now explained**: *"the two mirror channels contribute exactly equally, which this assembly did not put in"* is this reflection, with the equality its stronger half — the symmetry forces the pair to be each other's reflection, and equality says each is its own.
+
+⇒ ✔✔ **So `r7074`'s load-bearing fact no longer rests on the fit at all**, and the `m³` comes with it as the only odd factor the degeneracies can supply.
+
+### ⛔⛭ AND THE CLOSED FORMS DID NOT CLOSE — STOP CONDITION INVOKED, NOT STRETCHED
+
+Two routes, each named with the reason it stopped:
+1. **The a-priori degree bound** — which would have turned the six-level fit into an exact determination and the three held-out levels into a verification of the derivation. It needs the vertex contraction's degree bounded, and that could not be had without evaluating the contraction, which is the thing the bound was meant to avoid.
+2. **The Racah recognition on the factored shape.** The rewrite into consecutive-integer products in `a`, `b` and `3a` *is* an exact identity and is recorded as one — but it yielded no derivation.
+
+⇒ ***The closed forms are not recognisable from the algebra this construction has, by this seat, after a real attempt.*** They stand as `sec:lock` already states them, six levels fitted and three held out, and that limit is unchanged. **I am not grinding past this, as you said not to.**
+
+⌗ **And one self-check is reported because it is the shape that cost `PO-71` one revision ago.** The rewrite reads naturally as *"every factor is a shift of `J = 3a`"* — but `3a` is the sum of left spins **only in the extreme channel**; the mixed ones' own sums are `3a−2` and `3a−4`. Reading the mixed orbit's factors as shifts of *its* `J` would be a quantity taken off one domain and applied on another: the same error, one revision later, caught before it was used. **The rewrite is kept as an identity and is not presented as recoupling structure.**
+
+### ⚠ SCOPE
+
+The proof uses only that recoupling coefficients are rational in the Casimirs, that the list and each orbit are closed under `a ↔ b`, and the degeneracies' form — **so it holds at every level and is not a statement at the nine computed ones.** It proves the parity and **nothing else**: no closed form, no degree bound, no value. The fitted forms appear **only as a consistency check on the proof, never as evidence for it**, which is why the receipt computes the symmetry with free coefficients first.
