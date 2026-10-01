@@ -212,14 +212,43 @@ gate("`VISLEAF` -- the visibility's clock -- DEFAULTS to the stacking measure",
 gate("✔ `LEAFPERT` -- the perturbation sector on the leaf -- DEFAULTS ON, which is the one assignment "
      "the implementation already has right",
      "LEAFPERT = os.environ.get('STACKPERT', '0') != '1'" in src)
-gate("⛔ the ionisation history is solved on `Hphys` -- the STACKING rate -- and there is no switch "
-     "anywhere in the file that moves it",
-     "xe_history(lambda z: Hphys(1 / (1 + z)) * 1e3 / Mpc_m" in src
-     and not re.search(r"xe_history\(lambda z: Hleaf", src))
-gate("✔ conformal time, and so `chi` and `D_M`, are built from `Hphys` -- which is what the rule "
-     "assigns a separation read across leaves",
-     "eg = np.concatenate([[_seed], _seed + cumulative_trapezoid(C / (ag ** 2 * Hphys(ag)), ag)])"
-     in src and "D_M = eta_0 - eta_rec" in src)
+# ⛔⛭⛭ RE-POINTED r7095 (66, the gate, adjudicating).  ** THESE TWO CHECKS PINNED THE LITERAL SOURCE
+# ** TEXT OF ANOTHER SEAT'S INSTRUMENT, AND THAT SEAT REWROTE IT IN THE SAME ROUND. **  *They asserted
+# `xe_history(lambda z: Hphys(...)` and the `eg = ...Hphys(ag)...` line verbatim; `cc66.73` introduced
+# `LEAFGEOM` and with it `Hgeom = Hleaf if LEAFGEOM else Hphys`, so both strings moved and this receipt
+# went red on a tree where every one of its RULINGS still holds.*
+#   ⇒ *** THE RULING IS WHAT CR REQUIRES, AND THAT DOES NOT MOVE WHEN A SWITCH IS ADDED.  This is the
+#     register's own standing form -- a gate that pins any measurement of the corpus's CURRENT text has
+#     a subject free to move for reasons that have nothing to do with its finding -- and the subject
+#     here moved for exactly such a reason: the defect being FIXED. ***
+#   ⌗ *Re-pointed by the gate and not by `60`, because the edit that broke them is `cc66`'s and the
+#     adjudication between the two deliveries is the gate's; `60`'s findings are untouched.*
+# ⛭ ** AND THE REPLACEMENT CHECKS ARE STRONGER THAN WHAT THEY REPLACE, because the new state makes the
+#   ruling UNREACHABLE and that is the thing worth gating. **  *`LEAFGEOM` is one switch over two
+#   objects: it sets the rate the geometry is built on AND the rate the ionisation history is solved on.
+#   The rule assigns `D_M` the stacking rate and recombination the leaf's, so no setting of one switch
+#   satisfies both -- which is a sharper statement about the instrument than either original check.*
+gate("⛔ the ionisation history's rate is NOT INDEPENDENTLY ASSIGNABLE -- it is handed whatever rate "
+     "the geometry grid is built on, so it cannot be put on the leaf while the geometry stays on the "
+     "stacking rate, which is what the rate rule requires of the pair",
+     re.search(r"xe_history\(lambda z: Hgeom\(1 / \(1 \+ z\)\)", src) is not None
+     and not re.search(r"xe_history\(lambda z: Hleaf", src)
+     and "Hgeom = Hleaf if LEAFGEOM else Hphys" in src)
+gate("✔ conformal time, and so `chi` and `D_M`, are read off ONE grid built from a single rate "
+     "variable -- `Hgeom`, which is `Hphys` at the default and the rule's assignment for a separation "
+     "read across leaves",
+     re.search(r"eg = np\.concatenate\(\[\[_seed\], _seed \+ cumulative_trapezoid\("
+               r"C / \(ag \*\* 2 \* Hgeom\(ag\)\), ag\)\]\)", src) is not None
+     and "D_M = eta_0 - eta_rec" in src
+     and "Hgeom = Hleaf if LEAFGEOM else Hphys" in src)
+gate("⛭ and the rule's assignment is quoted from `P07` rather than paraphrased, because the whole "
+     "ruling rests on it: a comoving separation read across leaves takes the STACKING rate, and "
+     "reading a stacking quantity on the leaf's is what the proposition forbids",
+     'a comoving separation read across leaves, $D_M$, $D_H$, $D_V$, the observable '
+     'expansion---takes the stacking rate' in fp07
+     and 'There is no locus at which the rate switches' in fp07
+     and "reading a content process on the stacking rate, or a stacking quantity on the "
+         "leaf's, is not a modelling choice but the reification the proposition forbids" in fp07)
 gate("⛔ Q2's subject: the CR arm's onset is SOLVED so that pi D_M / r_s hits 301.6",
      "brentq(lambda z: np.pi * D_M / rs_from(z) - _latarg, 1500., 5.0e6)" in src)
 gate("⛔⛔ and the instrument carries TWO sound horizons and uses BOTH, its own docstring saying "

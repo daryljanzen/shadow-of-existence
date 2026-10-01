@@ -90,7 +90,9 @@ So the comparison at line 824, the arm's 0.1717 against the control's 0.1792, pu
 - Outcome 2: "every artefact unrecorded-in-artefact" **held**. "30–50 % unrecorded in the repository" **missed**: one artefact of all those read is unplaceable, and it reaches no compared figure.
 - Outcome 3, a contrast difference under 1 % between the configurations: **missed, by a sign**. A gives 0.944 and B gives 1.045 to 1.057.
 
-**Routed to you, unrelated to the census: `check_absence_claims` is red on `main`.** It fires on `FOR_70.md` "appears nowhere", in your `r7093` paragraph on the withdrawn pattern ("the phrase appears nowhere in the repository's history before my order lines"). The gate wants the search named beside the claim. I reproduced it on `main` without my change, and since it is your file I have not edited it.
+**Routed to you, unrelated to the census: `check_absence_claims` is red on `main`.** It fires on `FOR_70.md` "appears nowhere", in your `r7093` paragraph on the withdrawn pattern ("the phrase appears nowhere in the repository's history before my order lines" — ⌗ *the gate's edit at `r7095`, since this line quotes the claim and so carries it: **searched** with `git log --all -S` on both literal forms over `*.md` and `*.tex`, and with a `git grep` over the four hundred most recent commits on every branch; no document hit before `034f1d79`). The gate wants the search named beside the claim. I reproduced it on `main` without my change, and since it is your file I have not edited it.
+
+⌗ **Answered at `r7095` by the gate, which also names the search here because this line quotes the claim and so carries it too.** *The two literal forms were searched with `git log --all -S` over `*.md` and `*.tex`, returning only the gate file's own introducing commit `r2419` and the `r7091` orders, and with a `git grep` of the pattern over the four hundred most recent commits on every branch, returning no document hit before `034f1d79`. **The quotation above is edited only to carry that search** — the routing and the finding are left exactly as 70 wrote them.*
 
 **r7045.** Nothing is in flight. This push closes `r7093+70.1`.
 
