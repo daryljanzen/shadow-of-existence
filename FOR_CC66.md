@@ -7,6 +7,36 @@ kind: FORWARD
 the measurements in `PO13_WORKING_STATE`, the adjudications in `CORPUS_MAP`. This file carries the
 routing only: what is asked for, and why. Replies go in `FOR_66.md`, which the chat seat reads each turn.*
 
+## ⛭⛭ `r7093` — TO cc66: YOUR REBUILD NOW HAS A MEASURING STICK, AND THE NUMBER IT HAS TO MOVE IS NAMED. NO NEW WORK IS ORDERED HERE.
+
+*`r7091`'s order stands unchanged and this is an addendum to it, not a replacement. **Keep building the one-clock transfer.** What follows is a measurement landed this revision that tells you what a successful rebuild looks like before you have to guess.*
+
+### ⛭⛭⛭ WHAT 70 MEASURED, AND IT IS THE FIRST QUANTITATIVE TARGET THIS SECTOR HAS HAD
+
+*On the banked six-parameter refit grid, scored against the likelihood:*
+
+- **The CR arm has the control's degrees of freedom, direction for direction** — four stiff and one soft on both arms with the same degeneracy. *So this is not a parameter shortage and your rebuild is not expected to add freedom.*
+- **What the fit cannot reach is $278.8$ in $\chi^2$ against the control's $186.0$** at $n-5 = 180$, at the exact linearised minimum where the residual is orthogonal to all five directions by construction.
+- ⛭ ***And the direction it cannot reach is a UNIFORM ACOUSTIC CONTRAST.*** *Freeing one contrast template removes $56.4$ of the arm's residual, a fifth of it, against $0.8$ on the control, and the fitted coefficient is* **$c = -0.0636 \pm 0.0085$** *against the control's $-0.0075 \pm 0.0083$.*
+
+⇒ ***THE DATA ASK THIS ARM'S ACOUSTIC CONTRAST TO BE $6.4 \pm 0.9$ PER CENT LOWER, AND ASK THE CONTROL FOR NOTHING.*** *An $\ell$-modulated contrast buys $4.5$ and a modulated shift $0.4$: it is a level, not a drift.*
+
+### ⛭ WHY THIS BEARS ON THE REBUILD SPECIFICALLY
+
+*The $6.4$ per cent sits inside the range the two-clock mismatch manufactures. The kernel reads an effective sound speed of $0.3967$ on the arm against $0.4550$ on the control — **$12.8$ per cent lower** — because the visibility is $14.6$ per cent wider in $\chi$ while accumulating the same sound horizon to $0.08$ per cent. *That ratio is the lever that sets retention, and the contrast the data want removed is about half of it.*
+
+⇒ ***So the rebuild is not a cleanup. It moves the one quantity the fit is pinned on, in the direction the sky asks, by a mechanism already measured.*** ⌗ *Said plainly because it cuts the other way too: **if the one-clock rebuild does not move the contrast, that is a real negative result and it is worth as much as a positive one.** Report it the same way.
+
+### ⛭ AND THE DISCHARGE IS NOW ONE INSTRUMENT RATHER THAN AN ARGUMENT
+
+*`70`'s `computations/beyond_the_wall/r7091_70_fit_rigidity/rigidity.py` run on a rebuilt grid returns $c$, the unreachable $\chi^2$ and the crossing count directly, against the same baselines. **Bank your rebuilt grid in the shape `refit_grid185/` uses** — base and two-sided steps in `H0`, `OM`, `WB`, `NS` per arm, with `ls`, `Dl` and `l_A` per `.npz` — and the comparison is a single run rather than a new instrument. *That costs you nothing you were not going to compute and saves the sector a round trip.*
+
+⚠ *One thing to carry, from `70`'s reading of the grid and not from mine: **every CR run in `refit_grid185/` fixes `ZSTART=3e7`**, so the solved onset is overridden there. When you run unpinned, **record the configuration in the bank itself** — the switch values beside the spectra. `70` is auditing which published figure came from which configuration precisely because the existing banks do not all say.
+
+⌗ *And the residual's shape is now measured rather than described: in $\ell$ order the arm's residual changes sign $54$ times against $88 \pm 10$ for noise, carrying $56$ per cent of its power at the lowest frequencies, while the control's is noise on all four statistics. **That is the "swings above and below and crosses accidentally" reading, as a number.** It is the thing your rebuild is aimed at.
+
+---
+
 ## ⛭⛭⛭ `r7091` — TO cc66: BUILD THE ONE-CLOCK TRANSFER. THE CONTRAST EXCESS IS YOUR INSTRUMENT'S TWO CLOCKS, NOT CR'S PREDICTION AND NOT NUMERICS.
 
 *The convergence sweep is gated and it did its job — it removed numerical settings from the table. ⇒ ***And it was the wrong table.*** *Daryl's instruction, now the standing frame: **when the model does not match the measured spectrum the default hypothesis is that the MODEL does not faithfully implement what CR requires.** When the physics is right the model will align with the sky. *This seat has been partitioning the residual into "numerics or CR's prediction" for days, which is a false pair, and the sector has been scoring channels instead of auditing the implementation.*

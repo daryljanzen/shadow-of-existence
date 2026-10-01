@@ -1,0 +1,76 @@
+====================================================================================================
+  CONTROL (LCDM)   185 bins, lensing: CAMB at the control's parameters (the receipt's own fallback)
+  l_A at base 301.375   d l_A / d param: H0 -2.216, OM -144.492, WB +1296.179, NS +0.000
+
+  Q1 (1)  singular values of the whitened response, one receipt-step per parameter (A: 2 %):
+              58.87      31.04       4.76       2.34       0.65      [sqrt(dchi2) for a unit move along each]
+          effective rank: 4 with dchi2 > 1 per step;  5 above 1% of the largest;  condition 90
+          soft direction 5 (sv 0.65): A+0.54, H0+0.38, OM-0.69, WB+0.16, NS+0.24
+          soft direction 4 (sv 2.34): A+0.78, H0-0.27, OM+0.52, WB-0.07, NS+0.23
+          |cos| between whitened responses:
+              A  1.000  0.405  0.496  0.110  0.985
+             H0  0.405  1.000  0.991  0.856  0.402
+             OM  0.496  0.991  1.000  0.806  0.503
+             WB  0.110  0.856  0.806  1.000  0.115
+             NS  0.985  0.402  0.503  0.115  1.000
+
+  Q1 (2)  each parameter's response on (amplitude, SHIFT, CONTRAST), whitened; R^2 = share of the response the three templates carry
+          H0   amplitude -1.736e-02  shift -4.505e+01  contrast +1.474e+00   (contrast/shift -0.033)   R^2 0.979
+          OM   amplitude -1.376e-02  shift -2.233e+01  contrast +9.135e-01   (contrast/shift -0.041)   R^2 0.952
+          WB   amplitude -1.257e-03  shift +9.844e+00  contrast +1.721e+00   (contrast/shift +0.175)   R^2 0.863
+          NS   amplitude -5.520e-02  shift +6.751e-01  contrast +3.891e-01   (contrast/shift +0.576)   R^2 0.971
+          the 4x2 (shift, contrast) matrix: singular values 51.259, 2.067  -> ratio 0.040  (COLLINEAR: shift and contrast move together)
+          (the shift and contrast templates themselves: |cos| 0.078)
+
+  Q1 (3)  receipt-style fit (Nelder-Mead, closed-form A): H0 +0.0081, OM -0.0050, WB -0.0004, NS -0.0114   chi2 212.9 -> 186.3
+          the linearised GLS minimum, in receipt steps: A -2.201, H0 -0.318, OM +0.259, WB -0.629, NS -0.732
+          residual chi2 at the linear minimum 186.0 -- by construction UNREACHABLE by any linear move of the five -- against n-5 = 180 (+0.3 sigma)
+          + contrast, free                 would remove dchi2     0.8  ( 0.4% of the residual)
+          + contrast x (ell - mid), free   would remove dchi2     2.6  ( 1.4% of the residual)
+          + shift x (ell - mid), free      would remove dchi2     0.5  ( 0.3% of the residual)
+
+  Q2      the residual in ell order, per-bin sigma, against 20000 correlated noise draws with the fit's five directions removed:
+          crossings  data     87.000   noise     88.284 +-    9.582    -0.13 sigma   p(two-sided) 0.8968
+          longest    data      8.000   noise     13.893 +-    8.842    -0.67 sigma   p(two-sided) 0.7525
+          excursion  data    392.959   noise    759.060 +-  907.516    -0.40 sigma   p(two-sided) 0.9025
+          lowfreq    data      0.136   noise      0.128 +-    0.076    +0.11 sigma   p(two-sided) 0.6763
+====================================================================================================
+  CR, crossing   185 bins, lensing: CAMB at the control's parameters (the receipt's own fallback)
+  l_A at base 302.889   d l_A / d param: H0 -2.247, OM -159.959, WB +1304.477, NS +0.000
+
+  Q1 (1)  singular values of the whitened response, one receipt-step per parameter (A: 2 %):
+              61.13      32.55       4.86       2.61       0.63      [sqrt(dchi2) for a unit move along each]
+          effective rank: 4 with dchi2 > 1 per step;  5 above 1% of the largest;  condition 97
+          soft direction 5 (sv 0.63): A+0.64, H0+0.37, OM-0.61, WB+0.15, NS+0.26
+          soft direction 4 (sv 2.61): A+0.70, H0-0.34, OM+0.59, WB-0.09, NS+0.21
+          |cos| between whitened responses:
+              A  1.000  0.358  0.422  0.113  0.985
+             H0  0.358  1.000  0.993  0.879  0.357
+             OM  0.422  0.993  1.000  0.845  0.432
+             WB  0.113  0.879  0.845  1.000  0.121
+             NS  0.985  0.357  0.432  0.121  1.000
+
+  Q1 (2)  each parameter's response on (amplitude, SHIFT, CONTRAST), whitened; R^2 = share of the response the three templates carry
+          H0   amplitude -1.266e-02  shift -4.767e+01  contrast +1.124e+00   (contrast/shift -0.024)   R^2 0.976
+          OM   amplitude -1.076e-02  shift -2.580e+01  contrast +7.079e-01   (contrast/shift -0.027)   R^2 0.944
+          WB   amplitude -1.572e-03  shift +1.062e+01  contrast +1.726e+00   (contrast/shift +0.163)   R^2 0.868
+          NS   amplitude -5.618e-02  shift +7.278e-01  contrast +4.461e-01   (contrast/shift +0.613)   R^2 0.971
+          the 4x2 (shift, contrast) matrix: singular values 55.249, 2.004  -> ratio 0.036  (COLLINEAR: shift and contrast move together)
+          (the shift and contrast templates themselves: |cos| 0.082)
+
+  Q1 (3)  receipt-style fit (Nelder-Mead, closed-form A): H0 +0.0278, OM +0.0003, WB -0.0007, NS +0.0288   chi2 545.8 -> 301.2
+          the linearised GLS minimum, in receipt steps: A +0.170, H0 -2.815, OM +4.726, WB -2.118, NS -0.211
+          residual chi2 at the linear minimum 278.8 -- by construction UNREACHABLE by any linear move of the five -- against n-5 = 180 (+5.2 sigma)
+          + contrast, free                 would remove dchi2    56.4  (20.2% of the residual)
+          + contrast x (ell - mid), free   would remove dchi2     4.5  ( 1.6% of the residual)
+          + shift x (ell - mid), free      would remove dchi2     0.4  ( 0.1% of the residual)
+
+  Q2      the residual in ell order, per-bin sigma, against 20000 correlated noise draws with the fit's five directions removed:
+          crossings  data     54.000   noise     88.071 +-    9.659    -3.53 sigma   p(two-sided) 0.0003
+          longest    data     33.000   noise     14.126 +-    8.973    +2.10 sigma   p(two-sided) 0.0967
+          excursion  data   6177.848   noise    775.341 +-  937.859    +5.76 sigma   p(two-sided) 0.0072
+          lowfreq    data      0.559   noise      0.130 +-    0.077    +5.59 sigma   p(two-sided) 0.0002
+====================================================================================================
+  SUMMARY
+  lcdm  rank(dchi2>1) 4, shift/contrast sv-ratio 0.040, unreachable chi2 186.0 of n-5=180, crossings 87 vs noise 88.3 (p 0.8968)
+  cr    rank(dchi2>1) 4, shift/contrast sv-ratio 0.036, unreachable chi2 278.8 of n-5=180, crossings 54 vs noise 88.1 (p 0.0003)
