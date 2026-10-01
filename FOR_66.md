@@ -5350,6 +5350,53 @@ PINNED = {'systematic uncertainty': 1}
 
 ---
 
+## ⛭⛭⛭ `r7095` — **THE LICENSED CONFIGURATION MOVES NEITHER NUMBER. AND THE NULL YOU CREDITED ME FOR WAS READ ABOVE THE CEILING WHERE THE STATISTIC CONVERGES — SO IT REVERSES.**
+
+*Receipt `cc66.78`, `P15_the_licensed_configuration_moves_neither_statistic_and_the_swing_was_read_above_where_it_converges.py`. **22 checks, all pass.** The grids are banked in the repository — `r7095_directions/grid_licensed`, `r7093_directions/grid_oneclock`, and the two `LMAXL=1300` spectra the correction rests on — so nothing here is derived from `/tmp`.*
+
+### ⚑ THE FORK YOU FIXED IN ADVANCE RESOLVES THE SECOND WAY
+
+*You wrote it before any grid existed: **if the rule's own configuration ALSO drops $|c|$, the rule and the data agree and the forbidden route was just one way there. If it does NOT, the data are asking for the one object the rule pins.** I ran it and did not choose.*
+
+| | contrast $c$ (arm) | crossings | longest run | $\chi^2$/bin | $\sum$&#124;height dev&#124; |
+|---|---|---|---|---|---|
+| banked default | $-0.0636\pm0.0085$ ($-7.5\sigma$) | 30 | 18 | 3.05 | 0.068 |
+| **licensed** (`LEAFREC=1`, geometry on the stacking rate) | $-0.0642\pm0.0084$ ($-7.7\sigma$) | 36 | **22** | **3.20** | **0.100** |
+| forbidden (`LEAFGEOM=1`) | $-0.0069\pm0.0083$ ($-0.8\sigma$) | 44 | 12 | 1.47 | 0.081 |
+
+⇒ ***THE LICENSED CONFIGURATION MOVES THE CONTRAST COEFFICIENT BY $-0.08\sigma$ AND $|c|$ RISES ONE PER CENT.*** *It lengthens the longest run of one sign $18\to22$, worsens $\chi^2$, and is the worst of the three on the heights. **The forbidden one moves $c$ by $+6.70\sigma$, $|c|$ falling 89 per cent onto the control's own value.** The control's coefficient is identical across all three grids — the no-op that says what moved is the arm and not the method.*
+
+### ⛔⛭ AND THE PART THAT CORRECTS ME: THE SWING STATISTIC IS NOT CONVERGED, AND MY NULL WAS READ WHERE IT CANNOT DISCRIMINATE
+
+*You credited `cc66.73` for reporting against itself — the swing did not flatten, crossings $36\to30$ and the longest run $16\to18$, the wrong way on both. **That reproduces to the digit on its own pair. It was measured correctly. It was measured at `LMAXL=1300`, and read to $\ell\le1040$ that is 80 per cent of the run's own reported ceiling, against 52 per cent of the `LMAXL=2000` run's.** Both runs hold $k_{\max} = 2\,\ell_{\max}/D_M$, so this is the ceiling and not the arithmetic.*
+
+*A four-point ceiling scan localises it, and the pattern is not a wash:*
+
+| longest run of one sign | $\ell\le700$ | $\ell\le800$ | $\ell\le900$ | $\ell\le1040$ |
+|---|---|---|---|---|
+| banked default | 8 | 8 | 15 | 18 |
+| licensed | 9 | 9 | 13 | 22 |
+| forbidden | 9 | 9 | 9 | 12 |
+
+⇒ ***THE DISCRIMINATING FEATURE LIVES ABOVE $\ell\approx850$.*** *Below it all three configurations are indistinguishable at 8 or 9 bins, so **a reading taken there decides nothing** — which is what the shorter run was doing. Above it the banked default's longest run grows with the ceiling and the licensed configuration's grows faster, while the forbidden repair's stays flat. **So the statistic discriminates exactly where `LMAXL=1300` could not see it, and that is why that run read a null.***
+
+⌗ *The correction is the ceiling, not the arithmetic, and I am not withdrawing the earlier result — it is right about its own pair and the receipt asserts that reproduction before it explains it. What I am withdrawing is the inference that the swing settled the question.*
+
+### ⚠ WHAT THIS IS NOT, AND WHERE IT LEAVES THE ADJUDICATION WITH YOU
+
+- ⛔ ***It does not reinstate `LEAFGEOM=1`.*** *Your ruling is the gate's and it stands. I have not touched the switch's default and I am not resuming that build.*
+- ⇒ **What I am handing you is a conflict, not a defect:** *the configuration `P07`'s rate rule licenses does not move either number, and the configuration it forbids by name moves both, decisively and in the same direction. On the earlier reading those two statistics disagreed with each other; at the resolution where the swing can be trusted **they agree**, and they agree against the rule.*
+- ⚠ *Convergence is localised, not reached. The scan stops at the grids' own `LMAXL=2000`, so what is established is that readings below $\ell\approx800$ decide nothing and that the two resolutions disagree above it — **not that 2000 is converged.** If you want the question closed rather than relocated, the next thing is the same three-way comparison at a higher ceiling, and that is solver time I have not spent without your word.*
+- ⌗ *The heights are a trade and are reported as one: the forbidden repair puts $\ell_1/\ell_A$ four times closer to the sky while P1/P3 undershoots, so its summed height deviation is worse than the banked default's — even though the licensed configuration's is worse than both.*
+
+### ⌗ TWO THINGS `LEAFREC` ITSELF TURNED UP, SINCE THEY ARE YOURS TO RULE ON
+
+- ⛭ **`LEAFREC` moved the spectrum and left $\ell_A$, $D_M$ and $r_s$ BIT-IDENTICAL.** *That is `r6893+cc66.37`'s finding — no transfer function reads those three — holding again on a switch built after it, which is worth having as a second independent confirmation rather than a coincidence.*
+- ⚠ **Its default being ON cost three receipts, and I have pinned rather than re-measured them.** *`C62`, `C63` and `P15_the_one_fitted_number_moves_the_scale_and_not_the_peak` run the instrument fresh against numbers banked before the split, so each was comparing across a clock change. Each now pins `LEAFREC=0` for that leg with the reason in the file, and `C62` measures the move alongside rather than discarding it — recombination on its own rate enlarges the arm's diffusion scale from $+7.55\%$ to $+8.37\%$, back toward the `~9%` the row originally carried. **Lifting those pins means re-measuring numbers `P15` quotes, which rewrites the paper and is yours.**
+- ⌗ *And a process note worth one line: the fast job runs the generators and the `corpus/` gates but no receipts, so it cannot see a red of this kind. That is why this one reached CI rather than my own pre-push check.*
+
+---
+
 ## ⛭⛭⛭ `r7091` — **THE PROJECTION WAS READING RECOMBINATION 72 PER CENT AWAY FROM WHERE THE PLASMA PUTS IT. THE ONE-CLOCK BUILD FIXES THAT. IT DOES NOT FLATTEN THE SWING, AND THAT IS THE HALF I AM PUTTING FIRST.**
 
 *Receipt `cc66.73`, `P15_the_projection_read_recombination_at_the_wrong_conformal_time_and_one_clock_moves_it_72_per_cent.py`. Your frame was right and the defect was there.*

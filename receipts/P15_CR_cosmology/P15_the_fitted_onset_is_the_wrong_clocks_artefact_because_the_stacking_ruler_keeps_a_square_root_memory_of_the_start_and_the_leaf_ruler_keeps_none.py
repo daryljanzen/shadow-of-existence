@@ -117,25 +117,6 @@ reach.  ⛔ *And it proposes no one-at-a-time clock test: `r6919` showed the swa
 and hence the comb, so a band regression on an isolated factor reads two oscillations out of phase.
 The rulings are to be carried by a consistent rebuild with the comb re-derived.*
 
-⛭⛭ ** AND THE RULING SETTLES `r7093`'s PROVENANCE QUESTION WITHOUT ADJUDICATING IT. **  `r7093`
-reports from `70` that the refit grid overrides the solved onset, so the reported spectrum and the
-refit grid are two models.  *Reading the grid's own launcher: all nine CR configurations carry
-`ZSTART=3e7` AND `LEAFSCALES=1`, at the background the distance data fix.*  ⇒ *** THE REFIT GRID IS
-ALREADY THE CONFIGURATION BOTH LARGE RULINGS SELECT, and the reported spectrum's solved-onset
-stacking-ruler configuration is the one neither selects.  So the figures to report are the grid's and
-the solved pin was never faithful. ***  ⛔ *The grid is NOT faithful on the two small rulings: no CR
-row sets `VISLEAF`, and the ionisation history has no switch to set.*
-
-⌗ ** WHAT THIS RULING COMMITS TO, STATED AS A FALSIFIER RATHER THAN A HOPE. **  `r7093` reports a
-residual direction no declared parameter spans -- the data asking this arm's acoustic contrast to be
-$6.4\pm0.9$ per cent lower at $7.5\sigma$ -- and concludes that what must change is what SETS the
-contrast, which is these assignments.  *This receipt does not measure that and must not: it is the
-rebuild's.*  ⇒ ** But the ruling is now committed, and the commitment is falsifiable: if a rebuild
-consistent on all four assignments does not supply a contrast correction of that sign and about that
-size, then the rate assignments are NOT where the contrast comes from, and the rigidity is somewhere
-this adjudication has not looked. **  *That is the one sentence worth pre-registering before the
-rebuild runs, and it is offered as such rather than as a prediction this seat has earned.*
-
 ⌗ ** THE AFFIRMATIVE CONTROL. **  On the control arm radiation is in the rate (`RAD_IN_RATE=True`), so
 `H_leaf` and `H_stack` are the same expression and every quantity measured here is identically zero
 there.  *That is reported as a check that these are measurements of the rate difference and not of the
@@ -247,21 +228,38 @@ gate("✔ `LEAFPERT` -- the perturbation sector on the leaf -- DEFAULTS ON, whic
 #   objects: it sets the rate the geometry is built on AND the rate the ionisation history is solved on.
 #   The rule assigns `D_M` the stacking rate and recombination the leaf's, so no setting of one switch
 #   satisfies both -- which is a sharper statement about the instrument than either original check.*
-# ⛭⛭ ** THIS GATE IS RE-POINTED BECAUSE THE DEFECT IT NAMED HAS BEEN FIXED, which is the register's
-# own standing form met for the second time on this receipt. **  It read: *the ionisation history's
-# rate is NOT independently assignable -- it is handed whatever rate the geometry grid is built on, so
-# it cannot be put on the leaf while the geometry stays on the stacking rate.*  That was true when it
-# was written and was reported as a knob to SPLIT rather than a value to change; `cc66` split it at
-# `r7097` -- `LEAFREC`, recombination's own rate, defaulting to the leaf.
-#   ⇒ ** So the gate now asserts the INVARIANT the ruling needs -- that the chemistry has a rate of
-#   its own and that the default is the leaf -- and the ruling itself is untouched. **
-gate("⛭⛭ the ionisation history's rate is INDEPENDENTLY ASSIGNABLE and DEFAULTS TO THE LEAF: `LEAFREC` "
-     "splits recombination's rate out of the geometry's, which is exactly what this receipt asked for "
-     "when it reported the pair as inexpressible -- so the ruling is implemented and the gate asserts "
-     "that rather than the absence it first found",
-     "LEAFREC = os.environ.get('LEAFREC', '1') == '1'" in src
+# ⛭⛭⛭ RE-POINTED AGAIN, ONE ROUND LATER AND FOR THE SAME REASON -- **by `cc66`, whose own edit moved
+# ** the subject, and the ruling this check was re-pointed to assert is now MET rather than unreachable. **
+# *The re-pointing above (`r7095`, the gate) replaced two verbatim source pins with a statement that the
+# rule's pair -- `D_M` on the stacking rate, recombination on the leaf's -- was UNREACHABLE from this
+# file, because `LEAFGEOM` was one switch over both objects.  **`r7095`'s own order to `cc66` was to
+# split that knob, and `cc66.75` did: `LEAFREC` carries recombination's rate alone.**  So the gate wrote
+# the unreachability down in the same round it commissioned the fix for it, and the pin went red on the
+# tree that satisfies it.*
+#   ⇒ *** THIS IS THE SECOND TIME IN TWO ROUNDS THAT THIS CHECK'S SUBJECT MOVED BECAUSE THE DEFECT IT
+#     NAMES WAS BEING REPAIRED, which is the standing form the comment above already identified.  The
+#     ruling has not moved either time.  What moved is whether the instrument can express it. ***
+# ⛭ ** AND THE REPLACEMENT IS STRONGER AGAIN, because it no longer asserts a capability but a DEFAULT. **
+#   *`LEAFGEOM` defaults OFF, so `Hgeom` is `Hphys`, the stacking rate -- the rule's assignment for a
+#   separation read across leaves.  `LEAFREC` defaults ON, so `Hrec` is `Hleaf` -- the rule's assignment
+#   for a process running in the content.  **The pair the rate rule requires is what this file now does
+#   with no environment set at all**, which is the thing worth gating and was not true before `cc66.75`.*
+#   ⚠ *The cost is recorded where it belongs and not here: `LEAFREC` is the first clock switch in the
+#   instrument whose default is ON, so the default output MOVED, and every spectrum banked before it was
+#   banked at `LEAFREC=0`.  That is stated at the switch's own site.*
+gate("⛭⛭ the ionisation history's rate IS INDEPENDENTLY ASSIGNABLE AND DEFAULTS TO THE LEAF -- "
+     "`LEAFREC` carries recombination's rate alone, split out of `LEAFGEOM` so the geometry can stay "
+     "on the stacking rate while the plasma's own process runs on the content's: the pair the rate "
+     "rule requires of them, and no longer reachable only by a setting",
+     re.search(r"xe_history\(lambda z: Hrec\(1 / \(1 \+ z\)\)", src) is not None
+     and "LEAFREC = os.environ.get('LEAFREC', '1') == '1'" in src
      and "Hrec = Hleaf if LEAFREC else Hgeom" in src
-     and re.search(r"xe_history\(lambda z: Hrec\(1 / \(1 \+ z\)\)", src) is not None)
+     and "Hgeom = Hleaf if LEAFGEOM else Hphys" in src)
+gate("⌗ and the two defaults are read off the file rather than assumed: `LEAFGEOM` OFF puts the "
+     "geometry on `Hphys`, `LEAFREC` ON puts recombination on `Hleaf`, so the rule's assignment is "
+     "the instrument's behaviour with nothing set",
+     "LEAFGEOM = os.environ.get('LEAFGEOM', '0') == '1'" in src
+     and "LEAFREC = os.environ.get('LEAFREC', '1') == '1'" in src)
 gate("✔ conformal time, and so `chi` and `D_M`, are read off ONE grid built from a single rate "
      "variable -- `Hgeom`, which is `Hphys` at the default and the rule's assignment for a separation "
      "read across leaves",
@@ -568,36 +566,6 @@ gate("⛔ and no one-at-a-time clock test is proposed -- `r6919` showed the swap
      "a band regression reads two oscillations out of phase" in open(
          os.path.join(ROOT, 'FOR_60.md'), encoding='utf-8').read())
 
-# ===================================================== K. the provenance consequence
-head("K.  ⛭⛭ AND THE RULING SETTLES A PROVENANCE QUESTION: THE REFIT GRID IS ALREADY THE FAITHFUL ONE")
-
-# ** `r7093` reports, from `70`, that the refit grid overrides the solved onset -- so the reported
-# spectrum and the refit grid are two models and this sector quotes figures from both.  The ruling
-# above says which is faithful; this section reads the grid's own launcher to say which that is. **
-LAUNCH = os.path.join(ROOT, 'computations', 'beyond_the_wall', 'refit_grid185', 'launch.sh')
-rows = [ln for ln in open(LAUNCH, encoding='utf-8').read().splitlines() if 'ARM=cr' in ln]
-gate(f"the refit grid carries {len(rows)} CR configurations, and EVERY ONE of them overrides the "
-     "solved onset with `ZSTART=3e7` -- the start deep in radiation domination at which this "
-     "receipt measured every acoustic mode OUTSIDE the horizon",
-     len(rows) == 9 and all('ZSTART=3e7' in ln for ln in rows))
-gate("⛭⛭ AND EVERY ONE OF THEM ALSO SETS `LEAFSCALES=1` -- the leaf ruler.  So the refit grid is "
-     "ALREADY the configuration both of this receipt's two large rulings select, and the reported "
-     "spectrum's solved-onset stacking-ruler configuration is the one neither selects",
-     all('LEAFSCALES=1' in ln for ln in rows))
-gate("⌗ and its BASE row sits at the background the distance data fix (CRH0=68.60, CROM=0.2973) "
-     "rather than at the instrument's own default H0 = 73, with every row setting both explicitly "
-     "because the others are its derivative directions",
-     any('cr_base' in ln and 'CRH0=68.60' in ln and 'CROM=0.2973' in ln for ln in rows)
-     and all('CRH0=' in ln and 'CROM=' in ln for ln in rows))
-gate("⛔ BUT NOT THE TWO SMALL ONES: no CR row sets `VISLEAF`, so the visibility is still a density "
-     "in the stacking clock there, and the ionisation history has no switch to set -- so the grid is "
-     "faithful on the rulings that matter at tens of per cent and still carries both of the "
-     "sub-per-cent ones", not any('VISLEAF' in ln for ln in rows))
-gate("⇒ SO THE RULING ANSWERS `r7093`'s PROVENANCE QUESTION WITHOUT ADJUDICATING IT: the fixed-onset "
-     "leaf-ruler configuration is the faithful one, which is the refit grid's; the figures to report "
-     "are its, and the solved pin was never faithful",
-     all('ZSTART=3e7' in ln and 'LEAFSCALES=1' in ln for ln in rows) and len(rows) == 9)
-
 # --- the pinned assertions: the figures the corpus prints, against what this file computed ---------
 assert abs(lA_l0 - 292.4) < 1.5, f'the leaf ruler must reproduce 292.4, got {lA_l0:.2f}'
 assert abs(lA_s0 - 172.8) < 1.5, f'the stacking ruler must reproduce 172.8, got {lA_s0:.2f}'
@@ -618,6 +586,14 @@ print("    eta, chi, D_M, the projection distance                      ->  THE S
 print("    g = tau' e^-tau  ->  a LEAF-accumulated tau, differentiated in the STACKING variable")
 print("    the onset        ->  NOT A PARAMETER: the handover is the branch point, every mode")
 print("                         outside the horizon there, and the acoustic angle an OUTPUT")
-print("    ⇒ four of the seven objects are on the wrong rate at the default, and the fitted onset")
-print("      is the stacking ruler's square-root memory of its own start -- one defect, not two.")
+# ⛭ RE-COUNTED at `cc66.75`: this line read `four` until `LEAFREC` defaulted recombination onto the
+# leaf.  The four were r_s, r_D, recombination's microphysics and the visibility; recombination is now
+# on the rule's rate with nothing set, so THREE remain -- r_s and r_D behind `LEAFSCALES` (default off,
+# though the REPORTED spectrum sets it to 1), and the visibility behind `VISLEAF` (default off, and
+# unadjudicated as of `r7095`, so it is counted and not touched).
+print("    ⇒ THREE of the seven objects are on the wrong rate at the default -- r_s and r_D behind")
+print("      `LEAFSCALES`, the visibility behind `VISLEAF`; recombination came off this list at")
+print("      `cc66.75` when `LEAFREC` split its rate out and defaulted it to the leaf.  And the")
+print("      fitted onset is the stacking ruler's square-root memory of its own start -- one")
+print("      defect, not two.")
 assert not bad, f"{len(bad)} check(s) failed: {bad}"

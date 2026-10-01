@@ -1,0 +1,72 @@
+r7093 / r7095 -- THE CONTRAST COEFFICIENT c, MEASURED. Banked because the spectra live in /tmp and
+the grids cost ~50 minutes of four cores each; the numbers are what the receipt will carry.
+
+Measured with r7093_directions/contrast_on.py, which imports 70's own
+r7091_70_fit_rigidity/rigidity.py and contrast_size.py and changes exactly one thing: the directory
+the grid is read from. It proves itself on the banked grid first and refuses to continue if 70's
+published coefficients are not reproduced.
+
+  GRID                     ARM c                       CONTROL c                  notes
+  refit_grid185            -0.0636 +- 0.0085 (-7.5s)   -0.0075 +- 0.0083 (-0.9s)  70's published, REPRODUCED
+  grid_oneclock            -0.0069 +- 0.0083 (-0.8s)   -0.0075 +- 0.0083 (-0.9s)  LEAFGEOM=1, the FORBIDDEN repair
+  grid_licensed            (pending)                   -0.0075 +- 0.0083          LEAFGEOM=0 LEAFSCALES=1 LEAFREC=1 VISLEAF=0, onset dissolved
+
+** THE FORBIDDEN REPAIR REMOVES THE CONTRAST ANOMALY ALMOST ENTIRELY: |c| falls 89 per cent, a move
+of +0.0567 = 6.7 banked sigma, and the arm lands on the control's own value (-0.8 sigma against
+-0.9). **  The data's 7.5-sigma demand for 6.4 per cent less acoustic contrast becomes a 0.7 per cent
+demand at 0.8 sigma.
+
+⛔ AND THAT IS THE CONFIGURATION `P07`'s RATE RULE FORBIDS, which is why this file exists rather than a
+receipt claiming it. `r7095` adjudicated `LEAFGEOM=1` out: `D_M` is a comoving separation read across
+leaves and takes the stacking rate, and reading a stacking quantity on the leaf's is forbidden by name.
+  ⌗ The control's c is unchanged to four decimals because the control's nine spectra are COPIES --
+  `LEAFGEOM` is a provable no-op there -- so that row is the measurement's own consistency check and
+  not an independent result.
+
+⚠ ** WHAT THIS DOES AND DOES NOT SETTLE, because the two halves point different ways. **
+  - The swing did NOT flatten under the same repair at LMAXL=1300: crossings 36 -> 30 and the longest
+    run of one sign 16 -> 18 bins, the wrong direction on both, with chi^2 falling 19 per cent only
+    once an amplitude and a tilt were marginalised.
+  - The contrast coefficient DOES collapse under it, on the statistic `r7093` named as the target.
+  ⇒ *** So the forbidden repair removes the thing the data demand at 7.5 sigma while leaving the
+  residual's alternating shape in place. Those are different statistics and they disagree about
+  whether it is the fix. ***
+  ⇒ *** AND IT SHARPENS WHAT THE LICENSED RUN DECIDES: if the rule's own configuration also drops |c|,
+  the rule and the data agree and the forbidden route was merely one way to reach it. If it does not,
+  the data are asking for the one object the rule pins, and that is a conflict between the framework's
+  rate rule and the sky rather than an implementation defect. *** Neither is assumed here.
+
+================================================================================
+CORRECTED AT cc66.78 (r7095 Q3) -- THE CEILING, NOT THE ARITHMETIC
+================================================================================
+The note above says the swing did NOT flatten under the forbidden repair at
+LMAXL=1300: crossings 36 -> 30 and the longest run 16 -> 18. That reproduces
+exactly on its own pair and is banked here unchanged, because it was measured
+correctly.
+
+What it got wrong is the inference. Read to ell <= 1040, LMAXL=1300 is 80 per
+cent of that run's own reported ceiling (k_max = 2 l_max / D_M) against 52 per
+cent of an LMAXL=2000 run's. At LMAXL=2000 the SAME comparison reverses:
+crossings 30 -> 44 and the longest run 18 -> 12.
+
+A four-point ceiling scan localises why. Longest run of one sign:
+
+                ell<=700   ell<=800   ell<=900   ell<=1040
+  banked           8          8          15         18
+  licensed         9          9          13         22
+  forbidden        9          9           9         12
+
+Below ell ~ 800 all three configurations are indistinguishable, so a reading
+taken there decides nothing. The discriminating feature lives above ell ~ 850 --
+exactly where the shorter run could not see it.
+
+AND THE FORK THIS NOTE SET UP RESOLVES THE SECOND WAY. The licensed
+configuration (LEAFREC=1, geometry left on the stacking rate) moves the contrast
+coefficient by -0.08 sigma with |c| RISING 1 per cent, lengthens the longest run
+18 -> 22, worsens chi2/bin 3.05 -> 3.20, and is the worst of the three on the
+peak heights. It moves neither statistic. So this is a conflict between the rate
+rule and the sky to adjudicate, not an implementation defect to repair -- and
+r7095's ruling against LEAFGEOM=1 stands either way.
+
+Banked in receipts/P15_CR_cosmology/
+  P15_the_licensed_configuration_moves_neither_statistic_and_the_swing_was_read_above_where_it_converges.py
