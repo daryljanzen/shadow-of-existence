@@ -1,4 +1,12 @@
 {
+ "claude/shadow-of-existence-setup-6awafl": {
+  "tolerance": {
+   "receipts/L_numerics/Q1_a_stated_tolerance_is_a_request_and_the_corpus_answers_it.py": {
+    "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/36804721287",
+    "since": "3dc652a1d9cc4cd7335ea80abcc5a552bbb4c5b2"
+   }
+  }
+ },
  "claude/shadow-of-existence-setup-wgcmvt": {
   "tolerance": {
    "receipts/L237_gates_check_declarations/G50_the_receipt_runner_gate_was_green_because_its_cache_had_no_expiry.py": {
