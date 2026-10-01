@@ -11,14 +11,6 @@
    }
   }
  },
- "claude/shadow-of-existence-setup-6awafl": {
-  "tolerance": {
-   "receipts/L257_the_label_did_double_duty/V1_a_strike_that_reads_as_done_and_a_paper_that_says_otherwise.py": {
-    "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/36789032282",
-    "since": "304ac661c298043a40f65cb12a87697237821bb8"
-   }
-  }
- },
  "claude/shadow-of-existence-setup-wgcmvt": {
   "tolerance": {
    "receipts/L218_reader_package/C2_the_rule_is_enforceable_and_enforceable_means_severe.py": {
