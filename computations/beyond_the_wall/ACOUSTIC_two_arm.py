@@ -228,10 +228,49 @@ def Hphys(a):
     return H0 * np.sqrt(t)
 
 
+def Hleaf(a):
+    return H0 * np.sqrt(OM / a ** 3 + OL + OR / a ** 4)            # radiation gravitates: L2
+
+
+# ⛭⛭⛭ ** LEAFGEOM=1: THE CONFORMAL-TIME GRID AND THE COMOVING DISTANCE ON THE LEAF RATE -- THE
+#   PIECE `r7091` ORDERED BUILT BECAUSE IT DID NOT EXIST AND HAD NO KNOB. **
+# *Every other clock assignment in this file was already switchable: `LEAFPERT` moves the perturbation
+# dynamics, `LEAFSCALES` moves r_s and r_D, `PHASEONLY` moves the oscillator's phase alone.  ** The one
+# thing no switch reached is the TIME VARIABLE ITSELF. **  `eg` below is the conformal time, and it was
+# built from `Hphys`; so `a_of_eta`, `eta_rec`, `eta_0`, `D_M = eta_0 - eta_rec`, `ETA_ON`, `ETA_END`,
+# every `CubicSpline(eg, ...)` abscissa, and -- the one that matters -- the projection kernel's own
+# argument `x0 = eta_0 - eta` in `los_spectrum`, were all in STACKING conformal time.*
+#   ⛔ ** AND THAT IS WHAT MAKES THE TWO CLOCKS, not a rescaled source. **  `r6919+cc66.42` measured it
+#   and this seat reported it: the acoustic phase accumulates on the LEAF rate (`sound_phase`) while
+#   `x0`, WHAT THE KERNEL READS, is built from `Hphys`.  On the control the two rate expressions are
+#   character-identical so `Jac == 1` everywhere; on the arm `Jac` runs 0.789 to 0.913 across +-3 FWHM
+#   of the visibility.  ⇒ *So the projection integral
+#   Delta_l = INT S(k, eta) j_l(k(eta_0 - eta)) d eta had S parametrised by one clock and j_l's
+#   argument by the other.  That is not a physics preference between two rates: it is two
+#   parametrisations of one history inside one integral.*
+# ⇒ ** LEAFGEOM=1 builds the grid, and therefore the whole geometry, on `Hleaf`, so the instrument
+#   carries ONE clock end to end.  With `LEAFSCALES=1` (r_s, r_D) and `LEAFPERT` (the perturbations,
+#   default on) that is every clock assignment on the leaf and none left on the stack. **
+#   ⌗ *The consequences are ASSERTED below rather than assumed: `Jac_of` must be exactly 1, `Phi2_of`
+#   exactly 1, and the two sound-horizon accumulators identical -- because under one clock they are the
+#   same object, and if any of those three is not 1 the build has not done what it claims.*
+# ⚠ ** WHAT IT DOES NOT DO, SAID HERE SO IT IS NOT READ INTO THE RESULT: it does not collapse the arm
+#   onto the control. **  *The arms differ three ways and this touches ONE: the rate.  The CR arm keeps
+#   its own initial data -- the handover, Theta-hat flat in k with a common phase and zero velocities,
+#   started at the onset -- and its own DISCRETE k ladder, sqrt(L(L+2))*stretch out to KMAXL against the
+#   control's `linspace`.  Those two are what make it the CR arm, and neither is a rate.*
+#   ⌗ *The density fractions are untouched either way: `_rt` is the full STACK on both arms by
+#   construction, so what moves is the rate the GEOMETRY is read on and nothing else.*
+# ⚠ ** DEFAULT OFF AND BYTE-IDENTICAL, and on the CONTROL it is a provable no-op at any setting **
+#   because `Hleaf` and `Hphys` are character-identical there -- which is the self-check, and it is
+#   checked rather than claimed.
+LEAFGEOM = os.environ.get('LEAFGEOM', '0') == '1'
+Hgeom = Hleaf if LEAFGEOM else Hphys       # the rate the TIME VARIABLE and the geometry are built on
+
 ag = np.logspace(-9, 0, 40000)
-_seed = float(quad(lambda a: C / (a ** 2 * Hphys(a)), 1e-16, ag[0], limit=200)[0])
-eg = np.concatenate([[_seed], _seed + cumulative_trapezoid(C / (ag ** 2 * Hphys(ag)), ag)])
-Hc_of = CubicSpline(eg, ag * Hphys(ag) / C)                       # comoving Hubble, 1/Mpc
+_seed = float(quad(lambda a: C / (a ** 2 * Hgeom(a)), 1e-16, ag[0], limit=200)[0])
+eg = np.concatenate([[_seed], _seed + cumulative_trapezoid(C / (ag ** 2 * Hgeom(ag)), ag)])
+Hc_of = CubicSpline(eg, ag * Hgeom(ag) / C)                       # comoving Hubble, 1/Mpc
 # ** LEAFPERT=1: THE PERTURBATION SECTOR ON THE LEAF'S RATE (option (b)).  P7's rate-rule remark
 # assigns the perturbations to the leaf: "a quantity computed from a process running IN the content
 # --- the plasma's sound horizon, its diffusion length, recombination, the perturbations --- takes
@@ -253,8 +292,7 @@ Hc_of = CubicSpline(eg, ag * Hphys(ag) / C)                       # comoving Hub
 # so every spline and grid is untouched, rs, D_M and the projection keep the stacking rate (L1, and
 # what sec:tensions assigns them), and in the lcdm arm H_leaf == H_stack identically, making this a
 # NO-OP THERE -- which is the self-check. **
-def Hleaf(a):
-    return H0 * np.sqrt(OM / a ** 3 + OL + OR / a ** 4)            # radiation gravitates: L2
+# ⌗ `Hleaf` is DEFINED ABOVE, beside `Hphys`, because `LEAFGEOM` needs it before the grid is built.
 # ** DEFAULT ON (r3409).  The perturbation sector runs on the LEAF congruence, which is what the
 # framework assigns it: P7's rate-rule remark reads "a process running in the content --- ... ---
 # takes the leaf's", and P15 `sec:tensions` names the PERTURBATIONS on that side too (it differs
@@ -266,7 +304,9 @@ def Hleaf(a):
 # the earlier results in PO13_WORKING_STATE can be reproduced. **
 LEAFPERT = os.environ.get('STACKPERT', '0') != '1'
 Hl_of  = CubicSpline(eg, ag * Hleaf(ag) / C)                       # comoving leaf Hubble, 1/Mpc
-Jac_of = CubicSpline(eg, Hphys(ag) / Hleaf(ag))                    # d eta_leaf / d eta_stack
+Jac_of = CubicSpline(eg, Hgeom(ag) / Hleaf(ag))                    # d eta_leaf / d eta_grid
+# ⌗ `Hgeom`, not `Hphys`: the Jacobian is between the clock the GRID is in and the leaf's, so
+#   under `LEAFGEOM=1` it is identically 1 -- which is the statement that there is one clock.
 # ⛭⛭ ** r_s ACCUMULATED TO eta, ON EACH CLOCK SEPARATELY -- r6919+cc66.42. **
 # *`rs_from` gives the sound horizon at RECOMBINATION, which is the ruler l_A is read against.  The
 # INJECTION of `r6919`'s order needs the phase the plasma has accumulated at each eta ACROSS the
@@ -280,7 +320,7 @@ Jac_of = CubicSpline(eg, Hphys(ag) / Hleaf(ag))                    # d eta_leaf 
 #   ⌗ *`x0` is the same object on both arms: chi(eta) = eta_0 - eta, so d chi / d eta == 1 on each.
 #     The two-clock structure is between r_s and eta, NOT between chi and eta.*
 _csi = lambda H: C / (ag ** 2 * H(ag) * np.sqrt(3 * (1 + RB_REC * ag / A_REC)))
-rs_stack_of = CubicSpline(eg, np.concatenate([[0.0], cumulative_trapezoid(_csi(Hphys), ag)]))
+rs_stack_of = CubicSpline(eg, np.concatenate([[0.0], cumulative_trapezoid(_csi(Hgeom), ag)]))
 rs_leaf_of = CubicSpline(eg, np.concatenate([[0.0], cumulative_trapezoid(_csi(Hleaf), ag)]))
 # ** PHASEONLY=1: reckon ONLY the oscillator's phase in leaf conformal time, nothing else -- the
 # PURE-CLOCK operation, isolated from LEAFPERT's full leaf dynamics.  Scaling the photon PRESSURE
@@ -297,7 +337,24 @@ PHASEONLY = os.environ.get('PHASEONLY', '0') == '1'
 # (0.6764) -- so the sky lies BETWEEN the two operations and the physical question is which power
 # the restoring term carries.  Identically 1 in the lcdm arm for any power, so still a no-op there. **
 PHASEPOW = float(os.environ.get('PHASEPOW', '2'))
-Phi2_of = CubicSpline(eg, (Hphys(ag) / Hleaf(ag)) ** PHASEPOW if PHASEONLY else np.ones_like(ag))
+Phi2_of = CubicSpline(eg, (Hgeom(ag) / Hleaf(ag)) ** PHASEPOW if PHASEONLY else np.ones_like(ag))
+# ⛭⛭ ** GATE ZERO FOR THE ONE-CLOCK BUILD: ITS THREE CONSEQUENCES ARE CHECKED, NOT ASSUMED. **
+# *`r7041+cc66.70`'s pattern -- a claim the code depends on is a claim the code tests.  Under
+# `LEAFGEOM=1` the instrument asserts that it carries ONE clock, and the statement has exactly three
+# machine-checkable consequences: the Jacobian between the grid's clock and the leaf's is 1; the
+# phase-only clock factor is 1; and the two sound-horizon accumulators are the SAME FUNCTION, because
+# under one clock they are the same object.*
+#   ⛔ *If any of the three fails, the build has not done what it says and the run must not report a
+#   spectrum -- a geometry half-moved is worse than one not moved, because its numbers look readable.*
+if LEAFGEOM:
+    _j = np.abs(Jac_of(eg) - 1.0).max()
+    _p2 = np.abs(Phi2_of(eg) - 1.0).max()
+    _drs = np.abs(rs_stack_of(eg) - rs_leaf_of(eg)).max()
+    if not (_j < 1e-12 and _p2 < 1e-12 and _drs < 1e-9):
+        raise SystemExit(f"  ⛔ LEAFGEOM=1 but the clocks have not merged: max|Jac-1| = {_j:.3e}, "
+                         f"max|Phi2-1| = {_p2:.3e}, max|rs_stack-rs_leaf| = {_drs:.3e} Mpc")
+    print(f"  __ONECLOCK__ LEAFGEOM=1: one clock end to end -- max|Jac-1| = {_j:.1e}, "
+          f"max|rs_stack-rs_leaf| = {_drs:.1e} Mpc", flush=True)
 _rt = OR / ag ** 4 + OM / ag ** 3 + OL                            # ** the STACK, both arms **
 # ** GSRC=1: THE CONSTRAINT FACTOR.  The G^0_0 equation is k^2 Phi + 3H(Phi'+H Psi) = -4 pi G a^2
 # drho.  Writing the source as (3/2) H^2 sum(Om_i d_i) uses H^2 = (8 pi G/3) a^2 rho_tot -- the
@@ -369,7 +426,9 @@ def rs_from(z_lo):
     # LEAFSCALES=1.  The PHASE ACCUMULATOR for the oscillator and Q is `sound_phase`, which is
     # always the leaf's -- so at LEAFSCALES=1 the two coincide and the instrument carries ONE
     # sound horizon, which is what the adjudication asks for.
-    H = Hleaf if LEAFSCALES else Hphys
+    # ⌗ `Hgeom` in the else branch: under `LEAFGEOM=1` there is one clock, so the ruler is on it
+    #   whether or not `LEAFSCALES` is also set -- a one-clock run cannot carry two r_s.
+    H = Hleaf if LEAFSCALES else Hgeom
     return quad(lambda a: C / (a ** 2 * H(a) * np.sqrt(3 * (1 + RB_REC * a / A_REC))),
                 1.0 / (1.0 + z_lo), A_REC, limit=250)[0]
 
@@ -457,7 +516,7 @@ sys.path.insert(0, os.path.join(os.path.dirname(os.path.dirname(os.path.dirname(
 from RD_diffusion_direct import xe_history, n_H0_of, sigT, Mpc_m, xe_total       # noqa: E402
 
 _YP = 0.2454
-_zg, _xeg = xe_history(lambda z: Hphys(1 / (1 + z)) * 1e3 / Mpc_m, OMBH2, _YP,
+_zg, _xeg = xe_history(lambda z: Hgeom(1 / (1 + z)) * 1e3 / Mpc_m, OMBH2, _YP,
                        z_hi=3000.0, z_lo=80.0, n=6000)
 _nH0 = n_H0_of(OMBH2, _YP)
 
@@ -671,7 +730,7 @@ def evolve(kk, t_eval=None, e_end=None, y_init=None):
             # (node 57 r3369).  Diagnostic of whether the under-produced odd-even alternation is the
             # late plasma start (missing oscillation history) rather than the driving. **
             _leaf = (_phi_mode == 'entryleaf')
-            _Hrate = Hleaf if _leaf else Hphys
+            _Hrate = Hleaf if _leaf else Hgeom
             _Hc_g = ag * _Hrate(ag) / C
             _phi = np.zeros(nk)
             for _j, _k in enumerate(kk):
