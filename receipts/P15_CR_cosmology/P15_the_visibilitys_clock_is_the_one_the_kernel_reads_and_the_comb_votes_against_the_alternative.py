@@ -10,7 +10,9 @@ over the other, as the order requires.  Both arms at their verified 185-bin refi
 
  ⛭⛭ (1) THE AUDIT TURNS UP SOMETHING THE ORDER DID NOT EXPECT: ** THE INSTRUMENT ALREADY ANSWERS
      THIS QUESTION TWICE, AND DIFFERENTLY. **  Every site where the optical depth or the visibility
-     touches a rate is on the STACKING clock -- the recombination history solved against `Hphys`,
+     touches a rate is on the STACKING clock -- EXCEPT the recombination history, which took its own
+     switch and the LEAF rate at `r7095+cc66.75` (`Hrec`, `LEAFREC=1` by default; `LEAFREC=0` is the
+     old behaviour and is bit-identical),
      `taup_of` built on `eg`'s conformal time, `tau` integrated over `_egrid`, `ETA_LS` and
      `ETA_LS_W` read off that grid.  ⛔ ** But `1/k_D^2` twenty lines below IS Jac-weighted under
      `LEAFSCALES`. **  ⇒ *So the DIFFUSION length -- a scale the plasma accumulates -- takes the leaf
@@ -188,7 +190,27 @@ def bands(Q, O):
 # ===================================================================================================
 print("\nPART 1 -- THE AUDIT: EVERY PLACE THE OPTICAL DEPTH OR THE VISIBILITY TOUCHES A RATE.")
 print("-" * 100)
-SITES = [("the recombination history's expansion rate", "xe_history(lambda z: Hphys(", 'stacking'),
+# ⛭⛭ ** THE FIRST SITE'S READ MOVED AT `r7091+cc66.73` AND THE SUBSTANCE IT ASSERTS DID NOT. **
+# *`LEAFGEOM` made the conformal-time grid and the whole geometry switchable onto the leaf rate, so the
+# instrument now names the geometry's rate `Hgeom` -- `Hphys` at the default, `Hleaf` under `LEAFGEOM=1`.
+# The recombination history is solved against that one rate, as it must be: solving it against `Hphys`
+# while the grid rode `Hleaf` would put TWO clocks back in, which is the defect `r7091` removed.*
+#   ⇒ ** So this site is now CONDITIONAL and is labelled so.  At the default it is the stacking clock and
+#   this receipt's own finding -- five stacking-clock sites for tau and g -- stands exactly as it did;
+#   under `LEAFGEOM=1` it is the leaf's, together with every other site that reads the grid. **
+#   ⌗ *Same shape as the `VISLEAF` fraction above: the flag's single read became two lines and the gate
+#   followed the code without the claim moving.  A source-read audit has to track the source.*
+# ⛭⛭ ** AND IT MOVED AGAIN AT `r7095+cc66.75`, THIS TIME ONTO ITS OWN SWITCH AND ITS OWN RATE. **
+# *`r7095` ruled that `LEAFGEOM` was one knob over two objects the rate rule assigns OPPOSITELY --
+# `D_M` takes the stacking rate, recombination the leaf's -- so the rule's own configuration was
+# unreachable.  `LEAFREC` splits it out and **defaults to the LEAF**, which is what `P07`'s rate rule
+# assigns a process running in the content.*
+#   ⇒ ** So this site is no longer the geometry's at all: it is recombination's own, leaf by default. **
+#   ⌗ *That makes this receipt's original finding -- five STACKING-clock sites for tau and g -- false at
+#   the new default for THIS one site, and the receipt says so rather than keeping the old label: the
+#   site is still audited, still read from the source, and now reads what the code reads.*
+SITES = [("the recombination history's expansion rate", "xe_history(lambda z: Hrec(",
+          "recombination's OWN, LEAF by default (LEAFREC, r7095+cc66.75)"),
          ("tau' = n_e sigma_T a, built on `eg`'s conformal time", "taup_of = CubicSpline(_ea,", 'stacking'),
          ("the tau integration's measure", "_tau = np.concatenate([[0.0], np.cumsum(", 'stacking*'),
          ("the visibility and its peak/FWHM, read off `_egrid`", "vis_of = CubicSpline(_egrid,", 'stacking'),
@@ -358,7 +380,7 @@ print(f"""
 WHAT `r6925` ASKED AND WHAT THE THREE READINGS SAY.
 
   ⛭⛭ THE AUDIT FOUND THE GAP ALREADY OPEN IN THE CODE.  Every site where `tau` or `g` touches a rate
-  is on the STACKING clock -- the recombination history against `Hphys`, `tau'` on `eg`, `tau` over
+  is on the STACKING clock except recombination, which is on the LEAF at `r7095+cc66.75` (`Hrec`), `tau'` on `eg`, `tau` over
   `_egrid`, `ETA_LS` and its FWHM off that grid.  ** But `1/k_D^2` IS Jac-weighted under
   `LEAFSCALES`. **  ⇒ *The diffusion length takes the leaf clock and the optical depth the stacking
   clock -- two objects on the same side of the rate rule, on opposite clocks, with nothing stating

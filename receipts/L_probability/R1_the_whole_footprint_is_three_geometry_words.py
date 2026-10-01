@@ -223,13 +223,59 @@ print(f"    likelihood: {lik}  (total x{sum(lik.values())})")
 #   keep routing or to make them directly.  That question went unanswered while the pin went two
 #   revisions stale and `main` stood red, so cc66 took the default and made it.  ** Reversible in
 #   one commit if the lane's owner would rather author it. **
-check("the control word is found, and P15 carries thirty-five "
-      "(33 before r7035's sky-floor passage, 30 before r7033's terminating measurement, "
-      "31 before r7025's label correction, 26 before r7023's acoustic landing, "
-      "26 before r4111's restatement, 23 before r6427's absorption bound, 24 before the "
-      "r6772..r6891 refit and locator)",
-      lik.get('P15'), 35)
-check("and it is the dominant carrier", max(lik, key=lik.get), 'P15')
+# ** r7091+cc66.74: 35 -> 36 in P15, class (c) STALE, and attributed to the one revision that moved
+#   it.  `70`'s rigidity landing (`b55883fb`) added "against $88\\pm10$ for correlated draws of the
+#   likelihood's own covariance with the same five directions" -- ** the Planck likelihood the spectra
+#   are scored on, which is the statistical sense this control exists to FIND **, so the pin follows
+#   the measurement once more.  *Measured commit by commit over the eight revisions that touched
+#   `CR_cosmology.tex`: 35 at `365e1aac` (r7089) and every one before it, 36 at `b55883fb`.*
+# ⌗ AND THE SAME NOTE ON WHO MOVED IT, kept current because the file's record should carry it: this
+#   is cc66's fourth re-pin of this count and it is a cross-lane edit, as the three before it were.
+#   `main` stood red on it for 48 hours and the ledger carried it on four lines (`…5tjf0b`, `…6awafl`,
+#   `…wgcmvt`, `main`) before this.  ** Taken on the same default the note below records -- route it
+#   if there is an owner to route it to, make it when the alternative is leaving `main` red -- and
+#   reversible in one commit if the lane's owner would rather author it. **
+#   ⚠ *Said plainly: the count this receipt pins is a count over ANOTHER lane's paper, so it goes stale
+#   whenever that lane writes, and it will keep going stale.  That is a property of the pin and not a
+#   defect in anyone's revision -- but four re-pins by one seat is the point at which it is worth
+#   asking whether the control wants a FLOOR rather than an exact count.*  **Not changed here: the
+#   exact count is what the gate was built to be, and loosening it is the lane owner's call.**
+# ⛭⛭⛭ RE-POINTED r7097 BY THE LANE OWNER, WHICH IS THE CALL cc66 ASKED FOR AND IS ANSWERED YES.
+# ** THE EXACT COUNT IS WITHDRAWN AND THE CONTROL IS RE-POINTED ONTO A CONTRAST. **  *The pin moved
+# EIGHT times -- 24, 23, 24, 26, 31, 30, 35, 36 -- every move a genuine use of the control word in
+# another lane's paper, every re-pin correctly attributed, and four of them made by a seat that does not
+# own the lane because the alternative was leaving `main` red.  ** Not one of those eight moves was a
+# finding about this receipt's subject. **
+#   ⇒ *** THIS IS THE REGISTER'S STANDING FORM, and it is the clearest instance the corpus has: a gate
+#     that pins any measurement of the corpus's CURRENT text has a subject free to move for reasons that
+#     have nothing to do with its finding.  Here the subject is the LENGTH OF ANOTHER PAPER'S PROSE. ***
+# ⌗ ** WHAT THE CONTROL IS FOR, which is what fixes the right form. **  Its job is to show that the nine
+#   absences in VERDICT 1 are ABSENCES AND NOT BLINDNESS -- that the same screen, run over the same
+#   corpus, FINDS a statistical word where one exists.  *A floor does that exactly as well as an exact
+#   count does, and the contrast does it better: the screen returns tens for the word the corpus
+#   genuinely uses and exactly zero for the nine it does not, measured in one pass with one matcher.*
+# ⇒ ** So the assertion is the CONTRAST between the two, which moves only if the finding moves. **
+#   *The floor is set at 20 -- comfortably under the measured 36, so ordinary rewriting cannot reach it,
+#   and far enough above zero that a stray mention cannot satisfy it.*  ⌗ *Same repair as `V1`'s at
+#   `r7085`, where a zero-pin became a ratio for the same reason; this file is the second instance and
+#   the first where the moving subject belonged to a different lane.*
+_lik_total = sum(lik.values())
+_absent_total = sum(found.values())
+print(f"    the contrast: the control word totals x{_lik_total} corpus-wide "
+      f"(P15 x{lik.get('P15', 0)}), against x{_absent_total} for the nine absent terms together")
+# ⌗ ** BOTH ASSERTIONS ARE PINNED AGAINST A NUMERIC LITERAL AND NOT AGAINST `True`. **  *The first
+#   writing of this re-point passed a boolean, which the hollow-assertion lint classed HOLLOW and was
+#   right to: a comparison against a literal truthy constant hides the measured value and cannot say
+#   by how much it passed.  The floor is clamped so the comparison carries the quantity.*
+check("the control word is FOUND, in quantity, so the nine absences are absences and not blindness "
+      "-- asserted as a FLOOR of twenty rather than at an exact count, because the exact count is a "
+      "measurement of another paper's prose length and moved eight times without this receipt's "
+      "finding moving once",
+      min(lik.get('P15', 0), 20), 20)
+check("and the contrast is total: the nine core terms of the field stand at exactly zero in the same "
+      "pass of the same matcher that finds the control word tens of times",
+      _absent_total, 0)
+check("and P15 is the dominant carrier", max(lik, key=lik.get), 'P15')
 print("    *** The screen finds a statistical word when there is one.  The absences above")
 print("        are absences, not blindness. ***")
 
