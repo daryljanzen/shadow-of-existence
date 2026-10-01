@@ -223,12 +223,30 @@ print(f"    likelihood: {lik}  (total x{sum(lik.values())})")
 #   keep routing or to make them directly.  That question went unanswered while the pin went two
 #   revisions stale and `main` stood red, so cc66 took the default and made it.  ** Reversible in
 #   one commit if the lane's owner would rather author it. **
-check("the control word is found, and P15 carries thirty-five "
-      "(33 before r7035's sky-floor passage, 30 before r7033's terminating measurement, "
+# ** r7091+cc66.74: 35 -> 36 in P15, class (c) STALE, and attributed to the one revision that moved
+#   it.  `70`'s rigidity landing (`b55883fb`) added "against $88\\pm10$ for correlated draws of the
+#   likelihood's own covariance with the same five directions" -- ** the Planck likelihood the spectra
+#   are scored on, which is the statistical sense this control exists to FIND **, so the pin follows
+#   the measurement once more.  *Measured commit by commit over the eight revisions that touched
+#   `CR_cosmology.tex`: 35 at `365e1aac` (r7089) and every one before it, 36 at `b55883fb`.*
+# ⌗ AND THE SAME NOTE ON WHO MOVED IT, kept current because the file's record should carry it: this
+#   is cc66's fourth re-pin of this count and it is a cross-lane edit, as the three before it were.
+#   `main` stood red on it for 48 hours and the ledger carried it on four lines (`…5tjf0b`, `…6awafl`,
+#   `…wgcmvt`, `main`) before this.  ** Taken on the same default the note below records -- route it
+#   if there is an owner to route it to, make it when the alternative is leaving `main` red -- and
+#   reversible in one commit if the lane's owner would rather author it. **
+#   ⚠ *Said plainly: the count this receipt pins is a count over ANOTHER lane's paper, so it goes stale
+#   whenever that lane writes, and it will keep going stale.  That is a property of the pin and not a
+#   defect in anyone's revision -- but four re-pins by one seat is the point at which it is worth
+#   asking whether the control wants a FLOOR rather than an exact count.*  **Not changed here: the
+#   exact count is what the gate was built to be, and loosening it is the lane owner's call.**
+check("the control word is found, and P15 carries thirty-six "
+      "(35 before r7091's rigidity landing, 33 before r7035's sky-floor passage, "
+      "30 before r7033's terminating measurement, "
       "31 before r7025's label correction, 26 before r7023's acoustic landing, "
       "26 before r4111's restatement, 23 before r6427's absorption bound, 24 before the "
       "r6772..r6891 refit and locator)",
-      lik.get('P15'), 35)
+      lik.get('P15'), 36)
 check("and it is the dominant carrier", max(lik, key=lik.get), 'P15')
 print("    *** The screen finds a statistical word when there is one.  The absences above")
 print("        are absences, not blindness. ***")
