@@ -90,16 +90,6 @@
   }
  },
  "main": {
-  "suite": {
-   "receipts/P15_CR_cosmology/C41b_a_tilde_on_a_settled_value_is_a_stale_hedge.py": {
-    "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/36882457247",
-    "since": "7259906f83a0c08903dc7bad910abe3932cfce89"
-   },
-   "receipts/P15_CR_cosmology/P15_the_licensed_configuration_moves_neither_statistic_and_the_swing_was_read_above_where_it_converges.py": {
-    "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/36898280131",
-    "since": "c2bef014a436b79ac5a8a707ce633eaea0aee28e"
-   }
-  },
   "tolerance": {
    "receipts/P15_CR_cosmology/P15_the_licensed_configuration_moves_neither_statistic_and_the_swing_was_read_above_where_it_converges.py": {
     "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/36898280131",
