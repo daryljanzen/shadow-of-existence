@@ -55,8 +55,17 @@ def c_on(grid):
     return out
 
 
+# ⛔ ** FIXED AT `cc66.77`: THE SELF-PROOF WAS BOUND TO "THE FIRST GRID IN THE LIST" RATHER THAN TO
+# ** THE BANK, so naming a rebuilt grid made the rebuilt grid the thing that had to reproduce `70`'s
+# ** published c -- and a rebuilt grid disagreeing with it is the measurement, not a driver fault. **
+# *The driver refused to read `grid_licensed` for exactly the reason it exists to report.  The bank is
+# now PREPENDED unconditionally: the proof always runs where it means something, and every named grid
+# gets its `WHAT MOVED` baseline for free instead of depending on argument order.*
+BANK = os.path.join(ROOT, 'computations', 'beyond_the_wall', 'refit_grid185')
+
+
 def main(argv):
-    grids = argv or [os.path.join(ROOT, 'computations', 'beyond_the_wall', 'refit_grid185')]
+    grids = [BANK] + [g for g in argv if os.path.abspath(g.rstrip('/')) != os.path.abspath(BANK)]
     print(__doc__.split('⌗ Usage')[0])
     print('=' * 100)
     first = None
@@ -75,7 +84,8 @@ def main(argv):
                 print(f"           configuration recorded in the bank: {sw[:110]}")
         if first is None:
             first = r
-            # ⛔ the self-proof: refuse to go on if 70's own number is not reproduced
+            # ⛔ the self-proof: refuse to go on if 70's own number is not reproduced ON THE BANK --
+            #    which is now always the first grid read, by construction above
             for arm, (pc, ps) in PUBLISHED.items():
                 c, s, _ = r[arm]
                 assert abs(c - pc) < 5e-4, (f"{arm}: c = {c:+.6f} does not reproduce 70's {pc:+.4f} -- "

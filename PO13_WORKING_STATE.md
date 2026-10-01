@@ -6540,3 +6540,39 @@ geometry is a grid of runs and is not ordered.
 is no longer reproducible from the tree, $\max|\Delta D_\ell| = 7.14\times10^{-3}$; **the pre-patch code
 differs from it by the same amount to every digit**, so the drift predates this build. Both sides of
 every comparison above are same-revision runs.
+
+## cc66.78 — `r7095` Q3: the licensed configuration moves neither statistic, and the swing was read above where it converges
+
+**Receipt** `receipts/P15_CR_cosmology/P15_the_licensed_configuration_moves_neither_statistic_and_the_swing_was_read_above_where_it_converges.py` — 22 checks, all pass. Grids banked in-tree: `computations/beyond_the_wall/r7095_directions/grid_licensed` (nine arm runs at `ARM=cr HIER=1 LEAFREC=1 LEAFSCALES=1 LMAXL=2000 LSTEP=8 ZSTART=3e7`, control's nine copied from `refit_grid185`), `r7093_directions/grid_oneclock`, and `r7095_directions/lmaxl1300` (the pair `cc66.73` measured).
+
+### The three configurations, same ell sampling, same control files
+
+| | contrast `c` (arm) | crossings | longest run | mean abs extremum | chi2/bin | sum abs height dev |
+|---|---|---|---|---|---|---|
+| banked `refit_grid185` | −0.0636 ± 0.0085 (−7.5σ) | 30 | 18 | 1.353 σ | 3.05 | 0.068 |
+| licensed `LEAFREC=1` | −0.0642 ± 0.0084 (−7.7σ) | 36 | 22 | 1.217 σ | 3.20 | 0.100 |
+| forbidden `LEAFGEOM=1` | −0.0069 ± 0.0083 (−0.8σ) | 44 | 12 | 1.039 σ | 1.47 | 0.081 |
+
+Shape statistics at `--lmax 1040 --tilt` through `r7091_directions/shape.py`; `c` through `r7093_directions/contrast_on.py`, which reproduces 70's published −0.0636 (arm) and −0.0075 (control) on the banked grid before any comparison. The control's `c` is identical across all three grids — its nine runs are the same nine files.
+
+- **Licensed moves `c` by −0.08σ and |c| RISES 1%.** Longest run 18 → 22, chi2/bin 3.05 → 3.20, heights the worst of the three. It moves neither statistic.
+- **Forbidden moves `c` by +6.70σ, |c| falling 89% onto the control's value**, with crossings 30 → 44 and the longest run 18 → 12.
+
+### The convergence finding, which corrects cc66.73's inference
+
+`cc66.73` reported crossings 36 → 30 and longest run 16 → 18 under the forbidden repair — the wrong way on both. That reproduces exactly on its own `LMAXL=1300` pair, so it was measured correctly. Read to ell ≤ 1040 it is 80% of that run's own reported ceiling against 52% of the `LMAXL=2000` run's; both hold `k_max = 2 l_max / D_M`.
+
+Longest run of one sign against the read ceiling:
+
+| | ell ≤ 700 | ell ≤ 800 | ell ≤ 900 | ell ≤ 1040 |
+|---|---|---|---|---|
+| banked | 8 | 8 | 15 | 18 |
+| licensed | 9 | 9 | 13 | 22 |
+| forbidden | 9 | 9 | 9 | 12 |
+
+Below ell ≈ 800 all three are indistinguishable, so a reading taken there decides nothing. The discriminating feature lives above ell ≈ 850, where the banked default's longest run grows with the ceiling and the licensed configuration's grows faster while the forbidden repair's stays flat. **The correction is the ceiling, not the arithmetic**, and convergence is localised rather than reached — the scan stops at the grids' own `LMAXL=2000`.
+
+### Two by-products of `LEAFREC`
+
+- `LEAFREC=1` moved the spectrum (max rel 6.5%) and left `l_A`, `D_M` and `r_s` **bit-identical** to the banked run — `r6893+cc66.37`'s diagnostics finding confirmed again on a switch built after it.
+- Its default being ON put three instrument-running receipts in conflict with numbers banked before the split. `C62`, `C63` and `P15_the_one_fitted_number_moves_the_scale_and_not_the_peak` now pin `LEAFREC=0` for the leg whose target predates it, with the reason in each file. `C62` measures the move rather than discarding it: recombination on its own rate takes the arm's diffusion scale from +7.55% to +8.37%, and the control's `r_D` is asserted bit-identical across the switch. Lifting those pins means re-measuring numbers `P15` quotes — routed to the gate, not done here.
