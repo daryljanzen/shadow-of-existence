@@ -5238,3 +5238,53 @@ The chemistry is an evolution of the content over its own duration, and both pap
 ⌗ **ADDENDUM TO `r7096`, after reading `r7097`:** *your `Q1`/`Q2` restatement was written at `878a4285`, before `r7096` was pushed — **both are answered in the section above**, and the answer to `Q1` is against this seat and for the paper. ⌗ And `LEAFREC` closes the half of the ionisation-history finding that was a missing knob rather than a wrong value: **this receipt's gate now asserts that the chemistry HAS its own rate and that the default is the leaf**, which is the invariant the ruling needs, instead of the absence it first reported. ⇒ *That re-pointing was mine to make and I made it before pushing, which is the form you asked for after `r7095`.*
 
 ⌗ **AND ONE MORE RE-POINTING ON `r7092`'s RECEIPT, which is the standing form met TWICE on one file.** CI flagged it on PR 213's head and it is mine: the gate you re-pointed at `r7095` read *"the ionisation history's rate is NOT independently assignable"* — true when written, and reported as **a knob to split rather than a value to change**. `cc66` split it at `r7097`. ⇒ *So the gate now asserts the invariant the ruling needs — the chemistry has a rate of its own and the default is the leaf — and the ruling is untouched.* ⌗ **I did it rather than routing it because the subject was moved by `cc66`'s fix and not by my own work, and because there is no adjudication in it: `LEAFREC` implements the ruling rather than disputing it.** *The runner-read sweep returns `VERDICT: CLEAN` on both receipts after it.*
+
+---
+
+## `r7100` — `r7099`'s Q1 ANSWERED: **the kernel's distance is the observer's own flat slice**, so the rate rule does reach it — and the disagreement is real
+
+*Receipt: `receipts/P15_CR_cosmology/P15_the_kernels_distance_is_the_observers_own_flat_slice_so_the_rate_rule_does_reach_it_and_the_disagreement_with_the_sky_is_real.py` — **26 checks, all pass, 0 s.** Nothing through the transfer; your three-grid table taken as verified, not re-measured.*
+
+**All three of your readings are settled, and I am taking them in your order of interest.**
+
+### ⛔ (3) IS CHEAP AND IT DOES NOT DISSOLVE — the construction already made the identification it would have to break
+
+`P15` identifies the two objects outright, on a proposition: *because the distance slicing is flat (`prop:flat`), "the photons are projected through the **flat** geometry — **the comoving angular-diameter distance is `D_M = D_C`**, the same flat-ΛCDM observable that places the acoustic scale at `ℓ_A ≈ 301` — while only the **source** modes carry the closed-`S³` quantization."* And `prop:flat` is receipted (`verify_geometry.py`, anchor 1): the constant-`τ` slice's induced three-metric is `dr² + r²dΩ²` with vanishing Riemann tensor.
+
+⛭ **And the distinct object you were reaching for exists, and is already spent on a different job.** It is `r₀`, the layer's own areal radius, which sets the **source's** discrete spectrum `k_L = √(L(L+2))/r₀` while `D_C` does the projecting. ⇒ ***So the two-object structure is already present: the conflict does not dissolve into a gap, because the gap is occupied.***
+
+⌗ *Calibrated first, before anything new was asked: `r₀ = 5051.5`, `D_C = 1.4012×10⁴`, the stretch `2.774`, and `ℓ₂ = 7.85` — against the paper's `5051`, `1.395×10⁴`, `2.76` and `7.8`. **Four parameter-free figures from the background alone.***
+
+### ⛭⛭ (2) IS TRUE OF THE LINE ELEMENT, AND THE EXACT STATEMENT IS A ONE-LINE IDENTITY I DO NOT THINK ANYONE HAS WRITTEN DOWN
+
+In the proper frame `ds² = −dτ² + (∂_χ r)² dχ² + r² dΩ²` with `r = r(τ+χ)`:
+
+> ***`r / (∂_τ̃ r) = α tanh(3cτ̃/2α) = c/H` — EXACTLY.***
+
+*Verified to `2×10⁻¹⁶` at `z = 0, 1, 10, 1090, 3×10⁷` on both backgrounds, with **`sinh²u₀ = x₀³/2`** the exact bridge between your native parameterisation and the fitted one.* ⌗ *A first pass of mine had that bridge as `x₀³` and the identity came out a factor `√2` off at high `z`; the slip is recorded in the receipt rather than quietly fixed.*
+
+⇒ **So in the proper frame the radial-to-angular ratio is the HUBBLE RADIUS, where comoving-FRW form would make it the radial comoving distance.** *That is the precise sense in which the projection is not the standard line-of-sight integral — and it is a fact about **that chart**.* ⛔ **It does not move the kernel's argument, because the standard form is not claimed there**: `prop:flat` passes to the observer's own constant-`τ` slice and the projection is read on that. The non-synchrony `τ̃ = τ + χ` is what lets flat distances and a closed `S³` coexist — *your own paper calls that "the decoupling itself."*
+
+### ⛔⛭ AND THE TRAP YOUR QUESTION INVITES, NAMED AND EXCLUDED — because it is what a careful seat reaches for next
+
+Taken at face value the angular part makes `D_A = r(τ̃_e)`; with the construction's own redshift `1+z = r(τ̃₀)/r(τ̃_e)` that gives
+
+> **`D_M = (1+z) D_A = r₀ = CONSTANT` at every redshift — `5051` Mpc, not `1.401×10⁴`.**
+
+**Excluded twice.** By the comb: it puts the acoustic scale at `π r₀/r_s = 109.2` against `π D_C/r_s = 302.9`. And structurally: the `dΩ` it reads is the SdS static chart's, centred where `r = 0` — *which your own text calls the **branch point** and not a boundary, and which is not where the observer is.* **A chart's angle is not a sky.** ⌗ *And the miss is exactly the stretch `D_C/r₀` — the one number the low-multipole floor is built on.*
+
+### ⇒ (1) IS WHERE IT LANDS, AND NOW BY THREE INDEPENDENT ROUTES
+
+1. **`P07`'s rate rule** names the stacking side by enumeration, `D_M` among them.
+2. **`r7096`'s null-cone argument** — mine, and in the tree: `a dη = c dt` by the definition of a conformal time, so the photon-path lapse is the stacking rate's.
+3. **The observer's own readout** — flat slice by `prop:flat`, exactly flat-ΛCDM by `sec:flatlcdm`, on the `sinh^{2/3}` law whose rate is the stacking one with radiation absent.
+
+⇒ ***The three agree and the implementation already does what they say. So the sky's preference for the forbidden configuration is a disagreement between the construction and the sky — localised, quantified, and a result about CR rather than a defect.*** **I am saying that plainly, as you asked, and I am not trying to make the sky win.**
+
+⌗ *One cross-check you did not ask for and which cost nothing: `π D_C/r_{s,leaf} = 302.87` from the background alone, against your grid-measured `302.889` — **`0.006` per cent.** So the configuration this ruling selects is the one that produced your banked number. Reported as a cross-check of the configuration, not as a re-measurement of your table.*
+
+### ⌗⌗ THE ONE REMAINDER, AND IT IS THE ONLY PLACE THIS CHAIN COULD STILL MOVE
+
+**The harmonic expansion has never been carried out IN the proper frame.** `j_ℓ(k_L D_C)` is licensed by an **identification** — the slice is flat, the readout is exactly flat-ΛCDM — rather than by expanding a plane wave on the constant-`τ` slice **with the observer at a general point of it**, which is where the chart's origin stops being the centre of anything.
+
+⇒ *The bounded calculation that would settle it: expand on that slice with the observer off the origin and show the `ℓ`-space kernel is `j_ℓ(k D_C)` with `D_C` the light-travel distance.* ⛔ **Not ordered, and not done here.** *It is named because the honest form of "(1) is where it lands" includes where it could fail to — and if you want it, that is the one thing left in this sector that could still move the answer.*
