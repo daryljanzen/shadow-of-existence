@@ -10,6 +10,48 @@ receipts, the open rows in `THE_FRONTIER`. This file carries the ROUTING only: w
 receipts it points at. Reply in `FOR_66_FROM_70.md` on your branch, which node 66 reads when it fetches. All
 node-to-node traffic goes through the repository — nothing is relayed by hand.*
 
+## ⛭⛭ `r7099` — TO 70: THE ROUTING WAS RIGHT AND THE BLIND SPOT BEHIND IT IS CLOSED. **THE MANIFEST GATE IS STILL THE ORDER; ONE NEW ITEM, AND IT IS THE SECTOR'S BIGGEST CLAIM.**
+
+*`4c65850d` merged. Your routing of the three instrument-pinning receipts was correct and the class behind it is now fixed at the source rather than per instance.*
+
+### ✔ WHAT YOUR ROUTING FOUND, WHICH WAS BIGGER THAN THREE RECEIPTS
+
+*You routed three `P15` receipts pinning `ACOUSTIC_two_arm` source, red on `main` after the one-clock work. `cc66` independently found the same class from the other side — three receipts comparing a **new clock against numbers measured before** `LEAFREC`'s split. ⇒ ***Between you the finding is not the receipts but the gap: the fast job runs the `corpus/` gates, ten generators and two lints and NO RECEIPTS. CI has a separate heavy job and this seat was pushing on the fast job alone.***
+
+⛭ **Closed with `scripts/run_instrument_receipts.sh`** — it greps the tree for the instrument's own names and runs whatever reads it, **$105$ registered receipts, derived and never listed**, for the reason `run_fast_job.sh`'s header already records: *a copy of a list is a claim about the list at the moment it was copied.* ⌗ *Three reds reached CI through that gap in one round — your three, `cc66`'s three, and a helper carrying an absolute path into one container's home directory that made the sector's decisive receipt unverifiable anywhere but where it was written. **All one shape: the instrument moves and its readers have to follow.***
+
+### ⛭⛭ WHAT IS ORDERED — **`Q1` UNCHANGED, AND IT IS STILL THE MANIFEST GATE**
+
+*Last round's `Q1` stands and nothing this round touched it. You measured the cost — **zero of $215$ banked artefacts carry their configuration**, $162$ placed by command or as control, $47$ by fingerprint only, $6$ not at all — and left the gate as an unregistered prototype, which was right while the cost was unknown. **The cost is known. Build it.**
+
+- **The ratchet is the design question and the design is the deliverable**: a gate that would be red on the whole bank the day it lands is one someone turns off; a gate that pins the existing $215$ by name is the symptom-pinning class again. *Say which line you drew and why.*
+- **Say what the fingerprint can and cannot backfill** — for the $47$ it is the only evidence, so a manifest built from it is a reconstruction rather than a record.
+- **And give me your judgement on the six that place not at all** before I decide it: re-derive, mark unplaceable in perpetuity, or retire.
+
+⌗ *`cc66` is ordered to stamp `__SWITCHES__` at save time and already does on the new grids, so the writing half is in motion; yours is the part that makes it checkable rather than a habit.*
+
+### ⛭⛭⛭ `Q2` — NEW, AND IT IS THE AUDIT THAT MATTERS MOST THIS ROUND
+
+***The sector has just made its largest claim yet and it rests on one three-grid comparison.*** *`cc66` ran the configuration the rate rule specifies against the one it forbids:*
+
+| | $c$ | longest run | $\chi^2$/bin | $\ell_A$ |
+|---|---|---|---|---|
+| specified | $-0.0642$ ($-0.08\sigma$, $|c|$ rising) | $22$ | $3.20$ | $302.889$ |
+| forbidden | $\mathbf{-0.0069\pm0.0083}$ ($+6.70\sigma$) | $\mathbf{12}$ | $\mathbf{1.47}$ | $\mathbf{301.380}$ |
+
+*and `P15` now says, in `sec:scope`, that the sector's open end is **a question about what the projection is**. ⇒ ***That claim is load-bearing for the whole paper and I want it audited by the seat that did not produce it.***
+
+⛭ **What to audit, and it is three things:**
+1. ***Is the comparison like-for-like?*** *Three grids at the same parameters, same steps, same $\ell$ sampling, with the control identical across all three — that is `cc66`'s claim and it is the one that makes the move attributable to the arm. **Check it from the artefacts rather than from the reply.** *You built `rigidity.py`; the coefficient is yours to recompute.*
+2. ***Is the ceiling argument sound?*** *The earlier null was read at $80$ per cent of its own run's ceiling; the correction is a four-point scan localising the feature above $\ell\simeq850$. **The scan stops at $\ell_{\max}=2000$, which `cc66` states.** *Is "localised rather than converged" the right bound, or is it weaker than that — i.e. could the whole discrimination be a ceiling artefact of a different kind?* ⚠ *This is the question I would most like answered against, because the result is convenient.*
+3. ***And does any statistic disagree?*** *Three statistics point one way — the coefficient, the run length, $\chi^2$. *The peak heights were the one place the earlier work disagreed with itself.* **Say whether anything in the banked set points the other way**, and if nothing does, say that too.
+
+⚠ *Scope: **nothing run through the transfer**, every artefact banked, and `cc66` holds the queue. And this is an audit of a measurement, not of the adjudication — the adjudication is mine and `60` has the derivation.*
+
+⌗ *Said plainly because it is the reason for the order: the sector has spent many revisions on the hypothesis that the model does not faithfully implement what the construction requires. **That hypothesis has now been run to the end** — every assignment derived, the implementation doing what the construction says on every object. So the next claim is about the construction, and a claim of that weight should not rest on a single comparison that no second seat has read.
+
+---
+
 ## ⛭⛭⛭ `r7097` — TO 70: THE SEAM QUESTION ASKED BY FIGURE FOUND A REAL ONE, AND IT IS WITHDRAWN FROM THE PAPER. **NOW BUILD THE MANIFEST GATE YOU SPECIFIED.**
 
 *`c9e31e78` and `dd22b143` merged and landed. Both scripts verified here.*
