@@ -167,22 +167,54 @@ import contextlib                                                          # noq
 import importlib.util                                                      # noqa: E402
 import io                                                                  # noqa: E402
 
-_rD = {}
-for _arm in ('lcdm', 'cr'):
-    os.environ.update({'ARM': _arm, 'NOPROJ': '1', 'LMAXL': '300', 'NK': '260'})
-    _sp = importlib.util.spec_from_file_location(f'AT_{_arm}', _INSTR)
-    _m = importlib.util.module_from_spec(_sp)
-    with contextlib.redirect_stdout(io.StringIO()):
-        _sp.loader.exec_module(_m)
-    _rD[_arm] = (float(_m._rD), float((_m.eta_0 - _m.ETA_LS) / _m._rD))
-    print(f"      {_arm:>5}:  r_D = {_rD[_arm][0]:.4f} Mpc   l_D = {_rD[_arm][1]:.1f}")
+# ⛭⛭ ** PINNED TO `LEAFREC=0` AT `cc66.76`, AND THE REASON IS THE WHOLE POINT OF THE PIN. **
+# *`cc66.75` added `LEAFREC` -- recombination's own expansion rate, split out of `LEAFGEOM` -- and it is
+# the FIRST clock switch in the instrument whose default is ON.  So the instrument's default `r_D` MOVED,
+# and this receipt read it fresh while comparing it against `DAMPX = 1.156766`, a number fixed when the
+# banked `r4494_lcdm_DAMPX1.000` / `DAMPX1.157` pair was RUN -- at the old default.*
+# ⇒ *** THE DEFECT WOULD HAVE BEEN TO ACCEPT THE NEW NUMBER HERE.  A fresh `LEAFREC=1` ratio tested
+#   against a `LEAFREC=0` scan compares across a clock change and calls the difference agreement or
+#   disagreement about the diffusion signature, which it is not.  The banked pair is a `LEAFREC=0`
+#   object; the leg that must match it is read at `LEAFREC=0`. ***
+# ⛭ ** AND THE MOVE IS MEASURED HERE RATHER THAN LOST, which is the only reason this is a pin and not a
+#   silencing. **  *Both settings are run, both printed, and the `LEAFREC=1` value carries its own check.
+#   What the pin asserts is which of the two the banked scan is entitled to be compared against.*
+#   ⌗ *The control is the self-check and it is checked, not claimed: `Hleaf` and `Hphys` are
+#   character-identical on the control arm, so its `r_D` must be BIT-IDENTICAL across the two settings.
+#   If it ever is not, the switch is reaching something it has no business reaching.*
+_rD, _rD_leafrec = {}, {}
+for _rec, _store in (('0', _rD), ('1', _rD_leafrec)):
+    for _arm in ('lcdm', 'cr'):
+        os.environ.update({'ARM': _arm, 'NOPROJ': '1', 'LMAXL': '300', 'NK': '260',
+                           'LEAFREC': _rec})
+        _sp = importlib.util.spec_from_file_location(f'AT_{_arm}_{_rec}', _INSTR)
+        _m = importlib.util.module_from_spec(_sp)
+        with contextlib.redirect_stdout(io.StringIO()):
+            _sp.loader.exec_module(_m)
+        _store[_arm] = (float(_m._rD), float((_m.eta_0 - _m.ETA_LS) / _m._rD))
+for _rec, _store in (('0', _rD), ('1', _rD_leafrec)):
+    for _arm in ('lcdm', 'cr'):
+        print(f"      LEAFREC={_rec}  {_arm:>5}:  r_D = {_store[_arm][0]:.4f} Mpc   "
+              f"l_D = {_store[_arm][1]:.1f}")
 _ratio = _rD['cr'][0] / _rD['lcdm'][0]
-print(f"      ratio r_D(cr)/r_D(lcdm) = {_ratio:.5f}   ->  {100*(_ratio-1):+.2f}%")
-print(f"      l_D falls {_rD['lcdm'][1]:.0f} -> {_rD['cr'][1]:.0f}, {100*(_rD['cr'][1]/_rD['lcdm'][1]-1):+.1f}%")
+_ratio_leafrec = _rD_leafrec['cr'][0] / _rD_leafrec['lcdm'][0]
+print(f"      ratio r_D(cr)/r_D(lcdm) = {_ratio:.5f}   ->  {100*(_ratio-1):+.2f}%   [LEAFREC=0, "
+      f"the setting the banked scan was run at]")
+print(f"      ratio at LEAFREC=1      = {_ratio_leafrec:.5f}   ->  {100*(_ratio_leafrec-1):+.2f}%   "
+      f"[the new default -- recorded, NOT compared to the banked scan]")
+print(f"      l_D falls {_rD['lcdm'][1]:.0f} -> {_rD['cr'][1]:.0f}, "
+      f"{100*(_rD['cr'][1]/_rD['lcdm'][1]-1):+.1f}%")
 check("the enlarged diffusion scale is +7.5%, not the ~9% the row carries",
       0.070 < _ratio - 1 < 0.080)
 check("and DAMPX = 1.156766 is that ratio squared, so the scan imposes exactly it",
       abs(_ratio ** 2 - 1.156766) < 5e-4)
+check("⌗ the CONTROL's r_D is BIT-IDENTICAL across `LEAFREC`, which is the no-op that says the switch "
+      "touches the arm's rate and nothing else -- `Hleaf` and `Hphys` are the same function there",
+      _rD['lcdm'][0] == _rD_leafrec['lcdm'][0])
+check("⛭ and putting recombination on its OWN rate ENLARGES the arm's diffusion scale further, from "
+      "+7.5% to about +8.4% -- back toward the ~9% the row carried, which is recorded here and is "
+      "NOT what the banked DAMPX scan imposed",
+      0.080 < _ratio_leafrec - 1 < 0.090 and _ratio_leafrec > _ratio)
 print("      ⌗ l_D's larger fall combines r_D with the arm's own eta_0 - eta_LS, which is why the")
 print("        isolation below holds the geometry fixed and moves only 1/k_D^2.")
 

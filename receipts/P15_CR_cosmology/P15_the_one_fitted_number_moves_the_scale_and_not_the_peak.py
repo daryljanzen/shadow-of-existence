@@ -152,8 +152,18 @@ def check(label, cond):
         FAILED.append(label)
 
 
+# ⛭⛭ ** `LEAFREC='0'` IS PINNED HERE AT `cc66.76`, BEFORE the caller's own env is merged, so any
+# ** leg that wants the new default can still ask for it explicitly. **
+# *`cc66.75` added `LEAFREC` -- recombination's own expansion rate, split out of `LEAFGEOM` at `r7095`'s
+# order -- and it is the first clock switch in this instrument whose default is ON.  Every number this
+# receipt tests its fresh runs AGAINST was measured before that split, so an unpinned run compares
+# across a clock change and reads the difference as agreement or disagreement about this receipt's
+# subject, which it is not.*  ⇒ ** The pin makes the comparison's configuration explicit instead of
+# inherited, which is what it always needed to be; it does not weaken a check. **
+#   ⌗ *Lifting it means re-measuring this receipt's targets at the new default -- which rewrites numbers
+#   `P15` quotes, so it is the gate's call and not this seat's.  It is routed, not done here.*
 def run(arm, env):
-    e = dict(os.environ, ARM=arm, LMAXL='520', LSTEP='2')
+    e = dict(os.environ, ARM=arm, LMAXL='520', LSTEP='2', LEAFREC='0')
     e.update(env)
     e['PYTHONPATH'] = os.pathsep.join(
         [os.path.join(ROOT, 'storyboard_receipts'),
