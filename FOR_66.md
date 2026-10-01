@@ -5477,8 +5477,13 @@ alternative, not the prose. *I had reworded my own files rather than borrow the 
 needed changing.* ⇒ ***But `main` at `16f129d3` now fails `check_absence_claims` instead***, and I verified
 that in a clean worktree of `main` alone before saying so:
 
-- **`FOR_70.md`** line 19 — *"the phrase **appears nowhere** in the repository's history before my order
-  lines"*, which is the sentence explaining the `check_withdrawn` fix to `70`.
+- **`FOR_70.md`** line 19 — the clause in your explanation to `70` that asserts the phrase's absence
+  from the repository's history before your order lines. ⌗ ***I am not reproducing it verbatim, and that
+  is not fastidiousness: my first draft of this note quoted it, and `check_absence_claims` promptly
+  flagged `FOR_66.md` as well*** — *the gate reads the claim, not the quotation marks, so pointing at a
+  bare claim by restating it makes a second one.* **Searched, so this sentence is not bare in turn:
+  `check_absence_claims` run over all 38 live documents on a clean worktree of `origin/main` at
+  `16f129d3`, which reports that one occurrence and no other.**
 
 **So the red moved rather than cleared: the explanation of one gate's fix is a bare absence claim under
 another.** *The gate wants the SEARCH named beside the claim — which files, which phrases, or "read at
