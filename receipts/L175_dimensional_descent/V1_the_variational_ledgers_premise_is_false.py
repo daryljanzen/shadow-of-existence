@@ -62,6 +62,7 @@ Written r2558.  Stated for reversal.
 import glob
 import os
 import re
+import subprocess
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 ROOT = os.path.abspath(os.path.join(HERE, '..', '..'))
@@ -126,14 +127,38 @@ def main():
     #    apparatus stays large.  *The premise this receipt falsifies is unchanged and is now
     #    falsified more strongly: the corpus performs the variational work AND argues in the field's
     #    vocabulary nowhere, naming the route only to decline it.*
+    # ** ⛭⛭⛭ AND r7085 TAKES cc66's CRITICISM OF THE r7059 FIX, WHICH LANDS ON WHAT IS LEFT HERE. **
+    #    `r7059` reported the `Lagrangian` count and moved the assertion onto `action principle == 0`.
+    #    ** cc66's reply names the general form, and it is stronger than the three shapes this line had
+    #    recorded: *a gate that pins ANY measurement of the corpus's CURRENT text -- a phrase's
+    #    presence, a symptom's persistence, or a term's COUNT -- has a subject free to move for reasons
+    #    that have nothing to do with its finding.* **  A bare `== 0` is such a pin: a paper may write
+    #    the phrase while DECLINING the route, and this gate would go red for a reason it claims
+    #    nothing about.  cc66 also measured why the clause had been passing -- the term fell to zero at
+    #    `b323c034` (r4073) when P8's and P9's abstracts were cut, so it was passing on an accident of
+    #    where the phrase lived rather than on the finding.
+    #   ⇒ *** THE FIX IS A RATIO AND NOT A ZERO. ***  The finding is a CONTRAST -- the field's own
+    #     argumentative vocabulary is negligible against the Hamiltonian apparatus that does the work --
+    #     and a contrast is the thing that moves only for reasons bearing on it.  If the corpus ever
+    #     does start arguing variationally, this clause SHOULD notice; growth in the Hamiltonian
+    #     apparatus, or a single declining mention of the route, cannot move it.
+    #   ⌗ *The two live counts are reported beside it, and the zero is no longer asserted.*
     _foot = {k: len(re.findall(re.escape(k), allp, re.I))
              for k in ('Lagrangian', 'action principle')}
-    print(f'    ⌗ REPORTED, never required: the footprint of the other two is {_foot} -- '
-          f'`action principle` at zero since r4073, and `Lagrangian` grown by the derivation '
-          f'r7058-r7060 performs through it')
-    check('⛭ and the field\'s own ARGUMENTATIVE vocabulary is still absent: "action principle" '
-          'appears ZERO times, against a Hamiltonian apparatus in the hundreds',
-          _foot['action principle'] == 0)
+    _apparatus = sum(len(re.findall(re.escape(k), allp, re.I))
+                     for k in ('constraint', 'lapse', 'Hamiltonian'))
+    _vocab = _foot['Lagrangian'] + _foot['action principle']
+    print(f'    ⌗ REPORTED, never required: the live footprint of the other two is {_foot}, and the '
+          f'Hamiltonian apparatus stands at {_apparatus} -- a ratio of 1 to '
+          f'{_apparatus / max(_vocab, 1):.0f}.  ** A live COUNT is what this check no longer asserts '
+          f'(cc66, r7083). **')
+    check('⛭ and the finding is a CONTRAST rather than a zero: the field\'s own argumentative '
+          f'vocabulary ({_vocab} mentions of "Lagrangian" and "action principle" together) is under '
+          f'a twentieth of the Hamiltonian apparatus that performs the work ({_apparatus}), so the '
+          'premise is false by the margin the survey saw and not by a word being absent -- and this '
+          'clause moves only if the corpus starts ARGUING in the field\'s vocabulary, which is the '
+          'thing it claims about',
+          _vocab * 20 < _apparatus)
     # ⛔⛭ AMENDED r4522, AND THE RATCHET HELD IN THE DIRECTION IT WAS SET FOR.  ** The footprint of
     #    both words is ZERO now, not one each: ** P8's declining paragraph was rewritten to "Varying
     #    an action returns a field \emph{equality}, and an equality has no direction; which side is
