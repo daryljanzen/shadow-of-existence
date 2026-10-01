@@ -1,0 +1,30 @@
+__SWITCHES__ ARM=cr CRH0=68.581133 CROM=0.297209 HIER=1 LEAFSCALES=1 NS=0.997952 SAVE=/tmp/n66/r7091/cr_before.npz WBH2=0.021524 ZSTART=3e7
+  diffusion: r_D at the visibility peak = 7.47 Mpc  ->  l_D = 1876
+
+==============================================================================
+  ACOUSTIC TWO-ARM INSTRUMENT — ARM=cr   DRIVING=ON
+==============================================================================
+  rate: GEOMETRIC (L1)   H0=68.581133  Om=0.297209
+  z_start = 3e+07   eta_start = 2.928   eta_rec = 485.5   eta_end = 2171
+  D_M = 14017 Mpc   r_s = 145.91 Mpc   l_A = pi D/r_s = 301.8   modes = 943
+  visibility: peak at eta = 485.99 (z = 1087.9), FWHM = 43.59 Mpc   R = 3 rho_b/4 rho_g there = 0.59969   1+R = 1.59969
+  z_eq(leaf) = 3367.4   Omega_r = 8.823457e-05   rho_r/rho_m at the onset = 8906.32
+
+  projection reach: k_max = 2599/D_M against a reported l_max = 1300 -> ratio 2.00
+  projection sampling: dk = 1.962e-04, Bessel period 2pi/D = 4.483e-04, points per period = 2.3
+  ⌗ CR's ladder is DISCRETE and physical, so this is not aliasing — but it is only
+    not aliasing if the answer does not depend on it. Run KCONT=1 to check.
+  hierarchy: LG = 24, handover at tau' = 3.0/Mpc (eta = 307.1), where 3.8% of 1/k_D^2 has accumulated
+  so the envelope carries 3.8% of the damping and the multipoles carry 96.2% of it
+    modes 0-250 done
+    modes 250-500 done
+    modes 500-750 done
+    modes 750-943 done
+  saved 150 multipoles to /tmp/n66/r7091/cr_before.npz
+  --------------------------------------------------------------------------
+  PEAKS (line-of-sight, HIERARCHY)   l_A = 301.8
+  --------------------------------------------------------------------------
+    peaks at l = [220, 540, 812, 1132]
+    l_1/l_A = 0.7290   P1/P2 = 2.142   P1/P3 = 2.173
+    sky: 220.6 / 538.1 / 809.8,  l_1/l_A = 0.7312,  P1/P2 = 2.217,  P1/P3 = 2.277
+__DONE__ rc=0

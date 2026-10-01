@@ -36,3 +36,15 @@ __pycache__/
 #   `r7039_directions/bank.py`.  ** So what is excluded is an output, not a record: the
 #   runs, the fold and the closure gate are all in the repository. **
 computations/beyond_the_wall/spectra/r7039_transfer_*.npz
+
+# ⛭ r7099+cc66.82 — TWO RUN LOGS DELIBERATELY TRACKED, ordered by `r7099` Q1.
+# `*.log` above is right as a default, and it is why the logs banked beside the `r7095`/`r7093` grids
+# were never committed: a receipt read them here, passed, and could not run on the gate's tree or in CI.
+# These two carry the instrument's own `projection reach: k_max = 2 l_max / D_M` line, which is the whole
+# of the ceiling argument in `P15_the_licensed_configuration_moves_neither_statistic...`, so they are
+# EVIDENCE rather than scratch output. Declared here rather than force-added, so the exception is
+# visible to the next reader instead of being a property of one `git add -f`.
+!computations/beyond_the_wall/r7095_directions/lmaxl1300/cr_before.log
+!computations/beyond_the_wall/r7095_directions/lmaxl1300/cr_oneclock.log
+!computations/beyond_the_wall/r7095_directions/grid_licensed/cr_base.log
+!computations/beyond_the_wall/r7093_directions/grid_oneclock/cr_base.log

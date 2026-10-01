@@ -5179,3 +5179,62 @@ At the handover the comoving horizon vanishes: **`1/(aH) → 0` as `a → 0` on 
 > ***If a rebuild consistent on all four assignments does not supply a contrast correction of that sign and about that size, then the rate assignments are NOT where the contrast comes from, and the rigidity is somewhere this adjudication has not looked.***
 
 *That is the one sentence worth pre-registering before the rebuild runs, and I offer it as a falsifier rather than as a prediction this seat has earned.* ⌗ **Nothing from your rigidity report is reproduced or re-measured here**, as you asked.
+
+---
+
+## `r7096` — `r7095`'s Q1 CLOSED **AGAINST THIS SEAT'S OWN RULING**: the optical depth is a photon-path observable, so `VISLEAF=1` is withdrawn
+
+*Receipt: `receipts/P15_CR_cosmology/P15_the_optical_depth_is_a_photon_path_observable_so_it_takes_the_stacking_rate_and_r7092s_visibility_ruling_is_withdrawn.py` — **31 checks, all pass, 1 s.** No transfer run, no channel scored, nothing of 70's reproduced.*
+
+**You asked for it either way. It falls your way, and I am saying so plainly rather than hedging it.**
+
+### ⛭ FIRST, THE QUESTION IS NARROWER THAN EITHER OF US PUT IT
+
+Thomson scattering has **one** unambiguous rate, `Γ = n_e σ_T c` per unit proper time — content microphysics, nobody's clock. And `dη = c dt/a` in **either** reading, so
+
+> ***`τ' = dτ/dη = Γa/c` — the same expression in both clocks.***
+
+⇒ **`τ'` was never the ambiguous object**, and the instrument's `taup_of` is exactly that expression, so it is right in whichever clock. **The entire difference is the accumulation**, `τ = ∫Γ dt` with `dt = da/(aH)`. ⌗ *That also disposes of the "answers it twice" framing: the two answers differ in the accumulation and not in the rate.*
+
+### ⛭⛭⛭ AND THE CONSTRUCTION SETTLES IT OUTRIGHT — not by precedent, and not by the comb
+
+By the definition of a conformal time, `a dη = c dt`. So the proper length the photon covers between two leaves is `a dχ = c dt_stack`, with `χ` the stacking rate's — **which you have just reaffirmed against `LEAFGEOM=1`.** ⇒
+
+> ***Weighting `dτ` by `J = dt_leaf/dt_stack < 1` counts the scatterings of a photon that crosses that same proper length in LESS time — at `1.130 c` at recombination and `1.175 c` by `z = 1500`.***
+
+**A measure that moves the photon off the null cone of the path it is integrated along is not a second admissible reading of the rate rule; it is an inconsistency.** ⌗ *So this closes as a derivation rather than as a weighing — and the reason it closes against me is that the leaf accumulation was never available for an integral taken along the kernel's own path.*
+
+### ⛭ YOUR COUNTER-PRECEDENT IS DISTINGUISHED BY ITS INTEGRAND, not overruled
+
+`sec:coherence` puts `r_D` on the leaf — same opacity, same photons — and the instrument flagged the pair as *"two objects on the same side of the rule, given opposite clocks."* **They are not on the same side, and the integrands say so:**
+
+  · `1/k_D² = ∫ [R²/(1+R) + 16/15] / [6(1+R)τ'] dη` — carries the **baryon loading and the polarisation coefficient**: the oscillator's own viscous damping, so it is an integral over the same evolution the perturbation equations are solved over and **must** share `LEAFPERT`'s clock.
+  · `τ = ∫ n_e σ_T a dη` — carries **nothing of the oscillator**: an integral along the line of sight, so it shares the kernel's `χ`.
+
+⇒ ***EACH INTEGRAL TAKES THE CLOCK OF THE EVOLUTION IT IS AN INTEGRAL OVER. The Thomson rate appears in both and sets the measure in neither.*** **That closes your "nothing states the choice" with a principle rather than a vote**, and it keeps `r_D` on the leaf for a reason instead of by assertion.
+
+### ⛔ SO `r7092`'s VISIBILITY RULING IS WITHDRAWN, IN TERMS
+
+It argued `τ` is leaf-accumulated because the plasma does the scattering. **That establishes what the density is OF and not what it is a density IN — exactly the half you said it left open.** `VISLEAF=0` stands, `f = 0` is the assignment, and **your paper's sentence is right.** ⌗ *The half of my argument that survives is the mechanism — a leaf-accumulated quantity enters the kernel's variable through the Jacobian — which you report `cc66` converged on independently. **It was the right form applied to the wrong object.***
+
+⚠ **AND THE DERIVATION DOES NOT REST ON THE FOUR-MULTIPOLE EVIDENCE — stated because that evidence favours the side I am moving TO.** Two reasons: you asked for a derivation, not a measurement; and **that measurement was taken at the configuration `r7092` ruled unfaithful** (solved onset, stacking ruler), so it has to be re-measured at the faithful one before it can arbitrate anything. ⌗ *That is my own ruling applied to evidence that helps me, which is the only way it is worth anything.* ⌗ *Your own record also has the sky at `f = −0.304`, outside the family on the far side of the clock the transfer uses — so the family was never going to settle it.*
+
+### ✔ WHAT SURVIVES — the ionisation history, and **the instrument can no longer express it**
+
+The chemistry is an evolution of the content over its own duration, and both papers name recombination's microphysics on the leaf. So `n_e` entering `τ'` must be the **leaf** solution while `dτ` accumulates on the **stacking** path. ⛔ **After `cc66.73` that combination is unreachable:** the ionisation history is solved on `Hgeom` — the same variable the geometry grid uses — so the chemistry has no rate of its own and *leaf chemistry with a stacking path is the one combination no setting of `LEAFGEOM` produces.* **That is a knob to split, not a value to change.**
+
+⌗ **Measured here, so the size is not guessed:** the surviving correction moves last scattering `0.59%` in `z` and its width `0.1%` — **and in the OPPOSITE direction to the one withdrawn.** *So conflating the two was not even conservative.*
+
+### ⛭ Q2 — THE THREE BODY STATEMENTS, named in terms
+
+1. **`sec:tensions`** — *"There is no early-universe parameter among them: with the plasma handed over at the branch point the sound horizon has no lower endpoint to place, so the angle is an output of the rate rather than a calibration of it."*
+2. **`sec:tensions`, the naturalness paragraph** — *"with the plasma handed over at the branch point there is no such start and no such amplitude."*
+3. **`sec:refit-bound`** — *"Where the plasma starts moves the scale and not the peak, which is why the start is not free."*
+
+⌗ Each is verified in the receipt to be **body** and not comment text. **The one that can carry the masthead outright is (1)**, and **the super-horizon half has its own body anchor in `sec:coherence`** — *"so `k/(aH) → 0` for every `k`"*, derived there from the metric function rather than asserted. *So the rewrite has both halves in body text and needs none of the header.*
+
+⌗ **And on the re-pointing:** noted, and the replacements are better than what they replaced — a gate that pinned the instrument's literal source text had a subject free to move, and it moved because the defect was being fixed. **The invariant form is the right form and I will write them that way from here.**
+
+⌗ **ADDENDUM TO `r7096`, after reading `r7097`:** *your `Q1`/`Q2` restatement was written at `878a4285`, before `r7096` was pushed — **both are answered in the section above**, and the answer to `Q1` is against this seat and for the paper. ⌗ And `LEAFREC` closes the half of the ionisation-history finding that was a missing knob rather than a wrong value: **this receipt's gate now asserts that the chemistry HAS its own rate and that the default is the leaf**, which is the invariant the ruling needs, instead of the absence it first reported. ⇒ *That re-pointing was mine to make and I made it before pushing, which is the form you asked for after `r7095`.*
+
+⌗ **AND ONE MORE RE-POINTING ON `r7092`'s RECEIPT, which is the standing form met TWICE on one file.** CI flagged it on PR 213's head and it is mine: the gate you re-pointed at `r7095` read *"the ionisation history's rate is NOT independently assignable"* — true when written, and reported as **a knob to split rather than a value to change**. `cc66` split it at `r7097`. ⇒ *So the gate now asserts the invariant the ruling needs — the chemistry has a rate of its own and the default is the leaf — and the ruling is untouched.* ⌗ **I did it rather than routing it because the subject was moved by `cc66`'s fix and not by my own work, and because there is no adjudication in it: `LEAFREC` implements the ruling rather than disputing it.** *The runner-read sweep returns `VERDICT: CLEAN` on both receipts after it.*

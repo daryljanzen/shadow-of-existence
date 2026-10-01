@@ -29,20 +29,25 @@ import sys
 
 import numpy as np
 
-# ⛔⛭ FIXED AT r7097+cc66.80.  ** THIS LINE WAS AN ABSOLUTE PATH TO ONE MACHINE'S FILESYSTEM, and it
-# ** worked for as long as nothing but a hand-run in that container ever read this file. **
-# *`cc66.78` made a REGISTERED RECEIPT invoke `shape.py` as a subprocess, so for the first time it ran on
-# a CI runner, where the checkout is at `/home/runner/work/...`.  The import failed, the process died
-# before printing anything, and the receipt saw "no statistics" with no idea why -- a 0-second red on a
-# tree where the physics was fine.*
-#   ⇒ *Derived from `__file__` now, as the rest of the tree does.  ⚠ **The pattern is NOT unique to this
-#   file** -- roughly forty drivers and launchers under `computations/beyond_the_wall/` carry the same
-#   absolute root, including `refit_grid185/fit.py`.  They are latent rather than broken: nothing
-#   registered reads them, so CI never runs them.  **Fixed here only, and the pattern is routed rather
-#   than swept, because a sweep of forty files is not this revision's subject.***
-_HERE = os.path.dirname(os.path.abspath(__file__))
-_ROOT = os.path.abspath(os.path.join(_HERE, '..', '..', '..'))
-sys.path.insert(0, os.path.join(_ROOT, 'computations', 'planck_tt_likelihood'))
+# ⛔⛭ PATH FIXED r7099 (66, the gate).  ** THIS LINE READ `/home/user/shadow-of-existence/...`, an
+# ** ABSOLUTE PATH INTO ONE CONTAINER'S HOME, so every receipt that runs this helper passed in the
+# ** container it was written in and failed everywhere else -- including CI and including the gate. **
+# *`r7095`'s Q3 receipt, the decisive one for the whole rate-assignment question, runs this file as a
+# subprocess and reported 22 checks all passing; on the gate's tree it raised at the first call.*
+#   ⇒ *** Derived from this file's own location instead, which is the only form that survives being
+#     run from anywhere.  Nothing else is touched: no definition, no statistic and no assertion. ***
+#   ⌗ *This is the third consequence in two rounds of the same gap, and the gap is the gate's: the fast
+#     job runs the generators and the `corpus/` gates and NO RECEIPTS, so a receipt that works in one
+#     container only, or that compares a new clock against old numbers, reaches CI green.*
+sys.path.insert(0, os.path.join(os.path.dirname(os.path.dirname(os.path.dirname(
+    os.path.abspath(__file__)))), 'planck_tt_likelihood'))
+#   ⚠ ** AND THE PATTERN IS NOT UNIQUE TO THIS FILE, which is `cc66`'s half of the finding and is kept
+#   here because the site is where it will be needed: ** roughly FORTY drivers and launchers under
+#   `computations/beyond_the_wall/` carry the same absolute root -- `refit_grid185/fit.py`,
+#   `PO13_score_likelihood.py`, `r6893_directions/bank.py`, most `launch.sh` and `pass*.sh`.
+#   *They are LATENT rather than broken: nothing registered reads them, so CI never runs them, and each
+#   becomes this failure the moment a receipt invokes one.*  ⇒ **Routed and not swept: a lint for an
+#   absolute container path in a tracked file closes the class once, and a forty-file edit does not.**
 import chi2_of_spectrum as CS
 
 

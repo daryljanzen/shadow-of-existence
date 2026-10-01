@@ -192,25 +192,24 @@ print(f"      LMAXL=1300  oneclock  crossings {_o['crossings']}  longest {_o['lo
 gate("⌗ `cc66.73`'s reported crossings 36 -> 30 and longest run 16 -> 18 REPRODUCE exactly on the "
      "`LMAXL=1300` pair it was measured from -- the earlier null was arithmetically right",
      (_b['crossings'], _o['crossings']) == (36, 30) and (_b['longest'], _o['longest']) == (16, 18))
-# ⛔⛭ FIXED AT r7097+cc66.81: THIS READ TWO `.log` FILES, AND `.gitignore` LINE 6 IS `*.log`.
-# *The logs copied beside the banked `.npz` grids were therefore **never in the repository**.  They
-# existed where this was written, so it passed; in CI they do not, and the receipt died here -- after the
-# absolute-path fix had already carried it through three sections, which is how one defect hid a second.*
-#   ⇒ *** AND THE SCOPE CLAIM BELOW WAS WRONG WHILE IT SAID SO: it asserted every number came from a file
-#     tracked in this repository, which was true of the spectra and false of these two logs.  The gate in
-#     section G now CHECKS tracking with `git ls-files` instead of asserting it. ***
-# ⌗ *The reach lines are banked verbatim in `r7095_directions/truncation_reach.txt`, a `.txt` and so not
-# ignored, which is the corpus's own idiom for a banked log.  The grids keep their `__SWITCHES__` stamps.*
-_REACHFILE = os.path.join(BW, 'r7095_directions', 'truncation_reach.txt')
-_rtxt = open(_REACHFILE, errors='replace').read()
+# ⛭⛭ r7099 Q1: THE TWO RUN LOGS ARE NOW TRACKED, so this reads them DIRECTLY again.
+# *`cc66.81` had transcribed their `projection reach:` lines into a `.txt` because `.gitignore` excluded
+# `*.log` -- a rule that lives in the file's **LaTeX build-output** section and was never meant for a
+# solver log.  `r7099` ordered the logs committed instead, which is better: **the instrument's own output
+# is the evidence, and a transcription is a second place for one fact to drift.**  The `.txt` is removed
+# and the exception is declared in `.gitignore` rather than force-added, so the next reader can see it.*
+#   ⌗ *The tracking gate in section G covers these two paths, so if the ignore rule ever reclaims them
+#   this receipt fails here instead of only on someone else's tree -- which is the whole lesson of
+#   `cc66.80` and `cc66.81`.*
 _reach = {}
-for nm, tag in (('1300', 'lmaxl1300/cr_before'), ('2000', 'grid_licensed/cr_base')):
-    _blk = _rtxt.split(f'== r7095_directions/{tag}')[1]
-    _m = re.search(r'k_max = (\d+)/D_M against a reported l_max = (\d+) -> ratio ([\d.]+)', _blk)
-    assert _m, f"the banked reach line for {tag} is not in {_REACHFILE}"
+for nm, p in (('1300', os.path.join(L1300, 'cr_before.log')),
+              ('2000', os.path.join(LICENSED, 'cr_base.log'))):
+    _m = re.search(r'k_max = (\d+)/D_M against a reported l_max = (\d+) -> ratio ([\d.]+)',
+                   open(p, errors='replace').read())
+    assert _m, f"the instrument's own reach line is not in {p}"
     _reach[nm] = (int(_m.group(1)), int(_m.group(2)), float(_m.group(3)))
     print(f"      LMAXL={nm}: k_max = {_reach[nm][0]}/D_M, reported l_max = {_reach[nm][1]}, "
-          f"ratio {_reach[nm][2]}   [banked verbatim in truncation_reach.txt]")
+          f"ratio {_reach[nm][2]}   [read from the run's own tracked log]")
 gate("⛔ and the reason is the ceiling and not the arithmetic: both runs hold k_max = 2 l_max / D_M, "
      "so reading to ell 1040 is 80 per cent of the `LMAXL=1300` run's own reported ceiling against "
      "52 per cent of the `LMAXL=2000` run's",
@@ -307,7 +306,8 @@ head("G.  ⚠ THE SCOPE, AND WHAT THIS DOES NOT LICENSE")
 # decides provenance is the defect this corpus keeps finding, and it was in my own scope section.***
 _INPUTS = [os.path.join(g, f'{a}_base.npz')
            for g in (BANKED, LICENSED, ONECLOCK) for a in ('lcdm', 'cr')] + [
-    os.path.join(L1300, 'cr_before.npz'), os.path.join(L1300, 'cr_oneclock.npz'), _REACHFILE]
+    os.path.join(L1300, 'cr_before.npz'), os.path.join(L1300, 'cr_oneclock.npz'),
+    os.path.join(L1300, 'cr_before.log'), os.path.join(LICENSED, 'cr_base.log')]
 # ⌗ *And it degrades honestly rather than brittlely: inside a git checkout it asks about TRACKING,
 # which is the question that matters and the one that would have caught the `.log` files.  Unpacked
 # outside a checkout there is no tracking to ask about, so it falls back to EXISTENCE and SAYS which
