@@ -1,4 +1,12 @@
 {
+ "claude/shadow-of-existence-setup-5tjf0b": {
+  "suite": {
+   "receipts/L_probability/R1_the_whole_footprint_is_three_geometry_words.py": {
+    "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/36873362337",
+    "since": "a7dbe1ad561681c6f6de0b75bd248e5a14f47940"
+   }
+  }
+ },
  "claude/shadow-of-existence-setup-6awafl": {
   "suite": {
    "receipts/L259_the_distance_from_the_present/D1_a_check_pinned_to_a_distance_from_the_present_is_pinned_to_the_present.py": {
