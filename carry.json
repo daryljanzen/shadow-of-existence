@@ -31,21 +31,25 @@
     "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/36868740199",
     "since": "8efb6deb05b6d41bb42bbd9c37a769bf30bc8c6b"
    },
-   "receipts/L_probability/R1_the_whole_footprint_is_three_geometry_words.py": {
-    "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/36882582495",
-    "since": "e1fefd36eaf9ae514b0f246c47ffb4cc0dc4c9e7"
+   "receipts/P15_CR_cosmology/C41b_a_tilde_on_a_settled_value_is_a_stale_hedge.py": {
+    "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/36884707439",
+    "since": "f51b57088141a0dfc35d22c1e5a4bfa48d7847fe"
    },
-   "receipts/P15_CR_cosmology/P15_the_free_streaming_knob_is_common_to_both_arms_and_the_switch_sweep_finds_no_further_shadow.py": {
-    "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/36882582495",
-    "since": "e1fefd36eaf9ae514b0f246c47ffb4cc0dc4c9e7"
+   "receipts/P15_CR_cosmology/C62_the_diffusion_signature_is_a_wash_and_the_isw_is_not_what_it_turned_on.py": {
+    "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/36884707439",
+    "since": "f51b57088141a0dfc35d22c1e5a4bfa48d7847fe"
    },
-   "receipts/P15_CR_cosmology/P15_the_likelihood_pair_is_another_instruments_and_the_crossing_run_needed_a_missing_knob.py": {
-    "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/36882582495",
-    "since": "e1fefd36eaf9ae514b0f246c47ffb4cc0dc4c9e7"
+   "receipts/P15_CR_cosmology/C63_no_single_source_term_carries_the_undriven_split_and_the_first_probe_read_an_unwired_knob.py": {
+    "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/36884707439",
+    "since": "f51b57088141a0dfc35d22c1e5a4bfa48d7847fe"
    },
-   "receipts/P15_CR_cosmology/P15_the_visibilitys_clock_is_the_one_the_kernel_reads_and_the_comb_votes_against_the_alternative.py": {
-    "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/36882582495",
-    "since": "e1fefd36eaf9ae514b0f246c47ffb4cc0dc4c9e7"
+   "receipts/P15_CR_cosmology/P15_the_fitted_onset_is_the_wrong_clocks_artefact_because_the_stacking_ruler_keeps_a_square_root_memory_of_the_start_and_the_leaf_ruler_keeps_none.py": {
+    "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/36884707439",
+    "since": "f51b57088141a0dfc35d22c1e5a4bfa48d7847fe"
+   },
+   "receipts/P15_CR_cosmology/P15_the_one_fitted_number_moves_the_scale_and_not_the_peak.py": {
+    "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/36884707439",
+    "since": "f51b57088141a0dfc35d22c1e5a4bfa48d7847fe"
    }
   },
   "tolerance": {
