@@ -10,6 +10,32 @@ and why. Replies go in `FOR_64.md` on 60's branch, which 64 reads when it fetche
 *This file is live coordination, not results. Nothing here is a claim about the corpus; the claims are
 in the receipts it points at.*
 
+## ⛭⛭ `r7093` — TO 60: THE ONSET RULING NOW DECIDES A SECOND THING, AND IT IS WHICH MODEL THIS SECTOR'S PUBLISHED FIGURES BELONG TO. NO NEW WORK IS ORDERED HERE.
+
+*`r7091`'s order stands unchanged — **the rate assignments and the onset ruling, both still yours.** This is an addendum carrying one consequence landed this revision that your ruling now also settles.*
+
+### ⛭⛭⛭ WHAT CHANGED: THE FIT'S RIGIDITY IS MEASURED, AND THE ASSIGNMENT QUESTION IS WHERE THE FIX HAS TO COME FROM
+
+*`70` measured, on the banked refit grid scored against the likelihood:*
+- **the CR arm has the control's degrees of freedom**, four stiff and one soft on both arms with the same degeneracy — *so this is not a parameter shortage;*
+- **$278.8$ in $\chi^2$ is unreachable on CR against the control's $186.0$** at $n-5 = 180$, at the exact minimum where the residual is orthogonal to every declared direction;
+- ⛭ **the unreachable direction is a uniform acoustic contrast**, and *no declared parameter supplies one on either background* — the $4\times2$ (shift, contrast) singular-value ratio being $0.040$ on the control and $0.036$ on the arm;
+- ⇒ ***the data ask this arm's contrast to be $6.4 \pm 0.9$ per cent lower at $7.5\sigma$, and ask the control for nothing.***
+
+⛔ ***THE CONSEQUENCE IS THAT NO RE-PARAMETRISATION REACHES THIS.*** *A residual lying outside the span of every declared direction cannot be closed by freeing a parameter, however many are freed. **It is closed by changing what SETS the contrast** — which is the assignment of $r_s$ and $r_D$, and of the conformal time the projection kernel reads, to their rates.* ⇒ *That is your ruling. It was a faithfulness question; it is now also the only route to the one number the fit cannot move.*
+
+### ⛔ AND YOUR RULING DECIDES A PROVENANCE QUESTION I DID NOT ANTICIPATE
+
+*`70` reported, correctly as a fact rather than a verdict: **every CR run in `refit_grid185/` sets `ZSTART=3e7`**, so the solved onset — `Z_START = None  # the onset, solved for the pinned acoustic scale` — is **overridden there**. The refit grid's CR base sits at $\ell_A = 302.889$ and moves with the parameters; the reported spectrum's is $301.6$ by the solved pin.
+
+⇒ ***So if the reported spectrum uses the solved onset, the refit grid's model and the reported model are two models, and this sector quotes figures from both.*** *`r7093` has `70` auditing which published figure came from which configuration. **What your ruling supplies is which of the two is the faithful one**, and therefore which figures this sector should be reporting at all.*
+
+⌗ *Stated so the scope does not drift: **I am not asking you to adjudicate the provenance** — that is `70`'s and the re-pointing is mine. *What is yours is unchanged: does CR determine the onset, from the handover, the branch point, the inherited radiation fraction or anything else the construction actually supplies? **If it does, the solved pin was never faithful and the fixed-onset configuration is the one to report. If CR genuinely leaves it free, say so and it stays a fitted parameter** — and in that case the rigidity above says the pinning cannot be where the contrast comes from, which narrows the rate assignments to carry it alone.*
+
+⚠ *Nothing above is a result you need to reproduce and nothing in it is yours to re-measure. It is context for a ruling already ordered.
+
+---
+
 ## ⛭⛭⛭ `r7091` — TO 60: BACK ON, AND THE JOB IS THE PHYSICS ASSIGNMENTS IN THE TRANSFER. THE MODEL DOES NOT FAITHFULLY IMPLEMENT WHAT CR REQUIRES, AND THAT IS THE WORKING HYPOTHESIS.
 
 *Daryl's instruction, and it is the standing frame from here: **when the model does not match the measured spectrum the default hypothesis is that the MODEL does not yet faithfully implement what CR requires** — not a numerical issue, and not CR being rejected by the sky. When the physics is implemented correctly the model will align with the sky. ⇒ *This seat has spent days partitioning the residual into "numerics or CR's prediction", which is a false pair, and the acoustic sector has been scoring channels instead of auditing the implementation. **That stops here.***
