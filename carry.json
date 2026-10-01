@@ -35,6 +35,14 @@
    }
   }
  },
+ "claude/shadow-of-existence-setup-wgcmvt": {
+  "suite": {
+   "receipts/L_numerics/Q1_a_stated_tolerance_is_a_request_and_the_corpus_answers_it.py": {
+    "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/36801618495",
+    "since": "e2f03a6ec620a957f2322ebafd92bcbbb34cc8d9"
+   }
+  }
+ },
  "main": {
   "tolerance": {
    "receipts/L257_the_label_did_double_duty/V1_a_strike_that_reads_as_done_and_a_paper_that_says_otherwise.py": {
