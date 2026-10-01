@@ -166,13 +166,32 @@ def main():
     #    114e4d9ede".  The row still reads REGISTERED, but REGISTERED means "carried by a register row"
     #    and the row no longer names one.  PO-23 is still live (THE_OPEN_PROBLEMS_LEDGER family 8).
     #    Routed to node 66: restore the note.  Not loosened here.
+    # ** ⛭⛭⛭ RE-POINTED r7083 (66), AND THE REASON IS THIS FILE'S OWN DIAGNOSIS TURNED ON ITSELF. **
+    #    This check asserted that one of the pair is LIVE and reads REGISTERED naming `PO-23`.  At
+    #    `r7077` `PO-23` was STRUCK -- its object, the ultraviolet definition of the mode sums,
+    #    delivered at `r7064` and costed at `r7074` -- and `38005b708a` was retired with `P07`'s
+    #    qualification when the item it recorded was discharged.  ** So the check went red because the
+    #    object it was guarding was FINISHED, which is the symptom-pinning class this line has now met
+    #    four times. **  Line 220 below already names the hazard -- "re-pinning only the old wording
+    #    would have asserted the defect as though it were still live" -- and this check committed the
+    #    same error on the other axis: it asserted the object's OPENNESS where the finding was only
+    #    ever its CONSERVATION.
+    #   ⇒ *** What the finding was: the r4525 rewording did not LOSE the object.  That is checked by
+    #     conservation and not by liveness -- every member of the pair is accounted for, either live
+    #     and naming a register row, or retired with a recorded reason. ***  A row that is neither is
+    #     the defect this file exists to catch, and it is the only state that should fail here.
     _PAIR = ('114e4d9ede', '38005b708a')
-    check('⓵ᶜᐢ ⛭ and the retirement did not lose the object -- exactly one of '
-          f'{_PAIR} is LIVE and it is the one the papers\' own scan raises, and it reads '
-          'REGISTERED naming PO-23: so what happened at r4525 was a REWORDING, not a withdrawal',
-          [k for k in _PAIR if row(k)[2] == 'live'] == [k for k in _PAIR if k in cur]
-          and row('38005b708a')[0] == 'REGISTERED'
-          and 'PO-23' in (row('38005b708a')[1] or ''))
+    _acct = {k: row(k) for k in _PAIR}
+    print(f'    ⌗ REPORTED, never required: the pair\'s states are '
+          f'{ {k: (v[0], v[2]) for k, v in _acct.items()} } -- `PO-23` was struck at r7077 and '
+          f'`38005b708a` retired with `P07`\'s qualification at the same revision')
+    check('⓵ᶜᐢ ⛭ and no rewording LOST the object -- every member of '
+          f'{_PAIR} is accounted for, each either LIVE and naming a register row or RETIRED with a '
+          'reason recorded beside it, so the r4525 move was a rewording and the r7077 move a '
+          'discharge, and neither was a withdrawal',
+          all((v[2] == 'live' and v[1] and 'PO-' in v[1])
+              or (v[2] == 'retired' and v[1] and len(v[1].strip()) > 40)
+              for v in _acct.values()))
     check(f'⛭ and the other {len(closed)} were CLOSED rather than left unread -- {closed} -- so the '
           f'scan no longer raises them at all AND no row survives them anywhere: r3803 computed '
           f'the straddle and r3811 closed five stale sentences, both AFTER this file named them; '
@@ -205,12 +224,35 @@ def main():
     #    the UV definition as OPEN in its quantum sector* -- which is the half that makes the strike's
     #    "MET, NOT OWED" read as a label doing double duty.  Both clauses are pinned in ONE sentence so
     #    the openness cannot be satisfied by an unrelated "open item" elsewhere in the paper.
+    # ** ⛭⛭⛭ RE-POINTED r7083 (66) -- AND THIS IS THE CHECK THAT WENT RED BECAUSE ITS FINDING WON. **
+    #    It pinned `P07`'s sentence verbatim: "the latter is the open item of the programme's quantum
+    #    sector".  At `r7077` that item was SETTLED and the sentence rewritten, so a check asserting
+    #    the paper's openness fails exactly when the paper stops being open.  ** That is the mirror of
+    #    the mistake line 220 warns against, committed in this very function. **
+    #   ⇒ *** AND THE FINDING SURVIVES THE SETTLEMENT, SHARPER THAN IT WAS. ***  This file's argument
+    #     is that `PO-6`'s clause ③ -- "THE UV DEFINITION: MET, NOT OWED --- generic to every
+    #     interacting QFT" -- was a label doing double duty.  The item is now settled, so the clause's
+    #     VERDICT reads right; *** but it is not settled on the clause's GROUNDS. ***  `PO-6` said the
+    #     item was met because the wall is generic; the corpus settled it by computing the
+    #     construction's OWN regulator to an exact value and costing its counterterm.  ** A label that
+    #     reaches the right verdict by an argument the corpus then declined to use is still a label
+    #     doing double duty, and the register must not retroactively adopt it. **
+    #   ⌗ So what is asserted is the thing that stays true either way: `P07` states the item's standing
+    #     in its own voice rather than resting on the shared character of the wall, and the register
+    #     keeps clause ③ marked SUPERSEDED rather than vindicated.  ⓶ᵇ below carries that second half
+    #     and is unchanged.
     _p7f = re.sub(r'\s+', ' ', p7)
-    check('⓶ P07 says the shared character of the wall does NOT settle it, and that the UV '
-          'definition is "the open item of the programme\'s quantum sector"',
-          'But the shared character of the wall does not settle it: the quantization ambiguity this '
-          'framework fixes and the interacting theory\'s definition it does not are two different '
-          'things, and the latter is the open item of the programme\'s quantum sector' in _p7f)
+    _shared = 'the shared character of the wall' in _p7f
+    _settled = ('all three are settled' in _p7f
+                and 'definition is the construction\'s own' in _p7f)
+    print(f'    ⌗ REPORTED, never required: P07 still argues from the shared wall: {_shared}; '
+          f'P07 states the item settled on the construction\'s own regulator: {_settled}')
+    check('⓶ ⛭ P07 states the UV definition\'s standing IN ITS OWN VOICE rather than resting it on '
+          'the wall being shared -- the half that made "MET, NOT OWED" a label doing double duty -- '
+          'and it does so by naming the construction\'s own regulator, which is NOT the generic-wall '
+          'ground clause ③ gave, so the clause reaches the right verdict by an argument the corpus '
+          'declined to use',
+          _settled and 'the ultraviolet definition of the mode sums with them' in _p7f)
     po6 = [l for l in prot.split('\n') if re.match(r'\|\s*~*\*\*PO-6\*\*', l)]
     # ** ⛭⛭⛭ AND HERE IS THE FINDING BEING ACTED ON, IN THE REGISTER ITSELF (re-pinned r3962). **
     # ** This file's whole argument is that clause ③ read "THE UV DEFINITION: MET, NOT OWED" while

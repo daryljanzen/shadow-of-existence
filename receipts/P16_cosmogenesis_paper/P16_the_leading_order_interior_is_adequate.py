@@ -93,6 +93,30 @@ print("  growing tensor mode, and bounding the tensor sector bounds it.")
 print("  In the matter era h ∝ |sigma|^{-3}, so Sigma = (3/8) M^2 |sigma|^3 h, against a domination")
 print("  threshold Sigma << M^2 rho^3/2 (where shear would beat radiation at equality):")
 print()
+# ** ⛭ THE 3/8 IS DERIVED HERE AND WAS PREVIOUSLY ONLY NARRATED (added r7083, node 66). **
+#   `r7081+70.1`'s sentinel sweep classed this coefficient HELD: it sat in the print string above and
+#   in the ratio below, and replacing it left this receipt exiting zero with nothing failing -- so the
+#   paper stated a formula as the construction's own result and no receipt derived it.
+#   ⇒ *** Derived from the corpus's OWN stated relations, each quoted here so a premise cannot move
+#     silently: *** `A = 2M` (one bead, one integration constant); `a = A|sigma|^2/4` on the matter
+#     leg, which is the relation `sec:composition` uses as `a_eq = A rho^2/4`; `Sigma = a^2 h'/2`,
+#     constant at k = 0; and `h ∝ |sigma|^{-3}`, with the prime the derivative in the leg's own
+#     variable -- consistent because `a ∝ sigma^2` is the marginally bound dust interior in conformal
+#     time.  ** The coefficient is then forced: (1/4)^2 * 3 * (1/2) * 2^2 = 3/8. **
+_s, _M, _C = sp.symbols('sigma M C', positive=True)
+_A = 2 * _M                                   # A = 2M
+_a = _A * _s**2 / 4                           # a = A sigma^2 / 4
+_h = _C * _s**-3                              # h  ∝ |sigma|^-3
+_Sigma = sp.simplify(_a**2 * sp.diff(_h, _s) / 2)
+_want = -sp.Rational(3, 8) * _M**2 * _s**3 * _h          # the paper's form, signed by h' < 0
+_ok38 = sp.simplify(_Sigma - _want) == 0
+_coeff = sp.simplify(-_Sigma / (_M**2 * _s**3 * _h))
+print(f"  DERIVED: Sigma = a^2 h'/2 with A = 2M, a = A|sigma|^2/4, h = C|sigma|^-3  ->  "
+      f"coefficient {_coeff}, the stated 3/8: {_ok38}")
+if not (_ok38 and _coeff == sp.Rational(3, 8)):
+    fail.append("the 3/8 in Sigma = (3/8) M^2 |sigma|^3 h is not reproduced from A = 2M, "
+                "a = A|sigma|^2/4, Sigma = a^2 h'/2 and h ∝ |sigma|^-3")
+print()
 P_T_pred = 4.722e-111                    # 144 pi (l_P/M_nariai)^2 rho^-6 on the CORRECTED
 #   configuration (r6921): M_nariai = 4.17e52 kg and rho = 0.05451, both on the background the
 #   distance data fix.  ** SCALED from the banked 4.796e-111 by the configuration's own ratio
