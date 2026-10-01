@@ -1,20 +1,4 @@
 {
- "claude/shadow-of-existence-setup-5tjf0b": {
-  "suite": {
-   "receipts/P15_CR_cosmology/P15_the_free_streaming_knob_is_common_to_both_arms_and_the_switch_sweep_finds_no_further_shadow.py": {
-    "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/36869023487",
-    "since": "c0db11cc22874f346efaf2acfd515ed395d09489"
-   },
-   "receipts/P15_CR_cosmology/P15_the_likelihood_pair_is_another_instruments_and_the_crossing_run_needed_a_missing_knob.py": {
-    "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/36869023487",
-    "since": "c0db11cc22874f346efaf2acfd515ed395d09489"
-   },
-   "receipts/P15_CR_cosmology/P15_the_visibilitys_clock_is_the_one_the_kernel_reads_and_the_comb_votes_against_the_alternative.py": {
-    "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/36869023487",
-    "since": "c0db11cc22874f346efaf2acfd515ed395d09489"
-   }
-  }
- },
  "claude/shadow-of-existence-setup-6awafl": {
   "tolerance": {
    "receipts/L_numerics/Q1_a_stated_tolerance_is_a_request_and_the_corpus_answers_it.py": {
