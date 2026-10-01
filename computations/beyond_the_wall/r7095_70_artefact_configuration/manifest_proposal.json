@@ -1,0 +1,1499 @@
+{
+ "computations/beyond_the_wall/refit_grid/cr_H0m.npz": {
+  "evidence": "computations/beyond_the_wall/refit_grid/launch.sh: \"cr_H0m       ARM=cr CRH0=66.60 CROM=0.2973 ZSTART=3e7 LEAFSCALES=1\"",
+  "grade": "COMMAND",
+  "switches": {
+   "ARM": "cr",
+   "CRH0": "66.60",
+   "CROM": "0.2973",
+   "LEAFSCALES": "1",
+   "ZSTART": "3e7"
+  }
+ },
+ "computations/beyond_the_wall/refit_grid/cr_H0p.npz": {
+  "evidence": "computations/beyond_the_wall/refit_grid/launch.sh: \"cr_H0p       ARM=cr CRH0=70.60 CROM=0.2973 ZSTART=3e7 LEAFSCALES=1\"",
+  "grade": "COMMAND",
+  "switches": {
+   "ARM": "cr",
+   "CRH0": "70.60",
+   "CROM": "0.2973",
+   "LEAFSCALES": "1",
+   "ZSTART": "3e7"
+  }
+ },
+ "computations/beyond_the_wall/refit_grid/cr_NSm.npz": {
+  "evidence": "computations/beyond_the_wall/refit_grid/launch.sh: \"cr_NSm       ARM=cr CRH0=68.60 CROM=0.2973 ZSTART=3e7 LEAFSCALES=1 NS=0.945\"",
+  "grade": "COMMAND",
+  "switches": {
+   "ARM": "cr",
+   "CRH0": "68.60",
+   "CROM": "0.2973",
+   "LEAFSCALES": "1",
+   "NS": "0.945",
+   "ZSTART": "3e7"
+  }
+ },
+ "computations/beyond_the_wall/refit_grid/cr_NSp.npz": {
+  "evidence": "computations/beyond_the_wall/refit_grid/launch.sh: \"cr_NSp       ARM=cr CRH0=68.60 CROM=0.2973 ZSTART=3e7 LEAFSCALES=1 NS=0.985\"",
+  "grade": "COMMAND",
+  "switches": {
+   "ARM": "cr",
+   "CRH0": "68.60",
+   "CROM": "0.2973",
+   "LEAFSCALES": "1",
+   "NS": "0.985",
+   "ZSTART": "3e7"
+  }
+ },
+ "computations/beyond_the_wall/refit_grid/cr_OMm.npz": {
+  "evidence": "computations/beyond_the_wall/refit_grid/launch.sh: \"cr_OMm       ARM=cr CRH0=68.60 CROM=0.2823 ZSTART=3e7 LEAFSCALES=1\"",
+  "grade": "COMMAND",
+  "switches": {
+   "ARM": "cr",
+   "CRH0": "68.60",
+   "CROM": "0.2823",
+   "LEAFSCALES": "1",
+   "ZSTART": "3e7"
+  }
+ },
+ "computations/beyond_the_wall/refit_grid/cr_OMp.npz": {
+  "evidence": "computations/beyond_the_wall/refit_grid/launch.sh: \"cr_OMp       ARM=cr CRH0=68.60 CROM=0.3123 ZSTART=3e7 LEAFSCALES=1\"",
+  "grade": "COMMAND",
+  "switches": {
+   "ARM": "cr",
+   "CRH0": "68.60",
+   "CROM": "0.3123",
+   "LEAFSCALES": "1",
+   "ZSTART": "3e7"
+  }
+ },
+ "computations/beyond_the_wall/refit_grid/cr_WBm.npz": {
+  "evidence": "computations/beyond_the_wall/refit_grid/launch.sh: \"cr_WBm       ARM=cr CRH0=68.60 CROM=0.2973 ZSTART=3e7 LEAFSCALES=1 WBH2=0.0216\"",
+  "grade": "COMMAND",
+  "switches": {
+   "ARM": "cr",
+   "CRH0": "68.60",
+   "CROM": "0.2973",
+   "LEAFSCALES": "1",
+   "WBH2": "0.0216",
+   "ZSTART": "3e7"
+  }
+ },
+ "computations/beyond_the_wall/refit_grid/cr_WBp.npz": {
+  "evidence": "computations/beyond_the_wall/refit_grid/launch.sh: \"cr_WBp       ARM=cr CRH0=68.60 CROM=0.2973 ZSTART=3e7 LEAFSCALES=1 WBH2=0.0232\"",
+  "grade": "COMMAND",
+  "switches": {
+   "ARM": "cr",
+   "CRH0": "68.60",
+   "CROM": "0.2973",
+   "LEAFSCALES": "1",
+   "WBH2": "0.0232",
+   "ZSTART": "3e7"
+  }
+ },
+ "computations/beyond_the_wall/refit_grid/cr_base.npz": {
+  "evidence": "computations/beyond_the_wall/refit_grid/launch.sh: \"cr_base      ARM=cr CRH0=68.60 CROM=0.2973 ZSTART=3e7 LEAFSCALES=1\"",
+  "grade": "COMMAND",
+  "switches": {
+   "ARM": "cr",
+   "CRH0": "68.60",
+   "CROM": "0.2973",
+   "LEAFSCALES": "1",
+   "ZSTART": "3e7"
+  }
+ },
+ "computations/beyond_the_wall/refit_grid/lcdm_H0m.npz": {
+  "evidence": "computations/beyond_the_wall/refit_grid/launch.sh: \"lcdm_H0m     ARM=lcdm LH0=65.40\"",
+  "grade": "COMMAND",
+  "switches": {
+   "ARM": "lcdm",
+   "LH0": "65.40"
+  }
+ },
+ "computations/beyond_the_wall/refit_grid/lcdm_H0p.npz": {
+  "evidence": "computations/beyond_the_wall/refit_grid/launch.sh: \"lcdm_H0p     ARM=lcdm LH0=69.40\"",
+  "grade": "COMMAND",
+  "switches": {
+   "ARM": "lcdm",
+   "LH0": "69.40"
+  }
+ },
+ "computations/beyond_the_wall/refit_grid/lcdm_NSm.npz": {
+  "evidence": "computations/beyond_the_wall/refit_grid/launch.sh: \"lcdm_NSm     ARM=lcdm NS=0.945\"",
+  "grade": "COMMAND",
+  "switches": {
+   "ARM": "lcdm",
+   "NS": "0.945"
+  }
+ },
+ "computations/beyond_the_wall/refit_grid/lcdm_NSp.npz": {
+  "evidence": "computations/beyond_the_wall/refit_grid/launch.sh: \"lcdm_NSp     ARM=lcdm NS=0.985\"",
+  "grade": "COMMAND",
+  "switches": {
+   "ARM": "lcdm",
+   "NS": "0.985"
+  }
+ },
+ "computations/beyond_the_wall/refit_grid/lcdm_OMm.npz": {
+  "evidence": "computations/beyond_the_wall/refit_grid/launch.sh: \"lcdm_OMm     ARM=lcdm LOM=0.3000\"",
+  "grade": "COMMAND",
+  "switches": {
+   "ARM": "lcdm",
+   "LOM": "0.3000"
+  }
+ },
+ "computations/beyond_the_wall/refit_grid/lcdm_OMp.npz": {
+  "evidence": "computations/beyond_the_wall/refit_grid/launch.sh: \"lcdm_OMp     ARM=lcdm LOM=0.3300\"",
+  "grade": "COMMAND",
+  "switches": {
+   "ARM": "lcdm",
+   "LOM": "0.3300"
+  }
+ },
+ "computations/beyond_the_wall/refit_grid/lcdm_WBm.npz": {
+  "evidence": "computations/beyond_the_wall/refit_grid/launch.sh: \"lcdm_WBm     ARM=lcdm WBH2=0.0216\"",
+  "grade": "COMMAND",
+  "switches": {
+   "ARM": "lcdm",
+   "WBH2": "0.0216"
+  }
+ },
+ "computations/beyond_the_wall/refit_grid/lcdm_WBp.npz": {
+  "evidence": "computations/beyond_the_wall/refit_grid/launch.sh: \"lcdm_WBp     ARM=lcdm WBH2=0.0232\"",
+  "grade": "COMMAND",
+  "switches": {
+   "ARM": "lcdm",
+   "WBH2": "0.0232"
+  }
+ },
+ "computations/beyond_the_wall/refit_grid/lcdm_base.npz": {
+  "evidence": "computations/beyond_the_wall/refit_grid/launch.sh: \"lcdm_base    ARM=lcdm\"",
+  "grade": "COMMAND",
+  "switches": {
+   "ARM": "lcdm"
+  }
+ },
+ "computations/beyond_the_wall/refit_grid/verify_cr.npz": {
+  "evidence": "computations/beyond_the_wall/refit_grid185/verify.sh: \"verify_cr    ARM=cr CRH0=68.581133 CROM=0.297209 ZSTART=3e7 LEAFSCALES=1 WBH2=0.021524 NS=0.997952\" \\",
+  "grade": "COMMAND",
+  "switches": {
+   "ARM": "cr",
+   "CRH0": "68.581133",
+   "CROM": "0.297209",
+   "LEAFSCALES": "1",
+   "NS": "0.997952",
+   "WBH2": "0.021524",
+   "ZSTART": "3e7"
+  }
+ },
+ "computations/beyond_the_wall/refit_grid/verify_lcdm.npz": {
+  "evidence": "computations/beyond_the_wall/refit_grid185/verify.sh: \"verify_lcdm  ARM=lcdm LH0=67.410309 LOM=0.309826 WBH2=0.021966 NS=0.954248\" \\",
+  "grade": "COMMAND",
+  "switches": {
+   "ARM": "lcdm",
+   "LH0": "67.410309",
+   "LOM": "0.309826",
+   "NS": "0.954248",
+   "WBH2": "0.021966"
+  }
+ },
+ "computations/beyond_the_wall/refit_grid185/cr_H0m.npz": {
+  "evidence": "computations/beyond_the_wall/refit_grid/launch.sh: \"cr_H0m       ARM=cr CRH0=66.60 CROM=0.2973 ZSTART=3e7 LEAFSCALES=1\"",
+  "grade": "COMMAND",
+  "switches": {
+   "ARM": "cr",
+   "CRH0": "66.60",
+   "CROM": "0.2973",
+   "LEAFSCALES": "1",
+   "ZSTART": "3e7"
+  }
+ },
+ "computations/beyond_the_wall/refit_grid185/cr_H0p.npz": {
+  "evidence": "computations/beyond_the_wall/refit_grid/launch.sh: \"cr_H0p       ARM=cr CRH0=70.60 CROM=0.2973 ZSTART=3e7 LEAFSCALES=1\"",
+  "grade": "COMMAND",
+  "switches": {
+   "ARM": "cr",
+   "CRH0": "70.60",
+   "CROM": "0.2973",
+   "LEAFSCALES": "1",
+   "ZSTART": "3e7"
+  }
+ },
+ "computations/beyond_the_wall/refit_grid185/cr_NSm.npz": {
+  "evidence": "computations/beyond_the_wall/refit_grid/launch.sh: \"cr_NSm       ARM=cr CRH0=68.60 CROM=0.2973 ZSTART=3e7 LEAFSCALES=1 NS=0.945\"",
+  "grade": "COMMAND",
+  "switches": {
+   "ARM": "cr",
+   "CRH0": "68.60",
+   "CROM": "0.2973",
+   "LEAFSCALES": "1",
+   "NS": "0.945",
+   "ZSTART": "3e7"
+  }
+ },
+ "computations/beyond_the_wall/refit_grid185/cr_NSp.npz": {
+  "evidence": "computations/beyond_the_wall/refit_grid/launch.sh: \"cr_NSp       ARM=cr CRH0=68.60 CROM=0.2973 ZSTART=3e7 LEAFSCALES=1 NS=0.985\"",
+  "grade": "COMMAND",
+  "switches": {
+   "ARM": "cr",
+   "CRH0": "68.60",
+   "CROM": "0.2973",
+   "LEAFSCALES": "1",
+   "NS": "0.985",
+   "ZSTART": "3e7"
+  }
+ },
+ "computations/beyond_the_wall/refit_grid185/cr_OMm.npz": {
+  "evidence": "computations/beyond_the_wall/refit_grid/launch.sh: \"cr_OMm       ARM=cr CRH0=68.60 CROM=0.2823 ZSTART=3e7 LEAFSCALES=1\"",
+  "grade": "COMMAND",
+  "switches": {
+   "ARM": "cr",
+   "CRH0": "68.60",
+   "CROM": "0.2823",
+   "LEAFSCALES": "1",
+   "ZSTART": "3e7"
+  }
+ },
+ "computations/beyond_the_wall/refit_grid185/cr_OMp.npz": {
+  "evidence": "computations/beyond_the_wall/refit_grid/launch.sh: \"cr_OMp       ARM=cr CRH0=68.60 CROM=0.3123 ZSTART=3e7 LEAFSCALES=1\"",
+  "grade": "COMMAND",
+  "switches": {
+   "ARM": "cr",
+   "CRH0": "68.60",
+   "CROM": "0.3123",
+   "LEAFSCALES": "1",
+   "ZSTART": "3e7"
+  }
+ },
+ "computations/beyond_the_wall/refit_grid185/cr_WBm.npz": {
+  "evidence": "computations/beyond_the_wall/refit_grid/launch.sh: \"cr_WBm       ARM=cr CRH0=68.60 CROM=0.2973 ZSTART=3e7 LEAFSCALES=1 WBH2=0.0216\"",
+  "grade": "COMMAND",
+  "switches": {
+   "ARM": "cr",
+   "CRH0": "68.60",
+   "CROM": "0.2973",
+   "LEAFSCALES": "1",
+   "WBH2": "0.0216",
+   "ZSTART": "3e7"
+  }
+ },
+ "computations/beyond_the_wall/refit_grid185/cr_WBp.npz": {
+  "evidence": "computations/beyond_the_wall/refit_grid/launch.sh: \"cr_WBp       ARM=cr CRH0=68.60 CROM=0.2973 ZSTART=3e7 LEAFSCALES=1 WBH2=0.0232\"",
+  "grade": "COMMAND",
+  "switches": {
+   "ARM": "cr",
+   "CRH0": "68.60",
+   "CROM": "0.2973",
+   "LEAFSCALES": "1",
+   "WBH2": "0.0232",
+   "ZSTART": "3e7"
+  }
+ },
+ "computations/beyond_the_wall/refit_grid185/cr_base.npz": {
+  "evidence": "computations/beyond_the_wall/refit_grid/launch.sh: \"cr_base      ARM=cr CRH0=68.60 CROM=0.2973 ZSTART=3e7 LEAFSCALES=1\"",
+  "grade": "COMMAND",
+  "switches": {
+   "ARM": "cr",
+   "CRH0": "68.60",
+   "CROM": "0.2973",
+   "LEAFSCALES": "1",
+   "ZSTART": "3e7"
+  }
+ },
+ "computations/beyond_the_wall/refit_grid185/lcdm_H0m.npz": {
+  "evidence": "computations/beyond_the_wall/refit_grid/launch.sh: \"lcdm_H0m     ARM=lcdm LH0=65.40\"",
+  "grade": "COMMAND",
+  "switches": {
+   "ARM": "lcdm",
+   "LH0": "65.40"
+  }
+ },
+ "computations/beyond_the_wall/refit_grid185/lcdm_H0p.npz": {
+  "evidence": "computations/beyond_the_wall/refit_grid/launch.sh: \"lcdm_H0p     ARM=lcdm LH0=69.40\"",
+  "grade": "COMMAND",
+  "switches": {
+   "ARM": "lcdm",
+   "LH0": "69.40"
+  }
+ },
+ "computations/beyond_the_wall/refit_grid185/lcdm_NSm.npz": {
+  "evidence": "computations/beyond_the_wall/refit_grid/launch.sh: \"lcdm_NSm     ARM=lcdm NS=0.945\"",
+  "grade": "COMMAND",
+  "switches": {
+   "ARM": "lcdm",
+   "NS": "0.945"
+  }
+ },
+ "computations/beyond_the_wall/refit_grid185/lcdm_NSp.npz": {
+  "evidence": "computations/beyond_the_wall/refit_grid/launch.sh: \"lcdm_NSp     ARM=lcdm NS=0.985\"",
+  "grade": "COMMAND",
+  "switches": {
+   "ARM": "lcdm",
+   "NS": "0.985"
+  }
+ },
+ "computations/beyond_the_wall/refit_grid185/lcdm_OMm.npz": {
+  "evidence": "computations/beyond_the_wall/refit_grid/launch.sh: \"lcdm_OMm     ARM=lcdm LOM=0.3000\"",
+  "grade": "COMMAND",
+  "switches": {
+   "ARM": "lcdm",
+   "LOM": "0.3000"
+  }
+ },
+ "computations/beyond_the_wall/refit_grid185/lcdm_OMp.npz": {
+  "evidence": "computations/beyond_the_wall/refit_grid/launch.sh: \"lcdm_OMp     ARM=lcdm LOM=0.3300\"",
+  "grade": "COMMAND",
+  "switches": {
+   "ARM": "lcdm",
+   "LOM": "0.3300"
+  }
+ },
+ "computations/beyond_the_wall/refit_grid185/lcdm_WBm.npz": {
+  "evidence": "computations/beyond_the_wall/refit_grid/launch.sh: \"lcdm_WBm     ARM=lcdm WBH2=0.0216\"",
+  "grade": "COMMAND",
+  "switches": {
+   "ARM": "lcdm",
+   "WBH2": "0.0216"
+  }
+ },
+ "computations/beyond_the_wall/refit_grid185/lcdm_WBp.npz": {
+  "evidence": "computations/beyond_the_wall/refit_grid/launch.sh: \"lcdm_WBp     ARM=lcdm WBH2=0.0232\"",
+  "grade": "COMMAND",
+  "switches": {
+   "ARM": "lcdm",
+   "WBH2": "0.0232"
+  }
+ },
+ "computations/beyond_the_wall/refit_grid185/lcdm_base.npz": {
+  "evidence": "computations/beyond_the_wall/refit_grid/launch.sh: \"lcdm_base    ARM=lcdm\"",
+  "grade": "COMMAND",
+  "switches": {
+   "ARM": "lcdm"
+  }
+ },
+ "computations/beyond_the_wall/refit_grid185/verify_cr.npz": {
+  "evidence": "computations/beyond_the_wall/refit_grid185/verify.sh: \"verify_cr    ARM=cr CRH0=68.581133 CROM=0.297209 ZSTART=3e7 LEAFSCALES=1 WBH2=0.021524 NS=0.997952\" \\",
+  "grade": "COMMAND",
+  "switches": {
+   "ARM": "cr",
+   "CRH0": "68.581133",
+   "CROM": "0.297209",
+   "LEAFSCALES": "1",
+   "NS": "0.997952",
+   "WBH2": "0.021524",
+   "ZSTART": "3e7"
+  }
+ },
+ "computations/beyond_the_wall/refit_grid185/verify_lcdm.npz": {
+  "evidence": "computations/beyond_the_wall/refit_grid185/verify.sh: \"verify_lcdm  ARM=lcdm LH0=67.410309 LOM=0.309826 WBH2=0.021966 NS=0.954248\" \\",
+  "grade": "COMMAND",
+  "switches": {
+   "ARM": "lcdm",
+   "LH0": "67.410309",
+   "LOM": "0.309826",
+   "NS": "0.954248",
+   "WBH2": "0.021966"
+  }
+ },
+ "computations/beyond_the_wall/spectra/L814_cr_phipi_L2000.npz": {
+  "evidence": "spectra/README.md: | `L814_cr_phipi_L2000.npz` | r2674 (cc54, L-814) | **the same c54.178 CR-arm command with `CRPHI=3.14159265`** \u2014 the seam phase at the OTHER admissible value (\u03c6=\u03c0), the \u03c6=\u03c0 branch of PO-10's F3 pair. `HIER=1 BSPLIT=1 ARM=cr CRPHI=3.14159265 NK=600 LMAXL=2000 ETAEND=4000 KBATCH=300`, `l_A=301.6` (CR",
+  "grade": "COMMAND",
+  "switches": {
+   "ARM": "cr",
+   "BSPLIT": "1",
+   "CRPHI": "3.14159265",
+   "ETAEND": "4000",
+   "HIER": "1",
+   "KBATCH": "300",
+   "LMAXL": "2000",
+   "NK": "600",
+   "P2": "1.619."
+  }
+ },
+ "computations/beyond_the_wall/spectra/L820_cr_L2512.npz": {
+  "evidence": "spectra/README.md: | `L820_cr_L2512.npz` | r2674 (cc54, L-820 S2) | **the CR arm of the same extension \u2014 `ARM=cr LMAXL=2512 NK=800`** (physical ladder). *The overlap barely moves (280.1 \u2192 281.1/dof); with the damping tail CR is 260.1/dof \u2014 still overwhelmingly disfavoured. F3 = \u03c7\u00b2(CR)\u2212\u03c7\u00b2(LCDM) goes 50497 \u2192 51547 acros",
+  "grade": "COMMAND",
+  "switches": {
+   "ARM": "cr",
+   "LMAXL": "2512",
+   "NK": "800"
+  }
+ },
+ "computations/beyond_the_wall/spectra/L820_lcdm_L2512_nk800.npz": {
+  "evidence": "spectra/README.md: | `L820_lcdm_L2512_nk800.npz` | r2674 (cc54, L-820 S2) | **the extension C51 asks for \u2014 `HIER=1 BSPLIT=1 ARM=lcdm NK=800 LMAXL=2512 ETAEND=4000 KBATCH=300`** (302 multipoles to \u2113=2508, 6.0 pts/period). *Recovers the 30 damping-tail bins the `LMAXL=2000` arm drops. On the SAME 185 bins the control go",
+  "grade": "COMMAND",
+  "switches": {
+   "ARM": "lcdm",
+   "BSPLIT": "1",
+   "ETAEND": "4000",
+   "HIER": "1",
+   "KBATCH": "300",
+   "LMAXL": "2000",
+   "NK": "800"
+  }
+ },
+ "computations/beyond_the_wall/spectra/L820_lcdm_nk260_guardfail.npz": {
+  "evidence": "control arm (no CR switch applies)  [l_A 301.375, r_s 144.528]",
+  "grade": "CONTROL (no CR switch)",
+  "switches": null
+ },
+ "computations/beyond_the_wall/spectra/L820_lcdm_nk600_reproduces_c54.178.npz": {
+  "evidence": "spectra/README.md: | `L820_lcdm_nk600_reproduces_c54.178.npz` | r2674 (cc54, L-820) | **the exact c54.178 lcdm command re-run on a 15 GB node \u2014 `HIER=1 BSPLIT=1 ARM=lcdm NK=600 LMAXL=2000 ETAEND=4000 KBATCH=300`** \u2014 reproducing `c54.178_lcdm.npz` **bit-for-bit** (max \\|\u0394Dl\\| = 8\u00d710\u207b\u00b9\u2076). *This is the provenance check f",
+  "grade": "COMMAND",
+  "switches": {
+   "ARM": "lcdm",
+   "BSPLIT": "1",
+   "ETAEND": "4000",
+   "HIER": "1",
+   "KBATCH": "300",
+   "LMAXL": "2000",
+   "LSTEP": "8",
+   "NK": "260"
+  }
+ },
+ "computations/beyond_the_wall/spectra/L824_lcdm_L3200_nk960.npz": {
+  "evidence": "spectra/README.md: | `L824_lcdm_L3200_nk960.npz` | r2674 (cc54, L-824) | **the THIRD convergence point OWED #496 asks for \u2014 `HIER=1 BSPLIT=1 ARM=lcdm NK=960 LMAXL=3200 ETAEND=4000 KBATCH=300`** (388 multipoles, 5.7 pts/Bessel period, k-spacing held at the L2000/L2512/L3000 value). *Reproduces `c54.186_lcdm_L3000` on t",
+  "grade": "COMMAND",
+  "switches": {
+   "ARM": "lcdm",
+   "BSPLIT": "1",
+   "ETAEND": "4000",
+   "HIER": "1",
+   "KBATCH": "300",
+   "LMAXL": "3200",
+   "NK": "960"
+  }
+ },
+ "computations/beyond_the_wall/spectra/L830_cr_lat280.npz": {
+  "evidence": "spectra/README.md: | `L830_cr_lat280.npz` / `L830_cr_lat302.npz` / `L830_cr_lat320.npz` | r2803 (cc54, L-830) | **the pin test 56 routed \u2014 the CR arm at `LATARG = 280 / 301.6 / 320`** (`HIER=1 BSPLIT=1 ARM=cr NK=600 LMAXL=2000 ETAEND=4000 KBATCH=300 LATARG=<v>`), the runs 56's container OOM'd at projection. *Peaks tra",
+  "grade": "COMMAND",
+  "switches": {
+   "ARM": "cr",
+   "BSPLIT": "1",
+   "ETAEND": "4000",
+   "HIER": "1",
+   "KBATCH": "300",
+   "LATARG": "<v>",
+   "LMAXL": "2000",
+   "NK": "600"
+  }
+ },
+ "computations/beyond_the_wall/spectra/L830_cr_lat302.npz": {
+  "evidence": "spectra/README.md: | `L830_cr_lat280.npz` / `L830_cr_lat302.npz` / `L830_cr_lat320.npz` | r2803 (cc54, L-830) | **the pin test 56 routed \u2014 the CR arm at `LATARG = 280 / 301.6 / 320`** (`HIER=1 BSPLIT=1 ARM=cr NK=600 LMAXL=2000 ETAEND=4000 KBATCH=300 LATARG=<v>`), the runs 56's container OOM'd at projection. *Peaks tra",
+  "grade": "COMMAND",
+  "switches": {
+   "ARM": "cr",
+   "BSPLIT": "1",
+   "ETAEND": "4000",
+   "HIER": "1",
+   "KBATCH": "300",
+   "LATARG": "<v>",
+   "LMAXL": "2000",
+   "NK": "600"
+  }
+ },
+ "computations/beyond_the_wall/spectra/L830_cr_lat320.npz": {
+  "evidence": "spectra/README.md: | `L830_cr_lat280.npz` / `L830_cr_lat302.npz` / `L830_cr_lat320.npz` | r2803 (cc54, L-830) | **the pin test 56 routed \u2014 the CR arm at `LATARG = 280 / 301.6 / 320`** (`HIER=1 BSPLIT=1 ARM=cr NK=600 LMAXL=2000 ETAEND=4000 KBATCH=300 LATARG=<v>`), the runs 56's container OOM'd at projection. *Peaks tra",
+  "grade": "COMMAND",
+  "switches": {
+   "ARM": "cr",
+   "BSPLIT": "1",
+   "ETAEND": "4000",
+   "HIER": "1",
+   "KBATCH": "300",
+   "LATARG": "<v>",
+   "LMAXL": "2000",
+   "NK": "600"
+  }
+ },
+ "computations/beyond_the_wall/spectra/c54.175_cr.npz": {
+  "evidence": "spectra/README.md: | `c54.175_cr.npz` | r2376+c54.175 | `ARM=cr NK=600 LMAXL=2000 ETAEND=4000 SAVE=\u2026 python3 ACOUSTIC_two_arm.py` |",
+  "grade": "COMMAND",
+  "switches": {
+   "ARM": "cr",
+   "ETAEND": "4000",
+   "LMAXL": "2000",
+   "NK": "600"
+  }
+ },
+ "computations/beyond_the_wall/spectra/c54.175_lcdm.npz": {
+  "evidence": "spectra/README.md: | `c54.175_lcdm.npz` | r2376+c54.175 | `ARM=lcdm NK=600 LMAXL=2000 ETAEND=4000 SAVE=\u2026 python3 ACOUSTIC_two_arm.py` |",
+  "grade": "COMMAND",
+  "switches": {
+   "ARM": "lcdm",
+   "ETAEND": "4000",
+   "LMAXL": "2000",
+   "NK": "600"
+  }
+ },
+ "computations/beyond_the_wall/spectra/c54.177_cr.npz": {
+  "evidence": "spectra/README.md: | `c54.177_cr.npz` | r2376+c54.177 | same, with the DERIVED shear coefficient 16/15 |",
+  "grade": "COMMAND",
+  "switches": {}
+ },
+ "computations/beyond_the_wall/spectra/c54.177_lcdm.npz": {
+  "evidence": "spectra/README.md: | `c54.177_lcdm.npz` | r2376+c54.177 | same, with the DERIVED shear coefficient 16/15 |",
+  "grade": "COMMAND",
+  "switches": {}
+ },
+ "computations/beyond_the_wall/spectra/c54.178_cr.npz": {
+  "evidence": "spectra/README.md: | `c54.178_cr.npz` | r2376+c54.178 | the same with `ARM=cr` |",
+  "grade": "COMMAND",
+  "switches": {
+   "ARM": "cr"
+  }
+ },
+ "computations/beyond_the_wall/spectra/c54.178_lcdm.npz": {
+  "evidence": "spectra/README.md: | `c54.178_lcdm.npz` | r2376+c54.178 | `HIER=1 BSPLIT=1 ARM=lcdm NK=600 LMAXL=2000 ETAEND=4000 KBATCH=300 SAVE=\u2026 ` |",
+  "grade": "COMMAND",
+  "switches": {
+   "ARM": "lcdm",
+   "BSPLIT": "1",
+   "ETAEND": "4000",
+   "HIER": "1",
+   "KBATCH": "300",
+   "LMAXL": "2000",
+   "NK": "600"
+  }
+ },
+ "computations/beyond_the_wall/spectra/c54.178_lcdm_noBsplit.npz": {
+  "evidence": "spectra/README.md: | `c54.178_lcdm_noBsplit.npz` | r2376+c54.178 | the same with `BSPLIT=0` \u2014 the baryons at the CDM's density |",
+  "grade": "COMMAND",
+  "switches": {
+   "BSPLIT": "0"
+  }
+ },
+ "computations/beyond_the_wall/spectra/c54.178_lcdm_noPi.npz": {
+  "evidence": "spectra/README.md: | `c54.178_lcdm_noPi.npz` | r2376+c54.178 | the same with `PISRC=0` \u2014 the hierarchy WITHOUT the polarisation source terms, which is the control for what an envelope can and cannot supply |",
+  "grade": "COMMAND",
+  "switches": {
+   "PISRC": "0"
+  }
+ },
+ "computations/beyond_the_wall/spectra/c54.182_clpp.npz": {
+  "evidence": "",
+  "grade": "NONE",
+  "switches": null
+ },
+ "computations/beyond_the_wall/spectra/c54.186_cr_KCONT.npz": {
+  "evidence": "spectra/README.md: | `c54.186_cr_KCONT.npz` | r2441+c54.186 | the same with `ARM=cr KCONT=1` \u2014 **the CR arm on a CONTINUUM k-grid instead of its discrete ladder, which is the check the alias gate asks for in its own waiver text and which had never been run against \u03c7\u00b2**. *1800 modes at 5.7 samples per Bessel period, ag",
+  "grade": "COMMAND",
+  "switches": {
+   "ARM": "cr",
+   "KCONT": "1"
+  }
+ },
+ "computations/beyond_the_wall/spectra/c54.186_cr_L3000.npz": {
+  "evidence": "spectra/README.md: | `c54.186_cr_L3000.npz` | r2441+c54.186 | the same with `ARM=cr` \u2014 **so that `L-147`'s `F3` compares two arms at the SAME wavenumber range**, which is the mistake `F3` exists to avoid. *The CR arm moves 298.9 \u2192 302.1 in \u03c7\u00b2/dof and \u2113\u2081/\u2113_A = 0.5703 for the eighth instrument state.*|",
+  "grade": "COMMAND",
+  "switches": {
+   "ARM": "cr"
+  }
+ },
+ "computations/beyond_the_wall/spectra/c54.186_lcdm_L3000.npz": {
+  "evidence": "spectra/README.md: | `c54.186_lcdm_L3000.npz` | r2441+c54.186 | `HIER=1 BSPLIT=1 ARM=lcdm NK=900 LMAXL=3000 ETAEND=4000 KBATCH=300 SAVE=\u2026` \u2014 **the wavenumber range opened, with the k-SPACING HELD FIXED** (NK scaled with LMAXL so the projection sampling is 5.7 per Bessel period in both). *Scored on the SAME 185 bins as",
+  "grade": "COMMAND",
+  "switches": {
+   "ARM": "lcdm",
+   "BSPLIT": "1",
+   "ETAEND": "4000",
+   "HIER": "1",
+   "KBATCH": "300",
+   "LMAXL": "2000",
+   "NK": "900"
+  }
+ },
+ "computations/beyond_the_wall/spectra/c54.187_cr_phi0.0.npz": {
+  "evidence": "spectra/README.md (family row): | `c54.187_cr_phi<PHI>.npz` (nine files) | r2441+c54.187 | `HIER=1 BSPLIT=1 ARM=cr CRPHI=<PHI> NK=300 LMAXL=1000 ETAEND=4000 KBATCH=300 LSTEP=4 SAVE=\u2026` \u2014 **the CR arm under the common phase its own seam datum leaves unspecified**, \u03c6 = 0 \u2026 \u03c0 in nine steps. *`CRPHI=0` is the instrument exactly as code",
+  "grade": "COMMAND",
+  "switches": {
+   "ARM": "cr",
+   "BSPLIT": "1",
+   "CRPHI": "0",
+   "ETAEND": "4000",
+   "HIER": "1",
+   "KBATCH": "300",
+   "LMAXL": "1000",
+   "LSTEP": "4",
+   "NK": "300"
+  }
+ },
+ "computations/beyond_the_wall/spectra/c54.187_cr_phi0.3927.npz": {
+  "evidence": "spectra/README.md (family row): | `c54.187_cr_phi<PHI>.npz` (nine files) | r2441+c54.187 | `HIER=1 BSPLIT=1 ARM=cr CRPHI=<PHI> NK=300 LMAXL=1000 ETAEND=4000 KBATCH=300 LSTEP=4 SAVE=\u2026` \u2014 **the CR arm under the common phase its own seam datum leaves unspecified**, \u03c6 = 0 \u2026 \u03c0 in nine steps. *`CRPHI=0` is the instrument exactly as code",
+  "grade": "COMMAND",
+  "switches": {
+   "ARM": "cr",
+   "BSPLIT": "1",
+   "CRPHI": "0",
+   "ETAEND": "4000",
+   "HIER": "1",
+   "KBATCH": "300",
+   "LMAXL": "1000",
+   "LSTEP": "4",
+   "NK": "300"
+  }
+ },
+ "computations/beyond_the_wall/spectra/c54.187_cr_phi0.7854.npz": {
+  "evidence": "spectra/README.md (family row): | `c54.187_cr_phi<PHI>.npz` (nine files) | r2441+c54.187 | `HIER=1 BSPLIT=1 ARM=cr CRPHI=<PHI> NK=300 LMAXL=1000 ETAEND=4000 KBATCH=300 LSTEP=4 SAVE=\u2026` \u2014 **the CR arm under the common phase its own seam datum leaves unspecified**, \u03c6 = 0 \u2026 \u03c0 in nine steps. *`CRPHI=0` is the instrument exactly as code",
+  "grade": "COMMAND",
+  "switches": {
+   "ARM": "cr",
+   "BSPLIT": "1",
+   "CRPHI": "0",
+   "ETAEND": "4000",
+   "HIER": "1",
+   "KBATCH": "300",
+   "LMAXL": "1000",
+   "LSTEP": "4",
+   "NK": "300"
+  }
+ },
+ "computations/beyond_the_wall/spectra/c54.187_cr_phi1.1781.npz": {
+  "evidence": "spectra/README.md (family row): | `c54.187_cr_phi<PHI>.npz` (nine files) | r2441+c54.187 | `HIER=1 BSPLIT=1 ARM=cr CRPHI=<PHI> NK=300 LMAXL=1000 ETAEND=4000 KBATCH=300 LSTEP=4 SAVE=\u2026` \u2014 **the CR arm under the common phase its own seam datum leaves unspecified**, \u03c6 = 0 \u2026 \u03c0 in nine steps. *`CRPHI=0` is the instrument exactly as code",
+  "grade": "COMMAND",
+  "switches": {
+   "ARM": "cr",
+   "BSPLIT": "1",
+   "CRPHI": "0",
+   "ETAEND": "4000",
+   "HIER": "1",
+   "KBATCH": "300",
+   "LMAXL": "1000",
+   "LSTEP": "4",
+   "NK": "300"
+  }
+ },
+ "computations/beyond_the_wall/spectra/c54.187_cr_phi1.5708.npz": {
+  "evidence": "spectra/README.md (family row): | `c54.187_cr_phi<PHI>.npz` (nine files) | r2441+c54.187 | `HIER=1 BSPLIT=1 ARM=cr CRPHI=<PHI> NK=300 LMAXL=1000 ETAEND=4000 KBATCH=300 LSTEP=4 SAVE=\u2026` \u2014 **the CR arm under the common phase its own seam datum leaves unspecified**, \u03c6 = 0 \u2026 \u03c0 in nine steps. *`CRPHI=0` is the instrument exactly as code",
+  "grade": "COMMAND",
+  "switches": {
+   "ARM": "cr",
+   "BSPLIT": "1",
+   "CRPHI": "0",
+   "ETAEND": "4000",
+   "HIER": "1",
+   "KBATCH": "300",
+   "LMAXL": "1000",
+   "LSTEP": "4",
+   "NK": "300"
+  }
+ },
+ "computations/beyond_the_wall/spectra/c54.187_cr_phi1.9635.npz": {
+  "evidence": "spectra/README.md (family row): | `c54.187_cr_phi<PHI>.npz` (nine files) | r2441+c54.187 | `HIER=1 BSPLIT=1 ARM=cr CRPHI=<PHI> NK=300 LMAXL=1000 ETAEND=4000 KBATCH=300 LSTEP=4 SAVE=\u2026` \u2014 **the CR arm under the common phase its own seam datum leaves unspecified**, \u03c6 = 0 \u2026 \u03c0 in nine steps. *`CRPHI=0` is the instrument exactly as code",
+  "grade": "COMMAND",
+  "switches": {
+   "ARM": "cr",
+   "BSPLIT": "1",
+   "CRPHI": "0",
+   "ETAEND": "4000",
+   "HIER": "1",
+   "KBATCH": "300",
+   "LMAXL": "1000",
+   "LSTEP": "4",
+   "NK": "300"
+  }
+ },
+ "computations/beyond_the_wall/spectra/c54.187_cr_phi2.3562.npz": {
+  "evidence": "spectra/README.md (family row): | `c54.187_cr_phi<PHI>.npz` (nine files) | r2441+c54.187 | `HIER=1 BSPLIT=1 ARM=cr CRPHI=<PHI> NK=300 LMAXL=1000 ETAEND=4000 KBATCH=300 LSTEP=4 SAVE=\u2026` \u2014 **the CR arm under the common phase its own seam datum leaves unspecified**, \u03c6 = 0 \u2026 \u03c0 in nine steps. *`CRPHI=0` is the instrument exactly as code",
+  "grade": "COMMAND",
+  "switches": {
+   "ARM": "cr",
+   "BSPLIT": "1",
+   "CRPHI": "0",
+   "ETAEND": "4000",
+   "HIER": "1",
+   "KBATCH": "300",
+   "LMAXL": "1000",
+   "LSTEP": "4",
+   "NK": "300"
+  }
+ },
+ "computations/beyond_the_wall/spectra/c54.187_cr_phi2.7489.npz": {
+  "evidence": "spectra/README.md (family row): | `c54.187_cr_phi<PHI>.npz` (nine files) | r2441+c54.187 | `HIER=1 BSPLIT=1 ARM=cr CRPHI=<PHI> NK=300 LMAXL=1000 ETAEND=4000 KBATCH=300 LSTEP=4 SAVE=\u2026` \u2014 **the CR arm under the common phase its own seam datum leaves unspecified**, \u03c6 = 0 \u2026 \u03c0 in nine steps. *`CRPHI=0` is the instrument exactly as code",
+  "grade": "COMMAND",
+  "switches": {
+   "ARM": "cr",
+   "BSPLIT": "1",
+   "CRPHI": "0",
+   "ETAEND": "4000",
+   "HIER": "1",
+   "KBATCH": "300",
+   "LMAXL": "1000",
+   "LSTEP": "4",
+   "NK": "300"
+  }
+ },
+ "computations/beyond_the_wall/spectra/c54.187_cr_phi3.1416.npz": {
+  "evidence": "spectra/README.md (family row): | `c54.187_cr_phi<PHI>.npz` (nine files) | r2441+c54.187 | `HIER=1 BSPLIT=1 ARM=cr CRPHI=<PHI> NK=300 LMAXL=1000 ETAEND=4000 KBATCH=300 LSTEP=4 SAVE=\u2026` \u2014 **the CR arm under the common phase its own seam datum leaves unspecified**, \u03c6 = 0 \u2026 \u03c0 in nine steps. *`CRPHI=0` is the instrument exactly as code",
+  "grade": "COMMAND",
+  "switches": {
+   "ARM": "cr",
+   "BSPLIT": "1",
+   "CRPHI": "0",
+   "ETAEND": "4000",
+   "HIER": "1",
+   "KBATCH": "300",
+   "LMAXL": "1000",
+   "LSTEP": "4",
+   "NK": "300"
+  }
+ },
+ "computations/beyond_the_wall/spectra/c54.188_cr_seam_phi0.0.npz": {
+  "evidence": "A (default: stacking, onset solved for l_A = 301.6)  [arm cr, l_A 301.600, r_s 135.461]",
+  "grade": "FINGERPRINT",
+  "switches": null
+ },
+ "computations/beyond_the_wall/spectra/c54.188_cr_seam_phi0.3927.npz": {
+  "evidence": "A (default: stacking, onset solved for l_A = 301.6)  [arm cr, l_A 301.600, r_s 135.461]",
+  "grade": "FINGERPRINT",
+  "switches": null
+ },
+ "computations/beyond_the_wall/spectra/c54.188_cr_seam_phi0.7854.npz": {
+  "evidence": "A (default: stacking, onset solved for l_A = 301.6)  [arm cr, l_A 301.600, r_s 135.461]",
+  "grade": "FINGERPRINT",
+  "switches": null
+ },
+ "computations/beyond_the_wall/spectra/c54.188_cr_seam_phi1.1781.npz": {
+  "evidence": "A (default: stacking, onset solved for l_A = 301.6)  [arm cr, l_A 301.600, r_s 135.461]",
+  "grade": "FINGERPRINT",
+  "switches": null
+ },
+ "computations/beyond_the_wall/spectra/c54.188_cr_seam_phi1.5708.npz": {
+  "evidence": "A (default: stacking, onset solved for l_A = 301.6)  [arm cr, l_A 301.600, r_s 135.461]",
+  "grade": "FINGERPRINT",
+  "switches": null
+ },
+ "computations/beyond_the_wall/spectra/c54.188_cr_seam_phi1.9635.npz": {
+  "evidence": "A (default: stacking, onset solved for l_A = 301.6)  [arm cr, l_A 301.600, r_s 135.461]",
+  "grade": "FINGERPRINT",
+  "switches": null
+ },
+ "computations/beyond_the_wall/spectra/c54.188_cr_seam_phi2.3562.npz": {
+  "evidence": "A (default: stacking, onset solved for l_A = 301.6)  [arm cr, l_A 301.600, r_s 135.461]",
+  "grade": "FINGERPRINT",
+  "switches": null
+ },
+ "computations/beyond_the_wall/spectra/c54.188_cr_seam_phi2.7489.npz": {
+  "evidence": "A (default: stacking, onset solved for l_A = 301.6)  [arm cr, l_A 301.600, r_s 135.461]",
+  "grade": "FINGERPRINT",
+  "switches": null
+ },
+ "computations/beyond_the_wall/spectra/c54.188_cr_seam_phi3.1416.npz": {
+  "evidence": "A (default: stacking, onset solved for l_A = 301.6)  [arm cr, l_A 301.600, r_s 135.461]",
+  "grade": "FINGERPRINT",
+  "switches": null
+ },
+ "computations/beyond_the_wall/spectra/c54.189_cr_lA260.npz": {
+  "evidence": "A-family (onset solved for a pinned l_A = LATARG)  [arm cr, l_A 260.000, r_s 157.135]",
+  "grade": "FINGERPRINT",
+  "switches": null
+ },
+ "computations/beyond_the_wall/spectra/c54.189_cr_lA280.npz": {
+  "evidence": "A-family (onset solved for a pinned l_A = LATARG)  [arm cr, l_A 280.000, r_s 145.911]",
+  "grade": "FINGERPRINT",
+  "switches": null
+ },
+ "computations/beyond_the_wall/spectra/c54.189_cr_lA301.6.npz": {
+  "evidence": "A (default: stacking, onset solved for l_A = 301.6)  [arm cr, l_A 301.600, r_s 135.461]",
+  "grade": "FINGERPRINT",
+  "switches": null
+ },
+ "computations/beyond_the_wall/spectra/c54.189_cr_lA320.npz": {
+  "evidence": "A-family (onset solved for a pinned l_A = LATARG)  [arm cr, l_A 320.000, r_s 127.672]",
+  "grade": "FINGERPRINT",
+  "switches": null
+ },
+ "computations/beyond_the_wall/spectra/c54.189_cr_lA340.npz": {
+  "evidence": "A-family (onset solved for a pinned l_A = LATARG)  [arm cr, l_A 340.000, r_s 120.162]",
+  "grade": "FINGERPRINT",
+  "switches": null
+ },
+ "computations/beyond_the_wall/spectra/c54.191_cr_lA340_L3000.npz": {
+  "evidence": "A-family (onset solved for a pinned l_A = LATARG)  [arm cr, l_A 340.000, r_s 120.162]",
+  "grade": "FINGERPRINT",
+  "switches": null
+ },
+ "computations/beyond_the_wall/spectra/c54.191_cr_phipi_L3000.npz": {
+  "evidence": "A (default: stacking, onset solved for l_A = 301.6)  [arm cr, l_A 301.600, r_s 135.461]",
+  "grade": "FINGERPRINT",
+  "switches": null
+ },
+ "computations/beyond_the_wall/spectra/c54.193_cr_nodrive_L3000.npz": {
+  "evidence": "A (default: stacking, onset solved for l_A = 301.6)  [arm cr, l_A 301.600, r_s 135.461]",
+  "grade": "FINGERPRINT",
+  "switches": null
+ },
+ "computations/beyond_the_wall/spectra/c54.193_lcdm_nodrive_L3000.npz": {
+  "evidence": "control arm (no CR switch applies)  [l_A 301.375, r_s 144.528]",
+  "grade": "CONTROL (no CR switch)",
+  "switches": null
+ },
+ "computations/beyond_the_wall/spectra/c54.195_cr_phi0.7854_L3000.npz": {
+  "evidence": "A (default: stacking, onset solved for l_A = 301.6)  [arm cr, l_A 301.600, r_s 135.461]",
+  "grade": "FINGERPRINT",
+  "switches": null
+ },
+ "computations/beyond_the_wall/spectra/c54.195_cr_phi1.5708_L3000.npz": {
+  "evidence": "A (default: stacking, onset solved for l_A = 301.6)  [arm cr, l_A 301.600, r_s 135.461]",
+  "grade": "FINGERPRINT",
+  "switches": null
+ },
+ "computations/beyond_the_wall/spectra/cc66_cr_coded.npz": {
+  "evidence": "A (default: stacking, onset solved for l_A = 301.6)  [arm cr, l_A 301.600, r_s 135.461]",
+  "grade": "FINGERPRINT",
+  "switches": null
+ },
+ "computations/beyond_the_wall/spectra/cc66_cr_crossing.npz": {
+  "evidence": "superseded stacking ruler (l_A ~ 172)  [arm cr, l_A 172.841, r_s 236.374]",
+  "grade": "FINGERPRINT",
+  "switches": null
+ },
+ "computations/beyond_the_wall/spectra/cc66_cr_leafpin.npz": {
+  "evidence": "A (default: stacking, onset solved for l_A = 301.6)  [arm cr, l_A 301.600, r_s 135.461]",
+  "grade": "FINGERPRINT",
+  "switches": null
+ },
+ "computations/beyond_the_wall/spectra/cc66_cr_leafpin_fluid.npz": {
+  "evidence": "A (default: stacking, onset solved for l_A = 301.6)  [arm cr, l_A 301.600, r_s 135.461]",
+  "grade": "FINGERPRINT",
+  "switches": null
+ },
+ "computations/beyond_the_wall/spectra/cc66_cr_x_crom3000.npz": {
+  "evidence": "no known configuration  [arm cr, l_A 168.238, r_s 270.736]",
+  "grade": "FINGERPRINT (unplaced)",
+  "switches": null
+ },
+ "computations/beyond_the_wall/spectra/cc66_cr_x_crom3447.npz": {
+  "evidence": "superseded stacking ruler (l_A ~ 172)  [arm cr, l_A 170.606, r_s 252.579]",
+  "grade": "FINGERPRINT",
+  "switches": null
+ },
+ "computations/beyond_the_wall/spectra/cc66_cr_x_h6862_fluid.npz": {
+  "evidence": "B (LEAFSCALES=1 ZSTART=3e7)  [arm cr, l_A 302.844, r_s 145.307]",
+  "grade": "FINGERPRINT",
+  "switches": null
+ },
+ "computations/beyond_the_wall/spectra/cc66_cr_x_h6862_pol.npz": {
+  "evidence": "B (LEAFSCALES=1 ZSTART=3e7)  [arm cr, l_A 302.844, r_s 145.307]",
+  "grade": "FINGERPRINT",
+  "switches": null
+ },
+ "computations/beyond_the_wall/spectra/cc66_cr_x_h686_L2000.npz": {
+  "evidence": "B (LEAFSCALES=1 ZSTART=3e7)  [arm cr, l_A 302.889, r_s 145.328]",
+  "grade": "FINGERPRINT",
+  "switches": null
+ },
+ "computations/beyond_the_wall/spectra/cc66_cr_x_h686_fluid.npz": {
+  "evidence": "B (LEAFSCALES=1 ZSTART=3e7)  [arm cr, l_A 302.889, r_s 145.328]",
+  "grade": "FINGERPRINT",
+  "switches": null
+ },
+ "computations/beyond_the_wall/spectra/cc66_cr_x_h686_nodrive_fluid.npz": {
+  "evidence": "B (LEAFSCALES=1 ZSTART=3e7)  [arm cr, l_A 302.889, r_s 145.328]",
+  "grade": "FINGERPRINT",
+  "switches": null
+ },
+ "computations/beyond_the_wall/spectra/cc66_cr_x_h686_nodrive_pol.npz": {
+  "evidence": "B (LEAFSCALES=1 ZSTART=3e7)  [arm cr, l_A 302.889, r_s 145.328]",
+  "grade": "FINGERPRINT",
+  "switches": null
+ },
+ "computations/beyond_the_wall/spectra/cc66_cr_x_h686_pol.npz": {
+  "evidence": "B (LEAFSCALES=1 ZSTART=3e7)  [arm cr, l_A 302.889, r_s 145.328]",
+  "grade": "FINGERPRINT",
+  "switches": null
+ },
+ "computations/beyond_the_wall/spectra/cc66_cr_x_kcont.npz": {
+  "evidence": "superseded stacking ruler (l_A ~ 172)  [arm cr, l_A 172.841, r_s 236.374]",
+  "grade": "FINGERPRINT",
+  "switches": null
+ },
+ "computations/beyond_the_wall/spectra/cc66_cr_x_lstep1.npz": {
+  "evidence": "superseded stacking ruler (l_A ~ 172)  [arm cr, l_A 172.841, r_s 236.374]",
+  "grade": "FINGERPRINT",
+  "switches": null
+ },
+ "computations/beyond_the_wall/spectra/cc66_cr_x_zeq3000.npz": {
+  "evidence": "superseded stacking ruler (l_A ~ 172)  [arm cr, l_A 172.841, r_s 236.374]",
+  "grade": "FINGERPRINT",
+  "switches": null
+ },
+ "computations/beyond_the_wall/spectra/cc66_cr_x_zeq3447.npz": {
+  "evidence": "superseded stacking ruler (l_A ~ 172)  [arm cr, l_A 172.841, r_s 236.374]",
+  "grade": "FINGERPRINT",
+  "switches": null
+ },
+ "computations/beyond_the_wall/spectra/cc66_cr_z3e5.npz": {
+  "evidence": "no known configuration  [arm cr, l_A 183.777, r_s 222.307]",
+  "grade": "FINGERPRINT (unplaced)",
+  "switches": null
+ },
+ "computations/beyond_the_wall/spectra/cc66_cr_z3e6.npz": {
+  "evidence": "no known configuration  [arm cr, l_A 175.349, r_s 232.993]",
+  "grade": "FINGERPRINT (unplaced)",
+  "switches": null
+ },
+ "computations/beyond_the_wall/spectra/cc66_cr_z3e8.npz": {
+  "evidence": "superseded stacking ruler (l_A ~ 172)  [arm cr, l_A 172.062, r_s 237.443]",
+  "grade": "FINGERPRINT",
+  "switches": null
+ },
+ "computations/beyond_the_wall/spectra/cc66_cr_z61580_stack.npz": {
+  "evidence": "no known configuration  [arm cr, l_A 200.772, r_s 203.490]",
+  "grade": "FINGERPRINT (unplaced)",
+  "switches": null
+ },
+ "computations/beyond_the_wall/spectra/cc66_fig_acoustic_numbers.npz": {
+  "evidence": "",
+  "grade": "NONE",
+  "switches": null
+ },
+ "computations/beyond_the_wall/spectra/cc66_lcdm.npz": {
+  "evidence": "control arm (no CR switch applies)  [l_A 301.375, r_s 144.528]",
+  "grade": "CONTROL (no CR switch)",
+  "switches": null
+ },
+ "computations/beyond_the_wall/spectra/cc66_lcdm_L2000.npz": {
+  "evidence": "control arm (no CR switch applies)  [l_A 301.375, r_s 144.528]",
+  "grade": "CONTROL (no CR switch)",
+  "switches": null
+ },
+ "computations/beyond_the_wall/spectra/cc66_lcdm_fluid.npz": {
+  "evidence": "control arm (no CR switch applies)  [l_A 301.375, r_s 144.528]",
+  "grade": "CONTROL (no CR switch)",
+  "switches": null
+ },
+ "computations/beyond_the_wall/spectra/cc66_lcdm_nodrive_pol.npz": {
+  "evidence": "control arm (no CR switch applies)  [l_A 301.375, r_s 144.528]",
+  "grade": "CONTROL (no CR switch)",
+  "switches": null
+ },
+ "computations/beyond_the_wall/spectra/cc66_lowell_sweep.npz": {
+  "evidence": "",
+  "grade": "NONE",
+  "switches": null
+ },
+ "computations/beyond_the_wall/spectra/cc66_r185_verify_cr.npz": {
+  "evidence": "B (LEAFSCALES=1 ZSTART=3e7)  [arm cr, l_A 301.799, r_s 145.911]",
+  "grade": "FINGERPRINT",
+  "switches": null
+ },
+ "computations/beyond_the_wall/spectra/cc66_r185_verify_lcdm.npz": {
+  "evidence": "control arm (no CR switch applies)  [l_A 301.543, r_s 145.382]",
+  "grade": "CONTROL (no CR switch)",
+  "switches": null
+ },
+ "computations/beyond_the_wall/spectra/cc66_refit_cr_base.npz": {
+  "evidence": "B (LEAFSCALES=1 ZSTART=3e7)  [arm cr, l_A 302.889, r_s 145.328]",
+  "grade": "FINGERPRINT",
+  "switches": null
+ },
+ "computations/beyond_the_wall/spectra/cc66_refit_lcdm_base.npz": {
+  "evidence": "control arm (no CR switch applies)  [l_A 301.375, r_s 144.528]",
+  "grade": "CONTROL (no CR switch)",
+  "switches": null
+ },
+ "computations/beyond_the_wall/spectra/cc66_refit_verify_cr.npz": {
+  "evidence": "B (LEAFSCALES=1 ZSTART=3e7)  [arm cr, l_A 302.052, r_s 145.833]",
+  "grade": "FINGERPRINT",
+  "switches": null
+ },
+ "computations/beyond_the_wall/spectra/cc66_refit_verify_lcdm.npz": {
+  "evidence": "control arm (no CR switch applies)  [l_A 301.646, r_s 145.404]",
+  "grade": "CONTROL (no CR switch)",
+  "switches": null
+ },
+ "computations/beyond_the_wall/spectra/item38_cr_phi0.0_prod.npz": {
+  "evidence": "A (default: stacking, onset solved for l_A = 301.6)  [arm cr, l_A 301.600, r_s 135.461]",
+  "grade": "FINGERPRINT",
+  "switches": null
+ },
+ "computations/beyond_the_wall/spectra/item38_cr_phi1.5708_prod.npz": {
+  "evidence": "A (default: stacking, onset solved for l_A = 301.6)  [arm cr, l_A 301.600, r_s 135.461]",
+  "grade": "FINGERPRINT",
+  "switches": null
+ },
+ "computations/beyond_the_wall/spectra/item38_cr_phi3.1416_prod.npz": {
+  "evidence": "A (default: stacking, onset solved for l_A = 301.6)  [arm cr, l_A 301.600, r_s 135.461]",
+  "grade": "FINGERPRINT",
+  "switches": null
+ },
+ "computations/beyond_the_wall/spectra/lcdm_0.700.npz": {
+  "evidence": "control arm (no CR switch applies)  [l_A 301.375, r_s 144.528]",
+  "grade": "CONTROL (no CR switch)",
+  "switches": null
+ },
+ "computations/beyond_the_wall/spectra/lcdm_0.800.npz": {
+  "evidence": "control arm (no CR switch applies)  [l_A 301.375, r_s 144.528]",
+  "grade": "CONTROL (no CR switch)",
+  "switches": null
+ },
+ "computations/beyond_the_wall/spectra/lcdm_0.859.npz": {
+  "evidence": "control arm (no CR switch applies)  [l_A 301.375, r_s 144.528]",
+  "grade": "CONTROL (no CR switch)",
+  "switches": null
+ },
+ "computations/beyond_the_wall/spectra/lcdm_0.900.npz": {
+  "evidence": "control arm (no CR switch applies)  [l_A 301.375, r_s 144.528]",
+  "grade": "CONTROL (no CR switch)",
+  "switches": null
+ },
+ "computations/beyond_the_wall/spectra/lcdm_1.000.npz": {
+  "evidence": "control arm (no CR switch applies)  [l_A 301.375, r_s 144.528]",
+  "grade": "CONTROL (no CR switch)",
+  "switches": null
+ },
+ "computations/beyond_the_wall/spectra/lcdm_1.100.npz": {
+  "evidence": "control arm (no CR switch applies)  [l_A 301.375, r_s 144.528]",
+  "grade": "CONTROL (no CR switch)",
+  "switches": null
+ },
+ "computations/beyond_the_wall/spectra/lcdm_1.200.npz": {
+  "evidence": "control arm (no CR switch applies)  [l_A 301.375, r_s 144.528]",
+  "grade": "CONTROL (no CR switch)",
+  "switches": null
+ },
+ "computations/beyond_the_wall/spectra/lcdm_1.300.npz": {
+  "evidence": "control arm (no CR switch applies)  [l_A 301.375, r_s 144.528]",
+  "grade": "CONTROL (no CR switch)",
+  "switches": null
+ },
+ "computations/beyond_the_wall/spectra/r4494_cr_leaf_ISWoff.npz": {
+  "evidence": "A (default: stacking, onset solved for l_A = 301.6)  [arm cr, l_A 301.600, r_s 135.461]",
+  "grade": "FINGERPRINT",
+  "switches": null
+ },
+ "computations/beyond_the_wall/spectra/r4494_cr_leaf_ISWon.npz": {
+  "evidence": "A (default: stacking, onset solved for l_A = 301.6)  [arm cr, l_A 301.600, r_s 135.461]",
+  "grade": "FINGERPRINT",
+  "switches": null
+ },
+ "computations/beyond_the_wall/spectra/r4494_cr_stack_ISWoff.npz": {
+  "evidence": "A (default: stacking, onset solved for l_A = 301.6)  [arm cr, l_A 301.600, r_s 135.461]",
+  "grade": "FINGERPRINT",
+  "switches": null
+ },
+ "computations/beyond_the_wall/spectra/r4494_cr_stack_ISWon.npz": {
+  "evidence": "A (default: stacking, onset solved for l_A = 301.6)  [arm cr, l_A 301.600, r_s 135.461]",
+  "grade": "FINGERPRINT",
+  "switches": null
+ },
+ "computations/beyond_the_wall/spectra/r4494_lcdm_DAMPX1.000.npz": {
+  "evidence": "control arm (no CR switch applies)  [l_A 301.375, r_s 144.528]",
+  "grade": "CONTROL (no CR switch)",
+  "switches": null
+ },
+ "computations/beyond_the_wall/spectra/r4494_lcdm_DAMPX1.157.npz": {
+  "evidence": "control arm (no CR switch applies)  [l_A 301.375, r_s 144.528]",
+  "grade": "CONTROL (no CR switch)",
+  "switches": null
+ },
+ "computations/beyond_the_wall/spectra/r6784_cr_crossing_hier.npz": {
+  "evidence": "spectra/README.md: | `r6784_cr_crossing_hier.npz` | r6784 (node 60) | **the run `P15`'s crossing handover asks for, which `r6782` made reachable \u2014 `HIER=1 BSPLIT=1 ARM=cr NK=600 LMAXL=2000 ETAEND=4000 KBATCH=300 CRH0=68.62 CROM=0.2973 ZSTART=3e7 CRIC=branchpoint`.** *The banked `c54.178_cr` command with three knobs ch",
+  "grade": "COMMAND",
+  "switches": {
+   "ARM": "cr",
+   "BSPLIT": "1",
+   "CRH0": "68.62",
+   "CRIC": "branchpoint",
+   "CROM": "0.2973",
+   "ETAEND": "4000",
+   "HIER": "1",
+   "KBATCH": "300",
+   "LMAXL": "2000",
+   "NK": "600",
+   "ZSTART": "3e7"
+  }
+ },
+ "computations/beyond_the_wall/spectra/r6784_cr_crossing_hier_noCRIC.npz": {
+  "evidence": "superseded stacking ruler (l_A ~ 172)  [arm cr, l_A 172.324, r_s 255.364]",
+  "grade": "FINGERPRINT",
+  "switches": null
+ },
+ "computations/beyond_the_wall/spectra/r6784_cr_crossing_los.npz": {
+  "evidence": "spectra/README.md: | `r6784_cr_crossing_los.npz` | r6784 (node 60) | **the same configuration on the LINE-OF-SIGHT path \u2014 drop `HIER` and change nothing else.** *The run was specified on both instrument paths, so both are banked. Peaks 220/532/812/1124 \u2014 within one grid step of the hierarchy path's on every one, which",
+  "grade": "COMMAND",
+  "switches": {}
+ },
+ "computations/beyond_the_wall/spectra/r6794_cr_crossing_kcont_summed.npz": {
+  "evidence": "spectra/README.md: | `r6794_cr_crossing_kcont_summed.npz` | r6794 (node 60) | **the `KCONT=1` continuum check node 66 asked for, summed from SIX `KSLICE` runs because neither seat's container survives it whole** \u2014 `ARM=cr HIER=1 BSPLIT=1 NK=900 LMAXL=2000 ETAEND=4000 KBATCH=150 KCONT=1 CRH0=68.62 CROM=0.2973 ZSTART=3e",
+  "grade": "COMMAND",
+  "switches": {
+   "ARM": "cr",
+   "BSPLIT": "1",
+   "CRH0": "68.62",
+   "CROM": "0.2973",
+   "ETAEND": "4000",
+   "HIER": "1",
+   "KBATCH": "150",
+   "KCONT": "1",
+   "KSLICE": "<a>:<a+450>",
+   "LMAXL": "2000",
+   "NK": "900",
+   "ZSTART": "3e7"
+  }
+ },
+ "computations/beyond_the_wall/spectra/r6885_dp0_cr.npz": {
+  "evidence": "computations/beyond_the_wall/r6885_directions/launch.sh: dp0_cr in launch.sh",
+  "grade": "COMMAND",
+  "switches": {}
+ },
+ "computations/beyond_the_wall/spectra/r6885_dp0_lcdm.npz": {
+  "evidence": "computations/beyond_the_wall/r6885_directions/launch.sh: dp0_lcdm in launch.sh",
+  "grade": "COMMAND",
+  "switches": {}
+ },
+ "computations/beyond_the_wall/spectra/r6885_drc0_cr.npz": {
+  "evidence": "computations/beyond_the_wall/r6885_directions/launch.sh: drc0_cr in launch.sh",
+  "grade": "COMMAND",
+  "switches": {}
+ },
+ "computations/beyond_the_wall/spectra/r6885_drc0_lcdm.npz": {
+  "evidence": "computations/beyond_the_wall/r6885_directions/launch.sh: drc0_lcdm in launch.sh",
+  "grade": "COMMAND",
+  "switches": {}
+ },
+ "computations/beyond_the_wall/spectra/r6885_dre0_cr.npz": {
+  "evidence": "computations/beyond_the_wall/r6885_directions/launch.sh: dre0_cr in launch.sh",
+  "grade": "COMMAND",
+  "switches": {}
+ },
+ "computations/beyond_the_wall/spectra/r6885_dre0_lcdm.npz": {
+  "evidence": "computations/beyond_the_wall/r6885_directions/launch.sh: dre0_lcdm in launch.sh",
+  "grade": "COMMAND",
+  "switches": {}
+ },
+ "computations/beyond_the_wall/spectra/r6885_ln24_cr.npz": {
+  "evidence": "computations/beyond_the_wall/r6885_directions/launch.sh: ln24_cr in launch.sh",
+  "grade": "COMMAND",
+  "switches": {}
+ },
+ "computations/beyond_the_wall/spectra/r6885_ln24_lcdm.npz": {
+  "evidence": "computations/beyond_the_wall/r6885_directions/launch.sh: ln24_lcdm in launch.sh",
+  "grade": "COMMAND",
+  "switches": {}
+ },
+ "computations/beyond_the_wall/spectra/r6885_los_cr.npz": {
+  "evidence": "computations/beyond_the_wall/r6885_directions/launch2.sh: los_cr in launch2.sh",
+  "grade": "COMMAND",
+  "switches": {}
+ },
+ "computations/beyond_the_wall/spectra/r6885_los_lcdm.npz": {
+  "evidence": "computations/beyond_the_wall/r6885_directions/launch2.sh: los_lcdm in launch2.sh",
+  "grade": "COMMAND",
+  "switches": {}
+ },
+ "computations/beyond_the_wall/spectra/r6885_losdp0_cr.npz": {
+  "evidence": "computations/beyond_the_wall/r6885_directions/launch2.sh: losdp0_cr in launch2.sh",
+  "grade": "COMMAND",
+  "switches": {}
+ },
+ "computations/beyond_the_wall/spectra/r6885_losdp0_lcdm.npz": {
+  "evidence": "computations/beyond_the_wall/r6885_directions/launch2.sh: losdp0_lcdm in launch2.sh",
+  "grade": "COMMAND",
+  "switches": {}
+ },
+ "computations/beyond_the_wall/spectra/r6885_lossw0_cr.npz": {
+  "evidence": "computations/beyond_the_wall/r6885_directions/launch2.sh: lossw0_cr in launch2.sh",
+  "grade": "COMMAND",
+  "switches": {}
+ },
+ "computations/beyond_the_wall/spectra/r6885_lossw0_lcdm.npz": {
+  "evidence": "computations/beyond_the_wall/r6885_directions/launch2.sh: lossw0_lcdm in launch2.sh",
+  "grade": "COMMAND",
+  "switches": {}
+ },
+ "computations/beyond_the_wall/spectra/r6885_noisw_cr.npz": {
+  "evidence": "computations/beyond_the_wall/r6885_directions/launch.sh: noisw_cr in launch.sh",
+  "grade": "COMMAND",
+  "switches": {}
+ },
+ "computations/beyond_the_wall/spectra/r6885_noisw_lcdm.npz": {
+  "evidence": "computations/beyond_the_wall/r6885_directions/launch.sh: noisw_lcdm in launch.sh",
+  "grade": "COMMAND",
+  "switches": {}
+ },
+ "computations/beyond_the_wall/spectra/r6889_hdp0_cr.npz": {
+  "evidence": "computations/beyond_the_wall/r6889_directions/launch.sh: hdp0_cr in launch.sh",
+  "grade": "COMMAND",
+  "switches": {}
+ },
+ "computations/beyond_the_wall/spectra/r6889_hdp0_lcdm.npz": {
+  "evidence": "computations/beyond_the_wall/r6889_directions/launch.sh: hdp0_lcdm in launch.sh",
+  "grade": "COMMAND",
+  "switches": {}
+ },
+ "computations/beyond_the_wall/spectra/r6889_hsw0_cr.npz": {
+  "evidence": "computations/beyond_the_wall/r6889_directions/launch.sh: hsw0_cr in launch.sh",
+  "grade": "COMMAND",
+  "switches": {}
+ },
+ "computations/beyond_the_wall/spectra/r6889_hsw0_lcdm.npz": {
+  "evidence": "computations/beyond_the_wall/r6889_directions/launch.sh: hsw0_lcdm in launch.sh",
+  "grade": "COMMAND",
+  "switches": {}
+ },
+ "computations/beyond_the_wall/spectra/r6889_noop_cr.npz": {
+  "evidence": "computations/beyond_the_wall/r6889_directions/launch.sh: noop_cr in launch.sh",
+  "grade": "COMMAND",
+  "switches": {}
+ },
+ "computations/beyond_the_wall/spectra/r6889_noop_lcdm.npz": {
+  "evidence": "computations/beyond_the_wall/r6889_directions/launch.sh: noop_lcdm in launch.sh",
+  "grade": "COMMAND",
+  "switches": {}
+ },
+ "computations/beyond_the_wall/spectra/r6889_nufs0_cr.npz": {
+  "evidence": "computations/beyond_the_wall/r6889_directions/launch.sh: nufs0_cr in launch.sh",
+  "grade": "COMMAND",
+  "switches": {}
+ },
+ "computations/beyond_the_wall/spectra/r6889_nufs0_lcdm.npz": {
+  "evidence": "computations/beyond_the_wall/r6889_directions/launch.sh: nufs0_lcdm in launch.sh",
+  "grade": "COMMAND",
+  "switches": {}
+ },
+ "computations/beyond_the_wall/spectra/r6893_fine_grid_cr.npz": {
+  "evidence": "computations/beyond_the_wall/r6893_directions/step0b.sh: the directory launcher (output name not literal)",
+  "grade": "COMMAND",
+  "switches": {}
+ },
+ "computations/beyond_the_wall/spectra/r6893_fine_grid_lcdm.npz": {
+  "evidence": "computations/beyond_the_wall/r6893_directions/step0b.sh: the directory launcher (output name not literal)",
+  "grade": "COMMAND",
+  "switches": {}
+ },
+ "computations/beyond_the_wall/spectra/r6893_full_reach_nulls_lcdm.npz": {
+  "evidence": "computations/beyond_the_wall/r6893_directions/step0b.sh: the directory launcher (output name not literal)",
+  "grade": "COMMAND",
+  "switches": {}
+ },
+ "computations/beyond_the_wall/spectra/r6893_slice_check.npz": {
+  "evidence": "computations/beyond_the_wall/r6893_directions/step0b.sh: the directory launcher (output name not literal)",
+  "grade": "COMMAND",
+  "switches": {}
+ },
+ "computations/beyond_the_wall/spectra/r6893_switch_screen_cr.npz": {
+  "evidence": "computations/beyond_the_wall/r6893_directions/step0b.sh: the directory launcher (output name not literal)",
+  "grade": "COMMAND",
+  "switches": {}
+ },
+ "computations/beyond_the_wall/spectra/r6893_switch_screen_lcdm.npz": {
+  "evidence": "computations/beyond_the_wall/r6893_directions/step0b.sh: the directory launcher (output name not literal)",
+  "grade": "COMMAND",
+  "switches": {}
+ },
+ "computations/beyond_the_wall/spectra/r6897_fields.npz": {
+  "evidence": "computations/beyond_the_wall/r6897_directions/launch.sh: fields in launch.sh",
+  "grade": "COMMAND",
+  "switches": {}
+ },
+ "computations/beyond_the_wall/spectra/r6897_noop.npz": {
+  "evidence": "computations/beyond_the_wall/r6897_directions/launch.sh: noop in launch.sh",
+  "grade": "COMMAND",
+  "switches": {}
+ },
+ "computations/beyond_the_wall/spectra/r6897_wb_response_lcdm.npz": {
+  "evidence": "computations/beyond_the_wall/r6897_directions/launch.sh: the directory launcher (output name not literal)",
+  "grade": "COMMAND",
+  "switches": {}
+ },
+ "computations/beyond_the_wall/spectra/r6911_noop.npz": {
+  "evidence": "computations/beyond_the_wall/r6911_directions/launch.sh: noop in launch.sh",
+  "grade": "COMMAND",
+  "switches": {}
+ },
+ "computations/beyond_the_wall/spectra/r6911_source_cr.npz": {
+  "evidence": "computations/beyond_the_wall/r6911_directions/launch.sh: the directory launcher (output name not literal)",
+  "grade": "COMMAND",
+  "switches": {}
+ },
+ "computations/beyond_the_wall/spectra/r6911_source_cr_kcont.npz": {
+  "evidence": "spectra/README.md: | `r6911_source_cr_kcont.npz` | the arm again with `KCONT=1` \u2014 the uniform continuum sampling at $2547$ modes, the control's own count \u2014 everything else the adjudicated minimum | \u26d4 **the one artefact that could have produced the whole answer.** The arms' $k$ grids are not the same *kind* of grid (th",
+  "grade": "COMMAND",
+  "switches": {
+   "KCONT": "1"
+  }
+ },
+ "computations/beyond_the_wall/spectra/r6911_source_lcdm.npz": {
+  "evidence": "computations/beyond_the_wall/r6911_directions/launch.sh: the directory launcher (output name not literal)",
+  "grade": "COMMAND",
+  "switches": {}
+ },
+ "computations/beyond_the_wall/spectra/r6915_noop.npz": {
+  "evidence": "computations/beyond_the_wall/r6915_directions/launch.sh: noop in launch.sh",
+  "grade": "COMMAND",
+  "switches": {}
+ },
+ "computations/beyond_the_wall/spectra/r6915_pairs_cr.npz": {
+  "evidence": "computations/beyond_the_wall/r6915_directions/launch.sh: the directory launcher (output name not literal)",
+  "grade": "COMMAND",
+  "switches": {}
+ },
+ "computations/beyond_the_wall/spectra/r6915_pairs_lcdm.npz": {
+  "evidence": "computations/beyond_the_wall/r6915_directions/launch.sh: the directory launcher (output name not literal)",
+  "grade": "COMMAND",
+  "switches": {}
+ },
+ "computations/beyond_the_wall/spectra/r6919_geometry.npz": {
+  "evidence": "computations/beyond_the_wall/r6919_directions/launch.sh: geometry in launch.sh",
+  "grade": "COMMAND",
+  "switches": {}
+ },
+ "computations/beyond_the_wall/spectra/r6919_injected_cr.npz": {
+  "evidence": "computations/beyond_the_wall/r6919_directions/launch.sh: the directory launcher (output name not literal)",
+  "grade": "COMMAND",
+  "switches": {}
+ },
+ "computations/beyond_the_wall/spectra/r6919_injected_lcdm.npz": {
+  "evidence": "computations/beyond_the_wall/r6919_directions/launch.sh: the directory launcher (output name not literal)",
+  "grade": "COMMAND",
+  "switches": {}
+ },
+ "computations/beyond_the_wall/spectra/r6919_noop.npz": {
+  "evidence": "computations/beyond_the_wall/r6919_directions/launch.sh: noop in launch.sh",
+  "grade": "COMMAND",
+  "switches": {}
+ },
+ "computations/beyond_the_wall/spectra/r6925_geometry.npz": {
+  "evidence": "spectra/README.md: | `r6925_geometry.npz` | per arm and per assignment: $\\eta_{\\rm LS}$, the FWHM, $\\mathrm dr_s$ across it, $\\mathrm d\\chi$, their ratio, $r_D$, $r_s$, $\\ell_A$, $D_M$ | \u2691 **the decisive number**: $\\mathrm dr_s/\\mathrm d\\chi$ goes $0.396733\\to0.396957$ on the arm, so $12.8\\%$ lower becomes $12.7\\%$ \u2014 ",
+  "grade": "COMMAND",
+  "switches": {}
+ },
+ "computations/beyond_the_wall/spectra/r6925_noop.npz": {
+  "evidence": "computations/beyond_the_wall/r6925_directions/launch.sh: noop in launch.sh",
+  "grade": "COMMAND",
+  "switches": {}
+ },
+ "computations/beyond_the_wall/spectra/r6925_visleaf_cr.npz": {
+  "evidence": "computations/beyond_the_wall/r6925_directions/launch.sh: the directory launcher (output name not literal)",
+  "grade": "COMMAND",
+  "switches": {}
+ },
+ "computations/beyond_the_wall/spectra/r6925_visleaf_lcdm.npz": {
+  "evidence": "computations/beyond_the_wall/r6925_directions/launch.sh: the directory launcher (output name not literal)",
+  "grade": "COMMAND",
+  "switches": {}
+ },
+ "computations/beyond_the_wall/spectra/r6929_geometry.npz": {
+  "evidence": "computations/beyond_the_wall/r6929_directions/launch.sh: geometry in launch.sh",
+  "grade": "COMMAND",
+  "switches": {}
+ },
+ "computations/beyond_the_wall/spectra/r6929_noop.npz": {
+  "evidence": "computations/beyond_the_wall/r6929_directions/launch.sh: noop in launch.sh",
+  "grade": "COMMAND",
+  "switches": {}
+ },
+ "computations/beyond_the_wall/spectra/r6929_scan_cr.npz": {
+  "evidence": "computations/beyond_the_wall/r6929_directions/launch.sh: the directory launcher (output name not literal)",
+  "grade": "COMMAND",
+  "switches": {}
+ },
+ "computations/beyond_the_wall/spectra/r6941_fine_cr.npz": {
+  "evidence": "computations/beyond_the_wall/r6941_directions/launch.sh: fine_cr in launch.sh",
+  "grade": "COMMAND",
+  "switches": {}
+ },
+ "computations/beyond_the_wall/spectra/r6941_fine_cr_visleaf.npz": {
+  "evidence": "spectra/README.md: | `r6941_fine_cr_visleaf.npz` | the arm's `VISLEAF=1` endpoint, real (`comb_f1`) and injected (`inj_f0`, `inj_f1`), at the same fine sampling | so `cc66.44`'s three-way separation is **measured** at $\\ell_2$, $\\ell_3$ and $\\ell_4$ rather than inherited from the coarse grid. \u26a0 the injected arrays are",
+  "grade": "COMMAND",
+  "switches": {
+   "VISLEAF": "1"
+  }
+ },
+ "computations/beyond_the_wall/spectra/r6941_fine_lcdm.npz": {
+  "evidence": "computations/beyond_the_wall/r6941_directions/launch.sh: fine_lcdm in launch.sh",
+  "grade": "COMMAND",
+  "switches": {}
+ },
+ "computations/beyond_the_wall/spectra/r6959_big_lcdm.npz": {
+  "evidence": "computations/beyond_the_wall/r6959_directions/launch_c.sh: big_lcdm in launch_c.sh",
+  "grade": "COMMAND",
+  "switches": {}
+ },
+ "computations/beyond_the_wall/spectra/r6959_bigall_lcdm.npz": {
+  "evidence": "computations/beyond_the_wall/r6959_directions/launch_b.sh: bigall_lcdm in launch_b.sh",
+  "grade": "COMMAND",
+  "switches": {}
+ },
+ "computations/beyond_the_wall/spectra/r6959_eta_cr.npz": {
+  "evidence": "computations/beyond_the_wall/r6959_directions/launch_a.sh: eta_cr in launch_a.sh",
+  "grade": "COMMAND",
+  "switches": {}
+ },
+ "computations/beyond_the_wall/spectra/r6959_eta_lcdm.npz": {
+  "evidence": "computations/beyond_the_wall/r6959_directions/launch_a.sh: eta_lcdm in launch_a.sh",
+  "grade": "COMMAND",
+  "switches": {}
+ },
+ "computations/beyond_the_wall/spectra/r6959_nbig_lcdm.npz": {
+  "evidence": "spectra/README.md: | `r6959_nswap_lcdm.npz`, `r6959_nbig_lcdm.npz` | \u24f5\u1d47, wiring three (`SRCTAPERNORM=1`): the same two coefficients with the window's **total weight held fixed**, so only its spread moves. \u2317 *These are the ones the report reads, and they land on wiring two to parts in ten thousand.* |",
+  "grade": "COMMAND",
+  "switches": {
+   "SRCTAPERNORM": "1"
+  }
+ },
+ "computations/beyond_the_wall/spectra/r6959_nswap_lcdm.npz": {
+  "evidence": "spectra/README.md: | `r6959_nswap_lcdm.npz`, `r6959_nbig_lcdm.npz` | \u24f5\u1d47, wiring three (`SRCTAPERNORM=1`): the same two coefficients with the window's **total weight held fixed**, so only its spread moves. \u2317 *These are the ones the report reads, and they land on wiring two to parts in ten thousand.* |",
+  "grade": "COMMAND",
+  "switches": {
+   "SRCTAPERNORM": "1"
+  }
+ },
+ "computations/beyond_the_wall/spectra/r6959_swap_lcdm.npz": {
+  "evidence": "computations/beyond_the_wall/r6959_directions/launch_c.sh: swap_lcdm in launch_c.sh",
+  "grade": "COMMAND",
+  "switches": {}
+ },
+ "computations/beyond_the_wall/spectra/r6959_swapall_lcdm.npz": {
+  "evidence": "computations/beyond_the_wall/r6959_directions/launch_b.sh: swapall_lcdm in launch_b.sh",
+  "grade": "COMMAND",
+  "switches": {}
+ },
+ "computations/beyond_the_wall/spectra/r6975_mix_lcdm.npz": {
+  "evidence": "computations/beyond_the_wall/r6975_directions/launch.sh: mix_lcdm in launch.sh",
+  "grade": "COMMAND",
+  "switches": {}
+ },
+ "computations/beyond_the_wall/spectra/r6975_mixb_lcdm.npz": {
+  "evidence": "spectra/README.md: | `r6975_mixb_lcdm.npz` | the same at `DPSRC = 0.60`, the second coefficient, so the response can be calibrated and inverted as `cc66.47`'s taper response was. |",
+  "grade": "COMMAND",
+  "switches": {}
+ },
+ "computations/beyond_the_wall/spectra/r6983_joint_lcdm.npz": {
+  "evidence": "computations/beyond_the_wall/r6983_directions/launch_fine.sh: joint_lcdm in launch_fine.sh",
+  "grade": "COMMAND",
+  "switches": {}
+ },
+ "computations/beyond_the_wall/spectra/r7041_accept_Al.npz": {
+  "evidence": "computations/beyond_the_wall/r7041_directions/solvers_live.sh: the directory launcher (output name not literal)",
+  "grade": "COMMAND",
+  "switches": {}
+ },
+ "computations/beyond_the_wall/spectra/r7041_accept_cr.npz": {
+  "evidence": "computations/beyond_the_wall/r7041_directions/resume.sh: accept_cr in resume.sh",
+  "grade": "COMMAND",
+  "switches": {}
+ },
+ "computations/beyond_the_wall/spectra/r7041_accept_digest.npz": {
+  "evidence": "computations/beyond_the_wall/r7041_directions/solvers_live.sh: the directory launcher (output name not literal)",
+  "grade": "COMMAND",
+  "switches": {}
+ },
+ "computations/beyond_the_wall/spectra/r7041_accept_lcdm.npz": {
+  "evidence": "computations/beyond_the_wall/r7041_directions/resume.sh: accept_lcdm in resume.sh",
+  "grade": "COMMAND",
+  "switches": {}
+ },
+ "computations/beyond_the_wall/spectra/r7041_accept_nk_slices.npz": {
+  "evidence": "computations/beyond_the_wall/r7041_directions/solvers_live.sh: the directory launcher (output name not literal)",
+  "grade": "COMMAND",
+  "switches": {}
+ },
+ "computations/beyond_the_wall/spectra/r7041_accept_sample.npz": {
+  "evidence": "computations/beyond_the_wall/r7041_directions/solvers_live.sh: the directory launcher (output name not literal)",
+  "grade": "COMMAND",
+  "switches": {}
+ }
+}
