@@ -7,9 +7,13 @@
    }
   },
   "tolerance": {
-   "receipts/L_numerics/Q1_a_stated_tolerance_is_a_request_and_the_corpus_answers_it.py": {
-    "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/36884734503",
-    "since": "57ef3a42d11cdf666a9b42fd0226a6d4529927fb"
+   "receipts/P15_CR_cosmology/C62_the_diffusion_signature_is_a_wash_and_the_isw_is_not_what_it_turned_on.py": {
+    "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/36879490471",
+    "since": "fe6b40c3481c60df9797bc7b72b87a9ac02a8318"
+   },
+   "receipts/P15_CR_cosmology/P15_the_fitted_onset_is_the_wrong_clocks_artefact_because_the_stacking_ruler_keeps_a_square_root_memory_of_the_start_and_the_leaf_ruler_keeps_none.py": {
+    "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/36879490471",
+    "since": "fe6b40c3481c60df9797bc7b72b87a9ac02a8318"
    }
   }
  },
