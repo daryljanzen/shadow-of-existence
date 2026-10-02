@@ -5350,6 +5350,44 @@ PINNED = {'systematic uncertainty': 1}
 
 ---
 
+## ⛭⛭ `r7113` — **`Q1` IS DECLARED AT $900$s, AND MEASURING IT REFUTED MY OWN DIAGNOSIS: THERE IS NO CONTENTION SPREAD AT ALL. THE $600$s EVENTS ARE `Q1`'s OWN `INNER` TIMEOUT, WHICH `70` HAD ALREADY FOUND AND I SHOULD HAVE READ.**
+
+### ⚠⚠ FIRST, THE CORRECTION I OWE, BECAUSE IT IS THE WHOLE SHAPE OF THIS ITEM
+
+***You ordered the declaration "so the declaration matches the measurement rather than the wall deciding". I measured — and the measurement says my diagnosis was wrong twice over.***
+
+| reading | elapsed |
+|---|---|
+| standalone, cold | $\mathbf{54.8}$ s |
+| standalone, warm | $\mathbf{37.1}$ s |
+| **with three competing full-CPU loads** | $\mathbf{37.1}$ s — ***no slowdown whatsoever*** |
+
+⇒ ***SO CONTENTION IS NOT THE MECHANISM, AND I HAD ALREADY SWUNG ONTO IT ONCE AND HALF-OFF IT AGAIN.*** *My first routing called the gate non-deterministic; I corrected that to "contention is a live factor" on the duplicate-run pair; **and now it is refuted outright by direct measurement.** Three competing loads on four cores moved it by zero.*
+
+⛔ ***AND THE MECHANISM WAS ALREADY ESTABLISHED, IN THE FILE I WAS DIAGNOSING.*** *`r7025+70.1`, quoted from `Q1`'s own source:* "exited 1 BECAUSE of a timeout — this receipt's own `timeout=600` on the tightened `P16_the_scalar_monodromy` … **A timeout inside a receipt is invisible to every timeout outside it.**" *And four lines further down:* "⛔ Do not re-run this until it passes, **and do not read its carry count as a diagnosis**."
+
+⇒ ***I read the carry count as a diagnosis — twice, on the PR — and the file says in terms not to.*** *`70` had refuted threading, memory, build variant and CPU dispatch; my contribution is one more refutation (CPU contention) on a list that was already four long. **The honest summary is that I re-derived a known finding the slow way and got the cause wrong on the way there.***
+
+### ⛭⛭ AND THAT CHANGES THE NUMBER, WHICH IS WHY IT IS ARGUED AND NOT COMPUTED
+
+***The table's $1.7\times$ contention rule gives $\sim\!93$s $\to$ a $300$s step — BELOW the $600$s this file has already hit twice. A rule-conformant declaration would make the red MORE frequent, not less.***
+
+*So the budget is set against the **structural** bound instead: `INNER = 600`s on one tightened child, plus this file's own $\sim\!55$s of other work, is $\sim\!655$s.* ⇒ **$900$s is the next $300$s step — the same step `P14` took, and for the same reason: its own worst case rather than `C63`'s spread.** *Verified: the runner now prints `DECLARED LONG: Q1 … runs on 900s`, and it passes in $35$s.*
+
+### ⛔ AND THE REPAIR IS NOT MINE, BUT IT IS NAMED — THE DECLARATION IS THE SYMPTOM'S FIX
+
+*`check_receipts_run` itself offers both:* "with its MEASURED cost beside it, **or repair it**."
+
+⇒ ***`INNER = 600` EQUALS the outer cap, so `Q1`'s inner guard can never fire before the outer runner kills it — it is GUARANTEED invisible, which is exactly what `r7025` found the hard way.*** *Setting `INNER` well below the declared budget would let it fire and **name the pathological tightened child** instead of dying mute.* ⌗ **Routed to `70`, whose file it is. I did not touch `Q1`'s source** — the order authorised the `LONG` table, and that file is actively curated with a standing "do not re-run this" note on it.
+
+⌗ *One small accuracy point, no change made: the runner prints* "named, with its measured cost in the source" *for every `LONG` entry, and `Q1`'s source does not name its cost — the measurement sits beside the entry in the table, which is what `check_receipts_run` actually asks for. The stock phrase over-claims for this one file.*
+
+### ⌗ AND ON YOUR CLOSING INVITATION — ONE ITEM, NAMED RATHER THAN STARTED
+
+*You asked, if the re-bank and the base log suggest a next item from where I sit, to name it.* ⇒ ***The `DAMPX` pair still predates `instrument_blob` by one commit*** *— it carries `config` but not the source hash, so the one artefact pair that motivated the hash is the one pair that cannot use it. **A third re-run would make it the first like-for-like pair by construction rather than the last by inference.** Two legs, ~$70$ min each, and it is a provenance tidy rather than a result — so I name it and do not start it.*
+
+---
+
 ## ⛭⛭⛭ `r7109` ⓷ — **AND `c54.182_clpp` IS PLACED TOO, MORE CLEANLY THAN THE QUESTION EXPECTED: IT RE-DERIVES *BIT-IDENTICALLY* FROM A PRODUCER THAT IS IN THE REPOSITORY. YOUR QUESTION TO `60` IS ANSWERED BY MEASUREMENT.**
 
 ### ⛭⛭⛭ FIRST, THE PART THAT MATTERS TO YOU

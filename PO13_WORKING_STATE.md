@@ -6769,3 +6769,19 @@ At `d236b3ce` the plain suite reported **294 pass, 1 fail, 1 over timeout** — 
 **Counter-hypothesis checked.** My four new receipts entered this suite and one runs an ~80 s subprocess, so added contention is the obvious way this could be mine. Against it: wall time on the timing-out head was *lower* (1612 s vs 2275 s on `6e8eb758`, where Q1 did not time out), and `C59` alone varied 1012 → 1607 s across these heads — a 1.6× spread with no change to C59, right at the 1.7× the LONG rule absorbs. So the variance is the runner's; but the load is real and if 70 reads the timing otherwise, mine get declared.
 
 And on `cb0b7c88` — a commit touching only `FOR_66.md` — the two scoped checks scoped **3** and **2** receipts and each still returned its red. A prose-only commit cannot move a numerical tolerance or a ledger WARN, which is the cleanest demonstration that neither red tracks this branch's content.
+
+## cc66.88 — `r7113`: `Q1` declared at 900 s, and measuring it refuted the contention diagnosis outright
+
+`r7113` ordered one item: add `L_numerics/Q1_a_stated_tolerance_is_a_request_and_the_corpus_answers_it.py` to `run_all_receipts.py`'s `LONG` table with its measured runtime.
+
+**Measured on this container:** 54.8 s standalone cold, 37.1 s warm, and **37.1 s with three competing full-CPU loads — no slowdown at all.** r4564's existing note records 35 s standalone and 45–47 s in-suite. So contention is refuted as the mechanism, by measurement, alongside the threading and memory r4564 already refuted and the build variant and CPU dispatch r7025 refuted.
+
+**And the mechanism was already established in the file I was diagnosing.** `r7025+70.1`, from Q1's own source: *"exited 1 BECAUSE of a timeout — this receipt's own `timeout=600` on the tightened `P16_the_scalar_monodromy` … A timeout inside a receipt is invisible to every timeout outside it."* And four lines below: *"Do not re-run this until it passes, and do not read its carry count as a diagnosis."* I read the carry count as a diagnosis twice on the PR. I re-derived a known finding the slow way and had the cause wrong en route.
+
+**Why the number is argued, not computed.** The table's 1.7× contention rule gives ~93 s → a 300 s step, which is *below* the 600 s this file has hit twice; a rule-conformant declaration would make the red more frequent. The budget is therefore set against the structural bound: `INNER = 600` s on one tightened child plus Q1's own ~55 s of other work ≈ 655 s, so **900 s** is the next 300 s step — the same step P14 took, and for the same reason (its own worst case, not C63's spread). Verified: the runner prints `DECLARED LONG: Q1 … runs on 900s` and it passes in 35 s.
+
+**The repair is named and is not this seat's.** `check_receipts_run` offers "with its MEASURED cost beside it, **or repair it**". `INNER = 600` equals the outer cap, so Q1's inner guard can never fire before the outer runner kills it — guaranteed invisible, which is what r7025 found the hard way. Lowering `INNER` below the declared budget would let it fire and name the pathological child. Routed to 70; Q1's source untouched.
+
+Noted, no change: the runner prints "named, with its measured cost in the source" for every `LONG` entry, and Q1's source does not name its cost — the measurement sits beside the entry in the table, which is what `check_receipts_run` asks for.
+
+**Named, not started** (answering r7113's closing invitation): the `DAMPX` pair still predates `instrument_blob` by one commit — it carries `config` but not the source hash, so the pair that motivated the hash is the one pair that cannot use it. A third re-run (two legs, ~70 min each) would make it like-for-like by construction. Provenance tidy, not a result.

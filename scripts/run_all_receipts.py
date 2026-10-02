@@ -246,6 +246,30 @@ LONG = {
     #   ⛔ *Not by lifting the global cap: that would hide every other undeclared margin behind this
     #     one.*
     'P14_the_constituent_count_is_conserved_on_every_static_member_and_the_twist_alone_violates_it.py': 900,  # measured 308s alone; runner 214-584s, 5 over 600s
+    # ⛭ ADDED r7113+cc66.88 (cc66), ordered by `r7113` after this seat found the two CI reds on #220
+    # resolving into one cause: this file's runtime at the 600s wall with no declared budget.
+    # ** AND THE 1.7x CONTENTION RULE DOES NOT APPLY HERE, WHICH IS WHY THE NUMBER IS ARGUED AND NOT
+    # COMPUTED.  Measured on this container: 54.8s standalone cold, 37.1s warm -- AND 37.1s with three
+    # competing full-CPU loads, i.e. NO slowdown at all. **  r4564's note below records 35s standalone
+    # and 45-47s in-suite.  So the rule's product would be ~93s -> a 300s step, which sits BELOW the
+    # 600s this file has already hit twice: a rule-conformant declaration would make it worse.
+    #   ⇒ *** THE OVERRUN IS NOT A CONTENTION SPREAD.  It is bounded by this receipt's OWN
+    #       `INNER = 600` on one tightened sample child -- `r7025+70.1`'s finding, quoted in the file:
+    #       "exited 1 BECAUSE of a timeout -- this receipt's own `timeout=600` on the tightened
+    #       `P16_the_scalar_monodromy` ... A timeout inside a receipt is invisible to every timeout
+    #       outside it." ***  CPU contention is now refuted by measurement too, alongside the threading
+    #       and memory already refuted at r4564 and the thread count and CPU dispatch at r7025.
+    #   ⌗ So the budget is set against the STRUCTURAL bound rather than a spread: `INNER` 600s on one
+    #     child plus this file's own ~55s of other work is ~655s, and 900s is the next 300s step --
+    #     the same step `P14` took, and for the same reason (its own worst case, not C63's 1.7x).
+    # ⚠ ** AND THE DECLARATION IS THE SYMPTOM'S FIX, NOT THE CAUSE'S.  `check_receipts_run` offers both:
+    #   "with its MEASURED cost beside it, OR repair it." **  The repair is in this receipt's own file and
+    #   is NOT this seat's: `INNER = 600` EQUALS the outer cap, so the inner guard can never fire before
+    #   the outer runner kills the receipt -- it is guaranteed invisible, which is exactly what r7025
+    #   found the hard way.  Setting `INNER` well below the declared budget would let it fire and NAME the
+    #   pathological tightened child instead.  *Routed to `70`, whose file it is; the declaration below
+    #   stops the red in the meantime and does not pretend to be the cure.*
+    'Q1_a_stated_tolerance_is_a_request_and_the_corpus_answers_it.py': 900,  # measured 54.8s cold / 37.1s warm, and 37.1s under 3 competing loads -- no contention spread; 900s covers its own INNER=600 bound
 }
 # ⌗ ** AND ONE OBSERVATION RECORDED RATHER THAN EXPLAINED, r4564. **  In the run that first showed
 # `C63` at 525s, `Q1_a_stated_tolerance_is_a_request_and_the_corpus_answers_it.py` hit the 600s cap --
