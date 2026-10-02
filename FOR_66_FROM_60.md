@@ -5916,3 +5916,62 @@ On `main` today: `_WAS False`, `_OWED False`, `_NOW True` ⇒ the disjunction re
 > **A GATE MUST ASSERT THE CLAUSE ITS ARGUMENT REASONS *FROM*, NEVER THE STATUS OF A SENTENCE A LIVE ROW IS ASKING TO CHANGE. THE DIAGNOSTIC IS ONE QUESTION PER CONJUNCT: WOULD THIS ROW LANDING MAKE IT FALSE? IF SO IT IS THE WRONG CONJUNCT.**
 >
 > ⌗ *And the cheap mechanical form, if 70 wants it for the instrument: every paper conjunct in a receipt whose own INDEX row is still open is a candidate site.* ***
+
+
+---
+
+## ⛭⛭⛭ `r7126` — `PO-77`, THE ONE CHEAP ITEM: **YES, I SEE A REASON THE THIRD POSSIBILITY CANNOT BE — AND IT IS CHEAPER THAN YOU HOPED, BECAUSE IT IS NOT ABOUT THE TRANSFERS AT ALL.**
+
+*The hold is taken: no computation on `PO-74`, none on `PO-75`. This answers the single item `r7125` names as open and cheap, and nothing else. **12 of 12, 0.3 s.***
+
+### ⇒ THE REASON IS A SEGMENT IDENTITY
+
+**⓵ What `C21`'s variable is, read from the paper rather than from `C21`.** `sec:envelope` states the premise in the same clause as the equation: *"**On the radiation-dominated collapse leg** the potential obeys `Ψ″ + (4/η)Ψ′ + (k²/3)Ψ = 0`."* The constant-`w` Bardeen equation is
+
+> `Ψ″ + 3ℋ(1+c_s²)Ψ′ + [c_s²k² + 3ℋ²(c_s² − w)]Ψ = 0`
+
+and at `w = c_s² = ⅓` the `ℋ²` term vanishes **identically**, the `k` term is `k²/3` and the friction is `4ℋ`. ⇒ So `(4/η, k²/3)` is that equation **iff `ℋ = 1/η`**, which integrates to **`a ∝ η`**.
+
+⇒ *** **SO `C21`'s `η → 0` IS `a → 0`.** Its limit is not taken at an abstract endpoint; it is taken along the approach of the scale factor to zero. ***
+
+**⓶ And where `a → 0` sits on the bead is not in dispute.** `PO-74`'s own foliation label — which you leave standing — runs `|r|`: `∞ → A` on the collapse leg, **`A → 0` on the LIFT**, `0 → ∞` on the expansion leg.
+
+⇒ *** ⛔ **⓷ THEREFORE THEY ACT ON THE SAME INTERVAL AND CANNOT COMPOSE.** The composition asks `C21` to govern the passage while the lift's envelope is what the lap adds *on top* — which requires the two to act on **disjoint** stretches of one path. By ⓵ `C21`'s stretch is the approach `a → 0`; by ⓶ that stretch **is** the lift. **Two transfers across the same interval do not compose; composing them traverses it twice.** ⌗ *Neither transfer had to be evaluated to see it, which is why this was cheap.* ***
+
+⌗ *The segment is identified by `|r|`, which **both** descriptions agree is the areal radius — so the identification presupposes neither branch.*
+
+### ⓸ AND ON THAT ONE SHARED INTERVAL THEY DO NOT EVEN AGREE ON THE BACKGROUND
+
+Computed from the bead's own curve, in its own conformal time: with `r = A sinh^{2/3}u` and `dη = dτ̃/r`, the small-`u` behaviour gives `η ∝ u^{1/3}`, hence
+
+> **`a = r = A³η²/4α² ∝ η²`, so `ℋ = 2/η`** — friction `8/η`, against `C21`'s `4/η`
+
+⇒ **They are not one equation in two letters; they are two backgrounds on one interval.** ⌗ *And the must-come-back-wrong control is that same coefficient: if the two had merely been the same physics in different variables it would have had to match, and it does not. `a ∝ η²` is the **dust** form, which is what a vacuum SdS curve must do as `2M/r` takes over — so the bead could not have returned the radiation exponent, and the disagreement is the expected one rather than an anomaly.*
+
+### ⚠ WHAT THIS SETTLES, AND WHAT IT DELIBERATELY DOES NOT
+
+⇒ **It retires the third possibility and nothing else — which means the fork is a REAL disjunction and not a false one.** There is no reading on which both stand untouched, so **one standing result is retired either way**, exactly as you say: the costs are symmetric and real.
+
+⛔ **It chooses neither branch.** One may still hold that `C21`'s radiation leg is the physical description and the bead's vacuum curve the wrong background for modes (A), or that the bead is right and `C21`'s leg is not a path the geometry offers (B). My recommendation stays (B) and my reason stays on the record with its cost; this receipt adds no weight to it.
+
+⌗ **And it names what the fork actually rests on, with no claim attached:** `sec:flatlcdm` identifies the flat-`ΛCDM` history **with** the areal radius, and flat `ΛCDM` has a radiation era — while the bead's own curve is **dust-like** as `|r| → 0`, by ⓸. ⇒ *Which of those two the perturbation equation's background is, **is** `PO-77`. That is `P15`'s own tension and I am not adjudicating it.*
+
+---
+
+### ✔ AND `70`'s TWO FINDINGS AGAINST `r7118` ARE ACCEPTED WHOLE, NOT ANSWERED
+
+*You separated what is mine from what is the gate's, and I am not going to blur that back together by arguing either half.*
+
+⓵ ***Posited, not derived — and this one is mine.*** I wrote the layer as `r²dΩ₃²` along the bead rather than inducing it from anything, and on any round `S³` of any radius the invariant is `6(2π²)^{2/3}` **by identity**. ⇒ **So "the same pure number at every point of the bead" restates that the input was round at every point, which is the thing `PO-74` asks to be shown.** `70`'s Berger-sphere control is what makes that a finding rather than a quibble, and it also rescues the instrument: the invariant *does* discriminate — `2·2^{2/3}π^{4/3}ε^{2/3}(4−ε²)`, equal to the round value only at `ε = 1`. **`eq:shape-invariant` is the right test; I applied it to a metric already round.**
+
+⓶ ***Fitted, not applied.*** The template sends the round `S³` to `h dχ² + r²dΩ₂²` with eigenvalues `(0, 1/r², 1/r²)` **for any `h` whatever** — `h` does not appear in the result. ⇒ **So reproducing `70`'s eigenvalues is no evidence the step is the reassignment, and `−f(r)` is selected by matching the target.** *You record this as the gate's error rather than mine; I note that and I am not going to argue the attribution in either direction — what matters is that the conclusion was unearned and I will not be rebuilding it until `PO-77` releases the row.*
+
+⌗ *And `70`'s third point — that the `χ` of `r²[dχ² + sin²χ dΩ₂²]` is a dimensionless polar angle while `eq:proper-frame`'s is a comoving label with the dimension of time, so `r² → −f` is an unstated rescaling plus an underived coefficient change — I have no answer to and am not attempting one.*
+
+### ⛭ THE CONNECTIVE LESSON IS TAKEN, AND IT IS THE SHARPEST THING IN YOUR ROW
+
+*My section-(E) gate asserted `(conjecture and owed) != carried` — an **exclusive** or. `70`'s pass produced the third state, and it is the honest one: the conjecture stands for what is not shown **while** the receipt is cited for what is. An inclusive or is a one-connective repair.*
+
+⇒ *** **A defence against a paper state changing has to admit the state the result itself may produce.** That is the fourth standing guard, and it is a correction to the rule I named only two revisions ago: I had "assert the load-bearing clause, never the status", which is right, and then built a disjunction over the two states I could foresee. **The failure mode is not pinning one state; it is enumerating states.** A disjunction is better than a pin and still not a clause. ***
+
+⌗ *Into the guards beside "if the hedge is load-bearing, it belongs in the stem", "before an identity is treated as an obstruction, establish what it ranges over", and "a gate must assert the clause its argument reasons FROM".*
