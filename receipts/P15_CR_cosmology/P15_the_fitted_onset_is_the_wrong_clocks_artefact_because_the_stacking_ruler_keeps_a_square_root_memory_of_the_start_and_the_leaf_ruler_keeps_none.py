@@ -411,12 +411,27 @@ gate("⌗ AND THE SHARPEST STATEMENT OF IT IS IN A HEADER COMMENT AND NOWHERE IN
      "receipt does not quote it -- `check_provenance` rejects a quotation lifted from a comment, "
      "and the ruling stands on the three body statements without it",
      len(_cm) == 1 and len(_bd) == 0)
-gate("⛭ and `P15` already states the consequence the order reads off the residuals: \"where the "
-     "plasma starts moves the scale and not the peak, which is why the start is not free\" -- l_A "
-     "from 360.6 to 239.3 while the first peak sits between 206 and 210",
-     "moves the scale and not the peak, which is why the start is not free" in fp15
-     and "runs $\\ell_{A}$ from $360.6$ down to $239.3$ while the first peak sits between $206$ "
-         "and $210$ throughout" in fp15)
+# ⌗⌗ ** THE GATE READS THE SENTENCE'S FOUR NUMBERS AND ASSERTS THE FINDING, NOT THEIR SPELLING
+#   (`r7108+60.1`, on `r7109`'s own re-measurement). **  *This check previously required the literal
+#   pair `$206$ and $210$` for the first-peak band.  `r7109` made the first-peak call and the paper
+#   now carries `$204$ and $208$` -- the measurement improved and the gate went red on `main` for it.*
+#   ⇒ ** A GATE THAT PINS TO THE DIGITS OF A MEASUREMENT ANOTHER SEAT OWNS ASSERTS THE PERSISTENCE OF
+#   A SPELLING, NOT THE FINDING.  What the sentence is for is that the scale swings by a hundred and
+#   more while the peak does not move and stays below the whole range -- that is what is checked now,
+#   with the numbers read out of the paper and the achieved values reported. **
+_ON = re.search(r'runs \$\\ell_\{A\}\$ from \$([\d.]+)\$ down to \$([\d.]+)\$ while the first peak '
+                r'sits between \$([\d.]+)\$ and \$([\d.]+)\$ throughout', fp15)
+_lA_hi, _lA_lo, _p_lo, _p_hi = (float(x) for x in _ON.groups()) if _ON else (0.0, 0.0, 0.0, 0.0)
+print(f"        achieved: the paper's scan runs l_A {_lA_hi} -> {_lA_lo}, a swing of "
+      f"{_lA_hi - _lA_lo:.1f} (bound > 100); the first peak stays in [{_p_lo}, {_p_hi}], a band "
+      f"{_p_hi - _p_lo:.1f} wide (bound <= 10) and entirely below {_lA_lo}")
+gate(f"⛭ and `P15` already states the consequence the order reads off the residuals -- \"where the "
+     f"plasma starts moves the scale and not the peak, which is why the start is not free\" -- with "
+     f"the sentence's own four numbers saying it: `l_A` swings {_lA_hi - _lA_lo:.1f} across the scan "
+     f"while the first-peak band is {_p_hi - _p_lo:.1f} wide and sits wholly below it",
+     _ON is not None
+     and "moves the scale and not the peak, which is why the start is not free" in fp15
+     and _lA_hi - _lA_lo > 100.0 and _p_hi - _p_lo <= 10.0 and _p_hi < _lA_lo)
 
 # ===================================================== G. the horizon at the handover
 head("G.  ⛭ Q2's SUB-QUESTION: A START INSIDE THE HORIZON IS NOT WHAT CR REQUIRES")
