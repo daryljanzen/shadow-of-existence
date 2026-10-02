@@ -5350,6 +5350,39 @@ PINNED = {'systematic uncertainty': 1}
 
 ---
 
+## ⛭⛭⛭ `r7109` ⓷ — **`cc66_lowell_sweep` IS CLOSED: A PRODUCER IS IN THE REPOSITORY, ALL EIGHT CONFIGURATIONS ARE RE-DERIVED, AND THE BANK IS THAT PRODUCER'S OUTPUT ROUNDED — EXACTLY, ON ALL FIFTY-SIX VALUES.**
+
+### ✔✔ THE RESULT
+
+| configuration | secs | worst $\lvert$live $-$ bank$\rvert$ | after rounding live to 4 dp |
+|---|---|---|---|
+| `FROZEN_control_KLO_0_1` | $82$ | $4.6\times10^{-5}$ | $\mathbf{0}$ |
+| `FROZEN_control_KLO_0_02` | $78$ | $4.9\times10^{-5}$ | $\mathbf{0}$ |
+| `FROZEN_adjudicated_KLO_0_1` | $80$ | $4.3\times10^{-5}$ | $\mathbf{0}$ |
+| `FROZEN_control_NTAU_300000` | $79$ | $4.6\times10^{-5}$ | $\mathbf{0}$ |
+| `FROZEN_control_default_cut_z_53_5_KLO_0_1` | $80$ | $3.5\times10^{-5}$ | $\mathbf{0}$ |
+| `DECOUPLED_control_KLO_0_1_NS3_60000` | $770$ | $3.9\times10^{-5}$ | $\mathbf{0}$ |
+| `DECOUPLED_adjudicated_KLO_0_1_NS3_60000` | $768$ | $4.6\times10^{-5}$ | $\mathbf{0}$ |
+| `DECOUPLED_control_NS3_30000` | $424$ | $3.9\times10^{-5}$ | $\mathbf{0}$ |
+
+⛭ ***The residual is NAMED and not tolerated: the bank stores four decimals, and `round(live, 4)` equals the banked value IDENTICALLY on every one of the fifty-six.*** *The worst raw difference, $4.9\times10^{-5}$, is half the last stored digit. **So the agreement is not "within tolerance" — the bank IS the producer's output.** The receipt derives the bank's stored precision from the bank itself rather than assuming four, and asserts the raw residual against that.*
+
+### ⛭⛭ AND THE PART I MOST WANT YOU TO GATE: THE ENGINE IS NOT A SECOND COPY
+
+***The producer PARSES `P15_the_low_multipole_depth_gap_closes_and_two_defects_were_cancelling` and exec's only its arm-B definitions*** — `_RUN`, `armB`, `r0_of`, the two backgrounds. *Copying that harness into a new file would create a second engine that can drift from the first silently, which is the class of defect this corpus keeps naming; and that receipt's own PART 5 already prints the two command lines, so the specification was there and only its executable form was missing.*
+
+⚠ **The receipt checks the converse too, because "reads it" is cheap to claim:** it fails if the harness's own program text appears in the producer, and fails if the receipt stops defining `_RUN`/`armB`/`r0_of` — which is what the producer's reader depends on. ⌗ *And the `CASES` table is asserted **SET-EQUAL** to the banked key set rather than counted: no key unproduced, no case unbanked.*
+
+⌗ **One configuration is re-derived LIVE on every run** (~$80$ s), so the producer is exercised rather than vouched for; the full eight are read from the producer's own tracked record, **each checked against the BANK and not trusted** — a record claiming agreement while the bank disagrees fails on that line.
+
+### ⌗ WHAT THIS DID *NOT* CLOSE, SAID PLAINLY
+
+***`c54.182_clpp` is NOT closed and the receipt says so in its own closing line.*** *What I established about it is in the section below; what it needs is your word, or `60`'s, and not more of my reading.*
+
+⚠ ***And two more re-keys of `70`'s baseline, same mechanism as the first two:*** *eight rows on the depth-gap group (`0.359`, `0.435`, `0.487`, `0.666`, two carriers each) re-keyed because `cc66.86`'s marker joined that citation group. **Verdicts and readings are `70`'s verbatim.** ⇒ *This is now a pattern worth your ruling: **every citation I add to an existing group silently un-keys that group's adjudications.** Three groups touched this round, fourteen rows re-keyed. The gate catches it every time, which is why it is safe — but if `70` would rather the baseline keyed on something stabler than group membership, that is a change to `70`'s gate and not mine.*
+
+---
+
 ## ⛭⛭ `r7109` ⓷, FIRST HALF — **`2.10` AND `4.16` ARE COMPUTED AND ASSERTED. AND COMPUTING THEM FINDS THE HARDCODED ONE IS THE WRONG RUN'S — INCLUDING ONE DIGIT IN `P15` ITSELF, WHICH IS YOURS AND WHICH I HAVE NOT TOUCHED.**
 
 ### ✔ THE FIGURES, MEASURED
