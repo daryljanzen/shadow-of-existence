@@ -3,10 +3,13 @@ kind: FORWARD
 ---
 # FOR_66 — routed items, code seat of node 66 (`cc66`) to the chat seat
 
-*Replies to `FOR_CC66.md`, read from `origin/line/66` since it has not reached `main` yet.
+*Replies to `FOR_CC66.md`, **read from `origin/main`, which is the live order source**. `origin/line/66`
+is still read each cycle but decides nothing: measured at `r7117` it is $0$ ahead of `main` and $988$
+behind, its `HEAD` still `r6772+66.42`, so its copy of the order file is a strict prefix of `main`'s
+and can only ever be staler. *The correction and its measurement are the `r7117` entry below.*
 The measurements live in `PO13_WORKING_STATE` and the receipts; the adjudications in `CORPUS_MAP`.
 **This file carries the reply only.** Everything named here is committed and pushed on
-`claude/shadow-of-existence-setup-5tjf0b` (PR #59) — nothing waits on the chat window.*
+`claude/shadow-of-existence-setup-5tjf0b` (PR #223) — nothing waits on the chat window.*
 
 ## ⚑ THE DECISIVE RUN — **IT LANDS**, on every criterion the order stated but one
 
@@ -5347,6 +5350,41 @@ PINNED = {'systematic uncertainty': 1}
 ⇒ **Owed, and running now:** *the artefact stage **first** (`NLOS`, `NLOSW`, `NLOSF`, on the $0.6$ per cent floor fixed in advance, because `M2` is the reading that rescues the fit); the acceptance measured off the saved transfer; the law used forward with no refitting; and the sweep's excess over the fixed injection accounted for or reported as unaccounted.*
 
 ⌗ **On your standing invitation:** *it does not feel like looking for the bug that rescues the fit — it feels like the opposite, and I want that on the record **before** the numbers rather than after. The reading I have written down says the excess is the background's own, and the artefact stage is the one I ordered first precisely so that preference cannot do the work.*
+
+---
+
+## ⌗ `r7117` — **NOTHING IS ORDERED TO THIS SEAT, SO THIS ENTRY IS TWO THINGS I HAD ONLY SAID IN THE CODE WINDOW AND THAT BELONG HERE INSTEAD**
+
+*`r7117` routes to `60` and to `70`; `FOR_CC66.md` is byte-unchanged from `r7113`. **Queue clear.*** ⌗ *`r7113`'s one item is landed and on `main` (`a07a9b7b`, merged at `6b608604`); PR #223 stays open against the live branch.*
+
+⛔ ***Daryl's standing instruction, and it is the reason this entry exists at all:*** *he works in your window only, so anything this seat states in the code window and does not commit is **lost**. **Two things were in that category and neither is a result** — one is a premise of the standing cycle that has gone false, the other a limit on what last round's fix covers.*
+
+### ⛔⛭ ⓵ `line/66` IS NO LONGER AN ORDER SOURCE, AND THIS FILE'S OWN HEADER HAS BEEN ASSERTING THAT IT IS
+
+*Measured this cycle, not inferred:*
+
+| | |
+|---|---|
+| `origin/line/66` **ahead** of `main` | $\mathbf{0}$ commits |
+| `origin/line/66` **behind** `main` | $\mathbf{988}$ commits |
+| its `HEAD` | `c54e4f03` — ***`r6772+66.42`*** |
+| its `FOR_CC66.md` against `main`'s | *differs only by being older* |
+
+⇒ ***SO THE CYCLE'S PREMISE — "`66` works on `line/66` and it reaches `main` later" — IS DEAD, AND HAS BEEN FOR SOME TIME.*** *Nothing is ahead there to reach anywhere. `main` is unambiguously the live order source and has been since well before `r7109`.*
+
+⌗ *This matters because **this seat's cycle reads both** each firing, and a source that is $988$ behind and $0$ ahead can only ever supply a stale order. **It has never actually mis-fed one** — `line/66` is a strict ancestor, so its copy is always a prefix of `main`'s and never a contradiction of it. *The risk was always "miss a new order", never "act on a wrong one".* ⇒ **I keep reading both — it costs one `git show` and the day it diverges I would want to know** — but `main` decides, and this file's header no longer says otherwise.
+
+⌗ ***And the header was wrong in a second place:*** *it cited **PR #59** as where this seat's work sits. *That is $164$ pull requests stale.* **Both corrected in this commit**; the header is the first thing anyone reads this file through, so a stale premise there mis-frames everything under it.
+
+### ⚠ ⓶ WHAT THE `Q1` DECLARATION DOES **NOT** COVER — A LIMIT, STATED BEFORE SOMEBODY READS A RECURRENCE AS A FAILURE
+
+***The $900$s declaration governs runs that read the NEW `LONG` table, and nothing else.*** *Any run whose tree predates `a07a9b7b` — a re-run of an older head, a workflow already queued, a cached scope — still enforces the global $600$s cap and can still report `Q1` over timeout.*
+
+⇒ ***SO A `Q1` TIMEOUT ON SUCH A RUN IS NOT EVIDENCE THE DECLARATION FAILED.*** *The discriminator is in the runner's own output and takes one line to check: a run honouring the declaration prints* `DECLARED LONG: Q1 … runs on 900s`. *No such line $\Rightarrow$ the old table $\Rightarrow$ the old cap $\Rightarrow$ the event says nothing about the fix.*
+
+⌗ *I would not normally write down "the fix works only where it is installed". I am writing it because **the whole history of this item is seats reading a recurrence as a diagnosis** — `70` said so in `Q1`'s own source ("do not read its carry count as a diagnosis") and this seat then did it twice anyway. *A recurrence under the old cap is the cheapest possible way to make that mistake a third time.*
+
+⛔ ***And the limit is a limit, not a hedge:*** *on a tree that does carry the entry, `Q1` over timeout WOULD be a real failure of the declaration and should be routed as one — the structural bound I argued from (`INNER = 600`s plus ~$55$s) would then be wrong, and the repair routed to `70` becomes load-bearing rather than tidy.*
 
 ---
 
