@@ -33,6 +33,94 @@
    }
   }
  },
+ "claude/shadow-of-existence-setup-wgcmvt": {
+  "tolerance": {
+   "receipts/L_numerics/Q1_a_stated_tolerance_is_a_request_and_the_corpus_answers_it.py": {
+    "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/36942276804",
+    "since": "760143359f165393164b5a374a5512184b626f44"
+   },
+   "receipts/P10_canonical_time/P10_the_field_squared_is_already_in_the_trace_at_quadratic_order_and_the_degenerate_point_is_representational.py": {
+    "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/36942276804",
+    "since": "760143359f165393164b5a374a5512184b626f44"
+   },
+   "receipts/P10_canonical_time/P10_the_operator_is_an_inverted_quartic_so_the_deficiency_is_two_two_and_the_measure_closes_it_anyway.py": {
+    "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/36942276804",
+    "since": "760143359f165393164b5a374a5512184b626f44"
+   },
+   "receipts/P10_canonical_time/P10_the_second_logarithm_line_closes_because_the_interaction_cannot_reach_the_anomalys_own_power_of_a.py": {
+    "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/36942276804",
+    "since": "760143359f165393164b5a374a5512184b626f44"
+   },
+   "receipts/P10_canonical_time/P10_the_third_order_operator_is_regular_and_its_deficiency_indices_are_equal_so_a_realisation_exists.py": {
+    "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/36942276804",
+    "since": "760143359f165393164b5a374a5512184b626f44"
+   },
+   "receipts/P10_canonical_time/P10_the_tower_limit_closes_at_first_order_and_the_wall_moves_into_a_boundary_condition_at_second.py": {
+    "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/36942276804",
+    "since": "760143359f165393164b5a374a5512184b626f44"
+   },
+   "receipts/P15_CR_cosmology/C59_the_control_reproduces_camb_and_the_height_defect_was_k_truncation.py": {
+    "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/36942276804",
+    "since": "760143359f165393164b5a374a5512184b626f44"
+   },
+   "receipts/P15_CR_cosmology/P15_the_combs_resolution_is_four_multipoles_and_the_skys_own_value_lies_outside_the_family.py": {
+    "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/36942276804",
+    "since": "760143359f165393164b5a374a5512184b626f44"
+   },
+   "receipts/P15_CR_cosmology/P15_the_contrast_excess_is_symmetric_about_the_envelope_and_the_troughs_are_where_the_sky_measures_it_best.py": {
+    "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/36942276804",
+    "since": "760143359f165393164b5a374a5512184b626f44"
+   },
+   "receipts/P15_CR_cosmology/P15_the_fit_has_the_controls_freedom_and_the_contrast_the_data_ask_for_lies_outside_every_direction_it_has.py": {
+    "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/36942276804",
+    "since": "760143359f165393164b5a374a5512184b626f44"
+   },
+   "receipts/P15_CR_cosmology/P15_the_fitted_onset_is_the_wrong_clocks_artefact_because_the_stacking_ruler_keeps_a_square_root_memory_of_the_start_and_the_leaf_ruler_keeps_none.py": {
+    "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/36942276804",
+    "since": "760143359f165393164b5a374a5512184b626f44"
+   },
+   "receipts/P15_CR_cosmology/P15_the_kernels_distance_is_the_observers_own_flat_slice_so_the_rate_rule_does_reach_it_and_the_disagreement_with_the_sky_is_real.py": {
+    "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/36942276804",
+    "since": "760143359f165393164b5a374a5512184b626f44"
+   },
+   "receipts/P15_CR_cosmology/P15_the_licensed_configuration_moves_neither_statistic_and_the_swing_was_read_above_where_it_converges.py": {
+    "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/36942276804",
+    "since": "760143359f165393164b5a374a5512184b626f44"
+   },
+   "receipts/P15_CR_cosmology/P15_the_licensed_rebuild_leaves_all_three_rigidity_numbers_where_they_were_and_the_forbidden_one_puts_the_arm_on_the_controls_own_floor.py": {
+    "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/36942276804",
+    "since": "760143359f165393164b5a374a5512184b626f44"
+   },
+   "receipts/P15_CR_cosmology/P15_the_locator_is_good_to_three_hundredths_and_the_fourth_peaks_residual_is_the_controls_too.py": {
+    "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/36942276804",
+    "since": "760143359f165393164b5a374a5512184b626f44"
+   },
+   "receipts/P15_CR_cosmology/P15_the_low_multipole_depth_gap_closes_and_two_defects_were_cancelling.py": {
+    "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/36942276804",
+    "since": "760143359f165393164b5a374a5512184b626f44"
+   },
+   "receipts/P15_CR_cosmology/P15_the_low_multipole_floor_moves_with_no_background_and_the_factor_two_is_the_late_isw.py": {
+    "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/36942276804",
+    "since": "760143359f165393164b5a374a5512184b626f44"
+   },
+   "receipts/P15_CR_cosmology/P15_the_optical_depth_is_a_photon_path_observable_so_it_takes_the_stacking_rate_and_the_visibility_ruling_is_withdrawn.py": {
+    "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/36942276804",
+    "since": "760143359f165393164b5a374a5512184b626f44"
+   },
+   "receipts/P15_CR_cosmology/P15_the_transfers_running_is_a_function_of_one_variable_so_the_requirement_is_the_radiation_fractions.py": {
+    "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/36942276804",
+    "since": "760143359f165393164b5a374a5512184b626f44"
+   },
+   "receipts/P15_CR_cosmology/P15_the_visibilitys_clock_is_the_one_the_kernel_reads_and_the_comb_votes_against_the_alternative.py": {
+    "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/36942276804",
+    "since": "760143359f165393164b5a374a5512184b626f44"
+   },
+   "receipts/P15_CR_cosmology/P15_the_windows_phase_spread_is_nearly_equal_because_the_visibility_widens_as_the_leaf_clock_slows.py": {
+    "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/36942276804",
+    "since": "760143359f165393164b5a374a5512184b626f44"
+   }
+  }
+ },
  "main": {
   "tolerance": {
    "receipts/P15_CR_cosmology/P15_the_harmonic_expansion_in_the_proper_frame_is_not_bounded_because_no_slicing_of_it_carries_both_the_discrete_source_and_the_projection_distance.py": {
