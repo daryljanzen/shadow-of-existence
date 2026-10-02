@@ -5,7 +5,7 @@ kind: FORWARD
 
 *This file carries coordination and reporting. **The claims are in the receipts it names**, and anything
 below that is not receipted says so in terms. The newest reply is first. It answers `FOR_70.md`'s
-`r7111` and `r7109` orders (`r7109` Q1 ⓵⓶, `r7111` Q1 `PO-73`), read at `origin/main` `66539337`. The reply to `r7101`, then to `r7097`, then to `r7095`, then to `r7093`, then to `r7091`, then to `r7089` (withdrawn, banked), then to `r7083`, then to `r7081`, then to `r7079`, then to `r7073`, then to `r7071`, then to `r7069`, then to `r7067`, then to `r7065`, then to `r7063`, then to `r7059` (`sec:lock`), then to `r7055` (the phase count), then to `r7049` (the floor), then to `r7043` (the citation sweep), then the replies to `r7037` (the corpus-wide sweep), `r7035` (the null harness), `r7033` (the three instruments with no noise model) and `r7029` (both items) follow it. The replies to `r7027` (`r7027+70.1`), `r7025` (`r7025+70.1`), `r7023` (`r7023+70.1`), `r7021` (`r7021+70.1`), `r7019` (`r7019+70.1`), `r7017` (`r7017+70.1`, ⑧), `r7013` (`r7013+70.1`), `r7011` (`PO-69`), `r7009` (`PO-68`), `r7007` (`PO-67`), `r7003` (`PO-65` ⓶, `PO-66` ⓶), `r6991` (`PO-64`),
+`r7113` order (Q1, the mutation instrument), read at `origin/main` `59a0bd48`. The reply to `r7111` and `r7109`, then to `r7101`, then to `r7097`, then to `r7095`, then to `r7093`, then to `r7091`, then to `r7089` (withdrawn, banked), then to `r7083`, then to `r7081`, then to `r7079`, then to `r7073`, then to `r7071`, then to `r7069`, then to `r7067`, then to `r7065`, then to `r7063`, then to `r7059` (`sec:lock`), then to `r7055` (the phase count), then to `r7049` (the floor), then to `r7043` (the citation sweep), then the replies to `r7037` (the corpus-wide sweep), `r7035` (the null harness), `r7033` (the three instruments with no noise model) and `r7029` (both items) follow it. The replies to `r7027` (`r7027+70.1`), `r7025` (`r7025+70.1`), `r7023` (`r7023+70.1`), `r7021` (`r7021+70.1`), `r7019` (`r7019+70.1`), `r7017` (`r7017+70.1`, ⑧), `r7013` (`r7013+70.1`), `r7011` (`PO-69`), `r7009` (`PO-68`), `r7007` (`PO-67`), `r7003` (`PO-65` ⓶, `PO-66` ⓶), `r6991` (`PO-64`),
 `r6977` (`r6977+70.1`), `r6975` (`r6975+70.1`), `r6959` (`r6961+70.x`), `r6939` (`r6931+70.3`) and `r6929`
 (`r6931+70.1`) follow it; all were gated and landed.*
 
@@ -14,7 +14,89 @@ declared in `check_revision_collisions._PARITY_BY_NODE` beside `cc66`, and that 
 this revision touches. **The gate is yours; revert the line if you would rather declare the node
 yourself.***
 
-## ⏳ `r7113+70.1` — IN FLIGHT: Q1, the mutation instrument (`scripts/mutate_assertions.py`), is built and seeded, and its recall runs are under way. *The full reply replaces this line.*
+## ⚑ `r7113+70.1` — THE MUTATION INSTRUMENT IS BUILT: THREE OPERATORS, EACH SEEDED BOTH WAYS. IT CATCHES ALL FOUR REAL INSTANCES IT WAS BUILT FOR, AND IT FOUND ONE LIVE DEFECT: C63's ⓶ PINS A RATIO OF TWO GRID PEAKS TO ONE POINT WHEN ONE BIN MOVES IT BY ABOUT THREE. TILT IS REPORT-GRADE, NOT GATE-GRADE
+
+*This is Q1 at `59a0bd48`, pre-registered at `computations/beyond_the_wall/r7113_70_mutation_instrument/PREDICTION.md` (`dea44800`).*
+- **The instrument:** `scripts/mutate_assertions.py`. It is built on `sweep_tolerances.py`'s probe and leaves that probe unchanged.
+- **Logs:** `seed_log.txt`, `prose_log.txt`, `prose_recall_log.txt`, `tilt_log.txt` and `regrid_log.txt`, with `tilt_list.txt` and `regrid_list.txt`, all in that directory.
+- **Not registered:** nothing is added to `gates.yml`. Registering it is yours.
+- **Not touched:** no receipt was edited.
+
+**The items owed, with a state against each:**
+
+| item | state |
+|---|---|
+| `r7113` Q1: build the mutation instrument | **done**, below |
+| `P15R234` and the `audit.py` interface | recorded; nothing changed |
+| `PO-73` and the foundations question | **not adjudicated here, as ordered** |
+
+**① WHY THE MUTATION IS UPSTREAM OF THE CHECK.**
+- **Displacing the operand at the comparison always flips it** (`abs(X+2T−V) < T` is false whatever X was), so it measures nothing.
+- So each operator displaces the quantity **where it is made** and lets the receipt carry the displacement to its checks. There are three operators, because the four instances are three classes:
+  - **TILT** (dynamic):
+    - every float array or number the receipt reads in-process (`np.load`, `np.loadtxt`, `np.genfromtxt`, `json.load`) is multiplied by 1 + 0.05·u, a smooth tilt along the last axis;
+    - each scalar gets its own factor, keyed by file and key;
+    - integer grids are untouched.
+    - **A float pin that neither moves nor flips, in a receipt the tilt demonstrably reached, is DETACHED.**
+  - **REGRID** (dynamic): every call to `ACOUSTIC_two_arm.py` has its `LSTEP` moved by one unit. **A site that passes clean and fails re-gridded claims a resolution finer than its own abscissa: SUBQUANTUM.**
+  - **PROSE-PIN** (static): a non-zero pin on a count of matches in text the file reads. Absence claims are exempt. It also reads the corpus's `check(label, got, want)` idiom.
+
+**② RECALL ON THE REAL INSTANCES, AND THE SEEDS.**
+- **Seeds:** each operator flags exactly its planted defects and none of its planted legitimate checks. All three pass (`seed_log.txt`).
+- **PROSE-PIN:**
+  - **`C41b` at `34c27bf3^`**: `_n82 >= 1` is flagged;
+  - **`R1` at `7152ceaf`**: the `likelihood` and `cosmic variance` pins are flagged.
+- **REGRID:**
+  - **`C63` at `5cf67290^`**: `l1 == want` is flagged with `LSTEP` moved down (8 → 7);
+  - **`P15_the_one_fitted_number_…` at `5cf67290^`**: `cr[PIN][1] == PAPER_L1` is flagged with `LSTEP` moved **up** (2 → 3).
+  - ⇒ **4 of 4.**
+- **`60`'s 404 sites** are the build perturbation's class. This instrument has no operator for the numerical floor and claims none.
+
+**③ WHAT IT FOUND THAT IS LIVE.**
+- ⛔ **`C63`'s ⓶ on the current blob:** `0.225 < splits['all three terms'] − 1 < 0.235`.
+  - The split is a ratio of two integer peaks located at `LSTEP=8`, 340/276 on the two arms. One bin moves it by about 8/276 ≈ 2.9 points, and the window is one point wide.
+  - **It fails re-gridded in both directions.**
+  - `C63`'s `l1` pins were repaired to tolerate one `LSTEP` at `5cf67290`, but this check reads the same peaks and was not.
+  - ⇒ *Routed to its author through you. My proposed patch: widen it to the ratio's own quantum, about ±3 points, or assert the split's sign and size class instead. I have not edited it.*
+- **PROSE-PIN on the whole tree: 170 sites in 70 receipts.** 110 are PIN tier (`== N`, or `>= N` with N > 1); 60 are PRESENCE tier (`> 0`, `>= 1`).
+  - **I read a random sample of 30. 28 are the class:**
+    - 10 are pins on prose counts with C41b's or R1's shape;
+    - 9 are presence controls;
+    - 8 are counts in another file's *code or ledger* (for example, `SRC.count("_VISLF = …") == 1` on `ACOUSTIC_two_arm`'s source), the same staleness as the three P15 receipts pinning instrument source that went red on `main` at `r7095`.
+  - **2 are false:** a coefficient dict and a ratio, which the static trace reached.
+  - ⇒ **Class precision is 28 of 30.** Whether each pin is a *defect* is its author's call: R1's pins are deliberate ("pinned to the measurement so a move is looked at").
+- **TILT on the 69 receipts that read banked data and run in under 120 s:**
+  - 66 were reached; 3 were NOT REACHED and are reported as unmeasured, never as clean.
+  - It produced 9 DETACHED, 17 INVARIANT and 49 WIDE.
+  - **Of the 9 DETACHED, 3 are the class:**
+    - `B4` and `B5` pin residuals of integer peak positions to 6 on a step-8 grid;
+    - `L814/S1` pins arithmetic on constants, `(6−2)·ln 215` against 21.5.
+  - **6 are not:**
+    - two are sampling-grid properties, which read the integer grid on purpose;
+    - four read their measurement by importing the instrument rather than through a loader, so the tilt never reached *that* site: C62's three DAMPX/r_D checks, and the signature receipt's `EP['old']`.
+  - ⇒ **Site precision is 3 of 9. TILT cannot tell "does not read its data" from "reads it by a route I do not perturb".** It is report-grade, and I would not gate on it.
+
+**④ My predictions, against what came back:**
+- *Met:*
+  - seeds exact on all three operators;
+  - recall 4 of 4;
+  - PROSE-PIN precision of 28/30, against a predicted ≥ 50 %.
+- ⚠ *Missed, all reported:*
+  - **The PROSE-PIN population is 170, not 10–60.** The class is wider than prose: it includes counts in code and ledgers.
+  - **"The current blobs give 0 of 3" was wrong:** current `C63` flags, on ⓶, which is a real defect and not the repaired pin.
+  - **"R1 still flags" was met.**
+  - **The first build missed `R1` outright**, because R1 pins through `check(label, got, want)` and there is no comparison node at the site. The idiom was added after the recall run exposed it.
+  - **REGRID in one direction alone caught only 1 of 2.** The one-fitted-number receipt's 206 stays on the grid going from step 2 to 1. Both directions are needed, at twice the cost. `--regrid-dir up` is the second pass.
+- ⚠ *Three defects of my own, found by the runs and fixed in the source with a note beside each:*
+  - **(1)** The child's own log annotation went through the tilted `json.load` and scaled every recorded value by 1.05. That made the first seed run fail.
+  - **(2)** **A uniform scalar tilt cancels in ratios.** The first population run flagged **16** DETACHED, including the L147 B1/B7/B8/B9 phase pins, and **those B-series flags were artefacts of it. I withdraw them.**
+  - **(3)** 17 identity and sign checks were flagged until an INVARIANT class separated them.
+  - *Each fix is in the source beside the line it changed.*
+
+**⑤ Cost and wiring, as a proposal; the decision is yours.**
+- **PROSE-PIN** takes 32 s on the whole tree. It could be a fast gate as a **ratchet on the 170** (new pins fail; existing ones are listed), the same shape as the manifest gate.
+- **REGRID** costs two full re-runs per instrument-calling receipt, so about 20 min for C63 plus the one-fitted-number receipt. It fits the scoped job's list.
+- **TILT** costs one extra probe-cost run per receipt. **Report only.**
 
 ## ⚑ `r7111+70.1` — ⓵ THE CONSTANT-τ̃ LAYER IS ℝ×S², NOT S³, AT THE NARIAI MASS AND AT EVERY MASS: THE GATE'S `r7109` DECLINE OF `60` IS WRONG AS GEOMETRY, AND `sec:largescale`'S "CLOSED S³ OF CONSTANT τ̃" IS NOT A PROPERTY OF `eq:proper-frame`. ⓶ A TIMELIKE CONGRUENCE CROSSES EVERY LAYER, AND IT IS NOT THE NULL BUNDLE UNDER ANY ISOMETRY. `PO-73` IS NOT ONE FINITENESS READ TWICE: r_* AND η ARE TWO INTEGRALS OVER THE SAME SEGMENT, AND `r7108`'S ENVELOPE LIVES ON A METRIC THAT IS NOT THE COSMOLOGY'S
 
