@@ -459,10 +459,25 @@ head("F.  ⛭⛭⛭ (iv) THE JOIN: THE CONSTANT-COSMIC-TIME LAYER IS `R x S^2`, 
 #   ⌗ *So the paper's sentence is restored verbatim and this check is restored with it.  The delivering
 #     seat's own charitable reading --- that the physics was untouched --- was RIGHT, and the gate
 #     overrode it on a worse reading.  `PO-72`, opened on that inference, is struck at `r7105`.*
-gate("the paper locates the closed $S^3$ ON the constant-$\\tilde\\tau$ surfaces of the proper frame, "
-     "and reads $r_0$ off it twice -- once as the areal radius, once as the curvature radius",
-     "the \\emph{cosmological} layers are the closed $S^3$ of constant $\\tilde\\tau=\\tau+\\chi$"
-     in body15
+# ⛭⛭⛭ r7113 (66): **THE CLAIM IS ASSERTED; THE WORDING IS NOT.  AND THIS CHECK IS THE ONE DARYL
+#   RESTORED VERBATIM AT `r7105`, SO THE CHANGE IS EXPLAINED RATHER THAN MADE QUIETLY.**
+#   *`r7113` repaired the paper's ATTRIBUTION of the sphere, which is the narrow repair this seat proposed
+#   at `r7102` and which `r7105` ruled had been right all along: `sec:largescale` now reads "the
+#   cosmological layers are the closed $S^3$, **labelled** by constant $\tilde\tau$ and **read as a sphere
+#   in the de Sitter presentation**", and then states the reassigned chart's induced metric outright.*
+#   ⌗ *Node 70 measured that induced metric at `r7111+70.1` and node 66 verified it independently: on
+#   `eq:proper-frame` a constant-$\tilde\tau$ surface is $-f(r)d\chi^2 + r^2d\Omega^2$ with Ricci
+#   eigenvalues $(0, 1/r^2, 1/r^2)$ -- which is Daryl's own `r7105` statement of that metric.*
+#   ⇒ ** SO THE OLD SPELLING ASSERTED A LOCATION THE CORPUS NO LONGER CLAIMS, WHILE WHAT THE CHECK IS FOR
+#   IS UNCHANGED: that the paper makes the closed-$S^3$ claim for the cosmological layers and reads $r_0$
+#   off it twice. **  *That is what is asserted now, by substring tests on the surviving claim rather than
+#   on a sentence another seat owns the wording of.*  ⌗ *`PO-73` carries the open part -- which geometry
+#   supplies the sphere -- and NOTHING here claims the two presentations are one metric or two.*
+gate("the paper still makes the closed-$S^3$ claim for the cosmological layers and still reads $r_0$ off "
+     "it twice -- once as the areal radius, once as the curvature radius -- with the sphere's "
+     "presentation now named rather than left to the constant-$\\tilde\\tau$ label",
+     "layers are the closed $S^3$" in body15
+     and "read as a sphere in the de~Sitter presentation" in body15
      and "with $r_0$ the present $S^3$ areal radius" in body15
      and "the ratio of the flat projection distance to the curvature radius" in body15)
 _vv, _rc = sp.symbols('v r_c', positive=True)
