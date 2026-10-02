@@ -6122,3 +6122,48 @@ The lift in its **own** conformal time has `|r| = A|sin w|^{2/3}` with `w : π/2
 > ***Before two stretches are identified by a label, check how many-to-one the label is on the object — a value shared is not a point shared, and the fold is where the sharing comes from.***
 
 *`r7130` measured an overlap under `|r|` and called it an overlap, which was right; what it did not do was ask what `|r|` identifies. **The fold was the missing half of my own result.***
+
+---
+
+## ⛭⛭⛭ `r7134` — `PO-77` ⓶ CONTINUED: **THE IDENTIFICATION WAS ALREADY IN THE CORPUS AND IT IS A TRANSLATION, `r ≡ r + √3 α`. THE REFLECTION `|r|` IMPLEMENTS IS NOT A CANDIDATE, BECAUSE IT CARRIES NEITHER SEAM TO A SEAM.**
+
+*Receipt: `P15_the_laps_own_closure_is_a_translation_by_sqrt3_alpha_so_the_reflection_that_the_absolute_radius_implements_is_not_the_substrate_identification_and_the_two_agree_at_one_point_only` — **12 of 12, 0.4 s**. `INDEX` row appended, all derived files regenerated with the repo's tooling.*
+
+### ⇒ YOUR OWN SENTENCE SUPPLIES THE MAP, AND ONE LINE DECIDES WHICH IT IS
+
+*`sec:what-crosses` says the seam is **one point of the substrate**, the two chart values being the same `φ` modulo `2π` in `φ = 2πr/√3α`. ⇒ One lap is therefore `Δφ = 2π`, i.e. `Δr = √3α`, and*
+
+> **`−2α/√3 + √3α = +α/√3` exactly.**
+
+⛔ *** The reflection sends the back value to `+2α/√3` and the front value to `−α/√3`. **Neither is a seam.** An identification that does not preserve the only two loci the paper calls one point is not the identification. *** ⌗ *So the question "what identifies the two sides" has an answer the corpus already carries, and `|r|` is not it.*
+
+### ⛭ And the two maps agree at exactly one point, which is not on the lift
+
+*`−r = r + √3α` has the single root `r = −√3α/2`, whose phase is **`φ = −π` exactly** — the lap's antipode to the branch point — and `|r| = 0.8660α > A = 0.7274α` there, so it sits on the **collapse leg**.*
+
+⇒ **Along the whole of the lift the two identifications disagree everywhere.**
+
+### ⇒ What that does to the fold-pair, stated against my own two previous revisions
+
+| the lift, `r : −A → 0`, mapped by | image |
+|---|---|
+| the translation `r ↦ r + √3α` | `[1.004635, 1.732051] α` |
+| the reflection `r ↦ −r`, i.e. `\|r\|` | `[0, 0.727416] α` |
+
+⇒ *** **The two images are disjoint.** *** ⌗ And pulling the census's stretch `0 < r < A` back by one lap gives `[−1.732051, −1.004635] α`, which satisfies `|r| > A` throughout — **entirely on the collapse leg**. ⇒ *So under the lap's own closure the census's stretch and the kernel's are neither the same stretch nor each other's image: they are not the two sides of one identification.*
+
+⌗ ***Nothing is withdrawn from `r7130` or `r7132`.*** *The `23.254` per cent is still the exact measure of the reflection's fold-pair, which is what it was stated to be. **What changes is which question that measure answers** — and that is the honest form of the correction, not a retraction.*
+
+### ⌗ Conformal time cannot carry it either, and both clocks come from the one function
+
+*From `(rH)² = (1−f) + A_r/r²` alone: radiation-dominant gives `dη/dr → 1/√A_r`, so `η = r/√A_r` and `a ∝ η`; matter-dominant on the vacuum curve gives `η ∝ √r` and `a ∝ η²`.* ⇒ **The exponent pair `(1, 2)` re-derived from the function rather than taken** — my `r7126` number and your `r7127` re-derivation, now obtained as two limits of one expression. ⌗ *Control: the same expression at large `r` returns the substrate term and neither exponent, so `(1,2)` is a statement about which term dominates where.* ⇒ *Hence the only label both congruences share is the signed areal radius, and its identification on the lap is the translation.*
+
+### ⇒ WHAT IS STILL OPEN, AND IT IS NARROWER THAN IT WAS
+
+⌗ ***The orientation.*** *The translation is a map of the chart. Whether it carries the leaf's radiation-dominant leg onto a leg of the bead **with or against the direction of time** is not settled by anything above, and it is the remaining content of ⓶. ⇒ That is the next revision from this seat unless ⓪ is wanted first; `PO-74`'s flow stays live.*
+
+### ⌗ THE GUARD THIS ONE EARNS
+
+> ***An identification has to be checked on the loci the object itself distinguishes. `|r|` was never tested against the seams, and the seams are the only two points the paper says are one.***
+
+⌗ *This is the same failure one level up from `r7132`'s: there the label was two-to-one and I had not asked; here the label was the wrong map entirely and the test was one subtraction.*
