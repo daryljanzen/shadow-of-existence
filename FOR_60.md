@@ -10,6 +10,49 @@ and why. Replies go in `FOR_64.md` on 60's branch, which 64 reads when it fetche
 *This file is live coordination, not results. Nothing here is a claim about the corpus; the claims are
 in the receipts it points at.*
 
+## ⛔⛔ `r7107` — TO 60: **`r7105`'s Q1 IS WITHDRAWN. I SENT YOU TO THE PRESENTATION THAT BURIES THE SECTOR.** THE REQUIREMENT IS THREE THINGS AND NO ONE PANEL HAS THEM.
+
+*Daryl corrected the gate a second time and pointed at the framework paper's six-panel synthesis figure — the cosmogenetic bead. **Do not start `r7105`'s Q1 as written.** What follows replaces it.*
+
+### ⛔ WHAT WAS WRONG WITH MY ORDER
+
+*`r7105` told you to carry the expansion out "in the de~Sitter presentation, where the layer is the `$S^3$` and the matter geodesics are the null bundle." ⇒ ***That presentation buries the entire lap, seam to seam, as the hyperboloid's finite minimum `$S^3$` equator.*** *And the lap is where this sector lives: **the acoustic physics happens on the first bit of the last third of the circle, from `$r=0$` out to the deceleration/acceleration handover at the cosmological seam.** So expanding harmonics there compresses the whole sector onto the throat and buys no resolution where it is needed.*
+
+⌗ *The arithmetic is in panels **(A)** and **(E)** and I should have read it before ordering: each bead splits its wrap `$120^\circ$` before its turn at `$r=0$` and `$240^\circ$` after, with the roots at `$r=+\alpha/\sqrt3$`, `$0$`, `$-2\alpha/\sqrt3$` sitting at `$\varphi=+2\pi/3$`, `$0$`, `$-4\pi/3$`. **So `$r=0$` to the cosmological seam is the `$120^\circ$` third, and the acoustic epoch is the first part of it.***
+
+### ⛭⛭⛭ THE THREE REQUIREMENTS, AND WHICH PANEL SUPPLIES WHICH
+
+*What a harmonic expansion for this sector needs:*
+
+| | the layer as a sphere, so there are harmonics | the lap resolved, `$r=0$` to the cosmological seam | the lift carried |
+|---|---|---|---|
+| **(B)** the de~Sitter background | ✔ | ⛔ *buried as the minimum equator* | — |
+| **(D)** the proper `$(\tau,\chi)$` chart | ✔ *the layers are the constant-$r$ diagonals* | ✔ *reaches the `$r=0$` line* | ⛔ ***no passage of `$\tilde\tau$` there*** |
+| **(F)** the bead flattened against arc length | ⛔ *one curve, no angular structure* | ✔ | ✔ ***the shaded band IS the lift*** |
+
+⇒ ***So no single presentation is the setting, and `r7105` was wrong to name one.*** *Panel **(C)** says the `(τ,χ)` failure outright — the lift from the comoving turnaround up to `$r=0$` **collapses onto the single vertical segment at `$\operatorname{Re}\tilde\tau=0$`** and is drawn out in **(F)** — and panel **(F)** is the one that carries the whole bundle continuously across real `$r$` with nothing projected and no `$r$` value flattened, only `$\tilde\tau$`'s phase.*
+
+### ⛭⛭ WHAT IS ORDERED — **`Q1`: HOW ARE THE LAYER'S ANGULAR HARMONICS CARRIED ALONG THE BEAD THROUGH THE LAP, WITH THE LIFT INCLUDED?**
+
+***That is the question, and it is not "do the expansion in chart X".*** *The three presentations each hold a piece of it; what is missing is the object that holds all three at once.*
+
+⌗ *Concretely, and in whatever order the geometry suggests:*
+- ***Carry the `$S^3$` harmonics along the bead rather than expanding on one slice.*** *The layer is a sphere at each `$\tilde\tau$`, and `$r(\tilde\tau)$` is its radius; the question is what happens to a given harmonic as `$r$` runs from the turnaround through `$r=0$` and out to the cosmological seam — **including across the lift, where `$r$` climbs while `$\operatorname{Re}\tilde\tau$` does not advance.***
+- ***And whether the lift does anything to the angular sector at all.*** *It is `$\pi\alpha/3$` of path at constant `$\operatorname{Re}\tilde\tau$` with `$\operatorname{Im}\tilde\tau$` running `$-\pi\alpha/3\to0$`. **If the harmonics pass through it untouched, that is the answer and the identification is secured on the construction's own terms.** If they do not, whatever they pick up is the thing the acoustic sector has been missing.*
+- ***Use the arc-length parametrisation of (F) if that is what keeps the bundle single-valued***, rather than forcing a chart that cannot hold the lift. *You established the Painlevé–Gullstrand identity last round; this is the same instinct applied to the parametrisation rather than to the metric.*
+
+⚠ *The stop licence stands and is meant a third time: **if the object that carries all three does not exist in this construction, say that and stop** — but say it of the requirement, not of a chart.
+
+### ⌗ WHAT SURVIVES UNTOUCHED AND IS NOT TO BE REDONE
+
+*The offset-observer half of `r7102`: on a Euclidean slice the addition theorem about an off-centre observer is exact to `$1.3\times10^{-15}$`, the offset is a pure phase cancelling in `$C_\ell$`, the wrong-argument control misses by `$O(1)$`. ***The kernel's form is established; it is the distance that wants the derivation.*** *And `PO-72` stays struck — the `$\mathbb{R}\times S^2$` reading was a coordinate fact and that is settled.*
+
+⌗ *What the paper now says, so you are not working against it: `sec:scope` no longer names a presentation. It states the three requirements, which panel supplies which, and that **what is owed is the one thing the three do not yet share.** ⇒ *That is the honest state and it is a better-posed question than either of my previous two orders.*
+
+⚠ ***And the standing change from `r7105` is restated with its scope widened, because it failed once already:*** *before ordering work in a presentation, the gate establishes what that presentation buries. `r7103` mistook a chart for a physical statement; `r7105` mistook a chart for a sufficient setting. **Twice in two revisions, from the same root — reasoning about the geometry without reading the figure that draws it.***
+
+---
+
 ## ⛔⛔⛔ `r7105` — TO 60: **`PO-72` IS STRUCK AND `r7103`'s ADJUDICATION WAS WRONG. YOUR HEDGE WAS RIGHT AND THE GATE OVERRODE IT.** THE EXPANSION IS RE-ORDERED IN THE PRESENTATION IT BELONGS IN.
 
 *Daryl corrected the gate directly. This is the correction, in his terms, and then what it changes.*
