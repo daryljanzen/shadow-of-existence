@@ -418,6 +418,15 @@ gate("⌗ AND THE SHARPEST STATEMENT OF IT IS IN A HEADER COMMENT AND NOWHERE IN
      "receipt does not quote it -- `check_provenance` rejects a quotation lifted from a comment, "
      "and the ruling stands on the three body statements without it",
      len(_cm) == 1 and len(_bd) == 0)
+# ⛭⛭ r7113 (66): **CONFLICT RESOLVED IN FAVOUR OF THE AUTHOR'S VERSION, AND IT IS THE BETTER
+#   INSTRUMENT.**  *Three seats repaired this one check in the same round: `66` at `r7111` and
+#   `cc66` at `r7109+cc66.83` both re-pinned the literal band `204`-`208`; `60`, whose file it is,
+#   replaced the literal pin with a regex that reads the sentence's four numbers and asserts the
+#   FINDING -- the scale swinging past 100 while the peak band stays under 10 wide and wholly below
+#   it.*  ⇒ ** A gate pinned to the digits of a measurement another seat owns asserts a spelling,
+#   not a finding -- so the author's form is kept and both literal re-pins are dropped. **  ⌗ *That
+#   is the fourth instance this round of an assertion resolving finer than its subject, and the
+#   first one repaired by removing the pin rather than widening it.*
 # ⌗⌗ ** THE GATE READS THE SENTENCE'S FOUR NUMBERS AND ASSERTS THE FINDING, NOT THEIR SPELLING
 #   (`r7108+60.1`, on `r7109`'s own re-measurement). **  *This check previously required the literal
 #   pair `$206$ and $210$` for the first-peak band.  `r7109` made the first-peak call and the paper

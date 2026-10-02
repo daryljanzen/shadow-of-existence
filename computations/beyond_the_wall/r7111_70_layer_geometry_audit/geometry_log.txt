@@ -1,0 +1,69 @@
+
+====================================================================================================
+  ⓵  THE CONSTANT-tilde-tau LAYER OF eq:proper-frame
+====================================================================================================
+      max |G_ab + Lambda g_ab| over 16 components x 3 points (two at the Nariai mass): 2.07e-171
+  [PASS] eq:proper-frame with eq:scalefac is SdS-vacuum: G_ab + Lambda g_ab = 0 to 40-digit arithmetic, at the Nariai mass and off it
+  [PASS] its Kretschmann scalar is 24/alpha^4 + 12 r_s^2/r^6 -- the SdS value; equal to de Sitter's 24/alpha^4 only at r_s = 0 (residual 8.1e-174)
+      induced metric: h_chichi = -1 + R'^2 = Rv**2/alpha**2 - 1 + r_s/Rv   (= -f(R): True)
+      intrinsic Ricci R^a_b of the layer: diag(0, Rv**(-2), Rv**(-2))   (a round S^3 of radius a: 2/a^2 x3)
+  [PASS] ⛭⛭⛭ THE LAYER IS R x S^2, NOT S^3: its intrinsic Ricci eigenvalues are (0, 1/R^2, 1/R^2) -- a flat line times a round S^2 of radius R(tilde-tau) -- at EVERY tilde-tau and EVERY mass; no choice of radius makes three equal eigenvalues
+      extrinsic-curvature trace (unit normal along grad tilde-tau): sqrt((Derivative(Q(T), T)**2 - 1)/Derivative(Q(T), T)**2)*(-Q(T)*Derivative(Q(T), (T, 2)) - 2*Derivative(Q(T), T)**2 + 2)*Derivative(Q(T), T)/((Derivative(Q(T), T)**2 - 1)*Q(T))
+
+      at the Nariai amplitude (alpha = 1): r_s = 0.384900, A = 0.727416, r_N = 0.577350, and R = r_N at tilde-tau = 0.438986
+       tilde-tau         R  x=R/r_N  -f(R)=h_chichi  Rprime^2-1           K K (const-r SdS)
+          0.2000   0.32925   0.5703    2.774242e-01  2.7742e-01 -4.5407e-01     +4.5407e-01
+          0.5000   0.63847   1.1059    1.049245e-02  1.0492e-02 -1.9451e+00     +1.9451e+00
+          0.8000   0.95719   1.6579    3.183248e-01  3.1832e-01 -2.5031e+00     +2.5031e+00
+          0.4302   0.56857   0.9848    2.336493e-04  2.3365e-04 +1.6962e+00     -1.6962e+00
+          0.4478   0.58613   1.0152    2.289586e-04  2.2896e-04 -1.7665e+00     +1.7665e+00
+          1.5000   2.03847   3.5307    3.344160e+00  3.3442e+00 -2.8836e+00     +2.8836e+00
+          2.0000   3.38039   5.8550    1.054088e+01  1.0541e+01 -2.9569e+00     +2.9569e+00
+          3.0000   9.20330  15.9406    8.374262e+01  8.3743e+01 -2.9941e+00     +2.9941e+00
+          5.0000  68.00931 117.7956    4.624272e+03  4.6243e+03 -2.9999e+00     +2.9999e+00
+  [PASS] the layer's chi-length element is sqrt(-f(R)) and it equals sqrt(R'^2 - 1) on the grid: the layer IS the constant-r hypersurface of SdS, read in the E=1 chart
+  [PASS] and its extrinsic-curvature trace agrees in magnitude with the SdS constant-r formula to < 1e-10 on the grid -- so K is not a chart artefact
+      K = 0 at tilde-tau = 0.22475849: R = 0.35682209, x = R/r_N = 0.61803399  (below the null layer at x = 1; K diverges there, the unit normal ceasing to exist)
+  [PASS] ⛭⛭ AND THE NARIAI GEOMETRY DOES HAVE A MAXIMAL LAYER, K = 0, at one tilde-tau before the null one -- and it is R x S^2 like every other: so maximality is not what separates S^3 from not-S^3 at this mass; the layer is not an S^3 whether K vanishes or not
+  [PASS] ⛭ AT THE NARIAI MASS f <= 0 with a DOUBLE root at r_N: the layer is spacelike at every tilde-tau except the one where R = r_N, where h_chichi = 0 and it degenerates to NULL -- x = 1, the acceleration onset
+
+====================================================================================================
+  ⓶  THE TIMELIKE CONGRUENCE, AND THE NULL BUNDLE
+====================================================================================================
+  [PASS] the E=1 congruence u = d_tau is unit timelike (g_tautau = -1) and GEODESIC (Gamma^a_tautau = 0): a timelike matter congruence crosses every constant-tilde-tau layer of the cosmology's geometry
+      its boost against the layer's normal: -u.n = R'/sqrt(R'^2-1); relative speed 1/R'
+        tilde-tau  0.5:  gamma =   9.8136   v = 0.9948
+        tilde-tau  1.5:  gamma =   1.1397   v = 0.4798
+        tilde-tau  3.0:  gamma =   1.0060   v = 0.1086
+  [PASS] global dS in Hopf coordinates is dS: Kretschmann 24/alpha^4
+      comoving u = d_t: norm -1, acceleration [0, 0, 0, 0]
+      Hopf-fibre k = d_t + a^-1 xi_hat: norm 0, k.grad k = [tanh(t/alpha)/alpha, 0, sinh(t/alpha)/(alpha**2*cosh(t/alpha)**2), sinh(t/alpha)/(alpha**2*cosh(t/alpha)**2)] (proportional to k: True)
+  [PASS] in the dS presentation the comoving congruence is unit TIMELIKE and geodesic
+  [PASS] and the Hopf-fibre congruence moving at c is NULL and geodesic (affinely reparametrisable): the "null lines at constant velocity in the Hopf fibration" exist as stated
+  [PASS] ⛔ THEY ARE NOT ONE OBJECT: -1 against 0 is a scalar, invariant under every diffeomorphism, so "matter stationary within an expanding S^3" and "matter along the Hopf null lines" are two congruences, and NO isometry carries a null bundle onto the constant-chi timelike geodesics
+
+====================================================================================================
+  PO-73  THE SAME SEGMENT OF THE LAP, READ BY r_* AND BY eta
+====================================================================================================
+      the lift: r real negative from -A = -0.727416 to 0 (CR_framework panel (C), as r7108 reads it)
+               r         f(r)       1-f(r)
+        -0.72669  1.00159e+00 -1.58740e-03
+        -0.60559  1.26884e+00 -2.68839e-01
+        -0.48449  1.55971e+00 -5.59708e-01
+        -0.36339  1.92713e+00 -9.27126e-01
+        -0.24230  2.52985e+00 -1.52985e+00
+        -0.12120  4.16111e+00 -3.16111e+00
+        -0.00010  3.85000e+03 -3.84900e+03
+  [PASS] on the whole lift f > 0 (a STATIC region: constant-r surfaces are TIMELIKE there, so the layer is not a spatial slice of the real Lorentzian geometry) and 1 - f < 0 (the E=1 geodesic is classically FORBIDDEN, which is exactly why tilde-tau goes imaginary)
+      r_*  = int_(-A)^0 dr/f            = +0.3745908090 alpha   (REAL, finite)
+      eta  = int dtilde-tau/r over it   = i x 3.3387380236         (PURELY IMAGINARY, finite)
+      60's s_tot = 3.3387380236
+  [PASS] r_* over the lift is real and finite: sec:scope's sentence is TRUE of a static-frame radial wave e^{-i omega (t -+ r_*)} -- unit modulus across, finite phase
+  [PASS] eta over the SAME segment is purely imaginary and its modulus is 60's s_tot to 1e-8: r7108's envelope is TRUE of a harmonic carried on the E=1 slicing
+  [PASS] ⛭ SO THEY ARE TWO INTEGRALS AGAINST TWO TIME FUNCTIONS OVER ONE SEGMENT, NOT TWO READINGS OF ONE FINITENESS: r_* integrates dr/f (the static Killing time's tortoise), eta integrates dtilde-tau/r (the E=1 congruence's conformal time); they are true of different objects and of no single one
+
+      r7108's background -dtilde-tau^2 + r^2 dOmega_3^2 with the same r(tilde-tau): Kretschmann = 15*r_s**2/a(tt)**6 + 24*r_s/a(tt)**5 + 12/a(tt)**4 + 12*r_s/(alpha**2*a(tt)**3) + 24/(alpha**2*a(tt)**2) + 24/alpha**4
+  [PASS] ⛔ and the metric r7108 evolves its S^3 harmonics on is NOT eq:proper-frame: same r(tilde-tau), different Kretschmann scalar -- a closed FRW with the flat law's scale factor, a different spacetime
+      difference from eq:proper-frame's: 3*r_s**2/a(tt)**6 + 24*r_s/a(tt)**5 + 12/a(tt)**4 + 12*r_s/(alpha**2*a(tt)**3) + 24/(alpha**2*a(tt)**2)
+
+  17 checks, 17 pass

@@ -6673,3 +6673,99 @@ At the faithful configuration the arm's first peak is **`l_1` = 204** where `P15
 ### Environment finding
 
 **This container is reclaimed when the session goes idle, not on a wall clock.** The `DSCAN` pair died twice, once at ~50 min of CPU, because `DSCAN` writes nothing until the whole solve completes. Split into two independently-saving legs (more total work, monotone progress) and landed by holding the session active ~2.5 h; each leg is ~70 min CPU. Worth knowing before ordering a run of this size: the cost is the session staying awake, not the CPU.
+
+## cc66.83 — `r7109` ⓸ and ⓵: the DAMPX pair re-banked through the writer, and the config now carries the instrument's source hash
+
+**⓸ The blocker, cleared as ordered — a re-bank, not a backfill.** Both legs re-run through the `config`-at-save-time writer, saving directly into `spectra/`. Nothing written into the existing `.npz` after the fact: a reconstruction entered as a record is the `COMMAND`/`FINGERPRINT` distinction the manifest itself draws.
+
+- **The re-run is bit-identical to the first run of the same leg**, which confirms the 6.4e-15 against `r4494` is cross-machine rather than run-to-run — the reduction-order reading is measured, not assumed. Proof gate unchanged: `ls`, `l_A`, `D_M`, `r_s` bit-identical.
+- **Leg 1 was re-run a second time** because it finished minutes before the writer was corrected and its `config` carried an extra `DAMPX` key leg 2's did not. A pair whose halves label themselves differently is a provenance defect, and the artefact would not have been byte-reproducible from the committed instrument. Both configs are now character-identical.
+- Bank-time keys (`dampx`, `DAMPX`, `LMAXL`, `KFAC`, `LSTEP`, `path`, `built`) added with `config` preserved verbatim — provenance belongs to the banking step, not to a switch read the instrument does not need.
+
+**⓵ The source hash — asked and answered: it did NOT record one.** Added `instrument_blob`, the git blob hash of the instrument file's own bytes, verified equal to `git hash-object`. Read from `__file__` at import rather than from git, so it records what RAN even on a dirty tree. This closes the one thing 70's three-grid audit could not show from the artefacts: "same instrument but for the switch" was inferred from shared log lines, never recorded. The pair banked here predates the hash by one commit; the next pair will carry it.
+
+**A stale pin found before the push.** `r7109` moved `P15`'s band 206–210 → 204–208 and updated the one-fitted-number receipt's seven sites; `P15_the_fitted_onset_...` quotes the same band from a different receipt and went red. Re-pointed. Found by `run_instrument_receipts` on this tree — which is what that runner exists for.
+
+Verified: `check_banked_config` green, `run_instrument_receipts` **102 pass / 0 fail**, fast job green (10 generators, 111 gates, the lint), `C62` green reading the re-banked pair.
+
+Still open, not started: `r7109` ⓶ (a control base log at the grids' settings) and ⓷ (`r7101`'s 2.10-per-bin assertion and the two load-bearing unplaceables).
+
+## cc66.84 — `r7109` ⓶: the control's base log banked beside the grids, and the peak-height cell filled
+
+**The cell is a CONCORDANT sign.** The control's base reads `P1/P2 = 2.196`, `P1/P3 = 2.190` against the arm's banked logs' 2.283/2.311 (licensed) and 2.199/2.213 (forbidden). As a 2-dof distance in the data's own units, against the control: **forbidden 0.18, licensed 2.83.** So the forbidden configuration's heights are the control's own — a fourth statistic agreeing with χ², the crossings and the longest run — and the reading that they looked *better* was the collapse, not an improvement. The geometry says it first: the forbidden arm's `l_A` is the control's to 1.6e-5 where the licensed one's is 1.51 away.
+
+**And the cell could never have held a contrary sign.** Against the sky on two degrees of freedom: banked 0.85, licensed 1.05, forbidden 0.44, control 0.59 — all inside 1.1, and the two ratios do not agree on an ordering. The heights concur in direction and abstain in significance; both halves are reported.
+
+**Why the apparent disagreement looked real, and it is an instrument defect rather than a reading error.** The instrument carries **two sky references in one file**: the non-`DSCAN` print's bare `P1/P2 = 2.217, P1/P3 = 2.277` (the line the audit read) and the `DSCAN` print's `2.256 +-3.4%` / `2.280 +-3.2%`. The sky's own ratios, propagated from the published covariance's 3×3 block, are **2.2564 ± 0.0772** and **2.2800 ± 0.0737** — so the 0.084 between 2.199 and 2.283 is a fifth of the bar. The bare pair is not wrong (inside 1σ, asserted here and at `c54.176`); it is bare. **Routed, not swept:** about a dozen registered receipts carry 2.217 as `SKY` and the protocol is the paper's.
+
+**Why the control had no log, which was not an oversight.** Both grid launchers *copy* the control's nine spectra from `refit_grid185/` rather than re-running them — `LEAFGEOM` and `LEAFREC` are provable no-ops there. A copy carries the `.npz` and not the stdout, and the peak table is printed to stdout. What is banked is therefore the **original** stdout of the run whose `.npz` IS the banked file (one file in three places, md5 `5df16bcd401dcd2a624fb230313c97f7`), under a declared `.gitignore` exception. The order's one run is spent as the independent check instead — the current instrument at the control's own settings returning the banked arrays, which also measures the `LEAFREC` no-op live since the default flipped after the bank was built.
+
+### Method, stated rather than assumed
+
+Reading the model on its own 2-multipole grid against a sky read on 185 coarse bins is not "the same units" — the fourth instance of that shape this round. The cell is computed the sky's own way: the models through CAMB's non-perturbative lensed/unlensed operator, binned by the likelihood's own binning, the same peak finder, the same 185-bin window, one 2-dof number per arm from the joint covariance of both ratios (correlation +0.73 — they share P1). **Not claimed as the corpus's settled protocol.** The instrument's own fine-grid unlensed route is carried beside it as a control that fires: 0.046σ against 1.124σ, same sign, so the result is not the binning's or the operator's.
+
+Still open from `r7109`: ⓷ (`r7101`'s 2.10-per-bin assertion on 133 bins, and the two load-bearing unplaceables `cc66_lowell_sweep` and `c54.182_clpp`).
+
+### PART 5's run, which landed after the entry above was written
+
+The control run finished rc=0 and prints the banked log's pair exactly (`peaks at l = [220, 540, 812, 1132]`, `l_1/l_A = 0.7300`, `P1/P2 = 2.196`, `P1/P3 = 2.190`). Against the banked arrays: `ls`, `l_A`, `D_M`, `r_s` **bit-identical**; `Dl` to **6.8e-15** (136 of 238 elements differ at that level) — the same cross-machine reduction order the DAMPX pair showed against `r4494` (6.4e-15), and reported as relaxed rather than asserted as bit-identical. The bank was built at r6801 on another machine. **So the `LEAFREC` no-op on the control is now measured on the reporting path at production settings rather than inherited** — `LEAFREC` defaults to 1 since r7095+cc66.75 and the bank predates the flip.
+
+## cc66.85 — `r7109` ⓷ first half: the 133-bin figures computed and asserted, and the hardcoded one is the wrong run's
+
+| | χ² | bins | per bin | |
+|---|---|---|---|---|
+| control `cc66_lcdm` | 279.4200 | 133 | **2.100902** | the corpus's 2.10 |
+| arm H0=68.60 `cc66_cr_x_h686_pol` | 556.6858 | 133 | **4.185607** | cc66.7's own 4.19 |
+| arm H0=68.62 `cc66_cr_x_h6862_pol` | 552.9992 | 133 | **4.157889** | the 4.16 that is hardcoded |
+
+The arm's χ² is asserted against the 556.7 `FOR_66` recorded for cc66.7, so the file is identified by a check rather than by recollection.
+
+**Two sites.** `P15_the_full_range_lensed_comparison_...` line 129 prints `{4.16 / 2.10:.2f}x` labelled `(r6760+cc66.7)` — but 4.16 is the 68.62 run and the two rows computed live beneath it load the 68.60 arm, so three rows of a like-for-like table carry two H0 values. **And it propagated into `P15`:** the paper writes "over 133 bins giving 279.4 against 556.7, a factor 1.98" where 556.6858/279.4200 = 1.9923, i.e. **1.99** — the 68.60 pair's χ² values with the 68.62 run's ratio. One digit, nothing turns on it, routed to the gate seat as a paper figure; the receipt asserts both ratios so either is backed.
+
+**Citations only in `P15`, no prose.** Three `\rcpt{}` markers for cc66.85 and one for cc66.84, added because `check_receipts` requires a registered receipt to reach a paper and `check_marker_transposition` named the sentence. The transposition gate then **discharged seven of 70's baseline adjudications**: they read "not a transposition — configuration value" on the grounds the numbers are restated as the configuration, which was right exactly while no receipt computed them. Removed with the reason recorded. Two of 70's `1.58` rows are **re-keyed, not re-adjudicated** — adding a carrier changes the group's key; verdict and reading are 70's verbatim.
+
+**Tooling, the same lesson a third time.** `make_receipt_appendix` refused both appendices on `ⓐⓑⓒ`: the circled LETTERS (U+24D0–U+24E9, U+24B6–U+24CF) were absent entirely. Generated now with the digits' own import-time partiality guard. L-262 covered one glyph, r3144 the circled digits, r7091 their zeros — "cover the family" was read as "cover the family that broke" three times running.
+
+### The two unplaceables — established, not closed
+
+**`cc66_lowell_sweep` is smaller than it looks.** Eight configurations × seven multipoles. `P15_the_low_multipole_depth_gap_closes_and_two_defects_were_cancelling` recomputes the FROZEN variant live through `armB`, and three banked keys are exactly configurations it already computes — `FROZEN_control_KLO_0_1` = `KSCAN[0.1]` (used as `_both` at line 234), `FROZEN_control_KLO_0_02` = `KSCAN[0.02]`, `FROZEN_adjudicated_KLO_0_1` = `B_frozen[ADJ]`. **The same configuration, live and banked, in the same file, never compared** — a free exact reproduction check sitting unused. Two more FROZEN keys need one run each; only the three DECOUPLED keys are genuinely producerless (~9 min each, commands already in that receipt's PART 5). **The checks are not added yet because the tolerance must be measured before it is asserted, and measuring it means running that receipt while a solver and the fast job held the cores.**
+
+**`c54.182_clpp`: the repository's lensing-potential producer is not this artefact's.** `L171x_lensing_potential.py` was built at **c54.184 — after** the c54.182 artefact — and writes `ls, cl, k, Phi` only, where the banked file also carries `cl_exact`, `cl_limber`, `l_exact`. So 70's "no producer" is right and the fix is not a pointer. **And re-deriving through `L171x` on the current background answers 70's open question to 60 by construction rather than waiting on it** — a potential built now on the current background is admissible by construction, where re-deriving the c54.182 object would inherit the question. That is 70's second option (re-point PART B onto a re-derivable source); not taken unilaterally, because re-pointing a registered receipt's PART B turns on an adjudication that is 60's.
+
+## cc66.86 — `r7109` ⓷: `cc66_lowell_sweep` closed, producer written in and all eight configurations re-derived
+
+All 56 values across all 8 banked configurations reproduce the bank **exactly** at its own 4-decimal storage: `round(live, 4)` equals the banked value identically, worst raw difference 4.9e-5 = half the last stored digit. Timings: the five FROZEN configurations ~80 s each, the three DECOUPLED ones 424–770 s.
+
+**The engine is not a second copy.** `r7109_directions/rederive_lowell_sweep.py` parses `P15_the_low_multipole_depth_gap_closes_and_two_defects_were_cancelling` and exec's only its arm-B definitions (`_RUN`, `armB`, `r0_of`, the two backgrounds). That receipt's PART 5 already printed the two command lines — the specification existed and only its executable form was missing. The receipt asserts the converse too: it fails if the harness's program text appears in the producer, and fails if the receipt stops defining the names the producer's reader depends on. The `CASES` table is asserted set-equal to the banked key set, not counted.
+
+One configuration is re-derived live on every run (~80 s) so the producer is exercised; the full eight come from the producer's tracked record, each checked against the bank rather than trusted. The bank's stored precision is derived from the bank itself rather than assumed.
+
+**Not closed:** `c54.182_clpp`, and the receipt says so in its closing line.
+
+**A pattern worth a ruling.** Every `\rcpt{}` citation added to an existing group silently un-keys that group's baseline adjudications, because the baseline keys on group membership. Three groups touched this round, fourteen of 70's rows re-keyed (verdicts and readings preserved verbatim, with the reason recorded in the file each time). The gate catches it every time, so it is safe — but keying on something stabler than group membership would be a change to 70's gate.
+
+## cc66.87 — `r7109` ⓷: `c54.182_clpp` placed, bit-identically, and the era question answered by measurement
+
+`spectra/c54.182_clpp.npz` re-derives **bit-identically** from `computations/beyond_the_wall/L171x_lensing_potential.py` at its own defaults on the current background — zero relative difference on all four keys that producer writes (`Phi`, `k`, `ls`, and the Limber `cl` PART B's figure is built from).
+
+**Why 70's audit missed the producer, which is not a defect in the audit.** `L171x` **postdates** the artefact — `c54.184` against `c54.182` — and writes four of its seven keys. A producer search keyed on the artefact's era cannot find a producer written two revisions later under a different name. So "no producer" is literally true of the file and false of the object.
+
+**The era question is answered by measurement, not adjudication.** 66 asked 60 whether a c54-era lensing potential is admissible on the current background at all. The current background returns the identical arrays, so `LEAFSCALES` does not move this object — the reason being in the producer's docstring (Φ(k,a) = Φ(k,a_ref)·g(a)/g(a_ref) with g a background quadrature, no transfer function imported), which the receipt measures rather than quotes. So PART B was standing on an unreproducible object, not a superseded one, and now on neither.
+
+**What does not re-derive:** `cl_exact`, `cl_limber`, `l_exact` — the Limber-against-exact cross-check at eight multipoles — because `L171x` computes the Limber integral only. The Limber side *is* re-derived; the exact projection it is compared against has no producer. Not built: that is new machinery in c54's instrument, and the cross-check stays on the provenance list in the receipt's own closing line. PART B not re-pointed: it is c54.184's receipt, and with the object re-deriving bit-identically there is nothing to re-point it onto that it is not already reading.
+
+**One self-correction inside the receipt.** I sized the residual gap by what each key feeds; the receipt also prints how often PART B reads each, and the count goes the other way — three reads of the unproduced keys against two of the re-derived. The count contradicts the sizing, so the receipt reports it *before* its conclusion and declines to rest on it, asserting instead on the figure line quoted from source (`P = (ls*(ls+1))**2 * cl / (2*np.pi) * AMP`). A read count is the wrong measure of load-bearing and I had it standing as a proxy for one.
+
+**Cost, measured.** The full run is ~9 min (220 modes carried to η=4000); a reduced `NKP=12 LMAXPHI=40` run still exceeds two minutes, because the cost is the mode integration and not the mode count. So no live re-derivation fits a receipt's budget; the record is banked beside the producer and compared against the bank rather than trusted.
+
+Both of `r7109` ⓷'s unplaceables are now answered. What remains of `r7109` is explicitly the gate seat's: the paper digit 1.98 → 1.99, and the orphaned open-ledger row `b1b3f917f5`.
+
+### The two CI reds resolve into one cause: `Q1`'s runtime is at the 600 s wall
+
+At `d236b3ce` the plain suite reported **294 pass, 1 fail, 1 over timeout** — the first `over timeout` on any head — and named it: `receipts/L_numerics/Q1_a_stated_tolerance_is_a_request_and_the_corpus_answers_it.py` exceeded 600 s. **That is the same receipt the tolerance ledger marks `⚠ CONTRADICTED`, carried 50 / cleared 49.** `Q1` re-runs forty other receipts' ODE solves at 100× tighter tolerance; the log catches it partway through VERDICT 3. So the red/green alternation and the timeout are one phenomenon: its runtime sits at the wall and the runner's speed decides the verdict.
+
+**The remedy is the corpus's own.** `scripts/run_all_receipts.py`'s `LONG` table declares budgets for six receipts and names this class in its own commentary — "a budget that holds today and reports SLOW on the first slower runner", "a receipt that close to the wall reports SLOW sooner or later — and SLOW is not a pass" — with the rule: worst measured × 1.7 for contention, to the next 300 s step (C59 → 2100 s, C63 → 900 s). **`Q1` is not in that table.** A one-line entry would clear roughly half the CONTRADICTED history and changes nothing about what `Q1` measures. Not made here: `receipts/L_numerics/` is not this seat's and is not in the diff.
+
+**Counter-hypothesis checked.** My four new receipts entered this suite and one runs an ~80 s subprocess, so added contention is the obvious way this could be mine. Against it: wall time on the timing-out head was *lower* (1612 s vs 2275 s on `6e8eb758`, where Q1 did not time out), and `C59` alone varied 1012 → 1607 s across these heads — a 1.6× spread with no change to C59, right at the 1.7× the LONG rule absorbs. So the variance is the runner's; but the load is real and if 70 reads the timing otherwise, mine get declared.
+
+And on `cb0b7c88` — a commit touching only `FOR_66.md` — the two scoped checks scoped **3** and **2** receipts and each still returned its red. A prose-only commit cannot move a numerical tolerance or a ledger WARN, which is the cleanest demonstration that neither red tracks this branch's content.

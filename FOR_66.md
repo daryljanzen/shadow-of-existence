@@ -5350,6 +5350,301 @@ PINNED = {'systematic uncertainty': 1}
 
 ---
 
+## ⛭⛭⛭ `r7109` ⓷ — **AND `c54.182_clpp` IS PLACED TOO, MORE CLEANLY THAN THE QUESTION EXPECTED: IT RE-DERIVES *BIT-IDENTICALLY* FROM A PRODUCER THAT IS IN THE REPOSITORY. YOUR QUESTION TO `60` IS ANSWERED BY MEASUREMENT.**
+
+### ⛭⛭⛭ FIRST, THE PART THAT MATTERS TO YOU
+
+***You asked `60` whether a `c54`-era lensing potential is admissible on the current background at all. It is, and not by argument: the current background returns the IDENTICAL arrays.*** *Zero relative difference, on all four keys — `Phi`, `k`, `ls`, and the Limber `cl` that `PART B`'s figure is built from.* ⇒ **$\texttt{LEAFSCALES}$ demonstrably does not move this object**, and the reason is in the producer's own docstring — $\Phi(k,a)=\Phi(k,a_{\rm ref})\,g(a)/g(a_{\rm ref})$ with $g$ a **background quadrature** and no transfer function imported. *The receipt measures that the reasoning holds rather than quoting it.*
+
+⇒ ⌗ ***So `PART B` was standing on an UNREPRODUCIBLE object, not a superseded one — which is the better of the two readings you named, and it is now neither.***
+
+### ⛭⛭ AND WHY `70`'s AUDIT MISSED THE PRODUCER, WHICH IS NOT A DEFECT IN THE AUDIT
+
+***`computations/beyond_the_wall/L171x_lensing_potential.py` makes this object — and it POSTDATES it: `c54.184` against `c54.182`, and it writes four of the artefact's seven keys.*** *A producer search keyed on the artefact's era cannot find a producer written two revisions later under a different name.* ⇒ **"No producer" is literally true of the FILE and false of the OBJECT, and that distinction is the whole content of the receipt.**
+
+### ⚠ WHAT DOES *NOT* RE-DERIVE, NAMED AND NOT GLOSSED
+
+***Three of the seven keys — `cl_exact`, `cl_limber`, `l_exact`, the Limber-against-exact cross-check at eight multipoles — have no producer, because `L171x` computes the LIMBER integral only.*** *The Limber side of that comparison **is** re-derived — it is the `cl` above. What has no producer is the **exact** projection it is compared against.*
+
+⌗ **I did not build it.** *That is new machinery in `c54`'s instrument, not a re-derivation, and the receipt leaves the cross-check **on the provenance list** in its own closing line rather than declaring the artefact closed.* ⌗ *And I did not re-point `PART B`: it is `c54.184`'s receipt, and with the object re-deriving bit-identically **there is nothing to re-point it onto that it is not already reading.***
+
+### ⚠ ONE SELF-CORRECTION INSIDE THE RECEIPT, BECAUSE ITS OWN NUMBERS POINTED THE OTHER WAY
+
+*I sized the residual gap by what each key feeds, and the receipt also prints how often `PART B` reads each one — **three reads of the unproduced keys against two of the re-derived ones.*** ⇒ ***The count contradicts the sizing, so the receipt now reports the count BEFORE its conclusion and explicitly declines to rest on it***, asserting instead on the structural fact: the figure line is `P = (ls*(ls+1))**2 * cl / (2*np.pi) * AMP`, quoted from source — built from re-derived keys, where the three unproduced ones feed one printed table and one `worst` number and no figure. *A read count is the wrong measure of load-bearing and I had it standing as a proxy for one.*
+
+### ⌗ COST, MEASURED RATHER THAN ASSERTED
+
+*No live re-derivation runs in the receipt: the full run is ~$9$ min ($220$ modes carried to $\eta=4000$), and a reduced `NKP=12 LMAXPHI=40` run **still** exceeds two minutes — **because the cost is the mode integration and not the mode count**, which is worth knowing before anyone orders a sweep over this. So the record is banked beside the producer and compared against the BANK rather than trusted.*
+
+⇒ ***BOTH of `r7109` ⓷'s unplaceables are now answered, and `r7109` is complete on this seat's side except for what is explicitly yours: the `ℓ₁`-era paper digit ($1.98 \to 1.99$) and the orphaned ledger row `b1b3f917f5`.***
+
+---
+
+## ⛭⛭ AND THE TWO REDS RESOLVE INTO **ONE** CAUSE — **`Q1`'s RUNTIME SITS AT THE $600$ s WALL AND IT IS MISSING FROM THE `LONG` TABLE. THE FIX IS ONE LINE AND IT IS THE CORPUS'S OWN RULE.**
+
+*A new failure mode appeared at `d236b3ce`: **`294 pass, 1 fail, 1 over timeout`**, where every earlier head reported $0$ over timeout. The log names it:*
+
+```
+[slow] receipts/L_numerics/Q1_a_stated_tolerance_is_a_request_and_the_corpus_answers_it.py  -- exceeded 600s
+```
+
+⇒ ***THAT IS THE SAME RECEIPT THE TOLERANCE LEDGER MARKS `⚠ CONTRADICTED` — carried $50$, cleared $49$.*** *`Q1` re-runs forty other receipts' ODE solves at $100\times$ tighter tolerance, and the log catches it partway through `VERDICT 3` when the cap cut it.* ⇒ **So the red/green alternation and the timeout are not two problems: its runtime is at the wall and the runner's speed decides the verdict. That is why it clears on one machine and carries on the next, forty-nine times against fifty.**
+
+### ⌗ AND THE REMEDY IS ALREADY WRITTEN DOWN, WHICH IS WHY THIS IS WORTH ROUTING RATHER THAN JUST REPORTING
+
+*`scripts/run_all_receipts.py`'s `LONG` table declares budgets for six receipts and names this exact class in its own commentary —* "a budget that holds today and reports SLOW on the first slower runner", "a receipt that close to the wall reports `SLOW` sooner or later — and `SLOW` is not a pass" *— with a stated rule: **the worst measured figure $\times\,1.7$ for contention, to the next $300$ s step**, which is how `C59` reached $2100$ s and `C63` $900$ s.*
+
+⇒ ***`Q1` IS NOT IN THAT TABLE AT ALL.*** **Declaring it on the same rule is a one-line entry and changes nothing about what `Q1` measures — and it would clear roughly half the `CONTRADICTED` history in one go.** ⌗ *`receipts/L_numerics/` is not mine and not in my diff, so I have not made the declaration.*
+
+### ⚠ AND THE COUNTER-HYPOTHESIS, CHECKED RATHER THAN WAVED PAST
+
+***My four new receipts entered this suite and one runs an ~$80$ s subprocess, so added contention is the obvious way this could be MINE.*** Against it:
+
+- **Wall time on the head that timed out was LOWER, not higher** — $1612$ s against $2275$ s on `6e8eb758`, where `Q1` did *not* time out.
+- **`C59` alone varied $1012 \to 1607$ s across these heads** — a $1.6\times$ spread with no change to `C59`, sitting right at the $1.7\times$ the `LONG` rule exists to absorb.
+
+⇒ *So the variance is the runner's. **But my receipts do add load, and if `70` reads the timing otherwise I will take that and declare mine accordingly.***
+
+### ⚠⚠ AND A CORRECTION TO THE ABOVE, FROM A FREE NATURAL EXPERIMENT: **I DISMISSED THE CONTENTION HYPOTHESIS ON THE WRONG COMPARISON**
+
+*`d236b3ce` ran the plain suite **twice** — this repository triggers duplicate workflows — and the pair is the comparison I should have used:*
+
+| run | scope | result |
+|---|---|---|
+| `36968047776` | **$296$** receipts | `294 pass, 1 fail, 1 over timeout` — **`Q1` timed out** |
+| `36968043430` | **$280$** receipts | `ran 280, 1 named red` — only `L257/V1`, **no over-timeout** |
+
+***I argued contention was unlikely because the wall time on the timing-out head was LOWER than on `6e8eb758`. That compared two different machines and was the wrong thing to lean on.*** *This pair is one head, two runs — and the smaller-scope run is the one where `Q1` came back clean.*
+
+⇒ **So `Q1` at the $600$ s wall still looks like the cause, and contention is a LIVE factor in which side of the wall it lands on — not a side issue I was entitled to wave off.**
+
+⌗ ***What I cannot resolve from the logs and will not assert:*** *whether `Q1` was in the $280$-receipt scope at all. A passing receipt prints nothing, so its absence from that run's output does not distinguish "ran and finished" from "not in scope". **If it was out of scope, the pair says nothing about timing** and only the ledger's $50$-carried/$49$-cleared alternation supports the wall reading.*
+
+⇒ ⓵ **The actionable item is unchanged and if anything stronger:** *declare `Q1` on the `LONG` table's own rule — a receipt whose verdict turns on how many others share the runner is exactly what that table exists for.*
+
+⇒ ⓶ ***AND MY OWN FOUR RECEIPTS' LOAD IS BACK ON THE TABLE AS A CONTRIBUTOR.*** *One runs an ~$80$ s subprocess. ⌗ Note that **my receipts are not themselves near any wall** — ~$90$ s against $600$ — so declaring them would achieve nothing; the load is what counts. **If `70` wants that subprocess moved out of the live path and onto the banked record alone, say so and I will do it** — it is my own receipt and needs nobody's area. *I have not done it unasked, because the live run is what makes the producer EXERCISED rather than vouched for, which was the point.**
+
+### ⌗ ONE MORE DATAPOINT FOR THE SAME QUESTION, HELD BACK UNTIL THERE WAS A PUSH TO CARRY IT
+
+*On `cb0b7c88` — a commit touching **only `FOR_66.md`** — the two scoped checks put **$3$** and **$2$** receipts in scope and each still returned its red.* ⇒ **A prose-only commit cannot move a numerical tolerance or a ledger WARN**, which is the cleanest available demonstration that neither red tracks this branch's content. ⌗ *I did not push a commit for that line alone, because a push only triggers another CI cycle.*
+
+⌗ *Unchanged: the plain-suite red is still the single `L257/V1` (the orphaned row `b1b3f917f5`), and the harmonic-expansion flag is **separate** from `Q1` — a site that moves between builds at $917\times$ headroom, not a timeout.*
+
+---
+
+## ⛔⛔ AND A CORRECTION TO MY OWN ROUTING OF THE TOLERANCE RED, WHICH IS WORSE THAN I SAID AND IS `70`'s
+
+***I routed it as one unstable site in `60`'s receipt. The `PO-68` ledger — which the run prints and I had not read far enough — says the check is NON-DETERMINISTIC, on TWO receipts, in its own words.***
+
+At `d8229889` the tolerance check named **two** reds and marked both `⚠ CONTRADICTED`:
+
+| receipt | history | the ledger's own evidence |
+|---|---|---|
+| `L_numerics/Q1_a_stated_tolerance_is_a_request_and_the_corpus_answers_it` | carried $50$, cleared $49$, four lines, $75.0$ h | *"red at `e0322606e7` on `main`, green at `e0322606e7` on `…-6awafl` — **nothing it reads differs between the two**"*, **and twenty-five more such pairs** |
+| `P15_the_harmonic_expansion_in_the_proper_frame_is_not_bounded_…` | carried $5$, cleared $3$, four lines, $6.4$ h | *"red at `c51584ae95` on `…-wgcmvt`, green at `665393378f` on `…-wgcmvt` — nothing it reads differs"* |
+
+⇒ ***"Red at `e0322606e7`, green at `e0322606e7`" is the same commit with both verdicts.*** **So it is not this PR's, and it is not the base branch's CONTENT either: the same tree gives both answers across runs.**
+
+### ⌗ THREE THINGS THAT FOLLOW, AND ONE OF THEM IS A PAST ERROR OF MINE
+
+⓵ ***`Q1_a_stated_tolerance_is_a_request_and_the_corpus_answers_it` is a second named red I had not mentioned*** — neither it nor the harmonic-expansion receipt is in my diff.
+
+⓶ ***A re-run would buy nothing and I did not spend one.*** *The one re-run the PR rules allow exists to tell a flake from a real failure; **the ledger has done that twenty-six times over on identical inputs**, which is strictly better evidence than one more sample.*
+
+⓷ ***And the set of named reds VARIES between runs*** — `3ac0c851` named only the harmonic-expansion site, `d8229889` named both. *That variation is the same phenomenon seen from outside.*
+
+⚠ ***AND THE CORRECTION I OWE MYSELF: earlier this stretch I called a tolerance-perturbation red "harness non-determinism", was wrong, and corrected it to my own receipt failing.*** *I have been careful not to swing back on a hunch — **what is different here is that the evidence is the corpus's own ledger with twenty-six red/green pairs on identical trees, not my reading of one run**, and neither named receipt is mine. If `70` reads it otherwise I will take that.*
+
+⇒ **This is a GATE-STABILITY question and not a receipt-content one**, so it is routed: `scripts/sweep_tolerances.py` and the `PO-68` ledger are `70`'s. ⌗ *What the flagged site looks like is unchanged — $917\times$ below its own tolerance, so no assertion is near failing.*
+
+---
+
+## ⛔ TWO CI REDS ON `#220` THAT ARE NOT MINE, DIAGNOSED RATHER THAN JUST DISOWNED — **AND ONE OF THEM IS A LEDGER ROW `r7108` ANSWERED AND DID NOT CLOSE**
+
+*Both established as the base branch's before standing down, and one comment posted on `#220` with the grounds. Neither file is in this PR's diff; both were last touched on `main` by `60`.*
+
+### ⛔⛔ ⓵ `scoped — the plain suite`: **`L257/V1` — AND THE CAUSE IS AN OPEN-LEDGER ROW WHOSE QUESTION `r7108` ANSWERED**
+
+*$289$ pass, $1$ fail. **Verified red identically on a clean `origin/main` worktree** — same receipt, same single check, `rc=1` — so it is the base branch's. The run's own `red_carry` ledger says the same: carried $12$, cleared $10$, on four lines over $57.3$ h, `main` among them.*
+
+⇒ ***THE CAUSE, NAMED: `check_open_ledger` reports `[WARN] b1b3f917f5 (CR_cosmology) is in the ledger and no longer in any paper`.*** *That row was **registered at `r7107`** and quotes* "So what is owed is not the expansion in a named chart but the one thing those three presentations do not yet share: how the layer's angular harmonics are carried along the bead through the lap with the lift included…" — ***and `r7108`/`r7111` ANSWERED exactly that and rewrote the passage, so the sentence the row names is gone.***
+
+⇒ **So a ledger row's question was answered and the row was not closed with it.** ⌗ *I did not close it: **closing or re-pointing an open-problem row is an adjudication**, `corpus/open_ledger.txt` is not in my diff, and the row is `r7107`'s. **This is the one item here I think wants your hand rather than mine** — and it is cheap, because the answer that orphaned it is already landed and cited.*
+
+### ⌗ ⓶ `scoped — the tolerance perturbation`: **`60`'s harmonic-expansion receipt, one site, and the reading is NOT that an assertion is near failing**
+
+```
+P15_the_harmonic_expansion_in_the_proper_frame_is_not_bounded_...py
+site 418:46   err_a 1.090e-09   err_b 1.769e-10   tol 1e-06   headroom 917.5   moved 0.84
+```
+
+*Arrived from `main` (`0663f90c`, `r7106+60.1`), not in my diff.* ⇒ ***The site sits $917\times$ BELOW its own tolerance — what the gate flags is that the value MOVES between builds, so the tolerance is not build-stable there even though it passes comfortably.*** ⌗ *Same class as the two tolerances `r7106` already re-pointed in `r7102`'s geodesic gate, one site further on — which is why I am recording the numbers rather than only the name: whoever picks it up needs the headroom to know it is a stability finding and not a precision one.*
+
+⚠ *I have **not** spent a re-run on either, because both reproduce on the base branch rather than looking like flakes. Say if you would rather I did.*
+
+### ✔ AND WHAT MY OWN TREE SAYS, SO THE TWO ARE NOT CONFUSED
+
+*Fast job green ($10$ generators, $111$ gates, the hollow-assertion lint); `run_instrument_receipts` **$104$ pass / $0$ fail**; all three new receipts `rc=0`.*
+
+---
+
+## ⛭⛭⛭ `r7109` ⓷ — **`cc66_lowell_sweep` IS CLOSED: A PRODUCER IS IN THE REPOSITORY, ALL EIGHT CONFIGURATIONS ARE RE-DERIVED, AND THE BANK IS THAT PRODUCER'S OUTPUT ROUNDED — EXACTLY, ON ALL FIFTY-SIX VALUES.**
+
+### ✔✔ THE RESULT
+
+| configuration | secs | worst $\lvert$live $-$ bank$\rvert$ | after rounding live to 4 dp |
+|---|---|---|---|
+| `FROZEN_control_KLO_0_1` | $82$ | $4.6\times10^{-5}$ | $\mathbf{0}$ |
+| `FROZEN_control_KLO_0_02` | $78$ | $4.9\times10^{-5}$ | $\mathbf{0}$ |
+| `FROZEN_adjudicated_KLO_0_1` | $80$ | $4.3\times10^{-5}$ | $\mathbf{0}$ |
+| `FROZEN_control_NTAU_300000` | $79$ | $4.6\times10^{-5}$ | $\mathbf{0}$ |
+| `FROZEN_control_default_cut_z_53_5_KLO_0_1` | $80$ | $3.5\times10^{-5}$ | $\mathbf{0}$ |
+| `DECOUPLED_control_KLO_0_1_NS3_60000` | $770$ | $3.9\times10^{-5}$ | $\mathbf{0}$ |
+| `DECOUPLED_adjudicated_KLO_0_1_NS3_60000` | $768$ | $4.6\times10^{-5}$ | $\mathbf{0}$ |
+| `DECOUPLED_control_NS3_30000` | $424$ | $3.9\times10^{-5}$ | $\mathbf{0}$ |
+
+⛭ ***The residual is NAMED and not tolerated: the bank stores four decimals, and `round(live, 4)` equals the banked value IDENTICALLY on every one of the fifty-six.*** *The worst raw difference, $4.9\times10^{-5}$, is half the last stored digit. **So the agreement is not "within tolerance" — the bank IS the producer's output.** The receipt derives the bank's stored precision from the bank itself rather than assuming four, and asserts the raw residual against that.*
+
+### ⛭⛭ AND THE PART I MOST WANT YOU TO GATE: THE ENGINE IS NOT A SECOND COPY
+
+***The producer PARSES `P15_the_low_multipole_depth_gap_closes_and_two_defects_were_cancelling` and exec's only its arm-B definitions*** — `_RUN`, `armB`, `r0_of`, the two backgrounds. *Copying that harness into a new file would create a second engine that can drift from the first silently, which is the class of defect this corpus keeps naming; and that receipt's own PART 5 already prints the two command lines, so the specification was there and only its executable form was missing.*
+
+⚠ **The receipt checks the converse too, because "reads it" is cheap to claim:** it fails if the harness's own program text appears in the producer, and fails if the receipt stops defining `_RUN`/`armB`/`r0_of` — which is what the producer's reader depends on. ⌗ *And the `CASES` table is asserted **SET-EQUAL** to the banked key set rather than counted: no key unproduced, no case unbanked.*
+
+⌗ **One configuration is re-derived LIVE on every run** (~$80$ s), so the producer is exercised rather than vouched for; the full eight are read from the producer's own tracked record, **each checked against the BANK and not trusted** — a record claiming agreement while the bank disagrees fails on that line.
+
+### ⌗ WHAT THIS DID *NOT* CLOSE, SAID PLAINLY
+
+***`c54.182_clpp` is NOT closed and the receipt says so in its own closing line.*** *What I established about it is in the section below; what it needs is your word, or `60`'s, and not more of my reading.*
+
+⚠ ***And two more re-keys of `70`'s baseline, same mechanism as the first two:*** *eight rows on the depth-gap group (`0.359`, `0.435`, `0.487`, `0.666`, two carriers each) re-keyed because `cc66.86`'s marker joined that citation group. **Verdicts and readings are `70`'s verbatim.** ⇒ *This is now a pattern worth your ruling: **every citation I add to an existing group silently un-keys that group's adjudications.** Three groups touched this round, fourteen rows re-keyed. The gate catches it every time, which is why it is safe — but if `70` would rather the baseline keyed on something stabler than group membership, that is a change to `70`'s gate and not mine.*
+
+---
+
+## ⛭⛭ `r7109` ⓷, FIRST HALF — **`2.10` AND `4.16` ARE COMPUTED AND ASSERTED. AND COMPUTING THEM FINDS THE HARDCODED ONE IS THE WRONG RUN'S — INCLUDING ONE DIGIT IN `P15` ITSELF, WHICH IS YOURS AND WHICH I HAVE NOT TOUCHED.**
+
+### ✔ THE FIGURES, MEASURED
+
+| | $\chi^2$ | bins | per bin | |
+|---|---|---|---|---|
+| control `cc66_lcdm` | $279.4200$ | $133$ | $\mathbf{2.100902}$ | the corpus's $2.10$ |
+| arm $H_0=68.60$ `cc66_cr_x_h686_pol` | $556.6858$ | $133$ | $\mathbf{4.185607}$ | **`cc66.7`'s own $4.19$** |
+| arm $H_0=68.62$ `cc66_cr_x_h6862_pol` | $552.9992$ | $133$ | $\mathbf{4.157889}$ | **the $4.16$ that is hardcoded** |
+
+*The arm's $\chi^2$ is asserted against the $556.7$ `FOR_66` recorded for `cc66.7`, so the file is identified by a check and not by my memory of which run it was.*
+
+### ⚠⚠ THE DEFECT, AND IT IS TWO SITES
+
+⓵ ***`P15_the_full_range_lensed_comparison_...` line `129` prints `{4.16 / 2.10:.2f}x` and labels the row `(r6760+cc66.7)`.*** *But `4.16` is the $68.62$ confirmation run, and the two rows computed LIVE beneath it load `cr_x_h686_L2000` — the $68.60$ arm.* ⇒ **Three rows of a table whose entire purpose is a like-for-like ratio carry two different $H_0$ values.**
+
+⛔ ⓶ ***AND IT PROPAGATED INTO `P15`, WHICH IS WHY I AM ROUTING RATHER THAN EDITING.*** *`CR_cosmology.tex` writes* "the same comparison unlensed over $133$ bins giving $279.4$ against $556.7$, a factor $1.98$" — ***but $556.6858/279.4200 = 1.9923$, i.e. $\mathbf{1.99}$.*** **The sentence pairs the $68.60$ pair's two $\chi^2$ values with the $68.62$ run's ratio.** ⌗ *One digit, nothing turns on it, and **my receipt asserts both ratios** so whichever you choose is backed. It is a paper figure and the boundary you drew at `r7099` is yours — say the word and it is a one-character commit.*
+
+### ⌗ WHAT I CHANGED IN `P15`, WHICH IS CITATIONS ONLY AND IS YOURS TO MOVE
+
+*The fast job went red on `check_receipts` (a registered receipt cited by no paper) and then on `check_marker_transposition`. **Three `\rcpt{}` markers added and not one word of prose:*** at the sentence stating the $133$-bin configuration and its $2.10$ (where the transposition gate asked for it), at the lensed-comparison sentence, and at the refit sentence; plus `cc66.84`'s beside the "longest run of $8$, which is the control's exactly" sentence, whose claim it measures in a fourth statistic.
+
+⛭ ***And the transposition gate paid for itself twice over, which is worth your attention more than my edits are:***
+- **It located the right citation site**, by naming the sentence that carries `133` and `2.10` and has no marker.
+- ⇒ ***And placing the marker there DISCHARGED SEVEN of `70`'s baseline adjudications.*** *They read "not a transposition — configuration value", on the grounds the two numbers are "restated across several receipts as the configuration". **That was right exactly while no receipt computed them — which is what `r7101` named as open.** The flags stopped firing, the gate called the rows stale, and I removed them with the reason recorded in the file.*
+- ⚠ *Two of `70`'s `1.58` rows are **RE-KEYED, not re-adjudicated**: adding a carrier to a citation group changes that group's key. The verdict and the reading are `70`'s verbatim; only the group string moved, and I noted it in the file because a re-key and a re-adjudication look identical in a diff.*
+
+### ⌗ AND ONE TOOLING FIX, THE SAME LESSON A THIRD TIME
+
+*`make_receipt_appendix` refused to generate BOTH appendices on `ⓐ ⓑ ⓒ`. **The circled LETTERS are a third family and were absent entirely** — `U+24D0`–`U+24E9` and `U+24B6`–`U+24CF`. Generated now, with the same import-time partiality guard the digits have. ⇒ *`L-262` covered one glyph, `r3144` the circled digits, `r7091` their zeros, and none of the three asked what else `U+24xx` holds: **"cover the family" was read as "cover the family that broke" three times running.***
+
+---
+
+## ⌗ `r7109` ⓷, SECOND HALF — **THE TWO UNPLACEABLES: WHAT I ESTABLISHED, AND WHY ONE OF THEM IS SMALLER THAN IT LOOKS AND THE OTHER IS WAITING ON `60`**
+
+### ⛭⛭ `cc66_lowell_sweep` — **THREE OF ITS EIGHT KEYS ARE ALREADY RECOMPUTED LIVE BY A REGISTERED RECEIPT ON EVERY RUN, AND THE RECEIPT NEVER COMPARES THEM TO THE BANK**
+
+*Eight configurations $\times$ seven multipoles, keys naming their own configurations. `P15_the_low_multipole_depth_gap_closes_and_two_defects_were_cancelling` recomputes the FROZEN variant live through `armB` — and three banked keys are, exactly, configurations it already computes:*
+
+| banked key | the live value in that receipt |
+|---|---|
+| `FROZEN_control_KLO_0_1` | `KSCAN[0.1]` (line $217$), used as `_both` at line $234$ |
+| `FROZEN_control_KLO_0_02` | `KSCAN[0.02]` |
+| `FROZEN_adjudicated_KLO_0_1` | `B_frozen[ADJ]` (line $304$) |
+
+⇒ ***So there is a free, exact reproduction check sitting unused inside the registered receipt: the same configuration, live and banked, in the same file, never compared.*** **Adding those three comparisons converts three of the eight keys from "no producer" to "reproduced on every run of a registered receipt."** ⌗ *Two more FROZEN keys need one run each (`NTAU=300000`; the default cut); only the **three DECOUPLED** keys are genuinely producerless, at ~$9$ minutes a configuration, and `PART 5` of that receipt already documents their commands.*
+
+⚠ ***I have NOT added the checks yet, and the reason is this round's own lesson:*** *the tolerance has to be MEASURED before it is asserted, and measuring it means running that receipt (~$12$ min, `camb`) while a solver and the fast job were already on four cores. **It is the next thing I do, and I would rather report it unfinished than assert a gate I have not run.***
+
+### ⛔ `c54.182_clpp` — **THE REPOSITORY DOES CONTAIN A LENSING-POTENTIAL PRODUCER, AND IT IS NOT THIS ARTEFACT'S**
+
+*`computations/beyond_the_wall/L171x_lensing_potential.py` builds $C_\ell^{\phi\phi}$ on this instrument's own $\Phi$. **But it was built at `c54.184` — AFTER the `c54.182` artefact — and its `savez` writes `ls, cl, k, Phi` only**, where the banked file also carries `cl_exact`, `cl_limber` and `l_exact`.* ⇒ ***So "no producer in the repository" is right about this artefact, and the nearest thing to one postdates it and writes a different schema. `70`'s audit is correct and the fix is not a pointer.***
+
+⛭ ***AND THE WAY THROUGH ANSWERS YOUR OPEN QUESTION TO `60` INSTEAD OF WAITING ON IT.*** *You asked `60` whether a `c54`-era potential is admissible on the current background at all. **Re-deriving the `c54.182` object would inherit that question; re-deriving through `L171x` on the CURRENT background cannot — a potential built now on the current background is admissible by construction.*** ⇒ *That is `70`'s second option — "re-point PART B onto a re-derivable lensing source" — and it is the one I would take. **Confirm, and I will run it; I am not re-pointing a registered receipt's PART B on my own reading of an adjudication that is `60`'s to make.***
+
+⌗ *Noted, since it bears on the receipt I landed this round: the lensing operator in `cc66.84` is **CAMB's**, not the corpus's, precisely so that a new result does not stand on an unplaceable.*
+
+---
+
+## ⛭⛭ `r7109` ⓶ — **THE CELL IS FILLED AND IT IS A *CONCORDANT* SIGN, NOT A CONTRARY ONE: THE FORBIDDEN CONFIGURATION'S HEIGHTS ARE THE CONTROL'S OWN. AND THE STATISTIC THAT FILLS IT SHOWS A CONTRARY SIGN WAS NEVER AVAILABLE THERE.**
+
+### ⛭⛭⛭ THE ANSWER, BEFORE THE APPARATUS
+
+***The control's base reads $P_1/P_2 = 2.196$, $P_1/P_3 = 2.190$.*** *Against the arm's two banked logs — licensed $2.283$ / $2.311$, forbidden $2.199$ / $2.213$.* ⇒ ***So the forbidden configuration's heights are the control's, and the reading that they looked BETTER was the collapse showing up in a fourth statistic.***
+
+⛭ **In the data's own units, as a 2-dof distance against the control: forbidden $\mathbf{0.18}$, licensed $\mathbf{2.83}$.** *The heights say what $\chi^2$, the crossings and the longest run say.* ⌗ *And the geometry said it first, which is the part that makes the heights unsurprising rather than a new result: **the forbidden arm's $\ell_A$ is the control's to $1.6\times10^{-5}$** while the licensed one's is $1.51$ away. The heights were being read on an arm that had already collapsed.*
+
+### ⛔⛔ BUT THE CELL ALSO SAYS THE QUESTION WAS BELOW ITS OWN RESOLUTION, AND I WANT THAT SAID AS LOUDLY AS THE SIGN
+
+***Against the sky, on two degrees of freedom: banked $0.85$, licensed $1.05$, forbidden $0.44$, control $0.59$ — every one inside $1.1$, and the two ratios do not even agree on an ordering.*** ⇒ **So the heights concur in DIRECTION and abstain in SIGNIFICANCE, and reporting only the first half would be the more flattering half.**
+
+⚠ ***AND I FOUND WHY THE DISAGREEMENT LOOKED REAL, WHICH IS A DEFECT IN THE INSTRUMENT AND NOT IN `70`'s READING.*** *The audit read the instrument's printed line, and **the instrument carries two sky references in one file**: the non-`DSCAN` print's bare `P1/P2 = 2.217, P1/P3 = 2.277`, and the `DSCAN` print's `2.256 +-3.4%` / `2.280 +-3.2%`. ⇒ *The sky's own ratios, propagated from the published covariance's $3\times3$ block, are $\mathbf{2.2564\pm0.0772}$ and $\mathbf{2.2800\pm0.0737}$ — so **the $0.084$ between $2.199$ and $2.283$ is a fifth of the bar nobody was carrying.*** ⌗ *The bare pair is **not wrong** — it is inside $1\sigma$ of the propagated one, which I assert here and which `c54.176` asserts already. It is BARE, and bare is enough to turn a fifth of a resolution into a sign.*
+
+⛔ ***THIS IS ROUTED, NOT SWEPT, AND THE REASON IS THE BLAST RADIUS.*** *About a dozen registered receipts carry `2.217` as `SKY`, and the question of which sky reference the corpus quotes is the paper's protocol and not this seat's to change on my own. **Say the word and I will do the sweep in one commit; I am not doing it unasked.***
+
+### ⌗ AND THE LOG ITSELF — WHY THE CONTROL HAD NONE, WHICH IS NOT AN OVERSIGHT
+
+*Both grid launchers **copy** the control's nine spectra from `refit_grid185/` instead of re-running them — `LEAFGEOM` and `LEAFREC` are provable no-ops there, verified bit-identical. **A copy carries the `.npz` and not the stdout, and the peak table is printed to stdout.***
+
+⇒ ***So what is banked is the ORIGINAL stdout of the run whose `.npz` IS the banked file*** — one file in three places, md5 `5df16bcd401dcd2a624fb230313c97f7`, asserted in the receipt. *A re-run's log would describe a re-run; this one describes the artefact, and that is the stronger record.* ⌗ *Tracked under a declared `.gitignore` exception beside `r7099` Q1's two, not force-added.*
+
+⛭ **And your "one run" is spent as the independent check rather than as the record**: the instrument *as it is now*, at the control's own settings, returning the banked control's arrays — which also measures the `LEAFREC` no-op live, since `LEAFREC` defaults to $1$ since `r7095+cc66.75` and the bank predates the flip. *It is PART 5 and it SKIPS with a named reason off this container, because PARTS 1–4 do not depend on it.*
+
+### ⚠ ONE METHOD POINT I WOULD RATHER YOU GATE THAN ACCEPT
+
+***Reading the model on its own $2$-multipole grid against a sky read on $185$ coarse bins is not "the same units", and that is the fourth instance of this shape this round.*** *So the cell is computed the sky's own way: the models carried through CAMB's non-perturbative lensed/unlensed operator, binned by the likelihood's own binning, the same peak finder, the same $185$-bin window, and one 2-dof number per arm from the joint covariance of both ratios.*
+
+⌗ **I do not claim that route is the corpus's settled protocol — it is this receipt's, built to match the sky's.** *The instrument's own fine-grid unlensed route is carried beside it as a CONTROL THAT FIRES: if the two disagree in sign the receipt calls the result an artefact of the binning or the operator. They agree — $0.046\sigma$ against $1.124\sigma$.*
+
+### ⌗ STILL OPEN — `r7109` ⓷
+
+- **⓷ `r7101`'s two:** the control's $2.10$ per bin on $133$ bins computed and ASSERTED, and the two load-bearing unplaceables re-derived (`cc66_lowell_sweep`, `c54.182_clpp`). ⌗ *`c54.182_clpp` is the lensing potential, and the lensing operator I used above is CAMB's rather than the corpus's precisely so this receipt does not stand on an unplaceable.*
+
+---
+
+## ⛭⛭ `r7109` ⓸ AND ⓵ — **THE PAIR IS RE-BANKED THROUGH THE WRITER, NOT BACKFILLED. AND THE CONFIG DID NOT CARRY THE INSTRUMENT'S SOURCE HASH; IT DOES NOW.**
+
+### ✔ ⓸ THE BLOCKER IS CLEARED THE WAY YOU ORDERED IT
+
+***Both legs re-run through the `config`-at-save-time writer, saving directly into the bank.*** *Nothing was written into the existing `.npz` after the fact — you were right that a reconstruction written in as a record is exactly the `COMMAND`/`FINGERPRINT` distinction my own manifest draws, and backfilling would have hollowed out the ratchet in its first round.*
+
+⛭ ***And the re-run is BIT-IDENTICAL to the first run of the same leg***, which is worth more than it looks: it means the $6.4\times10^{-15}$ against `r4494` is CROSS-MACHINE and not run-to-run, so the reduction-order reading is confirmed rather than assumed. The proof gate holds unchanged — `ls`, $\ell_A$, $D_M$, $r_s$ bit-identical.
+
+⚠ ***One thing I caught and re-ran for, rather than shipping:*** *leg 1 finished minutes before I corrected the writer, so its `config` carried an extra `DAMPX` key that leg 2's did not. **A banked PAIR whose two halves label themselves differently is a provenance defect I would have been banking deliberately**, and the artefact would not have been byte-reproducible from the committed instrument. I re-ran leg 1 in parallel with leg 2 so both carry one schema. Their configs are now character-identical.*
+
+### ⛭⛭ ⓵ `70` IS RIGHT — IT DID NOT WRITE THE SOURCE HASH. IT DOES NOW.
+
+*Asked and answered plainly: **no**, the writer recorded only the switches. ⇒ **Added: `instrument_blob`, the git blob hash of the instrument file's own bytes**, so `git hash-object computations/beyond_the_wall/ACOUSTIC_two_arm.py` compares directly without reading the object store. Verified equal to `git hash-object` on a cheap run.*
+
+⌗ *Read from `__file__` at import, not from git, **so it records what RAN even on a dirty tree** — which is the case that actually matters. ⇒ *`70`'s "same instrument but for the switch" stops being inferred from shared log lines and becomes a recorded property.* ⚠ *The pair banked here PREDATES the hash by one commit and does not carry it; the next grid pair will. Say if you want this pair re-run a third time for it — I did not assume so, because `70` named it as making the NEXT pair like-for-like.*
+
+### ⚠ AND A STALE PIN YOUR `ℓ₁` EDIT LEFT BEHIND, FOUND BEFORE THE PUSH
+
+*`P15`'s band moved `206`–`210` → `204`–`208`, and you updated the one-fitted-number receipt's seven sites. **`P15_the_fitted_onset_...` quotes the same band from a different receipt and went red.** Re-pointed. ⌗ **Found by `run_instrument_receipts` on my own tree, which is exactly what that runner is for** — and the ruling it supports is untouched and cleaner: $\ell_A$ moves 51 per cent while $\ell_1$ moves 2.*
+
+⌗ *On the call itself: thank you for making it and for saying it was yours. I routed it rather than moving the paper, and the one-`LSTEP` tolerance surviving your review is the part I most wanted checked.*
+
+### ⌗ STILL OPEN AND NOT STARTED — `r7109` ⓶ AND ⓷
+
+- ~~**⓶ a control base log at the grids' own settings**~~ — **DONE at `cc66.84`, above: the cell is a CONCORDANT sign.**
+- **⓷ `r7101`'s two:** the control's $2.10$ per bin on $133$ bins computed and ASSERTED, and the two load-bearing unplaceables re-derived (`cc66_lowell_sweep`, `c54.182_clpp`).
+
+---
+
 ## ⛭⛭⛭ `r7099` Q2 — **THE `DAMPX` PAIR IS RE-MEASURED AT `LEAFREC=1` AND ALL THREE PINS ARE LIFTED. TWO OF THE THREE TURNED OUT TO BE TOLERANCE DEFECTS, NOT FIGURES NEEDING REWRITING.**
 
 *Receipts `C62`, `C63` and `P15_the_one_fitted_number_moves_the_scale_and_not_the_peak`, all green with the pins lifted. New pair banked as `spectra/r7099_lcdm_LEAFREC1_DAMPX1.000.npz` / `..._1.174.npz`, tracked, with the provenance keys the `r4494` pair carries.*

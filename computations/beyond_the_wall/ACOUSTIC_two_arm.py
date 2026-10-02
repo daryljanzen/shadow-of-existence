@@ -687,6 +687,16 @@ _DAMPX = float(os.environ.get('DAMPX', 1.0))
 #   ⌗ *`DAMPX`'s provenance is not lost: `DSAVE` writes its own `dampx` key per leg, and a single-DAMPX
 #   save records it at BANK time as a separate key -- provenance belongs to the banking step, not to a
 #   switch read the instrument does not otherwise need.*
+def _instrument_blob():
+    """The git blob hash of this file as it is on disk -- what RAN, not what is committed."""
+    import hashlib
+    try:
+        with open(os.path.abspath(__file__), 'rb') as _fh:
+            _b = _fh.read()
+        return hashlib.sha1(b'blob %d\0' % len(_b) + _b).hexdigest()
+    except OSError:
+        return None
+
 _SWITCH_SNAPSHOT = {
     'ARM': ARM,
     'LEAFSCALES': bool(LEAFSCALES),
@@ -698,6 +708,17 @@ _SWITCH_SNAPSHOT = {
     'KFAC': float(KFAC),
     'LMAXL': float(LMAXL),
     'instrument': 'ACOUSTIC_two_arm.py',
+    # ⛭⛭⛭ ** THE INSTRUMENT'S OWN SOURCE HASH, ADDED AT r7109 ⓵ AT `70`'s REQUEST. **
+    # *`70`'s three-grid audit cleared the comparison on all three counts and named exactly one thing
+    # it could NOT show from the artefacts: **"same instrument but for the switch" was INFERRED from
+    # every shared log line agreeing, never recorded** -- neither grid's stamp carried this, and the
+    # two grids came from two revisions.*
+    #   ⇒ *** The blob hash of this file's own bytes, so a grid PAIR is like-for-like BY CONSTRUCTION
+    #     rather than by inference.  It is the git blob hash (`sha1` over `blob <len>\0` + bytes), so
+    #     it can be compared against `git rev-parse HEAD:<path>` without reading the object store. ***
+    #   ⌗ *Read from `__file__` at import, which is the file actually executing -- not from git, so it
+    #   records what RAN even on a dirty tree, which is the case that matters.*
+    'instrument_blob': _instrument_blob(),
 }
 
 

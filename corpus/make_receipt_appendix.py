@@ -113,6 +113,22 @@ _partial0 = [c for c in '⓪⓿①⓵' if c not in _CIRCLED]
 if _partial0:
     raise SystemExit('make_receipt_appendix: the circled families are PARTIAL AT ZERO -- '
                      + repr(_partial0))
+# ⛔⛭ EXTENDED r7109 (cc66): ** AND A THIRD CIRCLED FAMILY, ABSENT ENTIRELY: THE CIRCLED LETTERS. **
+# *`ⓐ`..`ⓩ` at `U+24D0`..`U+24E9` and `Ⓐ`..`Ⓩ` at `U+24B6`..`U+24CF`.  An INDEX row labelling its
+# three findings `ⓐ ⓑ ⓒ` -- which this revision's does, for a cell that is a sign, an abstention and
+# a comparison -- refused to generate BOTH appendices, exactly as `⓺ᶜ`, `⓪` and the script capitals
+# did before it.*
+#   ⇒ *** THE LESSON IS NOW ON ITS THIRD APPLICATION AND IT WAS STILL WRITTEN NARROWLY EACH TIME:
+#       `L-262` covered one glyph, `r3144` covered the circled DIGITS, `r7091` covered their ZEROS,
+#       and none of the three asked what else `U+24xx` holds.  "Cover the family" was read as "cover
+#       the family that broke" three times running. ***  ⌗ *A letter label is not a quirk either: it
+#       is the form for findings that are not ORDERED, where `⓵ ⓶ ⓷` would imply a sequence.*
+_CIRCLED.update({chr(0x24D0 + _i): '(' + chr(0x61 + _i) + ')' for _i in range(26)})   # ⓐ..ⓩ
+_CIRCLED.update({chr(0x24B6 + _i): '(' + chr(0x41 + _i) + ')' for _i in range(26)})   # Ⓐ..Ⓩ
+_partialL = [c for c in 'ⓐⓩⒶⓏ' if c not in _CIRCLED]
+if _partialL:
+    raise SystemExit('make_receipt_appendix: the circled LETTER families are PARTIAL -- '
+                     + repr(_partialL))
 _SUPER = {'\u1d43': r'\textsuperscript{a}', '\u1d47': r'\textsuperscript{b}',
           '\u1d9c': r'\textsuperscript{c}', '\u1d48': r'\textsuperscript{d}',
           '\u1d49': r'\textsuperscript{e}', '\u1da0': r'\textsuperscript{f}',

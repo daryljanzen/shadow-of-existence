@@ -1,0 +1,32 @@
+  diffusion: r_D at the visibility peak = 7.10 Mpc  ->  l_D = 1952
+
+==============================================================================
+  ACOUSTIC TWO-ARM INSTRUMENT — ARM=lcdm   DRIVING=ON
+==============================================================================
+  rate: radiation-INCLUDED   H0=67.4  Om=0.315
+  z_start = 3e+07   eta_start = 0.016   eta_rec = 280.7   eta_end = 1893
+  D_M = 13865 Mpc   r_s = 144.53 Mpc   l_A = pi D/r_s = 301.4   modes = 2547
+  z_eq(leaf) = 3447.1   Omega_r = 9.135415e-05   rho_r/rho_m at the onset = 8700.40
+
+  projection reach: k_max = 4000/D_M against a reported l_max = 2000 -> ratio 2.00
+  projection sampling: dk = 1.130e-04, Bessel period 2pi/D = 4.532e-04, points per period = 4.0
+  hierarchy: LG = 24, handover at tau' = 3.0/Mpc (eta = 138.4), where 4.2% of 1/k_D^2 has accumulated
+  so the envelope carries 4.2% of the damping and the multipoles carry 95.8% of it
+    modes 0-250 done
+    modes 250-500 done
+    modes 500-750 done
+    modes 750-1000 done
+    modes 1000-1250 done
+    modes 1250-1500 done
+    modes 1500-1750 done
+    modes 1750-2000 done
+    modes 2000-2250 done
+    modes 2250-2500 done
+    modes 2500-2547 done
+  saved 238 multipoles to /tmp/n66/refit185/lcdm_base.npz
+  --------------------------------------------------------------------------
+  PEAKS (line-of-sight, HIERARCHY)   l_A = 301.4
+  --------------------------------------------------------------------------
+    peaks at l = [220, 540, 812, 1132]
+    l_1/l_A = 0.7300   P1/P2 = 2.196   P1/P3 = 2.190
+    sky: 220.6 / 538.1 / 809.8,  l_1/l_A = 0.7312,  P1/P2 = 2.217,  P1/P3 = 2.277
