@@ -173,9 +173,24 @@ check("every floor this table QUOTES is literally in the receipt that derived it
       "0.6 per cent (cc66.40); 0.59 (cc66.61); 0.0059 / 0.0114 (cc66.46); 1.363 and 0.02 sigma (cc66.58)")
 REFIT = os.path.join(ROOT, 'computations', 'beyond_the_wall', 'refit_grid', 'fit.py')
 refit_src = open(REFIT, encoding='utf-8').read() if os.path.exists(REFIT) else ''
-check("⛔ THE REFIT'S BLANK IS FORCED, NOT CHOSEN: its fit reads inputs under /tmp/n66 that are not in the "
-      "repository, so its floor cannot be re-derived here",
-      '/tmp/n66' in refit_src and not os.path.exists('/tmp/n66'), "fit.py reads /tmp/n66; absent")
+# ⛔⛭ FIXED AT r7099+cc66.82.  ** THE SECOND CLAUSE WAS `not os.path.exists('/tmp/n66')` -- a claim
+# ** about the RUNNING MACHINE'S FILESYSTEM standing in for a claim about the REPOSITORY. **
+# *`/tmp/n66` is this node's own scratch directory, so the check passed in CI (where it does not exist)
+# and FAILED on `cc66`'s own machine whenever a run was in flight -- which is where it was first run,
+# by `r7099`'s new `run_instrument_receipts.sh`.*
+#   ⇒ *** The claim is "its inputs are not in the repository, so its floor cannot be re-derived here."
+#     That is a property of the PATHS, not of what happens to be on disk: an absolute path under
+#     `/tmp` cannot be a repository file, by construction.  Tested that way now, so it says the same
+#     thing on every machine. ***
+#   ⌗ *Fourth instance this round of a check asserting something adjacent to its subject rather than its
+#   subject -- after `C41b`'s literal `8.2\%`, and `C63`'s and the one-fitted-number receipt's demands
+#   for exact equality of a peak on a coarse grid.*
+_tmp_inputs = re.findall(r"/tmp/[A-Za-z0-9_./-]+", refit_src)
+check("⛔ THE REFIT'S BLANK IS FORCED, NOT CHOSEN: its fit reads inputs under /tmp that CANNOT be "
+      "repository files -- an absolute path outside the tree -- so its floor cannot be re-derived here",
+      bool(_tmp_inputs) and all(not p.startswith(ROOT) for p in _tmp_inputs),
+      f"fit.py reads {len(_tmp_inputs)} path(s) under /tmp, none inside the repository: "
+      f"{sorted(set(_tmp_inputs))[:3]}")
 # ⚠ found by this gate's first version, which read "no covariance anywhere" and FAILED: the contrast receipt
 #   does read COV_TT -- once, as `FISH`, the weight of the amplitude fit `fit4` that puts each spectrum on the
 #   data's scale.  That is a FITTING WEIGHT, not a noise model: nothing is drawn from it and nothing is
