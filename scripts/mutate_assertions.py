@@ -74,24 +74,29 @@ LOCATOR = re.compile(r'\b(argmax|argmin|nanargmax|nanargmin|argsort|searchsorted
 
 
 # ===================================================================================== the mutations
-def _tilt_array(a):
+def _tilt_array(a, tag=''):
     import numpy as np
     if not isinstance(a, np.ndarray) or a.dtype.kind not in 'fc' or a.size == 0:
         return a
     if a.ndim == 0:
-        return a * (1 + DELTA)
+        # ⛭ a SCALAR gets its own factor, keyed on where it came from: a uniform 1+DELTA cancels in every ratio
+        #   of two banked scalars (r7113+70.1's first run flagged `max(RS)/min(RS)` DETACHED for exactly that)
+        import zlib
+        u = (zlib.crc32(tag.encode()) % 2001) / 1000.0 - 1.0
+        return a * (1 + DELTA * u)
     u = np.linspace(-1.0, 1.0, a.shape[-1]) if a.shape[-1] > 1 else np.ones(1)
     return a * (1 + DELTA * u)
 
 
 class _Npz:
     """np.load's lazy archive, with every float member tilted on access"""
-    def __init__(self, z):
+    def __init__(self, z, path=''):
         self._z = z
         self.files = z.files
+        self._p = str(path)
 
     def __getitem__(self, k):
-        return _tilt_array(self._z[k])
+        return _tilt_array(self._z[k], f'{self._p}::{k}')
 
     def __contains__(self, k):
         return k in self._z.files
@@ -147,9 +152,9 @@ def install_tilt():
         r = _load(*a, **k)
         MUT['reads'] += 1
         if isinstance(r, np.ndarray):
-            return _tilt_array(r)
+            return _tilt_array(r, str(a[0]) if a else '')
         if hasattr(r, 'files'):
-            return _Npz(r)
+            return _Npz(r, a[0] if a else '')
         return r
 
     np.load = load
@@ -177,7 +182,11 @@ def install_regrid():
             return kw
         env = dict(kw.get('env') or os.environ)
         step = int(env.get('LSTEP', '8'))
-        env['LSTEP'] = str(step - 1 if step > 1 else step + 1)
+        # ⛭ DIRECTION.  A pinned grid value v stays on the moved grid only if (v - 100) divides by the new step,
+        #   so either direction alone can miss: r7113+70.1's first recall run took P15_the_one_fitted_number's
+        #   l_1 = 206 from step 2 to 1 and 206 stayed on the grid.  `--regrid-dir up` takes step + 1.
+        up = os.environ.get('MUTATE_REGRID_DIR') == 'up' or step == 1
+        env['LSTEP'] = str(step + 1 if up else step - 1)
         MUT['calls'] += 1
         return dict(kw, env=env)
 
@@ -311,12 +320,20 @@ def judge(root, out, mode):
                 if not a['vals'] or a['pass'] != a['n'] or b['pass'] != b['n']:
                     continue
                 lit = all(isinstance(x, ast.Constant) for x in [node.left] + list(node.comparators))
+                seg = ast.get_source_segment(src, node) or ''
                 if _vals_equal(a['vals'], b['vals']):
                     if lit:
                         continue                      # a literal against a literal is the static class
+                    # ⛭ INVARIANT BY DESIGN, read off the first population run (r7113+70.1: 14 of 31 DETACHED):
+                    #   an exactness check (`== 0.0`, or a tolerance at or below 1e-8 -- an identity or a no-op
+                    #   that two paths agree) and a sign agreement are SUPPOSED not to move.  Counted, not flagged.
+                    tol = a['vals'][0][1] if a['op'] in ('Lt', 'LtE') else None
+                    zero = any(ST.num(x) == 0.0 for x in [node.left] + list(node.comparators))
+                    if re.search(r'\bsign\s*\(', seg) or zero or (tol is not None and abs(tol) <= 1e-8):
+                        rows.append(dict(receipt=rel, site=sid, kind='INVARIANT', cls=k, text=seg[:140]))
+                        continue
                     if _floaty(a) or _fed_by_locator(node, tree, src):
-                        rows.append(dict(receipt=rel, site=sid, kind='DETACHED', cls=k,
-                                         text=(ast.get_source_segment(src, node) or '')[:140]))
+                        rows.append(dict(receipt=rel, site=sid, kind='DETACHED', cls=k, text=seg[:140]))
                 elif _floaty(a):
                     rows.append(dict(receipt=rel, site=sid, kind='WIDE', cls=k,
                                      text=(ast.get_source_segment(src, node) or '')[:140]))
@@ -532,6 +549,8 @@ def main():
     ap.add_argument('--regrid', nargs=2, metavar=('LIST', 'OUT'))
     ap.add_argument('--prose', action='store_true')
     ap.add_argument('--files', nargs='*', help='with --prose: only these receipt files')
+    ap.add_argument('--regrid-dir', choices=('down', 'up'), default='down',
+                    help='move LSTEP down by one (default) or up by one')
     ap.add_argument('--jobs', type=int, default=4)
     ap.add_argument('--budget', type=int, default=1800)
     ap.add_argument('--seed', action='store_true')
@@ -540,6 +559,7 @@ def main():
         print('\n  mutate_assertions --seed: does each operator flag exactly its planted defects?\n')
         return seed()
     rc = 0
+    os.environ['MUTATE_REGRID_DIR'] = a.regrid_dir      # read by the mutated child, which inherits it
     if a.prose:
         rows = prose(a.root, [os.path.abspath(f) for f in a.files] if a.files else None)
         report(rows, [], 'PROSE-PIN')
