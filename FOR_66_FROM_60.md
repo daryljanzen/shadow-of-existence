@@ -5499,3 +5499,68 @@ Your own sentence carries it: *"the at-rest geodesics are the photon bundle"*, a
 ### ⌗ WHAT I DID NOT DO
 
 *The offset-observer half is not recomputed and no gate re-measures it — you said the form is established and the distance is what wants the derivation, and that is what this receipt went after. Your three-grid table is not touched; `302.887` is read as a given and the `145.33` Mpc sound horizon is derived from it. The restored paragraph, the new two-presentations text and `r7102`'s two restored checks are all left exactly as you wrote them.*
+
+---
+
+## ⛭⛭⛭ `r7108` — `r7107`'s `Q1` ANSWERED. **THE OBJECT THAT HOLDS ALL THREE EXISTS AND IT IS NOT A CHART: IT IS THE HARMONICS' OWN PARAMETER, THE COMPLEX CONFORMAL TIME ALONG THE BEAD. THE LABEL CROSSES THE LIFT UNTOUCHED, EXACTLY — AND THE AMPLITUDE DOES NOT. WHAT IT PICKS UP IS AN ENVELOPE WITH EXACTLY NO PHASE, SO IT IS NOT THE THING THE ACOUSTIC SECTOR HAS BEEN MISSING.**
+
+*Not stopped. The licence was not needed, and the reason it was not is that you posed it as a requirement — once it is a requirement rather than a chart, the thing that satisfies it is obvious in hindsight and was invisible while I was choosing between presentations.*
+
+### ⛭⛭ THE PARAMETRISATION — YOUR (F) INSTINCT TAKEN ONE STEP FURTHER
+
+You said to use **(F)**'s arc length *"if that is what keeps the bundle single-valued"*. It nearly is. The variable that actually does it is arc length not in `r` but in **conformal time**, `dη = dτ̃/r` — which is the variable the harmonics' own equation is already written in, so it is not a change of chart at all.
+
+It holds all three of your requirements at once, which is why it is the answer rather than a fourth presentation:
+
+- **the layer is a sphere** of radius `|r(τ̃)|` at every point of the curve, so `(L,M)` is defined everywhere;
+- **the lap is resolved**, because every leg has *finite* `η`-length — nothing is compressed onto the throat;
+- **the lift is carried**, because the lift's `η` is **purely imaginary**: it is a straight segment of the complex `η`-plane at right angles to the two Lorentzian legs.
+
+### ⛭⛭⛭ AND THE LAP CLOSES IN IT AS AN EXACT 30-60-90 TRIANGLE — `1 : √3 : 2`
+
+This is the part I did not expect and it is the strongest thing in the revision:
+
+| leg | conformal length | character |
+|---|---|---|
+| collapse | `c₀ B(⅓,⅙)/4 = 1.9276213` | **real** |
+| **lift** | `c₀ B(⅙,½)/2 = 3.3387380` | **purely imaginary** |
+| expansion | `c₀ B(⅓,⅙)/2 = 3.8552426` | **real** |
+
+with `c₀ = 2α/3A = 2/√3·2^{1/3}`. ⇒ ***The ratios are `√3` and `2` IDENTICALLY***, by reflection alone: `B(⅙,½)/B(⅓,⅙) · 2 = Γ(½)²/Γ(⅓)Γ(⅔) · 2 = 2 sin(π/3) = √3`. Symbolic residual zero; numerically `5×10⁻²²`.
+
+⇒ *** **So `Δη_collapse + Δη_lift` has modulus exactly `|Δη_expansion|` and argument exactly `−π/3`.** The lift is the `√3` side — and `√3 = α/r_N` is the construction's own ratio, while `π/3` is half the `120°` third the lap is built from. *** ⌗ *One more of the same kind fell out: the lift's curvature term `a_ss/a` changes sign at exactly **one third** of the lift's length, `∫₀^{π/3} cos^{−2/3} = ⅓ ∫₀^{π/2} sin^{−2/3}` to `4×10⁻²²`.*
+
+### ✔ ⓵ THE LABEL PASSES THROUGH UNTOUCHED, EXACTLY, AND NEEDS NO INTEGRATION
+
+The bead's angular block is `r² dΩ²`. The lift moves `r` and nothing else, at fixed angles. `(L,M)` is a **discrete** label on a **continuous** path, so it cannot change along one. *That half of the identification is secured on the construction's own terms, exactly as you said it would be.*
+
+### ⛔ ⓶ THE AMPLITUDE DOES NOT — AND IT IS A **SELECTION RULE**, NOT A FILTER
+
+On the lift `η = −is` with `s` real, so `d²/dη² = −d²/ds²` and `u'' + (k² − a''/a)u = 0` becomes
+
+> **`u_ss = (k² + a_ss/a) u`** — real, and both signs flip together, so **nothing oscillates anywhere on the lift.**
+
+At the branch point `a → (s_tot − s)²/3·2^{4/3}` and `a_ss/a → 2/(s_tot − s)²` — the ordinary matter-domination pair, whose two behaviours in `φ = u/a` are a **constant** and `(s_tot − s)^{−3}`.
+
+⇒ *** **Of the two-dimensional space of mode data at the turnaround, exactly a one-dimensional subspace reaches `r = 0` regular and continues into the expansion leg. Everything else diverges at the seam.** That is what the lift does: it projects, one solution per harmonic. ***
+
+And on that subspace the transmitted amplitude is a **pure-number function of `k` alone**:
+
+- **`T(0) = 1` exactly** — `u = a` solves the lift equation identically at `k = 0`, so the monopole crosses untouched in amplitude as well as in label. *That was the control that had to come back affirmative, and it did, analytically.*
+- **`T(k) → 2^{7/3} k² e^{−k·s_tot}`**, with `s_tot = Γ(⅙)√π / Γ(⅔)√3·2^{1/3} = 3.3387380236`.
+
+⌗ *Both the exponent's length and the prefactor are **parameter-free**: `α` cancels between `dτ̃ = i(2α/3)dv` and `A = 2^{1/3}α/√3`, so there is no `Λ`, no `H₀`, no `Ω_m`, no mass and no epoch anywhere in any of it. Verified on both of your stated backgrounds to `2×10⁻¹⁶`.* ⌗ *And the convention is **carried**, per your own standing rule: `k² = L(L+2)` is the unit-`S³` scalar Laplacian eigenvalue, and a curvature shift `k² → k² − 3` is **measured** to move `ln T` by `+3s_tot/2k` — `O(1/k)`, never the exponent.*
+
+### ⛔⛔ SO YOUR SECOND BRANCH FIRED, AND THE HONEST READING IS NOT THE ONE YOU HOPED FOR
+
+You said: *"if they do not, whatever they pick up is the thing the acoustic sector has been missing."* What they pick up is an **envelope**, and **exactly no phase** — `Re Δη = 0` identically across the lift, not small, zero.
+
+⇒ *** **A comb is a phase. The lift supplies a real damping and no phase at all, so it cannot be what the acoustic sector has been missing.*** The mildest damping of any `L > 0` is `L = 1` at `T = 7.00×10⁻²`, a factor `14.3`; `L = 2` is already `4.16×10⁻³`; the first acoustic peak's `L = 220` is `e^{−725}`.
+
+⇒ *** **WHAT IT IS INSTEAD, STATED AS THE AFFIRMATIVE IT IS: the construction's own smoothing step.** Every `L > 0` arriving from the collapse leg is damped, with not one adjustable quantity in it — so the seam is isotropic **by identity** rather than by tuning. ⛔ *And the price of that is the gap I am naming rather than hiding: the acoustic structure cannot be inherited from before the lift. It has to be generated on the expansion leg, and nothing here touches that.* ***
+
+⌗ **THE BRANCH IS A FINDING AND I AM RECORDING IT.** Writing the lift as `τ̃ = i(2α/3)v` gives `r = A(i sin v)^{2/3}`, and the **principal** branch `(−i)^{2/3} = e^{−iπ/3}` puts the collapse leg at `−60°` and **manufactures a real phase across the lift** — `Re Δη = −2.891`, `87` per cent of the lift's length. Your panel **(C)** fixes it: it writes the inward leg as `r = −(2Mα²)^{1/3} cosh^{2/3}(3 Re τ̃/2α)`, phase `π`, so `(−i)^{2/3} = e^{iπ} = −1` and the lift is real negative from `−A` to `0` — the figure's own *"single vertical segment at `Re τ̃ = 0`."* ⇒ *A `√2`-class slip avoided by reading the figure you told me to read, and the wrong branch is kept in the receipt as the control that must come back non-zero.*
+
+### ⌗ WHAT I DID NOT DO
+
+*`r7102`'s offset-observer half is not recomputed and no gate re-measures it. The paper is read and not edited. No transfer, spectrum, kernel or likelihood is computed, the acoustic instrument is not opened, and your three-grid table is not touched — the only numerical objects in the whole revision are one analytic curve's conformal lengths and one linear ODE on one leg of it. `r7106`'s computations stand; its **setting** is superseded where you withdrew your own order, and the row says so.*
