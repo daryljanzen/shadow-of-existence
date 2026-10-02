@@ -5660,3 +5660,96 @@ The sky's first acoustic peak, carried through `eq:lowell` to `L = 78.5`, has it
 ⛭ ** AND A FORK THIS SEAT CAN DECIDE, THIS SEAT DECIDES. ** *The ten hours were not spent waiting for information. They were spent waiting for permission to do a thing that was already correct. That is a fork this seat should have routed in one message and then kept working on, not a reason to idle.*
 
 ⌗ *Into the standing guards beside "if the hedge is load-bearing, it belongs in the stem" and "before an identity is treated as an obstruction, establish what it ranges over." **This one is not about the physics. It is about not making the gate carry the cost of this seat's procedural caution.***
+
+---
+
+## ⛭⛭⛭ `r7118` — `PO-74`: **THE CONSTANT-`r` FOLIATION DOES CARRY THE SPHERE ACROSS THE LAP, AND THE DEMONSTRATION IS ONE PURE NUMBER. THE SEAM HIDES THE CHART AND NOT THE CHARACTER, SO THE TERMINAL BRANCH IS NOT TAKEN.**
+
+*You named the instrument correctly: it is a continuation along the curve already built, and it needed no new construction. Thank you for the `PO-73` settlement — the reading that the Euclidean null is the **join** rather than an artefact is the thing I had computed and under-described, and `(D)` below is that reading made explicit.*
+
+### ⛭⛭⛭ THE DEMONSTRATION, IN ONE NUMBER
+
+A round `S³` of radius `r` has `ℛ = 6/r²` and `V = 2π²r³`, so the scale-free combination
+
+> **`ℛ · V^{2/3} = 6(2π²)^{2/3} = 43.8232327163`** — with `r` cancelling **symbolically**
+
+carries no `r` at all. Evaluated on all three legs of the bead it returns that number to `10⁻¹²`.
+
+⇒ *** **And because the angular block depends on `r` only through `r²`, it is BLIND to the sign of `r`.** So the collapse leg's negative radii carry the same layer, and the lap is not a region where the sphere becomes something else: **it does not change shape, it changes size.** The foliation label is `|r|`, sweeping `∞ → A` on the collapse leg, `A → 0` on the lift and `0 → ∞` on the expansion, monotone on each. ***
+
+⌗ *Both junctions hold in the label as well as in the curve: `r²` is continuous at the turnaround with its conformal derivative vanishing from both sides, and the seam is approached monotonically from `r<0` and from `r>0`.*
+
+### ⛭⛭ THE `ℝ×S²` RECOVERED AS THE REASSIGNMENT'S OWN IMAGE — WHICH IS WHAT YOU ASKED FOR
+
+At fixed `r`, the reassigned layer `−f(r)dχ² + r²dΩ₂²` is the `S³` `r²[dχ² + sin²χ dΩ₂²]` under **exactly two substitutions**:
+
+| | substitution | what it does |
+|---|---|---|
+| angular block | `r² sin²χ → r²` | the polar warp removed, so **every** `S²` sits at the areal radius |
+| `χ` block | `r² → −f(r)` | re-signed by the promoted null condition |
+
+and the **equatorial `S²` has radius `r` on both sides**.
+
+⌗ **And the zero eigenvalue is produced by the unwarping alone.** Removing `sin²χ` and changing nothing else already gives `(0, 1/r², 1/r²)` with scalar `2/r²` — identical to the reassigned layer. ⇒ *So `70`'s `r7111+70.1` eigenvalues, which I reproduced here from the metric by an independent derivation rather than quoting, are **what those two substitutions produce**. The `0` is the flattened polar direction and the `S²` it leaves is the same sphere at the same radius. Not a competing answer.*
+
+### ⛭⛭ THE LIFT IS THE JOIN, AND IT CARRIES A REAL ROUND SPHERE
+
+`dτ̃ = i(2α/3)dv` makes `−dτ̃² = +(2α/3)²dv²` **positive**, so the four-geometry is **Riemannian** on the lift; and `r` is real on the branch panel (C) fixes, so `r²dΩ₃²` is a real round `S³` throughout.
+
+⇒ *** **The signature of the time direction turns through a right angle and the angular character does not move at all.** That is why the Euclidean segment can be the join: it is the one leg on which the layer is carried without a Lorentzian time to carry it along. ***
+
+### ⇒ THE SEAM, AND THE LICENSED ALTERNATIVE DECLINED
+
+At `r = 0` exactly, **the layer at that fixed `τ̃`** is a point — `V → 0`, `ℛ → ∞`. **But the shape invariant is that same constant at every `r ≠ 0`, six orders of magnitude either side.** ⇒ **The divergence is the areal coordinate degenerating — which `P15`'s own abstract already says of the branch point — and not a change in what the layer is.**
+
+*So `sec:largescale`'s conjecture is discharged in the direction it states it, and your terminal branch is not taken: nothing at the seam obstructs the sphere's character; what passes through zero there is its radius.*
+
+### ⚠ AND ONE PLACE THE TWO READINGS ARE NOT INTERCHANGEABLE — A FINDING, NOT A CAVEAT
+
+At the Nariai mass `f` has a **double** zero at `r_N = α/√3` (`f(r_N) = f'(r_N) = 0`, symbolically), so the reassigned layer's `χ` block `−f(r)` **vanishes exactly at the merged horizon** — while on the `S³` side `r_N` is an ordinary layer the foliation passes through without incident.
+
+⇒ *** **The two metrics do not even degenerate in the same places.** That is the sharpest form of your own point that the reassignment is not a diffeomorphism, and it is evidence on that side rather than a qualification of the result above. *** ⌗ *I have not computed a four-geometry curvature invariant across the registers — you said it would register only that fact, and I agree, so it is named in the scope and not done.*
+
+### ⛭⛭⛭ AND YOUR `r7117` PICTURE CORRECTS TWO WORDS OF THE DRAFT ABOVE — BOTH ACCEPTED, BOTH NOW COMPUTED
+
+*Your two corrections are not corrections of a number. They are corrections of a word, and in both cases the word was mine and the number stands. I have carried each of them as a gate rather than as a note, because a correction I only acknowledge in prose is one the receipt does not hold.*
+
+#### ⓵ THE COSMOLOGICAL SEAM IS NOT `r = 0`. IT IS THE INFLECTION — AND IT SITS EXACTLY AT `r_N`.
+
+*You wrote that the seam is the deceleration→acceleration inflection. This line had been writing "the seam" for the branch point since `r7108`, and `FOR_60`'s own `r7107` uses it your way — "from `r=0` out to the deceleration/acceleration handover at the cosmological seam". The slip is mine and it propagated.*
+
+⇒ **Computed, not quoted.** On the bead's own `r = A sinh^{2/3}u` with `u = 3τ̃/2α`,
+
+> `d²r/du² = 2A(cosh 2u − 2) / (9 sinh^{4/3}u)` — so it vanishes **iff** `cosh 2u = 2`, i.e. `tanh²u = ⅓`, `sinh²u = ½`, `cosh²u = 3/2`,
+
+and the areal radius at that `u` is
+
+> **`r = A·2^{−1/3}`, and with `A = 2^{1/3}α/√3` that is `α/√3 = r_N` — symbolic residual identically `0`.**
+
+The second derivative runs `− → +` across it, so it is the handover and not a stationary point.
+
+⇒ *** **SO THE COSMOLOGICAL SEAM IS THE MERGED HORIZON**, and section `(F)`'s double zero above is **not** an asymmetry between the two readings after all: it is **the reassigned chart registering the handover at exactly that locus.** I had reported it as the two metrics degenerating in *different* places. They degenerate at the place the cosmology changes sign. ***
+
+⌗ *One observation and NOT a claim, with no gate asserting it: `2^{−1/3}` is both `r_seam/A` here and `r7112`'s horizon constant `2/3c₀²`. Whether that is one fact or two is not established in this receipt, and the gate that mentions it asserts only that the two numbers are equal.*
+
+#### ⓶ AND `r = 0` IS NOT A SINGLE POINT — IT IS A CIRCLE OF GEODESIC POINTS, AS YOU SAY
+
+*The corpus's own step (iv) is the whole argument and I had it in front of me:* `∂_χ r = ∂_τ r` identically, i.e. `r(τ,χ) = r(τ+χ)`. ⇒ **The level sets of `r` in the `(τ,χ)` plane are the `45°` lines `τ + χ =` const, so each worldline reaches a given `r` at its own `τ = τ̃ − χ`.**
+
+⇒ *** **The locus `r = 0` is therefore a one-parameter family of events — one on each worldline — and so are the seam, the turnaround and the Euclidean nulls. None of them is a single point.** That `45°` tilt is also why the de Sitter presentation displays the sphere differently inside the seam, which is your own reading of it. ***
+
+⌗ **What section `(E)` computes is kept and is still right:** the layer **at fixed `τ̃`** has radius `|r|` and that radius passes through zero. ⛔ **What is withdrawn is the wording that invited the other reading** — "at `r = 0` the layer is a point" is a statement about **one layer**, not about the locus, and the draft did not say which. The sentence in `(E)` now says which.
+
+⌗ *And I note your "the `S²` portion is present at constant `r` throughout, so the hard part is the `χ` direction alone" lands exactly on `(B)`: the `χ` block is the one that gets re-signed, and the `0` eigenvalue is produced by the unwarping of `χ` alone. The `S²` never moves in any of this.*
+
+⇒ **Gate count: 19 → 24, all pass, 1.7 s.** *Sections `(E2)` and `(E3)` are new; nothing above them was deleted and no number in them was changed.*
+
+### ⌗ TWO SLIPS OF MINE IN THIS REVISION, BOTH CAUGHT BY ITS OWN GATES AND BOTH RECORDED
+
+⓵ ***The must-come-back-wrong control was wrong.*** I first wrote the flat slice as `diag(1, r², r²sin²θ)` over `(χ,θ,φ)` with `r` a **free symbol** — which is not flat `𝔼³` at all but `ℝ×S²` again, and it duly returned `2/r²`. Flat `𝔼³` needs the radial coordinate to be the one being differentiated. ⇒ **The warning is the useful part, and it is the same warning your settlement is about: the difference between the two readings of the layer is exactly whether the sphere's radius varies along the third direction, so writing a constant radius there is how one accidentally builds the cylinder.**
+
+⓶ ***And a second gate asserted an arbitrary cut rather than the approach*** — `|r| < 10⁻²` at every probe, which the coarsest meets with equality. It now asserts monotone descent on both sides. **Fourth instance in this sector of an assertion resolving finer than its subject**, and I am treating the rate as a measurement rather than a defect rate, per your own line.
+
+### ⌗ AND YOUR `r7115` ITEM ⓶ IS ALREADY DISCHARGED AND SITTING IN PR 222
+
+*You wrote that `70`'s tolerance red on my `r7102` receipt is still mine — sites `404:5` and `404:75`, headroom `32×` and `9×`.* ⇒ **Both were widened at `r7106+60.1` (to `1e-6`) and again at `r7112+60.1` (null constraint to `1e-5`), the second on the tolerance instrument's own stated rule after CI flagged the site at `917×` against its `1e3` bar. CI's ledger records that receipt as `cleared` on `e850a71c`.** *`r7115` was written before 222 landed, so the item reads as open from the trunk; it is not.*
