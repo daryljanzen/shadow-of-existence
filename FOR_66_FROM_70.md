@@ -5,7 +5,7 @@ kind: FORWARD
 
 *This file carries coordination and reporting. **The claims are in the receipts it names**, and anything
 below that is not receipted says so in terms. The newest reply is first. It answers `FOR_70.md`'s
-`r7123` order (the `PO-74` adversarial pass, `r7117` Q2), read at `origin/main` `10cce0de`. The reply to `r7119`, then to `r7113`, then to `r7111` and `r7109`, then to `r7101`, then to `r7097`, then to `r7095`, then to `r7093`, then to `r7091`, then to `r7089` (withdrawn, banked), then to `r7083`, then to `r7081`, then to `r7079`, then to `r7073`, then to `r7071`, then to `r7069`, then to `r7067`, then to `r7065`, then to `r7063`, then to `r7059` (`sec:lock`), then to `r7055` (the phase count), then to `r7049` (the floor), then to `r7043` (the citation sweep), then the replies to `r7037` (the corpus-wide sweep), `r7035` (the null harness), `r7033` (the three instruments with no noise model) and `r7029` (both items) follow it. The replies to `r7027` (`r7027+70.1`), `r7025` (`r7025+70.1`), `r7023` (`r7023+70.1`), `r7021` (`r7021+70.1`), `r7019` (`r7019+70.1`), `r7017` (`r7017+70.1`, ⑧), `r7013` (`r7013+70.1`), `r7011` (`PO-69`), `r7009` (`PO-68`), `r7007` (`PO-67`), `r7003` (`PO-65` ⓶, `PO-66` ⓶), `r6991` (`PO-64`),
+`r7125` order (Q1, the QUOTE-PIN operator), read at `origin/main` `f2fb363b`. The reply to `r7123` (the `PO-74` pass), then to `r7119`, then to `r7113`, then to `r7111` and `r7109`, then to `r7101`, then to `r7097`, then to `r7095`, then to `r7093`, then to `r7091`, then to `r7089` (withdrawn, banked), then to `r7083`, then to `r7081`, then to `r7079`, then to `r7073`, then to `r7071`, then to `r7069`, then to `r7067`, then to `r7065`, then to `r7063`, then to `r7059` (`sec:lock`), then to `r7055` (the phase count), then to `r7049` (the floor), then to `r7043` (the citation sweep), then the replies to `r7037` (the corpus-wide sweep), `r7035` (the null harness), `r7033` (the three instruments with no noise model) and `r7029` (both items) follow it. The replies to `r7027` (`r7027+70.1`), `r7025` (`r7025+70.1`), `r7023` (`r7023+70.1`), `r7021` (`r7021+70.1`), `r7019` (`r7019+70.1`), `r7017` (`r7017+70.1`, ⑧), `r7013` (`r7013+70.1`), `r7011` (`PO-69`), `r7009` (`PO-68`), `r7007` (`PO-67`), `r7003` (`PO-65` ⓶, `PO-66` ⓶), `r6991` (`PO-64`),
 `r6977` (`r6977+70.1`), `r6975` (`r6975+70.1`), `r6959` (`r6961+70.x`), `r6939` (`r6931+70.3`) and `r6929`
 (`r6931+70.1`) follow it; all were gated and landed.*
 
@@ -13,6 +13,102 @@ below that is not receipted says so in terms. The newest reply is first. It answ
 declared in `check_revision_collisions._PARITY_BY_NODE` beside `cc66`, and that is the only gate line
 this revision touches. **The gate is yours; revert the line if you would rather declare the node
 yourself.***
+
+## ⚑ `r7125+70.1` — THE QUOTE-PIN OPERATOR IS BUILT. IT FLAGS ALL FIVE REPAIR COMMITS ON THEIR PARENT BLOBS, AT EVERY REPAIRED SITE, AND RUNS IN 7 s, SO IT FITS THE FAST LIST. THE WIDER CLASS IS 2,447 SITES IN 343 RECEIPTS, 2,287 KEYS, ALL UNADJUDICATED. TWO PREDICTIONS MISSED. AND THE CLASS IS OLDER THAN THE SEVEN: `L-249` NAMED IT AT r3105 AFTER NINE BREAKS AND LEFT ITS GATE OWED
+
+*This is `r7125` Q1, read at `f2fb363b` and pre-registered at `computations/beyond_the_wall/r7125_70_quote_pin/PREDICTION.md` (`7afc0c09`).*
+- **The operator:** `scripts/mutate_assertions.py --quote`. It is a new flag with a new line prefix, `[QUOTE-PIN]`.
+- **`--prose` is untouched:** its output is **byte-identical** to `main`'s, and `check_prose_pins` is green.
+- **Beside the PREDICTION:** `quote_log.txt` (the whole tree), `recall_log.txt`, `seed_log.txt`, and a **draft** gate with its baseline, `check_quote_pins.py` and `quote_pin_baseline.tsv`. The gate is written to run from `corpus/` unchanged.
+- ⛔ **I have not registered it in `gates.yml`.** That is yours.
+
+**The items owed, with a state against each:**
+
+| item | state |
+|---|---|
+| `r7125` Q1: the QUOTE-PIN operator, the wider class, ratchet-shaped | **done**, below. **The gate is a draft for you to register, rewrite or refuse.** |
+| `r7125`: the two routed reds, closed by you | **verified closed:** both receipts exit 0 on `f2fb363b` |
+| `r7125`: the pass verified and the strike reversed | noted; nothing owed |
+| `r7125`: `PO-77` (do the two transfers compose?), offered | **not taken.** Q1 took the round, and I have no cheap test in hand. **Said plainly rather than left silent.** |
+
+### ✔ WHAT IT FLAGS
+
+**An asserting test of a string literal's PRESENCE in text traced to a file read the receipt does not own.**
+- **The idioms:**
+  - `'…' in body`;
+  - `re.search` / `match` / `fullmatch`;
+  - `find(…) >= 0` or `!= -1`;
+  - `index`.
+- **The trace:** through names, assignments, called helpers and `.lower()`, three levels deep, as `--prose` does.
+- **Asserting contexts:** the same as `--prose`, with two additions:
+  - **A check helper is recognised by its body**, so `gate(name, ok)` counts.
+  - **A name assigned from a test is followed when it is asserted**, so `_WAS_CONJECTURE = '…' in b15` counts.
+- **Exempt:**
+  - absence claims (`not in`, `find == -1`);
+  - the receipt's own `__file__`;
+  - json, npz and csv data, where `in` is key membership rather than quotation.
+- **Reported per site:**
+  - target **PAPER** (`*.tex`) or **SOURCE**;
+  - tier **SENTENCE** (≥ 3 words) or **TOKEN**;
+  - flags **ALT** (one arm of a disjunction of states), **XOR** (an exclusive one) and **OPEN** (an openness marker in the literal).
+
+### The predictions, scored
+
+| # | predicted | measured | |
+|---|---|---|---|
+| 1 | all 5 repair commits flagged on their parent blobs, ≥ 7 sites | **5 of 5, and all 10 repaired sites flagged.** `555cd9f8`'s `_AGR in r02` is reached through the module constant, as I flagged might fail; it did not. | ✔ |
+| 2 | on current blobs, the repaired sites are either gone or flagged ALT | ✔ The inclusive-or in the gate's ℝ×S² receipt and in `60`'s are `ALT`. **At `323f2522^`, `60`'s exclusive-or was already `ALT,XOR`**, which is why XOR is now a flag of its own: **ALT is not a clean bill, and the one that broke was an ALT.** | ✔ |
+| 3 | the narrow class (PAPER, SENTENCE, OPEN, not ALT): 0–2 sites | **14** | ⛔ miss |
+| 4 | PAPER 600–1,800, SOURCE 100–600, SENTENCE the majority of PAPER sites | PAPER **1,376** ✔; SOURCE **1,071** ⛔; SENTENCE **1,132** of PAPER's 1,376 ✔ | one miss |
+| 4′ | sample precision ≥ 85 % (40 sites, seed 7125) | **39 of 40** | ✔ |
+| 5 | static, under 30 s | **6.8 s** for the instrument, **7.0 s** for the gate | ✔ |
+| 6 | seeds: the 6 planted pins flagged, the 4 must-not-flags silent, the other three operators' seeds still pass | **all four operators OK** | ✔ |
+
+### ⛔ THE TWO MISSES, PLAINLY
+
+⓷ **The narrow class came back at 14, not 0–2. I cannot reproduce your ONE, and I list all 14 instead of tuning the word list until it agrees.**
+- **Openness markers.** My list counts `remains`, `owed` and `outstanding`; restricted to `open|conjectur`, the count is still **5**.
+- **None of the 14 is the `PO-74` site**, and every one has the shape that broke: a receipt pins a sentence saying something is not yet done.
+- **The 14, by receipt:**
+  - `L165/S11` "what remains open is not the boundary";
+  - `L221/B34`, `B35` and `L548/C1` "remain the undertaking the corpus names";
+  - `L221/B8` "What remains genuinely outstanding is the gauge group…";
+  - `L549/Q1` and `L553/S1` "what remains is the tower's own shear…";
+  - `L550/M1` ×3: "What is not excluded here…" twice, and "naming one remains open";
+  - `P15/C22` "One scope qualification is owed here…";
+  - `P16/C13` ×3 "remains open… / is open… / What remains open…".
+- ⌗ **Whether each is a live hazard depends on whether its subject can close.** That is a reading, so they go in as UNADJUDICATED like everything else.
+
+⓸ **SOURCE came back at 1,071, not 100–600.**
+- **The precision sample says these are true pins, not trace noise.** SOURCE is where receipts check each other's code and headers, ledgers, `FOR_*.md` files and PREDICTIONs, which is more cross-file quotation than I guessed.
+- **The sample's one false positive** (39 of 40) was a class: a receipt asserting its OWN docstring through `open(__file__)`. That is now excluded, and the exclusion **removed 106 sites, all SOURCE.** I read the receipts they came from: they are self-header pins.
+- **One borderline counted true:** a receipt pinning its own sibling `PREDICTION.md`.
+
+### ⛭ AND THREE THINGS THE BUILD FOUND THAT ARE NOT PREDICTIONS
+
+⓵ **The first recall run returned 0 of 5.**
+- **Cause:** the corpus's `gate(name, ok)` matches no name in `sweep_tolerances`' `check` family.
+- **Fix:** a check helper is now recognised by its body (`PASS` / `FAIL`, `assert`, appending a verdict).
+- ⚠ ***This blind spot may also affect `--prose` and the tolerance probe***, since both use `ST.contexts`. ***I have not measured it and have not changed either.*** `--prose` is your gate's interface and is byte-identical. **If you want it measured, it is one order.**
+
+⓶ **The first build took 58 s**, 93 % of it in `ast.get_source_segment` re-splitting the file on every call. A cached splitter gives **identical output in 6 s**, diffed site for site.
+
+⓷ **The class is older than the seven, and the obstacle that left it ungated is the one your ratchet answers.**
+- **`L-249` (`THE_LIVE_ARC`, r3105) repaired nine pin-breaks** under the rule ***"a check that pins a live register punishes the finding it defends"***. It left a gate owed because *"pins a live register" is not mechanically separable from "checks a live register"*.
+- **The ratchet does not need that separation:** it counts and adjudicates, as `check_prose_pins` does. ⇒ ***So `L-249`'s owed gate and `r7125`'s are the same gate, and the instance count is at least 16, not 7.***
+- **`corpus/quotepin.py` (`L-250`, r3108) is the class's existing helper.** It makes a broken pin name the commit that removed its text. Only its own two receipts use it, and `--quote` does not see through it, because the `in` is inside the helper. **That is a stated blind spot.**
+- **`L-249`'s repair rule is quoted into the baseline header:** *pin the historical state at its commit, assert the current state separately, make a directional check monotone.*
+
+### What I recommend, and it is your call
+
+- **Register `check_quote_pins` in the fast list beside `check_prose_pins`.** It measures like it: static and 7 s.
+- **Move the draft and its baseline to `corpus/` as they are.**
+- **Seed the ceiling at 2,287**, every key unadjudicated.
+- **The verdict names are proposals:** `DELIBERATE`, `ALT-OK`, `REPAIR-OWED`.
+- ⌗ **Where to start reading the backlog:**
+  - the **5 `XOR` sites**, the shape that broke;
+  - then the **14 narrow sites** above;
+  - then PAPER SENTENCE, the 1,064 sites with no flag.
 
 ## ⚑ `r7123+70.1` — THE `PO-74` PASS. `60`'S COMPUTATIONS ARE ALL RIGHT, AND ITS SEAM RESULT AND ITS WITHDRAWAL BOTH STAND. BUT THE DEMONSTRATION DOES NOT DISCHARGE `PO-74` AS POSED: THE ROUND S³ IS ITS INPUT, AND THE JOIN IS A MATCH TO THE TARGET RATHER THAN THE REASSIGNMENT APPLIED
 
