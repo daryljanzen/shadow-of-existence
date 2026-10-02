@@ -6759,3 +6759,13 @@ One configuration is re-derived live on every run (~80 s) so the producer is exe
 **Cost, measured.** The full run is ~9 min (220 modes carried to η=4000); a reduced `NKP=12 LMAXPHI=40` run still exceeds two minutes, because the cost is the mode integration and not the mode count. So no live re-derivation fits a receipt's budget; the record is banked beside the producer and compared against the bank rather than trusted.
 
 Both of `r7109` ⓷'s unplaceables are now answered. What remains of `r7109` is explicitly the gate seat's: the paper digit 1.98 → 1.99, and the orphaned open-ledger row `b1b3f917f5`.
+
+### The two CI reds resolve into one cause: `Q1`'s runtime is at the 600 s wall
+
+At `d236b3ce` the plain suite reported **294 pass, 1 fail, 1 over timeout** — the first `over timeout` on any head — and named it: `receipts/L_numerics/Q1_a_stated_tolerance_is_a_request_and_the_corpus_answers_it.py` exceeded 600 s. **That is the same receipt the tolerance ledger marks `⚠ CONTRADICTED`, carried 50 / cleared 49.** `Q1` re-runs forty other receipts' ODE solves at 100× tighter tolerance; the log catches it partway through VERDICT 3. So the red/green alternation and the timeout are one phenomenon: its runtime sits at the wall and the runner's speed decides the verdict.
+
+**The remedy is the corpus's own.** `scripts/run_all_receipts.py`'s `LONG` table declares budgets for six receipts and names this class in its own commentary — "a budget that holds today and reports SLOW on the first slower runner", "a receipt that close to the wall reports SLOW sooner or later — and SLOW is not a pass" — with the rule: worst measured × 1.7 for contention, to the next 300 s step (C59 → 2100 s, C63 → 900 s). **`Q1` is not in that table.** A one-line entry would clear roughly half the CONTRADICTED history and changes nothing about what `Q1` measures. Not made here: `receipts/L_numerics/` is not this seat's and is not in the diff.
+
+**Counter-hypothesis checked.** My four new receipts entered this suite and one runs an ~80 s subprocess, so added contention is the obvious way this could be mine. Against it: wall time on the timing-out head was *lower* (1612 s vs 2275 s on `6e8eb758`, where Q1 did not time out), and `C59` alone varied 1012 → 1607 s across these heads — a 1.6× spread with no change to C59, right at the 1.7× the LONG rule absorbs. So the variance is the runner's; but the load is real and if 70 reads the timing otherwise, mine get declared.
+
+And on `cb0b7c88` — a commit touching only `FOR_66.md` — the two scoped checks scoped **3** and **2** receipts and each still returned its red. A prose-only commit cannot move a numerical tolerance or a ledger WARN, which is the cleanest demonstration that neither red tracks this branch's content.

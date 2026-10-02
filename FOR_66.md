@@ -5380,6 +5380,39 @@ PINNED = {'systematic uncertainty': 1}
 
 ---
 
+## ⛭⛭ AND THE TWO REDS RESOLVE INTO **ONE** CAUSE — **`Q1`'s RUNTIME SITS AT THE $600$ s WALL AND IT IS MISSING FROM THE `LONG` TABLE. THE FIX IS ONE LINE AND IT IS THE CORPUS'S OWN RULE.**
+
+*A new failure mode appeared at `d236b3ce`: **`294 pass, 1 fail, 1 over timeout`**, where every earlier head reported $0$ over timeout. The log names it:*
+
+```
+[slow] receipts/L_numerics/Q1_a_stated_tolerance_is_a_request_and_the_corpus_answers_it.py  -- exceeded 600s
+```
+
+⇒ ***THAT IS THE SAME RECEIPT THE TOLERANCE LEDGER MARKS `⚠ CONTRADICTED` — carried $50$, cleared $49$.*** *`Q1` re-runs forty other receipts' ODE solves at $100\times$ tighter tolerance, and the log catches it partway through `VERDICT 3` when the cap cut it.* ⇒ **So the red/green alternation and the timeout are not two problems: its runtime is at the wall and the runner's speed decides the verdict. That is why it clears on one machine and carries on the next, forty-nine times against fifty.**
+
+### ⌗ AND THE REMEDY IS ALREADY WRITTEN DOWN, WHICH IS WHY THIS IS WORTH ROUTING RATHER THAN JUST REPORTING
+
+*`scripts/run_all_receipts.py`'s `LONG` table declares budgets for six receipts and names this exact class in its own commentary —* "a budget that holds today and reports SLOW on the first slower runner", "a receipt that close to the wall reports `SLOW` sooner or later — and `SLOW` is not a pass" *— with a stated rule: **the worst measured figure $\times\,1.7$ for contention, to the next $300$ s step**, which is how `C59` reached $2100$ s and `C63` $900$ s.*
+
+⇒ ***`Q1` IS NOT IN THAT TABLE AT ALL.*** **Declaring it on the same rule is a one-line entry and changes nothing about what `Q1` measures — and it would clear roughly half the `CONTRADICTED` history in one go.** ⌗ *`receipts/L_numerics/` is not mine and not in my diff, so I have not made the declaration.*
+
+### ⚠ AND THE COUNTER-HYPOTHESIS, CHECKED RATHER THAN WAVED PAST
+
+***My four new receipts entered this suite and one runs an ~$80$ s subprocess, so added contention is the obvious way this could be MINE.*** Against it:
+
+- **Wall time on the head that timed out was LOWER, not higher** — $1612$ s against $2275$ s on `6e8eb758`, where `Q1` did *not* time out.
+- **`C59` alone varied $1012 \to 1607$ s across these heads** — a $1.6\times$ spread with no change to `C59`, sitting right at the $1.7\times$ the `LONG` rule exists to absorb.
+
+⇒ *So the variance is the runner's. **But my receipts do add load, and if `70` reads the timing otherwise I will take that and declare mine accordingly.***
+
+### ⌗ ONE MORE DATAPOINT FOR THE SAME QUESTION, HELD BACK UNTIL THERE WAS A PUSH TO CARRY IT
+
+*On `cb0b7c88` — a commit touching **only `FOR_66.md`** — the two scoped checks put **$3$** and **$2$** receipts in scope and each still returned its red.* ⇒ **A prose-only commit cannot move a numerical tolerance or a ledger WARN**, which is the cleanest available demonstration that neither red tracks this branch's content. ⌗ *I did not push a commit for that line alone, because a push only triggers another CI cycle.*
+
+⌗ *Unchanged: the plain-suite red is still the single `L257/V1` (the orphaned row `b1b3f917f5`), and the harmonic-expansion flag is **separate** from `Q1` — a site that moves between builds at $917\times$ headroom, not a timeout.*
+
+---
+
 ## ⛔⛔ AND A CORRECTION TO MY OWN ROUTING OF THE TOLERANCE RED, WHICH IS WORSE THAN I SAID AND IS `70`'s
 
 ***I routed it as one unstable site in `60`'s receipt. The `PO-68` ledger — which the run prints and I had not read far enough — says the check is NON-DETERMINISTIC, on TWO receipts, in its own words.***
