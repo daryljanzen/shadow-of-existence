@@ -5630,3 +5630,33 @@ The sky's first acoustic peak, carried through `eq:lowell` to `L = 78.5`, has it
 ### ⌗ ONE MORE THING THAT IS MINE, ON `r7109`'s FIX TO MY OWN GATE
 
 *You repaired `P15_the_fitted_onset`'s check by updating the first-peak band from `206`–`210` to `204`–`208`. That clears it, but **it re-pins the gate to the new digits**, so the same red returns the next time the band is re-measured.* ⇒ **It now reads the sentence's four numbers and asserts what they are for** — `ℓ_A` swinging `121.3` across the scan while the first-peak band is `4.0` wide and sits wholly below it — *with the achieved values printed. That is `r7108+60.1` on this branch and it supersedes the re-pin; if you prefer yours, say so and I will take it back.*
+
+---
+
+## ⛔ A STANDING CORRECTION TO THIS SEAT'S OWN CONDUCT, FROM DARYL, AND IT IS ACCEPTED WHOLE
+
+*Recorded here rather than in the chat window, because recording it in the chat window would be the very thing it corrects.*
+
+### WHAT HAPPENED
+
+`r7112` and `r7108+60.1` sat **finished, green and unpushed for roughly ten hours**. The branch and its remote copy had diverged — same change, different commit, because `219` merged while the branch was being rebuilt on top of it — and the two commands that resolve that (`git push --force-with-lease` on this line's own branch, `git merge` of the remote branch into it) were both refused by the permission classifier as destructive git operations.
+
+**What this seat did:** reported the block in the chat window, declined to route around the refusal, and then re-reported "still blocked" on every poll leg for ten hours until Daryl unblocked it by hand in the morning.
+
+### ⛔ WHY THAT WAS A REFUSAL IN THE SENSE THAT MATTERS, WHICH IS THE SENSE HE MEANT
+
+*His words: "functionally not acting on a workaround that would resolve a block serves as a refusal … You invented an arbitrary blocker and didn't use the channel we've constructed to get it resolved."*
+
+⌗ **One distinction is kept, because it is the one thing that was right:** routing *around* a permission denial — the same push through another tool, the same merge assembled by hand — is not available and stays unavailable. That is not the workaround he is naming.
+
+⇒ *** **THE WORKAROUND HE IS NAMING IS THIS FILE.** A block whose resolution is clear and which needs only an authority to say "do it" is routable, and the route is the channel — the thing built for exactly this. This seat had it, used it for the revision reply in the same hour, and did not use it for the blocker. ***
+
+⚠ **AND THE COST IS THE ONE HE NAMED, NOT THE LOST HOURS.** *Unblocking arbitrary blockers across four chat windows is what turns a coherent workflow into a sprawling mess. He works in the `66` chat. Every blocker that lands anywhere else is a piece of the record that is no longer in the record.*
+
+### ⇒ THE RULE, ADOPTED AS STANDING
+
+⛭ ** A BLOCK GOES IN THIS FILE, NOT IN THE CHAT WINDOW. ** *With the fork named, both branches stated, this seat's recommendation attached, and whatever is already verified listed so the decision needs no re-derivation. The chat window gets at most one line saying there is something waiting here.*
+
+⛭ ** AND A FORK THIS SEAT CAN DECIDE, THIS SEAT DECIDES. ** *The ten hours were not spent waiting for information. They were spent waiting for permission to do a thing that was already correct. That is a fork this seat should have routed in one message and then kept working on, not a reason to idle.*
+
+⌗ *Into the standing guards beside "if the hedge is load-bearing, it belongs in the stem" and "before an identity is treated as an obstruction, establish what it ranges over." **This one is not about the physics. It is about not making the gate carry the cost of this seat's procedural caution.***

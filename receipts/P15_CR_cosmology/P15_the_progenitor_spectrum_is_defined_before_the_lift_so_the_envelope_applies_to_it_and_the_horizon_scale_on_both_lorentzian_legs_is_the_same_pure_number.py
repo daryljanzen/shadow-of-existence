@@ -346,17 +346,34 @@ gate("⚠ and the SIZE of that is named rather than softened: a spectrum multipl
 head("F.  70's ROUTED TOLERANCE ITEM -- ALREADY ANSWERED ON THE TRUNK, CHECKED NOT ASSERTED")
 
 r02 = open(R02, encoding='utf-8').read()
-_AGR = "_agree < 1e-6"
-_NUL = "abs(g['n1']) < 1e-6"
-_OLD = "_agree < 1e-10"
-print(f"      `r7102`'s two sites, read from the CURRENT source:  the agreement bound at 1e-6 "
-      f"present = {_AGR in r02};  the null-constraint bound at 1e-6 present = {_NUL in r02};  "
-      f"the old floor-pinned 1e-10 still present = {_OLD in r02}")
-gate("`70`'s probe flags `404:5` at tolerance `1e-10` and `404:75` at `1e-8` -- which are exactly "
-     "the two this line widened at `r7106+60.1` after CI's own third build flagged them.  The "
-     "CURRENT source asserts the inequality the claim needs, `1e-6` on both, and prints the achieved "
-     "values; so there is nothing to re-fix and the probe ran on a tree from before that landed",
-     _AGR in r02 and _NUL in r02 and 'a fragility' in flat(r02) and _OLD not in r02)
+# ⌗⌗ ** THIS GATE READS THE TWO BOUNDS OUT OF `r7102`'s OWN CONDITION AND ASSERTS WHAT THEY ARE FOR,
+#   NOT WHAT THEY CURRENTLY SPELL (`r7112+60.2`, caught by its own subject moving under it). **  *Its
+#   first version required the literal strings `_agree < 1e-6` and `abs(g['n1']) < 1e-6`.  One commit
+#   later `r7112+60.1` moved the null-constraint bound to `1e-5` -- on the tolerance instrument's own
+#   `headroom >= 1e3` rule -- and this check went red for the change it was written to approve.*
+#   ⇒ ** THE THIRD TIME IN THIS SECTOR THAT AN ASSERTION RESOLVED FINER THAN ITS SUBJECT, AND THE
+#   FIRST WHERE THE SUBJECT WAS THIS LINE'S OWN NEXT COMMIT.  What `70`'s item actually needs said is
+#   that NEITHER FLOOR-PINNED BOUND SURVIVES at those two comparisons and both now sit orders of
+#   magnitude above the achieved error -- which is read off the numbers, not off their spelling. **
+_BOUNDS = dict(re.findall(r"(_agree|abs\(g\['n1'\]\)) < (1e-\d+)", r02))
+_KA, _KN = '_agree', "abs(g['n1'])"
+_FLOOR = {_KA: 1e-10, _KN: 1e-8}                      # what `70`'s probe flagged, at `r7102` as written
+_off = {k: (float(v), _FLOOR[k]) for k, v in _BOUNDS.items() if k in _FLOOR}
+print(f"      `r7102`'s two sites, read from the CURRENT source rather than from a remembered "
+      f"spelling: {_BOUNDS}")
+for k, (now, floor) in sorted(_off.items()):
+    print(f"        {k:18s} bound now {now:g}, was {floor:g} when flagged -- "
+          f"off the floor by {now/floor:g}x")
+gate(f"`70`'s probe flags `404:5` at tolerance `1e-10` and `404:75` at `1e-8` -- exactly the two this "
+     f"line widened at `r7106+60.1` after CI's own third build flagged them, and widened again at "
+     f"`r7112+60.1` on the instrument's `headroom >= 1e3` rule.  Read from the CURRENT source, "
+     f"NEITHER floor-pinned bound survives: the agreement now asserts "
+     f"{_BOUNDS.get(_KA, 'MISSING')} and the null constraint "
+     f"{_BOUNDS.get(_KN, 'MISSING')}, each with the achieved value printed "
+     f"beside it -- so there is nothing to re-fix and the probe ran on an older tree",
+     len(_off) == 2
+     and all(now >= floor * 10.0 for now, floor in _off.values())
+     and 'a fragility' in flat(r02))
 
 
 # ============================================================ G. scope
