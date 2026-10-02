@@ -1,0 +1,71 @@
+
+====================================================================================================
+  A(1).  PROVENANCE: THE PAPERS' FIGURE IS THE SAME INTEGRAL, EVALUATED AT r2419
+====================================================================================================
+      P15 : ...matrices in the stable direction over the segment ($\lvert\Delta\eta\rvert=3.32$ in units $\alpha=1$) gives exact/WKB ratios of $0.926$, $0.913$, $0.901$, $0.891$ and $0...
+      P10 : ...cale rather than a caveat.} At $\lvert\Delta\eta\rvert\simeq1.7\times10^{4}\,\mathrm{Mpc}$ the damping reaches $e^{-2}$ only at $k\sim2\times10^{-4}\,\mathrm{Mpc}^{-...
+  [PASS] the 2026-08 receipt's integrand `ds/(A sin^(2/3)(3s/2alpha))` over the lift, integrated EXACTLY, is 3.33873802356 = s_tot = c0 B(1/6,1/2)/2 = 3.33873802357: the SAME integral
+      its printed 3.3233 is s_tot less 0.0154 -- a trapezoid on an integrable s^(-2/3) endpoint (the eps cut alone is ~0.0059); the paragraph rounds it to 3.32
+  [PASS] and 1.7e4 Mpc is 3.32 alpha rounded: 3.32 x 5213.29 = 17308.1 Mpc -> 1.7e4.  ** The figure was made in alpha units; r7127 reconverts it with r_0 and calls that conversion forced **
+      round trip: 1.7e4/r_0 = 3.3652 (0.79 % from s_tot), 1.7e4/alpha = 3.2609 (2.3 %), unrounded 3.3233 alpha: 0.46 %
+  [PASS] ⇒ so the 0.8 per cent is ROUNDING (two significant figures, then one) plus a choice of length, on ONE integral evaluated twice; it measures nothing about the transfer, and neither conversion is privileged by it
+
+====================================================================================================
+  A(2).  THE LEG-SELECTING CONTROL SELECTS PROVENANCE, NOT PHYSICS
+====================================================================================================
+  [PASS] the control's legs are 1.9276 / 3.3387 / 3.8552; the papers' figure matches the lift because the r2419 computation integrated s in (0, pi alpha/3), WHICH IS the lift, and P10 DEFINES |Delta eta| as the lift's interval -- so the match could not have come out otherwise and adds nothing to the receipt's own ⓷ ("a reproduction")
+
+====================================================================================================
+  A(3).  THE EXPONENT -- WHAT DISCRIMINATES, AND IT WAS NOT COMPARED
+====================================================================================================
+      P15 : ...ing mode equation $\dd^{2}\psi/\dd\eta^{2}=\omega^{2}\psi$, with $\omega=kc_{s}$ and $\dd\eta=\dd s/a$ along the segment, is well posed at every $k$, and integrating it i...
+      P10 : ...tion did not have to pass.} A mode of frequency $\omega$ is damped by $e^{-\omega\lvert\Delta\eta\rvert}$ under \eqref{eq:euclidean-kernel}; the framework's independent cl...
+      r7108: ...$\\eta=-is$ with $s$ real, so $d^2/d\\eta^2=-d^2/ds^2$ and $u''+(k^2-a''/a)u=0$ becomes ** $u_{ss}=(k^2+a_{ss}/a)\\,u$ ** -- real, sign-definite in the bulk, and NOT...
+  [PASS] the kernel the papers apply damps by e^{-omega|Delta eta|} with omega = k c_s (the r2419 receipt integrates omega = k/sqrt(3(1+R))), while r7108's lift equation is u_ss = (k^2 + a_ss/a) u with NO c_s -- a c_s = 1 field
+  [PASS] ⇒ on ONE segment the two exponents differ by sqrt3 = 1.7321: the papers' e^-2 wavenumber is 0.000204 Mpc^-1 (their "k ~ 2e-4"), r7108's exponent puts it at 0.000118 Mpc^-1.  ** "T(k) -> 2^(7/3) k^2 e^(-k s_tot) IS the second half" holds for the FORM and not the RATE **
+      at L = 1 (k = sqrt3): e^(-k s_tot) = 0.00308 against e^(-k c_s s_tot) = 0.0355 -- a factor 11.5 in the mildest anisotropic damping
+      P15 : ...ier carries an oscillation, and the kernel annihilates it---an exponent of $-152$ at the first acoustic peak, integrated across the segment's own sound-speed profile rather than at the single value...
+      r7108: ...rst acoustic peak's $\\ell=220.6$ sits at $L=78.5$, where the damping is $e^{-255}$.* ⇒ *** THE LIFT IS THEREFORE NOT THE THING THE ACOUSTIC SECTOR HAS BEEN MISSING; IT...
+  [PASS] ⇒ AND THE PAPERS ALREADY CARRY BOTH RATES AT THE FIRST PEAK: P15's exponent -152 is integrated across the segment's sound-speed profile, r7108's e^-255 is k s_tot at L = 78.5 (recomputed: 255.0).  255/sqrt3 = 147.2 against 152 (3.2 per cent, the residual being the two files' different l -> k maps and R) -- ** the two "second halves" differ by the sound speed, in the papers' own figures **
+
+====================================================================================================
+  B(4).  WHERE r_N IS ON THE BEAD: NOT ON ITS COLLAPSE LEG
+====================================================================================================
+  [PASS] the bead's collapse leg is r = A cosh^(2/3)x >= A, and A/r_N = 2**(1/3) at the Nariai mass, symbolically: ** the collapse leg bottoms out at 2^(1/3) r_N and never reaches the seam **
+      P15 : ...{s}$ within $0.1\%$, all of them reaching the \emph{seam}---where the collapse leg ends---with the same driving amplitude $\Psi(1/\sqrt3)/2$, and the residual potential is below...
+      C2  : the seam is f' = 0, r = (M alpha^2)^(1/3) = alpha/sqrt3 at Nariai (C2 step 3-5); r_* = 1.5338 r_seam
+  [PASS] |r| = r_N is passed ON THE LIFT, where r7108's a = A cos^(2/3) t runs A -> 0: cos^(2/3) t = 2^(-1/3) at t = 0.78539816 = pi/4 exactly -- and again on the expansion leg at the inflection
+
+====================================================================================================
+  B(5).  UNDER THE FOLIATION LABEL |r|, THE LEAF'S LEG TO r_N OVERLAPS THE LIFT'S FIRST STRETCH
+====================================================================================================
+  [PASS] the lift's conformal length is 3.338738023 (= s_tot), and the stretch |r| in [r_N, A] is t in [0, pi/4]: 0.77639, i.e. 23.25 per cent of the lift -- a FINITE fraction.  ⛔ pre-registered 25-50 per cent: a MISS, low by under two points, recorded and not re-banded
+  [PASS] ⇒ so on |r| -- the label PO-74 uses, r7126 used, and r7127 does not replace -- the leaf's collapse leg down to the seam and the lift COVER THE SAME |r| over that stretch: neither "overlap everywhere" (r7126) nor "disjoint" (r7127).  And without a common label, "C21 to the seam, THEN the kernel" has no order to be sequential in
+
+====================================================================================================
+  B(6).  FROZEN ON WHICH CONGRUENCE
+====================================================================================================
+  [PASS] at the turnaround, where T(k) is normalised, |a_ss/a| = 0.793700526 = 2^(-1/3) = 0.793700526 (r7112's pure number), and every L >= 1 has k^2 >= 3: L = 1 is sub-horizon by 3.78 -- ** on the bead, no anisotropic mode is frozen where T(k) starts **
+      L=  1: a_ss/a overtakes k^2 only at t = 1.5447111, sigma = 0.8154 from r = 0, i.e. the last 24.4 % of the lift;  asymptotic 2^(7/3) k^2 e^(-k s_tot) = 0.0466 (r7108's exact value: 7.00e-2)
+      L=  2: a_ss/a overtakes k^2 only at t = 1.5647835, sigma = 0.5 from r = 0, i.e. the last 15.0 % of the lift;  asymptotic 2^(7/3) k^2 e^(-k s_tot) = 0.00319
+      L= 10: a_ss/a overtakes k^2 only at t = 1.5706928, sigma = 0.1291 from r = 0, i.e. the last 3.87 % of the lift;  asymptotic 2^(7/3) k^2 e^(-k s_tot) = 7.9e-14
+      P15 : ...\omega$ is the frequency of an \emph{oscillating} mode, and at the branch point no mode is oscillating.} On the contracting leg the comoving Hubble scale $aH=\lvert\dd r/\dd\tilde\tau\rvert=\s...
+      P10 : ...und as $r\to0$, so the comoving horizon shrinks to zero and every mode exits it and freezes before the branch point~\cite{JanzenCRcosmology}. \emph{So the projection does not select the frozen content that...
+      P15 : (not located)
+  [PASS] P15's own freezing sentence uses the BEAD's E = 1 law aH = sqrt|1-f| (no radiation term) and quotes it at |r| = 0.1 alpha and 1e-3 alpha: recomputed 1.96 and 19.6 (its 1.96 and 19.6).  BOTH radii are below A = 0.7274 alpha, i.e. in the |r| range the bead covers ONLY ON THE LIFT; on the bead's real collapse leg (|r| >= A) aH = sqrt(r^2/alpha^2 - 2M/|r|) FALLS to 0.0 at the turnaround.  ** So the "freezing before the crossing" that sentence computes happens across the lift -- the stretch the kernel acts on -- and not before it **
+  [PASS] ⇒ "every mode exits it and freezes before the branch point, so the projection has nothing to act on" is true on the LEAF ((rH)^2 = (1-f) + A/r^2 -> infinity as r -> 0, C2).  On the BEAD, whose lift the kernel's length is, L >= 1 is sub-horizon where the lift STARTS and freezes only in its last 24 / 15 / 4 per cent (L = 1, 2, 10) -- AFTER the evanescent stretch that produces T(L) < 1.  So on the congruence the kernel belongs to, the anisotropic modes are NOT frozen before the crossing, the kernel DOES act on them, and T(0) = 1 is "the first half" only if the first half is narrowed from EVERY mode to the monopole
+
+====================================================================================================
+  B(7).  THE INVENTORY -- WHO PLACES THE SEAM AND THE SUPER-HORIZON ERA, ON WHICH CONGRUENCE
+====================================================================================================
+      sec:envelope             leaf       r_N ("seam", collapse leg ends)      real       modes SUB-horizon at the seam; C21 drives to it
+      prop:subhorizon / C2     leaf       r_N = f'=0, r_* = 1.53 r_N           real       acoustic modes inside at the seam
+      sec:what-crosses (P15)   bead law   |r|: 0.13 -> 1e-3 alpha (< A)        lift       every mode freezes "before the crossing"
+      P10 kernel paragraph     unstated   "contracting leg", r -> 0            real?      frozen before the branch point
+      r7108                    bead       A (turnaround) -> 0 (seam = r=0)     IMAGINARY  T(0)=1, T(L>=1) ~ e^-k s_tot: L>=1 suppressed
+      r7112 (60)               bead       collapse leg; divergences            real       only the monopole super-horizon away from them
+      r7117 / PO-74 (60)       both       r_N = the inflection, expansion leg  real       the readings degenerate at the handover
+      r7127 settlement         leaf->bead r_N, then the lift                   real->imag C21 to the seam, THEN the kernel
+  [PASS] the inventory carries THREE referents of "the seam" -- r_N on the leaf (sec:envelope, C2), r = 0 at the end of the lift (r7108), and the inflection r_N on the bead's EXPANSION leg (r7117) -- and the bead's collapse leg reaches none of them (its minimum is A = 2^(1/3) r_N)
+
+  15 checks, 15 pass
