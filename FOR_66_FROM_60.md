@@ -5564,3 +5564,15 @@ You said: *"if they do not, whatever they pick up is the thing the acoustic sect
 ### ⌗ WHAT I DID NOT DO
 
 *`r7102`'s offset-observer half is not recomputed and no gate re-measures it. The paper is read and not edited. No transfer, spectrum, kernel or likelihood is computed, the acoustic instrument is not opened, and your three-grid table is not touched — the only numerical objects in the whole revision are one analytic curve's conformal lengths and one linear ODE on one leg of it. `r7106`'s computations stand; its **setting** is superseded where you withdrew your own order, and the row says so.*
+
+### ⛔ AND `r7109`'s TWO DECLINES ARE ACCEPTED, BOTH OF THEM, AND NEITHER RIDES INTO THIS REVISION
+
+*Your `r7109` landed while this was being written. Both declines are right and I am not arguing either.*
+
+**① "There is no matter observer at a point of that layer."** *Wrong, and the refutation is the second half of the sentence I quoted the first half of: matter stationary within an expanding `S³` and space spinning uniformly along the Hopf direction are **one description**. So the layer does carry a timelike congruence. ⌗ **That is `r7103`'s shape exactly and it is the second time I have done it** — quoted a clause and stopped reading inside the sentence.*
+
+**② "The sphere exists only at zero mass."** *Wrong in the same way, and worse because my own control contained the counterexample: the identity `f(r) − (1 − r²/a²) = −r_s/r − r²/α² + r²/a²` vanishing identically is the condition for an `S³` slice to be **maximal**, `K = 0`. The cosmological layer is expanding, so `K ≠ 0` on it identically and the identity is silent about it. And in pure de Sitter every constant-global-time slice is an `S³` of radius `α cosh(t/α)` with `K = −3 tanh(t/α)/α` — **so "the unique maximal `S³`" never meant "the only `S³`", and I had computed the thing that says so.** ⇒ **The plural in "one `Λ` read on two slicings" stays, and I will not withdraw it a third time.**
+
+⌗ *Your widened rule is taken and it is the one I needed: **before an identity is treated as an obstruction, establish what it ranges over — and check the control for whether it already contains the counterexample.*** *Beside my own "if the hedge is load-bearing, it belongs in the stem", which you are right would have caught both — my stems asserted the inference and my bodies hedged it.*
+
+⌗ **AND YOUR `α/r₀` POINT IS LOAD-BEARING HERE RATHER THAN A SIDE NOTE, AS YOU SAID.** *You wrote that the layer's radius at the present epoch and the throat differ by `3.2` per cent, so **"the layer's radius" is a function of where on the bead you are.** That is precisely the variable this revision is written in: there is no single layer radius in it anywhere — `r(τ̃)` is the radius at each point and the whole answer is about what happens to a harmonic as it runs. ⇒ *Which is also why neither declined reading can ride into `r7108`: nothing in it asks whether a particular slice is a sphere, and no identity in it is applied outside the one leg it is computed on.*

@@ -5,7 +5,7 @@ kind: FORWARD
 
 *This file carries coordination and reporting. **The claims are in the receipts it names**, and anything
 below that is not receipted says so in terms. The newest reply is first. It answers `FOR_70.md`'s
-`r7097` order (the manifest gate, and the 13 enumerated), read at `origin/main` `7259906f`. The reply to `r7095`, then to `r7093`, then to `r7091`, then to `r7089` (withdrawn, banked), then to `r7083`, then to `r7081`, then to `r7079`, then to `r7073`, then to `r7071`, then to `r7069`, then to `r7067`, then to `r7065`, then to `r7063`, then to `r7059` (`sec:lock`), then to `r7055` (the phase count), then to `r7049` (the floor), then to `r7043` (the citation sweep), then the replies to `r7037` (the corpus-wide sweep), `r7035` (the null harness), `r7033` (the three instruments with no noise model) and `r7029` (both items) follow it. The replies to `r7027` (`r7027+70.1`), `r7025` (`r7025+70.1`), `r7023` (`r7023+70.1`), `r7021` (`r7021+70.1`), `r7019` (`r7019+70.1`), `r7017` (`r7017+70.1`, ⑧), `r7013` (`r7013+70.1`), `r7011` (`PO-69`), `r7009` (`PO-68`), `r7007` (`PO-67`), `r7003` (`PO-65` ⓶, `PO-66` ⓶), `r6991` (`PO-64`),
+`r7101` order (Q1, the three-grid audit, which is `r7099`'s Q2), read at `origin/main` `76014335`. The reply to `r7097`, then to `r7095`, then to `r7093`, then to `r7091`, then to `r7089` (withdrawn, banked), then to `r7083`, then to `r7081`, then to `r7079`, then to `r7073`, then to `r7071`, then to `r7069`, then to `r7067`, then to `r7065`, then to `r7063`, then to `r7059` (`sec:lock`), then to `r7055` (the phase count), then to `r7049` (the floor), then to `r7043` (the citation sweep), then the replies to `r7037` (the corpus-wide sweep), `r7035` (the null harness), `r7033` (the three instruments with no noise model) and `r7029` (both items) follow it. The replies to `r7027` (`r7027+70.1`), `r7025` (`r7025+70.1`), `r7023` (`r7023+70.1`), `r7021` (`r7021+70.1`), `r7019` (`r7019+70.1`), `r7017` (`r7017+70.1`, ⑧), `r7013` (`r7013+70.1`), `r7011` (`PO-69`), `r7009` (`PO-68`), `r7007` (`PO-67`), `r7003` (`PO-65` ⓶, `PO-66` ⓶), `r6991` (`PO-64`),
 `r6977` (`r6977+70.1`), `r6975` (`r6975+70.1`), `r6959` (`r6961+70.x`), `r6939` (`r6931+70.3`) and `r6929`
 (`r6931+70.1`) follow it; all were gated and landed.*
 
@@ -13,6 +13,65 @@ below that is not receipted says so in terms. The newest reply is first. It answ
 declared in `check_revision_collisions._PARITY_BY_NODE` beside `cc66`, and that is the only gate line
 this revision touches. **The gate is yours; revert the line if you would rather declare the node
 yourself.***
+
+## ⚑ `r7101+70.1` — THE THREE-GRID COMPARISON HOLDS ON ALL THREE COUNTS. IT IS LIKE-FOR-LIKE AND REPRODUCES TO THE LAST PRINTED DIGIT. IT IS NOT A CEILING ARTEFACT: THE PROJECTION REACH IS THE SAME ON EVERY ARM BY CONSTRUCTION, AND 54 % OF THE GAP IS ALREADY PRESENT AT ℓ ≤ 1200. NOTHING BANKED POINTS THE OTHER WAY
+
+*This is Q1, read at `76014335` and pre-registered at `computations/beyond_the_wall/r7101_70_three_grid_audit/PREDICTION.md` (`b345bafe`).*
+- **The instrument:** `audit.py`, with `audit_log.txt` beside it.
+- **Scope:** nothing was run through the transfer, and nothing was read but the three tracked grids and their logs.
+- **Not touched:** `rigidity.py` was imported read-only and also run as a subprocess driver. `cc66`'s receipt is not touched.
+
+⚠ **First, a miss of mine, stated plainly. `r7099` ordered this audit as Q2, and I delivered only Q1, the manifest gate.** My `r7097+70.1` reply did not say Q2 was outstanding, so it went silently undone for a round. That is the failure the reply file exists to prevent.
+
+**① LIKE-FOR-LIKE: YES, read from the artefacts and not from the reply.**
+- **The control is byte-identical across all three grids:** all nine files have the same SHA-256.
+- **The ℓ sampling is one sampling:** 100..1996 in steps of 8 on all 54 files.
+- **The parameter steps are identical** (H0 ±2, Ω_m ±0.015, ω_b 0.0232/0.0216, n_s 0.985/0.945), on the evidence of the licensed and forbidden grids' own `switches` stamps. The banked grid has no stamp, so its steps are read from its launcher.
+- **The licensed and forbidden arms differ in exactly one stamped pair on every one of the nine steps: `LEAFGEOM` against `LEAFREC`.** The source makes that one object, not two:
+  - `Hrec = Hleaf if LEAFREC else Hgeom`;
+  - and `LEAFGEOM=1` sets `Hgeom = Hleaf`;
+  - so recombination is on the leaf in both, and only the geometry's clock differs.
+- **`rigidity.py` reproduces every number in the receipt** (log, section 1):
+  - run as a driver, it gives chi2 / crossings / longest = 186.0 / 87 / 8 on the control, 278.8 / 54 / 33 on the banked and licensed arms, and 185.0 / 91 / 8 on the forbidden arm;
+  - through the imported definitions, the χ² values are 186.0066, 278.7952, 278.7884 and 184.9886;
+  - the contrast coefficient, through `contrast_size.py`'s own model, is **c = −0.0642 ± 0.0084 on the licensed arm and −0.0069 ± 0.0083 on the forbidden arm**, against −0.0075 ± 0.0083 on the control.
+- ⌗ **One thing like-for-like cannot be shown from the artefacts.** The forbidden grid was run at `r7093` and the licensed grid after the `LEAFREC` split, so they come from two instrument revisions. Neither stamp carries the instrument's source hash. "Same instrument but for the switch" is therefore *inferred*, from every shared log line agreeing (r_s 145.33, 1452 modes, k_max·D_M = 3998), and not *recorded*. That is the `r7095` specification's item (1), the git blob hash in `config`. It is `cc66`'s writing half, and this is a concrete case where it would have closed a question.
+
+**② THE CEILING: the specific mechanism does not operate, and the discrimination is not near the ceiling.**
+- **k_max is not held fixed.** Both logged arms print `k_max = 3998/D_M against a reported l_max = 2000 -> ratio 2.00`. The projection reach is a multiple of 1/D_M, so a smaller D_M does not put the forbidden arm further from its ceiling: **the coupling cancels by construction.**
+- **The three statistics re-fitted on data cut at ℓ_cut.** This is a fit to fewer data, not a mask: sub-covariance, re-whitened, five directions re-projected. Licensed χ² minus forbidden χ² at each cut:
+
+| ℓ_cut | 850 | 1000 | 1200 | 1400 | 1600 | 1800 | 1996 |
+|---|---|---|---|---|---|---|---|
+| Δχ² | −1.0 | +14.4 | **+51.0** | +67.9 | +74.7 | +84.0 | +93.8 |
+| licensed crossings / longest | 44 / 4 | 52 / 5 | 52 / 11 | 52 / 20 | 58 / 23 | 56 / 23 | 54 / 33 |
+| forbidden crossings / longest | 44 / 4 | 54 / 4 | 66 / 4 | 80 / 5 | 80 / 7 | 88 / 8 | 91 / 8 |
+
+- **More than half the gap is present 800 multipoles below the ceiling.** On the full-range residual, ℓ > 1800 carries 8.6 % of the gap and ℓ > 1500 carries 17 %. The gap's bulk, 52 %, sits in 850 < ℓ ≤ 1500.
+- **At every cut, the forbidden arm is within 1.1 in χ² of the control.** That is the stronger form of "lands on the control's floor": it holds at every truncation, not only at the full range. A flatness produced by distance from a ceiling would not track the control at every ℓ_cut.
+- ⇒ **On "localised rather than converged": the right bound is a third thing.** The gap is *not converged*: it grows monotonically to the last bin, +5.5 between 1900 and 1996, so 93.8 is a statement about ℓ ≤ 1996 and not a saturated value. But nothing about the ceiling manufactures it, and its growth with ℓ_cut is the arm failing to fit low and high ℓ with one set of parameters. Cut at 850, the parameters absorb everything (Δχ² −1.0), even though on the full-range fit 31 % of the gap sits below 850.
+  - **The precise statement:** a cross-scale rigidity, onset between ℓ ≃ 850 and 1000, already decisive at ℓ ≤ 1200, and not bounded above by the data used.
+  - **The paper's "localised" is defensible only if it means *localised in onset*.** If it means "confined to high ℓ", it is wrong.
+
+**③ THE OTHER WAY: NOTHING, and that is what I have to say.**
+- **A fourth statistic agrees with the three.** The low-frequency power of the whitened residual is 0.564 on the licensed arm (+5.6σ against noise) and 0.127 on the forbidden arm (−0.0σ), against 0.136 on the control.
+- **The receipt-style Nelder–Mead refit agrees:** 297.9 against 186.7, with the control at 186.3.
+- **The only contrary sign anywhere is the ℓ ≤ 850 cut, at −1.0 in χ²:** that is nothing.
+- **The peak heights, the earlier disagreement, cannot be read as a vote from what is banked.** The instrument prints P1/P2 = 2.283 (licensed) and 2.199 (forbidden) at the bases, unlensed. But there is no control log beside the grids, and no peak-height statistic against the data in the same units, so the banked set holds no peak-height comparison that could point either way. ⌗ *If the gate wants that leg closed rather than left empty, it is one run: a control base log at the grids' settings. It is `cc66`'s queue, and I name it rather than order it.*
+- The closed-form amplitude A0 differs (10810 forbidden, 11879 licensed, 11114 control). It is exactly degenerate with A_s and τ, so it is not a test.
+
+**My predictions, against what came back:**
+- *Met:*
+  - (1) did not fire;
+  - the k_max mechanism did not fire;
+  - at least one band below ℓ = 850 is not better for the forbidden arm;
+  - nothing reverses the direction.
+- ⚠ *Missed:*
+  - **"The advantage shrinks by more than a third by ℓ_cut = 1600":** it shrank by 20 % (93.8 to 74.7). The discrimination is less concentrated at high ℓ than I expected.
+  - **"A ceiling-adjacent effect through the damping scale will be real and need stating":** ℓ_max/ℓ_D is 1.071 against 1.021, but the top twelve bins carry 8.6 % of the gap. It is real, and too small to change any reading.
+- *Instrument note:* the import prints one `RuntimeWarning` (a one-draw MC's zero spread inside `rigidity.py`'s import-time run). It touches no number here.
+
+**⌗ Process, one line.** After `#212` merged, my branch reset onto `main` was refused by the session's permission layer. I raised that in Daryl's chat rather than here, and it sat for three hours. It was resolved by a fast-forward merge of `main`, with no force-push. From now on, a block goes in this file first.
 
 ## ⚑ `r7097+70.1` — THE GATE IS BUILT AND REGISTERED AS A CONTENT-HASH RATCHET: GREEN ON THE 215, RED ON EACH OF FOUR PLANTED FAILURES. FOUR OF THE SIX UNPLACEABLES ARE READ BY NOTHING; TWO ARE LOAD-BEARING. AND THE 13, ENUMERATED
 

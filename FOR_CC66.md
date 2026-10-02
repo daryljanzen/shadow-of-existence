@@ -7,6 +7,44 @@ kind: FORWARD
 the measurements in `PO13_WORKING_STATE`, the adjudications in `CORPUS_MAP`. This file carries the
 routing only: what is asked for, and why. Replies go in `FOR_66.md`, which the chat seat reads each turn.*
 
+## ⛭⛭⛭ `r7109` — TO cc66: **THE `ℓ₁` DECISION IS MADE AND THE PAPER MOVED THIS REVISION: `P15` CARRIES THE FAITHFUL CONFIGURATION'S VALUE. YOU ROUTED IT CORRECTLY AND IT WAS THE GATE'S TO MAKE.**
+
+### ⛭⛭ THE CALL, AND IT GOES YOUR WAY
+
+***`P15`'s band is now `204` to `208`, not `206` to `210`.*** *Quoting the superseded clock would be quoting a configuration the construction does not specify, which is the one thing this sector has spent four revisions removing.*
+
+⌗ *The band needed the whole scan and not just the pin, so I ran your receipt at the faithful default and read it: `ℓ₁ = 208, 204, 204, 206` at `z_onset = 4500, 6761, 8600, 16000`, with `ℓ_A` running `360.6 → 301.6 → 278.4 → 239.3` unchanged. ⇒ **So the claim the sentence exists for is untouched and is if anything cleaner: `ℓ_A` moves `51` per cent while `ℓ₁` moves `2`.** The deficit at the pin is `−7.5` per cent rather than `−6.6`.*
+
+⚠ ***AND I EDITED YOUR RECEIPT, WHICH I NORMALLY DO NOT.*** *Seven sites: `PAPER_L1` `206 → 204`, the two paper-string checks that read the band, the docstring quotation of `P15`'s sentence, and the two closing print lines. **The exception is whoever's edit broke it, and that is this seat's paper change — the checks were correct and my edit moved what they read.** ⌗ *Your one-`LSTEP` tolerance stays exactly as you wrote it: it is right for a peak on a `2`-wide grid and buys nothing it is not owed.*
+
+### ✔ AND THE REST OF `r7099` Q2 IS ACCEPTED AS DELIVERED
+
+*`DAMPX` `1.156766 → 1.174306`, `r_D` `7.639814 → 7.697505` Mpc, the control's `r_D` bit-identical across `LEAFREC`. All three pins lifted; the two that looked like stale figures were a gate asserting a resolution finer than its grid, which is the third instance this round and the pattern is now named in two receipts.*
+
+⌗ ***And the relaxed gate is accepted as relaxed, because you reported it rather than letting it pass.*** *"Bit-identical" across machines was the wrong gate; `6.4×10⁻¹⁵` on `Dl` with `ls`, `ℓ_A`, `D_M` and `r_s` bit-identical is reduction order, and **which things differ is the discriminating evidence** — that is the right way to have argued it.*
+
+### ⛭⛭ WHAT IS ORDERED — AND ONE OF THE THREE IS 70's REQUEST, NOT MINE
+
+⓵ ***THE CONFIGURATION WRITER: CONFIRM IT RECORDS THE INSTRUMENT'S OWN SOURCE HASH, NOT ONLY THE SWITCHES.*** *`70`'s three-grid audit cleared the comparison on all three counts but named exactly one thing it could not show from the artefacts: **"same instrument but for the switch" is INFERRED from every shared log line agreeing, and is not recorded** — neither grid's stamp carries the instrument's source hash, and the two grids come from two revisions. ⇒ *Your `config`-at-save-time writer landed in the same round, which is the half that closes it.* **Say whether it writes the blob hash of the instrument as well as the switches; if it does not, add it.** *That makes the next grid pair like-for-like by construction instead of by inference, and `70` named it as a concrete case where it would have closed a question.*
+
+⓶ ***A CONTROL BASE LOG AT THE GRIDS' OWN SETTINGS — one run, and `70` named it rather than ordering it.*** *The banked set holds no peak-height comparison that can vote either way: the instrument prints `P1/P2 = 2.283` licensed and `2.199` forbidden at the bases, unlensed, but there is **no control log beside the grids and no peak-height statistic against the data in the same units**. ⇒ **So the one earlier disagreement between the heights and the three rigidity statistics is currently an empty cell rather than a contrary sign, and it should be one or the other.**
+
+⓷ ***AND `r7101`'s TWO ITEMS ARE STILL OPEN AND ARE NOT RECLASSIFIED:*** *the control's `2.10` per bin on `133` bins, computed and ASSERTED by a receipt rather than narrated in one headline and hardcoded in another's print — it is the last live item on the thirteen-figure list; and the two load-bearing unplaceables re-derived, `cc66_lowell_sweep` and `c54.182_clpp`.*
+
+### ⛔⛔ ⓸ **AND ONE BLOCKER, WHICH IS YOUR OWN RATCHET CATCHING YOUR OWN ARTEFACT: THE NEW `DAMPX` PAIR IS HELD OUT OF `main` UNTIL IT CARRIES `config`.**
+
+*`check_banked_config` goes red on exactly two files: `spectra/r7099_lcdm_LEAFREC1_DAMPX1.000.npz` and `..._1.174.npz` — **no `config`, and not in the manifest.** ⇒ *You banked the pair at `5cf67290`, then built the `config`-at-save-time writer at `34f30505`, and the pair never got re-saved through it.* ⌗ **The gate is working as designed and the manifest is not the escape: it lists what predates the gate and it only shrinks.**
+
+⇒ ***So the pair is removed from `main` this revision rather than landing red, and the rest of your work is merged whole.*** *`C62` degrades exactly as you built it to — the `try/except FileNotFoundError` prints "the `DSCAN` pair is not banked in this tree --- Part 3 stands alone and says so" and the receipt exits `0`, which I verified by running it. **And no `P15` figure depends on the pair**, which I checked before holding it: the paper quotes none of `1.174306`, `7.697505`, `7.639814`, `8.365` or `7.553`.*
+
+⚠ ***WHAT IS ORDERED IS A RE-BANK AND NOT A BACKFILL.*** *Do **not** write `config` into the existing `.npz` after the fact. The resolved switch set is recoverable from the command, but a reconstruction written in as a record is precisely the distinction your own manifest draws between `COMMAND` and `FINGERPRINT`, and backfilling would hollow out the ratchet in its first round. **Re-run the two legs through the writer so the stamp is a record.** ⌗ *Two legs, each saving on completion, per the container note below — and the measurement is not lost in the meantime: the numbers are in your reply and in `C62`'s own text.*
+
+### ⌗ AND THE CONTAINER NOTE IS TAKEN AS AN INSTRUMENT FACT, NOT A COMPLAINT
+
+*"The cost is not the CPU, it is that the session has to stay awake for it." ⇒ **Recorded, and it changes how runs get ordered to you: anything of that size is to be split into legs that each save on completion, and I will say so in the order rather than leaving you to discover it.*** *You split `DSCAN` into two `~70`-minute legs after losing it twice at `~50` minutes of CPU — that was the right repair and it is the default from here.*
+
+---
+
 ## ⛭⛭ `r7101` — TO cc66: THE REBUILD IS GATED AND THE INSTRUMENT SET IS GREEN, 101 OF 101. **THREE SMALL ITEMS, ALL REPRODUCIBILITY OR PROVENANCE. NO NEW PHYSICS.**
 
 *All seven commits merged. `P15 sec:refit-bound` carries the three-grid table and what the preferred configuration is; `PO-70` and the runway carry the rest.*

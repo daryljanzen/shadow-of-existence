@@ -6640,3 +6640,36 @@ The `shape.py` path fix (`cc66.80`) carried `cc66.78`'s receipt through three se
 Verified by materialising the git index alone into a separate root (`git checkout-index --prefix`) and running both new receipts from the receipt's own directory — which is exactly what CI gives them. `cc66.78` 23/23, `cc66.79` 13/13.
 
 ⌗ Three defects of one shape in a row, each hiding the next: an absolute path to this container; files excluded by `.gitignore`; and a provenance claim that did not consult the thing deciding provenance. The lesson worth keeping is the test, not the three fixes — **a receipt is only verified when it is run from a tree built from the index alone.**
+
+## cc66.82 — `r7099` Q2: the DAMPX pair re-measured at `LEAFREC=1`, all three pins lifted, two of them tolerance defects
+
+**New pair banked and tracked:** `computations/beyond_the_wall/spectra/r7099_lcdm_LEAFREC1_DAMPX1.000.npz` and `..._1.174.npz`, carrying the `r4494` pair's provenance keys plus `LEAFREC=1`.
+
+### The number
+
+`DAMPX` 1.156766 → **1.174306** = 1.08365410². The arm's diffusion scale at the visibility peak goes `r_D` 7.639814 → 7.697505 Mpc, i.e. +7.553% on the stacking rate against **+8.365%** on the leaf — back toward the `~9%` the row originally carried. The control's `r_D` is **bit-identical** across `LEAFREC` (the provable no-op), asserted in `C62`.
+
+### The configuration proof, and a gate of mine restated
+
+I required the `DAMPX=1.0` leg to come back **bit-identical** to banked `r4494_lcdm_DAMPX1.000`. Measured: `ls`, `l_A`, `D_M`, `r_s` bit-identical; `Dl` to **6.4e-15 relative** (~29× machine epsilon). That is reduction order, not physics — a different configuration moves a scalar or the abscissa by orders more. The banked file was built by node 60 at `r4502` under a different BLAS thread count. "Bit-identical" was too strict for a cross-machine comparison; recorded rather than passed over.
+
+### Two pins were tolerance defects, not stale figures
+
+`C62` lifted cleanly (re-measures the ratio live; its pair was the thing re-run). The other two failed because a check demanded **exact** equality of a peak located on a coarse ℓ grid:
+
+| receipt | moved | grid | one bin? |
+|---|---|---|---|
+| `C63` `cr SWSRC=0` | 444 → 436 at `LMAXL=520` | `LSTEP=8` | 8 = yes |
+| one-fitted-number | `l_1` 206 → 204 at the pin | `LSTEP=2` | 2 = yes |
+
+`C63`'s was settled by measurement: the same leg at `LMAXL=1300`, `LEAFREC=1` returns **444** — unchanged — so 444 is not clock-sensitive and the 436 is the 520 locator one bin short. Seven of eight legs reproduce exactly on both clocks. Both checks now tolerate exactly one `LSTEP` and name in their output which legs are exact; the exact matches are still asserted exact.
+
+Third instance this round of a gate surviving on a coincidence, after `C41b`'s literal `8.2\%` and `R1`'s `likelihood` count — the shape is a check asserting a resolution finer than the measurement it reads.
+
+### Routed, not decided
+
+At the faithful configuration the arm's first peak is **`l_1` = 204** where `P15` quotes 206. The paper is unchanged and nothing is blocked (the one-bin tolerance passes). If `P15` should carry the faithful value, 206 → 204 and its derived figures move — a paper change, which is the boundary `r7099` drew for itself over the diffusion figures.
+
+### Environment finding
+
+**This container is reclaimed when the session goes idle, not on a wall clock.** The `DSCAN` pair died twice, once at ~50 min of CPU, because `DSCAN` writes nothing until the whole solve completes. Split into two independently-saving legs (more total work, monotone progress) and landed by holding the session active ~2.5 h; each leg is ~70 min CPU. Worth knowing before ordering a run of this size: the cost is the session staying awake, not the CPU.

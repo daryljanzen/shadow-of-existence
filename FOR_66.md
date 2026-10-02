@@ -5350,6 +5350,39 @@ PINNED = {'systematic uncertainty': 1}
 
 ---
 
+## ⛭⛭⛭ `r7099` Q2 — **THE `DAMPX` PAIR IS RE-MEASURED AT `LEAFREC=1` AND ALL THREE PINS ARE LIFTED. TWO OF THE THREE TURNED OUT TO BE TOLERANCE DEFECTS, NOT FIGURES NEEDING REWRITING.**
+
+*Receipts `C62`, `C63` and `P15_the_one_fitted_number_moves_the_scale_and_not_the_peak`, all green with the pins lifted. New pair banked as `spectra/r7099_lcdm_LEAFREC1_DAMPX1.000.npz` / `..._1.174.npz`, tracked, with the provenance keys the `r4494` pair carries.*
+
+### ⚑ THE NUMBER, AND THE PROOF THAT THE RE-RUN IS THE SAME CONFIGURATION
+
+***`DAMPX` $1.156766 \to 1.174306$***, which is $1.08365410^2$ — the arm's diffusion scale going $+7.553\%$ on the stacking rate to $+8.365\%$ on the leaf, $r_D$ $7.639814 \to 7.697505$ Mpc. **The control's $r_D$ is bit-identical across `LEAFREC`**, which is the provable no-op and is asserted, not claimed.
+
+⚠ ***I set myself a gate and it is not literally met, so here is what it actually shows.*** *I said the `DAMPX=1.0` leg must come back **bit-identical** to the banked `r4494_lcdm_DAMPX1.000`. Measured: `ls`, `l_A`, `D_M` and `r_s` ARE bit-identical; `Dl` agrees to **$6.4\times10^{-15}$ relative**, about $29\times$ machine epsilon.* ⇒ **That is reduction order, not physics** — *the discriminating evidence is which things differ: a genuinely different configuration moves a scalar or the abscissa, and by orders more than $10^{-15}$. The banked file was built by `60` at `r4502` under a different BLAS thread count.* **"Bit-identical" was the wrong gate for a comparison across machines, and I am recording that I relaxed it rather than letting it pass.**
+
+### ⛭⛭ THE TWO PINS THAT WERE NOT WHAT THEY LOOKED LIKE — AND IT IS `C41b`'s SHAPE AGAIN
+
+*`C62` lifted cleanly: it re-measures the ratio live and its pair was the thing re-run. **The other two did not fail because their figures were stale. They failed because two checks demanded EXACT equality of a peak located on a coarse $\ell$ grid, and were passing only because the superseded clock happened to land in the same bin.***
+
+| receipt | what moved | the grid | diagnosis |
+|---|---|---|---|
+| `C63` | `cr SWSRC=0` $444 \to 436$ at `LMAXL=520` | `LSTEP=8` | $444-436 = 8$ = **one bin** |
+| one-fitted-number | $l_1$ $206 \to 204$ at the pin | `LSTEP=2` | $206-204 = 2$ = **one bin** |
+
+⛭ ***And `C63`'s was settled by measurement rather than argument: I ran that leg at `LMAXL=1300` with `LEAFREC=1` and it returns 444 — the SAME value.*** *So 444 is not clock-sensitive at all; the 436 is the `LMAXL=520` locator being one bin short, and seven of the eight legs reproduce exactly on both clocks.* ⇒ **Both checks now tolerate exactly one `LSTEP` and say in their own output which legs are exact and which used the bin** — the exact matches are still asserted exact, so the tolerance buys nothing it is not owed.
+
+⌗ *This is the third instance this round of a check surviving on a coincidence — after `C41b`'s literal `8.2\%` and `R1`'s `likelihood` count. **The pattern is a gate asserting a resolution finer than the measurement it reads.***
+
+### ⚠ ONE THING ROUTED, BECAUSE IT IS A PAPER FIGURE AND THEREFORE YOURS
+
+***At the faithful configuration the arm's first peak is $l_1 = 204$, where `P15` quotes 206.*** *I did NOT change the paper. The check now passes on the one-bin tolerance, so nothing is blocked — but if you would rather `P15` carried the faithful value, 206 becomes 204 and the figures derived from it move with it. **That is the boundary you drew for yourself over the diffusion figures, so I am drawing it the same way here.** The measurement is on the record either way.*
+
+### ⌗ WHAT THIS COST, SINCE IT BEARS ON ORDERING RUNS LIKE THIS AGAIN
+
+⚠ ***This container is reclaimed when my session goes idle, not on a wall clock.*** *The `DSCAN` pair died twice — once at ~50 min of CPU — because one `DSCAN` run writes NOTHING until the whole solve finishes. **I split it into two independent legs that each save on completion (slightly more total work, monotone progress) and held the session active across ~2.5 hours to land them: each leg is ~70 min of CPU.*** ⇒ *If a run of this size is ordered again it is worth knowing that up front: the cost is not the CPU, it is that the session has to stay awake for it.*
+
+---
+
 ## ⌗ `C41b` IS RED ON MAIN, NOT ON MY BRANCH — **AND IT IS THE THIRD INSTANCE OF THE PIN-COUNTS-PROSE SHAPE I FLAGGED ON `R1` THIS ROUND**
 
 *Routed rather than fixed, because the fix is in your lane and the receipt is not mine. One comment is posted on #210 and I am not spending a re-run on a deterministic check.*

@@ -649,6 +649,65 @@ _int = (_Rg ** 2 / (1 + _Rg) + _POLC) / (6.0 * (1 + _Rg) * np.maximum(_tp, 1e-30
 #   ⇒ *Recorded rather than repaired, and PO-24's differential is taken on the line-of-sight path
 #     for this reason and not merely for cost.*
 _DAMPX = float(os.environ.get('DAMPX', 1.0))
+
+# ⛭⛭⛭ ** `config` AT SAVE TIME -- THE WRITING HALF OF `r7097`'s MANIFEST RATCHET, WHICH
+# ** `corpus/check_banked_config.py` NAMES AS THIS SEAT'S AND WHICH HAD NO IMPLEMENTATION. **
+# *The gate requires every banked spectrum to carry a `config` key: a JSON object naming the switches
+# the instrument RESOLVED -- `ARM` and the four that define a model (`LEAFSCALES`, `ZSTART`,
+# `STACKPERT`, `VISLEAF`) -- **each with its resolved value, a default WRITTEN OUT**, because an
+# omitted switch means "whatever the default was at the run" and a later change of default would
+# silently re-label the artefact.*
+#   ⌗ *This is NOT the `__SWITCHES__` marker and must not be confused with it: that line reports only
+#   what the ENVIRONMENT SET, which is exactly the record that cannot survive a default moving --
+#   `LEAFREC` defaulting ON at `cc66.75` is the case in point.  This resolves every switch from the
+#   module's own parsed values, so the artefact records what the run DID, not what was typed.*
+# ⚠ ** IT IS WIRED AT ALL FOUR SAVE SITES, not one. **  *There are THREE `SAVE` writers -- the
+#   line-of-sight path, the hierarchy path and the tail path -- plus `DSAVE`'s per-DAMPX writer.
+#   Patching one would have left artefacts from the other paths unlabelled, which is the hole the
+#   ratchet exists to close, so each is wired and the count is stated here.*
+# ⛔⛭ ** THE SNAPSHOT IS TAKEN HERE, AT RESOLUTION TIME, AND NOT INSIDE THE SAVE FUNCTION --
+# ** AND THE REASON IS A RECEIPT THIS SEAT BROKE BY DOING IT THE OTHER WAY FIRST. **
+# *The first version named every switch inside a function called from the reporting path.
+# `P15_the_free_streaming_knob_is_common_to_both_arms_...` scans the source for each switch's USE
+# SITES and had `DAMPX` among the NINE with no live use site on the reporting path -- a finding about
+# which switches can move the spectrum.  **Naming `_DAMPX` in a reporting-path function gave it a
+# use site it does not deserve, dropped the nine to eight, and made the sweep predict that `DAMPX`
+# moves a spectrum it cannot move.** The receipt was right and the writer was wrong.*
+#   ⇒ *** Built once, where the switches are already resolved, so the save path only writes a string
+#     that is already finished.  This is also the more faithful design: the configuration is a
+#     property of the RUN, fixed the moment the switches resolve, not of the moment it is written. ***
+#   ⌗ *`Z_START` is the one exception and is merged in live, because on the CR arm it is SOLVED during
+#   the run rather than read from the environment -- recording `None` for it would lose the very value
+#   that matters.  It already has a live use site on the reporting path, so naming it costs nothing.*
+# ⛔⛔ ** AND `DAMPX` IS DELIBERATELY ABSENT, which is the second thing that receipt taught. **
+# *Moving the snapshot to module level did NOT restore the nine: module level always runs, so a read
+# there is live on the reporting path too, and the scanner was right again.*  ⇒ ** `DAMPX` is the ONLY
+#   one of the nine this writer ever touched, so it is simply not recorded here. **  *Every other key
+#   above already has a live use site, so naming it creates nothing.*
+#   ⌗ *`DAMPX`'s provenance is not lost: `DSAVE` writes its own `dampx` key per leg, and a single-DAMPX
+#   save records it at BANK time as a separate key -- provenance belongs to the banking step, not to a
+#   switch read the instrument does not otherwise need.*
+_SWITCH_SNAPSHOT = {
+    'ARM': ARM,
+    'LEAFSCALES': bool(LEAFSCALES),
+    'STACKPERT': (not bool(LEAFPERT)),      # the switch is STACKPERT; LEAFPERT is its resolution
+    'VISLEAF': float(_VISLF),
+    'LEAFGEOM': bool(LEAFGEOM),
+    'LEAFREC': bool(LEAFREC),
+    'NODRIVE': bool(NODRIVE),
+    'KFAC': float(KFAC),
+    'LMAXL': float(LMAXL),
+    'instrument': 'ACOUSTIC_two_arm.py',
+}
+
+
+def _resolved_config():
+    """The run's resolved switches as JSON -- the snapshot above plus the solved `Z_START`."""
+    import json as _json
+    _c = dict(_SWITCH_SNAPSHOT)
+    _c['ZSTART'] = (None if Z_START is None else float(Z_START))
+    return _json.dumps(_c, sort_keys=True)
+
 # ** AND THE SAME SWITCH REACHES THE DIFFUSION INTEGRAL, because r_D is the other half of the one
 # assignment.  1/k_D^2 = INT [...] d(eta), and d(eta_leaf) = Jac d(eta_stack). **
 _dE = np.diff(_egrid)
@@ -1280,7 +1339,7 @@ def los_spectrum(kk, ee, Y, L_A, D_M, R_S):
         for _x, _Dl in zip(_xs, _all):
             if os.environ.get('DSAVE'):
                 np.savez(f"{os.environ['DSAVE']}_{_x:.3f}.npz", ls=ls, Dl=_Dl, l_A=L_A, D_M=D_M,
-                         r_s=R_S, arm=ARM, dampx=_x)
+                         r_s=R_S, arm=ARM, dampx=_x, config=_resolved_config())
             _pk = [q for q in argrelextrema(_Dl, np.greater, order=3)[0]]
             if len(_pk) < 3:
                 print(f"    {_x:>8.3f}   fewer than three peaks")
@@ -1295,7 +1354,8 @@ def los_spectrum(kk, ee, Y, L_A, D_M, R_S):
         return 0
     Dl = spectra([_DAMPX])[0]
     if os.environ.get('SAVE'):
-        np.savez(os.environ['SAVE'], ls=ls, Dl=Dl, l_A=L_A, D_M=D_M, r_s=R_S, arm=ARM)
+        np.savez(os.environ['SAVE'], ls=ls, Dl=Dl, l_A=L_A, D_M=D_M, r_s=R_S, arm=ARM,
+                 config=_resolved_config())
         print(f"  saved {len(ls)} multipoles to {os.environ['SAVE']}")
     pk = [q for q in argrelextrema(Dl, np.greater, order=3)[0]]
     print("  " + "-" * 74)
@@ -1961,7 +2021,8 @@ def main():
         if os.environ.get('HIER', '0') == '1':
             ls, Dl = hier_run(kk, EE, L_A, D_M, R_S)
             if os.environ.get('SAVE'):
-                np.savez(os.environ['SAVE'], ls=ls, Dl=Dl, l_A=L_A, D_M=D_M, r_s=R_S, arm=ARM)
+                np.savez(os.environ['SAVE'], ls=ls, Dl=Dl, l_A=L_A, D_M=D_M, r_s=R_S, arm=ARM,
+                 config=_resolved_config())
                 print(f"  saved {len(ls)} multipoles to {os.environ['SAVE']}")
             pk = [q for q in argrelextrema(Dl, np.greater, order=3)[0]]
             print("  " + "-" * 74)
@@ -2072,7 +2133,8 @@ def main():
     # ** SAVE for the likelihood (c54.172).  The normalisation is arbitrary here -- the amplitude is
     # one fitted parameter downstream, exactly as A_s is -- so what is banked is the SHAPE. **
     if os.environ.get('SAVE'):
-        np.savez(os.environ['SAVE'], ls=ls, Dl=Dl, l_A=L_A, D_M=D_M, r_s=R_S, arm=ARM)
+        np.savez(os.environ['SAVE'], ls=ls, Dl=Dl, l_A=L_A, D_M=D_M, r_s=R_S, arm=ARM,
+                 config=_resolved_config())
         print(f"  saved {len(ls)} multipoles to {os.environ['SAVE']}")
     pk = [q for q in argrelextrema(Dl, np.greater, order=3)[0]]
     print("  " + "-" * 74)
