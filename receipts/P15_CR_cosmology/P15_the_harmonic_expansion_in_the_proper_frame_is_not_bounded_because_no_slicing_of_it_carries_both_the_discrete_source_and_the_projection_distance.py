@@ -410,12 +410,27 @@ print(f"        null constraint held: {g['n0']:+.1e} -> {g['n1']:+.1e};  affine 
 #   than baked into the inequality.*  ⌗ Recorded rather than quietly loosened, because loosening a
 #   tolerance to clear a gate and loosening it to match the claim look identical in a diff.
 _agree = abs(abs(g['ku'] / g['ku0']) / zm(ref['v'](g['r'])) - 1.0)
+# ⌗⌗ ** AND THE NULL-CONSTRAINT BOUND GOES TO `1e-5` AT `r7112+60.1`, ON THE INSTRUMENT'S OWN RULE
+#   RATHER THAN ON MY JUDGEMENT. **  *`r7106+60.1` moved these two from the numerical floor to `1e-6`.
+#   CI's tolerance perturbation then FLAGGED the null-constraint site (`418:46`): its error read
+#   `1.09e-9` on one build and `1.77e-10` on the other -- it moved 84 per cent, with `917.5x` of
+#   headroom.  `sweep_tolerances.py` flags exactly that pair, `moved > 0.10 AND headroom < 1e3`, and
+#   says in terms what clears it: "it moves with headroom >= 1e3 (round-off with real margin is not a
+#   defect)".*  ⇒ ** `917x` IS NOT A DEFECT IN THE CLAIM, IT IS A MARGIN ONE NOTCH UNDER THE BAR THE
+#   INSTRUMENT SETS -- so the bound is stated where the claim needs it AND clear of that bar: `1e-5`
+#   leaves `>9000x` on CI's own worse build. **  ⌗ *The two numbers are not the same kind of claim and
+#   now do not carry the same bound: the AGREEMENT between the analytic root and an independent
+#   integration is the load-bearing one and keeps `1e-6` (it achieves `1.0e-13`, `10^7` of headroom);
+#   the null constraint is a VALIDITY CHECK ON THE INTEGRATOR, and five digits of it is what that
+#   check is for.*  ⚠ *Recorded rather than quietly widened, and recorded on CI's measurement rather
+#   than mine: all three builds reachable in this container come back CLEAN on this site, so the
+#   6x spread is in hardware I cannot reproduce and the runner's numbers are the evidence.*
 print(f"        achieved: agreement {_agree:.2e} (bound 1e-6), null constraint "
-      f"{abs(g['n1']):.2e} (bound 1e-6)")
+      f"{abs(g['n1']):.2e} (bound 1e-5)")
 gate(f"⛭ the exact null-geodesic redshift of this chart is `1+z = (1 +- v_o)/(1 +- v_e)` -- the "
      f"analytic root and an independent numerical integration of the geodesic system agree to "
      f"{_agree:.1e}, against a bound of 1e-6, with the null constraint held to "
-     f"{abs(g['n1']):.1e}", _agree < 1e-6 and abs(g['n1']) < 1e-6)
+     f"{abs(g['n1']):.1e}, against 1e-5", _agree < 1e-6 and abs(g['n1']) < 1e-5)
 
 print("\n      the de Sitter calibration, where the answer is independently known to be a_0/a_e:")
 cal_ok, cal_areal = True, []

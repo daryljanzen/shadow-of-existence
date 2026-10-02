@@ -1,0 +1,15 @@
+# PROSE-PIN recall on historical blobs: C41b at 34c27bf3^, R1 at 7152ceaf
+
+  PROSE-PIN: 4 site(s) in 2 receipt(s)
+    [PROSE-PIN ][PRESENCE] receipts/C41b_old.py:105:10  _n82 >= 1
+    [PROSE-PIN ][PRESENCE] receipts/C41b_old.py:112:10  len(re.findall(r'\\sim', p15)) > 0
+    [PROSE-PIN ][PIN] receipts/R1_old.py:166:0  check("cosmic variance occurs twenty-five times (24 before r6831's low-multipole floor)", cosmic, 25)
+    [PROSE-PIN ][PIN] receipts/R1_old.py:243:0  check("the control word is found, and P15 carries thirty-six "
+      "(35 before r7091's rigidity landing, 33 before r7035's sky-floor passa
+# and on the current blobs
+
+  PROSE-PIN: 3 site(s) in 2 receipt(s)
+    [PROSE-PIN ][PRESENCE] receipts/P15_CR_cosmology/C41b_a_tilde_on_a_settled_value_is_a_stale_hedge.py:129:10  len(re.findall(r'\\sim', p15)) > 0
+    [PROSE-PIN ][PIN] receipts/L_probability/R1_the_whole_footprint_is_three_geometry_words.py:166:0  check("cosmic variance occurs twenty-five times (24 before r6831's low-multipole floor)", cosmic, 25)
+    [PROSE-PIN ][PIN] receipts/L_probability/R1_the_whole_footprint_is_three_geometry_words.py:270:0  check("the control word is FOUND, in quantity, so the nine absences are absences and not blindness "
+      "-- asserted as a FLOOR of twenty

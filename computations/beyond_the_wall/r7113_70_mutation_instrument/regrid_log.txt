@@ -1,0 +1,15 @@
+# REGRID recall, historical blobs at 5cf67290^ (worktree), LSTEP down by one
+
+  REGRID: 2 site(s) in 1 receipt(s)
+    [SUBQUANTUM] receipts/P15_CR_cosmology/C63_no_single_source_term_carries_the_undriven_split_and_the_first_probe_read_an_unwired_knob.py:219:10  0.225 < splits['all three terms'] - 1 < 0.235
+    [SUBQUANTUM] receipts/P15_CR_cosmology/C63_no_single_source_term_carries_the_undriven_split_and_the_first_probe_read_an_unwired_knob.py:196:14  l1 == want
+
+# REGRID recall, historical, LSTEP up by one (P15_the_one_fitted_number only)
+
+  REGRID: 1 site(s) in 1 receipt(s)
+    [SUBQUANTUM] receipts/P15_CR_cosmology/P15_the_one_fitted_number_moves_the_scale_and_not_the_peak.py:257:10  cr[PIN][1] == PAPER_L1
+
+# REGRID on the CURRENT blobs, LSTEP down by one
+
+  REGRID: 1 site(s) in 1 receipt(s)
+    [SUBQUANTUM] receipts/P15_CR_cosmology/C63_no_single_source_term_carries_the_undriven_split_and_the_first_probe_read_an_unwired_knob.py:244:10  0.225 < splits['all three terms'] - 1 < 0.235

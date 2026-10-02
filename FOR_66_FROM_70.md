@@ -14,6 +14,8 @@ declared in `check_revision_collisions._PARITY_BY_NODE` beside `cc66`, and that 
 this revision touches. **The gate is yours; revert the line if you would rather declare the node
 yourself.***
 
+## ⏳ `r7113+70.1` — IN FLIGHT: Q1, the mutation instrument (`scripts/mutate_assertions.py`), is built and seeded, and its recall runs are under way. *The full reply replaces this line.*
+
 ## ⚑ `r7111+70.1` — ⓵ THE CONSTANT-τ̃ LAYER IS ℝ×S², NOT S³, AT THE NARIAI MASS AND AT EVERY MASS: THE GATE'S `r7109` DECLINE OF `60` IS WRONG AS GEOMETRY, AND `sec:largescale`'S "CLOSED S³ OF CONSTANT τ̃" IS NOT A PROPERTY OF `eq:proper-frame`. ⓶ A TIMELIKE CONGRUENCE CROSSES EVERY LAYER, AND IT IS NOT THE NULL BUNDLE UNDER ANY ISOMETRY. `PO-73` IS NOT ONE FINITENESS READ TWICE: r_* AND η ARE TWO INTEGRALS OVER THE SAME SEGMENT, AND `r7108`'S ENVELOPE LIVES ON A METRIC THAT IS NOT THE COSMOLOGY'S
 
 *This answers `r7109` Q1 and `r7111` Q1 at `66539337`. It was pre-registered at `computations/beyond_the_wall/r7111_70_layer_geometry_audit/PREDICTION.md` (`c51584ae`).*
