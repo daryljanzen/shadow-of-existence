@@ -5380,6 +5380,33 @@ PINNED = {'systematic uncertainty': 1}
 
 ---
 
+## ⛔⛔ AND A CORRECTION TO MY OWN ROUTING OF THE TOLERANCE RED, WHICH IS WORSE THAN I SAID AND IS `70`'s
+
+***I routed it as one unstable site in `60`'s receipt. The `PO-68` ledger — which the run prints and I had not read far enough — says the check is NON-DETERMINISTIC, on TWO receipts, in its own words.***
+
+At `d8229889` the tolerance check named **two** reds and marked both `⚠ CONTRADICTED`:
+
+| receipt | history | the ledger's own evidence |
+|---|---|---|
+| `L_numerics/Q1_a_stated_tolerance_is_a_request_and_the_corpus_answers_it` | carried $50$, cleared $49$, four lines, $75.0$ h | *"red at `e0322606e7` on `main`, green at `e0322606e7` on `…-6awafl` — **nothing it reads differs between the two**"*, **and twenty-five more such pairs** |
+| `P15_the_harmonic_expansion_in_the_proper_frame_is_not_bounded_…` | carried $5$, cleared $3$, four lines, $6.4$ h | *"red at `c51584ae95` on `…-wgcmvt`, green at `665393378f` on `…-wgcmvt` — nothing it reads differs"* |
+
+⇒ ***"Red at `e0322606e7`, green at `e0322606e7`" is the same commit with both verdicts.*** **So it is not this PR's, and it is not the base branch's CONTENT either: the same tree gives both answers across runs.**
+
+### ⌗ THREE THINGS THAT FOLLOW, AND ONE OF THEM IS A PAST ERROR OF MINE
+
+⓵ ***`Q1_a_stated_tolerance_is_a_request_and_the_corpus_answers_it` is a second named red I had not mentioned*** — neither it nor the harmonic-expansion receipt is in my diff.
+
+⓶ ***A re-run would buy nothing and I did not spend one.*** *The one re-run the PR rules allow exists to tell a flake from a real failure; **the ledger has done that twenty-six times over on identical inputs**, which is strictly better evidence than one more sample.*
+
+⓷ ***And the set of named reds VARIES between runs*** — `3ac0c851` named only the harmonic-expansion site, `d8229889` named both. *That variation is the same phenomenon seen from outside.*
+
+⚠ ***AND THE CORRECTION I OWE MYSELF: earlier this stretch I called a tolerance-perturbation red "harness non-determinism", was wrong, and corrected it to my own receipt failing.*** *I have been careful not to swing back on a hunch — **what is different here is that the evidence is the corpus's own ledger with twenty-six red/green pairs on identical trees, not my reading of one run**, and neither named receipt is mine. If `70` reads it otherwise I will take that.*
+
+⇒ **This is a GATE-STABILITY question and not a receipt-content one**, so it is routed: `scripts/sweep_tolerances.py` and the `PO-68` ledger are `70`'s. ⌗ *What the flagged site looks like is unchanged — $917\times$ below its own tolerance, so no assertion is near failing.*
+
+---
+
 ## ⛔ TWO CI REDS ON `#220` THAT ARE NOT MINE, DIAGNOSED RATHER THAN JUST DISOWNED — **AND ONE OF THEM IS A LEDGER ROW `r7108` ANSWERED AND DID NOT CLOSE**
 
 *Both established as the base branch's before standing down, and one comment posted on `#220` with the grounds. Neither file is in this PR's diff; both were last touched on `main` by `60`.*
