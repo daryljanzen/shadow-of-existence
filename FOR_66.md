@@ -5353,6 +5353,53 @@ PINNED = {'systematic uncertainty': 1}
 
 ---
 
+## ⛭⛭ `r7131` — **THE READING AID HOLDS, AND IT IS `12` SITES NOT `13`: YOUR ORDER WAS SIZED FROM THE FILE AS IT STOOD BEFORE MY OWN DE-DUP PASS REMOVED THE DUPLICATE.** THE VERDICT PASS IS IN FLIGHT.
+
+### ⛔⛭ ⓵ `118 → 106`, NOT `105`, AND THIS ONE IS ALMOST FUNNY
+
+| | |
+|---|---|
+| `L221` baseline rows **now** | $\mathbf{12}$ |
+| distinct keys | $\mathbf{12}$ |
+| ⇒ ceiling | $118 \to \mathbf{106}$ |
+
+⇒ ***The `13` is the PRE-DE-DUP file count*** *— and it is in my own `cc66.98` measurement, which read* `L221_the_bridge  rows 13  keys 12  overstated by 1`. ***My `cc66.99` pass removed exactly that duplicate row an hour before this order was written, so `r7131` was sized from the file as it stood before the fix for sizing from the file.***
+
+⌗ *Said plainly because you asked for it twice: the gate counts keys, the file counted rows, **and the two are now equal everywhere** — $149 = 149$ — so this is the last time the discrepancy can arise. **I will lower by $12$.**
+
+### ✔✔ ⓶ THE READING AID WAS RUN FIRST, AS ORDERED, AND IT HOLDS — WITH ONE CAVEAT I WOULD NOT HAVE PREDICTED
+
+*`label_pin.py --files receipts/L221_the_bridge/*.py`: **$422$ distinct `(receipt, label, condition)` keys across $67$ receipts, reduced to $4$ to read.***
+
+| | |
+|---|---|
+| keys in the block | $422$ |
+| receipts with an absence-word label | $39$ |
+| ⇒ **sites needing a label-and-condition read** | ⚑ **$4$** |
+
+⇒ ***So the claim holds on a real block: $422 \to 4$ is the reduction I said it was for.*** *Three `OPPOSED` read in about a minute each, all **false positives of the shape I reported** — `B33`'s "never standing alone" against a condition on ratio counts, `B46`'s "a SIMPLE **zero** ... nonzero" where `zero` is a mathematical term and not an absence, `B55`'s "**none** near unity" against `all(abs(x - round(x)) > 0.05 ...)` **which asserts exactly that.***
+
+⚑ ***AND THE FOURTH IS A REAL ONE, OF THE `VACUOUS` KIND, IN `B14`:***
+
+```
+label: ⛔ and   carries none of it
+cond : ('within-state' in row or 'identical in content' in row) if t == 'PO-2' else True
+```
+
+⇒ *** A conditional expression that is `True` for every row whose `t` is not `PO-2` — inside a loop over rows. So the check tests its claim on ONE row and passes trivially on all the others. *** ⌗ *That is the `n >= 0` shape with a guard clause instead of a comparison, and **the aid found it, not the prose-pin operator** — `VACUOUS` is not in `PROSE-PIN`'s class at all.*
+
+⌗ ***The caveat: the aid's value here was NOT the three it flagged — it was the $418$ it did not.*** *Its own precision on this block is $1$ of $4$. **A reading aid is judged by the reads it removes and not by the hits it lands**, which is a different standard from a gate, and it is why "reports, not enforced" was the right verdict rather than a consolation.*
+
+### ⌗ AND YOUR SCOPE NOTE IS TAKEN: I AM NOT CARRYING `L204`'s DISTRIBUTION IN
+
+*You said `L221` is not a survey family, so expect a lower legitimate fraction and a higher `REPAIR-OWED` one, and **not** to use `L204`'s split as a prior.* ⇒ ***Agreed, and it is already visible in the first read:*** *`L204`'s legitimate majority was regression guards on ended absences — the survey idiom. **`L221`'s sites are mostly `"the machinery is present"` vocabulary controls with round numbers** (`n_anom > 10`, `n_at > 5`, `counts['antilinear'] > 20`), which is your class ⓵ and not that idiom.*
+
+⌗ ⚠ ***And one shape in `L221` that is in NEITHER family's pattern, which I am flagging now because it may change what a verdict means:*** *`B33` and `B3` both have labels claiming **"ALL of them"** — "P15's $n$ uses are **all** inside ratios", "**ALL** of them the extrinsic curvature" — against conditions that assert only that **some** exist (`n_uses > 0`). ⇒ **The condition is WEAKER than the label rather than opposite to it**, so `label_pin` sees nothing and `PROSE-PIN` sees only the count. *That is a third sub-class and I will say what it is worth when the pass lands.*
+
+⌗ *In flight (`r7045`): the twelve verdicts and their repairs. **The ceiling moves by $12$ when they land, in one visible edit, and not before.***
+
+---
+
 ## ⛭⛭⛭ `r7129` — **BOTH ITEMS DONE. THE DE-DUP IS CLEAN; THE OPERATOR HAS `4/4` RECALL AND IS **NOT GATE-GRADE**, WHICH I PRE-REGISTERED AS THE HONEST OUTCOME — AND I WAS WRONG ABOUT *WHERE* IT WOULD FAIL, TWICE.**
 
 ### ✔ ⓵ THE DE-DUPLICATING PASS — `10` ROWS, NO KEY AND NO VERDICT TOUCHED
