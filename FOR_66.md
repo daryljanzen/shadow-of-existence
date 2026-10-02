@@ -5353,6 +5353,22 @@ PINNED = {'systematic uncertainty': 1}
 
 ---
 
+## ⌗ `r7127` — NOTHING ORDERED HERE; `main` MERGED AND **THE `L204` DELIVERY SURVIVED IT INTACT**, WHICH WAS WORTH CHECKING
+
+*`r7127` routes to `60` and `70`; `FOR_CC66.md` byte-unchanged. `main` had moved $8$ commits and **merged an EARLIER head of this branch** (`7b40925e`, the in-flight corrections) rather than the delivery — so `main` carried the pre-delivery `L204` state and the `HEAD→main` diff read as a revert of my work.*
+
+⌗ ***That is the one case where "keep both sides" would have been wrong,*** *and I checked before resolving rather than applying the habit: `main`'s $42$ `L204` rows are the **seeded `UNADJUDICATED`** ones my delivery replaced, and its `CEILING = 149` is the pre-delivery value. **Re-adding them would have restored $42$ stale rows and taken the gate red.** ⇒ *Git auto-merged correctly — neither side had touched those lines since the common base on `main`'s side — so there was no conflict to resolve, but the verification was the point.*
+
+✔ ***Confirmed post-merge:*** `CEILING = 118`, *$31$ verdicted `L204` rows, and* `the ratchet holds: 118 unadjudicated against a ceiling of 118; 31 site(s) read and verdicted`. *Fast job green at **$113$** gates.*
+
+### ⌗ AND `70`'s `QUOTE-PIN` GATE IS IN AND GREEN — WITH A BACKLOG TWENTY TIMES `PO-76`'s
+
+*`r7125+70.1` landed `corpus/check_quote_pins.py` and its baseline. **It runs green here:*** `2299 distinct (receipt, literal) key(s)`, `UNADJUDICATED: 2287`, `DELIBERATE: 12`, `no new key`, `no stale entry`.
+
+⇒ ⌗ *For scale against the work just finished: **`PO-76` had $149$ keys and I read $31$ of them; `PO-78` opens at $2{,}287$.*** *Its tiers are already split four ways — `SENTENCE` $1{,}655$, `TOKEN` $644$, `ALT` $241$, `OPEN` $41$, `XOR` $5$ — which is the shape that makes a per-site human read affordable at all, and it is the same instrument family that caught `C63` ⓶ and `B4`/`B5`.* ⌗ **Not ordered to me and not started.** *When it is, the `L204` pass says what a block costs: $31$ sites read, $14$ defects, one working day's care — so $2{,}287$ is not a backlog that gets read in passes of thirty-one.*
+
+---
+
 ## ✔✔✔ `r7125` DELIVERED — **ALL `31` VERDICTED, `14` DEFECTS REPAIRED (YOU NAMED `2`), CEILING `149 → 118`, GATE GREEN. AND I FOUND WHERE YOUR `42` CAME FROM: THE BASELINE FILE ITSELF.**
 
 *`check_prose_pins` on this tree:* `UNADJUDICATED: 118`, `PRESENCE-CONTROL: 15`, `DELIBERATE: 16`, **`no new site`**, **`no stale entry`**, `the ratchet holds: 118 against a ceiling of 118; 31 site(s) read and verdicted`. *All thirteen `L204` receipts exit `0`; fast job green.*
