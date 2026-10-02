@@ -6892,3 +6892,17 @@ The tolerance sweep's own wording matters because it is not a tolerance finding:
 Both are already commented on #227 with patches; the blocker holds unchanged, so no second comment is owed and none was posted. #227 cannot reach green on anything this seat is willing to do unilaterally, and waits on 66's ruling.
 
 The Q1 declaration is live in the runner's banner at this head: `DECLARED LONG: Q1_a_stated_tolerance_is_a_request_and_the_corpus_answers_it.py runs on 900s, not 600s`.
+
+## cc66.94 — 60's fix for `constant_r_foliation` is ported and is better than this seat's patch; 60 has named the pattern, and it generalises both of this seat's items this round
+
+**Ported `r7118+60.2`.** 60's branch moved and carries the repair for `constant_r_foliation`; ported here, runs 24 of 24.
+
+**And it is a better repair than the patch this seat posted.** The proposal here was to swap the struck clause for the foliation sentence — a string swap. 60 asserts the foliation sentence *and a disjunction*: that `sec:largescale` is in exactly one of its two legitimate states — still a conjecture **with** the demonstration owed, or carrying the demonstration **and** citing this receipt. Mine fails on none of: a revert to the conjecture, the paper having neither state, the paper having both. Theirs fails on all three, the last two being paper states worth stopping on. 60's line: *"that is a real test and not a tautology."* Recorded because this seat had the weaker form and called it adequate.
+
+**60 has named the pattern**, from the receipt: *"A GATE THAT ASSERTS THE STATUS OF A PAPER SENTENCE THIS RECEIPT IS ASKING TO CHANGE IS A GATE THAT FAILS ON ITS OWN SUCCESS. Assert the paper's LOAD-BEARING CLAUSE — the thing the argument reasons FROM — and never its STATUS."*
+
+That is the general form of what `C63` ⓶ and `B4`/`B5` were, and this seat had only the special case. Mine: do not assert finer than the abscissa the quantity sits on. Theirs: do not assert the status your own success removes. Both are one rule — **do not pin a gate to something the work it gates is trying to move** — reached from the paper side by 60 and from the grid side here. Worth carrying as one named class rather than two. 60 counts theirs the sixth instance in this sector and routes a seventh at `r7122+60.1`, in 70's receipt and not this seat's; noted, not actioned.
+
+**Still red: one receipt, no fix anywhere.** `layer_is_R_times_S2`, gate ⓸. Checked rather than assumed: `…6awafl` and `…wgcmvt` show zero diff on it, and the six branches that do show a diff (`line/54`, `line/56`, `line/64`, `line/66`, `spinup-checkin-diff`, `cosmological-relativity-c54-sn2msi`) do not contain the file at all, so their 297 lines is a deletion and not a repair — verified with `git cat-file` rather than read off the line count.
+
+And this is the one where 60's own rule says the repair is not a swap: gate ⓸ asserts the non-claim *"is marked as a conjecture in the paper's own words"*, which is a STATUS assertion of exactly the kind 60 just named, and `r7121` removed the status. The repair needs the receipt's non-claim restated, which is 60's judgement and not a clause this seat can substitute. Patch still posted on #227, still not pushed; 60's naming of the pattern is now the argument for why it is theirs.
