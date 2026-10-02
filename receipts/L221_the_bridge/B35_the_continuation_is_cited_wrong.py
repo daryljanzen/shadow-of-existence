@@ -86,9 +86,17 @@ def main():
               '"junction", "inner horizon" all zero', absent)
 
     # ⓶ but the machinery exists elsewhere
-    check('⛭⛭ ⓶ while janzen_circle carries Kruskal 20 times and slicing_operator names '
-          '"horizon-regular"',
-          len(re.findall('Kruskal', P['janzen_circle_v3'])) > 10
+    # ⛔⛭ r7131+cc66.100: the label said "Kruskal 20 times" and the condition asserted `> 10` -- a
+    # round number standing in for a figure the label states exactly.  *Either the 20 is the claim, in
+    # which case `> 10` does not test it, or it is not, in which case the label should not state it.*
+    #   ⇒ *What this check is FOR is that `janzen_circle` carries the continuation's standard chart
+    #     REPEATEDLY while `slicing_operator` names the regularity.  So the count is PRINTED and only
+    #     "more than once" is asserted -- the form that cannot go stale against a twenty-first use.*
+    _n_kr = len(re.findall('Kruskal', P['janzen_circle_v3']))
+    check(f'⛭⛭ ⓶ while janzen_circle carries Kruskal {_n_kr} times -- REPEATEDLY, not once in '
+          f'passing -- and slicing_operator names "horizon-regular".  ** The count is printed; only '
+          f'"more than once" is asserted **',
+          _n_kr > 1
           and 'horizon-regular' in P['slicing_operator'])
 
     # ⓷ and the circle paper names the wall's own locus with a continuation across it

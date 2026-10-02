@@ -6989,3 +6989,24 @@ And then a third mechanism not predicted at all, which is the actual limit: all 
 One self-inflicted finding: five narrow survivors are this seat's own repair labels from last round — "with the counts printed so a move is visible and **asserted nowhere**" contains `nowhere`. A repair written in one round became a false positive for an operator built in the next; the guard is in the source.
 
 One block named and not adjudicated: `VACUOUS` is a separate and much cleaner signal — a condition that asserts nothing of its own — standing at **46 sites** on the tree, of which P10's `n >= 0` was one. Not read here: r7129 asked for the label-versus-condition class, and 46 sites is a block, not a footnote. The obvious next order.
+
+## cc66.100 — `r7131`: all 12 L221 sites verdicted, 10 repaired, ceiling 118 → 106; and testing an "ALL" claim found that the corpus writes one invariant two ways
+
+`check_prose_pins`: 147 keys / 147 baseline rows, UNADJUDICATED 106, PRESENCE-CONTROL 23, DELIBERATE 17, NOT-A-COUNT 1, no new site, no stale entry, "the ratchet holds: 106 against a ceiling of 106; 41 site(s) read and verdicted". Every L221 receipt exits 0; fast job green at 113 gates.
+
+On the arithmetic: **12 sites were read**; the repairs collapsed two keys, so the live total fell 149 → 147 and the unadjudicated count 118 → 106. The ceiling tracks what is unread, so it moves by the 12 read and not by the 10 rows written — recorded in the gate's comment beside the number. The order's "13 → 105" was the pre-de-dup file count, from cc66.98's own measurement, and cc66.99 removed that duplicate row.
+
+**The third sub-class paid off immediately.** Flagged in flight: a condition *weaker* than its label rather than opposite to it — invisible to `label_pin` (nothing points the wrong way) and to PROSE-PIN (which sees only the count). Two instances, both labels claiming "ALL":
+
+- **B33**: *"P15's 6 uses are ALL inside ratios — never standing alone as a physical length"*, asserting `n_uses > 0 and len(ratios.findall(...)) > 0` — true of a paper where one use is in a ratio and five stand alone. Repaired by testing the claim: strike the ratio contexts out and count the bare uses left. **Left = 0 of 6.** The label was right and nothing had checked it.
+- **B3**: *`"K^2"` appears 6 times — ALL of them the extrinsic curvature in the Hamiltonian constraint*, asserting `n_k2 > 0` plus one string appearing somewhere. **Testing the ALL found why nobody had: the corpus writes the invariant both ways.** Five occurrences are `K^{2}-K_{ij}K^{ij}`; the sixth is `K_{ij}K^{ij}-K^{2}`, the same invariant transposed with the sign flipped, in BH_causality's Bianchi line. So "ALL of them" is 6 of 6 — but only once both orderings are allowed.
+
+That second case is what makes the sub-class worth having: a one-string test reports the claim unverifiable, and a careless repair weakens the *label* to match the string, losing a true statement. The only route to the right answer was to test what the label said and let it fail first.
+
+**The verdict split, and 66's scope note was right.** L204 (survey): 16 DELIBERATE of 31, 14 repaired. L221 (not): 1 DELIBERATE + 1 NOT-A-COUNT of 12, **10 repaired**. The reason is as 66 said — L204's majority was the survey idiom (regression guards on ended absences), while L221 has one of those (B28's filled vocabulary gap) and eleven ordinary controls.
+
+B41's `dims.count(2) == 2` is the one NOT-A-COUNT: not a text count at all — `dims` is D₆'s irrep dimension list from a group-theory computation, with the character-table identity `sum(d*d) == 12` asserted beside it. The static trace reached a list length and read it as a count of matches. The exact figure is the claim and a change would be a different group; nothing owed.
+
+**And these repairs took 70's new QUOTE-PIN gate red, which is fixed and stated.** The fast job went red on `check_quote_pins` after the B3 repair: one STALE entry, the literal `"K^{2}-K_{ij}K^{ij}"`, because the two-ordering regex retired the bare-string site that row described. Removed per the same r7069 rule the tilt baseline carries — a fixed site left in a baseline is a silent permission to regress there. It was UNADJUDICATED, so nothing adjudicated was lost. Gate green: 2297 keys / 2297 rows, no new key, no stale entry.
+
+**70's ceiling was NOT lowered, and that is a change from cc66.92 worth recording.** There this seat lowered `CEILING 2 → 0` on the reasoning that a ceiling can only tighten. Here the fall is incidental — a site retired as a side effect of a repair, not a site this seat adjudicated — and 70 is mid-pass on a live 2,286 backlog; tightening their ceiling by one while they work could make their next legitimate state red for a reason that is not theirs. A ceiling this seat lowers should be one it earned by reading, not one that moved under someone else's feet. It reads `2286 against a ceiling of 2287`, and that slack is 70's to close.

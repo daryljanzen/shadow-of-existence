@@ -120,9 +120,25 @@ def main():
           and '$S=\\gamma^{0}\\gamma^{1}\\gamma^{3}$' in allp
           and '\\gamma^{5}S=-\\mathrm{i}\\gamma^{2}' in allp)
     n_k2 = len(re.findall(r'K\^\{?2\}?', allp))
+    # ⛔⛭ r7131+cc66.100: THE LABEL CLAIMED "ALL OF THEM" AND THE CONDITION TESTED ONE STRING.  *It
+    # asserted `n_k2 > 0` and that `K^{2}-K_{ij}K^{ij}` appears SOMEWHERE -- which is true of a corpus
+    # where one occurrence is the constraint and five are something else entirely.*
+    #   ⇒ ** Testing the "ALL" turned up why nobody had: the corpus writes the invariant BOTH WAYS. **
+    #   *Five occurrences are `K^{2}-K_{ij}K^{ij}`; the sixth is `K_{ij}K^{ij}-K^{2}` -- the same
+    #   invariant with the terms transposed and the sign flipped, in `BH_causality`'s Bianchi line.*
+    #   ⇒ *** So the label is RIGHT and it is 6 of 6, but only once both orderings are allowed.  A
+    #     one-string test would have reported the claim as unverifiable, or a careless repair would
+    #     have weakened the label to match the string. ***
+    #   ⌗ *The sub-class reported at r7131: the condition WEAKER than its label rather than opposite.*
+    _inv = re.compile(r'K\^\{?2\}?-K_\{ij\}K\^\{ij\}|K_\{ij\}K\^\{ij\}-K\^\{?2\}?')
+    _k2_in_constraint = sum(1 for m in re.finditer(r'K\^\{?2\}?', allp)
+                            if _inv.search(allp[max(0, m.start() - 70):m.start() + 100]
+                                           .replace(' ', '')))
     check(f'⌗ and "K^2" appears {n_k2} times -- ALL of them the extrinsic curvature in the '
-          'Hamiltonian constraint, a name collision with the antilinear involution',
-          n_k2 > 0 and 'K^{2}-K_{ij}K^{ij}' in allp.replace(' ', ''))
+          f'Hamiltonian constraint ({_k2_in_constraint} of {n_k2} sit in '
+          f'$K^2-K_{{ij}}K^{{ij}}$ or its transposition), a name collision with the antilinear '
+          f'involution.  ** The "ALL" is ASSERTED, and testing it is what found the second ordering **',
+          n_k2 > 0 and _k2_in_constraint == n_k2)
 
     # ⓶ the identity reproduces, in two valid representations
     for name, (g0, g1, g2, g3) in reps():

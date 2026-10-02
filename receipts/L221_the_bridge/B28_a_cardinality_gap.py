@@ -114,10 +114,16 @@ def main():
     check('and the vocabulary gap this receipt found is FILLED: r2733 ran the search, so the '
           'corpus now carries "one-parameter subgroup" where it did not',
           len(re.findall('one-parameter subgroup', both, re.I)) > 0)
-    check('while "root system", "Weyl group" and "Lie algebra" are all present -- the corpus has the '
-          'DISCRETE half of Lie theory and not the continuous half',
-          all(len(re.findall(t, both, re.I)) > 5
-              for t in ('root system', 'Weyl group', 'Lie algebra')))
+    # ⛔⛭ r7131+cc66.100: was `> 5` on each term (PO-76 class ⓵).  *The label says "all PRESENT",
+    # which is what it asserts now, with every count printed.  The claim this check is FOR is the
+    # CONTRAST -- the discrete half present while the continuous half was not -- and that contrast is
+    # carried by the sibling check above, which is the regression guard on the filled gap.*
+    _have = {t: len(re.findall(t, both, re.I))
+             for t in ('root system', 'Weyl group', 'Lie algebra')}
+    check(f'while "root system", "Weyl group" and "Lie algebra" are all PRESENT -- {_have} -- so the '
+          f'corpus has the DISCRETE half of Lie theory; the counts are printed and the continuous '
+          f'half is the sibling check above',
+          all(v > 0 for v in _have.values()))
 
     # ⓷ the wall does not transfer
     raw = open(os.path.join(ROOT, 'PROTECTED_OPEN.md'), encoding='utf-8', errors='replace').read()

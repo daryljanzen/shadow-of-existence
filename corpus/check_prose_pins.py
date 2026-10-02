@@ -152,7 +152,17 @@ def main():
     #   reading it once settles it.*  ⛔ *A first draft declared 170 and then printed `21 already read`,
     #   which was false: nothing had been read, and the slack was an artefact of the key.  Recorded rather
     #   than quietly corrected, because inventing headroom is the failure this instrument was built to find.*
-    CEILING = 118
+    CEILING = 106
+    #: ⛭ r7131+cc66.100: 118 -> 106, lowered by EXACTLY the 12 sites read -- the whole of
+    #: `receipts/L221_the_bridge`, every one verdicted in prose_pin_baseline.tsv with what was
+    #: read.  ⛔ *The r7131 order said 13 and 105.  13 was the PRE-DE-DUP file count -- it is in
+    #: cc66.98's own measurement, "L221_the_bridge rows 13 keys 12 overstated by 1", and the
+    #: cc66.99 pass removed that duplicate row.  So the order was sized from the file as it stood
+    #: before the fix for sizing from the file.*  ⌗ *File rows and distinct keys are now equal
+    #: everywhere, so the discrepancy cannot arise again.*
+    #:   ⌗ *12 sites were READ; the repairs collapsed two keys, so the live total fell 149 -> 147
+    #:   and the unadjudicated count 118 -> 106.  The ceiling tracks what is UNREAD, which is why
+    #:   it moves by the 12 read and not by the 10 rows written.*
     #: ⛭ r7125+cc66.98: 149 -> 118, lowered by EXACTLY the 31 sites read -- the whole of
     #: `receipts/L204_physics_reach`, every one verdicted in prose_pin_baseline.tsv with what was
     #: read.  ⛔ *The r7125 order said 42 and 107.  42 is the RAW site count; this file and the

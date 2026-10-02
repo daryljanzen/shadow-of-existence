@@ -95,7 +95,11 @@ def main():
           'existence of the Yukawa couplings ... determine the hypercharge"',
           'per-wall anomaly conditions' in allp and 'determine the hypercha' in allp)
     n_anom = len(re.findall('anomal', allp, re.I))
-    check(f'and "anomal*" appears {n_anom} times -- not a foreign notion here', n_anom > 10)
+    # ⛔⛭ r7131+cc66.100: was `n_anom > 10`, a ROUND NUMBER standing in for "the vocabulary is here"
+    # (PO-76 class ⓵).  *The label's claim is "not a foreign notion", which is PRESENCE; the count is
+    # printed so a move stays visible and is asserted nowhere.*
+    check(f'and "anomal*" appears {n_anom} times -- not a foreign notion here: PRESENT, with the '
+          f'count printed and not pinned', n_anom > 0)
 
     # ⓶ the index argument, and where it stops
     check('⛭⛭ ⓶ and the corpus runs the index argument on R: "the index theorem is a statement about a '
@@ -114,15 +118,21 @@ def main():
     # ⓷ the absent invariant
     n_at = len(re.findall('Atiyah', allp))
     n_it = len(re.findall('index theorem', allp, re.I))
-    check(f'⌗ Atiyah appears {n_at} times and "index theorem" {n_it} -- the machinery is present',
-          n_at > 5 and n_it > 2)
+    # ⛔⛭ r7131+cc66.100: was `n_at > 5 and n_it > 2`, two round numbers for one claim the label
+    # states exactly -- "the machinery is PRESENT".  *That is what it asserts now.*
+    check(f'⌗ Atiyah appears {n_at} times and "index theorem" {n_it} -- the machinery is PRESENT, '
+          f'with both counts printed and neither pinned',
+          n_at > 0 and n_it > 0)
     for k in ('Witten anomaly', 'global anomaly', 'mod 2', 'mod-two', 'parity anomaly',
               'eta invariant'):
         check(f'⛔ and "{k}" appears ZERO times',
               len(re.findall(re.escape(k), allp, re.I)) == 0)
     check('⇒⇒ SO THE CORPUS RUNS ATIYAH--SINGER, FINDS IT INAPPLICABLE FOR A NAMED AND CORRECT REASON, '
           'AND DOES NOT NAME THE INVARIANT THAT REPLACES IT IN EXACTLY THAT CASE',
-          n_at > 5 and len(re.findall('mod 2', allp, re.I)) == 0
+          # ⛭ r7131+cc66.100: `n_at > 5` -> `> 0` here too, the same round number in the conclusion
+          # check.  *The load-bearing half of this condition is the ABSENCE beside it -- `mod 2` at
+          # zero -- which is untouched and is exempt from the prose-pin class by construction.*
+          n_at > 0 and len(re.findall('mod 2', allp, re.I)) == 0
           and 'no such circle action and so no trigger' in allp)
 
     # ⓸ and the target is concrete

@@ -5353,6 +5353,51 @@ PINNED = {'systematic uncertainty': 1}
 
 ---
 
+## ✔✔✔ `r7131` DELIVERED — **ALL `12` VERDICTED, `10` REPAIRS, CEILING `118 → 106`. AND THE THIRD SUB-CLASS IS REAL: TESTING AN "ALL" CLAIM FOUND THAT THE CORPUS WRITES ONE INVARIANT TWO WAYS.**
+
+*`check_prose_pins`:* `147 keys, 147 baseline rows`, `UNADJUDICATED: 106`, `PRESENCE-CONTROL: 23`, `DELIBERATE: 17`, `NOT-A-COUNT: 1`, **`no new site`**, **`no stale entry`**, `the ratchet holds: 106 against a ceiling of 106; 41 site(s) read and verdicted`. *Every `L221` receipt exits `0`; fast job green at $113$ gates.*
+
+⌗ ***On the arithmetic, since it is the thing this round keeps turning on:*** *$12$ sites were **read**; the repairs collapsed two keys, so the live total fell $149 \to 147$ and the unadjudicated count $118 \to 106$. **The ceiling tracks what is UNREAD, so it moves by the $12$ read and not by the $10$ rows written.** That is in the gate's comment beside the number.*
+
+### ⚑⚑ THE THIRD SUB-CLASS PAID OFF IMMEDIATELY, AND NOT IN THE WAY I EXPECTED
+
+*I flagged it in flight: **a condition WEAKER than its label** rather than opposite to it — invisible to `label_pin` (nothing points the wrong way) and to `PROSE-PIN` (which sees only the count). Two instances, and both labels claimed **"ALL"**.*
+
+⓵ ***`B33`: "P15's $6$ uses are ALL inside ratios — never standing alone as a physical length"***, *asserting `n_uses > 0 and len(ratios.findall(...)) > 0`.* ⛔ ***That is true of a paper where ONE use is in a ratio and five stand alone.*** ⇒ *Repaired by testing the claim — strike the ratio contexts out and count the bare uses left. **Left $= 0$ of $6$. The label was right and nothing had checked it.***
+
+⓶ ***`B3`: `"K^2"` appears $6$ times — ALL of them the extrinsic curvature in the Hamiltonian constraint***, *asserting `n_k2 > 0` and that one string appears **somewhere**.*
+
+⇒ ⚑ ***AND TESTING THE "ALL" IS WHAT FOUND WHY NOBODY HAD: THE CORPUS WRITES THE INVARIANT BOTH WAYS.***
+
+| | |
+|---|---|
+| `K^{2}-K_{ij}K^{ij}` | $5$ occurrences |
+| ⚑ `K_{ij}K^{ij}-K^{2}` | ***the sixth*** — *the same invariant **transposed**, sign flipped, in `BH_causality`'s Bianchi line* |
+| ⇒ "ALL of them" | ✔ ***$6$ of $6$, but only once both orderings are allowed*** |
+
+⌗ ***This is the case that makes the sub-class worth having.*** *A one-string test reports the claim unverifiable; **a careless repair weakens the LABEL to match the string** and the corpus quietly loses a true statement. *The only way to the right answer was to test what the label said and let it fail first.**
+
+### ⌗ THE VERDICT SPLIT, AND YOUR SCOPE NOTE WAS RIGHT
+
+| | `L204` (survey) | `L221` (not) |
+|---|---|---|
+| *legitimate* | $16$ `DELIBERATE` *of $31$* | **$1$** `DELIBERATE` *+ $1$ `NOT-A-COUNT`, of $12$* |
+| *repaired* | $14$ | ⚑ **$10$** |
+
+⇒ ***So the repair-owed fraction is $10$ of $12$ here against $14$ of $31$ there, and you called it before I read a line.*** *The reason is exactly what you said: `L204`'s majority was the survey idiom — regression guards on absences that ended — and `L221` has one of those (`B28`'s filled vocabulary gap) and eleven ordinary controls.*
+
+⌗ *`B41`'s `dims.count(2) == 2` is the one `NOT-A-COUNT`: **not a text count at all** — `dims` is $D_6$'s irrep dimension list from a group-theory computation, and the check asserts the character-table identity $\sum d^2 = 12$ beside it. *The static trace reached a list length and read it as a count of matches.* **The exact figure IS the claim and a change in it would be a different group; nothing owed.***
+
+### ⚠ AND MY REPAIRS TOOK `70`'s NEW `QUOTE-PIN` GATE RED, WHICH I FIXED AND WANT STATED
+
+*The fast job went red on `check_quote_pins` after the `B3` repair: **one `STALE` entry**, the literal `"K^{2}-K_{ij}K^{ij}"`, because my two-ordering regex retired the bare-string site that row described.*
+
+⇒ *Removed, per the same `r7069` rule the tilt baseline carries — **a fixed site left in a baseline is a silent permission to regress there.** It was `UNADJUDICATED`, so nothing adjudicated was lost. Gate green: `2297 keys, 2297 rows`, `no new key`, `no stale entry`.*
+
+⌗ ***I did NOT lower `70`'s ceiling, and the reason is a change from `cc66.92` that I want on the record.*** *There I lowered `CEILING 2 → 0` on "a ceiling can only tighten". **Here the fall is incidental — a site retired as a side effect of my repair, not a site I adjudicated — and `70` is mid-pass on a live $2{,}286$ backlog.** *Tightening their ceiling by one while they work could make their next legitimate state red for a reason that is not theirs.* ⇒ **A ceiling I lower should be one I earned by reading, not one that moved under someone else's feet.** *It reads `2286 against a ceiling of 2287` and that slack is `70`'s to close.*
+
+---
+
 ## ⛭⛭ `r7131` — **THE READING AID HOLDS, AND IT IS `12` SITES NOT `13`: YOUR ORDER WAS SIZED FROM THE FILE AS IT STOOD BEFORE MY OWN DE-DUP PASS REMOVED THE DUPLICATE.** THE VERDICT PASS IS IN FLIGHT.
 
 ### ⛔⛭ ⓵ `118 → 106`, NOT `105`, AND THIS ONE IS ALMOST FUNNY

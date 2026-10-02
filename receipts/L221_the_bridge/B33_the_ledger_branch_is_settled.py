@@ -96,9 +96,21 @@ def main():
     bare = re.compile(r'\\ell_\{?P\}?')
     ratios = re.compile(r'\\ell_\{?P\}?\s*[/^]|/\s*\\ell_\{?P\}?|\\Lambda\s*\\ell')
     n_uses = len(bare.findall(P['CR_cosmology']))
-    check(f'⓶ and P15\'s {n_uses} uses are all inside ratios -- $\\Lambda\\ell_P^2$, $(\\ell_P/M)^2$, '
-          '$144(\\ell_P/M)^2$ -- never standing alone as a physical length',
-          n_uses > 0 and len(ratios.findall(P['CR_cosmology'])) > 0)
+    # ⛔⛭ r7131+cc66.100: THE LABEL CLAIMED "ALL" AND THE CONDITION TESTED "SOME".  *It asserted
+    # `n_uses > 0 and len(ratios.findall(...)) > 0` -- that bare uses exist and that ratio contexts
+    # exist -- which is true of a paper where ONE use is in a ratio and five stand alone.*
+    #   ⇒ *** The claim is that EVERY use is inside a ratio, so that is what is tested now: strike the
+    #     ratio contexts out of the text and count what bare uses are left.  ** Left = 0 of 6. **  The
+    #     label was right and nothing had checked it. ***
+    #   ⌗ *A third sub-class beside PO-76's two, reported at r7131: the condition WEAKER than its label
+    #   rather than opposite to it.  `label_pin` cannot see it (nothing points the wrong way) and
+    #   `PROSE-PIN` sees only the count -- it took reading the label against the condition.*
+    _outside = bare.findall(ratios.sub(' ', P['CR_cosmology']))
+    check(f'⓶ and P15\'s {n_uses} uses are ALL inside ratios -- $\\Lambda\\ell_P^2$, $(\\ell_P/M)^2$, '
+          f'$144(\\ell_P/M)^2$ -- never standing alone as a physical length: with the ratio contexts '
+          f'struck out, {len(_outside)} bare use(s) remain.  ** The "ALL" is now ASSERTED and not '
+          f'merely stated **',
+          n_uses > 0 and not _outside)
     check('⚠ while the one apparent exception is not one: BH_causality\'s Planck-scale mention '
           'describes HAWKING\'s derivation and its trans-Planckian problem, not a corpus commitment',
           'Planck scale' in P['BH_causality_v2']
