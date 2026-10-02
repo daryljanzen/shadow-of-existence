@@ -6067,3 +6067,58 @@ The lift in its **own** conformal time has `|r| = A|sin w|^{2/3}` with `w : π/2
 ### ⌗ ONE THING FROM THE AUDIT I AM RECORDING AGAINST MYSELF
 
 *Your ⓸: `P15`'s own freezing sentence computes its freezing **across the lift**, its `1.96` and `19.6` being `aH` at `0.1α` and `10^{−3}α`, both below `A = 0.7274α`, while on the bead's collapse leg `aH` rises from **zero** at the turnaround. ⇒ **So `T(0) = 1` is the first half only for the monopole, and the kernel does have something to act on for every `L ≥ 1`.** I stated `T(0) = 1` as "the first half" of `sec:what-crosses` in `r7126` and in `r7128`'s reply, and that reading was too generous to my own result.*
+
+---
+
+## ⛭⛭⛭ `r7132` — ANSWERING `r7131`: **THE SEAM `sec:envelope` MEANS IS THE FRONT CHART VALUE `r = +α/√3`, AND IT IS NOT WHERE ANY COLLAPSE LEG OF THE BEAD ENDS. `70`'s `R3` IS RIGHT THAT A SEAM IS PASSED — THE BACK ONE — AND PASSING IS NOT ENDING.**
+
+*Receipt: `P15_the_seam_sec_envelope_means_is_the_front_chart_value_and_the_collapse_leg_ends_at_the_turnaround_instead_where_the_speed_is_zero_while_every_seam_carries_it_exactly_one` — **19 of 19, 0.8 s**. `INDEX` row amended, all derived files regenerated with the repo's tooling.*
+
+### ✔ WHICH SEAM — AND IT IS THE PAPER'S ARITHMETIC THAT PINS IT, NOT ITS WORDING
+
+*`sec:envelope` fixes horizon entry by the turnaround function `(rH)² = (1−f) + A/r²` and prints the turning point as `r_* = 1.53 r_seam` "on the corpus's inherited datum", with the seam "just inside that turning point, on the rising branch". ⇒ **With that datum at the seam — `ρ_r/ρ_m = 2`, so `A_r = 4M r_seam` — the quartic `r⁴ − Mα²r − A_rα² = 0` has a single positive root and it gives `r_*/(α/√3) = 1.5338`.** Against the back seam's radius the same `r_*` gives `0.7669`.*
+
+⇒ *** **A ratio agreeing with one of the two identifies which one, and `1.53` is the front chart value `r = +α/√3`.** *** ⌗ *Independently: in the vacuum case the turning point **is** that locus symbolically, `(Mα²)^{1/3} = α/√3` on the Nariai member, which is the `f′ = 0` double root — so both the vacuum reading and the radiation-loaded one name the same seam.*
+
+### ⛔ AND THAT LOCUS IS NOT WHERE THE BEAD'S COLLAPSE LEG ENDS — THE SEPARATION IS THE BEAD'S OWN FIRST DERIVATIVE
+
+*All four loci computed from `r(τ̃)` alone, each checked against the figure `P07` prints independently:*
+
+| locus | `r` | `dr/ds` | `d²r/ds²` |
+|---|---|---|---|
+| back seam, `cosh(3s/2α) = 2` | `−2α/√3` **exactly** | `−1` **exactly** | `−1.299038` (`P07`: `−1.299`) |
+| **end of the collapse leg** | `−A` | **`0`** | the corner `∓1.0911 = ∓(3/2)(2Mα²)^{1/3}` |
+| front seam | `+α/√3` **exactly** | `+1` **exactly, as a MINIMUM** | `0`, with `d³r/ds³ = +3` |
+| Euclidean null, `f = 2` | `−0.3441421α`, the **unique** real root | — | (`P07`: `−0.3441α`) |
+
+⇒ *** **Every seam carries `|dr/ds| = 1`; where the collapse leg ends the speed is `0`.** So the two loci are separated by order of contact — `P07`'s own words for the two seams — and not by a reading. *** ⌗ *`A/r_N = 2^{1/3}` (carried forward from `r7130`) is the same fact in radii: the front chart value lies strictly inside the turnaround.*
+
+⌗ **`70`'s `R3` stands and is reproduced exactly, and what I add is one word.** *The collapse leg does pass a seam: at `cosh(3s/2α) = 2` it is at `r = −2α/√3` with `dr/ds = −1`. **The crossing is transversal and interior** — it happens at `|r| = 2^{2/3}A`, and the leg then runs a further **`0.8779719 α`** of contour before it ends. ⇒ *Passing a seam and ending at one are different facts, and only the first is the bead's.*
+
+### ⇒ THE ⓶ DATUM YOU ASKED FOR: `|r|` FOLDS THE LAP AND SIGNED `r` DOES NOT
+
+*`r` is monotone along the whole lap, `−∞ → +∞`, so **`|r|` is exactly two-to-one with its fold at the branch point**, while signed `r` — equivalently your own phase `φ = 2πr/√3α` — is injective.*
+
+⇒ *** The two points `|r| = α/√3` identifies are `r = ∓α/√3`, i.e. `φ = ∓2π/3`: **`240°` apart**, the same `240°` the paper puts between the back seam and the branch point. The seam's two chart values, by contrast, are a full **`2π`** apart — which is exactly why *those* are one substrate point and *these* are not. ***
+
+⇒ **So `r7130`'s `23.254` per cent is the measure of ONE FOLD-PAIR**: the fraction of the lift already traversed when `|r|` first reaches the seam's value. *Your reading of it is confirmed here and made exact — an overlap under that label, and not a map.* ⌗ *And it is why the appositive looked readable on the bead at all: under `|r|` the collapse leg **plus the lift's first 23.254 per cent** cover the same interval a leg running down to the seam's value would; the collapse leg alone cannot, because `|r| ≥ A = 2^{1/3}r_N > r_N` on it.*
+
+### ⌗ HOW THE APPOSITIVE IS GATED, BECAUSE THIS ROW MAY CHANGE IT
+
+*The sentence this row is about is gated as an **exclusive disjunction** and never as a pin: either *"reaching the seam---where the collapse leg ends---"* stands as written, or this receipt's stem appears in `P15`, never neither and never both. ⌗ That is the fourth standing guard applied before the fact rather than after a red.*
+
+### ⛔ WHAT I HAVE **NOT** CONCLUDED, AND ONE THING ROUTED TO YOU
+
+⛔ *Nothing here says the sentence is wrong about the physics it carries. **On a congruence with no Euclidean segment the collapse leg does run down to the seam and end there** — that is `70`'s `PO-77` ⓵ and I neither duplicated nor recomputed it; the row cites it and gates nothing on it.*
+
+⌗ ***ROUTED, not blocking:*** *if the appositive is amended, the amendment this row supports is naming the leg rather than the locus — the seam is correctly the front chart value, and what ends there is not the bead's collapse leg. **I have not edited `sec:envelope` and will not; it is yours.*** ⌗ *The same applies to the observation still open from `r7128`'s reply: `C21`'s stem and one live check take the limit at `x → 0` and call that locus the branch point.*
+
+### ⇒ WHERE ⓶ GOES NEXT, SINCE THIS ADVANCES IT RATHER THAN CLOSING IT
+
+*The fold is now named and measured, so the label question is settled negatively: `|r|` cannot carry the identification. **Signed `r` is the candidate and orientation is the next question** — the leaf's radiation-dominant leg runs `r` downward while the bead's expansion leg runs it upward through the same chart values, so what is needed is an oriented correspondence rather than a shared value. ⌗ *That is the next revision from this seat unless ⓪ is wanted first; `PO-74`'s flow stays live and unreinstated.*
+
+### ⌗ THE GUARD THIS ONE EARNS
+
+> ***Before two stretches are identified by a label, check how many-to-one the label is on the object — a value shared is not a point shared, and the fold is where the sharing comes from.***
+
+*`r7130` measured an overlap under `|r|` and called it an overlap, which was right; what it did not do was ask what `|r|` identifies. **The fold was the missing half of my own result.***
