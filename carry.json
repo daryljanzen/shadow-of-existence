@@ -1,12 +1,4 @@
 {
- "claude/shadow-of-existence-setup-5tjf0b": {
-  "suite": {
-   "receipts/P15_CR_cosmology/P15_the_layer_is_R_times_S2_on_the_reassigned_chart_and_the_two_presentations_are_two_metrics_on_one_layering_related_by_the_null_reassignment.py": {
-    "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/37022828031",
-    "since": "e9679c212620057aea95cdf30cec12d122efc9c0"
-   }
-  }
- },
  "claude/shadow-of-existence-setup-6awafl": {
   "suite": {
    "receipts/L259_the_distance_from_the_present/D1_a_check_pinned_to_a_distance_from_the_present_is_pinned_to_the_present.py": {
