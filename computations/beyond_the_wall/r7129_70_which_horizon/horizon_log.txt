@@ -1,0 +1,39 @@
+
+====================================================================================================
+  R2.  THE PAPER'S 1.96 AND 19.6 DO NOT DISCRIMINATE THE BRANCH; ITS 0.13 DOES, AND IS NOT REPRODUCIBLE
+====================================================================================================
+      P15 : ...vert 1-f\rvert}$ grows without bound as $r\to0$---it is $0.13$ at the comoving turnaround, $1.96$ at $\lvert r\rvert=0.1\,\alpha$, and $19.6$ at $10^{-3}\alpha$---so the comoving horizon $1/aH$ shrin...
+      |r| = 0.1:  r > 0 gives 1.96443,  r < 0 gives 1.95934
+      |r| = 0.001:  r > 0 gives 19.6189,  r < 0 gives 19.6189
+  [PASS] both signs round to the paper's 1.96 and 19.6 -- so those two figures place the sentence on NEITHER branch.  ⛔ My r7127 audit read them as placing it on the lift, and the row carries that; 66's 1.964 is the r > 0 value
+  [PASS] and the locus receipt's own table (r > 0, normalised by the seam, where sqrt(1-f) = 1.0) prints exactly 1.96 and 19.6: the figures in the sentence are that table's, i.e. the POSITIVE-r census
+  [PASS] the comoving turnaround is 1 - f = 0, r = -A = -0.727416 (P07, I11), where sqrt|1-f| = 0.0 EXACTLY -- so "0.13 at the comoving turnaround" is not reproducible from the law the sentence states, at the locus it names
+  [PASS] 0.13 IS reached on the signed-negative branch only, at |r| = 0.71967 (lift side) and 0.73516 (collapse side), within 1.1 % of A; on r > 0, sqrt(1-f) never falls below 1.0.  ** So the sentence's first figure is the bead's contracting side and its other two are the positive-r table: one sentence, two branches **
+
+====================================================================================================
+  R3.  A FOURTH SEAM, AND THE BEAD'S COLLAPSE LEG DOES PASS IT
+====================================================================================================
+      P15 : ...ircle}. The lap's seams lie elsewhere, at the two unit-speed loci $r=-2\alpha/\sqrt3$ and $r=+\alpha/\sqrt3$. We record the consequence that organizes the perturbation sector. \begin{proposition...
+  [PASS] f = 0 at the Nariai mass has roots [-1.1547005383792515, 0.5773502691896257]: the double root +1/sqrt3 (r_N) and -2/sqrt3; |-2/sqrt3| = 1.1547 > A = 0.72742, so the back seam IS on the bead's collapse leg (r = A cosh^(2/3) x >= A, signed negative).  ⛔ My r7127 ⓻ ("reaches none of them") was true of the three I listed and false of the corpus's own list.  Finding ⓹ -- r_N is not on that leg -- is untouched
+
+====================================================================================================
+  1.  WHICH BRANCH EACH COMPUTED FREEZING CENSUS IS ON
+====================================================================================================
+      P15 prop:subhorizon: ...he contracting leg, $1/(aH)$, vanishes as $r\to0$ because $2M/r$ diverges there, so $k/(aH)\to0$ for every $k$; that census is re-derived from the metric function directly, the comoving hor...
+      P15 sec:envelope   : ...s at the far end of the same rising branch, where $2M/r\to\infty$ carries $aH$ up without bound and the comoving horizon to zero, so there \emph{every} mode is outside it (\S\ref{sec:what-crosses}). It is...
+  [PASS] the two receipts that COMPUTE the freezing census -- C2 and P15_the_locus_is_wrong (which prop:subhorizon and sec:envelope cite) -- both evaluate (rH)^2 = A_r/r^2 + 2M/r + r^2/alpha^2 with r declared or sampled POSITIVE
+  [PASS] and on r > 0 that rate is a sum of positive terms: no turnaround, no Euclidean segment, r reaches 0 in real time.  ** Every computed freezing census in the corpus is on a branch WITH NO LIFT **
+
+====================================================================================================
+  2.  CAN THE LEAF BE CARRIED ONTO THE LIFT?  ITS OWN RADIATION DATUM SAYS NO
+====================================================================================================
+  [PASS] a Euclidean segment exists iff g(x) = A_r/x^2 - 2M/x + x^2 < 0 somewhere; the double-root threshold is x^3 = M/2 and A_r* = 3*2**(2/3)*M**(4/3)/4, i.e. (3M/2)(M/2)^(1/3)
+  [PASS] in the corpus's datum language (rho_r/rho_m at the seam = A_r/(2M r_s)): the leaf has a lift only below 3*2**(2/3)/8 = 0.5953; the corpus's datum is A_r = 4M r_s = 4/9, ratio 2 -- 3.36x the threshold
+  [PASS] ⇒ at the datum the leaf's rate on the contracting side never vanishes (minimum 0.8391 > 0): ** the leaf has no lift at all.  Carrying it onto the lift would need its radiation below 0.595 of matter at the seam -- the leaf becoming the bead there -- or the bead with radiation, which no file constructs **
+
+====================================================================================================
+  3.  THE ANSWER TO ⓵
+====================================================================================================
+  [PASS] the composition sentence's two halves hold on two congruences that cannot both hold on one segment: on the LEAF every mode freezes in real time as r -> 0 and there is no kernel, because there is no lift; on the BEAD there is a kernel, and on its contracting side aH = 0 at the turnaround, so every mode is inside the horizon where the lift begins.  ⇒ "frozen, so the kernel has nothing to act on" applies the leaf's census to a segment only the bead has -- and the leaf, at the corpus's own datum, does not reach a lift to decide anything at
+
+  11 checks, 11 pass

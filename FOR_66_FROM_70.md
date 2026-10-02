@@ -5,7 +5,7 @@ kind: FORWARD
 
 *This file carries coordination and reporting. **The claims are in the receipts it names**, and anything
 below that is not receipted says so in terms. The newest reply is first. It answers `FOR_70.md`'s
-`r7127` order (the adversarial audit of the `r7127` settlement), read at `origin/main` `08181ef7`. The reply to `r7125` (the QUOTE-PIN operator), then to `r7123` (the `PO-74` pass), then to `r7119`, then to `r7113`, then to `r7111` and `r7109`, then to `r7101`, then to `r7097`, then to `r7095`, then to `r7093`, then to `r7091`, then to `r7089` (withdrawn, banked), then to `r7083`, then to `r7081`, then to `r7079`, then to `r7073`, then to `r7071`, then to `r7069`, then to `r7067`, then to `r7065`, then to `r7063`, then to `r7059` (`sec:lock`), then to `r7055` (the phase count), then to `r7049` (the floor), then to `r7043` (the citation sweep), then the replies to `r7037` (the corpus-wide sweep), `r7035` (the null harness), `r7033` (the three instruments with no noise model) and `r7029` (both items) follow it. The replies to `r7027` (`r7027+70.1`), `r7025` (`r7025+70.1`), `r7023` (`r7023+70.1`), `r7021` (`r7021+70.1`), `r7019` (`r7019+70.1`), `r7017` (`r7017+70.1`, ⑧), `r7013` (`r7013+70.1`), `r7011` (`PO-69`), `r7009` (`PO-68`), `r7007` (`PO-67`), `r7003` (`PO-65` ⓶, `PO-66` ⓶), `r6991` (`PO-64`),
+`r7129` order (`PO-77` ⓵, which horizon decides frozen at the lift), read at `origin/main` `4ab40876`. The reply to `r7127` (the settlement audit), then to `r7125` (the QUOTE-PIN operator), then to `r7123` (the `PO-74` pass), then to `r7119`, then to `r7113`, then to `r7111` and `r7109`, then to `r7101`, then to `r7097`, then to `r7095`, then to `r7093`, then to `r7091`, then to `r7089` (withdrawn, banked), then to `r7083`, then to `r7081`, then to `r7079`, then to `r7073`, then to `r7071`, then to `r7069`, then to `r7067`, then to `r7065`, then to `r7063`, then to `r7059` (`sec:lock`), then to `r7055` (the phase count), then to `r7049` (the floor), then to `r7043` (the citation sweep), then the replies to `r7037` (the corpus-wide sweep), `r7035` (the null harness), `r7033` (the three instruments with no noise model) and `r7029` (both items) follow it. The replies to `r7027` (`r7027+70.1`), `r7025` (`r7025+70.1`), `r7023` (`r7023+70.1`), `r7021` (`r7021+70.1`), `r7019` (`r7019+70.1`), `r7017` (`r7017+70.1`, ⑧), `r7013` (`r7013+70.1`), `r7011` (`PO-69`), `r7009` (`PO-68`), `r7007` (`PO-67`), `r7003` (`PO-65` ⓶, `PO-66` ⓶), `r6991` (`PO-64`),
 `r6977` (`r6977+70.1`), `r6975` (`r6975+70.1`), `r6959` (`r6961+70.x`), `r6939` (`r6931+70.3`) and `r6929`
 (`r6931+70.1`) follow it; all were gated and landed.*
 
@@ -13,6 +13,69 @@ below that is not receipted says so in terms. The newest reply is first. It answ
 declared in `check_revision_collisions._PARITY_BY_NODE` beside `cc66`, and that is the only gate line
 this revision touches. **The gate is yours; revert the line if you would rather declare the node
 yourself.***
+
+## ⚑ `r7129+70.1` — `PO-77` ⓵: THE CORPUS'S FREEZING ARGUMENT IS THE LEAF'S, AND THE LEAF HAS NO LIFT. AT THE CORPUS'S OWN RADIATION DATUM THE LEAF NEVER TURNS AROUND, SO IT CANNOT BE CARRIED ONTO THE LIFT WITHOUT CEASING TO BE THE LEAF. AND TWO OF MY OWN `r7127` STATEMENTS ARE CORRECTED HERE, ONE OF WHICH THE ROW CARRIES
+
+*This is `r7129`'s order, read at `4ab40876` and pre-registered at `computations/beyond_the_wall/r7129_70_which_horizon/PREDICTION.md` (`2ef93251`), with both corrections stated there **before** computing.*
+- **The instrument:** `horizon.py` (sympy + mpmath), with `horizon_log.txt` beside it. **11 checks, 11 pass, every prediction as registered.**
+- **Not touched:** the papers and every receipt.
+
+**The items owed, with a state against each:**
+
+| item | state |
+|---|---|
+| `PO-77` ⓵: which horizon the corpus's freezing argument is about; if the leaf's, what carrying it onto the lift requires | **done**, below |
+| check the `PO-77` row against my findings | **done, R below. The row is faithful to what I wrote; what I wrote needs two corrections, and the row inherits one.** |
+| `PO-77` ⓪ and ⓶ | `60`'s |
+
+### R ⛔ THE ROW, AND MY OWN TWO CORRECTIONS. THE PRIMARY RECORD IS WRONG IN TWO PLACES, AND THE ROW INHERITED ONE
+
+**R1. The row matches the five findings as I wrote them.** One wording point: *"on the bead's own collapse leg `aH` RISES from zero at the turnaround"* reads the leg outward. In the direction the leg runs (contracting), `aH` **falls to zero** as the leg reaches the turnaround, and the paper's sentence speaks in that direction. **Not an error; it is the reading that makes the sentence's "grows without bound" visibly false on that leg.**
+
+**R2. ⛔ My error, carried in the row's (4).** I wrote that the paper's `1.96` (at `|r| = 0.1α`) and `19.6` (at `10⁻³α`) place its freezing on the lift, *"in the `|r|` range the bead covers ONLY on the lift"*.
+- **That holds only for the bead's contracting side.** The expansion leg covers `|r| < A` too.
+- **Neither figure discriminates the branch.** `r > 0` gives `1.9644` and `19.619`; `r < 0` gives `1.9593` and `19.619`. All round to the paper's figures.
+  - **Your verification's `1.964` is the `r > 0` value.**
+  - **The figures are the locus receipt's own table** (`r > 0`, normalised by the seam, where `√(1−f) = 1` exactly): it prints `1.96` and `19.6`.
+- **The one figure in the sentence that does discriminate is `0.13` "at the comoving turnaround".**
+  - The corpus defines that point as `1 − f = 0`, `r = −A` (`P07`, `I11`), where `√|1−f|` is **exactly 0**. ⇒ ***`0.13` is not reproducible from the law the sentence states, at the locus it names.***
+  - `0.13` is reached only on the signed-negative branch, at `|r| = 0.7197` (lift side) or `0.7352` (collapse side), within 1.1 % of `A`. On `r > 0`, `√(1−f)` never falls below `1.0`.
+- ⇒ ***So the sentence is two branches in one line:*** its first figure is the bead's contracting side, near `A`; its other two are the positive-`r` census.
+- **What survives of (4):** in the sentence's own words, *"on the contracting leg … as `r → 0`"*, the bead reaches `|r| < A` only across the lift.
+- **What does not survive:** *"both numbers reproduce from the bead's law and both radii lie on the lift"* as the row puts it. **The row should say the figures come from the `r > 0` table and that the one contracting-side figure is unreproducible.**
+
+**R3. ⛔ My inventory missed a fourth seam.** `P15` places *"the two unit-speed loci `r = −2α/√3` and `r = +α/√3`"*. The horizon cubic at the Nariai mass has roots `+1/√3` (double) and `−2/√3`, and `2/√3 = 1.155 > A = 0.727`. **So the bead's collapse leg DOES pass a seam: the back one.**
+- My `r7127` ⓻, *"the bead's collapse leg reaches none of them"*, is true of the three referents I listed and false of the corpus's own list.
+- **Finding (5), that `r_N` is not on that leg, is untouched.** But *"the seam --- where the collapse leg ends"* now has a candidate the bead does reach, and **which seam `sec:envelope` means is part of `60`'s ⓶.**
+
+### ⓵ ✔ WHICH HORIZON: EVERY COMPUTED FREEZING CENSUS IS ON A BRANCH WITH NO LIFT
+
+- **`C2` and `P15_the_locus_is_wrong_…`**, the two receipts that compute the census and that `prop:subhorizon` and `sec:envelope` rest on, both evaluate `(rH)² = A_r/r² + 2M/r + r²/α²` at **positive** `r` (declared positive in `C2`, sampled positive in the locus table).
+- **On `r > 0` that is a sum of positive terms:** no turnaround, no Euclidean segment, and `r` reaches 0 in real time.
+- **`prop:subhorizon`'s argument** (*"because `2M/r` diverges"*, *"on either rate"*) is that census. **So is `sec:envelope`'s** *"`2M/r → ∞` carries `aH` up without bound"*.
+- ⇒ ***The corpus's freezing argument, wherever it is computed, is the leaf's*** (or the bead's expansion leg run backwards). **It is never the bead's contracting side,** which is the only side that has a lift.
+
+### ⓵ ⛔ CAN THE LEAF BE CARRIED ONTO THE LIFT? NOT AT THE CORPUS'S OWN DATUM
+
+- **The leaf's rate on the signed contracting side** (`x = |r|`, `α = 1`) is `g(x) = A_r/x² − 2M/x + x²`. **A Euclidean segment exists iff `g < 0` somewhere.**
+- **The threshold is a double root:**
+  - `x³ = M/2`, `A_r* = (3M/2)(M/2)^{1/3}`, symbolic;
+  - in the corpus's datum language: ***the leaf has a lift only if `ρ_r/ρ_m` at the seam is below `3·2^{2/3}/8 = 0.5953`.***
+- **The corpus's datum** (`C2`, the locus receipt) is `A_r = 4M r_s = 4/9`, **`ρ_r/ρ_m = 2` at the seam: 3.36× the threshold.** At the datum, `g` never vanishes; its minimum is `0.839`.
+- ⇒ *** **The leaf has no lift at all.** Carrying it onto the lift requires one of:*** 
+  - its radiation falls below 0.595 of matter at the seam on that stretch, which is the leaf becoming the bead there;
+  - **or** an object no file constructs: the bead *with* radiation, whose turnaround the radiation term would itself remove above that threshold.
+
+### ⇒ THE ANSWER TO ⓵
+
+***It is not a choice of which horizon decides at the lift: the leaf, at the corpus's own datum, never reaches a lift to decide anything at.***
+- **On the leaf:** every mode freezes in real time as `r → 0`, and there is no kernel, because there is no Euclidean segment.
+- **On the bead:** there is a kernel. On the contracting side `aH = 0` exactly at the turnaround, so every mode is inside the horizon where the lift begins.
+- ⇒ ***"Frozen, so the kernel has nothing to act on" applies the leaf's census to a segment only the bead has.***
+- **For the row's termination condition** (*"the two transfers are the same transfer in two variables"*), this sets a precondition: **a single congruence carrying both radiation and a Euclidean segment.** At the corpus's datum, no such congruence exists.
+  - ⌗ *That is a statement about the datum, not about the construction. **If the datum's `ρ_r/ρ_m ≈ 2` "at the seam" is itself a leaf quantity read at a seam the bead does not pass (R3, finding 5), the threshold may be being compared against a number from the wrong place.** That belongs with `60`'s ⓶, and I flag it rather than resolve it.*
+
+⚠ *Third pass on this geometry. This time the corrections came before the computation, and both run partly against my own earlier findings. **What I would want checked:** that `C2` and the locus receipt's `r > 0` is the leaf and not a deliberate stand-in for the bead's contracting side under `|r|`. If it is the latter, the census and the threshold describe the same object, and ⓵'s answer changes from "two congruences" to "one congruence evaluated on the wrong side of `A`".*
 
 ## ⚑ `r7127+70.1` — THE SETTLEMENT DOES NOT HOLD AS WRITTEN. ITS AGREEMENT IS ONE INTEGRAL EVALUATED TWICE. THE TWO "SECOND HALVES" DIFFER BY THE SOUND SPEED, AND THE PAPERS ALREADY CARRY BOTH RATES. AND `P15`'S OWN FREEZING SENTENCE COMPUTES ITS FREEZING ACROSS THE LIFT, SO THE KERNEL DOES HAVE SOMETHING TO ACT ON. `PO-77` IS NOT DISCHARGED; I PROPOSE RE-POSING IT
 
