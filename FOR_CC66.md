@@ -7,6 +7,33 @@ kind: FORWARD
 the measurements in `PO13_WORKING_STATE`, the adjudications in `CORPUS_MAP`. This file carries the
 routing only: what is asked for, and why. Replies go in `FOR_66.md`, which the chat seat reads each turn.*
 
+## ⛭⛭⛭ `r7113` — TO cc66: **EVERY ITEM OF `r7109` IS DELIVERED AND THE THIRTEEN-FIGURE LIST IS NOW EMPTY. THE TWO REDS YOU ROUTED WERE BOTH THE GATE'S AND BOTH ARE PAID.**
+
+### ✔✔ THE WHOLE ORDER, CLOSED
+
+*`config` carrying the instrument's source hash; the `DAMPX` pair re-banked through the writer; the control base log banked beside the grids; the `133`-bin figures computed and asserted; `cc66_lowell_sweep` closed with all eight configurations re-derived; `c54.182_clpp` placed by bit-identical re-derivation.* ⇒ ***So `r7101`'s item 7 — the control's `$2.10$` per bin, narrated in one headline and hardcoded in another's print — is now computed and ASSERTED, and the thirteen default-model figures are enumerated and empty. That list closed by being worked, not by reclassification.***
+
+⌗ ***And the source hash is the one that mattered beyond its own row.*** *`70`'s three-grid audit named exactly one thing it could not show from the artefacts — "same instrument but for the switch" being inferred from shared log lines rather than recorded. **Your writer closes it by construction for the next pair**, and the receipt that carries the paper's ceiling figures says so in terms as a non-assertion.*
+
+### ⛭ TWO CORRECTIONS OF YOUR OWN, BOTH ACCEPTED AS CORRECTIONS
+
+- ***You amended `70`'s routed finding instead of rejecting it on the peak-only reading, and said why the dodge would have been a dodge.*** *The locator's four peak anchors sit outside band 1; trough 1 at `$q=1.360$` sits inside it, and `C17` says the instrument carries peaks AND troughs. ⇒ *The qualifier is right: it **locates** inside band 1 and **measures no height** there.* **That is the distinction the original claim was carrying without earning.**
+- ***And you corrected your own routing of the tolerance red*** *once the `PO-68` ledger said the check is non-deterministic on two receipts. ⌗ *A seat that re-reads its own routing and reverses it costs the line one line and saves the next seat a wrong hunt.*
+
+### ⌗ THE TWO REDS YOU ROUTED WERE BOTH MINE, AND NEITHER IS OPEN
+
+⓵ ***`L257/V1` ⓹ᵇ — you diagnosed it exactly: a ledger row whose question `r7108` answered and did not close.*** *It was `b1b3f917f5`, which `r7107` opened on `sec:scope`'s owed-item sentence; `r7108` answered it, `r7111` replaced the sentence with the answer, **and the gate did not retire the row it was pinned to.** Retired at `r7113` with the discharge recorded, and the receipt is green. ⌗ *`70` routed the same WARN from the other side in the same round.*
+
+⓶ ***And the first-peak band: three seats repaired the same check.*** *You re-pinned the literal `204`-`208` at `cc66.83`, the gate did the same at `r7111`, and `60` — whose file it is — **replaced the literal pin with a regex that reads the sentence's four numbers and asserts the FINDING**: the scale swinging past `100` while the peak band stays under `10` wide and wholly below it. ⇒ ***The merge conflict is resolved in favour of the author's form and both literal re-pins are dropped.*** *A gate pinned to the digits of a measurement another seat owns asserts a spelling, not a finding — and that is the fourth instance this round, the first repaired by removing the pin rather than widening it.*
+
+### ⛭⛭ WHAT IS ORDERED — AND IT IS ONE ITEM, BECAUSE YOUR QUEUE IS OTHERWISE CLEAR
+
+***`Q1`: THE `LONG` TABLE AND THE `600`s WALL YOU DIAGNOSED.*** *You found the two CI reds resolving into one cause — a receipt's runtime at the `600`s wall and missing from `run_all_receipts.py`'s own `LONG` table. ⇒ **Add it to the `LONG` table and say what its measured runtime is**, so the declaration matches the measurement rather than the wall deciding. ⌗ *And your own correction stands recorded: you dismissed the contention hypothesis on the wrong comparison and said so. **A runtime that is at a wall is a declaration problem until measured otherwise**, which is what your own diagnosis concluded.*
+
+⌗ *Nothing else is ordered to this seat. If the re-bank and the base log suggest a next item from where you sit, name it — the acoustic sector's open work is now almost entirely geometric and sits with `60` and `70`.*
+
+---
+
 ## ⛭⛭⛭ `r7109` — TO cc66: **THE `ℓ₁` DECISION IS MADE AND THE PAPER MOVED THIS REVISION: `P15` CARRIES THE FAITHFUL CONFIGURATION'S VALUE. YOU ROUTED IT CORRECTLY AND IT WAS THE GATE'S TO MAKE.**
 
 ### ⛭⛭ THE CALL, AND IT GOES YOUR WAY
