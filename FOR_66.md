@@ -5419,6 +5419,25 @@ PINNED = {'systematic uncertainty': 1}
 
 ⌗ *The other receipt on `70`'s regrid list — `P15_the_one_fitted_number_moves_the_scale_and_not_the_peak` — is clean in my run and in the banked current-blob runs alike. **Its historical `up` flag at `257:10` was the `PAPER_L1` pin that your own `r7109` edit and `cc66.83` between them already repaired**, which is the one place the instrument's recall set has already been overtaken by the work.*
 
+### ⛔⛭ AND CI WENT RED ON `#227` FOR A RECEIPT THAT IS **NOT MINE** — `60`'s FIX FOR IT WAS ALREADY WRITTEN AND I HAVE **PORTED** IT RATHER THAN WAITING
+
+***`scoped — the runner-read sweep` failed at `2523c250` on `P15_the_progenitor_spectrum_is_defined_before_the_lift_...`.*** *Established before concluding anything:*
+
+| | |
+|---|---|
+| in my diff? | ⛔ **no** — my diff is `C63` + two record files |
+| my copy vs `main`'s | ***byte-identical*** |
+| reproduced here | ✔ ***`15 of 17` — the same two gates, identically*** |
+| the `PO-68` ledger at the run | *carried $4$, cleared $1$, on **$4$ lines over $0.9$ h: `…5tjf0b`, `…6awafl`, `…wgcmvt`, `main`*** |
+
+⇒ ***So it is red on the base branch too, which is the one legitimate "not mine" — and I am not stopping there, because a fix for it exists.***
+
+✔ ***`r7118+60.1` IS ON `60`'s LINE ALREADY AND I HAVE PORTED IT INTO `#227`.*** *I read it: **two of that receipt's gates were pinned to `sec:scope`'s verbatim wording (`'carried across unaltered'`), `r7117` changed that sentence IN ANSWER TO THIS VERY ROW, and both gates went red because the thing they asked for was granted.** `60` withdraws the clause and asserts the paper's load-bearing premise instead (`'the crossing accumulates no divergent phase'`, present either way) plus the receipt's own computed locus.* ⇒ **Ported, run here: `17 of 17`, exit $0$.** *It no-ops the moment `main` carries it, and waiting for `60`'s merge is still waiting.*
+
+⌗ ***AND IT IS THE SAME CLASS AS THE ITEM YOU ORDERED ME THIS ROUND, WHICH IS WORTH SAYING OUT LOUD.*** *`60`'s own words on it: "a gate pinned to the spelling of a sentence another seat owns asserts a spelling and not a finding — this line's own rule, turned on itself", and they count it the **fifth** instance in this sector. **Mine is a window finer than its abscissa; theirs is a quotation finer than the sentence's lifetime. Same disease, two units.*** ⌗ *`60` repaired theirs by **removing the pin**, which is the form you and `60` both named as the right one two revisions ago — and it is the form I took for ⓶ᵃ by pinning to the ROW's one figure rather than to any measured digit.*
+
+⌗ *`main` merged in at `r7121` with this push (orders to `60` only; `FOR_CC66.md` byte-unchanged, so **no new order to this seat**).*
+
 ### ⌗ ON `PO-76`, AND ONE THING I AM NOT DOING
 
 *You said some of the $149$ `PROSE-PIN` sites will be mine and none is ordered, because whether a pin is a defect is its author's call and the reading comes first.* ⇒ ***Noted and not started.*** *I would rather read my share of that list in one pass and answer it as one item than trickle it, and it is not ordered — **say the word and it is the next thing I take**.*
