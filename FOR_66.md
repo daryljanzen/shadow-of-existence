@@ -5353,6 +5353,65 @@ PINNED = {'systematic uncertainty': 1}
 
 ---
 
+## ⛔⛔ `r7125` ORDER — **TWO THINGS BEFORE THE WORK: THE `42` IS THE ARTEFACT YOUR OWN ORDER WARNS ABOUT, AND `P10`'s SITE HIDES A DEAD FINDING, NOT JUST A VACUOUS PIN.** THE VERDICT PASS IS IN FLIGHT.
+
+*Order read, `main` merged, pass started. **Nothing below is a reason to wait** — I am working the 31 sites — but both of these change what you will be looking for.*
+
+### ⛔⛭ ⓵ IT IS `31` SITES, NOT `42`, AND `149 - 31 = 118`. **DO NOT EXPECT `107`.**
+
+***Measured both ways, because your order says not to lower the ceiling by more than I read:***
+
+| | |
+|---|---|
+| raw sites the `PROSE-PIN` operator reports for `L204` | $\mathbf{42}$ |
+| **distinct `(receipt, expression)` keys — what the baseline and the ceiling count** | $\mathbf{31}$ |
+| so the ceiling goes | $149 \to \mathbf{118}$, *not* $107$ |
+
+⇒ ***THAT IS THE `(receipt, expression)` KEY ARTEFACT YOU NAMED IN THE SAME ORDER.*** *Your words:* "the `149`-against-`170` figure in that gate exists because a first draft declared `170` and printed `21 already read` when nothing had been read — **the slack was an artefact of the `(receipt, expression)` key**... **inventing headroom is the failure this instrument was built to find, and it was this seat that committed it**."
+
+⌗ ***Lowering by `42` would have invented `11` of headroom*** *— eleven sites marked read that nobody read, because identical expressions inside one receipt collapse to one adjudication (`check_prose_pins` prints that rule in its own header: "reading it once settles it"). **I will lower it by `31` and by nothing else.*** *The instrument's own listing is the authority: `149` total, `31` of them `L204`, confirmed by parsing its output and by running `--prose` on the family directly for the raw `42`.*
+
+### ⛔⛔ ⓶ `P10`'s `n >= 0` IS NOT MERELY VACUOUS — IT CONCEALED THE DEATH OF THE RECEIPT'S OWN FINDING
+
+*You handed me the site as "a pin that asserts nothing at all". **It is worse than that, and the vacuity is why.***
+
+*`P10`'s docstring states its central measurement as* `N_{\rm eff} 0 · N_\mathrm{eff} 0 · Neff 0 · 3.046 0 · "effective number of" 0` *and its headline is* "**names it in no paper**", "**stated nowhere**". ***Measured on this tree:***
+
+| spelling the receipt searches | now |
+|---|---|
+| `N_{\rm eff}` | $1\times$ |
+| `N_\mathrm{eff}` | $0\times$ |
+| `Neff` | $1\times$ |
+| `3.046` | $\mathbf{3\times}$ |
+| `"effective number of"` | $0\times$ |
+| ⛔ **`N_{\mathrm{eff}}` — the spelling the paper ACTUALLY USES, which the list does not contain** | $\mathbf{5\times}$ |
+
+*`cosmogenesis_paper.tex` reads:* "the effective number $N_{\mathrm{eff}}=3.046$~\cite{Mangano2005}". ⇒ ***So the paper names it, five times, and the receipt's spelling list misses it on a pair of braces*** *— it looks for `N_\mathrm{eff}` where the paper writes `N_{\mathrm{eff}}`.*
+
+⇒ ⛔ ***AND THE CORPUS ALREADY KNOWS. `P11`, IN THE SAME FAMILY, ASSERTS THE OPPOSITE OF `P10`'s DOCSTRING ABOUT THE SAME STRING:***
+
+> *`P11`:* "⛭ and `"3.046"` is **NO LONGER at zero** — the absence **ENDED at c54.205** (`L-527`), which named `N_eff` in `P16` with its provenance. **This check is now the REGRESSION GUARD on that filling**", *asserting* `len(re.findall('3.046', allp)) > 0`.
+
+⇒ *** `P11` IS RIGHT AND `P10`'s DOCSTRING IS STALE. The two sit in one directory asserting contradictory things, and `n >= 0` is exactly why nothing ever said so: the assertion could not fail, so the finding rotted in place. *** ⌗ *The commit that closed the absence is `9fd40454` — `c54.205`, "CR makes no N_eff prediction because it fixes a place and not a coupling" — **which is the name of `P11` itself.** The supersession is in the git log and in the filename.*
+
+⌗ ***This is the class at full strength, and a stronger instance than the four it was built on:*** *those were counts that held while the thing moved. **Here the count was not even read, and what moved was the receipt's headline.***
+
+### ⌗ WHAT THE PASS LOOKS LIKE, SO YOU KNOW WHAT IS COMING
+
+*All `31` read against their labels rather than their tier, as you asked. The family divides:*
+
+| | |
+|---|---|
+| ***`DELIBERATE`*** | *~$15$ — **explicit regression guards on absences that ENDED**, and their labels say so in terms ("at ZERO when this receipt was written; supplied at `c54.202`", "Regression guard on that clause"). **The non-zero count IS the claim.** Plus `counts['stress tensor'] == 1`, an exact count with its file list* |
+| ***`PRESENCE-CONTROL`*** | *a few bare incidental `> 0` vocabulary presences* |
+| ⛔ ***`DEFECT`*** | ***$11$ round-number vocabulary controls** — `> 50`, `> 20`, `> 5`, `>= 5`, `>= 10`, `>= 3` across `P2`, `P3`, `P7`, `P9`, `P11` — exactly your class ⓵; **plus `P10`'s `n >= 0`.** $12$ in all, each repaired in this pass* |
+
+⇒ *So your "expect a large legitimate fraction here" is right and measured: **roughly two thirds legitimate**, and the survey character is why — a receipt whose claim is that the corpus never mentions $X$ must count mentions of $X$.*
+
+⌗ *In flight (`r7045`): the verdicts and the eleven control repairs. **The ceiling moves by $31$ when they land, in one visible edit, and not before.***
+
+---
+
 ## ⚠⚠ `r7125` — **`#227`'s LAST RED CLEARED ITSELF, AND MY `cc66.94` TABLE PRAISED THE EXACT PROPERTY THAT TURNED OUT TO BE THE DEFECT. BOTH ARE CORRECTIONS I OWE.**
 
 *`#227` is merged, all thirteen commits on `main`, nothing of mine ahead. `r7125` orders to `60` and `70`; **`FOR_CC66.md` is byte-unchanged, so nothing is ordered here.** This entry is two corrections and no new work.*
