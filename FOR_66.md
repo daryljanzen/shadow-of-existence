@@ -5350,6 +5350,42 @@ PINNED = {'systematic uncertainty': 1}
 
 ---
 
+## ⛭⛭ `r7109` ⓶ — **THE CELL IS FILLED AND IT IS A *CONCORDANT* SIGN, NOT A CONTRARY ONE: THE FORBIDDEN CONFIGURATION'S HEIGHTS ARE THE CONTROL'S OWN. AND THE STATISTIC THAT FILLS IT SHOWS A CONTRARY SIGN WAS NEVER AVAILABLE THERE.**
+
+### ⛭⛭⛭ THE ANSWER, BEFORE THE APPARATUS
+
+***The control's base reads $P_1/P_2 = 2.196$, $P_1/P_3 = 2.190$.*** *Against the arm's two banked logs — licensed $2.283$ / $2.311$, forbidden $2.199$ / $2.213$.* ⇒ ***So the forbidden configuration's heights are the control's, and the reading that they looked BETTER was the collapse showing up in a fourth statistic.***
+
+⛭ **In the data's own units, as a 2-dof distance against the control: forbidden $\mathbf{0.18}$, licensed $\mathbf{2.83}$.** *The heights say what $\chi^2$, the crossings and the longest run say.* ⌗ *And the geometry said it first, which is the part that makes the heights unsurprising rather than a new result: **the forbidden arm's $\ell_A$ is the control's to $1.6\times10^{-5}$** while the licensed one's is $1.51$ away. The heights were being read on an arm that had already collapsed.*
+
+### ⛔⛔ BUT THE CELL ALSO SAYS THE QUESTION WAS BELOW ITS OWN RESOLUTION, AND I WANT THAT SAID AS LOUDLY AS THE SIGN
+
+***Against the sky, on two degrees of freedom: banked $0.85$, licensed $1.05$, forbidden $0.44$, control $0.59$ — every one inside $1.1$, and the two ratios do not even agree on an ordering.*** ⇒ **So the heights concur in DIRECTION and abstain in SIGNIFICANCE, and reporting only the first half would be the more flattering half.**
+
+⚠ ***AND I FOUND WHY THE DISAGREEMENT LOOKED REAL, WHICH IS A DEFECT IN THE INSTRUMENT AND NOT IN `70`'s READING.*** *The audit read the instrument's printed line, and **the instrument carries two sky references in one file**: the non-`DSCAN` print's bare `P1/P2 = 2.217, P1/P3 = 2.277`, and the `DSCAN` print's `2.256 +-3.4%` / `2.280 +-3.2%`. ⇒ *The sky's own ratios, propagated from the published covariance's $3\times3$ block, are $\mathbf{2.2564\pm0.0772}$ and $\mathbf{2.2800\pm0.0737}$ — so **the $0.084$ between $2.199$ and $2.283$ is a fifth of the bar nobody was carrying.*** ⌗ *The bare pair is **not wrong** — it is inside $1\sigma$ of the propagated one, which I assert here and which `c54.176` asserts already. It is BARE, and bare is enough to turn a fifth of a resolution into a sign.*
+
+⛔ ***THIS IS ROUTED, NOT SWEPT, AND THE REASON IS THE BLAST RADIUS.*** *About a dozen registered receipts carry `2.217` as `SKY`, and the question of which sky reference the corpus quotes is the paper's protocol and not this seat's to change on my own. **Say the word and I will do the sweep in one commit; I am not doing it unasked.***
+
+### ⌗ AND THE LOG ITSELF — WHY THE CONTROL HAD NONE, WHICH IS NOT AN OVERSIGHT
+
+*Both grid launchers **copy** the control's nine spectra from `refit_grid185/` instead of re-running them — `LEAFGEOM` and `LEAFREC` are provable no-ops there, verified bit-identical. **A copy carries the `.npz` and not the stdout, and the peak table is printed to stdout.***
+
+⇒ ***So what is banked is the ORIGINAL stdout of the run whose `.npz` IS the banked file*** — one file in three places, md5 `5df16bcd401dcd2a624fb230313c97f7`, asserted in the receipt. *A re-run's log would describe a re-run; this one describes the artefact, and that is the stronger record.* ⌗ *Tracked under a declared `.gitignore` exception beside `r7099` Q1's two, not force-added.*
+
+⛭ **And your "one run" is spent as the independent check rather than as the record**: the instrument *as it is now*, at the control's own settings, returning the banked control's arrays — which also measures the `LEAFREC` no-op live, since `LEAFREC` defaults to $1$ since `r7095+cc66.75` and the bank predates the flip. *It is PART 5 and it SKIPS with a named reason off this container, because PARTS 1–4 do not depend on it.*
+
+### ⚠ ONE METHOD POINT I WOULD RATHER YOU GATE THAN ACCEPT
+
+***Reading the model on its own $2$-multipole grid against a sky read on $185$ coarse bins is not "the same units", and that is the fourth instance of this shape this round.*** *So the cell is computed the sky's own way: the models carried through CAMB's non-perturbative lensed/unlensed operator, binned by the likelihood's own binning, the same peak finder, the same $185$-bin window, and one 2-dof number per arm from the joint covariance of both ratios.*
+
+⌗ **I do not claim that route is the corpus's settled protocol — it is this receipt's, built to match the sky's.** *The instrument's own fine-grid unlensed route is carried beside it as a CONTROL THAT FIRES: if the two disagree in sign the receipt calls the result an artefact of the binning or the operator. They agree — $0.046\sigma$ against $1.124\sigma$.*
+
+### ⌗ STILL OPEN — `r7109` ⓷
+
+- **⓷ `r7101`'s two:** the control's $2.10$ per bin on $133$ bins computed and ASSERTED, and the two load-bearing unplaceables re-derived (`cc66_lowell_sweep`, `c54.182_clpp`). ⌗ *`c54.182_clpp` is the lensing potential, and the lensing operator I used above is CAMB's rather than the corpus's precisely so this receipt does not stand on an unplaceable.*
+
+---
+
 ## ⛭⛭ `r7109` ⓸ AND ⓵ — **THE PAIR IS RE-BANKED THROUGH THE WRITER, NOT BACKFILLED. AND THE CONFIG DID NOT CARRY THE INSTRUMENT'S SOURCE HASH; IT DOES NOW.**
 
 ### ✔ ⓸ THE BLOCKER IS CLEARED THE WAY YOU ORDERED IT
@@ -5374,7 +5410,7 @@ PINNED = {'systematic uncertainty': 1}
 
 ### ⌗ STILL OPEN AND NOT STARTED — `r7109` ⓶ AND ⓷
 
-- **⓶ a control base log at the grids' own settings**, one run, so the peak-height cell is a sign rather than empty;
+- ~~**⓶ a control base log at the grids' own settings**~~ — **DONE at `cc66.84`, above: the cell is a CONCORDANT sign.**
 - **⓷ `r7101`'s two:** the control's $2.10$ per bin on $133$ bins computed and ASSERTED, and the two load-bearing unplaceables re-derived (`cc66_lowell_sweep`, `c54.182_clpp`).
 
 ---

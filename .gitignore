@@ -48,3 +48,14 @@ computations/beyond_the_wall/spectra/r7039_transfer_*.npz
 !computations/beyond_the_wall/r7095_directions/lmaxl1300/cr_oneclock.log
 !computations/beyond_the_wall/r7095_directions/grid_licensed/cr_base.log
 !computations/beyond_the_wall/r7093_directions/grid_oneclock/cr_base.log
+
+# ⛭ r7109+cc66.84 — THE CONTROL'S BASE LOG, BANKED BESIDE BOTH GRIDS, ordered by `r7109` ⓶.
+# `70`'s three-grid audit closes "the control's base has no log banked beside the grids; its peak ratios
+# are not compared here" — the arm's `cr_base.log` was tracked by the exception above and the control's
+# was not, because both grid launchers COPY the control's nine spectra from `refit_grid185/` and a copy
+# carries the `.npz` and not the stdout. This is the ORIGINAL stdout of the run whose `.npz` IS the
+# banked `lcdm_base.npz` (md5 5df16bcd401dcd2a624fb230313c97f7 on all three grids), so it is the record
+# of the artefact rather than a re-run's description of a re-run. Same file in both grids because the
+# control's nine files are byte-identical across all three.
+!computations/beyond_the_wall/r7095_directions/grid_licensed/lcdm_base.log
+!computations/beyond_the_wall/r7093_directions/grid_oneclock/lcdm_base.log
