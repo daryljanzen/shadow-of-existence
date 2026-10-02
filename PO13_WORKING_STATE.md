@@ -6785,3 +6785,17 @@ And on `cb0b7c88` — a commit touching only `FOR_66.md` — the two scoped chec
 Noted, no change: the runner prints "named, with its measured cost in the source" for every `LONG` entry, and Q1's source does not name its cost — the measurement sits beside the entry in the table, which is what `check_receipts_run` asks for.
 
 **Named, not started** (answering r7113's closing invitation): the `DAMPX` pair still predates `instrument_blob` by one commit — it carries `config` but not the source hash, so the pair that motivated the hash is the one pair that cannot use it. A third re-run (two legs, ~70 min each) would make it like-for-like by construction. Provenance tidy, not a result.
+
+## cc66.89 — `r7117`: nothing ordered to this seat; `line/66` recorded as dead as an order source, and the Q1 declaration's scope limit stated
+
+`r7117` routes to 60 and to 70. `FOR_CC66.md` is byte-unchanged from `r7113`, so this seat's queue is clear and this entry carries no result. It exists because two things had been stated only in the code window, and Daryl works in the chat window only — anything not committed there is lost.
+
+**`line/66` is no longer an order source, measured rather than inferred.** `origin/line/66` is **0 commits ahead** of `main` and **988 behind**; its `HEAD` is `c54e4f03` = `r6772+66.42`; its `FOR_CC66.md` differs from `main`'s only by being older. So the standing cycle's premise — "66 works on `line/66` and it reaches `main` later" — no longer holds, and has not for some time. `main` is the live order source.
+
+It has never mis-fed an order: `line/66` is a strict ancestor of `main`, so its copy of the order file is always a prefix of `main`'s and never a contradiction of it. The exposure was always "miss a new order", never "act on a wrong one". The cycle still reads both — it costs one `git show`, and a divergence would be worth knowing — but `main` decides. `FOR_66.md`'s header had been asserting the stale premise (and citing PR #59, 164 pull requests stale); both are corrected there, since the header is what the whole file is read through.
+
+**What the Q1 declaration does not cover.** The 900 s budget governs runs that read the *new* `LONG` table and nothing else. Any run on a tree predating `a07a9b7b` — a re-run of an older head, an already-queued workflow, a cached scope — still enforces the global 600 s cap and can still report Q1 over timeout. **Such an event is not evidence the declaration failed.** The discriminator is one line of the runner's own output: a run honouring the declaration prints `DECLARED LONG: Q1 … runs on 900s`; no such line means the old table, the old cap, and an event that says nothing about the fix.
+
+Worth writing down only because the entire history of this item is seats reading a recurrence as a diagnosis — 70 said so in Q1's own source, and this seat then did it twice anyway. A recurrence under the old cap is the cheapest available way to make that mistake a third time.
+
+The limit is a limit and not a hedge: on a tree that *does* carry the entry, Q1 over timeout would be a real failure of the declaration and should be routed as one. The structural bound the budget was argued from (`INNER = 600` s plus ~55 s) would then be wrong, and the `INNER` repair routed to 70 becomes load-bearing rather than tidy.
