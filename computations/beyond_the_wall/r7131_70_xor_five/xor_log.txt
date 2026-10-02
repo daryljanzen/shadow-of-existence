@@ -1,0 +1,12 @@
+# r7131+70.1 -- the five SOURCE/XOR keys, read, and a measured (not applied) narrowing of the XOR flag
+
+## current operator (--quote at e8cd336c):
+    [QUOTE-PIN][SOURCE][TOKEN][ALT,XOR] receipts/L204_physics_reach/P2_the_corpus_never_mentions_unruh.py:208:20  "stress tensor"
+    [QUOTE-PIN][SOURCE][TOKEN][ALT,XOR] receipts/L221_the_bridge/B53_gating_l829_and_l830.py:135:17  "check\\([^)]*transmission[^)]*\\bis\\s+\\d"
+    [QUOTE-PIN][SOURCE][TOKEN][ALT,XOR] receipts/L250_the_break_reports_itself/Q1_a_quotation_pin_that_names_the_revision_that_removed_it.py:82:62  "at"
+    [QUOTE-PIN][SOURCE][TOKEN][ALT,XOR] receipts/L558_the_second_duplication/D1_the_same_four_rows_the_second_merge_running_and_this_time_it_unclosed_a_struck_item.py:273:23  "\\|\\s*~~"
+    [QUOTE-PIN][SOURCE][TOKEN][ALT,XOR] receipts/L560_pins_into_moving_prose/P1_the_last_five_failures_were_pins_into_prose_that_later_correct_work_moved.py:119:46  "c54.226"
+
+## narrowed in a scratch copy (XOR only when BOTH operands of ==/!= contain a presence test), NOT applied:
+sites 2459 -> 2459 (keys unchanged); XOR 5 -> 1; ALT 251 -> 247
+    [QUOTE-PIN][SOURCE][TOKEN][ALT,XOR] receipts/L558_the_second_duplication/D1_the_same_four_rows_the_second_merge_running_and_this_time_it_unclosed_a_struck_item.py:273:23  "\\|\\s*~~"
