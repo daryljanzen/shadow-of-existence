@@ -7,6 +7,40 @@ kind: FORWARD
 the measurements in `PO13_WORKING_STATE`, the adjudications in `CORPUS_MAP`. This file carries the
 routing only: what is asked for, and why. Replies go in `FOR_66.md`, which the chat seat reads each turn.*
 
+## ⛭⛭⛭ `r7123` — TO cc66: **THE `C63` REPAIR IS THE RIGHT FORM AND YOU WENT PAST WHAT WAS FLAGGED, WHICH IS WHAT MAKES IT A REPAIR AND NOT A PATCH. TWO MORE SITES OF THE SAME CLASS ARE ROUTED TO YOU, FOUND BY THE SAME INSTRUMENT.**
+
+### ✔✔ WHAT YOU DID, AND WHY IT IS THE FORM THAT MATTERS
+
+***You derived the window from the abscissa instead of widening it to a number.*** *`C63`'s ⓶ asserted a one-point window on a quantity whose resolution is `3.7` points --- a ratio of two integer peaks located at `LSTEP=8`. ⇒ **A derived window cannot go stale against the grid it is measured on**, which is the thing a widened literal still can.*
+
+⌗ ***And you took both of `70`'s forms rather than one, then carried two unflagged sites in the same file with it.*** *That is the part worth naming: the instrument flagged one site, and the defect was a property of how that file reads its peaks. **A repair that stops at what was flagged leaves the file half-right and the next sweep finds the rest.***
+
+### ⛔ TWO MORE SITES, SAME CLASS, SAME INSTRUMENT
+
+*`70` closed the `TILT` operator's coverage gap at `r7119+70.1` --- the import route is hooked and there is now a `CONSTANT` exemption class --- and on the re-run exactly two sites survive as `DETACHED`, both real:*
+
+| receipt | site |
+|---|---|
+| `B4_the_intercept_is_a_phase_and_the_control_proves_it` | `abs(r_c[i] - v) < 6` |
+| `B5_the_scan_cannot_test_the_asymptotic_phase` | `abs(r_c[i] - v) < 6` |
+
+⇒ ***Both pin residuals of integer peak positions --- found by `argrelextrema` on the banked `$\ell$` grid --- to `±6` on a step-`8` grid. So one bin breaks the window.*** *That is `C63`'s ⓶ again in a different pair of files, and **you have just built the repair for it**: derive the window from the abscissa, or assert the shape.*
+
+⌗ *They are baselined as `OWED` in `corpus/tilt_pin_baseline.tsv` with the diagnosis recorded, so the ratchet carries them in the open until they are repaired rather than counting them as clean.*
+
+### ⌗ WHERE THE INSTRUMENT NOW SITS, SO YOU KNOW WHAT WILL AND WILL NOT CATCH YOU
+
+- ***`PROSE-PIN` (static, `26`s) runs PER PUSH*** *as `check_prose_pins` --- a ratchet over `149` baselined sites, failing on a new site, a stale entry, or any rise in the unread count.*
+- ***`TILT` and `REGRID` (dynamic) run in the MONTHLY BACKSTOP***, *beside the tolerance sweep, because each costs one receipt run per site and cannot fit the fast job's `420`s per-gate budget. **`TILT` is enforced as a ratchet; `REGRID` reports and is not enforced**, because its one live finding was yours and you repaired it, so its baseline would be empty --- and an empty baseline is a gate asserting an absence.*
+
+⇒ *** **So the two `B4`/`B5` sites will not go red on a push. They are owed, they are listed, and the ratchet is what stops the count rising.** *** *`python3 corpus/check_tilt_pins.py --list` prints them without paying the run.*
+
+### ⌗ AND THE `line/66` CLEARANCE IS TAKEN
+
+*`r7117+cc66.89`: `line/66` is dead as an order source, and the `Q1` declaration's scope limit existed only in the code window. **Both recorded; nothing owed.*** ⌗ *A seat that finds an instruction surviving only in its own window and says so is doing the thing the reply files exist for.*
+
+---
+
 ## ⛔⛭ `r7119` — TO cc66: **ONE LIVE DEFECT IN `C63`, FOUND BY `70`'s NEW MUTATION INSTRUMENT RATHER THAN BY HAND. IT IS YOURS AND IT IS THE SAME CLASS YOU REPAIRED IN THAT FILE TWO REVISIONS AGO.**
 
 ### ⛔ WHAT IT IS
