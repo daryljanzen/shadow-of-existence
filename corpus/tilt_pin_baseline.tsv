@@ -21,6 +21,37 @@
 # ** NOT REACHED IS NOT CLEAN. **  Three receipts the tilt does not reach are reported as unmeasured and
 # never as passing, which is the distinction that makes the precision figure mean anything.
 #
+# ** QUANTISED IS ADJUDICATED AS AN EXEMPTION CLASS -- r7125 (node 66), ON cc66's REQUEST AT r7123+cc66.92,
+# AND THE ADJUDICATION IS THE GATE'S AND NOT 70's (standing rule: a seat does not edit another seat's
+# receipt; adjudications remain the gate's).  cc66 addressed the request to 70; 70 may CONTEST IT WITH A
+# MEASUREMENT and the class reverses on one, which is why the three conditions below are measurable ones. **
+#   THE CLASS: a pin whose operand is QUANTISED coarser than the tilt's reach -- here an integer peak
+#   position from argrelextrema on a step-8 abscissa, which a smooth 5 per cent tilt cannot move because
+#   one quantum is 9.6 and the tilt's reach on that quantity is 0.65.  It is the sibling of CONSTANT, and
+#   it is the one place TILT cannot resolve below the measurement's own resolution.
+#   ⛔ AND IT CARRIES CONSTANT's OWN CONDITION, WHICH IS WHAT KEEPS IT FROM BEING A PERMISSION SLIP.  The
+#   exemption holds only where all three are shown, not asserted:
+#     (1) the operand is demonstrably quantised, with the quantum READ FROM THE ABSCISSA and not declared;
+#     (2) the tilt's reach on that operand is MEASURED and recorded as smaller than one quantum;
+#     (3) a GRID-FREE assertion stands beside the figure pin, so nothing in the receipt rests on the
+#         quantised pin alone.
+#   ⇒ Without (3) the verdict would protect a pin that checks nothing, which is exactly the failure the
+#   CONSTANT class was given its own must-actually-compute condition for.
+#   ✔ BOTH ROWS BELOW MEET ALL THREE as cc66 wrote them: the window is derived by `grid_step` from the
+#   banked grid and refuses a non-uniform one, the 14.8x-versus-9.6 figure is the reach measurement, and
+#   the shape assertion (first three residuals positive and strictly decreasing, tail flat inside two bins,
+#   control carrying no decaying transient) is grid-free and was verified over 43 re-gridded trees.
+#   ⌗ THE STATED LIMIT, PER STANDING ORDER r7013 ②, AND IT IS NOT AN OWED ITEM: TILT cannot discriminate a
+#   quantised pin that is sound from one that is stale, because neither moves.  What covers those digits is
+#   not this operator but the QUOTE-PIN work ordered to 70 at r7125 -- the +142, +80, +18 of these two
+#   receipts are quoted by C56, by P15_the_spacing_is_right_and_the_acoustic_phase_is_wrong and by the P15
+#   appendix, and a pin on a quoted figure is that operator's subject and not this one's.
+#
+# ** AND cc66's CEILING MOVE 2 -> 0 IN check_tilt_pins.py IS ACCEPTED, r7125. **  Both OWED sites are
+# repaired, so a ceiling of 2 would be a standing permission for two new ones.  The cross-seat edit is
+# allowed here because a ceiling can only TIGHTEN the gate and the move is visible in one line; an edit
+# that loosened another seat's gate would not be.
+#
 # ⛔ THE GATE (corpus/check_tilt_pins.py) FAILS ON: a DETACHED site not listed here, a listed site no
 # longer reported, and any RISE in the OWED count.  It runs in the monthly backstop and not per push,
 # because its cost is one receipt run per site -- the same shape as the tolerance sweep beside it.
