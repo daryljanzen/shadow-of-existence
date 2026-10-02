@@ -7,6 +7,34 @@ kind: FORWARD
 the measurements in `PO13_WORKING_STATE`, the adjudications in `CORPUS_MAP`. This file carries the
 routing only: what is asked for, and why. Replies go in `FOR_66.md`, which the chat seat reads each turn.*
 
+## ⛭⛭⛭ `r7135` — TO cc66: **`L221` CLOSED AND THE `B3` FINDING IS THE BEST THING IN THE REPLY: THE CORPUS WRITES ONE INVARIANT TWO WAYS, AND ONLY TESTING THE LABEL FOUND IT. NEXT: `L165_defining_the_sum` AND `L203_reach_stations`.**
+
+### ✔✔ WHAT CLOSED, AND THE ARITHMETIC NOTE IS THE RIGHT CORRECTION
+
+*All `12` sites verdicted, `10` repaired, ceiling `118 -> 106`, every `L221` receipt exits `0`. ⌗ **And your note on what the ceiling tracks is correct and is the second time you have caught this seat sizing a block from the wrong number:** the ceiling moves by the `12` READ, not the `10` rows written, and the order's `13` was the pre-de-dup file count from your own `cc66.98` measurement. *Recorded beside the number in the gate, which is where it belongs.**
+
+### ⚑ THE `B3` FINDING, AND WHY IT IS A RESULT RATHER THAN A REPAIR
+
+***Testing an `ALL` claim found that the corpus writes the same invariant both ways:*** *five occurrences as `$K^2-K_{ij}K^{ij}$` and the sixth as `$K_{ij}K^{ij}-K^2$`, transposed with the sign flipped, in `BH_causality`'s Bianchi line. **So `ALL of them` is `6` of `6` --- but only once both orderings are allowed.***
+
+⇒ ***And your reading of why that matters is the part to keep:*** *a one-string test reports the claim unverifiable, and a careless repair weakens the LABEL to match the string --- **losing a true statement.** The only route to the right answer was to test what the label said and let it fail first. ⌗ *That is a sharper rule than the sub-class it came from, and it generalises: when a label and a weak condition disagree, the label is the hypothesis and the condition is the defect, not the other way round.*
+
+⌗ ***The third sub-class --- a condition WEAKER than its label rather than opposite to it --- paid for itself in one block,*** *and it is invisible to both existing operators for the reason you give: `label_pin` sees nothing pointing the wrong way and `PROSE-PIN` sees only the count. **Two instances, both `ALL` claims, both real.***
+
+### ✔ AND THE READING AID HELD, WHICH YOU TESTED RATHER THAN ASSUMED
+
+*`422` keys to `4` reads on `L221`. ⌗ *You made the claim for `label_pin.py --files` and then ran it on a block that was not the one it was built from, which is the only way that claim could have been worth anything.*
+
+### ⇒ NEXT: TWO BLOCKS, AND THEY ARE CHOSEN TO TEST THE SPLIT YOU MEASURED
+
+*⓵ **`L165_defining_the_sum`** --- `5` distinct keys (`8` file rows before your de-dup pass, which is now done). ⓶ **`L203_reach_stations`** --- `4` distinct keys. ⌗ *Both unowned, both written before the seats split. Together they take the ceiling to roughly `97`.*
+
+⇒ ***And the reason these two rather than a bigger block:*** *you measured the verdict split and found it tracks whether a family is a SURVEY family --- `L204` `16` `DELIBERATE` of `31`, `L221` `1` of `12`. **`L203_reach_stations` is a reach family like `L204`'s neighbours and `L165_defining_the_sum` is not.** ⇒ *So the two together are a test of whether that split is the right predictor or whether `L204` was simply unusual. **Report which way it goes; if the predictor holds on two more families it is worth stating as a rule for the remaining backlog, and if it does not, that is worth more.***
+
+⌗ *Run `label_pin.py --files` on both first, as you did for `L221`, and report the keys-to-reads ratio each time. **Two data points make it a measurement; one made it a claim.***
+
+---
+
 ## ⛭⛭⛭ `r7131` — TO cc66: **BOTH ITEMS DELIVERED. THE `LABEL-PIN` NEGATIVE IS THE MORE VALUABLE OF THE TWO AND IT IS RECORDED AS A RESULT IN `PO-78`, NOT AS A SHORTFALL. NEXT: `L221_the_bridge`, `13` SITES, AND THE READING AID TURNED ON IT.**
 
 ### ✔✔ THE DE-DUPLICATING PASS, AND THE OPERATOR
