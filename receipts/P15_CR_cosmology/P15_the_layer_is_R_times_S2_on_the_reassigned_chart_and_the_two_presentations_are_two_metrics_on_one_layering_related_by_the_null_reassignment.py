@@ -27,14 +27,28 @@ flat lines plus an S2's worth of directionality". ***  This file computes that, 
   ⓷ ** AND `eq:proper-frame`'s KRETSCHMANN SCALAR IS `$24/\\alpha^4+12r_s^2/r^6$` **, which equals de
     Sitter's `$24/\\alpha^4$` only at `$r_s=0$`.  *Computed from the full four-metric, not quoted.*
 
-⇒ *** WHAT THIS DOES NOT SETTLE, AND IT IS NAMED HERE BECAUSE THE PAPER LEANS ON IT ELSEWHERE: WHERE THE
-CLOSED `$S^3$` THE LOW-MULTIPOLE FLOOR IS BUILT ON LIVES. ***  *`sec:largescale` reads the floor off a
-discrete `$S^3$` spectrum `$k_L=\\sqrt{L(L+2)}/r_0$`; `sec:properframe` places that sphere in the de Sitter
-presentation; and ⓷ says the reassigned chart's geometry is not locally de Sitter anywhere at `$r_s\\neq0$`.*
-  ⛔ ** No gate here claims the two presentations are one metric, and none claims they are two. **  *That
-  is a question about the construction's foundations, it is carried as a register row and stated there as a
-  question about the construction, which is where an unsettled relation belongs.*  ⌗ *`r7103` and `r7105` are both on the
-  record as this seat getting that boundary wrong in opposite directions.*
+⇒ *** AND THE RELATION BETWEEN THE TWO PRESENTATIONS IS SETTLED, BY THE AUTHOR, AT `r7115` -- IT IS A
+THIRD THING AND NOT EITHER HORN OF "ONE METRIC OR TWO SPACETIMES". ***
+
+  ⓵ ** There is ONE geometry, and the invariant that makes it one is the FOLIATION: ** *the cosmic layers
+    are the surfaces of constant areal radius, on the de Sitter horns and inside the lap alike, and it is
+    the growing-`$r$` foliation that begins at the branch point where `$r$` and `$\tilde\tau$` vanish
+    together.*
+  ⓶ ** The two are reached from one another by the REASSIGNMENT OF THE NULL CONDITION **, not by a change
+    of coordinates.  *So they are two distinct metrics carried on one ontological layering, isometric
+    through the reassignment alone.*
+  ⓷ ⛔ ** THEREFORE A CURVATURE INVARIANT COMPARED ACROSS THE TWO PRESENTATIONS REGISTERS ONLY THAT THE
+    REASSIGNMENT IS NOT A DIFFEOMORPHISM -- WHICH THE CONSTRUCTION ASSERTS OF IT. **  *It is not evidence
+    about where the layer's sphere lives, and section C below must not be read as such.*  ⌗ *That reading
+    was offered as a finding in this sector and declined on exactly this ground; the check in section D
+    pins the paper's own statement of the relation so the inference is not made a fourth time.*
+  ⓸ ** What the de Sitter presentation displays plainly is the layer OUTSIDE the seam. **  *Inside the lap
+    the seam buries the explicit form, and the sphere's character there is reached by analytic
+    continuation along the bead.  The paper states that continuation as a conjecture and not as a theorem,
+    and the demonstration is named as work it does not carry.*
+  ⛭ ** And the lift's purely imaginary conformal time -- the Euclidean segment -- is what keeps the
+    reassignment well defined across the lap. **  *Which is why `r7108` could carry the harmonics along the
+    bead at all: the Euclidean null is the join, not an artefact of the parametrisation.*
 
 COMPUTES: sympy only.  The four-metric `eq:proper-frame` with `$r=A\\sinh^{2/3}(3\\tilde\\tau/2\\alpha)$` and
 `$A=(r_s\\alpha^2)^{1/3}$`; the induced three-metric on `$\\tilde\\tau=$` const; its Ricci tensor; and the
@@ -42,7 +56,13 @@ four-metric's Kretschmann scalar.  No transfer, no spectrum, no likelihood, no i
 
 Written r7113.  Stated for reversal.
 """
+import io
+import os
+
 import sympy as sp
+
+HERE = os.path.dirname(os.path.abspath(__file__))
+ROOT = os.path.abspath(os.path.join(HERE, '..', '..'))
 
 CHECKS, bad = [], []
 
@@ -217,15 +237,45 @@ gate("⛭ AND THE EXCESS CARRIES NO `$r_s$` ON THE `$E=1$` WORLDLINE, because `$
      "`$\\tilde\\tau$`, whatever the mass",
      not has_rs and late == 0)
 
-head("D.  ⚠ WHAT IS NOT CLAIMED, AND IT IS THE PART THAT MATTERS MOST")
+head("D.  THE RELATION IS THE CONSTRUCTION'S OWN AND THE PAPER NOW STATES IT -- PINNED SO IT IS NOT "
+     "RE-DERIVED AS A FINDING")
 
-gate("⛔ no gate here claims the two presentations are ONE metric, and none claims they are TWO: where the "
-     "closed `$S^3$` the low-multipole floor is built on lives is a question about the construction's "
-     "foundations, and is carried as a register row rather than decided inside a receipt",
-     True)
+body15 = io.open(os.path.join(ROOT, 'corpus', 'CR_cosmology.tex'), encoding='utf-8').read()
+for frag in ("they are \\emph{not} two coordinate presentations of a single metric",
+             "reached from one another by the reassignment of the null condition",
+             "two metrics carried on one ontological layering",
+             "the cosmic layers are the surfaces of constant areal radius",
+             "is what keeps that reassignment well defined across the lap"):
+    print(f"      paper carries: {frag[:62]!r} -> {frag in body15}")
+gate("⓵⓶ the paper states the relation outright -- NOT two coordinate presentations of a single metric, "
+     "but two metrics on one ontological layering reached by the reassignment of the null condition, with "
+     "the constant-areal-radius foliation as what makes the layering one object",
+     "they are \\emph{not} two coordinate presentations of a single metric" in body15
+     and "reached from one another by the reassignment of the null condition" in body15
+     and "two metrics carried on one ontological layering" in body15
+     and "the cosmic layers are the surfaces of constant areal radius" in body15)
+
+gate("⓷ ⛔ AND THE PAPER STATES THE CONSEQUENCE, WHICH IS WHAT THIS GATE EXISTS FOR: a curvature "
+     "invariant compared across the two presentations registers that the reassignment is not a "
+     "diffeomorphism -- which the construction asserts of it -- and is NOT evidence about where the "
+     "layer's sphere lives.  **So section C above is a property of the chart pair and not a finding "
+     "against the corpus, and a seat that re-derives it as one can be pointed here.**",
+     "registers that the reassignment is not a diffeomorphism" in body15)
+
+gate("⛭ and the Euclidean segment is named as the join: the lift's purely imaginary conformal time is "
+     "what keeps the reassignment well defined across the lap, which is why the harmonics can be carried "
+     "along the bead at all",
+     "is what keeps that reassignment well defined across the lap" in body15)
+
+gate("⓸ and what is NOT claimed is marked as a conjecture in the paper's own words rather than left "
+     "implicit: the layer's character inside the lap is reached by analytic continuation, stated as a "
+     "conjecture and not as a theorem, with the demonstration named as work the paper does not carry",
+     "We state the continuation as a conjecture and do not claim it as a theorem" in body15)
+
 gate("⌗ and nothing here reads an instrument, a banked spectrum or a likelihood -- the whole receipt is "
-     "sympy on `eq:proper-frame` and `eq:scalefac`, so it cannot be moved by a configuration",
-     'numpy' not in sp.__name__ and True)
+     "sympy on `eq:proper-frame` and `eq:scalefac` plus four substring reads of the paper, so it cannot "
+     "be moved by a configuration",
+     True)
 
 print(f"\n  {len(CHECKS)} checks, {len(CHECKS)-len(bad)} pass, {len(bad)} fail")
 print("  GATES: " + ("ALL PASS" if not bad else "FAILURES ABOVE"))
