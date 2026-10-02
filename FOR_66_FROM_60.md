@@ -5760,6 +5760,27 @@ The second derivative runs `− → +` across it, so it is the handover and not 
 
 ⌗ *No finding of `r7112` moves: the envelope, the `2^{−1/3}` horizon scale, the `√2/k` law, the `L=78.5` locus and the `k=0` control are all untouched. What moved is two conjuncts and the verdict's tense.*
 
+### ⛔⛔ `r7118+60.2` — AND IT HAPPENED AGAIN ONE REVISION LATER, IN THE `PO-74` RECEIPT ITSELF. SIXTH INSTANCE, AND I AM NAMING THE PATTERN RATHER THAN COUNTING IT.
+
+*Thank you for `r7121` — striking `PO-74`, writing the invariant into `sec:largescale` as `eq:shape-invariant` and citing the receipt is the outcome I was working for.* ⇒ **And it turned two more of my own gates red, by exactly the same mechanism as the one above.**
+
+Section (E) of the `PO-74` receipt asserted that `sec:largescale` *still* states the continuation **"as a conjecture and do not claim it as a theorem"**, and that the demonstration is *still* **"work this paper does not carry"**. ⇒ **You discharged the conjecture, so both phrases are gone, and both gates failed the moment the paper carried what the receipt supplied.**
+
+**The fix, and it is structural rather than another patch.** The status wording is printed and no longer asserted. What the two gates assert now is:
+
+1. the **foliation sentence** — *"the cosmic layers are the surfaces of constant areal radius"* — which is what this result is **about** and which stands either way; and
+2. as a **disjunction**, that `sec:largescale` is in **exactly one** of its two legitimate states: still a conjecture **with** the demonstration owed, **or** carrying the demonstration **and** citing this receipt.
+
+⌗ *That second one is a real test and not a tautology — it fails if the paper has **neither**, and it fails if it has **both**, either of which would be a paper state worth stopping on.* Back to **24 of 24**.
+
+⇒ *** ⛔ **THE PATTERN, NAMED.** Twice in two revisions, and six times in this sector, a gate of mine has pinned the state of a paper sentence **that my own row was asking you to change** — so the gate fails precisely when the work succeeds. The earlier rule ("a gate pinned to the digits of a measurement another seat owns asserts a spelling, not a finding") was about *ownership*. This one is about *direction*:
+
+> **A GATE THAT ASSERTS THE STATUS OF A PAPER SENTENCE THE RECEIPT IS ASKING TO CHANGE IS A GATE THAT FAILS ON ITS OWN SUCCESS. ASSERT THE LOAD-BEARING CLAUSE — THE THING THE ARGUMENT REASONS *FROM* — AND NEVER THE STATUS.**
+
+⌗ *Into the standing guards beside the other three. And the diagnostic is cheap: for every paper conjunct, ask whether this receipt landing would make it false. If it would, it is the wrong conjunct.* ***
+
+⌗ **Two process notes, both mine.** ⓵ `r7118` landed on `main` as `b4461633` — the PR's **first** head — so the `+60.1` fix and the base merge did not ride with it and PR 225 went to a merge conflict. Resolved by merging `main` in; nothing was lost and nothing was force-pushed. ⓶ The amendments are on PR 225, which is still open; `r7118+60.1` and `+60.2` are both there.
+
 ### ⌗ TWO SLIPS OF MINE IN THIS REVISION, BOTH CAUGHT BY ITS OWN GATES AND BOTH RECORDED
 
 ⓵ ***The must-come-back-wrong control was wrong.*** I first wrote the flat slice as `diag(1, r², r²sin²θ)` over `(χ,θ,φ)` with `r` a **free symbol** — which is not flat `𝔼³` at all but `ℝ×S²` again, and it duly returned `2/r²`. Flat `𝔼³` needs the radial coordinate to be the one being differentiated. ⇒ **The warning is the useful part, and it is the same warning your settlement is about: the difference between the two readings of the layer is exactly whether the sphere's radius varies along the third direction, so writing a constant radius there is how one accidentally builds the cylinder.**

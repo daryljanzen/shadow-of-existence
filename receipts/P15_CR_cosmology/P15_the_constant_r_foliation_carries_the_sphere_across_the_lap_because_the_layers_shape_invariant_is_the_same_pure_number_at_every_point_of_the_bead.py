@@ -56,7 +56,9 @@ same constant at every $r\\neq0$, arbitrarily close on both sides, so the charac
 the seam and out of it.*  ⇒ ** The divergence is the areal coordinate degenerating -- which `P15`'s own
 abstract already says of the branch point -- and not a change in what the layer is. **  ⌗ *So the
 conjecture `sec:largescale` states is discharged in the direction it was stated, and the terminal
-branch is NOT taken.*
+branch is NOT taken.*  ⌗ *`r7121` has since written this result into `sec:largescale` itself as
+`eq:shape-invariant`, citing this receipt, so the sentence that STATED the conjecture is gone -- see
+the `+60.2` note at the end of this docstring for the two gates of this receipt that pinned it.*
 
 ** ⛭⛭⛭ AND TWO THINGS THE AUTHOR'S OWN PICTURE (`r7117`) CORRECTS IN THE FIRST DRAFT OF THIS
 RECEIPT, BOTH OF THEM NAMING NOT A BAD NUMBER BUT A BAD WORD. **
@@ -110,6 +112,23 @@ finding above is evidence on that side; it does not compute a curvature invarian
 four-geometry for comparison, which `r7115` says would register only that fact; and it does not
 reassign the source spectrum or edit the paper.  ⌗ The bead is the single analytic curve at the Nariai
 amplitude, so nothing here is a statement about a mass spectrum.
+⌗ ** `r7118+60.2` -- TWO GATES OF SECTION (E) UN-PINNED, BECAUSE `r7121` DISCHARGED THE CONJECTURE
+THEY ASSERTED WAS STILL OPEN. **  `r7121` struck `PO-74` and wrote this result INTO `sec:largescale`
+as `eq:shape-invariant`, citing this receipt.  ** Two gates here had asserted that the paper still
+states the continuation "as a conjecture and do not claim it as a theorem" and that the demonstration
+is still "work this paper does not carry" -- so they went red the moment the paper carried what this
+receipt supplied. **
+  ⇒ *The STATUS wording is withdrawn from both conditions and PRINTED instead.  What they assert now
+  is the FOLIATION sentence -- "the cosmic layers are the surfaces of constant areal radius", which
+  this result is about and which stands either way -- and, as a DISJUNCTION, that `sec:largescale` is
+  in exactly one of its two legitimate states: still a conjecture WITH the demonstration owed, or
+  carrying the demonstration AND citing this receipt.*
+  ⌗ *That is a real test and not a tautology: it FAILS if the paper has neither, and it FAILS if it
+  has both -- either of which would be a paper state worth stopping on.*
+⛔ ** SIXTH instance in this sector, and the pattern is now NAMED rather than counted: **
+  ⇒ *** A GATE THAT ASSERTS THE STATUS OF A PAPER SENTENCE THIS RECEIPT IS ASKING TO CHANGE IS A GATE
+  THAT FAILS ON ITS OWN SUCCESS.  Assert the paper's LOAD-BEARING CLAUSE -- the thing the argument
+  reasons FROM -- and never its STATUS. ***
 """
 import os
 import re
@@ -345,18 +364,33 @@ gate(f"at `r=0` exactly the layer AT THAT FIXED `\\tilde\\tau` is a POINT -- `V\
      f"layer is **",
      max(near) < 1e-12 and 'areal coordinate degenerating' in b15)
 
+_FOLIATION = 'the cosmic layers are the surfaces of constant areal radius'
+_WAS_CONJECTURE = 'as a conjecture and do not claim it as a theorem' in b15
+_OWED = 'work this paper does not carry' in b15
+_CARRIED = ('eq:shape-invariant' in b15
+            and 'P15_the_constant_r_foliation_carries_the_sphere_across_the_lap' in b15)
+print(f"\n      `sec:largescale` read from the CURRENT source: the foliation sentence present "
+      f"{b15.count(_FOLIATION)}x;  still stated as a conjecture: {_WAS_CONJECTURE};  demonstration "
+      f"still owed: {_OWED};  paper now carries it and cites this receipt: {_CARRIED}")
+print(f"      ⌗ the STATUS wording is printed and NOT asserted -- discharging `PO-74` is exactly what "
+      f"removes it, so a gate pinned to it would fail on this receipt's own success")
 gate("⇒ *** `PO-74` DISCHARGED IN THE DIRECTION `sec:largescale` STATES IT: the foliation is the "
      "constant-`r` one at every point of the curve and the layer's character continues across the lap "
      "with it.  The terminal branch is NOT taken -- nothing at the seam obstructs the sphere's "
-     "character; what passes through zero there is its radius ***",
-     max(near) < 1e-12 and worst < 1e-12
-     and 'as a conjecture and do not claim it as a theorem' in b15)
+     "character; what passes through zero there is its radius.  ⌗ *The paper conjunct is the "
+     "FOLIATION sentence, which this result is about and which stands either way -- not the "
+     "conjecture's status wording, which discharging it is what removes*",
+     max(near) < 1e-12 and worst < 1e-12 and _FOLIATION in b15)
 
-gate("⌗ and the paper's conjecture is located rather than quoted from memory: `sec:largescale` "
-     "carries both the foliation sentence and the explicit statement that the demonstration is work "
-     "the paper does not carry",
-     'the cosmic layers are the surfaces of constant areal radius' in b15
-     and 'work this paper does not carry' in b15)
+gate(f"⌗ and `sec:largescale` is LOCATED rather than quoted from memory, in whichever of its two "
+     f"states the trunk is in: it carries the foliation sentence, and then EITHER still states the "
+     f"continuation as a conjecture with the demonstration owed (conjecture wording present: "
+     f"{_WAS_CONJECTURE}, demonstration owed: {_OWED}) OR carries the demonstration itself and cites "
+     f"this receipt for it ({_CARRIED}).  ⛔ *Exactly one of those is true at a time and this gate "
+     f"asserts the disjunction, because `r7121` discharged the conjecture in answer to this very "
+     f"row -- the sixth time in this sector a gate of this line has pinned a paper state its own "
+     f"result was asking to change*",
+     _FOLIATION in b15 and ((_WAS_CONJECTURE and _OWED) != _CARRIED))
 
 
 # ============================================================ E2. the seam is the inflection
