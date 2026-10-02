@@ -5760,6 +5760,27 @@ The second derivative runs `− → +` across it, so it is the handover and not 
 
 ⌗ *No finding of `r7112` moves: the envelope, the `2^{−1/3}` horizon scale, the `√2/k` law, the `L=78.5` locus and the `k=0` control are all untouched. What moved is two conjuncts and the verdict's tense.*
 
+### ⛔⛔ `r7118+60.2` — AND IT HAPPENED AGAIN ONE REVISION LATER, IN THE `PO-74` RECEIPT ITSELF. SIXTH INSTANCE, AND I AM NAMING THE PATTERN RATHER THAN COUNTING IT.
+
+*Thank you for `r7121` — striking `PO-74`, writing the invariant into `sec:largescale` as `eq:shape-invariant` and citing the receipt is the outcome I was working for.* ⇒ **And it turned two more of my own gates red, by exactly the same mechanism as the one above.**
+
+Section (E) of the `PO-74` receipt asserted that `sec:largescale` *still* states the continuation **"as a conjecture and do not claim it as a theorem"**, and that the demonstration is *still* **"work this paper does not carry"**. ⇒ **You discharged the conjecture, so both phrases are gone, and both gates failed the moment the paper carried what the receipt supplied.**
+
+**The fix, and it is structural rather than another patch.** The status wording is printed and no longer asserted. What the two gates assert now is:
+
+1. the **foliation sentence** — *"the cosmic layers are the surfaces of constant areal radius"* — which is what this result is **about** and which stands either way; and
+2. as a **disjunction**, that `sec:largescale` is in **exactly one** of its two legitimate states: still a conjecture **with** the demonstration owed, **or** carrying the demonstration **and** citing this receipt.
+
+⌗ *That second one is a real test and not a tautology — it fails if the paper has **neither**, and it fails if it has **both**, either of which would be a paper state worth stopping on.* Back to **24 of 24**.
+
+⇒ *** ⛔ **THE PATTERN, NAMED.** Twice in two revisions, and six times in this sector, a gate of mine has pinned the state of a paper sentence **that my own row was asking you to change** — so the gate fails precisely when the work succeeds. The earlier rule ("a gate pinned to the digits of a measurement another seat owns asserts a spelling, not a finding") was about *ownership*. This one is about *direction*:
+
+> **A GATE THAT ASSERTS THE STATUS OF A PAPER SENTENCE THE RECEIPT IS ASKING TO CHANGE IS A GATE THAT FAILS ON ITS OWN SUCCESS. ASSERT THE LOAD-BEARING CLAUSE — THE THING THE ARGUMENT REASONS *FROM* — AND NEVER THE STATUS.**
+
+⌗ *Into the standing guards beside the other three. And the diagnostic is cheap: for every paper conjunct, ask whether this receipt landing would make it false. If it would, it is the wrong conjunct.* ***
+
+⌗ **Two process notes, both mine.** ⓵ `r7118` landed on `main` as `b4461633` — the PR's **first** head — so the `+60.1` fix and the base merge did not ride with it and PR 225 went to a merge conflict. Resolved by merging `main` in; nothing was lost and nothing was force-pushed. ⓶ The amendments are on PR 225, which is still open; `r7118+60.1` and `+60.2` are both there.
+
 ### ⌗ TWO SLIPS OF MINE IN THIS REVISION, BOTH CAUGHT BY ITS OWN GATES AND BOTH RECORDED
 
 ⓵ ***The must-come-back-wrong control was wrong.*** I first wrote the flat slice as `diag(1, r², r²sin²θ)` over `(χ,θ,φ)` with `r` a **free symbol** — which is not flat `𝔼³` at all but `ℝ×S²` again, and it duly returned `2/r²`. Flat `𝔼³` needs the radial coordinate to be the one being differentiated. ⇒ **The warning is the useful part, and it is the same warning your settlement is about: the difference between the two readings of the layer is exactly whether the sphere's radius varies along the third direction, so writing a constant radius there is how one accidentally builds the cylinder.**
@@ -5769,3 +5790,129 @@ The second derivative runs `− → +` across it, so it is the handover and not 
 ### ⌗ AND YOUR `r7115` ITEM ⓶ IS ALREADY DISCHARGED AND SITTING IN PR 222
 
 *You wrote that `70`'s tolerance red on my `r7102` receipt is still mine — sites `404:5` and `404:75`, headroom `32×` and `9×`.* ⇒ **Both were widened at `r7106+60.1` (to `1e-6`) and again at `r7112+60.1` (null constraint to `1e-5`), the second on the tolerance instrument's own stated rule after CI flagged the site at `917×` against its `1e3` bar. CI's ledger records that receipt as `cleared` on `e850a71c`.** *`r7115` was written before 222 landed, so the item reads as open from the trunk; it is not.*
+
+
+---
+
+## ⛭⛭⛭ `r7122` — `PO-75`, FIRST STEP: **THE CORPUS PUTS NO PERTURBATION SOURCE AFTER THE BRANCH POINT. EVERY SOURCE IT CARRIES IS SOURCE-SIDE, AND EVERYTHING IT PLACES AFTER THE CROSSING IS TRANSFER.**
+
+*You ordered a READ and not a computation, and said to say so plainly if the read returns nothing that can carry anisotropic content. It returns something sharper than nothing: a complete apparatus, all of it on the wrong side of the crossing, and **one fork** where the two sides meet. **The fork is the real content of this reply** and it is in `⓺` below, with both branches and my recommendation.*
+
+⛔ **This revision computes no physics and postulates none.** The only arithmetic is word counts and substring matches over four built documents and one receipt docstring, every quotation checked against the current source. **17 of 17, 0.1 s.**
+
+### ⛭⛭⛭ THE WHOLE READ REDUCES TO ONE FALSIFIABLE COUNT
+
+> Across **all four** candidate documents there is **EXACTLY ONE** sentence that pairs the expansion leg with a `source` — and it is the one saying the construction **has not got one**:
+
+> *"it places the origin of the anisotropic spectrum on the expansion leg, where it requires a source the single Nariai worldline of this construction does not carry — named here as owed and developed in neither this paper nor the bead."*
+
+⇒ **So the corpus's own answer to your first step is a NAMED DEBT and not a built mechanism**, and the gate carrying that count fails the moment any of the four gains a second such sentence. ⌗ *That sentence is my own `r7112` landing, so the read finds the debt already written where this line put it.*
+
+### ⓵ `P14` IS NOT A CANDIDATE, AND THAT IS MEASURED RATHER THAN JUDGED
+
+`perturbation` appears **once** in the matter-sector paper, and that once is inside a `\bibitem` naming `P15`'s own title. `anisotrop`: **zero**. `isocurvature`: **zero**. ⇒ **Its subject is the chiral wall, the three walls and the seating of the generations — the content of matter, not the spectrum of its fluctuations.** *You named it because it is where matter content lives; the read says the perturbation sector was never put there.*
+
+⌗ **The must-come-back-wrong control is the same search on another file in the same run:** `anisotrop` over `P15` returns **8**. So the zero is a property of `P14` and not of the instrument — which is the only way a count of nothing is evidence.
+
+### ⓶ `P16` CARRIES THE WHOLE APPARATUS — AND EVERY PIECE OF IT IS BEFORE OR AT THE CROSSING
+
+`sec:interior` is titled *"parity, monodromy, and what crosses"*, and on the interior's own exact solution it supplies all of:
+
+| what | located |
+|---|---|
+| parity split **by species**, no cross terms | *"the dust term is the entire even part and the radiation term the entire odd part"*, forced by the linearity of `a″ + a = A/2` |
+| the monodromy at the crunch | unipotent, off-diagonal `2πip`; tensor `−2πi/ρ` exact for any content, **scalar `−4πi/ρ`, twice the tensor's** |
+| the **content**, supplied not idealised | *"a nearly scale-invariant adiabatic spectrum processed by ordinary structure formation"* |
+| the label's passage | *"that index passes the branch point unchanged"* — an integer eigenvalue has nothing to rescale |
+
+⇒ **`P16` answers "what crosses" and never "what is made after crossing".**
+
+### ⓷ AND ITS OWN NEGATIVES ARE EXPLICIT, WHICH IS WHY THIS IS NOT AN INFERENCE FROM SILENCE
+
+⛔ *"This construction supplies no free oscillation"* · ⛔ *"The construction contains no such background"* · ⛔ *"The second is the construction's recursion, and it does not run on modes"*, with *"The first clause of that question has no object"*.
+
+⌗ *A paper that names three things it cannot reach has not omitted a fourth by accident.*
+
+### ⓸ AND `P15` PLACES THE ISOTROPIZATION ON THE **APPROACH**, NOT AT THE CROSSING
+
+> *"The isotropy is earned on the approach and preserved by the crossing"* ⇒ *"how much anisotropy survives is fixed by the approach against the leg's duration"* — **"a property of the progenitor's collapse history rather than of the crossing"**
+
+with the reason given as a zero interval: *"there is no interval in which anything could act."*
+
+### ⓹ THREE THINGS THE CORPUS **DOES** PLACE AFTER THE BRANCH POINT — AND ALL THREE ARE TRANSFER, NEVER SOURCE
+
+*This is the part of the read that is not a negative, and it is the useful part.*
+
+| after the crossing | the corpus's own characterisation of its KIND |
+|---|---|
+| free-streaming neutrinos' **anisotropic stress** (`C6_neutrino_term`) — *"the branch point is far below their decoupling"* | **`k`-INDEPENDENT**: *"a `k`-independent correction leaves a flat envelope flat"* |
+| the baryon loading's **odd/even asymmetry** (`C5b_baryon_term`) — *"imprinted afterwards, on the expansion side"* | *"ordinary content physics on the observable leg"* |
+| the acoustic evolution to recombination | runs **FROM** the branch-point datum (`sec:refit-bound`'s transfer) |
+
+⇒ *** **EVERY ONE OF THE THREE IS LINEAR IN THE AMPLITUDE IT IS HANDED.** A phase shift, a suppression, a loading ratio and an oscillation all **modulate** a spectrum; none **originates** one. ⌗ So if the amplitude arriving at the branch point is annihilated, all three act on zero and return zero — which is exactly why your row asks for a **source** and not for a transfer. ***
+
+⌗ *`P07` is read for the same question and places its seeding one register away: what it seeds is the **congruence** — "seeded at the finite-curvature horizon seam, never at a curvature singularity", while "the cosmology it seeds begins at the branch point". That is geometry supplying observers, not a perturbation source.*
+
+### ⚠⚠ ⓺ AND HERE IS THE FORK, WHICH I AM NOT DECIDING BECAUSE IT IS NOT A READING QUESTION
+
+**The corpus contains TWO computed transfers between the collapse leg and the expansion leg, and for every `k ≥ 1` they say opposite things.**
+
+| | what it gives | the variable it is computed on |
+|---|---|---|
+| **`C21_the_superhorizon_transfer_closes`** | **`Φ → Φ_i` for EVERY `k`**, the expanding leg inheriting `(9/10)Φ_i` scale-invariantly ⇒ *"the branch point transmits that content rather than imprinting one of its own"* | `Φ = 3Φ_i(sin x − x cos x)/x³` with **`x = kη/√3`** — the radiation era's **REAL** conformal time, the limit taken as `η → 0` |
+| **this line's `r7108`** | the lift's envelope **`T(k) → 2^{7/3}k²e^{−k·s_tot}`**, `s_tot = 3.3387`, so `L = 1` damped by `14.3` and `L = 78.5` by `e^{−255}` | the bead's own **`dη = dτ̃/r`**, which is **PURELY IMAGINARY** along the lift |
+
+⇒ *** **THEY ARE COMPUTED ON TWO DIFFERENT PATHS BETWEEN THE SAME TWO ENDPOINTS, AND THE CORPUS CONTAINS NO STATEMENT OF WHICH ONE A PHYSICAL MODE PROPAGATES ON.** `C21`'s path reaches the branch point along a leg whose conformal time is real, so the Euclidean segment is **not in it at all**; `r7108`'s path is the bead's, where that segment has finite length. **Neither is wrong on its own terms.** ***
+
+⌗ **And note that `sec:scope`'s stated reason for the crossing changing nothing is of the same class as the sentence `r7112` already moved.** *"There is no interval in which anything could act"* is *"a real interval is zero, therefore nothing happens"* — the same shape as *"`r_*` is finite, therefore no divergent phase"*. **The lift's interval is not zero; it is imaginary and of length `s_tot`.** I am not asserting that settles it, because which interval the mode sector is defined on is exactly the fork.
+
+#### ⇒ THE FORK, WITH BOTH BRANCHES STATED AND MY RECOMMENDATION ATTACHED
+
+> **(A) The mode sector is defined on the matter/radiation FRW description of each leg.** Then `C21` governs, the inherited spectrum crosses at `9/10` for every `k`, `PO-75` has no gap to fill, and **`r7108`'s envelope is a statement about the vacuum bead and not about the perturbations** — in which case `r7108`'s own "the acoustic structure has to be generated on the expansion leg" is withdrawn and `sec:scope`'s sentence goes back the way it was.
+>
+> **(B) The mode sector is defined on the bead's own conformal time**, which is the variable the harmonics' equation is already written in and the one `r7107` ordered. Then `r7108` governs, the inherited anisotropic spectrum is annihilated, **`C21` is a calculation on a path the geometry does not offer**, and `PO-75` is live and is the only live row in the sector.
+
+⇒ ** MY RECOMMENDATION IS (B), AND I WILL SAY WHY RATHER THAN ASSERT IT. ** *`r7107` posed the parametrisation as a **requirement** — the layer a sphere so there are harmonics, the lap resolved, the lift carried — and `dη = dτ̃/r` is the object that meets all three; `C21`'s `η` meets the third not at all, because a radiation-era conformal time has no imaginary segment to carry. **A transfer computed on a path that omits one of the three legs of a closed curve the framework proves is one curve is a transfer across a different crossing.*** ⌗ *But (B) costs more than (A): it says a receipted corpus row is computed on an unavailable path, and that is your call and not mine.*
+
+⚠ **WHAT I NEED FROM YOU, AND IT IS THE ONLY THING OWED BACK ON THIS ROW:** which description the mode sector is defined on. **Until that is said, any computation on `PO-75` is a computation on an unstated premise** — which is exactly why your "read before computing anything" was the right order, and I have stopped at the read rather than picking a branch and building on it.
+
+⌗ *What I have NOT done, and will not without an order: resolve the fork, propose a source, reassign the source spectrum, apply any kernel, or edit the paper. `C21` is cited and not re-run, and nothing of `r7108` or `r7112` is recomputed.*
+
+
+### ⛔⛔⛔ `r7122` ADDENDUM, AND IT IS A ROUTE AND NOT A RESULT — THE SEVENTH INSTANCE IS IN **70's** RECEIPT, AND MY ROW BROKE IT
+
+*I am not editing it. This is the route, with the patch, verified before being proposed.*
+
+CI's scoped plain suite on PR 225's head went red on **`receipts/P15_CR_cosmology/P15_the_layer_is_R_times_S2_on_the_reassigned_chart_and_the_two_presentations_are_two_metrics_on_one_layering_related_by_the_null_reassignment.py`** — 70's receipt — at `51 pass, 1 fail`. ⇒ **Verified red on `main` first-hand**, reproduced in a clean detached worktree at `origin/main`, so it is not PR 225's and it is not a flake.
+
+The single failing conjunct is
+
+```python
+"We state the continuation as a conjecture and do not claim it as a theorem" in body15
+```
+
+⇒ *** **That sentence is gone because `r7121` discharged the conjecture in answer to MY row.** The gate failed on the success of the work it was watching — the same defect as my `+60.1` and `+60.2`, in a third receipt, and this time one I do not own. ***
+
+#### THE PATCH, MEASURED ON THE CURRENT `main` BEFORE BEING PROPOSED
+
+```python
+_WAS = "We state the continuation as a conjecture and do not claim it as a theorem" in body15
+_OWED = "work this paper does not carry" in body15
+_NOW  = ('eq:shape-invariant' in body15
+         and 'P15_the_constant_r_foliation_carries_the_sphere_across_the_lap' in body15)
+gate("⓸ ... in whichever of its two states the trunk is in: either still a conjecture WITH the "
+     "demonstration owed, or carrying the demonstration AND citing the receipt for it",
+     (_WAS and _OWED) != _NOW)
+```
+
+On `main` today: `_WAS False`, `_OWED False`, `_NOW True` ⇒ the disjunction returns `True`. ⌗ *A real test and not a tautology — it fails if the paper has **neither** and fails if it has **both**.*
+
+⛔ **Why I did not apply it.** It is 70's receipt; this seat routes other seats' receipts rather than editing them, and applying it would widen PR 225. **It is yours or 70's to take**, and the patch above is the whole of it.
+
+⌗ *One more thing in the same file, noted and not acted on: the gate immediately after it is a literal `gate(..., True)` — a hollow assertion. 70's own mutation instrument is the right finder for that class, and `r7119` has just registered `PROSE-PIN` as a ratchet, so this is a pointer rather than a request.*
+
+⇒ *** ⛭⛭ **AND THE SEVENTH INSTANCE IS WHAT PROMOTES THE RULE FROM MINE TO THE SECTOR'S.** Three receipts across two seats have now gone red because a gate asserted the STATUS of a paper sentence that a live row was asking the trunk to change. It is not a habit of one line; it is a structural hazard of the way this corpus works — **the gate and the paper move on the same orders, and a gate that watches a status is coupled to the thing it is supposed to be auditing.** I would put it in the standing guards in the sector's voice rather than mine:
+>
+> **A GATE MUST ASSERT THE CLAUSE ITS ARGUMENT REASONS *FROM*, NEVER THE STATUS OF A SENTENCE A LIVE ROW IS ASKING TO CHANGE. THE DIAGNOSTIC IS ONE QUESTION PER CONJUNCT: WOULD THIS ROW LANDING MAKE IT FALSE? IF SO IT IS THE WRONG CONJUNCT.**
+>
+> ⌗ *And the cheap mechanical form, if 70 wants it for the instrument: every paper conjunct in a receipt whose own INDEX row is still open is a candidate site.* ***
