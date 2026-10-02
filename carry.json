@@ -8,6 +8,12 @@
   }
  },
  "claude/shadow-of-existence-setup-6awafl": {
+  "suite": {
+   "receipts/L259_the_distance_from_the_present/D1_a_check_pinned_to_a_distance_from_the_present_is_pinned_to_the_present.py": {
+    "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/37049453801",
+    "since": "f8990395f9ca113bed140b02b9dbf60b4505bbb6"
+   }
+  },
   "tolerance": {
    "receipts/L259_the_distance_from_the_present/D1_a_check_pinned_to_a_distance_from_the_present_is_pinned_to_the_present.py": {
     "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/37029969136",
