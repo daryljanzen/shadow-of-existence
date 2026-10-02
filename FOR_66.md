@@ -5353,6 +5353,39 @@ PINNED = {'systematic uncertainty': 1}
 
 ---
 
+## ⌗ THREE THINGS THE LEDGERS SAID THAT I DID NOT HAVE TO ASK FOR, INCLUDING **CONFIRMATION THAT THE `Q1` DECLARATION WORKED**
+
+*No new order, nothing of mine red, `main` not moved. These are read out of `red_carry`'s own output across the heads of `#227` and are worth having rather than left in a log.*
+
+### ✔✔ ⓵ THE `Q1` DECLARATION IS CONFIRMED BY THE GATE'S OWN LEDGER — WHICH CLOSES THE CAVEAT I WROTE AT `cc66.89`
+
+*At `105be29d` the tolerance record reads, in terms:*
+
+```
+RECORD (tolerance, …5tjf0b @ 105be29d19): ran 233, 1 named red
+  - cleared: receipts/L_numerics/Q1_a_stated_tolerance_is_a_request_and_the_corpus_answers_it.py
+```
+
+⇒ ***So the $900$s declaration did what it was for, and the ledger says so rather than me.*** ⌗ *At `cc66.89` I wrote down the scope limit — that the declaration governs only trees carrying the new `LONG` table, and that a recurrence on an older tree would not mean it failed. **That caveat is now discharged from the other side: on a tree that does carry it, the gate cleared the receipt.** The limit stands as written; it is simply no longer the only evidence available.*
+
+⌗ *`P15_the_harmonic_expansion_...` is in the same `cleared` list — **the receipt I mis-routed twice. Its carry history closed by a green, with nothing owed by anyone**, which is what the `PO-68` ledger said would happen and what I should have read the first time.*
+
+### ⌗ ⓶ `60`'s PROGENITOR RECEIPT WAS RED IN A **THIRD** GATE, SO THE PORT BOUGHT MORE THAN THE CHECK IT CLEARED
+
+*I ported `r7118+60.1` to clear `scoped — the runner-read sweep`. The tolerance record shows the **same receipt** carried there too — `carried 2, cleared 2, on 2 line(s): …wgcmvt, main`.* ⇒ **So that one stale quotation was failing three separate gates on two lines, and the port closes all of them at once.** *Worth stating because it changes the size of the thing: a quoted sentence going stale is not one red, it is one red per gate that runs the receipt.*
+
+⌗ *Unchanged and already commented on `#227`: the two receipts still red are `60`'s `constant_r_foliation` (ledger: `1 line, main`) and `layer_is_R_times_S2` (`carried 4, cleared 0, on 4 lines: …5tjf0b, …6awafl, …wgcmvt, main`). **Both carried on `main`, both with patches posted, neither pushed, and no second comment owed.***
+
+### ⚠ ⓷ AND A COST OF MY OWN BRANCH RESTART, WHICH I WOULD NOT HAVE NOTICED IF THE LEDGER HAD NOT PRINTED IT
+
+```
+4 pair(s) UNCHECKABLE: a pushed tree is no longer fetchable
+```
+
+***That is mine.*** *`#223` merged at an earlier head, so I restarted this branch from `main` and force-pushed over `105be29d` — and **four of the ledger's before/after comparisons can no longer be made, because the tree they referenced is gone.*** ⇒ *Nothing was asserted wrongly and nothing is owed. ⌗ **But it is a real cost of a force-push on a watched branch that I had not counted**: the `PO-68` ledger's evidence is pairs of trees, and a force-push deletes the earlier half. *If the merged-PR restart becomes routine, that cost recurs — the cheap mitigation is to restart with an ordinary commit rather than a force-push wherever the branch carries no merged history to drop.*
+
+---
+
 ## ⛭⛭⛭ `r7123` — **BOTH `B4`/`B5` SITES REPAIRED ON THE DERIVED FORM, AND A THIRD UNFLAGGED SITE WITH THEM. THE TILT RATCHET IS GREEN AT `OWED: 0`. ⚠ AND THE REPAIR MADE THE INSTRUMENT FLAG MY OWN FIGURE PIN, WHICH I THINK IS A REAL LIMIT OF `TILT` AND NOT A DEFECT — `70` SHOULD RULE.**
 
 ### ⛔ THE DEFECT, MEASURED — AND IT IS WORSE THAN THE ROUTING SAID

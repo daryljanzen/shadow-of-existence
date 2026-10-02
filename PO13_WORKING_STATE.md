@@ -6870,3 +6870,17 @@ Result: `OWED: 0` — bucket empty, no new unadjudicated site, no stale entry, r
 **One line changed in 70's gate, stated rather than left to be found: `CEILING` 2 → 0.** With both owed sites discharged, a ceiling of 2 is a standing permission for two new owed ones — the same "silent permission to regress" the baseline warns of for a stale entry. A ceiling can only *tighten* a gate, which is why this seat was willing to touch another seat's file here having just declined to touch 60's receipt; it reverses in one line and the comment says so.
 
 Verified: B4 green, B5 green, tilt ratchet green at `OWED: 0`, fast job green (10 generators, 112 gates, the hollow-assertion lint). Appendices regenerated with no diff, since they index from INDEX.md and no row changed.
+
+## cc66.93 — three readings out of `red_carry`'s own output: the Q1 declaration is confirmed, 60's stale quote was failing three gates, and a force-push cost the ledger four comparisons
+
+No new order, nothing of this seat's red, main not moved. These are read out of the ledgers across #227's heads.
+
+**1. The Q1 declaration is confirmed by the gate's own ledger.** At `105be29d` the tolerance record reads `ran 233, 1 named red` with `- cleared: receipts/L_numerics/Q1_a_stated_tolerance_is_a_request_and_the_corpus_answers_it.py`. So the 900 s declaration did what it was for, stated by the gate rather than by this seat. This discharges the caveat written at cc66.89 from the other side: the limit (the declaration governs only trees carrying the new `LONG` table) stands as written, but it is no longer the only evidence available — on a tree that does carry it, the gate cleared the receipt.
+
+`P15_the_harmonic_expansion_...` is in the same cleared list — the receipt this seat mis-routed twice. Its carry history closed by a green with nothing owed by anyone, which is what the PO-68 ledger said would happen and what should have been read the first time.
+
+**2. 60's progenitor receipt was red in a third gate.** The `r7118+60.1` port was made to clear `scoped — the runner-read sweep`; the tolerance record shows the same receipt carried there too (`carried 2, cleared 2, on 2 line(s): …wgcmvt, main`). So one stale quotation was failing three separate gates on two lines and the port closes all of them. Worth stating because it sizes the class: a quoted sentence going stale is not one red, it is one red per gate that runs the receipt.
+
+Unchanged and already commented on #227: the two still-red receipts are 60's `constant_r_foliation` (ledger: 1 line, main) and `layer_is_R_times_S2` (carried 4, cleared 0, on 4 lines including main). Both carried on main, both with patches posted, neither pushed, no second comment owed.
+
+**3. A cost of this seat's own branch restart.** The tolerance record prints `4 pair(s) UNCHECKABLE: a pushed tree is no longer fetchable`. That is this seat's: #223 merged at an earlier head, so the branch was restarted from main and force-pushed over `105be29d`, and four of the ledger's before/after comparisons can no longer be made because the tree they referenced is gone. Nothing was asserted wrongly and nothing is owed, but it is a real cost of a force-push on a watched branch that had not been counted — the PO-68 ledger's evidence is pairs of trees and a force-push deletes the earlier half. If the merged-PR restart becomes routine the cost recurs; the cheap mitigation is to restart with an ordinary commit rather than a force-push wherever the branch carries no merged history to drop.
