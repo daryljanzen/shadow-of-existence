@@ -382,15 +382,27 @@ gate("⇒ *** `PO-74` DISCHARGED IN THE DIRECTION `sec:largescale` STATES IT: th
      "conjecture's status wording, which discharging it is what removes*",
      max(near) < 1e-12 and worst < 1e-12 and _FOLIATION in b15)
 
-gate(f"⌗ and `sec:largescale` is LOCATED rather than quoted from memory, in whichever of its two "
-     f"states the trunk is in: it carries the foliation sentence, and then EITHER still states the "
-     f"continuation as a conjecture with the demonstration owed (conjecture wording present: "
-     f"{_WAS_CONJECTURE}, demonstration owed: {_OWED}) OR carries the demonstration itself and cites "
-     f"this receipt for it ({_CARRIED}).  ⛔ *Exactly one of those is true at a time and this gate "
-     f"asserts the disjunction, because `r7121` discharged the conjecture in answer to this very "
-     f"row -- the sixth time in this sector a gate of this line has pinned a paper state its own "
-     f"result was asking to change*",
-     _FOLIATION in b15 and ((_WAS_CONJECTURE and _OWED) != _CARRIED))
+# ⛭⛭⛭ r7125 (66): **THE DISJUNCTION WAS RIGHT IN KIND AND WRONG IN CONNECTIVE, AND THE CASE THAT
+#   BROKE IT IS THE INTERESTING ONE.**  *This gate was written as an EXCLUSIVE or -- `(conjecture and
+#   owed) != carried` -- on the reasoning that the paper is in one state or the other.  **Node 70's
+#   `PO-74` adversarial pass at `r7123+70.1` produced a third state, and it is the honest one:** the
+#   demonstration posits the round `$S^3$` as its input rather than obtaining it, so the continuation
+#   goes back to a conjecture -- *while this receipt is still cited for the parts that DO stand*, the
+#   seam at `$r_N$`, the sign-blindness through `$r^2$`, and the invariant's measured discriminating
+#   power on a Berger sphere.*
+#   ⇒ ** So `conjecture` and `cited` are both true at once, which an exclusive or forbids and which
+#   nothing about the corpus does. **  *A paper may hold a conjecture and cite a receipt for what that
+#   receipt establishes; those are different sentences about different claims.*
+#   ⌗ *Changed to an INCLUSIVE or: at least one state must be present, and the foliation sentence must
+#   be there either way.  **The anti-fragile instinct that wrote the disjunction was correct -- it is
+#   what made this a one-connective repair instead of a stale quotation** -- and the lesson is that a
+#   defence against a paper state changing has to admit the state the result itself may produce.*
+gate(f"⌗ and `sec:largescale` is LOCATED rather than quoted from memory, in whichever state the trunk "
+     f"is in: it carries the foliation sentence, and then states the continuation as a conjecture with "
+     f"the demonstration owed (conjecture wording present: {_WAS_CONJECTURE}, demonstration owed: "
+     f"{_OWED}), or carries the demonstration and cites this receipt for it ({_CARRIED}), or BOTH -- "
+     f"the conjecture standing for what is not yet shown while the receipt is cited for what is",
+     _FOLIATION in b15 and ((_WAS_CONJECTURE and _OWED) or _CARRIED))
 
 
 # ============================================================ E2. the seam is the inflection

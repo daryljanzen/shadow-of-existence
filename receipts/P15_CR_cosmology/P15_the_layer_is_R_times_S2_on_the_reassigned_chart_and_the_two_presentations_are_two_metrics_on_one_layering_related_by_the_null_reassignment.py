@@ -267,10 +267,30 @@ gate("⛭ and the Euclidean segment is named as the join: the lift's purely imag
      "along the bead at all",
      "is what keeps that reassignment well defined across the lap" in body15)
 
-gate("⓸ and what is NOT claimed is marked as a conjecture in the paper's own words rather than left "
-     "implicit: the layer's character inside the lap is reached by analytic continuation, stated as a "
-     "conjecture and not as a theorem, with the demonstration named as work the paper does not carry",
-     "We state the continuation as a conjecture and do not claim it as a theorem" in body15)
+# ⛔⛭⛭ r7125 (66): **THIS CHECK WAS THE SEVENTH INSTANCE OF A CLASS NODE 60 NAMED, AND IT IS THE GATE'S
+#   OWN RECEIPT.**  *It pinned the literal sentence "We state the continuation as a conjecture and do not
+#   claim it as a theorem".  `r7121` discharged that conjecture in answer to `PO-74` --- and the check went
+#   red on `main` **on the success of the work it was watching.**  `60` found it, verified it red on `main`
+#   in a clean worktree, and routed it with a patch rather than editing another seat's file.*
+#   ⇒ ** THE CLASS: a receipt that asserts the presence of a paper sentence stating that something is OPEN
+#   is a gate that fails when its own result closes it. **  *Seven instances in this sector; the other six
+#   were repaired by their authors by reading the numbers out instead of pinning the wording.*
+#   ⌗ *The repair is the disjunctive form, in `60`'s shape and with the inclusive-or lesson from `r7125`
+#   applied: what this check is FOR is that the paper marks the status honestly in one direction or the
+#   other --- never that it is marked open.  **It now passes in either state and fails only if the paper
+#   marks neither**, which is the thing worth asserting.*
+_STATUS_OPEN = ("as a conjecture and do not claim it as a theorem" in body15
+                and "work this paper does not carry" in body15)
+_STATUS_SHOWN = ("eq:shape-invariant" in body15
+                 and "P15_the_constant_r_foliation_carries_the_sphere_across_the_lap" in body15)
+print(f"      the paper's status on the continuation -- marked open: {_STATUS_OPEN};  "
+      f"demonstration carried and cited: {_STATUS_SHOWN}")
+gate("⓸ and the paper marks the continuation's status in its own words rather than leaving it implicit -- "
+     "EITHER as a conjecture with the demonstration owed, OR carried and cited, or both, the conjecture "
+     "standing for what is not yet shown while the receipt is cited for what is.  ⛔ *What this asserts is "
+     "that the status is MARKED, never that it is open: a gate pinned to the open wording fails on its own "
+     "success, which is what happened here at `r7121`*",
+     _STATUS_OPEN or _STATUS_SHOWN)
 
 gate("⌗ and nothing here reads an instrument, a banked spectrum or a likelihood -- the whole receipt is "
      "sympy on `eq:proper-frame` and `eq:scalefac` plus four substring reads of the paper, so it cannot "
