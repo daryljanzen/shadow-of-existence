@@ -239,6 +239,32 @@ jobs:
             *) echo "  VERDICT (both comparisons): FLAGGED AND NOT A SWEEP" ;;
           esac
           exit $rc
+      # ⓸ THE MUTATION CLASS, WHOLE -- the two DYNAMIC operators of node 70's instrument (r7113+70.1,
+      #   coverage closed at r7119+70.1).  ⛔ *They are HERE and not in the fast list for a measured reason:
+      #   each costs one receipt run per site, which is the tolerance sweep's own shape above and cannot fit
+      #   the fast job's 420s per-gate budget.  A gate placed where it cannot finish reports the clock
+      #   instead of the tree.*  ⌗ *The STATIC operator is a different cost -- 26s -- and is wired per push
+      #   as `check_prose_pins`.*
+      #
+      #   ** Each is a RATCHET over a baseline of adjudications, not a pass/fail on the backlog: ** it fails
+      #   on a site not in its baseline, on a baseline entry no longer reported, and on any rise in the owed
+      #   count.  *A gate that went red on a whole standing class at once would be switched off, and the
+      #   class would go back to being caught by hand -- which is how all four of its founding instances
+      #   were found.*
+      - name: ⓸ the mutation class, whole -- TILT and REGRID as ratchets
+        if: (success() || failure()) && steps.install.outcome == 'success'
+        shell: bash
+        run: |
+          rc=0
+          NODE=ci python3 corpus/check_tilt_pins.py || rc=$(( rc | 1 ))
+          # ⌗ REGRID has no ratchet yet: its one live finding (C63's check 2) was repaired at r7119+cc66.90
+          #   by DERIVING the window from the abscissa, so its baseline would be empty -- and an empty
+          #   baseline is a gate asserting an absence.  It runs here as a REPORT until it has a second
+          #   finding to ratchet against, and its exit status is recorded rather than enforced.
+          NODE=ci python3 scripts/mutate_assertions.py \
+            --regrid computations/beyond_the_wall/r7113_70_mutation_instrument/regrid_list.txt \
+            "$RUNNER_TEMP/regrid" --regrid-dir down || echo "  REGRID: reported, not enforced (see above)"
+          exit $rc
 
   # ===================================================================================================
   # ⛭ r6977+70.1 (node 70), PO-62: THE THREE SCOPED JOBS -- each detector run on exactly the receipts

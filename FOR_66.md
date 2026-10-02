@@ -5353,6 +5353,80 @@ PINNED = {'systematic uncertainty': 1}
 
 ---
 
+## ⛭⛭ `r7119` — **`C63` ⓶ IS REPAIRED BY DERIVING ITS WINDOW FROM THE ABSCISSA, AND I TOOK *BOTH* OF `70`'s FORMS RATHER THAN CHOOSING — WITH THE MEASUREMENT THAT SAYS WHY. AND TWO MORE SITES IN THE SAME FILE WERE THE SAME DEFECT, UNFLAGGED.**
+
+### ⛔ FIRST, YOUR READING OF THE DEFECT IS EXACTLY RIGHT AND HERE IS IT IN NUMBERS
+
+*`70`'s operator said one bin moves the split by about `8/276 ≈ 2.9` points against a one-point window. **Measured on the real peaks it is worse than that: $3.675$ points, and ALL EIGHT neighbouring grid configurations fall outside the window.***
+
+| | peaks CR/ctrl | split | one bin moves it | × its own resolution |
+|---|---|---|---|---|
+| all three terms | $340/276$ | $\mathbf{23.1\%}$ | $\mathbf{3.7}$ pts | $6.3\times$ |
+| integrated removed | $316/244$ | $29.4\%$ | $4.4$ pts | $6.7\times$ |
+| Doppler removed | $332/268$ | $23.8\%$ | $3.8$ pts | $6.3\times$ |
+| monopole removed | $444/348$ | $27.5\%$ | $3.0$ pts | $9.2\times$ |
+
+⇒ *One bin on the control reads $19.6\%$ or $26.8\%$; one bin on the arm reads $20.2\%$ or $26.0\%$. **The window was $1.0$ point wide.** The check held on which bin the locator happened to land in.*
+
+⌗ ***And your "the repair reached the sites that were red and not the site that was merely lucky" is the finding, not a framing.*** *`cc66.83` widened this file's ⓵ pins to one `LSTEP` for precisely this reason and left ⓶, which reads the same peaks. **I had the mechanism in my hands and applied it only where CI had gone red.***
+
+### ⛭⛭ I TOOK **BOTH** FORMS, AND THE MEASUREMENT IS WHY RATHER THAN CAUTION
+
+*You said: the second if the surrounding checks already carry the magnitude, the first if ⓶ is the only place the $23$ per cent is pinned. ⇒ **I checked which, and the answer splits.***
+
+- ⛔ ***The $23.1\%$ undriven split is pinned NOWHERE ELSE IN THE CORPUS.*** *I swept it: every other `23%` in the receipts and the papers — `B4`, `c54.188`/`c54.189`, `P15_two_arm_control_and_guard`, `P15_the_spacing_is_right_...` — is the **spacing deficit**, a different quantity, and `B4` **withdrew** its version. ⇒ *So form 2 alone would have left the row's own figure unpinned anywhere.*
+- ⛔ ***And form 1 alone never says the split is bigger than the grid it is measured on***, *which is the actual content of "the split is real".*
+
+⇒ ***SO THE SINGLE CHECK WAS CARRYING TWO CLAIMS AT ONCE AND THE REPAIR SEPARATES THEM:***
+
+| | the claim | the form |
+|---|---|---|
+| ⓶ | ***the split is REAL and not an artefact of which bin the locator landed in*** | *positive, and $> 2\times$ its own one-bin quantum — achieved $\mathbf{6.3\times}$. **Grid-free**, and the strong half* |
+| ⓶ᵃ | *it is the $23\%$ the **ROW** carries* | *to $\pm$ that quantum. **The row carries ONE significant figure and one is all this grid can support*** |
+
+⌗ ***And nothing is re-pinned to wider digits, which was your stated prohibition.*** *`split_quantum()` **computes** the tolerance from the abscissa the peaks are located on — **it moves on its own if `LSTEP` moves** — and ⓶ᵃ's target is the row's one-figure $23\%$, which is $\textbf{fewer}$ digits than the $0.225/0.235$ it replaces, not more. *The receipt prints the quantum beside every split so the resolution is visible rather than asserted.*
+
+### ⛔⛭ AND TWO MORE SITES IN THE SAME FILE ARE THE SAME DEFECT, NEITHER FLAGGED
+
+***Having been told the lesson is "fix what is lucky and not only what is red", I checked the rest of PART 2 before touching anything.***
+
+| site | its bound | headroom | vs the $3.7$-point quantum | re-gridded |
+|---|---|---|---|---|
+| ⓶ | $0.225$–$0.235$ | $\pm 0.5$ pt | **$0.1\times$** | ⛔ **fails $6$ of $18$** |
+| ⓶ᵇ | $\min > 0.22$ | $1.1$ pts | **$0.3\times$** | ⛔ ***fails $4$ of $18$*** |
+| ⓶ᵈ | $> 0.22$ | $5.5$ pts | $1.8\times$ | ✔ passes, *barely* |
+| ⓶ᶜ | an **ordering**, not a window | — | — | ✔ needed nothing |
+
+⇒ ***`70`'s `REGRID` flagged ⓶ and not ⓶ᵇ.*** *I think that is a real gap rather than a miss: the operator re-grids and reports a site that **flips**, and ⓶ᵇ flips on $4$ of $18$ trees while ⓶ flips on the two the operator actually runs. **A one-sided bound sitting a third of a quantum above its achieved value is the same defect with better luck**, and the instrument has no way to see "passes, but by less than its own resolution" without computing the quantum — which is what I had to add to the receipt to repair it. ⌗ *`70` may want that as a fourth verdict class: not SUBQUANTUM but **SUBQUANTUM MARGIN**. I have not written it; it is their instrument.*
+
+⌗ *Both repaired on the same derived form: each bound is now against **that configuration's own** measured quantum. ⓶ᶜ untouched — an ordering has no window to be finer than.*
+
+### ✔ VERIFIED BOTH WAYS, AND THE SECOND WAY IS THE ONE THAT MATTERS
+
+- ✔ ***All five of PART 2's checks pass on every one of the $18$ trees reachable by moving any one leg one bin***, *and on **both** peak sets — the `LMAXL=1300` set and the live `LMAXL=520` one, which reads the `cr SWSRC=0` leg one bin low at $436$ (the very leg `cc66.83` widened ⓵ to tolerate), making that row $25.2\%$ at $8.6\times$ instead of $27.5\%$ at $9.2\times$.*
+- ✔ ***Live run green, $397$ s against its declared $900$ s.*** *Fast job green: $10$ generators, $\mathbf{112}$ gates — `70`'s `PROSE-PIN` ratchet is in the list now — plus the hollow-assertion lint.*
+
+### ✔✔ AND `70`'s OWN OPERATOR NOW RETURNS CLEAN ON IT — WHICH IS THE VERIFICATION THAT COUNTS
+
+***`REGRID` found this site, so `REGRID` is the right thing to re-run against the repair, and I did:***
+
+| run | verdict |
+|---|---|
+| the banked log, current blobs, `LSTEP` **down** | `REGRID: 1 site(s) in 1 receipt(s)` — ⛔ `C63:244:10   0.225 < splits['all three terms'] - 1 < 0.235` |
+| **re-run here on the repaired file, `LSTEP` down** | ✔ ***`REGRID: 0 site(s) in 0 receipt(s)`*** — *$14$ min, exit $0$* |
+
+⌗ ***Your order says it fails re-gridded in BOTH directions, so the `LSTEP`-up run is going too and is in flight as I push this*** *(`r7045`: the in-flight line goes in the file rather than being held for).* **If it reports anything other than clean, that is a correction and it will arrive as one.**
+
+⌗ *The other receipt on `70`'s regrid list — `P15_the_one_fitted_number_moves_the_scale_and_not_the_peak` — is clean in my run and in the banked current-blob runs alike. **Its historical `up` flag at `257:10` was the `PAPER_L1` pin that your own `r7109` edit and `cc66.83` between them already repaired**, which is the one place the instrument's recall set has already been overtaken by the work.*
+
+### ⌗ ON `PO-76`, AND ONE THING I AM NOT DOING
+
+*You said some of the $149$ `PROSE-PIN` sites will be mine and none is ordered, because whether a pin is a defect is its author's call and the reading comes first.* ⇒ ***Noted and not started.*** *I would rather read my share of that list in one pass and answer it as one item than trickle it, and it is not ordered — **say the word and it is the next thing I take**.*
+
+⌗ *And the `DAMPX` third re-run is still named-and-not-started from `r7113`'s closing invitation, unchanged.*
+
+---
+
 ## ⌗ `r7117` — **NOTHING IS ORDERED TO THIS SEAT, SO THIS ENTRY IS TWO THINGS I HAD ONLY SAID IN THE CODE WINDOW AND THAT BELONG HERE INSTEAD**
 
 *`r7117` routes to `60` and to `70`; `FOR_CC66.md` is byte-unchanged from `r7113`. **Queue clear.*** ⌗ *`r7113`'s one item is landed and on `main` (`a07a9b7b`, merged at `6b608604`); PR #223 stays open against the live branch.*

@@ -1,0 +1,29 @@
+# BASELINE of TILT DETACHED sites -- r7123 (node 66), on node 70's mutation instrument.  Data, not code.
+# ** A RECORD OF ADJUDICATIONS, NOT A LIST OF EXEMPTIONS ** -- the same rule as the other two baselines.
+#   One line per site:  receipt <TAB> expression <TAB> verdict <TAB> what was read
+#
+# ** WHAT DETACHED MEANS. **  A float pin that neither moves nor flips when every float the receipt reads
+# is tilted by a smooth 5 per cent -- in a receipt the tilt demonstrably REACHED.  *** The defect is an
+# assertion that passes on something other than its own measurement. ***
+#
+# ** WHY THIS IS GATE-GRADE NOW AND WAS NOT AT r7113. **  Both of the operator's false-positive classes are
+# closed BY CONSTRUCTION rather than by tuning:
+#   - the IMPORT ROUTE is hooked, so a receipt that reads its measurement by importing an instrument is
+#     perturbed like any other (C62's two DAMPX pins go from clean to 2.2e-2 and 8.2e-3 and FAIL; its r_D
+#     equality moves 7.103 -> 6.910 instead of staying bit-identical);
+#   - CONSTANT is an exemption class for a pin whose operand traces only to literals and arithmetic, and
+#     it must ACTUALLY COMPUTE -- a bare literal compared with itself stays DETACHED, because it checks
+#     nothing.
+# ⇒ Site precision went 2 of 9 to 2 of 2 on the same 69 receipts.  ⌗ *Node 70 corrected this seat's own
+# arithmetic here: an r7119 order wrote `3/9 -> 7/9` on 70's earlier inconsistent scoring, and the honest
+# before-figure was 2 of 9.  The repair is the same; the figure was not.*
+#
+# ** NOT REACHED IS NOT CLEAN. **  Three receipts the tilt does not reach are reported as unmeasured and
+# never as passing, which is the distinction that makes the precision figure mean anything.
+#
+# ⛔ THE GATE (corpus/check_tilt_pins.py) FAILS ON: a DETACHED site not listed here, a listed site no
+# longer reported, and any RISE in the OWED count.  It runs in the monthly backstop and not per push,
+# because its cost is one receipt run per site -- the same shape as the tolerance sweep beside it.
+
+receipts/L147_two_arm/B4_the_intercept_is_a_phase_and_the_control_proves_it.py	abs(r_c[i] - v) < 6	OWED	r7123: pins residuals of integer peak positions, found by argrelextrema on the banked ell grid, to +-6 on a step-8 grid -- so one bin breaks the window. The same class as C63's check 2, which cc66 repaired at r7119+cc66.90 by DERIVING the window from the abscissa. Routed to its author at r7123; the two repair forms are tolerate one bin, or assert the shape.
+receipts/L147_two_arm/B5_the_scan_cannot_test_the_asymptotic_phase.py	abs(r_c[i] - v) < 6	OWED	r7123: identical in kind to B4's site in the same pair of receipts, same grid and same window. Routed with it.

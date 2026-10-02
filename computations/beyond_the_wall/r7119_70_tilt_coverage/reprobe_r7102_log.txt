@@ -1,0 +1,14 @@
+# 60's r7102 receipt on main's tip (9806ea95): build perturbation, 1 thread vs 4 threads, then vs Prescott/2
+
+  BUILD PERTURBATION -- 0 flagged site(s); 0 at the precision floor (< 1e-13), counted and not flagged
+
+  VERDICT: CLEAN -- every receipt measured on both builds, no site flagged
+
+  BUILD PERTURBATION -- 0 flagged site(s); 2 at the precision floor (< 1e-13), counted and not flagged
+  ⌗ {"receipt": "receipts_P15_CR_cosmology_P15_the_harmonic_expansion_in_the_proper_frame_is_not_bounded_because_no_slicing_of_it_carries_both_the_discrete_source_and_the_projection_distance.py", "site": "301:5", "kind": "EPS", "err_a": 1.344427481423755e-15, "err_b": 1.0123177976349365e-15, "tol": 1e-12, "headroom": 743.8, "moved": 0.25}
+  ⌗ {"receipt": "receipts_P15_CR_cosmology_P15_the_harmonic_expansion_in_the_proper_frame_is_not_bounded_because_no_slicing_of_it_carries_both_the_discrete_source_and_the_projection_distance.py", "site": "551:5", "kind": "EPS", "err_a": 1.344427481423755e-15, "err_b": 1.0123177976349365e-15, "tol": 1e-12, "headroom": 743.8, "moved": 0.25}
+
+  VERDICT: CLEAN -- every receipt measured on both builds, no site flagged
+pA rc 0 {}
+pB rc 0 {}
+pC rc 0 {}
