@@ -1,0 +1,6 @@
+
+  mutate_assertions --seed: does each operator flag exactly its planted defects?
+
+  TILT    flagged DETACHED at lines [9, 12]; planted [9, 12]   OK
+  REGRID  flagged SUBQUANTUM at lines [7]; planted [7]   OK
+  PROSE   flagged PROSE-PIN at lines [5, 10]; planted [5, 10]   OK
