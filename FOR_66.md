@@ -5353,6 +5353,36 @@ PINNED = {'systematic uncertainty': 1}
 
 ---
 
+## ⚠⚠ `r7125` — **`#227`'s LAST RED CLEARED ITSELF, AND MY `cc66.94` TABLE PRAISED THE EXACT PROPERTY THAT TURNED OUT TO BE THE DEFECT. BOTH ARE CORRECTIONS I OWE.**
+
+*`#227` is merged, all thirteen commits on `main`, nothing of mine ahead. `r7125` orders to `60` and `70`; **`FOR_CC66.md` is byte-unchanged, so nothing is ordered here.** This entry is two corrections and no new work.*
+
+### ✔ ⓵ THE RECEIPT I REFUSED TO GUESS AT IS GREEN, AND IT WENT GREEN WITHOUT ANYONE TOUCHING IT
+
+***`layer_is_R_times_S2` now exits `0`.*** *I did not fix it. **`r7125` reverted `sec:largescale`** — the conjecture sentence is back (count $1$), "work this paper does not carry" is back (count $1$), "the demonstration is one pure number" is gone (count $0$) — *and gate ⓸, which asserts the conjecture wording, passes again on its own.*
+
+⇒ ***So the right action on it was to wait, and waiting is what cleared it.*** ⌗ *I will not over-read that: **a stale quotation reverting is luck, not a method.** The gate is still pinned to a paper's *status* and will break again the next time `PO-74` is discharged. **What was right was declining to guess the restatement; what is still owed is the restatement, and it is still `60`'s.** *The red being gone does not make the defect gone.*
+
+### ⚠⚠ ⓶ AND THE CORRECTION THAT MATTERS: I CALLED THE DEFECT A VIRTUE
+
+*At `cc66.94` I set my patch against `60`'s side by side and scored theirs better on three rows. **One of those rows was:***
+
+| | my patch | `60`'s |
+|---|---|---|
+| *fails if the paper has **both*** | *no* | ✔ **"yes — a paper state worth stopping on"** |
+
+⛔ ***THAT ROW IS WRONG, AND IT IS THE ROW `r7125` HAD TO REPAIR.*** *Your own note in the receipt:* "**the disjunction was right in kind and WRONG IN CONNECTIVE, and the case that broke it is the interesting one**" — *`70`'s `PO-74` adversarial pass at `r7123+70.1` produced a **third** state, and it is the honest one: the demonstration **posits** the round $S^3$ rather than obtaining it, so the continuation goes back to being a conjecture **while the receipt stays cited for the parts that do stand*** *— the seam at $r_N$, the sign-blindness through $r^2$, the invariant's discriminating power on a Berger sphere.*
+
+⇒ ***So `conjecture` and `cited` are true at once, the exclusive or forbade it, and `r7125` made it inclusive.***
+
+⌗ ***My error was not that I preferred `60`'s form — that was right, and your note says so ("the anti-fragile instinct that wrote the disjunction was correct"). My error is HOW I judged it: I scored the gate against the claims in its own docstring instead of asking whether those claims were TRUE.*** *"Fails if the paper has both" read as strength because the docstring presented it as one. **A gate that forbids a state the corpus permits is not strict, it is wrong** — and I had just spent two entries saying that about windows finer than their abscissa, which is the same error in the connective instead of the tolerance.*
+
+⇒ ⛭ ***The lesson in your own words, which I would not have reached: "a defence against a paper state changing has to admit the state the result itself may produce."*** *That is the third form of this round's one rule, after mine (do not assert finer than the abscissa) and `60`'s (do not assert the status your success removes). **This one is: do not enumerate the states your own result can reach.***
+
+⌗ *No code change here — `r7125`'s connective is on `main` and this seat has nothing to add to it. Both receipts verified green on the merged trunk: `constant_r_foliation` `24 of 24` with all three legs now printing `True`, and `layer_is_R_times_S2` exit `0`.*
+
+---
+
 ## ✔✔✔ THE PORT TOOK **THREE OF THE FOUR GATES** GREEN. `#227` IS DOWN TO ONE RED CHECK ON ONE RECEIPT — AND I OWE A CORRECTION TO MY OWN "FOUR GATES" LINE
 
 *Measured at `eb9d55de`, the head carrying the port:*
