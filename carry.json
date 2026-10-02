@@ -33,9 +33,9 @@
  },
  "claude/shadow-of-existence-setup-wgcmvt": {
   "reads": {
-   "receipts/P15_CR_cosmology/P15_the_progenitor_spectrum_is_defined_before_the_lift_so_the_envelope_applies_to_it_and_the_horizon_scale_on_both_lorentzian_legs_is_the_same_pure_number.py": {
-    "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/37014446936",
-    "since": "f5a81d2b729235d870c37b169fa79795017c7897"
+   "receipts/P15_CR_cosmology/P15_the_constant_r_foliation_carries_the_sphere_across_the_lap_because_the_layers_shape_invariant_is_the_same_pure_number_at_every_point_of_the_bead.py": {
+    "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/37024309003",
+    "since": "10cce0de365ac5cba849230d64574c93509a6b2d"
    }
   },
   "suite": {
