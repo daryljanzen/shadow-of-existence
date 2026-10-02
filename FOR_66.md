@@ -5353,6 +5353,38 @@ PINNED = {'systematic uncertainty': 1}
 
 ---
 
+## ⚑⚑ `r7131` CI — **A RED ON A SUPERSEDED ANCESTOR, AND THE FIND IS NOT THE RECEIPT: A CARRIED RED OUTLIVED THE GREEN THAT CLEARED IT. NOTHING WAS FLAGGED AND NOTHING IS PUSHED.**
+
+*`scoped — the tolerance perturbation` red on `112ad14f`, parent of the PR head. **Exit code `2` is a verdict the workflow spells out, not a crash:*** `NOT A SWEEP -- nothing flagged, a receipt unmeasured`. ⇒ **No site was flagged.** *The unmeasured receipt is* `receipts/L_numerics/Q1_a_stated_tolerance_is_a_request_and_the_corpus_answers_it.py`.
+
+### ✔ IT IS NOT THIS PR'S, AND I ESTABLISHED THAT BEFORE STANDING DOWN RATHER THAN ASSERTING IT
+
+- ***The diff does not reach it.*** *No `L_numerics` file is in `origin/main...HEAD`, and neither is any of Q1's four children (two in `P16`, two in `P15` — and the `P15` file this round touched is `C63`, not either of them). **Q1 enters the tolerance scope only through its `READ_INDEX` dep `receipts/**/*.py`**, which any receipt edit anywhere satisfies.*
+- ***It measures inside its budget here:*** *Q1 runs in **$33$ s**, exit $0$, every verdict passing (`READ_INDEX` records $47.9$ s). The runner filed it unmeasured against `2 * max(900, 600)` $= 1800$ s, and under the `r7007+70.1` rule that is **two** timeouts — the parallel pass and the re-run alone. **$33$ s against $1800$ s is a factor of $54$.***
+- ⚑ ***A same-commit control exists, because this repo runs two workflows per head*** *— the duplication I have been treating as noise is an instrument. On `112ad14f` the `pull_request` run `37073925456` ran the identical check and **passed in $41$ s**; the `push` run `37073897369` ran **$50$ minutes** and failed. *Same tree, same gate, opposite outcomes — because the ranges differ:* `receipt_scope.py --range 56628e4b..112ad14f --scope tolerance` *is **`n=0`**, that commit being prose only.*
+- ***And the live head measured Q1 green:*** `--range 112ad14f..dfce672f` *gives **`n=24`, Q1 among them**, and both `dfce672f` runs passed ($4$ and $7$ minutes).*
+
+### ⚑⚑ THE FIND, AND IT IS IN `70`'s CARRY LAYER RATHER THAN IN THE RECEIPT
+
+***`refs/ci/carry` was last written at `23:32:34` — by the FAILING run, AFTER both greens on `dfce672f` had finished (`23:09:24`, `23:12:34`).*** *`red_carry.py`'s own conflict rule is that a refused push "re-reads the ledger and re-applies ITS OWN delta", so **a slow run on the ancestor re-added `Q1` on top of the descendant's clear**. `carry.json` now reads `…5tjf0b -> tolerance -> L_numerics/Q1`, `since: 112ad14f`.*
+
+⇒ ***A red carried from an ancestor can outlive the green that cleared it, whenever a slow run finishes after a faster run on a later commit of the same branch.*** *Each run's delta is right for itself and wrong for the branch: **the last writer wins, and "last" is wall clock and not ancestry.** ⌗ *The ledger already reasons carefully about forks and about which branch may clear which entry — `only a green on main clears main's entry` is in its own docstring. **It does not reason about two live commits of ONE branch**, which is the ordinary state of a branch under this repo's duplicate-run setup.*
+
+⌗ ***This is `70`'s layer (PO-65/67/68) and I have not touched it.*** *It is the same question I am still owed a ruling on — whether I repair another seat's gate when the defect is mine to have found and not mine to own. **Here I am naming it and leaving it**, which is the conservative branch of that question; say which you want and I will do that instead.
+
+### ⌗ AND THE LIMIT IS THE MODULE'S OWN WORDS, NOT MY PARAPHRASE
+
+*`red_carry.py` ll. 58–60: **"that a timeout's clear is a repair. Every other clear is a run that covered the receipt … a quieter machine clears it exactly as a fix would, and nothing here tells the two apart."*** ⇒ *So the $33$ s and the green on `dfce672f` **do not show `Q1` repaired.** They show it measures inside budget on two machines and that nothing in this round moved it. **Q1 already carries this shape:** `r7025+70.1` judged an earlier `>600` s on the runner "an event, not a cost".*
+
+⇒ ***Action: one re-run of the failed job*** *(attempt $2$ of `37073897369`) — the single re-run allowed for confirming a not-this-PR's failure, and the same mechanism that clears the carry, since a green records `Q1` as covered. **No fix pushed, because there is nothing in this diff to fix.** PR #236's head `dfce672f` is green on all four running checks, `mergeable_state: clean`.*
+
+### ⛔ ONE AGAINST MYSELF, AND IT IS THE THIRD TIME FOR THIS SHAPE
+
+***The `/proc/*/cmdline` probe I routed to you as the repair for the `pgrep`/`pkill` self-match matched THIS SHELL's own command line*** *— because the pattern being searched for is inside the searching command. **The probe was only half the repair: the matcher must exclude its own PID.** I killed by PID instead and lost nothing this time. ⇒ *The cycle-instruction change I asked for at `r7119` should read: read `/proc/*/cmdline`, **and skip `$$` and the matcher's own PID** — never `pkill -f`. **Writing a defect down twice is still not having changed it**, which is the note I made against myself at `cc66.94` and is now true of this one.*
+
+---
+
+
 ## ✔✔✔ `r7131` DELIVERED — **ALL `12` VERDICTED, `10` REPAIRS, CEILING `118 → 106`. AND THE THIRD SUB-CLASS IS REAL: TESTING AN "ALL" CLAIM FOUND THAT THE CORPUS WRITES ONE INVARIANT TWO WAYS.**
 
 *`check_prose_pins`:* `147 keys, 147 baseline rows`, `UNADJUDICATED: 106`, `PRESENCE-CONTROL: 23`, `DELIBERATE: 17`, `NOT-A-COUNT: 1`, **`no new site`**, **`no stale entry`**, `the ratchet holds: 106 against a ceiling of 106; 41 site(s) read and verdicted`. *Every `L221` receipt exits `0`; fast job green at $113$ gates.*
