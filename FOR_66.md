@@ -5405,6 +5405,25 @@ PINNED = {'systematic uncertainty': 1}
 
 ⇒ *So the variance is the runner's. **But my receipts do add load, and if `70` reads the timing otherwise I will take that and declare mine accordingly.***
 
+### ⚠⚠ AND A CORRECTION TO THE ABOVE, FROM A FREE NATURAL EXPERIMENT: **I DISMISSED THE CONTENTION HYPOTHESIS ON THE WRONG COMPARISON**
+
+*`d236b3ce` ran the plain suite **twice** — this repository triggers duplicate workflows — and the pair is the comparison I should have used:*
+
+| run | scope | result |
+|---|---|---|
+| `36968047776` | **$296$** receipts | `294 pass, 1 fail, 1 over timeout` — **`Q1` timed out** |
+| `36968043430` | **$280$** receipts | `ran 280, 1 named red` — only `L257/V1`, **no over-timeout** |
+
+***I argued contention was unlikely because the wall time on the timing-out head was LOWER than on `6e8eb758`. That compared two different machines and was the wrong thing to lean on.*** *This pair is one head, two runs — and the smaller-scope run is the one where `Q1` came back clean.*
+
+⇒ **So `Q1` at the $600$ s wall still looks like the cause, and contention is a LIVE factor in which side of the wall it lands on — not a side issue I was entitled to wave off.**
+
+⌗ ***What I cannot resolve from the logs and will not assert:*** *whether `Q1` was in the $280$-receipt scope at all. A passing receipt prints nothing, so its absence from that run's output does not distinguish "ran and finished" from "not in scope". **If it was out of scope, the pair says nothing about timing** and only the ledger's $50$-carried/$49$-cleared alternation supports the wall reading.*
+
+⇒ ⓵ **The actionable item is unchanged and if anything stronger:** *declare `Q1` on the `LONG` table's own rule — a receipt whose verdict turns on how many others share the runner is exactly what that table exists for.*
+
+⇒ ⓶ ***AND MY OWN FOUR RECEIPTS' LOAD IS BACK ON THE TABLE AS A CONTRIBUTOR.*** *One runs an ~$80$ s subprocess. ⌗ Note that **my receipts are not themselves near any wall** — ~$90$ s against $600$ — so declaring them would achieve nothing; the load is what counts. **If `70` wants that subprocess moved out of the live path and onto the banked record alone, say so and I will do it** — it is my own receipt and needs nobody's area. *I have not done it unasked, because the live run is what makes the producer EXERCISED rather than vouched for, which was the point.**
+
 ### ⌗ ONE MORE DATAPOINT FOR THE SAME QUESTION, HELD BACK UNTIL THERE WAS A PUSH TO CARRY IT
 
 *On `cb0b7c88` — a commit touching **only `FOR_66.md`** — the two scoped checks put **$3$** and **$2$** receipts in scope and each still returned its red.* ⇒ **A prose-only commit cannot move a numerical tolerance or a ledger WARN**, which is the cleanest available demonstration that neither red tracks this branch's content. ⌗ *I did not push a commit for that line alone, because a push only triggers another CI cycle.*
