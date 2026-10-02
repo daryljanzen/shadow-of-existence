@@ -90,6 +90,19 @@ evolves while $k^2\\gg a''/a$ -- with $k^2=L(L+2)$ the unit-$S^3$ Laplacian eige
 conclusions, since the gap between $L_{\\rm hor}=0.34$ and $L=1$ is not marginal.  ⛔ And the one route
 left in sight -- modes GENERATED on the expansion leg, which would need a source the bead does not
 carry -- is NAMED AND NOT PROPOSED.
+
+⌗ ** `r7118+60.1` -- TWO OF THIS RECEIPT'S OWN GATES ARE UN-PINNED FROM THE PAPER'S WORDING. **
+`r7111` told this row that `sec:scope`'s inheritance sentence would stand until the row answered, and
+two gates here asserted that wording verbatim (`'carried across unaltered'`).  ** The row answered,
+`r7117` carried the factor into `prop:transmit`, and both gates went red because the thing they
+asked for was granted. **  ⇒ *The clause is withdrawn from both conditions.  What they assert now is
+the paper clause this receipt actually reasons against -- "the crossing accumulates no divergent
+phase", present in `prop:transmit` either way, which is exactly what a finite tortoise length buys
+and exactly what says nothing about a FACTOR -- plus this receipt's own computed locus.  The earlier
+wording and the fact that it is gone are PRINTED and not asserted.*  ⛔ ** Fifth instance in this
+sector of an assertion resolving finer than its subject, and the first where the subject was a
+sentence another seat owns and had been asked to change: a gate pinned to the spelling of such a
+sentence asserts a spelling and not a finding -- this line's own rule, turned on itself. **
 """
 import os
 import re
@@ -317,11 +330,20 @@ gate(f"*** `PO-73` `Q1` ANSWERED: BEFORE.  The locus where the spectrum is defin
      f"and the seam ***",
      D_sky / L_COLL < 0.02 and 78.0 < L_sky < 79.0 and abs(ref['st'] - 2.7737) < 1e-3)
 
+_PREMISE = 'the crossing accumulates no divergent phase'     # the paper's load-bearing clause,
+_ANSWERED = 'carried across unaltered' not in b15.lower()    # and whether this row has landed in it
+print(f"\n      the paper's own premise, read from the CURRENT source: {_PREMISE!r} present "
+      f"{b15.count(_PREMISE)}x;  `prop:transmit` now carries the factor: {_ANSWERED}")
+print(f"      ⌗ `r7117` edited that sentence in response to THIS row, so its earlier wording is "
+      f"recorded here and NOT asserted -- the finding is the factor, not the spelling")
 gate(f"⇒ so the ENVELOPE APPLIES to the inherited spectrum, and `sec:scope`'s own argument is sound "
      f"only as far as it goes: a finite `r_*` rules out a divergent PHASE and says nothing about a "
-     f"FACTOR.  At `L={L_sky:.1f}` the factor is `e^{{{env_sky:.0f}}}`",
+     f"FACTOR.  At `L={L_sky:.1f}` the factor is `e^{{{env_sky:.0f}}}`.  ⌗ *The paper clause this "
+     f"reasons against is `\"{_PREMISE}\"`, which is what a finite tortoise length buys and is "
+     f"present in `prop:transmit` whichever way the inheritance sentence is worded; the wording "
+     f"itself is NOT asserted, because `r7117` edited it in answer to this row*",
      env_sky < -250.0 and env_sky > -260.0
-     and 'carried across unaltered' in b15.lower())
+     and _PREMISE in b15)
 
 gate("✔ AND THE CONTROL RETURNS THE AFFIRMATIVE, WHICH IS WHAT MAKES THE STATEMENT A MEASUREMENT "
      "RATHER THAN A COMPLAINT: the inheritance claim is EXACTLY true at `k=0` -- the monopole is "
@@ -385,11 +407,14 @@ gate("no transfer, spectrum, kernel, likelihood or mode amplitude is computed an
      OPENED == ['CR_cosmology.tex',
                 'P15_the_harmonic_expansion_in_the_proper_frame_is_not_bounded_because_no_slicing_of'
                 '_it_carries_both_the_discrete_source_and_the_projection_distance.py'])
-gate("⛔ and the one route left in sight is NAMED AND NOT PROPOSED: modes GENERATED on the expansion "
-     "leg, which would need a source the bead does not carry.  The paper is READ and not edited, the "
-     "source spectrum is not reassigned, and `sec:scope`'s sentence is left exactly as the gate "
-     "wrote it -- as `r7111` instructed, it stands until this row answers",
-     'carried across unaltered' in b15.lower())
+gate(f"⛔ and the one route left in sight is NAMED AND NOT PROPOSED: modes GENERATED on the "
+     f"expansion leg, which would need a source the bead does not carry.  The paper is READ and not "
+     f"edited BY THIS RECEIPT and the source spectrum is not reassigned.  ⌗ *`r7111` said "
+     f"`sec:scope`'s sentence stands until this row answers; the row answered, `r7117` carried the "
+     f"factor into `prop:transmit` ({_ANSWERED}), and so the clause pinning that sentence's earlier "
+     f"wording is withdrawn from this gate -- a gate pinned to the spelling of a sentence another "
+     f"seat owns asserts a spelling and not a finding, which is this line's own rule*",
+     _PREMISE in b15 and D_sky / L_COLL < 0.02)
 
 
 # ============================================================ verdict
@@ -403,6 +428,7 @@ if bad:
     raise SystemExit(1)
 print("  ALL PASS -- the progenitor's spectrum is defined in the collapse leg's super-horizon era,\n"
       "  within sqrt2/k of its far-past end, so BEFORE the lift and not marginally; the envelope\n"
-      "  therefore applies and sec:scope's 'carried across unaltered' is the sentence that needs the\n"
-      "  factor, exactly true at k=0 and only there; and the horizon scale is the pure number\n"
-      "  2^(-1/3), shared by the turnaround and the expansion leg's midpoint.")
+      "  therefore applies and sec:scope's inheritance sentence is the one that needed the factor\n"
+      "  -- which r7117 then carried into it -- exactly true at k=0 and only there; and the horizon\n"
+      "  scale is the pure number 2^(-1/3), shared by the turnaround and the expansion leg's\n"
+      "  midpoint.")

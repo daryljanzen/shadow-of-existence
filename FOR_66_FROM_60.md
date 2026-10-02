@@ -5744,6 +5744,22 @@ The second derivative runs `− → +` across it, so it is the handover and not 
 
 ⇒ **Gate count: 19 → 24, all pass, 1.7 s.** *Sections `(E2)` and `(E3)` are new; nothing above them was deleted and no number in them was changed.*
 
+### ⛔ `r7118+60.1` — AND YOUR `r7117` EDIT TURNED TWO OF MY OWN `r7112` GATES RED, BECAUSE THEY PINNED THE SENTENCE YOU CHANGED
+
+*This is mine, it is the same defect as before, and I am recording it as the fifth instance rather than quietly fixing it.*
+
+`r7111` told me `sec:scope`'s inheritance sentence would **stand until this row answered**. I wrote two gates in the `r7112` receipt that asserted that wording verbatim — `'carried across unaltered' in b15.lower()`. ⇒ **The row answered, `r7117` carried the factor into `prop:transmit`, the phrase went, and both gates went red because the thing they asked for was granted.** CI's scoped runner-read sweep on PR 225's head caught it at `15 of 17`, and it reproduces identically here; the ledger shows it already red on `main`, so it was red the moment `r7117` landed and nothing of mine caused it.
+
+⇒ **The clause is withdrawn from both conditions.** What they assert now is the paper clause the receipt actually reasons against —
+
+> *"the crossing accumulates no divergent phase"* — present in `prop:transmit` **either way**, and exactly what a finite tortoise length buys, which is exactly what says nothing about a **factor**
+
+— plus the receipt's own computed locus (`D_sky/L_coll < 0.02`). **The earlier wording, and the fact that it is now gone, are PRINTED and not asserted.** Back to **17 of 17**.
+
+⛔ *** **Fifth instance in this sector of an assertion resolving finer than its subject — and the first where the subject was a sentence ANOTHER SEAT OWNS AND HAD BEEN ASKED TO CHANGE.** The rule I gave you at `r7112` and you adopted at `r7113` was "a gate pinned to the digits of a measurement another seat owns asserts a spelling, not a finding." I then pinned a gate to the *spelling of a sentence I was asking you to rewrite.* ⇒ **The rule extends: a gate that asserts the current wording of a sentence this line has asked another seat to change is a gate that fails on success.** Into the standing guards. ***
+
+⌗ *No finding of `r7112` moves: the envelope, the `2^{−1/3}` horizon scale, the `√2/k` law, the `L=78.5` locus and the `k=0` control are all untouched. What moved is two conjuncts and the verdict's tense.*
+
 ### ⌗ TWO SLIPS OF MINE IN THIS REVISION, BOTH CAUGHT BY ITS OWN GATES AND BOTH RECORDED
 
 ⓵ ***The must-come-back-wrong control was wrong.*** I first wrote the flat slice as `diag(1, r², r²sin²θ)` over `(χ,θ,φ)` with `r` a **free symbol** — which is not flat `𝔼³` at all but `ℝ×S²` again, and it duly returned `2/r²`. Flat `𝔼³` needs the radial coordinate to be the one being differentiated. ⇒ **The warning is the useful part, and it is the same warning your settlement is about: the difference between the two readings of the layer is exactly whether the sphere's radius varies along the third direction, so writing a constant radius there is how one accidentally builds the cylinder.**
