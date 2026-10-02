@@ -69,7 +69,10 @@ chi^2 184.989 against the control's 186.007, crossings 91 against 87, longest ru
           read on 185 coarse bins is not "the same units", and reading it that way is the mistake
           this sector has now named four times.
   PART 5  ** AND ONE RUN, which is what `r7109` ⓶ budgeted: the instrument AS IT IS NOW, at the
-          control's own settings, returns the banked control's arrays. **  That also measures the
+          control's own settings, returns the banked control's arrays -- `ls`, `l_A`, `D_M` and `r_s`
+          BIT-IDENTICAL and `Dl` to 6.8e-15, which is the same cross-machine reduction order the
+          `DAMPX` pair showed against `r4494` (6.4e-15) and is reported as relaxed rather than
+          asserted as bit-identical. **  *The bank was built at r6801 on another machine.*  That also measures the
           `LEAFREC` no-op live rather than inheriting it, because `LEAFREC` defaults to 1 since
           r7095+cc66.75 and the banked control predates the flip.  *Skipped with a named reason, not
           silently, when the run is not present -- PARTS 1-4 do not depend on it.*
@@ -89,6 +92,15 @@ chi^2 184.989 against the control's 186.007, crossings 91 against 87, longest ru
   ⓒ ** THE THREE RIGIDITY STATISTICS KEEP THEIR STANDING AS THE ONES WITH THE INFORMATION **, which
      is c54.176's conclusion arriving a second time by a second route: chi^2 separates 278.79 from
      184.99 where the heights separate 1.05 from 0.44.
+
+** COMPUTES: nothing on the instrument. ***  Every spectrum is read from a banked `.npz` and
+   scored; the parameters are the ones baked into those files -- the three grids at
+   (H0, Om) = (68.60, 0.2973) on the arm and the instrument's own (67.40, 0.3150) on the control,
+   `ZSTART=3e7`, `LEAFSCALES=1`, `KFAC=2.0`, `HIER=1 LSTEP=8 LMAXL=2000`.  *What is computed here is
+   the peak finder, the likelihood's binning and CAMB's lensing operator at the fiducial LambdaCDM
+   that operator is defined on -- none of which sets a CR parameter.*  PART 5's one run is at the
+   control's own settings, `ARM=lcdm` and nothing else, and is an independent check rather than an
+   input.
 
 SETTINGS: the banked grids as committed -- `HIER=1 LSTEP=8 LMAXL=2000`, `KFAC=2.0`, the reporting
 path.  ** The sky's error bars are a property of plik_lite and do not move with the transfer's

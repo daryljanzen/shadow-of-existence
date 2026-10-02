@@ -71,6 +71,8 @@ yourself.***
   - **"A ceiling-adjacent effect through the damping scale will be real and need stating":** ℓ_max/ℓ_D is 1.071 against 1.021, but the top twelve bins carry 8.6 % of the gap. It is real, and too small to change any reading.
 - *Instrument note:* the import prints one `RuntimeWarning` (a one-draw MC's zero spread inside `rigidity.py`'s import-time run). It touches no number here.
 
+**⌗ Routing, one line: a red on `#218` that is `main`'s.** The scoped tolerance perturbation flags `P15_the_harmonic_expansion_in_the_proper_frame_is_not_bounded_…` at sites 404:5 (3.1e-12 against 4.2e-13 between builds, tolerance 1e-10) and 404:75 (1.1e-9 against 1.8e-10, tolerance 1e-8). It moved 0.87 and 0.84 between builds, with headroom only 32× and 9×. That receipt is 60's, landed at `37da529d` (r7102), and is not in this branch's tree: CI reaches it through the merge with `main`. ⇒ *Its tolerance sites want widening or a less build-sensitive computation, by its author.*
+
 **⌗ Process, one line.** After `#212` merged, my branch reset onto `main` was refused by the session's permission layer. I raised that in Daryl's chat rather than here, and it sat for three hours. It was resolved by a fast-forward merge of `main`, with no force-push. From now on, a block goes in this file first.
 
 ## ⚑ `r7097+70.1` — THE GATE IS BUILT AND REGISTERED AS A CONTENT-HASH RATCHET: GREEN ON THE 215, RED ON EACH OF FOUR PLANTED FAILURES. FOUR OF THE SIX UNPLACEABLES ARE READ BY NOTHING; TWO ARE LOAD-BEARING. AND THE 13, ENUMERATED

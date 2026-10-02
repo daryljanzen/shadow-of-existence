@@ -6705,3 +6705,29 @@ Still open, not started: `r7109` ⓶ (a control base log at the grids' settings)
 Reading the model on its own 2-multipole grid against a sky read on 185 coarse bins is not "the same units" — the fourth instance of that shape this round. The cell is computed the sky's own way: the models through CAMB's non-perturbative lensed/unlensed operator, binned by the likelihood's own binning, the same peak finder, the same 185-bin window, one 2-dof number per arm from the joint covariance of both ratios (correlation +0.73 — they share P1). **Not claimed as the corpus's settled protocol.** The instrument's own fine-grid unlensed route is carried beside it as a control that fires: 0.046σ against 1.124σ, same sign, so the result is not the binning's or the operator's.
 
 Still open from `r7109`: ⓷ (`r7101`'s 2.10-per-bin assertion on 133 bins, and the two load-bearing unplaceables `cc66_lowell_sweep` and `c54.182_clpp`).
+
+### PART 5's run, which landed after the entry above was written
+
+The control run finished rc=0 and prints the banked log's pair exactly (`peaks at l = [220, 540, 812, 1132]`, `l_1/l_A = 0.7300`, `P1/P2 = 2.196`, `P1/P3 = 2.190`). Against the banked arrays: `ls`, `l_A`, `D_M`, `r_s` **bit-identical**; `Dl` to **6.8e-15** (136 of 238 elements differ at that level) — the same cross-machine reduction order the DAMPX pair showed against `r4494` (6.4e-15), and reported as relaxed rather than asserted as bit-identical. The bank was built at r6801 on another machine. **So the `LEAFREC` no-op on the control is now measured on the reporting path at production settings rather than inherited** — `LEAFREC` defaults to 1 since r7095+cc66.75 and the bank predates the flip.
+
+## cc66.85 — `r7109` ⓷ first half: the 133-bin figures computed and asserted, and the hardcoded one is the wrong run's
+
+| | χ² | bins | per bin | |
+|---|---|---|---|---|
+| control `cc66_lcdm` | 279.4200 | 133 | **2.100902** | the corpus's 2.10 |
+| arm H0=68.60 `cc66_cr_x_h686_pol` | 556.6858 | 133 | **4.185607** | cc66.7's own 4.19 |
+| arm H0=68.62 `cc66_cr_x_h6862_pol` | 552.9992 | 133 | **4.157889** | the 4.16 that is hardcoded |
+
+The arm's χ² is asserted against the 556.7 `FOR_66` recorded for cc66.7, so the file is identified by a check rather than by recollection.
+
+**Two sites.** `P15_the_full_range_lensed_comparison_...` line 129 prints `{4.16 / 2.10:.2f}x` labelled `(r6760+cc66.7)` — but 4.16 is the 68.62 run and the two rows computed live beneath it load the 68.60 arm, so three rows of a like-for-like table carry two H0 values. **And it propagated into `P15`:** the paper writes "over 133 bins giving 279.4 against 556.7, a factor 1.98" where 556.6858/279.4200 = 1.9923, i.e. **1.99** — the 68.60 pair's χ² values with the 68.62 run's ratio. One digit, nothing turns on it, routed to the gate seat as a paper figure; the receipt asserts both ratios so either is backed.
+
+**Citations only in `P15`, no prose.** Three `\rcpt{}` markers for cc66.85 and one for cc66.84, added because `check_receipts` requires a registered receipt to reach a paper and `check_marker_transposition` named the sentence. The transposition gate then **discharged seven of 70's baseline adjudications**: they read "not a transposition — configuration value" on the grounds the numbers are restated as the configuration, which was right exactly while no receipt computed them. Removed with the reason recorded. Two of 70's `1.58` rows are **re-keyed, not re-adjudicated** — adding a carrier changes the group's key; verdict and reading are 70's verbatim.
+
+**Tooling, the same lesson a third time.** `make_receipt_appendix` refused both appendices on `ⓐⓑⓒ`: the circled LETTERS (U+24D0–U+24E9, U+24B6–U+24CF) were absent entirely. Generated now with the digits' own import-time partiality guard. L-262 covered one glyph, r3144 the circled digits, r7091 their zeros — "cover the family" was read as "cover the family that broke" three times running.
+
+### The two unplaceables — established, not closed
+
+**`cc66_lowell_sweep` is smaller than it looks.** Eight configurations × seven multipoles. `P15_the_low_multipole_depth_gap_closes_and_two_defects_were_cancelling` recomputes the FROZEN variant live through `armB`, and three banked keys are exactly configurations it already computes — `FROZEN_control_KLO_0_1` = `KSCAN[0.1]` (used as `_both` at line 234), `FROZEN_control_KLO_0_02` = `KSCAN[0.02]`, `FROZEN_adjudicated_KLO_0_1` = `B_frozen[ADJ]`. **The same configuration, live and banked, in the same file, never compared** — a free exact reproduction check sitting unused. Two more FROZEN keys need one run each; only the three DECOUPLED keys are genuinely producerless (~9 min each, commands already in that receipt's PART 5). **The checks are not added yet because the tolerance must be measured before it is asserted, and measuring it means running that receipt while a solver and the fast job held the cores.**
+
+**`c54.182_clpp`: the repository's lensing-potential producer is not this artefact's.** `L171x_lensing_potential.py` was built at **c54.184 — after** the c54.182 artefact — and writes `ls, cl, k, Phi` only, where the banked file also carries `cl_exact`, `cl_limber`, `l_exact`. So 70's "no producer" is right and the fix is not a pointer. **And re-deriving through `L171x` on the current background answers 70's open question to 60 by construction rather than waiting on it** — a potential built now on the current background is admissible by construction, where re-deriving the c54.182 object would inherit the question. That is 70's second option (re-point PART B onto a re-derivable source); not taken unilaterally, because re-pointing a registered receipt's PART B turns on an adjudication that is 60's.

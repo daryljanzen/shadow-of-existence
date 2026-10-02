@@ -5350,6 +5350,65 @@ PINNED = {'systematic uncertainty': 1}
 
 ---
 
+## ⛭⛭ `r7109` ⓷, FIRST HALF — **`2.10` AND `4.16` ARE COMPUTED AND ASSERTED. AND COMPUTING THEM FINDS THE HARDCODED ONE IS THE WRONG RUN'S — INCLUDING ONE DIGIT IN `P15` ITSELF, WHICH IS YOURS AND WHICH I HAVE NOT TOUCHED.**
+
+### ✔ THE FIGURES, MEASURED
+
+| | $\chi^2$ | bins | per bin | |
+|---|---|---|---|---|
+| control `cc66_lcdm` | $279.4200$ | $133$ | $\mathbf{2.100902}$ | the corpus's $2.10$ |
+| arm $H_0=68.60$ `cc66_cr_x_h686_pol` | $556.6858$ | $133$ | $\mathbf{4.185607}$ | **`cc66.7`'s own $4.19$** |
+| arm $H_0=68.62$ `cc66_cr_x_h6862_pol` | $552.9992$ | $133$ | $\mathbf{4.157889}$ | **the $4.16$ that is hardcoded** |
+
+*The arm's $\chi^2$ is asserted against the $556.7$ `FOR_66` recorded for `cc66.7`, so the file is identified by a check and not by my memory of which run it was.*
+
+### ⚠⚠ THE DEFECT, AND IT IS TWO SITES
+
+⓵ ***`P15_the_full_range_lensed_comparison_...` line `129` prints `{4.16 / 2.10:.2f}x` and labels the row `(r6760+cc66.7)`.*** *But `4.16` is the $68.62$ confirmation run, and the two rows computed LIVE beneath it load `cr_x_h686_L2000` — the $68.60$ arm.* ⇒ **Three rows of a table whose entire purpose is a like-for-like ratio carry two different $H_0$ values.**
+
+⛔ ⓶ ***AND IT PROPAGATED INTO `P15`, WHICH IS WHY I AM ROUTING RATHER THAN EDITING.*** *`CR_cosmology.tex` writes* "the same comparison unlensed over $133$ bins giving $279.4$ against $556.7$, a factor $1.98$" — ***but $556.6858/279.4200 = 1.9923$, i.e. $\mathbf{1.99}$.*** **The sentence pairs the $68.60$ pair's two $\chi^2$ values with the $68.62$ run's ratio.** ⌗ *One digit, nothing turns on it, and **my receipt asserts both ratios** so whichever you choose is backed. It is a paper figure and the boundary you drew at `r7099` is yours — say the word and it is a one-character commit.*
+
+### ⌗ WHAT I CHANGED IN `P15`, WHICH IS CITATIONS ONLY AND IS YOURS TO MOVE
+
+*The fast job went red on `check_receipts` (a registered receipt cited by no paper) and then on `check_marker_transposition`. **Three `\rcpt{}` markers added and not one word of prose:*** at the sentence stating the $133$-bin configuration and its $2.10$ (where the transposition gate asked for it), at the lensed-comparison sentence, and at the refit sentence; plus `cc66.84`'s beside the "longest run of $8$, which is the control's exactly" sentence, whose claim it measures in a fourth statistic.
+
+⛭ ***And the transposition gate paid for itself twice over, which is worth your attention more than my edits are:***
+- **It located the right citation site**, by naming the sentence that carries `133` and `2.10` and has no marker.
+- ⇒ ***And placing the marker there DISCHARGED SEVEN of `70`'s baseline adjudications.*** *They read "not a transposition — configuration value", on the grounds the two numbers are "restated across several receipts as the configuration". **That was right exactly while no receipt computed them — which is what `r7101` named as open.** The flags stopped firing, the gate called the rows stale, and I removed them with the reason recorded in the file.*
+- ⚠ *Two of `70`'s `1.58` rows are **RE-KEYED, not re-adjudicated**: adding a carrier to a citation group changes that group's key. The verdict and the reading are `70`'s verbatim; only the group string moved, and I noted it in the file because a re-key and a re-adjudication look identical in a diff.*
+
+### ⌗ AND ONE TOOLING FIX, THE SAME LESSON A THIRD TIME
+
+*`make_receipt_appendix` refused to generate BOTH appendices on `ⓐ ⓑ ⓒ`. **The circled LETTERS are a third family and were absent entirely** — `U+24D0`–`U+24E9` and `U+24B6`–`U+24CF`. Generated now, with the same import-time partiality guard the digits have. ⇒ *`L-262` covered one glyph, `r3144` the circled digits, `r7091` their zeros, and none of the three asked what else `U+24xx` holds: **"cover the family" was read as "cover the family that broke" three times running.***
+
+---
+
+## ⌗ `r7109` ⓷, SECOND HALF — **THE TWO UNPLACEABLES: WHAT I ESTABLISHED, AND WHY ONE OF THEM IS SMALLER THAN IT LOOKS AND THE OTHER IS WAITING ON `60`**
+
+### ⛭⛭ `cc66_lowell_sweep` — **THREE OF ITS EIGHT KEYS ARE ALREADY RECOMPUTED LIVE BY A REGISTERED RECEIPT ON EVERY RUN, AND THE RECEIPT NEVER COMPARES THEM TO THE BANK**
+
+*Eight configurations $\times$ seven multipoles, keys naming their own configurations. `P15_the_low_multipole_depth_gap_closes_and_two_defects_were_cancelling` recomputes the FROZEN variant live through `armB` — and three banked keys are, exactly, configurations it already computes:*
+
+| banked key | the live value in that receipt |
+|---|---|
+| `FROZEN_control_KLO_0_1` | `KSCAN[0.1]` (line $217$), used as `_both` at line $234$ |
+| `FROZEN_control_KLO_0_02` | `KSCAN[0.02]` |
+| `FROZEN_adjudicated_KLO_0_1` | `B_frozen[ADJ]` (line $304$) |
+
+⇒ ***So there is a free, exact reproduction check sitting unused inside the registered receipt: the same configuration, live and banked, in the same file, never compared.*** **Adding those three comparisons converts three of the eight keys from "no producer" to "reproduced on every run of a registered receipt."** ⌗ *Two more FROZEN keys need one run each (`NTAU=300000`; the default cut); only the **three DECOUPLED** keys are genuinely producerless, at ~$9$ minutes a configuration, and `PART 5` of that receipt already documents their commands.*
+
+⚠ ***I have NOT added the checks yet, and the reason is this round's own lesson:*** *the tolerance has to be MEASURED before it is asserted, and measuring it means running that receipt (~$12$ min, `camb`) while a solver and the fast job were already on four cores. **It is the next thing I do, and I would rather report it unfinished than assert a gate I have not run.***
+
+### ⛔ `c54.182_clpp` — **THE REPOSITORY DOES CONTAIN A LENSING-POTENTIAL PRODUCER, AND IT IS NOT THIS ARTEFACT'S**
+
+*`computations/beyond_the_wall/L171x_lensing_potential.py` builds $C_\ell^{\phi\phi}$ on this instrument's own $\Phi$. **But it was built at `c54.184` — AFTER the `c54.182` artefact — and its `savez` writes `ls, cl, k, Phi` only**, where the banked file also carries `cl_exact`, `cl_limber` and `l_exact`.* ⇒ ***So "no producer in the repository" is right about this artefact, and the nearest thing to one postdates it and writes a different schema. `70`'s audit is correct and the fix is not a pointer.***
+
+⛭ ***AND THE WAY THROUGH ANSWERS YOUR OPEN QUESTION TO `60` INSTEAD OF WAITING ON IT.*** *You asked `60` whether a `c54`-era potential is admissible on the current background at all. **Re-deriving the `c54.182` object would inherit that question; re-deriving through `L171x` on the CURRENT background cannot — a potential built now on the current background is admissible by construction.*** ⇒ *That is `70`'s second option — "re-point PART B onto a re-derivable lensing source" — and it is the one I would take. **Confirm, and I will run it; I am not re-pointing a registered receipt's PART B on my own reading of an adjudication that is `60`'s to make.***
+
+⌗ *Noted, since it bears on the receipt I landed this round: the lensing operator in `cc66.84` is **CAMB's**, not the corpus's, precisely so that a new result does not stand on an unplaceable.*
+
+---
+
 ## ⛭⛭ `r7109` ⓶ — **THE CELL IS FILLED AND IT IS A *CONCORDANT* SIGN, NOT A CONTRARY ONE: THE FORBIDDEN CONFIGURATION'S HEIGHTS ARE THE CONTROL'S OWN. AND THE STATISTIC THAT FILLS IT SHOWS A CONTRARY SIGN WAS NEVER AVAILABLE THERE.**
 
 ### ⛭⛭⛭ THE ANSWER, BEFORE THE APPARATUS
