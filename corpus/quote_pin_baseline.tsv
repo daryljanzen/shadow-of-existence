@@ -14,6 +14,8 @@
 #   DELIBERATE     the wording IS the claim (a citation the receipt exists to verify, a quoted definition).
 #   ALT-OK         a disjunction over legitimate paper states that admits the state the result itself may produce.
 #   REPAIR-OWED    pins a sentence whose meaning, not wording, is the claim.  Owed a rewrite to what it is for.
+#   NOT-A-PIN      (r7131+70.1, 70) the operator's false positive: not a test of another seat's wording at all (a parse guard,
+#                  an absence claim written as `== []`, a seed that adapts to the current state).  Counted, not owed.
 #
 # ** THE REPAIR RULE IS NOT NEW: `L-249` (r3105) stated it after nine pin-breaks -- pin the historical state at the commit it
 # stood at, assert the CURRENT state separately, and make a directional live check MONOTONE. **
@@ -491,7 +493,7 @@ receipts/L204_physics_reach/P2_the_corpus_never_mentions_unruh.py	"chart artefac
 receipts/L204_physics_reach/P2_the_corpus_never_mentions_unruh.py	"completion sorts all four"	SOURCE	SENTENCE		UNADJUDICATED	
 receipts/L204_physics_reach/P2_the_corpus_never_mentions_unruh.py	"never form at any finite exterior time"	PAPER	SENTENCE		UNADJUDICATED	
 receipts/L204_physics_reach/P2_the_corpus_never_mentions_unruh.py	"never physically realised"	PAPER	SENTENCE		UNADJUDICATED	
-receipts/L204_physics_reach/P2_the_corpus_never_mentions_unruh.py	"stress tensor"	SOURCE	TOKEN	ALT,XOR	UNADJUDICATED	
+receipts/L204_physics_reach/P2_the_corpus_never_mentions_unruh.py	"stress tensor"	SOURCE	TOKEN	ALT,XOR	DELIBERATE	r7131+70.1 (70): _st_where == ['canonical_time.tex'] pins the ONE location by design -- the comment: a second use 'fails it and must be read'. Not a state disjunction: XOR fired on == against a list literal.
 receipts/L204_physics_reach/P2_the_corpus_never_mentions_unruh.py	"what the field equations trade for the stress tensor"	PAPER	SENTENCE		UNADJUDICATED	
 receipts/L204_physics_reach/P2_the_corpus_never_mentions_unruh.py	"with no completed horizon there is no background"	PAPER	SENTENCE		UNADJUDICATED	
 receipts/L204_physics_reach/P2_the_corpus_never_mentions_unruh.py	"with no completed horizon there is no background on which the Bogoliubov mode-mixing yielding an exactly thermal Hawking flux can be computed"	PAPER	SENTENCE		UNADJUDICATED	
@@ -953,7 +955,7 @@ receipts/L221_the_bridge/B52_the_missing_f2_is_entailed_by_the_delivery.py	"colo
 receipts/L221_the_bridge/B52_the_missing_f2_is_entailed_by_the_delivery.py	"the bundle above is flat"	PAPER	SENTENCE		UNADJUDICATED	
 receipts/L221_the_bridge/B52_the_missing_f2_is_entailed_by_the_delivery.py	"three wall monodromies with the hinge"	PAPER	SENTENCE		UNADJUDICATED	
 receipts/L221_the_bridge/B53_gating_l829_and_l830.py	"(WHAT IS NOT CLAIMED|REMAINING PIECE IS NAMED|not claimed|flagged)"	SOURCE	SENTENCE	OPEN	UNADJUDICATED	
-receipts/L221_the_bridge/B53_gating_l829_and_l830.py	"check\\([^)]*transmission[^)]*\\bis\\s+\\d"	SOURCE	TOKEN	ALT,XOR	UNADJUDICATED	
+receipts/L221_the_bridge/B53_gating_l829_and_l830.py	"check\\([^)]*transmission[^)]*\\bis\\s+\\d"	SOURCE	TOKEN	ALT,XOR	NOT-A-PIN	r7131+70.1 (70): an ABSENCE claim written as banked == [] (no receipt banks the amplitude); the operator exempts `not in` but not an empty-list comparison. XOR fired on ==.
 receipts/L221_the_bridge/B53_gating_l829_and_l830.py	"does not normalize"	PAPER	SENTENCE		UNADJUDICATED	
 receipts/L221_the_bridge/B53_gating_l829_and_l830.py	"the horizons standing infinitely far"	PAPER	SENTENCE		UNADJUDICATED	
 receipts/L221_the_bridge/B54_the_retraction_supports_the_verdict.py	"each contributes exactly one bound mode"	PAPER	SENTENCE		UNADJUDICATED	
@@ -1118,7 +1120,7 @@ receipts/L248_the_strike_broke_its_readers/R1_r3001_struck_fourteen_rows_and_twe
 receipts/L248_the_strike_broke_its_readers/R1_r3001_struck_fourteen_rows_and_twelve_receipts_read_them_by_prefix.py	"is not assumed here"	PAPER	SENTENCE		UNADJUDICATED	
 receipts/L248_the_strike_broke_its_readers/R1_r3001_struck_fourteen_rows_and_twelve_receipts_read_them_by_prefix.py	"though it does in fact"	PAPER	SENTENCE		UNADJUDICATED	
 receipts/L250_the_break_reports_itself/Q1_a_quotation_pin_that_names_the_revision_that_removed_it.py	"and it WAS present"	SOURCE	SENTENCE		UNADJUDICATED	
-receipts/L250_the_break_reports_itself/Q1_a_quotation_pin_that_names_the_revision_that_removed_it.py	"at"	SOURCE	TOKEN	ALT,XOR	UNADJUDICATED	
+receipts/L250_the_break_reports_itself/Q1_a_quotation_pin_that_names_the_revision_that_removed_it.py	"at"	SOURCE	TOKEN	ALT,XOR	NOT-A-PIN	r7131+70.1 (70): ' at ' in msg is a parse guard on quotepin.pinned()'s own returned message inside a conditional expression; the check is got == want on a graded answer. XOR fired on ==.
 receipts/L250_the_break_reports_itself/Q1_a_quotation_pin_that_names_the_revision_that_removed_it.py	"may never have been in this file"	SOURCE	SENTENCE		UNADJUDICATED	
 receipts/L250_the_break_reports_itself/Q1_a_quotation_pin_that_names_the_revision_that_removed_it.py	"not a verdict"	SOURCE	SENTENCE	ALT	UNADJUDICATED	
 receipts/L250_the_break_reports_itself/Q1_a_quotation_pin_that_names_the_revision_that_removed_it.py	"the PIN is wrong"	SOURCE	SENTENCE		UNADJUDICATED	
@@ -1404,7 +1406,7 @@ receipts/L557_the_correction_stopped_at_the_sentence/R1_the_correction_stopped_a
 receipts/L557_the_correction_stopped_at_the_sentence/R1_the_correction_stopped_at_the_sentence_and_the_number_it_defines_was_left_behind.py	"with $r=\\theta_{D}/\\theta_{*}$---the same ratio the preceding paragraph derives"	PAPER	SENTENCE		UNADJUDICATED	
 receipts/L558_the_second_duplication/D1_the_same_four_rows_the_second_merge_running_and_this_time_it_unclosed_a_struck_item.py	"AMENDED c54.224"	SOURCE	TOKEN		UNADJUDICATED	
 receipts/L558_the_second_duplication/D1_the_same_four_rows_the_second_merge_running_and_this_time_it_unclosed_a_struck_item.py	"PROTECTED_OPEN"	SOURCE	TOKEN		UNADJUDICATED	
-receipts/L558_the_second_duplication/D1_the_same_four_rows_the_second_merge_running_and_this_time_it_unclosed_a_struck_item.py	"\\|\\s*~~"	SOURCE	TOKEN	ALT,XOR	UNADJUDICATED	
+receipts/L558_the_second_duplication/D1_the_same_four_rows_the_second_merge_running_and_this_time_it_unclosed_a_struck_item.py	"\\|\\s*~~"	SOURCE	TOKEN	ALT,XOR	NOT-A-PIN	r7131+70.1 (70): reads the register row's CURRENT strike state to seed its opposite twin, asserting _twin != _row -- L-249's state-adaptive repair form, which cannot break on a state change. XOR fired on !=.
 receipts/L558_the_second_duplication/D1_the_same_four_rows_the_second_merge_running_and_this_time_it_unclosed_a_struck_item.py	"nion merge cannot detect a duplicate ID"	SOURCE	SENTENCE		UNADJUDICATED	
 receipts/L559_the_registry_from_files_inward/O1_the_registry_was_turned_outward_and_the_arrow_still_pointed_one_way.py	"'bbn_network'"	SOURCE	TOKEN		UNADJUDICATED	
 receipts/L559_the_registry_from_files_inward/O1_the_registry_was_turned_outward_and_the_arrow_still_pointed_one_way.py	"NOT-A-RECEIPT:"	SOURCE	TOKEN		UNADJUDICATED	
@@ -1418,7 +1420,7 @@ receipts/L560_pins_into_moving_prose/P1_the_last_five_failures_were_pins_into_pr
 receipts/L560_pins_into_moving_prose/P1_the_last_five_failures_were_pins_into_prose_that_later_correct_work_moved.py	"\\emph{On the constant side}"	PAPER	SENTENCE		UNADJUDICATED	
 receipts/L560_pins_into_moving_prose/P1_the_last_five_failures_were_pins_into_prose_that_later_correct_work_moved.py	"\\emph{On the datum side}"	PAPER	SENTENCE		UNADJUDICATED	
 receipts/L560_pins_into_moving_prose/P1_the_last_five_failures_were_pins_into_prose_that_later_correct_work_moved.py	"\\emph{The test has two sides, and each has been run.}"	PAPER	SENTENCE		UNADJUDICATED	
-receipts/L560_pins_into_moving_prose/P1_the_last_five_failures_were_pins_into_prose_that_later_correct_work_moved.py	"c54.226"	SOURCE	TOKEN	ALT,XOR	UNADJUDICATED	
+receipts/L560_pins_into_moving_prose/P1_the_last_five_failures_were_pins_into_prose_that_later_correct_work_moved.py	"c54.226"	SOURCE	TOKEN	ALT,XOR	DELIBERATE	r7131+70.1 (70): asserts each of the five repaired receipts carries the re-pin note naming c54.226 (len(noted) == len(CASES)); the note's presence IS the claim. XOR fired on == between two lengths.
 receipts/L560_pins_into_moving_prose/P1_the_last_five_failures_were_pins_into_prose_that_later_correct_work_moved.py	"for want of work}\\rcpt{X1_the_ratio_is_a_clock_reading_not_a_carried_datum}"	PAPER	SENTENCE		UNADJUDICATED	
 receipts/L560_pins_into_moving_prose/P1_the_last_five_failures_were_pins_into_prose_that_later_correct_work_moved.py	"the same algebra closes for the Lovelock theories"	PAPER	SENTENCE		UNADJUDICATED	
 receipts/L561_the_probe_was_the_defect/C1_item_45_answered_against_myself_the_rehoming_lost_nothing.py	"ARITHMETIC OF THE OLD PROBE"	SOURCE	SENTENCE		UNADJUDICATED	
@@ -2198,6 +2200,7 @@ receipts/P15_CR_cosmology/P15_the_phase_is_already_carried_into_the_projections_
 receipts/P15_CR_cosmology/P15_the_progenitor_spectrum_is_defined_before_the_lift_so_the_envelope_applies_to_it_and_the_horizon_scale_on_both_lorentzian_legs_is_the_same_pure_number.py	"a fragility"	SOURCE	TOKEN		UNADJUDICATED	
 receipts/P15_CR_cosmology/P15_the_progenitor_spectrum_is_defined_before_the_lift_so_the_envelope_applies_to_it_and_the_horizon_scale_on_both_lorentzian_legs_is_the_same_pure_number.py	"the crossing accumulates no divergent phase"	PAPER	SENTENCE		UNADJUDICATED	
 receipts/P15_CR_cosmology/P15_the_resolution_table_eight_of_the_eleven_instruments_cannot_represent_the_comb_period_and_four_smallest_shares_are_honest_blanks.py	"FISH = np.linalg.inv(CS.COV_TT"	SOURCE	SENTENCE		UNADJUDICATED	
+receipts/P15_CR_cosmology/P15_the_seam_sec_envelope_means_is_the_front_chart_value_and_the_collapse_leg_ends_at_the_turnaround_instead_where_the_speed_is_zero_while_every_seam_carries_it_exactly_one.py	"P15_the_seam_sec_envelope_means_is_the_front_chart_value"	PAPER	TOKEN	ALT,XOR	ALT-OK	r7132+60: ALT-OK, and the key is this receipt's OWN stem rather than another seat's wording.  It is the second arm of the exclusive disjunction on `sec:envelope`'s appositive: either *"reaching the seam---where the collapse leg ends---"* stands as written, or this row has landed in `P15` and the marker is there.  Read: the row asks which seam that appositive means, so pinning the appositive's presence would assert the status of the very sentence the row may change -- the fourth standing guard -- and the disjunction admits both legitimate states and no third one.
 receipts/P15_CR_cosmology/P15_the_source_decomposition_is_reachable_on_the_reporting_path_and_the_neutrinos_have_a_knob.py	"Og_of = CubicSpline"	SOURCE	SENTENCE		UNADJUDICATED	
 receipts/P15_CR_cosmology/P15_the_source_decomposition_is_reachable_on_the_reporting_path_and_the_neutrinos_have_a_knob.py	"def los_spectrum"	SOURCE	TOKEN		UNADJUDICATED	
 receipts/P15_CR_cosmology/P15_the_source_decomposition_is_reachable_on_the_reporting_path_and_the_neutrinos_have_a_knob.py	"g_ * (_SWSRC * (Th0 + Ps) + _PI * Pi / 4)"	SOURCE	SENTENCE		UNADJUDICATED	

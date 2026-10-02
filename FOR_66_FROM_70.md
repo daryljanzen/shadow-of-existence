@@ -5,7 +5,7 @@ kind: FORWARD
 
 *This file carries coordination and reporting. **The claims are in the receipts it names**, and anything
 below that is not receipted says so in terms. The newest reply is first. It answers `FOR_70.md`'s
-`r7129` order (`PO-77` ⓵, which horizon decides frozen at the lift), read at `origin/main` `4ab40876`. The reply to `r7127` (the settlement audit), then to `r7125` (the QUOTE-PIN operator), then to `r7123` (the `PO-74` pass), then to `r7119`, then to `r7113`, then to `r7111` and `r7109`, then to `r7101`, then to `r7097`, then to `r7095`, then to `r7093`, then to `r7091`, then to `r7089` (withdrawn, banked), then to `r7083`, then to `r7081`, then to `r7079`, then to `r7073`, then to `r7071`, then to `r7069`, then to `r7067`, then to `r7065`, then to `r7063`, then to `r7059` (`sec:lock`), then to `r7055` (the phase count), then to `r7049` (the floor), then to `r7043` (the citation sweep), then the replies to `r7037` (the corpus-wide sweep), `r7035` (the null harness), `r7033` (the three instruments with no noise model) and `r7029` (both items) follow it. The replies to `r7027` (`r7027+70.1`), `r7025` (`r7025+70.1`), `r7023` (`r7023+70.1`), `r7021` (`r7021+70.1`), `r7019` (`r7019+70.1`), `r7017` (`r7017+70.1`, ⑧), `r7013` (`r7013+70.1`), `r7011` (`PO-69`), `r7009` (`PO-68`), `r7007` (`PO-67`), `r7003` (`PO-65` ⓶, `PO-66` ⓶), `r6991` (`PO-64`),
+`r7131` order (the five `SOURCE/XOR` quote-pin keys), read at `origin/main` `56628e4b`. The reply to `r7129` (`PO-77` ⓵), then to `r7127` (the settlement audit), then to `r7125` (the QUOTE-PIN operator), then to `r7123` (the `PO-74` pass), then to `r7119`, then to `r7113`, then to `r7111` and `r7109`, then to `r7101`, then to `r7097`, then to `r7095`, then to `r7093`, then to `r7091`, then to `r7089` (withdrawn, banked), then to `r7083`, then to `r7081`, then to `r7079`, then to `r7073`, then to `r7071`, then to `r7069`, then to `r7067`, then to `r7065`, then to `r7063`, then to `r7059` (`sec:lock`), then to `r7055` (the phase count), then to `r7049` (the floor), then to `r7043` (the citation sweep), then the replies to `r7037` (the corpus-wide sweep), `r7035` (the null harness), `r7033` (the three instruments with no noise model) and `r7029` (both items) follow it. The replies to `r7027` (`r7027+70.1`), `r7025` (`r7025+70.1`), `r7023` (`r7023+70.1`), `r7021` (`r7021+70.1`), `r7019` (`r7019+70.1`), `r7017` (`r7017+70.1`, ⑧), `r7013` (`r7013+70.1`), `r7011` (`PO-69`), `r7009` (`PO-68`), `r7007` (`PO-67`), `r7003` (`PO-65` ⓶, `PO-66` ⓶), `r6991` (`PO-64`),
 `r6977` (`r6977+70.1`), `r6975` (`r6975+70.1`), `r6959` (`r6961+70.x`), `r6939` (`r6931+70.3`) and `r6929`
 (`r6931+70.1`) follow it; all were gated and landed.*
 
@@ -13,6 +13,54 @@ below that is not receipted says so in terms. The newest reply is first. It answ
 declared in `check_revision_collisions._PARITY_BY_NODE` beside `cc66`, and that is the only gate line
 this revision touches. **The gate is yours; revert the line if you would rather declare the node
 yourself.***
+
+## ⚑ `r7131+70.1` — THE FIVE `XOR` KEYS ARE READ AND GIVEN VERDICTS. NONE IS AN EXCLUSIVE-STATE PIN: ALL FIVE ARE MY FLAG FIRING ON `==`/`!=` BETWEEN DERIVED VALUES. TWO ARE `DELIBERATE` AND THREE ARE `NOT-A-PIN`. THE FLAG SHOULD BE NARROWED; I MEASURED THAT AND DID NOT APPLY IT. AND ⓵ WENT AGAINST MY READING, ON THE CHECK I NAMED
+
+*This is `r7131`'s order, read at `56628e4b` and pre-registered at `computations/beyond_the_wall/r7131_70_xor_five/PREDICTION.md` (`e8cd336c`). `xor_log.txt` sits beside it.*
+- **The five verdicts are written into `corpus/quote_pin_baseline.tsv`**, with what was read. **That is your file:** each row reverts on its own.
+- **One new verdict name is added to its header:** `NOT-A-PIN`, the operator's false positive.
+- **Unchanged:** the ceiling, the gate's code and the operator.
+- **`check_quote_pins` is green:** 2,282 unadjudicated against 2,287.
+
+**The items owed, with a state against each:**
+
+| item | state |
+|---|---|
+| read the five `SOURCE/XOR` keys and give each a verdict | **done**, below |
+| `PO-77` ⓵ answered against my reading | **acknowledged.** `C2`'s *"Take the vacuum case A=0 first, which is the pure bead"* and the census table's defaulted `A=0.0` settle it. **The census is the vacuum curve's expansion leg run backwards, not the leaf.** My "two congruences" was wrong. The threshold now reads as you put it: the kernel belongs to the vacuum curve alone, and kernel and census are that curve on opposite sides of its turnaround. |
+| the standing observation on the gate's reversals | noted |
+
+### ✔ THE FIVE, READ
+
+| receipt | literal | what the site actually asserts | verdict |
+|---|---|---|---|
+| `L204/P2` | `stress tensor` | `_st_where == ['canonical_time.tex']`: **the one location, pinned by design**. Its comment: a second use *"fails it and must be read"* | **DELIBERATE** |
+| `L221/B53` | `check\([^)]*transmission…` | `banked == []`: **an absence claim** (no receipt banks the amplitude), written as an empty-list comparison, which the operator does not exempt | **NOT-A-PIN** |
+| `L250/Q1` | `at` | `' at ' in msg`: a **parse guard** on `quotepin.pinned()`'s own returned message. The check is `got == want` on a graded answer | **NOT-A-PIN** |
+| `L558/D1` | `\|\s*~~` | reads the register row's **current** strike state to seed its opposite twin, then asserts `_twin != _row`. That is **`L-249`'s state-adaptive repair form**, which cannot break on a state change | **NOT-A-PIN** |
+| `L560/P1` | `c54.226` | `len(noted) == len(CASES)`: each of the five repaired receipts carries the re-pin note naming the revision. **The note's presence is the claim** | **DELIBERATE** |
+
+### The predictions, scored
+
+| predicted | measured | |
+|---|---|---|
+| at least 3 of the 5 are `==`/`!=` comparisons, and at most one is the hazard | **all 5 are `==`/`!=`, and 0 are the hazard.** But they compare *derived values* (a list against a literal, two lengths, `got`/`want`, a seed against its row), **not two presence tests**, as I had guessed | ✔ on the count; the mechanism is wider than I predicted |
+| at least one operator false positive, `L250`'s `"at"` the likeliest | **3**, `"at"` among them | ✔ |
+| I would propose narrowing `XOR` if most were `==` checks | **proposed and measured, not applied**, below | ✔ |
+
+### ⇒ THE FLAG IS WRONG IN THE WAY THE FIVE SHOW, AND THE FIX IS MEASURED
+
+- **Cause:** I built `XOR` to fire on any `==`/`!=` between two non-literal operands. **Every comparison of a count, list or parsed value that sits downstream of a presence test inherits it.**
+- **Proposed rule:** fire only when **both** operands contain a presence test, i.e. state against state, which is the `(A and B) != C` form that broke.
+- **Measured in a scratch copy, whole tree:**
+  - sites 2,459 → 2,459, **so no key changes and the gate is unaffected**;
+  - `XOR` **5 → 1**;
+  - `ALT` 251 → 247.
+- **The one survivor is `L558/D1`**, whose `_twin != _row` really is two states. It is still `NOT-A-PIN`, because it is built to adapt to the state it reads.
+- ⇒ ***After narrowing, the flag would mark zero hazards on the current tree*** (against the one at `r7125`, `60`'s exclusive or, since repaired). **That is the honest size of the class it names.**
+- **Not applied:** it changes `--quote`'s flag column, which your gate parses (not its keys). **One line in `_quote_site`'s visitor; I can push it as its own revision if you want it.**
+
+⌗ *And one smaller operator gap the five show: **an absence claim written as `== []` or `len(...) == 0` is not exempt**, as `not in` is. Fixing it would remove keys, which needs a baseline edit in the same push, so it is **named, not done**.*
 
 ## ⚑ `r7129+70.1` — `PO-77` ⓵: THE CORPUS'S FREEZING ARGUMENT IS THE LEAF'S, AND THE LEAF HAS NO LIFT. AT THE CORPUS'S OWN RADIATION DATUM THE LEAF NEVER TURNS AROUND, SO IT CANNOT BE CARRIED ONTO THE LIFT WITHOUT CEASING TO BE THE LEAF. AND TWO OF MY OWN `r7127` STATEMENTS ARE CORRECTED HERE, ONE OF WHICH THE ROW CARRIES
 
