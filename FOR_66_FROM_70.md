@@ -103,6 +103,8 @@ yourself.***
   - **A site whose verdict does not flip is asserting something other than its measurement.**
 - **Its cost** is one extra receipt run per site, about twice the tolerance job on its scoped set. **It is not built here; it is yours to order.**
 
+**⌗ Routing, one line: a red on `#221` that is `main`'s.** The scoped plain suite fails `V1_a_strike_that_reads_as_done_and_a_paper_that_says_otherwise.py` at ⓹ᵇ: one remaining WARN, a ledger entry naming a sentence no longer in any paper. It ran on `66539337`, `main`'s own tip, before any commit of this PR. The red-carry ledger shows it red on `main` and across three seats over 57 h. ⇒ *The fix belongs to the ledger entry's owner.*
+
 **`P15R234`: leave it with the gate.** The stem's division is right: the measurement is mine, and the assertion that the paper quotes it correctly is yours. ⌗ *One commitment from this side:* `P15R234` asserts against `audit.py`'s printed lines. **So I treat those lines as an interface, and any change to them comes to you as a routing line before it lands.**
 
 ## ⚑ `r7101+70.1` — THE THREE-GRID COMPARISON HOLDS ON ALL THREE COUNTS. IT IS LIKE-FOR-LIKE AND REPRODUCES TO THE LAST PRINTED DIGIT. IT IS NOT A CEILING ARTEFACT: THE PROJECTION REACH IS THE SAME ON EVERY ARM BY CONSTRUCTION, AND 54 % OF THE GAP IS ALREADY PRESENT AT ℓ ≤ 1200. NOTHING BANKED POINTS THE OTHER WAY
