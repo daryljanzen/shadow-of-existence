@@ -5350,6 +5350,35 @@ PINNED = {'systematic uncertainty': 1}
 
 ---
 
+## ⛔ TWO CI REDS ON `#220` THAT ARE NOT MINE, DIAGNOSED RATHER THAN JUST DISOWNED — **AND ONE OF THEM IS A LEDGER ROW `r7108` ANSWERED AND DID NOT CLOSE**
+
+*Both established as the base branch's before standing down, and one comment posted on `#220` with the grounds. Neither file is in this PR's diff; both were last touched on `main` by `60`.*
+
+### ⛔⛔ ⓵ `scoped — the plain suite`: **`L257/V1` — AND THE CAUSE IS AN OPEN-LEDGER ROW WHOSE QUESTION `r7108` ANSWERED**
+
+*$289$ pass, $1$ fail. **Verified red identically on a clean `origin/main` worktree** — same receipt, same single check, `rc=1` — so it is the base branch's. The run's own `red_carry` ledger says the same: carried $12$, cleared $10$, on four lines over $57.3$ h, `main` among them.*
+
+⇒ ***THE CAUSE, NAMED: `check_open_ledger` reports `[WARN] b1b3f917f5 (CR_cosmology) is in the ledger and no longer in any paper`.*** *That row was **registered at `r7107`** and quotes* "So what is owed is not the expansion in a named chart but the one thing those three presentations do not yet share: how the layer's angular harmonics are carried along the bead through the lap with the lift included…" — ***and `r7108`/`r7111` ANSWERED exactly that and rewrote the passage, so the sentence the row names is gone.***
+
+⇒ **So a ledger row's question was answered and the row was not closed with it.** ⌗ *I did not close it: **closing or re-pointing an open-problem row is an adjudication**, `corpus/open_ledger.txt` is not in my diff, and the row is `r7107`'s. **This is the one item here I think wants your hand rather than mine** — and it is cheap, because the answer that orphaned it is already landed and cited.*
+
+### ⌗ ⓶ `scoped — the tolerance perturbation`: **`60`'s harmonic-expansion receipt, one site, and the reading is NOT that an assertion is near failing**
+
+```
+P15_the_harmonic_expansion_in_the_proper_frame_is_not_bounded_...py
+site 418:46   err_a 1.090e-09   err_b 1.769e-10   tol 1e-06   headroom 917.5   moved 0.84
+```
+
+*Arrived from `main` (`0663f90c`, `r7106+60.1`), not in my diff.* ⇒ ***The site sits $917\times$ BELOW its own tolerance — what the gate flags is that the value MOVES between builds, so the tolerance is not build-stable there even though it passes comfortably.*** ⌗ *Same class as the two tolerances `r7106` already re-pointed in `r7102`'s geodesic gate, one site further on — which is why I am recording the numbers rather than only the name: whoever picks it up needs the headroom to know it is a stability finding and not a precision one.*
+
+⚠ *I have **not** spent a re-run on either, because both reproduce on the base branch rather than looking like flakes. Say if you would rather I did.*
+
+### ✔ AND WHAT MY OWN TREE SAYS, SO THE TWO ARE NOT CONFUSED
+
+*Fast job green ($10$ generators, $111$ gates, the hollow-assertion lint); `run_instrument_receipts` **$104$ pass / $0$ fail**; all three new receipts `rc=0`.*
+
+---
+
 ## ⛭⛭⛭ `r7109` ⓷ — **`cc66_lowell_sweep` IS CLOSED: A PRODUCER IS IN THE REPOSITORY, ALL EIGHT CONFIGURATIONS ARE RE-DERIVED, AND THE BANK IS THAT PRODUCER'S OUTPUT ROUNDED — EXACTLY, ON ALL FIFTY-SIX VALUES.**
 
 ### ✔✔ THE RESULT
