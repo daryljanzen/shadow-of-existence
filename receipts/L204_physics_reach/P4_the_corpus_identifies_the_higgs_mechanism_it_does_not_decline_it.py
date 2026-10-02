@@ -166,8 +166,18 @@ def main():
     papers = [f for f in glob.glob(os.path.join(ROOT, 'corpus', '*.tex'))
               if not os.path.basename(f).startswith('appendix_receipts')]
     allp = ' '.join(body(os.path.basename(f)) for f in papers)
-    check('✔ NOW while "Higgs" still appears ZERO times, so the identification is invisible to search',
-          len(re.findall('Higgs', allp, re.I)) > 0)
+    # ⛔⛭ r7125+cc66.98: THIS LABEL AND ITS CONDITION SAID OPPOSITE THINGS.  *The label read
+    # '"Higgs" still appears ZERO times' while the condition asserted `> 0` -- that it appears at all.
+    # Found while verdicting this family for `PO-76`; the same shape as `P10`'s "STATED IN NO PAPER"
+    # check, which asserted the presence of the thing its label called absent.*
+    #   ⇒ ** Measured: 4 occurrences. **  *So the ZERO is what was true at r2524 and the label is kept
+    #   as that reading, said in the past tense, with the live count printed.  The claim that survives
+    #   -- and the one this check is FOR -- is that the identification is in print now.*
+    _higgs = len(re.findall('Higgs', allp, re.I))
+    check(f'✔ and "Higgs" is IN PRINT -- {_higgs} occurrence(s) -- where it appeared ZERO times at '
+          f'r2524, when the identification was invisible to search.  ** The count is printed; what is '
+          f'asserted is that the word is there **',
+          _higgs > 0)
 
     print()
     if FAILED:

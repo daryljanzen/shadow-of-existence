@@ -89,7 +89,13 @@ def main():
 
     # ⓵ the wall
     n_wall = allp.count('\\su(3)\\not\\subset\\so(5,1)')
-    check(f'⛭ the gauge wall is stated {n_wall} times: $\\su(3)\\not\\subset\\so(5,1)$', n_wall >= 3)
+    # ⛭ r7125+cc66.98: was `n_wall >= 3`, a round number on a count (PO-76 class ⓵).  *The docstring's
+    # claim is "IT SAYS SO SIX TIMES", and six is the MEASUREMENT at this revision -- so it is printed.
+    # What the finding needs is that the wall is stated REPEATEDLY rather than once in passing, because
+    # a single occurrence could be a slip; `> 1` is that claim and nothing finer.*
+    check(f'⛭ the gauge wall is stated {n_wall} times -- REPEATEDLY and not once in passing: '
+          f'$\\su(3)\\not\\subset\\so(5,1)$.  *The count is printed; only "more than once" is asserted*',
+          n_wall > 1)
     check('with its consequence: "the Standard Model gauge group is not a continuous substrate '
           'isometry"', 'not a continuous substrate isometry' in allp)
     # ⛔⛭ RE-PINNED r3958.  This pinned `walled and electroweak`.  `walled` is retired jargon --
@@ -104,7 +110,7 @@ def main():
           and 'excluded from the isometry, and electroweak' in allp)
     check('⇒ SO THE CONSTRUCTION ASSIGNS THE nu_R A PLACE IN A GRADING AND NO INTERACTIONS, and says '
           'explicitly that it cannot supply them',
-          n_wall >= 3 and 'geometric origin for the gauge content' in allp)
+          n_wall > 1 and 'geometric origin for the gauge content' in allp)
 
     # the nu_R's status in the corpus
     check("the nu_R appears as an OPTION in the count: one generation splits 12 coloured against 3 "
@@ -127,7 +133,7 @@ def main():
           net is not None and ('decouple' in net.lower() or 'decoupling' in net.lower()))
     check('⇒⇒ SO CR\'s nu_R PREDICTION AND N_eff ARE ABOUT DIFFERENT THINGS: CR predicts a PLACE, '
           'N_eff depends on COUPLINGS, and CR\'s own wall says it supplies none',
-          n_wall >= 3 and len(re.findall('sterile', allp, re.I)) == 0)
+          n_wall > 1 and len(re.findall('sterile', allp, re.I)) == 0)
 
     # ⓷ the trip-wire is already on the board
     check('⚠ and the trip-wire is already live: F1 fires if the gauge group is ever promoted to FORCED',

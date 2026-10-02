@@ -125,10 +125,23 @@ def main():
     # artefact: the curvature diverges").  A first draft asserted zero from a per-paper scan and failed
     # here; the claim that survives is about what the ARGUMENT turns on, not a word count. **
     n_chart = len(re.findall('chart artefact', allp, re.I))
+    # ⛔⛭ r7125+cc66.98: the liveness this receipt's controls were asserting with round numbers, now
+    # DERIVED.  *This receipt's load-bearing claims are ABSENCES, so a broken glob or regex would make
+    # every count 0 and pass them trivially -- the one thing a control must rule out.*
+    check(f'⌗ the search reached live text, derived and not declared: {len(P)} paper file(s) and '
+          f'{len(allp):,} characters -- every `corpus/*.tex` less the generated appendices, counted '
+          f'from the filesystem.  ** This is what the old `> 50` / `>= 5` / `>= 10` stood in for. **',
+          len(P) == len(papers()) and len(P) > 0 and len(allp) > 0)
     check(f'⌗ and the argument turns on COMPLETION: "completed horizon" {n_comp} uses, "finite '
           f'exterior" {n_fin} -- and the {n_chart} uses of "chart artefact" both DENY that something '
           'is one, so nowhere does the corpus argue "perspectival, therefore no flux"',
-          n_comp >= 5 and n_fin >= 10
+          # ⛔⛭ r7125+cc66.98: `n_comp >= 5 and n_fin >= 10` were ROUND NUMBERS standing in for "the
+          # search reached live text" (PO-76 class ⓵).  *What this check is FOR is the two structural
+          # conditions below -- that "chart artefact" is used to DENY, never to assert -- and those are
+          # unchanged.  The two counts are the vocabulary being present, which is `> 0`, and they stay
+          # PRINTED so a move is visible.  The liveness the thresholds stood in for is now derived from
+          # the filesystem, once, above.*
+          n_comp > 0 and n_fin > 0
           and 'not because $\\partial_{r}$' not in allp.replace('chart artefact but because', 'X')
           and 'chart artefact but because' in allp)
 
@@ -137,9 +150,11 @@ def main():
               for k in ('Hawking', 'graviton', 'Bogoliubov', 'Bekenstein',
                         'Rindler', 'Unruh', 'stress tensor', 'trans-Planckian',
                         'entanglement entropy')}
-    check(f'across all {len(P)} paper files: Hawking {counts["Hawking"]}, graviton '
-          f'{counts["graviton"]}, Bogoliubov {counts["Bogoliubov"]}',
-          counts['Hawking'] > 50 and counts['Bogoliubov'] > 0)
+    check(f'across all {len(P)} paper files the thermal-QFT vocabulary is PRESENT: Hawking '
+          f'{counts["Hawking"]}, graviton {counts["graviton"]}, Bogoliubov {counts["Bogoliubov"]} -- '
+          f'which is what this check claims; the counts are printed and asserted nowhere, and the '
+          f'liveness the old `> 50` stood in for is derived above',
+          counts['Hawking'] > 0 and counts['Bogoliubov'] > 0)
     # ** "Rindler" is NOT zero -- but every occurrence is RindlerIshak2007, Rindler the AUTHOR, on
     # cosmological-constant lensing.  ** ZERO Rindler HORIZONS. **  Measured that way instead. **
     # ** two forms: the citation key RindlerIshak2007 and the bibliography's "W.~Rindler". **
@@ -208,7 +223,7 @@ def main():
     check('⇒⇒ THE UNADDRESSED FIRST QUESTION IS ADDRESSED: the corpus mentions Hawking '
           f'{counts["Hawking"]} times and Unruh {counts["Unruh"]}, and the Unruh case is now the one '
           'that fixes the criterion rather than the one nobody had asked',
-          counts['Hawking'] > 50 and counts['Unruh'] > 0)
+          counts['Hawking'] > 0 and counts['Unruh'] > 0)
 
     # ⓶ and why the argument survives
     check('⌗ and the argument SURVIVES the test, because it is already the COMPLETION argument: the '

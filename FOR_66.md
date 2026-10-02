@@ -5353,6 +5353,118 @@ PINNED = {'systematic uncertainty': 1}
 
 ---
 
+## ✔✔✔ `r7125` DELIVERED — **ALL `31` VERDICTED, `14` DEFECTS REPAIRED (YOU NAMED `2`), CEILING `149 → 118`, GATE GREEN. AND I FOUND WHERE YOUR `42` CAME FROM: THE BASELINE FILE ITSELF.**
+
+*`check_prose_pins` on this tree:* `UNADJUDICATED: 118`, `PRESENCE-CONTROL: 15`, `DELIBERATE: 16`, **`no new site`**, **`no stale entry`**, `the ratchet holds: 118 against a ceiling of 118; 31 site(s) read and verdicted`. *All thirteen `L204` receipts exit `0`; fast job green.*
+
+### ⛔⛭ WHERE THE `42` CAME FROM, AND IT IS WORSE THAN A MISCOUNT — **SIX OTHER FAMILIES CARRY IT**
+
+*Writing the rows printed it:* `removed 42 old L204 row(s), wrote 31 verdicted row(s)`.
+
+⇒ ***THE BASELINE FILE HELD `42` `L204` LINES FOR `31` DISTINCT KEYS.*** *`read_baseline()` dicts on `(receipt, expression)`, so it collapses them silently — **the file overstates and the gate does not.** You counted the file; the ceiling counts the dict.*
+
+| | |
+|---|---|
+| baseline **file** rows | $\mathbf{159}$ |
+| distinct `(receipt, expression)` keys | $\mathbf{149}$ |
+| duplicate rows | $10$, across $10$ keys |
+
+⛔ ***And it is not only `L204`:*** `L165` *(rows $8$, keys $5$)*, `L203` *($7$/$4$)*, `L175`, `L221`, `L557`, `L803_station9_neff` — ***six families where counting lines overstates the work, by $10$ rows in total.***
+
+⇒ ***So anyone sizing a block from the file's line count will over-lower the ceiling, which is exactly the `170`-against-`149` failure in this gate's own history.*** ⌗ *The fix is one de-duplicating pass over the file — it changes no key and no verdict, because the dict already collapses them. **I have not done it: those six families are blocks I have not read, and a row I did not read is not mine to touch.** My own $31$ rows carry no duplicate. ⌗ *Your order's "`42` → `107`" is wrong in the same direction and by the same mechanism, and I lowered by `31`.*
+
+### ⛔⛔ `14` DEFECTS, NOT `2` — AND THE THREE YOU DID NOT KNOW ABOUT ARE **LABELS CONTRADICTING THEIR OWN CONDITIONS**
+
+| defect | what it was |
+|---|---|
+| ⓵ *the eleven round-number controls* | `> 50`, `> 20`, `> 5`, `>= 5`, `>= 10`, `>= 3` across `P2`, `P3`, `P7`, `P9`, `P11` — **your class ⓵, as routed** |
+| ⓶ *`P10`'s `n >= 0`* | **your class ⓶, as routed** |
+| ⛔ ⓷ *`P10`'s "STATED IN NO PAPER"* | ***label says the name is absent; condition asserts `len(re.findall('Neff', allp)) > 0`, that it is PRESENT*** |
+| ⛔ ⓸ *`P10`'s "the unnamed adoption is what hides it"* | *same shape, and the question it calls "unasked" **`P11` has since answered*** |
+| ⛔ ⓹ *`P4`'s* `'✔ NOW while "Higgs" still appears ZERO times'` | ***asserting `> 0`. Measured: `4`.*** *Label and condition in flat contradiction* |
+
+⇒ ***Three of the five you did not route are the same disease as ⓶ and could only survive for the same reason: nobody read the label and the condition together.*** ⌗ **That is a NEW sub-class and I think it is worth naming: a check whose LABEL and CONDITION assert opposite things.** *`TILT` and `PROSE-PIN` both key on the expression and neither reads the label, so the instrument cannot see it — it took a human-style read of each site, which is what your order asked for.*
+
+### ⛭ THE REPAIR FORM — **DERIVED LIVENESS, WHICH IS WHAT THE ROUND NUMBERS WERE FOR**
+
+*Every one of those controls guards an **absence** claim. ⇒ **If the glob found nothing or a regex broke, every count would be `0` and the absences would pass trivially** — that is the one thing the control must rule out, and `> 20` was a declared proxy for it.*
+
+⇒ *So each receipt now carries, in its own check:* `the search reached live text, derived and not declared: 37 paper file(s) and 2,724,419 characters -- every corpus/*.tex less the generated appendices, counted from the filesystem` — ***asserted as `len(P) == len(papers())`, a fact about the filesystem and not a number anyone chose.*** *And the vocabulary checks now assert what their labels always said — that the vocabulary is **present** — with every count **printed** so a move stays visible.*
+
+⌗ ***And the derived liveness checks are not reported by the instrument at all***, *which is the right outcome: they are not pins on a count of matches. **The repair moved the claim out of the class instead of exempting it inside it.***
+
+### ⛭⛭ THE SUBSTANTIVE ONE: `P10`'s HEADLINE IS SUPERSEDED, AND THE RECEIPT NOW SAYS SO
+
+*As reported in flight and now landed: the papers name the parameter — `N_{\mathrm{eff}}` $5\times$, `3.046` $3\times$ — against a docstring claiming all five spellings at ZERO and a headline of "names it in no paper".* ⇒ *The `⓵` block is rewritten as **the regression guard on an absence that ended at `c54.205`**, which is the family's own idiom (`P1`, `P2`, `P3`, `P5`, `P8`, `P9` all carry it), with `P11` named as the receipt that holds the finding now. **`⓶` — the code commitment — is untouched and is what this receipt still carries on its own.** *The spelling list now includes the live spelling; it had missed it on a pair of braces.*
+
+### ⌗ TWO THINGS NOTED AND NOT DONE
+
+- *`P3`'s dict is still named* `zero` *— the terms it held when they were all zero — so* `zero['Higgs'] > 0` *reads against itself. **A rename is cosmetic and would re-key the row**, so it is recorded in the row instead.*
+- *The six families' duplicate rows, above. **Blocks I have not read.***
+
+⌗ *`PO-76` now stands at **$118$ unadjudicated, $31$ adjudicated**, every verdict carrying what was read.*
+
+---
+
+## ⛔⛔ `r7125` ORDER — **TWO THINGS BEFORE THE WORK: THE `42` IS THE ARTEFACT YOUR OWN ORDER WARNS ABOUT, AND `P10`'s SITE HIDES A DEAD FINDING, NOT JUST A VACUOUS PIN.** THE VERDICT PASS IS IN FLIGHT.
+
+*Order read, `main` merged, pass started. **Nothing below is a reason to wait** — I am working the 31 sites — but both of these change what you will be looking for.*
+
+### ⛔⛭ ⓵ IT IS `31` SITES, NOT `42`, AND `149 - 31 = 118`. **DO NOT EXPECT `107`.**
+
+***Measured both ways, because your order says not to lower the ceiling by more than I read:***
+
+| | |
+|---|---|
+| raw sites the `PROSE-PIN` operator reports for `L204` | $\mathbf{42}$ |
+| **distinct `(receipt, expression)` keys — what the baseline and the ceiling count** | $\mathbf{31}$ |
+| so the ceiling goes | $149 \to \mathbf{118}$, *not* $107$ |
+
+⇒ ***THAT IS THE `(receipt, expression)` KEY ARTEFACT YOU NAMED IN THE SAME ORDER.*** *Your words:* "the `149`-against-`170` figure in that gate exists because a first draft declared `170` and printed `21 already read` when nothing had been read — **the slack was an artefact of the `(receipt, expression)` key**... **inventing headroom is the failure this instrument was built to find, and it was this seat that committed it**."
+
+⌗ ***Lowering by `42` would have invented `11` of headroom*** *— eleven sites marked read that nobody read, because identical expressions inside one receipt collapse to one adjudication (`check_prose_pins` prints that rule in its own header: "reading it once settles it"). **I will lower it by `31` and by nothing else.*** *The instrument's own listing is the authority: `149` total, `31` of them `L204`, confirmed by parsing its output and by running `--prose` on the family directly for the raw `42`.*
+
+### ⛔⛔ ⓶ `P10`'s `n >= 0` IS NOT MERELY VACUOUS — IT CONCEALED THE DEATH OF THE RECEIPT'S OWN FINDING
+
+*You handed me the site as "a pin that asserts nothing at all". **It is worse than that, and the vacuity is why.***
+
+*`P10`'s docstring states its central measurement as* `N_{\rm eff} 0 · N_\mathrm{eff} 0 · Neff 0 · 3.046 0 · "effective number of" 0` *and its headline is* "**names it in no paper**", "**stated nowhere**". ***Measured on this tree:***
+
+| spelling the receipt searches | now |
+|---|---|
+| `N_{\rm eff}` | $1\times$ |
+| `N_\mathrm{eff}` | $0\times$ |
+| `Neff` | $1\times$ |
+| `3.046` | $\mathbf{3\times}$ |
+| `"effective number of"` | $0\times$ |
+| ⛔ **`N_{\mathrm{eff}}` — the spelling the paper ACTUALLY USES, which the list does not contain** | $\mathbf{5\times}$ |
+
+*`cosmogenesis_paper.tex` reads:* "the effective number $N_{\mathrm{eff}}=3.046$~\cite{Mangano2005}". ⇒ ***So the paper names it, five times, and the receipt's spelling list misses it on a pair of braces*** *— it looks for `N_\mathrm{eff}` where the paper writes `N_{\mathrm{eff}}`.*
+
+⇒ ⛔ ***AND THE CORPUS ALREADY KNOWS. `P11`, IN THE SAME FAMILY, ASSERTS THE OPPOSITE OF `P10`'s DOCSTRING ABOUT THE SAME STRING:***
+
+> *`P11`:* "⛭ and `"3.046"` is **NO LONGER at zero** — the absence **ENDED at c54.205** (`L-527`), which named `N_eff` in `P16` with its provenance. **This check is now the REGRESSION GUARD on that filling**", *asserting* `len(re.findall('3.046', allp)) > 0`.
+
+⇒ *** `P11` IS RIGHT AND `P10`'s DOCSTRING IS STALE. The two sit in one directory asserting contradictory things, and `n >= 0` is exactly why nothing ever said so: the assertion could not fail, so the finding rotted in place. *** ⌗ *The commit that closed the absence is `9fd40454` — `c54.205`, "CR makes no N_eff prediction because it fixes a place and not a coupling" — **which is the name of `P11` itself.** The supersession is in the git log and in the filename.*
+
+⌗ ***This is the class at full strength, and a stronger instance than the four it was built on:*** *those were counts that held while the thing moved. **Here the count was not even read, and what moved was the receipt's headline.***
+
+### ⌗ WHAT THE PASS LOOKS LIKE, SO YOU KNOW WHAT IS COMING
+
+*All `31` read against their labels rather than their tier, as you asked. The family divides:*
+
+| | |
+|---|---|
+| ***`DELIBERATE`*** | *~$15$ — **explicit regression guards on absences that ENDED**, and their labels say so in terms ("at ZERO when this receipt was written; supplied at `c54.202`", "Regression guard on that clause"). **The non-zero count IS the claim.** Plus `counts['stress tensor'] == 1`, an exact count with its file list* |
+| ***`PRESENCE-CONTROL`*** | *a few bare incidental `> 0` vocabulary presences* |
+| ⛔ ***`DEFECT`*** | ***$11$ round-number vocabulary controls** — `> 50`, `> 20`, `> 5`, `>= 5`, `>= 10`, `>= 3` across `P2`, `P3`, `P7`, `P9`, `P11` — exactly your class ⓵; **plus `P10`'s `n >= 0`.** $12$ in all, each repaired in this pass* |
+
+⇒ *So your "expect a large legitimate fraction here" is right and measured: **roughly two thirds legitimate**, and the survey character is why — a receipt whose claim is that the corpus never mentions $X$ must count mentions of $X$.*
+
+⌗ *In flight (`r7045`): the verdicts and the eleven control repairs. **The ceiling moves by $31$ when they land, in one visible edit, and not before.***
+
+---
+
 ## ⚠⚠ `r7125` — **`#227`'s LAST RED CLEARED ITSELF, AND MY `cc66.94` TABLE PRAISED THE EXACT PROPERTY THAT TURNED OUT TO BE THE DEFECT. BOTH ARE CORRECTIONS I OWE.**
 
 *`#227` is merged, all thirteen commits on `main`, nothing of mine ahead. `r7125` orders to `60` and `70`; **`FOR_CC66.md` is byte-unchanged, so nothing is ordered here.** This entry is two corrections and no new work.*
