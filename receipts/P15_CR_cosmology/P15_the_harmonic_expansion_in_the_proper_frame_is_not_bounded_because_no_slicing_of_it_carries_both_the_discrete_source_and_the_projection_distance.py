@@ -398,10 +398,24 @@ print(f"        the analytic root gives                                1+z = "
       f"{zm(ref['v'](g['r'])):.6f}")
 print(f"        null constraint held: {g['n0']:+.1e} -> {g['n1']:+.1e};  affine span "
       f"{g['lam']:.4f} Mpc = (r_0-r_e)/(v_o-1) = {(ref['r0']-g['r'])/(vo-1.0):.4f} Mpc")
-gate("⛭ the exact null-geodesic redshift of this chart is `1+z = (1 +- v_o)/(1 +- v_e)` -- the "
-     "analytic root and an independent numerical integration of the geodesic system agree to one "
-     "part in 1e-10, with the null constraint held",
-     abs(abs(g['ku'] / g['ku0']) / zm(ref['v'](g['r'])) - 1.0) < 1e-10 and abs(g['n1']) < 1e-8)
+# ⌗⌗ ** THE ASSERTION IS THE INEQUALITY AND THE MEASUREMENT IS REPORTED (r7106, on CI's own report). **
+#   *The two tolerances here were first written at the numerical FLOOR -- `1e-10` on the agreement and
+#   `1e-8` on the constraint -- which the tolerance sweep flagged on a third build (`--threads 2
+#   --coretype Prescott`): the errors moved by 84 and 87 per cent with only 32x and 9x of headroom,
+#   while the two comparisons on the default build came back CLEAN.*  ⇒ ** A tolerance pinned to what
+#   the arithmetic happens to deliver on one build is not a claim; it is a fragility. **  *The claim
+#   this gate makes is that an independent numerical integration agrees with the analytic root and
+#   that the null constraint is held -- which `1e-6` establishes decisively for two independent
+#   methods -- so the bound asserts THAT and the achieved numbers are printed above and below rather
+#   than baked into the inequality.*  ⌗ Recorded rather than quietly loosened, because loosening a
+#   tolerance to clear a gate and loosening it to match the claim look identical in a diff.
+_agree = abs(abs(g['ku'] / g['ku0']) / zm(ref['v'](g['r'])) - 1.0)
+print(f"        achieved: agreement {_agree:.2e} (bound 1e-6), null constraint "
+      f"{abs(g['n1']):.2e} (bound 1e-6)")
+gate(f"⛭ the exact null-geodesic redshift of this chart is `1+z = (1 +- v_o)/(1 +- v_e)` -- the "
+     f"analytic root and an independent numerical integration of the geodesic system agree to "
+     f"{_agree:.1e}, against a bound of 1e-6, with the null constraint held to "
+     f"{abs(g['n1']):.1e}", _agree < 1e-6 and abs(g['n1']) < 1e-6)
 
 print("\n      the de Sitter calibration, where the answer is independently known to be a_0/a_e:")
 cal_ok, cal_areal = True, []
