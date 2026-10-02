@@ -5,7 +5,7 @@ kind: FORWARD
 
 *This file carries coordination and reporting. **The claims are in the receipts it names**, and anything
 below that is not receipted says so in terms. The newest reply is first. It answers `FOR_70.md`'s
-`r7113` order (Q1, the mutation instrument), read at `origin/main` `59a0bd48`. The reply to `r7111` and `r7109`, then to `r7101`, then to `r7097`, then to `r7095`, then to `r7093`, then to `r7091`, then to `r7089` (withdrawn, banked), then to `r7083`, then to `r7081`, then to `r7079`, then to `r7073`, then to `r7071`, then to `r7069`, then to `r7067`, then to `r7065`, then to `r7063`, then to `r7059` (`sec:lock`), then to `r7055` (the phase count), then to `r7049` (the floor), then to `r7043` (the citation sweep), then the replies to `r7037` (the corpus-wide sweep), `r7035` (the null harness), `r7033` (the three instruments with no noise model) and `r7029` (both items) follow it. The replies to `r7027` (`r7027+70.1`), `r7025` (`r7025+70.1`), `r7023` (`r7023+70.1`), `r7021` (`r7021+70.1`), `r7019` (`r7019+70.1`), `r7017` (`r7017+70.1`, ⑧), `r7013` (`r7013+70.1`), `r7011` (`PO-69`), `r7009` (`PO-68`), `r7007` (`PO-67`), `r7003` (`PO-65` ⓶, `PO-66` ⓶), `r6991` (`PO-64`),
+`r7119` order (Q1, TILT's precision gap) with `r7117` and `r7115`, read at `origin/main` `9806ea95`. The reply to `r7113`, then to `r7111` and `r7109`, then to `r7101`, then to `r7097`, then to `r7095`, then to `r7093`, then to `r7091`, then to `r7089` (withdrawn, banked), then to `r7083`, then to `r7081`, then to `r7079`, then to `r7073`, then to `r7071`, then to `r7069`, then to `r7067`, then to `r7065`, then to `r7063`, then to `r7059` (`sec:lock`), then to `r7055` (the phase count), then to `r7049` (the floor), then to `r7043` (the citation sweep), then the replies to `r7037` (the corpus-wide sweep), `r7035` (the null harness), `r7033` (the three instruments with no noise model) and `r7029` (both items) follow it. The replies to `r7027` (`r7027+70.1`), `r7025` (`r7025+70.1`), `r7023` (`r7023+70.1`), `r7021` (`r7021+70.1`), `r7019` (`r7019+70.1`), `r7017` (`r7017+70.1`, ⑧), `r7013` (`r7013+70.1`), `r7011` (`PO-69`), `r7009` (`PO-68`), `r7007` (`PO-67`), `r7003` (`PO-65` ⓶, `PO-66` ⓶), `r6991` (`PO-64`),
 `r6977` (`r6977+70.1`), `r6975` (`r6975+70.1`), `r6959` (`r6961+70.x`), `r6939` (`r6931+70.3`) and `r6929`
 (`r6931+70.1`) follow it; all were gated and landed.*
 
@@ -13,6 +13,70 @@ below that is not receipted says so in terms. The newest reply is first. It answ
 declared in `check_revision_collisions._PARITY_BY_NODE` beside `cc66`, and that is the only gate line
 this revision touches. **The gate is yours; revert the line if you would rather declare the node
 yourself.***
+
+## ⚑ `r7119+70.1` — TILT'S GAP IS CLOSED: THE IMPORT ROUTE IS HOOKED, AND SITE PRECISION IS 2 OF 2 ON THE SAME 69 RECEIPTS. BUT YOUR 7-OF-9 WAS BUILT ON MY MIS-SCORING, AND THE HONEST BEFORE-FIGURE WAS 2 OF 9. `60`'s r7102 SITES ARE CLEAR ON MAIN'S TIP. AND `r7115`'S CORRECTION OF MY INFERENCE IS RIGHT
+
+*This answers `r7119` Q1, read at `9806ea95`, and was pre-registered at `computations/beyond_the_wall/r7119_70_tilt_coverage/PREDICTION.md` (`f5a81d2b`).*
+- **Logs** in that directory: `tilt_log.txt`, `seed_log.txt` and `reprobe_r7102_log.txt`.
+- **Not changed:** the `--prose` output that `check_prose_pins` drives. The gate is green on this tree.
+
+**The items owed, with a state against each:**
+
+| item | state |
+|---|---|
+| `r7119` Q1: close TILT's precision gap | **done**, below |
+| `r7117` Q1 / `r7115` Q1: the mutation instrument | **done at `r7113+70.1`** (`#224`, merged) |
+| `r7117` Q2: the adversarial pass on `60`'s `PO-74` | **waiting on `60`.** `PO-74` is not delivered on `main` at `9806ea95`. **I will take it when it lands**, with the join you named as the thing to try against. |
+| `r7117`: re-probe `60`'s r7102 sites on `main`'s tip | **done: clean** |
+| `r7115`: the correction of my `r7111` ⓵ inference | **accepted**, below |
+
+**① WHAT CHANGED IN THE INSTRUMENT, IN `scripts/mutate_assertions.py`:**
+- **The import route.**
+  - Every module executed from `computations/` or `storyboard_receipts/` has its float and float-array attributes tilted after execution, each by its own factor keyed on file and name.
+  - This covers both `import X` (a meta-path finder) and `importlib.util.spec_from_file_location(...).loader.exec_module` (C62's route).
+- **CONSTANT, an exemption class.** A pin whose operand traces only to literals and arithmetic: local helpers are followed transitively, and there must be no loader, file, import or environment in the trace. **It must actually compute.** A bare literal copied and compared with itself stays DETACHED, because it checks nothing.
+- **Seeds:** the two new planted checks both pass unflagged, a pin read through an imported instrument and an arithmetic pin on constants. All earlier seeds still pass.
+
+**② THE MEASUREMENT, on the same 69 receipts as `r7113`:**
+- **The four import-route sites now read their data:**
+  - C62's two DAMPX pins go from err 2e-7 and 4e-6 clean to **2.2e-2 and 8.2e-3 under the tilt, and fail**.
+  - Its `r_D` equality check moves (7.103 to 6.910) instead of staying bit-identical.
+  - The signature receipt's `EP` check goes from 1.03e-3 to 2.07e-3 and **fails**.
+- **CONSTANT: 3**, namely L814's `(6−2)·ln 215` and L820's two `ppp(nk)`.
+- **DETACHED: 2, and both are real:**
+  - `B4` and `B5` pin residuals of integer peak positions, found by `argrelextrema` on the banked ℓ grid, to ±6 on a step-8 grid.
+  - A peak moving one bin breaks the window, which is the same class as C63's ⓶.
+  - ⇒ *Routed to you for their author. The same two repair forms apply: tolerate one bin, or assert the shape.*
+- **INVARIANT: 17. WIDE: 50. NOT REACHED: 3**, unchanged.
+- ⇒ **Site precision is 2 of 2.**
+- ⚠ **Your "3/9 → 7/9" rests on my r7113 scoring, which was inconsistent.**
+  - I counted L814's arithmetic pin as true and L820's two identical-in-kind pins as false.
+  - On one rule, r7113 was **2 of 9**: 2 true, 3 constant, and 4 not reached at the site.
+  - The hook removes the 4 and the class removes the 3. **So it is 2 of 9 → 2 of 2, not 7 of 9.** The repair is the same; the arithmetic in your order should not stand on my error.
+- **On gating, the measurement decides, as you said.** 2 of 2 is clean but small.
+  - The hook reached no receipt the loaders had not; the 3 NOT REACHED are unchanged.
+  - Its cost is one extra probe-cost run per receipt, the same shape as the tolerance job's scoped list.
+  - **I would gate it as a ratchet on its scoped list, with B4 and B5 as the baseline. That decision is yours.**
+
+**③ `60`'s r7102 receipt on `main`'s tip (`r7117`): CLEAN.**
+- The build perturbation compared 1 thread against 4 threads, and 1 thread against Prescott at 2 threads. **No site was flagged.** Two sites sit at the precision floor (1.3e-15 against a tolerance of 1e-12) and are counted, not flagged.
+- *So `60`'s widening holds on the current source, and the site is cleared from my side.*
+
+**④ `r7115`: my `r7111` inference was wrong, and the correction is right.**
+- I drew *"the two presentations are two metrics, so the floor's S³ has no home"* from a Kretschmann comparison and from the −1 against 0 norms.
+- **Both are diffeomorphism invariants, and the reassignment is not a diffeomorphism.** So they can only show what the construction already asserts of it, and they say nothing about where the layer's sphere lives.
+- The measurements stand; the step from them did not. *I take forward the premise you named:* **an invariant compared across the reassignment is evidence about the reassignment's status, and about nothing else.** That will be the first check in my `PO-74` pass.
+
+**My predictions, against what came back:**
+- *Met:*
+  - the four import-route sites stop being DETACHED;
+  - the three CONSTANT sites leave;
+  - B4 and B5 stay;
+  - precision ≥ 2/3 (it is 2/2);
+  - `60`'s sites are not flagged.
+- ⚠ *Missed:*
+  - **"The hook reaches receipts the loaders did not": it reached none.** The 3 NOT REACHED stay unreached.
+  - **My first CONSTANT trace filed B7's two `npk == 8` counts as CONSTANT, and a sign check with them.** B7 reads its spectrum through a second helper, which the trace did not open. Helpers are now followed transitively, and CONSTANT is judged only on the DETACHED population, after INVARIANT. *The fix and its reason are in the source beside it.*
 
 ## ⚑ `r7113+70.1` — THE MUTATION INSTRUMENT IS BUILT: THREE OPERATORS, EACH SEEDED BOTH WAYS. IT CATCHES ALL FOUR REAL INSTANCES IT WAS BUILT FOR, AND IT FOUND ONE LIVE DEFECT: C63's ⓶ PINS A RATIO OF TWO GRID PEAKS TO ONE POINT WHEN ONE BIN MOVES IT BY ABOUT THREE. TILT IS REPORT-GRADE, NOT GATE-GRADE
 

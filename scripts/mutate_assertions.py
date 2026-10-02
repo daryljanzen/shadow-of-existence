@@ -360,6 +360,20 @@ _MATH = {'abs', 'float', 'int', 'round', 'min', 'max', 'sum', 'len', 'range', 'n
          'sqrt', 'True', 'False', 'None'}
 
 
+def _fn_reads(name, fns, src, seen=None):
+    """does local function `name`, or any local function it calls (transitively), touch data?  r7119+70.1's first
+    run filed B7's `npk0 == 8` CONSTANT because `b4_index` reads its spectrum through a second helper, `peaks`"""
+    seen = seen if seen is not None else set()
+    if name in seen:
+        return False
+    seen.add(name)
+    body = ast.get_source_segment(src, fns[name]) or ''
+    if _DATA.search(body):
+        return True
+    return any(_fn_reads(c.func.id, fns, src, seen) for c in ast.walk(fns[name])
+               if isinstance(c, ast.Call) and isinstance(c.func, ast.Name) and c.func.id in fns)
+
+
 def _constant(node, tree, src, depth=4):
     """CONSTANT (r7119+70.1): does the comparison's operand trace only to literals and arithmetic -- local
     functions included -- with no loader, file, import or environment in the trace?  Such a pin checks a quoted
@@ -382,8 +396,7 @@ def _constant(node, tree, src, depth=4):
                     if n.id in _MATH or n.id in dir(__builtins__):
                         continue
                     if n.id in fns:
-                        body = ast.get_source_segment(src, fns[n.id]) or ''
-                        if _DATA.search(body):
+                        if _fn_reads(n.id, fns, src):
                             return False
                         computes[0] = True
                         continue
@@ -432,9 +445,6 @@ def judge(root, out, mode):
                 if _vals_equal(a['vals'], b['vals']):
                     if lit:
                         continue                      # a literal against a literal is the static class
-                    if _constant(node, tree, src):
-                        rows.append(dict(receipt=rel, site=sid, kind='CONSTANT', cls=k, text=seg[:140]))
-                        continue
                     # ⛭ INVARIANT BY DESIGN, read off the first population run (r7113+70.1: 14 of 31 DETACHED):
                     #   an exactness check (`== 0.0`, or a tolerance at or below 1e-8 -- an identity or a no-op
                     #   that two paths agree) and a sign agreement are SUPPOSED not to move.  Counted, not flagged.
@@ -444,7 +454,8 @@ def judge(root, out, mode):
                         rows.append(dict(receipt=rel, site=sid, kind='INVARIANT', cls=k, text=seg[:140]))
                         continue
                     if _floaty(a) or _fed_by_locator(node, tree, src):
-                        rows.append(dict(receipt=rel, site=sid, kind='DETACHED', cls=k, text=seg[:140]))
+                        kind = 'CONSTANT' if _constant(node, tree, src) else 'DETACHED'
+                        rows.append(dict(receipt=rel, site=sid, kind=kind, cls=k, text=seg[:140]))
                 elif _floaty(a):
                     rows.append(dict(receipt=rel, site=sid, kind='WIDE', cls=k,
                                      text=(ast.get_source_segment(src, node) or '')[:140]))

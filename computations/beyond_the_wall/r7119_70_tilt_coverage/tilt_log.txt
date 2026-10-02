@@ -1,0 +1,78 @@
+
+  TILT (r7119+70.1: loaders + the import route, CONSTANT and INVARIANT classes), the 69 receipts of r7113: 72 site(s) in 31 receipt(s)
+    [WIDE      ] receipts/L147_two_arm/B3_a_dichotomy_stated_is_not_a_dichotomy_proved.py:113:10  abs(float(np.mean(sp)) - 0.79) < 0.02
+    [INVARIANT ] receipts/L147_two_arm/B4_the_intercept_is_a_phase_and_the_control_proves_it.py:115:10  abs(np.polyfit(n, predicted, 1)[0] - lA) < 1e-8
+    [WIDE      ] receipts/L147_two_arm/B4_the_intercept_is_a_phase_and_the_control_proves_it.py:121:10  abs(s_c - 0.9761) < 5e-3
+    [WIDE      ] receipts/L147_two_arm/B4_the_intercept_is_a_phase_and_the_control_proves_it.py:121:39  abs(-i_c - 0.878) < 5e-3
+    [WIDE      ] receipts/L147_two_arm/B4_the_intercept_is_a_phase_and_the_control_proves_it.py:137:14  abs(g_c[i] - v) < 5e-3
+    [WIDE      ] receipts/L147_two_arm/B4_the_intercept_is_a_phase_and_the_control_proves_it.py:141:10  abs(s_c - 0.975) < 0.01
+    [DETACHED  ] receipts/L147_two_arm/B4_the_intercept_is_a_phase_and_the_control_proves_it.py:148:14  abs(r_c[i] - v) < 6
+    [DETACHED  ] receipts/L147_two_arm/B5_the_scan_cannot_test_the_asymptotic_phase.py:100:14  abs(r_c[i] - v) < 6
+    [WIDE      ] receipts/L147_two_arm/B6_the_acoustics_reproduce_and_the_dichotomy_is_false.py:117:61  abs(i1 - i0)/abs(i0 - il) < 0.06
+    [WIDE      ] receipts/L147_two_arm/B7_the_seam_phase_moves_the_asymptotic_intercept.py:119:47  abs(ph['1.5708'][1] - 0.066) < 0.02
+    [INVARIANT ] receipts/L147_two_arm/B8_the_zero_velocity_band_is_a_third_of_the_gap.py:124:14  sp.sin(v) != 0
+    [WIDE      ] receipts/L171_two_routes/J1_the_disagreement_no_longer_has_two_sides.py:117:10  abs(float(np.mean(sp)) - 0.78) < 0.03
+    [WIDE      ] receipts/L239_capability_assumed/K1_a_capability_assumed_from_one_failure.py:99:10  abs(p_cd - 0.878) < 5e-3
+    [WIDE      ] receipts/L239_capability_assumed/K1_a_capability_assumed_from_one_failure.py:104:10  abs(p_cu - p_lu) < 0.02
+    [WIDE      ] receipts/L239_capability_assumed/K1_a_capability_assumed_from_one_failure.py:110:24  abs(p_cu - p_lu) < 0.02
+    [CONSTANT  ] receipts/L814_po10_bic_pair/S1_the_bic_pair_is_delivered_and_CR_is_not_preferred_at_either_seam_phase.py:128:10  abs(THR - 21.5) < 0.2
+    [CONSTANT  ] receipts/L820_banked_spectra_sampling/S1_the_banked_spectra_are_nk600_not_nk260_and_pass_the_guard.py:102:41  abs(p260 - 2.5) < 0.1
+    [CONSTANT  ] receipts/L820_banked_spectra_sampling/S1_the_banked_spectra_are_nk600_not_nk260_and_pass_the_guard.py:102:67  abs(p600 - 5.7) < 0.1
+    [WIDE      ] receipts/L820_banked_spectra_sampling/S1_the_banked_spectra_are_nk600_not_nk260_and_pass_the_guard.py:120:10  abs(c260 - c600) / c600 < 0.01
+    [WIDE      ] receipts/L820_banked_spectra_sampling/S2_the_lmax2512_extension_recovers_c51s_dropped_bins_and_CR_stays_disfavoured.py:114:10  abs(cr_ov / nb_ov - cr_b / nb_l) / (cr_b / nb_l) < 0.02
+    [WIDE      ] receipts/P15_CR_cosmology/C55_the_shape_test_says_peak_misalignment.py:110:10  abs(lA_cr-lA)/lA < 0.005
+    [WIDE      ] receipts/P15_CR_cosmology/C57_the_cr_peaks_are_not_at_its_own_la.py:89:52  abs(sl/lА_l - 1) < 0.03
+    [WIDE      ] receipts/P15_CR_cosmology/C62_the_diffusion_signature_is_a_wash_and_the_isw_is_not_what_it_turned_on.py:229:6  _rD['lcdm'][0] == _rD_leafrec['lcdm'][0]
+    [WIDE      ] receipts/P15_CR_cosmology/C62_the_diffusion_signature_is_a_wash_and_the_isw_is_not_what_it_turned_on.py:379:10  abs(_dn - dn_true) < 0.05 * abs(dn_true)
+    [INVARIANT ] receipts/P15_CR_cosmology/P15_a_source_with_no_physics_reproduces_the_contrast_and_the_two_clocks_part_company_at_the_visibility.py:280:74  len(_XJ) == 0
+    [WIDE      ] receipts/P15_CR_cosmology/P15_the_acoustic_contrast_is_not_in_the_source_and_the_projection_makes_it_without_the_distance.py:472:6  abs(SRCR - 1) < 3 * FLOOR
+    [WIDE      ] receipts/P15_CR_cosmology/P15_the_acoustic_contrast_is_not_in_the_source_and_the_projection_makes_it_without_the_distance.py:472:36  abs(SRCI - 1) < 3 * FLOOR
+    [WIDE      ] receipts/P15_CR_cosmology/P15_the_acoustic_contrast_is_not_in_the_source_and_the_projection_makes_it_without_the_distance.py:481:6  abs(SRCI - SRCR) < 0.01
+    [WIDE      ] receipts/P15_CR_cosmology/P15_the_acoustic_contrast_is_not_in_the_source_and_the_projection_makes_it_without_the_distance.py:494:6  abs(RES['2P   with the k-measure P(k)']['reg'] - SRCI) < FLOOR
+    [WIDE      ] receipts/P15_CR_cosmology/P15_the_acoustic_contrast_is_not_in_the_source_and_the_projection_makes_it_without_the_distance.py:620:6  abs(KC['1 source at last scattering'] - 1) < 3 * FLOOR
+    [WIDE      ] receipts/P15_CR_cosmology/P15_the_acoustic_contrast_is_not_in_the_source_and_the_projection_makes_it_without_the_distance.py:621:10  abs(KC['2 source eta-integrated'] - 1) < 3 * FLOOR
+    [INVARIANT ] receipts/P15_CR_cosmology/P15_the_acoustic_contrast_is_not_in_the_source_and_the_projection_makes_it_without_the_distance.py:422:10  abs(self_ - 1) < 1e-9
+    [WIDE      ] receipts/P15_CR_cosmology/P15_the_acoustic_contrast_is_not_in_the_source_and_the_projection_makes_it_without_the_distance.py:422:36  abs(inj[1.04] - 1.04) < 0.01
+    [WIDE      ] receipts/P15_CR_cosmology/P15_the_acoustics_work_and_the_phase_is_the_whole_disagreement.py:204:7  abs((CTRL - _ia) - 0.615) < 0.05
+    [WIDE      ] receipts/P15_CR_cosmology/P15_the_combs_resolution_is_four_multipoles_and_the_skys_own_value_lies_outside_the_family.py:322:20  abs(_pf[0] - _p8[0]) < 0.01
+    [WIDE      ] receipts/P15_CR_cosmology/P15_the_combs_resolution_is_four_multipoles_and_the_skys_own_value_lies_outside_the_family.py:368:10  abs((228 - 220) / (R[1.0]['l1'] - R[0.0]['l1']) - 1.9) < 0.2
+    [INVARIANT ] receipts/P15_CR_cosmology/P15_the_combs_resolution_is_four_multipoles_and_the_skys_own_value_lies_outside_the_family.py:478:6  abs((fr_rel + (fr_inj - fr_rel) + (fr_real - fr_inj)) / fr_real - 1.0) < 1e-12
+    [INVARIANT ] receipts/P15_CR_cosmology/P15_the_contrast_excess_is_symmetric_about_the_envelope_and_the_troughs_are_where_the_sky_measures_it_best.py:276:6  np.sign(dR) == np.sign(dD)
+    [WIDE      ] receipts/P15_CR_cosmology/P15_the_cross_term_is_not_the_channel_and_every_projected_term_carries_the_excess.py:329:6  abs(RES['the two squares, NO cross']['reg'] - FULL) < 0.01
+    [WIDE      ] receipts/P15_CR_cosmology/P15_the_free_streaming_knob_is_common_to_both_arms_and_the_switch_sweep_finds_no_further_shadow.py:1038:6  abs(_C['env'] - _L['env']) < 2e-3
+    [WIDE      ] receipts/P15_CR_cosmology/P15_the_free_streaming_knob_is_common_to_both_arms_and_the_switch_sweep_finds_no_further_shadow.py:1038:44  abs(_C['con'] - _L['con']) < 2e-3
+    [WIDE      ] receipts/P15_CR_cosmology/P15_the_free_streaming_knob_is_common_to_both_arms_and_the_switch_sweep_finds_no_further_shadow.py:1039:30  abs(_L['con'] - 1.0) < 0.02
+    [WIDE      ] receipts/P15_CR_cosmology/P15_the_ladders_discreteness_does_not_set_the_spectrum_and_the_check_was_run_in_pieces.py:157:6  abs(h_c[0] - h_l[0]) < 5e-4
+    [WIDE      ] receipts/P15_CR_cosmology/P15_the_ladders_discreteness_does_not_set_the_spectrum_and_the_check_was_run_in_pieces.py:157:38  abs(h_c[1] - h_l[1]) < 5e-4
+    [WIDE      ] receipts/P15_CR_cosmology/P15_the_ladders_discreteness_does_not_set_the_spectrum_and_the_check_was_run_in_pieces.py:158:50  abs(c_c - c_l) < 0.01
+    [WIDE      ] receipts/P15_CR_cosmology/P15_the_model_difference_is_an_acoustic_contrast_difference_and_it_is_not_one_skys_luck.py:265:6  abs(b_w - cos_w * rat_w) < 1e-10
+    [WIDE      ] receipts/P15_CR_cosmology/P15_the_model_difference_is_an_acoustic_contrast_difference_and_it_is_not_one_skys_luck.py:271:6  abs((b_w - 1) - float(DEL @ W_L) / float(W_L @ W_L)) < 1e-12
+    [WIDE      ] receipts/P15_CR_cosmology/P15_the_model_difference_is_an_acoustic_contrast_difference_and_it_is_not_one_skys_luck.py:506:6  abs(_C22 - C2_C) < 1e-6
+    [INVARIANT ] receipts/P15_CR_cosmology/P15_the_model_difference_is_an_acoustic_contrast_difference_and_it_is_not_one_skys_luck.py:565:10  float(np.max(np.abs(_d1 - _b1[1]))) == 0.0
+    [INVARIANT ] receipts/P15_CR_cosmology/P15_the_model_difference_is_an_acoustic_contrast_difference_and_it_is_not_one_skys_luck.py:565:57  float(np.max(np.abs(_d2 - _b2[1]))) == 0.0
+    [WIDE      ] receipts/P15_CR_cosmology/P15_the_model_difference_is_an_acoustic_contrast_difference_and_it_is_not_one_skys_luck.py:713:24  abs(contrast_of(m2C, m2L) - contrast_of(mlC, mlL)) < 0.02
+    [WIDE      ] receipts/P15_CR_cosmology/P15_the_monopole_zero_point_is_not_the_channel_and_the_two_residuals_point_opposite_ways.py:190:20  abs((R_C / R_L - 1) - (W_C / W_L - 1)) < 0.01
+    [WIDE      ] receipts/P15_CR_cosmology/P15_the_monopole_zero_point_is_not_the_channel_and_the_two_residuals_point_opposite_ways.py:270:10  abs(RD['fracC'] - RD['fracL']) < 0.03
+    [WIDE      ] receipts/P15_CR_cosmology/P15_the_shared_fraction_does_not_mean_what_i_said_and_the_peak_trough_pattern_is_the_arms_alone.py:288:6  abs(np.linalg.norm(W_C) ** 2 - (np.linalg.norm(W_L) ** 2 + np.linalg.norm(DIFF) ** 2
+                                      + 2 * float(W_L @
+    [INVARIANT ] receipts/P15_CR_cosmology/P15_the_signature_collapses_at_the_adjudicated_ratio_and_the_endpoint_sets_its_sign.py:238:6  abs(MIX[('a_vis', 'a_vis')] - EP['visibility peak']['r']) < 1e-9
+    [INVARIANT ] receipts/P15_CR_cosmology/P15_the_signature_collapses_at_the_adjudicated_ratio_and_the_endpoint_sets_its_sign.py:241:6  abs(MIX[('a_rec', 'a_rec')] - EP['recombination']['r']) < 1e-9
+    [WIDE      ] receipts/P15_CR_cosmology/P15_the_signature_collapses_at_the_adjudicated_ratio_and_the_endpoint_sets_its_sign.py:346:10  abs(m / p - 1) < 0.03
+    [WIDE      ] receipts/P15_CR_cosmology/P15_the_signature_collapses_at_the_adjudicated_ratio_and_the_endpoint_sets_its_sign.py:348:10  abs(c / p ** 2 - 1) < 0.08
+    [WIDE      ] receipts/P15_CR_cosmology/P15_the_signature_collapses_at_the_adjudicated_ratio_and_the_endpoint_sets_its_sign.py:405:10  abs(c1 / c10 - 1) < 0.10
+    [WIDE      ] receipts/P15_CR_cosmology/P15_the_signature_collapses_at_the_adjudicated_ratio_and_the_endpoint_sets_its_sign.py:405:39  abs(dn / dn0 - 1) < 0.10
+    [INVARIANT ] receipts/P15_CR_cosmology/P15_the_source_decomposition_is_reachable_on_the_reporting_path_and_the_neutrinos_have_a_knob.py:220:6  float(np.max(np.abs(_s1[1] - _b1[1]))) == 0.0
+    [INVARIANT ] receipts/P15_CR_cosmology/P15_the_source_decomposition_is_reachable_on_the_reporting_path_and_the_neutrinos_have_a_knob.py:221:10  float(np.max(np.abs(_s2[1] - _b2[1]))) == 0.0
+    [INVARIANT ] receipts/P15_CR_cosmology/P15_the_source_decomposition_is_reachable_on_the_reporting_path_and_the_neutrinos_have_a_knob.py:245:10  _dl == 0.0
+    [INVARIANT ] receipts/P15_CR_cosmology/P15_the_source_decomposition_is_reachable_on_the_reporting_path_and_the_neutrinos_have_a_knob.py:245:25  _dc == 0.0
+    [INVARIANT ] receipts/P15_CR_cosmology/P15_the_source_decomposition_is_reachable_on_the_reporting_path_and_the_neutrinos_have_a_knob.py:323:10  np.sign(ROWS['hdp0'][2]) == np.sign(LOSREF['hdp0'][2])
+    [INVARIANT ] receipts/P15_CR_cosmology/P15_the_source_decomposition_is_reachable_on_the_reporting_path_and_the_neutrinos_have_a_knob.py:324:14  np.sign(ROWS['hsw0'][2]) == np.sign(LOSREF['hsw0'][2])
+    [WIDE      ] receipts/P15_CR_cosmology/P15_the_spacing_deficit_survives_the_one_fitted_parameter.py:191:7  abs(max(RS) / min(RS) - 1.31) < 0.05
+    [WIDE      ] receipts/P15_CR_cosmology/P15_the_spacing_is_right_and_the_acoustic_phase_is_wrong.py:224:7  abs(ASY_C - 0.975) < 0.03
+    [WIDE      ] receipts/P15_CR_cosmology/P15_the_spacing_is_right_and_the_acoustic_phase_is_wrong.py:225:7  abs(ASY_L - 1.002) < 0.03
+    [WIDE      ] receipts/P15_CR_cosmology/P15_the_spacing_is_right_and_the_acoustic_phase_is_wrong.py:229:7  abs(_dphase - 0.615) < 0.08
+    [INVARIANT ] receipts/P15_CR_cosmology/P15_the_windows_phase_spread_is_nearly_equal_because_the_visibility_widens_as_the_leaf_clock_slows.py:559:10  int(np.sum(np.abs(MV['nswap'][1:]) > SKYW[1:])) == 0
+    [WIDE      ] receipts/P15_CR_cosmology/P15_three_quarters_of_the_arms_residual_is_the_controls_and_what_is_left_is_position_not_amplitude.py:245:6  abs(f_alt - frac) < 0.08
+    [UNMEASURED] receipts/L823_cr_rs_is_the_onset_horizon/S1_the_stored_cr_rs_is_the_from_onset_acoustic_horizon_and_matches_the_arms_own_integral.py: NOT REACHED -- the tilt moved no comparison
+    [UNMEASURED] receipts/P15_CR_cosmology/C52_the_banked_spectra_fail_the_sampling_guard.py: NOT REACHED -- the tilt moved no comparison
+    [UNMEASURED] receipts/P15_CR_cosmology/P15_there_is_no_phase_residual_and_the_fourth_peak_is_not_the_damping_envelope.py: NOT REACHED -- the tilt moved no comparison
