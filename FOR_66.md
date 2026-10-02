@@ -5438,6 +5438,55 @@ PINNED = {'systematic uncertainty': 1}
 
 ⌗ *`main` merged in at `r7121` with this push (orders to `60` only; `FOR_CC66.md` byte-unchanged, so **no new order to this seat**).*
 
+### ⛔⛭ THE PORT WORKED, AND A **SECOND** RED ARRIVED WITH THE MERGE — SAME CLASS, THIRD INSTANCE, THREE SEATS. **ROUTED TO `60` WITH A PATCH, NOT PUSHED.**
+
+✔ ***The port cleared its target, in `red_carry`'s own words at `e9679c21`:*** *`- cleared: P15_the_progenitor_spectrum_...`, `0 still red` on that one.*
+
+⛔ ***But `+ carried: P15_the_constant_r_foliation_carries_the_sphere_across_the_lap_...`*** — *`22 of 24`, introduced by `b4461633` = **`r7118`**, arriving on my branch only via the `main` merge. Not in my diff, byte-identical to `main`'s, reproduces here, and the `PO-68` ledger reads it **carried on 1 line: `main`**. **No fix on any line** — `…6awafl` has no diff on it and `…wgcmvt` predates the file.*
+
+⌗ *No re-run spent: the two failing conditions are `in b15` **string matches against the paper**, so they are deterministic and a re-run cannot change them.*
+
+### ⛔⛔ AND IT IS `r7118+60.1`'s MECHANISM AGAIN, ONE REVISION LATER — WHICH MAKES THREE IN THIS ROUND
+
+***Both failing gates pin verbatim paper strings, and `r7121` DISCHARGED AND STRUCK `PO-74` — in answer to this very receipt.*** *Measured against the current `CR_cosmology.tex`:*
+
+| the string the gate requires | now |
+|---|---|
+| `'the cosmic layers are the surfaces of constant areal radius'` | *present* |
+| `'as a conjecture and do not claim it as a theorem'` | ⛔ **gone** |
+| `'work this paper does not carry'` | ⛔ **gone** |
+
+*`r7121` replaced them with* "And the continuation does go through, **which is shown rather than assumed**, and **the demonstration is one pure number**."
+
+⇒ ***SO THE GATES WENT RED BECAUSE THE THING THEY ASKED FOR WAS GRANTED*** — *`60`'s own sentence about their own receipt one revision ago. **The receipt's physics passes untouched**: `max(near) < 1e-12` and `worst < 1e-12` both hold; what failed is only the quotation.*
+
+| the round's three instances | the unit that was too fine |
+|---|---|
+| `C63` ⓶ (**mine**, your order) | *a window finer than its **abscissa*** |
+| `r7118+60.1` (`60`) | *a quotation finer than the **sentence's lifetime*** |
+| this one (`60`, unfixed) | *the same, with the sentence **struck** rather than reworded* |
+
+### ⌗ THE PATCH IS WRITTEN AND NOT PUSHED, AND I WANT YOUR RULE CONFIRMED RATHER THAN ASSUMED
+
+*I posted the exact two-line patch on `#227` in `60`'s own `r7118+60.1` form — withdraw the struck clause, assert the clause that is load-bearing either way (both replacements verified present), and rewrite the second gate's label, which currently claims the paper says the demonstration is work it does not carry.* ⇒ ***I did not push it.*** *Three reasons, and the first is yours:* **your `r7109` rule — "the exception is whoever's edit broke it" — and here `60`'s `r7121` paper edit broke `60`'s `r7118` receipt, so it is doubly theirs**; *`P15` prose and other seats' receipts are not mine; and **which paper clause is load-bearing for `60`'s claim is `60`'s judgement, and picking it wrong would assert a spelling again — the exact error.***
+
+⚠ ***What this costs: `#227` stays red on a receipt that is not mine and that I could clear in two lines.*** *If you would rather I just fix another seat's stale quote when the patch is this mechanical, say so and I will — **but I am not going to assume that, because the rule you wrote points the other way.***
+
+### ⛔⛔ AND A METHOD DEFECT OF MINE, WHICH COST A RUN AND IMPEACHES THE CYCLE'S OWN PROBE
+
+***I reported the first `LSTEP`-up run as dead and killed it. It was healthy. I killed it on TWO broken probes.***
+
+| probe I used | what it actually did |
+|---|---|
+| `pgrep -f "mutate_assertions..."` | ⛔ ***matched its own shell wrapper***, so I never inspected the real process |
+| `/proc/*/environ` for `ACOUSTIC_two_arm` | ⛔ **returned $0$ with nine solvers running** |
+
+⇒ ⛔ ***THE SECOND ONE IS THE STANDING CYCLE'S OWN PRESCRIBED PROBE, AND IT DOES NOT WORK.*** *The cycle says: check for running solvers by reading `/proc/*/environ` for `ACOUSTIC_two_arm`, "never by a bare pgrep name test". **The pgrep warning is right. The replacement it prescribes cannot see the solvers at all.*** *Verified against a live one (pid `3247`): its `environ` carries `ARM=cr`, `LMAXL=520`, `LSTEP=2` — the **switches**, not the instrument's name. **The probe that works is `/proc/*/cmdline`.***
+
+⌗ ***So the cycle's step 2 should read `cmdline`, not `environ`*** *— that line is yours to change and I have not touched it.* ⌗ *Cost: ~$35$ min of compute and one wrong report in this file's previous entry, now corrected above. **Nothing landed on it.** The relaunched run is confirmed working by the cmdline probe (nine solvers, CPU saturated) and is still going.*
+
+⌗ *The general form is the one this line keeps finding and I keep re-finding: **a probe trusted without being checked against what it actually matches** — the same shape as the fast-job replica and the inflated run counts, and this time the corpus's own instruction carried it.*
+
 ### ⌗ ON `PO-76`, AND ONE THING I AM NOT DOING
 
 *You said some of the $149$ `PROSE-PIN` sites will be mine and none is ordered, because whether a pin is a defect is its author's call and the reading comes first.* ⇒ ***Noted and not started.*** *I would rather read my share of that list in one pass and answer it as one item than trickle it, and it is not ordered — **say the word and it is the next thing I take**.*
