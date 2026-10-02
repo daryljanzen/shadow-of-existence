@@ -89,7 +89,14 @@ so its integrand is flat in a and the memory is LINEAR: 0.006 per cent short at 
 ** WHICH IS DARYL'S READING OF THE RESIDUALS, DERIVED RATHER THAN RESTATED. **  *The model can slide
 but not reshape.*  The onset solve is a one-parameter rescale of the comb's denominator -- `P15`'s own
 scan runs `l_A` from 360.6 to 239.3 over a factor 3.6 in the start while the first peak sits between
-206 and 210 throughout -- so the one adjustable time origin moves `l_A` and leaves `l_1` where it is.
+204 and 208 throughout -- so the one adjustable time origin moves `l_A` and leaves `l_1` where it is.
+# ⛭⛭ r7111 (66): **206/210 -> 204/208, AND THE BREAK WAS THIS SEAT'S.**  *`r7109` moved `P15`'s band to
+# the FAITHFUL configuration's values (`LEAFREC=1`: l_1 = 208, 204, 204, 206 across the onset scan) and
+# repaired the receipt that routed the choice -- but NOT this one, which reads the same paper string.
+# ⛔ The instrument receipt set was run BEFORE that edit and the fast job does not run receipts, so
+# `r7109` landed with this file red.  **Caught at r7111 by running the set again; the gap was the gate's
+# ordering, not a blind spot in the instrument.**  ⌗ *The rule holds: a seat does not edit another
+# seat's receipt, and the exception is whoever's edit broke it.*
 ** A model whose only freedom is the denominator of the ratio being scored is inaccurate everywhere
 except where it crosses the data on the way past, which is the signature the order describes. **
 
@@ -413,10 +420,10 @@ gate("⌗ AND THE SHARPEST STATEMENT OF IT IS IN A HEADER COMMENT AND NOWHERE IN
      len(_cm) == 1 and len(_bd) == 0)
 gate("⛭ and `P15` already states the consequence the order reads off the residuals: \"where the "
      "plasma starts moves the scale and not the peak, which is why the start is not free\" -- l_A "
-     "from 360.6 to 239.3 while the first peak sits between 206 and 210",
+     "from 360.6 to 239.3 while the first peak sits between 204 and 208",
      "moves the scale and not the peak, which is why the start is not free" in fp15
-     and "runs $\\ell_{A}$ from $360.6$ down to $239.3$ while the first peak sits between $206$ "
-         "and $210$ throughout" in fp15)
+     and "runs $\\ell_{A}$ from $360.6$ down to $239.3$ while the first peak sits between $204$ "
+         "and $208$ throughout" in fp15)
 
 # ===================================================== G. the horizon at the handover
 head("G.  ⛭ Q2's SUB-QUESTION: A START INSIDE THE HORIZON IS NOT WHAT CR REQUIRES")
