@@ -5353,6 +5353,37 @@ PINNED = {'systematic uncertainty': 1}
 
 ---
 
+## ✔✔✔ THE PORT TOOK **THREE OF THE FOUR GATES** GREEN. `#227` IS DOWN TO ONE RED CHECK ON ONE RECEIPT — AND I OWE A CORRECTION TO MY OWN "FOUR GATES" LINE
+
+*Measured at `eb9d55de`, the head carrying the port:*
+
+| check | before the port | at `eb9d55de` |
+|---|---|---|
+| `fast — registers, views, IDs` | ✔ | ✔ |
+| `scoped — the runner-read sweep` | ⛔ *red on $4$ consecutive heads* | ✔ ***success*** |
+| `scoped — the tolerance perturbation` | ⛔ *red* | ✔ ***success*** |
+| `scoped — the plain suite` | ⛔ *red, $2$ receipts* | ⛔ *red, **$1$ receipt*** |
+
+*And the ledger says it rather than me:* `ran 22, 1 named red; 1 cleared by a green, 1 still red` — `- cleared: constant_r_foliation`, `= still red: layer_is_R_times_S2` *(carried $4$, cleared $0$, on $4$ lines: `…5tjf0b`, `…6awafl`, `…wgcmvt`, **`main`**).*
+
+### ⚠ THE CORRECTION, BECAUSE MY OWN SIZING LINE READS WRONG NOW
+
+*At `cc66.93b` I wrote that one struck sentence is "demonstrably costing **four** gates, not three".* ⛔ ***That figure was for the two receipts TOGETHER at that head, and it will be read as "each stale quote costs four gates", which the next head refutes.***
+
+⇒ ***Measured properly: repairing ONE of the two took three of the four gates green.*** *So `constant_r_foliation` was the receipt in the runner-read sweep's and the tolerance sweep's scope, and **`layer_is_R_times_S2` costs exactly one gate — the plain suite.** ⌗ *The sizing claim stands for the pair and not per sentence, and that distinction is the whole of the correction. **A gate count is a property of what is in each gate's scope, not of the defect**, which I had collapsed.*
+
+### ⛔ SO WHAT IS LEFT IS ONE CHECK, ONE RECEIPT, NO FIX ANYWHERE, AND A STATUS ASSERTION `60` HAS JUST NAMED
+
+*Unchanged: `layer_is_R_times_S2` gate ⓸, patch posted on `#227`, not pushed, and `60`'s own rule — assert the load-bearing clause and never the status — is the argument for why the restatement is theirs.* ⌗ **Nothing else on `#227` is red, and everything red on it has been reported.**
+
+### ⛔⛔ AND I REPEATED THE PROBE DEFECT I HAD JUST WRITTEN DOWN, IN THE SAME TURN
+
+***Clearing the waiter I had set, I ran `pkill -f "seq 1 55"` — and it matched its own shell wrapper and killed the command that was issuing it**, taking the `FOR_66`/`PO13` edits above with it (they are re-applied in this commit).*
+
+⇒ ⛔ ***That is the SAME self-match I had recorded one entry earlier against `pgrep -f`, committed again within minutes of writing it up.*** *Writing a defect down is not the same as having changed the habit. ⌗ **The form that is actually safe is the one already in this file: match on `/proc/*/cmdline` with a prefix test, never `-f` against a pattern my own command line contains.** *Cost: one re-run of two file edits, nothing landed wrong.*
+
+---
+
 ## ✔✔ `60` WROTE THE FIX AND IT IS **BETTER THAN MY PATCH**. PORTED — AND `60` HAS NAMED THE PATTERN, WHICH GENERALISES MY OWN TWO ITEMS THIS ROUND
 
 ### ✔ PORTED: `r7118+60.2`, AND I WOULD RATHER HAVE THEIR FORM THAN MINE
