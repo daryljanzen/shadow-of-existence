@@ -38,7 +38,16 @@ it is MADE and lets the receipt carry the displacement to its checks:
                     count of pattern matches (`findall`, `finditer`, `.count(`) in a file that reads
                     `corpus/*.tex`.  An ABSENCE claim (`== 0`, `< 1`, `<= 0`) is exempt: it does not go
                     stale when another lane rewords.
-  --seed            the planted both-ways set for all three operators; exit 0 iff exactly the planted
+  --quote           QUOTE-PIN, static (r7125+70.1).  An asserting test of a string literal's PRESENCE (`in`,
+                    `re.search/match`, `find() >= 0`, `index`) in text traced to a FILE READ the receipt does
+                    not own -- not its own `__file__`, not json/npz/csv data.  Reported per site with
+                    target PAPER (`*.tex`) or SOURCE, tier SENTENCE (>= 3 words) or TOKEN, and flags ALT
+                    (one arm of a disjunction of states), XOR (an exclusive one, the form that broke at
+                    r7125) and OPEN (an openness marker in the literal).  Absence claims are exempt.  This
+                    is `L-249`'s class (r3105), which was left ungated because a pin is not mechanically
+                    separable from a check; the ratchet answers that the way PROSE-PIN does, by counting
+                    and adjudicating rather than separating.
+  --seed            the planted both-ways set for all four operators; exit 0 iff exactly the planted
                     defects are flagged.
 
 ** WHAT IT CANNOT SEE, STATED BEFORE IT IS RUN. **  TILT reaches data read in-process through the four
@@ -49,6 +58,7 @@ structure it does not follow.  And a check can read its data and still be wrong 
 """
 import argparse
 import ast
+import functools
 import glob
 import importlib.util
 import json
@@ -554,6 +564,232 @@ def prose(root, files=None):
     return out
 
 
+# ===================================================================================== QUOTE-PIN (r7125+70.1)
+# ⛭ the class `r7125` named off this seat's own routing line: an asserting test of a string literal's PRESENCE in
+#   text the receipt READS from a file it does not own.  Seven instances were repaired by hand (00b81f9c,
+#   555cd9f8, 0ecde732, 78f20759, 323f2522), each a gate that failed on another seat's rewording -- and twice on
+#   the SUCCESS of the work it watched, when a sentence saying something was open was retired.
+_READ = re.compile(r'\b(io\.)?open\s*\(|\.read_text\s*\(|\.read\s*\(\s*\)|\bbody_of\s*\(|\bread_\w*\s*\(|'
+                   r'\bslurp\w*\s*\(|\bload_tex\w*\s*\(')
+_OPEN_WORDS = re.compile(r'(?i)\b(conjectur\w*|open|owed|does not carry|not yet|remains?|unresolved|pending|'
+                         r'not claim\w*|not shown|outstanding)\b')
+_SELF = re.compile(r'open\(\s*(os\.path\.(abspath|realpath)\()?\s*__file__\s*\)?\s*[,)]')
+_STRUCT = re.compile(r'\b(json|yaml|pickle|tomllib|np|numpy)\.(load|loads|safe_load)\s*\(|\bcsv\.(reader|DictReader)\b')
+
+
+@functools.lru_cache(maxsize=4)
+def _lines(src):
+    return src.splitlines(keepends=True)
+
+
+def _seg(src, n):
+    """ast.get_source_segment without its per-call re-split of the whole file, which was 93 % of a 58 s run"""
+    if getattr(n, 'end_lineno', None) is None:
+        return ''
+    L = _lines(src)
+    a, b = n.lineno - 1, n.end_lineno - 1
+    if a == b:
+        return L[a].encode()[n.col_offset:n.end_col_offset].decode(errors='replace')
+    return ''.join([L[a].encode()[n.col_offset:].decode(errors='replace')] + L[a + 1:b]
+                   + [L[b].encode()[:n.end_col_offset].decode(errors='replace')])
+
+
+def _strlit(n, asg, depth=2):
+    """a string literal at n, through a module constant (`_AGR = "..."`) and simple `+` -- else None"""
+    if isinstance(n, ast.Constant) and isinstance(n.value, str):
+        return n.value
+    if isinstance(n, ast.JoinedStr):
+        parts = [v.value if isinstance(v, ast.Constant) else '{}' for v in n.values]
+        s = ''.join(parts)
+        return s if s.replace('{}', '').strip() else None
+    if isinstance(n, ast.BinOp) and isinstance(n.op, ast.Add):
+        a, b = _strlit(n.left, asg, depth), _strlit(n.right, asg, depth)
+        return a + b if a is not None and b is not None else None
+    if isinstance(n, ast.Name) and depth > 0:
+        vals = asg.get(n.id, [])
+        if len(vals) == 1:
+            return _strlit(vals[0], asg, depth - 1)
+    return None
+
+
+def _reads(expr, asg, fns, src, depth=3, seen=None):
+    """the text of every expression the container's trace visits, if the trace reaches a FILE READ -- else None.
+    Follows names -> assignments, arguments, called helpers and `.lower()`-class methods, three levels (PROSE's)"""
+    seen = seen if seen is not None else set()
+    seg = _seg(src, expr) or ''
+    acc, hit = [seg], bool(_READ.search(seg))
+    for n in ast.walk(expr):
+        if isinstance(n, ast.Call) and isinstance(n.func, ast.Name) and n.func.id in fns and n.func.id not in seen:
+            seen.add(n.func.id)
+            body = _seg(src, fns[n.func.id]) or ''
+            if _READ.search(body):
+                hit = True
+                acc.append(body)
+        if depth and isinstance(n, ast.Name) and n.id not in seen:
+            seen.add(n.id)
+            for v in asg.get(n.id, []):
+                r = _reads(v, asg, fns, src, depth - 1, seen)
+                if r is not None:
+                    hit = True
+                    acc.append(r)
+                else:
+                    acc.append(_seg(src, v) or '')
+    return '\n'.join(acc) if hit else None
+
+
+_VERDICT = re.compile(r"PASS|FAIL|\bassert\b|\braise\b|CHECKS|RESULTS|\.append\(\(")
+
+
+def _assert_roots(tree, fns, src):
+    # ⛭ a check helper is recognised by NAME (sweep_tolerances' `check`-family) OR by BODY: the corpus's `gate(name,
+    #   ok)` records a verdict and matches no name rule -- the first recall run returned 0 of 5 for exactly that
+    checky = {k for k, f in fns.items() if _VERDICT.search(_seg(src, f) or '')}
+    roots = []
+    for n in ast.walk(tree):
+        if isinstance(n, ast.Assert):
+            roots.append(n.test)
+        elif isinstance(n, ast.Call) and (ST._CHECKY.search(ST.fname(n) or '') or
+                                          (isinstance(n.func, ast.Name) and n.func.id in checky)):
+            # a check's LABEL is not its verdict: an f-string label interpolating `{_OWED}` is a report, and
+            #   reading it as an assertion un-flags the ALT form the verdict argument actually has (r7125+70.1)
+            roots.extend(a for a in list(n.args) + [k.value for k in n.keywords]
+                         if not isinstance(a, (ast.JoinedStr, ast.Constant)))
+        elif isinstance(n, ast.If):
+            body = ast.dump(ast.Module(body=n.body, type_ignores=[]))
+            if re.search(r"(?i)'[^']*(fail|bad)[^']*'", body) or any(isinstance(b, ast.Raise) for b in n.body):
+                roots.append(n.test)
+    return roots
+
+
+def _quote_site(n, neg, asg, fns, src):
+    """(literal, container, present) if n is a literal-presence test against a traced container, else None"""
+    def _re(call):
+        if (isinstance(call, ast.Call) and isinstance(call.func, ast.Attribute)
+                and call.func.attr in ('search', 'match', 'fullmatch') and len(call.args) >= 2
+                and isinstance(call.func.value, ast.Name) and call.func.value.id == 're'):
+            return _strlit(call.args[0], asg), call.args[1]
+        return None, None
+
+    def _find(call):
+        if (isinstance(call, ast.Call) and isinstance(call.func, ast.Attribute)
+                and call.func.attr in ('find', 'index', 'rfind', 'rindex') and call.args):
+            return _strlit(call.args[0], asg), call.func.value
+        return None, None
+
+    if isinstance(n, ast.Compare) and len(n.ops) == 1:
+        op, rhs = n.ops[0], n.comparators[0]
+        if isinstance(op, (ast.In, ast.NotIn)):
+            lit = _strlit(n.left, asg)
+            if lit is not None:
+                return lit, rhs, isinstance(op, ast.In) != neg
+        lit, cont = _re(n.left)
+        if lit is not None and isinstance(rhs, ast.Constant) and rhs.value is None:
+            return lit, cont, isinstance(op, ast.IsNot) != neg
+        lit, cont = _find(n.left)
+        v = ST.num(rhs)
+        if lit is not None and v is not None:
+            name = type(op).__name__
+            # find() is -1 when absent: `>= 0`, `> -1`, `!= -1` (or a position bound) need the literal present
+            present = (name in ('GtE', 'Gt') and v >= -1) or (name == 'NotEq' and v == -1)
+            absent = (name == 'Eq' and v == -1) or (name == 'Lt' and v <= 0) or (name == 'LtE' and v < 0)
+            if present or absent:
+                return lit, cont, present != neg
+    if isinstance(n, ast.Call):
+        lit, cont = _re(n)
+        if lit is not None:
+            return lit, cont, not neg
+        lit, cont = _find(n)
+        if lit is not None and n.func.attr in ('index', 'rindex'):
+            return lit, cont, True
+    return None
+
+
+_ALT_RANK = {False: 0, 'XOR': 1, True: 2}
+
+
+def quote(root, files=None):
+    out = []
+    files = files or sorted(glob.glob(os.path.join(root, 'receipts', '**', '*.py'), recursive=True))
+    for f in files:
+        try:
+            src = open(f, encoding='utf-8', errors='replace').read()
+            tree = ast.parse(src)
+        except SyntaxError:
+            continue
+        if not _READ.search(src):
+            continue
+        asg, fns = _defs(tree)
+        best = {}       # id(node) -> (node, literal, container, alt)
+
+        def visit(n, neg, alt, hops, seen):
+            if isinstance(n, (ast.Lambda, ast.FunctionDef)):
+                return
+            s = _quote_site(n, neg, asg, fns, src)
+            if s is not None:
+                lit, cont, present = s
+                if present:
+                    # reached by several routes, the strictest reading wins: bare < XOR < ALT
+                    prev = best.get(id(n))
+                    if prev is None or _ALT_RANK[alt] < _ALT_RANK[prev[3]]:
+                        best[id(n)] = (n, lit, cont, alt)
+            if isinstance(n, ast.UnaryOp) and isinstance(n.op, ast.Not):
+                visit(n.operand, not neg, alt, hops, seen)
+                return
+            if isinstance(n, ast.BoolOp):
+                for v in n.values:
+                    visit(v, neg, alt or (isinstance(n.op, ast.Or) and len(n.values) > 1), hops, seen)
+                return
+            if (isinstance(n, ast.Compare) and len(n.ops) == 1 and isinstance(n.ops[0], (ast.Eq, ast.NotEq))
+                    and s is None and ST.num(n.comparators[0]) is None and ST.num(n.left) is None):
+                # `(A and B) != C`: a test of two STATES, and EXCLUSIVE -- the form that went red at r7125 when the
+                #   pass produced a third state with both true, so it is flagged XOR beside ALT and not let pass as it
+                for v in (n.left, n.comparators[0]):
+                    visit(v, neg, 'XOR', hops, seen)
+                return
+            if isinstance(n, ast.Name) and hops and n.id not in seen:
+                for v in asg.get(n.id, []):
+                    visit(v, neg, alt, hops - 1, seen | {n.id})
+                return
+            for c in ast.iter_child_nodes(n):
+                visit(c, neg, alt, hops, seen)
+
+        for r in _assert_roots(tree, fns, src):
+            visit(r, False, False, 2, frozenset())
+        for n, lit, cont, alt in best.values():
+            trace = _reads(cont, asg, fns, src)
+            if trace is None:
+                continue
+            # not text another seat owns: the receipt's OWN source (`open(__file__)`, a self-pin, found in the
+            #   r7125+70.1 precision sample), or structured data whose `in` is key membership, not a quotation
+            if _SELF.search(trace) or _STRUCT.search(trace):
+                continue
+            target = 'PAPER' if re.search(r'\.tex\b', trace) else 'SOURCE'
+            # SENTENCE: three or more whitespace-separated words -- wording another seat owns.  TOKEN: a label,
+            #   a receipt name, a macro, a figure -- a cross-reference rather than prose
+            tier = 'SENTENCE' if len(lit.split()) >= 3 else 'TOKEN'
+            flags = ','.join(x for x, on in (('ALT', alt), ('XOR', alt == 'XOR'),
+                                             ('OPEN', bool(_OPEN_WORDS.search(lit)))) if on)
+            out.append(dict(receipt=os.path.relpath(f, root), site=f'{n.lineno}:{n.col_offset}', kind='QUOTE-PIN',
+                            target=target, tier=tier, flags=flags, lit=' '.join(lit.split())))
+    # `re.search(...) is not None` reaches the same site as its Compare and as its Call: one site, ALT only if
+    #   every route to it is ALT
+    uniq = {}
+    for r in out:
+        k = (r['receipt'], r['site'], r['lit'])
+        if k in uniq and 'ALT' not in r['flags']:
+            uniq[k] = r
+        uniq.setdefault(k, r)
+    out = sorted(uniq.values(), key=lambda r: (r['receipt'], tuple(int(x) for x in r['site'].split(':'))))
+    return out
+
+
+def report_quote(rows):
+    print(f'\n  QUOTE-PIN: {len(rows)} site(s) in {len({r["receipt"] for r in rows})} receipt(s)')
+    for r in rows:
+        print(f'    [QUOTE-PIN][{r["target"]}][{r["tier"]}][{r["flags"]}] {r["receipt"]}:{r["site"]}  '
+              f'{json.dumps(r["lit"], ensure_ascii=False)}')
+
+
 # ===================================================================================== seeds
 _SEED_TILT = r'''
 import numpy as np
@@ -612,6 +848,33 @@ total = 3 + 4
 assert total == 7                                     # not a count of prose: must NOT flag
 '''
 
+_SEED_QUOTE = r'''
+import os, re
+P15 = os.path.join("corpus", "CR_cosmology.tex")
+def body_of(path):
+    return open(path, encoding="utf-8").read()
+b15 = body_of(P15)
+CHECKS = []
+def gate(name, ok):
+    CHECKS.append((name, ok))
+    print("PASS" if ok else "FAIL", name)
+gate("label", "as a conjecture and do not claim it" in b15)          # PLANTED pin: a paper sentence
+_STATE = "the demonstration is owed here"
+gate(f"label {_STATE in b15}", _STATE in b15)                        # PLANTED pin: through a named literal
+assert "carried across unaltered" in b15.lower()                     # PLANTED pin: through .lower()
+assert b15.find("one boundary-condition supplier") >= 0              # PLANTED pin: find() >= 0
+_A = "stated as open" in b15                                         # PLANTED pin, ALT: one of two states
+_B = "eq:shape-invariant" in b15                                     # PLANTED pin, ALT: the other, still pinned
+gate("either state", _A or _B)                                       # (the site is the test, not the call)
+assert "withdrawn sentence about the seam" not in b15                # absence: must NOT flag
+D = {"a key in a dict": 1}
+assert "a key in a dict" in D                                        # not a file read: must NOT flag
+out = "computed here " + str(3)
+assert "computed here 3" in out                                      # the receipt's own string: must NOT flag
+SRC = open(os.path.abspath(__file__)).read()
+assert "planted pin" in SRC.lower()                                  # its own source, a self-pin: must NOT flag
+'''
+
 
 def seed():
     tmp = tempfile.mkdtemp(prefix='mut_seed_')
@@ -649,6 +912,15 @@ def seed():
         print(f'  REGRID  flagged SUBQUANTUM at lines {got}; planted {want}   {"OK" if got == want else "MISS"}'
               + (f'   unreached: {un}' if un else ''))
         ok &= got == want
+        open(os.path.join(d, 'Q1_quote.py'), 'w').write(_SEED_QUOTE)
+        rows = quote(d, [os.path.join(d, 'Q1_quote.py')])
+        got = sorted(int(r['site'].split(':')[0]) for r in rows)
+        want = sorted(i + 1 for i, l in enumerate(_SEED_QUOTE.split('\n')) if 'PLANTED pin' in l)
+        alt = sorted(int(r['site'].split(':')[0]) for r in rows if 'ALT' in r['flags'])
+        want_alt = [i + 1 for i, l in enumerate(_SEED_QUOTE.split('\n')) if 'PLANTED pin, ALT' in l]
+        print(f'  QUOTE   flagged QUOTE-PIN at lines {got}; planted {want}; ALT at {alt}   '
+              f'{"OK" if got == want and alt == want_alt else "MISS"}')
+        ok &= got == want and alt == want_alt
         rows = prose(tmp, [os.path.join(d, 'P1_prose.py')])
         got, want = lines_of(rows, 'PROSE-PIN'), planted(_SEED_PROSE, 'pin')
         print(f'  PROSE   flagged PROSE-PIN at lines {got}; planted {want}   {"OK" if got == want else "MISS"}')
@@ -681,7 +953,8 @@ def main():
     ap.add_argument('--tilt', nargs=2, metavar=('LIST', 'OUT'))
     ap.add_argument('--regrid', nargs=2, metavar=('LIST', 'OUT'))
     ap.add_argument('--prose', action='store_true')
-    ap.add_argument('--files', nargs='*', help='with --prose: only these receipt files')
+    ap.add_argument('--quote', action='store_true')
+    ap.add_argument('--files', nargs='*', help='with --prose / --quote: only these receipt files')
     ap.add_argument('--regrid-dir', choices=('down', 'up'), default='down',
                     help='move LSTEP down by one (default) or up by one')
     ap.add_argument('--jobs', type=int, default=4)
@@ -696,6 +969,10 @@ def main():
     if a.prose:
         rows = prose(a.root, [os.path.abspath(f) for f in a.files] if a.files else None)
         report(rows, [], 'PROSE-PIN')
+        rc |= bool(rows)
+    if a.quote:
+        rows = quote(a.root, [os.path.abspath(f) for f in a.files] if a.files else None)
+        report_quote(rows)
         rc |= bool(rows)
     for mode, arg in (('tilt', a.tilt), ('regrid', a.regrid)):
         if arg:
