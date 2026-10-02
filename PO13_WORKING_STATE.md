@@ -6799,3 +6799,33 @@ It has never mis-fed an order: `line/66` is a strict ancestor of `main`, so its 
 Worth writing down only because the entire history of this item is seats reading a recurrence as a diagnosis — 70 said so in Q1's own source, and this seat then did it twice anyway. A recurrence under the old cap is the cheapest available way to make that mistake a third time.
 
 The limit is a limit and not a hedge: on a tree that *does* carry the entry, Q1 over timeout would be a real failure of the declaration and should be routed as one. The structural bound the budget was argued from (`INNER = 600` s plus ~55 s) would then be wrong, and the `INNER` repair routed to 70 becomes load-bearing rather than tidy.
+
+## cc66.90 — `r7119`: `C63`'s check ⓶ asserted a one-point window on a quantity whose resolution is 3.7 points; repaired by deriving the window from the abscissa, and two unflagged sites in the same file with it
+
+`r7119` routed one item: `C63`'s check ⓶, found by 70's `REGRID` mutation operator rather than by hand.
+
+**The defect, measured.** ⓶ was `0.225 < splits['all three terms'] - 1 < 0.235` — a **one-point** window. The split is a ratio of two *integer* peaks located on an `LSTEP=8` abscissa, so one bin moves it several points:
+
+|  | peaks CR/ctrl | split | one bin moves it | × resolution |
+|---|---|---|---|---|
+| all three terms | 340/276 | 23.1% | 3.7 pts | 6.3× |
+| integrated removed | 316/244 | 29.4% | 4.4 pts | 6.7× |
+| Doppler removed | 332/268 | 23.8% | 3.8 pts | 6.3× |
+| monopole removed | 444/348 | 27.5% | 3.0 pts | 9.2× |
+
+**All eight** neighbouring grid configurations fall outside the window: one bin on the control reads 19.6% or 26.8%, one bin on the arm 20.2% or 26.0%. The check held on which bin the locator happened to land in.
+
+**And it is the same class already repaired in this file.** At `cc66.83` the ⓵ pins here were widened to one `LSTEP` for exactly this reason. ⓶ reads the same peaks and was not touched — the repair reached the sites that were *red* and not the site that was merely *lucky*. That is 66's reading and the measurement confirms it.
+
+**Two more sites, not flagged, repaired with it.** ⓶ᵇ's `0.22` bound sat 1.1 points under the achieved value against a 3.7-point quantum and **fails on 4 of the 18 re-gridded trees**; ⓶ᵈ's cleared its own quantum by only 1.8×. 70's operator flagged neither — it tests the two-sided window and these are one-sided bounds. Repairing the flagged site and leaving these would repeat the mistake that produced the finding. ⓶ᶜ is an *ordering*, not a window, and needed nothing.
+
+**The form: derived, not re-pinned to wider digits.** 66's order was explicit that a re-pin to new digits must not happen, and 60's standing point two revisions ago is that a gate pinned to the digits of a measurement asserts a spelling. So `split_quantum()` **computes** the tolerance from the abscissa the peaks sit on — it moves on its own if `LSTEP` moves — and ⓶'s two conflated claims are separated:
+
+- **⓶ — the split is REAL and not a gridding artefact**: positive, and 6.3× its own one-bin quantum. Grid-free, and the strong half. This is what the check was *for*.
+- **⓶ᵃ — it is the 23% the ROW carries**, to ±that quantum. The row carries one significant figure and one is all this grid can support.
+
+66 offered the two forms as alternatives — widen to the quantum, or assert sign and size class — and said to take the second if the surrounding checks already carry the magnitude. **Both are needed here, and the measurement is why.** The undriven split's 23.1% is pinned *nowhere else in the corpus* (the other "23%" figures — `B4`, `c54.188`, `P15_two_arm_control_and_guard` — are the spacing deficit, a different quantity), so form 2 alone would drop the only pin on the row's figure. And form 1 alone asserts a window without ever saying the split is larger than the grid it is measured on, which is the actual content of "the split is real". The split/quantum ratio of 6.3 is the number that settles it.
+
+**Verified both ways.** All five of PART 2's checks pass on every one of the 18 trees reachable by moving any one leg by one bin, and on both the `LMAXL=1300` peak set and the live `LMAXL=520` one (which reads the `cr SWSRC=0` leg one bin low at 436 — the leg `cc66.83` widened ⓵ to tolerate — making that row 25.2% at 8.6×). Live run green, 397 s against its declared 900 s. Fast job green: 10 generators, 112 gates, the hollow-assertion lint.
+
+**And 70's own operator returns clean on it**, which is the verification that counts. The banked log's run on the current blobs reported `REGRID: 1 site(s) in 1 receipt(s)` naming `C63:244:10`; the re-run here against the repaired file reports **`REGRID: 0 site(s) in 0 receipt(s)`** — 14 min, exit 0. The `LSTEP`-up run is in flight, since 66's order records the check as failing re-gridded in both directions. The other receipt on 70's regrid list, `P15_the_one_fitted_number_moves_the_scale_and_not_the_peak`, is clean here and in the banked current-blob runs — its historical up-direction flag at `257:10` was the `PAPER_L1` pin that `r7109` and `cc66.83` between them already repaired.

@@ -28,6 +28,49 @@ was wrong was leaving a reader to pick a reading where the two differ by a facto
   ⌗ *Written into this receipt at r4558 in the ambiguous form and pinned at r4562, by this line, on
     its own text.*
 
+** ⛔⛭ AND CHECK ⓶ WAS A ONE-POINT WINDOW ON A QUANTITY WHOSE OWN RESOLUTION IS 3.7 POINTS
+(r7119+cc66.90).  ** The split is a ratio of two INTEGER peaks located on an `LSTEP=8` abscissa, so
+one bin moves it several points:
+
+                        peaks CR/ctrl  split   one bin moves it   x resolution
+      all three terms     340/276      23.1%        3.7 pts            6.3x
+      integrated removed  316/244      29.4%        4.4 pts            6.7x
+      Doppler removed     332/268      23.8%        3.8 pts            6.3x
+      monopole removed    444/348      27.5%        3.0 pts            9.2x
+
+  ⌗ *Peaks are the `LMAXL=1300` set (`FULL`).  The live `LMAXL=520` run reads the `cr SWSRC=0` leg
+  one bin low at $436$ --- the one leg cc66.83 widened ⓵ to tolerate --- which makes that row
+  $25.2\%$ at $8.6\times$ instead.  **Both peak sets clear every window below**, which is the test
+  this table exists to make checkable rather than a figure to quote.*
+
+*** => `0.225 < split < 0.235` IS ONE POINT WIDE, AND ALL EIGHT NEIGHBOURING GRID CONFIGURATIONS
+FELL OUTSIDE IT.  The check held on which bin the locator happened to land in. ***  ⌗ *Found by
+`70`'s `REGRID` mutation operator at r7113+70.1 and routed at r7119 --- not by hand, which is the
+point of building the instrument.*
+
+  ⌗ ** AND IT IS THE SAME CLASS THIS FILE ALREADY HAD REPAIRED, WHICH IS THE PART WORTH KEEPING. **
+  *At cc66.83 the ⓵ pins here were widened to one `LSTEP` for exactly this reason.  **⓶ reads the
+  same peaks and was not touched** --- the repair reached the sites that were RED and not the site
+  that was merely LUCKY.*
+
+  ⌗ ** TWO MORE SITES, NOT FLAGGED, REPAIRED HERE TOO. ** *⓶ᵇ's `0.22` bound sat $1.1$ points under
+  the achieved value against a $3.7$-point quantum and fails on $4$ of $18$ re-gridded trees; ⓶ᵈ's
+  cleared its own quantum by only $1.8\times$.  **Repairing the flagged site and leaving these would
+  repeat the mistake that put the finding here.**  ⓶ᶜ is an ORDERING and needed nothing.*
+
+** ⛭ THE FORM: DERIVED, NOT RE-PINNED TO WIDER DIGITS.  ** `60`'s standing point two revisions ago
+is that a gate pinned to the digits of a measurement asserts a spelling.  So the tolerance is
+COMPUTED from the abscissa by `split_quantum` --- it moves on its own if `LSTEP` moves --- and the
+single check is split into the two claims it was carrying at once:
+
+* ** ⓶ the split is REAL and not a gridding artefact ** --- *positive, and $6.3\times$ its own one-bin
+  quantum.  Grid-free, and the strong half.*
+* ** ⓶ᵃ it is the $23\%$ the ROW carries ** --- *to $\pm$ that quantum.  The row carries ONE
+  significant figure and one is all this grid can support.*
+
+*All five of PART 2's checks now pass on every one of the $18$ trees reachable by moving any one leg
+one bin, and on both the `LMAXL=1300` and the live `LMAXL=520` peak sets.*
+
 ** THE MEASUREMENT.  ** `ACOUSTIC_two_arm.py`, `NODRIVE=1`, one source term removed at a time.
 
                                      CR      control   CR/ctrl    split
@@ -133,6 +176,44 @@ FULL = {('cr',   ()):                340, ('lcdm', ()):                276,
 LSTEP_BIN = 8        # the ell spacing these runs are located on -- the locator's own resolution
 L_A = {'cr': 301.6, 'lcdm': 301.4}
 
+#: the row's own figure for the undriven split, to the ONE significant figure the row carries it to.
+#: Not a measurement and not read back from one -- see `split_quantum` for why one figure is all the
+#: abscissa can support.
+ROW_SPLIT = 0.23
+
+
+def split_of(l1_cr, l1_lc):
+    """The split as PART 2 forms it: each arm's l_1 in units of its OWN l_A, then the ratio, minus 1.
+
+    One definition, used by the measurement and by the resolution estimate alike, so the two
+    cannot drift apart."""
+    return (l1_cr / L_A['cr']) / (l1_lc / L_A['lcdm']) - 1
+
+
+def split_quantum(l1_cr, l1_lc):
+    """How far ONE bin on EITHER arm moves that split -- the finest window the quantity supports.
+
+    ⛔⛭ r7119+cc66.90: THIS FUNCTION EXISTS BECAUSE CHECK ⓶ WAS A ONE-POINT WINDOW ON A QUANTITY
+    ** WHOSE OWN RESOLUTION IS 3.7 POINTS. **  *The split is a ratio of two INTEGER peaks located on
+    an `LSTEP_BIN`-wide abscissa: at the baseline `340/276`, one bin on the control moves it
+    23.1% -> 19.6% or 26.8%, and one bin on the arm moves it to 20.2% or 26.0%.*  ⇒ *** So ALL EIGHT
+    neighbouring grid configurations fell outside `0.225 < split < 0.235`, and the check held on
+    which bin the locator happened to land in rather than on anything about the physics. ***
+      ⌗ *Found by `70`'s mutation instrument (`REGRID`) at r7113+70.1, not by hand, and routed at
+      r7119.  It is the same class this seat repaired in THIS FILE at cc66.83 -- the ⓵ pins, widened
+      to one `LSTEP` -- and ⓶ reads the same peaks and was not touched then.  **The repair reached
+      the sites that were red and not the site that was merely lucky**, which is the finding.*
+
+    ⛭ WHY THE WINDOW IS DERIVED AND NOT RE-PINNED TO WIDER DIGITS.  `60` made the standing point
+    two revisions ago that a gate pinned to the digits of a measurement asserts a spelling.  So the
+    tolerance here is COMPUTED from the abscissa the peaks are located on -- it would change on its
+    own if `LSTEP` changed -- and the claim is split into the two things ⓶ was carrying at once:
+    that the split is REAL (⓶, grid-free: it is 6.3x its own quantum) and that it is the figure the
+    ROW carries (⓶ᵃ, to +/- that quantum).  *Neither half asserts a digit this receipt measured.*"""
+    base = split_of(l1_cr, l1_lc)
+    return max(abs(split_of(l1_cr + s * LSTEP_BIN, l1_lc + t * LSTEP_BIN) - base)
+               for s, t in ((1, 0), (-1, 0), (0, 1), (0, -1)))
+
 
 def check(label, cond):
     print(f"    {'OK  ' if cond else 'FAIL'}  {label}")
@@ -233,28 +314,57 @@ def main():
     print('  ' + '=' * 74)
     print('  PART 2 -- *** THE SPLIT SURVIVES EVERY SINGLE-TERM REMOVAL ***')
     print('  ' + '=' * 74)
-    print(f"    {'configuration':<26} {'CR':>8} {'control':>9} {'CR/ctrl':>9} {'split':>8}")
-    splits = {}
+    print(f"    {'configuration':<26} {'CR':>8} {'control':>9} {'CR/ctrl':>9} {'split':>8}"
+          f" {'1-bin':>7} {'x res':>6}")
+    splits, quanta = {}, {}
     for env, nm in ((), 'all three terms'), ((('NOISW', '1'),), 'integrated removed'), \
                    ((('DPSRC', '0'),), 'Doppler removed'), ((('SWSRC', '0'),), 'monopole removed'):
         rc, rl = got[('cr', env)] / L_A['cr'], got[('lcdm', env)] / L_A['lcdm']
         splits[nm] = rc / rl
-        print(f'    {nm:<26} {rc:>8.4f} {rl:>9.4f} {rc/rl:>9.4f} {rc/rl - 1:>7.1%}')
-    check(f'⓶ the baseline split is the 23% the row carries: {splits["all three terms"] - 1:.1%}',
-          0.225 < splits['all three terms'] - 1 < 0.235)
+        quanta[nm] = split_quantum(got[('cr', env)], got[('lcdm', env)])
+        print(f'    {nm:<26} {rc:>8.4f} {rl:>9.4f} {rc/rl:>9.4f} {rc/rl - 1:>7.1%}'
+              f' {quanta[nm]:>7.1%} {(rc/rl - 1) / quanta[nm]:>5.1f}x')
+    print()
+    print(f'    ⌗ the "1-bin" column is how far ONE {LSTEP_BIN}-wide bin on either arm moves each')
+    print(f'      split.  Every window below is set by it rather than by the digits measured here.')
+
+    # ⛔⛭ r7119+cc66.90: ⓶ WAS `0.225 < split - 1 < 0.235` -- a ONE-point window on a quantity whose
+    # own resolution is 3.7 points, so all eight neighbouring grid configurations failed it.  It is
+    # now the TWO claims it was carrying at once, each asserted against the measured quantum:
+    #   ⓶  the split is REAL and not a gridding artefact -- grid-free, and the strong half;
+    #   ⓶ᵃ it is the figure the ROW carries, to the resolution the abscissa supports.
+    #   ⌗ *`70`'s `REGRID` operator found ⓶.  ⓶ᵇ and ⓶ᵈ below were NOT flagged and are the same
+    #     class: ⓶ᵇ's `0.22` bound sat 1.1 points under the achieved value against a 3.7-point
+    #     quantum and fails on 4 of the 18 re-gridded trees; ⓶ᵈ's cleared its own quantum by only
+    #     1.8x.  **Repairing the flagged site and leaving those would be exactly the mistake that
+    #     put this check here: cc66.83 fixed what was red and not what was lucky.**
+    _b, _qb = splits['all three terms'] - 1, quanta['all three terms']
+    check(f'⓶ the split is REAL and not an artefact of which bin the locator landed in: {_b:.1%} '
+          f'against a one-bin quantum of {_qb:.1%} on this LSTEP={LSTEP_BIN} abscissa -- '
+          f'{_b / _qb:.1f}x its own resolution, and POSITIVE',
+          _b > 0 and _b > 2 * _qb)
+    check(f'⓶ᵃ and it is the {ROW_SPLIT:.0%} the row carries, to the resolution the abscissa '
+          f'supports: |{_b:.1%} - {ROW_SPLIT:.0%}| = {abs(_b - ROW_SPLIT):.1%} against the '
+          f'+/-{_qb:.1%} one bin would move it.  ** The row carries ONE significant figure and one '
+          f'is all this grid can support. **',
+          abs(_b - ROW_SPLIT) <= _qb)
+    _mn = min(splits, key=lambda k: splits[k])
     check(f'⓶ᵇ *** and NO single removal collapses it -- the smallest surviving split is '
-          f'{min(splits.values()) - 1:.1%} *** , so the split is not carried by the monopole, by '
-          f'the Doppler dipole or by the integrated term',
-          min(splits.values()) - 1 > 0.22)
+          f'{splits[_mn] - 1:.1%} ({_mn}), still {(splits[_mn] - 1) / quanta[_mn]:.1f}x ITS own '
+          f'one-bin quantum of {quanta[_mn]:.1%} *** , so the split is not carried by the monopole, '
+          f'by the Doppler dipole or by the integrated term',
+          splits[_mn] - 1 > 2 * quanta[_mn])
     check(f'⓶ᶜ removing the INTEGRATED term WIDENS it to {splits["integrated removed"] - 1:.1%}, '
           f'which is the opposite of carrying it',
           splits['integrated removed'] > splits['all three terms'])
     rc_no = got[('cr', (('SWSRC', '0'),))] / L_A['cr']
     rl_no = got[('lcdm', (('SWSRC', '0'),))] / L_A['lcdm']
+    _qd = quanta['monopole removed']
     check(f'⓶ᵈ ⌗ and "opposite sides of k r_s = pi" is a property of the BASELINE, not of the '
           f'split: with the monopole removed both arms sit ABOVE pi ({rc_no:.4f}, {rl_no:.4f}) and '
-          f'the split is still {rc_no/rl_no - 1:.1%}',
-          rc_no > 1 and rl_no > 1 and rc_no / rl_no - 1 > 0.22)
+          f'the split is still {rc_no/rl_no - 1:.1%} -- {(rc_no/rl_no - 1) / _qd:.1f}x its own '
+          f'{_qd:.1%} quantum',
+          rc_no > 1 and rl_no > 1 and rc_no / rl_no - 1 > 2 * _qd)
 
     # ============================================================ (3) the damping is excluded too
     print()
