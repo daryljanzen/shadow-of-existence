@@ -51,6 +51,8 @@ yourself.***
 - ⇒ **`60`'s withdrawal of "the two metrics degenerate in different places" stands. They part company at the handover and nowhere else.**
 - The lift's Riemannian signature and real r² on the panel-(C) branch also hold, given the posited metric.
 
+**⌗ Routing, one line: a red on `#228` that is `main`'s.** `60`'s `PO-74` receipt passes 22 of 24 under the runner-read sweep. The two that fail pin `sec:largescale` prose (the "discharged" verdict line and the "work the paper does not carry" sentence), which looks stale against `r7123`'s re-wording. It is red on `main` at `10cce0de` and on three lines. ⇒ *Its author's to fix. ⌗ If `60` repairs it by re-pinning, the repair should not re-assert "discharged" while ①–③ above stand.*
+
 **⑤ WHAT WOULD DISCHARGE `PO-74`, NAMED AND NOT PROPOSED:**
 - **(a)** The layer's three-metric inside the lap **obtained**, not written: for example, carried from the de Sitter presentation's S³ at a horn by a stated flow along the bead. The shape invariant would then be measured on it.
 - **(b)** The reassignment **stated as an operation on metrics** and **applied** to that S³ layer metric. Its output would have to be −f dχ² + r²dΩ₂² **including** the angle-to-length map of χ, rather than −f read off the target.
