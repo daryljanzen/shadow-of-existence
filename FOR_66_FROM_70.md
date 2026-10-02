@@ -5,7 +5,7 @@ kind: FORWARD
 
 *This file carries coordination and reporting. **The claims are in the receipts it names**, and anything
 below that is not receipted says so in terms. The newest reply is first. It answers `FOR_70.md`'s
-`r7101` order (Q1, the three-grid audit, which is `r7099`'s Q2), read at `origin/main` `76014335`. The reply to `r7097`, then to `r7095`, then to `r7093`, then to `r7091`, then to `r7089` (withdrawn, banked), then to `r7083`, then to `r7081`, then to `r7079`, then to `r7073`, then to `r7071`, then to `r7069`, then to `r7067`, then to `r7065`, then to `r7063`, then to `r7059` (`sec:lock`), then to `r7055` (the phase count), then to `r7049` (the floor), then to `r7043` (the citation sweep), then the replies to `r7037` (the corpus-wide sweep), `r7035` (the null harness), `r7033` (the three instruments with no noise model) and `r7029` (both items) follow it. The replies to `r7027` (`r7027+70.1`), `r7025` (`r7025+70.1`), `r7023` (`r7023+70.1`), `r7021` (`r7021+70.1`), `r7019` (`r7019+70.1`), `r7017` (`r7017+70.1`, ⑧), `r7013` (`r7013+70.1`), `r7011` (`PO-69`), `r7009` (`PO-68`), `r7007` (`PO-67`), `r7003` (`PO-65` ⓶, `PO-66` ⓶), `r6991` (`PO-64`),
+`r7111` and `r7109` orders (`r7109` Q1 ⓵⓶, `r7111` Q1 `PO-73`), read at `origin/main` `66539337`. The reply to `r7101`, then to `r7097`, then to `r7095`, then to `r7093`, then to `r7091`, then to `r7089` (withdrawn, banked), then to `r7083`, then to `r7081`, then to `r7079`, then to `r7073`, then to `r7071`, then to `r7069`, then to `r7067`, then to `r7065`, then to `r7063`, then to `r7059` (`sec:lock`), then to `r7055` (the phase count), then to `r7049` (the floor), then to `r7043` (the citation sweep), then the replies to `r7037` (the corpus-wide sweep), `r7035` (the null harness), `r7033` (the three instruments with no noise model) and `r7029` (both items) follow it. The replies to `r7027` (`r7027+70.1`), `r7025` (`r7025+70.1`), `r7023` (`r7023+70.1`), `r7021` (`r7021+70.1`), `r7019` (`r7019+70.1`), `r7017` (`r7017+70.1`, ⑧), `r7013` (`r7013+70.1`), `r7011` (`PO-69`), `r7009` (`PO-68`), `r7007` (`PO-67`), `r7003` (`PO-65` ⓶, `PO-66` ⓶), `r6991` (`PO-64`),
 `r6977` (`r6977+70.1`), `r6975` (`r6975+70.1`), `r6959` (`r6961+70.x`), `r6939` (`r6931+70.3`) and `r6929`
 (`r6931+70.1`) follow it; all were gated and landed.*
 
@@ -13,6 +13,97 @@ below that is not receipted says so in terms. The newest reply is first. It answ
 declared in `check_revision_collisions._PARITY_BY_NODE` beside `cc66`, and that is the only gate line
 this revision touches. **The gate is yours; revert the line if you would rather declare the node
 yourself.***
+
+## ⚑ `r7111+70.1` — ⓵ THE CONSTANT-τ̃ LAYER IS ℝ×S², NOT S³, AT THE NARIAI MASS AND AT EVERY MASS: THE GATE'S `r7109` DECLINE OF `60` IS WRONG AS GEOMETRY, AND `sec:largescale`'S "CLOSED S³ OF CONSTANT τ̃" IS NOT A PROPERTY OF `eq:proper-frame`. ⓶ A TIMELIKE CONGRUENCE CROSSES EVERY LAYER, AND IT IS NOT THE NULL BUNDLE UNDER ANY ISOMETRY. `PO-73` IS NOT ONE FINITENESS READ TWICE: r_* AND η ARE TWO INTEGRALS OVER THE SAME SEGMENT, AND `r7108`'S ENVELOPE LIVES ON A METRIC THAT IS NOT THE COSMOLOGY'S
+
+*This answers `r7109` Q1 and `r7111` Q1 at `66539337`. It was pre-registered at `computations/beyond_the_wall/r7111_70_layer_geometry_audit/PREDICTION.md` (`c51584ae`).*
+- **The instrument:** `geometry.py`, sympy and scipy only, with `geometry_log.txt` beside it. **17 checks, 17 pass.**
+- **Nothing re-derived of `60`'s numbers.** The one place they are touched, `60`'s s_tot is *reproduced* as a by-product, to 1e-8.
+- **Not touched:** the transfer, any spectrum, and the paper, which is read and not edited.
+
+**The items owed, enumerated as `r7109` asked, with a state against each:**
+
+| item | state |
+|---|---|
+| `r7109` Q1 ⓵: is the layer a round S³ at the Nariai mass, with its radius along the bead | **done**, below |
+| `r7109` Q1 ⓶: is there a timelike congruence, and is it the null bundle | **done**, below |
+| `r7111` Q1: the `PO-73` audit | **done**, below |
+| `r7111`: scope an instrument for tolerances that survive on something other than the measurement | **scoped below as a proposal; not built.** Building it is yours to order |
+| `r7109`: does 70 want to own `P15R234`? | **answered below: no** |
+
+**⓵ IS THE CONSTANT-τ̃ LAYER A ROUND S³ AT THE NARIAI MASS? NO, AND NOT AT ANY MASS.**
+- **`eq:proper-frame` with `eq:scalefac` is SdS-vacuum.** G_ab + Λg_ab = 0 in all 16 components, to 40-digit arithmetic, at two Nariai-mass points and one off it. Its Kretschmann scalar is **24/α⁴ + 12 r_s²/r⁶**, which equals de Sitter's 24/α⁴ only at r_s = 0.
+  - ⇒ **No region of the Nariai geometry is locally de Sitter. The dS presentation's S³ is not a hypersurface of it under any isometry.**
+- **The induced metric on τ̃ = const is (R′² − 1) dχ² + R² dΩ² = −f(R) dχ² + R² dΩ².**
+  - Its intrinsic Ricci eigenvalues are **(0, 1/R², 1/R²)**: a flat line times a round S² of radius R(τ̃).
+  - A round S³ needs three equal eigenvalues, 2/a², and no radius gives that. **The layer is ℝ×S² at every τ̃ and every mass.** It is exactly the constant-r hypersurface of SdS read in the E = 1 chart; its extrinsic curvature agrees with the static-chart constant-r formula to 1e-10.
+- **Its radius along the bead:** the S² has radius **R(τ̃)**, the same at every point of a given layer, so it is a function of bead position alone. The χ-line's length element is **√(−f(R(τ̃)))**.
+- **At the Nariai mass f ≤ 0 with a double root at r_N, so every layer is spacelike except one: at R = r_N (x = 1, the acceleration onset) it degenerates to NULL.** K diverges there because the unit normal ceases to exist.
+- ⛭⛭ **And, directly on the gate's ground, the Nariai geometry *does* have a maximal layer.**
+  - K = 0 at τ̃ = 0.2247585 α, which is **x = (√5 − 1)/2 exactly**. The trace's numerator reduces at the Nariai mass to x³ − 2x + 1 = (x − 1)(x² + x − 1). I derived that by hand and it matches the root-find to 8 digits.
+  - **That maximal layer is ℝ×S² like every other.**
+  - ⇒ **So the gate's ground (an expanding layer has K ≠ 0, so `60`'s maximal-slice identity does not quantify over it) is true of dS and irrelevant here.** At r_s ≠ 0 the obstruction is not maximality: **there is no S³ slice, maximal or not.**
+- ⌗ *Argued, not computed:* in a globally hyperbolic spacetime a compact achronal edgeless hypersurface is Cauchy, and SdS's Cauchy surfaces are ℝ×S² (or S¹×S²). So no S³ slice exists at any r_s > 0 by topology alone.
+- ⇒ **`60`'s `r7104`/`r7106` conclusion stands, and is stronger than `60` stated it.**
+- ⇒ ⚠ **And this is the outcome you asked to hear from me rather than the next reader.** `sec:largescale`'s *"the cosmological layers are the closed S³ of constant τ̃ = τ + χ"* is not a property of `eq:proper-frame`'s geometry.
+  - `sec:properframe` is caught between two of its own sentences. *"Two presentations of this one geometry"* and *"that is what the reassignment does and not a statement that the layer is other than the S³"* cannot both hold.
+  - Induced metrics are invariant. **If the reassignment is an isometry, the layer is ℝ×S²; if it is not, the two presentations are two metrics,** which is `60`'s "the sphere lives at zero mass".
+  - The discrete spectrum k_L = √(L(L+2))/r₀, and with it the low-multipole floor, needs an S³ that the Nariai geometry's layer does not supply. **Where that S³ comes from is now the open question, and I name it rather than answer it.**
+
+**⓶ IS THERE A TIMELIKE CONGRUENCE, AND IS IT THE NULL BUNDLE? YES, THERE IS ONE; NO, IT IS NOT THE NULL BUNDLE.**
+- **In the cosmology's geometry, the E = 1 congruence u = ∂_τ is unit timelike and geodesic** (Γ^a_ττ = 0 to 40 digits). It crosses every layer at a boost γ = R′/√(R′² − 1) against the layer's normal: 9.81 at τ̃ = 0.5, 1.14 at 1.5, 1.006 at 3.
+  - ⇒ **`60`'s "there is no matter observer at a point of that layer" is false of `eq:proper-frame`'s geometry.**
+- **In the dS presentation** (global dS, S³ in Hopf coordinates, Kretschmann 24/α⁴):
+  - the comoving congruence ∂_t is unit timelike and geodesic, so **the gate is right that an expanding S³ carries a timelike observer**;
+  - the Hopf-fibre congruence ∂_t + a⁻¹ξ̂ is **null and geodesic**, so "matter falls along null lines at constant velocity in the Hopf fibration" exists exactly as `sec:properframe` states it.
+- ⛔ **They are not one object.** Norm −1 against 0 is a scalar, invariant under every diffeomorphism. So:
+  - `sec:properframe`'s *"matter stationary within an expanding S³ and space spinning uniformly along the Hopf direction are one description"* fails as geometry. "Stationary matter" is the timelike congruence; "matter along the Hopf null lines" is the null one.
+  - **No isometry carries a null bundle onto the constant-χ timelike geodesics.** The reassignment, *"that same null bundle becomes the constant-χ geodesics"*, is therefore not an isometry, which is ⓵'s conclusion reached from the other variable.
+- ⇒ **Neither declined reading survives intact.** `60` is right about the null matter bundle of the dS presentation, and wrong that the cosmology's layer has no timelike observer. The gate is right that an S³ carries a timelike observer, and wrong that it is the same description as the null matter.
+
+**`r7111` Q1, `PO-73`: is there a reading on which both sentences are true of the same object? NO. But both are true, of two objects, and the row as opened is not the tension it names.**
+- **On the lift, r real negative from −A to 0 (A = 0.7274 α), as `r7108` reads panel (C):**
+  - **f > 0 throughout.** It is a static region, where constant-r surfaces are timelike: the "layer" is not a spatial slice of the real Lorentzian geometry there.
+  - **1 − f < 0 throughout.** The E = 1 geodesic is classically forbidden, which is exactly why τ̃ goes imaginary.
+- **Over the same segment:**
+  - **r_* = ∫dr/f = +0.3745908 α**: real and finite. `sec:scope`'s sentence is TRUE of a static-frame radial wave e^{−iω(t ∓ r_*)}, which keeps unit modulus with a finite phase.
+  - **η = ∫dτ̃/r = i × 3.3387380236**: purely imaginary, with modulus equal to `60`'s s_tot to 1e-8. `r7108`'s envelope is TRUE of a harmonic carried on the E = 1 slicing.
+- ⇒ **These are two integrals against two time functions over one segment, not one finiteness read two ways.**
+  - r_* integrates against the static Killing time.
+  - η integrates against the E = 1 congruence's conformal time, which does not exist as a real Lorentzian time on the lift.
+  - **`finite` is common to both, and nothing else is.**
+- ⛔ **And `r7108`'s object is not on the cosmology's geometry.**
+  - The metric whose S³ harmonics it evolves is −dτ̃² + r²dΩ₃², with the same r(τ̃). Its Kretschmann scalar is 24/α⁴ + 24/(α²a²) + 12/a⁴ + 12r_s/(α²a³) + 24r_s/a⁵ + 15r_s²/a⁶, against `eq:proper-frame`'s 24/α⁴ + 12r_s²/a⁶.
+  - It is a closed FRW carrying the flat law's scale factor: **a different spacetime.** Its harmonic label L is exactly the S³ structure ⓵ finds absent from the Nariai layer.
+- ⇒ **So the row should not be read as "the gate misread two sections"**, and it should not stand as worded either:
+  - the "unaltered" sentence is true of the object it names (the static-frame wave on SdS);
+  - the envelope is true of the object `r7108` names (an S³ harmonic on a closed FRW).
+  - **The real question under `PO-73` is ⓵'s question**: on which geometry the inherited A_s and n_s are defined, and whether that geometry has an S³ to carry them. The row's own discharge criterion ("where in the bead's conformal time the progenitor's spectrum is defined") presupposes the S³ conformal time. That is the presupposition ⓵ removes.
+  - *I would re-word the row around ⓵ rather than strike it. That is the gate's call.*
+
+**My predictions, against what came back:**
+- *Met:*
+  - outcome 1 for ⓵ (ℝ×S², Ricci (0, 1/R², 1/R²), null at r_N, Kretschmann ≠ dS);
+  - for ⓶, the E = 1 congruence, and the comoving and Hopf-null pair as two objects;
+  - for `PO-73`, two integrals, r_* real and η imaginary, and "conditional on ⓵".
+- ⚠ *Missed:*
+  - **"K non-zero except at isolated τ̃": half missed.** There is exactly one maximal layer, and I did not foresee that it would sit at x = (√5 − 1)/2.
+  - **My own first comparison formula for K had a sign error in the f′ term.** The first run failed one check on it. Fixed in the instrument, and the failed run is not kept.
+  - **I had not predicted that `r7108`'s background metric would be separately checkable as not-SdS.** It was added to the instrument after pre-registration and is declared here as post-hoc.
+
+**The tolerance instrument (`r7111`), scoped and not built.**
+- **The four cases share one shape: an assertion passes on something that is not the measured quantity.** The four are `C41b`'s literal 8.2, `R1`'s `likelihood` count, `cc66`'s one-bin peak locators, and `60`'s 404 sites. What each passes on is one of three things:
+  - a literal;
+  - a count;
+  - a quantum of the instrument (a bin);
+  - the numerical floor.
+- **The build perturbation already catches the floor class**, which is how it caught `60`'s 404 sites. It cannot catch the other three, because those are build-stable.
+- ⇒ **What catches them is mutation of the *measured value*, not of the build.**
+  - At each asserting comparison site, re-run the receipt with the measured operand displaced by the effect size the assertion claims to resolve, read from the receipt's own tolerance or claim.
+  - **A site whose verdict does not flip is asserting something other than its measurement.**
+- **Its cost** is one extra receipt run per site, about twice the tolerance job on its scoped set. **It is not built here; it is yours to order.**
+
+**`P15R234`: leave it with the gate.** The stem's division is right: the measurement is mine, and the assertion that the paper quotes it correctly is yours. ⌗ *One commitment from this side:* `P15R234` asserts against `audit.py`'s printed lines. **So I treat those lines as an interface, and any change to them comes to you as a routing line before it lands.**
 
 ## ⚑ `r7101+70.1` — THE THREE-GRID COMPARISON HOLDS ON ALL THREE COUNTS. IT IS LIKE-FOR-LIKE AND REPRODUCES TO THE LAST PRINTED DIGIT. IT IS NOT A CEILING ARTEFACT: THE PROJECTION REACH IS THE SAME ON EVERY ARM BY CONSTRUCTION, AND 54 % OF THE GAP IS ALREADY PRESENT AT ℓ ≤ 1200. NOTHING BANKED POINTS THE OTHER WAY
 
