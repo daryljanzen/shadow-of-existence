@@ -66,7 +66,10 @@ $\\Lambda$, no $H_0$, no mass and no epoch anywhere in it. **
 THE ONE THE ORDER HOPED FOR.  What the harmonics pick up is an ENVELOPE, and exactly NO PHASE. **
   $\\operatorname{Re}\\Delta\\eta=0$ IDENTICALLY across the lift -- not small, zero, because the
   integrand is purely imaginary there on the branch panel (C) fixes.  ⇒ *A comb is a phase.  The lift
-  supplies a real damping and no phase at all, and at $L=220$ the damping is $e^{-725}$.*
+  supplies a real damping and no phase at all.*  ⌗ ** The SKY-side figure goes through `eq:lowell`
+  (CORRECTED at `r7112` on `r7111`'s finding against this receipt's first version, which took the sky
+  multipole for the layer degree -- the very reading `sec:throat` guards against): ** the first
+  acoustic peak's $\\ell=220.6$ sits at $L=78.5$, where the damping is $e^{-255}$.*
     ⇒ *** THE LIFT IS THEREFORE NOT THE THING THE ACOUSTIC SECTOR HAS BEEN MISSING; IT IS THE
     CONSTRUCTION'S OWN SMOOTHING STEP.  The seam is isotropic by identity rather than by tuning --
     the MILDEST damping of any $L>0$ is the one at $L=1$, a factor of $14.3$ ($T=7.00\\times10^{-2}$),
@@ -141,6 +144,7 @@ OPENED = sorted(os.path.basename(x) for x in (P15, P07))
 b15, b07 = body_of(P15), body_of(P07)
 
 C = 299792.458
+Z_REC = 1089.9
 BG = {'refit': (68.60, 0.2973), 'instrument': (73.00, 0.3066)}
 
 
@@ -149,6 +153,9 @@ def background(H0, Om):
     al = (C / H0) * np.sqrt(1.0 + 2.0 / x03)
     rN = al / np.sqrt(3.0)
     return dict(H0=H0, Om=Om, alpha=al, rN=rN, A=2.0 ** (1.0 / 3.0) * al / np.sqrt(3.0),
+                r0=x03 ** (1.0 / 3.0) * rN,
+                DC=quad(lambda z: C / (H0 * np.sqrt(Om * (1 + z) ** 3 + (1 - Om))),
+                        0.0, Z_REC, limit=400)[0],
                 c0=2.0 * al / (3.0 * (2.0 ** (1.0 / 3.0) * al / np.sqrt(3.0))))
 
 
@@ -420,18 +427,42 @@ gate(f"`\\alpha` cancels between `d\\tilde\\tau=i(2\\alpha/3)dv` and `A=2^{{1/3}
      f"backgrounds give `c_0` identical to {abs(c0s[0]-c0s[1]):.1e}",
      abs(c0s[0] - c0s[1]) < 1e-15 and abs(c0s[0] - c0) < 1e-15)
 
-L_FIRST = 220
-k1 = np.sqrt(L_FIRST * (L_FIRST + 2.0))
-env1 = 2 * np.log(k1) - k1 * s_tot + 7 / 3 * np.log(2)
+# ⌗⌗ ** THE SKY-SIDE FIGURE IS CARRIED THROUGH `eq:lowell` AND NOT READ OFF `L` DIRECTLY
+#   (`r7112`, on `r7111`'s finding against this receipt's own first version). **  *The first version
+#   said "the first acoustic peak's `L=220`", which takes the SKY multipole as the LAYER degree --
+#   exactly what `sec:throat` names as load-bearing: "the index `\ell` of this throat tower is the
+#   `S^2`-harmonic degree of the near-horizon geometry ... and is NOT the observable
+#   microwave-background multipole."*  ⇒ ** `eq:lowell` IS THE MAP, AND IT IS A FACTOR OF 2.77 IN
+#   `k`: ** the sky's `\ell=220.6` sits at `L=78.5`, where the envelope is `e^{-255}` and not
+#   `e^{-725}`.  *The conclusion is untouched -- both are annihilation and the argument is carried by
+#   the mildest case, `L=1` at 14.3 -- so this is a figure corrected, not a result revisited.*
+ELL_SKY = 220.6                                    # the sky's first acoustic peak
+_st = ref['DC'] / ref['r0']                        # the stretch of `eq:lowell`
+k_sky = ELL_SKY / _st                              # sqrt(L(L+2)) for that sky multipole
+L_sky = -1.0 + np.sqrt(1.0 + k_sky ** 2)
+env_sky = 2 * np.log(k_sky) - k_sky * s_tot + 7 / 3 * np.log(2)
+env_wrong = (2 * np.log(np.sqrt(220.0 * 222.0)) - np.sqrt(220.0 * 222.0) * s_tot
+             + 7 / 3 * np.log(2))                  # the control: L read off the sky index
 T_L1, T_L2 = np.exp(lnT(1.0 * 3.0)), np.exp(lnT(2.0 * 4.0))
 print(f"\n      the envelope the lift applies:  L=1 -> {T_L1:.4e} (a factor {1/T_L1:.1f})   "
-      f"L=2 -> {T_L2:.4e}   L={L_FIRST} -> exp({env1:.1f})")
+      f"L=2 -> {T_L2:.4e}")
+print(f"      `eq:lowell`: stretch D_C/r_0 = {_st:.6f};  the sky's ell={ELL_SKY} sits at "
+      f"k = {k_sky:.4f}, L = {L_sky:.4f}  =>  ln T = {env_sky:.1f}")
+print(f"      the CONTROL that must come back WRONG: reading L=220 off the sky index gives "
+      f"ln T = {env_wrong:.1f}, off by {abs(env_wrong-env_sky):.0f} in the exponent")
 gate(f"⛔⛔ so the second branch of the order is the one that fired, and what the harmonics pick up is "
      f"an ENVELOPE AND EXACTLY NO PHASE: the MILDEST damping of any `L>0` is `L=1` at "
-     f"`T={T_L1:.3e}`, a factor {1/T_L1:.1f}; `L=2` is already {T_L2:.2e}; and the first acoustic "
-     f"peak's `L={L_FIRST}` is `e^{{{env1:.0f}}}` -- all of it with "
+     f"`T={T_L1:.3e}`, a factor {1/T_L1:.1f}; `L=2` is already {T_L2:.2e} -- all of it with "
      f"`\\operatorname{{Re}}\\Delta\\eta=0` identically, and a comb is a phase",
-     T_L1 < 0.1 and T_L2 < 5e-3 and env1 < -500 and mp.re(dn_fig) == 0)
+     T_L1 < 0.1 and T_L2 < 5e-3 and mp.re(dn_fig) == 0)
+
+gate(f"⛭ and the SKY-side figure goes through `eq:lowell`, `\\ell_L=\\sqrt{{L(L+2)}}D_C/r_0`, because "
+     f"the layer degree is not the sky multipole: the stretch is {_st:.4f}, so the first acoustic "
+     f"peak's `\\ell={ELL_SKY}` sits at `L={L_sky:.1f}` and the envelope there is "
+     f"`e^{{{env_sky:.0f}}}` -- ⚠ reading `L=220` straight off the sky index is the control that must "
+     f"come back WRONG and it does, by {abs(env_wrong-env_sky):.0f} in the exponent",
+     abs(_st - 2.7737) < 1e-3 and 78.0 < L_sky < 79.0 and -258.0 < env_sky < -252.0
+     and env_wrong < env_sky - 400.0)
 
 gate(f"⇒ what it IS, stated as the affirmative it is: the construction's own smoothing step.  Every "
      f"`L>0` arriving from the collapse leg is damped -- by a factor {1/T_L1:.1f} at worst and "

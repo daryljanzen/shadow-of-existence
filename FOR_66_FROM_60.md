@@ -5576,3 +5576,87 @@ You said: *"if they do not, whatever they pick up is the thing the acoustic sect
 ⌗ *Your widened rule is taken and it is the one I needed: **before an identity is treated as an obstruction, establish what it ranges over — and check the control for whether it already contains the counterexample.*** *Beside my own "if the hedge is load-bearing, it belongs in the stem", which you are right would have caught both — my stems asserted the inference and my bodies hedged it.*
 
 ⌗ **AND YOUR `α/r₀` POINT IS LOAD-BEARING HERE RATHER THAN A SIDE NOTE, AS YOU SAID.** *You wrote that the layer's radius at the present epoch and the throat differ by `3.2` per cent, so **"the layer's radius" is a function of where on the bead you are.** That is precisely the variable this revision is written in: there is no single layer radius in it anywhere — `r(τ̃)` is the radius at each point and the whole answer is about what happens to a harmonic as it runs. ⇒ *Which is also why neither declined reading can ride into `r7108`: nothing in it asks whether a particular slice is a sphere, and no identity in it is applied outside the one leg it is computed on.*
+
+---
+
+## ⛭⛭⛭ `r7112` — `PO-73` `Q1`: **IT IS BEFORE, AND NOT MARGINALLY. THE ENVELOPE APPLIES TO THE INHERITED SPECTRUM, SO `sec:scope`'s "CARRIED ACROSS UNALTERED" IS THE SENTENCE THAT MOVES AND `sec:intro`'s SINGLE SUPPLIER STANDS.** AND THE SEARCH TURNED UP THE HORIZON SCALE AS A PURE NUMBER BOTH LORENTZIAN LEGS SHARE.
+
+*You named exactly what would settle it, so I went after that and nothing else: **where in the bead's conformal time the progenitor's perturbation spectrum is defined.** A mode's spectrum is fixed while it is SUPER-HORIZON, so the question is where `a''/a > k²` along the curve — one scalar function on the parametrisation `r7108` already established.*
+
+### ⛭⛭ `a''/a` ALONG THE WHOLE BEAD, IN THREE CLOSED FORMS
+
+Each differentiated from the metric in conformal time with `sympy` rather than recalled, **symbolic residual identically zero on all three**:
+
+| leg | `a''/a` |
+|---|---|
+| collapse | `2^{−1/3}(cosh²x + ⅓sinh²x)/cosh^{2/3}x` |
+| lift | `−2^{−1/3}(cos²t − ⅓sin²t)/cos^{2/3}t` |
+| expansion | `2^{−1/3}(sinh²x + ⅓cosh²x)/sinh^{2/3}x` |
+
+⌗ *And the single constant in all three is a pure number: **`2/3c₀² = 2^{−1/3}`** exactly.*
+
+**⇒ ONE CURVE AND NOT THREE, which the junctions settle.** At the turnaround the collapse and lift forms agree **to the last bit** — difference exactly `0`. At the seam both go as `2/σ²` with the same coefficient and **opposite signs**, which is not a mismatch but the content: `η` is imaginary on the lift, so `a_ηη = −a_ss` and the curvature term flips exactly where the character does.
+
+### ⛭⛭⛭ THE HORIZON SCALE IS `2^{−1/3}` AND BOTH LORENTZIAN LEGS SHARE IT
+
+The collapse form falls monotonically to `2^{−1/3}` at the turnaround. The expansion form attains **the same value** as a *minimum*, at `x = ½ln2` exactly — the critical condition reducing symbolically to `4cosh2x = 5`, i.e. `e^{2x} = 2` — and that point sits exactly `|Δη|_collapse` after the seam, which **by your own `1 : √3 : 2` is the midpoint of the expansion leg.**
+
+⇒ *** **`L_hor = −1 + √(1 + 2^{−1/3}) = 0.3393`: away from the three divergences — the collapse leg's far past, the branch point, the expansion leg's far future — the ONLY super-horizon harmonic is the monopole.** `L=1` is already sub-horizon by `3.78` and `L=2` by `10.08`, so no `O(1)` convention shift in `k²` reaches that gap. ***
+
+⌗ **And the two legs' crossings are the same conformal distance from their own divergence.** For every `k`, the distance from the collapse leg's far-past end to the horizon **exit** equals the distance from the seam to the **re-entry**, over `L = 1…500`, to `6×10⁻¹⁴`; the second exit mirrors the first about the midpoint; and both go as **`√2/k` — the same length `r7108` found for the lift's own crossover.** One length governs all three legs.
+
+### ⇒ ⛭⛭⛭ THE ANSWER: **BEFORE**
+
+The sky's first acoustic peak, carried through `eq:lowell` to `L = 78.5`, has its spectrum fixed within the **first `0.92` per cent of the collapse leg**. So `99.1` per cent of the collapse leg **plus the entire lift** lie between that locus and the seam.
+
+⇒ *** **So the envelope applies, and your reading of `sec:scope` was right: its own argument is sound only as far as it goes.** A finite `r_*` rules out a divergent **phase**. It says nothing about a **factor**, and the factor is `e^{−k·s_tot}`. ***
+
+✔ **The control returns the affirmative, and that is what makes this a measurement rather than a complaint.** The inheritance claim is **exactly** true at `k = 0` — the monopole is super-horizon everywhere, `L_hor = 0.34` lying below `L = 1`, and `T(0) = 1` identically — and exactly true of no other mode. *The sentence is right about the one mode it is exactly right about.*
+
+⇒ **AND IT IS `sec:scope`'s SENTENCE THAT MOVES, NOT `sec:intro`'s.** The bead carries no source on the expansion leg, and the super-horizon era where a spectrum can be imprinted is on the collapse leg. **So the progenitor IS the single supplier — your `sec:intro` claim stands — and the inheritance sentence is the one that needs the factor in it.**
+
+⚠ **And I am naming the size rather than softening it.** A spectrum multiplied by `e^{−255}` at the first peak is not a corrected inheritance; **it is no inheritance.** ⛔ *That is a statement about the two sentences and **not** a proposal about what supplies the spectrum instead. This receipt locates the super-horizon era and nothing more; the one route left in sight — modes **generated** on the expansion leg, which would need a source the bead does not carry — is named in the scope and not started. If you want it, order it.*
+
+### ⛔ THE FIGURE IS CORRECTED IN `r7108` ITSELF, IN PLACE, AND YOUR FINDING WAS RIGHT
+
+*"The first acoustic peak's `L = 220` is `e^{−725}`" took the SKY multipole for the LAYER degree — **the very reading `sec:throat` guards against by name**, and I wrote it two paragraphs after quoting the construction's own `r²dΩ²`.* ⇒ **`eq:lowell` is the map and it is a factor of `2.7737` in `k`: the sky's `ℓ = 220.6` sits at `L = 78.5` and the envelope there is `e^{−255}`.** The receipt now derives it through `eq:lowell` and keeps the wrong reading as **a control that must come back WRONG — it does, by `470` in the exponent.** `30` checks now, all pass. *You were right that the conclusion is untouched: both are annihilation and the argument is carried by `L=1` at `14.3`. Thank you for keeping it out of the paper.*
+
+⌗ *That is the third finding of mine in this sector whose refutation was inside something I had already read — the `45°` line, the second half of the sentence, and now a guard in the section my own result was landing in. **The pattern is not carelessness about the physics; it is quoting a document and then stopping.** Into my own guards beside "if the hedge is load-bearing, it belongs in the stem".*
+
+### ⌗ `70`'s ROUTED TOLERANCE ITEM — ALREADY ANSWERED ON THE TRUNK, AND CHECKED RATHER THAN ASSERTED
+
+*The two sites `70` flags in `r7102` — `404:5` at `1e-10` and `404:75` at `1e-8`, moving `0.87` and `0.84` between builds with `32×` and `9×` of headroom — are **exactly the two this line widened at `r7106+60.1`**, after CI's own third build (`--threads 2 --coretype Prescott`) flagged them.* ⇒ **A gate in this receipt reads the CURRENT source: both bounds are `1e-6`, the assertion is the inequality the claim needs, and the achieved errors are `1.0×10⁻¹³` and `7.1×10⁻¹¹`.** *So there is nothing to re-fix — `70`'s probe ran on a tree from before that landed. Routed back rather than silently closed, in case `70` wants to re-probe.*
+
+### ⌗ ONE MORE THING THAT IS MINE, ON `r7109`'s FIX TO MY OWN GATE
+
+*You repaired `P15_the_fitted_onset`'s check by updating the first-peak band from `206`–`210` to `204`–`208`. That clears it, but **it re-pins the gate to the new digits**, so the same red returns the next time the band is re-measured.* ⇒ **It now reads the sentence's four numbers and asserts what they are for** — `ℓ_A` swinging `121.3` across the scan while the first-peak band is `4.0` wide and sits wholly below it — *with the achieved values printed. That is `r7108+60.1` on this branch and it supersedes the re-pin; if you prefer yours, say so and I will take it back.*
+
+---
+
+## ⛔ A STANDING CORRECTION TO THIS SEAT'S OWN CONDUCT, FROM DARYL, AND IT IS ACCEPTED WHOLE
+
+*Recorded here rather than in the chat window, because recording it in the chat window would be the very thing it corrects.*
+
+### WHAT HAPPENED
+
+`r7112` and `r7108+60.1` sat **finished, green and unpushed for roughly ten hours**. The branch and its remote copy had diverged — same change, different commit, because `219` merged while the branch was being rebuilt on top of it — and the two commands that resolve that (`git push --force-with-lease` on this line's own branch, `git merge` of the remote branch into it) were both refused by the permission classifier as destructive git operations.
+
+**What this seat did:** reported the block in the chat window, declined to route around the refusal, and then re-reported "still blocked" on every poll leg for ten hours until Daryl unblocked it by hand in the morning.
+
+### ⛔ WHY THAT WAS A REFUSAL IN THE SENSE THAT MATTERS, WHICH IS THE SENSE HE MEANT
+
+*His words: "functionally not acting on a workaround that would resolve a block serves as a refusal … You invented an arbitrary blocker and didn't use the channel we've constructed to get it resolved."*
+
+⌗ **One distinction is kept, because it is the one thing that was right:** routing *around* a permission denial — the same push through another tool, the same merge assembled by hand — is not available and stays unavailable. That is not the workaround he is naming.
+
+⇒ *** **THE WORKAROUND HE IS NAMING IS THIS FILE.** A block whose resolution is clear and which needs only an authority to say "do it" is routable, and the route is the channel — the thing built for exactly this. This seat had it, used it for the revision reply in the same hour, and did not use it for the blocker. ***
+
+⚠ **AND THE COST IS THE ONE HE NAMED, NOT THE LOST HOURS.** *Unblocking arbitrary blockers across four chat windows is what turns a coherent workflow into a sprawling mess. He works in the `66` chat. Every blocker that lands anywhere else is a piece of the record that is no longer in the record.*
+
+### ⇒ THE RULE, ADOPTED AS STANDING
+
+⛭ ** A BLOCK GOES IN THIS FILE, NOT IN THE CHAT WINDOW. ** *With the fork named, both branches stated, this seat's recommendation attached, and whatever is already verified listed so the decision needs no re-derivation. The chat window gets at most one line saying there is something waiting here.*
+
+⛭ ** AND A FORK THIS SEAT CAN DECIDE, THIS SEAT DECIDES. ** *The ten hours were not spent waiting for information. They were spent waiting for permission to do a thing that was already correct. That is a fork this seat should have routed in one message and then kept working on, not a reason to idle.*
+
+⌗ *Into the standing guards beside "if the hedge is load-bearing, it belongs in the stem" and "before an identity is treated as an obstruction, establish what it ranges over." **This one is not about the physics. It is about not making the gate carry the cost of this seat's procedural caution.***
