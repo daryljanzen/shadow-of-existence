@@ -108,9 +108,21 @@ def main():
     have = {k: len(re.findall(re.escape(k), allp))
             for k in ('information paradox', 'unitary', 'complementarity', 'remnant')}
     have['AMPS'] = len(re.findall(r'\bAMPS\b', allp))
-    check(f'the paradox vocabulary is present: information paradox {have["information paradox"]}, '
-          f'unitary {have["unitary"]}, remnant {have["remnant"]}',
-          have['information paradox'] > 5 and have['remnant'] > 0)
+    # ⛔⛭ r7125+cc66.98: THE VOCABULARY CONTROL BELOW ASSERTED A ROUND NUMBER STANDING IN FOR "the
+    # search reached live text" (PO-76 class ⓵).  *It guards this receipt's ABSENCE claims: if the glob
+    # found nothing or a regex broke, every count would be 0 and the absences would pass trivially --
+    # which is exactly a count holding while the thing it counts has moved.*
+    #   ⇒ *** The liveness is now DERIVED FROM THE FILESYSTEM and the vocabulary check asserts what its
+    #     own label says: PRESENCE.  The counts stay printed, so a move stays visible. ***
+    check(f'⌗ the search reached live text, derived and not declared: {len(papers)} paper file(s) and '
+          f'{len(allp):,} characters -- every `corpus/*.tex` less the generated appendices, counted '
+          f'from the filesystem.  ** This is what the old round number was standing in for. **',
+          len(papers) == len([f for f in glob.glob(os.path.join(ROOT, 'corpus', '*.tex'))
+                  if not os.path.basename(f).startswith('appendix_receipts')]) and len(papers) > 0 and len(allp) > 0)
+    check(f'the paradox vocabulary is PRESENT: information paradox {have["information paradox"]}, '
+          f'unitary {have["unitary"]}, remnant {have["remnant"]} -- which is what this check claims, '
+          f'with the counts printed so a move is visible and asserted nowhere',
+          have['information paradox'] > 0 and have['remnant'] > 0)
     check(f'⛔ and AMPS, counted case-SENSITIVELY on word boundaries, is at {have["AMPS"]} -- the first '
           'version scored 10 by matching "damps" case-insensitively, and c54.204 routed it back',
           have['AMPS'] == 0)

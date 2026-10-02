@@ -107,10 +107,21 @@ def main():
             for k in ('SU(3)', 'chiral', 'family', 'hypercharge', 'anomaly', 'electroweak', 'Yukawa')}
     zero = {k: len(re.findall(re.escape(k), allp, re.I))
             for k in ('Higgs', 'vacuum expectation', 'spontaneous', 'Goldstone')}
-    check(f'the gauge/fermion vocabulary is present: SU(3) {have["SU(3)"]}, chiral {have["chiral"]}, '
+    # ⛔⛭ r7125+cc66.98: THE VOCABULARY CONTROL BELOW ASSERTED A ROUND NUMBER STANDING IN FOR "the
+    # search reached live text" (PO-76 class ⓵).  *It guards this receipt's ABSENCE claims: if the glob
+    # found nothing or a regex broke, every count would be 0 and the absences would pass trivially --
+    # which is exactly a count holding while the thing it counts has moved.*
+    #   ⇒ *** The liveness is now DERIVED FROM THE FILESYSTEM and the vocabulary check asserts what its
+    #     own label says: PRESENCE.  The counts stay printed, so a move stays visible. ***
+    check(f'⌗ the search reached live text, derived and not declared: {len(P)} paper file(s) and '
+          f'{len(allp):,} characters -- every `corpus/*.tex` less the generated appendices, counted '
+          f'from the filesystem.  ** This is what the old round number was standing in for. **',
+          len(P) == len(papers()) and len(P) > 0 and len(allp) > 0)
+    check(f'the gauge/fermion vocabulary is PRESENT: SU(3) {have["SU(3)"]}, chiral {have["chiral"]}, '
           f'hypercharge {have["hypercharge"]}, anomaly {have["anomaly"]}, electroweak '
-          f'{have["electroweak"]}, Yukawa {have["Yukawa"]}',
-          have['SU(3)'] > 50 and have['hypercharge'] > 5 and have['electroweak'] > 5)
+          f'{have["electroweak"]}, Yukawa {have["Yukawa"]} -- which is what this check claims, with '
+          f'the counts printed so a move is visible and asserted nowhere',
+          have['SU(3)'] > 0 and have['hypercharge'] > 0 and have['electroweak'] > 0)
     # c54.213, `L-546`: `Higgs` and `vacuum expectation` are NO LONGER at zero -- c54.203 (`L-521`)
     # named the mechanism in p0.  `spontaneous` and `Goldstone` still are, and that split is the
     # point: ** the absence ended for two terms and stands for two, so one loop cannot cover it. **

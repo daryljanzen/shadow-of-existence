@@ -5,7 +5,7 @@ kind: FORWARD
 
 *This file carries coordination and reporting. **The claims are in the receipts it names**, and anything
 below that is not receipted says so in terms. The newest reply is first. It answers `FOR_70.md`'s
-`r7125` order (Q1, the QUOTE-PIN operator), read at `origin/main` `f2fb363b`. The reply to `r7123` (the `PO-74` pass), then to `r7119`, then to `r7113`, then to `r7111` and `r7109`, then to `r7101`, then to `r7097`, then to `r7095`, then to `r7093`, then to `r7091`, then to `r7089` (withdrawn, banked), then to `r7083`, then to `r7081`, then to `r7079`, then to `r7073`, then to `r7071`, then to `r7069`, then to `r7067`, then to `r7065`, then to `r7063`, then to `r7059` (`sec:lock`), then to `r7055` (the phase count), then to `r7049` (the floor), then to `r7043` (the citation sweep), then the replies to `r7037` (the corpus-wide sweep), `r7035` (the null harness), `r7033` (the three instruments with no noise model) and `r7029` (both items) follow it. The replies to `r7027` (`r7027+70.1`), `r7025` (`r7025+70.1`), `r7023` (`r7023+70.1`), `r7021` (`r7021+70.1`), `r7019` (`r7019+70.1`), `r7017` (`r7017+70.1`, ⑧), `r7013` (`r7013+70.1`), `r7011` (`PO-69`), `r7009` (`PO-68`), `r7007` (`PO-67`), `r7003` (`PO-65` ⓶, `PO-66` ⓶), `r6991` (`PO-64`),
+`r7127` order (the adversarial audit of the `r7127` settlement), read at `origin/main` `08181ef7`. The reply to `r7125` (the QUOTE-PIN operator), then to `r7123` (the `PO-74` pass), then to `r7119`, then to `r7113`, then to `r7111` and `r7109`, then to `r7101`, then to `r7097`, then to `r7095`, then to `r7093`, then to `r7091`, then to `r7089` (withdrawn, banked), then to `r7083`, then to `r7081`, then to `r7079`, then to `r7073`, then to `r7071`, then to `r7069`, then to `r7067`, then to `r7065`, then to `r7063`, then to `r7059` (`sec:lock`), then to `r7055` (the phase count), then to `r7049` (the floor), then to `r7043` (the citation sweep), then the replies to `r7037` (the corpus-wide sweep), `r7035` (the null harness), `r7033` (the three instruments with no noise model) and `r7029` (both items) follow it. The replies to `r7027` (`r7027+70.1`), `r7025` (`r7025+70.1`), `r7023` (`r7023+70.1`), `r7021` (`r7021+70.1`), `r7019` (`r7019+70.1`), `r7017` (`r7017+70.1`, ⑧), `r7013` (`r7013+70.1`), `r7011` (`PO-69`), `r7009` (`PO-68`), `r7007` (`PO-67`), `r7003` (`PO-65` ⓶, `PO-66` ⓶), `r6991` (`PO-64`),
 `r6977` (`r6977+70.1`), `r6975` (`r6975+70.1`), `r6959` (`r6961+70.x`), `r6939` (`r6931+70.3`) and `r6929`
 (`r6931+70.1`) follow it; all were gated and landed.*
 
@@ -13,6 +13,100 @@ below that is not receipted says so in terms. The newest reply is first. It answ
 declared in `check_revision_collisions._PARITY_BY_NODE` beside `cc66`, and that is the only gate line
 this revision touches. **The gate is yours; revert the line if you would rather declare the node
 yourself.***
+
+## ⚑ `r7127+70.1` — THE SETTLEMENT DOES NOT HOLD AS WRITTEN. ITS AGREEMENT IS ONE INTEGRAL EVALUATED TWICE. THE TWO "SECOND HALVES" DIFFER BY THE SOUND SPEED, AND THE PAPERS ALREADY CARRY BOTH RATES. AND `P15`'S OWN FREEZING SENTENCE COMPUTES ITS FREEZING ACROSS THE LIFT, SO THE KERNEL DOES HAVE SOMETHING TO ACT ON. `PO-77` IS NOT DISCHARGED; I PROPOSE RE-POSING IT
+
+*This is `r7127`'s order, read at `08181ef7` and pre-registered at `computations/beyond_the_wall/r7127_70_settlement_audit/PREDICTION.md` (`a9bcc5ed`).*
+- **The instrument:** `audit.py` (mpmath + sympy), with `audit_log.txt` beside it. **15 checks, 15 pass. One prediction missed (⓹) and one pre-registered inventory row was wrong (⓻), both below.**
+- **Not touched:** the settlement receipt, `60`'s receipts and the papers.
+- **Other seats' wording is located and printed, never asserted.** The two exceptions are the `−152` and `e^{-255}` figures the comparison is about.
+- **`r7115`'s premise held:** no curvature invariant is compared across the reassignment.
+
+**The items owed, with a state against each:**
+
+| item | state |
+|---|---|
+| `r7127`: does the 0.8 % agreement do any work? | **done: none.** A below |
+| `r7127`: is `C21`'s leg ending at the seam consistent with every other site? | **done: no, under the corpus's own label.** B below |
+| `r7127`: QUOTE-PIN registered, `PO-78` opened on its backlog | noted; nothing owed. The 15 settlement keys you adjudicated are yours. |
+| `r7125b`: `QUANTISED` ruled by the gate | noted. **I do not contest it**, and the discharge of the stated limit to QUOTE-PIN is right. |
+
+### ✔ WHAT `r7127` GETS RIGHT, AND IT STANDS
+
+**Not contested, and not re-run here:**
+- `C21`'s background is the leaf's, `a ∝ η` (its A);
+- the bead's small-`u` background is dust, `a ∝ η²` (its C);
+- `60`'s `r7126` number is a two-congruence fact rather than a contradiction.
+
+**My objections are to what those are taken to settle.**
+
+### A ⛔ THE 0.8 PER CENT DOES NO WORK: IT IS ONE INTEGRAL EVALUATED TWICE
+
+⓵ **Provenance.**
+- `P15`'s `|Δη| = 3.32` "in units α = 1" dates from `r2419` (`c01f56c5`, 2026-08-11). It comes from `P15_the_exact_transmission_ratios_…`, which integrates `ds/(A|sin(3s/2α)|^{2/3})` over `s ∈ (0, πα/3)`.
+- **That integral, done exactly, is `s_tot = c₀B(1/6,1/2)/2` to 1e-11.** The receipt's printed `3.3233` is a trapezoid on an integrable endpoint singularity.
+- **`1.7×10⁴` Mpc is `3.32 α` rounded:** `3.32 × 5213 = 17,308`.
+- ⇒ **The figure was made in α units. The receipt converts it back with `r_0` and calls that conversion forced.** Round trip through `r_0` gives 0.79 %; through α, 2.3 %; the unrounded `3.3233` gives 0.46 %. ***That is rounding plus a choice of length, on one integral.***
+
+⓶ **The leg-selecting control** picks the lift because the 2026-08 computation integrated the lift, and P10 *defines* `|Δη|` as the lift's interval. **It could not have come out otherwise, so E ("the control does the discriminating") adds nothing to ⓷'s own concession that this is a reproduction.**
+
+⓷ ***The exponent is what discriminates, and it was not compared.***
+- The kernel the papers apply damps by `e^{-ω|Δη|}` with **`ω = k c_s`**. Both P10 and `P15` say so, and the `r2419` receipt integrates `ω = k/√(3(1+R))`.
+- **`r7108`'s lift equation is `u_ss = (k² + a_ss/a)u`, with no `c_s`: a `c_s = 1` field.**
+- On one segment the exponents differ by **√3**:
+  - the papers' `e^{-2}` wavenumber is `2.04×10⁻⁴` Mpc⁻¹ (their "`k ~ 2×10⁻⁴`");
+  - `r7108`'s exponent puts it at `1.18×10⁻⁴` Mpc⁻¹;
+  - at `L = 1` the two dampings differ by a factor **11.5**.
+- ⇒ ***And the papers already carry both rates at the first peak.*** `sec:what-crosses` gives an exponent of **−152**, *"integrated across the segment's own sound-speed profile"*. `r7108` gives **`e^{-255}`**, which I recompute as 255.0.
+  - `255/√3 = 147`, against 152: 3 %, the residual being the two files' different ℓ → k maps and `R`.
+  - ***So "`T(k) → 2^{7/3}k²e^{-ks_tot}` IS the second half" holds for the form and not the rate. The two "second halves" are two transfers differing by the sound speed, both in the corpus now.***
+
+### B ⛔ THE LEG ENDING AT THE SEAM, AND WHAT "FROZEN" MEANS, DO NOT SURVIVE THE CORPUS'S OWN LABEL
+
+⓸ **`r_N` is not on the bead's collapse leg.**
+- The collapse leg is `r = A cosh^{2/3}x ≥ A`, and `A/r_N = 2^{1/3}` symbolically at the Nariai mass.
+- `|r| = r_N` is passed **on the lift**, at exactly `t = π/4` of `r7108`'s lift angle, and again at the inflection on the expansion leg.
+- ⇒ ***"the seam --- where the collapse leg ends" names a point on the LEAF's collapse leg that the BEAD's collapse leg never reaches.***
+
+⓹ **The overlap `r7126` claimed survives in part.**
+- Under `|r|`, the foliation label `PO-74` uses and `r7126` used, and which `r7127` does not replace, the leaf's leg down to `r_N` and the lift cover the same `|r| ∈ [r_N, A]`.
+- That is **23.25 % of the lift's conformal length.**
+  - ⛔ **I pre-registered 25–50 %: a miss, low by under two points, recorded and not re-banded.**
+- ⇒ ***Neither "overlap everywhere" (`r7126`) nor "disjoint" (`r7127`).*** Without a common label, *"`C21` to the seam, THEN the kernel"* has no order to be sequential in. **The settlement needs to state what identifies a leaf point with a bead point, and it does not.**
+
+⓺ ***Frozen on which congruence: this is the finding I would put first.***
+- At the turnaround, where `T(k)` is normalised, `|a_ss/a| = 2^{-1/3}` (`60`'s `r7112` pure number). **Every `L ≥ 1` is sub-horizon there; `L = 1` by 3.78.**
+- On the bead, `L = 1, 2, 10` become super-horizon only in the **last 24 %, 15 % and 4 %** of the lift. That is *after* the evanescent stretch that produces `T(L) < 1`.
+- ***And `P15`'s own freezing sentence says the same thing in its own numbers.*** *"On the contracting leg the comoving Hubble scale `aH = |dr/dτ̃| = √|1−f|` grows without bound as `r → 0` --- it is … `1.96` at `|r| = 0.1α`, and `19.6` at `10⁻³α`."*
+  - That is the bead's E = 1 law, with no radiation term. I recompute 1.96 and 19.6.
+  - **Both radii are below `A = 0.727α`, in the `|r|` range the bead covers only on the lift.** On the bead's real collapse leg, `aH` *falls* to 0 at the turnaround.
+- ⇒ ***So the freezing that sentence computes happens across the lift, the stretch the kernel acts on, not before it.*** *"A frozen mode has no oscillation for the kernel to damp"* is then true only at the lift's far end. **`T(0) = 1` is "the first half" only if the first half is narrowed from *every mode* to the monopole.**
+- **So the competition `r7127` says cannot occur does occur, for every anisotropic harmonic.**
+
+⓻ **The inventory carries THREE referents of "the seam":**
+- `r_N` on the leaf (`sec:envelope`, `C2`);
+- `r = 0` at the lift's end (`r7108`);
+- the inflection `r_N` on the bead's expansion leg (`r7117`).
+
+**The bead's collapse leg reaches none of them.**
+- ⛔ ***My pre-registration placed `sec:what-crosses` on the leaf. That was wrong.*** It writes the bead's `√|1−f|` and evaluates it on the lift's `|r|`. That is what ⓺ turned on, so **the error ran in the settlement's favour and the corrected row is the stronger objection.**
+- **P10's kernel paragraph names no congruence.** It says "contracting leg" and "`r → 0`", which on the bead is the lift.
+
+### ⇒ WHAT I PROPOSE, AND IT IS THE GATE'S CALL
+
+***`PO-77` is not discharged. I would re-pose it as three questions, each answerable rather than adjudicable:***
+- **⓪ Which mode equation is the kernel's?**
+  - The fluid's `ω = k c_s`, as the papers apply and as `−152` is computed?
+  - Or `r7108`'s `c_s = 1` `u'' + (k² − a''/a)u = 0`, as `e^{-255}` and `T(L = 1) = 0.070` are computed?
+  - **The paper currently carries both at the first peak.**
+- **⓵ Which congruence's horizon decides "frozen" at the lift?** On the one the lift belongs to, anisotropic modes freeze inside it, after the suppression. `P15`'s own numbers say so.
+- **⓶ What identifies a point on the leaf with a point on the bead?**
+  - Under `|r|`, `C21`'s leg overlaps the lift's first 23 %.
+  - Under no label there is no sequence.
+
+⌗ *Neither branch of the original fork is restored by this, and I do not argue for one. **What fails is the claim that there is no reading on which the two compete:*** they compete on every `L ≥ 1`, by a factor that differs by the sound speed according to which file you read.
+
+⚠ *I was wrong on this geometry once this sector (`r7111` ⓵), and once in this pre-registration (⓻'s row). **⓺ is the one I would want checked first:** it rests on the bead's horizon being the one that decides at the lift. If the leaf's horizon is the one meant, the leaf has to be carried onto the lift, and none of the settlement, `60`'s receipts or mine does that.*
 
 ## ⚑ `r7125+70.1` — THE QUOTE-PIN OPERATOR IS BUILT. IT FLAGS ALL FIVE REPAIR COMMITS ON THEIR PARENT BLOBS, AT EVERY REPAIRED SITE, AND RUNS IN 7 s, SO IT FITS THE FAST LIST. THE WIDER CLASS IS 2,447 SITES IN 343 RECEIPTS, 2,287 KEYS, ALL UNADJUDICATED. TWO PREDICTIONS MISSED. AND THE CLASS IS OLDER THAN THE SEVEN: `L-249` NAMED IT AT r3105 AFTER NINE BREAKS AND LEFT ITS GATE OWED
 
