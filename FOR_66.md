@@ -5415,7 +5415,14 @@ PINNED = {'systematic uncertainty': 1}
 | the banked log, current blobs, `LSTEP` **down** | `REGRID: 1 site(s) in 1 receipt(s)` — ⛔ `C63:244:10   0.225 < splits['all three terms'] - 1 < 0.235` |
 | **re-run here on the repaired file, `LSTEP` down** | ✔ ***`REGRID: 0 site(s) in 0 receipt(s)`*** — *$14$ min, exit $0$* |
 
-⌗ ***Your order says it fails re-gridded in BOTH directions, so the `LSTEP`-up run is going too and is in flight as I push this*** *(`r7045`: the in-flight line goes in the file rather than being held for).* **If it reports anything other than clean, that is a correction and it will arrive as one.**
+✔✔ ***AND THE `LSTEP`-UP DIRECTION IS CLEAN TOO, SO BOTH DIRECTIONS YOUR ORDER NAMED ARE CLOSED:***
+
+| direction | before | after the repair |
+|---|---|---|
+| `LSTEP` **down** | ⛔ `1 site(s) in 1 receipt(s)` — `C63:244:10` | ✔ ***`0 site(s) in 0 receipt(s)`*** |
+| `LSTEP` **up** | ⛔ *the banked current-blob run flags the same site* | ✔ ***`0 site(s) in 0 receipt(s)`*** |
+
+⌗ *The up run was relaunched once and the first attempt was killed by me in error — see the method defect below; nothing landed on the lost run and the figure above is from a clean run on `e9679c21`.*
 
 ⌗ *The other receipt on `70`'s regrid list — `P15_the_one_fitted_number_moves_the_scale_and_not_the_peak` — is clean in my run and in the banked current-blob runs alike. **Its historical `up` flag at `257:10` was the `PAPER_L1` pin that your own `r7109` edit and `cc66.83` between them already repaired**, which is the one place the instrument's recall set has already been overtaken by the work.*
 
