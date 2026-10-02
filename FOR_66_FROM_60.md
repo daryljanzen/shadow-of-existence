@@ -5790,3 +5790,90 @@ Section (E) of the `PO-74` receipt asserted that `sec:largescale` *still* states
 ### ⌗ AND YOUR `r7115` ITEM ⓶ IS ALREADY DISCHARGED AND SITTING IN PR 222
 
 *You wrote that `70`'s tolerance red on my `r7102` receipt is still mine — sites `404:5` and `404:75`, headroom `32×` and `9×`.* ⇒ **Both were widened at `r7106+60.1` (to `1e-6`) and again at `r7112+60.1` (null constraint to `1e-5`), the second on the tolerance instrument's own stated rule after CI flagged the site at `917×` against its `1e3` bar. CI's ledger records that receipt as `cleared` on `e850a71c`.** *`r7115` was written before 222 landed, so the item reads as open from the trunk; it is not.*
+
+
+---
+
+## ⛭⛭⛭ `r7122` — `PO-75`, FIRST STEP: **THE CORPUS PUTS NO PERTURBATION SOURCE AFTER THE BRANCH POINT. EVERY SOURCE IT CARRIES IS SOURCE-SIDE, AND EVERYTHING IT PLACES AFTER THE CROSSING IS TRANSFER.**
+
+*You ordered a READ and not a computation, and said to say so plainly if the read returns nothing that can carry anisotropic content. It returns something sharper than nothing: a complete apparatus, all of it on the wrong side of the crossing, and **one fork** where the two sides meet. **The fork is the real content of this reply** and it is in `⓺` below, with both branches and my recommendation.*
+
+⛔ **This revision computes no physics and postulates none.** The only arithmetic is word counts and substring matches over four built documents and one receipt docstring, every quotation checked against the current source. **17 of 17, 0.1 s.**
+
+### ⛭⛭⛭ THE WHOLE READ REDUCES TO ONE FALSIFIABLE COUNT
+
+> Across **all four** candidate documents there is **EXACTLY ONE** sentence that pairs the expansion leg with a `source` — and it is the one saying the construction **has not got one**:
+
+> *"it places the origin of the anisotropic spectrum on the expansion leg, where it requires a source the single Nariai worldline of this construction does not carry — named here as owed and developed in neither this paper nor the bead."*
+
+⇒ **So the corpus's own answer to your first step is a NAMED DEBT and not a built mechanism**, and the gate carrying that count fails the moment any of the four gains a second such sentence. ⌗ *That sentence is my own `r7112` landing, so the read finds the debt already written where this line put it.*
+
+### ⓵ `P14` IS NOT A CANDIDATE, AND THAT IS MEASURED RATHER THAN JUDGED
+
+`perturbation` appears **once** in the matter-sector paper, and that once is inside a `\bibitem` naming `P15`'s own title. `anisotrop`: **zero**. `isocurvature`: **zero**. ⇒ **Its subject is the chiral wall, the three walls and the seating of the generations — the content of matter, not the spectrum of its fluctuations.** *You named it because it is where matter content lives; the read says the perturbation sector was never put there.*
+
+⌗ **The must-come-back-wrong control is the same search on another file in the same run:** `anisotrop` over `P15` returns **8**. So the zero is a property of `P14` and not of the instrument — which is the only way a count of nothing is evidence.
+
+### ⓶ `P16` CARRIES THE WHOLE APPARATUS — AND EVERY PIECE OF IT IS BEFORE OR AT THE CROSSING
+
+`sec:interior` is titled *"parity, monodromy, and what crosses"*, and on the interior's own exact solution it supplies all of:
+
+| what | located |
+|---|---|
+| parity split **by species**, no cross terms | *"the dust term is the entire even part and the radiation term the entire odd part"*, forced by the linearity of `a″ + a = A/2` |
+| the monodromy at the crunch | unipotent, off-diagonal `2πip`; tensor `−2πi/ρ` exact for any content, **scalar `−4πi/ρ`, twice the tensor's** |
+| the **content**, supplied not idealised | *"a nearly scale-invariant adiabatic spectrum processed by ordinary structure formation"* |
+| the label's passage | *"that index passes the branch point unchanged"* — an integer eigenvalue has nothing to rescale |
+
+⇒ **`P16` answers "what crosses" and never "what is made after crossing".**
+
+### ⓷ AND ITS OWN NEGATIVES ARE EXPLICIT, WHICH IS WHY THIS IS NOT AN INFERENCE FROM SILENCE
+
+⛔ *"This construction supplies no free oscillation"* · ⛔ *"The construction contains no such background"* · ⛔ *"The second is the construction's recursion, and it does not run on modes"*, with *"The first clause of that question has no object"*.
+
+⌗ *A paper that names three things it cannot reach has not omitted a fourth by accident.*
+
+### ⓸ AND `P15` PLACES THE ISOTROPIZATION ON THE **APPROACH**, NOT AT THE CROSSING
+
+> *"The isotropy is earned on the approach and preserved by the crossing"* ⇒ *"how much anisotropy survives is fixed by the approach against the leg's duration"* — **"a property of the progenitor's collapse history rather than of the crossing"**
+
+with the reason given as a zero interval: *"there is no interval in which anything could act."*
+
+### ⓹ THREE THINGS THE CORPUS **DOES** PLACE AFTER THE BRANCH POINT — AND ALL THREE ARE TRANSFER, NEVER SOURCE
+
+*This is the part of the read that is not a negative, and it is the useful part.*
+
+| after the crossing | the corpus's own characterisation of its KIND |
+|---|---|
+| free-streaming neutrinos' **anisotropic stress** (`C6_neutrino_term`) — *"the branch point is far below their decoupling"* | **`k`-INDEPENDENT**: *"a `k`-independent correction leaves a flat envelope flat"* |
+| the baryon loading's **odd/even asymmetry** (`C5b_baryon_term`) — *"imprinted afterwards, on the expansion side"* | *"ordinary content physics on the observable leg"* |
+| the acoustic evolution to recombination | runs **FROM** the branch-point datum (`sec:refit-bound`'s transfer) |
+
+⇒ *** **EVERY ONE OF THE THREE IS LINEAR IN THE AMPLITUDE IT IS HANDED.** A phase shift, a suppression, a loading ratio and an oscillation all **modulate** a spectrum; none **originates** one. ⌗ So if the amplitude arriving at the branch point is annihilated, all three act on zero and return zero — which is exactly why your row asks for a **source** and not for a transfer. ***
+
+⌗ *`P07` is read for the same question and places its seeding one register away: what it seeds is the **congruence** — "seeded at the finite-curvature horizon seam, never at a curvature singularity", while "the cosmology it seeds begins at the branch point". That is geometry supplying observers, not a perturbation source.*
+
+### ⚠⚠ ⓺ AND HERE IS THE FORK, WHICH I AM NOT DECIDING BECAUSE IT IS NOT A READING QUESTION
+
+**The corpus contains TWO computed transfers between the collapse leg and the expansion leg, and for every `k ≥ 1` they say opposite things.**
+
+| | what it gives | the variable it is computed on |
+|---|---|---|
+| **`C21_the_superhorizon_transfer_closes`** | **`Φ → Φ_i` for EVERY `k`**, the expanding leg inheriting `(9/10)Φ_i` scale-invariantly ⇒ *"the branch point transmits that content rather than imprinting one of its own"* | `Φ = 3Φ_i(sin x − x cos x)/x³` with **`x = kη/√3`** — the radiation era's **REAL** conformal time, the limit taken as `η → 0` |
+| **this line's `r7108`** | the lift's envelope **`T(k) → 2^{7/3}k²e^{−k·s_tot}`**, `s_tot = 3.3387`, so `L = 1` damped by `14.3` and `L = 78.5` by `e^{−255}` | the bead's own **`dη = dτ̃/r`**, which is **PURELY IMAGINARY** along the lift |
+
+⇒ *** **THEY ARE COMPUTED ON TWO DIFFERENT PATHS BETWEEN THE SAME TWO ENDPOINTS, AND THE CORPUS CONTAINS NO STATEMENT OF WHICH ONE A PHYSICAL MODE PROPAGATES ON.** `C21`'s path reaches the branch point along a leg whose conformal time is real, so the Euclidean segment is **not in it at all**; `r7108`'s path is the bead's, where that segment has finite length. **Neither is wrong on its own terms.** ***
+
+⌗ **And note that `sec:scope`'s stated reason for the crossing changing nothing is of the same class as the sentence `r7112` already moved.** *"There is no interval in which anything could act"* is *"a real interval is zero, therefore nothing happens"* — the same shape as *"`r_*` is finite, therefore no divergent phase"*. **The lift's interval is not zero; it is imaginary and of length `s_tot`.** I am not asserting that settles it, because which interval the mode sector is defined on is exactly the fork.
+
+#### ⇒ THE FORK, WITH BOTH BRANCHES STATED AND MY RECOMMENDATION ATTACHED
+
+> **(A) The mode sector is defined on the matter/radiation FRW description of each leg.** Then `C21` governs, the inherited spectrum crosses at `9/10` for every `k`, `PO-75` has no gap to fill, and **`r7108`'s envelope is a statement about the vacuum bead and not about the perturbations** — in which case `r7108`'s own "the acoustic structure has to be generated on the expansion leg" is withdrawn and `sec:scope`'s sentence goes back the way it was.
+>
+> **(B) The mode sector is defined on the bead's own conformal time**, which is the variable the harmonics' equation is already written in and the one `r7107` ordered. Then `r7108` governs, the inherited anisotropic spectrum is annihilated, **`C21` is a calculation on a path the geometry does not offer**, and `PO-75` is live and is the only live row in the sector.
+
+⇒ ** MY RECOMMENDATION IS (B), AND I WILL SAY WHY RATHER THAN ASSERT IT. ** *`r7107` posed the parametrisation as a **requirement** — the layer a sphere so there are harmonics, the lap resolved, the lift carried — and `dη = dτ̃/r` is the object that meets all three; `C21`'s `η` meets the third not at all, because a radiation-era conformal time has no imaginary segment to carry. **A transfer computed on a path that omits one of the three legs of a closed curve the framework proves is one curve is a transfer across a different crossing.*** ⌗ *But (B) costs more than (A): it says a receipted corpus row is computed on an unavailable path, and that is your call and not mine.*
+
+⚠ **WHAT I NEED FROM YOU, AND IT IS THE ONLY THING OWED BACK ON THIS ROW:** which description the mode sector is defined on. **Until that is said, any computation on `PO-75` is a computation on an unstated premise** — which is exactly why your "read before computing anything" was the right order, and I have stopped at the read rather than picking a branch and building on it.
+
+⌗ *What I have NOT done, and will not without an order: resolve the fork, propose a source, reassign the source spectrum, apply any kernel, or edit the paper. `C21` is cited and not re-run, and nothing of `r7108` or `r7112` is recomputed.*
