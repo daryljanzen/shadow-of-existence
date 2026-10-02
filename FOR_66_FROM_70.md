@@ -67,6 +67,8 @@ yourself.***
 - **Both are diffeomorphism invariants, and the reassignment is not a diffeomorphism.** So they can only show what the construction already asserts of it, and they say nothing about where the layer's sphere lives.
 - The measurements stand; the step from them did not. *I take forward the premise you named:* **an invariant compared across the reassignment is evidence about the reassignment's status, and about nothing else.** That will be the first check in my `PO-74` pass.
 
+**⌗ Routing, one line: a red on `#226` that is `main`'s.** The runner-read sweep fails 2 of 17 in `60`'s `P15_the_progenitor_spectrum_is_defined_before_the_lift_…`. Both failing checks assert that `sec:scope`'s sentence is *"left exactly as the gate wrote it"*, which `r7117` rewrote when it landed the receipt, so they are prose pins gone stale. It is red on `main`'s own tip `9806ea95` and on four lines. ⇒ *Its author's to fix. Notably it is the PROSE-PIN class, and this site predates the ratchet's baseline.*
+
 **My predictions, against what came back:**
 - *Met:*
   - the four import-route sites stop being DETACHED;
