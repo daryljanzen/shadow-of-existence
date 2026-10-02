@@ -1,6 +1,19 @@
 #!/usr/bin/env python3
 """P15 receipt -- `r7125`'s `PO-77`, THE ONE CHEAP ITEM IT NAMED: CAN THE THIRD POSSIBILITY BE RULED
 OUT?
+** ⛭⛭⛭ AMENDED AT `r7130`, AND THE AMENDMENT IS AN EXACTNESS AND NOT A WITHDRAWAL. **  *`r7127`
+ordered this receipt's section `E` withdrawn and the file renamed; `r7128` did that; and `r7129`
+** CANCELS that order ** on `70`'s audit, which reversed the settlement.  The withdrawal is itself
+withdrawn, the file keeps its name, and what the receipt gets instead is the measurement:*
+      *** THE OVERLAP IS REAL AND IT IS PARTIAL -- 23.25 PER CENT OF THE LIFT, measured here
+          independently from the lift's own quadrature, against 70's figure. ***
+*Neither `r7126`'s "overlap" nor `r7127`'s "disjoint": the leaf's collapse leg down to `$r_N$` and the
+lift coincide on the lift's first quarter under `$\\lvert r\\rvert$` and nowhere else.  ⇒ And the
+reason the two were being made to share an interval at all: ** `$A/r_N=2^{1/3}$` symbolically, so the
+bead's collapse leg `$\\lvert r\\rvert=A\\cosh^{2/3}\\ge A$` never reaches `$r_N$` **, which means
+"where the collapse leg ends" names a point on the LEAF's leg.  ⌗ *Section `C`'s "the same interval"
+is narrowed, and section `E`'s "a real disjunction" is withdrawn in the OTHER direction -- the fork is
+neither a clean disjunction nor a clean composition.*
 ** IT CAN, AND THE REASON IS A SEGMENT IDENTITY RATHER THAN A CLASH OF NUMBERS: `C21`'s
 `$\\eta\\to0$` LIMIT IS TAKEN ON **EXACTLY THE SEGMENT THE LIFT OCCUPIES**, SO THE TWO TRANSFERS
 OVERLAP AND CANNOT COMPOSE -- AND ON THAT ONE SEGMENT THEY ASSIGN `$a(\\eta)$` DIFFERENT POWERS,
@@ -88,6 +101,7 @@ import os
 import re
 import time
 
+import mpmath as mp
 import sympy as sp
 
 t_all = time.time()
@@ -185,13 +199,60 @@ gate("⓶ the segment over which the areal radius runs from its turnaround value
 # ============================================================ C. the overlap: the answer
 head("C.  ⇒ ⓷ THE ANSWER: THE TWO INTERVALS ARE THE SAME ONE, SO THEY OVERLAP RATHER THAN COMPOSE")
 
-gate("⇒ *** ⛔ ** THE THIRD POSSIBILITY CANNOT BE. ** The composition asks `C21` to govern the "
-     "passage while the lift's envelope is what the lap adds ON TOP -- which requires the two to act "
-     "on DISJOINT stretches of one path.  ⇒ By ⓵ `C21`'s stretch is the approach `$a\\to0$`; by ⓶ "
-     "that stretch IS the lift.  ** Two transfers across the same interval do not compose; composing "
-     "them traverses it twice. ** ⌗ *And the reason is a SEGMENT IDENTITY, not a clash of numbers -- "
-     "neither transfer had to be evaluated to see it* ***",
+gate("⇒ ** THE COMPOSITION AS STATED REQUIRES DISJOINT STRETCHES, AND THE TWO SEQUENCES ARE NOT "
+     "DISJOINT. ** The third possibility asks `C21` to govern the passage while the lift's envelope "
+     "is what the lap adds ON TOP.  ⇒ By ⓵ `C21`'s stretch runs down the leaf; by ⓶ the stretch "
+     "`$\\lvert r\\rvert:A\\to0$` is the lift.  ⛔ ** r7130 AMENDMENT: the two share the lift's "
+     "FIRST 23.25 PER CENT and nothing beyond it -- see `C2`, which measures it. **  ⌗ *So this "
+     "section's original \"the same interval\" is NARROWED rather than retracted: the overlap is "
+     "real and it is partial, which is neither what `r7126` claimed nor what `r7127` settled*",
      _pow == 1 and b74.count(LABEL) == 1 and b15.count(EQ) == 1)
+
+
+# ======================================= C2. r7130: the overlap made EXACT, and it is PARTIAL
+head("C2.  ⛭⛭⛭ r7130: THE OVERLAP IS REAL AND IT IS PARTIAL -- 23.25 PER CENT, MEASURED HERE")
+
+mp.mp.dps = 30
+_al = sp.symbols('alpha', positive=True)
+_A = 2 ** sp.Rational(1, 3) * _al / sp.sqrt(3)              # eq:amplitude's Nariai amplitude
+_rN = _al / sp.sqrt(3)                                      # the merged-horizon radius
+_ratio = sp.simplify(_A / _rN)
+print(f"      A / r_N = {_ratio}   (residual against 2^(1/3): "
+      f"{sp.simplify(_A/_rN - 2**sp.Rational(1,3))})")
+print(f"      ⇒ the bead's COLLAPSE leg is |r| = A cosh^(2/3) >= A = 2^(1/3) r_N > r_N,")
+print(f"        so it NEVER REACHES r_N at all -- 'where the collapse leg ends' names a LEAF point")
+gate("⛭⛭⛭ `$A/r_N=2^{1/3}$` SYMBOLICALLY, so the bead's collapse leg `$\\lvert r\\rvert=A\\cosh^{2/3}"
+     "\\ge A=2^{1/3}r_N>r_N$` ** NEVER REACHES `$r_N$` AT ALL **.  ⇒ *So `sec:envelope`'s \"the seam "
+     "--- where the collapse leg ends\" names a point on the **LEAF's** leg and not on the bead's, "
+     "which is why `r7126` was right that the two were being made to share an interval: the "
+     "settlement replaced one unlabelled identification with another*",
+     sp.simplify(_A / _rN - 2 ** sp.Rational(1, 3)) == 0)
+
+# the lift in its own conformal time: |r| = A |sin w|^(2/3), d(eta) ~ dw / |sin w|^(2/3)
+_f = lambda w: mp.sin(w) ** (-mp.mpf(2) / 3)
+_tot = mp.quad(_f, [0, mp.pi / 2])                          # the whole lift
+_part = mp.quad(_f, [mp.pi / 4, mp.pi / 2])                 # |r| : A -> r_N  <=>  |sin w| : 1 -> 2^-1/2
+_frac = _part / _tot
+print(f"\n      the lift, in its OWN conformal time:  |r| = A |sin w|^(2/3),  w : pi/2 -> 0")
+print(f"      |r| : A -> r_N   <=>   |sin w| : 1 -> 2^(-1/2)   <=>   w : pi/2 -> pi/4")
+print(f"      lift total integral  = {mp.nstr(_tot, 12)}")
+print(f"      overlap    integral  = {mp.nstr(_part, 12)}")
+print(f"      ⇒ FRACTION = {mp.nstr(100*_frac, 6)} per cent  (70 measures 23.25)")
+gate(f"⇒ *** ** AND THE OVERLAP IS PARTIAL, NOT TOTAL: the leaf's collapse leg down to `$r_N$` and the "
+     f"lift share `{mp.nstr(100*_frac, 5)}` PER CENT of the lift's conformal length ** -- reproduced "
+     f"here INDEPENDENTLY from the lift's own quadrature `$\\int\\sin^{{-2/3}}w\\,\\dd w$` over "
+     f"`$[\\pi/4,\\pi/2]$` against `$[0,\\pi/2]$`, against `70`'s measured `23.25`. ⇒ **So "
+     f"`r7126`'s \"overlap\" and the settlement's \"disjoint\" are BOTH wrong: it is neither "
+     f"everywhere nor nowhere** ***",
+     abs(float(100 * _frac) - 23.25) < 0.02)
+
+gate("⌗ and that is the AMENDMENT `r7129` asks for in place of the withdrawal `r7127` ordered: the "
+     "overlap claim of section `C` is **narrowed to its true extent** rather than retracted, and "
+     "section `E`'s disjunction is withdrawn in the other direction -- *the fork is neither a clean "
+     "disjunction nor a clean composition, because the two sequences coincide on the lift's first "
+     "quarter under `$\\lvert r\\rvert$` and nowhere else*",
+     abs(float(100 * _frac) - 23.25) < 0.02
+     and sp.simplify(_A / _rN - 2 ** sp.Rational(1, 3)) == 0)
 
 
 # ============================================================ D. and the backgrounds differ there
@@ -233,13 +294,14 @@ gate("⌗ and the disagreement is the EXPECTED one rather than a surprise, which
 # ============================================================ E. what it does not settle
 head("E.  ⚠ WHAT THIS SETTLES AND WHAT IT DOES NOT")
 
-gate("⇒ ** it retires the third possibility and NOTHING else: the fork is a REAL disjunction and not "
-     "a false one. **  ⛔ *It does NOT choose between the branches -- one may still hold that `C21`'s "
-     "radiation leg is the physical description and the bead's vacuum curve the wrong background for "
-     "modes (A), or that the bead is right and `C21`'s leg is not a path the geometry offers (B).  "
-     "What is shown is only that there is no reading on which both stand untouched, so one standing "
-     "result is retired either way -- exactly as `r7125` says the costs are symmetric and real*",
-     _pow == 1 and _pow_bead == 2)
+gate("⛔ ** r7130 AMENDMENT TO THIS SECTION'S OWN CONCLUSION: the fork is NOT a clean disjunction, "
+     "and this section said it was. **  ⇒ *`r7126` concluded that one standing result is retired "
+     "either way.  With the overlap measured at `23.25` per cent of the lift (`C2`), **neither "
+     "\"overlap everywhere\" nor \"disjoint\" is the geometry**: the two sequences coincide on the "
+     "lift's first quarter under `$\\lvert r\\rvert$` and nowhere else, so the clean either/or this "
+     "section asserted does not follow.*  ⌗ ** `r7129` cancels the `r7127` order to withdraw this "
+     "section; what it gets instead is this exactness, which is the amendment that order named. **",
+     _pow == 1 and _pow_bead == 2 and abs(float(100 * _frac) - 23.25) < 0.02)
 
 _FLAT = 'the flat-$\\Lambda$CDM expansion history is its areal radius'
 print(f"      `sec:flatlcdm`'s identification located in the current source: "
@@ -283,10 +345,11 @@ for n, ok in CHECKS:
 print(f"\n  {len(CHECKS) - len(bad)} of {len(CHECKS)} checks pass   [{time.time()-t_all:.1f}s]")
 if bad:
     raise SystemExit(1)
-print("  ALL PASS -- the third possibility cannot be, and the reason is a segment identity rather\n"
-      "  than a clash of numbers: C21's eta -> 0 limit is the approach a -> 0, and on the bead that\n"
-      "  stretch IS the Euclidean lift, so the two transfers act on the same interval and composing\n"
-      "  them would traverse it twice. And on that one shared interval they do not even agree on\n"
-      "  the background -- a prop eta against a prop eta^2, friction 4/eta against 8/eta. So the\n"
-      "  fork is a real disjunction: one standing result is retired either way, and this receipt\n"
-      "  chooses neither branch.")
+print("  ALL PASS -- AMENDED AT r7130: the overlap is REAL and PARTIAL, 23.25 per cent of the\n"
+      "  lift's conformal length, reproduced here independently from the lift's own quadrature. So\n"
+      "  neither r7126's 'overlap' nor r7127's 'disjoint' is the geometry, and the r7127 order to\n"
+      "  withdraw section E is itself cancelled by r7129 -- what this receipt gets is the exactness.\n"
+      "  And A/r_N = 2^(1/3) symbolically, so the bead's collapse leg never reaches r_N at all:\n"
+      "  'where the collapse leg ends' names a point on the LEAF's leg, which is why the two were\n"
+      "  being made to share an interval. What stands: C21's coefficients require the leaf's\n"
+      "  a prop eta, and the bead's own conformal time gives a prop eta^2 -- two congruences.")

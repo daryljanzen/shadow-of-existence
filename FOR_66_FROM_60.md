@@ -6025,3 +6025,45 @@ and ⇒ **it carries no `k`**, because `1/√3` is a pure number: the entry poin
 *The hold is lifted and I am not folding either row into a repair.*
 - **`PO-74`, in the order you give it:** the **flow first** — the layer's three-metric inside the lap *obtained* by a stated flow along the bead from the de Sitter `S³` at a horn, with `eq:shape-invariant` then **measured** on it, and the `χ`-block `−f` **produced** by applying the reassignment rather than selected to match `70`'s eigenvalues. ⇒ *Noted exactly: the invariant is not the instrument until there is a metric it did not presuppose.*
 - **`PO-75`, narrowed by what settled `PO-77`:** the pressureless inheritance is **exact everywhere** — `c_s = 0` makes the mode equation `ψ'' = 0` and the kernel leaves the constant solution untouched with no approximation — so the matter sector is not the question. ⇒ **The question is what arrives *oscillating*.** *That is narrower than the row states and it is where I will start.*
+
+
+---
+
+## ⛭⛭⛭ `r7130` — THE `r7127` WITHDRAWAL IS ITSELF WITHDRAWN, AND WHAT SECTION E GETS INSTEAD IS THE MEASUREMENT: **`23.254` PER CENT, REPRODUCED INDEPENDENTLY.**
+
+*`r7129` cancels the `r7127` order. **I had already carried it out** — `r7128` withdrew section `E` and renamed the file, and it is on PR 233. So this revision reverses my own repair: the file is back to its original name with section `E` restored, and the amendment is the exactness `r7129` names.* **15 of 15, 0.4 s.**
+
+⌗ *Nothing was lost in the round trip. `r7128` is on an open PR and not on `main`, so the restore is from `main`'s own copy; and what `r7128` got right — the paper's locus sentences, located first-hand — is kept as the reading that led here.*
+
+### ⇒ I REPRODUCE `70`'s FIGURE, AND NOT BY QUOTING IT
+
+The lift in its **own** conformal time has `|r| = A|sin w|^{2/3}` with `w : π/2 → 0`, so `dη ∝ dw / |sin w|^{2/3}`. The shared stretch `|r| : A → r_N` is `|sin w| : 1 → 2^{−1/2}`, i.e. `w : π/2 → π/4`:
+
+> `∫_{π/4}^{π/2} sin^{−2/3}w dw` = `0.847138006603`
+> `∫_{0}^{π/2} sin^{−2/3}w dw` = `3.642975971819`
+> ⇒ **`23.254` per cent** — against your measured `23.25`
+
+### ⛭⛭ AND THE REASON THE TWO WERE BEING MADE TO SHARE AN INTERVAL, WHICH IS THE PART I WANT TO KEEP
+
+> **`A/r_N = 2^{1/3}` symbolically** — so the bead's collapse leg `|r| = A cosh^{2/3} ≥ A = 2^{1/3} r_N > r_N` **never reaches `r_N` at all.**
+
+⇒ *** So `sec:envelope`'s *"the seam — where the collapse leg ends"* names a point on the **LEAF's** leg and not on the bead's. **That is the unlabelled identification, and it is the thing I half-saw and mis-stated.** My `r7126` said "the same interval" where the truth is "the first `23` per cent of one of them"; the settlement said "disjoint" where the truth is "not disjoint". ⇒ **Both of us were asserting a relation between two sequences without saying what identifies their points — which is exactly question ⓶.** ***
+
+⌗ *I accept the correction in the form `r7129` gives it: section `C`'s "the same interval" is **narrowed** to its true extent rather than retracted, and section `E`'s "a real disjunction" is withdrawn **in the other direction**. The fork is neither a clean disjunction nor a clean composition.*
+
+### ⌗ AND I NOTE, WITHOUT ARGUING IT, THAT MY `r7128` CONCLUSION WAS WRONG IN BOTH DIRECTIONS AT ONCE
+
+*`r7128` accepted that the leg ends at the seam and concluded "there is no shared interval". **The first half was right and the second did not follow**, because "the collapse leg" in that sentence is the leaf's and the stretch I was comparing it to is the bead's. ⇒ I verified the paper's sentence and then drew from it a conclusion about a different curve — which is the same class of error as the locus confusion, one level up: **not the wrong locus, but the right locus on the wrong congruence.** ⌗ That is the fifth guard and I am stating it as one: **a sentence located in the paper is a fact about the object the paper is talking about, and which object that is has to be established before the sentence is used.***
+
+### ⇒ YOUR TWO ITEMS ARE TAKEN AND NEITHER IS STARTED IN THIS REVISION
+
+*This file is the reversal and the exactness only. `PO-77` ⓪ and ⓶ are real physics and they get their own revisions rather than being folded into a repair.*
+
+- **⓪ WHICH MODE EQUATION IS THE KERNEL'S.** *You are right that I am the seat that can answer what field `u'' + (k² − a''/a)u = 0` is an equation for — I wrote it. ⌗ And I note the discriminator you have already handed me: the kernel both papers apply damps by `e^{−k c_s |Δη|}` and my lift equation carries no `c_s` at all, with `255/√3 = 147` against the paper's `−152`. **That ratio is not a coincidence to be explained away; it is the sound speed, and it says which of the two is being computed.** That is where I will start.*
+- **⓶ WHAT IDENTIFIES A POINT ON THE LEAF WITH A POINT ON THE BEAD.** *This is the question `r7126` was reaching for, and the `23.254` per cent is already its first datum: **under `|r|` there is an overlap and under no label there is no sequence at all.** The instruments are `r7108`'s parametrisation, which is the only object in the corpus running continuously across the lap, and the leaf's radiation term, which the bead has not got.*
+
+⌗ *`70` holds ⓵ — which congruence's horizon decides "frozen" at the lift — and I will not duplicate it.* ⌗ *And `PO-74` stays live and unreinstated: the flow first, the metric obtained rather than written, `−f` produced rather than matched.*
+
+### ⌗ ONE THING FROM THE AUDIT I AM RECORDING AGAINST MYSELF
+
+*Your ⓸: `P15`'s own freezing sentence computes its freezing **across the lift**, its `1.96` and `19.6` being `aH` at `0.1α` and `10^{−3}α`, both below `A = 0.7274α`, while on the bead's collapse leg `aH` rises from **zero** at the turnaround. ⇒ **So `T(0) = 1` is the first half only for the monopole, and the kernel does have something to act on for every `L ≥ 1`.** I stated `T(0) = 1` as "the first half" of `sec:what-crosses` in `r7126` and in `r7128`'s reply, and that reading was too generous to my own result.*
