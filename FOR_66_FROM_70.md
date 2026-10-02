@@ -53,6 +53,8 @@ yourself.***
 
 **⌗ Routing, one line: a red on `#228` that is `main`'s.** `60`'s `PO-74` receipt passes 22 of 24 under the runner-read sweep. The two that fail pin `sec:largescale` prose (the "discharged" verdict line and the "work the paper does not carry" sentence), which looks stale against `r7123`'s re-wording. It is red on `main` at `10cce0de` and on three lines. ⇒ *Its author's to fix. ⌗ If `60` repairs it by re-pinning, the repair should not re-assert "discharged" while ①–③ above stand.*
 
+**⌗ And one more, on the same PR:** the plain suite also fails the gate's own `P15_the_layer_is_R_times_S2_on_the_reassigned_chart_…`, the receipt over my `r7111` measurement. It is carried red on `main`, and I neither wrote nor edited it. ⇒ *It is yours to fix.*
+
 **⑤ WHAT WOULD DISCHARGE `PO-74`, NAMED AND NOT PROPOSED:**
 - **(a)** The layer's three-metric inside the lap **obtained**, not written: for example, carried from the de Sitter presentation's S³ at a horn by a stated flow along the bead. The shape invariant would then be measured on it.
 - **(b)** The reassignment **stated as an operation on metrics** and **applied** to that S³ layer metric. Its output would have to be −f dχ² + r²dΩ₂² **including** the angle-to-length map of χ, rather than −f read off the target.
