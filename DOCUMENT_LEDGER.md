@@ -41,7 +41,7 @@ sources: [chat]
 
 | document | kind | job | declared current | newest c54 in body | lag |
 |---|---|---|---|---|---|
-| `THE_REGISTER.md` | SOURCE | the lead register — the one live source of what is open | — | c54.178 | 55 |
+| `THE_REGISTER.md` | SOURCE | the lead register — the one live source of what is open | — | c54.182 | 51 |
 | `DOCUMENT_LEDGER.md` | VIEW | (declared in frontmatter) | c54.233 | c54.233 | 0 |
 | `INDEX.md` | VIEW | The corpus index — restored r2427 after the duplicate sweep deleted it at r2385/r2393 (a 49 KB live document removed because a 32 KB stub shared its name in retired/). | — | c54.233 | 0 |
 | `THE_FRONTIER.md` | VIEW | the open problems in dependency order — generated from THE_REGISTER, the one source | — | c54.178 | 55 |
@@ -133,7 +133,7 @@ sources: [chat]
 | `COMBINATORICS_LEDGER.md` | FORWARD | The combinatorics field-bake ledger — what bit, what did not, and why. Lane 8. | — | c54.185 |  |
 | `CONVEXITY_OPTIMISATION_LEDGER.md` | FORWARD | The convexity / optimisation field-bake ledger — what bit, what bounced, and the boundary. One of the three fields listed but never thrown (the overnight order: convexity ×143, constraint ×141). `OWED` 622. | — | — |  |
 | `FIGURE_THEOREM_LEDGER.md` | FORWARD | The figure–theorem ledger: which classical theorem each figure carries, and its receipts. | — | c54.19 |  |
-| `FOR_60.md` | FORWARD | (declared in frontmatter) | — | — |  |
+| `FOR_60.md` | FORWARD | (declared in frontmatter) | — | c54.182 |  |
 | `FOR_62.md` | FORWARD | (declared in frontmatter) | — | — |  |
 | `FOR_63.md` | FORWARD | (declared in frontmatter) | — | — |  |
 | `FOR_64.md` | FORWARD | (declared in frontmatter) | — | — |  |
@@ -141,7 +141,7 @@ sources: [chat]
 | `FOR_66_FROM_60.md` | FORWARD | (declared in frontmatter) | — | c54.186 |  |
 | `FOR_66_FROM_70.md` | FORWARD | (declared in frontmatter) | — | c54.223 |  |
 | `FOR_70.md` | FORWARD | (declared in frontmatter) | — | c54.170 |  |
-| `FOR_CC66.md` | FORWARD | (declared in frontmatter) | — | c54.178 |  |
+| `FOR_CC66.md` | FORWARD | (declared in frontmatter) | — | c54.182 |  |
 | `FUNCTIONAL_ANALYSIS_LEDGER.md` | FORWARD | The functional-analysis / unitarity field-bake ledger — the field that bounced, and the one routing fact it returned. Third of the four fields `L-272`'s re-survey left outstanding. `OWED` 622. | — | — |  |
 | `HARMONIC_ANALYSIS_LEDGER.md` | FORWARD | The harmonic-analysis field-bake ledger — what bit, what bounced, and the boundary. Second of the four fields `L-272`'s re-survey left outstanding. `OWED` 622. | — | — |  |
 | `INVOLUTION_REAL_FORMS_LEDGER.md` | FORWARD | The involution / real-forms field-bake ledger — what bit, what bounced, and the boundary. The field `L-277`'s unclaimed-surface probe named, and the first bake not drawn from a pre-existing list. `OWED` 622. | — | — |  |

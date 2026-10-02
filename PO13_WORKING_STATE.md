@@ -6673,3 +6673,19 @@ At the faithful configuration the arm's first peak is **`l_1` = 204** where `P15
 ### Environment finding
 
 **This container is reclaimed when the session goes idle, not on a wall clock.** The `DSCAN` pair died twice, once at ~50 min of CPU, because `DSCAN` writes nothing until the whole solve completes. Split into two independently-saving legs (more total work, monotone progress) and landed by holding the session active ~2.5 h; each leg is ~70 min CPU. Worth knowing before ordering a run of this size: the cost is the session staying awake, not the CPU.
+
+## cc66.83 — `r7109` ⓸ and ⓵: the DAMPX pair re-banked through the writer, and the config now carries the instrument's source hash
+
+**⓸ The blocker, cleared as ordered — a re-bank, not a backfill.** Both legs re-run through the `config`-at-save-time writer, saving directly into `spectra/`. Nothing written into the existing `.npz` after the fact: a reconstruction entered as a record is the `COMMAND`/`FINGERPRINT` distinction the manifest itself draws.
+
+- **The re-run is bit-identical to the first run of the same leg**, which confirms the 6.4e-15 against `r4494` is cross-machine rather than run-to-run — the reduction-order reading is measured, not assumed. Proof gate unchanged: `ls`, `l_A`, `D_M`, `r_s` bit-identical.
+- **Leg 1 was re-run a second time** because it finished minutes before the writer was corrected and its `config` carried an extra `DAMPX` key leg 2's did not. A pair whose halves label themselves differently is a provenance defect, and the artefact would not have been byte-reproducible from the committed instrument. Both configs are now character-identical.
+- Bank-time keys (`dampx`, `DAMPX`, `LMAXL`, `KFAC`, `LSTEP`, `path`, `built`) added with `config` preserved verbatim — provenance belongs to the banking step, not to a switch read the instrument does not need.
+
+**⓵ The source hash — asked and answered: it did NOT record one.** Added `instrument_blob`, the git blob hash of the instrument file's own bytes, verified equal to `git hash-object`. Read from `__file__` at import rather than from git, so it records what RAN even on a dirty tree. This closes the one thing 70's three-grid audit could not show from the artefacts: "same instrument but for the switch" was inferred from shared log lines, never recorded. The pair banked here predates the hash by one commit; the next pair will carry it.
+
+**A stale pin found before the push.** `r7109` moved `P15`'s band 206–210 → 204–208 and updated the one-fitted-number receipt's seven sites; `P15_the_fitted_onset_...` quotes the same band from a different receipt and went red. Re-pointed. Found by `run_instrument_receipts` on this tree — which is what that runner exists for.
+
+Verified: `check_banked_config` green, `run_instrument_receipts` **102 pass / 0 fail**, fast job green (10 generators, 111 gates, the lint), `C62` green reading the re-banked pair.
+
+Still open, not started: `r7109` ⓶ (a control base log at the grids' settings) and ⓷ (`r7101`'s 2.10-per-bin assertion and the two load-bearing unplaceables).

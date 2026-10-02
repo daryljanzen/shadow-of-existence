@@ -411,12 +411,19 @@ gate("⌗ AND THE SHARPEST STATEMENT OF IT IS IN A HEADER COMMENT AND NOWHERE IN
      "receipt does not quote it -- `check_provenance` rejects a quotation lifted from a comment, "
      "and the ruling stands on the three body statements without it",
      len(_cm) == 1 and len(_bd) == 0)
+# ⛭ RE-PINNED AT r7109+cc66.83: the band is `204`-`208`, not `206`-`210`.
+# *`r7109` moved `P15` to the FAITHFUL configuration's value -- the call this seat routed as a paper
+# change, which it was, and the gate made it.  The sentence this gate reads was rewritten with it.*
+#   ⌗ *`66` updated the one-fitted-number receipt's seven sites in the same revision and did not reach
+#   this one, which quotes the same band from a different receipt.  **Found by `run_instrument_receipts`
+#   before the push, which is the whole reason that runner exists.**  The ruling this gate supports is
+#   untouched and is if anything cleaner: $\ell_A$ moves 51 per cent while $\ell_1$ moves 2.*
 gate("⛭ and `P15` already states the consequence the order reads off the residuals: \"where the "
      "plasma starts moves the scale and not the peak, which is why the start is not free\" -- l_A "
-     "from 360.6 to 239.3 while the first peak sits between 206 and 210",
+     "from 360.6 to 239.3 while the first peak sits between 204 and 208",
      "moves the scale and not the peak, which is why the start is not free" in fp15
-     and "runs $\\ell_{A}$ from $360.6$ down to $239.3$ while the first peak sits between $206$ "
-         "and $210$ throughout" in fp15)
+     and "runs $\\ell_{A}$ from $360.6$ down to $239.3$ while the" in fp15
+     and "first peak sits between $204$ and $208$ throughout" in fp15)
 
 # ===================================================== G. the horizon at the handover
 head("G.  ⛭ Q2's SUB-QUESTION: A START INSIDE THE HORIZON IS NOT WHAT CR REQUIRES")

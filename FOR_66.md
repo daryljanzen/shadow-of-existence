@@ -5350,6 +5350,35 @@ PINNED = {'systematic uncertainty': 1}
 
 ---
 
+## ⛭⛭ `r7109` ⓸ AND ⓵ — **THE PAIR IS RE-BANKED THROUGH THE WRITER, NOT BACKFILLED. AND THE CONFIG DID NOT CARRY THE INSTRUMENT'S SOURCE HASH; IT DOES NOW.**
+
+### ✔ ⓸ THE BLOCKER IS CLEARED THE WAY YOU ORDERED IT
+
+***Both legs re-run through the `config`-at-save-time writer, saving directly into the bank.*** *Nothing was written into the existing `.npz` after the fact — you were right that a reconstruction written in as a record is exactly the `COMMAND`/`FINGERPRINT` distinction my own manifest draws, and backfilling would have hollowed out the ratchet in its first round.*
+
+⛭ ***And the re-run is BIT-IDENTICAL to the first run of the same leg***, which is worth more than it looks: it means the $6.4\times10^{-15}$ against `r4494` is CROSS-MACHINE and not run-to-run, so the reduction-order reading is confirmed rather than assumed. The proof gate holds unchanged — `ls`, $\ell_A$, $D_M$, $r_s$ bit-identical.
+
+⚠ ***One thing I caught and re-ran for, rather than shipping:*** *leg 1 finished minutes before I corrected the writer, so its `config` carried an extra `DAMPX` key that leg 2's did not. **A banked PAIR whose two halves label themselves differently is a provenance defect I would have been banking deliberately**, and the artefact would not have been byte-reproducible from the committed instrument. I re-ran leg 1 in parallel with leg 2 so both carry one schema. Their configs are now character-identical.*
+
+### ⛭⛭ ⓵ `70` IS RIGHT — IT DID NOT WRITE THE SOURCE HASH. IT DOES NOW.
+
+*Asked and answered plainly: **no**, the writer recorded only the switches. ⇒ **Added: `instrument_blob`, the git blob hash of the instrument file's own bytes**, so `git hash-object computations/beyond_the_wall/ACOUSTIC_two_arm.py` compares directly without reading the object store. Verified equal to `git hash-object` on a cheap run.*
+
+⌗ *Read from `__file__` at import, not from git, **so it records what RAN even on a dirty tree** — which is the case that actually matters. ⇒ *`70`'s "same instrument but for the switch" stops being inferred from shared log lines and becomes a recorded property.* ⚠ *The pair banked here PREDATES the hash by one commit and does not carry it; the next grid pair will. Say if you want this pair re-run a third time for it — I did not assume so, because `70` named it as making the NEXT pair like-for-like.*
+
+### ⚠ AND A STALE PIN YOUR `ℓ₁` EDIT LEFT BEHIND, FOUND BEFORE THE PUSH
+
+*`P15`'s band moved `206`–`210` → `204`–`208`, and you updated the one-fitted-number receipt's seven sites. **`P15_the_fitted_onset_...` quotes the same band from a different receipt and went red.** Re-pointed. ⌗ **Found by `run_instrument_receipts` on my own tree, which is exactly what that runner is for** — and the ruling it supports is untouched and cleaner: $\ell_A$ moves 51 per cent while $\ell_1$ moves 2.*
+
+⌗ *On the call itself: thank you for making it and for saying it was yours. I routed it rather than moving the paper, and the one-`LSTEP` tolerance surviving your review is the part I most wanted checked.*
+
+### ⌗ STILL OPEN AND NOT STARTED — `r7109` ⓶ AND ⓷
+
+- **⓶ a control base log at the grids' own settings**, one run, so the peak-height cell is a sign rather than empty;
+- **⓷ `r7101`'s two:** the control's $2.10$ per bin on $133$ bins computed and ASSERTED, and the two load-bearing unplaceables re-derived (`cc66_lowell_sweep`, `c54.182_clpp`).
+
+---
+
 ## ⛭⛭⛭ `r7099` Q2 — **THE `DAMPX` PAIR IS RE-MEASURED AT `LEAFREC=1` AND ALL THREE PINS ARE LIFTED. TWO OF THE THREE TURNED OUT TO BE TOLERANCE DEFECTS, NOT FIGURES NEEDING REWRITING.**
 
 *Receipts `C62`, `C63` and `P15_the_one_fitted_number_moves_the_scale_and_not_the_peak`, all green with the pins lifted. New pair banked as `spectra/r7099_lcdm_LEAFREC1_DAMPX1.000.npz` / `..._1.174.npz`, tracked, with the provenance keys the `r4494` pair carries.*
