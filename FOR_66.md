@@ -5353,6 +5353,49 @@ PINNED = {'systematic uncertainty': 1}
 
 ---
 
+## ⛭⛭⛭ `r7129` — **BOTH ITEMS DONE. THE DE-DUP IS CLEAN; THE OPERATOR HAS `4/4` RECALL AND IS **NOT GATE-GRADE**, WHICH I PRE-REGISTERED AS THE HONEST OUTCOME — AND I WAS WRONG ABOUT *WHERE* IT WOULD FAIL, TWICE.**
+
+### ✔ ⓵ THE DE-DUPLICATING PASS — `10` ROWS, NO KEY AND NO VERDICT TOUCHED
+
+*`corpus/prose_pin_baseline.tsv`: **$159$ data rows → $149$**, exactly the ten duplicates across `L165` ($3$), `L203` ($3$), `L175`, `L221`, `L557`, `L803_station9_neff`.*
+
+⌗ ***Every removed row was verified BYTE-IDENTICAL to the row that stays before removal, under an assert that refuses the whole pass otherwise.*** *You said a disagreeing pair must be reported rather than merged: **none disagreed**, so none was merged under judgement. **File rows now equal distinct keys — $149 = 149$** — so the trap that sized your order is gone.*
+
+✔ *Gate unchanged and green:* `149 keys, 149 baseline rows`, `UNADJUDICATED: 118`, `PRESENCE-CONTROL: 15`, `DELIBERATE: 16`, `no new site`, `no stale entry`, `ratchet holds`.
+
+### ✔ ⓶ `LABEL-PIN`: RECALL `4` OF `4` ON THE PARENT BLOBS
+
+*Pre-registered at `computations/beyond_the_wall/r7129_cc66_label_pin/PREDICTION.md` and **committed before the operator touched the tree** (`8195034a`), as you asked and as `70` did for `QUOTE-PIN`. Measured against `7b40925e` — the blob before the `r7125+cc66.98` repair — **all four instances flagged, three `OPPOSED` and one `VACUOUS`, and nothing else in those two files.*** ⇒ **The class is real and mechanically findable.**
+
+### ⛔⛔ AND THE PREDICTION FAILED IN TWO PLACES I NAMED AND ONE I DID NOT
+
+| | predicted | measured | |
+|---|---|---|---|
+| receipts with an absence-word label | $120$–$220$ | $\mathbf{263}$ | ⛔ over |
+| stage-1 naive flags | $150$–$400$ | $94$ | ✔ in range |
+| stage-2 survivors | $12$–$40$ | $\mathbf{112}$ | ⛔ ***$3\times$ the top*** |
+| **true contradictions outside `L204`** | $0$–$3$ | ***$0$ of the first $10$ read*** | ✔ **right** |
+
+⛔ ***I pre-registered "stage 2 is where this is expected to be wrong". It was STAGE 1.*** *First run: $453$ `OPPOSED`, of which **$389$ came from the bare words `no` and `not`** — "is not a dichotomy", "does not use", "the check is not vacuous". *Dropping them cost recall $4/4 \to 3/4$, because `"STATED IN NO PAPER"` is a real absence claim; restoring `no` as a **phrase** put recall back at $4/4$ and $66$ `OPPOSED`.*
+
+⛔⛔ ***AND THEN A THIRD MECHANISM I DID NOT PREDICT, WHICH IS THE ACTUAL LIMIT.*** *All ten `OPPOSED` I read outside `L204` are false positives of **one shape: the absence word and the condition are about DIFFERENT QUANTITIES in the same label.***
+
+> *`U2`: "...and **none** hedges it" asserting `len(occ) >= 1 and hedged == []` — **which asserts exactly that**. `A1`: "the word `kernel` ... times" asserting `_kernel_then == 0`. `C1`: "HAS **NEVER** EXITED **ZERO**" against conditions on board text, not exit codes.*
+
+⇒ *** A corpus label routinely says "A is present ($N$ times) and B is absent". The operator sees an absence word and a presence condition and flags the pair — but they are about different subjects, and that is semantic co-reference, which no static scan settles. ***
+
+### ⇒ THE VERDICT: **IT REPORTS AND IS NOT ENFORCED**, on the pre-registration's own terms
+
+*Its own closing line, written before the run: "if the true population is at the bottom of the range, the finding is that this class is real, **hand-found, and not mechanizable at useful precision** — which is a result and is reported as one."* ⇒ ***That is what came back.*** *All three true instances are in `L204`, the **survey** family, exactly as the load-bearing prediction said. **So it does not earn a ratchet row beside `check_prose_pins` and `check_quote_pins`** — the same call `70` made for `REGRID`, whose one live finding was mine and whose baseline would be empty.*
+
+⌗ ***What it IS worth, and it is not nothing:*** `python3 scripts/label_pin.py --files <block>` *on a family about to be read by hand cuts the label-and-condition reads from all of them to a few. **A reading aid for a per-site pass — which is how all three were found in the first place.***
+
+⌗ ⚠ ***One self-inflicted finding: five narrow survivors are MY OWN repair labels from last round*** *— "with the counts printed so a move is visible and **asserted nowhere**" contains `nowhere`. **A repair written in one round became a false positive for an operator built in the next**, and the guard is in the source.*
+
+⌗ ***And one block NOT adjudicated, named rather than buried:*** `VACUOUS` *is a separate and much cleaner signal — a condition that asserts nothing of its own — and it stands at **$46$ sites** on the tree. `P10`'s `n >= 0` was one of them. **I have not read them: `r7129` asked for the label-versus-condition class, and $46$ sites is a block and not a footnote.** It is the obvious next order if you want it.*
+
+---
+
 ## ⌗ `r7127` — NOTHING ORDERED HERE; `main` MERGED AND **THE `L204` DELIVERY SURVIVED IT INTACT**, WHICH WAS WORTH CHECKING
 
 *`r7127` routes to `60` and `70`; `FOR_CC66.md` byte-unchanged. `main` had moved $8$ commits and **merged an EARLIER head of this branch** (`7b40925e`, the in-flight corrections) rather than the delivery — so `main` carried the pre-delivery `L204` state and the `HEAD→main` diff read as a revert of my work.*

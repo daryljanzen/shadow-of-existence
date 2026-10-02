@@ -92,3 +92,69 @@ not enforced — the same call `70` made for `REGRID`, whose one live finding wa
 
 ⌗ *If the true population is at the bottom of the range, the finding is that this class is real,
 **hand-found, and not mechanizable at useful precision** — which is a result and is reported as one.*
+
+---
+
+# ⚑ THE OUTCOME, written after the run — **the class is REAL and the operator is NOT GATE-GRADE**
+
+## ✔ RECALL: `4` of `4`, on the parent blobs
+
+*Measured the way `70` measured `QUOTE-PIN`: against `7b40925e`, the blob **before** the
+`r7125+cc66.98` repair. All four pre-registered instances flagged — three `OPPOSED`, one `VACUOUS` —
+and nothing else in those two files.* ⇒ **The class is real and mechanically findable.**
+
+## ⛔ THE PREDICTION AGAINST THE MEASUREMENT
+
+| | predicted | measured | |
+|---|---|---|---|
+| receipts with an absence-word label | $120$–$220$ | $\mathbf{263}$ | ⛔ **over** |
+| stage-1 naive flags | $150$–$400$ | $94$ | ✔ *in range* |
+| stage-2 survivors | $12$–$40$ | $\mathbf{112}$ | ⛔ ***$3\times$ the top*** |
+| ⇒ true contradictions outside `L204` | $0$–$3$ | ***$0$ in the first $10$ read*** | ✔ **right** |
+
+## ⛔⛔ AND I WAS WRONG ABOUT **WHERE** IT WOULD FAIL — TWICE
+
+*The pre-registration said: "**stage 2 is where this is expected to be wrong**".*
+
+⛔ ***It was stage 1.*** *The first run returned $453$ `OPPOSED`, of which **$389$ came from the bare
+words `no` and `not`** — "is not a dichotomy", "does not use", "the check is not vacuous". Ordinary
+English, not a claim about an absence in the corpus. *Removing them cost recall $4/4 \to 3/4$, because
+`"STATED IN NO PAPER"` is a genuine absence claim; restoring `no` as a PHRASE (`in no <noun>`,
+`no paper`) put recall back to $4/4$ at $66$ `OPPOSED`.*
+
+⛔⛔ ***And then a THIRD mechanism I did not predict at all, which is the real limit:*** *reading the
+first ten `OPPOSED` outside `L204`, **all ten are false positives of one shape — the absence word and
+the condition are about DIFFERENT QUANTITIES in the same label.***
+
+| | the label | the condition |
+|---|---|---|
+| `U2` | *"...and **none** hedges it"* | `len(occ) >= 1 and hedged == []` — *which asserts exactly that* |
+| `B46` | *"a SIMPLE **zero**... nonzero"* | `abs(fp(rb)) > 0.01` — *a different quantity* |
+| `A1` | *"the word `kernel` ... times"* | `present['algebroid'] > 20 and _kernel_then == 0` — *correct* |
+| `C1` | *"HAS **NEVER** EXITED **ZERO** IN ANY TREE"* | *conditions on board text, not on exit codes* |
+
+⇒ *** A corpus label routinely says "A is present (N times) and B is absent". The operator sees an
+absence word and a presence condition and flags the pair — but they are about different subjects, and
+resolving that is semantic co-reference, which no static scan settles. ***
+
+## ⇒ THE VERDICT: **REPORTS, NOT ENFORCED** — and that was pre-registered as the honest outcome
+
+*The pre-registration's own terms: "if the true population is at the bottom of the range, the finding
+is that this class is real, **hand-found, and not mechanizable at useful precision** — which is a
+result and is reported as one."*
+
+⇒ ⛔ ***That is what came back.*** *All three true `OPPOSED` instances are in `L204`, the **survey**
+family, exactly as the load-bearing prediction said; precision outside it is $0$ of $10$ read. **So
+this does not earn a ratchet gate beside `check_prose_pins` and `check_quote_pins`** — the same call
+`70` made for `REGRID`, whose one live finding was this seat's and whose baseline would be empty.
+
+⌗ ***What it IS good for, and this is not nothing:*** *`label_pin.py --files <block>` on a family about
+to be read by hand cuts the sites needing a label-and-condition read from all of them to a few. It is a
+**reading aid for a per-site pass**, which is how all three instances were found in the first place.
+
+⌗ ⚠ ***One self-inflicted finding: five of the narrow survivors were MY OWN repair labels from
+`r7125+cc66.98`*** *— "with the counts printed so a move is visible and **asserted nowhere**" contains
+`nowhere`. **A repair written in one round became a false positive for an operator built in the next**,
+and the guard for it is in the source. ⌗ `VACUOUS` ($46$ sites) is a separate and cleaner signal — a
+condition that asserts nothing of its own — and is worth its own read; it is NOT adjudicated here,
+because `r7129` asked for this class and reading $46$ more is a block, not a footnote.

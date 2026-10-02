@@ -6971,3 +6971,21 @@ These could survive for the same reason as `n >= 0`: nobody read the label and t
 **Noted and not done:** P3's dict is still named `zero` — the terms it held when they were all zero — so `zero['Higgs'] > 0` reads against itself; a rename is cosmetic and would re-key the row, so it is recorded in the row instead. And the six families' duplicate rows, above.
 
 PO-76 now stands at 118 unadjudicated, 31 adjudicated, every verdict carrying what was read.
+
+## cc66.99 — `r7129`: the de-duplicating pass, and LABEL-PIN pre-registered, built, measured, and judged NOT gate-grade
+
+**Item 1, the de-duplicating pass.** `corpus/prose_pin_baseline.tsv` went 159 data rows → 149, exactly the ten duplicates across L165 (3), L203 (3), L175, L221, L557, L803_station9_neff. Every removed row was verified byte-identical to the row that stays, under an assert that refuses the whole pass otherwise; `r7129` said a disagreeing pair must be reported rather than merged, and none disagreed. File rows now equal distinct keys (149 = 149), so the trap that sized the r7125 order is gone. Gate unchanged and green: UNADJUDICATED 118, PRESENCE-CONTROL 15, DELIBERATE 16, no new site, no stale entry.
+
+**Item 2, LABEL-PIN.** Pre-registered at `computations/beyond_the_wall/r7129_cc66_label_pin/PREDICTION.md` and committed at `8195034a` **before** the operator touched the tree. Recall **4 of 4** on the parent blobs (`7b40925e`, before the r7125+cc66.98 repair): three OPPOSED, one VACUOUS, nothing else in those two files. The class is real and mechanically findable.
+
+**The prediction against the measurement:** receptacles with an absence-word label 263 against a predicted 120–220 (over); stage-1 naive flags 94 against 150–400 (in range); stage-2 survivors **112 against a predicted 12–40** (3× the top); true contradictions outside L204 **0 of the first 10 read** against a predicted 0–3 (right).
+
+**Wrong in two places named and one not.** The pre-registration said stage 2 would be the weak point; it was **stage 1** — the first run returned 453 OPPOSED of which 389 came from the bare words `no` and `not` ("is not a dichotomy", "does not use", "the check is not vacuous"). Dropping them cost recall 4/4 → 3/4 because "STATED IN NO PAPER" is a genuine absence claim; restoring `no` as a phrase (`in no <noun>`, `no paper`) put recall back at 4/4 and 66 OPPOSED.
+
+And then a third mechanism not predicted at all, which is the actual limit: all ten OPPOSED read outside L204 are false positives of one shape — **the absence word and the condition are about different quantities in the same label**. U2's "none hedges it" asserts `len(occ) >= 1 and hedged == []`, which asserts exactly that; A1's "the word kernel … times" asserts `_kernel_then == 0`; C1's "HAS NEVER EXITED ZERO" tests board text, not exit codes. A corpus label routinely says "A is present (N times) and B is absent", and resolving which subject the absence attaches to is semantic co-reference that no static scan settles.
+
+**Verdict: reports, not enforced**, on the pre-registration's own terms ("real, hand-found, and not mechanizable at useful precision — which is a result and is reported as one"). All three true instances are in L204, the survey family, exactly as the load-bearing prediction said. So it earns no ratchet row beside `check_prose_pins` and `check_quote_pins` — the same call 70 made for REGRID. What it is worth: `label_pin.py --files <block>` on a family about to be read by hand cuts the label-and-condition reads from all of them to a few; a reading aid for a per-site pass, which is how all three were found.
+
+One self-inflicted finding: five narrow survivors are this seat's own repair labels from last round — "with the counts printed so a move is visible and **asserted nowhere**" contains `nowhere`. A repair written in one round became a false positive for an operator built in the next; the guard is in the source.
+
+One block named and not adjudicated: `VACUOUS` is a separate and much cleaner signal — a condition that asserts nothing of its own — standing at **46 sites** on the tree, of which P10's `n >= 0` was one. Not read here: r7129 asked for the label-versus-condition class, and 46 sites is a block, not a footnote. The obvious next order.
