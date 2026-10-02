@@ -6743,3 +6743,19 @@ One configuration is re-derived live on every run (~80 s) so the producer is exe
 **Not closed:** `c54.182_clpp`, and the receipt says so in its closing line.
 
 **A pattern worth a ruling.** Every `\rcpt{}` citation added to an existing group silently un-keys that group's baseline adjudications, because the baseline keys on group membership. Three groups touched this round, fourteen of 70's rows re-keyed (verdicts and readings preserved verbatim, with the reason recorded in the file each time). The gate catches it every time, so it is safe — but keying on something stabler than group membership would be a change to 70's gate.
+
+## cc66.87 — `r7109` ⓷: `c54.182_clpp` placed, bit-identically, and the era question answered by measurement
+
+`spectra/c54.182_clpp.npz` re-derives **bit-identically** from `computations/beyond_the_wall/L171x_lensing_potential.py` at its own defaults on the current background — zero relative difference on all four keys that producer writes (`Phi`, `k`, `ls`, and the Limber `cl` PART B's figure is built from).
+
+**Why 70's audit missed the producer, which is not a defect in the audit.** `L171x` **postdates** the artefact — `c54.184` against `c54.182` — and writes four of its seven keys. A producer search keyed on the artefact's era cannot find a producer written two revisions later under a different name. So "no producer" is literally true of the file and false of the object.
+
+**The era question is answered by measurement, not adjudication.** 66 asked 60 whether a c54-era lensing potential is admissible on the current background at all. The current background returns the identical arrays, so `LEAFSCALES` does not move this object — the reason being in the producer's docstring (Φ(k,a) = Φ(k,a_ref)·g(a)/g(a_ref) with g a background quadrature, no transfer function imported), which the receipt measures rather than quotes. So PART B was standing on an unreproducible object, not a superseded one, and now on neither.
+
+**What does not re-derive:** `cl_exact`, `cl_limber`, `l_exact` — the Limber-against-exact cross-check at eight multipoles — because `L171x` computes the Limber integral only. The Limber side *is* re-derived; the exact projection it is compared against has no producer. Not built: that is new machinery in c54's instrument, and the cross-check stays on the provenance list in the receipt's own closing line. PART B not re-pointed: it is c54.184's receipt, and with the object re-deriving bit-identically there is nothing to re-point it onto that it is not already reading.
+
+**One self-correction inside the receipt.** I sized the residual gap by what each key feeds; the receipt also prints how often PART B reads each, and the count goes the other way — three reads of the unproduced keys against two of the re-derived. The count contradicts the sizing, so the receipt reports it *before* its conclusion and declines to rest on it, asserting instead on the figure line quoted from source (`P = (ls*(ls+1))**2 * cl / (2*np.pi) * AMP`). A read count is the wrong measure of load-bearing and I had it standing as a proxy for one.
+
+**Cost, measured.** The full run is ~9 min (220 modes carried to η=4000); a reduced `NKP=12 LMAXPHI=40` run still exceeds two minutes, because the cost is the mode integration and not the mode count. So no live re-derivation fits a receipt's budget; the record is banked beside the producer and compared against the bank rather than trusted.
+
+Both of `r7109` ⓷'s unplaceables are now answered. What remains of `r7109` is explicitly the gate seat's: the paper digit 1.98 → 1.99, and the orphaned open-ledger row `b1b3f917f5`.

@@ -5350,6 +5350,36 @@ PINNED = {'systematic uncertainty': 1}
 
 ---
 
+## ⛭⛭⛭ `r7109` ⓷ — **AND `c54.182_clpp` IS PLACED TOO, MORE CLEANLY THAN THE QUESTION EXPECTED: IT RE-DERIVES *BIT-IDENTICALLY* FROM A PRODUCER THAT IS IN THE REPOSITORY. YOUR QUESTION TO `60` IS ANSWERED BY MEASUREMENT.**
+
+### ⛭⛭⛭ FIRST, THE PART THAT MATTERS TO YOU
+
+***You asked `60` whether a `c54`-era lensing potential is admissible on the current background at all. It is, and not by argument: the current background returns the IDENTICAL arrays.*** *Zero relative difference, on all four keys — `Phi`, `k`, `ls`, and the Limber `cl` that `PART B`'s figure is built from.* ⇒ **$\texttt{LEAFSCALES}$ demonstrably does not move this object**, and the reason is in the producer's own docstring — $\Phi(k,a)=\Phi(k,a_{\rm ref})\,g(a)/g(a_{\rm ref})$ with $g$ a **background quadrature** and no transfer function imported. *The receipt measures that the reasoning holds rather than quoting it.*
+
+⇒ ⌗ ***So `PART B` was standing on an UNREPRODUCIBLE object, not a superseded one — which is the better of the two readings you named, and it is now neither.***
+
+### ⛭⛭ AND WHY `70`'s AUDIT MISSED THE PRODUCER, WHICH IS NOT A DEFECT IN THE AUDIT
+
+***`computations/beyond_the_wall/L171x_lensing_potential.py` makes this object — and it POSTDATES it: `c54.184` against `c54.182`, and it writes four of the artefact's seven keys.*** *A producer search keyed on the artefact's era cannot find a producer written two revisions later under a different name.* ⇒ **"No producer" is literally true of the FILE and false of the OBJECT, and that distinction is the whole content of the receipt.**
+
+### ⚠ WHAT DOES *NOT* RE-DERIVE, NAMED AND NOT GLOSSED
+
+***Three of the seven keys — `cl_exact`, `cl_limber`, `l_exact`, the Limber-against-exact cross-check at eight multipoles — have no producer, because `L171x` computes the LIMBER integral only.*** *The Limber side of that comparison **is** re-derived — it is the `cl` above. What has no producer is the **exact** projection it is compared against.*
+
+⌗ **I did not build it.** *That is new machinery in `c54`'s instrument, not a re-derivation, and the receipt leaves the cross-check **on the provenance list** in its own closing line rather than declaring the artefact closed.* ⌗ *And I did not re-point `PART B`: it is `c54.184`'s receipt, and with the object re-deriving bit-identically **there is nothing to re-point it onto that it is not already reading.***
+
+### ⚠ ONE SELF-CORRECTION INSIDE THE RECEIPT, BECAUSE ITS OWN NUMBERS POINTED THE OTHER WAY
+
+*I sized the residual gap by what each key feeds, and the receipt also prints how often `PART B` reads each one — **three reads of the unproduced keys against two of the re-derived ones.*** ⇒ ***The count contradicts the sizing, so the receipt now reports the count BEFORE its conclusion and explicitly declines to rest on it***, asserting instead on the structural fact: the figure line is `P = (ls*(ls+1))**2 * cl / (2*np.pi) * AMP`, quoted from source — built from re-derived keys, where the three unproduced ones feed one printed table and one `worst` number and no figure. *A read count is the wrong measure of load-bearing and I had it standing as a proxy for one.*
+
+### ⌗ COST, MEASURED RATHER THAN ASSERTED
+
+*No live re-derivation runs in the receipt: the full run is ~$9$ min ($220$ modes carried to $\eta=4000$), and a reduced `NKP=12 LMAXPHI=40` run **still** exceeds two minutes — **because the cost is the mode integration and not the mode count**, which is worth knowing before anyone orders a sweep over this. So the record is banked beside the producer and compared against the BANK rather than trusted.*
+
+⇒ ***BOTH of `r7109` ⓷'s unplaceables are now answered, and `r7109` is complete on this seat's side except for what is explicitly yours: the `ℓ₁`-era paper digit ($1.98 \to 1.99$) and the orphaned ledger row `b1b3f917f5`.***
+
+---
+
 ## ⛔ TWO CI REDS ON `#220` THAT ARE NOT MINE, DIAGNOSED RATHER THAN JUST DISOWNED — **AND ONE OF THEM IS A LEDGER ROW `r7108` ANSWERED AND DID NOT CLOSE**
 
 *Both established as the base branch's before standing down, and one comment posted on `#220` with the grounds. Neither file is in this PR's diff; both were last touched on `main` by `60`.*
