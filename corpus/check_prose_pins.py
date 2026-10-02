@@ -152,7 +152,14 @@ def main():
     #   reading it once settles it.*  ⛔ *A first draft declared 170 and then printed `21 already read`,
     #   which was false: nothing had been read, and the slack was an artefact of the key.  Recorded rather
     #   than quietly corrected, because inventing headroom is the failure this instrument was built to find.*
-    CEILING = 149
+    CEILING = 118
+    #: ⛭ r7125+cc66.98: 149 -> 118, lowered by EXACTLY the 31 sites read -- the whole of
+    #: `receipts/L204_physics_reach`, every one verdicted in prose_pin_baseline.tsv with what was
+    #: read.  ⛔ *The r7125 order said 42 and 107.  42 is the RAW site count; this file and the
+    #: baseline key on distinct `(receipt, expression)` pairs, of which the family has 31, so 42
+    #: would have invented 11 of headroom -- the same `(receipt, expression)` artefact that put the
+    #: 149-against-170 slack in this gate's own history.  Verified both ways: 149 - 31 read = 118,
+    #: and 149 live keys - 31 verdicted = 118.*
     if unread > CEILING:
         print()
         print(f'  ⛔ THE UNADJUDICATED COUNT ROSE: {unread} against the declared ceiling {CEILING}.')

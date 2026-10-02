@@ -5,12 +5,27 @@ both ends, commits to it explicitly IN CODE, and names it in no paper.  Sixth ar
 ** THE STATION. **  R-P's ⑨: "cosmology · nuclear / plasma --- BBN, recombination, the acoustic scale."
 The last unrun station, and cc54's because it needs camb and pynucastro.
 
-** ⓵ THE ABSENCE, MEASURED HERE. **  Across the paper .tex files:
+** ⓵ THE ABSENCE, AS MEASURED WHEN THIS RECEIPT WAS WRITTEN. **  Across the paper .tex files:
 
       *** N_{\\rm eff} 0 · N_\\mathrm{eff} 0 · Neff 0 · 3.046 0 · "effective number of" 0 ***
 
   ** while the sector is otherwise deep: ** the lithium problem is named and worked; D/H, Yp and He are
   everywhere.  ⇒ ** One missing NAME, not a missing sector. **
+
+⛔⛭ ** AND THAT ABSENCE HAS SINCE ENDED -- THIS HEADLINE IS SUPERSEDED, AND THE WAY IT SURVIVED IS THE
+FINDING (r7125+cc66.98). **  *The papers now carry* "the effective number $N_{\\mathrm{eff}}=3.046$
+~\\cite{Mangano2005}" *in `cosmogenesis_paper.tex`:* ** N_{\\mathrm{eff}} 5x · 3.046 3x. **
+  ⇒ *** So "names it in no paper" and "stated nowhere" are FALSE on this tree, and `P11` in this same
+    directory already said so: "`3.046` is NO LONGER at zero -- the absence ENDED at `c54.205`".  The
+    closing commit is `9fd40454`, whose message is `P11`'s own filename. ***
+  ⛔ ** TWO THINGS KEPT IT STANDING, AND BOTH WERE IN THIS FILE. **  *The ⓵ loop asserted `n >= 0`,
+  true of every count ever taken, so it could not fail; and the spelling list looked for
+  `N_\\mathrm{eff}` where the paper writes `N_{\\mathrm{eff}}` -- it missed the live spelling on a pair
+  of braces.  A third check's LABEL read "STATED IN NO PAPER" while its CONDITION asserted
+  `len(re.findall('Neff', allp)) > 0`, the opposite.*
+  ⇒ ⛭ *** What this receipt still carries on its own is ⓶: THE CODE COMMITS TO IT, in the clear, and
+    that is untouched.  The NAMING half is `P11`'s, and the ⓵ checks are now the regression guard on
+    the filling rather than an assertion of a gap that closed. ***
 
 ** ⛭⛭ ⓶ AND THE CORPUS COMMITS TO IT ANYWAY, IN THE CLEAR, IN CODE. **  `bbn_network.py`:
 
@@ -80,11 +95,35 @@ def main():
     check('R-P names ⑨ as cosmology · nuclear / plasma -- BBN, recombination, the acoustic scale',
           'BBN, recombination, the acoustic scale' in rp)
 
-    # ⓵ the absence
-    for k in ('N_{\\rm eff}', 'N_\\mathrm{eff}', 'Neff', '3.046', 'effective number of'):
-        n = len(re.findall(re.escape(k), allp))
-        check(f'✔ "{k}": {n}x across the papers -- reported; the corpus banked '
-              'N_{{\\mathrm{{eff}}}} (4x) and does not use the other spellings', n >= 0)
+    # ⓵ THE ABSENCE -- ** WHICH HAS ENDED, AND THIS CHECK IS NOW THE REGRESSION GUARD ON THAT. **
+    # ⛔⛭ r7125+cc66.98: THIS LOOP ASSERTED `n >= 0`, WHICH IS TRUE OF EVERY COUNT EVER TAKEN, AND THE
+    # VACUITY IS WHY THIS RECEIPT'S OWN FINDING ROTTED IN PLACE UNNOTICED.
+    #   *The label claimed a tally -- `N_{\mathrm{eff}}` 4x, the other spellings absent -- and the
+    #   docstring claims all five at ZERO with the headline "names it in no paper".  ** Measured: the
+    #   papers name it.  `cosmogenesis_paper.tex` carries "the effective number $N_{\mathrm{eff}}=3.046$
+    #   ~\cite{Mangano2005}". **  And the spelling list MISSED it on a pair of braces: it looked for
+    #   `N_\mathrm{eff}` where the paper writes `N_{\mathrm{eff}}`.*
+    #   ⇒ *** The corpus already knew.  `P11`, in this directory, asserts the opposite of this
+    #     receipt's docstring about the same string -- "and `3.046` is NO LONGER at zero -- the absence
+    #     ENDED at `c54.205` (`L-527`) ... this check is now the REGRESSION GUARD on that filling" --
+    #     and `c54.205` is the commit `9fd40454`, whose message IS `P11`'s filename. ***
+    #   ⌗ *So the absence is not re-asserted and not quietly re-pinned to new counts: the loop now
+    #   measures every spelling INCLUDING the one in use, prints them all, and asserts the thing that
+    #   is true and load-bearing -- that the name is IN PRINT.  Station ⑨'s finding is superseded by
+    #   `P11` and this receipt says so rather than contradicting it.*
+    SPELLINGS = ('N_{\\mathrm{eff}}', 'N_{\\rm eff}', 'N_\\mathrm{eff}', 'Neff', '3.046',
+                 'effective number of')
+    seen = {k: len(re.findall(re.escape(k), allp)) for k in SPELLINGS}
+    for k in SPELLINGS:
+        print(f'      "{k}": {seen[k]}x across the papers')
+    # the live spelling is pulled out because an f-string expression may not contain a backslash
+    n_named, n_val = seen['N_{\\mathrm{eff}}'], seen['3.046']
+    check(f'⛭ THE ABSENCE HAS ENDED and this is the REGRESSION GUARD on it: the papers name the '
+          f'parameter -- {n_named}x in the live spelling and "3.046" {n_val}x -- where this receipt '
+          f'measured ZERO across all five spellings it then knew.  ** Supplied at `c54.205`, which is '
+          f"`P11`'s finding; the old list missed the live spelling on a pair of braces, and `n >= 0` "
+          f'is why nothing said so **',
+          n_named > 0 and n_val > 0)
     check('while the sector is otherwise deep: the lithium problem is named and worked',
           'lithium' in allp.lower())
     check('and D/H and Yp are present', 'D/H' in allp and ('Y_p' in allp or 'Yp' in allp))
@@ -100,16 +139,31 @@ def main():
               '(4.0/11.0)**(1.0/3.0)' in net or '(4/11)' in net)
         check('and to THREE neutrino species in the relativistic degrees of freedom',
               '3 nu' in net or 'three neutrino' in net.lower())
-        check('⇒⇒ SO THE STANDARD N_eff SETUP IS ADOPTED IN CODE AND STATED IN NO PAPER',
+        # ⛔⛭ r7125+cc66.98: THIS LABEL AND ITS CONDITION SAID OPPOSITE THINGS.  *The label read
+        # "ADOPTED IN CODE AND STATED IN NO PAPER" while the condition asserted
+        # `len(re.findall('Neff', allp)) > 0` -- that it IS in a paper.  Same rot as the loop above,
+        # and it could only survive because nobody read the pair together.*
+        check(f'⇒⇒ SO THE STANDARD N_eff SETUP IS ADOPTED IN CODE -- and it is NOW NAMED IN PRINT too '
+              f'({n_named}x in the live spelling), which is the half this receipt was written before.  '
+              f"** The code commitment is the part that still stands as this receipt's own; the "
+              f"naming is `P11`'s **",
               ('(4.0/11.0)**(1.0/3.0)' in net or '(4/11)' in net)
-              and len(re.findall('Neff', allp)) > 0)
+              and n_named > 0)
 
     # ⓸ and why it is not cosmetic here
     check("⌗ and the construction carries a right-handed neutrino in the colourless four",
           'right-handed' in allp and ('nu_R' in allp or '\\nu_R' in allp or 'neutrino' in allp))
-    check('⇒ SO "does CR adopt the standard N_eff, or does its nu_R structure predict a departure?" is '
-          'a real unasked question, and the unnamed adoption is what hides it',
-          len(re.findall('Neff', allp)) > 0 and 'right-handed' in allp)
+    # ⛔⛭ r7125+cc66.98: the THIRD stale pairing in this file.  *The label said "the unnamed adoption
+    # is what hides it" while the condition asserts the name IS present -- and the question it calls
+    # "unasked" has since been ANSWERED, by `P11` in this directory: CR gives the nu_R a place and no
+    # interactions, N_eff counts thermalized species, so CR makes no N_eff prediction at all.*
+    #   ⇒ *So the question is recorded as ASKED AND ANSWERED, with `P11` named, and what is asserted is
+    #   the two facts this receipt measures: the name is in print and the nu_R is in the grading.*
+    check(f'⇒ SO "does CR adopt the standard N_eff, or does its nu_R structure predict a departure?" '
+          f'was a real unasked question -- ** and `P11` has since answered it: CR fixes a PLACE and '
+          f'not a coupling, so it makes no N_eff prediction at all. **  The adoption is no longer '
+          f'unnamed ({n_named}x in print), which is what removed the hiding',
+          n_named > 0 and 'right-handed' in allp)
 
     # ⓹ the class
     closed = {k: len(re.findall(re.escape(k), allp, re.I))

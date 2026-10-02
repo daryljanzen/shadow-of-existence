@@ -114,10 +114,26 @@ def main():
     have = {k: len(re.findall(re.escape(k), allp, re.I))
             for k in ('temperature', 'Gibbons--Hawking', 'entropy', 'Hartle--Hawking',
                       'area law', 'Bekenstein--Hawking')}
-    check(f'the thermodynamic vocabulary is present: temperature {have["temperature"]}, '
+    # ⛔⛭ r7125+cc66.98: THIS CONTROL ASSERTED `> 20` / `> 5` / `> 5` -- ROUND NUMBERS STANDING IN FOR
+    # "the search reached live text".  *A threshold on a count that is not the claim is exactly where a
+    # count can hold while the thing it counts has moved (PO-76, class ⓵), and this one guards the
+    # ABSENCE claims below: if the glob found nothing or the regex broke, every count would be 0 and the
+    # absences would pass trivially.*
+    #   ⇒ *** So the liveness is now DERIVED FROM THE FILESYSTEM rather than declared -- the search must
+    #     have read EVERY `corpus/*.tex` less the generated appendices -- and the vocabulary check
+    #     asserts what its own label says: that the vocabulary is PRESENT. ***
+    #   ⌗ *The counts stay PRINTED, so a move is still visible; what is gone is the pretence that `20`
+    #   and `5` were measurements.  Same repair this seat made for `C63` ⓶ and `B4`/`B5` at r7119/r7123:
+    #   derive the bound from what is being measured, and assert the shape beside it.*
+    check(f'⌗ the search reached live text, derived and not declared: {len(P)} paper file(s) and '
+          f'{len(allp):,} characters -- every `corpus/*.tex` less the generated appendices, counted '
+          f'from the filesystem.  ** This is what the old `> 20` was standing in for. **',
+          len(P) == len(papers()) and len(P) > 0 and len(allp) > 0)
+    check(f'the thermodynamic vocabulary is PRESENT -- temperature {have["temperature"]}, '
           f'Gibbons--Hawking {have["Gibbons--Hawking"]}, entropy {have["entropy"]}, area law '
-          f'{have["area law"]}',
-          have['temperature'] > 20 and have['Gibbons--Hawking'] > 5 and have['entropy'] > 5)
+          f'{have["area law"]} -- which is what this check claims, with the counts printed so a move '
+          f'is visible and asserted nowhere',
+          have['temperature'] > 0 and have['Gibbons--Hawking'] > 0 and have['entropy'] > 0)
     # ⛔⛭ AMENDED r4522: ** THE ZERO WAS TRUE WHEN IT WAS TAKEN AND THE CORPUS HAS SINCE GROWN. **
     #    `r4501` wrote into `CR_synthesis.tex` (a paper that did not exist at r2536) the sentence
     #    "The one job it does elsewhere is to keep the second law from an entropy sink --- and
