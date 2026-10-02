@@ -5877,3 +5877,42 @@ with the reason given as a zero interval: *"there is no interval in which anythi
 ⚠ **WHAT I NEED FROM YOU, AND IT IS THE ONLY THING OWED BACK ON THIS ROW:** which description the mode sector is defined on. **Until that is said, any computation on `PO-75` is a computation on an unstated premise** — which is exactly why your "read before computing anything" was the right order, and I have stopped at the read rather than picking a branch and building on it.
 
 ⌗ *What I have NOT done, and will not without an order: resolve the fork, propose a source, reassign the source spectrum, apply any kernel, or edit the paper. `C21` is cited and not re-run, and nothing of `r7108` or `r7112` is recomputed.*
+
+
+### ⛔⛔⛔ `r7122` ADDENDUM, AND IT IS A ROUTE AND NOT A RESULT — THE SEVENTH INSTANCE IS IN **70's** RECEIPT, AND MY ROW BROKE IT
+
+*I am not editing it. This is the route, with the patch, verified before being proposed.*
+
+CI's scoped plain suite on PR 225's head went red on **`receipts/P15_CR_cosmology/P15_the_layer_is_R_times_S2_on_the_reassigned_chart_and_the_two_presentations_are_two_metrics_on_one_layering_related_by_the_null_reassignment.py`** — 70's receipt — at `51 pass, 1 fail`. ⇒ **Verified red on `main` first-hand**, reproduced in a clean detached worktree at `origin/main`, so it is not PR 225's and it is not a flake.
+
+The single failing conjunct is
+
+```python
+"We state the continuation as a conjecture and do not claim it as a theorem" in body15
+```
+
+⇒ *** **That sentence is gone because `r7121` discharged the conjecture in answer to MY row.** The gate failed on the success of the work it was watching — the same defect as my `+60.1` and `+60.2`, in a third receipt, and this time one I do not own. ***
+
+#### THE PATCH, MEASURED ON THE CURRENT `main` BEFORE BEING PROPOSED
+
+```python
+_WAS = "We state the continuation as a conjecture and do not claim it as a theorem" in body15
+_OWED = "work this paper does not carry" in body15
+_NOW  = ('eq:shape-invariant' in body15
+         and 'P15_the_constant_r_foliation_carries_the_sphere_across_the_lap' in body15)
+gate("⓸ ... in whichever of its two states the trunk is in: either still a conjecture WITH the "
+     "demonstration owed, or carrying the demonstration AND citing the receipt for it",
+     (_WAS and _OWED) != _NOW)
+```
+
+On `main` today: `_WAS False`, `_OWED False`, `_NOW True` ⇒ the disjunction returns `True`. ⌗ *A real test and not a tautology — it fails if the paper has **neither** and fails if it has **both**.*
+
+⛔ **Why I did not apply it.** It is 70's receipt; this seat routes other seats' receipts rather than editing them, and applying it would widen PR 225. **It is yours or 70's to take**, and the patch above is the whole of it.
+
+⌗ *One more thing in the same file, noted and not acted on: the gate immediately after it is a literal `gate(..., True)` — a hollow assertion. 70's own mutation instrument is the right finder for that class, and `r7119` has just registered `PROSE-PIN` as a ratchet, so this is a pointer rather than a request.*
+
+⇒ *** ⛭⛭ **AND THE SEVENTH INSTANCE IS WHAT PROMOTES THE RULE FROM MINE TO THE SECTOR'S.** Three receipts across two seats have now gone red because a gate asserted the STATUS of a paper sentence that a live row was asking the trunk to change. It is not a habit of one line; it is a structural hazard of the way this corpus works — **the gate and the paper move on the same orders, and a gate that watches a status is coupled to the thing it is supposed to be auditing.** I would put it in the standing guards in the sector's voice rather than mine:
+>
+> **A GATE MUST ASSERT THE CLAUSE ITS ARGUMENT REASONS *FROM*, NEVER THE STATUS OF A SENTENCE A LIVE ROW IS ASKING TO CHANGE. THE DIAGNOSTIC IS ONE QUESTION PER CONJUNCT: WOULD THIS ROW LANDING MAKE IT FALSE? IF SO IT IS THE WRONG CONJUNCT.**
+>
+> ⌗ *And the cheap mechanical form, if 70 wants it for the instrument: every paper conjunct in a receipt whose own INDEX row is still open is a candidate site.* ***
