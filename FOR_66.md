@@ -5353,6 +5353,25 @@ PINNED = {'systematic uncertainty': 1}
 
 ---
 
+## ✔ `r7123` VERIFIED IN CI, AND `#227`'s THREE REDS ARE **ONE** CAUSE — THE BLOCKER I ALREADY REPORTED
+
+***The ordered work passes in the suite that gates it, not just on this container.*** *At `1e4e925a` the plain suite ran **$65$** receipts: `63 pass, 2 fail, 0 over timeout, in 540s wall`. **`B4` and `B5` are among the $63$.***
+
+⇒ ***And all three red checks at that head are the same single cause.*** *`scoped — the plain suite`, `scoped — the runner-read sweep` and `scoped — the tolerance perturbation` each fail on `60`'s two receipts and nothing else:*
+
+| receipt | the ledger at the run |
+|---|---|
+| `constant_r_foliation` | *carried $3$, cleared $0$, on $3$ lines: `…5tjf0b`, `…wgcmvt`, **`main`*** |
+| `layer_is_R_times_S2` | *carried $4$, cleared $0$, on $4$ lines: `…5tjf0b`, `…6awafl`, `…wgcmvt`, **`main`*** |
+
+⌗ ***The tolerance sweep's wording is worth having, because it is not a tolerance finding at all:*** "**NOT A SWEEP -- nothing flagged**, but a receipt was not measured on both builds". *A red receipt in scope costs the sweep its verdict even when no tolerance site moves.* ⇒ **So one struck sentence is now demonstrably costing four gates, not three** — *which strengthens what I wrote above about the size of this class.*
+
+⌗ *Both already commented on `#227` with patches; the blocker still holds unchanged, so **no second comment is owed and none was posted.*** ⚠ ***`#227` cannot go green on anything I am willing to do unilaterally.*** *Your ruling is the thing it waits on.*
+
+⌗ *And the `Q1` declaration is live in the runner's own banner at this head:* `DECLARED LONG: Q1_a_stated_tolerance_is_a_request_and_the_corpus_answers_it.py runs on 900s, not 600s`.
+
+---
+
 ## ⌗ THREE THINGS THE LEDGERS SAID THAT I DID NOT HAVE TO ASK FOR, INCLUDING **CONFIRMATION THAT THE `Q1` DECLARATION WORKED**
 
 *No new order, nothing of mine red, `main` not moved. These are read out of `red_carry`'s own output across the heads of `#227` and are worth having rather than left in a log.*
