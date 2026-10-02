@@ -84,11 +84,51 @@ def check(label, cond):
         FAILED.append(label)
 
 
+def grid_step(ls):
+    """The abscissa the peaks are located on, READ from the banked grid rather than assumed.
+
+    ⛔⛭ r7123+cc66.92 -- WHY THIS EXISTS.  The residual pins below were windows FINER THAN THE
+    ABSCISSA their peaks sit on: `abs(r_c[i] - v) < 6` pinned residuals of INTEGER peak positions,
+    located by `argrelextrema` on the banked `ls` grid whose step is 8, to a window 6 wide.
+      ⇒ ** One bin on the pinned peak moves that residual by 8, and one bin on a FITTED peak (4..8)
+      moves EVERY residual, so the measured quantum is 9.6, 8.0, 8.0 on the first three and the
+      window sat below all three.  It fails 11 of 43 re-gridded trees. **
+      ⌗ *Found by `70`'s `TILT` operator at r7119+70.1 -- the import route hooked and a `CONSTANT`
+      exemption class added -- and routed at r7123.  It is `C63`'s check 2 again, which this seat
+      repaired at r7119+cc66.90 by deriving the window from the abscissa, in a different pair of
+      files and reached by a different operator.*
+      ⌗ ** And the CONTROL pin `max(abs(r_l[:3])) < 20` was NOT flagged and is the same defect: **
+      4 points of headroom against a 9.6-point quantum, failing 5 of the same 43 trees.  *Repaired
+      with it, because "a repair that stops at what was flagged leaves the file half-right" --
+      r7123's own words on the `C63` repair.*
+    ⛭ *So the windows are COMPUTED from the grid, and the claim is split into the SHAPE, which is
+    grid-free, and the record's figures at the resolution the grid supports.  `2 * step` is derived
+    and not chosen: one bin on the pinned peak plus the fit's own one-bin response, whose measured
+    maximum is 9.6 and whose bound is two bins.*
+    """
+    d = np.unique(np.diff(np.asarray(ls, dtype=float)))
+    if len(d) != 1:
+        raise SystemExit(f'the banked ell grid is not uniform, so no single quantum exists: {d[:5]}')
+    return float(d[0])
+
+
+def resid_quantum(pk, step, resid_of):
+    """How far ONE bin on ANY peak moves each residual -- the finest window they can support."""
+    pk = np.asarray(pk, dtype=float)
+    base, out = resid_of(pk), np.zeros(len(pk))
+    for j in range(len(pk)):
+        for d in (-1, 1):
+            p2 = pk.copy()
+            p2[j] += d * step
+            out = np.maximum(out, np.abs(resid_of(p2) - base))
+    return out
+
+
 def arm(name):
     z = np.load(os.path.join(SP, name + '.npz'))
     ls, Dl, lA = z['ls'], z['Dl'], float(z['l_A'])
     pk = ls[argrelextrema(Dl, np.greater, order=3)[0]]
-    return pk, lA
+    return pk, lA, grid_step(ls)
 
 
 def fit(pk, lA):
@@ -102,8 +142,8 @@ def main():
     print()
     print('  B4 -- is the intercept an acoustic phase shift?')
     print()
-    cr, lA_c = arm('c54.186_cr_L3000')
-    lc, lA_l = arm('c54.186_lcdm_L3000')
+    cr, lA_c, step_c = arm('c54.186_cr_L3000')
+    lc, lA_l, step_l = arm('c54.186_lcdm_L3000')
 
     check('both arms carry EIGHT peaks at production depth', len(cr) == 8 and len(lc) == 8)
 
@@ -143,11 +183,33 @@ def main():
           'those three disagreeing gaps',
           len([x for x in cr if x <= 1000]) == 4)
 
-    # ** the transient **
-    check('⌗ and the low-l transient is the CR arm\'s alone: first three residuals +142, +80, +18',
-          all(abs(r_c[i] - v) < 6 for i, v in enumerate((142, 80, 18))))
-    check('against the control\'s -3, +14, -16 -- its first peaks sit on its own line',
-          max(abs(r_l[:3])) < 20)
+    # ** the transient **  -- see grid_step() for why these windows are derived and not pinned
+    _resid_c = lambda p: fit(p, lA_c)[2]
+    _resid_l = lambda p: fit(p, lA_l)[2]
+    q_c = resid_quantum(cr, step_c, _resid_c)
+    q_l = resid_quantum(lc, step_l, _resid_l)
+    print(f'    ⌗ one bin on any peak moves the first three CR residuals by '
+          f'{q_c[0]:.1f}, {q_c[1]:.1f}, {q_c[2]:.1f} on a step-{step_c:.0f} grid; the control\'s by '
+          f'{q_l[0]:.1f}, {q_l[1]:.1f}, {q_l[2]:.1f}.  Every window below is set by that.')
+    check(f'⌗ and the low-l transient is REAL and not an artefact of which bins the peaks landed in: '
+          f'the first three CR residuals {r_c[0]:+.0f}, {r_c[1]:+.0f}, {r_c[2]:+.0f} are POSITIVE and '
+          f'STRICTLY DECREASING, and the first is {r_c[0] / q_c[0]:.1f}x the {q_c[0]:.1f} one bin '
+          f'would move it',
+          r_c[0] > r_c[1] > r_c[2] > 0 and r_c[0] > 2 * q_c[0])
+    check(f'⌗ᵃ and the tail is FLAT at the grid\'s own resolution while the head is not: '
+          f'max|r_4..8| = {max(abs(r_c[3:])):.1f} is inside two bins, where r_1 is '
+          f'{r_c[0] / step_c:.0f} bins off the line',
+          max(abs(r_c[3:])) <= 2 * step_c and r_c[0] > 2 * q_c[0])
+    check(f'⌗ᵇ and the record\'s +142, +80, +18 are recovered to the resolution the grid supports: '
+          f'off by {abs(r_c[0] - 142):.1f}, {abs(r_c[1] - 80):.1f}, {abs(r_c[2] - 18):.1f} against the '
+          f'{2 * step_c:.0f} two bins allow',
+          all(abs(r_c[i] - v) <= 2 * step_c for i, v in enumerate((142, 80, 18))))
+    check(f'against the control\'s {r_l[0]:+.0f}, {r_l[1]:+.0f}, {r_l[2]:+.0f} -- its first peaks sit '
+          f'on its own line: NO decaying transient, and the arm\'s first residual exceeds the '
+          f'control\'s largest by {r_c[0] - max(abs(r_l[:3])):.0f}, which is '
+          f'{(r_c[0] - max(abs(r_l[:3]))) / q_c[0]:.1f}x what one bin could explain',
+          not (r_l[0] > r_l[1] > r_l[2] > 0)
+          and r_c[0] - max(abs(r_l[:3])) > 2 * q_c[0])
 
     print()
     if FAILED:

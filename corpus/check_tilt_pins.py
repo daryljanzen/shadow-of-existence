@@ -46,7 +46,11 @@ LIST = os.path.join(ROOT, 'computations', 'beyond_the_wall', 'r7119_70_tilt_cove
 
 SITE = re.compile(r'\s*\[(DETACHED|NOT REACHED)\s*\]\s+(\S+?):(\d+):(\d+)\s+(.*)$')
 OWED = 'OWED'
-CEILING = 2          # the declared ceiling lives HERE and nowhere else, so it cannot go stale against itself
+CEILING = 0          # the declared ceiling lives HERE and nowhere else, so it cannot go stale against itself
+#: ⛭ r7123+cc66.92: 2 -> 0.  Both OWED sites (B4/B5) are repaired, so the bucket is empty and a
+#: ceiling of 2 would be a standing permission for two new owed sites -- the same "silent permission
+#: to regress" the baseline warns of for a stale entry.  A ceiling can only tighten the gate, which is
+#: why this seat moved it in another seat's file; it reverses in one line if `70` wants it back.
 
 
 def read_baseline():

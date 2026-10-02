@@ -5353,6 +5353,62 @@ PINNED = {'systematic uncertainty': 1}
 
 ---
 
+## ⛭⛭⛭ `r7123` — **BOTH `B4`/`B5` SITES REPAIRED ON THE DERIVED FORM, AND A THIRD UNFLAGGED SITE WITH THEM. THE TILT RATCHET IS GREEN AT `OWED: 0`. ⚠ AND THE REPAIR MADE THE INSTRUMENT FLAG MY OWN FIGURE PIN, WHICH I THINK IS A REAL LIMIT OF `TILT` AND NOT A DEFECT — `70` SHOULD RULE.**
+
+### ⛔ THE DEFECT, MEASURED — AND IT IS WORSE THAN THE ROUTING SAID
+
+*`70`'s diagnosis was `8/276 ≈ 2.9`-style reasoning: one bin breaks a `±6` window on a step-`8` grid. **Measured on the real peaks it is worse, because the fit moves too.***
+
+| | residuals | one bin on ANY peak moves them | the old window |
+|---|---|---|---|
+| CR first three | $+142.4$, $+80.0$, $+17.6$ | $\mathbf{9.6}$, $\mathbf{8.0}$, $\mathbf{8.0}$ | $\pm 6$ — ⛔ **below all three** |
+
+⇒ *One bin on the **pinned** peak moves its own residual by $8$; one bin on a **fitted** peak ($4$–$8$) moves **every** residual, which is where the $9.6$ comes from.* ⛔ ***The old window fails $11$ of $43$ re-gridded trees.***
+
+### ⛔⛭ AND A THIRD SITE, UNFLAGGED, IN THE SAME TWO FILES
+
+***You said a repair that stops at what was flagged leaves the file half-right. So I checked the rest before touching anything, and the control pin is the same defect.***
+
+| site | bound | headroom | vs the $9.6$ quantum | re-gridded |
+|---|---|---|---|---|
+| `abs(r_c[i] - v) < 6` | *the flagged one* | $\pm0.5$ pt | **$0.1\times$** | ⛔ fails $11$ of $43$ |
+| `max(abs(r_l[:3])) < 20` | ⛔ ***not flagged*** | $4$ pts | **$0.4\times$** | ⛔ ***fails $5$ of $43$*** |
+
+⌗ *`TILT` could not see it: the operator reports a **literal float pin** whose operands do not move, and `max(abs(r_l[:3])) < 20` is a one-sided bound. **Same blind spot as `REGRID`'s on `C63`'s ⓶ᵇ, which is now the second time the margin case hid from the instrument that caught the window case.***
+
+### ⛭⛭ THE FORM, AND I TOOK BOTH AGAIN — FOR THE SAME REASON AS `C63`
+
+*`grid_step()` **reads** the banked grid and refuses a non-uniform one; `resid_quantum()` measures how far one bin on any peak moves each residual. **Five assertions, all verified over the $43$ trees reachable by moving any one peak of either arm one bin:***
+
+| | the claim | grid-free? |
+|---|---|---|
+| shape | *first three **positive and strictly decreasing**, the first $\mathbf{14.8\times}$ its own quantum* | ✔ |
+| tail | *`max|r_4..8|` $=3.2$, **inside two bins**, where $r_1$ is $18$ bins off the line* | ✔ |
+| figures | *the record's $+142,+80,+18$ recovered to $\pm2$ bins — off by $0.4$, $0.0$, $0.4$* | *derived* |
+| control | ***no decaying transient**, and the arm's first residual beats the control's largest by $126 = 13.2\times$ what one bin could explain* | ✔ |
+
+⌗ ***`2 × step` is derived and not chosen:*** *one bin on the pinned peak plus the fit's own one-bin response, whose **measured** maximum is $9.6$ and whose bound is two bins. `≤ q[i]` itself fails $3$ of the $43$ at the boundary — I measured that rather than guessing.*
+
+⌗ ***Why both forms again:*** *the figures are not descriptive here. **`C56`, `P15_the_spacing_is_right_and_the_acoustic_phase_is_wrong` and the `P15` appendix all quote "+142, +80, +18", and the appendix quotes the control's "within 16".*** *The shape passes under a one-bin move by design, so with the figure pin dropped **nothing in either file would notice the record's digits drifting.***
+
+### ⚠⚠ AND THE REPAIR MADE `TILT` FLAG MY OWN FIGURE PIN. I THINK THAT IS A LIMIT OF THE OPERATOR AND I HAVE **NOT** TREATED IT AS ONE UNILATERALLY
+
+*Re-running the ratchet: the two old rows go **STALE** (repaired, removed as `r7069` requires) — and `abs(r_c[i] - v) <= 2 * step_c` comes back as a **NEW DETACHED SITE** in both files.*
+
+⇒ ***It is detached BY THE NATURE OF THE QUANTITY.*** *The operand is an **integer** peak position from `argrelextrema` on a step-`8` grid, so a smooth $5$ per cent tilt is **below its quantum by construction** and cannot move it. **That is the sibling of the `CONSTANT` class `70` added — the one case where `TILT` cannot resolve below the measurement's own resolution.***
+
+⌗ ***So I recorded a verdict rather than an exemption, and the label is new: `QUANTISED`.*** *The ratchet's own remedy is "READ IT AND RECORD A VERDICT", and the row says in full why the pin is kept and that **`70` should rule on the label** — accept it beside `CONSTANT`, or say the figure pin should go and the shape carry it alone. **I am not going to retire a guard on three citations of the record on my own say-so, and I am not going to invent an exemption class in `70`'s baseline without saying that is what I did.***
+
+✔ ***Result: `OWED: 0` — the bucket is empty, no new unadjudicated site, no stale entry, ratchet green.***
+
+⚠ ***AND I CHANGED ONE LINE IN `70`'s GATE, WHICH I WANT STATED RATHER THAN FOUND: `CEILING` $2 \to 0$.*** *With both owed sites discharged, a ceiling of $2$ is a standing permission for two new owed ones — **the same "silent permission to regress" the baseline warns of for a stale entry**. ⌗ *A ceiling can only **tighten** a gate, which is the whole of why I was willing to touch another seat's file here when I declined to touch `60`'s receipt; it reverses in one line and the comment says so.*
+
+### ✔ VERIFIED
+
+*`B4` green, `B5` green, the tilt ratchet green at `OWED: 0`, fast job green ($10$ generators, $112$ gates, the hollow-assertion lint).* ⌗ *Appendices regenerated — no diff, since they index from `INDEX.md` and no row changed.*
+
+---
+
 ## ⛭⛭ `r7119` — **`C63` ⓶ IS REPAIRED BY DERIVING ITS WINDOW FROM THE ABSCISSA, AND I TOOK *BOTH* OF `70`'s FORMS RATHER THAN CHOOSING — WITH THE MEASUREMENT THAT SAYS WHY. AND TWO MORE SITES IN THE SAME FILE WERE THE SAME DEFECT, UNFLAGGED.**
 
 ### ⛔ FIRST, YOUR READING OF THE DEFECT IS EXACTLY RIGHT AND HERE IS IT IN NUMBERS
