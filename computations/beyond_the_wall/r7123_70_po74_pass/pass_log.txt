@@ -1,0 +1,32 @@
+
+====================================================================================================
+  (1) DERIVED OR POSITED
+====================================================================================================
+      the receipt's layer metric, as written: G3 = sp.diag(r ** 2, r ** 2 * sp.sin(chi) ** 2, r ** 2 * sp.sin(chi) ** 2 * sp.sin(th) ** 2)
+  [PASS] the receipt's layer metric along the bead is WRITTEN DOWN as the round S^3, r^2 dOmega_3^2 (its line `G3 = sp.diag(r ** 2, r ** 2 * sin(chi) ** 2, ...)`): it is the input, not a computed induced metric
+  [PASS] and on ANY round S^3 of ANY radius a, R V^(2/3) = 6*2**(2/3)*pi**(4/3): the invariant is the same pure number by IDENTITY, so "the same at every point of the bead" restates that the input was a round S^3 at every point
+      Berger sphere: R = 2*(4 - epsilon**2)/a**2,  V = 2*pi**2*a**3*epsilon,  R V^(2/3) = 2*2**(2/3)*pi**(4/3)*epsilon**(2/3)*(4 - epsilon**2)
+  [PASS] CONTROL: on a squashed (Berger) S^3 the same invariant VARIES with the squashing and equals 6(2 pi^2)^(2/3) only at eps = 1, the round one -- so it is a genuine shape detector WHEN it is applied to a metric obtained independently; applied to a metric posited round, it can only return round
+
+====================================================================================================
+  (2) FITTED OR APPLIED
+====================================================================================================
+      the template with the chi block set to an ARBITRARY constant h: eigenvalues [0, r**(-2), r**(-2)], scalar 2/r**2
+  [PASS] the two-substitution template sends the round S^3 to h dchi^2 + r^2 dOmega_2^2 for ANY h, with eigenvalues (0, 1/r^2, 1/r^2) whatever h is -- so reproducing 70's eigenvalues is NOT evidence that the chi-block step was the reassignment: the receipt's own gate B already shows the unwarping alone gives them
+  [PASS] and "-f(r)" is SELECTED by matching the target: no rule in the receipt maps r^2 to -f(r) that would not equally map it to 1, r^2 or any h (its own text: "re-signed by the promoted null condition", stated, not applied)
+
+====================================================================================================
+  (3) THE COORDINATE IDENTITY
+====================================================================================================
+      S^3 polar form r^2[dchi^2 + sin^2 chi dOmega^2]: chi is an ANGLE (dimensionless); g_chichi = r^2 ~ L^2
+      eq:proper-frame -dtau^2 + (d_chi r)^2 dchi^2 + ...: tilde-tau = tau + chi, so chi ~ L; g_chichi = (d_chi r)^2 ~ 1, and on the layer -f(r) ~ 1
+  [PASS] the chi of the S^3 polar form is a dimensionless angle and the chi of eq:proper-frame is a comoving label with the dimension of time (tilde-tau = tau + chi): "r^2 -> -f(r) on the chi block" swaps an L^2 coefficient for a dimensionless one, which is consistent only with an UNSTATED change of the coordinate (chi_length = r chi_angle at fixed r) -- so the step is a rescaling plus a coefficient change 1 -> -f, and the coefficient change is the part not derived
+
+====================================================================================================
+  (4) WHAT SHOULD HOLD
+====================================================================================================
+  [PASS] the inflection r'' = 0 sits at r_N = alpha/sqrt3 IDENTICALLY at the Nariai mass
+  [PASS] f(r_N) = f'(r_N) = 0 at the Nariai mass: the double root
+  [PASS] and the reassigned layer's chi block -f(r) = (d_chi r)^2 - 1 vanishes there: the constant-tilde-tau layer is NULL exactly at the inflection (70's r7111 finding, read in 60's terms) -- so 60's withdrawal of "the two metrics degenerate in different places" STANDS
+
+  9 checks, 9 pass

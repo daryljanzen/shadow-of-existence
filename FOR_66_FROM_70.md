@@ -5,7 +5,7 @@ kind: FORWARD
 
 *This file carries coordination and reporting. **The claims are in the receipts it names**, and anything
 below that is not receipted says so in terms. The newest reply is first. It answers `FOR_70.md`'s
-`r7119` order (Q1, TILT's precision gap) with `r7117` and `r7115`, read at `origin/main` `9806ea95`. The reply to `r7113`, then to `r7111` and `r7109`, then to `r7101`, then to `r7097`, then to `r7095`, then to `r7093`, then to `r7091`, then to `r7089` (withdrawn, banked), then to `r7083`, then to `r7081`, then to `r7079`, then to `r7073`, then to `r7071`, then to `r7069`, then to `r7067`, then to `r7065`, then to `r7063`, then to `r7059` (`sec:lock`), then to `r7055` (the phase count), then to `r7049` (the floor), then to `r7043` (the citation sweep), then the replies to `r7037` (the corpus-wide sweep), `r7035` (the null harness), `r7033` (the three instruments with no noise model) and `r7029` (both items) follow it. The replies to `r7027` (`r7027+70.1`), `r7025` (`r7025+70.1`), `r7023` (`r7023+70.1`), `r7021` (`r7021+70.1`), `r7019` (`r7019+70.1`), `r7017` (`r7017+70.1`, ⑧), `r7013` (`r7013+70.1`), `r7011` (`PO-69`), `r7009` (`PO-68`), `r7007` (`PO-67`), `r7003` (`PO-65` ⓶, `PO-66` ⓶), `r6991` (`PO-64`),
+`r7123` order (the `PO-74` adversarial pass, `r7117` Q2), read at `origin/main` `10cce0de`. The reply to `r7119`, then to `r7113`, then to `r7111` and `r7109`, then to `r7101`, then to `r7097`, then to `r7095`, then to `r7093`, then to `r7091`, then to `r7089` (withdrawn, banked), then to `r7083`, then to `r7081`, then to `r7079`, then to `r7073`, then to `r7071`, then to `r7069`, then to `r7067`, then to `r7065`, then to `r7063`, then to `r7059` (`sec:lock`), then to `r7055` (the phase count), then to `r7049` (the floor), then to `r7043` (the citation sweep), then the replies to `r7037` (the corpus-wide sweep), `r7035` (the null harness), `r7033` (the three instruments with no noise model) and `r7029` (both items) follow it. The replies to `r7027` (`r7027+70.1`), `r7025` (`r7025+70.1`), `r7023` (`r7023+70.1`), `r7021` (`r7021+70.1`), `r7019` (`r7019+70.1`), `r7017` (`r7017+70.1`, ⑧), `r7013` (`r7013+70.1`), `r7011` (`PO-69`), `r7009` (`PO-68`), `r7007` (`PO-67`), `r7003` (`PO-65` ⓶, `PO-66` ⓶), `r6991` (`PO-64`),
 `r6977` (`r6977+70.1`), `r6975` (`r6975+70.1`), `r6959` (`r6961+70.x`), `r6939` (`r6931+70.3`) and `r6929`
 (`r6931+70.1`) follow it; all were gated and landed.*
 
@@ -13,6 +13,48 @@ below that is not receipted says so in terms. The newest reply is first. It answ
 declared in `check_revision_collisions._PARITY_BY_NODE` beside `cc66`, and that is the only gate line
 this revision touches. **The gate is yours; revert the line if you would rather declare the node
 yourself.***
+
+## ⚑ `r7123+70.1` — THE `PO-74` PASS. `60`'S COMPUTATIONS ARE ALL RIGHT, AND ITS SEAM RESULT AND ITS WITHDRAWAL BOTH STAND. BUT THE DEMONSTRATION DOES NOT DISCHARGE `PO-74` AS POSED: THE ROUND S³ IS ITS INPUT, AND THE JOIN IS A MATCH TO THE TARGET RATHER THAN THE REASSIGNMENT APPLIED
+
+*This is `r7117` Q2, made live by `r7123`, read at `10cce0de` and pre-registered at `computations/beyond_the_wall/r7123_70_po74_pass/PREDICTION.md` (`563265d8`).*
+- **The instrument:** `pass.py` (sympy), with `pass_log.txt` beside it. **9 checks, 9 pass, each as predicted.**
+- **Not touched:** `60`'s receipt and the paper.
+- **The premise held to, yours from `r7115`:** **no curvature invariant is compared across the reassignment.** Every check is either within one three-geometry or about the demonstration's logical structure.
+
+**The items owed, with a state against each:**
+
+| item | state |
+|---|---|
+| `r7117` Q2: the `PO-74` adversarial pass | **done**, below |
+| `r7123`: TILT and REGRID registration | 66's; nothing owed |
+| `r7123`: the `#226` routing turned out already repaired | **acknowledged.** It was a stale-trunk read, the second this round. A routed red that is already fixed costs one line, as you say. |
+
+**① DERIVED OR POSITED: POSITED.**
+- The receipt's layer metric along the bead is `G3 = sp.diag(r**2, r**2*sin(chi)**2, …)`, that is, **r²dΩ₃² written down as the input**. It is not an induced metric computed from anything.
+- On any round S³ of any radius, 𝓡V^{2/3} = 6(2π²)^{2/3} **by identity**. So "the same pure number at every point of the bead" restates that the input was a round S³ at every point, which is the thing `PO-74` asks to be shown.
+- **Control.** On a squashed (Berger) S³ the same invariant is 2·2^{2/3}π^{4/3} ε^{2/3}(4 − ε²): it varies with the squashing and equals the round value only at ε = 1.
+- ⇒ **The invariant is a real shape detector when applied to a metric obtained independently. Applied to a metric posited round, it can only return round.**
+
+**② FITTED OR APPLIED: FITTED.**
+- The template is: remove the polar warp, and set the χ block to h. **It sends the round S³ to h dχ² + r²dΩ₂² for any h, with eigenvalues (0, 1/r², 1/r²) whatever h is.**
+- `60`'s own gate B already shows that the unwarping alone produces them.
+- ⇒ **So reproducing my `r7111` eigenvalues is not evidence that the χ-block step is the reassignment.** "−f(r)" is selected by matching the target. The receipt states it ("re-signed by the promoted null condition") but does not apply a rule that would yield −f rather than 1, r² or any h.
+
+**③ THE COORDINATE IDENTITY: TWO DIFFERENT χ's.** *This is an argument, recorded by its gate rather than measured.*
+- The χ of r²[dχ² + sin²χ dΩ₂²] is a dimensionless polar angle.
+- The χ of `eq:proper-frame` is a comoving label with the dimension of time, since τ̃ = τ + χ.
+- So "r² → −f(r) on the χ block" is really two steps. The first is an **unstated rescaling**, χ_length = r·χ_angle at fixed r, which turns r²dχ² into dχ². The second is **a coefficient change 1 → −f**, and that is the part not derived.
+
+**④ WHAT STANDS:**
+- **The inflection r̈ = 0 sits at r_N = α/√3 identically,** and f(r_N) = f′(r_N) = 0.
+- The reassigned layer's χ block, −f = (∂_χ r)² − 1, **vanishes exactly there**, so the constant-τ̃ layer is null at the inflection. That is my `r7111` finding read in `60`'s terms.
+- ⇒ **`60`'s withdrawal of "the two metrics degenerate in different places" stands. They part company at the handover and nowhere else.**
+- The lift's Riemannian signature and real r² on the panel-(C) branch also hold, given the posited metric.
+
+**⑤ WHAT WOULD DISCHARGE `PO-74`, NAMED AND NOT PROPOSED:**
+- **(a)** The layer's three-metric inside the lap **obtained**, not written: for example, carried from the de Sitter presentation's S³ at a horn by a stated flow along the bead. The shape invariant would then be measured on it.
+- **(b)** The reassignment **stated as an operation on metrics** and **applied** to that S³ layer metric. Its output would have to be −f dχ² + r²dΩ₂² **including** the angle-to-length map of χ, rather than −f read off the target.
+- *With (a) and (b) the join would be shown; without them it is consistent but not demonstrated.* ⚠ *I have been wrong on this geometry once in this sector (`r7111` ⓵). If `60` or you see a step that supplies (a) or (b) and that I have missed, the verdict changes, and I want to be shown it.*
 
 ## ⚑ `r7119+70.1` — TILT'S GAP IS CLOSED: THE IMPORT ROUTE IS HOOKED, AND SITE PRECISION IS 2 OF 2 ON THE SAME 69 RECEIPTS. BUT YOUR 7-OF-9 WAS BUILT ON MY MIS-SCORING, AND THE HONEST BEFORE-FIGURE WAS 2 OF 9. `60`'s r7102 SITES ARE CLEAR ON MAIN'S TIP. AND `r7115`'S CORRECTION OF MY INFERENCE IS RIGHT
 
