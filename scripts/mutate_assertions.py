@@ -168,7 +168,70 @@ def install_tilt():
         MUT['reads'] += 1
         return _tilt_json(r)
     json.load = jload
+    _install_import_tilt(MUT)
     return MUT
+
+
+# ⛭ r7119+70.1 (r7119 Q1): THE IMPORT ROUTE.  r7113's TILT reached data only through the four loaders, so a
+#   receipt that takes its measurement by EXECUTING an instrument (C62's `_m._rD`, read off ACOUSTIC_two_arm
+#   imported with importlib) was filed DETACHED although it reads its data -- by a route the tilt did not
+#   perturb.  Every module executed from an instrument directory now has its float and float-array attributes
+#   tilted after execution, each by its own factor keyed on module file and name.
+def _instrument_dirs():
+    env = os.environ.get('MUTATE_INSTRUMENT_DIRS')
+    if env:
+        return [os.path.abspath(d) for d in env.split(os.pathsep) if d]
+    return [os.path.join(ROOT, 'computations'), os.path.join(ROOT, 'storyboard_receipts')]
+
+
+def _tilt_module(mod, origin, MUT):
+    import numpy as np
+    n = 0
+    for k, v in list(vars(mod).items()):
+        if k.startswith('__'):
+            continue
+        tag = f'{origin}::{k}'
+        if isinstance(v, float) and not isinstance(v, bool):
+            setattr(mod, k, float(_tilt_array(np.array(v), tag)))
+            n += 1
+        elif isinstance(v, np.ndarray) and v.dtype.kind in 'fc' and v.size:
+            setattr(mod, k, _tilt_array(v, tag))
+            n += 1
+    MUT['imports'] = MUT.get('imports', 0) + 1
+    MUT['reads'] += 1 if n else 0
+
+
+def _wrap_spec(spec, MUT):
+    origin = os.path.abspath(getattr(spec, 'origin', '') or '')
+    if not spec or not spec.loader or not any(origin.startswith(d + os.sep) for d in _instrument_dirs()):
+        return spec
+    ex = spec.loader.exec_module
+    if getattr(ex, '_tilted', False):
+        return spec
+
+    def exec_module(mod):
+        ex(mod)
+        _tilt_module(mod, origin, MUT)
+    exec_module._tilted = True
+    try:
+        spec.loader.exec_module = exec_module
+    except Exception:
+        pass
+    return spec
+
+
+def _install_import_tilt(MUT):
+    import importlib.machinery
+    import importlib.util
+    _sffl = importlib.util.spec_from_file_location
+    importlib.util.spec_from_file_location = lambda *a, **k: _wrap_spec(_sffl(*a, **k), MUT)
+
+    class _Finder:
+        @staticmethod
+        def find_spec(name, path=None, target=None):
+            spec = importlib.machinery.PathFinder.find_spec(name, path, target)
+            return _wrap_spec(spec, MUT) if spec else None
+    sys.meta_path.insert(0, _Finder)
 
 
 def install_regrid():
@@ -291,6 +354,51 @@ def _fed_by_locator(node, tree, src):
     return False
 
 
+_DATA = re.compile(r"np\.load|loadtxt|genfromtxt|json\.|open\(|import|exec_module|subprocess|environ|\.npz|"
+                   r"\bz\[|\bglob\b|read\(")
+_MATH = {'abs', 'float', 'int', 'round', 'min', 'max', 'sum', 'len', 'range', 'np', 'math', 'pi', 'log', 'exp',
+         'sqrt', 'True', 'False', 'None'}
+
+
+def _constant(node, tree, src, depth=4):
+    """CONSTANT (r7119+70.1): does the comparison's operand trace only to literals and arithmetic -- local
+    functions included -- with no loader, file, import or environment in the trace?  Such a pin checks a quoted
+    figure by arithmetic and has no data to be detached from.  Unresolved names count as data (conservative)."""
+    asg, fns = _defs(tree)
+    seen, todo = set(), [node]
+    computes = [False]          # ⛭ a bare literal COPIED and compared with itself checks nothing: it stays DETACHED.
+    #                             CONSTANT needs the trace to compute something (an operator or a call)
+    for _ in range(depth):
+        nxt = []
+        for e in todo:
+            seg = ast.get_source_segment(src, e) or ''
+            if _DATA.search(seg):
+                return False
+            if e is not node and any(isinstance(x, (ast.BinOp, ast.Call)) for x in ast.walk(e)):
+                computes[0] = True
+            for n in ast.walk(e):
+                if isinstance(n, ast.Name) and n.id not in seen:
+                    seen.add(n.id)
+                    if n.id in _MATH or n.id in dir(__builtins__):
+                        continue
+                    if n.id in fns:
+                        body = ast.get_source_segment(src, fns[n.id]) or ''
+                        if _DATA.search(body):
+                            return False
+                        computes[0] = True
+                        continue
+                    if n.id in asg:
+                        nxt += asg[n.id]
+                        continue
+                    if any(isinstance(a, ast.arg) and a.arg == n.id for a in ast.walk(tree)):
+                        continue                          # a function's own parameter: its caller's literal
+                    return False
+        if not nxt:
+            return computes[0]
+        todo = nxt
+    return False
+
+
 def judge(root, out, mode):
     rows, unreached = [], []
     for pc in sorted(glob.glob(os.path.join(out, 'clean', '*.json'))):
@@ -324,6 +432,9 @@ def judge(root, out, mode):
                 if _vals_equal(a['vals'], b['vals']):
                     if lit:
                         continue                      # a literal against a literal is the static class
+                    if _constant(node, tree, src):
+                        rows.append(dict(receipt=rel, site=sid, kind='CONSTANT', cls=k, text=seg[:140]))
+                        continue
                     # ⛭ INVARIANT BY DESIGN, read off the first population run (r7113+70.1: 14 of 31 DETACHED):
                     #   an exactness check (`== 0.0`, or a tolerance at or below 1e-8 -- an identity or a no-op
                     #   that two paths agree) and a sign agreement are SUPPOSED not to move.  Counted, not flagged.
@@ -449,6 +560,14 @@ j = int(np.argmax(y))
 a, b, c = y[j - 1], y[j], y[j + 1]
 peak_c = ls[j] + 0.5 * (a - c) / (a - 2 * b + c) * (ls[1] - ls[0])
 assert abs(peak_c - 300.4) < 5.0                      # an interpolated (continuous) locator: must NOT flag
+import importlib.util, os
+_sp = importlib.util.spec_from_file_location("inst", os.path.join(os.path.dirname(os.path.abspath(__file__)),
+                                             "computations", "inst_mod.py"))
+_m = importlib.util.module_from_spec(_sp)
+_sp.loader.exec_module(_m)
+assert abs(_m.RD / 7.5 - 1) < 0.2                     # read through an IMPORTED instrument: must NOT flag
+ppp = 2 * np.pi * (3 * 260 - 1) / (2000 - 12)
+assert abs(ppp - 2.4621) < 0.01                       # arithmetic on constants, CONSTANT: must NOT flag
 '''
 _SEED_DATA = 'import numpy as np\nls = np.arange(100, 500, 8)\ny = 0.1 + np.exp(-((ls-300.4)/40.0)**2)\n' \
              'np.savez("data.npz", ls=ls, y=y)\n'
@@ -491,6 +610,9 @@ def seed():
         os.makedirs(d)
         os.makedirs(os.path.join(d, 'corpus'))
         subprocess.run([sys.executable, '-c', _SEED_DATA], cwd=d, check=True)
+        os.makedirs(os.path.join(d, 'computations'))
+        open(os.path.join(d, 'computations', 'inst_mod.py'), 'w').write('import math\nRD = 7.5 * math.cos(0.0)\n')
+        os.environ['MUTATE_INSTRUMENT_DIRS'] = os.path.join(d, 'computations')
         for name, body in (('T1_tilt.py', _SEED_TILT), ('G1_regrid.py', _SEED_REGRID),
                            ('ACOUSTIC_two_arm.py', _SEED_INST), ('P1_prose.py', _SEED_PROSE)):
             open(os.path.join(d, name), 'w').write(body)
