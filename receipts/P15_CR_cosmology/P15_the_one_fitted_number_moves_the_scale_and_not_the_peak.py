@@ -134,7 +134,16 @@ SKY_LA = SKY_L1 / SKY_RATIO
 
 #: P15's own quoted first peak for this arm, which this configuration must reproduce before its
 #: scan is worth reading.
-PAPER_L1 = 206
+#: ⛭⛭ r7109 (66): **206 -> 204, AND THE PAPER MOVED WITH IT IN THE SAME REVISION.**  *`cc66`
+#: routed the choice rather than making it: with the `LEAFREC=0` pin lifted, the faithful clock
+#: returns 204 at the pin and the band 204-208 across the scan, where the superseded clock gave 206
+#: and 206-210.  ** The gate's call is that the paper carries the FAITHFUL configuration's value **
+#: -- quoting the superseded clock would be quoting a configuration the construction does not
+#: specify -- so `P15`'s sentence now reads 204 to 208 and this pin follows it.  ⌗ *The one-`LSTEP`
+#: tolerance `cc66` added stays: it is right for a peak on a 2-wide grid and buys nothing it is not
+#: owed.*  ⚠ *This file is `cc66`'s and 66 does not edit it as a rule; the exception is whoever's
+#: edit broke it, and that is this seat's paper change.*
+PAPER_L1 = 204
 PIN = 6761
 
 ONSETS = (4500, PIN, 8600, 16000)
@@ -234,18 +243,18 @@ def main():
     #   from sec:refit-bound.  ** What P15 says now is THIS receipt's scan as the reason: "Where the
     #   plasma starts moves the scale and not the peak, which is why the start is not free.  Scanning
     #   a hand-placed start over a factor of $3.6$ runs $\ell_{A}$ from $360.6$ down to $239.3$ while
-    #   the first peak sits between $206$ and $210$" \rcpt{this file}. **  So the pin follows the
+    #   the first peak sits between $204$ and $208$" \rcpt{this file}. **  So the pin follows the
     #   correction: the finding (the start moves the denominator and not the numerator) is what the
     #   paper now cites it for, and the check no longer asserts the onset is a parameter the
     #   construction carries.  The file keeps its name; the docstring says what it now means.
     check('⓵ᶜ and P15 states this scan in its own voice as the reason the start is NOT a parameter: '
           '"Where the plasma starts moves the scale and not the peak, which is why the start is not '
-          'free", with the scan\'s 360.6 / 239.3 / 206-210 and this receipt cited, and "no '
+          'free", with the scan\'s 360.6 / 239.3 / 204-208 and this receipt cited, and "no '
           'early-universe parameter" in the bill',
           'Where the plasma starts moves the scale and not the peak, which is why the start is not '
           'free' in p15
-          and 'runs $\\ell_{A}$ from $360.6$ down to $239.3$ while the first peak sits between $206$ '
-              'and $210$ throughout\\rcpt{P15_the_one_fitted_number_moves_the_scale_and_not_the_peak}'
+          and 'runs $\\ell_{A}$ from $360.6$ down to $239.3$ while the first peak sits between $204$ '
+              'and $208$ throughout\\rcpt{P15_the_one_fitted_number_moves_the_scale_and_not_the_peak}'
           in p15
           and 'There is no early-universe parameter among them' in p15
           and 'the one fitted number' not in p15)
@@ -363,8 +372,8 @@ def main():
             print(f'      {f_[:110]}')
         return 1
     print('  *** THE PIN CANNOT REACH THE DEFICIT.  The one fitted number moves l_A by 51% across')
-    print('    the scan and l_1 by 2%, so the first peak sits at 206 against the sky\'s 220.6')
-    print('    whatever the onset is.  0.6830 and -6.6% are two spellings of that one number.')
+    print('    the scan and l_1 by 2%, so the first peak sits at 204 against the sky\'s 220.6')
+    print('    whatever the onset is.  0.6764 and -7.5% are two spellings of that one number.')
     print('    "Both pinned" is unreachable because the control\'s scale is a limit, not a root.')
     print('    ⌗ Each arm on its own geometry throughout.')
     print('  ' + '=' * 74)
