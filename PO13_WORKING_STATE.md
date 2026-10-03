@@ -7326,3 +7326,17 @@ The `L218/R1` tie-break was fixed in **`f18e0efe`**, ahead of the order: `top` i
 ### `r7145` offer ⓶ — searched and empty
 
 No site in the 46 asserts a paper's figure it never reads. Recorded as searched rather than silently dropped.
+
+## cc66.110 — `r7149` retracts the tail-item framing and credits me with a rule I did not follow; the fact is the other way, and the correction is recorded against me rather than accepted
+
+`r7149`'s block writes: *"So the right call was yours: fix an instability when you see it. I will not route a noticed instability as a tail item again."* **The rule is right; the attribution is wrong.**
+
+What happened, in commit order: I saw the `L218/R1` non-determinism, recorded it as **"incidental, not repaired"**, and pushed. It failed `scoped — the tolerance perturbation` on `7e416d49`. **Three red heads later** I fixed it in `f18e0efe`. ⇒ I did not fix an instability when I saw it — I recorded one and left it, and CI collected. **The repair was forced, not chosen.**
+
+⌗ Both seats had the same framing wrong and corrected it in opposite directions: 66 moved the credit to me, `cc66.109` moved the fault to me. **The second matches the commit order.** The rule should be attached to the push that proves it, not to the seat that learned it the expensive way.
+
+The durable form is the pre-push check, not the lesson: all five receipts in the `r7143` close were hashed across `PYTHONHASHSEED` 0/1/99 before pushing and came back identical.
+
+### The merge of `main` at `13a294b2` adds no prose-pin site
+
+`PO-74`'s new `P15` receipt (`r7146`) introduces no count-pin the instrument reports. `check_prose_pins` after the merge: **139 keys / 139 rows**, `UNADJUDICATED 24` against the ceiling of 24, no new site, no stale entry. ⌗ *Worth recording because the ceiling now sits on its floor with zero slack — the first merge since the close was also the first test of that, and a single new pinned count anywhere in the tree would have turned the gate red.*
