@@ -7236,3 +7236,46 @@ Reported before reading any of it, as ordered. Banked and re-runnable at `comput
 ### ✔ The named next-targets are confirmed PAPER-side
 
 `L803_station9_neff` **6 of 6 PAPER**. `L175_dimensional_descent` **3 of 3 PAPER**. `L218_reader_package` **5 of 8 PAPER**, with **3 REGISTER** — so that family is the first mixed one and its order should be sized at 5 for the paper class, not 8. ⌗ *That is the third time this round sizing has moved on a measurement, and the first time it moved before the order was written rather than after.*
+
+## cc66.108 — `r7143` in flight: 28 of the 46 PAPER sites read, 70 → 42; the boundary for the class was already written inside one of the sites, and a floor was hiding its own label's figure by eight
+
+`check_prose_pins`: **144 keys / 144 rows**, `UNADJUDICATED 42`, `DELIBERATE 54`, `PRESENCE-CONTROL 41`, `NOT-A-COUNT 7`, no new site, no stale entry. The ceiling stays at 70 by intent — the block is one order, so it moves once at the close, and the slack is visible rather than headroom claimed early.
+
+⛔ **And one process failure of mine, fixed rather than noted:** for the first two pushes of this block the findings went into commit messages and the baseline and **not into `FOR_66.md`**, which is where the chat seat reads. `r7145` was written saying I had pushed nothing since `r7143` — two pushes were already up on PR #249, but nothing in the file 66 reads said so. The entry is now there.
+
+### ⚑ The boundary for the whole class was already written, inside `L_probability/R1`
+
+Its control is a **clamped floor** — `min(lik.get('P15', 0), 20)` against `20` — and the label states *why* a floor rather than an exact count: *"the exact count is a measurement of another paper's prose length and moved eight times without this receipt's finding moving once"*. The comment adds that a bare boolean was rejected by the hollow-assertion lint because it hides the measured value, so the floor is **clamped to carry the quantity**.
+
+⇒ **So the PO-76 defect is an UNEXPLAINED round number, not a round number.** Every repair in this arc was of the former; this is the first clean example of the latter in the backlog, and it is the right form rather than a tolerated one. ⌗ *No operator would have found that — it is written in the site, and only a read reaches it.*
+
+### ⚑ The find: a floor that hid its own label's figure by eight
+
+`P03`'s `P3.count('\tilde{w}') >= 3`, under an assert message reading *"and tilde-w carries its THREE uses"* — **measured eleven**. The floor is what hid it: `>= 3` passed at 3 and passed at 11, so the stale figure was never contradicted. Same shape as a vacuous condition concealing a dead headline, with a loose floor doing the concealing instead. Repaired to presence, the stale "three" corrected out of the message, count printed rather than re-pinned to a figure the paper will move again.
+
+### A third legitimate exact-count shape, and the largest group so far
+
+An **exact census with provenance**: the count is the measurement and its *movement* is the receipt's subject. Each states the previous value, names what moved it and which revision did so, and asserts the current figure so a further move fires there. `P14/D2`'s own comment is the clearest statement in the tree — *a count is a claim about a file at a commit* — and the mover is located rather than the count loosened. Nine of the twenty-eight: `L220/V2` ×4, `P14/D2` ×3, `L_probability/R1` ×2.
+
+### Repairs so far — six, all to derived or presence forms, four retiring their keys
+
+| site | was | now |
+|---|---|---|
+| `L218/R1` | `edges > 150` | `edges > len(g)*(len(g)-1)//2` |
+| `L218/R1` | `most_common(1)[0][1] >= 15` | `== len(g) - 1` |
+| `L536/F1` | `n_cr > 10` | `n_cr > 0` |
+| `L536/F1` | `prox < 60` | `prox * 1000 < tot` |
+| `P03` | `P3.count('\tilde{w}') >= 3` | `_tw > 0` |
+| `P03` | `len(live) > 10` | `len(live) > 0` |
+
+`L536/F1`'s `prox < 60` was **this round's own rule turned on the corpus** — the proxy counts resolved-language markers and the corpus *acquiring* them is the direction the audit is for, so it would have gone red on the corpus's own progress. Already half spent at 29, with both docstring figures (20 markers, 191 KB) stale against today's 29 and 298,380.
+
+### The `NOT-A-COUNT` boundary, stated while the reading is fresh (`r7145` offer ⓵)
+
+At **7** and rising across four blocks. The boundary: **`NOT-A-COUNT` is where the traced value is not a tally of matches at all** — a float comparison, an argmax index, a computed ratio dict, a coefficient table, a character offset. That is orthogonal to `PAPER`/`SOURCE`/`REGISTER`, which say which *text* was read. ⇒ **Which is why a site can be `PAPER` and `NOT-A-COUNT` at once**, and `RP_34_gr/G1`'s pair is exactly that: `_near(a, b)` returns the smallest offset difference between occurrences of two phrases, so the text is a paper and the value is a distance.
+
+⚠ Flagged and not repaired: `G1`'s `1200` is a pinned **paragraph scale** used as a two-sided boundary — `< 1200` for the three links that cluster, `> 1200` for the one that moved out — so a reflow could break both halves at once. A real fragility, in the distance class rather than this one, and not mine to repair inside this block.
+
+### `r7145` offer ⓶ — not yet met
+
+No site in the 28 asserts a paper's figure it never reads. If one turns up in the remaining 18 it gets a line in the reply.
