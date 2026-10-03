@@ -1,0 +1,16 @@
+# r7141+70.1 seeds: the gate on the unchanged tree, with one cannot-fail site ADDED, and with one REMOVED (restored after)
+## unchanged
+    the ratchet holds: 71 owed against a ceiling of 71
+
+  every assertion that cannot fail is counted, none is new, and the owed count is held.
+## one check(True, ...) ADDED to B1_the_index_argument_stops_where_a_mod_two_index_begins.py
+  CANNOT-FAIL RATCHET -- is every assertion that cannot fail counted, and is the owed count falling?
+  ⛔ 1 NEW CANNOT-FAIL KEY(S) or count rise(s) -- an assertion that cannot fail was added:
+    [FAIL] +1 T2 receipts/L221_the_bridge/B1_the_index_argument_stops_where_a_mod_two_index_begins.py
+    the ratchet holds: 71 owed against a ceiling of 71
+  ⛔ THE CANNOT-FAIL RATCHET IS RED.
+## the TAUTOLOGY len(after) >= 0 REMOVED from B1_a_finding_that_routes_its_own_remedy_and_then_recurs_is_not_waiting.py
+  ⛔ 1 STALE BASELINE ENTR(Y/IES) -- fewer live sites than recorded.  Lower or remove the row:
+    [STALE] -1 T1 receipts/L256_the_band_taken/B1_a_finding_that_routes_its_own_remedy_and_then_recurs_is_not_waiting.py
+    the ratchet holds: 71 owed against a ceiling of 71
+  ⛔ THE CANNOT-FAIL RATCHET IS RED.
