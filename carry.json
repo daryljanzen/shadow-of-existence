@@ -6,13 +6,5 @@
     "since": "7e416d4996413c29944b67d8f26b81284b0e05f7"
    }
   }
- },
- "claude/shadow-of-existence-setup-6awafl": {
-  "tolerance": {
-   "receipts/L259_the_distance_from_the_present/D1_a_check_pinned_to_a_distance_from_the_present_is_pinned_to_the_present.py": {
-    "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/37102116463",
-    "since": "904a00781da6403969df721d40cbd0d8dcd6c06b"
-   }
-  }
  }
 }
