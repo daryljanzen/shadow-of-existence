@@ -113,13 +113,31 @@ def main():
           len(inc) <= 1)
 
     # ⓶ the graph
-    check(f'⓶ the sibling-citation graph has {edges} edges over {len(g)} nodes', edges > 150)
+    # ⛭⛭ r7143+cc66.108: THE OLD CONDITION WAS `edges > 150`, A ROUND NUMBER THE LABEL NEVER NAMES.
+    #   ** What this receipt claims is in its own title -- a NETWORK and not a SEQUENCE -- and that is
+    #   derivable from the graph instead of pinned to a figure. **  A sequence is a total order, and the
+    #   most edges a transitive total order on `n` nodes can carry is `n(n-1)/2`.  Measured here: 209
+    #   edges over 17 nodes against a ceiling of 136 for any such order.  ⇒ *So the graph carries more
+    #   edges than ANY sequence on these papers could, which is the claim, and `150` was a figure
+    #   between the two that happened to hold.*
+    #   ⌗ The structural half is untouched beside it: `not roots` -- no paper cites no sibling, so there
+    #   is no topological reading order to have.  Counts printed, nothing pinned to them.
+    _seq_max = len(g) * (len(g) - 1) // 2
+    check(f'⓶ the sibling-citation graph has {edges} edges over {len(g)} nodes -- more than the '
+          f'{_seq_max} a transitive total order on {len(g)} nodes could carry, so it is a NETWORK and '
+          f'not a sequence, derived rather than pinned',
+          edges > _seq_max)
     check(f'⛔ and ROOTS (papers citing no sibling): {roots or "NONE"} -- so there is NO topological '
           'reading order, and there cannot be one', not roots)
     check(f'leaves (cited by no sibling): {leaves}', len(leaves) <= 4)
     top = [t for t, n in cited.most_common(4)]
-    check(f'and four papers sit at the top of in-degree: {top}',
-          len(top) == 4 and cited.most_common(1)[0][1] >= 15)
+    # ⛭ r7143+cc66.108: `>= 15` was a round floor on the top in-degree that the label never names.
+    #   ** The derived statement is sharper and exact: the top paper is cited by EVERY sibling, i.e. its
+    #   in-degree is `len(g) - 1`. **  Measured 16 of a possible 16.
+    _maxdeg = cited.most_common(1)[0][1]
+    check(f'and four papers sit at the top of in-degree: {top} -- the first at {_maxdeg} of a possible '
+          f'{len(g) - 1}, so it is cited by every sibling there is',
+          len(top) == 4 and _maxdeg == len(g) - 1)
 
     # ⓷ the spec says so by omission
     spec = open(os.path.join(ROOT, 'COMPANION_SPEC.md'), encoding='utf-8', errors='replace').read()
