@@ -5385,6 +5385,25 @@ PINNED = {'systematic uncertainty': 1}
 
 ⌗ *`#246`'s own content is green — `fast`, the plain suite and the tolerance perturbation all pass on it.*
 
+### ⛔⛔ AND IT IS WORSE THAN I FIRST ROUTED IT, WHICH I AM CORRECTING RATHER THAN RESTATING
+
+*The same check failed again on the next head. I checked whether that head's range brought the receipt back into scope — **it did not**: `receipt_scope --range c885bfe6..82f20c07 --scope reads` is **`n=0`**, and so is the next range. **The receipt is entering scope through the CARRIED-RED UNION, not through anything I push.***
+
+*And the ledger is wider than my branch:*
+
+| branch | class |
+|---|---|
+| **`main`** | `reads` |
+| **three seat branches** (`…5tjf0b`, `…6awafl`, `…wgcmvt`) | `reads`, and `suite` on one |
+
+*`red_carry.py`'s own rule: **"every branch also runs `main`'s carry … and cannot clear it: only a green on `main` clears `main`'s entry."***
+
+⇒ ***So this is not "red on the base and quiet elsewhere". It is carried on `main`, every branch inherits it, it is re-tested on every push, and the failure being deterministic means it fails every one of them.*** **No push by any seat can clear it.** *Only a green on `main` will, and that needs the receipt repaired by its author.*
+
+⌗ ***Which makes this the third item this round sitting in `70`'s carry layer*** *— the budget (`cc66.103`/`cc66.104`), the write-ordering defect (`cc66.105`), and now a deterministic red propagating from `main` to every branch through the union. **The first two I measured and left; this one I cannot leave, because it is red on every seat's CI until someone fixes the receipt.** ⇒ *That is the routing, and it is urgent in a way the other two were not.*
+
+
+
 ---
 
 
