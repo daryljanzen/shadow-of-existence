@@ -189,8 +189,11 @@ def main():
           f'`sec:frontiers` -- the lead is shrunk, not discharged',
           below > 1000)
     n_cr = len(re.findall('causal reassignment', p7f, re.I))
+    # ⛭ r7143+cc66.108: `> 10` was a round floor the label never names. The claim is that the CONTENT IS
+    #   PRESENT elsewhere, so that the defect asserted here is PLACEMENT and not absence -- which is
+    #   presence, and the count is printed beside it.
     check(f'⌗ and "causal reassignment" appears {n_cr} times in P7, so the CONTENT is present elsewhere '
-          '-- the defect is PLACEMENT, not absence', n_cr > 10)
+          '-- the defect is PLACEMENT, not absence', n_cr > 0)
 
     # ⓷ corpus-wide
     secs = frontier_sections()
@@ -208,8 +211,23 @@ def main():
         if os.path.basename(f).startswith('appendix_receipts'):
             continue
         prox += len(re.findall(r'resolved|overtaken|has since|moved below', body(f), re.I))
-    check(f'⚠ and the resolved-language proxy finds only {prox} markers corpus-wide -- far too few to '
-          'be a measurement, and reported as a proxy rather than a count', prox < 60)
+    # ⛭⛭ r7143+cc66.108: THE OLD CONDITION WAS `prox < 60`, AND IT WAS THIS ROUND'S OWN RULE TURNED ON
+    #   THE CORPUS: ** a gate pinned to something the work it gates is trying to move. **  The proxy
+    #   counts resolved-language markers, and the corpus acquiring resolved language is the direction
+    #   this receipt's audit is FOR -- so at 60 markers the check would have gone red on the corpus's own
+    #   progress, with nothing in the label saying why 60.  ⌗ *It was already half spent: 29 markers
+    #   today against the docstring's 20, and 298,380 characters of frontier section against its 191 KB,
+    #   so both of the docstring's figures had gone stale while the pin sat where it was.*
+    # ⇒ ** What the label actually claims is a DENSITY -- too few markers to be labelling paragraphs --
+    #   so that is what is asserted, from the two quantities this receipt already measures: fewer than
+    #   one marker per thousand characters of frontier section. **  Measured: 29 markers over 298,380
+    #   characters, about one per ten thousand.  *A ratio does not move when the corpus merely grows, and
+    #   it goes red only if the marker density reaches the level at which the proxy WOULD be a
+    #   measurement -- which is the one condition that should retire this line.*
+    check(f'⚠ and the resolved-language proxy finds only {prox} markers across the {tot:,} characters of '
+          f'frontier section -- under one per thousand, far too few to be labelling paragraphs, so it is '
+          f'reported as a proxy rather than a count',
+          prox * 1000 < tot)
 
     print()
     if FAILED:
