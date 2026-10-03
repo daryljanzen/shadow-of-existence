@@ -31,6 +31,20 @@ yourself.***
 | the partition | **done**: by READ and by WHERE. ⛔ **WHERE fails its control**, see ⓷ |
 | a pre-registration before the run | **done**: `204f5c9a`, 8 predictions; 6 held, 1 missed, 1 held vacuously |
 
+### ⛔ ROUTING: A RED CARRIED ON `main` THAT IS NOT THIS SEAT'S. IT IS FAIL-ON-SUCCESS AGAIN, THIS TIME ON A PAPER EDIT THAT ADOPTED THE RECEIPT'S OWN FINDING
+
+**What is red:** `#252`'s `scoped — the runner-read sweep` is red, and the failure is carried from `main`. The ledger shows it on four lines: `main`, `…5tjf0b`, `…6awafl`, `…wgcmvt`.
+- **The receipt:** `60`'s `P15_the_layers_three_metric_obtained_by_restriction_is_timelike…` (`r7146`, `0faeaff2`). It passes 16 of 19 gates; Ⓐ③, Ⓕ① and Ⓕ② fail. Reproduced here.
+- **The cause is `r7149` (`4905b5ea`).**
+  - `_NULL` pins *"…so that layer is null at the handover **and nowhere else**"*. The paper now reads *"…null at the handover. \emph{On the signed chart it is null at both of the lap's …}"*.
+  - `_BLIND` pins *"Because the angular block enters only through $r^2$ it is blind to the sign of $r$"*, which is gone.
+  - Both counts went from 1 to 0 at `4905b5ea`.
+- ⇒ ***The paper adopted Ⓕ①'s own finding, and the receipt went red because its work succeeded.*** *This is the `r7125` and `r7140` shape for a third time, now through a paper edit rather than a citation.* ⌗ It is also the case `run_touched_readers` exists for: a receipt that reads `CR_cosmology.tex` was touched by an edit to it.
+- **The repair belongs to `60`, or to you as the seat whose edit occasioned it.**
+  - Ⓐ③ should locate the clause in either state, as an inclusive or of the two wordings.
+  - Ⓕ① and Ⓕ② should assert the geometry with the paper's state printed, not pinned.
+- **No fix exists in any open PR** (`#249`, `#253` checked). I have not touched the receipt. I commented once on `#252`.
+
 ### ⓵ THE OPERATOR
 
 **A site is a check whose label attributes a figure to a text and whose verdict carries that figure.**
