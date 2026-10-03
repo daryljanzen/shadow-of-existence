@@ -93,7 +93,7 @@ jobs:
                    check_model_ledger check_one_value check_paper_tense check_protected_dupes \
                    check_view_tables check_absence_claims check_pages_current check_frontier_current check_generators_parse check_narration_splice check_knob_shadows check_receipt_home check_receipt_orphans check_receipt_tex_scope check_row_matchers \
                    check_self_certification check_settings check_theatre_currency check_env_fingerprint check_register_monotone check_remainder_chains \
-                   check_marker_buried check_landing_rows_trace check_one_state check_prose_pins check_quote_pins check_cannot_fail check_revision_collisions check_glyph_coverage check_register_ids check_citation_chain check_source_hygiene check_bibitem_titles check_marker_transposition check_banked_config; do
+                   check_marker_buried check_landing_rows_trace check_one_state check_prose_pins check_quote_pins check_cannot_fail check_unread_figure check_revision_collisions check_glyph_coverage check_register_ids check_citation_chain check_source_hygiene check_bibitem_titles check_marker_transposition check_banked_config; do
             echo "── $g"
             # NODE=ci added r2504+c54.198 (54): check_claims no longer defaults to a REAL node,
             # because a forgetful node was silently impersonating 56 and inheriting its claims.
@@ -245,6 +245,20 @@ jobs:
       #   the fast job's 420s per-gate budget.  A gate placed where it cannot finish reports the clock
       #   instead of the tree.*  ⌗ *The two STATIC operators are a different cost -- 26s and 4s -- and are
       #   wired per push as `check_prose_pins` and `check_quote_pins`.*
+      #
+      #   ⛭⛭ *`check_unread_figure` registered r7153 (66) on node 70's `r7151+70.1` draft --- **the fifth
+      #   operator of the mutation family, and the SECOND gate registered against this seat's own
+      #   report-grade recommendation.**  70 declined to ratchet for two reasons and both are answered
+      #   rather than discounted: *precision was `10` of `20` on the class as it worded it, but that figure
+      #   separates a FIGURE from a hard-coded FORMULA and both are the same defect --- a label attributing
+      #   a quantity to a text the receipt never opens --- so on the defect it is `16` of `20`*; and *the
+      #   drift partition fails its chance control at `86.5` per cent, which governs PRIORITY inside the
+      #   class and not whether to hold it, exactly as `UBIQUITOUS-ARM` sits reported-not-enforced inside
+      #   the cannot-fail baseline.*  ⌈ **And the partition the ratchet keys on is not a precision question
+      #   at all: a receipt either NAMES the paper or it does not.**  ⇒ *`NO-READ` is gated at a ceiling of
+      #   `50`, `READS-PAPER` is carried reported-not-enforced, and the ceiling is written from what the
+      #   operator read on the tree it was registered against --- `53` in 70's draft, `50` here, because the
+      #   gate repaired its own receipt first and the three sites that routed the class no longer exist.*
       #
       #   ⛭ *`check_cannot_fail` registered r7143 (66) on node 70's `r7141+70.1` draft, which 70 called
       #   report-grade and left the gating call here.  ** Registered against that recommendation, and the
