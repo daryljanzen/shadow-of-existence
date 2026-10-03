@@ -14,5 +14,53 @@
     "since": "eeffaf02dddc50ff0232aee4949503329604b9a1"
    }
   }
+ },
+ "main": {
+  "tolerance": {
+   "receipts/L_numerics/Q1_a_stated_tolerance_is_a_request_and_the_corpus_answers_it.py": {
+    "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/37141865452",
+    "since": "79c1b03c66c0db1a68dd2fc4cd103bd52d4841ec"
+   },
+   "receipts/P10_canonical_time/P10_step_three_is_written_down_and_it_reverses_the_previous_revisions_own_conclusion_about_the_sign.py": {
+    "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/37141865452",
+    "since": "79c1b03c66c0db1a68dd2fc4cd103bd52d4841ec"
+   },
+   "receipts/P10_canonical_time/P10_the_construction_own_regulator_reaches_the_interacting_sum_and_spends_one_counterterm_more_than_the_free_case.py": {
+    "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/37141865452",
+    "since": "79c1b03c66c0db1a68dd2fc4cd103bd52d4841ec"
+   },
+   "receipts/P10_canonical_time/P10_the_covariant_quartic_is_seven_rationals_carried_by_an_identity_and_no_measurement_route_reaches_them.py": {
+    "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/37141865452",
+    "since": "79c1b03c66c0db1a68dd2fc4cd103bd52d4841ec"
+   },
+   "receipts/P10_canonical_time/P10_the_cubic_vertex_is_written_down_and_K_is_not_label_independent_so_the_algebraic_channel_is_five_powers_clear.py": {
+    "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/37141865452",
+    "since": "79c1b03c66c0db1a68dd2fc4cd103bd52d4841ec"
+   },
+   "receipts/P10_canonical_time/P10_the_odd_residue_is_five_levels_and_the_sign_is_mixed_because_the_vertex_carries_covariant_not_frame_derivatives.py": {
+    "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/37141865452",
+    "since": "79c1b03c66c0db1a68dd2fc4cd103bd52d4841ec"
+   },
+   "receipts/P10_canonical_time/P10_the_subtraction_is_at_operator_dimension_six_pinned_three_ways_and_it_is_not_degenerate_so_the_ledger_cost_is_real.py": {
+    "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/37141865452",
+    "since": "79c1b03c66c0db1a68dd2fc4cd103bd52d4841ec"
+   },
+   "receipts/P10_canonical_time/P10_the_two_anchors_are_already_one_convention_and_they_agree_but_the_candidate_prescription_does_not_close.py": {
+    "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/37141865452",
+    "since": "79c1b03c66c0db1a68dd2fc4cd103bd52d4841ec"
+   },
+   "receipts/P15_CR_cosmology/C59_the_control_reproduces_camb_and_the_height_defect_was_k_truncation.py": {
+    "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/37141865452",
+    "since": "79c1b03c66c0db1a68dd2fc4cd103bd52d4841ec"
+   },
+   "receipts/P15_CR_cosmology/P15_the_conjecture_reduces_to_umbilicity_because_a_conformal_carrying_preserves_the_invariants_modulus_across_the_lift_and_the_foliation_is_umbilic_only_at_the_seam.py": {
+    "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/37141865452",
+    "since": "79c1b03c66c0db1a68dd2fc4cd103bd52d4841ec"
+   },
+   "receipts/P15_CR_cosmology/P15_the_layers_three_metric_obtained_by_restriction_is_timelike_through_the_whole_interior_of_the_lap_so_the_continuation_does_not_go_through_and_the_invariant_cannot_adjudicate_it.py": {
+    "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/37141865452",
+    "since": "79c1b03c66c0db1a68dd2fc4cd103bd52d4841ec"
+   }
+  }
  }
 }
