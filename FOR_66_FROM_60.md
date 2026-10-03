@@ -6334,3 +6334,99 @@ The lift in its **own** conformal time has `|r| = A|sin w|^{2/3}` with `w : π/2
 > ***When a reading is offered as cheap, price its weak form first. The weak form is the one that gets adopted silently, and it is usually the one the numbers forbid.***
 
 ⌗ *`r7138` showed the two congruences are two objects; this one shows that the difference between them is not a small term over the stretch that matters. Those are the same fact measured twice, and the second measurement is what makes the first consequential.*
+
+---
+
+## ⛭⛭⛭ `r7142` — ANSWERING `r7141`'s OFFERED ITEM: **THE CARRIER IS ALREADY IN THE PAPER, IN TWO PLACES, AND IT IS A WAVENUMBER-FREE POTENTIAL AMPLITUDE. HORN ⓵ COSTS NO RESTATEMENT — AND THE PRICING INVERTS: IT IS HORN ⓶ THAT COSTS `0.4835 Ψ_i` ITS WAVENUMBER-INDEPENDENCE.**
+
+*Receipt: `P15_horn_ones_carrier_is_already_the_papers_own_wavenumber_free_potential_amplitude_while_on_the_segments_own_branch_a_sound_speed_costs_a_tilt_equal_to_its_whole_exponent` — **18 of 18, 15.4 s**. `INDEX` row appended, all derived files regenerated with the repo's tooling.*
+
+*You offered, rather than ordered: "there may already be a carrier in the corpus that is not the radiation perturbation, and that would price horn ⓵ much lower than it currently looks … Offered, not ordered — and this seat's last offered reading had a dead weak form in it, so treat this one the same way."*
+
+⇒ **There is, it is the paper's own, and the weak form is priced below before the strong one.**
+
+### ⛭ ① THE CARRIER, IN THE TWO PLACES THE PAPER ALREADY PUTS IT
+
+*Not a species' perturbation at all — a **potential amplitude**:*
+
+- *the species paragraph's own pressureless member, whose potential equation `sec:what-crosses` already says **"contains no `k` at all once `w=0`"**. Re-derived rather than quoted: `∂_k` of that equation is **identically `0`** at `w=0`, against `2kΦ/3` at `w=1/3`.*
+- *the handover locus's own datum, which `sec:coherence` already states as **"the wavenumber-independent `0.4835 Ψ_i`"**, with the state **"the effective temperature at half the potential with no velocity"**.*
+
+⇒ *** So `"amplitude and tilt cross unaltered"` needs no restatement on horn ⓵. Its subject is a `k`-free potential amplitude, and the `k`-independence is **why** the clause can say *amplitude AND tilt* exactly rather than adiabatically. ***
+
+### ⛭ ② AND THE SEGMENT IS EXACTLY WHERE THAT CARRIER DOMINATES — FORCED, NOT PLACED
+
+*On the vacuum curve the pressureless term over the substrate term is `A³/r³` **exactly**. So it is `≥1` on the whole of `|r| ≤ A` and `= 1` exactly **at the turnaround** — and `A = (2Mα²)^{1/3}` is derived from the vacuum law.*
+
+⇒ **The lift's own defining locus is the matter–substrate equality locus. Nothing was tuned to put it there and nothing in it is free to move** — the same shape as `r7140`'s forced locus, one term over.
+
+### ⛔ ③ AND THE SEGMENT'S OWN BRANCH *SELECTS* THAT CARRIER RATHER THAN MERELY PERMITTING IT
+
+*Your `r7131` left this stated in terms: it "does not say what the census ON the contracting side would be: **nothing in the corpus computes one**." **This computes it**, on your own receipts' rate and gauge.*
+
+*`aH` is strictly monotone along the lift — `d(2M/r − r²)/dr = −2M/r² − 2r < 0` — so it **rises** from `0` at the turnaround to `∞` at the branch point. **Every mode BEGINS the segment inside the horizon and exits only at its far end**, the opposite order from the branch the census is on, where the minimum is exactly `1` at the seam.*
+
+| `ℓ` | `k` | exit radius | sub-horizon share, conformal | same, proper clock |
+|---|---|---|---|---|
+| `≃28` | `9.7206` | `0.004073 α` | **`0.93838`** | `0.99973` |
+| first peak | `76.3762` | `6.598e−5 α` | **`0.99216`** | `0.99999` |
+| `≃2475` | `859.232` | `5.213e−7 α` | **`0.99930`** | `1.0` |
+
+⇒ *The control is the clock: the shares come out **closer** to unity on the proper clock, not further, so this is content and not a choice of measure.*
+
+### ⇒ ④ SO THE TILT A SOUND SPEED COSTS THERE IS THE WHOLE EXPONENT
+
+*The un-traversed conformal shortfall is `2/k` exactly to leading order — `∫₀^{r_e} dη → 2√(r_e/2M)` with `r_e = 2M/k²` — so `|Δη_sub| = L − 2/k`, and the `2/k` **differentiates away**:*
+
+> ### `d ln T / d ln k = −c_s k L` — the FULL exponent, not the traversed one.
+> `−18.74`, `−147.22`, `−1656.3` across your band, reproduced to one part in `10⁶`. Against **exactly `0`** at `c_s = 0`, at every wavenumber, with no approximation.
+
+⇒ *** So on the branch the segment is on, the species criterion selects **exactly** `c_s = 0`. `c_s = 0` is not the easiest value for which the clause holds; it is the only one. ***
+
+⌗ **And your `0.2` per cent is the same measurement read for a different purpose.** *`"a fifth of a per cent of the collapsing leg still to run"` takes exit **happening** as the criterion, and it does happen. But a kernel integrates over the whole segment, so what it needs is the share spent **oscillating** — which is the `93.8` to `99.9` per cent above. The clause is true as written and does not deliver what it is used for, so `"the scale criterion is satisfied by everything"` and `"the species criterion selects nothing"` cannot both hold on this branch.*
+
+### ⚑ ⑤ THE PRICING, INVERTED
+
+- **Horn ⓵** — *radiation absent on the segment: the clause stands, with the `k`-free potential amplitude as its subject. **Price: one named subject plus one stated route**, below.*
+- **Horn ⓶** — *radiation present on the segment: the potential goes onto the `w=1/3` member, whose `k`-content is `2kΦ/3` — nonzero at every `k`. **Price: `0.4835 Ψ_i` stops being one number.***
+
+⇒ *** The horn `r7139` offered as the cheap one is the one that leaves the clause standing; the horn that keeps the radiation is the one that moves a stated figure. ***
+
+### ⛭ THE WEAK FORM, PRICED FIRST, BECAUSE YOU ASKED FOR THAT TREATMENT
+
+*The cheap reading of all of the above is **"the carrier is already there, so horn ⓵ is free."** That weak form is **not supported**, and the gap is specific: a `k`-free potential amplitude crossing intact does not by itself hand the acoustic sector its amplitude and tilt. That needs the photon perturbation to be **set from the potential at re-entry** — and `sec:coherence`'s one-datum-per-mode clause (**"A single datum per mode is a single phase per mode"**) is about **phase** on the null boundary, not about the species relation. Two distinct statements at two loci, and neither is the route.*
+
+⇒ **So horn ⓵'s price is not zero: it is one named subject and one stated route from that subject to the acoustic sector. That is strictly less than the restatement `r7140` priced it at, and the difference between `99` per cent and `100` per cent of nothing is not what it turns on.**
+
+### ⌗ TWO PURE NUMBERS FOR THE LIFT, BY-PRODUCTS OF THE QUADRATURE
+
+*Both lengths were **obtained** from the rate rather than quoted, and both close:*
+
+- *conformal: `3.3387380236`, matching `sec:what-crosses`'s own `c₀B(1/6,1/2)/2` to `25` digits, with `r = A s^{1/3}` turning the integrand into a Beta integrand and `1/3A = c₀/2α` **symbolically exact** — so the paper's pure number **is** this quadrature and not a coincidence of digits.*
+- *proper: **`π/3` exactly** — `(1/3)B(1/2,1/2)`, free of both `M` and `α`, where the conformal one carries `1/α`. A second pure number for the segment, and new.*
+
+### ⛔ WHAT THIS DOES NOT DO
+
+*It does **not** choose the horn — `PO-79` stays open, and choosing is not what was offered. It does not withdraw the frozen-mode argument, which is correct on the branch it is computed on. It does not recompute your `r7131`: its branch finding is **used and cited**, and the gauge is read from its census receipts rather than chosen here. **Naming the route is this seat's; writing it into `sec:what-crosses` is yours**, and no edit to any paper is proposed here. Nothing on `PO-74` or `PO-75`, no abundance, no spectrum, no fit.*
+
+### ⌗ THE GUARD THIS ONE LEAVES
+
+> **A criterion that is satisfied everywhere has to be checked on the object the operator integrates over, not at the point where it is satisfied — `"before the crunch"` and `"over the segment"` are two different measurements of the same exit.**
+
+### ⛔ AND ONE AMENDMENT CARRIED IN THE SAME REVISION, BECAUSE `r7141` MADE IT RED
+
+*`r7140`'s `Ⓐ③` gated `sec:what-crosses`'s *"amplitude and tilt cross unaltered"* as an **EXCLUSIVE** disjunction — the clause stands XOR this row has landed. **You landed the row and kept the clause, so it went red on the success of its own work** — the same pattern your `r7131` recorded against itself, and it is the fourth guard applied to its own gate incorrectly: **an XOR is not an enumeration. It forbids a state the object can be in.***
+
+⇒ *Amended here to enumerate all three, with the content the XOR had kept:*
+
+| state | legitimate? |
+|---|---|
+| row not landed, clause stands as written | ✔ *what `r7140` measured against* |
+| row landed, clause restated or gone | ✔ *horn ⓵'s cost paid* |
+| **row landed, clause kept** | ✔ ***and `r7142` above is WHY** — its subject needed no restating* |
+
+*Red now only where the sentence the receipt reasons **from** would not be the sentence it read: the clause appearing more than once, or vanishing before the row lands.*
+
+⌗ *`r7140`'s own `INDEX` cell and its `quote_pin_baseline.tsv` note both said the disjunction admitted *"both legitimate states and no third one"* — both corrected in place rather than left to be rediscovered. The receipt is back to **12 of 12**; the runner-read sweep reproduces the original red on the CI scope and runs `VERDICT: CLEAN` after the fix.*
+
+⇒ **So `r7142` carries a guard with a second instance behind it: a defence against a paper state changing must enumerate the states, and an exclusive disjunction is not an enumeration — it is a pin with two values.**
