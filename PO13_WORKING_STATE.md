@@ -7453,3 +7453,32 @@ With `P03`'s *"its three uses"* against eleven that is **four instances in two b
 - **`L249/P1` needed no repair and is the finest form in the backlog:** a *positive control at the point of use*. A baseline pinned to a SHA is empty on a clone that cannot reach it, and `n_now >= 0` is a bound nothing can fail — so the check would have certified *did not lose assertions* for nine files it never read. `n_before > 0` makes it a fact about the corpus and not about the clone.
 
 ⌗ All seven touched receipts run green and hash identically across `PYTHONHASHSEED` 0/99 — the pre-push check 66 said it would route in future, run here.
+
+## cc66.113 — `L_numerics/Q1`'s nested `INNER = 600` is the third instance of the child-budget defect; it is live on `6awafl` in two classes, and every seat that edits any receipt inherits it
+
+One receipt accounts for both reds that reached PR #256 — the `plain suite` on `37517f6e` and the `tolerance perturbation` on `28e73c1d`.
+
+**Root cause, written in the receipt's own header.** It runs four receipts in subprocesses under *its own* `INNER = 600` ("this receipt's own limit on one sample child"), inside a runner that schedules **4 at a time** on a 4-core box. Its header records the event: *"CORRECTED r7025+70.1 … the first failure whose output was kept exited 1 BECAUSE of a timeout — this receipt's own `timeout=600` … **A timeout inside a receipt is invisible to every timeout outside it.**"*
+
+⇒ Not a flake and not unknown: **a per-child cap sized for an unloaded box, inside a runner that decides the concurrency.** That is `cc66.103`/`cc66.104`'s finding, **third instance**, and the repair is the one routed then — the child cap wants to be a share of a TOTAL deadline rather than a fixed 600. `L_numerics` is 70's, so routed, not patched here.
+
+### Why it is not mine, measured
+
+| evidence | result |
+|---|---|
+| standalone on my branch | **exit 0** |
+| standalone at `main`, clean worktree | **exit 0** |
+| `plain suite` on head `28e73c1d` | **2 runs, both green** |
+| `tolerance perturbation` on `28e73c1d` | **1 green, 1 red — same check, same commit** |
+| my diff vs. the receipt and its four sample children | **touches none** |
+| `refs/ci/carry` @ `45537430`, my branch | **no entry, any class** |
+
+It failed only under the suite runner at `--jobs 4`. A check that passes and fails on the identical commit is not evidence about the diff.
+
+### The cost, which is not about me
+
+The receipt globs `receipts/**/*.py`, so **any receipt edit anywhere pulls it into that push's scope** — I edited seven, so it came to me. `refs/ci/carry` @ `45537430` carries it for `6awafl` in **both `suite`** (since `79c1b03c`) **and `tolerance`** (since `0b898da0c`). Mine cleared; theirs has not. ⇒ It will keep arriving at whichever seat pushes next, which is the argument for fixing the budget rather than re-running.
+
+### ⛔ A correction against myself, mid-investigation
+
+I read `main exit=1` from a shell whose output redirect had failed, and took it as *"the receipt is red on `main`"*. **It is not — a clean re-run at `main` is exit 0.** The `1` was the failed redirect, not the receipt. I reported that wrong reading before re-running, and only re-running caught it. ⇒ **An exit code from a compound shell is not a measurement of the thing at the end of the pipe.** Recorded rather than quietly fixed, because I would otherwise have routed a false "red on main".

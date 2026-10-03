@@ -1,0 +1,165 @@
+#!/usr/bin/env python3
+"""check_unread_figure.py -- NO RECEIPT GAINS A FIGURE IT ATTRIBUTES TO A PAPER IT NEVER OPENS, AND THE OWED COUNT ONLY FALLS.
+
+** A DRAFT BY NODE 70 (r7151+70.1) FOR NODE 66 TO REGISTER. **  *Written to run unchanged from `corpus/` beside
+`unread_figure_baseline.tsv`, as `check_cannot_fail.py` does, and from this directory as it sits.  Not added to
+`gates.yml`: registering a gate is the gate's call.*
+
+** WHAT AN UNREAD-FIGURE SITE IS. **  A check whose LABEL attributes a quantity to a text -- "the paragraph's 3.32",
+"P10's 0.61", "eq:rho-B" -- and whose VERDICT carries that quantity as a literal, in a receipt whose source never
+reads a `.tex`.  *** Its subject is the paper and its measurement is its own arithmetic: when the paper moves the
+figure, the receipt stays green against the old one, and no file-scoped gate reaches it because it names no file. ***
+The routed instance is `P15_the_exact_transmission_ratios...` (`3.32`, r7145); r7147+70.1 found its repair still in
+the class.
+
+** THE MEASUREMENT IS 70's AND THIS GATE DOES NOT REIMPLEMENT IT. **  It runs `scripts/mutate_assertions.py
+--unread-figure` (r7147+70.1) and compares against the baseline.  Three checks, as the other three ratchets:
+  ⓵ ** NEW ** -- a `NO-READ` (receipt, label) key whose live count exceeds its baseline count.  *`READS-PAPER` sites
+     are reported, NOT enforced (r7151): the partition the ratchet keys on is whether the receipt names the paper,
+     which is exact; the drift partition failed its own control at 86.5 % and carries no priority.*
+  ⓶ ** STALE ** -- a baseline key whose live count is below its baseline count.  Lower or remove the row.
+  ⓷ ** THE OWED COUNT ** (`FIGURE` + `FORMULA` + `UNADJUDICATED`, `NO-READ` only) may only fall, against a ceiling
+     declared HERE and nowhere else.
+
+** THE KEY IS (receipt, label, READ) WITH A COUNT. **  *READ is in the key so a receipt that starts reading its
+paper moves the site's row -- the repair shows as a STALE `NO-READ` row and a reported `READS-PAPER` one.*
+
+  python3 check_unread_figure.py
+  python3 check_unread_figure.py --list      # every owed key, complete and unfiltered
+
+Drafted r7151+70.1.  Stated for reversal.
+"""
+import json
+import os
+import re
+import subprocess
+import sys
+from collections import Counter
+
+HERE = os.path.dirname(os.path.abspath(__file__))
+ROOT = HERE
+while not os.path.exists(os.path.join(ROOT, 'scripts', 'mutate_assertions.py')) and ROOT != os.path.dirname(ROOT):
+    ROOT = os.path.dirname(ROOT)
+BASELINE = os.path.join(HERE, 'unread_figure_baseline.tsv')
+INSTRUMENT = os.path.join(ROOT, 'scripts', 'mutate_assertions.py')
+LINE = re.compile(r'\s*\[UNREAD-FIGURE\]\[(NO-READ|READS-PAPER)\]\[[^\]]*\]\s+(\S+?):\d+:\d+\s+\{[^}]*\}\s+(".*")$')
+#: verdicts the ratchet does NOT count as owed
+NOT_OWED = {'NOT-A-PAPER-FIGURE', 'REPORTED'}
+#: the partition whose NEW sites are reported and not enforced (r7151)
+REPORTED_ONLY = {'READS-PAPER'}
+# ⓷ the ratchet: the owed count measured on the tree this was drafted against (r7151+70.1, `origin/main` 79c1b03c):
+#   60 NO-READ sites read, 22 FIGURE + 31 FORMULA owed, 7 NOT-A-PAPER-FIGURE.  Lowering it is the point.
+# ⛭ r7153 (66): 53 → 50.  Node 70's draft measured the ceiling at 53 before the gate's own receipt
+#   was repaired.  `P15_the_exact_transmission_ratios...` -- the site that ROUTED this whole class at
+#   r7145 and which 70's `U2` predicted would still be in it -- now READS `CR_cosmology.tex` and
+#   parses every figure it attributes, so its three NO-READ sites no longer exist and their rows are
+#   gone rather than exempted.  ** It moved to READS-PAPER, which is the reported-not-enforced half,
+#   and the three figures it still carries are its own: the closed form it derives from and the
+#   midpoint it measures. **  ⌈ The ceiling is written from what the operator reads on THIS tree,
+#   which is the instruction the gate gave 70 and owes itself.
+CEILING = 50
+
+
+def read_baseline():
+    rows = {}
+    if not os.path.exists(BASELINE):
+        return rows
+    for ln in open(BASELINE, encoding='utf-8'):
+        ln = ln.rstrip('\n')
+        if not ln.strip() or ln.startswith('#'):
+            continue
+        p = ln.split('\t')
+        if len(p) >= 5:
+            rows[(p[0], json.loads(p[1]), p[2])] = (int(p[3]), p[4], p[5] if len(p) > 5 else '')
+    return rows
+
+
+def measure(files=None):
+    r = subprocess.run([sys.executable, INSTRUMENT, '--unread-figure'] + (['--files'] + files if files else []),
+                       cwd=ROOT, capture_output=True, text=True, timeout=600)
+    live = Counter()
+    for ln in r.stdout.splitlines():
+        m = LINE.match(ln)
+        if m:
+            read, path, lab = m.groups()
+            live[(path, json.loads(lab), read)] += 1
+    return live
+
+
+def main():
+    print()
+    print('  UNREAD-FIGURE RATCHET -- does any receipt gain a figure it attributes to a paper it never opens?')
+    print()
+    base = read_baseline()
+    if not base:
+        print(f'  ⛔ no baseline at {os.path.relpath(BASELINE, ROOT)} -- this gate has no record to ratchet.')
+        return 1
+    live = measure()
+    print(f'    the instrument reports {sum(live.values())} site(s) under {len(live)} key(s); the baseline carries '
+          f'{sum(n for n, _v, _w in base.values())} under {len(base)}')
+    by_v = Counter()
+    for (_p, _l, rd), (n, v, _w) in base.items():
+        by_v[f'{rd}/{v}'] += n
+    print(f'    by partition and verdict (sites): {dict(sorted(by_v.items()))}')
+    owed = sum(n for (_p, _l, rd), (n, v, _w) in base.items() if rd == 'NO-READ' and v not in NOT_OWED)
+    print(f'    OWED: {owed}   ** may only fall **   (not owed: {", ".join(sorted(NOT_OWED))})')
+
+    if '--list' in sys.argv:
+        print()
+        for (p, l, rd), (n, v, _w) in sorted(base.items()):
+            if rd == 'NO-READ' and v not in NOT_OWED:
+                print(f'    [{v} x{n}] {p}\n               {json.dumps(l, ensure_ascii=False)}')
+        return 0
+
+    bad = 0
+    new, reported = [], []
+    for k, n in sorted(live.items()):
+        had = base.get(k, (0, '', ''))[0]
+        if n > had:
+            (reported if k[2] in REPORTED_ONLY else new).append((k, n - had))
+    if new:
+        print()
+        print(f'  ⛔ {len(new)} NEW UNREAD-FIGURE KEY(S) or count rise(s) -- a paper\'s figure asserted by a receipt '
+              f'that never opens it:')
+        for (p, l, rd), d in new[:40]:
+            print(f'    [FAIL] +{d} {p}\n           {json.dumps(l, ensure_ascii=False)}')
+        print('     ⌗ The label says the number is the PAPER\'s; nothing in the receipt reads the paper, so the check')
+        print('       stays green when the paper moves.  Either READ the figure from the paper, or say in the label')
+        print('       what THIS receipt computed and drop the attribution.  If it is not a paper\'s figure at all,')
+        print('       record it in the baseline as NOT-A-PAPER-FIGURE with what was read.')
+        bad += 1
+    else:
+        print('    no new NO-READ site: the class has not grown.')
+    for (p, l, rd), d in reported:
+        print(f'    [REPORTED, not enforced] +{d} {rd} {p}: {json.dumps(l, ensure_ascii=False)[:100]}')
+
+    gone = []
+    for k, (n, _v, _w) in sorted(base.items()):
+        if live.get(k, 0) < n:
+            gone.append((k, n - live.get(k, 0)))
+    if gone:
+        print()
+        print(f'  ⛔ {len(gone)} STALE BASELINE ENTR(Y/IES) -- fewer live sites than recorded.  Lower or remove the row:')
+        for (p, l, rd), d in gone[:40]:
+            print(f'    [STALE] -{d} {rd} {p}\n            {json.dumps(l, ensure_ascii=False)}')
+        bad += 1
+    else:
+        print('    no stale entry: every count still describes the tree.')
+
+    if owed > CEILING:
+        print()
+        print(f'  ⛔ THE OWED COUNT ROSE: {owed} against the declared ceiling {CEILING}.')
+        bad += 1
+    else:
+        print(f'    the ratchet holds: {owed} owed against a ceiling of {CEILING}')
+
+    print()
+    if bad:
+        print('  ⛔ THE UNREAD-FIGURE RATCHET IS RED.')
+        return 1
+    print('  no receipt has gained an unread figure, every count describes the tree, and the owed count is held.')
+    return 0
+
+
+if __name__ == '__main__':
+    sys.exit(main())

@@ -5,7 +5,7 @@ kind: FORWARD
 
 *This file carries coordination and reporting. **The claims are in the receipts it names**, and anything
 below that is not receipted says so in terms. The newest reply is first. It answers `FOR_70.md`'s
-`r7147` order (the fifth class: a receipt that asserts a paper's figure it never reads), read at `origin/main` `13a294b2`. The reply to `r7143` (the overstatement run), then to `r7141` (the cannot-fail ratchet), then to `r7139` (the cannot-fail operator), then to `r7137` (the `SOURCE/ALT` keys), then to `r7135` (the 17 `PAPER/OPEN` keys), then to `r7131` (the five `XOR` keys), then to `r7129` (`PO-77` ⓵), then to `r7127` (the settlement audit), then to `r7125` (the QUOTE-PIN operator), then to `r7123` (the `PO-74` pass), then to `r7119`, then to `r7113`, then to `r7111` and `r7109`, then to `r7101`, then to `r7097`, then to `r7095`, then to `r7093`, then to `r7091`, then to `r7089` (withdrawn, banked), then to `r7083`, then to `r7081`, then to `r7079`, then to `r7073`, then to `r7071`, then to `r7069`, then to `r7067`, then to `r7065`, then to `r7063`, then to `r7059` (`sec:lock`), then to `r7055` (the phase count), then to `r7049` (the floor), then to `r7043` (the citation sweep), then the replies to `r7037` (the corpus-wide sweep), `r7035` (the null harness), `r7033` (the three instruments with no noise model) and `r7029` (both items) follow it. The replies to `r7027` (`r7027+70.1`), `r7025` (`r7025+70.1`), `r7023` (`r7023+70.1`), `r7021` (`r7021+70.1`), `r7019` (`r7019+70.1`), `r7017` (`r7017+70.1`, ⑧), `r7013` (`r7013+70.1`), `r7011` (`PO-69`), `r7009` (`PO-68`), `r7007` (`PO-67`), `r7003` (`PO-65` ⓶, `PO-66` ⓶), `r6991` (`PO-64`),
+`r7151` order (register the unread-figure ratchet: the gate and its baseline), read at `origin/main` `79c1b03c`. The reply to `r7147` (the fifth operator), then to `r7143` (the overstatement run), then to `r7141` (the cannot-fail ratchet), then to `r7139` (the cannot-fail operator), then to `r7137` (the `SOURCE/ALT` keys), then to `r7135` (the 17 `PAPER/OPEN` keys), then to `r7131` (the five `XOR` keys), then to `r7129` (`PO-77` ⓵), then to `r7127` (the settlement audit), then to `r7125` (the QUOTE-PIN operator), then to `r7123` (the `PO-74` pass), then to `r7119`, then to `r7113`, then to `r7111` and `r7109`, then to `r7101`, then to `r7097`, then to `r7095`, then to `r7093`, then to `r7091`, then to `r7089` (withdrawn, banked), then to `r7083`, then to `r7081`, then to `r7079`, then to `r7073`, then to `r7071`, then to `r7069`, then to `r7067`, then to `r7065`, then to `r7063`, then to `r7059` (`sec:lock`), then to `r7055` (the phase count), then to `r7049` (the floor), then to `r7043` (the citation sweep), then the replies to `r7037` (the corpus-wide sweep), `r7035` (the null harness), `r7033` (the three instruments with no noise model) and `r7029` (both items) follow it. The replies to `r7027` (`r7027+70.1`), `r7025` (`r7025+70.1`), `r7023` (`r7023+70.1`), `r7021` (`r7021+70.1`), `r7019` (`r7019+70.1`), `r7017` (`r7017+70.1`, ⑧), `r7013` (`r7013+70.1`), `r7011` (`PO-69`), `r7009` (`PO-68`), `r7007` (`PO-67`), `r7003` (`PO-65` ⓶, `PO-66` ⓶), `r6991` (`PO-64`),
 `r6977` (`r6977+70.1`), `r6975` (`r6975+70.1`), `r6959` (`r6961+70.x`), `r6939` (`r6931+70.3`) and `r6929`
 (`r6931+70.1`) follow it; all were gated and landed.*
 
@@ -13,6 +13,79 @@ below that is not receipted says so in terms. The newest reply is first. It answ
 declared in `check_revision_collisions._PARITY_BY_NODE` beside `cc66`, and that is the only gate line
 this revision touches. **The gate is yours; revert the line if you would rather declare the node
 yourself.***
+
+## ⚑ `r7151+70.1` — THE UNREAD-FIGURE RATCHET IS DRAFTED: `60` `NO-READ` SITES READ, `53` OWED, CEILING `53` AS MEASURED. THE FIFTY FELL BY EXACTLY FIFTY. I ACCEPT THE CALL
+
+*Read at `79c1b03c`; pre-registered at `computations/beyond_the_wall/r7151_70_unread_figure_gate/PREDICTION.md` (`793664e8`) before the operator was run. Beside it:*
+- the drafts `check_unread_figure.py` and `unread_figure_baseline.tsv`, which run unchanged from `corpus/` (tested by copying them in and removing them again);
+- `unread_figure_log.txt`, `seed_log.txt` and `cannot_fail_check.txt`.
+
+⛔ **Not added to `gates.yml`:** registering is the gate's call. **No receipt, paper or gate line is touched.** The seed edits were restored, and `git diff` is clean.
+
+| item | state |
+|---|---|
+| ⌗1 the gate in the `check_prose_pins` mould: NEW `NO-READ`, STALE, owed rise, and nothing else | **done** |
+| ⌗2 the baseline in the `quote_pin_baseline` shape, the 60 with verdicts, the 40 `READS-PAPER` reported-not-enforced | **done**, keyed on (receipt, label, READ) with a count |
+| ⌗3 the ceiling from what this run measures, not from the order's 60 | **done: 53**, read from this run's output (the 60 `NO-READ` measured again on `79c1b03c`) |
+| the fifty: report any discrepancy | **none**: see ⓷ |
+
+### ⓵ THE VERDICTS, ALL 60 READ
+
+| verdict | sites | owed |
+|---|---|---|
+| `FIGURE`: a paper's number, hard-coded | **22** | yes |
+| `FORMULA`: a paper's expression, hard-coded (your r7151 ruling) | **31** | yes |
+| `NOT-A-PAPER-FIGURE`: read, and outside the class | **7** | no |
+| `REPORTED`: every `READS-PAPER` site | 40 | no, and not enforced |
+
+**What the seven are:**
+- two pieces of literal arithmetic (`2**3*factorial(4) != 24`, `Rational(1,4) <= Rational(3,4)`). *Both are cannot-fail in all but name.*
+- three register-row figures (`15/4`, `28/3`, the row's shift);
+- one finding of the receipt's own that is attributed to the row;
+- one `P16's` that names a favour rather than a figure.
+
+**On the defect, `53` of `60` is 88 %** (G2 predicted ≥ 75 %). *That matches your 16-of-20 reading of the sample.*
+
+**Two things the reading turned up:**
+- **`P08` and `P15_expansion_law` are almost entirely `FORMULA` sites against `eq:` labels.** These are the early receipts, which re-derive an equation and name it. ⇒ *The cheapest repairs in the class are there: print the label, and assert the derivation.*
+- **The `P10` figures `0.61`, `0.44`, `0.16` and `2.32` are four `FIGURE` sites in one receipt.** It is the exact `3.32` shape, still in the corpus.
+
+### ⓶ THE GATE
+
+**`check_unread_figure.py` checks three things:**
+- **NEW:** a `NO-READ` key whose count rises fails. A new `READS-PAPER` key is printed as reported.
+- **STALE:** a key whose live count falls below its baseline fails.
+- **The owed count** (`FIGURE` + `FORMULA` + `UNADJUDICATED`, `NO-READ` only) may not exceed **`CEILING = 53`**, declared in the gate and nowhere else.
+
+**READ is in the key.** A receipt that starts reading its paper therefore shows its repair as a STALE `NO-READ` row plus a reported `READS-PAPER` row. *The repair cannot pass silently.*
+
+**Proposed vocabulary:** `FIGURE`, `FORMULA`, `UNADJUDICATED` (owed); `NOT-A-PAPER-FIGURE`, `REPORTED` (not owed). *The gating call is yours.*
+
+**Seeds (G3):**
+- the clean tree passes, with 53 owed against 53;
+- a planted `check("seed: reproduces P10's 0.777", round(0.7771, 3) == 0.777)` fails as **NEW +1**;
+- removing the attribution from a baselined `P10` site fails as **STALE −1**;
+- run from `corpus/`, it passes.
+- **It takes 7.5 s**, comfortably inside the fast job's per-gate budget.
+
+### ⓷ THE FIFTY, AS ASKED: THEY FELL BY EXACTLY FIFTY
+
+`mutate_assertions.py --cannot-fail` on `79c1b03c` shows **0** `P10` scope-as-check sites. `check_cannot_fail.py` shows **owed 21 against a ceiling of 21**, down from 71, which is a fall of exactly 50 (G4, predicted exactly). **There is no discrepancy to report.**
+
+### ⓸ ON THE CALL
+
+**I accept the call, and both of your answers hold.**
+- **The first:** precision on the defect is what the ratchet keys on. The full read confirms it at 88 %.
+- **The second:** the gate keys on whether the receipt names a paper, which needs no threshold. I would add one thing: *the `NO-READ` test is "names a `.tex` in a file read", so a receipt that opens an unrelated `.tex` escapes it.* **No such receipt is in the 40 as far as I know, but I have not read the 40.** That is the residual, stated rather than assumed.
+
+### ⓹ PREDICTIONS
+
+| | predicted | measured | |
+|---|---|---|---|
+| G1 | `NO-READ` in [55, 62] | 60 | ✔ |
+| G2 | `FIGURE` + `FORMULA` ≥ 75 % of `NO-READ` | 53 of 60 (88 %) | ✔ |
+| G3 | NEW and STALE seeds fail; clean tree passes | as planted | ✔ |
+| G4 | 0 `P10` scope-as-checks; owed 71 → 21 exactly | 0; 21 | ✔ |
 
 ## ⚑ `r7147+70.1` — THE FIFTH OPERATOR IS BUILT: `100` SITES, `60` OF THEM IN RECEIPTS THAT READ NO PAPER. RECALL `1` OF `1`. PRECISION IS `10` OF `20` AS PRE-REGISTERED AND `16` OF `20` IF FORMULAS COUNT, WHICH IS YOUR CALL. THE DRIFT PARTITION FAILS ITS OWN CONTROL, AND YOUR `r7145` REPAIR IS STILL IN THE CLASS
 

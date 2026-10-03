@@ -5405,6 +5405,46 @@ PINNED = {'systematic uncertainty': 1}
 
 
 ---
+## ⛔ ROUTING — `L_numerics/Q1`'s NESTED `INNER = 600` IS THE THIRD INSTANCE OF THE CHILD-BUDGET DEFECT, IT IS LIVE ON `6awafl` IN TWO CLASSES, AND EVERY SEAT THAT EDITS ANY RECEIPT INHERITS IT
+
+*One receipt accounts for both reds that reached PR #256: the `plain suite` on `37517f6e` and the `tolerance perturbation` on `28e73c1d`.*
+
+### ⌗ ROOT CAUSE, AND IT IS WRITTEN IN THE RECEIPT'S OWN HEADER
+
+*It runs four receipts in subprocesses under **its own** `INNER = 600` — "this receipt's own limit on one sample child" — inside a runner that schedules **4 at a time** on a 4-core box. Its header already records the event:*
+
+> *⛔ CORRECTED r7025+70.1 … the first failure whose output was kept **exited 1 BECAUSE of a timeout — this receipt's own `timeout=600`** … **A timeout inside a receipt is invisible to every timeout outside it.***
+
+⇒ ***So the cause is not "flake" and not unknown: it is a per-child cap sized for an unloaded box, inside a runner that decides the concurrency.*** ⌗ **That is exactly `cc66.103`/`cc66.104`'s finding, third instance** — and the repair is the one I routed then: *the child cap wants to be a share of a TOTAL deadline, not a fixed `600`.* **`L_numerics` is `70`'s, so it is routed and not patched by me.**
+
+### ⌗ WHY IT IS NOT MINE, MEASURED RATHER THAN ASSERTED
+
+| evidence | result |
+|---|---|
+| standalone on my branch | **exit 0** |
+| standalone at `main`, clean worktree | **exit 0** |
+| `plain suite` on head `28e73c1d` | **2 runs, both green** |
+| `tolerance perturbation` on `28e73c1d` | **1 green, 1 red — the same check disagreeing with itself on ONE commit** |
+| my diff vs. the receipt and its four sample children | **touches none** |
+| `refs/ci/carry` @ `45537430`, my branch | **no entry, any class** |
+
+⇒ *It failed only under the suite runner at `--jobs 4`. **A check that passes and fails on the identical commit is not evidence about the diff.***
+
+### ⚠ AND A COST YOU SHOULD SEE, BECAUSE IT IS NOT ABOUT ME
+
+*The receipt globs `receipts/**/*.py`, so **ANY receipt edit anywhere pulls it into that push's scope.** I edited seven, so it came to me. ⌗ `refs/ci/carry` @ `45537430` carries it for `6awafl` in **both `suite`** (since `79c1b03c`) **and `tolerance`** (since `0b898da0c`) right now.*
+
+⇒ ***So this is a contention-sensitive red attached to a receipt every seat's pushes reach.*** *Mine cleared; `6awafl`'s has not. **It will keep arriving at whichever seat happens to push next**, which is the argument for fixing the budget rather than re-running.*
+
+### ⛔ A CORRECTION AGAINST MYSELF, MID-INVESTIGATION
+
+*I read `main exit=1` from a shell whose output redirect had failed, and took it as **"the receipt is red on `main`"**. **It is not — a clean re-run at `main` is exit 0.** The `1` was the failed redirect, not the receipt.*
+
+⇒ ***I reported that wrong reading before re-running it, and only re-running caught it.*** ⌗ *The rule it breaks is one I already hold: an exit code from a compound shell is not a measurement of the thing at the end of the pipe. Recorded rather than quietly fixed, because I would have routed a false "red on main" to you.*
+
+*Posted on #256 as `#issuecomment-5972507213`.*
+
+---
 ## ⚑⚑⚑ `r7151` CLOSED — **THE BACKLOG IS DISCHARGED. `UNADJUDICATED 0`, CEILING `24 → 0`, `137` KEYS ALL VERDICTED. YOUR PREDICTION HOLDS AT `36%` AGAINST `7%` — AND THE MECHANISM IS NOT THE ONE EITHER OF US NAMED.**
 
 `check_prose_pins`: **`137` keys / `137` rows, `UNADJUDICATED 0`**, no new site, no stale entry, ceiling `0`. *Final distribution, once, as ordered: **`DELIBERATE 74` · `PRESENCE-CONTROL 50` · `NOT-A-COUNT 13`**.*

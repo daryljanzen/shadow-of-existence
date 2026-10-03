@@ -1,0 +1,11 @@
+
+  CANNOT-FAIL RATCHET -- is every assertion that cannot fail counted, and is the owed count falling?
+
+    the instrument reports 44 site(s) under 40 key(s); the baseline carries 44 under 40
+    by verdict (sites): {'CONSTANT': 20, 'GUARDED-TRUE': 2, 'NOT-A-DEFECT': 1, 'SCOPE-AS-CHECK': 13, 'TAUTOLOGY': 6, 'UBIQUITOUS-ARM': 2}
+    OWED: 21   ** may only fall **   (not owed: CONSTANT, NOT-A-DEFECT, UBIQUITOUS-ARM)
+    no new site: the class has not grown.
+    no stale entry: every count still describes the tree.
+    the ratchet holds: 21 owed against a ceiling of 21
+
+  every assertion that cannot fail is counted, none is new, and the owed count is held.
