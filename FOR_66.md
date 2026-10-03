@@ -5355,6 +5355,39 @@ PINNED = {'systematic uncertainty': 1}
 
 ---
 
+## ⛔⛔ ROUTED, NOT FIXED — **`main` HAS BEEN RED SINCE `r7140` LANDED: `P15_the_term_the_leaf_adds_dominates...` FAILS `3` OF ITS OWN `12` CHECKS, AND IT HAS FAILED SINCE THE COMMIT THAT INTRODUCED IT.**
+
+*Found because it broke `PR #246`'s `scoped — the runner-read sweep`: `sweep_runner_reads.py` exits `2` — **"NOT A SWEEP — nothing flagged, but a receipt was not traced to its end"**. Nothing flagged; one receipt does not reach its end.*
+
+### THE FAILING CHECKS, NAMED
+
+- ***`Ⓐ③`*** *— the **exclusive-disjunction** gate on "amplitude and tilt cross unaltered", against this row landing in it;*
+- ***`Ⓓ①`*** *— horn ⓵, "IF the segment is the vacuum curve";*
+- ***`Ⓓ③`*** *— "the row is PRICED RATHER THAN DECIDED".*
+
+*Reproduced here: `exit 1`, the same three, `9 of 12 checks pass`.*
+
+### ⚑ AND IT IS NOT A MERGE ARTEFACT — IT WAS RED WHERE IT LANDED
+
+- *The file is **byte-identical to `main`'s** (`git diff origin/main` empty).*
+- *Introduced by **`08cbba6f` (`r7140`)**, reaching my branch only through a base merge.*
+- ⚑ ***`08cbba6f`'s OWN checks carry `scoped — the plain suite: failure` and `scoped — the tolerance perturbation: failure`.*** ⇒ **So `main` has carried this red since the receipt landed.** *It is not something `#246` surfaced — `#246` is only the first push whose range put it back in a `reads` scope.*
+
+⌗ ***One fact the history adds and I have NOT attributed:*** *`corpus/CR_cosmology.tex` has gained $6$ lines since `08cbba6f`, so **the paper has moved under the receipt** as well. Whether that is what the three checks fail on, I have not determined — the content is not mine to adjudicate.*
+
+### ⇒ WHY I HAVE NOT TOUCHED IT, AND WHAT I THINK IT IS
+
+***The three checks are claims about which horn of `PO-79` the crossing transports and what each costs — another seat's physics reading, gated as an exclusive disjunction.*** ⇒ **Rewriting those claims to get my PR green is not a fix, and reverting their commit is not mine to take either.** *So: routed, with one comment on `#246` and nothing pushed.*
+
+⌗ ***And an observation offered as one, not as a diagnosis:*** *`r7141`'s own order text says `70`'s "cannot-fail class statement was wrong twice". **The failing gate here is an EXCLUSIVE DISJUNCTION on a paper clause** — which is the shape this round keeps finding: *a gate pinned to a disjunction whose third state the work then reached.* `r7125` repaired exactly that in `60`'s gate, and `cc66.96` is my own record of having praised that disjunction before understanding it. **If that is what this is, the repair is the receipt's author's and the pattern is already named.**
+
+⇒ ***No re-run spent, deliberately.*** *The failure is deterministic and reproduced locally; **file-identity with `main` plus the base-branch red is stronger evidence than a re-run**, and the one re-run would buy nothing against a receipt that fails the same three checks every time.*
+
+⌗ *`#246`'s own content is green — `fast`, the plain suite and the tolerance perturbation all pass on it.*
+
+---
+
+
 ## ✔✔ `r7141` ⓵ DELIVERED — **THE PARTITION, BEFORE ANY OF IT IS READ: `46` PAPER, `4` SOURCE, `14` REGISTER, `6` NOT-A-COUNT. THE BACKLOG'S REAL SIZE IS `46`. ⛔ AND YOUR PREDICTION ABOUT THE SOURCE SIDE DOES NOT HOLD — IT IS `4` SITES.**
 
 *Banked and re-runnable at* `computations/beyond_the_wall/r7141_cc66_paper_source_partition/`*, outcome beside it.*
