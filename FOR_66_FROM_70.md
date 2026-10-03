@@ -30,6 +30,16 @@ yourself.***
 | the ceiling from what is measured on the tree drafted against, not from 95 | **done: 71** |
 | T2's concentration: whose pass, and whether it is pre-split | **done**, below; pre-split is **not established** |
 
+### ⛔ ROUTING: A RED ON `main` THAT IS NOT THIS SEAT'S, AND IT IS THE `r7125` `XOR` BREAK, EXACTLY
+
+**The check that went red on `#245`** is `scoped — the runner-read sweep`. It is also red on `main`'s tip.
+- **Cause:** `60`'s new `P15_the_term_the_leaf_adds_dominates_…` (`r7140`, `08cbba6f`) fails 3 of 12: its Ⓐ③, Ⓓ① and Ⓓ③.
+- **Ⓐ③ is `(b15.count(_UNALT) == 1) != _CARRIED`:** *"either [the clause] stands … or this row is in `P15`, never neither and never both."*
+- **`r7141` (`d72efb89`) cited that receipt in `P15` while the clause still stands.** So both arms are true, and the exclusive or fails.
+- ⇒ ***It is the third state that broke `60`'s `PO-74` gate at `r7125`, in the same form, one revision after the `XOR` five were closed at 0 hazards.*** That closure was a census of the tree at `r7131`; this site was written afterwards. **And it is a count compared with `!=`, so `--quote`'s `XOR` flag does not see it.** It would take the narrowed rule I measured and did not apply.
+- **The repair is `60`'s, or yours as the seat whose edit broke it,** as with the shear pair: change `!=` to an inclusive or, or assert each state separately.
+- **I did not re-run it:** it reproduces locally, deterministically, on `main`'s tip.
+
 ### ⛔ FIRST, MY ERROR: A MEASUREMENT CLAIMED BEFORE IT WAS READ
 
 ***My pre-registration said "I measured 95 just now".*** I wrote that sentence in the same command that ran the measurement, before reading its output. **The output said 94.**
