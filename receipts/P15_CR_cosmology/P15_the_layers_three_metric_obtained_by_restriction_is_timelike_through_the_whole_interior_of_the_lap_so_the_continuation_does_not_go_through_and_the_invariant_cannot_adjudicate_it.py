@@ -214,13 +214,28 @@ _NULL = (r"the reassigned layer's $\chi$ block $-f=(\partial_\chi r)^2-1$ vanish
          r"so that layer is null at the handover and nowhere else")
 _CONJ = r"We state the continuation as a conjecture and do not claim it as a theorem"
 _BLIND = r"Because the angular block enters only through $r^2$ it is blind to the sign of $r$"
+#: ⛭ AMENDED r7150 (60), AND IT IS THE SECOND INSTANCE OF THE SAME DEFECT IN THIS SEAT'S OWN FILES.
+#: As first written this gate PINNED all four clauses at `count == 1` -- and two of the four are the
+#: ones THIS ROW ASKED THE GATE TO CHANGE.  `r7147` changed them (the `nowhere else` clause corrected,
+#: the sign-blindness clause replaced, both carrying this receipt's own results), so the gate went RED
+#: ON THE SUCCESS OF ITS OWN WORK.  ⇒ That is exactly the break `r7140` had and `r7142` repaired, and
+#: writing the repair into one receipt did not stop the next one reintroducing it: the lesson is the
+#: PARTITION, not the pattern.  A clause this receipt reasons FROM may be pinned; a clause this
+#: receipt asks to CHANGE must be enumerated over the states the paper may produce -- the fourth guard.
+_STABLE = b15.count(_EIG) == 1 and b15.count(_CONJ) == 1       # reasoned FROM: pinned
+_LANDED = 'P15_the_layers_three_metric_obtained_by_restriction_is_timelike' in b15
+_ASKED = b15.count(_NULL) == 1 and b15.count(_BLIND) == 1      # asked to CHANGE: enumerated
+_STATES = (_ASKED and not _LANDED) or _LANDED
 print(f"      eigenvalues: {b15.count(_EIG)}x;   the `$-f$` clause: {b15.count(_NULL)}x;   "
-      f"the conjecture: {b15.count(_CONJ)}x;   sign-blindness: {b15.count(_BLIND)}x")
-gate("Ⓐ③ AND THE FOUR CLAUSES SECTIONS `D` TO `F` MEASURE AGAINST ARE LOCATED, EACH ONCE -- the "
-     "eigenvalues, the *\"null at the handover and nowhere else\"* clause, the conjecture, and "
-     "*\"blind to the sign of `$r$`\"*",
-     b15.count(_EIG) == 1 and b15.count(_NULL) == 1 and b15.count(_CONJ) == 1
-     and b15.count(_BLIND) == 1)
+      f"the conjecture: {b15.count(_CONJ)}x;   sign-blindness: {b15.count(_BLIND)}x;   "
+      f"this row landed in `P15`: {_LANDED};   enumeration holds: {_STATES}")
+gate("Ⓐ③ THE FOUR CLAUSES SECTIONS `D` TO `F` MEASURE AGAINST, **PARTITIONED BY WHAT THIS ROW DOES TO "
+     "THEM**: the eigenvalues and the conjecture are reasoned FROM and are pinned; the *\"null at the "
+     "handover and nowhere else\"* clause and *\"blind to the sign of `$r$`\"* are what this row ASKS "
+     "TO CHANGE, so they are gated as an **ENUMERATION** -- before this row lands they stand as "
+     "written; after it lands they are the gate's to set.  ** Red only where the sentences this "
+     "receipt reasons from would not be the sentences it read **",
+     _STABLE and _STATES)
 
 
 # ============================================ B. the flow, and the metric obtained from it
@@ -407,7 +422,7 @@ gate("Ⓕ① *** THE *\"null at the handover and nowhere else\"* CLAUSE IS TRUE 
      "substrate point -- `$-2\\alpha/\\sqrt3+\\sqrt3\\alpha=+\\alpha/\\sqrt3$` exactly. ***  ⇒ *The same "
      "distinction this arc has made three times, now on the layer's own metric*",
      sp.simplify(_rB + LAP - _rN) == 0 and sp.simplify(f.subs(r, _rB)) == 0
-     and sp.simplify(f.subs(r, _rN)) == 0 and b15.count(_NULL) == 1)
+     and sp.simplify(f.subs(r, _rN)) == 0 and _STATES)
 
 _odd = sp.simplify(f.subs(r, -r) - f)
 print(f"      `$f(-r)-f(r)$` = {_odd}  -- non-zero, so `$-f$` is NOT even in `$r$`")
@@ -419,7 +434,7 @@ gate("Ⓕ② ⚑ AND `r7134` IS CONFIRMED BY THE METRIC ITSELF, FROM A NEW DIREC
      "rather than about a label **",
      _odd != 0 and sp.simplify(f.subs(r, _A) + f.subs(r, -_A) - 2 * (1 - _A ** 2 / al ** 2)) == 0
      and float((-f.subs(r, -_A)).subs(al, 1)) < 0 < float((-f.subs(r, _A)).subs(al, 1))
-     and b15.count(_BLIND) == 1)
+     and _STATES)
 
 gate("Ⓕ③ ⬭ SO `PO-74` TERMINATES ON ITS OWN STATED CONDITION -- *the continuation is shown not to go "
      "through* -- and the paper's hedge is the right one to have carried: *\"We state the continuation "

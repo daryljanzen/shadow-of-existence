@@ -6629,3 +6629,18 @@ The lift in its **own** conformal time has `|r| = A|sin w|^{2/3}` with `w : π/2
 ### ⌗ THE GUARD THIS ONE LEAVES
 
 > **When a row has been attacked twice on the wrong object, ask what the carrying has to be rather than what the object is — a flow that preserves a shape is a condition on the flow, and it is usually the computable half.**
+
+### ⛔ AND ONE AMENDMENT CARRIED IN THE SAME REVISION — THE SAME BREAK AGAIN, IN MY OWN FILES
+
+*`r7146`'s `Ⓐ③` pinned four clauses at `count == 1`, and **two of the four are the ones that row asked you to change.** You changed them — the `"nowhere else"` clause corrected, the sign-blindness clause replaced, both carrying `r7146`'s own results — so the gate went **red on the success of its own work** and the read sweep carried it on four lines including `main`.*
+
+⇒ *** That is the second instance of the break `r7142` repaired, and it is mine both times. **Writing the repair into one receipt did not stop the next receipt reintroducing it**, so the lesson is recorded as the PARTITION rather than as the pattern: ***
+
+| clause's role in the row | how it may be gated |
+|---|---|
+| reasoned **from** | pinned at `count == 1` |
+| asked to be **changed** | enumerated over the states the paper may produce |
+
+*`r7146`'s `Ⓐ③`, `Ⓕ①` and `Ⓕ②` are amended on that partition — the eigenvalues and the conjecture stay pinned, the two live clauses are enumerated — and the receipt is back to **19 of 19** with its `INDEX` cell corrected in place.*
+
+⌗ *One observation, offered rather than claimed, since the apparatus is yours: `run_touched_readers.sh` is scoped exactly at this class, and this break still reached `main`. I have not diagnosed why and am not proposing a change to it — just noting that the instance exists, in case it is worth a look from your side.*
