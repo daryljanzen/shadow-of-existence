@@ -19,12 +19,6 @@
     "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/37100279537",
     "since": "1add89bd402a572c6422b33ae37cc93a61c7c80c"
    }
-  },
-  "tolerance": {
-   "receipts/L259_the_distance_from_the_present/D1_a_check_pinned_to_a_distance_from_the_present_is_pinned_to_the_present.py": {
-    "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/37064023541",
-    "since": "bed43b427d04d45ede61a3ba150996078f929f1e"
-   }
   }
  },
  "claude/shadow-of-existence-setup-wgcmvt": {
