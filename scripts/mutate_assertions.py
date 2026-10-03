@@ -1095,6 +1095,84 @@ def report_unread_figure(rows):
               f'{{{",".join(r["figs"][:6])}}}  {json.dumps(r["label"], ensure_ascii=False)}')
 
 
+# ================================================================ ROUNDING-BOUNDARY (r7153+70.1)
+# ⛭ A VERDICT DECIDED BY A ROUNDING BOUNDARY RATHER THAN BY THE QUANTITY (66, r7153 ⌗): `round(x, n) == L`, or
+#   `abs(x - L) < T` with T half a unit in the n-th decimal.  Such a check CAN fail -- and whether it does is a coin
+#   flip on the last bit when x sits at the midpoint (P15's ell = 2 ratio straddled 0.9255 by 6e-7: it passed on one
+#   quadrature grid and failed on the other while the ratio moved by 8e-7).  The STATIC half is here; where x sits
+#   needs the receipt RUN, and `computations/beyond_the_wall/r7153_70_rounding_boundary/` does that on the receipts
+#   this selects.
+def _half_unit(t):
+    """n if t is half a unit in the n-th decimal (5e-(n+1)), else None"""
+    import math
+    try:
+        t = float(t)
+    except (TypeError, ValueError):
+        return None
+    if t <= 0:
+        return None
+    n = math.log10(2 * t)
+    k = round(n)
+    return -k if abs(n - k) < 1e-9 and k <= 0 else None
+
+
+def rounding_boundary(root, files=None):
+    out = []
+    files = files or sorted(glob.glob(os.path.join(root, 'receipts', '**', '*.py'), recursive=True))
+    for f in files:
+        try:
+            src = open(f, encoding='utf-8', errors='replace').read()
+            tree = ast.parse(src)
+        except SyntaxError:
+            continue
+        _asg, fns = _defs(tree)
+        seen = set()
+        for v in _verdicts(tree, fns, src):
+            for n in ast.walk(v):
+                if not (isinstance(n, ast.Compare) and len(n.ops) == 1) or id(n) in seen:
+                    continue
+                seen.add(id(n))
+                a, b, op = n.left, n.comparators[0], n.ops[0]
+                site = dict(receipt=os.path.relpath(f, root), site=f'{n.lineno}:{n.col_offset}',
+                            text=' '.join((_seg(src, n) or '').split())[:140])
+                if isinstance(op, ast.Eq):
+                    for x in (a, b):
+                        if (isinstance(x, ast.Call) and isinstance(x.func, ast.Name) and x.func.id == 'round'
+                                and len(x.args) == 2):
+                            out.append(dict(site, form='ROUND', n=_seg(src, x.args[1])))
+                            break
+                elif isinstance(op, (ast.Lt, ast.LtE)):
+                    if (isinstance(a, ast.Call) and ST.fname(a) == 'abs' and len(a.args) == 1
+                            and isinstance(a.args[0], ast.BinOp) and isinstance(a.args[0].op, ast.Sub)):
+                        try:
+                            t = eval(compile(ast.Expression(b), '<t>', 'eval'), {'__builtins__': {}})
+                        except Exception:
+                            continue
+                        k = _half_unit(t)
+                        # ⛭ T must be half a unit in the LITERAL's own last printed digit -- `abs(x - 0.926) < 5e-4`
+                        #   is the rounding check `round(x, 3) == 0.926`; `abs(x - 924.28) < 0.5` is a tolerance that
+                        #   merely happens to be a half (the first draft took both: 200 sites, most of them the second)
+                        lits = []
+                        for y in (a.args[0].left, a.args[0].right):
+                            z = y.operand if isinstance(y, ast.UnaryOp) and isinstance(y.op, ast.USub) else y
+                            if isinstance(z, ast.Constant) and isinstance(z.value, float):
+                                txt = (_seg(src, z) or '').lower()
+                                if 'e' not in txt:
+                                    lits.append(len(txt.split('.')[1]) if '.' in txt else 0)
+                        if k is not None and k in lits:
+                            out.append(dict(site, form='HALF-UNIT', n=str(k)))
+    out.sort(key=lambda r: (r['receipt'], tuple(int(x) for x in r['site'].split(':'))))
+    return out
+
+
+def report_rounding_boundary(rows):
+    from collections import Counter
+    c = Counter(r['form'] for r in rows)
+    print(f'\n  ROUNDING-BOUNDARY: {len(rows)} site(s) in {len({r["receipt"] for r in rows})} receipt(s)   {dict(c)}')
+    for r in rows:
+        print(f'    [ROUNDING-BOUNDARY][{r["form"]}][n={r["n"]}] {r["receipt"]}:{r["site"]}  {r["text"]}')
+
+
 def report_quote(rows):
     print(f'\n  QUOTE-PIN: {len(rows)} site(s) in {len({r["receipt"] for r in rows})} receipt(s)')
     for r in rows:
@@ -1268,6 +1346,7 @@ def main():
     ap.add_argument('--quote', action='store_true')
     ap.add_argument('--cannot-fail', action='store_true')
     ap.add_argument('--unread-figure', action='store_true')
+    ap.add_argument('--rounding-boundary', action='store_true')
     ap.add_argument('--files', nargs='*', help='with --prose / --quote: only these receipt files')
     ap.add_argument('--regrid-dir', choices=('down', 'up'), default='down',
                     help='move LSTEP down by one (default) or up by one')
@@ -1287,6 +1366,10 @@ def main():
     if a.cannot_fail:
         rows = cannot_fail(a.root, [os.path.abspath(f) for f in a.files] if a.files else None, ubiq_root=ROOT)
         report_cannot_fail(rows)
+        rc |= bool(rows)
+    if a.rounding_boundary:
+        rows = rounding_boundary(a.root, [os.path.abspath(f) for f in a.files] if a.files else None)
+        report_rounding_boundary(rows)
         rc |= bool(rows)
     if a.unread_figure:
         rows = unread_figure(a.root, [os.path.abspath(f) for f in a.files] if a.files else None, tex_root=ROOT)
