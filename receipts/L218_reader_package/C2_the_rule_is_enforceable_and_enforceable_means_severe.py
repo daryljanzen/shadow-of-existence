@@ -97,7 +97,11 @@ def main():
     #   name no number -- these three lines are a dashboard (ESTABLISHED / OPEN / DO-NOT-ASSERT), and what
     #   each asserts is that its class is non-empty. Presence asserted, counts printed (549 and 24).
     check(f'ESTABLISHED: {est} distinct receipts cited in the papers', est > 0)
-    check(f'OPEN: {open_items} PROTECTED_OPEN items', open_items >= 8)
+    # ⛔ r7151+cc66.112: `>= 8` -- THE THIRD LINE OF THE SAME DASHBOARD, MISSED BY MY OWN
+    #   r7143+cc66.108 PASS ABOVE, whose comment says all three assert that their class is
+    #   non-empty.  Two did and this one asserted eight.  *The comment was true of what I meant
+    #   and false of what I wrote, which is the one kind of stale note a reader cannot catch.*
+    check(f'OPEN: {open_items} PROTECTED_OPEN items', open_items > 0)
     check(f'DO-NOT-ASSERT: {dna} explicit non-claim phrases in the papers', dna > 0)
 
     # ⓷ the scale

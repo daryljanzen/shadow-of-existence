@@ -183,7 +183,13 @@ def main():
           all(len(v) <= 6 for v in lost.values()))
     check('⇒ SO THE DROP IS LOSSLESS IN SUBSTANCE: what the observer line pruned is a repair note, '
           'whose permanent home is the arc row and the receipt and never a protected row',
-          sum(len(v) for v in lost.values()) <= 12)
+          # ⛔ r7151+cc66.112: `<= 12` was FITTED, not derived -- tighter than the `<= 6` per key
+          #   above allows over `len(IDS)` keys, with a margin of ONE over the measured 11.  And the
+          #   quantity is not immutable: `a` and `b` are pinned blobs but `E` is built from LIVE
+          #   files, so it FALLS as the arc grows and JUMPS if any of four hardcoded paths is
+          #   renamed -- which is `L-248`'s own subject.  ⇒ *Derived from the per-key bound, so
+          #   there is no literal left to fit.*  The dict is printed above either way.
+          sum(len(v) for v in lost.values()) <= 6 * len(IDS))
 
     # ⓹ the repair, in the live file
     check(f'⓹ REPAIRED: every protected ID now appears exactly once ({len(live)} IDs, '

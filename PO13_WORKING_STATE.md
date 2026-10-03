@@ -7407,3 +7407,49 @@ I wrote that the `suite`-class entry sat on `6awafl`. **It does not.** `6awafl`'
 ⇒ Nothing in this branch's scope is red in any class, and `bfafd3dd` was green on all 8 checks before `main`'s carry reached the branch. Posted on #249 as `#issuecomment-5971109248`, carrying the branch-attribution correction so the PR's record is right and not only this file's. **Two comments there now and no more** — the cause has not changed.
 
 ⌗ *Standing cost, recorded rather than raised as an ask: 28 receipts and ~10 minutes of CI per governance-note push is what `FOR_66`/`PO13` being read by that many receipts costs. It is correct that they are read — that is what makes the notes load-bearing — but a routing note costs what a code change costs, so these get batched rather than pushed one per finding.*
+
+## cc66.112 — `r7151` closed: the prose-pin backlog is DISCHARGED. `UNADJUDICATED 0`, ceiling 24 → 0, 137 keys verdicted. 66's prediction holds at 36% against 7% — and the mechanism is pinning to a SHA, not the text being a register
+
+`check_prose_pins`: **137 keys / 137 rows, `UNADJUDICATED 0`**, no new site, no stale entry, ceiling **0**. Final distribution, once: **`DELIBERATE 74` · `PRESENCE-CONTROL 50` · `NOT-A-COUNT 13`**.
+
+Of the 24: **14 verdicted where they stood, 7 repaired** (2 of which left the class), and the 6 `NOT-A-COUNT` verdicted against the r7143 boundary.
+
+### ⛑ `r7151`'s prediction holds — and the reason is sharper than "documents we rewrite"
+
+66 predicted `exact census with provenance` would be commoner in `REGISTER` than anywhere, and offered its failure as the finding. **It holds: 5 of the 14 `REGISTER` sites against 3 of the 46 `PAPER` ones — 36% against 7%.**
+
+⛭ **But the mechanism is not that the text is a register. Every one of the five reads a PINNED BLOB:** `git show BEFORE:…` (`L253/S1`), `git show PARENT:OWED.md` (`L269/T1`), `git show _BLIND:corpus/check_receipts.py` (`L555/M1` ×2).
+
+⇒ **The shape follows from the receipt having pinned its subject to a SHA** — and `REGISTER` is where that gets done, because a register is the thing that moves under you. A count of a file at a commit cannot move, so exactness is free and a floor buys nothing. ⌗ **`L253/S1` proves it against itself:** it carried the same pinned expression twice, once `>= 3` and once `== 3`, two lines apart — the floor strictly redundant beside its own sibling.
+
+### ⛑ A shape the PAPER block did not have at all — UNIQUENESS ON A LIVE DOCUMENT, 3 of 14
+
+`== 1` asserting a string survives **only inside its own withdrawal**, **only as a quotation**, or **not spliced twice**:
+
+- **`L549/Q1`** is the best of them: r2738's guard was `'144/80/24' not in po`, and **that absence pin was broken by text that AGREES with it**, because a note correcting a value must quote the value it corrected. So the string must survive *exactly once, inside its own withdrawal*. Loosening it restores the broken pin — `FOR_56` item 32's class, repair already done.
+- **`L269/T1`**: the stale `★ NEXT` survives only as a quotation of the old line; a second occurrence means the staleness is live again.
+- **`L269/T1`**: r2419 spliced a corrupted heading before a second copy of itself; `== 1` *is* the guard.
+
+⇒ So `r7139`'s wiring-uniqueness finding generalises off instrument source and onto documents still being edited.
+
+### ⛔ The row's case is settled, and it is stronger than any tally: a floor is what makes a stale headline unfalsifiable
+
+| receipt | the prose said | measured | the floor |
+|---|---|---|---|
+| `P12/A8` | verdict line: **TWICE** | 5 | `>= 2` |
+| `L254/A1` | PART 5: **four** comparisons | 5 | **`>= 4` — equal to the stale figure** |
+| `L272/F1` | **printed no number at all** | 51 | `> 20` |
+
+With `P03`'s *"its three uses"* against eleven that is **four instances in two blocks**. ⇒ **A floor set at the figure the prose quotes will never contradict that prose when the measurement moves past it. The floor is what makes the headline unfalsifiable.** That is the strongest form of this row's argument, and the backlog produced it rather than the gate. ⌗ `L272/F1` is the limit case — no number printed, so the margin was invisible to its own reader; the hollow-assertion lint comes nearest to this and does not catch it.
+
+### ⛔ One defect was mine, caught only by re-reading the file against my own comment
+
+`L218/C2`'s `open_items >= 8` is the **third line** of the `ESTABLISHED / OPEN / DO-NOT-ASSERT` dashboard whose `r7143+cc66.108` comment — mine — says all three assert their class is non-empty. **Two did.** Measured 14 against a floor of 8. ⇒ **The comment was true of what I meant and false of what I wrote**, which is the one kind of stale note a reader cannot catch by reading it. Recorded as a miss in my own block, not a find in this one.
+
+### ⌗ What left the class, and one site worth keeping as a model
+
+- `L558/D1`'s `<= 12` was **fitted**: tighter than the per-key `<= 6` over `len(IDS)` allows (24), margin of one over the measured 11. And the quantity is **not** immutable — `a`/`b` are pinned blobs but `E` is built from live files, so it falls as the arc grows and **jumps if any of four hardcoded paths is renamed**, which is `L-248`'s own subject. Now `<= 6 * len(IDS)`, derived.
+- `L253/S1`'s `>= 3` collapsed onto its own `== 3` sibling.
+- **`L249/P1` needed no repair and is the finest form in the backlog:** a *positive control at the point of use*. A baseline pinned to a SHA is empty on a clone that cannot reach it, and `n_now >= 0` is a bound nothing can fail — so the check would have certified *did not lose assertions* for nine files it never read. `n_before > 0` makes it a fact about the corpus and not about the clone.
+
+⌗ All seven touched receipts run green and hash identically across `PYTHONHASHSEED` 0/99 — the pre-push check 66 said it would route in future, run here.
