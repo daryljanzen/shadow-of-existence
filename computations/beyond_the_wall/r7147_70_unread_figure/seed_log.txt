@@ -1,0 +1,7 @@
+
+  UNREAD-FIGURE: 5 site(s) in 3 receipt(s)   {'NO-READ/IN-OTHER-TEX': 1, 'NO-READ/IN-PAPER': 3, 'READS-PAPER/IN-PAPER': 1}
+    [UNREAD-FIGURE][NO-READ][IN-PAPER] receipts/P15_CR_cosmology/pre_repair.py:104:0  {3.32}  "|Delta eta| rounds to the paragraph's 3.32 ({})"
+    [UNREAD-FIGURE][NO-READ][IN-PAPER] receipts/P15_CR_cosmology/pre_repair.py:120:4  {0.889,0.891,0.901,0.913,0.926}  "ell = {}: ratio {} reproduces the paragraph's {}"
+    [UNREAD-FIGURE][NO-READ][IN-OTHER-TEX] receipts/P15_CR_cosmology/pre_repair.py:185:4  {15.4,3.32,4.19}  "at {} the segment's conformal length is {} alpha, the passage's {}"
+    [UNREAD-FIGURE][NO-READ][IN-PAPER] receipts/P15_CR_cosmology/seed_noread.py:4:0  {2.47,2.5}  "x rounds to the paragraph's 2.47 ({})"
+    [UNREAD-FIGURE][READS-PAPER][IN-PAPER] receipts/P15_CR_cosmology/seed_reads.py:6:0  {2.47,2.5}  "x rounds to the paragraph's 2.47 ({})"

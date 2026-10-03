@@ -936,6 +936,165 @@ def report_cannot_fail(rows):
         print(f'    [CANNOT-FAIL][{r["cls"]}] {r["receipt"]}:{r["site"]}  {r["text"]}')
 
 
+# ================================================================ UNREAD-FIGURE (r7147+70.1)
+# ⛭ THE FIFTH CLASS: A RECEIPT THAT ASSERTS A PAPER'S FIGURE IT NEVER READS.  The routed instance
+#   (`P15_the_exact_transmission_ratios...`, before r7145): `check(f"... rounds to the paragraph's 3.32 ...",
+#   round(Deta, 2) == 3.32)` in a file that opens no .tex.  Its subject is the paper and its measurement is
+#   its own arithmetic, so no file-scoped gate reaches it -- there is nothing to scope on.
+#   A SITE = a check whose LABEL attributes a figure to a text AND whose VERDICT carries that figure (a
+#   numeric literal also written in the label, or a name the label interpolates that resolves to literals).
+#   Partitioned by READ (NO-READ is the class proper) and WHERE (the figure in the home paper, another
+#   .tex, or none -- IN-NO-TEX is the drifted sub-class: the paper no longer prints what is attributed to it).
+_ATTRIB = re.compile(r"(?i)\bthe (paper|paragraph|passage|sentence|section|table|caption|abstract|row|text|"
+                     r"corollary|theorem|proposition|remark|footnote|appendix)['’]s\b|"
+                     r"\bas (printed|stated|quoted|written)\b|\bP\d\d?['’]s\b|\\\\?(eq)?ref\b|\b(sec|eq|tab):")
+_TEXREAD = re.compile(r"\.tex\b")
+PAPER_OF_DIR = {'P1': 'BH_causality_v2', 'P2': 'janzen_circle_v3', 'P3': 'SdS-slicing-curve_v2',
+                'P4': 'modern_parallax', 'P5': 'groupoid_paper', 'P6': 'shadow_of_existence',
+                'P7': 'CR_framework', 'P8': 'slicing_operator', 'P9': 'range_paper', 'P10': 'canonical_time',
+                'P11': 'dynamics_paper', 'P12': 'algebroid_paper', 'P13': 'boundary_paper',
+                'P14': 'matter_sector_paper', 'P15': 'CR_cosmology', 'P16': 'cosmogenesis_paper',
+                'P17': 'geometric_core_paper', 'p0': 'geometric_core_paper', 'P18': 'CR_synthesis'}
+
+
+def _num_lits(node, src):
+    """the source text of every numeric literal under node (bool excluded; a leading unary minus kept)"""
+    out = []
+    for n in ast.walk(node):
+        if isinstance(n, ast.Constant) and isinstance(n.value, (int, float)) and not isinstance(n.value, bool):
+            out.append((_seg(src, n) or repr(n.value)).replace('_', ''))
+    return out
+
+
+def _for_bindings(tree, src):
+    """name -> numeric-literal texts it takes in a `for` over a literal tuple/list (by position)"""
+    out = {}
+    for n in ast.walk(tree):
+        if isinstance(n, (ast.For, ast.comprehension)) and isinstance(n.iter, (ast.Tuple, ast.List)):
+            tgt = n.target
+            for el in n.iter.elts:
+                if isinstance(tgt, ast.Name):
+                    out.setdefault(tgt.id, []).extend(_num_lits(el, src) if isinstance(el, ast.Constant) else [])
+                elif isinstance(tgt, ast.Tuple) and isinstance(el, (ast.Tuple, ast.List)) and len(el.elts) == len(tgt.elts):
+                    for t, v in zip(tgt.elts, el.elts):
+                        if isinstance(t, ast.Name) and isinstance(v, ast.Constant):
+                            out.setdefault(t.id, []).extend(_num_lits(v, src))
+    return out
+
+
+def _resolves_to_lits(name, asg, forb, src):
+    lits = list(forb.get(name, []))
+    for v in asg.get(name, []):
+        if isinstance(v, (ast.Constant, ast.UnaryOp, ast.Dict, ast.Tuple, ast.List)) and _pure_literal(v):
+            # a dict's KEYS are indices (`PAPER = {15: 0.926}`), not figures: its values only
+            for e in (v.values if isinstance(v, ast.Dict) else [v]):
+                lits.extend(_num_lits(e, src))
+    return lits
+
+
+def _label_names(lab):
+    return {n.id for n in ast.walk(lab) if isinstance(n, ast.Name)} if isinstance(lab, ast.JoinedStr) else set()
+
+
+def _label_text(lab, src):
+    if isinstance(lab, ast.Constant):
+        return lab.value
+    return ''.join(v.value if isinstance(v, ast.Constant) else '{}' for v in lab.values)
+
+
+@functools.lru_cache(maxsize=2)
+def _tex_texts(root):
+    """paper -> the set of numeric tokens it prints"""
+    return {os.path.basename(f)[:-4]: set(re.findall(r'(?<![\d.])\d+(?:\.\d+)?',
+                                                      open(f, encoding='utf-8', errors='replace').read()))
+            for f in glob.glob(os.path.join(root, 'corpus', '*.tex'))}
+
+
+def _in_tex(lit, toks):
+    """does the paper print this figure -- AT THE PAPER'S OWN PRECISION?  `3.3387380236` in a receipt is the
+    paper's `3.33874`: a printed token t matches when it has no more decimals than the literal and the literal
+    rounds to it (the first draft matched exact text and filed the r7145 repair as IN-OTHER-TEX)"""
+    lit = lit.lstrip('+')
+    if lit in toks:
+        return True
+    try:
+        v = float(lit)
+    except ValueError:
+        return False
+    d = len(lit.split('.')[1]) if '.' in lit else 0
+    for t in toks:
+        td = len(t.split('.')[1]) if '.' in t else 0
+        if 1 <= td < d and t.split('.')[0] == lit.split('.')[0] and abs(float(t) - v) <= 0.5 * 10 ** -td + 1e-12:
+            return True
+    return False
+
+
+def unread_figure(root, files=None, tex_root=None):
+    out = []
+    tex = _tex_texts(tex_root or root)
+    files = files or sorted(glob.glob(os.path.join(root, 'receipts', '**', '*.py'), recursive=True))
+    for f in files:
+        try:
+            src = open(f, encoding='utf-8', errors='replace').read()
+            tree = ast.parse(src)
+        except SyntaxError:
+            continue
+        asg, fns = _defs(tree)
+        forb = _for_bindings(tree, src)
+        checky = {k for k, fn in fns.items() if _VERDICT.search(_seg(src, fn) or '')}
+        reads = 'READS-PAPER' if (_TEXREAD.search(src) and _READ.search(src)) else 'NO-READ'
+        m = re.match(r'(P\d+|p0)_', os.path.basename(os.path.dirname(f)))
+        home = PAPER_OF_DIR.get(re.sub(r'^P0', 'P', m.group(1))) if m else None
+        for n in ast.walk(tree):
+            if not (isinstance(n, ast.Call) and len(n.args) >= 2 and (ST._CHECKY.search(ST.fname(n) or '') or
+                                                                     (isinstance(n.func, ast.Name) and n.func.id in checky))):
+                continue
+            lab = lambda x: isinstance(x, ast.JoinedStr) or (isinstance(x, ast.Constant) and isinstance(x.value, str))
+            if lab(n.args[0]) and not lab(n.args[1]):
+                label, verdict = n.args[0], n.args[1]
+            elif lab(n.args[1]) and not lab(n.args[0]):
+                label, verdict = n.args[1], n.args[0]
+            else:
+                continue
+            ltext = _label_text(label, src)
+            if not _ATTRIB.search(ltext):
+                continue
+            # written IN the label as a token of its own: `2` is not in "3.32" (the first draft matched substrings)
+            figs = [x for x in _num_lits(verdict, src)
+                    if re.search(r'(?<![\d.])' + re.escape(x.lstrip('-')) + r'(?![\d]|\.\d)', ltext)]
+            lnames = _label_names(label)
+            # a name used only as a SUBSCRIPT in the verdict (`PAPER[l]`) is an index, not a figure
+            idx = [x.slice.id for x in ast.walk(verdict) if isinstance(x, ast.Subscript) and isinstance(x.slice, ast.Name)]
+            vnames = [x.id for x in ast.walk(verdict) if isinstance(x, ast.Name)]
+            for nm in {v for v in vnames if vnames.count(v) > idx.count(v)} & lnames:
+                figs.extend(_resolves_to_lits(nm, asg, forb, src))
+            figs = sorted({x.lstrip('-') for x in figs if x.lstrip('-') not in ('0', '1')})
+            if not figs:
+                continue
+            if home and home in tex and all(_in_tex(x, tex[home]) for x in figs):
+                where = 'IN-PAPER'
+            elif all(any(_in_tex(x, t) for t in tex.values()) for x in figs):
+                where = 'IN-OTHER-TEX' if home else 'IN-SOME-TEX'
+            elif any(any(_in_tex(x, t) for t in tex.values()) for x in figs):
+                where = 'PARTLY-IN-TEX'
+            else:
+                where = 'IN-NO-TEX'
+            out.append(dict(receipt=os.path.relpath(f, root), site=f'{n.lineno}:{n.col_offset}', read=reads,
+                            where=where, figs=figs, label=' '.join(ltext.split())[:110]))
+    out.sort(key=lambda r: (r['receipt'], tuple(int(x) for x in r['site'].split(':'))))
+    return out
+
+
+def report_unread_figure(rows):
+    from collections import Counter
+    c = Counter((r['read'], r['where']) for r in rows)
+    print(f'\n  UNREAD-FIGURE: {len(rows)} site(s) in {len({r["receipt"] for r in rows})} receipt(s)   '
+          f'{dict(sorted((f"{a}/{b}", v) for (a, b), v in c.items()))}')
+    for r in rows:
+        print(f'    [UNREAD-FIGURE][{r["read"]}][{r["where"]}] {r["receipt"]}:{r["site"]}  '
+              f'{{{",".join(r["figs"][:6])}}}  {json.dumps(r["label"], ensure_ascii=False)}')
+
+
 def report_quote(rows):
     print(f'\n  QUOTE-PIN: {len(rows)} site(s) in {len({r["receipt"] for r in rows})} receipt(s)')
     for r in rows:
@@ -1108,6 +1267,7 @@ def main():
     ap.add_argument('--prose', action='store_true')
     ap.add_argument('--quote', action='store_true')
     ap.add_argument('--cannot-fail', action='store_true')
+    ap.add_argument('--unread-figure', action='store_true')
     ap.add_argument('--files', nargs='*', help='with --prose / --quote: only these receipt files')
     ap.add_argument('--regrid-dir', choices=('down', 'up'), default='down',
                     help='move LSTEP down by one (default) or up by one')
@@ -1127,6 +1287,10 @@ def main():
     if a.cannot_fail:
         rows = cannot_fail(a.root, [os.path.abspath(f) for f in a.files] if a.files else None, ubiq_root=ROOT)
         report_cannot_fail(rows)
+        rc |= bool(rows)
+    if a.unread_figure:
+        rows = unread_figure(a.root, [os.path.abspath(f) for f in a.files] if a.files else None, tex_root=ROOT)
+        report_unread_figure(rows)
         rc |= bool(rows)
     if a.quote:
         rows = quote(a.root, [os.path.abspath(f) for f in a.files] if a.files else None)
