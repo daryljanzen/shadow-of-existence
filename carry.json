@@ -33,14 +33,6 @@
    }
   }
  },
- "claude/shadow-of-existence-setup-wgcmvt": {
-  "tolerance": {
-   "receipts/P15_CR_cosmology/P15_the_term_the_leaf_adds_dominates_the_matter_term_everywhere_inside_the_lap_with_equality_forced_onto_the_back_chart_value_so_the_vacuum_reading_commits_to_its_strong_form.py": {
-    "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/37100159749",
-    "since": "1add89bd402a572c6422b33ae37cc93a61c7c80c"
-   }
-  }
- },
  "main": {
   "suite": {
    "receipts/P15_CR_cosmology/P15_the_term_the_leaf_adds_dominates_the_matter_term_everywhere_inside_the_lap_with_equality_forced_onto_the_back_chart_value_so_the_vacuum_reading_commits_to_its_strong_form.py": {
