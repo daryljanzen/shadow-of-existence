@@ -11,6 +11,12 @@
     "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/37102560115",
     "since": "fea13c2bd78486826837c09db4324a378f20503d"
    }
+  },
+  "tolerance": {
+   "receipts/P15_CR_cosmology/P15_the_term_the_leaf_adds_dominates_the_matter_term_everywhere_inside_the_lap_with_equality_forced_onto_the_back_chart_value_so_the_vacuum_reading_commits_to_its_strong_form.py": {
+    "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/37101006437",
+    "since": "c885bfe6dd9e985a8251e58a8619a3054580153a"
+   }
   }
  },
  "claude/shadow-of-existence-setup-6awafl": {
