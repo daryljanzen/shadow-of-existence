@@ -152,7 +152,35 @@ def main():
     #   reading it once settles it.*  ⛔ *A first draft declared 170 and then printed `21 already read`,
     #   which was false: nothing had been read, and the slack was an artefact of the key.  Recorded rather
     #   than quietly corrected, because inventing headroom is the failure this instrument was built to find.*
-    CEILING = 70
+    CEILING = 24
+    #: ⛭ r7143+cc66.109: 70 -> 24, lowered by EXACTLY the 46 sites read -- THE WHOLE OF THE `PAPER`
+    #: CLASS, which the r7141 partition now reports as **0 of the remaining 24**.  The 24 left are
+    #: 4 SOURCE + 14 REGISTER + 6 NOT-A-COUNT, and none of them is repair owed on paper prose.
+    #:   ⌗ THE SHAPE OF THE 46, which is the part worth keeping: 32 were verdicted WHERE THEY STOOD
+    #:   and 14 were repaired.  Of the 14, six survive the repair as a minimal `> 0` presence check and
+    #:   are verdicted here -- but **EIGHT LEFT THE CLASS ALTOGETHER**, because the bound that replaced
+    #:   the round floor is DERIVED, NAMED or RELATIONAL and so has no literal left to pin:
+    #:   `edges > 150` became `edges > len(g) * (len(g) - 1) // 2`, the ceiling a transitive total order
+    #:   could carry; `n_lep >= 10` became `n_lep > _PREMISE_LEP`, the stale premise it was contradicting;
+    #:   `len(where[a]) >= 15` became `len(where[a]) > len(where[b])`, the comparison the label actually
+    #:   makes; `prox < 60` became `prox * 1000 < tot`, the *under one per thousand* the label states.
+    #:   ⇒ *So the instrument's own population is a measure of how many bounds are still literals.
+    #:   Repairing a pin properly does not move it to a better verdict -- it removes it from the class,
+    #:   and the key count fell 147 -> 139 for exactly that reason and no other.*
+    #: ⛑ THE VERDICT DISTRIBUTION, ONCE, over all 139 keys -- there is no fourth forward call after
+    #: this one: **DELIBERATE 62 · PRESENCE-CONTROL 46 · NOT-A-COUNT 7 · UNADJUDICATED 24.**  The 38
+    #: rows this block wrote are 24 DELIBERATE, 12 PRESENCE-CONTROL, 2 NOT-A-COUNT.
+    #:   ⌗ *DELIBERATE outnumbers PRESENCE-CONTROL across the tree and inside this block alike, which
+    #:   inverts what a backlog of 70 "pins on a count" suggested: the common case is a bound that IS
+    #:   the finding, not a floor hiding one.  Six repairs out of 46 read is the honest hit rate.*
+    #: ⛑ THE `NOT-A-COUNT` BOUNDARY, now stated rather than left to the hand-table (r7145 ⓵), with
+    #: the bucket at 7: **NOT-A-COUNT is where the traced value is not a tally of matches at all** --
+    #: a float comparison, an argmax index, a computed ratio dict, a coefficient table, a character
+    #: offset.  The instrument matches on the SHAPE of the expression (`len(...)`, `.count(...)`) and
+    #: cannot see what was counted, so these are its false positives and will recur on every new family.
+    #:   ⌗ *It is ORTHOGONAL to PAPER / SOURCE / REGISTER, which say which TEXT was read.  That is why
+    #:   a site can be PAPER and NOT-A-COUNT at once -- `L_numerics/Q1` reads the paper and then compares
+    #:   two floats -- and why the two classifications must not be collapsed into one column.*
     #: ⛭ r7139+cc66.106: 97 -> 70, lowered by EXACTLY the 27 sites read -- the whole of
     #: `receipts/P15_CR_cosmology`, across 12 receipt files, every one verdicted in
     #: prose_pin_baseline.tsv with what was read.  ⚑ *And NOT ONE REPAIR: 20 DELIBERATE, 3

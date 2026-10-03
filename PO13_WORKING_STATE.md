@@ -7279,3 +7279,50 @@ At **7** and rising across four blocks. The boundary: **`NOT-A-COUNT` is where t
 ### `r7145` offer ⓶ — not yet met
 
 No site in the 28 asserts a paper's figure it never reads. If one turns up in the remaining 18 it gets a line in the reply.
+
+## cc66.109 — `r7143` closed: all 46 PAPER sites read, ceiling 70 → 24, the PAPER class measures 0. The block's result is that a pin repaired properly LEAVES the class rather than earning a better verdict — 8 of 14 repairs retired their own key
+
+`check_prose_pins`: **139 keys / 139 rows**, `UNADJUDICATED 24`, `DELIBERATE 62`, `PRESENCE-CONTROL 46`, `NOT-A-COUNT 7`, no new site, no stale entry. **Ceiling lowered 70 → 24, by exactly the 46 sites read**, so the gate now sits on its floor with no slack. The `r7141` partition, re-run against live files, reports **`PAPER: 0`** of the remaining 24 — which are `4 SOURCE` + `14 REGISTER` + `6 NOT-A-COUNT`.
+
+### ⚑ The measured shape: 32 verdicted where they stood, 14 repaired, and 8 of those 14 left the class
+
+| was | became | what the new bound is |
+|---|---|---|
+| `edges > 150` | `edges > len(g)*(len(g)-1)//2` | the ceiling **any** transitive total order could carry — 209 edges over 17 nodes against 136 |
+| `cited.most_common(1)[0][1] >= 15` | `_maxdeg == len(g) - 1` | cited by every sibling there is, 16 of 16 |
+| `n_lep >= 10`, `n_col >= 5` | `n_lep > _PREMISE_LEP`, `n_col > _PREMISE_COL` | the stale premise the check exists to contradict (1 and 0) |
+| `len(where[a]) >= 15`, `sum(...) > 250` | `len(where[a]) > len(where[b])`, `sum(a) > sum(b)` | the comparison the label actually makes |
+| `prox < 60` | `prox * 1000 < tot` | the *under one per thousand* the label states |
+| `n_sent <= 4` | `not _para_break` | the *same paragraph* the label claims, instead of a sentence budget |
+
+⇒ **The key count fell 147 → 139 for exactly this reason and no other.** A derived, named or relational bound has **no literal left to pin**, so the instrument stops reporting the site. *The instrument's population is therefore a measure of how many bounds are still literals — not of how many are wrong.*
+
+⌗ The other 6 repairs stay in the class as minimal `> 0` presence checks, verdicted `PRESENCE-CONTROL`. For those the derivable bound genuinely **is** `> 0`, because the label names no number: `L175/V1`'s ⓶ claims only that the Einstein--Hilbert action *appears*.
+
+### ⛭ A second site in `L175/V1` carried the SAME floor, and only the ratchet caught it
+
+`n_eh >= 4` appeared twice — once in check ⓶ and once in the `⇒⇒` conclusion 38 lines later. I repaired ⓶ and the gate then went **red with 1 NEW SITE**, because the conclusion's copy was still live and still keyed separately. ⇒ ***A variable repaired at its first use is not repaired.*** Both now read `n_eh > 0` and collapse to one key, which is correct: reading it once settles it.
+
+### ⛑ Verdict distribution, once, as the order required
+
+**Tree-wide over 139 keys: `DELIBERATE 62` · `PRESENCE-CONTROL 46` · `NOT-A-COUNT 7` · `UNADJUDICATED 24`.** The 38 rows this block wrote: `24 DELIBERATE`, `12 PRESENCE-CONTROL`, `2 NOT-A-COUNT`.
+
+`DELIBERATE` outnumbers `PRESENCE-CONTROL` tree-wide and inside the block alike — **the common case is a bound that IS the finding, not a floor hiding one.** Six repairs out of forty-six read is the hit rate, and both earlier predictors on this backlog erred the same way, over-predicting defects.
+
+### ⛑ The `NOT-A-COUNT` boundary, stated in the gate beside the ceiling (`r7145` ⓵)
+
+**`NOT-A-COUNT` is where the traced value is not a tally of matches at all** — a float comparison, an argmax index, a computed ratio dict, a coefficient table, a character offset. The instrument matches on the *shape* of the expression (`len(...)`, `.count(...)`) and cannot see what was counted, so these are its own false positives and **will recur on every new family** rather than being retired.
+
+It is **orthogonal to `PAPER`/`SOURCE`/`REGISTER`**, which say which *text* was read. A site can be `PAPER` and `NOT-A-COUNT` at once — `L_numerics/Q1` reads the paper and then compares two floats — so the two classifications must not be collapsed into one column, which a single `verdict` field invites.
+
+### ⛔ `r7147`'s tail item was already discharged, and the order's framing of it needs correcting against me
+
+The `L218/R1` tie-break was fixed in **`f18e0efe`**, ahead of the order: `top` is now a stable `sorted(..., key=lambda kv: (-kv[1], kv[0]))[:4]`.
+
+`r7147` says deferring it "was the right call mid-block". **It was not.** I noticed the non-determinism, recorded it as *"incidental, not repaired"*, and it then failed `scoped — the tolerance perturbation` on my own push `7e416d49` — **three red heads before I fixed it.** The repair was forced by CI, not chosen after the block.
+
+⇒ **The rule: non-determinism in a receipt is never incidental**, because the perturbation job's whole method is to hash the same receipt twice. A finding recorded and left is a finding one has to be lucky about. All five receipts touched in this close were checked for it before pushing — identical output hashes across `PYTHONHASHSEED` 0/1/99.
+
+### `r7145` offer ⓶ — searched and empty
+
+No site in the 46 asserts a paper's figure it never reads. Recorded as searched rather than silently dropped.

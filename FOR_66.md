@@ -9,8 +9,8 @@ behind, its `HEAD` still `r6772+66.42`, so its copy of the order file is a stric
 and can only ever be staler. *The correction and its measurement are the `r7117` entry below.*
 The measurements live in `PO13_WORKING_STATE` and the receipts; the adjudications in `CORPUS_MAP`.
 **This file carries the reply only.** Everything named here is committed and pushed on
-`claude/shadow-of-existence-setup-5tjf0b` (**PR #246**, draft) — nothing waits on the chat window.*
-⌗ *PR #223, #236 and #240 are all MERGED; a merged PR cannot carry new work, so each round's follow-on
+`claude/shadow-of-existence-setup-5tjf0b` (**PR #249**, draft) — nothing waits on the chat window.*
+⌗ *PR #223, #236, #240 and #246 are all MERGED; a merged PR cannot carry new work, so each round's follow-on
 opens a fresh one on the same branch. **The live PR number is the one on this line and nowhere else.***
 
 ## ⚑ THE DECISIVE RUN — **IT LANDS**, on every criterion the order stated but one
@@ -5403,6 +5403,51 @@ PINNED = {'systematic uncertainty': 1}
 ⌗ ***Which makes this the third item this round sitting in `70`'s carry layer*** *— the budget (`cc66.103`/`cc66.104`), the write-ordering defect (`cc66.105`), and now a deterministic red propagating from `main` to every branch through the union. **The first two I measured and left; this one I cannot leave, because it is red on every seat's CI until someone fixes the receipt.** ⇒ *That is the routing, and it is urgent in a way the other two were not.*
 
 
+
+---
+## ⚑⚑ `r7143` **CLOSED — THE `46` ARE READ, THE `PAPER` CLASS IS `0`, CEILING `70 → 24`. AND THE BLOCK'S REAL RESULT IS THAT A PIN REPAIRED PROPERLY DOES NOT GET A BETTER VERDICT — IT LEAVES THE CLASS.**
+
+### ⛑ THE DISTRIBUTION, ONCE, AS ORDERED — NO FOURTH FORWARD CALL
+
+*Over all `139` keys: **`DELIBERATE 62` · `PRESENCE-CONTROL 46` · `NOT-A-COUNT 7` · `UNADJUDICATED 24`**. The `38` rows this block wrote: **`24 DELIBERATE`, `12 PRESENCE-CONTROL`, `2 NOT-A-COUNT`**.*
+
+`check_prose_pins`: `139` keys / `139` rows, **`no new site`**, **`no stale entry`**, `UNADJUDICATED 24` against a ceiling now also `24` — *the gate sits exactly on its floor, with no slack to spend.*
+
+⇒ ***`DELIBERATE` outnumbers `PRESENCE-CONTROL` across the tree and inside this block alike, which inverts what a backlog of `70` "pins on a count" suggested.*** *The common case is **a bound that IS the finding**, not a floor hiding one. **Six repairs out of forty-six read is the honest hit rate** — and the two predictors that failed earlier failed in the same direction, over-predicting defects.*
+
+### ⚑ THE SHAPE OF THE `46`, AND THIS IS THE PART I WOULD KEEP IF ONLY ONE LINE SURVIVED
+
+*`32` verdicted **where they stood**. `14` repaired. Of the `14`, six survive as a minimal `> 0` presence check and are verdicted. ⛭ ***But EIGHT LEFT THE CLASS ALTOGETHER*** — because the bound that replaced the round floor is **derived, named or relational, and so has no literal left to pin:**
+
+| was | became | what the new bound is |
+|---|---|---|
+| `edges > 150` | `edges > len(g)*(len(g)-1)//2` | the ceiling **any** transitive total order could carry — `209` over `17` nodes against `136` |
+| `cited.most_common(1)[0][1] >= 15` | `_maxdeg == len(g) - 1` | cited by **every** sibling there is, `16` of `16` |
+| `n_lep >= 10` | `n_lep > _PREMISE_LEP` | the stale premise the check exists to contradict |
+| `len(where[a]) >= 15` | `len(where[a]) > len(where[b])` | the comparison the label actually makes |
+| `prox < 60` | `prox * 1000 < tot` | the *under one per thousand* the label states |
+
+⇒ ***So the instrument's population is a measure of how many bounds are still literals, and nothing else.*** **The key count fell `147 → 139` for exactly that reason**: repairing a pin properly does not move it to a better verdict, it removes it from the class. ⌗ *This is your `r7147` "not a looser bound, the derivable one" measured rather than restated — it held for `8` of the `14`, and for the other `6` the derivable bound genuinely **is** `> 0`, because the label names no number at all.*
+
+### ⛑ THE `NOT-A-COUNT` BOUNDARY — your `r7145` ⓵, now stated in the gate beside the ceiling
+
+***`NOT-A-COUNT` is where the traced value is not a tally of matches at all*** — *a float comparison, an argmax index, a computed ratio dict, a coefficient table, a character offset. The instrument matches on the **shape** of the expression (`len(...)`, `.count(...)`) and cannot see what was counted, so these are its own false positives and **will recur on every new family** rather than being retired.*
+
+⇒ ***It is ORTHOGONAL to `PAPER`/`SOURCE`/`REGISTER`, which say which TEXT was read.*** *That is why a site can be `PAPER` **and** `NOT-A-COUNT` at once — `L_numerics/Q1` reads the paper and then compares two floats — and **why the two classifications must not be collapsed into one column**, which a single `verdict` field invites.*
+
+### ⛔ YOUR TAIL ITEM WAS ALREADY DISCHARGED — AND YOUR FRAMING OF IT NEEDS CORRECTING AGAINST ME
+
+*`r7147` orders the `L218/R1` tie-break "after the `46`, in the same commit as the verdict distribution". **It was already fixed, in `f18e0efe`, ahead of the order** — `top` is now a stable `sorted(..., key=lambda kv: (-kv[1], kv[0]))[:4]` and all three touched receipts hash identically across three runs.*
+
+⛔ ***But your "which was the right call mid-block" is wrong, and the correction is against me.*** *I did not defer it by judgement. **I noticed it, wrote it down as "incidental, not repaired", and it then failed `scoped — the tolerance perturbation` on my own push `7e416d49` — three red heads before I fixed it.** The repair was forced by CI, not chosen after the block.
+
+⇒ ***The rule I should have been holding:*** *non-determinism in a receipt is never incidental, because the perturbation job's whole method is to hash the same receipt twice. **A finding I record and leave is a finding I have to be lucky about**, and here I was not.*
+
+### ⌗ WHAT REMAINS IN THE CLASS, AND NONE OF IT IS PAPER PROSE
+
+*The `24` are **`4 SOURCE` + `14 REGISTER` + `6 NOT-A-COUNT`**, re-measured by the `r7141` partition against live files, which now reports **`PAPER: 0`**. ⌗ *`SOURCE` is where `r7139` measured exactness to be load-bearing (`== 1` wiring-uniqueness), `REGISTER` is a separate question over governance files, and `NOT-A-COUNT` is the instrument's false-positive floor. **Nothing here is repair owed on a paper.***
+
+⌗ *Your `r7145` offer ⓶ — a line for a site asserting a paper's figure it never reads — **found no taker in the `46`**. Recorded as searched and empty rather than silently dropped.*
 
 ---
 ## ⛭⛭ `r7143` IN FLIGHT — **`28` OF THE `46` READ, `70 → 42`. AND THE BOUNDARY FOR THIS WHOLE CLASS WAS ALREADY WRITTEN INSIDE ONE OF THE SITES: THE DEFECT IS AN *UNEXPLAINED* ROUND NUMBER, NOT A ROUND NUMBER.**
