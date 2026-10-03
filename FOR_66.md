@@ -5355,6 +5355,45 @@ PINNED = {'systematic uncertainty': 1}
 
 ---
 
+## ✔✔ `r7141` ⓵ DELIVERED — **THE PARTITION, BEFORE ANY OF IT IS READ: `46` PAPER, `4` SOURCE, `14` REGISTER, `6` NOT-A-COUNT. THE BACKLOG'S REAL SIZE IS `46`. ⛔ AND YOUR PREDICTION ABOUT THE SOURCE SIDE DOES NOT HOLD — IT IS `4` SITES.**
+
+*Banked and re-runnable at* `computations/beyond_the_wall/r7141_cc66_paper_source_partition/`*, outcome beside it.*
+
+| bucket | sites |
+|---|---|
+| **`PAPER`** — a `*.tex` paper body | **$46$** |
+| **`SOURCE`** — an instrument's or receipt's own `*.py` | **$4$** |
+| **`REGISTER`** — the corpus's governance files | **$14$** |
+| **`NOT-A-COUNT`** — no text is read at all | **$6$** |
+
+⌗ ***Method, with the halves kept apart:*** *$45$ **traced** mechanically — the counted variable resolved through the receipt's own bindings, transitively, **with multi-line bindings joined until the brackets balance**, because the paper-join idiom spans lines and a one-line regex misses it. The other $25$ **hand-read**, each with its reason, **printed in the output rather than folded into the counts**. *A partition whose hand share is invisible is one nobody can check.*
+
+### ⛔⛔ YOUR PREDICTION ABOUT THE SOURCE SIDE IS THE THING THAT DID NOT SURVIVE
+
+*You wrote: **"Your own result predicts the `SOURCE` side is mostly legitimate exactness and the `PAPER` side is where the repairs are."*** ⇒ ***The first half is untestable here, because the SOURCE side is $4$ SITES.***
+
+⇒ ***The `SOURCE` phenomenon that dominated `P15` — $18$ of its $20$ `DELIBERATE` — is very nearly ABSENT from the rest of the backlog.*** *`P15_CR_cosmology` was not an instance of a widespread class; **it WAS the class.** The remainder is overwhelmingly `PAPER` ($46$) and `REGISTER` ($14$).*
+
+⌗ ***So the discriminant is real and it does NOT redistribute the backlog the way the `P15` result invited.*** *It cuts $70$ to $46$ — worth having, and stated in advance as you asked — **but it cuts it by `REGISTER` and `NOT-A-COUNT`, not by `SOURCE`.** ⇒ *You asked for the partition reported even if it came out flat. **It came out flat in exactly the direction your prediction was about**, which is the more useful way for it to fail than a weak confirmation would have been.*
+
+### ⚑ AND THE PARTITION IS FOUR-WAY: TWO BUCKETS ARE NOT IN THE `PAPER`-AGAINST-`SOURCE` FRAMING
+
+- ***`REGISTER`, at $14$, is the SECOND-LARGEST bucket.*** *Rows a merge dropped, open items, struck rows, protected-row reads. **Neither paper prose nor instrument source, and a different question from either:** a round number over a register is not a claim about physics and not one about wiring — it is a claim about bookkeeping, and whether a count there is legitimate turns on whether the register is append-only. ⌗ *I have not read them and I am not proposing to without an order.*
+- ***`NOT-A-COUNT`, at $6$:*** *`P10_canonical_time` $3$ of $3$, `P14` $2$, and `L_numerics/Q1`'s `check("...", gap, 0.010)` — a float difference in the three-argument form. ⇒ *With `P15`'s $4$ of $27$, **the instrument's false-positive rate is now measured tree-wide at $6$ of $70$ rather than anecdotal.***
+
+⌗ ***One boundary stated rather than fudged:*** *`RP_34_gr/G1`'s two sites measure a **character DISTANCE** between two phrases in `range_paper.tex` — paper text, but a distance and not a tally. **Counted `PAPER`, because this partition classifies the TEXT**; `NOT-A-COUNT` is kept for sites that read no text at all. Their verdict will likely still be `NOT-A-COUNT`, and that is a verdict question, not a partition one.*
+
+### ✔ YOUR NAMED NEXT-TARGETS ARE CONFIRMED PAPER-SIDE, AND ONE NEEDS RE-SIZING
+
+*`L803_station9_neff` **$6$ of $6$ `PAPER`**. `L175_dimensional_descent` **$3$ of $3$ `PAPER`**. ⇒ ***`L218_reader_package` is **$5$ of $8$ `PAPER`, with $3$ `REGISTER`** — the first mixed family, and its order should be sized at $5$ for the paper class and not $8$.***
+
+⌗ *That is the third time this round a sizing has moved on a measurement, and **the first time it moved BEFORE the order was written rather than after it.** Which is what the partition was for.*
+
+⇒ ***Item ⓶ — taking the `PAPER` side — is next and not started.*** *Say whether you want it as the three named families ($5 + 6 + 3 = 14$ sites) or the whole $46$.*
+
+---
+
+
 ## ✔✔✔ `r7139` DELIVERED — **`P15`'s `27` VERDICTED WITH ZERO REPAIRS, CEILING `97 → 70`. THE PREDICTOR MISSES THE TOTAL BY `18` WHILE NAMING EXACTLY THE RIGHT `2`. AND MY OWN `VACUOUS` FIGURE OF `46`, WHICH I PROPOSED TO YOU AS THE NEXT ORDER, COLLAPSES TO `2`.**
 
 *`check_prose_pins`:* `147 keys, 147 baseline rows`, `UNADJUDICATED: 70`, `DELIBERATE: 38`, `PRESENCE-CONTROL: 34`, `NOT-A-COUNT: 5`, **`no new site`**, **`no stale entry`**, `the ratchet holds: 70 against a ceiling of 70; 77 site(s) read and verdicted`. *Sizing checked first; your number was right — $27$ rows, $27$ keys, $12$ files.*

@@ -7203,3 +7203,36 @@ Three bugs, the third being the one that matters:
 ⇒ ***The operator that found two defect sub-classes carried one of its own, in the very family it was built to name — and only reading its own output on a block it had not been built from exposed it.*** ⌗ `label_pin.py` is this seat's own instrument, so unlike the other five items this round it needed no ruling to fix.
 
 ⌗ **A process note against myself, recorded because it is the kind of thing that compounds.** The commit message for this entry was written with `git commit -m "..."` instead of the `-F -` heredoc I use for every long message, and the backticks around `` `is True` `` were read by the shell as command substitution: the pushed message says *"which is the  identity idiom"* with the two words gone, and the shell printed `is: command not found`. **The substance is intact here and in `FOR_66.md`, which are the record** — the gap is two words in a commit subject body, so it is not worth a force-push on a watched branch to repair. ⇒ *The rule is the one I already had and did not follow: long messages go through `-F -`, never `-m`.*
+
+## cc66.107 — `r7141` ⓵: the partition. **46 PAPER, 4 SOURCE, 14 REGISTER, 6 NOT-A-COUNT** — so the backlog's real size is 46 and not 70, but the SOURCE side is 4 sites, which is the opposite of what my own `P15` result suggested
+
+Reported before reading any of it, as ordered. Banked and re-runnable at `computations/beyond_the_wall/r7141_cc66_paper_source_partition/`, with its outcome beside it.
+
+| bucket | sites |
+|---|---|
+| **PAPER** — a `*.tex` paper body | **46** |
+| **SOURCE** — an instrument's or receipt's own `*.py` | **4** |
+| **REGISTER** — the corpus's governance files (`CORPUS_MAP`, `PROTECTED_OPEN`, the registers) | **14** |
+| **NOT-A-COUNT** — no text is read at all | **6** |
+
+**Method, with its two halves kept apart.** 45 sites **traced** mechanically — the counted variable resolved through the receipt's own bindings, transitively, with multi-line bindings joined until the brackets balance, because the paper-join idiom spans lines and a one-line regex misses it. The other 25 were **hand-read**, each recorded in the script with its reason and printed in the output. ⌗ *A partition whose hand share is invisible is a partition nobody can check, so the script prints all 25.*
+
+### ⚑ The partition is FOUR-way, and two of the buckets are not in the order's framing
+
+**`REGISTER` is the second-largest bucket at 14.** These count over the corpus's own governance files — rows a merge dropped, open items, struck rows, protected-row reads. **Neither paper prose nor instrument source, and a different question from either:** a round number over a register is not a claim about physics and not a claim about wiring; it is a claim about bookkeeping, and whether a count there is legitimate depends on whether the register is append-only.
+
+**`NOT-A-COUNT` is 6** — `P10_canonical_time` 3 of 3 and `P14` 2, plus `L_numerics/Q1`'s `check("...", gap, 0.010)`, a float difference in the three-argument form. ⇒ Consistent with `P15`'s 4 of 27, so at **6 of 70 tree-wide the instrument's false-positive rate is now measured and not anecdotal.**
+
+⌗ **And one boundary stated rather than fudged:** `RP_34_gr/G1`'s two sites measure a **character distance** between two phrases in `range_paper.tex` — paper text, but a distance and not a tally. They are counted **PAPER**, because this partition classifies the *text*; `NOT-A-COUNT` is reserved for sites that read no text at all. Their eventual verdict will likely still be `NOT-A-COUNT`, and that is a verdict question rather than a partition one.
+
+### ⛔ The order's prediction about the SOURCE side does not hold, and that is the result
+
+`r7141` said: *"Your own result predicts the `SOURCE` side is mostly legitimate exactness and the `PAPER` side is where the repairs are."* The first half is untestable here for a simple reason — **the SOURCE side is 4 sites.**
+
+⇒ **The `SOURCE` phenomenon that dominated `P15` — 18 of its 20 `DELIBERATE` — is almost absent from the rest of the backlog.** `P15_CR_cosmology` was not an instance of a widespread class; it *was* the class. The remainder is overwhelmingly `PAPER` (46) and `REGISTER` (14).
+
+⌗ **So the discriminant is real and it does NOT redistribute the backlog the way the `P15` result invited.** It cuts 70 to 46 — worth having, and stated in advance — but it cuts it by `REGISTER` and `NOT-A-COUNT`, not by `SOURCE`. ⇒ *The order asked for this even if it came out flat; it came out flat in exactly the direction the prediction was about, which is the more useful way for it to fail.*
+
+### ✔ The named next-targets are confirmed PAPER-side
+
+`L803_station9_neff` **6 of 6 PAPER**. `L175_dimensional_descent` **3 of 3 PAPER**. `L218_reader_package` **5 of 8 PAPER**, with **3 REGISTER** — so that family is the first mixed one and its order should be sized at 5 for the paper class, not 8. ⌗ *That is the third time this round sizing has moved on a measurement, and the first time it moved before the order was written rather than after.*

@@ -1,0 +1,101 @@
+
+  PROSE-PIN BACKLOG, PARTITIONED BY WHAT THE COUNTED TEXT IS
+
+    unadjudicated sites: 70
+        46  PAPER
+         4  SOURCE
+        14  REGISTER
+         6  NOT-A-COUNT
+
+    decided by: {'traced': 45, 'hand-read': 25}
+
+    by family (PAPER / SOURCE / REGISTER / NOT-A-COUNT):
+         8  L218_reader_package                5/0/3/0
+         6  L803_station9_neff                 6/0/0/0
+         6  P14_matter_sector_paper            4/0/0/2
+         4  L220_arrival_paths                 4/0/0/0
+         3  L175_dimensional_descent           3/0/0/0
+         3  L253_the_seed_that_stopped_seeding 0/1/2/0
+         3  L269_the_second_theatre            0/0/3/0
+         3  P03_SdS_slicing                    3/0/0/0
+         3  P10_canonical_time                 0/0/0/3
+         3  P17_geometric_core_paper           3/0/0/0
+         2  L221_quark_lepton                  2/0/0/0
+         2  L275_the_functional_analysis_bake  2/0/0/0
+         2  L536_frontier_placement            2/0/0/0
+         2  L555_merge_duplication             0/0/2/0
+         2  L_probability                      2/0/0/0
+         2  P07_CR_framework                   2/0/0/0
+         2  RP_34_gr                           2/0/0/0
+         1  L165_interacting_tower             1/0/0/0
+         1  L200_free_data_count               1/0/0/0
+         1  L248_the_strike_broke_its_readers  0/0/1/0
+         1  L249_a_pin_on_a_live_register      0/1/0/0
+         1  L254_the_rule_was_spellings        0/1/0/0
+         1  L272_the_survey_that_was_a_memory  0/1/0/0
+         1  L549_coupled_counterterms          0/0/1/0
+         1  L550_third_mechanism               1/0/0/0
+         1  L556_registry_from_rows            1/0/0/0
+         1  L557_the_correction_stopped_at_the_sentence 1/0/0/0
+         1  L558_the_second_duplication        0/0/1/0
+         1  L_numerics                         0/0/0/1
+         1  P12_algebroid                      0/0/1/0
+         1  P16_cosmogenesis_paper             1/0/0/0
+
+  ⌗ THE HAND SHARE, kept visible so the partition can be checked:
+       PAPER        R1_the_corpus_is_a_network_not_a_sequenc len(inc) <= 1
+                    hand: `inc = re.findall(r'\\(?:input|include)\{...}')` -- LaTeX include directives, so the text is a paper
+       PAPER        V2_the_arrival_path_admits_no_metric.py  tot == 86
+                    hand: built by `sweep(...)`, whose per-file tally is keyed on paper names -- the same check reads `_by_file.get('CR_synthesis.tex')`
+       PAPER        V2_the_arrival_path_admits_no_metric.py  len(n23) == 19
+                    hand: the same `sweep(...)` over paper files
+       PAPER        V2_the_arrival_path_admits_no_metric.py  len(n123) == 5
+                    hand: the same `sweep(...)` over paper files
+       SOURCE       P1_a_check_that_pins_a_live_register_pun n_before > 0
+                    hand: `n_before = len(re.findall(r'\bcheck\(', old_src))` -- counts `check(` calls in a receipt's own source at an earlier blob
+       SOURCE       S1_a_seed_that_stops_constructing_its_de _live_reads == 2
+                    hand: `m1_new.count("open(os.path.join(ROOT, 'PROTECTED_OPEN.md')")` -- counts a LINE OF CODE in another receipt's source. ⌗ The string names a register, but what is counted is the source that reads it
+       SOURCE       A1_a_rule_made_of_spellings_misses_the_n n_cmp >= 4
+                    hand: `len(re.findall(r'^ok\d\w* = ', src, re.M))` -- counts assignments in source
+       PAPER        U1_the_field_bounces_and_the_corpus_asks sum(where['branch point'].values()) > 25
+                    hand: `where[t] = {p: len(re.findall(t, b)) for p, b in B.items()}` with `B = RB.BODIES_TEX`
+       PAPER        U1_the_field_bounces_and_the_corpus_asks len(where['branch point']) >= 15
+                    hand: the same `BODIES_TEX` sweep
+       PAPER        F1_resolved_content_sits_in_the_frontier n_cr > 10
+                    hand: `len(re.findall('causal reassignment', p7f))`, `p7f` being P07's body
+       PAPER        F1_resolved_content_sits_in_the_frontier prox < 60
+                    hand: accumulated over `body(f)` across the paper files
+       REGISTER     D1_the_same_four_rows_the_second_merge_r sum(len(v) for v in lost.values()) <= 12
+                    hand: `lost` is the register rows a merge dropped -- governance files, not prose
+       NOT-A-COUNT  Q1_a_stated_tolerance_is_a_request_and_t check("the harness detects a gap of 0.01
+                    hand: `gap = round(abs(n1[0] - n2[0]), 3)` -- a float difference between two numeric readings, in the three-argument `check(label, got, want)` form. No text is read at all
+       PAPER        R1_the_whole_footprint_is_three_geometry check("cosmic variance occurs twenty-fiv
+                    hand: paper-body sweep over `BODIES`
+       PAPER        R1_the_whole_footprint_is_three_geometry check("the control word is FOUND, in qua
+                    hand: the same paper-body sweep as its sibling
+       NOT-A-COUNT  P10_sec_lock_quotes_the_superseding_rece len(mr) == 6
+                    hand: `mr = {int(m): int(m) * float(Fraction(int(a), int(b)))}` is a dict of COMPUTED ratios, so this counts dict entries, not matches in text
+       NOT-A-COUNT  P10_sec_lock_quotes_the_superseding_rece max(mr[m] for m in mr if m >= 5) / min(m
+                    hand: arithmetic over that computed dict
+       NOT-A-COUNT  P10_sec_lock_quotes_the_superseding_rece mr[3] / min(mr.values()) > 2
+                    hand: arithmetic over that computed dict
+       PAPER        D2_index_carries_three_senses_inside_one check("x18 in all (x14 before r6527/r667
+                    hand: `sum(w.values())`, `w` built from paper bodies
+       PAPER        D2_index_carries_three_senses_inside_one check("P14 carries ten of them (seven be
+                    hand: `w.get('P14')` over the same paper tally
+       PAPER        D2_index_carries_three_senses_inside_one check("x8 in all now (x7 when this was w
+                    hand: `sum(h.values())` over the same paper tally
+       NOT-A-COUNT  P14_the_constituent_count_is_conserved_o COEFF["P14's wall content   ker_+ = 3 se
+                    hand: `COEFF` is a coefficient table of computed numbers, not a text tally
+       NOT-A-COUNT  P14_the_constituent_count_is_conserved_o COEFF["the turnaround LIFT  2 + 1  (the 
+                    hand: `COEFF` is a coefficient table of computed numbers, not a text tally
+       PAPER        G1_the_arrival_path_metric.py            max(v for k, v in _d.items() if k != 'pr
+                    hand: the same `_near` distance map over the same two papers
+       PAPER        G1_the_arrival_path_metric.py            _d['principal congruence'] > 1200
+                    hand: `_d = {q: _near(q, 'Carter constant') ...}` over `range_paper.tex` and `CR_framework.tex`. ⚑ A CHARACTER DISTANCE in a paper, not a tally -- so the TEXT is paper and the verdict will likely be NOT-A-COUNT. The partition classifies the text; NOT-A-COUNT here is reserved for sites that read no text
+
+  ⇒ THE PAPER COUNT IS THE BACKLOG'S REAL SIZE FOR THIS CLASS: 46, not 70.
+    `SOURCE` is where `r7139` measured exactness to be load-bearing, `REGISTER` is a
+    separate question over governance files, and `NOT-A-COUNT` is the instrument's own
+    false-positive class.  ** None of those three is repair owed on paper prose. **
+
