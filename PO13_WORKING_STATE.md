@@ -7340,3 +7340,37 @@ The durable form is the pre-push check, not the lesson: all five receipts in the
 ### The merge of `main` at `13a294b2` adds no prose-pin site
 
 `PO-74`'s new `P15` receipt (`r7146`) introduces no count-pin the instrument reports. `check_prose_pins` after the merge: **139 keys / 139 rows**, `UNADJUDICATED 24` against the ceiling of 24, no new site, no stale entry. ⌗ *Worth recording because the ceiling now sits on its floor with zero slack — the first merge since the close was also the first test of that, and a single new pinned count anywhere in the tree would have turned the gate red.*
+
+## cc66.111 — `r7149` broke `r7146`'s own receipt by adopting its finding into the paper. `main` is red in the `reads` class, every branch inherits it, and no branch push can clear it — the fourth instance of the same ordering gap
+
+`receipts/P15_CR_cosmology/P15_the_layers_three_metric_obtained_by_restriction_...py` fails `Ⓐ③`, `Ⓕ①`, `Ⓕ②`, so `sweep_runner_reads.py` exits 2 and `scoped — the runner-read sweep` is red on every branch that unions `main`'s carry.
+
+### The bisect, each run in a clean worktree
+
+| commit | result |
+|---|---|
+| `0faeaff2` (`r7146`, introduces the receipt) | exit 0, 0 failures |
+| `4905b5ea` (`r7149`) | **exit 1, 3 failures** |
+| `13a294b2` (`main` head) | exit 1, 3 failures |
+
+`refs/ci/carry`'s `carry.json` agrees and names `main`: the receipt is in the `reads` class for `main` since `13a294b2` (run `37133039081`), and for `wgcmvt` and `5tjf0b` on the same commit. **By `red_carry`'s own rule only a green on `main` clears `main`'s entry**, so PR #249 cannot reach green by anything this seat pushes. No re-run spent — the failure is deterministic and the bisect is stronger evidence than a re-run.
+
+### The cause: the receipt is red because it won
+
+`Ⓐ③` pins four of `P15`'s clauses at exactly 1x each. `r7149` edited `CR_cosmology.tex` and **adopted two of this receipt's own findings into the prose**, deleting the verbatim clauses it measured against — both now count **0x**. `Ⓕ①`'s finding (the `χ` block is null at *both* seams, not "nowhere else") and `Ⓕ②`'s (the angular block is sign-blind, the `χ` block is not) are now the paper's own sentences, and the paper **cites this receipt** at the amended passage. The receipt's own output had already said those two clauses *"both want amending"*.
+
+⇒ **A gate pinned to the thing the work it gates was trying to move** — the round's one rule, broken by the round's own progress.
+
+⌗ *Family placement: this is an ordinary instance of the eleven-family shape (the receipt's own finding acted on), **not** the `L536/F1` twelfth state, which turns on the corpus's success with the receipt motionless. Recorded because the two are easy to merge and that distinction was the whole find.*
+
+### The repair is 60's, and it is tested rather than suggested
+
+Not pushed here — `P15` prose is citations-only for this seat and the receipt is 60's. Each proposed string counts exactly 1x in `corpus/CR_cosmology.tex` as it stands, verified before proposing: the `_NULL` stem `vanishes there with them, so that layer is null at the handover`; the adopted `\emph{On the signed chart it is null at both of the lap's unit-speed loci}`; the `_BLIND` replacement `The angular block enters only through $r^2$ and is blind to the sign of $r$, and the $\chi$ block is not`; and its adopted continuation about `$-f$` carrying `$2M/r$`. `Ⓕ①`/`Ⓕ②` should then assert the **adoption** rather than the contradiction — `L-249`'s rule applied to a pin whose subject the receipt itself moved.
+
+### The standing defect, fourth instance
+
+`r7111`, `r7141`, `r7125`'s XOR, now `r7149`. **`run_fast_job` runs no receipts, and nothing between the last paper edit and the push reads a receipt again.** Reported at `r7143` as the gate's own ordering gap; it has now cost a red on `main` four times. Cheapest fix unchanged: run the scoped reads sweep, or just the receipts citing the edited file, before a paper push. This seat does; it is in no seat's required path.
+
+### This PR's own state
+
+`bfafd3dd` was green on all 8 checks. `f350d2b6` adds only the `main` merge and a note correction — no receipt, no new pinned count — and the five receipts it touches sweep **clean three times over** on their own scope. `check_prose_pins` holds at 139 keys / 139 rows, `UNADJUDICATED 24` against a ceiling of 24.
