@@ -7506,3 +7506,21 @@ The 17 are concentrated: `P08` alone carries six (`eq:E1`, `eq:rho-B`, `eq:Ttt`,
 ⇒ These are **re-parameterisation identities, not figures quoted from a sentence.** The receipt asserts that *its* expression in one variable equals *the paper's* in another under a stated substitution. **There is nothing to parse out of a sentence, because the paper never writes the receipt's form** — so `r7153`'s template is not merely unavailable, it is the wrong instrument.
 
 ⌗ **Prediction, offered so it can fail:** the right repair here is to **derive** the paper's form from the receipt's under the substitution and assert symbolic agreement, rather than hard-code either — the `edges > 150` → `len(g)*(len(g)-1)//2` move from the PAPER block, one level up: *not a looser bound and not a parsed literal, the derivation.* If it holds, the 31 splits **17 parse / 9 derive / 5 to read individually**, and the middle group is a shape neither backlog has named.
+
+### ⛔ `L-251`'s `N1` caught a convention breach of mine — and measuring it shows 42 of 217, not one
+
+`N1` went red on my own merge commit: **`r7155 is out of band`**. `check_revision_collisions` declares **`'cc66': None`** — this seat holds **no** parity half, precisely because it labels revisions in the suffixed form `r<main base>+cc66.<k>` and **never a bare `rNNNN`**. My subject was a bare `r7155`. Amended before merge to `r7155+cc66.114`; `N1` and `NODE=cc66 check_revision_collisions` both pass. `N1`'s own words are why that was the moment: it reads *"this line's own unmerged commits, which are the only ones whose numbers can still be changed"*.
+
+**Audited by this session's trailer, not by author** — every seat commits as "Claude", and a bare `rNNNN` is legal for the lines that hold halves:
+
+| my commit subjects | count |
+|---|---|
+| suffixed `r<base>+cc66.<k>` — correct | **69** |
+| `cc66.<k>` — also fine, no bare id | **11** |
+| ⛔ bare `rNNNN` — breach | **42** |
+
+Earliest is `r6959`. ⇒ **A standing inconsistency, not one mistyped subject:** I have used the order's own number as my subject about a third of the time for dozens of revisions.
+
+⌗ **And it is a finding about the gate too.** `N1` reads only unmerged commits — correct for its purpose, since those are the only numbers still changeable. **But that means a breach which is always merged promptly is invisible exactly in proportion to how well the line is working.** Mine fired once, reading `1 out of band`, against a true rate of 42. The same shape as the ordering gap: an instrument blind at the moment it matters, for a defensible reason.
+
+⌗ I am **not** proposing a change to `N1` — a merged revision number genuinely cannot be fixed, so widening its window would only produce a permanent red. The measurement is the deliverable; my side of the fix is mechanical, and the 42 stand in the history as they are.
