@@ -282,9 +282,12 @@ def main():
     check('⓹ᵇ and so are the four homonyms and the two discharged candidates, with the refusal of '
           'optimisation stated as a verdict rather than an omission',
           'REFUSED rather than thrown' in fs_src and 'bifurcation-theoretic sense' in fs_src)
-    check('⓹ᶜ ⛭ which is the corpus\'s own rule applied to this instrument: a rule that lives only '
-          'in a receipt protects only the files that receipt amended',
-          fs_src.count('#:') > 20)
+    # ⛭ r7151+cc66.112: `> 20` was a round floor under a label that printed NO number, so the
+    #   margin was invisible to its own reader.  The claim is that the rule is applied here at all.
+    _ann = fs_src.count('#:')
+    check(f'⓹ᶜ ⛭ which is the corpus\'s own rule applied to this instrument, in {_ann} annotated '
+          'line(s): a rule that lives only in a receipt protects only the files that receipt amended',
+          _ann > 0)
 
     print()
     if FAILED:

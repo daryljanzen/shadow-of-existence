@@ -9,8 +9,8 @@ behind, its `HEAD` still `r6772+66.42`, so its copy of the order file is a stric
 and can only ever be staler. *The correction and its measurement are the `r7117` entry below.*
 The measurements live in `PO13_WORKING_STATE` and the receipts; the adjudications in `CORPUS_MAP`.
 **This file carries the reply only.** Everything named here is committed and pushed on
-`claude/shadow-of-existence-setup-5tjf0b` (**PR #249**, draft) — nothing waits on the chat window.*
-⌗ *PR #223, #236, #240 and #246 are all MERGED; a merged PR cannot carry new work, so each round's follow-on
+`claude/shadow-of-existence-setup-5tjf0b` (**PR #256**, draft) — nothing waits on the chat window.*
+⌗ *PR #223, #236, #240, #246 and #249 are all MERGED; a merged PR cannot carry new work, so each round's follow-on
 opens a fresh one on the same branch. **The live PR number is the one on this line and nowhere else.***
 
 ## ⚑ THE DECISIVE RUN — **IT LANDS**, on every criterion the order stated but one
@@ -5403,6 +5403,58 @@ PINNED = {'systematic uncertainty': 1}
 ⌗ ***Which makes this the third item this round sitting in `70`'s carry layer*** *— the budget (`cc66.103`/`cc66.104`), the write-ordering defect (`cc66.105`), and now a deterministic red propagating from `main` to every branch through the union. **The first two I measured and left; this one I cannot leave, because it is red on every seat's CI until someone fixes the receipt.** ⇒ *That is the routing, and it is urgent in a way the other two were not.*
 
 
+
+---
+## ⚑⚑⚑ `r7151` CLOSED — **THE BACKLOG IS DISCHARGED. `UNADJUDICATED 0`, CEILING `24 → 0`, `137` KEYS ALL VERDICTED. YOUR PREDICTION HOLDS AT `36%` AGAINST `7%` — AND THE MECHANISM IS NOT THE ONE EITHER OF US NAMED.**
+
+`check_prose_pins`: **`137` keys / `137` rows, `UNADJUDICATED 0`**, no new site, no stale entry, ceiling `0`. *Final distribution, once, as ordered: **`DELIBERATE 74` · `PRESENCE-CONTROL 50` · `NOT-A-COUNT 13`**.*
+
+### ⛑ YOUR PREDICTION HELD, AND THE REASON IS SHARPER THAN "DOCUMENTS WE REWRITE"
+
+*You predicted `exact census with provenance` would be commoner in `REGISTER` than anywhere and offered its failure as the finding. **It holds: `5` of the `14` `REGISTER` sites against `3` of the `46` `PAPER` ones — `36%` against `7%`.***
+
+⛭ ***But the mechanism is not that the text is a register. Every one of the five reads a PINNED BLOB:*** *`git show BEFORE:…` (`L253/S1`), `git show PARENT:OWED.md` (`L269/T1`), `git show _BLIND:corpus/check_receipts.py` (`L555/M1` ×2).*
+
+⇒ ***The shape follows from the receipt having pinned its subject to a SHA — and `REGISTER` is where that gets done, because a register is the thing that moves under you.*** *A count of a file at a commit cannot move, so exactness is free and a floor buys literally nothing.* ⌗ **`L253/S1` proves it against itself: it carried the SAME pinned expression twice, once `>= 3` and once `== 3`, two lines apart.** *The floor was strictly redundant beside its own sibling.*
+
+### ⛑ A SHAPE THE `PAPER` BLOCK DID NOT HAVE AT ALL — **UNIQUENESS ON A LIVE DOCUMENT**, `3` of `14`
+
+*`== 1` asserting that a string survives **only inside its own withdrawal**, **only as a quotation**, or **not spliced twice**:*
+
+- ***`L549/Q1` is the best thing in the block.*** *r2738's guard was `'144/80/24' not in po` — **and that absence pin was broken by text that AGREES with it**, because a note correcting a value has to quote the value it corrected. So the string must survive **exactly once, inside its own withdrawal**. ⌗ Loosening it restores the broken pin; this is `FOR_56` item 32's class with the repair already done.*
+- *`L269/T1`: the stale `★ NEXT` marker survives only as a quotation of the old line — a second occurrence means the staleness is **live again**.*
+- *`L269/T1`: r2419 spliced a corrupted heading before a second copy of itself; `== 1` **is** the guard.*
+
+⇒ ***Exactness load-bearing in the opposite direction from a floor, on text that is still being edited.*** *So `r7139`'s wiring-uniqueness finding generalises off instrument source and onto documents, which neither of us had.*
+
+### ⛔ THE ROW'S CASE IS SETTLED, AND IT IS STRONGER THAN THE TALLY: **A FLOOR IS WHAT MAKES A STALE HEADLINE UNFALSIFIABLE**
+
+*Three floors in this block concealed a dead headline in the receipt's own prose. With `P03`'s *"its three uses"* against eleven that is **four in two blocks**:*
+
+| receipt | the prose said | measured | the floor |
+|---|---|---|---|
+| `P12/A8` | verdict line: **TWICE** | `5` | `>= 2` |
+| `L254/A1` | PART 5: **four** comparisons | `5` | **`>= 4` — equal to the stale figure** |
+| `L272/F1` | **printed no number at all** | `51` | `> 20` |
+
+⇒ ***The mechanism, stated: a floor set at the figure the prose quotes will never contradict that prose when the measurement moves past it.*** **The floor is what makes the headline unfalsifiable.** *That is the strongest form of this row's argument and the backlog produced it, not the gate.* ⌗ *`L272/F1` is the limit case — no number printed, so the margin was invisible to its own reader. The hollow-assertion lint comes nearest to this and does not catch it.*
+
+### ⛔ AND ONE DEFECT WAS MINE, CAUGHT ONLY BY RE-READING THE FILE
+
+*`L218/C2`'s `open_items >= 8` is the **third line** of the `ESTABLISHED / OPEN / DO-NOT-ASSERT` dashboard whose `r7143+cc66.108` comment — **mine** — says all three assert that their class is non-empty. **Two did.** Measured 14 against a floor of 8.*
+
+⇒ ***The comment was true of what I meant and false of what I wrote, which is the one kind of stale note a reader cannot catch by reading it.*** *It took re-reading the file against the comment. ⌗ Recorded as a miss in my own block rather than as a find in this one.*
+
+### ⌗ THE OTHER TWO REPAIRS, AND WHAT LEFT THE CLASS
+
+*`14` sites were already minimal and verdicted where they stood; `7` were repaired. **Two of the seven left the class entirely**, the shape the last block established:*
+
+- *`L558/D1`'s `<= 12` was **FITTED**: tighter than the per-key `<= 6` over `len(IDS)` allows (`24`), with a margin of **one** over the measured `11`. ⛭ *And the quantity is not immutable — `a`/`b` are pinned blobs but `E` is built from **live** files, so it falls as the arc grows and **jumps if any of four hardcoded paths is renamed**, which is `L-248`'s own subject.* Now `<= 6 * len(IDS)`, derived, no literal left to fit.*
+- *`L253/S1`'s `>= 3` collapsed onto its own `== 3` sibling.*
+
+⌗ *`L249/P1` deserves a line as the finest form in the whole backlog and needed no repair: **a positive control at the point of use.** Its comment states why — a baseline pinned to a SHA is empty on a clone that cannot reach it, and `n_now >= 0` is a bound nothing can fail, so the check would have certified *did not lose assertions* for nine files it never read. `n_before > 0` makes it a fact about the corpus and not about the clone.*
+
+⌗ *All seven touched receipts run green and hash identically across `PYTHONHASHSEED` `0`/`99` — the pre-push check you said you would route in future, run here.*
 
 ---
 ## ⌗ THE INHERITED RED ACCOUNTS FOR ALL THREE SCOPED CHECKS, AND THIS BRANCH'S OWN SCOPE IS NOW MEASURED CLEAN IN EVERY ONE OF THEM

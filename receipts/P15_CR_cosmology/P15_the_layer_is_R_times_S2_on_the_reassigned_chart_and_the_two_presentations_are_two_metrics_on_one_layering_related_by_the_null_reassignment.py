@@ -283,14 +283,25 @@ _STATUS_OPEN = ("as a conjecture and do not claim it as a theorem" in body15
                 and "work this paper does not carry" in body15)
 _STATUS_SHOWN = ("eq:shape-invariant" in body15
                  and "P15_the_constant_r_foliation_carries_the_sphere_across_the_lap" in body15)
+#   ⛭⛭ r7155 (66, whose edit occasioned it): A THIRD STATE, because the enumeration had two and the
+#   paper has now produced the one neither covered -- ANSWERED IN THE NEGATIVE.  `PO-74` is settled at
+#   `r7152`: the carried layer's squashing runs to zero approaching the seam, so the shape is not carried,
+#   and `sec:largescale` states that instead of a hedge.  ** The disjunction above was written for `open`
+#   or `carried` and a settled NEGATIVE satisfies neither, so it failed on the row being answered --- the
+#   same fail-on-success shape its own comment names, one state further out. **  ⇒ *The partition `60`
+#   recorded at `r7150` is the rule: a clause the receipt asks to CHANGE is enumerated over the states the
+#   paper may produce, and `not carried` was always one of them.*
+_STATUS_SETTLED = ("the round shape is not carried to the seam" in body15
+                   and "P15_the_sheared_layers_invariant_is_obtained_in_closed_form" in body15)
 print(f"      the paper's status on the continuation -- marked open: {_STATUS_OPEN};  "
-      f"demonstration carried and cited: {_STATUS_SHOWN}")
+      f"demonstration carried and cited: {_STATUS_SHOWN};  settled negative: {_STATUS_SETTLED}")
 gate("⓸ and the paper marks the continuation's status in its own words rather than leaving it implicit -- "
      "EITHER as a conjecture with the demonstration owed, OR carried and cited, or both, the conjecture "
-     "standing for what is not yet shown while the receipt is cited for what is.  ⛔ *What this asserts is "
+     "standing for what is not yet shown while the receipt is cited for what is, OR SETTLED IN THE NEGATIVE "
+     "with the shape shown not to be carried.  ⛔ *What this asserts is "
      "that the status is MARKED, never that it is open: a gate pinned to the open wording fails on its own "
      "success, which is what happened here at `r7121`*",
-     _STATUS_OPEN or _STATUS_SHOWN)
+     _STATUS_OPEN or _STATUS_SHOWN or _STATUS_SETTLED)
 
 gate("⌗ and nothing here reads an instrument, a banked spectrum or a likelihood -- the whole receipt is "
      "sympy on `eq:proper-frame` and `eq:scalefac` plus four substring reads of the paper, so it cannot "

@@ -132,11 +132,21 @@ _OWED = (r"the three-metric of the layer inside the lap carried from the sphere 
          r"presentation displays at a horn, rather than posited at each point of the bead")
 _INV = r"\mathcal R\,V^{2/3}=6(2\pi^2)^{2/3}=43.8232\ldots"
 _CONJ = r"We state the continuation as a conjecture and do not claim it as a theorem"
+# ⛭⛭ r7155 (66, whose edit answered the row): THE HEDGE IS A CLAUSE THIS ROW ASKED TO BE CHANGED, SO
+#   IT IS ENUMERATED OVER THE STATES THE PAPER MAY PRODUCE RATHER THAN PINNED AT count == 1.  ** That is
+#   the partition node 60 recorded at r7150 after the second instance of this break, and pinning the
+#   hedge is the third --- here, in three receipts at once, one of them the receipt that ANSWERS the
+#   row while asserting that the paper still hedges it. **  ⇒ *sec:largescale now states that the
+#   layer's SIZE continues across the lap and its SHAPE does not, so the hedge is gone and that is this
+#   work succeeding.  The gate holds if the paper is in EITHER state and fails if it is in neither.*
+_SETTLED_NEG = ("the round shape is not carried to the seam" in b15
+                and "P15_the_sheared_layers_invariant_is_obtained_in_closed_form" in b15)
+_HEDGE_OR_SETTLED = (b15.count(_CONJ) == 1) or _SETTLED_NEG
 print(f"      what is owed: {b15.count(_OWED)}x;   the invariant: {b15.count(_INV)}x;   "
       f"the conjecture: {b15.count(_CONJ)}x")
 gate("Ⓐ① THE OWED CLAUSE NAMES THE PRESENTATION -- *\"carried from the sphere the de~Sitter "
      "presentation displays at a horn\"* -- and the test and the hedge are located beside it",
-     b15.count(_OWED) == 1 and b15.count(_INV) == 1 and b15.count(_CONJ) == 1)
+     b15.count(_OWED) == 1 and b15.count(_INV) == 1 and _HEDGE_OR_SETTLED)
 
 _DENIAL = r"is therefore not evidence about where the layer's sphere lives"
 _REASSIGN = r"Building the cosmology, we reassign causal roles on the de~Sitter substrate"

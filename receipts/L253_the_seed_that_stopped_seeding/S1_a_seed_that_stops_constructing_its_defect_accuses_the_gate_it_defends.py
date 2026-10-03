@@ -290,7 +290,10 @@ def main():
           "objs_unstruck(open(os.path.join(ROOT, 'PROTECTED_OPEN.md''" not in m1_old
           and "open(os.path.join(ROOT, 'PROTECTED_OPEN.md'), encoding='utf-8').read())"
           in m1_old
-          and m1_old.count("open(os.path.join(ROOT, 'PROTECTED_OPEN.md')") >= 3)
+          # ⛭ r7151+cc66.112: `>= 3` on a blob pinned at BEFORE, where the NEXT check asserts the
+          #   SAME expression `== 3`.  A count of a file at a commit cannot move, so a floor buys
+          #   nothing and the label already says THREE.  Exact, and it collapses onto that sibling.
+          and m1_old.count("open(os.path.join(ROOT, 'PROTECTED_OPEN.md')") == 3)
     m1_new = open(os.path.join(ROOT, m1_rel), encoding='utf-8').read()
     _live_reads = m1_new.count("open(os.path.join(ROOT, 'PROTECTED_OPEN.md')")
     check(f'⓺ᶜ and the {_live_reads} working-tree reads of PROTECTED_OPEN.md that remain in M1 are '

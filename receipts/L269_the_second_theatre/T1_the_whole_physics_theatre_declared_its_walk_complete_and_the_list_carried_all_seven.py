@@ -119,7 +119,9 @@ def main():
     seg = owed_was[i:i + 600]
     check('⓶ at the parent, OWED 609 lists the seven R-P stations and marks six with ⟐ and ①② as '
           '"the earliest unrun"',
-          i > 0 and seg.count('⟐') >= 6 and 'the earliest unrun' in seg)
+          # ⛭ r7151+cc66.112: `>= 6` on a blob pinned at PARENT (r3156) and a label that says SIX.
+          #   An immutable count is pinnable exactly; measured 6.
+          i > 0 and seg.count('⟐') == 6 and 'the earliest unrun' in seg)
     stale = [s for s in ('①②', '③④', '⑤', '⑥', '⑦', '⑨', '⑩') if s in seg]
     check(f'⓶ᵇ ⛔ and all seven appear in that one segment: {stale}', len(stale) == 7)
 

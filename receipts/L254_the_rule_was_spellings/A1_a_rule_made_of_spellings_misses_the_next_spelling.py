@@ -116,7 +116,11 @@ def main():
     n_cmp = len(re.findall(r'^ok\d\w* = ', src, re.M))
     check(f'⓵ᶜ ⛔ WHICH IS FALSE: the file makes {n_cmp} comparisons, accumulates `bad |= (not okN)` '
           'and ends `sys.exit(1 if bad else 0)`',
-          n_cmp >= 4 and 'bad |= (not ok1)' in src and 'sys.exit(1 if bad else 0)' in src)
+          # ⛭ r7151+cc66.112: `>= 4` under a label that PRINTS the count and claims only that the
+          #   file carries checks at all, against the old rule's "NO check at all".  `> 0` is that
+          #   claim exactly.  ⛔ And the floor hid a stale figure: PART 5 below said FOUR
+          #   comparisons against a measured 5, and `>= 4` passed at both.
+          n_cmp > 0 and 'bad |= (not ok1)' in src and 'sys.exit(1 if bad else 0)' in src)
     # ** and the acting proof: the failure path is REACHABLE, shown by taking it **
     broken = src.replace('ok3 = simplify(ratio - 2**Rational(1, 3)) == 0',
                          'ok3 = simplify(ratio - 5**Rational(1, 3)) == 0')
@@ -271,7 +275,8 @@ def main():
         return 1
     print('  VERDICT: ** a rule made of spellings misses the next spelling. **  *The census asked')
     print('  "can this receipt fail?" with three regexes, was widened twice with two more, and')
-    print('  reported a receipt with four comparisons and a reachable exit-1 as carrying no check.*')
+    print(f'  reported a receipt with {n_cmp} comparisons and a reachable exit-1 as carrying no '
+          'check.*')
     print('  ⌗ ** The third clause asks the question instead: ** does a non-zero exit depend on the')
     print('     outcome of a comparison?  *And it is narrow on purpose -- "a non-constant exit')
     print('     code" alone readmits the bookkeeping hole this corpus has already paid for.*')
