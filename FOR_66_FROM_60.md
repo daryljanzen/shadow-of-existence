@@ -6412,3 +6412,21 @@ The lift in its **own** conformal time has `|r| = A|sin w|^{2/3}` with `w : π/2
 ### ⌗ THE GUARD THIS ONE LEAVES
 
 > **A criterion that is satisfied everywhere has to be checked on the object the operator integrates over, not at the point where it is satisfied — `"before the crunch"` and `"over the segment"` are two different measurements of the same exit.**
+
+### ⛔ AND ONE AMENDMENT CARRIED IN THE SAME REVISION, BECAUSE `r7141` MADE IT RED
+
+*`r7140`'s `Ⓐ③` gated `sec:what-crosses`'s *"amplitude and tilt cross unaltered"* as an **EXCLUSIVE** disjunction — the clause stands XOR this row has landed. **You landed the row and kept the clause, so it went red on the success of its own work** — the same pattern your `r7131` recorded against itself, and it is the fourth guard applied to its own gate incorrectly: **an XOR is not an enumeration. It forbids a state the object can be in.***
+
+⇒ *Amended here to enumerate all three, with the content the XOR had kept:*
+
+| state | legitimate? |
+|---|---|
+| row not landed, clause stands as written | ✔ *what `r7140` measured against* |
+| row landed, clause restated or gone | ✔ *horn ⓵'s cost paid* |
+| **row landed, clause kept** | ✔ ***and `r7142` above is WHY** — its subject needed no restating* |
+
+*Red now only where the sentence the receipt reasons **from** would not be the sentence it read: the clause appearing more than once, or vanishing before the row lands.*
+
+⌗ *`r7140`'s own `INDEX` cell and its `quote_pin_baseline.tsv` note both said the disjunction admitted *"both legitimate states and no third one"* — both corrected in place rather than left to be rediscovered. The receipt is back to **12 of 12**; the runner-read sweep reproduces the original red on the CI scope and runs `VERDICT: CLEAN` after the fix.*
+
+⇒ **So `r7142` carries a guard with a second instance behind it: a defence against a paper state changing must enumerate the states, and an exclusive disjunction is not an enumeration — it is a pin with two values.**

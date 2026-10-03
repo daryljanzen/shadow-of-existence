@@ -114,12 +114,30 @@ gate("Ⓐ② AND `P07` FIXES THE SEAMS' RATIO IN ITS OWN WORDS -- *\"their radii
 # ⌗ the clause horn ⓵ would cost is gated as a DISJUNCTION and never as a pin: the fourth guard.
 _UNALT = r"so amplitude and tilt cross unaltered while the collapse-leg acoustic phase does not"
 _CARRIED = 'P15_the_term_the_leaf_adds_dominates_the_matter_term_everywhere_inside_the_lap' in b15
+#: ⛭ AMENDED r7142 (60), AND THE AMENDMENT IS THE FOURTH GUARD APPLIED PROPERLY TO THIS OWN GATE.
+#: As first written this was an EXCLUSIVE disjunction -- the clause stands XOR this row has landed --
+#: and it went RED ON THE SUCCESS OF ITS OWN WORK: `r7141` landed the row AND kept the clause, which
+#: an XOR calls impossible.  ⇒ An XOR is not an enumeration; it forbids a state the object can be in.
+#: `r7142` then established WHY that third state is legitimate: horn ⓵'s carrier is a wavenumber-free
+#: POTENTIAL amplitude the paper already carries in two places (`sec:what-crosses`'s *"contains no
+#: `$k$` at all once `$w=0$`"* and `sec:coherence`'s *"the wavenumber-independent `$0.4835\\,\\Psi_i$`"*),
+#: so the clause needs no restatement on that horn and legitimately stands after the row lands.
+#: ⇒ The gate now ENUMERATES the three states `P15` may be in, and keeps the content the XOR had:
+#:   ⓵ row not landed  ⇒ the clause stands as written, which is what this receipt measured against;
+#:   ⓶ row landed, the clause restated or gone ⇒ horn ⓵'s cost was paid;
+#:   ⓷ row landed, the clause kept  ⇒ its subject needed no restating (`r7142`).
+#: Red on: the clause appearing more than once, or vanishing BEFORE this row lands -- the two states
+#: that would mean the sentence this receipt reasons from is not the sentence it read.
+_STATES = ((b15.count(_UNALT) == 1 and not _CARRIED)
+           or (_CARRIED and b15.count(_UNALT) <= 1))
 print(f"      the 'cross unaltered' clause: {b15.count(_UNALT)}x;  this row landed in `P15`: "
-      f"{_CARRIED}")
+      f"{_CARRIED};  the enumeration holds: {_STATES}")
 gate("Ⓐ③ THE CLAUSE HORN ⓵ WOULD COST -- *\"amplitude and tilt cross unaltered\"* -- IS GATED AS AN "
-     "**EXCLUSIVE DISJUNCTION** AGAINST THIS ROW LANDING IN IT, never as a pin: either it stands as "
-     "written or this row is in `P15`, never neither and never both",
-     (b15.count(_UNALT) == 1) != _CARRIED)
+     "**ENUMERATION OF THE STATES `P15` MAY PRODUCE**, never as a pin and no longer as an XOR: before "
+     "this row lands the clause stands as written; after it lands the clause is `66`'s to set, and "
+     "`r7142` showed its subject needs no restating on horn ⓵.  ** Red only where the sentence this "
+     "receipt reasons FROM would not be the sentence it read **",
+     _STATES)
 
 
 # ============================================ B. the measurement
@@ -185,7 +203,7 @@ gate("Ⓓ① HORN ⓵: **IF the segment is the vacuum curve**, the inherited rad
      "something other than the radiation perturbation, *because the thing that would carry it is not "
      "there*.  ⌗ Which is why that clause is in `A` as a disjunction",
      _v_seam == 2 and sp.simplify(_v_turn - 2 ** sp.Rational(2, 3)) == 0
-     and ((b15.count(_UNALT) == 1) != _CARRIED))
+     and _STATES)
 
 gate("Ⓓ② HORN ⓶: **IF the inherited radiation IS present there**, the segment is not the vacuum "
      "curve and the turnaround that defines it moves, since `$A=(2M\\alpha^2)^{1/3}$` is derived FROM "
@@ -198,7 +216,7 @@ gate("Ⓓ② HORN ⓶: **IF the inherited radiation IS present there**, the segm
 gate("Ⓓ③ ⇒ AND THE ROW IS **PRICED RATHER THAN DECIDED**: `PO-79` asked which of the two the "
      "crossing transports, and this receipt says what each answer costs.  *The first costs a clause "
      "of the paper; the second costs the segment's own definition.*",
-     ((b15.count(_UNALT) == 1) != _CARRIED)
+     _STATES
      and sp.simplify(sp.diff(_A, sp.Symbol('A_r'))) == 0
      and float(RATIO.subs(r, 1.5 * _rN).subs(al, 1)) > 1)
 
