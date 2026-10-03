@@ -76,11 +76,38 @@ fi
 JOBS=4
 OUT=$(mktemp -d)
 i=0
+# ⛭⛭ EACH RECEIPT'S OWN DECLARED BUDGET, AND A TIMEOUT IS REPORTED AS A TIMEOUT.
+#   ** This gate hardcoded `timeout 900` and reported a kill as `[FAIL]`. **  `r7155` hit it: a corpus
+#   edit pulled `P15_the_one_fitted_number_moves_the_scale_and_not_the_peak.py` into scope, which
+#   `run_all_receipts.py`'s `LONG` table declares at `1500`s on measurement -- so the gate killed it at
+#   `900` and called the kill a red.  ⇒ *An instrument that reports a red which is not one is the defect
+#   this whole arc is about, and a gate nobody believes is a gate nobody runs.*
+#   ⌈ `run_instrument_receipts.sh` already solved this by EXCLUDING the declared-long set.  Excluding is
+#   wrong here: the affected set is the point of this gate, so the budget is READ instead and the outcome
+#   named.  *A timeout is counted apart and does not fail the gate, because a receipt that did not finish
+#   has not contradicted anything -- and the heavy job runs it on its own budget.*
+BUDGETS=$(python3 - <<'PY'
+import io, re
+s = io.open('scripts/run_all_receipts.py', encoding='utf-8').read()
+i = s.find('LONG = {'); j = s.find('\n}', i)
+for m in re.finditer(r"^\s*'([^']+)':\s*(\d+)", s[i:j], re.M):
+    print(m.group(1), m.group(2))
+PY
+)
+budget_for() {
+    local b="$1" line
+    line=$(printf '%s\n' "$BUDGETS" | awk -v f="$b" '$1 == f {print $2; exit}')
+    if [ -n "$line" ]; then echo "$line"; else echo 900; fi
+}
+
 for r in $READERS; do
     d=$(dirname "$r"); b=$(basename "$r")
-    ( cd "$d" && timeout 900 python3 -W ignore "$b" >/dev/null 2>&1 \
-        && echo "ok" > "$OUT/$(echo "$r" | tr '/' '_')" \
-        || echo "$r" > "$OUT/$(echo "$r" | tr '/' '_')" ) &
+    t=$(budget_for "$b")
+    ( cd "$d" && timeout "$t" python3 -W ignore "$b" >/dev/null 2>&1
+      rc=$?
+      if [ "$rc" = "0" ]; then echo "ok" > "$OUT/$(echo "$r" | tr '/' '_')"
+      elif [ "$rc" = "124" ]; then echo "TIMEOUT ${t}s $r" > "$OUT/$(echo "$r" | tr '/' '_')"
+      else echo "$r" > "$OUT/$(echo "$r" | tr '/' '_')"; fi ) &
     i=$((i+1))
     if [ $((i % JOBS)) -eq 0 ]; then wait; fi
 done
@@ -88,18 +115,23 @@ wait
 
 FAILED=""
 PASSED=0
+TIMEDOUT=0
 for f in "$OUT"/*; do
-    if [ "$(cat "$f")" = "ok" ]; then
-        PASSED=$((PASSED+1))
-    else
-        FAILED="$FAILED $(cat "$f")"
-        echo "    [FAIL] $(cat "$f")"
-    fi
+    v=$(cat "$f")
+    case "$v" in
+        ok) PASSED=$((PASSED+1)) ;;
+        TIMEOUT*) TIMEDOUT=$((TIMEDOUT+1)); echo "    [over its declared budget, counted apart] $v" ;;
+        *) FAILED="$FAILED $v"; echo "    [FAIL] $v" ;;
+    esac
 done
 rm -rf "$OUT"
 
 echo
 echo "    passed: $PASSED"
+if [ "$TIMEDOUT" != "0" ]; then
+    echo "    over budget: $TIMEDOUT   ⌈ not a red: a receipt that did not finish has contradicted nothing,"
+    echo "                         and the heavy job runs it on its own budget."
+fi
 if [ -n "$FAILED" ]; then
     echo
     echo "  ⛔ THE TOUCHED READERS ARE RED.  Repair before pushing -- and note WHOSE receipt it is:"

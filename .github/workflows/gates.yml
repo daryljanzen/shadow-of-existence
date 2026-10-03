@@ -284,12 +284,30 @@ jobs:
       #   count.  *A gate that went red on a whole standing class at once would be switched off, and the
       #   class would go back to being caught by hand -- which is how all four of its founding instances
       #   were found.*
-      - name: ⓸ the mutation class, whole -- TILT and REGRID as ratchets
+      - name: ⓸ the mutation class, whole -- TILT as a ratchet, REGRID and ROUNDING-BOUNDARY as reports
         if: (success() || failure()) && steps.install.outcome == 'success'
         shell: bash
         run: |
           rc=0
           NODE=ci python3 corpus/check_tilt_pins.py || rc=$(( rc | 1 ))
+          # ⛭⛭ ROUNDING-BOUNDARY runs here as a REPORT r7155 (66), on node 70's `r7153+70.1` measurement
+          #   and on THIS JOB'S OWN STANDING RULING rather than a new one.  *The class is a comparison whose
+          #   verdict is decided by a rounding boundary rather than by the quantity -- `round(E, n) == L`, or
+          #   a band of half a unit in the literal's own last printed digit.*  ** 35 static sites in 22
+          #   receipts, 33 HALF-UNIT and 2 ROUND; the dynamic half wraps each site's operand and records its
+          #   distance to the flipping boundary, 22 receipts in 154s. **  ⌈ Recall is 1 of 1 on the one known
+          #   instance: the pre-r7153 `P15_the_exact_transmission_ratios...` is flagged ON-BOUNDARY with its
+          #   closest execution 7.5e-4 of a unit from the midpoint, which is the `ell = 2` straddle found
+          #   mechanically rather than by hand.
+          #   ⇒ *But ON THE CURRENT TREE NO EXECUTION IS ON A BOUNDARY -- the smallest margins are 0.031,
+          #   0.033, 0.045 and 0.048 of a unit, every one at least thirty times the threshold.*  ** So its
+          #   baseline would be empty, and an empty baseline is a gate asserting an absence -- which is
+          #   exactly why REGRID sits here as a report below. **  ⌈ Same shape, same ruling: it runs, its
+          #   exit status is RECORDED and not enforced, and it earns a ratchet when it has a second finding.
+          #   ⛔ *And what it does not see is stated rather than left to be discovered: a half-unit band whose
+          #   centre is a NAME rather than a literal is outside the pre-registered form, which includes the
+          #   `r7153` repair of the four non-boundary ratios as that repair is written.*
+          NODE=ci python3 scripts/mutate_assertions.py --rounding-boundary || true
           # ⌗ REGRID has no ratchet yet: its one live finding (C63's check 2) was repaired at r7119+cc66.90
           #   by DERIVING the window from the abscissa, so its baseline would be empty -- and an empty
           #   baseline is a gate asserting an absence.  It runs here as a REPORT until it has a second

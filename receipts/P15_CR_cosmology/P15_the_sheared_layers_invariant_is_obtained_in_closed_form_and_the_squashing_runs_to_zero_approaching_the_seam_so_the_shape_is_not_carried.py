@@ -319,12 +319,22 @@ gate("Ⓕ③ ⌗ AND THE ARITHMETIC `r7150` GATED IS UNTOUCHED, WHICH IS WHY `r7
 head("G.  WHAT THIS ANSWERS, AND THE FIRST THING IT DOES NOT CLAIM")
 
 _CONJ = r"We state the continuation as a conjecture and do not claim it as a theorem"
+# ⛭⛭ r7155 (66, whose edit answered the row): THE HEDGE IS A CLAUSE THIS ROW ASKED TO BE CHANGED, SO
+#   IT IS ENUMERATED OVER THE STATES THE PAPER MAY PRODUCE RATHER THAN PINNED AT count == 1.  ** That is
+#   the partition node 60 recorded at r7150 after the second instance of this break, and pinning the
+#   hedge is the third --- here, in three receipts at once, one of them the receipt that ANSWERS the
+#   row while asserting that the paper still hedges it. **  ⇒ *sec:largescale now states that the
+#   layer's SIZE continues across the lap and its SHAPE does not, so the hedge is gone and that is this
+#   work succeeding.  The gate holds if the paper is in EITHER state and fails if it is in neither.*
+_SETTLED_NEG = ("the round shape is not carried to the seam" in b15
+                and "P15_the_sheared_layers_invariant_is_obtained_in_closed_form" in b15)
+_HEDGE_OR_SETTLED = (b15.count(_CONJ) == 1) or _SETTLED_NEG
 print(f"      the conjecture hedge: {b15.count(_CONJ)}x")
 gate("Ⓖ① ** `PO-74` IS ANSWERED IN THE DIRECTION `r7151`'s LICENCE NAMES AS A RESULT: ** the shear "
      "destroys the shape, and the destruction is LOCATED -- `$\\lvert\\varepsilon\\rvert\\to0$` at the "
      "seam with the invariant following it to zero.  ⌗ *The paper's hedge was the right one to have "
      "carried, and it is located here as the state the row is being answered out of*",
-     b15.count(_CONJ) == 1 and abs(rows[3][1]) < 1e-14 and d1 == 0
+     _HEDGE_OR_SETTLED and abs(rows[3][1]) < 1e-14 and d1 == 0
      and sp.simplify(dlne - closed) == 0)
 
 gate("Ⓖ② ⛔ AND THE FIRST THING NOT CLAIMED IS WITNESSED BY WHAT IS ABSENT FROM THE COMPUTATION: *no "
