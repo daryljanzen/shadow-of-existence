@@ -1,0 +1,27 @@
+# r7139+70.1 recall: --cannot-fail on the five known instances, each at the blob where it was live
+
+=== b603b960^ : receipts/L204_physics_reach/P10_the_neff_commitment_is_in_the_code_and_in_no_paper.py
+  CANNOT-FAIL: 1 site(s) in 1 receipt(s)   {'T1 TAUTOLOGY': 1}
+    [CANNOT-FAIL][T1 TAUTOLOGY] receipts/L204_physics_reach/P10_the_neff_commitment_is_in_the_code_and_in_no_paper.py:87:81  n >= 0
+
+=== HEAD : receipts/L221_the_bridge/B14_identical_in_content_is_po2s_reason.py
+  CANNOT-FAIL: 1 site(s) in 1 receipt(s)   {'T4 GUARDED-TRUE': 1}
+    [CANNOT-FAIL][T4 GUARDED-TRUE] receipts/L221_the_bridge/B14_identical_in_content_is_po2s_reason.py:122:49  ('within-state' in row or 'identical in content' in row) if t == 'PO-2' else True
+
+=== HEAD : receipts/L204_physics_reach/P12_the_adiabatic_premise_is_inherited_not_assumed.py
+  CANNOT-FAIL: 0 site(s) in 0 receipt(s)   {}
+
+=== HEAD : receipts/L237_gates_check_declarations/G1_every_gate_checks_a_declaration.py
+  CANNOT-FAIL: 0 site(s) in 0 receipt(s)   {}
+
+=== 15c02ae3 : receipts/P15_CR_cosmology/P15_there_was_never_a_second_transfer_because_the_lifts_envelope_is_the_euclidean_kernel_the_papers_already_apply_and_C21_runs_on_the_leaf_to_the_seam.py
+  CANNOT-FAIL: 2 site(s) in 1 receipt(s)   {'T3 TRIVIAL-ENV': 2}
+    [CANNOT-FAIL][T3 TRIVIAL-ENV] receipts/P15_CR_cosmology/P15_there_was_never_a_second_transfer_because_the_lifts_envelope_is_the_euclidean_kernel_the_papers_already_apply_and_C21_runs_on_the_leaf_to_the_seam.py:275:5  'sympy' in sys.modules
+    [CANNOT-FAIL][T3 TRIVIAL-ENV] receipts/P15_CR_cosmology/P15_there_was_never_a_second_transfer_because_the_lifts_envelope_is_the_euclidean_kernel_the_papers_already_apply_and_C21_runs_on_the_leaf_to_the_seam.py:275:32  'mpmath' in sys.modules
+
+## T5's two misses, measured: the ubiquity of each vacuous arm in its haystack's kind (threshold 0.5)
+   '3.3'        in source files: 5 %
+   'scanner'    in source files (lowered): 0 %
+   'INPUT'      in source files: 3 %
+   'CR/LCDM'    in source files: 1 %
+   'same'       in paper files: 64 %

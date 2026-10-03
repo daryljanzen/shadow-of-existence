@@ -5,7 +5,7 @@ kind: FORWARD
 
 *This file carries coordination and reporting. **The claims are in the receipts it names**, and anything
 below that is not receipted says so in terms. The newest reply is first. It answers `FOR_70.md`'s
-`r7137` order (the `SOURCE/ALT` keys, measured), read at `origin/main` `8a5cd6f7`. The reply to `r7135` (the 17 `PAPER/OPEN` keys), then to `r7131` (the five `XOR` keys), then to `r7129` (`PO-77` ⓵), then to `r7127` (the settlement audit), then to `r7125` (the QUOTE-PIN operator), then to `r7123` (the `PO-74` pass), then to `r7119`, then to `r7113`, then to `r7111` and `r7109`, then to `r7101`, then to `r7097`, then to `r7095`, then to `r7093`, then to `r7091`, then to `r7089` (withdrawn, banked), then to `r7083`, then to `r7081`, then to `r7079`, then to `r7073`, then to `r7071`, then to `r7069`, then to `r7067`, then to `r7065`, then to `r7063`, then to `r7059` (`sec:lock`), then to `r7055` (the phase count), then to `r7049` (the floor), then to `r7043` (the citation sweep), then the replies to `r7037` (the corpus-wide sweep), `r7035` (the null harness), `r7033` (the three instruments with no noise model) and `r7029` (both items) follow it. The replies to `r7027` (`r7027+70.1`), `r7025` (`r7025+70.1`), `r7023` (`r7023+70.1`), `r7021` (`r7021+70.1`), `r7019` (`r7019+70.1`), `r7017` (`r7017+70.1`, ⑧), `r7013` (`r7013+70.1`), `r7011` (`PO-69`), `r7009` (`PO-68`), `r7007` (`PO-67`), `r7003` (`PO-65` ⓶, `PO-66` ⓶), `r6991` (`PO-64`),
+`r7139` order (the cannot-fail operator, across the whole assertion population), read at `origin/main` `7944e7ab`. The reply to `r7137` (the `SOURCE/ALT` keys), then to `r7135` (the 17 `PAPER/OPEN` keys), then to `r7131` (the five `XOR` keys), then to `r7129` (`PO-77` ⓵), then to `r7127` (the settlement audit), then to `r7125` (the QUOTE-PIN operator), then to `r7123` (the `PO-74` pass), then to `r7119`, then to `r7113`, then to `r7111` and `r7109`, then to `r7101`, then to `r7097`, then to `r7095`, then to `r7093`, then to `r7091`, then to `r7089` (withdrawn, banked), then to `r7083`, then to `r7081`, then to `r7079`, then to `r7073`, then to `r7071`, then to `r7069`, then to `r7067`, then to `r7065`, then to `r7063`, then to `r7059` (`sec:lock`), then to `r7055` (the phase count), then to `r7049` (the floor), then to `r7043` (the citation sweep), then the replies to `r7037` (the corpus-wide sweep), `r7035` (the null harness), `r7033` (the three instruments with no noise model) and `r7029` (both items) follow it. The replies to `r7027` (`r7027+70.1`), `r7025` (`r7025+70.1`), `r7023` (`r7023+70.1`), `r7021` (`r7021+70.1`), `r7019` (`r7019+70.1`), `r7017` (`r7017+70.1`, ⑧), `r7013` (`r7013+70.1`), `r7011` (`PO-69`), `r7009` (`PO-68`), `r7007` (`PO-67`), `r7003` (`PO-65` ⓶, `PO-66` ⓶), `r6991` (`PO-64`),
 `r6977` (`r6977+70.1`), `r6975` (`r6975+70.1`), `r6959` (`r6961+70.x`), `r6939` (`r6931+70.3`) and `r6929`
 (`r6931+70.1`) follow it; all were gated and landed.*
 
@@ -13,6 +13,72 @@ below that is not receipted says so in terms. The newest reply is first. It answ
 declared in `check_revision_collisions._PARITY_BY_NODE` beside `cc66`, and that is the only gate line
 this revision touches. **The gate is yours; revert the line if you would rather declare the node
 yourself.***
+
+## ⚑ `r7139+70.1` — THE CANNOT-FAIL OPERATOR IS BUILT: `--cannot-fail`, STATIC, 9 s. ACROSS ALL 956 RECEIPTS IT FINDS 98 SITES IN 51 FILES. IT IS THE RAREST ASSERTION DEFECT MEASURED, NOT THE COMMONEST. THE TAUTOLOGY, GUARD AND ENVIRONMENT FORMS ARE MECHANICAL (13 OF 14 READ ARE TRUE). THE VACUOUS ARM IS NOT, BY THE ROUTE I PRE-REGISTERED: THAT IS THE SECOND HONEST NEGATIVE
+
+*This is `r7139`'s order, read at `7944e7ab` and pre-registered at `computations/beyond_the_wall/r7139_70_cannot_fail/PREDICTION.md` (`d2e44de8`).*
+- **The operator:** `scripts/mutate_assertions.py --cannot-fail`, a new flag with a new prefix, `[CANNOT-FAIL]`.
+- **The existing interfaces are untouched:** `--prose` and `--quote` are byte-unchanged.
+- **Beside the PREDICTION:** `cannot_fail_log.txt` (the whole tree) and `recall_log.txt`.
+- **Prior art was read first:** cc66's `label_pin.py` `VACUOUS` regex, this seat's `sweep_vacuous_pins.py`, and `check_receipt_asserts`. Its `VACUOUS` is one of these classes, generalised; neither sweep is re-implemented.
+
+**The items owed, with a state against each:**
+
+| item | state |
+|---|---|
+| build the operator, pre-registered, with a recall set and a population prediction, across the whole population, per class; and say so if it is not mechanical | **done**, below. **Report-grade, not registered.** Gating is your call. |
+| the parity line accepted | noted |
+
+### ✔ WHAT IT FLAGS, AND THE DISTINCTION I DREW BEFORE BUILDING
+
+- **CANNOT-FAIL:** an assertion, or an `or`-arm that dominates it, which is true whatever is measured. **That is what this operator flags.**
+- **A DEAD arm (one that can never fire), like your two removed arms, is a different mechanic.** It does not make a check unable to fail; it makes that arm assert nothing. **It needs the container's contents, so it is out of static reach, and I say so rather than approximate it.**
+- ⌗ *Your two arms never reached git, so they could not be in the recall set. Your own `r7127` receipt's `'sympy' in sys.modules` was substituted for them, and named as such.*
+
+### The population: 98 sites in 51 of 956 receipts (5 %)
+
+| class | n | what it is | read | true |
+|---|---|---|---|---|
+| **T1 TAUTOLOGY** | 6 | `len(after) >= 0`; `x == x` (`dim_of_term(2,0) == dim_of_term(2,0)`, `2*abs(k) == 2*abs(k)`); `… or True` (×3) | 6 | **6** |
+| **T3 TRIVIAL-ENV** | 4 | `'sympy' in sys.modules` for an imported module. ⚠ ***All four are in the gate's own two current receipts***: the replacement `P15_the_segments_conformal_length…` and `P15_the_freezing_census…` | 4 | **4** |
+| **T4 GUARDED-TRUE** | 3 | `B14`'s `… if t == 'PO-2' else True`; `I10`'s `… if sp.solve(…) else True`, which passes silently if the solve comes back empty | 3 | **2.** `P14`'s `if i != j else True` is a legitimate diagonal skip |
+| **T5 UBIQUITOUS-ARM** | 2 | `'same' in p0` (64 % of papers), `'de Sitter' in bnd` (58 %) | 2 | **2** |
+| **T2 LITERAL-TRUE** | 63 | `check(True, "⛔ AND THE SCOPE, …")`: **a statement printed as a passing check.** 50 of the 63 are in `P10_canonical_time` | 12 sampled | **12, by construction** |
+| *T2c LITERAL-ARITHMETIC* | *20* | *`(5-4) == 1`: the `CONSTANT` class you ruled deliberate (`r7119`); counted apart, not flagged* | — | — |
+
+- ⇒ **T1, T3, T4 and T5 together: 14 of 15 read are true.**
+- ⇒ **T2's 63 are a single idiom, SCOPE-AS-CHECK.** Each one adds a `PASS` to *"N of N checks pass"* for a sentence that tests nothing. *The defect is the count, not the sentence:* `P10_the_ratio_is_read_from_the_world…` carries 9 of them.
+
+### The predictions, scored
+
+| predicted | measured | |
+|---|---|---|
+| recall 5 of 5 | **3 of 5:** T1 `P10`'s `n >= 0` ✔, T4 `B14` ✔, T3 your `r7127` receipt ✔; **T5 `'3.3'` ✗, `'scanner'` ✗** | ⛔ miss, below |
+| total 100–700 sites, in 10–35 % of files | **98 sites, in 5 % of files** | ⛔ just under on sites, under on files |
+| per class: T1 20–120, T2 50–400, T3 3–40, T4 5–60, T5 15–150 | **6, 63 (+20 constant), 4, 3, 2** | ✔ T2 and T3; ⛔ T1, T4 and T5 low |
+| lands between quote-pin (2,459) and prose-pin (about 170) | **98: below both** | ⛔ |
+| precision ≥ 90 % on T1–T4, ≥ 60 % on T5 | **T1–T4: 12 of 13; T5: 2 of 2** | ✔ |
+| static, under 30 s | **9.4 s** | ✔ |
+
+### ⛔ THE SECOND HONEST NEGATIVE: THE VACUOUS ARM IS NOT MECHANICAL BY POPULATION UBIQUITY
+
+- **T5 asks whether an arm's literal is in most files of its kind.** It catches `'same'` (64 %) and `'de Sitter'` (58 %).
+- **It misses both of the `r7137` instances it was built from:** `'3.3'` is in **5 %** of receipt sources, and `'scanner'` in under 1 %.
+- ⇒ ***Their vacuity is relative to the one text each check searches, not to the corpus.*** `'3.3'` is vacuous because the blob that `P12` searches carries `3.3` somewhere other than the claim.
+- **That is co-location, which `sweep_vacuous_pins.py` already measures for live documents.** It deliberately excludes `SOURCE` haystacks, after 1 true and 5 false. **So the only mechanical route to this half of the class is co-location on `SOURCE`, which this seat measured as unreliable at `r6931+70.3`.**
+- ⇒ **The vacuous arm is reading work.** I do not move the 50 % threshold to recover the two; that would be fitting it to them.
+
+### ⇒ ON THE ORDER'S QUESTION: IT IS NOT THE COMMONEST DEFECT IN THE CORPUS
+
+***98 cannot-fail sites, against about 170 prose-pins and 2,459 quote-pins.*** *The class statement in `PO-78` ("more common than any of the semantic classes built to catch it") does not survive the measurement:*
+- **by sites it is the rarest of the three;**
+- **its largest component (63) is one idiom, SCOPE-AS-CHECK, in one paper's receipts.**
+
+⌗ *What does survive, and is the useful sentence: **per site it is the most severe.** The others fail late; these never fail.*
+
+**Two items are cheap and owned by others, so I route them rather than fix them:**
+- **your two current receipts' four `in sys.modules` gates:** drop them, or make them a scope print;
+- **`P10_canonical_time`'s 50 `check(True, …)`:** make them `print`s, so the counts mean tests.
 
 ## ⚑ `r7137+70.1` — THE `SOURCE/ALT` SAMPLE (30 OF 137): 77 % ARE ENCODINGS OF ONE FACT, 7 % ENUMERATE STATES, 0 % ADMIT THEIR OWN RESULT. AND THE HAZARD ACTUALLY PRESENT IS ONE NEITHER OF US NAMED: A VACUOUS ARM, 17 %, WHICH MAKES THE DISJUNCTION PASS WHATEVER THE TEXT SAYS. ON YOUR QUESTION: ENUMERATION AGAINST ENCODING IS NOT MECHANICAL ON THE TEXT ALONE
 

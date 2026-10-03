@@ -1,0 +1,100 @@
+
+  CANNOT-FAIL: 98 site(s) in 51 receipt(s)   {'T1 TAUTOLOGY': 6, 'T2 LITERAL-TRUE': 63, 'T2c LITERAL-ARITHMETIC': 20, 'T3 TRIVIAL-ENV': 4, 'T4 GUARDED-TRUE': 3, 'T5 UBIQUITOUS-ARM': 2}
+    [CANNOT-FAIL][T2c LITERAL-ARITHMETIC] receipts/L165_interacting_tower/D4_the_state_fixer_has_its_own_threshold.py:98:10  (-0.25 + 0.25) <= 0 and (-0.24 + 0.25) > 0
+    [CANNOT-FAIL][T5 UBIQUITOUS-ARM (64% of paper files)] receipts/L200_free_data_count/U1_the_count_as_the_corpus_now_states_it.py:147:52  'same' in p0
+    [CANNOT-FAIL][T4 GUARDED-TRUE] receipts/L221_the_bridge/B14_identical_in_content_is_po2s_reason.py:122:49  ('within-state' in row or 'identical in content' in row) if t == 'PO-2' else True
+    [CANNOT-FAIL][T2c LITERAL-ARITHMETIC] receipts/L221_the_bridge/B55_right_kind_right_place_numerical_declined.py:107:10  (5-4) == 1 and (4-4) == 0
+    [CANNOT-FAIL][T5 UBIQUITOUS-ARM (58% of paper files)] receipts/L221_the_bridge/B64_the_composite_route_does_not_close.py:106:10  'de Sitter' in bnd
+    [CANNOT-FAIL][T1 TAUTOLOGY] receipts/L256_the_band_taken/B1_a_finding_that_routes_its_own_remedy_and_then_recurs_is_not_waiting.py:177:10  len(after) >= 0
+    [CANNOT-FAIL][T2c LITERAL-ARITHMETIC] receipts/L270_the_table_that_carried_its_next_failure/V1_a_translation_table_validated_only_against_what_it_was_asked_to_render.py:210:10  not (0x1D43 <= 0x0299 <= 0x1D7F)
+    [CANNOT-FAIL][T1 TAUTOLOGY] receipts/L556_registry_from_rows/R1_the_registry_was_checked_from_citations_inward_so_twenty_rows_were_read_by_nothing.py:278:14  any(r.lineno == n for r in live) or True
+    [CANNOT-FAIL][T1 TAUTOLOGY] receipts/P03_SdS_slicing/P03_the_symbol_T_carries_four_structural_referents.py:155:7  found['d_groupoid_transformation'] & op or True
+    [CANNOT-FAIL][T4 GUARDED-TRUE] receipts/P03_slicing_curve/I10_I15_the_horizon_is_a_turning_point_and_a_fixed_point_and_Nariai_degenerates_both.py:69:6  sp.simplify(sp.solve(sp.Eq(f, 0), M)[0]) == sp.simplify(sp.solve(sp.Eq(-sp.Abs(f) / 2, 0), M)[0]) if sp.solve(sp.Eq(f, 0), M) else True
+    [CANNOT-FAIL][T2 LITERAL-TRUE] receipts/P10_canonical_time/P10_step_three_is_written_down_and_it_reverses_the_previous_revisions_own_conclusion_about_the_sign.py:185:5  True
+    [CANNOT-FAIL][T2 LITERAL-TRUE] receipts/P10_canonical_time/P10_step_three_is_written_down_and_it_reverses_the_previous_revisions_own_conclusion_about_the_sign.py:193:25  True
+    [CANNOT-FAIL][T1 TAUTOLOGY] receipts/P10_canonical_time/P10_the_assembly_gives_both_level_sums_in_the_towers_own_variables_and_the_sign_needs_no_bitensor.py:211:5  all(sp.simplify(sum(einv[i, a]*sp.diff(sum(einv[j, b]*sp.diff(X[p], X[j]) for j in range(3)), X[i]) for i in range(3)) - 0) == 0 for a in range(3) for
+    [CANNOT-FAIL][T2 LITERAL-TRUE] receipts/P10_canonical_time/P10_the_assembly_gives_both_level_sums_in_the_towers_own_variables_and_the_sign_needs_no_bitensor.py:617:5  True
+    [CANNOT-FAIL][T2 LITERAL-TRUE] receipts/P10_canonical_time/P10_the_assembly_gives_both_level_sums_in_the_towers_own_variables_and_the_sign_needs_no_bitensor.py:642:5  True
+    [CANNOT-FAIL][T2c LITERAL-ARITHMETIC] receipts/P10_canonical_time/P10_the_chain_does_not_reach_the_planck_length_and_the_second_order_term_is_bounded_at_the_bounce.py:127:6  1 - 1 == 0
+    [CANNOT-FAIL][T2 LITERAL-TRUE] receipts/P10_canonical_time/P10_the_chain_does_not_reach_the_planck_length_and_the_second_order_term_is_bounded_at_the_bounce.py:151:6  True
+    [CANNOT-FAIL][T2 LITERAL-TRUE] receipts/P10_canonical_time/P10_the_chain_does_not_reach_the_planck_length_and_the_second_order_term_is_bounded_at_the_bounce.py:191:6  True
+    [CANNOT-FAIL][T2 LITERAL-TRUE] receipts/P10_canonical_time/P10_the_chain_does_not_reach_the_planck_length_and_the_second_order_term_is_bounded_at_the_bounce.py:194:6  True
+    [CANNOT-FAIL][T2c LITERAL-ARITHMETIC] receipts/P10_canonical_time/P10_the_chain_does_not_reach_the_planck_length_and_the_second_order_term_is_bounded_at_the_bounce.py:209:6  2 * 3 == 6 and 6 != 4
+    [CANNOT-FAIL][T2 LITERAL-TRUE] receipts/P10_canonical_time/P10_the_chain_does_not_reach_the_planck_length_and_the_second_order_term_is_bounded_at_the_bounce.py:219:6  True
+    [CANNOT-FAIL][T2 LITERAL-TRUE] receipts/P10_canonical_time/P10_the_construction_own_regulator_reaches_the_interacting_sum_and_spends_one_counterterm_more_than_the_free_case.py:222:79  True
+    [CANNOT-FAIL][T2 LITERAL-TRUE] receipts/P10_canonical_time/P10_the_covariant_quartic_is_seven_rationals_carried_by_an_identity_and_no_measurement_route_reaches_them.py:91:39  True
+    [CANNOT-FAIL][T2 LITERAL-TRUE] receipts/P10_canonical_time/P10_the_cubic_vertex_is_written_down_and_K_is_not_label_independent_so_the_algebraic_channel_is_five_powers_clear.py:562:59  True
+    [CANNOT-FAIL][T2c LITERAL-ARITHMETIC] receipts/P10_canonical_time/P10_the_frequency_shift_is_the_curvature_term_at_every_level_so_the_log_coefficient_is_fifteen_quarters.py:448:32  -11
+    [CANNOT-FAIL][T2c LITERAL-ARITHMETIC] receipts/P10_canonical_time/P10_the_frequency_shift_is_the_curvature_term_at_every_level_so_the_log_coefficient_is_fifteen_quarters.py:448:48  -9
+    [CANNOT-FAIL][T2c LITERAL-ARITHMETIC] receipts/P10_canonical_time/P10_the_frequency_shift_is_the_curvature_term_at_every_level_so_the_log_coefficient_is_fifteen_quarters.py:448:62  -8
+    [CANNOT-FAIL][T2 LITERAL-TRUE] receipts/P10_canonical_time/P10_the_frequency_shift_is_the_curvature_term_at_every_level_so_the_log_coefficient_is_fifteen_quarters.py:510:6  True
+    [CANNOT-FAIL][T2 LITERAL-TRUE] receipts/P10_canonical_time/P10_the_kinetic_cubic_vertex_is_a_split_artefact_and_the_domain_premise_fails_on_the_marginal_branch.py:606:6  True
+    [CANNOT-FAIL][T2 LITERAL-TRUE] receipts/P10_canonical_time/P10_the_kinetic_cubic_vertex_is_a_split_artefact_and_the_domain_premise_fails_on_the_marginal_branch.py:650:6  True
+    [CANNOT-FAIL][T2 LITERAL-TRUE] receipts/P10_canonical_time/P10_the_kinetic_cubic_vertex_is_a_split_artefact_and_the_domain_premise_fails_on_the_marginal_branch.py:654:6  True
+    [CANNOT-FAIL][T2 LITERAL-TRUE] receipts/P10_canonical_time/P10_the_level_cubic_vanishes_at_every_even_level_and_the_bound_needs_no_bitensor_because_completeness_gives_a_delta.py:164:83  True
+    [CANNOT-FAIL][T2 LITERAL-TRUE] receipts/P10_canonical_time/P10_the_level_cubic_vanishes_at_every_even_level_and_the_bound_needs_no_bitensor_because_completeness_gives_a_delta.py:225:42  True
+    [CANNOT-FAIL][T2 LITERAL-TRUE] receipts/P10_canonical_time/P10_the_odd_residue_is_five_levels_and_the_sign_is_mixed_because_the_vertex_carries_covariant_not_frame_derivatives.py:513:93  True
+    [CANNOT-FAIL][T2 LITERAL-TRUE] receipts/P10_canonical_time/P10_the_odd_residue_is_the_levels_below_a_crossing_linear_in_one_constant_and_a_count_bounds_terms_not_sizes.py:209:54  True
+    [CANNOT-FAIL][T2c LITERAL-ARITHMETIC] receipts/P10_canonical_time/P10_the_operator_is_second_order_in_momentum_so_the_weyl_function_is_real_analytic_and_strictly_monotone.py:255:6  1 + 0 == 1
+    [CANNOT-FAIL][T2 LITERAL-TRUE] receipts/P10_canonical_time/P10_the_operator_is_second_order_in_momentum_so_the_weyl_function_is_real_analytic_and_strictly_monotone.py:418:6  True
+    [CANNOT-FAIL][T2 LITERAL-TRUE] receipts/P10_canonical_time/P10_the_operator_is_second_order_in_momentum_so_the_weyl_function_is_real_analytic_and_strictly_monotone.py:510:6  True
+    [CANNOT-FAIL][T2 LITERAL-TRUE] receipts/P10_canonical_time/P10_the_operator_is_second_order_in_momentum_so_the_weyl_function_is_real_analytic_and_strictly_monotone.py:549:6  True
+    [CANNOT-FAIL][T2 LITERAL-TRUE] receipts/P10_canonical_time/P10_the_ratio_is_read_from_the_world_so_the_premise_is_supplied_and_both_framings_are_wrong.py:158:6  True
+    [CANNOT-FAIL][T2 LITERAL-TRUE] receipts/P10_canonical_time/P10_the_ratio_is_read_from_the_world_so_the_premise_is_supplied_and_both_framings_are_wrong.py:211:6  True
+    [CANNOT-FAIL][T2 LITERAL-TRUE] receipts/P10_canonical_time/P10_the_ratio_is_read_from_the_world_so_the_premise_is_supplied_and_both_framings_are_wrong.py:245:6  True
+    [CANNOT-FAIL][T2 LITERAL-TRUE] receipts/P10_canonical_time/P10_the_ratio_is_read_from_the_world_so_the_premise_is_supplied_and_both_framings_are_wrong.py:270:6  True
+    [CANNOT-FAIL][T2 LITERAL-TRUE] receipts/P10_canonical_time/P10_the_ratio_is_read_from_the_world_so_the_premise_is_supplied_and_both_framings_are_wrong.py:274:6  True
+    [CANNOT-FAIL][T2 LITERAL-TRUE] receipts/P10_canonical_time/P10_the_ratio_is_read_from_the_world_so_the_premise_is_supplied_and_both_framings_are_wrong.py:302:6  True
+    [CANNOT-FAIL][T2 LITERAL-TRUE] receipts/P10_canonical_time/P10_the_ratio_is_read_from_the_world_so_the_premise_is_supplied_and_both_framings_are_wrong.py:306:6  True
+    [CANNOT-FAIL][T2 LITERAL-TRUE] receipts/P10_canonical_time/P10_the_ratio_is_read_from_the_world_so_the_premise_is_supplied_and_both_framings_are_wrong.py:310:6  True
+    [CANNOT-FAIL][T2 LITERAL-TRUE] receipts/P10_canonical_time/P10_the_same_level_sum_is_orthogonality_rather_than_an_integral_and_the_completeness_bound_was_loose_by_one_power.py:235:78  True
+    [CANNOT-FAIL][T2 LITERAL-TRUE] receipts/P10_canonical_time/P10_the_second_anchor_confirms_the_shift_at_a_level_with_gradients_and_the_criterion_needs_a_weyl_function.py:434:6  True
+    [CANNOT-FAIL][T2 LITERAL-TRUE] receipts/P10_canonical_time/P10_the_second_anchor_confirms_the_shift_at_a_level_with_gradients_and_the_criterion_needs_a_weyl_function.py:476:6  True
+    [CANNOT-FAIL][T2 LITERAL-TRUE] receipts/P10_canonical_time/P10_the_second_anchor_confirms_the_shift_at_a_level_with_gradients_and_the_criterion_needs_a_weyl_function.py:480:6  True
+    [CANNOT-FAIL][T2c LITERAL-ARITHMETIC] receipts/P10_canonical_time/P10_the_second_order_sum_is_a_double_sum_and_it_diverges_at_the_sixth_power_of_the_label_cutoff.py:271:6  6 > 4 and 6 - 4 == 2
+    [CANNOT-FAIL][T2 LITERAL-TRUE] receipts/P10_canonical_time/P10_the_straddle_is_computed.py:105:6  True
+    [CANNOT-FAIL][T2 LITERAL-TRUE] receipts/P10_canonical_time/P10_the_subtraction_is_at_operator_dimension_six_pinned_three_ways_and_it_is_not_degenerate_so_the_ledger_cost_is_real.py:227:49  True
+    [CANNOT-FAIL][T2c LITERAL-ARITHMETIC] receipts/P10_canonical_time/P10_the_thermal_condition_is_helicity_blind_at_the_mode_functions_and_the_parity_odd_entry_is_not_owed.py:379:6  (-1) ** (2 * (4 - 2) + 1) == -1 and (-1) ** (2 * (4 - 2)) == 1
+    [CANNOT-FAIL][T2 LITERAL-TRUE] receipts/P10_canonical_time/P10_the_two_anchors_are_already_one_convention_and_they_agree_but_the_candidate_prescription_does_not_close.py:278:5  True
+    [CANNOT-FAIL][T1 TAUTOLOGY] receipts/P10_canonical_time/P10_the_ultraviolet_object_is_a_rank_sequence_and_the_ledger_is_at_stake_at_dimension_six_and_not_four.py:240:33  dim_of_term(2, 0) == dim_of_term(2, 0)
+    [CANNOT-FAIL][T2 LITERAL-TRUE] receipts/P10_canonical_time/P10_the_ultraviolet_object_is_a_rank_sequence_and_the_ledger_is_at_stake_at_dimension_six_and_not_four.py:261:6  True
+    [CANNOT-FAIL][T2 LITERAL-TRUE] receipts/P10_canonical_time/P10_the_ultraviolet_object_is_a_rank_sequence_and_the_ledger_is_at_stake_at_dimension_six_and_not_four.py:423:6  True
+    [CANNOT-FAIL][T2c LITERAL-ARITHMETIC] receipts/P10_canonical_time/P10_the_ultraviolet_object_is_a_rank_sequence_and_the_ledger_is_at_stake_at_dimension_six_and_not_four.py:473:6  2 >= 2 and 2 != 0
+    [CANNOT-FAIL][T2c LITERAL-ARITHMETIC] receipts/P10_canonical_time/P10_the_ultraviolet_object_is_a_rank_sequence_and_the_ledger_is_at_stake_at_dimension_six_and_not_four.py:485:6  2 * 3 - 4 == 2
+    [CANNOT-FAIL][T2 LITERAL-TRUE] receipts/P10_canonical_time/P10_the_ultraviolet_object_is_a_rank_sequence_and_the_ledger_is_at_stake_at_dimension_six_and_not_four.py:512:6  True
+    [CANNOT-FAIL][T2 LITERAL-TRUE] receipts/P10_canonical_time/P10_the_ultraviolet_object_is_a_rank_sequence_and_the_ledger_is_at_stake_at_dimension_six_and_not_four.py:519:6  True
+    [CANNOT-FAIL][T2 LITERAL-TRUE] receipts/P10_canonical_time/P10_the_ultraviolet_object_is_a_rank_sequence_and_the_ledger_is_at_stake_at_dimension_six_and_not_four.py:523:6  True
+    [CANNOT-FAIL][T2 LITERAL-TRUE] receipts/P10_canonical_time/P10_the_vertex_cost_is_the_splits_and_the_ledger_inference_is_a_non_sequitur_so_the_stake_moves.py:145:6  True
+    [CANNOT-FAIL][T2 LITERAL-TRUE] receipts/P10_canonical_time/P10_the_vertex_cost_is_the_splits_and_the_ledger_inference_is_a_non_sequitur_so_the_stake_moves.py:205:6  True
+    [CANNOT-FAIL][T2c LITERAL-ARITHMETIC] receipts/P10_canonical_time/P10_the_vertex_cost_is_the_splits_and_the_ledger_inference_is_a_non_sequitur_so_the_stake_moves.py:248:6  0 != 2
+    [CANNOT-FAIL][T2 LITERAL-TRUE] receipts/P10_canonical_time/P10_the_vertex_cost_is_the_splits_and_the_ledger_inference_is_a_non_sequitur_so_the_stake_moves.py:253:6  True
+    [CANNOT-FAIL][T2 LITERAL-TRUE] receipts/P10_canonical_time/P10_the_vertex_cost_is_the_splits_and_the_ledger_inference_is_a_non_sequitur_so_the_stake_moves.py:258:6  True
+    [CANNOT-FAIL][T2c LITERAL-ARITHMETIC] receipts/P10_canonical_time/P10_the_vertex_cost_is_the_splits_and_the_ledger_inference_is_a_non_sequitur_so_the_stake_moves.py:270:6  0 != 2
+    [CANNOT-FAIL][T2 LITERAL-TRUE] receipts/P10_canonical_time/P10_the_vertex_cost_is_the_splits_and_the_ledger_inference_is_a_non_sequitur_so_the_stake_moves.py:274:6  True
+    [CANNOT-FAIL][T2 LITERAL-TRUE] receipts/P10_canonical_time/P10_the_vertex_cost_is_the_splits_and_the_ledger_inference_is_a_non_sequitur_so_the_stake_moves.py:279:6  True
+    [CANNOT-FAIL][T2 LITERAL-TRUE] receipts/P10_canonical_time/P10_the_weighting_preserves_the_two_power_gap_and_the_chain_stops_at_a_sign_carrying_step_nobody_wrote_down.py:168:5  True
+    [CANNOT-FAIL][T2 LITERAL-TRUE] receipts/P10_canonical_time/P10_the_weighting_preserves_the_two_power_gap_and_the_chain_stops_at_a_sign_carrying_step_nobody_wrote_down.py:182:5  True
+    [CANNOT-FAIL][T2c LITERAL-ARITHMETIC] receipts/P14_matter_sector_paper/P14_quark_lepton_frontier.py:265:7  3*2*2 == 12 and 12 + 3 == 15
+    [CANNOT-FAIL][T2c LITERAL-ARITHMETIC] receipts/P14_matter_sector_paper/P14_the_count_specified.py:307:7  12 + 4 == 16 and 12 + 3 == 15
+    [CANNOT-FAIL][T4 GUARDED-TRUE] receipts/P14_matter_sector_paper/P14_the_four_spheres_chirality_anticommutes_with_the_physical_one_so_its_su2_is_not_the_weak_one.py:71:15  np.allclose(ac, 0) if i != j else True
+    [CANNOT-FAIL][T1 TAUTOLOGY] receipts/P14_matter_sector_paper/P14_the_walls_modes_are_algebraic_not_exponential_so_the_disjointness_obstruction_does_not_hold.py:286:14  2 * abs(k) == 2 * abs(k)
+    [CANNOT-FAIL][T2c LITERAL-ARITHMETIC] receipts/P15_CR_cosmology/C28_length_against_angle.py:157:10  7.0 < 9.3 < 13.1 and 7.0 < 10.8 < 13.1
+    [CANNOT-FAIL][T2 LITERAL-TRUE] receipts/P15_CR_cosmology/C59_the_control_reproduces_camb_and_the_height_defect_was_k_truncation.py:309:28  True
+    [CANNOT-FAIL][T2 LITERAL-TRUE] receipts/P15_CR_cosmology/I11_I1_one_condition_two_jobs_and_the_two_routes_are_independent.py:92:6  True
+    [CANNOT-FAIL][T2 LITERAL-TRUE] receipts/P15_CR_cosmology/I11_I1_one_condition_two_jobs_and_the_two_routes_are_independent.py:114:6  True
+    [CANNOT-FAIL][T2 LITERAL-TRUE] receipts/P15_CR_cosmology/P15_a_source_with_no_physics_reproduces_the_contrast_and_the_two_clocks_part_company_at_the_visibility.py:352:6  True
+    [CANNOT-FAIL][T2 LITERAL-TRUE] receipts/P15_CR_cosmology/P15_the_angular_label_crosses_the_lift_untouched_and_the_amplitude_does_not_because_the_lift_is_purely_imaginary_conformal_time_so_what_it_adds_is_an_envelope_with_exactly_no_phase.py:292:5  True
+    [CANNOT-FAIL][T2 LITERAL-TRUE] receipts/P15_CR_cosmology/P15_the_angular_label_crosses_the_lift_untouched_and_the_amplitude_does_not_because_the_lift_is_purely_imaginary_conformal_time_so_what_it_adds_is_an_envelope_with_exactly_no_phase.py:495:28  True
+    [CANNOT-FAIL][T3 TRIVIAL-ENV] receipts/P15_CR_cosmology/P15_the_freezing_census_is_the_vacuum_curves_own_rate_on_the_branch_the_lift_is_not_on_and_the_turnaround_figure_is_exactly_zero_there.py:223:5  'numpy' in sys.modules
+    [CANNOT-FAIL][T3 TRIVIAL-ENV] receipts/P15_CR_cosmology/P15_the_freezing_census_is_the_vacuum_curves_own_rate_on_the_branch_the_lift_is_not_on_and_the_turnaround_figure_is_exactly_zero_there.py:223:32  'sympy' in sys.modules
+    [CANNOT-FAIL][T2 LITERAL-TRUE] receipts/P15_CR_cosmology/P15_the_layer_is_R_times_S2_on_the_reassigned_chart_and_the_two_presentations_are_two_metrics_on_one_layering_related_by_the_null_reassignment.py:298:5  True
+    [CANNOT-FAIL][T2 LITERAL-TRUE] receipts/P15_CR_cosmology/P15_the_licensed_configuration_moves_neither_statistic_and_the_swing_was_read_above_where_it_converges.py:338:5  True
+    [CANNOT-FAIL][T2 LITERAL-TRUE] receipts/P15_CR_cosmology/P15_the_licensed_rebuild_leaves_all_three_rigidity_numbers_where_they_were_and_the_forbidden_one_puts_the_arm_on_the_controls_own_floor.py:196:5  True
+    [CANNOT-FAIL][T2 LITERAL-TRUE] receipts/P15_CR_cosmology/P15_the_model_difference_is_an_acoustic_contrast_difference_and_it_is_not_one_skys_luck.py:621:14  True
+    [CANNOT-FAIL][T2 LITERAL-TRUE] receipts/P15_CR_cosmology/P15_the_model_difference_is_an_acoustic_contrast_difference_and_it_is_not_one_skys_luck.py:642:10  True
+    [CANNOT-FAIL][T2 LITERAL-TRUE] receipts/P15_CR_cosmology/P15_the_progenitor_spectrum_is_defined_before_the_lift_so_the_envelope_applies_to_it_and_the_horizon_scale_on_both_lorentzian_legs_is_the_same_pure_number.py:358:5  True
+    [CANNOT-FAIL][T3 TRIVIAL-ENV] receipts/P15_CR_cosmology/P15_the_segments_conformal_length_is_the_closed_form_of_the_papers_own_integral_and_the_two_damping_rates_differ_by_the_sound_speed.py:230:5  'sympy' in sys.modules
+    [CANNOT-FAIL][T3 TRIVIAL-ENV] receipts/P15_CR_cosmology/P15_the_segments_conformal_length_is_the_closed_form_of_the_papers_own_integral_and_the_two_damping_rates_differ_by_the_sound_speed.py:230:32  'mpmath' in sys.modules
+    [CANNOT-FAIL][T2 LITERAL-TRUE] receipts/P15_CR_cosmology/P15_the_visibilitys_clock_is_the_one_the_kernel_reads_and_the_comb_votes_against_the_alternative.py:334:6  True
+    [CANNOT-FAIL][T2c LITERAL-ARITHMETIC] receipts/p0_geometric_core/I17_the_substrate_is_maximally_superintegrable.py:91:6  15 - (2 * 5 - 1) == 6
+    [CANNOT-FAIL][T2c LITERAL-ARITHMETIC] receipts/p0_geometric_core/I17_the_substrate_is_maximally_superintegrable.py:105:6  0 < 4 and 0 < 2 * 4 - 1

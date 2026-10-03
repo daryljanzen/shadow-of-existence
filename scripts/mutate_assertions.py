@@ -783,6 +783,159 @@ def quote(root, files=None):
     return out
 
 
+# ===================================================================================== CANNOT-FAIL (r7139+70.1)
+# ⛭ an assertion, or an `or`-arm that dominates it, which is true WHATEVER the measured text or value is.  The
+#   object behind cc66's `n >= 0`, B14's `... else True`, and r7137's vacuous arms.  Per assertion, static.
+#   ⚠ NOT a DEAD arm (one that can never fire): that needs the container's contents and is out of static reach.
+_NONNEG = ('len', 'abs', 'sum', 'count', 'sqrt', 'exp')
+
+
+def _verdicts(tree, fns, src):
+    """the VERDICT expression of every asserting context -- an assert's test, a check's second argument (the
+    first being its label), an `if` that guards a failure"""
+    checky = {k for k, f in fns.items() if _VERDICT.search(_seg(src, f))}
+    out = []
+    for n in ast.walk(tree):
+        if isinstance(n, ast.Assert):
+            out.append(n.test)
+        elif isinstance(n, ast.Call) and (ST._CHECKY.search(ST.fname(n) or '') or
+                                          (isinstance(n.func, ast.Name) and n.func.id in checky)):
+            # the LABEL is the string argument and the verdict the other: the corpus writes both `check(label, ok)`
+            #   and `check(ok, label)` -- the first full run read 600 labels as literal verdicts (r7139+70.1)
+            if len(n.args) >= 2:
+                lab = lambda x: isinstance(x, ast.JoinedStr) or (isinstance(x, ast.Constant) and isinstance(x.value, str))
+                if lab(n.args[0]) and not lab(n.args[1]):
+                    out.append(n.args[1])
+                elif lab(n.args[1]) and not lab(n.args[0]):
+                    out.append(n.args[0])
+                elif not lab(n.args[0]) and not lab(n.args[1]):
+                    out.append(n.args[1])
+        elif isinstance(n, ast.If):
+            body = ast.dump(ast.Module(body=n.body, type_ignores=[]))
+            if re.search(r"(?i)'[^']*(fail|bad)[^']*'", body) or any(isinstance(b, ast.Raise) for b in n.body):
+                out.append(n.test)
+    return out
+
+
+def _pure_literal(e):
+    return not any(isinstance(m, (ast.Name, ast.Call, ast.Attribute, ast.Subscript, ast.JoinedStr, ast.Starred,
+                                  ast.Lambda, ast.comprehension)) for m in ast.walk(e))
+
+
+@functools.lru_cache(maxsize=2)
+def _corpus_texts(root):
+    tex = [open(f, encoding='utf-8', errors='replace').read() for f in glob.glob(os.path.join(root, 'corpus', '*.tex'))]
+    rec = [open(f, encoding='utf-8', errors='replace').read()
+           for f in glob.glob(os.path.join(root, 'receipts', '**', '*.py'), recursive=True)]
+    return tex, rec
+
+
+def _ubiquity(root, lit, target, lower):
+    tex, rec = _corpus_texts(root)
+    pool = tex if target == 'PAPER' else rec
+    if not pool:
+        return 0.0
+    if lower:
+        lit = lit.lower()
+        return sum(lit in t.lower() for t in pool) / len(pool)
+    return sum(lit in t for t in pool) / len(pool)
+
+
+def cannot_fail(root, files=None, ubiq_root=None, thresh=0.5):
+    out = []
+    ubiq_root = ubiq_root or root
+    files = files or sorted(glob.glob(os.path.join(root, 'receipts', '**', '*.py'), recursive=True))
+    for f in files:
+        try:
+            src = open(f, encoding='utf-8', errors='replace').read()
+            tree = ast.parse(src)
+        except SyntaxError:
+            continue
+        asg, fns = _defs(tree)
+        imported = {a.name.split('.')[0] for n in ast.walk(tree) if isinstance(n, (ast.Import, ast.ImportFrom))
+                    for a in getattr(n, 'names', [])} | {n.module.split('.')[0] for n in ast.walk(tree)
+                                                          if isinstance(n, ast.ImportFrom) and n.module}
+        seen = set()
+
+        def hit(n, cls):
+            if (id(n), cls) in seen:
+                return
+            seen.add((id(n), cls))
+            out.append(dict(receipt=os.path.relpath(f, root), site=f'{n.lineno}:{n.col_offset}', cls=cls,
+                            text=' '.join(_seg(src, n).split())[:150]))
+
+        for v in _verdicts(tree, fns, src):
+            # T2: the verdict itself is a literal
+            if _pure_literal(v):
+                # only a BOOLEAN-shaped literal is a verdict: `expect(x, 27)` passes an expected value, not a verdict.
+                #   `True` is T2; arithmetic on literals is the CONSTANT class (r7119), cannot fail by construction
+                #   and counted apart, because the gate rules it a deliberate check of a quoted figure.
+                if isinstance(v, ast.Constant) and v.value is True:
+                    hit(v, 'T2 LITERAL-TRUE')
+                elif isinstance(v, (ast.Compare, ast.BoolOp, ast.UnaryOp)):
+                    try:
+                        if eval(compile(ast.Expression(v), '<v>', 'eval'), {'__builtins__': {}}):
+                            hit(v, 'T2c LITERAL-ARITHMETIC')
+                    except Exception:
+                        pass
+                continue
+            for n in ast.walk(v):
+                if isinstance(n, ast.Compare) and len(n.ops) == 1:
+                    op, a, b = n.ops[0], n.left, n.comparators[0]
+                    # T1: identical sides, or a non-negative quantity against 0 / -1
+                    if (isinstance(op, (ast.Eq, ast.LtE, ast.GtE, ast.Is)) and not _pure_literal(a)
+                            and ast.dump(a) == ast.dump(b)):
+                        hit(n, 'T1 TAUTOLOGY')
+                    for x, y, o in ((a, b, op), (b, a, {ast.LtE: ast.GtE(), ast.Lt: ast.Gt()}.get(type(op), op))):
+                        nn = (isinstance(x, ast.Call) and ST.fname(x) in _NONNEG) or (
+                            isinstance(x, ast.Name) and asg.get(x.id) and all(
+                                isinstance(w, ast.Call) and ST.fname(w) in _NONNEG for w in asg[x.id]))
+                        v0 = ST.num(y)
+                        if nn and v0 is not None and ((isinstance(o, ast.GtE) and v0 <= 0) or
+                                                      (isinstance(o, ast.Gt) and v0 < 0)):
+                            hit(n, 'T1 TAUTOLOGY')
+                    # T3: a module the file imports, tested for presence in sys.modules
+                    if (isinstance(op, ast.In) and isinstance(a, ast.Constant) and isinstance(a.value, str)
+                            and isinstance(b, ast.Attribute) and b.attr == 'modules'
+                            and a.value.split('.')[0] in imported):
+                        hit(n, 'T3 TRIVIAL-ENV')
+                if (isinstance(n, ast.Call) and ST.fname(n) == 'exists' and n.args
+                        and '__file__' in _seg(src, n.args[0]) and 'join' not in _seg(src, n.args[0])):
+                    hit(n, 'T3 TRIVIAL-ENV')
+                if isinstance(n, ast.BoolOp) and isinstance(n.op, ast.Or):
+                    if any(isinstance(x, ast.Constant) and x.value is True for x in n.values):
+                        hit(n, 'T1 TAUTOLOGY')
+                    # T5: an arm whose literal is in most files of its haystack's kind dominates the disjunction
+                    if len(n.values) > 1:
+                        for x in n.values:
+                            s = _quote_site(x, False, asg, fns, src)
+                            if s is None or not s[2]:
+                                continue
+                            lit, cont, _ = s
+                            trace = _reads(cont, asg, fns, src)
+                            if trace is None:
+                                continue
+                            target = 'PAPER' if re.search(r'\.tex\b', trace) else 'SOURCE'
+                            lower = '.lower()' in _seg(src, cont) or '.lower()' in trace
+                            u = _ubiquity(ubiq_root, lit, target, lower)
+                            if u >= thresh:
+                                hit(x, f'T5 UBIQUITOUS-ARM ({100 * u:.0f}% of {target.lower()} files)')
+                # T4: a guard whose other branch is literally True
+                if isinstance(n, ast.IfExp) and any(isinstance(x, ast.Constant) and x.value is True
+                                                    for x in (n.body, n.orelse)):
+                    hit(n, 'T4 GUARDED-TRUE')
+    out.sort(key=lambda r: (r['receipt'], tuple(int(x) for x in r['site'].split(':'))))
+    return out
+
+
+def report_cannot_fail(rows):
+    from collections import Counter
+    c = Counter(r['cls'].split(' (')[0] for r in rows)
+    print(f'\n  CANNOT-FAIL: {len(rows)} site(s) in {len({r["receipt"] for r in rows})} receipt(s)   {dict(sorted(c.items()))}')
+    for r in rows:
+        print(f'    [CANNOT-FAIL][{r["cls"]}] {r["receipt"]}:{r["site"]}  {r["text"]}')
+
+
 def report_quote(rows):
     print(f'\n  QUOTE-PIN: {len(rows)} site(s) in {len({r["receipt"] for r in rows})} receipt(s)')
     for r in rows:
@@ -954,6 +1107,7 @@ def main():
     ap.add_argument('--regrid', nargs=2, metavar=('LIST', 'OUT'))
     ap.add_argument('--prose', action='store_true')
     ap.add_argument('--quote', action='store_true')
+    ap.add_argument('--cannot-fail', action='store_true')
     ap.add_argument('--files', nargs='*', help='with --prose / --quote: only these receipt files')
     ap.add_argument('--regrid-dir', choices=('down', 'up'), default='down',
                     help='move LSTEP down by one (default) or up by one')
@@ -969,6 +1123,10 @@ def main():
     if a.prose:
         rows = prose(a.root, [os.path.abspath(f) for f in a.files] if a.files else None)
         report(rows, [], 'PROSE-PIN')
+        rc |= bool(rows)
+    if a.cannot_fail:
+        rows = cannot_fail(a.root, [os.path.abspath(f) for f in a.files] if a.files else None, ubiq_root=ROOT)
+        report_cannot_fail(rows)
         rc |= bool(rows)
     if a.quote:
         rows = quote(a.root, [os.path.abspath(f) for f in a.files] if a.files else None)
