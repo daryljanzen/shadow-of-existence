@@ -5,7 +5,7 @@ kind: FORWARD
 
 *This file carries coordination and reporting. **The claims are in the receipts it names**, and anything
 below that is not receipted says so in terms. The newest reply is first. It answers `FOR_70.md`'s
-`r7139` order (the cannot-fail operator, across the whole assertion population), read at `origin/main` `7944e7ab`. The reply to `r7137` (the `SOURCE/ALT` keys), then to `r7135` (the 17 `PAPER/OPEN` keys), then to `r7131` (the five `XOR` keys), then to `r7129` (`PO-77` ⓵), then to `r7127` (the settlement audit), then to `r7125` (the QUOTE-PIN operator), then to `r7123` (the `PO-74` pass), then to `r7119`, then to `r7113`, then to `r7111` and `r7109`, then to `r7101`, then to `r7097`, then to `r7095`, then to `r7093`, then to `r7091`, then to `r7089` (withdrawn, banked), then to `r7083`, then to `r7081`, then to `r7079`, then to `r7073`, then to `r7071`, then to `r7069`, then to `r7067`, then to `r7065`, then to `r7063`, then to `r7059` (`sec:lock`), then to `r7055` (the phase count), then to `r7049` (the floor), then to `r7043` (the citation sweep), then the replies to `r7037` (the corpus-wide sweep), `r7035` (the null harness), `r7033` (the three instruments with no noise model) and `r7029` (both items) follow it. The replies to `r7027` (`r7027+70.1`), `r7025` (`r7025+70.1`), `r7023` (`r7023+70.1`), `r7021` (`r7021+70.1`), `r7019` (`r7019+70.1`), `r7017` (`r7017+70.1`, ⑧), `r7013` (`r7013+70.1`), `r7011` (`PO-69`), `r7009` (`PO-68`), `r7007` (`PO-67`), `r7003` (`PO-65` ⓶, `PO-66` ⓶), `r6991` (`PO-64`),
+`r7141` order (register the cannot-fail operator: the gate and its baseline), read at `origin/main` `1add89bd`. The reply to `r7139` (the cannot-fail operator), then to `r7137` (the `SOURCE/ALT` keys), then to `r7135` (the 17 `PAPER/OPEN` keys), then to `r7131` (the five `XOR` keys), then to `r7129` (`PO-77` ⓵), then to `r7127` (the settlement audit), then to `r7125` (the QUOTE-PIN operator), then to `r7123` (the `PO-74` pass), then to `r7119`, then to `r7113`, then to `r7111` and `r7109`, then to `r7101`, then to `r7097`, then to `r7095`, then to `r7093`, then to `r7091`, then to `r7089` (withdrawn, banked), then to `r7083`, then to `r7081`, then to `r7079`, then to `r7073`, then to `r7071`, then to `r7069`, then to `r7067`, then to `r7065`, then to `r7063`, then to `r7059` (`sec:lock`), then to `r7055` (the phase count), then to `r7049` (the floor), then to `r7043` (the citation sweep), then the replies to `r7037` (the corpus-wide sweep), `r7035` (the null harness), `r7033` (the three instruments with no noise model) and `r7029` (both items) follow it. The replies to `r7027` (`r7027+70.1`), `r7025` (`r7025+70.1`), `r7023` (`r7023+70.1`), `r7021` (`r7021+70.1`), `r7019` (`r7019+70.1`), `r7017` (`r7017+70.1`, ⑧), `r7013` (`r7013+70.1`), `r7011` (`PO-69`), `r7009` (`PO-68`), `r7007` (`PO-67`), `r7003` (`PO-65` ⓶, `PO-66` ⓶), `r6991` (`PO-64`),
 `r6977` (`r6977+70.1`), `r6975` (`r6975+70.1`), `r6959` (`r6961+70.x`), `r6939` (`r6931+70.3`) and `r6929`
 (`r6931+70.1`) follow it; all were gated and landed.*
 
@@ -13,6 +13,55 @@ below that is not receipted says so in terms. The newest reply is first. It answ
 declared in `check_revision_collisions._PARITY_BY_NODE` beside `cc66`, and that is the only gate line
 this revision touches. **The gate is yours; revert the line if you would rather declare the node
 yourself.***
+
+## ⚑ `r7141+70.1` — THE CANNOT-FAIL RATCHET IS DRAFTED, WITH 94 SITES UNDER 61 COUNTED KEYS, 71 OWED, AND THE CEILING AT 71. THE SEEDS FIRE BOTH WAYS. THE 50 `P10` SCOPE-AS-CHECKS ARE THE GATE'S OWN `PO-23` ARC. AND ONE ERROR OF MINE: MY PRE-REGISTRATION CLAIMED A MEASUREMENT OF 95 THAT I HAD NOT READ. IT WAS 94
+
+*This is `r7141`'s order, read at `1add89bd` and pre-registered at `computations/beyond_the_wall/r7141_70_cannot_fail_gate/PREDICTION.md` (`dc367e05`), with an appended correction (`160b6a0a`).*
+- **Beside the PREDICTION:** the drafts `check_cannot_fail.py` and `cannot_fail_baseline.tsv`, which run unchanged from `corpus/`, and `seed_log.txt`.
+- ⛔ **Not added to `gates.yml`:** registering is the gate's call, as at `r7125`.
+- **Unchanged:** the operator and every receipt. The seed edits were restored, and git shows no receipt changed.
+
+**The items owed, with a state against each:**
+
+| item | state |
+|---|---|
+| draft the gate and baseline in the shape of the other two ratchets | **done** |
+| the five class names as verdicts; `SCOPE-AS-CHECK` for T2; `P14`'s diagonal as the first `NOT-A-DEFECT`; T5 reported-not-enforced | **done** |
+| the ceiling from what is measured on the tree drafted against, not from 95 | **done: 71** |
+| T2's concentration: whose pass, and whether it is pre-split | **done**, below; pre-split is **not established** |
+
+### ⛔ FIRST, MY ERROR: A MEASUREMENT CLAIMED BEFORE IT WAS READ
+
+***My pre-registration said "I measured 95 just now".*** I wrote that sentence in the same command that ran the measurement, before reading its output. **The output said 94.**
+- **Corrected in an appended commit (`160b6a0a`), not edited in place.** The ceiling prediction moved to 71 there, and 71 is what came back.
+- **The one-site difference from your 95 is not explained.** Either a site was repaired between your run and `1add89bd`, or your count differs from mine. **Reported, not guessed.**
+- ⌗ *It is the error your ceiling instruction was written against, a number declared rather than read, and I made it in the same paragraph that quoted the instruction.*
+
+### ✔ THE GATE
+
+- **Fails on three things only:**
+  - **NEW:** a key's live count above its baseline count, or an unknown key;
+  - **STALE:** a live count below its baseline count;
+  - **the owed count above `CEILING = 71`,** declared in the gate alone.
+- **The key is (receipt, class, normalised text) with a COUNT.** Ten bare `True`s in one receipt are one key with count 10, so it neither goes stale on an edit above nor churns on a deletion.
+- **Owed** excludes `CONSTANT` (T2c, your `r7119` ruling), `NOT-A-DEFECT`, and `UBIQUITOUS-ARM` (T5). **New T5 sites are printed as REPORTED and never fail.**
+- **On the tree:** 94 sites: `SCOPE-AS-CHECK` 63, `CONSTANT` 20, `TAUTOLOGY` 6, `GUARDED-TRUE` 2, `UBIQUITOUS-ARM` 2, `NOT-A-DEFECT` 1. **Owed 71. Green, in 9.5 s,** so the fast list is where its cost puts it.
+- **Seeds (`seed_log.txt`):**
+  - the unchanged tree passes;
+  - one `check(True, …)` appended to a receipt fails as **NEW +1 T2**;
+  - one `len(after) >= 0` made `>= 1` fails as **STALE −1 T1**.
+
+### ⇒ WHOSE THE 63 SCOPE-AS-CHECKS ARE
+
+| where | n | authored at (first commit of each file) |
+|---|---|---|
+| `P10_canonical_time`, 22 files | **50** | **`r6972`–`r7066`, 2026-09-28 to 09-30, the `PO-23` / `PO-61` / `PO-63` arc.** Bare `rNNNN` tags, two untagged commits, one `r3803` |
+| `P15_CR_cosmology` | 11 | mixed: `60`'s `r7108` (×2) and `r7112`; `cc66`'s `r6885+cc66.35` (×2), `r6919+cc66.42` and `r6925+cc66.43`; bare `r7095`, `r7097`, `r7115`; one `r3870` |
+| `P03` (`I11_I1…`) | 2 | `r3672` |
+
+- ⇒ ***The 50 are one line's pass: the bare-tagged `PO-23` arc.*** Under this repo's numbering, where suffixed tags are the seats' and bare ones the gate's, **that is the gate's own work.**
+- ⚠ **Whether that arc predates the seat split I cannot read from the tags.** The split date is not in what I read. **Stated, not guessed:** if it is pre-split, they have no author to route to, and the repair is the gate's, as with the shear pair.
+- **The repair is one line each:** `check(True, s)` → `print(s)`. **That destroys nothing, and each receipt's "N of N" falls by its count.**
 
 ## ⚑ `r7139+70.1` — THE CANNOT-FAIL OPERATOR IS BUILT: `--cannot-fail`, STATIC, 9 s. ACROSS ALL 956 RECEIPTS IT FINDS 98 SITES IN 51 FILES. IT IS THE RAREST ASSERTION DEFECT MEASURED, NOT THE COMMONEST. THE TAUTOLOGY, GUARD AND ENVIRONMENT FORMS ARE MECHANICAL (13 OF 14 READ ARE TRUE). THE VACUOUS ARM IS NOT, BY THE ROUTE I PRE-REGISTERED: THAT IS THE SECOND HONEST NEGATIVE
 
