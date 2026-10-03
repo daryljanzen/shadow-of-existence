@@ -78,6 +78,10 @@ class Rw(ast.NodeTransformer):
             t = b
             n = ast.Call(func=ast.Name('__rb_n', ast.Load()), args=[t], keywords=[])
             a.args[0] = _wrap(a.args[0], sid, 'HALF-UNIT', n)
+        elif isinstance(a, ast.Name):
+            # r7155+70.1 HALF-UNIT-LABELLED: `_d < T` with `_d = abs(E - C)` -- the name IS the distance |d|
+            n = ast.Call(func=ast.Name('__rb_n', ast.Load()), args=[b], keywords=[])
+            node.left = _wrap(a, sid, 'HALF-UNIT', n)
         return node
 
 

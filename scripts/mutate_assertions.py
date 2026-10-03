@@ -1161,6 +1161,48 @@ def rounding_boundary(root, files=None):
                                     lits.append(len(txt.split('.')[1]) if '.' in txt else 0)
                         if k is not None and k in lits:
                             out.append(dict(site, form='HALF-UNIT', n=str(k)))
+        # ⛭ r7155+70.1: HALF-UNIT-LABELLED -- the band's centre is a NAME, so its decimals cannot come from a literal;
+        #   they come from the receipt's OWN LABEL when that label prints the centre with `.{n}f` and the tolerance
+        #   is half a unit in that same n-th decimal.  Exact; no threshold.  (r7153's own repair is the case:
+        #   `_d = abs(got[l] - PAPER[l])` ... `check(f"... {PAPER[l]:.3f} ...", _d < 5e-4)`.)
+        for c in ast.walk(tree):
+            if not (isinstance(c, ast.Call) and len(c.args) >= 2):
+                continue
+            lab = [x for x in c.args[:2] if isinstance(x, ast.JoinedStr)]
+            ver = [x for x in c.args[:2] if isinstance(x, ast.Compare)]
+            if len(lab) != 1 or len(ver) != 1:
+                continue
+            lab, n = lab[0], ver[0]
+            rel = os.path.relpath(f, root)
+            if (len(n.ops) != 1 or not isinstance(n.ops[0], (ast.Lt, ast.LtE))
+                    or any(r['receipt'] == rel and r['site'] == f'{n.lineno}:{n.col_offset}' for r in out)):
+                continue                       # skip only a site ALREADY REPORTED (the first draft skipped every
+                                               #   Compare the verdict pass had merely visited, and found nothing)
+            try:
+                k = _half_unit(eval(compile(ast.Expression(n.comparators[0]), '<t>', 'eval'), {'__builtins__': {}}))
+            except Exception:
+                continue
+            if k is None:
+                continue
+            x = n.left
+            if isinstance(x, ast.Name) and len(_asg.get(x.id, [])) == 1:
+                x = _asg[x.id][0]
+            if not (isinstance(x, ast.Call) and ST.fname(x) == 'abs' and len(x.args) == 1
+                    and isinstance(x.args[0], ast.BinOp) and isinstance(x.args[0].op, ast.Sub)):
+                continue
+            sides = [x.args[0].left, x.args[0].right]
+            if any(isinstance(y, ast.Constant) for y in sides):
+                continue                       # a literal centre is r7153's HALF-UNIT, already counted
+            fmts = {}
+            for fv in lab.values:
+                if isinstance(fv, ast.FormattedValue) and isinstance(fv.format_spec, ast.JoinedStr):
+                    spec = ''.join(v.value for v in fv.format_spec.values if isinstance(v, ast.Constant))
+                    m = re.fullmatch(r'[<>^]?\d*\.(\d+)f', spec)
+                    if m:
+                        fmts.setdefault(_seg(src, fv.value), set()).add(int(m.group(1)))
+            if any(k in fmts.get(_seg(src, y), ()) for y in sides):
+                out.append(dict(receipt=os.path.relpath(f, root), site=f'{n.lineno}:{n.col_offset}',
+                                text=' '.join((_seg(src, n) or '').split())[:140], form='HALF-UNIT-LABELLED', n=str(k)))
     out.sort(key=lambda r: (r['receipt'], tuple(int(x) for x in r['site'].split(':'))))
     return out
 

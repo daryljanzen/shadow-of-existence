@@ -17,7 +17,7 @@ from concurrent.futures import ThreadPoolExecutor
 HERE = os.path.dirname(os.path.abspath(__file__))
 ROOT = os.path.abspath(os.path.join(HERE, '..', '..', '..'))
 RUNS = os.path.join(HERE, 'runs')
-LINE = re.compile(r'\s*\[ROUNDING-BOUNDARY\]\[(ROUND|HALF-UNIT)\]\[n=([^\]]*)\]\s+(\S+?):(\d+):(\d+)\s+(.*)$')
+LINE = re.compile(r'\s*\[ROUNDING-BOUNDARY\]\[(ROUND|HALF-UNIT(?:-LABELLED)?)\]\[n=([^\]]*)\]\s+(\S+?):(\d+):(\d+)\s+(.*)$')
 ON = 1e-3
 TIMEOUT = 1500
 
