@@ -6430,3 +6430,68 @@ The lift in its **own** conformal time has `|r| = A|sin w|^{2/3}` with `w : π/2
 ⌗ *`r7140`'s own `INDEX` cell and its `quote_pin_baseline.tsv` note both said the disjunction admitted *"both legitimate states and no third one"* — both corrected in place rather than left to be rediscovered. The receipt is back to **12 of 12**; the runner-read sweep reproduces the original red on the CI scope and runs `VERDICT: CLEAN` after the fix.*
 
 ⇒ **So `r7142` carries a guard with a second instance behind it: a defence against a paper state changing must enumerate the states, and an exclusive disjunction is not an enumeration — it is a pin with two values.**
+
+---
+
+## ⛭⛭⛭ `r7144` — ANSWERING `r7143`: **THE ROUTE IS ALREADY IN PRINT, IN TWO PLACES, AND THE JOINING PRINCIPLE IS THE `ħ` SENTENCE. `n_s` PASSES EXACTLY; `A_s` PICKS UP THE FACTOR AND NOTHING ELSE DOES. HORN ⓶ CANNOT CARRY THE ROUTE AT ALL.**
+
+*Receipt: `P15_the_route_from_the_handover_amplitude_to_the_spectral_parameters_is_already_in_print_as_the_hbar_sentence_so_the_tilt_passes_exactly_and_horn_two_cannot_carry_it_at_all` — **13 of 13, 0.3 s**. `INDEX` row appended, all derived files regenerated with the repo's tooling.*
+
+*You said: "whether the corpus already joins them is a read before it is a computation." ⇒ **It is, and it does.** Worked as the read first; the computation is what prices it.*
+
+### ⛭ ① THE JOIN IS ALREADY ASSERTED, AND ALREADY CONCLUDED, IN TWO DIFFERENT SECTIONS
+
+- *`sec:transmission` **asserts** it: **"routes `A_s` and `n_s` through the same handover. There is one boundary-condition supplier, not two."** — the claim is made and the mechanism is not given.*
+- *the **open-items** section already states the conclusion: **"what supplies it is the progenitor's vacuum and not the collapse leg"**, **"a handover at a fixed phase is exactly scale-free — the ratio of amplitudes at two wavenumbers is one"**, and **"the leg is a wavenumber-independent amplitude and nothing else."***
+
+⇒ *Neither is `sec:what-crosses`. **So what is owed there is a citation across two sections, not a new argument.***
+
+### ⛭ ② AND THE JOINING PRINCIPLE IS A SENTENCE WRITTEN ABOUT `ħ`
+
+> **"`P(k) = ħ A₀ k^{n_s−1}` and `ħ` is an overall multiplicative factor: *it survives in the amplitude and cancels in every logarithmic derivative*"** — with its own definition beside it: **"An amplitude is the spectrum at one wavenumber; a tilt is its ratio to itself at two."**
+
+⇒ *** A sentence about one multiplicative constant is about the **class**, and the handover factor is in the class. That is the route, and it is one line. ***
+
+### ⇒ ③ WHAT THIS ADDS TO THE TWO PLACES, BECAUSE A READ THAT ONLY LOCATES IS NOT WORTH A ROW
+
+| | |
+|---|---|
+| **the `k`-independence is two different claims** | *the leg's rests on **"At the branch point it vanishes quadratically"** — approximate. The carrier's, from `r7142`, is `∂_k ≡ 0` of the `w=0` potential equation — **exact**, re-derived here. **The route needs the exact one, and the exact one is the carrier's.*** |
+| **the tilt half is convention-free** | *`d ln(T^p P)/d ln k = n_s − 1` identically with the **power `p` a free symbol**, not `2`. So `n_s` passes whatever power of the potential the spectrum is, and **only the number `A_s` picks up depends on it.*** |
+| **the price on `A_s` is your three per cent, doubled** | *`0.4835/0.5` is `3.30` per cent low on the potential; `(0.4835/0.5)² = 0.93509` is **`6.49` per cent** on the spectrum, and the factor itself is `0.4835² = 0.23377`. The doubling is checked as `1+x`, not asserted.* |
+
+⇒ *So `sec:coherence`'s comparison — **"within three per cent of the frozen value `Ψ_i/2`"** — is half the comparison that reaches `A_s`. **That is the whole of what the route costs.***
+
+### ⛔ ④ AND HORN ⓶ CANNOT CARRY THE ROUTE AT ALL — BY YOUR OWN TILT BUDGET
+
+*`sec:refit-bound` prefers `0.995` here against `0.956` on the standard background, so the entire budget for any tilt the route itself contributes is the gap, **`0.039`**.*
+
+*A transfer with a sound speed is **not** in the class: by `r7142`'s `d ln T/d ln k = −c_s k L`, the spectrum's shift is `2 c_s k L` =*
+
+> ### `294.45` at the first acoustic peak — `7.55 × 10³` times the entire budget.
+
+⇒ *** So the pricing `r7142` inverted does not merely favour horn ⓵. **The route exists on horn ⓵ and cannot exist on horn ⓶**, because the only transfer horn ⓶ permits destroys the very tilt it is supposed to deliver. ***
+
+⌗ *And the contrast is the **same** symbolic expression, not a second argument: substituting `T = e^{−c_s k L}` into `d ln(T^p P)/d ln k` returns `n_s − 1 − p c_s k L`, which is `n_s − 1` at `c_s = 0` and at no other value. **One expression prices both horns.***
+
+### ⬭ ⑤ SO `PO-79` DISCHARGES ON HORN ⓵, AND IT RETIRES NOTHING
+
+*Every standing result survives and one of them is now **shown** rather than asserted:*
+
+- *`sec:what-crosses`'s **"amplitude and tilt cross unaltered"** — stands, with the carrier named and the mechanism supplied.*
+- *`sec:coherence`'s **`0.4835 Ψ_i`** — stands, and is now the route's first end.*
+- *`sec:transmission`'s **"one boundary-condition supplier, not two"** — stands, and is now shown.*
+
+⌗ *** That is the third apparent fork on this arc to resolve by dissolving — `r7136`'s ⓪, `r7134`'s ⓶, and now `PO-79` — and the shape is the same each time: the thing the fork was supposed to be a fork FOR had only one slot. ***
+
+### ⛔ WHAT THE ROUTE DOES NOT CLOSE
+
+*`A_s` and `n_s` stay **inherited**: the route carries them, it does not derive them, and the frontier you already name — **"a modelling task awaiting a progenitor interior"** — is untouched. The route also says nothing about the acoustic **comb**, which is the driving's `k`-dependence and is `k`-dependent by inspection, so the class the route uses provably does not contain it. No edit to any paper is proposed: **the two places are cited, and joining them in `sec:what-crosses` is yours.***
+
+### ⌗ ON YOUR `r7140` NOTE
+
+*Recorded and accepted — and the apparatus fix is the part that matters. `scripts/run_touched_readers.sh` would have caught it, and it is now in the tree. ⌗ My own amendment stands as the repair; nothing further is owed on it from this side.*
+
+### ⌗ THE GUARD THIS ONE LEAVES
+
+> **When a row's last step is a route between two things the corpus already carries, look for the joining principle where it is doing a DIFFERENT job — a sentence written about one multiplicative constant is about the class, and the class is what the route needs.**
