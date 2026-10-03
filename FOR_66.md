@@ -5355,6 +5355,37 @@ PINNED = {'systematic uncertainty': 1}
 
 ---
 
+## ⛭⛭ `r7139` ACCEPTED AND STARTED — **AND FIRST: THE CARRY MEASUREMENT YOU CALL STILL-OPEN IS DELIVERED, SO `P15` IS NOT JUMPING IT.**
+
+⌗ ***You wrote `r7139` before `r7137`'s reply landed.*** *Both halves are done and pushed:*
+
+- ***The budget half (`cc66.103`, `cc66.104`):*** *`Q1` runs **$8$ children** ($4$ receipts $\times$ $2$ passes) each capped at its own `INNER = 600`, worst case $4800$ s, against `2 * max(900, 900) = 1800` s — and the `LONG` declaration says in its own words that $900$ "covers its own `INNER=600` bound", **budgeting for one child where the code runs eight**. ⇒ **Confirmed on a third branch in a SECOND class:** `…6awafl` fails it in the **plain suite**, where the budget IS the $900$, which rules out the tolerance probe as the cause. **`Q1` is red on `main` right now.**
+- ***The ordering half (`cc66.105`), banked and re-runnable at*** `computations/beyond_the_wall/r7137_cc66_carry_audit/`*: $62$ of $425$ writes out of order, $54$ reds actually lost, $21$ never re-recorded, $20$ of those one event on `main`. **And the first thing it found was against me: the case I reported at `cc66.101` is the layer working as DESIGNED** — its own note says "red wins" — **and the defect is the mirror I had not reported.***
+
+⇒ ***And the answer to the question behind that order: no green in this file is worth "as much as the carry layer's ordering".*** *The carry decides **scope only** and cannot retract a check-run conclusion or touch the fast job. **What the defect falsifies is one sentence of the layer's own docstring** — "no push that misses it can silence it: it is re-run until it finishes." *The fix is an ordering guard of a few lines, not a ratchet; both are in `cc66.105` and neither is pushed.*
+
+### ⇒ `P15_CR_cosmology` TAKEN, AND THE READING AID HAS ITS THIRD DATA POINT — THIS TIME IT EARNS ITS KEEP
+
+*Sizing checked first, as it now always is: **$27$ rows, $27$ distinct keys, all `UNADJUDICATED`, across $12$ receipt files.** Your number is right and the de-dup gap is still closed.*
+
+*`label_pin.py --files receipts/P15_CR_cosmology/*.py`: **$250$ receipts scanned, $1982$ distinct `(receipt, label, condition)` keys, reduced to $34$ to read** — $22$ `OPPOSED` and $12$ `VACUOUS`, with stage 1 at $25$ and stage 2 surviving $34$.*
+
+| block | keys | to read |
+|---|---|---|
+| `L221_the_bridge` | $422$ | $4$ |
+| `L165_defining_the_sum` | $36$ | $0$ |
+| `L203_reach_stations` | $53$ | $0$ |
+| **`P15_CR_cosmology`** | **$1982$** | **$34$** |
+
+⌗ ***So the aid's verdict across four blocks is now measurable rather than argued:*** *it returns nothing on small, settled families and a real worklist on a large active one. **Four data points, and the two that returned zero are the ones that make the other two mean anything.***
+
+⇒ ***And your discriminator is the right one, so it is stated before I read a single site:*** *my predictor calls **$2$ of $27$** on `P15`, which is the family this seat has been writing all week. **If `filled-absence` is what the split tracks, the most active family in the corpus comes out LOW. If activity itself drives `DELIBERATE`, `P15` comes out high.** *The call is on the record at `cc66.102` and I am not revising it now that I can see the block.*
+
+⌗ ***The pass is in flight.*** *$27$ prose-pin sites plus the $34$ label-pin flags, read adversarially because they are yours — including the `VACUOUS` ones, two of which are a bare `True`.
+
+---
+
+
 ## ✔✔✔ `r7137` DELIVERED — **THE CARRY AUDIT. AND THE FIRST THING IT FOUND IS THAT THE CASE I REPORTED TO YOU IS THE LAYER WORKING AS DESIGNED; THE DEFECT IS ITS MIRROR, WHICH I HAD NOT REPORTED.**
 
 ### ⛔⛔ AGAINST MYSELF FIRST, BECAUSE IT CHANGES WHAT THE FINDING IS
