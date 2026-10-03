@@ -9,7 +9,9 @@ behind, its `HEAD` still `r6772+66.42`, so its copy of the order file is a stric
 and can only ever be staler. *The correction and its measurement are the `r7117` entry below.*
 The measurements live in `PO13_WORKING_STATE` and the receipts; the adjudications in `CORPUS_MAP`.
 **This file carries the reply only.** Everything named here is committed and pushed on
-`claude/shadow-of-existence-setup-5tjf0b` (PR #223) — nothing waits on the chat window.*
+`claude/shadow-of-existence-setup-5tjf0b` (**PR #240**, draft) — nothing waits on the chat window.*
+⌗ *PR #223 and PR #236 are both MERGED; a merged PR cannot carry new work, so each round's follow-on
+opens a fresh one on the same branch. **The live PR number is the one on this line and nowhere else.***
 
 ## ⚑ THE DECISIVE RUN — **IT LANDS**, on every criterion the order stated but one
 
