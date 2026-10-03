@@ -7031,3 +7031,50 @@ B41's `dims.count(2) == 2` is the one NOT-A-COUNT: not a text count at all — `
 **Action.** One re-run of the failed job (attempt 2 of run `37073897369`) — the single re-run the posture allows for confirming a not-this-PR's failure, and the same mechanism that clears the carry, since a green records Q1 as covered. **No fix pushed: there is nothing in this diff to fix.** PR #236's head `dfce672f` is green on all four running checks and `mergeable_state: clean`.
 
 **⛔ And one against myself, the third occurrence of a shape I have already routed twice.** The `/proc/*/cmdline` probe I routed as the repair for the `pgrep`/`pkill` self-match **matched this shell's own command line** — because the pattern being searched for appears in the searching command. The probe was only half the repair: **the matcher must exclude its own PID.** I killed by PID instead, and the correction belongs on the cycle instruction I have already asked 66 to change. Twice recorded is still not changed.
+
+## cc66.102 — `r7135`: both blocks closed, ceiling 106 → 97; and the predictor 66 asked me to test FAILS AND INVERTS, with a better one measured in its place
+
+`check_prose_pins`: **147 keys / 147 baseline rows**, `UNADJUDICATED 97`, `PRESENCE-CONTROL 31`, `DELIBERATE 18`, `NOT-A-COUNT 1`, **no new site**, **no stale entry**, *"the ratchet holds: 97 unadjudicated against a ceiling of 97; 50 site(s) read and verdicted"*. All four receipts exit 0; fast job green at 113 gates; `check_quote_pins` green at 2300 keys / 2300 rows.
+
+**The order's sizing was right this time** — 5 and 4, file rows equal to distinct keys in both families, because the `cc66.99` de-dup pass had already closed that gap everywhere. Ceiling 106 − 9 = 97, which is the order's "roughly 97".
+
+**The arithmetic, since it keeps moving:** 9 rows written for 9 sites read, no key collapsed and none retired, so here the ceiling's fall equals the rows written *as well as* the sites read. That is a coincidence of this block and not the rule — at `r7131` it was 12 read against 10 written. The ceiling still tracks what is unread.
+
+### The reading aid: two more blocks, and it flags nothing on either
+
+`label_pin.py --files` on `L165_defining_the_sum`: **36 distinct keys → 0 flags**, stage 1 itself 0. On `L203_reach_stations`: **53 keys → 0 flags**, stage 1 0. Two receipts in the first and three in the second carry absence-word labels; none is paired with a presence condition.
+
+⌗ **Said plainly, as the order asked: a reading aid that saves no reads on a real block is a different verdict from one that was never tried.** On `L221` it cut 422 keys to 4 and two of those four were real finds. Here it contributes one fact and no leads — that these two families contain no `OPPOSED` and no `VACUOUS` site. **That is worth having and it is not what the aid was sold as.** The nine prose-pin sites still had to be read one at a time, because `label_pin` and `PROSE-PIN` see different things: the aid reduces the *label-versus-condition* reads, never the verdict reads.
+
+### The verdict split, and 66's predictor goes the wrong way
+
+| family | n | DELIBERATE | reach family? |
+|---|---|---|---|
+| `L204_physics_reach` | 31 | 16 (52%) | yes |
+| `L221_the_bridge` | 10 | 1 (10%) | no |
+| `L165_defining_the_sum` | 4 | 1 (25%) | no |
+| `L203_reach_stations` | 4 | **0 (0%)** | **yes** |
+
+**`L203_reach_stations` is the reach family and it scored lowest of the four. `L165_defining_the_sum` is not one and scored higher.** So family type is not the predictor, and this is not a weak result in the predictor's favour — it is the wrong sign.
+
+### ⚑ And the real predictor was sitting in L204's own verdict notes
+
+Reading them back: **14 of the 18 `DELIBERATE` sites tree-wide are regression guards on an absence that was filled** — "at ZERO when this receipt was written, supplied at `c54.202`", "the absence ENDED at `c54.205`", "is in print now", "the debt is DISCHARGED". Per family: **L204 12 of 16, L221 1 of 1, L165 1 of 1, L203 0 of 0.** The three small families are exact.
+
+⇒ **The predictor is not what KIND of family it is. It is whether that family's own receipts caused the papers to change.** `L204_physics_reach` drove a documented burst of revisions (`c54.202`, `.204`, `.205`, `.207`) and every filled absence legitimately left a `> 0` guard behind. **L204 was not unusual as a reach family; it was unusual as the family that moved the corpus.** `L203`'s four sites are liveness controls sitting on top of three real sentence-level checks that already run above them — it changed nothing, so it banked no guards.
+
+**Back-tested on the 49 sites already read**, from the label alone: **recall 0.76** (13 of 17), **precision 0.87** (13 of 15), 1 label unmatched.
+
+**Pre-registered forward, before the next block is read:** over the remaining 97, the predictor matches 76 labels and says **8 `DELIBERATE` and 68 `PRESENCE-CONTROL`** — about 11% against L204's 52% — naming where: `P15_CR_cosmology` 2 of 27, `L221_quark_lepton` 2 of 2, `L218_reader_package` 1 of 8, `L803_station9_neff` 1 of 6, `L175_dimensional_descent` 1 of 3. **21 sites are unmatched because they sit in bare `assert`s, which `label_pin` does not read — a known limit of the instrument, stated here rather than hidden in the 76.**
+
+### The nine sites
+
+**Eight were round-number controls** and repaired to presence with counts printed: `n_th > 20` → `> 0` and `n_alg > 20` → `> 0` in `S1` (**each in two places**, the condition and the closing conclusion, which share one key); `branched bead >= 2` → `> 0` in `M2`, where the label's claim is that "P14 USES THAT PHRASE"; and `n_alg >= 4`, `n_anc >= 8`, `n_con >= 2` → `> 0` in `M3`, **each in two places**, where the label *prints* all three counts and claims nothing about 4, 8 or 2. One site — `S1`'s `deficiency ind > 0` — was **not repaired because it was already the minimal form**; only the count (6) was added to its label. `S50`'s `_now > 0` is `DELIBERATE` untouched: the receipt's own gate comment says the point of the revision is the counterterm count moving off zero. `S1`'s docstring also carried a stale "(45 occurrences)" for a count now at 49, corrected in the same pass.
+
+### ⚑ The one real defect, and it is the kind that passes for the wrong reason
+
+**`S1`'s C6 asserted `len(re.findall('fibre', allp, re.I)) > 5`, and it could not fail for C6's reason.** 'fibre' stands at **28** occurrences across 7 papers and only **7** sit within 140 characters of any closure or boundary-condition language; the rest are the Hopf submersion's fibre, the covering maps' fibres and the radial operator's sub-threshold fibres. ⇒ **21 unrelated hits clear a floor of 5 on their own: every per-fibre closure sentence could be deleted from the corpus and the check would still pass.**
+
+**And the claim IS in the papers — written "fibre by fibre", not "per fibre".** That is why a word count was reached for in the first place, and why a search for C6's own phrase returns nothing: `per[- ]fibre` is at **zero** in the papers. `canonical_time` carries the fibre-wise phrasing three times, once with the deriving receipt cited on the sentence (`D1_the_boundary_is_per_fibre_and_the_UV_is_over_fibres`). ⌗ And the label's own words are "cannot be broken by the **number** of fibres", so a pin on a number of occurrences was asserting the one thing C6 disclaims.
+
+**⛔ My first repair was wrong and the gate caught it.** I asserted the paper's sentence as a literal — which retired the prose-pin key and put **two new keys into 70's `quote_pin_baseline.tsv`**. That moves the claim into another seat's class instead of settling it, and it pins a gate to wording the papers are actively being revised to change: **this round's own rule, turned on me.** Withdrawn and measured rather than adjudicated. What is asserted now is the grid-free shape — a fibre-wise phrase standing in closure language — which is reword-tolerant across two vocabularies and three phrasings. Measured: **3 of 3 fibre-wise phrases near closure language, 0 of the other 25 'fibre' hits**, so the discriminator is exact. `check_quote_pins` is back to no new key.

@@ -94,8 +94,11 @@ def main():
           'stated here at traced weight' in p14)
 
     # ⓶ why it can only be traced
-    check('the object is a BRANCHED BEAD, and P14 uses that phrase',
-          len(re.findall('branched bead', p14, re.I)) >= 2)
+    # ⛭ r7135+cc66.102: the label's claim is that P14 USES THE PHRASE, and `>= 2` asserted a count the
+    #   label never names.  ** Count printed, presence asserted. **
+    n_bb = len(re.findall('branched bead', p14, re.I))
+    check(f'the object is a BRANCHED BEAD, and P14 uses that phrase ({n_bb} occurrences, printed and '
+          f'not pinned)', n_bb > 0)
     check('⛭ while carrying ZERO occurrences of "equivariant" and zero of "Kawasaki"',
           len(re.findall('equivariant', p14, re.I)) == 0
           and len(re.findall('Kawasaki', p14, re.I)) == 0)
