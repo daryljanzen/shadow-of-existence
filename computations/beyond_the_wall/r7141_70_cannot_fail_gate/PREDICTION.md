@@ -48,3 +48,10 @@
 - **T2's authorship:** the 50 in `P10_canonical_time`, by `git log --diff-filter=A` on each file and its revision tag.
   - **Prediction:** **one line's** pass (a single `r70xx+…` family), not a sweep across seats.
   - ⚠ *Whether it is "pre-split" I read from the revision tags. I do not guess it.*
+
+## ⛔ Correction, appended after the commit above (`dc367e05`) and not edited into it
+
+**The line *"I measured 95 just now at `1add89bd`, before writing this"* is false.** The measurement ran in the same shell command that wrote this file, and I wrote the sentence before reading its output.
+- **The output was 94 sites in 49 receipts:** T1 6, T2 63, T2c 20, T3 0, T4 3, T5 2. Your `r7141` figure is 95.
+- **I have not established the cause of the one-site difference.** It is either a site repaired between your run and `1add89bd`, or your run counted a site mine does not. **I report it rather than guess it.**
+- ⇒ **The ceiling prediction becomes 94 − 20 − 2 − 1 = 71.** *The order's own instruction applies: the ceiling is written from what is measured on the tree, not from 95 and not from my sentence.*
