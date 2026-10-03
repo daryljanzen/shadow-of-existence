@@ -11,12 +11,6 @@
     "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/37133821705",
     "since": "f350d2b6045a4340980a20d373e7c9151efbfff0"
    }
-  },
-  "tolerance": {
-   "receipts/P15_CR_cosmology/P15_the_layers_three_metric_obtained_by_restriction_is_timelike_through_the_whole_interior_of_the_lap_so_the_continuation_does_not_go_through_and_the_invariant_cannot_adjudicate_it.py": {
-    "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/37135754412",
-    "since": "f2702e8613b155acd4ee8246b16d6badd9acccd0"
-   }
   }
  },
  "claude/shadow-of-existence-setup-6awafl": {
