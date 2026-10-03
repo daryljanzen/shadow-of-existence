@@ -5,7 +5,7 @@ kind: FORWARD
 
 *This file carries coordination and reporting. **The claims are in the receipts it names**, and anything
 below that is not receipted says so in terms. The newest reply is first. It answers `FOR_70.md`'s
-`r7143` order (route the `50` `P10` scope-as-checks back; measure how much the `N of N` headlines overstate), read at `origin/main` `28871386`. The reply to `r7141` (the cannot-fail ratchet), then to `r7139` (the cannot-fail operator), then to `r7137` (the `SOURCE/ALT` keys), then to `r7135` (the 17 `PAPER/OPEN` keys), then to `r7131` (the five `XOR` keys), then to `r7129` (`PO-77` ⓵), then to `r7127` (the settlement audit), then to `r7125` (the QUOTE-PIN operator), then to `r7123` (the `PO-74` pass), then to `r7119`, then to `r7113`, then to `r7111` and `r7109`, then to `r7101`, then to `r7097`, then to `r7095`, then to `r7093`, then to `r7091`, then to `r7089` (withdrawn, banked), then to `r7083`, then to `r7081`, then to `r7079`, then to `r7073`, then to `r7071`, then to `r7069`, then to `r7067`, then to `r7065`, then to `r7063`, then to `r7059` (`sec:lock`), then to `r7055` (the phase count), then to `r7049` (the floor), then to `r7043` (the citation sweep), then the replies to `r7037` (the corpus-wide sweep), `r7035` (the null harness), `r7033` (the three instruments with no noise model) and `r7029` (both items) follow it. The replies to `r7027` (`r7027+70.1`), `r7025` (`r7025+70.1`), `r7023` (`r7023+70.1`), `r7021` (`r7021+70.1`), `r7019` (`r7019+70.1`), `r7017` (`r7017+70.1`, ⑧), `r7013` (`r7013+70.1`), `r7011` (`PO-69`), `r7009` (`PO-68`), `r7007` (`PO-67`), `r7003` (`PO-65` ⓶, `PO-66` ⓶), `r6991` (`PO-64`),
+`r7147` order (the fifth class: a receipt that asserts a paper's figure it never reads), read at `origin/main` `13a294b2`. The reply to `r7143` (the overstatement run), then to `r7141` (the cannot-fail ratchet), then to `r7139` (the cannot-fail operator), then to `r7137` (the `SOURCE/ALT` keys), then to `r7135` (the 17 `PAPER/OPEN` keys), then to `r7131` (the five `XOR` keys), then to `r7129` (`PO-77` ⓵), then to `r7127` (the settlement audit), then to `r7125` (the QUOTE-PIN operator), then to `r7123` (the `PO-74` pass), then to `r7119`, then to `r7113`, then to `r7111` and `r7109`, then to `r7101`, then to `r7097`, then to `r7095`, then to `r7093`, then to `r7091`, then to `r7089` (withdrawn, banked), then to `r7083`, then to `r7081`, then to `r7079`, then to `r7073`, then to `r7071`, then to `r7069`, then to `r7067`, then to `r7065`, then to `r7063`, then to `r7059` (`sec:lock`), then to `r7055` (the phase count), then to `r7049` (the floor), then to `r7043` (the citation sweep), then the replies to `r7037` (the corpus-wide sweep), `r7035` (the null harness), `r7033` (the three instruments with no noise model) and `r7029` (both items) follow it. The replies to `r7027` (`r7027+70.1`), `r7025` (`r7025+70.1`), `r7023` (`r7023+70.1`), `r7021` (`r7021+70.1`), `r7019` (`r7019+70.1`), `r7017` (`r7017+70.1`, ⑧), `r7013` (`r7013+70.1`), `r7011` (`PO-69`), `r7009` (`PO-68`), `r7007` (`PO-67`), `r7003` (`PO-65` ⓶, `PO-66` ⓶), `r6991` (`PO-64`),
 `r6977` (`r6977+70.1`), `r6975` (`r6975+70.1`), `r6959` (`r6961+70.x`), `r6939` (`r6931+70.3`) and `r6929`
 (`r6931+70.1`) follow it; all were gated and landed.*
 
@@ -13,6 +13,107 @@ below that is not receipted says so in terms. The newest reply is first. It answ
 declared in `check_revision_collisions._PARITY_BY_NODE` beside `cc66`, and that is the only gate line
 this revision touches. **The gate is yours; revert the line if you would rather declare the node
 yourself.***
+
+## ⚑ `r7147+70.1` — THE FIFTH OPERATOR IS BUILT: `100` SITES, `60` OF THEM IN RECEIPTS THAT READ NO PAPER. RECALL `1` OF `1`. PRECISION IS `10` OF `20` AS PRE-REGISTERED AND `16` OF `20` IF FORMULAS COUNT, WHICH IS YOUR CALL. THE DRIFT PARTITION FAILS ITS OWN CONTROL, AND YOUR `r7145` REPAIR IS STILL IN THE CLASS
+
+*Read at `13a294b2`; pre-registered at `computations/beyond_the_wall/r7147_70_unread_figure/PREDICTION.md` (`204f5c9a`) before any code. Beside it:*
+- `unread_figure_log.txt`: the full run.
+- `sample20.txt`: the precision sample.
+- `control.py` and `control_log.txt`.
+- `seeds/` and `seed_log.txt`.
+
+**Changed:** `scripts/mutate_assertions.py` gains `--unread-figure`. `--prose` output is byte-identical before and after, and `--seed` is OK on all four existing operators. **No receipt, paper or gate line is touched.**
+
+| item | state |
+|---|---|
+| the operator | **done**: `mutate_assertions.py --unread-figure`, 7.3 s |
+| the census | **done**: 100 sites in 69 receipts |
+| the partition | **done**: by READ and by WHERE. ⛔ **WHERE fails its control**, see ⓷ |
+| a pre-registration before the run | **done**: `204f5c9a`, 8 predictions; 6 held, 1 missed, 1 held vacuously |
+
+### ⓵ THE OPERATOR
+
+**A site is a check whose label attributes a figure to a text and whose verdict carries that figure.**
+- **The attribution:** `the paragraph's`, `the paper's`, `as printed`, `P15's`, `sec:`, `\ref`, and so on.
+- **The figure:** either a numeric literal also written in the label as a token of its own, or a name that the label interpolates and that resolves to literals. A name resolves by assignment, by a literal container's values, or by a `for` over a literal tuple.
+- *Excluded:* a name used only as a subscript (`PAPER[l]`), which is an index.
+
+**Partitioned two ways:**
+- **READ:** `NO-READ` (the source opens no `.tex`) is the class proper. `READS-PAPER` means the figure is hard-coded beside a read that could have supplied it.
+- **WHERE:** the figure is in the home paper, in some other `.tex`, or in none.
+
+**Three corrections were made while building it, before the census was read:**
+- the substring match (`2` in `"3.32"`);
+- dict keys being read as figures;
+- exact-text matching. The receipt writes `3.3387380236` where the paper prints `3.33874`, so the match is now made at the paper's own precision.
+
+### ⓶ THE CENSUS
+
+| | `IN-PAPER` | `IN-SOME/OTHER-TEX` | `IN-NO-TEX` / partly | total |
+|---|---|---|---|---|
+| **`NO-READ`** (the class proper) | 54 | 6 | 0 | **60** |
+| `READS-PAPER` | 24 | 12 | 4 | 40 |
+
+**Recall is `1` of `1`.** On the pre-repair file (`fa9821d2^`), the operator flags all three of the file's paper-attributed checks `NO-READ`: the `3.32` site at line 104, the five ratios at line 120, and the `M`-scaling table at line 185.
+
+⛔ ***And `r7145`'s repair is still in the class (U2, as predicted).*** The file now checks against *"the paragraph's closed form"* `_EXACT = 3.3387380236`, which is a literal, and it still opens no paper.
+- What changed is the figure, not the shape.
+- If `CR_cosmology.tex` moved again, this receipt would stay green against the old number exactly as it did at `3.32`.
+- ⇒ **The repair that leaves a receipt outside this class reads the figure from the paper, which makes it a quote-pin. Alternatively it drops the attribution, so the label says what the receipt computed and nothing about the paper.** *The first trades this class for the one `r7125` built a ratchet against. The second is the `SCOPE-AS-CHECK` move: say it, don't count it.*
+
+### ⓷ ⛔ THE DRIFT PARTITION DOES NOT WORK, AND THE CONTROL SAYS SO
+
+*I pre-registered U5 (at most 15 % of `NO-READ` sites are `IN-NO-TEX`). It held at 0 of 60, but the pass is vacuous.*
+- **The control:** I perturbed every `IN-PAPER` figure in its last digit (±1). **218 of the 252 perturbed figures are also printed by the home paper (86.5 %).**
+  - So an `IN-PAPER` verdict is close to what chance gives. A paper of this length prints most three-figure numbers somewhere.
+- **All four `IN-NO-TEX`/partly sites are artefacts:**
+  - two are `1.395e4`, which LaTeX writes as `1.395\times10^4`;
+  - one is a `1e-12` tolerance;
+  - one is a mixed set of constants.
+- ⇒ ***Seeing drift needs the sentence the label points at, and that is what this class lacks by definition: a receipt that names no paper names no sentence.*** *That is your `run_touched_readers` limit seen from the other side.* **I do not recommend gating on WHERE.**
+  - *One calibration point in its favour:* on the pre-repair file, the line-185 table (`3.32`, `4.19`, `15.4`) is not `IN-PAPER` because `r7145` moved those figures. **So the partition did see that drift, once, through noise that would hide it elsewhere.**
+
+### ⓸ PRECISION, AND THE DECISION IT HANDS YOU
+
+**I read 20 sites by hand** (seed 7147; `sample20.txt`).
+- **10** are a paper's figure checked against a literal. Examples: `185` bins, `P03`'s `6` spacelike pairs, the stretch `2.76`, `Gamma(1) = 1/4`.
+- **6** are a paper's formula hard-coded and checked symbolically:
+  - `P8's rho = m'/(4 pi R^2 R')`;
+  - `P10's mu_n^2 = n(n+2)-2`;
+  - `sec:ledger's 3 pi/(Lambda l_P^2)`;
+  - `P15's … 12H^2`;
+  - `eq:rho-B`;
+  - `mu^2 = M^2 - 1`.
+- **4 are not the class:**
+  - a derivation identity;
+  - a register row's banked coefficient;
+  - literal arithmetic on `eq:Ek`;
+  - `alpha_s`, which is PDG's figure and not P14's.
+
+**Against U6 as pre-registered ("a paper figure"): 10 of 20, so U6 is missed.** If a hard-coded formula counts, it is **16 of 20**.
+- *A hard-coded formula drifts exactly as a figure does, and no file-scoped gate reaches either.*
+- **That makes it one class by the defect, but I did not pre-register it that way.** So I report the miss and leave the choice of reading to you.
+
+### ⓹ PREDICTIONS, AGAINST WHAT CAME BACK
+
+| | predicted | measured | |
+|---|---|---|---|
+| U1 | the pre-repair `3.32` is flagged, `NO-READ` | flagged, `NO-READ` | ✔ |
+| U2 | the repaired file is still flagged, `IN-PAPER` | line 112, `NO-READ`, `IN-PAPER` | ✔ |
+| U3 | sites in [100, 1000] | 100 | ✔, at the floor |
+| U4 | `NO-READ` ≥ half | 60 of 100 | ✔ |
+| U5 | `IN-NO-TEX` ≤ 15 % of `NO-READ` | 0 of 60 | ✔ **vacuously**: the partition is near chance, see ⓷ |
+| U6 | precision ≥ 16 of 20 | 10 of 20 (16 if formulas count) | ⛔ **missed** |
+| U7 | seeds: `NO-READ` / `READS-PAPER` / no-attribution not flagged | as planted | ✔ |
+| U8 | under 60 s | 7.3 s | ✔ |
+
+### ⓺ MY RECOMMENDATION, STATED FOR REVERSAL
+
+**Report-grade, with an adjudication baseline on the `60` `NO-READ` sites**, in the `quote_pin_baseline.tsv` shape, keyed on (receipt, label literal).
+- **I would not ratchet it yet**, for two reasons:
+  - precision is 50 % on the class as defined;
+  - the only partition that would separate harmful from harmless sites, drift, fails its control.
+- *A ratchet is cheap here, though, and a baseline makes the false positives adjudications rather than noise.* If you register it as one, the ceiling is whatever `NO-READ` reads on the tree you register it against, and **you will get my reading of any site you want read.**
 
 ## ⚑ `r7143+70.1` — THE HEADLINES OVERSTATE BY `0.77 %` CORPUS-WIDE, AND BY UP TO A THIRD IN ONE RECEIPT. THE `50` `P10` SITES ARE LISTED. FIVE OF SIX PREDICTIONS HELD; COVERAGE MISSED. AND THE `9` WAS MINE AND WRONG: IT IS `8`
 
