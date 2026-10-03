@@ -121,7 +121,11 @@ def main():
     print('     REAL — and treated establishing its PROVENANCE as settling whether it APPLIED.')
     print('     ⇒ *** A check on whether a rule EXISTS is not a judgment about whether it is right HERE.')
     print('       The rule was real.  It was also protecting a sentence known to be false. ***')
-    print('  ⚠ ⓷ ** THE ASYMMETRY THAT NAMES IT: ** the convention produced a reason not to finish TWICE')
+    # ⛔ r7151+cc66.112: this line said TWICE and the check above measures 5.  `>= 2` passed at
+    #   two and still passes at five, so the stale headline was never contradicted -- the same
+    #   shape as `P03`'s "its three uses" against eleven.  The count is printed now, not retyped.
+    print(f'  ⚠ ⓷ ** THE ASYMMETRY THAT NAMES IT: ** the convention produced a reason not to '
+          f'finish {len(hits)} times')
     print('     in seven revisions, and ** in both cases the work was already done and verified.  It')
     print('     never once blocked a CALCULATION — only a CLOSURE. **')
     print('     ⌗ *** And the incentives point the same way: routing produces a turn with a finding and')

@@ -152,7 +152,40 @@ def main():
     #   reading it once settles it.*  ⛔ *A first draft declared 170 and then printed `21 already read`,
     #   which was false: nothing had been read, and the slack was an artefact of the key.  Recorded rather
     #   than quietly corrected, because inventing headroom is the failure this instrument was built to find.*
-    CEILING = 24
+    CEILING = 0
+    #: ⚑⚑ r7151+cc66.112: 24 -> **0**. THE PROSE-PIN BACKLOG IS DISCHARGED: 137 keys, every one
+    #: verdicted, `UNADJUDICATED` empty for the first time since this gate was built. The ceiling can
+    #: now only be raised by a visible edit here, which is what it was for.
+    #:   ⌗ Final distribution, once: **DELIBERATE 74 · PRESENCE-CONTROL 50 · NOT-A-COUNT 13.**
+    #: ⛑ r7151 PREDICTED that `exact census with provenance` would be commoner in `REGISTER` than
+    #: anywhere, and offered its failure as the finding. **IT HOLDS, and by a wide margin: 5 of the 14
+    #: `REGISTER` sites against 3 of the 46 `PAPER` ones -- 36 per cent against 7.** And the mechanism
+    #: is sharper than "documents we rewrite": *every one of the five reads a PINNED BLOB* --
+    #: `git show BEFORE:...`, `git show PARENT:OWED.md`, `git show _BLIND:corpus/check_receipts.py`.
+    #:   ⇒ *So the shape does not follow from the text being a register. It follows from the receipt
+    #:   having pinned its subject to a SHA -- and `REGISTER` is where that is done, because a register
+    #:   is the thing that moves under you. A count of a file at a commit CANNOT move, so exactness is
+    #:   free and a floor buys nothing.* ⌗ `L253/S1` proves it against itself: it carried the SAME
+    #:   pinned expression twice, once `>= 3` and once `== 3`, two lines apart.
+    #: ⛑ AND A SHAPE THE `PAPER` BLOCK DID NOT HAVE AT ALL -- **UNIQUENESS ON A LIVE DOCUMENT**,
+    #: 3 of the 14: `== 1` asserting that a string survives only inside its own withdrawal
+    #: (`L549/Q1`'s `144/80/24`, where r2738's bare absence pin was broken by the correction note that
+    #: had to quote the value it corrected), only as a quotation (`L269/T1`'s stale `★ NEXT`), or not
+    #: spliced twice (`L269/T1`'s corrupted heading). *Exactness load-bearing in the opposite direction
+    #: from a floor, on text that is still being edited.*
+    #: ⛔ THREE FLOORS IN THIS BLOCK CONCEALED A DEAD HEADLINE IN THE RECEIPT'S OWN PROSE, which with
+    #: `P03`'s *"its three uses"* against eleven makes four in two blocks and settles the row's case:
+    #: `P12/A8`'s verdict line said TWICE against a measured 5; `L254/A1`'s PART 5 said FOUR against 5
+    #: -- *and in that one the floor was `>= 4`, equal to the stale figure*; `L272/F1` printed NO NUMBER
+    #: at all under `> 20` against 51, so its margin was invisible to its own reader.
+    #:   ⌗ *The common mechanism, now stated: a floor set at the figure the prose quotes will never
+    #:   contradict that prose when the measurement moves past it. **The floor is what makes the
+    #:   headline unfalsifiable**, which is the strongest form of this row's argument and was produced
+    #:   by the backlog rather than by the gate.*
+    #: ⛔ ONE DEFECT WAS MINE: `L218/C2`'s `open_items >= 8` is the third line of the dashboard whose
+    #: r7143+cc66.108 comment -- *mine* -- says all three assert their class is non-empty. Two did.
+    #: *The comment was true of what I meant and false of what I wrote, and only re-reading the file
+    #: caught it.*
     #: ⛭ r7143+cc66.109: 70 -> 24, lowered by EXACTLY the 46 sites read -- THE WHOLE OF THE `PAPER`
     #: CLASS, which the r7141 partition now reports as **0 of the remaining 24**.  The 24 left are
     #: 4 SOURCE + 14 REGISTER + 6 NOT-A-COUNT, and none of them is repair owed on paper prose.
