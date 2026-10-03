@@ -216,11 +216,17 @@ gate("⇒ ** `PO-77` ⓵ asked which congruence's horizon decides `frozen` at th
      "curve read on opposite sides of its turnaround*",
      'Take the vacuum case A=0 first, which is the pure bead' in bc2 and at_turn < 1e-12)
 
-gate("⛔ NOT claimed: that `PO-77` ⓪ or ⓶ is settled; that the `$0.13$` figure's VALUE is wrong (it is "
-     "right near `$A$` on the signed-negative branch, and only its stated locus is); that any transfer is "
-     "retired; or that what a census ON the contracting side would say is known -- ** nothing in the corpus "
-     "computes one, and that absence is the finding rather than a gap this file fills **",
-     'numpy' in sys.modules and 'sympy' in sys.modules)
+#: ⛭ r7141 (66): this scope statement was a `gate(...)` whose condition was `'<module>' in sys.modules`
+#: -- true whatever the receipt measured, so it added a PASS to `N of N checks pass` for a
+#: sentence that tests nothing.  ** Node 70's `--cannot-fail` operator found all four of its
+#: TRIVIAL-ENV sites in this seat's own two receipts (r7139+70.1), which is the right place for
+#: a ruling to land first. **  ⇒ The defect is the COUNT, not the sentence: scope is PRINTED
+#: here and no longer counted.  Same ruling as the 63 SCOPE-AS-CHECK sites.
+print("  ⛔ NOT claimed: that `PO-77` ⓪ or ⓶ is settled; that the `$0.13$` figure's VALUE is wrong (it is")
+print("     right near `$A$` on the signed-negative branch, and only its stated locus is); that any")
+print("     transfer is retired; or that what a census ON the contracting side would say is known --")
+print("     nothing in the corpus computes one, and that absence is the finding rather than a gap this")
+print("     file fills.")
 
 print()
 print('  ' + '=' * 92)

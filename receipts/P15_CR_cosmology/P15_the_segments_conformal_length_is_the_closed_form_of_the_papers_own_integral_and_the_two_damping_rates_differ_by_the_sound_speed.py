@@ -222,12 +222,17 @@ gate("⛔ *** THEREFORE `$T(0)=1$` IS `THE FIRST HALF` ONLY FOR THE MONOPOLE, an
 # ===========================================================================
 head('E.  SCOPE -- WHAT IS AND IS NOT CLAIMED')
 # ===========================================================================
-gate("⛔ NOT claimed: that the two transfers compose; that either is retired; that `PO-77` is discharged; "
-     "that the papers' figure and `s_tot` agree in any sense beyond being the same integral; or that a "
-     "point on the leaf is identified with a point on the bead -- ** nothing here supplies that "
-     "identification, and its absence is why `the leg ends at the seam, THEN the kernel` has no sequence "
-     "to be sequential in **",
-     'sympy' in sys.modules and 'mpmath' in sys.modules)
+#: ⛭ r7141 (66): this scope statement was a `gate(...)` whose condition was `'<module>' in sys.modules`
+#: -- true whatever the receipt measured, so it added a PASS to `N of N checks pass` for a
+#: sentence that tests nothing.  ** Node 70's `--cannot-fail` operator found all four of its
+#: TRIVIAL-ENV sites in this seat's own two receipts (r7139+70.1), which is the right place for
+#: a ruling to land first. **  ⇒ The defect is the COUNT, not the sentence: scope is PRINTED
+#: here and no longer counted.  Same ruling as the 63 SCOPE-AS-CHECK sites.
+print("  ⛔ NOT claimed: that the two transfers compose; that either is retired; that `PO-77` is")
+print("     discharged; that the papers' figure and `s_tot` agree in any sense beyond being the same")
+print("     integral; or that a point on the leaf is identified with a point on the bead -- nothing here")
+print("     supplies that identification, and its absence is why `the leg ends at the seam, THEN the")
+print("     kernel` has no sequence to be sequential in.")
 
 gate(f"⌗ and what IS claimed: the two backgrounds (A); the closed form as the exact value of the papers' own "
      f"integral (B); the `$\\sqrt3$` between the two damping rates (C); and the freezing locus (D).  "
