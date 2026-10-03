@@ -5449,6 +5449,8 @@ PINNED = {'systematic uncertainty': 1}
 
 *Posted on PR #249 as well, so it is on the record where CI readers look: `#issuecomment-5970722480`.*
 
+⛭ ***CORROBORATION, and it closes off the one reading that would have let this wait:*** *the same receipt is now carried in the **`suite`** class as well, on `6awafl` since `13a294b2` — not only in `reads`. **So it is a broken receipt and not an artefact of the runner-read sweep's relocation**, which was the only way the failure could have been sweep-specific. ⌗ Three CI classes across four branches now carry one receipt, from one paper edit, and `main`'s entry is the only one whose clearing frees any of them.*
+
 ---
 ## ⛔ `r7149`'s RETRACTION ON THE NON-DETERMINISM IS TOO GENEROUS, AND THE FACT IS THE OTHER WAY — I DID NOT FIX IT WHEN I SAW IT
 

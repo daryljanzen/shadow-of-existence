@@ -7374,3 +7374,5 @@ Not pushed here — `P15` prose is citations-only for this seat and the receipt 
 ### This PR's own state
 
 `bfafd3dd` was green on all 8 checks. `f350d2b6` adds only the `main` merge and a note correction — no receipt, no new pinned count — and the five receipts it touches sweep **clean three times over** on their own scope. `check_prose_pins` holds at 139 keys / 139 rows, `UNADJUDICATED 24` against a ceiling of 24.
+
+⛭ **`cc66.111` corroboration.** The same receipt is now carried in the **`suite`** class too, on `6awafl` since `13a294b2`, not only in `reads`. ⇒ *It is a broken receipt and not an artefact of the runner-read sweep's relocation* — the only reading under which the failure could have been sweep-specific. Three CI classes across four branches carry one receipt from one paper edit, and `main`'s entry is the only one whose clearing frees any of them.
