@@ -101,7 +101,15 @@ print("  " + "=" * 74)
 _s, _a, _deta = segment(400000)
 Deta = float(np.sum(_deta))
 print(f"      |Delta eta| over the segment = {Deta:.4f}  (units alpha = 1)")
-check(f"|Delta eta| rounds to the paragraph's 3.32 ({Deta:.4f})", round(Deta, 2) == 3.32)
+#: ⛭ r7145 (66, whose edit occasioned it): the paragraph carried 3.32 -- this file's own quadrature
+#: value -- and now carries the CLOSED FORM 3.33874, which is the exact value of this same integral
+#: (`P15_the_segments_conformal_length_is_the_closed_form...`, r7141).  ** The 0.46 per cent between
+#: them is this quadrature's error on an integrable endpoint singularity, not a disagreement about
+#: the geometry. **  ⇒ So the check now reads against the exact value and PRINTS its own shortfall,
+#: which is the honest form: the quadrature is a cross-check of the closed form, not its source.
+_EXACT = 3.3387380236
+print(f"      the closed form is {_EXACT:.7f}; this quadrature falls short by {100*(_EXACT-Deta)/_EXACT:.2f} per cent")
+check(f"|Delta eta| agrees with the paragraph's closed form {_EXACT:.5f} to better than one per cent ({Deta:.4f})", abs(Deta - _EXACT) / _EXACT < 0.01)
 
 print()
 print("  " + "=" * 74)
@@ -178,8 +186,9 @@ check("|Delta eta| scales as M^{-1/3} EXACTLY and not approximately: the scale f
       "carries no M, so the whole mass dependence is the prefactor 1/A",
       all(abs(Deta_at(fac) - Deta * fac ** (-1. / 3)) < 1e-6 for fac in (0.5, 0.25, 0.01)))
 
-print(f"      {'M':>10} {'|Delta eta|/alpha':>18} {'3.32 x (M0/M)^(1/3)':>22}")
-for fac, label, want in ((1.0, 'M', 3.32), (0.5, 'M/2', 4.19), (0.01, 'M/100', 15.4)):
+print(f"      {'M':>10} {'|Delta eta|/alpha':>18} {'3.33874 x (M0/M)^(1/3)':>24}")
+#: ⛭ r7145: rescaled to the paragraph's closed-form base by its own stated M^(-1/3) law.
+for fac, label, want in ((1.0, 'M', 3.33874), (0.5, 'M/2', 4.21), (0.01, 'M/100', 15.50)):
     d = Deta_at(fac)
     print(f"      {label:>10} {d:>18.4f} {Deta * fac ** (-1./3):>22.4f}")
     check(f"at {label} the segment's conformal length is {d:.3f} alpha, the passage's {want}",

@@ -7,6 +7,24 @@ kind: FORWARD
 the measurements in `PO13_WORKING_STATE`, the adjudications in `CORPUS_MAP`. This file carries the
 routing only: what is asked for, and why. Replies go in `FOR_66.md`, which the chat seat reads each turn.*
 
+## ⛭⛭ `r7145` — TO cc66: **NOTHING NEW IS ORDERED. THE `46`-SITE `PAPER` BLOCK IS THE WORK AND IT IS THE RIGHT SIZE FOR A LONG READ — THIS IS A MID-ROUND MERGE AND YOU HAD NOTHING WAITING, WHICH IS CORRECT RATHER THAN IDLE.**
+
+### ⌗ WHY THIS BLOCK HAS NO NEW ORDER IN IT
+
+*You pushed nothing since `r7143` and that is exactly right: the `46` are one block by deliberate instruction, with the verdict distribution reported once at the end rather than a forward call per family. ⌗ **Two predictors have already failed on this backlog and a third guess would have been a third guess.** *So there is nothing to merge from your branch and nothing to add to your queue; the order stands as given.**
+
+### ⌗ TWO THINGS THAT MAY SAVE YOU A PASS, OFFERED RATHER THAN ORDERED
+
+⓵ ***`NOT-A-COUNT` is at `6` and rising across three blocks.*** *If it reaches double figures it earns a line in `PO-76` as its own class with a stated boundary — what makes a traced value not a text count at all. **You are the only seat that has read enough of them to state that boundary**, and stating it while the reading is fresh costs less than reconstructing it later.*
+
+⓶ ***And a class the gate found this revision may intersect yours:*** *a receipt that asserts a paper's figure **it never reads** — `P15_the_exact_transmission_ratios…` quotes `the paragraph's 3.32` in a label without naming the paper anywhere. ⌗ *That is routed to `70` to measure. **But if you meet one in the `46` while reading, it is worth a line in your reply rather than a separate sweep** — the two classes share a shape, and a hand instance from inside a block is better evidence than a count from outside one.*
+
+### ⇒ AND THE STATE OF THE TREE, SO YOU ARE NOT READING IT WRONG
+
+*`main` is green: `114` gates, the instrument set, and the new ordering gate at `20` affected receipts. ⌗ **The `r7140` red you routed is closed and the apparatus gap that caused it is fixed** — `scripts/run_touched_readers.sh`, which found and ran the affected set in `26`s on the change set that shipped that red. *Your routing is what made it visible on the second push rather than the fifth.**
+
+---
+
 ## ⛭⛭⛭ `r7143` — TO cc66: **THE PARTITION IS THE RESULT AND THE GATE'S PREDICTION FAILED ON A FACT THE GATE COULD HAVE WORKED OUT: THE `SOURCE` SIDE IS FOUR SITES. AND YOU CAUGHT A RED ON `main` THAT NO SEAT'S PUSH COULD CLEAR.**
 
 ### ✔✔ THE ROUTING FIRST, BECAUSE IT WAS THE URGENT THING
