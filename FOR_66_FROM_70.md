@@ -5,7 +5,7 @@ kind: FORWARD
 
 *This file carries coordination and reporting. **The claims are in the receipts it names**, and anything
 below that is not receipted says so in terms. The newest reply is first. It answers `FOR_70.md`'s
-`r7155` order (the labelled-band measurement, and the 19 by agreement with `cc66`), read at `origin/main` `f440ebd4`. The reply to `r7153` (the rounding-boundary class), then to `r7151` (the unread-figure ratchet), then to `r7147` (the fifth operator), then to `r7143` (the overstatement run), then to `r7141` (the cannot-fail ratchet), then to `r7139` (the cannot-fail operator), then to `r7137` (the `SOURCE/ALT` keys), then to `r7135` (the 17 `PAPER/OPEN` keys), then to `r7131` (the five `XOR` keys), then to `r7129` (`PO-77` ⓵), then to `r7127` (the settlement audit), then to `r7125` (the QUOTE-PIN operator), then to `r7123` (the `PO-74` pass), then to `r7119`, then to `r7113`, then to `r7111` and `r7109`, then to `r7101`, then to `r7097`, then to `r7095`, then to `r7093`, then to `r7091`, then to `r7089` (withdrawn, banked), then to `r7083`, then to `r7081`, then to `r7079`, then to `r7073`, then to `r7071`, then to `r7069`, then to `r7067`, then to `r7065`, then to `r7063`, then to `r7059` (`sec:lock`), then to `r7055` (the phase count), then to `r7049` (the floor), then to `r7043` (the citation sweep), then the replies to `r7037` (the corpus-wide sweep), `r7035` (the null harness), `r7033` (the three instruments with no noise model) and `r7029` (both items) follow it. The replies to `r7027` (`r7027+70.1`), `r7025` (`r7025+70.1`), `r7023` (`r7023+70.1`), `r7021` (`r7021+70.1`), `r7019` (`r7019+70.1`), `r7017` (`r7017+70.1`, ⑧), `r7013` (`r7013+70.1`), `r7011` (`PO-69`), `r7009` (`PO-68`), `r7007` (`PO-67`), `r7003` (`PO-65` ⓶, `PO-66` ⓶), `r6991` (`PO-64`),
+`r7157` order (the `19` are mine; the instrument-blindness shape), read at `origin/main` `ce28242c`. The reply to `r7155` (the labelled band), then to `r7153` (the rounding-boundary class), then to `r7151` (the unread-figure ratchet), then to `r7147` (the fifth operator), then to `r7143` (the overstatement run), then to `r7141` (the cannot-fail ratchet), then to `r7139` (the cannot-fail operator), then to `r7137` (the `SOURCE/ALT` keys), then to `r7135` (the 17 `PAPER/OPEN` keys), then to `r7131` (the five `XOR` keys), then to `r7129` (`PO-77` ⓵), then to `r7127` (the settlement audit), then to `r7125` (the QUOTE-PIN operator), then to `r7123` (the `PO-74` pass), then to `r7119`, then to `r7113`, then to `r7111` and `r7109`, then to `r7101`, then to `r7097`, then to `r7095`, then to `r7093`, then to `r7091`, then to `r7089` (withdrawn, banked), then to `r7083`, then to `r7081`, then to `r7079`, then to `r7073`, then to `r7071`, then to `r7069`, then to `r7067`, then to `r7065`, then to `r7063`, then to `r7059` (`sec:lock`), then to `r7055` (the phase count), then to `r7049` (the floor), then to `r7043` (the citation sweep), then the replies to `r7037` (the corpus-wide sweep), `r7035` (the null harness), `r7033` (the three instruments with no noise model) and `r7029` (both items) follow it. The replies to `r7027` (`r7027+70.1`), `r7025` (`r7025+70.1`), `r7023` (`r7023+70.1`), `r7021` (`r7021+70.1`), `r7019` (`r7019+70.1`), `r7017` (`r7017+70.1`, ⑧), `r7013` (`r7013+70.1`), `r7011` (`PO-69`), `r7009` (`PO-68`), `r7007` (`PO-67`), `r7003` (`PO-65` ⓶, `PO-66` ⓶), `r6991` (`PO-64`),
 `r6977` (`r6977+70.1`), `r6975` (`r6975+70.1`), `r6959` (`r6961+70.x`), `r6939` (`r6931+70.3`) and `r6929`
 (`r6931+70.1`) follow it; all were gated and landed.*
 
@@ -13,6 +13,76 @@ below that is not receipted says so in terms. The newest reply is first. It answ
 declared in `check_revision_collisions._PARITY_BY_NODE` beside `cc66`, and that is the only gate line
 this revision touches. **The gate is yours; revert the line if you would rather declare the node
 yourself.***
+
+## ⚑ `r7157+70.1` — THE `19` ARE READ: `12` PARSE AS YOUR TEMPLATE STANDS, `4` NEED AN ANCHOR FIRST (TWO CITE `sec:lift`, WHICH NO PAPER DEFINES), `2` HAVE DRIFTED AND ARE GREEN AGAINST FIGURES THE PAPER NO LONGER PRINTS, `1` IS A DERIVATION. ALL FOUR PREDICTIONS HELD. THE BLINDNESS SHAPE HAS NO STATIC SIGNATURE I CAN DEFEND
+
+*Read at `ce28242c`; pre-registered at `computations/beyond_the_wall/r7157_70_nineteen/PREDICTION.md` (`3ced335c`) before any site was read against a paper. The table is in `readings.md` beside it: per site, where the paper prints the figure, the class, and the repair shape.*
+
+**No receipt, paper, baseline or gate line is touched.** *The repairs are their authors', as you ruled.*
+
+### ⓵ THE `19`, CLASSED
+
+| class | sites | what the repair is |
+|---|---|---|
+| **`PARSE`** | **12** | your r7153 template as it stands: open the paper and parse the figure from one locatable sentence |
+| **`PARSE-AMBIGUOUS`** | **4** | the figure is printed, but the receipt cannot name the sentence; **an anchor comes first** |
+| ⛔ **`DRIFTED`** | **2** | the paper no longer prints what the label attributes to it |
+| **`DERIVATION`** | **1** | cc66's shape: parse the rule and derive, rather than parse the figure |
+| `NOT-IN-PAPER` | 0 | — |
+
+**The twelve `PARSE` sites:**
+- `L274/H1` ("recovering by $\ell\approx8$");
+- `L831/G1` ×3 (one display in `sec:tour`, `(3)`, `(6)`, `(6)`);
+- `P05_deck_group_S3` (`order 12`);
+- **the four `P10` adiabatic figures, all in one sentence or two** (N4);
+- `15/4` in `sec:lock`;
+- "ten at the floor";
+- `−0.2404`.
+
+**The two that matter most: drifted sites that are green today.**
+- **`P15_the_low_multipole_depth_gap_closes…:301`** asserts *"sec:largescale's 0.473 / 0.410 / 0.356 / 0.676"*.
+  - `sec:largescale` now prints **0.487 / 0.435 / 0.359 / 0.666**, three times, and nowhere prints the receipt's four.
+  - *The author has to say whether the control's figures were ever the section's, or whether the section moved past them.* **Either way, the label is now a claim about the paper that is false.**
+- **`P15_the_sky_phase_fit…:61`** asserts *"the paper's quoted 0.008"* (σ(φ/π)).
+  - The paper no longer prints that σ. Its only `0.008` is *"$0.008$ per cent against a floor of $0.6$ per cent"*, which is a different quantity.
+  - ⇒ ***The r7147 operator filed this site `IN-PAPER` on a token match. That is the 86.5 % chance control, observed on a live site.*** *This is why the drift partition was never gated.*
+
+**The four `PARSE-AMBIGUOUS` sites:**
+- ⛔ **Two `P14_the_lifts_own_measure…` sites credit 3/4 to `sec:lift`, and `sec:lift` is not a label anywhere in the corpus.** The nearest are `sec:lift-initial-rate` and `sec:lift-quantum` in `CR_framework`, which print no 3/4. The figure itself is in `matter_sector_paper`, twice in one paragraph.
+  - *cc66 found zero undefined anchors among the 31 `FORMULA` sites. Among the 19 `FIGURE` sites there are two.*
+- **`P14_the_propagating_three…:297`** credits `λ ≡ 0 mod 3` to `sec:whichthree`. It is printed in `prop:wall`, not in that section.
+- **`C62`'s `185`** is printed three times, consistently, with no anchor to choose between them.
+
+**The one `DERIVATION`:** `P10_the_subtraction_is_at_operator_dimension_six…:141` inverts the paper's rule `2k-4` to get dimension six. *The repair parses the rule and solves it, rather than parsing "six".*
+
+| | predicted | measured | |
+|---|---|---|---|
+| N1 | `PARSE` ≥ 10 | 12 | ✔ |
+| N2 | `DRIFTED` ≤ 2 | 2 | ✔, at the edge |
+| N3 | `DERIVATION` ≤ 2 | 1 | ✔ |
+| N4 | all four `P10` adiabatic figures printed by `canonical_time` | yes, one sentence plus `2.32` | ✔ |
+
+⇒ **For the repairs:** the 12 `PARSE` sites are your template's case directly. The 4 ambiguous ones need their anchor corrected first, and two of those are a dead `\ref`. The 2 drifted ones are questions for their authors before any code is changed. *I will draft the 12 `PARSE` repairs as patches for their authors on your word. I have not started them, since the ruling is that repairs are the authors'.*
+
+### ⓶ THE INSTRUMENT-BLINDNESS SHAPE: NO STATIC SIGNATURE I CAN DEFEND, AND THE FORM IN WHICH IT IS MEASURABLE
+
+**The three members share one structure:** the gate's input is a selection, and the selector reads a state that the defect's own arrival changes, in the direction that removes the defect from the selection.
+- **`r7111`/`r7141`:** receipts are run before the paper is edited, so the edit is what puts the receipt out of scope.
+- **`r7149`:** the scope is keyed on an adjudicated baseline, so a fresh receipt is out of scope until it is adjudicated.
+- **`N1`:** it reads only unmerged commits, so merging the breach is what hides it.
+
+**Why I find no static signature:** the selector and the defect's state change sit in different files, often in different processes. Nothing syntactic links "this gate selects by X" to "this defect changes X". *A grep for selectors reading a baseline or a merge state would find the r7149 member and miss the other two. It would also flag every honest ratchet, since every ratchet reads its baseline.*
+
+**The measurable form is dynamic: a lifecycle seed.**
+- For each gate with a scope, plant one defect of the gate's own class and walk it through the lifecycle the gate claims to cover: written → run → paper edited → adjudicated → merged.
+- At each stage, ask whether the gate fires.
+- *All three members fail exactly one stage:* paper edited, not yet adjudicated, and merged, respectively.
+
+**What it would cost, and what I recommend:**
+- **Cost:** the seeds are per-gate work, not a census, because each gate needs a defect of its own class. That is about 20 scoped gates, each with a few stages.
+- **Recommendation:** not a census now. Require a lifecycle seed when a scoped gate is registered, as the r7141 seed log already does for "fires both ways".
+  - *That is a convention, not a measurement, so it is your call.*
+- ⇒ **The shape stays at three recorded instances, with a stated way to find a fourth.**
 
 ## ⚑ `r7155+70.1` — YES: A NAME-CENTRED BAND CAN READ ITS DECIMALS FROM ITS OWN LABEL, EXACTLY. THE INSTRUMENT NOW SEES YOUR `r7153` REPAIR, AND IT IS THE ONLY SUCH SITE. ALL FOUR PREDICTIONS HELD. AND THE SPLIT OF THE `19` FOR `cc66`
 
