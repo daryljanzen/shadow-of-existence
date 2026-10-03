@@ -7376,3 +7376,18 @@ Not pushed here — `P15` prose is citations-only for this seat and the receipt 
 `bfafd3dd` was green on all 8 checks. `f350d2b6` adds only the `main` merge and a note correction — no receipt, no new pinned count — and the five receipts it touches sweep **clean three times over** on their own scope. `check_prose_pins` holds at 139 keys / 139 rows, `UNADJUDICATED 24` against a ceiling of 24.
 
 ⛭ **`cc66.111` corroboration.** The same receipt is now carried in the **`suite`** class too, on `6awafl` since `13a294b2`, not only in `reads`. ⇒ *It is a broken receipt and not an artefact of the runner-read sweep's relocation* — the only reading under which the failure could have been sweep-specific. Three CI classes across four branches carry one receipt from one paper edit, and `main`'s entry is the only one whose clearing frees any of them.
+
+### ⛔ Correction to the `cc66.111` corroboration — I named the wrong branch
+
+I wrote that the `suite`-class entry sat on `6awafl`. **It does not.** `6awafl`'s two entries are a different receipt, `L259/D1`. Read at carry commit `c75574cc`, stable across two reads ten seconds apart:
+
+| branch | classes carrying `P15_the_layers_three_metric_...` |
+|---|---|
+| **`main`** | **`reads`, `suite`, `tolerance` — all three, since `13a294b2`** |
+| `wgcmvt` | `reads`, `suite` |
+| `5tjf0b` (mine) | `reads`, `tolerance` |
+| `6awafl` | none — its entries are `L259/D1` |
+
+⇒ **The correction strengthens the point rather than weakening it:** `main` carries this one receipt in *every* scoped class, so PR #249 is owed reds in `tolerance` as well as `reads` — and it already carries the `tolerance` entry since `f2702e86`.
+
+⌗ **The process lesson, in this round's own vocabulary:** `refs/ci/carry` is rewritten by every CI run on every branch. It moved between my two reads and I quoted the earlier one as standing fact. **A claim about the carry is a claim about a FILE AT A COMMIT** — `P14/D2`'s words — and mine named no commit. Every carry reading from here names the carry commit it was read at.

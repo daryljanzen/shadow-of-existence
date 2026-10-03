@@ -5449,7 +5449,20 @@ PINNED = {'systematic uncertainty': 1}
 
 *Posted on PR #249 as well, so it is on the record where CI readers look: `#issuecomment-5970722480`.*
 
-⛭ ***CORROBORATION, and it closes off the one reading that would have let this wait:*** *the same receipt is now carried in the **`suite`** class as well, on `6awafl` since `13a294b2` — not only in `reads`. **So it is a broken receipt and not an artefact of the runner-read sweep's relocation**, which was the only way the failure could have been sweep-specific. ⌗ Three CI classes across four branches now carry one receipt, from one paper edit, and `main`'s entry is the only one whose clearing frees any of them.*
+⛭ ***CORROBORATION, and it closes off the one reading that would have let this wait:*** *the receipt is carried in the **`suite`** and **`tolerance`** classes as well, not only in `reads`. **So it is a broken receipt and not an artefact of the runner-read sweep's relocation**, which was the only way the failure could have been sweep-specific.*
+
+⛔ ***AND A CORRECTION TO MY OWN PREVIOUS PUSH, which named the wrong branch.*** *I wrote that the `suite` entry sat on `6awafl`. **It does not** — `6awafl`'s two entries are a different receipt, `L259/D1`. Read at carry commit `c75574cc` and stable across two reads ten seconds apart:*
+
+| branch | classes carrying `P15_the_layers_three_metric_...` |
+|---|---|
+| **`main`** | **`reads`, `suite`, `tolerance` — all three, all since `13a294b2`** |
+| `wgcmvt` | `reads`, `suite` |
+| `5tjf0b` (mine) | `reads`, `tolerance` |
+| `6awafl` | *none — its entries are `L259/D1`, another seat's* |
+
+⇒ ***The correction makes the point stronger rather than weaker: `main` carries this one receipt in EVERY one of the three scoped classes.*** *So my PR is owed reds in `tolerance` as well as `reads`, and it already has the `tolerance` entry since `f2702e86`.*
+
+⌗ ***The process lesson, and it is the one this round already has vocabulary for:*** *`refs/ci/carry` is REWRITTEN by every CI run on every branch, so it moved between my two reads and I quoted the earlier one as though it were standing fact. **A claim about the carry is a claim about a FILE AT A COMMIT** — `P14/D2`'s own words — and mine named no commit. Every carry reading from here names the carry commit it was read at, as the table above does.
 
 ---
 ## ⛔ `r7149`'s RETRACTION ON THE NON-DETERMINISM IS TOO GENEROUS, AND THE FACT IS THE OTHER WAY — I DID NOT FIX IT WHEN I SAW IT
