@@ -1,1 +1,76 @@
   registered .py receipts: 969;  unresolved rows: 0;  owed-site receipts not registered: []
+    0 / 969  1500s
+    50 / 969  3337s
+    100 / 969  3473s
+    150 / 969  3537s
+    200 / 969  3562s
+    250 / 969  3581s
+    300 / 969  3609s
+    350 / 969  3623s
+    400 / 969  3640s
+    450 / 969  3653s
+    500 / 969  3664s
+    550 / 969  3675s
+    600 / 969  3683s
+    650 / 969  3687s
+    700 / 969  3690s
+    750 / 969  3694s
+    800 / 969  3703s
+    850 / 969  3703s
+    900 / 969  4249s
+    950 / 969  4998s
+  wall 4998s
+
+  RECEIPTS RUN: 969   rc 0: 966   timeout: 3   other rc: {}
+  COVERED (N > 0 under the wrapper): 585 of 969 = 60.4 %
+
+  ΣN = 9580 executed verdicts;  Σk = 74 of them at owed cannot-fail sites
+  ⇒ CORPUS-WIDE DYNAMIC OVERSTATEMENT  Σk/ΣN = 0.772 %
+  wrapper N against the receipt's own printed headline: 76 of 79 headlines agree exactly
+  STATIC: 71 owed sites / 12405 verdict sites (`_verdicts`, every receipt) = 0.572 %
+
+  PER RECEIPT CARRYING OWED SITES -- k of N, and what the headline honestly reads
+    [NOT COVERED rc=0] receipts/P03_SdS_slicing/P03_the_symbol_T_carries_four_structural_referents.py
+    [NOT COVERED rc=TIMEOUT] receipts/P15_CR_cosmology/C59_the_control_reproduces_camb_and_the_height_defect_was_k_truncation.py
+     33.3 %    3 of    9  -> honestly 6 of 9   B14_identical_in_content_is_po2s_reason.py
+     23.5 %    8 of   34  -> honestly 26 of 34   P10_the_ratio_is_read_from_the_world_so_the_premise_is_supplied_and_both_framings_are_wron
+     20.0 %    6 of   30  -> honestly 24 of 30   P10_the_vertex_cost_is_the_splits_and_the_ledger_inference_is_a_non_sequitur_so_the_stake_
+     16.7 %    2 of   12  -> honestly 10 of 12   I11_I1_one_condition_two_jobs_and_the_two_routes_are_independent.py
+     16.0 %    4 of   25  -> honestly 21 of 25   P10_the_chain_does_not_reach_the_planck_length_and_the_second_order_term_is_bounded_at_the
+     12.8 %    5 of   39  -> honestly 34 of 39   P15_the_model_difference_is_an_acoustic_contrast_difference_and_it_is_not_one_skys_luck.py
+     12.2 %    6 of   49  -> honestly 43 of 49   P10_the_ultraviolet_object_is_a_rank_sequence_and_the_ledger_is_at_stake_at_dimension_six_
+     11.8 %    2 of   17  -> honestly 15 of 17   P10_the_weighting_preserves_the_two_power_gap_and_the_chain_stops_at_a_sign_carrying_step_
+     10.3 %    3 of   29  -> honestly 26 of 29   P10_the_assembly_gives_both_level_sums_in_the_towers_own_variables_and_the_sign_needs_no_b
+     10.0 %    2 of   20  -> honestly 18 of 20   P10_step_three_is_written_down_and_it_reverses_the_previous_revisions_own_conclusion_about
+      9.1 %    1 of   11  -> honestly 10 of 11   P15_the_layer_is_R_times_S2_on_the_reassigned_chart_and_the_two_presentations_are_two_metr
+      8.3 %    3 of   36  -> honestly 33 of 36   P10_the_second_anchor_confirms_the_shift_at_a_level_with_gradients_and_the_criterion_needs
+      7.7 %    1 of   13  -> honestly 12 of 13   P15_the_licensed_rebuild_leaves_all_three_rigidity_numbers_where_they_were_and_the_forbidd
+      7.1 %    1 of   14  -> honestly 13 of 14   I10_I15_the_horizon_is_a_turning_point_and_a_fixed_point_and_Nariai_degenerates_both.py
+      6.7 %    2 of   30  -> honestly 28 of 30   P15_the_angular_label_crosses_the_lift_untouched_and_the_amplitude_does_not_because_the_li
+      6.7 %    1 of   15  -> honestly 14 of 15   P10_the_straddle_is_computed.py
+      6.2 %    3 of   48  -> honestly 45 of 48   P10_the_kinetic_cubic_vertex_is_a_split_artefact_and_the_domain_premise_fails_on_the_margi
+      6.2 %    2 of   32  -> honestly 30 of 32   P10_the_level_cubic_vanishes_at_every_even_level_and_the_bound_needs_no_bitensor_because_c
+      6.2 %    1 of   16  -> honestly 15 of 16   P10_the_odd_residue_is_the_levels_below_a_crossing_linear_in_one_constant_and_a_count_boun
+      5.9 %    1 of   17  -> honestly 16 of 17   P15_the_progenitor_spectrum_is_defined_before_the_lift_so_the_envelope_applies_to_it_and_t
+      5.6 %    1 of   18  -> honestly 17 of 18   P10_the_construction_own_regulator_reaches_the_interacting_sum_and_spends_one_counterterm_
+      5.3 %    3 of   57  -> honestly 54 of 57   P10_the_operator_is_second_order_in_momentum_so_the_weyl_function_is_real_analytic_and_str
+      5.3 %    1 of   19  -> honestly 18 of 19   P10_the_subtraction_is_at_operator_dimension_six_pinned_three_ways_and_it_is_not_degenerat
+      5.3 %    1 of   19  -> honestly 18 of 19   P10_the_same_level_sum_is_orthogonality_rather_than_an_integral_and_the_completeness_bound
+      5.0 %    1 of   20  -> honestly 19 of 20   B1_a_finding_that_routes_its_own_remedy_and_then_recurs_is_not_waiting.py
+      4.3 %    1 of   23  -> honestly 22 of 23   P15_the_licensed_configuration_moves_neither_statistic_and_the_swing_was_read_above_where_
+      4.3 %    1 of   23  -> honestly 22 of 23   P15_a_source_with_no_physics_reproduces_the_contrast_and_the_two_clocks_part_company_at_th
+      4.2 %    1 of   24  -> honestly 23 of 24   P10_the_two_anchors_are_already_one_convention_and_they_agree_but_the_candidate_prescripti
+      4.0 %    1 of   25  -> honestly 24 of 25   P14_the_walls_modes_are_algebraic_not_exponential_so_the_disjointness_obstruction_does_not
+      3.8 %    1 of   26  -> honestly 25 of 26   P10_the_covariant_quartic_is_seven_rationals_carried_by_an_identity_and_no_measurement_rou
+      3.4 %    1 of   29  -> honestly 28 of 29   P10_the_cubic_vertex_is_written_down_and_K_is_not_label_independent_so_the_algebraic_chann
+      3.3 %    1 of   30  -> honestly 29 of 30   P15_the_visibilitys_clock_is_the_one_the_kernel_reads_and_the_comb_votes_against_the_alter
+      3.3 %    1 of   30  -> honestly 29 of 30   P10_the_odd_residue_is_five_levels_and_the_sign_is_mixed_because_the_vertex_carries_covari
+      3.0 %    1 of   33  -> honestly 32 of 33   R1_the_registry_was_checked_from_citations_inward_so_twenty_rows_were_read_by_nothing.py
+      2.0 %    1 of   51  -> honestly 50 of 51   P10_the_frequency_shift_is_the_curvature_term_at_every_level_so_the_log_coefficient_is_fif
+
+  over 35 receipts: median 6.2 %, max 33.3 %, min 2.0 %
+
+  OWED SITES OUTSIDE ANY HELPER CALL (counted in neither N nor k):
+    receipts/P03_SdS_slicing/P03_the_symbol_T_carries_four_structural_referents.py:155  T1 TAUTOLOGY  found['d_groupoid_transformation'] & op or True
+
+  SPANS NOT EXECUTED (k = 0 at a site inside a helper call):

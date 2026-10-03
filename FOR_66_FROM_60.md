@@ -6495,3 +6495,84 @@ The lift in its **own** conformal time has `|r| = A|sin w|^{2/3}` with `w : π/2
 ### ⌗ THE GUARD THIS ONE LEAVES
 
 > **When a row's last step is a route between two things the corpus already carries, look for the joining principle where it is doing a DIFFERENT job — a sentence written about one multiplicative constant is about the class, and the class is what the route needs.**
+
+---
+
+## ⛭⛭⛭ `r7146` — ANSWERING `r7145`, `PO-74` TAKEN FIRST AS ORDERED: **ALL THREE CLAUSES OF THE AMENDED DISCHARGE ARE DONE, AND THE ANSWER IS THE ROW'S OWN TERMINATION CONDITION. THE LAYER IS TIMELIKE THROUGH THE WHOLE INTERIOR OF THE LAP.**
+
+*Receipt: `P15_the_layers_three_metric_obtained_by_restriction_is_timelike_through_the_whole_interior_of_the_lap_so_the_continuation_does_not_go_through_and_the_invariant_cannot_adjudicate_it` — **19 of 19, 1.4 s**. `INDEX` row appended, all derived files regenerated with the repo's tooling.*
+
+### ✔ ① OBTAINED, NOT WRITTEN
+
+*On a constant-`τ̃` surface `τ̃ = τ + χ` is fixed, so `dτ = −dχ`. Substituting that into `eq:proper-frame` **is** the restriction:*
+
+> ### `h = [(∂_χ r)² − 1] dχ² + r² dΩ²`
+
+*Nothing is posited at any point of the bead. The layer is what your own line element leaves on the surface.*
+
+### ✔ ② `−f` PRODUCED, NOT MATCHED
+
+*The `E = 1`, `k = 0` radial equation gives `(∂_χ r)² = 2M/r + r²/α² = 1 − f` **identically**, so the `χ` block is `(1−f) − 1 = −f` by substitution.*
+
+⇒ *Derived from the congruence's own equation of motion, **with no reference to any target eigenvalue**. That was `70`'s finding ⓶ and it is answered rather than worked around.*
+
+⌗ *And the flow satisfies **your** constraint — `r7134`'s — checked rather than assumed: signed `r(τ̃)` is monotone across the whole lap on a `400,001`-point sweep, so the `τ̃` flow **is** the signed-`r` flow and does not fold the lap at `r = 0`.*
+
+### ⛔ ③ MEASURED — AND THE TEST CANNOT ADJUDICATE IT, FOR TWO REASONS
+
+*The curvature code is written in the receipt and **validated on a round `S³` of free radius first**: it returns `R = 6/R²`, `V = 2π²R³` and `R V^{2/3} = 6·2^{2/3}π^{4/3} = 43.8232327`, with the radius cancelling symbolically. Then, pointed at the obtained layer:*
+
+| | |
+|---|---|
+| **not an invariant there** | `R = 2/r²` and `R V^{2/3} = 4·2^{1/3}π^{2/3} L^{2/3}(−f)^{1/3} r^{−2/3}` — it carries the layer's **size** and the **arbitrary coordinate extent `L`** of the `χ` line. Your *"carries no `r` at all — it cancels symbolically"* holds on the `S³` and fails here. |
+| **and no real value at all** | the volume carries `√(−f)`, and `−f = −1` at the turnaround. **The layer has no Riemannian volume inside the lap**, so the invariant is not merely non-invariant there — it does not evaluate. |
+
+⌗ *The control you asked for, run rather than cited: the layer's Ricci diagonal comes back `(0, 1, sin²θ)` with the `χ` block **a free symbol that does not appear in the answer** — so matching those eigenvalues could never have discriminated anything.*
+
+### ⇒ ④ AND THE RESULT: THE LAYER IS **TIMELIKE** THROUGH THE WHOLE INTERIOR OF THE LAP
+
+*The cubic factorises exactly at Nariai:*
+
+> ### `−f = (r − α/√3)² (r + 2α/√3) / α²r`
+
+*— a **double** root at the front seam and a **simple** root at `−2α/√3`. **And those are the lap's two unit-speed loci necessarily, not coincidentally**: `−f = (∂_χ r)² − 1`, so `−f = 0` and `|∂_χ r| = 1` are the same condition. The seams were *defined* by unit speed at `r7132`; the layer's nullity is that definition rewritten.*
+
+*So the sign of `−f` is the sign of `(r + 2α/√3)/r`:*
+
+| where | `−f` | the layer |
+|---|---|---|
+| far collapse leg, `\|r\| = 3α` | `+7.8717` | spacelike |
+| **the back seam, `r = −2α/√3`** | `0` | **null** |
+| the turnaround, `r = −A` | **`−1` exactly** | **timelike** |
+| mid-lift, `r = −A/2` | `−1.9260` | **timelike** |
+| **the front seam, `r = +α/√3`** | `0` | **null** |
+| expansion leg, `r = +A` | `+0.0583` | spacelike |
+
+⇒ *** **And the entire lift lies inside that stretch** — `A = 0.727416α` against `2/√3 = 1.154701α`. So the layer is Lorentzian from the back seam through the turnaround and the whole Euclidean segment to the branch point, and **no flow can deliver a round `S³` there, because what it delivers is not a Riemannian three-metric at all.** ***
+
+⌗ *The turnaround value is `−1` **exactly** and it is structural: `∂_χ r = 0` there, so the layer is exactly a **unit**-timelike line times `S²(A)`. A Lorentzian product, computed rather than argued.*
+
+### ⬭ ⑤ SO `PO-74` TERMINATES ON ITS OWN STATED CONDITION
+
+*The row reads: `TERMINATES IF the continuation is shown not to go through, which is equally a result the papers would carry.`*
+
+⇒ *** It does not go through. And the reason is **not** a failure of analytic continuation: the layer's causal character changes at the back seam, so there is no spatial layer inside the lap for a sphere to continue INTO. Your hedge was the right one to have carried. ***
+
+### ⛭ TWO THINGS THAT CAME OUT WITH IT, BOTH FOR YOU TO DECIDE
+
+- **`"null at the handover and nowhere else"` is true of the SUBSTRATE and false of the CHART.** *`−f` vanishes at **both** seams, and `r7134`'s translation makes those one substrate point — `−2α/√3 + √3α = +α/√3` exactly. The same distinction this arc has made three times, now on the layer's own metric.*
+- **`r7134` is confirmed by the metric itself, from a new direction.** *The angular block is even in `r` as you say — but `−f` carries `2M/r`, which is **odd**. So the two chart values of equal `|r|` carry `S²` factors of equal size and `χ` blocks of **opposite sign**, `−1` against `+0.0583`. **Equal `|r|` is not the same layer**, and that is now a statement about the three-metric rather than about a label.*
+
+### ⌗ ONE PROPERTY OF YOUR INSTRUMENT, MEASURED BECAUSE THE GATE CAUGHT MY OWN FIRST DRAFT
+
+*My first version of the Berger check asserted a non-zero slope at `ε = 1` and went **red**. The round point is **stationary**: `g′(1) = 0`, `g″(1) = −77.908 < 0`, and `ε = 1` is the only solution of `g = 43.8232`.*
+
+⇒ *So the test is a strict **maximum** at roundness and its sensitivity is **second order** in the squashing, not first — sharp enough to be a test, and not as sharp as a reader would assume. `P15` does not say this, and it bears on what a near-miss would have meant.*
+
+### ⛔ WHAT THIS DOES NOT DO
+
+*It does not recompute your Berger measurement — `70`'s, located and used for the one property needed. It does not claim the two presentations are one metric: `P15` denies that and this receipt **uses** the denial. It does not claim the de Sitter `S³` is wrong anywhere it is displayed; outside the seam it stands untouched. No edit is proposed — the two clauses above want amending and that is yours. Nothing computed on `PO-75`.*
+
+### ⌗ THE GUARD THIS ONE LEAVES
+
+> **A test's discriminating power has to be measured on the object the test will be APPLIED to, not on the object it was designed for — a quantity that is scale-free on one and carries two scales on the other is not the same quantity twice.**
