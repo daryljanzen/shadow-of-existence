@@ -16,6 +16,8 @@
 #   REPAIR-OWED    pins a sentence whose meaning, not wording, is the claim.  Owed a rewrite to what it is for.
 #   NOT-A-PIN      (r7131+70.1, 70) the operator's false positive: not a test of another seat's wording at all (a parse guard,
 #                  an absence claim written as `== []`, a seed that adapts to the current state).  Counted, not owed.
+#   ENCODING-OK    (r7137+70.1, 70) an ALT whose arms are encodings of ONE fact (case, markup, spacing, prefix/full line),
+#                  not states of a moving text.  It cannot fail on success.  Counted, not owed.
 #
 # ** THE REPAIR RULE IS NOT NEW: `L-249` (r3105) stated it after nine pin-breaks -- pin the historical state at the commit it
 # stood at, assert the CURRENT state separately, and make a directional live check MONOTONE. **
@@ -146,16 +148,16 @@ receipts/L165_interacting_tower/S5_the_counterterm_degeneracy_verified.py	"count
 receipts/L165_interacting_tower/S5_the_counterterm_degeneracy_verified.py	"every curvature invariant on either face is a pure power of"	PAPER	SENTENCE		UNADJUDICATED	
 receipts/L165_interacting_tower/S6_the_two_halves_restated.py	"HALF ONE"	SOURCE	TOKEN	ALT	UNADJUDICATED	
 receipts/L165_interacting_tower/S6_the_two_halves_restated.py	"HALF TWO"	SOURCE	TOKEN	ALT	UNADJUDICATED	
-receipts/L165_interacting_tower/S6_the_two_halves_restated.py	"HALF ①"	SOURCE	TOKEN	ALT	UNADJUDICATED	
+receipts/L165_interacting_tower/S6_the_two_halves_restated.py	"HALF ①"	SOURCE	TOKEN	ALT	ENCODING-OK	r7137+70.1 (70), sampled: the or-arms are encodings of ONE fact (case, markup, spacing, a prefix or its full line, a symbol and its name) -- not a disjunction over states.
 receipts/L165_interacting_tower/S6_the_two_halves_restated.py	"HALF ②"	SOURCE	TOKEN	ALT	UNADJUDICATED	
 receipts/L165_interacting_tower/S6_the_two_halves_restated.py	"Neither removal is a physics result"	SOURCE	SENTENCE		UNADJUDICATED	
 receipts/L165_interacting_tower/S6_the_two_halves_restated.py	"irrelevant to whether each of its fibres receives a condition"	SOURCE	SENTENCE		UNADJUDICATED	
 receipts/L165_interacting_tower/S6_the_two_halves_restated.py	"two halves are two halves rather than one entangled question"	SOURCE	SENTENCE		UNADJUDICATED	
-receipts/L165_interacting_tower/S7_the_successor_was_misaimed.py	"12/\\alpha^2"	SOURCE	TOKEN	ALT	UNADJUDICATED	
+receipts/L165_interacting_tower/S7_the_successor_was_misaimed.py	"12/\\alpha^2"	SOURCE	TOKEN	ALT	ENCODING-OK	r7137+70.1 (70), sampled: the or-arms are encodings of ONE fact (case, markup, spacing, a prefix or its full line, a symbol and its name) -- not a disjunction over states.
 receipts/L165_interacting_tower/S7_the_successor_was_misaimed.py	"back-react"	SOURCE	TOKEN	ALT	UNADJUDICATED	
-receipts/L165_interacting_tower/S7_the_successor_was_misaimed.py	"cosh(T/\\alpha)"	SOURCE	TOKEN	ALT	UNADJUDICATED	
+receipts/L165_interacting_tower/S7_the_successor_was_misaimed.py	"cosh(T/\\alpha)"	SOURCE	TOKEN	ALT	ENCODING-OK	r7137+70.1 (70), sampled: the or-arms are encodings of ONE fact (case, markup, spacing, a prefix or its full line, a symbol and its name) -- not a disjunction over states.
 receipts/L165_interacting_tower/S7_the_successor_was_misaimed.py	"de Sitter"	SOURCE	TOKEN	ALT	UNADJUDICATED	
-receipts/L165_interacting_tower/S7_the_successor_was_misaimed.py	"fixed classical"	SOURCE	TOKEN	ALT	UNADJUDICATED	
+receipts/L165_interacting_tower/S7_the_successor_was_misaimed.py	"fixed classical"	SOURCE	TOKEN	ALT	ENCODING-OK	r7137+70.1 (70), sampled: the or-arms are encodings of ONE fact (case, markup, spacing, a prefix or its full line, a symbol and its name) -- not a disjunction over states.
 receipts/L165_interacting_tower/S7_the_successor_was_misaimed.py	"survive on a background whose curvature runs"	SOURCE	SENTENCE		UNADJUDICATED	
 receipts/L165_interacting_tower/S8_the_floor_follows.py	"IT DOES NOT NEED A LOWER BOUND"	SOURCE	SENTENCE		UNADJUDICATED	
 receipts/L165_interacting_tower/S8_the_floor_follows.py	"at the origin"	PAPER	SENTENCE		UNADJUDICATED	
@@ -190,13 +192,13 @@ receipts/L174_general_matter_dynamics/I1_the_general_case_is_stated_and_exhibite
 receipts/L174_general_matter_dynamics/I1_the_general_case_is_stated_and_exhibited_in_one_class.py	"corrected at c54.179"	SOURCE	SENTENCE	ALT	UNADJUDICATED	
 receipts/L174_general_matter_dynamics/I1_the_general_case_is_stated_and_exhibited_in_one_class.py	"exact for arbitrary"	SOURCE	SENTENCE		UNADJUDICATED	
 receipts/L174_general_matter_dynamics/I1_the_general_case_is_stated_and_exhibited_in_one_class.py	"generation-by-symmetry hands off to evolution-by-dynamics"	PAPER	SENTENCE		UNADJUDICATED	
-receipts/L174_general_matter_dynamics/I1_the_general_case_is_stated_and_exhibited_in_one_class.py	"is corrected at c54.179"	SOURCE	SENTENCE	ALT	UNADJUDICATED	
+receipts/L174_general_matter_dynamics/I1_the_general_case_is_stated_and_exhibited_in_one_class.py	"is corrected at c54.179"	SOURCE	SENTENCE	ALT	ENCODING-OK	r7137+70.1 (70), sampled: the or-arms are encodings of ONE fact (case, markup, spacing, a prefix or its full line, a symbol and its name) -- not a disjunction over states.
 receipts/L174_general_matter_dynamics/I1_the_general_case_is_stated_and_exhibited_in_one_class.py	"no continuous isometry admits no sweep-subgroup"	PAPER	SENTENCE		UNADJUDICATED	
 receipts/L174_general_matter_dynamics/I1_the_general_case_is_stated_and_exhibited_in_one_class.py	"not the discovery of a generative law"	SOURCE	SENTENCE		UNADJUDICATED	
 receipts/L174_general_matter_dynamics/I1_the_general_case_is_stated_and_exhibited_in_one_class.py	"one equation per comoving shell"	SOURCE	SENTENCE	ALT	UNADJUDICATED	
 receipts/L174_general_matter_dynamics/I1_the_general_case_is_stated_and_exhibited_in_one_class.py	"unregistered since r565"	SOURCE	SENTENCE	ALT	UNADJUDICATED	
 receipts/L174_general_matter_dynamics/I2_the_stratification_three_of_four_are_worked.py	"K_{G}"	PAPER	TOKEN		UNADJUDICATED	
-receipts/L174_general_matter_dynamics/I2_the_stratification_three_of_four_are_worked.py	"ONE equation per comoving shell"	SOURCE	SENTENCE	ALT	UNADJUDICATED	
+receipts/L174_general_matter_dynamics/I2_the_stratification_three_of_four_are_worked.py	"ONE equation per comoving shell"	SOURCE	SENTENCE	ALT	ENCODING-OK	r7137+70.1 (70), sampled: the or-arms are encodings of ONE fact (case, markup, spacing, a prefix or its full line, a symbol and its name) -- not a disjunction over states.
 receipts/L174_general_matter_dynamics/I2_the_stratification_three_of_four_are_worked.py	"We work the first inhomogeneous, time-dependent bend explicitly"	PAPER	SENTENCE		UNADJUDICATED	
 receipts/L174_general_matter_dynamics/I2_the_stratification_three_of_four_are_worked.py	"Why the cut bends"	PAPER	SENTENCE		UNADJUDICATED	
 receipts/L174_general_matter_dynamics/I2_the_stratification_three_of_four_are_worked.py	"no continuous isometry admits no sweep-subgroup"	PAPER	SENTENCE		UNADJUDICATED	
@@ -239,7 +241,7 @@ receipts/L174_general_matter_dynamics/I8_no_sweep_reaches_the_stratum_and_the_th
 receipts/L174_general_matter_dynamics/I9_the_stratum_evolves_by_ordinary_GR_at_linear_order.py	"The graviton's two propagating polarizations"	PAPER	SENTENCE		UNADJUDICATED	
 receipts/L175_dimensional_descent/E1_a_descent_from_D_above_five_must_be_multistep.py	"bounded BELOW and never above"	SOURCE	SENTENCE		UNADJUDICATED	
 receipts/L175_dimensional_descent/E1_a_descent_from_D_above_five_must_be_multistep.py	"five-dimensional $\\mathrm{dS}_5=SO(5,1)/SO(4,1)$"	PAPER	TOKEN		UNADJUDICATED	
-receipts/L175_dimensional_descent/E1_a_descent_from_D_above_five_must_be_multistep.py	"narrowing is **always** a node's to do"	SOURCE	SENTENCE	ALT	UNADJUDICATED	
+receipts/L175_dimensional_descent/E1_a_descent_from_D_above_five_must_be_multistep.py	"narrowing is **always** a node's to do"	SOURCE	SENTENCE	ALT	ENCODING-OK	r7137+70.1 (70), sampled: the or-arms are encodings of ONE fact (case, markup, spacing, a prefix or its full line, a symbol and its name) -- not a disjunction over states.
 receipts/L175_dimensional_descent/E1_a_descent_from_D_above_five_must_be_multistep.py	"narrowing is always a node"	SOURCE	SENTENCE	ALT	UNADJUDICATED	
 receipts/L175_dimensional_descent/E1_a_descent_from_D_above_five_must_be_multistep.py	"swings about one fixed line in the substrate, the hinge"	PAPER	SENTENCE		UNADJUDICATED	
 receipts/L175_dimensional_descent/E1_a_descent_from_D_above_five_must_be_multistep.py	"the four-dimensional $\\mathrm{dS}_4$ is the \\emph{background} its leaves carry"	PAPER	SENTENCE		UNADJUDICATED	
@@ -250,7 +252,7 @@ receipts/L175_dimensional_descent/E2_one_step_ness_is_governed_by_rule_two.py	"b
 receipts/L175_dimensional_descent/E2_one_step_ness_is_governed_by_rule_two.py	"excluded not as disfavoured but as carrying an unfixed arbitrary modulus"	PAPER	SENTENCE		UNADJUDICATED	
 receipts/L175_dimensional_descent/E2_one_step_ness_is_governed_by_rule_two.py	"has a single moving part"	PAPER	SENTENCE		UNADJUDICATED	
 receipts/L175_dimensional_descent/E2_one_step_ness_is_governed_by_rule_two.py	"least-arbitrariness being the programme's own criterion of necessity"	PAPER	SENTENCE		UNADJUDICATED	
-receipts/L175_dimensional_descent/E2_one_step_ness_is_governed_by_rule_two.py	"narrowing is **always** a node"	SOURCE	SENTENCE	ALT	UNADJUDICATED	
+receipts/L175_dimensional_descent/E2_one_step_ness_is_governed_by_rule_two.py	"narrowing is **always** a node"	SOURCE	SENTENCE	ALT	ENCODING-OK	r7137+70.1 (70), sampled: the or-arms are encodings of ONE fact (case, markup, spacing, a prefix or its full line, a symbol and its name) -- not a disjunction over states.
 receipts/L175_dimensional_descent/E2_one_step_ness_is_governed_by_rule_two.py	"narrowing is always a node"	SOURCE	SENTENCE	ALT	UNADJUDICATED	
 receipts/L175_dimensional_descent/E2_one_step_ness_is_governed_by_rule_two.py	"places a slicing plane on each"	PAPER	SENTENCE		UNADJUDICATED	
 receipts/L175_dimensional_descent/E2_one_step_ness_is_governed_by_rule_two.py	"the adjustable parameter that criterion rejects"	PAPER	SENTENCE		UNADJUDICATED	
@@ -435,7 +437,7 @@ receipts/L204_physics_reach/C3_the_isotropy_citation_runs_in_a_loop.py	"Type I (
 receipts/L204_physics_reach/C3_the_isotropy_citation_runs_in_a_loop.py	"\\mathrm{SO}(2,1)\\times\\mathrm{SO}(3)$ at Nariai"	PAPER	SENTENCE		UNADJUDICATED	
 receipts/L204_physics_reach/C3_the_isotropy_citation_runs_in_a_loop.py	"\\{6,7,10\\}"	PAPER	TOKEN		UNADJUDICATED	
 receipts/L204_physics_reach/C3_the_isotropy_citation_runs_in_a_loop.py	"the companion algebroid paper tabulates an isotropy"	PAPER	SENTENCE		UNADJUDICATED	
-receipts/L204_physics_reach/P10_the_neff_commitment_is_in_the_code_and_in_no_paper.py	"(4.0/11.0)**(1.0/3.0)"	SOURCE	TOKEN	ALT	UNADJUDICATED	
+receipts/L204_physics_reach/P10_the_neff_commitment_is_in_the_code_and_in_no_paper.py	"(4.0/11.0)**(1.0/3.0)"	SOURCE	TOKEN	ALT	ENCODING-OK	r7137+70.1 (70), sampled: the or-arms are encodings of ONE fact (case, markup, spacing, a prefix or its full line, a symbol and its name) -- not a disjunction over states.
 receipts/L204_physics_reach/P10_the_neff_commitment_is_in_the_code_and_in_no_paper.py	"(4/11)"	SOURCE	TOKEN	ALT	UNADJUDICATED	
 receipts/L204_physics_reach/P10_the_neff_commitment_is_in_the_code_and_in_no_paper.py	"3 nu"	SOURCE	TOKEN	ALT	UNADJUDICATED	
 receipts/L204_physics_reach/P10_the_neff_commitment_is_in_the_code_and_in_no_paper.py	"BBN, recombination, the acoustic scale"	SOURCE	SENTENCE		UNADJUDICATED	
@@ -460,12 +462,12 @@ receipts/L204_physics_reach/P11_CR_fixes_the_place_not_the_couplings.py	"with a 
 receipts/L204_physics_reach/P12_the_adiabatic_premise_is_inherited_not_assumed.py	"206"	SOURCE	TOKEN		UNADJUDICATED	
 receipts/L204_physics_reach/P12_the_adiabatic_premise_is_inherited_not_assumed.py	"220"	SOURCE	TOKEN		UNADJUDICATED	
 receipts/L204_physics_reach/P12_the_adiabatic_premise_is_inherited_not_assumed.py	"294"	SOURCE	TOKEN		UNADJUDICATED	
-receipts/L204_physics_reach/P12_the_adiabatic_premise_is_inherited_not_assumed.py	"3.3"	SOURCE	TOKEN	ALT	UNADJUDICATED	
+receipts/L204_physics_reach/P12_the_adiabatic_premise_is_inherited_not_assumed.py	"3.3"	SOURCE	TOKEN	ALT	REPAIR-OWED	r7137+70.1 (70), sampled: a VACUOUS arm -- '3.3' matches almost any text, so the disjunction asserts almost nothing. Repair: drop or tighten that arm.
 receipts/L204_physics_reach/P12_the_adiabatic_premise_is_inherited_not_assumed.py	"327"	SOURCE	TOKEN		UNADJUDICATED	
 receipts/L204_physics_reach/P12_the_adiabatic_premise_is_inherited_not_assumed.py	"a fully specified input, available from standard cosmology, and not an idealisation to be chosen"	PAPER	SENTENCE		UNADJUDICATED	
 receipts/L204_physics_reach/P12_the_adiabatic_premise_is_inherited_not_assumed.py	"a nearly scale-invariant adiabatic spectrum processed by ordinary structure formation"	PAPER	SENTENCE		UNADJUDICATED	
 receipts/L204_physics_reach/P12_the_adiabatic_premise_is_inherited_not_assumed.py	"available from standard cosmology"	PAPER	SENTENCE		UNADJUDICATED	
-receipts/L204_physics_reach/P12_the_adiabatic_premise_is_inherited_not_assumed.py	"rescal"	SOURCE	TOKEN	ALT	UNADJUDICATED	
+receipts/L204_physics_reach/P12_the_adiabatic_premise_is_inherited_not_assumed.py	"rescal"	SOURCE	TOKEN	ALT	REPAIR-OWED	r7137+70.1 (70), sampled: a VACUOUS arm -- its sibling arm '3.3' matches almost any text, so the disjunction asserts almost nothing. Repair: drop or tighten that arm.
 receipts/L204_physics_reach/P12_the_adiabatic_premise_is_inherited_not_assumed.py	"the data demand it"	PAPER	SENTENCE	ALT	UNADJUDICATED	
 receipts/L204_physics_reach/P12_the_adiabatic_premise_is_inherited_not_assumed.py	"two independent supports"	PAPER	SENTENCE	ALT	UNADJUDICATED	
 receipts/L204_physics_reach/P12_the_adiabatic_premise_is_inherited_not_assumed.py	"wrong place"	SOURCE	TOKEN	ALT	UNADJUDICATED	
@@ -499,7 +501,7 @@ receipts/L204_physics_reach/P2_the_corpus_never_mentions_unruh.py	"with no compl
 receipts/L204_physics_reach/P2_the_corpus_never_mentions_unruh.py	"with no completed horizon there is no background on which the Bogoliubov mode-mixing yielding an exactly thermal Hawking flux can be computed"	PAPER	SENTENCE		UNADJUDICATED	
 receipts/L204_physics_reach/P3_the_higgs_is_declined_in_print_and_never_named.py	"CR is a \\emph{selection-rule}"	SOURCE	SENTENCE	ALT	UNADJUDICATED	
 receipts/L204_physics_reach/P3_the_higgs_is_declined_in_print_and_never_named.py	"No vacuum expectation value, no scale and no mass value follows"	PAPER	SENTENCE		UNADJUDICATED	
-receipts/L204_physics_reach/P3_the_higgs_is_declined_in_print_and_never_named.py	"SELECTION-RULE"	SOURCE	TOKEN	ALT	UNADJUDICATED	
+receipts/L204_physics_reach/P3_the_higgs_is_declined_in_print_and_never_named.py	"SELECTION-RULE"	SOURCE	TOKEN	ALT	ENCODING-OK	r7137+70.1 (70), sampled: the or-arms are encodings of ONE fact (case, markup, spacing, a prefix or its full line, a symbol and its name) -- not a disjunction over states.
 receipts/L204_physics_reach/P3_the_higgs_is_declined_in_print_and_never_named.py	"SM / gauge / particle physics"	SOURCE	SENTENCE		UNADJUDICATED	
 receipts/L204_physics_reach/P3_the_higgs_is_declined_in_print_and_never_named.py	"The electroweak breaking that supplies the fermion mass is, in this reading, the breaking of the substrate's orientation parity"	PAPER	SENTENCE		UNADJUDICATED	
 receipts/L204_physics_reach/P3_the_higgs_is_declined_in_print_and_never_named.py	"Three parts of the content the geometry does not fix---the individual mass values, the electroweak scale and assignment, and the cosmological breaking history---and those are fixed on the ordinary route"	PAPER	SENTENCE		UNADJUDICATED	
@@ -564,8 +566,8 @@ receipts/L210_entry_points/H1_the_FRW_case_is_the_same_cycloid.py	"a CONSTANT"	S
 receipts/L210_entry_points/H1_the_FRW_case_is_the_same_cycloid.py	"bound-LTB form"	SOURCE	TOKEN		UNADJUDICATED	
 receipts/L210_entry_points/H1_the_FRW_case_is_the_same_cycloid.py	"non-degenerate critical points of identical analytic character"	PAPER	SENTENCE		UNADJUDICATED	
 receipts/L210_entry_points/H1_the_FRW_case_is_the_same_cycloid.py	"r(z)=M(1+\\cos z)$"	PAPER	TOKEN		UNADJUDICATED	
-receipts/L211_closure_adjacency/A1_the_venue_question_dissolves_and_curvature_remains.py	"CLOSURE-ADJACENCY"	SOURCE	TOKEN	ALT	UNADJUDICATED	
-receipts/L211_closure_adjacency/A1_the_venue_question_dissolves_and_curvature_remains.py	"EXACTLY ONE"	SOURCE	TOKEN	ALT	UNADJUDICATED	
+receipts/L211_closure_adjacency/A1_the_venue_question_dissolves_and_curvature_remains.py	"CLOSURE-ADJACENCY"	SOURCE	TOKEN	ALT	ENCODING-OK	r7137+70.1 (70), sampled: the or-arms are encodings of ONE fact (case, markup, spacing, a prefix or its full line, a symbol and its name) -- not a disjunction over states.
+receipts/L211_closure_adjacency/A1_the_venue_question_dissolves_and_curvature_remains.py	"EXACTLY ONE"	SOURCE	TOKEN	ALT	ENCODING-OK	r7137+70.1 (70), sampled: the or-arms are encodings of ONE fact (case, markup, spacing, a prefix or its full line, a symbol and its name) -- not a disjunction over states.
 receipts/L211_closure_adjacency/A1_the_venue_question_dissolves_and_curvature_remains.py	"P13_the_construction_is_specifiable_and_colour_sits_in_the_spin_group"	PAPER	TOKEN		UNADJUDICATED	
 receipts/L211_closure_adjacency/A1_the_venue_question_dissolves_and_curvature_remains.py	"The module is the \\emph{branching} itself"	PAPER	SENTENCE		UNADJUDICATED	
 receipts/L211_closure_adjacency/A1_the_venue_question_dissolves_and_curvature_remains.py	"\\emph{selected} rather than chosen"	PAPER	SENTENCE	ALT	UNADJUDICATED	
@@ -645,7 +647,7 @@ receipts/L218_reader_package/R2_the_contribution_is_unlinked_not_undefined.py	"N
 receipts/L218_reader_package/R2_the_contribution_is_unlinked_not_undefined.py	"finally getting human interaction"	SOURCE	SENTENCE		UNADJUDICATED	
 receipts/L218_reader_package/R2_the_contribution_is_unlinked_not_undefined.py	"the contribution"	SOURCE	TOKEN		UNADJUDICATED	
 receipts/L218_reader_package/R2_the_contribution_is_unlinked_not_undefined.py	"the opposite of both the lone-genius myth"	SOURCE	SENTENCE		UNADJUDICATED	
-receipts/L220_arrival_paths/V2_the_arrival_path_admits_no_metric.py	"ALREADY FIXED BY THE FORK"	SOURCE	SENTENCE	ALT	UNADJUDICATED	
+receipts/L220_arrival_paths/V2_the_arrival_path_admits_no_metric.py	"ALREADY FIXED BY THE FORK"	SOURCE	SENTENCE	ALT	ENCODING-OK	r7137+70.1 (70), sampled: the or-arms are encodings of ONE fact (case, markup, spacing, a prefix or its full line, a symbol and its name) -- not a disjunction over states.
 receipts/L220_arrival_paths/V2_the_arrival_path_admits_no_metric.py	"This is proved here from the maximal-symmetry requirement together with the signature and causal-structure conditions; nothing is assumed of the embedding"	PAPER	SENTENCE		UNADJUDICATED	
 receipts/L220_arrival_paths/V2_the_arrival_path_admits_no_metric.py	"answers a question in the next sentence"	SOURCE	SENTENCE		UNADJUDICATED	
 receipts/L220_arrival_paths/V2_the_arrival_path_admits_no_metric.py	"label\\{prop:amplitude\\}.{0,1200}?\\\\noindent\\\\emph\\{Argument"	PAPER	TOKEN		UNADJUDICATED	
@@ -723,13 +725,13 @@ receipts/L221_the_bridge/B11_three_triples_two_identifications.py	"DISCHARGED r2
 receipts/L221_the_bridge/B11_three_triples_two_identifications.py	"Whether the two triples are one structure"	PAPER	SENTENCE		UNADJUDICATED	
 receipts/L221_the_bridge/B11_three_triples_two_identifications.py	"janzen_circle_v3"	SOURCE	TOKEN		UNADJUDICATED	
 receipts/L221_the_bridge/B11_three_triples_two_identifications.py	"no derivation producing $\\{0,1,2\\}$ from a single condition has been exhibited"	PAPER	SENTENCE		UNADJUDICATED	
-receipts/L221_the_bridge/B11_three_triples_two_identifications.py	"same $A_2$"	SOURCE	TOKEN	ALT	UNADJUDICATED	
+receipts/L221_the_bridge/B11_three_triples_two_identifications.py	"same $A_2$"	SOURCE	TOKEN	ALT	ENCODING-OK	r7137+70.1 (70), sampled: the or-arms are encodings of ONE fact (case, markup, spacing, a prefix or its full line, a symbol and its name) -- not a disjunction over states.
 receipts/L221_the_bridge/B11_three_triples_two_identifications.py	"the three critical loci are the three causal characters"	PAPER	SENTENCE		UNADJUDICATED	
 receipts/L221_the_bridge/B11_three_triples_two_identifications.py	"the three wall modes are one operator's kernel and therefore identical particles"	PAPER	SENTENCE		UNADJUDICATED	
 receipts/L221_the_bridge/B11_three_triples_two_identifications.py	"three zero-sum roots are the $A_2$ weights that $S_3$ permutes"	PAPER	SENTENCE	ALT	UNADJUDICATED	
 receipts/L221_the_bridge/B11_three_triples_two_identifications.py	"three zero-sum roots are the $A_{2}$ weights that $S_{3}$ permutes"	PAPER	SENTENCE	ALT	UNADJUDICATED	
 receipts/L221_the_bridge/B12_the_two_triples_are_typed_differently.py	"-2/\\sqrt3"	SOURCE	TOKEN	ALT	UNADJUDICATED	
-receipts/L221_the_bridge/B12_the_two_triples_are_typed_differently.py	"1/\\sqrt3"	SOURCE	TOKEN	ALT	UNADJUDICATED	
+receipts/L221_the_bridge/B12_the_two_triples_are_typed_differently.py	"1/\\sqrt3"	SOURCE	TOKEN	ALT	ENCODING-OK	r7137+70.1 (70), sampled: the or-arms are encodings of ONE fact (case, markup, spacing, a prefix or its full line, a symbol and its name) -- not a disjunction over states.
 receipts/L221_the_bridge/B12_the_two_triples_are_typed_differently.py	"1/\\sqrt3$ and the one distinguished by the merger is $-2/\\sqrt3$"	SOURCE	SENTENCE	ALT	UNADJUDICATED	
 receipts/L221_the_bridge/B12_the_two_triples_are_typed_differently.py	"Whether the two triples are one structure"	PAPER	SENTENCE		UNADJUDICATED	
 receipts/L221_the_bridge/B12_the_two_triples_are_typed_differently.py	"no derivation producing $\\{0,1,2\\}$ from a single condition has been exhibited"	PAPER	SENTENCE		UNADJUDICATED	
@@ -828,7 +830,7 @@ receipts/L221_the_bridge/B2_the_mod_two_prerequisite_is_already_built.py	"kinema
 receipts/L221_the_bridge/B2_the_mod_two_prerequisite_is_already_built.py	"only the order-two subgroup"	PAPER	SENTENCE		UNADJUDICATED	
 receipts/L221_the_bridge/B2_the_mod_two_prerequisite_is_already_built.py	"realised on the built fermion sector"	PAPER	SENTENCE		UNADJUDICATED	
 receipts/L221_the_bridge/B30_the_parameter_has_the_wrong_signature.py	"two ends of one hinge are timelike separated"	PAPER	SENTENCE		UNADJUDICATED	
-receipts/L221_the_bridge/B31_the_wall_reason_is_too_narrow.py	"F=0"	SOURCE	TOKEN	ALT	UNADJUDICATED	
+receipts/L221_the_bridge/B31_the_wall_reason_is_too_narrow.py	"F=0"	SOURCE	TOKEN	ALT	ENCODING-OK	r7137+70.1 (70), sampled: the or-arms are encodings of ONE fact (case, markup, spacing, a prefix or its full line, a symbol and its name) -- not a disjunction over states.
 receipts/L221_the_bridge/B31_the_wall_reason_is_too_narrow.py	"F\\equiv0"	SOURCE	TOKEN	ALT	UNADJUDICATED	
 receipts/L221_the_bridge/B31_the_wall_reason_is_too_narrow.py	"F^2"	SOURCE	TOKEN	ALT	UNADJUDICATED	
 receipts/L221_the_bridge/B31_the_wall_reason_is_too_narrow.py	"SL(2"	SOURCE	TOKEN		UNADJUDICATED	
@@ -1091,7 +1093,7 @@ receipts/L237_gates_check_declarations/G1_every_gate_checks_a_declaration.py	"WI
 receipts/L237_gates_check_declarations/G1_every_gate_checks_a_declaration.py	"a gate can check a DECLARATION"	SOURCE	SENTENCE	ALT	UNADJUDICATED	
 receipts/L237_gates_check_declarations/G1_every_gate_checks_a_declaration.py	"check a DECLARATION"	SOURCE	SENTENCE	ALT	UNADJUDICATED	
 receipts/L237_gates_check_declarations/G1_every_gate_checks_a_declaration.py	"check_loci"	SOURCE	TOKEN		UNADJUDICATED	
-receipts/L237_gates_check_declarations/G1_every_gate_checks_a_declaration.py	"scanner"	SOURCE	TOKEN	ALT	UNADJUDICATED	
+receipts/L237_gates_check_declarations/G1_every_gate_checks_a_declaration.py	"scanner"	SOURCE	TOKEN	ALT	REPAIR-OWED	r7137+70.1 (70), sampled: a VACUOUS arm -- 'scanner' passes on any mention, whatever the scanner's state, so the disjunction asserts almost nothing. Repair: drop or tighten that arm.
 receipts/L237_gates_check_declarations/G1_every_gate_checks_a_declaration.py	"the scanner is not built"	SOURCE	SENTENCE	ALT	UNADJUDICATED	
 receipts/L237_gates_check_declarations/G50_the_receipt_runner_gate_was_green_because_its_cache_had_no_expiry.py	"eta fixes the abundances and the CMB peak HEIGHTS, rho_r/rho_m"	SOURCE	SENTENCE		UNADJUDICATED	
 receipts/L237_gates_check_declarations/G51_the_twelve_can_all_exit_non_zero_and_the_backlog_is_an_artefact.py	"CAN_EXIT\\s*=\\s*re\\.compile\\(r'([^']+)'"	SOURCE	TOKEN		UNADJUDICATED	
@@ -1155,7 +1157,7 @@ receipts/L255_the_exemption_was_a_claim/E1_an_exemption_is_a_claim_and_all_three
 receipts/L255_the_exemption_was_a_claim/E1_an_exemption_is_a_claim_and_all_three_were_false.py	"TimeoutExpired"	SOURCE	TOKEN		UNADJUDICATED	
 receipts/L255_the_exemption_was_a_claim/E1_an_exemption_is_a_claim_and_all_three_were_false.py	"header(t)"	SOURCE	TOKEN		UNADJUDICATED	
 receipts/L255_the_exemption_was_a_claim/E1_an_exemption_is_a_claim_and_all_three_were_false.py	"not judged either way"	SOURCE	SENTENCE		UNADJUDICATED	
-receipts/L255_the_exemption_was_a_claim/E1_an_exemption_is_a_claim_and_all_three_were_false.py	"seed_took"	SOURCE	TOKEN	ALT	UNADJUDICATED	
+receipts/L255_the_exemption_was_a_claim/E1_an_exemption_is_a_claim_and_all_three_were_false.py	"seed_took"	SOURCE	TOKEN	ALT	ENCODING-OK	r7137+70.1 (70), sampled: the or-arms are encodings of ONE fact (case, markup, spacing, a prefix or its full line, a symbol and its name) -- not a disjunction over states.
 receipts/L255_the_exemption_was_a_claim/E1_an_exemption_is_a_claim_and_all_three_were_false.py	"subprocess.run"	SOURCE	TOKEN		UNADJUDICATED	
 receipts/L255_the_exemption_was_a_claim/E1_an_exemption_is_a_claim_and_all_three_were_false.py	"with no reason given"	SOURCE	SENTENCE		UNADJUDICATED	
 receipts/L256_the_band_taken/B1_a_finding_that_routes_its_own_remedy_and_then_recurs_is_not_waiting.py	"NAMED, not dated"	SOURCE	SENTENCE		UNADJUDICATED	
@@ -1249,7 +1251,7 @@ receipts/L269_the_second_theatre/T1_the_whole_physics_theatre_declared_its_walk_
 receipts/L269_the_second_theatre/T1_the_whole_physics_theatre_declared_its_walk_complete_and_the_list_carried_all_seven.py	"a consistency check that matches nothing is green forever"	SOURCE	SENTENCE	ALT	UNADJUDICATED	
 receipts/L269_the_second_theatre/T1_the_whole_physics_theatre_declared_its_walk_complete_and_the_list_carried_all_seven.py	"carried Ⓕ as owed for forty-eight revisions"	SOURCE	SENTENCE	OPEN	UNADJUDICATED	
 receipts/L269_the_second_theatre/T1_the_whole_physics_theatre_declared_its_walk_complete_and_the_list_carried_all_seven.py	"every station"	SOURCE	TOKEN		UNADJUDICATED	
-receipts/L269_the_second_theatre/T1_the_whole_physics_theatre_declared_its_walk_complete_and_the_list_carried_all_seven.py	"green forever"	SOURCE	TOKEN	ALT	UNADJUDICATED	
+receipts/L269_the_second_theatre/T1_the_whole_physics_theatre_declared_its_walk_complete_and_the_list_carried_all_seven.py	"green forever"	SOURCE	TOKEN	ALT	ENCODING-OK	r7137+70.1 (70), sampled: the or-arms are encodings of ONE fact (case, markup, spacing, a prefix or its full line, a symbol and its name) -- not a disjunction over states.
 receipts/L269_the_second_theatre/T1_the_whole_physics_theatre_declared_its_walk_complete_and_the_list_carried_all_seven.py	"had already been run"	SOURCE	SENTENCE		UNADJUDICATED	
 receipts/L269_the_second_theatre/T1_the_whole_physics_theatre_declared_its_walk_complete_and_the_list_carried_all_seven.py	"if not control_fires():"	SOURCE	SENTENCE		UNADJUDICATED	
 receipts/L269_the_second_theatre/T1_the_whole_physics_theatre_declared_its_walk_complete_and_the_list_carried_all_seven.py	"reported six stations as AGREED that it had simply not read"	SOURCE	SENTENCE	ALT	UNADJUDICATED	
@@ -1279,7 +1281,7 @@ receipts/L272_the_survey_that_was_a_memory/F1_the_outstanding_bake_list_was_surv
 receipts/L272_the_survey_that_was_a_memory/F1_the_outstanding_bake_list_was_surveyed_once_and_three_passes_were_needed_to_trust_it.py	"arbitrary"	SOURCE	TOKEN		UNADJUDICATED	
 receipts/L272_the_survey_that_was_a_memory/F1_the_outstanding_bake_list_was_surveyed_once_and_three_passes_were_needed_to_trust_it.py	"bifurcation-theoretic sense"	SOURCE	TOKEN		UNADJUDICATED	
 receipts/L272_the_survey_that_was_a_memory/F1_the_outstanding_bake_list_was_surveyed_once_and_three_passes_were_needed_to_trust_it.py	"is a FOLD"	SOURCE	SENTENCE	ALT	UNADJUDICATED	
-receipts/L272_the_survey_that_was_a_memory/F1_the_outstanding_bake_list_was_surveyed_once_and_three_passes_were_needed_to_trust_it.py	"limit-point"	SOURCE	TOKEN	ALT	UNADJUDICATED	
+receipts/L272_the_survey_that_was_a_memory/F1_the_outstanding_bake_list_was_surveyed_once_and_three_passes_were_needed_to_trust_it.py	"limit-point"	SOURCE	TOKEN	ALT	ENCODING-OK	r7137+70.1 (70), sampled: the or-arms are encodings of ONE fact (case, markup, spacing, a prefix or its full line, a symbol and its name) -- not a disjunction over states.
 receipts/L272_the_survey_that_was_a_memory/F1_the_outstanding_bake_list_was_surveyed_once_and_three_passes_were_needed_to_trust_it.py	"return 1"	SOURCE	TOKEN		UNADJUDICATED	
 receipts/L272_the_survey_that_was_a_memory/F1_the_outstanding_bake_list_was_surveyed_once_and_three_passes_were_needed_to_trust_it.py	"the Nariai merger is a FOLD"	SOURCE	SENTENCE	ALT	UNADJUDICATED	
 receipts/L272_the_survey_that_was_a_memory/F1_the_outstanding_bake_list_was_surveyed_once_and_three_passes_were_needed_to_trust_it.py	"word-bounded and keys stripped"	SOURCE	SENTENCE		UNADJUDICATED	
@@ -1397,7 +1399,7 @@ receipts/L557_the_correction_stopped_at_the_sentence/R1_the_correction_stopped_a
 receipts/L557_the_correction_stopped_at_the_sentence/R1_the_correction_stopped_at_the_sentence_and_the_number_it_defines_was_left_behind.py	"7.65"	SOURCE	TOKEN		UNADJUDICATED	
 receipts/L557_the_correction_stopped_at_the_sentence/R1_the_correction_stopped_at_the_sentence_and_the_number_it_defines_was_left_behind.py	"8.24"	SOURCE	TOKEN		UNADJUDICATED	
 receipts/L557_the_correction_stopped_at_the_sentence/R1_the_correction_stopped_at_the_sentence_and_the_number_it_defines_was_left_behind.py	"CONTESTED"	SOURCE	TOKEN		UNADJUDICATED	
-receipts/L557_the_correction_stopped_at_the_sentence/R1_the_correction_stopped_at_the_sentence_and_the_number_it_defines_was_left_behind.py	"CR/LCDM"	SOURCE	TOKEN	ALT	UNADJUDICATED	
+receipts/L557_the_correction_stopped_at_the_sentence/R1_the_correction_stopped_at_the_sentence_and_the_number_it_defines_was_left_behind.py	"CR/LCDM"	SOURCE	TOKEN	ALT	REPAIR-OWED	r7137+70.1 (70), sampled: a VACUOUS arm -- 'CR/LCDM' passes on the label without the value 1.0816, so the disjunction asserts almost nothing. Repair: drop or tighten that arm.
 receipts/L557_the_correction_stopped_at_the_sentence/R1_the_correction_stopped_at_the_sentence_and_the_number_it_defines_was_left_behind.py	"c54.223"	SOURCE	TOKEN		UNADJUDICATED	
 receipts/L557_the_correction_stopped_at_the_sentence/R1_the_correction_stopped_at_the_sentence_and_the_number_it_defines_was_left_behind.py	"recorded r2376+c54.160 and NOW RESOLVED"	SOURCE	SENTENCE		UNADJUDICATED	
 receipts/L557_the_correction_stopped_at_the_sentence/R1_the_correction_stopped_at_the_sentence_and_the_number_it_defines_was_left_behind.py	"stale"	SOURCE	TOKEN		UNADJUDICATED	
@@ -1412,7 +1414,7 @@ receipts/L559_the_registry_from_files_inward/O1_the_registry_was_turned_outward_
 receipts/L559_the_registry_from_files_inward/O1_the_registry_was_turned_outward_and_the_arrow_still_pointed_one_way.py	"THIS GATE IS NOT IN THE STANDING TEN"	SOURCE	SENTENCE		UNADJUDICATED	
 receipts/L559_the_registry_from_files_inward/O1_the_registry_was_turned_outward_and_the_arrow_still_pointed_one_way.py	"bbn_network"	SOURCE	TOKEN		UNADJUDICATED	
 receipts/L559_the_registry_from_files_inward/O1_the_registry_was_turned_outward_and_the_arrow_still_pointed_one_way.py	"no INDEX row"	SOURCE	SENTENCE	ALT	UNADJUDICATED	
-receipts/L559_the_registry_from_files_inward/O1_the_registry_was_turned_outward_and_the_arrow_still_pointed_one_way.py	"still have no INDEX row"	SOURCE	SENTENCE	ALT	UNADJUDICATED	
+receipts/L559_the_registry_from_files_inward/O1_the_registry_was_turned_outward_and_the_arrow_still_pointed_one_way.py	"still have no INDEX row"	SOURCE	SENTENCE	ALT	ENCODING-OK	r7137+70.1 (70), sampled: the or-arms are encodings of ONE fact (case, markup, spacing, a prefix or its full line, a symbol and its name) -- not a disjunction over states.
 receipts/L560_pins_into_moving_prose/P1_the_last_five_failures_were_pins_into_prose_that_later_correct_work_moved.py	"ARITHMETIC OF THE OLD PROBE"	SOURCE	SENTENCE		UNADJUDICATED	
 receipts/L560_pins_into_moving_prose/P1_the_last_five_failures_were_pins_into_prose_that_later_correct_work_moved.py	"CORRECTED c54.228"	SOURCE	TOKEN		UNADJUDICATED	
 receipts/L560_pins_into_moving_prose/P1_the_last_five_failures_were_pins_into_prose_that_later_correct_work_moved.py	"\\emph{On the constant side}"	PAPER	SENTENCE		UNADJUDICATED	
@@ -1505,7 +1507,7 @@ receipts/L_probability/S1_the_corpus_sweep_finds_no_headline_resting_on_an_overc
 receipts/L_probability/S1_the_corpus_sweep_finds_no_headline_resting_on_an_overclaimed_sigma_and_three_in_one_paper_below_it.py	"2.19 (statistical, from COV_TT)"	SOURCE	SENTENCE		UNADJUDICATED	
 receipts/L_probability/S1_the_corpus_sweep_finds_no_headline_resting_on_an_overclaimed_sigma_and_three_in_one_paper_below_it.py	"Cooke"	SOURCE	TOKEN		UNADJUDICATED	
 receipts/L_probability/S1_the_corpus_sweep_finds_no_headline_resting_on_an_overclaimed_sigma_and_three_in_one_paper_below_it.py	"DU = np.array([delta_on("	SOURCE	SENTENCE		UNADJUDICATED	
-receipts/L_probability/S1_the_corpus_sweep_finds_no_headline_resting_on_an_overclaimed_sigma_and_three_in_one_paper_below_it.py	"INPUT"	SOURCE	TOKEN	ALT	UNADJUDICATED	
+receipts/L_probability/S1_the_corpus_sweep_finds_no_headline_resting_on_an_overclaimed_sigma_and_three_in_one_paper_below_it.py	"INPUT"	SOURCE	TOKEN	ALT	REPAIR-OWED	r7137+70.1 (70), sampled: a VACUOUS arm -- 'INPUT' passes on any file carrying the word, so the disjunction asserts almost nothing. Repair: drop or tighten that arm.
 receipts/L_probability/S1_the_corpus_sweep_finds_no_headline_resting_on_an_overclaimed_sigma_and_three_in_one_paper_below_it.py	"INPUT x0 = 1.6648 +- 0.0467"	SOURCE	SENTENCE		UNADJUDICATED	
 receipts/L_probability/S1_the_corpus_sweep_finds_no_headline_resting_on_an_overclaimed_sigma_and_three_in_one_paper_below_it.py	"It is not the sky's uncertainty"	SOURCE	SENTENCE		UNADJUDICATED	
 receipts/L_probability/S1_the_corpus_sweep_finds_no_headline_resting_on_an_overclaimed_sigma_and_three_in_one_paper_below_it.py	"NOT a re-opening of the phase intercept"	SOURCE	SENTENCE		UNADJUDICATED	
@@ -1829,11 +1831,11 @@ receipts/P15_CR_cosmology/C41b_a_tilde_on_a_settled_value_is_a_stale_hedge.py	"1
 receipts/P15_CR_cosmology/C41b_a_tilde_on_a_settled_value_is_a_stale_hedge.py	"301.76"	PAPER	TOKEN		UNADJUDICATED	
 receipts/P15_CR_cosmology/C41b_a_tilde_on_a_settled_value_is_a_stale_hedge.py	"MEAS_L - 301.76"	SOURCE	SENTENCE		UNADJUDICATED	
 receipts/P15_CR_cosmology/C42_the_cancellation_needs_xe_identical.py	"cancel identically, PROVIDED"	SOURCE	SENTENCE		UNADJUDICATED	
-receipts/P15_CR_cosmology/C42_the_cancellation_needs_xe_identical.py	"ionization"	SOURCE	TOKEN	ALT	UNADJUDICATED	
+receipts/P15_CR_cosmology/C42_the_cancellation_needs_xe_identical.py	"ionization"	SOURCE	TOKEN	ALT	ENCODING-OK	r7137+70.1 (70), sampled: the or-arms are encodings of ONE fact (case, markup, spacing, a prefix or its full line, a symbol and its name) -- not a disjunction over states.
 receipts/P15_CR_cosmology/C42_the_cancellation_needs_xe_identical.py	"which they are: recombination is the same"	SOURCE	SENTENCE		UNADJUDICATED	
 receipts/P15_CR_cosmology/C42_the_cancellation_needs_xe_identical.py	"x_e"	SOURCE	TOKEN	ALT	UNADJUDICATED	
-receipts/P15_CR_cosmology/C43_the_gap_is_numerical_not_xe.py	"GATE] radincl pi*r_D/r_s"	SOURCE	SENTENCE	ALT	UNADJUDICATED	
-receipts/P15_CR_cosmology/C43_the_gap_is_numerical_not_xe.py	"pi*r_D/r_s"	SOURCE	TOKEN	ALT	UNADJUDICATED	
+receipts/P15_CR_cosmology/C43_the_gap_is_numerical_not_xe.py	"GATE] radincl pi*r_D/r_s"	SOURCE	SENTENCE	ALT	ENCODING-OK	r7137+70.1 (70), sampled: the or-arms are encodings of ONE fact (case, markup, spacing, a prefix or its full line, a symbol and its name) -- not a disjunction over states.
+receipts/P15_CR_cosmology/C43_the_gap_is_numerical_not_xe.py	"pi*r_D/r_s"	SOURCE	TOKEN	ALT	ENCODING-OK	r7137+70.1 (70), sampled: the or-arms are encodings of ONE fact (case, markup, spacing, a prefix or its full line, a symbol and its name) -- not a disjunction over states.
 receipts/P15_CR_cosmology/C45_xe_does_not_cancel_from_a_ratio_of_integrals.py	"EVERY MICROPHYSICAL CONSTANT IS OUTSIDE THE INTEGRAL"	SOURCE	SENTENCE		UNADJUDICATED	
 receipts/P15_CR_cosmology/C46_the_nine_are_right_and_the_one_is_wrong.py	"1.0816"	SOURCE	TOKEN	ALT	UNADJUDICATED	
 receipts/P15_CR_cosmology/C46_the_nine_are_right_and_the_one_is_wrong.py	"CR/LCDM"	SOURCE	TOKEN	ALT	UNADJUDICATED	

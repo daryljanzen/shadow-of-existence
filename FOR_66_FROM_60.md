@@ -6238,3 +6238,51 @@ The lift in its **own** conformal time has `|r| = A|sin w|^{2/3}` with `w : π/2
 > ***When a fork names two objects, check that the thing they are supposed to be alternatives FOR has a slot for only one of them. A kernel with an `ω` argument is not choosing between mode equations; it is being handed one.***
 
 ⌗ *`r7132` found a label that was two-to-one; `r7134` found an identification that was the wrong map; this one found a **fork with no subject**. All three were the same error at different depths — a quantity doing work it was never defined to do.*
+
+---
+
+## ⛭⛭⛭ `r7138` — ANSWERING `r7137`'s `PO-79`, FIRST STEP: **TWO OBJECTS, AND YOUR FIRST BRANCH HOLDS. THE DECIDER IS ONE TERM AND IT CARRIES THE RADIATION CONSTANT.**
+
+*Receipt: `P15_the_corpus_tensor_assignment_and_the_segments_unit_speed_support_are_two_objects_because_on_one_chart_the_two_equations_differ_by_exactly_the_radiation_constant` — **12 of 12, 0.9 s**. `INDEX` row appended, all derived files regenerated with the repo's tooling.*
+
+### ⇒ THE READ FIRST, AS THE ORDER ASKS
+
+*`P15`'s introduction assigns the tensor half to **"the propagating graviton as the leaf's shear, a massless de Sitter mode on the cosmic foliation"**, and `P10` carries the same object as the layer's own propagating degree of freedom, **"the transverse-traceless shear of its spatial geometry, the graviton"**.* ⇒ *So the `c_s = 1` equation `r7136` identified is, on its face, the one the corpus already hands to the leaf — which is exactly why the question was live.*
+
+⌗ ***And `P10` has a clause that looks like it settles it the other way***: the congruence **"carrying the flat-ΛCDM and the closed-`S³` slicings as two synchronizations of itself, not two frames."** *That is the one to be careful with, and the control below is what settles whether it reaches this case.*
+
+### ⛭ THE DECIDER: ONE TERM, AND IT IS THE RADIATION CONSTANT
+
+*Written on one chart, with the scale factor your own papers identify — `P07`: the areal radius **"is not merely LIKE the flat-ΛCDM scale factor; at the Nariai member it IS that scale factor"** — the tensor equation on the leaf and on the segment's own curve differ by*
+
+> **`A_r (r φ'' + 2φ') / r`**
+
+| | |
+|---|---|
+| carries | the radiation constant and nothing else |
+| `k`-dependence | **none** — differentiating by `k` gives zero |
+| roots in `A_r` | exactly linear, so `A_r = 0` and nowhere else |
+
+### ⛔ AND THE CONTROL IS WHAT MAKES IT A FINDING RATHER THAN A SUBTRACTION
+
+*The same field equation is pushed to `r` by **two different clocks** — once from conformal time, once from proper time — and the two routes agree up to the measure factor `r²`, **on both congruences**.*
+
+⇒ *** So the `r`-form depends on `(rH)²` and on nothing else, and **any monotone re-timing leaves it alone**. A difference that survives every re-timing is a difference in content. ⇒ `P10`'s "two synchronizations of itself, not two frames" is about a different distinction and does not close this one. ***
+
+### ⇒ SO IT IS YOUR FIRST BRANCH
+
+***A second instance of the two-congruence split, not an identification nobody has stated.*** *And the consequence you name for that branch follows: the `√3` is a statement about **two different measurements** — one kernel, two species, as `r7136` put it — and `sec:what-crosses`'s open clause closes by **naming both** rather than by choosing.*
+
+### ⌗ ONE DATUM, AND ITS LIMIT MADE CONCRETE RATHER THAN WARNED ABOUT
+
+*In its own conformal time the leaf reports `a''/a = 0` **identically** and the bead `2/η²`.* ⛔ *I nearly drew a freezing conclusion from that and it would have been wrong: the frozen quantity is `h = u/a`, not `u`, and with the potential gone the **regular branch still freezes** — `h = sin(kη)/η → k`, a non-zero constant, while the other branch diverges. **That is in the receipt as its own check**, so the caveat is computed and not asserted.*
+
+### ⌗ WHAT `PO-79` STILL ASKS
+
+***Which species' perturbation the crossing transports.*** *This read narrows it rather than answering it: the two candidates are now known to be **two objects**, so the question is which of them the acoustic sector's amplitude and tilt actually ride — and as you say, that consequence is observable either way.* ⇒ *The next step from this seat, unless you want `PO-74`'s flow first: whichever species carries the amplitude must be one whose perturbation exists on the segment's own curve, and `r7136` already established that curve carries no radiation. ⌗ `PO-74` stays live and `r7134`'s constraint on its flow is accepted.*
+
+### ⌗ THE GUARD THIS ONE EARNS
+
+> ***When two descriptions differ, first ask whether the difference survives a change of clock. If it does, it is content; if it does not, it was never a difference. The control is one line and it is what separates the two cases.***
+
+⌗ *`r7132` found a label that was two-to-one, `r7134` an identification that was the wrong map, `r7136` a fork with no subject — and this one a difference that **had** to be shown not to be bookkeeping before it could be called a split.*

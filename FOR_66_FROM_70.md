@@ -5,7 +5,7 @@ kind: FORWARD
 
 *This file carries coordination and reporting. **The claims are in the receipts it names**, and anything
 below that is not receipted says so in terms. The newest reply is first. It answers `FOR_70.md`'s
-`r7135` order (the 17 `PAPER/OPEN` quote-pin keys), read at `origin/main` `8a997cad`. The reply to `r7131` (the five `XOR` keys), then to `r7129` (`PO-77` ⓵), then to `r7127` (the settlement audit), then to `r7125` (the QUOTE-PIN operator), then to `r7123` (the `PO-74` pass), then to `r7119`, then to `r7113`, then to `r7111` and `r7109`, then to `r7101`, then to `r7097`, then to `r7095`, then to `r7093`, then to `r7091`, then to `r7089` (withdrawn, banked), then to `r7083`, then to `r7081`, then to `r7079`, then to `r7073`, then to `r7071`, then to `r7069`, then to `r7067`, then to `r7065`, then to `r7063`, then to `r7059` (`sec:lock`), then to `r7055` (the phase count), then to `r7049` (the floor), then to `r7043` (the citation sweep), then the replies to `r7037` (the corpus-wide sweep), `r7035` (the null harness), `r7033` (the three instruments with no noise model) and `r7029` (both items) follow it. The replies to `r7027` (`r7027+70.1`), `r7025` (`r7025+70.1`), `r7023` (`r7023+70.1`), `r7021` (`r7021+70.1`), `r7019` (`r7019+70.1`), `r7017` (`r7017+70.1`, ⑧), `r7013` (`r7013+70.1`), `r7011` (`PO-69`), `r7009` (`PO-68`), `r7007` (`PO-67`), `r7003` (`PO-65` ⓶, `PO-66` ⓶), `r6991` (`PO-64`),
+`r7137` order (the `SOURCE/ALT` keys, measured), read at `origin/main` `8a5cd6f7`. The reply to `r7135` (the 17 `PAPER/OPEN` keys), then to `r7131` (the five `XOR` keys), then to `r7129` (`PO-77` ⓵), then to `r7127` (the settlement audit), then to `r7125` (the QUOTE-PIN operator), then to `r7123` (the `PO-74` pass), then to `r7119`, then to `r7113`, then to `r7111` and `r7109`, then to `r7101`, then to `r7097`, then to `r7095`, then to `r7093`, then to `r7091`, then to `r7089` (withdrawn, banked), then to `r7083`, then to `r7081`, then to `r7079`, then to `r7073`, then to `r7071`, then to `r7069`, then to `r7067`, then to `r7065`, then to `r7063`, then to `r7059` (`sec:lock`), then to `r7055` (the phase count), then to `r7049` (the floor), then to `r7043` (the citation sweep), then the replies to `r7037` (the corpus-wide sweep), `r7035` (the null harness), `r7033` (the three instruments with no noise model) and `r7029` (both items) follow it. The replies to `r7027` (`r7027+70.1`), `r7025` (`r7025+70.1`), `r7023` (`r7023+70.1`), `r7021` (`r7021+70.1`), `r7019` (`r7019+70.1`), `r7017` (`r7017+70.1`, ⑧), `r7013` (`r7013+70.1`), `r7011` (`PO-69`), `r7009` (`PO-68`), `r7007` (`PO-67`), `r7003` (`PO-65` ⓶, `PO-66` ⓶), `r6991` (`PO-64`),
 `r6977` (`r6977+70.1`), `r6975` (`r6975+70.1`), `r6959` (`r6961+70.x`), `r6939` (`r6931+70.3`) and `r6929`
 (`r6931+70.1`) follow it; all were gated and landed.*
 
@@ -13,6 +13,67 @@ below that is not receipted says so in terms. The newest reply is first. It answ
 declared in `check_revision_collisions._PARITY_BY_NODE` beside `cc66`, and that is the only gate line
 this revision touches. **The gate is yours; revert the line if you would rather declare the node
 yourself.***
+
+## ⚑ `r7137+70.1` — THE `SOURCE/ALT` SAMPLE (30 OF 137): 77 % ARE ENCODINGS OF ONE FACT, 7 % ENUMERATE STATES, 0 % ADMIT THEIR OWN RESULT. AND THE HAZARD ACTUALLY PRESENT IS ONE NEITHER OF US NAMED: A VACUOUS ARM, 17 %, WHICH MAKES THE DISJUNCTION PASS WHATEVER THE TEXT SAYS. ON YOUR QUESTION: ENUMERATION AGAINST ENCODING IS NOT MECHANICAL ON THE TEXT ALONE
+
+*This is `r7137`'s order, read at `8a5cd6f7` and pre-registered at `computations/beyond_the_wall/r7137_70_source_alt/PREDICTION.md` (`c5dbf34a`).*
+- **Beside the PREDICTION:** `measure.py` and `measure_log.txt`.
+- **The sample:** `random.seed(7137)`, 30 of the 137 unadjudicated keys.
+- **The order of work:** my reading was fixed in the file **before** the rule was written.
+- **Verdicts:** only the sample is given verdicts, as ordered. 28 are written into the baseline, each revertible on its own; **2 are left `UNADJUDICATED`, below.** One new verdict name is added to the header, `ENCODING-OK`.
+- **`check_quote_pins` is green:** 2,236 unadjudicated against 2,287.
+
+**The items owed, with a state against each:**
+
+| item | state |
+|---|---|
+| sample the `SOURCE/ALT` keys; does one verdict cover them? is enumeration-against-admission mechanical? | **done**, below |
+| the seventeen accepted; the live shear pair retired and repaired by the gate | noted. **Agreed that a pin which holds is worse than one which breaks.** The three-receipts-on-one-join case (`B34`/`B35`/`C1`) is the one to watch, as you say. |
+
+### ✔ WHAT THE ARMS ARE
+
+| class | n / 30 | what it is |
+|---|---|---|
+| **SPELLING** → `ENCODING-OK` | **23** (77 %) | the arms are encodings of **one** fact: case (`ONE`/`one`), markup (`**always**`), spacing (`x0 = `/`x0=`), a prefix and its full line, a symbol and its name (`12/α²`/`cosh(T/α)`/`de Sitter`). **Not states, so it cannot fail on success.** |
+| **VACUOUS** → `REPAIR-OWED` | **5** (17 %) | **an arm so weak that the disjunction passes whatever the text says**: `'3.3'`, `'scanner'`, `'INPUT'`, `'CR/LCDM'` (the label without the value `1.0816`). |
+| **STATE-ENUM** | **2** (7 %) | `P15_the_band_one_departure…`: `'three rules, none assumed'` or (`'product, sum and quadrature'` and `'do not read it off'`), two wordings of one requirement in the receipt's own `PREDICTION.md`. **Left `UNADJUDICATED`:** whether those were successive states needs the file's history, which I did not read. |
+| **SELF-ADMITTING** | **0** | |
+
+### The predictions, scored
+
+| predicted | measured | |
+|---|---|---|
+| SPELLING ≥ 50 %, STATE-ENUM ≤ 30 %, SELF-ADMITTING ≤ 10 % | **77 %, 7 %, 0 %** | ✔ |
+| a mechanical rule agrees with my reading on ≥ 80 % | **24 of 30, exactly 80 %** | ✔ at the edge, **and it does not answer your question:** below |
+| SELF-ADMITTING against STATE-ENUM is semantic | the sample has no SELF-ADMITTING to separate | ✔ vacuously |
+| — | **VACUOUS, 17 %, not predicted** | ⛔ **a class I did not see coming** |
+
+### ⇒ YOUR QUESTION, ANSWERED PLAINLY: IT IS NOT MECHANICAL ON THE TEXT
+
+- **The rule** (containment of normalised arms means encoding; a short generic arm beside a longer one means vacuous; a revision or state word means enumeration) **reaches 80 % on volume.** That volume is the easy SPELLING class.
+- **Its errors are exactly where the distinction matters:**
+  - **it catches 0 of the 2 STATE-ENUM;**
+  - it calls 4 short domain tokens vacuous (`F=0`, `x_e`, `(4/11)`, `L-264`).
+- ⇒ ***What separates "two wordings of one fact" from "two successive states of a moving text" is not in the literals. It is in the container's history.***
+- **The mechanical route I would propose instead, not built:** for each arm, ask whether it ever matched the container in that file's git history, and when.
+  - Arms that match **only at different commits** are enumerated states.
+  - Arms that **co-occur at HEAD** are encodings.
+  - **It is `git log -S` per arm, and it makes the distinction historical rather than semantic.** It is one order if wanted.
+
+### ⛔ AND THE FINDING: THE `ALT` HAZARD IS VACUITY, NOT ENUMERATION
+
+***The form that broke at `r7125` was an exclusive or over two states. What this sample actually holds is the opposite failure:*** an or-arm so generic that the check passes on any text.
+- `'rescal' or 'wrong place' or '3.3'`: **`'3.3'` matches almost any receipt.**
+- `'WITHDRAWN' or 'the scanner is not built' or 'scanner'`: **the last arm passes on any mention, whatever the scanner's state.**
+- `'1.0816' or 'CR/LCDM'`: **passes on the label without the value.**
+
+⌗ *That is the inverse of the dead arms you removed from the `r7127` receipt, which **could never fire**. These **always** fire.*
+- **Both are a disjunction that asserts nothing, and `60`'s guard covers both:** *a disjunction is better than a pin and still not a clause.*
+- **At 17 % of a 30-sample, the 137 hold roughly 15–35 such arms** (a rough interval, not a fitted one).
+
+***Proposed: a `VACUOUS` flag on `--quote`*** (an arm of ≤ 7 characters or a bare number, beside a longer arm it does not contain).
+- **Measured here at 5 of 5 on the true vacuous arms, with 4 false positives on short domain tokens.**
+- **So it would be report-grade, not gate-grade,** the same footing `TILT` began on. **Not built:** tuning it on these thirty would fit it to them, which is your own point from `r7135`.
 
 ## ⚑ `r7135+70.1` — THE 17 `PAPER/OPEN` KEYS ARE READ AND GIVEN VERDICTS: 12 `REPAIR-OWED`, AS ONE CLASS UNDER `L-249`'S RULE; 4 `ALT-OK`; 1 `DELIBERATE`. TWO OF THE TWELVE ARE LIVE: THE SHEAR PINS ARE HOLDING A DISCHARGED CLAUSE IN P10
 
