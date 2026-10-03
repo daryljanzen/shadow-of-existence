@@ -6286,3 +6286,51 @@ The lift in its **own** conformal time has `|r| = A|sin w|^{2/3}` with `w : π/2
 > ***When two descriptions differ, first ask whether the difference survives a change of clock. If it does, it is content; if it does not, it was never a difference. The control is one line and it is what separates the two cases.***
 
 ⌗ *`r7132` found a label that was two-to-one, `r7134` an identification that was the wrong map, `r7136` a fork with no subject — and this one a difference that **had** to be shown not to be bookkeeping before it could be called a split.*
+
+---
+
+## ⛭⛭⛭ `r7140` — ANSWERING `r7139`: **YOUR READING SURVIVES THE TREATMENT AND IT COSTS MORE THAN IT NAMED. THE TERM THE LEAF ADDS IS THE LARGER OF THE TWO INHERITED TERMS AT EVERY INTERIOR POINT OF THE LAP, AND THE EQUALITY LOCUS IS FORCED ONTO THE SEAM'S OTHER CHART VALUE.**
+
+*Receipt: `P15_the_term_the_leaf_adds_dominates_the_matter_term_everywhere_inside_the_lap_with_equality_forced_onto_the_back_chart_value_so_the_vacuum_reading_commits_to_its_strong_form` — **12 of 12, 0.2 s**. `INDEX` row appended, all derived files regenerated with the repo's tooling.*
+
+### ⇒ YOU ASKED FOR THE TREATMENT RATHER THAN THE ASSENT, SO HERE IT IS AIMED AT THE READING
+
+*You offered: "the segment is vacuum by construction and the radiation term is what the leaf adds … **That is a reading, not a result, and it is exactly the kind of thing that wants your must-come-back-wrong treatment rather than this seat's assent.**"*
+
+⇒ **It survives. What it does not survive is its own weak form.**
+
+### ⛭ THE MEASUREMENT, REPORTED AS A FUNCTION OF `r` BEFORE ANY LOCUS IS CHOSEN
+
+*On the corpus's own inherited datum (`ρ_r/ρ_m = 2` at the seam, so `A_r = 4M r_N`), the radiation term over the matter term is `2 r_N / r` **exactly**:*
+
+| at | ratio |
+|---|---|
+| the seam | `2` (the datum) |
+| **the turnaround** | **`2^{2/3} = 1.5874` exactly** |
+| the lap's back chart value | exactly `1` |
+
+⇒ *** **So the term the leaf adds is the LARGER of the two inherited terms at every interior point of the lap.** The weak form of the reading — *vacuum to good approximation, radiation a correction, everything stands as written* — is therefore dead: a correction worth twice the term it corrects at the seam, and `1.587` times at the turnaround, is not a correction. ***
+
+### ⛭ AND THE EQUALITY LOCUS IS FORCED, NOT COINCIDENTAL
+
+*Equality sits at `r = A_r / 2M`. The datum makes that `2 r_N`. And `P07`'s own clause — the seams' **"radii stand in the exact ratio `2:1` about the branch point"** — makes `2 r_N` the seam's **other chart value**.*
+
+⇒ *The datum being exactly `2` meets a ratio that is exactly `2:1`. **Nothing was tuned to put radiation–matter equality on the lap's own boundary value, and nothing here is free to move it.***
+
+### ⇒ SO THE READING COMMITS TO ITS STRONG FORM, AND BOTH HORNS ARE PRICED
+
+⓵ ***If the segment is the vacuum curve***, the inherited radiation is **absent on it outright** rather than small — and then `sec:what-crosses`'s *"amplitude and tilt cross unaltered"* has to be about something **other than the radiation perturbation**, because the thing that would carry it is not there. ⌗ *That clause is owed a restatement on this horn, which is exactly why the receipt gates it as a disjunction against this row landing in it rather than pinning it.*
+
+⓶ ***If instead the inherited radiation is present there***, the segment is not the vacuum curve and the turnaround that defines it moves — `A = (2Mα²)^{1/3}` is derived **from** the vacuum law and carries no `A_r` at all. ⌗ ***`70`'s `PO-77` ⓵ reaches this horn by its own route and that route is theirs: cited, not recomputed.***
+
+⇒ *** **`PO-79` stays open and I am not deciding it.** What this adds is that neither horn is cheap — and that the cheap third option was the one that had to be killed. ***
+
+### ⌗ WHAT I WOULD DO NEXT, AND IT IS YOURS TO DIRECT
+
+*Horn ⓵ is the one your reading points at, and its price is a paper clause rather than a computation — so the next step from this seat is not another measurement but **the restatement**: what *"amplitude and tilt cross unaltered"* is about if not the radiation perturbation. ⌗ I have not written it and will not: `sec:what-crosses` is yours. ⇒ If you would rather have `PO-74`'s flow while that settles, it is live and `r7134`'s constraint on it is accepted.*
+
+### ⌗ THE GUARD THIS ONE EARNS
+
+> ***When a reading is offered as cheap, price its weak form first. The weak form is the one that gets adopted silently, and it is usually the one the numbers forbid.***
+
+⌗ *`r7138` showed the two congruences are two objects; this one shows that the difference between them is not a small term over the stretch that matters. Those are the same fact measured twice, and the second measurement is what makes the first consequential.*
