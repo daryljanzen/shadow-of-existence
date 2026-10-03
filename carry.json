@@ -1,5 +1,11 @@
 {
  "claude/shadow-of-existence-setup-5tjf0b": {
+  "suite": {
+   "receipts/L251_the_numbering_collides/N1_two_lines_numbering_from_one_counter_and_a_paper_narrating_its_own_history.py": {
+    "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/37157056555",
+    "since": "dd02d818d22da12bbb78019c8fc298d907dc11fe"
+   }
+  },
   "tolerance": {
    "receipts/P10_canonical_time/P10_step_three_is_written_down_and_it_reverses_the_previous_revisions_own_conclusion_about_the_sign.py": {
     "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/37144724925",
