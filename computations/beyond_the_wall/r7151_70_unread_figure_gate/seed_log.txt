@@ -1,0 +1,53 @@
+=== CLEAN TREE
+
+  UNREAD-FIGURE RATCHET -- does any receipt gain a figure it attributes to a paper it never opens?
+
+    the instrument reports 100 site(s) under 100 key(s); the baseline carries 100 under 100
+    by partition and verdict (sites): {'NO-READ/FIGURE': 22, 'NO-READ/FORMULA': 31, 'NO-READ/NOT-A-PAPER-FIGURE': 7, 'READS-PAPER/REPORTED': 40}
+    OWED: 53   ** may only fall **   (not owed: NOT-A-PAPER-FIGURE, REPORTED)
+    no new NO-READ site: the class has not grown.
+    no stale entry: every count still describes the tree.
+    the ratchet holds: 53 owed against a ceiling of 53
+
+  no receipt has gained an unread figure, every count describes the tree, and the owed count is held.
+rc=0
+=== SEED 1: a planted NO-READ site in receipts/P10_canonical_time/P10_the_straddle_is_computed.py
+
+  UNREAD-FIGURE RATCHET -- does any receipt gain a figure it attributes to a paper it never opens?
+
+    the instrument reports 101 site(s) under 101 key(s); the baseline carries 100 under 100
+    by partition and verdict (sites): {'NO-READ/FIGURE': 22, 'NO-READ/FORMULA': 31, 'NO-READ/NOT-A-PAPER-FIGURE': 7, 'READS-PAPER/REPORTED': 40}
+    OWED: 53   ** may only fall **   (not owed: NOT-A-PAPER-FIGURE, REPORTED)
+
+  ⛔ 1 NEW UNREAD-FIGURE KEY(S) or count rise(s) -- a paper's figure asserted by a receipt that never opens it:
+    [FAIL] +1 receipts/P10_canonical_time/P10_the_straddle_is_computed.py
+           "seed: reproduces P10's 0.777"
+     ⌗ The label says the number is the PAPER's; nothing in the receipt reads the paper, so the check
+       stays green when the paper moves.  Either READ the figure from the paper, or say in the label
+       what THIS receipt computed and drop the attribution.  If it is not a paper's figure at all,
+       record it in the baseline as NOT-A-PAPER-FIGURE with what was read.
+    no stale entry: every count still describes the tree.
+    the ratchet holds: 53 owed against a ceiling of 53
+
+  ⛔ THE UNREAD-FIGURE RATCHET IS RED.
+rc=1
+=== SEED 2: a baselined site's attribution removed in receipts/P10_canonical_time/P10_the_adiabatic_residual_at_low_n_is_bounded_by_the_towers_own_floor.py
+
+  UNREAD-FIGURE RATCHET -- does any receipt gain a figure it attributes to a paper it never opens?
+
+    the instrument reports 99 site(s) under 99 key(s); the baseline carries 100 under 100
+    by partition and verdict (sites): {'NO-READ/FIGURE': 22, 'NO-READ/FORMULA': 31, 'NO-READ/NOT-A-PAPER-FIGURE': 7, 'READS-PAPER/REPORTED': 40}
+    OWED: 53   ** may only fall **   (not owed: NOT-A-PAPER-FIGURE, REPORTED)
+    no new NO-READ site: the class has not grown.
+
+  ⛔ 1 STALE BASELINE ENTR(Y/IES) -- fewer live sites than recorded.  Lower or remove the row:
+    [STALE] -1 NO-READ receipts/P10_canonical_time/P10_the_adiabatic_residual_at_low_n_is_bounded_by_the_towers_own_floor.py
+            "eps(n=10) reproduces P10's 0.16"
+    the ratchet holds: 53 owed against a ceiling of 53
+
+  ⛔ THE UNREAD-FIGURE RATCHET IS RED.
+rc=1
+=== FROM corpus/ (copied in, then removed)
+
+  no receipt has gained an unread figure, every count describes the tree, and the owed count is held.
+rc=0
