@@ -1,1 +1,42 @@
   STATIC: 35 site(s) in 22 receipt(s)
+  DYNAMIC: 22 receipt(s) run in 154s wall; rc 0: 22; timeout: 0
+
+  site                                                                                                 execs  min margin (units)
+  P03_slate_worked.py:337                                                                                  1            7.27e-02   rc=0
+  X1rr_sky_angle_is_the_galois_closure.py:24                                                               1            1.59e-01   rc=0
+  X1rr_sky_angle_is_the_galois_closure.py:25                                                               1            3.08e-02   rc=0
+  P10_the_operator_is_an_inverted_quartic_so_the_deficiency_is_two_two_and_the_mea:485                     1            4.85e-01   rc=0
+  P10_the_thermal_condition_is_helicity_blind_at_the_mode_functions_and_the_parity:403                     1            4.67e-01   rc=0
+  P13_closure_iv_check.py:115                                                                              1            4.94e-01   rc=0
+  P13_closure_iv_check.py:115                                                                              1            5.46e-02   rc=0
+  P13_closure_iv_check.py:116                                                                              1            6.47e-02   rc=0
+  P13_closure_iv_check.py:116                                                                              1            1.11e-01   rc=0
+  P13_closure_iv_check.py:119                                                                              1            4.82e-02   rc=0
+  P13_closure_iv_check.py:119                                                                              1            3.25e-01   rc=0
+  C10_highl_ratio.py:92                                                                                    1            2.83e-01   rc=0
+  C10_highl_ratio.py:94                                                                                    1            3.26e-02   rc=0
+  C7_equality_and_deficit.py:67                                                                            1            5.00e-01   rc=0
+  C7_equality_and_deficit.py:68                                                                            1            5.00e-01   rc=0
+  P15_desi_dr2_confrontation.py:105                                                                        1            3.85e-01   rc=0
+  P15_the_133_bin_pair_is_computed_and_asserted_and_the_hardcoded_row_carried_the_:184                     1            6.07e-02   rc=0
+  P15_the_band_rms_ratio_does_not_move_with_any_numerical_setting.py:190                                   1            3.08e-01   rc=0
+  P15_the_combs_resolution_is_four_multipoles_and_the_skys_own_value_lies_outside_:298                     1            2.26e-01   rc=0
+  P15_the_combs_resolution_is_four_multipoles_and_the_skys_own_value_lies_outside_:298                     1            1.62e-01   rc=0
+  P15_the_crossing_spectrum_reproduces_on_a_second_instrument_and_the_172_is_the_r:417                     1            1.81e-01   rc=0
+  P15_the_growth_root_on_the_leaf_rate_is_not_a_moment_balance_and_the_gap_stands.:234                     1            4.40e-01   rc=0
+  P15_the_growth_root_on_the_leaf_rate_is_not_a_moment_balance_and_the_gap_stands.:234                     1            2.37e-01   rc=0
+  P15_the_interiors_vacuum_is_blue_everywhere_and_a_running_so_the_substrates_mass:243                     1            3.34e-01   rc=0
+  P15_the_laws_six_of_seven_is_five_at_the_quoted_floor_which_is_one_phases_and_wi:155                     1            1.64e-01   rc=0
+  P15_the_null_harness_survives_its_one_assumption_except_for_the_misplaced_part_a:173                     1            4.69e-01   rc=0
+  P15_the_phase_systematic_leaves_the_step_standing_and_carries_a_third_of_the_ret:130                     1            2.95e-01   rc=0
+  P15_the_phase_systematic_leaves_the_step_standing_and_carries_a_third_of_the_ret:130                     1            4.32e-01   rc=0
+  P15_the_phase_systematic_leaves_the_step_standing_and_carries_a_third_of_the_ret:191                     1            3.69e-01   rc=0
+  P15_the_phase_systematic_leaves_the_step_standing_and_carries_a_third_of_the_ret:191                     1            4.47e-02   rc=0
+  P15_the_photon_hierarchy_in_the_transfer.py:256                                                          1            5.00e-01   rc=0
+  P15_the_resolution_table_eight_of_the_eleven_instruments_cannot_represent_the_co:109                     1            1.10e-01   rc=0
+  P15_the_shared_fraction_does_not_mean_what_i_said_and_the_peak_trough_pattern_is:204                     1            4.37e-01   rc=0
+  P15_the_term_mix_is_the_first_channel_to_produce_cost_where_the_arm_is_rejected_:244                     1            4.00e-01   rc=0
+  CROSSING_no_made_asymmetry.py:36                                                                         1            3.75e-01   rc=0
+
+  sites reached at run time: 35 of 35
+  ON-BOUNDARY executions (margin < 0.001 of a unit): 0

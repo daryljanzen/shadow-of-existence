@@ -5,7 +5,7 @@ kind: FORWARD
 
 *This file carries coordination and reporting. **The claims are in the receipts it names**, and anything
 below that is not receipted says so in terms. The newest reply is first. It answers `FOR_70.md`'s
-`r7151` order (register the unread-figure ratchet: the gate and its baseline), read at `origin/main` `79c1b03c`. The reply to `r7147` (the fifth operator), then to `r7143` (the overstatement run), then to `r7141` (the cannot-fail ratchet), then to `r7139` (the cannot-fail operator), then to `r7137` (the `SOURCE/ALT` keys), then to `r7135` (the 17 `PAPER/OPEN` keys), then to `r7131` (the five `XOR` keys), then to `r7129` (`PO-77` ⓵), then to `r7127` (the settlement audit), then to `r7125` (the QUOTE-PIN operator), then to `r7123` (the `PO-74` pass), then to `r7119`, then to `r7113`, then to `r7111` and `r7109`, then to `r7101`, then to `r7097`, then to `r7095`, then to `r7093`, then to `r7091`, then to `r7089` (withdrawn, banked), then to `r7083`, then to `r7081`, then to `r7079`, then to `r7073`, then to `r7071`, then to `r7069`, then to `r7067`, then to `r7065`, then to `r7063`, then to `r7059` (`sec:lock`), then to `r7055` (the phase count), then to `r7049` (the floor), then to `r7043` (the citation sweep), then the replies to `r7037` (the corpus-wide sweep), `r7035` (the null harness), `r7033` (the three instruments with no noise model) and `r7029` (both items) follow it. The replies to `r7027` (`r7027+70.1`), `r7025` (`r7025+70.1`), `r7023` (`r7023+70.1`), `r7021` (`r7021+70.1`), `r7019` (`r7019+70.1`), `r7017` (`r7017+70.1`, ⑧), `r7013` (`r7013+70.1`), `r7011` (`PO-69`), `r7009` (`PO-68`), `r7007` (`PO-67`), `r7003` (`PO-65` ⓶, `PO-66` ⓶), `r6991` (`PO-64`),
+`r7153` order (is a rounding-boundary verdict measurable?), read at `origin/main` `eeffaf02`. The reply to `r7151` (the unread-figure ratchet), then to `r7147` (the fifth operator), then to `r7143` (the overstatement run), then to `r7141` (the cannot-fail ratchet), then to `r7139` (the cannot-fail operator), then to `r7137` (the `SOURCE/ALT` keys), then to `r7135` (the 17 `PAPER/OPEN` keys), then to `r7131` (the five `XOR` keys), then to `r7129` (`PO-77` ⓵), then to `r7127` (the settlement audit), then to `r7125` (the QUOTE-PIN operator), then to `r7123` (the `PO-74` pass), then to `r7119`, then to `r7113`, then to `r7111` and `r7109`, then to `r7101`, then to `r7097`, then to `r7095`, then to `r7093`, then to `r7091`, then to `r7089` (withdrawn, banked), then to `r7083`, then to `r7081`, then to `r7079`, then to `r7073`, then to `r7071`, then to `r7069`, then to `r7067`, then to `r7065`, then to `r7063`, then to `r7059` (`sec:lock`), then to `r7055` (the phase count), then to `r7049` (the floor), then to `r7043` (the citation sweep), then the replies to `r7037` (the corpus-wide sweep), `r7035` (the null harness), `r7033` (the three instruments with no noise model) and `r7029` (both items) follow it. The replies to `r7027` (`r7027+70.1`), `r7025` (`r7025+70.1`), `r7023` (`r7023+70.1`), `r7021` (`r7021+70.1`), `r7019` (`r7019+70.1`), `r7017` (`r7017+70.1`, ⑧), `r7013` (`r7013+70.1`), `r7011` (`PO-69`), `r7009` (`PO-68`), `r7007` (`PO-67`), `r7003` (`PO-65` ⓶, `PO-66` ⓶), `r6991` (`PO-64`),
 `r6977` (`r6977+70.1`), `r6975` (`r6975+70.1`), `r6959` (`r6961+70.x`), `r6939` (`r6931+70.3`) and `r6929`
 (`r6931+70.1`) follow it; all were gated and landed.*
 
@@ -13,6 +13,52 @@ below that is not receipted says so in terms. The newest reply is first. It answ
 declared in `check_revision_collisions._PARITY_BY_NODE` beside `cc66`, and that is the only gate line
 this revision touches. **The gate is yours; revert the line if you would rather declare the node
 yourself.***
+
+## ⚑ `r7153+70.1` — YES, IT IS MEASURABLE, AND CHEAPLY: `35` STATIC SITES IN `22` RECEIPTS, THE DYNAMIC HALF IN `154` S. RECALL `1` OF `1`. ON THE CURRENT TREE NO EXECUTION SITS ON A BOUNDARY; THE CLOSEST IS `0.03` OF A UNIT
+
+*Read at `eeffaf02`; pre-registered at `computations/beyond_the_wall/r7153_70_rounding_boundary/PREDICTION.md` (`b8ecaf35`) before any code. Beside it: `_margin.py`, `measure.py`, `measure_log.txt` and `recall_log.txt`.*
+
+**Changed:** `scripts/mutate_assertions.py` gains `--rounding-boundary`, the static half, which takes 7 s. **No receipt, paper or gate line is touched**, and the recall copy of the pre-r7153 receipt was written and removed again. **It is not a gate and I do not propose one.**
+
+### ⓵ THE ANSWER TO WHAT YOU ASKED
+
+**It is measurable. The dynamic half is needed, as you suspected, but it is not expensive:** the static half selects the receipts and only those are run.
+
+- **Static census:** `round(E, n) == L`, or `abs(E - L) < T` where `T` is half a unit in the literal `L`'s own last printed digit. **35 sites in 22 receipts**: 33 `HALF-UNIT`, 2 `ROUND`.
+  - *The first draft accepted any half-unit `T`, which gave 200 sites. Most were tolerances that merely happen to be a half, such as `abs(ratio - 924.28) < 0.5`. I narrowed it to the definition I pre-registered before reading any result.*
+- **Dynamic half:** each site's measured operand is wrapped by an AST rewrite in the r7143 `_counted.py` shape. The rewrite records the distance to the flipping boundary in units of the decisive decimal and leaves the receipt otherwise unchanged.
+  - **22 receipts in 154 s of wall time**, all exiting 0, with all 35 sites reached.
+- **Recall:** I ran the pre-r7153 `P15_the_exact_transmission_ratios…` (`136dd81f^`) the same way. **Its `round(got[l], 3) == PAPER[l]` is flagged ON-BOUNDARY**, with the closest of 5 executions **`7.5e-4` of a unit from the midpoint**. *That is your `ℓ = 2` straddle, found mechanically.*
+- **On the current tree, 0 executions are ON-BOUNDARY** (margin < `1e-3` of a unit). The smallest margins are:
+  - `0.031` (`X1rr_sky_angle…:25`);
+  - `0.033` (`C10_highl_ratio:94`);
+  - `0.045` (`P15_the_phase_systematic…:191`);
+  - `0.048` (`P13_closure_iv_check:119`).
+  - *All are at least 30 times the threshold.*
+
+⇒ ***The class exists, the instrument finds its one known instance, and the corpus currently carries no other.*** *I would keep it as a note and an instrument, not a row. If you want it standing, re-running `measure.py` costs 2.5 minutes.*
+
+### ⓶ WHAT IT DOES NOT SEE, PLAINLY
+
+- **A `HALF-UNIT` band whose centre is a NAME** (`abs(got - PAPER[l]) < 5e-4`) is not caught, because the pre-registered form requires a literal `L` to know its decimals.
+  - **That includes the r7153 repair of your four non-boundary ratios, if it is written that way.**
+  - *A name-valued centre needs `L` read at run time too. That is a small extension to `_margin.py`, but it is not done.*
+- **String-format comparisons** (`f"{x:.3f}" == "0.926"`) are not in either form.
+- **A margin is a property of the run**, so it moves with the grid, the seed and the platform. *A census on one machine says nothing about the next change of grid. That is your point ③ exactly, and it is why I do not propose a gate.*
+
+### ⓷ PREDICTIONS
+
+| | predicted | measured | |
+|---|---|---|---|
+| R1 | static sites in [20, 200] | 35 | ✔ |
+| R2 | [10, 80] receipts; dynamic run under 30 min | 22; 154 s | ✔ |
+| R3 | the pre-r7153 `ℓ = 2` is flagged ON-BOUNDARY | 7.5e-4 units | ✔ |
+| R4 | at most 3 ON-BOUNDARY executions on the current tree | 0 | ✔ |
+| R5 | `ROUND` outnumbers `HALF-UNIT` | 2 against 33 | ⛔ **missed**: the corpus writes the half-unit band, not `round(…) ==` |
+
+### ⓸ YOUR QUEUE NOTE
+
+*I have not started the `19` `NO-READ/FIGURE` reads, since you offered them rather than called them.* **If you want them as the next block, I will take them in your r7153 repair's template.** Otherwise I am idle on this item.
 
 ## ⚑ `r7151+70.1` — THE UNREAD-FIGURE RATCHET IS DRAFTED: `60` `NO-READ` SITES READ, `53` OWED, CEILING `53` AS MEASURED. THE FIFTY FELL BY EXACTLY FIFTY. I ACCEPT THE CALL
 
