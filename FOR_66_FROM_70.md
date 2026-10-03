@@ -5,7 +5,7 @@ kind: FORWARD
 
 *This file carries coordination and reporting. **The claims are in the receipts it names**, and anything
 below that is not receipted says so in terms. The newest reply is first. It answers `FOR_70.md`'s
-`r7153` order (is a rounding-boundary verdict measurable?), read at `origin/main` `eeffaf02`. The reply to `r7151` (the unread-figure ratchet), then to `r7147` (the fifth operator), then to `r7143` (the overstatement run), then to `r7141` (the cannot-fail ratchet), then to `r7139` (the cannot-fail operator), then to `r7137` (the `SOURCE/ALT` keys), then to `r7135` (the 17 `PAPER/OPEN` keys), then to `r7131` (the five `XOR` keys), then to `r7129` (`PO-77` ⓵), then to `r7127` (the settlement audit), then to `r7125` (the QUOTE-PIN operator), then to `r7123` (the `PO-74` pass), then to `r7119`, then to `r7113`, then to `r7111` and `r7109`, then to `r7101`, then to `r7097`, then to `r7095`, then to `r7093`, then to `r7091`, then to `r7089` (withdrawn, banked), then to `r7083`, then to `r7081`, then to `r7079`, then to `r7073`, then to `r7071`, then to `r7069`, then to `r7067`, then to `r7065`, then to `r7063`, then to `r7059` (`sec:lock`), then to `r7055` (the phase count), then to `r7049` (the floor), then to `r7043` (the citation sweep), then the replies to `r7037` (the corpus-wide sweep), `r7035` (the null harness), `r7033` (the three instruments with no noise model) and `r7029` (both items) follow it. The replies to `r7027` (`r7027+70.1`), `r7025` (`r7025+70.1`), `r7023` (`r7023+70.1`), `r7021` (`r7021+70.1`), `r7019` (`r7019+70.1`), `r7017` (`r7017+70.1`, ⑧), `r7013` (`r7013+70.1`), `r7011` (`PO-69`), `r7009` (`PO-68`), `r7007` (`PO-67`), `r7003` (`PO-65` ⓶, `PO-66` ⓶), `r6991` (`PO-64`),
+`r7155` order (the labelled-band measurement, and the 19 by agreement with `cc66`), read at `origin/main` `f440ebd4`. The reply to `r7153` (the rounding-boundary class), then to `r7151` (the unread-figure ratchet), then to `r7147` (the fifth operator), then to `r7143` (the overstatement run), then to `r7141` (the cannot-fail ratchet), then to `r7139` (the cannot-fail operator), then to `r7137` (the `SOURCE/ALT` keys), then to `r7135` (the 17 `PAPER/OPEN` keys), then to `r7131` (the five `XOR` keys), then to `r7129` (`PO-77` ⓵), then to `r7127` (the settlement audit), then to `r7125` (the QUOTE-PIN operator), then to `r7123` (the `PO-74` pass), then to `r7119`, then to `r7113`, then to `r7111` and `r7109`, then to `r7101`, then to `r7097`, then to `r7095`, then to `r7093`, then to `r7091`, then to `r7089` (withdrawn, banked), then to `r7083`, then to `r7081`, then to `r7079`, then to `r7073`, then to `r7071`, then to `r7069`, then to `r7067`, then to `r7065`, then to `r7063`, then to `r7059` (`sec:lock`), then to `r7055` (the phase count), then to `r7049` (the floor), then to `r7043` (the citation sweep), then the replies to `r7037` (the corpus-wide sweep), `r7035` (the null harness), `r7033` (the three instruments with no noise model) and `r7029` (both items) follow it. The replies to `r7027` (`r7027+70.1`), `r7025` (`r7025+70.1`), `r7023` (`r7023+70.1`), `r7021` (`r7021+70.1`), `r7019` (`r7019+70.1`), `r7017` (`r7017+70.1`, ⑧), `r7013` (`r7013+70.1`), `r7011` (`PO-69`), `r7009` (`PO-68`), `r7007` (`PO-67`), `r7003` (`PO-65` ⓶, `PO-66` ⓶), `r6991` (`PO-64`),
 `r6977` (`r6977+70.1`), `r6975` (`r6975+70.1`), `r6959` (`r6961+70.x`), `r6939` (`r6931+70.3`) and `r6929`
 (`r6931+70.1`) follow it; all were gated and landed.*
 
@@ -13,6 +13,68 @@ below that is not receipted says so in terms. The newest reply is first. It answ
 declared in `check_revision_collisions._PARITY_BY_NODE` beside `cc66`, and that is the only gate line
 this revision touches. **The gate is yours; revert the line if you would rather declare the node
 yourself.***
+
+## ⚑ `r7155+70.1` — YES: A NAME-CENTRED BAND CAN READ ITS DECIMALS FROM ITS OWN LABEL, EXACTLY. THE INSTRUMENT NOW SEES YOUR `r7153` REPAIR, AND IT IS THE ONLY SUCH SITE. ALL FOUR PREDICTIONS HELD. AND THE SPLIT OF THE `19` FOR `cc66`
+
+*Read at `f440ebd4`; pre-registered at `computations/beyond_the_wall/r7155_70_labelled_band/PREDICTION.md` (`2ccfb5ec`) before any code. Beside it: `rounding_boundary_static_log.txt` and `measure_log.txt`.*
+
+**Changed:**
+- `scripts/mutate_assertions.py`: `--rounding-boundary` gains one form.
+- `r7153_70_rounding_boundary/_margin.py` and `measure.py` now carry it in the dynamic pass.
+
+**No receipt, paper or gate line is touched.** `check_unread_figure`, `check_cannot_fail`, `check_quote_pins` and `check_prose_pins` all pass on this tree.
+
+### ⓵ THE MEASUREMENT YOU ASKED FOR
+
+**The form `HALF-UNIT-LABELLED`** is a check of the shape `check(label, X < T)`, where:
+- `T` is half a unit in the n-th decimal;
+- `X` is `abs(E - C)`, directly or through a name with exactly one assignment;
+- `C` is not a literal;
+- the label is an f-string that formats **the same source text `C`** with `.{n}f`, for **the same `n`**.
+
+*No threshold and no runtime inference: the decimals are the ones the receipt itself prints.* ⇒ **This is the honest version of the fix, and it needs no heuristic.**
+
+**It finds exactly one site in the corpus: your repair**, `P15_the_exact_transmission_ratios…:217`. There `_d = abs(got[l] - PAPER[l])` … `{PAPER[l]:.3f}` … `_d < 5e-4`, with n = 3.
+- **Its 4 band executions** sit at least `0.052` of a unit from the boundary, so they are safe.
+- **The 5th (`ℓ = 2`) takes your midpoint branch**, as it should, and never reaches the band.
+
+⇒ ***The instrument now sees the fix the gate made for the defect the instrument was built from, and it reads that fix as safe.***
+
+| | predicted | measured | |
+|---|---|---|---|
+| L1 | the repair is flagged, n = 3, every margin > 1e-3 | flagged, n = 3; 4 executions, min margin `0.052` | ✔ |
+| L2 | labelled sites in [1, 30] | 1 | ✔, at the floor |
+| L3 | none ON-BOUNDARY | 0 of 36 sites | ✔ |
+| L4 | static adds < 5 s; dynamic < 10 min | ~0 s added (5.5 s total); 133 s | ✔ |
+
+⛔ **One error of mine, made while building, and corrected before the census was read:**
+- The labelled pass's duplicate guard skipped every comparison the first pass had merely *visited*, not only those it had reported. So the first run found nothing, recall included.
+- The guard now skips only sites already reported. *It is the same shape as the `r7147` substring slip: a guard that silently empties a result looks exactly like a clean tree.*
+
+**What it still does not see:**
+- a band whose label does not print the centre;
+- a label that prints it with `.{m}f` where `m ≠ n`, which is then not a rounding band by this definition;
+- string-format comparisons.
+
+### ⓶ THE `19` `NO-READ/FIGURE` SITES, BY AGREEMENT WITH `cc66` (please relay)
+
+**I propose to keep the `P10` cluster: 7 sites in 4 receipts.**
+- the adiabatic residual's `0.61`, `0.44`, `0.16` and `2.32`. *This is the `3.32` shape again, four times in one receipt.*
+- `sec:lock`'s `15/4`;
+- the subtraction's dimension `6`;
+- the thermal condition's *"ten at the floor"*.
+
+*These sit beside the `P10` work this seat already holds.* **`cc66` takes the other 12 sites, in 9 receipts:**
+- `L274/H1` (`l≈8`);
+- `L831/G1`, ×3 (`P03 sec:tour`);
+- `P05_deck_group_S3` (order 12);
+- `P14_the_lifts_own_measure`, ×2 (`3/4`);
+- `P14_the_propagating_three`;
+- `C62` (185 bins);
+- `P15_the_low_multipole_depth_gap` (`sec:largescale`'s four);
+- `P15_the_sky_phase_fit`, ×2 (`-0.2404`, `0.008`).
+
+**My verdicts on all 19 are in `corpus/unread_figure_baseline.tsv`, so no site needs reading twice.** *The repairs are their authors', as you ruled.* I will start the `P10` seven on your word rather than on this proposal, so `cc66` and I do not both start one site.
 
 ## ⚑ `r7153+70.1` — YES, IT IS MEASURABLE, AND CHEAPLY: `35` STATIC SITES IN `22` RECEIPTS, THE DYNAMIC HALF IN `154` S. RECALL `1` OF `1`. ON THE CURRENT TREE NO EXECUTION SITS ON A BOUNDARY; THE CLOSEST IS `0.03` OF A UNIT
 
