@@ -5355,6 +5355,27 @@ PINNED = {'systematic uncertainty': 1}
 
 ---
 
+## ⛔⛔ `Q1` IS RED ON `main` AND ON ANOTHER SEAT'S BRANCH — **AND THE SUITE RED SETTLES THE CAUSE: IT IS `Q1`'s CHILD BUDGET, NOT THE TOLERANCE PROBE. THIS IS NOW A `main` PROBLEM.**
+
+***My branch's carry cleared*** *— `80c8158d` measured `Q1` in the tolerance scope (`n=23`, `Q1` among them) and **passed in $5$ minutes**. ⌗ *I had read the ledger before that run's record step wrote; **the reading was early, not the layer.** The ordering finding stands as stated — a red from an ancestor DID outlive a later commit's green — but it resolved on the next covering green rather than sticking.*
+
+| branch | class | run | red |
+|---|---|---|---|
+| **`main`** | tolerance | `37079174045`, head `8a997cad`, **$73$ min** | `L_numerics/Q1` |
+| **`…6awafl`** (another seat) | **suite** | `37080526986`, head `f0faf273`, **$43$ min** | `L_numerics/Q1` |
+| `…5tjf0b` (mine) | tolerance | cleared by `80c8158d` | — |
+
+### ⚑⚑ THE SUITE RED IS THE ONE THAT SETTLES IT
+
+***`…6awafl` fails in `scoped — the plain suite`, NOT in the tolerance probe.*** ⇒ **So the probe was never the cause**, and that rules out the composition story anyone would reach for first (`Q1` tightens its children $100\times$; the probe perturbs builds). ***In the plain suite the budget IS the `LONG` declaration — $900$ s — and `Q1` runs $8$ children each capped at its own `INNER = 600`. Two children at their cap is $1200$ s and the receipt is killed.***
+
+⇒ ***That is my `cc66.103` arithmetic reproducing in a SECOND class on a THIRD branch***, *which is the strongest form the claim can take: **the defect is `Q1`'s own per-child budget against its declared total, and nothing about whichever instrument happened to surface it.** The declaration's own words — "900s covers its own `INNER=600` bound" — budget for ONE child where the code runs EIGHT. ⌗ *And `r7019+70.1` already recorded "`Q1`'s ten suite timeouts" from the other side, so this has been visible twice without the two halves being put together.*
+
+⇒ ***THE PATCH IS UNCHANGED AND NOW FIXES `main`:*** *make the child cap a share of a **total** deadline, keeping the `r7025+70.1` behaviour that records a child past the cap as a named verdict rather than raising. **Still not pushed.** `Q1` is `70`'s receipt. ⌗ *This is the fourth time this round that the same unanswered question has decided what I do — **and the first time the conservative branch leaves `main` red.** I would rather be told to fix it than keep writing it down.*
+
+---
+
+
 ## ⛔ `r7131` CI, CORRECTED — **THE RE-RUN FAILED THE SAME WAY, SO THE `Q1` RED IS STRUCTURAL AND NOT CONTENTION. THE DEFECT IS A BUDGET THAT COUNTS ONE CHILD WHERE THERE ARE EIGHT.**
 
 ***Attempt $2$ came back FAILURE*** *(exit $2$ again, $46$ minutes). ⇒ **So the entry below is withdrawn on its second half**: what it measured was right — $33$ s here, green on `dfce672f`, the same-commit $41$ s control, the `n=0` range — but **what it invited a reader to conclude was wrong**, and I would rather say that than restate it quietly.*

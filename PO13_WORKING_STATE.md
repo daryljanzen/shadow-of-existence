@@ -7096,3 +7096,25 @@ Reading them back: **14 of the 18 `DELIBERATE` sites tree-wide are regression gu
 **Proposed and NOT pushed, because Q1 and `sweep_tolerances` are node 70's.** Make the child cap a share of a **total** deadline rather than a per-child one, so `n_children × cap` fits inside the declared budget, keeping the `r7025+70.1` behaviour where a child past the cap is recorded as a named verdict rather than raising. A slow child then *reports* instead of blowing the outer budget, which is what that machinery was built for. ⌗ **Raising the `LONG` entry to cover 4800 s would be wrong by that table's own standard** — the `C59` and `C63` entries both argue at length that a declaration records a cost the receipt *has*, and Q1's measured cost is 33 s with all eight children fast. A 4800 s budget would describe a cost it does not have in order to hide one it does.
 
 ⇒ **Two items for 70's layer are now outstanding from this one failure** — this budget, and the carry's last-writer-wins across two live commits of one branch (`cc66.101`). Both named, neither touched, and the ruling on repairing another seat's gate is the thing that decides what happens next.
+
+## cc66.104 — the Q1 red is on `main` and on a sibling branch too, and the SUITE red confirms the arithmetic: it is Q1's child budget, not the tolerance probe
+
+**My branch's carry cleared** — `80c8158d`'s push run measured Q1 in the tolerance scope (`n=23`, Q1 among them) and **passed in 5 minutes**, so the entry `cc66.101` found is gone. ⌗ *I had read the ledger before that run's record step wrote; the reading, not the layer, was early. The `cc66.101` ordering finding stands as stated — a red from an ancestor DID outlive a later commit's green — but it resolved on the next covering green rather than sticking.*
+
+**And the ledger now shows the failure is everywhere:**
+
+| branch | class | run | red |
+|---|---|---|---|
+| `main` | tolerance | `37079174045`, head `8a997cad`, **73 min** | `L_numerics/Q1` |
+| `…6awafl` (another seat) | **suite** | `37080526986`, head `f0faf273`, **43 min** | `L_numerics/Q1` |
+| `…5tjf0b` (mine) | tolerance | cleared by `80c8158d` | — |
+
+⇒ **The base branch carries the same red**, which is the one case the drive-to-green posture calls legitimately not this PR's — and it is not silent: it is commented on #236, proposed on #240 and routed here.
+
+### ⚑ The SUITE red is the one that settles the cause
+
+**`…6awafl`'s failure is in `scoped — the plain suite`, not in the tolerance probe.** The probe was never the cause, and that rules out the composition story anyone would reach for first (Q1 tightens its children 100×, the probe perturbs builds). **In the plain suite the budget IS the `LONG` declaration — 900 s — and Q1 runs 8 children each capped at its own `INNER = 600`.** Two children at their cap is 1200 s and the receipt is killed.
+
+⇒ **That is the `cc66.103` arithmetic reproducing in a second class on a third branch, and it is the strongest form of the claim available**: the defect is Q1's own per-child budget against its declared total, and nothing about the instrument that happened to surface it. **The declaration's own words — "900s covers its own `INNER=600` bound" — budget for one child where the code runs eight.**
+
+⌗ *So the proposed patch does not change: make the child cap a share of a TOTAL deadline, keeping the `r7025+70.1` behaviour that records a child past the cap as a named verdict. **It now fixes a red on `main` rather than a red on one PR.*** Still not pushed — `Q1` is node 70's receipt and the ruling I am owed covers exactly this.
