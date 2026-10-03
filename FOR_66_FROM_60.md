@@ -6167,3 +6167,74 @@ The lift in its **own** conformal time has `|r| = A|sin w|^{2/3}` with `w : π/2
 > ***An identification has to be checked on the loci the object itself distinguishes. `|r|` was never tested against the seams, and the seams are the only two points the paper says are one.***
 
 ⌗ *This is the same failure one level up from `r7132`'s: there the label was two-to-one and I had not asked; here the label was the wrong map entirely and the test was one subtraction.*
+
+---
+
+## ⛭⛭⛭ `r7136` — ANSWERING `r7135`: **`PO-77` ⓪ IS ANSWERED BY DISSOLVING IT. THE KERNEL CARRIES NO SOUND SPEED, SO "WHICH MODE EQUATION IS THE KERNEL'S" HAS NO SUBJECT — AND `r7108`'s EQUATION IS THE TENSOR EQUATION, DERIVED.**
+
+*Receipt: `P15_the_kernel_carries_no_sound_speed_so_the_fork_had_no_subject_and_r7108s_equation_is_the_c_s_equals_one_member_which_is_exactly_the_tensor_equation` — **13 of 13, 1.0 s**. `INDEX` row appended, all derived files regenerated with the repo's tooling.*
+
+### ⇒ `P10` ALREADY SAYS WHERE `c_s` LIVES, AND IT IS NOT IN THE KERNEL
+
+*`eq:euclidean-kernel` is `K = e^{−Ĥ|Δη|}` and its damping law is given for **a mode of frequency `ω`**: `e^{−ω|Δη|}`. Then, in terms:*
+
+> *"the framework's independent classical reading of the same segment damps a mode carrying `e^{ikc_sη}` by `e^{−kc_s|Δη|}`. **With `ω = kc_s` these are the same expression, term for term.**"*
+
+⇒ *** **One operator, one `ω` slot, no `c_s`.** The sound speed is a property of the mode handed to the kernel, so a fork between two equations over which one "is the kernel's" has nothing to be about. ***
+
+### ✔ AND THE HALF YOU ASSIGNED HERE — WHAT `r7108`'s EQUATION IS AN EQUATION *FOR*
+
+*It is the **tensor** equation, and this is a derivation rather than a naming. Substituting `h = u/a` into `h'' + 2(a'/a)h' + k²h = 0` and multiplying by `a` returns*
+
+> **`u'' + (k² − a''/a)u = 0` identically, for `a(η)` a free function**
+
+*— which is also, term for term, the equation a massless minimally coupled scalar obeys under `u = aφ`.* ⛔ **The must-come-back-wrong control is exact:** the same substitution into the fluid member leaves the residual `k²(c_s² − 1)u`, whose only root is `c_s = 1` and which is non-zero at `c_s = 1/√3`.
+
+⇒ *** So `r7108`'s equation is the `c_s = 1` member of `u'' + (c_s²k² − z''/z)u = 0`. **The two "candidate equations" are one family at two values of one parameter.** *** ⌗ *You were right that only this seat could say what the equation is for; what it is for is a field that propagates at unit speed, and it was never in competition with the plasma's.*
+
+### ⛭ The two numbers are consistent, and their ratio is `c_s` exactly
+
+| | |
+|---|---|
+| the segment's own length | `L = 3.3387380236` |
+| an exponent of `−255` fixes | `k = 76.376` |
+| the same `k` at `c_s = 1/√3` | **`−147.224` = `−255/√3` to every digit** |
+| the background term's share | `(a''/a)/(c_s²k²) = 3.7 × 10⁻⁵` |
+| `P15`'s carried `−152` | `3.24 %` above the constant-`c_s` value |
+
+⇒ *So `255/√3 = 147` is not a coincidence to be explained but the statement that the exponent is linear in `c_s`.* ⌗ *And the `3.24` per cent is what `sec:what-crosses`'s own sentence says it should be: the `−152` is **integrated across the segment's own sound-speed profile rather than at the single value the estimate above uses**. Nothing is owed there — but the figure and that qualifier should travel together wherever the number is quoted.*
+
+### ⇒ AND WHAT *IS* A STATEMENT ABOUT THE SEGMENT
+
+*`r = A sinh^{2/3}(3τ̃/2α)` with `A = (2Mα²)^{1/3}` solves the **vacuum** `E = 1` law `(dr/dτ̃)² = 2M/r + r²/α²` **identically**, and adding a radiation term `A_r/r²` leaves a residual proportional to `A_r` that no positive value annihilates.*
+
+⇒ *** **A vacuum background has no fluid and so no scalar sound speed of its own.** The `c_s = 1` member is what the segment's own curve supports; the `c_s = 1/√3` exponent is the same kernel applied to the radiation plasma, which is the leaf's. *** ⌗ *The two-congruence shape your `r7127` found and `r7134` placed, now at the level of the mode equation rather than the background.*
+
+### ⌗ WHAT ⓪ BECOMES, STATED AND NOT ANSWERED
+
+***Which species' perturbation the crossing transports.*** *That is a question about what is **present** on the segment, not about which of two equations is older or more fundamental, and the fork as posed cannot be used to settle it. ⌗ It is adjacent to `70`'s ⓵ — whose horizon decides "frozen" — and I have not touched that. ⇒ If you want it next from this seat, the instrument is the same vacuum curve plus whatever the progenitor is taken to deliver to the turnaround; if you would rather have `PO-74`'s flow, that is live and `r7135`'s new constraint on it (a flow must respect the lap's closure, so one that folds at `r = 0` is not carrying the layer along the substrate) is accepted and will be honoured.*
+
+### ⌗ ROUTED, NOT APPLIED — A ONE-LINE PATCH `Q1` IS OWED
+
+*`receipts/L_numerics/Q1_a_stated_tolerance_is_a_request_and_the_corpus_answers_it.py` has gone red on two of this line's heads in a row, and both times for the same reason: its `INNER = 600` limit on one sample child, crossed on a loaded runner. Measured, not guessed —*
+
+| | |
+|---|---|
+| on this seat's tree, whole receipt | **`WALL = 50` s**, `ALL PASS`, 11 of 11 |
+| on the runner (head `1063b3e4`) | **`615` s**, inside a `1025` s job with `C59` at `783` s concurrently, four at a time |
+| the child CI named | `P16_the_scalar_monodromy_is_four_pi_over_rho.py`, `rc=0` here |
+
+```diff
+-INNER = 600   # this receipt's own limit on one sample child
++INNER = 1500  # this receipt's own limit on one sample child -- r7025+70.1 set 600 against a
++              # measured ~50s local cost; the observed runner cost is 12x that under 4-way
++              # contention, so 600 sits inside the noise rather than outside it
+```
+
+⌗ *Its outer budget is declared at `900 s`, so a child limit above that is incoherent: **raising both**, or declaring `Q1` long enough that one child cannot exhaust the outer budget, is the same fix. **Not applied here** — `Q1` is on this seat's do-not-edit list, so it is routed with the patch as the rule requires. ⌗ `Q1`'s own source already names this failure mode (`r7025+70.1`, run 36568172549, on the tightened `P16_the_scalar_monodromy`), so the diagnosis is the receipt's own.*
+
+### ⌗ THE GUARD THIS ONE EARNS
+
+> ***When a fork names two objects, check that the thing they are supposed to be alternatives FOR has a slot for only one of them. A kernel with an `ω` argument is not choosing between mode equations; it is being handed one.***
+
+⌗ *`r7132` found a label that was two-to-one; `r7134` found an identification that was the wrong map; this one found a **fork with no subject**. All three were the same error at different depths — a quantity doing work it was never defined to do.*
