@@ -1,0 +1,50 @@
+
+  CARRY-ORDERING AUDIT -- does "red wins" hold in BOTH orderings?
+
+    ledger writes parsed                                  : 425
+    head shas no longer in the repository                 : 0
+    OUT-OF-ORDER WRITES (ancestor wrote after descendant) : 62  (14.6% of all writes)
+       of those, writes that CLEARED (the losing direction): 35
+       of those, writes that only re-added (as designed)   : 27
+    REDS ACTUALLY LOST                                    : 54
+       later re-recorded on the same branch               : 33
+       NEVER re-recorded                                  : 21
+
+    reds lost, by branch:
+        28  shadow-of-existence-setup-6awafl
+        21  main
+         3  shadow-of-existence-setup-wgcmvt
+         2  shadow-of-existence-setup-5tjf0b
+
+    never re-recorded:
+       suite     setup-wgcmvt Q1_a_stated_tolerance_is_a_request_and_the_corpus_answers_it.p   (cleared by ancestor 5d85e6e4)
+       tolerance main         B28_a_cardinality_gap.py   (cleared by ancestor 5d85e6e4)
+       tolerance main         C1_the_uptake_is_falling_and_this_line_is_why.py   (cleared by ancestor 5d85e6e4)
+       tolerance main         G1_every_gate_checks_a_declaration.py   (cleared by ancestor 5d85e6e4)
+       tolerance main         R1_r3001_struck_fourteen_rows_and_twelve_receipts_read_them_by   (cleared by ancestor 5d85e6e4)
+       tolerance main         S1_a_seed_that_stops_constructing_its_defect_accuses_the_gate_   (cleared by ancestor 5d85e6e4)
+       tolerance main         E1_an_exemption_is_a_claim_and_all_three_were_false.py   (cleared by ancestor 5d85e6e4)
+       tolerance main         D1_a_check_pinned_to_a_distance_from_the_present_is_pinned_to_   (cleared by ancestor 5d85e6e4)
+       tolerance main         V1_a_translation_table_validated_only_against_what_it_was_aske   (cleared by ancestor 5d85e6e4)
+       tolerance main         P1_a_bake_that_asks_the_papers_and_not_the_receipts_walks_into   (cleared by ancestor 5d85e6e4)
+       tolerance main         Q1_the_corpus_has_the_qualifier_as_a_labelled_proposition_and_   (cleared by ancestor 5d85e6e4)
+       tolerance main         T1_the_papers_cite_the_receipts_decide_and_resources_is_where_   (cleared by ancestor 5d85e6e4)
+       tolerance main         R1_the_registry_was_checked_from_citations_inward_so_twenty_ro   (cleared by ancestor 5d85e6e4)
+       tolerance main         D1_the_same_four_rows_the_second_merge_running_and_this_time_i   (cleared by ancestor 5d85e6e4)
+       tolerance main         O1_the_registry_was_turned_outward_and_the_arrow_still_pointed   (cleared by ancestor 5d85e6e4)
+       tolerance main         Q50_the_tolerance_comparisons_gate_the_verdict_and_a_third_of_   (cleared by ancestor 5d85e6e4)
+       tolerance main         C32_half_one_is_model_selection.py   (cleared by ancestor 5d85e6e4)
+       tolerance main         C59_the_control_reproduces_camb_and_the_height_defect_was_k_tr   (cleared by ancestor 5d85e6e4)
+       tolerance main         C60_the_hier_composition_defect_names_two_flags_its_own_tree_n   (cleared by ancestor 5d85e6e4)
+       tolerance main         P15_the_onset_bracket_family_is_latent_everywhere_and_was_live   (cleared by ancestor 5d85e6e4)
+       tolerance main         P15_the_shear_coefficient_derived_not_remembered.py   (cleared by ancestor 5d85e6e4)
+
+  ⌗ THE LIMIT: "never re-recorded" does not separate *passed when next covered* from
+    *never covered again* -- the ledger records deltas, not coverage.  So the last count is
+    reds the layer stopped chasing, NOT defects that went unseen.
+
+  ⌗ AND THE SCOPE OF THE HARM: the carry decides which receipts the NEXT run re-tests and
+    nothing else.  It cannot retract a check-run conclusion and does not feed the fast job
+    or a PR's own checks.  What this defect falsifies is one sentence of the layer's own
+    docstring -- "no push that misses it can silence it: it is re-run until it finishes".
+

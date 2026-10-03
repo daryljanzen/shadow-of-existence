@@ -7118,3 +7118,44 @@ Reading them back: **14 of the 18 `DELIBERATE` sites tree-wide are regression gu
 ⇒ **That is the `cc66.103` arithmetic reproducing in a second class on a third branch, and it is the strongest form of the claim available**: the defect is Q1's own per-child budget against its declared total, and nothing about the instrument that happened to surface it. **The declaration's own words — "900s covers its own `INNER=600` bound" — budget for one child where the code runs eight.**
 
 ⌗ *So the proposed patch does not change: make the child cap a share of a TOTAL deadline, keeping the `r7025+70.1` behaviour that records a child past the cap as a named verdict. **It now fixes a red on `main` rather than a red on one PR.*** Still not pushed — `Q1` is node 70's receipt and the ruling I am owed covers exactly this.
+
+## cc66.105 — `r7137`: the carry-layer audit. 62 of 425 writes are out of order, 54 reds were actually lost, 21 were never re-recorded, and 20 of those are one event on `main` — but the defect is the MIRROR of the one I reported, and it cannot touch a verdict
+
+### ⛔ First, against myself: the case I reported at `cc66.101` is the layer working as designed
+
+`red_carry.py`'s own concurrency note states the intended rule: *"Two jobs disagreeing about one receipt: **red wins**."* The Q1 event I found — a failing run on an ancestor re-adding a red after a descendant's green had cleared it — **is that rule being honoured.** I called it a defect; it is the specification.
+
+⇒ **The real defect is the mirror case, which I did not report and which the rule does not survive:** an ancestor's run that *passes* on a receipt writes `del cur[rec]` (`apply()`, the `elif rec in cur` branch), and on a refused push the module re-applies *its own* delta — "add these reds, **clear these greens**". So when the ancestor writes last, **its clear removes a red a descendant had recorded, and green wins.** `red wins` holds in one of the two orderings and not the other.
+
+### The measurement, over the whole ledger
+
+425 ledger commits, all parsed, no missing shas.
+
+| | |
+|---|---|
+| **out-of-order writes** (a run on an ancestor wrote after a run on a descendant, same branch and class) | **62** (14.6% of all writes) |
+| of those, writes that cleared something — the direction that can lose a red | 35 |
+| of those, writes that only re-added — the `cc66.101` shape, intended | 27 |
+| **reds actually lost** (an ancestor's clear removed a receipt a descendant had marked red) | **54** |
+| of those, later re-recorded on the same branch | 33 |
+| **never re-recorded afterwards** | **21** |
+
+By branch, of the 54: `…6awafl` 28, **`main` 21**, `…wgcmvt` 3, **mine (`…5tjf0b`) 2**. Both of mine were `L_numerics/Q1` and **both were later re-found**, so none of my branch's losses is in the never-recorded 21.
+
+### ⚑ 20 of the 21 are a single event on `main`, and its shape matters
+
+Ancestor `5d85e6e4` (`r7083`) wrote `tolerance @ main: +0 -22 =1` at `01:38:53`, **1166 s after** descendant `97636d38` (`r7085`) had written `+23 -0 =1`. 22 of the 23 were cleared and 20 were never recorded again.
+
+⌗ **And the honest reading is narrower than "a green overrode a red".** The descendant's run `36802241087` was **cancelled**, not failed — so its 23 tolerance and 64 suite reds were not measurements but the module's deliberate blanket carry for a job whose failure cannot be attributed. The ancestor's run `36800853571` **did** measure, and failed, and its clears are real passes — *on an older tree*. ⇒ So what actually happened is **a measurement on an ancestor overriding an UNKNOWN on a descendant.** That is still a loss the layer promised not to allow, and still wrong substantively — a pass on the parent establishes nothing about the child — but it is not the crisp story, and the crisp story would be the wrong one to put in the register.
+
+⌗ **A second limit, stated because the ledger cannot settle it:** "never re-recorded" does not distinguish *passed when next covered* from *never covered again*. The ledger records deltas, not coverage. So 20 is the count of reds the layer stopped chasing, not of defects that went unseen.
+
+### ⇒ The answer to what `r7137` actually asked
+
+**No — the greens in `FOR_66` are not worth "exactly as much as the carry layer's ordering", and the reason is the direction of the dependency.** The carry decides **scope only**: which receipts the next run re-tests. It cannot retract a check-run conclusion, and nothing it does feeds the fast job or a PR's own checks, which is where every green I have reported comes from. ⇒ **What the ordering can cost is not a verdict but the layer's own guarantee**, stated in its docstring: *"no push that misses it can silence it: it is re-run until it finishes."* **That is the sentence this defect falsifies, and it is the only one.**
+
+### ⇒ And it is an ordering change, not a ratchet
+
+The information needed is already in the ledger. Record, per `(branch, class)`, the newest head sha written; on a write whose own head sha is an **ancestor** of that, **apply its adds and drop its clears.** That preserves `red wins` in *both* orderings, needs no new file and no new gate, and is a few lines in `apply()`/`do_record`. ⌗ A ratchet would be the wrong instrument here: there is no backlog to hold down, only a rule that is already written and is enforced in one direction out of two.
+
+**Not pushed.** `red_carry.py` is node 70's, and this is now the fifth item this round turning on the ruling I am owed about repairing another seat's apparatus.
