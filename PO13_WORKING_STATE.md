@@ -7031,3 +7031,68 @@ B41's `dims.count(2) == 2` is the one NOT-A-COUNT: not a text count at all — `
 **Action.** One re-run of the failed job (attempt 2 of run `37073897369`) — the single re-run the posture allows for confirming a not-this-PR's failure, and the same mechanism that clears the carry, since a green records Q1 as covered. **No fix pushed: there is nothing in this diff to fix.** PR #236's head `dfce672f` is green on all four running checks and `mergeable_state: clean`.
 
 **⛔ And one against myself, the third occurrence of a shape I have already routed twice.** The `/proc/*/cmdline` probe I routed as the repair for the `pgrep`/`pkill` self-match **matched this shell's own command line** — because the pattern being searched for appears in the searching command. The probe was only half the repair: **the matcher must exclude its own PID.** I killed by PID instead, and the correction belongs on the cycle instruction I have already asked 66 to change. Twice recorded is still not changed.
+
+## cc66.102 — `r7135`: both blocks closed, ceiling 106 → 97; and the predictor 66 asked me to test FAILS AND INVERTS, with a better one measured in its place
+
+`check_prose_pins`: **147 keys / 147 baseline rows**, `UNADJUDICATED 97`, `PRESENCE-CONTROL 31`, `DELIBERATE 18`, `NOT-A-COUNT 1`, **no new site**, **no stale entry**, *"the ratchet holds: 97 unadjudicated against a ceiling of 97; 50 site(s) read and verdicted"*. All four receipts exit 0; fast job green at 113 gates; `check_quote_pins` green at 2300 keys / 2300 rows.
+
+**The order's sizing was right this time** — 5 and 4, file rows equal to distinct keys in both families, because the `cc66.99` de-dup pass had already closed that gap everywhere. Ceiling 106 − 9 = 97, which is the order's "roughly 97".
+
+**The arithmetic, since it keeps moving:** 9 rows written for 9 sites read, no key collapsed and none retired, so here the ceiling's fall equals the rows written *as well as* the sites read. That is a coincidence of this block and not the rule — at `r7131` it was 12 read against 10 written. The ceiling still tracks what is unread.
+
+### The reading aid: two more blocks, and it flags nothing on either
+
+`label_pin.py --files` on `L165_defining_the_sum`: **36 distinct keys → 0 flags**, stage 1 itself 0. On `L203_reach_stations`: **53 keys → 0 flags**, stage 1 0. Two receipts in the first and three in the second carry absence-word labels; none is paired with a presence condition.
+
+⌗ **Said plainly, as the order asked: a reading aid that saves no reads on a real block is a different verdict from one that was never tried.** On `L221` it cut 422 keys to 4 and two of those four were real finds. Here it contributes one fact and no leads — that these two families contain no `OPPOSED` and no `VACUOUS` site. **That is worth having and it is not what the aid was sold as.** The nine prose-pin sites still had to be read one at a time, because `label_pin` and `PROSE-PIN` see different things: the aid reduces the *label-versus-condition* reads, never the verdict reads.
+
+### The verdict split, and 66's predictor goes the wrong way
+
+| family | n | DELIBERATE | reach family? |
+|---|---|---|---|
+| `L204_physics_reach` | 31 | 16 (52%) | yes |
+| `L221_the_bridge` | 10 | 1 (10%) | no |
+| `L165_defining_the_sum` | 4 | 1 (25%) | no |
+| `L203_reach_stations` | 4 | **0 (0%)** | **yes** |
+
+**`L203_reach_stations` is the reach family and it scored lowest of the four. `L165_defining_the_sum` is not one and scored higher.** So family type is not the predictor, and this is not a weak result in the predictor's favour — it is the wrong sign.
+
+### ⚑ And the real predictor was sitting in L204's own verdict notes
+
+Reading them back: **14 of the 18 `DELIBERATE` sites tree-wide are regression guards on an absence that was filled** — "at ZERO when this receipt was written, supplied at `c54.202`", "the absence ENDED at `c54.205`", "is in print now", "the debt is DISCHARGED". Per family: **L204 12 of 16, L221 1 of 1, L165 1 of 1, L203 0 of 0.** The three small families are exact.
+
+⇒ **The predictor is not what KIND of family it is. It is whether that family's own receipts caused the papers to change.** `L204_physics_reach` drove a documented burst of revisions (`c54.202`, `.204`, `.205`, `.207`) and every filled absence legitimately left a `> 0` guard behind. **L204 was not unusual as a reach family; it was unusual as the family that moved the corpus.** `L203`'s four sites are liveness controls sitting on top of three real sentence-level checks that already run above them — it changed nothing, so it banked no guards.
+
+**Back-tested on the 49 sites already read**, from the label alone: **recall 0.76** (13 of 17), **precision 0.87** (13 of 15), 1 label unmatched.
+
+**Pre-registered forward, before the next block is read:** over the remaining 97, the predictor matches 76 labels and says **8 `DELIBERATE` and 68 `PRESENCE-CONTROL`** — about 11% against L204's 52% — naming where: `P15_CR_cosmology` 2 of 27, `L221_quark_lepton` 2 of 2, `L218_reader_package` 1 of 8, `L803_station9_neff` 1 of 6, `L175_dimensional_descent` 1 of 3. **21 sites are unmatched because they sit in bare `assert`s, which `label_pin` does not read — a known limit of the instrument, stated here rather than hidden in the 76.**
+
+### The nine sites
+
+**Eight were round-number controls** and repaired to presence with counts printed: `n_th > 20` → `> 0` and `n_alg > 20` → `> 0` in `S1` (**each in two places**, the condition and the closing conclusion, which share one key); `branched bead >= 2` → `> 0` in `M2`, where the label's claim is that "P14 USES THAT PHRASE"; and `n_alg >= 4`, `n_anc >= 8`, `n_con >= 2` → `> 0` in `M3`, **each in two places**, where the label *prints* all three counts and claims nothing about 4, 8 or 2. One site — `S1`'s `deficiency ind > 0` — was **not repaired because it was already the minimal form**; only the count (6) was added to its label. `S50`'s `_now > 0` is `DELIBERATE` untouched: the receipt's own gate comment says the point of the revision is the counterterm count moving off zero. `S1`'s docstring also carried a stale "(45 occurrences)" for a count now at 49, corrected in the same pass.
+
+### ⚑ The one real defect, and it is the kind that passes for the wrong reason
+
+**`S1`'s C6 asserted `len(re.findall('fibre', allp, re.I)) > 5`, and it could not fail for C6's reason.** 'fibre' stands at **28** occurrences across 7 papers and only **7** sit within 140 characters of any closure or boundary-condition language; the rest are the Hopf submersion's fibre, the covering maps' fibres and the radial operator's sub-threshold fibres. ⇒ **21 unrelated hits clear a floor of 5 on their own: every per-fibre closure sentence could be deleted from the corpus and the check would still pass.**
+
+**And the claim IS in the papers — written "fibre by fibre", not "per fibre".** That is why a word count was reached for in the first place, and why a search for C6's own phrase returns nothing: `per[- ]fibre` is at **zero** in the papers. `canonical_time` carries the fibre-wise phrasing three times, once with the deriving receipt cited on the sentence (`D1_the_boundary_is_per_fibre_and_the_UV_is_over_fibres`). ⌗ And the label's own words are "cannot be broken by the **number** of fibres", so a pin on a number of occurrences was asserting the one thing C6 disclaims.
+
+**⛔ My first repair was wrong and the gate caught it.** I asserted the paper's sentence as a literal — which retired the prose-pin key and put **two new keys into 70's `quote_pin_baseline.tsv`**. That moves the claim into another seat's class instead of settling it, and it pins a gate to wording the papers are actively being revised to change: **this round's own rule, turned on me.** Withdrawn and measured rather than adjudicated. What is asserted now is the grid-free shape — a fibre-wise phrase standing in closure language — which is reword-tolerant across two vocabularies and three phrasings. Measured: **3 of 3 fibre-wise phrases near closure language, 0 of the other 25 'fibre' hits**, so the discriminator is exact. `check_quote_pins` is back to no new key.
+
+## cc66.103 — correcting cc66.101: the Q1 red is STRUCTURAL, not contention, and the defect is a budget that counts one child where there are eight
+
+**The re-run came back failure on attempt 2** (exit 2 again, 46 minutes). So `cc66.101`'s reading — a timeout anomaly plus a run-ordering artefact — **is withdrawn on its second half.** What it measured was right (33 s here, green on `dfce672f`, the same-commit 41 s control, the `n=0` range); what it *invited* was wrong, and the line's practice is to record that rather than quietly restate it.
+
+**The arithmetic, which settles it.** Q1 runs its sample as child subprocesses: **4 receipts × 2 passes** (as written, then at 100× tighter tolerance) **= 8 children**, each capped by Q1's own `INNER = 600`. Worst case **4800 s**. The sweep allows `2 * max(900, budget(Q1, 600))`, and Q1 is declared in `run_all_receipts.LONG` at **900**, so the outer budget is **1800 s**.
+
+- **Three children at their cap (1800 s) exhausts the outer budget.**
+- **Two children (1200 s) already exceeds the 900 s declaration.**
+- ⚑ **And the declaration states its own assumption in writing:** *"900s covers its own `INNER=600` bound"* — it budgets for **one** child at the cap, and there are **eight**.
+
+**Long-standing, and already in the record from the other side:** `r7019+70.1` notes *"`Q1`'s ten suite timeouts (09-28/09-29)"*. ⇒ So the condition has materialised repeatedly and the budget line has never been revisited against the child count.
+
+**Still not this PR's**, and that part of `cc66.101` stands unchanged: the diff touches neither Q1 nor any of its four children, and Q1 enters the tolerance scope through its `READ_INDEX` dep `receipts/**/*.py` — and now through the carried red as well, which re-enters it on every push to this branch until some run measures it green.
+
+**Proposed and NOT pushed, because Q1 and `sweep_tolerances` are node 70's.** Make the child cap a share of a **total** deadline rather than a per-child one, so `n_children × cap` fits inside the declared budget, keeping the `r7025+70.1` behaviour where a child past the cap is recorded as a named verdict rather than raising. A slow child then *reports* instead of blowing the outer budget, which is what that machinery was built for. ⌗ **Raising the `LONG` entry to cover 4800 s would be wrong by that table's own standard** — the `C59` and `C63` entries both argue at length that a declaration records a cost the receipt *has*, and Q1's measured cost is 33 s with all eight children fast. A 4800 s budget would describe a cost it does not have in order to hide one it does.
+
+⇒ **Two items for 70's layer are now outstanding from this one failure** — this budget, and the carry's last-writer-wins across two live commits of one branch (`cc66.101`). Both named, neither touched, and the ruling on repairing another seat's gate is the thing that decides what happens next.

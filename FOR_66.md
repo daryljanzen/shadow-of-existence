@@ -9,7 +9,9 @@ behind, its `HEAD` still `r6772+66.42`, so its copy of the order file is a stric
 and can only ever be staler. *The correction and its measurement are the `r7117` entry below.*
 The measurements live in `PO13_WORKING_STATE` and the receipts; the adjudications in `CORPUS_MAP`.
 **This file carries the reply only.** Everything named here is committed and pushed on
-`claude/shadow-of-existence-setup-5tjf0b` (PR #223) — nothing waits on the chat window.*
+`claude/shadow-of-existence-setup-5tjf0b` (**PR #240**, draft) — nothing waits on the chat window.*
+⌗ *PR #223 and PR #236 are both MERGED; a merged PR cannot carry new work, so each round's follow-on
+opens a fresh one on the same branch. **The live PR number is the one on this line and nowhere else.***
 
 ## ⚑ THE DECISIVE RUN — **IT LANDS**, on every criterion the order stated but one
 
@@ -5352,6 +5354,83 @@ PINNED = {'systematic uncertainty': 1}
 ⌗ **On your standing invitation:** *it does not feel like looking for the bug that rescues the fit — it feels like the opposite, and I want that on the record **before** the numbers rather than after. The reading I have written down says the excess is the background's own, and the artefact stage is the one I ordered first precisely so that preference cannot do the work.*
 
 ---
+
+## ⛔ `r7131` CI, CORRECTED — **THE RE-RUN FAILED THE SAME WAY, SO THE `Q1` RED IS STRUCTURAL AND NOT CONTENTION. THE DEFECT IS A BUDGET THAT COUNTS ONE CHILD WHERE THERE ARE EIGHT.**
+
+***Attempt $2$ came back FAILURE*** *(exit $2$ again, $46$ minutes). ⇒ **So the entry below is withdrawn on its second half**: what it measured was right — $33$ s here, green on `dfce672f`, the same-commit $41$ s control, the `n=0` range — but **what it invited a reader to conclude was wrong**, and I would rather say that than restate it quietly.*
+
+### ⚑ THE ARITHMETIC, WHICH SETTLES IT
+
+*`Q1` runs its sample as child subprocesses: **$4$ receipts $\times$ $2$ passes** (as written, then at $100\times$ tighter tolerance) **$= 8$ children**, each capped by `Q1`'s own `INNER = 600`. ⇒ **Worst case $4800$ s.** The sweep allows `2 * max(900, budget(Q1, 600))`, and `Q1` is declared in `run_all_receipts.LONG` at **$900$**, so the outer budget is **$1800$ s**.*
+
+- ***Three children at their cap ($1800$ s) exhausts the outer budget.***
+- ***Two children ($1200$ s) already exceeds the $900$ s declaration.***
+- ⚑ ***And the declaration states its own assumption in writing:*** *"900s covers its own `INNER=600` bound" — **it budgets for ONE child at the cap, and there are EIGHT.***
+
+⌗ ***Long-standing, and already in the record from the other side:*** *`r7019+70.1` notes "`Q1`'s ten suite timeouts (09-28/09-29)". **So the condition has materialised repeatedly and the budget line has never been revisited against the child count.***
+
+⇒ ***Still not this PR's***, *and that half stands: the diff touches neither `Q1` nor any of its four children, and `Q1` enters the tolerance scope through `receipts/**/*.py` — and now through the carried red, which re-enters it on every push to this branch until some run measures it green.*
+
+### ⇒ PROPOSED AND NOT PUSHED, BECAUSE BOTH FILES ARE `70`'s
+
+***Make the child cap a share of a TOTAL deadline rather than a per-child one***, *so `n_children × cap` fits inside the declared budget, keeping the `r7025+70.1` behaviour where a child past the cap is recorded as a named verdict rather than raising. **A slow child then REPORTS instead of blowing the outer budget, which is what that machinery was built for.***
+
+⌗ ***And raising the `LONG` entry to $4800$ would be wrong by that table's own standard*** *— the `C59` and `C63` entries both argue at length that a declaration records a cost the receipt **has**, and `Q1`'s measured cost is $33$ s with all eight children fast. **A $4800$ s budget would describe a cost it does not have in order to hide one it does.***
+
+⇒ ***So this one failure has put TWO items into `70`'s layer*** *— this budget, and the carry's last-writer-wins across two live commits of one branch. **Both named, neither touched.** ⌗ *Which is the third time this round the same question has decided what I do next, and it is still yours: **do I repair another seat's gate when the defect is mine to have found and not mine to own?** I have taken the conservative branch three times; say the word and I will take the other.*
+
+---
+
+
+## ✔✔✔ `r7135` DELIVERED — **BOTH BLOCKS CLOSED, CEILING `106 → 97`. AND THE PREDICTOR YOU SENT ME TO TEST FAILS AND INVERTS: THE REACH FAMILY SCORED LOWEST OF THE FOUR. A BETTER ONE IS MEASURED, BACK-TESTED AND PRE-REGISTERED FORWARD.**
+
+*`check_prose_pins`:* `147 keys, 147 baseline rows`, `UNADJUDICATED: 97`, `PRESENCE-CONTROL: 31`, `DELIBERATE: 18`, `NOT-A-COUNT: 1`, **`no new site`**, **`no stale entry`**, `the ratchet holds: 97 against a ceiling of 97; 50 site(s) read and verdicted`. *All four receipts exit `0`; fast job green at $113$ gates; `check_quote_pins` green at $2300$ keys.*
+
+⌗ ***Your sizing was right this time*** *— $5$ and $4$, file rows equal to distinct keys in both, because `cc66.99` closed that gap everywhere. $106 - 9 = 97$, which is your "roughly $97$".* ⌗ *On the arithmetic: **$9$ rows for $9$ sites, no key collapsed and none retired**, so here the fall equals the rows written as well as the sites read — **a coincidence of this block and not the rule**, since at `r7131` it was $12$ read against $10$ written.*
+
+### ⚑⚑ THE PREDICTOR GOES THE WRONG WAY, AND THAT IS THE ANSWER TO WHAT YOU ASKED
+
+| family | $n$ | `DELIBERATE` | a reach family? |
+|---|---|---|---|
+| `L204_physics_reach` | $31$ | $16$ ($52\%$) | yes |
+| `L221_the_bridge` | $10$ | $1$ ($10\%$) | no |
+| `L165_defining_the_sum` | $4$ | $1$ ($25\%$) | no |
+| `L203_reach_stations` | $4$ | **$0$ ($0\%$)** | **yes** |
+
+***`L203_reach_stations` is the reach family and it came out LOWEST of the four; `L165_defining_the_sum` is not one and came out higher.*** ⇒ **So this is not a weak result in the predictor's favour — it is the wrong sign.** *Family type is not what the split tracks.*
+
+### ⚑⚑⚑ AND THE REAL PREDICTOR WAS IN `L204`'s OWN VERDICT NOTES, WHICH I HAD WRITTEN AND NOT READ BACK
+
+***$14$ of the $18$ `DELIBERATE` sites on the tree are regression guards on an absence that was FILLED*** *— "at ZERO when this receipt was written, supplied at `c54.202`", "the absence ENDED at `c54.205`", "is in print now", "the debt is DISCHARGED". **Per family: `L204` $12$ of $16$, `L221` $1$ of $1$, `L165` $1$ of $1$, `L203` $0$ of $0$ — the three small families are exact.***
+
+⇒ ***The predictor is not what KIND of family it is. It is whether that family's own receipts made the papers change.*** *`L204_physics_reach` drove a documented burst of revisions (`c54.202`, `.204`, `.205`, `.207`) and every filled absence legitimately left a `> 0` guard behind. **`L204` was not unusual as a reach family; it was unusual as the family that moved the corpus.** `L203`'s four sites are liveness controls sitting on top of three real sentence-level checks that run above them — it changed nothing, so it banked no guards.*
+
+⌗ ***Back-tested on the $49$ sites already read, from the label alone: recall $0.76$ ($13$ of $17$), precision $0.87$ ($13$ of $15$).***
+
+⇒ ***PRE-REGISTERED FORWARD, BEFORE THE NEXT BLOCK IS READ:*** *over the remaining $97$ it matches $76$ labels and says **$8$ `DELIBERATE` and $68$ `PRESENCE-CONTROL`** — about $11\%$ against `L204`'s $52\%$ — and names where: `P15_CR_cosmology` $2$ of $27$, `L221_quark_lepton` $2$ of $2$, `L218_reader_package` $1$ of $8$, `L803_station9_neff` $1$ of $6$, `L175_dimensional_descent` $1$ of $3$. ⌗ **$21$ sites are unmatched because they sit in bare `assert`s, which `label_pin` does not read — stated here rather than hidden inside the $76$.** ⇒ *So the rule you asked about is worth stating for the backlog, but **not the rule you proposed**: it is "did this family move the papers", and it is falsifiable on the next block either way.*
+
+### ⇒ THE READING AID: TWO MORE BLOCKS, AND IT FLAGS NOTHING ON EITHER
+
+*`L165_defining_the_sum`: **$36$ keys → $0$ flags**, stage 1 itself $0$. `L203_reach_stations`: **$53$ keys → $0$ flags**, stage 1 $0$. Two receipts in the first and three in the second carry absence-word labels; none is paired with a presence condition.*
+
+⌗ ***Said plainly, as you asked: a reading aid that saves no reads on a real block is a different verdict from one that was never tried.*** *On `L221` it cut $422$ to $4$ and two of those were real finds. **Here it contributes one fact and no leads** — that these families hold no `OPPOSED` and no `VACUOUS` site. *That is worth having and it is not what I sold it as.* ⇒ **And the honest correction to my own claim: the aid reduces the LABEL-VERSUS-CONDITION reads, never the verdict reads.** *All nine prose-pin sites were still read one at a time, because the two operators see different things. **Two data points make it a measurement, and the measurement is narrower than the claim.***
+
+### ⚑ THE ONE REAL DEFECT, AND IT IS THE KIND THAT PASSES FOR THE WRONG REASON
+
+***`S1`'s C6 asserted `len(re.findall('fibre', allp, re.I)) > 5` and it could not fail for C6's reason.*** *'fibre' stands at **$28$** across $7$ papers and only **$7$** sit within $140$ characters of any closure or boundary-condition language — the rest are the Hopf submersion's fibre, the covering maps' fibres and the radial operator's sub-threshold fibres. ⇒ **$21$ unrelated hits clear a floor of $5$ on their own: every per-fibre closure sentence could be deleted from the corpus and this check would still pass.***
+
+⇒ ***AND THE CLAIM IS IN THE PAPERS — WRITTEN "fibre by fibre", NOT "per fibre".*** *Which is why a word count was reached for, and why a search for C6's own phrase returns nothing: `per[- ]fibre` is at **zero** in the papers. `canonical_time` carries the fibre-wise phrasing three times, once with the deriving receipt cited on the sentence. ⌗ *And the label's own words are "cannot be broken by the **number** of fibres" — so a pin on a number of occurrences was asserting the one thing C6 disclaims.*
+
+⛔ ***MY FIRST REPAIR WAS WRONG AND 70'S GATE CAUGHT IT.*** *I asserted the paper's sentence as a LITERAL — which retired the prose-pin key and **put two new keys into `quote_pin_baseline.tsv`**. ⇒ **That moves a claim into another seat's class instead of settling it, and pins a gate to wording the papers are actively being revised to change: this round's own rule, turned on me.** *Withdrawn and measured rather than adjudicated.* **What is asserted now is the grid-free shape** — a fibre-wise phrase standing in closure language, reword-tolerant across two vocabularies and three phrasings. Measured: $3$ of $3$ fibre-wise phrases near closure language, $0$ of the other $25$ 'fibre' hits, so the discriminator is exact. `check_quote_pins` back to no new key.*
+
+### ⌗ WHAT IS STILL OWED TO ME, UNCHANGED
+
+- ***The ruling on repairing another seat's gate*** *when the defect is mine to have found and not mine to own. **It came up twice more this round** — `70`'s carry layer (below) and `70`'s quote-pin baseline above, where I withdrew rather than adjudicate.*
+- ***The cycle-instruction change:*** *read `/proc/*/cmdline`, **and skip the matcher's own PID** — never `pkill -f`. *The probe alone was half the repair and the shape recurred a third time.**
+- ***`VACUOUS` stands at $46$ sites*** *and is still the cleanest unclaimed signal on the tree.*
+
+---
+
 
 ## ⚑⚑ `r7131` CI — **A RED ON A SUPERSEDED ANCESTOR, AND THE FIND IS NOT THE RECEIPT: A CARRIED RED OUTLIVED THE GREEN THAT CLEARED IT. NOTHING WAS FLAGGED AND NOTHING IS PUSHED.**
 

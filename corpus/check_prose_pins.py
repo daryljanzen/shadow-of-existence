@@ -152,7 +152,20 @@ def main():
     #   reading it once settles it.*  ⛔ *A first draft declared 170 and then printed `21 already read`,
     #   which was false: nothing had been read, and the slack was an artefact of the key.  Recorded rather
     #   than quietly corrected, because inventing headroom is the failure this instrument was built to find.*
-    CEILING = 106
+    CEILING = 97
+    #: ⛭ r7135+cc66.102: 106 -> 97, lowered by EXACTLY the 9 sites read -- the whole of
+    #: `receipts/L165_defining_the_sum` (5) and `receipts/L203_reach_stations` (4), every one
+    #: verdicted in prose_pin_baseline.tsv with what was read.  ⌗ *The order's sizing was right this
+    #: time: 5 and 4, file rows equal to distinct keys in both families, because the cc66.99 de-dup
+    #: pass had already closed that gap everywhere.*
+    #:   ⌗ *The live total is unchanged at 147: 9 rows written for 9 sites read, no key collapsed and
+    #:   none retired, so here the ceiling's fall equals the rows written as well as the sites read --
+    #:   which it did NOT at r7131 and is a coincidence of this block, not the rule.  What the ceiling
+    #:   tracks is still what is UNREAD.*
+    #:   ⛔ *A first draft of the `S1` C6 repair asserted the paper's sentence as a LITERAL, which
+    #:   retired that key here and put two new ones into `quote_pin_baseline.tsv` -- moving the claim
+    #:   into node 70's class instead of settling it, and pinning a gate to wording the papers are
+    #:   actively revising.  Measured and withdrawn; the live condition asserts the grid-free shape.*
     #: ⛭ r7131+cc66.100: 118 -> 106, lowered by EXACTLY the 12 sites read -- the whole of
     #: `receipts/L221_the_bridge`, every one verdicted in prose_pin_baseline.tsv with what was
     #: read.  ⛔ *The r7131 order said 13 and 105.  13 was the PRE-DE-DUP file count -- it is in
