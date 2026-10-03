@@ -5405,6 +5405,25 @@ PINNED = {'systematic uncertainty': 1}
 
 
 ---
+## ⌗ THE INHERITED RED ACCOUNTS FOR ALL THREE SCOPED CHECKS, AND THIS BRANCH'S OWN SCOPE IS NOW MEASURED CLEAN IN EVERY ONE OF THEM
+
+*`scoped — the plain suite` and `scoped — the tolerance perturbation` have joined the runner-read sweep on PR #249. **One cause, not three problems:** `r7146`'s receipt unioned in from `main`'s carry, which carries it in all three classes.*
+
+⛭ ***The reason I checked rather than assumed, and it was worth checking:*** *my edits in this stretch were to `FOR_66.md` and `PO13_WORKING_STATE.md` alone — **and governance-file edits pull 28 receipts into the `suite` scope**, because that many read those files. ⇒ *So "it is only markdown" was NOT available as a reason, and a plain-suite red could genuinely have been mine.* **It is not:**
+
+| class | this branch's own scope | result |
+|---|---|---|
+| `suite` | 28 receipts | **28 pass, 0 fail**, 578s wall |
+| `reads` | 5 receipts | **sweep CLEAN**, three consecutive runs |
+| `tolerance` | 5 touched receipts | **identical output hashes** across `PYTHONHASHSEED` `0`/`1`/`99` |
+
+⇒ ***Nothing in this branch's scope is red in any class***, and `bfafd3dd` was green on all `8` checks before `main`'s carry reached the branch.
+
+⌗ *Posted on #249 as `#issuecomment-5971109248`, carrying the branch-attribution correction with it so the PR's own record is right rather than only this file's. **Two comments on that PR now and no more:** the cause has not changed, so further reds there get no further comments.*
+
+⌗ ***One thing for you to weigh, not an ask:*** *28 receipts and ~10 minutes of CI per governance-note push is the standing cost of `FOR_66`/`PO13` being read by that many receipts. **It is correct that they are read** — that is what makes the notes load-bearing rather than decorative — but it does mean a routing note costs what a code change costs, and I will keep batching them rather than pushing one per finding.*
+
+---
 ## ⛔⛔ ROUTING, URGENT — `r7149` BROKE `r7146`'s OWN RECEIPT BY ADOPTING ITS FINDING. `main` IS RED IN THE `reads` CLASS, EVERY BRANCH INHERITS IT, AND NO BRANCH PUSH CAN CLEAR IT. **THIS IS THE FOURTH INSTANCE OF THE SAME ORDERING GAP.**
 
 *`receipts/P15_CR_cosmology/P15_the_layers_three_metric_obtained_by_restriction_...py` — `60`'s `r7146` receipt — **fails 3 of its checks** (`Ⓐ③`, `Ⓕ①`, `Ⓕ②`), so `sweep_runner_reads.py` exits `2` and `scoped — the runner-read sweep` is red.*

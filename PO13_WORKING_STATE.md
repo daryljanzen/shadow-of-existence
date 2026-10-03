@@ -7391,3 +7391,19 @@ I wrote that the `suite`-class entry sat on `6awafl`. **It does not.** `6awafl`'
 ⇒ **The correction strengthens the point rather than weakening it:** `main` carries this one receipt in *every* scoped class, so PR #249 is owed reds in `tolerance` as well as `reads` — and it already carries the `tolerance` entry since `f2702e86`.
 
 ⌗ **The process lesson, in this round's own vocabulary:** `refs/ci/carry` is rewritten by every CI run on every branch. It moved between my two reads and I quoted the earlier one as standing fact. **A claim about the carry is a claim about a FILE AT A COMMIT** — `P14/D2`'s words — and mine named no commit. Every carry reading from here names the carry commit it was read at.
+
+### ⌗ All three scoped checks are the one inherited red, and this branch's scope is measured clean in each
+
+`scoped — the plain suite` and `scoped — the tolerance perturbation` joined the runner-read sweep on PR #249 — one cause, not three problems: `r7146`'s receipt unioned in from `main`'s carry, which holds it in all three classes.
+
+**Why this needed checking rather than assuming:** my edits in this stretch were to `FOR_66.md` and `PO13_WORKING_STATE.md` alone, and **governance-file edits pull 28 receipts into the `suite` scope** because that many read those files. So *"it is only markdown"* was not available as a reason, and a plain-suite red could genuinely have been mine.
+
+| class | this branch's own scope | result |
+|---|---|---|
+| `suite` | 28 receipts | **28 pass, 0 fail**, 578s wall |
+| `reads` | 5 receipts | **sweep CLEAN**, three consecutive runs |
+| `tolerance` | 5 touched receipts | **identical output hashes** across `PYTHONHASHSEED` 0/1/99 |
+
+⇒ Nothing in this branch's scope is red in any class, and `bfafd3dd` was green on all 8 checks before `main`'s carry reached the branch. Posted on #249 as `#issuecomment-5971109248`, carrying the branch-attribution correction so the PR's record is right and not only this file's. **Two comments there now and no more** — the cause has not changed.
+
+⌗ *Standing cost, recorded rather than raised as an ask: 28 receipts and ~10 minutes of CI per governance-note push is what `FOR_66`/`PO13` being read by that many receipts costs. It is correct that they are read — that is what makes the notes load-bearing — but a routing note costs what a code change costs, so these get batched rather than pushed one per finding.*
