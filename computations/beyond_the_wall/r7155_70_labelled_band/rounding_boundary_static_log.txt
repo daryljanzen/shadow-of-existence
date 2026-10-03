@@ -1,0 +1,38 @@
+
+  ROUNDING-BOUNDARY: 36 site(s) in 23 receipt(s)   {'HALF-UNIT': 33, 'ROUND': 2, 'HALF-UNIT-LABELLED': 1}
+    [ROUNDING-BOUNDARY][HALF-UNIT][n=7] receipts/P03_SdS_slicing/P03_slate_worked.py:337:7  abs(float(sp.exp(-2*sp.pi)) - 0.0018674) < 5e-8
+    [ROUNDING-BOUNDARY][HALF-UNIT][n=6] receipts/P05_groupoid/X1rr_sky_angle_is_the_galois_closure.py:24:7  abs(f2M(0.31) - 0.308544) < 5e-7
+    [ROUNDING-BOUNDARY][HALF-UNIT][n=6] receipts/P05_groupoid/X1rr_sky_angle_is_the_galois_closure.py:25:7  abs(f2M(1.07) - (-0.026309)) < 5e-7
+    [ROUNDING-BOUNDARY][HALF-UNIT][n=1] receipts/P10_canonical_time/P10_the_operator_is_an_inverted_quartic_so_the_deficiency_is_two_two_and_the_measure_closes_it_anyway.py:485:6  abs(e_real - (-1.0)) < 5e-2
+    [ROUNDING-BOUNDARY][HALF-UNIT][n=1] receipts/P10_canonical_time/P10_the_thermal_condition_is_helicity_blind_at_the_mode_functions_and_the_parity_odd_entry_is_not_owed.py:403:6  abs(v2 / v1 - 2.0) < 0.05
+    [ROUNDING-BOUNDARY][HALF-UNIT][n=6] receipts/P13_boundary_paper/P13_closure_iv_check.py:115:7  abs(-_tab[0][0] - (-0.436815)) < 5e-7
+    [ROUNDING-BOUNDARY][HALF-UNIT][n=6] receipts/P13_boundary_paper/P13_closure_iv_check.py:115:49  abs(_tab[0][1] - (-0.776531)) < 5e-7
+    [ROUNDING-BOUNDARY][HALF-UNIT][n=6] receipts/P13_boundary_paper/P13_closure_iv_check.py:116:7  abs(-_tab[3][0] - (-5.580487)) < 5e-7
+    [ROUNDING-BOUNDARY][HALF-UNIT][n=6] receipts/P13_boundary_paper/P13_closure_iv_check.py:116:49  abs(_tab[3][1] - (-5.584603)) < 5e-7
+    [ROUNDING-BOUNDARY][HALF-UNIT][n=6] receipts/P13_boundary_paper/P13_closure_iv_check.py:119:7  abs(_gap[0] - 0.339716) < 5e-7
+    [ROUNDING-BOUNDARY][HALF-UNIT][n=6] receipts/P13_boundary_paper/P13_closure_iv_check.py:119:42  abs(_gap[3] - 0.004117) < 5e-7
+    [ROUNDING-BOUNDARY][HALF-UNIT][n=1] receipts/P15_CR_cosmology/C10_highl_ratio.py:92:7  abs(_l_star_CR - 302.2) < 0.05
+    [ROUNDING-BOUNDARY][HALF-UNIT][n=1] receipts/P15_CR_cosmology/C10_highl_ratio.py:94:7  abs(_l_star_LC - 302.8) < 0.05
+    [ROUNDING-BOUNDARY][HALF-UNIT][n=1] receipts/P15_CR_cosmology/C7_equality_and_deficit.py:67:7  abs(z_eq_CR - 3398.0) < 0.05
+    [ROUNDING-BOUNDARY][HALF-UNIT][n=1] receipts/P15_CR_cosmology/C7_equality_and_deficit.py:68:7  abs((1 + z_eq_CR) - 3399.0) < 0.05
+    [ROUNDING-BOUNDARY][HALF-UNIT][n=1] receipts/P15_CR_cosmology/P15_desi_dr2_confrontation.py:105:7  abs((1+zo)/3402 - 2.0) < 0.05
+    [ROUNDING-BOUNDARY][ROUND][n=2] receipts/P15_CR_cosmology/P15_the_133_bin_pair_is_computed_and_asserted_and_the_hardcoded_row_carried_the_other_arm.py:184:3  round(ab, 2) == round(ab2, 2)
+    [ROUNDING-BOUNDARY][ROUND][n=3] receipts/P15_CR_cosmology/P15_the_band_rms_ratio_does_not_move_with_any_numerical_setting.py:190:7  round(worst, 3) == 0.008
+    [ROUNDING-BOUNDARY][HALF-UNIT][n=6] receipts/P15_CR_cosmology/P15_the_combs_resolution_is_four_multipoles_and_the_skys_own_value_lies_outside_the_family.py:298:6  abs(G('cs', 'cr')[0] - 0.396733) < 5e-7
+    [ROUNDING-BOUNDARY][HALF-UNIT][n=6] receipts/P15_CR_cosmology/P15_the_combs_resolution_is_four_multipoles_and_the_skys_own_value_lies_outside_the_family.py:298:50  abs(G('cs', 'cr')[-1] - 0.396957) < 5e-7
+    [ROUNDING-BOUNDARY][HALF-UNIT][n=1] receipts/P15_CR_cosmology/P15_the_crossing_spectrum_reproduces_on_a_second_instrument_and_the_172_is_the_radiation_free_ruler.py:417:6  abs(D['matched']['cb'] / ((SKY[2] - SKY[0]) / 2) - 1.0) < 0.05
+    [ROUNDING-BOUNDARY][HALF-UNIT-LABELLED][n=3] receipts/P15_CR_cosmology/P15_the_exact_transmission_ratios_are_recomputed_and_the_offset_saturates.py:217:58  _d < 5e-4
+    [ROUNDING-BOUNDARY][HALF-UNIT][n=5] receipts/P15_CR_cosmology/P15_the_growth_root_on_the_leaf_rate_is_not_a_moment_balance_and_the_gap_stands.py:234:6  abs(j_slip - 0.99934) < 5e-6
+    [ROUNDING-BOUNDARY][HALF-UNIT][n=5] receipts/P15_CR_cosmology/P15_the_growth_root_on_the_leaf_rate_is_not_a_moment_balance_and_the_gap_stands.py:234:39  abs(j_flat - 0.99940) < 5e-6
+    [ROUNDING-BOUNDARY][HALF-UNIT][n=1] receipts/P15_CR_cosmology/P15_the_interiors_vacuum_is_blue_everywhere_and_a_running_so_the_substrates_mass_template_does_not_apply.py:243:52  abs(sl.max() - 2.0) < 0.05
+    [ROUNDING-BOUNDARY][HALF-UNIT][n=1] receipts/P15_CR_cosmology/P15_the_laws_six_of_seven_is_five_at_the_quoted_floor_which_is_one_phases_and_with_the_instruments_own_error_divided_out_all_seven_hold.py:155:6  abs(worst * 100 - 6.7) < 0.05
+    [ROUNDING-BOUNDARY][HALF-UNIT][n=2] receipts/P15_CR_cosmology/P15_the_null_harness_survives_its_one_assumption_except_for_the_misplaced_part_and_floors_a_phase_at_the_excess_but_not_at_the_spectrum.py:173:62  abs(B['d window/arm']['phase_obs'] - 0.27) < 0.005
+    [ROUNDING-BOUNDARY][HALF-UNIT][n=4] receipts/P15_CR_cosmology/P15_the_phase_systematic_leaves_the_step_standing_and_carries_a_third_of_the_retention_slope_through_a_phase_drift_between_the_sources.py:130:6  abs(T_real[0] - 0.0215) < 5e-5
+    [ROUNDING-BOUNDARY][HALF-UNIT][n=3] receipts/P15_CR_cosmology/P15_the_phase_systematic_leaves_the_step_standing_and_carries_a_third_of_the_retention_slope_through_a_phase_drift_between_the_sources.py:130:41  abs(T_real[0] / T_real[1:].mean() - 0.333) < 5e-4
+    [ROUNDING-BOUNDARY][HALF-UNIT][n=5] receipts/P15_CR_cosmology/P15_the_phase_systematic_leaves_the_step_standing_and_carries_a_third_of_the_retention_slope_through_a_phase_drift_between_the_sources.py:191:6  abs(s12r - 0.01359) < 5e-6
+    [ROUNDING-BOUNDARY][HALF-UNIT][n=5] receipts/P15_CR_cosmology/P15_the_phase_systematic_leaves_the_step_standing_and_carries_a_third_of_the_retention_slope_through_a_phase_drift_between_the_sources.py:191:37  abs(sd12r - 0.00202) < 5e-6
+    [ROUNDING-BOUNDARY][HALF-UNIT][n=4] receipts/P15_CR_cosmology/P15_the_photon_hierarchy_in_the_transfer.py:256:7  abs(CR[-1][1] - 0.5703) < 5e-5
+    [ROUNDING-BOUNDARY][HALF-UNIT][n=1] receipts/P15_CR_cosmology/P15_the_resolution_table_eight_of_the_eleven_instruments_cannot_represent_the_comb_period_and_four_smallest_shares_are_honest_blanks.py:109:28  abs(DQX - 0.5) < 0.05
+    [ROUNDING-BOUNDARY][HALF-UNIT][n=1] receipts/P15_CR_cosmology/P15_the_shared_fraction_does_not_mean_what_i_said_and_the_peak_trough_pattern_is_the_arms_alone.py:204:6  abs(C2_L / n - 1.0) < 0.05
+    [ROUNDING-BOUNDARY][HALF-UNIT][n=1] receipts/P15_CR_cosmology/P15_the_term_mix_is_the_first_channel_to_produce_cost_where_the_arm_is_rejected_and_the_excess_there_is_combed_at_the_acoustic_period.py:244:34  abs(PER[A.argmax()] - 1.0) <= 0.05
+    [ROUNDING-BOUNDARY][HALF-UNIT][n=4] receipts/P16_cosmogenesis_paper/CROSSING_no_made_asymmetry.py:36:7  abs(abs(Sa) - 0.0481) < 5e-5

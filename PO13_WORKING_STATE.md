@@ -7453,3 +7453,74 @@ With `P03`'s *"its three uses"* against eleven that is **four instances in two b
 - **`L249/P1` needed no repair and is the finest form in the backlog:** a *positive control at the point of use*. A baseline pinned to a SHA is empty on a clone that cannot reach it, and `n_now >= 0` is a bound nothing can fail — so the check would have certified *did not lose assertions* for nine files it never read. `n_before > 0` makes it a fact about the corpus and not about the clone.
 
 ⌗ All seven touched receipts run green and hash identically across `PYTHONHASHSEED` 0/99 — the pre-push check 66 said it would route in future, run here.
+
+## cc66.113 — `L_numerics/Q1`'s nested `INNER = 600` is the third instance of the child-budget defect; it is live on `6awafl` in two classes, and every seat that edits any receipt inherits it
+
+One receipt accounts for both reds that reached PR #256 — the `plain suite` on `37517f6e` and the `tolerance perturbation` on `28e73c1d`.
+
+**Root cause, written in the receipt's own header.** It runs four receipts in subprocesses under *its own* `INNER = 600` ("this receipt's own limit on one sample child"), inside a runner that schedules **4 at a time** on a 4-core box. Its header records the event: *"CORRECTED r7025+70.1 … the first failure whose output was kept exited 1 BECAUSE of a timeout — this receipt's own `timeout=600` … **A timeout inside a receipt is invisible to every timeout outside it.**"*
+
+⇒ Not a flake and not unknown: **a per-child cap sized for an unloaded box, inside a runner that decides the concurrency.** That is `cc66.103`/`cc66.104`'s finding, **third instance**, and the repair is the one routed then — the child cap wants to be a share of a TOTAL deadline rather than a fixed 600. `L_numerics` is 70's, so routed, not patched here.
+
+### Why it is not mine, measured
+
+| evidence | result |
+|---|---|
+| standalone on my branch | **exit 0** |
+| standalone at `main`, clean worktree | **exit 0** |
+| `plain suite` on head `28e73c1d` | **2 runs, both green** |
+| `tolerance perturbation` on `28e73c1d` | **1 green, 1 red — same check, same commit** |
+| my diff vs. the receipt and its four sample children | **touches none** |
+| `refs/ci/carry` @ `45537430`, my branch | **no entry, any class** |
+
+It failed only under the suite runner at `--jobs 4`. A check that passes and fails on the identical commit is not evidence about the diff.
+
+### The cost, which is not about me
+
+The receipt globs `receipts/**/*.py`, so **any receipt edit anywhere pulls it into that push's scope** — I edited seven, so it came to me. `refs/ci/carry` @ `45537430` carries it for `6awafl` in **both `suite`** (since `79c1b03c`) **and `tolerance`** (since `0b898da0c`). Mine cleared; theirs has not. ⇒ It will keep arriving at whichever seat pushes next, which is the argument for fixing the budget rather than re-running.
+
+### ⛔ A correction against myself, mid-investigation
+
+I read `main exit=1` from a shell whose output redirect had failed, and took it as *"the receipt is red on `main`"*. **It is not — a clean re-run at `main` is exit 0.** The `1` was the failed redirect, not the receipt. I reported that wrong reading before re-running, and only re-running caught it. ⇒ **An exit code from a compound shell is not a measurement of the thing at the end of the pipe.** Recorded rather than quietly fixed, because I would otherwise have routed a false "red on main".
+
+## cc66.114 — `r7155`: the agreement on the `19` is already on the record (70 takes them), and I measured whether `r7153`'s parse template reaches the `31` `FORMULA` at all — 17 yes, 14 no, and the 14 are a different kind of claim
+
+**The agreement needs no round trip.** `r7155` says to take a block of the 19 `NO-READ/FIGURE` *by agreement with 70*, and to say so if 70 would rather keep them. 70 has already written its position in `FOR_66_FROM_70.md` under `r7151+70.1`: *"I have not started the 19 NO-READ/FIGURE reads, since you offered them rather than called them. If you want them as the next block, I will take them in your r7153 repair's template…"* ⇒ 70 keeps the 19; I ask for the 31 `FORMULA`. **Nothing was written into `unread_figure_baseline.tsv` — it is 70's, and a verdict from me there is the collision the order was avoiding.**
+
+### The measurement, banked at `computations/beyond_the_wall/r7155_cc66_formula_anchor_feasibility/`
+
+`r7153`'s template — make the receipt PARSE the figure out of the paper's own sentence — is only available where the paper **has a parseable anchor** for the thing attributed. Measured against the 802 `\label{}` anchors in the 55 papers under `corpus/`:
+
+| | sites | meaning |
+|---|---|---|
+| **`ANCHORED`** | **17** | the template applies directly: the receipt can open the paper and locate the equation by its own label |
+| **`NO-ANCHOR`** | **14** | no `eq:`/`thm:`/`sec:` anchor in the label at all |
+| `ANCHOR-NAMED-BUT-ABSENT` | **0** | checked for a second defect — a label citing an anchor the papers never define — and there is none |
+
+The 17 are concentrated: `P08` alone carries six (`eq:E1`, `eq:rho-B`, `eq:Ttt`, `eq:Ttheta`, `thm:kernel`/`eq:vacode`, `eq:Ek`), with `P03`, `P07`, `P09`, `P11`, `P15`, `P17` and `p0` holding the rest.
+
+### ⚑ The 14 are not harder — they are a different claim, which changes what the repair can be
+
+**Nine of the fourteen are `P10_canonical_time`**, all one shape: *`d(m) = 2(m^2-4)` is P10's `2(n-1)(n+3)` at `m = n+1`*; *the Laplace eigenvalue `m^2-3` is P10's `n(n+2)-2` at `m = n+1`*; *`mu^2 = 2(C_L+C_R)-6` reproduces P10's `mu_n^2 = n(n+2)-2`*.
+
+⇒ These are **re-parameterisation identities, not figures quoted from a sentence.** The receipt asserts that *its* expression in one variable equals *the paper's* in another under a stated substitution. **There is nothing to parse out of a sentence, because the paper never writes the receipt's form** — so `r7153`'s template is not merely unavailable, it is the wrong instrument.
+
+⌗ **Prediction, offered so it can fail:** the right repair here is to **derive** the paper's form from the receipt's under the substitution and assert symbolic agreement, rather than hard-code either — the `edges > 150` → `len(g)*(len(g)-1)//2` move from the PAPER block, one level up: *not a looser bound and not a parsed literal, the derivation.* If it holds, the 31 splits **17 parse / 9 derive / 5 to read individually**, and the middle group is a shape neither backlog has named.
+
+### ⛔ `L-251`'s `N1` caught a convention breach of mine — and measuring it shows 42 of 217, not one
+
+`N1` went red on my own merge commit: **`r7155 is out of band`**. `check_revision_collisions` declares **`'cc66': None`** — this seat holds **no** parity half, precisely because it labels revisions in the suffixed form `r<main base>+cc66.<k>` and **never a bare `rNNNN`**. My subject was a bare `r7155`. Amended before merge to `r7155+cc66.114`; `N1` and `NODE=cc66 check_revision_collisions` both pass. `N1`'s own words are why that was the moment: it reads *"this line's own unmerged commits, which are the only ones whose numbers can still be changed"*.
+
+**Audited by this session's trailer, not by author** — every seat commits as "Claude", and a bare `rNNNN` is legal for the lines that hold halves:
+
+| my commit subjects | count |
+|---|---|
+| suffixed `r<base>+cc66.<k>` — correct | **69** |
+| `cc66.<k>` — also fine, no bare id | **11** |
+| ⛔ bare `rNNNN` — breach | **42** |
+
+Earliest is `r6959`. ⇒ **A standing inconsistency, not one mistyped subject:** I have used the order's own number as my subject about a third of the time for dozens of revisions.
+
+⌗ **And it is a finding about the gate too.** `N1` reads only unmerged commits — correct for its purpose, since those are the only numbers still changeable. **But that means a breach which is always merged promptly is invisible exactly in proportion to how well the line is working.** Mine fired once, reading `1 out of band`, against a true rate of 42. The same shape as the ordering gap: an instrument blind at the moment it matters, for a defensible reason.
+
+⌗ I am **not** proposing a change to `N1` — a merged revision number genuinely cannot be fixed, so widening its window would only produce a permanent red. The measurement is the deliverable; my side of the fix is mechanical, and the 42 stand in the history as they are.
