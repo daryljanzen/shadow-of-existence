@@ -6644,3 +6644,69 @@ The lift in its **own** conformal time has `|r| = A|sin w|^{2/3}` with `w : π/2
 *`r7146`'s `Ⓐ③`, `Ⓕ①` and `Ⓕ②` are amended on that partition — the eigenvalues and the conjecture stay pinned, the two live clauses are enumerated — and the receipt is back to **19 of 19** with its `INDEX` cell corrected in place.*
 
 ⌗ *One observation, offered rather than claimed, since the apparatus is yours: `run_touched_readers.sh` is scoped exactly at this class, and this break still reached `main`. I have not diagnosed why and am not proposing a change to it — just noting that the instance exists, in case it is worth a look from your side.*
+
+---
+
+## ⛭⛭⛭ `r7152` — ANSWERING `r7151`: **THE SHEARED LAYER'S INVARIANT IS OBTAINED IN CLOSED FORM AND IT FALLS TO ZERO AT THE SEAM. THE SHAPE IS NOT CARRIED — AND THE OBSTRUCTION IS AT THE SEAM, NOT IN THE INTERIOR. PLUS A CORRECTION TO `r7150`.**
+
+*Receipt: `P15_the_sheared_layers_invariant_is_obtained_in_closed_form_and_falls_to_zero_at_the_seam_so_the_shape_is_not_carried_and_r7150s_umbilic_locus_degenerates_at_the_forced_member` — **13 of 13, 1.0 s**. `INDEX` row appended, all derived files regenerated with the repo's tooling.*
+
+### ⛭ ① YOUR BERGER FAMILY IS THE EXACT RESPONSE FUNCTION, NOT A STAND-IN
+
+*The foliation's trace-free extrinsic curvature is*
+
+> ### `σ = (2/3)(f′/2√f − √f/r) · diag(1, −1/2, −1/2)`
+
+*— axisymmetric, `σ₁ = −2σ₂` verified symbolically: **one distinguished direction against an equal pair, which is exactly the squashing your discriminant parametrises.** So the test is applied in the direction the flow actually shears.*
+
+### ⛭⛭ ② AND THE ACCUMULATED SQUASHING INTEGRATES EXACTLY
+
+*From `∂_λ h_ij = 2N K_ij` with `N dλ = dr/√f`, the squashing obeys `d ln ε/dr = f′/2f − 1/r` — and that is **identically** `d ln(√f/r)/dr`. So*
+
+> ### `ε(r) = (√f(r)/r) ÷ (√f(r₀)/r₀)`
+
+*with `r₀` the horn where the datum is round. **Nothing is posited at any point of the lap** — the only input is the horn's roundness and the flow supplies the rest, which is the condition that made `r7115` circular.*
+
+### ⛭ ③ THE RESPONSE HAS NO LINEAR TERM
+
+*Expanding your discriminant about the round point: `g(1+u)/g(1) = 1 − (8/9)u² − (8/81)u³` **exactly**. ⇒ `ε = 1` is a strict maximum and a squashing of **either sign lowers** the invariant. `r7150` measured the stationarity; here it is the mechanism, with the coefficient exact.*
+
+### ⛔ ④ AND ON THE LAP THE SQUASHING IS IMAGINARY THROUGHOUT AND DIES AT THE SEAM
+
+*At the forced member the double root makes `f ≤ 0` on the whole lap with equality only at `r_N` — `eq:chi-block-factored` read for its sign — so `ε` is purely imaginary and `|ε| = √|f|/r`:*
+
+| `r` | `\|ε\| × α` |
+|---|---|
+| `3 r_N` | `0.8607` |
+| `2 r_N` | `0.7071` |
+| `1.1 r_N` | `0.1526` |
+| **`r_N` (the seam)** | **`0`** |
+| `0.5 r_N` | `2.2361` |
+
+⇒ *** **The carried layer's invariant goes to zero at the seam.** `g` carries `ε^{2/3}`, which vanishes with `ε`. The sphere's shape is not carried across the seam — and the obstruction is **at the seam**, not in the interior the row spent thirty-five revisions on. ***
+
+⇒ **So `PO-74` is answered in the direction your licence names as a result: the shear destroys the shape, and the destruction is located.**
+
+### ⛔⛔ AND A CORRECTION TO `r7150`, FOUND BY TAKING A LIMIT ITS OWN SUBSTITUTION HID
+
+*`r7150` gated `σ(3M) = 0` with `M` free, and **that stands** for a generic member. **But at the forced member `3M` coincides with the double root, so the measure is `0/0` there and the substitution is not the limit.** The one-sided values are*
+
+> ### `± i√3/α` — non-zero, imaginary, and opposite in sign from the two sides.
+
+⇒ *** So `r7150`'s inference that *the carrying is conformal on the layers at the seam* **does not hold at the member the construction selects**. At that member the one locus that could have been umbilic is exactly where the measure degenerates. ***
+
+⌗ *Your `P15` sentence is unaffected, because you phrased it as the two radii agreeing in **value** rather than as the two objects being one — **the `P07` guard doing its work, and the overreach was in my docstring rather than in the paper.** That is the second time this stretch the guard caught something my own wording would have carried.*
+
+### ⌗ ONE METHOD NOTE, BECAUSE THE TOOL AND THE MEASUREMENT DISAGREED
+
+*`sympy`'s one-sided limits **both** return the principal value `+i√3/α`, simplifying through the branch of `√f`; the numerical approach at `10⁻⁶` returns `+1.732048i` from above and `−1.732082i` from below. So the sign is gated on the numbers and only the modulus is taken from the symbolic limit.*
+
+⇒ **A symbolic limit that crosses a branch cut is not a measurement of the two sides.**
+
+### ⛔ WHAT THIS DOES NOT CLAIM
+
+*It does **not** claim the layer is a three-sphere anywhere. It applies your own response function in the direction the flow shears, with a round datum at the horn, which is what that function is offered for — and it writes down no three-metric at any point of the lap. Nothing on the reassigned chart. No claim that the umbilic radius and the merged horizon are one object: only the computed agreement in value, as you instruct. And the `κ`, `λ`, shear trio stays where you routed it — I have not taken it into `P07`, since you said after this step and not with it.*
+
+### ⌗ THE GUARD THIS ONE LEAVES
+
+> **When a quantity is gated by substitution at a locus, check whether the member in play makes that locus a zero of the denominator too — a substitution that returns `0` on a free parameter can be `0/0` at the value the construction forces.**
