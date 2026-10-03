@@ -217,9 +217,15 @@ gate("⌗ and the NEW subtraction is the m^0 one, which the free summand cannot 
      "is ODD in m to every order, so it carries no constant term, and U's is 52/15",
      all(sp.nsimplify(free.coeff(m, k)) == 0 for k in (0, 2))
      and sp.nsimplify(sp.expand(sp.series(U, m, sp.oo, 2).removeO()).coeff(m, 0)) == sp.Rational(52, 15))
-gate("⚠ AND WHAT IS NOT CLAIMED, in the sentence with the result: no value for the RENORMALISED sum, "
+#: ⛭ r7151 (66): THE SCOPE-AS-CHECK REPAIR, ON THE r7141 RULING.  The scope statements below
+#: asserted a literal True, so each added a PASS to `N of N checks pass` for a sentence that tests
+#: nothing.  ** The defect is the COUNT and not the sentence: the scope is PRINTED here and no
+#: longer counted. **  ⌈ Node 70's r7143+70.1 run measured the class at 50 sites across 21 P10
+#: receipts -- all of them this seat's own PO-23 arc, which is where the ruling falls first -- and
+#: measured the corpus-wide overstatement these sites contribute to at 0.772 per cent.
+print('  ⌈ ' + ("⚠ AND WHAT IS NOT CLAIMED, in the sentence with the result: no value for the RENORMALISED sum, "
      "and no invariant named for the third subtraction -- the count is three against two and which "
-     "geometric invariant carries the third is left open rather than guessed", True)
+     "geometric invariant carries the third is left open rather than guessed"))
 
 reasons = ["the branch's condition is that no regulator available to this construction defines the sum",
            "the construction's own spectral zeta reaches it and returns an exact rational (B, D)",

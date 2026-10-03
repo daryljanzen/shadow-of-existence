@@ -231,8 +231,14 @@ gate("⚠ THE SCOPE, IN THE SENTENCE WITH THE RESULT: the d^3 law is derived on 
      "whose factor is not evaluated here -- but the SLACK is a ratio of two sums over the SAME index set, "
      "so that factor enters numerator and denominator alike and cancels from the one power",
      sp.simplify(sp.Symbol("f", positive=True)*bound/(sp.Symbol("f", positive=True)*d**3/Vol) - d) == 0)
-gate("⛔ and what is NOT delivered is named: no individual channel coefficient, no constant, and no sign at "
-     "any one odd level -- (b) is answered as a RATE and (c) is not reached", True)
+#: ⛭ r7151 (66): THE SCOPE-AS-CHECK REPAIR, ON THE r7141 RULING.  The scope statements below
+#: asserted a literal True, so each added a PASS to `N of N checks pass` for a sentence that tests
+#: nothing.  ** The defect is the COUNT and not the sentence: the scope is PRINTED here and no
+#: longer counted. **  ⌈ Node 70's r7143+70.1 run measured the class at 50 sites across 21 P10
+#: receipts -- all of them this seat's own PO-23 arc, which is where the ruling falls first -- and
+#: measured the corpus-wide overstatement these sites contribute to at 0.772 per cent.
+print('  ⌈ ' + ("⛔ and what is NOT delivered is named: no individual channel coefficient, no constant, and no sign at "
+     "any one odd level -- (b) is answered as a RATE and (c) is not reached"))
 reasons = ["the constant does NOT require the two-point value -- route one is orthogonality (A)",
            "and the two-point route is not even closed on this substrate -- the kernel is a character (B)",
            "so the exit's premise, that r7044's kernel argument shows the wall stands in front of the "

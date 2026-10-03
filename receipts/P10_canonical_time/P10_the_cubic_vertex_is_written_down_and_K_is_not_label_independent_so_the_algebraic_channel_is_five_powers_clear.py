@@ -557,9 +557,15 @@ for i, r in enumerate(reasons, 1):
 gate("⛭ THE TERMINAL BRANCH IS NOT TAKEN, on the order's own ground: its premise about what was left is "
      "corrected and the object it pointed at is delivered.  r7051 carries no exit offer, so none is "
      "declined -- nine of sixteen stands", len(reasons) == 3)
-gate("⛔ AND WHAT IS NOT DELIVERED IS NAMED: no single number K, because K_rec is a FUNCTION and is "
+#: ⛭ r7151 (66): THE SCOPE-AS-CHECK REPAIR, ON THE r7141 RULING.  The scope statements below
+#: asserted a literal True, so each added a PASS to `N of N checks pass` for a sentence that tests
+#: nothing.  ** The defect is the COUNT and not the sentence: the scope is PRINTED here and no
+#: longer counted. **  ⌈ Node 70's r7143+70.1 run measured the class at 50 sites across 21 P10
+#: receipts -- all of them this seat's own PO-23 arc, which is where the ruling falls first -- and
+#: measured the corpus-wide overstatement these sites contribute to at 0.772 per cent.
+print('  ⌈ ' + ("⛔ AND WHAT IS NOT DELIVERED IS NAMED: no single number K, because K_rec is a FUNCTION and is "
      "given exactly at every odd level; no crossing for the full vertex; no constant and no sign at any "
-     "odd level; no closed form in m; and Q3 not reached", True)
+     "odd level; no closed form in m; and Q3 not reached"))
 
 print("\n  " + "=" * 74)
 bad = [n for n, ok in CHECKS if not ok]

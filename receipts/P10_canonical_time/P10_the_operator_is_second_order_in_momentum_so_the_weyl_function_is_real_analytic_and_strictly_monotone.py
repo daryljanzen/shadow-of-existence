@@ -415,11 +415,16 @@ check(span > 0.2 and spread < 1e-11 and span / spread > 1e10,
 check(float(Ms.min()) > 0.66 and float(Ms.max()) < 0.94,
       f"⌗ the measured window is M in [{Ms.min():.6f}, {Ms.max():.6f}], recorded because section 7 "
       "uses it to bound where a zero can be at all")
-check(True,
-      "⇒ NOT CONSTANT, AND ON NO SUB-FAMILY: a strictly positive derivative leaves no interval of "
+#: ⛭ r7151 (66): THE SCOPE-AS-CHECK REPAIR, ON THE r7141 RULING.  The scope statements below
+#: asserted a literal True, so each added a PASS to `N of N checks pass` for a sentence that tests
+#: nothing.  ** The defect is the COUNT and not the sentence: the scope is PRINTED here and no
+#: longer counted. **  ⌈ Node 70's r7143+70.1 run measured the class at 50 sites across 21 P10
+#: receipts -- all of them this seat's own PO-23 arc, which is where the ruling falls first -- and
+#: measured the corpus-wide overstatement these sites contribute to at 0.772 per cent.
+print('    ⌈ ' + ("⇒ NOT CONSTANT, AND ON NO SUB-FAMILY: a strictly positive derivative leaves no interval of "
       "constancy, and the only mechanism that could have produced one -- a scaling of k absorbing w "
       "-- is blocked by lambda^5 = 1.  The half that could have failed for a boundary reason fails "
-      "for no reason at all")
+      "for no reason at all"))
 
 # ===========================================================================
 head("6  (1) REAL-ANALYTICITY, WITH THE TEST'S RESOLUTION NAMED BEFORE THE COUNT")
@@ -507,10 +512,9 @@ check(crossings == 1 and spread < 1e-11 and abs(ct) < 1e-11 and dom.is_finite,
       "diffeomorphism of the half line, so one w is one scale factor, r6976; (iii) the pole set of a "
       "Nevanlinna function discrete, so the conclusion has the form 'off a discrete set'; "
       "(iv) monotonicity, which upgrades measure-zero to at-most-one-point")
-check(True,
-      "⛔ AND THE LIMITATION, STATED SO THE CLOSURE IS NOT READ WIDER THAN IT IS: this is the "
+print('    ⌈ ' + ("⛔ AND THE LIMITATION, STATED SO THE CLOSURE IS NOT READ WIDER THAN IT IS: this is the "
       "criterion at the CUBIC TRUNCATION, and r6972 showed that truncation's count is the "
-      "truncation's.  What closes is the criterion as posed; the ultraviolet question is untouched")
+      "truncation's.  What closes is the criterion as posed; the ultraviolet question is untouched"))
 
 # ===========================================================================
 head("8  (3) THE ZERO-MODE INTEGRATOR: ITS CLASS, PROVED, AND ITS BOUNDARY")
@@ -546,11 +550,10 @@ check(sp.simplify(2 * sp.pi / sp.sqrt(3)).is_rational is not True and
       sp.nsimplify(2 * sp.pi / sp.sqrt(3) / (2 * sp.pi)) == 1 / sp.sqrt(3),
       "⇒ so no FINITE pick of monomials can produce it -- a truncation is simply wrong, and the "
       "method needs the finite-polynomial hypothesis rather than merely a periodic integrand")
-check(True,
-      "⌗ and the reach today: the only other Euler-angle triple integral in this sector is the "
+print('    ⌈ ' + ("⌗ and the reach today: the only other Euler-angle triple integral in this sector is the "
       "volume normalisation, whose integrand is separable and already costs nothing, so there is no "
       "second call site to convert.  THE REACH IS FORWARD -- at the higher levels, where the adjoint "
-      "matrix enters to higher powers and the cost is where r6976 found it")
+      "matrix enters to higher powers and the cost is where r6976 found it"))
 
 print()
 print("=" * 94)

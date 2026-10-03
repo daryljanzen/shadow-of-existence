@@ -431,9 +431,14 @@ check([sp.simplify(sp.simplify(cser.coeff(xs, j)).subs(ss, 0)) for j in range(5)
       "whatever the offset -- and the degeneracy is a count of harmonics, so it does not move")
 check(sp.simplify(2 * ((5 ** 2 - 4)) - 42) == 0,
       "the degeneracy at this very level is 2(m^2-4) = 42 at m = 5, a count, carrying no frequency")
-check(True,
-      "⇒ NOTHING FURTHER MOVES.  A confirmation at a second level adds no number; what it removes is "
-      "the limitation sentence PO-63 was opened for.  The list is stated rather than assumed")
+#: ⛭ r7151 (66): THE SCOPE-AS-CHECK REPAIR, ON THE r7141 RULING.  The scope statements below
+#: asserted a literal True, so each added a PASS to `N of N checks pass` for a sentence that tests
+#: nothing.  ** The defect is the COUNT and not the sentence: the scope is PRINTED here and no
+#: longer counted. **  ⌈ Node 70's r7143+70.1 run measured the class at 50 sites across 21 P10
+#: receipts -- all of them this seat's own PO-23 arc, which is where the ruling falls first -- and
+#: measured the corpus-wide overstatement these sites contribute to at 0.772 per cent.
+print('    ⌈ ' + ("⇒ NOTHING FURTHER MOVES.  A confirmation at a second level adds no number; what it removes is "
+      "the limitation sentence PO-63 was opened for.  The list is stated rather than assumed"))
 
 # ===========================================================================
 head("F.  3  THE CRITERION: THE INVARIANT RECOMPUTED, AND AN EXACT REDUCTION TO ONE VARIABLE")
@@ -473,13 +478,11 @@ check(sp.simplify(sp.integrate(sp.Abs(sp.sqrt(lamd)) ** 2, (qv, 0, 1)) - lamd) =
 check(sp.simplify(sp.Integer(1) ** 2) == 1 and sp.simplify(sp.Integer(3) ** 2) == 9,
       "and in either sign case the realisation is a finite datum -- a U(1) family at deficiency (1,1), "
       "a U(3) family at (3,3) -- so det(Theta - M(0,w)) = 0 is ONE scalar equation in ONE variable")
-check(True,
-      "⇒ THE CLASS THE PROBLEM NEEDS IS A BOUNDARY-TRIPLE INSTRUMENT, whose analytic object is the "
+print('    ⌈ ' + ("⇒ THE CLASS THE PROBLEM NEEDS IS A BOUNDARY-TRIPLE INSTRUMENT, whose analytic object is the "
       "finite Weyl function and not the operator family: the hypothesis drops from a w-independent "
-      "operator domain, which r6972 showed is FALSE, to real-analyticity of one scalar function")
-check(True,
-      "⛔ and what remains unproved is stated so it is not mistaken for a result: that M(0, .) is "
-      "real-analytic in w and not constant.  Neither of the two failed instruments is extended")
+      "operator domain, which r6972 showed is FALSE, to real-analyticity of one scalar function"))
+print('    ⌈ ' + ("⛔ and what remains unproved is stated so it is not mistaken for a result: that M(0, .) is "
+      "real-analytic in w and not constant.  Neither of the two failed instruments is extended"))
 
 print()
 print("=" * 94)

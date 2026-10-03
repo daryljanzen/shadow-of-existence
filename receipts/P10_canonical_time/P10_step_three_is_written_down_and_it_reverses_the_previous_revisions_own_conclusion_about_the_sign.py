@@ -180,17 +180,22 @@ gate("⛔⛭ AND THIS REVERSES r7036's OWN CONCLUSION.  Its reading was that at 
      "depends on g^2 -- positive at g^2 = 0 and negative at large g^2, both exhibited",
      honest.subs({c4s: 1, g2s: 0, mus: 8}) > 0
      and honest.subs({c4s: 1, g2s: 1000, mus: 8}) < 0)
-gate("⇒ THE SIGN WAITS ON g^2 AGAIN, and the bitensor wall is back in front of it rather than beside "
-     "it -- which is a loss relative to what r7036 reported and is reported as one",
-     True)
+#: ⛭ r7151 (66): THE SCOPE-AS-CHECK REPAIR, ON THE r7141 RULING.  The scope statements below
+#: asserted a literal True, so each added a PASS to `N of N checks pass` for a sentence that tests
+#: nothing.  ** The defect is the COUNT and not the sentence: the scope is PRINTED here and no
+#: longer counted. **  ⌈ Node 70's r7143+70.1 run measured the class at 50 sites across 21 P10
+#: receipts -- all of them this seat's own PO-23 arc, which is where the ruling falls first -- and
+#: measured the corpus-wide overstatement these sites contribute to at 0.772 per cent.
+print('  ⌈ ' + ("⇒ THE SIGN WAITS ON g^2 AGAIN, and the bitensor wall is back in front of it rather than beside "
+     "it -- which is a loss relative to what r7036 reported and is reported as one"))
 bound = sp.simplify(2*c4*mu2)
 gate("⌗ WHAT IS GAINED INSTEAD: the requirement is a GROWTH BOUND and not a value -- the criterion "
      "asks only whether g^2 stays below 2 c_4 mu^2, which grows like the EIGHTH power of the label",
      sp.limit(sp.expand(bound.subs(kap, 1))/mlab**8, mlab, sp.oo).is_finite
      and sp.limit(sp.expand(bound.subs(kap, 1))/mlab**8, mlab, sp.oo) != 0)
-gate("⚠ AND THE SCOPE: no value and no bound for g^2 is claimed here, and no back-reaction sign -- "
+print('  ⌈ ' + ("⚠ AND THE SCOPE: no value and no bound for g^2 is claimed here, and no back-reaction sign -- "
      "what is delivered is the passage, the per-mode reduction, the double-count gate, c_4's sign, "
-     "and the reversal", True)
+     "and the reversal"))
 
 print("\n  " + "=" * 74)
 bad = [n for n, ok in CHECKS if not ok]

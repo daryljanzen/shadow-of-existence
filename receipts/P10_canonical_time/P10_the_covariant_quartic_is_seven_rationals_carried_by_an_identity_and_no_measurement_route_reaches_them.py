@@ -88,7 +88,13 @@ gate("and they are C^c_ab = 2 eps_abc, derived and not assumed",
      all(sp.simplify(Cs[c][a][b] - 2*EPS[a][b][c]) == 0
          for a in range(3) for b in range(3) for c in range(3)))
 C = Cs
-gate("the invariant volume is 2 pi^2", True)   # replaced below by the integrated check
+#: ⛭ r7151 (66): THE SCOPE-AS-CHECK REPAIR, ON THE r7141 RULING.  The scope statements below
+#: asserted a literal True, so each added a PASS to `N of N checks pass` for a sentence that tests
+#: nothing.  ** The defect is the COUNT and not the sentence: the scope is PRINTED here and no
+#: longer counted. **  ⌈ Node 70's r7143+70.1 run measured the class at 50 sites across 21 P10
+#: receipts -- all of them this seat's own PO-23 arc, which is where the ruling falls first -- and
+#: measured the corpus-wide overstatement these sites contribute to at 0.772 per cent.
+print('  ⌈ ' + ("the invariant volume is 2 pi^2"))
 
 def trunc(x):
     x = sp.expand(x)

@@ -159,9 +159,15 @@ for nmod, NF in ((2, 5), (3, 4)):
          set(chan) == {1, 3}
          and sp.simplify(chan[1] - p1) == 0 and sp.simplify(chan[3] - p3) == 0)
 
-gate("⇒ SO THE OBJECT THE CRITERION'S g^2 CARRIES IS sum_{ABC} C^2 s_A s_B s_C, at a weight 6, plus a "
+#: ⛭ r7151 (66): THE SCOPE-AS-CHECK REPAIR, ON THE r7141 RULING.  The scope statements below
+#: asserted a literal True, so each added a PASS to `N of N checks pass` for a sentence that tests
+#: nothing.  ** The defect is the COUNT and not the sentence: the scope is PRINTED here and no
+#: longer counted. **  ⌈ Node 70's r7143+70.1 run measured the class at 50 sites across 21 P10
+#: receipts -- all of them this seat's own PO-23 arc, which is where the ruling falls first -- and
+#: measured the corpus-wide overstatement these sites contribute to at 0.772 per cent.
+print('  ⌈ ' + ("⇒ SO THE OBJECT THE CRITERION'S g^2 CARRIES IS sum_{ABC} C^2 s_A s_B s_C, at a weight 6, plus a "
      "one-quantum term at weight 9 whose coefficient is the cubic's own trace -- and that trace is an "
-     "INVARIANT VECTOR of the level, which C below shows the level does not have", True)
+     "INVARIANT VECTOR of the level, which C below shows the level does not have"))
 
 # ===================================================================== B.  (b) the wall
 head("B.  (b) THE WALL, ANSWERED FIRST: ONE LEVEL IS A BITENSOR AND COMPLETENESS IS A DELTA")
@@ -219,10 +225,10 @@ for j in (sp.Rational(1), sp.Rational(3, 2)):
          f"one-level kernel is a genuine two-point object and the restriction above is not vacuous",
          at0 == n and sp.simplify(sp.diff(char(j, th), th)) != 0)
 
-gate("⇒⇒ (b) IS ANSWERED AND THE ANSWER IS NO: THE BITENSOR WALL STANDS IN FRONT OF THE VALUE AND "
+print('  ⌈ ' + ("⇒⇒ (b) IS ANSWERED AND THE ANSWER IS NO: THE BITENSOR WALL STANDS IN FRONT OF THE VALUE AND "
      "NOT IN FRONT OF A BOUND.  The value needs one level's kernel at separated points; the bound "
      "needs the whole basis's, which is a delta, and the difference between them is a sum of squares "
-     "thrown away in the safe direction", True)
+     "thrown away in the safe direction"))
 
 # ===================================================================== C.  the selection rule
 head("C.  ⛭ THE SELECTION RULE: THE LEVEL'S OWN CUBIC VANISHES AT EVERY EVEN LEVEL")

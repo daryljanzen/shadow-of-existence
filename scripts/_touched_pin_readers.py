@@ -20,7 +20,9 @@ MIN = 8          # a literal shorter than this matches too much to mean anything
 #   files.  *That is outside the class rather than a hole in it -- a receipt cannot have pinned prose
 #   from a corpus file that did not exist when the receipt was written.*  ⛔ What IS outside and is a
 #   real limit: a receipt that reads a paper WITHOUT a pinned literal in the quote-pin baseline, since
-#   this scope is that baseline's keys.  The heavy job remains the suite's verdict.
+#   this scope is that baseline's keys -- CLOSED at `r7151` by the third half below, which computes the
+#   same test from the receipt source and needs no adjudication.  The heavy job remains the suite's
+#   verdict.
 
 
 def touched_lines(ref):
@@ -112,6 +114,39 @@ def main():
                     continue
                 if any(nm in src for nm in names) and any(n in src for n in nums):
                     hits.add(path)
+    # ⛭⛭⛭ AND THE THIRD HALF, ADDED r7151 BECAUSE THIS GATE MISSED A BREAK FOR THE THIRD TIME AND
+    #   THE CAUSE WAS ITS OWN STATED LIMIT RATHER THAN A NEW ONE.
+    #   Both halves above key on `corpus/quote_pin_baseline.tsv`, which carries ADJUDICATED keys only.
+    #   ** So a receipt's pins are invisible to this gate until somebody adjudicates them -- which is
+    #   precisely the window where the gate is needed: the revision that LANDS a receipt and then edits
+    #   the paper around it. **  At `r7149` node 60's `r7146` receipt pinned four clauses at
+    #   `count == 1`, two of them the clauses its own row asked the gate to CHANGE; the gate changed
+    #   both, the receipt went red on the success of its own work, and this scope reported green because
+    #   the baseline held one row for that receipt and not those four.
+    #   ⇒ *The repair takes the baseline out of the loop: a receipt that NAMES a changed corpus file
+    #   and carries a string literal appearing in a CHANGED line is in scope, adjudicated or not.*
+    #   ⌈ That is the quote-pin operator's own test, computed here from the receipt source, and it
+    #   rides the walk the numeric half already pays for -- so it costs no extra traversal.
+    if blob and names:
+        lits_re = re.compile(r'["\']([^"\'\\\n]{%d,})["\']' % MIN)
+        for root, _dirs, files in os.walk('receipts'):
+            for fn in files:
+                if not fn.endswith('.py'):
+                    continue
+                path = os.path.join(root, fn)
+                if path in hits:
+                    continue
+                try:
+                    src = io.open(path, encoding='utf-8', errors='replace').read()
+                except OSError:
+                    continue
+                if not any(nm in src for nm in names):
+                    continue
+                for lit in lits_re.findall(src):
+                    if lit in blob:
+                        hits.add(path)
+                        break
+
     for h in sorted(hits):
         print(h)
     return 0

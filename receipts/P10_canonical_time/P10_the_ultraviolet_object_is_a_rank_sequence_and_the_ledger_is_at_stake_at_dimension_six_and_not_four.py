@@ -258,11 +258,16 @@ check(sp.simplify(2 * sp.Rational(1, 120) - sp.Rational(1, 60)) == 0,
 head("3  THE RANK AT DIMENSION FOUR, IN ITS THREE REGIMES")
 # ===========================================================================
 
-check(True,
-      "⌗ THE SEPARATING ORDER BEFORE ANY COUNT (the seventh face): every rank below is the rank of an "
+#: ⛭ r7151 (66): THE SCOPE-AS-CHECK REPAIR, ON THE r7141 RULING.  The scope statements below
+#: asserted a literal True, so each added a PASS to `N of N checks pass` for a sentence that tests
+#: nothing.  ** The defect is the COUNT and not the sentence: the scope is PRINTED here and no
+#: longer counted. **  ⌈ Node 70's r7143+70.1 run measured the class at 50 sites across 21 P10
+#: receipts -- all of them this seat's own PO-23 arc, which is where the ruling falls first -- and
+#: measured the corpus-wide overstatement these sites contribute to at 0.772 per cent.
+print('    ⌈ ' + ("⌗ THE SEPARATING ORDER BEFORE ANY COUNT (the seventh face): every rank below is the rank of an "
       "EXACT RATIONAL coefficient matrix over monomials in the jet variables, so a relation either "
       "shows or does not and THE TEST'S RESOLUTION IS ZERO -- one missing relation is the whole "
-      "difference between any two of these numbers")
+      "difference between any two of these numbers"))
 
 a = sp.Function("a", positive=True)(T)
 chv, thv = sp.symbols("chi theta", positive=True)
@@ -420,12 +425,11 @@ check(r3 == 2 and Mds.rank() == 1,
 head("4  DIMENSION SIX: THE DEGENERACY DOES NOT EXIST THERE AT ALL")
 # ===========================================================================
 
-check(True,
-      "⚠ WHAT THIS COUNT IS A FACT ABOUT, SAID BEFORE IT IS USED -- the row's hardest lesson.  It is "
+print('    ⌈ ' + ("⚠ WHAT THIS COUNT IS A FACT ABOUT, SAID BEFORE IT IS USED -- the row's hardest lesson.  It is "
       "read off a CHOSEN FIVE-ELEMENT SUBSET of the dimension-six basis, so it is a fact about those "
       "five.  ** But it is a LOWER BOUND on the full basis's rank, and a lower bound is the direction "
       "the argument needs: ** completing the basis can only RAISE it, so no completion can undo the "
-      "conclusion.  The guard is discharged by MONOTONICITY and not by hope")
+      "conclusion.  The guard is discharged by MONOTONICITY and not by hope"))
 
 boxR = sp.simplify(-(sp.diff(Rsc, T, 2) + 3 * sp.diff(a, T) / a * sp.diff(Rsc, T)))
 gradR2 = sp.simplify(-sp.diff(Rsc, T) ** 2)
@@ -509,20 +513,17 @@ check(dim_of_term(3, 0) < 0,
       "⇒ AND IF IT DOES, the theory requires a coefficient carrying L^2 -- A SECOND PHYSICAL LENGTH, "
       "exactly what the ledger forbids and what a gauge-combination Planck length was asserted to "
       "avoid.  ** THAT IS A REFUTATION AND NOT A GAP, so the question has a stake on both sides **")
-check(True,
-      "⇒ SO THE PIECES DO DETERMINE THE SHAPE, and what remains is ONE FALSIFIABLE QUESTION rather "
-      "than a category -- which is what the order asked for in the affirmative branch")
+print('    ⌈ ' + ("⇒ SO THE PIECES DO DETERMINE THE SHAPE, and what remains is ONE FALSIFIABLE QUESTION rather "
+      "than a category -- which is what the order asked for in the affirmative branch"))
 check(r6 >= 5,
       "⛔ WHAT IS NOT DETERMINED, stated so the shape is not read as an answer: whether the j >= 2 "
       "divergences exist at all; the FULL dimension-six rank, this one being a lower bound; and whether "
       "the dimension-four coefficient other than 1/60 is computed")
-check(True,
-      "⛔ and the standing limitation holds, in the sentence that states the claim: the interacting "
+print('    ⌈ ' + ("⛔ and the standing limitation holds, in the sentence that states the claim: the interacting "
       "content the row has is the CUBIC TRUNCATION, whose count r6972 showed is the truncation's -- so "
-      "'the interaction enters at j >= 2' is a statement about vertex cost and not about that truncation")
-check(True,
-      "⛔ SO THE ANSWER THE ORDER OFFERED AS HONEST -- 'the object is not yet a question' -- IS NOT THE "
-      "ONE RETURNED.  It is a question, it is falsifiable, and both of its branches are consequential")
+      "'the interaction enters at j >= 2' is a statement about vertex cost and not about that truncation"))
+print('    ⌈ ' + ("⛔ SO THE ANSWER THE ORDER OFFERED AS HONEST -- 'the object is not yet a question' -- IS NOT THE "
+      "ONE RETURNED.  It is a question, it is falsifiable, and both of its branches are consequential"))
 
 print()
 print("=" * 94)

@@ -610,11 +610,16 @@ gate(f"the unweighted tower sums diverge at the {p2d}th and {p4d}th powers of th
      f"apart, which is the same gap r6998 read between the free tower's quartic and the "
      f"order-lambda-squared sum",
      (p2d, p4d) == (5, 7) and S2.coeff(MC, p2d) < 0 and S4.coeff(MC, p4d) < 0)
-gate("⛔ AND WHAT IS MISSING IS NAMED RATHER THAN APPROXIMATED: these are the UNWEIGHTED sums.  The "
+#: ⛭ r7151 (66): THE SCOPE-AS-CHECK REPAIR, ON THE r7141 RULING.  The scope statements below
+#: asserted a literal True, so each added a PASS to `N of N checks pass` for a sentence that tests
+#: nothing.  ** The defect is the COUNT and not the sentence: the scope is PRINTED here and no
+#: longer counted. **  ⌈ Node 70's r7143+70.1 run measured the class at 50 sites across 21 P10
+#: receipts -- all of them this seat's own PO-23 arc, which is where the ruling falls first -- and
+#: measured the corpus-wide overstatement these sites contribute to at 0.772 per cent.
+print('  ⌈ ' + ("⛔ AND WHAT IS MISSING IS NAMED RATHER THAN APPROXIMATED: these are the UNWEIGHTED sums.  The "
      "physical tower sum weights each level by the free vacuum's own two-point function, and "
      "carrying this integrand's eps^4 coefficient to r7010's vertex number c_4 is a normalisation "
-     "chain this revision does not run; g^2 remains behind the bitensor wall r7020 named.",
-     True)
+     "chain this revision does not run; g^2 remains behind the bitensor wall r7020 named."))
 
 # =============================================================== E. the criterion's domain
 head("E.  ⓒ  THE SIGN DOES NOT NEED THE BITENSOR -- A FINDING ON THE BANKED CRITERION'S DOMAIN")
@@ -635,11 +640,10 @@ gate("⛭⛭⛭ AND AT NEGATIVE c_4 THE HONEST FORM IS NEGATIVE FOR EVERY NON-NE
      "LEVEL OF THE TOWER, because g^2 is a square and mu^2 = m^2 - 1 >= 8 > 0 ⇒ the bitensor wall "
      "blocks the MAGNITUDE of the shift and not its SIGN: the sign is decidable from c_4 alone",
      all(s <= 0 for s in sgn) and sum(1 for s in sgn if s < 0) >= 30)
-gate("⚠ AND THE SCOPE IS STATED RATHER THAN STRETCHED: what section C supplies is a definite sign "
+print('  ⌈ ' + ("⚠ AND THE SCOPE IS STATED RATHER THAN STRETCHED: what section C supplies is a definite sign "
      "for the level-summed eps^4 coefficient of this integrand, and carrying it to the sign of c_4 "
      "needs section D's normalisation chain -- so the sign of the shift is NOT claimed here, only "
-     "that it no longer waits on g^2",
-     True)
+     "that it no longer waits on g^2"))
 
 print("\n  " + "=" * 74)
 bad = [n for n, ok in CHECKS if not ok]

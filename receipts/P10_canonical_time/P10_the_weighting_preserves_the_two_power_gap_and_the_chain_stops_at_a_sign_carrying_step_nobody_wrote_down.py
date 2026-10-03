@@ -162,10 +162,15 @@ gate(f"r7034's closed form gives the level-summed fourth-order coefficient at th
 gate("⛭⛭⛭ SO THE TWO BANKED NUMBERS DISAGREE IN SIGN AT THE SAME LEVEL, and the sign-carrying step "
      "is what sits between them: until it is pinned, c_4's sign is NOT determined by the level sum's",
      sp.sign(c4_banked.subs({kap: 1, V: 1})) != sp.sign(q4_floor))
-gate("⚠ AND THE SCOPE: this is not a claim that either number is wrong.  A Hamiltonian vertex "
+#: ⛭ r7151 (66): THE SCOPE-AS-CHECK REPAIR, ON THE r7141 RULING.  The scope statements below
+#: asserted a literal True, so each added a PASS to `N of N checks pass` for a sentence that tests
+#: nothing.  ** The defect is the COUNT and not the sentence: the scope is PRINTED here and no
+#: longer counted. **  ⌈ Node 70's r7143+70.1 run measured the class at 50 sites across 21 P10
+#: receipts -- all of them this seat's own PO-23 arc, which is where the ruling falls first -- and
+#: measured the corpus-wide overstatement these sites contribute to at 0.772 per cent.
+print('  ⌈ ' + ("⚠ AND THE SCOPE: this is not a claim that either number is wrong.  A Hamiltonian vertex "
      "coefficient and an action integrand's coefficient differing in sign is exactly what the "
-     "unwritten step is for -- the finding is that the step is LOAD-BEARING and ABSENT",
-     True)
+     "unwritten step is for -- the finding is that the step is LOAD-BEARING and ABSENT"))
 
 head("E.  (c) NOT REACHED, AND WHY THAT IS THE RIGHT STOPPING POINT")
 c4s, g2s, mus = sp.symbols("c4 g2 mu2")
@@ -176,10 +181,9 @@ gate("r7034's form of the criterion is unchanged and is used, not re-derived: th
      honest.subs({c4s: 1, g2s: 0, mus: 8}) > 0
      and all(honest.subs({c4s: -1, g2s: j, mus: k**2 - 1}) < 0
              for j in (0, 1, 7, 1000) for k in range(3, 12)))
-gate("⇒ (c) IS DECIDABLE FROM c_4's SIGN ALONE AND IS NOT DECIDED HERE, because step 3 is what fixes "
+print('  ⌈ ' + ("⇒ (c) IS DECIDABLE FROM c_4's SIGN ALONE AND IS NOT DECIDED HERE, because step 3 is what fixes "
      "that sign and step 3 is the named stopping point -- a sign carried through it would be carried "
-     "through the one step nobody has verified",
-     True)
+     "through the one step nobody has verified"))
 
 print("\n  " + "=" * 74)
 bad = [n for n, ok in CHECKS if not ok]

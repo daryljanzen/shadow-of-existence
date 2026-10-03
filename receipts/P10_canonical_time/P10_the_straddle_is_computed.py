@@ -101,8 +101,13 @@ check("control: -1/4 is a different threshold and is not crossed on the admissib
       all(G + 0.25 >= 0 for G in (-0.25, 0.0, 0.25)),
       "sqrt(G+1/4) stays real, so a regular branch exists throughout")
 # D3: bounded-above would break it -- show the test depends on unboundedness
-check("control: the straddle needs the spectrum unbounded ABOVE, not merely a low floor",
-      True, "a hypothetical spec=[0,0.5] has a floor below 3/4 and still fails to straddle")
+#: ⛭ r7151 (66): THE SCOPE-AS-CHECK REPAIR, ON THE r7141 RULING.  The scope statements below
+#: asserted a literal True, so each added a PASS to `N of N checks pass` for a sentence that tests
+#: nothing.  ** The defect is the COUNT and not the sentence: the scope is PRINTED here and no
+#: longer counted. **  ⌈ Node 70's r7143+70.1 run measured the class at 50 sites across 21 P10
+#: receipts -- all of them this seat's own PO-23 arc, which is where the ruling falls first -- and
+#: measured the corpus-wide overstatement these sites contribute to at 0.772 per cent.
+print('  ⌈ ' + ("control: the straddle needs the spectrum unbounded ABOVE, not merely a low floor"))
 
 print()
 print("=" * 78)

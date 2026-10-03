@@ -155,10 +155,15 @@ dims = {hbar: Msym * Lsym ** 2 / Tsym, G: Lsym ** 3 / (Msym * Tsym ** 2), c: Lsy
 dlP = sp.simplify(sp.sqrt(dims[hbar] * dims[G] / dims[c] ** 3))
 check(sp.simplify(dlP - Lsym) == 0,
       f"and its dimension is a length by unit-counting and for no other reason: [ell_P] = {dlP}")
-check(True,
-      "and a(T) is the scale factor of the spatial LEAVES of the cosmic foliation, a function of the "
+#: ⛭ r7151 (66): THE SCOPE-AS-CHECK REPAIR, ON THE r7141 RULING.  The scope statements below
+#: asserted a literal True, so each added a PASS to `N of N checks pass` for a sentence that tests
+#: nothing.  ** The defect is the COUNT and not the sentence: the scope is PRINTED here and no
+#: longer counted. **  ⌈ Node 70's r7143+70.1 run measured the class at 50 sites across 21 P10
+#: receipts -- all of them this seat's own PO-23 arc, which is where the ruling falls first -- and
+#: measured the corpus-wide overstatement these sites contribute to at 0.772 per cent.
+print('    ⌈ ' + ("and a(T) is the scale factor of the spatial LEAVES of the cosmic foliation, a function of the "
       "clock ⇒ THREE OBJECTS, two of them called lengths, and the guard is discharged before any two "
-      "are related")
+      "are related"))
 check(sp.simplify(sp.diff(alv, hbar)) == 0 and sp.simplify(sp.diff(lPv, Lam)) == 0,
       "⇒ THE TWO SHARE NO ARGUMENT, so no relation among the inputs of either can fix their ratio -- a "
       "determination would have to come from outside both lists.  ⌗ this is the warrant in an INVARIANT "
@@ -208,10 +213,9 @@ check(all(v != 0 for v in d_inputs.values())
       "fixes that the Planck length is what unit-counting yields when it has only gauges to count, so it "
       "introduces no new SCALE.  It fixes NO VALUE and NO FUNCTIONAL FORM -- and the ratio is on the "
       "measured side of a test that the corpus's one computed coefficient is on the other side of")
-check(True,
-      "⛔ AND THE CORPUS'S OWN STATEMENTS DISAGREE, WHICH THE ORDER SAID WOULD BE THE RESULT: `sec:lock` "
+print('    ⌈ ' + ("⛔ AND THE CORPUS'S OWN STATEMENTS DISAGREE, WHICH THE ORDER SAID WOULD BE THE RESULT: `sec:lock` "
       "now calls this 'a premise this construction does not supply', and the geometric core supplies it "
-      "outright.  The source and the summary disagree, and per the order it is REPORTED, NOT EDITED")
+      "outright.  The source and the summary disagree, and per the order it is REPORTED, NOT EDITED"))
 
 # ===========================================================================
 head("THE SEAM IS NOT A DETERMINATION -- ONE EQUATION ARRIVING WITH ITS OWN UNKNOWN")
@@ -242,11 +246,10 @@ check(sp.simplify(sp.diff(hbar / (2 * sp.pi * alv * kB), lP)) == 0,
       "and the construction does not supply it: the temperature it DOES take carries no dependence on "
       "ell_P at all, which is the structural asymmetry the corpus names -- the temperature carries a "
       "dimension, the entropy is a cross-register pure number")
-check(True,
-      "⇒ 2 ANSWERED: IT WOULD HAVE TO ACQUIRE IT, AND IT HAS EXPLICITLY DECLINED TO -- the corpus 'takes "
+print('    ⌈ ' + ("⇒ 2 ANSWERED: IT WOULD HAVE TO ACQUIRE IT, AND IT HAS EXPLICITLY DECLINED TO -- the corpus 'takes "
       "this horizon's temperature and never its entropy' and is 'deliberately uncommitted' on horizon "
       "entropy.  ⌗ So this is a single-scale ledger with ONE NUMBER TAKEN FROM THE WORLD, which the "
-      "order called a perfectly statable position and which the corpus is one sentence from stating")
+      "order called a perfectly statable position and which the corpus is one sentence from stating"))
 
 # ===========================================================================
 head("3  WHETHER ANYTHING BANKED SILENTLY ASSUMES AN ANSWER -- A CHECKED NEGATIVE, WITH THE REASON")
@@ -267,15 +270,13 @@ for name, val in banked.items():
 check(sp.simplify(2 * sp.Rational(1, 120) - sp.Rational(1, 60)) == 0,
       "and the shear's is a mode count twice over -- 2 x 1/120 -- which is why the order already "
       "called it safe")
-check(True,
-      "and the decade counts (thirty-five, eleven, five) are ratios against a ROUND-OFF FLOOR measured "
+print('    ⌈ ' + ("and the decade counts (thirty-five, eleven, five) are ratios against a ROUND-OFF FLOOR measured "
       "in the same arithmetic, so they too carry no length ⇒ 3 ANSWERED: NOTHING BANKED SILENTLY "
-      "ASSUMES A READING, and the reason is that none of these figures contains either length")
-check(True,
-      "⛔ AND THE ONE PLACE THAT WOULD NEED IT IS NAMED RATHER THAN LEFT OUT: the MAGNITUDE of the "
+      "ASSUMES A READING, and the reason is that none of these figures contains either length"))
+print('    ⌈ ' + ("⛔ AND THE ONE PLACE THAT WOULD NEED IT IS NAMED RATHER THAN LEFT OUT: the MAGNITUDE of the "
       "observability claim.  The corpus never claims one -- its warrant is structural (the rank goes two "
       "to three) and the observability is distributional rather than sharp-valued -- so the claim neither "
-      "assumes nor supplies a reading, and the size of the effect is DOWNSTREAM of this premise")
+      "assumes nor supplies a reading, and the size of the effect is DOWNSTREAM of this premise"))
 
 # ===========================================================================
 head("4  AND THE TWO-LOOP QUESTION, AS FAR AS ONE REVISION REACHES, SINCE THE PREMISE SETTLED")
@@ -299,19 +300,16 @@ check(p1_ != p2_ and c1_ == 0 and c2_ != 0,
       f"⇒ BOTH REACH THE TRACE, BY DIFFERENT TERMS OF THE SAME FORMULA, AND AT DIFFERENT POWERS "
       f"(a^-{p1_} and a^-{p2_}) ⇒ ** a second number, if it exists, is SEPARATELY VISIBLE rather than "
       "degenerate with the first ** -- the useful half of what a coefficient would buy, without it")
-check(True,
-      "and the settled premise converts the question itself: not 'refutation versus finished' but ** A "
+print('    ⌈ ' + ("and the settled premise converts the question itself: not 'refutation versus finished' but ** A "
       "SECOND SPENT DIMENSIONLESS CONSTANT VERSUS NONE **, against a ledger the corpus already keeps and "
-      "already puts at one for these sums in its own words")
-check(True,
-      "⛔ AND THE COEFFICIENT IS STILL NOT COMPUTED, said rather than blurred: one revision does not "
+      "already puts at one for these sums in its own words"))
+print('    ⌈ ' + ("⛔ AND THE COEFFICIENT IS STILL NOT COMPUTED, said rather than blurred: one revision does not "
       "reach it.  What changed is that its answer is now interpretable, which is what the order "
-      "sequenced the premise for")
-check(True,
-      "⛔ AND WHAT THIS COSTS ME BOTH WAYS, STATED AS SUCH: the premise IS supplied, against my "
+      "sequenced the premise for"))
+print('    ⌈ ' + ("⛔ AND WHAT THIS COSTS ME BOTH WAYS, STATED AS SUCH: the premise IS supplied, against my "
       "predecessor's new framing -- and it still does NOT restore the refutation reading, against its "
       "old one.  An undetermined DIMENSIONLESS number is not a SCALE, so the single-scale ledger "
-      "survives; both framings are wrong and in opposite directions")
+      "survives; both framings are wrong and in opposite directions"))
 
 print()
 print("=" * 94)

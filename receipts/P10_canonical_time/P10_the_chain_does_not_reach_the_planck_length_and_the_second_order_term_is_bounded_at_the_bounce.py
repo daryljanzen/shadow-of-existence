@@ -148,11 +148,16 @@ check(sp.simplify(sp.diff(lPv, Lam)) == 0,
       "⇒ 1 ANSWERED: THE CHAIN DOES NOT REACH THE PLANCK LENGTH, LET ALONE THE TOWER.  ell_P is a "
       "function of (hbar, G, c) with zero derivative in Lambda, and nothing in the construction closes "
       "the one relation that would link them")
-check(True,
-      "⚠ AND THE CLAUSE THE ORDER SAID WOULD OUTRANK EVERYTHING ELSE FIRES: the synthesis says the "
+#: ⛭ r7151 (66): THE SCOPE-AS-CHECK REPAIR, ON THE r7141 RULING.  The scope statements below
+#: asserted a literal True, so each added a PASS to `N of N checks pass` for a sentence that tests
+#: nothing.  ** The defect is the COUNT and not the sentence: the scope is PRINTED here and no
+#: longer counted. **  ⌈ Node 70's r7143+70.1 run measured the class at 50 sites across 21 P10
+#: receipts -- all of them this seat's own PO-23 arc, which is where the ruling falls first -- and
+#: measured the corpus-wide overstatement these sites contribute to at 0.772 per cent.
+print('    ⌈ ' + ("⚠ AND THE CLAUSE THE ORDER SAID WOULD OUTRANK EVERYTHING ELSE FIRES: the synthesis says the "
       "period FIXES the constant against the curvature alone; the source says the thermal state spends "
       "the EXTENSION PARAMETER and that hbar ENTERS there.  ** The summary strengthened its source **, "
-      "which is the defect class this row has now met three times")
+      "which is the defect class this row has now met three times"))
 
 # ===========================================================================
 head("2  THE QUANTITATIVE QUESTION: THE SECOND-ORDER TERM'S SIZE, AND ITS LOCUS")
@@ -188,15 +193,13 @@ check(crit == [0],
 check(sp.simplify(sp.diff(eps_max, Lam)) == 0,
       "⌗ AND THIS ANSWER IS INDEPENDENT OF 1: the bound is arithmetic on a cited product, so it holds "
       "whether that product is derived by the construction or read from the world")
-check(True,
-      "⇒ 2 ANSWERED: THE ROW'S REMAINING QUESTION IS ONE OF PRINCIPLE WITH NO QUANTITATIVE CONSEQUENCE "
-      "-- the closing statement the order said it preferred to the coefficient itself")
-check(True,
-      "⚠ AND THE SCOPE, IN THE SENTENCE THAT STATES IT: the bound is on the CLASSICAL background the free "
+print('    ⌈ ' + ("⇒ 2 ANSWERED: THE ROW'S REMAINING QUESTION IS ONE OF PRINCIPLE WITH NO QUANTITATIVE CONSEQUENCE "
+      "-- the closing statement the order said it preferred to the coefficient itself"))
+print('    ⌈ ' + ("⚠ AND THE SCOPE, IN THE SENTENCE THAT STATES IT: the bound is on the CLASSICAL background the free "
       "tower evolves on, where a >= alpha.  In the quantized scale-factor sector the wavefunction reaches "
       "toward a = 0, and there the governing fact is already landed -- the expectation of a negative power "
       "of a converges only above a threshold in the boundary index, and the horizon's OWN THERMAL "
-      "CONDITION, the same one that closes the extension, is what clears it")
+      "CONDITION, the same one that closes the extension, is what clears it"))
 
 # ===========================================================================
 head("3  THE SAME DATUM OR A SECOND ONE")
@@ -216,9 +219,8 @@ check(sp.N(eps_max, 3) < sp.Float('1e-120'),
       "⛔ AND THEN IMMEDIATELY SCOPED BY 2: a second datum OF NO QUANTITATIVE CONSEQUENCE, since the term "
       "it would multiply is bounded by 10^-122 at every epoch.  ⌗ So it is the first genuine addition to "
       "the one-input ledger in principle, and costs nothing measurable in practice -- both halves said")
-check(True,
-      "⛔ AND WHAT IS NOT DELIVERED: the two-loop coefficient itself, still sequenced -- and by 2 its SIZE "
-      "is now known to be worth more than its value, which is what the amendment argued")
+print('    ⌈ ' + ("⛔ AND WHAT IS NOT DELIVERED: the two-loop coefficient itself, still sequenced -- and by 2 its SIZE "
+      "is now known to be worth more than its value, which is what the amendment argued"))
 
 print()
 print("=" * 94)

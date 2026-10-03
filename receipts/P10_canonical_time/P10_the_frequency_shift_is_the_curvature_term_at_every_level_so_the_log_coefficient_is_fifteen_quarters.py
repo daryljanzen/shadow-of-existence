@@ -507,9 +507,14 @@ for rel, needle in UNTOUCHED:
     check(bool(txt) and needle in txt,
           f"TAKES THE LAPLACE EIGENVALUE AS GIVEN, so it is UNTOUCHED -- {rel.split('/')[-1][:56]}...")
 
-check(True,
-      "and no receipt above is repaired and no corpus file is edited: the order says name them, and "
-      "that it would rather place the numbers and the re-pointing in one pass")
+#: ⛭ r7151 (66): THE SCOPE-AS-CHECK REPAIR, ON THE r7141 RULING.  The scope statements below
+#: asserted a literal True, so each added a PASS to `N of N checks pass` for a sentence that tests
+#: nothing.  ** The defect is the COUNT and not the sentence: the scope is PRINTED here and no
+#: longer counted. **  ⌈ Node 70's r7143+70.1 run measured the class at 50 sites across 21 P10
+#: receipts -- all of them this seat's own PO-23 arc, which is where the ruling falls first -- and
+#: measured the corpus-wide overstatement these sites contribute to at 0.772 per cent.
+print('    ⌈ ' + ("and no receipt above is repaired and no corpus file is edited: the order says name them, and "
+      "that it would rather place the numbers and the re-pointing in one pass"))
 
 print()
 print("=" * 94)

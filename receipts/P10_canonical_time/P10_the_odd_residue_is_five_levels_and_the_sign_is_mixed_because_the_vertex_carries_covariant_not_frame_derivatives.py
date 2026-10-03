@@ -507,10 +507,16 @@ gate("⚠ CALIBRATION TWO, SAID ONCE: squaring a derivative structure introduces
      "amplitude's exact trilinearity above is the arithmetic of it -- so step 2's count still enters "
      "exactly once, on the target side inside the banked c_4, and not at all on the coupling side",
      sp.simplify(sc - 30*pl) == 0)
-gate("⚠ THE SCOPE, IN THE SENTENCE WITH THE RESULT: the comparison is in the same normalisation r7044, "
+#: ⛭ r7151 (66): THE SCOPE-AS-CHECK REPAIR, ON THE r7141 RULING.  The scope statements below
+#: asserted a literal True, so each added a PASS to `N of N checks pass` for a sentence that tests
+#: nothing.  ** The defect is the COUNT and not the sentence: the scope is PRINTED here and no
+#: longer counted. **  ⌈ Node 70's r7143+70.1 run measured the class at 50 sites across 21 P10
+#: receipts -- all of them this seat's own PO-23 arc, which is where the ruling falls first -- and
+#: measured the corpus-wide overstatement these sites contribute to at 0.772 per cent.
+print('  ⌈ ' + ("⚠ THE SCOPE, IN THE SENTENCE WITH THE RESULT: the comparison is in the same normalisation r7044, "
      "r7048 and r7052 all used -- the eps^3 level-summed square against 2 c_4 mu^2 with the label-free "
      "factor common to both sides -- and the crossing at m = 13 is exact IN THAT NORMALISATION; no "
-     "closed form in m, no leading coefficient, and no reconstruction of r7050's own setup", True)
+     "closed form in m, no leading coefficient, and no reconstruction of r7050's own setup"))
 reasons = ["the branch's condition is that the recoupling sum is not evaluable from the written-down data",
            "it is evaluable, and evaluated exactly at six odd levels (E)",
            "and the one thing that could have made the ingredients the wrong basis -- the "

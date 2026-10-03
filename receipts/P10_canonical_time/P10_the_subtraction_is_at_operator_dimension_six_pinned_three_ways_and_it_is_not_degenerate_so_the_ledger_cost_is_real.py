@@ -221,10 +221,16 @@ gate("the terminus's condition was that NO invariant of the admitted family coul
      len(sol) == 1 and 2*sol[0] == 6)
 gate("⇒ SO THE OUTCOME IS THE IDENTIFICATION THE ORDER ASKED FOR RATHER THAN THE TERMINUS, and what the "
      "row now owes at this dimension is a VALUE and not a basis", 2*sol[0] == 6)
-gate("⚠ AND WHAT IS NOT CLAIMED, in the sentence with the result: no value for the coefficient, and NO "
+#: ⛭ r7151 (66): THE SCOPE-AS-CHECK REPAIR, ON THE r7141 RULING.  The scope statements below
+#: asserted a literal True, so each added a PASS to `N of N checks pass` for a sentence that tests
+#: nothing.  ** The defect is the COUNT and not the sentence: the scope is PRINTED here and no
+#: longer counted. **  ⌈ Node 70's r7143+70.1 run measured the class at 50 sites across 21 P10
+#: receipts -- all of them this seat's own PO-23 arc, which is where the ruling falls first -- and
+#: measured the corpus-wide overstatement these sites contribute to at 0.772 per cent.
+print('  ⌈ ' + ("⚠ AND WHAT IS NOT CLAIMED, in the sentence with the result: no value for the coefficient, and NO "
      "CHOICE OF REPRESENTATIVE among the dimension-six scalars -- the identification is of the operator "
      "DIMENSION, which the order rule and the power counting both fix, and which scalar carries it is "
-     "fixed by neither and is not guessed here", True)
+     "fixed by neither and is not guessed here"))
 
 reasons = ["the branch's condition is that no invariant of the admitted family can carry the subtraction",
            "dimension six carries it, and is forced three independent ways (B)",

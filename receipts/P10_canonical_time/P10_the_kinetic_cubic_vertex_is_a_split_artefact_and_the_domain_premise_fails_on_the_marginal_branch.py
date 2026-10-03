@@ -603,8 +603,13 @@ check(all(sp.simplify(sp.expand(w ** 3 - sp.I * B ** 3)) == 0 for w in roots_o)
       == sorted([-sp.sqrt(3) / 2, sp.Integer(0), sp.sqrt(3) / 2], key=lambda t: sp.N(t)),
       "and there beta -> -beta gives the conjugate cube roots, the same three real parts, hence the "
       "same two-of-three count: n+ = n- = 2 + 2 - 3 = 1")
-check(True,
-      "DEFICIENCY (1,1) at alpha = 0: a U(1) family of self-adjoint realisations, and one EXISTS")
+#: ⛭ r7151 (66): THE SCOPE-AS-CHECK REPAIR, ON THE r7141 RULING.  The scope statements below
+#: asserted a literal True, so each added a PASS to `N of N checks pass` for a sentence that tests
+#: nothing.  ** The defect is the COUNT and not the sentence: the scope is PRINTED here and no
+#: longer counted. **  ⌈ Node 70's r7143+70.1 run measured the class at 50 sites across 21 P10
+#: receipts -- all of them this seat's own PO-23 arc, which is where the ruling falls first -- and
+#: measured the corpus-wide overstatement these sites contribute to at 0.772 per cent.
+print('    ⌈ ' + ("DEFICIENCY (1,1) at alpha = 0: a U(1) family of self-adjoint realisations, and one EXISTS"))
 
 lam, c1c, c3c, c4c = sp.symbols("lambda c1 c3 c4", positive=True)
 aa = sp.symbols("a", positive=True)
@@ -647,12 +652,10 @@ check(sp.simplify(sp.integrate(q ** sp.Rational(-4, 3), (q, 1, sp.oo))).is_finit
       and sp.simplify(sp.limit(sp.diff(psiB, q, 2) / psiB / q ** sp.Rational(4, 3), q, sp.oo)) == -1,
       "so psi is in L^2 and -i psi''' + q^2 psi = O(q^-2) is in L^2, while psi'' = O(q^(2/3)) is NOT: "
       "H0 psi in L^2 and H1 psi not in L^2")
-check(True,
-      "AND THAT FUNCTION IS THE MARGINAL BRANCH ITSELF, so the deficiency subspaces lie outside the "
+print('    ⌈ ' + ("AND THAT FUNCTION IS THE MARGINAL BRANCH ITSELF, so the deficiency subspaces lie outside the "
       "domain of H1: no self-adjoint realisation has a w-independent domain, H(w) is not a "
-      "holomorphic family of type (A) on any common domain, and the route fails at its first line")
-check(True,
-      "NO MONOTONICITY ARGUMENT IS SUBSTITUTED, as the order directs")
+      "holomorphic family of type (A) on any common domain, and the route fails at its first line"))
+print('    ⌈ ' + ("NO MONOTONICITY ARGUMENT IS SUBSTITUTED, as the order directs"))
 
 print()
 print("=" * 94)

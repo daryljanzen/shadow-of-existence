@@ -142,11 +142,16 @@ kk, jj = sp.symbols("k j")
 head("3  IS THE VERTEX COST THE INTERACTION'S OR THE SPLIT'S?  A CASE WHERE THE ANSWER IS KNOWN")
 # ===========================================================================
 
-check(True,
-      "⌗ THE SEVENTH FACE FIRST, AND HERE IT IS THE WHOLE DESIGN: the effect's order IS the question, so "
+#: ⛭ r7151 (66): THE SCOPE-AS-CHECK REPAIR, ON THE r7141 RULING.  The scope statements below
+#: asserted a literal True, so each added a PASS to `N of N checks pass` for a sentence that tests
+#: nothing.  ** The defect is the COUNT and not the sentence: the scope is PRINTED here and no
+#: longer counted. **  ⌈ Node 70's r7143+70.1 run measured the class at 50 sites across 21 P10
+#: receipts -- all of them this seat's own PO-23 arc, which is where the ruling falls first -- and
+#: measured the corpus-wide overstatement these sites contribute to at 0.772 per cent.
+print('    ⌈ ' + ("⌗ THE SEVENTH FACE FIRST, AND HERE IT IS THE WHOLE DESIGN: the effect's order IS the question, so "
       "the instrument is run on a case whose answer is known in advance -- a FREE oscillator written in "
       "new variables, where every spectral quantity must come back free -- and then on a case where a "
-      "real interaction is present, to show the instrument is not merely silent")
+      "real interaction is present, to show the instrument is not merely silent"))
 
 q = Qv + lam * Qv ** 2
 p = Pv / (1 + 2 * lam * Qv)
@@ -202,10 +207,9 @@ check(sp.simplify(pb - 1) == 0,
 head("1 and 2  THE BOOKKEEPING, STATED BEFORE IT IS USED, AND THE MAP READ BACKWARDS")
 # ===========================================================================
 
-check(True,
-      "WHAT 'SECOND ORDER' IS COUNTED IN, said before counting: the expansion of the VACUUM ENERGY, an "
+print('    ⌈ ' + ("WHAT 'SECOND ORDER' IS COUNTED IN, said before counting: the expansion of the VACUUM ENERGY, an "
       "observable, in the ratio lP/a -- the gauge length to the scale factor -- and in no other ratio. "
-      "A counterterm of operator dimension 2k has [c] = L^(2k-4) and contributes c a^(3-2k)")
+      "A counterterm of operator dimension 2k has [c] = L^(2k-4) and contributes c a^(3-2k)"))
 sol = sp.solve(sp.Eq(2 * kk - 4, 2), kk)
 check(sol == [3],
       f"the map is j = 2k - 4, so j = 2 gives k = {sol} and nothing else ⇒ OPERATOR DIMENSION SIX")
@@ -250,14 +254,12 @@ check(0 != 2,
       "operator dimension the question is whether each coefficient is a number the framework "
       "determines; what the dimension ladder decides is HOW MANY such numbers, which is the "
       "renormalisability question and not the single-scale one")
-check(True,
-      "⛔ AND THE EIGHTH FACE ON MY OWN SENTENCE, WHICH WAS SELF-DEFEATING AS SHIPPED: r6982 wrote 'a "
+print('    ⌈ ' + ("⛔ AND THE EIGHTH FACE ON MY OWN SENTENCE, WHICH WAS SELF-DEFEATING AS SHIPPED: r6982 wrote 'a "
       "second physical length, which is exactly what the ledger forbids AND WHAT A GAUGE-COMBINATION "
       "PLANCK LENGTH WAS ASSERTED TO AVOID' -- the second clause defeats the first.  The dimensional "
-      "table is arithmetic and stands unchanged; the inference drawn from it does not")
-check(True,
-      "⇒ SO THE PAPER'S FRAMING OF THE AFFIRMATIVE BRANCH AS A REFUTATION OF THE SINGLE-SCALE LEDGER "
-      "DOES NOT FOLLOW, and by the order's own instruction I say that rather than editing it")
+      "table is arithmetic and stands unchanged; the inference drawn from it does not"))
+print('    ⌈ ' + ("⇒ SO THE PAPER'S FRAMING OF THE AFFIRMATIVE BRANCH AS A REFUTATION OF THE SINGLE-SCALE LEDGER "
+      "DOES NOT FOLLOW, and by the order's own instruction I say that rather than editing it"))
 
 # ===========================================================================
 head("1  WHAT IS NOT DELIVERED, AND WHY THAT IS THE REPORT")
@@ -271,15 +273,13 @@ check(0 != 2,
       "and what has changed is the STAKE rather than the question: the affirmative branch is not a "
       "refutation of the single-scale ledger, so the row does not close in one direction or the other on "
       "that computation alone ⇒ the third outcome the order provided for, reported as one")
-check(True,
-      "⚠ AND THE ONE THING I OWE ON THE ORDER'S CONSTRAINT, STATED PLAINLY: what I found does keep the "
+print('    ⌈ ' + ("⚠ AND THE ONE THING I OWE ON THE ORDER'S CONSTRAINT, STATED PLAINLY: what I found does keep the "
       "ledger.  I did not go looking for it, it arrived as a correction to MY OWN revision rather than "
       "to 66's, and both findings are stated in the direction that costs me something -- the warrant I "
-      "gave for r6982's counting was the split's, and the inference I drew from its table was invalid")
-check(True,
-      "⛔ NOT ASKED AND NOT DONE: no third or fourth entry of the rank sequence, dimension eight "
+      "gave for r6982's counting was the split's, and the inference I drew from its table was invalid"))
+print('    ⌈ ' + ("⛔ NOT ASKED AND NOT DONE: no third or fourth entry of the rank sequence, dimension eight "
       "untouched, no corpus edit, no repair of the paper's framing -- the framing is reported as wrong "
-      "and left for 66 to move")
+      "and left for 66 to move"))
 
 print()
 print("=" * 94)

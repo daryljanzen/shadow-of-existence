@@ -48,7 +48,13 @@ REPORTED_ONLY = {'T5'}
 # ⓷ the ratchet: the owed count measured on the tree this was drafted against (r7141+70.1, at 1add89bd + this
 #   seat's own commits, which touch no receipt) -- NOT the 95 of r7141's text, and NOT the 95 this seat's
 #   pre-registration first wrote and then corrected.  Lowering it is the point.
-CEILING = 71
+# ⛭ r7151 (66): 71 → 21.  The 50 P10 SCOPE-AS-CHECK sites are CONVERTED, not re-verdicted: each
+#   scope statement is now PRINTED and no longer counted, so its site no longer exists and its
+#   baseline row is gone rather than exempted.  ** The drop is exactly node 70's own census -- 21
+#   stale rows summing to -50, every one T2, which is the control that the conversion touched the
+#   class and nothing else. **  ⌈ The largest owed class in the newest instrument was this seat's
+#   own authorship, which is where a ruling should land first.
+CEILING = 21
 
 
 def key_text(s):

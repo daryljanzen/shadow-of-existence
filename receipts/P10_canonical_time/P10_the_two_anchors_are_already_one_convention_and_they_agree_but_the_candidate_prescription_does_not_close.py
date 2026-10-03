@@ -272,10 +272,15 @@ gate("⛔⛭⛭ AND A SECOND CORRECTION TO r7058, ITS CLOSING PARAGRAPH: it read
      "progress are one fact about a ratio and one fact that makes the sum WORSE",
      all(U.subs(mlab, k)*(1 - sp.simplify(RAT[k]/TH)) > 0 for k in sorted(RAT))
      and sp.limit(low, Mc, sp.oo) is sp.oo)
-gate("⚠ AND THE SCOPE, IN THE SENTENCE WITH THE RESULT: no measure is asserted and no regulator "
+#: ⛭ r7151 (66): THE SCOPE-AS-CHECK REPAIR, ON THE r7141 RULING.  The scope statements below
+#: asserted a literal True, so each added a PASS to `N of N checks pass` for a sentence that tests
+#: nothing.  ** The defect is the COUNT and not the sentence: the scope is PRINTED here and no
+#: longer counted. **  ⌈ Node 70's r7143+70.1 run measured the class at 50 sites across 21 P10
+#: receipts -- all of them this seat's own PO-23 arc, which is where the ruling falls first -- and
+#: measured the corpus-wide overstatement these sites contribute to at 0.772 per cent.
+print('  ⌈ ' + ("⚠ AND THE SCOPE, IN THE SENTENCE WITH THE RESULT: no measure is asserted and no regulator "
      "proposed -- the claim is that THIS candidate fails, not that none could succeed, and the "
-     "divergence is of the ground-state back-reaction summed over levels in r7038's passage",
-     True)
+     "divergence is of the ground-state back-reaction summed over levels in r7038's passage"))
 
 reasons = ["the branch's condition is that the two anchors cannot be brought into one convention",
            "they are already in one, and r7058's criterion returns r7010's own 25/63 on r7010's own "

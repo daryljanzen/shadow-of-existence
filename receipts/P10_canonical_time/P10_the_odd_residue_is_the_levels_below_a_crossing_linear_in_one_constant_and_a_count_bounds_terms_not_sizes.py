@@ -205,8 +205,14 @@ gate(f"⚠ CALIBRATION TWO, the pairing count: applying a factor of three to the
      f"crossing from {cross} to {cross3}, so a second application of step 2's count is NOT harmless -- "
      f"and this revision re-assembles no vacuum expectation, so that count is applied neither once nor "
      f"twice here and r7036's hazard is untouched rather than re-spent", cross3 != cross and cross3 > cross)
-gate("⌗ AND THIS ORDER CARRIES NO EXIT OFFER -- the first in sixteen that does not -- so none is "
-     "declined and nine of sixteen stands unchanged", True)
+#: ⛭ r7151 (66): THE SCOPE-AS-CHECK REPAIR, ON THE r7141 RULING.  The scope statements below
+#: asserted a literal True, so each added a PASS to `N of N checks pass` for a sentence that tests
+#: nothing.  ** The defect is the COUNT and not the sentence: the scope is PRINTED here and no
+#: longer counted. **  ⌈ Node 70's r7143+70.1 run measured the class at 50 sites across 21 P10
+#: receipts -- all of them this seat's own PO-23 arc, which is where the ruling falls first -- and
+#: measured the corpus-wide overstatement these sites contribute to at 0.772 per cent.
+print('  ⌈ ' + ("⌗ AND THIS ORDER CARRIES NO EXIT OFFER -- the first in sixteen that does not -- so none is "
+     "declined and nine of sixteen stands unchanged"))
 
 print("\n  " + "=" * 74)
 bad = [nm for nm, ok in CHECKS if not ok]
