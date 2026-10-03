@@ -5353,6 +5353,33 @@ PINNED = {'systematic uncertainty': 1}
 
 ---
 
+## ⛔ `r7131` CI, CORRECTED — **THE RE-RUN FAILED THE SAME WAY, SO THE `Q1` RED IS STRUCTURAL AND NOT CONTENTION. THE DEFECT IS A BUDGET THAT COUNTS ONE CHILD WHERE THERE ARE EIGHT.**
+
+***Attempt $2$ came back FAILURE*** *(exit $2$ again, $46$ minutes). ⇒ **So the entry below is withdrawn on its second half**: what it measured was right — $33$ s here, green on `dfce672f`, the same-commit $41$ s control, the `n=0` range — but **what it invited a reader to conclude was wrong**, and I would rather say that than restate it quietly.*
+
+### ⚑ THE ARITHMETIC, WHICH SETTLES IT
+
+*`Q1` runs its sample as child subprocesses: **$4$ receipts $\times$ $2$ passes** (as written, then at $100\times$ tighter tolerance) **$= 8$ children**, each capped by `Q1`'s own `INNER = 600`. ⇒ **Worst case $4800$ s.** The sweep allows `2 * max(900, budget(Q1, 600))`, and `Q1` is declared in `run_all_receipts.LONG` at **$900$**, so the outer budget is **$1800$ s**.*
+
+- ***Three children at their cap ($1800$ s) exhausts the outer budget.***
+- ***Two children ($1200$ s) already exceeds the $900$ s declaration.***
+- ⚑ ***And the declaration states its own assumption in writing:*** *"900s covers its own `INNER=600` bound" — **it budgets for ONE child at the cap, and there are EIGHT.***
+
+⌗ ***Long-standing, and already in the record from the other side:*** *`r7019+70.1` notes "`Q1`'s ten suite timeouts (09-28/09-29)". **So the condition has materialised repeatedly and the budget line has never been revisited against the child count.***
+
+⇒ ***Still not this PR's***, *and that half stands: the diff touches neither `Q1` nor any of its four children, and `Q1` enters the tolerance scope through `receipts/**/*.py` — and now through the carried red, which re-enters it on every push to this branch until some run measures it green.*
+
+### ⇒ PROPOSED AND NOT PUSHED, BECAUSE BOTH FILES ARE `70`'s
+
+***Make the child cap a share of a TOTAL deadline rather than a per-child one***, *so `n_children × cap` fits inside the declared budget, keeping the `r7025+70.1` behaviour where a child past the cap is recorded as a named verdict rather than raising. **A slow child then REPORTS instead of blowing the outer budget, which is what that machinery was built for.***
+
+⌗ ***And raising the `LONG` entry to $4800$ would be wrong by that table's own standard*** *— the `C59` and `C63` entries both argue at length that a declaration records a cost the receipt **has**, and `Q1`'s measured cost is $33$ s with all eight children fast. **A $4800$ s budget would describe a cost it does not have in order to hide one it does.***
+
+⇒ ***So this one failure has put TWO items into `70`'s layer*** *— this budget, and the carry's last-writer-wins across two live commits of one branch. **Both named, neither touched.** ⌗ *Which is the third time this round the same question has decided what I do next, and it is still yours: **do I repair another seat's gate when the defect is mine to have found and not mine to own?** I have taken the conservative branch three times; say the word and I will take the other.*
+
+---
+
+
 ## ✔✔✔ `r7135` DELIVERED — **BOTH BLOCKS CLOSED, CEILING `106 → 97`. AND THE PREDICTOR YOU SENT ME TO TEST FAILS AND INVERTS: THE REACH FAMILY SCORED LOWEST OF THE FOUR. A BETTER ONE IS MEASURED, BACK-TESTED AND PRE-REGISTERED FORWARD.**
 
 *`check_prose_pins`:* `147 keys, 147 baseline rows`, `UNADJUDICATED: 97`, `PRESENCE-CONTROL: 31`, `DELIBERATE: 18`, `NOT-A-COUNT: 1`, **`no new site`**, **`no stale entry`**, `the ratchet holds: 97 against a ceiling of 97; 50 site(s) read and verdicted`. *All four receipts exit `0`; fast job green at $113$ gates; `check_quote_pins` green at $2300$ keys.*

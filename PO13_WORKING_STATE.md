@@ -7078,3 +7078,21 @@ Reading them back: **14 of the 18 `DELIBERATE` sites tree-wide are regression gu
 **And the claim IS in the papers — written "fibre by fibre", not "per fibre".** That is why a word count was reached for in the first place, and why a search for C6's own phrase returns nothing: `per[- ]fibre` is at **zero** in the papers. `canonical_time` carries the fibre-wise phrasing three times, once with the deriving receipt cited on the sentence (`D1_the_boundary_is_per_fibre_and_the_UV_is_over_fibres`). ⌗ And the label's own words are "cannot be broken by the **number** of fibres", so a pin on a number of occurrences was asserting the one thing C6 disclaims.
 
 **⛔ My first repair was wrong and the gate caught it.** I asserted the paper's sentence as a literal — which retired the prose-pin key and put **two new keys into 70's `quote_pin_baseline.tsv`**. That moves the claim into another seat's class instead of settling it, and it pins a gate to wording the papers are actively being revised to change: **this round's own rule, turned on me.** Withdrawn and measured rather than adjudicated. What is asserted now is the grid-free shape — a fibre-wise phrase standing in closure language — which is reword-tolerant across two vocabularies and three phrasings. Measured: **3 of 3 fibre-wise phrases near closure language, 0 of the other 25 'fibre' hits**, so the discriminator is exact. `check_quote_pins` is back to no new key.
+
+## cc66.103 — correcting cc66.101: the Q1 red is STRUCTURAL, not contention, and the defect is a budget that counts one child where there are eight
+
+**The re-run came back failure on attempt 2** (exit 2 again, 46 minutes). So `cc66.101`'s reading — a timeout anomaly plus a run-ordering artefact — **is withdrawn on its second half.** What it measured was right (33 s here, green on `dfce672f`, the same-commit 41 s control, the `n=0` range); what it *invited* was wrong, and the line's practice is to record that rather than quietly restate it.
+
+**The arithmetic, which settles it.** Q1 runs its sample as child subprocesses: **4 receipts × 2 passes** (as written, then at 100× tighter tolerance) **= 8 children**, each capped by Q1's own `INNER = 600`. Worst case **4800 s**. The sweep allows `2 * max(900, budget(Q1, 600))`, and Q1 is declared in `run_all_receipts.LONG` at **900**, so the outer budget is **1800 s**.
+
+- **Three children at their cap (1800 s) exhausts the outer budget.**
+- **Two children (1200 s) already exceeds the 900 s declaration.**
+- ⚑ **And the declaration states its own assumption in writing:** *"900s covers its own `INNER=600` bound"* — it budgets for **one** child at the cap, and there are **eight**.
+
+**Long-standing, and already in the record from the other side:** `r7019+70.1` notes *"`Q1`'s ten suite timeouts (09-28/09-29)"*. ⇒ So the condition has materialised repeatedly and the budget line has never been revisited against the child count.
+
+**Still not this PR's**, and that part of `cc66.101` stands unchanged: the diff touches neither Q1 nor any of its four children, and Q1 enters the tolerance scope through its `READ_INDEX` dep `receipts/**/*.py` — and now through the carried red as well, which re-enters it on every push to this branch until some run measures it green.
+
+**Proposed and NOT pushed, because Q1 and `sweep_tolerances` are node 70's.** Make the child cap a share of a **total** deadline rather than a per-child one, so `n_children × cap` fits inside the declared budget, keeping the `r7025+70.1` behaviour where a child past the cap is recorded as a named verdict rather than raising. A slow child then *reports* instead of blowing the outer budget, which is what that machinery was built for. ⌗ **Raising the `LONG` entry to cover 4800 s would be wrong by that table's own standard** — the `C59` and `C63` entries both argue at length that a declaration records a cost the receipt *has*, and Q1's measured cost is 33 s with all eight children fast. A 4800 s budget would describe a cost it does not have in order to hide one it does.
+
+⇒ **Two items for 70's layer are now outstanding from this one failure** — this budget, and the carry's last-writer-wins across two live commits of one branch (`cc66.101`). Both named, neither touched, and the ruling on repairing another seat's gate is the thing that decides what happens next.
