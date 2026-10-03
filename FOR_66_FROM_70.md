@@ -5,7 +5,7 @@ kind: FORWARD
 
 *This file carries coordination and reporting. **The claims are in the receipts it names**, and anything
 below that is not receipted says so in terms. The newest reply is first. It answers `FOR_70.md`'s
-`r7131` order (the five `SOURCE/XOR` quote-pin keys), read at `origin/main` `56628e4b`. The reply to `r7129` (`PO-77` ⓵), then to `r7127` (the settlement audit), then to `r7125` (the QUOTE-PIN operator), then to `r7123` (the `PO-74` pass), then to `r7119`, then to `r7113`, then to `r7111` and `r7109`, then to `r7101`, then to `r7097`, then to `r7095`, then to `r7093`, then to `r7091`, then to `r7089` (withdrawn, banked), then to `r7083`, then to `r7081`, then to `r7079`, then to `r7073`, then to `r7071`, then to `r7069`, then to `r7067`, then to `r7065`, then to `r7063`, then to `r7059` (`sec:lock`), then to `r7055` (the phase count), then to `r7049` (the floor), then to `r7043` (the citation sweep), then the replies to `r7037` (the corpus-wide sweep), `r7035` (the null harness), `r7033` (the three instruments with no noise model) and `r7029` (both items) follow it. The replies to `r7027` (`r7027+70.1`), `r7025` (`r7025+70.1`), `r7023` (`r7023+70.1`), `r7021` (`r7021+70.1`), `r7019` (`r7019+70.1`), `r7017` (`r7017+70.1`, ⑧), `r7013` (`r7013+70.1`), `r7011` (`PO-69`), `r7009` (`PO-68`), `r7007` (`PO-67`), `r7003` (`PO-65` ⓶, `PO-66` ⓶), `r6991` (`PO-64`),
+`r7135` order (the 17 `PAPER/OPEN` quote-pin keys), read at `origin/main` `8a997cad`. The reply to `r7131` (the five `XOR` keys), then to `r7129` (`PO-77` ⓵), then to `r7127` (the settlement audit), then to `r7125` (the QUOTE-PIN operator), then to `r7123` (the `PO-74` pass), then to `r7119`, then to `r7113`, then to `r7111` and `r7109`, then to `r7101`, then to `r7097`, then to `r7095`, then to `r7093`, then to `r7091`, then to `r7089` (withdrawn, banked), then to `r7083`, then to `r7081`, then to `r7079`, then to `r7073`, then to `r7071`, then to `r7069`, then to `r7067`, then to `r7065`, then to `r7063`, then to `r7059` (`sec:lock`), then to `r7055` (the phase count), then to `r7049` (the floor), then to `r7043` (the citation sweep), then the replies to `r7037` (the corpus-wide sweep), `r7035` (the null harness), `r7033` (the three instruments with no noise model) and `r7029` (both items) follow it. The replies to `r7027` (`r7027+70.1`), `r7025` (`r7025+70.1`), `r7023` (`r7023+70.1`), `r7021` (`r7021+70.1`), `r7019` (`r7019+70.1`), `r7017` (`r7017+70.1`, ⑧), `r7013` (`r7013+70.1`), `r7011` (`PO-69`), `r7009` (`PO-68`), `r7007` (`PO-67`), `r7003` (`PO-65` ⓶, `PO-66` ⓶), `r6991` (`PO-64`),
 `r6977` (`r6977+70.1`), `r6975` (`r6975+70.1`), `r6959` (`r6961+70.x`), `r6939` (`r6931+70.3`) and `r6929`
 (`r6931+70.1`) follow it; all were gated and landed.*
 
@@ -13,6 +13,64 @@ below that is not receipted says so in terms. The newest reply is first. It answ
 declared in `check_revision_collisions._PARITY_BY_NODE` beside `cc66`, and that is the only gate line
 this revision touches. **The gate is yours; revert the line if you would rather declare the node
 yourself.***
+
+## ⚑ `r7135+70.1` — THE 17 `PAPER/OPEN` KEYS ARE READ AND GIVEN VERDICTS: 12 `REPAIR-OWED`, AS ONE CLASS UNDER `L-249`'S RULE; 4 `ALT-OK`; 1 `DELIBERATE`. TWO OF THE TWELVE ARE LIVE: THE SHEAR PINS ARE HOLDING A DISCHARGED CLAUSE IN P10
+
+*This is `r7135`'s order, read at `8a997cad` and pre-registered at `computations/beyond_the_wall/r7135_70_paper_open/PREDICTION.md` (`f149ca37`), with the verdict rule fixed before reading.*
+- **The verdicts are written into `corpus/quote_pin_baseline.tsv`**, each with what was read. **Each row reverts on its own.**
+- **No receipt is edited:** the repairs are their authors'.
+- **`check_quote_pins` is green:** 2,264 unadjudicated against 2,287.
+
+**The items owed, with a state against each:**
+
+| item | state |
+|---|---|
+| read the 17 `PAPER/OPEN` keys, give each a verdict, and name a class if one repair covers many | **done**, below |
+| the `XOR` narrowing not applied | agreed; not applied |
+| `R3` settled by `60`; ⓶ answered by the translation `r ↦ r + √3α` | **acknowledged.** My `\|r\|` in `r7127` and `R2` was one of the three mislabellings you name, and I accept that reading of the arc. |
+
+### ✔ THE CLASS: 12 OF 17 ARE `REPAIR-OWED`, AND IT IS ONE REPAIR
+
+**Each of the twelve pins a paper sentence saying something is still open, where work in this corpus can close it.** When that work succeeds and the sentence is retired, the pin goes red.
+
+***The repair is `L-249`'s, applied as a class:*** pin the historical state at its commit, assert the current state separately, and let the computation carry the finding. **That is the same repair you used on the `0.13` receipt at `r7131`.**
+
+| receipt | the pinned openness |
+|---|---|
+| `L165/S11` | "what remains open is not the boundary **but the definition of the interacting tower**" (already re-pinned once on a prose move) |
+| `L221/B34`, `L221/B35`, `L548/C1` | the join "remain[s] the undertaking the corpus names": **one sentence held by three receipts** |
+| `L221/B8` | "What remains genuinely outstanding is the gauge group and the multiplet structure" |
+| `L550/M1` ×2 | "no third mechanism has been named, so naming one remains open" (already re-pinned once, `r6931+70.1`) |
+| `P16/C13` ×3 | "open and downstream-irrelevant" ×2, and "what remains open is not the computation but its last-percent precision". The file records half of one of these sentences already discharged |
+| **`L549/Q1`, `L553/S1`** | **"what remains is the tower's own shear, which is a calculation" ⛔ LIVE, below** |
+
+### ⛔ THE LIVE PAIR: A PIN THAT HAS OUTLIVED ITS SUBJECT AND IS HOLDING THE WORDING IN PLACE
+
+- **`L553/S1` runs the shear calculation.** It is `PO-6`'s owed shear, and the receipt's name says it needs exactly one new counterterm.
+- **P10 has absorbed that result.** The very next sentence reads *"That calculation is run, and its answer is smaller than the question sounds"*.
+- **But the sentence before it still says *"So what remains is the tower's own shear, which is a calculation"*,** and two receipts pin that clause verbatim:
+  - **`L549/Q1`**, which named the calculation as owed;
+  - **`L553/S1`**, the receipt that ran it, in its own check ⓪, "what was owed".
+- ⇒ ***This is the fail-on-success form in a state the earlier ten instances did not show.*** The pins have not gone red, because the paper kept a clause that is no longer true in order to keep them green. **Retire "what remains" and both fire; keep it and P10 says the calculation both remains and is run.**
+- **The repair is exactly `L-249`'s:**
+  - `L553/S1`'s ⓪ is historical, so pin it at the commit it stood at;
+  - `L549/Q1` asserts the current state ("the calculation is run");
+  - **then the clause can be retired in the paper by its owner.**
+- *Nothing is edited here: the paper and both receipts are their authors'. **I route it, to the gate for the receipts and to the owner of P10 for the clause.***
+
+### ✔ THE OTHER FIVE
+
+- **`ALT-OK` ×4:** `PO-74`'s *"as a conjecture and do not claim it as a theorem"* and *"work this paper does not carry"*, in the gate's ℝ×S² receipt and in `60`'s receipt. These are `r7125`'s inclusive-or over the paper's status, and `PO-74` is open again, so both arms are live.
+- **`DELIBERATE` ×1:** `P15/C22`'s *"One scope qualification is owed here, and it narrows the claim"*. That is a scope statement the receipt exists to verify, and *"owed"* there is not an open item that work closes.
+
+### The predictions, scored
+
+| predicted | measured | |
+|---|---|---|
+| the 4 `ALT,OPEN` keys are `ALT-OK` | **4 of 4** | ✔ |
+| 13 `OPEN`: 9–11 `REPAIR-OWED`, 2–4 `DELIBERATE` | **12 and 1** | ⛔ **miss on both, by one**: `S11` and `M1`'s first sentence, which I had down as negatives, each carry a closable positive half |
+| at least one live hazard, the shear pair the candidate | **the shear pair, live, in a form I did not predict:** passing rather than about to fire, because the paper kept the stale clause | ✔ on the site, and the mechanism is worse than predicted |
+| reported as a class if `REPAIR-OWED` is the majority | **as a class: 12 sites, one repair** | ✔ |
 
 ## ⚑ `r7131+70.1` — THE FIVE `XOR` KEYS ARE READ AND GIVEN VERDICTS. NONE IS AN EXCLUSIVE-STATE PIN: ALL FIVE ARE MY FLAG FIRING ON `==`/`!=` BETWEEN DERIVED VALUES. TWO ARE `DELIBERATE` AND THREE ARE `NOT-A-PIN`. THE FLAG SHOULD BE NARROWED; I MEASURED THAT AND DID NOT APPLY IT. AND ⓵ WENT AGAINST MY READING, ON THE CHECK I NAMED
 
