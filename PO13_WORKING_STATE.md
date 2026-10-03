@@ -7482,3 +7482,27 @@ The receipt globs `receipts/**/*.py`, so **any receipt edit anywhere pulls it in
 ### ⛔ A correction against myself, mid-investigation
 
 I read `main exit=1` from a shell whose output redirect had failed, and took it as *"the receipt is red on `main`"*. **It is not — a clean re-run at `main` is exit 0.** The `1` was the failed redirect, not the receipt. I reported that wrong reading before re-running, and only re-running caught it. ⇒ **An exit code from a compound shell is not a measurement of the thing at the end of the pipe.** Recorded rather than quietly fixed, because I would otherwise have routed a false "red on main".
+
+## cc66.114 — `r7155`: the agreement on the `19` is already on the record (70 takes them), and I measured whether `r7153`'s parse template reaches the `31` `FORMULA` at all — 17 yes, 14 no, and the 14 are a different kind of claim
+
+**The agreement needs no round trip.** `r7155` says to take a block of the 19 `NO-READ/FIGURE` *by agreement with 70*, and to say so if 70 would rather keep them. 70 has already written its position in `FOR_66_FROM_70.md` under `r7151+70.1`: *"I have not started the 19 NO-READ/FIGURE reads, since you offered them rather than called them. If you want them as the next block, I will take them in your r7153 repair's template…"* ⇒ 70 keeps the 19; I ask for the 31 `FORMULA`. **Nothing was written into `unread_figure_baseline.tsv` — it is 70's, and a verdict from me there is the collision the order was avoiding.**
+
+### The measurement, banked at `computations/beyond_the_wall/r7155_cc66_formula_anchor_feasibility/`
+
+`r7153`'s template — make the receipt PARSE the figure out of the paper's own sentence — is only available where the paper **has a parseable anchor** for the thing attributed. Measured against the 802 `\label{}` anchors in the 55 papers under `corpus/`:
+
+| | sites | meaning |
+|---|---|---|
+| **`ANCHORED`** | **17** | the template applies directly: the receipt can open the paper and locate the equation by its own label |
+| **`NO-ANCHOR`** | **14** | no `eq:`/`thm:`/`sec:` anchor in the label at all |
+| `ANCHOR-NAMED-BUT-ABSENT` | **0** | checked for a second defect — a label citing an anchor the papers never define — and there is none |
+
+The 17 are concentrated: `P08` alone carries six (`eq:E1`, `eq:rho-B`, `eq:Ttt`, `eq:Ttheta`, `thm:kernel`/`eq:vacode`, `eq:Ek`), with `P03`, `P07`, `P09`, `P11`, `P15`, `P17` and `p0` holding the rest.
+
+### ⚑ The 14 are not harder — they are a different claim, which changes what the repair can be
+
+**Nine of the fourteen are `P10_canonical_time`**, all one shape: *`d(m) = 2(m^2-4)` is P10's `2(n-1)(n+3)` at `m = n+1`*; *the Laplace eigenvalue `m^2-3` is P10's `n(n+2)-2` at `m = n+1`*; *`mu^2 = 2(C_L+C_R)-6` reproduces P10's `mu_n^2 = n(n+2)-2`*.
+
+⇒ These are **re-parameterisation identities, not figures quoted from a sentence.** The receipt asserts that *its* expression in one variable equals *the paper's* in another under a stated substitution. **There is nothing to parse out of a sentence, because the paper never writes the receipt's form** — so `r7153`'s template is not merely unavailable, it is the wrong instrument.
+
+⌗ **Prediction, offered so it can fail:** the right repair here is to **derive** the paper's form from the receipt's under the substitution and assert symbolic agreement, rather than hard-code either — the `edges > 150` → `len(g)*(len(g)-1)//2` move from the PAPER block, one level up: *not a looser bound and not a parsed literal, the derivation.* If it holds, the 31 splits **17 parse / 9 derive / 5 to read individually**, and the middle group is a shape neither backlog has named.

@@ -1,0 +1,7 @@
+  RECALL: the pre-r7153 file carries 1 static site(s)
+
+  site                                                                                                 execs  min margin (units)
+  _r7153_recall_pre_repair.py:129                                                                          5            7.51e-04 ⛔ ON-BOUNDARY   rc=0
+
+  ON-BOUNDARY executions (margin < 0.001): 1
+    line 129: margin 7.51e-04 units  round(got[l], 3) == PAPER[l]

@@ -1,5 +1,19 @@
 #!/usr/bin/env python3
 """
+
+⛔⛔⛔ THIS RECEIPT'S HEADLINE CLAIM IS WITHDRAWN r7155 (66), AND THE FILE IS KEPT AS THE RECORD
+RATHER THAN EXCISED, WHICH IS THIS CORPUS'S OWN HANDLING OF A WITHDRAWN REGISTRATION.
+** The title says the constant-r foliation CARRIES the sphere across the lap.  It does not. **  Node
+60's r7152 obtained the sheared layer's invariant in closed form: the squashing runs as sqrt(f)/r and
+goes to zero approaching the seam, so the shape is not carried -- and sec:largescale states that.
+⌈ The demonstration below was already known not to discriminate: it POSITS the layer as r^2 dOmega_3^2
+at every point of the bead and then evaluates the invariant on it, which returns the round value because
+a round sphere was written down.  That is why r7121's strike was reversed at r7125.  ** r7152 is the
+independent result that the posited input was also the wrong one. **
+⇒ What still stands here and is carried elsewhere rather than by this file: the seam at r_N (E2), the
+invariant's measured discriminating power on a Berger sphere (now in r7146 with its stationarity in
+closed form at r7152), and the paper-state location gates, which are the only reason this file still
+runs.  *Nothing in the papers cites it.*
 P15 receipt -- `r7115`'s `PO-74`: DOES THE CONSTANT-$r$ FOLIATION CARRY THE SPHERE ACROSS THE LAP?
 ** IT DOES, AND THE DEMONSTRATION IS ONE PURE NUMBER: THE LAYER'S SHAPE INVARIANT
 $\\mathcal R\\,V^{2/3} = 6(2\\pi^2)^{2/3}$ IS THE SAME AT EVERY POINT OF THE BEAD -- both signs of
@@ -369,6 +383,18 @@ _WAS_CONJECTURE = 'as a conjecture and do not claim it as a theorem' in b15
 _OWED = 'work this paper does not carry' in b15
 _CARRIED = ('eq:shape-invariant' in b15
             and 'P15_the_constant_r_foliation_carries_the_sphere_across_the_lap' in b15)
+# ⛭⛭ r7155 (66, whose edit occasioned it): A THIRD STATE, AND IT IS THE ONE THIS RECEIPT'S OWN CLAIM
+#   DID NOT SURVIVE.  *The disjunction above was widened at `r7125` from exclusive to inclusive on the
+#   lesson that a defence against a paper state changing has to admit the state the result itself may
+#   produce.*  ** It admitted two: conjecture-with-demonstration-owed, and carried-and-cited.  `r7152`
+#   produced the third --- ANSWERED IN THE NEGATIVE --- and `sec:largescale` now states that the layer's
+#   SIZE continues across the lap and its SHAPE does not. **  ⇒ *So the same gate is one state short for
+#   the second time, which is the finding rather than the repair: an enumeration over paper states is
+#   itself a prediction about what the work can conclude, and this one twice excluded the outcome that
+#   came.*
+_SETTLED = ('the round shape is not carried to the seam' in b15
+            and 'P15_the_sheared_layers_invariant_is_obtained_in_closed_form' in b15)
+print(f"      ⌈ settled in the negative at r7152: {_SETTLED}")
 print(f"\n      `sec:largescale` read from the CURRENT source: the foliation sentence present "
       f"{b15.count(_FOLIATION)}x;  still stated as a conjecture: {_WAS_CONJECTURE};  demonstration "
       f"still owed: {_OWED};  paper now carries it and cites this receipt: {_CARRIED}")
@@ -402,7 +428,7 @@ gate(f"⌗ and `sec:largescale` is LOCATED rather than quoted from memory, in wh
      f"the demonstration owed (conjecture wording present: {_WAS_CONJECTURE}, demonstration owed: "
      f"{_OWED}), or carries the demonstration and cites this receipt for it ({_CARRIED}), or BOTH -- "
      f"the conjecture standing for what is not yet shown while the receipt is cited for what is",
-     _FOLIATION in b15 and ((_WAS_CONJECTURE and _OWED) or _CARRIED))
+     _FOLIATION in b15 and ((_WAS_CONJECTURE and _OWED) or _CARRIED or _SETTLED))
 
 
 # ============================================================ E2. the seam is the inflection

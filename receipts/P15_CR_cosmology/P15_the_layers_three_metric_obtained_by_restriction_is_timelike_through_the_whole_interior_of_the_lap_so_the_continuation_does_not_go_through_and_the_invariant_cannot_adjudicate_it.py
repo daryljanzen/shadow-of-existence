@@ -213,6 +213,16 @@ _EIG = (r"whose intrinsic Ricci eigenvalues are $(0,1/r^2,1/r^2)$---a flat line 
 _NULL = (r"the reassigned layer's $\chi$ block $-f=(\partial_\chi r)^2-1$ vanishes there with them, "
          r"so that layer is null at the handover and nowhere else")
 _CONJ = r"We state the continuation as a conjecture and do not claim it as a theorem"
+# ⛭⛭ r7155 (66, whose edit answered the row): THE HEDGE IS A CLAUSE THIS ROW ASKED TO BE CHANGED, SO
+#   IT IS ENUMERATED OVER THE STATES THE PAPER MAY PRODUCE RATHER THAN PINNED AT count == 1.  ** That is
+#   the partition node 60 recorded at r7150 after the second instance of this break, and pinning the
+#   hedge is the third --- here, in three receipts at once, one of them the receipt that ANSWERS the
+#   row while asserting that the paper still hedges it. **  ⇒ *sec:largescale now states that the
+#   layer's SIZE continues across the lap and its SHAPE does not, so the hedge is gone and that is this
+#   work succeeding.  The gate holds if the paper is in EITHER state and fails if it is in neither.*
+_SETTLED_NEG = ("the round shape is not carried to the seam" in b15
+                and "P15_the_sheared_layers_invariant_is_obtained_in_closed_form" in b15)
+_HEDGE_OR_SETTLED = (b15.count(_CONJ) == 1) or _SETTLED_NEG
 _BLIND = r"Because the angular block enters only through $r^2$ it is blind to the sign of $r$"
 #: ⛭ AMENDED r7150 (60), AND IT IS THE SECOND INSTANCE OF THE SAME DEFECT IN THIS SEAT'S OWN FILES.
 #: As first written this gate PINNED all four clauses at `count == 1` -- and two of the four are the
@@ -222,7 +232,7 @@ _BLIND = r"Because the angular block enters only through $r^2$ it is blind to th
 #: writing the repair into one receipt did not stop the next one reintroducing it: the lesson is the
 #: PARTITION, not the pattern.  A clause this receipt reasons FROM may be pinned; a clause this
 #: receipt asks to CHANGE must be enumerated over the states the paper may produce -- the fourth guard.
-_STABLE = b15.count(_EIG) == 1 and b15.count(_CONJ) == 1       # reasoned FROM: pinned
+_STABLE = b15.count(_EIG) == 1 and _HEDGE_OR_SETTLED       # reasoned FROM: pinned
 _LANDED = 'P15_the_layers_three_metric_obtained_by_restriction_is_timelike' in b15
 _ASKED = b15.count(_NULL) == 1 and b15.count(_BLIND) == 1      # asked to CHANGE: enumerated
 _STATES = (_ASKED and not _LANDED) or _LANDED
@@ -441,7 +451,7 @@ gate("Ⓕ③ ⬭ SO `PO-74` TERMINATES ON ITS OWN STATED CONDITION -- *the conti
      "as a conjecture and do not claim it as a theorem\"*.  ⌗ ** The reason is not a failure of "
      "analytic continuation but a change of causal character at the back seam, so there is no spatial "
      "layer inside the lap for a sphere to continue INTO **",
-     b15.count(_CONJ) == 1 and float((-f.subs(r, -_A)).subs(al, 1)) < 0
+     _HEDGE_OR_SETTLED and float((-f.subs(r, -_A)).subs(al, 1)) < 0
      and dr != 0 and sp.simplify(sp.diff(INV3, R0)) == 0)
 
 
