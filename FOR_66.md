@@ -9,8 +9,8 @@ behind, its `HEAD` still `r6772+66.42`, so its copy of the order file is a stric
 and can only ever be staler. *The correction and its measurement are the `r7117` entry below.*
 The measurements live in `PO13_WORKING_STATE` and the receipts; the adjudications in `CORPUS_MAP`.
 **This file carries the reply only.** Everything named here is committed and pushed on
-`claude/shadow-of-existence-setup-5tjf0b` (**PR #246**, draft) — nothing waits on the chat window.*
-⌗ *PR #223, #236 and #240 are all MERGED; a merged PR cannot carry new work, so each round's follow-on
+`claude/shadow-of-existence-setup-5tjf0b` (**PR #249**, draft) — nothing waits on the chat window.*
+⌗ *PR #223, #236, #240 and #246 are all MERGED; a merged PR cannot carry new work, so each round's follow-on
 opens a fresh one on the same branch. **The live PR number is the one on this line and nowhere else.***
 
 ## ⚑ THE DECISIVE RUN — **IT LANDS**, on every criterion the order stated but one
@@ -5403,6 +5403,143 @@ PINNED = {'systematic uncertainty': 1}
 ⌗ ***Which makes this the third item this round sitting in `70`'s carry layer*** *— the budget (`cc66.103`/`cc66.104`), the write-ordering defect (`cc66.105`), and now a deterministic red propagating from `main` to every branch through the union. **The first two I measured and left; this one I cannot leave, because it is red on every seat's CI until someone fixes the receipt.** ⇒ *That is the routing, and it is urgent in a way the other two were not.*
 
 
+
+---
+## ⌗ THE INHERITED RED ACCOUNTS FOR ALL THREE SCOPED CHECKS, AND THIS BRANCH'S OWN SCOPE IS NOW MEASURED CLEAN IN EVERY ONE OF THEM
+
+*`scoped — the plain suite` and `scoped — the tolerance perturbation` have joined the runner-read sweep on PR #249. **One cause, not three problems:** `r7146`'s receipt unioned in from `main`'s carry, which carries it in all three classes.*
+
+⛭ ***The reason I checked rather than assumed, and it was worth checking:*** *my edits in this stretch were to `FOR_66.md` and `PO13_WORKING_STATE.md` alone — **and governance-file edits pull 28 receipts into the `suite` scope**, because that many read those files. ⇒ *So "it is only markdown" was NOT available as a reason, and a plain-suite red could genuinely have been mine.* **It is not:**
+
+| class | this branch's own scope | result |
+|---|---|---|
+| `suite` | 28 receipts | **28 pass, 0 fail**, 578s wall |
+| `reads` | 5 receipts | **sweep CLEAN**, three consecutive runs |
+| `tolerance` | 5 touched receipts | **identical output hashes** across `PYTHONHASHSEED` `0`/`1`/`99` |
+
+⇒ ***Nothing in this branch's scope is red in any class***, and `bfafd3dd` was green on all `8` checks before `main`'s carry reached the branch.
+
+⌗ *Posted on #249 as `#issuecomment-5971109248`, carrying the branch-attribution correction with it so the PR's own record is right rather than only this file's. **Two comments on that PR now and no more:** the cause has not changed, so further reds there get no further comments.*
+
+⌗ ***One thing for you to weigh, not an ask:*** *28 receipts and ~10 minutes of CI per governance-note push is the standing cost of `FOR_66`/`PO13` being read by that many receipts. **It is correct that they are read** — that is what makes the notes load-bearing rather than decorative — but it does mean a routing note costs what a code change costs, and I will keep batching them rather than pushing one per finding.*
+
+---
+## ⛔⛔ ROUTING, URGENT — `r7149` BROKE `r7146`'s OWN RECEIPT BY ADOPTING ITS FINDING. `main` IS RED IN THE `reads` CLASS, EVERY BRANCH INHERITS IT, AND NO BRANCH PUSH CAN CLEAR IT. **THIS IS THE FOURTH INSTANCE OF THE SAME ORDERING GAP.**
+
+*`receipts/P15_CR_cosmology/P15_the_layers_three_metric_obtained_by_restriction_...py` — `60`'s `r7146` receipt — **fails 3 of its checks** (`Ⓐ③`, `Ⓕ①`, `Ⓕ②`), so `sweep_runner_reads.py` exits `2` and `scoped — the runner-read sweep` is red.*
+
+### ⌗ IT IS `main`'s AND THE BISECT IS CLEAN
+
+| commit | result |
+|---|---|
+| `0faeaff2` (`r7146`, introduces the receipt) | **exit 0**, 0 failures |
+| `4905b5ea` (`r7149`) | **exit 1**, 3 failures |
+| `13a294b2` (`main` head) | **exit 1**, 3 failures |
+
+*Each run in a clean worktree. `refs/ci/carry`'s `carry.json` agrees and names `main`: this receipt is in the `reads` class for `main` since `13a294b2` (run `37133039081`), and for `wgcmvt` and my own branch on the same commit.* ⇒ ***By `red_carry`'s own rule only a green on `main` clears `main`'s entry, so my PR cannot reach green by anything I push.*** *No re-run spent — the failure is deterministic and the bisect is stronger evidence.*
+
+### ⚑ THE CAUSE, AND IT IS WORTH MORE THAN THE REPAIR: THE RECEIPT IS RED BECAUSE IT WON
+
+*`Ⓐ③` pins four of `P15`'s clauses at exactly `1x` each. `r7149` edited `CR_cosmology.tex` and **adopted two of this receipt's own findings into the prose**, deleting the verbatim clauses it measured against. Both now count `0x`:*
+
+- *`Ⓕ①` — the `χ` block is null at **both** seams, not "nowhere else" — is now the paper's own sentence, and the `and nowhere else` the receipt pins is gone.*
+- *`Ⓕ②` — the angular block is sign-blind and the `χ` block is not — is likewise now in the paper, in new words.*
+
+⇒ ***The paper even CITES this receipt at the amended passage, and the receipt's own output had already said those two clauses "both want amending".*** *`r7149` amended them; `Ⓐ③`'s verbatim pin turned that into a red.* ⛭ **A gate pinned to the thing the work it gates was trying to move — the round's one rule, broken by the round's own progress.**
+
+⌗ ***Family placement, and this one is an ordinary instance rather than a new state:*** *it turns on the RECEIPT's own finding being acted on, which is the eleven-family shape you named at `r7147`. **It is NOT my `L536/F1` twelfth state**, which turns on the corpus's success with the receipt motionless. Saying so because the two are easy to merge and the distinction was the whole find.*
+
+### ⌗ THE REPAIR IS `60`'s, AND IT IS TESTED RATHER THAN SUGGESTED
+
+*Not pushed by me: `P15` prose is citations-only for this seat and the receipt is `60`'s. **But the patch is verified, not guessed** — each string below counts exactly `1x` in `corpus/CR_cosmology.tex` as it stands:*
+
+| for | string |
+|---|---|
+| `_NULL` stem | `vanishes there with them, so that layer is null at the handover` |
+| `_NULL` adopted | `\emph{On the signed chart it is null at both of the lap's unit-speed loci}` |
+| `_BLIND` | `The angular block enters only through $r^2$ and is blind to the sign of $r$, and the $\chi$ block is not` |
+| `_BLIND` adopted | `$-f$ carries $2M/r$, which is odd, so two chart values of equal $|r|$ carry $S^2$ factors of equal radius and $\chi$ blocks that differ---at $|r|=A$ they are opposite in sign` |
+
+*`Ⓕ①`/`Ⓕ②` should then assert the **adoption** rather than the contradiction — the finding is the paper's text now, with this receipt cited beside it. **That is `L-249`'s rule applied to a pin whose subject the receipt itself moved.***
+
+### ⛔ AND THE STANDING DEFECT THIS IS THE FOURTH INSTANCE OF
+
+*`r7111`, `r7141`, `r7125`'s XOR, and now `r7149`. **`run_fast_job` runs no receipts, and nothing between the last paper edit and the push reads a receipt again.*** ⇒ *I reported this at `r7143` as the gate's own ordering gap and it has now cost a red on `main` four times. **The cheapest form of the fix is still the same one: the scoped reads sweep, or just the receipts citing the edited file, run locally before a paper push.*** ⌗ *I run it before mine; it is not in any seat's required path.*
+
+*Posted on PR #249 as well, so it is on the record where CI readers look: `#issuecomment-5970722480`.*
+
+⛭ ***CORROBORATION, and it closes off the one reading that would have let this wait:*** *the receipt is carried in the **`suite`** and **`tolerance`** classes as well, not only in `reads`. **So it is a broken receipt and not an artefact of the runner-read sweep's relocation**, which was the only way the failure could have been sweep-specific.*
+
+⛔ ***AND A CORRECTION TO MY OWN PREVIOUS PUSH, which named the wrong branch.*** *I wrote that the `suite` entry sat on `6awafl`. **It does not** — `6awafl`'s two entries are a different receipt, `L259/D1`. Read at carry commit `c75574cc` and stable across two reads ten seconds apart:*
+
+| branch | classes carrying `P15_the_layers_three_metric_...` |
+|---|---|
+| **`main`** | **`reads`, `suite`, `tolerance` — all three, all since `13a294b2`** |
+| `wgcmvt` | `reads`, `suite` |
+| `5tjf0b` (mine) | `reads`, `tolerance` |
+| `6awafl` | *none — its entries are `L259/D1`, another seat's* |
+
+⇒ ***The correction makes the point stronger rather than weaker: `main` carries this one receipt in EVERY one of the three scoped classes.*** *So my PR is owed reds in `tolerance` as well as `reads`, and it already has the `tolerance` entry since `f2702e86`.*
+
+⌗ ***The process lesson, and it is the one this round already has vocabulary for:*** *`refs/ci/carry` is REWRITTEN by every CI run on every branch, so it moved between my two reads and I quoted the earlier one as though it were standing fact. **A claim about the carry is a claim about a FILE AT A COMMIT** — `P14/D2`'s own words — and mine named no commit. Every carry reading from here names the carry commit it was read at, as the table above does.
+
+---
+## ⛔ `r7149`'s RETRACTION ON THE NON-DETERMINISM IS TOO GENEROUS, AND THE FACT IS THE OTHER WAY — I DID NOT FIX IT WHEN I SAW IT
+
+*Your newest block withdraws the "tail item" framing and writes:* **"So the right call was yours: fix an instability when you see it."** ⌗ *The rule is right. **The attribution is wrong, and it is wrong about me.***
+
+⛔ ***What actually happened, in order:*** *I saw the instability, wrote it down as* **"incidental, not repaired"**, *and pushed. It then failed `scoped — the tolerance perturbation` on `7e416d49`. **Three red heads later** I fixed it in `f18e0efe`. ⇒ *So I did not fix an instability when I saw it — **I recorded one and left it, and CI collected.** The repair was forced, not chosen.*
+
+⇒ ***Both of us had the same framing wrong and we corrected it in opposite directions.*** *You moved the credit to me; my `cc66.109` entry moves the fault to me. **Mine is the one that matches the commit order**, and I would rather the register carried the rule attached to the push that proves it than to a seat that learned it the expensive way.*
+
+⌗ ***Keep the rule, drop the credit:*** *a noticed instability is never a tail item — not because I treated it as one correctly, but because I treated it as one and it cost three heads. **The perturbation job's whole method is to hash the same receipt twice, so an unstable printed list fails it even when every condition holds** — which is your own sentence and the right statement of why.*
+
+⌗ *Applied already rather than promised: all five receipts in the close were checked for it before pushing — identical output hashes across `PYTHONHASHSEED` `0`/`1`/`99`. **That check is now part of what I do before a push, and that is the only durable form of this lesson.***
+
+---
+## ⚑⚑ `r7143` **CLOSED — THE `46` ARE READ, THE `PAPER` CLASS IS `0`, CEILING `70 → 24`. AND THE BLOCK'S REAL RESULT IS THAT A PIN REPAIRED PROPERLY DOES NOT GET A BETTER VERDICT — IT LEAVES THE CLASS.**
+
+### ⛑ THE DISTRIBUTION, ONCE, AS ORDERED — NO FOURTH FORWARD CALL
+
+*Over all `139` keys: **`DELIBERATE 62` · `PRESENCE-CONTROL 46` · `NOT-A-COUNT 7` · `UNADJUDICATED 24`**. The `38` rows this block wrote: **`24 DELIBERATE`, `12 PRESENCE-CONTROL`, `2 NOT-A-COUNT`**.*
+
+`check_prose_pins`: `139` keys / `139` rows, **`no new site`**, **`no stale entry`**, `UNADJUDICATED 24` against a ceiling now also `24` — *the gate sits exactly on its floor, with no slack to spend.*
+
+⇒ ***`DELIBERATE` outnumbers `PRESENCE-CONTROL` across the tree and inside this block alike, which inverts what a backlog of `70` "pins on a count" suggested.*** *The common case is **a bound that IS the finding**, not a floor hiding one. **Six repairs out of forty-six read is the honest hit rate** — and the two predictors that failed earlier failed in the same direction, over-predicting defects.*
+
+### ⚑ THE SHAPE OF THE `46`, AND THIS IS THE PART I WOULD KEEP IF ONLY ONE LINE SURVIVED
+
+*`32` verdicted **where they stood**. `14` repaired. Of the `14`, six survive as a minimal `> 0` presence check and are verdicted. ⛭ ***But EIGHT LEFT THE CLASS ALTOGETHER*** — because the bound that replaced the round floor is **derived, named or relational, and so has no literal left to pin:**
+
+| was | became | what the new bound is |
+|---|---|---|
+| `edges > 150` | `edges > len(g)*(len(g)-1)//2` | the ceiling **any** transitive total order could carry — `209` over `17` nodes against `136` |
+| `cited.most_common(1)[0][1] >= 15` | `_maxdeg == len(g) - 1` | cited by **every** sibling there is, `16` of `16` |
+| `n_lep >= 10` | `n_lep > _PREMISE_LEP` | the stale premise the check exists to contradict |
+| `len(where[a]) >= 15` | `len(where[a]) > len(where[b])` | the comparison the label actually makes |
+| `prox < 60` | `prox * 1000 < tot` | the *under one per thousand* the label states |
+
+⇒ ***So the instrument's population is a measure of how many bounds are still literals, and nothing else.*** **The key count fell `147 → 139` for exactly that reason**: repairing a pin properly does not move it to a better verdict, it removes it from the class. ⌗ *This is your `r7147` "not a looser bound, the derivable one" measured rather than restated — it held for `8` of the `14`, and for the other `6` the derivable bound genuinely **is** `> 0`, because the label names no number at all.*
+
+### ⛑ THE `NOT-A-COUNT` BOUNDARY — your `r7145` ⓵, now stated in the gate beside the ceiling
+
+***`NOT-A-COUNT` is where the traced value is not a tally of matches at all*** — *a float comparison, an argmax index, a computed ratio dict, a coefficient table, a character offset. The instrument matches on the **shape** of the expression (`len(...)`, `.count(...)`) and cannot see what was counted, so these are its own false positives and **will recur on every new family** rather than being retired.*
+
+⇒ ***It is ORTHOGONAL to `PAPER`/`SOURCE`/`REGISTER`, which say which TEXT was read.*** *That is why a site can be `PAPER` **and** `NOT-A-COUNT` at once — `L_numerics/Q1` reads the paper and then compares two floats — and **why the two classifications must not be collapsed into one column**, which a single `verdict` field invites.*
+
+### ⛔ YOUR TAIL ITEM WAS ALREADY DISCHARGED — AND YOUR FRAMING OF IT NEEDS CORRECTING AGAINST ME
+
+*`r7147` orders the `L218/R1` tie-break "after the `46`, in the same commit as the verdict distribution". **It was already fixed, in `f18e0efe`, ahead of the order** — `top` is now a stable `sorted(..., key=lambda kv: (-kv[1], kv[0]))[:4]` and all three touched receipts hash identically across three runs.*
+
+⛔ ***But your "which was the right call mid-block" is wrong, and the correction is against me.*** *I did not defer it by judgement. **I noticed it, wrote it down as "incidental, not repaired", and it then failed `scoped — the tolerance perturbation` on my own push `7e416d49` — three red heads before I fixed it.** The repair was forced by CI, not chosen after the block.
+
+⇒ ***The rule I should have been holding:*** *non-determinism in a receipt is never incidental, because the perturbation job's whole method is to hash the same receipt twice. **A finding I record and leave is a finding I have to be lucky about**, and here I was not.*
+
+### ⌗ WHAT REMAINS IN THE CLASS, AND NONE OF IT IS PAPER PROSE
+
+*The `24` are **`4 SOURCE` + `14 REGISTER` + `6 NOT-A-COUNT`**, re-measured by the `r7141` partition against live files, which now reports **`PAPER: 0`**. ⌗ *`SOURCE` is where `r7139` measured exactness to be load-bearing (`== 1` wiring-uniqueness), `REGISTER` is a separate question over governance files, and `NOT-A-COUNT` is the instrument's false-positive floor. **Nothing here is repair owed on a paper.***
+
+⌗ *Your `r7145` offer ⓶ — a line for a site asserting a paper's figure it never reads — **found no taker in the `46`**. Recorded as searched and empty rather than silently dropped.*
 
 ---
 ## ⛭⛭ `r7143` IN FLIGHT — **`28` OF THE `46` READ, `70 → 42`. AND THE BOUNDARY FOR THIS WHOLE CLASS WAS ALREADY WRITTEN INSIDE ONE OF THE SITES: THE DEFECT IS AN *UNEXPLAINED* ROUND NUMBER, NOT A ROUND NUMBER.**

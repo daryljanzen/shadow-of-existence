@@ -180,7 +180,10 @@ def main():
 
     # ⓶ but the action is there
     n_eh = len(re.findall('Einstein--Hilbert', allp))
-    check(f'⛭⛭ BUT "Einstein--Hilbert" appears {n_eh} times', n_eh >= 4)
+    # ⛭ r7143+cc66.108: `>= 4` was a round floor and the LABEL NAMES NO NUMBER -- it claims only that
+    #   the action APPEARS, which is ⓶'s whole job: the counter-presence to ⓵'s absence, so that the
+    #   absence means something. Presence asserted, count printed (6).
+    check(f'⛭⛭ BUT "Einstein--Hilbert" appears {n_eh} times', n_eh > 0)
     check("P12 opens on it: \"the Einstein--Hilbert action is recast in Hamiltonian form\"",
           'the Einstein--Hilbert action is recast in Hamiltonian form' in allp)
     check('an objection is answered ON it: "the conformal factor entering the Einstein--Hilbert '
@@ -213,7 +216,12 @@ def main():
           #   receipt's own finding rather than a breach of it.  What the conclusion rests on is
           #   what has not moved: the Hamiltonian apparatus and the two declining sentences,
           #   verbatim.
-          n_eh >= 4
+          # ⛭ r7143+cc66.109: `>= 4` here too -- the SAME variable, the same round floor, in the
+          #   conclusion rather than in ㉓.  Its job here is identical: the action's PRESENCE is what
+          #   makes *not an absence* mean anything, and `> 0` is the weakest reading of that.  The
+          #   amendment note above already states what this conclusion rests on -- the Hamiltonian
+          #   apparatus and the two declining sentences, verbatim -- and a count of four is not in it.
+          n_eh > 0
           and 'the two are orthogonal, not in competition' in allp
           and 'The reading has no quarrel with a variational route' in allp)
 

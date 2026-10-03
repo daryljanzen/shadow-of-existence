@@ -122,9 +122,16 @@ def main():
     # premise 1 is stale
     n_lep = len(re.findall('lepton', pub, re.I))
     n_col = len(re.findall('colourless', pub, re.I))
+    # ⛭⛭ r7143+cc66.108: `>= 10` and `>= 5` were round floors, AND THE DERIVABLE BOUND IS THE PREMISE'S
+    #   OWN FIGURES. The claim is that `L-221`'s premise -- *lepton x1 (in a bibliography title), quark
+    #   x0* -- is STALE, and a premise of 1 and 0 is stale exactly when the counts EXCEED 1 and 0.
+    #   ⇒ *So the bound comes from the premise this check refutes rather than from a figure beside it:
+    #   not a looser bound, the derivable one.*  Measured 14 and 17 against the premise's 1 and 0.
+    _PREMISE_LEP, _PREMISE_COL = 1, 0
     check(f"L-221's premise 'lepton x1 (in a bibliography title), quark x0' is STALE: "
-          f'P14 now carries {n_lep} "lepton" and {n_col} "colourless"',
-          n_lep >= 10 and n_col >= 5)
+          f'P14 now carries {n_lep} "lepton" and {n_col} "colourless", against the premise\'s '
+          f'{_PREMISE_LEP} and {_PREMISE_COL}',
+          n_lep > _PREMISE_LEP and n_col > _PREMISE_COL)
     # ** the first draft guessed at four LaTeX spellings and matched none.  The row writes it in
     # markdown with backticks and a unicode multiplication sign: "`lepton` ×1 (inside a bibliography
     # title), `quark` ×0".  ** Guessing a source's notation instead of reading it is the smallest form

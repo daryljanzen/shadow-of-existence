@@ -132,9 +132,16 @@ def main():
     i_dim, i_res = p14.index(dim), p14.index(residue)
     between = p14[i_dim:i_res]
     n_sent = between.count('. ')
-    check(f'   with the residue {i_res - i_dim} characters and {n_sent} sentence-ends later -- the '
-          'same paragraph, not a distant echo',
-          0 < i_res - i_dim < 900 and n_sent <= 4)
+    # ⛭⛭ r7143+cc66.108: `< 900` CHARACTERS AND `<= 4` SENTENCE-ENDS WERE BOTH PARAGRAPH-SCALE PINS
+    #   STANDING IN FOR THE CLAIM THE LABEL MAKES -- *the same paragraph, not a distant echo*. ** And
+    #   "the same paragraph" is derivable from the text instead of approximated by a length: there is no
+    #   paragraph break between them. **  ⇒ *So the bound is the claim rather than a figure near it: not
+    #   a looser bound, the derivable one.*  ⌗ Both numbers stay in the label, printed, because the
+    #   distance is worth reading; neither is asserted.
+    _para_break = '\n\n' in between or '\par' in between
+    check(f'   with the residue {i_res - i_dim} characters and {n_sent} sentence-ends later, and NO '
+          f'paragraph break between them -- the same paragraph, not a distant echo',
+          0 < i_res - i_dim and not _para_break)
 
     # THE POINT: the bounding sentence names no route
     routes = [w for w in ('holonomy', 'isometry', 'flat', 'bundle', 'monodromy', 'winding')

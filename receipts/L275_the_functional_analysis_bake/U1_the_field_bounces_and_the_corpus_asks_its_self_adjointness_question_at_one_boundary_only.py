@@ -204,7 +204,13 @@ def main():
     check(f'⓷ᵇ ⛔ while `branch point` appears {sum(where["branch point"].values())} times across '
           f'{len(where["branch point"])} papers -- and no paper carries a self-adjointness verdict '
           'at it',
-          sum(where['branch point'].values()) > 250 and len(where['branch point']) >= 15)
+          # ⛭⛭ r7143+cc66.108: `> 250` and `>= 15` were round floors under a label that PRINTS both
+          #   counts and names neither. ** The claim is a CONTRAST -- the boundary that gets no verdict
+          #   is far more widespread than the one that does -- and both sides of it are already in
+          #   `where`. **  ⇒ *So the bound is the comparison the receipt is making: not a looser bound,
+          #   the derivable one.*  Counts printed; the load-bearing half is still the absence beside it.
+          sum(where['branch point'].values()) > sum(where['essentially self-adjoint'].values())
+          and len(where['branch point']) > len(where['essentially self-adjoint']))
     k1 = os.path.join(ROOT, 'receipts', 'L264_station_H_the_index_is_canonical')
     check('⓷ᶜ the verdict for that boundary exists and lives in a RECEIPT, not a paper: station Ⓗ, '
           'L-264', os.path.isdir(k1) and any('limit_point' in f for f in os.listdir(k1)))
