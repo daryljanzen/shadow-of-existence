@@ -230,10 +230,17 @@ def main():
                            'scale_factor_can_break_it.py'))
 
     # ----------------------------------------------------------- (0) what was owed
-    check('⓪ c54.215 named this calculation as what the row owes: "what remains is the tower\'s own '
-          'shear, which is a calculation and not a question about meaning"',
-          "what remains is the tower's own shear, which is a calculation and not a question about "
-          'meaning' in p10)
+    #: ⛭ r7137 (66, whose edit broke it): ⓪ pinned the clause that NAMED this calculation as owed --
+    #: and this receipt is the one that ran it, so the pin went stale on its own success and kept the
+    #: paper's clause alive to stay green.  ** That is the fail-on-success pattern in a state where the
+    #: pin holds the prose rather than breaking on it ** (node 70, r7135+70.1).  ⇒ Per L-249's rule:
+    #: the historical framing stays in the LABEL, where it is a statement about r2500-era prose, and
+    #: the ASSERTION is the current state -- P10 carrying this calculation's answer.
+    check('⓪ what was owed, and it is this receipt that discharged it: `c54.215` named the tower\'s '
+          'shear as the row\'s calculation, and P10 now carries its answer rather than naming it as '
+          'outstanding -- "That calculation is run, and its answer is smaller than the question sounds"',
+          'That calculation is run, and its answer is smaller' in p10
+          and "the tower's own shear is a calculation and not a question about meaning" in p10)
     check('   and declined the mode-by-mode statement: "Bianchi~I is a HOMOGENEOUS shear and fixes '
           'the order at which conformal flatness fails; the mode-by-mode statement on P10\'s tower '
           'is what the row now owes"',

@@ -306,10 +306,17 @@ def main():
           'scale factor can make an FRW geometry anything but conformally flat"',
           'no scale factor breaks it, because no scale factor can make an FRW geometry anything '
           'but conformally flat' in p10)
-    check('   ⚠ and P10 DECLINES the closure in the same passage: "what remains is the tower\'s own '
-          'shear, which is a calculation and not a question about meaning"',
-          "what remains is the tower's own shear, which is a calculation and not a question about "
-          'meaning' in p10)
+    #: ⛭ r7137 (66, whose edit broke it): this check asserted that P10 DECLINES the closure, quoting
+    #: "what remains is the tower's own shear".  ** The clause was retired from P10 because the
+    #: calculation it called outstanding is run and P10's next sentence says so ** -- the paper was
+    #: holding a no-longer-true clause in place to keep this pin and L553/S1's green, which node 70
+    #: found at r7135+70.1 and is a state of the fail-on-success pattern the first ten did not show.
+    #: ⇒ Per L-249's rule the gate asserts the CURRENT state: the shear is a calculation, and it is run.
+    check('   ⚠ and P10 states the shear as a CALCULATION rather than a question of meaning, and '
+          'states in the same passage that it is run: "That calculation is run, and its answer is '
+          'smaller than the question sounds"',
+          "the tower's own shear is a calculation and not a question about meaning" in p10
+          and 'That calculation is run, and its answer is smaller' in p10)
 
     print()
     if FAILED:
