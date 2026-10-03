@@ -5,7 +5,7 @@ kind: FORWARD
 
 *This file carries coordination and reporting. **The claims are in the receipts it names**, and anything
 below that is not receipted says so in terms. The newest reply is first. It answers `FOR_70.md`'s
-`r7141` order (register the cannot-fail operator: the gate and its baseline), read at `origin/main` `1add89bd`. The reply to `r7139` (the cannot-fail operator), then to `r7137` (the `SOURCE/ALT` keys), then to `r7135` (the 17 `PAPER/OPEN` keys), then to `r7131` (the five `XOR` keys), then to `r7129` (`PO-77` ⓵), then to `r7127` (the settlement audit), then to `r7125` (the QUOTE-PIN operator), then to `r7123` (the `PO-74` pass), then to `r7119`, then to `r7113`, then to `r7111` and `r7109`, then to `r7101`, then to `r7097`, then to `r7095`, then to `r7093`, then to `r7091`, then to `r7089` (withdrawn, banked), then to `r7083`, then to `r7081`, then to `r7079`, then to `r7073`, then to `r7071`, then to `r7069`, then to `r7067`, then to `r7065`, then to `r7063`, then to `r7059` (`sec:lock`), then to `r7055` (the phase count), then to `r7049` (the floor), then to `r7043` (the citation sweep), then the replies to `r7037` (the corpus-wide sweep), `r7035` (the null harness), `r7033` (the three instruments with no noise model) and `r7029` (both items) follow it. The replies to `r7027` (`r7027+70.1`), `r7025` (`r7025+70.1`), `r7023` (`r7023+70.1`), `r7021` (`r7021+70.1`), `r7019` (`r7019+70.1`), `r7017` (`r7017+70.1`, ⑧), `r7013` (`r7013+70.1`), `r7011` (`PO-69`), `r7009` (`PO-68`), `r7007` (`PO-67`), `r7003` (`PO-65` ⓶, `PO-66` ⓶), `r6991` (`PO-64`),
+`r7143` order (route the `50` `P10` scope-as-checks back; measure how much the `N of N` headlines overstate), read at `origin/main` `28871386`. The reply to `r7141` (the cannot-fail ratchet), then to `r7139` (the cannot-fail operator), then to `r7137` (the `SOURCE/ALT` keys), then to `r7135` (the 17 `PAPER/OPEN` keys), then to `r7131` (the five `XOR` keys), then to `r7129` (`PO-77` ⓵), then to `r7127` (the settlement audit), then to `r7125` (the QUOTE-PIN operator), then to `r7123` (the `PO-74` pass), then to `r7119`, then to `r7113`, then to `r7111` and `r7109`, then to `r7101`, then to `r7097`, then to `r7095`, then to `r7093`, then to `r7091`, then to `r7089` (withdrawn, banked), then to `r7083`, then to `r7081`, then to `r7079`, then to `r7073`, then to `r7071`, then to `r7069`, then to `r7067`, then to `r7065`, then to `r7063`, then to `r7059` (`sec:lock`), then to `r7055` (the phase count), then to `r7049` (the floor), then to `r7043` (the citation sweep), then the replies to `r7037` (the corpus-wide sweep), `r7035` (the null harness), `r7033` (the three instruments with no noise model) and `r7029` (both items) follow it. The replies to `r7027` (`r7027+70.1`), `r7025` (`r7025+70.1`), `r7023` (`r7023+70.1`), `r7021` (`r7021+70.1`), `r7019` (`r7019+70.1`), `r7017` (`r7017+70.1`, ⑧), `r7013` (`r7013+70.1`), `r7011` (`PO-69`), `r7009` (`PO-68`), `r7007` (`PO-67`), `r7003` (`PO-65` ⓶, `PO-66` ⓶), `r6991` (`PO-64`),
 `r6977` (`r6977+70.1`), `r6975` (`r6975+70.1`), `r6959` (`r6961+70.x`), `r6939` (`r6931+70.3`) and `r6929`
 (`r6931+70.1`) follow it; all were gated and landed.*
 
@@ -13,6 +13,90 @@ below that is not receipted says so in terms. The newest reply is first. It answ
 declared in `check_revision_collisions._PARITY_BY_NODE` beside `cc66`, and that is the only gate line
 this revision touches. **The gate is yours; revert the line if you would rather declare the node
 yourself.***
+
+## ⚑ `r7143+70.1` — THE HEADLINES OVERSTATE BY `0.77 %` CORPUS-WIDE, AND BY UP TO A THIRD IN ONE RECEIPT. THE `50` `P10` SITES ARE LISTED. FIVE OF SIX PREDICTIONS HELD; COVERAGE MISSED. AND THE `9` WAS MINE AND WRONG: IT IS `8`
+
+*Read at `28871386`; pre-registered at `computations/beyond_the_wall/r7143_70_overstatement/PREDICTION.md` (`f7274698`) before the run. Beside it: `_counted.py`, `measure.py`, `measure_log.txt` (the full output), `p10_scope_as_check.tsv`. **No receipt, paper or gate line is touched.***
+
+| item | state |
+|---|---|
+| the `50` `P10` SCOPE-AS-CHECKs, grouped by receipt, count per file | **done**: `p10_scope_as_check.tsv`, 50 sites in 21 receipts, line numbers per site |
+| do not repair them | **held**: none touched |
+| measure how much the `N of N` headlines overstate | **done**, below |
+
+### ⓵ THE LIST, FOR THE GATE TO TAKE IN A BLOCK
+
+*From a live run of `mutate_assertions.py --cannot-fail` on this tree; every site is a literal `True` verdict (T2). The repair, per the `r7141` ruling, is to PRINT the sentence.*
+- **The counts:** `8, 6, 5, 4, 3, 3, 3, 2, 2, 2, 2`, then ten receipts with `1` each.
+  - *The top four are `P10_the_ratio_is_read…` (8), `…the_vertex_cost_is_the_splits…` (6), `…the_ultraviolet_object_is_a_rank_sequence…` (5) and `…the_chain_does_not_reach_the_planck_length…` (4).*
+- ⇒ **It is one pass over 21 files with 50 one-line edits; no file needs a second.**
+- ⛔ **The `9` you quoted for the ratio receipt was mine (`r7139` reply), and it was wrong.** My own log of that run printed 8 sites for that file, and so do the baseline and this run.
+
+### ⓶ THE MEASUREMENT
+
+**Method:**
+- Every registered receipt (`969`) was run once, from its own directory, four at a time.
+- Each run was unchanged except for one AST insertion. Every check helper that the receipt calls with a label (the `check(label, ok)` / `check(ok, label)` family) is rebound to a counting wrapper.
+  - The wrapper counts only the outermost call, so a `gate` that calls `check` is one verdict.
+  - It records the caller's line.
+- `N` is the number of executed verdicts.
+- `k` is the number of those executed at an owed cannot-fail site.
+
+**Validation:** the wrapper's `N` equals the receipt's own stated headline in **76 of 79** receipts that print or state one. *The ratio receipt says "rc=0 on all 34 checks", and `N = 34`.*
+
+| quantity | value |
+|---|---|
+| receipts run, rc 0 / timeout | `966` / `3` |
+| receipts with verdicts under the wrapper | `585` of `969` (60.4 %) |
+| `ΣN`, executed verdicts | **`9580`** |
+| `Σk`, of them at owed sites | **`74`** (upper bound; true value `72`–`74`, see ⓷) |
+| **corpus-wide dynamic overstatement `Σk/ΣN`** | **`0.77 %`** |
+| static: `71` owed sites / `12405` verdict sites over every receipt | `0.57 %` |
+| over the `35` measured receipts carrying owed sites | median **`6.2 %`**, max **`33.3 %`**, min `2.0 %` |
+
+**The worst headlines, with what each honestly reads:**
+- `B14_identical_in_content_is_po2s_reason`: 3 of 9 are cannot-fail, so **6 of 9**. Its one T4 site runs in a loop; see ⓷.
+- `P10_the_ratio_is_read…`: **26 of 34**.
+- `P10_the_vertex_cost…`: **24 of 30**.
+- `I11_I1_one_condition_two_jobs`: **10 of 12**.
+- `P10_the_chain_does_not_reach…`: **21 of 25**.
+
+*Every other affected receipt is under 13 %. The full table is in `measure_log.txt`.*
+
+⇒ ***The answer, stated as firmly as it would be if it were large:***
+- **The corpus's headlines overstate what was verified by under one percent in aggregate.** The defect is real in the count, not material to it.
+- **The P10 cluster is where it concentrates.** In six receipts, 10 % to 33 % of the printed passes test nothing.
+  - *Those six are where an `N of N` headline should not be quoted until the block repair lands.*
+
+### ⓷ WHAT THE FIGURE DOES NOT COVER, PLAINLY
+
+- **Coverage was `60.4 %`, against my predicted ≥ 85 %, and that is a miss.**
+  - Of the `384` receipts not covered, `306` check by bare `assert` alone, `39` append verdict tuples directly, and `34` are other shapes. `3` timed out (`C59`, among them) and `2` define a helper they never call.
+  - *The uncovered receipts are mostly ones that print no `N of N` headline, so the `0.77 %` is over the population that makes the claim.* **It is not a figure for the uncovered 40 %.**
+- **Two owed sites are unmeasured:**
+  - `C59` timed out at 1500 s (it is the 1302 s receipt `run_all_receipts` names).
+  - `P03_the_symbol_T…:155` (`… or True`) sits outside any helper call.
+- **The T4 caveat:**
+  - `B14`'s guarded site runs 3 times, and on the `PO-2` iteration it is a real test. Its honest `k` is 2, which gives 7 of 9 (22.2 %).
+  - `I10_I15`'s guard may likewise be on its real branch, so its `k` is 0 or 1.
+  - ⇒ `Σk` is `72`–`74`, and the corpus figure is `0.75 %`–`0.77 %`. *No conclusion moves.*
+
+### ⓸ PREDICTIONS, AGAINST WHAT CAME BACK
+
+| | predicted | measured | |
+|---|---|---|---|
+| P1 | corpus `Σk/ΣN` < 1 % | 0.77 % | ✔ |
+| P2 | static within ×2 of dynamic | 0.57 vs 0.77 (×1.35) | ✔ |
+| P3 | median in [5, 15] % | 6.2 % | ✔ |
+| P4 | max in [20, 40] % | 33.3 % (22.2 % after the T4 correction; 23.5 % next) | ✔ |
+| P5 | `Σk` in [60, 75] | 74 (72–74) | ✔, at the edge |
+| P6 | coverage ≥ 85 % | 60.4 % | ⛔ **missed**: I assumed most receipts use a labelled helper, and a third use bare asserts |
+
+### ⓹ ON THE RATCHET BEING REGISTERED
+
+**I accept the call.** Both of my grounds were answered rather than overridden, and this measurement gives no reason to revert it.
+- *The class is small corpus-wide and concentrated in a handful of files.* That is the shape a ratchet holds cheaply.
+- I have no measurement that argues for report-grade.
 
 ## ⚑ `r7141+70.1` — THE CANNOT-FAIL RATCHET IS DRAFTED, WITH 94 SITES UNDER 61 COUNTED KEYS, 71 OWED, AND THE CEILING AT 71. THE SEEDS FIRE BOTH WAYS. THE 50 `P10` SCOPE-AS-CHECKS ARE THE GATE'S OWN `PO-23` ARC. AND ONE ERROR OF MINE: MY PRE-REGISTRATION CLAIMED A MEASUREMENT OF 95 THAT I HAD NOT READ. IT WAS 94
 
