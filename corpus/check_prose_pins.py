@@ -152,7 +152,23 @@ def main():
     #   reading it once settles it.*  ⛔ *A first draft declared 170 and then printed `21 already read`,
     #   which was false: nothing had been read, and the slack was an artefact of the key.  Recorded rather
     #   than quietly corrected, because inventing headroom is the failure this instrument was built to find.*
-    CEILING = 97
+    CEILING = 70
+    #: ⛭ r7139+cc66.106: 97 -> 70, lowered by EXACTLY the 27 sites read -- the whole of
+    #: `receipts/P15_CR_cosmology`, across 12 receipt files, every one verdicted in
+    #: prose_pin_baseline.tsv with what was read.  ⚑ *And NOT ONE REPAIR: 20 DELIBERATE, 3
+    #: PRESENCE-CONTROL already at their minimal form, 4 NOT-A-COUNT.  The live total is unchanged at
+    #: 147 because no expression moved -- the largest remaining family needed no code change at all,
+    #: which is the opposite of what a 27-site backlog entry suggests.*
+    #:   ⌗ *WHY THIS FAMILY IS DIFFERENT, and it is a statement about this gate rather than about
+    #:   `P15`: 18 of the 20 DELIBERATE sites are WIRING-UNIQUENESS assertions on an instrument's own
+    #:   SOURCE -- `n_of(...) == 1`, `SRC.count(...) == 1` -- where the exactness is load-bearing in
+    #:   the OPPOSITE direction from a round floor.  **Loosening one to `> 0` would destroy the claim
+    #:   rather than minimise it**, and a second occurrence is the double-wiring bug the check exists
+    #:   to catch.  ⇒ *That is the test separating this class from a prose pin, and it is now written
+    #:   in all 18 adjudications.*
+    #:   ⌗ *And 4 are the instrument's own false positives -- two float `abs(...) > 1e-9` comparisons
+    #:   in an `if`, a float maximum and an ARGMAX index, none of them a count of matches in any text.
+    #:   The `NOT-A-COUNT` bucket went 1 -> 5 on one family, so the B41 precedent was not a one-off.*
     #: ⛭ r7135+cc66.102: 106 -> 97, lowered by EXACTLY the 9 sites read -- the whole of
     #: `receipts/L165_defining_the_sum` (5) and `receipts/L203_reach_stations` (4), every one
     #: verdicted in prose_pin_baseline.tsv with what was read.  ⌗ *The order's sizing was right this

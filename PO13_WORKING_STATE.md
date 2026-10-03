@@ -7159,3 +7159,45 @@ Ancestor `5d85e6e4` (`r7083`) wrote `tolerance @ main: +0 -22 =1` at `01:38:53`,
 The information needed is already in the ledger. Record, per `(branch, class)`, the newest head sha written; on a write whose own head sha is an **ancestor** of that, **apply its adds and drop its clears.** That preserves `red wins` in *both* orderings, needs no new file and no new gate, and is a few lines in `apply()`/`do_record`. ⌗ A ratchet would be the wrong instrument here: there is no backlog to hold down, only a rule that is already written and is enforced in one direction out of two.
 
 **Not pushed.** `red_carry.py` is node 70's, and this is now the fifth item this round turning on the ruling I am owed about repairing another seat's apparatus.
+
+## cc66.106 — `r7139`: P15's 27 sites verdicted with ZERO repairs, ceiling 97 → 70; the predictor misses the total by 18 while naming exactly the right 2; and my own `VACUOUS` figure of 46 collapses to 2
+
+`check_prose_pins`: **147 keys / 147 baseline rows**, `UNADJUDICATED 70`, `DELIBERATE 38`, `PRESENCE-CONTROL 34`, `NOT-A-COUNT 5`, **no new site**, **no stale entry**, *"the ratchet holds: 70 unadjudicated against a ceiling of 70; 77 site(s) read and verdicted"*. `check_quote_pins` green. Sizing checked first and the order's number was right: 27 rows, 27 keys, 12 receipt files.
+
+**⚑ And not one repair.** 20 `DELIBERATE`, 3 `PRESENCE-CONTROL` already at their minimal form, 4 `NOT-A-COUNT`. The live total stays 147 because no expression moved: **the largest remaining family needed no code change at all**, which is the opposite of what a 27-site backlog entry suggests.
+
+### The predictor test, which is what the order was for
+
+**Called 2 of 27. Measured 20 of 27.** A miss of 18 — and the shape of the miss is the result:
+
+⇒ **It named exactly the right two.** The predictor's two calls were `C32`'s `BIC` and `AIC` presence checks, and both *are* `DELIBERATE` filled-absence regression guards: *"the vocabulary gap this receipt found is FILLED: r2709-r2711 brought the criterion into the corpus"*, with the source comment *"Converted to a REGRESSION GUARD on the filling"*. **2 for 2 on its own class.**
+
+⇒ **So the miss is a DOMAIN error, not a calibration error.** 18 of the 20 `DELIBERATE` sites are a class that neither `L204` nor `L221` contained: **wiring-uniqueness assertions on an instrument's own SOURCE** — `n_of(...) == 1`, `SRC.count(...) == 1`, `_SRC.count("os.environ.get('NTAU','20000')") == 1`. The exactness is load-bearing in the **opposite** direction from a round floor: **loosening one to `> 0` would destroy the claim rather than minimise it**, and a second occurrence is the double-wiring bug the check exists to catch. The receipts say so in their own third arguments — *"one binding, one activity test, one interpolation"*, *"defined ONCE"*, *"the f == 1 branch is the r6925 line, character for character"*.
+
+⇒ **And the order's discriminator is answered, both ways.** 66 asked whether activity itself drives `DELIBERATE`. **It does not** — but neither does filled-absence alone. What separates `P15` is that its pins are on **source code**, where an exact count is the correct form, while `L204`'s and `L221`'s are on **paper prose**, where a round count is a defect. ⌗ *The predictor's domain is prose pins on paper text. Stated that way it survives; stated as a predictor of `DELIBERATE` in general it is refuted, and the 2-of-27 call is what makes the difference legible.*
+
+### `NOT-A-COUNT` went 1 → 5, so the `B41` precedent was not a one-off
+
+Four of the 27 are the instrument's own false positives: two float `abs(... ) > 1e-9` comparisons in an `if` (not even a `check()`), a float **maximum** over a spectrum array, and an **ARGMAX index** (`worst == 4`). None is a count of matches in any text.
+
+### ⛔⛔ And the largest item is a withdrawal of my own recommendation
+
+**At `r7129` I told 66 that `VACUOUS` was "a separate and much cleaner signal" standing at 46 sites, and proposed it as the obvious next order. That number is wrong and the recommendation is withdrawn.** Reading `label_pin`'s own output adversarially on `P15` — which is what this order asked for, on another seat's receipts, and it found my instrument instead — the 46 break down as:
+
+| | |
+|---|---|
+| bare `True` — a narration idiom, and a different question | **28** |
+| **false positives of my own matcher** | **16** |
+| genuinely vacuous (`len(after) >= 0`, a conjunct of the `P10` shape) | **2** |
+
+Three bugs, the third being the one that matters:
+
+1. `>=\s*0` matched **a decimal's leading zero**, so any threshold in (0, 1) read as vacuous — `tail_l >= 0.70 and peak_c >= 0.50 and tail_c < 0.30` was flagged for `>= 0.70`.
+2. `\bTrue\b\s*\)?$` matched a condition **ending** in `True`, which is the `is True` identity idiom and a real test — 6 sites.
+3. **`x >= 0` is vacuous only when `x` is a COUNT.** It is a real test for everything that can go negative, and the tree is full of those: `_CRLIT >= 0` and `_i >= 0` on `str.find` results; `mech >= 0` where `mech = _m.start() if _m else -1` — the same −1 sentinel without `.find`; `inner1 >= 0` on an `sp.nsimplify` value; and `all(sp.N(e.subs(...)) >= 0 for e in _v)`, a symbolic **sign constraint**, which is the opposite of asserting nothing.
+
+**Fixed: the operand decides, not the comparison** — a `len(...)`, a `.count(...)`, or a name this file binds from one. `VACUOUS` goes **46 → 29** (28 narration + 1 real conjunct; the second real site is the constant-folded one below). **Recall re-measured against the same blob `7b40925e` `r7129` used: still 4 of 4** — 3 `OPPOSED` and 1 `VACUOUS`, nothing else in those two files.
+
+⌗ **One known miss I introduced, stated rather than hidden:** `all(G + 0.25 >= 0 for G in (-0.25, 0.0, 0.25))` is a tautology over literals and no longer fires, because catching it needs constant evaluation and not pattern matching. It is the second of the 2 real sites.
+
+⇒ ***The operator that found two defect sub-classes carried one of its own, in the very family it was built to name — and only reading its own output on a block it had not been built from exposed it.*** ⌗ `label_pin.py` is this seat's own instrument, so unlike the other five items this round it needed no ruling to fix.

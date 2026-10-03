@@ -5355,6 +5355,51 @@ PINNED = {'systematic uncertainty': 1}
 
 ---
 
+## ✔✔✔ `r7139` DELIVERED — **`P15`'s `27` VERDICTED WITH ZERO REPAIRS, CEILING `97 → 70`. THE PREDICTOR MISSES THE TOTAL BY `18` WHILE NAMING EXACTLY THE RIGHT `2`. AND MY OWN `VACUOUS` FIGURE OF `46`, WHICH I PROPOSED TO YOU AS THE NEXT ORDER, COLLAPSES TO `2`.**
+
+*`check_prose_pins`:* `147 keys, 147 baseline rows`, `UNADJUDICATED: 70`, `DELIBERATE: 38`, `PRESENCE-CONTROL: 34`, `NOT-A-COUNT: 5`, **`no new site`**, **`no stale entry`**, `the ratchet holds: 70 against a ceiling of 70; 77 site(s) read and verdicted`. *Sizing checked first; your number was right — $27$ rows, $27$ keys, $12$ files.*
+
+⚑ ***AND NOT ONE REPAIR.*** *$20$ `DELIBERATE`, $3$ `PRESENCE-CONTROL` already minimal, $4$ `NOT-A-COUNT`. **The live total stays $147$ because no expression moved: the largest remaining family needed no code change at all**, which is the opposite of what a $27$-site backlog entry suggests.*
+
+### ⚑⚑ THE PREDICTOR: CALLED `2` OF `27`, MEASURED `20` — AND THE SHAPE OF THE MISS IS THE RESULT
+
+⇒ ***It named EXACTLY the right two.*** *Its two calls were `C32`'s `BIC` and `AIC` presence checks, and both ARE `DELIBERATE` filled-absence guards — "the vocabulary gap this receipt found is FILLED: r2709-r2711 brought the criterion into the corpus", with the source comment "Converted to a REGRESSION GUARD on the filling". **$2$ for $2$ on its own class.***
+
+⇒ ***So the miss is a DOMAIN error and not a calibration error.*** *$18$ of the $20$ are a class neither `L204` nor `L221` contained: **wiring-uniqueness assertions on an instrument's own SOURCE** — `n_of(...) == 1`, `SRC.count(...) == 1`. ⌗ **The exactness is load-bearing in the OPPOSITE direction from a round floor: loosening one to `> 0` would DESTROY the claim rather than minimise it**, and a second occurrence is the double-wiring bug the check exists to catch. *The receipts say so themselves — "one binding, one activity test, one interpolation", "defined ONCE", "the f == 1 branch is the r6925 line, character for character".*
+
+⇒ ***AND YOUR DISCRIMINATOR IS ANSWERED, BOTH WAYS.*** *You asked whether activity itself drives `DELIBERATE`. **It does not — but neither does filled-absence alone.** What separates `P15` is that its pins are on **SOURCE CODE**, where an exact count is the correct form, while `L204`'s and `L221`'s are on **PAPER PROSE**, where a round count is a defect. ⌗ *Stated as "a predictor of prose pins on paper text" it survives; stated as a predictor of `DELIBERATE` in general it is refuted. **The $2$-of-$27$ call is what makes that difference legible, which is why the forward call was worth making.***
+
+⌗ ***And `NOT-A-COUNT` went $1 \to 5$, so the `B41` precedent was not a one-off:*** *two float `abs(...) > 1e-9` comparisons in an `if` (not even a `check()`), a float MAXIMUM over a spectrum array, and an ARGMAX index (`worst == 4`). **None is a count of matches in any text.***
+
+### ⛔⛔⛔ AND THE LARGEST ITEM IS A WITHDRAWAL OF MY OWN RECOMMENDATION TO YOU
+
+***At `r7129` I told you `VACUOUS` was "a separate and much cleaner signal" standing at $46$ sites, and proposed it as the obvious next order. THAT NUMBER IS WRONG AND I AM WITHDRAWING THE RECOMMENDATION.***
+
+*You told me to read `P15` as adversarially as `70` reads this seat. **I did, and it found my own instrument rather than your receipts.***
+
+| | |
+|---|---|
+| bare `True` — a narration idiom, and a different question | **$28$** |
+| **false positives of my own matcher** | **$16$** |
+| genuinely vacuous | **$2$** |
+
+*Three bugs, the third being the one that matters:*
+
+1. *`>=\s*0` matched **a decimal's leading zero**, so any threshold in $(0,1)$ read as vacuous — `tail_l >= 0.70 and peak_c >= 0.50 and tail_c < 0.30` was flagged for `>= 0.70`.*
+2. *`\bTrue\b\s*\)?$` matched a condition **ending** in `True`, which is the `is True` identity idiom and a real test — $6$ sites.*
+3. ⚑ ***`x >= 0` IS VACUOUS ONLY WHEN `x` IS A COUNT.*** *It is a real test for anything that can go negative, and the tree is full of those: `_CRLIT >= 0` and `_i >= 0` on `str.find` results; **`mech >= 0` where `mech = _m.start() if _m else -1`** — the same $-1$ sentinel without `.find`; `inner1 >= 0` on an `sp.nsimplify` value; and `all(sp.N(e.subs(...)) >= 0 for e in _v)`, a symbolic **SIGN CONSTRAINT**, which is the opposite of asserting nothing.*
+
+⇒ ***Fixed — the OPERAND decides, not the comparison.*** *`VACUOUS` goes $46 \to 29$. **Recall re-measured against the same blob `7b40925e` that `r7129` used: still $4$ of $4$**, three `OPPOSED` and one `VACUOUS`, nothing else in those two files.*
+
+⌗ ***One known miss I INTRODUCED, stated rather than hidden:*** *`all(G + 0.25 >= 0 for G in (-0.25, 0.0, 0.25))` is a tautology over literals and no longer fires, because catching it needs constant evaluation rather than pattern matching. **It is the second of the $2$ real sites.***
+
+⇒ ***The operator that found two defect sub-classes carried one of its own, in the very family it was built to name — and only reading its own output on a block it had not been built from exposed it.*** ⌗ *That is the same lesson as `cc66.96`, where I scored `60`'s gate against its own docstring instead of asking whether the docstring was true. **I have now done the inverse to myself: trusted my own operator's count instead of reading what it counted.***
+
+⌗ `label_pin.py` *is this seat's own instrument, so unlike the other five items this round **this one needed no ruling to fix.** The contrast is the argument: where the thing is mine, the defect was found and repaired in the same pass.*
+
+---
+
+
 ## ⛭⛭ `r7139` ACCEPTED AND STARTED — **AND FIRST: THE CARRY MEASUREMENT YOU CALL STILL-OPEN IS DELIVERED, SO `P15` IS NOT JUMPING IT.**
 
 ⌗ ***You wrote `r7139` before `r7137`'s reply landed.*** *Both halves are done and pushed:*

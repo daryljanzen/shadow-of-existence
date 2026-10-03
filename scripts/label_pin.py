@@ -64,7 +64,40 @@ NEGATED = re.compile(r'no longer|is not at zero|not at zero|ended|now named|now 
 #: the condition asserts PRESENCE or a positive count.
 PRESENT = re.compile(r'>\s*0|>=\s*1|!=\s*0|>\s*[1-9]')
 #: ...or asserts nothing at all (the related kind: r7125+cc66.98's `n >= 0`).
-VACUOUS = re.compile(r'>=\s*0|<=\s*-1|\bTrue\b\s*\)?$')
+#: ⛭⛭ CORRECTED r7139+cc66.106, after reading this operator's OWN output adversarially on `P15`.
+#:   ** The first draft was `r'>=\s*0|<=\s*-1|\bTrue\b\s*\)?$'`, and it is why `r7129` reported
+#:   `VACUOUS` as "a separate and much cleaner signal" standing at 46 sites.  IT IS NOT.  Of those 46:
+#:   28 are a bare `True` (a narration idiom and a different question), 16 were false positives, and
+#:   ** 2 are the real class. **  This seat proposed a 46-site block to the chat seat on that number. **
+#:   ⓵ `>=\s*0` matched A DECIMAL'S LEADING ZERO, so any threshold in (0, 1) read as vacuous --
+#:       `tail_l >= 0.70 and peak_c >= 0.50 and tail_c < 0.30` was flagged for `>= 0.70`.
+#:   ⓶ `\bTrue\b\s*\)?$` matched a condition ENDING in `True`, which is the `is True` identity idiom
+#:       and a real test: 6 sites, e.g. `... and live['PO-4'][0][1] is True`.
+#:   ⓷ ** AND THE ONE THAT MATTERS: `x >= 0` IS VACUOUS ONLY WHEN `x` IS A COUNT. **  It is a real test
+#:       for everything that can go negative, and the tree is full of those: `_CRLIT >= 0` and
+#:       `_i >= 0` on `str.find` results (-1 sentinel), `mech >= 0` where
+#:       `mech = _m.start() if _m else -1` (the same sentinel without `.find`), `inner1 >= 0` on a
+#:       `sp.nsimplify` value, and `all(sp.N(e.subs(...)) >= 0 for e in _v)` -- a symbolic SIGN
+#:       constraint, which is the opposite of asserting nothing.
+#: ⇒ *So the operand decides, not the comparison: a `len(...)`, a `.count(...)`, or a name bound from
+#:   one.  `len(after) >= 0` stays flagged (`after` is a sorted set difference) and is the `P10` shape;
+#:   `mech >= 0` does not.*  ** The operator that found two defect sub-classes carried one of its own,
+#:   in the very family it was built to name, and only reading its own output on a block it had not
+#:   been built from exposed it. **
+VACUOUS_BARE = re.compile(r'^True$')
+#: a count expression, or a name this file binds from one -- the only operands `>= 0` is vacuous on
+COUNT_EXPR = re.compile(r'(?:len\s*\([^()]*(?:\([^()]*\))?[^()]*\)|\.count\s*\([^()]*\))\s*>=\s*0(?![.\d])')
+COUNT_BIND = re.compile(r'^\s*(\w+)\s*=\s*[^=\n]*(?:\blen\s*\(|\.count\s*\()', re.M)
+
+
+def vacuous(cond, count_names=()):
+    """`cond` asserts nothing of its own: a bare `True`, or `>= 0` on a COUNT (never on a value that
+    can go negative -- a `str.find` sentinel, a `Match.start()` fallback, a symbolic sign)."""
+    if VACUOUS_BARE.search(cond.strip()):
+        return True
+    if COUNT_EXPR.search(cond):
+        return True
+    return any(re.search(r'\b' + re.escape(n) + r'\s*>=\s*0(?![.\d])', cond) for n in count_names)
 
 
 def label_of(node):
@@ -102,9 +135,9 @@ def sites(path):
     return out
 
 
-def classify(lab, cond):
+def classify(lab, cond, count_names=()):
     """-> (flag, why) or (None, why-not).  *Stage 2 decides almost everything.*"""
-    if VACUOUS.search(cond) and not PRESENT.search(cond):
+    if vacuous(cond, count_names) and not PRESENT.search(cond):
         return 'VACUOUS', 'the condition asserts nothing of its own'
     _lab = re.sub(r'non-?zero', ' ', lab, flags=re.I)          # the opposite of an absence claim
     _lab = re.sub(r'asserted nowhere|printed and asserted nowhere', ' ', _lab, flags=re.I)
@@ -128,13 +161,15 @@ def main():
     for f in files:
         rel = os.path.relpath(f, ROOT)
         has_abs = False
+        #: ⓷: the count bindings are per FILE, so they are read once here and passed to `classify`
+        _counts = tuple(COUNT_BIND.findall(open(f, encoding='utf-8', errors='replace').read()))
         for ln, lab, cond in sites(f):
             keys.add((rel, lab, cond))
             if ABSENCE.search(lab):
                 has_abs = True
                 if PRESENT.search(cond):
                     naive.add((rel, lab, cond))
-            flag, why = classify(lab, cond)
+            flag, why = classify(lab, cond, _counts)
             if flag:
                 flagged.append((flag, rel, ln, lab, cond, why))
         recv += 1 if has_abs else 0
