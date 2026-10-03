@@ -130,11 +130,21 @@ def main():
     check(f'⛔ and ROOTS (papers citing no sibling): {roots or "NONE"} -- so there is NO topological '
           'reading order, and there cannot be one', not roots)
     check(f'leaves (cited by no sibling): {leaves}', len(leaves) <= 4)
-    top = [t for t, n in cited.most_common(4)]
+    # ⛔ r7143+cc66.108: `cited.most_common(4)` IS NONDETERMINISTIC HERE, and it was making this whole
+    #   receipt's output differ between runs: ** several papers tie at the maximum in-degree and
+    #   `Counter.most_common` breaks ties by insertion order, which the glob does not fix. **  Measured
+    #   three runs, three different lists -- ['P7','P6','P16','p0'], ['P6','P7','p0','P9'],
+    #   ['P6','P7','p0','P16'] -- and three different output hashes.
+    # ⇒ *The tolerance sweep compares a receipt across builds, so an unstable PRINTED list fails it even
+    #   when every condition holds.  Sorted by descending count then by name, so ties resolve the same
+    #   way every run.*  ⌗ The instability predates this round; it is fixed here because this round put
+    #   the receipt in scope and had already noticed it, and noticing without fixing is what cost the
+    #   push that found it.
+    top = [t for t, _n in sorted(cited.items(), key=lambda kv: (-kv[1], kv[0]))[:4]]
     # ⛭ r7143+cc66.108: `>= 15` was a round floor on the top in-degree that the label never names.
     #   ** The derived statement is sharper and exact: the top paper is cited by EVERY sibling, i.e. its
     #   in-degree is `len(g) - 1`. **  Measured 16 of a possible 16.
-    _maxdeg = cited.most_common(1)[0][1]
+    _maxdeg = max(cited.values())
     check(f'and four papers sit at the top of in-degree: {top} -- the first at {_maxdeg} of a possible '
           f'{len(g) - 1}, so it is cited by every sibling there is',
           len(top) == 4 and _maxdeg == len(g) - 1)

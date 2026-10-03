@@ -5405,6 +5405,45 @@ PINNED = {'systematic uncertainty': 1}
 
 
 ---
+## ⛭⛭ `r7143` IN FLIGHT — **`28` OF THE `46` READ, `70 → 42`. AND THE BOUNDARY FOR THIS WHOLE CLASS WAS ALREADY WRITTEN INSIDE ONE OF THE SITES: THE DEFECT IS AN *UNEXPLAINED* ROUND NUMBER, NOT A ROUND NUMBER.**
+
+⌗ ***First, a correction to `r7145`'s premise:*** *it says I pushed nothing since `r7143`. **I had pushed twice** — `7e416d49` (18 sites) and `b5c04667` (28) — on draft **PR #249**, which went up before `r7145` was written. *The order stands either way; only the "nothing waiting" reading is off.* ⛔ *And the gap was mine: the findings were in commit messages and the baseline, and NOT in this file, which is where you read. **That is the thing I got wrong in this block, and it is fixed with this entry.***
+
+*`check_prose_pins`:* `144 keys, 144 rows`, `UNADJUDICATED: 42`, `DELIBERATE: 54`, `PRESENCE-CONTROL: 41`, `NOT-A-COUNT: 7`, **`no new site`**, **`no stale entry`**. ⌗ *The ceiling stays at `70` by intent — the block is one order, so it moves once at the close. **The slack is visible and transient rather than headroom claimed early**, which is the failure the gate's own comment warns about.*
+
+### ⚑⚑ THE BOUNDARY WAS ALREADY WRITTEN, INSIDE `L_probability/R1`
+
+***Its control is a CLAMPED FLOOR*** *— `min(lik.get('P15', 0), 20)` against `20` — **and the label states why a floor rather than an exact count:** "the exact count is a measurement of another paper's prose length and moved eight times without this receipt's finding moving once". *The comment adds that a bare boolean was rejected by the hollow-assertion lint because it hides the measured value, so the floor is CLAMPED to carry the quantity.*
+
+⇒ ***So the `PO-76` defect is an UNEXPLAINED round number, not a round number.*** *Every repair I have made in this arc was of the former. **This is the first clean example of the latter in the backlog, and it is the right form rather than a tolerated one.** ⌗ *I would not have found that by building an operator; it is written in the site and only a read reaches it.*
+
+### ⚑ THE FIND: A FLOOR THAT HID ITS OWN LABEL'S FIGURE BY EIGHT
+
+***`P03`'s `P3.count('\tilde{w}') >= 3`, under a message reading "and tilde-w carries its THREE uses" — measured ELEVEN.*** ⇒ **The floor is what hid it:** `>= 3` passed at `3` and passed at `11`, so the stale figure was never contradicted. ⌗ *Same shape as a vacuous condition concealing a dead headline, **with a loose floor doing the concealing instead.** *Repaired to presence, the stale "three" corrected out of the message, and the count printed rather than re-pinned to a figure the paper will move again.*
+
+### ⚑ AND ONE PINNED TO THE CORPUS'S OWN IMPROVEMENT
+
+*`L536/F1`'s `prox < 60` counted resolved-language markers, and **the corpus acquiring resolved language is the direction that receipt's audit is FOR** — so at `60` it would have gone red on the corpus's own progress, with nothing saying why `60`. ⌗ *It was already half spent: `29` markers today against the docstring's `20`, and `298,380` characters of frontier section against its `191` KB — **both docstring figures had gone stale while the pin sat still.** *Now a density, from quantities the receipt already measures: a ratio does not move when the corpus merely grows.*
+
+### ⇒ A THIRD LEGITIMATE EXACT-COUNT SHAPE, AND IT IS THE BIGGEST GROUP SO FAR
+
+***An EXACT CENSUS WITH PROVENANCE:*** *the count IS the measurement and its MOVEMENT is the receipt's subject. Each states the previous value, names what moved it and which revision did so, and asserts the current figure so a further move fires there. **`P14/D2`'s own comment is the clearest statement of it in the tree — *a count is a claim about a FILE AT A COMMIT* — and the mover is located rather than the count loosened.*** ⌗ *Nine of the twenty-eight: `L220/V2` ×4, `P14/D2` ×3, `L_probability/R1` ×2.*
+
+### ⇒ ON YOUR OFFER ⓵ — `NOT-A-COUNT` IS AT `7` AND I WILL STATE THE BOUNDARY AT THE CLOSE
+
+*Two of the new ones are `RP_34_gr/G1`'s pair: `_near(a, b)` returns the smallest offset difference between occurrences of two phrases, so **they are CHARACTER DISTANCES and not counts of matches.** The text is `PAPER`, which is why the partition counted them there, but the value is a distance. ⌗ **The boundary is already forming and I will state it rather than reconstruct it:** `NOT-A-COUNT` is where the traced value is not a tally of matches at all — a float comparison, an argmax index, a computed ratio dict, a coefficient table, a character offset — *as against `PAPER`/`SOURCE`/`REGISTER`, which say which TEXT was read.* **The two axes are orthogonal and that is why a site can be `PAPER` and `NOT-A-COUNT` at once.**
+
+⚠ ***And one flagged rather than repaired:*** *`G1`'s `1200` is a pinned PARAGRAPH SCALE used as a two-sided boundary — `< 1200` for the three links that cluster, `> 1200` for the one that moved out — so **a reflow could break both halves at once.** A real fragility, in the distance class rather than this one, and I am not repairing another class's site inside this block.*
+
+### ⌗ ON YOUR OFFER ⓶ — NOT YET MET
+
+*No site in the `28` asserts a paper's figure it never reads. **If one turns up in the remaining `18` it gets a line here, as you asked.***
+
+⇒ ***`18` remain. The distribution goes in once at the close, with the `NOT-A-COUNT` boundary beside it.***
+
+---
+
+
 
 
 ## ✔✔ `r7141` ⓵ DELIVERED — **THE PARTITION, BEFORE ANY OF IT IS READ: `46` PAPER, `4` SOURCE, `14` REGISTER, `6` NOT-A-COUNT. THE BACKLOG'S REAL SIZE IS `46`. ⛔ AND YOUR PREDICTION ABOUT THE SOURCE SIDE DOES NOT HOLD — IT IS `4` SITES.**

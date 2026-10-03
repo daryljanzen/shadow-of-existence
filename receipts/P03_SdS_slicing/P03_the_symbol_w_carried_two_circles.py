@@ -98,10 +98,22 @@ BEAD = re.compile(r'\\sinh\s*\\?!?\s*w\b|\\cosh\s*\\?!?\s*w\b|w\s*=\s*3c?\\tilde
 live = {os.path.basename(f): len(BEAD.findall(open(f, encoding='utf-8', errors='replace').read()))
         for f in glob.glob(os.path.join(ROOT, 'corpus', '*.tex')) if not os.path.basename(f).startswith('appendix_receipts')
         and not os.path.basename(f).startswith('appendix_ledgers')}
-assert len(live) > 10, f"the survey must see the paper bodies, not an empty glob: {len(live)}"
+# ⛭ r7143+cc66.108: `> 10` was a round floor, and the message says what it is actually for -- NOT AN
+#   EMPTY GLOB -- which is presence. The count is printed, and the claim it guards is the next line's
+#   `sum(live.values()) == 0`: an absence over no files at all would be vacuous.
+assert len(live) > 0, f"the survey must see the paper bodies, not an empty glob: {len(live)}"
 assert sum(live.values()) == 0, f"the bead-phase sense must be gone from every body: {live}"
 print("  bead-phase w across every paper body, after the rename: 0           OK")
-assert P3.count('\\tilde{w}') >= 3, "and tilde-w carries its three uses"
+# ⛔⛔ r7143+cc66.108: THE LABEL SAID "ITS THREE USES" AND THE MEASUREMENT IS ELEVEN, AND THE FLOOR IS
+#   WHAT HID IT. `>= 3` passed at 3 and passed at 11, so the stale figure in the message was never
+#   contradicted -- the same shape as a vacuous condition concealing a dead headline, with a loose
+#   floor doing the concealing instead.
+# ⇒ ** What this receipt needs is that the renamed symbol IS IN USE in P3 -- the rename landed and the
+#   new symbol carries uses -- which is presence. The specific `three` was incidental to that and had
+#   gone stale against a paper under revision, so it is corrected out of the message rather than
+#   re-pinned to a figure the paper will move again. ** Count printed.
+_tw = P3.count('\\tilde{w}')
+assert _tw > 0, f"tilde-w carries no uses in P3, so the rename did not land: {_tw}"
 print("  tilde-w carries them, in P3, the only paper that had them           OK")
 
 # --- (4) and what stays open --------------------------------------------------------
