@@ -1,0 +1,18 @@
+
+  == planted receipts UNREGISTERED
+     does the paper edit break each seed?  S1: FAILS, S2: FAILS, S3: FAILS, S4: passes
+     run_touched_readers (_touched_pin_readers)    S1:IN   S2:out  S3:IN   S4:out
+     receipt_scope --scope suite                   S1:out  S2:out  S3:out  S4:out
+     receipt_scope --scope reads                   S1:out  S2:out  S3:out  S4:out
+
+  == planted receipts REGISTERED in INDEX.md
+     does the paper edit break each seed?  S1: FAILS, S2: FAILS, S3: FAILS, S4: passes
+     run_touched_readers (_touched_pin_readers)    S1:IN   S2:out  S3:IN   S4:out
+     receipt_scope --scope suite                   S1:IN   S2:out  S3:IN   S4:out
+     receipt_scope --scope reads                   S1:out  S2:out  S3:out  S4:out
+
+  == planted receipts REGISTERED in INDEX.md  -- WITH THE PROPOSED _touched_pin_readers PATCH (worktree only)
+     does the paper edit break each seed?  S1: FAILS, S2: FAILS, S3: FAILS, S4: passes
+     run_touched_readers (_touched_pin_readers)    S1:IN   S2:IN   S3:IN   S4:out
+     receipt_scope --scope suite                   S1:IN   S2:out  S3:IN   S4:out
+     receipt_scope --scope reads                   S1:out  S2:out  S3:out  S4:out
