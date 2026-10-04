@@ -1,4 +1,12 @@
 {
+ "claude/shadow-of-existence-setup-5tjf0b": {
+  "suite": {
+   "receipts/L221_the_bridge/B25_the_scattering_object_exists.py": {
+    "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/37235030605",
+    "since": "2aa42a91dbad653b09ec9322d9d304d167613d2f"
+   }
+  }
+ },
  "claude/shadow-of-existence-setup-6awafl": {
   "suite": {
    "receipts/L221_the_bridge/B25_the_scattering_object_exists.py": {
