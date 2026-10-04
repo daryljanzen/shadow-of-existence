@@ -7,7 +7,11 @@ ROOT = os.path.abspath(os.path.join(HERE, '..', '..', '..'))
 sys.path.insert(0, HERE)
 from perturb import run  # noqa: E402
 S = json.load(open(os.path.join(HERE, 'sites.json')))
-PINS = {
+PINS = {int(k): v for k, v in {
+    26: ['$c_{0}B(\\tfrac16,\\tfrac12)/2=3.33874$'],
+    27: ['$\\ell\\simeq28$', '$\\ell\\simeq2475$'],
+    29: ['$T(k)\\to2^{7/3}k^2e^{-k\\,s_{\\rm tot}}$'],
+}.items()} if __import__('sys').argv[1:] == ['second'] else {
     3: ['Every $\\mathbb{Z}_2$ grading splits those four $2+2$'],
     12: ['attaining $\\gamma=\\tfrac14$ across the natural ordering family'],
     16: ["the tower's frequencies are $\\mu_n^2=n(n+2)$", 'the degeneracy is $2(n-1)(n+3)$'],

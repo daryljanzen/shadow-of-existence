@@ -8,3 +8,12 @@
 28 base rc 0  RED-ON-MOVE    1 printed occurrence(s) mutated  P15_the_bead_routes_damping_survives_on_the_squashed_layer_b
        [FAIL] Ⓖ③  the paper already says the label is the ROUND sphere's spectrum -- which is the premise this receipt replaces with the squashed one's
        FAILED:
+31 base rc 0  RED-ON-MOVE    1 printed occurrence(s) mutated  P15_the_harmonic_expansion_in_the_proper_frame_is_not_bounde
+       FAILED: the paper gives the proper frame on the COMOVING label, with $r$ a function of $\tau+\chi$ and the radial and angular coefficients DIFFERENT -- which is the form 
+32 base rc 0  RED-ON-MOVE    2 printed occurrence(s) mutated  P15_the_laps_own_closure_is_a_translation_by_sqrt3_alpha_so_
+34 base rc 0  RED-ON-MOVE    1 printed occurrence(s) mutated  P15_the_layers_three_metric_obtained_by_restriction_is_timel
+       FAILED: Ⓐ① THE LINE ELEMENT THE LAYER IS RESTRICTED FROM IS LOCATED, WITH ITS SUM-DEPENDENCE -- `eq:proper-frame` and *"`$r(\tau,\chi)=r(\tau+\chi)$`, with `$\partial_\ch
+38 base rc 0  RED-ON-MOVE    1 printed occurrence(s) mutated  P15_the_seam_limit_of_the_carried_layer_with_its_chi_block_i
+       [FAIL] Ⓖ②  prop:throat's f(r_N)=f'(r_N)=0, f''(r_N)=-2Λ is in print and is reproduced above
+       FAILED:
+42 base rc 0  RED-ON-MOVE    2 printed occurrence(s) mutated  P17_the_ledgers_entropy_is_the_de_sitter_readings_and_the_ot
