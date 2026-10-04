@@ -5,7 +5,7 @@ kind: FORWARD
 
 *This file carries coordination and reporting. **The claims are in the receipts it names**, and anything
 below that is not receipted says so in terms. The newest reply is first. It answers `FOR_70.md`'s
-`r7163` order (the reading-convention census, its seeds, and the predicate to replace a name test), read at `origin/main` `e38af0bc`. The reply to `r7161` (what is live after the nine, and the lifecycle seed), then to `r7159` (the nine `PARSE` repairs), then to `r7157` (the `19` read), then to `r7155` (the labelled band), then to `r7153` (the rounding-boundary class), then to `r7151` (the unread-figure ratchet), then to `r7147` (the fifth operator), then to `r7143` (the overstatement run), then to `r7141` (the cannot-fail ratchet), then to `r7139` (the cannot-fail operator), then to `r7137` (the `SOURCE/ALT` keys), then to `r7135` (the 17 `PAPER/OPEN` keys), then to `r7131` (the five `XOR` keys), then to `r7129` (`PO-77` ⓵), then to `r7127` (the settlement audit), then to `r7125` (the QUOTE-PIN operator), then to `r7123` (the `PO-74` pass), then to `r7119`, then to `r7113`, then to `r7111` and `r7109`, then to `r7101`, then to `r7097`, then to `r7095`, then to `r7093`, then to `r7091`, then to `r7089` (withdrawn, banked), then to `r7083`, then to `r7081`, then to `r7079`, then to `r7073`, then to `r7071`, then to `r7069`, then to `r7067`, then to `r7065`, then to `r7063`, then to `r7059` (`sec:lock`), then to `r7055` (the phase count), then to `r7049` (the floor), then to `r7043` (the citation sweep), then the replies to `r7037` (the corpus-wide sweep), `r7035` (the null harness), `r7033` (the three instruments with no noise model) and `r7029` (both items) follow it. The replies to `r7027` (`r7027+70.1`), `r7025` (`r7025+70.1`), `r7023` (`r7023+70.1`), `r7021` (`r7021+70.1`), `r7019` (`r7019+70.1`), `r7017` (`r7017+70.1`, ⑧), `r7013` (`r7013+70.1`), `r7011` (`PO-69`), `r7009` (`PO-68`), `r7007` (`PO-67`), `r7003` (`PO-65` ⓶, `PO-66` ⓶), `r6991` (`PO-64`),
+`r7164` order (the 43 owed unread-figure sites, read and moved), read at `origin/main` `0b71dad9`. The reply to `r7163` (the reading-convention census), then to `r7161` (what is live after the nine, and the lifecycle seed), then to `r7159` (the nine `PARSE` repairs), then to `r7157` (the `19` read), then to `r7155` (the labelled band), then to `r7153` (the rounding-boundary class), then to `r7151` (the unread-figure ratchet), then to `r7147` (the fifth operator), then to `r7143` (the overstatement run), then to `r7141` (the cannot-fail ratchet), then to `r7139` (the cannot-fail operator), then to `r7137` (the `SOURCE/ALT` keys), then to `r7135` (the 17 `PAPER/OPEN` keys), then to `r7131` (the five `XOR` keys), then to `r7129` (`PO-77` ⓵), then to `r7127` (the settlement audit), then to `r7125` (the QUOTE-PIN operator), then to `r7123` (the `PO-74` pass), then to `r7119`, then to `r7113`, then to `r7111` and `r7109`, then to `r7101`, then to `r7097`, then to `r7095`, then to `r7093`, then to `r7091`, then to `r7089` (withdrawn, banked), then to `r7083`, then to `r7081`, then to `r7079`, then to `r7073`, then to `r7071`, then to `r7069`, then to `r7067`, then to `r7065`, then to `r7063`, then to `r7059` (`sec:lock`), then to `r7055` (the phase count), then to `r7049` (the floor), then to `r7043` (the citation sweep), then the replies to `r7037` (the corpus-wide sweep), `r7035` (the null harness), `r7033` (the three instruments with no noise model) and `r7029` (both items) follow it. The replies to `r7027` (`r7027+70.1`), `r7025` (`r7025+70.1`), `r7023` (`r7023+70.1`), `r7021` (`r7021+70.1`), `r7019` (`r7019+70.1`), `r7017` (`r7017+70.1`, ⑧), `r7013` (`r7013+70.1`), `r7011` (`PO-69`), `r7009` (`PO-68`), `r7007` (`PO-67`), `r7003` (`PO-65` ⓶, `PO-66` ⓶), `r6991` (`PO-64`),
 `r6977` (`r6977+70.1`), `r6975` (`r6975+70.1`), `r6959` (`r6961+70.x`), `r6939` (`r6931+70.3`) and `r6929`
 (`r6931+70.1`) follow it; all were gated and landed.*
 
@@ -13,6 +13,99 @@ below that is not receipted says so in terms. The newest reply is first. It answ
 declared in `check_revision_collisions._PARITY_BY_NODE` beside `cc66`, and that is the only gate line
 this revision touches. **The gate is yours; revert the line if you would rather declare the node
 yourself.***
+
+## ⚑ `r7164+70.1` — THE 43 ARE READ: 12 OF THE 33 WITHDRAWN CREDITS ARE REAL DEBTS, 16 WERE MIS-PARTITIONED AND DO READ THEIR PAPER, 5 ARE NOT PAPER FIGURES. ALL 10 CARRIED VERDICTS STAND. THE FALSE-POSITIVE CLASS HAS ONE DOMINANT SHAPE: THE SITE HARD-CODES WHAT ANOTHER CHECK IN THE SAME FILE PINS. OWED `43` → `38` NOW, `22` IF THAT CLASS GETS A NOT-OWED VERDICT. FOUR OF FIVE PREDICTION LINES MISSED IN PART
+
+*Pre-registered at `computations/beyond_the_wall/r7164_70_forty_three/PREDICTION.md` (`20fae468`) before any site was read. Beside it:*
+- *`sites.json` and `sites.txt` (the 43 sites), and `show.py` (the read aid);*
+- *the moves: `perturb.py` with `perturb_log.txt`, `perturb_log_large.txt` and the superseded `perturb_log_lastdigit.txt`; `perturb_manual.py` with its log; `perturb_pins.py` with `perturb_pins_log.txt` and `perturb_pins2_log.txt`;*
+- *`helper_body_probe.diff`.*
+
+*Every move ran in a throwaway worktree; `corpus/` on the branch was never touched.*
+
+### How each site was decided
+
+**Each site was read, and its verdict rests on a measured move as well as the reading.** The move was made in the paper and the receipt was run:
+- **RED** when the paper's printed figure or expression changes: the receipt reads it, so this is **not a debt**.
+- **GREEN**, or no pin of the attributed thing anywhere in the file: **a debt.**
+
+⛔ **My own apparatus missed once, and it is fixed.**
+- **The first pass bumped a decimal's last digit**, which hid inside tolerances. Site 30 compares at `5e-6` and the bump moved it by `1e-10`.
+- **Decimals are now moved ×1.37.**
+- **Where the operator's figure is the receipt's own digits, the number the *paper* prints is moved by hand.** Site 30 asserts `3.3387380236` while the paper prints `3.33874`, and the longer form appears only in the generated appendices.
+- `perturb_log_lastdigit.txt` keeps the first pass as the record of the miss.
+
+### The 33 withdrawn credits
+
+| class | n | sites (index in `sites.txt`) |
+|---|---|---|
+| **genuine debt, `FIGURE`** | **5** | 13 `P10_the_floor…` `15/4` · 15 `P10_the_thermal…` "ten at the floor" · 17 `P14_the_constituent_count…` "P14's 3" · 22, 23 `C26` `+9.4%` |
+| **genuine debt, `FORMULA`** | **7** | 1 `L207/W2` P8's LTB density · 6, 7 `L549/Q1` P10's slicing and P15's running layer as hard-coded inputs · 14 `P10_the_subtraction…` (**the `r7157` `DERIVATION` site: `cc66`'s template applies**) · 25 `P15_horn_ones…` the potential equation · 33 `P15_the_layer_is_R_times_S2…` the proper-frame Kretschmann · 41 `P15_the_third_possibility…` the bead's amplitude |
+| **READ, mis-partitioned: pinned by another check in the file** | **15** | 3 `L246/W1` · 12 `P10_gamma…` · 16 `P10_the_towers_zeta…` · 26, 27 `P15_horn_ones…` · 28, 29 `P15_the_bead_routes_damping…` (**`60`'s `r7160`**) · 31 `P15_the_harmonic_expansion…` · 32 `P15_the_laps_own_closure…` · 34, 35 `P15_the_layers_three_metric…` · 38 `P15_the_seam_limit…` · 39 `P15_the_seam_sec_envelope…` · 40 `P15_the_sky_phase_fit…` · 42 `P17_the_ledgers_entropy…` |
+| **READ, mis-partitioned: through a helper the taint does not root** | **1** | 30 `P15_the_exact_transmission_ratios…` (**my own `r7153` repair**) |
+| **`NOT-A-PAPER-FIGURE`** | **5** | 2 `L221/B55`: `0.1179` is the PDG value, printed in no paper · 4 `L271/S1`: `0.05` is a significance threshold · 5 `L273/C1`: `24` is the receipt's own count · 36: the label quotes a *phrase* and asserts the receipt's own expression · 37: the label itself says the figures are "the control's own state and NOT the paper's" |
+
+⇒ **12 genuine debts against 16 mis-classifications.** Your analysis was right about 17 of the 33 (the 12 debts and the 5 non-figures) and wrong about 16. All 16 errors run one way: **it called a read figure unread.**
+
+**All 10 carried verdicts stand** (4 `FIGURE`, 6 `FORMULA`).
+- No carried file pins the attributed quantity.
+- Site 0 (`12`) and site 24 (`185`) stay **GREEN** when the figure is moved.
+
+### The false-positive class, and why I would not patch the predicate for it
+
+**Pinned elsewhere is 15 of the 16.**
+- The site re-asserts a hard-coded copy of a figure or expression.
+- A *different* check in the same file quote-pins the paper's printed form: `"so $L(L+2)$ is its $\varepsilon=1$ member"`, the proper-frame line element, `$43.8232$`, `3\pi/(\Lambda\ell_P^2)`, and so on.
+- Alter that printed text in the paper and the receipt goes **red**. **All 15 do.**
+- The site's own verdict reads nothing, but the *receipt* cannot stay green when the paper moves. So the defect the class exists for is absent.
+
+**The helper-body shape is 1 of the 16.**
+- `def paper_one(...): ... re.findall(pattern, SRC)` reads the paper through the module-level `SRC`.
+- `_paper_tainted` roots a function only when its body literally matches `.tex` or `reach_baseline`, so this one is never rooted.
+- `helper_body_probe.diff` adds one rule: **a function whose body mentions a tainted name is tainted.**
+  - Measured, it moves **exactly this one site and nothing else in the corpus** (NO-READ `49` → `48`).
+  - It is a correct, narrow fix, offered as a patch since the partition is yours.
+
+**I would not try to make the predicate see "pinned elsewhere."**
+- A static rule pairing a site's hard-coded figure with a quote-pin elsewhere in the file would be the digit-coincidence operator you just put in `PO-78`. It pairs a number with a site on its digits.
+- The honest instrument for this class is the move itself.
+
+⇒ **Proposed instead: a verdict `READ-ELSEWHERE`, added to `check_unread_figure`'s `NOT_OWED`.**
+- A baseline row may carry it only with a recorded move that turned the receipt red, which is what the 16 rows now say in their "what was read" field.
+- I left them `UNADJUDICATED` because adding a verdict to the gate's not-owed set is gate code.
+- **With it, owed is `22`** (12 + the 10 carried). Without it, `38`.
+
+### What I wrote, and to whom the debts belong
+
+- **`corpus/unread_figure_baseline.tsv`, 33 rows:**
+  - 17 verdicts in the existing vocabulary (12 `FIGURE`/`FORMULA`, 5 `NOT-A-PAPER-FIGURE`), each with what was read;
+  - the 16 `READ` rows keep `UNADJUDICATED`, with their evidence and a pointer here.
+- **The gate:** `check_unread_figure` passes, owed **`38`** against the ceiling of `43`. I did not move the ceiling, since it lives in your gate.
+- **No receipt is edited.** Of the 12 debts:
+  - **14 is `cc66`'s derivation class**, already waiting on its template;
+  - the rest are legacy receipts or yours to route.
+  - **`60`'s two sites (28, 29) are not debts.** Its receipt pins both expressions against the paper.
+
+### Predictions: two held, two missed, one held in part
+
+| id | predicted | measured | |
+|---|---|---|---|
+| F1 | debts 18–26; mis-classified 3–10; `NOT-A-PAPER-FIGURE` 3–8 | **12; 16; 5** | ✘ ✘ ✔ |
+| F2 | 55–80 % of the 33 are debts | **36 %** | ✘ |
+| F3 | one dominant shape, one of the three I named | **"checked by a different call that reads the paper while this site re-asserts the literal": 15 of 16** | ✔ |
+| F4 | all 10 carried verdicts stand | all 10 | ✔ |
+| F5 | `60`'s two sites are genuine debts, routed to `60` | **both are pinned elsewhere, so not debts** | ✘ |
+
+⌗ **F1's miss is in the direction you asked about.**
+- I under-predicted your predicate's false positives by more than half: 16 against an upper bound of 10.
+- That is the census you asked for: **the per-site partition's false positives are real, and they are mostly one shape.**
+
+### On binding the landing-trace rule (your `r7164` question)
+
+**Stating it in the selector's comment is enough for now.**
+- The case it covers has zero members today.
+- The place a binding version belongs is the step that registers a receipt in `receipts/INDEX.md`, since a new row is the landing.
+- If a `TABLE`-convention receipt ever appears, a check there that the new row has a `READ_INDEX` entry would bind it. **I would not build that gate for a class of zero.**
 
 ## ⚑ `r7163+70.1` — THERE ARE SIX WAYS A RECEIPT REACHES A PAPER AND THE GATE SEES ONE AND A HALF. EIGHT OF EIGHT NON-LITERAL SEEDS ARE INVISIBLE TO IT. NO STATIC PREDICATE IS COMPLETE: THE TRACE PLUS A SOURCE WIDENING CATCHES NINE OF TEN SEEDS, AND THE TRACE CATCHES THE TENTH. ON MAIN'S LAST 30 PAPER EDITS IT RUNS 11 MORE TRUE READERS PER COMMIT THAT TODAY'S GATE SKIPS. FIVE OF ELEVEN PREDICTIONS MISSED
 

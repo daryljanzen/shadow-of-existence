@@ -1,0 +1,8 @@
+26 base rc 0  RED-ON-MOVE    1 printed occurrence(s) mutated  P15_horn_ones_carrier_is_already_the_papers_own_wavenumber_f
+       FAILED: Ⓒ① THE CONFORMAL LENGTH COMES OUT OF THE RATE AT `3.3387380236`, AGAINST THE PAPER'S OWN CLOSED FORM `$c_0B(1/6,1/2)/2$` TO `25` DIGITS -- ** so the quadrature be
+27 base rc 0  RED-ON-MOVE    5 printed occurrence(s) mutated  P15_horn_ones_carrier_is_already_the_papers_own_wavenumber_f
+       [FAIL] Ⓕ③ ⌗ AND THE GUARD, WITNESSED BY THE TWO MEASUREMENTS THEMSELVES: *the paper's exit criterion is satisfied at every wavenumber in the band and the share the kernel
+       FAILED: Ⓐ③ THE FOUR CLAUSES SECTIONS `D` AND `E` ARE MEASURED AGAINST, GATED AS AN **ENUMERATION OF THE STATES THE PAPER MAY PRODUCE** AND NOT AS A PIN -- *"lossless for 
+29 base rc 0  RED-ON-MOVE    2 printed occurrence(s) mutated  P15_the_bead_routes_damping_survives_on_the_squashed_layer_b
+       [FAIL] Ⓖ①  the bead route's closed form and its round-spectrum label are in print, and this receipt reasons FROM them
+       FAILED:
