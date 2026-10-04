@@ -47,7 +47,18 @@ disagreement is REPORTED, not adjudicated.  469 markers state no number and are 
 fifteen headline ones are read by hand, the rest are a STATED LIMIT, not a silent pass.  No prose edited -- every
 hit is routed to 66.  No physics, no re-scoring, no other seat's receipt touched.
 
-Written r7043 by node 70.  Stated for reversal.
+** r7167: A FINDING IS RETIRED BY WHAT ITS REPAIR MUST CHANGE. **  Each finding above is now re-read from the
+paper's SOURCE before anything runs: RETIRED-DRIFTED if the paper prints none of its figures any more,
+RETIRED-CITED if every figure it still prints is closed, in its own section and with no fixed window, by a group
+naming the computing receipt; otherwise LIVE, and only a LIVE finding runs its property test.  At r7167 all
+fourteen rows retire (twelve cited, two drifted) and the sweep runs no receipt at all.  The property the findings
+were stated as is untouched by their repair, so testing it again could never retire one (66, r7165/r7167).
+
+** HOST DEPENDENCY. **  A LIVE row's property test RUNS other receipts, so a module missing from the running
+environment (`60`'s container lacked `camb`, r7167) can turn that row red with no change to the tree.  The record
+printed above the verdict (`WHAT THIS VERDICT RAN`) names every run's exit code, and it is printed on a red too.
+
+Written r7043 by node 70.  Retirement and the run record added r7166-r7167.  Stated for reversal.
 """
 import glob
 import os
@@ -128,6 +139,99 @@ def has(name, num, output=True):
     return False
 
 
+# ======================================================================================================== RETIREMENT
+#: ⛭ r7167+70.1 (70): A FINDING IS RETIRED BY READING WHAT ITS REPAIR MUST CHANGE, never by re-testing the property it
+#:   was stated as (66's rule, r7167, from `cc66`'s receipt going red on its own repair).  ** The property -- absent
+#:   from the cited receipt, present in the computing one -- is untouched by the remedy, which cites the computing
+#:   receipt AT THE SITE; so until r7167 this sweep reported twelve-thirteenths of its findings live after the corpus
+#:   had discharged them (r7165). **  Two things a repair touches, both read from the paper's SOURCE with no run:
+#:     RETIRED-DRIFTED  the row's paper prints none of the finding's figures any more;
+#:     RETIRED-CITED    every figure it still prints has, at one printed occurrence in the row's section, the
+#:                      computing receipt in its CLOSING GROUP -- the first `\rcpt` group after the figure (adjacent
+#:                      markers, as the tracer groups them), up to the next sectioning command, with NO fixed window:
+#:                      66's four hand reads close at +140, +446, +516 and +1429 characters, all correct.
+#:   Otherwise LIVE, and only a LIVE finding runs its property test and the receipts that test needs.
+PAPER_FILE = {'CR_cosmology': 'CR_cosmology.tex', 'cosmogenesis': 'cosmogenesis_paper.tex',
+              'modern_parallax': 'modern_parallax.tex', 'canonical_time': 'canonical_time.tex'}
+_SECT = re.compile(r'\\(?:sub)*section\*?\{|\\paragraph\{')
+_MARK = re.compile(r'\\rcpt\{([^}]*)\}')
+
+
+def fig_re(num):
+    """the figure as the paper prints it: sign-free decimals, or `2.8e-4` / `2.8\\times10^{-4}`"""
+    n = num.lstrip('-')
+    m = re.fullmatch(r'(\d+(?:\.\d+)?)e(-?\d+)', n)
+    if m:
+        mant, ex = re.escape(m.group(1)), str(int(m.group(2)))
+        return re.compile(r'(?<![\d.])' + mant + r'(?:e' + re.escape(ex) + r'|e-0' + ex.lstrip('-')
+                          + r'|\s*\\times\s*10\^\{?' + re.escape(ex) + r'\}?)')
+    return re.compile(r'(?<![\d.])' + re.escape(n) + r'(?![\d])')
+
+
+def closing_group(t, pos):
+    """(markers, distance) of the first `\rcpt` group after `pos`, before the next sectioning command; else (None, None)"""
+    m = _MARK.search(t, pos)
+    sec = _SECT.search(t, pos)
+    if not m or (sec and sec.start() < m.start()):
+        return None, None
+    group, j = [m.group(1)], m.end()
+    for m2 in _MARK.finditer(t, j):
+        if re.fullmatch(r'[\s,;.~]*', t[j:m2.start()]):
+            group.append(m2.group(1))
+            j = m2.end()
+        else:
+            break
+    return group, m.start() - pos
+
+
+def section_span(t, sec):
+    """(start, end) of `\label{sec}`'s section: from the heading carrying the label to the next heading of the SAME
+    OR HIGHER level -- a subsection inside it does not end it (the first draft ended `sec:floor` at its first
+    `\subsection` and so read `modern_parallax`'s 0.285, closed at +1429, as LIVE).  No label: the whole paper."""
+    lab = re.match(r'(sec:[\w-]+)', sec or '')
+    if lab:
+        i = t.find('\\label{%s}' % lab.group(1))
+        if i >= 0:
+            heads = list(re.finditer(r'\\((?:sub)*)section\*?\{', t))
+            own = [h for h in heads if h.start() <= i]
+            lvl = len(own[-1].group(1)) // 3 if own else 0
+            nxt = [h.start() for h in heads if h.start() > i and len(h.group(1)) // 3 <= lvl]
+            return (own[-1].start() if own else i), (nxt[0] if nxt else len(t))
+    return 0, len(t)
+
+
+def retire(t, sec, nums, computing):
+    """(status, detail) -- see the block above.  `t` is the paper's stripped source."""
+    printed = [n for n in nums if fig_re(n).search(t)]
+    if not printed:
+        return 'RETIRED-DRIFTED', f'the paper prints none of {nums}'
+    a, b = section_span(t, sec)
+    dists = []
+    for n in printed:
+        best = None
+        for m in fig_re(n).finditer(t, a, b):
+            g, d = closing_group(t, m.start())
+            if g and any(x == computing or computing.startswith(x) for x in g):
+                best = d if best is None else min(best, d)
+        if best is None:
+            return 'LIVE', f'{n} is printed in {sec} and no closing group names `{computing[:50]}`'
+        dists.append(best)
+    return 'RETIRED-CITED', 'closing group names the computing receipt at +' + ', +'.join(map(str, dists)) + ' chars'
+
+
+def paper_text(paper):
+    return T.strip(open(os.path.join(ROOT, 'corpus', PAPER_FILE[paper]), encoding='utf-8').read())
+
+
+# ⛭ THE RULE'S OWN SELF-TEST, on a synthetic paper so it does not depend on the corpus: three states, three answers.
+_SYN = ('\\section{A}\\label{sec:syn} the ratio is $3.1415$ across the band, as computed '
+        '\\rcpt{OTHER_receipt}~\\rcpt{SYN_computing}. \\section{B} next.')
+_SELF = (retire(_SYN, 'sec:syn', ['3.1415'], 'SYN_computing')[0],
+         retire(_SYN.replace('~\\rcpt{SYN_computing}', ''), 'sec:syn', ['3.1415'], 'SYN_computing')[0],
+         retire(_SYN.replace('3.1415', 'the value'), 'sec:syn', ['3.1415'], 'SYN_computing')[0])
+STATUS = {}
+
+
 # ======================================================================================================== PART 0
 print('=' * 100)
 print('PART 0 -- THE PRE-REGISTRATION CAME FIRST; THE ONE DEVIATION IS DECLARED')
@@ -203,17 +307,26 @@ II = [
 CITED_ANY = set(n for _, n in MARK)
 ROWS = []
 uncited = set()
+check("⛭ r7167: the retirement rule sorts its own synthetic paper three ways -- cited, live, drifted",
+      _SELF == ('RETIRED-CITED', 'LIVE', 'RETIRED-DRIFTED'), _SELF)
 for paper, sec, cited, source, nums, _unc in II:
     cited = next(k for k in SRC if k.startswith(cited[:80]))
     source = next(k for k in SRC if k.startswith(source[:80]))
+    if source not in CITED_ANY:
+        uncited.add(source)
+    st, why = retire(paper_text(paper), sec, nums, source)
+    STATUS[(paper, sec, tuple(nums))] = (st, why)
+    if st != 'LIVE':
+        # ⌗ RETIRED: reported with what was read, and nothing is run for it -- the property it was stated as is
+        #   no longer the question, so its receipts' environment cannot move this verdict.
+        print(f"  [{st}] (ii) {paper} {sec}: {nums} -- {why}")
+        continue
     absent = all(not has(cited, n) for n in nums)
     # ⛭ r7166+70.1: the computing receipt's exit code counts only when it was RUN to answer -- a figure it writes as a
     #   literal is answered from source, and then no run happened whose exit code could mean anything.
     present = all(has(source, n) for n in nums) and (source not in RAN or RAN[source][0] == 0)
     ROWS.append((paper, sec, cited, source, nums))
-    if source not in CITED_ANY:
-        uncited.add(source)
-    check(f"(ii) {paper} {sec}: {nums} -- not in `{cited[:40]}...`, computed by `{source[:40]}...`"
+    check(f"(ii) LIVE {paper} {sec}: {nums} -- not in `{cited[:40]}...`, computed by `{source[:40]}...`"
           + ("  [cited NOWHERE in the corpus]" if source not in CITED_ANY else ""),
           absent and present, f"absent from cited {absent}; present in source {present}")
 # ⛭ RE-PINNED r7049: 5 -> 0.  *`r7049` landed the acceptance law in `P15` `sec:refit-bound` as
@@ -230,33 +343,43 @@ for paper, sec, cited, source, nums, _unc in II:
 check("⛭ and EVERY naming receipt is now reached by a marker -- the five that were not are, since r7049",
       len(uncited) == 0, f"{len(uncited)} distinct sources uncited")
 C59 = open(SRC['C59_the_control_reproduces_camb_and_the_height_defect_was_k_truncation'], encoding='utf-8').read()
-check("(ii) CR_cosmology sec:scope: \"validated on its control to 0.23%\" cites C59, which states 0.14% and never 0.23% "
-      "-- the 0.23% is the third-peak run's (2.195 against 2.200), the run the paper itself distinguishes from 0.14%",
-      '0.14%' in C59 and '0.23' not in C59
-      and has('P15_the_third_peak_deficit_is_radiation_driving_and_both_routes_to_the_equality_agree', '2.195'))
+_TP = 'P15_the_third_peak_deficit_is_radiation_driving_and_both_routes_to_the_equality_agree'
+st, why = retire(paper_text('CR_cosmology'), 'sec:scope', ['0.23'], _TP)
+STATUS[('CR_cosmology', 'sec:scope', ('0.23',))] = (st, why)
+if st != 'LIVE':
+    print(f"  [{st}] (ii) CR_cosmology sec:scope: ['0.23'] (the C59 marker) -- {why}")
+else:
+    check("(ii) LIVE CR_cosmology sec:scope: \"validated on its control to 0.23%\" cites C59, which states 0.14% and "
+          "never 0.23% -- the 0.23% is the third-peak run's (2.195 against 2.200), the run the paper itself "
+          "distinguishes from 0.14%", '0.14%' in C59 and '0.23' not in C59 and has(_TP, '2.195'))
 
 # ======================================================================================================== PART (iii)
 print('\n' + '=' * 100)
 print("PART (iii) -- ONE: numbers no receipt in the repository computes")
 print('=' * 100)
 AD = 'P10_the_adiabatic_residual_at_low_n_is_bounded_by_the_towers_own_floor'
-ad_out, ad_rc = run(AD)
-anywhere = []
-for p in glob.glob(os.path.join(ROOT, '**', '*.py'), recursive=True):
-    if '/.git/' in p or os.path.basename(p) == os.path.basename(__file__):
-        continue
-    t = open(p, encoding='utf-8', errors='replace').read()
-    if re.search(r'2\.8\d*e-0?4|5\.9\d*e-0?6', t):
-        anywhere.append(os.path.relpath(p, ROOT))
-check("(iii) canonical_time: \"2.8e-4 in amplitude at n=2, 5.9e-6 at n=3\" -- in no script in the repository and "
-      "not in the cited receipt's run",
-      not anywhere and ad_rc == 0 and not T.matches('2.8e-4', vals(ad_out)) and not T.matches('5.9e-6', vals(ad_out)),
-      anywhere or 'nowhere')
-check("    and the cited receipt's own table gives 7.922e-05 and 2.422e-06 at n=2 and n=3",
-      '7.922e-05' in ad_out and '2.422e-06' in ad_out)
-check("    ⌗ REPORTED, not adjudicated: its printed \"7.9e-08 in power\" is a literal, and its own computed n=2 power "
-      "is 6.276e-09",
-      'print("  7.9e-08 in power.' in open(SRC[AD], encoding='utf-8').read() and '6.276e-09' in ad_out)
+st, why = retire(paper_text('canonical_time'), None, ['2.8e-4', '5.9e-6'], AD)
+STATUS[('canonical_time', '-', ('2.8e-4', '5.9e-6'))] = (st, why)
+if st != 'LIVE':
+    print(f"  [{st}] (iii) canonical_time: ['2.8e-4', '5.9e-6'] -- {why}")
+else:
+    ad_out, ad_rc = run(AD)
+    anywhere = []
+    for p in glob.glob(os.path.join(ROOT, '**', '*.py'), recursive=True):
+        if '/.git/' in p or os.path.basename(p) == os.path.basename(__file__):
+            continue
+        t = open(p, encoding='utf-8', errors='replace').read()
+        if re.search(r'2\.8\d*e-0?4|5\.9\d*e-0?6', t):
+            anywhere.append(os.path.relpath(p, ROOT))
+    check("(iii) canonical_time: \"2.8e-4 in amplitude at n=2, 5.9e-6 at n=3\" -- in no script in the repository and "
+          "not in the cited receipt's run",
+          not anywhere and ad_rc == 0 and not T.matches('2.8e-4', vals(ad_out)) and not T.matches('5.9e-6', vals(ad_out)),
+          anywhere or 'nowhere')
+    check("    and the cited receipt's own table gives 7.922e-05 and 2.422e-06 at n=2 and n=3",
+          '7.922e-05' in ad_out and '2.422e-06' in ad_out)
+    check("    ⌗ REPORTED, not adjudicated: its printed \"7.9e-08 in power\" is a literal, and its own computed n=2 power "
+          "is 6.276e-09",
+          'print("  7.9e-08 in power.' in open(SRC[AD], encoding='utf-8').read() and '6.276e-09' in ad_out)
 
 # ======================================================================================================== PART counts
 print('\n' + '=' * 100)
@@ -277,13 +400,9 @@ check("⛔ the limits are written: qualitative markers are a stated limit, the (
       "and every hit is routed", 'STATED LIMIT, not a silent pass' in HDR and 'REPORTED, not adjudicated' in HDR
       and 'every hit is routed to 66' in HDR)
 
-print('\n' + '=' * 100)
-if FAILS:
-    print(f"VERDICT: {len(FAILS)} CHECK(S) FAILED")
-    for f in FAILS:
-        print(f"  - {f}")
-    raise SystemExit(1)
 # ======================================================================================================== THE RECORD
+# ⛔ r7167+70.1: MOVED ABOVE THE FAILURE EXIT.  r7166 printed it after `raise SystemExit(1)`, so a red run -- the
+#   one run the record exists for -- exited before printing it.  Found by r7167's own seed (seeds_log.txt, T4a).
 print('\n' + '=' * 100)
 print('WHAT THIS VERDICT RAN (r7166+70.1) -- every subprocess, and where each (ii) figure was answered')
 print('=' * 100)
@@ -294,9 +413,17 @@ print(f"    {len(RAN)} run(s), {sum(v[1] for v in RAN.values()):.0f}s in all; no
 for paper, sec_, cited, source, nums in ROWS:
     print(f"    (ii) {paper} {sec_}: " + ', '.join(
         f"{n} cited:{WHERE.get((cited, n), '-')} computing:{WHERE.get((source, n), '-')}" for n in nums))
-print("VERDICT: ALL PASS -- no headline marker cites the wrong receipt; below the headline, twelve (ii) -- ten in the")
-# ⌗ *the banner asserted the clause the pin above withdrew.  A verdict line that outlives its own
-#   check is the harder half of a stale pin: the gate goes green and the sentence stays wrong.*
-print("         acoustic comparison -- and one (iii).  ⛭ Since r7049 every one of their computing "
-      "receipts\n         IS reached by a marker: what lapsed is the aggravating clause, not the "
-      "twelve hits or the one.")
+print('\n' + '=' * 100)
+if FAILS:
+    print(f"VERDICT: {len(FAILS)} CHECK(S) FAILED")
+    for f in FAILS:
+        print(f"  - {f}")
+    raise SystemExit(1)
+_live = [k for k, (st, _w) in STATUS.items() if st == 'LIVE']
+_ret = {x: sum(1 for st, _w in STATUS.values() if st == x) for x in ('RETIRED-CITED', 'RETIRED-DRIFTED')}
+print(f"    findings: {len(STATUS)} rows -- LIVE {len(_live)}, RETIRED-CITED {_ret['RETIRED-CITED']}, "
+      f"RETIRED-DRIFTED {_ret['RETIRED-DRIFTED']}")
+# ⌗ r7167: the banner states what the rows above measured, not the r7043 count -- a verdict line that outlives
+#   its own check is the harder half of a stale pin (the r7049 lesson, kept).
+print("VERDICT: ALL PASS -- no headline marker cites the wrong receipt; of the r7043 findings below the headline, "
+      f"{len(_live)} live and {len(STATUS) - len(_live)} retired by what the paper now prints and cites.")
