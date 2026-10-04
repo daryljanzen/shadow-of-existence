@@ -9,8 +9,13 @@ and $1.58$ per bin and $1.57$ times are EXACT.
 FIGURES ARE PER-BIN $\chi^{2}$. **  The computing receipt says `2.56x as-computed`, with the `x`.
 *Measured here: the as-computed pair is $212.9$ / $545.8$, so the RATIO is $2.56$ and the arm's
 as-computed figure PER BIN is $2.95$.*  ⛔ ** And the paper states the computed arm at $2.98$ per bin
-three sentences earlier**, so a reader who carries that figure into "the computed spectrum sits at
-$2.56$ on the same bins" meets what looks like the same quantity twice with two values.
+three sentences earlier**, so a reader who carried that figure into "the computed spectrum sits at
+$2.56$ on the same bins" met what looked like the same quantity twice with two values.
+
+** ⌗ REPAIRED IN PRINT AT `r7167`: the sentence now reads "sits at $2.56$ TIMES IT on the same
+bins", and this receipt's own locator requires the word. **  *So the finding stands as a finding and
+the receipt is the thing that detects its discharge -- which it could not do while it read a
+sentence the repair would break.*
 
 *** THE RULE THIS IS AN INSTANCE OF IS THE CORPUS'S OWN, REGISTERED AT `r7165` FROM THIS SEAT'S
 `Ⓕ③` LABEL: a label that cannot be checked against the wrong quantity is the only kind that cannot
@@ -95,9 +100,15 @@ print(f"  sec:refit-bound located at character {_lab}, {len(SECTION)} characters
 
 LENSED = (r"the control returns \$\\chi\^\{2\}=([0-9.]+)\$, or \$([0-9.]+)\$ per bin, and this "
           r"arm \$([0-9.]+)\$, or \$([0-9.]+)\$ per bin: \\emph\{the arm sits at \$([0-9.]+)\$ times")
+# The `times it` in this pattern is the r7167 REPAIR, and reading it is how this receipt
+# detects its own finding having been fixed.  Before r7167 the paper read `sits at $2.56$ on
+# the same bins`; the word is what this receipt found missing, so the locator now requires it
+# and goes RED if it is ever dropped again.  *A finding receipt whose locator does not carry
+# the repair cannot tell a discharged finding from a live one -- which is the r7165 blindness
+# in the register, arriving here.*
 REFIT = (r"the control settles at \$([0-9.]+)\$ in \$\\chi\^\{2\}\$ per bin and this arm at "
          r"\$([0-9.]+)\$: \\emph\{the arm at \$([0-9.]+)\$ times the control's distance, where the "
-         r"computed spectrum sits at \$([0-9.]+)\$ on the same bins\}")
+         r"computed spectrum sits at \$([0-9.]+)\$ times it on the same bins\}")
 
 PAPER = {}
 for name, pat, keys in (('the lensed pair', LENSED,
@@ -209,15 +220,16 @@ as_bin = S['grid base']['ab']
 print(f"""
   The sentence reads: *the control settles at {PAPER['rf_bin_ctl']} in chi^2 per bin and this arm at
   {PAPER['rf_bin_arm']}: the arm at {PAPER['rf_ratio']} times the control's distance, where the computed spectrum
-  sits at {PAPER['as_computed']} on the same bins.*
+  sits at {PAPER['as_computed']} times it on the same bins.*   <- `times it` is the r7167 repair, and the
+  locator above REQUIRES it, so this receipt goes red if the word is ever dropped again.
 
   ** ON THOSE BINS, IN THAT CONFIGURATION, THE COMPUTED PAIR IS {S['grid base']['c']:.1f} AND {S['grid base']['a']:.1f}. **
      their ratio, arm over control  ->  {as_ratio:.4f}  ->  {round(as_ratio, dp)}
      the arm's figure PER BIN       ->  {as_bin:.4f}  ->  {round(as_bin, dp)}
 
   ⇒ *** SO {AS} IS THE RATIO.  The computing receipt prints it `{round(as_ratio, dp)}x as-computed`, with the x,
-  and the paper drops it -- in the one place in the sentence where every other figure is a chi^2 per
-  bin and where the reader has just been handed two of them. ***""")
+  and the paper dropped it -- in the one place in the sentence where every other figure is a chi^2
+  per bin and where the reader has just been handed two of them.  IT CARRIES IT AGAIN AT `r7167`. ***""")
 check(f"the paper's {AS} IS the as-computed ratio, at the paper's precision",
       round(as_ratio, dp) == AS)
 check(f"the paper's {AS} is NOT the as-computed per-bin figure, which is {round(as_bin, dp)}",
@@ -226,10 +238,11 @@ check("the two readings are far enough apart that the wrong one is not harmless 
       f"({abs(as_bin - AS) / AS:.1%} of the figure)", abs(as_bin - AS) / AS > 0.10)
 
 print(f"""
-  ⛔ ** AND THE WRONG READING IS NOT ONLY AVAILABLE, IT IS PRIMED. **  Three sentences earlier the
+  ⛔ ** AND THE WRONG READING WAS NOT ONLY AVAILABLE, IT WAS PRIMED. **  Three sentences earlier the
   same section states the computed arm at {PAPER['bin_arm']} per bin ({S['L2000']['a']:.1f} over {S['L2000']['n']} bins, lensed).  *A reader
-  carrying that figure into "the computed spectrum sits at {AS} on the same bins" meets what reads as
-  one quantity with two values -- and nothing in the sentence says which it is.*
+  carrying that figure into "the computed spectrum sits at {AS} on the same bins" met what read as
+  one quantity with two values -- and nothing in the sentence said which it was.*  ⌗ *With the
+  word restored the two readings cannot be confused, which is why one word was the whole repair.*
 
   ⌗ ** THE {round(as_bin, 2)}-AGAINST-{round(S['L2000']['ab'], 2)} GAP IS CONFIGURATION AND NOT DISAGREEMENT, WHICH IS WORTH SAYING
   BECAUSE IT IS THE SAME CLAIMED QUANTITY ON THE SAME 185 BINS. **  The refit grid runs at
@@ -251,13 +264,15 @@ print(f"""
   corpus quotes chi^2 on, and {PAPER['rf_bin_arm']} / {PAPER['rf_bin_ctl']} reproduces at the verified minimum.  *The citation
   sweep's finding was a citation finding and the numbers behind it are sound.*
 
-  ⇒ ** WHAT IS WRONG IS ONE FIGURE'S QUANTITY AND NOT ITS VALUE. **  `{AS}` is right as a ratio and
-  wrong where it sits.  The repair is one word: the sentence's other two ratios both say "times".
-  *P15's prose is the chat seat's, so this is routed and not edited.*
+  ⇒ ** WHAT WAS WRONG WAS ONE FIGURE'S QUANTITY AND NOT ITS VALUE. **  `{AS}` is right as a ratio
+  and was wrong where it sat.  The repair was one word -- the sentence's other two ratios both say
+  "times" -- and it is in print at `r7167`.  *The prose is the chat seat's, so this was routed and
+  not edited; the chat seat took it, and repaired this locator in the same pass, which is the one
+  edit a seat may make to another seat's receipt: the one its own edit broke.*
 
   ⌗ ** AND THE ROW IS CLEAN. **  `INDEX.md` carries "1.57 times the control", with the word, so the
   generated appendix carries it too.  *At `r7165` the row was the thing that lost the quantity and
-  the paper inherited it; here the row holds it and the prose does not -- so the one-state rule has
+  the paper inherited it; here the row held it and the prose did not -- so the one-state rule has
   two failure directions, and a check that compares the row against the receipt sees neither this
   one nor the reader.*""")
 

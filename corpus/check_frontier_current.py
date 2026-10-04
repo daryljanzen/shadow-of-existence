@@ -38,8 +38,25 @@ def newest_revision(text):
 
 
 def runway_blocks(gen):
+    """A runway block ends at the next DICT KEY, and a dict key is `'PO-n': (` and nothing else.
+
+    ⛭ r7167: THIS FUNCTION USED TO END A BLOCK AT ANY CONTINUATION STRING STARTING `'PO-`.
+      ** The runway is a dict of long prose written as adjacent string literals, so a sentence that
+      happens to break across lines with `PO-69` at the start of the next one closed the block there
+      and the gate read the stump. **  Measured when it happened: `PO-78`'s runway was cut at
+      `3,753` of `59,235` characters -- the whole of this revision's text and more -- and the gate
+      reported the runway CURRENT, correctly, because `r7167` appeared on the line BEFORE the cut.
+      ⇒ *** SO IT WAS BLIND AND NOT YET WRONG, WHICH IS THE ONLY DIFFERENCE FROM THE r7164 CUT
+          IN `register_rows` ABOVE -- the same gate, the same failure, the other input, one
+          revision later. ***  ⌗ *A gate that reads a stump gives a true verdict until the
+      revision stamp moves past the cut, and then gives a false one with no new defect to blame.*
+      ⌗ The fix is to require the KEY form in the lookahead rather than a quote and two letters:
+      prose cannot imitate `'PO-\\d+':\\s*\\(` without being a key.  *Rewording the sentence that
+      tripped it would have been the other repair available, and it is the wrong one: the gate must
+      not be fragile to what a register row says.*
+    """
     out = {}
-    for m in re.finditer(r"'(PO-\d+)':\s*\(.*?\n(?=\s*'PO-|\s*\}\n)", gen, re.S):
+    for m in re.finditer(r"'(PO-\d+)':\s*\(.*?\n(?=\s*'PO-\d+':\s*\(|\s*\}\n)", gen, re.S):
         out[m.group(1)] = m.group(0)
     return out
 
