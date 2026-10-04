@@ -341,6 +341,48 @@ def main():
                         hits.add(path)
                         break
 
+    # ⛭⛭⛭ AND THE FOURTH HALF, ADDED r7169 BECAUSE THIS GATE CANNOT SELECT AN ABSENCE AND `main`
+    #   WAS RED FOR TWO REVISIONS THAT THE GATE ITSELF PUSHED.
+    #   Every half above asks whether a receipt's literal appears in a CHANGED line.
+    #   ** An assertion about an ABSENCE has no sentence to change, so no edit can ever select it. **
+    #   At `r7167` the gate wrote `Regge--Wheeler` into `CR_cosmology.tex` for an unrelated purpose and
+    #   `B25_the_scattering_object_exists`, which asserted that string appears ZERO times in the papers,
+    #   went red.  This scope reported green at `r7167` and again at `r7168`; CI's plain suite found it.
+    #   ⇒ *The class is the CORPUS-WIDE READER: a receipt that globs `corpus/*.tex` rather than naming
+    #   one paper, so that ANY paper edit can falsify it.  It is selected whenever any `.tex` changes,
+    #   with no literal test, because the literal test is exactly what cannot see it.*
+    #   ⌈ ** MEASURED BEFORE THE CHANGE: 47 of 973 registered receipts, and all 47 run in 33
+    #   receipt-seconds -- about ten seconds of wall at four at a time. **  So there is no affordability
+    #   argument here, which is the `r7155` bar this script is held to: the two-revision red was an
+    #   omission and not a trade.
+    #   ⌗ *And the pre-registration predicted 1--3 of the 47 would already be red on `main` besides
+    #   `B25`.  MEASURED: ZERO.  Reported as a miss -- the class had been invisible for the selector's
+    #   whole life and had broken exactly once, so this arm is mostly prospective.*
+    #   ⛔⛔ AND IT WAS INVISIBLE TWICE OVER, WHICH IS THE PART WORTH CARRYING:
+    #   `B25`'s two adjudicated keys are `"W=0 at every horizon"` and
+    #   `"superpotential W=lambda sqrt(f)/r"`, and NONE of its 44 source literals of `MIN` length or
+    #   more appears in `r7167`'s 19,400 characters of changed lines -- so every half above was
+    #   correctly silent.  ** The string the receipt actually asserted about is `Regge`, five
+    #   characters, below this file's own `MIN = 8` floor. **  ⇒ *The guard that keeps a short literal
+    #   from matching too much is exactly what hid a five-character claim, so widening `MIN` is not the
+    #   repair -- the repair is to stop asking about literals for a receipt whose subject is the whole
+    #   corpus.*
+    TEX_GLOB = re.compile(r'glob[^\n]{0,200}?\*\.tex', re.S)
+    if any(n.endswith('.tex') for n in names):
+        for root, _dirs, files in os.walk('receipts'):
+            for fn in files:
+                if not fn.endswith('.py'):
+                    continue
+                path = os.path.join(root, fn)
+                if path in hits:
+                    continue
+                try:
+                    src = io.open(path, encoding='utf-8', errors='replace').read()
+                except OSError:
+                    continue
+                if TEX_GLOB.search(src):
+                    hits.add(path)
+
     for h in sorted(hits):
         print(h)
     return 0
