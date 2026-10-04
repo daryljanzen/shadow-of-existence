@@ -120,7 +120,22 @@ REPORTED_ONLY = {'READS-PAPER'}
 #   ISOTROPIC LIMIT, so `inline` refused the bare pattern. **  The whole expression is read and the
 #   limit is applied to the PARSED side as well as to the receipt's own, with a non-vacuity control
 #   asserting the paper's expression is not already isotropic.  `-6H^2` is typed nowhere.
-CEILING = 12
+# ⛭ r7163+cc66.132: 12 → 10, closing the nine-site DERIVATION block -- and ** ONE OF THE TWO IS NOT A
+#   REPAIR AND THE COUNT NOW UNDERSTATES THE DEBT BY ONE. **  In
+#   `P10_the_subtraction_is_at_operator_dimension...`: the section's order rule `2k-4` is now PARSED and
+#   then solved (`k=3`, dimension six) with a control -- that one is node 70's site, routed to cc66 at
+#   `r7159+70.1` and taken through the same template per `r7161`.
+#   ⛔ The second site, `(i) the interacting quartic energy is EXACTLY (l_P/a)^2 ...`, is ** NAMED AND
+#   NOT REPAIRED **: the paper does not state `(\ell_P/a)^2`, it writes
+#   `a^{-1}\sum_j f_j(\ell_P/a)^{j}`, so the figure is that expansion's `j=2` TERM.  Measured rather
+#   than argued -- `inline` on `(\ell_P/a)` returns one match, part of a longer expression, since it is
+#   followed by `^{j}`; and a `\sum` with a free index is not a closed form this dialect holds.
+#   ⇒ ** IT COUNTS AS `READS-PAPER` ONLY BECAUSE THE FILE OPENS THE PAPER. **  This gate reads the
+#   partition off the FILE, so a repair elsewhere in the same file retired a site whose attribution was
+#   never checked.  *cc66.123 and .124 showed this inflating the apparent repair count; here it LOSES a
+#   debt, which is the worse direction.*  The row says so in its own note and the site is owed a read.
+#   ⌈ Routed rather than patched: making the partition per-site is this gate's design and not mine.
+CEILING = 10
 
 
 def read_baseline():

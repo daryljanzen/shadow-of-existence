@@ -180,3 +180,58 @@ r7161+cc66.128 -- FOURTH PASS: 8 of 9, the LIMIT form, and a SILENT WRONG ANSWER
 
   REMAINING: 1 of 9 -- the (l_P/a)^2 scaling in P10_the_subtraction_is_at_operator_dimension, where
   node 70's `2k-4` site also lives.  Per r7161's one-template-rather-than-two they go together.
+
+--------------------------------------------------------------------------------------------------
+r7163+cc66.132 -- THE BLOCK CLOSES: 8 of 9 repaired, the 9th NAMED, and 70's site done in the same pass
+
+  FINAL: 8 of the 9 DERIVATION sites read their paper and assert agreement under the stated
+  operation.  The 9th is NAMED and not repaired.  Node 70's `2k-4` site, in the same receipt as the
+  9th, is DONE through the same template -- one template, as r7161 asked.
+  check_unread_figure OWED 31 -> 10 across the block.  Fast job green at every step.
+
+  ⓵ 70'S SITE, by the same instrument: the section's order rule is PARSED (`2k-4`, 1 kept and 1
+  skipped as part of a longer expression) and then SOLVED -- k = 3, operator dimension six -- with a
+  control that a rule reading `2k` would give k = 1 and dimension two.  The receipt already INVERTED
+  the rule rather than hard-coding six, which is why it was DERIVATION and not PARSE: what it carried
+  was the RULE, and now the rule comes out of the paper.
+
+  ⓶ THE 9th IS NAMED, AND THE REASON IS MEASURED RATHER THAN ARGUED.
+      `(i) the interacting quartic energy is EXACTLY (l_P/a)^2 times the free tower's scale`
+      The paper does not state `(\ell_P/a)^2`.  It writes  $a^{-1}\sum_j f_j(\ell_P/a)^{j}$  -- so the
+      figure is that expansion's j=2 TERM.  `inline` on `(\ell_P/a)` returns 1 match, EVERY ONE part
+      of a longer expression, because it is followed by `^{j}`; and a `\sum` with a free index is not
+      a closed form this dialect can hold.
+      => This is the condition the PREDICTION set for naming a site rather than widening the template
+      until it fits.  What the check asserts is unchanged -- the ratio of two scales the file derives
+      -- so nothing is weaker than before; what is absent is a paper-side read, absent because the
+      paper states a SERIES and not a term.
+
+  ⓷ ⛔ AND THE GATE'S COUNT NOW UNDERSTATES THE DEBT BY ONE, WHICH IS THE BLOCK'S LAST FINDING.
+      That 9th site is recorded READS-PAPER **only because the FILE opens the paper**, for the repair
+      beside it.  check_unread_figure reads the partition off the FILE, so a repair elsewhere in one
+      file retires a site whose attribution was never checked.
+      ** cc66.123 and .124 showed this inflating the apparent repair count by one each; here it LOSES
+      a debt, which is the worse direction. **  The row carries that in its own note, the ceiling
+      comment carries it, and making the partition per-site is the gate's design and is routed.
+
+  PREDICTIONS, FINAL STATE
+   Q1  HOLDS for 8, REFUTED for 2 and both refutations were worth more than a repair: `-6H^2` needed
+       the limit form (done), `(\ell_P/a)^2` needs a series the dialect cannot hold (named).
+   Q2  HOLDS.  Every repaired receipt exits 0 with its checks plus the new controls.
+   Q3  ** DOES NOT HOLD, AND IS REPORTED AS THAT. **  Five substitution controls across the block and
+       NOT ONE caught a wrong substitution that would otherwise have passed.  The control is honest
+       bookkeeping here; it is the difference between asserting two polynomials agree and asserting
+       that the stated re-parameterisation relates them, and no claim is made beyond that.
+   Q4  OWED 31 -> 10.
+   Q5  HOLDS, and the perturbation test broke the INSTRUMENT rather than a receipt twice.
+   Q6  HOLDS.  No receipt's own measurement or tolerance changed anywhere in the block.
+
+  INSTRUMENT DEFECTS FOUND BY THE BLOCK, all in paper_formula, all mine from r7157, all fixed:
+    · the boundary rule was written on one side only -- `(n-1)(n+3)` read as the paper's when both
+      occurrences sit inside `2(n-1)(n+3)`;
+    · `X_{+}` and `X_{-}` both collapsed to `X_`, so `\alpha_{+}-\alpha_{-}` parsed as IDENTICALLY
+      ZERO (latent, not active: all 16 receipts re-run to show it);
+    · the `\dot` guard admitted `\dot{(ab)}` as `(ab)_dot`;
+    · and two refusal MESSAGES described the wrong condition.
+  ** Four of the six were in the reporting and two in the logic.  Every one was found by testing the
+  instrument against the next site before using it there, and none by a paper. **

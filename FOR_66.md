@@ -8787,3 +8787,49 @@ not take that route when I had the file open.*
 said `PO-82` was missing: `⚠ CONTRADICTED`, six pairs, four lines, `nothing it reads differs between the
 two`. ⇒ *`PO-82`'s discharge and this routing are the same object seen from two ends — the row asks why
 one process reported two things, and the answer is that two processes wrote and read one file.*
+
+## ⛭⛭⛭ `cc66.132` — **THE NINE-SITE `DERIVATION` BLOCK CLOSES**: 8 repaired, the 9th named, `70`'s site done in the same pass
+
+*`OWED` 31 → **10** across the block. Fast job green at every step. Full outcome against every
+pre-registered prediction in `r7161_cc66_nine_derivation/OUTCOME.txt`.*
+
+**⓵ `70`'s site is done through my template, so there is one template and not two.** The section's
+order rule is **parsed** (`2k-4`, 1 kept and 1 skipped as part of a longer expression) and then
+**solved** — `k = 3`, operator dimension six — with a control that a rule reading `2k` would give
+`k = 1`. ⌗ *The receipt already inverted the rule rather than hard-coding six, which is exactly why it
+was `DERIVATION` and not `PARSE`: what it carried was the RULE. Now the rule comes out of the paper.*
+
+**⓶ The 9th is NAMED, and the reason is measured.** `(i) the interacting quartic energy is EXACTLY
+(l_P/a)^2 …` — **the paper does not state `(\ell_P/a)^2`.** It writes
+`$a^{-1}\sum_j f_j(\ell_P/a)^{j}$`, so the figure is that expansion's **`j=2` term**. `inline` on
+`(\ell_P/a)` returns *1 match, every one part of a longer expression* (it is followed by `^{j}`), and a
+`\sum` with a free index is not a closed form the dialect holds. ⇒ *The pre-registration's condition
+for naming rather than widening. What the check asserts is unchanged — the ratio of two scales the file
+derives — so nothing is weaker; what is absent is a paper-side read, and it is absent because the paper
+states a **series** and not a term.*
+
+### ⛔ ⓷ And the block's last finding is that your gate's count now **understates** the debt by one
+
+That 9th site is recorded `READS-PAPER` **only because the FILE opens the paper**, for the repair beside
+it. `check_unread_figure` reads the partition off the **file**, so a repair elsewhere in one file
+retires a site whose attribution was never checked.
+
+⇒ ***`cc66.123` and `.124` showed this inflating the apparent repair count by one each; here it LOSES a
+debt, which is the worse direction.*** The row says so in its own note and the ceiling comment carries
+it, **but the gate's `OWED` is now 10 where the honest figure is 11.** ⌗ *Making the partition per-site
+is that gate's design, so it is routed and not patched. It is the third instance of one mechanism and
+the first that costs a debt rather than a credit.*
+
+### ⌗ The two standing reports, neither dressed up
+
+**`Q3` does not hold.** Five substitution controls across the block and **not one caught a wrong
+substitution that would otherwise have passed.** They are the difference between asserting two
+polynomials agree and asserting that the stated re-parameterisation relates them — and no claim is made
+beyond that. *Pre-registered that I would say this, and saying it.*
+
+**Six instrument defects, all in `paper_formula`, all mine from `r7157`, all fixed** — the one-sided
+boundary rule; `X_{+}`/`X_{-}` collapsing to `X_` so a difference parsed as identically zero (latent,
+with all 16 receipts re-run to show it); the `\dot` guard admitting `\dot{(ab)}`; and two refusal
+messages describing the wrong condition. ⇒ ***Four were in the reporting and two in the logic. Every
+one was found by testing the instrument against the next site before using it there, and not one by a
+paper.***

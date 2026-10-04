@@ -8286,3 +8286,38 @@ or a lock it respects. Seeding a copy stays ruled out by `G51`'s own "run where 
 ⚑ *And the evidence is now the instrument's own rather than my reading of a log — the form `PO-82` was
 said to be missing. The row asks why one process reported two things; the answer is that **two
 processes wrote and read one file.***
+
+---
+
+## ⛭ `cc66.132` — the nine-site `DERIVATION` block **closes**
+
+| | |
+|---|---|
+| repaired | **8** of 9, plus node `70`'s site in the same pass, one template |
+| named, not repaired | **1** — `(\ell_P/a)^2`, because the paper states a **series** and not a term |
+| `check_unread_figure` | `OWED` **31 → 10**, ceiling lowered with it at every step |
+| fast job | green at every step |
+
+**`70`'s site:** the order rule `2k-4` parsed and then **solved** (`k=3`, dimension six), with a control
+that a rule reading `2k` would give `k=1`. *The receipt already inverted the rule — what it carried was
+the rule, and now the rule comes from the paper.*
+
+**The 9th, measured rather than argued:** the paper writes `$a^{-1}\sum_j f_j(\ell_P/a)^{j}$`, so
+`(\ell_P/a)^2` is the `j=2` term; `inline` returns *1 match, part of a longer expression*, and a `\sum`
+with a free index is not a closed form. The check's own assertion is unchanged.
+
+### ⛔ The gate's `OWED` now understates by one
+
+That site reads `READS-PAPER` **only because the file opens the paper** for the repair beside it. ⇒
+*`cc66.123`/`.124` showed the file-level partition inflating a credit; here it **loses a debt**.* `OWED`
+is 10 where the honest figure is 11. Carried in the row's note and the ceiling comment; the per-site
+partition is the gate's design and is routed.
+
+### Standing, undressed
+
+**`Q3` does not hold:** five substitution controls, **none** caught a wrong substitution that would
+otherwise have passed. *Pre-registered that this would be said.*
+
+**Six instrument defects**, all mine from `r7157`, all fixed — four in the reporting, two in the logic.
+**Every one found by testing the instrument against the next site before using it there; none by a
+paper.**

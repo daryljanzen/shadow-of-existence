@@ -95,6 +95,10 @@ none is declined -- nine of sixteen stands.
 """
 import time
 import sympy as sp
+import os, sys
+_SHERE = os.path.dirname(os.path.abspath(__file__))
+sys.path.insert(0, os.path.join(_SHERE, '..', '..', 'corpus'))
+import paper_formula as pf
 
 t_all = time.time()
 CHECKS = []
@@ -133,15 +137,43 @@ head("B.  ⛭⛭⛭ THE IDENTIFICATION, PINNED THREE INDEPENDENT WAYS: OPERATOR 
 free_scale = hb/a                                  # the free tower's S/a, used as filed
 int_scale = sp.simplify(kap*hb**2/a**3)            # r7060's scale
 ratio = sp.simplify((int_scale/free_scale).subs(kap*hb, lP**2))
+#: ⛔ r7163+cc66.132: ** THIS SITE IS NAMED AND NOT REPAIRED, and the reason is measured. **  The nine
+#: `DERIVATION` sites were to read their paper-side figure; this one cannot, because the paper does not
+#: state `(\ell_P/a)^2`.  It writes the energy as `$a^{-1}\sum_j f_j(\ell_P/a)^{j}$` -- a SUM over
+#: `j` -- so `(\ell_P/a)^2` is that expansion's `j=2` TERM and not a figure on its own.
+#: ⌗ Measured, not argued: `paper_formula.inline` on `(\ell_P/a)` returns `1 match, EVERY ONE part of
+#: a longer expression`, because the occurrence is followed by `^{j}`.  And the sum itself is not an
+#: expression this dialect can hold -- `\sum` with a free index is not a closed form.
+#: ⇒ *That is the condition the pre-registration set for NAMING a site rather than widening the
+#: template until it fits: the paper-side read would need the sum, and a pattern that took
+#: `(\ell_P/a)` alone would attribute a term of an expansion to the paper as a quotation.*
+#: ⌈ What the check asserts is unchanged and is this file's own computation -- the ratio of two scales
+#: it derives -- so nothing here is weaker than before; what is absent is a paper-side read, and it is
+#: absent because the paper states a series and not a term.
 gate(f"(i) the interacting quartic energy is EXACTLY (l_P/a)^2 times the free tower's scale -- with "
      f"kappa hbar = l_P^2, the reduced theory's only two scales -- so it sits at SECOND order in the "
      f"section's own expansion", sp.simplify(ratio - (lP/a)**2) == 0)
 kk = sp.Symbol("k", positive=True, integer=True)
-sol = sp.solve(sp.Eq(2*kk - 4, 2), kk)
-gate(f"and inverting the section's own order rule -- a counterterm of operator dimension 2k contributes at "
-     f"order 2k-4 exactly, 'second order admits one operator dimension and no other' -- gives k = {sol[0]}, "
+#: ⛭ r7163+cc66.132: ** THE SECTION'S ORDER RULE IS PARSED AND THEN SOLVED, which is the DERIVATION
+#: template of `r7161_cc66_nine_derivation/PREDICTION.md` and node `70`'s site in the same receipt. **
+#: `r7159+70.1` routed this one to me rather than editing it, and `r7161` asked for one template rather
+#: than two -- so it lands in the same pass and through the same instrument as my nine.
+#: ⌗ The receipt already INVERTED the rule instead of hard-coding six, which is why it was classed
+#: `DERIVATION` and not `PARSE`: what was carried was the RULE `2k-4`, not the answer.  Now the rule
+#: comes out of the paper and the inversion is applied to whatever the paper says.
+#: ⌗ `inline` reports `1 kept, 1 skipped`: the paper writes `$2k-4$` twice and one of them sits inside
+#: a longer expression, so it is not an occurrence of the rule on its own.
+_P10SUB = open(os.path.join(_SHERE, '..', '..', 'corpus', 'canonical_time.tex'), encoding='utf-8').read()
+_RULE, _RULEk, _RULEs = pf.inline(_P10SUB, r'\$(2k-4)\$', {'k': kk})
+sol = sp.solve(sp.Eq(_RULE, 2), kk)
+gate(f"and inverting the section's own order rule -- PARSED from the paper as order {_RULE} for a "
+     f"counterterm of operator dimension 2k ({_RULEk} statement, {_RULEs} skipped as part of a longer "
+     f"expression), 'second order admits one operator dimension and no other' -- gives k = {sol[0]}, "
      f"⇒ OPERATOR DIMENSION {2*sol[0]}, FORCED AND UNIQUE",
      len(sol) == 1 and sol[0] == 3 and 2*sol[0] == 6)
+gate("    CONTROL -- the parsed rule is not the identity on the order, so inverting it is a real step: "
+     "a rule reading `2k` would give k = 1 and dimension two, which is not what the section says",
+     sp.solve(sp.Eq(2*kk, 2), kk) != sol)
 def energy_power(n):
     """lambda INT sqrt(-g) R^n : sqrt(-g) ~ a^3 and R ~ a^-2, so the energy sits at a^(3-2n)."""
     return 3 - 2*n
