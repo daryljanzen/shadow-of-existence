@@ -8007,3 +8007,35 @@ a stable numeric failure would not.*
 ⚑ *Worth noting against `cc66.118`'s routing: this is the second distinct receipt whose CI-only failure
 was unreadable from the suite's own report, and in both cases the answer came from the job log. The
 case for raising the runner's FAIL tail is now two receipts wide, not one.*
+
+---
+
+## `cc66.124` — 5 of the 9, and the reader's boundary rule was **half a rule**
+
+| | |
+|---|---|
+| sites | **5** of 9 (`P10_the_thermal_condition…` adds 2) |
+| `check_unread_figure` | `OWED` 18 → **15**, `CEILING` lowered to match, ratchet holding exactly |
+| fast job | green |
+
+⛔ **The defect, and it would have answered silently.** `_extends` checked only the character *after* a
+match, so the pattern `(n-1)(n+3)` returned `kept=2, skipped=0` against a paper that writes
+`2(n-1)(n+3)` in both places — **the degeneracy without its factor of two, attributed to the paper as
+though printed.** Not a refusal, not a disagreement: a wrong answer.
+
+⇒ *Found by testing the instrument against the NEXT site before using it there.* The trailing case was
+pre-registered, the leading one was not, **and they are the same class — a boundary rule written on one
+side is half a boundary rule.** Fixed with `_preceded`, and with the residual limit **stated**: a match
+preceded by `(` is still a boundary, because requiring more would refuse `$(n-1)(n+3)$` itself.
+
+⌗ **The refusal message was wrong again** (still "prefix" once a match could extend either way). *Fourth
+reporting defect of the round, all four in the reporting and none in the arithmetic. **I write the
+measurement correctly and describe it wrongly** — consistent enough now to be the finding rather than
+four accidents.*
+
+**What the refusal bought:** the receipt asserts `2 × (its per-family dimension) = the paper's parsed
+total` — the derivation the refusal asked for, not a looser pattern.
+
+⌗ *Standing: the substitution control **bites on nothing** across four controls; and `OWED` again fell
+by three for two repairs (`15 = 18 − 2 − 1`), the third site owed a read of its own. Second receipt in
+a row where the gate's file-level reading inflates the apparent repair count by one.*

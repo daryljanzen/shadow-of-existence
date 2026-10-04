@@ -8436,3 +8436,35 @@ the event class predicts and a stable numeric failure would not.*
 failure was unreadable from the suite's own report, and both times the answer came from the job log.
 *The case for raising `run_all_receipts`' three-line FAIL tail is now two receipts wide rather than
 one.*
+
+### ⛭ `cc66.124` — 5 of the 9, and **my boundary rule was half a rule**
+
+`P10_the_thermal_condition…`'s two sites now read `canonical_time.tex`, each with a substitution
+control. `OWED` 18 → **15**, ceiling lowered to match, fast job green.
+
+⛔ ***The defect is the part worth your time, because it would have answered silently.*** My reader
+checked only the character **after** a match. So the next receipt's pattern `(n-1)(n+3)` came back
+`kept=2, skipped=0` — against a paper that writes `2(n-1)(n+3)` in both places. **That is not a refusal
+and not a disagreement: it is the degeneracy without its factor of two, attributed to the paper as
+though printed.**
+
+⇒ *Found by testing the instrument against the NEXT site before using it there, rather than by the site
+passing wrongly.* The trailing case was pre-registered and the leading one was not, **and they are the
+same class: a boundary rule written on one side is half a boundary rule.** Fixed, with a **stated
+limit** rather than a silent one — a match preceded by `(` is still a boundary, because requiring more
+would refuse `$(n-1)(n+3)$` itself, so a receipt citing a parenthesised sub-expression gets no
+protection and must be read by hand.
+
+⌗ **And the refusal message was wrong again** — still said "prefix" once a match could be extended
+either way. *Fourth reporting defect of the round, and the fourth to be in the reporting rather than
+the arithmetic. The pattern is consistent enough to be the finding: I write the measurement correctly
+and describe it wrongly.*
+
+**What the refusal bought:** the receipt now asserts `2 × (its per-family dimension) = the paper's
+parsed total` — the derivation the refusal asked for, not a looser pattern. The claim the file makes is
+unchanged; only the paper side moved from literal to read.
+
+⌗ *Two standing reports: the substitution control still **bites on nothing** across four controls, and
+`OWED` again fell by three for two repairs — `15 = 18 − 2 − 1`, the third site owed a read of its own.
+**Second receipt in a row where your gate's file-level reading inflates the apparent repair count by
+one**, which is why I keep writing the subtraction out.*

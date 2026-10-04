@@ -100,6 +100,10 @@ three controls failing to break, which would mean the checks are vacuous.
 """
 import numpy as np
 import sympy as sp
+import os, sys
+_THIS = os.path.dirname(os.path.abspath(__file__))
+sys.path.insert(0, os.path.join(_THIS, '..', '..', 'corpus'))
+import paper_formula as pf
 
 FAILS = []
 
@@ -121,16 +125,32 @@ n, m = sp.symbols('n m', positive=True)
 print("\nPART 1 -- THE TWO FAMILIES, AND WHETHER THE DEGENERACIES SPLIT EVENLY.")
 print("-" * 100)
 print("  P10 sec:lock: the TT rank-two harmonics of the unit S^3 at level n have Laplace eigenvalue")
-print("  mu_n^2 = n(n+2)-2, n >= 2, and 'degeneracy 2(n-1)(n+3), ten at the floor n=2'.")
+_P10T = open(os.path.join(_THIS, '..', '..', 'corpus', 'canonical_time.tex'), encoding='utf-8').read()
+_DEG, _DEGk, _DEGs = pf.inline(_P10T, r'2\(n-1\)\(n\+3\)', {'n': n})
+_LAP, _LAPk, _LAPs = pf.inline(_P10T, r'n\(n\+2\)-2', {'n': n})
+print(f"  P10 PARSED: eigenvalue {_LAP} ({_LAPk} statement(s), agreeing), total degeneracy {_DEG} "
+      f"({_DEGk} agreeing, {_DEGs} skipped as part of something longer), n >= 2.")
 print("  r4547: they sit in (j_L, j_R) = ((k+1)/2, (k-3)/2) and its swap, with k = n+1.")
 
 k = m  # the row's k, equal to P10's n+1
 jL, jR = (k + 1) / 2, (k - 3) / 2
 dim_one = sp.expand((2 * jL + 1) * (2 * jR + 1))
-check("each family has dimension m^2-4 = (n-1)(n+3), so the two SUM to P10's 2(n-1)(n+3)",
-      sp.simplify(sp.factor(dim_one.subs(m, n + 1)) - (n - 1) * (n + 3)) == 0
-      and sp.simplify(2 * dim_one.subs(m, n + 1) - 2 * (n - 1) * (n + 3)) == 0,
-      f"each {sp.factor(dim_one.subs(m, n + 1))}")
+#: ⛭ r7161+cc66.124: ** THE PAPER'S TOTAL IS PARSED, AND THE HALF IS DERIVED FROM IT RATHER THAN
+#: QUOTED. **  `paper_formula.inline` REFUSED the pattern `(n-1)(n+3)`: both of its occurrences in
+#: `canonical_time.tex` are inside `2(n-1)(n+3)`, so the paper never states the per-family dimension
+#: on its own -- it states the TOTAL, of which this is half.  *The refusal is the correct answer and
+#: the first version of the reader gave the wrong one silently, reading the degeneracy without its
+#: factor of two and attributing it to the paper.*  ⇒ So what is read is the paper's total, and the
+#: claim this file actually makes -- each family is half of it -- is asserted as a DERIVATION:
+#: `2 x (this file's per-family dimension) = the paper's total`.
+check("each family has dimension m^2-4, so the two SUM to P10's parsed total -- the per-family figure "
+      "is DERIVED from the paper's total and is not quoted, because the paper never states it alone",
+      sp.simplify(2 * dim_one.subs(m, n + 1) - _DEG) == 0,
+      f"each {sp.factor(dim_one.subs(m, n + 1))}, two of them {sp.factor(2 * dim_one.subs(m, n + 1))} "
+      f"against the paper's {sp.factor(_DEG)}")
+check("    CONTROL -- the two do NOT sum to the paper's total under m = n or m = n+2, so the check "
+      "tests the re-parameterisation and not a coincidence of two polynomials",
+      not [w for w in (n, n + 2) if sp.simplify(2 * dim_one.subs(m, w) - _DEG) == 0])
 check("the split is exactly 50/50 at every level -- the swapped pair has the SAME dimension, the "
       "product (2j_L+1)(2j_R+1) being symmetric",
       sp.simplify(((2 * jL + 1) * (2 * jR + 1)) - ((2 * jR + 1) * (2 * jL + 1))) == 0)
@@ -154,8 +174,11 @@ CL, CR = jL * (jL + 1), jR * (jR + 1)
 mu2_from_casimir = sp.expand(2 * (CL + CR) - 6)
 print(f"  C_L + C_R = {sp.simplify(CL + CR)}")
 print(f"  2(C_L + C_R) - 6 = {mu2_from_casimir}")
-check("mu^2 = 2(C_L + C_R) - 6 reproduces P10's mu_n^2 = n(n+2)-2 at every level",
-      sp.simplify(mu2_from_casimir.subs(m, n + 1) - (n * (n + 2) - 2)) == 0)
+check(f"mu^2 = 2(C_L + C_R) - 6 reproduces P10's eigenvalue {_LAP} at every level -- PARSED from "
+      f"the paper, not carried here",
+      sp.simplify(mu2_from_casimir.subs(m, n + 1) - _LAP) == 0)
+check("    CONTROL -- it does NOT reproduce it under m = n or m = n+2",
+      not [w for w in (n, n + 2) if sp.simplify(mu2_from_casimir.subs(m, w) - _LAP) == 0])
 x_, y_ = sp.symbols('C_L C_R')
 check("...and that expression is MANIFESTLY SYMMETRIC in the two Casimirs, so the swapped family "
       "carries the identical frequency -- the equality is not an arithmetic coincidence per level",

@@ -84,7 +84,21 @@ REPORTED_ONLY = {'READS-PAPER'}
 #   *That is a property of the instrument, and the honest reading of the fall is 18 = 22 - 3 - 1, with
 #   the 1 owed a read of its own rather than counted as done.*  ⌈ It is the same shape as the note at
 #   r7157 that a repair almost made its own reads invisible here: this gate sees FILES, not sites.
-CEILING = 18
+# ⛭ r7161+cc66.124: 18 → 15, the second DERIVATION receipt, and ** THE SAME ARITHMETIC AS cc66.123:
+#   THREE ROWS RETIRED FOR TWO REPAIRS, SO THE FALL IS 15 = 18 - 2 - 1. **  In
+#   `P10_the_thermal_condition...` the Casimir eigenvalue and the per-family dimension are now read
+#   from `canonical_time.tex`, each with a substitution control.  The third site (the floor's
+#   self-dual/anti-self-dual FIVEs) still carries its own figures and is OWED a read; it changed
+#   partition only because the file now opens the paper.
+#   ⌗ ** AND THE PER-FAMILY DIMENSION IS DERIVED RATHER THAN QUOTED, BECAUSE THE READER REFUSED IT. **
+#   `paper_formula.inline` rejected the pattern `(n-1)(n+3)`: both occurrences sit inside
+#   `2(n-1)(n+3)`, so the paper states the TOTAL and never the half.  The receipt now asserts
+#   `2 x (its per-family dimension) = the paper's parsed total`.  ⛔ *The first version of that reader
+#   looked only at the character AFTER a match and returned this site as `kept=2, skipped=0` -- the
+#   degeneracy without its factor of two, attributed to the paper, silently.  Caught by testing the
+#   instrument against the NEXT site before using it there.  A boundary rule written on one side is
+#   half a boundary rule.*
+CEILING = 15
 
 
 def read_baseline():

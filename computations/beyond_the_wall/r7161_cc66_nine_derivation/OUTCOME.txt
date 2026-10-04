@@ -54,3 +54,44 @@ r7161+cc66.123 -- OUTCOME of the first DERIVATION pass, against the predictions 
   WHAT IS LEFT: 6 of the 9 (five receipts), one of which (-6H^2) is now known to need the limit form
   rather than the substitution form.  70's `2k-4` site needs `k` declared -- the dialect refused it
   strictly rather than guessing, which is the behaviour the shared template should keep.
+
+--------------------------------------------------------------------------------------------------
+r7161+cc66.124 -- SECOND PASS: 5 of 9, and the instrument's boundary rule was half a rule
+
+  SITES DONE: 5 of 9.  Added P10_the_thermal_condition_is_helicity_blind... (2 sites).
+  check_unread_figure OWED 18 -> 15, CEILING lowered to match.  Fast job green.
+
+  ** THE DEFECT, AND IT WOULD HAVE ANSWERED SILENTLY. **  `_extends` looked only at the character
+  AFTER a match, so the next receipt's pattern `(n-1)(n+3)` came back kept=2, skipped=0 against a
+  paper that writes `2(n-1)(n+3)` in both places.  That is not a refusal and not a disagreement:
+  it is the degeneracy WITHOUT its factor of two, attributed to the paper as though printed.
+  => Found by testing the instrument against the NEXT site before using it there, not by the site
+     passing wrongly.  The trailing case was pre-registered; the leading one was not, and they are
+     the same class.  ** A boundary rule written on one side is half a boundary rule. **
+  FIXED: `_preceded` rejects a match extended to its left.  STATED LIMIT, named rather than left
+  implicit: a match preceded by `(` is still treated as a boundary, because requiring more would
+  refuse `$(n-1)(n+3)$` itself -- so a receipt citing a parenthesised sub-expression gets no
+  protection from this rule and must be read by hand.
+  AND THE MESSAGE WAS WRONG AGAIN: it still said "prefix" once a match could be extended either
+  way.  Now "PART of a longer expression -- extended on the left, the right or both".
+  ** Fourth reporting defect of the round and the fourth to be in the reporting rather than the
+  arithmetic.  The pattern is consistent enough to be the finding: I write the measurement
+  correctly and describe it wrongly. **
+
+  Q1  REFUTED FOR A SECOND SITE, usefully.  `(n-1)(n+3)` is refused: the paper states the TOTAL
+      degeneracy and never the per-family half.  => The receipt now asserts
+      `2 x (its per-family dimension) = the paper's parsed total`, which is the DERIVATION the
+      refusal asked for rather than a looser pattern.  The claim the file makes is unchanged; what
+      changed is that the paper side is read and the half is derived from it.
+  Q3  STILL BITES ON NOTHING.  Four substitution controls now, none has caught a wrong
+      substitution that would otherwise have passed.  Reported as bookkeeping, as predicted.
+  Q4  OWED 18 -> 15, and again THREE rows retired for TWO repairs: 15 = 18 - 2 - 1.  The third
+      site (the floor's two FIVEs) still carries its figures and is owed a read; it changed
+      partition only because the file now opens the paper.  ** Second receipt in a row where this
+      gate's file-level reading inflates the apparent repair count by one. **
+  Q6  HOLDS.  No measurement or tolerance moved.
+
+  REMAINING: 4 of 9 -- P10_the_degeneracy_needs_r_constant (R = 12/alpha^2),
+  P10_the_descent_is_free (R = 4Lambda, one real occurrence and one prefix of R=4Lambda+kappa Theta),
+  P10_the_subtraction_is_at_operator_dimension (the (l_P/a)^2 scaling; 70's `2k-4` site is here),
+  P10_the_vertex_numbers (-6H^2, now KNOWN to need the limit form rather than the substitution form).

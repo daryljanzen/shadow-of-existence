@@ -336,6 +336,29 @@ def _extends(src, j):
     return False
 
 
+#: ⛔ ⛭ r7161+cc66.124: ** AND A SUFFIX IS NOT AN OCCURRENCE EITHER, WHICH THE FIRST VERSION GOT WRONG
+#: AND WOULD HAVE ANSWERED SILENTLY. **  `_extends` looks only FORWARD, so `(n-1)(n+3)` -- which the
+#: NEXT receipt in this block cites -- read as `kept=2, skipped=0` against a paper that writes
+#: `2(n-1)(n+3)` both times.  *That is not a refusal and not a disagreement: it is the degeneracy
+#: without its factor of two, attributed to the paper as if the paper had printed it.*
+#: ⇒ Found by testing the instrument against the NEXT site before using it there, rather than by the
+#: site passing wrongly.  ⌗ The trailing case was predicted and the leading one was not, and they are
+#: the same class -- *a boundary rule written on one side is half a boundary rule.*
+#: ⌈ STATED LIMIT, because naming it is the honest half: a match preceded by `(` is treated as a
+#: boundary, so an expression quoted out of the inside of a group is still readable.  Requiring more
+#: would refuse `$(n-1)(n+3)$` itself.  A receipt citing a parenthesised sub-expression therefore gets
+#: no protection from this rule and has to be read by hand.
+def _preceded(src, i):
+    """Would the text ending at `i` be part of a LARGER expression to its left?"""
+    k = i - 1
+    while k >= 0 and src[k] == ' ':
+        k -= 1
+    if k < 0:
+        return False
+    ch = src[k]
+    return ch in '+-*/^_)}' or ch.isdigit() or ch.isalpha()
+
+
 def inline(tex, pattern, locals_=None, strict=True):
     """Parse an expression the paper states inline, from EVERY occurrence, requiring agreement.
 
@@ -346,7 +369,7 @@ def inline(tex, pattern, locals_=None, strict=True):
     src = tex if '\n' in tex else open(tex, encoding='utf-8').read()
     kept, skipped, got = [], 0, None
     for m in re.finditer(pattern, src):
-        if _extends(src, m.end()):
+        if _extends(src, m.end()) or _preceded(src, m.start()):
             skipped += 1
             continue
         kept.append(m)
@@ -367,10 +390,11 @@ def inline(tex, pattern, locals_=None, strict=True):
             'carries this expression -- a DRIFTED attribution, which is a finding and not a parse '
             'failure -- or the pattern does not match how the paper writes it.' % (pattern,))
         raise AssertionError(
-            'paper_formula.inline: %r matches %d time(s) in the paper and EVERY ONE is a prefix of a '
-            'longer expression, so the paper never states this figure on its own -- it states something '
-            'of which this is a part. What the receipt claims is a derived consequence, not a quotation, '
-            'and it has to be derived here rather than pattern-matched.' % (pattern, skipped))
+            'paper_formula.inline: %r matches %d time(s) in the paper and EVERY ONE is PART of a '
+            'longer expression -- extended on the left, the right or both -- so the paper never states '
+            'this figure on its own; it states something of which this is a part. What the receipt '
+            'claims is a DERIVED CONSEQUENCE and not a quotation, and it has to be derived here rather '
+            'than pattern-matched.' % (pattern, skipped))
     for m in kept:
         frag = m.group(1) if m.groups() else m.group(0)
         e = to_sympy(frag, locals_, strict=strict)
