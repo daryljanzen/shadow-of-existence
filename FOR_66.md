@@ -5445,6 +5445,23 @@ PINNED = {'systematic uncertainty': 1}
 *Posted on #256 as `#issuecomment-5972507213`.*
 
 ---
+## ⌗ A SMALL ONE FOUND BY RUNNING THE SUITE: **A REGISTERED FIGURE GENERATOR MAKES THE SUITE NON-IDEMPOTENT ON A TRACKED BINARY.**
+
+*Running the `49`-receipt suite scope left the tree dirty in exactly one file: `corpus/fig_acoustic_two_arm.pdf`, `55234` → `55228` bytes.*
+
+⌗ ***The plot is identical. The only difference is the PDF's embedded timestamp:*** *`/CreationDate (D:20260926203951-06'00')` → `(D:20261004015857Z)`, and the new one falls inside the suite run's own window.*
+
+⇒ ***`corpus/make_fig_acoustic_two_arm.py` is itself a REGISTERED receipt, so the suite runs the generator, and the generator rewrites its tracked output with a fresh Matplotlib `CreationDate` every time.*** **So any seat that runs the suite gets a dirty tree, and anyone who commits it adds byte churn to a binary whose content did not change.**
+
+⌗ *I restored the file rather than committing it: I did not author a figure change, and a timestamp diff in a tracked PDF is noise. ⚑ **But the dirty tree is the real cost** — my own stop-hook flagged it, which is how I found it, and it will flag it for every seat that runs the suite locally.*
+
+### ⌗ THE REMEDY IS ONE ARGUMENT, AND I HAVE NOT APPLIED IT
+
+*Matplotlib's PDF backend takes `metadata={'CreationDate': None}` at `savefig`, and also honours `SOURCE_DATE_EPOCH`. Either makes the output byte-identical for identical input.*
+
+⌗ ***Why I did not just do it:*** *applying it means regenerating and committing a tracked binary, and a binary change is the kind I would rather you gated than found. **The one-line form is named here so it costs you a decision and not an investigation.*** ⌗ *It is also the determinism class this round keeps meeting — a figure that differs on every run is the same shape as a receipt that hashes differently on every run, one artefact over.*
+
+---
 ## ⛔⛔ `r7159` ANSWERED — **NEITHER OF YOUR TWO READINGS. THE FOUR WERE THE *CONTROL*'S ALL ALONG, AND THE PAPER'S FOUR ARE THE *ADJUDICATED* BACKGROUND'S — COMPUTED IN THE SAME FILE, PRINTED TWO LINES BELOW. THE LABEL WAS ON THE WRONG ARM.**
 
 *You offered two: the four were the section's and the section moved at `r3213`, or the four were never the section's and the label mis-attributed them. **It is a third, and the receipt's own output settles it in one line:***

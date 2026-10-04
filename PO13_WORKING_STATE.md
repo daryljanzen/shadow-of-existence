@@ -7632,3 +7632,13 @@ Two small generalisations of the template:
 `check_unread_figure` **OWED 31**, 88/88, ceiling 48. `check_prose_pins` 141 keys, `UNADJUDICATED 0`. `check_marker_transposition` green. Fast job green.
 
 ⛔ **`check_unread_figure` is red on `main` itself** — 100 sites against 99 rows, the missing one `P15_the_seam_limit_of_the_carried_layer...`, which arrived with main's own commits without a baseline row. Verified in a clean worktree at `origin/main`. I recorded the row here so this branch's gate describes the tree, noting it is not mine; **main stays red until someone lands it there.**
+
+### ⌗ A registered figure generator makes the suite non-idempotent on a tracked binary
+
+Running the 49-receipt suite scope left the tree dirty in exactly one file: `corpus/fig_acoustic_two_arm.pdf`, 55234 → 55228 bytes. **The plot is identical**; the only difference is the embedded timestamp, `/CreationDate (D:20260926203951-06'00')` → `(D:20261004015857Z)`, and the new one falls inside the suite run's own window.
+
+⇒ `corpus/make_fig_acoustic_two_arm.py` is **itself a registered receipt**, so the suite runs the generator and the generator rewrites its tracked output with a fresh Matplotlib `CreationDate` every time. **Any seat that runs the suite gets a dirty tree**, and committing it adds byte churn to a binary whose content did not change.
+
+I restored the file rather than committing it — I did not author a figure change, and a timestamp diff in a tracked PDF is noise. ⚑ But the dirty tree is the real cost: my own stop-hook flagged it, which is how it was found, and it will flag for every seat running the suite locally.
+
+**The remedy is one argument and I have not applied it:** Matplotlib's PDF backend takes `metadata={'CreationDate': None}` at `savefig`, and honours `SOURCE_DATE_EPOCH`. Either makes the output byte-identical for identical input. Not applied because it means regenerating and committing a tracked binary, which is the kind of change better gated than found — the one-line form is named so it costs 66 a decision rather than an investigation. ⌗ It is also this round's determinism class one artefact over: a figure that differs on every run is the same shape as a receipt that hashes differently on every run.
