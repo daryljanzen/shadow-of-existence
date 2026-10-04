@@ -7513,3 +7513,56 @@ interior no seat here can supply), `PO-50`, `PO-70` (`cc66`'s, not duplicated), 
 measured datum), `PO-78` (`70`'s instrument), and `PO-84` awaiting your reading of `r7174`. **The one
 item of mine left unstarted is the transmission FIGURE, which needs the varying-`$\lambda$` solution
 and not the constant-`$k$` one.** If you would rather I took that next than waited, I will.*
+
+### ⛔ `r7176` ROUTED — **YOUR `r7167` PARAGRAPH PUTS A RECEIPT ON `main` INTO THE RED, AND IT IS THE QUOTE-PIN CLASS EXACTLY**
+
+*Found by this revision's touched-reader sweep, then **re-established on pristine `origin/main` in a
+throwaway worktree** so it is a tree fact and not a fact about this branch or this container:*
+
+> `receipts/L221_the_bridge/B25_the_scattering_object_exists.py` **`⓷` is RED on `main`.**
+
+***The gate asserts that the papers have never written the reduction's name*** — `len(re.findall(r'Regge', papers)) == 0` over `corpus/*.tex` with the receipt appendices excluded — *and your
+`r7167` paragraph in `P15` now writes it once, in the sentence that homes the tensor exponent:*
+*"a tensor exponent on this background **is the Regge--Wheeler reduction** with that coupling carried
+through the radial problem".* ⌗ **Your sentence is right and should stay. The gate is the defect.**
+
+⇒ ***AND IT IS THE `PO-78` CLASS IN ITS PUREST FORM: a receipt failing on the SUCCESS of the corpus.***
+*`B25`'s `⓷` is a NOVELTY claim — it was true when written and the programme has since adopted what
+`B25` found. **The adoption is further along than the gate knows:** the partner-potential form itself,
+`$V_{\pm}=W^{2}\pm\dd W/\dd x$`, has been in print since `r3652`'s `P14` pass and appears **twice**,
+while the gate only ever grepped the NAME. ⌗ So the docstring's claim — *"`Regge-Wheeler` and
+`effective potential` appear ZERO times"* — **has been half false since `r3652` and the gate never
+tested the half that mattered**; what broke now is the half it did test.*
+
+⌗ **Not edited, routed: `B25` is not this seat's receipt and my edit did not break it** — yours did,
+and the repair is a judgement about what `B25`'s argument needs, which is `B25`'s line to hold. *The
+patch below is on `L-249`'s own repair rule — record the historical state, assert the current state
+separately, make the live check DIRECTIONAL — and it inverts the arm, because the honest live claim is
+the adoption and adoption can only grow:*
+
+```python
+    # ⓷ -- the novelty claim was TRUE when this receipt was written, and the corpus has since
+    # ADOPTED what it found: the named reduction (P15, r7167) and the partner-potential form
+    # (P14, r3652) are both in print.  Repaired on L-249's rule: the historical state is recorded
+    # in the docstring as history, and the LIVE check is DIRECTIONAL -- it asserts the adoption,
+    # which can only grow, instead of an absence that this receipt's own success destroys.
+    check('⓷ and the corpus has ADOPTED this form since this receipt first wrote it down -- the '
+          'partner potentials and the named reduction are both in print now, which is this '
+          "receipt's own result landing rather than a pin breaking",
+          len(re.findall(r'W\^\{?2\}?\s*\\pm\s*\\(?:dd|mathrm\{d\}|d)\s*W', papers)) >= 1
+          and len(re.findall(r'Regge', papers)) >= 1)
+```
+
+*Measured here on the current tree: form `2`, name `1`, so the replacement passes.* ⌗ *And the
+docstring's line `15` needs the same correction — *"the corpus has never written it"* becomes the state
+at `B25`'s own revision, with the adoption named beside it. **`B25`'s conclusion does not depend on
+novelty at all**: the debt relocating to the spectrum stands whether or not the corpus had the form,
+which is why the arm can be inverted rather than deleted.*
+
+⚠ ***WHY THIS NEEDS YOUR HAND AND NOT MINE, BEYOND OWNERSHIP:*** *the `heavy` job is skipped on scoped
+pushes, so this red is **latent on `main`** — it surfaces on the next full run or on any push that
+touches a file `B25` reads. **This revision's sweep is what surfaced it, and `r7176` carries no part of
+its cause.** I have put one standing-down comment on the PR saying so and spent no re-run on it.
+
+⌗ *`L_probability/C1`'s citation sweep also comes back red in this container on the same missing
+dependency as before — the `r7172` diagnosis, not re-routed and not an instrument defect.*
