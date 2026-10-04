@@ -1,0 +1,56 @@
+  receipts/**/*.py: 965
+  using any convention: 350
+
+     309  NAME (a paper basename literally)
+      61  GLOB/WALK (own glob/listdir/walk of corpus/)
+      52  GIT-SHOW (a committed corpus blob, not the working tree)
+      13  RB-IMPORT (import reach_baseline)
+      11  CHILD-PROCESS (runs a python child that reads)
+       6  HELPER (imports a non-receipt module that reads)
+       4  RB-PATHLOAD (reach_baseline.py loaded by path)
+       1  COMPUTED-NAME (a .tex path built from a variable)
+
+  the modules and children behind HELPER / RECEIPT-IMPORT / CHILD-PROCESS:
+       3   child corpus/make_receipt_appendix.py
+       2   child corpus/check_loci.py
+       2   via corpus/quotepin.py
+       2   via corpus/field_survey.py
+       1   child receipts/L150_the_datum/X1_the_ratio_is_a_clock_reading_not_a_carried_datum.py
+       1   child corpus/check_receipt_exit.py
+       1   via corpus/check_paper_tense.py
+       1   child corpus/check_open_ledger.py
+       1   child receipts/L221_the_bridge/B53_gating_l829_and_l830.py
+       1   child scripts/gate_sweep.py
+       1   via corpus/unclaimed_surface.py
+       1   via corpus/decidable_claims.py
+       1   child receipts/P03_SdS_slicing/A6_item_58_resolves_split.py
+       1   via corpus/check_loci.py
+
+  receipts with a non-literal convention: 76;  of them naming NO paper literally and not importing reach_baseline (wholly invisible to the current name test): 27
+      receipts/L165_defining_the_sum/S1_seven_necessary_conditions_on_the_measure.py  [GLOB/WALK]
+      receipts/L175_dimensional_descent/N3_the_criterion_is_the_programmes_own_and_it_is_stated.py  [GLOB/WALK]
+      receipts/L204_physics_reach/P11_CR_fixes_the_place_not_the_couplings.py  [GLOB/WALK]
+      receipts/L204_physics_reach/P13_the_entropy_is_the_corpuss_own_number.py  [GLOB/WALK]
+      receipts/L204_physics_reach/P5_the_two_absences_verified_independently.py  [GLOB/WALK]
+      receipts/L204_physics_reach/P6_the_nariai_frame_does_not_exist_and_the_transplanckian_scope.py  [GLOB/WALK]
+      receipts/L204_physics_reach/P8_the_higgs_join_is_an_identity.py  [GLOB/WALK]
+      receipts/L218_reader_package/C2_the_rule_is_enforceable_and_enforceable_means_severe.py  [GLOB/WALK]
+      receipts/L221_the_bridge/B1_the_index_argument_stops_where_a_mod_two_index_begins.py  [GLOB/WALK]
+      receipts/L221_the_bridge/B25_the_scattering_object_exists.py  [GLOB/WALK]
+      receipts/L221_the_bridge/B28_a_cardinality_gap.py  [GLOB/WALK]
+      receipts/L221_the_bridge/B33_the_ledger_branch_is_settled.py  [GLOB/WALK]
+      receipts/L221_the_bridge/B35_the_continuation_is_cited_wrong.py  [GLOB/WALK]
+      receipts/L221_the_bridge/B3_the_involution_is_quaternionic_not_real.py  [GLOB/WALK]
+      receipts/L237_gates_check_declarations/G1_every_gate_checks_a_declaration.py  [GLOB/WALK]
+      receipts/L237_gates_check_declarations/G51_the_twelve_can_all_exit_non_zero_and_the_backlog_is_an_artefact.py  [CHILD-PROCESS]
+      receipts/L261_the_question_was_answered/A1_a_check_on_whether_a_question_is_still_open_punishes_the_answer.py  [GLOB/WALK]
+      receipts/L264_station_H_the_index_is_canonical/K1_the_traced_index_is_computable_and_the_computation_is_a_limit_point_test.py  [GIT-SHOW, RB-PATHLOAD]
+      receipts/L265_station_G_the_sequence_is_the_object/A1_the_atiyah_sequence_is_not_missing_from_P12_it_is_P12s_object_unnamed.py  [GIT-SHOW, RB-PATHLOAD]
+      receipts/L266_station_C_three_readings_of_the_dial/C1_the_degree_six_dial_has_three_readings_and_the_paper_excludes_one.py  [GIT-SHOW, RB-PATHLOAD]
+      receipts/L267_the_sweep_that_did_not_run/G1_a_success_message_printed_by_a_different_command_than_the_one_it_describes.py  [GLOB/WALK, GIT-SHOW, CHILD-PROCESS]
+      receipts/L270_the_table_that_carried_its_next_failure/V1_a_translation_table_validated_only_against_what_it_was_asked_to_render.py  [GLOB/WALK, GIT-SHOW, CHILD-PROCESS]
+      receipts/L559_the_registry_from_files_inward/O1_the_registry_was_turned_outward_and_the_arrow_still_pointed_one_way.py  [CHILD-PROCESS]
+      receipts/L_probability/C1_the_citation_sweep_finds_no_headline_mis_cited_and_thirteen_below_it_that_cite_the_wrong_receipt_or_none.py  [GLOB/WALK]
+      receipts/P03_SdS_slicing/A6_item_58_resolves_split.py  [GLOB/WALK]
+      receipts/P07_CR_framework/I7_conserved_charge_carries_three_objects_and_one_denies_the_others.py  [GLOB/WALK]
+      receipts/P14_matter_sector_paper/D2_index_carries_three_senses_inside_one_paper.py  [GLOB/WALK]

@@ -1,0 +1,310 @@
+#!/usr/bin/env python3
+"""_touched_pin_readers.py -- the receipts whose PINNED SENTENCES this tree touched in corpus/.
+
+Helper for `run_touched_readers.sh`.  ** The affected set for a paper edit is not every receipt that
+names the file -- that is 103 of 956 and does not finish before a push. **  It is every receipt with a
+pinned literal in an ADDED or REMOVED line, which `corpus/quote_pin_baseline.tsv` already keys as (receipt, literal).
+
+Prints one receipt path per line.  No argument reads the working tree (staged and unstaged); one
+argument diffs against that ref.
+"""
+import io
+import os
+import re
+import subprocess
+import sys
+
+MIN = 8          # a literal shorter than this matches too much to mean anything
+
+# ⌗ THE STATED LIMIT, so it is not a silent gap: this reads `git diff`, which does not see UNTRACKED
+#   files.  *That is outside the class rather than a hole in it -- a receipt cannot have pinned prose
+#   from a corpus file that did not exist when the receipt was written.*  ⛔ What IS outside and is a
+#   real limit: a receipt that reads a paper WITHOUT a pinned literal in the quote-pin baseline, since
+#   this scope is that baseline's keys -- CLOSED at `r7151` by the third half below, which computes the
+#   same test from the receipt source and needs no adjudication.  The heavy job remains the suite's
+#   verdict.
+
+
+def touched_lines(ref):
+    """every line this tree ADDED or REMOVED under corpus/.
+
+    ⛭ BOTH DIRECTIONS, AND THAT IS THE `r7141` LESSON RATHER THAN A PRECAUTION.  A first draft took
+    REMOVED lines only, on the reading that the class is `a receipt quoting prose the gate rewrote`.
+    ** But the `r7141` break was the opposite: the gate ADDED a citation, which made both arms of an
+    exclusive disjunction true. **  Nothing was removed that the receipt depended on.  ⇒ *An addition
+    can satisfy an arm exactly as a removal can break one, so the affected set is both.*
+    ⌗ *It found the right receipt on removed lines alone only because the edit replaced the line it
+    changed -- which is luck, and luck is not a scope.*
+    """
+    out = []
+    cmds = [['git', 'diff', '-U0'] + ([ref] if ref else []) + ['--', 'corpus/']]
+    if not ref:
+        cmds.append(['git', 'diff', '-U0', '--cached', '--', 'corpus/'])
+    for cmd in cmds:
+        for ln in subprocess.run(cmd, capture_output=True, text=True).stdout.splitlines():
+            if ln[:1] in ('-', '+') and not ln.startswith('---') and not ln.startswith('+++'):
+                out.append(ln[1:])
+    return '\n'.join(out)
+
+
+def changed_files(ref):
+    cmds = [['git', 'diff', '--name-only'] + ([ref] if ref else []) + ['--', 'corpus/']]
+    if not ref:
+        cmds.append(['git', 'diff', '--cached', '--name-only', '--', 'corpus/'])
+    out = []
+    for cmd in cmds:
+        out += [l for l in subprocess.run(cmd, capture_output=True, text=True).stdout.splitlines() if l]
+    return sorted(set(out))
+
+
+# ⛭⛭⛭ r7163 (66) ON NODE 70's r7161+70.2 SEED: THE FOURTH MEMBER OF THE BLINDNESS SHAPE, AND THE
+#   FIRST FOUND BY A PLANTED SEED RATHER THAN BY A BREAK ON `main`.
+#   ** Every selector in this file requires a receipt to NAME the changed file.  A receipt that reads its
+#   paper through `reach_baseline` names none -- it imports a module whose `bodies()` globs every
+#   `corpus/*.tex` -- so it was invisible to this gate ALWAYS, not merely in a window. **
+#   ⌈ Standing size, measured by 70: `21` registered receipts read their paper that way.  Its first count
+#   was `22` and it corrected itself: `L281/P1` only reads `reach_baseline.py`'s source as text and does
+#   not import it.
+#   ⇒ *An importer reads every paper, so for ANY paper change it counts as naming the changed one.  That
+#   is why this widening is safe rather than generous: the literal and numeric intersections after the test
+#   are untouched, so the cost is 21 more sources string-scanned and a reader still runs only when one of
+#   its pinned literals sits in a changed line.*
+#   ⌈ Proved in 70's throwaway worktree before it was routed here: with it the seed's `S2` goes IN and
+#   `S1`, `S3`, `S4` are unchanged.
+_RB_IMPORT = re.compile(r'^\s*(?:import reach_baseline|from reach_baseline )', re.M)
+
+
+def _names_the_change(src, names):
+    """Does this receipt read a changed corpus file -- by name, or by importing the reader that globs them?"""
+    if any(nm in src for nm in names):
+        return True
+    return bool(any(nm.endswith('.tex') for nm in names) and _RB_IMPORT.search(src))
+
+
+# ⛭ r7163+70.1 PROPOSAL (node 70) -- NOT A NAME TEST.  "Does this receipt read this file" answered by what it
+#   was SEEN to open, widened by what its source CAN open:
+#   ⓐ the trace: `receipts/READ_INDEX.json` records the file among the receipt's opened paths (`r`), or under a
+#      directory it read whole (`d`) when it opened a file of that kind at all (a `d` over corpus/*.py gates
+#      is not a paper read);
+#   ⓑ the source, by the conventions r7163+70.1's census found: it names the file; imports `reach_baseline`
+#      or loads it by path; globs / lists / walks `corpus/` itself; builds the path from the stem; or imports
+#      -- transitively, inside the repo -- or runs as a python child, a module that does any of these.
+#   ⓐ decides for a receipt traced at its current blob (plus a python child, which no trace sees); ⓑ decides
+#   for a receipt the trace has not met at this blob.  ⓐ is what sees a path built from DATA, which no source
+#   scan can; ⓑ is what sees a receipt landed since the trace, which no trace can.
+_GLOBWALK = re.compile(r"(glob\.glob|glob\(|iglob|os\.listdir|os\.walk|scandir|\.rglob\(|\.iterdir\()")
+_CORPUS_DIR = re.compile(r"""['"]corpus['"/]|corpus/|\bCORPUS\b""")
+_RB_PATH = re.compile(r"reach_baseline\.py['\"]")
+_IMPORTS = re.compile(r'^\s*(?:from\s+([\w.]+)\s+import|import\s+([\w.]+))', re.M)
+_CHILD = re.compile(r"""['"]([\w./-]+\.py)['"]""")
+_READ_INDEX = None
+_SRC = {}
+
+
+def _src(p):
+    if p not in _SRC:
+        try:
+            _SRC[p] = io.open(p, encoding='utf-8', errors='replace').read()
+        except OSError:
+            _SRC[p] = ''
+    return _SRC[p]
+
+
+def _index():
+    global _READ_INDEX
+    if _READ_INDEX is None:
+        import json
+        try:
+            _READ_INDEX = json.load(io.open(os.path.join('receipts', 'READ_INDEX.json'), encoding='utf-8'))['receipts']
+        except (OSError, ValueError, KeyError):
+            _READ_INDEX = {}
+    return _READ_INDEX
+
+
+def _module(name, here):
+    for d in (here, 'corpus', 'scripts', '.'):
+        p = os.path.join(d, name.replace('.', '/') + '.py')
+        if os.path.exists(p):
+            return p
+    return None
+
+
+def _globs_corpus(s):
+    L = s.splitlines()
+    for i, ln in enumerate(L):
+        win = '\n'.join(L[max(0, i - 1):i + 3])
+        # a glob near the corpus DIRECTORY, or a glob for papers by their extension wherever it is rooted (a helper
+        # living in corpus/ globs its own `dirname(__file__)` and never writes the word)
+        if _GLOBWALK.search(ln) and not ln.lstrip().startswith('#') and (_CORPUS_DIR.search(win) or '*.tex' in win):
+            return True
+    return False
+
+
+def _src_reaches(p, names, seen):
+    if p in seen or len(seen) > 40:
+        return False
+    seen.add(p)
+    s = _src(p)
+    if any(nm in s for nm in names):
+        return True
+    tex = any(nm.endswith('.tex') for nm in names)
+    if tex and (_RB_IMPORT.search(s) or _RB_PATH.search(s) or _globs_corpus(s)
+                or any(re.search(r"['\"]" + re.escape(nm[:-4]) + r"['\"]", s) for nm in names if nm.endswith('.tex'))):
+        return True
+    here = os.path.dirname(p)
+    for a, b in _IMPORTS.findall(s):
+        q = _module(a or b, here)
+        if q and _src_reaches(q, names, seen):
+            return True
+    if 'subprocess' in s:
+        for sc in _CHILD.findall(s):
+            q = next((c for c in (sc, os.path.join(here, sc)) if os.path.exists(c)), None)
+            if q and q != p and _src_reaches(q, names, seen):
+                return True
+    return False
+
+
+def _blob(p):
+    import hashlib
+    try:
+        b = io.open(p, 'rb').read()
+    except OSError:
+        return ''
+    return hashlib.sha1(b'blob %d\0' % len(b) + b).hexdigest()
+
+
+def _child_reaches(p, names):
+    s = _src(p)
+    if 'subprocess' not in s:
+        return False
+    here = os.path.dirname(p)
+    for sc in _CHILD.findall(s):
+        q = next((c for c in (sc, os.path.join(here, sc)) if os.path.exists(c)), None)
+        if q and q != p and _src_reaches(q, names, set()):
+            return True
+    return False
+
+
+def _reads_the_change(path, src, names):
+    """ⓐ for a receipt the trace has met UNCHANGED, the trace decides -- it saw which files were opened, so a glob
+    that filters out the appendices is not widened back over them -- plus the one read a trace cannot see, a
+    python child.  ⓑ for a receipt the trace has not met, or met at another blob, the source decides."""
+    import fnmatch
+    e = _index().get(path)
+    if e and _blob(path).startswith(e.get('sha', '-')):
+        if any(nm in src for nm in names):
+            return True
+        changed = [f for f in _changed_paths if os.path.basename(f) in names]
+        r = e.get('r', [])
+        if any(f in r for f in changed):
+            return True
+        for f in changed:
+            kind = os.path.splitext(f)[1]
+            if any(fnmatch.fnmatchcase(f, d) for d in e.get('d', [])) and any(
+                    x.startswith('corpus/') and x.endswith(kind) for x in r):
+                return True
+        return _child_reaches(path, names)
+    return _src_reaches(path, names, set())
+
+
+_changed_paths = []
+
+
+def main():
+    ref = sys.argv[1] if len(sys.argv) > 1 and sys.argv[1] else None
+    blob = touched_lines(ref)
+    bl = os.path.join('corpus', 'quote_pin_baseline.tsv')
+    if not blob or not os.path.exists(bl):
+        return 0
+    hits = set()
+    for row in io.open(bl, encoding='utf-8'):
+        if row.startswith('#') or not row.strip():
+            continue
+        p = row.split('\t')
+        if len(p) < 2:
+            continue
+        lit = p[1].strip()
+        if len(lit) >= 2 and lit[0] == '"' and lit[-1] == '"':
+            try:
+                lit = lit[1:-1].encode().decode('unicode_escape')
+            except Exception:
+                lit = lit[1:-1]
+        if len(lit) >= MIN and lit in blob:
+            hits.add(p[0])
+    # ⛭ AND THE NUMERIC HALF, ADDED r7145 BECAUSE THE SENTENCE HALF MISSED A REAL BREAK.
+    #   The gate shipped at r7143 scoped on the quote-pin baseline, whose keys are SENTENCES.  At r7145
+    #   this seat corrected a figure in a paragraph -- `|Delta eta| = 3.32` to the closed form -- and
+    #   `P15_the_exact_transmission_ratios...` asserts that paragraph's 3.32, 4.19 and 15.4 by name.
+    #   ** The gate reported green: the receipt has no pinned SENTENCE in the changed lines. **
+    #   ⌗ *That was the limit the file stated one revision earlier, found by walking into it.*
+#   ⛔ AND THE LIMIT THAT REMAINS AFTER BOTH HALVES, STATED BECAUSE THIS REVISION WALKED INTO IT TOO:
+#   `P15_the_exact_transmission_ratios...` asserts `the paragraph's 3.32` in its LABEL and never names
+#   `CR_cosmology.tex` anywhere in its source -- it measures its own quadrature and attributes the
+#   figure to a paragraph it does not read.  ** No file-scoped gate can reach that: there is nothing to
+#   scope on. **  ⇒ *The repair is not in this gate but in the receipt -- a label quoting a paper's
+#   figure should READ that paper -- and the class `a receipt asserting a paper figure it never reads`
+#   is measurable and routed as such.*
+    #   ⇒ So a changed line's NUMERIC literals are matched against receipt source as well.  A number
+    #   that appears coincidentally pulls in a receipt that does not depend on it, which costs runtime
+    #   and not correctness -- the affordable error of the two.
+    #   ⛔ AND THE MATCH IS AN INTERSECTION, NOT A UNION, BECAUSE THE UNION IS UNAFFORDABLE.
+    #   Numbers alone pull 102 receipts on this change set -- `3.32` and `15.50` occur all over a corpus
+    #   this size, so a bare numeric match costs the whole runtime the file-name scope cost.  ⇒ *A
+    #   receipt that asserts a PAPER's figure must also NAME that paper, so the scope is the receipts
+    #   that do both.*  ⌗ The stated cost: a receipt that reads the paper and happens to contain the
+    #   number for another reason is run anyway, which is runtime and not correctness.
+    nums = set(re.findall(r'(?<![\w.])\d+\.\d{2,}(?![\w])', blob))
+    _changed_paths[:] = changed_files(ref)
+    names = set(os.path.basename(f) for f in _changed_paths)
+    if nums and names:
+        for root, _dirs, files in os.walk('receipts'):
+            for fn in files:
+                if not fn.endswith('.py'):
+                    continue
+                path = os.path.join(root, fn)
+                try:
+                    src = io.open(path, encoding='utf-8', errors='replace').read()
+                except OSError:
+                    continue
+                if _reads_the_change(path, src, names) and any(n in src for n in nums):
+                    hits.add(path)
+    # ⛭⛭⛭ AND THE THIRD HALF, ADDED r7151 BECAUSE THIS GATE MISSED A BREAK FOR THE THIRD TIME AND
+    #   THE CAUSE WAS ITS OWN STATED LIMIT RATHER THAN A NEW ONE.
+    #   Both halves above key on `corpus/quote_pin_baseline.tsv`, which carries ADJUDICATED keys only.
+    #   ** So a receipt's pins are invisible to this gate until somebody adjudicates them -- which is
+    #   precisely the window where the gate is needed: the revision that LANDS a receipt and then edits
+    #   the paper around it. **  At `r7149` node 60's `r7146` receipt pinned four clauses at
+    #   `count == 1`, two of them the clauses its own row asked the gate to CHANGE; the gate changed
+    #   both, the receipt went red on the success of its own work, and this scope reported green because
+    #   the baseline held one row for that receipt and not those four.
+    #   ⇒ *The repair takes the baseline out of the loop: a receipt that NAMES a changed corpus file
+    #   and carries a string literal appearing in a CHANGED line is in scope, adjudicated or not.*
+    #   ⌈ That is the quote-pin operator's own test, computed here from the receipt source, and it
+    #   rides the walk the numeric half already pays for -- so it costs no extra traversal.
+    if blob and names:
+        lits_re = re.compile(r'["\']([^"\'\\\n]{%d,})["\']' % MIN)
+        for root, _dirs, files in os.walk('receipts'):
+            for fn in files:
+                if not fn.endswith('.py'):
+                    continue
+                path = os.path.join(root, fn)
+                if path in hits:
+                    continue
+                try:
+                    src = io.open(path, encoding='utf-8', errors='replace').read()
+                except OSError:
+                    continue
+                if not _reads_the_change(path, src, names):
+                    continue
+                for lit in lits_re.findall(src):
+                    if lit in blob:
+                        hits.add(path)
+                        break
+
+    for h in sorted(hits):
+        print(h)
+    return 0
+
+
+if __name__ == '__main__':
+    sys.exit(main())

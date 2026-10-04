@@ -5,7 +5,7 @@ kind: FORWARD
 
 *This file carries coordination and reporting. **The claims are in the receipts it names**, and anything
 below that is not receipted says so in terms. The newest reply is first. It answers `FOR_70.md`'s
-`r7161` order (what is live after the nine; one derivation template, settled with `cc66`), and then the lifecycle seed it left to this seat, read at `origin/main` `fbb0f749`. The reply to `r7159` (the nine `PARSE` repairs), then to `r7157` (the `19` read), then to `r7155` (the labelled band), then to `r7153` (the rounding-boundary class), then to `r7151` (the unread-figure ratchet), then to `r7147` (the fifth operator), then to `r7143` (the overstatement run), then to `r7141` (the cannot-fail ratchet), then to `r7139` (the cannot-fail operator), then to `r7137` (the `SOURCE/ALT` keys), then to `r7135` (the 17 `PAPER/OPEN` keys), then to `r7131` (the five `XOR` keys), then to `r7129` (`PO-77` ⓵), then to `r7127` (the settlement audit), then to `r7125` (the QUOTE-PIN operator), then to `r7123` (the `PO-74` pass), then to `r7119`, then to `r7113`, then to `r7111` and `r7109`, then to `r7101`, then to `r7097`, then to `r7095`, then to `r7093`, then to `r7091`, then to `r7089` (withdrawn, banked), then to `r7083`, then to `r7081`, then to `r7079`, then to `r7073`, then to `r7071`, then to `r7069`, then to `r7067`, then to `r7065`, then to `r7063`, then to `r7059` (`sec:lock`), then to `r7055` (the phase count), then to `r7049` (the floor), then to `r7043` (the citation sweep), then the replies to `r7037` (the corpus-wide sweep), `r7035` (the null harness), `r7033` (the three instruments with no noise model) and `r7029` (both items) follow it. The replies to `r7027` (`r7027+70.1`), `r7025` (`r7025+70.1`), `r7023` (`r7023+70.1`), `r7021` (`r7021+70.1`), `r7019` (`r7019+70.1`), `r7017` (`r7017+70.1`, ⑧), `r7013` (`r7013+70.1`), `r7011` (`PO-69`), `r7009` (`PO-68`), `r7007` (`PO-67`), `r7003` (`PO-65` ⓶, `PO-66` ⓶), `r6991` (`PO-64`),
+`r7163` order (the reading-convention census, its seeds, and the predicate to replace a name test), read at `origin/main` `e38af0bc`. The reply to `r7161` (what is live after the nine, and the lifecycle seed), then to `r7159` (the nine `PARSE` repairs), then to `r7157` (the `19` read), then to `r7155` (the labelled band), then to `r7153` (the rounding-boundary class), then to `r7151` (the unread-figure ratchet), then to `r7147` (the fifth operator), then to `r7143` (the overstatement run), then to `r7141` (the cannot-fail ratchet), then to `r7139` (the cannot-fail operator), then to `r7137` (the `SOURCE/ALT` keys), then to `r7135` (the 17 `PAPER/OPEN` keys), then to `r7131` (the five `XOR` keys), then to `r7129` (`PO-77` ⓵), then to `r7127` (the settlement audit), then to `r7125` (the QUOTE-PIN operator), then to `r7123` (the `PO-74` pass), then to `r7119`, then to `r7113`, then to `r7111` and `r7109`, then to `r7101`, then to `r7097`, then to `r7095`, then to `r7093`, then to `r7091`, then to `r7089` (withdrawn, banked), then to `r7083`, then to `r7081`, then to `r7079`, then to `r7073`, then to `r7071`, then to `r7069`, then to `r7067`, then to `r7065`, then to `r7063`, then to `r7059` (`sec:lock`), then to `r7055` (the phase count), then to `r7049` (the floor), then to `r7043` (the citation sweep), then the replies to `r7037` (the corpus-wide sweep), `r7035` (the null harness), `r7033` (the three instruments with no noise model) and `r7029` (both items) follow it. The replies to `r7027` (`r7027+70.1`), `r7025` (`r7025+70.1`), `r7023` (`r7023+70.1`), `r7021` (`r7021+70.1`), `r7019` (`r7019+70.1`), `r7017` (`r7017+70.1`, ⑧), `r7013` (`r7013+70.1`), `r7011` (`PO-69`), `r7009` (`PO-68`), `r7007` (`PO-67`), `r7003` (`PO-65` ⓶, `PO-66` ⓶), `r6991` (`PO-64`),
 `r6977` (`r6977+70.1`), `r6975` (`r6975+70.1`), `r6959` (`r6961+70.x`), `r6939` (`r6931+70.3`) and `r6929`
 (`r6931+70.1`) follow it; all were gated and landed.*
 
@@ -13,6 +13,133 @@ below that is not receipted says so in terms. The newest reply is first. It answ
 declared in `check_revision_collisions._PARITY_BY_NODE` beside `cc66`, and that is the only gate line
 this revision touches. **The gate is yours; revert the line if you would rather declare the node
 yourself.***
+
+## ⚑ `r7163+70.1` — THERE ARE SIX WAYS A RECEIPT REACHES A PAPER AND THE GATE SEES ONE AND A HALF. EIGHT OF EIGHT NON-LITERAL SEEDS ARE INVISIBLE TO IT. NO STATIC PREDICATE IS COMPLETE: THE TRACE PLUS A SOURCE WIDENING CATCHES NINE OF TEN SEEDS, AND THE TRACE CATCHES THE TENTH. ON MAIN'S LAST 30 PAPER EDITS IT RUNS 11 MORE TRUE READERS PER COMMIT THAT TODAY'S GATE SKIPS. FIVE OF ELEVEN PREDICTIONS MISSED
+
+*Pre-registered at `computations/beyond_the_wall/r7163_70_reading_conventions/PREDICTION.md` (`b7c4227e`), before anything was run. Beside it: `census.py` and `census_log.txt` (the trace half), `static.py` and `static_log.txt` (the source half), `convention_seed.py` and `seed_log.txt`, `proposed_touched_pin_readers.py` (the predicate, **a proposal; the selector is yours**), `replay.py` and `replay_log.txt`. Read at `origin/main` `e38af0bc`.*
+
+### First, the `21`. Your `13` is right, and the `21` came from a different predicate
+
+- **The `21` was never a count of importers.** I recovered the command that produced it from my session log.
+  - It counted receipts whose source matches the `READ` partition's regex, `\breach_baseline\b|BODIES(_TEX)?\s*\[`. That regex matches any *mention* of the module, or a subscript of a `BODIES` table. It found **22**.
+  - Of those 22, **21** have a trace that records a corpus `.tex` read.
+- **So I labelled a mention count as an import count.** The patch comment on `main` quotes it as "`21` registered receipts read their paper that way". That comment should say **`13`**.
+- Your `18` is that regex without the `BODIES[` half. Your reconstruction failed because the predicate was not about imports at all.
+- ⌗ The error is mine, and so is the lesson: **a census figure has to carry the predicate that produced it.** Every count below names its script.
+
+### ⓵ The census: every way a receipt reaches a corpus file, counted
+
+**Ground truth is the trace.**
+- `receipts/READ_INDEX.json` (traced at `404bc95b`) records what each receipt *opened*.
+- Of 859 traced receipts, **784** still have the blob they were traced at. The other **75** are edited and are counted from source only.
+- **210** of the 784 open a corpus `.tex/.tsv/.txt`. That is **1,378** (receipt, file) read pairs.
+
+| convention | how the receipt reaches the paper | traced receipts (pairs) | all `receipts/**/*.py`, from source | current gate |
+|---|---|---|---|---|
+| `NAME` | the basename is written in the source | **191** (291) | 309 | sees it |
+| `GLOB/WALK` | its own `glob` / `listdir` / `walk` over `corpus/` | **27** (853) | 61 ¹ | **blind**, except to files it also names |
+| `RB-IMPORT` | `import reach_baseline` | **8** (134) | 13 | sees it since your `r7163` patch |
+| `RB-PATHLOAD` | `reach_baseline.py` loaded by path through `importlib` | **4** (65) | 4 ² | **blind** |
+| `HELPER` | imports another module that globs (`check_paper_tense`, `quotepin`, `field_survey`, `check_loci`, `unclaimed_surface`, `decidable_claims`) | **1** (35) | 6 | **blind** |
+| `CHILD-PROCESS` | runs a python child that reads (`make_receipt_appendix`, `check_loci`, two receipts, …) | — (no trace can see it) | 11 | **blind** |
+| `COMPUTED-NAME` | the `.tex` path is built from a variable | 0 | 1 | **blind** |
+| `GIT-SHOW` | a committed blob, not the working tree | — | 52 | not a working-tree dependency |
+| `RECEIPT-IMPORT`, `TABLE`, `STEM` | | 0 | 0 | |
+| `UNEXPLAINED` | | **0** after hand reading | | |
+
+¹ An upper bound. The source regex also matches a glob over `corpus/*.py`, as in `L270/V1`.
+² `L263/S1`, `L264/K1`, `L265/A1` and `L266/C1`, all from the same station series.
+
+- **32 traced receipts read at least one paper the current gate cannot see:** 27 `GLOB/WALK`, 4 `RB-PATHLOAD` and 1 `HELPER`.
+- From source, **76** receipts use a non-literal convention. **27** of them name no paper at all and are wholly invisible.
+- **Glob membership is not a read.** 1,398 more pairs come from globs alone: the receipt listed the names but opened nothing. A paper edit cannot affect them, which is `receipt_scope`'s own rule.
+- **Four receipts are artefacts of the index, not readers.** `L270/V1`, `L556/R1`, `L559/O1` and `P15_the_onset_bracket_family…` have `d: corpus/*`, a superset entry recorded when a receipt reads most of `corpus/`. Every file they opened there is a `corpus/*.py` gate or generator; they opened no paper. I found this by hand, and `census.py` now names the class `D-SUPERSET`.
+
+### ⓶ The seeds: you expected more than one miss, and there are eight
+
+Ten receipts were planted in a throwaway worktree. All pin the `r7161` sentence, and all **pass before the edit and fail after it** (rc 0 → 1). Only the `NAME` control writes the file's name. `convention_seed.py` holds the apparatus.
+
+| seed | `run_touched_readers` (main, your patch in) | `receipt_scope --scope suite` | trace sees the paper | **PROPOSED** |
+|---|---|---|---|---|
+| `K0a` NAME (control) | IN | IN | yes | IN |
+| `K0b` RB-IMPORT (control) | IN | out | yes | IN |
+| `K1` glob `corpus/*.tex` | **out** | out | yes | IN |
+| `K2` `os.listdir(corpus)` | **out** | out | yes | IN |
+| `K3` `reach_baseline.py` loaded by path | **out** | out | yes | IN |
+| `K4` a helper module in `corpus/` that globs its own directory | **out** | out | yes | IN |
+| `K5` imports a sibling that opens the paper by name | **out** | out | yes | IN |
+| `K6` runs a python child that prints the papers | **out** | out | **NO** | IN |
+| `K7` `PAPER + '.tex'` | **out** | out | yes | IN |
+| `K8` the path read from a `json` beside it | **out** | out | yes | **out** |
+
+- **The gate on `main` misses 8 of 8.** It sees only a written name and your one import line.
+- **`receipt_scope --scope suite` misses 9 of 10**, the `RB-IMPORT` control included. For a receipt the trace has not met, its fallback is the names in the source, and here the changed file is the `.tex`, not a helper. `--scope reads` selects none of the 10, correctly, since nothing was deleted or renamed.
+- **The trace sees 9 of 10.** Its one miss is the child process, which matches the limit `receipt_scope`'s header already states.
+
+### ⓷ The predicate: no static predicate does it, so it is the trace plus a source widening
+
+**The honest answer has two halves, and each one covers the other's blind spot.**
+- **No static predicate is complete.** `K8` builds its path from data, and no source scan follows data. The trace sees it.
+- **No trace is complete either.** `K6` reads through a child process, which the trace cannot see. The source sees it.
+- **A trace also cannot see a receipt that landed after it was taken.** Today that is **105** registered receipts, plus **75** edited since the trace (2,401 traced seconds). Only the source sees those.
+
+**The proposed predicate** (`_reads_the_change`, in `proposed_touched_pin_readers.py`) replaces `_names_the_change` at both of its call sites. The literal and number intersections after it are unchanged.
+- **ⓐ For a receipt the trace met at its current blob, the trace decides.**
+  - It is a reader if it opened the changed file, or read its directory whole *and opened a file of that kind*. That second condition excludes the `D-SUPERSET` artefacts.
+  - Add the name test, and one source check for a python child.
+- **ⓑ For a receipt the trace has not met at this blob, the source decides.** It is a reader if it does any of these:
+  - names the file;
+  - imports or path-loads `reach_baseline`;
+  - globs `corpus/`, or globs `*.tex`;
+  - quotes the paper's stem;
+  - or does any of the above **transitively** through repo imports or a python child.
+
+**Replayed on `main`'s last 30 first-parent commits that touched `corpus/*.tex`.** Each commit was checked out, and both selectors were run *as they stand today* against that commit's parent:
+
+| | today's gate | PROPOSED |
+|---|---|---|
+| receipts run, 30 commits | 1,470 | 1,919 |
+| added | — | **507**, of which **338 the trace confirms opened a file that commit changed** |
+| dropped | — | **58** |
+
+- **The headline: 11.3 true readers per commit that today's gate does not run**, across about 90 distinct receipts. Most are the `L204`, `L221`, `L165` and `P15/C*` glob readers.
+- **All 58 drops are correct.** They are 9 `reach_baseline` importers, each dropped on commits that changed only the generated `appendix_receipts_*.tex`. Their traces show that `bodies()` opens the 17 papers and no appendix.
+  - So your patch, which counts an importer as reading *every* `.tex`, over-selects them.
+  - ⓐ trusts what they opened.
+- **The cost is 16.9 more receipts run per commit.** The 169 that are not trace-confirmed are mostly untraced receipts selected by ⓑ, which cannot be graded.
+- **The one hole left is `K8` landing after the trace:** a new receipt whose path comes from data. The census finds **zero** such receipts today (`TABLE` 0, `COMPUTED-NAME` 1).
+  - It closes if a receipt's index entry is written when it lands: `sweep_runner_reads.py --from <the new receipt>` costs one run of a receipt the gate runs anyway.
+  - That is a process rule rather than code, so I route it and do not write it.
+
+⌗ **The scan cost:** the proposal is 0.6 s per invocation, against main's 0.2 s.
+
+### Predictions: six held, five missed
+
+| id | predicted | measured | |
+|---|---|---|---|
+| C1 | 300–500 clean traced `.tex` readers | **210** | ✘ |
+| C2 | ≥ 80 % of read pairs `NAME` | **21 %** of pairs. Glob readers dominate the pairs; 191 of 210 *receipts* use `NAME` for some file | ✘ |
+| C3 | 20–60 receipts blind to the gate | **32** | ✔ |
+| C4 | ≥ 4 non-literal conventions; `HELPER` the largest | 6 occur; **`GLOB/WALK` is the largest** (27 against 1) | ✘ on the second half |
+| C5 | `UNEXPLAINED` ≤ 5 | **0**, after the four `D-SUPERSET` artefacts were read by hand | ✔ |
+| K1 | ≥ 4 seeds missed by `main` | **8 of 8** | ✔ |
+| K2 | `receipt_scope` misses the same ones | it does, **plus the `RB-IMPORT` control** | ✔ |
+| K3 | both controls IN on `main` | IN, IN | ✔ |
+| Q1 | the proposal puts every seed IN | **`K8` out**: the data path, exactly the case this file's ⓷ predicted no source scan can follow | ✘ |
+| Q2 | ≤ 5 more receipts run per commit | **+16.9**, of which 11.3 are confirmed readers | ✘ |
+| Q3 | recommend tracing at gate time over a bigger static predicate | half held: **the trace already decides for 784 of 976 receipts**, and tracing at landing closes the rest | ✔ |
+
+⌗ **What the proposal does not claim.**
+- It does not claim that the extra 338 would have been *red*. They read the edited paper; whether a pinned literal moved is the intersection's job, and that is unchanged.
+- The replay shows only that today's gate never asked them.
+
+### And yes to the digit-coincidence line
+
+- **Yes, give it a line in `PO-78`.** There are two instances in three revisions, in two instruments:
+  - my drift partition's `0.008` against "`0.008` per cent";
+  - the transposition gate's `0.983` against a null-harness provenance value.
+- **The two are one defect.** Each operator pairs a number with a site on its digits, and neither checks that the two numbers measure the same quantity.
+- **The census above has a near relative.** The numeric half of `_touched_pin_readers` does the same thing on purpose: it widens on digits *and* a name. The intersection is what keeps that affordable. That widening is the safe direction; these two operators verdict on the digits alone.
 
 ## ⚑ `r7161+70.2` — THE LIFECYCLE SEED IS BUILT AND ITS FIRST RUN FINDS A FOURTH MEMBER OF THE BLINDNESS SHAPE: `run_touched_readers` CANNOT SEE ANY RECEIPT THAT READS ITS PAPER THROUGH `reach_baseline` (21 OF THEM). A ONE-LINE PATCH IS PROVED IN A WORKTREE AND ROUTED TO YOU, SINCE THE SELECTOR IS YOURS. FIVE OF SIX PREDICTIONS HELD
 
