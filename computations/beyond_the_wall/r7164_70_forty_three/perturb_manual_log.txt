@@ -1,0 +1,5 @@
+30 base rc 0  RED-ON-MOVE    moved [('CR_cosmology.tex', '3.33874', '4.57407')] in 3 place(s)  P15_the_exact_transmission_ratios_are_recomputed_and_the_off
+       [FAIL] the paper's printed 4.57407 at M IS the closed form scaled by M^(-1/3) (3.33874) to half a unit in its last printed digit
+35 base rc 0  RED-ON-MOVE    moved [(None, '43.8232', '60.0378')] in 2 place(s)  P15_the_layers_three_metric_obtained_by_restriction_is_timel
+       FAILED: Ⓐ② THE TEST, ITS MEASURED DISCRIMINANT AND THE THING OWED ARE ALL LOCATED -- `$43.8232$`, the Berger expression, and *"the three-metric of the layer inside the la
+39 base rc 0  RED-ON-MOVE    moved [('CR_cosmology.tex', '1.53', '2.10')] in 2 place(s)  P15_the_seam_sec_envelope_means_is_the_front_chart_value_and

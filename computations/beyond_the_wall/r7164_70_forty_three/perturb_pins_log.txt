@@ -1,0 +1,10 @@
+ 3 base rc 0  RED-ON-MOVE    1 printed occurrence(s) mutated  W1_the_two_plus_one_plus_one_is_excluded_by_a_symmetry_the_c
+       1 check(s) FAILED
+12 base rc 0  RED-ON-MOVE    1 printed occurrence(s) mutated  P10_gamma_is_one_quarter_and_is_the_maximum.py
+       FAIL  and the paper states gamma = 1/4 across the family, threshold 3/4
+       1 check(s) FAILED
+16 base rc 0  RED-ON-MOVE    2 printed occurrence(s) mutated  P10_the_towers_zeta_at_zero_is_ten_and_the_claim_needs_its_s
+       ⛔ 2 CHECK(S) FAILED
+28 base rc 0  RED-ON-MOVE    1 printed occurrence(s) mutated  P15_the_bead_routes_damping_survives_on_the_squashed_layer_b
+       [FAIL] Ⓖ③  the paper already says the label is the ROUND sphere's spectrum -- which is the premise this receipt replaces with the squashed one's
+       FAILED:

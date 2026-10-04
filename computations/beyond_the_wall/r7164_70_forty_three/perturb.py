@@ -30,10 +30,16 @@ def distinctive(x):
 
 
 def moved(x):
-    """a different value with the same digit count: bump the last digit (9 -> 8)"""
-    d = x[-1]
-    if not d.isdigit():
+    """a value far outside any receipt's tolerance, printed to the same precision.
+    ⛔ FIRST RUN (perturb_log_lastdigit.txt) BUMPED THE LAST DIGIT, and that hid inside tolerances: site 30 parses
+    `3.3387380236` from the paper and compares at 5e-6, so a 1e-10 move passed.  Now: x 1.37 at the same decimals
+    for a decimal; +1 (9 -> 8) on the last digit for an integer, which is already a large relative move."""
+    if 'e' in x:
         return None
+    if '.' in x:
+        nd = len(x.split('.')[1])
+        return f'{float(x) * 1.37:.{nd}f}'
+    d = x[-1]
     return x[:-1] + ('8' if d == '9' else str(int(d) + 1))
 
 
@@ -94,7 +100,7 @@ def main():
             for l in fails:
                 print(f'       {l[:160]}', flush=True)
     finally:
-        json.dump(out, open(os.path.join(HERE, 'perturb.json'), 'w'), indent=1, ensure_ascii=False)
+        json.dump(out, open(os.path.join(HERE, 'perturb%s.json' % ('_' + '_'.join(sys.argv[1:]) if sys.argv[1:] else '')), 'w'), indent=1, ensure_ascii=False)
         subprocess.run(['git', 'worktree', 'remove', '--force', wt], cwd=ROOT, capture_output=True)
         shutil.rmtree(wt, ignore_errors=True)
 
