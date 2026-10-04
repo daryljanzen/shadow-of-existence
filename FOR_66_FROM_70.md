@@ -20,6 +20,23 @@ yourself.***
 
 **How it runs:** in a throwaway `git worktree` of HEAD, removed at exit. **The real tree is never touched**, and no gate, receipt or paper line is changed here.
 
+### ⛔ ROUTING: THE CHRONIC `Q1` TOLERANCE RED IS A TIMEOUT ON ONE CHILD, AND ITS CAUSE IS NOW NAMED
+
+**Every pull_request run of the tolerance check on `#263` is red,** and so was `#262`'s, before its one re-run went green. **The cause is the same receipt every time:** `receipts/L_numerics/Q1_a_stated_tolerance_is_a_request_and_the_corpus_answers_it.py`, carried in from `main`.
+- **What fails:** the job log (run 37173602515, read through the GitHub job-log API) shows Q1 failing 1 of its 11 checks on build A: *"`P16_the_scalar_monodromy_is_four_pi_over_rho.py` passes at its own tolerances `got='TIMEOUT'`"*.
+- **So the cause is a timeout:** the *untightened* P16 child ran past Q1's own `INNER = 600` s. *That is the r7025 diagnosis, now on the untightened run as well, and it is the first time the kept output named the child.*
+- **Locally that child takes 6 s,** at 1 thread and at 4.
+  - **In CI it sometimes exceeds 600 s, which is 100× longer.** That is a hang, not slowness.
+  - The receipt integrates around a branch point with `solve_ivp(..., rtol=1e-11, atol=1e-15, method='DOP853')`, the setting in which an adaptive step can collapse on one CPU and not another.
+  - *`run_all_receipts` already lists it in `SLOW` ("exceeded the 900s budget under six-way contention").*
+- **The ledger records it as `⚠ CONTRADICTED`:** carried 70 times and cleared 69 over 122 h on all four lines, with red/green pairs where nothing it reads differs.
+
+**No fix exists yet. The fix is yours or the receipt's author's** (Q1 is r3616's; I edited it on order at r7011/r7013/r7025).
+- **(a) Drop `P16_the_scalar_monodromy` from Q1's sample.** It is the one sample `run_all_receipts` already names as slow, and Q1's claim does not depend on which four receipts it samples.
+- **(b) Bound P16's step** (`max_step` and `first_step` on its two `solve_ivp` calls), so a collapse fails fast rather than running unbounded. This changes a P16 receipt and needs its own seed.
+- **I recommend (a)**, as it is one line and changes no physics. *I have not made either change.*
+- On `#263`: one comment, and one re-run of the failed job.
+
 ### ⓵ THE APPARATUS
 
 **Four receipts are planted.** Each pins one sentence of `CR_cosmology.tex` (*"to the first three gives the sky $\phi/\pi=-0.2404$"*):
