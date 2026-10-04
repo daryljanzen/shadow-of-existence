@@ -1,0 +1,17 @@
+== repair kept: C1 rc 0
+     [RETIRED-CITED] (ii) modern_parallax sec:floor: ['0.285'] -- closing group names the computing receipt at +811 chars
+     runs: none
+== defect returns: C1 rc 1
+     [PASS] (ii) LIVE-DEFECT modern_parallax sec:floor: ['0.285'] -- the ORIGINAL defect: 0.285 closed by the cited receipt at +811; not in `R2_the_papers_correlation_figures_are_th...`, computed by `P04_redshift_isotropy_floor...`  [cited NOWHERE in the corpus]   
+     runs: ['ran  rc=0            0.7s  R2_the_papers_correlation_figures_are_the_ones_nothing_checked']
+== rewrite (a third receipt): C1 rc 1
+     [PASS] (ii) LIVE-DEFECT modern_parallax sec:floor: ['0.285'] -- the ORIGINAL defect: 0.285 closed by the cited receipt at +811; not in `R2_the_papers_correlation_figures_are_th...`, computed by `P04_redshift_isotropy_floor...`  [cited NOWHERE in the corpus]   
+     runs: ['ran  rc=0            0.7s  R2_the_papers_correlation_figures_are_the_ones_nothing_checked']
+== figure moved: C1 rc 0
+     [RETIRED-DRIFTED] (ii) modern_parallax sec:floor: ['0.285'] -- the paper prints none of ['0.285']
+     runs: none
+== rewrite (the whole closing group -> a third receipt): C1 rc 1
+     [FAIL] (ii) modern_parallax sec:floor: ['0.285'] -- LIVE-UNRECOGNISED: NOT the original defect: 0.285 is printed in sec:floor and its closing group names neither `R2_the_papers_correlation_figures_are_th` (cited) nor `P04_redshift_isotropy_floor` (computing) b
+     runs: none
+
+== D5: distinct first lines across the 5 seeds: 4

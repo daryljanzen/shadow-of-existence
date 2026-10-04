@@ -50,7 +50,10 @@ hit is routed to 66.  No physics, no re-scoring, no other seat's receipt touched
 ** r7167: A FINDING IS RETIRED BY WHAT ITS REPAIR MUST CHANGE. **  Each finding above is now re-read from the
 paper's SOURCE before anything runs: RETIRED-DRIFTED if the paper prints none of its figures any more,
 RETIRED-CITED if every figure it still prints is closed, in its own section and with no fixed window, by a group
-naming the computing receipt; otherwise LIVE, and only a LIVE finding runs its property test.  At r7167 all
+naming the computing receipt; otherwise LIVE, and only a LIVE finding runs its property test.  ⛭ r7169: a
+refusal says WHICH red -- LIVE-DEFECT when the figure is closed by the originally cited receipt (the r7043
+finding as stated; its property test runs), LIVE-UNRECOGNISED otherwise (a FAIL that says it is NOT the original
+defect, names what closes the figure, and runs nothing).  A repair-only test gives both one message (`cc66`, r7169).  At r7167 all
 fourteen rows retire (twelve cited, two drifted) and the sweep runs no receipt at all.  The property the findings
 were stated as is untouched by their repair, so testing it again could never retire one (66, r7165/r7167).
 
@@ -200,22 +203,45 @@ def section_span(t, sec):
     return 0, len(t)
 
 
-def retire(t, sec, nums, computing):
-    """(status, detail) -- see the block above.  `t` is the paper's stripped source."""
+def retire(t, sec, nums, computing, cited):
+    """(status, detail).  The REPAIR's test first -- RETIRED-DRIFTED / RETIRED-CITED, unchanged since r7167.
+    ⛭ r7169+70.1: only when that refuses is the DEFECT's form tested, so a refusal says WHICH red it is (`cc66`'s
+    measurement, r7169: a repair-only test gives one message for the defect returning and for a correct rewrite):
+      LIVE-DEFECT        a printed occurrence in the row's section is closed by a group naming the ORIGINALLY CITED
+                         receipt and not the computing one -- the r7043 finding exactly as stated;
+      LIVE-UNRECOGNISED  anything else: printed, but closed by neither receipt, or by no group in the section.
+    Both tests require the literal receipt name in the group: a classifier on the refusal, never a tolerance."""
+    def names(g, who):
+        return bool(who) and any(x == who or who.startswith(x) for x in g)
     printed = [n for n in nums if fig_re(n).search(t)]
     if not printed:
         return 'RETIRED-DRIFTED', f'the paper prints none of {nums}'
     a, b = section_span(t, sec)
-    dists = []
+    dists, defect, seen = [], [], []
     for n in printed:
-        best = None
+        best, bad = None, None
         for m in fig_re(n).finditer(t, a, b):
             g, d = closing_group(t, m.start())
-            if g and any(x == computing or computing.startswith(x) for x in g):
+            if g and names(g, computing):
                 best = d if best is None else min(best, d)
+            elif g and names(g, cited):
+                bad = d if bad is None else min(bad, d)
+            seen.append(g)
         if best is None:
-            return 'LIVE', f'{n} is printed in {sec} and no closing group names `{computing[:50]}`'
-        dists.append(best)
+            if bad is not None:
+                defect.append((n, bad))
+            else:
+                closers = sorted({x for g in seen if g for x in g})
+                return 'LIVE-UNRECOGNISED', (f'NOT the original defect: {n} is printed in {sec} and its closing '
+                                             f'group names neither `{(cited or "-")[:40]}` (cited) nor '
+                                             f'`{(computing or "-")[:40]}` (computing) but '
+                                             f'{[c[:50] for c in closers] or "no receipt in this section"} -- a read '
+                                             f'is owed, and nothing was run')
+        else:
+            dists.append(best)
+    if defect:
+        return 'LIVE-DEFECT', ('the ORIGINAL defect: ' + ', '.join(f'{n} closed by the cited receipt at +{d}'
+                                                                  for n, d in defect))
     return 'RETIRED-CITED', 'closing group names the computing receipt at +' + ', +'.join(map(str, dists)) + ' chars'
 
 
@@ -226,9 +252,11 @@ def paper_text(paper):
 # ⛭ THE RULE'S OWN SELF-TEST, on a synthetic paper so it does not depend on the corpus: three states, three answers.
 _SYN = ('\\section{A}\\label{sec:syn} the ratio is $3.1415$ across the band, as computed '
         '\\rcpt{OTHER_receipt}~\\rcpt{SYN_computing}. \\section{B} next.')
-_SELF = (retire(_SYN, 'sec:syn', ['3.1415'], 'SYN_computing')[0],
-         retire(_SYN.replace('~\\rcpt{SYN_computing}', ''), 'sec:syn', ['3.1415'], 'SYN_computing')[0],
-         retire(_SYN.replace('3.1415', 'the value'), 'sec:syn', ['3.1415'], 'SYN_computing')[0])
+_SELF = tuple(retire(x, 'sec:syn', n, 'SYN_computing', 'SYN_cited')[0] for x, n in (
+    (_SYN, ['3.1415']),                                                               # the repair is there
+    (_SYN.replace('SYN_computing', 'SYN_cited'), ['3.1415']),                          # the defect is back
+    (_SYN.replace('SYN_computing', 'SYN_third'), ['3.1415']),                          # a rewrite: neither
+    (_SYN.replace('3.1415', 'the value'), ['3.1415'])))                                # the figure is gone
 STATUS = {}
 
 
@@ -307,26 +335,31 @@ II = [
 CITED_ANY = set(n for _, n in MARK)
 ROWS = []
 uncited = set()
-check("⛭ r7167: the retirement rule sorts its own synthetic paper three ways -- cited, live, drifted",
-      _SELF == ('RETIRED-CITED', 'LIVE', 'RETIRED-DRIFTED'), _SELF)
+check("⛭ r7167/r7169: the retirement rule sorts its own synthetic paper four ways -- repaired, the defect back, "
+      "an unrecognised rewrite, drifted", _SELF == ('RETIRED-CITED', 'LIVE-DEFECT', 'LIVE-UNRECOGNISED',
+                                                    'RETIRED-DRIFTED'), _SELF)
 for paper, sec, cited, source, nums, _unc in II:
     cited = next(k for k in SRC if k.startswith(cited[:80]))
     source = next(k for k in SRC if k.startswith(source[:80]))
     if source not in CITED_ANY:
         uncited.add(source)
-    st, why = retire(paper_text(paper), sec, nums, source)
+    st, why = retire(paper_text(paper), sec, nums, source, cited)
     STATUS[(paper, sec, tuple(nums))] = (st, why)
-    if st != 'LIVE':
+    if st.startswith('RETIRED'):
         # ⌗ RETIRED: reported with what was read, and nothing is run for it -- the property it was stated as is
         #   no longer the question, so its receipts' environment cannot move this verdict.
         print(f"  [{st}] (ii) {paper} {sec}: {nums} -- {why}")
+        continue
+    if st == 'LIVE-UNRECOGNISED':
+        # ⛔ r7169+70.1: a red that says it is NOT the original defect, asserts nothing about the receipts, runs none.
+        check(f"(ii) {paper} {sec}: {nums} -- LIVE-UNRECOGNISED: {why}", False)
         continue
     absent = all(not has(cited, n) for n in nums)
     # ⛭ r7166+70.1: the computing receipt's exit code counts only when it was RUN to answer -- a figure it writes as a
     #   literal is answered from source, and then no run happened whose exit code could mean anything.
     present = all(has(source, n) for n in nums) and (source not in RAN or RAN[source][0] == 0)
     ROWS.append((paper, sec, cited, source, nums))
-    check(f"(ii) LIVE {paper} {sec}: {nums} -- not in `{cited[:40]}...`, computed by `{source[:40]}...`"
+    check(f"(ii) LIVE-DEFECT {paper} {sec}: {nums} -- {why}; not in `{cited[:40]}...`, computed by `{source[:40]}...`"
           + ("  [cited NOWHERE in the corpus]" if source not in CITED_ANY else ""),
           absent and present, f"absent from cited {absent}; present in source {present}")
 # ⛭ RE-PINNED r7049: 5 -> 0.  *`r7049` landed the acceptance law in `P15` `sec:refit-bound` as
@@ -344,10 +377,13 @@ check("⛭ and EVERY naming receipt is now reached by a marker -- the five that 
       len(uncited) == 0, f"{len(uncited)} distinct sources uncited")
 C59 = open(SRC['C59_the_control_reproduces_camb_and_the_height_defect_was_k_truncation'], encoding='utf-8').read()
 _TP = 'P15_the_third_peak_deficit_is_radiation_driving_and_both_routes_to_the_equality_agree'
-st, why = retire(paper_text('CR_cosmology'), 'sec:scope', ['0.23'], _TP)
+st, why = retire(paper_text('CR_cosmology'), 'sec:scope', ['0.23'], _TP,
+                 'C59_the_control_reproduces_camb_and_the_height_defect_was_k_truncation')
 STATUS[('CR_cosmology', 'sec:scope', ('0.23',))] = (st, why)
-if st != 'LIVE':
+if st.startswith('RETIRED'):
     print(f"  [{st}] (ii) CR_cosmology sec:scope: ['0.23'] (the C59 marker) -- {why}")
+elif st == 'LIVE-UNRECOGNISED':
+    check(f"(ii) CR_cosmology sec:scope: ['0.23'] -- LIVE-UNRECOGNISED: {why}", False)
 else:
     check("(ii) LIVE CR_cosmology sec:scope: \"validated on its control to 0.23%\" cites C59, which states 0.14% and "
           "never 0.23% -- the 0.23% is the third-peak run's (2.195 against 2.200), the run the paper itself "
@@ -358,10 +394,12 @@ print('\n' + '=' * 100)
 print("PART (iii) -- ONE: numbers no receipt in the repository computes")
 print('=' * 100)
 AD = 'P10_the_adiabatic_residual_at_low_n_is_bounded_by_the_towers_own_floor'
-st, why = retire(paper_text('canonical_time'), None, ['2.8e-4', '5.9e-6'], AD)
+st, why = retire(paper_text('canonical_time'), None, ['2.8e-4', '5.9e-6'], None, AD)
 STATUS[('canonical_time', '-', ('2.8e-4', '5.9e-6'))] = (st, why)
-if st != 'LIVE':
+if st.startswith('RETIRED'):
     print(f"  [{st}] (iii) canonical_time: ['2.8e-4', '5.9e-6'] -- {why}")
+elif st == 'LIVE-UNRECOGNISED':
+    check(f"(iii) canonical_time: ['2.8e-4', '5.9e-6'] -- LIVE-UNRECOGNISED: {why}", False)
 else:
     ad_out, ad_rc = run(AD)
     anywhere = []
@@ -419,7 +457,7 @@ if FAILS:
     for f in FAILS:
         print(f"  - {f}")
     raise SystemExit(1)
-_live = [k for k, (st, _w) in STATUS.items() if st == 'LIVE']
+_live = [k for k, (st, _w) in STATUS.items() if st.startswith('LIVE')]
 _ret = {x: sum(1 for st, _w in STATUS.values() if st == x) for x in ('RETIRED-CITED', 'RETIRED-DRIFTED')}
 print(f"    findings: {len(STATUS)} rows -- LIVE {len(_live)}, RETIRED-CITED {_ret['RETIRED-CITED']}, "
       f"RETIRED-DRIFTED {_ret['RETIRED-DRIFTED']}")
