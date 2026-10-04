@@ -1,1 +1,10 @@
-{}
+{
+ "claude/shadow-of-existence-setup-wgcmvt": {
+  "suite": {
+   "receipts/L221_the_bridge/B25_the_scattering_object_exists.py": {
+    "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/37232297676",
+    "since": "b75cf1451ecda12a842ba723abc5113ad4485367"
+   }
+  }
+ }
+}
