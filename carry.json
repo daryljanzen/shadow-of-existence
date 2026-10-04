@@ -1,12 +1,4 @@
 {
- "claude/shadow-of-existence-setup-5tjf0b": {
-  "suite": {
-   "receipts/P15_CR_cosmology/P15_expansion_law.py": {
-    "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/37184506544",
-    "since": "eda1095c7cd1fc56666a7bc9cf0606c5ce5e313a"
-   }
-  }
- },
  "claude/shadow-of-existence-setup-6awafl": {
   "suite": {
    "receipts/P15_CR_cosmology/P15_expansion_law.py": {
